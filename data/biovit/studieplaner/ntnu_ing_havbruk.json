@@ -1,0 +1,197 @@
+{
+  "entryId": "ntnu_ing_havbruk",
+  "programnavn": "Ingeniør, havbruk (bachelor)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.ntnu.no/studier/bihav",
+    "https://www.ntnu.no/studier/bihav/studiets-oppbygning",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=BIHAV&year=2026"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 120,
+  "obligatoriske": [
+    {
+      "emnekode": "HMS0001",
+      "emnenavn": "HMS-kurs for 1. årsstudenter",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "HMS0001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "INGT1002",
+      "emnenavn": "Programmering, numerikk og sikkerhet",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "INGT1002-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MEKT1101",
+      "emnenavn": "Mekanikk 1",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MEKT1101-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "IMAT1002",
+      "emnenavn": "Matematikk for ingeniørfag 1",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "IMAT1002-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BI1011",
+      "emnenavn": "Laksens biologi i oppdrett – settefiskproduksjon, håndtering og miljø",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BI1011-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "IMAT2022",
+      "emnenavn": "Matematikk for ingeniørfag 2 B",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "IMAT2022-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TKT4123",
+      "emnenavn": "Mekanikk 2",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BI1012",
+      "emnenavn": "Laks – matfisk, interaksjon med merdmiljø og marin teknikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BI1012-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "IFYT1000",
+      "emnenavn": "Fysikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "IFYT1000-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BMR3000",
+      "emnenavn": "Havbruksteknologi, prosjektering og drift",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BMR3000-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EXPH0600",
+      "emnenavn": "Examen philosophicum for ingeniørfag",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ISTT1001",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "ISTT1001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJ1005",
+      "emnenavn": "Generell kjemi",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BT3102",
+      "emnenavn": "Grunnleggende om resirkulerende akvakultursystemer (RAS)",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BT3102-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FENT2002",
+      "emnenavn": "Fluidmekanikk og hydraulikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "FENT2002-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BI1009",
+      "emnenavn": "Fiskehelse og velferd",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BI1009-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "INGT2301",
+      "emnenavn": "Ingeniørfaglig systemtenkning",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er NTNUs studieplan-API for programkode BIHAV (Ingeniør, havbruk, bachelor i ingeniørfag, Trondheim), år 2026, hentet direkte fra det underliggende JSON-endepunktet (se metode-merknad i ntnu_biologi.json). Programmet er 180 sp over 6 semester. De 17 emnene i obligatoriske-listen (120 sp) er de med studyChoice-kode «O» i periode 1, 2, 3, 4 og 6. Følgende krav er valg mellom alternativer og er derfor IKKE ført i listen, i tråd med oppgavens regel: (1) 4. semester: velg ett av BI1013 Celle- og molekylærbiologi/TMR4247 Marin teknikk 3/TPK4125 Mekatronikk/TVM4110 Vannmiljø og -kvalitet (7,5 sp) – valget kan være førende for hvilke emner som kan velges i 5. semester; (2) 6. semester: BMR3930/BI3102, begge med samme tittel «Bacheloroppgave, BIHAV havbruksingeniør» (22,5 sp) – studenten skal ta nøyaktig én av disse to instituttkodene avhengig av hvilket institutt bachelorveilederen er ansatt ved, så bacheloroppgaven er reelt obligatorisk (22,5 sp), men registrert under to alternative emnekoder. 5. semester (30 sp) består utelukkende av valgbare emner: minst ett emne med status M1C (MAST2003, TBT4102 eller TMR4167), maksimalt ett emne med status MAXMIN1A (TIØ4295, TPK4100, TIØ4120 eller TLOG2007), og resten fylles med valgbare emner (VA/VB-kode) innen biologi og/eller marin teknikk – ingen av disse er ført som obligatoriske. 120 (listen) + 7,5 (valg 4. semester) + 22,5 (bacheloroppgave 6. semester) + 30 (5. semester, fullt valgfritt) = 180 sp. Programmet har ingen egne, navngitte studieretninger i studieplandataene."
+}

@@ -1,4 +1,4 @@
-// GENERERT av scripts/build-markedsstatus.py ukjent dato – ikke rediger for hånd.
+// GENERERT av scripts/build-markedsstatus.py 2026-09-22 – ikke rediger for hånd.
 // Kilde: data/realtek/markedsstatus.json · PDF-er i kilde/public/markedsstatus/realtek/
 
 export interface MarketDoc {
@@ -22,6 +22,517 @@ export interface MarketInstitution {
   relevanteProgram: string[];
 }
 
-export const MARKET_STATUS_HENTET: string | null = null;
+export const MARKET_STATUS_HENTET: string | null = "2026-09-22";
 
-export const MARKET_STATUS: MarketInstitution[] = [];
+export const MARKET_STATUS: MarketInstitution[] = [
+  {
+    "id": "ntnu",
+    "name": "NTNU",
+    "fullName": "Norges teknisk-naturvitenskapelige universitet",
+    "enhet": "NTNU-styret (sentralt) og Fakultet for naturvitenskap (NV) — Fakultetsstyret IV og Fakultetsstyret IE publiserer sakspapirer i et lukket e-innsyn-grensesnitt (einnsyn.ntnu.no) som ikke lot seg hente ut i dette arbeidet",
+    "styresider": [
+      "https://www.ntnu.no/adm/styret/saker",
+      "https://i.ntnu.no/wiki/-/wiki/Norsk/Fakultetsstyret+ved+NV-fakultetet"
+    ],
+    "status": "partial",
+    "dokumenter": [
+      {
+        "label": "Fakultetsstyret NV – møteinnkalling med saksvedlegg 05.03.2026 (årsmelding/årsregnskap 2025, navneendring, instituttstrategier)",
+        "url": "https://i.ntnu.no/documents/portlet_file_entry/1305837853/Moteinnkalling+NV-Fakstyret+samlefil+5+mars+2026.pdf/a869055d-0760-a30a-4b4e-28b70bd55fb5",
+        "localPath": "/markedsstatus/realtek/NTNU_NV_Innkalling_05.03.2026.pdf",
+        "dato": "2026-03-05",
+        "storrelseMB": 1.33
+      },
+      {
+        "label": "NTNU-styret – sakspapirer 10.09.2026 (utviklingsavtale KD 2027-2030, etatsstyring 2026, innovasjonsstrategi)",
+        "url": "https://www.ntnu.no/adm/styret/saker",
+        "localPath": "/markedsstatus/realtek/NTNU_Styret_Sakspapirer_10.09.2026.pdf",
+        "dato": "2026-09-10",
+        "storrelseMB": 11.42
+      },
+      {
+        "label": "NTNU-styret – S-sak 28/24, dimensjoneringsmodell for studieporteføljen (vedtatt 18.06.2024, grunnlaget for videre porteføljearbeid 2025-2027)",
+        "url": "https://i.ntnu.no/documents/portlet_file_entry/1305837853/2024-06-18+Styresaken.pdf/dc7f6d5a-799d-1594-3c3a-b6b66ccb3325",
+        "localPath": null,
+        "dato": "2024-06-18",
+        "storrelseMB": 0.0
+      },
+      {
+        "label": "Universitetsavisa: «NTNU legger ned 26 studieprogram fra neste høst» (om styrevedtak 12.12.2024)",
+        "url": "https://www.universitetsavisa.no/marit-reitan-ntnu-ntnu-styret/ntnu-legger-ned-26-studieprogram-fra-neste-host/422626",
+        "localPath": null,
+        "dato": "2024-12-12",
+        "storrelseMB": 0.0
+      }
+    ],
+    "punkter": [
+      "Fakultet for naturvitenskap (NV) foreslo i sak NVS 2/26 (05.03.2026) å bytte navn tilbake til «Fakultet for naturvitenskap og teknologi» (NT), navnet fakultetet hadde før NTNU-fusjonen i 2016. Begrunnelsen er å synliggjøre fakultetets egenart i kjernen av «Norges teknisk-naturvitenskapelige universitet» og styrke ekstern posisjonering, i tråd med statsbudsjettets økte bevilgninger til teknologi og fremvoksende teknologier fra 2026.",
+      "NV har gjennomført 6 fusjoner og 5 større revisjoner av studieprogram siden 2022 for å få en mer effektiv og dynamisk portefølje, blant annet opprettelsen av det sammenslåtte Institutt for kjemi og bioingeniørfag (IKB).",
+      "Opptaket til NVs 3- og 5-årige studieprogram i 2025 var av svært høy kvalitet: nesten alle programmer lå over 43 poeng i førstegangsvitnemålskvoten, flere over 50, med høyere poenggrenser og lengre ventelister enn sammenlignbare studier nasjonalt. På de toårige masterprogrammene økte antall møtte studenter med 13 prosent.",
+      "Doktorgradsproduksjonen ved NV var god i 2025 (76 disputaser), men opptakstallene til ph.d.-programmene er fallende, som følge av redusert økonomisk handlingsrom og færre stipendiatstillinger brukt i karrierefremmende arbeid.",
+      "NTNU-styret vedtok 18. juni 2024 (S-sak 28/24) en felles dimensjoneringsmodell for hele universitetets studieportefølje: fyllingsgrad på minst 95 prosent for alle program, og gjennomstrømming på 60 prosent (bachelor, femårig master, profesjonsstudier) eller 80 prosent (toårig master), i tillegg til kvalitative samfunnsbehovskriterier. Ifølge sakspapirene til styremøtet 10.09.2026 skal neste store justering av utdanningsporteføljen gjennomføres i 2027.",
+      "Som følge av dimensjoneringsmodellen vedtok styret 12. desember 2024 å legge ned 26 studieprogrammer og opprette 14 nye fra høsten 2025 — første gang NTNU har lagt ned flere program enn det har opprettet. Innføring av skolepenger for studenter utenfor EU/EØS er en direkte årsak: antall slike studenter falt fra 230 høsten 2022 til 28 høsten 2024.",
+      "I utviklingsavtalen med Kunnskapsdepartementet for 2027–2030 (vedtatt av styret 16.06.2026, justert 10.09.2026) avviser rektor departementets ønske om å fremheve enkelte fagområder i avtaleteksten, og fastholder NTNUs profil som «breddeuniversitet med teknisk-naturvitenskapelig hovedprofil».",
+      "TRES-ordningen (tresemester for ingeniørstudenter som mangler fordypning i matematikk og fysikk) og Y-vei for søkere med fagbrev trekkes fram i utviklingsavtalen som NTNUs viktigste tiltak for bredere rekruttering til ingeniørutdanningene — samme mønster som ved UiA og HVL.",
+      "I etatsstyringsmøtet med Kunnskapsdepartementet (referert i sakspapirene til styremøtet 10.09.2026) bekreftet NTNU at arbeidet med dimensjonering og flytting av studieplasser og finansiering på tvers av fakultetsstrukturen startet i 2022, og at 2024–2025 har vært preget av store omstillingsprosesser med sluttpakker og naturlig avgang — noe NTNU selv omtaler som en «lite strategisk nedbemanning» som gir skjevfordelt arbeidsbelastning.",
+      "NTNU har fått et særskilt oppdrag og øremerket bevilgning fra Kunnskapsdepartementet innen fremvoksende teknologier fra og med 2026, med henvisning til at NTNU ifølge KVAST-rapporten (Kunnskapsgrunnlag for vurdering av sensitive teknologier) er den klart sterkeste universitetsaktøren innen sensitive teknologiområder."
+    ],
+    "oppsummering": "NTNU er midt i en flerårig, styrevedtatt omstilling av studieporteføljen (dimensjoneringsmodell fra 2024, 26 program lagt ned i 2025, neste justeringsrunde i 2027), drevet av strammere økonomi og bortfall av betalende ikke-EU/EØS-studenter. Samtidig satser Fakultet for naturvitenskap tungt på egenart og navneendring til «naturvitenskap og teknologi», har svært sterke søkertall og planlegger videre institusjonsfusjoner, mens sentralstyret fastholder NTNUs brede tekniske-naturvitenskapelige profil overfor et departement som ønsker tydeligere fagprioriteringer. Fakultetsstyrene for ingeniørvitenskap (IV) og informasjonsteknologi/elektroteknikk (IE) — som eier bygg-, maskin-, indøk-, kybernetikk- og datateknologiprogrammene NMBU konkurrerer mest direkte med — publiserer sine sakspapirer i et lukket e-innsynsgrensesnitt som ikke lot seg hente ut i dette arbeidet, så vurderingen er merket delvis.",
+    "relevanteProgram": [
+      "ntnu_fysmat",
+      "ntnu_fysikk",
+      "ntnu_bioteknologi",
+      "ntnu_ikmb",
+      "ntnu_ikb",
+      "ntnu_indok",
+      "ntnu_datateknologi",
+      "ntnu_kybernetikk_robotikk",
+      "ntnu_ing_bygg",
+      "ntnu_bygg_infrastruktur",
+      "ntnu_maskin_energi",
+      "ntnu_ing_maskin",
+      "ntnu_produktutvikling_produksjon",
+      "ntnu_gjovik_ing_geomatikk",
+      "ntnu_georessurser",
+      "ntnu_energi_miljo"
+    ]
+  },
+  {
+    "id": "uis",
+    "name": "UiS",
+    "fullName": "Universitetet i Stavanger",
+    "enhet": "Det teknisk-naturvitenskapelige fakultet (TN)",
+    "styresider": [
+      "https://opengov.360online.com/Meetings/uis/Boards/Details/599422"
+    ],
+    "status": "complete",
+    "dokumenter": [
+      {
+        "label": "FSTN – møteinnkalling 19.03.2026 (sak 1–14/26)",
+        "url": "https://opengov.360online.com/Meetings/uis/File/Details/1458263.PDF",
+        "localPath": "/markedsstatus/realtek/UiS_Innkalling_TN_19.03.2026.pdf",
+        "dato": "2026-03-19",
+        "storrelseMB": 0.31
+      },
+      {
+        "label": "FSTN – møteinnkalling 18.06.2026 (sak 15–29/26, inkl. opptaksrammer 2027 og KI og utdanning)",
+        "url": "https://opengov.360online.com/Meetings/uis/File/Details/1482784.pdf",
+        "localPath": "/markedsstatus/realtek/UiS_Innkalling_TN_18.06.2026.pdf",
+        "dato": "2026-06-18",
+        "storrelseMB": 0.31
+      }
+    ],
+    "punkter": [
+      "Fakultetsstyret ved Det teknisk-naturvitenskapelige fakultet (FSTN) er et nytt styre for perioden 2025–2029 og hadde sine to første ordinære møter 19.03.2026 og 18.06.2026.",
+      "I forslaget til opptaksrammer for 2027 (sak 25/26) kuttes bachelor i datateknologi fra 80 til 60 ordinære plasser, samtidig som det opprettes 10 nye plasser på en ny Y-vei-inngang til samme program fra 2027. Bachelor i energi- og petroleumsteknologi kuttes fra 80 til 70 plasser og bachelor i biologisk kjemi fra 30 til 25, mens bachelor i maskin økes med 5 plasser. Totalt opptak ved TN-fakultetet øker likevel fra 1 060 plasser i 2026 til 1 105 i 2027, blant annet drevet av vekst i internasjonale opptaksplasser etter at studieavgiften ble halvert.",
+      "Bachelor i batteri- og energiteknologi ved Institutt for energi- og petroleumsteknologi foreslås nedlagt (sak 13/26) etter nullopptak siden 2025. Søkertallet kollapset da planlagte norske battericelle-gigafabrikker, blant dem Beyonder, ikke ble realisert.",
+      "Studiebarometeret 2025 viser at maskiningeniør-bachelor ved TN hadde et markant fall i studenttilfredshet: score på undervisning falt til 2,6 (ned 1,2 poeng) og overordnet tilfredshet til 3,2 (ned 0,8 poeng). Svarprosenten for TN-fakultetet var 35 prosent, opp fra 31 prosent året før, men fortsatt lavere enn UiS' snitt på 43 prosent.",
+      "Masterprogrammene i industriell teknologi og driftsledelse og marin- og offshoreteknologi fikk de beste resultatene i Studiebarometeret 2025, begge med overordnet tilfredshet over 4,7. Marin- og offshoreteknologi ble nummer 5 i Teknas kåring av Norges beste toårige masterprogram, med en snittscore på 4,51.",
+      "Instituttene ved TN-fakultetet skal utarbeide egne strategier frem mot 2030, som skal vedtas av fakultetsstyret og sette føringer for strategisk forankring av nyansettelser og hvor videre nedbemanning ikke bør skje.",
+      "Fakultetet arbeider med «KI-robust studieprogramutvikling» og progresjon i studentenes KI-bruk gjennom studieløpet (sak 28/26, juni 2026). Arbeidet er foreløpig på et utforskende pilotstadium.",
+      "Institutt for maskin, bygg og materialteknologi søkte i februar 2026 om å utrede en ny EVU-sertifisering som internasjonal sveiseingeniør (IWE) på masternivå, rettet mot offshore- og energiindustrien."
+    ],
+    "oppsummering": "UiS' TN-fakultet fikk sitt eget fakultetsstyre fra 2025 og bruker 2026 til å justere studieporteføljen: datateknologi kuttes med 20 ordinære plasser men får en ny Y-vei-inngang, batteriteknologi-bachelor legges ned etter kollaps i søkertall, og maskiningeniør sliter med studenttilfredshet. Totalt opptak ved fakultetet vokser likevel, drevet av internasjonale studenter etter halvert studieavgift, og instituttene skal nå utarbeide egne strategier mot 2030.",
+    "relevanteProgram": [
+      "uis_datateknologi",
+      "uis_indok",
+      "uis_kybernetikk_robotteknologi",
+      "uis_ing_bygg_konstruksjon",
+      "uis_ing_bygg_infrastruktur",
+      "uis_matematikk_fysikk"
+    ]
+  },
+  {
+    "id": "uia",
+    "name": "UiA",
+    "fullName": "Universitetet i Agder",
+    "enhet": "Fakultet for teknologi og realfag (TekReal)",
+    "styresider": [
+      "https://opengov.360online.com/Meetings/uia/Boards/Details/213434"
+    ],
+    "status": "complete",
+    "dokumenter": [
+      {
+        "label": "Fakultetsstyret TekReal – innkalling 19.01.2026 (budsjett 2026, virksomhetsplan 2026)",
+        "url": "https://opengov.360online.com/Meetings/uia/File/Details/1154426.PDF",
+        "localPath": "/markedsstatus/realtek/UiA_Innkalling_TR_19.01.2026.pdf",
+        "dato": "2026-01-19",
+        "storrelseMB": 3.63
+      },
+      {
+        "label": "Fakultetsstyret TekReal – innkalling 08.04.2026 (kvalitetsrapport 2025, studie- og emneportefølje 2026-2027)",
+        "url": "https://opengov.360online.com/Meetings/uia/File/Details/1178666.PDF",
+        "localPath": "/markedsstatus/realtek/UiA_Innkalling_TR_08.04.2026.pdf",
+        "dato": "2026-04-08",
+        "storrelseMB": 4.33
+      }
+    ],
+    "punkter": [
+      "Fakultetsstyret vedtok budsjett 2026 på totalt 285,3 millioner kroner, en økning på 9,2 millioner fra 2025 som likevel ligger under lønns- og prisvekst. Toppforskningssenteret Mekatronikk fikk sin siste strategiske tildeling i 2025 og er ute av budsjettet fra 2026.",
+      "Virksomhetsplanen for 2026 erkjenner at «økonomisk ubalanse er spesielt utfordrende for to av instituttene» og krever strategisk omstilling for å sikre bærekraftig drift. Samtidig skal fakultetet etablere en egen KI-emnemodul i alle studieprogram ved TekReal i løpet av 2026.",
+      "Bachelorprogrammene hadde nesten 200 flere førsteprioritetssøkere i 2025 enn året før, hovedsakelig drevet av det nye fleksible, nett- og samlingsbaserte bachelorprogrammet i Byggdesign (171 førsteprioritetssøkere, 64 av 30 planlagte studenter startet høsten 2025; 50 fortsatt aktive våren 2026).",
+      "Andelen ingeniørstudenter som kommer inn via lokalt opptak uten realfagsfordypning (TRES/Y-vei) har de siste tre årene gått forbi andelen med realfagsfordypning fra Samordna opptak. Fakultetet venter at trenden fortsetter fordi færre elever i videregående skole velger matematikk R2.",
+      "På de toårige masterprogrammene har opptaket ligget stabilt på rundt 200 studenter de siste fire årene, men med fallende antall førsteprioritetssøkere og kvalifiserte søkere – i 2025 fikk alle kvalifiserte søkere tilbud. Alle masterprogram unntatt industriell økonomi og teknologiledelse undervises på engelsk, og sivilingeniørprogrammene er stengt for søkere utenfor EU/EØS på grunn av eksportkontrollregelverket. Fra 2026 venter fakultetet flere internasjonale masterstudenter etter at skolepengeavgiften for denne gruppen ble halvert.",
+      "Bachelor i industriell matematikk er fortsatt i rød kategori i fakultetets trafikklysmodell for studieporteføljen, tredje året på rad, og vurderes som sårbart på grunn av fallende søkertall til lærerutdanning og realfag. Programmet videreføres likevel fordi det fungerer som «mattepakke» for Handelshøyskolen og overlapper med flere andre programmer.",
+      "Nye fleksible studietilbud lanseres: et nettbasert årsstudium i fysikk fra høsten 2026, et digitalt årsstudium i matematikk fra høsten 2027, og et nettbasert halvårsstudium «Applied AI» rettet mot personer uten teknisk bakgrunn, med utspring i CAIR – Senter for forskning på kunstig intelligens, fra studieåret 2026–2027.",
+      "Mekatronikk, master (siving.) og AI og IoT, master står begge på planen for periodisk programevaluering i 2026, sammen med industriell matematikk, matematikk-master og fornybar energi bachelor/master."
+    ],
+    "oppsummering": "UiAs TekReal-fakultet vokser i bachelor-søkertall, særlig drevet av et nytt fleksibelt Byggdesign-program og en økende andel studenter uten realfagsfordypning, mens de toårige masterprogrammene har flatt opptak og fallende søkertall. Budsjett og virksomhetsplan for 2026 peker på økonomisk ubalanse ved to institutter og en satsing på KI i hele studieporteføljen, samtidig som industriell matematikk fortsatt er i rød kategori i porteføljestyringen.",
+    "relevanteProgram": [
+      "uia_indok",
+      "uia_ki",
+      "uia_ing_mekatronikk"
+    ]
+  },
+  {
+    "id": "uit",
+    "name": "UiT",
+    "fullName": "UiT Norges arktiske universitet",
+    "enhet": "Fakultet for naturvitenskap og teknologi (NT, Tromsø) og Fakultet for ingeniørvitenskap og teknologi (IVT, Narvik)",
+    "styresider": [
+      "https://uit.no/project/studieportefoljen",
+      "https://uit.no/moteportalen"
+    ],
+    "status": "partial",
+    "dokumenter": [
+      {
+        "label": "Porteføljeutviklingsplan UiT 2025-2026 (vedtatt av universitetsstyret 27.11.2024)",
+        "url": "https://uit.no/Content/867210/cache=1733993935000/Elements_Portef%C3%B8ljeutviklingsplan%20UiT%202025%E2%80%932026.pdf",
+        "localPath": "/markedsstatus/realtek/UiT_Porteføljeutviklingsplan_2025-2026.pdf",
+        "dato": "2024-11-27",
+        "storrelseMB": 0.27
+      },
+      {
+        "label": "Revidert porteføljeutviklingsplan UiT 2026-2027 (vedtatt av universitetsstyret høsten 2025)",
+        "url": "https://uit.no/Content/919752/cache=1769697826000/Revidert%20portef%C3%B8ljeutviklingsplan%20UiT%202026%E2%80%932027.pdf",
+        "localPath": "/markedsstatus/realtek/UiT_Porteføljeutviklingsplan_2026-2027.pdf",
+        "dato": "2025-11-01",
+        "storrelseMB": 0.25
+      }
+    ],
+    "punkter": [
+      "UiT vedtok høsten 2024 endringer i studieporteføljen for 2025/26 som del av en flerårig fornyelse (2023-2026). Fakultetene anslo at porteføljekuttet tilsvarer 1 700-2 000 studiepoeng i emneomfang, rundt 40 000-50 000 arbeidstimer, for å frigjøre ressurser til nye satsinger.",
+      "UiT utvikler et sertifikat i digital teknologi og kunstig intelligens, med planlagt oppstart høsten 2026 under ansvar av NT-fakultetet, som ett av 2-3 nye pilotsertifikater i porteføljeplanen.",
+      "IVT-fakultetet (Narvik) og NT-fakultetet (Tromsø) har utviklet 60 studiepoeng felles emner for alle rammeplanstyrte ingeniørutdanninger, og etablerer nå varige ordninger for koordinering på tvers som en pilot i 2025-2026 med egne omstillingsmidler.",
+      "Fakultetene vurderer en ny, fleksibel ingeniørutdanning i samarbeid med næringslivet (heltid/deltid), og skal samtidig gjennomgå ressursbruk og lav gjennomstrømming i de alternative opptaksveiene til ingeniørutdanning (forkurs, realfagskurs, Y-vei, tresemesterordning) — et problem porteføljeplanen omtaler som nasjonalt, ikke bare lokalt.",
+      "IVT og NT-fakultetet leverer i dag hver sin bachelor ingeniør innen droneteknologi. Et eget tiltak skal samordne fagmiljøene innen autonome farkoster (fly, båter, droner, satellitt) på tvers av fakultetene for bedre studiekvalitet og rekruttering.",
+      "Et tverrfaglig helseteknologi-studieløp (samarbeid mellom Helsefak, IVT og NT) planlegges med mest sannsynlig oppstart høsten 2027. NT-fakultetet vurderer samtidig om sivilingeniørretningen i medisinsk informatikk skal videreføres, i lys av opptakstall og det nye helseteknologitilbudet.",
+      "IVT utreder et nytt bachelorprogram i bærekraftig logistikk med opptakskrav generell studiekompetanse, basert i hovedsak på eksisterende IVT-emner.",
+      "Programemner innen MNT-feltet (matematikk, naturvitenskap, teknologi) samordnes på tvers av disiplinutdanninger og femårige sivilingeniørprogram; statistikk/bioinformatikk, biokjemi og kjemi er identifiserte samkjøringsområder, og en tverrfakultær arbeidsgruppe (NT, BFE, Helsefak — NT koordinerer) gjøres permanent for videre koordinering."
+    ],
+    "oppsummering": "UiT er inne i en flerårig, styrevedtatt fornyelse av studieporteføljen (2023-2026/27) med betydelige kutt i emneomfang og en klar retning mot tverrfakultær koordinering mellom det Tromsø-baserte NT-fakultetet og det Narvik-baserte IVT-fakultetet. For REALTEK er de tydeligste signalene et nytt KI/digital teknologi-sertifikat fra 2026, samordning av ingeniørutdanningene og droneteknologi-tilbudene på tvers av campus, og et planlagt helseteknologi-studieløp fra 2027 som kan erstatte dagens sivilingeniørretning i medisinsk informatikk. Detaljerte opptakstall og programvise vedtak fra fakultetsstyrene selv var ikke tilgjengelige i et offentlig nedlastbart format (Elements Publikum-portalen krever JavaScript-rendering), så vurderingen er merket delvis.",
+    "relevanteProgram": [
+      "uit_baerekraftig_kjemi",
+      "uit_fornybar_energi",
+      "uit_anvendt_fysmat",
+      "uit_ki",
+      "uit_fysmat_b"
+    ]
+  },
+  {
+    "id": "uib",
+    "name": "UiB",
+    "fullName": "Universitetet i Bergen",
+    "enhet": "Fakultet for naturvitenskap og teknologi (tidligere Det matematisk-naturvitenskapelige fakultet, navn endret av universitetsstyret 13.06.2024)",
+    "styresider": [
+      "https://www.uib.no/ledelsen",
+      "https://ekstern.filer.uib.no/ledelse/universitetsstyret/"
+    ],
+    "status": "complete",
+    "dokumenter": [
+      {
+        "label": "S 51/24 Endring av navn for Det matematisk-naturvitenskapelige fakultet til Fakultet for naturvitenskap og teknologi",
+        "url": "https://ekstern.filer.uib.no/ledelse/universitetsstyret/2024/2024-06-13/S_51-24Endring-av-navn-for-Det-matematisk-naturvitenskapelige-fakultet_til-Fakultet-for-naturvitenskap-og-teknologi.pdf",
+        "localPath": "/markedsstatus/realtek/UiB_S51-24_Navneendring_MN.pdf",
+        "dato": "2024-06-13",
+        "storrelseMB": 5.69
+      },
+      {
+        "label": "S 103/25 Endringer i UiBs studieportefølje 2026 og opptaksrammer 2026-2027",
+        "url": "https://ekstern.filer.uib.no/ledelse/universitetsstyret/2025/2025-11-27/S_103-25Endringer-i-UiBs-studieportef%C3%B8lje2026-og-opptaksrammer2026-27.pdf",
+        "localPath": "/markedsstatus/realtek/UiB_S103-25_Studieportefolje2026.pdf",
+        "dato": "2025-11-27",
+        "storrelseMB": 0.29
+      }
+    ],
+    "punkter": [
+      "Universitetsstyret vedtok 13.06.2024 (sak 51/24) at Det matematisk-naturvitenskapelige fakultet skifter navn til «Fakultet for naturvitenskap og teknologi», etter forslag fra fakultetsstyret selv (sak 12/24). Begrunnelsen var fakultetets sterke og økende teknologiprofil, særlig satsingen på sivilingeniørprogrammer, og et ønske om bedre synlighet i konkurransen om forskningsmidler, studenter og arbeidslivsrelevans.",
+      "Universitetsstyret vedtok 27.11.2025 (sak 103/25) å opprette et nytt integrert masterprogram (sivilingeniør) i kvanteteknologi fra høsten 2026, med 20 studieplasser omdisponert internt fra bachelor- og masterprogrammet i fysikk ved Institutt for fysikk og teknologi. Programmet skal bygge på et planlagt kvanteteknologisk senter i samarbeid med næringsliv og offentlig sektor.",
+      "Samtidig kuttes opptaksrammen for bachelor i fysikk fra 52 til 26 plasser (-50 prosent) fra studieåret 2026/2027, mens sivilingeniørprogrammene i Data science (22), Energi (49), Havbruk (20), Havteknologi (22), Medisinsk teknologi (32) og Geofysikk – vær, hav og klima (20), samt Informasjonsteknologi og økonomi (25), holdes uendret.",
+      "Fakultetets samlede opptaksramme for grunnstudier går ned fra 849 til 843 plasser fra 2025/26 til 2026/27, mens rammen for integrerte masterprogrammer (sivilingeniør mv.) øker fra 238 til 258 plasser — i praksis drevet av det nye kvanteteknologiprogrammet alene.",
+      "UiB fylte sine overordnede opptaksrammer for både grunnstudier og toårig master i 2025: 4 631 nye studenter møtte til grunnstudiene (175 flere enn året før), og 1 290 møtte til toårig master (184 flere) — første gang siden 2021 at de overordnede masterrammene ble fylt over 100 prosent.",
+      "Masterprogrammet i Aktuarfag og dataanalyse er omdøpt til Integrert masterprogram i Data science, finans og forsikring, med uendret opptaksramme på 10 plasser."
+    ],
+    "oppsummering": "UiBs realfagsfakultet har fullført en flerårig posisjonering mot teknologi: navnet er endret til Fakultet for naturvitenskap og teknologi, og fra høsten 2026 lanseres et nytt sivilingeniørprogram i kvanteteknologi finansiert ved å halvere opptaket til bachelor i fysikk. Øvrige sivilingeniørprogrammer (data science, energi, havbruk, havteknologi, medisinsk teknologi) holder opptaksrammene uendret, og fakultetet fylte sine overordnede opptaksrammer for både grunnstudier og master i 2025 for første gang på flere år.",
+    "relevanteProgram": [
+      "uib_fysikk",
+      "uib_datascience",
+      "uib_energi",
+      "uib_it_okonomi"
+    ]
+  },
+  {
+    "id": "uio",
+    "name": "UiO",
+    "fullName": "Universitetet i Oslo",
+    "enhet": "Det matematisk-naturvitenskapelige fakultet (MN)",
+    "styresider": [
+      "https://www.uio.no/om/organisasjon/styret/",
+      "https://www.mn.uio.no/om/organisasjon/fakultetsstyret/"
+    ],
+    "status": "complete",
+    "dokumenter": [
+      {
+        "label": "V-sak 59-25 Universitetet i Oslos utdanningsportefølje for studieåret 2026/2027 (inkl. MN-fakultetets innspill om langsiktige utviklingsplaner)",
+        "url": "https://www.uio.no/om/organisasjon/styret/moter/2025/06-10/v-sak-59-25-universitetet-i-oslos-utdanningsportefolje-for-studiearet-2026-2027.pdf",
+        "localPath": "/markedsstatus/realtek/UiO_Vsak59-25_Utdanningsportefolje2026-27.pdf",
+        "dato": "2025-06-10",
+        "storrelseMB": 3.72
+      }
+    ],
+    "punkter": [
+      "Universitetsstyret vedtok 10.06.2025 (V-sak 59-25) at 7 studieplasser innen fagfeltet nukleære fag fra statsbudsjettet 2023 fordeles til masterprogrammet Nukleærteknologi ved MN-fakultetet.",
+      "Institutt for teknologisystemer (ITS), i dag lokalisert på Kjeller, planlegger et nytt engelskspråklig treårig tverrfaglig bachelorprogram «Technology: System design», med mulig oppstart høsten 2026 forutsatt økonomisk støtte og tilgang på lokaler på Blindern. Instituttet ønsker programmet for å gi mer direkte rekruttering til sine mastertilbud i Fornybare energisystemer og Romsystemer, samt studieretningene Kybernetikk og autonome systemer og Sikkerhet i cyberfysiske systemer, som alle har god søkning.",
+      "ITS planlegger også et nytt toårig masterprogram i helseteknologi («Healthcare Technology»), med stor interesse fra medisinske fagmiljøer i Oslo-regionen, samt en ny studieretning i bærekraftige energisystemer («Teknologi, samfunn og miljø») i samarbeid med Senter for utvikling og miljø (SUM), planlagt oppstart høsten 2027.",
+      "Institutt for informatikk vurderer et nytt toårig masterprogram «Maskinlæring og kunstig intelligens» fra høsten 2027/28 — et mulig direkte konkurrerende tilbud til NMBUs data-/KI-relaterte programmer.",
+      "Fysisk institutt vurderer to nye tilbud: et tverrfaglig bachelorprogram innen «Bærekraft» med base i fysikk, men mildere matematikkrav (R1) enn det tradisjonelle fysikkprogrammet, og et eget masterprogram i kvanteteknologi (i dag bare en studieretning under bachelor- og masterprogrammet i fysikk).",
+      "Etableringen av det nye ITS-bachelorprogrammet krever minst to nye vitenskapelige stillinger, og fakultetet søker økonomisk støtte fra universitetsledelsen fordi studiepoengsuttelling for programmet ikke kommer før tidligst i 2029.",
+      "UiOs ledelse har flere år på rad fremmet «Future technologies» som satsingsområde overfor Kunnskapsdepartementet uten å få gjennomslag i finansieringen derfra, noe MN-fakultetet peker på som en årsak til at instituttenes utviklingsplaner er krevende å realisere innenfor eksisterende rammer."
+    ],
+    "oppsummering": "UiOs MN-fakultet er inne i en periode med flere nye teknologirettede studieplaner: en engelskspråklig teknologisystem-bachelor, en helseteknologimaster, en mulig egen kvanteteknologimaster og en mulig ny KI/maskinlæring-master ved Institutt for informatikk, alle rettet mot å styrke rekrutteringen til fakultetets voksende sivilingeniør- og teknologiportefølje. Samtidig er dette langsiktige planer uten sikker finansiering — fakultetets eneste konkrete, vedtatte endring i 2025/2026 er 7 nye studieplasser til masterprogrammet i nukleærteknologi.",
+    "relevanteProgram": [
+      "uio_fysikk_astronomi",
+      "uio_fornybar_nano",
+      "uio_informatikk_ml_ki",
+      "uio_informatikk_robotikk",
+      "uio_kjemi_biokjemi"
+    ]
+  },
+  {
+    "id": "oslomet",
+    "name": "OsloMet",
+    "fullName": "OsloMet - storbyuniversitetet",
+    "enhet": "Fakultet for teknologi, kunst og design (TKD)",
+    "styresider": [
+      "https://opengov.360online.com/Meetings/oslomet/Boards/Details/304093",
+      "https://www.oslomet.no/om/tkd/fakultetsstyret-ved-tkd"
+    ],
+    "status": "partial",
+    "dokumenter": [
+      {
+        "label": "Fakultetsstyret TKD – møteprotokoll 26.02.2026 (årsrapport 2025, strategimidler, risikobilde)",
+        "url": "https://opengov.360online.com/Meetings/oslomet/File/Details/1368923.PDF",
+        "localPath": "/markedsstatus/realtek/OsloMet_TKD_Protokoll_26.02.2026.pdf",
+        "dato": "2026-02-26",
+        "storrelseMB": 0.11
+      },
+      {
+        "label": "Fakultetsstyret TKD – møteprotokoll 16.04.2026 (risikobilde 2026-2030, oppdragsbrev TKD 2026)",
+        "url": "https://opengov.360online.com/Meetings/oslomet/File/Details/1383216.pdf",
+        "localPath": "/markedsstatus/realtek/OsloMet_TKD_Protokoll_16.04.2026.pdf",
+        "dato": "2026-04-16",
+        "storrelseMB": 0.11
+      },
+      {
+        "label": "Fakultetsstyret TKD – møteprotokoll 11.06.2026 (tertialrapport T1 2026, prognose, tiltaksplan 2027)",
+        "url": "https://opengov.360online.com/Meetings/oslomet/File/Details/1400326.pdf",
+        "localPath": "/markedsstatus/realtek/OsloMet_TKD_Protokoll_11.06.2026.pdf",
+        "dato": "2026-06-11",
+        "storrelseMB": 0.13
+      },
+      {
+        "label": "TKD Strategisk handlingsplan 2025-2029",
+        "url": "https://www.oslomet.no/om/tkd/tkd-strategisk-handlingsplan-2025-2029",
+        "localPath": null,
+        "dato": "2025",
+        "storrelseMB": 0.0
+      }
+    ],
+    "punkter": [
+      "Fakultetsstyret TKD vedtok i møtet 26.02.2026 å bruke udisponerte strategimidler for 2026 til en ny postdoktorstilling knyttet til en MSCA-søknad som har fått «Seal of Excellence», med resten av midlene fordelt til tiltak i den strategiske handlingsplanen.",
+      "Fakultetsstyret behandlet og vedtok Årsrapport TKD 2025 (26.02.2026), Risikobilde TKD 2026-2030 (16.04.2026) og Tertialrapport T1 2026 (11.06.2026), men OsloMets møteportal publiserer bare selve møteprotokollene med vedtakstekst — sakspapirer med underlagstall, søkertall og risikovurderinger er ikke lagt ut som separate, nedlastbare dokumenter slik andre institusjoner i denne oversikten gjør.",
+      "TKDs strategiske handlingsplan for 2025-2029 forplikter fakultetet til å vurdere, og om nødvendig legge ned, studieprogram med vedvarende lav søkning, og til å styrke etter- og videreutdanningstilbudet med særlig vekt på ingeniørfag og de praktisk-estetiske fagene.",
+      "Planen prioriterer tettere arbeidslivssamarbeid for å utvikle og markedsføre relevante studieprogram, og målrettet rekruttering tilpasset søkergruppene, uten at konkrete nye ingeniørprogrammer er navngitt i det offentlig tilgjengelige materialet."
+    ],
+    "oppsummering": "OsloMets TKD-fakultet driver løpende styresaker om økonomi, risiko og strategi gjennom 2026, men publiserer i motsetning til de fleste andre institusjonene i denne oversikten bare korte møteprotokoller uten vedlagte sakspapirer i sin åpne møteportal. Det tydeligste signalet for REALTEK er fakultetets strategiske forpliktelse til å vurdere nedlegging av studieprogram med lav søkning og til å prioritere ingeniørrettet etter- og videreutdanning, men konkrete program- og opptakstall for bygg-, maskin-, elektro- og datateknologiutdanningene var ikke offentlig tilgjengelige i dette arbeidet.",
+    "relevanteProgram": [
+      "oslomet_ing_bygg",
+      "oslomet_ing_maskin",
+      "oslomet_ing_bioteknologi_kjemi",
+      "oslomet_anvendt_datateknologi",
+      "oslomet_ing_energi_miljo_bygg",
+      "oslomet_ing_elektro_robotikk",
+      "oslomet_smart_vannteknologi"
+    ]
+  },
+  {
+    "id": "hvl",
+    "name": "HVL",
+    "fullName": "Høgskulen på Vestlandet",
+    "enhet": "Fakultet for teknologi, miljø- og samfunnsvitskap (FTMS) — Fakultet for ingeniør- og naturvitskap (FIN) fusjonerte inn i FTMS frå 1.1.2025",
+    "styresider": [
+      "https://opengov.360online.com/Meetings/hvl-uninett/Boards/Details/302309"
+    ],
+    "status": "complete",
+    "dokumenter": [
+      {
+        "label": "FTMS Fakultetsråd – innkalling 12.02.2026 (Ingeniørløftet, økonomistatus, ph.d.-tilbod)",
+        "url": "https://opengov.360online.com/Meetings/hvl-uninett/File/Details/1275263.PDF",
+        "localPath": "/markedsstatus/realtek/HVL_FTMS_Innkalling_12.02.2026.pdf",
+        "dato": "2026-02-12",
+        "storrelseMB": 0.92
+      },
+      {
+        "label": "FTMS Fakultetsråd – innkalling 21.05.2026 (arealprosessar Haugesund/Bergen, søkartal 2026, KI-emne, NOKUT-besøk)",
+        "url": "https://opengov.360online.com/Meetings/hvl-uninett/File/Details/1303215.pdf",
+        "localPath": "/markedsstatus/realtek/HVL_FTMS_Innkalling_21.05.2026.pdf",
+        "dato": "2026-05-21",
+        "storrelseMB": 1.07
+      }
+    ],
+    "punkter": [
+      "Fakultet for ingeniør- og naturvitskap (FIN), som tidligere eide bygg- og landmålingsutdanningene, fusjonerte 1. januar med Fakultet for økonomi og samfunnsvitskap til Fakultet for teknologi, miljø- og samfunnsvitskap (FTMS). Ingeniørutdanningene forvaltes dermed nå av samme fakultet som handelshøgskolen.",
+      "I søkartalet for 2026 vokser Samordna opptak nasjonalt med 6,2 prosent, mens HVL totalt har en liten nedgang på 0,5 prosent. Landmåling og eiendomsdesign i Bergen er likevel HVLs 6. mest søkte studieprogram: 1 168 søkere til 80 plasser i 2026, opp fra 933 søkere til 65 plasser i 2025, med en økning i førstevalgssøkere fra 191 til 227 (+18,9 prosent).",
+      "Ingeniør, bygg i Bergen holder seg stabilt med 100 planlagte studieplasser (uendret) og 867 søkere i 2026 (opp fra 777), men antall førstevalgssøkere er tilnærmet uendret: 150 mot 151 i 2025 (-0,7 prosent). Den «forventet kvalifisert førstevalg per studieplass»-indikatoren er 1,00.",
+      "Ingeniør, data i Bergen faller derimot: planlagte plasser kuttes fra 100 til 95, søkere faller fra 519 til 418, og førstevalgssøkere faller 16,8 prosent fra 107 til 89. Informasjonsteknologi faller også ved campusene i Førde og Haugesund, mens fagområdet økonomi og administrasjon har størst vekst i fakultetet.",
+      "Et industrisamarbeid kalt «Ingeniørløftet i Haugesund» er etablert med Deep Ocean, SEAM og Næringsforeningen for å motvirke synkende søkertall til ingeniør- og teknologiutdanninger. I Haugalandsregionen valgte 67,2 prosent av videregåendeelevene yrkesfag våren 2025, og fakultetet innfører Y-vei innen kjemi, elektro og maskin fra neste studieår for å fange opp denne gruppen.",
+      "Nye opptaksveier (Y-vei og tresemesterordning) for elektroteknologi og kjemiingeniør i Bergen har gode søkertall i det lokale opptaket 2026, ifølge fakultetsrådssaken om søkartal.",
+      "Et nybygg i Haugesund skal være klart til studiestart 2026 og samlokaliserer alle fagmiljø på campus. Et tilsvarende byggeprosjekt på Kronstad i Bergen utredes sammen med Vestland fylkeskommune og Fagskulen Vestland, og omtales som et løft for hele HVL og en styrke i konkurransen om studenter.",
+      "Fakultetet setter ned en arbeidsgruppe for å utrede utvidelse av ph.d.-tilbudet ved FTMS, koblet til HVLs pågående overgang til universitetsstatus og rektors oppdragsbrev for 2026."
+    ],
+    "oppsummering": "HVLs ingeniørutdanninger inngår siden 1.1. i det nye Fakultet for teknologi, miljø- og samfunnsvitskap (FTMS), sammen med handelshøgskolen. Søkertallene er delte: landmåling og eiendomsdesign i Bergen vokser kraftig og er blant HVLs mest populære studier, mens ingeniør, data faller markert og informasjonsteknologi svikter flere steder. Fakultetet svarer med et industrisamarbeid i Haugesund («Ingeniørløftet»), nye Y-vei-opptak i kjemi, elektro og maskin, nybygg i Haugesund og Bergen, og en gjennomgang av ph.d.-tilbudet i forbindelse med universitetsstatus.",
+    "relevanteProgram": [
+      "hvl_ing_bygg",
+      "hvl_landmaling",
+      "hvl_landmaling_geoinf"
+    ]
+  },
+  {
+    "id": "usn",
+    "name": "USN",
+    "fullName": "Universitetet i Sørøst-Norge",
+    "enhet": "Fakultet for teknologi, naturvitenskap og maritime fag (TNM)",
+    "styresider": [
+      "https://opengov.360online.com/Meetings/usn/Boards/Details/341392"
+    ],
+    "status": "partial",
+    "dokumenter": [
+      {
+        "label": "Fakultetsstyret TNM – innkalling 26.02.2026 (årsrapport 2025, revidert budsjett, strategiinnspill)",
+        "url": "https://opengov.360online.com/Meetings/usn/File/Details/1845158.pdf",
+        "localPath": "/markedsstatus/realtek/USN_TNM_Innkalling_26.02.2026.pdf",
+        "dato": "2026-02-26",
+        "storrelseMB": 0.24
+      },
+      {
+        "label": "Fakultetsstyret TNM – protokoll 26.02.2026",
+        "url": "https://opengov.360online.com/Meetings/usn/File/Details/1829422.pdf",
+        "localPath": "/markedsstatus/realtek/USN_TNM_Protokoll_26.02.2026.pdf",
+        "dato": "2026-02-26",
+        "storrelseMB": 0.21
+      },
+      {
+        "label": "Fakultetsstyret TNM – innkalling 28.05.2026 (studieportefølje 2027-2028, budsjettprognose 2027)",
+        "url": "https://opengov.360online.com/Meetings/usn/File/Details/1852195.pdf",
+        "localPath": "/markedsstatus/realtek/USN_TNM_Innkalling_28.05.2026.pdf",
+        "dato": "2026-05-28",
+        "storrelseMB": 0.24
+      }
+    ],
+    "punkter": [
+      "TNM hadde et regnskapsført mindreforbruk på 9,9 millioner kroner fra bevilgningsfinansiert virksomhet i 2025, som overføres til 2026 (sak 5/26, revidert budsjett).",
+      "Budsjettprognosen for 2027 viser fortsatt realnedgang for TNM: generell rammereduksjon og sentralisering av OLA-ordningen gir isolert en reduksjon på 3,4 millioner kroner i fakultetets budsjettramme, mens USN samlet får en nominell økning på 3,1 prosent men en realnedgang på -0,15 prosent, med forventet lønns- og prisvekst på 3,2 prosent (sak 17/26).",
+      "Studieporteføljen for 2027/2028 meldes inn i en todelt prosess med foreløpig innmelding i juni og endelig fastsettelse i universitetsstyret i november. Fakultetsstyret satte som forutsetning at eventuelle nye studietilbud ved campus Drammen må finansieres fullt ut med friske midler, ikke gjennom omdisponering av eksisterende rammer (sak 15/26).",
+      "En ny strategi for USN mot 2027–2035 er under utarbeidelse. TNM ga innspill til rektoratets første tekstutkast i februar 2026, og fakultetets egen strategi samt nye instituttstrategier skal etter planen vedtas i fakultetsstyret i første halvår 2027, med innspill fra industrien i Grenland som del av kunnskapsgrunnlaget."
+    ],
+    "oppsummering": "TNM ved USN rapporterer et lite mindreforbruk for 2025, men budsjettprognosen for 2027 varsler fortsatt realnedgang for fakultetet, forsterket av sentralisering av omstillingsmidler. Fakultetet er samtidig midt i en strategiprosess mot 2035 og en todelt innmelding av studieporteføljen for 2027/2028, men de programspesifikke søkertalls- og porteføljevedleggene var ikke tilgjengelige som egne nedlastbare filer i møteportalen, så vurderingen er merket delvis.",
+    "relevanteProgram": [
+      "usn_ing_bygg_plan_infrastruktur",
+      "usn_ing_maskin_produktutvikling"
+    ]
+  },
+  {
+    "id": "nord",
+    "name": "Nord",
+    "fullName": "Nord universitet",
+    "enhet": "Handelshøgskolen (HHN)",
+    "styresider": [
+      "https://www.nord.no/no/om-nord/styret"
+    ],
+    "status": "complete",
+    "dokumenter": [
+      {
+        "label": "Styret for Nord universitet – komplett innkalling 05.03.2026 (årsrapport og årsregnskap 2025, inkl. HHN og studieportefølje)",
+        "url": "https://www.nord.no/sites/default/files/2026-02/Komplett-innkalling-Styret-for-Nord-universitet-05-03-2026.pdf",
+        "localPath": "/markedsstatus/realtek/Nord_Styret_Innkalling_05.03.2026.pdf",
+        "dato": "2026-03-05",
+        "storrelseMB": 5.04
+      },
+      {
+        "label": "Styret for Nord universitet – komplett innkalling 07.05.2026",
+        "url": "https://www.nord.no/sites/default/files/2026-04/Komplett-innkalling-Styret-for-Nord-universitet-07-05-2026.pdf",
+        "localPath": "/markedsstatus/realtek/Nord_Styret_Innkalling_07.05.2026.pdf",
+        "dato": "2026-05-07",
+        "storrelseMB": 4.48
+      }
+    ],
+    "punkter": [
+      "Handelshøgskolen (HHN) etablerte i 2025 et nettbasert bachelorstudium i økonomi og teknologiledelse. Interessen var stor med 279 førsteprioritetssøkere, og fra høsten 2026 tilbys studiet også i en samlingsbasert versjon ved studiested Mo i Rana.",
+      "Det nye studiet bidrar til at Nords nettbaserte studietilbud har vokst kraftig: antall studenter registrert under «Nettstudium» økte fra 497 i 2022 til 2 093 i 2025, mens antall studenter ved campus Bodø falt fra 5 309 til 4 725 i samme periode. Totalt studenttall ved Nord økte likevel fra 11 281 til 11 740.",
+      "Handelshøgskolen hadde et regnskapsmessig overskudd på 9,9 millioner kroner i 2025 innenfor bevilgningsfinansiert virksomhet, hovedsakelig fordi lønnsoppgjøret og pensjonskostnadene ble lavere enn budsjettert, og fordi fakultetet bevisst har holdt igjen på nyrekruttering for å tilpasse driften til forventede fremtidige inntektskutt.",
+      "Handelshøgskolen reduserte bemanningen med netto 7,1 årsverk i 2025, hovedsakelig midlertidige stillinger, og fakultetet oppgir at det er mangel på godt kvalifiserte søkere til ledige stillinger — flere kandidater har takket nei til tilbud om stilling.",
+      "Bidrags- og oppdragsfinansiert virksomhet (BOA) ved Handelshøgskolen endte 5,0 millioner kroner under budsjett og 9,5 millioner lavere enn i 2024, men virksomhetskapitalen økte likevel med rundt 16 millioner kroner etter avslutning av et åtteårig oppdragsprosjekt.",
+      "Styret skal i junimøtet 2026 behandle studieportefølje for 2027/2028, og fikk i mars-møtet 2026 en egen sak om etablering av nye studier ved Nord universitet."
+    ],
+    "oppsummering": "Nords eneste direkte konkurrerende REALTEK-program, bachelor i økonomi og teknologiledelse ved Handelshøgskolen, fikk en svært sterk lansering i 2025 med 279 førsteprioritetssøkere og utvides fra høsten 2026 til en samlingsbasert variant i Mo i Rana. Dette skjer i en periode der Handelshøgskolen strammer inn bemanningen og går med overskudd gjennom tilbakeholden rekruttering, mens Nord som helhet flytter tyngdepunkt fra campus til nettbaserte studier.",
+    "relevanteProgram": [
+      "nord_okonomi_teknologiledelse"
+    ]
+  },
+  {
+    "id": "hio",
+    "name": "HiØ",
+    "fullName": "Høgskolen i Østfold",
+    "enhet": "Fakultet for informasjonsteknologi, ingeniørfag og økonomi (IIØ) — Institutt for ingeniørfag (ING) og Institutt for informasjonsteknologi og kommunikasjon (ITK)",
+    "styresider": [
+      "https://opengov.360online.com/Meetings/hiof/Boards/Details/261077"
+    ],
+    "status": "complete",
+    "dokumenter": [
+      {
+        "label": "Fakultetsstyret IIØ – innkalling 05.03.2026 (regnskap 2025 pr. institutt, handlingsplan 2030, aktivitetsplan 2026, protokoll 05.12.2025 vedlagt)",
+        "url": "https://opengov.360online.com/Meetings/hiof/File/Details/682331.PDF",
+        "localPath": "/markedsstatus/realtek/HiOF_IIO_Innkalling_05.03.2026.pdf",
+        "dato": "2026-03-05",
+        "storrelseMB": 2.05
+      },
+      {
+        "label": "Fakultetsstyret IIØ – protokoll 05.03.2026",
+        "url": "https://opengov.360online.com/Meetings/hiof/File/Details/690569.pdf",
+        "localPath": "/markedsstatus/realtek/HiOF_IIO_Protokoll_05.03.2026.pdf",
+        "dato": "2026-03-05",
+        "storrelseMB": 0.13
+      },
+      {
+        "label": "Fakultetsstyret IIØ – innkalling 02.06.2026 (virksomhetsrapport 1. tertial, møteplan 2026/2027)",
+        "url": "https://opengov.360online.com/Meetings/hiof/File/Details/690720.pdf",
+        "localPath": "/markedsstatus/realtek/HiOF_IIO_Innkalling_02.06.2026.pdf",
+        "dato": "2026-06-02",
+        "storrelseMB": 1.09
+      }
+    ],
+    "punkter": [
+      "I regnskapet for tredje tertial 2025 gikk Institutt for ingeniørfag (ING) med et merforbruk på 1,5 millioner kroner (mot budsjettert 1,6 millioner), mens Institutt for informasjonsteknologi og kommunikasjon (ITK) hadde et mindreforbruk på 2,5 millioner kroner. Fakultetet totalt (IIØ) endte tredje tertial med et mindreforbruk på 5,2 millioner kroner mot budsjetterte 3,1 millioner.",
+      "Fakultetsstyret stilte seg positive til at fakultetet ønsker å gjenopprette Bachelor i ingeniørfag – kjemi (sak 16/25, protokoll fra møtet 05.12.2025).",
+      "Per desember 2025 hadde IIØ 14 aktive ph.d.-stipendiater og 5 nye stillinger under rekruttering. HiØ søker i tillegg om 6–10 nye ph.d.-stillinger innen «Digitalisering og samfunn».",
+      "Institutt for ingeniørfag skal i 2026 gjennomføre en behovsanalyse av næringsliv, studentgrunnlag og konkurransesituasjon for en ny tverrfaglig mastergrad innen grønn energi og bærekraft — et mulig nytt konkurrerende tilbud til NMBUs energi- og miljøprogrammer dersom det realiseres.",
+      "Institutt for ingeniørfag skal utvikle en løsning for et mer forutsigbart utdanningsløp for studenter i arbeid på Bachelor i ingeniørfag, omtalt som «Borregårdmodellen» etter industripartneren Borregaard.",
+      "Handlingsplanen mot 2030, vedtatt av fakultetsstyret 05.03.2026, peker ut CDIO (Conceive–Design–Implement–Operate) som prioritert pedagogisk rammeverk for ingeniørutdanningene ved fakultetet.",
+      "ITK skal i 2026 utvide sin EVU-portefølje med ytterligere to KI-moduler og videreutvikle bachelor i informatikk i samarbeid med næringslivet, mens ING skal formalisere minst ett bransjekontaktpunkt per studieprogram."
+    ],
+    "oppsummering": "Ved HiØs IIØ-fakultet gikk ingeniørinstituttet (ING) med underskudd i 2025 mens IT-instituttet (ITK) gikk med overskudd. De klareste konkurransesignalene for REALTEK er planene om å gjenopprette bachelor i ingeniørfag – kjemi og om å utrede en ny tverrfaglig mastergrad i grønn energi og bærekraft ved ingeniørinstituttet i 2026, sammen med en satsing på CDIO-rammeverk i ingeniørpedagogikken og en øremerket ph.d.-satsing på digitalisering.",
+    "relevanteProgram": [
+      "hiof_ing_bygg_miljo"
+    ]
+  }
+];

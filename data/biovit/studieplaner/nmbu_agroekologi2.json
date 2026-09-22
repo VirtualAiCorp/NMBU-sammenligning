@@ -18,7 +18,9 @@
       "studiepoeng": 30,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "PAE302-1"
+      ],
       "merknad": "Går over augustblokk og høstparallell. Felles startemne for både enkeltgrad og dobbeltgrad med ISARA/FESIA (Frankrike)."
     },
     {
@@ -27,7 +29,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "PAE306-1"
+      ],
       "merknad": null
     },
     {
@@ -36,7 +40,9 @@
       "studiepoeng": 60,
       "aar": 2,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "M60-AE-1"
+      ],
       "merknad": "60 sp er lagt til grunn her (høstparallell + vårparallell 2. år). Studenten kan i stedet velge en masteroppgave på 30 sp (emnekode M30-AE, kun vårparallell 2. år); dobbeltgradsstudenter med ISARA/FESIA skriver alltid en oppgave på 30 sp."
     }
   ],

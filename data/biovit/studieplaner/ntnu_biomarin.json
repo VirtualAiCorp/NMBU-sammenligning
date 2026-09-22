@@ -1,0 +1,210 @@
+{
+  "entryId": "ntnu_biomarin",
+  "programnavn": "Biomarin innovasjon (bachelor)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.ntnu.no/studier/298bmi",
+    "https://www.ntnu.no/studier/298bmi/studiets-oppbygning",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=298BMI&year=2026"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 127.5,
+  "obligatoriske": [
+    {
+      "emnekode": "HMS0001",
+      "emnenavn": "HMS-kurs for 1. årsstudenter",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "HMS0001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MB102019",
+      "emnenavn": "Biomarin verdiskaping",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MB102019-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BI2081",
+      "emnenavn": "Natur, miljø og bærekraft",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BI2081-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HBIOA1013",
+      "emnenavn": "Introduksjon til Kjemi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BBL1002",
+      "emnenavn": "Generell mikrobiologi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MB104314",
+      "emnenavn": "Marin biologi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MB104314-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "AI101500",
+      "emnenavn": "Designdrevet innovasjon",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "AI101500-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "IBA1001",
+      "emnenavn": "Vitenskapelig metode",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "AE101124",
+      "emnenavn": "Økonomisk styring I",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "AE101124-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIA2001",
+      "emnenavn": "Marin økologi",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIA2001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "AI201312",
+      "emnenavn": "Entreprenørskap og forretningsutvikling",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "AI201312-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MN304012",
+      "emnenavn": "Kvalitetssikring og sertifisering",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MN304012-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIA2002",
+      "emnenavn": "Akvakultur",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIA2002-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIA2004",
+      "emnenavn": "Sjømatforedling",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIA2004-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "AI201400",
+      "emnenavn": "Innovation and intrapreneurship",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "AI201400-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EXPH0300",
+      "emnenavn": "Examen philosophicum for naturvitenskap og teknologi",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "EXPH0300-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIA3003",
+      "emnenavn": "Innføring i vitenskapelig metode",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIA3003-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "AI303700",
+      "emnenavn": "Tverrfaglig innovasjon",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "AI303700-1"
+      ],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er NTNUs studieplan-API for programkode 298BMI (Biomarin innovasjon, bachelor, studiested Ålesund), år 2026, hentet direkte fra det underliggende JSON-endepunktet bak www.ntnu.no/studier/studieplan#programmeCode=298BMI&year=2026 (se metode-merknad i ntnu_biologi.json). Programmet er 180 sp over 6 semester. Kildedataene for kursgruppen (298BMI-2026-OBL/VALG) har feltet «Det vil bli endringer i 2. og 3. året - oppdateres våren 2027», dvs. planen for 2. og 3. studieår for kull 2026 er markert som foreløpig/ikke ferdig oppdatert i NTNUs system. De 18 emnene i obligatoriske-listen (127,5 sp) er de med studyChoice-kode «O» (fast obligatorisk, uten valgalternativ) i periode 1–5. Følgende obligatoriske krav er valg mellom alternativer og er derfor IKKE ført i listen, i tråd med oppgavens regel: (1) periode 1: AM101020 Praktisk økonomi med regning / AR100919 Matematikk for økonomer – minst 1 emne fra gruppe A (7,5 sp); (2) periode 5: BIA3004 Akvakultur forskningstemaer / BTA2001 Ernæring – minst 1 emne fra gruppe C (7,5 sp); (3) periode 6: AI301212 Fra ide til bedrift / BIA3002 Bacheloroppgave – minst 1 emne fra gruppe A (15 sp). Bacheloroppgaven er dermed valgfri (ett av to alternativ i 6. semester), ikke entydig obligatorisk, i denne studieplanversjonen. Periode 4 og 6 har i tillegg egne pooler av fritt valgfrie emner (kode «V»: AL101816, AR100219, BIA2003 i periode 4; AH301408, BIA3001, AL302030 i periode 6) som ikke er obligatoriske. Programmet har ingen egne, navngitte studieretninger i studieplandataene for dette kullet."
+}

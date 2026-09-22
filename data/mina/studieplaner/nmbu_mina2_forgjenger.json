@@ -1,0 +1,191 @@
+{
+  "entryId": "nmbu_mina2_forgjenger",
+  "programnavn": "Miljø og naturressurser (master 2 år, forgjenger)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2021/2022",
+  "kilder": [
+    "https://static02.nmbu.no/mina/studier/M-MINA.php?sprx=n&aarx=2021",
+    "https://static02.nmbu.no/mina/studier/M-MINA.php?srex=mo&sprx=n&aarx=2021",
+    "https://static02.nmbu.no/mina/studier/M-MINA.php?srex=ge&sprx=n&aarx=2021",
+    "https://static02.nmbu.no/mina/studier/M-MINA.php?srex=jm&sprx=n&aarx=2021",
+    "https://static02.nmbu.no/mina/studier/M-MINA.php?srex=li&sprx=n&aarx=2021",
+    "https://static02.nmbu.no/mina/studier/M-MINA.php?srex=ro&sprx=n&aarx=2021"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 65,
+  "obligatoriske": [
+    {
+      "emnekode": "MINA302",
+      "emnenavn": "Introduksjon til masterstudiet i miljø og naturressurser",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Ligger i Augustblokk. Felles for alle fem studieretninger."
+    },
+    {
+      "emnekode": "MASTER-OPPGAVEN",
+      "emnenavn": "Masteroppgave",
+      "studiepoeng": 60,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Går over hele 2. studieår. Studieplanteksten sier eksplisitt at studenten arbeider med en masteroppgave på enten 30 eller 60 studiepoeng i løpet av det siste studieåret; grid-siden oppgir ingen hyperkoblet emnekode for oppgaven (bare teksten «MASTER-OPPGAVEN»), så feltet gjengir denne teksten i mangel av en offisiell emnekode. 60 sp er satt som representativ verdi; ved 30 sp-alternativet frigjøres 30 sp til ekstra emner. Felles for alle fem studieretninger."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Miljøgifter og økotoksikologi",
+      "obligatoriske": [
+        {
+          "emnekode": "FMI312",
+          "emnenavn": "Human miljøkjemi",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FMI310",
+          "emnenavn": "Miljøgifter og økotoksikologi",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "Går over Vårparallell og Januarblokk."
+        },
+        {
+          "emnekode": "FMI330",
+          "emnenavn": "Effekter og biomarkørmetoder i økotoksikologi",
+          "studiepoeng": 5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Ligger i Augustblokk."
+        }
+      ]
+    },
+    {
+      "navn": "Geologi",
+      "obligatoriske": [
+        {
+          "emnekode": "GEO310",
+          "emnenavn": "Paleomiljø og klimaendringer",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "GEO300",
+          "emnenavn": "Videregående hydrogeologi",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Jord og miljø",
+      "obligatoriske": [
+        {
+          "emnekode": "JORD310",
+          "emnenavn": "Jordforurensning og bærekraft",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "GEO300",
+          "emnenavn": "Videregående hydrogeologi",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Limnologi og vannressurser",
+      "obligatoriske": [
+        {
+          "emnekode": "VANN300",
+          "emnenavn": "Vannforurensning",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "VANN301",
+          "emnenavn": "Tiltak mot forurensning av vannforekomster",
+          "studiepoeng": 5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "Ligger i Januarblokk."
+        },
+        {
+          "emnekode": "VANN211",
+          "emnenavn": "Limnologiske metoder",
+          "studiepoeng": 5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "Ligger i Juniblokk."
+        },
+        {
+          "emnekode": "VANN311",
+          "emnenavn": "Feltkurs i alpin limnologi",
+          "studiepoeng": 5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Ligger i Augustblokk."
+        }
+      ]
+    },
+    {
+      "navn": "Radioøkologi",
+      "obligatoriske": [
+        {
+          "emnekode": "KJM350",
+          "emnenavn": "Radiokjemi",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Går over Høstparallell og Augustblokk."
+        },
+        {
+          "emnekode": "ECOL300",
+          "emnenavn": "Naturvitenskapelig metode",
+          "studiepoeng": 5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "KJM351",
+          "emnenavn": "Eksperimentell radioøkologi",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "Går over Vårparallell og Januarblokk."
+        }
+      ]
+    }
+  ],
+  "merknad": "Miljø og naturressurser (M-MINA) er en nedlagt forgjenger til dagens Miljøvitenskap (M-MILJØ) ved NMBU/MINA; siste opptak var høsten 2021. Programsiden nmbu.no/studier/master-2-aar/miljovitenskap fra programkart.json peker i dag til etterfølgerprogrammet og inneholder ikke lenger denne studieplanen - dataene her er hentet fra MINA-fakultetets arkiverte studieplan-verktøy for kullet med studiestart høsten 2021 (fullstendig 2-årig plan, gyldig til og med 2022/2023). Programmet hadde fem studieretninger valgt av studenten: Miljøgifter og økotoksikologi, Geologi, Jord og miljø, Limnologi og vannressurser og Radioøkologi. Alle fem retninger har MINA302 og masteroppgaven felles (65 sp), pluss retningsspesifikke obligatoriske emner (20-25 sp). I tillegg krever studieplanen at minst 30 studiepoeng totalt i graden består av 300-nivå emner («Til sammen må minst 30 studiepoeng bestå av 300-emner») - et krav på tvers av frie valgemner, ikke ført opp som enkeltemne. Flere av emnene (VANN301, VANN311, FMI330, KJM350, KJM351, ECOL300) er ikke lenger i NMBUs aktive emnekatalog; studiepoeng for disse er bekreftet via Wayback Machine-arkiverte emnesider fra studieåret 2021/2022. dbhEmnekoder er ikke fylt ut siden DBH-rapportering for dette (nedlagte) programmet ikke er slått opp i dette arbeidet."
+}

@@ -1,0 +1,80 @@
+{
+  "entryId": "nmbu_naturforvaltning2",
+  "programnavn": "Naturforvaltning (master 2 år)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/master-2-aar/naturforvaltning",
+    "https://static02.nmbu.no/mina/studier/M-NF.php?sprx=n&aarx=2026"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 75,
+  "obligatoriske": [
+    {
+      "emnekode": "JUS220",
+      "emnenavn": "Miljøforvaltningsrett",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MINA320",
+      "emnenavn": "Tverrfaglig samarbeid og kontroverser om bærekraft",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "MINA321 (engelsk versjon av samme emne) kan tas i Januarblokk i stedet."
+    },
+    {
+      "emnekode": "NATF302",
+      "emnenavn": "Norsk naturforvaltning",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Ligger i Augustblokk."
+    },
+    {
+      "emnekode": "APL240",
+      "emnenavn": "Miljø og planlegging, del 1",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "APL241",
+      "emnenavn": "Miljø og planlegging, del 2",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "NATF301",
+      "emnenavn": "Praktisk naturforvaltning",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Kan erstattes av NATF370 Arbeidslivserfaring i økologi og naturforvaltning."
+    },
+    {
+      "emnekode": "M45-NF",
+      "emnenavn": "Masteroppgave",
+      "studiepoeng": 45,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Går over tre deler ifølge studieplan-tabellen: 10 sp feltarbeid i Juniblokk 1. år, 5 sp i 2. år høst og 30 sp i 2. år vår (totalt 45 sp). Nettsiden lenker feilaktig emnekoden som «m60-nf», men den koden finnes ikke hos NMBU; den fungerende emnesiden er M45-NF Masteroppgave (45 sp), som stemmer med sp-summen i tabellen."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er MINA-fakultetets studieplan-verktøy for kullet med studiestart høsten 2026. Utover de sju emnene over (75 sp) stiller programmet flere obligatoriske valgkrav som ikke er ført opp som enkeltemner: (1) studenter uten bakgrunn i statistikk må i tillegg ta STAT100 Statistikk (10 sp); (2) ett metodeemne må velges mellom MAST301 (5 sp), MINA310 (5 sp) og MINA311 (10 sp); (3) minst 15 sp og minst to av en liste 300-nivå emner (bl.a. ECN375, ECOL310, ECOL350, ECOL380, EDS348 m.fl.) må inngå i graden. dbhEmnekoder er ikke fylt ut siden DBH-rapportering for dette programmet ikke er slått opp i dette arbeidet."
+}

@@ -1,0 +1,394 @@
+{
+  "programnavn": "Matvitenskap og ernæring (bachelor)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2023/2024",
+  "kilder": [
+    "https://www.nmbu.no/studier/master-5-aar/matvitenskap-og-ernaering",
+    "https://www.nmbu.no/fakultet/kbm/for-kbm-studenter/studieplaner-og-oppbygning/matvitenskap",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2023-10/Studieplan%20for%20matvitenskap%20og%20ern%C3%A6ring%20M-MATVIT%202023-2024.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 155,
+  "obligatoriske": [
+    {
+      "emnekode": "MVI100",
+      "emnenavn": "Introduksjon til matvitenskap",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Starter i augustblokk (5 sp) og fortsetter i høstsemesteret (5 sp) - studieplanens rutenett lister emnet i begge periodene."
+    },
+    {
+      "emnekode": "MATH100",
+      "emnenavn": "Brukerkurs i matematikk",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "STIN100",
+      "emnenavn": "Biologisk data-analyse",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO100",
+      "emnenavn": "Cellebiologi",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "HFX133",
+      "emnenavn": "Utfordringer for framtidas matproduksjon",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "januarblokk",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM100",
+      "emnenavn": "Generell kjemi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "STAT100",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MVI180",
+      "emnenavn": "Prosessteknologi I",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM110",
+      "emnenavn": "Organisk kjemi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Starter i augustblokk (5 sp) og fortsetter i høstsemesteret (5 sp)."
+    },
+    {
+      "emnekode": "MVI275",
+      "emnenavn": "Matplanter",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJB100",
+      "emnenavn": "Introduksjon til biokjemi",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO130",
+      "emnenavn": "Generell mikrobiologi I",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MVI240",
+      "emnenavn": "Sensorisk analyse",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "januarblokk",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MVI220",
+      "emnenavn": "Næringsmiddelmikrobiologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MVI202",
+      "emnenavn": "Matkjemi",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJB201",
+      "emnenavn": "Laboratoriekurs i biokjemi og matkjemi",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "HFE200",
+      "emnenavn": "Generell ernæring",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MVI250",
+      "emnenavn": "Emballeringsteknologi",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "januarblokk",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MVI273",
+      "emnenavn": "Melk og melkebehandling",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MVI274",
+      "emnenavn": "Muskelmat - råvare og teknologi",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MVI261",
+      "emnenavn": "Prosessteknologi II",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MVI230",
+      "emnenavn": "Matvaretrygghet og hygiene",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Produksjon og utvikling av næringsmidler (PUN)",
+      "obligatoriske": [
+        {
+          "emnekode": "MVI321",
+          "emnenavn": "Fermenteringsmikrobiologi",
+          "studiepoeng": 5,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Augustblokk før høstsemesteret."
+        },
+        {
+          "emnekode": "MVI310",
+          "emnenavn": "Makronæringsstoffer, deres struktur og funksjonalitet",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "PHI100",
+          "emnenavn": "Examen philosophicum",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Studieplanen lister PHI100/PHI101 - studenten velger en av de likeverdige variantene."
+        },
+        {
+          "emnekode": "MVI395",
+          "emnenavn": "Trygghet i industrielle prosesser",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MVI340",
+          "emnenavn": "Sensorikk og forbrukeraksept",
+          "studiepoeng": 5,
+          "aar": 4,
+          "semester": "juniblokk",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MVI361",
+          "emnenavn": "Enhetsoperasjoner",
+          "studiepoeng": 10,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MVI385",
+          "emnenavn": "Produktutvikling",
+          "studiepoeng": 10,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MASTEROPPGAVE",
+          "emnenavn": "Masteroppgave",
+          "studiepoeng": 30,
+          "aar": 5,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Matvaretrygghet, -kvalitet og -hygiene (MKH)",
+      "obligatoriske": [
+        {
+          "emnekode": "MVI321",
+          "emnenavn": "Fermenteringsmikrobiologi",
+          "studiepoeng": 5,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Augustblokk før høstsemesteret."
+        },
+        {
+          "emnekode": "MVI393",
+          "emnenavn": "Kjemisk mattrygghet",
+          "studiepoeng": 5,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "BIO210",
+          "emnenavn": "Molekylærbiologi",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "PHI100",
+          "emnenavn": "Examen philosophicum",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Studieplanen lister PHI100/PHI101 - studenten velger en av de likeverdige variantene."
+        },
+        {
+          "emnekode": "BIO211",
+          "emnenavn": "Laboratorieøvelser i molekylærbiologi",
+          "studiepoeng": 5,
+          "aar": 4,
+          "semester": "januarblokk",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MVI322",
+          "emnenavn": "Patogene mikroorganismer",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MVI395",
+          "emnenavn": "Trygghet i industrielle prosesser",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MASTEROPPGAVE",
+          "emnenavn": "Masteroppgave",
+          "studiepoeng": 30,
+          "aar": 5,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Ernæring, biomedisin og helse (EBH)",
+      "obligatoriske": [
+        {
+          "emnekode": "PHI100",
+          "emnenavn": "Examen philosophicum",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Studieplanen lister PHI100/PHI101 - studenten velger en av de likeverdige variantene."
+        },
+        {
+          "emnekode": "MASTEROPPGAVE",
+          "emnenavn": "Masteroppgave",
+          "studiepoeng": 60,
+          "aar": 5,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "60 sp totalt (30 sp høst + 30 sp vår ifølge rutenettet) - dobbelt så stort som masteroppgaven i de to andre studieretningene (30 sp), som kompensasjon for at 4. år i EBH i hovedsak består av den ukodede kategorien «Emnegruppe biomedisin» (40 sp) og «Rom for teknologiemner» (10 sp) i stedet for navngitte emner."
+        }
+      ]
+    }
+  ],
+  "merknad": "Programmet «Matvitenskap og ernæring» (M-MATVIT, studiekode 192948) er NMBUs tidligere 5-årige integrerte sivilingeniør-/mastergradsprogram innen mat, som ikke lenger tar opp nye studenter (siste opptak var i 2024) - det er erstattet av Bachelor i Mat, teknologi og helse og Master (2 år) i Mat, teknologi og helse. Siste publiserte studieplan er for kull 2023 (2023/2024), hentet fra NMBUs fakultetsside for studieplaner i matvitenskap; nyere kull-planer finnes ikke fordi programmet er avviklet. Kilde er en 4-siders fargekodet rutenett-studieplan: side 1 viser «Felles emner» (1.-3. år, 155 sp), side 2-4 viser de tre studieretningene (4.-5. år) hver for seg. Rutenettets fargekoding skiller navngitte obligatoriske emner fra to typer ukodede kategorier som er ekskludert fra obligatoriske-listen: «Valgfrie emner» (hele høstsemesteret 3. år, ca. 20-25 sp) og «Rom for teknologiemner» (et fast antall sp per semester i 4.-5. år hvor studenten velger blant teknologiemner uten at studieplanen oppgir en fast emnekode) - unntaket er studieretning EBH, der «Rom for teknologiemner» (10 sp, 4. år vår) og den ukodede kategorien «Emnegruppe biomedisin» (40 sp, 4. år) tydelig inngår i studieretningens egne sp-summer (60+60=120 sp for 4.-5. år) uten at de kan knyttes til navngitte emnekoder, og er derfor heller ikke tatt med som egne emner i obligatoriske-listen for EBH (kun PHI100 og Masteroppgave er kodede emner der). obligatoriskeStudiepoeng (155) gjelder kun de felles emnene i 1.-3. år, i tråd med praksisen i ntnu_midt.json; faktisk obligatorisk/navngitt sp-sum per studieretning for 4.-5. år er 90 (PUN), 85 (MKH) og 70 (EBH, hvorav 50 sp er ukodede kategorier som ikke telles). totaltStudiepoeng er satt til standard 300 sp for et 5-årig program. PHI100 (Examen philosophicum, alt. PHI101) og MVI321/KJM110/MVI100 (emner som ifølge rutenettet starter i augustblokk og fortsetter inn i høstsemesteret, med sp fordelt på begge periodene) er notert med egne merknader per emne. Denne filen brukes uendret for både nmbu_matvitenskap_ernaring og nmbu_matvitenskap_ernaring_hist (samme nedlagte program, jf. oppgavebeskrivelsen).",
+  "entryId": "nmbu_matvitenskap_ernaring"
+}

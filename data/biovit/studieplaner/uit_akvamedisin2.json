@@ -1,0 +1,329 @@
+{
+  "entryId": "uit_akvamedisin2",
+  "programnavn": "Akvamedisin (integrert master, 5 år)",
+  "institusjon": "UiT Norges arktiske universitet",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://uit.no/utdanning/program/268952/akvamedisin_-_master",
+    "https://uit.no/Content/869356/cache=20261709103752/Studieplan%20i%20Akvamedisin%20-%20fra%20kull%202025.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 300,
+  "obligatoriske": [
+    {
+      "emnekode": "AKV-1400",
+      "emnenavn": "Introduksjon til akvakultur og fiskehelse",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "AKV-1400-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FIL-0700",
+      "emnenavn": "Examen philosophicum, Tromsøvarianten",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FIL-0700-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJE-1001",
+      "emnenavn": "Introduksjon til kjemi og kjemisk biologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "KJE-1001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO-1501",
+      "emnenavn": "Akvatisk økologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIO-1501-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO-1601",
+      "emnenavn": "Innføring i mikrobiologi",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIO-1601-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FSK-1121",
+      "emnenavn": "Statistikk og metode i fiskeri/havbruksvitenskap",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MBI-1002",
+      "emnenavn": "Celle- og molekylærbiologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MBI-1002-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO-2406",
+      "emnenavn": "Introduction to fish biology",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO-2601",
+      "emnenavn": "Generell mikrobiologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO-2601-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FSK-1020",
+      "emnenavn": "Etikk, bærekraft og tverrfaglighet",
+      "studiepoeng": 2.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJE-2002",
+      "emnenavn": "Biological chemistry",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "AKV-2400",
+      "emnenavn": "Produksjonsbiologi i fiskeoppdrett",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "AKV-2410",
+      "emnenavn": "Profesjonskompetanse i akvamedisin I",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MBI-2015",
+      "emnenavn": "Menneskets fysiologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FSK-2002",
+      "emnenavn": "Havbruksrett",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "FSK-2002-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO-2504",
+      "emnenavn": "Fish physiology",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO-2504-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO-2604",
+      "emnenavn": "Fiskesykdommer",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO-2604-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO-3609",
+      "emnenavn": "Basal and comparative immunology",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO-3609-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "AKV-2420",
+      "emnenavn": "Profesjonskompetanse i akvamedisin II",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO-2602",
+      "emnenavn": "Fiskeernæring",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIO-2602-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO-2605",
+      "emnenavn": "Fiskepatologi",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIO-2605-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO-3503",
+      "emnenavn": "Aquatic animal welfare",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIO-3503-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO-3519",
+      "emnenavn": "Parasites and epidemiology",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO-3519-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO-3607",
+      "emnenavn": "Matvaretrygghet",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO-3607-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FSK-2010",
+      "emnenavn": "Oppdrettsteknologi",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FSK-2010-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "AKV-3410",
+      "emnenavn": "Profesjonskompetanse i akvamedisin III",
+      "studiepoeng": 5,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO-3602",
+      "emnenavn": "Farmakologi",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIO-3602-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO-3613",
+      "emnenavn": "Fiskevelferd i havbruk",
+      "studiepoeng": 5,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIO-3613-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO-3630",
+      "emnenavn": "Helsekontroll og klinikk i havbruk",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIO-3630-1"
+      ],
+      "merknad": "Praksisemne (feltkurs, ca. 10 dager) med helsekontroll på settefisk- og matfiskanlegg i samarbeid med ekstern fiskehelsetjeneste."
+    },
+    {
+      "emnekode": "BIO-3955",
+      "emnenavn": "Mastergradsoppgave i akvamedisin",
+      "studiepoeng": 60,
+      "aar": 5,
+      "semester": "helår",
+      "dbhEmnekoder": [
+        "BIO-3955-1"
+      ],
+      "merknad": "Hele 5. studieår (9. og 10. semester) er satt av til masteroppgaven."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "VIKTIG AVVIK: programkartets oppføring uit_akvamedisin2 er typet «master2» (2-årig), men programmet bak URL-en og studieplan-PDF-en («Studieplan i Akvamedisin - fra kull 2025», godkjent 20.12.2024) er faktisk et 5-årig INTEGRERT profesjonsstudium på 300 studiepoeng (10 semestre), ikke en frittstående 2-årig mastergrad – programnavnet er derfor satt til «Akvamedisin (integrert master, 5 år)» og totaltStudiepoeng til 300 for å reflektere kildematerialet korrekt. Det finnes ikke noen egen 2-årig Akvamedisin-master ved UiT å hente data fra i stedet; programsiden 268952 er entydig 5-årig. Studiet er et lukket profesjonsløp uten valgfrie emner og uten studieretninger – praktisk talt alle emner i studieplanen er obligatoriske (teksten sier «de fleste emnene ... er obligatoriske»), og «spesialiseringer» er derfor tom. For å kunne starte på 7. semester (4. år) må sju navngitte emner (KJE-1001, BIO-1501, MBI-1002, BIO-2406, BIO-2601, KJE-2002, MBI-2015, til sammen 170 sp) være bestått, med maks 10 sp «hengefag» utover disse. Seks emner undervises på engelsk (KJE-2002, BIO-2406, BIO-2504, BIO-3503, BIO-3519, BIO-3609). Fullført grad kvalifiserer til offentlig autorisasjon som fiskehelsebiolog. obligatoriskeStudiepoeng er satt lik totaltStudiepoeng (300) siden hele studieplanen er obligatorisk uten valgfrihet."
+}

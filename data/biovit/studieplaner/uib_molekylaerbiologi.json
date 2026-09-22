@@ -1,0 +1,127 @@
+{
+  "entryId": "uib_molekylaerbiologi",
+  "programnavn": "Molekylærbiologi (bachelor)",
+  "institusjon": "Universitetet i Bergen",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www4.uib.no/studier/program/molekylaerbiologi-bachelor",
+    "https://www4.uib.no/studier/program/molekylaerbiologi-bachelor/plan"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 100,
+  "obligatoriske": [
+    {
+      "emnekode": "KJEM110",
+      "emnenavn": "Kjemi og energi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "KJEM110-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MOL100",
+      "emnenavn": "Innføring i molekylærbiologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MOL100-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF100",
+      "emnenavn": "Programmering I",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "INF100-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJEM130",
+      "emnenavn": "Organisk kjemi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "KJEM130-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MOL102",
+      "emnenavn": "Eksperimentell molekylærbiologi I",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MOL102-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MOL200",
+      "emnenavn": "Metabolisme; reaksjonar, regulering og kompartmentalisering",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MOL200-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MOL103",
+      "emnenavn": "Genstruktur, -funksjon og applikasjonar",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MOL103-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MOL201",
+      "emnenavn": "Molekylær cellebiologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MOL201-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MOL222",
+      "emnenavn": "Eksperimentell molekylærbiologi II",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MOL222-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MOL204",
+      "emnenavn": "Anvendt bioinformatikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MOL204-0"
+      ],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er UiBs studieplanside for BAMN-MOL Bachelorprogram i molekylærbiologi, høst 2026 (www4.uib.no/studier/program/molekylaerbiologi-bachelor/plan). Programmet er 180 sp totalt. Studieplanen deler dei obligatoriske krava i «Obligatoriske emne» (examen philosophicum, MAT101/MAT111, INF100) og «Spesialisering» (100 sp, ein fast fellespakke som ALLE studentar tek, ikkje eit val mellom studieretningar): MOL100, MOL102, MOL103, MOL200, MOL201, MOL204, MOL222, KJEM110, KJEM130 (9 emne à 10 sp = 90 sp) pluss eitt valemne i statistikk eller matematikk (10 sp). INF100 og dei 9 namngjevne spesialiseringsemna (til saman 100 sp) er ført direkte i obligatoriske-lista over, sidan dei er reelt obligatoriske for alle utan noko val. MAT101 (Matematiske metoder 1) / MAT111 (Grunnkurs i matematikk I) er eit obligatorisk val mellom to alternative matematikkemne (10 sp, 1. semester), EXPHIL-MNSEM/EXPHIL-MNEKS er eit val mellom to eksamensformer av examen philosophicum (10 sp, 6. semester), og «eitt valemne i statistikk eller matematikk» (10 sp, 3. semester) er eit ope obligatorisk krav utan fast namngjeve emne – alle tre er difor IKKJE førte i obligatoriske-lista (kun i denne merknaden), i tråd med oppgåva sin regel om at obligatoriske val mellom alternativ skal stå i merknad. 100 sp (lista over) + 10 (MAT101/111) + 10 (matematikkvalg) + 10 (EXPHIL) = 130 sp fast obligatorisk/fastlagt innhald; resterande 50 sp er tilrådde/frie valemne (5. og delar av 6. semester). Tilrådd rekkefølgje: 1. semester KJEM110, MAT101/MAT111, MOL100; 2. semester INF100, KJEM130, MOL102; 3. semester MOL200, MOL103, matematikkvalg; 4. semester MOL201, MOL222, MOL204; 5. semester tre valemne (utveksling passar best her); 6. semester EXPHIL-MNSEM/EXPHIL-MNEKS og to valemne. Programmet har ingen eigne obligatoriske studieretningar og ingen obligatorisk bacheloroppgåve er skildra."
+}

@@ -11,20 +11,146 @@
   "totaltStudiepoeng": 180,
   "obligatoriskeStudiepoeng": 140,
   "obligatoriske": [
-    {"emnekode": "BIO-1009", "emnenavn": "Biologiske ressurser i nord", "studiepoeng": 10, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "BIO-1010", "emnenavn": "Evolusjon og adferd", "studiepoeng": 10, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "BIO-1011", "emnenavn": "Økologi og biologisk mangfold", "studiepoeng": 10, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "FIL-0700", "emnenavn": "Ex. Phil.", "studiepoeng": 10, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "MBI-1xxx", "emnenavn": "Molekylær- og cellebiologi", "studiepoeng": 10, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": "Emnekoden er trykt eksakt slik i studieplan-PDF-en («MBI-1xxx»), uten en spesifikk firesifret kode – trolig fordi kurstilbudet/kodenummeret varierer mellom kull."},
-    {"emnekode": "BIO-1104", "emnenavn": "Zoologi", "studiepoeng": 10, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "KJE-1001", "emnenavn": "Introduksjon til kjemi og kjemisk biologi", "studiepoeng": 10, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "BIO-2004", "emnenavn": "Studiedesign og dataanalyse i biologi", "studiepoeng": 10, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "BIO-1012", "emnenavn": "Botanikk og mykologi", "studiepoeng": 10, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "BIO-2019", "emnenavn": "Mikrobiologi og molekylære metoder", "studiepoeng": 10, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "MBI-2015", "emnenavn": "Menneskets fysiologi", "studiepoeng": 10, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "BIO-2020", "emnenavn": "Advanced ecology", "studiepoeng": 10, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "BIO-2021", "emnenavn": "Marine biology", "studiepoeng": 10, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "BIO-2022", "emnenavn": "Plant physiology and biotechnology", "studiepoeng": 10, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null}
+    {
+      "emnekode": "BIO-1009",
+      "emnenavn": "Biologiske ressurser i nord",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO-1009-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO-1010",
+      "emnenavn": "Evolusjon og adferd",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO-1010-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO-1011",
+      "emnenavn": "Økologi og biologisk mangfold",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO-1011-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FIL-0700",
+      "emnenavn": "Ex. Phil.",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "FIL-0700-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MBI-1xxx",
+      "emnenavn": "Molekylær- og cellebiologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Emnekoden er trykt eksakt slik i studieplan-PDF-en («MBI-1xxx»), uten en spesifikk firesifret kode – trolig fordi kurstilbudet/kodenummeret varierer mellom kull."
+    },
+    {
+      "emnekode": "BIO-1104",
+      "emnenavn": "Zoologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIO-1104-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJE-1001",
+      "emnenavn": "Introduksjon til kjemi og kjemisk biologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "KJE-1001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO-2004",
+      "emnenavn": "Studiedesign og dataanalyse i biologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO-2004-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO-1012",
+      "emnenavn": "Botanikk og mykologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO-2019",
+      "emnenavn": "Mikrobiologi og molekylære metoder",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MBI-2015",
+      "emnenavn": "Menneskets fysiologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO-2020",
+      "emnenavn": "Advanced ecology",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO-2021",
+      "emnenavn": "Marine biology",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO-2022",
+      "emnenavn": "Plant physiology and biotechnology",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
   ],
   "spesialiseringer": [],
   "merknad": "Kilde er UiTs studieplan-PDF «Studieplan Bachelorgradsprogram i biologi» (godkjent 19.9.2024, oppdatert 01.11.2024, gjeldende f.o.m. kull 2025), lenket fra programsiden uit.no/utdanning/program/274284/biologi_-_bachelor (fanen «Oppbygging av studiet»). Programmet er 180 sp totalt: 120 sp biologirelaterte emner, 10 sp kjemi, 10 sp filosofi/vitenskapsteori, 10 sp valgfritt mellom «mikroemner» (2,5 sp-emner) eller praksisemnet MNF-2001 Realfagspraksis (4. semester, obligatorisk valg mellom alternativer – ikke ført i listen), og et fritt valgfagssemester på 30 sp i 5. semester (koordinert emnepakke fra annet fagfelt, utveksling eller opphold ved UNIS på Svalbard). De 14 emnene i obligatoriske-listen (140 sp) er alle uten valgalternativ. 140 + 10 (mikroemner/MNF-2001) + 30 (valgfagssemester) = 180 sp. Emnekoden for molekylær- og cellebiologiemnet i 2. semester er trykt som «MBI-1xxx» i selve studieplandokumentet, uten et konkret tall. Studieplanen beskriver ingen egen bacheloroppgave og ingen formelle studieretninger med separate obligatoriske emnelister."

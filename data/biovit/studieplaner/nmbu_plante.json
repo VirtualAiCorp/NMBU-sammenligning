@@ -1,0 +1,169 @@
+{
+  "entryId": "nmbu_plante",
+  "programnavn": "Plantevitenskap (bachelor)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/bachelor/plantevitenskap",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-05/B-PV_2026_27.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 115,
+  "obligatoriske": [
+    {
+      "emnekode": "PJH102",
+      "emnenavn": "Innføring i plantevitenskap",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "PJH102-1"
+      ],
+      "merknad": "Augustblokk før høstsemesteret."
+    },
+    {
+      "emnekode": "BOT130",
+      "emnenavn": "Grunnleggende plantefysiologi",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BOT130-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "STIN100",
+      "emnenavn": "Biologisk dataanalyse",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "STIN100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HFX133",
+      "emnenavn": "Utfordringer for framtidas matproduksjon",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "januarblokk",
+      "dbhEmnekoder": [
+        "HFX133-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM100",
+      "emnenavn": "Generell kjemi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "KJM100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BOT100",
+      "emnenavn": "Plantediversitet",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BOT100-1"
+      ],
+      "merknad": "Har et feltkurs sammen med ZOOL220 i juniblokk."
+    },
+    {
+      "emnekode": "BIO120",
+      "emnenavn": "Genetikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIO120-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ZOOL220",
+      "emnenavn": "Insekter og edderkoppdyr",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Har et feltkurs sammen med BOT100 i juniblokk."
+    },
+    {
+      "emnekode": "JORD100",
+      "emnenavn": "Jordlære",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "JORD100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO130",
+      "emnenavn": "Generell mikrobiologi I",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO130-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BOT200",
+      "emnenavn": "Plantefysiologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BOT200-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "STAT100",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "STAT100-1"
+      ],
+      "merknad": "Kan også tas i høstparallellen."
+    },
+    {
+      "emnekode": "JORD230",
+      "emnenavn": "Jord som vekstmedium",
+      "studiepoeng": 15,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "JORD230-1"
+      ],
+      "merknad": "Intensivemne som strekker seg over augustblokk og høstparallell i 3. år."
+    },
+    {
+      "emnekode": "PLV200",
+      "emnenavn": "Sykdommer, skadedyr og ugras i jord- og hagebruk",
+      "studiepoeng": 15,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "PLV200-1"
+      ],
+      "merknad": "Intensivemne som strekker seg over juniblokk (2. år), augustblokk og høstparallell (3. år). Kan erstattes av PLV210 Plantevern i grøntanlegg (5 sp) + PLV211 (5 sp), til sammen 10 sp, for studenter som vil fordype seg i grøntmiljø – da blir obligatoriskeStudiepoeng 5 sp lavere (125 sp totalt i stedet for 130), jf. studieplanens egen sum «130 (125)»."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er NMBUs fargekodede studieplan-PDF for Bachelor i plantevitenskap (B-PV), opptak 2026, lenket fra «Studieplaner for studenter ved BIOVIT». Programmet er 180 sp, hvorav 130 sp er obligatoriske (125 sp dersom PLV210+PLV211 velges i stedet for PLV200, se merknad på PLV200), pluss minimum 30 sp plantevitenskapelige emner (elektivt, ikke ført i listen) og resten fritt valgfritt. De 13 emnene i obligatoriske-listen over (115 sp) er uten valgalternativ. To obligatoriske krav er valg mellom alternativer og derfor IKKE ført i listen, i tråd med oppgavens regel: (1) PHI100 Examen philosophicum / PHI101 Ex.phil seminarversjon / PHI102 (engelsk, vårparallell) (10 sp, høst år 1); (2) BIO260 / PJH205 Semesteroppgave (5 sp, vår år 3) – en obligatorisk semesteroppgave som registreres under én av to alternative emnekoder avhengig av fagretning. 115 (listen) + 10 (PHI) + 5 (semesteroppgave) = 130 sp, i tråd med studieplanens egen sum. Studieplanen definerer ingen egne obligatoriske studieretninger/spesialiseringer med separate emnelister; «grønn liste»-emnene (minimum 30 sp) og de øvrige valgfrie emnepoolene (internship, biologi/bioteknologi/kjemi, bærekraft/landbruk, teknologi/klima/miljø, økonomi/ledelse/samfunnsfag, verktøysfag) er elektive og ikke ført som obligatoriske."
+}

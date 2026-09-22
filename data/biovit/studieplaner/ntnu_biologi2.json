@@ -1,0 +1,101 @@
+{
+  "entryId": "ntnu_biologi2",
+  "programnavn": "Biologi (master 2 år)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://www.ntnu.no/studier/msbio",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=MSBIO&year=0",
+    "https://www.ntnu.no/web/studier/studieplan?p_p_id=studyprogrammeplannerportlet_WAR_studyprogrammeplannerportlet_INSTANCE_KzJMPh2hQuXL&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=studyplan&p_p_cacheability=cacheLevelPage&code=MSBIO&year=2025"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 67.5,
+  "obligatoriske": [
+    {
+      "emnekode": "HMS0003",
+      "emnenavn": "Health, Safety and Environment (HSE) course for master students",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "HMS0003-1"
+      ],
+      "merknad": "Felles for alle fire studieretninger."
+    },
+    {
+      "emnekode": "BI3086",
+      "emnenavn": "How to do Science",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BI3086-1"
+      ],
+      "merknad": "Felles for alle fire studieretninger."
+    },
+    {
+      "emnekode": "BI3085",
+      "emnenavn": "Biology without borders",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BI3085-1"
+      ],
+      "merknad": "Langsgående emne registrert i fire deler («part 1 of 4» til «part 4 of 4»), ett per semester gjennom hele studiet (1.–4. semester); de 7,5 studiepoengene tildeles samlet ved fullføring i 4. semester. Felles for alle fire studieretninger."
+    },
+    {
+      "emnekode": "BI3900",
+      "emnenavn": "Master Thesis in Biology",
+      "studiepoeng": 60,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BI3900-1"
+      ],
+      "merknad": "Langsgående masteroppgave registrert i fire deler gjennom hele studiet (1.–4. semester); de 60 studiepoengene tildeles samlet ved fullføring i 4. semester. For studieretningen Cell and Molecular Biology kan oppgaven i stedet registreres som BT3920 «Master Thesis in Biology at IBT» (samme omfang, 60 sp, ved Institutt for bioteknologi og matvitenskap). Felles for alle fire studieretninger."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Ecology, Behaviour, Evolution and Biosystematics",
+      "obligatoriske": []
+    },
+    {
+      "navn": "Cell and Molecular Biology",
+      "obligatoriske": [
+        {
+          "emnekode": "BI3016",
+          "emnenavn": "Molecular Cell Biology",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BI3016-1"
+          ],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Physiology",
+      "obligatoriske": [
+        {
+          "emnekode": "BI3024",
+          "emnenavn": "Advanced Physiology",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Biodiversity and Systematics (Nabis)",
+      "obligatoriske": []
+    }
+  ],
+  "merknad": "Kilde er NTNUs studieplan-API (studyprogrammeplannerportlet, resource_id=studyplan) for MSBIO, lest via kull 2025 (fullstendig 2-årig plan; kull 2026 er foreløpig ikke fullt publisert). Programmet har fire studieretninger; alle fire deler HMS0003, BI3086, BI3085 og masteroppgaven BI3900 (til sammen 67,5 sp). To retninger har i tillegg ett navngitt obligatorisk fagemne (ført opp under spesialiseringer): BI3016 for Cell and Molecular Biology og BI3024 for Physiology. De to andre retningene har ingen egne obligatoriske enkeltemner utover fellesdelen: Ecology, Behaviour, Evolution and Biosystematics krever i stedet et obligatorisk VALG av minst 2 emner fra en egen «gruppe A» (bl.a. BI3052, BI3106, BI3036, BI3040, BI3082, BI3051, RFEL3082); Biodiversity and Systematics (Nabis) er et nordisk utvekslingsprogram (nabismaster.org) der studieplanen nevner et obligatorisk emne «Fundamental and Molecular Systematics» ved en av partnerinstitusjonene, men uten egen NTNU-emnekode, og er derfor ikke ført opp som enkeltemne. I tillegg er Experts in Teamwork (EiT, 7,5 sp, vårparallell 1. år) en obligatorisk emnekategori for de tre retningene Ecology/Evolution/Biosystematics, Cell and Molecular Biology og Physiology (ikke Nabis) – studenten velger selv «landsby» blant et stort antall emnekoder (f.eks. BEIT4013, TDT4857, TIØ4852 m.fl.), og NTNUs studieplan-API koder disse som «Elective» selv om EiT reelt sett er obligatorisk; ingen enkelt emnekode er derfor obligatorisk her. obligatoriskeStudiepoeng (67,5) teller kun de fire fellesemnene pluss retningens eget fagemne der det finnes; reelt obligatorisk omfang blir 75 sp for Cell and Molecular Biology og Physiology (inkl. EiT), og 75 sp for Ecology/Evolution/Biosystematics når EiT og minst 2 emner fra gruppe A (15 sp) regnes med, mot 67,5 sp for Nabis."
+}

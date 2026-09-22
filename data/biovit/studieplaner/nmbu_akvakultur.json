@@ -1,0 +1,169 @@
+{
+  "entryId": "nmbu_akvakultur",
+  "programnavn": "Akvakultur (bachelor)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/bachelor/akvakultur",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-07/B-AKVA%202026%20Studieplan.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 110,
+  "obligatoriske": [
+    {
+      "emnekode": "AQX100",
+      "emnenavn": "Intro til norsk akvakulturproduksjon",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "AQX100-1"
+      ],
+      "merknad": "Augustblokk før høstsemesteret."
+    },
+    {
+      "emnekode": "AQX110",
+      "emnenavn": "Akvalabb",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "AQX110-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO100",
+      "emnenavn": "Cellebiologi",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HFX133",
+      "emnenavn": "Utfordringer for framtidas matproduksjon",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "januarblokk",
+      "dbhEmnekoder": [
+        "HFX133-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "AQX120",
+      "emnenavn": "Intensiv akvakultur",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "AQX120-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM100",
+      "emnenavn": "Generell kjemi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "KJM100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO120",
+      "emnenavn": "Genetikk, introduksjonskurs",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIO120-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJB100",
+      "emnenavn": "Introduksjon til biokjemi",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "KJB100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "STIN100",
+      "emnenavn": "Biologisk dataanalyse",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "STIN100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "AQX201",
+      "emnenavn": "Fiskehelsebiologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "AQX201-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "SDG200",
+      "emnenavn": "Bærekraftige matproduksjonssystemer",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "SDG200-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HFE200",
+      "emnenavn": "Generell ernæring",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "HFE200-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "STAT100",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "STAT100-1"
+      ],
+      "merknad": "Studieplanen oppgir semester «Høst/Vår»; plassert i år 2 vår i studieplanens eget rutenett."
+    },
+    {
+      "emnekode": "AQP255",
+      "emnenavn": "Akvatisk miljø i akvakultur",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er NMBUs studieplan-PDF for Bachelor i akvakultur (B-AKVA), opptak 2026, lenket fra «Studieplaner for studenter ved BIOVIT». Programmet er 180 sp, hvorav 130 sp er obligatoriske og 50 sp valgfrie (3. studieår er i hovedsak tilrettelagt for valgfrie emner, internship eller utveksling). De 14 emnene i obligatoriske-listen over (110 sp) er uten valgalternativ. Tre obligatoriske krav er valg mellom alternativer og er derfor IKKE ført i listen, i tråd med oppgavens regel: (1) AQB250 Bærekraftig akvakultur – avl og genetikk / BIO200 Molekylærgenetikk – «velg minst ett av disse emnene» (minimum 5 sp, høst år 3 / januarblokk år 2); (2) PHI100/PHI101 Ex.phil (evt. seminarversjon) / PHI102 Ex.phil engelsk versjon – «velg minst ett av Ex.Phil-emnene» (10 sp, høst år 1, kan byttes til vår); (3) BUS100 Grunnleggende bedriftsøkonomi / INN200 Økonomistyring – «velg kun ett av disse emnene» (5 sp, vår/høst år 2). 110 (listen) + 5 (AQB250/BIO200) + 10 (Ex.Phil) + 5 (BUS100/INN200) = 130 sp, i tråd med studieplanens egen sum. Studieplanen definerer ingen egne obligatoriske studieretninger/spesialiseringer med separate emnelister – de valgfrie emnene er i stedet gruppert i fem ikke-obligatoriske fordypningspooler (generelle, genombiologi/avl, produksjonsteknikk/RAS, produktkvalitet/fôr/ernæring), samt en valgfri bacheloroppgave B-AA (15 sp, høst/vår) som ikke er obligatorisk og derfor ikke ført i listen."
+}

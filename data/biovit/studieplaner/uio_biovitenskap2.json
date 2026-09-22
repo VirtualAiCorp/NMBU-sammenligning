@@ -1,0 +1,180 @@
+{
+  "entryId": "uio_biovitenskap2",
+  "programnavn": "Biovitenskap (master 2 år)",
+  "institusjon": "Universitetet i Oslo",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.uio.no/studier/program/biovitenskap-master/",
+    "https://www.uio.no/studier/program/biovitenskap-master/oppbygging/",
+    "https://www.uio.no/studier/program/biovitenskap-master/studieretninger/biomangfold/oppbygging/",
+    "https://www.uio.no/studier/program/biovitenskap-master/studieretninger/cellebiologi/oppbygging/",
+    "https://www.uio.no/studier/program/biovitenskap-master/studieretninger/genetikk/oppbygging/",
+    "https://www.uio.no/studier/program/biovitenskap-master/studieretninger/marinbiologi/oppbygging/",
+    "https://www.uio.no/studier/program/biovitenskap-master/studieretninger/molekylarbiologi/oppbygging/",
+    "https://www.uio.no/studier/program/biovitenskap-master/studieretninger/toksikologi/oppbygging/",
+    "https://www.uio.no/studier/program/biovitenskap-master/studieretninger/okologi/oppbygging/"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 60,
+  "obligatoriske": [
+    {
+      "emnekode": "HMS0501/HMS0502/HMS0503/HMS0507",
+      "emnenavn": "Helse, miljø og sikkerhet (HMS)",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Fire 0-poengs HMS-emner som skal tas i begynnelsen av 1. semester; fritak dersom tilsvarende emner er bestått tidligere ved UiO. For studieretningene Biomangfold og systematikk, Marinbiologi og limnologi, Toksikologi og miljøvitenskap samt Økologi og evolusjon kommer i tillegg HMS0504 – Feltsikkerhet. Felles for alle sju studieretninger."
+    },
+    {
+      "emnekode": "Masteroppgave",
+      "emnenavn": "Masteroppgave",
+      "studiepoeng": 60,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Ingen egen emnekode oppgitt på UiOs studieplansider. Oppgaven starter typisk i 2. semester (10 sp) og fortsetter gjennom 3. semester (20 sp) og 4. semester (30 sp) – dvs. den strekker seg over store deler av 1. og hele 2. studieår. Felles for alle sju studieretninger; fast 60 sp uansett retning."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Biomangfold og systematikk",
+      "obligatoriske": []
+    },
+    {
+      "navn": "Cellebiologi, fysiologi og nevrovitenskap",
+      "obligatoriske": [
+        {
+          "emnekode": "BIOS4010",
+          "emnenavn": "Arbeidsmetoder i molekylærbiologi og biokjemi I",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BIOS4010-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BIOS4030",
+          "emnenavn": "Cellebiologiske arbeidsmetoder",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BIOS4030-1"
+          ],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Genetikk og utviklingsbiologi",
+      "obligatoriske": [
+        {
+          "emnekode": "BIOS4010",
+          "emnenavn": "Arbeidsmetoder i molekylærbiologi og biokjemi I",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BIOS4010-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BIOS4020",
+          "emnenavn": "Arbeidsmetoder i molekylærbiologi og biokjemi II",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BIOS4020-1"
+          ],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Marinbiologi og limnologi",
+      "obligatoriske": [
+        {
+          "emnekode": "BIOS4310",
+          "emnenavn": "Marin Ecology I",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "BIOS4410",
+          "emnenavn": "Marine Ecology II",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Molekylærbiologi og biokjemi",
+      "obligatoriske": [
+        {
+          "emnekode": "BIOS4010",
+          "emnenavn": "Arbeidsmetoder i molekylærbiologi og biokjemi I",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BIOS4010-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BIOS4020",
+          "emnenavn": "Arbeidsmetoder i molekylærbiologi og biokjemi II",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BIOS4020-1"
+          ],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Toksikologi og miljøvitenskap",
+      "obligatoriske": [
+        {
+          "emnekode": "BIOS4500",
+          "emnenavn": "Generell toksikologi",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BIOS4500-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BIOS5400",
+          "emnenavn": "Human toksikologi og økotoksikologi",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Økologi og evolusjon",
+      "obligatoriske": []
+    }
+  ],
+  "merknad": "Kilde er UiOs løpende studieplansider for «Biovitenskap (master, 2 år)», hentet 22.09.2026 (nettbasert, ikke en datert PDF; studieplanAar er derfor satt til inneværende opptaksår). Programmet har sju studieretninger. Felles for alle: HMS-emner (0 sp) og en masteroppgave på 60 sp. Fem av sju studieretninger har i tillegg to navngitte, ubetinget obligatoriske BIOS-emner à 10 sp (ført opp under spesialiseringer over); de to resterende (Biomangfold og systematikk, og Økologi og evolusjon) har INGEN emnespesifikke obligatoriske krav utover HMS og masteroppgave – der kan studenten «velge fritt blant alle masteremnene innen Biovitenskap», og «obligatoriske» er derfor tom for disse to. Alle retninger har for øvrig 40 sp valgfrie masteremner (kan velges fra hele biovitenskapsporteføljen, inntil 2–10 sp kan tas som spesialpensum). obligatoriskeStudiepoeng (60) teller kun de emnene som er ubetinget felles for alle sju retninger (HMS + masteroppgave); reelt obligatorisk omfang blir 80 sp for de fem retningene med egne BIOS-emner."
+}

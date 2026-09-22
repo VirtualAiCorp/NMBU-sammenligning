@@ -12,26 +12,158 @@
   "totaltStudiepoeng": 180,
   "obligatoriskeStudiepoeng": 112.5,
   "obligatoriske": [
-    {"emnekode": "BI1003", "emnenavn": "Økologi, atferd, evolusjon og bærekraft", "studiepoeng": 15, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "HMS0001", "emnenavn": "HMS-kurs for 1. årsstudenter", "studiepoeng": 0, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "MA0001", "emnenavn": "Brukerkurs i matematikk A", "studiepoeng": 7.5, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "KJ1004", "emnenavn": "Generell kjemi", "studiepoeng": 7.5, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "BI1001", "emnenavn": "Celle- og molekylærbiologi", "studiepoeng": 15, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "BI1002", "emnenavn": "Faunistikk og floristikk", "studiepoeng": 15, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": "Har obligatoriske ekskursjoner (dags- og flerdagsekskursjoner) i løpet av vår og sommer."},
-    {"emnekode": "BI1006", "emnenavn": "Dyrenes struktur og funksjon", "studiepoeng": 7.5, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "BI1007", "emnenavn": "Plantenes struktur og funksjon", "studiepoeng": 7.5, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "ST0103", "emnenavn": "Brukerkurs i statistikk", "studiepoeng": 7.5, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "BI1014", "emnenavn": "Kvantitativ biologi", "studiepoeng": 7.5, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "EXPH0300", "emnenavn": "Examen philosophicum for naturvitenskap og teknologi", "studiepoeng": 7.5, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": "Inngår identisk som obligatorisk emne i alle tre «Fag 2»-fagpakkene (Kjemi, Matematikk/statistikk, Bærekraft) og er dermed reelt obligatorisk for alle, uavhengig av valgt fagpakke."},
-    {"emnekode": "BI2900", "emnenavn": "Bacheloroppgave i biologi", "studiepoeng": 15, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": "Inngår identisk som obligatorisk emne i alle tre «Fag 2»-fagpakkene og er dermed reelt obligatorisk for alle."}
+    {
+      "emnekode": "BI1003",
+      "emnenavn": "Økologi, atferd, evolusjon og bærekraft",
+      "studiepoeng": 15,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BI1003-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HMS0001",
+      "emnenavn": "HMS-kurs for 1. årsstudenter",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "HMS0001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MA0001",
+      "emnenavn": "Brukerkurs i matematikk A",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MA0001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJ1004",
+      "emnenavn": "Generell kjemi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "KJ1004-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BI1001",
+      "emnenavn": "Celle- og molekylærbiologi",
+      "studiepoeng": 15,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BI1001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BI1002",
+      "emnenavn": "Faunistikk og floristikk",
+      "studiepoeng": 15,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BI1002-1"
+      ],
+      "merknad": "Har obligatoriske ekskursjoner (dags- og flerdagsekskursjoner) i løpet av vår og sommer."
+    },
+    {
+      "emnekode": "BI1006",
+      "emnenavn": "Dyrenes struktur og funksjon",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BI1006-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BI1007",
+      "emnenavn": "Plantenes struktur og funksjon",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BI1007-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ST0103",
+      "emnenavn": "Brukerkurs i statistikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "ST0103-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BI1014",
+      "emnenavn": "Kvantitativ biologi",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "EXPH0300",
+      "emnenavn": "Examen philosophicum for naturvitenskap og teknologi",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "EXPH0300-1"
+      ],
+      "merknad": "Inngår identisk som obligatorisk emne i alle tre «Fag 2»-fagpakkene (Kjemi, Matematikk/statistikk, Bærekraft) og er dermed reelt obligatorisk for alle, uavhengig av valgt fagpakke."
+    },
+    {
+      "emnekode": "BI2900",
+      "emnenavn": "Bacheloroppgave i biologi",
+      "studiepoeng": 15,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Inngår identisk som obligatorisk emne i alle tre «Fag 2»-fagpakkene og er dermed reelt obligatorisk for alle."
+    }
   ],
   "spesialiseringer": [
     {
       "navn": "Fag 2: Kjemi",
       "studiepoeng": 15,
       "emner": [
-        {"emnekode": "TKJ4103", "emnenavn": "Organisk kjemi grunnkurs", "studiepoeng": 7.5, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "KJ2072", "emnenavn": "Naturmiljøkjemi", "studiepoeng": 7.5, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null}
+        {
+          "emnekode": "TKJ4103",
+          "emnenavn": "Organisk kjemi grunnkurs",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "KJ2072",
+          "emnenavn": "Naturmiljøkjemi",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
       ],
       "merknad": "Utover de 2 fast obligatoriske emnene over skal studenten i 5. semester (år 3, høst) velge minst ett av TBT4102 Biokjemi 1 / KJ2050 Analytisk kjemi, grunnkurs (obligatorisk valg mellom alternativer, ikke ført i listen), samt fylle resten av fagpakken (22,5 sp i 4. semester, 22,5 sp i 5. semester) med valgbare emner (TBI4110, BI2060, BI2033, TBT4110 m.fl.) og velge maksimalt ett områdeemne à 7,5 sp i 4., 5. eller 6. semester blant BI2081, ITO1000, IØ2000, ØKO1001 (også et valg mellom alternativer)."
     },
@@ -45,10 +177,42 @@
       "navn": "Fag 2: Bærekraft",
       "studiepoeng": 30,
       "emner": [
-        {"emnekode": "BI2081", "emnenavn": "Natur, miljø og bærekraft", "studiepoeng": 7.5, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": "Fast områdeemne for denne fagpakken."},
-        {"emnekode": "GEOG2017", "emnenavn": "Energiomstilling og bærekraftig utvikling", "studiepoeng": 7.5, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "GEOG1012", "emnenavn": "Innføring i Geografiske informasjonssystemer (GIS)", "studiepoeng": 7.5, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "SØK2014", "emnenavn": "Miljø-økonomi og bærekraft", "studiepoeng": 7.5, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null}
+        {
+          "emnekode": "BI2081",
+          "emnenavn": "Natur, miljø og bærekraft",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Fast områdeemne for denne fagpakken."
+        },
+        {
+          "emnekode": "GEOG2017",
+          "emnenavn": "Energiomstilling og bærekraftig utvikling",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "GEOG1012",
+          "emnenavn": "Innføring i Geografiske informasjonssystemer (GIS)",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "SØK2014",
+          "emnenavn": "Miljø-økonomi og bærekraft",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
       ],
       "merknad": "Utover de 4 fast obligatoriske emnene over (30 sp) fylles fagpakken (22,5 sp i 4. semester) med valgbare emner (BI2033, BI2044, BI2060, TBI4110, TBT4110, BI2034, BI2043, BI2036, TBT4102 m.fl.). Områdeemnet for denne retningen er fast satt til BI2081 (allerede ført i listen), i motsetning til Kjemi- og Matematikk/statistikk-fagpakkene der områdeemnet er et fritt valg mellom fire alternativer."
     }

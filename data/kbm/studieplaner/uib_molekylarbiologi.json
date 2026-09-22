@@ -1,0 +1,125 @@
+{
+  "programnavn": "Molekylærbiologi (bachelor)",
+  "institusjon": "Universitetet i Bergen",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://www.uib.no/studier/BAMN-MOL",
+    "https://www4.uib.no/studier/program/molekylaerbiologi-bachelor/plan"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 120,
+  "obligatoriske": [
+    {
+      "emnekode": "MOL100",
+      "emnenavn": "Innføring i molekylærbiologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT101",
+      "emnenavn": "Brukarkurs i matematikk I",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Obligatorisk valg mellom MAT101 Brukarkurs i matematikk I og MAT111 Grunnkurs i matematikk I."
+    },
+    {
+      "emnekode": "KJEM110",
+      "emnenavn": "Kjemi og energi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MOL102",
+      "emnenavn": "Eksperimentell molekylærbiologi I",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF100",
+      "emnenavn": "Programmering I",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJEM130",
+      "emnenavn": "Organisk kjemi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MOL103",
+      "emnenavn": "Genstruktur, -funksjon og applikasjonar",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MOL200",
+      "emnenavn": "Metabolisme; reaksjonar, regulering og kompartmentalisering",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MOL201",
+      "emnenavn": "Molekylær cellebiologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MOL204",
+      "emnenavn": "Anvendt bioinformatikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MOL222",
+      "emnenavn": "Eksperimentell molekylærbiologi II",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "EXPHIL-MNSEM",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen gir valget mellom seminarvarianten EXPHIL-MNSEM og de andre exphil-variantene ved UiB (bl.a. EXPHIL-MNEKS)."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er UiBs programside og tilhørende «plan»-side for BAMN-MOL. Alle emnene i studieplanen er 10 studiepoeng (standard UiB-norm, 3 emner per semester = 30 sp). 3. semester har i tillegg et valgfritt emne i matematikk/statistikk (10 sp, ikke navngitt i kilden) som ikke er tatt med. 5. semester er satt av til tre fullt valgfrie emner (30 sp, anbefalt utvekslingssemester) og er ikke tatt med. 6. semester består av Examen philosophicum (10 sp) pluss to valgfrie emner (20 sp, ikke navngitt); kun exphil er tatt med. obligatoriskeStudiepoeng (120) = summen av de 12 navngitte emnene; sammen med valgfrie emner (10 sem3 + 30 sem5 + 20 sem6 = 60 sp) gir dette totaltStudiepoeng=180. Kildedokumentet beskriver ingen egne navngitte studieretninger/spesialiseringer for bachelorprogrammet - studenten velger selv fordypning gjennom valgfrie emner i 3., 5. og 6. semester.",
+  "entryId": "uib_molekylarbiologi"
+}

@@ -1,0 +1,27 @@
+{
+  "programnavn": "Kjemi (master 2 år)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/master-2-aar/kjemi",
+    "https://www.nmbu.no/fakulteter/fakultet-kjemi-bioteknologi-og-matvitenskap/studieplaner-master-i-kjemi",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-06/M-KJEMI%20kull%202026.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 60,
+  "obligatoriske": [
+    {
+      "emnekode": "MASTEROPPGAVE",
+      "emnenavn": "Masteroppgave",
+      "studiepoeng": 60,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "60 sp totalt (30 sp høst + 30 sp vår ifølge rutenettet)."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er NMBUs énsides rutenett-studieplan for kull 2026 («M-KJEMI kull 2026»). Programmet har INGEN navngitte obligatoriske emner utover selve masteroppgaven: hele 1. år (60 sp) er fritt sammensatt av valgemner, kun bundet av kravet «minst 30 sp kjemiemner og minst 30 sp masteremner (emnekode på 300-tallet)» oppgitt øverst i kilden - rutenettcellene for 1. år er tomme bortsett fra denne teksthenvisningen (15 sp masteremner nevnt både høst og vår). 2. år består utelukkende av masteroppgaven (30 sp høst + 30 sp vår = 60 sp), skrevet «Masteroppgave» uten egen emnekode i kilden. totaltStudiepoeng er satt til standard 120 sp for et 2-årig masterprogram (60+60 ifølge rutenettets egne årssummer). Kildedokumentet beskriver ingen egne navngitte studieretninger for dette programmet - studenten velger selv fordypning innen naturstoffkjemi, analytisk kjemi (organisk/uorganisk) eller miljø- og radiokjemi via valg av emner og masteroppgavetema, jf. programsiden.",
+  "entryId": "nmbu_kjemi2"
+}

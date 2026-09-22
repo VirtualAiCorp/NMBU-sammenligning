@@ -14,25 +14,146 @@
   "totaltStudiepoeng": 180,
   "obligatoriskeStudiepoeng": 60,
   "obligatoriske": [
-    {"emnekode": "BIOS1101", "emnenavn": "Innføring i beregningsmodeller for biovitenskap", "studiepoeng": 10, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "BIOS1110", "emnenavn": "Celle- og molekylærbiologi", "studiepoeng": 10, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "BIOS1150", "emnenavn": "Biologisk mangfold", "studiepoeng": 10, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "HMS", "emnenavn": "Helse, miljø og sikkerhet", "studiepoeng": 0, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": "Obligatorisk, studiepoenggivende null: HMS0501 Sikkerhet og fysisk miljø, HMS0502 Utviklende læringsmiljø, HMS0503 Laboratoriesikkerhet, HMS0505 El-sikkerhet, HMS0507 Brannsikkerhet. Tas i begynnelsen av 1. semester."},
-    {"emnekode": "BIOS1120", "emnenavn": "Fysiologi", "studiepoeng": 10, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "KJM1003", "emnenavn": "Kjemi for biologer", "studiepoeng": 10, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "EXPHIL03", "emnenavn": "Examen philosophicum", "studiepoeng": 10, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": "Tas normalt i 3. semester (studieretningene Biomangfold/økologi/evolusjon og Molekylærbiologi/biomedisin); i studieretningen Beregningsbiologi og bioinformatikk er den flyttet til 5. semester (år 3, høst) for å gi plass til matematikkemnene tidligere i løpet."}
+    {
+      "emnekode": "BIOS1101",
+      "emnenavn": "Innføring i beregningsmodeller for biovitenskap",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIOS1101-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIOS1110",
+      "emnenavn": "Celle- og molekylærbiologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIOS1110-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIOS1150",
+      "emnenavn": "Biologisk mangfold",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIOS1150-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HMS",
+      "emnenavn": "Helse, miljø og sikkerhet",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "HMS0501-1",
+        "HMS0502-1",
+        "HMS0503-1",
+        "HMS0504-1",
+        "HMS0505-1",
+        "HMS0507-1"
+      ],
+      "merknad": "Obligatorisk, studiepoenggivende null: HMS0501 Sikkerhet og fysisk miljø, HMS0502 Utviklende læringsmiljø, HMS0503 Laboratoriesikkerhet, HMS0505 El-sikkerhet, HMS0507 Brannsikkerhet. Tas i begynnelsen av 1. semester."
+    },
+    {
+      "emnekode": "BIOS1120",
+      "emnenavn": "Fysiologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIOS1120-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM1003",
+      "emnenavn": "Kjemi for biologer",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "EXPHIL03",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EXPHIL03-1"
+      ],
+      "merknad": "Tas normalt i 3. semester (studieretningene Biomangfold/økologi/evolusjon og Molekylærbiologi/biomedisin); i studieretningen Beregningsbiologi og bioinformatikk er den flyttet til 5. semester (år 3, høst) for å gi plass til matematikkemnene tidligere i løpet."
+    }
   ],
   "spesialiseringer": [
     {
       "navn": "Beregningsbiologi og bioinformatikk",
       "studiepoeng": 60,
       "emner": [
-        {"emnekode": "IN1010", "emnenavn": "Objektorientert programmering", "studiepoeng": 10, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "BIOS3011", "emnenavn": "Bioinformatikk i prosjektgrupper", "studiepoeng": 10, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "MAT1100", "emnenavn": "Kalkulus", "studiepoeng": 10, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": "Krever bestått matematikk R2 eller tilsvarende."},
-        {"emnekode": "MAT1110", "emnenavn": "Kalkulus og lineær algebra", "studiepoeng": 10, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "STK1100", "emnenavn": "Sannsynlighetsregning og statistisk modellering", "studiepoeng": 10, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "MAT1120", "emnenavn": "Lineær algebra", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null}
+        {
+          "emnekode": "IN1010",
+          "emnenavn": "Objektorientert programmering",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "BIOS3011",
+          "emnenavn": "Bioinformatikk i prosjektgrupper",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MAT1100",
+          "emnenavn": "Kalkulus",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Krever bestått matematikk R2 eller tilsvarende."
+        },
+        {
+          "emnekode": "MAT1110",
+          "emnenavn": "Kalkulus og lineær algebra",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "STK1100",
+          "emnenavn": "Sannsynlighetsregning og statistisk modellering",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MAT1120",
+          "emnenavn": "Lineær algebra",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
       ],
       "merknad": "Obligatoriske fordypningsemner utgjør totalt 90 sp i denne studieretningen. Utover de 6 fast navngitte emnene over (60 sp) skal studenten i 4. semester (år 2, vår) velge ett av BIOS2100 Generell økologi / BIOS2140 Evolusjon og genetikk / BIOS2910 Molekylærbiologi (10 sp, obligatorisk valg mellom alternativer – ikke ført i listen), samt velge 2 ekstra fordypningsemner (20 sp) fra en fast liste (vår: BIOS2220, BIOS3000, BIOS3060, BIOS3700, BIOS3900, BIOS3910, BIOS3920; høst: BIOS2000, BIOS2200, BIOS2210, BIOS3070, BIOS3250, BIOS3300 (nedlagt), BIOS3310, BIOS3601, BIOS3610, BIOS3800). Krever bestått matematikk R2."
     },
@@ -40,8 +161,24 @@
       "navn": "Biomangfold, økologi og evolusjon",
       "studiepoeng": 20,
       "emner": [
-        {"emnekode": "BIOS2100", "emnenavn": "Generell økologi", "studiepoeng": 10, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "BIOS2140", "emnenavn": "Evolusjon og genetikk", "studiepoeng": 10, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null}
+        {
+          "emnekode": "BIOS2100",
+          "emnenavn": "Generell økologi",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "BIOS2140",
+          "emnenavn": "Evolusjon og genetikk",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
       ],
       "merknad": "Obligatoriske fordypningsemner utgjør totalt 80 sp i denne studieretningen. Utover de 2 fast navngitte emnene over (20 sp) skal studenten i 3. semester (år 2, høst) ta STK1000 Innføring i anvendt statistikk ELLER MAT1050 Matematikk for anvendelser 1 (10 sp, obligatorisk valg mellom alternativer – ikke ført i listen), samt velge 5 ekstra fordypningsemner (50 sp) fra en fast liste (vår: BIOS2220, BIOS2910, BIOS3000, BIOS3060, BIOS3700, BIOS3900, BIOS3910, BIOS3920; høst: BIOS2000, BIOS2200, BIOS2210, BIOS3011, BIOS3070, BIOS3250, BIOS3310, BIOS3601, BIOS3610, BIOS3800)."
     },
@@ -49,9 +186,33 @@
       "navn": "Molekylærbiologi og biomedisin",
       "studiepoeng": 30,
       "emner": [
-        {"emnekode": "BIOS1130", "emnenavn": "Biokjemi 1", "studiepoeng": 10, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": "Hvis studenten ikke har Kjemi 1+2 fra videregående, anbefales forkurs før/i begynnelsen av 2. semester, eller emnet forskyves til etter bestått KJM1003."},
-        {"emnekode": "BIOS2910", "emnenavn": "Molekylærbiologi", "studiepoeng": 10, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "BIOS3700", "emnenavn": "Cellebiologi 2", "studiepoeng": 10, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null}
+        {
+          "emnekode": "BIOS1130",
+          "emnenavn": "Biokjemi 1",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "Hvis studenten ikke har Kjemi 1+2 fra videregående, anbefales forkurs før/i begynnelsen av 2. semester, eller emnet forskyves til etter bestått KJM1003."
+        },
+        {
+          "emnekode": "BIOS2910",
+          "emnenavn": "Molekylærbiologi",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "BIOS3700",
+          "emnenavn": "Cellebiologi 2",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
       ],
       "merknad": "Obligatoriske fordypningsemner utgjør totalt 80 sp i denne studieretningen. Utover de 3 fast navngitte emnene over (30 sp) skal studenten i 3. semester (år 2, høst) ta BIOS3601 Genetikk og utviklingsbiologi ELLER BIOS3800 Humanfysiologi (10 sp), og STK1000 Innføring i anvendt statistikk ELLER MAT1050 Matematikk for anvendelser 1 (10 sp) – begge obligatoriske valg mellom alternativer, ikke ført i listen – samt velge 3 ekstra fordypningsemner (30 sp) fra en fast liste (vår: BIOS2100, BIOS2220, BIOS3000, BIOS3060, BIOS3900, BIOS3910, BIOS3920; høst: BIOS2000, BIOS2140, BIOS2200, BIOS2210, BIOS3011, BIOS3070, BIOS3250, BIOS3300 (nedlagt), BIOS3310, BIOS3610)."
     }

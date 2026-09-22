@@ -1,0 +1,215 @@
+{
+  "entryId": "uia_biologi",
+  "programnavn": "Biologi (bachelor)",
+  "institusjon": "Universitetet i Agder",
+  "studieplanAar": "2026-2029",
+  "kilder": [
+    "https://www.uia.no/studier/program/biologi-bachelor/",
+    "https://www.uia.no/studier/program/biologi-bachelor/studieplaner/2026h.html"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 180,
+  "obligatoriske": [
+    {
+      "emnekode": "BIO104",
+      "emnenavn": "Human fysiologi og anatomi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO104-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO111",
+      "emnenavn": "Cellebiologi med genetikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO111-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO112",
+      "emnenavn": "Introduksjon til biologien",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO112-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ORG001",
+      "emnenavn": "HMS-kurs",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "ORG001-1"
+      ],
+      "merknad": "Obligatorisk deltakelse ved studiestart."
+    },
+    {
+      "emnekode": "BIO102",
+      "emnenavn": "Botanikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIO102-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO103",
+      "emnenavn": "Zoologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIO103-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO113",
+      "emnenavn": "Evolusjonsbiologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIO113-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO206",
+      "emnenavn": "Generell økologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO206-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJ-111",
+      "emnenavn": "Generell kjemi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "KJ-111-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ML-208",
+      "emnenavn": "Molekylærbiologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "ML-208-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJ-213",
+      "emnenavn": "Organisk kjemi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "KJ-213-1"
+      ],
+      "merknad": "Kan erstattes av emner ved UNIS (Svalbard) eller et utvekslingsopphold på 30 sp, etter søknad og godkjenning."
+    },
+    {
+      "emnekode": "MA-143",
+      "emnenavn": "Biostatistikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MA-143-1"
+      ],
+      "merknad": "Kan erstattes av emner ved UNIS (Svalbard) eller et utvekslingsopphold på 30 sp, etter søknad og godkjenning."
+    },
+    {
+      "emnekode": "MA-168",
+      "emnenavn": "Matematikk for biologer",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MA-168-1"
+      ],
+      "merknad": "Kan erstattes av emner ved UNIS (Svalbard) eller et utvekslingsopphold på 30 sp, etter søknad og godkjenning."
+    },
+    {
+      "emnekode": "BIO201",
+      "emnenavn": "Akvatisk økologi",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO201-1"
+      ],
+      "merknad": "Kan erstattes av PRA205 Internship, emner ved UNIS (Svalbard) eller et utvekslingsopphold på 30 sp, etter søknad og godkjenning."
+    },
+    {
+      "emnekode": "BIO204",
+      "emnenavn": "Zoophysiology",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO204-1"
+      ],
+      "merknad": "Kan erstattes av PRA205 Internship, emner ved UNIS (Svalbard) eller et utvekslingsopphold på 30 sp, etter søknad og godkjenning."
+    },
+    {
+      "emnekode": "BIO207",
+      "emnenavn": "Marin bevaringsbiologi",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO207-1"
+      ],
+      "merknad": "Kan erstattes av PRA205 Internship, emner ved UNIS (Svalbard) eller et utvekslingsopphold på 30 sp, etter søknad og godkjenning."
+    },
+    {
+      "emnekode": "BIO300",
+      "emnenavn": "Bacheloroppgave",
+      "studiepoeng": 20,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIO300-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EX-100",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "EX-100-1"
+      ],
+      "merknad": "Kan alternativt tas vår eller høst i 2. eller 3. studieår i stedet for fast plassering i 6. semester."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er UiAs studieplanside for Biologi, bachelorprogram (2026–2029) (www.uia.no/studier/program/biologi-bachelor/studieplaner/2026h.html). Programmet er 180 sp, med en fast, obligatorisk emnerekkefølge i standardløpet – 1., 2., 3. og 6. semester består utelukkende av obligatoriske emner (jf. programsidens egen tekst), og i 4. og 5. semester kan de tre ordinære obligatoriske emnene erstattes av emner ved Universitetssenteret på Svalbard (UNIS), et utvekslingsopphold (UTVOPP, 30 sp) eller (kun 5. semester) internship-emnet PRA205 (10 sp), etter søknad og godkjenning. Siden dette er en søknadsbasert erstatning av det ordinære obligatoriske løpet og ikke et fast valg mellom navngitte alternativer i studieplanens rutenett, er de 18 emnene i standardløpet (180 sp) ført i obligatoriske-listen, med merknad om erstatningsmuligheten på de aktuelle emnene i 4. og 5. semester. BIO300 Bacheloroppgave (20 sp) er programmets obligatoriske avsluttende fordypningsarbeid i 6. semester. EX-100 Examen philosophicum kan alternativt tas i 2. eller 3. studieår i stedet for fast i 6. semester. Programmet har ingen egne, navngitte studieretninger med separate obligatoriske emnelister."
+}

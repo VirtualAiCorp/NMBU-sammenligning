@@ -1,0 +1,198 @@
+{
+  "entryId": "nord_husdyr",
+  "programnavn": "Husdyrvitenskap (bachelor)",
+  "institusjon": "Nord universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nord.no/studier/husdyrvitenskap-bachelor",
+    "https://www.nord.no/studier/studieplaner/husdyrvitenskap-321-bachelor-host-2026"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 135,
+  "obligatoriske": [
+    {
+      "emnekode": "HUS1005",
+      "emnenavn": "Husdyrenes anatomi og fysiologi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "HUS1005-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJE1001",
+      "emnenavn": "Laboratoriesikkerhet",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "KJE1001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJE1000",
+      "emnenavn": "Grunnleggende kjemi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "KJE1000-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HUS1007",
+      "emnenavn": "Husdyrmiljø og -teknologi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "HUS1007-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HUS1006",
+      "emnenavn": "Dyrevelferd og etologi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "HUS1006-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HUS1008",
+      "emnenavn": "Husdyrernæring 1",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "HUS1008-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO1009",
+      "emnenavn": "Cellebiologi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIO1009-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO1008",
+      "emnenavn": "Bærekraft, klima og etikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIO1008-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HUS2005",
+      "emnenavn": "Byggeteknikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "HUS2005-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ECO1014",
+      "emnenavn": "Bedriftsøkonomi for landbruket",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "ECO1014-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HUS2004",
+      "emnenavn": "Husdyrernæring 2",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "HUS2004-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HUS1004",
+      "emnenavn": "Fôrdyrking og fôrmidler",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "HUS1004-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HUS2006",
+      "emnenavn": "Svineproduksjon",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MET1005",
+      "emnenavn": "Akademisk skriving og metode",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "HUS2011",
+      "emnenavn": "Storfeproduksjon og driftsøkonomi",
+      "studiepoeng": 15,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "HUS3301",
+      "emnenavn": "Landbrukspolitikk",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "HUS3301-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HUS2010",
+      "emnenavn": "Bacheloroppgave i husdyrvitenskap",
+      "studiepoeng": 15,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "HUS2010-1"
+      ],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er Nord universitets studieplanside for Husdyrvitenskap (321), kull høst 2026, studiested Steinkjer (www.nord.no/studier/studieplaner/husdyrvitenskap-321-bachelor-host-2026). Programmet er 180 sp. De 17 emnene i obligatoriske-listen (135 sp) er faste for alle studenter. I 2., 4. og 6. semester fylles resten av semesterets 30 sp med ett eller flere «anbefalte valgemner» (2. semester: HUS1009 Sports- og familiedyr, 7,5 sp; 4. semester: HUS2007 Småfeproduksjon, REG1003 Landbruksregnskap, HUS2009 Bygningsprosjektering, til sammen 22,5 sp; 6. semester: MAT1014 Matematikk og statistikk, HUS2012 Praksis i husdyrvitenskap, HUS2008 Fjørfeproduksjon, til sammen 15 sp) – disse kan også erstattes med emner fra andre studieprogram (f.eks. Skogfag, Naturforvaltning, Økonomi og administrasjon) etter godkjenning, og er derfor ikke ført som obligatoriske. HUS2010 Bacheloroppgave i husdyrvitenskap (15 sp, 6. semester) er obligatorisk. Ingen egne obligatoriske studieretninger/spesialiseringer er beskrevet."
+}

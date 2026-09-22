@@ -1,0 +1,44 @@
+{
+  "entryId": "nmbu_miljovitenskap2",
+  "programnavn": "Miljøvitenskap (master 2 år)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/master-2-aar/miljovitenskap",
+    "https://static02.nmbu.no/mina/studier/M-MILJ%C3%98.php?sprx=n&aarx=2026"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 55,
+  "obligatoriske": [
+    {
+      "emnekode": "MILJO302",
+      "emnenavn": "Miljøvitenskap",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Ligger i Augustblokk. Emnekode skrives MILJØ302 på NMBUs sider."
+    },
+    {
+      "emnekode": "MINA321",
+      "emnenavn": "Tverrfaglig samarbeid og kontroverser om bærekraft - engelsk versjon",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Ligger i Januarblokk. MINA320 (norsk versjon av samme emne) kan tas i høstparallellen i stedet."
+    },
+    {
+      "emnekode": "M45-MILJO",
+      "emnenavn": "Masteroppgave",
+      "studiepoeng": 45,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Går over to semestre: 15 sp i 2. år høst og 30 sp i 2. år vår. Emnekode skrives M45-MILJØ på NMBUs sider."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er MINA-fakultetets studieplan-verktøy for kullet med studiestart høsten 2026. Utover de tre emnene over (55 sp) stiller programmet krav om at minst to hovedemner innen miljøvitenskap må inngå for å oppnå mastergraden (bl.a. FMI310 Miljøgifter og økotoksikologi, GEO300 Videregående hydrogeologi, GEO310 Paleomiljø og klimaendringer, JORD310 Jordforurensning og bærekraft, JORD330 Jordhelse og bærekraftig bruk av jordressurser, MILJØ300 Globale miljøendringer og jordsystemet, VANN300 Vannforurensning m.fl., alle 10 sp) - et obligatorisk valg mellom alternativer og derfor ikke ført opp som enkeltemner. dbhEmnekoder er ikke fylt ut siden DBH-rapportering for dette programmet ikke er slått opp i dette arbeidet."
+}

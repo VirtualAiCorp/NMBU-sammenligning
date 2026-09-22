@@ -1,0 +1,221 @@
+{
+  "entryId": "nord_havbruksdrift",
+  "programnavn": "Havbruksdrift og ledelse (bachelor)",
+  "institusjon": "Nord universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nord.no/studier/havbruksdrift-og-ledelse-bachelor",
+    "https://www.nord.no/studier/studieplaner/havbruksdrift-og-ledelse-bahbl-bachelor-host-2026"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 172.5,
+  "obligatoriske": [
+    {
+      "emnekode": "KJE1001",
+      "emnenavn": "Laboratoriesikkerhet",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "KJE1001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ECO1002",
+      "emnenavn": "Bedriftsøkonomisk analyse med programvare",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "ECO1002-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MET1005",
+      "emnenavn": "Akademisk skriving og metode",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MET1005-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HAV1002",
+      "emnenavn": "Fiskebiologi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "HAV1002-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJE1000",
+      "emnenavn": "Grunnleggende kjemi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "KJE1000-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HAV2012",
+      "emnenavn": "Produksjon av laksefisk",
+      "studiepoeng": 15,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "HAV2012-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FIN1001",
+      "emnenavn": "Innføring i regnskap",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "FIN1001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO1009",
+      "emnenavn": "Cellebiologi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIO1009-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HAV2015",
+      "emnenavn": "Fiskeernæring og produktkvalitet",
+      "studiepoeng": 15,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "HAV2015-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HAV2014",
+      "emnenavn": "Fiskehelse",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "HAV2014-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HAV2013",
+      "emnenavn": "Marine arter i oppdrett",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "HAV2013-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HAV2017",
+      "emnenavn": "Praksis i havbruksdrift og ledelse",
+      "studiepoeng": 22.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "HAV2016",
+      "emnenavn": "Fiskevelferd",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "LED2006",
+      "emnenavn": "Ledelse",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "HAV2021",
+      "emnenavn": "Havbruksøkonomi",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "HAV2018",
+      "emnenavn": "Havbruksforvaltning",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "RET1005",
+      "emnenavn": "Arbeidsrett",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "HAV2011",
+      "emnenavn": "Praksisseminar",
+      "studiepoeng": 0,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "HAV2011-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO1008",
+      "emnenavn": "Bærekraft, klima og etikk",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "HAV2019",
+      "emnenavn": "Bacheloroppgave i havbruksdrift og ledelse",
+      "studiepoeng": 15,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er Nord universitets studieplanside for Havbruksdrift og ledelse (BAHBL), kull høst 2026, studiested Bodø (www.nord.no/studier/studieplaner/havbruksdrift-og-ledelse-bahbl-bachelor-host-2026). Programmet er 180 sp. De 19 emnene i obligatoriske-listen (172,5 sp) er faste for alle studenter, inkludert HAV2019 Bacheloroppgave i havbruksdrift og ledelse (15 sp, 6. semester), som IKKE står under overskriften «Valgfrie emner» og derfor regnes som obligatorisk. I 6. semester fyller ett valgfritt emne (7,5 sp) resten av semesterets 30 sp: enten MAT1014 Matematikk og statistikk eller HAV2020 Kvalitetsledelse i havbruk (obligatorisk valg mellom alternativer, ikke ført i listen). 172,5 + 7,5 = 180 sp. Ingen egne obligatoriske studieretninger/spesialiseringer er beskrevet."
+}

@@ -1,0 +1,156 @@
+{
+  "entryId": "nord_biologi",
+  "programnavn": "Biologi (bachelor)",
+  "institusjon": "Nord universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nord.no/studier/biologi-bachelor",
+    "https://www.nord.no/studier/studieplaner/biologi-babii-bachelor-host-2026"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 120,
+  "obligatoriske": [
+    {
+      "emnekode": "BIO1015",
+      "emnenavn": "Biologisk mangfold 1 - protister og planter",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO1015-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO1017",
+      "emnenavn": "Økologi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO1017-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO1016",
+      "emnenavn": "Biologisk mangfold 2 - Invertebrater",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO1016-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJE1002",
+      "emnenavn": "Prinsipper i kjemi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "KJE1002-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJE1001",
+      "emnenavn": "Laboratoriesikkerhet",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "KJE1001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT1014",
+      "emnenavn": "Matematikk og statistikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MAT1014-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO1018",
+      "emnenavn": "Essensiell cellebiologi og biokjemi",
+      "studiepoeng": 15,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIO1018-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO1013",
+      "emnenavn": "Evolusjon og genetikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIO1013-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO2009",
+      "emnenavn": "Molekylær cellebiologi",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO2009-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MET1006",
+      "emnenavn": "Vitenskapelige metoder",
+      "studiepoeng": 15,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MET1006-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO1019",
+      "emnenavn": "Biologisk mangfold 3 - Vertebrater",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO1019-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO2010",
+      "emnenavn": "Marinbiologi og oseanografi",
+      "studiepoeng": 15,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO1026",
+      "emnenavn": "Zoofysiologi og embryologi",
+      "studiepoeng": 15,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er Nord universitets studieplanside for Biologi (BABII), kull høst 2026 (www.nord.no/studier/studieplaner/biologi-babii-bachelor-host-2026). Programmet er 180 sp, undervisningsspråk engelsk, studiested Bodø. De to første studieårene (1.–4. semester, 120 sp) består utelukkende av obligatoriske emner, ført i listen over. Tredje studieår (5.–6. semester, 60 sp) består kun av valgfrie emner – en lang liste å velge blant (bl.a. BIO2024, PRA2060 Praksis i biologi, ECO2009, BIO2012, BIO2011, BIO2005, BIO1008, BIO2023, BIO2022, BIO2019, BIO2016, BIO2015, BIO2014, samt BIO2017 Bacheloroppgave i biologi 15 sp), utveksling eller opphold ved UNIS på Svalbard. Bacheloroppgaven (BIO2017) er dermed valgfri, ikke obligatorisk, for dette programmet, og er derfor ikke ført i obligatoriske-listen. Ingen egne obligatoriske studieretninger/spesialiseringer er beskrevet."
+}

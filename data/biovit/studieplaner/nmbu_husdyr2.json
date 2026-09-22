@@ -18,7 +18,9 @@
       "studiepoeng": 5,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "BIN250-1"
+      ],
       "merknad": "Det obligatoriske statistikkravet på 5 sp dekkes av BIN250. STIN300 (Statistical Programming in R, januarblokk, år 2) er «også anbefalt» i planen, men fremstår som et alternativ/tillegg og ikke et andre obligatorisk emne."
     },
     {
@@ -27,7 +29,9 @@
       "studiepoeng": 60,
       "aar": 2,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "M60-HV-1"
+      ],
       "merknad": "60 sp er anbefalt omfang og lagt til grunn her. Studenten kan i stedet velge en masteroppgave på 45 sp (emnekode M45-HV) eller 30 sp (M30-HV) dersom vedkommende trenger å ta flere emner for å oppfylle kravene til bachelorgraden. Oppgaven strekker seg i praksis over deler av høstparallellen og hele vårparallellen i 2. år."
     }
   ],

@@ -1,0 +1,216 @@
+{
+  "programnavn": "Mat, teknologi og helse (bachelor)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/bachelor/mat-teknologi-og-helse",
+    "https://www.nmbu.no/fakulteter/fakultet-kjemi-bioteknologi-og-matvitenskap/studieplaner-bachelor-i-mat-teknologi-og",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-09/Studieplan%20for%20B-MAT%20Mat%2C%20teknologi%20og%20helse%202026-2027%20%281%29.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 150,
+  "obligatoriske": [
+    {
+      "emnekode": "MVI100",
+      "emnenavn": "Introduksjon til matvitenskap",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Augustblokk før høstsemesteret."
+    },
+    {
+      "emnekode": "BIO100",
+      "emnenavn": "Cellebiologi",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MATH100",
+      "emnenavn": "Brukerkurs i matematikk",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "STIN100",
+      "emnenavn": "Biologisk data-analyse",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "PHI100",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "HFX133",
+      "emnenavn": "Utfordringer for framtidas matproduksjon",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "januarblokk",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM100",
+      "emnenavn": "Generell kjemi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "STAT100",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MVI180",
+      "emnenavn": "Prosessteknologi I",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM110",
+      "emnenavn": "Organisk kjemi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MVI275",
+      "emnenavn": "Matplanter",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO130",
+      "emnenavn": "Generell mikrobiologi I",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJB100",
+      "emnenavn": "Introduksjon til biokjemi",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MVI240",
+      "emnenavn": "Sensorisk analyse",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "januarblokk",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MVI220",
+      "emnenavn": "Næringsmiddelmikrobiologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MVI230",
+      "emnenavn": "Matvaretrygghet og hygiene",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MVI202",
+      "emnenavn": "Matkjemi",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MVI291",
+      "emnenavn": "Kosthold og helse",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "juniblokk",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MVI250",
+      "emnenavn": "Emballeringsteknologi",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "januarblokk",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MVI273",
+      "emnenavn": "Melk og melkebehandling",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MVI274",
+      "emnenavn": "Muskelmat - råvare og teknologi",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MVI261",
+      "emnenavn": "Prosessteknologi II",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er NMBUs fargekodede rutenett-studieplan for kull 2026 (énsides PDF «Studieplan for B-MAT Mat, teknologi og helse 2026-2027»), lest med PyMuPDFs tabell-gjenkjenning for å få eksakte cellespørsmål (antall 5-sp-kolonner per emne), kontrollert mot radenes/årets oppgitte sp-summer (60+60+30=150, som stemmer eksakt med de 21 navngitte emnene). Rutenettet har en umerket «Valgfrie emner»-rad i 3. år høst (ingen emnekode oppgitt, normalt 20-25 sp) som ikke er tatt med i obligatoriske-listen. totaltStudiepoeng er satt til standard 180 sp for et treårig bachelorprogram; differansen på 30 sp (180-150) dekkes av valgfrie emner i 3. år høst. MATH100 og STIN100 står i samme sammenslåtte celle i kilden («MATH100 Brukerkurs matematikk / STIN100 Biologisk data-analyse», 10 sp totalt) og er her delt i to å 5 sp hver, i tråd med praksis for samme emnepar i nmbu_matvitenskap_ernaring.json (der de opptrer i samme celleformat). Dette programmet er etterfølgeren til det nedlagte 5-årige M-MATVIT-programmet (se nmbu_matvitenskap_ernaring.json) og bygges videre med en egen 2-årig master (nmbu_mat_teknologi_helse2). Kildedokumentet beskriver ingen egne studieretninger/spesialiseringer for selve bachelorprogrammet.",
+  "entryId": "nmbu_mat_teknologi_helse"
+}

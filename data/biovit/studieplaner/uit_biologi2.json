@@ -1,0 +1,271 @@
+{
+  "entryId": "uit_biologi2",
+  "programnavn": "Biologi (master 2 år)",
+  "institusjon": "UiT Norges arktiske universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://uit.no/utdanning/program/269576/biologi_-_master",
+    "https://en.uit.no/education/program/270464/biology_-_master",
+    "https://en.uit.no/Content/916698/cache=20262808095126/Study%20plan%20Master%20in%20Biology%202026.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 70,
+  "obligatoriske": [
+    {
+      "emnekode": "HMS-0501/0502/0503/0504",
+      "emnenavn": "Compulsory safety courses (Safety in the laboratory, workshop and on sea and land expeditions; First aid; UiT's regulations for field work and sea-going expeditions; Biological material)",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Fire 0-poengs HMS-emner ved semesterstart. Felles for alle sju studieretninger."
+    },
+    {
+      "emnekode": "TVR-3000",
+      "emnenavn": "On sustainability, innovation and collaborative learning",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Tverrfaglig emne med studenter fra andre masterprogram ved UiT. Felles for alle sju studieretninger."
+    },
+    {
+      "emnekode": "BIO-3950",
+      "emnenavn": "Master's Thesis Biology",
+      "studiepoeng": 60,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO-3950-1"
+      ],
+      "merknad": "30 sp i 3. semester (høst, 2. år) og 30 sp i 4. semester (vår, 2. år). Kan i praksis startes allerede i 1. eller 2. semester. Felles for alle sju studieretninger."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Arctic Animal Biology",
+      "obligatoriske": [
+        {
+          "emnekode": "BIO-3035",
+          "emnenavn": "Arctic Animal Biology: Physiological and Behavioural Adaptations to the Environment",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "BIO-3014",
+          "emnenavn": "Biological timekeeping",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "BIO-3036",
+          "emnenavn": "Arctic Animal Biology: Exploring Physiological Control Mechanisms",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Arctic Marine Ecology",
+      "obligatoriske": [
+        {
+          "emnekode": "BIO-3015",
+          "emnenavn": "Arctic Marine System Biology and Climate Change",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BIO-3015-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BIO-3012",
+          "emnenavn": "Ecological methodology: Study design and statistical analysis",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "BIO-3012-1"
+          ],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Arctic Marine Ecotoxicology",
+      "obligatoriske": [
+        {
+          "emnekode": "BIO-3009",
+          "emnenavn": "Arctic Marine Pollution",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BIO-3009-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BIO-3012",
+          "emnenavn": "Ecological methodology: Study design and statistical analysis",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "BIO-3012-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BIO-3020",
+          "emnenavn": "Fundamentals of Ecotoxicology",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "BIO-3020-1"
+          ],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Ecology and Sustainability",
+      "obligatoriske": [
+        {
+          "emnekode": "BIO-3021",
+          "emnenavn": "Sustainability Science",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BIO-3021-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BIO-3012",
+          "emnenavn": "Ecological methodology: Study design and statistical analysis",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "BIO-3012-1"
+          ],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Freshwater Ecology",
+      "obligatoriske": [
+        {
+          "emnekode": "BIO-3505",
+          "emnenavn": "Ecological Interactions",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BIO-3505-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BIO-3012",
+          "emnenavn": "Ecological methodology: Study design and statistical analysis",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "BIO-3012-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BIO-3518",
+          "emnenavn": "Northern Inland Waters and Climate Change",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "BIO-3518-2"
+          ],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Molecular Environmental Biology",
+      "obligatoriske": [
+        {
+          "emnekode": "BIO-3037",
+          "emnenavn": "Molecular Methods in Plant Biology",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "BIO-3038",
+          "emnenavn": "Molecular Methods in Environmental Microbiology",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "BIO-3027",
+          "emnenavn": "Scientific Programming with Python in the life sciences",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "BIO-3027-1"
+          ],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Northern Populations and Ecosystems",
+      "obligatoriske": [
+        {
+          "emnekode": "BIO-3013",
+          "emnenavn": "Northern Food Web Ecology",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BIO-3013-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BIO-3012",
+          "emnenavn": "Ecological methodology: Study design and statistical analysis",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "BIO-3012-1"
+          ],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er UiTs «Program description: Biology – Master's Program, 120 ECTS», godkjent av fakultetsstyret 17.06.2025, publisert som PDF på programsiden («Study plan Master in Biology 2026»). Programmet har sju studieretninger (opptak skjer direkte til retning via egne søknadskoder). Felles for alle: fire HMS-emner (0 sp), TVR-3000 (10 sp) og masteroppgaven BIO-3950 (60 sp). Hver studieretning har i tillegg 20–30 sp egne obligatoriske fagemner i 1. studieår (ført opp under spesialiseringer); BIO-3012 «Ecological methodology» går igjen som obligatorisk 2. semester-emne i fem av de sju retningene (alle unntatt Arctic Animal Biology og Molecular Environmental Biology, som har egne emner i den posisjonen). For Ecology and Sustainability er det i tillegg et obligatorisk, men fritt valgt, «Elective course within the topic of ecology» (10 sp) i 2. semester – ikke ført opp som enkeltemne siden studenten velger konkret emne selv. For studier med eksperimenter på forsøksdyr er ett av tre dyreforsøkskurs obligatorisk (BIO-3503 Aquatic Animal Welfare, «Animal Experimentation for Wildlife Researchers» ved NMBU, eller CAREiN ved UiB), avhengig av dyremodell – heller ikke ført opp siden det avhenger av masterprosjektet. Minst 60 sp emner kreves utover masteroppgaven; studenter kan ta opptil 20 sp emner på 2000-nivå og inntil 10 sp på 1000-nivå etter søknad. obligatoriskeStudiepoeng (70 = 10 + 60) teller kun det som er ubetinget felles for alle sju retninger; reelt obligatorisk omfang blir 90–100 sp når retningens egne emner (20–30 sp) regnes med."
+}

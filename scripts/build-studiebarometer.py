@@ -289,8 +289,8 @@ def get_institution_catalog(inst_filter: str, tried: list[str]) -> list[dict]:
         if new == 0:
             break  # ingen nye treff -> antagelig gjentar seg, stopp
         page += 1
-        if len(all_hits) >= (total or 0) or page > 15:
-            break
+        if len(all_hits) >= (total or 0) or page > 40:
+            break  # 40 sider = 400 programmer bør dekke selv de største institusjonene
     tried.append(f"katalog:i={inst_filter} ({len(all_hits)} programmer)")
     _catalog_cache[inst_filter] = all_hits
     return all_hits
@@ -304,10 +304,18 @@ def _name_similarity(a: str, b: str) -> float:
     return difflib.SequenceMatcher(None, (a or "").lower(), (b or "").lower()).ratio()
 
 
-# Minste navnelikhet (difflib-ratio) vi godtar når vi må velge basert på navn
-# alene (kode ikke funnet i katalogen) – for lavt, og vi risikerer å plukke
-# feil søsterprogram ved samme institusjon.
-NAME_MATCH_MIN_RATIO = 0.30
+# Minste navnelikhet (difflib-ratio) OG minste margin til nest beste treff vi
+# godtar når vi må velge basert på navn alene (kode ikke funnet i katalogen).
+# Kalibrert mot to ekte tilfeller (UiS "Byplanlegging" → 0.553 med margin
+# 0.153 til nr. 2; "Byplanlegging og samfunnssikkerhet" → 0.791/margin 0.284)
+# og to falske treff der programmet faktisk IKKE finnes på Studiebarometeret
+# (NMBU "Global økonomi og politikk" → 0.514/margin 0.067 mot «Økonomi og
+# administrasjon»; INN "Eiendomsmegling" → 0.412/margin 0.002). Rene
+# terskler på selve scoren skiller ikke godt nok (0.514 > 0.30 ville gitt
+# falskt treff) – marginen til nr. 2 er det som faktisk skiller ekte fra
+# tilfeldig ordoverlapp.
+NAME_MATCH_MIN_RATIO = 0.45
+NAME_MATCH_MIN_MARGIN = 0.12
 
 
 def find_sb_id_via_search(prog: dict, studiested: str | None, programnavn: str | None,
@@ -362,15 +370,24 @@ def find_sb_id_via_search(prog: dict, studiested: str | None, programnavn: str |
                 if got:
                     return sb_id, got[0], got[1]
 
-        # 2) Navnematch blant alt institusjonen har, hvis ingen kode traff
+        # 2) Navnematch blant alt institusjonen har, hvis ingen kode traff.
+        # Krever både en absolutt minste likhet OG en klar margin til nr. 2
+        # (se NAME_MATCH_MIN_RATIO/-MARGIN) – uten det plukker den lett feil
+        # program ved tilfeldig ordoverlapp ("Global økonomi og politikk"
+        # ~ "Økonomi og administrasjon").
         if programnavn:
             cands = narrow_by_campus(catalog) if studiested_slug or first_letter else catalog
             ranked = sorted(cands, key=lambda h: _name_similarity(programnavn, h.get("name", "")), reverse=True)
             if ranked:
                 best = ranked[0]
-                score = _name_similarity(programnavn, best.get("name", ""))
-                tried.append(f"navnematch:{programnavn!r}~={best.get('name')!r} ({score:.2f})")
-                if score >= NAME_MATCH_MIN_RATIO:
+                best_score = _name_similarity(programnavn, best.get("name", ""))
+                second_score = _name_similarity(programnavn, ranked[1].get("name", "")) if len(ranked) > 1 else 0.0
+                margin = best_score - second_score
+                tried.append(
+                    f"navnematch:{programnavn!r}~={best.get('name')!r} "
+                    f"(score {best_score:.2f}, margin {margin:.2f})"
+                )
+                if best_score >= NAME_MATCH_MIN_RATIO and margin >= NAME_MATCH_MIN_MARGIN:
                     sb_id = best["id"]
                     got = try_fetch_main_by_id(sb_id)
                     if got:

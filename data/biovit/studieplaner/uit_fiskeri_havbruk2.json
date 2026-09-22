@@ -1,0 +1,70 @@
+{
+  "entryId": "uit_fiskeri_havbruk2",
+  "programnavn": "Fiskeri- og havbruksvitenskap (master 2 år, fiskerikandidat)",
+  "institusjon": "UiT Norges arktiske universitet",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://uit.no/utdanning/program/268941/fiskeri-_og_havbruksvitenskap_-_master",
+    "https://uit.no/Content/915964/cache=20262209152237/Studieplan%20for%20master%20i%20fiskeri-og%20havbruksvitenskap%20fra%20kull%202025.PDF"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 80,
+  "obligatoriske": [
+    {
+      "emnekode": "BED-3200",
+      "emnenavn": "Fellesemnet (bærekraft, innovasjon og samarbeidslæring)",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Tverrfaglig fellesemne sammen med studenter fra andre studieprogram."
+    },
+    {
+      "emnekode": "SVF-3004",
+      "emnenavn": "Kvantitative forskningsmetoder 1",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "SVF-3004-1"
+      ],
+      "merknad": "Omtalt i studieplanen som «et obligatorisk metodeemne»."
+    },
+    {
+      "emnekode": "FSK-3960",
+      "emnenavn": "Masteroppgave i Fiskeri- og havbruksvitenskap",
+      "studiepoeng": 60,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "FSK-3960-1",
+        "FSK-3960-2"
+      ],
+      "merknad": "60 sp er vanligst (30 sp i 3. semester høst + 30 sp i 4. semester vår, «alternativ a»). Alternativt kan studenten skrive en oppgave på 30 sp (emnekode FSK-3961, kun i 4. semester, «alternativ b»), og bruke 3. semester på fordypningsemner tilsvarende 30 sp i stedet."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Forvaltning",
+      "obligatoriske": []
+    },
+    {
+      "navn": "Havbruk",
+      "obligatoriske": []
+    },
+    {
+      "navn": "Ressursøkonomi",
+      "obligatoriske": []
+    },
+    {
+      "navn": "Sjømat",
+      "obligatoriske": []
+    },
+    {
+      "navn": "Marked",
+      "obligatoriske": []
+    }
+  ],
+  "merknad": "Kilde er «Studieplan for master i fiskeri- og havbruksvitenskap fra kull 2025», godkjent av fakultetsstyret ved BFE-fakultetet 17.06.2025. Programmet er tverrfaglig og har ingen formelle, bindende studieretninger med obligatoriske emnepakker: 1. og 2. semester (60 sp) består av BED-3200, SVF-3004 og 40 sp «fordypningsemner» som studenten velger fritt, men studieplanen lister fem «anbefalte fordypningsretninger» (ført opp under spesialiseringer, alle med tom obligatorisk-liste siden ingen enkeltemner er påkrevd) for faglig sammenheng: Forvaltning (bl.a. BIO-3516/FSK-3624, SVF-3555, FSK-3012, FSK-3009), Havbruk (bl.a. BIO-2504, SVF-3555/FSK-3004, BIO-3011, BIO-3503, SVF-3650/BIO-3512), Ressursøkonomi (bl.a. SOK-3600, SVF-3555, FSK-3009, SOK-3XXX Cost-benefit analysis), Sjømat (bl.a. BIO-3607, FSK-3004, BIO-3503, FSK-3009, SVF-3650) og Marked (bl.a. BED-3074/BED-3111, BED-3003, FSK-3009, BED-3113/BED-3101). Teksten presiserer at «andre alternativer og kombinasjoner kan velges» og at studenter også kan ta emner utenfor Norges fiskerihøgskole. obligatoriskeStudiepoeng (80 = 10 + 10 + 60) forutsetter 60 sp masteroppgave; med 30 sp oppgave blir summen 50 sp, men da erstattes 30 sp av oppgaven med obligatoriske fordypningsemner i 3. semester (fritt valgt innenfor rammen over)."
+}

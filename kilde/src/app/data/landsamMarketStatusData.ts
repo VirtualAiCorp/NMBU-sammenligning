@@ -1,4 +1,4 @@
-// GENERERT av scripts/build-markedsstatus.py ukjent dato – ikke rediger for hånd.
+// GENERERT av scripts/build-markedsstatus.py 2026-09-22 – ikke rediger for hånd.
 // Kilde: data/landsam/markedsstatus.json · PDF-er i kilde/public/markedsstatus/landsam/
 
 export interface MarketDoc {
@@ -22,6 +22,498 @@ export interface MarketInstitution {
   relevanteProgram: string[];
 }
 
-export const MARKET_STATUS_HENTET: string | null = null;
+export const MARKET_STATUS_HENTET: string | null = "2026-09-22";
 
-export const MARKET_STATUS: MarketInstitution[] = [];
+export const MARKET_STATUS: MarketInstitution[] = [
+  {
+    "id": "ntnu",
+    "name": "NTNU",
+    "fullName": "Norges teknisk-naturvitenskapelige universitet",
+    "enhet": "Fakultet for arkitektur og design / Institutt for arkitektur og planlegging",
+    "styresider": [
+      "https://www.ntnu.no/adm/styret/saker",
+      "https://i.ntnu.no/wiki/-/wiki/Norsk/Fakultetsstyret+ved+AD"
+    ],
+    "status": "partial",
+    "dokumenter": [
+      {
+        "label": "Byplanlegging - master (studieprogramside)",
+        "url": "https://www.ntnu.no/studier/mbyplan",
+        "localPath": null,
+        "dato": "2026",
+        "storrelseMB": null
+      },
+      {
+        "label": "Fysisk planlegging - masterstudium, opptak (studieprogramside)",
+        "url": "https://www.ntnu.no/studier/mfyspl/opptak",
+        "localPath": null,
+        "dato": "2026",
+        "storrelseMB": null
+      }
+    ],
+    "punkter": [
+      "NTNUs sakspapirer til universitetsstyret (2025–2026) og protokoller ligger som lenker til SharePoint (studntnu.sharepoint.com) som krever NTNU-innlogging, og fakultetsstyret ved Fakultet for arkitektur og design (AD) sine sakspapirer ligger på et internt kunnskapsbase-oppslag (i.ntnu.no) som var tomt/uten innhold ved uthenting 22.09.2026. Vi fant derfor ingen offentlig tilgjengelige styrepapirer for AD-fakultetet eller Institutt for arkitektur og planlegging (IAP) i perioden.",
+      "Det er likevel dokumentert på NTNUs egne studieprogramsider at den toårige masteren i Fysisk planlegging avvikles og erstattes av en ny master i Byplanlegging (MBYPLAN) med oppstart høsten 2026 – i tråd med det programkart.json allerede har notert. Emnebeskrivelsene for Byplanlegging er datert 20. mars 2026, og lokalt opptak (DBH tabell 379) viser 34 studieplasser og 107 førstevalgssøkere i 2026 på det gamle programnavnet, opp fra 97 i 2025.",
+      "Ingen tall for studieportefølje, søkertall eller økonomi ved AD-fakultetet for 2025–2026 kunne bekreftes i primærkilder (styresaker); dette er derfor ikke inkludert som punkter her utover det som allerede finnes i programkart.json."
+    ],
+    "oppsummering": "NTNUs styrepapirer på universitets- og fakultetsnivå var ikke offentlig tilgjengelige ved uthenting (SharePoint-lenker krever NTNU-pålogging, og fakultetsstyret AD sin kunnskapsbaseside var tom). Det eneste bekreftede funnet er at masteren i Fysisk planlegging erstattes av en ny Byplanlegging-master fra høsten 2026, dokumentert på NTNUs egne studieprogramsider. Status settes til «partial» inntil styrepapirer blir tilgjengelige.",
+    "relevanteProgram": [
+      "ntnu_fysisk_planlegging",
+      "ntnu_eiendomsutvikling",
+      "ntnu_folkehelse",
+      "ntnu_msok"
+    ]
+  },
+  {
+    "id": "uis",
+    "name": "UiS",
+    "fullName": "Universitetet i Stavanger",
+    "enhet": "Det teknisk-naturvitenskapelige fakultet (Institutt for sikkerhet, økonomi og planlegging, ISØP) / Det samfunnsvitenskapelige fakultet",
+    "styresider": [
+      "https://opengov.360online.com/Meetings/uis/Boards/Details/599422",
+      "https://opengov.360online.com/Meetings/uis/Boards/Details/599302"
+    ],
+    "status": "complete",
+    "dokumenter": [
+      {
+        "label": "Møtereferat Fakultetsstyret TN 18.06.2026",
+        "url": "https://opengov.360online.com/Meetings/uis/File/Details/1485780.pdf",
+        "localPath": "/markedsstatus/landsam/UiS_TN_Motereferat_18.06.2026.pdf",
+        "dato": "2026-06-18",
+        "storrelseMB": 0.15
+      },
+      {
+        "label": "Møteinnkalling Fakultetsstyret TN 18.06.2026 (sakspapirer)",
+        "url": "https://opengov.360online.com/Meetings/uis/File/Details/1482784.pdf",
+        "localPath": "/markedsstatus/landsam/UiS_TN_Moteinnkalling_18.06.2026.pdf",
+        "dato": "2026-06-18",
+        "storrelseMB": 0.29
+      },
+      {
+        "label": "Møtebok Fakultetsstyret SV 11.08.2026",
+        "url": "https://opengov.360online.com/Meetings/uis/File/Details/1501305.pdf",
+        "localPath": "/markedsstatus/landsam/UiS_SV_Motebok_11.08.2026.pdf",
+        "dato": "2026-08-11",
+        "storrelseMB": 0.11
+      }
+    ],
+    "punkter": [
+      "Byplanlegging-programmene ved UiS (master 5 år, bachelor Byplanlegging og samfunnssikkerhet, og byggingeniør med studieretning byplanlegging) hører til Institutt for sikkerhet, økonomi og planlegging (ISØP) under Det teknisk-naturvitenskapelige fakultet (TN). Fra 1. oktober 2026 får instituttet ny leder, Øystein Lund Bø, som tar over etter Tore Markeset, som har vært instituttleder i tolv år (FSTN-møtereferat 18.06.2026, sak 18/26).",
+      "TN-fakultetets økonomi bedres: fakultetet opplever realvekst for første gang siden 2022–2023, blant annet som følge av økte studenttall og økt studiepoengproduksjon. Det er usikkerhet om BOA-inntekter, men prognosen viser økt handlingsrom frem mot 2028, som delvis skal brukes til strategisk bemanningsplanlegging (FSTN 18.06.2026, sak 18/26).",
+      "Fakultetsstyret godkjente TN-fakultetets studieporteføljerapport for 2025/2026 i sak 27/26, som ligger til grunn for universitetsstyrets senere behandling av UiS' samlede studieportefølje. Rapporten peker på at gjennomføringsgrad og frafall fortsatt er et forbedringsområde, men at datagrunnlaget er usikkert (FSTN 18.06.2026, sak 27/26).",
+      "TN-fakultetet foreslo i sak 25/26 en fordeling av opptaksrammer for 2027 med bare moderate endringer: økt satsing på internasjonale opptak, videreført nullopptak på bachelor i miljøteknologi, samt planlagt nyopptak til årsstudier i samfunnssikkerhet og beredskap og i entreprenørskap. Selve talloppstillingen for byplanleggingsprogrammene spesifikt var ikke lesbar i sakspapirene som ble hentet ut.",
+      "ISØP fikk i sak 24/26 utredningstillatelse til et nytt årsstudium i entreprenørskap (60 studiepoeng, planlagt oppstart høsten 2027), med krav om at forholdet til eksisterende programmer – inkludert mulig overlapp med Handelshøgskolen ved UiS – avklares nærmere før en eventuell akkrediteringssøknad (FSTN 18.06.2026, sak 24/26).",
+      "Det samfunnsvitenskapelige fakultet (SV) ved UiS har ingen programmer som direkte konkurrerer med LANDSAM; fakultetsstyret der behandlet i august 2026 blant annet nedleggelse av en master i Digital Society and Societal Transformations fra høsten 2027 og en generell studieporteføljerapport, uten punkter relevante for LANDSAMs fagområder (FSSV-møtebok 11.08.2026, sak 12/26 og 13/26).",
+      "Vi fant ingen bekreftelse i styrepapirene på om masteren i byplanlegging (5 år) har stanset eller redusert opptaket, selv om enkelte kilder tyder på at søkere i praksis har blitt henvist til byggingeniør-programmet og den toårige masteren i byplanlegging; dette er derfor ikke tatt med som en bekreftet påstand."
+    ],
+    "oppsummering": "UiS' byplanleggingsfaglige miljø (ISØP ved TN-fakultetet) får ny instituttleder fra oktober 2026 etter tolv år med samme leder, og fakultetet melder om bedret økonomi og godkjent studieporteføljerapport for 2025/2026. Opptaksrammene for 2027 endres bare moderat, med nye årsstudier i samfunnssikkerhet/beredskap og entreprenørskap som mest konkrete nyheter. SV-fakultetet har ingen direkte LANDSAM-relevante saker i perioden.",
+    "relevanteProgram": [
+      "uis_byplanlegging",
+      "uis_byplan_samfsikkerhet",
+      "uis_ing_bygg_byplan"
+    ]
+  },
+  {
+    "id": "uit",
+    "name": "UiT",
+    "fullName": "UiT Norges arktiske universitet",
+    "enhet": "Fakultet for humaniora, samfunnsvitenskap og lærerutdanning (HSL) / Institutt for samfunnsvitenskap (ISV)",
+    "styresider": [
+      "https://uit.no/om/universitetsstyret",
+      "https://uit.no/moteportalen/um/utvalg?utvalg=2",
+      "https://uit.no/project/studieportefoljen"
+    ],
+    "status": "partial",
+    "dokumenter": [
+      {
+        "label": "Revidert porteføljeutviklingsplan UiT 2026–2027",
+        "url": "https://uit.no/Content/919752/cache=1769697826000/Revidert%20portef%C3%B8ljeutviklingsplan%20UiT%202026%E2%80%932027.pdf",
+        "localPath": "/markedsstatus/landsam/UiT_Portefoljeutviklingsplan_2026-2027.pdf",
+        "dato": "2025 (høst)",
+        "storrelseMB": 0.24
+      },
+      {
+        "label": "Status på porteføljeutviklingsplan UiT 2025–2026",
+        "url": "https://uit.no/Content/931089/cache=1781008640000/Status_portef%C3%B8ljeutviklingsplan%20UiT%202025%E2%80%932026_oppd.pdf",
+        "localPath": "/markedsstatus/landsam/UiT_Status_Portefoljeplan_2025-2026.pdf",
+        "dato": "2025 (høst)",
+        "storrelseMB": 0.24
+      }
+    ],
+    "punkter": [
+      "Statusoppdateringen på porteføljeutviklingsplanen viser at HSL-fakultetet (som eier bachelorprogrammet Samfunnsplanlegging og kulturforståelse) har forsøkt å utvikle et pilotsertifikat i arealplanlegging, men dette arbeidet har stoppet opp fordi de eksternt innmeldte kompetansebehovene ikke kunne dekkes av fagmiljøet. Det åpnes i stedet for 2–3 nye pilotsertifikater på andre temaer.",
+      "HSL og Handelshøgskolen (BFE) samarbeider om et felles erfaringsbasert masterprogram i ledelse, med tema som beredskap, kultur og helse; MBA-programmet (felles ISV/HSL og HHT/BFE) inngår i en pågående NOKUT-evaluering av erfaringsbaserte ledelsesmastere.",
+      "2025–2026 var siste år med en egen porteføljeutviklingsplan; fra og med denne runden legges videreutvikling av studietilbudet ved UiT inn i den ordinære virksomhetsstyringen i stedet for en frittstående plan (ifølge UiTs egen porteføljeside).",
+      "Vi fant ingen tallfestede søkertall, økonomital eller eksplisitte vedtak om studieportefølje for Institutt for samfunnsvitenskap eller programmet Samfunnsplanlegging og kulturforståelse spesifikt i de dokumentene som var tilgjengelige; universitetsstyrets møteportal (uit.no/moteportalen) og fakultetets egne styresaker var ikke gjennomgått i detalj utover porteføljeplanene på grunn av tidsbegrensning, så status settes til «partial»."
+    ],
+    "oppsummering": "UiTs sentrale porteføljeutviklingsdokumenter nevner bare ett punkt med direkte relevans for LANDSAMs fagområder: et pilotsertifikat i arealplanlegging ved HSL-fakultetet som har stanset opp av kapasitetsgrunner. Ingen søkertall, økonomital eller studieporteføljevedtak spesifikt for Samfunnsplanlegging og kulturforståelse ble funnet i de gjennomgåtte kildene.",
+    "relevanteProgram": [
+      "uit_samfunnsplanlegging"
+    ]
+  },
+  {
+    "id": "hvl",
+    "name": "HVL",
+    "fullName": "Høgskulen på Vestlandet",
+    "enhet": "Fakultet for teknologi, miljø- og samfunnsvitskap (FTMS) – Institutt for bygg, miljø- og naturvitskap. NB: «Fakultet for ingeniør- og naturvitskap (FIN)» ble slått sammen med «Fakultet for økonomi og samfunnsvitskap (FØS)» til FTMS fra 1.1.2024, så dagens styrepapirer ligger under FTMS.",
+    "styresider": [
+      "https://opengov.360online.com/Meetings/hvl-uninett/Boards/Details/302309",
+      "https://www.hvl.no/om/organisering/ftms/"
+    ],
+    "status": "complete",
+    "dokumenter": [
+      {
+        "label": "Komplett innkalling FTMS Fakultetsråd 21.05.2026 (inkl. Søkartal 2026)",
+        "url": "https://opengov.360online.com/Meetings/hvl-uninett/File/Details/1303215.pdf",
+        "localPath": "/markedsstatus/landsam/HVL_FTMS_Komplett_innkalling_21.05.2026.pdf",
+        "dato": "2026-05-21",
+        "storrelseMB": 1.02
+      }
+    ],
+    "punkter": [
+      "Bachelor i landmåling og eiendomsdesign (Bergen) er blant HVLs mest søkte studieprogram i 2026 (nr. 6 av alle HVL-program). Studieplassene økte fra 65 til 80, søknadene fra 933 til 1168 (+235) og førstevalgssøkerne fra 191 til 227 (+36) sammenlignet med 2025 – en klar vekst (FTMS Fakultetsråd, sak 10/26 «Søkartal 2026», vedlegg Søkertall FTMS SO 2026).",
+      "Bachelor i eiendomsmegling, økonomi og jus (Sogndal) hadde 1525 søknader i 2026 mot 1288 i 2025 (+237), men antall førstevalgssøkere gikk ned fra 201 til 191 (-10, -4,98 prosent). Studieplasstallet var uendret på 40 (samme kilde).",
+      "Bachelor i landskapsplanlegging med landskapsarkitektur (Sogndal) fikk flere studieplasser (fra 35 til 45), men søkertallet falt: søknadene gikk ned fra 373 til 327 (-46) og førstevalgssøkerne fra 58 til 41 (-17, -29,3 prosent) – den klareste nedgangen blant FTMS' LANDSAM-relevante programmer i denne oversikten (samme kilde).",
+      "Den lokale toårige masteren i areal og eiendom (Bergen) hadde 170 søkere og 156 førstevalgssøkere i 2026-opptaket, opp fra 158 søkere og 143 førstevalgssøkere i 2025 (+13 førstevalgssøkere) – programmet konkurrerer indirekte med NMBUs toårige eiendomsutvikling-master, selv om det ikke er med i dagens programkart-gruppe for eiendomsutvikling (samme kilde, vedlegg Søkertall FTMS lokalt masteropptak 2026).",
+      "Nasjonalt vokste søkertallene til Samordna opptak med 6,2 prosent, mens HVL totalt sett hadde en liten nedgang på 0,5 prosent. Prodekan for utdanning pekte på økonomi og administrasjon samt fleksible studier som områdene med størst vekst i søkertall, mens IT gikk ned (FTMS Fakultetsråd, sak 10/26).",
+      "FTMS bruker en «trafikklysmodell» for å kategorisere studietilbod i grønn, gul eller raud kategori basert på forventet antall kvalifiserte førstevalgssøkere; studietilbod i raud kategori skal i utgangspunktet trekkast med mindre rektor, etter innstilling frå dekan, vedtek at tilbodet likevel skal starte opp (samme kilde). Ingen av dei tre LANDSAM-relevante programma er identifisert som raude i sakspapira, men landskapsplanlegging med landskapsarkitektur har lågast forventa kvalifisert søkjartal per studieplass (0,86) av dei tre."
+    ],
+    "oppsummering": "FTMS' søkjartal for 2026 viser eit delt bilete for HVLs LANDSAM-konkurrerande program: landmåling og eiendomsdesign veks klart i både studieplassar og søkjartal, eigedomsmekling har fleire søknader men færre førstevalssøkjarar, medan landskapsplanlegging med landskapsarkitektur har den tydelegaste nedgangen i søkjartal trass i fleire studieplassar. Den lokale masteren i areal og eiendom (Bergen) veks også, og er ein indirekte konkurrent til NMBUs eiendomsutvikling-master.",
+    "relevanteProgram": [
+      "hvl_landmaling",
+      "hvl_eiendomsmegling",
+      "hvl_landskapsplanlegging_la"
+    ]
+  },
+  {
+    "id": "aho",
+    "name": "AHO",
+    "fullName": "Arkitektur- og designhøgskolen i Oslo",
+    "enhet": "Institusjonsnivå (egen vitenskapelig høyskole) – Institutt for urbanisme og landskap",
+    "styresider": [
+      "https://www.aho.no/om/organisasjon/styret/",
+      "https://www.aho.no/om/organisasjon/styret/styremoter/2026/"
+    ],
+    "status": "complete",
+    "dokumenter": [
+      {
+        "label": "Komplett innkalling AHOs styremøte 16.09.2026 (offentlig versjon)",
+        "url": "https://www.aho.no/om/organisasjon/styret/styremoter/2026/styrepapirer/16.09.2026/komplett-innkalling-til-ahos-styremote-16.09.2026-(-offentlig-versjon).pdf",
+        "localPath": "/markedsstatus/landsam/AHO_Styremote_16.09.2026_komplett.pdf",
+        "dato": "2026-09-16",
+        "storrelseMB": 6.05
+      }
+    ],
+    "punkter": [
+      "AHOs søkertall har falt kraftig over flere år: fra toppåret 2021 med 4414 søkere til 2140 søkere i 2026 – omtrent 50 prosent av toppnivået. Andelen søkere som faktisk leverer opptaksprøve synker også, og skolen måtte i år ringe rundt til ventelisten og ta opp studenter helt fram til studiestart for å fylle plassene (Rektors rapport til styret, sak 56/26, styremøte 16.09.2026).",
+      "Nye studenter høsten 2026 fordelte seg med 60 på arkitektur (senere redusert til 58 etter frafall), 36 på design og 20 på landskapsarkitektur. Rektor advarer om at AHO nærmer seg et kritisk punkt: med et årlig fall på 200–300 søkere vil design og landskap kunne slite med å fylle plassene med kvalifiserte kandidater allerede i 2027/2028, mens arkitektur vil nå samme punkt mot 2029/2030 (samme kilde).",
+      "Den femårige fellesgraden i landskapsarkitektur, som AHO driver sammen med UiT (tre år i Oslo, to år i Tromsø), har nylig gjennomgått en periodisk programevaluering; rapporten er lagt fram for konsortiumstyret for videre behandling. Neste år skal den internasjonale (2-årige) masteren i landskapsarkitektur (IMLA) starte sin egen periodiske programevaluering (samme kilde).",
+      "Institutt for urbanisme og landskap – som huser landskapsarkitekturutdanningen – har en midlertidig instituttledelse som skal fungere ut 2026, uten at årsak er nærmere begrunnet i sakspapirene.",
+      "AHOs nye strategi (2026–2036) peker ut «Fremtidsrettet studieportefølje» som ett av fem prioriterte satsingsområder i strategiimplementeringen, og skolen har engasjert PwC til å bistå med gjennomføringen fra september 2026. Arbeidet med selve prosjektet «Fremtidens studieportefølje» starter høsten 2026.",
+      "NOKUT gjennomfører periodisk tilsyn med kvalitetsarbeidet ved AHO; tilsynet ble varslet 14. mai 2025, med oppstartsmøte 14. januar 2026 og AHOs egenvurderingsrapport oversendt NOKUT 15. mai 2026. Tilsynet sammenfaller med AHOs redesign av kvalitetssystemet.",
+      "Styret behandlet i samme møte revidert langtidsbudsjett 2026–2030 og investeringsplan, samt fikk en orientering om budsjettplanen for 2027 (sak 37/26 og 54/26); ingen tallfestede budsjettstørrelser for landskapsarkitektur spesifikt ble funnet i den uttrekte teksten."
+    ],
+    "oppsummering": "AHOs styrepapirer fra september 2026 tegner et bekymringsfullt bilde av rekrutteringen: søkertallene er halvert siden toppåret 2021, og landskapsarkitektur (20 nye studenter høsten 2026) er blant programmene rektor mener kan slite med å fylle studieplassene med kvalifiserte søkere allerede i 2027/2028. Samtidig pågår periodisk programevaluering av fellesgraden med UiT, midlertidig instituttledelse ved Institutt for urbanisme og landskap, og et nytt strategiarbeid med «Fremtidsrettet studieportefølje» som ett av fem hovedsatsinger fram mot 2036.",
+    "relevanteProgram": [
+      "aho_la"
+    ]
+  },
+  {
+    "id": "nord",
+    "name": "Nord",
+    "fullName": "Nord universitet",
+    "enhet": "Fakultet for samfunnsvitenskap (FSV)",
+    "styresider": [
+      "https://www.nord.no/om/organisasjon/styret"
+    ],
+    "status": "complete",
+    "dokumenter": [
+      {
+        "label": "Komplett innkalling Styret for Nord universitet 07.05.2026",
+        "url": "https://www.nord.no/sites/default/files/2026-04/Komplett-innkalling-Styret-for-Nord-universitet-07-05-2026.pdf",
+        "localPath": "/markedsstatus/landsam/Nord_Styremote_07.05.2026_komplett.pdf",
+        "dato": "2026-05-07",
+        "storrelseMB": 4.48
+      }
+    ],
+    "punkter": [
+      "Fakultet for samfunnsvitenskap (FSV) – som blant annet huser bachelor i eiendomsmegling og markedsanalyser (Bodø), geografi og samfunnsplanlegging (Levanger) og internasjonale relasjoner (Bodø) – får redusert budsjettramme under Nords nye inntektsfordelingsmodell: fra 163,8 millioner kroner i 2026 til 156,8 millioner i 2027, en nedgang på om lag 6,75 millioner fra selve modellovergangen og ytterligere 4,7 millioner fra modellendringer, dempet noe av en overgangsordning til en samlet reduksjon på 2,3 millioner kroner (sak 23/26 «Ny inntektsfordelingsmodell for Nord universitet – ferdigstillelse», styremøte 07.05.2026).",
+      "Den nye inntektsmodellen innfører et prinsipp om at studieprogram bør ha minst 20 studenter for å få full finansiering, i tråd med signaler fra Kunnskapsdepartementet om at små fagmiljøer gir svakere læringsmiljø og mindre effektiv drift. Dette kan legge press på mindre studieprogram i FSVs portefølje (samme kilde).",
+      "Nord universitets samlede omstillingsbehov for 2027–2031 er beregnet til om lag 64,5 millioner kroner, ned fra 161 millioner kroner i perioden 2024–2026, og vurderes som håndterbart innenfor ordinær styring og drift. Omstillingsarbeidet er nå organisert rundt tre hovedaktiviteter: studieportefølje, inntektsfordelingsmodell og administrativ organisering (sak 24/26 «Status i omstillingen av universitetet», styremøte 07.05.2026).",
+      "Styret skal få studieporteføljen for 2027/2028 til behandling i juni 2026, som ledd i den ordinære årlige studieporteføljeprosessen som er forsterket gjennom omstillingsarbeidet, med felles kriterier for vurdering av studieprogram basert på både faglige og økonomiske forhold (samme kilde). Konkrete endringer for FSVs LANDSAM-relevante programmer var ikke omtalt i sakspapirene fra mai-møtet.",
+      "Nords tilsynsrapport fra NOKUT (vedlagt sak 25/26) bekrefter at universitetet har 11 000 studenter og cirka 900 faglige årsverk, og at studieporteføljen ved siden av de største programmene (sykepleie, MBA, grunnskolelærer) blant annet omfatter eiendomsmegling."
+    ],
+    "oppsummering": "FSV ved Nord får redusert budsjettramme (fra 163,8 til 156,8 millioner kroner) under en ny inntektsfordelingsmodell som styret ferdigstilte i mai 2026, og som setter et de facto minstekrav på 20 studenter per program for full finansiering. Samtidig pågår et bredere omstillingsarbeid med et gjenværende behov på 64,5 millioner kroner fram mot 2031, der studieporteføljen for 2027/2028 skal behandles av styret i juni 2026. Ingen konkrete portefølje-endringer for eiendomsmegling, geografi/samfunnsplanlegging eller internasjonale relasjoner ble funnet i de tilgjengelige sakspapirene.",
+    "relevanteProgram": [
+      "nord_eiendomsmegling",
+      "nord_geografi_samfplan",
+      "nord_internasjonale_relasjoner_b"
+    ]
+  },
+  {
+    "id": "uia",
+    "name": "UiA",
+    "fullName": "Universitetet i Agder",
+    "enhet": "Fakultet for samfunnsvitenskap – Institutt for global utvikling og samfunnsplanlegging (IGUS)",
+    "styresider": [
+      "https://opengov.360online.com/Meetings/uia/Boards/Details/213440"
+    ],
+    "status": "complete",
+    "dokumenter": [
+      {
+        "label": "Komplett innkalling Fakultetsstyret for Fakultet for samfunnsvitenskap 22.09.2026",
+        "url": "https://opengov.360online.com/Meetings/uia/File/Details/1222060.pdf",
+        "localPath": "/markedsstatus/landsam/UiA_FSV_Komplett_innkalling_22.09.2026.pdf",
+        "dato": "2026-09-22",
+        "storrelseMB": 9.35
+      }
+    ],
+    "punkter": [
+      "Bachelor i samfunnsplanlegging og kommunikasjon og bachelor/årsstudium i Global Development Studies (tilsvarer NMBUs Globale utviklingsstudier-fagområde) hører begge til Institutt for global utvikling og samfunnsplanlegging (IGUS) ved Fakultet for samfunnsvitenskap (FSV), UiA.",
+      "Fakultetet fikk 880 nye studenter høsten 2026, opp 117 fra 763 i 2025 – men økningen skyldes nesten utelukkende det nye årsstudiet i Ansvarlig digitalisering (638 søkere, 155 startende studenter) og ikke IGUS' programmer spesifikt (sak 25/26 «Søker- og opptakstall og planlagt studentopptak», styremøte 22.09.2026).",
+      "UiA rekrutterte 28 internasjonale studenter gjennom det internasjonale opptaket til FSV høsten 2026, hvorav 19 til bachelorprogrammet i Global Development Studies – den klart største andelen av fakultetets internasjonale opptak (samme kilde).",
+      "IGUS' to masterprogrammer hadde få startende studenter i 2025, men fylte studieplassene i 2026-opptaket, ifølge fakultetsstyrets sakspapirer – en positiv utvikling sammenlignet med enkelte andre masterprogram ved fakultetet (f.eks. master i statsvitenskap og ledelse, der antall startende studenter falt fra 35 i 2025 til 19 i 2026) (samme kilde).",
+      "Fakultetet planlegger ikke store endringer i studieopptaket for 2027/2028 på bakgrunn av årets søker- og opptakstall; det gjøres eventuelt mindre justeringer i samråd med instituttlederne, og evalueringen av det nye årsstudiet i Ansvarlig digitalisering vil styre eventuell økning i opptaket der (samme kilde).",
+      "FSV fikk en økning i budsjettrammen på 750 000 kroner i revidert budsjett 2026 (til totalt 166 201 339 kroner), etter at fakultetet oppdaget manglende basisfinansiering for fem stipendiatstillinger (sak 27/26 «Revidert budsjett 2026», samme møte).",
+      "Regnskapsrapporten for 1. tertial 2026 viser et budsjettert mindreforbruk på rundt 900 000 kroner i fakultetets frie ramme, og en beholdning som vokser fra 13,3 til estimert 15 millioner kroner ved utgangen av 1. tertial (sak 7/26 «Regnskapsrapport T1 2026», samme møte)."
+    ],
+    "oppsummering": "UiAs Fakultet for samfunnsvitenskap melder om vekst i studenttall totalt sett, men veksten er drevet av det nye årsstudiet i Ansvarlig digitalisering, ikke av IGUS-programmene samfunnsplanlegging og kommunikasjon eller Global Development Studies. Sistnevnte er likevel fakultetets klart største mottaker av internasjonale studenter (19 av 28). IGUS' masterprogrammer gikk fra svak til full oppfylling av studieplassene i 2026. Økonomien er stabil med en liten budsjettøkning og mindreforbruk i 1. tertial.",
+    "relevanteProgram": [
+      "uia_samfunnsplanlegging",
+      "uia_globale_utviklingsstudier"
+    ]
+  },
+  {
+    "id": "inn",
+    "name": "INN",
+    "fullName": "Universitetet i Innlandet",
+    "enhet": "Universitetsstyret / Handelshøgskolen Innlandet (Institutt for rettsvitenskap, filosofi og internasjonale studier, IRFI)",
+    "styresider": [
+      "https://www.inn.no/om-universitetet/organisering/universitetsstyret/saksdokumenter-styret-inn/"
+    ],
+    "status": "complete",
+    "dokumenter": [
+      {
+        "label": "Innkalling og agenda universitetsstyret 16.12.2025 (inkl. sak 8/25 Ressursfordeling HHS)",
+        "url": "https://www.inn.no/om-universitetet/organisering/universitetsstyret/saksdokumenter-styret-inn/innkalling-og-agenda-universitetsstyret-16.12.2025-oppdatert-11.des-sak-8_25-vedlegg-tabell-4-s.15.pdf",
+        "localPath": "/markedsstatus/landsam/INN_Universitetsstyret_16.12.2025.pdf",
+        "dato": "2025-12-16",
+        "storrelseMB": 10.33
+      },
+      {
+        "label": "Trekker studier fra vedtatt studieportefølje (nettsak om nullopptak, inkl. eiendomsmegling)",
+        "url": "https://www.inn.no/om-universitetet/aktuelt-fra-inn/trekker-studier-fra-studieportefolje/",
+        "localPath": null,
+        "dato": "2024-06-07 (oppdatert 2024-11-28)",
+        "storrelseMB": null
+      }
+    ],
+    "punkter": [
+      "Bachelor i eiendomsmegling ved INN (Åmot/Rena) er trukket fra den vedtatte studieporteføljen og har ikke tatt opp nye studenter gjennom Samordna opptak siden høsten 2024, sammen med bachelor i bærekraftsøkonomi og bachelor i bærekraftig reiselivs- og arrangementsledelse m.fl. Programmet har dermed vært i nullopptak i minst tre opptaksrunder (2024, 2025, 2026) uten at det er dokumentert en formell reetablering i de gjennomgåtte styrepapirene.",
+      "Internasjonale studier (bachelor, Lillehammer) hører til Institutt for rettsvitenskap, filosofi og internasjonale studier (IRFI) ved Handelshøgskolen Innlandet (HHS). I ressursfordelingsrapporten til universitetsstyret (sak 8/25, styremøte 16.12.2025) hadde IRFI en økning i antall heltidsstudenter fra 2018 til 2025, mens studiepoengproduksjonen var tilnærmet uendret i samme periode – det vil si svakere gjennomføring per student.",
+      "IRFIs eget grunnbudsjett gikk ned fra 30,9 millioner kroner i 2022 til 24,7 millioner i 2025 (tabell i sak 8/25), en nedgang på om lag 20 prosent over tre år, mens instituttets samlede finansiering (inkl. andre finansieringstiltak) falt mer moderat fra 30,9 til 28,7 millioner.",
+      "Rapporten peker generelt på at studieporteføljen ved HHS' to campuser (Lillehammer og Rena) har endret seg mye i perioden 2018–2025, med nullopptak på flere studier på begge studiesteder og innføring av nye studietilbud, samt vekst i nett- og deltidsbaserte studier på Rena – en kontekst som også omfatter nullopptaket på eiendomsmegling.",
+      "Vi fant ingen direkte omtale av bachelor i internasjonale studier spesifikt (søkertall, frafall eller studieportefølje-vedtak) i de gjennomgåtte sakspapirene ut over de instituttvise ressurstallene for IRFI som helhet."
+    ],
+    "oppsummering": "INNs bachelor i eiendomsmegling har vært i nullopptak siden høsten 2024 og er trukket fra den vedtatte studieporteføljen, uten tegn til reetablering i styrepapirene fram til desember 2025. Internasjonale studier ligger under IRFI ved Handelshøgskolen Innlandet, som har hatt økende studenttall men flat studiepoengproduksjon og et fallende grunnbudsjett (fra 30,9 til 24,7 millioner kroner 2022–2025).",
+    "relevanteProgram": [
+      "inn_eiendomsmegling",
+      "inn_internasjonale_studier"
+    ]
+  },
+  {
+    "id": "oslomet",
+    "name": "OsloMet",
+    "fullName": "OsloMet – storbyuniversitetet",
+    "enhet": "Fakultet for lærerutdanning og internasjonale studier (LUI) – NB: utviklingsstudier ligger under LUI, ikke Fakultet for samfunnsvitenskap (SAM) som i en tidligere versjon av denne oversikten.",
+    "styresider": [
+      "https://opengov.360online.com/Meetings/oslomet/Boards/Details/304094",
+      "https://www.oslomet.no/om/lui"
+    ],
+    "status": "partial",
+    "dokumenter": [
+      {
+        "label": "Protokoll Fakultetsstyret - LUI 10.09.2026",
+        "url": "https://opengov.360online.com/Meetings/oslomet/File/Details/1439189.pdf",
+        "localPath": "/markedsstatus/landsam/OsloMet_LUI_Protokoll_10.09.2026.pdf",
+        "dato": "2026-09-10",
+        "storrelseMB": 0.1
+      }
+    ],
+    "punkter": [
+      "Bachelor i utviklingsstudier ved OsloMet hører til Fakultet for lærerutdanning og internasjonale studier (LUI), ikke Fakultet for samfunnsvitenskap (SAM) som man kunne tro ut fra navnet – dette er korrigert i denne oversikten.",
+      "LUI-fakultetsstyrets møte 10.09.2026 behandlet sak 24/26 «Langtidsbudsjett LUI 2027-2031» (diskusjonssak, uten konkrete tall i den offentlige protokollen) og fikk en orientering i sak 27/26 om foreløpige søkertall og møtt-tall for studieåret 2026/2027 ved LUI – men selve tallene og eventuelle merknader om utviklingsstudier spesifikt er ikke gjengitt i den offentlig tilgjengelige protokollen.",
+      "OsloMets styrepapirer på fakultetsnivå publiseres normalt bare som korte protokoller (uten vedlagte saksframlegg/talldokumentasjon) i den offentlige møteportalen; vi fant derfor ikke tallfestede søkertall, frafallstall eller økonomital for utviklingsstudier i de dokumentene som var tilgjengelige uten pålogging.",
+      "På OsloMets egen programside oppgis det at bachelor i utviklingsstudier skårer høyt blant utviklingsstudier-programmene i Norge på NOKUTs Studiebarometer, med gode resultater på arbeidslivsrelevans, engasjerte lærere og generell tilfredshet – dette er hentet fra institusjonens egen markedsføringsside, ikke fra styrepapirer, og bør leses med det forbeholdet."
+    ],
+    "oppsummering": "Utviklingsstudier ved OsloMet hører til LUI-fakultetet. LUI-fakultetsstyrets offentlige protokoller er for tynne til å gi konkrete søkertall, økonomital eller porteføljevedtak for programmet; møtet i september 2026 hadde riktignok søkertall og langtidsbudsjett på sakslisten, men innholdet er ikke offentliggjort utover sakstitlene. Status settes til «partial».",
+    "relevanteProgram": [
+      "oslomet_utviklingsstudier"
+    ]
+  },
+  {
+    "id": "uio",
+    "name": "UiO",
+    "fullName": "Universitetet i Oslo",
+    "enhet": "Det samfunnsvitenskapelige fakultet (SV) – Institutt for sosiologi og samfunnsgeografi (ISS, Utviklingsstudier og bærekraft), Institutt for statsvitenskap (Peace and Conflict Studies), Senter for utvikling og miljø/SUM (DECC), Økonomisk institutt (Economics). Institutt for helse og samfunn (HELSAM/folkehelse) ligger under Det medisinske fakultet, ikke SV.",
+    "styresider": [
+      "https://www.sv.uio.no/om/organisasjon/styret/moter/",
+      "https://www.uio.no/om/organisasjon/styret/"
+    ],
+    "status": "partial",
+    "dokumenter": [
+      {
+        "label": "O-sak 5: Søkertall 2026/2027, SV-fakultetsstyret 19.06.2026",
+        "url": "https://www.sv.uio.no/om/organisasjon/styret/moter/2026/2026-06-19/o-sak-5-sokertall-2026.pdf",
+        "localPath": "/markedsstatus/landsam/UiO_SV_Sokertall_2026.pdf",
+        "dato": "2026-05-29",
+        "storrelseMB": 0.71
+      },
+      {
+        "label": "O-sak 3, vedlegg: Årsplan ISS 2026-2028, SV-fakultetsstyret 19.03.2026",
+        "url": "https://www.sv.uio.no/om/organisasjon/styret/moter/2026/2026-03-19/o-sak-3---vedlegg-arsplan-iss-2026_2028.pdf",
+        "localPath": "/markedsstatus/landsam/UiO_ISS_Arsplan_2026-2028.pdf",
+        "dato": "2026-03-19",
+        "storrelseMB": 0.2
+      }
+    ],
+    "punkter": [
+      "Det samfunnsvitenskapelige fakultet (SV) hadde den største søkerandelen ved UiO i 2026: 20 534 søkere totalt og 5501 førstevalgssøkere, opp 10,8 prosent fra 4964 i 2025. Fakultetet fikk 4,2 søkere per studieplass, opp fra 3,8 året før (O-sak 5, SV-fakultetsstyret 19.06.2026).",
+      "Bachelor i utviklingsstudier og bærekraft ligger under Institutt for sosiologi og samfunnsgeografi (ISS), som ifølge dekanens notat er blant fakultetets «øvrige bachelorprogrammer» der de fleste – med unntak av statsvitenskap og sosiologi – hadde «varierende tilbakegang» i søkertall i 2026 sammenlignet med 2025. Konkrete tall for utviklingsstudier og bærekraft spesifikt lå i vedlagte Tableau-tabeller som var bildebasert og ikke tekstuttrekkbare.",
+      "ISS' årsplan for 2026–2028 varsler en strammere ressurssituasjon for undervisning framover, og instituttet skal innføre rammestyring av undervisningsressurser på emnenivå. Instituttets rekrutteringstiltak i planperioden er likevel primært rettet mot sosiologi (BA/MA) og samfunnsgeografi, ikke spesifikt mot utviklingsstudier og bærekraft (Årsplan ISS 2026-2028, vedlegg til O-sak 3, SV-fakultetsstyret 19.03.2026).",
+      "Vi fant ingen SV-fakultetsstyresaker med spesifikke søkertall, økonomital eller porteføljevedtak for Internasjonale studier (bachelor), Peace and Conflict Studies (master, Institutt for statsvitenskap), Development, Environment and Cultural Change (master, SUM) eller Economics (master, Økonomisk institutt) i de møtene som ble gjennomgått (mars og juni 2026).",
+      "Folkehelsearbeid og bærekraftige helsetjenester (master) ligger administrativt under Det medisinske fakultet ved UiO, ikke SV-fakultetet, og er derfor ikke dekket av SV-fakultetsstyrets sakspapirer; egne styrepapirer for Det medisinske fakultet er ikke gjennomgått i denne runden."
+    ],
+    "oppsummering": "SV-fakultetet ved UiO har sterk samlet søkervekst i 2026 (+10,8 prosent førstevalgssøkere), men de fleste bachelorprogrammene utenom statsvitenskap og sosiologi hadde tilbakegang – trolig inkludert utviklingsstudier og bærekraft, selv om tallene ikke lot seg lese ut av de bildebaserte vedleggstabellene. ISS varsler strammere undervisningsressurser framover. For UiOs øvrige LANDSAM-relevante program (internasjonale studier, PECOS, DECC, economics, folkehelse) ble det ikke funnet spesifikke styresaker innenfor tidsrammen for denne kartleggingen; status settes til «partial».",
+    "relevanteProgram": [
+      "uio_utvikling_baerekraft",
+      "uio_internasjonale_studier",
+      "uio_folkehelsearbeid",
+      "uio_decc",
+      "uio_pecos",
+      "uio_economics"
+    ]
+  },
+  {
+    "id": "uib",
+    "name": "UiB",
+    "fullName": "Universitetet i Bergen",
+    "enhet": "Det samfunnsvitenskapelige fakultet",
+    "styresider": [
+      "https://ekstern.filer.uib.no/svf/",
+      "https://www.uib.no/foransatte/126532/m%C3%B8ter-i-styret"
+    ],
+    "status": "complete",
+    "dokumenter": [
+      {
+        "label": "Sak 71/25: Opptaksrammer for 2026/2027, Fakultetsstyret ved SV-fakultetet",
+        "url": "https://ekstern.filer.uib.no/svf/2025/Fakultetsstyret%202025/Oktober/71-25%20Opptaksrammer%20for%202026_2027.pdf",
+        "localPath": "/markedsstatus/landsam/UiB_SV_Opptaksrammer_2026-2027.pdf",
+        "dato": "2025-10-21",
+        "storrelseMB": 0.17
+      },
+      {
+        "label": "Sak S 103/25: Endringer i UiBs studieportefølje 2026 og opptaksrammer 2026-27, Universitetsstyret",
+        "url": "https://ekstern.filer.uib.no/ledelse/universitetsstyret/2025/2025-11-27/S_103-25Endringer-i-UiBs-studieportef%C3%B8lje2026-og-opptaksrammer2026-27.pdf",
+        "localPath": "/markedsstatus/landsam/UiB_Universitetsstyret_Studieportefolje2026_S103-25.pdf",
+        "dato": "2025-11-27",
+        "storrelseMB": 0.28
+      }
+    ],
+    "punkter": [
+      "Master i samfunnsøkonomi ved UiB beholder 27 studieplasser i 2026/2027, samme nivå som 2025/2026. Bachelor i samfunnsøkonomi beholder 101 plasser, det integrerte masterprogrammet i samfunnsøkonomi (siviløkonom-løpet) 22 plasser, og årsstudiet 23 plasser – ingen endringer i noen av disse programmene (sak 71/25, Fakultetsstyret ved SV-fakultetet 21.10.2025, stadfestet i universitetsstyresak S 103/25 27.11.2025).",
+      "SV-fakultetets samlede opptaksramme er uendret fra 2025/26 til 2026/27: 1034 studieplasser på grunnstudier (årsstudium, bachelor, integrert master) og 285 på toårig master. Ingen institutter ved fakultetet meldte inn ønske om endrede opptaksrammer for 2026/2027.",
+      "Institutt for geografi omorganiserer sine masterprogram fra høsten 2026: tre tidligere masterprogram (MASV-PHYG, studieretninger i MASV-GEOG, MASV-MEHA) slås sammen til to nye program – Master i natur- og miljøgeografi (13 plasser) og Master i samfunnsgeografi og berekraftig utvikling (17 plasser) – samlet uendret 30 plasser, men med ny fagprofil og internasjonal utlysning for samfunnsgeografi-sporet.",
+      "På institusjonsnivå fylte UiB sine opptaksrammer for både grunnstudier og toårig master i 2025 for første gang siden 2021 over 100 prosent på masternivå (1290 nye masterstudenter, opp 184 fra året før), og fakultetet trekker fram styrket rekrutteringsarbeid i sosiale medier og bred institusjonell markedsføring som forklaring (S 103/25).",
+      "Universitetsstyret vedtok samtidig å opprette to nye studieprogram (integrert master i kvanteteknologi og erfaringsbasert master i undervisning om kontroversielle tema) og legge ned ett program (erfaringsbasert master i undervisning med fordypning i matematikk) fra høsten 2026 – ingen av disse berører samfunnsøkonomi eller andre LANDSAM-relevante fagområder direkte."
+    ],
+    "oppsummering": "UiBs master i samfunnsøkonomi er stabil: uendrede opptaksrammer (27 plasser) for 2026/2027 på alle nivåer (årsstudium, bachelor, integrert master, toårig master), i en periode der UiB for øvrig melder om styrket rekruttering og rekordfylling av masterplassene på institusjonsnivå. Institutt for geografi gjennomfører en programomlegging, men det berører ikke samfunnsøkonomi-programmene.",
+    "relevanteProgram": [
+      "uib_samfunnsokonomi"
+    ]
+  },
+  {
+    "id": "usn",
+    "name": "USN",
+    "fullName": "Universitetet i Sørøst-Norge",
+    "enhet": "Fakultet for teknologi, naturvitenskap og maritime fag (TNM) – Institutt for natur, helse og miljø, Bø (eiendomsmegling)",
+    "styresider": [
+      "https://opengov.360online.com/Meetings/usn/Boards/Details/341392",
+      "https://www.usn.no/om-usn/organisering/fakultet/fakultet-for-teknologi-naturvitskap-og-maritime-fag/styret/"
+    ],
+    "status": "partial",
+    "dokumenter": [
+      {
+        "label": "Møteinnkalling Fakultetsstyret TNM 28.05.2026 (inkl. sak 15/26 Studieportefølje 2027-2028)",
+        "url": "https://opengov.360online.com/Meetings/usn/File/Details/1852195.pdf",
+        "localPath": "/markedsstatus/landsam/USN_TNM_Moteinnkalling_28.05.2026.pdf",
+        "dato": "2026-05-28",
+        "storrelseMB": 0.24
+      }
+    ],
+    "punkter": [
+      "Bachelor i eiendomsmegling ved USN (Bø i Midt-Telemark) hører til Fakultet for teknologi, naturvitenskap og maritime fag (TNM) – en annen fakultetstilhørighet enn USN Handelshøyskolen, som er dekket i det eksisterende markedsstatus-arbeidet for handelshøyskolene.",
+      "TNM-fakultetsstyret behandlet 28.05.2026 sak 15/26 om foreløpig innmelding av studieporteføljen for 2027/2028, inkludert foreløpig innmelding av «0-opptak» (nullopptak) for enkelte studier. De konkrete programnavnene i 0-opptak-listen lå i vedlegg som ikke var tekstlig gjengitt i den kombinerte møteinnkallingen, så vi kan ikke bekrefte om eiendomsmegling er blant dem.",
+      "TNM venter en realnedgang i budsjettrammen for 2027: en generell rammereduksjon og sentralisering av OLA-ordningen (kompensasjon for undervisning/veiledning) gir isolert sett en reduksjon på 3,4 millioner kroner i fakultetets budsjettramme, i en situasjon der USNs samlede rammebevilgning for 2027 øker nominelt med 3,1 prosent, men går ned realt med -0,15 prosent (sak 17/26, samme møte).",
+      "Fakultetsstyret forutsatte i vedtaket at oppstart av nye studietilbud ved campus Drammen finansieres fullt ut med friske midler, som et signal om stram økonomisk prioritering av nye satsinger opp mot eksisterende portefølje.",
+      "Vi fant ingen direkte omtale av eiendomsmegling-programmet spesifikt (søkertall, studiepoengproduksjon eller portefølje-status) i den delen av sakspapirene som lot seg lese ut; status settes derfor til «partial»."
+    ],
+    "oppsummering": "USNs bachelor i eiendomsmegling ligger under TNM-fakultetet, som står overfor realnedgang i budsjettrammen for 2027 og som i mai 2026 meldte inn en foreløpig studieportefølje for 2027/2028 med enkelte programmer i «0-opptak». Konkret informasjon om eiendomsmegling spesifikt – søkertall, studiepoengproduksjon eller om programmet er blant 0-opptaks-kandidatene – lot seg ikke lese ut av de tilgjengelige sakspapirene, som viste til vedlegg utenfor den nedlastede filen.",
+    "relevanteProgram": [
+      "usn_eiendomsmegling"
+    ]
+  },
+  {
+    "id": "volda",
+    "name": "Volda",
+    "fullName": "Høgskulen i Volda",
+    "enhet": "Institusjonsnivå (egen høgskole) – Avdeling for samfunnsfag og historie (Planlegging, administrasjon og leiing)",
+    "styresider": [
+      "https://www.hivolda.no/hogskulen/om-hogskulen/leiing-og-organisering/styret"
+    ],
+    "status": "partial",
+    "dokumenter": [
+      {
+        "label": "Khrono: «Skal vurdera når studieprogram skal leggast ned»",
+        "url": "https://www.khrono.no/skal-vurdera-nar-studieprogram-skal-leggast-ned/1083243",
+        "localPath": null,
+        "dato": "2026",
+        "storrelseMB": null
+      },
+      {
+        "label": "Khrono: «Endå ein høgskule skal vurdera endring i studietilbodet sitt»",
+        "url": "https://www.khrono.no/enda-ein-hogskule-skal-vurdera-endring-i-studietilbodet-sitt/1066880",
+        "localPath": null,
+        "dato": "2026",
+        "storrelseMB": null
+      }
+    ],
+    "punkter": [
+      "Vi fant ikke Høgskulen i Volda sine primære styrepapirer (høgskulestyret) direkte tilgjengelige – verken via opengov.360online.com/Meetings/volda (ga gjentatte 500-feil) eller via høgskulens egne nettsider. Punktene under er derfor basert på Khronos omtale av høgskulestyrets prosess og siterte saksframlegg/HVO-tal, ikke på selve sakspapirene.",
+      "Høgskulestyret skulle 10. september 2026 behandle retningslinjer for studieporteføljen, med forslag om at bachelorprogram med færre enn 10 studentar og masterprogram med færre enn 5 studentar i tredje driftsår – etter markedsføringstiltak – skal leggast ned. Planlegging, administrasjon og leiing (bachelor) og Regional planlegging og utvikling/Samfunnsplanlegging og leiing (master) er ikke eksplisitt nevnt som kandidater i kildene vi fant, men rammene kan i prinsippet ramme dem dersom studenttallet er lavt.",
+      "HVO har i dag 164 studieprogram, mot 54 ved sammenlignbare institusjoner, med et snitt på 26,6 studenter per program (mot 45–70 ved sammenligningsinstitusjonene). Bare rundt 15 program har over 40 studenter, mens over 60 program har maksimalt 5 studenter.",
+      "Bakgrunnen er en mer krevende økonomisk situasjon for HVO framover, blant annet på grunn av fallende studiepoengproduksjon, som gir reduserte bevilgninger fra Kunnskapsdepartementet. KD skal i mai 2026 ha uttalt i etatsstyringsmøte at de forventer at HVO gjør strategiske prioriteringer i studieporteføljen, særlig for program med svak rekruttering eller gjennomføring.",
+      "Endelig vedtak om studieporteføljen for 2027/2028 er planlagt i høgskulestyret i desember 2026 – etter forslag skal foreligge i august 2026. Vi har ikke funnet ut om Planlegging, administrasjon og leiing er blant programmene som vurderes strøket."
+    ],
+    "oppsummering": "Høgskulen i Volda gjennomfører en bred gjennomgang av hele studieporteføljen (164 program, mange svært små) på grunn av økonomisk press, med nye lukkingskriterier til behandling i høgskulestyret 10. september 2026 og endelig porteføljevedtak i desember 2026. Vi fant ikke direkte bekreftelse på om bachelor i planlegging, administrasjon og leiing – HVOs LANDSAM-konkurrerende program – er blant kandidatene for nedlegging, og primære styrepapirer var ikke tilgjengelige; kildene her er Khronos dekning av prosessen. Status settes til «partial».",
+    "relevanteProgram": [
+      "hivolda_planlegging"
+    ]
+  },
+  {
+    "id": "bi",
+    "name": "BI",
+    "fullName": "Handelshøyskolen BI",
+    "enhet": "Privat institusjon",
+    "styresider": [],
+    "status": "none",
+    "dokumenter": [],
+    "punkter": [
+      "BI er en privat stiftelse og har ikke offentlig styre eller offentlige styrepapirer/møteportal på linje med de statlige institusjonene. BI omfattes derfor ikke av offentleglova, og det finnes ingen tilgjengelige styresaker å hente markedsstatus fra."
+    ],
+    "oppsummering": "BI er privat og har ingen offentlige styrepapirer. Tatt med i programkartet (bachelor i eiendomsmegling, jus og økonomi), men kan ikke dekkes i denne markedsstatusen.",
+    "relevanteProgram": [
+      "bi_eiendomsmegling"
+    ]
+  }
+];

@@ -1,0 +1,48 @@
+{
+  "entryId": "uib_biologi2",
+  "programnavn": "Biologi (master 2 år)",
+  "institusjon": "Universitetet i Bergen",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www4.uib.no/studier/program/biologi-master",
+    "https://www4.uib.no/studier/program/biologi-master/plan"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 70,
+  "obligatoriske": [
+    {
+      "emnekode": "BIO300A",
+      "emnenavn": "Akademisk skriving",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO300A-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO300B",
+      "emnenavn": "Biostatistikk",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO300B-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "Masteroppgave",
+      "emnenavn": "Masteroppgave",
+      "studiepoeng": 60,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Ingen egen emnekode oppgitt på UiBs studieplanside. Fordelt med 30 sp i 3. semester (høst, 2. år) og 30 sp i 4. semester (vår, 2. år), dvs. hele 2. studieår."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er UiBs programside «Biologi (master)» med studieplanseksjonen «Studiets oppbygging», hentet 22.09.2026 (nettbasert, ikke en datert PDF; studieplanAar er derfor satt til inneværende opptaksår, høst 2026). Programmet har IKKE formelle studieretninger med egne obligatoriske emnepakker: ut over BIO300A, BIO300B og masteroppgaven består hele 1. studieår (40 sp) av «valemne» som studenten velger fritt blant masternivåemner ved Institutt for biovitenskap, se full emneoversikt via instituttets nettsider. Programsiden nevner syv uformelle spesialiseringstema som styrer valg av emner og tema for masteroppgave, men ingen av dem har et fastsatt obligatorisk pensum: terrestrisk økologi, marinbiologi, fiskeribiologi og forvaltning, mikrobiologi, miljøtoksikologi, havbruk og utviklingsbiologi, og fysiologi og ernæring. «spesialiseringer» er derfor tom. obligatoriskeStudiepoeng (70 = 5 + 5 + 60) dekker dermed hele det obligatoriske kravet i programmet, siden ingen retningsspesifikke emner finnes."
+}

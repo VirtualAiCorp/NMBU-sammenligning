@@ -1,0 +1,179 @@
+{
+  "entryId": "nmbu_okologi",
+  "programnavn": "Økologi og naturforvaltning (bachelor)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/bachelor/okologi-og-naturforvaltning",
+    "https://static02.nmbu.no/mina/studier/B-OEN.php"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 130,
+  "obligatoriske": [
+    {
+      "emnekode": "NATF100",
+      "emnenavn": "Innføringskurs i naturforvaltning",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "helår",
+      "dbhEmnekoder": [],
+      "merknad": "10 sp, undervises både i augustblokk/høstparallell og i vårparallell (5 sp hvert semester, iht. rutenettets kolonnebredder)."
+    },
+    {
+      "emnekode": "ZOOL100",
+      "emnenavn": "Generell zoologi",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MATH-INF100",
+      "emnenavn": "Beregningsbasert matematikk i praksis",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "PHI100",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen gir valget mellom PHI100 og seminarversjonen PHI101 (samme forelesninger, ulikt seminar-/vurderingsopplegg)."
+    },
+    {
+      "emnekode": "NATF200",
+      "emnenavn": "Vern og forvaltning av norsk natur",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "januarblokk",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BOT100",
+      "emnenavn": "Plantediversitet",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ZOOL220",
+      "emnenavn": "Insekter og edderkoppdyr",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM100",
+      "emnenavn": "Generell kjemi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKOG102",
+      "emnenavn": "Innføring i skogforvaltning",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanens fotnote sier at SKOG100 (Skogforvaltning) kan tas i stedet for SKOG102; NMBUs emnesøk oppgir SKOG100 til 10 sp mot SKOG102s 5 sp, så de to alternativene er ikke nødvendigvis like store i praksis – uoverensstemmelsen er ikke videre forklart i kilden."
+    },
+    {
+      "emnekode": "STAT100",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "LAD102",
+      "emnenavn": "GIS - praktisk introduksjon",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ZOOL210",
+      "emnenavn": "Virveldyr",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ECOL200",
+      "emnenavn": "Generell økologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ECN170",
+      "emnenavn": "Miljø- og ressursøkonomi",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BOT270",
+      "emnenavn": "Kartlegging av natur",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "JUS201",
+      "emnenavn": "Offentlig saksbehandling og forvaltningsrett",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MINA250",
+      "emnenavn": "Tverrfaglig konsekvensanalyse",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "10 sp, undervises i januarblokk og vårparallell (5 sp hvert, iht. rutenettets kolonnebredder)."
+    },
+    {
+      "emnekode": "ECOL201",
+      "emnenavn": "Økologisk fordypningsoppgave",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er NMBUs fargekodede rutenett-studieplan for kull 2026 (static02.nmbu.no/mina/studier/B-OEN.php, programkode B-ØN), linket fra programsiden nmbu.no/studier/bachelor/okologi-og-naturforvaltning. Studiepoeng er lest av fra cellenes colspan (kolonnebredde 5 sp) i rutenettet, kryssjekket mot nmbu.no/emne/<kode>. De 17 navngitte obligatoriske emnene (NATF100 og MINA250 telt én gang hver, selv om de fordeler seg over to rader/semestre i rutenettet) summerer til 130 sp av totalt 180 sp. De resterende 50 sp er dels valgfrie eksempelplaner/fordypningspakker uten faste obligatoriske emnelister (Fiske- og viltforvaltning, Ferskvannsforvaltning, Forurensning, Skogforvaltning, Zoologisk fordypning, Botanisk fordypning, Miljøøkonomi, Fornybar energi, Naturbasert reiseliv, Biologi, utenlandsopphold høst/vår, ett semester på Svalbard), dels to obligatoriske valg utenfor rutenettet: «Velg minst ett av følgende emner» (GEO100 Geologi 10 sp eller JORD100 Jordlære 5 sp, begge høstparallell) og «Pluss minst ett av følgende emner» (NATF230 Viltbiologi og forvaltning 15 sp høstparallell, NATF240 Fiskeøkologi og forvaltning 10 sp vårparallell, eller VANN210 Ferskvannsøkologi 10 sp høstparallell). Disse to valgene har alternativer med ulikt studiepoengomfang og er derfor holdt utenfor obligatoriske-listen og obligatoriskeStudiepoeng, i tråd med regelen om at obligatoriske valg mellom alternativer føres i merknad. Feltkurs-komponentene nevnt i juniblokk (i ZOOL100/ZOOL220/BOT100 i år 1, og i ZOOL210/BOT270 i år 2) er del av de respektive emnene, ikke egne emnekoder, og er derfor ikke ført opp separat. Emnenavn er hentet fra NMBUs emnesøk (nmbu.no/emne/<kode>)."
+}

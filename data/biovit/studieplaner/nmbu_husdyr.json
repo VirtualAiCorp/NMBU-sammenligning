@@ -1,0 +1,171 @@
+{
+  "entryId": "nmbu_husdyr",
+  "programnavn": "Husdyrvitenskap (bachelor)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/bachelor/husdyrvitenskap",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-06/Bachelor%20Husdyrvitenskap%20-%202026.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 110,
+  "obligatoriske": [
+    {
+      "emnekode": "HFX131",
+      "emnenavn": "Introduksjon til norsk husdyr- og akvakulturproduksjon",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "HFX131-1"
+      ],
+      "merknad": "Augustblokk før høstsemesteret."
+    },
+    {
+      "emnekode": "HFX132",
+      "emnenavn": "Husdyrbiologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "HFX132-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "STIN100",
+      "emnenavn": "Biologisk dataanalyse",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "STIN100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HFX133",
+      "emnenavn": "Utfordringer for framtidas matproduksjon",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "januarblokk",
+      "dbhEmnekoder": [
+        "HFX133-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BUS100",
+      "emnenavn": "Grunnleggende bedriftsøkonomi",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BUS100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO120",
+      "emnenavn": "Genetikk, introduksjonskurs",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIO120-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM100",
+      "emnenavn": "Generell kjemi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "KJM100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HET201",
+      "emnenavn": "Husdyretologi",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "HET201-1"
+      ],
+      "merknad": "Augustblokk før høstsemesteret."
+    },
+    {
+      "emnekode": "HFX201",
+      "emnenavn": "Fysiologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "HFX201-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "STAT100",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "STAT100-1"
+      ],
+      "merknad": "Studieplanen oppgir semester «Høst/Vår»; plassert i år 2 høst i studieplanens eget rutenett."
+    },
+    {
+      "emnekode": "KJB100",
+      "emnenavn": "Introduksjon til biokjemi",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "KJB100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HFE200",
+      "emnenavn": "Generell ernæring",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "HFE200-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HFA200",
+      "emnenavn": "Generell husdyravl",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "HFA200-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "SDG200",
+      "emnenavn": "Bærekraftige matproduksjonssystemer",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "SDG200-1"
+      ],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er NMBUs studieplan-PDF for Bachelor i husdyrvitenskap (B-HV), kull 2026, lenket fra «Studieplaner for studenter ved BIOVIT» (nmbu.no/fakulteter/fakultet-biovitenskap/vare-studenter-biovit). Programmet er 180 sp, hvorav 125 sp er obligatoriske (resten, 55 sp, er valgfrie emner inkl. bacheloroppgave i 3. studieår, som er valgfritt tilrettelagt for utveksling eller internship). Av de 125 obligatoriske sp er 110 sp de 14 entydig navngitte emnene i listen over, uten valgalternativ. De resterende 15 obligatoriske sp er to valg mellom alternativer, og er derfor IKKE ført i emnelisten, i tråd med oppgavens regel: (1) PHI100 Ex.phil / PHI101 Ex.phil seminarversjon (10 sp, høst, år 1), og (2) «velg også et av disse emnene»: BIO200 Molekylærgenetikk i eukaryoter / ECN260 Landbrukspolitikk I / HET203 Dyrevelferd (5 sp, januarblokk, år 2). 110 + 10 + 5 = 125 sp, i tråd med studieplanens egen sum. Studieplanen definerer ingen egne obligatoriske studieretninger/spesialiseringer med separate obligatoriske emnelister – i stedet finnes fire pooler av «valgfrie emner» (generelle, ernæring/fôrteknologi, etologi/husdyrmiljø, husdyravl/genetikk) som studenten fritt kan kombinere for å bygge en fordypning, og disse regnes ikke som obligatoriske. Ingen obligatorisk bacheloroppgave er ført i emnelisten, siden den (jf. studieplanens 55 valgfrie sp) ikke er skilt ut som et eget, navngitt obligatorisk emne i kildematerialet."
+}

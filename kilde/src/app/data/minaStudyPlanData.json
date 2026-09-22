@@ -1,0 +1,3043 @@
+{
+ "generert": "2026-09-23",
+ "groups": [
+  {
+   "id": "skogfag",
+   "label": "Skogfag",
+   "level": "bachelor",
+   "programs": [
+    {
+     "entryId": "nmbu_skogfag",
+     "shortName": "NMBU",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "isNmbu": true,
+     "programnavn": "Skogfag (bachelor)",
+     "studieplanAar": "2026/2027",
+     "kilder": [
+      "https://www.nmbu.no/studier/bachelor/skogfag",
+      "https://static02.nmbu.no/mina/studier/B-SF.php"
+     ],
+     "totaltStudiepoeng": 180,
+     "obligatoriskeStudiepoeng": 145,
+     "merknad": "Kilde er NMBUs fargekodede rutenett-studieplan for kull 2026 (static02.nmbu.no/mina/studier/B-SF.php), linket fra programsiden nmbu.no/studier/bachelor/skogfag. Rutenettets kolonner er 5 sp brede («5 stp/10 stp/.../30 stp»), og hvert emnes reelle studiepoeng er lest ut fra cellens colspan-verdi (colspan × 5 sp), kryssjekket mot studiepoengtallet på nmbu.no/emne/<kode> (Augustblokk/Januarblokk/Juniblokk-cellene bruker alltid full radbredde av rene formateringshensyn og er derfor IKKE brukt til å lese av studiepoeng med mindre kilden selv oppgir tallet, f.eks. «SKOG250 - 10 stp» og «TRE200 - 5 stp»). De 19 navngitte obligatoriske emnene summerer til 145 sp av totalt 180 sp. De resterende 35 sp er valgfrie: studieplanen lister syv ikke-obligatoriske eksempelplaner/anbefalte emnepakker (Økonomi- og forvaltningsfag, Datavitenskap og GIS, Skogbiologi, Skogteknologi, Kartlegging og planlegging, Skogskjøtsel, Ett semester i utlandet) uten faste obligatoriske emnelister, og krever i tillegg at studenten velger minst ett av MINA250 Tverrfaglig konsekvensanalyse (10 sp, januarblokk+vårparallell) eller NATF200 Vern og forvaltning av norsk natur (5 sp, januarblokk), anbefalt i siste semester. Siden dette er et reelt valg mellom to ulike emner med ulikt studiepoengomfang, og ikke en fast obligatorisk emnekode, er det holdt utenfor obligatoriske-listen og obligatoriskeStudiepoeng, i tråd med regelen om at obligatoriske valg mellom alternativer føres i merknad. REAL101 (Matematikk for naturvitere, 10 sp) har i studieplanen en fotnote om at MATH-INF100 (Beregningsbasert matematikk i praksis, også 10 sp) kan velges i stedet; dette er et reelt 1:1-alternativ og er derfor ført som én linje (REAL101) med merknad, tilsvarende praksis for PHI100/PHI101 i nmbu_maskin.json. Emner merket «Augustblokk» med samme emnekode som i høstparallell-raden (SKOG100 i år 1, SKOG220 i år 3) er 10 sp-emner der halvparten (5 sp, iht. kolonnebredden i høstparallell-raden) undervises i augustblokka rett før høstsemesteret og resten i selve høstparallellen; SKOG201 i år 2 er derimot en egen 5 sp-emnekode som kun står i Augustblokk-raden alene (ikke også i høstparallell-raden for år 2), og er satt til semester «høst» med augustblokk-merknad. Emnenavn er hentet fra NMBUs emnesøk (nmbu.no/emne/<kode>).",
+     "obligatoriske": [
+      {
+       "emnekode": "SKOG100",
+       "emnenavn": "Skogforvaltning",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "10 sp totalt, fordelt med 5 sp i augustblokk (før høstsemesteret) og 5 sp i høstparallell, jf. rutenettets kolonnebredder og NMBUs emnesøk.",
+       "years": []
+      },
+      {
+       "emnekode": "REAL101",
+       "emnenavn": "Matematikk for naturvitere",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "Studieplanen gir valget mellom REAL101 og MATH-INF100 (Beregningsbasert matematikk i praksis).",
+       "years": []
+      },
+      {
+       "emnekode": "LAD102",
+       "emnenavn": "GIS - praktisk introduksjon",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "JUS100",
+       "emnenavn": "Juridisk metode og norsk rettssystem",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKOG200",
+       "emnenavn": "Skogens biologi, økologi og produksjon",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKOG205",
+       "emnenavn": "Inventering og ressurskartlegging",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "ECOL100",
+       "emnenavn": "Innføring i økologi",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "ECN101",
+       "emnenavn": "Samfunnsøkonomi for miljø og utvikling",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKOG101",
+       "emnenavn": "Skogteknologi",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "juniblokk",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKOG201",
+       "emnenavn": "Skader og sykdommer på skogstrær",
+       "studiepoeng": 5,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "Augustblokk før høstsemesteret.",
+       "years": []
+      },
+      {
+       "emnekode": "PHI100",
+       "emnenavn": "Examen philosophicum",
+       "studiepoeng": 10,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "JORD100",
+       "emnenavn": "Jordlære",
+       "studiepoeng": 5,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKOG202",
+       "emnenavn": "Betydningen av insekter og sopper i produksjonsskog",
+       "studiepoeng": 5,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "TRE200",
+       "emnenavn": "Treteknologi I",
+       "studiepoeng": 5,
+       "aar": 2,
+       "semester": "januarblokk",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKOG210",
+       "emnenavn": "Skogprodukter og materialteknologi",
+       "studiepoeng": 5,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKOG240",
+       "emnenavn": "Skoglig driftsteknikk og logistikk",
+       "studiepoeng": 10,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKOG220",
+       "emnenavn": "Skogbehandling",
+       "studiepoeng": 10,
+       "aar": 3,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "10 sp totalt, fordelt med 5 sp i augustblokk (før høstsemesteret) og 5 sp i høstparallell, jf. rutenettets kolonnebredder og NMBUs emnesøk.",
+       "years": []
+      },
+      {
+       "emnekode": "STAT100",
+       "emnenavn": "Statistikk",
+       "studiepoeng": 10,
+       "aar": 3,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKOG250",
+       "emnenavn": "Skogforvaltning - øvingskurs i tverrfaglig analyse",
+       "studiepoeng": 10,
+       "aar": 3,
+       "semester": "juniblokk",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKOG230",
+       "emnenavn": "Ressursøkonomi og planlegging i skogbruket",
+       "studiepoeng": 10,
+       "aar": 3,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      }
+     ],
+     "spesialiseringer": []
+    },
+    {
+     "entryId": "inn_skogfag",
+     "shortName": "INN",
+     "institusjon": "Universitetet i Innlandet",
+     "isNmbu": false,
+     "programnavn": "Skogfag (bachelor)",
+     "studieplanAar": "2026/2027",
+     "kilder": [
+      "https://www.inn.no/studier/vare-studier/bachelor-i-skogfag/",
+      "https://studiekatalog.edutorium.no/inn/nb/program/SKO/"
+     ],
+     "totaltStudiepoeng": 180,
+     "obligatoriskeStudiepoeng": 180,
+     "merknad": "Kilde er Universitetet i Innlandets studiekatalog (studiekatalog.edutorium.no/inn/nb/program/SKO/), linket fra programsiden inn.no/studier/vare-studier/bachelor-i-skogfag/ som «Studieplan». Emnetabellen i studiekatalogen («Studiemodeller») merker samtlige 19 emner med type «O» (Obligatorisk) fordelt over seks semestre (26H, 27V, 27H, 28V, 28H, 29V) a 30 sp hvert, og programmet har verken valgfrie («V») emner eller praksisemner utover det obligatoriske SKO1170. Programmet er derfor 100 % obligatorisk, 180 av 180 sp. Studiestedet er Evenstad, undervisningsspråk norsk/engelsk (SKO1106 Applied Forest Ecology undervises på engelsk). Emnenavn er hentet direkte fra samme tabell i studiekatalogen.",
+     "obligatoriske": [
+      {
+       "emnekode": "SKO1105",
+       "emnenavn": "Naturgrunnlaget",
+       "studiepoeng": 15,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKO1101",
+       "emnenavn": "Skognæringen i Norge",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "6EV153",
+       "emnenavn": "Introduksjon til geografiske informasjonssystemer",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKO1103",
+       "emnenavn": "Tømmerets verdikjede",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKO1110",
+       "emnenavn": "Landbruksvei",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKO1160",
+       "emnenavn": "Grunnleggende økonomi",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "UTM1133",
+       "emnenavn": "Økologi",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKO2202",
+       "emnenavn": "Foryngelseshogst",
+       "studiepoeng": 15,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKO2203",
+       "emnenavn": "Produksjonsskog",
+       "studiepoeng": 15,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "6EV298",
+       "emnenavn": "Vitenskapelig metode og statistikk",
+       "studiepoeng": 15,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKO1170",
+       "emnenavn": "Praksis i næring eller forvaltning",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKO2260",
+       "emnenavn": "Skogøkonomi",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKO2153",
+       "emnenavn": "Geografisk analyse",
+       "studiepoeng": 7.5,
+       "aar": 3,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKO1154",
+       "emnenavn": "Forvaltningsrett",
+       "studiepoeng": 7.5,
+       "aar": 3,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "UTM2260",
+       "emnenavn": "Bærekraftig næringsutvikling og innovasjon",
+       "studiepoeng": 7.5,
+       "aar": 3,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKO1106",
+       "emnenavn": "Applied Forest Ecology",
+       "studiepoeng": 7.5,
+       "aar": 3,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "Undervises på engelsk, både for norske og utenlandske studenter (jf. studieplanens tekst om tredje studieår).",
+       "years": []
+      },
+      {
+       "emnekode": "6EV155",
+       "emnenavn": "Arealforvaltning",
+       "studiepoeng": 7.5,
+       "aar": 3,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKO2270",
+       "emnenavn": "Flerbruksskjøtsel",
+       "studiepoeng": 7.5,
+       "aar": 3,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "6EV299",
+       "emnenavn": "Bacheloroppgave",
+       "studiepoeng": 15,
+       "aar": 3,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      }
+     ],
+     "spesialiseringer": []
+    },
+    {
+     "entryId": "nord_skogfag",
+     "shortName": "Nord",
+     "institusjon": "Nord universitet",
+     "isNmbu": false,
+     "programnavn": "Skogfag (bachelor)",
+     "studieplanAar": "2026/2027",
+     "kilder": [
+      "https://www.nord.no/studier/skogfag-bachelor",
+      "https://www.nord.no/studier/studieplaner/skogfag-baskog-bachelor-host-2026"
+     ],
+     "totaltStudiepoeng": 180,
+     "obligatoriskeStudiepoeng": 150,
+     "merknad": "Kilde er Nord universitets studieplan for BASKOG, kull høst 2026 (nord.no/studier/studieplaner/skogfag-baskog-bachelor-host-2026), linket fra programsiden nord.no/studier/skogfag-bachelor. 3. år høst (5. semester, 30 sp) er et rent valgfritt semester («Valgemner») der studenten velger mellom «Emnepakke campus A», «Emnepakke campus B» eller utveksling; kildesiden viser disse kun som plassholderkoder (BASKOG-H26-CAMPUS-A/B/UTVEKSLIN) med 0 sp og lister ikke de konkrete emnene i hver pakke, så innholdet er ikke ført opp her. Disse 30 sp er holdt utenfor obligatoriske-listen og obligatoriskeStudiepoeng. I 4. semester (2. år vår) er ORG1001/STT1001 et reelt 1:1-valg mellom to obligatoriske alternativemner (markert «Obligatoriske emner – valg 1 av 2» i kilden) og er derfor ført som én linje (ORG1001) med merknad om alternativet, tilsvarende praksis for REAL101/MATH-INF100 i nmbu_skogfag.json. De 19 navngitte obligatoriske emnene (inkl. ORG1001-valget, ekskl. semester 5) summerer til 150 sp; sammen med 30 sp valgfritt semester 5 blir totalt 180 sp. Emnenavn, koder og studiepoeng er hentet direkte fra studieplan-siden.",
+     "obligatoriske": [
+      {
+       "emnekode": "KJE1001",
+       "emnenavn": "Laboratoriesikkerhet",
+       "studiepoeng": 0,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "0 sp, men obligatorisk i studieplanen.",
+       "years": []
+      },
+      {
+       "emnekode": "GEO2011",
+       "emnenavn": "Geografisk informasjonsbehandling",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "GEO1010",
+       "emnenavn": "Kartlære og datafangst",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "BIO1004",
+       "emnenavn": "Naturtyper, klima og geologi",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKO1000",
+       "emnenavn": "Innføring i skogfag",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "ECO1008",
+       "emnenavn": "Innføring i økonomi",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "BIO1008",
+       "emnenavn": "Bærekraft, klima og etikk",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "BIO1011",
+       "emnenavn": "Innføring i botanikk",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKO1001",
+       "emnenavn": "Metoder i skogskjøtsel",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "NAF1001",
+       "emnenavn": "Rettslære for naturforvaltere",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MET1005",
+       "emnenavn": "Akademisk skriving og metode",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "Progresjonskrav: må være bestått før bacheloroppgaven (SKO2010).",
+       "years": []
+      },
+      {
+       "emnekode": "SKO2000",
+       "emnenavn": "Driftsteknikk og logistikk",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MAT1001",
+       "emnenavn": "Matematikk",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "GEO2012",
+       "emnenavn": "Geografisk analyse",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "PRA2067",
+       "emnenavn": "Praksis i skogfag",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": "Krever minst 60 sp bestått før praksis.",
+       "years": []
+      },
+      {
+       "emnekode": "SKO2001",
+       "emnenavn": "Trevirkets anvendelse",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "ORG1001",
+       "emnenavn": "Organisasjon",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": "Studieplanen lister dette som «Obligatoriske emner – valg 1 av 2», dvs. studenten velger enten ORG1001 Organisasjon eller STT1001 Statistikk.",
+       "years": []
+      },
+      {
+       "emnekode": "SKO2003",
+       "emnenavn": "Den bærekraftige skogen",
+       "studiepoeng": 7.5,
+       "aar": 3,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKO2002",
+       "emnenavn": "Skogens helse og dynamikk",
+       "studiepoeng": 7.5,
+       "aar": 3,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKO2010",
+       "emnenavn": "Bacheloroppgave i skogfag",
+       "studiepoeng": 15,
+       "aar": 3,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": "Krever minst 90 sp bestått og bestått MET1005 Akademisk skriving og metode.",
+       "years": []
+      }
+     ],
+     "spesialiseringer": []
+    },
+    {
+     "entryId": "inn_utmark_skog",
+     "shortName": "INN Utmarksforvaltning",
+     "institusjon": "Universitetet i Innlandet",
+     "isNmbu": false,
+     "programnavn": "Utmarksforvaltning (bachelor)",
+     "studieplanAar": "2026/2027",
+     "kilder": [
+      "https://www.inn.no/studier/vare-studier/bachelor-i-utmarksforvaltning/",
+      "https://studiekatalog.edutorium.no/inn/nb/program/UTM"
+     ],
+     "totaltStudiepoeng": 180,
+     "obligatoriskeStudiepoeng": 165,
+     "merknad": "Kilde er Universitetet i Innlandets studiekatalog (studiekatalog.edutorium.no/inn/nb/program/UTM), linket fra programsiden inn.no/studier/vare-studier/bachelor-i-utmarksforvaltning/ som «Studieplan». Studiemodell-tabellen merker emnene med type «O» (obligatorisk) eller «V» (valgfritt); i semester 4 (2. år vår) og semester 5 (3. år høst) må studenten velge fordypning mellom «Forskning og forvaltning» (6AE124 Evolution / UTM2240 Praksis i viltøkologi) og «Næring og forvaltning» (SKO1160 Grunnleggende økonomi / UTM2260 Bærekraftig næringsutvikling og innovasjon), jf. tabellens egen fotnotetekst. Disse to fordypningsspesifikke valgemnene (7,5 sp hver, 15 sp totalt) er derfor ført under spesialiseringer og IKKE i obligatoriske-listen. De 18 rent obligatoriske emnene (uten valg) summerer til 165 sp; sammen med 15 sp fordypningsvalg blir totalt 180 sp per student. Studiekatalogens egen bunnsum i tabellen («Sum (195 totalt)») er en naiv sum av samtlige rader inkl. BEGGE fordypningsalternativer i hvert av de to valgsemestrene (165 + 7.5+7.5 + 7.5+7.5 = 195), ikke det reelle studiepoengomfanget en student faktisk tar (180). totaltStudiepoeng er derfor satt til 180 i tråd med standard bachelorlengde og skjemaets øvrige eksempler, ikke til kildetabellens 195. Emnenavn er hentet direkte fra samme tabell i studiekatalogen. Programmet deler flere emner med inn_skogfag (samme institusjon/studiested Evenstad): SKO1105, SKO1101, UTM1133, 6EV153, SKO1154, 6EV298, SKO2153, 6EV155, 6EV299.",
+     "obligatoriske": [
+      {
+       "emnekode": "SKO1105",
+       "emnenavn": "Naturgrunnlaget",
+       "studiepoeng": 15,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "UTM1100",
+       "emnenavn": "Biologi",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKO1101",
+       "emnenavn": "Skognæringen i Norge",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "UTM1120",
+       "emnenavn": "Ferskvannsøkologi",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "6EV132",
+       "emnenavn": "Norsk fauna",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "UTM1133",
+       "emnenavn": "Økologi",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "UTM1140",
+       "emnenavn": "Wildlife ecology",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "UTM2220",
+       "emnenavn": "Fiskeforvaltning",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "UTM2140",
+       "emnenavn": "Viltforvaltning",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "6EV153",
+       "emnenavn": "Introduksjon til geografiske informasjonssystemer",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKO1154",
+       "emnenavn": "Forvaltningsrett",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "6EV298",
+       "emnenavn": "Vitenskapelig metode og statistikk",
+       "studiepoeng": 15,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "6EV150",
+       "emnenavn": "Naturoppsyn",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "UTM1176",
+       "emnenavn": "Large predator ecology and management",
+       "studiepoeng": 7.5,
+       "aar": 3,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "6EV175",
+       "emnenavn": "Biomedisin",
+       "studiepoeng": 7.5,
+       "aar": 3,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKO2153",
+       "emnenavn": "Geografisk analyse",
+       "studiepoeng": 7.5,
+       "aar": 3,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "UTM1151",
+       "emnenavn": "Besøksforvaltning og naturveiledning",
+       "studiepoeng": 7.5,
+       "aar": 3,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "6EV155",
+       "emnenavn": "Arealforvaltning",
+       "studiepoeng": 7.5,
+       "aar": 3,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "6EV299",
+       "emnenavn": "Bacheloroppgave",
+       "studiepoeng": 15,
+       "aar": 3,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      }
+     ],
+     "spesialiseringer": [
+      {
+       "navn": "Forskning og forvaltning",
+       "obligatoriske": []
+      },
+      {
+       "navn": "Næring og forvaltning",
+       "obligatoriske": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "okologi",
+   "label": "Økologi og naturforvaltning",
+   "level": "bachelor",
+   "programs": [
+    {
+     "entryId": "nmbu_okologi",
+     "shortName": "NMBU",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "isNmbu": true,
+     "programnavn": "Økologi og naturforvaltning (bachelor)",
+     "studieplanAar": "2026/2027",
+     "kilder": [
+      "https://www.nmbu.no/studier/bachelor/okologi-og-naturforvaltning",
+      "https://static02.nmbu.no/mina/studier/B-OEN.php"
+     ],
+     "totaltStudiepoeng": 180,
+     "obligatoriskeStudiepoeng": 130,
+     "merknad": "Kilde er NMBUs fargekodede rutenett-studieplan for kull 2026 (static02.nmbu.no/mina/studier/B-OEN.php, programkode B-ØN), linket fra programsiden nmbu.no/studier/bachelor/okologi-og-naturforvaltning. Studiepoeng er lest av fra cellenes colspan (kolonnebredde 5 sp) i rutenettet, kryssjekket mot nmbu.no/emne/<kode>. De 17 navngitte obligatoriske emnene (NATF100 og MINA250 telt én gang hver, selv om de fordeler seg over to rader/semestre i rutenettet) summerer til 130 sp av totalt 180 sp. De resterende 50 sp er dels valgfrie eksempelplaner/fordypningspakker uten faste obligatoriske emnelister (Fiske- og viltforvaltning, Ferskvannsforvaltning, Forurensning, Skogforvaltning, Zoologisk fordypning, Botanisk fordypning, Miljøøkonomi, Fornybar energi, Naturbasert reiseliv, Biologi, utenlandsopphold høst/vår, ett semester på Svalbard), dels to obligatoriske valg utenfor rutenettet: «Velg minst ett av følgende emner» (GEO100 Geologi 10 sp eller JORD100 Jordlære 5 sp, begge høstparallell) og «Pluss minst ett av følgende emner» (NATF230 Viltbiologi og forvaltning 15 sp høstparallell, NATF240 Fiskeøkologi og forvaltning 10 sp vårparallell, eller VANN210 Ferskvannsøkologi 10 sp høstparallell). Disse to valgene har alternativer med ulikt studiepoengomfang og er derfor holdt utenfor obligatoriske-listen og obligatoriskeStudiepoeng, i tråd med regelen om at obligatoriske valg mellom alternativer føres i merknad. Feltkurs-komponentene nevnt i juniblokk (i ZOOL100/ZOOL220/BOT100 i år 1, og i ZOOL210/BOT270 i år 2) er del av de respektive emnene, ikke egne emnekoder, og er derfor ikke ført opp separat. Emnenavn er hentet fra NMBUs emnesøk (nmbu.no/emne/<kode>).",
+     "obligatoriske": [
+      {
+       "emnekode": "NATF100",
+       "emnenavn": "Innføringskurs i naturforvaltning",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "helår",
+       "dbhEmnekoder": [],
+       "merknad": "10 sp, undervises både i augustblokk/høstparallell og i vårparallell (5 sp hvert semester, iht. rutenettets kolonnebredder).",
+       "years": []
+      },
+      {
+       "emnekode": "ZOOL100",
+       "emnenavn": "Generell zoologi",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MATH-INF100",
+       "emnenavn": "Beregningsbasert matematikk i praksis",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "PHI100",
+       "emnenavn": "Examen philosophicum",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "Studieplanen gir valget mellom PHI100 og seminarversjonen PHI101 (samme forelesninger, ulikt seminar-/vurderingsopplegg).",
+       "years": []
+      },
+      {
+       "emnekode": "NATF200",
+       "emnenavn": "Vern og forvaltning av norsk natur",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "januarblokk",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "BOT100",
+       "emnenavn": "Plantediversitet",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "ZOOL220",
+       "emnenavn": "Insekter og edderkoppdyr",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "KJM100",
+       "emnenavn": "Generell kjemi",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKOG102",
+       "emnenavn": "Innføring i skogforvaltning",
+       "studiepoeng": 5,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "Studieplanens fotnote sier at SKOG100 (Skogforvaltning) kan tas i stedet for SKOG102; NMBUs emnesøk oppgir SKOG100 til 10 sp mot SKOG102s 5 sp, så de to alternativene er ikke nødvendigvis like store i praksis – uoverensstemmelsen er ikke videre forklart i kilden.",
+       "years": []
+      },
+      {
+       "emnekode": "STAT100",
+       "emnenavn": "Statistikk",
+       "studiepoeng": 10,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "LAD102",
+       "emnenavn": "GIS - praktisk introduksjon",
+       "studiepoeng": 5,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "ZOOL210",
+       "emnenavn": "Virveldyr",
+       "studiepoeng": 10,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "ECOL200",
+       "emnenavn": "Generell økologi",
+       "studiepoeng": 10,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "ECN170",
+       "emnenavn": "Miljø- og ressursøkonomi",
+       "studiepoeng": 5,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "BOT270",
+       "emnenavn": "Kartlegging av natur",
+       "studiepoeng": 5,
+       "aar": 3,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "JUS201",
+       "emnenavn": "Offentlig saksbehandling og forvaltningsrett",
+       "studiepoeng": 5,
+       "aar": 3,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MINA250",
+       "emnenavn": "Tverrfaglig konsekvensanalyse",
+       "studiepoeng": 10,
+       "aar": 3,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": "10 sp, undervises i januarblokk og vårparallell (5 sp hvert, iht. rutenettets kolonnebredder).",
+       "years": []
+      },
+      {
+       "emnekode": "ECOL201",
+       "emnenavn": "Økologisk fordypningsoppgave",
+       "studiepoeng": 5,
+       "aar": 3,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      }
+     ],
+     "spesialiseringer": []
+    },
+    {
+     "entryId": "inn_utmarksforvaltning",
+     "shortName": "INN",
+     "institusjon": "Universitetet i Innlandet",
+     "isNmbu": false,
+     "programnavn": "Utmarksforvaltning (bachelor)",
+     "studieplanAar": "2026/2027",
+     "kilder": [
+      "https://www.inn.no/studier/vare-studier/bachelor-i-utmarksforvaltning/",
+      "https://studiekatalog.edutorium.no/inn/nb/program/UTM"
+     ],
+     "totaltStudiepoeng": 180,
+     "obligatoriskeStudiepoeng": 165,
+     "merknad": "Kilde er Universitetet i Innlandets studiekatalog (studiekatalog.edutorium.no/inn/nb/program/UTM), linket fra programsiden inn.no/studier/vare-studier/bachelor-i-utmarksforvaltning/ som «Studieplan». Studiemodell-tabellen merker emnene med type «O» (obligatorisk) eller «V» (valgfritt); i semester 4 (2. år vår) og semester 5 (3. år høst) må studenten velge fordypning mellom «Forskning og forvaltning» (6AE124 Evolution / UTM2240 Praksis i viltøkologi) og «Næring og forvaltning» (SKO1160 Grunnleggende økonomi / UTM2260 Bærekraftig næringsutvikling og innovasjon), jf. tabellens egen fotnotetekst. Disse to fordypningsspesifikke valgemnene (7,5 sp hver, 15 sp totalt) er derfor ført under spesialiseringer og IKKE i obligatoriske-listen. De 18 rent obligatoriske emnene (uten valg) summerer til 165 sp; sammen med 15 sp fordypningsvalg blir totalt 180 sp per student. Studiekatalogens egen bunnsum i tabellen («Sum (195 totalt)») er en naiv sum av samtlige rader inkl. BEGGE fordypningsalternativer i hvert av de to valgsemestrene (165 + 7.5+7.5 + 7.5+7.5 = 195), ikke det reelle studiepoengomfanget en student faktisk tar (180). totaltStudiepoeng er derfor satt til 180 i tråd med standard bachelorlengde og skjemaets øvrige eksempler, ikke til kildetabellens 195. Emnenavn er hentet direkte fra samme tabell i studiekatalogen. Programmet deler flere emner med inn_skogfag (samme institusjon/studiested Evenstad): SKO1105, SKO1101, UTM1133, 6EV153, SKO1154, 6EV298, SKO2153, 6EV155, 6EV299.",
+     "obligatoriske": [
+      {
+       "emnekode": "SKO1105",
+       "emnenavn": "Naturgrunnlaget",
+       "studiepoeng": 15,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "UTM1100",
+       "emnenavn": "Biologi",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKO1101",
+       "emnenavn": "Skognæringen i Norge",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "UTM1120",
+       "emnenavn": "Ferskvannsøkologi",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "6EV132",
+       "emnenavn": "Norsk fauna",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "UTM1133",
+       "emnenavn": "Økologi",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "UTM1140",
+       "emnenavn": "Wildlife ecology",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "UTM2220",
+       "emnenavn": "Fiskeforvaltning",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "UTM2140",
+       "emnenavn": "Viltforvaltning",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "6EV153",
+       "emnenavn": "Introduksjon til geografiske informasjonssystemer",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKO1154",
+       "emnenavn": "Forvaltningsrett",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "6EV298",
+       "emnenavn": "Vitenskapelig metode og statistikk",
+       "studiepoeng": 15,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "6EV150",
+       "emnenavn": "Naturoppsyn",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "UTM1176",
+       "emnenavn": "Large predator ecology and management",
+       "studiepoeng": 7.5,
+       "aar": 3,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "6EV175",
+       "emnenavn": "Biomedisin",
+       "studiepoeng": 7.5,
+       "aar": 3,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKO2153",
+       "emnenavn": "Geografisk analyse",
+       "studiepoeng": 7.5,
+       "aar": 3,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "UTM1151",
+       "emnenavn": "Besøksforvaltning og naturveiledning",
+       "studiepoeng": 7.5,
+       "aar": 3,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "6EV155",
+       "emnenavn": "Arealforvaltning",
+       "studiepoeng": 7.5,
+       "aar": 3,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "6EV299",
+       "emnenavn": "Bacheloroppgave",
+       "studiepoeng": 15,
+       "aar": 3,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      }
+     ],
+     "spesialiseringer": [
+      {
+       "navn": "Forskning og forvaltning",
+       "obligatoriske": []
+      },
+      {
+       "navn": "Næring og forvaltning",
+       "obligatoriske": []
+      }
+     ]
+    },
+    {
+     "entryId": "nord_naturforvaltning",
+     "shortName": "Nord",
+     "institusjon": "Nord universitet",
+     "isNmbu": false,
+     "programnavn": "Naturforvaltning (bachelor)",
+     "studieplanAar": "2026/2027",
+     "kilder": [
+      "https://www.nord.no/studier/naturforvaltning-bachelor",
+      "https://www.nord.no/studier/studieplaner/naturforvaltning-224-bachelor-host-2026"
+     ],
+     "totaltStudiepoeng": 180,
+     "obligatoriskeStudiepoeng": 135,
+     "merknad": "Kilde er Nord universitets studieplan for Naturforvaltning (kode 224), kull høst 2026 (nord.no/studier/studieplaner/naturforvaltning-224-bachelor-host-2026), linket fra programsiden nord.no/studier/naturforvaltning-bachelor. Programmet er 180 sp totalt. 4. semester (2. år vår) er et rent valgfritt semester (30 sp) der studenten velger 4 av 7 tilbudte valgemner à 7,5 sp (NAF2003 Internasjonal naturforvaltning, BIO2015 Molekylær økologi, GEO2012 Geografisk analyse, MAT1014 Matematikk og statistikk, NAF2004 Naturovervåking, BIO2008 Atferd og evolusjon, BIO2027 Zoologi 2); samme emnepool tilbys på nytt i 6. semester der studenten i tillegg velger 1 av de 7 (7,5 sp) for å fylle opp semesteret sammen med NAF2008 og andre del av bacheloroppgaven. Siden dette er en fri valgfagpool (ikke faste obligatoriske spesialiseringsretninger), er den holdt utenfor obligatoriske-listen og spesialiseringer, kun beskrevet her, tilsvarende praksis for valgfagpoolen i uia_ing_mekatronikk.json. De 18 navngitte obligatoriske emnene (BAC360 telt én gang) summerer til 135 sp; sammen med 30+7,5=37,5 sp valgfritt gir det 172,5 sp – kildesiden viser et gap på 7,5 sp i 5. semester (høst, 3. år) der summen av oppførte emner (NAF2007+GEO2014+ØKO2003+BAC360 del 1 à 0 sp) bare blir 22,5 sp av forventet 30 sp; dette er ikke forklart i kilden og trolig en visningsdetalj knyttet til at bacheloroppgavens første del krediteres med 0 sp inntil den er fullført. totaltStudiepoeng er satt til 180 i tråd med programsidens eget oppgitte «Studiepoeng: 180». Emnenavn, koder og studiepoeng er hentet direkte fra studieplan-siden.",
+     "obligatoriske": [
+      {
+       "emnekode": "KJE1001",
+       "emnenavn": "Laboratoriesikkerhet",
+       "studiepoeng": 0,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "0 sp, men obligatorisk i studieplanen.",
+       "years": []
+      },
+      {
+       "emnekode": "GEO1010",
+       "emnenavn": "Kartlære og datafangst",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "BIO1004",
+       "emnenavn": "Naturtyper, klima og geologi",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "NAF1000",
+       "emnenavn": "Fisk- og viltforvaltning",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "KJE1000",
+       "emnenavn": "Grunnleggende kjemi",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "BIO1014",
+       "emnenavn": "Innføring i zoologi",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "BIO1011",
+       "emnenavn": "Innføring i botanikk",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "BIO1009",
+       "emnenavn": "Cellebiologi",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "BIO1008",
+       "emnenavn": "Bærekraft, klima og etikk",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MET1005",
+       "emnenavn": "Akademisk skriving og metode",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "GEO2011",
+       "emnenavn": "Geografisk informasjonsbehandling",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "NAF1001",
+       "emnenavn": "Rettslære for naturforvaltere",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "ØKO2002",
+       "emnenavn": "Populasjonsøkologi",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "NAF2007",
+       "emnenavn": "Arealbruk i naturforvaltning",
+       "studiepoeng": 7.5,
+       "aar": 3,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "GEO2014",
+       "emnenavn": "Arealplanlegging",
+       "studiepoeng": 7.5,
+       "aar": 3,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "ØKO2003",
+       "emnenavn": "Økosystemer og miljøutfordringer",
+       "studiepoeng": 7.5,
+       "aar": 3,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "NAF2008",
+       "emnenavn": "Forvaltning av biologisk mangfold",
+       "studiepoeng": 7.5,
+       "aar": 3,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "BAC360",
+       "emnenavn": "Bacheloroppgave i naturforvaltning",
+       "studiepoeng": 15,
+       "aar": 3,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": "Registreres i to deler: «1/2» i 5. semester (høst, 0 sp vist) og «2/2» i 6. semester (vår, 15 sp), ført her samlet som ett emne på 15 sp i 3. år vår.",
+       "years": []
+      }
+     ],
+     "spesialiseringer": []
+    },
+    {
+     "entryId": "usn_naturmiljoforvaltning",
+     "shortName": "USN",
+     "institusjon": "Universitetet i Sørøst-Norge",
+     "isNmbu": false,
+     "programnavn": "Natur- og miljøforvaltning (bachelor)",
+     "studieplanAar": null,
+     "kilder": [],
+     "totaltStudiepoeng": null,
+     "obligatoriskeStudiepoeng": null,
+     "merknad": "Studieplan ikke hentet ennå.",
+     "obligatoriske": [],
+     "spesialiseringer": []
+    },
+    {
+     "entryId": "uit_biologi",
+     "shortName": "UiT Biologi",
+     "institusjon": "UiT Norges arktiske universitet",
+     "isNmbu": false,
+     "programnavn": "Biologi (bachelor)",
+     "studieplanAar": null,
+     "kilder": [],
+     "totaltStudiepoeng": null,
+     "obligatoriskeStudiepoeng": null,
+     "merknad": "Studieplan ikke hentet ennå.",
+     "obligatoriske": [],
+     "spesialiseringer": []
+    },
+    {
+     "entryId": "uia_biologi",
+     "shortName": "UiA Biologi",
+     "institusjon": "Universitetet i Agder",
+     "isNmbu": false,
+     "programnavn": "Biologi (bachelor)",
+     "studieplanAar": null,
+     "kilder": [],
+     "totaltStudiepoeng": null,
+     "obligatoriskeStudiepoeng": null,
+     "merknad": "Studieplan ikke hentet ennå.",
+     "obligatoriske": [],
+     "spesialiseringer": []
+    }
+   ]
+  },
+  {
+   "id": "miljonatur",
+   "label": "Miljø og naturressurser",
+   "level": "bachelor",
+   "programs": [
+    {
+     "entryId": "nmbu_miljonatur",
+     "shortName": "NMBU",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "isNmbu": true,
+     "programnavn": "Miljø og naturressurser (bachelor)",
+     "studieplanAar": null,
+     "kilder": [],
+     "totaltStudiepoeng": null,
+     "obligatoriskeStudiepoeng": null,
+     "merknad": "Studieplan ikke hentet ennå.",
+     "obligatoriske": [],
+     "spesialiseringer": []
+    },
+    {
+     "entryId": "uio_klima_miljo_menneske",
+     "shortName": "UiO Klima, miljø og menneske",
+     "institusjon": "Universitetet i Oslo",
+     "isNmbu": false,
+     "programnavn": "Klima, miljø og menneske (bachelor)",
+     "studieplanAar": null,
+     "kilder": [],
+     "totaltStudiepoeng": null,
+     "obligatoriskeStudiepoeng": null,
+     "merknad": "Studieplan ikke hentet ennå.",
+     "obligatoriske": [],
+     "spesialiseringer": []
+    },
+    {
+     "entryId": "uio_geologi_geografi",
+     "shortName": "UiO Geologi og geografi",
+     "institusjon": "Universitetet i Oslo",
+     "isNmbu": false,
+     "programnavn": "Geologi og geografi (bachelor)",
+     "studieplanAar": null,
+     "kilder": [],
+     "totaltStudiepoeng": null,
+     "obligatoriskeStudiepoeng": null,
+     "merknad": "Studieplan ikke hentet ennå.",
+     "obligatoriske": [],
+     "spesialiseringer": []
+    },
+    {
+     "entryId": "uib_geovitenskap",
+     "shortName": "UiB",
+     "institusjon": "Universitetet i Bergen",
+     "isNmbu": false,
+     "programnavn": "Geovitenskap, retning geologi (bachelor)",
+     "studieplanAar": null,
+     "kilder": [],
+     "totaltStudiepoeng": null,
+     "obligatoriskeStudiepoeng": null,
+     "merknad": "Studieplan ikke hentet ennå.",
+     "obligatoriske": [],
+     "spesialiseringer": []
+    },
+    {
+     "entryId": "ntnu_geologi",
+     "shortName": "NTNU",
+     "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+     "isNmbu": false,
+     "programnavn": "Geologi (bachelor)",
+     "studieplanAar": null,
+     "kilder": [],
+     "totaltStudiepoeng": null,
+     "obligatoriskeStudiepoeng": null,
+     "merknad": "Studieplan ikke hentet ennå.",
+     "obligatoriske": [],
+     "spesialiseringer": []
+    },
+    {
+     "entryId": "hvl_geologi_geofare",
+     "shortName": "HVL",
+     "institusjon": "Høgskulen på Vestlandet",
+     "isNmbu": false,
+     "programnavn": "Geologi og geofare (bachelor)",
+     "studieplanAar": null,
+     "kilder": [],
+     "totaltStudiepoeng": null,
+     "obligatoriskeStudiepoeng": null,
+     "merknad": "Studieplan ikke hentet ennå.",
+     "obligatoriske": [],
+     "spesialiseringer": []
+    }
+   ]
+  },
+  {
+   "id": "fornybar",
+   "label": "Fornybar energi",
+   "level": "bachelor",
+   "programs": [
+    {
+     "entryId": "nmbu_fornybar",
+     "shortName": "NMBU",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "isNmbu": true,
+     "programnavn": "Fornybar energi (bachelor)",
+     "studieplanAar": null,
+     "kilder": [],
+     "totaltStudiepoeng": null,
+     "obligatoriskeStudiepoeng": null,
+     "merknad": "Studieplan ikke hentet ennå.",
+     "obligatoriske": [],
+     "spesialiseringer": []
+    },
+    {
+     "entryId": "hvl_fornybar",
+     "shortName": "HVL",
+     "institusjon": "Høgskulen på Vestlandet",
+     "isNmbu": false,
+     "programnavn": "Fornybar energi (bachelor)",
+     "studieplanAar": null,
+     "kilder": [],
+     "totaltStudiepoeng": null,
+     "obligatoriskeStudiepoeng": null,
+     "merknad": "Studieplan ikke hentet ennå.",
+     "obligatoriske": [],
+     "spesialiseringer": []
+    },
+    {
+     "entryId": "ntnu_ing_fornybar_trondheim",
+     "shortName": "NTNU Trondheim",
+     "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+     "isNmbu": false,
+     "programnavn": "Ingeniør, fornybar energi (bachelor)",
+     "studieplanAar": null,
+     "kilder": [],
+     "totaltStudiepoeng": null,
+     "obligatoriskeStudiepoeng": null,
+     "merknad": "Studieplan ikke hentet ennå.",
+     "obligatoriske": [],
+     "spesialiseringer": []
+    },
+    {
+     "entryId": "ntnu_ing_fornybar_gjovik",
+     "shortName": "NTNU Gjøvik",
+     "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+     "isNmbu": false,
+     "programnavn": "Ingeniør, fornybar energi (bachelor)",
+     "studieplanAar": null,
+     "kilder": [],
+     "totaltStudiepoeng": null,
+     "obligatoriskeStudiepoeng": null,
+     "merknad": "Studieplan ikke hentet ennå.",
+     "obligatoriske": [],
+     "spesialiseringer": []
+    },
+    {
+     "entryId": "ntnu_ing_fornybar_alesund",
+     "shortName": "NTNU Ålesund",
+     "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+     "isNmbu": false,
+     "programnavn": "Ingeniør, fornybar energi (bachelor)",
+     "studieplanAar": null,
+     "kilder": [],
+     "totaltStudiepoeng": null,
+     "obligatoriskeStudiepoeng": null,
+     "merknad": "Studieplan ikke hentet ennå.",
+     "obligatoriske": [],
+     "spesialiseringer": []
+    },
+    {
+     "entryId": "uia_ing_fornybar",
+     "shortName": "UiA",
+     "institusjon": "Universitetet i Agder",
+     "isNmbu": false,
+     "programnavn": "Ingeniør, fornybar energi (bachelor)",
+     "studieplanAar": null,
+     "kilder": [],
+     "totaltStudiepoeng": null,
+     "obligatoriskeStudiepoeng": null,
+     "merknad": "Studieplan ikke hentet ennå.",
+     "obligatoriske": [],
+     "spesialiseringer": []
+    },
+    {
+     "entryId": "uit_fornybar",
+     "shortName": "UiT",
+     "institusjon": "UiT Norges arktiske universitet",
+     "isNmbu": false,
+     "programnavn": "Fornybar energi (master 5 år)",
+     "studieplanAar": null,
+     "kilder": [],
+     "totaltStudiepoeng": null,
+     "obligatoriskeStudiepoeng": null,
+     "merknad": "Studieplan ikke hentet ennå.",
+     "obligatoriske": [],
+     "spesialiseringer": []
+    }
+   ]
+  },
+  {
+   "id": "radioaktivitet",
+   "label": "Radioaktivitet og miljø",
+   "level": "bachelor",
+   "programs": [
+    {
+     "entryId": "nmbu_radioaktivitet",
+     "shortName": "NMBU",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "isNmbu": true,
+     "programnavn": "Radioaktivitet og miljø (bachelor)",
+     "studieplanAar": null,
+     "kilder": [],
+     "totaltStudiepoeng": null,
+     "obligatoriskeStudiepoeng": null,
+     "merknad": "Studieplan ikke hentet ennå.",
+     "obligatoriske": [],
+     "spesialiseringer": []
+    }
+   ]
+  },
+  {
+   "id": "skogfag2",
+   "label": "Skogfag (2-årig master)",
+   "level": "master2",
+   "programs": [
+    {
+     "entryId": "nmbu_skogfag2",
+     "shortName": "NMBU",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "isNmbu": true,
+     "programnavn": "Skogfag (master 2 år)",
+     "studieplanAar": "2026/2027",
+     "kilder": [
+      "https://www.nmbu.no/studier/master-2-aar/skogfag",
+      "https://static02.nmbu.no/mina/studier/M-SF.php?sprx=n&aarx=2026"
+     ],
+     "totaltStudiepoeng": 120,
+     "obligatoriskeStudiepoeng": 55,
+     "merknad": "Kilde er MINA-fakultetets studieplan-verktøy for kullet med studiestart høsten 2026 (fullstendig 2-årig plan; identisk struktur for kullet 2025). Utover de fire faste emnene over stiller programmet to obligatoriske valgkrav som ikke er ført opp som enkeltemner: (1) ett metodeemne må velges mellom MINA310 Naturvitenskapelig metode (5 sp, vår) og MINA311 Samfunnsvitenskapelig forskningsmetode (10 sp, vår); (2) minst 30 sp må velges blant en liste med skogfaglige emner (MINA305, MINA330, SKOG303, SKOG304, SKOG305, SKOG340, TRE300 m.fl.). Studenter uten bachelor i skogfag må i tillegg ta SKOG230 og SKOG250 (20 sp) pluss minst 10 sp fra en tilleggsliste. De obligatoriske faste emnene (55 sp) pluss metodekrav (5–10 sp) og fordypningskrav (30 sp) bringer summen opp mot totalt 120 sp for graden. dbhEmnekoder er ikke fylt ut siden DBH-rapportering for dette programmet ikke er slått opp i dette arbeidet.",
+     "obligatoriske": [
+      {
+       "emnekode": "SKOG302",
+       "emnenavn": "Flerbruk og flerbruksplanlegging i skog",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "Går over Augustblokk og Høstparallell samme semester.",
+       "years": []
+      },
+      {
+       "emnekode": "MINA321",
+       "emnenavn": "Tverrfaglig samarbeid og kontroverser om bærekraft - engelsk versjon",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": "Ligger i Januarblokk. MINA320 (norsk versjon av samme emne) kan tas i høstparallellen i stedet.",
+       "years": []
+      },
+      {
+       "emnekode": "SKOG300",
+       "emnenavn": "Skogplanlegging",
+       "studiepoeng": 10,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "M30-SF",
+       "emnenavn": "Masteroppgave",
+       "studiepoeng": 30,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      }
+     ],
+     "spesialiseringer": []
+    },
+    {
+     "entryId": "inn_skogforvaltning2",
+     "shortName": "INN",
+     "institusjon": "Universitetet i Innlandet",
+     "isNmbu": false,
+     "programnavn": "Bærekraftig skogforvaltning (master 2 år)",
+     "studieplanAar": "2026/2027",
+     "kilder": [
+      "https://www.inn.no/studier/vare-studier/master-i-berekraftig-skogforvaltning/",
+      "https://studiekatalog.edutorium.no/inn/nb/program/MASKO"
+     ],
+     "totaltStudiepoeng": 120,
+     "obligatoriskeStudiepoeng": 120,
+     "merknad": "Programmet er formelt organisert som et 3-årig nett- og samlingsbasert deltidsstudium (120 sp, 20 sp per semester over 6 semestre: 2026H-2029V), ikke et 2-årig heltidsstudium, selv om det inngår i sammenligningsgruppen «master 2 år». Feltet «aar» er derfor satt til 1-3 for å reflektere den faktiske studiemodellen. Alle 10 emner er obligatoriske (type O) og summerer seg til 120 sp, altså hele graden - det finnes ingen valgemner eller studieretninger i studiemodellen. Kilde er INNs studiekatalog (edutorium), studiemodell-tabellen for kullet med studiestart høst 2026.",
+     "obligatoriske": [
+      {
+       "emnekode": "SKO4004S",
+       "emnenavn": "Flerbruk i skog: teori og praksis",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MBJ4002S",
+       "emnenavn": "Forskningsmetode og dataanalyse",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKO4003S",
+       "emnenavn": "Geographic Information Systems",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKO4002S",
+       "emnenavn": "Bærekraftig skogbruk",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKO4001S",
+       "emnenavn": "Areal- og eiendomsforvaltning",
+       "studiepoeng": 10,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKO4005S",
+       "emnenavn": "Ressurskartlegging",
+       "studiepoeng": 10,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKO4006S",
+       "emnenavn": "Prosjektledelse",
+       "studiepoeng": 10,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MBJ4004S",
+       "emnenavn": "Studiedesign og statistisk metode",
+       "studiepoeng": 10,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKO4007S",
+       "emnenavn": "Beslutningsanalyse",
+       "studiepoeng": 10,
+       "aar": 3,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKO4900S",
+       "emnenavn": "Masteroppgave i bærekraftig skogforvaltning",
+       "studiepoeng": 30,
+       "aar": 3,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "Går over to semestre: 10 sp i 3. år høst og 20 sp i 3. år vår, ifølge studiemodell-tabellen.",
+       "years": []
+      }
+     ],
+     "spesialiseringer": []
+    }
+   ]
+  },
+  {
+   "id": "okologi2",
+   "label": "Økologi (2-årig master)",
+   "level": "master2",
+   "programs": [
+    {
+     "entryId": "nmbu_okologi2",
+     "shortName": "NMBU",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "isNmbu": true,
+     "programnavn": "Økologi (master 2 år)",
+     "studieplanAar": "2026/2027",
+     "kilder": [
+      "https://www.nmbu.no/studier/master-2-aar/okologi",
+      "https://static02.nmbu.no/mina/studier/M-ECOL.php?sprx=n&aarx=2026"
+     ],
+     "totaltStudiepoeng": 120,
+     "obligatoriskeStudiepoeng": 90,
+     "merknad": "Kilde er MINA-fakultetets studieplan-verktøy for kullet med studiestart høsten 2026. Utover de sju emnene over (90 sp obligatorisk kjerne, inkl. masteroppgaven på 60 sp) stiller programmet krav om at minst ett 300-nivå spesialiseringsemne innen økologi må inngå for å oppnå mastergraden i økologi - dette er et obligatorisk valg mellom alternativer (bl.a. BIO328 Miljø-DNA, BOT300 Planteøkologi, ECOL330 Tropisk regnskogsøkologi, ECOL380 Elve- og innsjøøkologi, FMI310 Miljøgifter og økotoksikologi, LAA370 Landskapsøkologi, NATF320 Tropisk økologi og naturforvaltning, NATF350 Menneske-vilt-interaksjoner, SKOG304 Skogøkologi, ZOOL300 Insektøkologi m.fl., 5-15 sp hver) og er derfor ikke ført opp som enkeltemne. De resterende ca. 30 sp av graden fylles med dette spesialiseringsemnet pluss frie valgemner. dbhEmnekoder er ikke fylt ut siden DBH-rapportering for dette programmet ikke er slått opp i dette arbeidet.",
+     "obligatoriske": [
+      {
+       "emnekode": "NATF300",
+       "emnenavn": "Bevaringsbiologi",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "ECOL310",
+       "emnenavn": "Økologiske effekter av globale miljøendringer",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "ECOL302",
+       "emnenavn": "Økologisk forskning",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "Ligger i Augustblokk.",
+       "years": []
+      },
+      {
+       "emnekode": "MINA310",
+       "emnenavn": "Naturvitenskapelig metode",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "ECOL350",
+       "emnenavn": "Restaureringsøkologi",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MINA321",
+       "emnenavn": "Tverrfaglig samarbeid og kontroverser om bærekraft - engelsk versjon",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": "Ligger i Januarblokk. MINA320 (norsk versjon av samme emne) kan tas i høstsemesteret av studenter som behersker norsk.",
+       "years": []
+      },
+      {
+       "emnekode": "M60-ECOL",
+       "emnenavn": "Masteroppgave",
+       "studiepoeng": 60,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "Går over hele 2. studieår (30 sp høst + 30 sp vår), altså begge semestre i år 2.",
+       "years": []
+      }
+     ],
+     "spesialiseringer": []
+    },
+    {
+     "entryId": "inn_anvendt_okologi2",
+     "shortName": "INN",
+     "institusjon": "Universitetet i Innlandet",
+     "isNmbu": false,
+     "programnavn": "Anvendt økologi (master 2 år)",
+     "studieplanAar": "2026/2027",
+     "kilder": [
+      "https://www.inn.no/studier/vare-studier/master-i-anvendt-okologi/",
+      "https://studiekatalog.edutorium.no/inn/nb/program/MAOK"
+     ],
+     "totaltStudiepoeng": 120,
+     "obligatoriskeStudiepoeng": 120,
+     "merknad": "Toårig heltids campusstudium (Evenstad) med studiestart høst 2026. Alle ni emner i hovedstudiemodellen er merket «O» (obligatorisk) i INNs studiekatalog og summerer seg nøyaktig til 120 sp (25+35+30+30 per semester), så det finnes ingen valgfri spesialisering innenfor de 120 sp. Katalogen lister i tillegg en egen liten valgfagsmodell (6EV315 Chemical and physical capture of Scandinavian Mammals, MAOK4006 Biostatistics II, 2,5 sp hver, «V»-type) som ikke inngår i de obligatoriske 120 sp. Programmet «Anvendt økologi» ved INN inngår i to sammenligningsgrupper i programkart.json (okologi2 og naturforvaltning2); denne filen brukes for begge (inn_anvendt_okologi2 og inn_anvendt_okologi_nf2), da det er samme studieplan. dbhEmnekoder er ikke fylt ut siden DBH-rapportering for dette programmet ikke er slått opp i dette arbeidet.",
+     "obligatoriske": [
+      {
+       "emnekode": "MAOK4001",
+       "emnenavn": "Concepts in ecology",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MAOK4002",
+       "emnenavn": "Biostatistics",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MAOK4012",
+       "emnenavn": "Nature in the Anthropocene",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MAOK4013",
+       "emnenavn": "Wildlife population health",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MAOK4011",
+       "emnenavn": "Human-Wildlife Conflicts and Coexistence",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKO4003S",
+       "emnenavn": "Geographic Information Systems",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MAOK4004",
+       "emnenavn": "Wildlife monitoring",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MAOK4005",
+       "emnenavn": "Research process and topics",
+       "studiepoeng": 10,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "6EV399",
+       "emnenavn": "Master thesis in applied ecology",
+       "studiepoeng": 60,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": "Går over tre semestre ifølge studiemodell-tabellen: 10 sp i 1. år vår, 20 sp i 2. år høst og 30 sp i 2. år vår (totalt 60 sp).",
+       "years": []
+      }
+     ],
+     "spesialiseringer": []
+    },
+    {
+     "entryId": "ntnu_biologi2",
+     "shortName": "NTNU Biologi",
+     "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+     "isNmbu": false,
+     "programnavn": "Biologi (master 2 år)",
+     "studieplanAar": "2025/2026",
+     "kilder": [
+      "https://www.ntnu.no/studier/msbio",
+      "https://www.ntnu.no/studier/studieplan#programmeCode=MSBIO&year=0",
+      "https://www.ntnu.no/web/studier/studieplan?p_p_id=studyprogrammeplannerportlet_WAR_studyprogrammeplannerportlet_INSTANCE_KzJMPh2hQuXL&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=studyplan&p_p_cacheability=cacheLevelPage&code=MSBIO&year=2025"
+     ],
+     "totaltStudiepoeng": 120,
+     "obligatoriskeStudiepoeng": 67.5,
+     "merknad": "Kilde er NTNUs studieplan-API (studyprogrammeplannerportlet, resource_id=studyplan) for MSBIO, lest for kull 2025 (fullstendig 4-periodig/2-årig plan, oppdatert 12.05.2026); kull 2026 har foreløpig ingen publisert studieplan. Programmet har fire studieretninger (Ecology/Behaviour/Evolution/Biosystematics, Cell and Molecular Biology, Physiology, Biodiversity and Systematics/Nabis), valgt av studenten ved opptak eller tidlig i studiet. I studieretningen «Ecology, Behaviour, Evolution and Biosystematics» finnes ingen rent obligatoriske enkeltemner utover fellesdelen; i stedet kreves minst 2 emner fra en gruppe A (BI3052 Study Design og BI3106 Ecological and evolutionary dynamics i 1. år høst; BI3036 Plant Ecology, BI3040 Behavioural Ecology og BI3082 Advanced Conservation Biology i 1. år vår; BI3051 Quantitative Analyses in Biology i 2. år høst - alle 7,5 sp), et obligatorisk valg mellom alternativer og derfor ikke ført opp som enkeltemner. I studieretningen «Cell and Molecular Biology» er masteroppgaven et obligatorisk valg mellom BI3900 (Master Thesis in Biology, ført opp i fellesdelen) og BT3920 (Master Thesis in Biology at IBT), begge 60 sp over fire semestre. Experts in Teamwork (EiT, 7,5 sp, 1. år vår) er obligatorisk for alle fire studieretninger, men studenten velger selv blant et stort antall emnekoder og er derfor ikke ført opp som enkeltemne. «Biodiversity and Systematics (Nabis)» har ingen studieretningsspesifikke obligatoriske emner utover fellesdelen i studieplan-API-et. BI3086 «How to do Science» (0 sp, 1. år høst) er merket obligatorisk for studieretningene Ecology og Cell and Molecular Biology i API-dataene, men ikke for Physiology eller Biodiversity and Systematics - dette fremstår som en inkonsistens i kildedataene og er derfor ikke ført opp i noen av listene. dbhEmnekoder er ikke fylt ut siden DBH-rapportering for dette programmet ikke er slått opp i dette arbeidet.",
+     "obligatoriske": [
+      {
+       "emnekode": "HMS0003",
+       "emnenavn": "Health, Safety and Environment (HSE) course for master students",
+       "studiepoeng": 0,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "Felles for alle fire studieretninger.",
+       "years": []
+      },
+      {
+       "emnekode": "BI3085",
+       "emnenavn": "Biology without borders",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "Går over alle fire semestre (del 1-4 av 4), 7,5 sp totalt. Felles for alle fire studieretninger.",
+       "years": []
+      },
+      {
+       "emnekode": "BI3900",
+       "emnenavn": "Master Thesis in Biology",
+       "studiepoeng": 60,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "Går over alle fire semestre (del 1-4 av 4), 60 sp totalt. Obligatorisk for studieretningene Ecology/Behaviour/Evolution/Biosystematics, Physiology og Biodiversity and Systematics (Nabis). I studieretningen Cell and Molecular Biology er dette et obligatorisk valg mellom BI3900 og BT3920 (Master Thesis in Biology at IBT) - se merknad på den studieretningen.",
+       "years": []
+      }
+     ],
+     "spesialiseringer": [
+      {
+       "navn": "Ecology, Behaviour, Evolution and Biosystematics",
+       "obligatoriske": []
+      },
+      {
+       "navn": "Cell and Molecular Biology",
+       "obligatoriske": [
+        {
+         "emnekode": "BI3016",
+         "emnenavn": "Molecular Cell Biology",
+         "studiepoeng": 7.5,
+         "aar": 1,
+         "semester": "høst",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        }
+       ]
+      },
+      {
+       "navn": "Physiology",
+       "obligatoriske": [
+        {
+         "emnekode": "BI3024",
+         "emnenavn": "Advanced Physiology",
+         "studiepoeng": 7.5,
+         "aar": 1,
+         "semester": "vår",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        }
+       ]
+      },
+      {
+       "navn": "Biodiversity and Systematics (Nabis)",
+       "obligatoriske": []
+      }
+     ]
+    },
+    {
+     "entryId": "uit_biologi2",
+     "shortName": "UiT Biologi",
+     "institusjon": "UiT Norges arktiske universitet",
+     "isNmbu": false,
+     "programnavn": "Biology (master 2 år)",
+     "studieplanAar": "2026/2027",
+     "kilder": [
+      "https://uit.no/utdanning/program/270464/biology_-_master",
+      "https://uit.no/Content/916698/cache=20262808095126/Study%20plan%20Master%20in%20Biology%202026.pdf"
+     ],
+     "totaltStudiepoeng": 120,
+     "obligatoriskeStudiepoeng": 70,
+     "merknad": "Kilde er programbeskrivelsen («Study plan Master in Biology») godkjent av fakultetsstyret 17.06.2025, hentet fra en 2026-datert PDF-lenke på programsiden. Studiet er et toårig heltids campusstudium i Tromsø med sju spesialiseringer valgt ved opptak (søkerkode per spesialisering). Studentene skal fullføre emner for minst 60 sp i de to første semestrene (10+10+10 sp-format per semester), hvorav de spesialiseringsspesifikke obligatoriske emnene over er en del; resten fylles med valgfrie emner etter studentens interesse/prosjekt. Alle spesialiseringer krever i tillegg 4 sikkerhetskurs uten studiepoeng (HMS-0501 til HMS-0504) og TVR-3000 i 1. semester. BIO-3012 (Ecological methodology) er obligatorisk i fem av de sju spesialiseringene, men ikke i «Arctic animal biology» og «Molecular environmental biology», der andre emner dekker tilsvarende plass. dbhEmnekoder er ikke fylt ut siden DBH-rapportering for dette programmet ikke er slått opp i dette arbeidet. Denne filen dekker uit_biologi2, som inngår i sammenligningsgruppen økologi2.",
+     "obligatoriske": [
+      {
+       "emnekode": "TVR-3000",
+       "emnenavn": "on sustainability, innovation and collaborative learning",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "Felles for alle sju spesialiseringer. I tillegg må alle studenter gjennomføre fire sikkerhetskurs uten studiepoeng ved semesterstart (HMS-0501, HMS-0502, HMS-0503, HMS-0504).",
+       "years": []
+      },
+      {
+       "emnekode": "BIO-3950",
+       "emnenavn": "Master's Thesis Biology",
+       "studiepoeng": 60,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "Går over hele 2. studieår (3. og 4. semester, 30 sp hvert semester). Felles for alle sju spesialiseringer.",
+       "years": []
+      }
+     ],
+     "spesialiseringer": [
+      {
+       "navn": "Arctic animal biology",
+       "obligatoriske": [
+        {
+         "emnekode": "BIO-3035",
+         "emnenavn": "Arctic Animal Biology: Physiological and Behavioural Adaptations to the Environment",
+         "studiepoeng": 10,
+         "aar": 1,
+         "semester": "høst",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "BIO-3014",
+         "emnenavn": "Biological timekeeping",
+         "studiepoeng": 10,
+         "aar": 1,
+         "semester": "vår",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "BIO-3036",
+         "emnenavn": "Arctic Animal Biology: Exploring Physiological Control Mechanisms",
+         "studiepoeng": 10,
+         "aar": 1,
+         "semester": "vår",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        }
+       ]
+      },
+      {
+       "navn": "Arctic marine ecology",
+       "obligatoriske": [
+        {
+         "emnekode": "BIO-3015",
+         "emnenavn": "Arctic Marine System Biology and Climate Change",
+         "studiepoeng": 10,
+         "aar": 1,
+         "semester": "høst",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "BIO-3012",
+         "emnenavn": "Ecological methodology: Study design and statistical analysis",
+         "studiepoeng": 10,
+         "aar": 1,
+         "semester": "vår",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        }
+       ]
+      },
+      {
+       "navn": "Arctic marine ecotoxicology",
+       "obligatoriske": [
+        {
+         "emnekode": "BIO-3009",
+         "emnenavn": "Arctic Marine Pollution",
+         "studiepoeng": 10,
+         "aar": 1,
+         "semester": "høst",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "BIO-3012",
+         "emnenavn": "Ecological methodology: Study design and statistical analysis",
+         "studiepoeng": 10,
+         "aar": 1,
+         "semester": "vår",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "BIO-3020",
+         "emnenavn": "Fundamentals of Ecotoxicology",
+         "studiepoeng": 10,
+         "aar": 1,
+         "semester": "vår",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        }
+       ]
+      },
+      {
+       "navn": "Ecology and sustainability",
+       "obligatoriske": [
+        {
+         "emnekode": "BIO-3021",
+         "emnenavn": "Sustainability Science",
+         "studiepoeng": 10,
+         "aar": 1,
+         "semester": "høst",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "BIO-3012",
+         "emnenavn": "Ecological methodology: Study design and statistical analysis",
+         "studiepoeng": 10,
+         "aar": 1,
+         "semester": "vår",
+         "dbhEmnekoder": [],
+         "merknad": "I tillegg kreves et valgfritt emne innen økologi-temaet (10 sp, vår) - obligatorisk valg mellom flere emner, ikke ført opp som enkeltemne.",
+         "years": []
+        }
+       ]
+      },
+      {
+       "navn": "Freshwater ecology",
+       "obligatoriske": [
+        {
+         "emnekode": "BIO-3505",
+         "emnenavn": "Ecological Interactions",
+         "studiepoeng": 10,
+         "aar": 1,
+         "semester": "høst",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "BIO-3012",
+         "emnenavn": "Ecological methodology: Study design and statistical analysis",
+         "studiepoeng": 10,
+         "aar": 1,
+         "semester": "vår",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "BIO-3518",
+         "emnenavn": "Northern Inland Waters and Climate Change",
+         "studiepoeng": 10,
+         "aar": 1,
+         "semester": "vår",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        }
+       ]
+      },
+      {
+       "navn": "Molecular environmental biology",
+       "obligatoriske": [
+        {
+         "emnekode": "BIO-3037",
+         "emnenavn": "Molecular Methods in Plant Biology",
+         "studiepoeng": 10,
+         "aar": 1,
+         "semester": "høst",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "BIO-3038",
+         "emnenavn": "Molecular Methods in Environmental Microbiology",
+         "studiepoeng": 10,
+         "aar": 1,
+         "semester": "høst",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "BIO-3027",
+         "emnenavn": "Scientific Programming with Python in the life sciences",
+         "studiepoeng": 10,
+         "aar": 1,
+         "semester": "vår",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        }
+       ]
+      },
+      {
+       "navn": "Northern populations and ecosystems",
+       "obligatoriske": [
+        {
+         "emnekode": "BIO-3013",
+         "emnenavn": "Northern Food Web Ecology",
+         "studiepoeng": 10,
+         "aar": 1,
+         "semester": "høst",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "BIO-3012",
+         "emnenavn": "Ecological methodology: Study design and statistical analysis",
+         "studiepoeng": 10,
+         "aar": 1,
+         "semester": "vår",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "naturforvaltning2",
+   "label": "Naturforvaltning (2-årig master)",
+   "level": "master2",
+   "programs": [
+    {
+     "entryId": "nmbu_naturforvaltning2",
+     "shortName": "NMBU",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "isNmbu": true,
+     "programnavn": "Naturforvaltning (master 2 år)",
+     "studieplanAar": "2026/2027",
+     "kilder": [
+      "https://www.nmbu.no/studier/master-2-aar/naturforvaltning",
+      "https://static02.nmbu.no/mina/studier/M-NF.php?sprx=n&aarx=2026"
+     ],
+     "totaltStudiepoeng": 120,
+     "obligatoriskeStudiepoeng": 75,
+     "merknad": "Kilde er MINA-fakultetets studieplan-verktøy for kullet med studiestart høsten 2026. Utover de sju emnene over (75 sp) stiller programmet flere obligatoriske valgkrav som ikke er ført opp som enkeltemner: (1) studenter uten bakgrunn i statistikk må i tillegg ta STAT100 Statistikk (10 sp); (2) ett metodeemne må velges mellom MAST301 (5 sp), MINA310 (5 sp) og MINA311 (10 sp); (3) minst 15 sp og minst to av en liste 300-nivå emner (bl.a. ECN375, ECOL310, ECOL350, ECOL380, EDS348 m.fl.) må inngå i graden. dbhEmnekoder er ikke fylt ut siden DBH-rapportering for dette programmet ikke er slått opp i dette arbeidet.",
+     "obligatoriske": [
+      {
+       "emnekode": "JUS220",
+       "emnenavn": "Miljøforvaltningsrett",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MINA320",
+       "emnenavn": "Tverrfaglig samarbeid og kontroverser om bærekraft",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "MINA321 (engelsk versjon av samme emne) kan tas i Januarblokk i stedet.",
+       "years": []
+      },
+      {
+       "emnekode": "NATF302",
+       "emnenavn": "Norsk naturforvaltning",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "Ligger i Augustblokk.",
+       "years": []
+      },
+      {
+       "emnekode": "APL240",
+       "emnenavn": "Miljø og planlegging, del 1",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "APL241",
+       "emnenavn": "Miljø og planlegging, del 2",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "NATF301",
+       "emnenavn": "Praktisk naturforvaltning",
+       "studiepoeng": 5,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "Kan erstattes av NATF370 Arbeidslivserfaring i økologi og naturforvaltning.",
+       "years": []
+      },
+      {
+       "emnekode": "M45-NF",
+       "emnenavn": "Masteroppgave",
+       "studiepoeng": 45,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "Går over tre deler ifølge studieplan-tabellen: 10 sp feltarbeid i Juniblokk 1. år, 5 sp i 2. år høst og 30 sp i 2. år vår (totalt 45 sp). Nettsiden lenker feilaktig emnekoden som «m60-nf», men den koden finnes ikke hos NMBU; den fungerende emnesiden er M45-NF Masteroppgave (45 sp), som stemmer med sp-summen i tabellen.",
+       "years": []
+      }
+     ],
+     "spesialiseringer": []
+    },
+    {
+     "entryId": "ntnu_naturressurs2",
+     "shortName": "NTNU",
+     "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+     "isNmbu": false,
+     "programnavn": "Naturressursforvaltning (master 2 år)",
+     "studieplanAar": "2025/2026",
+     "kilder": [
+      "https://www.ntnu.no/studier/msnarm",
+      "https://www.ntnu.no/studier/studieplan#programmeCode=MSNARM&year=0",
+      "https://www.ntnu.no/web/studier/studieplan?p_p_id=studyprogrammeplannerportlet_WAR_studyprogrammeplannerportlet_INSTANCE_KzJMPh2hQuXL&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=studyplan&p_p_cacheability=cacheLevelPage&code=MSNARM&year=2025"
+     ],
+     "totaltStudiepoeng": 120,
+     "obligatoriskeStudiepoeng": 30,
+     "merknad": "Kilde er NTNUs studieplan-API (studyprogrammeplannerportlet, resource_id=studyplan) for MSNARM, lest for kull 2025 (fullstendig 4-periodig/2-årig plan, oppdatert 12.05.2026); kull 2026 har foreløpig ingen publisert studieplan. Programmet har to studieretninger (Biology og Geography) med felles kjerne (30 sp) i 1. år, men egen masteroppgave (60 sp, NATRBI3900 for Biology / GEOG3940 for Geography) i 2. år. Studieretningen Geography har i tillegg et obligatorisk krav om minst ett emne fra en gruppe A (GEOG3005 Qualitative Methods, GEOG3006 Quantitative Methods eller GEOG3523 GIS Data Capture and Mapping, alle 7,5 sp, 1. år høst) - et obligatorisk valg mellom alternativer og derfor ikke ført opp som enkeltemne. dbhEmnekoder er ikke fylt ut siden DBH-rapportering for dette programmet ikke er slått opp i dette arbeidet.",
+     "obligatoriske": [
+      {
+       "emnekode": "HMS0003",
+       "emnenavn": "Health, Safety and Environment (HSE) course for master students",
+       "studiepoeng": 0,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "Ført opp som obligatorisk for studieretningen Biology i studieplan-API-et; ikke listet for studieretningen Geography, som trolig er en inkonsistens i kildedataene.",
+       "years": []
+      },
+      {
+       "emnekode": "GEOG3030",
+       "emnenavn": "Natural Resources Planning and Management",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "Felles for begge studieretninger.",
+       "years": []
+      },
+      {
+       "emnekode": "RFEL3081",
+       "emnenavn": "Interdisciplinary Project for Environmental Sustainability",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "Felles for begge studieretninger.",
+       "years": []
+      },
+      {
+       "emnekode": "RFEL3080",
+       "emnenavn": "Scientific Research Seminar in Natural Resource Management",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "Går over alle fire semestre (del 1-4 av 4), 7,5 sp totalt. Felles for begge studieretninger.",
+       "years": []
+      },
+      {
+       "emnekode": "RFEL3082",
+       "emnenavn": "Sustainable Management of Ecosystem Services",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": "Felles for begge studieretninger.",
+       "years": []
+      }
+     ],
+     "spesialiseringer": [
+      {
+       "navn": "Biology",
+       "obligatoriske": [
+        {
+         "emnekode": "BI3086",
+         "emnenavn": "How to do Science",
+         "studiepoeng": 0,
+         "aar": 1,
+         "semester": "høst",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "NATRBI3900",
+         "emnenavn": "Master Thesis in Natural Resources Management - Biology",
+         "studiepoeng": 60,
+         "aar": 2,
+         "semester": "høst",
+         "dbhEmnekoder": [],
+         "merknad": "Går over hele 2. studieår (del 1-2 av 2, periode 3 og 4).",
+         "years": []
+        }
+       ]
+      },
+      {
+       "navn": "Geography",
+       "obligatoriske": [
+        {
+         "emnekode": "GEOG3940",
+         "emnenavn": "Master's Thesis - Natural Resources Management - Geography",
+         "studiepoeng": 60,
+         "aar": 2,
+         "semester": "høst",
+         "dbhEmnekoder": [],
+         "merknad": "Går over hele 2. studieår (del 1-2 av 2, periode 3 og 4).",
+         "years": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "entryId": "usn_okologi_miljoforvaltning2",
+     "shortName": "USN",
+     "institusjon": "Universitetet i Sørøst-Norge",
+     "isNmbu": false,
+     "programnavn": "Økologi og miljøforvaltning (master 2 år)",
+     "studieplanAar": "2026/2027",
+     "kilder": [
+      "https://www.usn.no/studier/master-i-okologi-og-miljoforvaltning/",
+      "https://www.usn.no/studier/studie-og-emneplaner/#/studieplan/1918_2026_HØST"
+     ],
+     "totaltStudiepoeng": 120,
+     "obligatoriskeStudiepoeng": 75,
+     "merknad": "Kilde er USNs studiemodell-verktøy for kullet med studiestart høst 2026 (emnekode 1918). Programmet har ingen studieretninger. Utover de tre obligatoriske emnene (75 sp) skal studenten ta totalt 6 valgemner à 7,5 sp (45 sp) blant EE503 Bærekraftig vannforvaltning, EE504 Habitat Ecology, EE506 Individual Project, MSM4330 Spatial analyses (alle høst), EE507 Ecotoxicology, EE508 Applied Molecular Genetics, EE509 Landscape Analysis and Remote Sensing, EEWORK Approved Practice og EE511 Conservation Biology (alle vår) - fri valgfrihet, ikke ført opp som enkeltemner. dbhEmnekoder er ikke fylt ut siden DBH-rapportering for dette programmet ikke er slått opp i dette arbeidet.",
+     "obligatoriske": [
+      {
+       "emnekode": "EE501",
+       "emnenavn": "Climate Change and Ecology",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "EE502",
+       "emnenavn": "Statistics and Study Design",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "4317",
+       "emnenavn": "Masteroppgave",
+       "studiepoeng": 60,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "Går over 2 semestre ifølge studiemodellen: 2. år høst og 2. år vår.",
+       "years": []
+      }
+     ],
+     "spesialiseringer": []
+    },
+    {
+     "entryId": "inn_anvendt_okologi_nf2",
+     "shortName": "INN",
+     "institusjon": "Universitetet i Innlandet",
+     "isNmbu": false,
+     "programnavn": "Anvendt økologi (master 2 år)",
+     "studieplanAar": "2026/2027",
+     "kilder": [
+      "https://www.inn.no/studier/vare-studier/master-i-anvendt-okologi/",
+      "https://studiekatalog.edutorium.no/inn/nb/program/MAOK"
+     ],
+     "totaltStudiepoeng": 120,
+     "obligatoriskeStudiepoeng": 120,
+     "merknad": "Toårig heltids campusstudium (Evenstad) med studiestart høst 2026. Alle ni emner i hovedstudiemodellen er merket «O» (obligatorisk) i INNs studiekatalog og summerer seg nøyaktig til 120 sp (25+35+30+30 per semester), så det finnes ingen valgfri spesialisering innenfor de 120 sp. Katalogen lister i tillegg en egen liten valgfagsmodell (6EV315 Chemical and physical capture of Scandinavian Mammals, MAOK4006 Biostatistics II, 2,5 sp hver, «V»-type) som ikke inngår i de obligatoriske 120 sp. Programmet «Anvendt økologi» ved INN inngår i to sammenligningsgrupper i programkart.json (okologi2 og naturforvaltning2); denne filen brukes for begge (inn_anvendt_okologi2 og inn_anvendt_okologi_nf2), da det er samme studieplan. dbhEmnekoder er ikke fylt ut siden DBH-rapportering for dette programmet ikke er slått opp i dette arbeidet.",
+     "obligatoriske": [
+      {
+       "emnekode": "MAOK4001",
+       "emnenavn": "Concepts in ecology",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MAOK4002",
+       "emnenavn": "Biostatistics",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MAOK4012",
+       "emnenavn": "Nature in the Anthropocene",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MAOK4013",
+       "emnenavn": "Wildlife population health",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MAOK4011",
+       "emnenavn": "Human-Wildlife Conflicts and Coexistence",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "SKO4003S",
+       "emnenavn": "Geographic Information Systems",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MAOK4004",
+       "emnenavn": "Wildlife monitoring",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MAOK4005",
+       "emnenavn": "Research process and topics",
+       "studiepoeng": 10,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "6EV399",
+       "emnenavn": "Master thesis in applied ecology",
+       "studiepoeng": 60,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": "Går over tre semestre ifølge studiemodell-tabellen: 10 sp i 1. år vår, 20 sp i 2. år høst og 30 sp i 2. år vår (totalt 60 sp).",
+       "years": []
+      }
+     ],
+     "spesialiseringer": []
+    }
+   ]
+  },
+  {
+   "id": "miljonatur2",
+   "label": "Miljøvitenskap (2-årig master)",
+   "level": "master2",
+   "programs": [
+    {
+     "entryId": "nmbu_miljovitenskap2",
+     "shortName": "NMBU",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "isNmbu": true,
+     "programnavn": "Miljøvitenskap (master 2 år)",
+     "studieplanAar": "2026/2027",
+     "kilder": [
+      "https://www.nmbu.no/studier/master-2-aar/miljovitenskap",
+      "https://static02.nmbu.no/mina/studier/M-MILJ%C3%98.php?sprx=n&aarx=2026"
+     ],
+     "totaltStudiepoeng": 120,
+     "obligatoriskeStudiepoeng": 55,
+     "merknad": "Kilde er MINA-fakultetets studieplan-verktøy for kullet med studiestart høsten 2026. Utover de tre emnene over (55 sp) stiller programmet krav om at minst to hovedemner innen miljøvitenskap må inngå for å oppnå mastergraden (bl.a. FMI310 Miljøgifter og økotoksikologi, GEO300 Videregående hydrogeologi, GEO310 Paleomiljø og klimaendringer, JORD310 Jordforurensning og bærekraft, JORD330 Jordhelse og bærekraftig bruk av jordressurser, MILJØ300 Globale miljøendringer og jordsystemet, VANN300 Vannforurensning m.fl., alle 10 sp) - et obligatorisk valg mellom alternativer og derfor ikke ført opp som enkeltemner. dbhEmnekoder er ikke fylt ut siden DBH-rapportering for dette programmet ikke er slått opp i dette arbeidet.",
+     "obligatoriske": [
+      {
+       "emnekode": "MILJO302",
+       "emnenavn": "Miljøvitenskap",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "Ligger i Augustblokk. Emnekode skrives MILJØ302 på NMBUs sider.",
+       "years": []
+      },
+      {
+       "emnekode": "MINA321",
+       "emnenavn": "Tverrfaglig samarbeid og kontroverser om bærekraft - engelsk versjon",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": "Ligger i Januarblokk. MINA320 (norsk versjon av samme emne) kan tas i høstparallellen i stedet.",
+       "years": []
+      },
+      {
+       "emnekode": "M45-MILJO",
+       "emnenavn": "Masteroppgave",
+       "studiepoeng": 45,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "Går over to semestre: 15 sp i 2. år høst og 30 sp i 2. år vår. Emnekode skrives M45-MILJØ på NMBUs sider.",
+       "years": []
+      }
+     ],
+     "spesialiseringer": []
+    },
+    {
+     "entryId": "nmbu_mina2_forgjenger",
+     "shortName": "NMBU Miljø og naturressurser",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "isNmbu": true,
+     "programnavn": "Miljø og naturressurser (master 2 år, forgjenger)",
+     "studieplanAar": null,
+     "kilder": [],
+     "totaltStudiepoeng": null,
+     "obligatoriskeStudiepoeng": null,
+     "merknad": "Studieplan ikke hentet ennå.",
+     "obligatoriske": [],
+     "spesialiseringer": []
+    },
+    {
+     "entryId": "ntnu_miljotoks2",
+     "shortName": "NTNU Miljøtoksikologi",
+     "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+     "isNmbu": false,
+     "programnavn": "Miljøtoksikologi og naturmiljøkjemi (master 2 år)",
+     "studieplanAar": null,
+     "kilder": [],
+     "totaltStudiepoeng": null,
+     "obligatoriskeStudiepoeng": null,
+     "merknad": "Studieplan ikke hentet ennå.",
+     "obligatoriske": [],
+     "spesialiseringer": []
+    },
+    {
+     "entryId": "ntnu_industriell_okologi2",
+     "shortName": "NTNU Industriell økologi",
+     "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+     "isNmbu": false,
+     "programnavn": "Industrial Ecology (master 2 år)",
+     "studieplanAar": null,
+     "kilder": [],
+     "totaltStudiepoeng": null,
+     "obligatoriskeStudiepoeng": null,
+     "merknad": "Studieplan ikke hentet ennå.",
+     "obligatoriske": [],
+     "spesialiseringer": []
+    },
+    {
+     "entryId": "uio_geofag2",
+     "shortName": "UiO Geofag",
+     "institusjon": "Universitetet i Oslo",
+     "isNmbu": false,
+     "programnavn": "Geofag (master 2 år)",
+     "studieplanAar": null,
+     "kilder": [],
+     "totaltStudiepoeng": null,
+     "obligatoriskeStudiepoeng": null,
+     "merknad": "Studieplan ikke hentet ennå.",
+     "obligatoriske": [],
+     "spesialiseringer": []
+    },
+    {
+     "entryId": "uib_geovitenskap2",
+     "shortName": "UiB Geovitskap",
+     "institusjon": "Universitetet i Bergen",
+     "isNmbu": false,
+     "programnavn": "Geovitskap (master 2 år)",
+     "studieplanAar": null,
+     "kilder": [],
+     "totaltStudiepoeng": null,
+     "obligatoriskeStudiepoeng": null,
+     "merknad": "Studieplan ikke hentet ennå.",
+     "obligatoriske": [],
+     "spesialiseringer": []
+    }
+   ]
+  },
+  {
+   "id": "fornybar2",
+   "label": "Fornybar energi (2-årig master)",
+   "level": "master2",
+   "programs": [
+    {
+     "entryId": "nmbu_fornybar2",
+     "shortName": "NMBU",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "isNmbu": true,
+     "programnavn": "Fornybar energi (master 2 år)",
+     "studieplanAar": null,
+     "kilder": [],
+     "totaltStudiepoeng": null,
+     "obligatoriskeStudiepoeng": null,
+     "merknad": "Studieplan ikke hentet ennå.",
+     "obligatoriske": [],
+     "spesialiseringer": []
+    },
+    {
+     "entryId": "uio_fornybare_energisystemer2",
+     "shortName": "UiO",
+     "institusjon": "Universitetet i Oslo",
+     "isNmbu": false,
+     "programnavn": "Fornybare energisystemer (master 2 år)",
+     "studieplanAar": null,
+     "kilder": [],
+     "totaltStudiepoeng": null,
+     "obligatoriskeStudiepoeng": null,
+     "merknad": "Studieplan ikke hentet ennå.",
+     "obligatoriske": [],
+     "spesialiseringer": []
+    },
+    {
+     "entryId": "uia_fornybar2",
+     "shortName": "UiA",
+     "institusjon": "Universitetet i Agder",
+     "isNmbu": false,
+     "programnavn": "Fornybar energi, sivilingeniør (master 2 år)",
+     "studieplanAar": null,
+     "kilder": [],
+     "totaltStudiepoeng": null,
+     "obligatoriskeStudiepoeng": null,
+     "merknad": "Studieplan ikke hentet ennå.",
+     "obligatoriske": [],
+     "spesialiseringer": []
+    },
+    {
+     "entryId": "ntnu_baerekraftig_energi2",
+     "shortName": "NTNU",
+     "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+     "isNmbu": false,
+     "programnavn": "Bærekraftig energi (master 2 år)",
+     "studieplanAar": null,
+     "kilder": [],
+     "totaltStudiepoeng": null,
+     "obligatoriskeStudiepoeng": null,
+     "merknad": "Studieplan ikke hentet ennå.",
+     "obligatoriske": [],
+     "spesialiseringer": []
+    },
+    {
+     "entryId": "hvl_energiteknologi2",
+     "shortName": "HVL",
+     "institusjon": "Høgskulen på Vestlandet",
+     "isNmbu": false,
+     "programnavn": "Bærekraftig energiteknologi, sivilingeniør (master 2 år)",
+     "studieplanAar": null,
+     "kilder": [],
+     "totaltStudiepoeng": null,
+     "obligatoriskeStudiepoeng": null,
+     "merknad": "Studieplan ikke hentet ennå.",
+     "obligatoriske": [],
+     "spesialiseringer": []
+    }
+   ]
+  }
+ ]
+}

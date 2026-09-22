@@ -17,7 +17,9 @@
       "studiepoeng": 5,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "BIO302-1"
+      ],
       "merknad": "Ligger i augustblokk (før høstparallell). Felles for alle fire studieretninger."
     },
     {
@@ -26,7 +28,9 @@
       "studiepoeng": 60,
       "aar": 2,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "M60-BIOL-1"
+      ],
       "merknad": "Går over høstparallell og vårparallell i 2. studieår (planlegging anbefales startet allerede i januarblokk/vårparallell 1. år). Felles for alle fire studieretninger."
     }
   ],
@@ -68,7 +72,9 @@
           "studiepoeng": 10,
           "aar": 1,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "BIO322-1"
+          ],
           "merknad": null
         }
       ]
@@ -82,7 +88,9 @@
           "studiepoeng": 10,
           "aar": 1,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "BIO321-1"
+          ],
           "merknad": null
         },
         {

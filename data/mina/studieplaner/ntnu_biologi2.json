@@ -43,8 +43,7 @@
   "spesialiseringer": [
     {
       "navn": "Ecology, Behaviour, Evolution and Biosystematics",
-      "obligatoriske": [],
-      "merknad": "Ingen enkeltemner er rent obligatoriske utover kjernen. Studieretningen krever i stedet minst 2 emner fra en gruppe A (BI3052 Study Design og BI3106 Ecological and evolutionary dynamics i 1. år høst; BI3036 Plant Ecology, BI3040 Behavioural Ecology og BI3082 Advanced Conservation Biology i 1. år vår; BI3051 Quantitative Analyses in Biology i 2. år høst - alle 7,5 sp), et obligatorisk valg mellom alternativer og derfor ikke ført opp som enkeltemner. I tillegg er Experts in Teamwork (EiT, 7,5 sp, 1. år vår) obligatorisk, men studenten velger selv blant et stort antall emnekoder."
+      "obligatoriske": []
     },
     {
       "navn": "Cell and Molecular Biology",
@@ -58,8 +57,7 @@
           "dbhEmnekoder": [],
           "merknad": null
         }
-      ],
-      "merknad": "I denne studieretningen er masteroppgaven et obligatorisk valg mellom BI3900 (Master Thesis in Biology) og BT3920 (Master Thesis in Biology at IBT), begge 60 sp over fire semestre - ikke ført opp som fast emnekode i fellesdelen for denne retningen. Experts in Teamwork (EiT, 7,5 sp, 1. år vår) er obligatorisk, men studenten velger selv blant et stort antall emnekoder."
+      ]
     },
     {
       "navn": "Physiology",
@@ -77,9 +75,8 @@
     },
     {
       "navn": "Biodiversity and Systematics (Nabis)",
-      "obligatoriske": [],
-      "merknad": "Ingen studieretningsspesifikke obligatoriske emner utover fellesdelen ble funnet i studieplan-API-et."
+      "obligatoriske": []
     }
   ],
-  "merknad": "Kilde er NTNUs studieplan-API (studyprogrammeplannerportlet, resource_id=studyplan) for MSBIO, lest for kull 2025 (fullstendig 4-periodig/2-årig plan, oppdatert 12.05.2026); kull 2026 har foreløpig ingen publisert studieplan. Programmet har fire studieretninger (Ecology/Behaviour/Evolution/Biosystematics, Cell and Molecular Biology, Physiology, Biodiversity and Systematics/Nabis), valgt av studenten ved opptak eller tidlig i studiet. BI3086 «How to do Science» (0 sp, 1. år høst) er merket obligatorisk for studieretningene Ecology og Cell and Molecular Biology i API-dataene, men ikke for Physiology eller Biodiversity and Systematics - dette fremstår som en inkonsistens i kildedataene og er derfor ikke ført opp i noen av listene. dbhEmnekoder er ikke fylt ut siden DBH-rapportering for dette programmet ikke er slått opp i dette arbeidet."
+  "merknad": "Kilde er NTNUs studieplan-API (studyprogrammeplannerportlet, resource_id=studyplan) for MSBIO, lest for kull 2025 (fullstendig 4-periodig/2-årig plan, oppdatert 12.05.2026); kull 2026 har foreløpig ingen publisert studieplan. Programmet har fire studieretninger (Ecology/Behaviour/Evolution/Biosystematics, Cell and Molecular Biology, Physiology, Biodiversity and Systematics/Nabis), valgt av studenten ved opptak eller tidlig i studiet. I studieretningen «Ecology, Behaviour, Evolution and Biosystematics» finnes ingen rent obligatoriske enkeltemner utover fellesdelen; i stedet kreves minst 2 emner fra en gruppe A (BI3052 Study Design og BI3106 Ecological and evolutionary dynamics i 1. år høst; BI3036 Plant Ecology, BI3040 Behavioural Ecology og BI3082 Advanced Conservation Biology i 1. år vår; BI3051 Quantitative Analyses in Biology i 2. år høst - alle 7,5 sp), et obligatorisk valg mellom alternativer og derfor ikke ført opp som enkeltemner. I studieretningen «Cell and Molecular Biology» er masteroppgaven et obligatorisk valg mellom BI3900 (Master Thesis in Biology, ført opp i fellesdelen) og BT3920 (Master Thesis in Biology at IBT), begge 60 sp over fire semestre. Experts in Teamwork (EiT, 7,5 sp, 1. år vår) er obligatorisk for alle fire studieretninger, men studenten velger selv blant et stort antall emnekoder og er derfor ikke ført opp som enkeltemne. «Biodiversity and Systematics (Nabis)» har ingen studieretningsspesifikke obligatoriske emner utover fellesdelen i studieplan-API-et. BI3086 «How to do Science» (0 sp, 1. år høst) er merket obligatorisk for studieretningene Ecology og Cell and Molecular Biology i API-dataene, men ikke for Physiology eller Biodiversity and Systematics - dette fremstår som en inkonsistens i kildedataene og er derfor ikke ført opp i noen av listene. dbhEmnekoder er ikke fylt ut siden DBH-rapportering for dette programmet ikke er slått opp i dette arbeidet."
 }

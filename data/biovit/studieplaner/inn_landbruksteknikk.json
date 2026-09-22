@@ -1,0 +1,215 @@
+{
+  "entryId": "inn_landbruksteknikk",
+  "programnavn": "Landbruksteknikk (bachelor)",
+  "institusjon": "Universitetet i Innlandet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.inn.no/studier/vare-studier/bachelor-i-landbruksteknikk/",
+    "https://studiekatalog.edutorium.no/inn/nb/program/BALA/2026"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 180,
+  "obligatoriske": [
+    {
+      "emnekode": "LAN1101",
+      "emnenavn": "Innføring i landbruk",
+      "studiepoeng": 15,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "LAN1101-1"
+      ],
+      "merknad": "Felles emne med bachelor i agronomi."
+    },
+    {
+      "emnekode": "AGR1101",
+      "emnenavn": "Naturgrunnlaget",
+      "studiepoeng": 15,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "AGR1101-1"
+      ],
+      "merknad": "Felles emne med bachelor i agronomi."
+    },
+    {
+      "emnekode": "6JB295",
+      "emnenavn": "Rapport og analyse",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "6JB295-1"
+      ],
+      "merknad": "Felles emne med bachelor i agronomi."
+    },
+    {
+      "emnekode": "AGR1102",
+      "emnenavn": "Landbruk, miljø og samfunn",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "AGR1102-1"
+      ],
+      "merknad": "Felles emne med bachelor i agronomi."
+    },
+    {
+      "emnekode": "AGR1103",
+      "emnenavn": "Planter og produksjon",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "AGR1103-1"
+      ],
+      "merknad": "Felles emne med bachelor i agronomi."
+    },
+    {
+      "emnekode": "LAN1102",
+      "emnenavn": "Landbruksmaskiner",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "LAN1102-1"
+      ],
+      "merknad": "Felles emne med bachelor i agronomi."
+    },
+    {
+      "emnekode": "6JB132",
+      "emnenavn": "Fysikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "6JB132-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "6JB201",
+      "emnenavn": "Landbruksøkonomi og grønt entreprenørskap",
+      "studiepoeng": 15,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "6JB201-1"
+      ],
+      "merknad": "Felles emne med bachelor i agronomi."
+    },
+    {
+      "emnekode": "LAN2304",
+      "emnenavn": "Utvikling og dimensjonering av landbruksmaskiner",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "LAN2304-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "AGR2202",
+      "emnenavn": "Vitenskapelig metode og statistikk",
+      "studiepoeng": 15,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "AGR2202-1"
+      ],
+      "merknad": "Felles emne med bachelor i agronomi."
+    },
+    {
+      "emnekode": "LAN2202",
+      "emnenavn": "Feltmekanisering 1 – våronn",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "LAN2202-1"
+      ],
+      "merknad": "Felles emne med bachelor i agronomi."
+    },
+    {
+      "emnekode": "LAN2203",
+      "emnenavn": "Traktorer og basismaskiner",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "LAN2203-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "LAN2301",
+      "emnenavn": "Feltmekanisering 2 – høstonn",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "LAN2301-1"
+      ],
+      "merknad": "Felles emne med bachelor i agronomi."
+    },
+    {
+      "emnekode": "LAN2201",
+      "emnenavn": "Behandling og lagring av planteprodukter",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "LAN2201-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "LAN2302",
+      "emnenavn": "Presisjonsjordbruk",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "LAN2302-1"
+      ],
+      "merknad": "Felles emne med bachelor i agronomi."
+    },
+    {
+      "emnekode": "LAN2303",
+      "emnenavn": "Bygningsteknikk",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "LAN2303-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "6JB242",
+      "emnenavn": "Husdyrmiljø og innendørsmekanisering",
+      "studiepoeng": 15,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "6JB242-1"
+      ],
+      "merknad": "Felles emne med bachelor i agronomi."
+    },
+    {
+      "emnekode": "6JB299",
+      "emnenavn": "Bacheloroppgave i landbruksteknikk",
+      "studiepoeng": 15,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "6JB299-1"
+      ],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er Universitetet i Innlandets studiekatalog for BALA Bachelor i landbruksteknikk, startsemester høst 2026, studiested Blæstad (studiekatalog.edutorium.no/inn/nb/program/BALA/2026). Programmet er 180 sp, og studiemodell-tabellen merker samtlige 18 emner med typekode «O» (Obligatorisk) – ingen valgfrie emner i studiemodellen, så hele graden er obligatorisk. Programmet deler et felles første studieår med bachelor i agronomi (også tilgjengelig som årsstudium i jordbruk), og flere emner i år 2–3 er felles med agronomiprogrammet (merket i den enkelte emnes merknad). Ingen egne valgfrie studieretninger er beskrevet."
+}

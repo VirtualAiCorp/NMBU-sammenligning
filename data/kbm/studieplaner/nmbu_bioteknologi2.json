@@ -1,0 +1,36 @@
+{
+  "programnavn": "Bioteknologi (master 2 år)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/master-2-aar/bioteknologi",
+    "https://www.nmbu.no/fakulteter/fakultet-kjemi-bioteknologi-og-matvitenskap/studieplaner-master-i-bioteknologi",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-05/Studieplan%20M%20BIOTEK%202026.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 125,
+  "obligatoriskeStudiepoeng": 65,
+  "obligatoriske": [
+    {
+      "emnekode": "BIO305",
+      "emnenavn": "Introduksjonsemne for masterstudenter på KBM",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Augustblokk før høstsemesteret."
+    },
+    {
+      "emnekode": "M60-BIOTEK",
+      "emnenavn": "Masteroppgave",
+      "studiepoeng": 60,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "60 sp totalt fordelt over 2. år (5 sp august + 25 sp høst + 5 sp januar + 20 sp vår + 5 sp juni, ifølge rutenettet)."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er en 4-siders PDF med fire «Eksempelplaner» (Molekylærbiologi, Mikrobiologi, Biokjemi, Genetikk/Genomvitenskap) pluss en emneliste (side 4). Disse eksempelplanene er illøstrasjoner på hvordan valgfrie emner kan kombineres ut fra ønsket fordypningsretning - de er IKKE formelle, obligatoriske studieretninger («programsiden omtaler dem selv som mulige retninger studenten kan vinkle masterprogrammet mot, ikke faste spesialiseringer»), og er derfor ikke lagt inn under spesialiseringer i denne filen. Det eneste som er identisk og fast i alle fire eksempelplanene er: BIO305 Introduksjonsemne for masterstudenter på KBM (5 sp, augustblokk 1. år) og masteroppgaven M60-BIOTEK (60 sp, 2. år). Resten av 1. år (60 av 65 sp) er valgfrie emner som varierer mellom eksempelplanene (STAT210, KJB310, BIO322, BIN315, BIO341, BIO301, BIO336, BIO330, BIO321, BIN300, BIO326, BIO325 m.fl. - se side 4 i kilden for full liste med emnekoder, semester og studiepoeng). totaltStudiepoeng (125) og obligatoriskeStudiepoeng (65) følger rutenettets egne årssummer (65 for 1. år + 60 for 2. år), der kun BIO305 og M60-BIOTEK har fast plassering/emnekode.",
+  "entryId": "nmbu_bioteknologi2"
+}

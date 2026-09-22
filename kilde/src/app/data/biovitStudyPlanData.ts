@@ -1,10 +1,1578 @@
-// GENERERT av scripts/build-biovit-studyplans.py – stub. Ikke rediger for hånd.
-// Tom foreløpig: generatoren skriver over hele filen når studieplanene for BIOVIT er lagt inn.
-// Eksportnavnene er med vilje de samme som i landsamStudyPlanData.ts.
-import type { LandsamStudyPlanGroup } from './landsamStudyPlanData';
+// GENERERT av scripts/build-landsam-studyplans.py 2026-09-22 – ikke rediger for hånd.
+// Kilde: data/landsam/studieplaner/*.json (obligatoriske emner fra studieplanene) koblet til DBH tabell 308/208.
+// Karakterer er summert over dbhEmnekoder per år; snitt A=5…F=0 over bokstavkarakterer.
+import type { LandsamLevel } from './landsamAdmissionData';
+import type { CourseGradeYear } from './landsamCourseData';
 
-export type {
-  PlanCourse, PlanSpecialisation, ProgramStudyPlan, LandsamStudyPlanGroup,
-} from './landsamStudyPlanData';
+export interface PlanCourse {
+  emnekode: string; emnenavn: string; studiepoeng: number | null; aar: number | null; semester: string | null;
+  dbhEmnekoder: string[]; merknad?: string; years: CourseGradeYear[];
+}
+export interface PlanSpecialisation { navn: string; obligatoriske: PlanCourse[]; }
+export interface ProgramStudyPlan {
+  entryId: string; shortName: string; institusjon: string; isNmbu: boolean; programnavn: string;
+  studieplanAar: string | null; kilder: string[]; totaltStudiepoeng: number | null; obligatoriskeStudiepoeng: number | null;
+  merknad?: string; obligatoriske: PlanCourse[]; spesialiseringer: PlanSpecialisation[];
+}
+export interface LandsamStudyPlanGroup { id: string; label: string; level: LandsamLevel; programs: ProgramStudyPlan[]; }
 
-export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [];
+export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
+  {
+    id: 'biologi', label: 'Biologi', level: 'bachelor',
+    programs: [
+      {
+        entryId: 'nmbu_biologi', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Biologi (bachelor)',
+        studieplanAar: '2026/2027', kilder: ['https://www.nmbu.no/studier/bachelor/biologi', 'https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-05/B-BIOL_2026_27.pdf'],
+        totaltStudiepoeng: 180, obligatoriskeStudiepoeng: 95,
+        merknad: 'Kilde er NMBUs fargekodede rutenett-studieplan for kull 2026 (B-BIOL), hentet som PDF fra nmbu.no/studier/bachelor/biologi (lenke «Last ned detaljert studieplan»). Programmet er 180 sp totalt, hvorav 120 sp er obligatoriske for alle (studieplanens tabell 1, med tillegg til 125 sp avhengig av valg, se under), minimum 30 sp skal være biologiske emner (elektivt, ikke i obligatoriske-listen), og resterende ca. 30 sp er fritt valgfrie. I studieplanens obligatoriske emneliste er tre emnepar fargekodet med fotnoten «velg minst ett emne fra hver fargekode»: (1) BIO200 Molekylærgenetikk i eukaryoter (5 sp, januarblokk 3. år) / BIO210 Molekylærbiologi (10 sp, høst 3. år) – gult; (2) MATH100 Brukerkurs i matematikk / MATH121 Kalkulus (begge 10 sp, høst 1. år, valgt etter matematikkbakgrunn) – grønt; (3) PHI100 Examen philosophicum / PHI101 Examen philosophicum, seminarversjon (begge 10 sp, høst 1. år) – oransje. Disse tre valgparene er obligatoriske valg mellom alternativer og er derfor IKKE tatt med i obligatoriske-listen (jf. oppgavens regler), men er obligatoriske for alle studenter i den forstand at minst ett emne fra hvert par må fullføres. De 13 emnene i obligatoriske-listen over (95 sp) er de eneste uten alternativ – dvs. rene, entydige obligatoriske emner. Summen 95 sp (liste) + minimum 25 sp (ett emne fra hvert av de tre fargeparene, billigste alternativ BIO200+MATH+PHI) = 120 sp, mens 95 + 30 sp (BIO210 i stedet for BIO200 + MATH + PHI) = 125 sp, i tråd med studieplanens egen sum «120 (125)». Emnenavn og studiepoeng er hentet direkte fra studieplan-PDF-en. Studieplanen definerer ingen egne studieretninger/spesialiseringer med separate obligatoriske emnelister.',
+        obligatoriske: [
+          {
+            emnekode: 'BIO140', emnenavn: 'Innføringsemne i biologi', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: [], merknad: 'Augustblokk før høstsemesteret.',
+            years: [],
+          },
+          {
+            emnekode: 'BIO100', emnenavn: 'Cellebiologi', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'ZOOL100', emnenavn: 'Generell zoologi', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: [], merknad: 'Har et feltkurs sammen med BOT100 i juniblokk.',
+            years: [],
+          },
+          {
+            emnekode: 'BOT100', emnenavn: 'Plantediversitet', studiepoeng: 5, aar: 1, semester: 'vår',
+            dbhEmnekoder: [], merknad: 'Har et feltkurs sammen med ZOOL100 i juniblokk.',
+            years: [],
+          },
+          {
+            emnekode: 'ECOL100', emnenavn: 'Grunnleggende økologi', studiepoeng: 5, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'KJM100', emnenavn: 'Generell kjemi', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: [], merknad: 'For studenter med svakt matematikkgrunnlag gis et ikke-studiepoenggivende forkurs (KJM007) normalt i januarblokk.',
+            years: [],
+          },
+          {
+            emnekode: 'BIO130', emnenavn: 'Generell mikrobiologi I', studiepoeng: 5, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BOT130', emnenavn: 'Grunnleggende plantefysiologi', studiepoeng: 5, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'STIN100', emnenavn: 'Biologisk dataanalyse', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BIO120', emnenavn: 'Genetikk', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'STAT100', emnenavn: 'Statistikk', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: [], merknad: 'Kan i stedet tas i høstparallellen ifølge studieplanens fotnote.',
+            years: [],
+          },
+          {
+            emnekode: 'BIO223', emnenavn: 'Evolusjonsbiologi', studiepoeng: 10, aar: 3, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'HFX201', emnenavn: 'Fysiologi', studiepoeng: 10, aar: 3, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'uio_biovitenskap', shortName: 'UiO', institusjon: 'Universitetet i Oslo', isNmbu: false, programnavn: 'Biovitenskap (bachelor)',
+        studieplanAar: '2025/2026', kilder: ['https://www.uio.no/studier/program/biovitenskap/', 'https://www.uio.no/studier/program/biovitenskap/oppbygging/', 'https://www.uio.no/studier/program/biovitenskap/studieretninger/beregningsbiologi/oppbygging/', 'https://www.uio.no/studier/program/biovitenskap/studieretninger/biomangfold-evolusjon/oppbygging/', 'https://www.uio.no/studier/program/biovitenskap/studieretninger/molekylarbiologi/oppbygging/'],
+        totaltStudiepoeng: 180, obligatoriskeStudiepoeng: 60,
+        merknad: 'Kilder er UiOs sider «Biovitenskap (bachelor) – Oppbygging og gjennomføring» og de tre studieretningssidenes egne oppbygging-undersider (hentet via nettleser 22.09.2026). Programmet er 180 sp totalt over 3 år, med gjeldende oppbygging for studieløp fra og med høst 2025 (en eldre ordning for høst 2024 eller tidligere er omtalt på samme side, men ikke brukt her). Struktur: Obligatoriske fellesemner 50 sp (BIOS1101, BIOS1110, BIOS1120, BIOS1150, KJM1003) + Examen philosophicum (EXPHIL03) 10 sp + obligatoriske fordypningsemner 80–90 sp (studieretningsavhengig, se spesialiseringer) + utviklingssemester/frie emner 30–40 sp. Studenten må velge én av tre studieretninger innen utgangen av 1. semester: Beregningsbiologi og bioinformatikk (krever bestått matematikk R2), Biomangfold/økologi/evolusjon, og Molekylærbiologi og biomedisin. Alle tre er ført under «spesialiseringer», med kun de emnene som er 100 % fast obligatoriske innenfor hver retning (uten valgalternativ) i emnelisten; obligatoriske valg mellom navngitte alternativer (f.eks. STK1000/MAT1050) og «velg X av følgende»-elektivpooler er beskrevet i den enkelte spesialiserings egen merknad, ikke ført som emner, i tråd med oppgavens regel om at obligatoriske valg mellom alternativer skal stå i merknad. HMS-emnene (0 sp) er obligatoriske, men studiepoenggivende null, og er ført som ett samleoppføring. Ingen obligatorisk bacheloroppgave er beskrevet i studieplanen for dette programmet.',
+        obligatoriske: [
+          {
+            emnekode: 'BIOS1101', emnenavn: 'Innføring i beregningsmodeller for biovitenskap', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BIOS1110', emnenavn: 'Celle- og molekylærbiologi', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BIOS1150', emnenavn: 'Biologisk mangfold', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'HMS', emnenavn: 'Helse, miljø og sikkerhet', studiepoeng: 0, aar: 1, semester: 'høst',
+            dbhEmnekoder: [], merknad: 'Obligatorisk, studiepoenggivende null: HMS0501 Sikkerhet og fysisk miljø, HMS0502 Utviklende læringsmiljø, HMS0503 Laboratoriesikkerhet, HMS0505 El-sikkerhet, HMS0507 Brannsikkerhet. Tas i begynnelsen av 1. semester.',
+            years: [],
+          },
+          {
+            emnekode: 'BIOS1120', emnenavn: 'Fysiologi', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'KJM1003', emnenavn: 'Kjemi for biologer', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'EXPHIL03', emnenavn: 'Examen philosophicum', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: [], merknad: 'Tas normalt i 3. semester (studieretningene Biomangfold/økologi/evolusjon og Molekylærbiologi/biomedisin); i studieretningen Beregningsbiologi og bioinformatikk er den flyttet til 5. semester (år 3, høst) for å gi plass til matematikkemnene tidligere i løpet.',
+            years: [],
+          },
+        ],
+        spesialiseringer: [
+          { navn: 'Beregningsbiologi og bioinformatikk', obligatoriske: [
+          ] },
+          { navn: 'Biomangfold, økologi og evolusjon', obligatoriske: [
+          ] },
+          { navn: 'Molekylærbiologi og biomedisin', obligatoriske: [
+          ] },
+        ],
+      },
+      {
+        entryId: 'uib_biologi', shortName: 'UiB Biologi', institusjon: 'Universitetet i Bergen', isNmbu: false, programnavn: 'Biologi (bachelor)',
+        studieplanAar: '2026/2027', kilder: ['https://www4.uib.no/studier/program/biologi-bachelor', 'https://www4.uib.no/studier/program/biologi-bachelor/plan'],
+        totaltStudiepoeng: 180, obligatoriskeStudiepoeng: 100,
+        merknad: 'Kilde er UiBs studieplanside for BAMN-BIO Bachelorprogram i biologi, høst 2026 (www4.uib.no/studier/program/biologi-bachelor/plan). Programmet er 180 sp totalt, hvorav 120 sp er obligatoriske. Studieplanen deler de obligatoriske 120 sp i tre grupper: «Innføringsemne» (20 sp: matematikk MAT101/MAT111 + examen philosophicum EXPHIL-MNSEM/EXPHIL-MNEKS), «Obligatorisk emne» (10 sp: INF100), og «Spesialisering» (90 sp: BIO100, BIO101, BIO102, BIO103, BIO104, MOL100, KJEM109, STAT101, PHYS101). Merk at UiBs eget begrep «Spesialisering» her betyr en fast fellespakke av 9 emner à 10 sp som ALLE studenter tar (ikke et valg mellom studieretninger) – disse er derfor ført direkte i obligatoriske-listen, ikke under spesialiseringer-feltet. MAT101 (Matematiske metoder 1) / MAT111 (Grunnkurs i matematikk I) er et obligatorisk valg mellom to alternative matematikkemner (10 sp, 1. semester, avhengig av forkunnskaper), og EXPHIL-MNSEM (seminarversjon) / EXPHIL-MNEKS (eksamensversjon) er et obligatorisk valg mellom to eksamensformer av examen philosophicum (10 sp, 4. semester) – begge er obligatoriske valg mellom alternativer og er derfor IKKE ført i obligatoriske-listen (kun i denne merknaden), i tråd med oppgavens regel. 100 sp (listen over) + 20 sp (matematikk- og exphil-alternativene) = 120 sp. Resterende 60 sp er valgfrie emner (5.–6. semester, ofte brukt til utveksling). Rekkefølge: 1. semester BIO100, MAT101/MAT111, MOL100; 2. semester BIO101, INF100, KJEM109; 3. semester BIO102, PHYS101, STAT101; 4. semester BIO103, BIO104, EXPHIL-MNSEM/EXPHIL-MNEKS; 5.–6. semester valgemne eller utveksling. Studieplanen beskriver ingen obligatorisk bacheloroppgave.',
+        obligatoriske: [
+          {
+            emnekode: 'BIO100', emnenavn: 'Biologi', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'MOL100', emnenavn: 'Molekylærbiologi', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BIO101', emnenavn: 'Biologi', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'INF100', emnenavn: 'Programmering I', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'KJEM109', emnenavn: 'Kjemi', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BIO102', emnenavn: 'Biologi', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'PHYS101', emnenavn: 'Fysikk', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'STAT101', emnenavn: 'Statistikk', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BIO103', emnenavn: 'Biologi', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BIO104', emnenavn: 'Biologi', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'ntnu_biologi', shortName: 'NTNU', institusjon: 'Norges teknisk-naturvitenskapelige universitet', isNmbu: false, programnavn: 'Biologi (bachelor)',
+        studieplanAar: '2026/2027', kilder: ['https://www.ntnu.no/studier/bbi', 'https://www.ntnu.no/studier/bbi/studiets-oppbygning', 'https://www.ntnu.no/studier/studieplan#programmeCode=BBI&year=2026'],
+        totaltStudiepoeng: 180, obligatoriskeStudiepoeng: 112.5,
+        merknad: 'Kilde er NTNUs studieplan-API for programkode BBI, år 2026 (hentet via www.ntnu.no/studier/studieplan#programmeCode=BBI&year=2026, som er en JavaScript-app; de strukturerte dataene ble hentet direkte fra det underliggende JSON-endepunktet portlet-appen selv kaller), samt oversiktssiden «Studiets oppbygning». Programmet er 180 sp over 6 semester (3 år). Semester 1–3 er felles for alle (90 sp, ført i obligatoriske-listen: BI1003, HMS0001, MA0001, KJ1004, BI1001, BI1002, BI1006, BI1007, ST0103, BI1014). Fra og med 4. semester velger studenten en av tre tverrfaglige «Fag 2»-fagpakker (studieretninger i NTNUs studieplandata): Kjemi, Matematikk/statistikk eller Bærekraft – disse er ført under spesialiseringer, med kun de emnene som er 100 % fast obligatoriske innenfor hver fagpakke (studyChoice-kode «O» uten valgalternativ) i emnelisten; øvrige obligatoriske krav som er valg mellom navngitte alternativer (studyChoice-koder som «M1A», «15A», «MAX1A») er beskrevet i den enkelte fagpakkes egen merknad, i tråd med oppgavens regel om at obligatoriske valg mellom alternativer skal stå i merknad, ikke i emnelisten. EXPH0300 (Examen philosophicum for naturvitenskap og teknologi, 4. semester) og BI2900 (Bacheloroppgave i biologi, 15 sp, 6. semester) er identiske obligatoriske emner i alle tre fagpakkene og er derfor ført i hovedlisten (obligatoriske) fremfor under den enkelte spesialisering. Studiepoeng er hentet direkte fra studieplandataene (mange NTNU-emner er 7,5 eller 15 sp, ikke 10 sp).',
+        obligatoriske: [
+          {
+            emnekode: 'BI1003', emnenavn: 'Økologi, atferd, evolusjon og bærekraft', studiepoeng: 15, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'HMS0001', emnenavn: 'HMS-kurs for 1. årsstudenter', studiepoeng: 0, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'MA0001', emnenavn: 'Brukerkurs i matematikk A', studiepoeng: 7.5, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'KJ1004', emnenavn: 'Generell kjemi', studiepoeng: 7.5, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BI1001', emnenavn: 'Celle- og molekylærbiologi', studiepoeng: 15, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BI1002', emnenavn: 'Faunistikk og floristikk', studiepoeng: 15, aar: 1, semester: 'vår',
+            dbhEmnekoder: [], merknad: 'Har obligatoriske ekskursjoner (dags- og flerdagsekskursjoner) i løpet av vår og sommer.',
+            years: [],
+          },
+          {
+            emnekode: 'BI1006', emnenavn: 'Dyrenes struktur og funksjon', studiepoeng: 7.5, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BI1007', emnenavn: 'Plantenes struktur og funksjon', studiepoeng: 7.5, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'ST0103', emnenavn: 'Brukerkurs i statistikk', studiepoeng: 7.5, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BI1014', emnenavn: 'Kvantitativ biologi', studiepoeng: 7.5, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'EXPH0300', emnenavn: 'Examen philosophicum for naturvitenskap og teknologi', studiepoeng: 7.5, aar: 2, semester: 'vår',
+            dbhEmnekoder: [], merknad: 'Inngår identisk som obligatorisk emne i alle tre «Fag 2»-fagpakkene (Kjemi, Matematikk/statistikk, Bærekraft) og er dermed reelt obligatorisk for alle, uavhengig av valgt fagpakke.',
+            years: [],
+          },
+          {
+            emnekode: 'BI2900', emnenavn: 'Bacheloroppgave i biologi', studiepoeng: 15, aar: 3, semester: 'vår',
+            dbhEmnekoder: [], merknad: 'Inngår identisk som obligatorisk emne i alle tre «Fag 2»-fagpakkene og er dermed reelt obligatorisk for alle.',
+            years: [],
+          },
+        ],
+        spesialiseringer: [
+          { navn: 'Fag 2: Kjemi', obligatoriske: [
+          ] },
+          { navn: 'Fag 2: Matematikk og statistikk', obligatoriske: [
+          ] },
+          { navn: 'Fag 2: Bærekraft', obligatoriske: [
+          ] },
+        ],
+      },
+      {
+        entryId: 'uit_biologi', shortName: 'UiT', institusjon: 'UiT Norges arktiske universitet', isNmbu: false, programnavn: 'Biologi (bachelor)',
+        studieplanAar: '2025/2026', kilder: ['https://uit.no/utdanning/program/274284/biologi_-_bachelor', 'https://uit.no/Content/868704/cache=20263108123957/Studieplan_B-BIO_f.o.m._kull_2025.pdf'],
+        totaltStudiepoeng: 180, obligatoriskeStudiepoeng: 140,
+        merknad: 'Kilde er UiTs studieplan-PDF «Studieplan Bachelorgradsprogram i biologi» (godkjent 19.9.2024, oppdatert 01.11.2024, gjeldende f.o.m. kull 2025), lenket fra programsiden uit.no/utdanning/program/274284/biologi_-_bachelor (fanen «Oppbygging av studiet»). Programmet er 180 sp totalt: 120 sp biologirelaterte emner, 10 sp kjemi, 10 sp filosofi/vitenskapsteori, 10 sp valgfritt mellom «mikroemner» (2,5 sp-emner) eller praksisemnet MNF-2001 Realfagspraksis (4. semester, obligatorisk valg mellom alternativer – ikke ført i listen), og et fritt valgfagssemester på 30 sp i 5. semester (koordinert emnepakke fra annet fagfelt, utveksling eller opphold ved UNIS på Svalbard). De 14 emnene i obligatoriske-listen (140 sp) er alle uten valgalternativ. 140 + 10 (mikroemner/MNF-2001) + 30 (valgfagssemester) = 180 sp. Emnekoden for molekylær- og cellebiologiemnet i 2. semester er trykt som «MBI-1xxx» i selve studieplandokumentet, uten et konkret tall. Studieplanen beskriver ingen egen bacheloroppgave og ingen formelle studieretninger med separate obligatoriske emnelister.',
+        obligatoriske: [
+          {
+            emnekode: 'BIO-1009', emnenavn: 'Biologiske ressurser i nord', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BIO-1010', emnenavn: 'Evolusjon og adferd', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BIO-1011', emnenavn: 'Økologi og biologisk mangfold', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'FIL-0700', emnenavn: 'Ex. Phil.', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'MBI-1xxx', emnenavn: 'Molekylær- og cellebiologi', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: [], merknad: 'Emnekoden er trykt eksakt slik i studieplan-PDF-en («MBI-1xxx»), uten en spesifikk firesifret kode – trolig fordi kurstilbudet/kodenummeret varierer mellom kull.',
+            years: [],
+          },
+          {
+            emnekode: 'BIO-1104', emnenavn: 'Zoologi', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'KJE-1001', emnenavn: 'Introduksjon til kjemi og kjemisk biologi', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BIO-2004', emnenavn: 'Studiedesign og dataanalyse i biologi', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BIO-1012', emnenavn: 'Botanikk og mykologi', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BIO-2019', emnenavn: 'Mikrobiologi og molekylære metoder', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'MBI-2015', emnenavn: 'Menneskets fysiologi', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BIO-2020', emnenavn: 'Advanced ecology', studiepoeng: 10, aar: 3, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BIO-2021', emnenavn: 'Marine biology', studiepoeng: 10, aar: 3, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BIO-2022', emnenavn: 'Plant physiology and biotechnology', studiepoeng: 10, aar: 3, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'nord_biologi', shortName: 'Nord', institusjon: 'Nord universitet', isNmbu: false, programnavn: 'Biologi (bachelor)',
+        studieplanAar: '2026/2027', kilder: ['https://www.nord.no/studier/biologi-bachelor', 'https://www.nord.no/studier/studieplaner/biologi-babii-bachelor-host-2026'],
+        totaltStudiepoeng: 180, obligatoriskeStudiepoeng: 120,
+        merknad: 'Kilde er Nord universitets studieplanside for Biologi (BABII), kull høst 2026 (www.nord.no/studier/studieplaner/biologi-babii-bachelor-host-2026). Programmet er 180 sp, undervisningsspråk engelsk, studiested Bodø. De to første studieårene (1.–4. semester, 120 sp) består utelukkende av obligatoriske emner, ført i listen over. Tredje studieår (5.–6. semester, 60 sp) består kun av valgfrie emner – en lang liste å velge blant (bl.a. BIO2024, PRA2060 Praksis i biologi, ECO2009, BIO2012, BIO2011, BIO2005, BIO1008, BIO2023, BIO2022, BIO2019, BIO2016, BIO2015, BIO2014, samt BIO2017 Bacheloroppgave i biologi 15 sp), utveksling eller opphold ved UNIS på Svalbard. Bacheloroppgaven (BIO2017) er dermed valgfri, ikke obligatorisk, for dette programmet, og er derfor ikke ført i obligatoriske-listen. Ingen egne obligatoriske studieretninger/spesialiseringer er beskrevet.',
+        obligatoriske: [
+          {
+            emnekode: 'BIO1015', emnenavn: 'Biologisk mangfold 1 - protister og planter', studiepoeng: 7.5, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BIO1017', emnenavn: 'Økologi', studiepoeng: 7.5, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BIO1016', emnenavn: 'Biologisk mangfold 2 - Invertebrater', studiepoeng: 7.5, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'KJE1002', emnenavn: 'Prinsipper i kjemi', studiepoeng: 7.5, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'KJE1001', emnenavn: 'Laboratoriesikkerhet', studiepoeng: 0, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'MAT1014', emnenavn: 'Matematikk og statistikk', studiepoeng: 7.5, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BIO1018', emnenavn: 'Essensiell cellebiologi og biokjemi', studiepoeng: 15, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BIO1013', emnenavn: 'Evolusjon og genetikk', studiepoeng: 7.5, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BIO2009', emnenavn: 'Molekylær cellebiologi', studiepoeng: 7.5, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'MET1006', emnenavn: 'Vitenskapelige metoder', studiepoeng: 15, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BIO1019', emnenavn: 'Biologisk mangfold 3 - Vertebrater', studiepoeng: 7.5, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BIO2010', emnenavn: 'Marinbiologi og oseanografi', studiepoeng: 15, aar: 2, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BIO1026', emnenavn: 'Zoofysiologi og embryologi', studiepoeng: 15, aar: 2, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'uia_biologi', shortName: 'UiA', institusjon: 'Universitetet i Agder', isNmbu: false, programnavn: 'Biologi (bachelor)',
+        studieplanAar: '2026-2029', kilder: ['https://www.uia.no/studier/program/biologi-bachelor/', 'https://www.uia.no/studier/program/biologi-bachelor/studieplaner/2026h.html'],
+        totaltStudiepoeng: 180, obligatoriskeStudiepoeng: 180,
+        merknad: 'Kilde er UiAs studieplanside for Biologi, bachelorprogram (2026–2029) (www.uia.no/studier/program/biologi-bachelor/studieplaner/2026h.html). Programmet er 180 sp, med en fast, obligatorisk emnerekkefølge i standardløpet – 1., 2., 3. og 6. semester består utelukkende av obligatoriske emner (jf. programsidens egen tekst), og i 4. og 5. semester kan de tre ordinære obligatoriske emnene erstattes av emner ved Universitetssenteret på Svalbard (UNIS), et utvekslingsopphold (UTVOPP, 30 sp) eller (kun 5. semester) internship-emnet PRA205 (10 sp), etter søknad og godkjenning. Siden dette er en søknadsbasert erstatning av det ordinære obligatoriske løpet og ikke et fast valg mellom navngitte alternativer i studieplanens rutenett, er de 18 emnene i standardløpet (180 sp) ført i obligatoriske-listen, med merknad om erstatningsmuligheten på de aktuelle emnene i 4. og 5. semester. BIO300 Bacheloroppgave (20 sp) er programmets obligatoriske avsluttende fordypningsarbeid i 6. semester. EX-100 Examen philosophicum kan alternativt tas i 2. eller 3. studieår i stedet for fast i 6. semester. Programmet har ingen egne, navngitte studieretninger med separate obligatoriske emnelister.',
+        obligatoriske: [
+          {
+            emnekode: 'BIO104', emnenavn: 'Human fysiologi og anatomi', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BIO111', emnenavn: 'Cellebiologi med genetikk', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BIO112', emnenavn: 'Introduksjon til biologien', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'ORG001', emnenavn: 'HMS-kurs', studiepoeng: 0, aar: 1, semester: 'høst',
+            dbhEmnekoder: [], merknad: 'Obligatorisk deltakelse ved studiestart.',
+            years: [],
+          },
+          {
+            emnekode: 'BIO102', emnenavn: 'Botanikk', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BIO103', emnenavn: 'Zoologi', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BIO113', emnenavn: 'Evolusjonsbiologi', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BIO206', emnenavn: 'Generell økologi', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'KJ-111', emnenavn: 'Generell kjemi', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'ML-208', emnenavn: 'Molekylærbiologi', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'KJ-213', emnenavn: 'Organisk kjemi', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: [], merknad: 'Kan erstattes av emner ved UNIS (Svalbard) eller et utvekslingsopphold på 30 sp, etter søknad og godkjenning.',
+            years: [],
+          },
+          {
+            emnekode: 'MA-143', emnenavn: 'Biostatistikk', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: [], merknad: 'Kan erstattes av emner ved UNIS (Svalbard) eller et utvekslingsopphold på 30 sp, etter søknad og godkjenning.',
+            years: [],
+          },
+          {
+            emnekode: 'MA-168', emnenavn: 'Matematikk for biologer', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: [], merknad: 'Kan erstattes av emner ved UNIS (Svalbard) eller et utvekslingsopphold på 30 sp, etter søknad og godkjenning.',
+            years: [],
+          },
+          {
+            emnekode: 'BIO201', emnenavn: 'Akvatisk økologi', studiepoeng: 10, aar: 3, semester: 'høst',
+            dbhEmnekoder: [], merknad: 'Kan erstattes av PRA205 Internship, emner ved UNIS (Svalbard) eller et utvekslingsopphold på 30 sp, etter søknad og godkjenning.',
+            years: [],
+          },
+          {
+            emnekode: 'BIO204', emnenavn: 'Zoophysiology', studiepoeng: 10, aar: 3, semester: 'høst',
+            dbhEmnekoder: [], merknad: 'Kan erstattes av PRA205 Internship, emner ved UNIS (Svalbard) eller et utvekslingsopphold på 30 sp, etter søknad og godkjenning.',
+            years: [],
+          },
+          {
+            emnekode: 'BIO207', emnenavn: 'Marin bevaringsbiologi', studiepoeng: 10, aar: 3, semester: 'høst',
+            dbhEmnekoder: [], merknad: 'Kan erstattes av PRA205 Internship, emner ved UNIS (Svalbard) eller et utvekslingsopphold på 30 sp, etter søknad og godkjenning.',
+            years: [],
+          },
+          {
+            emnekode: 'BIO300', emnenavn: 'Bacheloroppgave', studiepoeng: 20, aar: 3, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'EX-100', emnenavn: 'Examen philosophicum', studiepoeng: 10, aar: 3, semester: 'vår',
+            dbhEmnekoder: [], merknad: 'Kan alternativt tas vår eller høst i 2. eller 3. studieår i stedet for fast plassering i 6. semester.',
+            years: [],
+          },
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'uib_molekylaerbiologi', shortName: 'UiB Molekylærbiologi', institusjon: 'Universitetet i Bergen', isNmbu: false, programnavn: 'Molekylærbiologi (bachelor)',
+        studieplanAar: '2026/2027', kilder: ['https://www4.uib.no/studier/program/molekylaerbiologi-bachelor', 'https://www4.uib.no/studier/program/molekylaerbiologi-bachelor/plan'],
+        totaltStudiepoeng: 180, obligatoriskeStudiepoeng: 100,
+        merknad: 'Kilde er UiBs studieplanside for BAMN-MOL Bachelorprogram i molekylærbiologi, høst 2026 (www4.uib.no/studier/program/molekylaerbiologi-bachelor/plan). Programmet er 180 sp totalt. Studieplanen deler dei obligatoriske krava i «Obligatoriske emne» (examen philosophicum, MAT101/MAT111, INF100) og «Spesialisering» (100 sp, ein fast fellespakke som ALLE studentar tek, ikkje eit val mellom studieretningar): MOL100, MOL102, MOL103, MOL200, MOL201, MOL204, MOL222, KJEM110, KJEM130 (9 emne à 10 sp = 90 sp) pluss eitt valemne i statistikk eller matematikk (10 sp). INF100 og dei 9 namngjevne spesialiseringsemna (til saman 100 sp) er ført direkte i obligatoriske-lista over, sidan dei er reelt obligatoriske for alle utan noko val. MAT101 (Matematiske metoder 1) / MAT111 (Grunnkurs i matematikk I) er eit obligatorisk val mellom to alternative matematikkemne (10 sp, 1. semester), EXPHIL-MNSEM/EXPHIL-MNEKS er eit val mellom to eksamensformer av examen philosophicum (10 sp, 6. semester), og «eitt valemne i statistikk eller matematikk» (10 sp, 3. semester) er eit ope obligatorisk krav utan fast namngjeve emne – alle tre er difor IKKJE førte i obligatoriske-lista (kun i denne merknaden), i tråd med oppgåva sin regel om at obligatoriske val mellom alternativ skal stå i merknad. 100 sp (lista over) + 10 (MAT101/111) + 10 (matematikkvalg) + 10 (EXPHIL) = 130 sp fast obligatorisk/fastlagt innhald; resterande 50 sp er tilrådde/frie valemne (5. og delar av 6. semester). Tilrådd rekkefølgje: 1. semester KJEM110, MAT101/MAT111, MOL100; 2. semester INF100, KJEM130, MOL102; 3. semester MOL200, MOL103, matematikkvalg; 4. semester MOL201, MOL222, MOL204; 5. semester tre valemne (utveksling passar best her); 6. semester EXPHIL-MNSEM/EXPHIL-MNEKS og to valemne. Programmet har ingen eigne obligatoriske studieretningar og ingen obligatorisk bacheloroppgåve er skildra.',
+        obligatoriske: [
+          {
+            emnekode: 'KJEM110', emnenavn: 'Kjemi og energi', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'MOL100', emnenavn: 'Innføring i molekylærbiologi', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'INF100', emnenavn: 'Programmering I', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'KJEM130', emnenavn: 'Organisk kjemi', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'MOL102', emnenavn: 'Eksperimentell molekylærbiologi I', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'MOL200', emnenavn: 'Metabolisme; reaksjonar, regulering og kompartmentalisering', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'MOL103', emnenavn: 'Genstruktur, -funksjon og applikasjonar', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'MOL201', emnenavn: 'Molekylær cellebiologi', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'MOL222', emnenavn: 'Eksperimentell molekylærbiologi II', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'MOL204', emnenavn: 'Anvendt bioinformatikk', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+        ],
+        spesialiseringer: [
+        ],
+      },
+    ],
+  },
+  {
+    id: 'husdyr', label: 'Husdyrvitenskap', level: 'bachelor',
+    programs: [
+      {
+        entryId: 'nmbu_husdyr', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Husdyrvitenskap (bachelor)',
+        studieplanAar: '2026/2027', kilder: ['https://www.nmbu.no/studier/bachelor/husdyrvitenskap', 'https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-06/Bachelor%20Husdyrvitenskap%20-%202026.pdf'],
+        totaltStudiepoeng: 180, obligatoriskeStudiepoeng: 110,
+        merknad: 'Kilde er NMBUs studieplan-PDF for Bachelor i husdyrvitenskap (B-HV), kull 2026, lenket fra «Studieplaner for studenter ved BIOVIT» (nmbu.no/fakulteter/fakultet-biovitenskap/vare-studenter-biovit). Programmet er 180 sp, hvorav 125 sp er obligatoriske (resten, 55 sp, er valgfrie emner inkl. bacheloroppgave i 3. studieår, som er valgfritt tilrettelagt for utveksling eller internship). Av de 125 obligatoriske sp er 110 sp de 14 entydig navngitte emnene i listen over, uten valgalternativ. De resterende 15 obligatoriske sp er to valg mellom alternativer, og er derfor IKKE ført i emnelisten, i tråd med oppgavens regel: (1) PHI100 Ex.phil / PHI101 Ex.phil seminarversjon (10 sp, høst, år 1), og (2) «velg også et av disse emnene»: BIO200 Molekylærgenetikk i eukaryoter / ECN260 Landbrukspolitikk I / HET203 Dyrevelferd (5 sp, januarblokk, år 2). 110 + 10 + 5 = 125 sp, i tråd med studieplanens egen sum. Studieplanen definerer ingen egne obligatoriske studieretninger/spesialiseringer med separate obligatoriske emnelister – i stedet finnes fire pooler av «valgfrie emner» (generelle, ernæring/fôrteknologi, etologi/husdyrmiljø, husdyravl/genetikk) som studenten fritt kan kombinere for å bygge en fordypning, og disse regnes ikke som obligatoriske. Ingen obligatorisk bacheloroppgave er ført i emnelisten, siden den (jf. studieplanens 55 valgfrie sp) ikke er skilt ut som et eget, navngitt obligatorisk emne i kildematerialet.',
+        obligatoriske: [
+          {
+            emnekode: 'HFX131', emnenavn: 'Introduksjon til norsk husdyr- og akvakulturproduksjon', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: [], merknad: 'Augustblokk før høstsemesteret.',
+            years: [],
+          },
+          {
+            emnekode: 'HFX132', emnenavn: 'Husdyrbiologi', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'STIN100', emnenavn: 'Biologisk dataanalyse', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'HFX133', emnenavn: 'Utfordringer for framtidas matproduksjon', studiepoeng: 5, aar: 1, semester: 'januarblokk',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BUS100', emnenavn: 'Grunnleggende bedriftsøkonomi', studiepoeng: 5, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BIO120', emnenavn: 'Genetikk, introduksjonskurs', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'KJM100', emnenavn: 'Generell kjemi', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'HET201', emnenavn: 'Husdyretologi', studiepoeng: 5, aar: 2, semester: 'høst',
+            dbhEmnekoder: [], merknad: 'Augustblokk før høstsemesteret.',
+            years: [],
+          },
+          {
+            emnekode: 'HFX201', emnenavn: 'Fysiologi', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'STAT100', emnenavn: 'Statistikk', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: [], merknad: 'Studieplanen oppgir semester «Høst/Vår»; plassert i år 2 høst i studieplanens eget rutenett.',
+            years: [],
+          },
+          {
+            emnekode: 'KJB100', emnenavn: 'Introduksjon til biokjemi', studiepoeng: 5, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'HFE200', emnenavn: 'Generell ernæring', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'HFA200', emnenavn: 'Generell husdyravl', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'SDG200', emnenavn: 'Bærekraftige matproduksjonssystemer', studiepoeng: 5, aar: 2, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'nord_husdyr', shortName: 'Nord Husdyrvitenskap', institusjon: 'Nord universitet', isNmbu: false, programnavn: 'Husdyrvitenskap (bachelor)',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'inn_agronomi_husdyr', shortName: 'INN Agronomi', institusjon: 'Universitetet i Innlandet', isNmbu: false, programnavn: 'Agronomi (bachelor)',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'nord_dyrepleie', shortName: 'Nord Dyrepleie', institusjon: 'Nord universitet', isNmbu: false, programnavn: 'Dyrepleie (bachelor)',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+    ],
+  },
+  {
+    id: 'plante', label: 'Plantevitenskap', level: 'bachelor',
+    programs: [
+      {
+        entryId: 'nmbu_plante', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Plantevitenskap (bachelor)',
+        studieplanAar: '2026/2027', kilder: ['https://www.nmbu.no/studier/bachelor/plantevitenskap', 'https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-05/B-PV_2026_27.pdf'],
+        totaltStudiepoeng: 180, obligatoriskeStudiepoeng: 115,
+        merknad: 'Kilde er NMBUs fargekodede studieplan-PDF for Bachelor i plantevitenskap (B-PV), opptak 2026, lenket fra «Studieplaner for studenter ved BIOVIT». Programmet er 180 sp, hvorav 130 sp er obligatoriske (125 sp dersom PLV210+PLV211 velges i stedet for PLV200, se merknad på PLV200), pluss minimum 30 sp plantevitenskapelige emner (elektivt, ikke ført i listen) og resten fritt valgfritt. De 13 emnene i obligatoriske-listen over (115 sp) er uten valgalternativ. To obligatoriske krav er valg mellom alternativer og derfor IKKE ført i listen, i tråd med oppgavens regel: (1) PHI100 Examen philosophicum / PHI101 Ex.phil seminarversjon / PHI102 (engelsk, vårparallell) (10 sp, høst år 1); (2) BIO260 / PJH205 Semesteroppgave (5 sp, vår år 3) – en obligatorisk semesteroppgave som registreres under én av to alternative emnekoder avhengig av fagretning. 115 (listen) + 10 (PHI) + 5 (semesteroppgave) = 130 sp, i tråd med studieplanens egen sum. Studieplanen definerer ingen egne obligatoriske studieretninger/spesialiseringer med separate emnelister; «grønn liste»-emnene (minimum 30 sp) og de øvrige valgfrie emnepoolene (internship, biologi/bioteknologi/kjemi, bærekraft/landbruk, teknologi/klima/miljø, økonomi/ledelse/samfunnsfag, verktøysfag) er elektive og ikke ført som obligatoriske.',
+        obligatoriske: [
+          {
+            emnekode: 'PJH102', emnenavn: 'Innføring i plantevitenskap', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: [], merknad: 'Augustblokk før høstsemesteret.',
+            years: [],
+          },
+          {
+            emnekode: 'BOT130', emnenavn: 'Grunnleggende plantefysiologi', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'STIN100', emnenavn: 'Biologisk dataanalyse', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'HFX133', emnenavn: 'Utfordringer for framtidas matproduksjon', studiepoeng: 5, aar: 1, semester: 'januarblokk',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'KJM100', emnenavn: 'Generell kjemi', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BOT100', emnenavn: 'Plantediversitet', studiepoeng: 5, aar: 1, semester: 'vår',
+            dbhEmnekoder: [], merknad: 'Har et feltkurs sammen med ZOOL220 i juniblokk.',
+            years: [],
+          },
+          {
+            emnekode: 'BIO120', emnenavn: 'Genetikk', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'ZOOL220', emnenavn: 'Insekter og edderkoppdyr', studiepoeng: 5, aar: 1, semester: 'vår',
+            dbhEmnekoder: [], merknad: 'Har et feltkurs sammen med BOT100 i juniblokk.',
+            years: [],
+          },
+          {
+            emnekode: 'JORD100', emnenavn: 'Jordlære', studiepoeng: 5, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BIO130', emnenavn: 'Generell mikrobiologi I', studiepoeng: 5, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BOT200', emnenavn: 'Plantefysiologi', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'STAT100', emnenavn: 'Statistikk', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: [], merknad: 'Kan også tas i høstparallellen.',
+            years: [],
+          },
+          {
+            emnekode: 'JORD230', emnenavn: 'Jord som vekstmedium', studiepoeng: 15, aar: 3, semester: 'høst',
+            dbhEmnekoder: [], merknad: 'Intensivemne som strekker seg over augustblokk og høstparallell i 3. år.',
+            years: [],
+          },
+          {
+            emnekode: 'PLV200', emnenavn: 'Sykdommer, skadedyr og ugras i jord- og hagebruk', studiepoeng: 15, aar: 3, semester: 'høst',
+            dbhEmnekoder: [], merknad: 'Intensivemne som strekker seg over juniblokk (2. år), augustblokk og høstparallell (3. år). Kan erstattes av PLV210 Plantevern i grøntanlegg (5 sp) + PLV211 (5 sp), til sammen 10 sp, for studenter som vil fordype seg i grøntmiljø – da blir obligatoriskeStudiepoeng 5 sp lavere (125 sp totalt i stedet for 130), jf. studieplanens egen sum «130 (125)».',
+            years: [],
+          },
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'inn_agronomi', shortName: 'INN Agronomi', institusjon: 'Universitetet i Innlandet', isNmbu: false, programnavn: 'Agronomi (bachelor)',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'inn_landbruksteknikk', shortName: 'INN Landbruksteknikk', institusjon: 'Universitetet i Innlandet', isNmbu: false, programnavn: 'Landbruksteknikk (bachelor)',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+    ],
+  },
+  {
+    id: 'akvakultur', label: 'Akvakultur', level: 'bachelor',
+    programs: [
+      {
+        entryId: 'nmbu_akvakultur', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Akvakultur (bachelor)',
+        studieplanAar: '2026/2027', kilder: ['https://www.nmbu.no/studier/bachelor/akvakultur', 'https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-07/B-AKVA%202026%20Studieplan.pdf'],
+        totaltStudiepoeng: 180, obligatoriskeStudiepoeng: 110,
+        merknad: 'Kilde er NMBUs studieplan-PDF for Bachelor i akvakultur (B-AKVA), opptak 2026, lenket fra «Studieplaner for studenter ved BIOVIT». Programmet er 180 sp, hvorav 130 sp er obligatoriske og 50 sp valgfrie (3. studieår er i hovedsak tilrettelagt for valgfrie emner, internship eller utveksling). De 14 emnene i obligatoriske-listen over (110 sp) er uten valgalternativ. Tre obligatoriske krav er valg mellom alternativer og er derfor IKKE ført i listen, i tråd med oppgavens regel: (1) AQB250 Bærekraftig akvakultur – avl og genetikk / BIO200 Molekylærgenetikk – «velg minst ett av disse emnene» (minimum 5 sp, høst år 3 / januarblokk år 2); (2) PHI100/PHI101 Ex.phil (evt. seminarversjon) / PHI102 Ex.phil engelsk versjon – «velg minst ett av Ex.Phil-emnene» (10 sp, høst år 1, kan byttes til vår); (3) BUS100 Grunnleggende bedriftsøkonomi / INN200 Økonomistyring – «velg kun ett av disse emnene» (5 sp, vår/høst år 2). 110 (listen) + 5 (AQB250/BIO200) + 10 (Ex.Phil) + 5 (BUS100/INN200) = 130 sp, i tråd med studieplanens egen sum. Studieplanen definerer ingen egne obligatoriske studieretninger/spesialiseringer med separate emnelister – de valgfrie emnene er i stedet gruppert i fem ikke-obligatoriske fordypningspooler (generelle, genombiologi/avl, produksjonsteknikk/RAS, produktkvalitet/fôr/ernæring), samt en valgfri bacheloroppgave B-AA (15 sp, høst/vår) som ikke er obligatorisk og derfor ikke ført i listen.',
+        obligatoriske: [
+          {
+            emnekode: 'AQX100', emnenavn: 'Intro til norsk akvakulturproduksjon', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: [], merknad: 'Augustblokk før høstsemesteret.',
+            years: [],
+          },
+          {
+            emnekode: 'AQX110', emnenavn: 'Akvalabb', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BIO100', emnenavn: 'Cellebiologi', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'HFX133', emnenavn: 'Utfordringer for framtidas matproduksjon', studiepoeng: 5, aar: 1, semester: 'januarblokk',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'AQX120', emnenavn: 'Intensiv akvakultur', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'KJM100', emnenavn: 'Generell kjemi', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BIO120', emnenavn: 'Genetikk, introduksjonskurs', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'KJB100', emnenavn: 'Introduksjon til biokjemi', studiepoeng: 5, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'STIN100', emnenavn: 'Biologisk dataanalyse', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'AQX201', emnenavn: 'Fiskehelsebiologi', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'SDG200', emnenavn: 'Bærekraftige matproduksjonssystemer', studiepoeng: 5, aar: 2, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'HFE200', emnenavn: 'Generell ernæring', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'STAT100', emnenavn: 'Statistikk', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: [], merknad: 'Studieplanen oppgir semester «Høst/Vår»; plassert i år 2 vår i studieplanens eget rutenett.',
+            years: [],
+          },
+          {
+            emnekode: 'AQP255', emnenavn: 'Akvatisk miljø i akvakultur', studiepoeng: 5, aar: 3, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'nord_havbruksdrift', shortName: 'Nord', institusjon: 'Nord universitet', isNmbu: false, programnavn: 'Havbruksdrift og ledelse (bachelor)',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'ntnu_biomarin', shortName: 'NTNU Biomarin innovasjon', institusjon: 'Norges teknisk-naturvitenskapelige universitet', isNmbu: false, programnavn: 'Biomarin innovasjon (bachelor)',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'ntnu_ing_havbruk', shortName: 'NTNU Ing. havbruk', institusjon: 'Norges teknisk-naturvitenskapelige universitet', isNmbu: false, programnavn: 'Ingeniør, havbruk (bachelor)',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'uit_fiskeri_havbruk', shortName: 'UiT', institusjon: 'UiT Norges arktiske universitet', isNmbu: false, programnavn: 'Fiskeri- og havbruksvitenskap (master 5 år)',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'uib_havbruk', shortName: 'UiB Havbruk', institusjon: 'Universitetet i Bergen', isNmbu: false, programnavn: 'Havbruk, sivilingeniør (master 5 år)',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'uib_fiskehelse', shortName: 'UiB Fiskehelse', institusjon: 'Universitetet i Bergen', isNmbu: false, programnavn: 'Fiskehelse – akvamedisin (master 5 år)',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+    ],
+  },
+  {
+    id: 'biologi2', label: 'Biologi (2-årig master)', level: 'master2',
+    programs: [
+      {
+        entryId: 'nmbu_biologi2', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Biologi (master 2 år)',
+        studieplanAar: '2026/2027', kilder: ['https://www.nmbu.no/studier/master-2-aar/biologi', 'https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-05/Studieplan%20master%20i%20biologi%20kull%202026.pdf'],
+        totaltStudiepoeng: 120, obligatoriskeStudiepoeng: 65,
+        merknad: 'Kilde er studieplanen «Master i Biologi (M-BIOL), Opptak 2026», hentet fra fakultetets samleside for studieplaner. Felles for alle fire studieretninger: BIO302 (5 sp) og en masteroppgave på 60 sp (M60-BIOL), i tillegg til studieretningsspesifikke obligatoriske emner og minimum 30 sp på 300-nivå totalt (inkl. BIO302 og studieretningsemner på 300-nivå). Studenter som mangler statistikk fra bachelor må ta STAT100 i tillegg. Utover emnene ført opp under «spesialiseringer» krever hver studieretning obligatoriske VALG mellom flere alternative emner, som ikke er ført opp som enkeltemner: Plantebiologi må i tillegg velge minst ett av BIO324, BIO327 eller BOT345 (10 sp); Dyrebiologi må velge én av tre emnekombinasjoner (BIO314+BIO315, eller HET300+HET301, eller ZOOL240+PLV330 pluss minst 5 sp relaterte 300-nivåemner); Genombiologi må i tillegg velge minst ett av BIO325/BIO326 (10 sp) og minst ett av BIN310/BIN315 (10 sp), og (dersom statistikk/bioinformatikk mangler fra bachelor) minst ett av BIN250/BIN210; Evolusjonsbiologi og molekylær økologi må (dersom det mangler fra bachelor) ta minst ett av BIN250/BIN210. Disse valgkravene gjør at reelt obligatorisk omfang per studieretning typisk blir 75–95 sp avhengig av bakgrunn og valg, mot obligatoriskeStudiepoeng=65 som kun teller de emnene som er ubetinget obligatoriske for alle (BIO302 + masteroppgave) pluss retningens ubetinget obligatoriske emner ført opp under spesialiseringer (BIO322 for Genombiologi; BIO321+BIO328 for Evolusjonsbiologi og molekylær økologi). Resterende studiepoeng er valgfrie emner (200- eller 300-nivå), og planen foreslår en lang liste egnede valgemner i et eget vedlegg (tabell 1).',
+        obligatoriske: [
+          {
+            emnekode: 'BIO302', emnenavn: 'Introduksjonsemne til masterstudier på BIOVIT', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: [], merknad: 'Ligger i augustblokk (før høstparallell). Felles for alle fire studieretninger.',
+            years: [],
+          },
+          {
+            emnekode: 'M60-BIOL', emnenavn: 'Masteroppgave', studiepoeng: 60, aar: 2, semester: 'vår',
+            dbhEmnekoder: [], merknad: 'Går over høstparallell og vårparallell i 2. studieår (planlegging anbefales startet allerede i januarblokk/vårparallell 1. år). Felles for alle fire studieretninger.',
+            years: [],
+          },
+        ],
+        spesialiseringer: [
+          { navn: 'Plantebiologi', obligatoriske: [
+            {
+              emnekode: 'BOT200', emnenavn: 'Plantefysiologi', studiepoeng: 10, aar: 1, semester: 'høst',
+              dbhEmnekoder: [], merknad: 'Obligatorisk kun for studenter som ikke har dette emnet eller tilsvarende fra bachelorgraden.',
+              years: [],
+            },
+          ] },
+          { navn: 'Dyrebiologi', obligatoriske: [
+            {
+              emnekode: 'HFX201', emnenavn: 'Fysiologi', studiepoeng: 10, aar: 1, semester: 'høst',
+              dbhEmnekoder: [], merknad: 'Obligatorisk kun for studenter som ikke har dette emnet eller tilsvarende fra bachelorgraden.',
+              years: [],
+            },
+          ] },
+          { navn: 'Genombiologi', obligatoriske: [
+            {
+              emnekode: 'BIO322', emnenavn: 'Advanced Topics in Genomics', studiepoeng: 10, aar: 1, semester: 'høst',
+              dbhEmnekoder: [],
+              years: [],
+            },
+          ] },
+          { navn: 'Evolusjonsbiologi og molekylær økologi', obligatoriske: [
+            {
+              emnekode: 'BIO321', emnenavn: 'Population Genetics and Molecular Evolution', studiepoeng: 10, aar: 1, semester: 'høst',
+              dbhEmnekoder: [],
+              years: [],
+            },
+            {
+              emnekode: 'BIO328', emnenavn: 'Environmental DNA: Principles, Methods, and Applications in Ecology and Environmental Monitoring', studiepoeng: 10, aar: 1, semester: 'høst',
+              dbhEmnekoder: [],
+              years: [],
+            },
+          ] },
+        ],
+      },
+      {
+        entryId: 'uio_biovitenskap2', shortName: 'UiO', institusjon: 'Universitetet i Oslo', isNmbu: false, programnavn: 'Biovitenskap (master 2 år)',
+        studieplanAar: '2026/2027', kilder: ['https://www.uio.no/studier/program/biovitenskap-master/', 'https://www.uio.no/studier/program/biovitenskap-master/oppbygging/', 'https://www.uio.no/studier/program/biovitenskap-master/studieretninger/biomangfold/oppbygging/', 'https://www.uio.no/studier/program/biovitenskap-master/studieretninger/cellebiologi/oppbygging/', 'https://www.uio.no/studier/program/biovitenskap-master/studieretninger/genetikk/oppbygging/', 'https://www.uio.no/studier/program/biovitenskap-master/studieretninger/marinbiologi/oppbygging/', 'https://www.uio.no/studier/program/biovitenskap-master/studieretninger/molekylarbiologi/oppbygging/', 'https://www.uio.no/studier/program/biovitenskap-master/studieretninger/toksikologi/oppbygging/', 'https://www.uio.no/studier/program/biovitenskap-master/studieretninger/okologi/oppbygging/'],
+        totaltStudiepoeng: 120, obligatoriskeStudiepoeng: 60,
+        merknad: 'Kilde er UiOs løpende studieplansider for «Biovitenskap (master, 2 år)», hentet 22.09.2026 (nettbasert, ikke en datert PDF; studieplanAar er derfor satt til inneværende opptaksår). Programmet har sju studieretninger. Felles for alle: HMS-emner (0 sp) og en masteroppgave på 60 sp. Fem av sju studieretninger har i tillegg to navngitte, ubetinget obligatoriske BIOS-emner à 10 sp (ført opp under spesialiseringer over); de to resterende (Biomangfold og systematikk, og Økologi og evolusjon) har INGEN emnespesifikke obligatoriske krav utover HMS og masteroppgave – der kan studenten «velge fritt blant alle masteremnene innen Biovitenskap», og «obligatoriske» er derfor tom for disse to. Alle retninger har for øvrig 40 sp valgfrie masteremner (kan velges fra hele biovitenskapsporteføljen, inntil 2–10 sp kan tas som spesialpensum). obligatoriskeStudiepoeng (60) teller kun de emnene som er ubetinget felles for alle sju retninger (HMS + masteroppgave); reelt obligatorisk omfang blir 80 sp for de fem retningene med egne BIOS-emner.',
+        obligatoriske: [
+          {
+            emnekode: 'HMS0501/HMS0502/HMS0503/HMS0507', emnenavn: 'Helse, miljø og sikkerhet (HMS)', studiepoeng: 0, aar: 1, semester: 'høst',
+            dbhEmnekoder: [], merknad: 'Fire 0-poengs HMS-emner som skal tas i begynnelsen av 1. semester; fritak dersom tilsvarende emner er bestått tidligere ved UiO. For studieretningene Biomangfold og systematikk, Marinbiologi og limnologi, Toksikologi og miljøvitenskap samt Økologi og evolusjon kommer i tillegg HMS0504 – Feltsikkerhet. Felles for alle sju studieretninger.',
+            years: [],
+          },
+          {
+            emnekode: 'Masteroppgave', emnenavn: 'Masteroppgave', studiepoeng: 60, aar: 2, semester: 'vår',
+            dbhEmnekoder: [], merknad: 'Ingen egen emnekode oppgitt på UiOs studieplansider. Oppgaven starter typisk i 2. semester (10 sp) og fortsetter gjennom 3. semester (20 sp) og 4. semester (30 sp) – dvs. den strekker seg over store deler av 1. og hele 2. studieår. Felles for alle sju studieretninger; fast 60 sp uansett retning.',
+            years: [],
+          },
+        ],
+        spesialiseringer: [
+          { navn: 'Biomangfold og systematikk', obligatoriske: [
+          ] },
+          { navn: 'Cellebiologi, fysiologi og nevrovitenskap', obligatoriske: [
+            {
+              emnekode: 'BIOS4010', emnenavn: 'Arbeidsmetoder i molekylærbiologi og biokjemi I', studiepoeng: 10, aar: 1, semester: 'høst',
+              dbhEmnekoder: [],
+              years: [],
+            },
+            {
+              emnekode: 'BIOS4030', emnenavn: 'Cellebiologiske arbeidsmetoder', studiepoeng: 10, aar: 1, semester: 'høst',
+              dbhEmnekoder: [],
+              years: [],
+            },
+          ] },
+          { navn: 'Genetikk og utviklingsbiologi', obligatoriske: [
+            {
+              emnekode: 'BIOS4010', emnenavn: 'Arbeidsmetoder i molekylærbiologi og biokjemi I', studiepoeng: 10, aar: 1, semester: 'høst',
+              dbhEmnekoder: [],
+              years: [],
+            },
+            {
+              emnekode: 'BIOS4020', emnenavn: 'Arbeidsmetoder i molekylærbiologi og biokjemi II', studiepoeng: 10, aar: 1, semester: 'høst',
+              dbhEmnekoder: [],
+              years: [],
+            },
+          ] },
+          { navn: 'Marinbiologi og limnologi', obligatoriske: [
+            {
+              emnekode: 'BIOS4310', emnenavn: 'Marin Ecology I', studiepoeng: 10, aar: 1, semester: 'høst',
+              dbhEmnekoder: [],
+              years: [],
+            },
+            {
+              emnekode: 'BIOS4410', emnenavn: 'Marine Ecology II', studiepoeng: 10, aar: 1, semester: 'vår',
+              dbhEmnekoder: [],
+              years: [],
+            },
+          ] },
+          { navn: 'Molekylærbiologi og biokjemi', obligatoriske: [
+            {
+              emnekode: 'BIOS4010', emnenavn: 'Arbeidsmetoder i molekylærbiologi og biokjemi I', studiepoeng: 10, aar: 1, semester: 'høst',
+              dbhEmnekoder: [],
+              years: [],
+            },
+            {
+              emnekode: 'BIOS4020', emnenavn: 'Arbeidsmetoder i molekylærbiologi og biokjemi II', studiepoeng: 10, aar: 1, semester: 'høst',
+              dbhEmnekoder: [],
+              years: [],
+            },
+          ] },
+          { navn: 'Toksikologi og miljøvitenskap', obligatoriske: [
+            {
+              emnekode: 'BIOS4500', emnenavn: 'Generell toksikologi', studiepoeng: 10, aar: 1, semester: 'høst',
+              dbhEmnekoder: [],
+              years: [],
+            },
+            {
+              emnekode: 'BIOS5400', emnenavn: 'Human toksikologi og økotoksikologi', studiepoeng: 10, aar: 1, semester: 'høst',
+              dbhEmnekoder: [],
+              years: [],
+            },
+          ] },
+          { navn: 'Økologi og evolusjon', obligatoriske: [
+          ] },
+        ],
+      },
+      {
+        entryId: 'uib_biologi2', shortName: 'UiB', institusjon: 'Universitetet i Bergen', isNmbu: false, programnavn: 'Biologi (master 2 år)',
+        studieplanAar: '2026/2027', kilder: ['https://www4.uib.no/studier/program/biologi-master', 'https://www4.uib.no/studier/program/biologi-master/plan'],
+        totaltStudiepoeng: 120, obligatoriskeStudiepoeng: 70,
+        merknad: 'Kilde er UiBs programside «Biologi (master)» med studieplanseksjonen «Studiets oppbygging», hentet 22.09.2026 (nettbasert, ikke en datert PDF; studieplanAar er derfor satt til inneværende opptaksår, høst 2026). Programmet har IKKE formelle studieretninger med egne obligatoriske emnepakker: ut over BIO300A, BIO300B og masteroppgaven består hele 1. studieår (40 sp) av «valemne» som studenten velger fritt blant masternivåemner ved Institutt for biovitenskap, se full emneoversikt via instituttets nettsider. Programsiden nevner syv uformelle spesialiseringstema som styrer valg av emner og tema for masteroppgave, men ingen av dem har et fastsatt obligatorisk pensum: terrestrisk økologi, marinbiologi, fiskeribiologi og forvaltning, mikrobiologi, miljøtoksikologi, havbruk og utviklingsbiologi, og fysiologi og ernæring. «spesialiseringer» er derfor tom. obligatoriskeStudiepoeng (70 = 5 + 5 + 60) dekker dermed hele det obligatoriske kravet i programmet, siden ingen retningsspesifikke emner finnes.',
+        obligatoriske: [
+          {
+            emnekode: 'BIO300A', emnenavn: 'Akademisk skriving', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BIO300B', emnenavn: 'Biostatistikk', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'Masteroppgave', emnenavn: 'Masteroppgave', studiepoeng: 60, aar: 2, semester: 'vår',
+            dbhEmnekoder: [], merknad: 'Ingen egen emnekode oppgitt på UiBs studieplanside. Fordelt med 30 sp i 3. semester (høst, 2. år) og 30 sp i 4. semester (vår, 2. år), dvs. hele 2. studieår.',
+            years: [],
+          },
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'ntnu_biologi2', shortName: 'NTNU', institusjon: 'Norges teknisk-naturvitenskapelige universitet', isNmbu: false, programnavn: 'Biologi (master 2 år)',
+        studieplanAar: '2025/2026', kilder: ['https://www.ntnu.no/studier/msbio', 'https://www.ntnu.no/studier/studieplan#programmeCode=MSBIO&year=0', 'https://www.ntnu.no/web/studier/studieplan?p_p_id=studyprogrammeplannerportlet_WAR_studyprogrammeplannerportlet_INSTANCE_KzJMPh2hQuXL&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=studyplan&p_p_cacheability=cacheLevelPage&code=MSBIO&year=2025'],
+        totaltStudiepoeng: 120, obligatoriskeStudiepoeng: 67.5,
+        merknad: 'Kilde er NTNUs studieplan-API (studyprogrammeplannerportlet, resource_id=studyplan) for MSBIO, lest via kull 2025 (fullstendig 2-årig plan; kull 2026 er foreløpig ikke fullt publisert). Programmet har fire studieretninger; alle fire deler HMS0003, BI3086, BI3085 og masteroppgaven BI3900 (til sammen 67,5 sp). To retninger har i tillegg ett navngitt obligatorisk fagemne (ført opp under spesialiseringer): BI3016 for Cell and Molecular Biology og BI3024 for Physiology. De to andre retningene har ingen egne obligatoriske enkeltemner utover fellesdelen: Ecology, Behaviour, Evolution and Biosystematics krever i stedet et obligatorisk VALG av minst 2 emner fra en egen «gruppe A» (bl.a. BI3052, BI3106, BI3036, BI3040, BI3082, BI3051, RFEL3082); Biodiversity and Systematics (Nabis) er et nordisk utvekslingsprogram (nabismaster.org) der studieplanen nevner et obligatorisk emne «Fundamental and Molecular Systematics» ved en av partnerinstitusjonene, men uten egen NTNU-emnekode, og er derfor ikke ført opp som enkeltemne. I tillegg er Experts in Teamwork (EiT, 7,5 sp, vårparallell 1. år) en obligatorisk emnekategori for de tre retningene Ecology/Evolution/Biosystematics, Cell and Molecular Biology og Physiology (ikke Nabis) – studenten velger selv «landsby» blant et stort antall emnekoder (f.eks. BEIT4013, TDT4857, TIØ4852 m.fl.), og NTNUs studieplan-API koder disse som «Elective» selv om EiT reelt sett er obligatorisk; ingen enkelt emnekode er derfor obligatorisk her. obligatoriskeStudiepoeng (67,5) teller kun de fire fellesemnene pluss retningens eget fagemne der det finnes; reelt obligatorisk omfang blir 75 sp for Cell and Molecular Biology og Physiology (inkl. EiT), og 75 sp for Ecology/Evolution/Biosystematics når EiT og minst 2 emner fra gruppe A (15 sp) regnes med, mot 67,5 sp for Nabis.',
+        obligatoriske: [
+          {
+            emnekode: 'HMS0003', emnenavn: 'Health, Safety and Environment (HSE) course for master students', studiepoeng: 0, aar: 1, semester: 'høst',
+            dbhEmnekoder: [], merknad: 'Felles for alle fire studieretninger.',
+            years: [],
+          },
+          {
+            emnekode: 'BI3086', emnenavn: 'How to do Science', studiepoeng: 0, aar: 1, semester: 'høst',
+            dbhEmnekoder: [], merknad: 'Felles for alle fire studieretninger.',
+            years: [],
+          },
+          {
+            emnekode: 'BI3085', emnenavn: 'Biology without borders', studiepoeng: 7.5, aar: 1, semester: 'høst',
+            dbhEmnekoder: [], merknad: 'Langsgående emne registrert i fire deler («part 1 of 4» til «part 4 of 4»), ett per semester gjennom hele studiet (1.–4. semester); de 7,5 studiepoengene tildeles samlet ved fullføring i 4. semester. Felles for alle fire studieretninger.',
+            years: [],
+          },
+          {
+            emnekode: 'BI3900', emnenavn: 'Master Thesis in Biology', studiepoeng: 60, aar: 2, semester: 'vår',
+            dbhEmnekoder: [], merknad: 'Langsgående masteroppgave registrert i fire deler gjennom hele studiet (1.–4. semester); de 60 studiepoengene tildeles samlet ved fullføring i 4. semester. For studieretningen Cell and Molecular Biology kan oppgaven i stedet registreres som BT3920 «Master Thesis in Biology at IBT» (samme omfang, 60 sp, ved Institutt for bioteknologi og matvitenskap). Felles for alle fire studieretninger.',
+            years: [],
+          },
+        ],
+        spesialiseringer: [
+          { navn: 'Ecology, Behaviour, Evolution and Biosystematics', obligatoriske: [
+          ] },
+          { navn: 'Cell and Molecular Biology', obligatoriske: [
+            {
+              emnekode: 'BI3016', emnenavn: 'Molecular Cell Biology', studiepoeng: 7.5, aar: 1, semester: 'høst',
+              dbhEmnekoder: [],
+              years: [],
+            },
+          ] },
+          { navn: 'Physiology', obligatoriske: [
+            {
+              emnekode: 'BI3024', emnenavn: 'Advanced Physiology', studiepoeng: 7.5, aar: 1, semester: 'vår',
+              dbhEmnekoder: [],
+              years: [],
+            },
+          ] },
+          { navn: 'Biodiversity and Systematics (Nabis)', obligatoriske: [
+          ] },
+        ],
+      },
+      {
+        entryId: 'uit_biologi2', shortName: 'UiT', institusjon: 'UiT Norges arktiske universitet', isNmbu: false, programnavn: 'Biologi (master 2 år)',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'nord_biovitenskap2', shortName: 'Nord', institusjon: 'Nord universitet', isNmbu: false, programnavn: 'Biovitenskap (master 2 år)',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+    ],
+  },
+  {
+    id: 'husdyr2', label: 'Husdyrvitenskap (2-årig master)', level: 'master2',
+    programs: [
+      {
+        entryId: 'nmbu_husdyr2', shortName: 'NMBU Husdyrvitenskap', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Husdyrvitenskap (master 2 år)',
+        studieplanAar: '2026/2027', kilder: ['https://www.nmbu.no/studier/master-2-aar/husdyrvitenskap', 'https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-06/M-HV-%202026.pdf', 'https://www.nmbu.no/fakulteter/fakultet-biovitenskap/vare-studenter-biovit'],
+        totaltStudiepoeng: 120, obligatoriskeStudiepoeng: 65,
+        merknad: 'Kilde er den engelskspråklige studieplanen «Master i Husdyrvitenskap (M-HV) / Master in Animal Science (M-AS), Opptak 2026», hentet fra fakultetets samleside for studieplaner (samme mal brukes for norske og internasjonale søkere). Programmet har ikke faste obligatoriske emnepakker per fordypningsretning – i stedet gjelder generelle poengkrav: minimum 50 sp husdyrfaglige emner, minimum 35 sp på 300-nivå (hvorav minst 25 sp husdyrfaglig), i tillegg til de to obligatoriske elementene over. Studentene velger selv emner innenfor tre uformelle fagfelt (avl/genetikk, ernæring/fôrteknologi, etologi/dyrevelferd), og planen lister ca. 20 relevante/anbefalte emner (bl.a. BIN300, HFA350, BIN310, BIO321, BIO322, HFA300, HFA303, HFA304, HET300, HET301, HET255, HFE302, HFE303, HFE305, HFE314, HFX307, BINT301, SDG300, SDG301) uten at noen av disse er påkrevd for alle studenter – de er derfor ikke ført opp som «obligatoriske» eller i «spesialiseringer», siden ingen konkret emnekombinasjon er bundet til en navngitt studieretning i selve studieplandokumentet. Programmet er koblet til tittelen «Sivilagronom Husdyr» (fem-årig løp for norske studenter), som krever 60 sp innen en egen liste stjernemerkede emner (bl.a. BINT301, ECN260, HET203, HFA300, HFA303, HFA350, HFE202, HFE205, HFE302, HFE303, HFE305, HFE314, HFX253, HFX255, HFX256, SDG201, SDG300) – dette er en tilleggstittel og ikke et obligatorisk krav i selve masterprogrammet. obligatoriskeStudiepoeng (65 = 5 + 60) forutsetter anbefalt 60 sp masteroppgave; med 45 sp eller 30 sp oppgave blir summen hhv. 50 eller 35 sp.',
+        obligatoriske: [
+          {
+            emnekode: 'BIN250', emnenavn: 'Quantitative skills in BioScience', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: [], merknad: 'Det obligatoriske statistikkravet på 5 sp dekkes av BIN250. STIN300 (Statistical Programming in R, januarblokk, år 2) er «også anbefalt» i planen, men fremstår som et alternativ/tillegg og ikke et andre obligatorisk emne.',
+            years: [],
+          },
+          {
+            emnekode: 'M60-HV', emnenavn: 'Masteroppgave', studiepoeng: 60, aar: 2, semester: 'vår',
+            dbhEmnekoder: [], merknad: '60 sp er anbefalt omfang og lagt til grunn her. Studenten kan i stedet velge en masteroppgave på 45 sp (emnekode M45-HV) eller 30 sp (M30-HV) dersom vedkommende trenger å ta flere emner for å oppfylle kravene til bachelorgraden. Oppgaven strekker seg i praksis over deler av høstparallellen og hele vårparallellen i 2. år.',
+            years: [],
+          },
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'nord_husdyr2', shortName: 'Nord', institusjon: 'Nord universitet', isNmbu: false, programnavn: 'Biovitenskap, studieretning husdyrvitenskap (master 2 år)',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'nmbu_emabg', shortName: 'NMBU EMABG', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'European Master in Animal Biodiversity and Genomics (master 2 år)',
+        studieplanAar: '2025/2026', kilder: ['https://www.nmbu.no/studier/master-2-aar/european-master-animal-biodiversity-and-genomics', 'https://www.emabg.eu/curriculum/', 'https://www.emabg.eu/study-tracks-all/'],
+        totaltStudiepoeng: 120, obligatoriskeStudiepoeng: 25,
+        merknad: 'EMABG er en felles Erasmus Mundus-mastergrad (Erasmus Mundus Joint Master) mellom NMBU og fem partneruniversiteter (BOKU Wien, Wageningen/WUR, Universität Göttingen/UGOE, AgroParisTech/APT og SLU). Det finnes ingen NMBU-PDF-studieplan for dette programmet (det er ikke del av fakultetets ordinære studieplansamling); kildene er programmets NMBU-side og konsortiets egne curriculum-/study-tracks-sider (emabg.eu), hentet 22.09.2026. Alle studenter tar 1. semester (35 sp) ved NMBU: de tre emnene i «obligatoriske» over (25 sp) pluss et obligatorisk VALG mellom BIO321 (Population Genetics and Molecular Evolution) eller BIO322 (Advanced Topics in Genomics), 10 sp – ikke ført opp som enkeltemne siden det er et valg mellom alternativer. Deretter velger studenten ett av fem mobilitetsspor («tracks»), som hver har egne obligatoriske emner ved et partneruniversitet i 2.–3. semester og avsluttende masteroppgave i 4. semester, ført opp under «spesialiseringer». Spor 4 og 5 har i tillegg et felles obligatorisk valg i 2. semester ved NMBU mellom HFA300 (Animal Breeding and Conservation Plans) eller BIN300 (Statistical Genomics), 10 sp, samt 15 sp valgfrie emner – heller ikke ført opp som enkeltemne. Oppgavestørrelsen («masteroppgave») VARIERER kraftig mellom sporene: fire av fem spor har en avsluttende oppgave på 30 sp i 4. semester, mens spor 2 (NMBU–WUR) i tillegg har en 30 sp oppgave («ABG80330 MSc thesis») i 3. semester ved WUR – dvs. 60 sp oppgavearbeid totalt for dette sporet. Mange av emnene ved partneruniversitetene (BOKU, APT, SLU) har ingen offisiell emnekode i kildematerialet; emnenavnet er da brukt i feltet «emnekode» slik oppgaven krever («aldri finn opp koder»). Ettersom credit-summene i kildene ikke alltid går eksakt opp til 30 sp per semester (avrunding/elektiver varierer per spor), er de oppgitt slik konsortiet selv skriver dem. obligatoriskeStudiepoeng (25) teller kun de tre ubetinget felles NMBU-emnene i 1. semester; reelt obligatorisk omfang per spor er langt høyere når spesialiseringens emner og masteroppgave(r) regnes med (typisk 90–120 sp avhengig av spor og elektivandel).',
+        obligatoriske: [
+          {
+            emnekode: 'ABG300', emnenavn: 'EMABG - Introduction course', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: [], merknad: '1. semester, alltid ved NMBU, felles for alle fem mobilitetsspor («tracks»).',
+            years: [],
+          },
+          {
+            emnekode: 'HFA303', emnenavn: 'Biological Consequences of Selection in Animal Breeding', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: [], merknad: '1. semester, alltid ved NMBU, felles for alle fem spor.',
+            years: [],
+          },
+          {
+            emnekode: 'HFA350', emnenavn: 'From phenotypes to breeding values', studiepoeng: 15, aar: 1, semester: 'høst',
+            dbhEmnekoder: [], merknad: '1. semester, alltid ved NMBU, felles for alle fem spor.',
+            years: [],
+          },
+        ],
+        spesialiseringer: [
+          { navn: 'Designing and implementing breeding programmes for small populations (NMBU–BOKU, Wien)', obligatoriske: [
+            {
+              emnekode: 'Genetics of diversity', emnenavn: 'Genetics of diversity', studiepoeng: 3, aar: 1, semester: 'vår',
+              dbhEmnekoder: [], merknad: 'Ingen emnekode oppgitt i kildematerialet fra BOKU; emnenavnet er brukt som identifikator. Del av 2.–3. semester (vårparallell 1. år t.o.m. høstparallell 2. år) ved BOKU, Wien.',
+              years: [],
+            },
+            {
+              emnekode: 'Animal breeding and the sustainable development goals', emnenavn: 'Animal breeding and the sustainable development goals', studiepoeng: 3, aar: 1, semester: 'vår',
+              dbhEmnekoder: [], merknad: 'Ingen emnekode oppgitt. 2.–3. semester ved BOKU.',
+              years: [],
+            },
+            {
+              emnekode: 'Transformative development', emnenavn: 'Transformative development', studiepoeng: 3, aar: 1, semester: 'vår',
+              dbhEmnekoder: [], merknad: 'Ingen emnekode oppgitt. 2.–3. semester ved BOKU.',
+              years: [],
+            },
+            {
+              emnekode: 'Animal husbandry in tropical and subtropical regions', emnenavn: 'Animal husbandry in tropical and subtropical regions', studiepoeng: 3, aar: 1, semester: 'vår',
+              dbhEmnekoder: [], merknad: 'Ingen emnekode oppgitt. 2.–3. semester ved BOKU.',
+              years: [],
+            },
+            {
+              emnekode: 'Project design and sustainable development goals (SDGs)', emnenavn: 'Project design and sustainable development goals (SDGs)', studiepoeng: 3, aar: 1, semester: 'vår',
+              dbhEmnekoder: [], merknad: 'Ingen emnekode oppgitt. 2.–3. semester ved BOKU.',
+              years: [],
+            },
+            {
+              emnekode: 'Scientific communication and impacts', emnenavn: 'Scientific communication and impacts', studiepoeng: 3, aar: 1, semester: 'vår',
+              dbhEmnekoder: [], merknad: 'Ingen emnekode oppgitt. 2.–3. semester ved BOKU.',
+              years: [],
+            },
+            {
+              emnekode: 'Contribution of animal breeding to global food security', emnenavn: 'Contribution of animal breeding to global food security', studiepoeng: 3, aar: 1, semester: 'vår',
+              dbhEmnekoder: [], merknad: 'Ingen emnekode oppgitt. 2.–3. semester ved BOKU.',
+              years: [],
+            },
+            {
+              emnekode: 'Master Thesis', emnenavn: 'Master Thesis', studiepoeng: 30, aar: 2, semester: 'vår',
+              dbhEmnekoder: [], merknad: '4. semester ved NMBU. Ingen egen emnekode oppgitt i kildematerialet.',
+              years: [],
+            },
+          ] },
+          { navn: 'Conservation genomics for rare and endangered breeds and species (NMBU–WUR, Wageningen)', obligatoriske: [
+            {
+              emnekode: 'ABG60306', emnenavn: 'Breeding Lab', studiepoeng: 6, aar: 1, semester: 'vår',
+              dbhEmnekoder: [], merknad: '2. semester ved Wageningen University & Research (WUR).',
+              years: [],
+            },
+            {
+              emnekode: 'MAT20306', emnenavn: 'Advanced Statistics', studiepoeng: 6, aar: 1, semester: 'vår',
+              dbhEmnekoder: [], merknad: '2. semester ved WUR.',
+              years: [],
+            },
+            {
+              emnekode: 'ABG80330', emnenavn: 'MSc thesis Animal Breeding and Genomics', studiepoeng: 30, aar: 2, semester: 'høst',
+              dbhEmnekoder: [], merknad: '3. semester ved WUR, i tillegg til masteroppgaven ved NMBU i 4. semester – se merknad om oppgavestørrelse.',
+              years: [],
+            },
+            {
+              emnekode: 'Master Thesis', emnenavn: 'Master Thesis', studiepoeng: 30, aar: 2, semester: 'vår',
+              dbhEmnekoder: [], merknad: '4. semester ved NMBU.',
+              years: [],
+            },
+          ] },
+          { navn: 'One health: Health and welfare in humans and animals (NMBU–UGOE, Göttingen)', obligatoriske: [
+            {
+              emnekode: 'M.Cp.0016', emnenavn: 'Practical Statistics and Experimental Design in Agriculture', studiepoeng: 6, aar: 1, semester: 'vår',
+              dbhEmnekoder: [], merknad: '2.–3. semester ved Universität Göttingen (UGOE).',
+              years: [],
+            },
+            {
+              emnekode: 'M.iPAB.0002', emnenavn: 'Breeding schemes and programs in plant and animal breeding', studiepoeng: 6, aar: 1, semester: 'vår',
+              dbhEmnekoder: [], merknad: '2.–3. semester ved UGOE.',
+              years: [],
+            },
+            {
+              emnekode: 'M.iPAB.0006', emnenavn: 'Breeding informatics', studiepoeng: 9, aar: 1, semester: 'vår',
+              dbhEmnekoder: [], merknad: '2.–3. semester ved UGOE.',
+              years: [],
+            },
+            {
+              emnekode: 'M.iPAB.0016', emnenavn: 'Applied effective R programming in animal breeding and genetics', studiepoeng: 3, aar: 1, semester: 'vår',
+              dbhEmnekoder: [], merknad: '2.–3. semester ved UGOE.',
+              years: [],
+            },
+            {
+              emnekode: 'M.iPAB.0020', emnenavn: 'Breeding Lab Internship', studiepoeng: 9, aar: 1, semester: 'vår',
+              dbhEmnekoder: [], merknad: '2.–3. semester ved UGOE.',
+              years: [],
+            },
+            {
+              emnekode: 'P.AG.0085', emnenavn: 'Computing in Science - Basics of Computational Biology', studiepoeng: 3, aar: 1, semester: 'vår',
+              dbhEmnekoder: [], merknad: '2.–3. semester ved UGOE.',
+              years: [],
+            },
+            {
+              emnekode: 'M.iPAB.0001', emnenavn: 'Quantitative genetics and population genetics', studiepoeng: 6, aar: 1, semester: 'vår',
+              dbhEmnekoder: [], merknad: '2.–3. semester ved UGOE.',
+              years: [],
+            },
+            {
+              emnekode: 'M.iPAB.0003', emnenavn: 'Statistical genetics, breeding informatics and experimental design', studiepoeng: 6, aar: 1, semester: 'vår',
+              dbhEmnekoder: [], merknad: '2.–3. semester ved UGOE.',
+              years: [],
+            },
+            {
+              emnekode: 'M.iPAB.0007', emnenavn: 'Biotechnology and molecular genetics in plant and animal breeding', studiepoeng: 6, aar: 1, semester: 'vår',
+              dbhEmnekoder: [], merknad: '2.–3. semester ved UGOE.',
+              years: [],
+            },
+            {
+              emnekode: 'M.iPAB.0024', emnenavn: 'Farm animal genetic resources', studiepoeng: 3, aar: 1, semester: 'vår',
+              dbhEmnekoder: [], merknad: '2.–3. semester ved UGOE.',
+              years: [],
+            },
+            {
+              emnekode: 'M.SIA.A02M', emnenavn: 'Epidemiology of international and tropical animal infectious diseases', studiepoeng: 6, aar: 1, semester: 'vår',
+              dbhEmnekoder: [], merknad: '2.–3. semester ved UGOE.',
+              years: [],
+            },
+            {
+              emnekode: 'Master Thesis', emnenavn: 'Master Thesis', studiepoeng: 30, aar: 2, semester: 'vår',
+              dbhEmnekoder: [], merknad: '4. semester ved NMBU.',
+              years: [],
+            },
+          ] },
+          { navn: 'Understanding biodiversity: integrative biology (NMBU–APT, AgroParisTech)', obligatoriske: [
+            {
+              emnekode: 'SDG300', emnenavn: 'Sustainability Goals and Food System Redesign', studiepoeng: 5, aar: 1, semester: 'vår',
+              dbhEmnekoder: [], merknad: '2. semester ved NMBU. NMBUs egen emnebeskrivelse lister emnet som SDG300 «Sustainable development goals in plant and animal food systems».',
+              years: [],
+            },
+            {
+              emnekode: 'Advanced approaches in Animal Sciences', emnenavn: 'Advanced approaches in Animal Sciences', studiepoeng: 12, aar: 2, semester: 'høst',
+              dbhEmnekoder: [], merknad: 'Ingen emnekode oppgitt. 3. semester ved AgroParisTech (APT); ett av tre emneblokker som til sammen utgjør 30 sp.',
+              years: [],
+            },
+            {
+              emnekode: 'Foundations for Animal sciences and Transversal tools', emnenavn: 'Foundations for Animal sciences and Transversal tools', studiepoeng: 13, aar: 2, semester: 'høst',
+              dbhEmnekoder: [], merknad: 'Ingen emnekode oppgitt. 3. semester ved APT.',
+              years: [],
+            },
+            {
+              emnekode: 'Practical work experiences and Soft skills', emnenavn: 'Practical work experiences and Soft skills', studiepoeng: 5, aar: 2, semester: 'høst',
+              dbhEmnekoder: [], merknad: 'Ingen emnekode oppgitt. 3. semester ved APT.',
+              years: [],
+            },
+            {
+              emnekode: 'Research Thesis', emnenavn: 'Research Thesis', studiepoeng: 30, aar: 2, semester: 'vår',
+              dbhEmnekoder: [], merknad: '4. semester ved APT (ikke ved NMBU, i motsetning til de andre sporene).',
+              years: [],
+            },
+          ] },
+          { navn: 'Bioinformatics applied to biodiversity and genomics (NMBU–SLU, Uppsala/Umeå)', obligatoriske: [
+            {
+              emnekode: 'SDG300', emnenavn: 'Sustainability Goals and Food System Redesign', studiepoeng: 5, aar: 1, semester: 'vår',
+              dbhEmnekoder: [], merknad: '2. semester ved NMBU.',
+              years: [],
+            },
+            {
+              emnekode: 'Genome analysis', emnenavn: 'Genome analysis', studiepoeng: 15, aar: 2, semester: 'høst',
+              dbhEmnekoder: [], merknad: 'Ingen emnekode oppgitt. 3. semester ved Sveriges lantbruksuniversitet (SLU).',
+              years: [],
+            },
+            {
+              emnekode: 'Bioinformatics', emnenavn: 'Bioinformatics', studiepoeng: 15, aar: 2, semester: 'høst',
+              dbhEmnekoder: [], merknad: 'Ingen emnekode oppgitt. 3. semester ved SLU.',
+              years: [],
+            },
+            {
+              emnekode: 'Master Thesis', emnenavn: 'Master Thesis', studiepoeng: 30, aar: 2, semester: 'vår',
+              dbhEmnekoder: [], merknad: '4. semester ved SLU. Studiepoeng er ikke eksplisitt oppgitt i kildematerialet og er satt til 30 sp ut fra programmets standard semesterstruktur (30 sp per semester).',
+              years: [],
+            },
+          ] },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'plante2', label: 'Plantevitenskap (2-årig master)', level: 'master2',
+    programs: [
+      {
+        entryId: 'nmbu_plante2', shortName: 'NMBU Plantevitenskap', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Plantevitenskap (master 2 år)',
+        studieplanAar: '2026/2027', kilder: ['https://www.nmbu.no/studier/master-2-aar/plantevitenskap', 'https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-05/M-PV%20Studieplan%202026-2027_1.pdf', 'https://www.nmbu.no/fakulteter/fakultet-biovitenskap/vare-studenter-biovit'],
+        totaltStudiepoeng: 120, obligatoriskeStudiepoeng: 65,
+        merknad: 'Kilde er studieplanen «Master i Plantevitenskap (M-PV) 2026», hentet fra fakultetets samleside for studieplaner. Felles for alle tre studieretninger: BIO302 (5 sp), en masteroppgave på 30 eller 60 sp (M30-PV/M60-PV), og minimum 30 sp på 300-nivå totalt. Studenter uten jordfag (JORD100 e.l.) fra bachelor må ta dette i masteren, og inntil 10 sp av GEO100/JORD100/BOT130/STAT100 kan telle med. To av studieretningene har ingen enkeltemner som er ubetinget obligatoriske, kun et obligatorisk VALG innen en emneliste, og «obligatoriske» er derfor tom for dem her: Planteproduksjon og plantevern må velge minimum 30 sp blant PJH341, PLV321, PLV330, PLV340, BIO324, PJH360 og JORD330, samt (dersom emnet mangler fra bachelor) minst ett av PJH212/PJH230/PJH240/PJH250. Plantebioteknologi må velge minimum 30 sp blant BIO321, BIO327, BOT345, BIO300, BIO324 og BIO325, samt (dersom det mangler fra bachelor) minst ett av BIO200/BIO244. Grøntmiljø har derimot to ubetinget obligatoriske emner (BOT200 og PHG316, ført opp under spesialiseringer) og krever i tillegg (dersom emnet mangler fra bachelor) at studenten tar et av PHG213, PHG215, PLV210/PLV211, JORD230 eller LAA221. Programmet gir engelskspråklig vitnemål for studieretningene Planteproduksjon og plantevern og Plantebioteknologi. Programmet er koblet til tittelen «Sivilagronom planter» (80 sp fra en egen emneliste, hvorav minst 30 sp på 300-nivå og minst 30 sp innen PJH/PLV-emnekoder) – dette er en tilleggstittel og ikke et krav i selve masterprogrammet. obligatoriskeStudiepoeng (65 = 5 + 60) forutsetter 60 sp masteroppgave; med 30 sp oppgave blir summen 35 sp, pluss ev. studieretningens obligatoriske emner.',
+        obligatoriske: [
+          {
+            emnekode: 'BIO302', emnenavn: 'Introduksjonsemne til masterstudier på BIOVIT', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: [], merknad: 'Ligger i augustblokk. Felles for alle tre studieretninger.',
+            years: [],
+          },
+          {
+            emnekode: 'M60-PV', emnenavn: 'Masteroppgave', studiepoeng: 60, aar: 2, semester: 'vår',
+            dbhEmnekoder: [], merknad: '60 sp er lagt til grunn her. Studenten kan i stedet velge en masteroppgave på 30 sp (emnekode M30-PV). Oppgaven kan starte allerede med feltarbeid i augustblokk/juniblokk 1. år og kan i sin helhet legges til høstparallell + vårparallell 2. år (60 sp) eller kun vårparallell 2. år (30 sp). Felles for alle tre studieretninger.',
+            years: [],
+          },
+        ],
+        spesialiseringer: [
+          { navn: 'Planteproduksjon og plantevern', obligatoriske: [
+          ] },
+          { navn: 'Plantebioteknologi', obligatoriske: [
+          ] },
+          { navn: 'Grøntmiljø', obligatoriske: [
+            {
+              emnekode: 'BOT200', emnenavn: 'Plantefysiologi', studiepoeng: 10, aar: 1, semester: 'høst',
+              dbhEmnekoder: [],
+              years: [],
+            },
+            {
+              emnekode: 'PHG316', emnenavn: 'Grøntanlegg og landskapspleie', studiepoeng: 10, aar: 1, semester: 'høst',
+              dbhEmnekoder: [], merknad: 'Ligger i augustblokk/høstparallell. Planen oppgir at emnet «tilbys 2027/28», dvs. annethvert år.',
+              years: [],
+            },
+          ] },
+        ],
+      },
+      {
+        entryId: 'inn_baerekraftig_jordbruk', shortName: 'INN', institusjon: 'Universitetet i Innlandet', isNmbu: false, programnavn: 'Bærekraftig jordbruk (master 2 år)',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'nmbu_agroekologi2', shortName: 'NMBU Agroøkologi', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Agroøkologi / Agroecology (master 2 år)',
+        studieplanAar: '2025/2026', kilder: ['https://www.nmbu.no/studier/master-2-aar/agroecology', 'https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2025-03/Master%20AE%202025-26.pdf', 'https://www.nmbu.no/fakulteter/fakultet-biovitenskap/vare-studenter-biovit'],
+        totaltStudiepoeng: 120, obligatoriskeStudiepoeng: 100,
+        merknad: 'Kilde er den engelskspråklige studieplanen «Master in Agroecology (M-AE), Admission 2025», hentet fra fakultetets samleside for studieplaner; nyeste tilgjengelige versjon der er 2025/2026 (ingen 2026/2027-versjon var lagt ut per 22.09.2026, og programmets egen NMBU-side lenket ikke til noen PDF direkte). Programmet er internasjonalt og har ikke egne norskspråklige studieretninger med separate obligatoriske emnepakker; i stedet finnes en «enkeltgrad»-variant (kun ved NMBU) og en «dobbeltgrad»-variant i samarbeid med ISARA/FESIA i Frankrike (student ved NMBU første semester, deretter evt. utveksling og tredje semester ved ISARA, fjerde semester 30 sp masteroppgave). Begge variantene har de samme obligatoriske emnene PAE302 og PAE306; forskjellen er kun i oppgavestørrelse (fast 30 sp i dobbeltgraden vs. valgfritt 30/60 sp i enkeltgraden) og hvor resten av studiet gjennomføres, og er derfor ikke ført opp som egne «spesialiseringer». obligatoriskeStudiepoeng (100 = 30 + 10 + 60) forutsetter 60 sp masteroppgave; med 30 sp oppgave (obligatorisk for dobbeltgradsstudenter, valgfritt for øvrige) blir summen 70 sp. Resterende studiepoeng er valgfrie emner på 200- eller 300-nivå; planen foreslår en liste aktuelle valgemner (bl.a. innen bærekraft, utviklingsstudier og jordfag).',
+        obligatoriske: [
+          {
+            emnekode: 'PAE302', emnenavn: 'Agroecology: Action learning in farming and food systems', studiepoeng: 30, aar: 1, semester: 'høst',
+            dbhEmnekoder: [], merknad: 'Går over augustblokk og høstparallell. Felles startemne for både enkeltgrad og dobbeltgrad med ISARA/FESIA (Frankrike).',
+            years: [],
+          },
+          {
+            emnekode: 'PAE306', emnenavn: 'Agroecology: Action oriented research', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'M60-AE', emnenavn: 'Master\'s thesis', studiepoeng: 60, aar: 2, semester: 'vår',
+            dbhEmnekoder: [], merknad: '60 sp er lagt til grunn her (høstparallell + vårparallell 2. år). Studenten kan i stedet velge en masteroppgave på 30 sp (emnekode M30-AE, kun vårparallell 2. år); dobbeltgradsstudenter med ISARA/FESIA skriver alltid en oppgave på 30 sp.',
+            years: [],
+          },
+        ],
+        spesialiseringer: [
+        ],
+      },
+    ],
+  },
+  {
+    id: 'akvakultur2', label: 'Akvakultur (2-årig master)', level: 'master2',
+    programs: [
+      {
+        entryId: 'nmbu_akvakultur2', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Aquaculture (master 2 år)',
+        studieplanAar: '2026/2027', kilder: ['https://www.nmbu.no/studier/master-2-aar/aquaculture', 'https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-06/M-AA%202026%20Study%20plan.pdf', 'https://www.nmbu.no/fakulteter/fakultet-biovitenskap/vare-studenter-biovit'],
+        totaltStudiepoeng: 120, obligatoriskeStudiepoeng: 80,
+        merknad: 'Kilde er den engelskspråklige studieplanen «Master in Aquaculture (M-AA), Admissions 2026», hentet fra fakultetets samleside for studieplaner. Programmet har ingen navngitte studieretninger med egne obligatoriske emnepakker – utover de tre obligatoriske emnene og masteroppgaven velger studenten fritt blant en lang liste valgfrie emner innen fem uformelle temaer (avl/genombiologi, etologi/fiskehelse, ernæring/produktkvalitet/fôrteknologi, drift/anleggsteknologi, samt generelle emner), med krav om minimum 30 sp på 300-nivå totalt. obligatoriskeStudiepoeng (80 = 5 + 5 + 10 + 60) forutsetter 60 sp masteroppgave; med 45 eller 30 sp oppgave blir summen hhv. 65 eller 50 sp.',
+        obligatoriske: [
+          {
+            emnekode: 'AQX251', emnenavn: 'Sustainability and welfare in aquaculture', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: [], merknad: 'Ligger i augustblokk.',
+            years: [],
+          },
+          {
+            emnekode: 'BIO314', emnenavn: 'Fish physiology', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'AQX300', emnenavn: 'Applied Aquaculture', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'M60-AA', emnenavn: 'Master thesis', studiepoeng: 60, aar: 2, semester: 'vår',
+            dbhEmnekoder: [], merknad: '60 sp er lagt til grunn her (går over høstparallell og vårparallell 2. år). Studenten kan i stedet velge en oppgave på 45 sp (M45-AA) eller 30 sp (M30-AA) og fylle resten av 2. år med valgfrie emner.',
+            years: [],
+          },
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'uit_fiskeri_havbruk2', shortName: 'UiT Fiskeri og havbruk', institusjon: 'UiT Norges arktiske universitet', isNmbu: false, programnavn: 'Fiskeri- og havbruksvitenskap (master 2 år)',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'nord_akvakultur2', shortName: 'Nord', institusjon: 'Nord universitet', isNmbu: false, programnavn: 'Biovitenskap, studieretning akvakultur (master 2 år)',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'uit_akvamedisin2', shortName: 'UiT Akvamedisin', institusjon: 'UiT Norges arktiske universitet', isNmbu: false, programnavn: 'Akvamedisin (master)',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+    ],
+  },
+];

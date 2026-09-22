@@ -393,12 +393,36 @@
       "fullName": "Universitetet i Bergen",
       "enhet": "Det samfunnsvitenskapelige fakultet",
       "styresider": [
-        "https://www.uib.no/universitetsstyret"
+        "https://ekstern.filer.uib.no/svf/",
+        "https://www.uib.no/foransatte/126532/m%C3%B8ter-i-styret"
       ],
-      "status": "none",
-      "dokumenter": [],
-      "punkter": [],
-      "oppsummering": "",
+      "status": "complete",
+      "dokumenter": [
+        {
+          "label": "Sak 71/25: Opptaksrammer for 2026/2027, Fakultetsstyret ved SV-fakultetet",
+          "url": "https://ekstern.filer.uib.no/svf/2025/Fakultetsstyret%202025/Oktober/71-25%20Opptaksrammer%20for%202026_2027.pdf",
+          "filnavn": "UiB_SV_Opptaksrammer_2026-2027.pdf",
+          "dato": "2025-10-21",
+          "storrelseMB": 0.17,
+          "lastetNed": true
+        },
+        {
+          "label": "Sak S 103/25: Endringer i UiBs studieportefølje 2026 og opptaksrammer 2026-27, Universitetsstyret",
+          "url": "https://ekstern.filer.uib.no/ledelse/universitetsstyret/2025/2025-11-27/S_103-25Endringer-i-UiBs-studieportef%C3%B8lje2026-og-opptaksrammer2026-27.pdf",
+          "filnavn": "UiB_Universitetsstyret_Studieportefolje2026_S103-25.pdf",
+          "dato": "2025-11-27",
+          "storrelseMB": 0.28,
+          "lastetNed": true
+        }
+      ],
+      "punkter": [
+        "Master i samfunnsøkonomi ved UiB beholder 27 studieplasser i 2026/2027, samme nivå som 2025/2026. Bachelor i samfunnsøkonomi beholder 101 plasser, det integrerte masterprogrammet i samfunnsøkonomi (siviløkonom-løpet) 22 plasser, og årsstudiet 23 plasser – ingen endringer i noen av disse programmene (sak 71/25, Fakultetsstyret ved SV-fakultetet 21.10.2025, stadfestet i universitetsstyresak S 103/25 27.11.2025).",
+        "SV-fakultetets samlede opptaksramme er uendret fra 2025/26 til 2026/27: 1034 studieplasser på grunnstudier (årsstudium, bachelor, integrert master) og 285 på toårig master. Ingen institutter ved fakultetet meldte inn ønske om endrede opptaksrammer for 2026/2027.",
+        "Institutt for geografi omorganiserer sine masterprogram fra høsten 2026: tre tidligere masterprogram (MASV-PHYG, studieretninger i MASV-GEOG, MASV-MEHA) slås sammen til to nye program – Master i natur- og miljøgeografi (13 plasser) og Master i samfunnsgeografi og berekraftig utvikling (17 plasser) – samlet uendret 30 plasser, men med ny fagprofil og internasjonal utlysning for samfunnsgeografi-sporet.",
+        "På institusjonsnivå fylte UiB sine opptaksrammer for både grunnstudier og toårig master i 2025 for første gang siden 2021 over 100 prosent på masternivå (1290 nye masterstudenter, opp 184 fra året før), og fakultetet trekker fram styrket rekrutteringsarbeid i sosiale medier og bred institusjonell markedsføring som forklaring (S 103/25).",
+        "Universitetsstyret vedtok samtidig å opprette to nye studieprogram (integrert master i kvanteteknologi og erfaringsbasert master i undervisning om kontroversielle tema) og legge ned ett program (erfaringsbasert master i undervisning med fordypning i matematikk) fra høsten 2026 – ingen av disse berører samfunnsøkonomi eller andre LANDSAM-relevante fagområder direkte."
+      ],
+      "oppsummering": "UiBs master i samfunnsøkonomi er stabil: uendrede opptaksrammer (27 plasser) for 2026/2027 på alle nivåer (årsstudium, bachelor, integrert master, toårig master), i en periode der UiB for øvrig melder om styrket rekruttering og rekordfylling av masterplassene på institusjonsnivå. Institutt for geografi gjennomfører en programomlegging, men det berører ikke samfunnsøkonomi-programmene.",
       "relevanteProgram": [
         "uib_samfunnsokonomi"
       ]
@@ -407,14 +431,30 @@
       "id": "usn",
       "name": "USN",
       "fullName": "Universitetet i Sørøst-Norge",
-      "enhet": "Handelshøyskolen / Fakultet for teknologi, naturvitenskap og maritime fag",
+      "enhet": "Fakultet for teknologi, naturvitenskap og maritime fag (TNM) – Institutt for natur, helse og miljø, Bø (eiendomsmegling)",
       "styresider": [
-        "https://opengov.360online.com/Meetings/usn"
+        "https://opengov.360online.com/Meetings/usn/Boards/Details/341392",
+        "https://www.usn.no/om-usn/organisering/fakultet/fakultet-for-teknologi-naturvitskap-og-maritime-fag/styret/"
       ],
-      "status": "none",
-      "dokumenter": [],
-      "punkter": [],
-      "oppsummering": "",
+      "status": "partial",
+      "dokumenter": [
+        {
+          "label": "Møteinnkalling Fakultetsstyret TNM 28.05.2026 (inkl. sak 15/26 Studieportefølje 2027-2028)",
+          "url": "https://opengov.360online.com/Meetings/usn/File/Details/1852195.pdf",
+          "filnavn": "USN_TNM_Moteinnkalling_28.05.2026.pdf",
+          "dato": "2026-05-28",
+          "storrelseMB": 0.24,
+          "lastetNed": true
+        }
+      ],
+      "punkter": [
+        "Bachelor i eiendomsmegling ved USN (Bø i Midt-Telemark) hører til Fakultet for teknologi, naturvitenskap og maritime fag (TNM) – en annen fakultetstilhørighet enn USN Handelshøyskolen, som er dekket i det eksisterende markedsstatus-arbeidet for handelshøyskolene.",
+        "TNM-fakultetsstyret behandlet 28.05.2026 sak 15/26 om foreløpig innmelding av studieporteføljen for 2027/2028, inkludert foreløpig innmelding av «0-opptak» (nullopptak) for enkelte studier. De konkrete programnavnene i 0-opptak-listen lå i vedlegg som ikke var tekstlig gjengitt i den kombinerte møteinnkallingen, så vi kan ikke bekrefte om eiendomsmegling er blant dem.",
+        "TNM venter en realnedgang i budsjettrammen for 2027: en generell rammereduksjon og sentralisering av OLA-ordningen (kompensasjon for undervisning/veiledning) gir isolert sett en reduksjon på 3,4 millioner kroner i fakultetets budsjettramme, i en situasjon der USNs samlede rammebevilgning for 2027 øker nominelt med 3,1 prosent, men går ned realt med -0,15 prosent (sak 17/26, samme møte).",
+        "Fakultetsstyret forutsatte i vedtaket at oppstart av nye studietilbud ved campus Drammen finansieres fullt ut med friske midler, som et signal om stram økonomisk prioritering av nye satsinger opp mot eksisterende portefølje.",
+        "Vi fant ingen direkte omtale av eiendomsmegling-programmet spesifikt (søkertall, studiepoengproduksjon eller portefølje-status) i den delen av sakspapirene som lot seg lese ut; status settes derfor til «partial»."
+      ],
+      "oppsummering": "USNs bachelor i eiendomsmegling ligger under TNM-fakultetet, som står overfor realnedgang i budsjettrammen for 2027 og som i mai 2026 meldte inn en foreløpig studieportefølje for 2027/2028 med enkelte programmer i «0-opptak». Konkret informasjon om eiendomsmegling spesifikt – søkertall, studiepoengproduksjon eller om programmet er blant 0-opptaks-kandidatene – lot seg ikke lese ut av de tilgjengelige sakspapirene, som viste til vedlegg utenfor den nedlastede filen.",
       "relevanteProgram": [
         "usn_eiendomsmegling"
       ]
@@ -423,14 +463,37 @@
       "id": "volda",
       "name": "Volda",
       "fullName": "Høgskulen i Volda",
-      "enhet": "Institusjonsnivå (egen høgskole)",
+      "enhet": "Institusjonsnivå (egen høgskole) – Avdeling for samfunnsfag og historie (Planlegging, administrasjon og leiing)",
       "styresider": [
-        "https://opengov.360online.com/Meetings/volda"
+        "https://www.hivolda.no/hogskulen/om-hogskulen/leiing-og-organisering/styret"
       ],
-      "status": "none",
-      "dokumenter": [],
-      "punkter": [],
-      "oppsummering": "",
+      "status": "partial",
+      "dokumenter": [
+        {
+          "label": "Khrono: «Skal vurdera når studieprogram skal leggast ned»",
+          "url": "https://www.khrono.no/skal-vurdera-nar-studieprogram-skal-leggast-ned/1083243",
+          "filnavn": null,
+          "dato": "2026",
+          "storrelseMB": null,
+          "lastetNed": false
+        },
+        {
+          "label": "Khrono: «Endå ein høgskule skal vurdera endring i studietilbodet sitt»",
+          "url": "https://www.khrono.no/enda-ein-hogskule-skal-vurdera-endring-i-studietilbodet-sitt/1066880",
+          "filnavn": null,
+          "dato": "2026",
+          "storrelseMB": null,
+          "lastetNed": false
+        }
+      ],
+      "punkter": [
+        "Vi fant ikke Høgskulen i Volda sine primære styrepapirer (høgskulestyret) direkte tilgjengelige – verken via opengov.360online.com/Meetings/volda (ga gjentatte 500-feil) eller via høgskulens egne nettsider. Punktene under er derfor basert på Khronos omtale av høgskulestyrets prosess og siterte saksframlegg/HVO-tal, ikke på selve sakspapirene.",
+        "Høgskulestyret skulle 10. september 2026 behandle retningslinjer for studieporteføljen, med forslag om at bachelorprogram med færre enn 10 studentar og masterprogram med færre enn 5 studentar i tredje driftsår – etter markedsføringstiltak – skal leggast ned. Planlegging, administrasjon og leiing (bachelor) og Regional planlegging og utvikling/Samfunnsplanlegging og leiing (master) er ikke eksplisitt nevnt som kandidater i kildene vi fant, men rammene kan i prinsippet ramme dem dersom studenttallet er lavt.",
+        "HVO har i dag 164 studieprogram, mot 54 ved sammenlignbare institusjoner, med et snitt på 26,6 studenter per program (mot 45–70 ved sammenligningsinstitusjonene). Bare rundt 15 program har over 40 studenter, mens over 60 program har maksimalt 5 studenter.",
+        "Bakgrunnen er en mer krevende økonomisk situasjon for HVO framover, blant annet på grunn av fallende studiepoengproduksjon, som gir reduserte bevilgninger fra Kunnskapsdepartementet. KD skal i mai 2026 ha uttalt i etatsstyringsmøte at de forventer at HVO gjør strategiske prioriteringer i studieporteføljen, særlig for program med svak rekruttering eller gjennomføring.",
+        "Endelig vedtak om studieporteføljen for 2027/2028 er planlagt i høgskulestyret i desember 2026 – etter forslag skal foreligge i august 2026. Vi har ikke funnet ut om Planlegging, administrasjon og leiing er blant programmene som vurderes strøket."
+      ],
+      "oppsummering": "Høgskulen i Volda gjennomfører en bred gjennomgang av hele studieporteføljen (164 program, mange svært små) på grunn av økonomisk press, med nye lukkingskriterier til behandling i høgskulestyret 10. september 2026 og endelig porteføljevedtak i desember 2026. Vi fant ikke direkte bekreftelse på om bachelor i planlegging, administrasjon og leiing – HVOs LANDSAM-konkurrerende program – er blant kandidatene for nedlegging, og primære styrepapirer var ikke tilgjengelige; kildene her er Khronos dekning av prosessen. Status settes til «partial».",
       "relevanteProgram": [
         "hivolda_planlegging"
       ]
