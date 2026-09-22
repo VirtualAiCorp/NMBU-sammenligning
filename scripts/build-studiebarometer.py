@@ -41,6 +41,7 @@ mangler ofte et fylt CA-lager, og cert-verifiseringen feiler selv med
 from __future__ import annotations
 
 import argparse
+import difflib
 import html
 import json
 import os
@@ -227,53 +228,113 @@ def try_fetch_main(inst: str, kode: str) -> tuple[str, str, dict] | None:
     return sb_id, got[0], got[1]
 
 
-# Søke-API-et som studiebarometeret.no sitt eget søkefelt bruker
-# (funnet via data-props på /no/student/finn – ikke dokumentert, men stabilt
-# nok til bruk her). Trengs fordi mange sbId-er IKKE er "<inst>_<dbh-kode>":
-# f.eks. er HVL Bergens landmåling-bachelor "238_leie-bergen" (uten ledende
-# 0 i institusjonskoden, og med campus-suffiks), ikke "0238_leie".
+# Søke-API-et som studiebarometeret.no sitt eget søkefelt bruker (funnet via
+# data-props på /no/student/finn – ikke dokumentert, men stabilt nok til
+# bruk her). Trengs fordi mange sbId-er IKKE er "<inst>_<dbh-kode>": f.eks.
+# er HVL Bergens landmåling-bachelor "238_leie-bergen" (uten ledende 0 i
+# institusjonskoden, og med campus-suffiks), ikke "0238_leie".
+#
+# VIKTIG (funnet empirisk): ?query=<tekst>&i=<institusjon> filtrerer IKKE
+# faktisk på institusjon når query er ikke-tom (i=1173 og i=9999999 ga nesten
+# identisk treffliste for samme fritekst-query) – og fritekst-søket matcher
+# bare navn/beskrivelse, ikke DBH-studieprogramkoden («OFFBV» gir 0 treff selv
+# om programmet finnes som «236_offbv»). Derfor: hent i stedet HELE
+# institusjonens katalog med tom query + gyldig i=<institusjon> (det filteret
+# fungerer), paginert med &p=<n>, og match lokalt mot koden/navnet. Katalogen
+# mellomlagres per institusjon for kjøringen (mange programmer deler
+# institusjon).
 SEARCH_ENDPOINT = f"{BASE}/no/api/student/finn"
 
+_catalog_cache: dict[str, list[dict]] = {}
 
-def search_api(query: str, inst_filter: str | None) -> list[dict]:
-    params = {"query": query}
-    if inst_filter:
-        params["i"] = inst_filter
+
+def _search_page(query: str, inst_filter: str, page: int) -> tuple[list[dict], int]:
+    params = {"query": query, "i": inst_filter}
+    if page > 1:
+        params["p"] = str(page)
     url = f"{SEARCH_ENDPOINT}?{urllib.parse.urlencode(params)}"
     status, body = fetch(url)
     time.sleep(SLEEP_S)
     if status != 200:
-        return []
+        return [], 0
     try:
         data = json.loads(body)
     except json.JSONDecodeError:
-        return []
-    return data.get("hits") or []
+        return [], 0
+    return data.get("hits") or [], data.get("numberHits") or 0
+
+
+def get_institution_catalog(inst_filter: str, tried: list[str]) -> list[dict]:
+    """Alle studieprogram-oppføringer Studiebarometeret har for én
+    institusjon (query="" + i=<inst>, paginert). Mellomlagret per kjøring."""
+    if inst_filter in _catalog_cache:
+        return _catalog_cache[inst_filter]
+    all_hits: list[dict] = []
+    seen_ids: set[str] = set()
+    page = 1
+    total = None
+    while True:
+        hits, number_hits = _search_page("", inst_filter, page)
+        if total is None:
+            total = number_hits
+        if not hits:
+            break
+        new = 0
+        for h in hits:
+            hid = h.get("id")
+            if hid and hid not in seen_ids:
+                seen_ids.add(hid)
+                all_hits.append(h)
+                new += 1
+        if new == 0:
+            break  # ingen nye treff -> antagelig gjentar seg, stopp
+        page += 1
+        if len(all_hits) >= (total or 0) or page > 15:
+            break
+    tried.append(f"katalog:i={inst_filter} ({len(all_hits)} programmer)")
+    _catalog_cache[inst_filter] = all_hits
+    return all_hits
 
 
 def _slug(s: str | None) -> str:
     return re.sub(r"[^a-zæøå0-9]", "", (s or "").lower())
 
 
+def _name_similarity(a: str, b: str) -> float:
+    return difflib.SequenceMatcher(None, (a or "").lower(), (b or "").lower()).ratio()
+
+
+# Minste navnelikhet (difflib-ratio) vi godtar når vi må velge basert på navn
+# alene (kode ikke funnet i katalogen) – for lavt, og vi risikerer å plukke
+# feil søsterprogram ved samme institusjon.
+NAME_MATCH_MIN_RATIO = 0.30
+
+
 def find_sb_id_via_search(prog: dict, studiested: str | None, programnavn: str | None,
                            tried: list[str]) -> tuple[str, str, dict] | None:
-    """Fallback når det direkte gjettet <inst>_<kode>-URL-et ikke traff:
-    bruker søke-API-et, filtrert på institusjon, og velger blant treffene."""
+    """Fallback når det direkte gjettede <inst>_<kode>-URL-et ikke traff:
+    henter institusjonens fulle katalog og matcher lokalt, først på kode
+    (evt. med campus-suffiks), så på navnelikhet."""
     insts = prog.get("institusjonskoder") or [prog["institusjonskode"]]
     koder = prog.get("studieprogramkoder") or []
     studiested_slug = _slug(studiested)
+    first_letter = _slug(studiested).strip()[:1] if studiested else ""
 
-    def choose(hits: list[dict], prefix: str | None) -> dict | None:
-        cands = hits
-        if prefix:
-            cands = [h for h in cands if str(h.get("id", "")).lower().startswith(prefix)]
-        if not cands:
-            return None
-        if len(cands) > 1 and studiested_slug:
+    def narrow_by_campus(cands: list[dict]) -> list[dict]:
+        if len(cands) <= 1:
+            return cands
+        if studiested_slug:
             narrowed = [h for h in cands if studiested_slug in _slug(h.get("id", ""))]
             if narrowed:
-                cands = narrowed
-        return cands[0]
+                return narrowed
+        if first_letter:
+            narrowed = [
+                h for h in cands
+                if (str(h.get("id", "")).rsplit("-", 1)[-1] if "-" in str(h.get("id", "")) else "") == first_letter
+            ]
+            if narrowed:
+                return narrowed
+        return cands
 
     for inst in insts:
         try:
@@ -281,26 +342,39 @@ def find_sb_id_via_search(prog: dict, studiested: str | None, programnavn: str |
         except ValueError:
             inst_i = inst
 
+        catalog = get_institution_catalog(inst_i, tried)
+        if not catalog:
+            continue
+
+        # 1) Kodematch: id-en er "<inst>_<kode>" eller "<inst>_<kode>-<campus>"
         for kode in koder:
-            prefix = f"{inst_i}_{kode.lower()}"
-            hits = search_api(kode, inst_i)
-            tried.append(f"søk:{kode}@{inst_i} ({len(hits)} treff)")
-            chosen = choose(hits, prefix)
-            if chosen:
+            kode_l = kode.lower()
+            exact = f"{inst_i}_{kode_l}"
+            cands = [
+                h for h in catalog
+                if str(h.get("id", "")).lower() == exact
+                or str(h.get("id", "")).lower().startswith(exact + "-")
+            ]
+            if cands:
+                chosen = narrow_by_campus(cands)[0]
                 sb_id = chosen["id"]
                 got = try_fetch_main_by_id(sb_id)
                 if got:
                     return sb_id, got[0], got[1]
 
+        # 2) Navnematch blant alt institusjonen har, hvis ingen kode traff
         if programnavn:
-            hits = search_api(programnavn, inst_i)
-            tried.append(f"søk:{programnavn}@{inst_i} ({len(hits)} treff)")
-            chosen = choose(hits, prefix=f"{inst_i}_")
-            if chosen:
-                sb_id = chosen["id"]
-                got = try_fetch_main_by_id(sb_id)
-                if got:
-                    return sb_id, got[0], got[1]
+            cands = narrow_by_campus(catalog) if studiested_slug or first_letter else catalog
+            ranked = sorted(cands, key=lambda h: _name_similarity(programnavn, h.get("name", "")), reverse=True)
+            if ranked:
+                best = ranked[0]
+                score = _name_similarity(programnavn, best.get("name", ""))
+                tried.append(f"navnematch:{programnavn!r}~={best.get('name')!r} ({score:.2f})")
+                if score >= NAME_MATCH_MIN_RATIO:
+                    sb_id = best["id"]
+                    got = try_fetch_main_by_id(sb_id)
+                    if got:
+                        return sb_id, got[0], got[1]
     return None
 
 

@@ -1,0 +1,573 @@
+{
+ "hentet": "2026-09-22",
+ "institusjoner": {
+  "1173": "Norges miljø- og biovitenskapelige universitet",
+  "1150": "Norges teknisk-naturvitenskapelige universitet",
+  "1110": "Universitetet i Oslo",
+  "1120": "Universitetet i Bergen",
+  "1130": "UiT Norges arktiske universitet",
+  "1160": "Universitetet i Stavanger",
+  "1175": "OsloMet - storbyuniversitetet"
+ },
+ "programs": [
+  {
+   "entryId": "nmbu_bioteknologi",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "B-BIOTEK"
+   ],
+   "studieprogramnavn": "Bioteknologi",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 916
+  },
+  {
+   "entryId": "uib_molekylarbiologi",
+   "institusjonskode": "1120",
+   "studieprogramkoder": [
+    "BAMN-MOL"
+   ],
+   "studieprogramnavn": "Bachelorprogram i molekylærbiologi",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 787
+  },
+  {
+   "entryId": "uit_bioteknologi",
+   "institusjonskode": "1130",
+   "studieprogramkoder": [
+    "B-BIOTEK"
+   ],
+   "studieprogramnavn": "Bioteknologi - bachelor",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 175
+  },
+  {
+   "entryId": "ntnu_bioteknologi_alesund",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "427BT"
+   ],
+   "studieprogramnavn": "Bioteknologi - bachelor",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 399
+  },
+  {
+   "entryId": "ntnu_bioteknologi_5aar",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "MBIOT5"
+   ],
+   "studieprogramnavn": "Bioteknologi - master",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 810
+  },
+  {
+   "entryId": "uio_biovitenskap",
+   "institusjonskode": "1110",
+   "studieprogramkoder": [
+    "MNB-BIOS"
+   ],
+   "studieprogramnavn": "Biovitenskap",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 2648
+  },
+  {
+   "entryId": "oslomet_ing_bioteknologi_kjemi",
+   "institusjonskode": "1175",
+   "studieprogramkoder": [
+    "HINGKJEMI"
+   ],
+   "studieprogramnavn": "Bachelorstudium i ingeniørfag - bioteknologi og kjemi",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 1040
+  },
+  {
+   "entryId": "nmbu_kjemi",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "B-KJEMI"
+   ],
+   "studieprogramnavn": "Kjemi",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 395
+  },
+  {
+   "entryId": "uio_kjemi_biokjemi",
+   "institusjonskode": "1110",
+   "studieprogramkoder": [
+    "MNB-KJMB"
+   ],
+   "studieprogramnavn": "Kjemi og biokjemi",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 546
+  },
+  {
+   "entryId": "uib_kjemi",
+   "institusjonskode": "1120",
+   "studieprogramkoder": [
+    "BAMN-KJEM"
+   ],
+   "studieprogramnavn": "Bachelorprogram i kjemi",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 528
+  },
+  {
+   "entryId": "ntnu_kjemi",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "BKJ"
+   ],
+   "studieprogramnavn": "Kjemi - bachelor",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 788
+  },
+  {
+   "entryId": "uis_biologisk_kjemi",
+   "institusjonskode": "1160",
+   "studieprogramkoder": [
+    "B-BIOKJE"
+   ],
+   "studieprogramnavn": "Biologisk kjemi - bioteknologi - bachelor i realfag",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 396
+  },
+  {
+   "entryId": "uit_kjemi",
+   "institusjonskode": "1130",
+   "studieprogramkoder": [
+    "B-KJEMI"
+   ],
+   "studieprogramnavn": "Kjemi - bachelor",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 48,
+   "merknad": "Siste opptak var høsten 2024, men tabell 308 har fremdeles kandidater i 2025 (48) fra studenter som fullfører. Koden er aktiv i tabell 347 for 2025 selv om det ikke tas opp nye studenter."
+  },
+  {
+   "entryId": "uit_baerekraftig_kjemi",
+   "institusjonskode": "1130",
+   "studieprogramkoder": [
+    "IMAT-BKI"
+   ],
+   "studieprogramnavn": "Bærekraftig kjemi og innovasjon, sivilingeniør - master",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2025
+   ],
+   "kandidaterSiste": 7,
+   "merknad": "Nytt program, første opptak høsten 2025; tabell 308 har derfor bare rader for 2025 (7 kandidater)."
+  },
+  {
+   "entryId": "nmbu_matvitenskap_ernaring",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "B-MAT"
+   ],
+   "studieprogramnavn": "Matvitenskap og ernæring",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 58,
+   "merknad": "DBH-koden B-MAT er ikke lagt ned: den samme koden er registrert som «Mat, teknologi og helse» fra 2025 (se nmbu_mat_teknologi_helse i matteknologi-gruppa). Tabell 308 har sammenhengende rader 2020-2025 under samme kode, med et kraftig fall i kandidattall 2022-2024 (fra 213 til 4) og en økning til 58 i 2025 - trolig et resultat av omleggingen, ikke to separate programmer slik programkart.json antar."
+  },
+  {
+   "entryId": "uib_ernaring",
+   "institusjonskode": "1120",
+   "studieprogramkoder": [
+    "BAMD-NUHUM"
+   ],
+   "studieprogramnavn": "Bachelorprogram i ernæring",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 381
+  },
+  {
+   "entryId": "uit_ernaring",
+   "institusjonskode": "1130",
+   "studieprogramkoder": [
+    "B-ERN"
+   ],
+   "studieprogramnavn": "Ernæring - bachelor",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 58
+  },
+  {
+   "entryId": "uio_klinisk_ernaring",
+   "institusjonskode": "1110",
+   "studieprogramkoder": [
+    "MFM5-KLERN"
+   ],
+   "studieprogramnavn": "Klinisk ernæring",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 593
+  },
+  {
+   "entryId": "nmbu_mat_teknologi_helse",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "B-MAT"
+   ],
+   "studieprogramnavn": "Mat, teknologi og helse",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 58,
+   "merknad": "Samme DBH-kode (B-MAT) som nmbu_matvitenskap_ernaring/-_hist. Tabell 308 viser at koden har eksistert sammenhengende siden 2020 under navnet «Matvitenskap og ernæring» og bare byttet navn til «Mat, teknologi og helse» i 2025 - se merknad på nmbu_matvitenskap_ernaring for detaljer. Programkart.json sin beskrivelse av dette som et helt nytt program (første opptak 2025) stemmer altså ikke med DBH sin egen historikk for koden."
+  },
+  {
+   "entryId": "ntnu_matvitenskap",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "MTMAT"
+   ],
+   "studieprogramnavn": "Matvitenskap, teknologi og bærekraft - bachelor",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 651
+  },
+  {
+   "entryId": "nmbu_matvitenskap_ernaring_hist",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "B-MAT"
+   ],
+   "studieprogramnavn": "Matvitenskap og ernæring",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 58,
+   "merknad": "Samme DBH-program (B-MAT) som oppføringene nmbu_matvitenskap_ernaring i matvitenskap-gruppa og nmbu_mat_teknologi_helse i denne gruppa; se merknad der."
+  },
+  {
+   "entryId": "uit_fiskeri_havbruk",
+   "institusjonskode": "1130",
+   "studieprogramkoder": [
+    "B-FISK"
+   ],
+   "studieprogramnavn": "Fiskeri- og havbruksvitenskap - bachelor",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 773
+  },
+  {
+   "entryId": "nmbu_bioteknologi2",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "M-BIOTEK"
+   ],
+   "studieprogramnavn": "Bioteknologi",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 266
+  },
+  {
+   "entryId": "uib_molekylarbiologi2",
+   "institusjonskode": "1120",
+   "studieprogramkoder": [
+    "MAMN-MOL"
+   ],
+   "studieprogramnavn": "Masterprogram i molekylærbiologi",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 133
+  },
+  {
+   "entryId": "ntnu_msbiotech",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "MSBIOTECH"
+   ],
+   "studieprogramnavn": "Biotechnology - Master's Programme",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 196
+  },
+  {
+   "entryId": "nmbu_kjemi2",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "M-KJEMI"
+   ],
+   "studieprogramnavn": "Kjemi",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 76
+  },
+  {
+   "entryId": "uio_kjemi2",
+   "institusjonskode": "1110",
+   "studieprogramkoder": [
+    "MNM2-KJEMI"
+   ],
+   "studieprogramnavn": "Kjemi",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 159
+  },
+  {
+   "entryId": "uib_kjemi2",
+   "institusjonskode": "1120",
+   "studieprogramkoder": [
+    "MAMN-KJEM"
+   ],
+   "studieprogramnavn": "Masterprogram i kjemi",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 106
+  },
+  {
+   "entryId": "ntnu_mschem",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "MSCHEM"
+   ],
+   "studieprogramnavn": "Chemistry - Master's Programme",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 160
+  },
+  {
+   "entryId": "nmbu_mat_teknologi_helse2",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "M-MAT"
+   ],
+   "studieprogramnavn": "Mat, teknologi og helse",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 4,
+   "merknad": "Samme DBH-kode (M-MAT) het «Matvitenskap» til og med 2024 og byttet navn til «Mat, teknologi og helse» i 2025 - samme mønster som bachelorkoden B-MAT, se merknad på nmbu_mat_teknologi_helse."
+  },
+  {
+   "entryId": "ntnu_ftmamat",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "FTMAMAT"
+   ],
+   "studieprogramnavn": "Matvitenskap, teknologi og bærekraft - master",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 152
+  }
+ ]
+}

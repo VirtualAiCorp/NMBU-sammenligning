@@ -1,0 +1,189 @@
+{
+  "programnavn": "Bioteknologi (bachelor)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/bachelor/bioteknologi",
+    "https://www.nmbu.no/fakulteter/fakultet-kjemi-bioteknologi-og-matvitenskap/studieplaner-bachelor-i-bioteknologi",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-06/Studieplan%20B%20BIOTEK%202026.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 150,
+  "obligatoriske": [
+    {
+      "emnekode": "BIO101",
+      "emnenavn": "Introduksjon i bioteknologi og kjemi",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Augustblokk før høstsemesteret."
+    },
+    {
+      "emnekode": "BIO102",
+      "emnenavn": "Anvendt bioteknologi",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO100",
+      "emnenavn": "Cellebiologi",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT100",
+      "emnenavn": "Brukerkurs i matematikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "STIN100",
+      "emnenavn": "Biologisk data-analyse",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM100",
+      "emnenavn": "Generell kjemi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "STAT100",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO120",
+      "emnenavn": "Genetikk introduksjonskurs",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "STAT210",
+      "emnenavn": "Forsøksplanlegging og variansanalyse",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Augustblokk. Obligatorisk valg mellom STAT210 (tas i augustblokk) og STAT200 Regresjon (tas i januarblokk) - studieplanen krever minst ett av de to."
+    },
+    {
+      "emnekode": "KJM110",
+      "emnenavn": "Organisk kjemi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "PHI100",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen lister PHI100/PHI101 sammen (alt. PHI101/PHI102) - studenten velger en av de likeverdige variantene."
+    },
+    {
+      "emnekode": "BIO130",
+      "emnenavn": "Generell mikrobiologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIN210",
+      "emnenavn": "Bioinformatikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJB200",
+      "emnenavn": "Biokjemi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJB201",
+      "emnenavn": "Laboratoriekurs i biokjemi og matkjemi",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO210",
+      "emnenavn": "Molekylærbiologi",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO235",
+      "emnenavn": "Introduksjon til produktutvikling og produksjon i utvalgte bioteknologibedrifter",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO211",
+      "emnenavn": "Laboratorieøvelser i molekylærbiologi",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "januarblokk",
+      "dbhEmnekoder": [],
+      "merknad": "Obligatorisk valg mellom BIO211 (tas i januarblokk) og BIO233 Eksperimentell miljømikrobiologi (tas i vårsemesteret) - studieplanen krever minst ett av de to."
+    },
+    {
+      "emnekode": "BIO230",
+      "emnenavn": "Generell mikrobiologi II",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er NMBUs fargekodede rutenett-studieplan for kull 2026 (énpage PDF «Studieplan B BIOTEK 2026»), hentet fra fakultetssiden for Kjemi, bioteknologi og matvitenskap. Rutenettet oppgir en samlet studiepoengsum på 155 sp for de tre årene (65+55+35), hvorav 150 sp er knyttet til navngitte emnekoder (listet over) og 5 sp er en umerket augustblokk i 3. år (ingen emnenavn/-kode oppgitt i kilden, så den er ikke tatt med i obligatoriske-listen). totaltStudiepoeng er satt til standard 180 sp for et treårig bachelorprogram; differansen på 30 sp (25 sp ukjent fordypning/valgfritt + 5 sp umerket augustblokk) dekkes av valgfrie/fordypningsemner i 3. år som ikke fremgår av rutenettet. To par emner er obligatoriske alternativer (studenten velger én av to): STAT210 (august, 2. år) eller STAT200 Regresjon (januar, 2. år); BIO211 (januar, 3. år) eller BIO233 Eksperimentell miljømikrobiologi (vår, 3. år). Kun én av hvert par er ført opp i obligatoriske-listen, med den andre nevnt i merknad-feltet på emnet; studiepoengsummen for paret er uansett kun talt én gang (5 sp). PHI100 er oppført tilsvarende som i nmbu_maskin.json ford i kilden lister PHI100/PHI101 sammen (alt. PHI101/PHI102). KJM007 Forkurs i kjemi (januar, 1. år) er et frivillig nullpoengs forkurs og er ikke tatt med. Kildedokumentet beskriver ingen egne studieretninger/spesialiseringer for dette programmet.",
+  "entryId": "nmbu_bioteknologi"
+}

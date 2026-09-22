@@ -1,0 +1,36 @@
+{
+  "entryId": "nmbu_husdyr2",
+  "programnavn": "Husdyrvitenskap (master 2 år)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/master-2-aar/husdyrvitenskap",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-06/M-HV-%202026.pdf",
+    "https://www.nmbu.no/fakulteter/fakultet-biovitenskap/vare-studenter-biovit"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 65,
+  "obligatoriske": [
+    {
+      "emnekode": "BIN250",
+      "emnenavn": "Quantitative skills in BioScience",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Det obligatoriske statistikkravet på 5 sp dekkes av BIN250. STIN300 (Statistical Programming in R, januarblokk, år 2) er «også anbefalt» i planen, men fremstår som et alternativ/tillegg og ikke et andre obligatorisk emne."
+    },
+    {
+      "emnekode": "M60-HV",
+      "emnenavn": "Masteroppgave",
+      "studiepoeng": 60,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "60 sp er anbefalt omfang og lagt til grunn her. Studenten kan i stedet velge en masteroppgave på 45 sp (emnekode M45-HV) eller 30 sp (M30-HV) dersom vedkommende trenger å ta flere emner for å oppfylle kravene til bachelorgraden. Oppgaven strekker seg i praksis over deler av høstparallellen og hele vårparallellen i 2. år."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er den engelskspråklige studieplanen «Master i Husdyrvitenskap (M-HV) / Master in Animal Science (M-AS), Opptak 2026», hentet fra fakultetets samleside for studieplaner (samme mal brukes for norske og internasjonale søkere). Programmet har ikke faste obligatoriske emnepakker per fordypningsretning – i stedet gjelder generelle poengkrav: minimum 50 sp husdyrfaglige emner, minimum 35 sp på 300-nivå (hvorav minst 25 sp husdyrfaglig), i tillegg til de to obligatoriske elementene over. Studentene velger selv emner innenfor tre uformelle fagfelt (avl/genetikk, ernæring/fôrteknologi, etologi/dyrevelferd), og planen lister ca. 20 relevante/anbefalte emner (bl.a. BIN300, HFA350, BIN310, BIO321, BIO322, HFA300, HFA303, HFA304, HET300, HET301, HET255, HFE302, HFE303, HFE305, HFE314, HFX307, BINT301, SDG300, SDG301) uten at noen av disse er påkrevd for alle studenter – de er derfor ikke ført opp som «obligatoriske» eller i «spesialiseringer», siden ingen konkret emnekombinasjon er bundet til en navngitt studieretning i selve studieplandokumentet. Programmet er koblet til tittelen «Sivilagronom Husdyr» (fem-årig løp for norske studenter), som krever 60 sp innen en egen liste stjernemerkede emner (bl.a. BINT301, ECN260, HET203, HFA300, HFA303, HFA350, HFE202, HFE205, HFE302, HFE303, HFE305, HFE314, HFX253, HFX255, HFX256, SDG201, SDG300) – dette er en tilleggstittel og ikke et obligatorisk krav i selve masterprogrammet. obligatoriskeStudiepoeng (65 = 5 + 60) forutsetter anbefalt 60 sp masteroppgave; med 45 sp eller 30 sp oppgave blir summen hhv. 50 eller 35 sp."
+}

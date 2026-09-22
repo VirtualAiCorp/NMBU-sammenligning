@@ -1,0 +1,68 @@
+{
+  "entryId": "nmbu_plante2",
+  "programnavn": "Plantevitenskap (master 2 år)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/master-2-aar/plantevitenskap",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-05/M-PV%20Studieplan%202026-2027_1.pdf",
+    "https://www.nmbu.no/fakulteter/fakultet-biovitenskap/vare-studenter-biovit"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 65,
+  "obligatoriske": [
+    {
+      "emnekode": "BIO302",
+      "emnenavn": "Introduksjonsemne til masterstudier på BIOVIT",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Ligger i augustblokk. Felles for alle tre studieretninger."
+    },
+    {
+      "emnekode": "M60-PV",
+      "emnenavn": "Masteroppgave",
+      "studiepoeng": 60,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "60 sp er lagt til grunn her. Studenten kan i stedet velge en masteroppgave på 30 sp (emnekode M30-PV). Oppgaven kan starte allerede med feltarbeid i augustblokk/juniblokk 1. år og kan i sin helhet legges til høstparallell + vårparallell 2. år (60 sp) eller kun vårparallell 2. år (30 sp). Felles for alle tre studieretninger."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Planteproduksjon og plantevern",
+      "obligatoriske": []
+    },
+    {
+      "navn": "Plantebioteknologi",
+      "obligatoriske": []
+    },
+    {
+      "navn": "Grøntmiljø",
+      "obligatoriske": [
+        {
+          "emnekode": "BOT200",
+          "emnenavn": "Plantefysiologi",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "PHG316",
+          "emnenavn": "Grøntanlegg og landskapspleie",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Ligger i augustblokk/høstparallell. Planen oppgir at emnet «tilbys 2027/28», dvs. annethvert år."
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er studieplanen «Master i Plantevitenskap (M-PV) 2026», hentet fra fakultetets samleside for studieplaner. Felles for alle tre studieretninger: BIO302 (5 sp), en masteroppgave på 30 eller 60 sp (M30-PV/M60-PV), og minimum 30 sp på 300-nivå totalt. Studenter uten jordfag (JORD100 e.l.) fra bachelor må ta dette i masteren, og inntil 10 sp av GEO100/JORD100/BOT130/STAT100 kan telle med. To av studieretningene har ingen enkeltemner som er ubetinget obligatoriske, kun et obligatorisk VALG innen en emneliste, og «obligatoriske» er derfor tom for dem her: Planteproduksjon og plantevern må velge minimum 30 sp blant PJH341, PLV321, PLV330, PLV340, BIO324, PJH360 og JORD330, samt (dersom emnet mangler fra bachelor) minst ett av PJH212/PJH230/PJH240/PJH250. Plantebioteknologi må velge minimum 30 sp blant BIO321, BIO327, BOT345, BIO300, BIO324 og BIO325, samt (dersom det mangler fra bachelor) minst ett av BIO200/BIO244. Grøntmiljø har derimot to ubetinget obligatoriske emner (BOT200 og PHG316, ført opp under spesialiseringer) og krever i tillegg (dersom emnet mangler fra bachelor) at studenten tar et av PHG213, PHG215, PLV210/PLV211, JORD230 eller LAA221. Programmet gir engelskspråklig vitnemål for studieretningene Planteproduksjon og plantevern og Plantebioteknologi. Programmet er koblet til tittelen «Sivilagronom planter» (80 sp fra en egen emneliste, hvorav minst 30 sp på 300-nivå og minst 30 sp innen PJH/PLV-emnekoder) – dette er en tilleggstittel og ikke et krav i selve masterprogrammet. obligatoriskeStudiepoeng (65 = 5 + 60) forutsetter 60 sp masteroppgave; med 30 sp oppgave blir summen 35 sp, pluss ev. studieretningens obligatoriske emner."
+}

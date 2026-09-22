@@ -1,0 +1,27 @@
+{
+  "entryId": "uib_biologi",
+  "programnavn": "Biologi (bachelor)",
+  "institusjon": "Universitetet i Bergen",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www4.uib.no/studier/program/biologi-bachelor",
+    "https://www4.uib.no/studier/program/biologi-bachelor/plan"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 100,
+  "obligatoriske": [
+    {"emnekode": "BIO100", "emnenavn": "Biologi", "studiepoeng": 10, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "MOL100", "emnenavn": "Molekylærbiologi", "studiepoeng": 10, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "BIO101", "emnenavn": "Biologi", "studiepoeng": 10, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "INF100", "emnenavn": "Programmering I", "studiepoeng": 10, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "KJEM109", "emnenavn": "Kjemi", "studiepoeng": 10, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "BIO102", "emnenavn": "Biologi", "studiepoeng": 10, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "PHYS101", "emnenavn": "Fysikk", "studiepoeng": 10, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "STAT101", "emnenavn": "Statistikk", "studiepoeng": 10, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "BIO103", "emnenavn": "Biologi", "studiepoeng": 10, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "BIO104", "emnenavn": "Biologi", "studiepoeng": 10, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null}
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er UiBs studieplanside for BAMN-BIO Bachelorprogram i biologi, høst 2026 (www4.uib.no/studier/program/biologi-bachelor/plan). Programmet er 180 sp totalt, hvorav 120 sp er obligatoriske. Studieplanen deler de obligatoriske 120 sp i tre grupper: «Innføringsemne» (20 sp: matematikk MAT101/MAT111 + examen philosophicum EXPHIL-MNSEM/EXPHIL-MNEKS), «Obligatorisk emne» (10 sp: INF100), og «Spesialisering» (90 sp: BIO100, BIO101, BIO102, BIO103, BIO104, MOL100, KJEM109, STAT101, PHYS101). Merk at UiBs eget begrep «Spesialisering» her betyr en fast fellespakke av 9 emner à 10 sp som ALLE studenter tar (ikke et valg mellom studieretninger) – disse er derfor ført direkte i obligatoriske-listen, ikke under spesialiseringer-feltet. MAT101 (Matematiske metoder 1) / MAT111 (Grunnkurs i matematikk I) er et obligatorisk valg mellom to alternative matematikkemner (10 sp, 1. semester, avhengig av forkunnskaper), og EXPHIL-MNSEM (seminarversjon) / EXPHIL-MNEKS (eksamensversjon) er et obligatorisk valg mellom to eksamensformer av examen philosophicum (10 sp, 4. semester) – begge er obligatoriske valg mellom alternativer og er derfor IKKE ført i obligatoriske-listen (kun i denne merknaden), i tråd med oppgavens regel. 100 sp (listen over) + 20 sp (matematikk- og exphil-alternativene) = 120 sp. Resterende 60 sp er valgfrie emner (5.–6. semester, ofte brukt til utveksling). Rekkefølge: 1. semester BIO100, MAT101/MAT111, MOL100; 2. semester BIO101, INF100, KJEM109; 3. semester BIO102, PHYS101, STAT101; 4. semester BIO103, BIO104, EXPHIL-MNSEM/EXPHIL-MNEKS; 5.–6. semester valgemne eller utveksling. Studieplanen beskriver ingen obligatorisk bacheloroppgave."
+}

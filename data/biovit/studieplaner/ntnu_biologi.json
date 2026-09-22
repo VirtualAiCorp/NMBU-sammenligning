@@ -1,0 +1,57 @@
+{
+  "entryId": "ntnu_biologi",
+  "programnavn": "Biologi (bachelor)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.ntnu.no/studier/bbi",
+    "https://www.ntnu.no/studier/bbi/studiets-oppbygning",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=BBI&year=2026"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 112.5,
+  "obligatoriske": [
+    {"emnekode": "BI1003", "emnenavn": "Økologi, atferd, evolusjon og bærekraft", "studiepoeng": 15, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "HMS0001", "emnenavn": "HMS-kurs for 1. årsstudenter", "studiepoeng": 0, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "MA0001", "emnenavn": "Brukerkurs i matematikk A", "studiepoeng": 7.5, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "KJ1004", "emnenavn": "Generell kjemi", "studiepoeng": 7.5, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "BI1001", "emnenavn": "Celle- og molekylærbiologi", "studiepoeng": 15, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "BI1002", "emnenavn": "Faunistikk og floristikk", "studiepoeng": 15, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": "Har obligatoriske ekskursjoner (dags- og flerdagsekskursjoner) i løpet av vår og sommer."},
+    {"emnekode": "BI1006", "emnenavn": "Dyrenes struktur og funksjon", "studiepoeng": 7.5, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "BI1007", "emnenavn": "Plantenes struktur og funksjon", "studiepoeng": 7.5, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "ST0103", "emnenavn": "Brukerkurs i statistikk", "studiepoeng": 7.5, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "BI1014", "emnenavn": "Kvantitativ biologi", "studiepoeng": 7.5, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "EXPH0300", "emnenavn": "Examen philosophicum for naturvitenskap og teknologi", "studiepoeng": 7.5, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": "Inngår identisk som obligatorisk emne i alle tre «Fag 2»-fagpakkene (Kjemi, Matematikk/statistikk, Bærekraft) og er dermed reelt obligatorisk for alle, uavhengig av valgt fagpakke."},
+    {"emnekode": "BI2900", "emnenavn": "Bacheloroppgave i biologi", "studiepoeng": 15, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": "Inngår identisk som obligatorisk emne i alle tre «Fag 2»-fagpakkene og er dermed reelt obligatorisk for alle."}
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Fag 2: Kjemi",
+      "studiepoeng": 15,
+      "emner": [
+        {"emnekode": "TKJ4103", "emnenavn": "Organisk kjemi grunnkurs", "studiepoeng": 7.5, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
+        {"emnekode": "KJ2072", "emnenavn": "Naturmiljøkjemi", "studiepoeng": 7.5, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null}
+      ],
+      "merknad": "Utover de 2 fast obligatoriske emnene over skal studenten i 5. semester (år 3, høst) velge minst ett av TBT4102 Biokjemi 1 / KJ2050 Analytisk kjemi, grunnkurs (obligatorisk valg mellom alternativer, ikke ført i listen), samt fylle resten av fagpakken (22,5 sp i 4. semester, 22,5 sp i 5. semester) med valgbare emner (TBI4110, BI2060, BI2033, TBT4110 m.fl.) og velge maksimalt ett områdeemne à 7,5 sp i 4., 5. eller 6. semester blant BI2081, ITO1000, IØ2000, ØKO1001 (også et valg mellom alternativer)."
+    },
+    {
+      "navn": "Fag 2: Matematikk og statistikk",
+      "studiepoeng": 0,
+      "emner": [],
+      "merknad": "Denne fagpakken har ingen entydig fast obligatoriske emner utover fellesemnene EXPH0300 og BI2900 (ført i hovedlisten). Studenten skal ta minst 15 av 22,5 sp fra en gruppe på tre emner (obligatorisk valg mellom alternativer, ikke ført i listen): ST2304 Statistisk modellering for biologer/bioteknologer (4. semester), TMA4268 Statistisk læring og MA0002 Brukerkurs i matematikk B (begge 6. semester) – siden gruppen kun har tre emner à 7,5 sp og minstekravet er 15 sp, innebærer dette i praksis at minst to av de tre må tas. I tillegg velges valgbare emner (BI2033, BI2044, BI2060, TBI4110, BI2034, BI2017, BI2043, BI2036, BI2025, BI2065, BI2014, BI2001 m.fl.) og maksimalt ett områdeemne à 7,5 sp blant BI2081, ITO1000, IØ2000, ØKO1001."
+    },
+    {
+      "navn": "Fag 2: Bærekraft",
+      "studiepoeng": 30,
+      "emner": [
+        {"emnekode": "BI2081", "emnenavn": "Natur, miljø og bærekraft", "studiepoeng": 7.5, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": "Fast områdeemne for denne fagpakken."},
+        {"emnekode": "GEOG2017", "emnenavn": "Energiomstilling og bærekraftig utvikling", "studiepoeng": 7.5, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+        {"emnekode": "GEOG1012", "emnenavn": "Innføring i Geografiske informasjonssystemer (GIS)", "studiepoeng": 7.5, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+        {"emnekode": "SØK2014", "emnenavn": "Miljø-økonomi og bærekraft", "studiepoeng": 7.5, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null}
+      ],
+      "merknad": "Utover de 4 fast obligatoriske emnene over (30 sp) fylles fagpakken (22,5 sp i 4. semester) med valgbare emner (BI2033, BI2044, BI2060, TBI4110, TBT4110, BI2034, BI2043, BI2036, TBT4102 m.fl.). Områdeemnet for denne retningen er fast satt til BI2081 (allerede ført i listen), i motsetning til Kjemi- og Matematikk/statistikk-fagpakkene der områdeemnet er et fritt valg mellom fire alternativer."
+    }
+  ],
+  "merknad": "Kilde er NTNUs studieplan-API for programkode BBI, år 2026 (hentet via www.ntnu.no/studier/studieplan#programmeCode=BBI&year=2026, som er en JavaScript-app; de strukturerte dataene ble hentet direkte fra det underliggende JSON-endepunktet portlet-appen selv kaller), samt oversiktssiden «Studiets oppbygning». Programmet er 180 sp over 6 semester (3 år). Semester 1–3 er felles for alle (90 sp, ført i obligatoriske-listen: BI1003, HMS0001, MA0001, KJ1004, BI1001, BI1002, BI1006, BI1007, ST0103, BI1014). Fra og med 4. semester velger studenten en av tre tverrfaglige «Fag 2»-fagpakker (studieretninger i NTNUs studieplandata): Kjemi, Matematikk/statistikk eller Bærekraft – disse er ført under spesialiseringer, med kun de emnene som er 100 % fast obligatoriske innenfor hver fagpakke (studyChoice-kode «O» uten valgalternativ) i emnelisten; øvrige obligatoriske krav som er valg mellom navngitte alternativer (studyChoice-koder som «M1A», «15A», «MAX1A») er beskrevet i den enkelte fagpakkes egen merknad, i tråd med oppgavens regel om at obligatoriske valg mellom alternativer skal stå i merknad, ikke i emnelisten. EXPH0300 (Examen philosophicum for naturvitenskap og teknologi, 4. semester) og BI2900 (Bacheloroppgave i biologi, 15 sp, 6. semester) er identiske obligatoriske emner i alle tre fagpakkene og er derfor ført i hovedlisten (obligatoriske) fremfor under den enkelte spesialisering. Studiepoeng er hentet direkte fra studieplandataene (mange NTNU-emner er 7,5 eller 15 sp, ikke 10 sp)."
+}

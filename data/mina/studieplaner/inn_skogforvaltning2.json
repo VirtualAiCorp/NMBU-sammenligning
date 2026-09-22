@@ -1,0 +1,107 @@
+{
+  "entryId": "inn_skogforvaltning2",
+  "programnavn": "Bærekraftig skogforvaltning (master 2 år)",
+  "institusjon": "Universitetet i Innlandet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.inn.no/studier/vare-studier/master-i-berekraftig-skogforvaltning/",
+    "https://studiekatalog.edutorium.no/inn/nb/program/MASKO"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 120,
+  "obligatoriske": [
+    {
+      "emnekode": "SKO4004S",
+      "emnenavn": "Flerbruk i skog: teori og praksis",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MBJ4002S",
+      "emnenavn": "Forskningsmetode og dataanalyse",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKO4003S",
+      "emnenavn": "Geographic Information Systems",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKO4002S",
+      "emnenavn": "Bærekraftig skogbruk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKO4001S",
+      "emnenavn": "Areal- og eiendomsforvaltning",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKO4005S",
+      "emnenavn": "Ressurskartlegging",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKO4006S",
+      "emnenavn": "Prosjektledelse",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MBJ4004S",
+      "emnenavn": "Studiedesign og statistisk metode",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKO4007S",
+      "emnenavn": "Beslutningsanalyse",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKO4900S",
+      "emnenavn": "Masteroppgave i bærekraftig skogforvaltning",
+      "studiepoeng": 30,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Går over to semestre: 10 sp i 3. år høst og 20 sp i 3. år vår, ifølge studiemodell-tabellen."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Programmet er formelt organisert som et 3-årig nett- og samlingsbasert deltidsstudium (120 sp, 20 sp per semester over 6 semestre: 2026H-2029V), ikke et 2-årig heltidsstudium, selv om det inngår i sammenligningsgruppen «master 2 år». Feltet «aar» er derfor satt til 1-3 for å reflektere den faktiske studiemodellen. Alle 10 emner er obligatoriske (type O) og summerer seg til 120 sp, altså hele graden - det finnes ingen valgemner eller studieretninger i studiemodellen. Kilde er INNs studiekatalog (edutorium), studiemodell-tabellen for kullet med studiestart høst 2026."
+}

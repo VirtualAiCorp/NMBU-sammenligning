@@ -1,0 +1,45 @@
+{
+  "entryId": "nmbu_agroekologi2",
+  "programnavn": "Agroøkologi / Agroecology (master 2 år)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://www.nmbu.no/studier/master-2-aar/agroecology",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2025-03/Master%20AE%202025-26.pdf",
+    "https://www.nmbu.no/fakulteter/fakultet-biovitenskap/vare-studenter-biovit"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 100,
+  "obligatoriske": [
+    {
+      "emnekode": "PAE302",
+      "emnenavn": "Agroecology: Action learning in farming and food systems",
+      "studiepoeng": 30,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Går over augustblokk og høstparallell. Felles startemne for både enkeltgrad og dobbeltgrad med ISARA/FESIA (Frankrike)."
+    },
+    {
+      "emnekode": "PAE306",
+      "emnenavn": "Agroecology: Action oriented research",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "M60-AE",
+      "emnenavn": "Master's thesis",
+      "studiepoeng": 60,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "60 sp er lagt til grunn her (høstparallell + vårparallell 2. år). Studenten kan i stedet velge en masteroppgave på 30 sp (emnekode M30-AE, kun vårparallell 2. år); dobbeltgradsstudenter med ISARA/FESIA skriver alltid en oppgave på 30 sp."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er den engelskspråklige studieplanen «Master in Agroecology (M-AE), Admission 2025», hentet fra fakultetets samleside for studieplaner; nyeste tilgjengelige versjon der er 2025/2026 (ingen 2026/2027-versjon var lagt ut per 22.09.2026, og programmets egen NMBU-side lenket ikke til noen PDF direkte). Programmet er internasjonalt og har ikke egne norskspråklige studieretninger med separate obligatoriske emnepakker; i stedet finnes en «enkeltgrad»-variant (kun ved NMBU) og en «dobbeltgrad»-variant i samarbeid med ISARA/FESIA i Frankrike (student ved NMBU første semester, deretter evt. utveksling og tredje semester ved ISARA, fjerde semester 30 sp masteroppgave). Begge variantene har de samme obligatoriske emnene PAE302 og PAE306; forskjellen er kun i oppgavestørrelse (fast 30 sp i dobbeltgraden vs. valgfritt 30/60 sp i enkeltgraden) og hvor resten av studiet gjennomføres, og er derfor ikke ført opp som egne «spesialiseringer». obligatoriskeStudiepoeng (100 = 30 + 10 + 60) forutsetter 60 sp masteroppgave; med 30 sp oppgave (obligatorisk for dobbeltgradsstudenter, valgfritt for øvrige) blir summen 70 sp. Resterende studiepoeng er valgfrie emner på 200- eller 300-nivå; planen foreslår en liste aktuelle valgemner (bl.a. innen bærekraft, utviklingsstudier og jordfag)."
+}

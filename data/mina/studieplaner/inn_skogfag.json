@@ -1,0 +1,188 @@
+{
+  "entryId": "inn_skogfag",
+  "programnavn": "Skogfag (bachelor)",
+  "institusjon": "Universitetet i Innlandet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.inn.no/studier/vare-studier/bachelor-i-skogfag/",
+    "https://studiekatalog.edutorium.no/inn/nb/program/SKO/"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 180,
+  "obligatoriske": [
+    {
+      "emnekode": "SKO1105",
+      "emnenavn": "Naturgrunnlaget",
+      "studiepoeng": 15,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKO1101",
+      "emnenavn": "Skognæringen i Norge",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "6EV153",
+      "emnenavn": "Introduksjon til geografiske informasjonssystemer",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKO1103",
+      "emnenavn": "Tømmerets verdikjede",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKO1110",
+      "emnenavn": "Landbruksvei",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKO1160",
+      "emnenavn": "Grunnleggende økonomi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "UTM1133",
+      "emnenavn": "Økologi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKO2202",
+      "emnenavn": "Foryngelseshogst",
+      "studiepoeng": 15,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKO2203",
+      "emnenavn": "Produksjonsskog",
+      "studiepoeng": 15,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "6EV298",
+      "emnenavn": "Vitenskapelig metode og statistikk",
+      "studiepoeng": 15,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKO1170",
+      "emnenavn": "Praksis i næring eller forvaltning",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKO2260",
+      "emnenavn": "Skogøkonomi",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKO2153",
+      "emnenavn": "Geografisk analyse",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKO1154",
+      "emnenavn": "Forvaltningsrett",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "UTM2260",
+      "emnenavn": "Bærekraftig næringsutvikling og innovasjon",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKO1106",
+      "emnenavn": "Applied Forest Ecology",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Undervises på engelsk, både for norske og utenlandske studenter (jf. studieplanens tekst om tredje studieår)."
+    },
+    {
+      "emnekode": "6EV155",
+      "emnenavn": "Arealforvaltning",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKO2270",
+      "emnenavn": "Flerbruksskjøtsel",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "6EV299",
+      "emnenavn": "Bacheloroppgave",
+      "studiepoeng": 15,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er Universitetet i Innlandets studiekatalog (studiekatalog.edutorium.no/inn/nb/program/SKO/), linket fra programsiden inn.no/studier/vare-studier/bachelor-i-skogfag/ som «Studieplan». Emnetabellen i studiekatalogen («Studiemodeller») merker samtlige 19 emner med type «O» (Obligatorisk) fordelt over seks semestre (26H, 27V, 27H, 28V, 28H, 29V) a 30 sp hvert, og programmet har verken valgfrie («V») emner eller praksisemner utover det obligatoriske SKO1170. Programmet er derfor 100 % obligatorisk, 180 av 180 sp. Studiestedet er Evenstad, undervisningsspråk norsk/engelsk (SKO1106 Applied Forest Ecology undervises på engelsk). Emnenavn er hentet direkte fra samme tabell i studiekatalogen."
+}

@@ -1,0 +1,235 @@
+{
+  "entryId": "inn_utmark_skog",
+  "programnavn": "Utmarksforvaltning (bachelor)",
+  "institusjon": "Universitetet i Innlandet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.inn.no/studier/vare-studier/bachelor-i-utmarksforvaltning/",
+    "https://studiekatalog.edutorium.no/inn/nb/program/UTM"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 165,
+  "obligatoriske": [
+    {
+      "emnekode": "SKO1105",
+      "emnenavn": "Naturgrunnlaget",
+      "studiepoeng": 15,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "UTM1100",
+      "emnenavn": "Biologi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKO1101",
+      "emnenavn": "Skognæringen i Norge",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "UTM1120",
+      "emnenavn": "Ferskvannsøkologi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "6EV132",
+      "emnenavn": "Norsk fauna",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "UTM1133",
+      "emnenavn": "Økologi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "UTM1140",
+      "emnenavn": "Wildlife ecology",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "UTM2220",
+      "emnenavn": "Fiskeforvaltning",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "UTM2140",
+      "emnenavn": "Viltforvaltning",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "6EV153",
+      "emnenavn": "Introduksjon til geografiske informasjonssystemer",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKO1154",
+      "emnenavn": "Forvaltningsrett",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "6EV298",
+      "emnenavn": "Vitenskapelig metode og statistikk",
+      "studiepoeng": 15,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "6EV150",
+      "emnenavn": "Naturoppsyn",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "UTM1176",
+      "emnenavn": "Large predator ecology and management",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "6EV175",
+      "emnenavn": "Biomedisin",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKO2153",
+      "emnenavn": "Geografisk analyse",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "UTM1151",
+      "emnenavn": "Besøksforvaltning og naturveiledning",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "6EV155",
+      "emnenavn": "Arealforvaltning",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "6EV299",
+      "emnenavn": "Bacheloroppgave",
+      "studiepoeng": 15,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Forskning og forvaltning",
+      "emner": [
+        {
+          "emnekode": "6AE124",
+          "emnenavn": "Evolution",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "UTM2240",
+          "emnenavn": "Praksis i viltøkologi",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Næring og forvaltning",
+      "emner": [
+        {
+          "emnekode": "SKO1160",
+          "emnenavn": "Grunnleggende økonomi",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "UTM2260",
+          "emnenavn": "Bærekraftig næringsutvikling og innovasjon",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er Universitetet i Innlandets studiekatalog (studiekatalog.edutorium.no/inn/nb/program/UTM), linket fra programsiden inn.no/studier/vare-studier/bachelor-i-utmarksforvaltning/ som «Studieplan». Studiemodell-tabellen merker emnene med type «O» (obligatorisk) eller «V» (valgfritt); i semester 4 (2. år vår) og semester 5 (3. år høst) må studenten velge fordypning mellom «Forskning og forvaltning» (6AE124 Evolution / UTM2240 Praksis i viltøkologi) og «Næring og forvaltning» (SKO1160 Grunnleggende økonomi / UTM2260 Bærekraftig næringsutvikling og innovasjon), jf. tabellens egen fotnotetekst. Disse to fordypningsspesifikke valgemnene (7,5 sp hver, 15 sp totalt) er derfor ført under spesialiseringer og IKKE i obligatoriske-listen. De 18 rent obligatoriske emnene (uten valg) summerer til 165 sp; sammen med 15 sp fordypningsvalg blir totalt 180 sp per student. Studiekatalogens egen bunnsum i tabellen («Sum (195 totalt)») er en naiv sum av samtlige rader inkl. BEGGE fordypningsalternativer i hvert av de to valgsemestrene (165 + 7.5+7.5 + 7.5+7.5 = 195), ikke det reelle studiepoengomfanget en student faktisk tar (180). totaltStudiepoeng er derfor satt til 180 i tråd med standard bachelorlengde og skjemaets øvrige eksempler, ikke til kildetabellens 195. Emnenavn er hentet direkte fra samme tabell i studiekatalogen. Programmet deler flere emner med inn_skogfag (samme institusjon/studiested Evenstad): SKO1105, SKO1101, UTM1133, 6EV153, SKO1154, 6EV298, SKO2153, 6EV155, 6EV299."
+}

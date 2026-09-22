@@ -1,0 +1,144 @@
+{
+  "programnavn": "Kjemi (bachelor)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/bachelor/kjemi",
+    "https://www.nmbu.no/fakulteter/fakultet-kjemi-bioteknologi-og-matvitenskap/studieplaner-bachelor-i-kjemi",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-06/B-KJEMI%20kull%202026.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 125,
+  "obligatoriske": [
+    {
+      "emnekode": "BIO101",
+      "emnenavn": "Introduksjon i bioteknologi og kjemi",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Augustblokk før høstsemesteret."
+    },
+    {
+      "emnekode": "BIO100",
+      "emnenavn": "Cellebiologi",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MATH100",
+      "emnenavn": "Matematikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Obligatorisk valg mellom MATH100 og MATH121 (studieplanen lister «Matematikk MATH100 eller MATH121»)."
+    },
+    {
+      "emnekode": "INF120",
+      "emnenavn": "Programmering og databehandling",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM100",
+      "emnenavn": "Generell kjemi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "STAT100",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS100",
+      "emnenavn": "Fysikk og natur",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM110",
+      "emnenavn": "Organisk kjemi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "PHI100",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen lister PHI100 (alt. PHI101/PHI102) - studenten velger en av de likeverdige variantene."
+    },
+    {
+      "emnekode": "INF201",
+      "emnenavn": "Videregående programmering",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJB200",
+      "emnenavn": "Biokjemi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM120",
+      "emnenavn": "Uorganisk kjemi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM230",
+      "emnenavn": "Fysikalsk kjemi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM240",
+      "emnenavn": "Analytisk kjemi",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er NMBUs fargekodede rutenett-studieplan for kull 2026 (énsides PDF «B-KJEMI kull 2026»). Dokumentet oppgir selv «Felles emner: 125 sp. I tillegg velges minst 20 sp valgfrie kjemiemner», og årssummene i rutenettet (60+55+10=125) stemmer eksakt med de 14 navngitte emnene over. Fargekoding i PDF-en skiller obligatoriske emner (grønne celler) fra eksempler på valgfrie emner (kremfargede/hvite celler); følgende emner er vist i rutenettet som eksempler på valgfrie kjemi-/statistikkemner og er IKKE tatt med i obligatoriske-listen: STAT200 Regresjon (alt. til STAT210, vist i 2. år januar), STAT210 Forsøksplanlegging og variansanalyse (vist i 3. år august), KJM211, MILJØ200, KJM311, KJM314 og KJM315 (alle vist i 3. år uten fast plassering/grønnfarge). Celle-bredden (antall 5-sp-kolonner en emnecelle dekker) er brukt til å fastslå studiepoeng per emne, kontrollert mot radens/årets oppgitte sum; blant annet er PHI100 her 10 sp (i motsetning til 5 sp i nmbu_bioteknologi.json, der celle-bredden og radsummen tilsier en kortere variant) - dette gjenspeiler at de to programmenes egne rutenett viser ulik bredde for PHI100-cellen. totaltStudiepoeng er satt til standard 180 sp for et treårig bachelorprogram; differansen på 55 sp (180-125) dekkes av valgfrie emner i 2. og 3. år, hvorav minst 20 sp må være kjemiemner (jf. teksten øverst i kilden). Kildedokumentet beskriver ingen egne studieretninger/spesialiseringer for dette programmet.",
+  "entryId": "nmbu_kjemi"
+}

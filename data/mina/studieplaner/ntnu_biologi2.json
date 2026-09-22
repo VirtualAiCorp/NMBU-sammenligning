@@ -1,0 +1,85 @@
+{
+  "entryId": "ntnu_biologi2",
+  "programnavn": "Biologi (master 2 år)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://www.ntnu.no/studier/msbio",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=MSBIO&year=0",
+    "https://www.ntnu.no/web/studier/studieplan?p_p_id=studyprogrammeplannerportlet_WAR_studyprogrammeplannerportlet_INSTANCE_KzJMPh2hQuXL&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=studyplan&p_p_cacheability=cacheLevelPage&code=MSBIO&year=2025"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 67.5,
+  "obligatoriske": [
+    {
+      "emnekode": "HMS0003",
+      "emnenavn": "Health, Safety and Environment (HSE) course for master students",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Felles for alle fire studieretninger."
+    },
+    {
+      "emnekode": "BI3085",
+      "emnenavn": "Biology without borders",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Går over alle fire semestre (del 1-4 av 4), 7,5 sp totalt. Felles for alle fire studieretninger."
+    },
+    {
+      "emnekode": "BI3900",
+      "emnenavn": "Master Thesis in Biology",
+      "studiepoeng": 60,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Går over alle fire semestre (del 1-4 av 4), 60 sp totalt. Obligatorisk for studieretningene Ecology/Behaviour/Evolution/Biosystematics, Physiology og Biodiversity and Systematics (Nabis). I studieretningen Cell and Molecular Biology er dette et obligatorisk valg mellom BI3900 og BT3920 (Master Thesis in Biology at IBT) - se merknad på den studieretningen."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Ecology, Behaviour, Evolution and Biosystematics",
+      "obligatoriske": [],
+      "merknad": "Ingen enkeltemner er rent obligatoriske utover kjernen. Studieretningen krever i stedet minst 2 emner fra en gruppe A (BI3052 Study Design og BI3106 Ecological and evolutionary dynamics i 1. år høst; BI3036 Plant Ecology, BI3040 Behavioural Ecology og BI3082 Advanced Conservation Biology i 1. år vår; BI3051 Quantitative Analyses in Biology i 2. år høst - alle 7,5 sp), et obligatorisk valg mellom alternativer og derfor ikke ført opp som enkeltemner. I tillegg er Experts in Teamwork (EiT, 7,5 sp, 1. år vår) obligatorisk, men studenten velger selv blant et stort antall emnekoder."
+    },
+    {
+      "navn": "Cell and Molecular Biology",
+      "obligatoriske": [
+        {
+          "emnekode": "BI3016",
+          "emnenavn": "Molecular Cell Biology",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ],
+      "merknad": "I denne studieretningen er masteroppgaven et obligatorisk valg mellom BI3900 (Master Thesis in Biology) og BT3920 (Master Thesis in Biology at IBT), begge 60 sp over fire semestre - ikke ført opp som fast emnekode i fellesdelen for denne retningen. Experts in Teamwork (EiT, 7,5 sp, 1. år vår) er obligatorisk, men studenten velger selv blant et stort antall emnekoder."
+    },
+    {
+      "navn": "Physiology",
+      "obligatoriske": [
+        {
+          "emnekode": "BI3024",
+          "emnenavn": "Advanced Physiology",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Biodiversity and Systematics (Nabis)",
+      "obligatoriske": [],
+      "merknad": "Ingen studieretningsspesifikke obligatoriske emner utover fellesdelen ble funnet i studieplan-API-et."
+    }
+  ],
+  "merknad": "Kilde er NTNUs studieplan-API (studyprogrammeplannerportlet, resource_id=studyplan) for MSBIO, lest for kull 2025 (fullstendig 4-periodig/2-årig plan, oppdatert 12.05.2026); kull 2026 har foreløpig ingen publisert studieplan. Programmet har fire studieretninger (Ecology/Behaviour/Evolution/Biosystematics, Cell and Molecular Biology, Physiology, Biodiversity and Systematics/Nabis), valgt av studenten ved opptak eller tidlig i studiet. BI3086 «How to do Science» (0 sp, 1. år høst) er merket obligatorisk for studieretningene Ecology og Cell and Molecular Biology i API-dataene, men ikke for Physiology eller Biodiversity and Systematics - dette fremstår som en inkonsistens i kildedataene og er derfor ikke ført opp i noen av listene. dbhEmnekoder er ikke fylt ut siden DBH-rapportering for dette programmet ikke er slått opp i dette arbeidet."
+}

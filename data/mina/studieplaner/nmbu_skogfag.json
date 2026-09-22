@@ -1,0 +1,197 @@
+{
+  "entryId": "nmbu_skogfag",
+  "programnavn": "Skogfag (bachelor)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/bachelor/skogfag",
+    "https://static02.nmbu.no/mina/studier/B-SF.php"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 105,
+  "obligatoriske": [
+    {
+      "emnekode": "SKOG100",
+      "emnenavn": "Skogforvaltning",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Augustblokk før høstsemesteret."
+    },
+    {
+      "emnekode": "REAL101",
+      "emnenavn": "Matematikk for naturvitere",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen gir valget mellom REAL101 og MATH-INF100 (Beregningsbasert matematikk i praksis)."
+    },
+    {
+      "emnekode": "LAD102",
+      "emnenavn": "GIS - praktisk introduksjon",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "JUS100",
+      "emnenavn": "Juridisk metode og norsk rettssystem",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKOG200",
+      "emnenavn": "Skogens biologi, økologi og produksjon",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKOG205",
+      "emnenavn": "Inventering og ressurskartlegging",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ECOL100",
+      "emnenavn": "Innføring i økologi",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ECN101",
+      "emnenavn": "Samfunnsøkonomi for miljø og utvikling",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKOG101",
+      "emnenavn": "Skogteknologi",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "juniblokk",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKOG201",
+      "emnenavn": "Skader og sykdommer på skogstrær",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Augustblokk før høstsemesteret."
+    },
+    {
+      "emnekode": "PHI100",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "JORD100",
+      "emnenavn": "Jordlære",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKOG202",
+      "emnenavn": "Betydningen av insekter og sopper i produksjonsskog",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TRE200",
+      "emnenavn": "Treteknologi I",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "januarblokk",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKOG210",
+      "emnenavn": "Skogprodukter og materialteknologi",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKOG240",
+      "emnenavn": "Skoglig driftsteknikk og logistikk",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKOG220",
+      "emnenavn": "Skogbehandling",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Augustblokk før høstsemesteret."
+    },
+    {
+      "emnekode": "STAT100",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKOG250",
+      "emnenavn": "Skogforvaltning - øvingskurs i tverrfaglig analyse",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "juniblokk",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKOG230",
+      "emnenavn": "Ressursøkonomi og planlegging i skogbruket",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er NMBUs fargekodede rutenett-studieplan for kull 2026 (static02.nmbu.no/mina/studier/B-SF.php), linket fra programsiden nmbu.no/studier/bachelor/skogfag. De 19 navngitte emnene (95 sp) + SKOG250 (10 sp) utgjør til sammen 105 obligatoriske sp av totalt 180 sp. De resterende 75 sp er valgfrie: studieplanen lister syv ikke-obligatoriske eksempelplaner/anbefalte emnepakker (Økonomi- og forvaltningsfag, Datavitenskap og GIS, Skogbiologi, Skogteknologi, Kartlegging og planlegging, Skogskjøtsel, Ett semester i utlandet) uten faste obligatoriske emnelister, og krever i tillegg at studenten velger minst ett av MINA250 Tverrfaglig konsekvensanalyse (10 sp, januarblokk+vårparallell) eller NATF200 Vern og forvaltning av norsk natur (5 sp, januarblokk), anbefalt i siste semester. Siden dette er et reelt valg mellom to ulike emner med ulikt studiepoengomfang, og ikke en fast obligatorisk emnekode, er det holdt utenfor obligatoriske-listen og obligatoriskeStudiepoeng, i tråd med regelen om at obligatoriske valg mellom alternativer føres i merknad. REAL101 (Matematikk for naturvitere) har i studieplanen en fotnote om at MATH-INF100 (Beregningsbasert matematikk i praksis) kan velges i stedet; dette er et reelt 1:1-alternativ (samme sp-omfang) og er derfor ført som én linje (REAL101) med merknad, tilsvarende praksis for PHI100/PHI101 i nmbu_maskin.json. Emner merket «Augustblokk» (SKOG100 i år 1, SKOG220 i år 3) er den samme emnekoden som også står i høstparallell-raden i rutenettet, dvs. emnet starter i augustblokka rett før høstsemesteret; SKOG201 i år 2 er derimot en egen emnekode som kun står i Augustblokk-raden (ikke i selve høstparallell-raden for år 2), men er også satt til semester «høst» med samme augustblokk-merknad. Emnenavn er hentet fra NMBUs emnesøk (nmbu.no/emne/<kode>)."
+}

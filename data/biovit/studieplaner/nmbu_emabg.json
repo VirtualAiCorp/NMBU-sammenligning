@@ -1,0 +1,104 @@
+{
+  "entryId": "nmbu_emabg",
+  "programnavn": "European Master in Animal Biodiversity and Genomics (master 2 år)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://www.nmbu.no/studier/master-2-aar/european-master-animal-biodiversity-and-genomics",
+    "https://www.emabg.eu/curriculum/",
+    "https://www.emabg.eu/study-tracks-all/"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 25,
+  "obligatoriske": [
+    {
+      "emnekode": "ABG300",
+      "emnenavn": "EMABG - Introduction course",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "1. semester, alltid ved NMBU, felles for alle fem mobilitetsspor («tracks»)."
+    },
+    {
+      "emnekode": "HFA303",
+      "emnenavn": "Biological Consequences of Selection in Animal Breeding",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "1. semester, alltid ved NMBU, felles for alle fem spor."
+    },
+    {
+      "emnekode": "HFA350",
+      "emnenavn": "From phenotypes to breeding values",
+      "studiepoeng": 15,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "1. semester, alltid ved NMBU, felles for alle fem spor."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Designing and implementing breeding programmes for small populations (NMBU–BOKU, Wien)",
+      "obligatoriske": [
+        {"emnekode": "Genetics of diversity", "emnenavn": "Genetics of diversity", "studiepoeng": 3, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": "Ingen emnekode oppgitt i kildematerialet fra BOKU; emnenavnet er brukt som identifikator. Del av 2.–3. semester (vårparallell 1. år t.o.m. høstparallell 2. år) ved BOKU, Wien."},
+        {"emnekode": "Animal breeding and the sustainable development goals", "emnenavn": "Animal breeding and the sustainable development goals", "studiepoeng": 3, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": "Ingen emnekode oppgitt. 2.–3. semester ved BOKU."},
+        {"emnekode": "Transformative development", "emnenavn": "Transformative development", "studiepoeng": 3, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": "Ingen emnekode oppgitt. 2.–3. semester ved BOKU."},
+        {"emnekode": "Animal husbandry in tropical and subtropical regions", "emnenavn": "Animal husbandry in tropical and subtropical regions", "studiepoeng": 3, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": "Ingen emnekode oppgitt. 2.–3. semester ved BOKU."},
+        {"emnekode": "Project design and sustainable development goals (SDGs)", "emnenavn": "Project design and sustainable development goals (SDGs)", "studiepoeng": 3, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": "Ingen emnekode oppgitt. 2.–3. semester ved BOKU."},
+        {"emnekode": "Scientific communication and impacts", "emnenavn": "Scientific communication and impacts", "studiepoeng": 3, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": "Ingen emnekode oppgitt. 2.–3. semester ved BOKU."},
+        {"emnekode": "Contribution of animal breeding to global food security", "emnenavn": "Contribution of animal breeding to global food security", "studiepoeng": 3, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": "Ingen emnekode oppgitt. 2.–3. semester ved BOKU."},
+        {"emnekode": "Master Thesis", "emnenavn": "Master Thesis", "studiepoeng": 30, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": "4. semester ved NMBU. Ingen egen emnekode oppgitt i kildematerialet."}
+      ]
+    },
+    {
+      "navn": "Conservation genomics for rare and endangered breeds and species (NMBU–WUR, Wageningen)",
+      "obligatoriske": [
+        {"emnekode": "ABG60306", "emnenavn": "Breeding Lab", "studiepoeng": 6, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": "2. semester ved Wageningen University & Research (WUR)."},
+        {"emnekode": "MAT20306", "emnenavn": "Advanced Statistics", "studiepoeng": 6, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": "2. semester ved WUR."},
+        {"emnekode": "ABG80330", "emnenavn": "MSc thesis Animal Breeding and Genomics", "studiepoeng": 30, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": "3. semester ved WUR, i tillegg til masteroppgaven ved NMBU i 4. semester – se merknad om oppgavestørrelse."},
+        {"emnekode": "Master Thesis", "emnenavn": "Master Thesis", "studiepoeng": 30, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": "4. semester ved NMBU."}
+      ]
+    },
+    {
+      "navn": "One health: Health and welfare in humans and animals (NMBU–UGOE, Göttingen)",
+      "obligatoriske": [
+        {"emnekode": "M.Cp.0016", "emnenavn": "Practical Statistics and Experimental Design in Agriculture", "studiepoeng": 6, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": "2.–3. semester ved Universität Göttingen (UGOE)."},
+        {"emnekode": "M.iPAB.0002", "emnenavn": "Breeding schemes and programs in plant and animal breeding", "studiepoeng": 6, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": "2.–3. semester ved UGOE."},
+        {"emnekode": "M.iPAB.0006", "emnenavn": "Breeding informatics", "studiepoeng": 9, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": "2.–3. semester ved UGOE."},
+        {"emnekode": "M.iPAB.0016", "emnenavn": "Applied effective R programming in animal breeding and genetics", "studiepoeng": 3, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": "2.–3. semester ved UGOE."},
+        {"emnekode": "M.iPAB.0020", "emnenavn": "Breeding Lab Internship", "studiepoeng": 9, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": "2.–3. semester ved UGOE."},
+        {"emnekode": "P.AG.0085", "emnenavn": "Computing in Science - Basics of Computational Biology", "studiepoeng": 3, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": "2.–3. semester ved UGOE."},
+        {"emnekode": "M.iPAB.0001", "emnenavn": "Quantitative genetics and population genetics", "studiepoeng": 6, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": "2.–3. semester ved UGOE."},
+        {"emnekode": "M.iPAB.0003", "emnenavn": "Statistical genetics, breeding informatics and experimental design", "studiepoeng": 6, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": "2.–3. semester ved UGOE."},
+        {"emnekode": "M.iPAB.0007", "emnenavn": "Biotechnology and molecular genetics in plant and animal breeding", "studiepoeng": 6, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": "2.–3. semester ved UGOE."},
+        {"emnekode": "M.iPAB.0024", "emnenavn": "Farm animal genetic resources", "studiepoeng": 3, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": "2.–3. semester ved UGOE."},
+        {"emnekode": "M.SIA.A02M", "emnenavn": "Epidemiology of international and tropical animal infectious diseases", "studiepoeng": 6, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": "2.–3. semester ved UGOE."},
+        {"emnekode": "Master Thesis", "emnenavn": "Master Thesis", "studiepoeng": 30, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": "4. semester ved NMBU."}
+      ]
+    },
+    {
+      "navn": "Understanding biodiversity: integrative biology (NMBU–APT, AgroParisTech)",
+      "obligatoriske": [
+        {"emnekode": "SDG300", "emnenavn": "Sustainability Goals and Food System Redesign", "studiepoeng": 5, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": "2. semester ved NMBU. NMBUs egen emnebeskrivelse lister emnet som SDG300 «Sustainable development goals in plant and animal food systems»."},
+        {"emnekode": "Advanced approaches in Animal Sciences", "emnenavn": "Advanced approaches in Animal Sciences", "studiepoeng": 12, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": "Ingen emnekode oppgitt. 3. semester ved AgroParisTech (APT); ett av tre emneblokker som til sammen utgjør 30 sp."},
+        {"emnekode": "Foundations for Animal sciences and Transversal tools", "emnenavn": "Foundations for Animal sciences and Transversal tools", "studiepoeng": 13, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": "Ingen emnekode oppgitt. 3. semester ved APT."},
+        {"emnekode": "Practical work experiences and Soft skills", "emnenavn": "Practical work experiences and Soft skills", "studiepoeng": 5, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": "Ingen emnekode oppgitt. 3. semester ved APT."},
+        {"emnekode": "Research Thesis", "emnenavn": "Research Thesis", "studiepoeng": 30, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": "4. semester ved APT (ikke ved NMBU, i motsetning til de andre sporene)."}
+      ]
+    },
+    {
+      "navn": "Bioinformatics applied to biodiversity and genomics (NMBU–SLU, Uppsala/Umeå)",
+      "obligatoriske": [
+        {"emnekode": "SDG300", "emnenavn": "Sustainability Goals and Food System Redesign", "studiepoeng": 5, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": "2. semester ved NMBU."},
+        {"emnekode": "Genome analysis", "emnenavn": "Genome analysis", "studiepoeng": 15, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": "Ingen emnekode oppgitt. 3. semester ved Sveriges lantbruksuniversitet (SLU)."},
+        {"emnekode": "Bioinformatics", "emnenavn": "Bioinformatics", "studiepoeng": 15, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": "Ingen emnekode oppgitt. 3. semester ved SLU."},
+        {"emnekode": "Master Thesis", "emnenavn": "Master Thesis", "studiepoeng": 30, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": "4. semester ved SLU. Studiepoeng er ikke eksplisitt oppgitt i kildematerialet og er satt til 30 sp ut fra programmets standard semesterstruktur (30 sp per semester)."}
+      ]
+    }
+  ],
+  "merknad": "EMABG er en felles Erasmus Mundus-mastergrad (Erasmus Mundus Joint Master) mellom NMBU og fem partneruniversiteter (BOKU Wien, Wageningen/WUR, Universität Göttingen/UGOE, AgroParisTech/APT og SLU). Det finnes ingen NMBU-PDF-studieplan for dette programmet (det er ikke del av fakultetets ordinære studieplansamling); kildene er programmets NMBU-side og konsortiets egne curriculum-/study-tracks-sider (emabg.eu), hentet 22.09.2026. Alle studenter tar 1. semester (35 sp) ved NMBU: de tre emnene i «obligatoriske» over (25 sp) pluss et obligatorisk VALG mellom BIO321 (Population Genetics and Molecular Evolution) eller BIO322 (Advanced Topics in Genomics), 10 sp – ikke ført opp som enkeltemne siden det er et valg mellom alternativer. Deretter velger studenten ett av fem mobilitetsspor («tracks»), som hver har egne obligatoriske emner ved et partneruniversitet i 2.–3. semester og avsluttende masteroppgave i 4. semester, ført opp under «spesialiseringer». Spor 4 og 5 har i tillegg et felles obligatorisk valg i 2. semester ved NMBU mellom HFA300 (Animal Breeding and Conservation Plans) eller BIN300 (Statistical Genomics), 10 sp, samt 15 sp valgfrie emner – heller ikke ført opp som enkeltemne. Oppgavestørrelsen («masteroppgave») VARIERER kraftig mellom sporene: fire av fem spor har en avsluttende oppgave på 30 sp i 4. semester, mens spor 2 (NMBU–WUR) i tillegg har en 30 sp oppgave («ABG80330 MSc thesis») i 3. semester ved WUR – dvs. 60 sp oppgavearbeid totalt for dette sporet. Mange av emnene ved partneruniversitetene (BOKU, APT, SLU) har ingen offisiell emnekode i kildematerialet; emnenavnet er da brukt i feltet «emnekode» slik oppgaven krever («aldri finn opp koder»). Ettersom credit-summene i kildene ikke alltid går eksakt opp til 30 sp per semester (avrunding/elektiver varierer per spor), er de oppgitt slik konsortiet selv skriver dem. obligatoriskeStudiepoeng (25) teller kun de tre ubetinget felles NMBU-emnene i 1. semester; reelt obligatorisk omfang per spor er langt høyere når spesialiseringens emner og masteroppgave(r) regnes med (typisk 90–120 sp avhengig av spor og elektivandel)."
+}

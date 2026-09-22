@@ -1,0 +1,30 @@
+{
+  "entryId": "nmbu_biologi",
+  "programnavn": "Biologi (bachelor)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/bachelor/biologi",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-05/B-BIOL_2026_27.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 95,
+  "obligatoriske": [
+    {"emnekode": "BIO140", "emnenavn": "Innføringsemne i biologi", "studiepoeng": 5, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": "Augustblokk før høstsemesteret."},
+    {"emnekode": "BIO100", "emnenavn": "Cellebiologi", "studiepoeng": 5, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "ZOOL100", "emnenavn": "Generell zoologi", "studiepoeng": 5, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": "Har et feltkurs sammen med BOT100 i juniblokk."},
+    {"emnekode": "BOT100", "emnenavn": "Plantediversitet", "studiepoeng": 5, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": "Har et feltkurs sammen med ZOOL100 i juniblokk."},
+    {"emnekode": "ECOL100", "emnenavn": "Grunnleggende økologi", "studiepoeng": 5, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "KJM100", "emnenavn": "Generell kjemi", "studiepoeng": 10, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": "For studenter med svakt matematikkgrunnlag gis et ikke-studiepoenggivende forkurs (KJM007) normalt i januarblokk."},
+    {"emnekode": "BIO130", "emnenavn": "Generell mikrobiologi I", "studiepoeng": 5, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "BOT130", "emnenavn": "Grunnleggende plantefysiologi", "studiepoeng": 5, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "STIN100", "emnenavn": "Biologisk dataanalyse", "studiepoeng": 10, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "BIO120", "emnenavn": "Genetikk", "studiepoeng": 10, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "STAT100", "emnenavn": "Statistikk", "studiepoeng": 10, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": "Kan i stedet tas i høstparallellen ifølge studieplanens fotnote."},
+    {"emnekode": "BIO223", "emnenavn": "Evolusjonsbiologi", "studiepoeng": 10, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "HFX201", "emnenavn": "Fysiologi", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null}
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er NMBUs fargekodede rutenett-studieplan for kull 2026 (B-BIOL), hentet som PDF fra nmbu.no/studier/bachelor/biologi (lenke «Last ned detaljert studieplan»). Programmet er 180 sp totalt, hvorav 120 sp er obligatoriske for alle (studieplanens tabell 1, med tillegg til 125 sp avhengig av valg, se under), minimum 30 sp skal være biologiske emner (elektivt, ikke i obligatoriske-listen), og resterende ca. 30 sp er fritt valgfrie. I studieplanens obligatoriske emneliste er tre emnepar fargekodet med fotnoten «velg minst ett emne fra hver fargekode»: (1) BIO200 Molekylærgenetikk i eukaryoter (5 sp, januarblokk 3. år) / BIO210 Molekylærbiologi (10 sp, høst 3. år) – gult; (2) MATH100 Brukerkurs i matematikk / MATH121 Kalkulus (begge 10 sp, høst 1. år, valgt etter matematikkbakgrunn) – grønt; (3) PHI100 Examen philosophicum / PHI101 Examen philosophicum, seminarversjon (begge 10 sp, høst 1. år) – oransje. Disse tre valgparene er obligatoriske valg mellom alternativer og er derfor IKKE tatt med i obligatoriske-listen (jf. oppgavens regler), men er obligatoriske for alle studenter i den forstand at minst ett emne fra hvert par må fullføres. De 13 emnene i obligatoriske-listen over (95 sp) er de eneste uten alternativ – dvs. rene, entydige obligatoriske emner. Summen 95 sp (liste) + minimum 25 sp (ett emne fra hvert av de tre fargeparene, billigste alternativ BIO200+MATH+PHI) = 120 sp, mens 95 + 30 sp (BIO210 i stedet for BIO200 + MATH + PHI) = 125 sp, i tråd med studieplanens egen sum «120 (125)». Emnenavn og studiepoeng er hentet direkte fra studieplan-PDF-en. Studieplanen definerer ingen egne studieretninger/spesialiseringer med separate obligatoriske emnelister."
+}

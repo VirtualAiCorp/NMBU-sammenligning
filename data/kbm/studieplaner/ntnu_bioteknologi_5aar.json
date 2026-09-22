@@ -1,0 +1,312 @@
+{
+  "entryId": "ntnu_bioteknologi_5aar",
+  "programnavn": "Bioteknologi (master 5 år)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.ntnu.no/studier/mbiot5",
+    "https://www.ntnu.no/studier/mbiot5/studiets-oppbygning",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=MBIOT5&year=2026"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 180,
+  "obligatoriske": [
+    {
+      "emnekode": "EXPH0300",
+      "emnenavn": "Examen philosophicum for naturvitenskap og teknologi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EXPH0300-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HMS0001",
+      "emnenavn": "HMS-kurs for 1. årsstudenter",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "HMS0001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BT1101",
+      "emnenavn": "Introduksjon til bioteknologi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BT1101-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJ1004",
+      "emnenavn": "Generell kjemi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "KJ1004-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BI1001",
+      "emnenavn": "Celle- og molekylærbiologi",
+      "studiepoeng": 15,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BI1001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TKJ4103",
+      "emnenavn": "Organisk kjemi grunnkurs",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ST0103",
+      "emnenavn": "Brukerkurs i statistikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "ST0103-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TBT4102",
+      "emnenavn": "Biokjemi 1",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "TBT4102-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TDT4110",
+      "emnenavn": "Informasjonsteknologi, grunnkurs",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "TDT4110-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BT2100",
+      "emnenavn": "Beregningsbasert bioteknologi",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BT2100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TBT4107",
+      "emnenavn": "Biokjemi 2",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "TBT4107-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TBT4110",
+      "emnenavn": "Mikrobiologi",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "TBT4110-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TKJ4162",
+      "emnenavn": "Fysikalsk kjemi: Kjemisk termodynamikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "TKJ4162-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BI2014",
+      "emnenavn": "Molekylærbiologi",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BI2014-1"
+      ],
+      "merknad": "Obligatorisk i alle tre veivalg (Biokjemi og biopolymerkjemi, Molekylærbiologi, Systembiologi)."
+    },
+    {
+      "emnekode": "BT3220",
+      "emnenavn": "Videregående bioteknologi",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BT3220-1"
+      ],
+      "merknad": "Obligatorisk i alle tre veivalg."
+    },
+    {
+      "emnekode": "ST2304",
+      "emnenavn": "Statistisk modellering for biologer/bioteknologer",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "ST2304-1"
+      ],
+      "merknad": "Obligatorisk i alle tre veivalg."
+    },
+    {
+      "emnekode": "HMS0003",
+      "emnenavn": "HMS-kurs for masterstudenter",
+      "studiepoeng": 0,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "HMS0003-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HBIOT3910",
+      "emnenavn": "Masteroppgave i bioteknologi",
+      "studiepoeng": 60,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen fører opp masteroppgaven som et obligatorisk valg (status M1A) mellom fire emnekoder etter hvilket institutt/studiested masteroppgaven skrives ved: HBIOT3910 (institutt for bioteknologi og matvitenskap, 2 deler à 30 sp i 4. år), BIOTBT3900 (samme institutt, 4 deler à 15 sp over 4. og 5. år), BIOTBI3900 (institutt for biologi, 4 deler) og BIOTBA3900 (IBA Ålesund, 4 deler). Alle gir 60 sp totalt og er reelt obligatoriske for alle studenter, men studieplanen viser ikke selve emnekoden/semesterplasseringen som identisk for alle - HBIOT3910 er brukt som representativ kode her."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Biokjemi og biopolymerkjemi",
+      "obligatoriske": [
+        {
+          "emnekode": "KJ2050",
+          "emnenavn": "Analytisk kjemi, grunnkurs",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TBT4135",
+          "emnenavn": "Biopolymerer",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TBT4135-1"
+          ],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Molekylærbiologi",
+      "obligatoriske": [
+        {
+          "emnekode": "BI2015",
+          "emnenavn": "Molekylærbiologi, laboratoriekurs",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BI2015-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BI2012",
+          "emnenavn": "Cellebiologi",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "BI2012-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BI3016",
+          "emnenavn": "Molekylær cellebiologi",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BI3016-1"
+          ],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Systembiologi",
+      "obligatoriske": [
+        {
+          "emnekode": "TMA4413",
+          "emnenavn": "Matematikk 2D: Lineær algebra og differensialligninger",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TBT4165",
+          "emnenavn": "Systembiologi og biologiske nettverk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TBT4165-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TKP4195",
+          "emnenavn": "Bio-system teknologi",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TKP4195-1"
+          ],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er NTNUs interaktive studieplan for kull 2026 (studieplan#programmeCode=MBIOT5&year=2026), lest ut via nettleser siden emnetabellene lastes med JavaScript. Programmet er et realfagsløp (ikke sivilingeniør). De tre første semestrene er felles for alle. I 1. år høst velges MA0001 eller MA1101 (samme innhold, ulikt læringsutbytte-nivå, 7,5 sp), i 1. år vår MA0002 eller MA1102 (7,5 sp) - obligatoriske valg, ikke ført opp som egne rader. I 2. år høst velges ett av fire «områdeemner» (ØKO1001, ITO1000, IØ2000, BI2081, alle 7,5 sp) - obligatorisk valg, ikke ført opp. Retningsvalg (veivalg) skjer innen 3. år med frist oppgitt til 2028-06-10 for dette kullet; de tre veivalgene er Biokjemi og biopolymerkjemi, Molekylærbiologi og Systembiologi. Utover de emnene som er ført opp under hvert veivalg, inneholder hvert semester fra 3. år også valgfrie emner (status V/VB) som ikke er obligatoriske og derfor ikke er tatt med. I tillegg er Eksperter i team (EiT) obligatorisk som kategori i 4. år vår, men studenten velger selv landsby/emne - ingen enkelt emnekode er obligatorisk, og EiT er derfor ikke ført opp med egen rad eller studiepoeng. I 5. år vår kan et obligatorisk valg mellom BI3091 og BT3091 «spesialpensum» (7,5 sp, status M1B) komme i tillegg til masteroppgaven ved enkelte institutter; dette er ikke talt med i obligatoriskeStudiepoeng. Total studiepoengsum er antatt 300 (5 år × 60 sp) i tråd med et 5-årig masterprogram; siden ikke alle rader hadde eksplisitt sp-sum kunne ikke totalen verifiseres emne for emne."
+}

@@ -1,0 +1,197 @@
+{
+  "entryId": "nord_skogfag",
+  "programnavn": "Skogfag (bachelor)",
+  "institusjon": "Nord universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nord.no/studier/skogfag-bachelor",
+    "https://www.nord.no/studier/studieplaner/skogfag-baskog-bachelor-host-2026"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 150,
+  "obligatoriske": [
+    {
+      "emnekode": "KJE1001",
+      "emnenavn": "Laboratoriesikkerhet",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "0 sp, men obligatorisk i studieplanen."
+    },
+    {
+      "emnekode": "GEO2011",
+      "emnenavn": "Geografisk informasjonsbehandling",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "GEO1010",
+      "emnenavn": "Kartlære og datafangst",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO1004",
+      "emnenavn": "Naturtyper, klima og geologi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKO1000",
+      "emnenavn": "Innføring i skogfag",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ECO1008",
+      "emnenavn": "Innføring i økonomi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO1008",
+      "emnenavn": "Bærekraft, klima og etikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO1011",
+      "emnenavn": "Innføring i botanikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKO1001",
+      "emnenavn": "Metoder i skogskjøtsel",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "NAF1001",
+      "emnenavn": "Rettslære for naturforvaltere",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MET1005",
+      "emnenavn": "Akademisk skriving og metode",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Progresjonskrav: må være bestått før bacheloroppgaven (SKO2010)."
+    },
+    {
+      "emnekode": "SKO2000",
+      "emnenavn": "Driftsteknikk og logistikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT1001",
+      "emnenavn": "Matematikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "GEO2012",
+      "emnenavn": "Geografisk analyse",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "PRA2067",
+      "emnenavn": "Praksis i skogfag",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Krever minst 60 sp bestått før praksis."
+    },
+    {
+      "emnekode": "SKO2001",
+      "emnenavn": "Trevirkets anvendelse",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ORG1001",
+      "emnenavn": "Organisasjon",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen lister dette som «Obligatoriske emner – valg 1 av 2», dvs. studenten velger enten ORG1001 Organisasjon eller STT1001 Statistikk."
+    },
+    {
+      "emnekode": "SKO2003",
+      "emnenavn": "Den bærekraftige skogen",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKO2002",
+      "emnenavn": "Skogens helse og dynamikk",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKO2010",
+      "emnenavn": "Bacheloroppgave i skogfag",
+      "studiepoeng": 15,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Krever minst 90 sp bestått og bestått MET1005 Akademisk skriving og metode."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er Nord universitets studieplan for BASKOG, kull høst 2026 (nord.no/studier/studieplaner/skogfag-baskog-bachelor-host-2026), linket fra programsiden nord.no/studier/skogfag-bachelor. 3. år høst (5. semester, 30 sp) er et rent valgfritt semester («Valgemner») der studenten velger mellom «Emnepakke campus A», «Emnepakke campus B» eller utveksling; kildesiden viser disse kun som plassholderkoder (BASKOG-H26-CAMPUS-A/B/UTVEKSLIN) med 0 sp og lister ikke de konkrete emnene i hver pakke, så innholdet er ikke ført opp her. Disse 30 sp er holdt utenfor obligatoriske-listen og obligatoriskeStudiepoeng. I 4. semester (2. år vår) er ORG1001/STT1001 et reelt 1:1-valg mellom to obligatoriske alternativemner (markert «Obligatoriske emner – valg 1 av 2» i kilden) og er derfor ført som én linje (ORG1001) med merknad om alternativet, tilsvarende praksis for REAL101/MATH-INF100 i nmbu_skogfag.json. De 19 navngitte obligatoriske emnene (inkl. ORG1001-valget, ekskl. semester 5) summerer til 150 sp; sammen med 30 sp valgfritt semester 5 blir totalt 180 sp. Emnenavn, koder og studiepoeng er hentet direkte fra studieplan-siden."
+}

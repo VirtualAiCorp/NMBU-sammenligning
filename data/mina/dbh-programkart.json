@@ -1,0 +1,845 @@
+{
+ "hentet": "2026-09-22",
+ "institusjoner": {
+  "1173": "Norges miljø- og biovitenskapelige universitet",
+  "1150": "Norges teknisk-naturvitenskapelige universitet",
+  "1110": "Universitetet i Oslo",
+  "1120": "Universitetet i Bergen",
+  "1130": "UiT Norges arktiske universitet",
+  "1171": "Universitetet i Agder",
+  "1174": "Nord universitet",
+  "1176": "Universitetet i Sørøst-Norge",
+  "1177": "Universitetet i Innlandet",
+  "0264": "Høgskolen i Innlandet",
+  "0238": "Høgskulen på Vestlandet"
+ },
+ "programs": [
+  {
+   "entryId": "nmbu_skogfag",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "B-SF"
+   ],
+   "studieprogramnavn": "Skogfag",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 775
+  },
+  {
+   "entryId": "inn_skogfag",
+   "institusjonskode": "1177",
+   "studieprogramkoder": [
+    "SKO"
+   ],
+   "studieprogramnavn": "Bachelor i skogbruk",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 220,
+   "merknad": "DBH fører programmet internt som «Bachelor i skogbruk» (kode SKO); det er samme program som markedsføres som «Skogfag» i Samordna opptak. Rapportert under institusjonskode 0264 (Høgskolen i Innlandet) til og med 2024 og 1177 (Universitetet i Innlandet) fra 2025; seriene er slått sammen.",
+   "institusjonskoder": [
+    "1177",
+    "0264"
+   ]
+  },
+  {
+   "entryId": "nord_skogfag",
+   "institusjonskode": "1174",
+   "studieprogramkoder": [
+    "BASKOG"
+   ],
+   "studieprogramnavn": "Bachelor i skogfag",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2025
+   ],
+   "kandidaterSiste": 27,
+   "merknad": "Nord startet opp bachelor i skogfag i 2025; tabell 308 har bare én årgang (2025)."
+  },
+  {
+   "entryId": "inn_utmark_skog",
+   "institusjonskode": "1177",
+   "studieprogramkoder": [
+    "UTM"
+   ],
+   "studieprogramnavn": "Bachelor i utmarksforvaltning",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 324,
+   "merknad": "Samme DBH-program (UTM) som oppføringen inn_utmarksforvaltning i økologi-gruppa. Rapportert under institusjonskode 0264 til og med 2024 og 1177 fra 2025; seriene er slått sammen.",
+   "institusjonskoder": [
+    "1177",
+    "0264"
+   ]
+  },
+  {
+   "entryId": "nmbu_okologi",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "B-ØN"
+   ],
+   "studieprogramnavn": "Økologi og naturforvaltning",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 644
+  },
+  {
+   "entryId": "inn_utmarksforvaltning",
+   "institusjonskode": "1177",
+   "studieprogramkoder": [
+    "UTM"
+   ],
+   "studieprogramnavn": "Bachelor i utmarksforvaltning",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 324,
+   "merknad": "Samme DBH-program (UTM) som oppføringen inn_utmark_skog i skogfag-gruppa. Rapportert under institusjonskode 0264 til og med 2024 og 1177 fra 2025; seriene er slått sammen.",
+   "institusjonskoder": [
+    "1177",
+    "0264"
+   ]
+  },
+  {
+   "entryId": "nord_naturforvaltning",
+   "institusjonskode": "1174",
+   "studieprogramkoder": [
+    "224"
+   ],
+   "studieprogramnavn": "Bachelor i naturforvaltning",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 483
+  },
+  {
+   "entryId": "usn_naturmiljoforvaltning",
+   "institusjonskode": "1176",
+   "studieprogramkoder": [
+    "315"
+   ],
+   "studieprogramnavn": "Bachelor i natur- og miljøforvaltning",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 821
+  },
+  {
+   "entryId": "uit_biologi",
+   "institusjonskode": "1130",
+   "studieprogramkoder": [
+    "B-BIO"
+   ],
+   "studieprogramnavn": "Biologi - bachelor",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 401
+  },
+  {
+   "entryId": "uia_biologi",
+   "institusjonskode": "1171",
+   "studieprogramkoder": [
+    "BACBIO"
+   ],
+   "studieprogramnavn": "Biologi, bachelorprogram",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 331
+  },
+  {
+   "entryId": "nmbu_miljonatur",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "B-MINA"
+   ],
+   "studieprogramnavn": "Miljø og naturressurser",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 24
+  },
+  {
+   "entryId": "uio_klima_miljo_menneske",
+   "institusjonskode": "1110",
+   "studieprogramkoder": [
+    "HFB-KLM"
+   ],
+   "studieprogramnavn": "Klima, miljø og menneske",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2025
+   ],
+   "kandidaterSiste": 67,
+   "merknad": "Programmet startet opp i 2025; tabell 308 har bare én årgang (2025)."
+  },
+  {
+   "entryId": "uio_geologi_geografi",
+   "institusjonskode": "1110",
+   "studieprogramkoder": [
+    "MNB-GEG"
+   ],
+   "studieprogramnavn": "Geologi og geografi",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 806
+  },
+  {
+   "entryId": "uib_geovitenskap",
+   "institusjonskode": "1120",
+   "studieprogramkoder": [
+    "BAMN-GEOV"
+   ],
+   "studieprogramnavn": "Bachelorprogram i geovitenskap",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 1370
+  },
+  {
+   "entryId": "ntnu_geologi",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "BGEOL"
+   ],
+   "studieprogramnavn": "Geologi - bachelor",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 742
+  },
+  {
+   "entryId": "hvl_geologi_geofare",
+   "institusjonskode": "0238",
+   "studieprogramkoder": [
+    "GEFA"
+   ],
+   "studieprogramnavn": "Bachelor i geologi og geofare",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 362
+  },
+  {
+   "entryId": "nmbu_fornybar",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "B-FORNY"
+   ],
+   "studieprogramnavn": "Fornybar energi",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 554
+  },
+  {
+   "entryId": "hvl_fornybar",
+   "institusjonskode": "0238",
+   "studieprogramkoder": [
+    "FEN"
+   ],
+   "studieprogramnavn": "Bachelor i fornybar energi",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 191,
+   "merknad": "Programmet byttet navn til «Bachelor i energiomstilling» i DBH fra og med 2025-kullet, men beholder kode FEN. Siste opptak var 2024, jf. gruppenotatet."
+  },
+  {
+   "entryId": "ntnu_ing_fornybar_trondheim",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "BIFOREN"
+   ],
+   "studieprogramnavn": "Fornybar energi - bachelor i ingeniørfag",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 2454,
+   "merknad": "NTNU tilbyr programmet ved tre studiesteder (Trondheim, Gjøvik og Ålesund) under samme kode BIFOREN; DBH skiller ikke studiested. Samme DBH-program som oppføringene ntnu_ing_fornybar_gjovik og ntnu_ing_fornybar_alesund."
+  },
+  {
+   "entryId": "ntnu_ing_fornybar_gjovik",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "BIFOREN"
+   ],
+   "studieprogramnavn": "Fornybar energi - bachelor i ingeniørfag",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 2454,
+   "merknad": "Samme DBH-program (BIFOREN) som oppføringen ntnu_ing_fornybar_trondheim; DBH skiller ikke studiested."
+  },
+  {
+   "entryId": "ntnu_ing_fornybar_alesund",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "BIFOREN"
+   ],
+   "studieprogramnavn": "Fornybar energi - bachelor i ingeniørfag",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 2454,
+   "merknad": "Samme DBH-program (BIFOREN) som oppføringen ntnu_ing_fornybar_trondheim; DBH skiller ikke studiested."
+  },
+  {
+   "entryId": "uia_ing_fornybar",
+   "institusjonskode": "1171",
+   "studieprogramkoder": [
+    "INGENE"
+   ],
+   "studieprogramnavn": "Ingeniørfag - fornybar energi, bachelorprogram",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 1031
+  },
+  {
+   "entryId": "uit_fornybar",
+   "institusjonskode": "1130",
+   "studieprogramkoder": [
+    "IMAT-FOREN"
+   ],
+   "studieprogramnavn": "Fornybar energi, sivilingeniør - master",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 196
+  },
+  {
+   "entryId": "nmbu_radioaktivitet",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "B-RAMI"
+   ],
+   "studieprogramnavn": "Radioaktivitet og miljø",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 100,
+   "merknad": "Programmet startet opp i 2024; tabell 308 har bare to årganger (2024-2025)."
+  },
+  {
+   "entryId": "nmbu_skogfag2",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "M-SF"
+   ],
+   "studieprogramnavn": "Skogfag",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 180
+  },
+  {
+   "entryId": "inn_skogforvaltning2",
+   "institusjonskode": "1177",
+   "studieprogramkoder": [
+    "MASKO"
+   ],
+   "studieprogramnavn": "Master i bærekraftig skogforvaltning",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 119,
+   "merknad": "Nytt program, første registrerte karakterer i 2024 under institusjonskode 0264 (Høgskolen i Innlandet); 2025 er rapportert under 1177 (Universitetet i Innlandet). Seriene er slått sammen.",
+   "institusjonskoder": [
+    "1177",
+    "0264"
+   ]
+  },
+  {
+   "entryId": "nmbu_okologi2",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "M-ECOL"
+   ],
+   "studieprogramnavn": "Ecology",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 221,
+   "merknad": "NMBUs toårige master i økologi er engelskspråklig og har DBH-navnet «Ecology»."
+  },
+  {
+   "entryId": "inn_anvendt_okologi2",
+   "institusjonskode": "1177",
+   "studieprogramkoder": [
+    "MAOK"
+   ],
+   "studieprogramnavn": "Master i anvendt økologi",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 171,
+   "merknad": "Samme DBH-program (MAOK) som oppføringen inn_anvendt_okologi_nf2 i naturforvaltning2-gruppa. Rapportert under institusjonskode 0264 til og med 2024 og 1177 fra 2025; seriene er slått sammen.",
+   "institusjonskoder": [
+    "1177",
+    "0264"
+   ]
+  },
+  {
+   "entryId": "ntnu_biologi2",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "MSBIO"
+   ],
+   "studieprogramnavn": "Biology - Master's Programme",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 291
+  },
+  {
+   "entryId": "uit_biologi2",
+   "institusjonskode": "1130",
+   "studieprogramkoder": [
+    "M-BIO"
+   ],
+   "studieprogramnavn": "Biology - master",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 518
+  },
+  {
+   "entryId": "nmbu_naturforvaltning2",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "M-NF"
+   ],
+   "studieprogramnavn": "Naturforvaltning",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 393
+  },
+  {
+   "entryId": "ntnu_naturressurs2",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "MSNARM"
+   ],
+   "studieprogramnavn": "Natural Resources Management - Master's Programme",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 189
+  },
+  {
+   "entryId": "usn_okologi_miljoforvaltning2",
+   "institusjonskode": "1176",
+   "studieprogramkoder": [
+    "1918",
+    "918"
+   ],
+   "studieprogramnavn": "Master i økologi og miljøforvaltning",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 307,
+   "merknad": "USN byttet programkode i 2022 fra «Master i natur-, helse- og miljøvern» (kode 918) til «Master i økologi og miljøforvaltning» (kode 1918); de to seriene er slått sammen. 918 har 0 kandidater i 2024-2025 (utfaset)."
+  },
+  {
+   "entryId": "inn_anvendt_okologi_nf2",
+   "institusjonskode": "1177",
+   "studieprogramkoder": [
+    "MAOK"
+   ],
+   "studieprogramnavn": "Master i anvendt økologi",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 171,
+   "merknad": "Samme DBH-program (MAOK) som oppføringen inn_anvendt_okologi2 i økologi2-gruppa. Rapportert under institusjonskode 0264 til og med 2024 og 1177 fra 2025; seriene er slått sammen.",
+   "institusjonskoder": [
+    "1177",
+    "0264"
+   ]
+  },
+  {
+   "entryId": "nmbu_miljovitenskap2",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "M-MILJØ"
+   ],
+   "studieprogramnavn": "Miljøvitenskap",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 183,
+   "merknad": "Nytt program fra opptaket 2022; karakterer finnes fra 2022. Etterfølger M-MINA (se nmbu_mina2_forgjenger)."
+  },
+  {
+   "entryId": "nmbu_mina2_forgjenger",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "M-MINA"
+   ],
+   "studieprogramnavn": "Miljø og naturressurser",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+   ],
+   "kandidaterSiste": 0,
+   "merknad": "Forgjengeren til M-MILJØ (miljøvitenskap); lagt ned fra opptaket 2022. Tabell 308 har fallende kandidattall til og med 2024 (0 kandidater), ingen rader for 2025."
+  },
+  {
+   "entryId": "ntnu_miljotoks2",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "MSENVITOX"
+   ],
+   "studieprogramnavn": "Environmental Toxicology and Chemistry - Master's Programme",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 151,
+   "merknad": "DBH/engelsk navn er «Environmental Toxicology and Chemistry»; norsk navn i studiekatalogen er «Miljøtoksikologi og naturmiljøkjemi»."
+  },
+  {
+   "entryId": "ntnu_industriell_okologi2",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "MSINDECOL"
+   ],
+   "studieprogramnavn": "Industrial Ecology - Master's Programme",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 343
+  },
+  {
+   "entryId": "uio_geofag2",
+   "institusjonskode": "1110",
+   "studieprogramkoder": [
+    "MNM2-GEO"
+   ],
+   "studieprogramnavn": "Geofag",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 566
+  },
+  {
+   "entryId": "uib_geovitenskap2",
+   "institusjonskode": "1120",
+   "studieprogramkoder": [
+    "MAMN-GEOV"
+   ],
+   "studieprogramnavn": "Masterprogram i geovitenskap",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 531
+  },
+  {
+   "entryId": "nmbu_fornybar2",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "M-FORNY"
+   ],
+   "studieprogramnavn": "Fornybar energi",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 236
+  },
+  {
+   "entryId": "uio_fornybare_energisystemer2",
+   "institusjonskode": "1110",
+   "studieprogramkoder": [
+    "MNM2-FENS"
+   ],
+   "studieprogramnavn": "Fornybare energisystemer",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 164
+  },
+  {
+   "entryId": "uia_fornybar2",
+   "institusjonskode": "1171",
+   "studieprogramkoder": [
+    "MASTENE"
+   ],
+   "studieprogramnavn": "Fornybar energi, masterprogram",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 180
+  },
+  {
+   "entryId": "ntnu_baerekraftig_energi2",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "MSSE"
+   ],
+   "studieprogramnavn": "Sustainable Energy - Master's Programme",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 41
+  },
+  {
+   "entryId": "hvl_energiteknologi2",
+   "institusjonskode": "0238",
+   "studieprogramkoder": [
+    "MABET"
+   ],
+   "studieprogramnavn": "Master i bærekraftig energiteknologi (sivilingeniør)",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 171
+  }
+ ]
+}

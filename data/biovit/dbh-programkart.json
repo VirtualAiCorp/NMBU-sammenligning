@@ -9,350 +9,721 @@
   "1171": "Universitetet i Agder",
   "1174": "Nord universitet",
   "1177": "Høgskolen i Innlandet",
-  "0264": "Høgskolen i Innlandet (før 2025)"
+  "0264": "Høgskolen i Innlandet (institusjonskode før 2025)"
  },
  "programs": [
   {
    "entryId": "nmbu_biologi",
    "institusjonskode": "1173",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Biologi (bachelor)",
+   "studieprogramkoder": [
+    "B-BIOL"
+   ],
+   "studieprogramnavn": "Biologi",
    "nivaakode": "B3",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 1168
   },
   {
    "entryId": "uio_biovitenskap",
    "institusjonskode": "1110",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Biovitenskap (bachelor)",
+   "studieprogramkoder": [
+    "MNB-BIOS"
+   ],
+   "studieprogramnavn": "Biovitenskap",
    "nivaakode": "B3",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 2648
   },
   {
    "entryId": "uib_biologi",
    "institusjonskode": "1120",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Biologi (bachelor)",
+   "studieprogramkoder": [
+    "BAMN-BIO"
+   ],
+   "studieprogramnavn": "Bachelorprogram i biologi",
    "nivaakode": "B3",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 1484
   },
   {
    "entryId": "ntnu_biologi",
    "institusjonskode": "1150",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Biologi (bachelor)",
+   "studieprogramkoder": [
+    "BBI"
+   ],
+   "studieprogramnavn": "Biologi - bachelor(studium)",
    "nivaakode": "B3",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 1779,
+   "merknad": "DBH-navnet har variert mellom «Biologi - bachelorstudium» og «Biologi - bachelor»; samme kode BBI hele perioden."
   },
   {
    "entryId": "uit_biologi",
    "institusjonskode": "1130",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Biologi (bachelor)",
+   "studieprogramkoder": [
+    "B-BIO"
+   ],
+   "studieprogramnavn": "Biologi - bachelor",
    "nivaakode": "B3",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 401
   },
   {
    "entryId": "nord_biologi",
    "institusjonskode": "1174",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Biologi (bachelor)",
+   "studieprogramkoder": [
+    "BABII"
+   ],
+   "studieprogramnavn": "Bachelor i biologi",
    "nivaakode": "B3",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 561
   },
   {
    "entryId": "uia_biologi",
    "institusjonskode": "1171",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Biologi (bachelor)",
+   "studieprogramkoder": [
+    "BACBIO"
+   ],
+   "studieprogramnavn": "Biologi, bachelorprogram",
    "nivaakode": "B3",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 331
   },
   {
    "entryId": "uib_molekylaerbiologi",
    "institusjonskode": "1120",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Molekylærbiologi (bachelor)",
+   "studieprogramkoder": [
+    "BAMN-MOL"
+   ],
+   "studieprogramnavn": "Bachelorprogram i molekylærbiologi",
    "nivaakode": "B3",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 787
   },
   {
    "entryId": "nmbu_husdyr",
    "institusjonskode": "1173",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Husdyrvitenskap (bachelor)",
+   "studieprogramkoder": [
+    "B-HV"
+   ],
+   "studieprogramnavn": "Husdyrvitenskap",
    "nivaakode": "B3",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 370
   },
   {
    "entryId": "nord_husdyr",
    "institusjonskode": "1174",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Husdyrvitenskap (bachelor)",
+   "studieprogramkoder": [
+    "321"
+   ],
+   "studieprogramnavn": "Bachelor i husdyrvitenskap",
    "nivaakode": "B3",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 328,
+   "merknad": "DBH-navnet var «Bachelor i husdyrfag - velferd og produksjon» 2020-2024 og er «Bachelor i husdyrvitenskap» fra 2025; samme kode 321 hele perioden."
   },
   {
    "entryId": "inn_agronomi_husdyr",
    "institusjonskode": "1177",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Agronomi (bachelor)",
+   "studieprogramkoder": [
+    "BAAGRO"
+   ],
+   "studieprogramnavn": "Bachelor i agronomi",
    "nivaakode": "B3",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 325,
+   "institusjonskoder": [
+    "1177",
+    "0264"
+   ],
+   "merknad": "Samme DBH-program som oppføringen inn_agronomi i plante-gruppa. Institusjonskoden for INN endret seg fra 0264 til 1177 i 2025; se institusjonskoder."
   },
   {
    "entryId": "nord_dyrepleie",
    "institusjonskode": "1174",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Dyrepleie (bachelor)",
+   "studieprogramkoder": [
+    "BADYR"
+   ],
+   "studieprogramnavn": "Bachelor i dyrepleie",
    "nivaakode": "B3",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 755
   },
   {
    "entryId": "nmbu_plante",
    "institusjonskode": "1173",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Plantevitenskap (bachelor)",
+   "studieprogramkoder": [
+    "B-PV"
+   ],
+   "studieprogramnavn": "Plantevitenskap",
    "nivaakode": "B3",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 307
   },
   {
    "entryId": "inn_agronomi",
    "institusjonskode": "1177",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Agronomi (bachelor)",
+   "studieprogramkoder": [
+    "BAAGRO"
+   ],
+   "studieprogramnavn": "Bachelor i agronomi",
    "nivaakode": "B3",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 325,
+   "institusjonskoder": [
+    "1177",
+    "0264"
+   ],
+   "merknad": "Samme DBH-program som oppføringen inn_agronomi_husdyr i husdyr-gruppa. Institusjonskoden for INN endret seg fra 0264 til 1177 i 2025; se institusjonskoder."
   },
   {
    "entryId": "inn_landbruksteknikk",
    "institusjonskode": "1177",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Landbruksteknikk (bachelor)",
+   "studieprogramkoder": [
+    "BALA"
+   ],
+   "studieprogramnavn": "Bachelor i landbruksteknikk",
    "nivaakode": "B3",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 257,
+   "institusjonskoder": [
+    "1177",
+    "0264"
+   ],
+   "merknad": "Institusjonskoden for INN endret seg fra 0264 til 1177 i 2025; se institusjonskoder."
   },
   {
    "entryId": "nmbu_akvakultur",
    "institusjonskode": "1173",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Akvakultur (bachelor)",
+   "studieprogramkoder": [
+    "B-AKVA"
+   ],
+   "studieprogramnavn": "Akvakultur",
    "nivaakode": "B3",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 429,
+   "merknad": "Ingen rader i tabell 308 for 2020; programmet ser ut til å ha fått egen kode/opptak fra og med 2021."
   },
   {
    "entryId": "nord_havbruksdrift",
    "institusjonskode": "1174",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Havbruksdrift og ledelse (bachelor)",
+   "studieprogramkoder": [
+    "BAHBL"
+   ],
+   "studieprogramnavn": "Bachelor i havbruksdrift og ledelse",
    "nivaakode": "B3",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 1267
   },
   {
    "entryId": "ntnu_biomarin",
    "institusjonskode": "1150",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Biomarin innovasjon (bachelor)",
+   "studieprogramkoder": [
+    "298BMI"
+   ],
+   "studieprogramnavn": "Biomarin innovasjon - bachelor",
    "nivaakode": "B3",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 815
   },
   {
    "entryId": "ntnu_ing_havbruk",
    "institusjonskode": "1150",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Ingeniør, havbruk (bachelor)",
+   "studieprogramkoder": [
+    "BIHAV"
+   ],
+   "studieprogramnavn": "Havbruk - bachelor i ingeniørfag",
    "nivaakode": "B3",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 847
   },
   {
    "entryId": "uit_fiskeri_havbruk",
    "institusjonskode": "1130",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Fiskeri- og havbruksvitenskap (master 5 år)",
-   "nivaakode": "M5",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "studieprogramkoder": [
+    "B-FISK",
+    "M-FISK"
+   ],
+   "studieprogramnavn": "Fiskeri- og havbruksvitenskap (bachelor + master)",
+   "nivaakode": "B3/M2",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 1043,
+   "merknad": "DBH har ingen egen kode for det 5-årige løpet (SO-kode 186331). UiT registrerer studentene under en 3-årig bachelorkode (B-FISK) og deretter en 2-årig masterkode (M-FISK); kandidaterSiste er summen av begge for 2025 (773+270). M-FISK er samme kode som brukes for det rene lokalopptatte 2-årige løpet, se uit_fiskeri_havbruk2 i akvakultur2-gruppa - DBH skiller ikke opptaksvei."
   },
   {
    "entryId": "uib_havbruk",
    "institusjonskode": "1120",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Havbruk, sivilingeniør (master 5 år)",
+   "studieprogramkoder": [
+    "MAMN-HAVSJ"
+   ],
+   "studieprogramnavn": "Integrert masterprogram i havbruk (sivilingeniør)",
    "nivaakode": "M5",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 498,
+   "merknad": "DBH-navnet har variert mellom «...havbruk» og «...havbruk og sjømat»; samme kode hele perioden."
   },
   {
    "entryId": "uib_fiskehelse",
    "institusjonskode": "1120",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Fiskehelse – akvamedisin (master 5 år)",
+   "studieprogramkoder": [
+    "MAMN-FISK"
+   ],
+   "studieprogramnavn": "Profesjonsstudium i fiskehelse - akvamedisin",
    "nivaakode": "M5",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 541
   },
   {
    "entryId": "nmbu_biologi2",
    "institusjonskode": "1173",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Biologi (master 2 år)",
+   "studieprogramkoder": [
+    "M-BIOL"
+   ],
+   "studieprogramnavn": "Biologi",
    "nivaakode": "M2",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 159
   },
   {
    "entryId": "uio_biovitenskap2",
    "institusjonskode": "1110",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Biovitenskap (master 2 år)",
+   "studieprogramkoder": [
+    "MNM2-BIOS"
+   ],
+   "studieprogramnavn": "Biovitenskap",
    "nivaakode": "M2",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 770
   },
   {
    "entryId": "uib_biologi2",
    "institusjonskode": "1120",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Biologi (master 2 år)",
+   "studieprogramkoder": [
+    "MAMN-BIO"
+   ],
+   "studieprogramnavn": "Masterprogram i biologi",
    "nivaakode": "M2",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 510
   },
   {
    "entryId": "ntnu_biologi2",
    "institusjonskode": "1150",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Biologi (master 2 år)",
+   "studieprogramkoder": [
+    "MSBIO"
+   ],
+   "studieprogramnavn": "Biology - Master's Programme",
    "nivaakode": "M2",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 291
   },
   {
    "entryId": "uit_biologi2",
    "institusjonskode": "1130",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Biologi (master 2 år)",
+   "studieprogramkoder": [
+    "M-BIO"
+   ],
+   "studieprogramnavn": "Biology - master",
    "nivaakode": "M2",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 518
   },
   {
    "entryId": "nord_biovitenskap2",
    "institusjonskode": "1174",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Biovitenskap (master 2 år)",
+   "studieprogramkoder": [
+    "MABIO"
+   ],
+   "studieprogramnavn": "Master i biovitenskap",
    "nivaakode": "M2",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 314,
+   "merknad": "Nord fører alle studieretninger (akvakultur, genomikk og marin økologi i Bodø, husdyrvitenskap og terrestrisk økologi i Steinkjer) under samme DBH-kode MABIO. Tallene kan derfor ikke splittes per studieretning og er identiske med oppføringene nord_husdyr2 og nord_akvakultur2."
   },
   {
    "entryId": "nmbu_husdyr2",
    "institusjonskode": "1173",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Husdyrvitenskap (master 2 år)",
+   "studieprogramkoder": [
+    "M-HV"
+   ],
+   "studieprogramnavn": "Husdyrvitenskap",
    "nivaakode": "M2",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 177
   },
   {
    "entryId": "nord_husdyr2",
    "institusjonskode": "1174",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Biovitenskap, studieretning husdyrvitenskap (master 2 år)",
+   "studieprogramkoder": [
+    "MABIO"
+   ],
+   "studieprogramnavn": "Master i biovitenskap",
    "nivaakode": "M2",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 314,
+   "merknad": "Samme DBH-kode (MABIO) som nord_biovitenskap2 og nord_akvakultur2 - Nord skiller ikke studieretning husdyrvitenskap fra de andre retningene i biovitenskapsmasteren i DBH."
   },
   {
    "entryId": "nmbu_emabg",
    "institusjonskode": "1173",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "European Master in Animal Biodiversity and Genomics (master 2 år)",
+   "studieprogramkoder": [
+    "EM-ABG"
+   ],
+   "studieprogramnavn": "European Master in Animal Biodiversity and Genomics",
    "nivaakode": "M2",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 41,
+   "merknad": "Programmet er registrert under samme kode EM-ABG hele perioden, men DBH-navnet har endret seg: «Animal Breeding and Genetics» (2020-2022), «European Master in Animal Breeding and Genetics» (2023-2024), «European Master in Animal Biodiversity and Genomics» (2025)."
   },
   {
    "entryId": "nmbu_plante2",
    "institusjonskode": "1173",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Plantevitenskap (master 2 år)",
+   "studieprogramkoder": [
+    "M-PV"
+   ],
+   "studieprogramnavn": "Plantevitenskap",
    "nivaakode": "M2",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 176
   },
   {
    "entryId": "inn_baerekraftig_jordbruk",
    "institusjonskode": "1177",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Bærekraftig jordbruk (master 2 år)",
+   "studieprogramkoder": [
+    "MABJO"
+   ],
+   "studieprogramnavn": "Master i bærekraftig jordbruk",
    "nivaakode": "M2",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 64,
+   "institusjonskoder": [
+    "1177",
+    "0264"
+   ],
+   "merknad": "Ingen rader for 2020-2021; programmet startet opptak i 2022. Institusjonskoden for INN endret seg fra 0264 til 1177 i 2025; se institusjonskoder."
   },
   {
    "entryId": "nmbu_agroekologi2",
    "institusjonskode": "1173",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Agroøkologi / Agroecology (master 2 år)",
+   "studieprogramkoder": [
+    "M-AE"
+   ],
+   "studieprogramnavn": "Agroecology",
    "nivaakode": "M2",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 78
   },
   {
    "entryId": "nmbu_akvakultur2",
    "institusjonskode": "1173",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Aquaculture (master 2 år)",
+   "studieprogramkoder": [
+    "M-AA"
+   ],
+   "studieprogramnavn": "Aquaculture",
    "nivaakode": "M2",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 181
   },
   {
    "entryId": "uit_fiskeri_havbruk2",
    "institusjonskode": "1130",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Fiskeri- og havbruksvitenskap (master 2 år)",
+   "studieprogramkoder": [
+    "M-FISK"
+   ],
+   "studieprogramnavn": "Fiskeri- og havbruksvitenskap - master",
    "nivaakode": "M2",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 270,
+   "merknad": "Samme DBH-kode (M-FISK) som brukes for masterdelen av det 5-årige løpet uit_fiskeri_havbruk i akvakultur-gruppa. DBH skiller ikke mellom studenter som kom rett fra B-FISK og studenter som kom inn direkte på det 2-årige lokale opptaket (søknadskode 6006)."
   },
   {
    "entryId": "nord_akvakultur2",
    "institusjonskode": "1174",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Biovitenskap, studieretning akvakultur (master 2 år)",
+   "studieprogramkoder": [
+    "MABIO"
+   ],
+   "studieprogramnavn": "Master i biovitenskap",
    "nivaakode": "M2",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 314,
+   "merknad": "Samme DBH-kode (MABIO) som nord_biovitenskap2 og nord_husdyr2 - Nord skiller ikke studieretning akvakultur fra de andre retningene i biovitenskapsmasteren i DBH."
   },
   {
    "entryId": "uit_akvamedisin2",
    "institusjonskode": "1130",
-   "studieprogramkoder": null,
-   "studieprogramnavn": "Akvamedisin (master)",
-   "nivaakode": "M2",
-   "aarMedKarakterer": null,
-   "kandidaterSiste": null
+   "studieprogramkoder": [
+    "IMA-FISKEH"
+   ],
+   "studieprogramnavn": "Akvamedisin - master",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 433,
+   "merknad": "DBH klassifiserer dette som et 5-årig integrert løp (nivåkode M5), selv om oppføringen står i master2-gruppa i programkart.json."
   }
  ]
 }

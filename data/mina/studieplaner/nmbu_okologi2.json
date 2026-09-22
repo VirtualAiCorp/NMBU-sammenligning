@@ -1,0 +1,80 @@
+{
+  "entryId": "nmbu_okologi2",
+  "programnavn": "Økologi (master 2 år)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/master-2-aar/okologi",
+    "https://static02.nmbu.no/mina/studier/M-ECOL.php?sprx=n&aarx=2026"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 90,
+  "obligatoriske": [
+    {
+      "emnekode": "NATF300",
+      "emnenavn": "Bevaringsbiologi",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ECOL310",
+      "emnenavn": "Økologiske effekter av globale miljøendringer",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ECOL302",
+      "emnenavn": "Økologisk forskning",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Ligger i Augustblokk."
+    },
+    {
+      "emnekode": "MINA310",
+      "emnenavn": "Naturvitenskapelig metode",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ECOL350",
+      "emnenavn": "Restaureringsøkologi",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MINA321",
+      "emnenavn": "Tverrfaglig samarbeid og kontroverser om bærekraft - engelsk versjon",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Ligger i Januarblokk. MINA320 (norsk versjon av samme emne) kan tas i høstsemesteret av studenter som behersker norsk."
+    },
+    {
+      "emnekode": "M60-ECOL",
+      "emnenavn": "Masteroppgave",
+      "studiepoeng": 60,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Går over hele 2. studieår (30 sp høst + 30 sp vår), altså begge semestre i år 2."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er MINA-fakultetets studieplan-verktøy for kullet med studiestart høsten 2026. Utover de sju emnene over (90 sp obligatorisk kjerne, inkl. masteroppgaven på 60 sp) stiller programmet krav om at minst ett 300-nivå spesialiseringsemne innen økologi må inngå for å oppnå mastergraden i økologi - dette er et obligatorisk valg mellom alternativer (bl.a. BIO328 Miljø-DNA, BOT300 Planteøkologi, ECOL330 Tropisk regnskogsøkologi, ECOL380 Elve- og innsjøøkologi, FMI310 Miljøgifter og økotoksikologi, LAA370 Landskapsøkologi, NATF320 Tropisk økologi og naturforvaltning, NATF350 Menneske-vilt-interaksjoner, SKOG304 Skogøkologi, ZOOL300 Insektøkologi m.fl., 5-15 sp hver) og er derfor ikke ført opp som enkeltemne. De resterende ca. 30 sp av graden fylles med dette spesialiseringsemnet pluss frie valgemner. dbhEmnekoder er ikke fylt ut siden DBH-rapportering for dette programmet ikke er slått opp i dette arbeidet."
+}
