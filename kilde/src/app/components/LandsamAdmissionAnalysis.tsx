@@ -332,20 +332,30 @@ function DataTable({
 
 // ─── Nøkkeltall for NMBU-programmet/-programmene i gruppen ─────────────────────
 
-function NmbuKeyFigures({ group, year }: { group: LandsamGroup; year: string }) {
-  const prevYear = (() => {
-    const i = YEARS.indexOf(year);
-    return i > 0 ? YEARS[i - 1] : null;
-  })();
-
+function NmbuKeyFigures({ group, year: requestedYear }: { group: LandsamGroup; year: string }) {
   const nmbuEntries = group.entries.filter((e) => group.nmbuIds.includes(e.id));
   if (nmbuEntries.length === 0) return null;
 
   const fmt = (d: number, dec = 0) => (d >= 0 ? '+' : '') + (dec ? d.toFixed(dec) : Math.round(d));
 
+  // Bruk ønsket år hvis programmet har søkertall der, ellers siste tidligere år med tall
+  // (lokale masteropptak i DBH ligger typisk ett år bak Samordna opptak).
+  const effectiveYear = (e: FullAdmissionEntry): string => {
+    const has = (y: string) => e.years[y]?.alleS != null || e.years[y]?.pg_ord != null;
+    if (has(requestedYear)) return requestedYear;
+    const i = YEARS.indexOf(requestedYear);
+    for (let k = i - 1; k >= 0; k--) if (has(YEARS[k])) return YEARS[k];
+    return requestedYear;
+  };
+
   return (
     <>
       {nmbuEntries.map((e) => {
+        const year = effectiveYear(e);
+        const prevYear = (() => {
+          const i = YEARS.indexOf(year);
+          return i > 0 ? YEARS[i - 1] : null;
+        })();
         const cur = e.years[year] ?? null;
         const prev = prevYear ? (e.years[prevYear] ?? null) : null;
         const sp = cur?.fvS != null && cur?.plasser ? cur.fvS / cur.plasser : null;
@@ -387,7 +397,8 @@ function NmbuKeyFigures({ group, year }: { group: LandsamGroup; year: string }) 
             <div className="flex items-center gap-2 mb-3">
               <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#6EE7B7' }} />
               <span style={{ fontSize: 11, fontWeight: 700, opacity: 0.75, letterSpacing: '0.07em', textTransform: 'uppercase' }}>
-                {e.shortName} ({e.studiekode}) · Nøkkeltall {year}
+                {e.shortName}{e.studiekode ? ` (${e.studiekode})` : ''} · Nøkkeltall {year}
+                {year !== requestedYear ? ` · siste år med tall` : ''}
               </span>
             </div>
             <div className="flex gap-8 flex-wrap">
@@ -425,6 +436,7 @@ export function LandsamAdmissionAnalysis({ initialGroup }: { initialGroup?: stri
     () => LANDSAM_GROUPS.find((g) => g.id === groupId) ?? LANDSAM_GROUPS[0],
     [groupId]
   );
+  const isLocal = group.level === 'master2';
 
   const [selectedByGroup, setSelectedByGroup] = useState<Record<string, string[]>>(
     () => Object.fromEntries(LANDSAM_GROUPS.map((g) => [g.id, g.defaultIds]))
@@ -478,7 +490,7 @@ export function LandsamAdmissionAnalysis({ initialGroup }: { initialGroup?: stri
         <div className="px-6 pt-6 pb-4 flex items-start justify-between gap-4 flex-wrap">
           <div style={{ maxWidth: 620 }}>
             <div style={{ fontSize: 11, fontWeight: 700, opacity: 0.6, letterSpacing: '0.09em', textTransform: 'uppercase', marginBottom: 8 }}>
-              Samordna opptak · {group.label} · {LEVEL_LABEL[group.level]}
+              {isLocal ? 'Lokalt opptak' : 'Samordna opptak'} · {group.label} · {LEVEL_LABEL[group.level]}
             </div>
             <div style={{ fontFamily: "'Lora', serif", fontWeight: 500, fontSize: 22, lineHeight: 1.3 }}>
               Hvor står NMBU i konkurransen om {group.label.toLowerCase()}-søkerne?
@@ -490,10 +502,10 @@ export function LandsamAdmissionAnalysis({ initialGroup }: { initialGroup?: stri
           </div>
           <div className="flex items-center gap-2 shrink-0">
             <CsvExportButton onExport={exportLandsamCsv} label="Last ned CSV" dark />
-            <a href="https://hkdir.no/sokertall-fra-samordna-opptak-til-nedlasting"
+            <a href={isLocal ? 'https://dbh.hkdir.no' : 'https://hkdir.no/sokertall-fra-samordna-opptak-til-nedlasting'}
               target="_blank" rel="noopener noreferrer"
               className="flex items-center gap-1.5 text-xs hover:underline" style={{ color: 'rgba(255,255,255,0.7)' }}>
-              <ExternalLink className="w-3.5 h-3.5" /> Kilde: Samordna opptak / HKDIR
+              <ExternalLink className="w-3.5 h-3.5" /> {isLocal ? 'Kilde: DBH/HKDIR og institusjonenes egne tall' : 'Kilde: Samordna opptak / HKDIR'}
             </a>
           </div>
         </div>
@@ -610,7 +622,9 @@ export function LandsamAdmissionAnalysis({ initialGroup }: { initialGroup?: stri
         style={{ backgroundColor: 'var(--nmbu-beige-light)', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-2)' }}>
         <Info className="w-3.5 h-3.5 shrink-0 mt-0.5" />
         <span>
-          Kilde: Samordna opptak / HKDIR. Søkerpress = førstevalgssøkere / studieplasser.
+          {isLocal
+            ? 'Kilde: DBH/HKDIR (tabell 379) for NMBU, og institusjonenes egne opptaksstatistikker for de andre. Lokale masteropptak er ikke med i Samordna opptak; tellegrunnlaget kan avvike mellom kildene.'
+            : 'Kilde: Samordna opptak / HKDIR.'} Søkerpress = førstevalgssøkere / studieplasser.
           Poenggrense 0 = åpent opptak (alle kvalifiserte kom inn), «–» = tall ikke lagt inn ennå.
         </span>
       </div>
