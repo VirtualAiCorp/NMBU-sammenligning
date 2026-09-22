@@ -1,0 +1,5254 @@
+{
+  "COURSE_MAPPING": {
+    "finansregnskap": {
+      "hio": {
+        "institute": "hio",
+        "codeShort": "sfb10419",
+        "displayCode": "SFB10419",
+        "courseName": "Finansregnskap med analyse 1",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 17,
+          "B": 28,
+          "C": 40,
+          "D": 23,
+          "E": 17,
+          "F": 26
+        },
+        "description": "Grunnleggende finansregnskap og bokføring etter norsk regelverk. Utarbeiding av resultatregnskap og balanse, samt enkel regnskapsanalyse.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen"
+      },
+      "nmbu": {
+        "institute": "nmbu",
+        "codeShort": "bus110",
+        "displayCode": "BUS110",
+        "courseName": "Finansregnskap og regnskapsanalyse",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 14,
+          "B": 28,
+          "C": 61,
+          "D": 60,
+          "E": 35,
+          "F": 46
+        },
+        "description": "Finansregnskap, regnskapsanalyse og bokføring etter norsk regelverk. Vårparallellen.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen (3,5 t)",
+        "courseUrl": "https://www.nmbu.no/emne/BUS110",
+        "learningOutcomes": {
+          "kunnskap": "Studenten har kunnskap om grunnleggende prinsipper og regler i finansregnskap, inkludert bokføringsprinsipper, regnskapsstandarder og lovgivning. Studenten har forståelse for regnskapets rolle som informasjonskilde for økonomiske beslutninger og rapportering til interessenter. Studenten har innsikt i metoder for regnskapsanalyse og hvordan finansielle nøkkeltall brukes til å vurdere en bedrifts økonomiske situasjon.",
+          "ferdigheter": "Studenten kan føre enkle regnskap i tråd med gjeldende regelverk og prinsipper for bokføring og periodisering. Studenten kan gjennomføre en regnskapsanalyse ved hjelp av finansielle nøkkeltall og vurdere en bedrifts lønnsomhet, likviditet og soliditet. Studenten kan tolke og anvende årsregnskap og andre økonomiske rapporter for å fatte informerte økonomiske beslutninger.",
+          "generellKompetanse": "Studenten kan reflektere kritisk over regnskapets betydning for økonomisk styring, etisk rapportering og bærekraftige forretningsbeslutninger. Studenten kan kommunisere regnskapsmessig informasjon og analyser både skriftlig og muntlig på en strukturert og presis måte."
+        },
+        "assessmentDetails": "Skriftlig campusbasert eksamen (3,5 timer), teller 100%. Karakterregel: Bokstavkarakterer (A–F). Hjelpemiddel: B2 Utdelt kalkulator. KI på eksamen: Ikke tillatt."
+      },
+      "uia": {
+        "institute": "uia",
+        "codeShort": "be-111",
+        "displayCode": "BE-111",
+        "courseName": "Innføring i finansregnskap",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 60,
+          "B": 80,
+          "C": 84,
+          "D": 50,
+          "E": 43,
+          "F": 40
+        },
+        "description": "Finansregnskap med vekt på norske regnskapsprinsipper og regnskapslovgivning. Dekker bokføring, årsavslutning og grunnleggende regnskapsanalyse.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.uia.no/studier/emner/2026/host/be-111.html"
+      },
+      "usn": {
+        "institute": "usn",
+        "codeShort": "reg1010",
+        "displayCode": "REG1010",
+        "courseName": "Finansregnskap med analyse",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 0,
+          "B": 12,
+          "C": 11,
+          "D": 23,
+          "E": 43,
+          "F": 56
+        },
+        "description": "Introduksjon til finansregnskap og regnskapsteori. Bokføring etter norsk standard, utarbeidelse av årsregnskap og grunnleggende analyse.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig skoleeksamen",
+        "courseUrl": "https://www.usn.no/studier/studie-og-emneplaner/#/emne/REG1010_1_2026_VÅR"
+      },
+      "nhh": {
+        "institute": "nhh",
+        "codeShort": "bed2",
+        "displayCode": "BED2",
+        "courseName": "Finansregnskap",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 67,
+          "B": 107,
+          "C": 116,
+          "D": 53,
+          "E": 31,
+          "F": 30
+        },
+        "description": "Grundig innføring i finansregnskap etter norsk regnskapsstandard og IFRS. Vektlegger regnskapsteori, verdivurdering og analyse av årsregnskap.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.nhh.no/emner/finansregnskap/"
+      },
+      "bi": {
+        "institute": "bi",
+        "codeShort": "bøk35325",
+        "displayCode": "BØK3532",
+        "courseName": "Finansregnsk. & regnsk.analyse",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 67,
+          "B": 224,
+          "C": 480,
+          "D": 314,
+          "E": 302,
+          "F": 342
+        },
+        "description": "Grunnleggende finansregnskap med vekt på regnskapsprinsipper, analyse og tolkning. Gir kunnskap om norsk regnskapslovgivning og finansiell analyse.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.bi.no/studier-og-kurs/kursbeskrivelser/?subjectCode=BØK&courseNumber=3532"
+      },
+      "kristiania": {
+        "institute": "kristiania",
+        "codeShort": "frg3101",
+        "displayCode": "FRG3101",
+        "courseName": "Finansregnskap",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 6,
+          "B": 11,
+          "C": 19,
+          "D": 26,
+          "E": 27,
+          "F": 32
+        },
+        "description": "Grunnleggende forståelse av finansregnskap og bokføring. Utarbeide og tolke årsregnskap i henhold til norsk regnskapsstandard.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig skoleeksamen",
+        "courseUrl": "https://www.kristiania.no/studieportal/fakultet-for-ledelse-og-okonomi/bachelorniva/oeafa2013/finansregnskap-og-okonomistyring/?year=2028&period=Fall"
+      },
+      "oslomet": {
+        "institute": "oslomet",
+        "codeShort": "øabed1000",
+        "displayCode": "ØABED1000",
+        "courseName": "Grunnleggende årsregnskap med Excel",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 46,
+          "B": 36,
+          "C": 107,
+          "D": 53,
+          "E": 46,
+          "F": 116
+        },
+        "description": "Finansregnskap med fokus på registrering av transaksjoner og utarbeidelse av årsregnskap. Dekker norsk regnskapslov og god regnskapsskikk, med Excel som hjelpemiddel.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://student.oslomet.no/studier/-/studieinfo/emne/ØABED1000/2025/HØST"
+      },
+      "ntnu": {
+        "institute": "ntnu",
+        "codeShort": "bøa1200",
+        "displayCode": "BØA1200",
+        "courseName": "Finansregnskap med analyse",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 94,
+          "B": 80,
+          "C": 60,
+          "D": 40,
+          "E": 43,
+          "F": 28
+        },
+        "description": "Finansregnskap med analyse for studenter ved Handelshøyskolen NTNU. Grunnleggende bokføring, årsoppgjør og regnskapsanalyse etter norsk regnskapsstandard.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.ntnu.no/studier/boat/studiets-oppbygning"
+      },
+      "uit": {
+        "institute": "uit",
+        "codeShort": "bed-1002",
+        "displayCode": "BED-1002",
+        "courseName": "Grunnleggende regnskap og analyse",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 28,
+          "B": 29,
+          "C": 56,
+          "D": 28,
+          "E": 28,
+          "F": 37
+        },
+        "description": "Finansregnskap med fokus på det norske regnskapssystemet. Bokføring, årsoppgjørsprosessen og analyse av regnskapstall.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig skoleeksamen",
+        "courseUrl": "https://uit.no/utdanning/aktivt/emne/BED-1305"
+      },
+      "nla": {
+        "institute": "nla",
+        "codeShort": "hsm124",
+        "displayCode": "HSM124",
+        "courseName": "Finansregnskap og regnskapsanalyse",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 10,
+          "B": 29,
+          "C": 63,
+          "D": 41,
+          "E": 54,
+          "F": 201
+        },
+        "description": "Grunnleggende finansregnskap og regnskapsanalyse etter norsk regelverk.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.nla.no/studier/studieprogram/bachelor-i-okonomi-og-administrasjon/emneplan/HSM124/2026-2027"
+      },
+      "uis": {
+        "institute": "uis",
+        "codeShort": "bøk195",
+        "displayCode": "BØK195",
+        "courseName": "Grunnleggende regnskap og bedriftsøkonomi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 20,
+          "B": 81,
+          "C": 74,
+          "D": 44,
+          "E": 20,
+          "F": 5
+        },
+        "description": "Grunnleggende finansregnskap, bokføring og regnskapsanalyse etter norsk regelverk.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/uis/bøk195"
+      },
+      "inn": {
+        "institute": "inn",
+        "codeShort": "øka1012",
+        "displayCode": "ØKA1012",
+        "courseName": "Grunnleggende regnskap",
+        "verified": false,
+        "fallbackGrades": {
+          "A": 7,
+          "B": 14,
+          "C": 18,
+          "D": 9,
+          "E": 4,
+          "F": 3
+        },
+        "description": "Grunnleggende finansregnskap, bokføring og regnskapsanalyse.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://studiekatalog.edutorium.no/inn/nb/emne/ØKA1012/2026-host"
+      },
+      "onh": {
+        "institute": "onh",
+        "codeShort": "ØKAD1220",
+        "displayCode": "ØKAD1220",
+        "courseName": "Finansregnskap",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 10,
+          "B": 12,
+          "C": 5,
+          "D": 6,
+          "E": 4,
+          "F": 0
+        },
+        "description": "Finansregnskap og bokføring etter norsk regelverk.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/onh/ØKAD1220"
+      },
+      "nord": {
+        "institute": "nord",
+        "codeShort": "fin1001",
+        "displayCode": "FIN1001",
+        "courseName": "Innføring i regnskap",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 22,
+          "B": 23,
+          "C": 34,
+          "D": 23,
+          "E": 30,
+          "F": 73
+        },
+        "description": "Grunnleggende finansregnskap og bokføring etter norsk regelverk.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/nord/fin1001"
+      },
+      "hvl": {
+        "institute": "hvl",
+        "codeShort": "bøa117",
+        "displayCode": "BØA117",
+        "courseName": "Finansregnskap med analyse",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 43,
+          "B": 54,
+          "C": 51,
+          "D": 34,
+          "E": 30,
+          "F": 65
+        },
+        "description": "Finansregnskap og regnskapsanalyse – aggregert for Bergen, Haugesund og Sogndal.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/hvl/bøa117"
+      },
+      "himolde": {
+        "institute": "himolde",
+        "codeShort": "bøk105",
+        "displayCode": "BØK105",
+        "courseName": "Finansregnskap 1",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 19,
+          "B": 33,
+          "C": 43,
+          "D": 55,
+          "E": 50,
+          "F": 33
+        },
+        "description": "Grunnleggende finansregnskap og bokføring.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/himolde/bøk105"
+      },
+      "inn_rena": {
+        "institute": "inn_rena",
+        "codeShort": "3rev100",
+        "displayCode": "3REV100",
+        "courseName": "Grunnleggende regnskap",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 10,
+          "B": 19,
+          "C": 15,
+          "D": 6,
+          "E": 4,
+          "F": 14
+        },
+        "description": "Grunnleggende finansregnskap og bokføring, studiested Rena.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/inn/3rev100"
+      },
+      "ntnu_gjovik": {
+        "institute": "ntnu_gjovik",
+        "codeShort": "smf1197",
+        "displayCode": "SMF1197",
+        "courseName": "Finansregnskap med analyse",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 11,
+          "B": 13,
+          "C": 9,
+          "D": 28,
+          "E": 28,
+          "F": 24
+        },
+        "description": "Finansregnskap med analyse, NTNU Gjøvik. Norsk regnskapsstandard, bokføring og regnskapsanalyse.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/ntnu-gjovik/smf1197"
+      },
+      "ntnu_alesund": {
+        "institute": "ntnu_alesund",
+        "codeShort": "ae101308",
+        "displayCode": "AE101308",
+        "courseName": "Finansregnskap med analyse",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 16,
+          "B": 12,
+          "C": 16,
+          "D": 15,
+          "E": 18,
+          "F": 21
+        },
+        "description": "Finansregnskap med analyse, NTNU Ålesund. Norsk regnskapsstandard, bokføring og regnskapsanalyse.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/ntnu-alesund/ae101308"
+      },
+      "kristiania_nett": {
+        "institute": "kristiania_nett",
+        "codeShort": "6084",
+        "displayCode": "6084",
+        "courseName": "Finansregnskap",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 13,
+          "B": 18,
+          "C": 27,
+          "D": 19,
+          "E": 8,
+          "F": 14
+        },
+        "description": "Grunnleggende finansregnskap. Nettbasert enkeltemne med rullerende opptak (vår og høst).",
+        "credits": "7,5 sp",
+        "examForm": "Digital eksamen",
+        "note": "Nettbasert. Helårsdata (vår+høst slått sammen)."
+      },
+      "inn_nett": {
+        "institute": "inn_nett",
+        "codeShort": "sreg160",
+        "displayCode": "SREG160",
+        "courseName": "Videregående regnskap",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 3,
+          "B": 14,
+          "C": 26,
+          "D": 22,
+          "E": 10,
+          "F": 8
+        },
+        "description": "Finansregnskap i INN digital bachelor. Emnenavnet er «Videregående regnskap».",
+        "credits": "7,5 sp",
+        "examForm": "Digital eksamen",
+        "note": "Nettbasert digital bachelor (BAØKAH)."
+      },
+      "uit_nett": {
+        "institute": "uit_nett",
+        "codeShort": "bed-1505",
+        "displayCode": "BED-1505",
+        "courseName": "Grunnleggende regnskap og analyse",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 124,
+          "B": 83,
+          "C": 76,
+          "D": 32,
+          "E": 39,
+          "F": 40
+        },
+        "description": "Finansregnskap i UiT nettbasert bachelor.",
+        "credits": "10 sp",
+        "examForm": "Digital eksamen",
+        "note": "Nettbasert bachelor."
+      }
+    },
+    "okonomistyring": {
+      "hio": {
+        "institute": "hio",
+        "codeShort": "sfb10613",
+        "displayCode": "SFB10613",
+        "courseName": "Budsjettering og driftsregnskap",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 3,
+          "B": 11,
+          "C": 30,
+          "D": 18,
+          "E": 29,
+          "F": 66
+        },
+        "description": "Driftsregnskap, kalkulasjonsmetoder og budsjettering. Selvkost- og bidragskalkulasjon, resultatplanlegging og budsjettoppfølging.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen"
+      },
+      "nmbu": {
+        "institute": "nmbu",
+        "codeShort": "bus210",
+        "displayCode": "BUS210",
+        "courseName": "Økonomi- og virksomhetsstyring",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 23,
+          "B": 27,
+          "C": 42,
+          "D": 40,
+          "E": 20,
+          "F": 29
+        },
+        "description": "Driftsregnskap, kalkulasjon og budsjettering. Fokus på interne styringsverktøy for lønnsomhetsanalyse og beslutningsstøtte.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.nmbu.no/emne/BUS210"
+      },
+      "uia": {
+        "institute": "uia",
+        "codeShort": "be-110",
+        "displayCode": "BE-110",
+        "courseName": "Innføring i økonomisk styring",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 57,
+          "B": 56,
+          "C": 71,
+          "D": 45,
+          "E": 55,
+          "F": 62
+        },
+        "description": "Intern regnskapsføring, kalkulasjonsmetoder og budsjettering for bedriftsøkonomisk analyse.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.uia.no/studier/emner/2027/var/be-110.html"
+      },
+      "usn": {
+        "institute": "usn",
+        "codeShort": "bøk2000",
+        "displayCode": "BØK2000",
+        "courseName": "Driftsregnskap og budsjettering",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 30,
+          "B": 32,
+          "C": 89,
+          "D": 48,
+          "E": 32,
+          "F": 79
+        },
+        "description": "Driftsregnskap med vekt på kalkulasjonsmetoder, budsjettering og intern styringsinformasjon.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig skoleeksamen",
+        "courseUrl": "https://www.usn.no/studier/studie-og-emneplaner/#/emne/BØK2000_1_2026_VÅR"
+      },
+      "nhh": {
+        "institute": "nhh",
+        "codeShort": "bed5",
+        "displayCode": "BED5",
+        "courseName": "Økonomisk styring",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 130,
+          "B": 150,
+          "C": 100,
+          "D": 21,
+          "E": 18,
+          "F": 6
+        },
+        "description": "Driftsregnskap, prosjektregnskap og budsjettering. Styringsverktøy for lønnsomhetsanalyse og beslutningsstøtte.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.nhh.no/emner/okonomisk-styring/"
+      },
+      "bi": {
+        "institute": "bi",
+        "codeShort": "bøk34301",
+        "displayCode": "BØK3430",
+        "courseName": "Innføring i bed.øk. & finans",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 462,
+          "B": 603,
+          "C": 597,
+          "D": 389,
+          "E": 370,
+          "F": 769
+        },
+        "description": "Intern rapportering med vekt på kalkulasjonsmetoder, budsjettering og avviksanalyse.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.bi.no/studier-og-kurs/kursbeskrivelser/?subjectCode=BØK&courseNumber=3423"
+      },
+      "kristiania": {
+        "institute": "kristiania",
+        "codeShort": "oks1101",
+        "displayCode": "OKS1101",
+        "courseName": "Økonomistyring",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 4,
+          "B": 6,
+          "C": 14,
+          "D": 16,
+          "E": 18,
+          "F": 22
+        },
+        "description": "Intern økonomirapportering, kalkulasjonsmetoder og budsjettering i bedrifter.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig skoleeksamen",
+        "courseUrl": "https://www.kristiania.no/studieportal/fakultet-for-ledelse-og-okonomi/bachelorniva/oeafa2013/finansregnskap-og-okonomistyring/?year=2028&period=Fall"
+      },
+      "oslomet": {
+        "institute": "oslomet",
+        "codeShort": "øabed2100",
+        "displayCode": "ØABED2100",
+        "courseName": "Økonomistyring",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 27,
+          "B": 47,
+          "C": 66,
+          "D": 49,
+          "E": 41,
+          "F": 89
+        },
+        "description": "Driftsregnskap med fokus på selvkost- og bidragskalkulasjon, budsjettering og internprisering.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://student.oslomet.no/studier/-/studieinfo/emne/ØABED2100/2026/HØST"
+      },
+      "ntnu": {
+        "institute": "ntnu",
+        "codeShort": "bøa2100",
+        "displayCode": "BØA2100",
+        "courseName": "Driftsregnskap med budsjettering",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 78,
+          "B": 70,
+          "C": 69,
+          "D": 60,
+          "E": 19,
+          "F": 13
+        },
+        "description": "Driftsregnskap, kalkulasjon og budsjettering. Interne styringsverktøy for beslutningsstøtte og resultatplanlegging.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.ntnu.no/studier/boat/studiets-oppbygning"
+      },
+      "uit": {
+        "institute": "uit",
+        "codeShort": "bed-1502",
+        "displayCode": "BED-1502",
+        "courseName": "Bedriftsøkonomisk analyse",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 49,
+          "B": 73,
+          "C": 80,
+          "D": 53,
+          "E": 39,
+          "F": 34
+        },
+        "description": "Driftsregnskap med fokus på kalkulasjonsmetoder, budsjettering og avviksanalyse.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig skoleeksamen",
+        "courseUrl": "https://uit.no/utdanning/aktivt/emne/BED-2304"
+      },
+      "nla": {
+        "institute": "nla",
+        "codeShort": "hsm122",
+        "displayCode": "HSM122",
+        "courseName": "Innføring i bedriftsøkonomi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 45,
+          "B": 75,
+          "C": 72,
+          "D": 78,
+          "E": 70,
+          "F": 89
+        },
+        "description": "Innføring i bedriftsøkonomi med vekt på kalkulasjon og budsjettering.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.nla.no/studier/studieprogram/bachelor-i-okonomi-og-administrasjon/emneplan/HSM122/2026-2027"
+      },
+      "uis": {
+        "institute": "uis",
+        "codeShort": "bøk301",
+        "displayCode": "BØK301",
+        "courseName": "Driftsregnskap og økonomistyring",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 37,
+          "B": 50,
+          "C": 49,
+          "D": 44,
+          "E": 30,
+          "F": 19
+        },
+        "description": "Driftsregnskap, kalkulasjonsmetoder og budsjettering som styringsverktøy.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/uis/bøk301"
+      },
+      "inn": {
+        "institute": "inn",
+        "codeShort": "øka2002",
+        "displayCode": "ØKA2002",
+        "courseName": "Økonomistyring",
+        "verified": false,
+        "fallbackGrades": {
+          "A": 7,
+          "B": 13,
+          "C": 18,
+          "D": 10,
+          "E": 4,
+          "F": 3
+        },
+        "description": "Driftsregnskap, kalkulasjon og budsjettering som styringsverktøy.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://studiekatalog.edutorium.no/inn/nb/emne/ØKA2002/2027-host"
+      },
+      "onh": {
+        "institute": "onh",
+        "codeShort": "ØKAD2220",
+        "displayCode": "ØKAD2220",
+        "courseName": "Økonomistyring",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 6,
+          "B": 10,
+          "C": 8,
+          "D": 6,
+          "E": 7,
+          "F": 0
+        },
+        "description": "Driftsregnskap, kalkulasjon og budsjettering.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/onh/ØKAD2220"
+      },
+      "nord": {
+        "institute": "nord",
+        "codeShort": "reg1002",
+        "displayCode": "REG1002",
+        "courseName": "Driftsregnskap og budsjettering",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 8,
+          "B": 15,
+          "C": 23,
+          "D": 15,
+          "E": 16,
+          "F": 41
+        },
+        "description": "Driftsregnskap, kalkulasjonsmetoder og budsjettering.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/nord/reg1002"
+      },
+      "hvl": {
+        "institute": "hvl",
+        "codeShort": "bøa205",
+        "displayCode": "BØA205",
+        "courseName": "Økonomistyring",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 64,
+          "B": 43,
+          "C": 67,
+          "D": 24,
+          "E": 36,
+          "F": 41
+        },
+        "description": "Driftsregnskap og budsjettering – aggregert for Bergen, Haugesund og Sogndal.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/hvl/bøa205"
+      },
+      "himolde": {
+        "institute": "himolde",
+        "codeShort": "bøk205",
+        "displayCode": "BØK205",
+        "courseName": "Økonomistyring og regnskap",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 12,
+          "B": 26,
+          "C": 28,
+          "D": 34,
+          "E": 53,
+          "F": 57
+        },
+        "description": "Driftsregnskap, kalkulasjon og budsjettering som styringsverktøy.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/himolde/bøk205"
+      },
+      "inn_rena": {
+        "institute": "inn_rena",
+        "codeShort": "3rev220",
+        "displayCode": "3REV220",
+        "courseName": "Økonomistyring",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 7,
+          "B": 5,
+          "C": 9,
+          "D": 12,
+          "E": 8,
+          "F": 12
+        },
+        "description": "Driftsregnskap og budsjettering, studiested Rena.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/inn/3rev220"
+      },
+      "ntnu_gjovik": {
+        "institute": "ntnu_gjovik",
+        "codeShort": "smf2293",
+        "displayCode": "SMF2293",
+        "courseName": "Driftsregnskap med budsjettering",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 6,
+          "B": 8,
+          "C": 12,
+          "D": 27,
+          "E": 18,
+          "F": 43
+        },
+        "description": "Driftsregnskap, kalkulasjon og budsjettering, NTNU Gjøvik.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/ntnu-gjovik/smf2293"
+      },
+      "ntnu_alesund": {
+        "institute": "ntnu_alesund",
+        "codeShort": "ae101124",
+        "displayCode": "AE101124",
+        "courseName": "Økonomisk styring I",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 7,
+          "B": 37,
+          "C": 40,
+          "D": 36,
+          "E": 3,
+          "F": 35
+        },
+        "description": "Driftsregnskap og budsjettering som styringsverktøy, NTNU Ålesund.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/ntnu-alesund/ae101124"
+      },
+      "kristiania_nett": {
+        "institute": "kristiania_nett",
+        "codeShort": "6002",
+        "displayCode": "6002",
+        "courseName": "Økonomistyring",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 9,
+          "B": 15,
+          "C": 30,
+          "D": 23,
+          "E": 8,
+          "F": 13
+        },
+        "description": "Driftsregnskap, kalkulasjon og budsjettering. Nettbasert.",
+        "credits": "7,5 sp",
+        "examForm": "Digital eksamen",
+        "note": "Nettbasert."
+      },
+      "inn_nett": {
+        "institute": "inn_nett",
+        "codeShort": "srev220",
+        "displayCode": "SREV220",
+        "courseName": "Økonomistyring",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 27,
+          "B": 29,
+          "C": 18,
+          "D": 16,
+          "E": 15,
+          "F": 10
+        },
+        "description": "Økonomistyring i INN digital bachelor.",
+        "credits": "7,5 sp",
+        "examForm": "Digital eksamen",
+        "note": "Nettbasert digital bachelor (BAØKAH)."
+      },
+      "uit_nett": {
+        "institute": "uit_nett",
+        "codeShort": "bed-2504",
+        "displayCode": "BED-2504",
+        "courseName": "Driftsregnskap og budsjettering",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 62,
+          "B": 29,
+          "C": 38,
+          "D": 29,
+          "E": 40,
+          "F": 63
+        },
+        "description": "Økonomistyring i UiT nettbasert bachelor.",
+        "credits": "10 sp",
+        "examForm": "Digital eksamen",
+        "note": "Nettbasert bachelor."
+      }
+    },
+    "investering": {
+      "hio": {
+        "institute": "hio",
+        "codeShort": "sfb11016",
+        "displayCode": "SFB11016",
+        "courseName": "Investering og finansiering",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 9,
+          "B": 23,
+          "C": 21,
+          "D": 13,
+          "E": 20,
+          "F": 17
+        },
+        "description": "Kapitalbudsjettering, investeringsanalyse og finansieringsbeslutninger. Nåverdimetoden, kapitalstruktur og verdsettelse.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen"
+      },
+      "nmbu": {
+        "institute": "nmbu",
+        "codeShort": "bus220",
+        "displayCode": "BUS220",
+        "courseName": "Finansiering og investering",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 53,
+          "B": 45,
+          "C": 37,
+          "D": 18,
+          "E": 13,
+          "F": 35
+        },
+        "description": "Investerings- og finansieringsteori. Nåverdimetoden, CAPM, kapitalstruktur og risikojustert avkastningskrav.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.nmbu.no/emne/BUS220"
+      },
+      "uia": {
+        "institute": "uia",
+        "codeShort": "be-210",
+        "displayCode": "BE-210",
+        "courseName": "Investering og finansiering",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 15,
+          "B": 30,
+          "C": 60,
+          "D": 35,
+          "E": 25,
+          "F": 29
+        },
+        "description": "Finansteori med vekt på kapitalbudsjettering, finansieringsbeslutninger og risikostyring.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.uia.no/studier/emner/2027/var/be-210.html"
+      },
+      "usn": {
+        "institute": "usn",
+        "codeShort": "fin2000",
+        "displayCode": "FIN2000",
+        "courseName": "Finansiering og investering",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 36,
+          "B": 48,
+          "C": 57,
+          "D": 62,
+          "E": 68,
+          "F": 141
+        },
+        "description": "Kapitalbudsjettering og finansieringsbeslutninger med fokus på nåverdimetoden og kapitalstruktur.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig skoleeksamen",
+        "courseUrl": "https://www.usn.no/studier/studie-og-emneplaner/#/emne/FIN2000_1_2026_HØST"
+      },
+      "nhh": {
+        "institute": "nhh",
+        "codeShort": "bed3",
+        "displayCode": "BED3",
+        "courseName": "Investering og finans",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 48,
+          "B": 135,
+          "C": 102,
+          "D": 48,
+          "E": 30,
+          "F": 14
+        },
+        "description": "Finansteori og kapitalbudsjettering. CAPM, effisiente markeder, kapitalstruktur og utbytte.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterer.no/course/NHH/BED3/"
+      },
+      "bi": {
+        "institute": "bi",
+        "codeShort": "bøk34231",
+        "displayCode": "BØK3423",
+        "courseName": "Finans",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 256,
+          "B": 360,
+          "C": 626,
+          "D": 566,
+          "E": 670,
+          "F": 605
+        },
+        "description": "Finansteori med vekt på nåverdimetoden, CAPM og kapitalstruktur.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.bi.no/studier-og-kurs/kursbeskrivelser/?subjectCode=BØK&courseNumber=3632"
+      },
+      "kristiania": {
+        "institute": "kristiania",
+        "codeShort": "ioj3100",
+        "displayCode": "IOJ3100",
+        "courseName": "Investering og finansiering",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 4,
+          "B": 8,
+          "C": 6,
+          "D": 8,
+          "E": 9,
+          "F": 34
+        },
+        "description": "Investerings- og finansieringsbeslutninger. Kapitalbudsjettering, kapitalstruktur og verdsettelse.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig skoleeksamen"
+      },
+      "oslomet": {
+        "institute": "oslomet",
+        "codeShort": "øabed2000",
+        "displayCode": "ØABED2000",
+        "courseName": "Investering og finansiering",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 72,
+          "B": 71,
+          "C": 45,
+          "D": 20,
+          "E": 18,
+          "F": 51
+        },
+        "description": "Kapitalbudsjettering, risiko og avkastning, kapitalstruktur og finansieringsbeslutninger.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://student.oslomet.no/studier/-/studieinfo/emne/ØABED2000/2026/HØST"
+      },
+      "ntnu": {
+        "institute": "ntnu",
+        "codeShort": "bøa2200",
+        "displayCode": "BØA2200",
+        "courseName": "Investering og finansiering",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 48,
+          "B": 51,
+          "C": 67,
+          "D": 49,
+          "E": 49,
+          "F": 49
+        },
+        "description": "Investerings- og finansieringsteori. Nåverdimetoden, kapitalstruktur og CAPM.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.ntnu.no/studier/boat/studiets-oppbygning"
+      },
+      "uit": {
+        "institute": "uit",
+        "codeShort": "bed-2303",
+        "displayCode": "BED-2303",
+        "courseName": "Investering og finansiering",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 47,
+          "B": 61,
+          "C": 28,
+          "D": 8,
+          "E": 3,
+          "F": 0
+        },
+        "description": "Investerings- og finansieringsbeslutninger. Kapitalbudsjettering, risikojustering og kapitalstruktur.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig skoleeksamen",
+        "courseUrl": "https://uit.no/utdanning/aktivt/emne/BED-2303"
+      },
+      "nla": {
+        "institute": "nla",
+        "codeShort": "okad221",
+        "displayCode": "ØKAD221",
+        "courseName": "Investering og finansiering",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 13,
+          "B": 19,
+          "C": 21,
+          "D": 15,
+          "E": 27,
+          "F": 71
+        },
+        "description": "Investerings- og finansieringsteori, kapitalbudsjettering og bedriftsfinansiering.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.nla.no/studier/studieprogram/bachelor-i-okonomi-og-administrasjon/emneplan/ØKAD221/2026-2027"
+      },
+      "uis": {
+        "institute": "uis",
+        "codeShort": "bøk260",
+        "displayCode": "BØK260",
+        "courseName": "Corporate Finance",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 29,
+          "B": 67,
+          "C": 52,
+          "D": 25,
+          "E": 17,
+          "F": 23
+        },
+        "description": "Investerings- og finansieringsteori. Nåverdimetoden, kapitalstruktur og CAPM.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/uis/bøk260"
+      },
+      "inn": {
+        "institute": "inn",
+        "codeShort": "øka1019",
+        "displayCode": "ØKA1019",
+        "courseName": "Investments and Financial Management",
+        "verified": false,
+        "fallbackGrades": {
+          "A": 6,
+          "B": 13,
+          "C": 18,
+          "D": 10,
+          "E": 5,
+          "F": 3
+        },
+        "description": "Investering og finansiering – kapitalbudsjettering og finansieringsbeslutninger.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://studiekatalog.edutorium.no/inn/nb/emne/ØKA1019/2028-var"
+      },
+      "onh": {
+        "institute": "onh",
+        "codeShort": "ØKAD2230",
+        "displayCode": "ØKAD2230",
+        "courseName": "Corporate Finance",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 3,
+          "B": 4,
+          "C": 4,
+          "D": 5,
+          "E": 6,
+          "F": 0
+        },
+        "description": "Investerings- og finansieringsteori, kapitalbudsjettering og finansieringsbeslutninger.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/onh/ØKAD2230"
+      },
+      "nord": {
+        "institute": "nord",
+        "codeShort": "fin1002",
+        "displayCode": "FIN1002",
+        "courseName": "Finansiering og investering",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 8,
+          "B": 21,
+          "C": 18,
+          "D": 20,
+          "E": 18,
+          "F": 32
+        },
+        "description": "Kapitalbudsjettering og finansieringsbeslutninger.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/nord/fin1002"
+      },
+      "hvl": {
+        "institute": "hvl",
+        "codeShort": "bøa204",
+        "displayCode": "BØA204",
+        "courseName": "Investering og finansiering",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 38,
+          "B": 70,
+          "C": 58,
+          "D": 38,
+          "E": 36,
+          "F": 57
+        },
+        "description": "Investerings- og finansieringsteori – aggregert for Bergen, Haugesund og Sogndal.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/hvl/bøa204"
+      },
+      "himolde": {
+        "institute": "himolde",
+        "codeShort": "bøk300",
+        "displayCode": "BØK300",
+        "courseName": "Finansiell- og økonomisk styring",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 9,
+          "B": 8,
+          "C": 6,
+          "D": 7,
+          "E": 10,
+          "F": 29
+        },
+        "description": "Investering og finansiering med vekt på kapitalbudsjettering og bedriftsfinans.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/himolde/bøk300"
+      },
+      "inn_rena": {
+        "institute": "inn_rena",
+        "codeShort": "3bed200",
+        "displayCode": "3BED200",
+        "courseName": "Investering og finansiering",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 0,
+          "B": 4,
+          "C": 14,
+          "D": 10,
+          "E": 18,
+          "F": 28
+        },
+        "description": "Kapitalbudsjettering og finansieringsbeslutninger, studiested Rena.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/inn/3bed200"
+      },
+      "ntnu_gjovik": {
+        "institute": "ntnu_gjovik",
+        "codeShort": "smf2296",
+        "displayCode": "SMF2296",
+        "courseName": "Investering og finansiering",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 9,
+          "B": 5,
+          "C": 3,
+          "D": 8,
+          "E": 10,
+          "F": 41
+        },
+        "description": "Kapitalbudsjettering og finansieringsbeslutninger, NTNU Gjøvik.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/ntnu-gjovik/smf2296"
+      },
+      "ntnu_alesund": {
+        "institute": "ntnu_alesund",
+        "codeShort": "ae201115",
+        "displayCode": "AE201115",
+        "courseName": "Investering og finansiering",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 15,
+          "B": 14,
+          "C": 7,
+          "D": 6,
+          "E": 0,
+          "F": 9
+        },
+        "description": "Kapitalbudsjettering og finansieringsbeslutninger, NTNU Ålesund.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/ntnu-alesund/ae201115"
+      },
+      "kristiania_nett": {
+        "institute": "kristiania_nett",
+        "codeShort": "6004",
+        "displayCode": "6004",
+        "courseName": "Investering og finansiering",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 21,
+          "B": 19,
+          "C": 17,
+          "D": 17,
+          "E": 15,
+          "F": 26
+        },
+        "description": "Investering og finansiering. Nettbasert.",
+        "credits": "7,5 sp",
+        "examForm": "Digital eksamen",
+        "note": "Nettbasert."
+      },
+      "inn_nett": {
+        "institute": "inn_nett",
+        "codeShort": "sbed200",
+        "displayCode": "SBED200",
+        "courseName": "Investering og finansiering",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 15,
+          "B": 16,
+          "C": 31,
+          "D": 17,
+          "E": 7,
+          "F": 11
+        },
+        "description": "Investering og finansiering i INN digital bachelor.",
+        "credits": "7,5 sp",
+        "examForm": "Digital eksamen",
+        "note": "Nettbasert digital bachelor (BAØKAH)."
+      },
+      "uit_nett": {
+        "institute": "uit_nett",
+        "codeShort": "bed-2503",
+        "displayCode": "BED-2503",
+        "courseName": "Investering og finansiering",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 11,
+          "B": 15,
+          "C": 25,
+          "D": 45,
+          "E": 53,
+          "F": 30
+        },
+        "description": "Investering og finansiering i UiT nettbasert bachelor.",
+        "credits": "10 sp",
+        "examForm": "Digital eksamen",
+        "note": "Nettbasert bachelor."
+      }
+    },
+    "markedsforing": {
+      "hio": {
+        "institute": "hio",
+        "codeShort": "sfb10519",
+        "displayCode": "SFB10519",
+        "courseName": "Markedsføring",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 44,
+          "B": 35,
+          "C": 41,
+          "D": 20,
+          "E": 6,
+          "F": 0
+        },
+        "description": "Grunnleggende markedsføring med fokus på markedsplanlegging, segmentering og markedsføringsmiksen.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen"
+      },
+      "nmbu": {
+        "institute": "nmbu",
+        "codeShort": "aos120",
+        "displayCode": "AOS120",
+        "courseName": "Markedsføring",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 8,
+          "B": 39,
+          "C": 55,
+          "D": 36,
+          "E": 9,
+          "F": 0
+        },
+        "description": "Markedsføringsledelse med fokus på markedsanalyse, segmentering, posisjonering og markedsstrategier.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen"
+      },
+      "uia": {
+        "institute": "uia",
+        "codeShort": "mf-102",
+        "displayCode": "MF-102",
+        "courseName": "Markedsføring",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 30,
+          "B": 58,
+          "C": 122,
+          "D": 75,
+          "E": 50,
+          "F": 19
+        },
+        "description": "Innføring i markedsføring med vekt på markedsorientering og markedsstrategier.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.uia.no/english/studies/courses/2027/spring/mf-102.html"
+      },
+      "usn": {
+        "institute": "usn",
+        "codeShort": "mar1000",
+        "displayCode": "MAR1000",
+        "courseName": "Markedsføringsledelse",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 36,
+          "B": 79,
+          "C": 196,
+          "D": 237,
+          "E": 107,
+          "F": 69
+        },
+        "description": "Grunnleggende markedsføring med fokus på markedsplanlegging og gjennomføring.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig skoleeksamen",
+        "courseUrl": "https://www.usn.no/studier/studie-og-emneplaner/#/emne/MAR1000_1_2026_HØST"
+      },
+      "nhh": {
+        "institute": "nhh",
+        "codeShort": "sol2",
+        "displayCode": "SOL2",
+        "courseName": "Markedsføring",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 54,
+          "B": 271,
+          "C": 108,
+          "D": 8,
+          "E": 0,
+          "F": 0
+        },
+        "description": "Strategisk markedsføring med vekt på markedsanalyse, posisjonering og merkevarebygging.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.nhh.no/emner/markedsforing/"
+      },
+      "bi": {
+        "institute": "bi",
+        "codeShort": "mrk35801",
+        "displayCode": "MRK3580",
+        "courseName": "Markedsføringsledelse og strategi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 113,
+          "B": 137,
+          "C": 222,
+          "D": 263,
+          "E": 254,
+          "F": 542
+        },
+        "description": "Introduksjon til markedsføring med fokus på markedsplanlegging og forbrukeratferd.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.bi.no/studier-og-kurs/kursbeskrivelser/?subjectCode=MRK&courseNumber=3580"
+      },
+      "kristiania": {
+        "institute": "kristiania",
+        "codeShort": "mfø1200",
+        "displayCode": "MFØ1200",
+        "courseName": "Markedsføring",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 4,
+          "B": 13,
+          "C": 36,
+          "D": 46,
+          "E": 42,
+          "F": 25
+        },
+        "description": "Grunnleggende markedsføring med fokus på forbrukeratferd og merkevarebygging.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.kristiania.no/studieportal/fakultet-for-ledelse-og-okonomi/bachelorniva/oeafa2014/foretaksstrategi-og-markedsforing/?year=2029&period=Spring"
+      },
+      "oslomet": {
+        "institute": "oslomet",
+        "codeShort": "øaadm1001",
+        "displayCode": "ØAADM1001",
+        "courseName": "Markedsføring",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 11,
+          "B": 105,
+          "C": 207,
+          "D": 37,
+          "E": 4,
+          "F": 3
+        },
+        "description": "Introduksjon til markedsføring for økonomi- og administrasjonsstudenter.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://student.oslomet.no/studier/-/studieinfo/emne/ØAADM1001/2025/HØST"
+      },
+      "ntnu": {
+        "institute": "ntnu",
+        "codeShort": "mrk1001",
+        "displayCode": "MRK1001",
+        "courseName": "Markedsføring",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 14,
+          "B": 66,
+          "C": 154,
+          "D": 82,
+          "E": 34,
+          "F": 13
+        },
+        "description": "Markedsføring med fokus på næringslivsapplikasjoner og analytisk perspektiv.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.ntnu.no/studier/boat/studiets-oppbygning"
+      },
+      "uit": {
+        "institute": "uit",
+        "codeShort": "bed-1303",
+        "displayCode": "BED-1303",
+        "courseName": "Markedsføring",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 15,
+          "B": 40,
+          "C": 56,
+          "D": 61,
+          "E": 21,
+          "F": 11
+        },
+        "description": "Grunnleggende markedsføring med fokus på markedsplanlegging og markedsstrategier.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig skoleeksamen",
+        "courseUrl": "https://uit.no/utdanning/aktivt/emne/BED-1303"
+      },
+      "nla": {
+        "institute": "nla",
+        "codeShort": "hsm222",
+        "displayCode": "HSM222",
+        "courseName": "Innføring i markedsføring, etikk og bærekraft",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 68,
+          "B": 37,
+          "C": 43,
+          "D": 9,
+          "E": 0,
+          "F": 0
+        },
+        "description": "Grunnleggende markedsføring med fokus på etikk og bærekraft.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.nla.no/studier/studieprogram/bachelor-i-okonomi-og-administrasjon/emneplan/HSM222"
+      },
+      "uis": {
+        "institute": "uis",
+        "codeShort": "bøk250",
+        "displayCode": "BØK250",
+        "courseName": "Markedsføring",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 6,
+          "B": 73,
+          "C": 119,
+          "D": 11,
+          "E": 0,
+          "F": 0
+        },
+        "description": "Markedsføring og forbrukeratferd for økonomi- og administrasjonsstudenter.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/uis/bøk250"
+      },
+      "inn": {
+        "institute": "inn",
+        "codeShort": "øka1013",
+        "displayCode": "ØKA1013",
+        "courseName": "Markedsføring",
+        "verified": false,
+        "fallbackGrades": {
+          "A": 8,
+          "B": 15,
+          "C": 17,
+          "D": 9,
+          "E": 4,
+          "F": 2
+        },
+        "description": "Markedsplanlegging, forbrukeratferd og markedsstrategi.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://studiekatalog.edutorium.no/inn/nb/emne/ØKA1013/2026-host"
+      },
+      "onh": {
+        "institute": "onh",
+        "codeShort": "ØKAD1140",
+        "displayCode": "ØKAD1140",
+        "courseName": "Markedsføring",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 45,
+          "B": 55,
+          "C": 48,
+          "D": 26,
+          "E": 15,
+          "F": 0
+        },
+        "description": "Grunnleggende markedsføring og forbrukeratferd.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/onh/ØKAD1140"
+      },
+      "nord": {
+        "institute": "nord",
+        "codeShort": "maf1001",
+        "displayCode": "MAF1001",
+        "courseName": "Markedsføring",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 24,
+          "B": 56,
+          "C": 71,
+          "D": 39,
+          "E": 3,
+          "F": 7
+        },
+        "description": "Markedsplanlegging og markedsstrategier.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/nord/maf1001"
+      },
+      "hvl": {
+        "institute": "hvl",
+        "codeShort": "bøa116",
+        "displayCode": "BØA116",
+        "courseName": "Markedsføring",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 8,
+          "B": 59,
+          "C": 241,
+          "D": 62,
+          "E": 13,
+          "F": 0
+        },
+        "description": "Grunnleggende markedsføring – aggregert for Bergen, Haugesund og Sogndal.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/hvl/bøa116"
+      },
+      "himolde": {
+        "institute": "himolde",
+        "codeShort": "adm120",
+        "displayCode": "ADM120",
+        "courseName": "Marketing",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 34,
+          "B": 16,
+          "C": 26,
+          "D": 16,
+          "E": 10,
+          "F": 27
+        },
+        "description": "Markedsføring og forbrukeratferd.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/himolde/adm120"
+      },
+      "inn_rena": {
+        "institute": "inn_rena",
+        "codeShort": "3mar100",
+        "displayCode": "3MAR100",
+        "courseName": "Markedsføring",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 3,
+          "B": 23,
+          "C": 27,
+          "D": 16,
+          "E": 7,
+          "F": 3
+        },
+        "description": "Markedsplanlegging og forbrukeratferd, studiested Rena.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/inn/3mar100"
+      },
+      "ntnu_gjovik": {
+        "institute": "ntnu_gjovik",
+        "codeShort": "smf1196",
+        "displayCode": "SMF1196",
+        "courseName": "Markedsføring - grunnkurs",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 4,
+          "B": 14,
+          "C": 21,
+          "D": 20,
+          "E": 10,
+          "F": 4
+        },
+        "description": "Grunnleggende markedsføring og forbrukeratferd, NTNU Gjøvik.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/ntnu-gjovik/smf1196"
+      },
+      "ntnu_alesund": {
+        "institute": "ntnu_alesund",
+        "codeShort": "am101108",
+        "displayCode": "AM101108",
+        "courseName": "Markedsføring - grunnkurs",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 7,
+          "B": 13,
+          "C": 48,
+          "D": 39,
+          "E": 18,
+          "F": 0
+        },
+        "description": "Grunnleggende markedsføring og forbrukeratferd, NTNU Ålesund.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/ntnu-alesund/am101108"
+      },
+      "kristiania_nett": {
+        "institute": "kristiania_nett",
+        "codeShort": "6340",
+        "displayCode": "6340",
+        "courseName": "Markedsføring",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 13,
+          "B": 40,
+          "C": 65,
+          "D": 4,
+          "E": 0,
+          "F": 0
+        },
+        "description": "Markedsføring. Nettbasert.",
+        "credits": "7,5 sp",
+        "examForm": "Digital eksamen",
+        "note": "Nettbasert."
+      },
+      "inn_nett": {
+        "institute": "inn_nett",
+        "codeShort": "smar100",
+        "displayCode": "SMAR100",
+        "courseName": "Markedsføring",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 18,
+          "B": 25,
+          "C": 37,
+          "D": 25,
+          "E": 5,
+          "F": 0
+        },
+        "description": "Markedsføring i INN digital bachelor.",
+        "credits": "7,5 sp",
+        "examForm": "Digital eksamen",
+        "note": "Nettbasert digital bachelor (BAØKAH)."
+      },
+      "uit_nett": {
+        "institute": "uit_nett",
+        "codeShort": "bed-1503",
+        "displayCode": "BED-1503",
+        "courseName": "Markedsføring",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 48,
+          "B": 126,
+          "C": 213,
+          "D": 130,
+          "E": 68,
+          "F": 21
+        },
+        "description": "Markedsføring i UiT nettbasert bachelor.",
+        "credits": "10 sp",
+        "examForm": "Digital eksamen",
+        "note": "Nettbasert bachelor."
+      }
+    },
+    "organisasjon": {
+      "hio": {
+        "institute": "hio",
+        "codeShort": "sfb10120",
+        "displayCode": "SFB10120",
+        "courseName": "Organisasjonsteori",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 11,
+          "B": 51,
+          "C": 86,
+          "D": 20,
+          "E": 7,
+          "F": 0
+        },
+        "description": "Organisasjonsteori og ledelse med vekt på organisasjonsformer, motivasjonsteori og ledelsesstiler.",
+        "credits": "10 sp",
+        "examForm": "Hjemmeeksamen"
+      },
+      "nmbu": {
+        "institute": "nmbu",
+        "codeShort": "aos130",
+        "displayCode": "AOS130",
+        "courseName": "Innføring i organisasjonsteori",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 18,
+          "B": 51,
+          "C": 46,
+          "D": 24,
+          "E": 5,
+          "F": 6
+        },
+        "description": "Organisasjonsteori, ledelse og arbeidspsykologi. Organisasjonsstruktur, motivasjon og endringsarbeid.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.nmbu.no/emne/AOS130"
+      },
+      "uia": {
+        "institute": "uia",
+        "codeShort": "org109",
+        "displayCode": "ORG109",
+        "courseName": "Organisasjonsteori",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 16,
+          "B": 82,
+          "C": 158,
+          "D": 74,
+          "E": 16,
+          "F": 7
+        },
+        "description": "Organisasjonsteori og ledelse med vekt på organisasjonsstruktur, motivasjon og endringsledelse.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.uia.no/studier/emner/2026/host/org109.html"
+      },
+      "usn": {
+        "institute": "usn",
+        "codeShort": "orl1000",
+        "displayCode": "ORL1000",
+        "courseName": "Organisering og ledelse",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 19,
+          "B": 75,
+          "C": 210,
+          "D": 207,
+          "E": 125,
+          "F": 103
+        },
+        "description": "Organisasjon og ledelse med fokus på organisasjonsatferd, motivasjonsteori og strategisk ledelse.",
+        "credits": "10 sp",
+        "examForm": "Hjemmeeksamen",
+        "courseUrl": "https://www.usn.no/studier/studie-og-emneplaner/#/emne/ORG1010_1_2027_VÅR"
+      },
+      "nhh": {
+        "institute": "nhh",
+        "codeShort": "sol3",
+        "displayCode": "SOL3",
+        "courseName": "Organisasjonen",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 100,
+          "B": 186,
+          "C": 89,
+          "D": 21,
+          "E": 3,
+          "F": 0
+        },
+        "description": "Strategisk ledelse og organisasjon med vekt på konkurransestrategi, organisasjonsdesign og endringsarbeid.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.nhh.no/emner/organisasjonen/"
+      },
+      "bi": {
+        "institute": "bi",
+        "codeShort": "org34031",
+        "displayCode": "ORG3403",
+        "courseName": "Organisasjonsatferd og ledelse",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 42,
+          "B": 196,
+          "C": 588,
+          "D": 1196,
+          "E": 818,
+          "F": 450
+        },
+        "description": "Organisasjonsatferd med fokus på individ, gruppe og organisasjon.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.bi.no/studier-og-kurs/kursbeskrivelser/?subjectCode=ORG&courseNumber=3403"
+      },
+      "kristiania": {
+        "institute": "kristiania",
+        "codeShort": "ool1101",
+        "displayCode": "OOL1101",
+        "courseName": "Organisasjon og ledelse",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 33,
+          "B": 100,
+          "C": 59,
+          "D": 17,
+          "E": 0,
+          "F": 0
+        },
+        "description": "Grunnleggende organisasjonsteori og ledelse i et moderne perspektiv.",
+        "credits": "10 sp",
+        "examForm": "Mappe og muntlig eksamen",
+        "courseUrl": "https://www.kristiania.no/studieportal/fakultet-for-ledelse-og-okonomi/bachelorniva/ool1101/organisasjon-og-ledelse/?year=2027&period=Spring"
+      },
+      "oslomet": {
+        "institute": "oslomet",
+        "codeShort": "øaadm2100",
+        "displayCode": "ØAADM2100",
+        "courseName": "Organisasjonsforståelse",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 34,
+          "B": 84,
+          "C": 134,
+          "D": 41,
+          "E": 4,
+          "F": 4
+        },
+        "description": "Organisasjonsteori og ledelse med fokus på organisasjonsstrukturer og ledelsesteori.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://student.oslomet.no/studier/-/studieinfo/emne/ØAADM2100/2026/HØST"
+      },
+      "ntnu": {
+        "institute": "ntnu",
+        "codeShort": "org1100",
+        "displayCode": "ORG1100",
+        "courseName": "Organisasjon og ledelse",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 44,
+          "B": 77,
+          "C": 135,
+          "D": 60,
+          "E": 12,
+          "F": 3
+        },
+        "description": "Organisasjon og ledelse for økonomer. Organisasjonsdesign, ledelsesteori og organisasjonsatferd.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.ntnu.no/studier/boat/studiets-oppbygning"
+      },
+      "uit": {
+        "institute": "uit",
+        "codeShort": "bed-2302",
+        "displayCode": "BED-2302",
+        "courseName": "Organisasjonsteori og ledelse",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 13,
+          "B": 29,
+          "C": 40,
+          "D": 34,
+          "E": 32,
+          "F": 32
+        },
+        "description": "Organisasjon og ledelse med fokus på organisasjonsformer, gruppearbeid og lederskap.",
+        "credits": "10 sp",
+        "examForm": "Hjemmeeksamen",
+        "courseUrl": "https://uit.no/utdanning/aktivt/emne/BED-2302"
+      },
+      "nla": {
+        "institute": "nla",
+        "codeShort": "hsm121",
+        "displayCode": "HSM121",
+        "courseName": "Innføring i organisasjon, ledelse og etikk",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 53,
+          "B": 178,
+          "C": 117,
+          "D": 17,
+          "E": 5,
+          "F": 0
+        },
+        "description": "Organisasjonsteori og ledelse med vekt på etikk og verdibasert ledelse.",
+        "credits": "10 sp",
+        "examForm": "Hjemmeeksamen",
+        "courseUrl": "https://www.nla.no/studier/studieprogram/bachelor-i-okonomi-og-administrasjon/emneplan/HSM121/2026-2027"
+      },
+      "uis": {
+        "institute": "uis",
+        "codeShort": "bøk415",
+        "displayCode": "BØK415",
+        "courseName": "Ledelse og organisasjonspsykologi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 27,
+          "B": 87,
+          "C": 71,
+          "D": 43,
+          "E": 10,
+          "F": 5
+        },
+        "description": "Organisasjonsteori og ledelse med fokus på organisasjonsatferd og lederskap.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/uis/bøk415"
+      },
+      "inn": {
+        "institute": "inn",
+        "codeShort": "øka1017",
+        "displayCode": "ØKA1017",
+        "courseName": "Organisasjonsforståelse",
+        "verified": false,
+        "fallbackGrades": {
+          "A": 9,
+          "B": 15,
+          "C": 17,
+          "D": 8,
+          "E": 4,
+          "F": 2
+        },
+        "description": "Organisasjonsteori, ledelsesstiler og organisasjonsutvikling.",
+        "credits": "10 sp",
+        "examForm": "Hjemmeeksamen",
+        "courseUrl": "https://studiekatalog.edutorium.no/inn/nb/emne/ØKA1017/2027-var"
+      },
+      "onh": {
+        "institute": "onh",
+        "codeShort": "ØKAD1130",
+        "displayCode": "ØKAD1130",
+        "courseName": "Organisasjon og ledelse",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 36,
+          "B": 82,
+          "C": 76,
+          "D": 30,
+          "E": 15,
+          "F": 0
+        },
+        "description": "Organisasjonsteori og ledelse.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/onh/ØKAD1130"
+      },
+      "nord": {
+        "institute": "nord",
+        "codeShort": "org1001",
+        "displayCode": "ORG1001",
+        "courseName": "Organisasjon",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 21,
+          "B": 36,
+          "C": 45,
+          "D": 23,
+          "E": 17,
+          "F": 13
+        },
+        "description": "Organisasjonsteori og ledelse.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/nord/org1001"
+      },
+      "hvl": {
+        "institute": "hvl",
+        "codeShort": "bøa112",
+        "displayCode": "BØA112",
+        "courseName": "Organisasjon og ledelse",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 28,
+          "B": 76,
+          "C": 84,
+          "D": 83,
+          "E": 74,
+          "F": 42
+        },
+        "description": "Organisasjonsteori og ledelse – aggregert for Bergen, Haugesund og Sogndal.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/hvl/bøa112"
+      },
+      "himolde": {
+        "institute": "himolde",
+        "codeShort": "adm100",
+        "displayCode": "ADM100",
+        "courseName": "Organisasjonsteori og -psykologi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 15,
+          "B": 30,
+          "C": 55,
+          "D": 47,
+          "E": 43,
+          "F": 34
+        },
+        "description": "Organisasjonsteori og ledelse med psykologisk perspektiv.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/himolde/adm100"
+      },
+      "inn_rena": {
+        "institute": "inn_rena",
+        "codeShort": "3org100",
+        "displayCode": "3ORG100",
+        "courseName": "Organisasjonsforståelse",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 0,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0,
+          "F": 0
+        },
+        "description": "Organisasjonsforståelse, studiested Rena. Vurderes med bestått/ikke bestått (82 bestått, 3 ikke bestått).",
+        "credits": "10 sp",
+        "examForm": "Bestått/ikke bestått",
+        "note": "Bestått/ikke bestått – ekskluderes fra karaktersnittberegning"
+      },
+      "ntnu_gjovik": {
+        "institute": "ntnu_gjovik",
+        "codeShort": "smf1193",
+        "displayCode": "SMF1193",
+        "courseName": "Organisasjon og ledelse",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 35,
+          "B": 32,
+          "C": 32,
+          "D": 20,
+          "E": 7,
+          "F": 3
+        },
+        "description": "Organisasjonsteori og ledelsesstiler, NTNU Gjøvik.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/ntnu-gjovik/smf1193"
+      },
+      "ntnu_alesund": {
+        "institute": "ntnu_alesund",
+        "codeShort": "al101115",
+        "displayCode": "AL101115",
+        "courseName": "Organisasjon og ledelse",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 9,
+          "B": 30,
+          "C": 41,
+          "D": 35,
+          "E": 19,
+          "F": 19
+        },
+        "description": "Organisasjonsteori og ledelsesstiler, NTNU Ålesund.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/ntnu-alesund/al101115"
+      },
+      "kristiania_nett": {
+        "institute": "kristiania_nett",
+        "codeShort": "6336",
+        "displayCode": "6336",
+        "courseName": "Organisasjon og ledelse",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 32,
+          "B": 92,
+          "C": 77,
+          "D": 31,
+          "E": 3,
+          "F": 0
+        },
+        "description": "Organisasjon og ledelse. Nettbasert.",
+        "credits": "7,5 sp",
+        "examForm": "Digital eksamen",
+        "note": "Nettbasert."
+      },
+      "uit_nett": {
+        "institute": "uit_nett",
+        "codeShort": "bed-2502",
+        "displayCode": "BED-2502",
+        "courseName": "Organisasjonsteori og ledelse",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 39,
+          "B": 137,
+          "C": 136,
+          "D": 103,
+          "E": 36,
+          "F": 25
+        },
+        "description": "Organisasjon og ledelse i UiT nettbasert bachelor.",
+        "credits": "10 sp",
+        "examForm": "Digital eksamen",
+        "note": "Nettbasert bachelor."
+      }
+    },
+    "strategi": {
+      "hio": {
+        "institute": "hio",
+        "codeShort": "øka121",
+        "displayCode": "ØKA121",
+        "courseName": "Bærekraft og foretaksstrategi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 3,
+          "B": 27,
+          "C": 37,
+          "D": 37,
+          "E": 27,
+          "F": 17
+        },
+        "description": "Foretaksstrategi med bærekraftsperspektiv. Konkurranseanalyse, strategiformulering og implementering.",
+        "credits": "10 sp",
+        "examForm": "Hjemmeeksamen"
+      },
+      "nmbu": {
+        "institute": "nmbu",
+        "codeShort": "aos237",
+        "displayCode": "AOS237",
+        "courseName": "Foretaksstrategi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 9,
+          "B": 46,
+          "C": 62,
+          "D": 12,
+          "E": 0,
+          "F": 3
+        },
+        "description": "Strategisk analyse og ledelse. Ekstern og intern analyse, strategiformulering og strategisk implementering.",
+        "credits": "10 sp",
+        "examForm": "Hjemmeeksamen",
+        "courseUrl": "https://www.nmbu.no/emne/AOS237"
+      },
+      "uia": {
+        "institute": "uia",
+        "codeShort": "org126",
+        "displayCode": "ORG126",
+        "courseName": "Innovasjon og entreprenørskap",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 65,
+          "B": 149,
+          "C": 113,
+          "D": 41,
+          "E": 0,
+          "F": 4
+        },
+        "description": "Foretaksstrategi med fokus på konkurranseanalyse, ressursbasert teori og strategisk implementering.",
+        "credits": "10 sp",
+        "examForm": "Hjemmeeksamen",
+        "courseUrl": "https://www.uia.no/english/studies/courses/2026/autumn/org126.html"
+      },
+      "usn": {
+        "institute": "usn",
+        "codeShort": "str1000",
+        "displayCode": "STR1000",
+        "courseName": "Strategisk ledelse",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 92,
+          "B": 179,
+          "C": 230,
+          "D": 44,
+          "E": 0,
+          "F": 0
+        },
+        "description": "Strategisk analyse og konkurransestrategi. SWOT, Porters krefter og ressursbasert strategi.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.usn.no/studier/studie-og-emneplaner/#/emne/STR1000_1_2026_HØST"
+      },
+      "nhh": {
+        "institute": "nhh",
+        "codeShort": "sol4",
+        "displayCode": "SOL4",
+        "courseName": "Strategisk ledelse",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 71,
+          "B": 246,
+          "C": 105,
+          "D": 10,
+          "E": 0,
+          "F": 0
+        },
+        "description": "Strategisk tenkning og konkurransefortrinn. Ekstern og intern analyse, strategi i ulike markedsstrukturer.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.nhh.no/emner/strategisk-ledelse/"
+      },
+      "bi": {
+        "institute": "bi",
+        "codeShort": "str36101",
+        "displayCode": "STR3610",
+        "courseName": "Doing Sustainable Business",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 28,
+          "B": 74,
+          "C": 19,
+          "D": 0,
+          "E": 0,
+          "F": 0
+        },
+        "description": "Strategisk analyse med fokus på bærekraft, konkurranseanalyse og strategiske valg.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen"
+      },
+      "kristiania": {
+        "institute": "kristiania",
+        "codeShort": "fst3100",
+        "displayCode": "FST3100",
+        "courseName": "Foretaksstrategi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 7,
+          "B": 14,
+          "C": 18,
+          "D": 7,
+          "E": 0,
+          "F": 0
+        },
+        "description": "Strategiske valg og konkurranseanalyse. Porters modeller, ressursbasert perspektiv og internasjonalisering.",
+        "credits": "10 sp",
+        "examForm": "Hjemmeeksamen",
+        "courseUrl": "https://www.kristiania.no/studieportal/fakultet-for-ledelse-og-okonomi/bachelorniva/oeafa2014/foretaksstrategi-og-markedsforing/?year=2029&period=Spring"
+      },
+      "oslomet": {
+        "institute": "oslomet",
+        "codeShort": "øaadm2000",
+        "displayCode": "ØAADM2000",
+        "courseName": "Foretaksstrategi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 11,
+          "B": 69,
+          "C": 103,
+          "D": 78,
+          "E": 23,
+          "F": 10
+        },
+        "description": "Foretaksstrategi med vekt på strategisk analyse og planlegging i næringslivet.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://student.oslomet.no/studier/-/studieinfo/emne/ØAADM2000/2026/HØST"
+      },
+      "ntnu": {
+        "institute": "ntnu",
+        "codeShort": "org2002",
+        "displayCode": "ORG2002",
+        "courseName": "Foretaksstrategi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 50,
+          "B": 108,
+          "C": 119,
+          "D": 32,
+          "E": 0,
+          "F": 0
+        },
+        "description": "Foretaksstrategi og konkurranseanalyse. Ekstern og intern analyse, strategisk implementering.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.ntnu.no/studier/boat/studiets-oppbygning"
+      },
+      "uit": {
+        "institute": "uit",
+        "codeShort": "bed-2003",
+        "displayCode": "BED-2003",
+        "courseName": "Foretaksstrategi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 7,
+          "B": 60,
+          "C": 109,
+          "D": 17,
+          "E": 8,
+          "F": 0
+        },
+        "description": "Strategisk analyse og konkurransestrategi. SWOT, Porters rammeverk og strategisk implementering.",
+        "credits": "10 sp",
+        "examForm": "Hjemmeeksamen",
+        "courseUrl": "https://uit.no/utdanning/aktivt/emne/BED-2003"
+      },
+      "nla": {
+        "institute": "nla",
+        "codeShort": "hsm221",
+        "displayCode": "HSM221",
+        "courseName": "Strategi, samfunnsansvar og bærekraft",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 29,
+          "B": 82,
+          "C": 106,
+          "D": 25,
+          "E": 8,
+          "F": 0
+        },
+        "description": "Strategisk ledelse med fokus på bærekraft og samfunnsansvar.",
+        "credits": "10 sp",
+        "examForm": "Hjemmeeksamen",
+        "courseUrl": "https://www.nla.no/studier/studieprogram/bachelor-i-okonomi-og-administrasjon/emneplan/HSM221/2026-2027"
+      },
+      "uis": {
+        "institute": "uis",
+        "codeShort": "bøk235",
+        "displayCode": "BØK235",
+        "courseName": "Strategy",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 34,
+          "B": 56,
+          "C": 40,
+          "D": 22,
+          "E": 5,
+          "F": 0
+        },
+        "description": "Foretaksstrategi og konkurransefortrinn. Ekstern og intern analyse, strategi i ulike markedsstrukturer.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/uis/bøk235"
+      },
+      "inn": {
+        "institute": "inn",
+        "codeShort": "øka1021",
+        "displayCode": "ØKA1021",
+        "courseName": "Strategy",
+        "verified": false,
+        "fallbackGrades": {
+          "A": 8,
+          "B": 14,
+          "C": 17,
+          "D": 9,
+          "E": 4,
+          "F": 3
+        },
+        "description": "Strategisk analyse, konkurransefortrinn og strategisk planlegging.",
+        "credits": "10 sp",
+        "examForm": "Hjemmeeksamen",
+        "courseUrl": "https://studiekatalog.edutorium.no/inn/nb/emne/ØKA1021/2027-host"
+      },
+      "onh": {
+        "institute": "onh",
+        "codeShort": "ØKAD2240",
+        "displayCode": "ØKAD2240",
+        "courseName": "Strategi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 15,
+          "B": 28,
+          "C": 40,
+          "D": 11,
+          "E": 0,
+          "F": 0
+        },
+        "description": "Foretaksstrategi og strategisk analyse.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/onh/ØKAD2240"
+      },
+      "nord": {
+        "institute": "nord",
+        "codeShort": "org2001",
+        "displayCode": "ORG2001",
+        "courseName": "Internasjonal foretagsstrategi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 18,
+          "B": 18,
+          "C": 29,
+          "D": 14,
+          "E": 6,
+          "F": 4
+        },
+        "description": "Foretaksstrategi med internasjonalt perspektiv.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/nord/org2001"
+      },
+      "hvl": {
+        "institute": "hvl",
+        "codeShort": "øao016",
+        "displayCode": "ØAO016",
+        "courseName": "Strategi og virksomhetsutvikling",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 20,
+          "B": 81,
+          "C": 37,
+          "D": 0,
+          "E": 0,
+          "F": 0
+        },
+        "description": "Strategisk analyse og virksomhetsutvikling – aggregert for Bergen, Haugesund og Sogndal.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/hvl/øao016"
+      },
+      "himolde": {
+        "institute": "himolde",
+        "codeShort": "adm300",
+        "displayCode": "ADM300",
+        "courseName": "Foretaksstrategi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 34,
+          "B": 44,
+          "C": 28,
+          "D": 7,
+          "E": 0,
+          "F": 7
+        },
+        "description": "Strategisk analyse og konkurransefortrinn.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/himolde/adm300"
+      },
+      "inn_rena": {
+        "institute": "inn_rena",
+        "codeShort": "3led300",
+        "displayCode": "3LED300",
+        "courseName": "Strategi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 35,
+          "B": 26,
+          "C": 20,
+          "D": 5,
+          "E": 6,
+          "F": 3
+        },
+        "description": "Foretaksstrategi og strategisk planlegging, studiested Rena.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/inn/3led300"
+      },
+      "ntnu_gjovik": {
+        "institute": "ntnu_gjovik",
+        "codeShort": "smf2281",
+        "displayCode": "SMF2281",
+        "courseName": "Foretaksstrategi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 11,
+          "B": 9,
+          "C": 29,
+          "D": 16,
+          "E": 0,
+          "F": 0
+        },
+        "description": "Strategisk analyse og konkurransefortrinn, NTNU Gjøvik.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/ntnu-gjovik/smf2281"
+      },
+      "ntnu_alesund": {
+        "institute": "ntnu_alesund",
+        "codeShort": "al201308",
+        "displayCode": "AL201308",
+        "courseName": "Foretaksstrategi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 11,
+          "B": 68,
+          "C": 16,
+          "D": 0,
+          "E": 0,
+          "F": 0
+        },
+        "description": "Strategisk analyse og konkurransefortrinn, NTNU Ålesund.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/ntnu-alesund/al201308"
+      },
+      "kristiania_nett": {
+        "institute": "kristiania_nett",
+        "codeShort": "6347",
+        "displayCode": "6347",
+        "courseName": "Innføring i strategi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 14,
+          "B": 46,
+          "C": 39,
+          "D": 9,
+          "E": 0,
+          "F": 0
+        },
+        "description": "Foretaksstrategi. Nettbasert.",
+        "credits": "7,5 sp",
+        "examForm": "Digital eksamen",
+        "note": "Nettbasert."
+      },
+      "inn_nett": {
+        "institute": "inn_nett",
+        "codeShort": "sled300",
+        "displayCode": "SLED300",
+        "courseName": "Strategi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 52,
+          "B": 18,
+          "C": 20,
+          "D": 5,
+          "E": 0,
+          "F": 0
+        },
+        "description": "Foretaksstrategi i INN digital bachelor.",
+        "credits": "7,5 sp",
+        "examForm": "Digital eksamen",
+        "note": "Nettbasert digital bachelor (BAØKAH)."
+      },
+      "uit_nett": {
+        "institute": "uit_nett",
+        "codeShort": "bed-2705",
+        "displayCode": "BED-2705",
+        "courseName": "Foretaksstrategi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 30,
+          "B": 56,
+          "C": 130,
+          "D": 60,
+          "E": 23,
+          "F": 8
+        },
+        "description": "Foretaksstrategi i UiT nettbasert bachelor.",
+        "credits": "10 sp",
+        "examForm": "Digital eksamen",
+        "note": "Nettbasert bachelor."
+      }
+    },
+    "makrookonomi": {
+      "hio": {
+        "institute": "hio",
+        "codeShort": "sfb10916",
+        "displayCode": "SFB10916",
+        "courseName": "Makroøkonomi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 11,
+          "B": 22,
+          "C": 28,
+          "D": 34,
+          "E": 37,
+          "F": 42
+        },
+        "description": "Makroøkonomisk teori og politikk med fokus på nasjonalregnskap, pengepolitikk og finanspolitikk.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen"
+      },
+      "nmbu": {
+        "institute": "nmbu",
+        "codeShort": "ecn120",
+        "displayCode": "ECN120",
+        "courseName": "Makroøkonomi I",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 66,
+          "B": 56,
+          "C": 35,
+          "D": 25,
+          "E": 19,
+          "F": 31
+        },
+        "description": "Makroøkonomisk teori. Nasjonalregnskap, arbeidsledighet, inflasjon, penge- og finanspolitikk.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.nmbu.no/emne/ECN120"
+      },
+      "uia": {
+        "institute": "uia",
+        "codeShort": "se-204",
+        "displayCode": "SE-204",
+        "courseName": "Makroøkonomi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 27,
+          "B": 50,
+          "C": 62,
+          "D": 40,
+          "E": 8,
+          "F": 16
+        },
+        "description": "Makroøkonomisk teori med vekt på produksjon, sysselsetting, inflasjon og pengepolitikk.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.uia.no/studier/emner/2027/var/se-204.html"
+      },
+      "usn": {
+        "institute": "usn",
+        "codeShort": "søk1010",
+        "displayCode": "SØK1010",
+        "courseName": "Makroøkonomi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 40,
+          "B": 48,
+          "C": 65,
+          "D": 46,
+          "E": 57,
+          "F": 83
+        },
+        "description": "Makroøkonomi med fokus på nasjonalregnskapet, konjunktursvingninger og stabiliseringspolitikk.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig skoleeksamen",
+        "courseUrl": "https://www.usn.no/studier/studie-og-emneplaner/#/emne/SØK1010_1_2026_VÅR"
+      },
+      "nhh": {
+        "institute": "nhh",
+        "codeShort": "sam3",
+        "displayCode": "SAM3",
+        "courseName": "Makroøkonomi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 113,
+          "B": 168,
+          "C": 115,
+          "D": 55,
+          "E": 3,
+          "F": 15
+        },
+        "description": "Avansert makroøkonomisk teori med vekt på dynamiske modeller, vekstteori og internasjonal økonomi.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.nhh.no/emner/makrookonomi/"
+      },
+      "bi": {
+        "institute": "bi",
+        "codeShort": "søk34201",
+        "displayCode": "SØK3420",
+        "courseName": "Samfunnsøkonomi I",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 381,
+          "B": 916,
+          "C": 1032,
+          "D": 826,
+          "E": 851,
+          "F": 843
+        },
+        "description": "Makroøkonomi med fokus på moderne makroøkonomisk teori og politikkanalyse.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.bi.no/studier-og-kurs/kursbeskrivelser/?subjectCode=SØK&courseNumber=3420"
+      },
+      "kristiania": {
+        "institute": "kristiania",
+        "codeShort": "mao2100",
+        "displayCode": "MAO2100",
+        "courseName": "Makroøkonomi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 6,
+          "B": 14,
+          "C": 19,
+          "D": 18,
+          "E": 13,
+          "F": 7
+        },
+        "description": "Makroøkonomi med fokus på nasjonale og internasjonale økonomiske systemer.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.kristiania.no/studieportal/fakultet-for-ledelse-og-okonomi/bachelorniva/saoek1001/samfunnsokonomisk-analyse/?year=2027&period=Spring"
+      },
+      "oslomet": {
+        "institute": "oslomet",
+        "codeShort": "øasøk1000",
+        "displayCode": "ØASØK1000",
+        "courseName": "Mikroøkonomi I",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 44,
+          "B": 74,
+          "C": 96,
+          "D": 56,
+          "E": 43,
+          "F": 36
+        },
+        "description": "Makroøkonomi med fokus på nasjonalregnskapet, konjunkturer og norsk pengepolitikk.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://student.oslomet.no/studier/-/studieinfo/emne/ØASØK1000/2025/HØST"
+      },
+      "ntnu": {
+        "institute": "ntnu",
+        "codeShort": "smø2001",
+        "displayCode": "SMØ2001",
+        "courseName": "Makroøkonomi I",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 57,
+          "B": 111,
+          "C": 50,
+          "D": 21,
+          "E": 13,
+          "F": 7
+        },
+        "description": "Makroøkonomisk teori og modeller. Konjunkturer, penge- og finanspolitikk i åpen økonomi.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.ntnu.no/studier/boat/studiets-oppbygning"
+      },
+      "uit": {
+        "institute": "uit",
+        "codeShort": "sok-1002",
+        "displayCode": "SOK-1002",
+        "courseName": "Mikroøkonomi: Økonomisk atferd, markeder og priser",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 13,
+          "B": 15,
+          "C": 38,
+          "D": 27,
+          "E": 28,
+          "F": 23
+        },
+        "description": "Makroøkonomisk teori og politikk. Nasjonalregnskap, inflasjon, sysselsetting og pengepolitikk.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig skoleeksamen",
+        "courseUrl": "https://uit.no/utdanning/emner/emne/880391/sok-1018"
+      },
+      "nla": {
+        "institute": "nla",
+        "codeShort": "okad224",
+        "displayCode": "ØKAD224",
+        "courseName": "Makroøkonomi og bærekraft",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 6,
+          "B": 11,
+          "C": 14,
+          "D": 24,
+          "E": 12,
+          "F": 24
+        },
+        "description": "Makroøkonomisk analyse med vekt på bærekraftig utvikling.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.nla.no/studier/studieprogram/bachelor-i-okonomi-og-administrasjon/emneplan/ØKAD224/2026-2027"
+      },
+      "uis": {
+        "institute": "uis",
+        "codeShort": "bøk255",
+        "displayCode": "BØK255",
+        "courseName": "Makroøkonomi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 66,
+          "B": 55,
+          "C": 39,
+          "D": 18,
+          "E": 9,
+          "F": 19
+        },
+        "description": "Makroøkonomisk teori og politikkanalyse.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/uis/bøk255"
+      },
+      "inn": {
+        "institute": "inn",
+        "codeShort": "øka1022",
+        "displayCode": "ØKA1022",
+        "courseName": "Makroøkonomi",
+        "verified": false,
+        "fallbackGrades": {
+          "A": 6,
+          "B": 13,
+          "C": 18,
+          "D": 10,
+          "E": 5,
+          "F": 3
+        },
+        "description": "Nasjonalregnskap, konjunkturer, pengepolitikk og makroøkonomisk analyse.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://studiekatalog.edutorium.no/inn/nb/emne/ØKA1022/2028-var"
+      },
+      "onh": {
+        "institute": "onh",
+        "codeShort": "ØKAD2210",
+        "displayCode": "ØKAD2210",
+        "courseName": "Makroøkonomi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 4,
+          "B": 9,
+          "C": 7,
+          "D": 0,
+          "E": 4,
+          "F": 0
+        },
+        "description": "Makroøkonomisk teori og politikk.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/onh/ØKAD2210"
+      },
+      "nord": {
+        "institute": "nord",
+        "codeShort": "eco1003",
+        "displayCode": "ECO1003",
+        "courseName": "Samfunnsøkonomi, makro",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 4,
+          "B": 9,
+          "C": 28,
+          "D": 25,
+          "E": 21,
+          "F": 39
+        },
+        "description": "Makroøkonomisk teori og politikk.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/nord/eco1003"
+      },
+      "hvl": {
+        "institute": "hvl",
+        "codeShort": "bøa118",
+        "displayCode": "BØA118",
+        "courseName": "Makroøkonomi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 24,
+          "B": 48,
+          "C": 67,
+          "D": 51,
+          "E": 61,
+          "F": 89
+        },
+        "description": "Makroøkonomisk teori – aggregert for Bergen, Haugesund og Sogndal.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/hvl/bøa118"
+      },
+      "himolde": {
+        "institute": "himolde",
+        "codeShort": "søk100",
+        "displayCode": "SØK100",
+        "courseName": "Makroøkonomi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 11,
+          "B": 10,
+          "C": 14,
+          "D": 14,
+          "E": 7,
+          "F": 9
+        },
+        "description": "Makroøkonomisk teori og politikkanalyse.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/himolde/søk100"
+      },
+      "inn_rena": {
+        "institute": "inn_rena",
+        "codeShort": "3sam100",
+        "displayCode": "3SAM100",
+        "courseName": "Makroøkonomi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 4,
+          "B": 8,
+          "C": 10,
+          "D": 11,
+          "E": 18,
+          "F": 21
+        },
+        "description": "Makroøkonomisk teori og politikk, studiested Rena.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/inn/3sam100"
+      },
+      "ntnu_gjovik": {
+        "institute": "ntnu_gjovik",
+        "codeShort": "smf2295",
+        "displayCode": "SMF2295",
+        "courseName": "Makroøkonomi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 8,
+          "B": 12,
+          "C": 39,
+          "D": 13,
+          "E": 20,
+          "F": 4
+        },
+        "description": "Makroøkonomisk teori og politikk, NTNU Gjøvik.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/ntnu-gjovik/smf2295"
+      },
+      "ntnu_alesund": {
+        "institute": "ntnu_alesund",
+        "codeShort": "ae101408",
+        "displayCode": "AE101408",
+        "courseName": "Makroøkonomi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 3,
+          "B": 12,
+          "C": 23,
+          "D": 10,
+          "E": 25,
+          "F": 9
+        },
+        "description": "Makroøkonomisk teori og politikk, NTNU Ålesund.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/ntnu-alesund/ae101408"
+      },
+      "kristiania_nett": {
+        "institute": "kristiania_nett",
+        "codeShort": "6322",
+        "displayCode": "6322",
+        "courseName": "Makroøkonomi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 16,
+          "B": 24,
+          "C": 11,
+          "D": 18,
+          "E": 11,
+          "F": 6
+        },
+        "description": "Makroøkonomi. Nettbasert.",
+        "credits": "7,5 sp",
+        "examForm": "Digital eksamen",
+        "note": "Nettbasert."
+      },
+      "inn_nett": {
+        "institute": "inn_nett",
+        "codeShort": "ssam100",
+        "displayCode": "SSAM100",
+        "courseName": "Makroøkonomi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 32,
+          "B": 50,
+          "C": 16,
+          "D": 3,
+          "E": 5,
+          "F": 0
+        },
+        "description": "Makroøkonomi i INN digital bachelor.",
+        "credits": "7,5 sp",
+        "examForm": "Digital eksamen",
+        "note": "Nettbasert digital bachelor (BAØKAH)."
+      },
+      "uit_nett": {
+        "institute": "uit_nett",
+        "codeShort": "sok-1504",
+        "displayCode": "SOK-1504",
+        "courseName": "Makroøkonomisk analyse og økonomisk politikk",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 10,
+          "B": 49,
+          "C": 49,
+          "D": 13,
+          "E": 0,
+          "F": 37
+        },
+        "description": "Makroøkonomi i UiT nettbasert bachelor.",
+        "credits": "10 sp",
+        "examForm": "Digital eksamen",
+        "note": "Nettbasert bachelor."
+      }
+    },
+    "mikrookonomi": {
+      "hio": {
+        "institute": "hio",
+        "codeShort": "sfb10916",
+        "displayCode": "SFB10916",
+        "courseName": "Makroøkonomi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 11,
+          "B": 22,
+          "C": 28,
+          "D": 34,
+          "E": 37,
+          "F": 42
+        },
+        "description": "Mikroøkonomi med vekt på konsument- og produsentatferd, markedslikevekt og velferdsøkonomi.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "note": "HiØ tilbyr ett kombinert samfunnsøkonomiemne (SFB10916) som dekker makro- og mikroøkonomisk teori."
+      },
+      "nmbu": {
+        "institute": "nmbu",
+        "codeShort": "ecn210",
+        "displayCode": "ECN210",
+        "courseName": "Mikroøkonomi I",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 4,
+          "B": 14,
+          "C": 37,
+          "D": 29,
+          "E": 27,
+          "F": 17
+        },
+        "description": "Mikroøkonomi. Konsumentteori, produksjonsteori, markedsformer og velferdsøkonomi.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.nmbu.no/emne/ECN210"
+      },
+      "uia": {
+        "institute": "uia",
+        "codeShort": "se-213",
+        "displayCode": "SE-213",
+        "courseName": "Mikroøkonomi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 28,
+          "B": 45,
+          "C": 70,
+          "D": 53,
+          "E": 18,
+          "F": 6
+        },
+        "description": "Mikroøkonomisk teori med vekt på konsument og produsent, markedsformer og velferdsøkonomi.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.uia.no/english/studies/courses/2026/autumn/se-213.html"
+      },
+      "usn": {
+        "institute": "usn",
+        "codeShort": "søk1000",
+        "displayCode": "SØK1000",
+        "courseName": "Mikroøkonomi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 23,
+          "B": 39,
+          "C": 98,
+          "D": 91,
+          "E": 68,
+          "F": 138
+        },
+        "description": "Mikroøkonomi med fokus på markedsteori, prisdannelse og konkurranseformer.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig skoleeksamen",
+        "courseUrl": "https://www.usn.no/studier/studie-og-emneplaner/#/emne/SØK1000_1_2026_HØST"
+      },
+      "nhh": {
+        "institute": "nhh",
+        "codeShort": "sam2",
+        "displayCode": "SAM2",
+        "courseName": "Mikroøkonomi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 285,
+          "B": 71,
+          "C": 36,
+          "D": 18,
+          "E": 4,
+          "F": 8
+        },
+        "description": "Avansert mikroøkonomisk teori med vekt på spillteori, informasjonsøkonomi og kontraktsteori.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.nhh.no/emner/mikrookonomi/"
+      },
+      "bi": {
+        "institute": "bi",
+        "codeShort": "søk35001",
+        "displayCode": "SØK3500",
+        "courseName": "Samfunnsøkonomi II",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 251,
+          "B": 394,
+          "C": 512,
+          "D": 491,
+          "E": 349,
+          "F": 587
+        },
+        "description": "Mikroøkonomi med fokus på markedsstruktur, prissetting og strategisk atferd.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.bi.no/studier-og-kurs/kursbeskrivelser/?subjectCode=SØK&courseNumber=3500"
+      },
+      "kristiania": {
+        "institute": "kristiania",
+        "codeShort": "mio1100",
+        "displayCode": "MIO1100",
+        "courseName": "Mikroøkonomi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 16,
+          "B": 60,
+          "C": 17,
+          "D": 6,
+          "E": 0,
+          "F": 0
+        },
+        "description": "Mikroøkonomi og markedsteori med fokus på konsument- og bedriftsatferd og markedsstrukturer.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.kristiania.no/studieportal/fakultet-for-ledelse-og-okonomi/bachelorniva/saoek1001/samfunnsokonomisk-analyse/?year=2027&period=Spring"
+      },
+      "oslomet": {
+        "institute": "oslomet",
+        "codeShort": "øasøk1100",
+        "displayCode": "ØASØK1100",
+        "courseName": "Makroøkonomi I",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 44,
+          "B": 72,
+          "C": 77,
+          "D": 78,
+          "E": 25,
+          "F": 41
+        },
+        "description": "Mikroøkonomi med fokus på konsumentteori, produksjonsteori og markedslikevekt.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://student.oslomet.no/studier/-/studieinfo/emne/ØASØK1100/2025/HØST"
+      },
+      "ntnu": {
+        "institute": "ntnu",
+        "codeShort": "smø1001",
+        "displayCode": "SMØ1001",
+        "courseName": "Mikroøkonomi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 36,
+          "B": 65,
+          "C": 88,
+          "D": 49,
+          "E": 28,
+          "F": 35
+        },
+        "description": "Mikroøkonomisk teori. Konsumentteori, produsentteori, markedsformer og velferdsøkonomi.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.ntnu.no/studier/boat/studiets-oppbygning"
+      },
+      "uit": {
+        "institute": "uit",
+        "codeShort": "sok-1010",
+        "displayCode": "SOK-1010",
+        "courseName": "Makroøkonomisk analyse og økonomisk politikk",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 10,
+          "B": 27,
+          "C": 63,
+          "D": 18,
+          "E": 17,
+          "F": 5
+        },
+        "description": "Mikroøkonomisk teori. Konsumentteori, produksjonsteori og markedslikevekt.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig skoleeksamen",
+        "courseUrl": "https://uit.no/utdanning/aktivt/emne/SOK-1303"
+      },
+      "nla": {
+        "institute": "nla",
+        "codeShort": "okad223",
+        "displayCode": "ØKAD223",
+        "courseName": "Mikroøkonomi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 8,
+          "B": 4,
+          "C": 9,
+          "D": 14,
+          "E": 18,
+          "F": 32
+        },
+        "description": "Konsument- og produsentatferd, markedsformer og prismekanismen.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.nla.no/studier/studieprogram/bachelor-i-okonomi-og-administrasjon/emneplan/ØKAD223"
+      },
+      "uis": {
+        "institute": "uis",
+        "codeShort": "bøk265",
+        "displayCode": "BØK265",
+        "courseName": "Mikroøkonomi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 17,
+          "B": 49,
+          "C": 77,
+          "D": 49,
+          "E": 37,
+          "F": 17
+        },
+        "description": "Mikroøkonomisk teori og markedsformer.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/uis/bøk265"
+      },
+      "inn": {
+        "institute": "inn",
+        "codeShort": "øka1020",
+        "displayCode": "ØKA1020",
+        "courseName": "Mikroøkonomi 1",
+        "verified": false,
+        "fallbackGrades": {
+          "A": 7,
+          "B": 13,
+          "C": 18,
+          "D": 10,
+          "E": 4,
+          "F": 3
+        },
+        "description": "Konsument- og produsentatferd, markedslikevekt og velferd.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://studiekatalog.edutorium.no/inn/nb/emne/ØKA1020/2027-var"
+      },
+      "onh": {
+        "institute": "onh",
+        "codeShort": "ØKAD1230",
+        "displayCode": "ØKAD1230",
+        "courseName": "Mikroøkonomi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 7,
+          "B": 6,
+          "C": 10,
+          "D": 5,
+          "E": 0,
+          "F": 0
+        },
+        "description": "Mikroøkonomisk teori og markedsformer.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/onh/ØKAD1230"
+      },
+      "nord": {
+        "institute": "nord",
+        "codeShort": "eco1001",
+        "displayCode": "ECO1001",
+        "courseName": "Samfunnsøkonomi, mikro",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 19,
+          "B": 9,
+          "C": 12,
+          "D": 17,
+          "E": 24,
+          "F": 55
+        },
+        "description": "Mikroøkonomisk teori og markedsformer.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/nord/eco1001"
+      },
+      "hvl": {
+        "institute": "hvl",
+        "codeShort": "bøa203",
+        "displayCode": "BØA203",
+        "courseName": "Mikroøkonomi 1",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 30,
+          "B": 82,
+          "C": 67,
+          "D": 40,
+          "E": 30,
+          "F": 35
+        },
+        "description": "Mikroøkonomisk teori – aggregert for Bergen, Haugesund og Sogndal.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/hvl/bøa203"
+      },
+      "himolde": {
+        "institute": "himolde",
+        "codeShort": "søk200",
+        "displayCode": "SØK200",
+        "courseName": "Mikroøkonomi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 19,
+          "B": 16,
+          "C": 26,
+          "D": 17,
+          "E": 33,
+          "F": 39
+        },
+        "description": "Mikroøkonomisk teori og markedsformer.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/himolde/søk200"
+      },
+      "inn_rena": {
+        "institute": "inn_rena",
+        "codeShort": "3sam120",
+        "displayCode": "3SAM120",
+        "courseName": "Mikroøkonomi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 0,
+          "B": 0,
+          "C": 5,
+          "D": 7,
+          "E": 9,
+          "F": 28
+        },
+        "description": "Mikroøkonomisk teori og markedsformer, studiested Rena.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/inn/3sam120"
+      },
+      "ntnu_gjovik": {
+        "institute": "ntnu_gjovik",
+        "codeShort": "smf2291",
+        "displayCode": "SMF2291",
+        "courseName": "Mikroøkonomi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 3,
+          "B": 8,
+          "C": 7,
+          "D": 13,
+          "E": 24,
+          "F": 20
+        },
+        "description": "Konsument- og produsentatferd, markedslikevekt, NTNU Gjøvik.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/ntnu-gjovik/smf2291"
+      },
+      "ntnu_alesund": {
+        "institute": "ntnu_alesund",
+        "codeShort": "ae201615",
+        "displayCode": "AE201615",
+        "courseName": "Mikroøkonomi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 8,
+          "B": 9,
+          "C": 11,
+          "D": 15,
+          "E": 16,
+          "F": 24
+        },
+        "description": "Konsument- og produsentatferd, markedslikevekt, NTNU Ålesund.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/ntnu-alesund/ae201615"
+      },
+      "kristiania_nett": {
+        "institute": "kristiania_nett",
+        "codeShort": "6320",
+        "displayCode": "6320",
+        "courseName": "Mikroøkonomi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 15,
+          "B": 24,
+          "C": 17,
+          "D": 16,
+          "E": 8,
+          "F": 4
+        },
+        "description": "Mikroøkonomi. Nettbasert.",
+        "credits": "7,5 sp",
+        "examForm": "Digital eksamen",
+        "note": "Nettbasert."
+      },
+      "inn_nett": {
+        "institute": "inn_nett",
+        "codeShort": "ssam120",
+        "displayCode": "SSAM120",
+        "courseName": "Mikroøkonomi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 8,
+          "B": 20,
+          "C": 26,
+          "D": 24,
+          "E": 30,
+          "F": 16
+        },
+        "description": "Mikroøkonomi i INN digital bachelor.",
+        "credits": "7,5 sp",
+        "examForm": "Digital eksamen",
+        "note": "Nettbasert digital bachelor (BAØKAH)."
+      },
+      "uit_nett": {
+        "institute": "uit_nett",
+        "codeShort": "sok-1503",
+        "displayCode": "SOK-1503",
+        "courseName": "Mikroøkonomi: Økonomisk atferd, markeder og priser",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 13,
+          "B": 34,
+          "C": 26,
+          "D": 18,
+          "E": 47,
+          "F": 39
+        },
+        "description": "Mikroøkonomi i UiT nettbasert bachelor.",
+        "credits": "10 sp",
+        "examForm": "Digital eksamen",
+        "note": "Nettbasert bachelor."
+      }
+    },
+    "matematikk": {
+      "hio": {
+        "institute": "hio",
+        "codeShort": "øka101",
+        "displayCode": "ØKA101",
+        "courseName": "Matematikk for økonomer",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 17,
+          "B": 31,
+          "C": 36,
+          "D": 35,
+          "E": 5,
+          "F": 41
+        },
+        "description": "Matematikk for økonomi- og administrasjonsstudenter. Kalkulus, lineær algebra og optimeringsteori.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen"
+      },
+      "nmbu": {
+        "institute": "nmbu",
+        "codeShort": "ecn102",
+        "displayCode": "ECN102",
+        "courseName": "Innføring i matematikk for økonomer",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 6,
+          "B": 12,
+          "C": 16,
+          "D": 28,
+          "E": 36,
+          "F": 117
+        },
+        "description": "Matematikk for økonomi- og administrasjonsstudenter. Kalkulus, lineær algebra og grunnleggende optimeringsteori.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.nmbu.no/emne/ECN102"
+      },
+      "uia": {
+        "institute": "uia",
+        "codeShort": "ma-138",
+        "displayCode": "MA-138",
+        "courseName": "Matematikk med anvendelse i økonomi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 46,
+          "B": 53,
+          "C": 85,
+          "D": 23,
+          "E": 24,
+          "F": 25
+        },
+        "description": "Matematikk for økonomi- og administrasjonsstudenter. Funksjoner, derivasjon, integrasjon og lineær algebra.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.uia.no/studier/emner/2027/var/ma-138.html"
+      },
+      "usn": {
+        "institute": "usn",
+        "codeShort": "met1000",
+        "displayCode": "MET1000",
+        "courseName": "Matematikk for økonomer",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 106,
+          "B": 94,
+          "C": 93,
+          "D": 68,
+          "E": 80,
+          "F": 166
+        },
+        "description": "Matematikk for økonomi- og administrasjonsstudenter. Derivasjon, integrasjon og lineær algebra.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig skoleeksamen",
+        "courseUrl": "https://www.usn.no/studier/studie-og-emneplaner/#/emne/MET1000_1_2026_HØST"
+      },
+      "nhh": {
+        "institute": "nhh",
+        "codeShort": "met1",
+        "displayCode": "MET1",
+        "courseName": "Matematikk for økonomer",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 81,
+          "B": 144,
+          "C": 103,
+          "D": 51,
+          "E": 16,
+          "F": 19
+        },
+        "description": "Matematikk for økonomer. Kalkulus, lineær algebra og grunnleggende optimering.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.nhh.no/emner/matematikk-for-okonomer/"
+      },
+      "bi": {
+        "institute": "bi",
+        "codeShort": "met29101",
+        "displayCode": "MET2910",
+        "courseName": "Matematikk for økonomer",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 234,
+          "B": 255,
+          "C": 293,
+          "D": 277,
+          "E": 372,
+          "F": 1187
+        },
+        "description": "Matematikk for økonomi- og administrasjonsstudenter. Funksjonslære, derivasjon og integrasjon.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.bi.no/studier-og-kurs/kursbeskrivelser/?subjectCode=MET&courseNumber=2910"
+      },
+      "kristiania": {
+        "institute": "kristiania",
+        "codeShort": "mat1100",
+        "displayCode": "MAT1100",
+        "courseName": "Matematikk for økonomer",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 8,
+          "B": 14,
+          "C": 23,
+          "D": 18,
+          "E": 19,
+          "F": 65
+        },
+        "description": "Grunnleggende matematikk for økonomi- og administrasjonsstudenter.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig skoleeksamen",
+        "courseUrl": "https://www.kristiania.no/studieportal/fakultet-for-ledelse-og-okonomi/bachelorniva/mat1100/matematikk-for-okonomer/?year=2026&period=Fall"
+      },
+      "oslomet": {
+        "institute": "oslomet",
+        "codeShort": "øamet1000",
+        "displayCode": "ØAMET1000",
+        "courseName": "Matematikk I",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 85,
+          "B": 71,
+          "C": 76,
+          "D": 35,
+          "E": 30,
+          "F": 60
+        },
+        "description": "Matematikk for økonomi- og administrasjonsstudenter. Derivasjon, integrasjon og lineær algebra.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://student.oslomet.no/studier/-/studieinfo/emne/ØAMET1000/2025/HØST"
+      },
+      "ntnu": {
+        "institute": "ntnu",
+        "codeShort": "met1001",
+        "displayCode": "MET1001",
+        "courseName": "Matematikk for økonomer",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 100,
+          "B": 71,
+          "C": 57,
+          "D": 32,
+          "E": 29,
+          "F": 48
+        },
+        "description": "Matematikk for økonomi- og administrasjonsstudenter ved Handelshøyskolen NTNU.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.ntnu.no/studier/boat/studiets-oppbygning"
+      },
+      "uit": {
+        "institute": "uit",
+        "codeShort": "bed-1301",
+        "displayCode": "BED-1301",
+        "courseName": "Matematikk for økonomer",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 21,
+          "B": 45,
+          "C": 48,
+          "D": 25,
+          "E": 18,
+          "F": 63
+        },
+        "description": "Matematikk for bedriftsøkonomer. Funksjonslære, derivasjon, integrasjon og lineær algebra.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig skoleeksamen",
+        "courseUrl": "https://uit.no/utdanning/aktivt/emne/BED-1301"
+      },
+      "nla": {
+        "institute": "nla",
+        "codeShort": "okad222",
+        "displayCode": "ØKAD222",
+        "courseName": "Matematikk for økonomer",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 11,
+          "B": 15,
+          "C": 25,
+          "D": 27,
+          "E": 39,
+          "F": 72
+        },
+        "description": "Matematikk for økonomer – kalkulus, lineær algebra og optimering.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.nla.no/studier/studieprogram/bachelor-i-okonomi-og-administrasjon/emneplan/ØKAD222/2026-2027"
+      },
+      "uis": {
+        "institute": "uis",
+        "codeShort": "bøk108",
+        "displayCode": "BØK108",
+        "courseName": "Matematisk metode for økonomer",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 34,
+          "B": 56,
+          "C": 59,
+          "D": 50,
+          "E": 29,
+          "F": 43
+        },
+        "description": "Matematikk for økonomer. Kalkulus, lineær algebra og optimering.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/uis/bøk108"
+      },
+      "inn": {
+        "institute": "inn",
+        "codeShort": "øka1025",
+        "displayCode": "ØKA1025",
+        "courseName": "Matematikk for økonomer",
+        "verified": false,
+        "fallbackGrades": {
+          "A": 6,
+          "B": 12,
+          "C": 18,
+          "D": 11,
+          "E": 5,
+          "F": 3
+        },
+        "description": "Matematikk med anvendelser i økonomi – kalkulus, lineær algebra og optimering.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://studiekatalog.edutorium.no/inn/nb/emne/ØKA1025/2026-host"
+      },
+      "onh": {
+        "institute": "onh",
+        "codeShort": "ØKAD1120",
+        "displayCode": "ØKAD1120",
+        "courseName": "Matematikk for økonomer",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 87,
+          "B": 23,
+          "C": 9,
+          "D": 11,
+          "E": 10,
+          "F": 0
+        },
+        "description": "Matematikk for økonomi- og administrasjonsstudenter.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/onh/ØKAD1120"
+      },
+      "nord": {
+        "institute": "nord",
+        "codeShort": "mat1001",
+        "displayCode": "MAT1001",
+        "courseName": "Matematikk",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 0,
+          "B": 24,
+          "C": 28,
+          "D": 24,
+          "E": 3,
+          "F": 133
+        },
+        "description": "Matematikk for økonomi- og administrasjonsstudenter.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/nord/mat1001"
+      },
+      "hvl": {
+        "institute": "hvl",
+        "codeShort": "bøa111",
+        "displayCode": "BØA111",
+        "courseName": "Matematikk for økonomer",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 57,
+          "B": 33,
+          "C": 19,
+          "D": 22,
+          "E": 27,
+          "F": 70
+        },
+        "description": "Matematikk for økonomer – aggregert for Bergen, Haugesund og Sogndal.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/hvl/bøa111"
+      },
+      "himolde": {
+        "institute": "himolde",
+        "codeShort": "mat100",
+        "displayCode": "MAT100",
+        "courseName": "Anvendt matematikk",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 38,
+          "B": 46,
+          "C": 83,
+          "D": 31,
+          "E": 28,
+          "F": 40
+        },
+        "description": "Matematikk for økonomi- og administrasjonsstudenter.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/himolde/mat100"
+      },
+      "inn_rena": {
+        "institute": "inn_rena",
+        "codeShort": "3met120",
+        "displayCode": "3MET120",
+        "courseName": "Matematikk for økonomer",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 4,
+          "B": 10,
+          "C": 7,
+          "D": 5,
+          "E": 4,
+          "F": 21
+        },
+        "description": "Matematikk for økonomi- og administrasjonsstudenter, studiested Rena.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/inn/3met120"
+      },
+      "ntnu_gjovik": {
+        "institute": "ntnu_gjovik",
+        "codeShort": "rea1153",
+        "displayCode": "REA1153",
+        "courseName": "Matematikk for økonomer",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 6,
+          "B": 12,
+          "C": 16,
+          "D": 12,
+          "E": 18,
+          "F": 38
+        },
+        "description": "Matematikk for økonomi- og administrasjonsstudenter, NTNU Gjøvik.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/ntnu-gjovik/rea1153"
+      },
+      "ntnu_alesund": {
+        "institute": "ntnu_alesund",
+        "codeShort": "ar100919",
+        "displayCode": "AR100919",
+        "courseName": "Matematikk for økonomer",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 6,
+          "B": 17,
+          "C": 23,
+          "D": 16,
+          "E": 27,
+          "F": 29
+        },
+        "description": "Matematikk for økonomi- og administrasjonsstudenter, NTNU Ålesund.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/ntnu-alesund/ar100919"
+      },
+      "kristiania_nett": {
+        "institute": "kristiania_nett",
+        "codeShort": "6323",
+        "displayCode": "6323",
+        "courseName": "Matematikk for økonomer",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 82,
+          "B": 40,
+          "C": 26,
+          "D": 7,
+          "E": 0,
+          "F": 3
+        },
+        "description": "Matematikk for økonomer. Nettbasert.",
+        "credits": "7,5 sp",
+        "examForm": "Digital eksamen",
+        "note": "Nettbasert."
+      },
+      "inn_nett": {
+        "institute": "inn_nett",
+        "codeShort": "smet120",
+        "displayCode": "SMET120",
+        "courseName": "Matematikk for økonomer",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 55,
+          "B": 64,
+          "C": 44,
+          "D": 16,
+          "E": 4,
+          "F": 9
+        },
+        "description": "Matematikk for økonomer i INN digital bachelor.",
+        "credits": "7,5 sp",
+        "examForm": "Digital eksamen",
+        "note": "Nettbasert digital bachelor (BAØKAH)."
+      },
+      "uit_nett": {
+        "institute": "uit_nett",
+        "codeShort": "bed-1501",
+        "displayCode": "BED-1501",
+        "courseName": "Matematikk for økonomer",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 27,
+          "B": 15,
+          "C": 29,
+          "D": 9,
+          "E": 15,
+          "F": 51
+        },
+        "description": "Matematikk for økonomer i UiT nettbasert bachelor.",
+        "credits": "10 sp",
+        "examForm": "Digital eksamen",
+        "note": "Nettbasert bachelor."
+      }
+    },
+    "statistikk": {
+      "hio": {
+        "institute": "hio",
+        "codeShort": "øka120",
+        "displayCode": "ØKA120",
+        "courseName": "Statistikk og samfunnsvitenskapelig metode",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 4,
+          "B": 21,
+          "C": 27,
+          "D": 28,
+          "E": 17,
+          "F": 67
+        },
+        "description": "Statistikk og metode for økonomi- og administrasjonsstudenter. Deskriptiv statistikk, hypotesetesting og grunnleggende forskningsmetode.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen"
+      },
+      "nmbu": {
+        "institute": "nmbu",
+        "codeShort": "stat100",
+        "displayCode": "STAT100",
+        "courseName": "Statistikk",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 28,
+          "B": 18,
+          "C": 16,
+          "D": 22,
+          "E": 30,
+          "F": 49
+        },
+        "description": "Grunnleggende sannsynlighetsregning og statistikk med fokus på de vanligste metodene for statistisk inferens.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.nmbu.no/emne/STAT100",
+        "learningOutcomes": {
+          "kunnskap": "Studentene skal lære de grunnleggende ideene i sannsynlighetsregning og statistikk. De skal bli kjent med forutsetninger for, og bruk av, de vanligste statistiske metodene som brukes for å gjøre slutninger om generelle populasjoner på grunnlag av tilfeldige utvalg fra populasjonen.",
+          "ferdigheter": "Studentene skal være i stand til å gjennomføre enkle statistiske analyser. De skal kunne tolke resultatene fra analysene og videreformidle hva som er blitt gjort, resultatene samt svakheter og begrensinger med analysene.",
+          "generellKompetanse": "Studentene skal kunne anvende det de har lært på enkle problemstillinger i sitt studium og senere i yrkeslivet og utføre enkle analyser på egne data. Samtidig skal de kunne stille kritiske spørsmål til statistiske resultater."
+        },
+        "assessmentDetails": "Avsluttende 3,5 timers skriftlig eksamen i eksamensperioden, A-F. Slutteksamen teller 100%."
+      },
+      "uia": {
+        "institute": "uia",
+        "codeShort": "me-111",
+        "displayCode": "ME-111",
+        "courseName": "Innføring i dataanalyse",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 27,
+          "B": 52,
+          "C": 61,
+          "D": 40,
+          "E": 21,
+          "F": 19
+        },
+        "description": "Statistikk og metode for økonomi- og administrasjonsstudenter.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.uia.no/studier/emner/2026/host/me-111.html"
+      },
+      "usn": {
+        "institute": "usn",
+        "codeShort": "met1010",
+        "displayCode": "MET1010",
+        "courseName": "Statistikk for økonomer",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 66,
+          "B": 106,
+          "C": 118,
+          "D": 109,
+          "E": 80,
+          "F": 158
+        },
+        "description": "Statistikk med vekt på dataanalyse, hypotesetesting og regresjonsanalyse for økonomer.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig skoleeksamen",
+        "courseUrl": "https://www.usn.no/studier/studie-og-emneplaner/#/emne/MET1010_1_2026_VÅR"
+      },
+      "nhh": {
+        "institute": "nhh",
+        "codeShort": "met2",
+        "displayCode": "MET2",
+        "courseName": "Statistikk for økonomer",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 145,
+          "B": 156,
+          "C": 86,
+          "D": 10,
+          "E": 8,
+          "F": 5
+        },
+        "description": "Statistikk og datavitenskap for økonomer. Statistisk teori, regresjonsanalyse og grunnleggende metoder.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.nhh.no/emner/statistikk-for-okonomer/"
+      },
+      "bi": {
+        "institute": "bi",
+        "codeShort": "met29201",
+        "displayCode": "MET2920",
+        "courseName": "Statistikk for økonomer",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 220,
+          "B": 406,
+          "C": 350,
+          "D": 337,
+          "E": 215,
+          "F": 454
+        },
+        "description": "Statistikk med vekt på næringslivsanvendelser og regresjonsanalyse.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.bi.no/studier-og-kurs/kursbeskrivelser/?subjectCode=MET&courseNumber=2920"
+      },
+      "kristiania": {
+        "institute": "kristiania",
+        "codeShort": "sfo1100",
+        "displayCode": "SFO1100",
+        "courseName": "Statistikk for økonomer",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 0,
+          "B": 4,
+          "C": 11,
+          "D": 9,
+          "E": 20,
+          "F": 74
+        },
+        "description": "Statistikk og kvantitative forskningsmetoder.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig skoleeksamen",
+        "courseUrl": "https://www.kristiania.no/studieportal/fakultet-for-ledelse-og-okonomi/bachelorniva/ntms1000/statistikk-og-metode-for-okonomer/?year=2027&period=Fall"
+      },
+      "oslomet": {
+        "institute": "oslomet",
+        "codeShort": "øamet1100",
+        "displayCode": "ØAMET1100",
+        "courseName": "Statistikk",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 130,
+          "B": 88,
+          "C": 36,
+          "D": 19,
+          "E": 15,
+          "F": 42
+        },
+        "description": "Statistikk og sannsynlighetsteori for økonomi- og administrasjonsstudenter.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://student.oslomet.no/studier/-/studieinfo/emne/ØAMET1100/2025/HØST"
+      },
+      "ntnu": {
+        "institute": "ntnu",
+        "codeShort": "met1002",
+        "displayCode": "MET1002",
+        "courseName": "Statistikk for økonomer",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 23,
+          "B": 29,
+          "C": 8,
+          "D": 0,
+          "E": 5,
+          "F": 0
+        },
+        "description": "Statistikk med anvendelser i økonomi og ledelse. Sannsynlighetsteori, estimering og hypotesetesting.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.ntnu.no/studier/boat/studiets-oppbygning"
+      },
+      "uit": {
+        "institute": "uit",
+        "codeShort": "bed-2065",
+        "displayCode": "BED-2065",
+        "courseName": "Statistikk for økonomer",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 8,
+          "B": 13,
+          "C": 37,
+          "D": 23,
+          "E": 19,
+          "F": 12
+        },
+        "description": "Statistikk og metode for bedriftsøkonomer. Grunnleggende sannsynlighetsteori og regresjonsanalyse.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig skoleeksamen",
+        "courseUrl": "https://uit.no/utdanning/aktivt/emne/BED-2301"
+      },
+      "nla": {
+        "institute": "nla",
+        "codeShort": "hsm126",
+        "displayCode": "HSM126",
+        "courseName": "Innføring i statistikk med forskningsmetode",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 27,
+          "B": 42,
+          "C": 98,
+          "D": 37,
+          "E": 51,
+          "F": 23
+        },
+        "description": "Statistikk og kvantitative metoder for økonomer.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.nla.no/studier/studieprogram/bachelor-i-okonomi-og-administrasjon/emneplan/HSM126"
+      },
+      "uis": {
+        "institute": "uis",
+        "codeShort": "bøk356",
+        "displayCode": "BØK356",
+        "courseName": "Statistics For Business and Economics",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 33,
+          "B": 45,
+          "C": 64,
+          "D": 37,
+          "E": 31,
+          "F": 25
+        },
+        "description": "Statistikk for økonomi- og administrasjonsstudenter.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/uis/bøk356"
+      },
+      "inn": {
+        "institute": "inn",
+        "codeShort": "øka1026",
+        "displayCode": "ØKA1026",
+        "courseName": "Statistikk for økonomer",
+        "verified": false,
+        "fallbackGrades": {
+          "A": 7,
+          "B": 13,
+          "C": 17,
+          "D": 10,
+          "E": 5,
+          "F": 3
+        },
+        "description": "Sannsynlighetsteori, statistisk inferens og hypotesetesting.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://studiekatalog.edutorium.no/inn/nb/emne/ØKA1026/2027-var"
+      },
+      "onh": {
+        "institute": "onh",
+        "codeShort": "ØKAD2110",
+        "displayCode": "ØKAD2110",
+        "courseName": "Metode og statistikk",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 29,
+          "B": 21,
+          "C": 17,
+          "D": 15,
+          "E": 11,
+          "F": 0
+        },
+        "description": "Statistikk og metode for økonomi- og administrasjonsstudenter (kombinert emne).",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/onh/ØKAD2110"
+      },
+      "nord": {
+        "institute": "nord",
+        "codeShort": "stt1001",
+        "displayCode": "STT1001",
+        "courseName": "Statistikk",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 6,
+          "B": 15,
+          "C": 22,
+          "D": 19,
+          "E": 4,
+          "F": 65
+        },
+        "description": "Statistikk for økonomi- og administrasjonsstudenter.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/nord/stt1001"
+      },
+      "hvl": {
+        "institute": "hvl",
+        "codeShort": "bøa115",
+        "displayCode": "BØA115",
+        "courseName": "Statistikk for økonomer",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 39,
+          "B": 66,
+          "C": 59,
+          "D": 38,
+          "E": 33,
+          "F": 53
+        },
+        "description": "Statistikk for økonomer – aggregert for Bergen, Haugesund og Sogndal.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/hvl/bøa115"
+      },
+      "himolde": {
+        "institute": "himolde",
+        "codeShort": "mat110",
+        "displayCode": "MAT110",
+        "courseName": "Anvendt statistikk",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 11,
+          "B": 36,
+          "C": 158,
+          "D": 32,
+          "E": 12,
+          "F": 12
+        },
+        "description": "Statistikk for økonomi- og administrasjonsstudenter.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/himolde/mat110"
+      },
+      "inn_rena": {
+        "institute": "inn_rena",
+        "codeShort": "smet130",
+        "displayCode": "SMET130",
+        "courseName": "Statistikk for økonomer",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 35,
+          "B": 55,
+          "C": 15,
+          "D": 8,
+          "E": 5,
+          "F": 5
+        },
+        "description": "Statistikk for økonomi- og administrasjonsstudenter, studiested Rena.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/inn/smet130"
+      },
+      "ntnu_gjovik": {
+        "institute": "ntnu_gjovik",
+        "codeShort": "rea1154",
+        "displayCode": "REA1154",
+        "courseName": "Statistikk for økonomer",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 12,
+          "B": 11,
+          "C": 17,
+          "D": 19,
+          "E": 30,
+          "F": 34
+        },
+        "description": "Statistikk for økonomi- og administrasjonsstudenter, NTNU Gjøvik.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/ntnu-gjovik/rea1154"
+      },
+      "ntnu_alesund": {
+        "institute": "ntnu_alesund",
+        "codeShort": "ar100219",
+        "displayCode": "AR100219",
+        "courseName": "Statistikk for økonomer",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 11,
+          "B": 11,
+          "C": 13,
+          "D": 15,
+          "E": 16,
+          "F": 47
+        },
+        "description": "Statistikk for økonomi- og administrasjonsstudenter, NTNU Ålesund.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/ntnu-alesund/ar100219"
+      },
+      "kristiania_nett": {
+        "institute": "kristiania_nett",
+        "codeShort": "6356",
+        "displayCode": "6356",
+        "courseName": "Statistikk for økonomer",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 33,
+          "B": 23,
+          "C": 16,
+          "D": 4,
+          "E": 4,
+          "F": 0
+        },
+        "description": "Statistikk for økonomer. Nettbasert.",
+        "credits": "7,5 sp",
+        "examForm": "Digital eksamen",
+        "note": "Nettbasert."
+      },
+      "inn_nett": {
+        "institute": "inn_nett",
+        "codeShort": "smet130",
+        "displayCode": "SMET130",
+        "courseName": "Statistikk for økonomer",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 35,
+          "B": 55,
+          "C": 15,
+          "D": 8,
+          "E": 5,
+          "F": 5
+        },
+        "description": "Statistikk for økonomer i INN digital bachelor.",
+        "credits": "7,5 sp",
+        "examForm": "Digital eksamen",
+        "note": "Nettbasert digital bachelor (BAØKAH)."
+      },
+      "uit_nett": {
+        "institute": "uit_nett",
+        "codeShort": "bed-2501",
+        "displayCode": "BED-2501",
+        "courseName": "Statistikk for økonomer",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 22,
+          "B": 27,
+          "C": 67,
+          "D": 40,
+          "E": 37,
+          "F": 30
+        },
+        "description": "Statistikk for økonomer i UiT nettbasert bachelor.",
+        "credits": "10 sp",
+        "examForm": "Digital eksamen",
+        "note": "Nettbasert bachelor."
+      }
+    },
+    "metode": {
+      "hio": {
+        "institute": "hio",
+        "codeShort": "øka120",
+        "displayCode": "ØKA120",
+        "courseName": "Statistikk og samfunnsvitenskapelig metode",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 4,
+          "B": 21,
+          "C": 27,
+          "D": 28,
+          "E": 17,
+          "F": 67
+        },
+        "description": "Kombinert kurs i statistikk og samfunnsvitenskapelig metode. Kvantitative og kvalitative tilnærminger til forskning.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen"
+      },
+      "nmbu": {
+        "institute": "nmbu",
+        "codeShort": "aos240",
+        "displayCode": "AOS240",
+        "courseName": "Samfunnsvitenskapelig metode",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 21,
+          "B": 119,
+          "C": 75,
+          "D": 10,
+          "E": 0,
+          "F": 0
+        },
+        "description": "Vitenskapsteori og samfunnsvitenskapelig metode. Kvantitative og kvalitative forskningsdesign og datainnsamling.",
+        "credits": "10 sp",
+        "examForm": "Hjemmeeksamen",
+        "courseUrl": "https://www.nmbu.no/emne/AOS240"
+      },
+      "uia": {
+        "institute": "uia",
+        "codeShort": "me-112",
+        "displayCode": "ME-112",
+        "courseName": "Social Scientific Methods",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 20,
+          "B": 69,
+          "C": 110,
+          "D": 91,
+          "E": 60,
+          "F": 3
+        },
+        "description": "Samfunnsvitenskapelig metode og vitenskapsteori for økonomi- og administrasjonsstudenter.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.uia.no/english/studies/courses/2027/spring/me-112.html"
+      },
+      "usn": {
+        "institute": "usn",
+        "codeShort": "met1020",
+        "displayCode": "MET1020",
+        "courseName": "Samfunnsvitenskapelig metode",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 70,
+          "B": 144,
+          "C": 197,
+          "D": 142,
+          "E": 52,
+          "F": 78
+        },
+        "description": "Kvantitative og kvalitative metoder i samfunnsvitenskapelig forskning.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.usn.no/studier/studie-og-emneplaner/#/emne/MET1020_1_2026_VÅR"
+      },
+      "nhh": {
+        "institute": "nhh",
+        "codeShort": "met4",
+        "displayCode": "MET4",
+        "courseName": "Empiriske metoder",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 42,
+          "B": 54,
+          "C": 64,
+          "D": 44,
+          "E": 22,
+          "F": 6
+        },
+        "description": "Samfunnsvitenskapelig metode og vitenskapsteori. Kvantitative og kvalitative forskningsmetoder.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.nhh.no/emner/empiriske-metoder/"
+      },
+      "bi": {
+        "institute": "bi",
+        "codeShort": "met35901",
+        "displayCode": "MET3590",
+        "courseName": "Metode og statist. dataanalyse",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 198,
+          "B": 263,
+          "C": 227,
+          "D": 190,
+          "E": 155,
+          "F": 231
+        },
+        "description": "Metode for økonomi- og administrasjonsstudenter. Kvantitative og kvalitative tilnærminger.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.bi.no/studier-og-kurs/kursbeskrivelser/?subjectCode=MET&courseNumber=3590"
+      },
+      "kristiania": {
+        "institute": "kristiania",
+        "codeShort": "mod3101",
+        "displayCode": "MOD3101",
+        "courseName": "Metode og dataanalyse",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 20,
+          "B": 19,
+          "C": 31,
+          "D": 18,
+          "E": 0,
+          "F": 0
+        },
+        "description": "Samfunnsvitenskapelig metode med fokus på kvalitative tilnærminger og vitenskapsteori.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.kristiania.no/studieportal/fakultet-for-ledelse-og-okonomi/bachelorniva/ntms1000/statistikk-og-metode-for-okonomer/?year=2027&period=Fall"
+      },
+      "oslomet": {
+        "institute": "oslomet",
+        "codeShort": "øamet2100",
+        "displayCode": "ØAMET2100",
+        "courseName": "Samfunnsvitenskapelig metode",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 0,
+          "B": 7,
+          "C": 24,
+          "D": 14,
+          "E": 10,
+          "F": 12
+        },
+        "description": "Samfunnsvitenskapelig metode for økonomi- og administrasjonsstudenter.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://student.oslomet.no/studier/-/studieinfo/emne/ØAMET2100/2026/HØST"
+      },
+      "ntnu": {
+        "institute": "ntnu",
+        "codeShort": "met3001",
+        "displayCode": "MET3001",
+        "courseName": "Kvantitative og kvalitative metoder",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 19,
+          "B": 100,
+          "C": 81,
+          "D": 33,
+          "E": 0,
+          "F": 8
+        },
+        "description": "Samfunnsvitenskapelig metode med kvantitative og kvalitative tilnærminger.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://www.ntnu.no/studier/boat/studiets-oppbygning"
+      },
+      "uit": {
+        "institute": "uit",
+        "codeShort": "svf-1050",
+        "displayCode": "SVF-1050",
+        "courseName": "Samfunnsvitenskapelig metode",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 0,
+          "B": 27,
+          "C": 29,
+          "D": 26,
+          "E": 10,
+          "F": 21
+        },
+        "description": "Samfunnsvitenskapelig metode og vitenskapsteori. Kvantitative og kvalitative forskningsdesign.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://uit.no/utdanning/aktivt/emne/BED-2306"
+      },
+      "nla": {
+        "institute": "nla",
+        "codeShort": "hsm126",
+        "displayCode": "HSM126",
+        "courseName": "Innføring i statistikk med forskningsmetode",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 27,
+          "B": 42,
+          "C": 98,
+          "D": 37,
+          "E": 51,
+          "F": 23
+        },
+        "description": "Samfunnsvitenskapelig metode og forskningsdesign (del av HSM126).",
+        "credits": "5 sp",
+        "examForm": "Hjemmeeksamen",
+        "courseUrl": "https://www.nla.no/studier/studieprogram/bachelor-i-okonomi-og-administrasjon/emneplan/HSM126",
+        "note": "Kombinert med statistikk i samme emne HSM126"
+      },
+      "uis": {
+        "institute": "uis",
+        "codeShort": "bøk295",
+        "displayCode": "BØK295",
+        "courseName": "Samfunnsvitenskapelig metode for arbeidslivet",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 27,
+          "B": 67,
+          "C": 46,
+          "D": 11,
+          "E": 0,
+          "F": 0
+        },
+        "description": "Samfunnsvitenskapelig metode for økonomi- og administrasjonsstudenter.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/uis/bøk295"
+      },
+      "inn": {
+        "institute": "inn",
+        "codeShort": "øka1023",
+        "displayCode": "ØKA1023",
+        "courseName": "Samfunnsvitenskapelig metode",
+        "verified": false,
+        "fallbackGrades": {
+          "A": 8,
+          "B": 14,
+          "C": 17,
+          "D": 9,
+          "E": 4,
+          "F": 3
+        },
+        "description": "Kvantitative og kvalitative forskningsmetoder for samfunnsvitere.",
+        "credits": "5 sp",
+        "examForm": "Hjemmeeksamen",
+        "courseUrl": "https://studiekatalog.edutorium.no/inn/nb/emne/ØKA1023/2027-host"
+      },
+      "onh": {
+        "institute": "onh",
+        "codeShort": "ØKAD2110",
+        "displayCode": "ØKAD2110",
+        "courseName": "Metode og statistikk",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 29,
+          "B": 21,
+          "C": 17,
+          "D": 15,
+          "E": 11,
+          "F": 0
+        },
+        "description": "Statistikk og samfunnsvitenskapelig metode kombinert.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/onh/ØKAD2110",
+        "note": "Metode og statistikk er kombinert i ett emne (ØKAD2110)"
+      },
+      "nord": {
+        "institute": "nord",
+        "codeShort": "eco1003",
+        "displayCode": "ECO1003",
+        "courseName": "Samfunnsøkonomi, makro",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 4,
+          "B": 9,
+          "C": 28,
+          "D": 25,
+          "E": 21,
+          "F": 39
+        },
+        "description": "Samfunnsvitenskapelig metode (kombinert med makroøkonomi i ECO1003).",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/nord/eco1003",
+        "note": "NORD kombinerer samfunnsøkonomi og metode i ECO1003"
+      },
+      "hvl": {
+        "institute": "hvl",
+        "codeShort": "ømo111",
+        "displayCode": "ØMO111",
+        "courseName": "Samfunnsvitenskapelig metode",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 7,
+          "B": 29,
+          "C": 53,
+          "D": 27,
+          "E": 7,
+          "F": 6
+        },
+        "description": "Samfunnsvitenskapelig metode – aggregert for Bergen, Haugesund og Sogndal.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/hvl/ømo111"
+      },
+      "himolde": {
+        "institute": "himolde",
+        "codeShort": "adm201",
+        "displayCode": "ADM201",
+        "courseName": "Innføring i samfunnsvitenskapelig metode",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 20,
+          "B": 38,
+          "C": 32,
+          "D": 8,
+          "E": 0,
+          "F": 29
+        },
+        "description": "Samfunnsvitenskapelig metode og vitenskapsteori.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/himolde/adm201"
+      },
+      "inn_rena": {
+        "institute": "inn_rena",
+        "codeShort": "3met200",
+        "displayCode": "3MET200",
+        "courseName": "Samfunnsvitenskapelig metode",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 0,
+          "B": 6,
+          "C": 43,
+          "D": 27,
+          "E": 12,
+          "F": 0
+        },
+        "description": "Kvantitative og kvalitative forskningsmetoder, studiested Rena.",
+        "credits": "7,5 sp",
+        "examForm": "Hjemmeeksamen",
+        "courseUrl": "https://karakterweb.no/inn/3met200"
+      },
+      "ntnu_gjovik": {
+        "institute": "ntnu_gjovik",
+        "codeShort": "smf2292",
+        "displayCode": "SMF2292",
+        "courseName": "Kvantitative og kvalitative metoder",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 5,
+          "B": 3,
+          "C": 19,
+          "D": 7,
+          "E": 13,
+          "F": 13
+        },
+        "description": "Kvantitative og kvalitative forskningsmetoder, NTNU Gjøvik.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/ntnu-gjovik/smf2292"
+      },
+      "ntnu_alesund": {
+        "institute": "ntnu_alesund",
+        "codeShort": "am201306",
+        "displayCode": "AM201306",
+        "courseName": "Kvantitative og kvalitative metoder",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 5,
+          "B": 12,
+          "C": 27,
+          "D": 24,
+          "E": 22,
+          "F": 17
+        },
+        "description": "Kvantitative og kvalitative forskningsmetoder, NTNU Ålesund.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/ntnu-alesund/am201306"
+      },
+      "kristiania_nett": {
+        "institute": "kristiania_nett",
+        "codeShort": "6343",
+        "displayCode": "6343",
+        "courseName": "Samfunnsvitenskapelig metode",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 6,
+          "B": 17,
+          "C": 22,
+          "D": 7,
+          "E": 0,
+          "F": 0
+        },
+        "description": "Samfunnsvitenskapelig metode. Nettbasert.",
+        "credits": "7,5 sp",
+        "examForm": "Digital eksamen",
+        "note": "Nettbasert."
+      },
+      "inn_nett": {
+        "institute": "inn_nett",
+        "codeShort": "smet200",
+        "displayCode": "SMET200",
+        "courseName": "Samfunnsvitenskapelig metode",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 27,
+          "B": 24,
+          "C": 35,
+          "D": 11,
+          "E": 0,
+          "F": 0
+        },
+        "description": "Samfunnsvitenskapelig metode i INN digital bachelor.",
+        "credits": "7,5 sp",
+        "examForm": "Digital eksamen",
+        "note": "Nettbasert digital bachelor (BAØKAH)."
+      },
+      "uit_nett": {
+        "institute": "uit_nett",
+        "codeShort": "bed-2506",
+        "displayCode": "BED-2506",
+        "courseName": "Anvendt metode",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 3,
+          "B": 23,
+          "C": 30,
+          "D": 11,
+          "E": 0,
+          "F": 0
+        },
+        "description": "Samfunnsvitenskapelig metode i UiT nettbasert bachelor.",
+        "credits": "10 sp",
+        "examForm": "Digital eksamen",
+        "note": "Nettbasert bachelor."
+      }
+    },
+    "okonomi1": {
+      "hio": {
+        "institute": "hio",
+        "codeShort": "sfb10314",
+        "displayCode": "SFB10314",
+        "courseName": "Innføring i bedriftsøkonomisk analyse",
+        "verified": false,
+        "fallbackGrades": {
+          "A": 38,
+          "B": 71,
+          "C": 98,
+          "D": 42,
+          "E": 27,
+          "F": 14
+        },
+        "description": "Introduksjon til bedriftsøkonomi med fokus på kostnadsteori, kalkulasjon og lønnsomhetsanalyse.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen"
+      },
+      "nmbu": {
+        "institute": "nmbu",
+        "codeShort": "bus101",
+        "displayCode": "BUS101",
+        "courseName": "Bedriften",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 44,
+          "B": 78,
+          "C": 101,
+          "D": 36,
+          "E": 21,
+          "F": 11
+        },
+        "description": "Tverrfaglig introduksjonskurs som gir overblikk over regnskap, finansiering, markedsføring, strategi og organisasjon. 5 studiepoeng, høstparallellen.",
+        "credits": "5 sp",
+        "examForm": "Digital eksamen (3 t)",
+        "courseUrl": "https://www.nmbu.no/emne/BUS101",
+        "learningOutcomes": {
+          "kunnskap": "Studenten har tverrfaglig forståelse og grunnleggende innsikt i hvordan bedrifter spesielt, og næringsliv og børs fungerer, og hvordan disse har innvirkning på samfunnet. Studenten har kunnskap om sentrale begreper og kjennskap til noen viktige verktøy som brukes i analyser av bedriftsøkonomiske problemstillinger.",
+          "ferdigheter": "Studenten kan analysere og tolke økonomiske data for å vurdere en bedrifts økonomiske situasjon, inkludert regnskapstall, finansielle nøkkeltall og markedsdata.",
+          "generellKompetanse": "Studenten kan beherske sentral bedriftsøkonomisk terminologi og tenke kritisk og reflektere over bedriftens rolle i samfunnet."
+        },
+        "assessmentDetails": "Skriftlig, campusbasert, digital eksamen, 3 timer (100%). Karakterregel: Bokstavkarakterer (A–F). Obligatorisk aktivitet: 5 innleveringsoppgaver, 3 av 5 må være godkjent."
+      },
+      "uia": {
+        "institute": "uia",
+        "codeShort": "be-110",
+        "displayCode": "BE-110",
+        "courseName": "Innføring i økonomisk styring",
+        "verified": false,
+        "fallbackGrades": {
+          "A": 39,
+          "B": 65,
+          "C": 86,
+          "D": 39,
+          "E": 23,
+          "F": 13
+        },
+        "description": "Innføring i bedriftsøkonomi med vekt på kostnadsanalyse, selvkostkalkulasjon og bidragskalkulasjon.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen"
+      },
+      "usn": {
+        "institute": "usn",
+        "codeShort": "bøk1100",
+        "displayCode": "BØK1100",
+        "courseName": "Bedriftsøkonomi",
+        "verified": false,
+        "fallbackGrades": {
+          "A": 36,
+          "B": 68,
+          "C": 95,
+          "D": 41,
+          "E": 26,
+          "F": 15
+        },
+        "description": "Grunnleggende bedriftsøkonomi som dekker kostnads- og inntektsanalyse, kalkulasjonsmetoder og budsjettering.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig skoleeksamen"
+      },
+      "nhh": {
+        "institute": "nhh",
+        "codeShort": "bed1",
+        "displayCode": "BED1",
+        "courseName": "Grunnleggende bedriftsøkonomi",
+        "verified": true,
+        "fallbackGrades": {
+          "A": 95,
+          "B": 192,
+          "C": 104,
+          "D": 32,
+          "E": 5,
+          "F": 7
+        },
+        "description": "Grunnleggende bedriftsøkonomi med vekt på kostnadsanalyse, kalkulasjonsmetoder, budsjettering og lønnsomhetsvurdering.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen"
+      },
+      "bi": {
+        "institute": "bi",
+        "codeShort": "bøk34301",
+        "displayCode": "BØK34301",
+        "courseName": "Innføring i bed.øk. & finans",
+        "verified": false,
+        "fallbackGrades": {
+          "A": 67,
+          "B": 95,
+          "C": 88,
+          "D": 28,
+          "E": 17,
+          "F": 11
+        },
+        "description": "Innføring i bedriftsøkonomi og finans med fokus på kostnadsanalyse, kalkulasjon og grunnleggende finansteori.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen"
+      },
+      "kristiania": {
+        "institute": "kristiania",
+        "codeShort": "bøk2101",
+        "displayCode": "BØK2101",
+        "courseName": "Bedriftsøkonomi",
+        "verified": false,
+        "fallbackGrades": {
+          "A": 46,
+          "B": 75,
+          "C": 90,
+          "D": 35,
+          "E": 20,
+          "F": 12
+        },
+        "description": "Grunnleggende bedriftsøkonomi med fokus på kalkulasjon, budsjettering og lønnsomhetsanalyse.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig skoleeksamen"
+      },
+      "oslomet": {
+        "institute": "oslomet",
+        "codeShort": "øabed1100",
+        "displayCode": "ØABED1100",
+        "courseName": "Bedriftsøkonomi med IKT",
+        "verified": false,
+        "fallbackGrades": {
+          "A": 49,
+          "B": 84,
+          "C": 106,
+          "D": 35,
+          "E": 22,
+          "F": 9
+        },
+        "description": "Innføring i bedriftsøkonomiske analyser med bruk av IKT-verktøy.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen"
+      },
+      "ntnu": {
+        "institute": "ntnu",
+        "codeShort": "bøa1100",
+        "displayCode": "BØA1100",
+        "courseName": "Bedriftsøkonomi med regnskap",
+        "verified": false,
+        "fallbackGrades": {
+          "A": 58,
+          "B": 89,
+          "C": 94,
+          "D": 33,
+          "E": 19,
+          "F": 13
+        },
+        "description": "Innføring i bedriftsøkonomiske analyser, kalkulasjon, budsjettering, investering og finansiering.",
+        "credits": "7,5 sp",
+        "examForm": "Skriftlig eksamen"
+      },
+      "uit": {
+        "institute": "uit",
+        "codeShort": "bed-1004nett",
+        "displayCode": "BED-1004",
+        "courseName": "Bedriftsøkonomi",
+        "verified": false,
+        "fallbackGrades": {
+          "A": 41,
+          "B": 68,
+          "C": 102,
+          "D": 38,
+          "E": 24,
+          "F": 17
+        },
+        "description": "Grunnleggende bedriftsøkonomi med fokus på kostnadsteori, kalkulasjon og budsjettering.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig skoleeksamen"
+      },
+      "himolde": {
+        "institute": "himolde",
+        "codeShort": "asm100",
+        "displayCode": "ASM100",
+        "courseName": "Administrasjon, service og management",
+        "verified": false,
+        "fallbackGrades": {
+          "A": 0,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0,
+          "F": 0
+        },
+        "description": "Innføring i administrasjon, service og management for bedriftsøkonomer.",
+        "credits": "10 sp",
+        "examForm": "Skriftlig eksamen",
+        "courseUrl": "https://karakterweb.no/himolde/asm100"
+      }
+    }
+  },
+  "UHR_GROUPS": [
+    {
+      "id": "bedriftsokonomisk",
+      "label": "Bedriftsøkonomisk analyse",
+      "credits": "30 sp",
+      "courses": [
+        {
+          "id": "finansregnskap",
+          "label": "Finansregnskap",
+          "description": "Ekstern rapportering og regnskapsanalyse"
+        },
+        {
+          "id": "okonomistyring",
+          "label": "Økonomistyring",
+          "description": "Driftsregnskap, kalkulasjon og budsjettering"
+        },
+        {
+          "id": "investering",
+          "label": "Investering og finansiering",
+          "description": "Kapitalbudsjettering og bedriftsfinansiering"
+        }
+      ]
+    },
+    {
+      "id": "administrasjon",
+      "label": "Administrasjonsfag",
+      "credits": "30 sp",
+      "courses": [
+        {
+          "id": "markedsforing",
+          "label": "Markedsføring",
+          "description": "Markedsplanlegging og forbrukeratferd"
+        },
+        {
+          "id": "organisasjon",
+          "label": "Organisasjon og ledelse",
+          "description": "Organisasjonsteori og ledelsesstiler"
+        },
+        {
+          "id": "strategi",
+          "label": "Foretaksstrategi",
+          "description": "Strategisk analyse og konkurransefortrinn"
+        }
+      ]
+    },
+    {
+      "id": "samfunnsokonomi",
+      "label": "Samfunnsøkonomi",
+      "credits": "15 sp",
+      "courses": [
+        {
+          "id": "makrookonomi",
+          "label": "Makroøkonomi",
+          "description": "Nasjonalregnskap, konjunkturer og pengepolitikk"
+        },
+        {
+          "id": "mikrookonomi",
+          "label": "Mikroøkonomi",
+          "description": "Konsument- og produsentatferd, markedslikevekt"
+        }
+      ]
+    },
+    {
+      "id": "metodefag",
+      "label": "Metode",
+      "credits": "20 sp",
+      "courses": [
+        {
+          "id": "matematikk",
+          "label": "Matematikk for økonomer",
+          "description": "Kalkulus, lineær algebra og optimering"
+        },
+        {
+          "id": "statistikk",
+          "label": "Statistikk for økonomer",
+          "description": "Sannsynlighetsteori og statistisk inferens"
+        },
+        {
+          "id": "metode",
+          "label": "Samfunnsvitenskapelig metode",
+          "description": "Kvantitative og kvalitative forskningsmetoder"
+        }
+      ]
+    }
+  ],
+  "UNIVERSITY_INFO": {
+    "hio": {
+      "name": "Høgskolen i Østfold",
+      "shortName": "HiØ",
+      "programUrl": "https://www.hiof.no/studier/programmer/bokad-bachelorstudium-i-okonomi-og-administrasjon/oppbygging/"
+    },
+    "nmbu": {
+      "name": "NMBU – Handelshøyskolen",
+      "shortName": "NMBU",
+      "accreditations": [
+        "AACSB"
+      ],
+      "programUrl": "https://www.nmbu.no/studier/bachelor-i-okonomi-og-administrasjon-oppbygning-og-gjennomforing"
+    },
+    "uia": {
+      "name": "Universitetet i Agder",
+      "shortName": "UiA",
+      "accreditations": [
+        "AACSB"
+      ],
+      "programUrl": "https://www.uia.no/studier/program/okonomi-og-administrasjon-bachelor/studieplaner/2026h.html"
+    },
+    "usn": {
+      "name": "Universitetet i Sørøst-Norge",
+      "shortName": "USN",
+      "programUrl": "https://www.usn.no/studier/bachelor-i-okonomi-og-ledelse/drammen-heltid"
+    },
+    "usn_bo": {
+      "name": "Universitetet i Sørøst-Norge – Bø",
+      "shortName": "USN Bø"
+    },
+    "usn_kongsberg": {
+      "name": "Universitetet i Sørøst-Norge – Kongsberg",
+      "shortName": "USN Kongsberg"
+    },
+    "usn_honefoss": {
+      "name": "Universitetet i Sørøst-Norge – Hønefoss",
+      "shortName": "USN Hønefoss"
+    },
+    "nhh": {
+      "name": "Norges Handelshøyskole",
+      "shortName": "NHH",
+      "accreditations": [
+        "AACSB",
+        "EQUIS",
+        "AMBA"
+      ],
+      "programUrl": "https://www.nhh.no/studier/bachelor-i-okonomi-og-administrasjon/"
+    },
+    "bi": {
+      "name": "BI Handelshøyskolen",
+      "shortName": "BI",
+      "accreditations": [
+        "AACSB",
+        "EQUIS",
+        "AMBA"
+      ],
+      "programUrl": "https://www.bi.no/studier-og-kurs/bachelorstudier/okonomi-og-administrasjon/"
+    },
+    "kristiania": {
+      "name": "Kristiania",
+      "shortName": "Kristiania",
+      "programUrl": "https://www.kristiania.no/studier/bachelor/okonomi-og-administrasjon/"
+    },
+    "oslomet": {
+      "name": "OsloMet",
+      "shortName": "OsloMet",
+      "programUrl": "https://www.oslomet.no/studier/sam/okonomi-administrasjon"
+    },
+    "ntnu": {
+      "name": "NTNU Handelshøyskolen (Trondheim)",
+      "shortName": "NTNU Trondheim",
+      "programUrl": "https://www.ntnu.no/studier/studieplan#programmeCode=B%C3%98A&year=2022&dir=B%C3%98A-22-TRONDHEIM"
+    },
+    "ntnu_gjovik": {
+      "name": "NTNU – Gjøvik",
+      "shortName": "NTNU Gjøvik",
+      "programUrl": "https://www.ntnu.no/studier/studieplan#programmeCode=B%C3%98A&year=2022&dir=B%C3%98A-22-GJ%C3%98VIK"
+    },
+    "ntnu_alesund": {
+      "name": "NTNU – Ålesund",
+      "shortName": "NTNU Ålesund",
+      "programUrl": "https://www.ntnu.no/studier/studieplan#programmeCode=B%C3%98A&year=2022&dir=B%C3%98A-22-%C3%85LESUND"
+    },
+    "uit": {
+      "name": "UiT Norges arktiske universitet",
+      "shortName": "UiT",
+      "programUrl": "https://uit.no/Content/876699/cache=20260906132619/Studieplan%20-%20Bachelor%20i%20%C3%B8konomi%20og%20administrasjon%20Troms%C3%B8%20fra%20kull%202025.pdf"
+    },
+    "nla": {
+      "name": "NLA Høgskolen",
+      "shortName": "NLA",
+      "programUrl": "https://www.nla.no/for-studenter/Studie-%20og%20emneplaner/studieplan/3%C3%98KADM"
+    },
+    "uis": {
+      "name": "Universitetet i Stavanger",
+      "shortName": "UiS",
+      "programUrl": "https://www.uis.no/nb/studier/okonomi-og-administrasjon-bachelor"
+    },
+    "inn": {
+      "name": "Universitetet i Innlandet (Lillehammer)",
+      "shortName": "INN Lillh",
+      "programUrl": "https://studiekatalog.edutorium.no/inn/nb/program/B%C3%98ADM/"
+    },
+    "onh": {
+      "name": "Oslo nye høyskole",
+      "shortName": "ONH",
+      "programUrl": "https://oslonyehoyskole.no/studier/nettstudier/bachelor-i-okonomi-og-administrasjon"
+    },
+    "nord": {
+      "name": "Nord universitet",
+      "shortName": "NORD",
+      "programUrl": "https://www.nord.no/studier/studieplaner/okonomi-og-administrasjon-baokled-bachelor-host-2026"
+    },
+    "hvl": {
+      "name": "Høgskulen på Vestlandet",
+      "shortName": "HVL",
+      "programUrl": "https://www.hvl.no/studier/studieprogram/okonomi-og-administrasjon-bergen/2026h/utdanningsplan/"
+    },
+    "himolde": {
+      "name": "Høgskolen i Molde",
+      "shortName": "HiMolde",
+      "programUrl": "https://www.himolde.no/studier/programmer/okonomi-administrasjon/oppbygging/"
+    },
+    "inn_rena": {
+      "name": "Universitetet i Innlandet (Rena)",
+      "shortName": "INN Rena",
+      "programUrl": "https://studiekatalog.edutorium.no/inn/nb/program/%C3%98KBAC/"
+    },
+    "kristiania_nett": {
+      "name": "Kristiania (nettbasert)",
+      "shortName": "Kristiania nett",
+      "programUrl": "https://www.kristiania.no/studier/nettstudier/okonomi-og-administrasjon/"
+    },
+    "inn_nett": {
+      "name": "INN – Digital bachelor (BAØKAH)",
+      "shortName": "INN nett",
+      "programUrl": "https://www.inn.no/studier/studieprogram/baoekah-bachelorstudium-i-oekonomi-og-administrasjon-heltid-pa-nett/"
+    },
+    "uit_nett": {
+      "name": "UiT (nettbasert bachelor)",
+      "shortName": "UiT nett",
+      "programUrl": "https://uit.no/utdanning/program/279754/okonomi_og_administrasjon_nettbasert_-_bachelor"
+    }
+  }
+}

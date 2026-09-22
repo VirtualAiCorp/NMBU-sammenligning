@@ -1,0 +1,100 @@
+{
+  "APPID_TO_DBH_CODE": {
+    "hio": "1059",
+    "himolde": "1060",
+    "ntnu": "1150",
+    "ntnu_gjovik": "1150",
+    "ntnu_alesund": "1150",
+    "uit": "1160",
+    "uit_alta": "1160",
+    "uit_harstad": "1160",
+    "uia": "1171",
+    "nhh": "1173",
+    "nord": "1174",
+    "nord_steinkjer": "1174",
+    "hvl": "1175",
+    "hvl_bergen": "1175",
+    "hvl_haugesund": "1175",
+    "hvl_sogndal": "1175",
+    "uis": "1176",
+    "inn": "1177",
+    "inn_rena": "1177",
+    "usn": "1178",
+    "usn_honefoss": "1178",
+    "usn_bo": "1178",
+    "usn_kongsberg": "1178",
+    "oslomet": "1182",
+    "nmbu": "1183",
+    "nla": "1185",
+    "nla_oslo": "1185",
+    "nla_bergen": "1185",
+    "nla_krs": "1185",
+    "bi": "4390",
+    "kristiania": "8034"
+  },
+  "DBH_CODE_TO_APPIDS": {
+    "1059": [
+      "hio"
+    ],
+    "1060": [
+      "himolde"
+    ],
+    "1150": [
+      "ntnu",
+      "ntnu_gjovik",
+      "ntnu_alesund"
+    ],
+    "1160": [
+      "uit",
+      "uit_alta",
+      "uit_harstad"
+    ],
+    "1171": [
+      "uia"
+    ],
+    "1173": [
+      "nhh"
+    ],
+    "1174": [
+      "nord",
+      "nord_steinkjer"
+    ],
+    "1175": [
+      "hvl",
+      "hvl_bergen",
+      "hvl_haugesund",
+      "hvl_sogndal"
+    ],
+    "1176": [
+      "uis"
+    ],
+    "1177": [
+      "inn",
+      "inn_rena"
+    ],
+    "1178": [
+      "usn",
+      "usn_honefoss",
+      "usn_bo",
+      "usn_kongsberg"
+    ],
+    "1182": [
+      "oslomet"
+    ],
+    "1183": [
+      "nmbu"
+    ],
+    "1185": [
+      "nla",
+      "nla_oslo",
+      "nla_bergen",
+      "nla_krs"
+    ],
+    "4390": [
+      "bi"
+    ],
+    "8034": [
+      "kristiania"
+    ]
+  }
+}

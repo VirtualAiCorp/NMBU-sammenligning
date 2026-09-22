@@ -1,0 +1,607 @@
+{
+  "BACHELOR_IDS": [
+    "uio_samf",
+    "uib_samf",
+    "nmbu_samf",
+    "ntnu_samf",
+    "uit_samf",
+    "uio_finans"
+  ],
+  "DEFAULT_SAMF_IDS": [
+    "uio_samf",
+    "uib_samf",
+    "nmbu_samf",
+    "ntnu_samf",
+    "uio_finans"
+  ],
+  "SAMF_DATA": [
+    {
+      "id": "uio_samf",
+      "shortName": "UiO",
+      "institusjon": "Universitetet i Oslo",
+      "studiekode": "185898",
+      "studiested": "Oslo",
+      "type": "bachelor",
+      "years": {
+        "2021": {
+          "alleS": 1732,
+          "fvS": 224,
+          "plasser": 100,
+          "kvinner": 33.9,
+          "kvalifiserte": 1659,
+          "tilbud": 190,
+          "pg_fv": 48.7,
+          "pg_ord": 56.5
+        },
+        "2022": {
+          "alleS": 1884,
+          "fvS": 249,
+          "plasser": 95,
+          "kvinner": 36.5,
+          "kvalifiserte": 1830,
+          "tilbud": 190,
+          "pg_fv": 49.5,
+          "pg_ord": 54.8
+        },
+        "2023": {
+          "alleS": 2093,
+          "fvS": 237,
+          "plasser": 82,
+          "kvinner": 36.3,
+          "kvalifiserte": 1988,
+          "tilbud": 159,
+          "pg_fv": 50,
+          "pg_ord": 57.1
+        },
+        "2024": {
+          "alleS": 2004,
+          "fvS": 255,
+          "plasser": 82,
+          "kvinner": 36.5,
+          "kvalifiserte": 1926,
+          "tilbud": 150,
+          "pg_fv": 50,
+          "pg_ord": 60.5
+        },
+        "2025": {
+          "alleS": 1793,
+          "fvS": 270,
+          "plasser": 82,
+          "kvinner": 41.9,
+          "kvalifiserte": 1603,
+          "tilbud": 152,
+          "pg_fv": 50.3,
+          "pg_ord": 60.5
+        },
+        "2026": {
+          "alleS": 1639,
+          "fvS": 218,
+          "plasser": 82,
+          "kvinner": 40.8,
+          "kvalifiserte": 1483,
+          "tilbud": 155,
+          "pg_fv": 50.5,
+          "pg_ord": 61.1
+        }
+      }
+    },
+    {
+      "id": "uib_samf",
+      "shortName": "UiB",
+      "institusjon": "Universitetet i Bergen",
+      "studiekode": "184369",
+      "studiested": "Bergen",
+      "type": "bachelor",
+      "years": {
+        "2021": {
+          "alleS": 2008,
+          "fvS": 251,
+          "plasser": 108,
+          "kvinner": 36.3,
+          "kvalifiserte": 1788,
+          "tilbud": 266,
+          "pg_fv": 47.2,
+          "pg_ord": 49.7
+        },
+        "2022": {
+          "alleS": 1829,
+          "fvS": 219,
+          "plasser": 113,
+          "kvinner": 31.5,
+          "kvalifiserte": 1659,
+          "tilbud": 281,
+          "pg_fv": 47.7,
+          "pg_ord": 49.4
+        },
+        "2023": {
+          "alleS": 1949,
+          "fvS": 247,
+          "plasser": 107,
+          "kvinner": 41.7,
+          "kvalifiserte": 1702,
+          "tilbud": 261,
+          "pg_fv": 48.3,
+          "pg_ord": 50.5
+        },
+        "2024": {
+          "alleS": 2123,
+          "fvS": 247,
+          "plasser": 101,
+          "kvinner": 38.9,
+          "kvalifiserte": 1896,
+          "tilbud": 246,
+          "pg_fv": 49,
+          "pg_ord": 51.8
+        },
+        "2025": {
+          "alleS": 2021,
+          "fvS": 260,
+          "plasser": 101,
+          "kvinner": 31.5,
+          "kvalifiserte": 1776,
+          "tilbud": 247,
+          "pg_fv": 49.1,
+          "pg_ord": 52.4
+        },
+        "2026": {
+          "alleS": 2294,
+          "fvS": 274,
+          "plasser": 101,
+          "kvinner": 40.1,
+          "kvalifiserte": 2034,
+          "tilbud": 242,
+          "pg_fv": 49.8,
+          "pg_ord": 53.1
+        }
+      }
+    },
+    {
+      "id": "nmbu_samf",
+      "shortName": "NMBU",
+      "institusjon": "Norges miljø- og biovitenskapelige universitet",
+      "studiekode": "192468",
+      "studiested": "Ås",
+      "type": "bachelor",
+      "years": {
+        "2021": {
+          "alleS": 609,
+          "fvS": 58,
+          "plasser": 25,
+          "kvinner": 41.4,
+          "kvalifiserte": 584,
+          "tilbud": 60,
+          "pg_fv": 43.1,
+          "pg_ord": 52.3
+        },
+        "2022": {
+          "alleS": 531,
+          "fvS": 41,
+          "plasser": 25,
+          "kvinner": 46.3,
+          "kvalifiserte": 515,
+          "tilbud": 56,
+          "pg_fv": 44.2,
+          "pg_ord": 48.8
+        },
+        "2023": {
+          "alleS": 700,
+          "fvS": 68,
+          "plasser": 35,
+          "kvinner": 38.2,
+          "kvalifiserte": 666,
+          "tilbud": 68,
+          "pg_fv": 45.2,
+          "pg_ord": 48.4
+        },
+        "2024": {
+          "alleS": 785,
+          "fvS": 56,
+          "plasser": 35,
+          "kvinner": 26.8,
+          "kvalifiserte": 748,
+          "tilbud": 80,
+          "pg_fv": 44.8,
+          "pg_ord": 48
+        },
+        "2025": {
+          "alleS": 805,
+          "fvS": 63,
+          "plasser": 35,
+          "kvinner": 22.2,
+          "kvalifiserte": 757,
+          "tilbud": 102,
+          "pg_fv": 44.7,
+          "pg_ord": 47.5
+        },
+        "2026": {
+          "alleS": 659,
+          "fvS": 48,
+          "plasser": 30,
+          "kvinner": 33.3,
+          "kvalifiserte": 568,
+          "tilbud": 68,
+          "pg_fv": 45.9,
+          "pg_ord": 48.4
+        }
+      }
+    },
+    {
+      "id": "ntnu_samf",
+      "shortName": "NTNU",
+      "institusjon": "NTNU",
+      "studiekode": "194898",
+      "studiested": "Trondheim",
+      "type": "bachelor",
+      "years": {
+        "2021": {
+          "alleS": 1971,
+          "fvS": 287,
+          "plasser": 100,
+          "kvinner": 36.2,
+          "kvalifiserte": 1925,
+          "tilbud": 220,
+          "pg_fv": 48,
+          "pg_ord": 52.6
+        },
+        "2022": {
+          "alleS": 1879,
+          "fvS": 231,
+          "plasser": 100,
+          "kvinner": 39.4,
+          "kvalifiserte": 1843,
+          "tilbud": 200,
+          "pg_fv": 48.8,
+          "pg_ord": 54.2
+        },
+        "2023": {
+          "alleS": 2104,
+          "fvS": 245,
+          "plasser": 100,
+          "kvinner": 35.9,
+          "kvalifiserte": 2051,
+          "tilbud": 200,
+          "pg_fv": 50,
+          "pg_ord": 55.6
+        },
+        "2024": {
+          "alleS": 1963,
+          "fvS": 232,
+          "plasser": 100,
+          "kvinner": 36.6,
+          "kvalifiserte": 1927,
+          "tilbud": 200,
+          "pg_fv": 50,
+          "pg_ord": 56.5
+        },
+        "2025": {
+          "alleS": 2191,
+          "fvS": 258,
+          "plasser": 100,
+          "kvinner": 36.8,
+          "kvalifiserte": 2140,
+          "tilbud": 200,
+          "pg_fv": 50.4,
+          "pg_ord": 57
+        },
+        "2026": {
+          "alleS": 2369,
+          "fvS": 279,
+          "plasser": 100,
+          "kvinner": 34.8,
+          "kvalifiserte": 2318,
+          "tilbud": 200,
+          "pg_fv": 50.9,
+          "pg_ord": 56.7
+        }
+      }
+    },
+    {
+      "id": "uit_samf",
+      "shortName": "UiT",
+      "institusjon": "UiT Norges arktiske universitet",
+      "studiekode": "186898",
+      "studiested": "Tromsø",
+      "type": "bachelor",
+      "years": {
+        "2021": {
+          "alleS": 464,
+          "fvS": 58,
+          "plasser": 60,
+          "kvinner": 15.5,
+          "kvalifiserte": 432,
+          "tilbud": 167,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2022": {
+          "alleS": 401,
+          "fvS": 58,
+          "plasser": 60,
+          "kvinner": 20.7,
+          "kvalifiserte": 366,
+          "tilbud": 91,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2023": {
+          "alleS": 314,
+          "fvS": 33,
+          "plasser": 60,
+          "kvinner": 12.1,
+          "kvalifiserte": 281,
+          "tilbud": 76,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2024": {
+          "alleS": 380,
+          "fvS": 45,
+          "plasser": 60,
+          "kvinner": 26.7,
+          "kvalifiserte": 352,
+          "tilbud": 86,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2025": {
+          "alleS": 299,
+          "fvS": 30,
+          "plasser": 50,
+          "kvinner": 20,
+          "kvalifiserte": 283,
+          "tilbud": 55,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2026": {
+          "alleS": 292,
+          "fvS": 30,
+          "plasser": 50,
+          "kvinner": 13.3,
+          "kvalifiserte": 272,
+          "tilbud": 63,
+          "pg_fv": 0,
+          "pg_ord": 0
+        }
+      }
+    },
+    {
+      "id": "uio_finans",
+      "shortName": "UiO Øk.Fin.",
+      "institusjon": "Universitetet i Oslo",
+      "studiekode": "185369",
+      "studiested": "Oslo",
+      "type": "bachelor",
+      "years": {
+        "2026": {
+          "alleS": 3396,
+          "fvS": 583,
+          "plasser": 30,
+          "kvinner": 26.6,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 53.6,
+          "pg_ord": 63.4
+        }
+      }
+    },
+    {
+      "id": "uio_analyse",
+      "shortName": "UiO Analyse",
+      "institusjon": "Universitetet i Oslo",
+      "studiekode": "185698",
+      "studiested": "Oslo",
+      "type": "arsstudium",
+      "years": {
+        "2021": {
+          "alleS": 610,
+          "fvS": 114,
+          "plasser": 52,
+          "kvinner": 43,
+          "kvalifiserte": 496,
+          "tilbud": 100,
+          "pg_fv": 45.7,
+          "pg_ord": 55.5
+        },
+        "2022": {
+          "alleS": 489,
+          "fvS": 93,
+          "plasser": 52,
+          "kvinner": 46.2,
+          "kvalifiserte": 391,
+          "tilbud": 100,
+          "pg_fv": 42.3,
+          "pg_ord": 52.6
+        },
+        "2023": {
+          "alleS": 485,
+          "fvS": 76,
+          "plasser": 39,
+          "kvinner": 46.1,
+          "kvalifiserte": 392,
+          "tilbud": 81,
+          "pg_fv": 43.5,
+          "pg_ord": 54.5
+        },
+        "2024": {
+          "alleS": 558,
+          "fvS": 85,
+          "plasser": 39,
+          "kvinner": 48.2,
+          "kvalifiserte": 453,
+          "tilbud": 84,
+          "pg_fv": 45.4,
+          "pg_ord": 57.4
+        },
+        "2025": {
+          "alleS": 540,
+          "fvS": 93,
+          "plasser": 38,
+          "kvinner": 40.9,
+          "kvalifiserte": 436,
+          "tilbud": 80,
+          "pg_fv": 46.1,
+          "pg_ord": 57.5
+        },
+        "2026": {
+          "alleS": 492,
+          "fvS": 72,
+          "plasser": 38,
+          "kvinner": 43.1,
+          "kvalifiserte": 405,
+          "tilbud": 75,
+          "pg_fv": 45.7,
+          "pg_ord": 57.6
+        }
+      }
+    },
+    {
+      "id": "uib_master",
+      "shortName": "UiB Master",
+      "institusjon": "Universitetet i Bergen",
+      "studiekode": "184698",
+      "studiested": "Bergen",
+      "type": "master",
+      "years": {
+        "2021": {
+          "alleS": 707,
+          "fvS": 60,
+          "plasser": 22,
+          "kvinner": 35,
+          "kvalifiserte": 595,
+          "tilbud": 72,
+          "pg_fv": 49.8,
+          "pg_ord": 53.3
+        },
+        "2022": {
+          "alleS": 665,
+          "fvS": 41,
+          "plasser": 22,
+          "kvinner": 34.1,
+          "kvalifiserte": 578,
+          "tilbud": 75,
+          "pg_fv": 50.7,
+          "pg_ord": 52.5
+        },
+        "2023": {
+          "alleS": 670,
+          "fvS": 45,
+          "plasser": 22,
+          "kvinner": 42.2,
+          "kvalifiserte": 573,
+          "tilbud": 76,
+          "pg_fv": 50.9,
+          "pg_ord": 53.9
+        },
+        "2024": {
+          "alleS": 725,
+          "fvS": 53,
+          "plasser": 22,
+          "kvinner": 39.6,
+          "kvalifiserte": 605,
+          "tilbud": 70,
+          "pg_fv": 50.1,
+          "pg_ord": 53.5
+        },
+        "2025": {
+          "alleS": 692,
+          "fvS": 51,
+          "plasser": 22,
+          "kvinner": 47.1,
+          "kvalifiserte": 575,
+          "tilbud": 69,
+          "pg_fv": 51.4,
+          "pg_ord": 53.1
+        },
+        "2026": {
+          "alleS": 681,
+          "fvS": 47,
+          "plasser": 22,
+          "kvinner": 48.9,
+          "kvalifiserte": 554,
+          "tilbud": 57,
+          "pg_fv": 50.4,
+          "pg_ord": 53.2
+        }
+      }
+    },
+    {
+      "id": "ntnu_master",
+      "shortName": "NTNU Master",
+      "institusjon": "NTNU",
+      "studiekode": "194818",
+      "studiested": "Trondheim",
+      "type": "master",
+      "years": {
+        "2021": {
+          "alleS": 736,
+          "fvS": 63,
+          "plasser": 25,
+          "kvinner": 44.4,
+          "kvalifiserte": 591,
+          "tilbud": 74,
+          "pg_fv": 48.4,
+          "pg_ord": 50.7
+        },
+        "2022": {
+          "alleS": 706,
+          "fvS": 42,
+          "plasser": 25,
+          "kvinner": 45.2,
+          "kvalifiserte": 592,
+          "tilbud": 74,
+          "pg_fv": 49.4,
+          "pg_ord": 51.6
+        },
+        "2023": {
+          "alleS": 776,
+          "fvS": 53,
+          "plasser": 25,
+          "kvinner": 30.2,
+          "kvalifiserte": 657,
+          "tilbud": 54,
+          "pg_fv": 51.9,
+          "pg_ord": 54.5
+        },
+        "2024": {
+          "alleS": 767,
+          "fvS": 37,
+          "plasser": 25,
+          "kvinner": 37.8,
+          "kvalifiserte": 664,
+          "tilbud": 68,
+          "pg_fv": 51.2,
+          "pg_ord": 55
+        },
+        "2025": {
+          "alleS": 900,
+          "fvS": 48,
+          "plasser": 25,
+          "kvinner": 45.8,
+          "kvalifiserte": 774,
+          "tilbud": 100,
+          "pg_fv": 49.8,
+          "pg_ord": 54.9
+        },
+        "2026": {
+          "alleS": 944,
+          "fvS": 71,
+          "plasser": 25,
+          "kvinner": 26.8,
+          "kvalifiserte": 802,
+          "tilbud": 100,
+          "pg_fv": 50.2,
+          "pg_ord": 53.9
+        }
+      }
+    }
+  ],
+  "SAMF_YEARS": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+  ]
+}

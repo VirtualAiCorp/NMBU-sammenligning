@@ -1,0 +1,551 @@
+{
+  "ANNUAL_DEFAULT_IDS": [
+    "nmbu_deltid",
+    "uit_ledelse",
+    "inn_org_ledelse",
+    "ntnu_deltid",
+    "nord_hr",
+    "inn_bedrøk",
+    "uis_okjus"
+  ],
+  "ANNUAL_STUDIES_DATA": [
+    {
+      "id": "nmbu_deltid",
+      "shortName": "NMBU",
+      "institusjon": "Norges miljø- og biovitenskapelige universitet",
+      "studiekode": "192253",
+      "studiested": "Ås",
+      "type": "deltid",
+      "years": {
+        "2023": {
+          "alleS": 3087,
+          "fvS": 1026,
+          "plasser": 200,
+          "kvinner": 67.7,
+          "kvalifiserte": 2949,
+          "tilbud": 1478,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2024": {
+          "alleS": 3312,
+          "fvS": 1134,
+          "plasser": 950,
+          "kvinner": 63.7,
+          "kvalifiserte": 3159,
+          "tilbud": 1596,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2025": {
+          "alleS": 2958,
+          "fvS": 1038,
+          "plasser": 950,
+          "kvinner": 65.2,
+          "kvalifiserte": 2817,
+          "tilbud": 1393,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2026": {
+          "alleS": 3046,
+          "fvS": 986,
+          "plasser": 950,
+          "kvinner": 64.6,
+          "kvalifiserte": 2899,
+          "tilbud": 1391,
+          "pg_fv": 0,
+          "pg_ord": 0
+        }
+      }
+    },
+    {
+      "id": "uit_ledelse",
+      "shortName": "UiT Ledelse",
+      "institusjon": "UiT Norges arktiske universitet",
+      "studiekode": "186664",
+      "studiested": "Alta",
+      "type": "deltid",
+      "years": {
+        "2021": {
+          "alleS": 3053,
+          "fvS": 1228,
+          "plasser": 800,
+          "kvinner": 62.9,
+          "kvalifiserte": 2907,
+          "tilbud": 1100,
+          "pg_fv": 0,
+          "pg_ord": 45.6
+        },
+        "2022": {
+          "alleS": 2801,
+          "fvS": 965,
+          "plasser": 800,
+          "kvinner": 64.9,
+          "kvalifiserte": 2680,
+          "tilbud": 1200,
+          "pg_fv": 0,
+          "pg_ord": 40.2
+        },
+        "2023": {
+          "alleS": 3445,
+          "fvS": 1287,
+          "plasser": 800,
+          "kvinner": 64.2,
+          "kvalifiserte": 3291,
+          "tilbud": 1100,
+          "pg_fv": 0,
+          "pg_ord": 46.7
+        },
+        "2024": {
+          "alleS": 3865,
+          "fvS": 1416,
+          "plasser": 800,
+          "kvinner": 62.8,
+          "kvalifiserte": 3706,
+          "tilbud": 1200,
+          "pg_fv": 0,
+          "pg_ord": 47.3
+        },
+        "2025": {
+          "alleS": 3667,
+          "fvS": 1214,
+          "plasser": 700,
+          "kvinner": 62.9,
+          "kvalifiserte": 3544,
+          "tilbud": 1200,
+          "pg_fv": 0,
+          "pg_ord": 46.2
+        },
+        "2026": {
+          "alleS": 3099,
+          "fvS": 668,
+          "plasser": 700,
+          "kvinner": 61.8,
+          "kvalifiserte": 2979,
+          "tilbud": 1200,
+          "pg_fv": 0,
+          "pg_ord": 39.2
+        }
+      }
+    },
+    {
+      "id": "inn_org_ledelse",
+      "shortName": "INN Org.led.",
+      "institusjon": "Universitetet i Innlandet",
+      "studiekode": "209583",
+      "studiested": "Åmot",
+      "type": "nettbasert",
+      "years": {
+        "2022": {
+          "alleS": 3299,
+          "fvS": 1417,
+          "plasser": 200,
+          "kvinner": 69.3,
+          "kvalifiserte": 3138,
+          "tilbud": 400,
+          "pg_fv": 0,
+          "pg_ord": 55.2
+        },
+        "2023": {
+          "alleS": 3253,
+          "fvS": 1404,
+          "plasser": 220,
+          "kvinner": 74.6,
+          "kvalifiserte": 3097,
+          "tilbud": 440,
+          "pg_fv": 0,
+          "pg_ord": 55.2
+        },
+        "2024": {
+          "alleS": 3479,
+          "fvS": 1295,
+          "plasser": 200,
+          "kvinner": 71.2,
+          "kvalifiserte": 3331,
+          "tilbud": 385,
+          "pg_fv": 0,
+          "pg_ord": 56.1
+        },
+        "2025": {
+          "alleS": 3255,
+          "fvS": 1206,
+          "plasser": 250,
+          "kvinner": 75.2,
+          "kvalifiserte": 3138,
+          "tilbud": 600,
+          "pg_fv": 0,
+          "pg_ord": 53.5
+        },
+        "2026": {
+          "alleS": 3227,
+          "fvS": 1007,
+          "plasser": 350,
+          "kvinner": 71.8,
+          "kvalifiserte": 3078,
+          "tilbud": 620,
+          "pg_fv": 0,
+          "pg_ord": 52.6
+        }
+      }
+    },
+    {
+      "id": "ntnu_deltid",
+      "shortName": "NTNU Gjøvik",
+      "institusjon": "NTNU",
+      "studiekode": "194583",
+      "studiested": "Gjøvik",
+      "type": "deltid",
+      "years": {
+        "2025": {
+          "alleS": 3567,
+          "fvS": 846,
+          "plasser": 50,
+          "kvinner": 55.2,
+          "kvalifiserte": 3409,
+          "tilbud": 200,
+          "pg_fv": 0,
+          "pg_ord": 61.5
+        },
+        "2026": {
+          "alleS": 2749,
+          "fvS": 703,
+          "plasser": 50,
+          "kvinner": 54.6,
+          "kvalifiserte": 2633,
+          "tilbud": 230,
+          "pg_fv": 0,
+          "pg_ord": 61.1
+        }
+      }
+    },
+    {
+      "id": "nord_hr",
+      "shortName": "Nord HR",
+      "institusjon": "Nord universitet",
+      "studiekode": "204158",
+      "studiested": "Bodø",
+      "type": "deltid",
+      "years": {
+        "2026": {
+          "alleS": 4030,
+          "fvS": 1396,
+          "plasser": 40,
+          "kvinner": 83.1,
+          "kvalifiserte": 3838,
+          "tilbud": 70,
+          "pg_fv": 37,
+          "pg_ord": 63.9
+        }
+      }
+    },
+    {
+      "id": "inn_bedrøk",
+      "shortName": "INN Bedriftsøk.",
+      "institusjon": "Universitetet i Innlandet",
+      "studiekode": "209207",
+      "studiested": "Åmot",
+      "type": "deltid",
+      "years": {
+        "2022": {
+          "alleS": 1353,
+          "fvS": 297,
+          "plasser": 50,
+          "kvinner": 57.2,
+          "kvalifiserte": 1270,
+          "tilbud": 130,
+          "pg_fv": 0,
+          "pg_ord": 54.1
+        },
+        "2023": {
+          "alleS": 1243,
+          "fvS": 234,
+          "plasser": 65,
+          "kvinner": 54.7,
+          "kvalifiserte": 1174,
+          "tilbud": 140,
+          "pg_fv": 0,
+          "pg_ord": 52.9
+        },
+        "2024": {
+          "alleS": 1811,
+          "fvS": 376,
+          "plasser": 65,
+          "kvinner": 58,
+          "kvalifiserte": 1703,
+          "tilbud": 120,
+          "pg_fv": 0,
+          "pg_ord": 58.6
+        },
+        "2025": {
+          "alleS": 1344,
+          "fvS": 248,
+          "plasser": 65,
+          "kvinner": 57.7,
+          "kvalifiserte": 1273,
+          "tilbud": 130,
+          "pg_fv": 0,
+          "pg_ord": 53.8
+        },
+        "2026": {
+          "alleS": 1586,
+          "fvS": 294,
+          "plasser": 65,
+          "kvinner": 58.5,
+          "kvalifiserte": 1482,
+          "tilbud": 135,
+          "pg_fv": 0,
+          "pg_ord": 57.6
+        }
+      }
+    },
+    {
+      "id": "inn_offentlig",
+      "shortName": "INN Off.sty.",
+      "institusjon": "Universitetet i Innlandet",
+      "studiekode": "209215",
+      "studiested": "Åmot",
+      "type": "deltid",
+      "years": {
+        "2021": {
+          "alleS": 777,
+          "fvS": 153,
+          "plasser": 80,
+          "kvinner": 64.1,
+          "kvalifiserte": 738,
+          "tilbud": 190,
+          "pg_fv": 0,
+          "pg_ord": 43.9
+        },
+        "2022": {
+          "alleS": 519,
+          "fvS": 94,
+          "plasser": 80,
+          "kvinner": 61.7,
+          "kvalifiserte": 491,
+          "tilbud": 178,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2023": {
+          "alleS": 576,
+          "fvS": 114,
+          "plasser": 80,
+          "kvinner": 57,
+          "kvalifiserte": 546,
+          "tilbud": 202,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2024": {
+          "alleS": 657,
+          "fvS": 108,
+          "plasser": 80,
+          "kvinner": 52.8,
+          "kvalifiserte": 627,
+          "tilbud": 160,
+          "pg_fv": 0,
+          "pg_ord": 44
+        },
+        "2026": {
+          "alleS": 2245,
+          "fvS": 334,
+          "plasser": 80,
+          "kvinner": 68.6,
+          "kvalifiserte": 2167,
+          "tilbud": 200,
+          "pg_fv": 0,
+          "pg_ord": 53.2
+        }
+      }
+    },
+    {
+      "id": "uit_bedrøk",
+      "shortName": "UiT Bedriftsøk.",
+      "institusjon": "UiT Norges arktiske universitet",
+      "studiekode": "186164",
+      "studiested": "Alta",
+      "type": "deltid",
+      "years": {
+        "2021": {
+          "alleS": 1662,
+          "fvS": 404,
+          "plasser": 400,
+          "kvinner": 56.2,
+          "kvalifiserte": 1545,
+          "tilbud": 659,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2022": {
+          "alleS": 1339,
+          "fvS": 298,
+          "plasser": 400,
+          "kvinner": 48.3,
+          "kvalifiserte": 1253,
+          "tilbud": 448,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2023": {
+          "alleS": 1756,
+          "fvS": 374,
+          "plasser": 400,
+          "kvinner": 55.9,
+          "kvalifiserte": 1632,
+          "tilbud": 549,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2024": {
+          "alleS": 2073,
+          "fvS": 413,
+          "plasser": 400,
+          "kvinner": 53.5,
+          "kvalifiserte": 1962,
+          "tilbud": 761,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2025": {
+          "alleS": 1729,
+          "fvS": 272,
+          "plasser": 400,
+          "kvinner": 50.4,
+          "kvalifiserte": 1633,
+          "tilbud": 564,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2026": {
+          "alleS": 1505,
+          "fvS": 235,
+          "plasser": 400,
+          "kvinner": 51.5,
+          "kvalifiserte": 1425,
+          "tilbud": 482,
+          "pg_fv": 0,
+          "pg_ord": 0
+        }
+      }
+    },
+    {
+      "id": "him_logistikk",
+      "shortName": "HiMolde",
+      "institusjon": "Høgskolen i Molde",
+      "studiekode": "211627",
+      "studiested": "Molde",
+      "type": "arsstudium",
+      "years": {
+        "2023": {
+          "alleS": 1322,
+          "fvS": 321,
+          "plasser": 50,
+          "kvinner": 55.8,
+          "kvalifiserte": 1231,
+          "tilbud": 453,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2024": {
+          "alleS": 1440,
+          "fvS": 404,
+          "plasser": 400,
+          "kvinner": 55,
+          "kvalifiserte": 1355,
+          "tilbud": 574,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2025": {
+          "alleS": 1682,
+          "fvS": 554,
+          "plasser": 300,
+          "kvinner": 47.7,
+          "kvalifiserte": 1590,
+          "tilbud": 689,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2026": {
+          "alleS": 1827,
+          "fvS": 585,
+          "plasser": 300,
+          "kvinner": 48,
+          "kvalifiserte": 1732,
+          "tilbud": 758,
+          "pg_fv": 0,
+          "pg_ord": 0
+        }
+      }
+    },
+    {
+      "id": "nla_baerekraft",
+      "shortName": "NLA",
+      "institusjon": "NLA Høgskolen",
+      "studiekode": "254393",
+      "studiested": "Oslo",
+      "type": "arsstudium",
+      "years": {
+        "2024": {
+          "alleS": 1527,
+          "fvS": 158,
+          "plasser": 25,
+          "kvinner": 57,
+          "kvalifiserte": 1409,
+          "tilbud": 250,
+          "pg_fv": 0,
+          "pg_ord": 46
+        },
+        "2025": {
+          "alleS": 1342,
+          "fvS": 153,
+          "plasser": 25,
+          "kvinner": 58.8,
+          "kvalifiserte": 1266,
+          "tilbud": 277,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2026": {
+          "alleS": 1178,
+          "fvS": 108,
+          "plasser": 25,
+          "kvinner": 56.5,
+          "kvalifiserte": 1104,
+          "tilbud": 265,
+          "pg_fv": 0,
+          "pg_ord": 0
+        }
+      }
+    },
+    {
+      "id": "uis_okjus",
+      "shortName": "UiS Øk.&jus",
+      "institusjon": "Universitetet i Stavanger",
+      "studiekode": "217097",
+      "studiested": "Stavanger",
+      "type": "arsstudium",
+      "years": {
+        "2026": {
+          "alleS": 3513,
+          "fvS": 955,
+          "plasser": 90,
+          "kvinner": 59.6,
+          "kvalifiserte": 3357,
+          "tilbud": 400,
+          "pg_fv": 31.9,
+          "pg_ord": 59.2
+        }
+      }
+    }
+  ],
+  "ANNUAL_YEARS": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+  ]
+}

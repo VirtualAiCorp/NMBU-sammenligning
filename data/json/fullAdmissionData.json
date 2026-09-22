@@ -1,0 +1,2352 @@
+{
+  "ALL_YEARS": [
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+  ],
+  "DEFAULT_IDS": [
+    "nhh",
+    "nmbu",
+    "ntnu",
+    "ntnu_siv",
+    "oslomet",
+    "uia",
+    "uia_siv",
+    "uit",
+    "uis",
+    "inn",
+    "hvl_bergen",
+    "nord"
+  ],
+  "FULL_ADMISSION_DATA": [
+    {
+      "id": "nhh",
+      "shortName": "NHH",
+      "institusjon": "Norges Handelshøyskole",
+      "studiekode": "191345",
+      "studiested": "Bergen",
+      "type": "sivilokonom",
+      "years": {
+        "2020": {
+          "alleS": null,
+          "fvS": null,
+          "plasser": null,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 54.6,
+          "pg_ord": 57.8
+        },
+        "2021": {
+          "alleS": 5048,
+          "fvS": 2179,
+          "plasser": 570,
+          "kvinner": 35.7,
+          "kvalifiserte": 4586,
+          "tilbud": 977,
+          "pg_fv": 54.5,
+          "pg_ord": 58.3
+        },
+        "2022": {
+          "alleS": 4602,
+          "fvS": 2053,
+          "plasser": 500,
+          "kvinner": 36.4,
+          "kvalifiserte": 4228,
+          "tilbud": 904,
+          "pg_fv": 55.4,
+          "pg_ord": 58.9
+        },
+        "2023": {
+          "alleS": 4930,
+          "fvS": 2157,
+          "plasser": 500,
+          "kvinner": 36.4,
+          "kvalifiserte": 4448,
+          "tilbud": 861,
+          "pg_fv": 55.6,
+          "pg_ord": 59.5
+        },
+        "2024": {
+          "alleS": 4737,
+          "fvS": 1698,
+          "plasser": 430,
+          "kvinner": 34.8,
+          "kvalifiserte": 4240,
+          "tilbud": 827,
+          "pg_fv": 55.2,
+          "pg_ord": 59.6
+        },
+        "2025": {
+          "alleS": 4480,
+          "fvS": 1823,
+          "plasser": 420,
+          "kvinner": 35.1,
+          "kvalifiserte": 3984,
+          "tilbud": 774,
+          "pg_fv": 55.3,
+          "pg_ord": 59.9
+        },
+        "2026": {
+          "alleS": 4749,
+          "fvS": 1899,
+          "plasser": 425,
+          "kvinner": 34.5,
+          "kvalifiserte": 4109,
+          "tilbud": 838,
+          "pg_fv": 54.8,
+          "pg_ord": 59.9
+        }
+      }
+    },
+    {
+      "id": "nmbu",
+      "shortName": "NMBU",
+      "institusjon": "Norges miljø- og biovitenskapelige universitet",
+      "studiekode": "192369",
+      "studiested": "Ås",
+      "type": "bachelor",
+      "years": {
+        "2020": {
+          "alleS": null,
+          "fvS": null,
+          "plasser": null,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 44.3,
+          "pg_ord": 49.3
+        },
+        "2021": {
+          "alleS": 1132,
+          "fvS": 175,
+          "plasser": 96,
+          "kvinner": 45.1,
+          "kvalifiserte": 1086,
+          "tilbud": 190,
+          "pg_fv": 44.7,
+          "pg_ord": 50.8
+        },
+        "2022": {
+          "alleS": 895,
+          "fvS": 121,
+          "plasser": 60,
+          "kvinner": 42.1,
+          "kvalifiserte": 859,
+          "tilbud": 140,
+          "pg_fv": 44.5,
+          "pg_ord": 49.3
+        },
+        "2023": {
+          "alleS": 1098,
+          "fvS": 153,
+          "plasser": 75,
+          "kvinner": 33.3,
+          "kvalifiserte": 1015,
+          "tilbud": 148,
+          "pg_fv": 46.3,
+          "pg_ord": 47.7
+        },
+        "2024": {
+          "alleS": 1380,
+          "fvS": 231,
+          "plasser": 95,
+          "kvinner": 36.4,
+          "kvalifiserte": 1317,
+          "tilbud": 200,
+          "pg_fv": 45.8,
+          "pg_ord": 48.6
+        },
+        "2025": {
+          "alleS": 1417,
+          "fvS": 247,
+          "plasser": 95,
+          "kvinner": 38.5,
+          "kvalifiserte": 1343,
+          "tilbud": 196,
+          "pg_fv": 46.2,
+          "pg_ord": 49.5
+        },
+        "2026": {
+          "alleS": 1663,
+          "fvS": 296,
+          "plasser": 95,
+          "kvinner": 34.1,
+          "kvalifiserte": 1582,
+          "tilbud": 196,
+          "pg_fv": 47.5,
+          "pg_ord": 50.4
+        }
+      }
+    },
+    {
+      "id": "ntnu",
+      "shortName": "NTNU",
+      "institusjon": "NTNU",
+      "studiekode": "194035",
+      "studiested": "Trondheim",
+      "type": "bachelor",
+      "years": {
+        "2020": {
+          "alleS": null,
+          "fvS": null,
+          "plasser": null,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 50.1,
+          "pg_ord": 53.3
+        },
+        "2021": {
+          "alleS": 4492,
+          "fvS": 1110,
+          "plasser": 310,
+          "kvinner": 37.6,
+          "kvalifiserte": 4389,
+          "tilbud": 580,
+          "pg_fv": 51,
+          "pg_ord": 54.3
+        },
+        "2022": {
+          "alleS": 3910,
+          "fvS": 873,
+          "plasser": 205,
+          "kvinner": 38.8,
+          "kvalifiserte": 3828,
+          "tilbud": 376,
+          "pg_fv": 51.9,
+          "pg_ord": 55.9
+        },
+        "2023": {
+          "alleS": 4344,
+          "fvS": 999,
+          "plasser": 205,
+          "kvinner": 39.9,
+          "kvalifiserte": 4200,
+          "tilbud": 420,
+          "pg_fv": 52.2,
+          "pg_ord": 56.1
+        },
+        "2024": {
+          "alleS": 4443,
+          "fvS": 1059,
+          "plasser": 205,
+          "kvinner": 38.7,
+          "kvalifiserte": 4322,
+          "tilbud": 450,
+          "pg_fv": 52.3,
+          "pg_ord": 57
+        },
+        "2025": {
+          "alleS": 4566,
+          "fvS": 1149,
+          "plasser": 190,
+          "kvinner": 40,
+          "kvalifiserte": 4463,
+          "tilbud": 390,
+          "pg_fv": 53,
+          "pg_ord": 58.2
+        },
+        "2026": {
+          "alleS": 4656,
+          "fvS": 1161,
+          "plasser": 181,
+          "kvinner": 43.2,
+          "kvalifiserte": 4541,
+          "tilbud": 410,
+          "pg_fv": 52.7,
+          "pg_ord": 58.2
+        }
+      }
+    },
+    {
+      "id": "ntnu_siv",
+      "shortName": "NTNU Siv.",
+      "institusjon": "NTNU",
+      "studiekode": "194345",
+      "studiested": "Trondheim",
+      "type": "sivilokonom",
+      "years": {
+        "2022": {
+          "alleS": 1939,
+          "fvS": 450,
+          "plasser": 105,
+          "kvinner": 36,
+          "kvalifiserte": 1683,
+          "tilbud": 174,
+          "pg_fv": 53.5,
+          "pg_ord": 58
+        },
+        "2023": {
+          "alleS": 2035,
+          "fvS": 439,
+          "plasser": 105,
+          "kvinner": 42.8,
+          "kvalifiserte": 1811,
+          "tilbud": 220,
+          "pg_fv": 53.6,
+          "pg_ord": 59.1
+        },
+        "2024": {
+          "alleS": 2447,
+          "fvS": 496,
+          "plasser": 105,
+          "kvinner": 49,
+          "kvalifiserte": 2225,
+          "tilbud": 231,
+          "pg_fv": 53.9,
+          "pg_ord": 60.4
+        },
+        "2025": {
+          "alleS": 2387,
+          "fvS": 492,
+          "plasser": 105,
+          "kvinner": 47.2,
+          "kvalifiserte": 2153,
+          "tilbud": 200,
+          "pg_fv": 54.3,
+          "pg_ord": 61.3
+        },
+        "2026": {
+          "alleS": 2395,
+          "fvS": 416,
+          "plasser": 105,
+          "kvinner": 51.2,
+          "kvalifiserte": 2137,
+          "tilbud": 240,
+          "pg_fv": 54,
+          "pg_ord": 60.5
+        }
+      }
+    },
+    {
+      "id": "ntnu_alesund",
+      "shortName": "NTNU Ålesund",
+      "institusjon": "NTNU",
+      "studiekode": "194515",
+      "studiested": "Ålesund",
+      "type": "bachelor",
+      "years": {
+        "2025": {
+          "alleS": null,
+          "fvS": null,
+          "plasser": null,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 46.5,
+          "pg_ord": 49.1
+        },
+        "2026": {
+          "alleS": 1713,
+          "fvS": 241,
+          "plasser": 70,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 47.3,
+          "pg_ord": 50
+        }
+      }
+    },
+    {
+      "id": "ntnu_gjovik",
+      "shortName": "NTNU Gjøvik",
+      "institusjon": "NTNU",
+      "studiekode": "194591",
+      "studiested": "Gjøvik",
+      "type": "bachelor",
+      "years": {
+        "2025": {
+          "alleS": null,
+          "fvS": null,
+          "plasser": null,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 42.1,
+          "pg_ord": 41.8
+        },
+        "2026": {
+          "alleS": 802,
+          "fvS": 77,
+          "plasser": 55,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 42.2,
+          "pg_ord": 41.5
+        }
+      }
+    },
+    {
+      "id": "oslomet",
+      "shortName": "OsloMet",
+      "institusjon": "OsloMet – storbyuniversitetet",
+      "studiekode": "215369",
+      "studiested": "Oslo",
+      "type": "bachelor",
+      "years": {
+        "2020": {
+          "alleS": null,
+          "fvS": null,
+          "plasser": null,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 47.9,
+          "pg_ord": 53.6
+        },
+        "2021": {
+          "alleS": 4385,
+          "fvS": 996,
+          "plasser": 245,
+          "kvinner": 39.6,
+          "kvalifiserte": 4172,
+          "tilbud": 500,
+          "pg_fv": 48.6,
+          "pg_ord": 53.7
+        },
+        "2022": {
+          "alleS": 3948,
+          "fvS": 873,
+          "plasser": 245,
+          "kvinner": 47.9,
+          "kvalifiserte": 3784,
+          "tilbud": 520,
+          "pg_fv": 49.3,
+          "pg_ord": 52.3
+        },
+        "2023": {
+          "alleS": 4404,
+          "fvS": 934,
+          "plasser": 240,
+          "kvinner": 44.1,
+          "kvalifiserte": 4133,
+          "tilbud": 580,
+          "pg_fv": 48.6,
+          "pg_ord": 52.8
+        },
+        "2024": {
+          "alleS": 4769,
+          "fvS": 982,
+          "plasser": 290,
+          "kvinner": 39.6,
+          "kvalifiserte": 4488,
+          "tilbud": 600,
+          "pg_fv": 48.3,
+          "pg_ord": 52.2
+        },
+        "2025": {
+          "alleS": 4800,
+          "fvS": 1056,
+          "plasser": 300,
+          "kvinner": 40.5,
+          "kvalifiserte": 4509,
+          "tilbud": 610,
+          "pg_fv": 47.6,
+          "pg_ord": 52.7
+        },
+        "2026": {
+          "alleS": 5357,
+          "fvS": 1205,
+          "plasser": 280,
+          "kvinner": 44,
+          "kvalifiserte": 4990,
+          "tilbud": 590,
+          "pg_fv": 47.8,
+          "pg_ord": 52.8
+        }
+      }
+    },
+    {
+      "id": "oslomet_siv",
+      "shortName": "OsloMet Siv.",
+      "institusjon": "OsloMet – storbyuniversitetet",
+      "studiekode": "215345",
+      "studiested": "Oslo",
+      "type": "sivilokonom",
+      "years": {
+        "2023": {
+          "alleS": 1932,
+          "fvS": 392,
+          "plasser": 60,
+          "kvinner": 41.6,
+          "kvalifiserte": 1435,
+          "tilbud": 160,
+          "pg_fv": 50.9,
+          "pg_ord": 55.2
+        },
+        "2024": {
+          "alleS": 1757,
+          "fvS": 343,
+          "plasser": 95,
+          "kvinner": 45.8,
+          "kvalifiserte": 1364,
+          "tilbud": 180,
+          "pg_fv": 50.3,
+          "pg_ord": 55.8
+        },
+        "2025": {
+          "alleS": 1745,
+          "fvS": 336,
+          "plasser": 96,
+          "kvinner": 47.3,
+          "kvalifiserte": 1319,
+          "tilbud": 220,
+          "pg_fv": 49.3,
+          "pg_ord": 55.2
+        },
+        "2026": {
+          "alleS": 1668,
+          "fvS": 338,
+          "plasser": 120,
+          "kvinner": 49.4,
+          "kvalifiserte": 1226,
+          "tilbud": 320,
+          "pg_fv": 46.8,
+          "pg_ord": 51.3
+        }
+      }
+    },
+    {
+      "id": "uia_siv",
+      "shortName": "UiA Siv.",
+      "institusjon": "Universitetet i Agder",
+      "studiekode": "201345",
+      "studiested": "Kristiansand",
+      "type": "sivilokonom",
+      "years": {
+        "2020": {
+          "alleS": null,
+          "fvS": null,
+          "plasser": null,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 46,
+          "pg_ord": 47.2
+        },
+        "2021": {
+          "alleS": 1046,
+          "fvS": 206,
+          "plasser": 100,
+          "kvinner": 36.9,
+          "kvalifiserte": 829,
+          "tilbud": 240,
+          "pg_fv": 46,
+          "pg_ord": 46.5
+        },
+        "2022": {
+          "alleS": 873,
+          "fvS": 135,
+          "plasser": 100,
+          "kvinner": 38.5,
+          "kvalifiserte": 693,
+          "tilbud": 220,
+          "pg_fv": 44.7,
+          "pg_ord": 44.2
+        },
+        "2023": {
+          "alleS": 937,
+          "fvS": 154,
+          "plasser": 100,
+          "kvinner": 33.8,
+          "kvalifiserte": 701,
+          "tilbud": 214,
+          "pg_fv": 45.6,
+          "pg_ord": 45.6
+        },
+        "2024": {
+          "alleS": 1074,
+          "fvS": 172,
+          "plasser": 100,
+          "kvinner": 43.6,
+          "kvalifiserte": 760,
+          "tilbud": 250,
+          "pg_fv": 44.8,
+          "pg_ord": 46
+        },
+        "2025": {
+          "alleS": 1051,
+          "fvS": 178,
+          "plasser": 100,
+          "kvinner": 31.5,
+          "kvalifiserte": 800,
+          "tilbud": 250,
+          "pg_fv": 45.2,
+          "pg_ord": 45.9
+        },
+        "2026": {
+          "alleS": 1156,
+          "fvS": 199,
+          "plasser": 100,
+          "kvinner": 34.2,
+          "kvalifiserte": 847,
+          "tilbud": 260,
+          "pg_fv": 45.6,
+          "pg_ord": 46.5
+        }
+      }
+    },
+    {
+      "id": "uia",
+      "shortName": "UiA",
+      "institusjon": "Universitetet i Agder",
+      "studiekode": "201369",
+      "studiested": "Kristiansand",
+      "type": "bachelor",
+      "years": {
+        "2020": {
+          "alleS": null,
+          "fvS": null,
+          "plasser": null,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 45,
+          "pg_ord": 47.1
+        },
+        "2021": {
+          "alleS": 2226,
+          "fvS": 443,
+          "plasser": 150,
+          "kvinner": 38.1,
+          "kvalifiserte": 2150,
+          "tilbud": 328,
+          "pg_fv": 46.4,
+          "pg_ord": 48
+        },
+        "2022": {
+          "alleS": 1872,
+          "fvS": 369,
+          "plasser": 150,
+          "kvinner": 37.9,
+          "kvalifiserte": 1800,
+          "tilbud": 300,
+          "pg_fv": 46.3,
+          "pg_ord": 47.2
+        },
+        "2023": {
+          "alleS": 2108,
+          "fvS": 431,
+          "plasser": 150,
+          "kvinner": 37.8,
+          "kvalifiserte": 2007,
+          "tilbud": 300,
+          "pg_fv": 47.4,
+          "pg_ord": 49
+        },
+        "2024": {
+          "alleS": 2394,
+          "fvS": 485,
+          "plasser": 150,
+          "kvinner": 39.4,
+          "kvalifiserte": 2281,
+          "tilbud": 300,
+          "pg_fv": 47.8,
+          "pg_ord": 50
+        },
+        "2025": {
+          "alleS": 2320,
+          "fvS": 501,
+          "plasser": 150,
+          "kvinner": 40.7,
+          "kvalifiserte": 2202,
+          "tilbud": 300,
+          "pg_fv": 48.4,
+          "pg_ord": 50
+        },
+        "2026": {
+          "alleS": 2603,
+          "fvS": 507,
+          "plasser": 150,
+          "kvinner": 41.2,
+          "kvalifiserte": 2505,
+          "tilbud": 290,
+          "pg_fv": 48.8,
+          "pg_ord": 50.9
+        }
+      }
+    },
+    {
+      "id": "uit",
+      "shortName": "UiT Tromsø",
+      "institusjon": "UiT Norges arktiske universitet",
+      "studiekode": "186369",
+      "studiested": "Tromsø",
+      "type": "bachelor",
+      "years": {
+        "2020": {
+          "alleS": null,
+          "fvS": null,
+          "plasser": null,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 40,
+          "pg_ord": 45.7
+        },
+        "2021": {
+          "alleS": 1136,
+          "fvS": 242,
+          "plasser": 140,
+          "kvinner": 32.6,
+          "kvalifiserte": 1080,
+          "tilbud": 220,
+          "pg_fv": 41.5,
+          "pg_ord": 45.5
+        },
+        "2022": {
+          "alleS": 908,
+          "fvS": 168,
+          "plasser": 130,
+          "kvinner": 32.1,
+          "kvalifiserte": 846,
+          "tilbud": 230,
+          "pg_fv": 35.9,
+          "pg_ord": 37.7
+        },
+        "2023": {
+          "alleS": 1014,
+          "fvS": 202,
+          "plasser": 130,
+          "kvinner": 35.6,
+          "kvalifiserte": 936,
+          "tilbud": 220,
+          "pg_fv": 42.3,
+          "pg_ord": 42.7
+        },
+        "2024": {
+          "alleS": 1032,
+          "fvS": 190,
+          "plasser": 130,
+          "kvinner": 33.7,
+          "kvalifiserte": 979,
+          "tilbud": 300,
+          "pg_fv": 38.5,
+          "pg_ord": 38.5
+        },
+        "2025": {
+          "alleS": 1047,
+          "fvS": 193,
+          "plasser": 140,
+          "kvinner": 27.5,
+          "kvalifiserte": 990,
+          "tilbud": 300,
+          "pg_fv": 39.1,
+          "pg_ord": 36
+        },
+        "2026": {
+          "alleS": 1120,
+          "fvS": 186,
+          "plasser": 140,
+          "kvinner": 30.1,
+          "kvalifiserte": 1051,
+          "tilbud": 300,
+          "pg_fv": 40.3,
+          "pg_ord": 38.6
+        }
+      }
+    },
+    {
+      "id": "uit_alta",
+      "shortName": "UiT Alta",
+      "institusjon": "UiT Norges arktiske universitet",
+      "studiekode": "186468",
+      "studiested": "Alta",
+      "type": "bachelor",
+      "years": {
+        "2020": {
+          "alleS": null,
+          "fvS": null,
+          "plasser": null,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2021": {
+          "alleS": 1951,
+          "fvS": 605,
+          "plasser": 300,
+          "kvinner": 55.2,
+          "kvalifiserte": 1806,
+          "tilbud": 500,
+          "pg_fv": 0,
+          "pg_ord": 46.6
+        },
+        "2022": {
+          "alleS": 1489,
+          "fvS": 483,
+          "plasser": 300,
+          "kvinner": 54.5,
+          "kvalifiserte": 1380,
+          "tilbud": 500,
+          "pg_fv": 0,
+          "pg_ord": 44
+        },
+        "2023": {
+          "alleS": 1911,
+          "fvS": 650,
+          "plasser": 300,
+          "kvinner": 52.6,
+          "kvalifiserte": 1780,
+          "tilbud": 500,
+          "pg_fv": 0,
+          "pg_ord": 47.6
+        },
+        "2024": {
+          "alleS": 2523,
+          "fvS": 809,
+          "plasser": 300,
+          "kvinner": 53.2,
+          "kvalifiserte": 2368,
+          "tilbud": 500,
+          "pg_fv": 0,
+          "pg_ord": 50
+        },
+        "2025": {
+          "alleS": 1827,
+          "fvS": 538,
+          "plasser": 350,
+          "kvinner": 53.7,
+          "kvalifiserte": 1742,
+          "tilbud": 600,
+          "pg_fv": 0,
+          "pg_ord": 47
+        },
+        "2026": {
+          "alleS": 1813,
+          "fvS": 469,
+          "plasser": 350,
+          "kvinner": 52.9,
+          "kvalifiserte": 1725,
+          "tilbud": 550,
+          "pg_fv": 0,
+          "pg_ord": 45.8
+        }
+      }
+    },
+    {
+      "id": "uit_harstad",
+      "shortName": "UiT Harstad",
+      "institusjon": "UiT Norges arktiske universitet",
+      "studiekode": "186035",
+      "studiested": "Harstad",
+      "type": "bachelor",
+      "years": {
+        "2021": {
+          "alleS": 243,
+          "fvS": 43,
+          "plasser": 110,
+          "kvinner": 44.2,
+          "kvalifiserte": 216,
+          "tilbud": 66,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2022": {
+          "alleS": 186,
+          "fvS": 42,
+          "plasser": 110,
+          "kvinner": 45.2,
+          "kvalifiserte": 158,
+          "tilbud": 44,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2023": {
+          "alleS": 157,
+          "fvS": 30,
+          "plasser": 110,
+          "kvinner": 46.7,
+          "kvalifiserte": 126,
+          "tilbud": 38,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2024": {
+          "alleS": 181,
+          "fvS": 32,
+          "plasser": 110,
+          "kvinner": 43.8,
+          "kvalifiserte": 157,
+          "tilbud": 44,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2025": {
+          "alleS": 143,
+          "fvS": 41,
+          "plasser": 50,
+          "kvinner": 53.7,
+          "kvalifiserte": 132,
+          "tilbud": 45,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2026": {
+          "alleS": 328,
+          "fvS": 70,
+          "plasser": 60,
+          "kvinner": 58.6,
+          "kvalifiserte": 290,
+          "tilbud": 94,
+          "pg_fv": 0,
+          "pg_ord": 0
+        }
+      }
+    },
+    {
+      "id": "uis",
+      "shortName": "UiS",
+      "institusjon": "Universitetet i Stavanger",
+      "studiekode": "217369",
+      "studiested": "Stavanger",
+      "type": "bachelor",
+      "years": {
+        "2020": {
+          "alleS": null,
+          "fvS": null,
+          "plasser": null,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 43.2,
+          "pg_ord": 46.4
+        },
+        "2021": {
+          "alleS": 2807,
+          "fvS": 564,
+          "plasser": 228,
+          "kvinner": 38.8,
+          "kvalifiserte": 2647,
+          "tilbud": 500,
+          "pg_fv": 43.5,
+          "pg_ord": 46.5
+        },
+        "2022": {
+          "alleS": 2389,
+          "fvS": 553,
+          "plasser": 211,
+          "kvinner": 37.8,
+          "kvalifiserte": 2266,
+          "tilbud": 475,
+          "pg_fv": 43.6,
+          "pg_ord": 46.5
+        },
+        "2023": {
+          "alleS": 2361,
+          "fvS": 587,
+          "plasser": 191,
+          "kvinner": 41.2,
+          "kvalifiserte": 2189,
+          "tilbud": 400,
+          "pg_fv": 46.1,
+          "pg_ord": 48
+        },
+        "2024": {
+          "alleS": 2477,
+          "fvS": 483,
+          "plasser": 180,
+          "kvinner": 37.1,
+          "kvalifiserte": 2317,
+          "tilbud": 480,
+          "pg_fv": 45,
+          "pg_ord": 46.1
+        },
+        "2025": {
+          "alleS": 2624,
+          "fvS": 546,
+          "plasser": 180,
+          "kvinner": 38.1,
+          "kvalifiserte": 2433,
+          "tilbud": 490,
+          "pg_fv": 44.9,
+          "pg_ord": 46.3
+        },
+        "2026": {
+          "alleS": 3178,
+          "fvS": 674,
+          "plasser": 140,
+          "kvinner": 38,
+          "kvalifiserte": 2992,
+          "tilbud": 460,
+          "pg_fv": 46.3,
+          "pg_ord": 48
+        }
+      }
+    },
+    {
+      "id": "usn",
+      "shortName": "USN Drammen",
+      "institusjon": "Universitetet i Sørøst-Norge",
+      "studiekode": "222330",
+      "studiested": "Drammen",
+      "type": "bachelor",
+      "years": {
+        "2020": {
+          "alleS": null,
+          "fvS": null,
+          "plasser": null,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 41.7,
+          "pg_ord": 47
+        },
+        "2021": {
+          "alleS": null,
+          "fvS": null,
+          "plasser": null,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 42,
+          "pg_ord": 47.2
+        },
+        "2022": {
+          "alleS": null,
+          "fvS": null,
+          "plasser": null,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 40,
+          "pg_ord": 46.6
+        },
+        "2023": {
+          "alleS": null,
+          "fvS": null,
+          "plasser": null,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 41.4,
+          "pg_ord": 45.5
+        },
+        "2024": {
+          "alleS": null,
+          "fvS": null,
+          "plasser": null,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 40.1,
+          "pg_ord": 44.5
+        },
+        "2025": {
+          "alleS": null,
+          "fvS": null,
+          "plasser": null,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 40.2,
+          "pg_ord": 43.7
+        },
+        "2026": {
+          "alleS": null,
+          "fvS": null,
+          "plasser": null,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 40.8,
+          "pg_ord": 46
+        }
+      }
+    },
+    {
+      "id": "usn_honefoss",
+      "shortName": "USN Hønefoss",
+      "institusjon": "Universitetet i Sørøst-Norge",
+      "studiekode": "222097",
+      "studiested": "Hønefoss",
+      "type": "bachelor",
+      "years": {
+        "2024": {
+          "alleS": 177,
+          "fvS": 22,
+          "plasser": 20,
+          "kvinner": 72.7,
+          "kvalifiserte": 162,
+          "tilbud": 42,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2025": {
+          "alleS": 134,
+          "fvS": 13,
+          "plasser": 20,
+          "kvinner": 30.8,
+          "kvalifiserte": 115,
+          "tilbud": 27,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2026": {
+          "alleS": 167,
+          "fvS": 20,
+          "plasser": 20,
+          "kvinner": 45,
+          "kvalifiserte": 146,
+          "tilbud": 35,
+          "pg_fv": 0,
+          "pg_ord": 0
+        }
+      }
+    },
+    {
+      "id": "usn_bo",
+      "shortName": "USN Bø",
+      "institusjon": "Universitetet i Sørøst-Norge",
+      "studiekode": "222164",
+      "studiested": "Bø",
+      "type": "bachelor",
+      "years": {
+        "2024": {
+          "alleS": 164,
+          "fvS": 25,
+          "plasser": 20,
+          "kvinner": 44,
+          "kvalifiserte": 148,
+          "tilbud": 38,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2025": {
+          "alleS": 130,
+          "fvS": 22,
+          "plasser": 20,
+          "kvinner": 54.5,
+          "kvalifiserte": 119,
+          "tilbud": 20,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2026": {
+          "alleS": 144,
+          "fvS": 29,
+          "plasser": 20,
+          "kvinner": 44.8,
+          "kvalifiserte": 128,
+          "tilbud": 45,
+          "pg_fv": 0,
+          "pg_ord": 0
+        }
+      }
+    },
+    {
+      "id": "usn_kongsberg",
+      "shortName": "USN Kongsberg",
+      "institusjon": "Universitetet i Sørøst-Norge",
+      "studiekode": "222625",
+      "studiested": "Kongsberg",
+      "type": "bachelor",
+      "years": {
+        "2025": {
+          "alleS": 201,
+          "fvS": 25,
+          "plasser": 25,
+          "kvinner": 56,
+          "kvalifiserte": 175,
+          "tilbud": 43,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2026": {
+          "alleS": 224,
+          "fvS": 22,
+          "plasser": 25,
+          "kvinner": 68.2,
+          "kvalifiserte": 191,
+          "tilbud": 42,
+          "pg_fv": 0,
+          "pg_ord": 0
+        }
+      }
+    },
+    {
+      "id": "inn",
+      "shortName": "INN Lhm.",
+      "institusjon": "Universitetet i Innlandet",
+      "studiekode": "209035",
+      "studiested": "Lillehammer",
+      "type": "bachelor",
+      "years": {
+        "2020": {
+          "alleS": null,
+          "fvS": null,
+          "plasser": null,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 38.4,
+          "pg_ord": 42.6
+        },
+        "2021": {
+          "alleS": 1019,
+          "fvS": 132,
+          "plasser": 70,
+          "kvinner": 37.9,
+          "kvalifiserte": 968,
+          "tilbud": 180,
+          "pg_fv": 39.6,
+          "pg_ord": 42.2
+        },
+        "2022": {
+          "alleS": 907,
+          "fvS": 110,
+          "plasser": 80,
+          "kvinner": 37.3,
+          "kvalifiserte": 847,
+          "tilbud": 150,
+          "pg_fv": 39.5,
+          "pg_ord": 40.8
+        },
+        "2023": {
+          "alleS": 743,
+          "fvS": 114,
+          "plasser": 85,
+          "kvinner": 39.5,
+          "kvalifiserte": 674,
+          "tilbud": 157,
+          "pg_fv": 40.5,
+          "pg_ord": 40.3
+        },
+        "2024": {
+          "alleS": 974,
+          "fvS": 129,
+          "plasser": 80,
+          "kvinner": 38.8,
+          "kvalifiserte": 881,
+          "tilbud": 154,
+          "pg_fv": 41.9,
+          "pg_ord": 42.4
+        },
+        "2025": {
+          "alleS": 786,
+          "fvS": 120,
+          "plasser": 80,
+          "kvinner": 36.7,
+          "kvalifiserte": 726,
+          "tilbud": 165,
+          "pg_fv": 41.9,
+          "pg_ord": 41.8
+        },
+        "2026": {
+          "alleS": 992,
+          "fvS": 137,
+          "plasser": 80,
+          "kvinner": 27,
+          "kvalifiserte": 920,
+          "tilbud": 155,
+          "pg_fv": 43.3,
+          "pg_ord": 44.6
+        }
+      }
+    },
+    {
+      "id": "inn_rena",
+      "shortName": "INN Rena",
+      "institusjon": "Universitetet i Innlandet",
+      "studiekode": "209369",
+      "studiested": "Rena",
+      "type": "bachelor",
+      "years": {
+        "2021": {
+          "alleS": 384,
+          "fvS": 38,
+          "plasser": 45,
+          "kvinner": 42.1,
+          "kvalifiserte": 344,
+          "tilbud": 116,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2022": {
+          "alleS": 279,
+          "fvS": 18,
+          "plasser": 40,
+          "kvinner": 33.3,
+          "kvalifiserte": 238,
+          "tilbud": 34,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2023": {
+          "alleS": 213,
+          "fvS": 23,
+          "plasser": 40,
+          "kvinner": 30.4,
+          "kvalifiserte": 182,
+          "tilbud": 48,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2024": {
+          "alleS": 240,
+          "fvS": 21,
+          "plasser": 40,
+          "kvinner": 28.6,
+          "kvalifiserte": 198,
+          "tilbud": 47,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2025": {
+          "alleS": 210,
+          "fvS": 22,
+          "plasser": 40,
+          "kvinner": 27.3,
+          "kvalifiserte": 184,
+          "tilbud": 37,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2026": {
+          "alleS": 236,
+          "fvS": 27,
+          "plasser": 40,
+          "kvinner": 55.6,
+          "kvalifiserte": 204,
+          "tilbud": 52,
+          "pg_fv": 0,
+          "pg_ord": 0
+        }
+      }
+    },
+    {
+      "id": "nord",
+      "shortName": "Nord Bodø",
+      "institusjon": "Nord universitet",
+      "studiekode": "204342",
+      "studiested": "Bodø",
+      "type": "bachelor",
+      "years": {
+        "2020": {
+          "alleS": null,
+          "fvS": null,
+          "plasser": null,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 35.7,
+          "pg_ord": 42.8
+        },
+        "2021": {
+          "alleS": 533,
+          "fvS": 97,
+          "plasser": 60,
+          "kvinner": 39.2,
+          "kvalifiserte": 495,
+          "tilbud": 140,
+          "pg_fv": 35.7,
+          "pg_ord": 41.2
+        },
+        "2022": {
+          "alleS": 459,
+          "fvS": 79,
+          "plasser": 70,
+          "kvinner": 35.4,
+          "kvalifiserte": 419,
+          "tilbud": 100,
+          "pg_fv": 34.7,
+          "pg_ord": 37.8
+        },
+        "2023": {
+          "alleS": 437,
+          "fvS": 82,
+          "plasser": 70,
+          "kvinner": 34.1,
+          "kvalifiserte": 398,
+          "tilbud": 100,
+          "pg_fv": 33.7,
+          "pg_ord": 41.3
+        },
+        "2024": {
+          "alleS": 510,
+          "fvS": 87,
+          "plasser": 60,
+          "kvinner": 28.7,
+          "kvalifiserte": 455,
+          "tilbud": 144,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2025": {
+          "alleS": 381,
+          "fvS": 76,
+          "plasser": 50,
+          "kvinner": 35.5,
+          "kvalifiserte": 351,
+          "tilbud": 104,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2026": {
+          "alleS": 449,
+          "fvS": 76,
+          "plasser": 60,
+          "kvinner": 44.7,
+          "kvalifiserte": 403,
+          "tilbud": 116,
+          "pg_fv": 0,
+          "pg_ord": 0
+        }
+      }
+    },
+    {
+      "id": "nord_steinkjer",
+      "shortName": "Nord Stk.",
+      "institusjon": "Nord universitet",
+      "studiekode": "204404",
+      "studiested": "Steinkjer",
+      "type": "bachelor",
+      "years": {
+        "2020": {
+          "alleS": null,
+          "fvS": null,
+          "plasser": null,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 0,
+          "pg_ord": 42.5
+        },
+        "2021": {
+          "alleS": 279,
+          "fvS": 53,
+          "plasser": 50,
+          "kvinner": 52.8,
+          "kvalifiserte": 255,
+          "tilbud": 90,
+          "pg_fv": 0,
+          "pg_ord": 40.3
+        },
+        "2022": {
+          "alleS": 256,
+          "fvS": 46,
+          "plasser": 50,
+          "kvinner": 54.3,
+          "kvalifiserte": 235,
+          "tilbud": 70,
+          "pg_fv": 0,
+          "pg_ord": 38.3
+        },
+        "2023": {
+          "alleS": 197,
+          "fvS": 39,
+          "plasser": 50,
+          "kvinner": 41,
+          "kvalifiserte": 176,
+          "tilbud": 62,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2024": {
+          "alleS": 286,
+          "fvS": 53,
+          "plasser": 40,
+          "kvinner": 43.4,
+          "kvalifiserte": 253,
+          "tilbud": 89,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2025": {
+          "alleS": 223,
+          "fvS": 44,
+          "plasser": 40,
+          "kvinner": 50,
+          "kvalifiserte": 197,
+          "tilbud": 86,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2026": {
+          "alleS": 240,
+          "fvS": 40,
+          "plasser": 40,
+          "kvinner": 47.5,
+          "kvalifiserte": 211,
+          "tilbud": 69,
+          "pg_fv": 0,
+          "pg_ord": 0
+        }
+      }
+    },
+    {
+      "id": "hvl_bergen",
+      "shortName": "HVL Bergen",
+      "institusjon": "Høgskulen på Vestlandet",
+      "studiekode": "203369",
+      "studiested": "Bergen",
+      "type": "bachelor",
+      "years": {
+        "2020": {
+          "alleS": null,
+          "fvS": null,
+          "plasser": null,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 47.5,
+          "pg_ord": 50.9
+        },
+        "2021": {
+          "alleS": 3147,
+          "fvS": 622,
+          "plasser": 165,
+          "kvinner": 40.4,
+          "kvalifiserte": 3046,
+          "tilbud": 325,
+          "pg_fv": 48.6,
+          "pg_ord": 52.6
+        },
+        "2022": {
+          "alleS": 2813,
+          "fvS": 580,
+          "plasser": 145,
+          "kvinner": 43.3,
+          "kvalifiserte": 2729,
+          "tilbud": 350,
+          "pg_fv": 49,
+          "pg_ord": 52.2
+        },
+        "2023": {
+          "alleS": 2938,
+          "fvS": 632,
+          "plasser": 124,
+          "kvinner": 41.6,
+          "kvalifiserte": 2825,
+          "tilbud": 260,
+          "pg_fv": 51,
+          "pg_ord": 54.4
+        },
+        "2024": {
+          "alleS": 3359,
+          "fvS": 738,
+          "plasser": 124,
+          "kvinner": 44.6,
+          "kvalifiserte": 3224,
+          "tilbud": 340,
+          "pg_fv": 50.9,
+          "pg_ord": 54.3
+        },
+        "2025": {
+          "alleS": 3580,
+          "fvS": 752,
+          "plasser": 114,
+          "kvinner": 46.4,
+          "kvalifiserte": 3452,
+          "tilbud": 244,
+          "pg_fv": 51.7,
+          "pg_ord": 55.8
+        },
+        "2026": {
+          "alleS": 3629,
+          "fvS": 789,
+          "plasser": 114,
+          "kvinner": 48,
+          "kvalifiserte": 3501,
+          "tilbud": 320,
+          "pg_fv": 51.3,
+          "pg_ord": 55.8
+        }
+      }
+    },
+    {
+      "id": "hvl_haugesund",
+      "shortName": "HVL Hgsd.",
+      "institusjon": "Høgskulen på Vestlandet",
+      "studiekode": "203404",
+      "studiested": "Haugesund",
+      "type": "bachelor",
+      "years": {
+        "2020": {
+          "alleS": null,
+          "fvS": null,
+          "plasser": null,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 32.3,
+          "pg_ord": 39.5
+        },
+        "2021": {
+          "alleS": 726,
+          "fvS": 125,
+          "plasser": 97,
+          "kvinner": 48.8,
+          "kvalifiserte": 651,
+          "tilbud": 236,
+          "pg_fv": 33,
+          "pg_ord": 38.5
+        },
+        "2022": {
+          "alleS": 598,
+          "fvS": 111,
+          "plasser": 92,
+          "kvinner": 55,
+          "kvalifiserte": 537,
+          "tilbud": 189,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2023": {
+          "alleS": 476,
+          "fvS": 86,
+          "plasser": 80,
+          "kvinner": 51.2,
+          "kvalifiserte": 418,
+          "tilbud": 160,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2024": {
+          "alleS": 541,
+          "fvS": 88,
+          "plasser": 80,
+          "kvinner": 47.7,
+          "kvalifiserte": 493,
+          "tilbud": 182,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2025": {
+          "alleS": 564,
+          "fvS": 114,
+          "plasser": 80,
+          "kvinner": 46.5,
+          "kvalifiserte": 489,
+          "tilbud": 173,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2026": {
+          "alleS": 613,
+          "fvS": 112,
+          "plasser": 80,
+          "kvinner": 56.2,
+          "kvalifiserte": 549,
+          "tilbud": 215,
+          "pg_fv": 33.3,
+          "pg_ord": 28.7
+        }
+      }
+    },
+    {
+      "id": "hvl_sogndal",
+      "shortName": "HVL Sogndal",
+      "institusjon": "Høgskulen på Vestlandet",
+      "studiekode": "203515",
+      "studiested": "Sogndal",
+      "type": "bachelor",
+      "years": {
+        "2020": {
+          "alleS": null,
+          "fvS": null,
+          "plasser": null,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 37.5,
+          "pg_ord": 38.6
+        },
+        "2021": {
+          "alleS": 517,
+          "fvS": 77,
+          "plasser": 55,
+          "kvinner": 40.3,
+          "kvalifiserte": 481,
+          "tilbud": 126,
+          "pg_fv": 36,
+          "pg_ord": 39.3
+        },
+        "2022": {
+          "alleS": 446,
+          "fvS": 65,
+          "plasser": 50,
+          "kvinner": 33.8,
+          "kvalifiserte": 402,
+          "tilbud": 119,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2023": {
+          "alleS": 381,
+          "fvS": 62,
+          "plasser": 50,
+          "kvinner": 30.6,
+          "kvalifiserte": 344,
+          "tilbud": 122,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2024": {
+          "alleS": 432,
+          "fvS": 54,
+          "plasser": 50,
+          "kvinner": 31.5,
+          "kvalifiserte": 406,
+          "tilbud": 115,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2025": {
+          "alleS": 465,
+          "fvS": 63,
+          "plasser": 50,
+          "kvinner": 41.3,
+          "kvalifiserte": 435,
+          "tilbud": 132,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2026": {
+          "alleS": 487,
+          "fvS": 66,
+          "plasser": 60,
+          "kvinner": 31.8,
+          "kvalifiserte": 445,
+          "tilbud": 142,
+          "pg_fv": 0,
+          "pg_ord": 0
+        }
+      }
+    },
+    {
+      "id": "nla_oslo",
+      "shortName": "NLA Oslo",
+      "institusjon": "NLA Høgskolen",
+      "studiekode": "254470",
+      "studiested": "Oslo",
+      "type": "bachelor",
+      "years": {
+        "2020": {
+          "alleS": null,
+          "fvS": null,
+          "plasser": null,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 41.6,
+          "pg_ord": 46
+        },
+        "2021": {
+          "alleS": 1626,
+          "fvS": 133,
+          "plasser": 45,
+          "kvinner": 29.3,
+          "kvalifiserte": 1512,
+          "tilbud": 220,
+          "pg_fv": 42.6,
+          "pg_ord": 45.8
+        },
+        "2022": {
+          "alleS": 1696,
+          "fvS": 168,
+          "plasser": 50,
+          "kvinner": 39.3,
+          "kvalifiserte": 1567,
+          "tilbud": 230,
+          "pg_fv": 42,
+          "pg_ord": 44.8
+        },
+        "2023": {
+          "alleS": 1892,
+          "fvS": 156,
+          "plasser": 76,
+          "kvinner": 32.1,
+          "kvalifiserte": 1683,
+          "tilbud": 360,
+          "pg_fv": 42.1,
+          "pg_ord": 42.1
+        },
+        "2024": {
+          "alleS": 1760,
+          "fvS": 136,
+          "plasser": 70,
+          "kvinner": 30.1,
+          "kvalifiserte": 1582,
+          "tilbud": 350,
+          "pg_fv": 40.7,
+          "pg_ord": 41.2
+        },
+        "2025": {
+          "alleS": 1753,
+          "fvS": 158,
+          "plasser": 70,
+          "kvinner": 24.7,
+          "kvalifiserte": 1550,
+          "tilbud": 360,
+          "pg_fv": 39.5,
+          "pg_ord": 39.5
+        },
+        "2026": {
+          "alleS": 1737,
+          "fvS": 160,
+          "plasser": 70,
+          "kvinner": 26.9,
+          "kvalifiserte": 1533,
+          "tilbud": 360,
+          "pg_fv": 38.9,
+          "pg_ord": 40.4
+        }
+      }
+    },
+    {
+      "id": "nla_bergen",
+      "shortName": "NLA Bergen",
+      "institusjon": "NLA Høgskolen",
+      "studiekode": "254515",
+      "studiested": "Bergen",
+      "type": "bachelor",
+      "years": {
+        "2024": {
+          "alleS": 1445,
+          "fvS": 124,
+          "plasser": 20,
+          "kvinner": 27.4,
+          "kvalifiserte": 1332,
+          "tilbud": 160,
+          "pg_fv": 46.4,
+          "pg_ord": 48.2
+        },
+        "2025": {
+          "alleS": 1504,
+          "fvS": 102,
+          "plasser": 25,
+          "kvinner": 40.2,
+          "kvalifiserte": 1435,
+          "tilbud": 160,
+          "pg_fv": 46.8,
+          "pg_ord": 48.4
+        },
+        "2026": {
+          "alleS": 1610,
+          "fvS": 117,
+          "plasser": 25,
+          "kvinner": 36.8,
+          "kvalifiserte": 1524,
+          "tilbud": 180,
+          "pg_fv": 46.4,
+          "pg_ord": 47.5
+        }
+      }
+    },
+    {
+      "id": "nla_krs",
+      "shortName": "NLA Krs.",
+      "institusjon": "NLA Høgskolen",
+      "studiekode": "254035",
+      "studiested": "Kristiansand",
+      "type": "bachelor",
+      "years": {
+        "2021": {
+          "alleS": 536,
+          "fvS": 31,
+          "plasser": 25,
+          "kvinner": 25.8,
+          "kvalifiserte": 493,
+          "tilbud": 120,
+          "pg_fv": 38.6,
+          "pg_ord": 38
+        },
+        "2022": {
+          "alleS": 636,
+          "fvS": 32,
+          "plasser": 30,
+          "kvinner": 18.8,
+          "kvalifiserte": 577,
+          "tilbud": 150,
+          "pg_fv": 36,
+          "pg_ord": 33.5
+        },
+        "2023": {
+          "alleS": 652,
+          "fvS": 37,
+          "plasser": 38,
+          "kvinner": 54.1,
+          "kvalifiserte": 548,
+          "tilbud": 130,
+          "pg_fv": 38.2,
+          "pg_ord": 36.2
+        },
+        "2024": {
+          "alleS": 545,
+          "fvS": 40,
+          "plasser": 35,
+          "kvinner": 25,
+          "kvalifiserte": 481,
+          "tilbud": 150,
+          "pg_fv": 36.3,
+          "pg_ord": 32.4
+        },
+        "2025": {
+          "alleS": 610,
+          "fvS": 38,
+          "plasser": 25,
+          "kvinner": 23.7,
+          "kvalifiserte": 548,
+          "tilbud": 150,
+          "pg_fv": 36.3,
+          "pg_ord": 30.4
+        },
+        "2026": {
+          "alleS": 605,
+          "fvS": 38,
+          "plasser": 25,
+          "kvinner": 23.7,
+          "kvalifiserte": 538,
+          "tilbud": 150,
+          "pg_fv": 36.2,
+          "pg_ord": 32.5
+        }
+      }
+    },
+    {
+      "id": "hiof",
+      "shortName": "HiØ Halden",
+      "institusjon": "Høgskolen i Østfold",
+      "studiekode": "224035",
+      "studiested": "Halden",
+      "type": "bachelor",
+      "years": {
+        "2020": {
+          "alleS": null,
+          "fvS": null,
+          "plasser": null,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 35,
+          "pg_ord": 41.5
+        },
+        "2021": {
+          "alleS": 923,
+          "fvS": 144,
+          "plasser": 85,
+          "kvinner": 40.3,
+          "kvalifiserte": 833,
+          "tilbud": 172,
+          "pg_fv": 37.9,
+          "pg_ord": 42.2
+        },
+        "2022": {
+          "alleS": 746,
+          "fvS": 127,
+          "plasser": 80,
+          "kvinner": 37.8,
+          "kvalifiserte": 666,
+          "tilbud": 162,
+          "pg_fv": 36.1,
+          "pg_ord": 38.5
+        },
+        "2023": {
+          "alleS": 752,
+          "fvS": 122,
+          "plasser": 75,
+          "kvinner": 36.9,
+          "kvalifiserte": 663,
+          "tilbud": 172,
+          "pg_fv": 36.8,
+          "pg_ord": 37.7
+        },
+        "2024": {
+          "alleS": 858,
+          "fvS": 147,
+          "plasser": 75,
+          "kvinner": 27.2,
+          "kvalifiserte": 728,
+          "tilbud": 241,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2025": {
+          "alleS": 776,
+          "fvS": 126,
+          "plasser": 90,
+          "kvinner": 34.9,
+          "kvalifiserte": 665,
+          "tilbud": 193,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2026": {
+          "alleS": 755,
+          "fvS": 159,
+          "plasser": 90,
+          "kvinner": 38.4,
+          "kvalifiserte": 646,
+          "tilbud": 239,
+          "pg_fv": 0,
+          "pg_ord": 0
+        }
+      }
+    },
+    {
+      "id": "himolde",
+      "shortName": "HiMolde",
+      "institusjon": "Høgskolen i Molde",
+      "studiekode": "211369",
+      "studiested": "Molde",
+      "type": "bachelor",
+      "years": {
+        "2021": {
+          "alleS": 560,
+          "fvS": 97,
+          "plasser": 60,
+          "kvinner": 53.6,
+          "kvalifiserte": 500,
+          "tilbud": 160,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2022": {
+          "alleS": 458,
+          "fvS": 91,
+          "plasser": 60,
+          "kvinner": 47.3,
+          "kvalifiserte": 412,
+          "tilbud": 126,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2023": {
+          "alleS": 354,
+          "fvS": 64,
+          "plasser": 60,
+          "kvinner": 59.4,
+          "kvalifiserte": 317,
+          "tilbud": 101,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2024": {
+          "alleS": 479,
+          "fvS": 89,
+          "plasser": 60,
+          "kvinner": 39.3,
+          "kvalifiserte": 419,
+          "tilbud": 128,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2025": {
+          "alleS": 474,
+          "fvS": 69,
+          "plasser": 60,
+          "kvinner": 44.9,
+          "kvalifiserte": 423,
+          "tilbud": 139,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2026": {
+          "alleS": 470,
+          "fvS": 79,
+          "plasser": 60,
+          "kvinner": 36.7,
+          "kvalifiserte": 427,
+          "tilbud": 128,
+          "pg_fv": 0,
+          "pg_ord": 0
+        }
+      }
+    },
+    {
+      "id": "usn_siv",
+      "shortName": "USN Siv.",
+      "institusjon": "Universitetet i Sørøst-Norge",
+      "studiekode": "222345",
+      "studiested": "Ringerike",
+      "type": "sivilokonom",
+      "years": {
+        "2021": {
+          "alleS": 464,
+          "fvS": 73,
+          "plasser": 40,
+          "kvinner": 50.7,
+          "kvalifiserte": 323,
+          "tilbud": 131,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2022": {
+          "alleS": 362,
+          "fvS": 59,
+          "plasser": 40,
+          "kvinner": 40.7,
+          "kvalifiserte": 244,
+          "tilbud": 83,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2023": {
+          "alleS": 338,
+          "fvS": 31,
+          "plasser": 40,
+          "kvinner": 35.5,
+          "kvalifiserte": 213,
+          "tilbud": 74,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2024": {
+          "alleS": 288,
+          "fvS": 33,
+          "plasser": 40,
+          "kvinner": 36.4,
+          "kvalifiserte": 199,
+          "tilbud": 82,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2025": {
+          "alleS": 321,
+          "fvS": 41,
+          "plasser": 40,
+          "kvinner": 39,
+          "kvalifiserte": 222,
+          "tilbud": 76,
+          "pg_fv": 0,
+          "pg_ord": 0
+        },
+        "2026": {
+          "alleS": 328,
+          "fvS": 42,
+          "plasser": 40,
+          "kvinner": 52.4,
+          "kvalifiserte": 219,
+          "tilbud": 93,
+          "pg_fv": 0,
+          "pg_ord": 0
+        }
+      }
+    },
+    {
+      "id": "hvl_combined",
+      "shortName": "HVL",
+      "institusjon": "Høgskulen på Vestlandet",
+      "studiekode": "203369 · 203404 · 203515",
+      "studiested": "Bergen · Haugesund · Sogndal",
+      "type": "bachelor",
+      "stipulatedSokerpress": 4.3,
+      "campuses": [
+        {
+          "name": "Bergen",
+          "studiekode": "203369",
+          "alleS": 3629,
+          "fvS": 789,
+          "plasser": 114
+        },
+        {
+          "name": "Haugesund",
+          "studiekode": "203404",
+          "alleS": 613,
+          "fvS": 112,
+          "plasser": 80
+        },
+        {
+          "name": "Sogndal",
+          "studiekode": "203515",
+          "alleS": 487,
+          "fvS": 66,
+          "plasser": 60
+        }
+      ],
+      "years": {
+        "2020": {
+          "alleS": null,
+          "fvS": null,
+          "plasser": null,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 47.5,
+          "pg_ord": 50.9
+        },
+        "2021": {
+          "alleS": 4390,
+          "fvS": 824,
+          "plasser": 317,
+          "kvinner": 41.7,
+          "kvalifiserte": 4178,
+          "tilbud": 687,
+          "pg_fv": 48.6,
+          "pg_ord": 52.6
+        },
+        "2022": {
+          "alleS": 3857,
+          "fvS": 756,
+          "plasser": 287,
+          "kvinner": 44.2,
+          "kvalifiserte": 3668,
+          "tilbud": 658,
+          "pg_fv": 49,
+          "pg_ord": 52.2
+        },
+        "2023": {
+          "alleS": 3795,
+          "fvS": 780,
+          "plasser": 254,
+          "kvinner": 41.8,
+          "kvalifiserte": 3587,
+          "tilbud": 542,
+          "pg_fv": 51,
+          "pg_ord": 54.4
+        },
+        "2024": {
+          "alleS": 4332,
+          "fvS": 880,
+          "plasser": 254,
+          "kvinner": 44.1,
+          "kvalifiserte": 4123,
+          "tilbud": 637,
+          "pg_fv": 50.9,
+          "pg_ord": 54.3
+        },
+        "2025": {
+          "alleS": 4609,
+          "fvS": 929,
+          "plasser": 244,
+          "kvinner": 46.1,
+          "kvalifiserte": 4376,
+          "tilbud": 549,
+          "pg_fv": 51.7,
+          "pg_ord": 55.8
+        },
+        "2026": {
+          "alleS": 4729,
+          "fvS": 967,
+          "plasser": 254,
+          "kvinner": 47.8,
+          "kvalifiserte": 4495,
+          "tilbud": 677,
+          "pg_fv": 51.3,
+          "pg_ord": 55.8
+        }
+      }
+    },
+    {
+      "id": "usn_combined",
+      "shortName": "USN",
+      "institusjon": "Universitetet i Sørøst-Norge",
+      "studiekode": "222330 · 222097 · 222164 · 222625",
+      "studiested": "Drammen · Hønefoss · Bø · Kongsberg",
+      "type": "bachelor",
+      "stipulatedSokerpress": 3.8,
+      "campuses": [
+        {
+          "name": "Hønefoss",
+          "studiekode": "222097",
+          "alleS": 167,
+          "fvS": 20,
+          "plasser": 20
+        },
+        {
+          "name": "Bø",
+          "studiekode": "222164",
+          "alleS": 144,
+          "fvS": 29,
+          "plasser": 20
+        },
+        {
+          "name": "Drammen",
+          "studiekode": "222330",
+          "alleS": null,
+          "fvS": null,
+          "plasser": null
+        },
+        {
+          "name": "Kongsberg",
+          "studiekode": "222625",
+          "alleS": 224,
+          "fvS": 22,
+          "plasser": 25
+        }
+      ],
+      "years": {
+        "2020": {
+          "alleS": null,
+          "fvS": null,
+          "plasser": null,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 41.7,
+          "pg_ord": 47
+        },
+        "2021": {
+          "alleS": null,
+          "fvS": null,
+          "plasser": null,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 42,
+          "pg_ord": 47.2
+        },
+        "2022": {
+          "alleS": null,
+          "fvS": null,
+          "plasser": null,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 40,
+          "pg_ord": 46.6
+        },
+        "2023": {
+          "alleS": null,
+          "fvS": null,
+          "plasser": null,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 41.4,
+          "pg_ord": 45.5
+        },
+        "2024": {
+          "alleS": 341,
+          "fvS": 47,
+          "plasser": 40,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 40.1,
+          "pg_ord": 44.5
+        },
+        "2025": {
+          "alleS": 465,
+          "fvS": 60,
+          "plasser": 65,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 40.2,
+          "pg_ord": 43.7
+        },
+        "2026": {
+          "alleS": 535,
+          "fvS": 71,
+          "plasser": 65,
+          "kvinner": null,
+          "kvalifiserte": null,
+          "tilbud": null,
+          "pg_fv": 40.8,
+          "pg_ord": 46
+        }
+      }
+    }
+  ]
+}

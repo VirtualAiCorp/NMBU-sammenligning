@@ -1,0 +1,519 @@
+{
+  "FIRST_YEAR_DATA": [
+    {
+      "universityId": "nmbu",
+      "programName": "Økonomi og administrasjon – 1. studieår",
+      "totalCredits": 45,
+      "courses": [
+        {
+          "courseId": "matematikk",
+          "credits": 10,
+          "overrideLabel": "ECN102 Innføring i matematikk for økonomer"
+        },
+        {
+          "courseId": "makrookonomi",
+          "credits": 5,
+          "overrideLabel": "ECN120 Makroøkonomi I"
+        },
+        {
+          "courseId": "markedsforing",
+          "credits": 5,
+          "overrideLabel": "AOS120 Markedsføring"
+        },
+        {
+          "courseId": "organisasjon",
+          "credits": 5,
+          "overrideLabel": "AOS130 Innføring i organisasjonsteori"
+        },
+        {
+          "courseId": "finansregnskap",
+          "credits": 10,
+          "overrideLabel": "BUS110 Finansregnskap og regnskapsanalyse"
+        },
+        {
+          "courseId": "statistikk",
+          "credits": 10,
+          "overrideLabel": "STAT100 Statistikk"
+        }
+      ]
+    },
+    {
+      "universityId": "hio",
+      "programName": "Økonomi og administrasjon – 1. studieår",
+      "totalCredits": 60,
+      "courses": [
+        {
+          "courseId": "finansregnskap",
+          "credits": 10,
+          "overrideLabel": "SFB10419 Finansregnskap med analyse 1"
+        },
+        {
+          "courseId": "markedsforing",
+          "credits": 10,
+          "overrideLabel": "SFB10519 Markedsføring"
+        },
+        {
+          "courseId": "matematikk",
+          "credits": 10,
+          "overrideLabel": "ØKA101 Matematikk for økonomer"
+        },
+        {
+          "courseId": "organisasjon",
+          "credits": 10,
+          "overrideLabel": "SFB10120 Organisasjonsteori"
+        },
+        {
+          "courseId": "okonomi1",
+          "credits": 10,
+          "overrideLabel": "SFB10314 Innføring i bedriftsøkonomisk analyse"
+        },
+        {
+          "courseId": "makrookonomi",
+          "credits": 10,
+          "overrideLabel": "SFB10916 Makro- og mikroøkonomi",
+          "note": "Kombinert emne som dekker både makro- og mikroøkonomisk teori"
+        }
+      ]
+    },
+    {
+      "universityId": "usn",
+      "programName": "Økonomi og administrasjon – 1. studieår",
+      "totalCredits": 37.5,
+      "courses": [
+        {
+          "courseId": "finansregnskap",
+          "credits": 7.5,
+          "overrideLabel": "REG1010 Finansregnskap med analyse"
+        },
+        {
+          "courseId": "markedsforing",
+          "credits": 7.5,
+          "overrideLabel": "MAR1000 Markedsføring"
+        },
+        {
+          "courseId": "organisasjon",
+          "credits": 7.5,
+          "overrideLabel": "ORG1010 Organisasjonsteori"
+        },
+        {
+          "courseId": "matematikk",
+          "credits": 7.5,
+          "overrideLabel": "MET1000 Matematikk for økonomer"
+        },
+        {
+          "courseId": "statistikk",
+          "credits": 7.5,
+          "overrideLabel": "MET1010 Statistikk"
+        }
+      ]
+    },
+    {
+      "universityId": "uia",
+      "programName": "Økonomi og administrasjon – 1. studieår",
+      "totalCredits": 45,
+      "courses": [
+        {
+          "courseId": "finansregnskap",
+          "credits": 7.5,
+          "overrideLabel": "BE-111 Innføring i finansregnskap"
+        },
+        {
+          "courseId": "okonomistyring",
+          "credits": 7.5,
+          "overrideLabel": "BE-110 Innføring i økonomisk styring"
+        },
+        {
+          "courseId": "markedsforing",
+          "credits": 7.5,
+          "overrideLabel": "MF-102 Markedsføring"
+        },
+        {
+          "courseId": "organisasjon",
+          "credits": 7.5,
+          "overrideLabel": "ORG109 Organisasjonsteori"
+        },
+        {
+          "courseId": "matematikk",
+          "credits": 7.5,
+          "overrideLabel": "MA-138 Matematikk med anvendelse i økonomi"
+        },
+        {
+          "courseId": "metode",
+          "credits": 7.5,
+          "overrideLabel": "ME-112 Social Scientific Methods"
+        }
+      ]
+    },
+    {
+      "universityId": "uit",
+      "programName": "Økonomi og administrasjon – 1. studieår",
+      "totalCredits": 50,
+      "courses": [
+        {
+          "courseId": "finansregnskap",
+          "credits": 10,
+          "overrideLabel": "BED-1002 Grunnleggende regnskap og analyse"
+        },
+        {
+          "courseId": "okonomistyring",
+          "credits": 10,
+          "overrideLabel": "BED-1302 Bedriftsøkonomi",
+          "note": "Karakterdata fra BED-1502 Bedriftsøkonomisk analyse brukes som proxy"
+        },
+        {
+          "courseId": "matematikk",
+          "credits": 10,
+          "overrideLabel": "BED-1301 Matematikk for økonomer"
+        },
+        {
+          "courseId": "markedsforing",
+          "credits": 10,
+          "overrideLabel": "BED-1303 Markedsføring"
+        },
+        {
+          "courseId": "mikrookonomi",
+          "credits": 10,
+          "overrideLabel": "SØK-1303 Makroøkonomi"
+        }
+      ]
+    },
+    {
+      "universityId": "uis",
+      "programName": "Økonomi og administrasjon – 1. studieår",
+      "totalCredits": 50,
+      "courses": [
+        {
+          "courseId": "matematikk",
+          "credits": 10,
+          "overrideLabel": "BØK108 Matematisk metode for økonomer"
+        },
+        {
+          "courseId": "markedsforing",
+          "credits": 10,
+          "overrideLabel": "BØK250 Markedsføring"
+        },
+        {
+          "courseId": "mikrookonomi",
+          "credits": 10,
+          "overrideLabel": "BØK265 Mikroøkonomi"
+        },
+        {
+          "courseId": "statistikk",
+          "credits": 10,
+          "overrideLabel": "BØK356 Statistics for Business and Economics"
+        },
+        {
+          "courseId": "organisasjon",
+          "credits": 10,
+          "overrideLabel": "BØK415 Ledelse og organisasjonspsykologi"
+        }
+      ]
+    },
+    {
+      "universityId": "onh",
+      "programName": "Økonomi og administrasjon – 1. studieår",
+      "totalCredits": 30,
+      "courses": [
+        {
+          "courseId": "matematikk",
+          "credits": 10,
+          "overrideLabel": "ØKAD1120 Matematikk for økonomer"
+        },
+        {
+          "courseId": "organisasjon",
+          "credits": 10,
+          "overrideLabel": "ØKAD1130 Organisasjon og ledelse"
+        },
+        {
+          "courseId": "markedsforing",
+          "credits": 10,
+          "overrideLabel": "ØKAD1140 Markedsføring"
+        }
+      ]
+    },
+    {
+      "universityId": "nord",
+      "programName": "Økonomi og administrasjon – 1. studieår",
+      "totalCredits": 40,
+      "courses": [
+        {
+          "courseId": "finansregnskap",
+          "credits": 10,
+          "overrideLabel": "FIN1001 Innføring i regnskap"
+        },
+        {
+          "courseId": "markedsforing",
+          "credits": 10,
+          "overrideLabel": "MAF1001 Markedsføring"
+        },
+        {
+          "courseId": "matematikk",
+          "credits": 10,
+          "overrideLabel": "MAT1001 Matematikk"
+        },
+        {
+          "courseId": "statistikk",
+          "credits": 10,
+          "overrideLabel": "STT1001 Statistikk"
+        }
+      ]
+    },
+    {
+      "universityId": "hvl",
+      "programName": "Økonomi og administrasjon – 1. studieår",
+      "totalCredits": 60,
+      "courses": [
+        {
+          "courseId": "matematikk",
+          "credits": 10,
+          "overrideLabel": "BØA111 Matematikk for økonomer"
+        },
+        {
+          "courseId": "organisasjon",
+          "credits": 10,
+          "overrideLabel": "BØA112 Organisasjon og ledelse"
+        },
+        {
+          "courseId": "statistikk",
+          "credits": 10,
+          "overrideLabel": "BØA115 Statistikk for økonomer"
+        },
+        {
+          "courseId": "markedsforing",
+          "credits": 10,
+          "overrideLabel": "BØA116 Markedsføring"
+        },
+        {
+          "courseId": "finansregnskap",
+          "credits": 10,
+          "overrideLabel": "BØA117 Finansregnskap med analyse"
+        },
+        {
+          "courseId": "makrookonomi",
+          "credits": 10,
+          "overrideLabel": "BØA118 Makroøkonomi"
+        }
+      ]
+    },
+    {
+      "universityId": "himolde",
+      "programName": "Økonomi og administrasjon – 1. studieår",
+      "totalCredits": 70,
+      "courses": [
+        {
+          "courseId": "organisasjon",
+          "credits": 10,
+          "overrideLabel": "ADM100 Organisasjonsteori og -psykologi"
+        },
+        {
+          "courseId": "markedsforing",
+          "credits": 10,
+          "overrideLabel": "ADM120 Marketing"
+        },
+        {
+          "courseId": "finansregnskap",
+          "credits": 10,
+          "overrideLabel": "BØK105 Finansregnskap 1"
+        },
+        {
+          "courseId": "matematikk",
+          "credits": 10,
+          "overrideLabel": "MAT100 Anvendt matematikk"
+        },
+        {
+          "courseId": "okonomistyring",
+          "credits": 10,
+          "overrideLabel": "BØK205 Økonomistyring og regnskap"
+        },
+        {
+          "courseId": "statistikk",
+          "credits": 10,
+          "overrideLabel": "MAT110 Anvendt statistikk"
+        },
+        {
+          "courseId": "mikrookonomi",
+          "credits": 10,
+          "overrideLabel": "SØK200 Mikroøkonomi"
+        }
+      ]
+    },
+    {
+      "universityId": "ntnu",
+      "programName": "Økonomi og administrasjon – 1. studieår",
+      "totalCredits": 45,
+      "courses": [
+        {
+          "courseId": "matematikk",
+          "credits": 7.5,
+          "overrideLabel": "MET1001 Matematikk for økonomer"
+        },
+        {
+          "courseId": "statistikk",
+          "credits": 7.5,
+          "overrideLabel": "MET1002 Statistikk for økonomer"
+        },
+        {
+          "courseId": "finansregnskap",
+          "credits": 7.5,
+          "overrideLabel": "BØA1200 Finansregnskap med analyse"
+        },
+        {
+          "courseId": "markedsforing",
+          "credits": 7.5,
+          "overrideLabel": "MRK1001 Markedsføring - grunnkurs"
+        },
+        {
+          "courseId": "organisasjon",
+          "credits": 7.5,
+          "overrideLabel": "ORG1100 Organisasjon og ledelse"
+        },
+        {
+          "courseId": "mikrookonomi",
+          "credits": 7.5,
+          "overrideLabel": "SMØ1001 Mikroøkonomi"
+        }
+      ]
+    },
+    {
+      "universityId": "oslomet",
+      "programName": "Økonomi og administrasjon – 1. studieår",
+      "totalCredits": 70,
+      "courses": [
+        {
+          "courseId": "finansregnskap",
+          "credits": 10,
+          "overrideLabel": "ØABED1000 Grunnleggende årsregnskap med Excel"
+        },
+        {
+          "courseId": "matematikk",
+          "credits": 10,
+          "overrideLabel": "ØAMET1000 Matematikk I"
+        },
+        {
+          "courseId": "makrookonomi",
+          "credits": 10,
+          "overrideLabel": "ØASØK1000 Mikroøkonomi I",
+          "note": "Emnet heter Mikroøkonomi I ved OsloMet – data er lagret under makrookonomi i sammenligningssystemet"
+        },
+        {
+          "courseId": "markedsforing",
+          "credits": 10,
+          "overrideLabel": "ØAADM1001 Markedsføring"
+        },
+        {
+          "courseId": "organisasjon",
+          "credits": 10,
+          "overrideLabel": "ØAADM1100 Organisasjon og ledelse",
+          "note": "Karakterdata fra ØAADM2100 Organisasjonsforståelse brukes som proxy"
+        },
+        {
+          "courseId": "statistikk",
+          "credits": 10,
+          "overrideLabel": "ØAMET1100 Statistikk"
+        },
+        {
+          "courseId": "mikrookonomi",
+          "credits": 10,
+          "overrideLabel": "ØASØK1100 Makroøkonomi I",
+          "note": "Emnet heter Makroøkonomi I ved OsloMet – data er lagret under mikrookonomi i sammenligningssystemet"
+        }
+      ]
+    },
+    {
+      "universityId": "nhh",
+      "programName": "Økonomi og administrasjon – 1. studieår",
+      "totalCredits": 22.5,
+      "courses": [
+        {
+          "courseId": "matematikk",
+          "credits": 7.5,
+          "overrideLabel": "MET1 Matematikk for økonomer"
+        },
+        {
+          "courseId": "statistikk",
+          "credits": 7.5,
+          "overrideLabel": "MET2 Statistikk for økonomer"
+        },
+        {
+          "courseId": "mikrookonomi",
+          "credits": 7.5,
+          "overrideLabel": "SAM2 Mikroøkonomi"
+        }
+      ]
+    },
+    {
+      "universityId": "bi",
+      "programName": "Økonomi og administrasjon – 1. studieår",
+      "totalCredits": 37.5,
+      "courses": [
+        {
+          "courseId": "matematikk",
+          "credits": 7.5,
+          "overrideLabel": "MET2910 Matematikk"
+        },
+        {
+          "courseId": "statistikk",
+          "credits": 7.5,
+          "overrideLabel": "MET2920 Statistikk"
+        },
+        {
+          "courseId": "makrookonomi",
+          "credits": 7.5,
+          "overrideLabel": "SØK3420 Samfunnsøkonomi I"
+        },
+        {
+          "courseId": "organisasjon",
+          "credits": 7.5,
+          "overrideLabel": "ORG3403 Organisasjonsatferd og ledelse"
+        },
+        {
+          "courseId": "investering",
+          "credits": 7.5,
+          "overrideLabel": "BØK3423 Finans"
+        }
+      ]
+    },
+    {
+      "universityId": "kristiania",
+      "programName": "Økonomi og administrasjon – 1. studieår",
+      "totalCredits": 0,
+      "courses": [],
+      "missingData": true
+    },
+    {
+      "universityId": "ntnu_gjovik",
+      "programName": "Økonomi og administrasjon – 1. studieår",
+      "totalCredits": 0,
+      "courses": [],
+      "missingData": true
+    },
+    {
+      "universityId": "ntnu_alesund",
+      "programName": "Økonomi og administrasjon – 1. studieår",
+      "totalCredits": 0,
+      "courses": [],
+      "missingData": true
+    },
+    {
+      "universityId": "nla",
+      "programName": "Økonomi og administrasjon – 1. studieår",
+      "totalCredits": 0,
+      "courses": [],
+      "missingData": true
+    },
+    {
+      "universityId": "inn",
+      "programName": "Økonomi og administrasjon – 1. studieår",
+      "totalCredits": 0,
+      "courses": [],
+      "missingData": true
+    },
+    {
+      "universityId": "inn_rena",
+      "programName": "Økonomi og administrasjon – 1. studieår",
+      "totalCredits": 0,
+      "courses": [],
+      "missingData": true
+    }
+  ]
+}
