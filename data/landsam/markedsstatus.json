@@ -49,12 +49,20 @@
       "id": "uit",
       "name": "UiT",
       "fullName": "UiT Norges arktiske universitet",
-      "enhet": "Fakultet for humaniora, samfunnsvitenskap og lærerutdanning",
-      "styresider": ["https://uit.no/om/universitetsstyret"],
-      "status": "none",
-      "dokumenter": [],
-      "punkter": [],
-      "oppsummering": "",
+      "enhet": "Fakultet for humaniora, samfunnsvitenskap og lærerutdanning (HSL) / Institutt for samfunnsvitenskap (ISV)",
+      "styresider": ["https://uit.no/om/universitetsstyret", "https://uit.no/moteportalen/um/utvalg?utvalg=2", "https://uit.no/project/studieportefoljen"],
+      "status": "partial",
+      "dokumenter": [
+        { "label": "Revidert porteføljeutviklingsplan UiT 2026–2027", "url": "https://uit.no/Content/919752/cache=1769697826000/Revidert%20portef%C3%B8ljeutviklingsplan%20UiT%202026%E2%80%932027.pdf", "filnavn": "UiT_Portefoljeutviklingsplan_2026-2027.pdf", "dato": "2025 (høst)", "storrelseMB": 0.24, "lastetNed": true },
+        { "label": "Status på porteføljeutviklingsplan UiT 2025–2026", "url": "https://uit.no/Content/931089/cache=1781008640000/Status_portef%C3%B8ljeutviklingsplan%20UiT%202025%E2%80%932026_oppd.pdf", "filnavn": "UiT_Status_Portefoljeplan_2025-2026.pdf", "dato": "2025 (høst)", "storrelseMB": 0.24, "lastetNed": true }
+      ],
+      "punkter": [
+        "Statusoppdateringen på porteføljeutviklingsplanen viser at HSL-fakultetet (som eier bachelorprogrammet Samfunnsplanlegging og kulturforståelse) har forsøkt å utvikle et pilotsertifikat i arealplanlegging, men dette arbeidet har stoppet opp fordi de eksternt innmeldte kompetansebehovene ikke kunne dekkes av fagmiljøet. Det åpnes i stedet for 2–3 nye pilotsertifikater på andre temaer.",
+        "HSL og Handelshøgskolen (BFE) samarbeider om et felles erfaringsbasert masterprogram i ledelse, med tema som beredskap, kultur og helse; MBA-programmet (felles ISV/HSL og HHT/BFE) inngår i en pågående NOKUT-evaluering av erfaringsbaserte ledelsesmastere.",
+        "2025–2026 var siste år med en egen porteføljeutviklingsplan; fra og med denne runden legges videreutvikling av studietilbudet ved UiT inn i den ordinære virksomhetsstyringen i stedet for en frittstående plan (ifølge UiTs egen porteføljeside).",
+        "Vi fant ingen tallfestede søkertall, økonomital eller eksplisitte vedtak om studieportefølje for Institutt for samfunnsvitenskap eller programmet Samfunnsplanlegging og kulturforståelse spesifikt i de dokumentene som var tilgjengelige; universitetsstyrets møteportal (uit.no/moteportalen) og fakultetets egne styresaker var ikke gjennomgått i detalj utover porteføljeplanene på grunn av tidsbegrensning, så status settes til «partial»."
+      ],
+      "oppsummering": "UiTs sentrale porteføljeutviklingsdokumenter nevner bare ett punkt med direkte relevans for LANDSAMs fagområder: et pilotsertifikat i arealplanlegging ved HSL-fakultetet som har stanset opp av kapasitetsgrunner. Ingen søkertall, økonomital eller studieporteføljevedtak spesifikt for Samfunnsplanlegging og kulturforståelse ble funnet i de gjennomgåtte kildene.",
       "relevanteProgram": ["uit_samfunnsplanlegging"]
     },
     {
