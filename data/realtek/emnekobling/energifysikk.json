@@ -1,0 +1,188 @@
+{
+  "groupId": "energifysikk",
+  "hentet": "2026-09-22",
+  "note": "Gruppa sammenligner NMBUs treårige bachelor i energi- og miljøfysikk med fysikkbachelorene ved NTNU, UiO og UiB, UiOs bachelor i fornybar energi og nanoteknologi og UiS' femårige integrerte master i matematikk og fysikk. Fysikkgrunnlaget (mekanikk, elektromagnetisme, termisk fysikk og kvantefysikk) er felles og gir den sterkeste sammenligningen, mens NMBU skiller seg ut med et anvendt energi- og miljøprofilert tredjeår som bare UiOs nanoteknologibachelor delvis matcher. Viktig forbehold: NMBUs energi- og miljøfysikk er et lite program, og DBH rapporterer få kandidater per emne. Bare seks emner har minst ti kandidater i 2024 eller 2025, så koblingene for NMBU bygger i stor grad på emner med solide samlede tall over femårsperioden 2021-2025, men lave tall i de to siste årene. Karakterene for enkeltår bør derfor leses med varsomhet. Det samme gjelder UiS, der de fleste emnene ligger på sju til ni kandidater i 2024/2025. UiTs bachelor i fysikk og matematikk er utelatt fordi DBH bare har rapportert fem emner for programmet. UiOs fornybar energi og nanoteknologi er det samme programmet som uio_fornybar_nano i gruppa for miljøfysikk og fornybar energi. Det er ikke satt opp emnetyper for bacheloroppgave eller numeriske metoder, fordi NMBU-programmet ikke har obligatoriske emner av den typen - NTNU (TFY4561), UiB (PHYS299) og NTNU/UiO/UiS (FY1008, FYS3150, MAF310/MAF320) har dem, men uten NMBU-motstykke.",
+  "emnetyper": [
+    {
+      "id": "matematikk-1",
+      "label": "Matematikk 1 (kalkulus)",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Første kalkulusemne: grenser, derivasjon, integrasjon og rekker i én variabel.",
+      "note": "NTNU og UiS har sivilingeniør- og realfagskalkulus på høyeste nivå. UiS' MAT100 Matematiske metoder 1 har bare sju kandidater i 2024/2025, men over femti i perioden samlet.",
+      "koblinger": [
+        { "entryId": "nmbu_energifysikk", "emnekoder": ["MATH121-1", "MATH111-1"], "merknad": "MATH121 Kalkulus er dagens emne; MATH111 Kalkulus 1 er kodeversjonen fra den gamle matematikkplanen." },
+        { "entryId": "ntnu_fysikk", "emnekoder": ["TMA4100-1", "TMA4401-1"], "merknad": "Matematikk 1 og den nye kodeversjonen Matematikk 1D: Kalkulus." },
+        { "entryId": "uio_fysikk_astronomi", "emnekoder": ["MAT1100-1"], "merknad": "Kalkulus." },
+        { "entryId": "uib_fysikk", "emnekoder": ["MAT111-0"], "merknad": "Grunnkurs i matematikk I." },
+        { "entryId": "uio_fornybar_nano_b", "emnekoder": ["MAT1100-1"] },
+        { "entryId": "uis_matematikk_fysikk", "emnekoder": ["MAT100-1"], "merknad": "Matematiske metoder 1; få kandidater i 2024/2025." }
+      ]
+    },
+    {
+      "id": "matematikk-2",
+      "label": "Matematikk 2 og 3 (flervariabel og analyse)",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Flervariabel kalkulus, vektoranalyse, rekker og differensiallikninger.",
+      "note": "UiS har klart mest matematikk i denne kategorien, siden programmet er et kombinert matematikk- og fysikkløp. NMBUs MATH122 er et kombinert kalkulus- og lineæralgebraemne og har derfor også en fot i emnetypen lineær algebra.",
+      "koblinger": [
+        { "entryId": "nmbu_energifysikk", "emnekoder": ["MATH122-1", "MATH112-1"], "merknad": "MATH122 Kalkulus og lineær algebra er dagens emne; MATH112 Kalkulus 2 er den gamle kodeversjonen." },
+        { "entryId": "ntnu_fysikk", "emnekoder": ["MA1103-1", "TMA4120-1"], "merknad": "Flervariabel analyse og vektoranalyse og Matematikk 4K." },
+        { "entryId": "uio_fysikk_astronomi", "emnekoder": ["MAT1110-1"], "merknad": "Kalkulus og lineær algebra." },
+        { "entryId": "uib_fysikk", "emnekoder": ["MAT112-0"], "merknad": "Grunnkurs i matematikk II." },
+        { "entryId": "uio_fornybar_nano_b", "emnekoder": ["MAT1110-1"] },
+        { "entryId": "uis_matematikk_fysikk", "emnekoder": ["MAT210-1", "MAT300-1"], "merknad": "Reell analyse og Vektoranalyse; klart mer teoretisk enn de andre." }
+      ]
+    },
+    {
+      "id": "lineaer-algebra",
+      "label": "Lineær algebra",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Matriser, lineære likningssystemer, vektorrom og egenverdier.",
+      "note": "NMBUs emner har få kandidater i 2024/2025 (MATH123 fem, MATH113 fire), men MATH113 har over tretti samlet i perioden. NTNU har tre kodevarianter i overgangen mellom gammel og ny emnestruktur.",
+      "koblinger": [
+        { "entryId": "nmbu_energifysikk", "emnekoder": ["MATH123-1", "MATH113-1", "MATH280-1"], "merknad": "MATH123 Lineær algebra og vektoranalyse (MATH113 er den gamle kodeversjonen) og MATH280 Anvendt lineær algebra." },
+        { "entryId": "ntnu_fysikk", "emnekoder": ["MA1201-1", "MA1202-1", "TMA4413-1"], "merknad": "Lineær algebra og geometri, Lineær algebra med anvendelser og den nye kodeversjonen Matematikk 2D." },
+        { "entryId": "uio_fysikk_astronomi", "emnekoder": ["MAT1120-1"] },
+        { "entryId": "uib_fysikk", "emnekoder": ["MAT121-0"] },
+        { "entryId": "uio_fornybar_nano_b", "emnekoder": ["MAT1120-1"] },
+        { "entryId": "uis_matematikk_fysikk", "emnekoder": ["MAT110-1"] }
+      ]
+    },
+    {
+      "id": "statistikk",
+      "label": "Statistikk",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Sannsynlighetsregning, statistisk inferens og dataanalyse.",
+      "note": "Verken UiBs fysikkbachelor eller UiOs fornybar energi og nanoteknologi har obligatorisk statistikk. NMBUs STAT100 har bare tre kandidater i 2024/2025 og femten i perioden samlet, så tallene er tynne.",
+      "koblinger": [
+        { "entryId": "nmbu_energifysikk", "emnekoder": ["STAT100-1"], "merknad": "Få rapporterte kandidater; tallene er usikre." },
+        { "entryId": "ntnu_fysikk", "emnekoder": ["TMA4240-1"] },
+        { "entryId": "uio_fysikk_astronomi", "emnekoder": ["STK-FYS1110-1"], "merknad": "Sannsynlighetsregning, modellering og dataanalyse for de fysiske fag." },
+        { "entryId": "uis_matematikk_fysikk", "emnekoder": ["STA100-1"], "merknad": "Sannsynlighetsregning og statistikk 1." }
+      ]
+    },
+    {
+      "id": "programmering",
+      "label": "Programmering og numerisk beregning",
+      "kategori": "Programmering",
+      "desc": "Innføring i programmering, som regel i Python, med vekt på numeriske beregninger i fysikk.",
+      "note": "UiS har ikke rapportert nok kandidater på DAT120 Grunnleggende programmering; programmets numeriske modelleringsemner (MAF310/MAF320) er ikke koblet her fordi de ligger på et annet nivå.",
+      "koblinger": [
+        { "entryId": "nmbu_energifysikk", "emnekoder": ["INF120-1"] },
+        { "entryId": "ntnu_fysikk", "emnekoder": ["TDT4110-1", "FY1008-1"], "merknad": "Informasjonsteknologi, grunnkurs og Introduksjon til numerisk fysikk." },
+        { "entryId": "uio_fysikk_astronomi", "emnekoder": ["IN1900-1"], "merknad": "Introduksjon i programmering for naturvitenskapelige anvendelser." },
+        { "entryId": "uib_fysikk", "emnekoder": ["INF100-0"], "merknad": "Innføring i programmering." },
+        { "entryId": "uio_fornybar_nano_b", "emnekoder": ["IN1900-1"] }
+      ]
+    },
+    {
+      "id": "exphil",
+      "label": "Examen philosophicum",
+      "kategori": "Ex.phil",
+      "desc": "Fellesemnet i vitenskapsfilosofi og etikk.",
+      "note": "UiS har ikke ex.phil i sitt matematikk- og fysikkløp. NMBUs tall er svært tynne: bare seminarversjonen PHI101 er registrert på programmet, med tre kandidater i perioden, så koblingen er med for fullstendighetens skyld og ikke for sammenligning av karakterer.",
+      "koblinger": [
+        { "entryId": "nmbu_energifysikk", "emnekoder": ["PHI101-1"], "merknad": "Seminarversjonen av ex.phil; svært få rapporterte kandidater." },
+        { "entryId": "ntnu_fysikk", "emnekoder": ["EXPH0300-1"], "merknad": "Examen philosophicum for naturvitenskap og teknologi." },
+        { "entryId": "uio_fysikk_astronomi", "emnekoder": ["EXPHIL03-1"] },
+        { "entryId": "uib_fysikk", "emnekoder": ["EXPHIL-MNSEM-0"], "merknad": "Seminarmodellen for realfagsstudenter." },
+        { "entryId": "uio_fornybar_nano_b", "emnekoder": ["EXPHIL03-1"] }
+      ]
+    },
+    {
+      "id": "mekanikk",
+      "label": "Mekanikk",
+      "kategori": "Fysikk",
+      "desc": "Newtonsk mekanikk: kinematikk, dynamikk, bevaringslover og stive legemer.",
+      "note": "UiO og NTNU har både et innførings- og et videregående mekanikkemne og dermed dobbelt så stort omfang som NMBU. UiBs PHYS113 Mekanikk 2 og termodynamikk er koblet til termisk fysikk, ikke hit.",
+      "koblinger": [
+        { "entryId": "nmbu_energifysikk", "emnekoder": ["FYS101-1", "FYS110-1"], "merknad": "Mekanikk og Statikk; FYS110 er et valgemne med få kandidater." },
+        { "entryId": "ntnu_fysikk", "emnekoder": ["FY1001-1", "TFY4345-1"], "merknad": "Mekanisk fysikk og Klassisk mekanikk." },
+        { "entryId": "uio_fysikk_astronomi", "emnekoder": ["FYS1100-1", "FYS1105-1"], "merknad": "Mekanikk og modellering og Klassisk mekanikk." },
+        { "entryId": "uib_fysikk", "emnekoder": ["PHYS111-0"], "merknad": "Mekanikk 1." },
+        { "entryId": "uio_fornybar_nano_b", "emnekoder": ["FYS1100-1"] },
+        { "entryId": "uis_matematikk_fysikk", "emnekoder": ["FYS100-1"], "merknad": "Mekanikk; få kandidater i 2024/2025, men over tretti i perioden." }
+      ]
+    },
+    {
+      "id": "elektromagnetisme",
+      "label": "Elektromagnetisme",
+      "kategori": "Fysikk",
+      "desc": "Elektriske og magnetiske felt, Maxwells likninger og elektriske kretser.",
+      "note": "NMBUs FYS236 Elektrodynamikk er bare 5 sp mot 7,5-10 sp hos de andre; NMBU har i tillegg FYS230 Elektroteknikk, som er kretsrettet og ikke har noe motstykke hos de andre.",
+      "koblinger": [
+        { "entryId": "nmbu_energifysikk", "emnekoder": ["FYS236-1", "FYS230-1"], "merknad": "Elektrodynamikk (5 sp) og Elektroteknikk; FYS230 har svært få rapporterte kandidater på dette programmet." },
+        { "entryId": "ntnu_fysikk", "emnekoder": ["FY1003-1"], "merknad": "Elektrisitet og magnetisme." },
+        { "entryId": "uio_fysikk_astronomi", "emnekoder": ["FYS1120-1"] },
+        { "entryId": "uib_fysikk", "emnekoder": ["PHYS112-0"], "merknad": "Elektromagnetisme I." },
+        { "entryId": "uio_fornybar_nano_b", "emnekoder": ["FYS1120-1"] },
+        { "entryId": "uis_matematikk_fysikk", "emnekoder": ["FYS300-1"], "merknad": "Elektromagnetisme og spesiell relativitetsteori." }
+      ]
+    },
+    {
+      "id": "termisk-fysikk",
+      "label": "Termisk fysikk og statistisk fysikk",
+      "kategori": "Fysikk",
+      "desc": "Termodynamikkens hovedsetninger, entropi, varmeoverføring og statistisk mekanikk.",
+      "note": "UiOs fornybar energi og nanoteknologi dekker termodynamikk gjennom et kjemiemne og ligger derfor litt på siden. NTNU er den eneste med et eget emne i statistisk fysikk med gode kandidattall.",
+      "koblinger": [
+        { "entryId": "nmbu_energifysikk", "emnekoder": ["FYS102-1", "FYS253-1", "FYS252-1"], "merknad": "FYS102 Termofysikk og elektromagnetisme og FYS253 Termisk fysikk; FYS252 Termodynamikk og statistisk fysikk er den gamle kodeversjonen." },
+        { "entryId": "ntnu_fysikk", "emnekoder": ["TFY4165-1", "TFY4230-1"], "merknad": "Termisk fysikk og Statistisk fysikk." },
+        { "entryId": "uio_fysikk_astronomi", "emnekoder": ["FYS2160-1"], "merknad": "Termodynamikk og statistisk fysikk." },
+        { "entryId": "uib_fysikk", "emnekoder": ["PHYS113-0"], "merknad": "Mekanikk 2 og termodynamikk; termodynamikken er én av to deler av emnet." },
+        { "entryId": "uio_fornybar_nano_b", "emnekoder": ["KJM1130-1"], "merknad": "Fysikalsk kjemi I - termodynamikk og kinetikk; kjemisk, ikke fysisk termodynamikk." },
+        { "entryId": "uis_matematikk_fysikk", "emnekoder": ["FYS200-1"], "merknad": "Termo- og fluiddynamikk." }
+      ]
+    },
+    {
+      "id": "kvantefysikk",
+      "label": "Kvantefysikk og moderne fysikk",
+      "kategori": "Fysikk",
+      "desc": "Kvantemekanikkens grunnbegreper, bølgefunksjoner, Schrödingerlikningen og atomær struktur.",
+      "note": "NTNU og UiS har både et innføringsemne og et videregående kvantemekanikkemne, mens NMBU, UiO og UiB har ett emne hver. NMBUs FYS245 har få kandidater i 2024/2025, men nærmere tretti i perioden.",
+      "koblinger": [
+        { "entryId": "nmbu_energifysikk", "emnekoder": ["FYS245-1"] },
+        { "entryId": "ntnu_fysikk", "emnekoder": ["TFY4215-1", "FY2045-1"], "merknad": "Innføring i kvantefysikk / Moderne fysikk og Kvantemekanikk I." },
+        { "entryId": "uio_fysikk_astronomi", "emnekoder": ["FYS2140-1"] },
+        { "entryId": "uib_fysikk", "emnekoder": ["PHYS118-0", "PHYS119-0"], "merknad": "Kvantefysikk og Moderne fysikk II." },
+        { "entryId": "uio_fornybar_nano_b", "emnekoder": ["FYS2140-1"] },
+        { "entryId": "uis_matematikk_fysikk", "emnekoder": ["FYS330-1", "FYS320-1"], "merknad": "Mikrofysikk og Kvantemekanikk." }
+      ]
+    },
+    {
+      "id": "maaleteknikk-og-laboratorium",
+      "label": "Måleteknikk, elektronikk og laboratorium",
+      "kategori": "Fysikk",
+      "desc": "Eksperimentelle metoder, instrumentering, feilanalyse og fysikklaboratorium.",
+      "note": "NTNUs fysikkbachelor har ikke et eget måleteknikk- eller laboratorieemne med rapporterte kandidattall, og UiOs fornybar energi og nanoteknologi har det heller ikke. NMBU har mest omfang, men med lave tall i 2024/2025.",
+      "koblinger": [
+        { "entryId": "nmbu_energifysikk", "emnekoder": ["FYS155-1", "FYS103-1", "FYS235-1"], "merknad": "Laboratoriekurs i fysikk, Måleteknikk og dataanalyse og Elektronikk; alle med solide samlede tall, men lave tall i 2024/2025." },
+        { "entryId": "uio_fysikk_astronomi", "emnekoder": ["FYS2150-1"], "merknad": "Eksperimentalfysikk." },
+        { "entryId": "uib_fysikk", "emnekoder": ["PHYS114-0"], "merknad": "Grunnleggende målevitenskap og eksperimentalfysikk." },
+        { "entryId": "uis_matematikk_fysikk", "emnekoder": ["FYS210-1"], "merknad": "Fysikklaboratorium." }
+      ]
+    },
+    {
+      "id": "energi-og-miljofysikk",
+      "label": "Energi- og miljøfysikk",
+      "kategori": "Fagspesifikt",
+      "desc": "Energiteknologier, energiressurser, klima og miljøfysiske prosesser.",
+      "note": "Dette er NMBU-programmets faglige særpreg, og bare UiOs fornybar energi og nanoteknologi har noe tilsvarende - og da materialrettet snarere enn systemrettet. De tre rene fysikkbachelorene (NTNU, UiO, UiB) og UiS har ingen obligatoriske energiemner.",
+      "koblinger": [
+        { "entryId": "nmbu_energifysikk", "emnekoder": ["FYS272-1", "FYS241-1", "FYS140-1"], "merknad": "Energiteknologier, Miljøfysikk og Klimaendringer, bærekraft og tilpasninger; FYS272 og FYS241 har få kandidater i 2024/2025, men nærmere tretti i perioden." },
+        { "entryId": "uio_fornybar_nano_b", "emnekoder": ["MENA1001-1", "MENA3001-1"], "merknad": "Materialer, energi og nanoteknologi og Funksjonelle materialer; materialrettet vinkling på energi." }
+      ]
+    },
+    {
+      "id": "kjemi",
+      "label": "Kjemi",
+      "kategori": "Kjemi",
+      "desc": "Grunnleggende kjemi: atomstruktur, binding, likevekt og uorganisk kjemi.",
+      "note": "Bare NMBU og UiOs fornybar energi og nanoteknologi har obligatorisk kjemi. De tre fysikkbachelorene ved NTNU, UiO og UiB og UiS' matematikk- og fysikkløp har ingen kjemiemner.",
+      "koblinger": [
+        { "entryId": "nmbu_energifysikk", "emnekoder": ["KJM100-1"], "merknad": "Generell kjemi." },
+        { "entryId": "uio_fornybar_nano_b", "emnekoder": ["KJM1121-1"], "merknad": "Uorganisk kjemi." }
+      ]
+    }
+  ]
+}

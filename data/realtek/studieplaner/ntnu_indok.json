@@ -1,0 +1,640 @@
+{
+  "entryId": "ntnu_indok",
+  "programnavn": "Industriell økonomi og teknologiledelse (master 5 år)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2025/2026 (kull 2025, 1.-2. året); 3. året rekonstruert fra kull 2023/2024",
+  "kilder": [
+    "https://www.ntnu.no/studier/mtiot",
+    "https://www.ntnu.no/studier/mtiot/studiets-oppbygning",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=MTI%C3%98T&year=2025",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=MTI%C3%98T&year=2024",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=MTI%C3%98T&year=2023",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=MTI%C3%98T&year=2022"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 60.0,
+  "obligatoriske": [
+    {
+      "emnekode": "TIØ4105",
+      "emnenavn": "Industriell økonomisk styring",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "TIØ4105-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4400",
+      "emnenavn": "Matematikk 1: Kalkulus og lineær algebra",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "TMA4400-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TIØ4102",
+      "emnenavn": "Organisasjon og teknologi 1",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "TIØ4102-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TIØ4162",
+      "emnenavn": "Organisasjon og teknologi 2",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "TIØ4162-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EXPH0300",
+      "emnenavn": "Examen philosophicum for naturvitenskap og teknologi",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "EXPH0300-1"
+      ],
+      "merknad": "For teknologiretningen Marin teknikk ligger emnet i stedet i 2. året høst (samme studiepoeng)."
+    },
+    {
+      "emnekode": "TIØ4165",
+      "emnenavn": "Markedsføringsledelse for teknologibedrifter",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "TIØ4165-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TIØ4118",
+      "emnenavn": "Industriell økonomisk analyse",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "TIØ4118-1"
+      ],
+      "merknad": "Plassering i 3. året er rekonstruert fra kull 2023/2024 sin studieplan, ettersom kull 2025 sin studieplan for 3. året ennå ikke er publisert i sin helhet. NTNU har flyttet flere fellesemner (bl.a. EXPH0300 og TIØ4165) et år tidligere for kull 2025 sammenlignet med kull 2024, så eksakt årsplassering for kull 2025 kan avvike noe."
+    },
+    {
+      "emnekode": "TIØ4126",
+      "emnenavn": "Optimering og beslutningsstøtte for teknisk-økonomisk planlegging",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "TIØ4126-1"
+      ],
+      "merknad": "Se forbehold om årsplassering under TIØ4118."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Datateknologi",
+      "obligatoriske": [
+        {
+          "emnekode": "TDT4109",
+          "emnenavn": "Informasjonsteknologi, grunnkurs",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TDT4109-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4412",
+          "emnenavn": "Matematikk 2C: Diskret matematikk",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TMA4412-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4100",
+          "emnenavn": "Objektorientert programmering",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TDT4100-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4422",
+          "emnenavn": "Matematikk 3C: Lineær algebra, differensialligninger, funksjonsapproksimasjon og rekker",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TTM4100",
+          "emnenavn": "Kommunikasjon - Tjenester og nett",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TTM4100-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4120",
+          "emnenavn": "Algoritmer og datastrukturer",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TDT4120-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4160",
+          "emnenavn": "Datamaskiner",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TDT4160-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4432",
+          "emnenavn": "Matematikk 4C: Integraltransformer, funksjonsapproksimasjon og partielle differensialligninger",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4140",
+          "emnenavn": "Programvareutvikling",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TDT4140-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4145",
+          "emnenavn": "Datamodellering og databasesystemer",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TDT4145-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4240",
+          "emnenavn": "Statistikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TMA4240-1"
+          ],
+          "merknad": "Felles for begge fagretningene under Datateknologi (Kunstig intelligens og Programvaresystemer). Kilde: kull 2023/2024, se forbehold i det felles emnet TIØ4118."
+        }
+      ],
+      "merknad": "I 3. året velges i tillegg en fagretning: Kunstig intelligens (TDT4172 Introduksjon til maskinlæring, høst / TDT4171 Metoder i kunstig intelligens, vår) eller Programvaresystemer (TDT4175 Informasjonssystemer, høst / TDT4240 Programvarearkitektur, vår) - disse emnene er alternative og ikke felles, og er derfor ikke listet som enkeltemner."
+    },
+    {
+      "navn": "Energi og miljø",
+      "obligatoriske": [
+        {
+          "emnekode": "HMS0002",
+          "emnenavn": "HMS-kurs for 1. årsstudenter",
+          "studiepoeng": 0,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "HMS0002-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4110",
+          "emnenavn": "Informasjonsteknologi, grunnkurs",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TDT4110-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4225",
+          "emnenavn": "Energi og miljø",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TEP4225-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "ELET1001",
+          "emnenavn": "Elektriske kretser - introduksjon",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4123",
+          "emnenavn": "Termodynamikk",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TEP4123-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4411",
+          "emnenavn": "Matematikk 2B: Lineær algebra, differensialligninger og flervariabel analyse",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TET4100",
+          "emnenavn": "Kretsanalyse",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TET4100-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TFY4107",
+          "emnenavn": "Fysikk",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TFY4107-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4421",
+          "emnenavn": "Matematikk 3B: Vektoranalyse og funksjonsapproksimasjon",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4100",
+          "emnenavn": "Fluidmekanikk",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TEP4100-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TFE4120",
+          "emnenavn": "Elektromagnetisme",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TFE4120-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4240",
+          "emnenavn": "Statistikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TMA4240-1"
+          ],
+          "merknad": "Felles for begge fagretningene under Energi og miljø (Elektrisk energiteknikk og Energi- og prosessteknikk). Kilde: kull 2023/2024, se forbehold i det felles emnet TIØ4118."
+        }
+      ],
+      "merknad": "I 3. året velges i tillegg en fagretning: Elektrisk energiteknikk (TET4105 Elektriske kraftsystemer 1, høst / TET4135 Energiplanlegging, vår) eller Energi- og prosessteknikk (TEP4135 Fluidmekanikk 2, høst / TEP4130 Varme- og massetransport, vår) - disse emnene er alternative og ikke felles, og er derfor ikke listet som enkeltemner."
+    },
+    {
+      "navn": "Marin teknikk",
+      "obligatoriske": [
+        {
+          "emnekode": "TMR4106",
+          "emnenavn": "Marin teknikk 1 - Intro",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TMR4106-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TFY4125",
+          "emnenavn": "Fysikk",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TKT4116",
+          "emnenavn": "Mekanikk 1",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TKT4116-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4411",
+          "emnenavn": "Matematikk 2B: Lineær algebra, differensialligninger og flervariabel analyse",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4110",
+          "emnenavn": "Fluidmekanikk",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TEP4110-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TKT4122",
+          "emnenavn": "Mekanikk 2",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4421",
+          "emnenavn": "Matematikk 3B: Vektoranalyse og funksjonsapproksimasjon",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4123",
+          "emnenavn": "Termodynamikk",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TEP4123-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMR4247",
+          "emnenavn": "Marin teknikk 3 - Hydrodynamikk",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TMR4247-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TMA4130-1"
+          ],
+          "merknad": "Kilde: kull 2023/2024, se forbehold i det felles emnet TIØ4118."
+        },
+        {
+          "emnekode": "TMR4335",
+          "emnenavn": "Marin teknikk 4 - Propulsjonssystemer, sikkerhet og miljø",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TMR4335-1"
+          ],
+          "merknad": "Kilde: kull 2023/2024, se forbehold i det felles emnet TIØ4118."
+        },
+        {
+          "emnekode": "TMA4245",
+          "emnenavn": "Statistikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TMA4245-1"
+          ],
+          "merknad": "Kilde: kull 2023/2024, se forbehold i det felles emnet TIØ4118."
+        },
+        {
+          "emnekode": "TMR4256",
+          "emnenavn": "Marin teknikk 6 - Design av marine systemer",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TMR4256-1"
+          ],
+          "merknad": "Kilde: kull 2023/2024, se forbehold i det felles emnet TIØ4118."
+        }
+      ],
+      "merknad": "Marin teknikk har ingen videre fagretningsdeling i 3. året slik de tre andre teknologiretningene har - alle emnene over gjelder alle studenter på retningen."
+    },
+    {
+      "navn": "Maskin- og energiteknologi",
+      "obligatoriske": [
+        {
+          "emnekode": "TDT4110",
+          "emnenavn": "Informasjonsteknologi, grunnkurs",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TDT4110-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4111",
+          "emnenavn": "Energi og bærekraft",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TEP4111-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TKT4116",
+          "emnenavn": "Mekanikk 1",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TKT4116-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4411",
+          "emnenavn": "Matematikk 2B: Lineær algebra, differensialligninger og flervariabel analyse",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4190",
+          "emnenavn": "Produksjonsteknologi",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TPK4190-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4120",
+          "emnenavn": "Termodynamikk 1",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TEP4120-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TFY4107",
+          "emnenavn": "Fysikk",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TFY4107-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4421",
+          "emnenavn": "Matematikk 3B: Vektoranalyse og funksjonsapproksimasjon",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4100",
+          "emnenavn": "Fluidmekanikk",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TEP4100-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4100",
+          "emnenavn": "Materialteknikk",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TMM4100-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TMA4130-1"
+          ],
+          "merknad": "Felles for begge fagretningene under Maskin- og energiteknologi (Industriell ledelse og systemfag og Energi- og prosessteknikk). Kilde: kull 2023/2024, se forbehold i det felles emnet TIØ4118."
+        },
+        {
+          "emnekode": "TDT4102",
+          "emnenavn": "Prosedyre- og objektorientert programmering",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TDT4102-1"
+          ],
+          "merknad": "Felles for begge fagretningene under Maskin- og energiteknologi. Kilde: kull 2023/2024, se forbehold i det felles emnet TIØ4118."
+        }
+      ],
+      "merknad": "I 3. året velges i tillegg en fagretning: Industriell ledelse og systemfag (TPK5100 Praktisk prosjektledelse, høst / TPK5160 Risikoanalyse, vår) eller Energi- og prosessteknikk (TEP4135 Fluidmekanikk 2, høst / TEP4130 Varme- og massetransport, vår) - disse emnene er alternative og ikke felles, og er derfor ikke listet som enkeltemner."
+    }
+  ],
+  "merknad": "Kilde er NTNUs studieplanportal (studieplan#programmeCode=MTIØT), hentet som utskriftsvennlig PDF per kull (parameter «year»). Programmet krever obligatorisk valg av én av 4 teknologiretninger ved studiestart: Datateknologi, Energi og miljø, Marin teknikk, Maskin- og energiteknologi (fristen er tidlig i 1. studieår). «obligatoriske» over inneholder de emnene (samme emnekode og studiepoeng) som er felles for alle 4 teknologiretningene i 1.-3. året: 3 fellesemner i 1./2. året (kull 2025, bekreftet gjeldende) og 2 fellesemner i 3. året (TIØ4118, TIØ4126 - rekonstruert fra kull 2023/2024 ettersom kull 2025 sin studieplan for 3. året ennå ikke er publisert; se merknad på TIØ4118). Hver teknologiretnings egne obligatoriske emner i 1.-3. året står under «spesialiseringer». I 3. året velger studentene i tillegg en fagretning/hovedprofil innenfor sin teknologiretning (bortsett fra Marin teknikk, som ikke har en slik videre deling); de fagretningsspesifikke emnene er beskrevet i merknadsfeltet til hver spesialisering og er ikke listet som enkeltemner, siden de er alternative valg mellom fagretninger, ikke obligatoriske for alle. 4. året (kull 2023/2024-data) består utelukkende av emner merket med minimumskrav til valg fra grupper (typisk M1A: minst ett av flere angitte emner, M2A: minst to av tre angitte TIØ-fordypningsemner) - ingen enkeltemner er obligatoriske uten valgfrihet i 4. året, og de er derfor ikke listet. I tillegg skal studentene gjennomføre Eksperter i team (EiT, langsgående over 4. året) hvor de selv velger landsby/tema - ingen enkelt emnekode er obligatorisk for alle. 5. året består av forprosjekt (fordypningsprosjekt, 15 sp), et fordypningsemne (7,5 sp) og masteroppgave (30 sp) innenfor en av 8 hovedprofiler som velges basert på fordypningsemnene fra 4. året: Anvendt økonomi og optimering (AØO), Bærekrafts-, arbeidsmiljø- og sikkerhetsledelse (BAS), Innovasjon og entreprenørskap, Investering, finans og økonomistyring (IFØ), Prosjektledelse, Strategisk endringsledelse (SEL), Strategisk forsyningsledelse (SF), Strategi, innovasjon og internasjonal forretningsutvikling (SFU). Hver hovedprofil har sine EGNE emnekoder for fordypningsprosjekt/-emne/masteroppgave (f.eks. TIØ4500/TIØ4505/TIØ4905 for AØO, TIØ4520/TIØ4525/TIØ4925 for BAS, osv.) - siden hovedprofilvalget er fritt og uavhengig av teknologiretning, og ingen av de 8 alternativene er obligatorisk for alle, er ingen av disse emnekodene listet som obligatoriske; strukturen (15+7,5+30 sp) er felles, men koden er det ikke. DBH-emnekoder er satt til tom liste for alle emner per instruks; kobling mot DBH gjøres automatisk senere ut fra emnekode."
+}

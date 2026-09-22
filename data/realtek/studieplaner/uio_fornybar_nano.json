@@ -1,0 +1,215 @@
+{
+  "entryId": "uio_fornybar_nano",
+  "programnavn": "Fornybar energi og nanoteknologi (bachelor)",
+  "institusjon": "Universitetet i Oslo",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.uio.no/studier/program/nanoteknologi/",
+    "https://www.uio.no/studier/program/nanoteknologi/oppbygging/"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 130,
+  "obligatoriske": [
+    {
+      "emnekode": "MENA1001",
+      "emnenavn": "Materialer, energi og nanoteknologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MENA1001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "IN1900",
+      "emnenavn": "Introduksjon i programmering for naturvitenskapelige anvendelser",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "IN1900-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT1100",
+      "emnenavn": "Kalkulus",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MAT1100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HMS0501",
+      "emnenavn": "Sikkerhet og fysisk miljø",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "HMS0501-1"
+      ],
+      "merknad": "Del av en obligatorisk HMS-kurspakke i starten av 1. semester sammen med HMS0502, HMS0503, HMS0505 og HMS0507 (alle 0 sp). Studenter som starter høsten 2026 skal i tillegg ta HMS0508 «God bruk av kunstig intelligens»."
+    },
+    {
+      "emnekode": "HMS0502",
+      "emnenavn": "Utviklende læringsmiljø",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "HMS0502-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HMS0503",
+      "emnenavn": "Laboratoriesikkerhet",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "HMS0503-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HMS0505",
+      "emnenavn": "El-sikkerhet",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "HMS0505-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HMS0507",
+      "emnenavn": "Brannsikkerhet",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "HMS0507-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM1121",
+      "emnenavn": "Uorganisk kjemi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "KJM1121-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS1100",
+      "emnenavn": "Mekanikk og modellering",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "FYS1100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT1110",
+      "emnenavn": "Kalkulus og lineær algebra",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MAT1110-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM1130",
+      "emnenavn": "Fysikalsk kjemi I - termodynamikk og kinetikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "KJM1130-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS1120",
+      "emnenavn": "Elektromagnetisme",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FYS1120-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT1120",
+      "emnenavn": "Lineær algebra",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MAT1120-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MENA2000",
+      "emnenavn": "Faste materialers fundamentale oppbygning",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MENA2000-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EXPHIL03",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "EXPHIL03-1"
+      ],
+      "merknad": "Kan også tas i 5. semester (3. år høst) i stedet - fleksibel plassering, men obligatorisk uansett."
+    },
+    {
+      "emnekode": "MENA3001",
+      "emnenavn": "Funksjonelle materialer",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MENA3001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MENA3300",
+      "emnenavn": "Nanoteknologi",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MENA3300-1"
+      ],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Programmet har ingen studieretninger/spesialiseringer - alle 13 fellesemner (130 sp) er obligatoriske for samtlige studenter. De resterende 50 sp (5. og 6. semester, minus EXPHIL03 og MENA3001/MENA3300) er utviklingssemester/frie emner (utveksling, prosjektoppgave, sertifikat eller frie bacheloremner)."
+}

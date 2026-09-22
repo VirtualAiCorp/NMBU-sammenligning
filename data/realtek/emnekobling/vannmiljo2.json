@@ -1,0 +1,29 @@
+{
+  "groupId": "vannmiljo2",
+  "hentet": "2026-09-22",
+  "note": "Denne gruppa lar seg nesten ikke emnekoble. NMBUs «Intelligent Water Technology» hadde første opptak i 2024, og DBH har bare rapportert karakterer for tre emner (INF201, DAT221 og THT310) med fire-fem kandidater hver - resten av studieplanen (DAT200, DAT300, THT301, THT302, THT320, THT271 og den 60 sp store masteroppgaven M60-VM) har ingen rapporterte tall ennå. OsloMets «Smart vannteknologi» har ingen emner i datagrunnlaget i det hele tatt. NTNUs toårige master i bygg og infrastruktur har et stort emnetilbud, men de aller fleste studentene tar konstruksjons- og byggeprosessemner; vannemnene (TVM) har bare tre-fire kandidater i enkeltår. Det er derfor bare to emnetyper der NMBU og en konkurrent møtes på samme fag, og begge hviler på svært små tall. Sammenligningen i denne gruppa bør leses som opptaks- og søkertall, ikke som karaktersammenligning.",
+  "emnetyper": [
+    {
+      "id": "programmering",
+      "label": "Programmering og numerikk",
+      "kategori": "Programmering",
+      "desc": "Videregående programmering og numeriske beregninger på masternivå.",
+      "note": "NMBUs INF201 Advanced Programming er et rent programmeringsemne på 5 sp, mens NTNUs TDT4127 Programmering og numerikk på 7,5 sp også dekker numeriske metoder. Nivået er sammenlignbart, men NMBU har bare fem rapporterte kandidater.",
+      "koblinger": [
+        { "entryId": "nmbu_iwt", "emnekoder": ["INF201-1"], "merknad": "Advanced Programming; fem rapporterte kandidater i 2025." },
+        { "entryId": "ntnu_mibygg", "emnekoder": ["TDT4127-1"], "merknad": "Programmering og numerikk; det klart største emnet i NTNUs toårige master." }
+      ]
+    },
+    {
+      "id": "renseteknologi",
+      "label": "Renseteknologi for vann og avløp",
+      "kategori": "Fagspesifikt",
+      "desc": "Prosesser for rensing av drikkevann og avløpsvann.",
+      "note": "Dette er den eneste vannfaglige koblingen som lar seg gjøre. Begge sider har svært små tall: NMBUs THT310 har fire kandidater i 2025, og NTNUs TVM4171 og TVM4173 har tre-fire kandidater i enkeltår. Karaktersnittene er ikke meningsfulle å sammenligne.",
+      "koblinger": [
+        { "entryId": "nmbu_iwt", "emnekoder": ["THT310-2"], "merknad": "Analyse og design av renseprosesser for vann og avløp; fire rapporterte kandidater." },
+        { "entryId": "ntnu_mibygg", "emnekoder": ["TVM4171-1", "TVM4173-1"], "merknad": "Behandling av avløpsvann og Behandling av drikkevann; tre-fire kandidater i 2023-2024." }
+      ]
+    }
+  ]
+}

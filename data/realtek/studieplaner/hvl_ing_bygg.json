@@ -1,0 +1,307 @@
+{
+  "entryId": "hvl_ing_bygg",
+  "programnavn": "Ingeniør, bygg (bachelor)",
+  "institusjon": "Høgskulen på Vestlandet",
+  "studieplanAar": "2026 høst (Bergen)",
+  "kilder": [
+    "https://www.hvl.no/studier/studieprogram/byggingenior-bergen/",
+    "https://www.hvl.no/studier/studieprogram/byggingenior-bergen/2026h/utdanningsplan/"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 60,
+  "obligatoriske": [
+    {
+      "emnekode": "BYG124",
+      "emnenavn": "Material- og konstruksjonslære",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BYG124-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ING100",
+      "emnenavn": "Ingeniørfagleg innføringsemne",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "ING100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ING202",
+      "emnenavn": "Programmering for ingeniørar",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "ING202-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT110",
+      "emnenavn": "Matematikk 1",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MAT110-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYG125",
+      "emnenavn": "Geodata, plan og infrastruktur",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ING161",
+      "emnenavn": "Kjemi for ingeniørar",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "ING161-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ING162",
+      "emnenavn": "Mekanikk for ingeniørar",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT202",
+      "emnenavn": "Matematikk 2",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MAT202-1"
+      ],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Konstruksjonsteknikk",
+      "obligatoriske": [
+        {
+          "emnekode": "BYG105",
+          "emnenavn": "Bygningskonstruksjonar",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BYG105-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYG201",
+          "emnenavn": "Grunnleggjande bygningsfysikk",
+          "studiepoeng": 5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYG202",
+          "emnenavn": "Statikk",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MAT122",
+          "emnenavn": "Statistikk for ingeniørar",
+          "studiepoeng": 5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYG106",
+          "emnenavn": "Betongkonstruksjonar",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "BYG106-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYG115",
+          "emnenavn": "Geoteknikk",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "BYG115-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYG107",
+          "emnenavn": "Stålkonstruksjonar",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BYG107-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYG350",
+          "emnenavn": "Bacheloroppgåve",
+          "studiepoeng": 20,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BYG350-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "ING303",
+          "emnenavn": "Systemtenking og innovasjon for ingeniørar",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "ING303-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYG302",
+          "emnenavn": "Statikk 2",
+          "studiepoeng": 5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Teknisk samfunnsplanlegging",
+      "obligatoriske": [
+        {
+          "emnekode": "BYG112",
+          "emnenavn": "Vassinfrastruktur og -reinsing",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BYG112-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "LEI200",
+          "emnenavn": "Digital prosjektgjennomføring",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MAT122",
+          "emnenavn": "Statistikk for ingeniørar",
+          "studiepoeng": 5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYG115",
+          "emnenavn": "Geoteknikk",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "BYG115-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "LEI210",
+          "emnenavn": "Arealplanlegging",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYG111",
+          "emnenavn": "Vegplanlegging",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BYG111-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYG350",
+          "emnenavn": "Bacheloroppgåve",
+          "studiepoeng": 20,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BYG350-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "ING303",
+          "emnenavn": "Systemtenking og innovasjon for ingeniørar",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "ING303-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYG113",
+          "emnenavn": "Fysisk planlegging",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "BYG113-1"
+          ],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er HVLs utdanningsplan-side for kull 2026 høst, Bergen (programmet finnes også i andre HVL-byer/kull med noe ulikt innhold — kun Bergen/2026h er brukt her). 1. studieår (60 sp) er felles («Fellesemne 1. studieår», eksplisitt merket «Krav: 60 studiepoeng» på siden). Fra 2. studieår velger studenten studieretning: Konstruksjonsteknikk eller Teknisk samfunnsplanlegging, hver med 95 sp obligatoriske emner (siden merker dette eksplisitt «Krav: 95 studiepoeng» per retning) — disse ligger under spesialiseringer. Semesterplasseringen (aar/semester) følger nøyaktig HVL-sidens egen «Semester: N»-merking per emne; merk at retningenes 5. semester (aar 3 høst) dermed summerer til mer enn 30 sp (BYG107/BYG112+BYG350+ING303 = 40 sp) mens 6. semester (aar 3 vår) er lavt (5–10 sp) — dette er hvordan HVL selv har fordelt emnene, ikke en feil i uttrekket. Bacheloroppgåva BYG350 (20 sp) er identisk emnekode i begge retninger. De resterende 25 sp per retning er valgfrie emner (bl.a. BYG306, EN312, MAS170, MAS203, BYG122, BYG303, BYG304, BYG501, MAS136, MAS311, MAS503, BYG203, BYG301, ING301, MAT301 for konstruksjonsteknikk; BYG305, MAS503, BYG306, EN312, ING301, MAS170, MAS203, BYG130, BYG201, BYG304, MAS136, MAS311, MAT301 for teknisk samfunnsplanlegging) og er ikke tatt med. obligatoriskeStudiepoeng (60) gjelder kun fellesdelen; total obligatorisk sp for en student blir 60 + 95 = 155 sp av 180 totalt når en retning er valgt."
+}

@@ -1,0 +1,101 @@
+{
+  "groupId": "datavitenskap2",
+  "hentet": "2026-09-22",
+  "note": "Gruppa er liten: NMBUs toårige master i datavitenskap måles mot NTNUs toårige datateknologimaster (MIDT) og NTNUs toårige informatikkmaster (MSIT). Toårige mastere har ingen felles grunnpakke på samme måte som femårige løp, og NTNUs to programmer har fem til seks studieretninger hver der det meste er studieretningsemner eller valgemner. Sammenligningen er derfor smalere enn i de femårige gruppene, og det er bare grunnlag for åtte emnetyper. Den er sterkest i maskinlæring, datahåndtering, anvendt data science og oppgavedelen, og svakest i matematikk, som NMBU har (MATH280 Anvendt lineær algebra) og NTNU ikke har i det hele tatt på masternivå. NMBUs emner er gjennomgående 5 og 10 sp, NTNUs 7,5 sp, så studiepoengomfanget er ikke direkte likt. Merk også at NTNU-emnene deles med de femårige løpene (blant annet datateknologi i gruppa for datavitenskap), slik at kandidattallene per emne her bare er MIDT- og MSIT-studentenes andel.",
+  "emnetyper": [
+    {
+      "id": "maskinlaering",
+      "label": "Maskinlæring",
+      "kategori": "Fagspesifikt",
+      "desc": "Maskinlæringsmetoder: klassifikasjon, regresjon, modellvalg, evaluering og praktisk gjennomføring på reelle datasett.",
+      "note": "NTNU har to emner (et metodeemne og et praksisemne) mot NMBUs ett, men NMBUs DAT200 er 10 sp mot NTNUs 7,5 sp per emne. NTNUs TDT4136 Introduksjon til kunstig intelligens er ikke koblet, siden NMBU ikke har noe rent KI-emne.",
+      "koblinger": [
+        { "entryId": "nmbu_datavitenskap2", "emnekoder": ["DAT200-1"], "merknad": "Anvendt maskinlæring / Machine Learning and Deep Learning, 10 sp." },
+        { "entryId": "ntnu_midt", "emnekoder": ["TDT4172-1", "TDT4173-1"], "merknad": "Introduksjon til maskinlæring og Moderne maskinlæring i praksis; studieretningsemner i KI-retningen." },
+        { "entryId": "ntnu_msit", "emnekoder": ["TDT4172-1", "TDT4173-1"] }
+      ]
+    },
+    {
+      "id": "dyplaering",
+      "label": "Dyplæring",
+      "kategori": "Fagspesifikt",
+      "desc": "Dype nevrale nettverk: arkitekturer, trening og anvendelser.",
+      "note": "NTNUs datateknologimaster (MIDT) har ikke rapportert et eget dyplæringsemne med kandidattall; IT3030 Dyp læring er bare registrert på informatikkmasteren. Koblingen omfatter derfor bare NMBU og MSIT.",
+      "koblinger": [
+        { "entryId": "nmbu_datavitenskap2", "emnekoder": ["DAT300-1"], "merknad": "Anvendt dyplæring, 10 sp." },
+        { "entryId": "ntnu_msit", "emnekoder": ["IT3030-1"], "merknad": "Dyp læring; valgemne, 7,5 sp." }
+      ]
+    },
+    {
+      "id": "datahaandtering-og-databaser",
+      "label": "Datahåndtering, databaser og store datamengder",
+      "kategori": "Programmering",
+      "desc": "Databaser, datamodellering og håndtering av store og distribuerte datasett.",
+      "note": "NMBUs INF230 er et grunnleggende databaseemne, mens NTNUs TDT4225 er rettet mot store og distribuerte datamengder og ligger på et høyere nivå. Nivåforskjellen bør leses inn i karaktersnittet.",
+      "koblinger": [
+        { "entryId": "nmbu_datavitenskap2", "emnekoder": ["INF230-2"], "merknad": "Datahåndtering og -analyse / Data Handling and Data Bases, 10 sp." },
+        { "entryId": "ntnu_midt", "emnekoder": ["TDT4225-1"], "merknad": "Store, distribuerte datamengder." },
+        { "entryId": "ntnu_msit", "emnekoder": ["TDT4225-1", "TDT4305-1"], "merknad": "Store, distribuerte datamengder og Big Data-arkitektur." }
+      ]
+    },
+    {
+      "id": "anvendt-data-science",
+      "label": "Anvendt data science",
+      "kategori": "Fagspesifikt",
+      "desc": "Dataanalyse i praksis: fra forretnings- eller fagproblem til datadrevet beslutning, med hele analysekjeden.",
+      "note": "NMBUs IND320 Data til beslutning er et nyere emne med bare ti rapporterte kandidater. NTNUs TDT4259 er et bredt anvendt data science-emne og har et større innslag av prosjektarbeid.",
+      "koblinger": [
+        { "entryId": "nmbu_datavitenskap2", "emnekoder": ["IND320-1"], "merknad": "Data til beslutning; nytt emne med få rapporterte kandidater." },
+        { "entryId": "ntnu_midt", "emnekoder": ["TDT4259-1"], "merknad": "Anvendt data science." },
+        { "entryId": "ntnu_msit", "emnekoder": ["TDT4259-1", "IT3212-1"], "merknad": "Anvendt data science og Datadrevet programvare." }
+      ]
+    },
+    {
+      "id": "videregaaende-programmering",
+      "label": "Videregående programmering",
+      "kategori": "Programmering",
+      "desc": "Programmering ut over innføringsnivå, med vekt på struktur, effektivitet og numeriske beregninger.",
+      "note": "NTNUs informatikkmaster (MSIT) har ikke et eget videregående programmeringsemne med rapporterte kandidattall. NMBUs INF201 er 5 sp mot NTNUs 7,5 sp, og NTNUs TDT4127 har en tydelig numerikkdel som NMBUs emne ikke har.",
+      "koblinger": [
+        { "entryId": "nmbu_datavitenskap2", "emnekoder": ["INF201-1", "INF202-1", "INF203-1"], "merknad": "Videregående programmering (5 sp) og de to prosjektoppgavene i januar- og juniblokk." },
+        { "entryId": "ntnu_midt", "emnekoder": ["TDT4127-1"], "merknad": "Programmering og numerikk." }
+      ]
+    },
+    {
+      "id": "informatikkgrunnlag",
+      "label": "Informatikkgrunnlag og programmeringsspråk",
+      "kategori": "Programmering",
+      "desc": "Grunnleggende informatikk for datavitere: beregningsmodeller, kompleksitet, programmeringsparadigmer og språkkonstruksjoner.",
+      "note": "Dette er den svakeste koblingen i gruppa. NMBUs INF221 og DAT221 er innførings- og grunnprinsippemner for studenter som kommer inn på masteren med ulik bakgrunn, mens NTNUs TDT4165 er et rent programmeringsspråkemne. Overlappen er delvis, og karakterene bør sammenlignes med varsomhet.",
+      "koblinger": [
+        { "entryId": "nmbu_datavitenskap2", "emnekoder": ["INF221-1", "DAT221-1", "DAT121-1"], "merknad": "Informatikk for datavitere og innføringsemnene Grunnleggende prinsipper for datavitenskap og Datavitenskap innføringsemne." },
+        { "entryId": "ntnu_midt", "emnekoder": ["TDT4165-1"], "merknad": "Programmeringsspråk; bare delvis overlapp med NMBUs emner." },
+        { "entryId": "ntnu_msit", "emnekoder": ["TDT4165-1"] }
+      ]
+    },
+    {
+      "id": "fordypningsprosjekt",
+      "label": "Seminar og fordypningsprosjekt",
+      "kategori": "Oppgave",
+      "desc": "Det forberedende arbeidet før masteroppgaven: litteraturstudium, prosjektarbeid og faglig fordypning.",
+      "note": "Omfanget er svært ulikt: NMBUs seminar er 5-10 sp, mens NTNUs fordypningsprosjekt er 15 sp og i tillegg følges av et fordypningsemne på 7,5 sp. Tallene er derfor ikke direkte sammenlignbare.",
+      "koblinger": [
+        { "entryId": "nmbu_datavitenskap2", "emnekoder": ["DAT390-2", "DAT390-3"], "merknad": "Seminar i datavitenskap; to kodeversjoner på henholdsvis 5 og 10 sp." },
+        { "entryId": "ntnu_midt", "emnekoder": ["TDT4501-1", "TDT4506-1"], "merknad": "Datateknologi, fordypningsprosjekt (15 sp) og fordypningsemne (7,5 sp)." },
+        { "entryId": "ntnu_msit", "emnekoder": ["IT3915-1"], "merknad": "Master i informatikk, forberedende prosjekt, 15 sp." }
+      ]
+    },
+    {
+      "id": "masteroppgave",
+      "label": "Masteroppgave",
+      "kategori": "Oppgave",
+      "desc": "Det selvstendige avsluttende arbeidet i mastergraden.",
+      "note": "Alle tre har masteroppgave på 30 sp, så dette er den mest direkte sammenlignbare emnetypen i gruppa. NMBUs M30-DV har åtte rapporterte kandidater i 2024/2025 og 36 i perioden samlet.",
+      "koblinger": [
+        { "entryId": "nmbu_datavitenskap2", "emnekoder": ["M30-DV-1"], "merknad": "Masteroppgave 30 sp." },
+        { "entryId": "ntnu_midt", "emnekoder": ["TDT4900-1"], "merknad": "Datateknologi, masteroppgave 30 sp." },
+        { "entryId": "ntnu_msit", "emnekoder": ["IT3920-1"], "merknad": "Masteroppgave for MSIT, 30 sp." }
+      ]
+    }
+  ]
+}

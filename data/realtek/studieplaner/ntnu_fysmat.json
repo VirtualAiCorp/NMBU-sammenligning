@@ -1,0 +1,561 @@
+{
+  "entryId": "ntnu_fysmat",
+  "programnavn": "Fysikk og matematikk (master 5 år)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2022/2023 (kull 2022, siste kull med publisert plan for alle 5 år)",
+  "kilder": [
+    "https://www.ntnu.no/studier/mtfyma",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=MTFYMA&year=2022"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 120,
+  "obligatoriske": [
+    {
+      "emnekode": "EXPH0300",
+      "emnenavn": "Examen philosophicum for naturvitenskap og teknologi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EXPH0300-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FY1001",
+      "emnenavn": "Mekanisk fysikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FY1001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HMS0001",
+      "emnenavn": "HMS-kurs for 1. årsstudenter",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "HMS0001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TDT4110",
+      "emnenavn": "Informasjonsteknologi, grunnkurs",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "TDT4110-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4100",
+      "emnenavn": "Matematikk 1",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "TMA4100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FY1003",
+      "emnenavn": "Elektrisitet og magnetisme",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "FY1003-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TFY4163",
+      "emnenavn": "Bølgefysikk og fluidmekanikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "TFY4163-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4105",
+      "emnenavn": "Matematikk 2",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "TMA4105-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4115",
+      "emnenavn": "Matematikk 3",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "TMA4115-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TFY4165",
+      "emnenavn": "Termisk fysikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "TFY4165-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TFY4215",
+      "emnenavn": "Innføring i kvantefysikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "TFY4215-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4120",
+      "emnenavn": "Matematikk 4K",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "TMA4120-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4240",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "TMA4240-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TDT4102",
+      "emnenavn": "Prosedyre- og objektorientert programmering",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "TDT4102-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TFY4195",
+      "emnenavn": "Optikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "TFY4195-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4320",
+      "emnenavn": "Introduksjon til vitenskapelige beregninger",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "TMA4320-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMT4110",
+      "emnenavn": "Kjemi",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "TMT4110-1"
+      ],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Biofysikk og medisinsk teknologi",
+      "obligatoriske": [
+        {
+          "emnekode": "TBT4102",
+          "emnenavn": "Biokjemi 1",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TBT4102-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TFY4185",
+          "emnenavn": "Måleteknikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TFY4185-2"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TFY4225",
+          "emnenavn": "Kjerne- og strålingsfysikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TFY4225-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TFY4230",
+          "emnenavn": "Statistisk fysikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TFY4230-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TFY4190",
+          "emnenavn": "Instrumentering",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TFY4190-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TFY4260",
+          "emnenavn": "Cellebiologi og cellulær biofysikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TFY4260-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TFY4310",
+          "emnenavn": "Molekylær biofysikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TFY4310-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TIØ4252-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "HMS0003",
+          "emnenavn": "HMS-kurs for masterstudenter",
+          "studiepoeng": 0,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "HMS0003-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TFY4500",
+          "emnenavn": "Biofysikk, fordypningsprosjekt",
+          "studiepoeng": 15,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TFY4500-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TFY4910",
+          "emnenavn": "Biofysikk, masteroppgave",
+          "studiepoeng": 30,
+          "aar": 5,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TFY4910-1"
+          ],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Industriell matematikk",
+      "obligatoriske": [
+        {
+          "emnekode": "TDT4120",
+          "emnenavn": "Algoritmer og datastrukturer",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TDT4120-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4145",
+          "emnenavn": "Lineære metoder",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TMA4145-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4215",
+          "emnenavn": "Numerisk matematikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TMA4215-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4265",
+          "emnenavn": "Stokastisk modellering",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TMA4265-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4212",
+          "emnenavn": "Numerisk løsning av differensialligninger med differansemetoder",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TMA4212-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4267",
+          "emnenavn": "Lineære statistiske modeller",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TMA4267-1"
+          ],
+          "merknad": "TMA4150 Algebra, TMA4165 Dynamiske systemer og TMA4180 Optimering 1 er et obligatorisk valg (velg én, status M1A) i samme semester og er ikke ført opp."
+        },
+        {
+          "emnekode": "TMA4195",
+          "emnenavn": "Matematisk modellering",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TMA4195-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4500",
+          "emnenavn": "Industriell matematikk, fordypningsprosjekt",
+          "studiepoeng": 15,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TMA4500-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4900",
+          "emnenavn": "Industriell matematikk, masteroppgave",
+          "studiepoeng": 30,
+          "aar": 5,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TMA4900-1"
+          ],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Teknisk fysikk",
+      "obligatoriske": [
+        {
+          "emnekode": "FY2045",
+          "emnenavn": "Kvantemekanikk I",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "FY2045-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TFY4185",
+          "emnenavn": "Måleteknikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TFY4185-2"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TFY4230",
+          "emnenavn": "Statistisk fysikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TFY4230-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TFY4345",
+          "emnenavn": "Klassisk mekanikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TFY4345-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TFY4190",
+          "emnenavn": "Instrumentering",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TFY4190-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TFY4220",
+          "emnenavn": "Faste stoffers fysikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TFY4220-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TFY4240",
+          "emnenavn": "Elektromagnetisk teori",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TFY4240-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TIØ4252-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "HMS0003",
+          "emnenavn": "HMS-kurs for masterstudenter",
+          "studiepoeng": 0,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "HMS0003-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TFY4510",
+          "emnenavn": "Fysikk, fordypningsprosjekt",
+          "studiepoeng": 15,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TFY4510-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TFY4900",
+          "emnenavn": "Fysikk, masteroppgave",
+          "studiepoeng": 30,
+          "aar": 5,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TFY4900-1"
+          ],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er NTNUs interaktive studieplan, lest ut for kull 2022 (siste kull med studieplan publisert for alle 5 år). Etter to felles år velger studenten i 3. år én av tre studieretninger: Biofysikk og medisinsk teknologi, Industriell matematikk og Teknisk fysikk. TIØ4252 Teknologiledelse er obligatorisk i Biofysikk- og Teknisk fysikk-retningene, men bare valgfritt (status VA) i Industriell matematikk, og er derfor ikke lagt i fellesdelen. For alle tre retninger er 4. år i hovedsak styrt av valgfrie emnegrupper (VA/VB) uten obligatoriske rader, bortsett fra TMA4195 i Industriell matematikk (4. år høst). I 5. år har Biofysikk og Teknisk fysikk et fast fordypningsprosjekt (15 sp) og en fast masteroppgave (30 sp), samt et obligatorisk HMS-kurs (HMS0003, 0 sp); selve fordypningsemnet på 7,5 sp (f.eks. TFY4505/TFY4515) er valgfritt (VA), ikke obligatorisk. For Industriell matematikk vises ikke HMS0003 i studieplanverktøyets 5.-årstabell for denne retningen - usikkert om dette er en reell forskjell eller en visningsforskjell i kilden, så emnet er utelatt for denne retningen. Eksperter i team (EiT) er obligatorisk som kategori i 4. år vår, men studenten velger selv landsby/emne blant et stort antall alternativer og er derfor ikke ført opp med egen rad."
+}

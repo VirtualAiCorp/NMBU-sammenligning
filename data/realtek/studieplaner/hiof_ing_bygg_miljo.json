@@ -1,0 +1,238 @@
+{
+  "entryId": "hiof_ing_bygg_miljo",
+  "programnavn": "Ingeniør, bygg og miljø (bachelor)",
+  "institusjon": "Høgskolen i Østfold",
+  "studieplanAar": "2026–2029 (kull høst 2026)",
+  "kilder": [
+    "https://www.hiof.no/studier/programmer/byg-bachelorstudium-i-ingeniorfag-bygg/",
+    "https://www.hiof.no/studier/programmer/byg-bachelorstudium-i-ingeniorfag-bygg/studieplaner/h2026.html"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 140,
+  "obligatoriske": [
+    {
+      "emnekode": "BYG10226",
+      "emnenavn": "Bygningsfysikk",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ING10125",
+      "emnenavn": "Bærekraftig forbruk og produksjon",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "ING10125-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ING10225",
+      "emnenavn": "Ingeniørmatematikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "helår",
+      "dbhEmnekoder": [],
+      "merknad": "Går over to deler (høst og vår); alle 10 sp registrert på del 2 (vår)."
+    },
+    {
+      "emnekode": "ING10325",
+      "emnenavn": "Ingeniører i team",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "ING10325-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ING10425",
+      "emnenavn": "Materiallære",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "ING10425-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ING11125",
+      "emnenavn": "Bærekraftige byer og lokalsamfunn",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ING11225",
+      "emnenavn": "Fysikk",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ING11325",
+      "emnenavn": "Digitalisering i ingeniørfagene",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ING11425",
+      "emnenavn": "Mekanikk - Statikk",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYG20126",
+      "emnenavn": "BIM",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYG27026",
+      "emnenavn": "Teknisk infrastruktur",
+      "studiepoeng": 15,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ING20125",
+      "emnenavn": "Mekanikk - Fasthetslære",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ING20726",
+      "emnenavn": "Matematiske metoder",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "helår",
+      "dbhEmnekoder": [],
+      "merknad": "Går over to deler (høst og vår); alle 10 sp registrert på del 2 (vår)."
+    },
+    {
+      "emnekode": "IRB21519",
+      "emnenavn": "Konstruksjonsteknikk 1",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "IRB21519-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "IRB27225",
+      "emnenavn": "Bygg- og anleggsledelse",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IRB27325",
+      "emnenavn": "Grunnlag for prosjektering",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IRM23223",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IRF37522",
+      "emnenavn": "Bacheloroppgave med vitenskapsteori og metode",
+      "studiepoeng": 20,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "IRF37522-1"
+      ],
+      "merknad": "Felles for begge studieretninger."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Konstruksjons- og materialteknikk",
+      "obligatoriske": [
+        {
+          "emnekode": "IRB22025",
+          "emnenavn": "Konstruksjonsteknikk 2",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "IRB31121",
+          "emnenavn": "FEM-analyse og prosjektering",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "IRB31121-1"
+          ],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Infrastruktur og miljø",
+      "obligatoriske": [
+        {
+          "emnekode": "IRB36125",
+          "emnenavn": "Veg- og VA-systemer 1",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "IRB36225",
+          "emnenavn": "Veg- og VA-systemer 2",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er HiØs studieplan-side for kull 2026–2029, sist hentet fra FS (Felles studentsystem) av HiØ selv 22.09.2026 ifølge siden. Programmet oppgir eksplisitt «De obligatoriske emnene utgjør 160 studiepoeng» — dette stemmer med summen her (140 felles + 20 per retning = 160). 1. og 2. studieår (120 sp) er felles for alle. Fra 3. studieår (høst) velger studenten studieretning: Konstruksjons- og materialteknikk eller Infrastruktur og miljø, hver med 2 obligatoriske emner à 10 sp (20 sp totalt). Bacheloroppgaven IRF37522 (20 sp, vår 3. år) er felles for begge retninger og ligger derfor i obligatoriske, ikke i spesialiseringer. I tillegg til retningsemnet i 3. år høst velger studenten 2 valgfrie emner à 10 sp (20 sp, blant IRF24021, IRF33018, IRI22518, IRM34513 ved siste hentede visning) — disse er ikke tatt med. Studentene oppfordres til utveksling i 5. semester som alternativ til dette valgfrie blokk."
+}

@@ -1,0 +1,194 @@
+{
+  "groupId": "vannmiljo",
+  "hentet": "2026-09-22",
+  "note": "NMBU er alene om et femårig sivilingeniørløp i vann- og miljøteknikk, og det preger sammenligningen. NTNUs «Bygg og infrastruktur» er den eneste konkurrenten med et fullt vann- og miljøfaglig emnetilbud (TVM-emnene), men der er vann én av flere studieretninger, så kandidattallene på vannemnene er langt lavere enn på fellesemnene. NTNUs «Energi og miljø» er et elkraft- og energiløp og møter NMBU bare i grunnpakka, i fluidmekanikk og i bærekraftsanalyse. De fire treårige ingeniørutdanningene har en helt annen tyngde: USN har ett VA-emne, HiØ ett vann- og miljøemne (bare 2021-2022), OsloMets «Energi og miljø i bygg» er et VVS- og inneklimastudium uten vannteknikk, og UiS' infrastrukturretning rapporteres på samme DBH-programkode (B-BYGG) som konstruksjonsteknikk og har ingen vannemner i det hele tatt. Sammenligningen er derfor sterkest i grunnpakka (matematikk, fysikk, kjemi, programmering, statistikk) og i oppgaven, og svakest i de vannfaglige emnene, der bare NMBU og NTNU Bygg og infrastruktur har et reelt tilbud. NMBUs kull er små, og flere av grunnemnene har under ti rapporterte kandidater i enkeltår.",
+  "emnetyper": [
+    {
+      "id": "matematikk-1",
+      "label": "Matematikk 1 (kalkulus)",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Det første matematikkemnet: grenseverdier, derivasjon, integrasjon og enkle differensiallikninger.",
+      "note": "NMBU la om grunnpakka fra MATH111 til MATH121 i perioden, og NTNU fra TMA4100 til TMA4400; begge kodesettene er med. HiØ har byttet kode flere ganger (IRF10014, IRF10721). NMBU-tallene er små fordi mange av studentene tar matematikkemnene sammen med andre program.",
+      "koblinger": [
+        { "entryId": "nmbu_vannmiljo", "emnekoder": ["MATH111-1", "MATH121-1"], "merknad": "Kalkulus 1 ble erstattet av Kalkulus; begge har under ti rapporterte kandidater per år." },
+        { "entryId": "ntnu_bygg_infrastruktur_vann", "emnekoder": ["TMA4100-1", "TMA4400-1"], "merknad": "To kodeversjoner av Matematikk 1." },
+        { "entryId": "ntnu_energi_miljo_vann", "emnekoder": ["TMA4100-1", "TMA4400-1"] },
+        { "entryId": "uis_ing_bygg_infrastruktur", "emnekoder": ["MAT100-1"], "merknad": "Matematiske metoder 1." },
+        { "entryId": "hiof_ing_bygg_miljo", "emnekoder": ["IRF10014-1", "IRF10721-1"], "merknad": "Matematikk 1 og Ingeniørmatematikk." },
+        { "entryId": "oslomet_ing_energi_miljo_bygg", "emnekoder": ["EMFE1000-1", "BYFE1000-1", "TRFE1000-1"], "merknad": "Matematikk 1000 i tre kodeversjoner." },
+        { "entryId": "usn_ing_bygg_plan_infrastruktur", "emnekoder": ["IB1030-1", "TR1010-1"], "merknad": "Matematikk 1 og Teknisk realfag 1 (tresemesterordningen)." }
+      ]
+    },
+    {
+      "id": "matematikk-2-og-3",
+      "label": "Matematikk 2 og 3 (lineær algebra og flervariabel)",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Lineær algebra, vektoranalyse, flervariabel kalkulus og videregående metodeemner.",
+      "note": "NMBUs MATH122 og MATH123 fra den nye grunnpakka har ennå ikke rapporterte kandidattall for vann- og miljøteknikk, så bare MATH112 og MATH113 er koblet.",
+      "koblinger": [
+        { "entryId": "nmbu_vannmiljo", "emnekoder": ["MATH112-1", "MATH113-1"], "merknad": "Kalkulus 2 og Lineær algebra og lineære differensiallikninger." },
+        { "entryId": "ntnu_bygg_infrastruktur_vann", "emnekoder": ["TMA4105-1", "TMA4110-1", "TMA4130-1"], "merknad": "Matematikk 2, 3 og 4N." },
+        { "entryId": "ntnu_energi_miljo_vann", "emnekoder": ["TMA4105-1", "TMA4115-1", "TMA4130-1"], "merknad": "Matematikk 2, 3 og 4N." },
+        { "entryId": "uis_ing_bygg_infrastruktur", "emnekoder": ["MAT200-1", "MAT300-1", "MAF310-1"], "merknad": "Matematiske metoder 2, Vektoranalyse og Numerisk modellering 1." },
+        { "entryId": "hiof_ing_bygg_miljo", "emnekoder": ["IRF20014-1", "IRF20721-1", "IRF24021-1", "IRF30017-1"], "merknad": "Matematikk 2, Matematiske metoder, Vektoranalyse og Matematikk 3." },
+        { "entryId": "oslomet_ing_energi_miljo_bygg", "emnekoder": ["EMPE2000-1", "BYPE2000-1", "DAVE3700-1"], "merknad": "Matematikk 2000 og 3000." },
+        { "entryId": "usn_ing_bygg_plan_infrastruktur", "emnekoder": ["PB2010-1", "VE3010-1", "VE3010D-1", "VE3010P-1"], "merknad": "Matematikk 2 og Matematikk 3 i tre kodeversjoner (ordinær, digital og praksisnær)." }
+      ]
+    },
+    {
+      "id": "statistikk",
+      "label": "Statistikk",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Sannsynlighetsregning, statistisk inferens og usikkerhet i tekniske beregninger.",
+      "note": "NMBUs STAT100 har bare 6-7 rapporterte kandidater per år på dette programmet og bør leses med forbehold. HiØ har statistikk kombinert med andre fag i samme emne.",
+      "koblinger": [
+        { "entryId": "nmbu_vannmiljo", "emnekoder": ["STAT100-1"], "merknad": "Få rapporterte kandidater (6-7 per år)." },
+        { "entryId": "ntnu_bygg_infrastruktur_vann", "emnekoder": ["TMA4240-1"] },
+        { "entryId": "ntnu_energi_miljo_vann", "emnekoder": ["TMA4240-1", "TMA4245-1"], "merknad": "To statistikkemner avhengig av studieretning." },
+        { "entryId": "uis_ing_bygg_infrastruktur", "emnekoder": ["STA100-1"] },
+        { "entryId": "hiof_ing_bygg_miljo", "emnekoder": ["IRF14121-1", "IRB22515-1"], "merknad": "Statistikk og bærekraftig innovasjon, og den eldre Statistikk og materiallære." },
+        { "entryId": "oslomet_ing_energi_miljo_bygg", "emnekoder": ["FEPE2100-1"] },
+        { "entryId": "usn_ing_bygg_plan_infrastruktur", "emnekoder": ["PB2030-1"] }
+      ]
+    },
+    {
+      "id": "fysikk-og-mekanikk",
+      "label": "Fysikk og mekanikk",
+      "kategori": "Realfag",
+      "desc": "Grunnleggende fysikk og teknisk mekanikk: krefter, likevekt, bevegelse og fasthetslære.",
+      "note": "NMBU deler stoffet på tre emner (Mekanikk, Statikk og Fysikk for bioteknologer). NTNUs energi- og miljøløp har fysikk, men ingen mekanikk. UiS har bare FYS100 Mekanikk, som er både fysikk- og mekanikkemnet der.",
+      "koblinger": [
+        { "entryId": "nmbu_vannmiljo", "emnekoder": ["FYS101-1", "FYS110-1", "FYS102A-1", "TBM120-1"], "merknad": "Mekanikk, Statikk, Fysikk for bioteknologer og Fasthetslære." },
+        { "entryId": "ntnu_bygg_infrastruktur_vann", "emnekoder": ["TFY4106-1", "TKT4116-1", "TKT4122-1"], "merknad": "Fysikk og Mekanikk 1-2." },
+        { "entryId": "ntnu_energi_miljo_vann", "emnekoder": ["TFY4107-1"], "merknad": "Fysikk; programmet har ikke et eget mekanikkemne." },
+        { "entryId": "uis_ing_bygg_infrastruktur", "emnekoder": ["FYS100-1", "BYG140-1", "BYG205-1"], "merknad": "FYS100 Mekanikk er UiS sitt fysikkemne; i tillegg Konstruksjonsmekanikk 1 og 2." },
+        { "entryId": "hiof_ing_bygg_miljo", "emnekoder": ["IRF13018-1", "IRF14015-1", "IRF14221-1"], "merknad": "Ingeniørfysikk og kjemi, og Mekanikk 1 / Mekanikk." },
+        { "entryId": "oslomet_ing_energi_miljo_bygg", "emnekoder": ["EMPE1500-1", "TRE1400-1"], "merknad": "Fysikk; programmet har ikke et mekanikkemne." },
+        { "entryId": "usn_ing_bygg_plan_infrastruktur", "emnekoder": ["PB1010-1", "PB2040-1", "TR1020-1"], "merknad": "Fysikk 1 - Mekanikk, Fysikk 2 - Statikk og fasthetslære og Teknisk realfag 2." }
+      ]
+    },
+    {
+      "id": "programmering",
+      "label": "Programmering og numerikk",
+      "kategori": "Programmering",
+      "desc": "Innføring i programmering og numeriske beregninger for ingeniørbruk.",
+      "note": "HiØ har ikke et eget programmeringsemne i bygg og miljø. UiS-emnene ligger under DAT-koder som deles med andre ingeniørprogram.",
+      "koblinger": [
+        { "entryId": "nmbu_vannmiljo", "emnekoder": ["INF120-1"], "merknad": "Programmering og databehandling." },
+        { "entryId": "ntnu_bygg_infrastruktur_vann", "emnekoder": ["TDT4110-1"], "merknad": "Informasjonsteknologi, grunnkurs." },
+        { "entryId": "ntnu_energi_miljo_vann", "emnekoder": ["TDT4110-1", "TDT4102-1", "TDT4114-1"], "merknad": "Informasjonsteknologi grunnkurs, Prosedyre- og objektorientert programmering og Anvendt programmering." },
+        { "entryId": "uis_ing_bygg_infrastruktur", "emnekoder": ["DAT120-1", "DAT125-1"], "merknad": "DAT120 ble erstattet av DAT125 fra 2025." },
+        { "entryId": "oslomet_ing_energi_miljo_bygg", "emnekoder": ["BEPE1700-1"], "merknad": "Grunnleggende programmering." },
+        { "entryId": "usn_ing_bygg_plan_infrastruktur", "emnekoder": ["IB1020-1"], "merknad": "Programmering for beregning." }
+      ]
+    },
+    {
+      "id": "kjemi",
+      "label": "Kjemi",
+      "kategori": "Realfag",
+      "desc": "Generell kjemi og vannkjemi: løsninger, likevekter, reaksjoner og kjemisk analyse.",
+      "note": "NMBUs KJM220 Vannkjemi har svært få rapporterte kandidater, men er koblet fordi den er obligatorisk og gir vannfaglig kjemi som konkurrentene ikke har som eget emne. HiØ og OsloMet har kjemi kombinert med henholdsvis fysikk og miljøfag.",
+      "koblinger": [
+        { "entryId": "nmbu_vannmiljo", "emnekoder": ["KJM100-1", "KJM220-1"], "merknad": "Generell kjemi og Vannkjemi; KJM220 har under fem rapporterte kandidater per år." },
+        { "entryId": "ntnu_bygg_infrastruktur_vann", "emnekoder": ["TMT4101-1", "TMT4100-1"], "merknad": "To kodeversjoner av Kjemi." },
+        { "entryId": "ntnu_energi_miljo_vann", "emnekoder": ["TMT4101-1", "TMT4112-1"] },
+        { "entryId": "uis_ing_bygg_infrastruktur", "emnekoder": ["KJE101-1"], "merknad": "Grunnleggende kjemi." },
+        { "entryId": "hiof_ing_bygg_miljo", "emnekoder": ["IRF13018-1"], "merknad": "Ingeniørfysikk og kjemi; kjemidelen er om lag halve emnet." },
+        { "entryId": "oslomet_ing_energi_miljo_bygg", "emnekoder": ["EMPE1300-1"], "merknad": "Kjemi og miljø." },
+        { "entryId": "usn_ing_bygg_plan_infrastruktur", "emnekoder": ["TS2010-1"] }
+      ]
+    },
+    {
+      "id": "hydraulikk-og-fluidmekanikk",
+      "label": "Hydraulikk og fluidmekanikk",
+      "kategori": "Fagspesifikt",
+      "desc": "Strømning i rør, kanaler og vassdrag: trykktap, frie vannspeil og strømningsberegninger.",
+      "note": "UiS, HiØ og USN har ingen emner i fluidmekanikk eller hydraulikk. OsloMets Strømningsteknikk er rettet mot VVS-anlegg, ikke mot vassdrag.",
+      "koblinger": [
+        { "entryId": "nmbu_vannmiljo", "emnekoder": ["TPS200-1", "TPS210-1", "THT211-1"], "merknad": "Innføring i fluidmekanikk, Fluidmekanikk 2: Strømningsteknikk og Strømning i kanaler og vassdrag." },
+        { "entryId": "ntnu_bygg_infrastruktur_vann", "emnekoder": ["TVM4116-1"], "merknad": "Hydromekanikk." },
+        { "entryId": "ntnu_energi_miljo_vann", "emnekoder": ["TEP4100-1", "TEP4135-1"], "merknad": "Fluidmekanikk og Fluidmekanikk 2." },
+        { "entryId": "oslomet_ing_energi_miljo_bygg", "emnekoder": ["EMTS2200-1"], "merknad": "Strømningsteknikk; rettet mot VVS-anlegg." }
+      ]
+    },
+    {
+      "id": "hydrologi-og-vannressurser",
+      "label": "Hydrologi og vannressurser",
+      "kategori": "Fagspesifikt",
+      "desc": "Vannets kretsløp, nedbørfelt, avrenning, flom og hydrologisk modellering.",
+      "note": "Bare NMBU og NTNUs bygg- og infrastrukturløp har hydrologiemner. NTNUs energi- og miljøprogram har vannkraft, men ikke hydrologi som eget emne for sine studenter. Ingen av bachelorutdanningene har hydrologi.",
+      "koblinger": [
+        { "entryId": "nmbu_vannmiljo", "emnekoder": ["VANN200-1"], "merknad": "Hydrologi, 10 sp." },
+        { "entryId": "ntnu_bygg_infrastruktur_vann", "emnekoder": ["TVM4105-1", "TVM4106-1", "TGB4205-1"], "merknad": "Hydrologi, Hydrologisk modellering og Hydrogeologi." }
+      ]
+    },
+    {
+      "id": "vann-og-avlopssystemer",
+      "label": "Vann- og avløpssystemer",
+      "kategori": "Fagspesifikt",
+      "desc": "Ledningsnett for drikkevann, avløp og overvann: dimensjonering, analyse, drift og forvaltning.",
+      "note": "Dette er kjernen i NMBUs program, med sju emner. NTNU dekker feltet i BM2 Vann og miljø og i urbane vannsystemer. USN har ett VA-emne og HiØ ett vann- og miljøemne som bare ble rapportert i 2021-2022. UiS og OsloMet har ingen tilsvarende emner.",
+      "koblinger": [
+        { "entryId": "nmbu_vannmiljo", "emnekoder": ["THT261-1", "THT100-1", "THT300-1", "THT301-1", "THT302-1", "THT303-1", "THT200-2"], "merknad": "Innføring i vann- og avløpssystemer, Kommunalteknikk, Planlegging og design av urbane vannsystemer (erstattet av THT302 og THT303), Forvaltning av urban vanninfrastruktur og Bærekraftig overvannshåndtering." },
+        { "entryId": "ntnu_bygg_infrastruktur_vann", "emnekoder": ["TVM4101-1", "TVM4130-1"], "merknad": "BM2 Vann og miljø og Urbane vannsystemer: Grå, blå og grønn." },
+        { "entryId": "hiof_ing_bygg_miljo", "emnekoder": ["IRB36019-1"], "merknad": "Vann- og miljøteknikk; bare rapportert i 2021 og 2022." },
+        { "entryId": "usn_ing_bygg_plan_infrastruktur", "emnekoder": ["TSB3030-1"], "merknad": "Vann- og avløpsteknikk." }
+      ]
+    },
+    {
+      "id": "renseteknologi",
+      "label": "Renseteknologi for vann og avløp",
+      "kategori": "Fagspesifikt",
+      "desc": "Prosesser for rensing av drikkevann og avløpsvann, og desentraliserte avløpsløsninger.",
+      "note": "Bare NMBU og NTNUs bygg- og infrastrukturløp har renseteknologi. NMBU har et vesentlig større omfang (fire-fem emner, 45-50 sp) enn NTNUs to valgemner på 7,5 sp hver, og NTNU-emnene har få kandidater.",
+      "koblinger": [
+        { "entryId": "nmbu_vannmiljo", "emnekoder": ["THT271-1", "THT310-1", "THT310-2", "THT311-1", "THT280-1", "THT280-V22"], "merknad": "Innføring i renseteknologi, Analyse og design av renseprosesser (THT310 finnes i to kodeversjoner), spesielle emner og Desentraliserte avløpssystemer." },
+        { "entryId": "ntnu_bygg_infrastruktur_vann", "emnekoder": ["TVM4173-1", "TVM4171-1"], "merknad": "Behandling av drikkevann og Behandling av avløpsvann; valgemner med 10-25 kandidater." }
+      ]
+    },
+    {
+      "id": "miljoanalyse-og-baerekraft",
+      "label": "Miljøanalyse og bærekraft",
+      "kategori": "Metode",
+      "desc": "Livsløpsanalyse, bærekraftsvurdering og miljørådgivning for tekniske systemer.",
+      "note": "UiS har ingen emner i bærekraftsanalyse. NMBUs THT320 er spesifikt rettet mot VA-sektoren, mens konkurrentenes emner er generelle LCA- og bærekraftsemner - fagområdet er det samme, men innretningen er ulik.",
+      "koblinger": [
+        { "entryId": "nmbu_vannmiljo", "emnekoder": ["THT320-2", "THT320-1"], "merknad": "Bærekraftsanalyser av VA-sektoren; THT320-1 var den eldre varianten Miljøanalyser." },
+        { "entryId": "ntnu_bygg_infrastruktur_vann", "emnekoder": ["TBM4223-1", "TEP4295-1"], "merknad": "Miljørådgivning for bygg og Bærekraftig ingeniørfag." },
+        { "entryId": "ntnu_energi_miljo_vann", "emnekoder": ["TEP4295-1", "TEP4223-1"], "merknad": "Bærekraftig ingeniørfag og Livssyklusanalyse." },
+        { "entryId": "hiof_ing_bygg_miljo", "emnekoder": ["ING10125-1"], "merknad": "Bærekraftig forbruk og produksjon; nytt emne fra 2025." },
+        { "entryId": "usn_ing_bygg_plan_infrastruktur", "emnekoder": ["PB1050-1"], "merknad": "Klima, miljø og LCA." }
+      ]
+    },
+    {
+      "id": "geoteknikk",
+      "label": "Geoteknikk",
+      "kategori": "Fagspesifikt",
+      "desc": "Jordarters egenskaper, grunnforhold, stabilitet og fundamentering.",
+      "note": "OsloMets energi- og miljøprogram har ingen geoteknikk. HiØs geoteknikkemne ble bare rapportert i 2021 og 2022. NMBUs TBA201 er 5 sp, mot 7,5-10 sp hos de øvrige.",
+      "koblinger": [
+        { "entryId": "nmbu_vannmiljo", "emnekoder": ["TBA201-1"] },
+        { "entryId": "ntnu_bygg_infrastruktur_vann", "emnekoder": ["TBM4240-1", "TBM4342-1", "TBA4110-1"], "merknad": "Geoteknikk 1 og 2 og felt- og laboratorieundersøkelser." },
+        { "entryId": "uis_ing_bygg_infrastruktur", "emnekoder": ["GEO285-1"], "merknad": "Nytt emne fra 2025." },
+        { "entryId": "hiof_ing_bygg_miljo", "emnekoder": ["IRB24019-1"], "merknad": "Geoteknikk og anleggsteknikk; bare rapportert i 2021 og 2022." },
+        { "entryId": "usn_ing_bygg_plan_infrastruktur", "emnekoder": ["PB1030-1"], "merknad": "Geologi og geoteknikk." }
+      ]
+    },
+    {
+      "id": "oppgave",
+      "label": "Bachelor- og masteroppgave",
+      "kategori": "Oppgave",
+      "desc": "Det selvstendige avsluttende arbeidet i graden.",
+      "note": "NMBUs og NTNUs masteroppgaver er 30 sp på masternivå og er ikke direkte sammenlignbare med bacheloroppgavene på 20 sp. NTNUs energi- og miljøprogram har flere masteroppgavekoder avhengig av institutt.",
+      "koblinger": [
+        { "entryId": "nmbu_vannmiljo", "emnekoder": ["M30-VM-1", "THT390-1"], "merknad": "Masteroppgave, 30 sp, og forberedelsesemnet THT390." },
+        { "entryId": "ntnu_bygg_infrastruktur_vann", "emnekoder": ["TBM4900-1", "TBM4500-1"], "merknad": "Masteroppgave i bygg- og miljøteknikk og fordypningsprosjektet." },
+        { "entryId": "ntnu_energi_miljo_vann", "emnekoder": ["TET4900-1", "TEP4906-1", "TEP4930-1"], "merknad": "Masteroppgaver i elektrisk energiteknikk, bærekraftige energisystemer og industriell økologi." },
+        { "entryId": "uis_ing_bygg_infrastruktur", "emnekoder": ["BYGKBAC-1"], "merknad": "Bacheloroppgave i bygg; rapportert på konstruksjonsteknikkoden." },
+        { "entryId": "hiof_ing_bygg_miljo", "emnekoder": ["IRF37522-1", "IRB37518-1"], "merknad": "Bacheloroppgave med vitenskapsteori og metode; to kodeversjoner." },
+        { "entryId": "oslomet_ing_energi_miljo_bygg", "emnekoder": ["EMTS3900-1"] },
+        { "entryId": "usn_ing_bygg_plan_infrastruktur", "emnekoder": ["TS3000-1"] }
+      ]
+    }
+  ]
+}

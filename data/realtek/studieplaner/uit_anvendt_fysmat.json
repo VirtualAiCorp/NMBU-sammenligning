@@ -1,0 +1,421 @@
+{
+  "entryId": "uit_anvendt_fysmat",
+  "programnavn": "Anvendt fysikk og matematikk (master 5 år)",
+  "institusjon": "UiT Norges arktiske universitet",
+  "studieplanAar": "2025/2026 (godkjent 05.12.2024, revidert 24.04.2026)",
+  "kilder": [
+    "https://uit.no/utdanning/program/324988/anvendt_fysikk_og_matematikk_sivilingenior_-_mas",
+    "https://uit.no/Content/927757/cache=20263108124452/Studieplan%20Anvendt%20fysikk%20og%20matematikk%2C%20gjeldende%20fra%20h%C3%B8sten%202025.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 210,
+  "obligatoriske": [
+    {
+      "emnekode": "MAT-1010",
+      "emnenavn": "Kalkulus",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MAT-1010-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF-0101",
+      "emnenavn": "Innføring i programmering",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "INF-0101-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF-0102",
+      "emnenavn": "Beregningsorientert programmering",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "INF-0102-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FIL-0700",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FIL-0700-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT-1020",
+      "emnenavn": "Lineær algebra",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS-1010",
+      "emnenavn": "Mekanikk og modellering",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "STA-1001",
+      "emnenavn": "Statistikk og sannsynlighet",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "STA-1001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT-1030",
+      "emnenavn": "Vektorkalkulus",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS-1003",
+      "emnenavn": "Eksperimentell fysikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FYS-1003-1"
+      ],
+      "merknad": "Kalt «Grunnkurs i eksperimentell fysikk» i oversikten over felles emner for spesialiseringene."
+    },
+    {
+      "emnekode": "FYS-2021",
+      "emnenavn": "Machine Learning",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FYS-2021-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT-2010",
+      "emnenavn": "Complex analysis with applications",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS-1002",
+      "emnenavn": "Elektromagnetisme",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "FYS-1002-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT-2200",
+      "emnenavn": "Differential equations",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MAT-2200-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT-2201",
+      "emnenavn": "Numerical methods",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MAT-2201-1"
+      ],
+      "merknad": "Felles for alle fire spesialiseringer."
+    },
+    {
+      "emnekode": "FYS-2006",
+      "emnenavn": "Signal processing",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FYS-2006-1"
+      ],
+      "merknad": "Felles for alle fire spesialiseringer."
+    },
+    {
+      "emnekode": "TVR-3000",
+      "emnenavn": "Activating Transformations for Sustainability",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Felles for alle fire spesialiseringer."
+    },
+    {
+      "emnekode": "FYS-2022",
+      "emnenavn": "Waves and optics",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Felles for alle fire spesialiseringer."
+    },
+    {
+      "emnekode": "FYS-3740",
+      "emnenavn": "Project paper in applied physics and mathematics",
+      "studiepoeng": 10,
+      "aar": 5,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FYS-3740-1"
+      ],
+      "merknad": "Studieplanen oppgir alternative koder avhengig av spesialisering/institutt (f.eks. FYS-3740, MAT-3240, STA/MAT-3740). FYS-3740 er brukt som representativ kode."
+    },
+    {
+      "emnekode": "FYS-3941",
+      "emnenavn": "Master's thesis in applied physics and mathematics",
+      "studiepoeng": 30,
+      "aar": 5,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "FYS-3941-1"
+      ],
+      "merknad": "Studieplanen oppgir alternative koder avhengig av spesialisering/institutt (f.eks. FYS-3941, MAT-3941, STA/MAT-3941). FYS-3941 er brukt som representativ kode."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Fusjonsenergi",
+      "obligatoriske": [
+        {
+          "emnekode": "FYS-2001",
+          "emnenavn": "Statistisk fysikk og termodynamikk",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS-2009",
+          "emnenavn": "Introduction to plasma physics",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS-3026",
+          "emnenavn": "Fusion plasma physics",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS-3035",
+          "emnenavn": "Stochastic modelling and nonlinear dynamics",
+          "studiepoeng": 10,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MAT-3200",
+          "emnenavn": "Mathematical methods",
+          "studiepoeng": 10,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Klima",
+      "obligatoriske": [
+        {
+          "emnekode": "FYS-2001",
+          "emnenavn": "Statistisk fysikk og termodynamikk",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MAT-3213",
+          "emnenavn": "Climate dynamics",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS-3034",
+          "emnenavn": "Wind modelling",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS-2018",
+          "emnenavn": "Global climate change",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS-3030",
+          "emnenavn": "Fluid dynamics of atmospheres and oceans",
+          "studiepoeng": 10,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Fotonikk",
+      "obligatoriske": [
+        {
+          "emnekode": "FYS-2008",
+          "emnenavn": "Measurement techniques",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS-2010",
+          "emnenavn": "Image analysis",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "FYS-2010-1"
+          ],
+          "merknad": "Studenter som velger utveksling i 6. semester oppfordres til å finne et kompatibelt emne ved vertsuniversitetet i stedet."
+        },
+        {
+          "emnekode": "FYS-3037",
+          "emnenavn": "Radiation and medical imaging systems",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS-3009",
+          "emnenavn": "Photonics",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS-3029",
+          "emnenavn": "Optical nanoscopy",
+          "studiepoeng": 10,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Maskinlæring og medisinsk teknologi",
+      "obligatoriske": [
+        {
+          "emnekode": "FYS-2008",
+          "emnenavn": "Measurement techniques",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS-2010",
+          "emnenavn": "Image analysis",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "FYS-2010-1"
+          ],
+          "merknad": "Studenter som velger utveksling i 6. semester oppfordres til å finne et kompatibelt emne ved vertsuniversitetet i stedet."
+        },
+        {
+          "emnekode": "FYS-3037",
+          "emnenavn": "Radiation and medical imaging systems",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS-3012",
+          "emnenavn": "Pattern recognition",
+          "studiepoeng": 10,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "FYS-3012-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS-3032",
+          "emnenavn": "Health data analytics",
+          "studiepoeng": 10,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er UiTs studieplan-PDF (godkjent 05.12.2024, revidert 24.04.2026). De fire første semestrene («grunnblokka») er felles for alle studenter (120 sp), og ytterligere fellesemner (MAT-2201, FYS-2006 i 5. semester; TVR-3000, FYS-2022 i 7. semester; prosjektoppgave i 9. semester; masteroppgave i 10. semester) er felles for alle fire spesialiseringene. Til sammen 190 sp faste fellesemner er ført opp, pluss FIL-0700 og TVR-3000 (allerede talt med) som del av UiTs «30 sp fellesemner for alle studenter»; det tredje elementet i denne fellespakken, «Mikroemner» (4×2,5 sp), har ingen oppgitt emnekode og er ikke ført opp - obligatoriskeStudiepoeng (210) inkluderer likevel disse 10 sp, mens listen over enkeltemner summerer til 200 sp. 6. semester er valgfag/utveksling for spesialiseringene Fusjonsenergi og Klima (ikke ført opp); for Fotonikk og Maskinlæring og medisinsk teknologi er FYS-2010 plassert her (med anbefalt erstatning ved utveksling). I 8. semester tilbyr studieplanen for Fusjonsenergi et obligatorisk valg mellom FYS-3003 og STA-2003 (ikke ført opp), og for alle fire spesialiseringer et valg mellom «Mikroemner» og MNF-2001 Realfagspraksis i 8. semester (ikke ført opp). I 9. semester har Klima et valg mellom MAT-3200 og FYS-3810, Fotonikk et valg mellom FYS-3012 og FYS-3810, og Maskinlæring og medisinsk teknologi et valg mellom STA-2003 og FYS-3033 (ingen av disse er ført opp som faste rader). Hver spesialisering har dermed 5 faste obligatoriske emner (50 sp) ført opp her, i tillegg til at noen slots dekkes av obligatoriske valg som ikke er listet. Programmet krever minst 80 sp emner på masternivå (3000-emner) og 6 ukers relevant praksis i løpet av studiet."
+}

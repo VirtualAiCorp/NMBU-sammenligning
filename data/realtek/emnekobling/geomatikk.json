@@ -1,0 +1,96 @@
+{
+  "groupId": "geomatikk",
+  "hentet": "2026-09-22",
+  "note": "Gruppa er i praksis en tomannssammenligning: NMBUs geomatikkbachelor mot HVLs landmåling og eiendomsdesign. NTNU Gjøviks geomatikkingeniør er lagt ned, og DBH har bare rapportert to av emnene (bacheloroppgaven i 2021 og Geografisk analyse), så programmet kan ikke brukes til mer enn én kobling. De to gjenværende programmene har ulik tyngde: NMBU er teknisk og realfaglig med programmering, geodesi, fotogrammetri og fjernmåling, mens HVL har en stor eiendoms- og jusfaglig del (matrikkel, oppmålingsforretning, jordskifte) og verken fysikk eller programmering. NMBU har heller ikke et eget bacheloroppgaveemne med rapporterte karakterer, så oppgaven lar seg ikke sammenligne. NMBU-kullene er små (10-25 kandidater per emne), og HVL-kullene er tre-fire ganger så store, noe som gjør snittene ulikt robuste.",
+  "emnetyper": [
+    {
+      "id": "matematikk",
+      "label": "Matematikk",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Kalkulus og lineær algebra som grunnlag for geomatiske beregninger.",
+      "note": "NMBU har lagt om matematikkpakka flere ganger i perioden (MATH111/MATH112 til MATH100 Brukerkurs i matematikk og MATH131 Lineær algebra), og alle kodene er med slik at tidsserien kan følges. HVL har bare ett matematikkemne på 10 sp for hele bachelorløpet. NTNU Gjøvik har ingen matematikkemner med rapporterte karakterer.",
+      "koblinger": [
+        { "entryId": "nmbu_geomatikk", "emnekoder": ["MATH100-1", "MATH111-1", "MATH112-1", "MATH131-1", "MATH131-2", "MATH113-1"], "merknad": "Brukerkurs i matematikk, Kalkulus 1 og 2 og Lineær algebra i to kodeversjoner." },
+        { "entryId": "hvl_landmaling", "emnekoder": ["LEI102-1"], "merknad": "Matematikk; HVLs eneste matematikkemne." }
+      ]
+    },
+    {
+      "id": "statistikk-og-parameterestimering",
+      "label": "Statistikk og parameterestimering",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Sannsynlighetsregning, statistisk inferens og minste kvadraters metode for utjevning av måledata.",
+      "note": "Parameterestimering er geomatikkens egen statistikkanvendelse og finnes bare ved NMBU, mens HVL dekker statistikk som halvdelen av BYG102 Statistikk og landmåling.",
+      "koblinger": [
+        { "entryId": "nmbu_geomatikk", "emnekoder": ["GMPE240-1", "STAT100-1"], "merknad": "Parameterestimering og Statistikk." },
+        { "entryId": "hvl_landmaling", "emnekoder": ["BYG102-1"], "merknad": "Statistikk og landmåling; statistikkdelen er om lag halve emnet på 15 sp." }
+      ]
+    },
+    {
+      "id": "landmaling",
+      "label": "Landmåling",
+      "kategori": "Fagspesifikt",
+      "desc": "Måleteknikk, instrumenter, feillære og utstikking i felt.",
+      "note": "HVL har størst omfang med to landmålingsemner på 10 sp hver pluss landmålingsdelen av BYG102, mot NMBUs Landmåling 1 og 2. HVLs emner er rettet mot eiendomsgrenser og anlegg, NMBUs mer mot måleteknikk og beregning.",
+      "koblinger": [
+        { "entryId": "nmbu_geomatikk", "emnekoder": ["GMLM102-1", "GMLM210-1", "GMLM210-2"], "merknad": "Landmåling 1 og Landmåling 2; GMLM210 finnes som Anvendt geomatikk (10 sp) og Landmåling 2 (12,5 sp)." },
+        { "entryId": "hvl_landmaling", "emnekoder": ["LEI105-1", "LEI107-1", "BYG102-1"], "merknad": "Eiendomslandmåling, Ingeniørlandmåling og landmålingsdelen av Statistikk og landmåling." }
+      ]
+    },
+    {
+      "id": "geodesi-og-satellittposisjonering",
+      "label": "Geodesi og satellittposisjonering",
+      "kategori": "Fagspesifikt",
+      "desc": "Referansesystemer, jordas form og tyngdefelt, og posisjonsbestemmelse med GNSS.",
+      "note": "NMBU har geodesi som et eget fagløp på 17,5-20 sp. HVLs nærmeste emne er LEI310 Offshore kartlegging og posisjonering, som er posisjonsbestemmelse til sjøs og bare har tall fra 2025.",
+      "koblinger": [
+        { "entryId": "nmbu_geomatikk", "emnekoder": ["GMGD200-1", "GMGD222-1", "GMGD222-2"], "merknad": "Geodesi og Satellittgeodesi; GMGD222 finnes som Anvendt satellittgeodesi (10 sp) og Satellittgeodesi (7,5 sp)." },
+        { "entryId": "hvl_landmaling", "emnekoder": ["LEI310-1"], "merknad": "Offshore kartlegging og posisjonering; nytt emne med tall bare fra 2025." }
+      ]
+    },
+    {
+      "id": "gis-og-geografisk-analyse",
+      "label": "GIS og geografisk analyse",
+      "kategori": "Fagspesifikt",
+      "desc": "Geografiske informasjonssystemer, geodatabaser og romlig analyse.",
+      "note": "HVL har klart størst omfang (30 sp fordelt på tre emner) mot NMBUs 15-20 sp. NTNU Gjøviks GEO3101 har bare fem rapporterte kandidater i 2021.",
+      "koblinger": [
+        { "entryId": "nmbu_geomatikk", "emnekoder": ["GMGI210-1", "GMGI102-1", "LAD102-1"], "merknad": "Geografiske informasjonssystemer, GIS-grunnlag og GIS - praktisk introduksjon." },
+        { "entryId": "hvl_landmaling", "emnekoder": ["LEI117-1", "LEI111-1", "BYG109-1"], "merknad": "Innføring i geomatikk og geo-informatikk, Geografiske informasjonssystemer og analyse og Geografisk informasjonsanalyse." },
+        { "entryId": "ntnu_gjovik_ing_geomatikk", "emnekoder": ["GEO3101-1"], "merknad": "Geografisk analyse; bare fem rapporterte kandidater i 2021." }
+      ]
+    },
+    {
+      "id": "kartografi-og-geodata",
+      "label": "Kartografi og geodatakilder",
+      "kategori": "Fagspesifikt",
+      "desc": "Kartframstilling, kartografiske prinsipper og offentlige geodatakilder.",
+      "note": "Kartografi er et lite fagområde i begge programmene og ligger ofte inne i GIS-emnene. NMBUs LAD103 er et 5 sp valgemne med få kandidater, og HVL dekker kartografi som en del av innføringsemnet LEI117, som også er koblet til GIS.",
+      "koblinger": [
+        { "entryId": "nmbu_geomatikk", "emnekoder": ["LAD103-1"], "merknad": "Kartografi og geodatakilder i planlegging; få kandidater (4 i 2025)." },
+        { "entryId": "hvl_landmaling", "emnekoder": ["LEI117-1"], "merknad": "Innføring i geomatikk og geo-informatikk; kartografi er én av flere deler av emnet." }
+      ]
+    },
+    {
+      "id": "fotogrammetri-og-fjernmaling",
+      "label": "Fotogrammetri, laserskanning og fjernmåling",
+      "kategori": "Fagspesifikt",
+      "desc": "Måling og tolkning fra bilder og punktskyer: fotogrammetri, laserskanning og fjernmåling.",
+      "note": "NMBU har hele fagområdet med seks emner; HVLs eneste motstykke er LEI110 Industrilandmåling og laserskanning, som dekker terrestrisk laserskanning, men verken fotogrammetri eller fjernmåling.",
+      "koblinger": [
+        { "entryId": "nmbu_geomatikk", "emnekoder": ["GMFO120-1", "GMFO120-2", "GMFO205-1", "GMFO310-1", "GMBB100-1", "GMBB201-1", "GMFM100-1", "GMFM200-1"], "merknad": "Fotogrammetri 1 (to kodeversjoner) og 2, Nærfotogrammetri, Bildebruk og bildebehandling i geomatikk og Fjernmåling I." },
+        { "entryId": "hvl_landmaling", "emnekoder": ["LEI110-1"], "merknad": "Industrilandmåling og laserskanning; dekker laserskanning, men ikke fotogrammetri eller fjernmåling." }
+      ]
+    },
+    {
+      "id": "eiendom-og-matrikkel",
+      "label": "Eiendomsfag og matrikkel",
+      "kategori": "Fagspesifikt",
+      "desc": "Eiendomsdanning, matrikkelen, grenser og oppmålingsforretning.",
+      "note": "Dette er HVLs tyngdepunkt (40-45 sp) og NMBUs svakeste flanke: NMBU har bare det valgfrie innføringsemnet EIE101 med fire rapporterte kandidater i 2024. Koblingen er faglig riktig, men omfanget er så ulikt at karakterene ikke er sammenlignbare.",
+      "koblinger": [
+        { "entryId": "nmbu_geomatikk", "emnekoder": ["EIE101-1"], "merknad": "Innføring i eiendomsfag I, 5 sp; fire rapporterte kandidater i 2024." },
+        { "entryId": "hvl_landmaling", "emnekoder": ["LEI100-1", "LEI104-1", "LEI300-1"], "merknad": "Innføring i eiendomsfagene, Eiendomsdannelse ved oppmålingsforretning og Eiendom, matrikkel og jordskifte." }
+      ]
+    }
+  ]
+}

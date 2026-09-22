@@ -1,0 +1,277 @@
+{
+  "entryId": "uit_fornybar_energi",
+  "programnavn": "Fornybar energi (master 5 år)",
+  "institusjon": "UiT Norges arktiske universitet",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://uit.no/utdanning/program/798891/fornybar_energi_sivilingenior_-_master",
+    "https://uit.no/Content/927738/cache=20263108124440/Studieplan%20Fornybar%20energi%2C%20gjeldende%20fra%20h%C3%B8sten%202025.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 270,
+  "obligatoriske": [
+    {
+      "emnekode": "MAT-1507",
+      "emnenavn": "Matematikk for ingeniører 1",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MAT-1507-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF-0101",
+      "emnenavn": "Innføring i programmering",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "INF-0101-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF-0102",
+      "emnenavn": "Beregningsorientert programmering",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "INF-0102-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS-1008",
+      "emnenavn": "Fornybar energi, bærekraft og samfunn",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FYS-1008-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT-1516",
+      "emnenavn": "Matematikk for ingeniører 2",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS-1010",
+      "emnenavn": "Mekanikk og modellering",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "AUT-2503",
+      "emnenavn": "Elektrisitetslære",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "AUT-2503-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS-2023",
+      "emnenavn": "Vannkraft",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "FYS-2023-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJE-1001",
+      "emnenavn": "Introduksjon til kjemi og kjemisk biologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "KJE-1001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS-1003",
+      "emnenavn": "Eksperimentell fysikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS-2024",
+      "emnenavn": "Solar and wind energy systems",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FYS-2024-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FIL-0700",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF-1400",
+      "emnenavn": "Objektorientert programmering",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "INF-1400-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJE-2006",
+      "emnenavn": "Modern bioenergy",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "KJE-2006-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TEK-2800",
+      "emnenavn": "Matematikk 3",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "TEK-2800-1"
+      ],
+      "merknad": "Nettbasert."
+    },
+    {
+      "emnekode": "STA-1501",
+      "emnenavn": "Introduksjon til sannsynlighetsregning og statistikk for ingeniører",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "STA-1501-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TEK-2007",
+      "emnenavn": "Sustainable design and Life Cycle Assessment",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "TEK-2007-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS-2025",
+      "emnenavn": "General meteorology and oceanography",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ELE-3600",
+      "emnenavn": "Power System Fundamentals",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS-3034",
+      "emnenavn": "Wind modelling",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TVR-3000",
+      "emnenavn": "Activating Transformations for Sustainability",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS-3039",
+      "emnenavn": "Energy storage",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS-3036",
+      "emnenavn": "Solar energy materials and modelling",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS-3760",
+      "emnenavn": "Prosjektoppgave i fornybar energi",
+      "studiepoeng": 10,
+      "aar": 5,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen oppgir emnet med alternative koder avhengig av institutt: FYS-3760, KJE-3760 eller INF-3942. FYS-3760 er brukt som representativ kode."
+    },
+    {
+      "emnekode": "INF-3010",
+      "emnenavn": "Energy informatics – smart energy and power systems modelling",
+      "studiepoeng": 10,
+      "aar": 5,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS-3961",
+      "emnenavn": "Masteroppgave i fornybar energi",
+      "studiepoeng": 30,
+      "aar": 5,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen oppgir emnet med alternative koder avhengig av institutt: FYS-3961, KJE-3961 eller INF-3941. FYS-3961 er brukt som representativ kode."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er UiTs studieplan-PDF gjeldende fra høsten 2025 (12 sider, i hovedsak skannet/bilde-basert - lest av som bilder). Programmet har ingen studieretninger. Totalt 300 sp, hvorav 270 sp obligatoriske («240 sp programemner» + «30 sp fellesemner for alle sivilingeniørstudenter ved UiT»: FIL-0700 Examen philosophicum, Mikroemner 4×2,5 sp, og TVR-3000). To poster på 10 sp hver er ikke ført opp som egne rader fordi studieplanen ikke oppgir brukbare emnekoder for dem: «Mikroemner» (4×2,5 sp, 6. semester/3. år vår, del av fellesemnene) og «KJE-3xxx Industriell bioenergi & biofuels» (9. semester/5. år høst - koden er bokstavelig oppgitt som «KJE-3xxx», altså ikke endelig fastsatt i kildedokumentet). Listen over summerer derfor til 250 sp av de 270 obligatoriske; de resterende 20 sp er beskrevet her i stedet. 8. semester (4. år vår) er i sin helhet valgfag/utveksling og er ikke tatt med. Emnet i 9. semester (Prosjektoppgave) og 10. semester (Masteroppgave) har tre alternative emnekoder avhengig av hvilket institutt (fysikk/kjemi/informatikk) oppgaven skrives ved; FYS-3760 og FYS-3961 er brukt som representative koder."
+}

@@ -1,0 +1,427 @@
+{
+  "entryId": "nmbu_miljofysikk",
+  "programnavn": "Miljøfysikk og fornybar energi (master 5 år)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "kull 2024, 2025 og 2026 (felles studieplan)",
+  "kilder": [
+    "https://www.nmbu.no/studier/master-5-aar/miljofysikk-og-fornybar-energi",
+    "https://www.nmbu.no/studieplaner-m-mf",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-07/Studieplan%20M-MF%20kull%202026.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 190,
+  "obligatoriske": [
+    {
+      "emnekode": "IMRT100",
+      "emnenavn": "Innføringsemne - fagorientert prosjekt",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "IMRT100-1"
+      ],
+      "merknad": "Augustblokk."
+    },
+    {
+      "emnekode": "FYS140",
+      "emnenavn": "Klimaendringer, bærekraft og tilpasninger",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FYS140-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MATH121",
+      "emnenavn": "Kalkulus",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MATH121-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF120",
+      "emnenavn": "Programmering og databehandling",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "INF120-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS101",
+      "emnenavn": "Mekanikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "FYS101-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MATH122",
+      "emnenavn": "Kalkulus og lineær algebra",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MATH122-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS102",
+      "emnenavn": "Termofysikk og elektromagnetisme",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FYS102-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MATH123",
+      "emnenavn": "Lineær algebra og vektoranalyse",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MATH123-1"
+      ],
+      "merknad": "Erstattet MATH113 fra og med høsten 2025."
+    },
+    {
+      "emnekode": "FYS155",
+      "emnenavn": "Laboratoriekurs i fysikk",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FYS155-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS103",
+      "emnenavn": "Måleteknikk, optikk og sensorer",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "januarblokk",
+      "dbhEmnekoder": [
+        "FYS103-1"
+      ],
+      "merknad": "Starter i januarblokken og avsluttes i løpet av 1.-2. uke i vårparallellen."
+    },
+    {
+      "emnekode": "FYS235",
+      "emnenavn": "Elektronikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "FYS235-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS236",
+      "emnenavn": "Elektrodynamikk",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "FYS236-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM100",
+      "emnenavn": "Generell kjemi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "KJM100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS230",
+      "emnenavn": "Elektroteknikk",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FYS230-1"
+      ],
+      "merknad": "Starter i høstparallellen og avsluttes i januarblokken."
+    },
+    {
+      "emnekode": "FYS272",
+      "emnenavn": "Energiteknologier",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FYS272-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS253",
+      "emnenavn": "Termisk fysikk",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FYS253-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PHI100",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "PHI100-1"
+      ],
+      "merknad": "Studieplanen gir valget mellom PHI100 og seminarversjonen PHI101 (samt PHI102 på våren)."
+    },
+    {
+      "emnekode": "FYS241",
+      "emnenavn": "Miljøfysikk",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "FYS241-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS245",
+      "emnenavn": "Kvantefysikk",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "FYS245-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "M30-MF",
+      "emnenavn": "Masteroppgave",
+      "studiepoeng": 30,
+      "aar": 5,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "M30-MF-1"
+      ],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Energifysikk",
+      "obligatoriske": [
+        {
+          "emnekode": "TPS200",
+          "emnenavn": "Innføring i fluidmekanikk",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TPS200-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS254",
+          "emnenavn": "Anvendt termodynamikk",
+          "studiepoeng": 5,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "FYS254-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS375",
+          "emnenavn": "Energiteknologi laboratorium",
+          "studiepoeng": 10,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "FYS375-1"
+          ],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Biofysikk og nevrofysikk",
+      "obligatoriske": []
+    },
+    {
+      "navn": "Miljø- og klimafysikk",
+      "obligatoriske": [
+        {
+          "emnekode": "FYS141",
+          "emnenavn": "Meteorologi for bærekraftig samfunnsutvikling",
+          "studiepoeng": 5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "FYS141-1"
+          ],
+          "merknad": "Gis annenhvert år (oddetallsår)."
+        },
+        {
+          "emnekode": "TPS200",
+          "emnenavn": "Innføring i fluidmekanikk",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TPS200-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS340",
+          "emnenavn": "Målinger og modellering av miljø og klima",
+          "studiepoeng": 5,
+          "aar": 4,
+          "semester": "januarblokk",
+          "dbhEmnekoder": [
+            "FYS340-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "DAT320",
+          "emnenavn": "Analyse av sekvensielle data og tidsseriedata",
+          "studiepoeng": 10,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "DAT320-1"
+          ],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Kjernekraft og atomsikkerhet",
+      "obligatoriske": [
+        {
+          "emnekode": "RAD300",
+          "emnenavn": "Nuklær dekommisjonering og miljøsanering",
+          "studiepoeng": 5,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS254",
+          "emnenavn": "Anvendt termodynamikk",
+          "studiepoeng": 5,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "FYS254-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "RAD210",
+          "emnenavn": "Radioaktivitet og strålevern",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "RAD200",
+          "emnenavn": "Nuklær industri, anlegg og aktiviteter",
+          "studiepoeng": 5,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "RAD205",
+          "emnenavn": "Atomberedskap",
+          "studiepoeng": 5,
+          "aar": 4,
+          "semester": "januarblokk",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "RAD310",
+          "emnenavn": "Radiokjemi og analyse av radionuklider",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FORNY220",
+          "emnenavn": "Livsløpsvurdering av energi- og avfallssystemer",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MILJØ360",
+          "emnenavn": "Vurdering av helse- og miljørisiko",
+          "studiepoeng": 5,
+          "aar": 4,
+          "semester": "juniblokk",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "KJM120",
+          "emnenavn": "Uorganisk kjemi",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "Erstatter den generelle spesialiseringsplassen i 3. år vår som andre retninger fyller med TPS200 eller KJM120 for kjernekraftretningen."
+        },
+        {
+          "emnekode": "RAD320",
+          "emnenavn": "Radioaktivitet i miljøet",
+          "studiepoeng": 10,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er NMBUs felles studieplan-PDF for kull 2024, 2025 og 2026 i Miljøfysikk og fornybar energi (sist oppdatert juli 2026), som består av én side med felles studieløp/emnetabeller og én side per spesialisering. Programmet er delt i «Sivilingeniør grunnpakke» (100 sp, felles for alle NMBUs femårige teknologiprogram) og «Felles obligatoriske emner for Miljøfysikk» (105 sp) - til sammen 205 sp fellespensum, hvorav 190 sp er ført opp som faste emner over (PHI100/PHI101-valget er telt som én obligatorisk rad, slik praksis er i tilsvarende NMBU-filer). To valg i grunnpakken er utelatt fra listen: DAT110 «Innføring i dataanalyse og -visualisering» eller STAT100 «Statistikk» (10 sp, 1. år vår) og et valgfritt økonomi-/samfunnsfagemne på minst 5 sp (4. år vår). Deretter velges én av fire spesialiseringer (minst 50 sp, hvorav minst 30 sp på 300-nivå og minst 15 sp fysikkemner): Energifysikk, Biofysikk og nevrofysikk, Miljø- og klimafysikk og Kjernekraft og atomsikkerhet (spesialiseringen Beregningsorientert fysikk er lagt ned). Energifysikk har 25 sp faste spesialiseringsemner (ført opp) og krever i tillegg minst 25 sp fra en liste (FYS373, FYS374, FYS376, FYS377, FYS378) valgt i samråd med veileder - denne fleksible delen er ikke ført opp. Biofysikk og nevrofysikk har ingen faste spesialiseringsemner i det hele tatt; alle 50 sp velges fra en liste (minst én av DAT350/FYS388/FYS302, resten fritt blant teknologi/matematikk/fysikk-emner på 200/300-nivå) og spesialiseringens obligatoriske-liste er derfor tom. Miljø- og klimafysikk har 30 sp faste emner (ført opp) og 20 sp fritt valgte 200/300-nivåemner (anbefalt bl.a. FYS375, FYS376, INF250, DAT200, GMFM300, GMFM350) som ikke er ført opp. Kjernekraft og atomsikkerhet krever 75 sp spesialiseringsemner (mer enn de andre tre, som krever 50 sp); studieplanens flate liste over spesialiseringsemner for denne retningen inneholder 11 emner som sammenlagt gir 85 sp, men bare 10 av dem (75 sp) er plassert i årsoppbyggingens semestertabell - «KJM120 Uorganisk kjemi» i 3. år vår er brukt i stedet for TPS200 (som brukes i de tre andre spesialiseringene i samme rute); et 11. emne, KJM100 «Generell kjemi», er også oppgitt i spesialiseringslisten for Kjernekraft med 10 sp, men er ikke plassert noe eget sted i årsoppbyggingen utover den KJM100 som allerede inngår i sivilingeniør-grunnpakken - det er derfor trolig ført opp to ganger ved en feil i kildedokumentet, og er utelatt her for å unngå dobbelttelling. Emnet FYS141 (Miljø- og klimafysikk) gis bare annenhvert år (oddetallsår). Semesterplasseringen av enkelte emner som spenner over flere blokker (FYS103, FYS230) er satt til hovedsemesteret de starter i, i tråd med praksis i tilsvarende filer for andre institusjoner."
+}

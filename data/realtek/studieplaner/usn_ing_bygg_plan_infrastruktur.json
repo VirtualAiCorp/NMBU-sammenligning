@@ -1,0 +1,215 @@
+{
+  "entryId": "usn_ing_bygg_plan_infrastruktur",
+  "programnavn": "Ingeniør, bygg – plan og infrastruktur (bachelor)",
+  "institusjon": "Universitetet i Sørøst-Norge",
+  "studieplanAar": "Kull 2026 høst (ING1, studieretning Plan og infrastruktur, A-vei/ordinært opptak)",
+  "kilder": [
+    "https://www.usn.no/studier/bachelor-i-ingeniorfag-byggingenior/plan-og-infrastruktur/",
+    "https://www.usn.no/studier/studie-og-emneplaner/#/studieplan/ING1_2026_H%C3%98ST"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 140,
+  "obligatoriske": [
+    {
+      "emnekode": "IB1010",
+      "emnenavn": "Ingeniørrollen",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "IB1010-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "IB1020",
+      "emnenavn": "Programmering for beregning",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "IB1020-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PB1020",
+      "emnenavn": "Bygg- og anleggsteknikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "PB1020-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PB1030",
+      "emnenavn": "Geologi og geoteknikk",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "PB1030-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PB1040",
+      "emnenavn": "BIM",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "helår",
+      "dbhEmnekoder": [
+        "PB1040-1"
+      ],
+      "merknad": "Går over 2 semestre (høst og vår 1. år)."
+    },
+    {
+      "emnekode": "PB1010",
+      "emnenavn": "Fysikk 1 - Mekanikk",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "PB1010-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "IB1030",
+      "emnenavn": "Matematikk 1",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "IB1030-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PB1050",
+      "emnenavn": "Klima, miljø og LCA",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "PB1050-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PB1060",
+      "emnenavn": "Landmåling",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "PB1060-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TSB2040",
+      "emnenavn": "Vegbygging",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "TSB2040-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PB2010",
+      "emnenavn": "Matematikk 2",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "PB2010-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PB2040",
+      "emnenavn": "Fysikk 2 - Statikk og fasthetslære",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "PB2040-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PB2030",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "PB2030-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TS2010",
+      "emnenavn": "Kjemi",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "TS2010-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TSB2050",
+      "emnenavn": "Prosjektadministrasjon",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "TSB2050-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TSB2070",
+      "emnenavn": "Arealplanlegging",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "TSB2070-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TSB3030",
+      "emnenavn": "Vann- og avløpsteknikk",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "TSB3030-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "IB3010",
+      "emnenavn": "Tverrfaglig prosjektarbeid",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "IB3010-1"
+      ],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er USNs interaktive studieplan-verktøy for ING1 («Bachelor i ingeniørfag, byggingeniør»), kull 2026 høst, studieretning «Plan og infrastruktur», A-vei (ordinært opptak — TRES og Y-vei har litt andre 1.-års-emner og er ikke brukt her). USN oppgir selv «Obligatoriske emner: 160 studiepoeng» for denne retningen, men dette tallet inkluderer et obligatorisk VALG i 3. år vår: studenten må velge minst én av TS3000 «Bacheloroppgave» og TS3010 «Studentbedrift» (begge 20 sp) — siden ingen av de to enkeltemnene er obligatorisk i seg selv, er ingen av dem tatt med i obligatoriske-listen (i tråd med regelen om obligatoriske valg). obligatoriskeStudiepoeng her (140) er summen av de emnene som er entydig obligatoriske. 1. og 2. studieår (120 sp) er felles med den andre studieretningen «Konstruksjon og Byggdesign», mens Vegbygging (TSB2040), Vann- og avløpsteknikk (TSB3030) og Arealplanlegging (TSB2070) er spesifikke for «Plan og infrastruktur» (i «Konstruksjon og Byggdesign» er disse tre erstattet av andre emner, og TSB2040/TSB3030 opptrer der som valgfrie i stedet). I 3. år høst gjenstår 20 sp valgfrie emner (bl.a. VE3010 Matematikk 3, VE3040 Ingeniørpraksis, VE3050 Entreprenørskap, VE3120 Fordypningsprosjekt) eller et 30 sp utvekslingssemester (ING1 UTV) som alternativ til hele semesteret — ingen av disse er tatt med."
+}

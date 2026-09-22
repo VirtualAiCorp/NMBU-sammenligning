@@ -1,0 +1,372 @@
+{
+  "entryId": "ntnu_energi_miljo",
+  "programnavn": "Energi og miljø (master 5 år)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2022/2023 (kull 2022, siste kull med publisert plan for alle 5 år)",
+  "kilder": [
+    "https://www.ntnu.no/studier/mtenerg",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=MTENERG&year=2022"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 135,
+  "obligatoriske": [
+    {
+      "emnekode": "HMS0002",
+      "emnenavn": "HMS-kurs for 1. årsstudenter",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "HMS0002-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TDT4110",
+      "emnenavn": "Informasjonsteknologi, grunnkurs",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "TDT4110-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TEP4225",
+      "emnenavn": "Energi og miljø",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "TEP4225-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4100",
+      "emnenavn": "Matematikk 1",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "TMA4100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMT4112",
+      "emnenavn": "Kjemi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "TMT4112-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "SIVINGPRA",
+      "emnenavn": "Gjennomført krav om arbeidslivserfaring",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Krav om minimum arbeidslivserfaring (praksis) som skal være oppfylt i løpet av studiet, ikke bundet til et bestemt semester. Plassert i 1. år av praktiske årsaker."
+    },
+    {
+      "emnekode": "TDT4102",
+      "emnenavn": "Prosedyre- og objektorientert programmering",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "TDT4102-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4105",
+      "emnenavn": "Matematikk 2",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "TMA4105-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4115",
+      "emnenavn": "Matematikk 3",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "TMA4115-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TTT4203",
+      "emnenavn": "Innføring i analog og digital elektronikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "TTT4203-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TEP4120",
+      "emnenavn": "Termodynamikk 1",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "TEP4120-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TET4100",
+      "emnenavn": "Kretsanalyse",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "TET4100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TFY4107",
+      "emnenavn": "Fysikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "TFY4107-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4130",
+      "emnenavn": "Matematikk 4N",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "TMA4130-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TEP4100",
+      "emnenavn": "Fluidmekanikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "TEP4100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TEP4295",
+      "emnenavn": "Bærekraftig ingeniørfag",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "TEP4295-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TFE4120",
+      "emnenavn": "Elektromagnetisme",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "TFE4120-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TTK4105",
+      "emnenavn": "Reguleringsteknikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "TTK4105-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TIØ4252",
+      "emnenavn": "Teknologiledelse",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "TIØ4252-1"
+      ],
+      "merknad": "Obligatorisk i alle tre studieretninger."
+    },
+    {
+      "emnekode": "EXPH0300",
+      "emnenavn": "Examen philosophicum for naturvitenskap og teknologi",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "EXPH0300-1"
+      ],
+      "merknad": "Obligatorisk i alle tre studieretninger."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Elektrisk energiteknikk og smarte nett",
+      "obligatoriske": [
+        {
+          "emnekode": "TET4105",
+          "emnenavn": "Elektriske kraftsystemer 1",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TET4105-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4240",
+          "emnenavn": "Statistikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TMA4240-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TET4110",
+          "emnenavn": "Elektriske maskiner og elektromagnetisk energiomforming",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TET4110-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TET4190",
+          "emnenavn": "Kraftelektronikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TET4190-2"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TET4510",
+          "emnenavn": "Elektrisk energi og energisystemer, fordypningsprosjekt",
+          "studiepoeng": 15,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TET4510-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TET4900",
+          "emnenavn": "Elektrisk energi og energisystemer, masteroppgave",
+          "studiepoeng": 30,
+          "aar": 5,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TET4900-1"
+          ],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Energi- og prosessteknikk",
+      "obligatoriske": [
+        {
+          "emnekode": "TEP4135",
+          "emnenavn": "Fluidmekanikk 2",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TEP4135-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4240",
+          "emnenavn": "Statistikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TMA4240-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4125",
+          "emnenavn": "Termodynamikk 2",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TEP4125-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4130",
+          "emnenavn": "Varme- og massetransport",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TEP4130-1"
+          ],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Energiplanlegging og miljøanalyse",
+      "obligatoriske": [
+        {
+          "emnekode": "TET4135",
+          "emnenavn": "Energiplanlegging",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TET4135-1"
+          ],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er NTNUs interaktive studieplan, lest ut for kull 2022 (siste kull med studieplan publisert for alle 5 år - kull 2025/2026 har bare år 1-2 publisert ennå). Etter to felles år velger studenten i 3. år én av tre studieretninger: Elektrisk energiteknikk og smarte nett, Energi- og prosessteknikk, og Energiplanlegging og miljøanalyse. TIØ4252 og EXPH0300 er obligatoriske i alle tre retningene og er derfor lagt i fellesdelen. TMA4240 Statistikk er obligatorisk i to av tre retninger (Elektrisk energiteknikk og Energi- og prosessteknikk); i Energiplanlegging-retningen inngår i stedet et obligatorisk valg mellom TMA4240 og TMA4245 (status MAX1C), som ikke er ført opp. For Elektrisk energiteknikk og smarte nett er 4. år i sin helhet styrt av obligatoriske valggrupper (M2A/M2B - velg et bestemt antall fordypningsrettede emner) uten noen rent obligatorisk enkeltrad, og er derfor ikke ført opp; 5. år har ett fast fordypningsprosjekt (TET4510) og fast masteroppgave (TET4900), mens selve fordypningsemnet (7,5 sp) velges blant fem alternativer (status MAX1A). For Energi- og prosessteknikk er både 4. og 5. år i sin helhet styrt av valggrupper (M2A i 4. år; MAX1A/MAX1B/MAX1C for fordypningsemne/fordypningsprosjekt/masteroppgave i 5. år, tre parallelle spor: Bærekraftige energisystemer, Energiforsyning og klimatisering av bygninger, eller Termo- og fluiddynamikk) - ingen enkeltemner i 4.-5. år er dermed reelt obligatoriske utover det som er ført opp for 3. år. For Energiplanlegging og miljøanalyse deler studieplanen retningen videre i tre «hovedprofiler» fra 4. år (Energianalyse og planlegging, Energiforsyning og klimatisering av bygninger, Energi- og miljøanalyse) med egne emnekoder for 4.-5. år som ikke var tilgjengelige i det leste kullet (siden med hovedprofilenes emnetabeller var ikke populert for kull 2022 i uttrekket) - bare det obligatoriske 3.-årsemnet TET4135 er derfor ført opp for denne retningen; 4.-5. år er ikke dekket. Eksperter i team (EiT) er obligatorisk som kategori i 4. år, men studenten velger selv landsby/emne blant et stort antall alternativer - ingen enkelt emnekode er derfor obligatorisk, og EiT er ikke ført opp. SIVINGPRA (praksiskrav) er obligatorisk, men uten fast studiepoengsum eller semesterplassering i studieplanen; ført opp med 0 sp i 1. år av praktiske årsaker."
+}

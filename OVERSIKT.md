@@ -159,3 +159,23 @@ DBH skjermer celler med 1–2 kandidater i tabell 308 og viser dem som 0. På pr
 - emnenivå (alle studenter på emnet ved institusjonen), som er lite skjermet og stemmer med karakterweb.no (`CourseStats.emnenivaa`);
 - reelle totaler uten karakterinndeling, slik at antall skjermede kandidater per emne og år kan telles (`CourseGradeYear.skjult`).
 I emnetabellen vises stryk som «≥ x %» når kandidater er skjermet, og nedtrekket per rad viser begge fordelingene og intervallet reell stryk ligger i. Karakterindeks på programnivå er i praksis lite påvirket (skjermede celler er små), men strykprosent på programnivå må leses som et minimum.
+
+## REALTEK (lagt til 22.09.2026)
+
+Andre fakultet i verktøyet, bygd med samme kjede som LANDSAM. Alt ligger under `data/realtek/` med samme filstruktur
+(programkart, dbh-programkart, kilder, emnekobling, studieplaner) og genereres med `scripts/build-faculty.sh realtek`.
+Appen har et fakultetsregister (`kilde/src/app/data/faculties.ts`) slik at LANDSAM- og REALTEK-dataene går gjennom de samme komponentene.
+
+| Lag | Omfang |
+|---|---|
+| Opptak (Samordna opptak) | 13 grupper, 76 program. NTNU er hovedkonkurrent for alle sivilingeniørløpene. |
+| Karakterer (DBH 308/208) | 4 394 emner, 2021–2025, emnenivå og skjermingstelling som for LANDSAM. |
+| Emnekobling på tvers | 13 grupper, ca. 150 emnetyper. Grunnpakken (matematikk, statistikk, fysikk, programmering, ex.phil) kobler godt på tvers. |
+| Studieplaner | 74 av 76 program, 1 188 obligatoriske emner, 868 med karakterdata. Emnekoder koblet automatisk med `scripts/link-studyplan-codes.py`. |
+
+Forbehold:
+- NTNU la om matematikkodene fra kull 2025 (TMA4100 → TMA4400 osv.), HVL landmåling fra 2025 (LEI121 …). DBH-karakterene ligger på de gamle kodene, så nye koder står uten tall til neste DBH-leveranse.
+- UiS sine femårige løp i datateknologi og kybernetikk har ingen karakterrader i DBH (UiS fører dem på bachelor-/masterkoder med annen studentgruppe). UiT bærekraftig kjemi og OsloMet smart vannteknologi er for nye.
+- NMBU har bare to rene toårige mastere ved REALTEK (Datavitenskap og Intelligent Water Technology); de andre «M-»-kodene i DBH er de femårige løpene.
+- Små NMBU-program (Geoinformatikk, Energi- og miljøfysikk, IWT) ligger ofte under terskelen på 10 kandidater; koblingene der bygger på summen 2021–2025 og er merket.
+- NMBU mangler motstykke til fag som alle konkurrentene har: statistikk i maskin, mikroøkonomi og markedsføring i indøk, diskret matematikk og programvareutvikling i datavitenskap, vegbygging og BIM i bygg. Det står i gruppenotatene og er i seg selv et funn.

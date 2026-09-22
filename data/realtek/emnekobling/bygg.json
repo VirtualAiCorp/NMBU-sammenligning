@@ -1,0 +1,214 @@
+{
+  "groupId": "bygg",
+  "hentet": "2026-09-22",
+  "note": "Gruppa blander tre utdanningsfamilier. NMBUs femårige «Byggeteknikk og arkitektur» og NTNUs femårige «Bygg og infrastruktur» er de to direkte konkurrentene; NTNUs arkitektmaster er et rent formgivningsløp uten matematikk, fysikk og programmering og møter NMBU bare i bygningsfysikk, konstruksjonslære, ex.phil., arkitekturemnene og masteroppgaven. De fire treårige byggingeniørutdanningene (NTNU, OsloMet, HVL og UiS) har samme fagkjerne, men på bachelornivå: NMBUs emner på 200- og 300-nivå måles mot bacheloremner, og nivåforskjellen bør leses inn i karaktersnittet. Merk at NTNUs ingeniørbachelor (BIBYGG) rapporteres samlet for Trondheim, Gjøvik og Ålesund i DBH; samme emne har derfor ofte tre kodevarianter (BYGT/BYGG/BYGA, IMAT/IMAG/IMAA, ISTT/ISTG/ISTA), og alle er tatt med i koblingene. UiS-programmet er registrert på programkoden B-BYGG i DBH, som dekker både konstruksjonsteknikk- og infrastrukturretningen; emnelista er derfor den samme som for UiS-programmet i vannmiljø-gruppa. NMBUs kommunalteknikkemne (THT100) er ikke koblet her - vann og avløp er dekket som egen emnetype i vannmiljø-gruppa. NMBU har heller ingen vegbyggings- eller BIM-emner med rapporterte karakterer, så de to fagområdene mangler her selv om alle konkurrentene har dem.",
+  "emnetyper": [
+    {
+      "id": "matematikk-1",
+      "label": "Matematikk 1 (kalkulus)",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Det første matematikkemnet: grenseverdier, derivasjon, integrasjon og enkle differensiallikninger.",
+      "note": "NTNU erstattet TMA4100 med TMA4400 fra kull 2025, og begge kodene er med slik at tidsserien kan følges. OsloMets TRE-koder er trekantede tre-terminsvarianter av samme emne.",
+      "koblinger": [
+        { "entryId": "nmbu_bygg", "emnekoder": ["MATH121-1"], "merknad": "Kalkulus; MATH111 ble erstattet av MATH121 i perioden." },
+        { "entryId": "ntnu_bygg_infrastruktur", "emnekoder": ["TMA4100-1", "TMA4400-1"], "merknad": "To kodeversjoner av Matematikk 1 i overgangen mellom kull." },
+        { "entryId": "ntnu_ing_bygg", "emnekoder": ["IMAT1002-1", "IMAG1002-1", "IMAA1002-1"], "merknad": "Matematikk for ingeniørfag 1 ved henholdsvis Trondheim, Gjøvik og Ålesund." },
+        { "entryId": "oslomet_ing_bygg", "emnekoder": ["BYFE1000-1", "TRE1000-1"], "merknad": "Matematikk 1000; TRE1000 er tre-terminsvarianten." },
+        { "entryId": "hvl_ing_bygg", "emnekoder": ["MAT110-1"] },
+        { "entryId": "uis_ing_bygg_konstruksjon", "emnekoder": ["MAT100-1"], "merknad": "Matematiske metoder 1." }
+      ]
+    },
+    {
+      "id": "matematikk-2-og-3",
+      "label": "Matematikk 2 og 3 (lineær algebra og flervariabel)",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Lineær algebra, vektoranalyse, flervariabel kalkulus og videregående metodeemner.",
+      "note": "NTNUs arkitektmaster har ingen matematikkemner. NMBU har tre kodeversjoner i perioden fordi grunnpakka ble lagt om fra MATH112/MATH113 til MATH122/MATH123.",
+      "koblinger": [
+        { "entryId": "nmbu_bygg", "emnekoder": ["MATH112-1", "MATH113-1", "MATH122-1", "MATH123-1"], "merknad": "Kalkulus 2 og Lineær algebra ble erstattet av Kalkulus og lineær algebra og Lineær algebra og vektoranalyse fra kull 2025." },
+        { "entryId": "ntnu_bygg_infrastruktur", "emnekoder": ["TMA4105-1", "TMA4110-1", "TMA4130-1"], "merknad": "Matematikk 2, 3 og 4N; til sammen 22,5 sp mot NMBUs 20-30 sp." },
+        { "entryId": "ntnu_ing_bygg", "emnekoder": ["IMAT2023-1", "IMAG2023-1", "IMAA2023-1", "IMAT2100-1", "IMAG2100-1", "IMAA2100-1", "IMAT3012-1", "IMAG3012-1", "IMAA3012-1"], "merknad": "Matematikk for ingeniørfag 2 C og 3 B samt Matematiske metoder 3, i kodevarianter for de tre studiestedene." },
+        { "entryId": "oslomet_ing_bygg", "emnekoder": ["BYPE2000-1", "DAVE3700-1", "DAVE3705-1"], "merknad": "Matematikk 2000, 3000 og 4000." },
+        { "entryId": "hvl_ing_bygg", "emnekoder": ["MAT202-1", "MAT301-1"], "merknad": "Matematikk 2 og Flerdimensjonal analyse (matematikk 3)." },
+        { "entryId": "uis_ing_bygg_konstruksjon", "emnekoder": ["MAT200-1", "MAT300-1", "MAF310-1"], "merknad": "Matematiske metoder 2, Vektoranalyse og Numerisk modellering 1." }
+      ]
+    },
+    {
+      "id": "statistikk",
+      "label": "Statistikk",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Sannsynlighetsregning, statistisk inferens og usikkerhet i tekniske beregninger.",
+      "note": "OsloMet har ikke et rent statistikkemne; statistikk er slått sammen med programmering i BYGG2100, som derfor er koblet til begge emnetypene. NTNUs arkitektmaster har ingen statistikk.",
+      "koblinger": [
+        { "entryId": "nmbu_bygg", "emnekoder": ["STAT100-1"] },
+        { "entryId": "ntnu_bygg_infrastruktur", "emnekoder": ["TMA4240-1"] },
+        { "entryId": "ntnu_ing_bygg", "emnekoder": ["ISTT1001-1", "ISTG1001-1", "ISTA1001-1"], "merknad": "Statistikk i kodevarianter for Trondheim, Gjøvik og Ålesund." },
+        { "entryId": "oslomet_ing_bygg", "emnekoder": ["BYGG2100-1"], "merknad": "Programmering og statistikk; halve emnet er statistikk." },
+        { "entryId": "hvl_ing_bygg", "emnekoder": ["BYG102-1"], "merknad": "Statistikk og landmåling; statistikkdelen er om lag halve emnet på 15 sp." },
+        { "entryId": "uis_ing_bygg_konstruksjon", "emnekoder": ["STA100-1"], "merknad": "Sannsynlighetsregning og statistikk 1." }
+      ]
+    },
+    {
+      "id": "fysikk",
+      "label": "Fysikk",
+      "kategori": "Realfag",
+      "desc": "Grunnleggende fysikk: bevegelse, energi, termodynamikk og elektromagnetisme.",
+      "note": "UiS har ikke et eget fysikkemne ved siden av mekanikken; FYS100 Mekanikk er UiS sitt fysikkemne og er koblet til statikk og mekanikk. NTNUs arkitektmaster har ingen fysikk. NMBUs FYS102A heter «Fysikk for bioteknologer», men er det fysikkemnet som ligger i grunnpakka for byggstudentene.",
+      "koblinger": [
+        { "entryId": "nmbu_bygg", "emnekoder": ["FYS102A-1"] },
+        { "entryId": "ntnu_bygg_infrastruktur", "emnekoder": ["TFY4106-1"] },
+        { "entryId": "ntnu_ing_bygg", "emnekoder": ["IFYT1000-1", "IFYG1000-1", "IFYA1000-1", "IFYKJT1000-1", "IFYKJG1000-1"], "merknad": "Fysikk, og de kombinerte Fysikk/kjemi-emnene for TRES-studenter." },
+        { "entryId": "oslomet_ing_bygg", "emnekoder": ["BYPE1500-1", "TRE1400-1"], "merknad": "Fysikk og kjemi; OsloMet har ikke et rent fysikkemne." },
+        { "entryId": "hvl_ing_bygg", "emnekoder": ["ING172-1"], "merknad": "Klassisk mekanikk og termodynamikk." }
+      ]
+    },
+    {
+      "id": "programmering",
+      "label": "Programmering og numerikk",
+      "kategori": "Programmering",
+      "desc": "Innføring i programmering og numeriske beregninger for ingeniørbruk.",
+      "note": "NTNUs arkitektmaster har ingen programmering.",
+      "koblinger": [
+        { "entryId": "nmbu_bygg", "emnekoder": ["INF120-1"], "merknad": "Programmering og databehandling." },
+        { "entryId": "ntnu_bygg_infrastruktur", "emnekoder": ["TDT4110-1"], "merknad": "Informasjonsteknologi, grunnkurs." },
+        { "entryId": "ntnu_ing_bygg", "emnekoder": ["INGT1002-1", "INGG1002-1", "INGA1002-1"], "merknad": "Programmering, numerikk og sikkerhet, i kodevarianter for de tre studiestedene." },
+        { "entryId": "oslomet_ing_bygg", "emnekoder": ["BYGG2100-1"], "merknad": "Programmering og statistikk; halve emnet er programmering." },
+        { "entryId": "hvl_ing_bygg", "emnekoder": ["ING202-1"], "merknad": "Programmering for ingeniører." },
+        { "entryId": "uis_ing_bygg_konstruksjon", "emnekoder": ["DAT120-1", "DAT125-1"], "merknad": "DAT120 ble erstattet av DAT125 fra 2025." }
+      ]
+    },
+    {
+      "id": "exphil",
+      "label": "Examen philosophicum",
+      "kategori": "Realfag",
+      "desc": "Det obligatoriske filosofi- og vitenskapsteoriemnet.",
+      "note": "OsloMet, HVL og UiS har ikke ex.phil. i ingeniørutdanningene sine. NTNU har tre ulike varianter, og NMBUs PHI102 er den engelskspråklige versjonen.",
+      "koblinger": [
+        { "entryId": "nmbu_bygg", "emnekoder": ["PHI102-1"], "merknad": "Examen philosophicum - engelsk versjon." },
+        { "entryId": "ntnu_bygg_infrastruktur", "emnekoder": ["EXPH0300-1"], "merknad": "Ex.phil. for naturvitenskap og teknologi." },
+        { "entryId": "ntnu_arkitektur", "emnekoder": ["EXPH0100-1"], "merknad": "Ex.phil. for humaniora og estetiske fag; et annet pensum enn teknologivarianten." },
+        { "entryId": "ntnu_ing_bygg", "emnekoder": ["EXPH0600-1"], "merknad": "Ex.phil. for ingeniørfag." }
+      ]
+    },
+    {
+      "id": "statikk-og-mekanikk",
+      "label": "Statikk, mekanikk og fasthetslære",
+      "kategori": "Fagspesifikt",
+      "desc": "Likevekt, krefter i konstruksjoner, spenninger og tøyninger, og elementmetoden som beregningsverktøy.",
+      "note": "Dette er det største felles fagområdet i gruppa. NMBU deler stoffet på fire emner (mekanikk, statikk, fasthetslære og strukturell analyse) mot NTNUs fire mekanikkemner. NTNUs arkitektmaster dekker feltet i det ene emnet AAR4405 Konstruksjonslære.",
+      "koblinger": [
+        { "entryId": "nmbu_bygg", "emnekoder": ["FYS101-1", "FYS110-1", "TBM120-1", "TBA215-1", "TBM250-1", "TBM350-1"], "merknad": "Mekanikk, Statikk, Fasthetslære, Strukturell analyse og Elementmetoden (TBM250 ble erstattet av TBM350)." },
+        { "entryId": "ntnu_bygg_infrastruktur", "emnekoder": ["TKT4116-1", "TKT4122-1", "TKT4132-1", "TKT4134-1", "TKT4142-1"], "merknad": "Mekanikk 1-4 og Elementmetoden i konstruksjonsteknikk." },
+        { "entryId": "ntnu_arkitektur", "emnekoder": ["AAR4405-1"], "merknad": "Konstruksjonslære; vesentlig mindre omfang enn ingeniørløpene." },
+        { "entryId": "ntnu_ing_bygg", "emnekoder": ["MEKT1201-1", "MEKG1101-1", "MEKA1101-1", "MEKT1001-1", "MEKG1001-1", "MEKA1001-1", "BYGT2318-1", "BYGG2250-1"], "merknad": "Mekanikk 1 og Mekanikk i kodevarianter for de tre studiestedene, samt Statikk og Mekanikk 2." },
+        { "entryId": "oslomet_ing_bygg", "emnekoder": ["BYPE1600-1", "BYVE3300-1", "BYTS2300-1"], "merknad": "Mekanikk, Statikk og Konstruksjonslære." },
+        { "entryId": "hvl_ing_bygg", "emnekoder": ["BYG161-1", "BYG300-1"], "merknad": "Mekanikk og Trekonstruksjoner og statikk." },
+        { "entryId": "uis_ing_bygg_konstruksjon", "emnekoder": ["FYS100-1", "BYG140-1", "BYG205-1", "BYG280-1", "MSK250-1"], "merknad": "FYS100 Mekanikk er UiS sitt fysikk- og mekanikkemne; i tillegg Konstruksjonsmekanikk 1 og 2, Konstruksjonslære og Elementmetoder." }
+      ]
+    },
+    {
+      "id": "konstruksjonsteknikk",
+      "label": "Konstruksjonsteknikk: betong, stål og tre",
+      "kategori": "Fagspesifikt",
+      "desc": "Dimensjonering av bærende konstruksjoner i betong, stål og tre etter Eurokodene.",
+      "note": "NTNUs arkitektmaster har ingen dimensjoneringsemner. NMBU har det største omfanget her (til sammen 40-45 sp), mens bachelorene ligger på 15-30 sp.",
+      "koblinger": [
+        { "entryId": "nmbu_bygg", "emnekoder": ["TBA222-1", "TBA223-1", "TBA224-1", "TBA320-1", "TBA390-2"], "merknad": "Konstruksjonsteknikk stål og tre, betong, II og III Bygg, samt Trekonstruksjonsteknikk." },
+        { "entryId": "ntnu_bygg_infrastruktur", "emnekoder": ["TKT4175-1", "TKT4220-1", "TKT4222-1", "TKT4170-1", "TKT4230-1", "TKT4211-1", "TKT4212-1"], "merknad": "Betongkonstruksjoner 1-3, Stålkonstruksjoner 1-2 og Trekonstruksjoner 1-2." },
+        { "entryId": "ntnu_ing_bygg", "emnekoder": ["BYGT2206-1", "BYGT2320-1", "BYGG2254-1", "BYGT2319-1", "BYGG2256-1", "BYGT2211-1", "BYGG2255-1", "BYGT2101-1", "BYGG2101-1", "BYGA2101-1", "BYGT2104-1"], "merknad": "Betong-, stål- og trekonstruksjoner samt Konstruksjonsteknikk og Konstruksjonslære i kodevarianter for de tre studiestedene." },
+        { "entryId": "oslomet_ing_bygg", "emnekoder": ["BYGG2300-1", "BYVE3200-1", "BYTS2100-1"], "merknad": "Betongkonstruksjoner, Stål- og trekonstruksjoner og Byggematerialer og betongdimensjonering." },
+        { "entryId": "hvl_ing_bygg", "emnekoder": ["BYG106-1", "BYG107-1", "BYG105-1", "BYG124-1"], "merknad": "Betongkonstruksjoner, Stålkonstruksjoner, Bygningskonstruksjoner og Material- og konstruksjonslære." },
+        { "entryId": "uis_ing_bygg_konstruksjon", "emnekoder": ["BYG220-1", "BYG200-1", "BYG310-1"], "merknad": "Betongkonstruksjoner, Stålkonstruksjoner og Trekonstruksjoner." }
+      ]
+    },
+    {
+      "id": "byggematerialer",
+      "label": "Byggematerialer og materialteknologi",
+      "kategori": "Fagspesifikt",
+      "desc": "Egenskapene til betong, stål, tre og andre byggematerialer, og bærekraftig materialbruk.",
+      "note": "NTNUs ingeniørbachelor har ikke et eget materiallæreemne i Trondheim; bare Gjøvik-varianten BYGG2352 Betongteknologi er rapportert. NTNUs arkitektmaster og UiS har heller ingen tydelige materialemner utover det som allerede er koblet til konstruksjonsteknikk.",
+      "koblinger": [
+        { "entryId": "nmbu_bygg", "emnekoder": ["TBM200-1", "TBA202-1", "TRE200-1"], "merknad": "Materialteknologi, Bærekraftig materialbruk og Treteknologi I." },
+        { "entryId": "ntnu_bygg_infrastruktur", "emnekoder": ["TKT4240-1", "TKT4215-1"], "merknad": "BM1 Bygningsmaterialer og Betongteknologi 1." },
+        { "entryId": "ntnu_ing_bygg", "emnekoder": ["BYGG2352-1"], "merknad": "Betongteknologi; bare rapportert for Gjøvik." },
+        { "entryId": "oslomet_ing_bygg", "emnekoder": ["BYGG1100-1"], "merknad": "Byggematerialer og byggeteknikk; 15 sp der materiallæren er hoveddelen." },
+        { "entryId": "hvl_ing_bygg", "emnekoder": ["BYG200-1"], "merknad": "Materiallære." },
+        { "entryId": "uis_ing_bygg_konstruksjon", "emnekoder": ["BYG150-1"], "merknad": "Byggematerialer." }
+      ]
+    },
+    {
+      "id": "geoteknikk",
+      "label": "Geoteknikk",
+      "kategori": "Fagspesifikt",
+      "desc": "Jordarters egenskaper, setninger, stabilitet og fundamentering.",
+      "note": "NTNUs arkitektmaster har ingen geoteknikk. NMBUs TBA201 er bare 5 sp mot 7,5-10 sp hos konkurrentene, og NTNUs sivilingeniørløp har klart størst omfang med Geoteknikk 1 og 2 pluss felt- og laboratoriekurs.",
+      "koblinger": [
+        { "entryId": "nmbu_bygg", "emnekoder": ["TBA201-1"] },
+        { "entryId": "ntnu_bygg_infrastruktur", "emnekoder": ["TBM4240-1", "TBM4342-1", "TBA4110-1", "TBA4116-1"], "merknad": "Geoteknikk 1 og 2, felt- og laboratorieundersøkelser og videregående kurs." },
+        { "entryId": "ntnu_ing_bygg", "emnekoder": ["BYGT2001-1", "BYGG2001-1", "BYGA2001-1"], "merknad": "Geoteknikk i kodevarianter for de tre studiestedene." },
+        { "entryId": "oslomet_ing_bygg", "emnekoder": ["BYGG2200-1"] },
+        { "entryId": "hvl_ing_bygg", "emnekoder": ["BYG115-1"] },
+        { "entryId": "uis_ing_bygg_konstruksjon", "emnekoder": ["GEO285-1"], "merknad": "Nytt emne fra 2025; bare ett år med tall." }
+      ]
+    },
+    {
+      "id": "bygningsfysikk",
+      "label": "Bygningsfysikk",
+      "kategori": "Fagspesifikt",
+      "desc": "Varme, fukt, luftlekkasje, energibruk og inneklima i bygningskroppen.",
+      "note": "UiS-emnet BYG235 er bare 5 sp mot NMBUs 20 sp fordelt på to emner. NTNUs ingeniørbachelor kjører masteremnet TBM4222 som valgemne, og tallene er derfor små.",
+      "koblinger": [
+        { "entryId": "nmbu_bygg", "emnekoder": ["TBA210-1", "TBA331-1"], "merknad": "Bygningsfysikk med bærekraft og Bygningsfysisk simulering." },
+        { "entryId": "ntnu_bygg_infrastruktur", "emnekoder": ["TBM4222-1", "TBM4322-1"], "merknad": "Bygningsfysikk, grunnkurs og Bygningssimulering." },
+        { "entryId": "ntnu_arkitektur", "emnekoder": ["AAR4335-1"], "merknad": "Grunnleggende bygningsfysikk." },
+        { "entryId": "ntnu_ing_bygg", "emnekoder": ["TBM4222-1", "TBM4221-1", "BYGT2311-1"], "merknad": "Bygningsfysikk, Bygningsteknikk og Bygningsteknologi." },
+        { "entryId": "hvl_ing_bygg", "emnekoder": ["BYG104-1"] },
+        { "entryId": "uis_ing_bygg_konstruksjon", "emnekoder": ["BYG235-1"] }
+      ]
+    },
+    {
+      "id": "byggeprosess-og-prosjektledelse",
+      "label": "Byggeprosess og prosjektledelse",
+      "kategori": "Fagspesifikt",
+      "desc": "Gjennomføring av byggeprosjekter: kontrakter, entreprise, anleggsdrift, prosjekt- og prosjekteringsledelse.",
+      "note": "NTNUs arkitektmaster dekker dette gjennom TIØ4253 Teknologiledelse, som er et generelt ledelsesemne og derfor ikke koblet.",
+      "koblinger": [
+        { "entryId": "nmbu_bygg", "emnekoder": ["TBA270-1"], "merknad": "Bygningsadministrasjon og prosjektledelse." },
+        { "entryId": "ntnu_bygg_infrastruktur", "emnekoder": ["TBM4210-1", "TBM4319-1", "TBA4127-1", "TBA4157-1", "TBA4155-1", "TBA4150-1"], "merknad": "Byggeprosess grunnkurs og videregående kurs, Prosjekteringsledelse, prosjektbasert produksjon, tidligfase og Anleggsteknikk." },
+        { "entryId": "ntnu_ing_bygg", "emnekoder": ["TBM4210-1", "BYGT2315-1", "BYGA2020-1", "SMF2297-1"], "merknad": "Byggeprosess, Anleggsteknikk og anleggsledelse, Samhandling og prosjektledelse og Prosjektledelse." },
+        { "entryId": "oslomet_ing_bygg", "emnekoder": ["BYFE3100-1", "BYPE2700-1"], "merknad": "Byggeprosess - ingeniørfaglig systememne og Prosjektledelse og økonomi." },
+        { "entryId": "hvl_ing_bygg", "emnekoder": ["BYG117-1", "BYG114-1"], "merknad": "Entreprise og byggeplassdrift og Anleggsteknikk." },
+        { "entryId": "uis_ing_bygg_konstruksjon", "emnekoder": ["BYG230-1"], "merknad": "Byggadministrasjon med BIM." }
+      ]
+    },
+    {
+      "id": "arkitektur-og-bygningsutforming",
+      "label": "Arkitektur og bygningsutforming",
+      "kategori": "Fagspesifikt",
+      "desc": "Arkitektonisk prosjektering, formgivning, bygningshistorie og estetikk.",
+      "note": "Dette er fagområdet som skiller NMBU fra de rene byggingeniørutdanningene. Bare NTNUs arkitektmaster har et fullt arkitekturløp; HVL og UiS har ingen arkitekturemner, og OsloMet og NTNUs ingeniørbachelor har bare små valgemner. NTNUs arkitekturstudioer er 15 sp mot NMBUs 10 sp, og de er kjernen i et rent formgivningsstudium - karakterene er derfor ikke direkte sammenlignbare med NMBUs ARK-emner.",
+      "koblinger": [
+        { "entryId": "nmbu_bygg", "emnekoder": ["ARK100-1", "ARK110-1", "ARK210-1", "ARK200-1", "ARK220-1", "ARK300-1", "TBA150-1", "TBA100-1", "TBA110-1", "TBA190-1"], "merknad": "Arkitektur og bærekraft I-IV (ARK110/ARK210 og ARK200/ARK220 er to kodeversjoner av samme emne), samt Bygningsanalyse, Bygningshistorie, Frihåndstegning og Trehus med bærekraft." },
+        { "entryId": "ntnu_arkitektur", "emnekoder": ["AAR4300-1", "AAR4415-1", "AAR4416-1", "AAR4436-1", "AAR4366-1", "AAR4466-1", "AAR4430-1", "AAR4360-1", "AAR4460-1", "AAR4400-1", "AAR4435-1"], "merknad": "Arkitektur 1-6, Arkitekturens teori og historie A-C og Form og farge 1-2." },
+        { "entryId": "ntnu_ing_bygg", "emnekoder": ["BYGG2363-1"], "merknad": "Estetikk, byggeskikk og stedskvalitet; valgemne ved Gjøvik." },
+        { "entryId": "oslomet_ing_bygg", "emnekoder": ["BYVE3615-1"], "merknad": "Byggeskikk, arkitektur og design; valgemne." }
+      ]
+    },
+    {
+      "id": "oppgave",
+      "label": "Bachelor- og masteroppgave",
+      "kategori": "Oppgave",
+      "desc": "Det selvstendige avsluttende arbeidet i graden.",
+      "note": "NMBUs og NTNUs masteroppgaver er 30 sp på masternivå og er ikke direkte sammenlignbare med bacheloroppgavene på 20 sp. NTNUs sivilingeniørløp har to masteroppgavekoder avhengig av hvilket institutt studenten skriver ved.",
+      "koblinger": [
+        { "entryId": "nmbu_bygg", "emnekoder": ["M30-BA-1"], "merknad": "Masteroppgave, 30 sp." },
+        { "entryId": "ntnu_bygg_infrastruktur", "emnekoder": ["TBM4900-1", "TKT4950-1"], "merknad": "Masteroppgave i bygg- og miljøteknikk og i konstruksjonsteknikk." },
+        { "entryId": "ntnu_arkitektur", "emnekoder": ["AAR4990-1"], "merknad": "Masteroppgave i arkitektur." },
+        { "entryId": "ntnu_ing_bygg", "emnekoder": ["BYGT2900-1", "BYGG2900-1", "BYGA2900-1"], "merknad": "Bacheloroppgave bygg i kodevarianter for de tre studiestedene." },
+        { "entryId": "oslomet_ing_bygg", "emnekoder": ["BYTS3900-1"] },
+        { "entryId": "hvl_ing_bygg", "emnekoder": ["BYG350-1"] },
+        { "entryId": "uis_ing_bygg_konstruksjon", "emnekoder": ["BYGKBAC-1"], "merknad": "Bacheloroppgave i bygg - konstruksjonsteknikk." }
+      ]
+    }
+  ]
+}

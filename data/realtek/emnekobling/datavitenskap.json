@@ -1,0 +1,187 @@
+{
+  "groupId": "datavitenskap",
+  "hentet": "2026-09-22",
+  "note": "Gruppa rommer tre ulike utdanningsfamilier. NMBUs datavitenskap, NTNUs datateknologi, UiBs data science, UiTs og UiAs kunstig intelligens er femårige sivilingeniørløp; OsloMets anvendte datateknologi er en treårig bachelor med klar systemutviklingsprofil. Sammenligningen er sterkest i programmering, algoritmer og datastrukturer, databaser og maskinlæring, og svakest i matematikk, der NMBU og NTNU har mye kalkulus, UiA har lite og OsloMet ingenting. To programmer er utelatt fordi DBH nesten ikke har rapportert emnekarakterer for dem: UiS' datateknologi (ingen emner rapportert) og UiOs informatikk med maskinlæring og kunstig intelligens (fem emner, hvorav to er HMS-emner uten karakter). UiTs kunstig intelligens er svært tynt rapportert - bare tre emner har minst ti kandidater i 2024/2025 - og er derfor med i få emnetyper. To emnetyper som ellers ville vært naturlige, mangler helt hos NMBU og er derfor ikke satt opp: statistikk (NMBUs datavitenskap har ikke obligatorisk statistikkemne; NTNU TMA4240, UiB STAT110/STAT200, UiA MA-223 har det) og diskret matematikk (NTNU TMA4412/TMA4140, UiB MNF130, UiA MA-180/MA-224, OsloMet DAPE1300). Det samme gjelder programvareutvikling og operativsystemer/nettverk, som alle konkurrentene har, men ikke NMBU.",
+  "emnetyper": [
+    {
+      "id": "programmering-1",
+      "label": "Programmering 1 (innføring)",
+      "kategori": "Programmering",
+      "desc": "Første programmeringsemne: grunnleggende programstrukturer, datatyper og problemløsning.",
+      "note": "NTNUs TDT4109 og TDT4110 er fellesemner for henholdsvis datateknologistudenter og øvrige realfags- og teknologistudenter; kandidattallene er derfor langt høyere enn programmets eget kull.",
+      "koblinger": [
+        { "entryId": "nmbu_datavitenskap", "emnekoder": ["INF120-1"], "merknad": "Programmering og databehandling." },
+        { "entryId": "ntnu_datateknologi", "emnekoder": ["TDT4109-1", "TDT4110-1"], "merknad": "To kodeversjoner av Informasjonsteknologi, grunnkurs." },
+        { "entryId": "uib_datascience", "emnekoder": ["INF100-0"], "merknad": "Innføring i programmering / Programmering 1." },
+        { "entryId": "uit_ki", "emnekoder": ["INF-0101-1"], "merknad": "Innføring i programmering, 5 sp; vesentlig mindre omfang enn de andre." },
+        { "entryId": "uia_ki", "emnekoder": ["IKT101-G"], "merknad": "Grunnleggende softwareutvikling." },
+        { "entryId": "oslomet_anvendt_datateknologi", "emnekoder": ["DAPE1400-1"], "merknad": "Programmering." }
+      ]
+    },
+    {
+      "id": "programmering-2",
+      "label": "Programmering 2 (objektorientert og videregående)",
+      "kategori": "Programmering",
+      "desc": "Videregående programmering: objektorientering, moduler, testing og større programstrukturer.",
+      "note": "OsloMet har ikke et rent videregående programmeringsemne; DATA1300 Hurtig utvikling med scripting-språk er ikke rapportert med kandidattall, og DATA1700 Webprogrammering er webrettet. UiTs INF-1400 har for få kandidater. NMBUs INF201 er bare 5 sp mot 7,5-10 sp hos de andre.",
+      "koblinger": [
+        { "entryId": "nmbu_datavitenskap", "emnekoder": ["INF201-1", "INF202-1"], "merknad": "Videregående programmering (5 sp) og prosjektoppgaven i januarblokk." },
+        { "entryId": "ntnu_datateknologi", "emnekoder": ["TDT4100-1", "TDT4102-1"], "merknad": "Objektorientert programmering og Prosedyre- og objektorientert programmering." },
+        { "entryId": "uib_datascience", "emnekoder": ["INF101-0"], "merknad": "Videregående programmering / Programmering 2." },
+        { "entryId": "uia_ki", "emnekoder": ["IKT103-G"], "merknad": "Videregående softwareutvikling." }
+      ]
+    },
+    {
+      "id": "algoritmer-og-datastrukturer",
+      "label": "Algoritmer og datastrukturer",
+      "kategori": "Programmering",
+      "desc": "Klassiske datastrukturer, algoritmedesign, kompleksitetsanalyse og beregnbarhet.",
+      "note": "NMBUs INF221 Informatikk for datavitere dekker algoritmer, datastrukturer og kompleksitet, men også datamaskinarkitektur, og er derfor litt bredere enn de rene algoritmeemnene. UiTs INF-1101 har for få rapporterte kandidater.",
+      "koblinger": [
+        { "entryId": "nmbu_datavitenskap", "emnekoder": ["INF221-1"], "merknad": "Informatikk for datavitere; bredere enn de rene algoritmeemnene." },
+        { "entryId": "ntnu_datateknologi", "emnekoder": ["TDT4120-1", "TDT4121-1"], "merknad": "Algoritmer og datastrukturer og den nye kodeversjonen Innføring i algoritmer." },
+        { "entryId": "uib_datascience", "emnekoder": ["INF102-0"], "merknad": "Algoritmer, datastrukturer og programmering." },
+        { "entryId": "uia_ki", "emnekoder": ["IKT203-G"] },
+        { "entryId": "oslomet_anvendt_datateknologi", "emnekoder": ["DATS2300-1"] }
+      ]
+    },
+    {
+      "id": "databaser",
+      "label": "Databaser og datahåndtering",
+      "kategori": "Programmering",
+      "desc": "Datamodellering, relasjonsdatabaser, SQL og håndtering av datasett.",
+      "note": "NMBUs INF230 er mer datahåndterings- og analyserettet enn de rene databaseemnene hos konkurrentene. UiT har ikke et obligatorisk databaseemne med rapporterte kandidattall.",
+      "koblinger": [
+        { "entryId": "nmbu_datavitenskap", "emnekoder": ["INF230-2"], "merknad": "Datahåndtering og -analyse; kombinerer databaser med dataanalyse." },
+        { "entryId": "ntnu_datateknologi", "emnekoder": ["TDT4145-1"], "merknad": "Datamodellering og databasesystemer." },
+        { "entryId": "uib_datascience", "emnekoder": ["INF115-0"], "merknad": "Databaser og modellering." },
+        { "entryId": "uia_ki", "emnekoder": ["IKT105-G"], "merknad": "Datamodellering og databaser." },
+        { "entryId": "oslomet_anvendt_datateknologi", "emnekoder": ["DATA1500-1"] }
+      ]
+    },
+    {
+      "id": "maskinlaering-og-ki",
+      "label": "Maskinlæring og kunstig intelligens",
+      "kategori": "Fagspesifikt",
+      "desc": "Grunnleggende maskinlæring og kunstig intelligens: søk, klassifikasjon, regresjon, modellvalg og evaluering.",
+      "note": "UiBs obligatoriske maskinlæringsemne INF264 er ikke rapportert med kandidattall; INF161 Innføring i data science er brukt som nærmeste motstykke og er mer dataanalyserettet. UiT er bare representert med innføringsemnet INF-1600.",
+      "koblinger": [
+        { "entryId": "nmbu_datavitenskap", "emnekoder": ["DAT200-1"], "merknad": "Anvendt maskinlæring." },
+        { "entryId": "ntnu_datateknologi", "emnekoder": ["TDT4172-1", "TDT4136-1", "TDT4173-1"], "merknad": "Introduksjon til maskinlæring, Introduksjon til kunstig intelligens og Moderne maskinlæring i praksis." },
+        { "entryId": "uib_datascience", "emnekoder": ["INF161-0"], "merknad": "Innføring i data science; UiBs eget maskinlæringsemne INF264 er ikke rapportert." },
+        { "entryId": "uit_ki", "emnekoder": ["INF-1600-1"], "merknad": "Introduksjon til kunstig intelligens." },
+        { "entryId": "uia_ki", "emnekoder": ["IKT112-G", "IKT111-G", "IKT457-G"], "merknad": "Concepts of Machine Learning, Concepts of Artificial Intelligence og Learning Systems." },
+        { "entryId": "oslomet_anvendt_datateknologi", "emnekoder": ["DAVE3625-1"], "merknad": "Introduksjon til kunstig intelligens; valgemne." }
+      ]
+    },
+    {
+      "id": "dyplaering",
+      "label": "Dyplæring og nevrale nett",
+      "kategori": "Fagspesifikt",
+      "desc": "Dype nevrale nettverk, trening, arkitekturer og anvendelser.",
+      "note": "UiB, UiT og OsloMet har ikke obligatoriske dyplæringsemner med rapporterte kandidattall. NTNUs IT3030 er et valgemne med relativt få kandidater.",
+      "koblinger": [
+        { "entryId": "nmbu_datavitenskap", "emnekoder": ["DAT300-1"], "merknad": "Anvendt dyplæring." },
+        { "entryId": "ntnu_datateknologi", "emnekoder": ["IT3030-1"], "merknad": "Dyp læring; valgemne." },
+        { "entryId": "uia_ki", "emnekoder": ["IKT450-G", "IKT460-G"], "merknad": "Deep Neural Networks og Reinforcement Learning." }
+      ]
+    },
+    {
+      "id": "bildeanalyse-og-datasyn",
+      "label": "Bildeanalyse og datasyn",
+      "kategori": "Fagspesifikt",
+      "desc": "Digital bildebehandling, bildeanalyse, mønstergjenkjenning og datasyn.",
+      "note": "UiB og OsloMet har ikke bildeanalyse- eller datasynsemner med rapporterte kandidattall, og UiTs FYS-2010 Image Analysis har for få kandidater. NMBUs INF250 er et valgemne.",
+      "koblinger": [
+        { "entryId": "nmbu_datavitenskap", "emnekoder": ["INF250-1"], "merknad": "Bildeanalyse; valgemne." },
+        { "entryId": "ntnu_datateknologi", "emnekoder": ["TDT4195-1", "TDT4265-1"], "merknad": "Grunnleggende visuell databehandling og Datasyn og dyp læring." },
+        { "entryId": "uia_ki", "emnekoder": ["IKT213-G", "IKT215-G", "IKT452-G"], "merknad": "Machine Vision, Pattern Recognition og Computer Vision." }
+      ]
+    },
+    {
+      "id": "dataanalyse-og-visualisering",
+      "label": "Dataanalyse og visualisering",
+      "kategori": "Fagspesifikt",
+      "desc": "Anvendt dataanalyse: datainnsamling, opprydding, utforskende analyse og visuell framstilling av data.",
+      "note": "UiA og UiT har ikke egne emner i anvendt dataanalyse og visualisering. OsloMets ADSE3200 Visualisering er rent visualiseringsrettet og dekker ikke analysedelen. UiBs INF161 er også koblet til maskinlæring og kunstig intelligens.",
+      "koblinger": [
+        { "entryId": "nmbu_datavitenskap", "emnekoder": ["DAT110-1"], "merknad": "Innføring i dataanalyse og -visualisering." },
+        { "entryId": "ntnu_datateknologi", "emnekoder": ["TDT4259-1"], "merknad": "Anvendt data science." },
+        { "entryId": "uib_datascience", "emnekoder": ["INF161-0"], "merknad": "Innføring i data science." },
+        { "entryId": "oslomet_anvendt_datateknologi", "emnekoder": ["ADSE3200-1"], "merknad": "Visualisering; dekker bare visualiseringsdelen." }
+      ]
+    },
+    {
+      "id": "matematikk-1",
+      "label": "Matematikk 1 (kalkulus)",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Første kalkulusemne: grenser, derivasjon, integrasjon og rekker.",
+      "note": "OsloMets anvendte datateknologi har ingen kalkulusemner i det hele tatt, bare diskret matematikk. UiAs kunstig intelligens har bare MA-179 Matematikk 2 rapportert med kandidattall, og den er koblet til matematikk 2. UiTs MAT-1050 har for få kandidater.",
+      "koblinger": [
+        { "entryId": "nmbu_datavitenskap", "emnekoder": ["MATH121-1", "MATH111-1"], "merknad": "MATH121 Kalkulus er dagens emne; MATH111 Kalkulus 1 er kodeversjonen fra den gamle matematikkplanen." },
+        { "entryId": "ntnu_datateknologi", "emnekoder": ["TMA4400-1", "TMA4100-1"], "merknad": "Matematikk 1: Kalkulus og lineær algebra og den eldre koden Matematikk 1." },
+        { "entryId": "uib_datascience", "emnekoder": ["MAT111-0"], "merknad": "Grunnkurs i matematikk I." }
+      ]
+    },
+    {
+      "id": "matematikk-2",
+      "label": "Matematikk 2 og lineær algebra",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Videregående matematikk: flervariabel kalkulus, lineær algebra, matriser og egenverdier.",
+      "note": "UiT og OsloMet har ikke rapporterte emner på dette nivået. NMBU har klart mest omfang med tre emner, blant annet MATH280 Anvendt lineær algebra, som er sentralt for maskinlæringsdelen av studiet.",
+      "koblinger": [
+        { "entryId": "nmbu_datavitenskap", "emnekoder": ["MATH122-1", "MATH123-1", "MATH113-1", "MATH280-1"], "merknad": "Kalkulus og lineær algebra, Lineær algebra og vektoranalyse (MATH113 er den gamle kodeversjonen) og Anvendt lineær algebra." },
+        { "entryId": "ntnu_datateknologi", "emnekoder": ["TMA4115-1", "TMA4135-1"], "merknad": "Matematikk 3 og Matematikk 4D." },
+        { "entryId": "uib_datascience", "emnekoder": ["MAT121-0"], "merknad": "Lineær algebra." },
+        { "entryId": "uia_ki", "emnekoder": ["MA-179-G", "MA-447-G"], "merknad": "Matematikk 2 og AI Mathematics." }
+      ]
+    },
+    {
+      "id": "optimering",
+      "label": "Optimering og modellering",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Matematisk optimering, modellering av beslutningsproblemer og numeriske optimeringsmetoder.",
+      "note": "Bare NMBU og UiB har obligatoriske optimeringsemner. NMBUs MATH285 har åtte kandidater i 2024/2025 og atten i perioden samlet, så tallene er tynne.",
+      "koblinger": [
+        { "entryId": "nmbu_datavitenskap", "emnekoder": ["MATH285-1"], "merknad": "Optimering; få rapporterte kandidater." },
+        { "entryId": "uib_datascience", "emnekoder": ["INF170-0"], "merknad": "Modellering og optimering." }
+      ]
+    },
+    {
+      "id": "fysikk",
+      "label": "Fysikk",
+      "kategori": "Fysikk",
+      "desc": "Innføring i fysikk: mekanikk, termofysikk og elektromagnetisme.",
+      "note": "UiB, UiT og OsloMet har ikke obligatoriske fysikkemner. NMBU har mest omfang (20 sp mot 7,5 sp hos NTNU og UiA), og NMBUs emner ligger på et mer teoretisk nivå enn UiAs «Fysikk for IKT».",
+      "koblinger": [
+        { "entryId": "nmbu_datavitenskap", "emnekoder": ["FYS101-1", "FYS102-1"], "merknad": "Mekanikk og Termofysikk og elektromagnetisme." },
+        { "entryId": "ntnu_datateknologi", "emnekoder": ["TFY4125-1"], "merknad": "Fysikk; studieretningsemne." },
+        { "entryId": "uia_ki", "emnekoder": ["FYS129-G"], "merknad": "Fysikk for IKT; mer anvendt enn de andre." }
+      ]
+    },
+    {
+      "id": "exphil",
+      "label": "Examen philosophicum",
+      "kategori": "Ex.phil",
+      "desc": "Fellesemnet i vitenskapsfilosofi og etikk.",
+      "note": "UiB, UiA og OsloMet har ikke rapportert ex.phil-emner for disse programmene, og UiTs FIL-0700 har bare fire kandidater. Sammenligningen er derfor bare mellom NMBU og NTNU.",
+      "koblinger": [
+        { "entryId": "nmbu_datavitenskap", "emnekoder": ["PHI101-1", "PHI100-1"], "merknad": "Seminarversjonen PHI101 er den som brukes av datavitenskapsstudentene; PHI100 er hovedversjonen." },
+        { "entryId": "ntnu_datateknologi", "emnekoder": ["EXPH0300-1"], "merknad": "Examen philosophicum for naturvitenskap og teknologi." }
+      ]
+    },
+    {
+      "id": "oppgave",
+      "label": "Master- og bacheloroppgave",
+      "kategori": "Oppgave",
+      "desc": "Det selvstendige avsluttende arbeidet i graden.",
+      "note": "Omfanget er ulikt: NMBU og NTNU har masteroppgave på 30 sp, UiA og OsloMet bacheloroppgave på 20 sp. UiBs masteroppgave DSC399K og UiTs oppgaveemner er ikke rapportert med kandidattall. NMBUs M30-DV har ni kandidater i 2024/2025.",
+      "koblinger": [
+        { "entryId": "nmbu_datavitenskap", "emnekoder": ["M30-DV-1"], "merknad": "Masteroppgave 30 sp; få rapporterte kandidater." },
+        { "entryId": "ntnu_datateknologi", "emnekoder": ["TDT4900-1"], "merknad": "Datateknologi, masteroppgave 30 sp." },
+        { "entryId": "uia_ki", "emnekoder": ["DAT304-G"], "merknad": "Bacheloroppgave, data, 20 sp; ikke masteroppgaven." },
+        { "entryId": "oslomet_anvendt_datateknologi", "emnekoder": ["DATA3900-1"], "merknad": "Bacheloroppgave 20 sp." }
+      ]
+    }
+  ]
+}

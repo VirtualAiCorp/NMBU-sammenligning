@@ -1,0 +1,205 @@
+{
+  "groupId": "robotikk",
+  "hentet": "2026-09-22",
+  "note": "Gruppa rommer tre utdanningsfamilier. NMBUs femårige «Anvendt robotikk» og NTNUs «Kybernetikk og robotikk» er de to femårige sivilingeniørløpene og den sterkeste sammenligningen, men NTNU er vesentlig større (100–160 kandidater per emne mot 15–30 hos NMBU) og har en tyngre kybernetisk systemteori-del. UiAs mekatronikk og NTNU Ålesunds mekatronikk og produktdesign er treårige mekatronikkingeniører med tyngdepunkt i maskin, aktuatorer og industriell automasjon, mens OsloMets automatisering og robotikk er en treårig elektroingeniør. UiOs «Informatikk: robotikk og intelligente systemer» er en informatikkbachelor: den er sterk på programmering, algoritmer, digitalteknikk og maskinlæring, men har verken reguleringsteknikk, kretsteknikk eller instrumentering, og er derfor bare koblet der faget faktisk finnes. UiS' «Kybernetikk og robotteknologi» ble lagt ned etter opptaket 2022 og har ingen emner med rapporterte kandidattall i 2024/2025; programmet er derfor ikke koblet i det hele tatt. Sammenligningen er sterkest i matematikk, fysikk, programmering og robotikk, og svakest i ex.phil. og oppgave, der flere av programmene mangler tall. NMBU har dessuten to spesialiseringer (Robotdesign og Robotprogrammering og maskinlæring), så ikke alle NMBU-emnene tas av hele kullet.",
+  "emnetyper": [
+    {
+      "id": "matematikk-1",
+      "label": "Matematikk 1 (kalkulus)",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Første matematikkemne: grenser, derivasjon, integrasjon, rekker og enkle differensiallikninger.",
+      "note": "NTNU byttet kode fra TMA4101 til TMA4400 fra kull 2025; begge er med for å få hele tidsserien.",
+      "koblinger": [
+        { "entryId": "nmbu_robotikk", "emnekoder": ["MATH121-1"], "merknad": "Kalkulus, 10 sp." },
+        { "entryId": "ntnu_kybernetikk_robotikk", "emnekoder": ["TMA4101-1", "TMA4400-1"], "merknad": "TMA4400 «Matematikk 1: Kalkulus og lineær algebra» erstattet TMA4101 fra kull 2025." },
+        { "entryId": "uia_ing_mekatronikk", "emnekoder": ["MA-178-G"] },
+        { "entryId": "oslomet_ing_elektro_robotikk", "emnekoder": ["MEK1000-1"] },
+        { "entryId": "uio_informatikk_robotikk", "emnekoder": ["MAT1100-1"], "merknad": "Kalkulus ved Matematisk institutt." },
+        { "entryId": "ntnu_alesund_mekatronikk", "emnekoder": ["IMAA1002-1"] }
+      ]
+    },
+    {
+      "id": "matematikk-2-3",
+      "label": "Matematikk 2 og 3",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Videregående matematikk: lineær algebra, flervariabel kalkulus, vektoranalyse, differensiallikninger og transformer.",
+      "note": "NTNU har fire matematikkemner (Matematikk 2–4), mens de treårige ingeniørutdanningene stopper på to-tre. NMBU bruker både de gamle kodene (MATH112/MATH113) og de nye (MATH122/MATH123) i perioden, i tillegg til MATH280 Anvendt lineær algebra, som er spesielt rettet mot robotikk.",
+      "koblinger": [
+        { "entryId": "nmbu_robotikk", "emnekoder": ["MATH112-1", "MATH113-1", "MATH122-1", "MATH123-1", "MATH280-1"], "merknad": "MATH122/MATH123 erstatter MATH112/MATH113; MATH280 Anvendt lineær algebra kommer i tillegg." },
+        { "entryId": "ntnu_kybernetikk_robotikk", "emnekoder": ["TMA4106-1", "TMA4111-1", "TMA4121-1", "TMA4120-1"], "merknad": "Matematikk 2, 3 og 4; TMA4120 Matematikk 4K er en eldre kodevariant." },
+        { "entryId": "uia_ing_mekatronikk", "emnekoder": ["MA-179-G", "MA-222-G", "MA-307-G"], "merknad": "Matematikk 2, 3 og 4." },
+        { "entryId": "oslomet_ing_elektro_robotikk", "emnekoder": ["MEK2000-1", "DAVE3700-1", "DAVE3705-1"], "merknad": "Matematikk 2000 er obligatorisk; Matematikk 3000 og 4000 er valgbare påbygg." },
+        { "entryId": "uio_informatikk_robotikk", "emnekoder": ["MAT1110-1", "MAT1120-1"], "merknad": "Kalkulus og lineær algebra, samt Lineær algebra." },
+        { "entryId": "ntnu_alesund_mekatronikk", "emnekoder": ["IMAA2022-1"], "merknad": "Matematikk for ingeniørfag 2 B; Ålesund har ikke et tredje matematikkemne med rapporterte kandidattall." }
+      ]
+    },
+    {
+      "id": "statistikk",
+      "label": "Statistikk",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Sannsynlighetsregning, stokastiske variabler, estimering og hypotesetesting.",
+      "note": "OsloMets emne kombinerer statistikk med risikoanalyse og er dermed noe bredere enn de øvrige. NMBUs STAT100 er valgbart mot DAT110 på dette programmet, slik at bare en del av kullet tar det.",
+      "koblinger": [
+        { "entryId": "nmbu_robotikk", "emnekoder": ["STAT100-1"], "merknad": "Studenten velger mellom STAT100 Statistikk og DAT110 Innføring i dataanalyse; DAT110 har for få kandidater fra dette programmet." },
+        { "entryId": "ntnu_kybernetikk_robotikk", "emnekoder": ["TMA4245-1"] },
+        { "entryId": "uia_ing_mekatronikk", "emnekoder": ["MA-223-G"] },
+        { "entryId": "oslomet_ing_elektro_robotikk", "emnekoder": ["MEK2200-1"], "merknad": "Statistikk og risikoanalyse." },
+        { "entryId": "uio_informatikk_robotikk", "emnekoder": ["STK1000-1"], "merknad": "Innføring i anvendt statistikk; valgfritt emne i programmet." },
+        { "entryId": "ntnu_alesund_mekatronikk", "emnekoder": ["ISTA1002-1"] }
+      ]
+    },
+    {
+      "id": "fysikk",
+      "label": "Fysikk og mekanikk",
+      "kategori": "Realfag",
+      "desc": "Klassisk mekanikk, termofysikk og elektromagnetisme som grunnlag for modellering av fysiske systemer.",
+      "note": "NMBU har to fysikkemner og i tillegg statikk (FYS110), som ikke har noe motstykke hos de øvrige robotikkprogrammene og derfor er utelatt. UiOs fysikkemne er valgfritt og tas bare av en del av kullet.",
+      "koblinger": [
+        { "entryId": "nmbu_robotikk", "emnekoder": ["FYS101-1", "FYS102-1"], "merknad": "Mekanikk og Termofysikk og elektromagnetisme." },
+        { "entryId": "ntnu_kybernetikk_robotikk", "emnekoder": ["TFY4115-1"] },
+        { "entryId": "uia_ing_mekatronikk", "emnekoder": ["FYS128-G", "MAS100-G"], "merknad": "Fysikk og Mekanikk; mekatronikkløpet har vesentlig mer mekanikk enn de øvrige." },
+        { "entryId": "oslomet_ing_elektro_robotikk", "emnekoder": ["MEK1400-1"] },
+        { "entryId": "uio_informatikk_robotikk", "emnekoder": ["FYS1100-1"], "merknad": "Mekanikk og modellering; valgfritt emne." },
+        { "entryId": "ntnu_alesund_mekatronikk", "emnekoder": ["IFYA1002-1", "MEKA1101-1"], "merknad": "Fysikk og Mekanikk 1." }
+      ]
+    },
+    {
+      "id": "programmering-grunnkurs",
+      "label": "Programmering, grunnkurs",
+      "kategori": "Programmering",
+      "desc": "Første programmeringsemne: kontrollstrukturer, funksjoner, datastrukturer og enkle numeriske beregninger.",
+      "note": "UiA har det minste grunnkurset (5 sp) og NMBU, OsloMet og UiO de største (10 sp).",
+      "koblinger": [
+        { "entryId": "nmbu_robotikk", "emnekoder": ["INF120-1"], "merknad": "Programmering og databehandling (Python)." },
+        { "entryId": "ntnu_kybernetikk_robotikk", "emnekoder": ["TDT4110-1"] },
+        { "entryId": "uia_ing_mekatronikk", "emnekoder": ["ING100-G", "IKT101-G"], "merknad": "Programmering og IKT-sikkerhet, og Grunnleggende softwareutvikling." },
+        { "entryId": "oslomet_ing_elektro_robotikk", "emnekoder": ["MEK1300-1"], "merknad": "Programmering 1 (Python)." },
+        { "entryId": "uio_informatikk_robotikk", "emnekoder": ["IN1000-1", "IN1010-1"], "merknad": "Introduksjon til og videregående objektorientert programmering." },
+        { "entryId": "ntnu_alesund_mekatronikk", "emnekoder": ["INGA1002-1"], "merknad": "Programmering, numerikk og sikkerhet." }
+      ]
+    },
+    {
+      "id": "algoritmer-videregaende-programmering",
+      "label": "Algoritmer og videregående programmering",
+      "kategori": "Programmering",
+      "desc": "Datastrukturer, algoritmeanalyse, ressurseffektiv og sanntidsnær programmering ut over grunnkurset.",
+      "note": "UiA og NTNU Ålesund har ingen videregående programmerings- eller algoritmeemner i mekatronikkløpene sine, og er derfor ikke koblet.",
+      "koblinger": [
+        { "entryId": "nmbu_robotikk", "emnekoder": ["INF201-1", "INF205-2", "INF221-1"], "merknad": "Videregående programmering, Ressurseffektiv programmering og Informatikk for datavitere." },
+        { "entryId": "ntnu_kybernetikk_robotikk", "emnekoder": ["TDT4102-1", "TDT4120-1", "TTK4145-1"], "merknad": "Prosedyre- og objektorientert programmering, Algoritmer og datastrukturer, og Sanntidsprogrammering." },
+        { "entryId": "oslomet_ing_elektro_robotikk", "emnekoder": ["MEK3100-1", "MEK3300-1"], "merknad": "Avansert Python-programmering og Maskinnær programmering." },
+        { "entryId": "uio_informatikk_robotikk", "emnekoder": ["IN2010-1"], "merknad": "Algoritmer og datastrukturer." }
+      ]
+    },
+    {
+      "id": "elektronikk-kretsteknikk",
+      "label": "Elektronikk og kretsteknikk",
+      "kategori": "Fagspesifikt",
+      "desc": "Analoge kretser, komponentlære, elektroteknikk og elektriske maskiner.",
+      "note": "UiO har ingen kretsteknikk i informatikkbacheloren, og NTNU Ålesund dekker elektronikk inne i mekatronikkemnene sine framfor i et eget kretsemne; begge er derfor utelatt.",
+      "koblinger": [
+        { "entryId": "nmbu_robotikk", "emnekoder": ["FYS230-1", "FYS235-1"], "merknad": "Elektroteknikk og Elektronikk." },
+        { "entryId": "ntnu_kybernetikk_robotikk", "emnekoder": ["TTT4203-1", "TTK4240-1"], "merknad": "Innføring i analog og digital elektronikk, og Industriell elektroteknikk." },
+        { "entryId": "uia_ing_mekatronikk", "emnekoder": ["MAS134-G2"], "merknad": "Elektriske kretser og digitalteknikk; ett emne dekker både kretsteknikk og digitalteknikk hos UiA." },
+        { "entryId": "oslomet_ing_elektro_robotikk", "emnekoder": ["ELPE1300-1", "ELI1100-1", "ELI2700-1"], "merknad": "Elektriske kretser samt to kodeversjoner av Elektronikk." }
+      ]
+    },
+    {
+      "id": "digitalteknikk-innebygde-systemer",
+      "label": "Digitalteknikk og innebygde systemer",
+      "kategori": "Fagspesifikt",
+      "desc": "Logiske kretser, datamaskinarkitektur, mikrokontrollere og konstruksjon av innebygde systemer.",
+      "note": "UiA dekker digitalteknikkdelen i MAS134, som er koblet til elektronikk og kretsteknikk; bare emnet i innebygde datasystemer er koblet her.",
+      "koblinger": [
+        { "entryId": "nmbu_robotikk", "emnekoder": ["TEL100-1", "TEL320-1"], "merknad": "Elektronisk prototyping og Innebygde systemer." },
+        { "entryId": "ntnu_kybernetikk_robotikk", "emnekoder": ["TDT4160-1", "TTK4235-1", "TTK4155-1"], "merknad": "Datamaskiner, Tilpassede datasystemer og Industrielle og innbygde datasystemers konstruksjon." },
+        { "entryId": "uia_ing_mekatronikk", "emnekoder": ["MAS245-G"], "merknad": "Innebygde datasystemer for mekatronikk." },
+        { "entryId": "oslomet_ing_elektro_robotikk", "emnekoder": ["ELPE1400-1", "ELFT2500-1"], "merknad": "Digitalteknikk og Innebygde systemer og instrumentering." },
+        { "entryId": "uio_informatikk_robotikk", "emnekoder": ["IN2060-1", "IN3160-1"], "merknad": "Digitalteknikk og datamaskinarkitektur, og Digital systemkonstruksjon (maskinvarebeskrivende språk)." },
+        { "entryId": "ntnu_alesund_mekatronikk", "emnekoder": ["MEPA1002-1"], "merknad": "Mekatronikk 2 – Mikrokontrollere og sensorer; dekker både mikrokontrollere og sensorer." }
+      ]
+    },
+    {
+      "id": "reguleringsteknikk",
+      "label": "Reguleringsteknikk og kybernetikk",
+      "kategori": "Fagspesifikt",
+      "desc": "Modellering av dynamiske systemer, tilbakekoblet regulering, stabilitet, tilstandsrom og optimalisering av reguleringssløyfer.",
+      "note": "UiO har ingen reguleringsteknikk i informatikkbacheloren og er ikke koblet. NTNU har klart størst omfang (fem emner fra grunnkurs til ulineære systemer), NMBU bare ett samlet emne på 10 sp.",
+      "koblinger": [
+        { "entryId": "nmbu_robotikk", "emnekoder": ["TEL240-1"], "merknad": "Reguleringsteknikk og automasjon, 10 sp." },
+        { "entryId": "ntnu_kybernetikk_robotikk", "emnekoder": ["TTK4111-1", "TTK4105-1", "TTK4115-1", "TTK4135-1", "TTK4150-1"], "merknad": "TTK4111 erstattet TTK4105 som grunnkurs fra kull 2025; deretter Lineær systemteori, Optimalisering og regulering, og Ulineære systemer." },
+        { "entryId": "uia_ing_mekatronikk", "emnekoder": ["MAS239-G", "MAS246-G"], "merknad": "Reguleringsteknikk 1 og Servoteknikk." },
+        { "entryId": "oslomet_ing_elektro_robotikk", "emnekoder": ["ELI2300-1", "ELFT2400-1"], "merknad": "Dynamiske systemer og Kybernetikk." },
+        { "entryId": "ntnu_alesund_mekatronikk", "emnekoder": ["MEPA2001-1", "MEPA2202-1"], "merknad": "Mekatronikk 3 – Anvendt kontroll, og Dynamiske systemer." }
+      ]
+    },
+    {
+      "id": "robotikk-mekatronikk",
+      "label": "Robotikk, kinematikk og mekatroniske systemer",
+      "kategori": "Fagspesifikt",
+      "desc": "Robotkinematikk og -dynamikk, robotprogrammering, navigasjon og integrasjon av mekaniske, elektriske og programvarebaserte delsystemer.",
+      "note": "Dette er kjerneemnetypen for gruppa, og den eneste der alle seks programmene har et reelt motstykke. NMBU har klart størst omfang (fire emner på til sammen 40 sp), mens de treårige utdanningene har ett til to emner.",
+      "koblinger": [
+        { "entryId": "nmbu_robotikk", "emnekoder": ["TEL200-1", "TEL211-1", "TEL280-1", "TEL310-1"], "merknad": "Introduksjon til robotikk, Robotprogrammering, Mobile roboter og navigasjon, og Probabilistisk robotikk." },
+        { "entryId": "ntnu_kybernetikk_robotikk", "emnekoder": ["TTK4190-1", "TTK4195-1", "TTK4192-1"], "merknad": "Navigasjon, veiledning og styring; Modellering og regulering av roboter; Oppdragsplanlegging for autonome systemer." },
+        { "entryId": "uia_ing_mekatronikk", "emnekoder": ["MAS248-G", "MAS200-G2"], "merknad": "Robotteknologi og Mekatronikk." },
+        { "entryId": "oslomet_ing_elektro_robotikk", "emnekoder": ["ELVE3610-1"], "merknad": "Introduksjon til robotikk." },
+        { "entryId": "uio_informatikk_robotikk", "emnekoder": ["IN3140-1", "IN1080-1"], "merknad": "Introduksjon til robotikk og Mekatronikk." },
+        { "entryId": "ntnu_alesund_mekatronikk", "emnekoder": ["MEPA1001-1", "MEPA2002-1"], "merknad": "Mekatronikk 1 – Introduksjon og Mekatronikk 4 – Systemintegrasjon og design; bredere mekatronikk enn ren robotikk." }
+      ]
+    },
+    {
+      "id": "sensorer-instrumentering",
+      "label": "Sensorer, instrumentering og måleteknikk",
+      "kategori": "Fagspesifikt",
+      "desc": "Sensorprinsipper, målekjeder, kalibrering, usikkerhet og behandling av måledata.",
+      "note": "UiO og NTNU Ålesund har ikke egne instrumenteringsemner; Ålesund dekker sensorer inne i Mekatronikk 2, som er koblet til digitalteknikk og innebygde systemer. OsloMets sensoremne er nytt og har akkurat ti kandidater i 2025.",
+      "koblinger": [
+        { "entryId": "nmbu_robotikk", "emnekoder": ["FYS103-1"], "merknad": "Måleteknikk og dataanalyse, 5 sp – klart mindre enn NTNUs 7,5 sp-emner." },
+        { "entryId": "ntnu_kybernetikk_robotikk", "emnekoder": ["TTK4101-1", "TTK4250-1"], "merknad": "Instrumentering og måleteknikk, og Sensorfusjon." },
+        { "entryId": "uia_ing_mekatronikk", "emnekoder": ["MAS240-G"], "merknad": "Prosjektfag: måle- og reguleringsteknikk." },
+        { "entryId": "oslomet_ing_elektro_robotikk", "emnekoder": ["ELI2400-1"], "merknad": "Sensorer og målesystemer." }
+      ]
+    },
+    {
+      "id": "maskinlaering-ki",
+      "label": "Maskinlæring, KI og bildeanalyse",
+      "kategori": "Programmering",
+      "desc": "Maskinlæringsmetoder, dyp læring, kunstig intelligens og analyse av bilder og sensordata.",
+      "note": "UiA har ingen maskinlærings- eller KI-emner i mekatronikkløpet og er ikke koblet. Hos NMBU er DAT200/DAT300/INF250 spesialiseringsemner på retningen Robotprogrammering og maskinlæring, ikke felles for hele kullet.",
+      "koblinger": [
+        { "entryId": "nmbu_robotikk", "emnekoder": ["DAT200-1", "DAT300-1", "INF250-1"], "merknad": "Anvendt maskinlæring, Anvendt dyplæring og Bildeanalyse." },
+        { "entryId": "ntnu_kybernetikk_robotikk", "emnekoder": ["TDT4172-1", "TTK4260-1", "TTK4255-1"], "merknad": "Introduksjon til maskinlæring, Multivariat dataanalyse og maskinlæring, og Robotsyn." },
+        { "entryId": "oslomet_ing_elektro_robotikk", "emnekoder": ["DAVE3625-1"], "merknad": "Introduksjon til kunstig intelligens; valgfritt emne." },
+        { "entryId": "uio_informatikk_robotikk", "emnekoder": ["IN3050-1"], "merknad": "Introduksjon til kunstig intelligens og maskinlæring." },
+        { "entryId": "ntnu_alesund_mekatronikk", "emnekoder": ["MEPA2315-1"], "merknad": "Introduksjon til kunstig intelligens." }
+      ]
+    },
+    {
+      "id": "exphil",
+      "label": "Examen philosophicum",
+      "kategori": "Ex.phil.",
+      "desc": "Filosofi- og vitenskapsteoriemnet som inngår i graden.",
+      "note": "UiA og OsloMet har ikke ex.phil. i ingeniørutdanningene sine. NMBUs kandidattall er splittet på to versjoner og er svært lave (til sammen under ti i 2024/2025), så NMBU-snittet er usikkert og bør leses med forbehold.",
+      "koblinger": [
+        { "entryId": "nmbu_robotikk", "emnekoder": ["PHI100-1", "PHI101-1"], "merknad": "Ordinær versjon og seminarversjon; begge har svært få kandidater fra dette programmet." },
+        { "entryId": "ntnu_kybernetikk_robotikk", "emnekoder": ["EXPH0300-1"], "merknad": "Ex.phil. for naturvitenskap og teknologi." },
+        { "entryId": "uio_informatikk_robotikk", "emnekoder": ["EXPHIL03-1"] },
+        { "entryId": "ntnu_alesund_mekatronikk", "emnekoder": ["EXPH0600-1"], "merknad": "Ex.phil. for ingeniørfag." }
+      ]
+    },
+    {
+      "id": "oppgave",
+      "label": "Bachelor- og masteroppgave",
+      "kategori": "Oppgave",
+      "desc": "Det selvstendige avsluttende arbeidet i graden.",
+      "note": "Verken UiOs informatikkbachelor eller NTNU Ålesunds mekatronikk har en avsluttende oppgave med rapporterte karakterer i 2024/2025 (UiO har ingen obligatorisk bacheloroppgave i dette programmet, og Ålesunds MEPA2910 er ikke rapportert med kandidattall). Masteroppgavene på 30 sp er ikke direkte sammenlignbare med bacheloroppgavene på 20–30 sp.",
+      "koblinger": [
+        { "entryId": "nmbu_robotikk", "emnekoder": ["M30-RB-1"], "merknad": "Masteroppgave, 30 sp." },
+        { "entryId": "ntnu_kybernetikk_robotikk", "emnekoder": ["TTK4900-1", "TTK4550-1"], "merknad": "Masteroppgave (30 sp) og fordypningsprosjektet (15 sp) som leder opp til den." },
+        { "entryId": "uia_ing_mekatronikk", "emnekoder": ["MAS306-G", "MAS309-1"], "merknad": "Bacheloroppgaven ble utvidet fra 20 til 30 sp; begge kodene er med for å få hele tidsserien." },
+        { "entryId": "oslomet_ing_elektro_robotikk", "emnekoder": ["ELTS3900-1"], "merknad": "Bacheloroppgave, 20 sp." }
+      ]
+    }
+  ]
+}

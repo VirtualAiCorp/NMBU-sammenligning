@@ -1,0 +1,203 @@
+{
+  "groupId": "miljofysikk",
+  "hentet": "2026-09-22",
+  "note": "Alle sju programmene er femårige løp, men de har ulik profil. NMBUs miljøfysikk og fornybar energi, NTNUs «Energi og miljø», UiBs «Energi» og UiTs «Fornybar energi» er energirettede løp; NTNUs «Fysikk og matematikk» og UiTs «Anvendte fysikk og matematikk» er brede fysikk- og matematikkløp med mye mer teoretisk fysikk; UiOs «Fornybar energi og nanoteknologi» er en treårig realfagsbachelor med tyngde i materialkjemi. Sammenligningen er sterkest i matematikk, programmering, mekanikk, elektromagnetisme og termodynamikk, og svakest i kvantefysikk (NTNUs energi- og miljøprogram og UiB har ikke kvantefysikk) og i måleteknikk. Merk at NMBUs energifysikkemner ligger på 200- og 300-nivå i et masterløp, mens UiOs emner er bacheloremner. NTNUs «Energi og miljø» er det samme programmet som er kalt ntnu_energi_miljo_vann i gruppa for vann- og miljøteknikk, og UiOs «Fornybar energi og nanoteknologi» er det samme programmet som uio_fornybar_nano_b i gruppa for energi- og miljøfysikk. UiTs «Fornybar energi» er svært tynt rapportert i DBH: bare to emner har minst ti kandidater i 2024/2025, så programmet er bare med i to emnetyper. UiTs «Anvendt fysikk og matematikk» er også tynt rapportert og mangler i de fleste fysikkemnetypene.",
+  "emnetyper": [
+    {
+      "id": "matematikk-1",
+      "label": "Matematikk 1 (kalkulus)",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Første kalkulusemne: grenser, derivasjon, integrasjon og rekker i én variabel.",
+      "note": "UiTs fornybar energi har bare fire kandidater på MAT-1050 i perioden og er derfor ikke koblet her.",
+      "koblinger": [
+        { "entryId": "nmbu_miljofysikk", "emnekoder": ["MATH121-1", "MATH111-1"], "merknad": "MATH121 Kalkulus er dagens emne; MATH111 Kalkulus 1 er kodeversjonen fra den gamle matematikkplanen." },
+        { "entryId": "ntnu_energi_miljo", "emnekoder": ["TMA4100-1", "TMA4400-1"], "merknad": "TMA4400 Matematikk 1: Kalkulus og lineær algebra erstattet TMA4100 Matematikk 1 i den nye emnestrukturen." },
+        { "entryId": "uib_energi", "emnekoder": ["MAT111-0"], "merknad": "Grunnkurs i matematikk I." },
+        { "entryId": "uit_anvendt_fysmat", "emnekoder": ["MAT-1001-1"], "merknad": "Kalkulus 1." },
+        { "entryId": "ntnu_fysmat", "emnekoder": ["TMA4100-1", "TMA4401-1"], "merknad": "TMA4401 Matematikk 1D: Kalkulus er den nye kodeversjonen." },
+        { "entryId": "uio_fornybar_nano", "emnekoder": ["MAT1100-1"], "merknad": "Kalkulus." }
+      ]
+    },
+    {
+      "id": "matematikk-2",
+      "label": "Matematikk 2 og 3 (flervariabel og differensiallikninger)",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Flervariabel kalkulus, rekker, differensiallikninger og transformasjonsmetoder.",
+      "note": "NTNU-løpene har klart mest videregående matematikk (to til tre emner à 7,5 sp). UiTs fornybar energi har bare et kort ingeniørmatematikkemne på 5 sp.",
+      "koblinger": [
+        { "entryId": "nmbu_miljofysikk", "emnekoder": ["MATH122-1", "MATH112-1"], "merknad": "MATH122 Kalkulus og lineær algebra er dagens emne; MATH112 Kalkulus 2 er kodeversjonen fra den gamle planen." },
+        { "entryId": "ntnu_energi_miljo", "emnekoder": ["TMA4105-1", "TMA4130-1"], "merknad": "Matematikk 2 og Matematikk 4N." },
+        { "entryId": "uib_energi", "emnekoder": ["MAT112-0", "MAT131-0", "MAT212-0"], "merknad": "Grunnkurs i matematikk II, Differensiallikninger og Funksjoner av flere variable; de to siste er studieretningsemner." },
+        { "entryId": "uit_fornybar_energi", "emnekoder": ["TEK-2800-1"], "merknad": "Matematikk 3 for ingeniører, 5 sp; vesentlig mindre omfang enn de andre." },
+        { "entryId": "uit_anvendt_fysmat", "emnekoder": ["MAT-1002-1"], "merknad": "Kalkulus 2." },
+        { "entryId": "ntnu_fysmat", "emnekoder": ["TMA4105-1", "TMA4120-1"], "merknad": "Matematikk 2 og Matematikk 4K." },
+        { "entryId": "uio_fornybar_nano", "emnekoder": ["MAT1110-1"], "merknad": "Kalkulus og lineær algebra." }
+      ]
+    },
+    {
+      "id": "lineaer-algebra",
+      "label": "Lineær algebra og vektoranalyse",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Matriser, vektorrom, egenverdier og vektoranalyse.",
+      "note": "UiT-programmene har ikke rapportert nok kandidater på lineær algebra-emnene sine i 2024/2025 og er ikke koblet. NMBU har mest omfang med tre emner, inkludert MATH280 Anvendt lineær algebra på masternivå.",
+      "koblinger": [
+        { "entryId": "nmbu_miljofysikk", "emnekoder": ["MATH123-1", "MATH113-1", "MATH280-1"], "merknad": "MATH123 Lineær algebra og vektoranalyse (MATH113 er den gamle kodeversjonen) og MATH280 Anvendt lineær algebra." },
+        { "entryId": "ntnu_energi_miljo", "emnekoder": ["TMA4115-1"], "merknad": "Matematikk 3." },
+        { "entryId": "uib_energi", "emnekoder": ["MAT121-0"] },
+        { "entryId": "ntnu_fysmat", "emnekoder": ["TMA4115-1", "TMA4413-1", "TMA4145-1"], "merknad": "Matematikk 3, Matematikk 2D og Lineære metoder." },
+        { "entryId": "uio_fornybar_nano", "emnekoder": ["MAT1120-1"] }
+      ]
+    },
+    {
+      "id": "statistikk",
+      "label": "Statistikk",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Sannsynlighetsregning, statistisk inferens og regresjon.",
+      "note": "UiOs bachelor i fornybar energi og nanoteknologi har ikke obligatorisk statistikk, og UiTs fornybar energi har for få kandidater på TEK-1501.",
+      "koblinger": [
+        { "entryId": "nmbu_miljofysikk", "emnekoder": ["STAT100-1"] },
+        { "entryId": "ntnu_energi_miljo", "emnekoder": ["TMA4240-1", "TMA4245-1"], "merknad": "To parallelle statistikkemner." },
+        { "entryId": "uib_energi", "emnekoder": ["STAT110-0", "STAT111-0"], "merknad": "Grunnkurs i statistikk og Statistiske metoder." },
+        { "entryId": "uit_anvendt_fysmat", "emnekoder": ["STA-1001-1"], "merknad": "Statistikk og sannsynlighet." },
+        { "entryId": "ntnu_fysmat", "emnekoder": ["TMA4240-1"] }
+      ]
+    },
+    {
+      "id": "programmering",
+      "label": "Programmering (innføring)",
+      "kategori": "Programmering",
+      "desc": "Første programmeringsemne, som regel i Python, med vekt på beregninger og databehandling.",
+      "note": "NTNUs TDT4110 er fellesemnet for alle realfags- og teknologistudenter og har langt flere kandidater enn programmets egne studenter. UiTs fornybar energi har for få kandidater på INF-0101.",
+      "koblinger": [
+        { "entryId": "nmbu_miljofysikk", "emnekoder": ["INF120-1"] },
+        { "entryId": "ntnu_energi_miljo", "emnekoder": ["TDT4110-1"], "merknad": "Informasjonsteknologi, grunnkurs." },
+        { "entryId": "uib_energi", "emnekoder": ["INF100-0"], "merknad": "Innføring i programmering." },
+        { "entryId": "uit_anvendt_fysmat", "emnekoder": ["INF-0101-1"] },
+        { "entryId": "ntnu_fysmat", "emnekoder": ["TDT4110-1"] },
+        { "entryId": "uio_fornybar_nano", "emnekoder": ["IN1900-1"], "merknad": "Introduksjon i programmering for naturvitenskapelige anvendelser." }
+      ]
+    },
+    {
+      "id": "videregaaende-programmering-og-numerikk",
+      "label": "Videregående programmering og numeriske metoder",
+      "kategori": "Programmering",
+      "desc": "Objektorientert eller videregående programmering og numeriske metoder for fysikk- og energiberegninger.",
+      "note": "UiO og UiT har ikke rapportert egne emner på dette nivået. UiBs kobling er svakere enn de andre: GEOF211 er et numerisk modelleringsemne i geofysikk, ikke et generelt programmeringsemne.",
+      "koblinger": [
+        { "entryId": "nmbu_miljofysikk", "emnekoder": ["INF201-1", "INF203-1"], "merknad": "Videregående programmering og prosjektoppgaven i juniblokk." },
+        { "entryId": "ntnu_energi_miljo", "emnekoder": ["TDT4102-1", "TDT4114-1"], "merknad": "Prosedyre- og objektorientert programmering og Anvendt programmering." },
+        { "entryId": "uib_energi", "emnekoder": ["GEOF211-0"], "merknad": "Numerisk modellering; studieretningsemne, ikke et generelt programmeringsemne." },
+        { "entryId": "ntnu_fysmat", "emnekoder": ["TDT4102-1", "TMA4320-1"], "merknad": "Prosedyre- og objektorientert programmering og Introduksjon til vitenskapelige beregninger." }
+      ]
+    },
+    {
+      "id": "exphil",
+      "label": "Examen philosophicum",
+      "kategori": "Ex.phil",
+      "desc": "Fellesemnet i vitenskapsfilosofi og etikk.",
+      "note": "UiTs to programmer har for få rapporterte kandidater på FIL-0700 i 2024/2025 og er ikke koblet.",
+      "koblinger": [
+        { "entryId": "nmbu_miljofysikk", "emnekoder": ["PHI100-1", "PHI101-1", "PHI102-1"], "merknad": "Tre kodeversjoner av samme fellesemne: hovedversjon, seminarversjon og engelsk versjon." },
+        { "entryId": "ntnu_energi_miljo", "emnekoder": ["EXPH0300-1"], "merknad": "Examen philosophicum for naturvitenskap og teknologi." },
+        { "entryId": "uib_energi", "emnekoder": ["EXPHIL-MNSEM-0"], "merknad": "Seminarmodellen for realfagsstudenter." },
+        { "entryId": "ntnu_fysmat", "emnekoder": ["EXPH0300-1"] },
+        { "entryId": "uio_fornybar_nano", "emnekoder": ["EXPHIL03-1"] }
+      ]
+    },
+    {
+      "id": "mekanikk",
+      "label": "Mekanikk",
+      "kategori": "Fysikk",
+      "desc": "Newtonsk mekanikk: kinematikk, dynamikk, bevaringslover, statikk og stive legemer.",
+      "note": "NTNUs energi- og miljøprogram har bare ett bredt fysikkemne (TFY4107) som også dekker andre deler av grunnfysikken. NTNUs fysikk og matematikk har klart mest mekanikk med både innføringsemne og klassisk mekanikk på høyere nivå.",
+      "koblinger": [
+        { "entryId": "nmbu_miljofysikk", "emnekoder": ["FYS101-1", "FYS110-1"], "merknad": "Mekanikk og Statikk." },
+        { "entryId": "ntnu_energi_miljo", "emnekoder": ["TFY4107-1"], "merknad": "Fysikk; bredt grunnkurs der mekanikken er én del." },
+        { "entryId": "uib_energi", "emnekoder": ["PHYS111-0"], "merknad": "Mekanikk 1." },
+        { "entryId": "ntnu_fysmat", "emnekoder": ["FY1001-1", "TFY4345-1"], "merknad": "Mekanisk fysikk og Klassisk mekanikk." },
+        { "entryId": "uio_fornybar_nano", "emnekoder": ["FYS1100-1"], "merknad": "Mekanikk og modellering." }
+      ]
+    },
+    {
+      "id": "elektromagnetisme",
+      "label": "Elektromagnetisme og elektroteknikk",
+      "kategori": "Fysikk",
+      "desc": "Elektriske og magnetiske felt, Maxwells likninger, kretsanalyse og elektrisk energioverføring.",
+      "note": "NMBU og NTNUs energi- og miljøprogram har både et feltteoretisk og et kretsteknisk emne, mens UiB og UiO bare har ett feltteoretisk emne. UiT-programmene er ikke koblet på grunn av for få rapporterte kandidater.",
+      "koblinger": [
+        { "entryId": "nmbu_miljofysikk", "emnekoder": ["FYS236-1", "FYS230-1"], "merknad": "Elektrodynamikk og Elektroteknikk." },
+        { "entryId": "ntnu_energi_miljo", "emnekoder": ["TFE4120-1", "TET4100-1"], "merknad": "Elektromagnetisme og Kretsanalyse." },
+        { "entryId": "uib_energi", "emnekoder": ["PHYS112-0"], "merknad": "Elektromagnetisme I." },
+        { "entryId": "ntnu_fysmat", "emnekoder": ["FY1003-1", "TFY4240-1"], "merknad": "Elektrisitet og magnetisme og Elektromagnetisk teori." },
+        { "entryId": "uio_fornybar_nano", "emnekoder": ["FYS1120-1"] }
+      ]
+    },
+    {
+      "id": "termodynamikk",
+      "label": "Termodynamikk og termisk fysikk",
+      "kategori": "Fysikk",
+      "desc": "Termodynamikkens hovedsetninger, entropi, varmeoverføring og statistisk fysikk.",
+      "note": "UiBs og UiOs koblinger er kjemiske termodynamikkemner, ikke fysikkemner, og ligger derfor litt på siden av de andre. UiTs fornybar energi har PRO-2604 Teknisk termodynamikk, men med bare ni kandidater, og er ikke koblet.",
+      "koblinger": [
+        { "entryId": "nmbu_miljofysikk", "emnekoder": ["FYS102-1", "FYS253-1", "FYS254-1", "FYS252-1"], "merknad": "FYS102 Termofysikk og elektromagnetisme, FYS253 Termisk fysikk og FYS254 Anvendt termodynamikk; FYS252 Termodynamikk og statistisk fysikk er den gamle kodeversjonen av FYS253/FYS254." },
+        { "entryId": "ntnu_energi_miljo", "emnekoder": ["TEP4120-1", "TEP4125-1"], "merknad": "Termodynamikk 1 og 2." },
+        { "entryId": "uib_energi", "emnekoder": ["KJEM210-0"], "merknad": "Kjemisk termodynamikk; ikke et fysikkemne." },
+        { "entryId": "ntnu_fysmat", "emnekoder": ["TFY4165-1", "TFY4230-1"], "merknad": "Termisk fysikk og Statistisk fysikk." },
+        { "entryId": "uio_fornybar_nano", "emnekoder": ["KJM1130-1"], "merknad": "Fysikalsk kjemi I - termodynamikk og kinetikk; kjemisk, ikke fysisk termodynamikk." }
+      ]
+    },
+    {
+      "id": "kvantefysikk",
+      "label": "Kvantefysikk",
+      "kategori": "Fysikk",
+      "desc": "Kvantemekanikkens grunnbegreper: bølgefunksjoner, Schrödingerlikningen, atom- og molekylstruktur.",
+      "note": "Verken NTNUs energi- og miljøprogram, UiB eller UiTs fornybar energi har obligatorisk kvantefysikk; dette er det største hullet i sammenligningen. NTNUs fysikk og matematikk har vesentlig større omfang enn de andre.",
+      "koblinger": [
+        { "entryId": "nmbu_miljofysikk", "emnekoder": ["FYS245-1"] },
+        { "entryId": "ntnu_fysmat", "emnekoder": ["TFY4215-1", "FY2045-1"], "merknad": "Innføring i kvantefysikk og Kvantemekanikk I." },
+        { "entryId": "uio_fornybar_nano", "emnekoder": ["FYS2140-1"] }
+      ]
+    },
+    {
+      "id": "maaleteknikk-og-elektronikk",
+      "label": "Måleteknikk, elektronikk og laboratorium",
+      "kategori": "Fysikk",
+      "desc": "Eksperimentelle metoder, instrumentering, feilanalyse, analog og digital elektronikk og fysikklaboratorium.",
+      "note": "UiO og UiT har ikke obligatoriske måleteknikk- eller elektronikkemner med rapporterte kandidattall. NMBU har klart mest omfang (tre emner), NTNUs energi- og miljøprogram bare ett elektronikkemne.",
+      "koblinger": [
+        { "entryId": "nmbu_miljofysikk", "emnekoder": ["FYS103-1", "FYS155-1", "FYS235-1"], "merknad": "Måleteknikk og dataanalyse, Laboratoriekurs i fysikk og Elektronikk." },
+        { "entryId": "ntnu_energi_miljo", "emnekoder": ["TTT4203-1"], "merknad": "Innføring i analog og digital elektronikk." },
+        { "entryId": "uib_energi", "emnekoder": ["PHYS114-0"], "merknad": "Grunnleggende målevitenskap og eksperimentalfysikk." },
+        { "entryId": "ntnu_fysmat", "emnekoder": ["TFY4185-2", "TFY4190-1"], "merknad": "Måleteknikk og Instrumentering." }
+      ]
+    },
+    {
+      "id": "fornybar-energi",
+      "label": "Fornybar energi og energiteknologi",
+      "kategori": "Fagspesifikt",
+      "desc": "Energikilder, energisystemer og teknologier for fornybar energiproduksjon og -omforming.",
+      "note": "Dette er kjernen i sammenligningen mellom de energirettede løpene. NMBU har størst omfang (fem emner, blant annet solenergi, kraftelektronikk og digitale kraftsystemer). NTNUs fysikk og matematikk har bare ett energiemne, og UiOs kobling er materialrettet (nanoteknologi og funksjonelle materialer for energi) snarere enn systemrettet.",
+      "koblinger": [
+        { "entryId": "nmbu_miljofysikk", "emnekoder": ["FYS272-1", "FYS375-1", "FYS376-1", "FYS377-1", "FYS378-1"], "merknad": "Energiteknologier, Energiteknologi laboratorium, Solenergi, Digitale elektriske kraftsystemer og Kraftelektronikk for fornybar energi." },
+        { "entryId": "ntnu_energi_miljo", "emnekoder": ["TEP4225-1", "TET4105-1", "TET4190-2"], "merknad": "Energi og miljø, Elektriske kraftsystemer 1 og Kraftelektronikk." },
+        { "entryId": "uib_energi", "emnekoder": ["ENERGI101-0", "ENERGI230-0", "ENERGI360-0"], "merknad": "Introduksjon til energikilder og forbruk, Miljø og energi og Energifysikk og -teknologi." },
+        { "entryId": "uit_fornybar_energi", "emnekoder": ["KJE-2006-1"], "merknad": "Introduction to modern bioenergy; det eneste energiemnet ved UiT med minst ti rapporterte kandidater." },
+        { "entryId": "ntnu_fysmat", "emnekoder": ["TFY4300-1"], "merknad": "Energi- og miljøfysikk; valgemne." },
+        { "entryId": "uio_fornybar_nano", "emnekoder": ["MENA1001-1", "MENA3001-1"], "merknad": "Materialer, energi og nanoteknologi og Funksjonelle materialer; materialrettet snarere enn systemrettet." }
+      ]
+    },
+    {
+      "id": "oppgave",
+      "label": "Masteroppgave",
+      "kategori": "Oppgave",
+      "desc": "Det selvstendige avsluttende arbeidet i mastergraden.",
+      "note": "Omfanget varierer: UiB har 60 sp, NMBU og NTNU 30 sp. UiOs program er en treårig bachelor uten masteroppgave, og UiT-programmene har for få rapporterte kandidater på oppgaveemnene sine.",
+      "koblinger": [
+        { "entryId": "nmbu_miljofysikk", "emnekoder": ["M30-MF-1"], "merknad": "Masteroppgave 30 sp." },
+        { "entryId": "ntnu_energi_miljo", "emnekoder": ["TET4900-1", "TEP4906-1"], "merknad": "Masteroppgave i elektrisk energiteknikk og i bærekraftige energisystemer; egen kode per studieretning." },
+        { "entryId": "uib_energi", "emnekoder": ["ENERGI399I-0"], "merknad": "Masteroppgave i energi, 60 sp." },
+        { "entryId": "ntnu_fysmat", "emnekoder": ["TFY4900-1", "TMA4900-1"], "merknad": "Masteroppgave i fysikk og i industriell matematikk." }
+      ]
+    }
+  ]
+}

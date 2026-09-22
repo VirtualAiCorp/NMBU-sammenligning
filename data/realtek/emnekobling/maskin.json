@@ -1,0 +1,215 @@
+{
+  "groupId": "maskin",
+  "hentet": "2026-09-22",
+  "note": "Gruppa består av tre ulike utdanningsfamilier. NMBUs femårige «Teknologi og produktutvikling» og NTNUs to femårige sivilingeniørløp (Maskin- og energiteknologi, og forgjengeren Produktutvikling og produksjon) er klassiske maskinfaglige siving-løp med tung realfagspakke. NTNUs industrielle design er et femårig designløp der bare matematikk, fysikk, statistikk, programmering, mekanikk og materiallæren er felles med de andre; resten av studiet er formgivings- og designemner uten motsvar hos konkurrentene. De tre treårige maskiningeniørutdanningene (NTNU Trondheim, OsloMet og USN Kongsberg) har samme fagkjerne, men på bachelornivå og med større emner (10 sp mot 7,5 sp hos NTNU-siving). Sammenligningen er sterkest i matematikk, fysikk, mekanikk/fasthetslære, materialteknologi, termo/fluid og programmering, og svakest i statistikk og ex.phil., der NMBU ikke har rapporterte kandidattall. NTNUs nedlagte «Produktutvikling og produksjon» (siste opptak 2022) har bare studenter igjen i 4.–5. år, så grunnemnene i 1.–2. år (matematikk 1, ex.phil., programmering, produktmodellering) har for få kandidater i 2024/2025 og er derfor utelatt; programmet bidrar i hovedsak med fordypnings- og masteremner. For NTNUs treårige maskiningeniør er bare Trondheims-kodene (MAST/MEKT/IMAT/INGT/IFYT/ISTT) brukt; DBH rapporterer også Gjøvik- (MASG/IMAG/…) og Ålesund-varianter (MASA/IMAA/…) under samme program, men de tilhører egne opptak og er holdt utenfor. NMBU er et lite kull (ca. 20–30 kandidater per emne) mot 100–150 hos NTNU og OsloMet, så NMBU-snittene er langt mer utsatt for tilfeldig variasjon.",
+  "emnetyper": [
+    {
+      "id": "matematikk-1",
+      "label": "Matematikk 1 (kalkulus)",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Første matematikkemne: grenser, derivasjon, integrasjon, rekker og enkle differensiallikninger.",
+      "note": "NTNUs nedlagte Produktutvikling og produksjon har ingen matematikk 1-kandidater igjen i 2024/2025 og er ikke koblet. NTNU byttet kode fra TMA4100 til TMA4400 fra kull 2025; begge er med for å få hele tidsserien.",
+      "koblinger": [
+        { "entryId": "nmbu_maskin", "emnekoder": ["MATH121-1"], "merknad": "Kalkulus, 10 sp." },
+        { "entryId": "ntnu_maskin_energi", "emnekoder": ["TMA4100-1", "TMA4400-1"], "merknad": "TMA4400 «Matematikk 1: Kalkulus og lineær algebra» erstattet TMA4100 fra kull 2025." },
+        { "entryId": "ntnu_industriell_design", "emnekoder": ["TMA4100-1", "TMA4400-1"] },
+        { "entryId": "ntnu_ing_maskin", "emnekoder": ["IMAT1002-1"], "merknad": "Matematikk for ingeniørfag 1, Trondheim." },
+        { "entryId": "oslomet_ing_maskin", "emnekoder": ["MEK1000-1"] },
+        { "entryId": "usn_ing_maskin_produktutvikling", "emnekoder": ["IB1030-1"] }
+      ]
+    },
+    {
+      "id": "matematikk-2-3",
+      "label": "Matematikk 2 og 3",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Videregående matematikk: flervariabel kalkulus, lineær algebra, vektoranalyse og differensiallikninger.",
+      "note": "NMBU bruker fortsatt de eldre kodene MATH112/MATH113 i tallmaterialet; de nye MATH122/MATH123 har foreløpig for få kandidater på dette programmet. NTNUs industrielle design stopper etter Matematikk 3 og har ikke et fjerde matematikkemne.",
+      "koblinger": [
+        { "entryId": "nmbu_maskin", "emnekoder": ["MATH112-1", "MATH113-1"], "merknad": "Kalkulus 2 og Lineær algebra og lineære differensiallikninger." },
+        { "entryId": "ntnu_maskin_energi", "emnekoder": ["TMA4105-1", "TMA4110-1"] },
+        { "entryId": "ntnu_industriell_design", "emnekoder": ["TMA4105-1", "TMA4110-1"] },
+        { "entryId": "ntnu_produktutvikling_produksjon", "emnekoder": ["TMA4105-1", "TMA4110-1"], "merknad": "Få kandidater igjen fordi programmet er under avvikling." },
+        { "entryId": "ntnu_ing_maskin", "emnekoder": ["IMAT2022-1", "IMAT2100-1"], "merknad": "Matematikk for ingeniørfag 2 B og Matematiske metoder 3." },
+        { "entryId": "oslomet_ing_maskin", "emnekoder": ["MEK2000-1", "DAVE3700-1"], "merknad": "Matematikk 2000 og Matematikk 3000; Matematikk 3000 er valgfritt for maskinstudentene." },
+        { "entryId": "usn_ing_maskin_produktutvikling", "emnekoder": ["PB2010-1", "VE3010-1"], "merknad": "Matematikk 2 er obligatorisk, Matematikk 3 er et påbyggingsemne." }
+      ]
+    },
+    {
+      "id": "fysikk",
+      "label": "Generell fysikk",
+      "kategori": "Realfag",
+      "desc": "Innføringsemne i fysikk utenom ren mekanikk: termofysikk, elektrisitetslære og elektromagnetisme.",
+      "note": "NMBUs FYS102 og USNs PB2050 er termofysikk-/elektrisitetsdelen, mens NTNU og OsloMet har ett samlet fysikkemne. NTNUs nedlagte Produktutvikling og produksjon har fortsatt kandidater på fysikkemnet.",
+      "koblinger": [
+        { "entryId": "nmbu_maskin", "emnekoder": ["FYS102-1"], "merknad": "Termofysikk og elektromagnetisme, 10 sp." },
+        { "entryId": "ntnu_maskin_energi", "emnekoder": ["TFY4104-1"] },
+        { "entryId": "ntnu_industriell_design", "emnekoder": ["TFY4125-1"], "merknad": "Egen fysikkvariant for design- og arkitekturfag." },
+        { "entryId": "ntnu_produktutvikling_produksjon", "emnekoder": ["TFY4104-1"] },
+        { "entryId": "ntnu_ing_maskin", "emnekoder": ["IFYT1000-1"] },
+        { "entryId": "oslomet_ing_maskin", "emnekoder": ["MEK1400-1"] },
+        { "entryId": "usn_ing_maskin_produktutvikling", "emnekoder": ["PB2050-1"], "merknad": "Fysikk 2 – Elektrisitetslære; USNs Fysikk 1 er mekanikk og ligger under mekanikk og fasthetslære." }
+      ]
+    },
+    {
+      "id": "mekanikk-fasthetslaere",
+      "label": "Mekanikk, statikk og fasthetslære",
+      "kategori": "Realfag",
+      "desc": "Kraft og likevekt, fagverk og rammer, spenning og tøyning, bjelkebøying og torsjon.",
+      "note": "De treårige ingeniørutdanningene slår statikk og fasthetslære sammen i ett stort emne, mens NMBU og NTNU deler stoffet på to-tre emner. NMBUs fasthetslæreemne TBM120 har under ti kandidater på dette programmet i 2024/2025 og bør leses med forbehold.",
+      "koblinger": [
+        { "entryId": "nmbu_maskin", "emnekoder": ["FYS101-1", "FYS110-1", "TBM120-1"], "merknad": "Mekanikk, Statikk og Fasthetslære og grunnleggende beregningsteknikk. TBM120 har få rapporterte kandidater fra dette programmet." },
+        { "entryId": "ntnu_maskin_energi", "emnekoder": ["TKT4116-1", "TKT4122-1"], "merknad": "Mekanikk 1 er statikk, Mekanikk 2 er fasthetslære." },
+        { "entryId": "ntnu_industriell_design", "emnekoder": ["TKT4118-1"], "merknad": "Mekanikk 1 i egen variant for designstudenter; industriell design har ingen fasthetslære utover dette." },
+        { "entryId": "ntnu_produktutvikling_produksjon", "emnekoder": ["TKT4116-1", "TKT4132-1"], "merknad": "Mekanikk 1 og Mekanikk 3; Mekanikk 2 har for få kandidater igjen på det avviklede programmet." },
+        { "entryId": "ntnu_ing_maskin", "emnekoder": ["MEKT1101-1"], "merknad": "Mekanikk 1 dekker både statikk og fasthetslære." },
+        { "entryId": "oslomet_ing_maskin", "emnekoder": ["MAPE1300-1"] },
+        { "entryId": "usn_ing_maskin_produktutvikling", "emnekoder": ["PB1010-1", "PB1260-1"], "merknad": "Fysikk 1 – Mekanikk og Statikk og fasthetslære." }
+      ]
+    },
+    {
+      "id": "elementmetoden",
+      "label": "Konstruksjonsberegning og elementmetoden",
+      "kategori": "Fagspesifikt",
+      "desc": "Numerisk dimensjonering av konstruksjoner med elementmetoden (FEM) og tilhørende simuleringsverktøy.",
+      "note": "NTNUs treårige maskiningeniør i Trondheim har ikke et obligatorisk FEM-emne med rapporterte kandidattall (emnet finnes ved Gjøvik og Ålesund, som ikke er med her), og NTNUs industrielle design har ikke elementmetode i det hele tatt.",
+      "koblinger": [
+        { "entryId": "nmbu_maskin", "emnekoder": ["TBM250-1"], "merknad": "Elementmetoden, 10 sp." },
+        { "entryId": "ntnu_maskin_energi", "emnekoder": ["TMM4135-1"], "merknad": "Dimensjonering basert på elementmetoden, grunnkurs." },
+        { "entryId": "ntnu_produktutvikling_produksjon", "emnekoder": ["TMM4135-1", "TKT4145-1"], "merknad": "Grunnkurset og Elementmetoden i ingeniørvitenskap." },
+        { "entryId": "oslomet_ing_maskin", "emnekoder": ["MASK2300-1"], "merknad": "Konstruksjonsmekanikk og elementanalyse." },
+        { "entryId": "usn_ing_maskin_produktutvikling", "emnekoder": ["VE3130-1"], "merknad": "Elementmetoden FEM; påbyggingsemne, ikke obligatorisk i produktutviklingsløpet." }
+      ]
+    },
+    {
+      "id": "materialteknologi",
+      "label": "Materialteknologi",
+      "kategori": "Fagspesifikt",
+      "desc": "Metaller, polymerer og kompositter: struktur, mekaniske egenskaper, materialvalg og bearbeiding.",
+      "note": "NTNUs industrielle design har ikke et rent materialemne; TPD4127 kombinerer materiallære med produksjonsmetoder i en designramme og er en svakere kobling. NMBUs TBM200 har lave kandidattall.",
+      "koblinger": [
+        { "entryId": "nmbu_maskin", "emnekoder": ["TBM200-1"] },
+        { "entryId": "ntnu_maskin_energi", "emnekoder": ["TMM4100-1"] },
+        { "entryId": "ntnu_produktutvikling_produksjon", "emnekoder": ["TMM4100-1"] },
+        { "entryId": "ntnu_industriell_design", "emnekoder": ["TPD4127-1"], "merknad": "Design 4 – Produksjon og materialer; dekker materialer og produksjonsmetoder samlet fra et designperspektiv." },
+        { "entryId": "ntnu_ing_maskin", "emnekoder": ["MAST2200-1"] },
+        { "entryId": "oslomet_ing_maskin", "emnekoder": ["MATS1500-1"] },
+        { "entryId": "usn_ing_maskin_produktutvikling", "emnekoder": ["TSM2370-1", "TSM2380-1"], "merknad": "To kodeversjoner av Materialteknikk (10 sp og 5 sp) i overgangen mellom kull." }
+      ]
+    },
+    {
+      "id": "termodynamikk-fluid",
+      "label": "Termodynamikk, varme og strømningslære",
+      "kategori": "Fagspesifikt",
+      "desc": "Termodynamikkens hovedsetninger, varmeoverføring, fluidstatikk og -dynamikk og strømningsberegning.",
+      "note": "NTNU deler stoffet i rene emner i termodynamikk og fluidmekanikk, mens NMBU, OsloMet og USN har kombinerte emner. NTNUs industrielle design har verken termodynamikk eller fluidmekanikk.",
+      "koblinger": [
+        { "entryId": "nmbu_maskin", "emnekoder": ["TMP261-1"], "merknad": "Varme og strømningssimulering; NMBUs øvrige energiemner (FYS251, TMPP251, TMPP350) har for få kandidater." },
+        { "entryId": "ntnu_maskin_energi", "emnekoder": ["TEP4120-1", "TEP4100-1"], "merknad": "Termodynamikk 1 og Fluidmekanikk." },
+        { "entryId": "ntnu_produktutvikling_produksjon", "emnekoder": ["TEP4120-1", "TEP4100-1"] },
+        { "entryId": "ntnu_ing_maskin", "emnekoder": ["FENT1011-1"], "merknad": "Termodynamikk; fluidmekanikk er valgfag på dette programmet." },
+        { "entryId": "oslomet_ing_maskin", "emnekoder": ["MATS2100-1", "MASK3610-1"], "merknad": "Termofluid er obligatorisk, Anvendt fluidmekanikk er spesialiseringsemne." },
+        { "entryId": "usn_ing_maskin_produktutvikling", "emnekoder": ["TSM2430-1", "TSM2360-1", "TSM2450-1"], "merknad": "Termodynamikk og Fluidmekanikk som separate 5 sp-emner, samt det sammenslåtte TSM2450 på 10 sp." }
+      ]
+    },
+    {
+      "id": "programmering",
+      "label": "Programmering og numerikk",
+      "kategori": "Programmering",
+      "desc": "Grunnleggende programmering med numeriske beregninger og databehandling for ingeniørbruk.",
+      "note": "NTNUs nedlagte Produktutvikling og produksjon har ikke lenger kandidater på grunnkurset TDT4110; de gjenværende studentene tar videregående programmerings- og numerikkemner.",
+      "koblinger": [
+        { "entryId": "nmbu_maskin", "emnekoder": ["INF120-1"], "merknad": "Programmering og databehandling (Python)." },
+        { "entryId": "ntnu_maskin_energi", "emnekoder": ["TDT4110-1"] },
+        { "entryId": "ntnu_industriell_design", "emnekoder": ["TDT4110-1", "TDT4102-1"], "merknad": "Grunnkurset er obligatorisk; TDT4102 er valgbart på produktdesignretningen." },
+        { "entryId": "ntnu_produktutvikling_produksjon", "emnekoder": ["TDT4102-1", "TKT4140-1"], "merknad": "Prosedyre- og objektorientert programmering og Numeriske beregninger." },
+        { "entryId": "ntnu_ing_maskin", "emnekoder": ["INGT1002-1"], "merknad": "Programmering, numerikk og sikkerhet." },
+        { "entryId": "oslomet_ing_maskin", "emnekoder": ["MEK1300-1", "MEK3100-1"], "merknad": "Programmering 1 (Python) og Programmering 2." },
+        { "entryId": "usn_ing_maskin_produktutvikling", "emnekoder": ["IB1020-1"], "merknad": "Programmering for beregning, 5 sp – klart mindre enn de øvriges 7,5–10 sp." }
+      ]
+    },
+    {
+      "id": "dak-3d-modellering",
+      "label": "DAK og 3D-modellering",
+      "kategori": "Fagspesifikt",
+      "desc": "Teknisk tegning, parametrisk 3D-modellering (DAK/CAD) og enkel simulering av modellerte deler og sammenstillinger.",
+      "note": "NTNUs nedlagte Produktutvikling og produksjon har ikke lenger kandidater på produktmodelleringsemnet i 1. år. NTNUs industrielle design bruker designverktøy og fysisk prototyping framfor et eget DAK-emne, og er derfor ikke koblet.",
+      "koblinger": [
+        { "entryId": "nmbu_maskin", "emnekoder": ["TMP160-1"], "merknad": "Teknisk design, 5 sp." },
+        { "entryId": "ntnu_maskin_energi", "emnekoder": ["TMM4115-1"], "merknad": "Produktmodellering." },
+        { "entryId": "ntnu_ing_maskin", "emnekoder": ["MAST1101-1", "MAST2009-1"], "merknad": "Maskinteknikk 1 er 3D-modellering og designmetodikk; MAST2009 er 3D datamodellering og simulering." },
+        { "entryId": "oslomet_ing_maskin", "emnekoder": ["MATS1600-1"], "merknad": "Mekanisk design og produksjon; dekker både mekanisk design/DAK og produksjonsmetoder, og er derfor ikke koblet til produksjonsteknikk i tillegg." },
+        { "entryId": "usn_ing_maskin_produktutvikling", "emnekoder": ["PB1250K-1", "PB1270K-1", "TSM2350-1"], "merknad": "DAK 1–3. USN har flere kodevarianter av DAK 1 (K/V/P) for ulike campus og kull; bare Kongsberg-varianten er med." }
+      ]
+    },
+    {
+      "id": "produktutvikling",
+      "label": "Produktutvikling og produktdesign",
+      "kategori": "Fagspesifikt",
+      "desc": "Systematisk produktutviklingsmetodikk: behovskartlegging, konseptutvikling, konseptvalg og produktrealisering.",
+      "note": "NTNUs treårige maskiningeniør i Trondheim har ikke et eget produktutviklingsemne (Produktdesign finnes bare ved Ålesund), og OsloMets nærmeste emne er koblet til DAK og 3D-modellering.",
+      "koblinger": [
+        { "entryId": "nmbu_maskin", "emnekoder": ["TIP200-1", "TMP320-2"], "merknad": "Produktutvikling og produktdesign med 3D, og Maskin- og produktutvikling." },
+        { "entryId": "ntnu_maskin_energi", "emnekoder": ["TMM4121-1"] },
+        { "entryId": "ntnu_produktutvikling_produksjon", "emnekoder": ["TMM4121-1", "TMM4220-2"], "merknad": "Produktutvikling og Innovasjon ved Design Thinking." },
+        { "entryId": "ntnu_industriell_design", "emnekoder": ["TPD4121-1", "TPD4122-1"], "merknad": "Design 3 – Menneskesentrert design og innovasjon; to kodeversjoner av samme emne. Designløpet er bredere og mindre ingeniørrettet enn de øvriges produktutvikling." },
+        { "entryId": "usn_ing_maskin_produktutvikling", "emnekoder": ["TSM2510-1", "TSM3180-1"], "merknad": "Produktutvikling 1 og 2." }
+      ]
+    },
+    {
+      "id": "produksjonsteknikk",
+      "label": "Produksjons- og verkstedteknikk",
+      "kategori": "Fagspesifikt",
+      "desc": "Tilvirkningsmetoder, maskinering, sammenføyning, additiv tilvirkning og verkstedpraksis.",
+      "note": "OsloMet dekker produksjonsmetoder inne i MATS1600, som er koblet til DAK og 3D-modellering, og NTNUs industrielle design dekker produksjon inne i TPD4127, som er koblet til materialteknologi. Ingen av dem er koblet her for å unngå dobbeltelling.",
+      "koblinger": [
+        { "entryId": "nmbu_maskin", "emnekoder": ["TIP150-1"], "merknad": "Moderne verkstedteknikk, innføringsemne, 5 sp – klart mindre enn konkurrentenes 7,5–10 sp." },
+        { "entryId": "ntnu_maskin_energi", "emnekoder": ["TPK4190-1"] },
+        { "entryId": "ntnu_produktutvikling_produksjon", "emnekoder": ["TPK4190-1", "TPK4100-1"], "merknad": "Produksjonsteknologi og Produksjonsledelse." },
+        { "entryId": "ntnu_ing_maskin", "emnekoder": ["MAST2008-1"], "merknad": "Produksjonsteknikk." },
+        { "entryId": "usn_ing_maskin_produktutvikling", "emnekoder": ["TSM3191-1", "TSM2460-1", "TSM3190-1"], "merknad": "Produksjonsteknologi samt to kodeversjoner av Tilvirkningsteknikk." }
+      ]
+    },
+    {
+      "id": "maskinelementer",
+      "label": "Maskinelementer og maskindynamikk",
+      "kategori": "Fagspesifikt",
+      "desc": "Dimensjonering av maskindeler – lagre, aksler, tannhjul og sammenføyninger – og dynamikken i maskiner og mekanismer.",
+      "note": "OsloMet har ikke et obligatorisk maskinelementemne i hovedløpet (stoffet ligger i spesialiseringen Konstruksjon og design), og NTNUs industrielle design har ingen tilsvarende emner. NMBUs TMP220 har få rapporterte kandidater.",
+      "koblinger": [
+        { "entryId": "nmbu_maskin", "emnekoder": ["TMP220-1", "TMP310-1"], "merknad": "Maskinelementer og effektoverføringssystemer, og Maskin- og kjøretøydynamikk. TMP220 har under ti kandidater i perioden." },
+        { "entryId": "ntnu_maskin_energi", "emnekoder": ["TMM4112-1"], "merknad": "Maskindeler." },
+        { "entryId": "ntnu_produktutvikling_produksjon", "emnekoder": ["TMM4112-1", "TKT4102-1"], "merknad": "Maskindeler og Dynamikk." },
+        { "entryId": "ntnu_ing_maskin", "emnekoder": ["MAST2001-1", "MAST2007-1"], "merknad": "Maskinkomponenter og sammenføyninger, og Dynamikk og maskindesign." },
+        { "entryId": "usn_ing_maskin_produktutvikling", "emnekoder": ["TSM2390-1"], "merknad": "Konstruksjonselementer." }
+      ]
+    },
+    {
+      "id": "exphil",
+      "label": "Examen philosophicum",
+      "kategori": "Ex.phil.",
+      "desc": "Filosofi- og vitenskapsteoriemnet som inngår i graden.",
+      "note": "De to treårige ingeniørutdanningene ved OsloMet og USN har ikke ex.phil.; OsloMet dekker etikk og samfunnsperspektiv i STKD6610 og USN i IB1010, som ikke er tilsvarende emner. NMBUs kandidattall er splittet på to versjoner og er svært lave, så snittet er usikkert. NTNUs nedlagte Produktutvikling og produksjon har ingen ex.phil.-kandidater igjen.",
+      "koblinger": [
+        { "entryId": "nmbu_maskin", "emnekoder": ["PHI100-1", "PHI101-1"], "merknad": "Ordinær versjon og seminarversjon; begge har under ti kandidater fra dette programmet i 2024/2025." },
+        { "entryId": "ntnu_maskin_energi", "emnekoder": ["EXPH0300-1"], "merknad": "Ex.phil. for naturvitenskap og teknologi." },
+        { "entryId": "ntnu_industriell_design", "emnekoder": ["EXPH0100-1"], "merknad": "Ex.phil. for humaniora og estetiske fag." },
+        { "entryId": "ntnu_ing_maskin", "emnekoder": ["EXPH0600-1"], "merknad": "Ex.phil. for ingeniørfag." }
+      ]
+    },
+    {
+      "id": "oppgave",
+      "label": "Bachelor- og masteroppgave",
+      "kategori": "Oppgave",
+      "desc": "Det selvstendige avsluttende arbeidet i graden.",
+      "note": "NTNUs Maskin- og energiteknologi er så nytt at 5. år ennå ikke er publisert i studieplanen, og ingen masteroppgavekode er rapportert med kandidater; programmet er derfor ikke koblet. Masteroppgavene på 30 sp er ikke direkte sammenlignbare med bacheloroppgavene på 20–22,5 sp.",
+      "koblinger": [
+        { "entryId": "nmbu_maskin", "emnekoder": ["M30-MPP-1"], "merknad": "Masteroppgave, 30 sp." },
+        { "entryId": "ntnu_industriell_design", "emnekoder": ["TPD4900-1"], "merknad": "Industriell design, masteroppgave." },
+        { "entryId": "ntnu_produktutvikling_produksjon", "emnekoder": ["TMM4960-1", "TEP4906-1", "TPK4920-1", "TPK4930-1", "TEP4926-1", "TPK4950-1", "TPK4960-1", "TKT4950-1"], "merknad": "NTNU har én masteroppgavekode per hovedprofil; alle profilene med rapporterte kandidattall er tatt med." },
+        { "entryId": "ntnu_ing_maskin", "emnekoder": ["MAST2900-1"], "merknad": "Bacheloroppgave Maskin, 20 sp." },
+        { "entryId": "oslomet_ing_maskin", "emnekoder": ["MATS3900-1"], "merknad": "Bacheloroppgave, 20 sp." },
+        { "entryId": "usn_ing_maskin_produktutvikling", "emnekoder": ["TS3000-1"], "merknad": "Bacheloroppgave, 20 sp; studenten kan alternativt velge Studentbedrift (TS3010)." }
+      ]
+    }
+  ]
+}

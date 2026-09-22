@@ -1,0 +1,173 @@
+{
+  "groupId": "indok",
+  "hentet": "2026-09-22",
+  "note": "Sammenligningen står og faller på NMBU mot NTNU: det er de to eneste programmene i gruppa som har både en full realfagspakke og en full økonomi- og ledelsespakke med rapporterte kandidattall i 2024/2025. NTNU er dessuten 4–7 ganger større per emne, og NTNU-studentene velger mellom flere teknologiretninger, slik at teknologiemnene deres sprer seg over mange koder med lave tall; bare fellesemnene er derfor koblet. UiBs «Informasjonsteknologi og økonomi» er et samfunnsøkonomisk-informatisk løp: det matcher godt på matematikk, statistikk, programmering, optimering, dataanalyse og bedriftsøkonomi, men har mikro- og makroøkonomi der NMBU og NTNU har ingeniørfag, og mangler prosjekt- og driftsledelse helt. UiAs industrielle økonomi er et 3+2-løp der de tre første årene er en ingeniørbachelor; DBH rapporterer bare åtte emner med kandidattall, alle fra 1. studieår og alle med null kandidater i 2025, så UiA er bare koblet i matematikk 1 og programmering. To programmer er utelatt helt: UiS' industrielle økonomi har bare ett emne i datagrunnlaget, og Nords «Økonomi og teknologiledelse» har tre – for lite til en meningsfull kobling. Merk til slutt to systematiske hull hos NMBU: programmet har verken et eget emne i mikroøkonomi/samfunnsøkonomi eller i markedsføring, der både NTNU og UiB har flere; disse emnetypene er derfor ikke opprettet.",
+  "emnetyper": [
+    {
+      "id": "matematikk-1",
+      "label": "Matematikk 1 (kalkulus)",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Første matematikkemne: grenser, derivasjon, integrasjon, rekker og enkle differensiallikninger.",
+      "note": "Dette er den eneste emnetypen, sammen med programmering, der alle fire programmene har et motstykke. NTNU byttet kode fra TMA4100 til TMA4400 fra kull 2025; begge er med for å få hele tidsserien.",
+      "koblinger": [
+        { "entryId": "nmbu_indok", "emnekoder": ["MATH121-1"], "merknad": "Kalkulus, 10 sp." },
+        { "entryId": "ntnu_indok", "emnekoder": ["TMA4100-1", "TMA4400-1"], "merknad": "TMA4400 «Matematikk 1: Kalkulus og lineær algebra» erstattet TMA4100 fra kull 2025." },
+        { "entryId": "uia_indok", "emnekoder": ["MA-178-G"], "merknad": "Matematikk 1 i UiAs ingeniørbachelor; ingen kandidater rapportert i 2025." },
+        { "entryId": "uib_it_okonomi", "emnekoder": ["MAT111-0"], "merknad": "Grunnkurs i matematikk I." }
+      ]
+    },
+    {
+      "id": "matematikk-2-3",
+      "label": "Matematikk 2 og 3",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Videregående matematikk: flervariabel kalkulus, lineær algebra, vektoranalyse, differensiallikninger og transformer.",
+      "note": "UiB har bare ett matematikkemne i programmet (MAT111, koblet til matematikk 1) og bygger videre med diskrete strukturer og økonometri i stedet; UiA har ingen matematikk ut over Matematikk 1 med rapporterte kandidattall. Emnetypen sammenligner derfor bare NMBU og NTNU.",
+      "koblinger": [
+        { "entryId": "nmbu_indok", "emnekoder": ["MATH112-1", "MATH113-1", "MATH122-1", "MATH123-1"], "merknad": "MATH122 Kalkulus og lineær algebra og MATH123 Lineær algebra og vektoranalyse erstatter MATH112/MATH113 i perioden." },
+        { "entryId": "ntnu_indok", "emnekoder": ["TMA4105-1", "TMA4110-1", "TMA4115-1", "TMA4130-1", "TMA4135-1"], "merknad": "Matematikk 2 og 3 samt Matematikk 4N/4D; hvilke koder som gjelder avhenger av valgt teknologiretning." }
+      ]
+    },
+    {
+      "id": "statistikk",
+      "label": "Statistikk",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Sannsynlighetsregning, stokastiske variabler, estimering og hypotesetesting.",
+      "note": "UiA har ingen statistikk med rapporterte kandidattall. UiBs STAT110 følges opp av to økonometriemner (ECON340/ECON341) som ikke har motstykke hos NMBU og derfor ikke er koblet.",
+      "koblinger": [
+        { "entryId": "nmbu_indok", "emnekoder": ["STAT100-1"] },
+        { "entryId": "ntnu_indok", "emnekoder": ["TMA4240-1", "TMA4245-1"], "merknad": "To statistikkvarianter avhengig av teknologiretning." },
+        { "entryId": "uib_it_okonomi", "emnekoder": ["STAT110-0"], "merknad": "Grunnkurs i statistikk." }
+      ]
+    },
+    {
+      "id": "fysikk",
+      "label": "Fysikk",
+      "kategori": "Realfag",
+      "desc": "Klassisk mekanikk, termofysikk og elektromagnetisme.",
+      "note": "UiA har ingen fysikk med rapporterte kandidattall. UiBs ITØK170 er et energi- og miljøfysikkemne på 3. år og er en svakere kobling enn NMBUs og NTNUs innføringsemner i fysikk. NMBU har i tillegg statikk (FYS110) og fasthetslære (TBM120), som ingen av konkurrentene har som fellesemne.",
+      "koblinger": [
+        { "entryId": "nmbu_indok", "emnekoder": ["FYS101-1", "FYS102-1"], "merknad": "Mekanikk og Termofysikk og elektromagnetisme." },
+        { "entryId": "ntnu_indok", "emnekoder": ["TFY4107-1"], "merknad": "Fysikk; felles for alle teknologiretninger i 2. år." },
+        { "entryId": "uib_it_okonomi", "emnekoder": ["ITØK170-0"], "merknad": "Energi- og miljøfysikk; tematisk snevrere og på høyere nivå enn de øvriges innføringsemner." }
+      ]
+    },
+    {
+      "id": "programmering",
+      "label": "Programmering",
+      "kategori": "Programmering",
+      "desc": "Grunnleggende og videregående programmering: kontrollstrukturer, datastrukturer, objektorientering og numeriske beregninger.",
+      "note": "NTNU har to kodeversjoner av informasjonsteknologi grunnkurs (TDT4109 for indøk-studenter på datateknologiretningen, TDT4110 for de øvrige). UiAs programmeringsemner har ingen kandidater rapportert i 2025.",
+      "koblinger": [
+        { "entryId": "nmbu_indok", "emnekoder": ["INF120-1", "INF201-1", "INF202-1"], "merknad": "Programmering og databehandling, Videregående programmering og Prosjektoppgave i videregående programmering." },
+        { "entryId": "ntnu_indok", "emnekoder": ["TDT4109-1", "TDT4110-1", "TDT4100-1", "TDT4102-1"], "merknad": "Grunnkurs i to kodeversjoner, samt objektorientert og prosedyreorientert programmering." },
+        { "entryId": "uia_indok", "emnekoder": ["ING100-G", "IKT101-G"], "merknad": "Programmering og IKT-sikkerhet, og Grunnleggende softwareutvikling." },
+        { "entryId": "uib_it_okonomi", "emnekoder": ["INFO132-0", "INFO135-0"], "merknad": "Innføring i og viderekommende programmering." }
+      ]
+    },
+    {
+      "id": "exphil",
+      "label": "Examen philosophicum",
+      "kategori": "Ex.phil.",
+      "desc": "Filosofi- og vitenskapsteoriemnet som inngår i graden.",
+      "note": "UiA har ingen ex.phil. med rapporterte kandidattall i ingeniørbachelordelen. UiBs tall gjelder skoleeksamensversjonen og er lave.",
+      "koblinger": [
+        { "entryId": "nmbu_indok", "emnekoder": ["PHI100-1", "PHI101-1"], "merknad": "Ordinær versjon og seminarversjon; begge brukes av kullet." },
+        { "entryId": "ntnu_indok", "emnekoder": ["EXPH0300-1"], "merknad": "Ex.phil. for naturvitenskap og teknologi." },
+        { "entryId": "uib_it_okonomi", "emnekoder": ["EXPHIL-MNEKS-0"], "merknad": "Skoleeksamensversjonen; få kandidater, så snittet er usikkert." }
+      ]
+    },
+    {
+      "id": "bedriftsokonomi-regnskap",
+      "label": "Bedriftsøkonomi og regnskap",
+      "kategori": "Økonomi",
+      "desc": "Bedriftsøkonomiske grunnbegreper, finansregnskap, regnskapsanalyse, kostnadsberegning og økonomistyring.",
+      "note": "UiA har ingen økonomiemner med rapporterte kandidattall, siden bare 1. år av ingeniørbachelordelen er rapportert. NTNUs TIØ4105 er programmets desidert største emne og deles med flere andre NTNU-program, så kandidattallet er ikke rent programtall.",
+      "koblinger": [
+        { "entryId": "nmbu_indok", "emnekoder": ["BUS110-1", "BUS210-1"], "merknad": "Finansregnskap og regnskapsanalyse, og Økonomi- og virksomhetsstyring." },
+        { "entryId": "ntnu_indok", "emnekoder": ["TIØ4105-1", "TIØ4295-1"], "merknad": "Industriell økonomisk styring (fellesemne i 1. år) og Bedriftsøkonomi." },
+        { "entryId": "uib_it_okonomi", "emnekoder": ["ECON263-0"], "merknad": "Bedriftsøkonomi for samfunnsøkonomer." }
+      ]
+    },
+    {
+      "id": "finans-investering",
+      "label": "Finans og investering",
+      "kategori": "Økonomi",
+      "desc": "Investeringsanalyse, kapitalstruktur, prosjektfinansiering og kvantitative metoder i finans.",
+      "note": "UiB har ingen foretaksfinans i programmet; ITØK264 Financial Technology handler om teknologi i finansnæringen og er en for svak match til å kobles. UiA har ingen økonomiemner med rapporterte tall. Omfanget er svært ulikt: NMBU har ett emne på 10 sp, NTNU fire på til sammen 30 sp.",
+      "koblinger": [
+        { "entryId": "nmbu_indok", "emnekoder": ["BUS220-1"], "merknad": "Finansiering og investering, 10 sp." },
+        { "entryId": "ntnu_indok", "emnekoder": ["TIØ4145-1", "TIØ4140-1", "TIØ4146-1", "TIØ4317-1"], "merknad": "Finansstyring for foretak, Prosjektfinans og -analyse, Finans for teknisk-naturvitenskapelige studenter, og Empiriske og kvantitative metoder i finans." }
+      ]
+    },
+    {
+      "id": "optimering-operasjonsanalyse",
+      "label": "Optimering og operasjonsanalyse",
+      "kategori": "Økonomi",
+      "desc": "Lineær og heltallig programmering, modellering av beslutningsproblemer, beslutningsstøtte og metaheuristikker.",
+      "note": "UiA har ingen optimeringsemner med rapporterte kandidattall. Dette er den emnetypen der UiB matcher NMBU og NTNU best, siden optimering er en kjernedel også av informasjonsteknologi- og økonomiprogrammet.",
+      "koblinger": [
+        { "entryId": "nmbu_indok", "emnekoder": ["IND310-1", "IND320-1"], "merknad": "Driftsoptimalisering og Data til beslutning." },
+        { "entryId": "ntnu_indok", "emnekoder": ["TIØ4130-1", "TIØ4126-1", "TIØ4150-1"], "merknad": "Optimeringsmetoder med teknisk-økonomiske anvendelser, Optimering og beslutningsstøtte for teknisk-økonomisk planlegging, og Industriell optimering og beslutningsstøtte." },
+        { "entryId": "uib_it_okonomi", "emnekoder": ["INF170-0", "INF270-0", "INF273-0"], "merknad": "Modellering og optimering, Lineær programmering og Metaheuristikker; de to siste er valgbare." }
+      ]
+    },
+    {
+      "id": "prosjekt-og-driftsledelse",
+      "label": "Prosjekt-, drifts- og logistikkledelse",
+      "kategori": "Ledelse",
+      "desc": "Prosjektstyring, usikkerhetsstyring, kvalitetsstyring, produksjonsledelse og styring av forsyningskjeder.",
+      "note": "Dette er NMBUs tydeligste profilområde: fem emner på til sammen 40 sp, mot spredte valgemner hos NTNU. NTNUs prosjektledelsesemne TPK5100 er valgbart og har bare rundt ti kandidater fra indøk, mens de andre er større. UiA har ingen ledelsesemner med rapporterte tall, og UiB bare ett emne om forsyningskjeder.",
+      "koblinger": [
+        { "entryId": "nmbu_indok", "emnekoder": ["IND200-1", "IND240-1", "IND210-1", "IND230-1", "IND250-1"], "merknad": "Praktisk prosjektstyring, Usikkerhetsstyring i prosjekt, Driftsledelse, Kvalitetsstyring og Produksjonslogistikk og distribusjon." },
+        { "entryId": "ntnu_indok", "emnekoder": ["TPK5100-1", "TPK4100-1", "TIØ4285-1", "TIØ4175-1"], "merknad": "Praktisk prosjektledelse, Produksjonsledelse, Modellering og analyse av industrielle verdikjeder, og Innkjøps- og logistikkledelse; alle valgbare, så kandidattallene er lave." },
+        { "entryId": "uib_it_okonomi", "emnekoder": ["ITØK320-0"], "merknad": "Metoder for analyse av forsyningskjeder; UiB har ingen prosjekt- eller driftsledelse." }
+      ]
+    },
+    {
+      "id": "organisasjon-ledelse-strategi",
+      "label": "Organisasjon, ledelse og strategi",
+      "kategori": "Ledelse",
+      "desc": "Organisasjonsteori, ledelse av mennesker og teknologi, og strategisk ledelse av virksomheter.",
+      "note": "Dette er det klareste hullet hos NMBU: programmet har bare ett valgbart emne på 5 sp (AOS230) med rundt ti kandidater, mot NTNUs tre store fellesemner på til sammen 22,5 sp. UiB og UiA har ingen organisasjons- eller ledelsesemner med rapporterte kandidattall, og NMBU-snittet er usikkert på grunn av det lave tallet.",
+      "koblinger": [
+        { "entryId": "nmbu_indok", "emnekoder": ["AOS230-1"], "merknad": "Organisasjons- og ledelsespsykologi, 5 sp; valgbart emne med rundt ti kandidater." },
+        { "entryId": "ntnu_indok", "emnekoder": ["TIØ4102-1", "TIØ4162-1", "TIØ4265-1"], "merknad": "Organisasjon og teknologi 1 og 2, og Strategisk ledelse; alle obligatoriske fellesemner." }
+      ]
+    },
+    {
+      "id": "innovasjon-entreprenorskap",
+      "label": "Innovasjon, entreprenørskap og tverrfaglig prosjekt",
+      "kategori": "Ledelse",
+      "desc": "Forretningsutvikling, innovasjonsledelse, entreprenørskap og tverrfaglig gruppeprosjekt i team.",
+      "note": "UiA har ingen innovasjonsemner med rapporterte kandidattall. Eksperter i team er et felles NTNU-konsept som NMBU og UiB har kopiert; NTNUs egen EiT-variant er fordelt på et hundretalls landsbykoder uten noen felles emnekode og er derfor ikke koblet.",
+      "koblinger": [
+        { "entryId": "nmbu_indok", "emnekoder": ["IND220-1", "IND300-1"], "merknad": "Innovasjonsbedrift og Eksperter i team." },
+        { "entryId": "ntnu_indok", "emnekoder": ["TIØ4250-1", "TIØ4180-1"], "merknad": "Entreprenørskap – Venture CUP og Innovasjonsledelse og strategi; begge valgbare." },
+        { "entryId": "uib_it_okonomi", "emnekoder": ["ITØK381-0"], "merknad": "Eksperter i team, 10 sp." }
+      ]
+    },
+    {
+      "id": "dataanalyse-maskinlaering",
+      "label": "Dataanalyse og maskinlæring",
+      "kategori": "Programmering",
+      "desc": "Datahåndtering, anvendt data science, maskinlæring og kunstig intelligens i økonomiske og tekniske anvendelser.",
+      "note": "UiA har ingen dataanalyse- eller maskinlæringsemner med rapporterte kandidattall. Emnene er valgbare hos alle tre øvrige, men tas av en stor del av kullene.",
+      "koblinger": [
+        { "entryId": "nmbu_indok", "emnekoder": ["DAT200-1", "DAT300-1", "INF230-2"], "merknad": "Anvendt maskinlæring, Anvendt dyplæring og Datahåndtering og -analyse." },
+        { "entryId": "ntnu_indok", "emnekoder": ["TDT4259-1", "TDT4173-1", "TDT4172-1"], "merknad": "Anvendt data science, Moderne maskinlæring i praksis og Introduksjon til maskinlæring." },
+        { "entryId": "uib_it_okonomi", "emnekoder": ["INFO284-0", "INFO180-0"], "merknad": "Machine Learning og Metoder i kunstig intelligens." }
+      ]
+    },
+    {
+      "id": "oppgave",
+      "label": "Masteroppgave",
+      "kategori": "Oppgave",
+      "desc": "Det selvstendige avsluttende arbeidet i graden.",
+      "note": "Verken UiB eller UiA har en avsluttende oppgave med rapporterte kandidattall i 2024/2025 (UiBs ITØK391 og UiAs IND590 er ikke rapportert med karakterer i perioden). NTNU har én masteroppgavekode per hovedprofil, mens NMBU har én felles kode.",
+      "koblinger": [
+        { "entryId": "nmbu_indok", "emnekoder": ["M30-IØ-1"], "merknad": "Masteroppgave, 30 sp." },
+        { "entryId": "ntnu_indok", "emnekoder": ["TIØ4900-1", "TIØ4905-1", "TIØ4912-1", "TIØ4950-1"], "merknad": "Masteroppgave innen Investering, finans og økonomistyring; Anvendt økonomi og optimering; Strategi, innovasjon og internasjonal forretningsutvikling; og Strategisk endringsledelse." }
+      ]
+    }
+  ]
+}
