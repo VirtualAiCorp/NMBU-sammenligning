@@ -15,13 +15,20 @@ import { MasterComparisonChart } from './components/MasterComparisonChart';
 import { NMBUMasterAnalysis } from './components/NMBUMasterAnalysis';
 import { AdmissionAnalysis2026 } from './components/AdmissionAnalysis2026';
 import { MarkedsstatusView } from './components/MarkedsstatusView';
+import { FacultyLanding, type Faculty } from './components/FacultyLanding';
+import { LandsamLanding } from './components/LandsamLanding';
+import { LandsamAdmissionAnalysis } from './components/LandsamAdmissionAnalysis';
 import { BookOpen, Table2, BarChart2, Star, Scale, Map, GraduationCap, GalleryVerticalEnd, Award, ScatterChart, TrendingUp, ArrowUpRight, Wifi, Globe2 } from 'lucide-react';
 
 type ProgramLevel = 'bachelor' | 'master' | 'opptak2026' | 'markedsstatus';
 type ViewMode = 'course' | 'mapping' | 'admission' | 'karakterindeks' | 'studiebarometer' | 'map' | 'firstyear' | 'online';
 type MasterViewMode = 'masteroppgave' | 'sammenligning' | 'nmbu-emner';
+type LandsamView = 'landing' | 'analyse';
 
 export default function App() {
+  const [faculty, setFaculty] = useState<Faculty | null>(null);
+  const [landsamView, setLandsamView] = useState<LandsamView>('landing');
+  const [landsamGroup, setLandsamGroup] = useState<string | undefined>(undefined);
   const [programLevel, setProgramLevel] = useState<ProgramLevel | null>(null);
   const [selectedUniversities, setSelectedUniversities] = useState<string[]>(
     ['nmbu', 'hio', 'uia', 'usn', 'nhh', 'bi', 'kristiania', 'oslomet', 'ntnu', 'ntnu_gjovik', 'ntnu_alesund', 'uit', 'nla', 'uis', 'inn', 'onh', 'nord', 'hvl', 'himolde', 'inn_rena']
@@ -66,11 +73,76 @@ export default function App() {
     return { backgroundColor: 'var(--nmbu-beige-light)', color: 'var(--nmbu-neutral-1)' };
   };
 
+  // ── Fakultetsnivå: NMBU-forside ──────────────────────────────────────────
+  if (faculty === null) {
+    return (
+      <FacultyLanding
+        onSelect={(f) => { setFaculty(f); setLandsamView('landing'); setLandsamGroup(undefined); }}
+      />
+    );
+  }
+
+  // ── LANDSAM ───────────────────────────────────────────────────────────────
+  if (faculty === 'landsam') {
+    if (landsamView === 'landing') {
+      return (
+        <LandsamLanding
+          onOpenAnalysis={(g) => { setLandsamGroup(g); setLandsamView('analyse'); }}
+          onBackToFaculties={() => setFaculty(null)}
+        />
+      );
+    }
+    return (
+      <div className="min-h-screen p-6" style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
+        <div className="max-w-7xl mx-auto">
+
+          {/* Top-level switcher */}
+          <div className="flex items-center gap-2 mb-6">
+            <button
+              onClick={() => setLandsamView('landing')}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs transition-all"
+              style={{ backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)' }}
+            >
+              ← Tilbake
+            </button>
+            <span className="px-3 py-1.5 rounded-lg text-xs" style={{ backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-1)' }}>
+              Fakultet for landskap og samfunn
+            </span>
+          </div>
+
+          {/* Header */}
+          <header className="mb-8">
+            <div className="flex items-center gap-3 mb-1">
+              <div className="w-1 h-9 rounded-sm" style={{ backgroundColor: 'var(--nmbu-green-dark)' }} />
+              <h1 className="text-4xl" style={{ color: 'var(--nmbu-green-dark)', fontFamily: "'Lora', serif", fontWeight: 500 }}>
+                Analyse opptak
+              </h1>
+            </div>
+            <p className="text-sm pl-4" style={{ color: 'var(--nmbu-neutral-1)' }}>
+              Søkertall, poenggrenser og trender 2020–2026 · Kilde: Samordna opptak / HKDIR
+            </p>
+          </header>
+
+          <LandsamAdmissionAnalysis key={landsamGroup ?? 'alle'} initialGroup={landsamGroup} />
+        </div>
+      </div>
+    );
+  }
+
   // Landing / program picker
   if (programLevel === null) {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center p-6" style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
         <div className="max-w-3xl w-full">
+          <div className="flex items-center gap-2 mb-6">
+            <button
+              onClick={() => setFaculty(null)}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs transition-all"
+              style={{ backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)' }}
+            >
+              ← Fakulteter
+            </button>
+          </div>
           <div className="flex flex-col items-center gap-1 mb-2">
             <div className="flex items-center gap-3">
               <div className="w-1 h-10 rounded-sm" style={{ backgroundColor: 'var(--nmbu-green-dark)' }} />

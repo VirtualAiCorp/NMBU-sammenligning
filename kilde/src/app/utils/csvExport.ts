@@ -1,6 +1,7 @@
 import { FULL_ADMISSION_DATA, ALL_YEARS } from '../data/fullAdmissionData';
 import { SAMF_DATA, SAMF_YEARS } from '../data/samfData';
 import { ANNUAL_STUDIES_DATA, ANNUAL_YEARS } from '../data/annualStudiesData';
+import { LANDSAM_GROUPS, LANDSAM_YEARS } from '../data/landsamAdmissionData';
 
 // ─── Core helpers ─────────────────────────────────────────────────────────────
 
@@ -120,4 +121,40 @@ export function exportAarsstudierCsv() {
   }
 
   downloadCsv('arsstudier_opptak_2021-2026.csv', lines);
+}
+
+// ─── LANDSAM: Fakultet for landskap og samfunn ───────────────────────────────
+
+export function exportLandsamCsv() {
+  const header = row(
+    'Programgruppe', 'Nivå',
+    'Institusjon', 'Kortname', 'Studiekode', 'Studiested', 'Type',
+    'År',
+    'Alle søkere', 'Førstevalgssøkere', 'Studieplasser', 'Søkerpress (fv/pl)',
+    'Kvinner % (1.valg)', 'Kvalifiserte', 'Tilbud',
+    'Poenggrense FV', 'Poenggrense Ord.'
+  );
+
+  const lines: string[] = [header];
+
+  for (const g of LANDSAM_GROUPS) {
+    for (const e of g.entries) {
+      for (const year of LANDSAM_YEARS) {
+        const d = e.years[year];
+        if (!d) continue;
+        const sp = d.fvS !== null && d.plasser !== null && d.plasser > 0
+          ? +(d.fvS / d.plasser).toFixed(2) : null;
+        lines.push(row(
+          g.label, g.level,
+          e.institusjon, e.shortName, e.studiekode, e.studiested, e.type,
+          year,
+          d.alleS, d.fvS, d.plasser, sp,
+          d.kvinner, d.kvalifiserte, d.tilbud,
+          d.pg_fv, d.pg_ord
+        ));
+      }
+    }
+  }
+
+  downloadCsv('landsam_opptak_2020-2026.csv', lines);
 }

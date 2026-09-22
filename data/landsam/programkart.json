@@ -1,0 +1,1817 @@
+{
+  "hentet": "2026-09-22",
+  "groups": [
+    {
+      "id": "eiendom",
+      "label": "Eiendom",
+      "level": "master5",
+      "desc": "Sammenligner NMBUs femårige eiendomsmaster med andre utdanninger innen landmåling, eiendomsfag og eiendomsmegling.",
+      "note": "Bare NMBU tilbyr et femårig masterløp i eiendomsfag; HVLs landmåling og eiendomsdesign er nærmeste faglige konkurrent, mens bachelorene i eiendomsmegling er tatt med som svakere sammenligning (default false).",
+      "programs": [
+        {
+          "id": "nmbu_eiendom",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Eiendom (master 5 år)",
+          "studiekode": "192230",
+          "type": "master",
+          "isNmbu": true,
+          "default": true,
+          "source": "SO",
+          "url": "https://www.nmbu.no/studier/master-5-aar/eiendom",
+          "localData": null
+        },
+        {
+          "id": "hvl_landmaling",
+          "shortName": "HVL Bergen",
+          "institusjon": "Høgskulen på Vestlandet",
+          "studiested": "Bergen",
+          "programnavn": "Landmåling og eiendomsdesign",
+          "studiekode": "203753",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": true,
+          "source": "SO",
+          "url": "https://www.hvl.no/studier/studieprogram/landmaling-og-eiendomsdesign/",
+          "localData": null
+        },
+        {
+          "id": "hvl_eiendomsmegling",
+          "shortName": "HVL Sogndal",
+          "institusjon": "Høgskulen på Vestlandet",
+          "studiested": "Sogndal",
+          "programnavn": "Eiendomsmegling, økonomi og jus",
+          "studiekode": "203368",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": false,
+          "source": "SO",
+          "url": "https://www.hvl.no/studier/studieprogram/eiendomsmegling-okonomi-og-jus/",
+          "localData": null
+        },
+        {
+          "id": "nord_eiendomsmegling",
+          "shortName": "Nord",
+          "institusjon": "Nord universitet",
+          "studiested": "Bodø",
+          "programnavn": "Eiendomsmegling og markedsanalyser",
+          "studiekode": "204368",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": false,
+          "source": "SO",
+          "url": "https://www.nord.no/studier/eiendomsmegling-og-markedsanalyser-bachelor",
+          "localData": null
+        },
+        {
+          "id": "inn_eiendomsmegling",
+          "shortName": "INN",
+          "institusjon": "Universitetet i Innlandet",
+          "studiested": "Åmot",
+          "programnavn": "Eiendomsmegling",
+          "studiekode": "209368",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": false,
+          "source": "SO",
+          "url": null,
+          "localData": null
+        },
+        {
+          "id": "usn_eiendomsmegling",
+          "shortName": "USN",
+          "institusjon": "Universitetet i Sørøst-Norge",
+          "studiested": "Midt-Telemark",
+          "programnavn": "Eiendomsmegling",
+          "studiekode": "222368",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": false,
+          "source": "SO",
+          "url": null,
+          "localData": null
+        }
+      ]
+    },
+    {
+      "id": "landskapsarkitektur",
+      "label": "Landskapsarkitektur",
+      "level": "master5",
+      "desc": "Sammenligner de norske utdanningene som gir tittelen landskapsarkitekt.",
+      "note": "AHOs masterprogram er et femårig fellesløp med UiT (tre år i Oslo, to år i Tromsø) og har derfor bare én studiekode i Samordna opptak; UiT har ikke egen kode. HVLs program i Sogndal er en bachelor og dermed et svakere sammenligningsgrunnlag. AHO tar opp på grunnlag av opptaksprøve, og poenggrensene deres (ca. 130–160 poeng) er på en annen skala enn skolepoeng; de vises derfor ikke.",
+      "programs": [
+        {
+          "id": "nmbu_la",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Landskapsarkitektur (master 5 år)",
+          "studiekode": "192732",
+          "type": "master",
+          "isNmbu": true,
+          "default": true,
+          "source": "SO",
+          "url": "https://www.nmbu.no/studier/master-5-aar/landskapsarkitektur",
+          "localData": null
+        },
+        {
+          "id": "aho_la",
+          "shortName": "AHO",
+          "institusjon": "Arkitektur- og designhøgskolen i Oslo",
+          "studiested": "Oslo",
+          "programnavn": "Landskapsarkitektur",
+          "studiekode": "189732",
+          "type": "master",
+          "isNmbu": false,
+          "default": true,
+          "source": "SO",
+          "url": "https://www.aho.no/studier/program/master-i-landskapsarkitektur/",
+          "localData": null,
+          "poenggrenseSkala": "opptaksprove"
+        },
+        {
+          "id": "hvl_landskapsplanlegging_la",
+          "shortName": "HVL Sogndal",
+          "institusjon": "Høgskulen på Vestlandet",
+          "studiested": "Sogndal",
+          "programnavn": "Landskapsplanlegging med landskapsarkitektur",
+          "studiekode": "203310",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": false,
+          "source": "SO",
+          "url": "https://www.hvl.no/studier/studieprogram/landskapsplanlegging-med-landskapsarkitektur/",
+          "localData": null
+        }
+      ]
+    },
+    {
+      "id": "byregion",
+      "label": "By- og regionplanlegging",
+      "level": "master5",
+      "desc": "Sammenligner NMBUs femårige planleggingsmaster med andre by-, areal- og samfunnsplanleggingsutdanninger.",
+      "note": "Bare UiS' femårige byplanleggingsmaster ligger på samme nivå; de øvrige er bachelorprogram (default false). NTNUs toårige master er tatt med som lokalt opptak og het Fysisk planlegging til og med 2025 – fra 2026 finnes bare Byplanlegging med tilsvarende rammetall, men NTNU bekrefter ikke eksplisitt at det er samme program.",
+      "programs": [
+        {
+          "id": "nmbu_byreg",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "By- og regionplanlegging (master 5 år)",
+          "studiekode": "192949",
+          "type": "master",
+          "isNmbu": true,
+          "default": true,
+          "source": "SO",
+          "url": "https://www.nmbu.no/studier/master-5-aar/og-regionplanlegging",
+          "localData": null
+        },
+        {
+          "id": "uis_byplanlegging",
+          "shortName": "UiS",
+          "institusjon": "Universitetet i Stavanger",
+          "studiested": "Stavanger",
+          "programnavn": "Byplanlegging",
+          "studiekode": "217938",
+          "type": "master",
+          "isNmbu": false,
+          "default": true,
+          "source": "SO",
+          "url": "https://www.uis.no/nb/studier/byplanlegging-master-5-ar",
+          "localData": null
+        },
+        {
+          "id": "uis_byplan_samfsikkerhet",
+          "shortName": "UiS (bachelor)",
+          "institusjon": "Universitetet i Stavanger",
+          "studiested": "Stavanger",
+          "programnavn": "Byplanlegging og samfunnssikkerhet",
+          "studiekode": "217530",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": false,
+          "source": "SO",
+          "url": "https://www.uis.no/nb/studier/byplanlegging-og-samfunnssikkerhet-bachelor",
+          "localData": null
+        },
+        {
+          "id": "uis_ing_bygg_byplan",
+          "shortName": "UiS (ingeniør)",
+          "institusjon": "Universitetet i Stavanger",
+          "studiested": "Stavanger",
+          "programnavn": "Ingeniør, bygg, studieretning byplanlegging",
+          "studiekode": "217067",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": false,
+          "source": "SO",
+          "url": null,
+          "localData": null
+        },
+        {
+          "id": "uit_samfunnsplanlegging",
+          "shortName": "UiT",
+          "institusjon": "UiT Norges arktiske universitet",
+          "studiested": "Tromsø",
+          "programnavn": "Samfunnsplanlegging",
+          "studiekode": "186474",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": false,
+          "source": "SO",
+          "url": "https://uit.no/utdanning/program/272680/samfunnsplanlegging_-_bachelor",
+          "localData": null
+        },
+        {
+          "id": "nord_geografi_samfplan",
+          "shortName": "Nord",
+          "institusjon": "Nord universitet",
+          "studiested": "Levanger",
+          "programnavn": "Geografi og samfunnsplanlegging",
+          "studiekode": "204438",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": false,
+          "source": "SO",
+          "url": "https://www.nord.no/studier/geografi-og-samfunnsplanlegging-bachelor",
+          "localData": null
+        },
+        {
+          "id": "uia_samfunnsplanlegging",
+          "shortName": "UiA",
+          "institusjon": "Universitetet i Agder",
+          "studiested": "Kristiansand",
+          "programnavn": "Samfunnsplanlegging og kommunikasjon",
+          "studiekode": "201474",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": false,
+          "source": "SO",
+          "url": "https://www.uia.no/studier/program/samfunnsplanlegging-og-kommunikasjon-bachelor/",
+          "localData": null
+        },
+        {
+          "id": "hivolda_planlegging",
+          "shortName": "HVO",
+          "institusjon": "Høgskulen i Volda",
+          "studiested": "Volda",
+          "programnavn": "Planlegging, administrasjon og ledelse",
+          "studiekode": "223452",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": false,
+          "source": "SO",
+          "url": null,
+          "localData": null
+        },
+        {
+          "id": "ntnu_fysisk_planlegging",
+          "shortName": "NTNU (master 2 år)",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiested": "Trondheim",
+          "programnavn": "Fysisk planlegging (fra 2026 Byplanlegging, master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": false,
+          "source": "local",
+          "url": "https://www.ntnu.no/studier/mfyspl",
+          "localData": {
+            "2021": {
+              "alleS": 212,
+              "fvS": 124,
+              "plasser": 40,
+              "kvinner": null,
+              "kvalifiserte": 170,
+              "tilbud": 71,
+              "pg_fv": null,
+              "pg_ord": 3.3
+            },
+            "2022": {
+              "alleS": 204,
+              "fvS": 104,
+              "plasser": 40,
+              "kvinner": null,
+              "kvalifiserte": 164,
+              "tilbud": 84,
+              "pg_fv": null,
+              "pg_ord": 3.2
+            },
+            "2023": {
+              "alleS": 152,
+              "fvS": 75,
+              "plasser": 30,
+              "kvinner": null,
+              "kvalifiserte": 133,
+              "tilbud": 72,
+              "pg_fv": null,
+              "pg_ord": 2.8
+            },
+            "2024": {
+              "alleS": 150,
+              "fvS": 72,
+              "plasser": 30,
+              "kvinner": null,
+              "kvalifiserte": 125,
+              "tilbud": 74,
+              "pg_fv": null,
+              "pg_ord": 2.4
+            },
+            "2025": {
+              "alleS": 179,
+              "fvS": 97,
+              "plasser": 34,
+              "kvinner": null,
+              "kvalifiserte": 149,
+              "tilbud": 80,
+              "pg_fv": null,
+              "pg_ord": 2.8
+            },
+            "2026": {
+              "alleS": 273,
+              "fvS": 107,
+              "plasser": 34,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": 2.9
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
+              "https://www.ntnu.no/studier/opptak/statistikk"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "landskapsingenior",
+      "label": "Landskapsingeniør",
+      "level": "bachelor",
+      "desc": "Sammenligner bachelorutdanningene innen anlegg, uterom og landskapsforvaltning.",
+      "note": "Ingen andre institusjoner tilbyr landskapsingeniør i Samordna opptak 2026; HVLs program i Sogndal er det eneste beslektede bachelorløpet.",
+      "programs": [
+        {
+          "id": "nmbu_landskapsing",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Landskapsingeniør (bachelor)",
+          "studiekode": "192310",
+          "type": "bachelor",
+          "isNmbu": true,
+          "default": true,
+          "source": "SO",
+          "url": "https://www.nmbu.no/studier/bachelor/landskapsingenior",
+          "localData": null
+        },
+        {
+          "id": "hvl_landskapsplanlegging",
+          "shortName": "HVL Sogndal",
+          "institusjon": "Høgskulen på Vestlandet",
+          "studiested": "Sogndal",
+          "programnavn": "Landskapsplanlegging med landskapsarkitektur",
+          "studiekode": "203310",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": true,
+          "source": "SO",
+          "url": "https://www.hvl.no/studier/studieprogram/landskapsplanlegging-med-landskapsarkitektur/",
+          "localData": null
+        }
+      ]
+    },
+    {
+      "id": "miljoutvikling",
+      "label": "Internasjonale miljø- og utviklingsstudier",
+      "level": "bachelor",
+      "desc": "Sammenligner bachelorprogrammene innen utviklingsstudier og internasjonale studier.",
+      "note": "Utviklingsstudiene ved UiO, OsloMet og UiA er de nærmeste konkurrentene; bachelorene i internasjonale studier/relasjoner er tatt med som svakere sammenligning (default false). Årsstudier er utelatt.",
+      "programs": [
+        {
+          "id": "nmbu_ims",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Internasjonale miljø- og utviklingsstudier (bachelor)",
+          "studiekode": "192484",
+          "type": "bachelor",
+          "isNmbu": true,
+          "default": true,
+          "source": "SO",
+          "url": "https://www.nmbu.no/studier/bachelor/internasjonale-miljo-og-utviklingsstudier",
+          "localData": null
+        },
+        {
+          "id": "uio_utvikling_baerekraft",
+          "shortName": "UiO",
+          "institusjon": "Universitetet i Oslo",
+          "studiested": "Oslo",
+          "programnavn": "Utviklingsstudier og bærekraft",
+          "studiekode": "185883",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": true,
+          "source": "SO",
+          "url": null,
+          "localData": null
+        },
+        {
+          "id": "oslomet_utviklingsstudier",
+          "shortName": "OsloMet",
+          "institusjon": "OsloMet - storbyuniversitetet",
+          "studiested": "Oslo",
+          "programnavn": "Utviklingsstudier, bachelor",
+          "studiekode": "215484",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": true,
+          "source": "SO",
+          "url": null,
+          "localData": null
+        },
+        {
+          "id": "uia_globale_utviklingsstudier",
+          "shortName": "UiA",
+          "institusjon": "Universitetet i Agder",
+          "studiested": "Kristiansand",
+          "programnavn": "Globale utviklingsstudier, bachelor",
+          "studiekode": "201484",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": true,
+          "source": "SO",
+          "url": "https://www.uia.no/studier/program/globale-utviklingsstudier-bachelor/",
+          "localData": null
+        },
+        {
+          "id": "uio_internasjonale_studier",
+          "shortName": "UiO (int.stud.)",
+          "institusjon": "Universitetet i Oslo",
+          "studiested": "Oslo",
+          "programnavn": "Internasjonale studier",
+          "studiekode": "185872",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": false,
+          "source": "SO",
+          "url": "https://www.uio.no/studier/program/internasjonale-studier/",
+          "localData": null
+        },
+        {
+          "id": "inn_internasjonale_studier",
+          "shortName": "INN",
+          "institusjon": "Universitetet i Innlandet",
+          "studiested": "Lillehammer",
+          "programnavn": "Internasjonale studier , bachelor",
+          "studiekode": "209872",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": false,
+          "source": "SO",
+          "url": null,
+          "localData": null
+        },
+        {
+          "id": "nord_internasjonale_relasjoner_b",
+          "shortName": "Nord",
+          "institusjon": "Nord universitet",
+          "studiested": "Bodø",
+          "programnavn": "Internasjonale relasjoner, bachelor",
+          "studiekode": "204872",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": false,
+          "source": "SO",
+          "url": "https://www.nord.no/studier/internasjonale-relasjoner-bachelor",
+          "localData": null
+        }
+      ]
+    },
+    {
+      "id": "eiendomsutvikling",
+      "label": "Eiendomsutvikling",
+      "level": "master2",
+      "desc": "Sammenligner de toårige masterne i eiendomsutvikling og -forvaltning.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. alleS, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra institusjonenes egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere og kjønnsfordeling publiseres ikke for NMBU. NMBU oppgir 30 studieplasser og poenggrense 3,5 ved opptaket 2024 på programsiden, men publiserer ingen tidsserie.",
+      "programs": [
+        {
+          "id": "nmbu_eiendomsutvikling",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Eiendomsutvikling (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": true,
+          "default": true,
+          "source": "local",
+          "url": "https://www.nmbu.no/studier/master-2-aar/eiendomsutvikling",
+          "localData": {
+            "2021": {
+              "alleS": 220,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 127,
+              "tilbud": 60,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 172,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 119,
+              "tilbud": 81,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 195,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 128,
+              "tilbud": 85,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 215,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 128,
+              "tilbud": 68,
+              "pg_fv": null,
+              "pg_ord": 3.5
+            },
+            "2025": {
+              "alleS": 202,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 112,
+              "tilbud": 71,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
+            ]
+          }
+        },
+        {
+          "id": "ntnu_eiendomsutvikling",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiested": "Trondheim",
+          "programnavn": "Eiendomsutvikling og -forvaltning (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": true,
+          "source": "local",
+          "url": "https://www.ntnu.no/studier/maeiendom",
+          "localData": {
+            "2021": {
+              "alleS": 280,
+              "fvS": 113,
+              "plasser": 24,
+              "kvinner": null,
+              "kvalifiserte": 227,
+              "tilbud": 60,
+              "pg_fv": null,
+              "pg_ord": 3.3
+            },
+            "2022": {
+              "alleS": 272,
+              "fvS": 110,
+              "plasser": 24,
+              "kvinner": null,
+              "kvalifiserte": 215,
+              "tilbud": 58,
+              "pg_fv": null,
+              "pg_ord": 3.3
+            },
+            "2023": {
+              "alleS": 262,
+              "fvS": 110,
+              "plasser": 24,
+              "kvinner": null,
+              "kvalifiserte": 220,
+              "tilbud": 80,
+              "pg_fv": null,
+              "pg_ord": 3.3
+            },
+            "2024": {
+              "alleS": 218,
+              "fvS": 91,
+              "plasser": 24,
+              "kvinner": null,
+              "kvalifiserte": 169,
+              "tilbud": 62,
+              "pg_fv": null,
+              "pg_ord": 3.0
+            },
+            "2025": {
+              "alleS": 266,
+              "fvS": 116,
+              "plasser": 30,
+              "kvinner": null,
+              "kvalifiserte": 223,
+              "tilbud": 74,
+              "pg_fv": null,
+              "pg_ord": 3.3
+            },
+            "2026": {
+              "alleS": 302,
+              "fvS": 153,
+              "plasser": 30,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": 3.3
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
+              "https://www.ntnu.no/studier/opptak/statistikk"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folkehelse",
+      "label": "Folkehelsevitenskap",
+      "level": "master2",
+      "desc": "Sammenligner de toårige masterne innen folkehelse.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. alleS, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra institusjonenes egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere og kjønnsfordeling publiseres ikke for NMBU. NMBU oppgir 36 studieplasser på programsiden og publiserer ingen poenggrense. NTNUs egne søkertall gjelder bare norske og nordiske søkere og er derfor lavere enn DBH-tallene for dette programmet; 2026-tallet er derfor ikke ført inn. UiOs tall er fra UiOs egen poenggrenseoversikt og har et annet tellegrunnlag enn DBH.",
+      "programs": [
+        {
+          "id": "nmbu_folkehelse",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Folkehelsevitenskap (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": true,
+          "default": true,
+          "source": "local",
+          "url": "https://www.nmbu.no/studier/master-2-aar/folkehelsevitenskap",
+          "localData": {
+            "2021": {
+              "alleS": 232,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 221,
+              "tilbud": 101,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 181,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 175,
+              "tilbud": 106,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 169,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 144,
+              "tilbud": 102,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 195,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 154,
+              "tilbud": 86,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 180,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 170,
+              "tilbud": 128,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
+            ]
+          }
+        },
+        {
+          "id": "ntnu_folkehelse",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiested": "Trondheim",
+          "programnavn": "Folkehelse (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": true,
+          "source": "local",
+          "url": "https://www.ntnu.no/studier/mfhls",
+          "localData": {
+            "2021": {
+              "alleS": 430,
+              "fvS": 196,
+              "plasser": 30,
+              "kvinner": null,
+              "kvalifiserte": 364,
+              "tilbud": 129,
+              "pg_fv": null,
+              "pg_ord": 3.8
+            },
+            "2022": {
+              "alleS": 385,
+              "fvS": 126,
+              "plasser": 30,
+              "kvinner": null,
+              "kvalifiserte": 339,
+              "tilbud": 105,
+              "pg_fv": null,
+              "pg_ord": 3.6
+            },
+            "2023": {
+              "alleS": 400,
+              "fvS": 128,
+              "plasser": 30,
+              "kvinner": null,
+              "kvalifiserte": 347,
+              "tilbud": 112,
+              "pg_fv": null,
+              "pg_ord": 3.7
+            },
+            "2024": {
+              "alleS": 369,
+              "fvS": 126,
+              "plasser": 30,
+              "kvinner": null,
+              "kvalifiserte": 323,
+              "tilbud": 134,
+              "pg_fv": null,
+              "pg_ord": 3.4
+            },
+            "2025": {
+              "alleS": 376,
+              "fvS": 119,
+              "plasser": 40,
+              "kvinner": null,
+              "kvalifiserte": 333,
+              "tilbud": 135,
+              "pg_fv": null,
+              "pg_ord": 3.5
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": 140,
+              "plasser": 40,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": 2.9
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
+              "https://www.ntnu.no/studier/opptak/statistikk"
+            ]
+          }
+        },
+        {
+          "id": "uio_folkehelsearbeid",
+          "shortName": "UiO",
+          "institusjon": "Universitetet i Oslo",
+          "studiested": "Oslo",
+          "programnavn": "Folkehelsearbeid og bærekraftige helsetjenester (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": false,
+          "source": "local",
+          "url": null,
+          "localData": {
+            "2021": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 320,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 53,
+              "pg_fv": null,
+              "pg_ord": 3.77
+            },
+            "2024": {
+              "alleS": 369,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 64,
+              "pg_fv": null,
+              "pg_ord": 3.77
+            },
+            "2025": {
+              "alleS": 373,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 178,
+              "pg_fv": null,
+              "pg_ord": 3.15
+            },
+            "2026": {
+              "alleS": 366,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 219,
+              "pg_fv": null,
+              "pg_ord": 2.7
+            },
+            "localSource": [
+              "https://www.uio.no/studier/opptak/master/poenggrenser-masteropptak-2025.html"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "globalokonomi",
+      "label": "Global økonomi og politikk",
+      "level": "master2",
+      "desc": "Viser søkningen til NMBUs master i global økonomi og politikk.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. alleS, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra institusjonenes egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere og kjønnsfordeling publiseres ikke for NMBU. Vi fant ingen norsk master med tydelig samme profil (politisk økonomi/global økonomi og politikk), så gruppa har foreløpig bare NMBU. NMBU oppgir 25 studieplasser og poenggrense C/3,00 ved opptaket 2025. Første opptak var i 2024.",
+      "programs": [
+        {
+          "id": "nmbu_gep",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Global økonomi og politikk (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": true,
+          "default": true,
+          "source": "local",
+          "url": "https://www.nmbu.no/studier/master-2-aar/global-okonomi-og-politikk",
+          "localData": {
+            "2021": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 163,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 28,
+              "tilbud": 17,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 244,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 71,
+              "tilbud": 52,
+              "pg_fv": null,
+              "pg_ord": 3.0
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "globaleutvikling",
+      "label": "Globale utviklingsstudier",
+      "level": "master2",
+      "desc": "Sammenligner de toårige masterne innen globale utviklingsstudier.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. alleS, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra institusjonenes egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere og kjønnsfordeling publiseres ikke for NMBU. NMBU-tallene ligger i DBH under programkoden M-DS (Globale utviklingsstudier). NMBU oppgir bare karakterkravet C for opptaket 2024, ikke en tallfestet poenggrense. UiO-tallene er fra UiOs egen poenggrenseoversikt og har et annet tellegrunnlag enn DBH.",
+      "programs": [
+        {
+          "id": "nmbu_globale_utviklingsstudier",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Globale utviklingsstudier (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": true,
+          "default": true,
+          "source": "local",
+          "url": "https://www.nmbu.no/studier/master-2-aar/globale-utviklingsstudier",
+          "localData": {
+            "2021": {
+              "alleS": 718,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 304,
+              "tilbud": 102,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 858,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 297,
+              "tilbud": 99,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 709,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 116,
+              "tilbud": 71,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 220,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 77,
+              "tilbud": 60,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 284,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 95,
+              "tilbud": 67,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
+            ]
+          }
+        },
+        {
+          "id": "uio_decc",
+          "shortName": "UiO",
+          "institusjon": "Universitetet i Oslo",
+          "studiested": "Oslo",
+          "programnavn": "Development, Environment and Cultural Change (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": true,
+          "source": "local",
+          "url": "https://www.uio.no/english/studies/programmes/ces-master/",
+          "localData": {
+            "2021": {
+              "alleS": 548,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 39,
+              "pg_fv": null,
+              "pg_ord": 4.53
+            },
+            "2022": {
+              "alleS": 437,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 42,
+              "pg_fv": null,
+              "pg_ord": 4.38
+            },
+            "2023": {
+              "alleS": 411,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 62,
+              "pg_fv": null,
+              "pg_ord": 4.25
+            },
+            "2024": {
+              "alleS": 390,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 74,
+              "pg_fv": null,
+              "pg_ord": 3.94
+            },
+            "2025": {
+              "alleS": 369,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 68,
+              "pg_fv": null,
+              "pg_ord": 3.81
+            },
+            "2026": {
+              "alleS": 286,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 47,
+              "pg_fv": null,
+              "pg_ord": 3.88
+            },
+            "localSource": [
+              "https://www.uio.no/studier/opptak/master/poenggrenser-masteropptak-2025.html"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "intmiljo",
+      "label": "Internasjonale miljøstudier",
+      "level": "master2",
+      "desc": "Viser søkningen til NMBUs master i internasjonale miljøstudier.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. alleS, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra institusjonenes egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere og kjønnsfordeling publiseres ikke for NMBU. Vi fant ingen norsk master med tydelig samme profil, så gruppa har foreløpig bare NMBU. NMBU oppgir bare karakterkravet C for opptaket 2024, ikke en tallfestet poenggrense.",
+      "programs": [
+        {
+          "id": "nmbu_intmiljo",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Internasjonale miljøstudier (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": true,
+          "default": true,
+          "source": "local",
+          "url": "https://www.nmbu.no/studier/master-2-aar/internasjonale-miljostudier",
+          "localData": {
+            "2021": {
+              "alleS": 751,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 361,
+              "tilbud": 93,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 739,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 197,
+              "tilbud": 64,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 531,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 119,
+              "tilbud": 88,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 205,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 89,
+              "tilbud": 63,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 217,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 88,
+              "tilbud": 67,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "intrelasjoner",
+      "label": "Internasjonale relasjoner",
+      "level": "master2",
+      "desc": "Sammenligner NMBUs master i internasjonale relasjoner med nærmeste fredsfaglige masterprogram.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. alleS, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra institusjonenes egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere og kjønnsfordeling publiseres ikke for NMBU. UiO har ingen master som heter Internasjonale relasjoner; Peace and Conflict Studies er nærmeste faglige motpart. NMBU oppgir 35 studieplasser og bare karakterkravet C for opptaket 2024. UiO-tallene er fra UiOs egen poenggrenseoversikt og har et annet tellegrunnlag enn DBH. Deltidsvarianten M-IR-DEL er holdt utenfor.",
+      "programs": [
+        {
+          "id": "nmbu_intrel",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Internasjonale relasjoner (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": true,
+          "default": true,
+          "source": "local",
+          "url": "https://www.nmbu.no/studier/master-2-aar/internasjonale-relasjoner",
+          "localData": {
+            "2021": {
+              "alleS": 715,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 309,
+              "tilbud": 109,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 800,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 269,
+              "tilbud": 103,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 679,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 148,
+              "tilbud": 121,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 318,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 172,
+              "tilbud": 134,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 405,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 219,
+              "tilbud": 167,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
+            ]
+          }
+        },
+        {
+          "id": "uio_pecos",
+          "shortName": "UiO",
+          "institusjon": "Universitetet i Oslo",
+          "studiested": "Oslo",
+          "programnavn": "Peace and Conflict Studies (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": true,
+          "source": "local",
+          "url": "https://www.uio.no/english/studies/programmes/peace-master/",
+          "localData": {
+            "2021": {
+              "alleS": 591,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 37,
+              "pg_fv": null,
+              "pg_ord": 4.19
+            },
+            "2022": {
+              "alleS": 546,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 31,
+              "pg_fv": null,
+              "pg_ord": 4.25
+            },
+            "2023": {
+              "alleS": 531,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 48,
+              "pg_fv": null,
+              "pg_ord": 4.22
+            },
+            "2024": {
+              "alleS": 585,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 59,
+              "pg_fv": null,
+              "pg_ord": 4.25
+            },
+            "2025": {
+              "alleS": 578,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 70,
+              "pg_fv": null,
+              "pg_ord": 4.2
+            },
+            "2026": {
+              "alleS": 518,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 50,
+              "pg_fv": null,
+              "pg_ord": 4.08
+            },
+            "localSource": [
+              "https://www.uio.no/studier/opptak/master/poenggrenser-masteropptak-2025.html"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "landskapglobal",
+      "label": "Landskapsarkitektur for global bærekraft",
+      "level": "master2",
+      "desc": "Viser søkningen til NMBUs toårige master i landskapsarkitektur for global bærekraft.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. alleS, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra institusjonenes egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere og kjønnsfordeling publiseres ikke for NMBU. Vi fant ingen tilsvarende toårig landskapsarkitekturmaster ved andre norske institusjoner, så gruppa har foreløpig bare NMBU. NMBU oppgir bare karakterkravet C for opptaket 2024.",
+      "programs": [
+        {
+          "id": "nmbu_gla",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Landskapsarkitektur for global bærekraft (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": true,
+          "default": true,
+          "source": "local",
+          "url": "https://www.nmbu.no/studier/master-2-aar/landskapsarkitektur-global-baerekraft",
+          "localData": {
+            "2021": {
+              "alleS": 213,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 48,
+              "tilbud": 37,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 241,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 68,
+              "tilbud": 47,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 174,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 33,
+              "tilbud": 31,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 88,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 32,
+              "tilbud": 27,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 123,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 37,
+              "tilbud": 35,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "samfok_miljo",
+      "label": "Samfunnsøkonomi og miljøforvaltning",
+      "level": "master2",
+      "desc": "Sammenligner NMBUs samfunnsøkonomiske master med de øvrige norske samfunnsøkonomimasterne.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. alleS, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra institusjonenes egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere og kjønnsfordeling publiseres ikke for NMBU. NMBU oppgir 35 studieplasser og poenggrense C/3,00 ved opptaket 2025; første opptak var i 2024. UiO-tallene er fra UiOs egen poenggrenseoversikt. UiB-tallene er fra fakultetsstyresak 53/25 og gjelder førstevalgssøkere, ikke alle søknadsalternativer; UiB publiserer ikke antall kvalifiserte søkere totalt, og 2026 var ikke publisert.",
+      "programs": [
+        {
+          "id": "nmbu_eeg",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Samfunnsøkonomi og miljøforvaltning (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": true,
+          "default": true,
+          "source": "local",
+          "url": "https://www.nmbu.no/studier/master-2-aar/samfunnsokonomi-og-miljoforvaltning",
+          "localData": {
+            "2021": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 188,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 50,
+              "tilbud": 21,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 257,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 78,
+              "tilbud": 59,
+              "pg_fv": null,
+              "pg_ord": 3.0
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
+            ]
+          }
+        },
+        {
+          "id": "ntnu_msok",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiested": "Trondheim",
+          "programnavn": "Samfunnsøkonomi (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": true,
+          "source": "local",
+          "url": "https://www.ntnu.no/studier/msok",
+          "localData": {
+            "2021": {
+              "alleS": 312,
+              "fvS": 90,
+              "plasser": 25,
+              "kvinner": null,
+              "kvalifiserte": 106,
+              "tilbud": 67,
+              "pg_fv": null,
+              "pg_ord": 3.0
+            },
+            "2022": {
+              "alleS": 284,
+              "fvS": 69,
+              "plasser": 25,
+              "kvinner": null,
+              "kvalifiserte": 89,
+              "tilbud": 50,
+              "pg_fv": null,
+              "pg_ord": 2.5
+            },
+            "2023": {
+              "alleS": 279,
+              "fvS": 75,
+              "plasser": 25,
+              "kvinner": null,
+              "kvalifiserte": 105,
+              "tilbud": 67,
+              "pg_fv": null,
+              "pg_ord": 2.5
+            },
+            "2024": {
+              "alleS": 275,
+              "fvS": 66,
+              "plasser": 25,
+              "kvinner": null,
+              "kvalifiserte": 85,
+              "tilbud": 55,
+              "pg_fv": null,
+              "pg_ord": 2.5
+            },
+            "2025": {
+              "alleS": 321,
+              "fvS": 72,
+              "plasser": 25,
+              "kvinner": null,
+              "kvalifiserte": 107,
+              "tilbud": 65,
+              "pg_fv": null,
+              "pg_ord": 2.5
+            },
+            "2026": {
+              "alleS": 359,
+              "fvS": 98,
+              "plasser": 25,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": 3.1
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
+              "https://www.ntnu.no/studier/opptak/statistikk"
+            ]
+          }
+        },
+        {
+          "id": "uio_economics",
+          "shortName": "UiO",
+          "institusjon": "Universitetet i Oslo",
+          "studiested": "Oslo",
+          "programnavn": "Economics (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": true,
+          "source": "local",
+          "url": "https://www.uio.no/english/studies/programmes/economics-master/",
+          "localData": {
+            "2021": {
+              "alleS": 455,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 149,
+              "pg_fv": null,
+              "pg_ord": 3.11
+            },
+            "2022": {
+              "alleS": 400,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 131,
+              "pg_fv": null,
+              "pg_ord": 3.39
+            },
+            "2023": {
+              "alleS": 355,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 130,
+              "pg_fv": null,
+              "pg_ord": 3.17
+            },
+            "2024": {
+              "alleS": 431,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 171,
+              "pg_fv": null,
+              "pg_ord": 2.7
+            },
+            "2025": {
+              "alleS": 474,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 179,
+              "pg_fv": null,
+              "pg_ord": 3.0
+            },
+            "2026": {
+              "alleS": 482,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 161,
+              "pg_fv": null,
+              "pg_ord": 3.27
+            },
+            "localSource": [
+              "https://www.uio.no/studier/opptak/master/poenggrenser-masteropptak-2025.html"
+            ]
+          }
+        },
+        {
+          "id": "uib_samfunnsokonomi",
+          "shortName": "UiB",
+          "institusjon": "Universitetet i Bergen",
+          "studiested": "Bergen",
+          "programnavn": "Samfunnsøkonomi (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": false,
+          "source": "local",
+          "url": "https://www4.uib.no/studier/program/samfunnsokonomi-master",
+          "localData": {
+            "2021": {
+              "alleS": null,
+              "fvS": 163,
+              "plasser": 25,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 60,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": null,
+              "fvS": 145,
+              "plasser": 27,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 57,
+              "pg_fv": null,
+              "pg_ord": 3.44
+            },
+            "2023": {
+              "alleS": null,
+              "fvS": 147,
+              "plasser": 27,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 58,
+              "pg_fv": null,
+              "pg_ord": 3.33
+            },
+            "2024": {
+              "alleS": null,
+              "fvS": 149,
+              "plasser": 27,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 69,
+              "pg_fv": null,
+              "pg_ord": 3.22
+            },
+            "2025": {
+              "alleS": null,
+              "fvS": 182,
+              "plasser": 27,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 82,
+              "pg_fv": null,
+              "pg_ord": 3.0
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://www.uib.no/sites/w3.uib.no/files/attachments/53-25_orientering_om_opptaket_2025.pdf"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3183 @@
+{
+  "generert": "2026-09-22",
+  "programkartHentet": "2026-09-22",
+  "years": [
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+  ],
+  "groups": [
+    {
+      "id": "eiendom",
+      "label": "Eiendom",
+      "level": "master5",
+      "desc": "Sammenligner NMBUs femårige eiendomsmaster med andre utdanninger innen landmåling, eiendomsfag og eiendomsmegling.",
+      "note": "Bare NMBU tilbyr et femårig masterløp i eiendomsfag; HVLs landmåling og eiendomsdesign er nærmeste faglige konkurrent, mens bachelorene i eiendomsmegling er tatt med som svakere sammenligning (default false).",
+      "nmbuIds": [
+        "nmbu_eiendom"
+      ],
+      "defaultIds": [
+        "nmbu_eiendom",
+        "hvl_landmaling"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_eiendom",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "192230",
+          "studiested": "Ås",
+          "type": "master",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 44.3,
+              "pg_ord": 51.8
+            },
+            "2021": {
+              "alleS": 701,
+              "fvS": 135,
+              "plasser": 38,
+              "kvinner": 36.3,
+              "kvalifiserte": 675,
+              "tilbud": 60,
+              "pg_fv": 47.0,
+              "pg_ord": 56.8
+            },
+            "2022": {
+              "alleS": 614,
+              "fvS": 108,
+              "plasser": 38,
+              "kvinner": 40.7,
+              "kvalifiserte": 600,
+              "tilbud": 62,
+              "pg_fv": 48.6,
+              "pg_ord": 55.3
+            },
+            "2023": {
+              "alleS": 688,
+              "fvS": 123,
+              "plasser": 38,
+              "kvinner": 38.2,
+              "kvalifiserte": 656,
+              "tilbud": 94,
+              "pg_fv": 47.2,
+              "pg_ord": 50.3
+            },
+            "2024": {
+              "alleS": 695,
+              "fvS": 138,
+              "plasser": 38,
+              "kvinner": 44.9,
+              "kvalifiserte": 663,
+              "tilbud": 96,
+              "pg_fv": 47.5,
+              "pg_ord": 51.9
+            },
+            "2025": {
+              "alleS": 706,
+              "fvS": 143,
+              "plasser": 38,
+              "kvinner": 37.8,
+              "kvalifiserte": 677,
+              "tilbud": 116,
+              "pg_fv": 44.4,
+              "pg_ord": 49.6
+            },
+            "2026": {
+              "alleS": 925,
+              "fvS": 169,
+              "plasser": 40,
+              "kvinner": 45.0,
+              "kvalifiserte": 871,
+              "tilbud": 124,
+              "pg_fv": 46.2,
+              "pg_ord": 51.4
+            }
+          }
+        },
+        {
+          "id": "hvl_landmaling",
+          "shortName": "HVL Bergen",
+          "institusjon": "Høgskulen på Vestlandet",
+          "studiekode": "203753",
+          "studiested": "Bergen",
+          "type": "bachelor",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 41.1,
+              "pg_ord": 48.0
+            },
+            "2021": {
+              "alleS": 796,
+              "fvS": 133,
+              "plasser": 50,
+              "kvinner": 33.1,
+              "kvalifiserte": 764,
+              "tilbud": 120,
+              "pg_fv": 41.7,
+              "pg_ord": 48.7
+            },
+            "2022": {
+              "alleS": 759,
+              "fvS": 130,
+              "plasser": 55,
+              "kvinner": 36.2,
+              "kvalifiserte": 740,
+              "tilbud": 154,
+              "pg_fv": 38.0,
+              "pg_ord": 46.1
+            },
+            "2023": {
+              "alleS": 739,
+              "fvS": 124,
+              "plasser": 55,
+              "kvinner": 37.1,
+              "kvalifiserte": 695,
+              "tilbud": 142,
+              "pg_fv": 41.0,
+              "pg_ord": 46.0
+            },
+            "2024": {
+              "alleS": 778,
+              "fvS": 151,
+              "plasser": 55,
+              "kvinner": 36.4,
+              "kvalifiserte": 741,
+              "tilbud": 192,
+              "pg_fv": 39.5,
+              "pg_ord": 45.0
+            },
+            "2025": {
+              "alleS": 927,
+              "fvS": 185,
+              "plasser": 80,
+              "kvinner": 36.2,
+              "kvalifiserte": 893,
+              "tilbud": 190,
+              "pg_fv": 41.4,
+              "pg_ord": 45.1
+            },
+            "2026": {
+              "alleS": 1161,
+              "fvS": 235,
+              "plasser": 80,
+              "kvinner": 44.3,
+              "kvalifiserte": 1108,
+              "tilbud": 190,
+              "pg_fv": 42.9,
+              "pg_ord": 48.9
+            }
+          }
+        },
+        {
+          "id": "hvl_eiendomsmegling",
+          "shortName": "HVL Sogndal",
+          "institusjon": "Høgskulen på Vestlandet",
+          "studiekode": "203368",
+          "studiested": "Sogndal",
+          "type": "bachelor",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 35.7,
+              "pg_ord": 36.8
+            },
+            "2021": {
+              "alleS": 1213,
+              "fvS": 142,
+              "plasser": 40,
+              "kvinner": 41.5,
+              "kvalifiserte": 1120,
+              "tilbud": 170,
+              "pg_fv": 39.5,
+              "pg_ord": 41.9
+            },
+            "2022": {
+              "alleS": 1185,
+              "fvS": 137,
+              "plasser": 40,
+              "kvinner": 38.7,
+              "kvalifiserte": 1110,
+              "tilbud": 268,
+              "pg_fv": 37.5,
+              "pg_ord": 35.8
+            },
+            "2023": {
+              "alleS": 1170,
+              "fvS": 140,
+              "plasser": 40,
+              "kvinner": 44.3,
+              "kvalifiserte": 1071,
+              "tilbud": 345,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 1012,
+              "fvS": 116,
+              "plasser": 40,
+              "kvinner": 37.1,
+              "kvalifiserte": 887,
+              "tilbud": 265,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 1284,
+              "fvS": 182,
+              "plasser": 40,
+              "kvinner": 36.3,
+              "kvalifiserte": 1151,
+              "tilbud": 248,
+              "pg_fv": 39.2,
+              "pg_ord": 35.4
+            },
+            "2026": {
+              "alleS": 1520,
+              "fvS": 186,
+              "plasser": 40,
+              "kvinner": 42.5,
+              "kvalifiserte": 1373,
+              "tilbud": 240,
+              "pg_fv": 41.2,
+              "pg_ord": 38.8
+            }
+          }
+        },
+        {
+          "id": "nord_eiendomsmegling",
+          "shortName": "Nord",
+          "institusjon": "Nord universitet",
+          "studiekode": "204368",
+          "studiested": "Bodø",
+          "type": "bachelor",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 39.1,
+              "pg_ord": 42.4
+            },
+            "2021": {
+              "alleS": 996,
+              "fvS": 147,
+              "plasser": 30,
+              "kvinner": 32.0,
+              "kvalifiserte": 919,
+              "tilbud": 130,
+              "pg_fv": 41.4,
+              "pg_ord": 43.1
+            },
+            "2022": {
+              "alleS": 877,
+              "fvS": 110,
+              "plasser": 30,
+              "kvinner": 32.7,
+              "kvalifiserte": 827,
+              "tilbud": 140,
+              "pg_fv": 41.6,
+              "pg_ord": 40.0
+            },
+            "2023": {
+              "alleS": 893,
+              "fvS": 127,
+              "plasser": 30,
+              "kvinner": 32.3,
+              "kvalifiserte": 817,
+              "tilbud": 140,
+              "pg_fv": 39.1,
+              "pg_ord": 41.0
+            },
+            "2024": {
+              "alleS": 813,
+              "fvS": 109,
+              "plasser": 30,
+              "kvinner": 33.0,
+              "kvalifiserte": 727,
+              "tilbud": 140,
+              "pg_fv": 39.2,
+              "pg_ord": 37.9
+            },
+            "2025": {
+              "alleS": 786,
+              "fvS": 95,
+              "plasser": 30,
+              "kvinner": 28.4,
+              "kvalifiserte": 702,
+              "tilbud": 170,
+              "pg_fv": 33.8,
+              "pg_ord": 28.5
+            },
+            "2026": {
+              "alleS": 902,
+              "fvS": 142,
+              "plasser": 30,
+              "kvinner": 29.6,
+              "kvalifiserte": 792,
+              "tilbud": 150,
+              "pg_fv": 39.6,
+              "pg_ord": 38.1
+            }
+          }
+        },
+        {
+          "id": "inn_eiendomsmegling",
+          "shortName": "INN",
+          "institusjon": "Universitetet i Innlandet",
+          "studiekode": "209368",
+          "studiested": "Åmot",
+          "type": "bachelor",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 32.5,
+              "pg_ord": 35.4
+            },
+            "2021": {
+              "alleS": 1115,
+              "fvS": 206,
+              "plasser": 50,
+              "kvinner": 43.2,
+              "kvalifiserte": 1001,
+              "tilbud": 150,
+              "pg_fv": 38.1,
+              "pg_ord": 43.8
+            },
+            "2022": {
+              "alleS": 975,
+              "fvS": 142,
+              "plasser": 40,
+              "kvinner": 38.0,
+              "kvalifiserte": 911,
+              "tilbud": 160,
+              "pg_fv": 38.0,
+              "pg_ord": 39.3
+            },
+            "2023": {
+              "alleS": 944,
+              "fvS": 151,
+              "plasser": 50,
+              "kvinner": 35.1,
+              "kvalifiserte": 830,
+              "tilbud": 180,
+              "pg_fv": 36.7,
+              "pg_ord": 37.8
+            }
+          }
+        },
+        {
+          "id": "usn_eiendomsmegling",
+          "shortName": "USN",
+          "institusjon": "Universitetet i Sørøst-Norge",
+          "studiekode": "222368",
+          "studiested": "Midt-Telemark",
+          "type": "bachelor",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 36.0,
+              "pg_ord": 39.2
+            },
+            "2021": {
+              "alleS": 1628,
+              "fvS": 298,
+              "plasser": 70,
+              "kvinner": 45.6,
+              "kvalifiserte": 1495,
+              "tilbud": 201,
+              "pg_fv": 40.0,
+              "pg_ord": 44.1
+            },
+            "2022": {
+              "alleS": 1309,
+              "fvS": 246,
+              "plasser": 70,
+              "kvinner": 49.6,
+              "kvalifiserte": 1228,
+              "tilbud": 230,
+              "pg_fv": 39.0,
+              "pg_ord": 41.5
+            },
+            "2023": {
+              "alleS": 1415,
+              "fvS": 217,
+              "plasser": 70,
+              "kvinner": 38.2,
+              "kvalifiserte": 1288,
+              "tilbud": 244,
+              "pg_fv": 40.4,
+              "pg_ord": 40.0
+            },
+            "2024": {
+              "alleS": 1252,
+              "fvS": 228,
+              "plasser": 70,
+              "kvinner": 44.3,
+              "kvalifiserte": 1116,
+              "tilbud": 250,
+              "pg_fv": 38.5,
+              "pg_ord": 38.5
+            },
+            "2025": {
+              "alleS": 1505,
+              "fvS": 288,
+              "plasser": 80,
+              "kvinner": 44.8,
+              "kvalifiserte": 1352,
+              "tilbud": 298,
+              "pg_fv": 38.8,
+              "pg_ord": 38.2
+            },
+            "2026": {
+              "alleS": 1688,
+              "fvS": 331,
+              "plasser": 80,
+              "kvinner": 38.4,
+              "kvalifiserte": 1500,
+              "tilbud": 295,
+              "pg_fv": 39.1,
+              "pg_ord": 38.9
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "landskapsarkitektur",
+      "label": "Landskapsarkitektur",
+      "level": "master5",
+      "desc": "Sammenligner de norske utdanningene som gir tittelen landskapsarkitekt.",
+      "note": "AHOs masterprogram er et femårig fellesløp med UiT (tre år i Oslo, to år i Tromsø) og har derfor bare én studiekode i Samordna opptak; UiT har ikke egen kode. HVLs program i Sogndal er en bachelor og dermed et svakere sammenligningsgrunnlag. AHO tar opp på grunnlag av opptaksprøve, og poenggrensene deres (ca. 130–160 poeng) er på en annen skala enn skolepoeng; de vises derfor ikke.",
+      "nmbuIds": [
+        "nmbu_la"
+      ],
+      "defaultIds": [
+        "nmbu_la",
+        "aho_la"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_la",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "192732",
+          "studiested": "Ås",
+          "type": "master",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 53.0,
+              "pg_ord": 58.6
+            },
+            "2021": {
+              "alleS": 1058,
+              "fvS": 227,
+              "plasser": 40,
+              "kvinner": 76.7,
+              "kvalifiserte": 1033,
+              "tilbud": 60,
+              "pg_fv": 54.4,
+              "pg_ord": 60.5
+            },
+            "2022": {
+              "alleS": 769,
+              "fvS": 151,
+              "plasser": 40,
+              "kvinner": 75.5,
+              "kvalifiserte": 757,
+              "tilbud": 58,
+              "pg_fv": 54.6,
+              "pg_ord": 60.1
+            },
+            "2023": {
+              "alleS": 872,
+              "fvS": 167,
+              "plasser": 40,
+              "kvinner": 76.6,
+              "kvalifiserte": 852,
+              "tilbud": 90,
+              "pg_fv": 53.8,
+              "pg_ord": 59.6
+            },
+            "2024": {
+              "alleS": 814,
+              "fvS": 175,
+              "plasser": 40,
+              "kvinner": 77.7,
+              "kvalifiserte": 795,
+              "tilbud": 80,
+              "pg_fv": 53.5,
+              "pg_ord": 59.2
+            },
+            "2025": {
+              "alleS": 703,
+              "fvS": 134,
+              "plasser": 40,
+              "kvinner": 77.6,
+              "kvalifiserte": 689,
+              "tilbud": 94,
+              "pg_fv": 52.0,
+              "pg_ord": 56.3
+            },
+            "2026": {
+              "alleS": 732,
+              "fvS": 144,
+              "plasser": 40,
+              "kvinner": 75.0,
+              "kvalifiserte": 714,
+              "tilbud": 106,
+              "pg_fv": 51.3,
+              "pg_ord": 56.4
+            }
+          }
+        },
+        {
+          "id": "aho_la",
+          "shortName": "AHO",
+          "institusjon": "Arkitektur- og designhøgskolen i Oslo",
+          "studiekode": "189732",
+          "studiested": "Oslo",
+          "type": "master",
+          "years": {
+            "2021": {
+              "alleS": 811,
+              "fvS": 96,
+              "plasser": 20,
+              "kvinner": 64.6,
+              "kvalifiserte": 144,
+              "tilbud": 20,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 670,
+              "fvS": 70,
+              "plasser": 20,
+              "kvinner": 81.4,
+              "kvalifiserte": 189,
+              "tilbud": 20,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 610,
+              "fvS": 72,
+              "plasser": 20,
+              "kvinner": 66.7,
+              "kvalifiserte": 134,
+              "tilbud": 20,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 562,
+              "fvS": 81,
+              "plasser": 20,
+              "kvinner": 75.3,
+              "kvalifiserte": 137,
+              "tilbud": 20,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 393,
+              "fvS": 50,
+              "plasser": 20,
+              "kvinner": 56.0,
+              "kvalifiserte": 86,
+              "tilbud": 20,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": 356,
+              "fvS": 49,
+              "plasser": 20,
+              "kvinner": 81.6,
+              "kvalifiserte": 77,
+              "tilbud": 20,
+              "pg_fv": null,
+              "pg_ord": null
+            }
+          }
+        },
+        {
+          "id": "hvl_landskapsplanlegging_la",
+          "shortName": "HVL Sogndal",
+          "institusjon": "Høgskulen på Vestlandet",
+          "studiekode": "203310",
+          "studiested": "Sogndal",
+          "type": "bachelor",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 42.2,
+              "pg_ord": 46.4
+            },
+            "2021": {
+              "alleS": 497,
+              "fvS": 72,
+              "plasser": 35,
+              "kvinner": 63.9,
+              "kvalifiserte": 478,
+              "tilbud": 86,
+              "pg_fv": 44.5,
+              "pg_ord": 49.6
+            },
+            "2022": {
+              "alleS": 432,
+              "fvS": 54,
+              "plasser": 30,
+              "kvinner": 74.1,
+              "kvalifiserte": 423,
+              "tilbud": 104,
+              "pg_fv": 39.3,
+              "pg_ord": 44.4
+            },
+            "2023": {
+              "alleS": 421,
+              "fvS": 55,
+              "plasser": 30,
+              "kvinner": 61.8,
+              "kvalifiserte": 396,
+              "tilbud": 102,
+              "pg_fv": 38.9,
+              "pg_ord": 44.2
+            },
+            "2024": {
+              "alleS": 390,
+              "fvS": 56,
+              "plasser": 35,
+              "kvinner": 48.2,
+              "kvalifiserte": 369,
+              "tilbud": 114,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 373,
+              "fvS": 59,
+              "plasser": 45,
+              "kvinner": 64.4,
+              "kvalifiserte": 359,
+              "tilbud": 107,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 323,
+              "fvS": 39,
+              "plasser": 45,
+              "kvinner": 66.7,
+              "kvalifiserte": 306,
+              "tilbud": 77,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "byregion",
+      "label": "By- og regionplanlegging",
+      "level": "master5",
+      "desc": "Sammenligner NMBUs femårige planleggingsmaster med andre by-, areal- og samfunnsplanleggingsutdanninger.",
+      "note": "Bare UiS' femårige byplanleggingsmaster ligger på samme nivå; de øvrige er bachelorprogram (default false). NTNUs toårige master er tatt med som lokalt opptak og het Fysisk planlegging til og med 2025 – fra 2026 finnes bare Byplanlegging med tilsvarende rammetall, men NTNU bekrefter ikke eksplisitt at det er samme program.",
+      "nmbuIds": [
+        "nmbu_byreg"
+      ],
+      "defaultIds": [
+        "nmbu_byreg",
+        "uis_byplanlegging"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_byreg",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "192949",
+          "studiested": "Ås",
+          "type": "master",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 48.1,
+              "pg_ord": 55.7
+            },
+            "2021": {
+              "alleS": 748,
+              "fvS": 121,
+              "plasser": 45,
+              "kvinner": 52.9,
+              "kvalifiserte": 727,
+              "tilbud": 68,
+              "pg_fv": 49.5,
+              "pg_ord": 58.0
+            },
+            "2022": {
+              "alleS": 591,
+              "fvS": 96,
+              "plasser": 45,
+              "kvinner": 49.0,
+              "kvalifiserte": 575,
+              "tilbud": 70,
+              "pg_fv": 50.7,
+              "pg_ord": 56.4
+            },
+            "2023": {
+              "alleS": 567,
+              "fvS": 86,
+              "plasser": 45,
+              "kvinner": 64.0,
+              "kvalifiserte": 554,
+              "tilbud": 98,
+              "pg_fv": 48.5,
+              "pg_ord": 53.3
+            },
+            "2024": {
+              "alleS": 619,
+              "fvS": 97,
+              "plasser": 45,
+              "kvinner": 52.6,
+              "kvalifiserte": 610,
+              "tilbud": 100,
+              "pg_fv": 48.0,
+              "pg_ord": 52.2
+            },
+            "2025": {
+              "alleS": 595,
+              "fvS": 95,
+              "plasser": 45,
+              "kvinner": 52.6,
+              "kvalifiserte": 569,
+              "tilbud": 120,
+              "pg_fv": 43.8,
+              "pg_ord": 49.5
+            },
+            "2026": {
+              "alleS": 734,
+              "fvS": 108,
+              "plasser": 45,
+              "kvinner": 54.6,
+              "kvalifiserte": 699,
+              "tilbud": 130,
+              "pg_fv": 44.3,
+              "pg_ord": 51.3
+            }
+          }
+        },
+        {
+          "id": "uis_byplanlegging",
+          "shortName": "UiS",
+          "institusjon": "Universitetet i Stavanger",
+          "studiekode": "217938",
+          "studiested": "Stavanger",
+          "type": "master",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 227,
+              "fvS": 18,
+              "plasser": 12,
+              "kvinner": 44.4,
+              "kvalifiserte": 127,
+              "tilbud": 29,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 227,
+              "fvS": 16,
+              "plasser": 7,
+              "kvinner": 18.8,
+              "kvalifiserte": 116,
+              "tilbud": 18,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "uis_byplan_samfsikkerhet",
+          "shortName": "UiS (bachelor)",
+          "institusjon": "Universitetet i Stavanger",
+          "studiekode": "217530",
+          "studiested": "Stavanger",
+          "type": "bachelor",
+          "years": {
+            "2021": {
+              "alleS": 1231,
+              "fvS": 184,
+              "plasser": 20,
+              "kvinner": 54.3,
+              "kvalifiserte": 1155,
+              "tilbud": 50,
+              "pg_fv": 45.5,
+              "pg_ord": 54.8
+            },
+            "2022": {
+              "alleS": 752,
+              "fvS": 100,
+              "plasser": 32,
+              "kvinner": 53.0,
+              "kvalifiserte": 728,
+              "tilbud": 60,
+              "pg_fv": 45.5,
+              "pg_ord": 51.4
+            },
+            "2023": {
+              "alleS": 762,
+              "fvS": 97,
+              "plasser": 35,
+              "kvinner": 52.6,
+              "kvalifiserte": 727,
+              "tilbud": 90,
+              "pg_fv": 45.6,
+              "pg_ord": 48.5
+            },
+            "2024": {
+              "alleS": 890,
+              "fvS": 116,
+              "plasser": 35,
+              "kvinner": 43.1,
+              "kvalifiserte": 844,
+              "tilbud": 110,
+              "pg_fv": 43.0,
+              "pg_ord": 47.1
+            },
+            "2025": {
+              "alleS": 809,
+              "fvS": 117,
+              "plasser": 35,
+              "kvinner": 56.4,
+              "kvalifiserte": 761,
+              "tilbud": 110,
+              "pg_fv": 42.1,
+              "pg_ord": 47.5
+            },
+            "2026": {
+              "alleS": 849,
+              "fvS": 111,
+              "plasser": 35,
+              "kvinner": 48.6,
+              "kvalifiserte": 798,
+              "tilbud": 110,
+              "pg_fv": 42.1,
+              "pg_ord": 47.0
+            }
+          }
+        },
+        {
+          "id": "uis_ing_bygg_byplan",
+          "shortName": "UiS (ingeniør)",
+          "institusjon": "Universitetet i Stavanger",
+          "studiekode": "217067",
+          "studiested": "Stavanger",
+          "type": "bachelor",
+          "years": {
+            "2023": {
+              "alleS": 183,
+              "fvS": 16,
+              "plasser": 15,
+              "kvinner": 37.5,
+              "kvalifiserte": 93,
+              "tilbud": 9,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 214,
+              "fvS": 12,
+              "plasser": 15,
+              "kvinner": 50.0,
+              "kvalifiserte": 106,
+              "tilbud": 8,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 232,
+              "fvS": 17,
+              "plasser": 15,
+              "kvinner": 41.2,
+              "kvalifiserte": 136,
+              "tilbud": 14,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 230,
+              "fvS": 21,
+              "plasser": 15,
+              "kvinner": 52.4,
+              "kvalifiserte": 113,
+              "tilbud": 14,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "uit_samfunnsplanlegging",
+          "shortName": "UiT",
+          "institusjon": "UiT Norges arktiske universitet",
+          "studiekode": "186474",
+          "studiested": "Tromsø",
+          "type": "bachelor",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 174,
+              "fvS": 27,
+              "plasser": 40,
+              "kvinner": 48.1,
+              "kvalifiserte": 161,
+              "tilbud": 50,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 142,
+              "fvS": 14,
+              "plasser": 40,
+              "kvinner": 78.6,
+              "kvalifiserte": 139,
+              "tilbud": 22,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 124,
+              "fvS": 12,
+              "plasser": 40,
+              "kvinner": 83.3,
+              "kvalifiserte": 118,
+              "tilbud": 20,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 136,
+              "fvS": 20,
+              "plasser": 40,
+              "kvinner": 75.0,
+              "kvalifiserte": 129,
+              "tilbud": 22,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 141,
+              "fvS": 11,
+              "plasser": 15,
+              "kvinner": 72.7,
+              "kvalifiserte": 131,
+              "tilbud": 11,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 151,
+              "fvS": 14,
+              "plasser": 15,
+              "kvinner": 57.1,
+              "kvalifiserte": 140,
+              "tilbud": 21,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "nord_geografi_samfplan",
+          "shortName": "Nord",
+          "institusjon": "Nord universitet",
+          "studiekode": "204438",
+          "studiested": "Levanger",
+          "type": "bachelor",
+          "years": {
+            "2022": {
+              "alleS": 152,
+              "fvS": 25,
+              "plasser": 20,
+              "kvinner": 52.0,
+              "kvalifiserte": 143,
+              "tilbud": 31,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 128,
+              "fvS": 27,
+              "plasser": 20,
+              "kvinner": 48.1,
+              "kvalifiserte": 123,
+              "tilbud": 31,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 154,
+              "fvS": 21,
+              "plasser": 20,
+              "kvinner": 52.4,
+              "kvalifiserte": 147,
+              "tilbud": 34,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 129,
+              "fvS": 27,
+              "plasser": 20,
+              "kvinner": 51.9,
+              "kvalifiserte": 123,
+              "tilbud": 29,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 114,
+              "fvS": 19,
+              "plasser": 20,
+              "kvinner": 42.1,
+              "kvalifiserte": 105,
+              "tilbud": 22,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "uia_samfunnsplanlegging",
+          "shortName": "UiA",
+          "institusjon": "Universitetet i Agder",
+          "studiekode": "201474",
+          "studiested": "Kristiansand",
+          "type": "bachelor",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 35.3,
+              "pg_ord": 41.4
+            },
+            "2021": {
+              "alleS": 444,
+              "fvS": 53,
+              "plasser": 40,
+              "kvinner": 58.5,
+              "kvalifiserte": 421,
+              "tilbud": 80,
+              "pg_fv": 38.0,
+              "pg_ord": 44.3
+            },
+            "2022": {
+              "alleS": 369,
+              "fvS": 39,
+              "plasser": 40,
+              "kvinner": 56.4,
+              "kvalifiserte": 357,
+              "tilbud": 68,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 320,
+              "fvS": 46,
+              "plasser": 40,
+              "kvinner": 52.2,
+              "kvalifiserte": 293,
+              "tilbud": 68,
+              "pg_fv": 37.7,
+              "pg_ord": 40.1
+            },
+            "2024": {
+              "alleS": 361,
+              "fvS": 41,
+              "plasser": 40,
+              "kvinner": 56.1,
+              "kvalifiserte": 340,
+              "tilbud": 72,
+              "pg_fv": 36.7,
+              "pg_ord": 37.1
+            },
+            "2025": {
+              "alleS": 280,
+              "fvS": 27,
+              "plasser": 40,
+              "kvinner": 48.1,
+              "kvalifiserte": 264,
+              "tilbud": 48,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 290,
+              "fvS": 26,
+              "plasser": 35,
+              "kvinner": 61.5,
+              "kvalifiserte": 273,
+              "tilbud": 52,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "hivolda_planlegging",
+          "shortName": "HVO",
+          "institusjon": "Høgskulen i Volda",
+          "studiekode": "223452",
+          "studiested": "Volda",
+          "type": "bachelor",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 156,
+              "fvS": 23,
+              "plasser": 15,
+              "kvinner": 43.5,
+              "kvalifiserte": 133,
+              "tilbud": 40,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 155,
+              "fvS": 21,
+              "plasser": 15,
+              "kvinner": 66.7,
+              "kvalifiserte": 140,
+              "tilbud": 29,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 123,
+              "fvS": 19,
+              "plasser": 30,
+              "kvinner": 68.4,
+              "kvalifiserte": 118,
+              "tilbud": 26,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 77,
+              "fvS": 12,
+              "plasser": 30,
+              "kvinner": 33.3,
+              "kvalifiserte": 71,
+              "tilbud": 15,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 79,
+              "fvS": 9,
+              "plasser": 30,
+              "kvinner": 66.7,
+              "kvalifiserte": 73,
+              "tilbud": 10,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 134,
+              "fvS": 16,
+              "plasser": 30,
+              "kvinner": 50.0,
+              "kvalifiserte": 126,
+              "tilbud": 27,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "ntnu_fysisk_planlegging",
+          "shortName": "NTNU (master 2 år)",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "",
+          "studiested": "Trondheim",
+          "type": "master2",
+          "years": {
+            "2021": {
+              "alleS": 212,
+              "fvS": 124,
+              "plasser": 40,
+              "kvinner": null,
+              "kvalifiserte": 170,
+              "tilbud": 71,
+              "pg_fv": null,
+              "pg_ord": 3.3
+            },
+            "2022": {
+              "alleS": 204,
+              "fvS": 104,
+              "plasser": 40,
+              "kvinner": null,
+              "kvalifiserte": 164,
+              "tilbud": 84,
+              "pg_fv": null,
+              "pg_ord": 3.2
+            },
+            "2023": {
+              "alleS": 152,
+              "fvS": 75,
+              "plasser": 30,
+              "kvinner": null,
+              "kvalifiserte": 133,
+              "tilbud": 72,
+              "pg_fv": null,
+              "pg_ord": 2.8
+            },
+            "2024": {
+              "alleS": 150,
+              "fvS": 72,
+              "plasser": 30,
+              "kvinner": null,
+              "kvalifiserte": 125,
+              "tilbud": 74,
+              "pg_fv": null,
+              "pg_ord": 2.4
+            },
+            "2025": {
+              "alleS": 179,
+              "fvS": 97,
+              "plasser": 34,
+              "kvinner": null,
+              "kvalifiserte": 149,
+              "tilbud": 80,
+              "pg_fv": null,
+              "pg_ord": 2.8
+            },
+            "2026": {
+              "alleS": 273,
+              "fvS": 107,
+              "plasser": 34,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": 2.9
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "landskapsingenior",
+      "label": "Landskapsingeniør",
+      "level": "bachelor",
+      "desc": "Sammenligner bachelorutdanningene innen anlegg, uterom og landskapsforvaltning.",
+      "note": "Ingen andre institusjoner tilbyr landskapsingeniør i Samordna opptak 2026; HVLs program i Sogndal er det eneste beslektede bachelorløpet.",
+      "nmbuIds": [
+        "nmbu_landskapsing"
+      ],
+      "defaultIds": [
+        "nmbu_landskapsing",
+        "hvl_landskapsplanlegging"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_landskapsing",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "192310",
+          "studiested": "Ås",
+          "type": "bachelor",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 45.5,
+              "pg_ord": 54.2
+            },
+            "2021": {
+              "alleS": 691,
+              "fvS": 107,
+              "plasser": 25,
+              "kvinner": 57.0,
+              "kvalifiserte": 675,
+              "tilbud": 38,
+              "pg_fv": 50.1,
+              "pg_ord": 57.3
+            },
+            "2022": {
+              "alleS": 561,
+              "fvS": 74,
+              "plasser": 25,
+              "kvinner": 58.1,
+              "kvalifiserte": 549,
+              "tilbud": 38,
+              "pg_fv": 49.0,
+              "pg_ord": 56.8
+            },
+            "2023": {
+              "alleS": 555,
+              "fvS": 66,
+              "plasser": 25,
+              "kvinner": 72.7,
+              "kvalifiserte": 533,
+              "tilbud": 58,
+              "pg_fv": 47.3,
+              "pg_ord": 53.1
+            },
+            "2024": {
+              "alleS": 645,
+              "fvS": 70,
+              "plasser": 25,
+              "kvinner": 61.4,
+              "kvalifiserte": 615,
+              "tilbud": 50,
+              "pg_fv": 49.4,
+              "pg_ord": 55.2
+            },
+            "2025": {
+              "alleS": 562,
+              "fvS": 75,
+              "plasser": 25,
+              "kvinner": 58.7,
+              "kvalifiserte": 540,
+              "tilbud": 65,
+              "pg_fv": 48.6,
+              "pg_ord": 53.2
+            },
+            "2026": {
+              "alleS": 565,
+              "fvS": 69,
+              "plasser": 25,
+              "kvinner": 66.7,
+              "kvalifiserte": 539,
+              "tilbud": 64,
+              "pg_fv": 44.6,
+              "pg_ord": 53.5
+            }
+          }
+        },
+        {
+          "id": "hvl_landskapsplanlegging",
+          "shortName": "HVL Sogndal",
+          "institusjon": "Høgskulen på Vestlandet",
+          "studiekode": "203310",
+          "studiested": "Sogndal",
+          "type": "bachelor",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 42.2,
+              "pg_ord": 46.4
+            },
+            "2021": {
+              "alleS": 497,
+              "fvS": 72,
+              "plasser": 35,
+              "kvinner": 63.9,
+              "kvalifiserte": 478,
+              "tilbud": 86,
+              "pg_fv": 44.5,
+              "pg_ord": 49.6
+            },
+            "2022": {
+              "alleS": 432,
+              "fvS": 54,
+              "plasser": 30,
+              "kvinner": 74.1,
+              "kvalifiserte": 423,
+              "tilbud": 104,
+              "pg_fv": 39.3,
+              "pg_ord": 44.4
+            },
+            "2023": {
+              "alleS": 421,
+              "fvS": 55,
+              "plasser": 30,
+              "kvinner": 61.8,
+              "kvalifiserte": 396,
+              "tilbud": 102,
+              "pg_fv": 38.9,
+              "pg_ord": 44.2
+            },
+            "2024": {
+              "alleS": 390,
+              "fvS": 56,
+              "plasser": 35,
+              "kvinner": 48.2,
+              "kvalifiserte": 369,
+              "tilbud": 114,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 373,
+              "fvS": 59,
+              "plasser": 45,
+              "kvinner": 64.4,
+              "kvalifiserte": 359,
+              "tilbud": 107,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 323,
+              "fvS": 39,
+              "plasser": 45,
+              "kvinner": 66.7,
+              "kvalifiserte": 306,
+              "tilbud": 77,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "miljoutvikling",
+      "label": "Internasjonale miljø- og utviklingsstudier",
+      "level": "bachelor",
+      "desc": "Sammenligner bachelorprogrammene innen utviklingsstudier og internasjonale studier.",
+      "note": "Utviklingsstudiene ved UiO, OsloMet og UiA er de nærmeste konkurrentene; bachelorene i internasjonale studier/relasjoner er tatt med som svakere sammenligning (default false). Årsstudier er utelatt.",
+      "nmbuIds": [
+        "nmbu_ims"
+      ],
+      "defaultIds": [
+        "nmbu_ims",
+        "uio_utvikling_baerekraft",
+        "oslomet_utviklingsstudier",
+        "uia_globale_utviklingsstudier"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_ims",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "192484",
+          "studiested": "Ås",
+          "type": "bachelor",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 52.1,
+              "pg_ord": 55.5
+            },
+            "2021": {
+              "alleS": 467,
+              "fvS": 85,
+              "plasser": 20,
+              "kvinner": 74.1,
+              "kvalifiserte": 417,
+              "tilbud": 50,
+              "pg_fv": 51.5,
+              "pg_ord": 54.0
+            },
+            "2022": {
+              "alleS": 397,
+              "fvS": 51,
+              "plasser": 20,
+              "kvinner": 84.3,
+              "kvalifiserte": 350,
+              "tilbud": 24,
+              "pg_fv": 51.1,
+              "pg_ord": 56.0
+            },
+            "2023": {
+              "alleS": 362,
+              "fvS": 54,
+              "plasser": 22,
+              "kvinner": 77.8,
+              "kvalifiserte": 336,
+              "tilbud": 58,
+              "pg_fv": 48.3,
+              "pg_ord": 45.8
+            },
+            "2024": {
+              "alleS": 406,
+              "fvS": 58,
+              "plasser": 22,
+              "kvinner": 75.9,
+              "kvalifiserte": 369,
+              "tilbud": 68,
+              "pg_fv": 45.1,
+              "pg_ord": 44.7
+            },
+            "2025": {
+              "alleS": 342,
+              "fvS": 38,
+              "plasser": 22,
+              "kvinner": 63.2,
+              "kvalifiserte": 300,
+              "tilbud": 39,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 333,
+              "fvS": 46,
+              "plasser": 22,
+              "kvinner": 73.9,
+              "kvalifiserte": 275,
+              "tilbud": 70,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "uio_utvikling_baerekraft",
+          "shortName": "UiO",
+          "institusjon": "Universitetet i Oslo",
+          "studiekode": "185883",
+          "studiested": "Oslo",
+          "type": "bachelor",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 50.5,
+              "pg_ord": 53.1
+            },
+            "2021": {
+              "alleS": 957,
+              "fvS": 78,
+              "plasser": 50,
+              "kvinner": 78.2,
+              "kvalifiserte": 923,
+              "tilbud": 95,
+              "pg_fv": 50.2,
+              "pg_ord": 53.5
+            },
+            "2022": {
+              "alleS": 785,
+              "fvS": 49,
+              "plasser": 50,
+              "kvinner": 79.6,
+              "kvalifiserte": 760,
+              "tilbud": 95,
+              "pg_fv": 49.1,
+              "pg_ord": 50.5
+            },
+            "2023": {
+              "alleS": 810,
+              "fvS": 76,
+              "plasser": 50,
+              "kvinner": 84.2,
+              "kvalifiserte": 788,
+              "tilbud": 95,
+              "pg_fv": 48.8,
+              "pg_ord": 51.5
+            },
+            "2024": {
+              "alleS": 838,
+              "fvS": 82,
+              "plasser": 50,
+              "kvinner": 81.7,
+              "kvalifiserte": 813,
+              "tilbud": 100,
+              "pg_fv": 46.5,
+              "pg_ord": 50.9
+            },
+            "2025": {
+              "alleS": 723,
+              "fvS": 77,
+              "plasser": 50,
+              "kvinner": 81.8,
+              "kvalifiserte": 696,
+              "tilbud": 100,
+              "pg_fv": 45.8,
+              "pg_ord": 50.5
+            },
+            "2026": {
+              "alleS": 671,
+              "fvS": 79,
+              "plasser": 50,
+              "kvinner": 79.7,
+              "kvalifiserte": 643,
+              "tilbud": 96,
+              "pg_fv": 42.2,
+              "pg_ord": 51.4
+            }
+          }
+        },
+        {
+          "id": "oslomet_utviklingsstudier",
+          "shortName": "OsloMet",
+          "institusjon": "OsloMet - storbyuniversitetet",
+          "studiekode": "215484",
+          "studiested": "Oslo",
+          "type": "bachelor",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 45.4,
+              "pg_ord": 50.1
+            },
+            "2021": {
+              "alleS": 711,
+              "fvS": 69,
+              "plasser": 35,
+              "kvinner": 79.7,
+              "kvalifiserte": 675,
+              "tilbud": 70,
+              "pg_fv": 46.0,
+              "pg_ord": 51.4
+            },
+            "2022": {
+              "alleS": 614,
+              "fvS": 48,
+              "plasser": 35,
+              "kvinner": 75.0,
+              "kvalifiserte": 590,
+              "tilbud": 90,
+              "pg_fv": 43.1,
+              "pg_ord": 45.6
+            },
+            "2023": {
+              "alleS": 708,
+              "fvS": 77,
+              "plasser": 35,
+              "kvinner": 71.4,
+              "kvalifiserte": 671,
+              "tilbud": 80,
+              "pg_fv": 45.0,
+              "pg_ord": 46.9
+            },
+            "2024": {
+              "alleS": 610,
+              "fvS": 46,
+              "plasser": 40,
+              "kvinner": 82.6,
+              "kvalifiserte": 573,
+              "tilbud": 100,
+              "pg_fv": 40.9,
+              "pg_ord": 44.8
+            },
+            "2025": {
+              "alleS": 522,
+              "fvS": 42,
+              "plasser": 30,
+              "kvinner": 83.3,
+              "kvalifiserte": 475,
+              "tilbud": 110,
+              "pg_fv": 0.0,
+              "pg_ord": 35.4
+            },
+            "2026": {
+              "alleS": 485,
+              "fvS": 48,
+              "plasser": 50,
+              "kvinner": 66.7,
+              "kvalifiserte": 430,
+              "tilbud": 115,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "uia_globale_utviklingsstudier",
+          "shortName": "UiA",
+          "institusjon": "Universitetet i Agder",
+          "studiekode": "201484",
+          "studiested": "Kristiansand",
+          "type": "bachelor",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 42.5,
+              "pg_ord": 42.7
+            },
+            "2021": {
+              "alleS": 399,
+              "fvS": 72,
+              "plasser": 25,
+              "kvinner": 76.4,
+              "kvalifiserte": 373,
+              "tilbud": 58,
+              "pg_fv": 44.1,
+              "pg_ord": 47.6
+            },
+            "2022": {
+              "alleS": 474,
+              "fvS": 68,
+              "plasser": 25,
+              "kvinner": 79.4,
+              "kvalifiserte": 449,
+              "tilbud": 55,
+              "pg_fv": 46.4,
+              "pg_ord": 46.8
+            },
+            "2023": {
+              "alleS": 422,
+              "fvS": 55,
+              "plasser": 25,
+              "kvinner": 87.3,
+              "kvalifiserte": 389,
+              "tilbud": 56,
+              "pg_fv": 47.9,
+              "pg_ord": 44.3
+            },
+            "2024": {
+              "alleS": 408,
+              "fvS": 53,
+              "plasser": 25,
+              "kvinner": 71.7,
+              "kvalifiserte": 367,
+              "tilbud": 60,
+              "pg_fv": 39.6,
+              "pg_ord": 42.3
+            },
+            "2025": {
+              "alleS": 373,
+              "fvS": 45,
+              "plasser": 30,
+              "kvinner": 62.2,
+              "kvalifiserte": 333,
+              "tilbud": 58,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 351,
+              "fvS": 43,
+              "plasser": 30,
+              "kvinner": 76.7,
+              "kvalifiserte": 322,
+              "tilbud": 55,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "uio_internasjonale_studier",
+          "shortName": "UiO (int.stud.)",
+          "institusjon": "Universitetet i Oslo",
+          "studiekode": "185872",
+          "studiested": "Oslo",
+          "type": "bachelor",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 55.0,
+              "pg_ord": 59.0
+            },
+            "2021": {
+              "alleS": 1879,
+              "fvS": 353,
+              "plasser": 80,
+              "kvinner": 70.5,
+              "kvalifiserte": 1808,
+              "tilbud": 140,
+              "pg_fv": 55.2,
+              "pg_ord": 59.2
+            },
+            "2022": {
+              "alleS": 1670,
+              "fvS": 325,
+              "plasser": 80,
+              "kvinner": 68.6,
+              "kvalifiserte": 1610,
+              "tilbud": 145,
+              "pg_fv": 55.0,
+              "pg_ord": 58.2
+            },
+            "2023": {
+              "alleS": 1880,
+              "fvS": 356,
+              "plasser": 80,
+              "kvinner": 71.3,
+              "kvalifiserte": 1807,
+              "tilbud": 165,
+              "pg_fv": 54.9,
+              "pg_ord": 58.8
+            },
+            "2024": {
+              "alleS": 2150,
+              "fvS": 446,
+              "plasser": 80,
+              "kvinner": 67.9,
+              "kvalifiserte": 2072,
+              "tilbud": 157,
+              "pg_fv": 54.8,
+              "pg_ord": 59.5
+            },
+            "2025": {
+              "alleS": 2060,
+              "fvS": 433,
+              "plasser": 80,
+              "kvinner": 73.0,
+              "kvalifiserte": 1976,
+              "tilbud": 152,
+              "pg_fv": 54.3,
+              "pg_ord": 60.5
+            },
+            "2026": {
+              "alleS": 2125,
+              "fvS": 409,
+              "plasser": 80,
+              "kvinner": 68.7,
+              "kvalifiserte": 2030,
+              "tilbud": 150,
+              "pg_fv": 54.1,
+              "pg_ord": 60.0
+            }
+          }
+        },
+        {
+          "id": "inn_internasjonale_studier",
+          "shortName": "INN",
+          "institusjon": "Universitetet i Innlandet",
+          "studiekode": "209872",
+          "studiested": "Lillehammer",
+          "type": "bachelor",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 247,
+              "fvS": 46,
+              "plasser": 40,
+              "kvinner": 45.7,
+              "kvalifiserte": 226,
+              "tilbud": 67,
+              "pg_fv": 0.0,
+              "pg_ord": 38.4
+            },
+            "2022": {
+              "alleS": 321,
+              "fvS": 45,
+              "plasser": 40,
+              "kvinner": 46.7,
+              "kvalifiserte": 298,
+              "tilbud": 76,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 265,
+              "fvS": 33,
+              "plasser": 40,
+              "kvinner": 42.4,
+              "kvalifiserte": 240,
+              "tilbud": 70,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 316,
+              "fvS": 38,
+              "plasser": 40,
+              "kvinner": 68.4,
+              "kvalifiserte": 286,
+              "tilbud": 70,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 384,
+              "fvS": 48,
+              "plasser": 40,
+              "kvinner": 58.3,
+              "kvalifiserte": 356,
+              "tilbud": 97,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 372,
+              "fvS": 39,
+              "plasser": 40,
+              "kvinner": 51.3,
+              "kvalifiserte": 343,
+              "tilbud": 90,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "nord_internasjonale_relasjoner_b",
+          "shortName": "Nord",
+          "institusjon": "Nord universitet",
+          "studiekode": "204872",
+          "studiested": "Bodø",
+          "type": "bachelor",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 322,
+              "fvS": 44,
+              "plasser": 20,
+              "kvinner": 38.6,
+              "kvalifiserte": 288,
+              "tilbud": 50,
+              "pg_fv": 41.7,
+              "pg_ord": 43.6
+            },
+            "2022": {
+              "alleS": 252,
+              "fvS": 44,
+              "plasser": 25,
+              "kvinner": 40.9,
+              "kvalifiserte": 230,
+              "tilbud": 56,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 198,
+              "fvS": 26,
+              "plasser": 25,
+              "kvinner": 38.5,
+              "kvalifiserte": 173,
+              "tilbud": 48,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 237,
+              "fvS": 42,
+              "plasser": 20,
+              "kvinner": 66.7,
+              "kvalifiserte": 217,
+              "tilbud": 57,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 271,
+              "fvS": 34,
+              "plasser": 20,
+              "kvinner": 44.1,
+              "kvalifiserte": 241,
+              "tilbud": 36,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 313,
+              "fvS": 44,
+              "plasser": 20,
+              "kvinner": 54.5,
+              "kvalifiserte": 291,
+              "tilbud": 71,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "eiendomsutvikling",
+      "label": "Eiendomsutvikling",
+      "level": "master2",
+      "desc": "Sammenligner de toårige masterne i eiendomsutvikling og -forvaltning.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. alleS, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra institusjonenes egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere og kjønnsfordeling publiseres ikke for NMBU. NMBU oppgir 30 studieplasser og poenggrense 3,5 ved opptaket 2024 på programsiden, men publiserer ingen tidsserie.",
+      "nmbuIds": [
+        "nmbu_eiendomsutvikling"
+      ],
+      "defaultIds": [
+        "nmbu_eiendomsutvikling",
+        "ntnu_eiendomsutvikling"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_eiendomsutvikling",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "",
+          "studiested": "Ås",
+          "type": "master2",
+          "years": {
+            "2021": {
+              "alleS": 220,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 127,
+              "tilbud": 60,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 172,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 119,
+              "tilbud": 81,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 195,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 128,
+              "tilbud": 85,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 215,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 128,
+              "tilbud": 68,
+              "pg_fv": null,
+              "pg_ord": 3.5
+            },
+            "2025": {
+              "alleS": 202,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 112,
+              "tilbud": 71,
+              "pg_fv": null,
+              "pg_ord": null
+            }
+          }
+        },
+        {
+          "id": "ntnu_eiendomsutvikling",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "",
+          "studiested": "Trondheim",
+          "type": "master2",
+          "years": {
+            "2021": {
+              "alleS": 280,
+              "fvS": 113,
+              "plasser": 24,
+              "kvinner": null,
+              "kvalifiserte": 227,
+              "tilbud": 60,
+              "pg_fv": null,
+              "pg_ord": 3.3
+            },
+            "2022": {
+              "alleS": 272,
+              "fvS": 110,
+              "plasser": 24,
+              "kvinner": null,
+              "kvalifiserte": 215,
+              "tilbud": 58,
+              "pg_fv": null,
+              "pg_ord": 3.3
+            },
+            "2023": {
+              "alleS": 262,
+              "fvS": 110,
+              "plasser": 24,
+              "kvinner": null,
+              "kvalifiserte": 220,
+              "tilbud": 80,
+              "pg_fv": null,
+              "pg_ord": 3.3
+            },
+            "2024": {
+              "alleS": 218,
+              "fvS": 91,
+              "plasser": 24,
+              "kvinner": null,
+              "kvalifiserte": 169,
+              "tilbud": 62,
+              "pg_fv": null,
+              "pg_ord": 3.0
+            },
+            "2025": {
+              "alleS": 266,
+              "fvS": 116,
+              "plasser": 30,
+              "kvinner": null,
+              "kvalifiserte": 223,
+              "tilbud": 74,
+              "pg_fv": null,
+              "pg_ord": 3.3
+            },
+            "2026": {
+              "alleS": 302,
+              "fvS": 153,
+              "plasser": 30,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": 3.3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "folkehelse",
+      "label": "Folkehelsevitenskap",
+      "level": "master2",
+      "desc": "Sammenligner de toårige masterne innen folkehelse.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. alleS, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra institusjonenes egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere og kjønnsfordeling publiseres ikke for NMBU. NMBU oppgir 36 studieplasser på programsiden og publiserer ingen poenggrense. NTNUs egne søkertall gjelder bare norske og nordiske søkere og er derfor lavere enn DBH-tallene for dette programmet; 2026-tallet er derfor ikke ført inn. UiOs tall er fra UiOs egen poenggrenseoversikt og har et annet tellegrunnlag enn DBH.",
+      "nmbuIds": [
+        "nmbu_folkehelse"
+      ],
+      "defaultIds": [
+        "nmbu_folkehelse",
+        "ntnu_folkehelse"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_folkehelse",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "",
+          "studiested": "Ås",
+          "type": "master2",
+          "years": {
+            "2021": {
+              "alleS": 232,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 221,
+              "tilbud": 101,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 181,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 175,
+              "tilbud": 106,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 169,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 144,
+              "tilbud": 102,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 195,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 154,
+              "tilbud": 86,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 180,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 170,
+              "tilbud": 128,
+              "pg_fv": null,
+              "pg_ord": null
+            }
+          }
+        },
+        {
+          "id": "ntnu_folkehelse",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "",
+          "studiested": "Trondheim",
+          "type": "master2",
+          "years": {
+            "2021": {
+              "alleS": 430,
+              "fvS": 196,
+              "plasser": 30,
+              "kvinner": null,
+              "kvalifiserte": 364,
+              "tilbud": 129,
+              "pg_fv": null,
+              "pg_ord": 3.8
+            },
+            "2022": {
+              "alleS": 385,
+              "fvS": 126,
+              "plasser": 30,
+              "kvinner": null,
+              "kvalifiserte": 339,
+              "tilbud": 105,
+              "pg_fv": null,
+              "pg_ord": 3.6
+            },
+            "2023": {
+              "alleS": 400,
+              "fvS": 128,
+              "plasser": 30,
+              "kvinner": null,
+              "kvalifiserte": 347,
+              "tilbud": 112,
+              "pg_fv": null,
+              "pg_ord": 3.7
+            },
+            "2024": {
+              "alleS": 369,
+              "fvS": 126,
+              "plasser": 30,
+              "kvinner": null,
+              "kvalifiserte": 323,
+              "tilbud": 134,
+              "pg_fv": null,
+              "pg_ord": 3.4
+            },
+            "2025": {
+              "alleS": 376,
+              "fvS": 119,
+              "plasser": 40,
+              "kvinner": null,
+              "kvalifiserte": 333,
+              "tilbud": 135,
+              "pg_fv": null,
+              "pg_ord": 3.5
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": 140,
+              "plasser": 40,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": 2.9
+            }
+          }
+        },
+        {
+          "id": "uio_folkehelsearbeid",
+          "shortName": "UiO",
+          "institusjon": "Universitetet i Oslo",
+          "studiekode": "",
+          "studiested": "Oslo",
+          "type": "master2",
+          "years": {
+            "2023": {
+              "alleS": 320,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 53,
+              "pg_fv": null,
+              "pg_ord": 3.8
+            },
+            "2024": {
+              "alleS": 369,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 64,
+              "pg_fv": null,
+              "pg_ord": 3.8
+            },
+            "2025": {
+              "alleS": 373,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 178,
+              "pg_fv": null,
+              "pg_ord": 3.1
+            },
+            "2026": {
+              "alleS": 366,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 219,
+              "pg_fv": null,
+              "pg_ord": 2.7
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "globalokonomi",
+      "label": "Global økonomi og politikk",
+      "level": "master2",
+      "desc": "Viser søkningen til NMBUs master i global økonomi og politikk.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. alleS, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra institusjonenes egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere og kjønnsfordeling publiseres ikke for NMBU. Vi fant ingen norsk master med tydelig samme profil (politisk økonomi/global økonomi og politikk), så gruppa har foreløpig bare NMBU. NMBU oppgir 25 studieplasser og poenggrense C/3,00 ved opptaket 2025. Første opptak var i 2024.",
+      "nmbuIds": [
+        "nmbu_gep"
+      ],
+      "defaultIds": [
+        "nmbu_gep"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_gep",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "",
+          "studiested": "Ås",
+          "type": "master2",
+          "years": {
+            "2024": {
+              "alleS": 163,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 28,
+              "tilbud": 17,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 244,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 71,
+              "tilbud": 52,
+              "pg_fv": null,
+              "pg_ord": 3.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "globaleutvikling",
+      "label": "Globale utviklingsstudier",
+      "level": "master2",
+      "desc": "Sammenligner de toårige masterne innen globale utviklingsstudier.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. alleS, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra institusjonenes egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere og kjønnsfordeling publiseres ikke for NMBU. NMBU-tallene ligger i DBH under programkoden M-DS (Globale utviklingsstudier). NMBU oppgir bare karakterkravet C for opptaket 2024, ikke en tallfestet poenggrense. UiO-tallene er fra UiOs egen poenggrenseoversikt og har et annet tellegrunnlag enn DBH.",
+      "nmbuIds": [
+        "nmbu_globale_utviklingsstudier"
+      ],
+      "defaultIds": [
+        "nmbu_globale_utviklingsstudier",
+        "uio_decc"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_globale_utviklingsstudier",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "",
+          "studiested": "Ås",
+          "type": "master2",
+          "years": {
+            "2021": {
+              "alleS": 718,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 304,
+              "tilbud": 102,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 858,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 297,
+              "tilbud": 99,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 709,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 116,
+              "tilbud": 71,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 220,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 77,
+              "tilbud": 60,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 284,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 95,
+              "tilbud": 67,
+              "pg_fv": null,
+              "pg_ord": null
+            }
+          }
+        },
+        {
+          "id": "uio_decc",
+          "shortName": "UiO",
+          "institusjon": "Universitetet i Oslo",
+          "studiekode": "",
+          "studiested": "Oslo",
+          "type": "master2",
+          "years": {
+            "2021": {
+              "alleS": 548,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 39,
+              "pg_fv": null,
+              "pg_ord": 4.5
+            },
+            "2022": {
+              "alleS": 437,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 42,
+              "pg_fv": null,
+              "pg_ord": 4.4
+            },
+            "2023": {
+              "alleS": 411,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 62,
+              "pg_fv": null,
+              "pg_ord": 4.2
+            },
+            "2024": {
+              "alleS": 390,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 74,
+              "pg_fv": null,
+              "pg_ord": 3.9
+            },
+            "2025": {
+              "alleS": 369,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 68,
+              "pg_fv": null,
+              "pg_ord": 3.8
+            },
+            "2026": {
+              "alleS": 286,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 47,
+              "pg_fv": null,
+              "pg_ord": 3.9
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "intmiljo",
+      "label": "Internasjonale miljøstudier",
+      "level": "master2",
+      "desc": "Viser søkningen til NMBUs master i internasjonale miljøstudier.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. alleS, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra institusjonenes egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere og kjønnsfordeling publiseres ikke for NMBU. Vi fant ingen norsk master med tydelig samme profil, så gruppa har foreløpig bare NMBU. NMBU oppgir bare karakterkravet C for opptaket 2024, ikke en tallfestet poenggrense.",
+      "nmbuIds": [
+        "nmbu_intmiljo"
+      ],
+      "defaultIds": [
+        "nmbu_intmiljo"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_intmiljo",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "",
+          "studiested": "Ås",
+          "type": "master2",
+          "years": {
+            "2021": {
+              "alleS": 751,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 361,
+              "tilbud": 93,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 739,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 197,
+              "tilbud": 64,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 531,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 119,
+              "tilbud": 88,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 205,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 89,
+              "tilbud": 63,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 217,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 88,
+              "tilbud": 67,
+              "pg_fv": null,
+              "pg_ord": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "intrelasjoner",
+      "label": "Internasjonale relasjoner",
+      "level": "master2",
+      "desc": "Sammenligner NMBUs master i internasjonale relasjoner med nærmeste fredsfaglige masterprogram.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. alleS, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra institusjonenes egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere og kjønnsfordeling publiseres ikke for NMBU. UiO har ingen master som heter Internasjonale relasjoner; Peace and Conflict Studies er nærmeste faglige motpart. NMBU oppgir 35 studieplasser og bare karakterkravet C for opptaket 2024. UiO-tallene er fra UiOs egen poenggrenseoversikt og har et annet tellegrunnlag enn DBH. Deltidsvarianten M-IR-DEL er holdt utenfor.",
+      "nmbuIds": [
+        "nmbu_intrel"
+      ],
+      "defaultIds": [
+        "nmbu_intrel",
+        "uio_pecos"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_intrel",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "",
+          "studiested": "Ås",
+          "type": "master2",
+          "years": {
+            "2021": {
+              "alleS": 715,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 309,
+              "tilbud": 109,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 800,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 269,
+              "tilbud": 103,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 679,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 148,
+              "tilbud": 121,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 318,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 172,
+              "tilbud": 134,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 405,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 219,
+              "tilbud": 167,
+              "pg_fv": null,
+              "pg_ord": null
+            }
+          }
+        },
+        {
+          "id": "uio_pecos",
+          "shortName": "UiO",
+          "institusjon": "Universitetet i Oslo",
+          "studiekode": "",
+          "studiested": "Oslo",
+          "type": "master2",
+          "years": {
+            "2021": {
+              "alleS": 591,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 37,
+              "pg_fv": null,
+              "pg_ord": 4.2
+            },
+            "2022": {
+              "alleS": 546,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 31,
+              "pg_fv": null,
+              "pg_ord": 4.2
+            },
+            "2023": {
+              "alleS": 531,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 48,
+              "pg_fv": null,
+              "pg_ord": 4.2
+            },
+            "2024": {
+              "alleS": 585,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 59,
+              "pg_fv": null,
+              "pg_ord": 4.2
+            },
+            "2025": {
+              "alleS": 578,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 70,
+              "pg_fv": null,
+              "pg_ord": 4.2
+            },
+            "2026": {
+              "alleS": 518,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 50,
+              "pg_fv": null,
+              "pg_ord": 4.1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "landskapglobal",
+      "label": "Landskapsarkitektur for global bærekraft",
+      "level": "master2",
+      "desc": "Viser søkningen til NMBUs toårige master i landskapsarkitektur for global bærekraft.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. alleS, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra institusjonenes egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere og kjønnsfordeling publiseres ikke for NMBU. Vi fant ingen tilsvarende toårig landskapsarkitekturmaster ved andre norske institusjoner, så gruppa har foreløpig bare NMBU. NMBU oppgir bare karakterkravet C for opptaket 2024.",
+      "nmbuIds": [
+        "nmbu_gla"
+      ],
+      "defaultIds": [
+        "nmbu_gla"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_gla",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "",
+          "studiested": "Ås",
+          "type": "master2",
+          "years": {
+            "2021": {
+              "alleS": 213,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 48,
+              "tilbud": 37,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 241,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 68,
+              "tilbud": 47,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 174,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 33,
+              "tilbud": 31,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 88,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 32,
+              "tilbud": 27,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 123,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 37,
+              "tilbud": 35,
+              "pg_fv": null,
+              "pg_ord": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "samfok_miljo",
+      "label": "Samfunnsøkonomi og miljøforvaltning",
+      "level": "master2",
+      "desc": "Sammenligner NMBUs samfunnsøkonomiske master med de øvrige norske samfunnsøkonomimasterne.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. alleS, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra institusjonenes egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere og kjønnsfordeling publiseres ikke for NMBU. NMBU oppgir 35 studieplasser og poenggrense C/3,00 ved opptaket 2025; første opptak var i 2024. UiO-tallene er fra UiOs egen poenggrenseoversikt. UiB-tallene er fra fakultetsstyresak 53/25 og gjelder førstevalgssøkere, ikke alle søknadsalternativer; UiB publiserer ikke antall kvalifiserte søkere totalt, og 2026 var ikke publisert.",
+      "nmbuIds": [
+        "nmbu_eeg"
+      ],
+      "defaultIds": [
+        "nmbu_eeg",
+        "ntnu_msok",
+        "uio_economics"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_eeg",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "",
+          "studiested": "Ås",
+          "type": "master2",
+          "years": {
+            "2024": {
+              "alleS": 188,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 50,
+              "tilbud": 21,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 257,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 78,
+              "tilbud": 59,
+              "pg_fv": null,
+              "pg_ord": 3.0
+            }
+          }
+        },
+        {
+          "id": "ntnu_msok",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "",
+          "studiested": "Trondheim",
+          "type": "master2",
+          "years": {
+            "2021": {
+              "alleS": 312,
+              "fvS": 90,
+              "plasser": 25,
+              "kvinner": null,
+              "kvalifiserte": 106,
+              "tilbud": 67,
+              "pg_fv": null,
+              "pg_ord": 3.0
+            },
+            "2022": {
+              "alleS": 284,
+              "fvS": 69,
+              "plasser": 25,
+              "kvinner": null,
+              "kvalifiserte": 89,
+              "tilbud": 50,
+              "pg_fv": null,
+              "pg_ord": 2.5
+            },
+            "2023": {
+              "alleS": 279,
+              "fvS": 75,
+              "plasser": 25,
+              "kvinner": null,
+              "kvalifiserte": 105,
+              "tilbud": 67,
+              "pg_fv": null,
+              "pg_ord": 2.5
+            },
+            "2024": {
+              "alleS": 275,
+              "fvS": 66,
+              "plasser": 25,
+              "kvinner": null,
+              "kvalifiserte": 85,
+              "tilbud": 55,
+              "pg_fv": null,
+              "pg_ord": 2.5
+            },
+            "2025": {
+              "alleS": 321,
+              "fvS": 72,
+              "plasser": 25,
+              "kvinner": null,
+              "kvalifiserte": 107,
+              "tilbud": 65,
+              "pg_fv": null,
+              "pg_ord": 2.5
+            },
+            "2026": {
+              "alleS": 359,
+              "fvS": 98,
+              "plasser": 25,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": 3.1
+            }
+          }
+        },
+        {
+          "id": "uio_economics",
+          "shortName": "UiO",
+          "institusjon": "Universitetet i Oslo",
+          "studiekode": "",
+          "studiested": "Oslo",
+          "type": "master2",
+          "years": {
+            "2021": {
+              "alleS": 455,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 149,
+              "pg_fv": null,
+              "pg_ord": 3.1
+            },
+            "2022": {
+              "alleS": 400,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 131,
+              "pg_fv": null,
+              "pg_ord": 3.4
+            },
+            "2023": {
+              "alleS": 355,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 130,
+              "pg_fv": null,
+              "pg_ord": 3.2
+            },
+            "2024": {
+              "alleS": 431,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 171,
+              "pg_fv": null,
+              "pg_ord": 2.7
+            },
+            "2025": {
+              "alleS": 474,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 179,
+              "pg_fv": null,
+              "pg_ord": 3.0
+            },
+            "2026": {
+              "alleS": 482,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 161,
+              "pg_fv": null,
+              "pg_ord": 3.3
+            }
+          }
+        },
+        {
+          "id": "uib_samfunnsokonomi",
+          "shortName": "UiB",
+          "institusjon": "Universitetet i Bergen",
+          "studiekode": "",
+          "studiested": "Bergen",
+          "type": "master2",
+          "years": {
+            "2021": {
+              "alleS": null,
+              "fvS": 163,
+              "plasser": 25,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 60,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": null,
+              "fvS": 145,
+              "plasser": 27,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 57,
+              "pg_fv": null,
+              "pg_ord": 3.4
+            },
+            "2023": {
+              "alleS": null,
+              "fvS": 147,
+              "plasser": 27,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 58,
+              "pg_fv": null,
+              "pg_ord": 3.3
+            },
+            "2024": {
+              "alleS": null,
+              "fvS": 149,
+              "plasser": 27,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 69,
+              "pg_fv": null,
+              "pg_ord": 3.2
+            },
+            "2025": {
+              "alleS": null,
+              "fvS": 182,
+              "plasser": 27,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": 82,
+              "pg_fv": null,
+              "pg_ord": 3.0
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

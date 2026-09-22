@@ -15,7 +15,8 @@ export interface FullYearData {
   pg_ord:       number | null; // poenggrense ordinær kvote
 }
 
-export type ProgramType = 'bachelor' | 'sivilokonom' | 'master' | 'arsstudium' | 'deltid' | 'nettbasert';
+// 'master2' = toårig master med lokalt opptak (ikke via Samordna opptak)
+export type ProgramType = 'bachelor' | 'sivilokonom' | 'master' | 'master2' | 'arsstudium' | 'deltid' | 'nettbasert';
 
 export interface CampusBreakdown {
   name: string;

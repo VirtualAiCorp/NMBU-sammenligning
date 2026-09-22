@@ -96,3 +96,24 @@ Endringer gjort i `kilde/package.json` for å kjøre utenfor Figma: react og rea
 (Figma leverte dem selv). `--legacy-peer-deps` trengs fordi react-leaflet 5 ber om React 19, men den virker med 18.
 
 Fra Claude Code: launch-konfigurasjonen «boa-sammenligning» (port 5173) ligger i simuleringsverktoy/.claude/launch.json.
+
+## Fakultetsnivå og LANDSAM (lagt til 22.09.2026)
+
+Appen har nå et nivå over: forsiden viser NMBU med kort per fakultet. Handelshøyskolen er dagens app uendret.
+Fakultet for landskap og samfunn (LANDSAM) har foreløpig én visning: **Analyse opptak**.
+
+| Hva | Hvor |
+|---|---|
+| Programkart: LANDSAM-program, konkurrenter, kilder, lokale tall for toårige mastere | `data/landsam/programkart.json` |
+| Kildefiler fra Samordna opptak (søkertall 2021–2026 alle studier; poenggrenser 2020–2026) | `data/landsam/kilder/` |
+| Generator som lager datamodulen fra kildene + programkartet | `scripts/build-landsam-data.py` (validator: `scripts/check-landsam-data.py`) |
+| Generert datamodul (ikke rediger for hånd) | `kilde/src/app/data/landsamAdmissionData.ts` + `.json`-tvilling |
+| Nye komponenter | `FacultyLanding.tsx`, `LandsamLanding.tsx`, `LandsamAdmissionAnalysis.tsx`, `data/landsamPalette.ts` |
+
+Oppdatere tall: last ned nye kildefiler (se URL-ene i toppen av generatoren), juster `programkart.json`, kjør generatoren og validatoren.
+
+Kilder og forbehold:
+- Søkertall: `sokertallrapport.samordnaopptak.no` (programtabell 2026, inneholder 2021–2026). Poenggrenser: SO sin Tableau-rapport, CSV-endepunkt med årsfilter, hovedopptak.
+- Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. Tall for NMBU (søkere, kvalifiserte, tilbud 2021–2025) er hentet fra DBH/HKDIR tabell 379 (NMBU institusjonskode 1173). Førstevalgssøkere, kjønn, plasser per år og poenggrenser 2021–2023 finnes ikke publisert. 2026 mangler i DBH.
+- NTNU-, UiO- og UiB-tall for lokale mastere er fra institusjonenes egne statistikksider; tellegrunnlaget avviker noe fra DBH (står i gruppenotatene).
+- AHO tar opp landskapsarkitekter etter opptaksprøve; poenggrensene deres er på en annen skala og er utelatt.
