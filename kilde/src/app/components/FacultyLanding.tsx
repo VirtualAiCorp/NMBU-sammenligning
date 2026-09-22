@@ -1,20 +1,29 @@
 import type { ReactNode } from 'react';
-import { Building2, Trees, Lock } from 'lucide-react';
+import { Building2, Trees, Atom, Lock } from 'lucide-react';
+import { FACULTIES, FACULTY_IDS, type FacultyId } from '../data/faculties';
 
-export type Faculty = 'hh' | 'landsam';
+export type Faculty = 'hh' | FacultyId;
 
 interface Props {
   onSelect: (faculty: Faculty) => void;
 }
 
-const ACTIVE_FACULTIES: {
+interface FacultyCard {
   id: Faculty;
   icon: ReactNode;
   badge: string;
   title: string;
   subtitle: string;
   desc: string;
-}[] = [
+}
+
+/** Ikonet per fakultet — resten av teksten kommer fra fakultetsregisteret. */
+const FACULTY_ICONS: Record<FacultyId, ReactNode> = {
+  landsam: <Trees className="w-5 h-5" style={{ color: 'var(--nmbu-green-dark)' }} />,
+  realtek: <Atom className="w-5 h-5" style={{ color: 'var(--nmbu-green-dark)' }} />,
+};
+
+const ACTIVE_FACULTIES: FacultyCard[] = [
   {
     id: 'hh',
     icon: <Building2 className="w-5 h-5" style={{ color: 'var(--nmbu-green-dark)' }} />,
@@ -23,21 +32,20 @@ const ACTIVE_FACULTIES: {
     subtitle: 'Økonomi og administrasjon, samfunnsøkonomi, årsstudier',
     desc: 'Opptakstall, poenggrenser, emnekarakterer, karakterindeks, Studiebarometeret og markedsstatus for bachelor, master og årsstudier — sammenlignet med alle norske universiteter og høyskoler.',
   },
-  {
-    id: 'landsam',
-    icon: <Trees className="w-5 h-5" style={{ color: 'var(--nmbu-green-dark)' }} />,
-    badge: 'LANDSAM',
-    title: 'Fakultet for landskap og samfunn',
-    subtitle: 'Eiendom, landskapsarkitektur, by- og regionplanlegging m.fl.',
-    desc: 'Opptakstall og poenggrenser for fakultetets studieprogram sammenlignet med konkurrerende program.',
-  },
+  ...FACULTY_IDS.map((id): FacultyCard => ({
+    id,
+    icon: FACULTY_ICONS[id],
+    badge: FACULTIES[id].shortLabel,
+    title: FACULTIES[id].label,
+    subtitle: FACULTIES[id].subtitle,
+    desc: FACULTIES[id].desc,
+  })),
 ];
 
 const COMING_FACULTIES: { id: string; label: string; sub: string }[] = [
   { id: 'biovit',  label: 'BIOVIT',  sub: 'Biovitenskap' },
   { id: 'kbm',     label: 'KBM',     sub: 'Kjemi, bioteknologi og matvitenskap' },
   { id: 'mina',    label: 'MINA',    sub: 'Miljøvitenskap og naturforvaltning' },
-  { id: 'realtek', label: 'REALTEK', sub: 'Realfag og teknologi' },
   { id: 'vet',     label: 'VET',     sub: 'Veterinærmedisin' },
 ];
 
@@ -92,7 +100,7 @@ export function FacultyLanding({ onSelect }: Props) {
         </div>
 
         {/* Kommer-fakulteter */}
-        <div className="grid grid-cols-5 gap-3">
+        <div className="grid grid-cols-4 gap-3">
           {COMING_FACULTIES.map((f) => (
             <div key={f.id}
               className="rounded-xl p-4 text-left"

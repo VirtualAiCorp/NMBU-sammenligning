@@ -1,10 +1,8 @@
 import { FULL_ADMISSION_DATA, ALL_YEARS } from '../data/fullAdmissionData';
 import { SAMF_DATA, SAMF_YEARS } from '../data/samfData';
 import { ANNUAL_STUDIES_DATA, ANNUAL_YEARS } from '../data/annualStudiesData';
-import { LANDSAM_GROUPS, LANDSAM_YEARS } from '../data/landsamAdmissionData';
-import { LANDSAM_COURSE_GROUPS } from '../data/landsamCourseData';
-import { LANDSAM_COURSE_MAPPING } from '../data/landsamCourseMapping';
-import { LANDSAM_STUDYPLAN_GROUPS, type PlanCourse } from '../data/landsamStudyPlanData';
+import type { FacultyData } from '../data/faculties';
+import type { PlanCourse } from '../data/landsamStudyPlanData';
 
 // ─── Core helpers ─────────────────────────────────────────────────────────────
 
@@ -126,9 +124,9 @@ export function exportAarsstudierCsv() {
   downloadCsv('arsstudier_opptak_2021-2026.csv', lines);
 }
 
-// ─── LANDSAM: Fakultet for landskap og samfunn ───────────────────────────────
+// ─── Fakultet: opptakstall ───────────────────────────────────────────────────
 
-export function exportLandsamCsv() {
+export function exportFacultyAdmissionCsv(faculty: FacultyData) {
   const header = row(
     'Programgruppe', 'Nivå',
     'Institusjon', 'Kortname', 'Studiekode', 'Studiested', 'Type',
@@ -140,9 +138,9 @@ export function exportLandsamCsv() {
 
   const lines: string[] = [header];
 
-  for (const g of LANDSAM_GROUPS) {
+  for (const g of faculty.admissionGroups) {
     for (const e of g.entries) {
-      for (const year of LANDSAM_YEARS) {
+      for (const year of faculty.admissionYears) {
         const d = e.years[year];
         if (!d) continue;
         const sp = d.fvS !== null && d.plasser !== null && d.plasser > 0
@@ -159,16 +157,19 @@ export function exportLandsamCsv() {
     }
   }
 
-  downloadCsv('landsam_opptak_2020-2026.csv', lines);
+  const years = faculty.admissionYears;
+  const spenn = years.length > 0 ? `${years[0]}-${years[years.length - 1]}` : 'tomt';
+  downloadCsv(`${faculty.id}_opptak_${spenn}.csv`, lines);
 }
 
-// ─── LANDSAM: Emner og karakterer ────────────────────────────────────────────
+// ─── Fakultet: emner og karakterer ───────────────────────────────────────────
 
 /**
  * Eksporterer emnerader (ett emne per rad) for de valgte programmene i én
  * programgruppe og ett år. `entryIds` er id-ene fra opptaksdataene.
  */
-export function exportLandsamCoursesCsv(
+export function exportFacultyCoursesCsv(
+  faculty: FacultyData,
   groupId: string,
   entryIds: string[],
   year: number,
@@ -184,7 +185,7 @@ export function exportLandsamCoursesCsv(
   );
 
   const lines: string[] = [header];
-  const group = LANDSAM_COURSE_GROUPS.find((g) => g.id === groupId);
+  const group = faculty.courseGroups.find((g) => g.id === groupId);
 
   if (group) {
     for (const p of group.programs) {
@@ -206,7 +207,7 @@ export function exportLandsamCoursesCsv(
     }
   }
 
-  downloadCsv(`landsam_emner_${groupId}_${year}.csv`, lines);
+  downloadCsv(`${faculty.id}_emner_${groupId}_${year}.csv`, lines);
 }
 
 /**
@@ -215,7 +216,8 @@ export function exportLandsamCoursesCsv(
  * karakterene. Program uten kobling tas med som tomme rader, slik at det går
  * fram hvem som mangler et tilsvarende emne.
  */
-export function exportLandsamCourseTypeCsv(
+export function exportFacultyCourseTypeCsv(
+  faculty: FacultyData,
   groupId: string,
   courseTypeId: string,
   entryIds: string[],
@@ -233,8 +235,8 @@ export function exportLandsamCourseTypeCsv(
   );
 
   const lines: string[] = [header];
-  const group = LANDSAM_COURSE_GROUPS.find((g) => g.id === groupId);
-  const mapping = LANDSAM_COURSE_MAPPING.find((m) => m.groupId === groupId);
+  const group = faculty.courseGroups.find((g) => g.id === groupId);
+  const mapping = faculty.courseMapping.find((m) => m.groupId === groupId);
   const courseType = mapping?.courseTypes.find((c) => c.id === courseTypeId);
 
   if (group && courseType) {
@@ -292,10 +294,10 @@ export function exportLandsamCourseTypeCsv(
     }
   }
 
-  downloadCsv(`landsam_emnetype_${groupId}_${courseTypeId}_${year}.csv`, lines);
+  downloadCsv(`${faculty.id}_emnetype_${groupId}_${courseTypeId}_${year}.csv`, lines);
 }
 
-// ─── LANDSAM: Studieplan (obligatoriske emner) ───────────────────────────────
+// ─── Fakultet: studieplan (obligatoriske emner) ──────────────────────────────
 
 const STUDYPLAN_SEMESTER_ORDER = ['høst', 'januarblokk', 'vår', 'juniblokk', 'helår'];
 
@@ -323,7 +325,8 @@ function sortPlanCourses(courses: PlanCourse[]): PlanCourse[] {
  * emnerekken i studieplanen går fram. Spesialiseringer kommer etter de felles
  * obligatoriske emnene, merket i kolonnen «Del».
  */
-export function exportLandsamStudyPlanCsv(
+export function exportFacultyStudyPlanCsv(
+  faculty: FacultyData,
   groupId: string,
   entryIds: string[],
   year: number,
@@ -339,7 +342,7 @@ export function exportLandsamStudyPlanCsv(
   );
 
   const lines: string[] = [header];
-  const group = LANDSAM_STUDYPLAN_GROUPS.find((g) => g.id === groupId);
+  const group = faculty.studyPlanGroups.find((g) => g.id === groupId);
 
   if (group) {
     for (const p of group.programs) {
@@ -368,5 +371,5 @@ export function exportLandsamStudyPlanCsv(
     }
   }
 
-  downloadCsv(`landsam_studieplan_${groupId}_${year}.csv`, lines);
+  downloadCsv(`${faculty.id}_studieplan_${groupId}_${year}.csv`, lines);
 }

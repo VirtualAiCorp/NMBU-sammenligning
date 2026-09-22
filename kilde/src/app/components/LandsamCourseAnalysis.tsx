@@ -5,22 +5,21 @@ import {
 } from 'recharts';
 import { TrendingUp, TrendingDown, Minus, Info, ExternalLink, Filter, Users, ChevronDown, ChevronRight } from 'lucide-react';
 import { CsvExportButton } from './CsvExportButton';
-import { exportLandsamCoursesCsv, exportLandsamCourseTypeCsv, exportLandsamStudyPlanCsv } from '../utils/csvExport';
-import {
-  LANDSAM_COURSE_GROUPS, LANDSAM_COURSE_YEARS,
-  type LandsamCourseGroup, type ProgramCourses, type CourseGradeYear, type CourseStats,
+import { exportFacultyCoursesCsv, exportFacultyCourseTypeCsv, exportFacultyStudyPlanCsv } from '../utils/csvExport';
+import type {
+  LandsamCourseGroup, ProgramCourses, CourseGradeYear, CourseStats,
 } from '../data/landsamCourseData';
 import {
-  LANDSAM_COURSE_MAPPING,
   type CourseType, type CourseTypeLink,
 } from '../data/landsamCourseMapping';
 import {
-  LANDSAM_STUDYPLAN_GROUPS,
   type PlanCourse, type PlanSpecialisation, type ProgramStudyPlan,
 } from '../data/landsamStudyPlanData';
-import { LANDSAM_GROUPS, LANDSAM_YEARS, type LandsamLevel } from '../data/landsamAdmissionData';
+import type { LandsamLevel } from '../data/landsamAdmissionData';
 import type { FullAdmissionEntry } from '../data/fullAdmissionData';
-import { landsamColorFor } from '../data/landsamPalette';
+import { INGEN_DATA_TEKST, type FacultyData } from '../data/faculties';
+import { FacultyContext, useFaculty, useFacultyColor } from '../data/facultyContext';
+import { landsamColorForGroups } from '../data/landsamPalette';
 import { landsamCourseHasComparison } from '../data/landsamUtils';
 
 // ─── Felles ───────────────────────────────────────────────────────────────────
@@ -136,8 +135,8 @@ function TrendChip({ val, prev, dec = 2, unit = '' }: { val: number | null; prev
 
 // ─── Programlenker fra opptaksdataene ────────────────────────────────────────
 
-function programUrl(entryId: string): string | undefined {
-  for (const g of LANDSAM_GROUPS) {
+function programUrl(faculty: FacultyData, entryId: string): string | undefined {
+  for (const g of faculty.admissionGroups) {
     const e = g.entries.find((x) => x.id === entryId);
     if (e) return e.url;
   }
@@ -152,8 +151,8 @@ function programUrl(entryId: string): string | undefined {
  * har lokalt opptak: der er `pg_ord` et karaktersnitt fra bachelorgraden (0–5),
  * ikke en poenggrense fra Samordna opptak (~30–60). De to skalaene blandes ikke.
  */
-function admissionEntryFor(entryId: string): FullAdmissionEntry | undefined {
-  for (const g of LANDSAM_GROUPS) {
+function admissionEntryFor(faculty: FacultyData, entryId: string): FullAdmissionEntry | undefined {
+  for (const g of faculty.admissionGroups) {
     const e = g.entries.find((x) => x.id === entryId);
     if (e) return e;
   }
@@ -190,12 +189,12 @@ const EMPTY_ADMISSION: AdmissionInfo = {
  * Mangler året tall, brukes siste tidligere år som har dem, og `pgYear`/`sokerYear`
  * sier hvilket år tallene faktisk er fra.
  */
-function admissionInfo(entryId: string, year: number): AdmissionInfo {
-  const entry = admissionEntryFor(entryId);
+function admissionInfo(faculty: FacultyData, entryId: string, year: number): AdmissionInfo {
+  const entry = admissionEntryFor(faculty, entryId);
   if (!entry) return EMPTY_ADMISSION;
 
   // Til og med det valgte året, nyeste først.
-  const years = LANDSAM_YEARS.filter((y) => Number(y) <= year).slice().reverse();
+  const years = faculty.admissionYears.filter((y) => Number(y) <= year).slice().reverse();
 
   let pgYear: string | null = null;
   let pgOrd: number | null = null;
@@ -313,6 +312,8 @@ function InstitutionPicker({
   year: number;
   minKandidater: number;
 }) {
+  const faculty = useFaculty();
+  const colorFor = useFacultyColor();
   const toggle = (id: string) => {
     if (selected.includes(id)) onChange(selected.filter((s) => s !== id));
     else onChange([...selected, id]);
@@ -331,9 +332,9 @@ function InstitutionPicker({
       <div className="p-3 flex flex-col gap-1.5">
         {group.programs.map((p) => {
           const active = selected.includes(p.entryId);
-          const col = landsamColorFor(p.entryId);
+          const col = colorFor(p.entryId);
           const agg = aggregateProgram(p, year, minKandidater);
-          const url = programUrl(p.entryId);
+          const url = programUrl(faculty, p.entryId);
           return (
             <button key={p.entryId} onClick={() => toggle(p.entryId)}
               className="flex items-center gap-2 px-3 py-2 rounded-lg text-left text-xs transition-all w-full"
@@ -384,6 +385,7 @@ function YearAndThresholdPicker({
   minKandidater: number;
   onMinKandidater: (n: number) => void;
 }) {
+  const COURSE_YEARS = useFaculty().courseYears;
   const yearHasData = (y: number) =>
     group.programs.some((p) => p.courses.some((c) => c.years.some((yr) => yr.year === y && yr.total > 0)));
 
@@ -396,7 +398,7 @@ function YearAndThresholdPicker({
         <div>
           <div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)', marginBottom: 5, fontWeight: 600, letterSpacing: '0.05em', textTransform: 'uppercase' }}>År</div>
           <div className="flex flex-wrap gap-1.5">
-            {LANDSAM_COURSE_YEARS.map((y) => {
+            {COURSE_YEARS.map((y) => {
               const ok = yearHasData(y);
               return (
                 <button key={y} onClick={() => ok && onYear(y)} disabled={!ok}
@@ -484,9 +486,13 @@ function KarakterindeksView({
   year: number;
   minKandidater: number;
 }) {
+  const faculty = useFaculty();
+  const colorFor = useFacultyColor();
+  const COURSE_YEARS = faculty.courseYears;
+
   const prevYear = (() => {
-    const i = LANDSAM_COURSE_YEARS.indexOf(year);
-    return i > 0 ? LANDSAM_COURSE_YEARS[i - 1] : null;
+    const i = COURSE_YEARS.indexOf(year);
+    return i > 0 ? COURSE_YEARS[i - 1] : null;
   })();
 
   const rows = programs
@@ -494,13 +500,13 @@ function KarakterindeksView({
       p,
       agg: aggregateProgram(p, year, minKandidater),
       prev: prevYear ? aggregateProgram(p, prevYear, minKandidater) : null,
-      adm: admissionInfo(p.entryId, year),
+      adm: admissionInfo(faculty, p.entryId, year),
     }))
     .filter((r) => r.agg.snitt !== null)
     .sort((a, b) => (b.agg.snitt ?? 0) - (a.agg.snitt ?? 0));
 
   // Trendlinje: karakterindeks per år
-  const trendData = LANDSAM_COURSE_YEARS.map((y) => {
+  const trendData = COURSE_YEARS.map((y) => {
     const r: Record<string, number | string> = { year: String(y) };
     programs.forEach((p) => {
       const a = aggregateProgram(p, y, minKandidater);
@@ -531,7 +537,7 @@ function KarakterindeksView({
       y: Number((r.agg.snitt as number).toFixed(2)),
       fv: r.adm.pgFv,
       pgYear: r.adm.pgYear as string,
-      col: landsamColorFor(r.p.entryId),
+      col: colorFor(r.p.entryId),
       isNmbu: Boolean(r.p.isNmbu),
     }));
 
@@ -600,7 +606,7 @@ function KarakterindeksView({
         </h3>
         <div className="flex flex-col gap-3">
           {rows.map(({ p, agg, prev, adm }) => {
-            const col = landsamColorFor(p.entryId);
+            const col = colorFor(p.entryId);
             const snitt = agg.snitt!;
             return (
               <div key={p.entryId} className="flex items-center gap-3">
@@ -665,7 +671,7 @@ function KarakterindeksView({
                 contentStyle={{ border: '1px solid var(--nmbu-green-3)', borderRadius: 8, fontSize: 12 }}
               />
               {programs.map((p) => {
-                const col = landsamColorFor(p.entryId);
+                const col = colorFor(p.entryId);
                 return (
                   <Line key={p.entryId} type="monotone" dataKey={p.entryId}
                     stroke={col} strokeWidth={2.5} connectNulls
@@ -786,6 +792,7 @@ function KarakterfordelingView({
   year: number;
   minKandidater: number;
 }) {
+  const colorFor = useFacultyColor();
   const rows = programs
     .map((p) => ({ p, agg: aggregateProgram(p, year, minKandidater) }))
     .filter((r) => r.agg.bokstav > 0 || r.agg.G + r.agg.H > 0);
@@ -809,7 +816,7 @@ function KarakterfordelingView({
             <div key={p.entryId}>
               <div className="flex items-center justify-between gap-3 flex-wrap mb-1.5">
                 <div className="flex items-center gap-1.5">
-                  <div className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: landsamColorFor(p.entryId) }} />
+                  <div className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: colorFor(p.entryId) }} />
                   <span style={{ fontSize: 13, fontWeight: 600, color: 'var(--nmbu-green-dark)' }}>{p.shortName}</span>
                   {p.isNmbu && (
                     <span className="px-1.5 rounded-full" style={{ fontSize: 9, fontWeight: 700, backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)' }}>NMBU</span>
@@ -1444,6 +1451,7 @@ function SammenlignEmneView({
   year: number;
   minKandidater: number;
 }) {
+  const colorFor = useFacultyColor();
   const rader = programs.map((p) => {
     const link = courseType.links.find((l) => l.entryId === p.entryId);
     return { p, link, agg: link ? aggregateCourseType(p, link, year, minKandidater) : null };
@@ -1466,7 +1474,7 @@ function SammenlignEmneView({
           </h3>
           <div className="flex flex-col gap-2">
             {medTall.map(({ p, agg }) => {
-              const col = landsamColorFor(p.entryId);
+              const col = colorFor(p.entryId);
               const snitt = agg!.snitt!;
               return (
                 <div key={p.entryId} className="flex items-center gap-3">
@@ -1498,7 +1506,7 @@ function SammenlignEmneView({
       {/* Ett kort per program */}
       <div className="flex flex-col gap-4">
         {rader.map(({ p, link, agg }) => {
-          const col = landsamColorFor(p.entryId);
+          const col = colorFor(p.entryId);
 
           if (!link || !agg) {
             return (
@@ -1751,6 +1759,7 @@ function StudyPlanTopStrip({
   year: number;
   minKandidater: number;
 }) {
+  const colorFor = useFacultyColor();
   const rader = plans.map((p) => ({ p, agg: aggregatePlanCourses(p.obligatoriske, year, minKandidater) }));
 
   const medPlan = rader
@@ -1766,7 +1775,7 @@ function StudyPlanTopStrip({
   return (
     <div className="flex flex-wrap gap-3">
       {medPlan.map(({ p, agg }) => {
-        const col = landsamColorFor(p.entryId);
+        const col = colorFor(p.entryId);
         return (
           <div key={p.entryId} className="rounded-xl px-4 py-3"
             style={{
@@ -1807,7 +1816,7 @@ function StudyPlanTopStrip({
       })}
 
       {utenPlan.map(({ p }) => {
-        const col = landsamColorFor(p.entryId);
+        const col = colorFor(p.entryId);
         return (
           <div key={p.entryId} className="rounded-xl px-4 py-3"
             style={{
@@ -2024,7 +2033,8 @@ function StudyPlanProgramSection({
   year: number;
   minKandidater: number;
 }) {
-  const col = landsamColorFor(plan.entryId);
+  const colorFor = useFacultyColor();
+  const col = colorFor(plan.entryId);
   const finnes = harStudieplan(plan);
 
   return (
@@ -2108,6 +2118,8 @@ function StudyPlanSideBySide({
   year: number;
   minKandidater: number;
 }) {
+  const colorFor = useFacultyColor();
+
   // Alle studieårene som finnes hos minst ett av programmene, i rekkefølge.
   const aarene: (number | null)[] = [];
   for (const p of plans) {
@@ -2136,7 +2148,7 @@ function StudyPlanSideBySide({
             <div className="grid gap-3 items-start"
               style={{ gridTemplateColumns: `repeat(${plans.length}, minmax(240px, 1fr))`, minWidth: plans.length * 240 }}>
               {plans.map((p) => {
-                const col = landsamColorFor(p.entryId);
+                const col = colorFor(p.entryId);
                 const bolk = groupByStudyYear(p.obligatoriske).find((b) => b.aar === aar);
                 const emner = bolk?.emner ?? [];
                 return (
@@ -2276,12 +2288,13 @@ function NmbuKeyFigures({
   year: number;
   minKandidater: number;
 }) {
+  const COURSE_YEARS = useFaculty().courseYears;
   const nmbuPrograms = group.programs.filter((p) => p.isNmbu);
   if (nmbuPrograms.length === 0) return null;
 
   const prevYear = (() => {
-    const i = LANDSAM_COURSE_YEARS.indexOf(year);
-    return i > 0 ? LANDSAM_COURSE_YEARS[i - 1] : null;
+    const i = COURSE_YEARS.indexOf(year);
+    return i > 0 ? COURSE_YEARS[i - 1] : null;
   })();
 
   const fmt = (d: number, dec = 0) => (d >= 0 ? '+' : '−') + nf(Math.abs(d), dec);
@@ -2348,28 +2361,28 @@ function NmbuKeyFigures({
 type CourseTab = 'indeks' | 'fordeling' | 'emner' | 'sammenlign' | 'studieplan';
 
 /** Emnekoblingen for en programgruppe, eller undefined når den ikke er laget ennå. */
-function courseMappingFor(groupId: string) {
-  return LANDSAM_COURSE_MAPPING.find((m) => m.groupId === groupId);
+function courseMappingFor(faculty: FacultyData, groupId: string) {
+  return faculty.courseMapping.find((m) => m.groupId === groupId);
 }
 
 /**
  * Studieplanene for de valgte programmene i en gruppe, i samme rekkefølge som i
  * institusjonsvelgeren, men med NMBU-programmene først.
  */
-function studyPlansFor(groupId: string, selectedIds: string[]): ProgramStudyPlan[] {
-  const planGroup = LANDSAM_STUDYPLAN_GROUPS.find((g) => g.id === groupId);
+function studyPlansFor(faculty: FacultyData, groupId: string, selectedIds: string[]): ProgramStudyPlan[] {
+  const planGroup = faculty.studyPlanGroups.find((g) => g.id === groupId);
   if (!planGroup) return [];
   const valgte = planGroup.programs.filter((p) => selectedIds.includes(p.entryId));
   return [...valgte.filter((p) => p.isNmbu), ...valgte.filter((p) => !p.isNmbu)];
 }
 
 /** Nyeste år i gruppen som faktisk har emnetall. */
-function latestYearWithData(g: LandsamCourseGroup): number {
-  for (let i = LANDSAM_COURSE_YEARS.length - 1; i >= 0; i--) {
-    const y = LANDSAM_COURSE_YEARS[i];
+function latestYearWithData(courseYears: number[], g: LandsamCourseGroup): number {
+  for (let i = courseYears.length - 1; i >= 0; i--) {
+    const y = courseYears[i];
     if (g.programs.some((p) => p.courses.some((c) => c.years.some((yr) => yr.year === y && yr.total > 0)))) return y;
   }
-  return LANDSAM_COURSE_YEARS[LANDSAM_COURSE_YEARS.length - 1];
+  return courseYears[courseYears.length - 1];
 }
 
 function defaultProgramIds(g: LandsamCourseGroup): string[] {
@@ -2377,27 +2390,33 @@ function defaultProgramIds(g: LandsamCourseGroup): string[] {
   return (withData.length > 0 ? withData : g.programs).map((p) => p.entryId);
 }
 
-export function LandsamCourseAnalysis({ initialGroup }: { initialGroup?: string }) {
+export function LandsamCourseAnalysis({ faculty, initialGroup }: { faculty: FacultyData; initialGroup?: string }) {
+  // Toppkomponenten ligger utenfor sin egen FacultyContext.Provider, så fargene
+  // hentes her rett fra fakultetet.
+  const colorFor = landsamColorForGroups(faculty.admissionGroups);
+  const COURSE_GROUPS = faculty.courseGroups;
+  const COURSE_YEARS = faculty.courseYears;
+
   const firstUsable =
-    LANDSAM_COURSE_GROUPS.find((g) => landsamCourseHasComparison(g))
-    ?? LANDSAM_COURSE_GROUPS[0];
+    COURSE_GROUPS.find((g) => landsamCourseHasComparison(g))
+    ?? COURSE_GROUPS[0];
 
   const [groupId, setGroupId] = useState<string>(
-    initialGroup && LANDSAM_COURSE_GROUPS.some((g) => g.id === initialGroup && landsamCourseHasComparison(g))
+    initialGroup && COURSE_GROUPS.some((g) => g.id === initialGroup && landsamCourseHasComparison(g))
       ? initialGroup
       : (firstUsable?.id ?? '')
   );
 
   const group = useMemo(
-    () => LANDSAM_COURSE_GROUPS.find((g) => g.id === groupId) ?? firstUsable,
-    [groupId, firstUsable]
+    () => COURSE_GROUPS.find((g) => g.id === groupId) ?? firstUsable,
+    [COURSE_GROUPS, groupId, firstUsable]
   );
 
   const [selectedByGroup, setSelectedByGroup] = useState<Record<string, string[]>>(
-    () => Object.fromEntries(LANDSAM_COURSE_GROUPS.map((g) => [g.id, defaultProgramIds(g)]))
+    () => Object.fromEntries(COURSE_GROUPS.map((g) => [g.id, defaultProgramIds(g)]))
   );
   const [yearByGroup, setYearByGroup] = useState<Record<string, number>>(
-    () => Object.fromEntries(LANDSAM_COURSE_GROUPS.map((g) => [g.id, latestYearWithData(g)]))
+    () => Object.fromEntries(COURSE_GROUPS.map((g) => [g.id, latestYearWithData(COURSE_YEARS, g)]))
   );
   const [minKandidater, setMinKandidater] = useState<number>(10);
   const [tab, setTab] = useState<CourseTab>('indeks');
@@ -2408,7 +2427,7 @@ export function LandsamCourseAnalysis({ initialGroup }: { initialGroup?: string 
   if (!group) {
     return (
       <div className="rounded-xl p-8 text-center" style={{ border: '1px solid var(--nmbu-neutral-3)', backgroundColor: '#fff', color: 'var(--nmbu-neutral-2)', fontSize: 13 }}>
-        Ingen emnegrupper er lagt inn ennå.
+        {INGEN_DATA_TEKST}
       </div>
     );
   }
@@ -2416,7 +2435,7 @@ export function LandsamCourseAnalysis({ initialGroup }: { initialGroup?: string 
   const selectedIds = selectedByGroup[group.id] ?? defaultProgramIds(group);
   const setSelectedIds = (ids: string[]) => setSelectedByGroup((prev) => ({ ...prev, [group.id]: ids }));
 
-  const year = yearByGroup[group.id] ?? latestYearWithData(group);
+  const year = yearByGroup[group.id] ?? latestYearWithData(COURSE_YEARS, group);
   const setYear = (y: number) => setYearByGroup((prev) => ({ ...prev, [group.id]: y }));
 
   const selectedPrograms = group.programs.filter((p) => selectedIds.includes(p.entryId));
@@ -2431,9 +2450,9 @@ export function LandsamCourseAnalysis({ initialGroup }: { initialGroup?: string 
     { id: 'studieplan',  label: 'Studieplan' },
   ];
 
-  const selectedPlans = studyPlansFor(group.id, selectedIds);
+  const selectedPlans = studyPlansFor(faculty, group.id, selectedIds);
 
-  const mapping = courseMappingFor(group.id);
+  const mapping = courseMappingFor(faculty, group.id);
   const courseTypes = mapping?.courseTypes ?? [];
   const activeCourseType =
     courseTypes.find((ct) => ct.id === courseTypeByGroup[group.id]) ?? courseTypes[0] ?? null;
@@ -2441,11 +2460,12 @@ export function LandsamCourseAnalysis({ initialGroup }: { initialGroup?: string 
     setCourseTypeByGroup((prev) => ({ ...prev, [group.id]: id }));
 
   return (
+    <FacultyContext.Provider value={faculty}>
     <div className="space-y-5">
 
       {/* Programgruppe-faner */}
       <div className="flex items-center gap-1 rounded-xl p-1.5 flex-wrap" style={{ backgroundColor: 'var(--nmbu-beige-light)', border: '1px solid var(--nmbu-neutral-3)', width: 'fit-content' }}>
-        {LANDSAM_COURSE_GROUPS.map((g) => {
+        {COURSE_GROUPS.map((g) => {
           const ok = landsamCourseHasComparison(g);
           return (
             <button key={g.id} onClick={() => ok && setGroupId(g.id)} disabled={!ok}
@@ -2485,11 +2505,11 @@ export function LandsamCourseAnalysis({ initialGroup }: { initialGroup?: string 
           <div className="flex items-center gap-2 shrink-0">
             <CsvExportButton
               onExport={() => {
-                if (tab === 'studieplan') return exportLandsamStudyPlanCsv(group.id, selectedIds, year, minKandidater);
+                if (tab === 'studieplan') return exportFacultyStudyPlanCsv(faculty, group.id, selectedIds, year, minKandidater);
                 if (tab === 'sammenlign' && activeCourseType) {
-                  return exportLandsamCourseTypeCsv(group.id, activeCourseType.id, selectedIds, year, minKandidater);
+                  return exportFacultyCourseTypeCsv(faculty, group.id, activeCourseType.id, selectedIds, year, minKandidater);
                 }
-                return exportLandsamCoursesCsv(group.id, selectedIds, year, minKandidater);
+                return exportFacultyCoursesCsv(faculty, group.id, selectedIds, year, minKandidater);
               }}
               label={
                 tab === 'studieplan' ? 'Last ned studieplanen som CSV'
@@ -2586,7 +2606,7 @@ export function LandsamCourseAnalysis({ initialGroup }: { initialGroup?: string 
                         <span style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)', fontWeight: 600 }}>Program:</span>
                         {selectedPrograms.map((p) => {
                           const active = activeCourseProgram?.entryId === p.entryId;
-                          const col = landsamColorFor(p.entryId);
+                          const col = colorFor(p.entryId);
                           return (
                             <button key={p.entryId} onClick={() => setCourseProgramId(p.entryId)}
                               className="px-3 py-1 rounded-full text-xs transition-all"
@@ -2718,5 +2738,6 @@ export function LandsamCourseAnalysis({ initialGroup }: { initialGroup?: string 
       </div>
 
     </div>
+    </FacultyContext.Provider>
   );
 }

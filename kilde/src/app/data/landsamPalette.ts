@@ -1,6 +1,6 @@
-// Farger for LANDSAM-opptaksanalysen. NMBU alltid mørkegrønn; kjente institusjoner får
-// samme farger som i resten av appen; ukjente id-er får en deterministisk fallback.
-import { LANDSAM_GROUPS } from './landsamAdmissionData';
+// Farger for fakultetsanalysene. NMBU alltid mørkegrønn; kjente institusjoner får
+// samme farger som i resten av appen; ukjente id-er får en deterministisk fallback
+// basert på rekkefølgen i programgruppene til det aktuelle fakultetet.
 
 export const LANDSAM_PALETTE: Record<string, string> = {
   nmbu:     '#025C4F', // NMBU green
@@ -24,12 +24,30 @@ export const LANDSAM_FALLBACK_PALETTE = [
   '#2E7D32', '#1565C0', '#AD1457', '#EF6C00', '#6A1B9A', '#00838F', '#5D4037', '#9E9D24',
 ];
 
-const ALL_IDS: string[] = LANDSAM_GROUPS.flatMap((g) => g.entries.map((e) => e.id));
+/** Minimumsformen på programgruppene som trengs for å regne ut fallback-fargene. */
+export type PaletteGroups = readonly { readonly entries: readonly { readonly id: string }[] }[];
 
-export function landsamColorFor(id: string): string {
-  if (id.startsWith('nmbu')) return LANDSAM_PALETTE.nmbu;
-  const prefix = id.split('_')[0];
-  if (LANDSAM_PALETTE[prefix]) return LANDSAM_PALETTE[prefix];
-  const idx = Math.max(0, ALL_IDS.indexOf(id));
-  return LANDSAM_FALLBACK_PALETTE[idx % LANDSAM_FALLBACK_PALETTE.length];
+const CACHE = new WeakMap<object, (id: string) => string>();
+
+/**
+ * Lager fargefunksjonen for ett fakultet. Fallback-fargen følger rekkefølgen
+ * programmene har i fakultetets opptaksdata, så samme datasett gir samme farger.
+ */
+export function landsamColorForGroups(groups: PaletteGroups): (id: string) => string {
+  const key = groups as unknown as object;
+  const cached = CACHE.get(key);
+  if (cached) return cached;
+
+  const allIds: string[] = groups.flatMap((g) => g.entries.map((e) => e.id));
+
+  const colorFor = (id: string): string => {
+    if (id.startsWith('nmbu')) return LANDSAM_PALETTE.nmbu;
+    const prefix = id.split('_')[0];
+    if (LANDSAM_PALETTE[prefix]) return LANDSAM_PALETTE[prefix];
+    const idx = Math.max(0, allIds.indexOf(id));
+    return LANDSAM_FALLBACK_PALETTE[idx % LANDSAM_FALLBACK_PALETTE.length];
+  };
+
+  CACHE.set(key, colorFor);
+  return colorFor;
 }

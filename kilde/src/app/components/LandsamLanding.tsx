@@ -1,12 +1,13 @@
 import { TrendingUp, Lock, BookOpen, Globe2 } from 'lucide-react';
-import { LANDSAM_GROUPS } from '../data/landsamAdmissionData';
-import { LANDSAM_COURSE_GROUPS } from '../data/landsamCourseData';
+import { INGEN_DATA_TEKST, type FacultyData } from '../data/faculties';
 import {
   landsamHasComparison, landsamProgramsWithData,
   landsamCourseHasComparison, landsamCourseProgramsWithData,
 } from '../data/landsamUtils';
 
 interface Props {
+  /** Fakultetet som skal vises — all data leses herfra. */
+  faculty: FacultyData;
   /** Åpner opptaksanalysen. groupId = programgruppen som skal være valgt. */
   onOpenAnalysis: (groupId?: string) => void;
   /** Åpner emne- og karakteranalysen. groupId = emnegruppen som skal være valgt. */
@@ -21,7 +22,10 @@ const LEVEL_LABEL: Record<string, string> = {
   master2:  'Toårig master',
 };
 
-export function LandsamLanding({ onOpenAnalysis, onOpenCourses, onBackToFaculties }: Props) {
+export function LandsamLanding({ faculty, onOpenAnalysis, onOpenCourses, onBackToFaculties }: Props) {
+  const admissionGroups = faculty.admissionGroups;
+  const courseGroups = faculty.courseGroups;
+
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-6" style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
       <div className="max-w-3xl w-full">
@@ -41,7 +45,7 @@ export function LandsamLanding({ onOpenAnalysis, onOpenCourses, onBackToFacultie
           <div className="flex items-center gap-3">
             <div className="w-1 h-10 rounded-sm" style={{ backgroundColor: 'var(--nmbu-green-dark)' }} />
             <h1 style={{ fontFamily: "'Lora', serif", fontWeight: 500, fontSize: '2rem', color: 'var(--nmbu-green-dark)' }}>
-              Fakultet for landskap og samfunn
+              {faculty.label}
             </h1>
           </div>
         </div>
@@ -92,8 +96,13 @@ export function LandsamLanding({ onOpenAnalysis, onOpenCourses, onBackToFacultie
 
           {/* Hurtigvalg per programgruppe */}
           <div className="px-8 pb-6 flex items-center gap-3 flex-wrap" style={{ borderTop: '1px solid #F0C040' }}>
-            <span style={{ fontSize: 11, color: '#856404', fontWeight: 600, opacity: 0.7, whiteSpace: 'nowrap', paddingTop: 12 }}>Gå direkte til:</span>
-            {LANDSAM_GROUPS.map((g) => {
+            {admissionGroups.length === 0 && (
+              <span style={{ fontSize: 12, color: 'var(--nmbu-neutral-2)', paddingTop: 12 }}>{INGEN_DATA_TEKST}</span>
+            )}
+            {admissionGroups.length > 0 && (
+              <span style={{ fontSize: 11, color: '#856404', fontWeight: 600, opacity: 0.7, whiteSpace: 'nowrap', paddingTop: 12 }}>Gå direkte til:</span>
+            )}
+            {admissionGroups.map((g) => {
               const ok = landsamHasComparison(g);
               if (!ok) return (
                 <div key={g.id} title="Ikke nok data til sammenligning ennå"
@@ -172,8 +181,13 @@ export function LandsamLanding({ onOpenAnalysis, onOpenCourses, onBackToFacultie
 
           {/* Hurtigvalg per emnegruppe */}
           <div className="px-8 pb-6 flex items-center gap-3 flex-wrap" style={{ borderTop: '1px solid var(--nmbu-green-3)' }}>
-            <span style={{ fontSize: 11, color: 'var(--nmbu-green-dark)', fontWeight: 600, opacity: 0.7, whiteSpace: 'nowrap', paddingTop: 12 }}>Gå direkte til:</span>
-            {LANDSAM_COURSE_GROUPS.map((g) => {
+            {courseGroups.length === 0 && (
+              <span style={{ fontSize: 12, color: 'var(--nmbu-neutral-2)', paddingTop: 12 }}>{INGEN_DATA_TEKST}</span>
+            )}
+            {courseGroups.length > 0 && (
+              <span style={{ fontSize: 11, color: 'var(--nmbu-green-dark)', fontWeight: 600, opacity: 0.7, whiteSpace: 'nowrap', paddingTop: 12 }}>Gå direkte til:</span>
+            )}
+            {courseGroups.map((g) => {
               const ok = landsamCourseHasComparison(g);
               if (!ok) return (
                 <div key={g.id} title="Ikke nok emnetall til sammenligning ennå"

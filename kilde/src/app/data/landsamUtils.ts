@@ -1,5 +1,5 @@
 import type { LandsamGroup } from './landsamAdmissionData';
-import { LANDSAM_COURSE_GROUPS, type LandsamCourseGroup } from './landsamCourseData';
+import type { LandsamCourseGroup } from './landsamCourseData';
 
 /** Antall program i gruppen som har minst ett år med søkertall eller poenggrense. */
 export function landsamProgramsWithData(g: LandsamGroup): number {
@@ -27,7 +27,7 @@ export function landsamCourseHasComparison(g: LandsamCourseGroup): boolean {
   return landsamCourseProgramsWithData(g) >= 2;
 }
 
-/** Sant når minst én emnegruppe har nok tall til å vise noe. */
-export function landsamHasAnyCourseData(): boolean {
-  return LANDSAM_COURSE_GROUPS.some((g) => landsamCourseProgramsWithData(g) >= 1);
+/** Sant når minst én av emnegruppene har nok tall til å vise noe. */
+export function landsamHasAnyCourseData(groups: LandsamCourseGroup[]): boolean {
+  return groups.some((g) => landsamCourseProgramsWithData(g) >= 1);
 }

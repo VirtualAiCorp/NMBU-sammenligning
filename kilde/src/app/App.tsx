@@ -19,18 +19,19 @@ import { FacultyLanding, type Faculty } from './components/FacultyLanding';
 import { LandsamLanding } from './components/LandsamLanding';
 import { LandsamAdmissionAnalysis } from './components/LandsamAdmissionAnalysis';
 import { LandsamCourseAnalysis } from './components/LandsamCourseAnalysis';
+import { FACULTIES } from './data/faculties';
 import { BookOpen, Table2, BarChart2, Star, Scale, Map, GraduationCap, GalleryVerticalEnd, Award, ScatterChart, TrendingUp, ArrowUpRight, Wifi, Globe2 } from 'lucide-react';
 
 type ProgramLevel = 'bachelor' | 'master' | 'opptak2026' | 'markedsstatus';
 type ViewMode = 'course' | 'mapping' | 'admission' | 'karakterindeks' | 'studiebarometer' | 'map' | 'firstyear' | 'online';
 type MasterViewMode = 'masteroppgave' | 'sammenligning' | 'nmbu-emner';
-type LandsamView = 'landing' | 'analyse' | 'emner';
+type FacultyView = 'landing' | 'analyse' | 'emner';
 
 export default function App() {
   const [faculty, setFaculty] = useState<Faculty | null>(null);
-  const [landsamView, setLandsamView] = useState<LandsamView>('landing');
-  const [landsamGroup, setLandsamGroup] = useState<string | undefined>(undefined);
-  const [landsamCourseGroup, setLandsamCourseGroup] = useState<string | undefined>(undefined);
+  const [facultyView, setFacultyView] = useState<FacultyView>('landing');
+  const [facultyGroup, setFacultyGroup] = useState<string | undefined>(undefined);
+  const [facultyCourseGroup, setFacultyCourseGroup] = useState<string | undefined>(undefined);
   const [programLevel, setProgramLevel] = useState<ProgramLevel | null>(null);
   const [selectedUniversities, setSelectedUniversities] = useState<string[]>(
     ['nmbu', 'hio', 'uia', 'usn', 'nhh', 'bi', 'kristiania', 'oslomet', 'ntnu', 'ntnu_gjovik', 'ntnu_alesund', 'uit', 'nla', 'uis', 'inn', 'onh', 'nord', 'hvl', 'himolde', 'inn_rena']
@@ -79,24 +80,27 @@ export default function App() {
   if (faculty === null) {
     return (
       <FacultyLanding
-        onSelect={(f) => { setFaculty(f); setLandsamView('landing'); setLandsamGroup(undefined); setLandsamCourseGroup(undefined); }}
+        onSelect={(f) => { setFaculty(f); setFacultyView('landing'); setFacultyGroup(undefined); setFacultyCourseGroup(undefined); }}
       />
     );
   }
 
-  // ── LANDSAM ───────────────────────────────────────────────────────────────
-  if (faculty === 'landsam') {
-    if (landsamView === 'landing') {
+  // ── Fakultetsskjermene (LANDSAM, REALTEK …) ───────────────────────────────
+  if (faculty === 'landsam' || faculty === 'realtek') {
+    const fac = FACULTIES[faculty];
+
+    if (facultyView === 'landing') {
       return (
         <LandsamLanding
-          onOpenAnalysis={(g) => { setLandsamGroup(g); setLandsamView('analyse'); }}
-          onOpenCourses={(g) => { setLandsamCourseGroup(g); setLandsamView('emner'); }}
+          faculty={fac}
+          onOpenAnalysis={(g) => { setFacultyGroup(g); setFacultyView('analyse'); }}
+          onOpenCourses={(g) => { setFacultyCourseGroup(g); setFacultyView('emner'); }}
           onBackToFaculties={() => setFaculty(null)}
         />
       );
     }
 
-    if (landsamView === 'emner') {
+    if (facultyView === 'emner') {
       return (
         <div className="min-h-screen p-6" style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
           <div className="max-w-7xl mx-auto">
@@ -104,14 +108,14 @@ export default function App() {
             {/* Top-level switcher */}
             <div className="flex items-center gap-2 mb-6">
               <button
-                onClick={() => setLandsamView('landing')}
+                onClick={() => setFacultyView('landing')}
                 className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs transition-all"
                 style={{ backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)' }}
               >
                 ← Tilbake
               </button>
               <span className="px-3 py-1.5 rounded-lg text-xs" style={{ backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-1)' }}>
-                Fakultet for landskap og samfunn
+                {fac.label}
               </span>
             </div>
 
@@ -128,7 +132,11 @@ export default function App() {
               </p>
             </header>
 
-            <LandsamCourseAnalysis key={landsamCourseGroup ?? 'alle'} initialGroup={landsamCourseGroup} />
+            <LandsamCourseAnalysis
+              key={`${fac.id}-${facultyCourseGroup ?? 'alle'}`}
+              faculty={fac}
+              initialGroup={facultyCourseGroup}
+            />
           </div>
         </div>
       );
@@ -141,14 +149,14 @@ export default function App() {
           {/* Top-level switcher */}
           <div className="flex items-center gap-2 mb-6">
             <button
-              onClick={() => setLandsamView('landing')}
+              onClick={() => setFacultyView('landing')}
               className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs transition-all"
               style={{ backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)' }}
             >
               ← Tilbake
             </button>
             <span className="px-3 py-1.5 rounded-lg text-xs" style={{ backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-1)' }}>
-              Fakultet for landskap og samfunn
+              {fac.label}
             </span>
           </div>
 
@@ -165,7 +173,11 @@ export default function App() {
             </p>
           </header>
 
-          <LandsamAdmissionAnalysis key={landsamGroup ?? 'alle'} initialGroup={landsamGroup} />
+          <LandsamAdmissionAnalysis
+            key={`${fac.id}-${facultyGroup ?? 'alle'}`}
+            faculty={fac}
+            initialGroup={facultyGroup}
+          />
         </div>
       </div>
     );

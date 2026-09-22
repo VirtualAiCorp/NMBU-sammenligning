@@ -5,9 +5,10 @@ import {
 } from 'recharts';
 import { TrendingUp, TrendingDown, Minus, Info, ExternalLink, Filter } from 'lucide-react';
 import { CsvExportButton } from './CsvExportButton';
-import { exportLandsamCsv } from '../utils/csvExport';
-import { LANDSAM_GROUPS, LANDSAM_YEARS, type LandsamGroup, type LandsamLevel } from '../data/landsamAdmissionData';
-import { landsamColorFor } from '../data/landsamPalette';
+import { exportFacultyAdmissionCsv } from '../utils/csvExport';
+import type { LandsamGroup, LandsamLevel } from '../data/landsamAdmissionData';
+import { INGEN_DATA_TEKST, type FacultyData } from '../data/faculties';
+import { FacultyContext, useFaculty, useFacultyColor } from '../data/facultyContext';
 import { landsamHasComparison } from '../data/landsamUtils';
 import type { FullAdmissionEntry, FullYearData } from '../data/fullAdmissionData';
 
@@ -60,8 +61,6 @@ const LEVEL_LABEL: Record<LandsamLevel, string> = {
   master2:  'Toårig master',
 };
 
-const YEARS: string[] = [...LANDSAM_YEARS];
-
 // ─── Trend chip ───────────────────────────────────────────────────────────────
 
 function TrendChip({ val, prev }: { val: number | null; prev: number | null }) {
@@ -89,6 +88,7 @@ function InstitutionPicker({
   selected: string[];
   onChange: (ids: string[]) => void;
 }) {
+  const colorFor = useFacultyColor();
   const toggle = (id: string) => {
     if (selected.includes(id)) onChange(selected.filter((s) => s !== id));
     else onChange([...selected, id]);
@@ -107,7 +107,7 @@ function InstitutionPicker({
       <div className="p-3 flex flex-col gap-1.5">
         {group.entries.map((e) => {
           const active = selected.includes(e.id);
-          const col = landsamColorFor(e.id);
+          const col = colorFor(e.id);
           const isNmbu = group.nmbuIds.includes(e.id);
           return (
             <button key={e.id} onClick={() => toggle(e.id)}
@@ -150,6 +150,8 @@ function InstitutionPicker({
 // ─── Trend chart ─────────────────────────────────────────────────────────────
 
 function TrendChart({ selectedEntries, metric }: { selectedEntries: FullAdmissionEntry[]; metric: MetricDef }) {
+  const YEARS = useFaculty().admissionYears;
+  const colorFor = useFacultyColor();
   const data = YEARS.map((year) => {
     const r: Record<string, number | string> = { year };
     selectedEntries.forEach((e) => {
@@ -189,7 +191,7 @@ function TrendChart({ selectedEntries, metric }: { selectedEntries: FullAdmissio
         <ReferenceLine x="2026" stroke="var(--nmbu-green-dark)" strokeDasharray="4 3" strokeWidth={1.5}
           label={{ value: '2026', fill: 'var(--nmbu-green-dark)', fontSize: 10, position: 'top' }} />
         {selectedEntries.map((e) => {
-          const col = landsamColorFor(e.id);
+          const col = colorFor(e.id);
           return (
             <Line key={e.id} type="monotone" dataKey={e.id}
               stroke={col} strokeWidth={2.5} connectNulls
@@ -221,6 +223,7 @@ function BarComparison({
   metric: MetricDef;
   year: string;
 }) {
+  const colorFor = useFacultyColor();
   const data = selectedEntries
     .map((e) => {
       const yr = e.years[year];
@@ -252,7 +255,7 @@ function BarComparison({
         <ReferenceLine x={avg} stroke="#888" strokeDasharray="4 3"
           label={{ value: `Snitt ${nf(avg, metric.decimals)}`, position: 'top', fontSize: 10, fill: '#888' }} />
         <Bar dataKey="value" radius={[0, 4, 4, 0]}>
-          {data.map((d) => <Cell key={d.id} fill={landsamColorFor(d.id)} />)}
+          {data.map((d) => <Cell key={d.id} fill={colorFor(d.id)} />)}
         </Bar>
       </BarChart>
     </ResponsiveContainer>
@@ -268,6 +271,8 @@ function DataTable({
   group: LandsamGroup;
   year: string;
 }) {
+  const YEARS = useFaculty().admissionYears;
+  const colorFor = useFacultyColor();
   const [sortKey, setSortKey] = useState<MetricKey>('pg_ord');
   const [sortAsc, setSortAsc] = useState(false);
 
@@ -315,7 +320,7 @@ function DataTable({
             <tr key={e.id} style={{ borderBottom: '1px solid var(--nmbu-neutral-3)', backgroundColor: i % 2 === 0 ? '#fff' : 'var(--nmbu-beige-light)' }}>
               <td className="px-3 py-2.5">
                 <div className="flex items-center gap-1.5">
-                  <div className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: landsamColorFor(e.id) }} />
+                  <div className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: colorFor(e.id) }} />
                   {e.url ? (
                     <a href={e.url} target="_blank" rel="noopener noreferrer" title="Åpne programsiden"
                       className="flex items-center gap-1 hover:underline" style={{ fontWeight: 600, color: 'var(--nmbu-green-dark)' }}>
@@ -354,6 +359,7 @@ function DataTable({
 // ─── Nøkkeltall for NMBU-programmet/-programmene i gruppen ─────────────────────
 
 function NmbuKeyFigures({ group, year: requestedYear }: { group: LandsamGroup; year: string }) {
+  const YEARS = useFaculty().admissionYears;
   const nmbuEntries = group.entries.filter((e) => group.nmbuIds.includes(e.id));
   if (nmbuEntries.length === 0) return null;
 
@@ -447,20 +453,22 @@ function NmbuKeyFigures({ group, year: requestedYear }: { group: LandsamGroup; y
 
 type ChartTab = 'trend' | 'sammenligning' | 'tabell';
 
-export function LandsamAdmissionAnalysis({ initialGroup }: { initialGroup?: string }) {
-  const firstGroupId = LANDSAM_GROUPS[0]?.id ?? '';
+export function LandsamAdmissionAnalysis({ faculty, initialGroup }: { faculty: FacultyData; initialGroup?: string }) {
+  const GROUPS = faculty.admissionGroups;
+  const YEARS = faculty.admissionYears;
+
+  const firstGroupId = GROUPS[0]?.id ?? '';
   const [groupId, setGroupId] = useState<string>(
-    initialGroup && LANDSAM_GROUPS.some((g) => g.id === initialGroup) ? initialGroup : firstGroupId
+    initialGroup && GROUPS.some((g) => g.id === initialGroup) ? initialGroup : firstGroupId
   );
 
   const group = useMemo(
-    () => LANDSAM_GROUPS.find((g) => g.id === groupId) ?? LANDSAM_GROUPS[0],
-    [groupId]
+    () => GROUPS.find((g) => g.id === groupId) ?? GROUPS[0],
+    [GROUPS, groupId]
   );
-  const isLocal = group.level === 'master2';
 
   const [selectedByGroup, setSelectedByGroup] = useState<Record<string, string[]>>(
-    () => Object.fromEntries(LANDSAM_GROUPS.map((g) => [g.id, g.defaultIds]))
+    () => Object.fromEntries(GROUPS.map((g) => [g.id, g.defaultIds]))
   );
   const [metric, setMetric] = useState<MetricKey>('pg_ord');
   const [chartTab, setChartTab] = useState<ChartTab>('trend');
@@ -469,10 +477,12 @@ export function LandsamAdmissionAnalysis({ initialGroup }: { initialGroup?: stri
   if (!group) {
     return (
       <div className="rounded-xl p-8 text-center" style={{ border: '1px solid var(--nmbu-neutral-3)', backgroundColor: '#fff', color: 'var(--nmbu-neutral-2)', fontSize: 13 }}>
-        Ingen programgrupper er lagt inn ennå.
+        {INGEN_DATA_TEKST}
       </div>
     );
   }
+
+  const isLocal = group.level === 'master2';
 
   const selectedIds = selectedByGroup[group.id] ?? group.defaultIds;
   const setSelectedIds = (ids: string[]) =>
@@ -488,11 +498,12 @@ export function LandsamAdmissionAnalysis({ initialGroup }: { initialGroup?: stri
   ];
 
   return (
+    <FacultyContext.Provider value={faculty}>
     <div className="space-y-5">
 
       {/* Programgruppe-faner — hentet fra data */}
       <div className="flex items-center gap-1 rounded-xl p-1.5 flex-wrap" style={{ backgroundColor: 'var(--nmbu-beige-light)', border: '1px solid var(--nmbu-neutral-3)', width: 'fit-content' }}>
-        {LANDSAM_GROUPS.map((g) => {
+        {GROUPS.map((g) => {
           const ok = landsamHasComparison(g);
           return (
             <button key={g.id} onClick={() => ok && setGroupId(g.id)} disabled={!ok}
@@ -529,7 +540,7 @@ export function LandsamAdmissionAnalysis({ initialGroup }: { initialGroup?: stri
             </p>
           </div>
           <div className="flex items-center gap-2 shrink-0">
-            <CsvExportButton onExport={exportLandsamCsv} label="Last ned CSV" dark />
+            <CsvExportButton onExport={() => exportFacultyAdmissionCsv(faculty)} label="Last ned CSV" dark />
             <a href={isLocal ? 'https://dbh.hkdir.no' : 'https://hkdir.no/sokertall-fra-samordna-opptak-til-nedlasting'}
               target="_blank" rel="noopener noreferrer"
               className="flex items-center gap-1.5 text-xs hover:underline" style={{ color: 'rgba(255,255,255,0.7)' }}>
@@ -658,5 +669,6 @@ export function LandsamAdmissionAnalysis({ initialGroup }: { initialGroup?: stri
       </div>
 
     </div>
+    </FacultyContext.Provider>
   );
 }
