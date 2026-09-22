@@ -1,0 +1,119 @@
+{
+  "entryId": "uio_economics",
+  "programnavn": "Economics (master 2 år)",
+  "institusjon": "Universitetet i Oslo",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.uio.no/english/studies/programmes/economics-master/",
+    "https://www.uio.no/english/studies/programmes/economics-master/structure/"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 70,
+  "obligatoriske": [
+    {
+      "emnekode": "ECON4120",
+      "emnenavn": "Mathematics 2: Calculus and Linear Algebra",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "ECON4120-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ECON4220",
+      "emnenavn": "Microeconomics 3",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "ECON4220-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ECON4310",
+      "emnenavn": "Macroeconomic Theory",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "ECON4310-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ECON4150",
+      "emnenavn": "Introductory Econometrics",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "ECON4150-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ECON4091",
+      "emnenavn": "Master Thesis",
+      "studiepoeng": 30,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "ECON4091-1"
+      ],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Economics (studieretning)",
+      "obligatoriske": []
+    },
+    {
+      "navn": "Environmental-, Resource- and Development Economics (ERDEC) – nedlagt fra høsten 2026",
+      "obligatoriske": [
+        {
+          "emnekode": "ECON4910",
+          "emnenavn": "Environmental Economics",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "ECON4910-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "ECON4915",
+          "emnenavn": "Development Economics",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "ECON4915-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "ECON4925",
+          "emnenavn": "Resource Economics",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "ECON4925-1"
+          ],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Research (studieretning)",
+      "obligatoriske": []
+    }
+  ],
+  "merknad": "Oppbyggingssiden gjelder studenter tatt opp høsten 2019 eller senere og var sist oppdatert 10.04.2026; den er dermed gjeldende plan for 2026/2027. Felles obligatorisk kjerne er 40 sp emner + 30 sp masteroppgave = 70 sp. Har du allerede tatt et av kjerneemnene i bachelorgraden ved UiO, må det erstattes med et valgfritt ECON4000-emne. Studieretningen Economics har ingen ekstra obligatoriske emner (50 sp frie ECON4000-emner). Studieretningen Environmental-, Resource- and Development Economics har tre obligatoriske emner (30 sp), men legges ned fra høsten 2026 – den er tatt med fordi DBH-dataene dekker kull som fulgte den. Studieretningen Research krever «two courses from the list» av ECON5000-emner (20 sp i viderekomne emner), men oppbyggingssiden navngir ikke emnene; de er derfor ikke ført opp, selv om datasettet inneholder ECON5200 Advanced Microeconomics og ECON5300 Advanced Macroeconomic Theory. Alle fem felles obligatoriske emner og alle tre ERDEC-emner er koblet til DBH-koder."
+}

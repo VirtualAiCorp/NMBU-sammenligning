@@ -1,0 +1,1242 @@
+// GENERERT av scripts/build-landsam-studyplans.py 2026-09-22 – ikke rediger for hånd.
+// Kilde: data/landsam/studieplaner/*.json (obligatoriske emner fra studieplanene) koblet til DBH tabell 308/208.
+// Karakterer er summert over dbhEmnekoder per år; snitt A=5…F=0 over bokstavkarakterer.
+import type { LandsamLevel } from './landsamAdmissionData';
+import type { CourseGradeYear } from './landsamCourseData';
+
+export interface PlanCourse {
+  emnekode: string; emnenavn: string; studiepoeng: number | null; aar: number | null; semester: string | null;
+  dbhEmnekoder: string[]; merknad?: string; years: CourseGradeYear[];
+}
+export interface PlanSpecialisation { navn: string; obligatoriske: PlanCourse[]; }
+export interface ProgramStudyPlan {
+  entryId: string; shortName: string; institusjon: string; isNmbu: boolean; programnavn: string;
+  studieplanAar: string | null; kilder: string[]; totaltStudiepoeng: number | null; obligatoriskeStudiepoeng: number | null;
+  merknad?: string; obligatoriske: PlanCourse[]; spesialiseringer: PlanSpecialisation[];
+}
+export interface LandsamStudyPlanGroup { id: string; label: string; level: LandsamLevel; programs: ProgramStudyPlan[]; }
+
+export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
+  {
+    id: 'eiendom', label: 'Eiendom', level: 'master5',
+    programs: [
+      {
+        entryId: 'nmbu_eiendom', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Eiendom (master 5 år)',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'hvl_landmaling', shortName: 'HVL Bergen', institusjon: 'Høgskulen på Vestlandet', isNmbu: false, programnavn: 'Landmåling og eiendomsdesign',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'hvl_eiendomsmegling', shortName: 'HVL Sogndal', institusjon: 'Høgskulen på Vestlandet', isNmbu: false, programnavn: 'Eiendomsmegling, økonomi og jus',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'nord_eiendomsmegling', shortName: 'Nord', institusjon: 'Nord universitet', isNmbu: false, programnavn: 'Eiendomsmegling og markedsanalyser',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'inn_eiendomsmegling', shortName: 'INN', institusjon: 'Universitetet i Innlandet', isNmbu: false, programnavn: 'Eiendomsmegling',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'usn_eiendomsmegling', shortName: 'USN', institusjon: 'Universitetet i Sørøst-Norge', isNmbu: false, programnavn: 'Eiendomsmegling',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'bi_eiendomsmegling', shortName: 'BI', institusjon: 'Handelshøyskolen BI', isNmbu: false, programnavn: 'Bachelor i eiendomsmegling, jus og økonomi',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+    ],
+  },
+  {
+    id: 'landskapsarkitektur', label: 'Landskapsarkitektur', level: 'master5',
+    programs: [
+      {
+        entryId: 'nmbu_la', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Landskapsarkitektur (master 5 år)',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'aho_la', shortName: 'AHO', institusjon: 'Arkitektur- og designhøgskolen i Oslo', isNmbu: false, programnavn: 'Landskapsarkitektur',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'hvl_landskapsplanlegging_la', shortName: 'HVL Sogndal', institusjon: 'Høgskulen på Vestlandet', isNmbu: false, programnavn: 'Landskapsplanlegging med landskapsarkitektur',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+    ],
+  },
+  {
+    id: 'byregion', label: 'By- og regionplanlegging', level: 'master5',
+    programs: [
+      {
+        entryId: 'nmbu_byreg', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'By- og regionplanlegging (master 5 år)',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'uis_byplanlegging', shortName: 'UiS', institusjon: 'Universitetet i Stavanger', isNmbu: false, programnavn: 'Byplanlegging',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'uis_byplan_samfsikkerhet', shortName: 'UiS (bachelor)', institusjon: 'Universitetet i Stavanger', isNmbu: false, programnavn: 'Byplanlegging og samfunnssikkerhet',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'uis_ing_bygg_byplan', shortName: 'UiS (ingeniør)', institusjon: 'Universitetet i Stavanger', isNmbu: false, programnavn: 'Ingeniør, bygg, studieretning byplanlegging',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'uit_samfunnsplanlegging', shortName: 'UiT', institusjon: 'UiT Norges arktiske universitet', isNmbu: false, programnavn: 'Samfunnsplanlegging',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'nord_geografi_samfplan', shortName: 'Nord', institusjon: 'Nord universitet', isNmbu: false, programnavn: 'Geografi og samfunnsplanlegging',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'uia_samfunnsplanlegging', shortName: 'UiA', institusjon: 'Universitetet i Agder', isNmbu: false, programnavn: 'Samfunnsplanlegging og kommunikasjon',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'hivolda_planlegging', shortName: 'HVO', institusjon: 'Høgskulen i Volda', isNmbu: false, programnavn: 'Planlegging, administrasjon og ledelse',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'ntnu_fysisk_planlegging', shortName: 'NTNU (master 2 år)', institusjon: 'Norges teknisk-naturvitenskapelige universitet', isNmbu: false, programnavn: 'Fysisk planlegging (fra 2026 Byplanlegging, master 2 år)',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+    ],
+  },
+  {
+    id: 'landskapsingenior', label: 'Landskapsingeniør', level: 'bachelor',
+    programs: [
+      {
+        entryId: 'nmbu_landskapsing', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Landskapsingeniør (bachelor)',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'hvl_landskapsplanlegging', shortName: 'HVL Sogndal', institusjon: 'Høgskulen på Vestlandet', isNmbu: false, programnavn: 'Landskapsplanlegging med landskapsarkitektur',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+    ],
+  },
+  {
+    id: 'miljoutvikling', label: 'Internasjonale miljø- og utviklingsstudier', level: 'bachelor',
+    programs: [
+      {
+        entryId: 'nmbu_ims', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Internasjonale miljø- og utviklingsstudier (bachelor)',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'uio_utvikling_baerekraft', shortName: 'UiO', institusjon: 'Universitetet i Oslo', isNmbu: false, programnavn: 'Utviklingsstudier og bærekraft',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'oslomet_utviklingsstudier', shortName: 'OsloMet', institusjon: 'OsloMet - storbyuniversitetet', isNmbu: false, programnavn: 'Utviklingsstudier, bachelor',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'uia_globale_utviklingsstudier', shortName: 'UiA', institusjon: 'Universitetet i Agder', isNmbu: false, programnavn: 'Globale utviklingsstudier, bachelor',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'uio_internasjonale_studier', shortName: 'UiO (int.stud.)', institusjon: 'Universitetet i Oslo', isNmbu: false, programnavn: 'Internasjonale studier',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'inn_internasjonale_studier', shortName: 'INN', institusjon: 'Universitetet i Innlandet', isNmbu: false, programnavn: 'Internasjonale studier , bachelor',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'nord_internasjonale_relasjoner_b', shortName: 'Nord', institusjon: 'Nord universitet', isNmbu: false, programnavn: 'Internasjonale relasjoner, bachelor',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+    ],
+  },
+  {
+    id: 'eiendomsutvikling', label: 'Eiendomsutvikling', level: 'master2',
+    programs: [
+      {
+        entryId: 'nmbu_eiendomsutvikling', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Eiendomsutvikling (master 2 år)',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'ntnu_eiendomsutvikling', shortName: 'NTNU', institusjon: 'Norges teknisk-naturvitenskapelige universitet', isNmbu: false, programnavn: 'Eiendomsutvikling og -forvaltning (master 2 år)',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+    ],
+  },
+  {
+    id: 'folkehelse', label: 'Folkehelsevitenskap', level: 'master2',
+    programs: [
+      {
+        entryId: 'nmbu_folkehelse', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Folkehelsevitenskap (master 2 år)',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'ntnu_folkehelse', shortName: 'NTNU', institusjon: 'Norges teknisk-naturvitenskapelige universitet', isNmbu: false, programnavn: 'Folkehelse (master 2 år)',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'uio_folkehelsearbeid', shortName: 'UiO', institusjon: 'Universitetet i Oslo', isNmbu: false, programnavn: 'Folkehelsearbeid og bærekraftige helsetjenester (master 2 år)',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+    ],
+  },
+  {
+    id: 'globalokonomi', label: 'Global økonomi og politikk', level: 'master2',
+    programs: [
+      {
+        entryId: 'nmbu_gep', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Global økonomi og politikk (master 2 år)',
+        studieplanAar: '2026/2027', kilder: ['https://www.nmbu.no/studier/master-2-aar/global-okonomi-og-politikk', 'https://www.nmbu.no/en/studies/programme-structure-master-global-economy-and-politics-2026', 'https://www.nmbu.no/en/faculties/school-economics-and-business/programme-structure-master-global-economy-and-politics-2025'],
+        totaltStudiepoeng: 120, obligatoriskeStudiepoeng: 85,
+        merknad: 'Studieplanen for opptakskullet høsten 2026 er lagt til grunn; NMBUs norske programside lenker fortsatt til 2025-planen, som er tatt med som kilde og som skiller seg på tre punkter (EDS374A lå i 3. semester, ECN330 var anbefalt valgemne i 1. semester, og M0-GEP fantes ikke). Utenom de obligatoriske emnene består graden av: (1) et EDS-emne i 2. semester valgt blant EDS380 International Organizations, EDS374B International Relations Theory og EDS377 Foreign Policymaking and the Politics of Europe (10 sp), (2) en metodepakke i 3. semester – enten AOS340 Kvalitativ metode (5 sp) + AOS341 Kvantitative metoder (5 sp) eller ECN201 Econometrics (10 sp), og (3) et fritt valgemne på 5 sp i 2. semester (anbefalt: ECN306, BUS360 eller ECN320). Disse valgene er ikke ført opp som obligatoriske. obligatoriskeStudiepoeng (85) teller ikke ECN215, som bare er obligatorisk for studenter uten mikroøkonomi på mellomnivå fra før. M-GEP er et nytt program, og DBH har foreløpig karakterdata for bare 5 av de 9 obligatoriske emnene (ECN350, EDS379, M0-GEP og M30-GEP mangler).',
+        obligatoriske: [
+          {
+            emnekode: 'ECN340', emnenavn: 'Introduction to Economics, the Global Economy and Environmental Governance', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['ECN340-1'], merknad: 'Augustblokk.',
+            years: [
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 15, H: 3, total: 18, snitt: null, strykprosent: null, bestattprosent: 83.3 },
+            ],
+          },
+          {
+            emnekode: 'ECN215', emnenavn: 'Intermediate Microeconomics - Consumers, Producers, Market and Welfare', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['ECN215-1'], merknad: 'Obligatorisk kun for studenter som ikke har mikroøkonomi på mellomnivå i bachelorgraden; øvrige tar et valgfritt emne i stedet (f.eks. ECN306). Ikke regnet med i obligatoriskeStudiepoeng.',
+            years: [
+              { year: 2025, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'ECN230', emnenavn: 'International Trade, Policy and Development', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['ECN230-1'],
+            years: [
+              { year: 2025, A: 4, B: 0, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 4, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'EDS374A', emnenavn: 'International Relations Theory', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['EDS374A-1'], merknad: 'Flyttet fra 3. til 1. semester i 2026-planen (lå i år 2 høst i 2025-planen).',
+            years: [
+              { year: 2025, A: 0, B: 3, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 3.5, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'ECN350', emnenavn: 'Development and Global Change', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: [], merknad: 'Ingen DBH-karakterdata for dette emnet i datasettet for programmet.',
+            years: [],
+          },
+          {
+            emnekode: 'ECN330', emnenavn: 'Economic Integration and Trade Liberalization', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['ECN330-1'], merknad: 'Var anbefalt valgemne i 1. semester i 2025-planen, obligatorisk i 3. semester i 2026-planen.',
+            years: [
+              { year: 2025, A: 0, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 3, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'EDS379', emnenavn: 'Global Political Economy', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: [], merknad: 'Ingen DBH-karakterdata for dette emnet i datasettet for programmet.',
+            years: [],
+          },
+          {
+            emnekode: 'M0-GEP', emnenavn: 'Planning the Master\'s Thesis', studiepoeng: 0, aar: 2, semester: 'høst',
+            dbhEmnekoder: [], merknad: '0 sp, ny i 2026-planen.',
+            years: [],
+          },
+          {
+            emnekode: 'M30-GEP', emnenavn: 'Master Thesis', studiepoeng: 30, aar: 2, semester: 'vår',
+            dbhEmnekoder: [], merknad: 'Ingen DBH-karakterdata ennå – programmet er nytt.',
+            years: [],
+          },
+        ],
+        spesialiseringer: [
+        ],
+      },
+    ],
+  },
+  {
+    id: 'globaleutvikling', label: 'Globale utviklingsstudier', level: 'master2',
+    programs: [
+      {
+        entryId: 'nmbu_globale_utviklingsstudier', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Globale utviklingsstudier (master 2 år)',
+        studieplanAar: '2026/2027', kilder: ['https://www.nmbu.no/studier/master-2-aar/globale-utviklingsstudier', 'https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-07/M-GDS%20Study%20Structure%202026-2027.pdf'],
+        totaltStudiepoeng: 120, obligatoriskeStudiepoeng: 70,
+        merknad: 'Kilde er studieplan-PDF-en «M-GDS Study Structure 2026-2027» lenket fra programsiden. Programmet har ingen formelle spesialiseringer. Resten av graden (50 sp) er valgemner, internship (EDS313, 10–30 sp) og/eller utveksling i 3. semester; PDF-en lister anbefalte valgemner (bl.a. EDS370, EDS225, EDS230, EDS260, EDS355, EDS379, EDS341, EDS349, EDS246, EDS285), men studentene kan velge fritt blant NMBU-emner på 200-/300-nivå. Merk at PDF-ens egen oppsummering («40 sp obligatorisk + 30 sp masteroppgave + 40 sp valgemner») ikke summerer til 120; emnetabellen gir 70 sp obligatorisk og 50 sp valgfritt, og tabellen er lagt til grunn her. Alle fem obligatoriske emner er koblet til DBH-koder.',
+        obligatoriske: [
+          {
+            emnekode: 'EDS201', emnenavn: 'Introduction to Development Studies', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['EDS201-1'], merknad: 'Augustblokk.',
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 22, H: 0, total: 22, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 13, H: 0, total: 13, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 23, H: 0, total: 23, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 17, H: 0, total: 17, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 22, H: 0, total: 22, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'EDS305', emnenavn: 'Development Theory and Politics', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['EDS305-1'],
+            years: [
+              { year: 2021, A: 0, B: 16, C: 8, D: 4, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 3.43, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 4, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 3.44, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 3, B: 16, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 4, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 5, B: 9, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 3.95, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 4, B: 8, C: 7, D: 3, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 3.59, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'EDS312', emnenavn: 'Research Methods', studiepoeng: 15, aar: 1, semester: 'helår',
+            dbhEmnekoder: ['EDS312-1'], merknad: 'Går over høst- og vårparallellen; alle 15 sp godskrives om våren.',
+            years: [
+              { year: 2021, A: 6, B: 14, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 3.96, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 6, B: 17, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 4.26, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 3, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 3.43, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 3, B: 11, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3.89, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 10, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 3.67, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'ECN352', emnenavn: 'Poverty and Inequality', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['ECN352-1'],
+            years: [
+              { year: 2021, A: 3, B: 19, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 3.93, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 3, B: 16, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 3.96, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 5, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 3.5, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 11, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 3.73, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 6, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 3.43, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'M30-DS', emnenavn: 'Master\'s Thesis', studiepoeng: 30, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['M30-DS-1'], merknad: 'Kan utvides til 60 sp; da faller valgemnene i 3. semester bort.',
+            years: [
+              { year: 2021, A: 4, B: 8, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 3.94, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 3, B: 14, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3.95, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 6, B: 13, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 4.14, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 4, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'uio_decc', shortName: 'UiO', institusjon: 'Universitetet i Oslo', isNmbu: false, programnavn: 'Development, Environment and Cultural Change (master 2 år)',
+        studieplanAar: '2026/2027', kilder: ['https://www.uio.no/english/studies/programmes/ces-master/', 'https://www.uio.no/english/studies/programmes/ces-master/structure/'],
+        totaltStudiepoeng: 120, obligatoriskeStudiepoeng: 100,
+        merknad: 'Programmet har ingen studieretninger. De obligatoriske emnene utgjør 100 av 120 sp; de resterende 20 sp er valgemner i 2. semester, valgt fra en liste som oppdateres årlig (bl.a. GLOBE4019, GLOBE4029, GLOBE4910 Internship, GLOBE4508, GLOBE4511, GLOBE4512). Viktig forbehold: emneporteføljen er i ferd med å skifte kodeprefiks fra SUMxxxx til GLOBExxxx etter at Senter for utvikling og miljø ble del av Senter for global bærekraft 1.6.2025. DBH-datasettet inneholder både gamle SUM-koder og de nye GLOBE-kodene for de to første emnene, men bare SUM-kodene for Text Lab og masteroppgaven. Der emnet er det samme, men koden endret, er den gamle koden ført opp i dbhEmnekoder og forklart i merknaden på emnet.',
+        obligatoriske: [
+          {
+            emnekode: 'GLOBE4200', emnenavn: 'Advanced Introduction to Development and Environment', studiepoeng: 15, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['GLOBE4200-1', 'SUM4200-1'], merknad: 'Emnet skiftet kode fra SUM4200 til GLOBE4200 da Senter for utvikling og miljø ble del av Senter for global bærekraft 1.6.2025. Begge DBH-kodene er tatt med for å fange historiske karakterdata.',
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 24, H: 0, total: 24, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 20, H: 0, total: 20, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 25, H: 0, total: 25, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 25, H: 0, total: 25, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 29, H: 0, total: 29, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'GLOBE4100', emnenavn: 'Research Methods and Project Design', studiepoeng: 15, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['GLOBE4100-1', 'SUM4100-1'], merknad: 'Kodeskifte SUM4100 → GLOBE4100 fra 2025. Begge DBH-kodene tatt med.',
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 21, H: 0, total: 21, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 17, H: 4, total: 21, snitt: null, strykprosent: null, bestattprosent: 81 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 28, H: 0, total: 28, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 24, H: 0, total: 24, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 26, H: 4, total: 30, snitt: null, strykprosent: null, bestattprosent: 86.7 },
+            ],
+          },
+          {
+            emnekode: 'GLOBE4300', emnenavn: 'Text Lab', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['SUM4300-1'], merknad: 'Obligatorisk for programstudenter med oppstart fra august 2020. DBH har foreløpig bare den gamle koden SUM4300-1 for emnet.',
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 28, H: 0, total: 28, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 22, H: 0, total: 22, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 20, H: 0, total: 20, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 28, H: 0, total: 28, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 21, H: 0, total: 21, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'GLOBE4091', emnenavn: 'Master\'s Thesis in Development, Environment and Cultural Change', studiepoeng: 60, aar: 2, semester: 'helår',
+            dbhEmnekoder: ['SUM4091-1'], merknad: '60 sp masteroppgave som går over 3. og 4. semester. DBH har foreløpig bare den gamle koden SUM4091-1.',
+            years: [
+              { year: 2021, A: 5, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 4.56, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 6, B: 13, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 4.09, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 11, B: 12, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 4.26, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 9, B: 6, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 4.26, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 10, B: 7, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 4.35, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+        ],
+        spesialiseringer: [
+        ],
+      },
+    ],
+  },
+  {
+    id: 'intmiljo', label: 'Internasjonale miljøstudier', level: 'master2',
+    programs: [
+      {
+        entryId: 'nmbu_intmiljo', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Internasjonale miljøstudier (master 2 år)',
+        studieplanAar: '2026/2027', kilder: ['https://www.nmbu.no/studier/master-2-aar/internasjonale-miljostudier', 'https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-07/M-IES%20Study%20Structure%202026-2027.pdf'],
+        totaltStudiepoeng: 120, obligatoriskeStudiepoeng: 60,
+        merknad: 'Kilde er studieplan-PDF-en «M-IES Study Structure 2026-2027» lenket fra programsiden. Graden består av 30 sp obligatoriske emner, 30 sp masteroppgave, minst 20 sp kjerneemner valgt fra en fast liste på fire emner, og 40 sp valgemner/internship/utveksling. Kjerneemnene er ikke en spesialisering, men et bundet valg, og er derfor lagt i spesialiseringer med forklarende navn; aar er satt til null fordi PDF-en bare angir parallell, ikke studieår. Alle fire obligatoriske emner og alle fire kjerneemner er koblet til DBH-koder, men koblingen for EDS237 er usikker (kodeskifte fra EDS330).',
+        obligatoriske: [
+          {
+            emnekode: 'EDS303', emnenavn: 'Introduction to International Environmental Studies', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['EDS303-1'], merknad: 'Augustblokk.',
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 29, H: 0, total: 29, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 23, H: 0, total: 23, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 28, H: 0, total: 28, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 21, H: 0, total: 21, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 25, H: 0, total: 25, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'EDS306', emnenavn: 'Green Transformations in Theory and Practice', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['EDS306-1'],
+            years: [
+              { year: 2021, A: 5, B: 12, C: 6, D: 3, E: 0, F: 0, G: 0, H: 0, total: 26, snitt: 3.73, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 7, B: 9, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 3.92, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 5, B: 10, C: 8, D: 5, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 3.54, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 7, B: 9, C: 4, D: 10, E: 4, F: 0, G: 0, H: 0, total: 34, snitt: 3.15, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 7, B: 7, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 4.05, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'EDS312', emnenavn: 'Research Methods', studiepoeng: 15, aar: 1, semester: 'helår',
+            dbhEmnekoder: ['EDS312-1'], merknad: 'Går over høst- og vårparallellen; alle 15 sp godskrives om våren.',
+            years: [
+              { year: 2021, A: 11, B: 12, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 4.1, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 8, B: 12, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 4, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 6, B: 13, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 4.32, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 9, B: 12, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 24, snitt: 4.25, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 5, B: 11, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 4.11, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'M30-IES', emnenavn: 'Master\'s Thesis', studiepoeng: 30, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['M30-IES-1'], merknad: 'Kan utvides til 60 sp; da faller valgemnene i 3. semester bort.',
+            years: [
+              { year: 2021, A: 8, B: 11, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 4.42, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 6, B: 11, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 4.35, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 7, B: 12, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 26, snitt: 4, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 7, B: 6, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 4.18, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 5, B: 9, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 4.36, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+        ],
+        spesialiseringer: [
+          { navn: 'Kjerneemner – minst 20 sp må velges blant disse (ikke en formell spesialisering)', obligatoriske: [
+            {
+              emnekode: 'EDS355', emnenavn: 'Climate Change and Society', studiepoeng: 10, aar: null, semester: 'høst',
+              dbhEmnekoder: ['EDS355-1'], merknad: 'Høstparallell; år 1 eller år 2.',
+              years: [
+                { year: 2021, A: 3, B: 8, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 3.82, strykprosent: 0, bestattprosent: null },
+                { year: 2022, A: 3, B: 6, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 4.33, strykprosent: 0, bestattprosent: null },
+                { year: 2023, A: 6, B: 9, C: 6, D: 0, E: 0, F: 3, G: 0, H: 0, total: 24, snitt: 3.5, strykprosent: 12.5, bestattprosent: null },
+                { year: 2024, A: 3, B: 7, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 4.3, strykprosent: 0, bestattprosent: null },
+              ],
+            },
+            {
+              emnekode: 'EDS348', emnenavn: 'Global Environmental Governance', studiepoeng: 10, aar: null, semester: 'vår',
+              dbhEmnekoder: ['EDS348-1'], merknad: 'Vårparallell; år 1 eller år 2.',
+              years: [
+                { year: 2021, A: 6, B: 9, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 4.17, strykprosent: 0, bestattprosent: null },
+                { year: 2022, A: 6, B: 12, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 3.96, strykprosent: 0, bestattprosent: null },
+                { year: 2023, A: 5, B: 9, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 4, strykprosent: 0, bestattprosent: null },
+                { year: 2024, A: 6, B: 23, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 38, snitt: 3.92, strykprosent: 0, bestattprosent: null },
+                { year: 2025, A: 6, B: 6, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 4.06, strykprosent: 0, bestattprosent: null },
+              ],
+            },
+            {
+              emnekode: 'EDS352', emnenavn: 'Agroecology and Development', studiepoeng: 10, aar: null, semester: 'vår',
+              dbhEmnekoder: ['EDS352-1'], merknad: 'Vårparallell; år 1 eller år 2.',
+              years: [
+                { year: 2021, A: 3, B: 11, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 4.21, strykprosent: 0, bestattprosent: null },
+                { year: 2022, A: 4, B: 6, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 4.4, strykprosent: 0, bestattprosent: null },
+                { year: 2023, A: 3, B: 6, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 4.33, strykprosent: 0, bestattprosent: null },
+                { year: 2024, A: 3, B: 4, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 3.91, strykprosent: 0, bestattprosent: null },
+                { year: 2025, A: 3, B: 4, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 4, strykprosent: 0, bestattprosent: null },
+              ],
+            },
+            {
+              emnekode: 'EDS237', emnenavn: 'Political Ecology', studiepoeng: 10, aar: null, semester: 'høst',
+              dbhEmnekoder: ['EDS330-1'], merknad: 'Ikke tilbudt 2026–2027; studentene kan ta EDS351 eller EDS285 i stedet det året. EDS237 er ny kode for emnet som tidligere het EDS330 Politisk økologi – DBH-koden EDS330-1 er ført opp på dette grunnlaget og bør kontrolleres mot emnekatalogen.',
+              years: [
+                { year: 2021, A: 6, B: 8, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 4, strykprosent: 0, bestattprosent: null },
+                { year: 2022, A: 4, B: 4, C: 3, D: 3, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 3.64, strykprosent: 0, bestattprosent: null },
+                { year: 2023, A: 6, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 4.67, strykprosent: 0, bestattprosent: null },
+                { year: 2024, A: 0, B: 4, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 3.57, strykprosent: 0, bestattprosent: null },
+                { year: 2025, A: 5, B: 7, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 4.42, strykprosent: 0, bestattprosent: null },
+              ],
+            },
+          ] },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'intrelasjoner', label: 'Internasjonale relasjoner', level: 'master2',
+    programs: [
+      {
+        entryId: 'nmbu_intrel', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Internasjonale relasjoner (master 2 år)',
+        studieplanAar: '2026/2027', kilder: ['https://www.nmbu.no/studier/master-2-aar/internasjonale-relasjoner', 'https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2025-12/Program%20structure%20of%20Master%20in%20International%20Relations%202026-2027.pdf'],
+        totaltStudiepoeng: 120, obligatoriskeStudiepoeng: 70,
+        merknad: 'Kilde er studieplan-PDF-en «Program structure of Master in International Relations 2026-2027» lenket fra programsiden. PDF-en lister eksplisitt fem obligatoriske emner (70 sp). Programmet har ingen spesialiseringer; de resterende 50 sp er valgemner, internship (EDS313, 10–30 sp) og/eller utveksling i 3. semester. Mange av IR-valgemnene går annethvert år (partalls- eller oddetallsår), så det faktiske tilbudet varierer. Alle fem obligatoriske emner er koblet til DBH-koder.',
+        obligatoriske: [
+          {
+            emnekode: 'EDS203', emnenavn: 'Introduction to International Relations', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['EDS203-1'], merknad: 'Augustblokk.',
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 21, H: 0, total: 21, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 34, H: 0, total: 34, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 22, H: 13, total: 35, snitt: null, strykprosent: null, bestattprosent: 62.9 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 30, H: 0, total: 30, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 53, H: 0, total: 53, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'EDS374A', emnenavn: 'International Relations Theory', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['EDS374A-1'],
+            years: [
+              { year: 2021, A: 4, B: 11, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 3.86, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 3, B: 15, C: 12, D: 6, E: 0, F: 0, G: 0, H: 0, total: 36, snitt: 3.42, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 4, B: 9, C: 9, D: 3, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 3.56, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 3, B: 12, C: 14, D: 0, E: 0, F: 0, G: 0, H: 0, total: 29, snitt: 3.62, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 7, B: 25, C: 21, D: 0, E: 0, F: 0, G: 0, H: 0, total: 53, snitt: 3.74, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'EDS312', emnenavn: 'Research Methods', studiepoeng: 15, aar: 1, semester: 'helår',
+            dbhEmnekoder: ['EDS312-1'], merknad: 'Går over høst- og vårparallellen; alle 15 sp godskrives om våren.',
+            years: [
+              { year: 2021, A: 7, B: 17, C: 3, D: 3, E: 0, F: 0, G: 0, H: 0, total: 30, snitt: 3.93, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 14, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 3.61, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 19, C: 11, D: 4, E: 0, F: 0, G: 0, H: 0, total: 34, snitt: 3.44, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 5, B: 11, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 4.31, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 17, C: 11, D: 0, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 3.61, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'EDS374B', emnenavn: 'International Relations Theory', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['EDS374B-1'],
+            years: [
+              { year: 2021, A: 7, B: 11, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 24, snitt: 4.04, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 9, C: 10, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3.47, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 5, B: 22, C: 4, D: 0, E: 0, F: 3, G: 0, H: 0, total: 34, snitt: 3.68, strykprosent: 8.8, bestattprosent: null },
+              { year: 2024, A: 15, B: 6, C: 0, D: 0, E: 0, F: 3, G: 0, H: 0, total: 24, snitt: 4.12, strykprosent: 12.5, bestattprosent: null },
+              { year: 2025, A: 11, B: 18, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 29, snitt: 4.38, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'M30-IR', emnenavn: 'Master Thesis', studiepoeng: 30, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['M30-IR-1'], merknad: 'Kan utvides til 60 sp; da faller valgemnene i 3. semester bort.',
+            years: [
+              { year: 2021, A: 6, B: 17, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 26, snitt: 4.12, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 4, B: 9, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 3.85, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 5, B: 7, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 3.94, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 8, B: 12, C: 13, D: 0, E: 0, F: 5, G: 0, H: 0, total: 38, snitt: 3.34, strykprosent: 13.2, bestattprosent: null },
+              { year: 2025, A: 7, B: 4, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3.95, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'uio_pecos', shortName: 'UiO', institusjon: 'Universitetet i Oslo', isNmbu: false, programnavn: 'Peace and Conflict Studies (master 2 år)',
+        studieplanAar: '2026/2027', kilder: ['https://www.uio.no/english/studies/programmes/peace-master/', 'https://www.uio.no/english/studies/programmes/peace-master/structure/index%20PECOS.html', 'https://www.uio.no/english/studies/programmes/peace-master/structure/'],
+        totaltStudiepoeng: 120, obligatoriskeStudiepoeng: 80,
+        merknad: 'Programmet er lagt om: fra og med opptakskullet høsten 2027 heter det Peace, Conflict, and Democracy Studies, og de obligatoriske emnene får nye koder (STV4001, STV4002, STV4003, STV4911, STV4096). Her er planen for kull til og med høsten 2026 lagt til grunn, siden den svarer til DBH-kodene i datasettet. I tillegg til de 80 obligatoriske sp må studentene velge ett metodeemne (10 sp) i 3. semester blant STV4030A Digital Data in Political Science, STV4030B Qualitative Data in Political Science og STV4030C Survey design for political scientists – DBH har karakterdata for STV4030A-1 og STV4030B-1, men ikke for STV4030C. De siste 30 sp er frie valgemner i 2. semester, i praksis hele masteremneporteføljen ved Institutt for statsvitenskap. Alle fem obligatoriske emner er koblet til DBH-koder.',
+        obligatoriske: [
+          {
+            emnekode: 'PECOS4025', emnenavn: 'Analytic perspectives on peace and conflict', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['PECOS4025-1'],
+            years: [
+              { year: 2022, A: 0, B: 6, C: 7, D: 4, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 3.12, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 5, B: 6, C: 9, D: 5, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 3.44, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 6, B: 9, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 24, snitt: 3.88, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 6, B: 8, C: 16, D: 4, E: 0, F: 0, G: 0, H: 0, total: 34, snitt: 3.47, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'PECOS4022', emnenavn: 'Applied Statistics for Peace and Conflict Studies', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['PECOS4022-1'],
+            years: [
+              { year: 2021, A: 5, B: 5, C: 0, D: 3, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 3.92, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 5, B: 9, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 3.86, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 9, B: 6, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 4.2, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 5, B: 4, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 3.78, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 6, B: 13, C: 9, D: 3, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 3.71, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'PECOS4010', emnenavn: 'Conflict and state building', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['PECOS4010-1'],
+            years: [
+              { year: 2021, A: 6, B: 7, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 4.19, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 7, B: 8, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 4.47, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 6, B: 15, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 4.08, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 8, B: 9, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 4.47, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 8, B: 17, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 30, snitt: 4.1, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'STV4911', emnenavn: 'Design Seminar', studiepoeng: 5, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['STV4911-1'],
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 12, H: 0, total: 12, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 23, H: 0, total: 23, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 20, H: 0, total: 20, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'PECOS4096', emnenavn: 'Master\'s Thesis', studiepoeng: 45, aar: 2, semester: 'helår',
+            dbhEmnekoder: ['PECOS4096-1'], merknad: '45 sp; arbeidet går over 3. og 4. semester (15 sp i 3. semester, 30 sp i 4.).',
+            years: [
+              { year: 2021, A: 0, B: 3, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 3.38, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 4, B: 6, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 4.4, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 10, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 4.77, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 4, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 4.5, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 7, B: 6, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 4.25, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+        ],
+        spesialiseringer: [
+        ],
+      },
+    ],
+  },
+  {
+    id: 'landskapglobal', label: 'Landskapsarkitektur for global bærekraft', level: 'master2',
+    programs: [
+      {
+        entryId: 'nmbu_gla', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Landskapsarkitektur for global bærekraft (master 2 år)',
+        studieplanAar: '2025/2026', kilder: ['https://www.nmbu.no/studier/master-2-aar/landskapsarkitektur-global-baerekraft', 'https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2025-12/GLA%20Studieplan%202025%202026.pdf'],
+        totaltStudiepoeng: 120, obligatoriskeStudiepoeng: 90,
+        merknad: 'Kilde er studieplan-PDF-en datert 08.08.2025, funnet på den engelske programsiden; den norske programsiden lenker fortsatt til 2024-versjonen, som har samme obligatoriske emner. Ingen 2026/2027-versjon er publisert per 22.09.2026. PDF-en sier uttrykkelig at «all the courses in the table are mandatory» – 90 av 120 sp. De resterende 30 sp velges fra anbefalte emnepakker med tre perspektiver (Development, Ecological, Planning), men pakkene er anbefalinger, ikke formelle spesialiseringer, og er derfor ikke ført opp under spesialiseringer. Alle seks obligatoriske emner er koblet til DBH-koder.',
+        obligatoriske: [
+          {
+            emnekode: 'GLA301', emnenavn: 'Introduction to Landscape Architecture for Global Sustainability', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['GLA301-1'], merknad: 'Augustblokk. Må være bestått før GLA305.',
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 18, H: 0, total: 18, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 24, H: 0, total: 24, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 10, H: 0, total: 10, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 20, H: 0, total: 20, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 21, H: 0, total: 21, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'GLA302', emnenavn: 'Design-research studio in landscape architecture', studiepoeng: 15, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['GLA302-1'],
+            years: [
+              { year: 2021, A: 0, B: 23, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 4, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 22, H: 0, total: 22, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 11, H: 0, total: 11, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 18, H: 0, total: 18, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 21, H: 0, total: 21, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'GLA303', emnenavn: 'Landscape in a Globalised World: Historical and Theoretical Perspectives', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['GLA303-1'],
+            years: [
+              { year: 2021, A: 18, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 5, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 10, B: 12, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 4.45, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 5, B: 6, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 4.45, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 6, B: 19, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 4.24, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 23, H: 0, total: 23, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'GLA304', emnenavn: 'Implementing landscape sustainability in an urban context', studiepoeng: 15, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['GLA304-1'],
+            years: [
+              { year: 2021, A: 0, B: 4, C: 0, D: 3, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 3.14, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 5, B: 8, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 4.38, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 4, B: 20, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 24, snitt: 4.17, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 0, C: 5, D: 4, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 2.56, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 16, H: 0, total: 16, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'GLA305', emnenavn: 'Social sustainability in a context of vulnerability', studiepoeng: 15, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['GLA305-1'],
+            years: [
+              { year: 2021, A: 0, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 4, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 5, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 3.38, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 7, B: 6, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 4.25, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 6, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 4.67, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 8, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 4.62, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'M30-GLA', emnenavn: 'Master thesis', studiepoeng: 30, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['M30-GLA-1'],
+            years: [
+              { year: 2023, A: 5, B: 4, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 4.17, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 8, C: 0, D: 4, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 3.33, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 7, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 4, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+        ],
+        spesialiseringer: [
+        ],
+      },
+    ],
+  },
+  {
+    id: 'samfok_miljo', label: 'Samfunnsøkonomi og miljøforvaltning', level: 'master2',
+    programs: [
+      {
+        entryId: 'nmbu_eeg', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Samfunnsøkonomi og miljøforvaltning (master 2 år)',
+        studieplanAar: '2026/2027', kilder: ['https://www.nmbu.no/studier/master-2-aar/samfunnsokonomi-og-miljoforvaltning', 'https://www.nmbu.no/studier/programme-structure-master-economics-and-environmental-governance-2026', 'https://www.nmbu.no/en/studies/programme-structure-master-economics-and-environmental-governance-2025'],
+        totaltStudiepoeng: 120, obligatoriskeStudiepoeng: 80,
+        merknad: 'Studieplanen for opptakskullet høsten 2026 er lagt til grunn; 2025-planen er tatt med som kilde og skiller seg ved at EDS355 lå i 3. semester, metodepakken lå i 1. semester, ECN215 kunne byttes mot EDS306, og M0-EEG ikke fantes. De 20 sp valgemner tas enten som én av de to profilene (ført opp under spesialiseringer) eller fritt blant NMBUs emner. I tillegg må alle ta en metodepakke på 10 sp i 3. semester: enten AOS340 Kvalitativ metode (5 sp) + AOS341 Kvantitative metoder (5 sp), eller ECN201 Econometrics / ECN301 Econometric Methods (10 sp); dette bundne valget er ikke ført opp som obligatorisk. obligatoriskeStudiepoeng (80) teller ikke ECN215. M-EEG er et nytt program, og DBH har foreløpig karakterdata for bare 4 av de 9 obligatoriske emnene (EDS355, ECN375, EDS348, M0-EEG og M30-EEG mangler) og for ingen av profilemnene.',
+        obligatoriske: [
+          {
+            emnekode: 'ECN340', emnenavn: 'Introduction to Economics, the Global Economy and Environmental Governance', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['ECN340-1'], merknad: 'Augustblokk.',
+            years: [
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 5, H: 0, total: 5, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 16, H: 4, total: 20, snitt: null, strykprosent: null, bestattprosent: 80 },
+            ],
+          },
+          {
+            emnekode: 'ECN215', emnenavn: 'Intermediate Microeconomics - Consumers, Producers, Market and Welfare', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['ECN215-1'], merknad: 'Obligatorisk kun for studenter som ikke har mikroøkonomi på mellomnivå i bachelorgraden; øvrige tar et valgemne, f.eks. EDS306. Ikke regnet med i obligatoriskeStudiepoeng.',
+            years: [
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 5, F: 3, G: 0, H: 0, total: 8, snitt: 0.62, strykprosent: 37.5, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'ECN306', emnenavn: 'Economics of Sustainability', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['ECN306-1'],
+            years: [
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 3, H: 0, total: 3, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 16, H: 0, total: 16, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'EDS355', emnenavn: 'Climate Change and Society', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: [], merknad: 'Lå i 3. semester i 2025-planen, flyttet til 1. semester i 2026-planen. Ingen DBH-karakterdata for emnet i datasettet for dette programmet.',
+            years: [],
+          },
+          {
+            emnekode: 'ECN375', emnenavn: 'Natural Resource and Environmental Economics', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: [], merknad: 'Ingen DBH-karakterdata for emnet i datasettet for dette programmet.',
+            years: [],
+          },
+          {
+            emnekode: 'EDS348', emnenavn: 'Global Environmental Governance', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: [], merknad: 'Ingen DBH-karakterdata for emnet i datasettet for dette programmet.',
+            years: [],
+          },
+          {
+            emnekode: 'ECN372', emnenavn: 'Climate Economics', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['ECN372-1'],
+            years: [
+              { year: 2025, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'M0-EEG', emnenavn: 'Planning the Master\'s Thesis', studiepoeng: 0, aar: 2, semester: 'høst',
+            dbhEmnekoder: [], merknad: '0 sp, ny i 2026-planen.',
+            years: [],
+          },
+          {
+            emnekode: 'M30-EEG', emnenavn: 'Master Thesis', studiepoeng: 30, aar: 2, semester: 'vår',
+            dbhEmnekoder: [], merknad: 'Ingen DBH-karakterdata ennå – programmet er nytt.',
+            years: [],
+          },
+        ],
+        spesialiseringer: [
+          { navn: 'Profil i økologisk økonomi (Ecological Economics)', obligatoriske: [
+            {
+              emnekode: 'EDS330', emnenavn: 'Political Ecology', studiepoeng: 10, aar: 1, semester: 'vår',
+              dbhEmnekoder: [], merknad: 'Ingen DBH-karakterdata for emnet i datasettet for dette programmet.',
+              years: [],
+            },
+            {
+              emnekode: 'EDS351', emnenavn: 'Ecological Economics and Degrowth', studiepoeng: 10, aar: 2, semester: 'høst',
+              dbhEmnekoder: [], merknad: 'Ingen DBH-karakterdata for emnet i datasettet for dette programmet.',
+              years: [],
+            },
+          ] },
+          { navn: 'Profil i energiøkonomi (Energy Economics)', obligatoriske: [
+            {
+              emnekode: 'ECN280', emnenavn: 'Energy Economics', studiepoeng: 10, aar: 1, semester: 'vår',
+              dbhEmnekoder: [], merknad: 'Ingen DBH-karakterdata for emnet i datasettet for dette programmet.',
+              years: [],
+            },
+            {
+              emnekode: 'ECN380', emnenavn: 'Energy Markets and Regulation', studiepoeng: 10, aar: 2, semester: 'høst',
+              dbhEmnekoder: [], merknad: 'Ingen DBH-karakterdata for emnet i datasettet for dette programmet.',
+              years: [],
+            },
+          ] },
+        ],
+      },
+      {
+        entryId: 'ntnu_msok', shortName: 'NTNU', institusjon: 'Norges teknisk-naturvitenskapelige universitet', isNmbu: false, programnavn: 'Samfunnsøkonomi (master 2 år)',
+        studieplanAar: '2024/2025', kilder: ['https://www.ntnu.no/studier/msok', 'https://www.ntnu.no/studier/msok/studiets-oppbygning'],
+        totaltStudiepoeng: 120, obligatoriskeStudiepoeng: 90,
+        merknad: 'NTNU har per 22.09.2026 ikke publisert en nyere oppbyggingsside enn den som står merket «Informasjonen er gyldig for studieåret 2024/2025»; både programsiden for studiestart 2026 og NTNUs studieplanverktøy peker til denne siden, og 2024/2025-planen er derfor lagt til grunn. Programmet har ingen navngitte spesialiseringer: hele 3. semester (30 sp) er valgbare spesialiseringsemner, i hovedsak SØK3500-emnene (SØK3531–SØK3541) og finansemner, og flere av dem går bare annethvert år eller som selvstudium. Alle obligatoriske emner utenom Eksperter i team er koblet til én DBH-kode; Eksperter i team er koblet til de fem landsbykodene i datasettet. Merk at DBH-datasettet også inneholder eldre obligatoriske emner (SØK3514, SØK3517, SØK3522, SØK3523) som ikke lenger står i studieplanen.',
+        obligatoriske: [
+          {
+            emnekode: 'SØK3004', emnenavn: 'Videregående matematisk analyse', studiepoeng: 15, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['SØK3004-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 32, H: 0, total: 32, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2022, A: 12, B: 5, C: 3, D: 0, E: 3, F: 3, G: 0, H: 0, total: 26, snitt: 3.54, strykprosent: 11.5, bestattprosent: null },
+              { year: 2023, A: 14, B: 12, C: 10, D: 4, E: 0, F: 0, G: 0, H: 0, total: 40, snitt: 3.9, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 5, C: 5, D: 3, E: 3, F: 4, G: 0, H: 0, total: 20, snitt: 2.2, strykprosent: 20, bestattprosent: null },
+              { year: 2025, A: 8, B: 11, C: 9, D: 0, E: 6, F: 0, G: 0, H: 0, total: 34, snitt: 3.44, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'SØK3006', emnenavn: 'Valuta, olje og makroøkonomisk politikk', studiepoeng: 7.5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['SØK3006-1'],
+            years: [
+              { year: 2021, A: 6, B: 6, C: 9, D: 4, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 3.56, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 3, B: 7, C: 6, D: 5, E: 4, F: 4, G: 0, H: 0, total: 29, snitt: 2.59, strykprosent: 13.8, bestattprosent: null },
+              { year: 2023, A: 6, B: 0, C: 5, D: 4, E: 0, F: 9, G: 0, H: 0, total: 24, snitt: 2.21, strykprosent: 37.5, bestattprosent: null },
+              { year: 2024, A: 0, B: 0, C: 4, D: 0, E: 5, F: 4, G: 0, H: 0, total: 13, snitt: 1.31, strykprosent: 30.8, bestattprosent: null },
+              { year: 2025, A: 0, B: 8, C: 9, D: 9, E: 3, F: 0, G: 0, H: 0, total: 29, snitt: 2.76, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'SØK3007', emnenavn: 'Skatt, beslutningsatferd og økonomisk politikk', studiepoeng: 7.5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['SØK3007-1'],
+            years: [
+              { year: 2021, A: 4, B: 9, C: 10, D: 4, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 3.48, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 3, C: 3, D: 4, E: 0, F: 5, G: 0, H: 0, total: 15, snitt: 1.93, strykprosent: 33.3, bestattprosent: null },
+              { year: 2023, A: 0, B: 5, C: 6, D: 7, E: 3, F: 0, G: 0, H: 0, total: 21, snitt: 2.62, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 3, C: 4, D: 3, E: 3, F: 9, G: 0, H: 0, total: 22, snitt: 1.5, strykprosent: 40.9, bestattprosent: null },
+              { year: 2025, A: 0, B: 0, C: 6, D: 12, E: 4, F: 0, G: 0, H: 0, total: 22, snitt: 2.09, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'SØK3001', emnenavn: 'Videregående økonometri', studiepoeng: 15, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['SØK3001-1'],
+            years: [
+              { year: 2021, A: 4, B: 11, C: 10, D: 3, E: 0, F: 4, G: 0, H: 0, total: 32, snitt: 3.12, strykprosent: 12.5, bestattprosent: null },
+              { year: 2022, A: 0, B: 6, C: 10, D: 10, E: 0, F: 7, G: 0, H: 0, total: 33, snitt: 2.24, strykprosent: 21.2, bestattprosent: null },
+              { year: 2023, A: 3, B: 0, C: 7, D: 8, E: 6, F: 3, G: 0, H: 0, total: 27, snitt: 2.15, strykprosent: 11.1, bestattprosent: null },
+              { year: 2024, A: 0, B: 12, C: 8, D: 4, E: 4, F: 7, G: 0, H: 0, total: 35, snitt: 2.4, strykprosent: 20, bestattprosent: null },
+              { year: 2025, A: 3, B: 8, C: 4, D: 4, E: 0, F: 5, G: 0, H: 0, total: 24, snitt: 2.79, strykprosent: 20.8, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'SØK3008', emnenavn: 'Insentiver, informasjon og arbeidskontrakter', studiepoeng: 7.5, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['SØK3008-1'],
+            years: [
+              { year: 2021, A: 9, B: 9, C: 6, D: 7, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 3.65, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 5, B: 7, C: 5, D: 5, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 3.55, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 0, C: 3, D: 8, E: 0, F: 5, G: 0, H: 0, total: 16, snitt: 1.56, strykprosent: 31.2, bestattprosent: null },
+              { year: 2024, A: 0, B: 3, C: 5, D: 7, E: 4, F: 6, G: 0, H: 0, total: 25, snitt: 1.8, strykprosent: 24, bestattprosent: null },
+              { year: 2025, A: 0, B: 4, C: 0, D: 4, E: 0, F: 8, G: 0, H: 0, total: 16, snitt: 1.5, strykprosent: 50, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'AAR4914-3', emnenavn: 'Eksperter i team', studiepoeng: 7.5, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['AAR4914-3', 'BEIT4013-1', 'POL3801-1', 'SØK3801-1', 'TET4850-3'], merknad: 'Studieplanen oppgir ingen emnekode – studenten velger landsby, og hver landsby har sin egen kode. emnekode er derfor satt til null. DBH-kodene er de EiT-landsbyene datasettet har karakterdata for på dette programmet (bl.a. SØK3801 Verdien mellom fjellene og POL3801 Vekst og utvikling).',
+            years: [
+              { year: 2021, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 6, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 4.67, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'SØK3900', emnenavn: 'Masteroppgave', studiepoeng: 30, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['SØK3900-1'],
+            years: [
+              { year: 2021, A: 0, B: 7, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 4, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 9, B: 10, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 4.47, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 5, B: 6, C: 10, D: 3, E: 0, F: 0, G: 0, H: 0, total: 24, snitt: 3.54, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 7, C: 9, D: 3, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3.21, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 4, B: 9, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3.81, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'uio_economics', shortName: 'UiO', institusjon: 'Universitetet i Oslo', isNmbu: false, programnavn: 'Economics (master 2 år)',
+        studieplanAar: '2026/2027', kilder: ['https://www.uio.no/english/studies/programmes/economics-master/', 'https://www.uio.no/english/studies/programmes/economics-master/structure/'],
+        totaltStudiepoeng: 120, obligatoriskeStudiepoeng: 70,
+        merknad: 'Oppbyggingssiden gjelder studenter tatt opp høsten 2019 eller senere og var sist oppdatert 10.04.2026; den er dermed gjeldende plan for 2026/2027. Felles obligatorisk kjerne er 40 sp emner + 30 sp masteroppgave = 70 sp. Har du allerede tatt et av kjerneemnene i bachelorgraden ved UiO, må det erstattes med et valgfritt ECON4000-emne. Studieretningen Economics har ingen ekstra obligatoriske emner (50 sp frie ECON4000-emner). Studieretningen Environmental-, Resource- and Development Economics har tre obligatoriske emner (30 sp), men legges ned fra høsten 2026 – den er tatt med fordi DBH-dataene dekker kull som fulgte den. Studieretningen Research krever «two courses from the list» av ECON5000-emner (20 sp i viderekomne emner), men oppbyggingssiden navngir ikke emnene; de er derfor ikke ført opp, selv om datasettet inneholder ECON5200 Advanced Microeconomics og ECON5300 Advanced Macroeconomic Theory. Alle fem felles obligatoriske emner og alle tre ERDEC-emner er koblet til DBH-koder.',
+        obligatoriske: [
+          {
+            emnekode: 'ECON4120', emnenavn: 'Mathematics 2: Calculus and Linear Algebra', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['ECON4120-1'],
+            years: [
+              { year: 2021, A: 4, B: 13, C: 17, D: 6, E: 9, F: 13, G: 0, H: 0, total: 62, snitt: 2.32, strykprosent: 21, bestattprosent: null },
+              { year: 2022, A: 8, B: 7, C: 7, D: 10, E: 7, F: 6, G: 0, H: 0, total: 45, snitt: 2.58, strykprosent: 13.3, bestattprosent: null },
+              { year: 2023, A: 5, B: 0, C: 11, D: 5, E: 4, F: 8, G: 0, H: 0, total: 33, snitt: 2.18, strykprosent: 24.2, bestattprosent: null },
+              { year: 2024, A: 0, B: 8, C: 16, D: 7, E: 9, F: 13, G: 0, H: 0, total: 53, snitt: 1.94, strykprosent: 24.5, bestattprosent: null },
+              { year: 2025, A: 8, B: 11, C: 17, D: 6, E: 8, F: 17, G: 0, H: 0, total: 67, snitt: 2.31, strykprosent: 25.4, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'ECON4220', emnenavn: 'Microeconomics 3', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['ECON4220-1'],
+            years: [
+              { year: 2021, A: 5, B: 14, C: 14, D: 18, E: 8, F: 6, G: 0, H: 0, total: 65, snitt: 2.57, strykprosent: 9.2, bestattprosent: null },
+              { year: 2022, A: 5, B: 13, C: 15, D: 11, E: 0, F: 0, G: 0, H: 0, total: 44, snitt: 3.27, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 7, C: 6, D: 6, E: 8, F: 6, G: 0, H: 0, total: 33, snitt: 2, strykprosent: 18.2, bestattprosent: null },
+              { year: 2024, A: 5, B: 12, C: 23, D: 16, E: 4, F: 3, G: 0, H: 0, total: 63, snitt: 2.83, strykprosent: 4.8, bestattprosent: null },
+              { year: 2025, A: 5, B: 20, C: 26, D: 20, E: 4, F: 0, G: 0, H: 0, total: 75, snitt: 3.03, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'ECON4310', emnenavn: 'Macroeconomic Theory', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['ECON4310-1'],
+            years: [
+              { year: 2021, A: 12, B: 29, C: 25, D: 4, E: 4, F: 0, G: 0, H: 0, total: 74, snitt: 3.55, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 13, B: 16, C: 5, D: 11, E: 8, F: 0, G: 0, H: 0, total: 53, snitt: 3.28, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 7, B: 12, C: 13, D: 7, E: 5, F: 0, G: 0, H: 0, total: 44, snitt: 3.2, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 5, B: 18, C: 17, D: 12, E: 8, F: 8, G: 0, H: 0, total: 68, snitt: 2.65, strykprosent: 11.8, bestattprosent: null },
+              { year: 2025, A: 10, B: 20, C: 21, D: 15, E: 9, F: 6, G: 0, H: 0, total: 81, snitt: 2.86, strykprosent: 7.4, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'ECON4150', emnenavn: 'Introductory Econometrics', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['ECON4150-1'],
+            years: [
+              { year: 2021, A: 15, B: 15, C: 8, D: 4, E: 0, F: 0, G: 0, H: 0, total: 42, snitt: 3.98, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 0, C: 11, D: 3, E: 9, F: 3, G: 0, H: 0, total: 26, snitt: 1.85, strykprosent: 11.5, bestattprosent: null },
+              { year: 2023, A: 5, B: 0, C: 7, D: 4, E: 3, F: 0, G: 0, H: 0, total: 19, snitt: 3, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 3, B: 3, C: 0, D: 3, E: 0, F: 4, G: 0, H: 0, total: 13, snitt: 2.54, strykprosent: 30.8, bestattprosent: null },
+              { year: 2025, A: 0, B: 5, C: 5, D: 9, E: 5, F: 4, G: 0, H: 0, total: 28, snitt: 2.07, strykprosent: 14.3, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'ECON4091', emnenavn: 'Master Thesis', studiepoeng: 30, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['ECON4091-1'],
+            years: [
+              { year: 2021, A: 11, B: 21, C: 13, D: 0, E: 0, F: 0, G: 0, H: 0, total: 45, snitt: 3.96, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 13, B: 28, C: 12, D: 0, E: 0, F: 0, G: 0, H: 0, total: 53, snitt: 4.02, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 12, B: 23, C: 16, D: 0, E: 0, F: 0, G: 0, H: 0, total: 51, snitt: 3.92, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 20, B: 12, C: 15, D: 3, E: 0, F: 0, G: 0, H: 0, total: 50, snitt: 3.98, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 10, B: 17, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 34, snitt: 4.09, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+        ],
+        spesialiseringer: [
+          { navn: 'Economics (studieretning)', obligatoriske: [
+          ] },
+          { navn: 'Environmental-, Resource- and Development Economics (ERDEC) – nedlagt fra høsten 2026', obligatoriske: [
+            {
+              emnekode: 'ECON4910', emnenavn: 'Environmental Economics', studiepoeng: 10, aar: 1, semester: 'vår',
+              dbhEmnekoder: ['ECON4910-1'],
+              years: [
+                { year: 2021, A: 4, B: 6, C: 9, D: 3, E: 3, F: 0, G: 0, H: 0, total: 25, snitt: 3.2, strykprosent: 0, bestattprosent: null },
+                { year: 2022, A: 4, B: 7, C: 8, D: 0, E: 4, F: 0, G: 0, H: 0, total: 23, snitt: 3.3, strykprosent: 0, bestattprosent: null },
+                { year: 2023, A: 0, B: 0, C: 3, D: 4, E: 4, F: 3, G: 0, H: 0, total: 14, snitt: 1.5, strykprosent: 21.4, bestattprosent: null },
+                { year: 2024, A: 3, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 4, strykprosent: 0, bestattprosent: null },
+                { year: 2025, A: 4, B: 0, C: 3, D: 3, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 3.5, strykprosent: 0, bestattprosent: null },
+              ],
+            },
+            {
+              emnekode: 'ECON4915', emnenavn: 'Development Economics', studiepoeng: 10, aar: 1, semester: 'vår',
+              dbhEmnekoder: ['ECON4915-1'],
+              years: [
+                { year: 2021, A: 7, B: 15, C: 15, D: 5, E: 0, F: 0, G: 0, H: 0, total: 42, snitt: 3.57, strykprosent: 0, bestattprosent: null },
+                { year: 2022, A: 6, B: 13, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 3.89, strykprosent: 0, bestattprosent: null },
+                { year: 2023, A: 9, B: 8, C: 6, D: 3, E: 0, F: 0, G: 0, H: 0, total: 26, snitt: 3.88, strykprosent: 0, bestattprosent: null },
+                { year: 2024, A: 5, B: 5, C: 6, D: 3, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3.63, strykprosent: 0, bestattprosent: null },
+                { year: 2025, A: 8, B: 7, C: 10, D: 5, E: 0, F: 0, G: 0, H: 0, total: 30, snitt: 3.6, strykprosent: 0, bestattprosent: null },
+              ],
+            },
+            {
+              emnekode: 'ECON4925', emnenavn: 'Resource Economics', studiepoeng: 10, aar: 2, semester: 'høst',
+              dbhEmnekoder: ['ECON4925-1'],
+              years: [
+                { year: 2021, A: 4, B: 4, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 4, strykprosent: 0, bestattprosent: null },
+                { year: 2022, A: 0, B: 4, C: 3, D: 3, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 3.1, strykprosent: 0, bestattprosent: null },
+                { year: 2023, A: 0, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 4, strykprosent: 0, bestattprosent: null },
+                { year: 2024, A: 0, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 3, strykprosent: 0, bestattprosent: null },
+                { year: 2025, A: 0, B: 6, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 3.55, strykprosent: 0, bestattprosent: null },
+              ],
+            },
+          ] },
+          { navn: 'Research (studieretning)', obligatoriske: [
+          ] },
+        ],
+      },
+      {
+        entryId: 'uib_samfunnsokonomi', shortName: 'UiB', institusjon: 'Universitetet i Bergen', isNmbu: false, programnavn: 'Samfunnsøkonomi (master 2 år)',
+        studieplanAar: '2026/2027', kilder: ['https://www4.uib.no/studier/program/samfunnsokonomi-master', 'https://www4.uib.no/studier/program/samfunnsokonomi-master/plan'],
+        totaltStudiepoeng: 120, obligatoriskeStudiepoeng: 70,
+        merknad: 'Kilde er «Studieplan for MASV-SØK Masterprogram i samfunnsøkonomi, høst 2026» på uib.no. Studieplanen sier uttrykkelig at ECON310, ECON330, ECON340 og ECON380 er obligatoriske, i tillegg til masteroppgåva ECON391. Programmet har ingen formelle spesialiseringar: de resterende 50 sp er fem valgemner på 300-nivå (tre i 2. semester, to i 3. semester), og utveksling anbefales i 2. semester. Alle fem obligatoriske emner er koblet til DBH-koder.',
+        obligatoriske: [
+          {
+            emnekode: 'ECON310', emnenavn: 'Mikroøkonomisk analyse', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['ECON310-0'],
+            years: [
+              { year: 2021, A: 3, B: 13, C: 10, D: 3, E: 4, F: 0, G: 0, H: 0, total: 33, snitt: 3.24, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 3, C: 8, D: 4, E: 3, F: 0, G: 0, H: 0, total: 18, snitt: 2.61, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 0, C: 6, D: 8, E: 6, F: 5, G: 0, H: 0, total: 25, snitt: 1.6, strykprosent: 20, bestattprosent: null },
+              { year: 2024, A: 0, B: 0, C: 6, D: 6, E: 9, F: 4, G: 0, H: 0, total: 25, snitt: 1.56, strykprosent: 16, bestattprosent: null },
+              { year: 2025, A: 0, B: 8, C: 11, D: 8, E: 4, F: 3, G: 0, H: 0, total: 34, snitt: 2.5, strykprosent: 8.8, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'ECON330', emnenavn: 'Makroøkonomisk analyse', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['ECON330-0'],
+            years: [
+              { year: 2021, A: 0, B: 7, C: 14, D: 4, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 3.12, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 3, B: 0, C: 0, D: 6, E: 3, F: 4, G: 0, H: 0, total: 16, snitt: 1.88, strykprosent: 25, bestattprosent: null },
+              { year: 2023, A: 0, B: 8, C: 3, D: 4, E: 10, F: 0, G: 0, H: 0, total: 25, snitt: 2.36, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 0, C: 3, D: 5, E: 9, F: 5, G: 0, H: 0, total: 22, snitt: 1.27, strykprosent: 22.7, bestattprosent: null },
+              { year: 2025, A: 5, B: 6, C: 11, D: 5, E: 4, F: 0, G: 0, H: 0, total: 31, snitt: 3.1, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'ECON340', emnenavn: 'Økonometri I', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['ECON340-0'],
+            years: [
+              { year: 2021, A: 0, B: 10, C: 10, D: 7, E: 4, F: 0, G: 0, H: 0, total: 31, snitt: 2.84, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 6, C: 9, D: 6, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 7, C: 8, D: 7, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 3, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 5, C: 8, D: 3, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 3.12, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 6, B: 12, C: 11, D: 3, E: 0, F: 3, G: 0, H: 0, total: 35, snitt: 3.34, strykprosent: 8.6, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'ECON380', emnenavn: 'Forberedelsesemne for masteroppgåva', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['ECON380-0'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 24, H: 0, total: 24, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 26, H: 0, total: 26, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 19, H: 0, total: 19, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 23, H: 0, total: 23, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 16, H: 0, total: 16, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'ECON391', emnenavn: 'Masteroppgåve', studiepoeng: 30, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['ECON391-0'], merknad: 'Normert til 30 sp, typisk 40–60 sider.',
+            years: [
+              { year: 2021, A: 4, B: 12, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 4.25, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 4, B: 10, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3.86, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 11, C: 5, D: 3, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3.42, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 0, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 3, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 4, B: 13, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 4, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+        ],
+        spesialiseringer: [
+        ],
+      },
+    ],
+  },
+];

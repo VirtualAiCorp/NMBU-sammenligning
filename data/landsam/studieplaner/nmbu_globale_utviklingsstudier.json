@@ -1,0 +1,72 @@
+{
+  "entryId": "nmbu_globale_utviklingsstudier",
+  "programnavn": "Globale utviklingsstudier (master 2 år)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/master-2-aar/globale-utviklingsstudier",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-07/M-GDS%20Study%20Structure%202026-2027.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 70,
+  "obligatoriske": [
+    {
+      "emnekode": "EDS201",
+      "emnenavn": "Introduction to Development Studies",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EDS201-1"
+      ],
+      "merknad": "Augustblokk."
+    },
+    {
+      "emnekode": "EDS305",
+      "emnenavn": "Development Theory and Politics",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EDS305-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EDS312",
+      "emnenavn": "Research Methods",
+      "studiepoeng": 15,
+      "aar": 1,
+      "semester": "helår",
+      "dbhEmnekoder": [
+        "EDS312-1"
+      ],
+      "merknad": "Går over høst- og vårparallellen; alle 15 sp godskrives om våren."
+    },
+    {
+      "emnekode": "ECN352",
+      "emnenavn": "Poverty and Inequality",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "ECN352-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "M30-DS",
+      "emnenavn": "Master's Thesis",
+      "studiepoeng": 30,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "M30-DS-1"
+      ],
+      "merknad": "Kan utvides til 60 sp; da faller valgemnene i 3. semester bort."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er studieplan-PDF-en «M-GDS Study Structure 2026-2027» lenket fra programsiden. Programmet har ingen formelle spesialiseringer. Resten av graden (50 sp) er valgemner, internship (EDS313, 10–30 sp) og/eller utveksling i 3. semester; PDF-en lister anbefalte valgemner (bl.a. EDS370, EDS225, EDS230, EDS260, EDS355, EDS379, EDS341, EDS349, EDS246, EDS285), men studentene kan velge fritt blant NMBU-emner på 200-/300-nivå. Merk at PDF-ens egen oppsummering («40 sp obligatorisk + 30 sp masteroppgave + 40 sp valgemner») ikke summerer til 120; emnetabellen gir 70 sp obligatorisk og 50 sp valgfritt, og tabellen er lagt til grunn her. Alle fem obligatoriske emner er koblet til DBH-koder."
+}

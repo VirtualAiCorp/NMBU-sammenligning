@@ -1,0 +1,73 @@
+{
+  "entryId": "uio_pecos",
+  "programnavn": "Peace and Conflict Studies (master 2 år)",
+  "institusjon": "Universitetet i Oslo",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.uio.no/english/studies/programmes/peace-master/",
+    "https://www.uio.no/english/studies/programmes/peace-master/structure/index%20PECOS.html",
+    "https://www.uio.no/english/studies/programmes/peace-master/structure/"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 80,
+  "obligatoriske": [
+    {
+      "emnekode": "PECOS4025",
+      "emnenavn": "Analytic perspectives on peace and conflict",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "PECOS4025-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PECOS4022",
+      "emnenavn": "Applied Statistics for Peace and Conflict Studies",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "PECOS4022-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PECOS4010",
+      "emnenavn": "Conflict and state building",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "PECOS4010-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "STV4911",
+      "emnenavn": "Design Seminar",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "STV4911-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PECOS4096",
+      "emnenavn": "Master's Thesis",
+      "studiepoeng": 45,
+      "aar": 2,
+      "semester": "helår",
+      "dbhEmnekoder": [
+        "PECOS4096-1"
+      ],
+      "merknad": "45 sp; arbeidet går over 3. og 4. semester (15 sp i 3. semester, 30 sp i 4.)."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Programmet er lagt om: fra og med opptakskullet høsten 2027 heter det Peace, Conflict, and Democracy Studies, og de obligatoriske emnene får nye koder (STV4001, STV4002, STV4003, STV4911, STV4096). Her er planen for kull til og med høsten 2026 lagt til grunn, siden den svarer til DBH-kodene i datasettet. I tillegg til de 80 obligatoriske sp må studentene velge ett metodeemne (10 sp) i 3. semester blant STV4030A Digital Data in Political Science, STV4030B Qualitative Data in Political Science og STV4030C Survey design for political scientists – DBH har karakterdata for STV4030A-1 og STV4030B-1, men ikke for STV4030C. De siste 30 sp er frie valgemner i 2. semester, i praksis hele masteremneporteføljen ved Institutt for statsvitenskap. Alle fem obligatoriske emner er koblet til DBH-koder."
+}

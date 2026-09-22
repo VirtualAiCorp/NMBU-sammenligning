@@ -1,0 +1,72 @@
+{
+  "entryId": "nmbu_intrel",
+  "programnavn": "Internasjonale relasjoner (master 2 år)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/master-2-aar/internasjonale-relasjoner",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2025-12/Program%20structure%20of%20Master%20in%20International%20Relations%202026-2027.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 70,
+  "obligatoriske": [
+    {
+      "emnekode": "EDS203",
+      "emnenavn": "Introduction to International Relations",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EDS203-1"
+      ],
+      "merknad": "Augustblokk."
+    },
+    {
+      "emnekode": "EDS374A",
+      "emnenavn": "International Relations Theory",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EDS374A-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EDS312",
+      "emnenavn": "Research Methods",
+      "studiepoeng": 15,
+      "aar": 1,
+      "semester": "helår",
+      "dbhEmnekoder": [
+        "EDS312-1"
+      ],
+      "merknad": "Går over høst- og vårparallellen; alle 15 sp godskrives om våren."
+    },
+    {
+      "emnekode": "EDS374B",
+      "emnenavn": "International Relations Theory",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "EDS374B-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "M30-IR",
+      "emnenavn": "Master Thesis",
+      "studiepoeng": 30,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "M30-IR-1"
+      ],
+      "merknad": "Kan utvides til 60 sp; da faller valgemnene i 3. semester bort."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er studieplan-PDF-en «Program structure of Master in International Relations 2026-2027» lenket fra programsiden. PDF-en lister eksplisitt fem obligatoriske emner (70 sp). Programmet har ingen spesialiseringer; de resterende 50 sp er valgemner, internship (EDS313, 10–30 sp) og/eller utveksling i 3. semester. Mange av IR-valgemnene går annethvert år (partalls- eller oddetallsår), så det faktiske tilbudet varierer. Alle fem obligatoriske emner er koblet til DBH-koder."
+}

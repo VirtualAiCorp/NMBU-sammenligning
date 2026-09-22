@@ -1,0 +1,154 @@
+{
+  "entryId": "nmbu_eeg",
+  "programnavn": "Samfunnsøkonomi og miljøforvaltning (master 2 år)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/master-2-aar/samfunnsokonomi-og-miljoforvaltning",
+    "https://www.nmbu.no/studier/programme-structure-master-economics-and-environmental-governance-2026",
+    "https://www.nmbu.no/en/studies/programme-structure-master-economics-and-environmental-governance-2025"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 80,
+  "obligatoriske": [
+    {
+      "emnekode": "ECN340",
+      "emnenavn": "Introduction to Economics, the Global Economy and Environmental Governance",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "ECN340-1"
+      ],
+      "merknad": "Augustblokk."
+    },
+    {
+      "emnekode": "ECN215",
+      "emnenavn": "Intermediate Microeconomics - Consumers, Producers, Market and Welfare",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "ECN215-1"
+      ],
+      "merknad": "Obligatorisk kun for studenter som ikke har mikroøkonomi på mellomnivå i bachelorgraden; øvrige tar et valgemne, f.eks. EDS306. Ikke regnet med i obligatoriskeStudiepoeng."
+    },
+    {
+      "emnekode": "ECN306",
+      "emnenavn": "Economics of Sustainability",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "ECN306-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EDS355",
+      "emnenavn": "Climate Change and Society",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Lå i 3. semester i 2025-planen, flyttet til 1. semester i 2026-planen. Ingen DBH-karakterdata for emnet i datasettet for dette programmet."
+    },
+    {
+      "emnekode": "ECN375",
+      "emnenavn": "Natural Resource and Environmental Economics",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Ingen DBH-karakterdata for emnet i datasettet for dette programmet."
+    },
+    {
+      "emnekode": "EDS348",
+      "emnenavn": "Global Environmental Governance",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Ingen DBH-karakterdata for emnet i datasettet for dette programmet."
+    },
+    {
+      "emnekode": "ECN372",
+      "emnenavn": "Climate Economics",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "ECN372-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "M0-EEG",
+      "emnenavn": "Planning the Master's Thesis",
+      "studiepoeng": 0,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "0 sp, ny i 2026-planen."
+    },
+    {
+      "emnekode": "M30-EEG",
+      "emnenavn": "Master Thesis",
+      "studiepoeng": 30,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Ingen DBH-karakterdata ennå – programmet er nytt."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Profil i økologisk økonomi (Ecological Economics)",
+      "obligatoriske": [
+        {
+          "emnekode": "EDS330",
+          "emnenavn": "Political Ecology",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "Ingen DBH-karakterdata for emnet i datasettet for dette programmet."
+        },
+        {
+          "emnekode": "EDS351",
+          "emnenavn": "Ecological Economics and Degrowth",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Ingen DBH-karakterdata for emnet i datasettet for dette programmet."
+        }
+      ]
+    },
+    {
+      "navn": "Profil i energiøkonomi (Energy Economics)",
+      "obligatoriske": [
+        {
+          "emnekode": "ECN280",
+          "emnenavn": "Energy Economics",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "Ingen DBH-karakterdata for emnet i datasettet for dette programmet."
+        },
+        {
+          "emnekode": "ECN380",
+          "emnenavn": "Energy Markets and Regulation",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Ingen DBH-karakterdata for emnet i datasettet for dette programmet."
+        }
+      ]
+    }
+  ],
+  "merknad": "Studieplanen for opptakskullet høsten 2026 er lagt til grunn; 2025-planen er tatt med som kilde og skiller seg ved at EDS355 lå i 3. semester, metodepakken lå i 1. semester, ECN215 kunne byttes mot EDS306, og M0-EEG ikke fantes. De 20 sp valgemner tas enten som én av de to profilene (ført opp under spesialiseringer) eller fritt blant NMBUs emner. I tillegg må alle ta en metodepakke på 10 sp i 3. semester: enten AOS340 Kvalitativ metode (5 sp) + AOS341 Kvantitative metoder (5 sp), eller ECN201 Econometrics / ECN301 Econometric Methods (10 sp); dette bundne valget er ikke ført opp som obligatorisk. obligatoriskeStudiepoeng (80) teller ikke ECN215. M-EEG er et nytt program, og DBH har foreløpig karakterdata for bare 4 av de 9 obligatoriske emnene (EDS355, ECN375, EDS348, M0-EEG og M30-EEG mangler) og for ingen av profilemnene."
+}

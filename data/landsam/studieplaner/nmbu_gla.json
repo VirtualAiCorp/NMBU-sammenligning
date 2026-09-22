@@ -1,0 +1,83 @@
+{
+  "entryId": "nmbu_gla",
+  "programnavn": "Landskapsarkitektur for global bærekraft (master 2 år)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://www.nmbu.no/studier/master-2-aar/landskapsarkitektur-global-baerekraft",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2025-12/GLA%20Studieplan%202025%202026.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 90,
+  "obligatoriske": [
+    {
+      "emnekode": "GLA301",
+      "emnenavn": "Introduction to Landscape Architecture for Global Sustainability",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "GLA301-1"
+      ],
+      "merknad": "Augustblokk. Må være bestått før GLA305."
+    },
+    {
+      "emnekode": "GLA302",
+      "emnenavn": "Design-research studio in landscape architecture",
+      "studiepoeng": 15,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "GLA302-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "GLA303",
+      "emnenavn": "Landscape in a Globalised World: Historical and Theoretical Perspectives",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "GLA303-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "GLA304",
+      "emnenavn": "Implementing landscape sustainability in an urban context",
+      "studiepoeng": 15,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "GLA304-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "GLA305",
+      "emnenavn": "Social sustainability in a context of vulnerability",
+      "studiepoeng": 15,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "GLA305-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "M30-GLA",
+      "emnenavn": "Master thesis",
+      "studiepoeng": 30,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "M30-GLA-1"
+      ],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er studieplan-PDF-en datert 08.08.2025, funnet på den engelske programsiden; den norske programsiden lenker fortsatt til 2024-versjonen, som har samme obligatoriske emner. Ingen 2026/2027-versjon er publisert per 22.09.2026. PDF-en sier uttrykkelig at «all the courses in the table are mandatory» – 90 av 120 sp. De resterende 30 sp velges fra anbefalte emnepakker med tre perspektiver (Development, Ecological, Planning), men pakkene er anbefalinger, ikke formelle spesialiseringer, og er derfor ikke ført opp under spesialiseringer. Alle seks obligatoriske emner er koblet til DBH-koder."
+}

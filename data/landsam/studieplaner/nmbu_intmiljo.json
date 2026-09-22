@@ -1,0 +1,111 @@
+{
+  "entryId": "nmbu_intmiljo",
+  "programnavn": "Internasjonale miljøstudier (master 2 år)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/master-2-aar/internasjonale-miljostudier",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-07/M-IES%20Study%20Structure%202026-2027.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 60,
+  "obligatoriske": [
+    {
+      "emnekode": "EDS303",
+      "emnenavn": "Introduction to International Environmental Studies",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EDS303-1"
+      ],
+      "merknad": "Augustblokk."
+    },
+    {
+      "emnekode": "EDS306",
+      "emnenavn": "Green Transformations in Theory and Practice",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EDS306-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EDS312",
+      "emnenavn": "Research Methods",
+      "studiepoeng": 15,
+      "aar": 1,
+      "semester": "helår",
+      "dbhEmnekoder": [
+        "EDS312-1"
+      ],
+      "merknad": "Går over høst- og vårparallellen; alle 15 sp godskrives om våren."
+    },
+    {
+      "emnekode": "M30-IES",
+      "emnenavn": "Master's Thesis",
+      "studiepoeng": 30,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "M30-IES-1"
+      ],
+      "merknad": "Kan utvides til 60 sp; da faller valgemnene i 3. semester bort."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Kjerneemner – minst 20 sp må velges blant disse (ikke en formell spesialisering)",
+      "obligatoriske": [
+        {
+          "emnekode": "EDS355",
+          "emnenavn": "Climate Change and Society",
+          "studiepoeng": 10,
+          "aar": null,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "EDS355-1"
+          ],
+          "merknad": "Høstparallell; år 1 eller år 2."
+        },
+        {
+          "emnekode": "EDS348",
+          "emnenavn": "Global Environmental Governance",
+          "studiepoeng": 10,
+          "aar": null,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "EDS348-1"
+          ],
+          "merknad": "Vårparallell; år 1 eller år 2."
+        },
+        {
+          "emnekode": "EDS352",
+          "emnenavn": "Agroecology and Development",
+          "studiepoeng": 10,
+          "aar": null,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "EDS352-1"
+          ],
+          "merknad": "Vårparallell; år 1 eller år 2."
+        },
+        {
+          "emnekode": "EDS237",
+          "emnenavn": "Political Ecology",
+          "studiepoeng": 10,
+          "aar": null,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "EDS330-1"
+          ],
+          "merknad": "Ikke tilbudt 2026–2027; studentene kan ta EDS351 eller EDS285 i stedet det året. EDS237 er ny kode for emnet som tidligere het EDS330 Politisk økologi – DBH-koden EDS330-1 er ført opp på dette grunnlaget og bør kontrolleres mot emnekatalogen."
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er studieplan-PDF-en «M-IES Study Structure 2026-2027» lenket fra programsiden. Graden består av 30 sp obligatoriske emner, 30 sp masteroppgave, minst 20 sp kjerneemner valgt fra en fast liste på fire emner, og 40 sp valgemner/internship/utveksling. Kjerneemnene er ikke en spesialisering, men et bundet valg, og er derfor lagt i spesialiseringer med forklarende navn; aar er satt til null fordi PDF-en bare angir parallell, ikke studieår. Alle fire obligatoriske emner og alle fire kjerneemner er koblet til DBH-koder, men koblingen for EDS237 er usikker (kodeskifte fra EDS330)."
+}

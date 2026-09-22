@@ -1,0 +1,72 @@
+{
+  "entryId": "uib_samfunnsokonomi",
+  "programnavn": "Samfunnsøkonomi (master 2 år)",
+  "institusjon": "Universitetet i Bergen",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www4.uib.no/studier/program/samfunnsokonomi-master",
+    "https://www4.uib.no/studier/program/samfunnsokonomi-master/plan"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 70,
+  "obligatoriske": [
+    {
+      "emnekode": "ECON310",
+      "emnenavn": "Mikroøkonomisk analyse",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "ECON310-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ECON330",
+      "emnenavn": "Makroøkonomisk analyse",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "ECON330-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ECON340",
+      "emnenavn": "Økonometri I",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "ECON340-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ECON380",
+      "emnenavn": "Forberedelsesemne for masteroppgåva",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "ECON380-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ECON391",
+      "emnenavn": "Masteroppgåve",
+      "studiepoeng": 30,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "ECON391-0"
+      ],
+      "merknad": "Normert til 30 sp, typisk 40–60 sider."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er «Studieplan for MASV-SØK Masterprogram i samfunnsøkonomi, høst 2026» på uib.no. Studieplanen sier uttrykkelig at ECON310, ECON330, ECON340 og ECON380 er obligatoriske, i tillegg til masteroppgåva ECON391. Programmet har ingen formelle spesialiseringar: de resterende 50 sp er fem valgemner på 300-nivå (tre i 2. semester, to i 3. semester), og utveksling anbefales i 2. semester. Alle fem obligatoriske emner er koblet til DBH-koder."
+}

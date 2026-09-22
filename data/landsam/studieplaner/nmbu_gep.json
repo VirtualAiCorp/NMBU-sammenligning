@@ -1,0 +1,109 @@
+{
+  "entryId": "nmbu_gep",
+  "programnavn": "Global økonomi og politikk (master 2 år)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/master-2-aar/global-okonomi-og-politikk",
+    "https://www.nmbu.no/en/studies/programme-structure-master-global-economy-and-politics-2026",
+    "https://www.nmbu.no/en/faculties/school-economics-and-business/programme-structure-master-global-economy-and-politics-2025"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 85,
+  "obligatoriske": [
+    {
+      "emnekode": "ECN340",
+      "emnenavn": "Introduction to Economics, the Global Economy and Environmental Governance",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "ECN340-1"
+      ],
+      "merknad": "Augustblokk."
+    },
+    {
+      "emnekode": "ECN215",
+      "emnenavn": "Intermediate Microeconomics - Consumers, Producers, Market and Welfare",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "ECN215-1"
+      ],
+      "merknad": "Obligatorisk kun for studenter som ikke har mikroøkonomi på mellomnivå i bachelorgraden; øvrige tar et valgfritt emne i stedet (f.eks. ECN306). Ikke regnet med i obligatoriskeStudiepoeng."
+    },
+    {
+      "emnekode": "ECN230",
+      "emnenavn": "International Trade, Policy and Development",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "ECN230-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EDS374A",
+      "emnenavn": "International Relations Theory",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EDS374A-1"
+      ],
+      "merknad": "Flyttet fra 3. til 1. semester i 2026-planen (lå i år 2 høst i 2025-planen)."
+    },
+    {
+      "emnekode": "ECN350",
+      "emnenavn": "Development and Global Change",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Ingen DBH-karakterdata for dette emnet i datasettet for programmet."
+    },
+    {
+      "emnekode": "ECN330",
+      "emnenavn": "Economic Integration and Trade Liberalization",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "ECN330-1"
+      ],
+      "merknad": "Var anbefalt valgemne i 1. semester i 2025-planen, obligatorisk i 3. semester i 2026-planen."
+    },
+    {
+      "emnekode": "EDS379",
+      "emnenavn": "Global Political Economy",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Ingen DBH-karakterdata for dette emnet i datasettet for programmet."
+    },
+    {
+      "emnekode": "M0-GEP",
+      "emnenavn": "Planning the Master's Thesis",
+      "studiepoeng": 0,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "0 sp, ny i 2026-planen."
+    },
+    {
+      "emnekode": "M30-GEP",
+      "emnenavn": "Master Thesis",
+      "studiepoeng": 30,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Ingen DBH-karakterdata ennå – programmet er nytt."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Studieplanen for opptakskullet høsten 2026 er lagt til grunn; NMBUs norske programside lenker fortsatt til 2025-planen, som er tatt med som kilde og som skiller seg på tre punkter (EDS374A lå i 3. semester, ECN330 var anbefalt valgemne i 1. semester, og M0-GEP fantes ikke). Utenom de obligatoriske emnene består graden av: (1) et EDS-emne i 2. semester valgt blant EDS380 International Organizations, EDS374B International Relations Theory og EDS377 Foreign Policymaking and the Politics of Europe (10 sp), (2) en metodepakke i 3. semester – enten AOS340 Kvalitativ metode (5 sp) + AOS341 Kvantitative metoder (5 sp) eller ECN201 Econometrics (10 sp), og (3) et fritt valgemne på 5 sp i 2. semester (anbefalt: ECN306, BUS360 eller ECN320). Disse valgene er ikke ført opp som obligatoriske. obligatoriskeStudiepoeng (85) teller ikke ECN215, som bare er obligatorisk for studenter uten mikroøkonomi på mellomnivå fra før. M-GEP er et nytt program, og DBH har foreløpig karakterdata for bare 5 av de 9 obligatoriske emnene (ECN350, EDS379, M0-GEP og M30-GEP mangler)."
+}

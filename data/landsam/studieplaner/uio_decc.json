@@ -1,0 +1,63 @@
+{
+  "entryId": "uio_decc",
+  "programnavn": "Development, Environment and Cultural Change (master 2 år)",
+  "institusjon": "Universitetet i Oslo",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.uio.no/english/studies/programmes/ces-master/",
+    "https://www.uio.no/english/studies/programmes/ces-master/structure/"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 100,
+  "obligatoriske": [
+    {
+      "emnekode": "GLOBE4200",
+      "emnenavn": "Advanced Introduction to Development and Environment",
+      "studiepoeng": 15,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "GLOBE4200-1",
+        "SUM4200-1"
+      ],
+      "merknad": "Emnet skiftet kode fra SUM4200 til GLOBE4200 da Senter for utvikling og miljø ble del av Senter for global bærekraft 1.6.2025. Begge DBH-kodene er tatt med for å fange historiske karakterdata."
+    },
+    {
+      "emnekode": "GLOBE4100",
+      "emnenavn": "Research Methods and Project Design",
+      "studiepoeng": 15,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "GLOBE4100-1",
+        "SUM4100-1"
+      ],
+      "merknad": "Kodeskifte SUM4100 → GLOBE4100 fra 2025. Begge DBH-kodene tatt med."
+    },
+    {
+      "emnekode": "GLOBE4300",
+      "emnenavn": "Text Lab",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "SUM4300-1"
+      ],
+      "merknad": "Obligatorisk for programstudenter med oppstart fra august 2020. DBH har foreløpig bare den gamle koden SUM4300-1 for emnet."
+    },
+    {
+      "emnekode": "GLOBE4091",
+      "emnenavn": "Master's Thesis in Development, Environment and Cultural Change",
+      "studiepoeng": 60,
+      "aar": 2,
+      "semester": "helår",
+      "dbhEmnekoder": [
+        "SUM4091-1"
+      ],
+      "merknad": "60 sp masteroppgave som går over 3. og 4. semester. DBH har foreløpig bare den gamle koden SUM4091-1."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Programmet har ingen studieretninger. De obligatoriske emnene utgjør 100 av 120 sp; de resterende 20 sp er valgemner i 2. semester, valgt fra en liste som oppdateres årlig (bl.a. GLOBE4019, GLOBE4029, GLOBE4910 Internship, GLOBE4508, GLOBE4511, GLOBE4512). Viktig forbehold: emneporteføljen er i ferd med å skifte kodeprefiks fra SUMxxxx til GLOBExxxx etter at Senter for utvikling og miljø ble del av Senter for global bærekraft 1.6.2025. DBH-datasettet inneholder både gamle SUM-koder og de nye GLOBE-kodene for de to første emnene, men bare SUM-kodene for Text Lab og masteroppgaven. Der emnet er det samme, men koden endret, er den gamle koden ført opp i dbhEmnekoder og forklart i merknaden på emnet."
+}

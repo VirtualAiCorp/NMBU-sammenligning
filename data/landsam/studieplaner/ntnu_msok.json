@@ -1,0 +1,98 @@
+{
+  "entryId": "ntnu_msok",
+  "programnavn": "Samfunnsøkonomi (master 2 år)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2024/2025",
+  "kilder": [
+    "https://www.ntnu.no/studier/msok",
+    "https://www.ntnu.no/studier/msok/studiets-oppbygning"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 90,
+  "obligatoriske": [
+    {
+      "emnekode": "SØK3004",
+      "emnenavn": "Videregående matematisk analyse",
+      "studiepoeng": 15,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "SØK3004-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "SØK3006",
+      "emnenavn": "Valuta, olje og makroøkonomisk politikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "SØK3006-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "SØK3007",
+      "emnenavn": "Skatt, beslutningsatferd og økonomisk politikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "SØK3007-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "SØK3001",
+      "emnenavn": "Videregående økonometri",
+      "studiepoeng": 15,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "SØK3001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "SØK3008",
+      "emnenavn": "Insentiver, informasjon og arbeidskontrakter",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "SØK3008-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": null,
+      "emnenavn": "Eksperter i team",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "AAR4914-3",
+        "BEIT4013-1",
+        "POL3801-1",
+        "SØK3801-1",
+        "TET4850-3"
+      ],
+      "merknad": "Studieplanen oppgir ingen emnekode – studenten velger landsby, og hver landsby har sin egen kode. emnekode er derfor satt til null. DBH-kodene er de EiT-landsbyene datasettet har karakterdata for på dette programmet (bl.a. SØK3801 Verdien mellom fjellene og POL3801 Vekst og utvikling)."
+    },
+    {
+      "emnekode": "SØK3900",
+      "emnenavn": "Masteroppgave",
+      "studiepoeng": 30,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "SØK3900-1"
+      ],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "NTNU har per 22.09.2026 ikke publisert en nyere oppbyggingsside enn den som står merket «Informasjonen er gyldig for studieåret 2024/2025»; både programsiden for studiestart 2026 og NTNUs studieplanverktøy peker til denne siden, og 2024/2025-planen er derfor lagt til grunn. Programmet har ingen navngitte spesialiseringer: hele 3. semester (30 sp) er valgbare spesialiseringsemner, i hovedsak SØK3500-emnene (SØK3531–SØK3541) og finansemner, og flere av dem går bare annethvert år eller som selvstudium. Alle obligatoriske emner utenom Eksperter i team er koblet til én DBH-kode; Eksperter i team er koblet til de fem landsbykodene i datasettet. Merk at DBH-datasettet også inneholder eldre obligatoriske emner (SØK3514, SØK3517, SØK3522, SØK3523) som ikke lenger står i studieplanen."
+}
