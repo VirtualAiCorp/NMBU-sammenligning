@@ -1,0 +1,128 @@
+{
+  "groupId": "naturforvaltning2",
+  "hentet": "2026-09-23",
+  "note": "Dette er den gruppen i MINA-porteføljen med best faglig overlapp: alle fire programmene kombinerer økologi med forvaltning, og har både metodeemner, GIS og en stor masteroppgave. Oppbyggingen er likevel ulik. NMBU har mange små obligatoriske emner (5 sp) og en masteroppgave på 45 sp, NTNU har en felles kjerne på 30 sp og deretter to studieretninger (biologi og geografi) med hver sin 60 sp-oppgave, USN har tre obligatoriske emner og seks frie 7,5 sp-valgemner, og INNs «Anvendt økologi» har hele graden obligatorisk. USN byttet studieplan rundt 2022, da de gamle 10 sp-emnene (4301, 4311, 4308) ble erstattet av EE-emner på 7,5 sp, og INN la om fra 6EV- til MAOK-emner i 2024; begge kodesettene er tatt med der de dekker samme tema. NTNUs og INNs HMS-kurs uten studiepoeng er utelatt. Emner som ikke er koblet fordi de bare finnes ett sted: NMBUs restaureringsøkologi (ECOL350), naturkartlegging (BOT270) og besøksforvaltning (REIS320), USNs molekylærgenetikk (EE508, 4328) og økotoksikologi (EE507, 4308), og INNs viltovervåkingsemner. INN inngår også i gruppen okologi2, med samme emnedata.",
+  "emnetyper": [
+    {
+      "id": "statistikk-studiedesign",
+      "label": "Statistikk og studiedesign",
+      "kategori": "Metode",
+      "desc": "Studiedesign, statistisk modellering og analyse av økologiske og forvaltningsfaglige data.",
+      "note": "NMBU har ikke noe obligatorisk statistikkemne på masternivå; studenter uten statistikk fra før må ta STAT100 på bachelornivå, som ikke rapporteres på masterprogrammet. ECOL340 er valgfritt, men tas av de fleste.",
+      "koblinger": [
+        { "entryId": "nmbu_naturforvaltning2", "emnekoder": ["ECOL340-1"], "merknad": "5 sp, dataanalyse i R" },
+        { "entryId": "ntnu_naturressurs2", "emnekoder": ["BI3052-1", "BI3051-1"], "merknad": "studiedesign + kvantitative analyser, 7,5 sp hver; obligatorisk valg i biologiretningen" },
+        { "entryId": "usn_okologi_miljoforvaltning2", "emnekoder": ["EE502-1"], "merknad": "Statistics and Study Design, 7,5 sp, obligatorisk" },
+        { "entryId": "inn_anvendt_okologi_nf2", "emnekoder": ["MAOK4002-1", "MAOK4006-1", "6EV311-1", "6EV321-1", "6EV323-1"], "merknad": "MAOK4002 Biostatistics (10 sp) erstattet 6EV311 fra 2024" }
+      ]
+    },
+    {
+      "id": "forskningsmetode",
+      "label": "Vitenskapelig metode og forskningsprosess",
+      "kategori": "Metode",
+      "desc": "Vitenskapsteori, forskningsdesign, økologiske feltmetoder og vitenskapelig formidling.",
+      "note": "NMBU byttet fra ECOL300 til MINA310 fra og med 2023, og har i tillegg MINA311 Samfunnsvitenskapelig forskningsmetode (10 sp) som alternativ. NTNUs BI3086 How to do Science gir ingen studiepoeng og vurderes bestått/ikke bestått. USNs to gamle metodeemner hadde siste kandidater i 2022.",
+      "koblinger": [
+        { "entryId": "nmbu_naturforvaltning2", "emnekoder": ["MINA310-1", "ECOL300-1", "MINA311-1"], "merknad": "obligatorisk valg mellom MINA310 (5 sp) og MINA311 (10 sp)" },
+        { "entryId": "ntnu_naturressurs2", "emnekoder": ["RFEL3080-1", "BI3086-1"], "merknad": "RFEL3080 Scientific Research Seminar (7,5 sp) er obligatorisk; BI3086 er på 0 sp" },
+        { "entryId": "usn_okologi_miljoforvaltning2", "emnekoder": ["4301-1", "4311-1"], "merknad": "Natural Science Methods og Ecological Methods, 10 sp hver; erstattet av EE-emnene fra 2022" },
+        { "entryId": "inn_anvendt_okologi_nf2", "emnekoder": ["MAOK4005-1"], "merknad": "Research process and topics, 10 sp" }
+      ]
+    },
+    {
+      "id": "naturforvaltning-kjerne",
+      "label": "Naturforvaltning og økosystemtjenester",
+      "kategori": "Forvaltning",
+      "desc": "Forvaltningsapparatet, virkemidlene og avveiingene i praktisk natur- og naturressursforvaltning, inkludert økosystemtjenester.",
+      "note": "USN har ikke noe generelt forvaltningsemne; programmet er bygd opp av økologiske og miljøfaglige valgemner, og forvaltningsdelen ligger innbakt i disse.",
+      "koblinger": [
+        { "entryId": "nmbu_naturforvaltning2", "emnekoder": ["NATF302-1", "NATF301-1"], "merknad": "Norsk naturforvaltning + Praktisk naturforvaltning, 5 sp hver, begge obligatoriske" },
+        { "entryId": "ntnu_naturressurs2", "emnekoder": ["RFEL3082-1", "RFEL3083-1"], "merknad": "Sustainable Management of Ecosystem Services (obligatorisk) + praksisemnet Bærekraftig forvaltning" },
+        { "entryId": "inn_anvendt_okologi_nf2", "emnekoder": ["6EV322-1"], "merknad": "Human dimensions in ecosystem management, 7,5 sp; siste kull 2023" }
+      ]
+    },
+    {
+      "id": "bevaringsbiologi",
+      "label": "Bevaringsbiologi",
+      "kategori": "Økologi",
+      "desc": "Teori og metoder for å bevare arter og økosystemer: små populasjoner, fragmentering, rødlister og vernevurderinger.",
+      "note": "USN har to emner på feltet, et generelt og et anvendt. INN har ikke noe frittstående emne i bevaringsbiologi.",
+      "koblinger": [
+        { "entryId": "nmbu_naturforvaltning2", "emnekoder": ["NATF300-1"], "merknad": "5 sp" },
+        { "entryId": "ntnu_naturressurs2", "emnekoder": ["BI3082-1"], "merknad": "Avansert bevaringsbiologi, 7,5 sp; få kandidater på dette programmet" },
+        { "entryId": "usn_okologi_miljoforvaltning2", "emnekoder": ["EE510-1", "EE511-1"], "merknad": "Applied Conservation Biology + Conservation Biology, 7,5 sp hver" }
+      ]
+    },
+    {
+      "id": "gis-fjernmaling",
+      "label": "GIS, fjernmåling og romlig analyse",
+      "kategori": "Metode",
+      "desc": "Geografiske informasjonssystemer, fjernmåling, landskapsanalyse og analyse av romlige data.",
+      "note": "NMBU har bare et praktisk introduksjonsemne på 5 sp, og det er et bachelornivåemne (LAD102) som masterstudentene tar. De tre andre programmene har GIS og fjernmåling på masternivå.",
+      "koblinger": [
+        { "entryId": "nmbu_naturforvaltning2", "emnekoder": ["LAD102-1"], "merknad": "GIS - praktisk introduksjon, 5 sp" },
+        { "entryId": "ntnu_naturressurs2", "emnekoder": ["GEOG3523-1", "GEOG3527-1"], "merknad": "GIS-datafangst og kartlegging + GIS-verktøy for klimastudier, 7,5 sp hver; obligatorisk valg i geografiretningen" },
+        { "entryId": "usn_okologi_miljoforvaltning2", "emnekoder": ["EE509-1", "MSM4330-1"], "merknad": "Landscape Analysis and Remote Sensing + Spatial analyses, 7,5 sp hver" },
+        { "entryId": "inn_anvendt_okologi_nf2", "emnekoder": ["SKO4003S-1", "MAOK4110-1", "6EV324-1"], "merknad": "SKO4003S Geographic Information Systems (10 sp) erstattet MAOK4110 GIS fra 2025; 6EV324 dekker romlige dyredata" }
+      ]
+    },
+    {
+      "id": "vilt-og-fiskeforvaltning",
+      "label": "Vilt- og fiskeforvaltning",
+      "kategori": "Forvaltning",
+      "desc": "Bestandsovervåking, høsting og forvaltning av vilt og ferskvannsfisk, og håndtering av konflikter rundt rovvilt og hjortevilt.",
+      "note": "NTNUs naturressursforvaltning har ingen vilt- eller fiskeemner. USNs eneste emne på feltet er lite. Dette er derimot INNs faglige tyngdepunkt, med flere emner i viltovervåking og viltøkologi.",
+      "koblinger": [
+        { "entryId": "nmbu_naturforvaltning2", "emnekoder": ["NATF330-1", "NATF340-1"], "merknad": "Viltforvaltning + Fiskeforvaltning, 10 sp hver" },
+        { "entryId": "usn_okologi_miljoforvaltning2", "emnekoder": ["NF214-1"], "merknad": "Wildlife Conflict Management, 7,5 sp; få kandidater" },
+        { "entryId": "inn_anvendt_okologi_nf2", "emnekoder": ["MAOK4004-1", "MAOK4140-1", "MAOK4003-1", "6EV314-1"], "merknad": "viltovervåking, anvendt viltøkologi og radiotelemetri" }
+      ]
+    },
+    {
+      "id": "vann-og-vassdrag",
+      "label": "Ferskvann og vannforvaltning",
+      "kategori": "Vann",
+      "desc": "Økologi i elver og innsjøer, vannkvalitet og forvaltning av vannforekomster etter vannforskriften.",
+      "note": "Verken NTNU eller INN har vannfaglige emner på disse programmene.",
+      "koblinger": [
+        { "entryId": "nmbu_naturforvaltning2", "emnekoder": ["ECOL380-1", "VANN210-1"], "merknad": "Økologi og forvaltning av elver og innsjøer + Ferskvannsøkologi, 10 sp hver" },
+        { "entryId": "usn_okologi_miljoforvaltning2", "emnekoder": ["EE503-1"], "merknad": "Bærekraftig vannforvaltning, 7,5 sp; et av de mest tatte valgemnene" }
+      ]
+    },
+    {
+      "id": "arealplanlegging-miljorett",
+      "label": "Arealplanlegging og miljørett",
+      "kategori": "Forvaltning",
+      "desc": "Plan- og bygningsloven, naturmangfoldloven og annen miljøforvaltningsrett, og hvordan arealplanlegging foregår i kommuner og stat.",
+      "note": "Dette er den tydeligste forskjellen mellom NMBU og de andre: NMBU har fire juss- og planleggingsemner i programmet, og alle fire er obligatoriske eller nær obligatoriske. NTNUs GEOG3030 dekker planleggingsdelen, men ikke jussen. USN og INN har ingen emner på feltet.",
+      "koblinger": [
+        { "entryId": "nmbu_naturforvaltning2", "emnekoder": ["APL240-1", "APL241-1", "JUS220-1", "JUS320-1"], "merknad": "Miljø og planlegging del 1 og 2, Miljøforvaltningsrett og Plan- og bygningsrett I, 5 sp hver" },
+        { "entryId": "ntnu_naturressurs2", "emnekoder": ["GEOG3030-1"], "merknad": "Natural Resources Planning and Management, 7,5 sp, obligatorisk; programmets største emne" }
+      ]
+    },
+    {
+      "id": "tverrfaglig-baerekraft",
+      "label": "Tverrfaglig bærekraftsarbeid",
+      "kategori": "Metode",
+      "desc": "Tverrfaglig prosjektarbeid om bærekraftskonflikter, der studenter fra ulike fag må håndtere motstridende hensyn og interesser.",
+      "note": "NMBU tilbyr emnet i en norsk (MINA320) og en engelsk (MINA321) versjon, og begge kodene er tatt med. USN og INN har ikke noe tilsvarende emne.",
+      "koblinger": [
+        { "entryId": "nmbu_naturforvaltning2", "emnekoder": ["MINA320-1", "MINA321-1"], "merknad": "5 sp, obligatorisk; MINA320 er den norske versjonen" },
+        { "entryId": "ntnu_naturressurs2", "emnekoder": ["RFEL3081-1"], "merknad": "Interdisciplinary Project for Environmental Sustainability, 7,5 sp, obligatorisk" }
+      ]
+    },
+    {
+      "id": "masteroppgave",
+      "label": "Masteroppgave",
+      "kategori": "Oppgave",
+      "desc": "Selvstendig vitenskapelig arbeid som avslutter masterstudiet.",
+      "note": "Omfanget varierer mye: NMBU har 45 sp som hovedvariant, mens NTNU, USN og INN alle har 60 sp. NMBU har også hatt 30 og 60 sp-varianter, og alle tre kodene er tatt med. NTNU har egen oppgavekode for hver av de to studieretningene.",
+      "koblinger": [
+        { "entryId": "nmbu_naturforvaltning2", "emnekoder": ["M45-NF-1", "M30-NF-1", "M60-NF-1"], "merknad": "45 sp er hovedvarianten i dagens studieplan" },
+        { "entryId": "ntnu_naturressurs2", "emnekoder": ["NATRBI3900-1", "GEOG3940-1"], "merknad": "60 sp; biologiretningen og geografiretningen har hver sin kode" },
+        { "entryId": "usn_okologi_miljoforvaltning2", "emnekoder": ["4317-1"], "merknad": "60 sp" },
+        { "entryId": "inn_anvendt_okologi_nf2", "emnekoder": ["6EV399-1"], "merknad": "60 sp" }
+      ]
+    }
+  ]
+}

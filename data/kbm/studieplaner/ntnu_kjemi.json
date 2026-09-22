@@ -1,0 +1,343 @@
+{
+  "programnavn": "Kjemi (bachelor)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://www.ntnu.no/studier/bkj",
+    "https://www.ntnu.no/web/studier/studieplan?p_p_id=studyprogrammeplannerportlet_WAR_studyprogrammeplannerportlet_INSTANCE_KzJMPh2hQuXL&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=studyplan&p_p_cacheability=cacheLevelPage&code=BKJ&year=2025"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 60,
+  "obligatoriske": [
+    {
+      "emnekode": "KJ1003",
+      "emnenavn": "Generell kjemi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJ2222",
+      "emnenavn": "Dataanalyse og visualisering i kjemi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "EXPH0300",
+      "emnenavn": "Examen philosophicum for naturvitenskap og teknologi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4400",
+      "emnenavn": "Matematikk 1: Kalkulus og lineær algebra",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "HMS0001",
+      "emnenavn": "HMS-kurs for 1. årsstudenter",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TKJ4103",
+      "emnenavn": "Organisk kjemi grunnkurs",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJ1024",
+      "emnenavn": "Organisk kjemi, laboratoriekurs",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMT4130",
+      "emnenavn": "Uorganisk kjemi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4411",
+      "emnenavn": "Matematikk 2B: Lineær algebra, differensialligninger og flervariabel analyse",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Fag 2 Biologi/bio-organisk",
+      "obligatoriske": [
+        {
+          "emnekode": "KJ1041",
+          "emnenavn": "Fysikalsk kjemi: molekylær struktur",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "KJ2050",
+          "emnenavn": "Analytisk kjemi, grunnkurs",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TFY4104",
+          "emnenavn": "Fysikk",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TKJ4162",
+          "emnenavn": "Fysikalsk kjemi: Kjemisk termodynamikk",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "KJ2059",
+          "emnenavn": "Analytisk organisk kjemi",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "BI1013",
+          "emnenavn": "Celle- og molekylærbiologi, teori",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TBT4102",
+          "emnenavn": "Biokjemi 1",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "ITO1000",
+          "emnenavn": "Digitalisering - Områdeemne Teknologi",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TKJ4150",
+          "emnenavn": "Organisk syntese I",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "KJ2072",
+          "emnenavn": "Naturmiljøkjemi",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "KJ2900",
+          "emnenavn": "Bachelorprosjekt i kjemi",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "Kan alternativt tas som KJ2910 (15 sp, større omfang)."
+        }
+      ]
+    },
+    {
+      "navn": "Fag 2 Fysikk",
+      "obligatoriske": [
+        {
+          "emnekode": "KJ2050",
+          "emnenavn": "Analytisk kjemi, grunnkurs",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TFY4104",
+          "emnenavn": "Fysikk",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "KJ1041",
+          "emnenavn": "Fysikalsk kjemi: molekylær struktur",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4421",
+          "emnenavn": "Matematikk 3B: Vektoranalyse og funksjonsapproksimasjon",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TKJ4162",
+          "emnenavn": "Fysikalsk kjemi: Kjemisk termodynamikk",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "KJ2059",
+          "emnenavn": "Analytisk organisk kjemi",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4431",
+          "emnenavn": "Matematikk 4B: Integraltransformasjoner, partielle differensialligninger, maskinlæring",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FY2008",
+          "emnenavn": "Numerisk fysikk 2",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TFY4220",
+          "emnenavn": "Faste stoffers fysikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TBT4102",
+          "emnenavn": "Biokjemi 1",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "ITO1000",
+          "emnenavn": "Digitalisering - Områdeemne Teknologi",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TFY4160",
+          "emnenavn": "Bølgefysikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TKJ4215",
+          "emnenavn": "Statistisk termodynamikk i kjemi og biologi",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TKJ4150",
+          "emnenavn": "Organisk syntese I",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "KJ2900",
+          "emnenavn": "Bachelorprosjekt i kjemi",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "Kan alternativt tas som KJ2910 (15 sp, større omfang)."
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er NTNUs studieplan-API for BKJ, kull 2025. 1. år (60 sp) er felles for alle studenter. Fra 2. år (år 2-3) velger studenten mellom to spor: «Fag 2 Biologi/bio-organisk» og «Fag 2 Fysikk», med ulike obligatoriske emner. For Fysikk-sporet summerer de navngitte emnene til nær fullt 120 sp for år 2-3 (30+30+30+22,5-30). For Biologi/bio-organisk-sporet summerer de navngitte emnene kun til ca. 82,5-90 sp av 120 - kilden ser ut til å mangle ett emne per semester i dette sporet (trolig et valgfritt støtteemne), så dette sporet er noe mindre fullstendig dokumentert enn Fysikk-sporet og bør kontrolleres nærmere. Bacheloroppgaven KJ2900 (7,5 sp) kan alternativt tas som KJ2910 (15 sp) i begge spor. obligatoriskeStudiepoeng på toppnivå (60) gjelder kun fællesdelen i 1. år, i tråd med praksis for andre 2-sporede programmer i dette datasettet.",
+  "entryId": "ntnu_kjemi"
+}

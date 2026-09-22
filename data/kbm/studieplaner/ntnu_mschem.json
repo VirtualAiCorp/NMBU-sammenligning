@@ -1,0 +1,67 @@
+{
+  "programnavn": "Kjemi (master 2 år)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://www.ntnu.no/studier/mschem",
+    "https://www.ntnu.no/web/studier/studieplan?p_p_id=studyprogrammeplannerportlet_WAR_studyprogrammeplannerportlet_INSTANCE_KzJMPh2hQuXL&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=studyplan&p_p_cacheability=cacheLevelPage&code=MSCHEM&year=2025"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 60,
+  "obligatoriske": [
+    {
+      "emnekode": "HMS0003",
+      "emnenavn": "HMS-kurs for masterstudenter",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJ3900",
+      "emnenavn": "Masteroppgave i kjemi",
+      "studiepoeng": 60,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "60 sp totalt, delt i 4 deler fordelt over alle 4 semestre (del 1-4 ifølge studieplanen)."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Organisk kjemi",
+      "obligatoriske": [
+        {
+          "emnekode": "TKJ4155",
+          "emnenavn": "Organic Synthesis II",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TKJ4130",
+          "emnenavn": "Organic Synthesis, Laboratory",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Strukturkjemi",
+      "obligatoriske": []
+    },
+    {
+      "navn": "Anvendt teoretisk kjemi",
+      "obligatoriske": []
+    }
+  ],
+  "merknad": "Kilde er NTNUs studieplan-API for MSCHEM, kull 2025 (hentet på engelsk - norske emnenavn for studieretningene er ikke bekreftet og kan avvike noe fra de brukte betegnelsene «Strukturkjemi» og «Anvendt teoretisk kjemi», oversatt fra hhv. «Structural Chemistry» og «Applied Theoretical Chemistry»). Programmet har 3 studieretninger; kun «Organisk kjemi» har egne navngitte obligatoriske emner utover fellesdelen (TKJ4155 Organic Synthesis II og TKJ4130 Organic Synthesis, Laboratory, til sammen 15 sp) - de to andre retningene har ifølge kilden ingen obligatoriske emner utover HMS-kurs og masteroppgave. Fellesdelen (60 sp) består av HMS0003 (0 sp) og masteroppgaven KJ3900 (60 sp, delt i 4 deler over alle 4 semestre). Resten av programmet (opptil 60 sp, eller 45 sp for Organisk kjemi-retningen) er valgfrie emner tilpasset masteroppgavens tema, ikke navngitt med én fast kombinasjon i kilden.",
+  "entryId": "ntnu_mschem"
+}

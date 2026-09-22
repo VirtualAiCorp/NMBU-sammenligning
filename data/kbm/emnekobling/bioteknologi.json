@@ -52,7 +52,7 @@
       "label": "Bioinformatikk",
       "kategori": "Programmering",
       "desc": "Analyse av sekvens- og genomdata: databaser, alignment, fylogeni og verktøy for biologiske datasett.",
-      "note": "Fire av sju programmer har et eget bioinformatikkemne. NTNUs BT2100 Beregningsbasert bioteknologi er et bredere beregningsemne, men er nærmeste parallell i Trondheim. Verken UiB (som dekker feltet i MOL204 Anvendt bioinformatikk) - som er koblet - eller OsloMet har noe ut over dette; OsloMet har ikke bioinformatikk i det hele tatt.",
+      "note": "Seks av sju programmer har et bioinformatikkemne. NTNUs BT2100 Beregningsbasert bioteknologi er et bredere beregningsemne, men er nærmeste parallell i Trondheim. OsloMet har ikke bioinformatikk i det hele tatt og er ikke koblet.",
       "koblinger": [
         { "entryId": "nmbu_bioteknologi", "emnekoder": ["BIN210-1"], "merknad": "Introduksjon i bioinformatikk, 10 sp, obligatorisk i 2. år." },
         { "entryId": "uib_molekylarbiologi", "emnekoder": ["MOL204-0"], "merknad": "Anvendt bioinformatikk." },

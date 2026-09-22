@@ -1,0 +1,134 @@
+{
+  "groupId": "fornybar2",
+  "hentet": "2026-09-23",
+  "note": "Den viktigste forskjellen i denne gruppen er at NMBUs master er tverrfaglig og bygd på realfag kombinert med økonomi og samfunnsfag, mens UiA, NTNU og HVL er sivilingeniørutdanninger og UiO ligger et sted imellom. Det slår rett ut i emnekoblingene: NMBU har ingen emner i kraftsystem, kraftelektronikk eller elektriske maskiner, og UiAs og UiOs emner på dette feltet (ENE411 Power Systems Dynamics, ENE505 Power Electronics, ENE506 Smartgrid Systems, MAS409 Elektriske motordrifter, TEK5370 Grid, smartgrid og IoT) er derfor ikke koblet. Motsatt har NMBU økonomi- og forvaltningsemner som de tekniske programmene mangler, og NTNUs bygningsenergiemner (TEP4235, TEP4260, TEP4255) og HVLs forbrenning- og CFD-emner har heller ingen motstykker. NMBU la om emnekodene rundt 2023, fra FORN- til FORNY-serien; begge kodesettene er tatt med der emnene svarer til hverandre. NTNUs «Bærekraftig energi» har svært tynne data: ingen rapporterte kandidater i 2025 og bare noen få i 2024, så alle koblingene dit hviler på summen for 2021-2025. Terskelen for å ta med et emne er derfor satt til minst ti kandidater samlet i perioden 2021-2025 for alle programmene i gruppen. NMBUs BUS230 Operasjonsanalyse og HMS-kursene uten studiepoeng (ORG001) er ikke koblet.",
+  "emnetyper": [
+    {
+      "id": "energisystemanalyse",
+      "label": "Energisystemanalyse og modellering",
+      "kategori": "Energi",
+      "desc": "Modellering, simulering og scenarioanalyse av energisystemer: energibalanser, systemgrenser og hvordan produksjon, lagring og forbruk spiller sammen.",
+      "note": "HVL har ikke noe eget systemanalyseemne; der ligger systemperspektivet innbakt i MAS502 Energy resources & conversion devices og MAS520 Design for Sustainable Energy Technology.",
+      "koblinger": [
+        { "entryId": "nmbu_fornybar2", "emnekoder": ["FORNY360-1", "FORN330-1", "FORNY260-1"], "merknad": "Analyser av fornybare energisystemer (10 sp); FORNY360 erstattet FORN330 fra 2023" },
+        { "entryId": "uio_fornybare_energisystemer2", "emnekoder": ["TEK5340-1"], "merknad": "Energisystemanalyse: modellering, metoder og scenarioer, 10 sp" },
+        { "entryId": "uia_fornybar2", "emnekoder": ["ENE418-G"], "merknad": "Data Analysis and Modelling Techniques in Renewable Energy, 7,5 sp" },
+        { "entryId": "ntnu_baerekraftig_energi2", "emnekoder": ["TEP4240-1"], "merknad": "Systemsimulering, 7,5 sp; siste rapporterte kandidater i 2024" }
+      ]
+    },
+    {
+      "id": "energiokonomi",
+      "label": "Energiøkonomi og energimarkeder",
+      "kategori": "Økonomi",
+      "desc": "Kraft- og energimarkedenes virkemåte, regulering og energipolitikk, samt prosjekt- og investeringsanalyse og klima- og ressursøkonomi.",
+      "note": "Dette er NMBUs faglige tyngdepunkt i gruppen, med sju emner fordelt på flere fagmiljøer, men hvert enkelt emne har få kandidater. UiAs IND417 er et generelt bedriftsøkonomiemne og ikke et energiøkonomiemne, og er tatt med som en svakere kobling.",
+      "koblinger": [
+        { "entryId": "nmbu_fornybar2", "emnekoder": ["MINA330-1", "ECN372-1", "ECN280-1", "ECN380-1", "ECN170-1", "FORN230-1", "RØP330-1"], "merknad": "MINA330 Prosjektøkonomi for fornybar energi og skogbruk (10 sp) er det største; ECN-emnene dekker energi-, klima- og ressursøkonomi" },
+        { "entryId": "uio_fornybare_energisystemer2", "emnekoder": ["TEK5350-1", "TEK5410-1", "TEK5420-1"], "merknad": "Energimarkeder og regulering (10 sp) + to 5 sp-emner om modellering av kraftsystemet og norsk energiomstilling" },
+        { "entryId": "uia_fornybar2", "emnekoder": ["IND417-G"], "merknad": "Bedriftsøkonomisk analyse 1, 7,5 sp; generelt økonomiemne, ikke energispesifikt" },
+        { "entryId": "ntnu_baerekraftig_energi2", "emnekoder": ["TIØ4585-1", "TET4185-1"], "merknad": "Energimarkedsdesign og -politikk + Kraftmarkeder, ressurs og miljø, 7,5 sp hver; få kandidater" },
+        { "entryId": "hvl_energiteknologi2", "emnekoder": ["MAS504-1"], "merknad": "Energiøkonomi, 10 sp" }
+      ]
+    },
+    {
+      "id": "solenergi",
+      "label": "Solenergi",
+      "kategori": "Energi",
+      "desc": "Solressursen, solcelleteknologi og dimensjonering og lønnsomhet for solenergianlegg.",
+      "note": "NTNU og HVL har ingen frittstående solenergiemner med rapporterte karakterer på disse programmene. Vinklingen er ulik: NMBU legger vekt på ressursgrunnlag og lønnsomhet, mens UiA og UiO går dypere inn i selve celleteknologien.",
+      "koblinger": [
+        { "entryId": "nmbu_fornybar2", "emnekoder": ["FORNY305-1", "FORN360-1"], "merknad": "Solenergi - ressursgrunnlag, lønnsomhet og valg av løsninger (10 sp); FORNY305 erstattet FORN360 fra 2023" },
+        { "entryId": "uio_fornybare_energisystemer2", "emnekoder": ["TEK5330-1", "TEK5310-1"], "merknad": "Solenergisystemer (10 sp) + Solceller (10 sp)" },
+        { "entryId": "uia_fornybar2", "emnekoder": ["ENE419-G"], "merknad": "Solar Cell Technology and Applications, 7,5 sp" }
+      ]
+    },
+    {
+      "id": "vind-og-vannkraft",
+      "label": "Vind- og vannkraft",
+      "kategori": "Energi",
+      "desc": "Vind- og vannressurser, turbinteknologi, strømningslære og utbygging av vind- og vannkraftanlegg.",
+      "note": "Bare NMBU og UiA har emner på feltet. NMBU dekker vind og vann i ett emne med vekt på ressursgrunnlag og lønnsomhet, mens UiA har ett teknisk emne for hver av dem. UiO, NTNU og HVL har ingen tilsvarende emner med rapporterte karakterer.",
+      "koblinger": [
+        { "entryId": "nmbu_fornybar2", "emnekoder": ["FORNY300-1", "FORN300-1"], "merknad": "Vind- og vannkraft - ressurs, teknologi og energi (10 sp); FORNY300 erstattet FORN300 fra 2023" },
+        { "entryId": "uia_fornybar2", "emnekoder": ["ENE416-G", "ENE410-G"], "merknad": "Wind Energy + Fluid Dynamics and Hydro Power, 7,5 sp hver" }
+      ]
+    },
+    {
+      "id": "bioenergi",
+      "label": "Bioenergi og biodrivstoff",
+      "kategori": "Energi",
+      "desc": "Biomasse som energiressurs, konvertering til varme, kraft og drivstoff, og bærekraft og marked for bioenergi.",
+      "note": "Bioenergi er et NMBU-særtrekk, knyttet til skog- og bioøkonomimiljøet på Ås. HVLs emne er det eneste sammenlignbare, og det er nytt med få kandidater. UiO, UiA og NTNU har ingen bioenergiemner på disse programmene.",
+      "koblinger": [
+        { "entryId": "nmbu_fornybar2", "emnekoder": ["FORNY310-1", "FORN310-1"], "merknad": "Bioenergi - marked og bærekraft; FORNY310 (5 sp) erstattet FORN310 (10 sp) fra 2023 og er smalere enn forgjengeren" },
+        { "entryId": "hvl_energiteknologi2", "emnekoder": ["MAS531-1"], "merknad": "Bio- and E-fuels, 10 sp; få kandidater" }
+      ]
+    },
+    {
+      "id": "energilagring",
+      "label": "Energilagring, batterier og hydrogen",
+      "kategori": "Energi",
+      "desc": "Lagring og distribusjon av energi: batteriteknologi og elektrokjemi, hydrogen og brenselceller, og hvordan lagring bygges inn i energisystemet.",
+      "note": "NMBUs emne er et systememne om distribusjon og lagring og går ikke inn i elektrokjemien, mens de tre andre har egne emner om batterier og hydrogen hver for seg. NMBU hadde siste kandidater på lagringsemnet i 2023, og emnet er ikke videreført i FORNY-serien.",
+      "koblinger": [
+        { "entryId": "nmbu_fornybar2", "emnekoder": ["FORN240-1", "FORNY240-1"], "merknad": "Energidistribusjon- og -lagringssystemer, 5 sp; siste kandidater i 2023" },
+        { "entryId": "uio_fornybare_energisystemer2", "emnekoder": ["TEK5440-1", "TEK5320-1", "TEK5390-1"], "merknad": "Batterier: teknologi og systemer, Batteriteknologi og Hydrogenteknologi, 10 sp hver" },
+        { "entryId": "uia_fornybar2", "emnekoder": ["ENE417-G", "ENE423-G", "ENE422-G"], "merknad": "Hydrogen and Fuel Cell Technologies, Batterisystemer og Batterielektrokjemi, 7,5 sp hver" },
+        { "entryId": "hvl_energiteknologi2", "emnekoder": ["MAS534-1", "MAS539-1"], "merknad": "Electrochemistry for Batteries, Electrolyzers and Fuel Cell Systems + Hydrogenteknologi, 10 sp hver" }
+      ]
+    },
+    {
+      "id": "baerekraftsanalyse",
+      "label": "Bærekraftsanalyse og livsløpsvurdering",
+      "kategori": "Miljø",
+      "desc": "Livsløpsvurdering (LCA), sirkulær økonomi, miljøledelse og bærekraftsrapportering for energi- og materialsystemer.",
+      "note": "NMBUs LCA-emne FORN220 hadde siste kandidater i 2023 og er ikke erstattet; i dag dekkes feltet av bærekraftsrapportering (BUS311) og avfalls- og kretsløpsemnet FORNY320. UiAs to emner har få kandidater.",
+      "koblinger": [
+        { "entryId": "nmbu_fornybar2", "emnekoder": ["BUS311-1", "FORNY320-1", "FORN220-1"], "merknad": "Miljøledelse og bærekraftrapportering (5 sp), Ressurser i kretsløp (5 sp) og Livsløpsvurdering (10 sp, avviklet)" },
+        { "entryId": "uia_fornybar2", "emnekoder": ["BYG404-G", "ING402-1"], "merknad": "Livsløpsanalyse av konstruksjoner + Circular economy and eco-design, 7,5 sp hver; få kandidater" },
+        { "entryId": "ntnu_baerekraftig_energi2", "emnekoder": ["TEP4223-1"], "merknad": "Livssyklusanalyse, 7,5 sp; emnet deles med NTNUs master i industriell økologi" },
+        { "entryId": "hvl_energiteknologi2", "emnekoder": ["MAS503-1"], "merknad": "Innføring i bærekraftsanalyser, 5 sp" }
+      ]
+    },
+    {
+      "id": "forskningsmetode",
+      "label": "Vitenskapsteori, metode og statistikk",
+      "kategori": "Metode",
+      "desc": "Vitenskapsteori og forskningsmetode, kvantitativ metode og statistikk, og vitenskapelig kommunikasjon.",
+      "note": "NMBUs AOS341 Kvantitative metoder hadde siste kandidater i 2023, og i dag er STAT200 Regresjon det vanligste statistikkemnet på programmet. UiO har ikke noe eget metodeemne; der ligger metodedelen i prosjektemnet TEK5380. NTNUs SPRÅK3501 dekker bare formidlingsdelen og er en svakere kobling.",
+      "koblinger": [
+        { "entryId": "nmbu_fornybar2", "emnekoder": ["AOS341-1", "STAT200-1", "MINA311-1"], "merknad": "AOS341 Kvantitative metoder (5 sp, avviklet), STAT200 Regresjon (5 sp) og MINA311 Samfunnsvitenskapelig forskningsmetode (10 sp)" },
+        { "entryId": "ntnu_baerekraftig_energi2", "emnekoder": ["SPRÅK3501-1"], "merknad": "Vitenskapelig kommunikasjon for ingeniører, 7,5 sp; dekker bare formidlingsdelen" },
+        { "entryId": "hvl_energiteknologi2", "emnekoder": ["MOA256-1"], "merknad": "Vitenskapsteori og metoder, 5 sp" }
+      ]
+    },
+    {
+      "id": "fordypningsprosjekt",
+      "label": "Fordypningsprosjekt og spesialpensum",
+      "kategori": "Oppgave",
+      "desc": "Individuelt veiledet prosjekt eller selvvalgt pensum som forbereder masteroppgaven.",
+      "note": "Alle fem programmene har en slik ordning, men omfanget varierer sterkt: NMBUs spesialpensum har individuelt fastsatt omfang, UiO og UiA har prosjektemner på 10 og 7,5 sp, HVL har et veiledet selvstudium på 10 sp, og NTNU har den mest omfattende varianten med fordypningsemne (7,5 sp) og fordypningsprosjekt (15 sp) i høstsemesteret før oppgaven.",
+      "koblinger": [
+        { "entryId": "nmbu_fornybar2", "emnekoder": ["SPE-M-FORNY-1"], "merknad": "Spesialpensum" },
+        { "entryId": "uio_fornybare_energisystemer2", "emnekoder": ["TEK5380-1"], "merknad": "Prosjekt innen fornybar energi, 10 sp" },
+        { "entryId": "uia_fornybar2", "emnekoder": ["ENE503-G", "ENE504-G"], "merknad": "Energy Research Project 1 (7,5 sp) og 2 (15 sp)" },
+        { "entryId": "ntnu_baerekraftig_energi2", "emnekoder": ["TEP4506-1", "TEP4521-1", "TIØ4580-1"], "merknad": "fordypningsemne (7,5 sp) og fordypningsprosjekt (15 sp); egen prosjektkode for markedsretningen" },
+        { "entryId": "hvl_energiteknologi2", "emnekoder": ["MAS550-1"], "merknad": "Veiledet selvstudium, 10 sp" }
+      ]
+    },
+    {
+      "id": "masteroppgave",
+      "label": "Masteroppgave",
+      "kategori": "Oppgave",
+      "desc": "Selvstendig vitenskapelig arbeid som avslutter masterstudiet.",
+      "note": "Her er programmene like: alle fem har masteroppgave på 30 sp, altså ett semester. Det skiller fornybar energi fra økologi- og biologimasterne i MINA-porteføljen, der oppgaven er på 60 sp. NTNU har egen oppgavekode for teknologiretningen (TEP4906) og markedsretningen (TIØ4980), og begge er tatt med.",
+      "koblinger": [
+        { "entryId": "nmbu_fornybar2", "emnekoder": ["M30-FORNY-1"], "merknad": "30 sp" },
+        { "entryId": "uio_fornybare_energisystemer2", "emnekoder": ["TEK5930-2"], "merknad": "30 sp; oppgaven føres på det felles teknologisystemprogrammet" },
+        { "entryId": "uia_fornybar2", "emnekoder": ["ENE500-G"], "merknad": "30 sp" },
+        { "entryId": "ntnu_baerekraftig_energi2", "emnekoder": ["TEP4906-1", "TIØ4980-1"], "merknad": "30 sp; en kode per studieretning" },
+        { "entryId": "hvl_energiteknologi2", "emnekoder": ["MAS595-1"], "merknad": "30 sp" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "programnavn": "Bioteknologi (master 2 år)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://www.ntnu.no/studier/msbiotech",
+    "https://www.ntnu.no/web/studier/studieplan?p_p_id=studyprogrammeplannerportlet_WAR_studyprogrammeplannerportlet_INSTANCE_KzJMPh2hQuXL&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=studyplan&p_p_cacheability=cacheLevelPage&code=MSBIOTECH&year=2025"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 97.5,
+  "obligatoriske": [
+    {
+      "emnekode": "BI3016",
+      "emnenavn": "Molecular Cell Biology",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BT3220",
+      "emnenavn": "Biotechnology, Advanced",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TBT4146",
+      "emnenavn": "Molecular Genetics",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "HMS0003",
+      "emnenavn": "HMS-kurs for masterstudenter",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIOTBT3901",
+      "emnenavn": "Masteroppgave i bioteknologi",
+      "studiepoeng": 60,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "60 sp totalt, fordelt over alle 4 semestre (del 1-4). Emnekoden avhenger av hvilket institutt oppgaven tas ved: BIOTBA3901 (IBA Ålesund), BIOTBI3901 (Institutt for biologi), BIOTBT3901 (Institutt for bioteknologi og matvitenskap) eller HBIOT3911 (bioingeniørfag)."
+    },
+    {
+      "emnekode": "BT3091",
+      "emnenavn": "Spesialpensum",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Obligatorisk valg mellom BI3091 og BT3091 (begge «Spesialpensum»/Special Syllabus, 7,5 sp)."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er NTNUs studieplan-API for MSBIOTECH, kull 2025. Masteroppgaven (60 sp) er delt i 4 deler fordelt over alle 4 semestre, men med én av fire institutt-spesifikke emnekoder (BIOTBA3901/BIOTBI3901/BIOTBT3901/HBIOT3911) - BIOTBT3901 er brukt som representativ kode her, med de andre nevnt i merknad. Utover de 6 emnene over kreves 4 valgfrie emner gjennom programmet (bl.a. innen matkjemi, miljøbioteknologi og systembiologi), som ikke er navngitt med én fast kombinasjon og derfor ikke er tatt med i obligatoriske-listen; disse dekker differansen mellom obligatoriskeStudiepoeng (97,5) og totaltStudiepoeng (120). Kildedokumentet beskriver ingen egne navngitte studieretninger utover instituttvalget for masteroppgaven.",
+  "entryId": "ntnu_msbiotech"
+}

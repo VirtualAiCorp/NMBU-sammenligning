@@ -1,0 +1,95 @@
+{
+  "programnavn": "Kjemi (master 2 år)",
+  "institusjon": "Universitetet i Oslo",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://www.uio.no/studier/program/kjemi-master/",
+    "https://www.uio.no/studier/program/kjemi-master/oppbygging/"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 0,
+  "obligatoriske": [
+    {
+      "emnekode": "HMS0501",
+      "emnenavn": "Sikkerhet og fysisk læringsmiljø",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "HMS0502",
+      "emnenavn": "Utviklende læringsmiljø",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "HMS0503",
+      "emnenavn": "Laboratoriesikkerhet",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "HMS0505",
+      "emnenavn": "Elsikkerhet",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "HMS0507",
+      "emnenavn": "Brannsikkerhet",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Analytisk kjemi",
+      "obligatoriske": []
+    },
+    {
+      "navn": "Atmosfærekjemi",
+      "obligatoriske": []
+    },
+    {
+      "navn": "Biokjemi og Soft Matter",
+      "obligatoriske": []
+    },
+    {
+      "navn": "Kjemididaktikk og formidling",
+      "obligatoriske": []
+    },
+    {
+      "navn": "Kjernekjemi",
+      "obligatoriske": []
+    },
+    {
+      "navn": "Organisk kjemi",
+      "obligatoriske": []
+    },
+    {
+      "navn": "Teoretisk og fysikalsk kjemi",
+      "obligatoriske": []
+    },
+    {
+      "navn": "Uorganisk kjemi og materialkjemi",
+      "obligatoriske": []
+    }
+  ],
+  "merknad": "Kilde er UiOs oppbygging-side for masterprogrammet i kjemi. Programmet har 8 navngitte studieretninger (listet under spesialiseringer), men kilden oppgir ikke konkrete obligatoriske emnekoder per retning - emnevalget (60-90 sp teori + 30-60 sp masteroppgave) avtales individuelt med veileder ut fra tema. Masteroppgaven kan være på enten 60 eller 30 sp (ingen fast verdi, og ingen egen emnekode oppgitt i kilden), og er derfor ikke tatt med som eget emne. Eneste bekreftede faste elementer er fem 0-poengs HMS-kurs i 1. semester (HMS0501, HMS0502, HMS0503, HMS0505, HMS0507; fra og med kull høst 2026 kommer trolig også HMS0508 om ansvarlig KI-bruk). obligatoriskeStudiepoeng er derfor 0 sp reelt (kun 0-poengs HMS-emner er navngitt); totaltStudiepoeng=120 er standard for et 2-årig masterprogram. Bør oppdateres med konkrete emnekoder per studieretning ved en grundigere gjennomgang av emneoversikten.",
+  "entryId": "uio_kjemi2"
+}

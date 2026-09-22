@@ -1,0 +1,68 @@
+{
+  "groupId": "kjemi2",
+  "hentet": "2026-09-23",
+  "note": "Dette er den tynneste gruppa i KBM-materialet. NMBUs toårige master i kjemi er svært liten - masteroppgaven M60-KJEMI har bare tre til fem kandidater i året, og ingen av programmets emner har ti kandidater i 2024 eller 2025 - så alle koblingene på NMBU-siden er vurdert mot summen for 2021-2025. UiBs kjemimaster er i praksis bare rapportert med masteroppgaven; de øvrige emnene der har tre til sju kandidater hver. Toårige mastere har heller ingen felles grunnpakke: alt utenom masteroppgaven er fordypnings- eller valgemner, og de fire programmene har ulike profiler. NMBU og UiO er tydelig analytisk innrettet (kromatografi, massespektrometri, bioanalyse), UiB er organisk-syntetisk, og NTNUs MSCHEM har tyngdepunkt i spektroskopi, kjemometri og akvatisk kjemi. Det er derfor bare grunnlag for fem emnetyper, alle innenfor analytisk kjemi og spektroskopi pluss oppgaven. Følgende lar seg ikke koble: kjemometri og dataanalyse (NTNU TKJ4175 og UiB KJEM225 har det, NMBU ikke med rapporterte kandidater), organisk syntese på masternivå (UiB KJEM232/KJEM231 og NTNU TKJ4130/TKJ4155, der NMBUs KJM312 Naturstoffkjemi bare har seks kandidater samlet), teoretisk kjemi og molekylmodellering (NTNU TKJ4205, TKJ4200), og NMBUs masterforberedende emner BIO305 og MTH300, som ingen av de andre har.",
+  "emnetyper": [
+    {
+      "id": "oppgave",
+      "label": "Masteroppgave",
+      "kategori": "Oppgave",
+      "desc": "Det selvstendige avsluttende forskningsarbeidet i graden, 60 studiepoeng.",
+      "note": "Alle fire har masteroppgave på 60 sp. NMBUs er den klart minste med tre til fem kandidater i året (20 samlet i perioden), mens UiOs har 14-19 i året. NTNUs KJ3900 har ingen rapporterte kandidater i 2023.",
+      "koblinger": [
+        { "entryId": "nmbu_kjemi2", "emnekoder": ["M60-KJEMI-1"], "merknad": "Masteroppgave, 60 sp; 20 kandidater samlet 2021-2025." },
+        { "entryId": "uio_kjemi2", "emnekoder": ["KJM5960-2"], "merknad": "Kjemi. Masteroppgave, 60 sp." },
+        { "entryId": "uib_kjemi2", "emnekoder": ["KJEM399-0"], "merknad": "Masteroppgave i kjemi, 60 sp; det eneste emnet på UiB-masteren med jevn rapportering." },
+        { "entryId": "ntnu_mschem", "emnekoder": ["KJ3900-1"], "merknad": "Masteroppgave i kjemi, 60 sp." }
+      ]
+    },
+    {
+      "id": "kromatografi-og-separasjonsmetoder",
+      "label": "Kromatografi og separasjonsmetoder",
+      "kategori": "Kjemi",
+      "desc": "Videregående separasjonsmetoder: gass- og væskekromatografi, metodeutvikling og kvantifisering.",
+      "note": "NMBUs KJM310 Kromatografi er programmets fagligste kjerneemne, men tilbys ikke hvert år (ingen kandidater i 2022 og 2024). UiOs emne er rettet mot bioanalyse og livsvitenskap, NTNUs mot generell videregående kromatografi. UiB har ikke et eget kromatografiemne på masternivå og er ikke koblet.",
+      "koblinger": [
+        { "entryId": "nmbu_kjemi2", "emnekoder": ["KJM310-1"], "merknad": "Kromatografi, 10 sp; tilbys annethvert år." },
+        { "entryId": "uio_kjemi2", "emnekoder": ["KJM-FRM5055-1"], "merknad": "Bioanalytisk kjemi II: avanserte separasjonsmetoder." },
+        { "entryId": "ntnu_mschem", "emnekoder": ["KJ3059-1"], "merknad": "Videregående kromatografi, 7,5 sp." }
+      ]
+    },
+    {
+      "id": "massespektrometri",
+      "label": "Massespektrometri",
+      "kategori": "Kjemi",
+      "desc": "Massespektrometriens prinsipper, ionisering, instrumentering og tolkning av massespektre.",
+      "note": "Bare NMBU og UiO har massespektrometri som eget emne. Verken UiB eller NTNU har det frittstående - der ligger stoffet inne i NMR- og strukturoppklaringsemnene, som er koblet under spektroskopi. NMBUs KJM313 har tolv kandidater samlet i perioden og tilbys ikke hvert år.",
+      "koblinger": [
+        { "entryId": "nmbu_kjemi2", "emnekoder": ["KJM313-1"], "merknad": "Massespektrometri, 10 sp; tilbys ikke hvert år." },
+        { "entryId": "uio_kjemi2", "emnekoder": ["KJM5240-1"], "merknad": "Massespektrometri, 10 sp." }
+      ]
+    },
+    {
+      "id": "spektroskopi-og-strukturoppklaring",
+      "label": "Spektroskopi og strukturoppklaring",
+      "kategori": "Kjemi",
+      "desc": "NMR- og annen spektroskopi brukt til å bestemme strukturen til organiske molekyler.",
+      "note": "Alle fire har spektroskopi på masternivå, men med ulik tyngde: NTNUs KJ3021 er programmets desidert største emne (14-24 kandidater i året), mens NMBUs KJM311 Organisk spektroskopi har fjorten kandidater samlet og ingen etter 2024. UiB har både et NMR-emne og et bredere strukturoppklaringsemne.",
+      "koblinger": [
+        { "entryId": "nmbu_kjemi2", "emnekoder": ["KJM311-1"], "merknad": "Organisk spektroskopi, 10 sp; ingen rapporterte kandidater i 2025." },
+        { "entryId": "uio_kjemi2", "emnekoder": ["KJM5280-1"], "merknad": "NMR spektroskopi, 5 sp." },
+        { "entryId": "uib_kjemi2", "emnekoder": ["KJEM351-0", "KJEM235-0"], "merknad": "NMR-spektroskopi og Strukturoppklaring av organiske molekyler." },
+        { "entryId": "ntnu_mschem", "emnekoder": ["KJ3021-1"], "merknad": "Kjernemagnetisk resonansspektroskopi; programmets største emne." }
+      ]
+    },
+    {
+      "id": "spesialpensum",
+      "label": "Spesialpensum og selvstendig fordypning",
+      "kategori": "Oppgave",
+      "desc": "Individuelt tilpasset lesepensum som forberedelse til masteroppgaven.",
+      "note": "Tre av fire programmer har en egen emnekode for individuelt spesialpensum, noe som er vanlig i små mastermiljøer der emneporteføljen ikke dekker alle oppgavetemaer. NMBUs og UiBs varianter er registrert med null studiepoeng i DBH, NTNUs med 7,5 sp. UiO har ikke en slik kode. Karakterene er ikke direkte sammenlignbare, siden pensum settes individuelt.",
+      "koblinger": [
+        { "entryId": "nmbu_kjemi2", "emnekoder": ["SPE-M-KJEMI-2"], "merknad": "Spesialpensum; 18 kandidater i 2024, ingen andre år." },
+        { "entryId": "uib_kjemi2", "emnekoder": ["Z-KJEM-0"], "merknad": "Spesialpensum." },
+        { "entryId": "ntnu_mschem", "emnekoder": ["KJ3091-2"], "merknad": "Spesialpensum til mastergraden, 7,5 sp." }
+      ]
+    }
+  ]
+}

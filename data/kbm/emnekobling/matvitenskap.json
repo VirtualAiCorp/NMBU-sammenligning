@@ -1,0 +1,105 @@
+{
+  "groupId": "matvitenskap",
+  "hentet": "2026-09-23",
+  "note": "Gruppa er den vanskeligste å koble i KBM-materialet, av to grunner. For det første er NMBUs «Matvitenskap og ernæring» et matvitenskapsprogram med ernæring som én av tre studieretninger, mens UiB, UiT og UiO har rene ernæringsutdanninger - UiO til og med et femårig profesjonsstudium i klinisk ernæring. Tyngdepunktet er derfor forskjøvet: NMBU har matteknologi, prosessteknologi og sensorikk som ingen av de andre har, mens UiB, UiT og UiO har klinisk ernæring, anatomi og ernæringsbehandling som NMBU ikke har. For det andre hadde NMBU-programmet siste opptak i 2024, og DBH rapporterer knapt emnekarakterer for det etter 2023; de fleste NMBU-emnene har null kandidater i 2024 og 2025. Koblingene på NMBU-siden er derfor vurdert mot summen for 2021-2025, og flere av dem ligger under ti kandidater samlet. Det gjelder særlig ernæringsemnene, der NMBUs tall er så små at sammenligningen må leses med forbehold - dette er markert på hver enkelt kobling. Tre emnetyper lar seg ikke sette opp i det hele tatt: NMBU-programmet har ingen rapporterte kandidater på ex.phil, ingen bacheloroppgave med egen emnekode, og NMBUs kjemiemner (KJM100 Generell kjemi og KJM110 Organisk kjemi) har ingen motsvarighet hos de tre andre, som legger kjemien inn i integrerte ernærings- og biokjemimoduler. Matteknologi, prosessteknologi, emballering og sensorisk analyse finnes bare hos NMBU og er koblet i gruppen matteknologi i stedet.",
+  "emnetyper": [
+    {
+      "id": "matematikk-og-statistikk",
+      "label": "Matematikk og statistikk",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Grunnleggende matematikk og statistikk for helse- og biofag: beskrivende statistikk, hypotesetesting, regresjon og epidemiologiske mål.",
+      "note": "NMBU er det eneste programmet med et eget matematikkemne; de tre andre har bare statistikk, og da i en medisinsk og epidemiologisk innramming. NMBUs tall er svært små (STAT100 har ni kandidater samlet 2021-2025, MATH100 tre), fordi programmet er under avvikling. UiOs klinisk ernæring har to kodeversjoner av statistikkemnet i perioden.",
+      "koblinger": [
+        { "entryId": "nmbu_matvitenskap_ernaring", "emnekoder": ["STAT100-1", "MATH100-1"], "merknad": "Statistikk og Brukerkurs i matematikk; svært få rapporterte kandidater fordi programmet er under avvikling." },
+        { "entryId": "uib_ernaring", "emnekoder": ["MEDSTA-0"], "merknad": "Medisinsk statistikk, 5 sp." },
+        { "entryId": "uit_ernaring", "emnekoder": ["ERN-2001-1"], "merknad": "Grunnleggende epidemiologi, statistikk og kostvurdering; 15 sp der statistikken er én av tre deler." },
+        { "entryId": "uio_klinisk_ernaring", "emnekoder": ["ERN4000-1", "ERN4110-1"], "merknad": "Statistikk; ERN4110 Statistikk for masterstudenter i ernæring er den eldre kodeversjonen." }
+      ]
+    },
+    {
+      "id": "innforingsemne",
+      "label": "Innføringsemne i mat og ernæring",
+      "kategori": "Ernæring og mat",
+      "desc": "Første emne i studiet: fagfeltets innhold, arbeidsmåter og samfunnsrolle.",
+      "note": "Koblingen er strukturell mer enn faglig: alle fire har et innføringsemne i første semester, men innholdet er forskjellig. NMBUs MVI100 handler om matvitenskap og matproduksjon, mens UiB, UiT og UiO introduserer klinisk ernæring og ernæringsfaget. Karaktersnittene bør derfor ikke leses som en sammenligning av samme pensum. NMBUs MVI100-2 er kodeversjonen fra 2025 og har elleve kandidater.",
+      "koblinger": [
+        { "entryId": "nmbu_matvitenskap_ernaring", "emnekoder": ["MVI100-2"], "merknad": "Introduksjon til mat, teknologi og helse (tidligere Introduksjon til matvitenskap)." },
+        { "entryId": "uib_ernaring", "emnekoder": ["NUTR100-0"], "merknad": "Innføring i klinisk ernæring, 10 sp." },
+        { "entryId": "uit_ernaring", "emnekoder": ["ERN-1000-1"], "merknad": "Ernæring, individ og samfunn." },
+        { "entryId": "uio_klinisk_ernaring", "emnekoder": ["ERN1010-1", "ERN1100-1"], "merknad": "Innføring i klinisk ernæring (30 sp) og Ernæringsstudiet, Modul 1 (50 sp); begge er store integrerte moduler uten parallell i de andre programmene." }
+      ]
+    },
+    {
+      "id": "biokjemi",
+      "label": "Biokjemi",
+      "kategori": "Kjemi",
+      "desc": "Biomolekylers struktur og funksjon: proteiner, enzymer, karbohydrater, lipider og metabolisme.",
+      "note": "Dette er den sterkeste faglige koblingen i gruppa. NMBU har et teoriemne og et eksperimentelt emne, UiB har både et generelt biokjemiemne og et ernæringsrettet, mens UiO har biokjemien inne i en stor integrert modul sammen med fysiologi og ernæring, slik at karaktersnittet der ikke bare måler biokjemi.",
+      "koblinger": [
+        { "entryId": "nmbu_matvitenskap_ernaring", "emnekoder": ["KJB200-1", "KJB210-1"], "merknad": "Biokjemi og Eksperimentell og anvendt biokjemi, begge 10 sp." },
+        { "entryId": "uib_ernaring", "emnekoder": ["FARM150-0", "NUTR115-0"], "merknad": "Biokjemi og Ernæringsbiokjemi." },
+        { "entryId": "uit_ernaring", "emnekoder": ["MBI-2001-1"], "merknad": "Biokjemi, 10 sp." },
+        { "entryId": "uio_klinisk_ernaring", "emnekoder": ["ERN2200R-1"], "merknad": "Fysiologi, ernæring og medisinsk biokjemi; en integrert modul på 24 sp der biokjemi er én av tre deler." }
+      ]
+    },
+    {
+      "id": "cellebiologi-og-genetikk",
+      "label": "Cellebiologi og genetikk",
+      "kategori": "Biologi",
+      "desc": "Cellens oppbygning og funksjon, arvelære og molekylærbiologiske grunnbegreper.",
+      "note": "UiOs klinisk ernæring har ikke et frittstående celle- eller molekylærbiologiemne - stoffet ligger inne i de store integrerte modulene - og er ikke koblet. NMBUs to emner har begge seksten kandidater samlet i perioden.",
+      "koblinger": [
+        { "entryId": "nmbu_matvitenskap_ernaring", "emnekoder": ["BIO100-1", "BIO120-1"], "merknad": "Cellebiologi (5 sp) og Genetikk (10 sp)." },
+        { "entryId": "uib_ernaring", "emnekoder": ["FARM260-0"], "merknad": "Molekylær cellebiologi, 10 sp." },
+        { "entryId": "uit_ernaring", "emnekoder": ["MBI-1002-1"], "merknad": "Celle- og molekylærbiologi, 15 sp." }
+      ]
+    },
+    {
+      "id": "mikrobiologi",
+      "label": "Mikrobiologi",
+      "kategori": "Biologi",
+      "desc": "Mikroorganismers oppbygning, vekst og betydning, med vekt på mikroorganismer i mat.",
+      "note": "Bare NMBU og UiT har egne mikrobiologiemner; UiB og UiO har ikke mikrobiologi som frittstående emne og er ikke koblet. NMBU har klart størst omfang, med et generelt emne og et rettet mot næringsmidler, mens UiTs emner er små og bare rapportert for 2021 og 2022.",
+      "koblinger": [
+        { "entryId": "nmbu_matvitenskap_ernaring", "emnekoder": ["BIO130-1", "MVI220-1"], "merknad": "Generell mikrobiologi I (5 sp) og Næringsmiddelmikrobiologi (10 sp)." },
+        { "entryId": "uit_ernaring", "emnekoder": ["BIO-1601-1", "ERN-2003-1"], "merknad": "Innføring i mikrobiologi og Immunologi, farmakologi, epigenetikk og mikrobiologi; i sistnevnte er mikrobiologi bare én av fire deler." }
+      ]
+    },
+    {
+      "id": "matvarekunnskap-og-mattrygghet",
+      "label": "Matvarekunnskap og mattrygghet",
+      "kategori": "Ernæring og mat",
+      "desc": "Matvaregrupper, sammensetning og kvalitet, hygiene, fremmedstoffer og regelverk for trygg mat.",
+      "note": "UiOs klinisk ernæring har ikke et eget matvarekunnskapsemne og er ikke koblet. UiB dekker matvarekunnskap i NUTR150 og fremmedstoffer i toksikologiemnet, som har to kodeversjoner i perioden. NMBUs MVI230 er hygiene- og regelverksemnet.",
+      "koblinger": [
+        { "entryId": "nmbu_matvitenskap_ernaring", "emnekoder": ["MVI230-1"], "merknad": "Matvaretrygghet og -hygiene, 5 sp." },
+        { "entryId": "uib_ernaring", "emnekoder": ["NUTR150-0", "BIO307A-0", "BIO209A-0"], "merknad": "Matvarekunnskap og Næringsmiddeltoksikologi; BIO209A og BIO307A er to kodeversjoner av toksikologiemnet." },
+        { "entryId": "uit_ernaring", "emnekoder": ["ERN-2005-1", "ERN-1001-1"], "merknad": "Matvarekunnskap og matvaretrygghet; to kodeversjoner av samme emne." }
+      ]
+    },
+    {
+      "id": "ernaering-naeringsstoffer-og-kosthold",
+      "label": "Ernæring: næringsstoffer og kosthold",
+      "kategori": "Ernæring og mat",
+      "desc": "Makro- og mikronæringsstoffenes funksjon og omsetning, energibehov, kostholdsanbefalinger og kostholdsvurdering.",
+      "note": "Dette er kjernefaget i gruppa, men også den svakeste koblingen på NMBU-siden: NMBUs ernæringsemner har bare tre til seks rapporterte kandidater hver i hele perioden 2021-2025, fordi ernæringsretningen var den minste av de tre studieretningene i et program som nå er lagt ned. Tallene fra NMBU bør derfor ikke brukes til å trekke slutninger. UiB, UiT og UiO har alle store obligatoriske emner her, UiO i form av integrerte moduler på 23-30 sp.",
+      "koblinger": [
+        { "entryId": "nmbu_matvitenskap_ernaring", "emnekoder": ["HFE200-1", "MVI291-1", "MVI201-1"], "merknad": "Generell ernæring, Kosthold og helse og Introduksjon i humane intervensjoner; alle tre har under ti rapporterte kandidater samlet i perioden." },
+        { "entryId": "uib_ernaring", "emnekoder": ["NUTR203-0", "NUTR204-0", "NUTR244-0"], "merknad": "Ernæringsfysiologi - makronæringsstoffer og mikronæringsstoffer, samt Ernæring og helse på individ- og samfunnsnivå." },
+        { "entryId": "uit_ernaring", "emnekoder": ["ERN-2004-1", "ERN-2011-1", "ERN-2012-1"], "merknad": "Ernæring, makro- og mikronæringsstoffer (25 sp); ERN-2011 Makronæringsstoffer og energi og ERN-2012 Mikronæringsstoffer er den nye oppdelingen fra 2025." },
+        { "entryId": "uio_klinisk_ernaring", "emnekoder": ["ERN2300-1", "ERN3010-1", "ERN3000-1"], "merknad": "Mikronæringsstoffer og fremmedstoffer, Metabolisme og livsstilssykdommer og Metoder for å kartlegge kosthold og energiforbruk." }
+      ]
+    },
+    {
+      "id": "immunologi-mat-og-helse",
+      "label": "Immunologi, mat og helse",
+      "kategori": "Ernæring og mat",
+      "desc": "Immunsystemets oppbygning og virkemåte, og samspillet mellom kosthold, tarmflora og helse.",
+      "note": "Bare NMBU og UiT har immunologi som eget emne i ernæringsløpet. NMBUs MVI292 er det best rapporterte ernæringsnære emnet i programmet (32 kandidater samlet), og er senere videreført som BIO292 på bioteknologiprogrammet. UiTs emne dekker immunologi sammen med farmakologi, epigenetikk og mikrobiologi. UiB og UiO har ikke tilsvarende frittstående emner.",
+      "koblinger": [
+        { "entryId": "nmbu_matvitenskap_ernaring", "emnekoder": ["MVI292-1"], "merknad": "Immunsystemet, mat og helse, 10 sp." },
+        { "entryId": "uit_ernaring", "emnekoder": ["ERN-2003-1"], "merknad": "Immunologi, farmakologi, epigenetikk og mikrobiologi, 5 sp." }
+      ]
+    }
+  ]
+}

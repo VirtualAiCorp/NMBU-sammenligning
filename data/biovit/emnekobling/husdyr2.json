@@ -1,0 +1,75 @@
+{
+  "groupId": "husdyr2",
+  "hentet": "2026-09-23",
+  "note": "Gruppen har lite reell overlapp, og det er to grunner til det. For det første er Nords oppføring i DBH én felles programkode for hele masteren i biovitenskap – emnelisten er identisk med den som brukes for nord_biovitenskap2 og nord_akvakultur2 og domineres av akvatiske emner og økologi; av rene husdyremner finnes bare «Husdyr og Én helse» (BIO5012), «Livestock and One Health» (BIO5029) og «Presisjonshusdyrbruk» (HUS5000). For det andre er nmbu_emabg NMBUs egen fellesgrad (Erasmus Mundus), ikke en konkurrent ved en annen institusjon; emnetypene «Husdyravl og kvantitativ genetikk» og «Bærekraft i matsystemer» sammenligner derfor to NMBU-program, ikke NMBU mot en annen institusjon. EMABG har dessuten bare ett semester ved NMBU (35 sp), slik at bare de emnene kan kobles. Emner er vurdert ut fra antall kandidater fra programmet i 2024 eller 2025 (minst ca. 10), men alle tre programmene er så små at kravet i praksis er myknet opp til summen for 2021–2025; unntak er merket i den enkelte koblingen. Tre sentrale husdyrtemaer er ikke koblet fordi bare NMBU har emner i dem: husdyrernæring og fôrteknologi (HFE302, HFE303, HFE305, HFE308, HFE314), etologi og dyrevelferd (HET300, HET301, HET212) og husdyrproduksjon per art (HFX253, HFX255, HFX256). Forsøksdyrlære er heller ikke koblet, fordi bare Nord har slike emner (DR443F, BIO5024).",
+  "emnetyper": [
+    {
+      "id": "statistikk-metode",
+      "label": "Statistikk og forskningsmetode",
+      "kategori": "Metode",
+      "desc": "Kvantitative metoder, forsøksplanlegging og statistisk databehandling for husdyrfaglige forsøk.",
+      "note": "NMBU dekker statistikkravet med BIN250 (5 sp) og har i tillegg to valgfrie statistikkemner, mens Nord samler forskningsmetode og vitenskapelig kommunikasjon i ett emne. EMABG er ikke koblet: statistikk- og metodeemnene i sporene ligger ved partneruniversitetene og har ingen NMBU-emnekode.",
+      "koblinger": [
+        { "entryId": "nmbu_husdyr2", "emnekoder": ["BIN250-1", "STIN300-1", "STAT210-1"], "merknad": "BIN250 er det obligatoriske statistikkemnet (19 kandidater i 2025); STAT210 hadde kandidater til og med 2023, STIN300 er statistisk programmering i R" },
+        { "entryId": "nord_husdyr2", "emnekoder": ["BI300F-1", "MET5019-1"], "merknad": "BI300F kombinerer forskningsmetode og vitenskapelig kommunikasjon; kandidattallet falt fra 30 i 2024 til 5 i 2025 samtidig som MET5019 kom til med 22" }
+      ]
+    },
+    {
+      "id": "avl-genetikk",
+      "label": "Husdyravl og kvantitativ genetikk",
+      "kategori": "Husdyr",
+      "desc": "Avlsteori, seleksjon, kvantitativ genetikk og beregning av avlsverdier.",
+      "note": "Nord har ikke et eneste emne i husdyravl i emnelisten sin, og er derfor ikke koblet. Koblingen sammenligner dermed to NMBU-program. HFA303 og HFA350 er obligatoriske i EMABGs NMBU-semester og går også inn i husdyrvitenskapsmasteren, slik at de samme emnene har kandidater fra begge program.",
+      "koblinger": [
+        { "entryId": "nmbu_husdyr2", "emnekoder": ["HFA303-1", "HFA350-1", "HFA300-1", "HFA300-2"], "merknad": "HFA303 (5 sp) er programmets tyngste avlsemne; HFA350 «Fra fenotyper til avlsverdier» (15 sp) kom i 2025 og erstatter i praksis avlsplanleggingsemnet HFA300" },
+        { "entryId": "nmbu_emabg", "emnekoder": ["HFA350-1", "BIN300-1"], "merknad": "HFA350 er obligatorisk for alle fem mobilitetsspor; BIN300 (statistisk genomforskning) er ett av to alternativer i 2. semester. HFA303 er også obligatorisk, men har ingen registrerte kandidater på EMABG-koden i DBH" }
+      ]
+    },
+    {
+      "id": "genomikk-bioinformatikk",
+      "label": "Genomikk og bioinformatikk",
+      "kategori": "Husdyr",
+      "desc": "Genomanalyse, sekvensdata og bioinformatiske verktøy brukt på dyrepopulasjoner.",
+      "note": "Dette er det eneste fagområdet der alle tre programmene faktisk har emner. Nords emner er rettet mot akvatiske arter (akvagenomikk), mens NMBUs og EMABGs er artsnøytrale eller husdyrrettede, så koblingen er tematisk og ikke en én-til-én-kobling.",
+      "koblinger": [
+        { "entryId": "nmbu_husdyr2", "emnekoder": ["BIO322-1", "BIN301-1"], "merknad": "få kandidater fra programmet (BIO322 hadde 3 i 2025, BIN301 12 til sammen 2021–2025)" },
+        { "entryId": "nmbu_emabg", "emnekoder": ["BIO322-1", "BIN301-1"], "merknad": "BIO322 er ett av to alternativer i det obligatoriske NMBU-semesteret (9 kandidater i 2025)" },
+        { "entryId": "nord_husdyr2", "emnekoder": ["BI311F-1", "BIO5025-1", "BI229F-1"], "merknad": "akvagenomikk og bioinformatikk, genomsammenstilling og annotering; BI229F er den eldre genomikk- og bioinformatikkoden" }
+      ]
+    },
+    {
+      "id": "husdyrproduksjon-helse",
+      "label": "Husdyrproduksjon og husdyrhelse",
+      "kategori": "Husdyr",
+      "desc": "Produksjonssystemer for husdyr, presisjonshusdyrbruk, og sammenhengen mellom fôring, drift og dyrehelse.",
+      "note": "Koblingen er tematisk og ikke emne-for-emne: NMBUs emner er produksjonsrettede og artsnære (smart husdyrproduksjon, storfe), mens Nords to helseemner har et Én helse-perspektiv der husdyrhelse ses sammen med folkehelse og miljø. EMABG har ingen produksjons- eller helseemner ved NMBU.",
+      "koblinger": [
+        { "entryId": "nmbu_husdyr2", "emnekoder": ["HFX315-1", "HFX306-1"], "merknad": "smart husdyrproduksjon (10 sp, programmets største valgemne) + fôring, sjukdom og produksjonssvikt hos storfe" },
+        { "entryId": "nord_husdyr2", "emnekoder": ["BIO5012-1", "BIO5029-1", "HUS5000-1"], "merknad": "BIO5012 «Husdyr og Én helse» er avløst av det engelskspråklige BIO5029 «Livestock and One Health» i 2025; HUS5000 «Presisjonshusdyrbruk» er tatt med fordi det er Nords eneste produksjonsemne, men det har bare 3 kandidater (2022) og er under terskelen" }
+      ]
+    },
+    {
+      "id": "baerekraft-matsystemer",
+      "label": "Bærekraft i matsystemer",
+      "kategori": "Husdyr",
+      "desc": "Bærekraftsmålene anvendt på matproduksjon med planter og dyr, og redesign av matsystemer.",
+      "note": "Samme emne (SDG300) i begge program, men med ulikt emnenavn i DBH over tid («Bærekraftsmål i matsystemer med planter og dyr» / «Bærekraftsmål og redesign av matsystemer»). Nord har ingen tilsvarende emne, så også denne koblingen sammenligner to NMBU-program.",
+      "koblinger": [
+        { "entryId": "nmbu_husdyr2", "emnekoder": ["SDG300-1"], "merknad": "5 sp valgemne, 27 kandidater 2021–2025" },
+        { "entryId": "nmbu_emabg", "emnekoder": ["SDG300-1"], "merknad": "obligatorisk i to av de fem mobilitetssporene (NMBU–AgroParisTech og NMBU–SLU)" }
+      ]
+    },
+    {
+      "id": "masteroppgave",
+      "label": "Masteroppgave",
+      "kategori": "Oppgave",
+      "desc": "Selvstendig vitenskapelig arbeid som avslutter masterstudiet.",
+      "note": "Omfanget er svært ulikt. NMBUs studieplan anbefaler 60 sp, men i praksis skriver de aller fleste en oppgave på 30 sp (M30-HV har 53 kandidater 2021–2025, mot 3 på hver av M45-HV og M60-HV). EMABG har 30 sp i alle spor unntatt Wageningen-sporet, som i tillegg har en 30 sp-oppgave ved partneruniversitetet. Nords oppgaver er på 60 sp og registreres med egen kode per studieretning, uten at husdyrretningen har en egen kode.",
+      "koblinger": [
+        { "entryId": "nmbu_husdyr2", "emnekoder": ["M30-HV-1", "M45-HV-1", "M60-HV-1"], "merknad": "30, 45 og 60 sp; M30-HV er den klart vanligste" },
+        { "entryId": "nmbu_emabg", "emnekoder": ["M30-ABG-1"], "merknad": "30 sp, avsluttende oppgave i 4. semester" },
+        { "entryId": "nord_husdyr2", "emnekoder": ["BIO5010-1", "BIO5011-1"], "merknad": "60 sp; husdyrstudentene i Steinkjer leverer på kodene for terrestrisk økologi og naturforvaltning eller genomikk – det finnes ingen egen husdyrkode" }
+      ]
+    }
+  ]
+}

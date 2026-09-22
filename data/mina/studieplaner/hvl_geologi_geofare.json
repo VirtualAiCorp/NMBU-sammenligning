@@ -1,0 +1,232 @@
+{
+  "entryId": "hvl_geologi_geofare",
+  "programnavn": "Geologi og geofare (bachelor)",
+  "institusjon": "Høgskulen på Vestlandet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.hvl.no/studier/studieprogram/geologi-og-geofare/",
+    "https://www.hvl.no/studier/studieprogram/geologi-og-geofare/2026h/studieplan/",
+    "https://www.hvl.no/studier/studieprogram/geologi-og-geofare/2026h/utdanningsplan/"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 160,
+  "obligatoriske": [
+    {
+      "emnekode": "GE406",
+      "emnenavn": "Geologi grunnkurs",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "GE413",
+      "emnenavn": "Kartlære og GIS",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MA414",
+      "emnenavn": "Matematikk naturfag",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FY400",
+      "emnenavn": "Innføring i fysikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "GE408",
+      "emnenavn": "Mineralogi og petrografi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "GE436",
+      "emnenavn": "Sedimentologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "GE407",
+      "emnenavn": "Anvendt geofysikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "GE414",
+      "emnenavn": "Strukturgeologi og tektonikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "GE486",
+      "emnenavn": "Glasialgeologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "GE481",
+      "emnenavn": "Ingeniørgeologi, geoteknikk og overvaking av ustabile fjellsider",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "GE483",
+      "emnenavn": "Climate Change",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "GE484",
+      "emnenavn": "Geofare og skredkartlegging",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "GE482",
+      "emnenavn": "Hydrogeologi",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ME420",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Del av «fellesemne»-kravet (160 sp) i 5. semester; studenten velger ett av ME420 Statistikk og PL413 Miljø- og forvaltningsrett."
+    },
+    {
+      "emnekode": "GE491",
+      "emnenavn": "Bacheloroppgåve i geologi",
+      "studiepoeng": 20,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Arealplanlegging",
+      "emner": [
+        {
+          "emnekode": "PL417",
+          "emnenavn": "Arealplanlegging",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "PL418",
+          "emnenavn": "Reguleringsplanlegging",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Snøskred og arealplanlegging",
+      "emner": [
+        {
+          "emnekode": "PL433",
+          "emnenavn": "Innføring i arealplanlegging",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "GE448",
+          "emnenavn": "Snø og snøskred",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Snøskred og programmering",
+      "emner": [
+        {
+          "emnekode": "ING202",
+          "emnenavn": "Programmering for ingeniørar",
+          "studiepoeng": 5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "ING301",
+          "emnenavn": "Datateknologi og vidaregåande programmering for ingeniørar",
+          "studiepoeng": 5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "PL433",
+          "emnenavn": "Innføring i arealplanlegging",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er HVLs utdanningsplan for Bachelor i geologi og geofare, kull haust 2026 (hvl.no/studier/studieprogram/geologi-og-geofare/2026h/utdanningsplan/), linket fra studieplan-oversikten (.../2026h/studieplan/) som «Sjå emneoversikt for kull 2026». Utdanningsplanens «Oversikt» viser kravstruktur Fellesemne 160 sp + Valfag 20 sp = 180 sp totalt. Fellesemne-delen består av 13 faste obligatoriske emner (130 sp, 1.–4. semester + GE482 i 5. semester) + bacheloroppgaven GE491 (20 sp, 6. semester) = 150 sp, pluss et valg i 5. semester mellom ME420 Statistikk og PL413 Miljø- og forvaltningsrett (10 sp) for å nå 160 sp; dette valget er ført som én linje (ME420) med merknad, i tråd med regelen om at obligatoriske valg mellom alternativer føres i merknad. Valfag-delen (20 sp, 5.–6. semester) er tre navngitte, faste emnekombinasjoner («Krav: 20 studiepoeng» hver) — Arealplanlegging, Snøskred og arealplanlegging, og Snøskred og programmering — ført under spesialiseringer siden studenten velger én av disse fullstendige emnepakkene. Emnenavn, koder, semesterplassering og studiepoeng er hentet direkte fra utdanningsplan-siden."
+}

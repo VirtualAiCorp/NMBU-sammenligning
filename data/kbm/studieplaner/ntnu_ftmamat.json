@@ -1,0 +1,89 @@
+{
+  "programnavn": "Matvitenskap, teknologi og bærekraft (master 2 år)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://www.ntnu.no/studier/ftmamat",
+    "https://www.ntnu.no/web/studier/studieplan?p_p_id=studyprogrammeplannerportlet_WAR_studyprogrammeplannerportlet_INSTANCE_KzJMPh2hQuXL&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=studyplan&p_p_cacheability=cacheLevelPage&code=FTMAMAT&year=2025"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 90,
+  "obligatoriske": [
+    {
+      "emnekode": "HMS0003",
+      "emnenavn": "HMS-kurs for masterstudenter",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMMT4001",
+      "emnenavn": "Bærekraftig matproduksjon",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TPK4100",
+      "emnenavn": "Produksjonsledelse",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MATV4110",
+      "emnenavn": "Næringsmiddelressurser, prosessering og teknologi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MATV4004",
+      "emnenavn": "Ressursutnyttelse i matsystemer",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MATV4010",
+      "emnenavn": "Trygg matproduksjon",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MATV4008",
+      "emnenavn": "Emne innen matmikrobiologi/-trygghet",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Obligatorisk valg mellom MATV4008 og TBT4507 (ifølge studieplanens fotnote); studenter med tidligere MTMAT-bachelor kan ikke velge MATV3002 eller MATV3004 som erstatning."
+    },
+    {
+      "emnekode": "TMMT5003",
+      "emnenavn": "Masteroppgave",
+      "studiepoeng": 45,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Deles i «del 1 av 2» (3. semester, studiepoeng for denne delen ikke eksplisitt oppgitt i kilden) og «del 2 av 2» (4. semester, 45 sp, som er tallet lagt til grunn her)."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er NTNUs studieplan-API for FTMAMAT, kull 2025. 2. semester har utover MATV4010 (7,5 sp obligatorisk) et krav om å velge 2 valgfrie emner der minst étt må være MATV4008 eller TBT4507 - denne bundne valgdelen er ført opp som MATV4008 (7,5 sp) med alternativet nevnt i merknad, mens det gjenværende helt frie valgemnet (7,5 sp) ikke er tatt med. 3. semester har i tillegg til masteroppgavens del 1 to valgfrie emner (bl.a. MRK3015, TBT4135, TEP4285, MATV3002, MATV3004), heller ikke tatt med. Masteroppgaven TMMT5003 er splittet i del 1 (3. semester, studiepoeng ikke oppgitt i kilden) og del 2 (4. semester, 45 sp); kun de 45 sp fra del 2 er lagt til grunn i obligatoriskeStudiepoeng for å unngå dobbelttelling eller å gjette et tall som ikke står i kilden. obligatoriskeStudiepoeng (90) + valgfrie emner (2. og 3. semester, samt evt. udokumenterte sp for oppgavens del 1) utgjør totaltStudiepoeng=120. Kildedokumentet beskriver ingen egne navngitte studieretninger/spesialiseringer.",
+  "entryId": "ntnu_ftmamat"
+}

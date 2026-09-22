@@ -1,0 +1,73 @@
+{
+  "groupId": "matteknologi2",
+  "hentet": "2026-09-23",
+  "note": "Gruppa har bare to programmer, og de er til gjengjeld nære slektninger: NMBUs og NTNUs toårige mastere i matvitenskap dekker de samme fire kjerneområdene - mattrygghet, matmikrobiologi, næringsmiddelkjemi og prosessering/produktutvikling. Sammenligningen er likevel skjev av to grunner. For det første er masteroppgavene ulike: NMBUs M30-MAT er på 30 sp, NTNUs TMMT5003 på 45 sp. For det andre har NMBU-masteren nesten ingen rapporterte emnekarakterer etter 2022 - bare MVI393 Kjemisk mattrygghet har kandidater i 2024 - mens NTNU har jevn rapportering hele perioden. Alle koblingene på NMBU-siden er derfor vurdert mot summen for 2021-2025, og flere av NMBU-emnene har under ti kandidater samlet; det er markert på hver enkelt kobling. NTNU har dessuten lagt om emneporteføljen i 2025, slik at TMMT-kodene er avløst av MATV-koder; begge kodesettene er tatt med der de svarer til samme emne. Tre ting lar seg ikke koble: NMBUs SPE-M-MAT Spesialpensum har ingen motsvarighet hos NTNU, NTNUs store fellesemne TMMT4001 Bærekraftig matproduksjon og rammebetingelsesemnet TMMT5001 har ingen motsvarighet hos NMBU, og ingen av programmene har matematikk, statistikk eller ex.phil på masternivå.",
+  "emnetyper": [
+    {
+      "id": "oppgave",
+      "label": "Masteroppgave",
+      "kategori": "Oppgave",
+      "desc": "Det selvstendige avsluttende arbeidet i graden.",
+      "note": "Omfanget er ulikt: NMBUs masteroppgave er på 30 sp, NTNUs på 45 sp, så NMBU-studentene har tilsvarende mer emnepoeng. NMBUs M30-MAT har ingen rapporterte kandidater etter 2022, mens NTNUs har fire til ti i året gjennom hele perioden.",
+      "koblinger": [
+        { "entryId": "nmbu_mat_teknologi_helse2", "emnekoder": ["M30-MAT-1"], "merknad": "Masteroppgave, 30 sp; 25 kandidater samlet, alle i 2021 og 2022." },
+        { "entryId": "ntnu_ftmamat", "emnekoder": ["TMMT5003-A"], "merknad": "Masteroppgave i matvitenskap, teknologi og bærekraft, 45 sp." }
+      ]
+    },
+    {
+      "id": "mattrygghet-og-risikostyring",
+      "label": "Mattrygghet og risikostyring",
+      "kategori": "Ernæring og mat",
+      "desc": "Farevurdering, kjemisk og mikrobiologisk mattrygghet, risikoanalyse og styring av trygghet i industrielle prosesser.",
+      "note": "Den best rapporterte koblingen i gruppa og den tydeligste faglige parallellen. NMBU har et prosessrettet emne (MVI395) og et kjemisk (MVI393), NTNU har trygghetsemnet og risikostyringsemnet, og har to kodeversjoner av trygghetsemnet etter omleggingen i 2025.",
+      "koblinger": [
+        { "entryId": "nmbu_mat_teknologi_helse2", "emnekoder": ["MVI395-1", "MVI393-1"], "merknad": "Trygghet i industrielle prosesser (10 sp) og Kjemisk mattrygghet (5 sp); MVI393 er det eneste NMBU-emnet med kandidater etter 2022." },
+        { "entryId": "ntnu_ftmamat", "emnekoder": ["TMMT4006-A", "MATV4010-1", "TMMT4007-A"], "merknad": "Trygg matproduksjon (to kodeversjoner) og Risikostyring og mattrygghet." }
+      ]
+    },
+    {
+      "id": "matmikrobiologi",
+      "label": "Matmikrobiologi og patogener",
+      "kategori": "Biologi",
+      "desc": "Patogene og teknologisk viktige mikroorganismer i mat, deteksjon, vekstbetingelser og bekjempelse.",
+      "note": "NMBUs MVI322 Patogene mikroorganismer er rent patogenrettet, mens NTNUs emne også dekker anvendt bioteknologi i matproduksjon og derfor er bredere. Begge emnene er små, og begge mangler rapporterte kandidater de siste årene.",
+      "koblinger": [
+        { "entryId": "nmbu_mat_teknologi_helse2", "emnekoder": ["MVI322-1"], "merknad": "Patogene mikroorganismer, 10 sp; elleve kandidater, alle i 2021." },
+        { "entryId": "ntnu_ftmamat", "emnekoder": ["TMMT4004-A"], "merknad": "Anvendt matmikrobiologi og bioteknologi; bredere enn NMBUs emne, ingen kandidater etter 2023." }
+      ]
+    },
+    {
+      "id": "naeringsmiddelkjemi",
+      "label": "Næringsmiddelkjemi og makronæringsstoffer",
+      "kategori": "Kjemi",
+      "desc": "Makronæringsstoffenes kjemiske struktur og funksjonelle egenskaper i matsystemer.",
+      "note": "Koblingen er faglig god, men tallgrunnlaget er svakt på begge sider: NMBUs MVI310 har seks rapporterte kandidater samlet (alle i 2021), NTNUs TBT4125 21 kandidater over tre år. Emnet er obligatorisk i NMBUs studieplan, så det lave tallet skyldes at programmet nesten ikke er rapportert etter 2022.",
+      "koblinger": [
+        { "entryId": "nmbu_mat_teknologi_helse2", "emnekoder": ["MVI310-1"], "merknad": "Makronæringsstoffer, deres struktur og funksjonalitet, 10 sp; svært få rapporterte kandidater." },
+        { "entryId": "ntnu_ftmamat", "emnekoder": ["TBT4125-1"], "merknad": "Næringsmiddelkjemi, 7,5 sp; deles med bioteknologiprogrammene i Trondheim." }
+      ]
+    },
+    {
+      "id": "prosessering-og-produktutvikling",
+      "label": "Råvarer, prosessering og produktutvikling",
+      "kategori": "Ernæring og mat",
+      "desc": "Enhetsoperasjoner, ressursutnyttelse i matsystemer og utvikling av nye næringsmiddelprodukter.",
+      "note": "Dette er den bredeste emnetypen i gruppa, og den samler flere små emner på begge sider. NMBU har egne emner for enhetsoperasjoner, produktutvikling og de enkelte råvaregruppene (kjøtt, melk, korn, alkoholholdig drikke), alle med under ti rapporterte kandidater. NTNU har færre, men større emner, med tyngdepunkt i marine råstoffer og produksjonseffektivitet.",
+      "koblinger": [
+        { "entryId": "nmbu_mat_teknologi_helse2", "emnekoder": ["MVI361-1", "MVI385-1", "MVI386-1", "MVI381-1", "MVI274-1", "MVI382A-1", "MVI382B-1"], "merknad": "Enhetsoperasjoner, Produktutvikling innen næringsmidler, Meieriteknologi øvingskurs, Aktuelle problemstillinger i kjøttproduksjon, Muskelmat, Alkoholholdig drikke og Kornteknologi; alle med under ti rapporterte kandidater." },
+        { "entryId": "ntnu_ftmamat", "emnekoder": ["TMMT5002-A", "BT3110-1", "MATV4110-1", "MATV4004-1"], "merknad": "Produksjonseffektivitet, innovasjon og produktutvikling, Marine næringsmiddelressurser, prosessering og teknologi (to kodeversjoner) og Ressursutnyttelse i matsystemer." }
+      ]
+    },
+    {
+      "id": "sensorikk-og-forsoeksplanlegging",
+      "label": "Sensorisk analyse og forsøksplanlegging",
+      "kategori": "Ernæring og mat",
+      "desc": "Beskrivende sensoriske metoder, forbrukertesting og design av forsøk i matforskning.",
+      "note": "NTNUs MATV4008 kombinerer sensoriske metoder og forsøksplanlegging i ett emne og er jevnt rapportert, mens NMBUs MVI340 bare har tre kandidater i 2021. Koblingen er faglig presis, men NMBU-tallet er for lite til å tolke.",
+      "koblinger": [
+        { "entryId": "nmbu_mat_teknologi_helse2", "emnekoder": ["MVI340-1"], "merknad": "Sensorisk analyse og forbrukeraksept, 5 sp; tre kandidater i 2021, ingen senere." },
+        { "entryId": "ntnu_ftmamat", "emnekoder": ["MATV4008-1"], "merknad": "Beskrivende sensoriske metoder og forsøksplanlegging." }
+      ]
+    }
+  ]
+}

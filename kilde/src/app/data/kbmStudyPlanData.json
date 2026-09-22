@@ -7761,13 +7761,246 @@
      "institusjon": "Universitetet i Oslo",
      "isNmbu": false,
      "programnavn": "Biovitenskap (bachelor)",
-     "studieplanAar": null,
-     "kilder": [],
-     "totaltStudiepoeng": null,
-     "obligatoriskeStudiepoeng": null,
-     "merknad": "Studieplan ikke hentet ennå.",
-     "obligatoriske": [],
-     "spesialiseringer": []
+     "studieplanAar": "2025/2026",
+     "kilder": [
+      "https://www.uio.no/studier/program/biovitenskap/",
+      "https://www.uio.no/studier/program/biovitenskap/oppbygging/",
+      "https://www.uio.no/studier/program/biovitenskap/studieretninger/beregningsbiologi/oppbygging/",
+      "https://www.uio.no/studier/program/biovitenskap/studieretninger/biomangfold-evolusjon/oppbygging/",
+      "https://www.uio.no/studier/program/biovitenskap/studieretninger/molekylarbiologi/oppbygging/"
+     ],
+     "totaltStudiepoeng": 180,
+     "obligatoriskeStudiepoeng": 60,
+     "merknad": "Gjelder studenter som starter høsten 2025 eller senere (ny studieplan). Felles obligatoriske emner (1.-2. semester, 50 sp) + Examen philosophicum (EXPHIL03, 10 sp, tatt på ulikt tidspunkt per retning) utgjør obligatoriske-listen (60 sp); studenten velger studieretning innen utgangen av 1. semester. De tre studieretningene har hver egne «obligatoriske fordypningsemner» utover fellesdelen: Beregningsbiologi og bioinformatikk har den mest presist spesifiserte listen (7 navngitte emner, 70 sp, hentet direkte fra retningens oppbygging-side, pluss et fritt valgemne i 4. semester og et retningsvalgemne i 5. semester som ikke er navngitt). Biomangfold, økologi og evolusjon og Molekylærbiologi og biomedisin har en mindre fast struktur: begge har 2-3 navngitte kjerneemner (henholdsvis BIOS2100+BIOS2140+STK1000/MAT1050, og BIOS1130+BIOS2910+BIOS3700+BIOS3601/BIOS3800+STK1000/MAT1050), men det resterende fordypningskravet (80 sp for Biomangfold, dvs. 50 sp utover kjerneemnene; tilsvarende for Molekylærbiologi) fylles ved å velge et bestemt ANTALL emner fra en lengre liste av navngitte valgemner (f.eks. «velg 5 av: BIOS2000, BIOS2200, BIOS2210, BIOS2220, BIOS2910, BIOS3000, BIOS3011, BIOS3060, BIOS3070, BIOS3250, BIOS3310, BIOS3601, BIOS3610, BIOS3700, BIOS3800, BIOS3900, BIOS3910, BIOS3920 m.fl.» for Biomangfold) - siden dette er et valg mellom mange alternativer uten én fast kombinasjon, er disse IKKE tatt med som egne obligatoriske emner i denne filen, i tråd med regelen om at obligatoriske valg mellom alternativer beskrives i merknad. I tillegg har alle retninger et utviklingssemester/frie emner (typisk 30-40 sp, ofte 6. semester) for utveksling, UNIS, praksis eller frie emner. obligatoriskeStudiepoeng på toppnivå (60) gjelder kun fellesdelen; faktisk navngitt obligatorisk sp-sum per retning (felles + retningens kjerneemner) er 130 (Beregningsbiologi), 90 (Biomangfold) og 110 (Molekylærbiologi), med differansen til 180 dekket av valgfrie fordypningsemner og utviklingssemester.",
+     "obligatoriske": [
+      {
+       "emnekode": "BIOS1101",
+       "emnenavn": "Innføring i beregningsmodeller for biovitenskap",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "BIOS1110",
+       "emnenavn": "Celle- og molekylærbiologi",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "BIOS1150",
+       "emnenavn": "Biologisk mangfold",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "BIOS1120",
+       "emnenavn": "Fysiologi",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "KJM1003",
+       "emnenavn": "Kjemi for biologer",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "EXPHIL03",
+       "emnenavn": "Examen philosophicum",
+       "studiepoeng": 10,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": "Tas på ulikt tidspunkt avhengig av studieretning (typisk 3. eller 5. semester ifølge kildene for de tre retningene).",
+       "years": []
+      }
+     ],
+     "spesialiseringer": [
+      {
+       "navn": "Beregningsbiologi og bioinformatikk",
+       "obligatoriske": [
+        {
+         "emnekode": "IN1010",
+         "emnenavn": "Objektorientert programmering",
+         "studiepoeng": 10,
+         "aar": 1,
+         "semester": "vår",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "BIOS3011",
+         "emnenavn": "Bioinformatikk i prosjektgrupper",
+         "studiepoeng": 10,
+         "aar": 2,
+         "semester": "høst",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "BIOS2140",
+         "emnenavn": "Evolusjon og genetikk",
+         "studiepoeng": 10,
+         "aar": 2,
+         "semester": "høst",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "MAT1100",
+         "emnenavn": "Kalkulus",
+         "studiepoeng": 10,
+         "aar": 2,
+         "semester": "høst",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "STK1100",
+         "emnenavn": "Sannsynlighetsregning og statistisk modellering",
+         "studiepoeng": 10,
+         "aar": 2,
+         "semester": "vår",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "MAT1110",
+         "emnenavn": "Kalkulus og lineær algebra",
+         "studiepoeng": 10,
+         "aar": 2,
+         "semester": "vår",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "MAT1120",
+         "emnenavn": "Lineær algebra",
+         "studiepoeng": 10,
+         "aar": 3,
+         "semester": "vår",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        }
+       ]
+      },
+      {
+       "navn": "Biomangfold, økologi og evolusjon",
+       "obligatoriske": [
+        {
+         "emnekode": "BIOS2100",
+         "emnenavn": "Generell økologi",
+         "studiepoeng": 10,
+         "aar": 1,
+         "semester": "vår",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "BIOS2140",
+         "emnenavn": "Evolusjon og genetikk",
+         "studiepoeng": 10,
+         "aar": 2,
+         "semester": "høst",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "STK1000",
+         "emnenavn": "Innføring i anvendt statistikk",
+         "studiepoeng": 10,
+         "aar": 2,
+         "semester": "høst",
+         "dbhEmnekoder": [],
+         "merknad": "Obligatorisk valg mellom STK1000 og MAT1050 Matematikk for anvendelser 1.",
+         "years": []
+        }
+       ]
+      },
+      {
+       "navn": "Molekylærbiologi og biomedisin",
+       "obligatoriske": [
+        {
+         "emnekode": "BIOS1130",
+         "emnenavn": "Biokjemi 1",
+         "studiepoeng": 10,
+         "aar": 1,
+         "semester": "vår",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "BIOS2910",
+         "emnenavn": "Molekylærbiologi",
+         "studiepoeng": 10,
+         "aar": 2,
+         "semester": "vår",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "BIOS3700",
+         "emnenavn": "Cellebiologi 2",
+         "studiepoeng": 10,
+         "aar": 2,
+         "semester": "vår",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "BIOS3601",
+         "emnenavn": "Genetikk og utviklingsbiologi",
+         "studiepoeng": 10,
+         "aar": 2,
+         "semester": "høst",
+         "dbhEmnekoder": [],
+         "merknad": "Obligatorisk valg mellom BIOS3601 og BIOS3800 Humanfysiologi.",
+         "years": []
+        },
+        {
+         "emnekode": "STK1000",
+         "emnenavn": "Innføring i anvendt statistikk",
+         "studiepoeng": 10,
+         "aar": 2,
+         "semester": "høst",
+         "dbhEmnekoder": [],
+         "merknad": "Obligatorisk valg mellom STK1000 og MAT1050 Matematikk for anvendelser 1.",
+         "years": []
+        }
+       ]
+      }
+     ]
     },
     {
      "entryId": "oslomet_ing_bioteknologi_kjemi",
@@ -11797,12 +12030,126 @@
      "institusjon": "Universitetet i Bergen",
      "isNmbu": false,
      "programnavn": "Kjemi (bachelor)",
-     "studieplanAar": null,
-     "kilder": [],
-     "totaltStudiepoeng": null,
-     "obligatoriskeStudiepoeng": null,
-     "merknad": "Studieplan ikke hentet ennå.",
-     "obligatoriske": [],
+     "studieplanAar": "2025/2026",
+     "kilder": [
+      "https://www.uib.no/studier/BAMN-KJEM",
+      "https://www4.uib.no/studier/program/kjemi-bachelor/plan"
+     ],
+     "totaltStudiepoeng": 180,
+     "obligatoriskeStudiepoeng": 110,
+     "merknad": "Kilde er UiBs programside BAMN-KJEM og tilhørende «plan»-side; sistnevnte ga kun et sammendrag (ikke fullstendig emneliste for 2. semesters matematikk/statistikk-valg, 3. semesters støttefag-valg og alle emner i 6. semester), så denne filen er noe mindre presis enn øvrige UiB-filer og bør kontrolleres mot selve studieplan-PDF-en ved anledning. Kjente valgelementer som IKKE er tatt med: et valgfritt emne i matematikk/statistikk i 2. semester (MAT102/MAT121/STAT110), et valgfritt støttefag i 3. semester (MOL100/BIO100/STAT101/STAT110), ett valgfritt emne i 4. semester, samt hele 5. semester (3 valgfrie emner, 30 sp - KJEM215 Molekylær fysikalsk kjemi anbefales for de som vil ta master i kjemi). Navnene på KJEM250 og KJEM295 (og om 6. semester faktisk bare har disse to emnene à 10 sp, ikke 30 sp totalt) er ikke bekreftet mot primærkilden og bør verifiseres. obligatoriskeStudiepoeng (110) er summen av de 11 emnene som faktisk er navngitt i kilden.",
+     "obligatoriske": [
+      {
+       "emnekode": "INF100",
+       "emnenavn": "Programmering I",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MAT101",
+       "emnenavn": "Brukarkurs i matematikk I",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "Studiet lister MAT101 som utgangspunkt; MAT111 Grunnkurs i matematikk I kan trolig erstatte, som for andre UiB-bachelorprogram (ikke eksplisitt bekreftet for kjemi).",
+       "years": []
+      },
+      {
+       "emnekode": "KJEM110",
+       "emnenavn": "Kjemi og energi",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "KJEM130",
+       "emnenavn": "Organisk kjemi",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "KJEM120",
+       "emnenavn": "Uorganisk kjemi",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "KJEM124",
+       "emnenavn": "Analytisk kjemi",
+       "studiepoeng": 10,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "PHYS101",
+       "emnenavn": "Grunnkurs i fysikk",
+       "studiepoeng": 10,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "KJEM210",
+       "emnenavn": "Fysikalsk kjemi",
+       "studiepoeng": 10,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "EXPHIL-MNSEM",
+       "emnenavn": "Examen philosophicum",
+       "studiepoeng": 10,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "KJEM250",
+       "emnenavn": "Spektroskopiske metoder",
+       "studiepoeng": 10,
+       "aar": 3,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "KJEM295",
+       "emnenavn": "Bacheloroppgave i kjemi",
+       "studiepoeng": 10,
+       "aar": 3,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      }
+     ],
      "spesialiseringer": []
     },
     {
@@ -11811,13 +12158,378 @@
      "institusjon": "Norges teknisk-naturvitenskapelige universitet",
      "isNmbu": false,
      "programnavn": "Kjemi (bachelor)",
-     "studieplanAar": null,
-     "kilder": [],
-     "totaltStudiepoeng": null,
-     "obligatoriskeStudiepoeng": null,
-     "merknad": "Studieplan ikke hentet ennå.",
-     "obligatoriske": [],
-     "spesialiseringer": []
+     "studieplanAar": "2025/2026",
+     "kilder": [
+      "https://www.ntnu.no/studier/bkj",
+      "https://www.ntnu.no/web/studier/studieplan?p_p_id=studyprogrammeplannerportlet_WAR_studyprogrammeplannerportlet_INSTANCE_KzJMPh2hQuXL&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=studyplan&p_p_cacheability=cacheLevelPage&code=BKJ&year=2025"
+     ],
+     "totaltStudiepoeng": 180,
+     "obligatoriskeStudiepoeng": 60,
+     "merknad": "Kilde er NTNUs studieplan-API for BKJ, kull 2025. 1. år (60 sp) er felles for alle studenter. Fra 2. år (år 2-3) velger studenten mellom to spor: «Fag 2 Biologi/bio-organisk» og «Fag 2 Fysikk», med ulike obligatoriske emner. For Fysikk-sporet summerer de navngitte emnene til nær fullt 120 sp for år 2-3 (30+30+30+22,5-30). For Biologi/bio-organisk-sporet summerer de navngitte emnene kun til ca. 82,5-90 sp av 120 - kilden ser ut til å mangle ett emne per semester i dette sporet (trolig et valgfritt støtteemne), så dette sporet er noe mindre fullstendig dokumentert enn Fysikk-sporet og bør kontrolleres nærmere. Bacheloroppgaven KJ2900 (7,5 sp) kan alternativt tas som KJ2910 (15 sp) i begge spor. obligatoriskeStudiepoeng på toppnivå (60) gjelder kun fællesdelen i 1. år, i tråd med praksis for andre 2-sporede programmer i dette datasettet.",
+     "obligatoriske": [
+      {
+       "emnekode": "KJ1003",
+       "emnenavn": "Generell kjemi",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "KJ2222",
+       "emnenavn": "Dataanalyse og visualisering i kjemi",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "EXPH0300",
+       "emnenavn": "Examen philosophicum for naturvitenskap og teknologi",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "TMA4400",
+       "emnenavn": "Matematikk 1: Kalkulus og lineær algebra",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "HMS0001",
+       "emnenavn": "HMS-kurs for 1. årsstudenter",
+       "studiepoeng": 0,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "TKJ4103",
+       "emnenavn": "Organisk kjemi grunnkurs",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "KJ1024",
+       "emnenavn": "Organisk kjemi, laboratoriekurs",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "TMT4130",
+       "emnenavn": "Uorganisk kjemi",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "TMA4411",
+       "emnenavn": "Matematikk 2B: Lineær algebra, differensialligninger og flervariabel analyse",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      }
+     ],
+     "spesialiseringer": [
+      {
+       "navn": "Fag 2 Biologi/bio-organisk",
+       "obligatoriske": [
+        {
+         "emnekode": "KJ1041",
+         "emnenavn": "Fysikalsk kjemi: molekylær struktur",
+         "studiepoeng": 7.5,
+         "aar": 2,
+         "semester": "høst",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "KJ2050",
+         "emnenavn": "Analytisk kjemi, grunnkurs",
+         "studiepoeng": 7.5,
+         "aar": 2,
+         "semester": "høst",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "TFY4104",
+         "emnenavn": "Fysikk",
+         "studiepoeng": 7.5,
+         "aar": 2,
+         "semester": "høst",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "TKJ4162",
+         "emnenavn": "Fysikalsk kjemi: Kjemisk termodynamikk",
+         "studiepoeng": 7.5,
+         "aar": 2,
+         "semester": "vår",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "KJ2059",
+         "emnenavn": "Analytisk organisk kjemi",
+         "studiepoeng": 7.5,
+         "aar": 2,
+         "semester": "vår",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "BI1013",
+         "emnenavn": "Celle- og molekylærbiologi, teori",
+         "studiepoeng": 7.5,
+         "aar": 2,
+         "semester": "vår",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "TBT4102",
+         "emnenavn": "Biokjemi 1",
+         "studiepoeng": 7.5,
+         "aar": 3,
+         "semester": "høst",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "ITO1000",
+         "emnenavn": "Digitalisering - Områdeemne Teknologi",
+         "studiepoeng": 7.5,
+         "aar": 3,
+         "semester": "høst",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "TKJ4150",
+         "emnenavn": "Organisk syntese I",
+         "studiepoeng": 7.5,
+         "aar": 3,
+         "semester": "vår",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "KJ2072",
+         "emnenavn": "Naturmiljøkjemi",
+         "studiepoeng": 7.5,
+         "aar": 3,
+         "semester": "vår",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "KJ2900",
+         "emnenavn": "Bachelorprosjekt i kjemi",
+         "studiepoeng": 7.5,
+         "aar": 3,
+         "semester": "vår",
+         "dbhEmnekoder": [],
+         "merknad": "Kan alternativt tas som KJ2910 (15 sp, større omfang).",
+         "years": []
+        }
+       ]
+      },
+      {
+       "navn": "Fag 2 Fysikk",
+       "obligatoriske": [
+        {
+         "emnekode": "KJ2050",
+         "emnenavn": "Analytisk kjemi, grunnkurs",
+         "studiepoeng": 7.5,
+         "aar": 2,
+         "semester": "høst",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "TFY4104",
+         "emnenavn": "Fysikk",
+         "studiepoeng": 7.5,
+         "aar": 2,
+         "semester": "høst",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "KJ1041",
+         "emnenavn": "Fysikalsk kjemi: molekylær struktur",
+         "studiepoeng": 7.5,
+         "aar": 2,
+         "semester": "høst",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "TMA4421",
+         "emnenavn": "Matematikk 3B: Vektoranalyse og funksjonsapproksimasjon",
+         "studiepoeng": 7.5,
+         "aar": 2,
+         "semester": "høst",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "TKJ4162",
+         "emnenavn": "Fysikalsk kjemi: Kjemisk termodynamikk",
+         "studiepoeng": 7.5,
+         "aar": 2,
+         "semester": "vår",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "KJ2059",
+         "emnenavn": "Analytisk organisk kjemi",
+         "studiepoeng": 7.5,
+         "aar": 2,
+         "semester": "vår",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "TMA4431",
+         "emnenavn": "Matematikk 4B: Integraltransformasjoner, partielle differensialligninger, maskinlæring",
+         "studiepoeng": 7.5,
+         "aar": 2,
+         "semester": "vår",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "FY2008",
+         "emnenavn": "Numerisk fysikk 2",
+         "studiepoeng": 7.5,
+         "aar": 2,
+         "semester": "vår",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "TFY4220",
+         "emnenavn": "Faste stoffers fysikk",
+         "studiepoeng": 7.5,
+         "aar": 3,
+         "semester": "høst",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "TBT4102",
+         "emnenavn": "Biokjemi 1",
+         "studiepoeng": 7.5,
+         "aar": 3,
+         "semester": "høst",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "ITO1000",
+         "emnenavn": "Digitalisering - Områdeemne Teknologi",
+         "studiepoeng": 7.5,
+         "aar": 3,
+         "semester": "høst",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "TFY4160",
+         "emnenavn": "Bølgefysikk",
+         "studiepoeng": 7.5,
+         "aar": 3,
+         "semester": "høst",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "TKJ4215",
+         "emnenavn": "Statistisk termodynamikk i kjemi og biologi",
+         "studiepoeng": 7.5,
+         "aar": 3,
+         "semester": "vår",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "TKJ4150",
+         "emnenavn": "Organisk syntese I",
+         "studiepoeng": 7.5,
+         "aar": 3,
+         "semester": "vår",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "KJ2900",
+         "emnenavn": "Bachelorprosjekt i kjemi",
+         "studiepoeng": 7.5,
+         "aar": 3,
+         "semester": "vår",
+         "dbhEmnekoder": [],
+         "merknad": "Kan alternativt tas som KJ2910 (15 sp, større omfang).",
+         "years": []
+        }
+       ]
+      }
+     ]
     },
     {
      "entryId": "uis_biologisk_kjemi",
@@ -11825,12 +12537,165 @@
      "institusjon": "Universitetet i Stavanger",
      "isNmbu": false,
      "programnavn": "Biologisk kjemi (bachelor)",
-     "studieplanAar": null,
-     "kilder": [],
-     "totaltStudiepoeng": null,
-     "obligatoriskeStudiepoeng": null,
-     "merknad": "Studieplan ikke hentet ennå.",
-     "obligatoriske": [],
+     "studieplanAar": "2026/2027",
+     "kilder": [
+      "https://www.uis.no/nb/studier/biologisk-kjemi-bachelor"
+     ],
+     "totaltStudiepoeng": 180,
+     "obligatoriskeStudiepoeng": 140,
+     "merknad": "Kilde er UiS' programside for B-BIOKJE (dynamisk «Studieplan med emner»-seksjon, lest via nettleser). 5. semester («Emner ved UiS eller utveksling») er et fritt valg mellom emnepakke ved UiS eller utvekslingsopphold (30 sp, ikke navngitt) og er ikke tatt med. 6. semester krever minimum 30 sp; utover bacheloroppgaven BIOBAC (20 sp) skal studenten velge 10 sp blant anbefalte emner MLJ240 Hydrogeokjemi og MLJ250 Vannanalyse (anbefales ved opptak til master i biologisk kjemi) eller andre valgemner som ING200 Ingeniørfaglig systememne - Teknologiledelse og MAT200 Matematiske metoder 2; ingen av disse er tatt med som obligatoriske. obligatoriskeStudiepoeng (140) = summen av de 15 navngitte emnene; sammen med 5. semesters 30 valgfrie/utvekslings-sp og 6. semesters 10 valgfrie sp gir dette totaltStudiepoeng=180. Kildedokumentet beskriver ingen egne navngitte studieretninger/spesialiseringer for bachelorprogrammet.",
+     "obligatoriske": [
+      {
+       "emnekode": "BIO100",
+       "emnenavn": "Cellebiologi",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "KJE150",
+       "emnenavn": "Generell kjemi",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MAT100",
+       "emnenavn": "Matematiske metoder 1",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "TN110",
+       "emnenavn": "Kurs i studieteknikk og ingeniør- og realfaglig arbeidsmetode",
+       "studiepoeng": 0,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "Går over 1. og 2. semester, 0 studiepoeng.",
+       "years": []
+      },
+      {
+       "emnekode": "BIO110",
+       "emnenavn": "Anatomi og fysiologi",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "BIO200",
+       "emnenavn": "Biokjemi",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "KJE230",
+       "emnenavn": "Organisk kjemi",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "KJE250",
+       "emnenavn": "Organisk kjemi laboratorium",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "BIO250",
+       "emnenavn": "Immunologi",
+       "studiepoeng": 10,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "BIO220",
+       "emnenavn": "Mikrobiologi",
+       "studiepoeng": 10,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "BIO230",
+       "emnenavn": "Molekylærgenetikk og bioinformatikk",
+       "studiepoeng": 10,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "BIO210",
+       "emnenavn": "Metoder i bioteknologi",
+       "studiepoeng": 10,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "STA100",
+       "emnenavn": "Sannsynlighetsregning og statistikk 1",
+       "studiepoeng": 10,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "BIO300",
+       "emnenavn": "Sykdomslære",
+       "studiepoeng": 10,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "BIOBAC",
+       "emnenavn": "Bacheloroppgave i biologisk kjemi",
+       "studiepoeng": 20,
+       "aar": 3,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": "Administrativt oppført som løpende over 5. og 6. semester, men med hele sp-summen (20 sp) først bekreftet ved 6. semester i kilden.",
+       "years": []
+      }
+     ],
      "spesialiseringer": []
     },
     {
@@ -11839,11 +12704,14 @@
      "institusjon": "UiT Norges arktiske universitet",
      "isNmbu": false,
      "programnavn": "Kjemi (bachelor)",
-     "studieplanAar": null,
-     "kilder": [],
-     "totaltStudiepoeng": null,
-     "obligatoriskeStudiepoeng": null,
-     "merknad": "Studieplan ikke hentet ennå.",
+     "studieplanAar": "2025/2026",
+     "kilder": [
+      "https://uit.no/utdanning/program/279717/kjemi_-_bachelor",
+      "https://uit.no/utdanning/program/oppbygging?studkode=B-KJEMI&p_document_id=279717"
+     ],
+     "totaltStudiepoeng": 180,
+     "obligatoriskeStudiepoeng": 0,
+     "merknad": "Studieplanen for B-KJEMI (Kjemi - bachelor) ved UiT kunne ikke hentes i denne runden: programsiden (uit.no/utdanning/program/279717/kjemi_-_bachelor) inneholder ikke selve emnetabellen i statisk HTML, og «oppbygging»-siden (uit.no/utdanning/program/oppbygging?studkode=B-KJEMI&p_document_id=279717) er en dynamisk (JavaScript-lastet) widget som verken WebFetch eller en enkel nettleser-navigering klarte å rendre innholdet av innenfor denne økten (siden lastet tom/«Loading...»). I motsetning til andre UiT-bachelorprogrammer i dette datasettet (bioteknologi, ernæring, fiskeri- og havbruksvitenskap) ble det heller ikke funnet noen direkte PDF-lenke til en fagplan/studieplan for B-KJEMI ved søk. Emnekoder er derfor ikke fylt inn (tom liste) i tråd med instruksjonen om å aldri finne opp emnekoder. Bør hentes på nytt med en nettleser som kan kjøre JavaScript, eller ved å lete etter en «Fagplan Bachelor i kjemi»-PDF tilsvarende de andre UiT-programmene.",
      "obligatoriske": [],
      "spesialiseringer": []
     },
@@ -13371,12 +14239,36 @@
      "institusjon": "Universitetet i Bergen",
      "isNmbu": false,
      "programnavn": "Ernæring (bachelor)",
-     "studieplanAar": null,
-     "kilder": [],
-     "totaltStudiepoeng": null,
-     "obligatoriskeStudiepoeng": null,
-     "merknad": "Studieplan ikke hentet ennå.",
-     "obligatoriske": [],
+     "studieplanAar": "2025/2026",
+     "kilder": [
+      "https://www.uib.no/studier/program/ernaering-bachelor",
+      "https://www4.uib.no/studier/program/ernaering-bachelor/plan"
+     ],
+     "totaltStudiepoeng": 180,
+     "obligatoriskeStudiepoeng": 0,
+     "merknad": "Den fullstendige semester-for-semester emnetabellen for BAMD-NUHUM (Bachelor i ernæring, UiB) kunne ikke hentes ut i denne runden - programmets «plan»-side oppgir at «alle emner i programmet er obligatoriske» og at emnene må tas i fastsatt rekkefølge, men den selve emnetabellen med koder/studiepoeng per semester var ikke tilgjengelig i den hentede sideteksten (kun en lenke til en egen emneoversikt som ikke ble funnet). Bekreftede elementer: Examen philosophicum (10 sp, eksakt UiB-variantkode ikke bekreftet), DIGI100 og DIGI101 (obligatoriske digitale kompetanseemner fra og med kull 25, skal være fullført innen slutten av 2. semester - studiepoeng ikke bekreftet og derfor ikke tatt med som egne emner), NUTR244 og NUTR249 (praksisbaserte emner med maks to forsøk - studiepoeng ikke bekreftet), NUTR290 Bacheloroppgave (satt til 10 sp, ikke eksplisitt bekreftet). obligatoriskeStudiepoeng er satt til 0 fordi de fleste emnene mangler bekreftede studiepoeng-tall; totaltStudiepoeng=180 er standard for et treårig bachelorprogram. Bør hentes på nytt med tilgang til selve emneoversikt-siden eller en studieplan-PDF for å få fullstendig og presis emneliste.",
+     "obligatoriske": [
+      {
+       "emnekode": "EXPHIL",
+       "emnenavn": "Examen philosophicum",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": "Nøyaktig UiB-emnekode (variant) ikke bekreftet i denne runden.",
+       "years": []
+      },
+      {
+       "emnekode": "NUTR290",
+       "emnenavn": "Bacheloroppgave",
+       "studiepoeng": 10,
+       "aar": 3,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": "Studiepoeng ikke eksplisitt bekreftet i kildene brukt her (antatt 10 sp iht. UiBs standard bacheloroppgave-emner); bør verifiseres.",
+       "years": []
+      }
+     ],
      "spesialiseringer": []
     },
     {
@@ -13385,12 +14277,167 @@
      "institusjon": "UiT Norges arktiske universitet",
      "isNmbu": false,
      "programnavn": "Ernæring (bachelor)",
-     "studieplanAar": null,
-     "kilder": [],
-     "totaltStudiepoeng": null,
-     "obligatoriskeStudiepoeng": null,
-     "merknad": "Studieplan ikke hentet ennå.",
-     "obligatoriske": [],
+     "studieplanAar": "2026/2027",
+     "kilder": [
+      "https://uit.no/utdanning/studieprogram/b-ern",
+      "https://uit.no/utdanning/program/oppbygging?studkode=B-ERN&p_document_id=446405",
+      "https://uit.no/Content/917738/cache=20263108124040/Fagplan%20Bachelor%20i%20ern%C3%A6ring_gjeldende%20fra%20h%C3%B8st%202026.pdf"
+     ],
+     "totaltStudiepoeng": 180,
+     "obligatoriskeStudiepoeng": 160,
+     "merknad": "Kilde er UiTs fagplan for Bachelor i ernæring, godkjent 25.09.2025, gjeldende fra høst 2026. Flere emnekoder i 2.-3. semester er selv oppgitt med «X»/«XX»/«XXXX» i kilde-PDF-en (ikke endelig fastsatt på publiseringstidspunktet) og er gjengitt slik de står, i tråd med regelen om å aldri finne opp emnekoder. 4. semester («Andre studieår») er tilrettelagt for utveksling: alle studenter tar FIL-0700 Examen philosophicum (10 sp), mens de resterende 20 sp enten er valgfrie temaer (for utvekslingsstudenter) eller 10 sp valgfrie temaer + 10 sp «Idrett og ernæring» (IDR-XXXX) for de som ikke reiser - disse 20 sp er ikke tatt med i obligatoriske-listen siden de ikke har én fast kombinasjon. obligatoriskeStudiepoeng (160) = summen av de 15 navngitte emnene; sammen med de 20 valgfrie sp i 4. semester gir dette totaltStudiepoeng=180. Kildedokumentet beskriver ingen egne navngitte studieretninger/spesialiseringer.",
+     "obligatoriske": [
+      {
+       "emnekode": "ERN-1000",
+       "emnenavn": "Ernæring, individ og samfunn",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "ERN-1001",
+       "emnenavn": "Matvarekunnskap og matvaretrygghet",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "HEL-0700",
+       "emnenavn": "Samhandling, etikk og grunnleggende akademiske ferdigheter i helse- og sosialfag",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MBI-100X",
+       "emnenavn": "Celle- og molekylærbiologi",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MBI-XXXX",
+       "emnenavn": "Humanfysiologi",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": "Emnekoden er selv oppgitt med «XXXX» (ikke endelig fastsatt) i kildens studieplan.",
+       "years": []
+      },
+      {
+       "emnekode": "MBI-2001",
+       "emnenavn": "Biokjemi",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "ERN-2011",
+       "emnenavn": "Makronæringsstoffer og energi",
+       "studiepoeng": 10,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "ERN-200X",
+       "emnenavn": "Grunnleggende epidemiologi, statistikk og kostvurderingsmetoder",
+       "studiepoeng": 10,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "Emnekoden er selv oppgitt med «X» (ikke endelig fastsatt) i kildens studieplan.",
+       "years": []
+      },
+      {
+       "emnekode": "ERN-20XX",
+       "emnenavn": "Kommunikasjon, psykologi og praksis",
+       "studiepoeng": 10,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "Emnekoden er selv oppgitt med «XX» (ikke endelig fastsatt) i kildens studieplan.",
+       "years": []
+      },
+      {
+       "emnekode": "FIL-0700",
+       "emnenavn": "Examen philosophicum",
+       "studiepoeng": 10,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "ERN-2012",
+       "emnenavn": "Mikronæringsstoffer",
+       "studiepoeng": 10,
+       "aar": 3,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "ERN-2013",
+       "emnenavn": "Immunology, pharmacology, epigenetics and microbiology",
+       "studiepoeng": 10,
+       "aar": 3,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "ERN-2014",
+       "emnenavn": "Nutrition, health and disease 1",
+       "studiepoeng": 10,
+       "aar": 3,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "ERN-2015",
+       "emnenavn": "Ernæring, helse og sykdom 2",
+       "studiepoeng": 20,
+       "aar": 3,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "ERN-2025",
+       "emnenavn": "Bacheloroppgave i ernæring",
+       "studiepoeng": 10,
+       "aar": 3,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      }
+     ],
      "spesialiseringer": []
     },
     {
@@ -13399,12 +14446,176 @@
      "institusjon": "Universitetet i Oslo",
      "isNmbu": false,
      "programnavn": "Klinisk ernæring (master 5 år)",
-     "studieplanAar": null,
-     "kilder": [],
-     "totaltStudiepoeng": null,
-     "obligatoriskeStudiepoeng": null,
-     "merknad": "Studieplan ikke hentet ennå.",
-     "obligatoriske": [],
+     "studieplanAar": "2025/2026",
+     "kilder": [
+      "https://www.uio.no/studier/program/ernering-5aar/",
+      "https://www.uio.no/studier/program/ernering-5aar/oppbygging/"
+     ],
+     "totaltStudiepoeng": 300,
+     "obligatoriskeStudiepoeng": 300,
+     "merknad": "Gjelder studenter som startet høsten 2021 eller senere. Programmet er et 5-årig integrert masterstudium der samtlige emner er obligatoriske (ingen valgfrie emner eller egne studieretninger er beskrevet i kilden). ERN1100 Ernæringsstudiet Modul 1 strekker seg over 2. og 3. semester; kilden oppgir kun én samlet sp-verdi (50 sp, nevnt ved 3. semester) uten å dele denne mellom de to semestrene, så emnet er ført opp med hele 50 sp i 2. semester (vår, år 1) som et forenklet valg. Fordelingen av sp mellom ERN2200R og ERN2300 (4. semester, til sammen 30 sp) er heller ikke eksplisitt oppgitt i kilden og er delt likt (15/15) som beste anslag. Studiet kan kombineres med bachelorprogrammet i ernæring (jf. nmbu- og uib/uit-bachelorene i dette datasettet), og oppfyller sammen med et eventuelt forkurs de nasjonale retningslinjene for klinisk ernæringsfysiolog-utdanning.",
+     "obligatoriske": [
+      {
+       "emnekode": "ERN1010",
+       "emnenavn": "Innføring i klinisk ernæring",
+       "studiepoeng": 30,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "EXPHIL03",
+       "emnenavn": "Examen philosophicum",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "ERN1100",
+       "emnenavn": "Ernæringsstudiet, Modul 1",
+       "studiepoeng": 50,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": "Spenner over 2. og 3. semester ifølge kilden (oppgitt samlet til 50 sp ved 3. semester, uten egen delt sp-verdi for 2. semester-delen); ført opp i 2. semester (vår, år 1) som startpunkt.",
+       "years": []
+      },
+      {
+       "emnekode": "ERN2200R",
+       "emnenavn": "Fysiologi, ernæring og medisinsk biokjemi",
+       "studiepoeng": 15,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": "Kilden oppgir ikke eksakt sp-fordeling mellom ERN2200R og ERN2300 i 4. semester (kun at de to til sammen utgjør semesterets 30 sp); delt likt (15/15) her som beste anslag - bør verifiseres.",
+       "years": []
+      },
+      {
+       "emnekode": "ERN2300",
+       "emnenavn": "Mikronæringsstoffer og fremmedstoffer - fra mekanismer til klinikk",
+       "studiepoeng": 15,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": "Se merknad på ERN2200R om usikker sp-fordeling.",
+       "years": []
+      },
+      {
+       "emnekode": "ERN3000",
+       "emnenavn": "Metoder for å kartlegge kosthold og energiforbruk",
+       "studiepoeng": 7,
+       "aar": 3,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "ERN3010",
+       "emnenavn": "Metabolisme og livsstilssykdommer",
+       "studiepoeng": 23,
+       "aar": 3,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "ERN3020",
+       "emnenavn": "Laboratoriearbeid i ernæringsforskning",
+       "studiepoeng": 6,
+       "aar": 3,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "ERN3030",
+       "emnenavn": "Forebyggende ernæring - fra individ til samfunnsnivå",
+       "studiepoeng": 24,
+       "aar": 3,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "ERN4000",
+       "emnenavn": "Statistikk",
+       "studiepoeng": 6,
+       "aar": 4,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "ERN4010",
+       "emnenavn": "Ernæringsepidemiologi",
+       "studiepoeng": 6,
+       "aar": 4,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "ERN4020",
+       "emnenavn": "Ernæringsforskning",
+       "studiepoeng": 8,
+       "aar": 4,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "ERN4030",
+       "emnenavn": "Avansert klinisk ernæring 1",
+       "studiepoeng": 10,
+       "aar": 4,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "ERN4040",
+       "emnenavn": "Avansert klinisk ernæring 2",
+       "studiepoeng": 21,
+       "aar": 4,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "ERN4050",
+       "emnenavn": "Klinisk praksis",
+       "studiepoeng": 9,
+       "aar": 4,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "ERN4900",
+       "emnenavn": "Masteroppgave i ernæring",
+       "studiepoeng": 60,
+       "aar": 5,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": "60 sp totalt, fordelt over 9. og 10. semester (5. år).",
+       "years": []
+      }
+     ],
      "spesialiseringer": []
     }
    ]
@@ -14382,12 +15593,216 @@
      "institusjon": "Norges teknisk-naturvitenskapelige universitet",
      "isNmbu": false,
      "programnavn": "Matvitenskap, teknologi og bærekraft (bachelor)",
-     "studieplanAar": null,
-     "kilder": [],
-     "totaltStudiepoeng": null,
-     "obligatoriskeStudiepoeng": null,
-     "merknad": "Studieplan ikke hentet ennå.",
-     "obligatoriske": [],
+     "studieplanAar": "2025/2026",
+     "kilder": [
+      "https://www.ntnu.no/studier/mtmat",
+      "https://www.ntnu.no/web/studier/studieplan?p_p_id=studyprogrammeplannerportlet_WAR_studyprogrammeplannerportlet_INSTANCE_KzJMPh2hQuXL&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=studyplan&p_p_cacheability=cacheLevelPage&code=MTMAT&year=2025"
+     ],
+     "totaltStudiepoeng": 180,
+     "obligatoriskeStudiepoeng": 172.5,
+     "merknad": "Kilde er NTNUs studieplan-API for MTMAT, kull 2025. Nesten hele programmet er obligatorisk (172,5 av 180 sp); kun siste 7,5 sp i 6. semester er et valgfritt områdeemne (velg mellom BI2081, ITO1000 eller IØ2000), som ikke er tatt med i obligatoriske-listen. 4. semester (vår, år 2) er en sammenhengende praksisperiode (TMAT201P, 30 sp). Kildedokumentet beskriver ingen egne navngitte studieretninger/spesialiseringer for bachelorprogrammet.",
+     "obligatoriske": [
+      {
+       "emnekode": "EXPH0300",
+       "emnenavn": "Examen philosophicum for naturvitenskap og teknologi",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "HMS0001",
+       "emnenavn": "HMS-kurs for 1. årsstudenter",
+       "studiepoeng": 0,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MA0001",
+       "emnenavn": "Brukerkurs i matematikk A",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MATV1012",
+       "emnenavn": "Mat, foredlingsteknologi og bærekraft",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "TKJE1006",
+       "emnenavn": "Generell kjemi",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MATV1007",
+       "emnenavn": "Mikrobiologi og bioteknologi",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MATV1009",
+       "emnenavn": "Matkjemi 1",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MATV2002",
+       "emnenavn": "Statistikk og sensoriske metoder",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "TMAT1010",
+       "emnenavn": "Prosessteknologi",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MATV2001",
+       "emnenavn": "Matkjemi 2",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "TBT4102",
+       "emnenavn": "Biokjemi 1",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "TDT4111",
+       "emnenavn": "Informasjonsteknologi, grunnkurs",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "TMAT2005",
+       "emnenavn": "Produktutvikling og sensorisk analyse",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "TMAT201P",
+       "emnenavn": "Praksis i matvitenskap",
+       "studiepoeng": 30,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MATV3002",
+       "emnenavn": "Matteknologi - kjøtt og fisk",
+       "studiepoeng": 7.5,
+       "aar": 3,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MATV3003",
+       "emnenavn": "Mattrygghet og kvalitetsledelse",
+       "studiepoeng": 7.5,
+       "aar": 3,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MATV3004",
+       "emnenavn": "Matteknologi - melk og vegetabiler",
+       "studiepoeng": 7.5,
+       "aar": 3,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "TMAT3001",
+       "emnenavn": "Matmikrobiologi",
+       "studiepoeng": 7.5,
+       "aar": 3,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MATV3006",
+       "emnenavn": "Bacheloroppgave",
+       "studiepoeng": 15,
+       "aar": 3,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "TMAT2002",
+       "emnenavn": "Ernæring",
+       "studiepoeng": 7.5,
+       "aar": 3,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      }
+     ],
      "spesialiseringer": []
     },
     {
@@ -15589,12 +17004,176 @@
      "institusjon": "UiT Norges arktiske universitet",
      "isNmbu": false,
      "programnavn": "Fiskeri- og havbruksvitenskap (bachelor)",
-     "studieplanAar": null,
-     "kilder": [],
-     "totaltStudiepoeng": null,
-     "obligatoriskeStudiepoeng": null,
-     "merknad": "Studieplan ikke hentet ennå.",
-     "obligatoriske": [],
+     "studieplanAar": "2025/2026",
+     "kilder": [
+      "https://uit.no/utdanning/program/268899/fiskeri-_og_havbruksvitenskap_-_bachelor",
+      "https://uit.no/Content/915965/cache=20262209145837/Studieplan%20for%20bachelor%20i%20fiskeri-%20og%20havbruksvitenskap%20fra%20kull%202025.pdf"
+     ],
+     "totaltStudiepoeng": 180,
+     "obligatoriskeStudiepoeng": 150,
+     "merknad": "Kilde er UiTs studieplan for kull 2025. 5. semester er satt av til «Valgpakker/utveksling tilsvarende 30 stp» (anbefalte pakker innen havbruk, forvaltning eller økonomi) og er fullt valgfritt - ikke tatt med. 6. semester har et obligatorisk valg mellom FSK-2043 Strategi og markedsføring for sjømatnæringen, BIO-2002 Dyrefysiologi og GIS (alle 10 sp); FSK-2043 er ført opp med de to andre nevnt i merknad. obligatoriskeStudiepoeng (150) = summen av de 16 navngitte emnene (inkl. FSK-2020 Bærekraftig fiskeri på 30 sp, som i kilden er delt i fire delemner à 7,5 sp uten egne emnekoder); sammen med 5. semesters 30 valgfrie sp gir dette totaltStudiepoeng=180. Kildedokumentet beskriver ingen egne navngitte studieretninger/spesialiseringer.",
+     "obligatoriske": [
+      {
+       "emnekode": "FSK-1100",
+       "emnenavn": "Introduksjon til fiskeri- og havbruksvitenskap",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "KJE-1001",
+       "emnenavn": "Introduksjon til kjemi og kjemisk biologi",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "BED-1007",
+       "emnenavn": "Matematikk for økonomer",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "FSK-1020",
+       "emnenavn": "Bærekraft og etikk",
+       "studiepoeng": 2.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "BIO-1501",
+       "emnenavn": "Akvatisk økologi",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "FSK-1122",
+       "emnenavn": "Biokjemi og mikrobiologi for FHV",
+       "studiepoeng": 10,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "FSK-1121",
+       "emnenavn": "Statistikk og metode for FHV",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "FSK-1123",
+       "emnenavn": "Økonomi for FHV",
+       "studiepoeng": 5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "BIO-2406",
+       "emnenavn": "Introduction to Fish Biology",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "BIO-2407",
+       "emnenavn": "Introduction to Aquaculture",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "FSK-2408",
+       "emnenavn": "Havbruksforvaltning",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "FSK-2409",
+       "emnenavn": "Bedriftsøkonomi for FHV",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "FSK-2020",
+       "emnenavn": "Bærekraftig fiskeri",
+       "studiepoeng": 30,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": "Emnet dekker fiskeribiologi, ressursøkonomi, forvaltning og redskapsteknologi (7,5 sp hver, samlet i ett emne på 30 sp).",
+       "years": []
+      },
+      {
+       "emnekode": "FSK-2041",
+       "emnenavn": "Sjømatproduksjon",
+       "studiepoeng": 10,
+       "aar": 3,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "FSK-2042",
+       "emnenavn": "Praksis for en bærekraftig sjømatnæring",
+       "studiepoeng": 10,
+       "aar": 3,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "FSK-2043",
+       "emnenavn": "Strategi og markedsføring for sjømatnæringen",
+       "studiepoeng": 10,
+       "aar": 3,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": "Obligatorisk valg mellom FSK-2043, BIO-2002 Dyrefysiologi og GIS (alle 10 sp).",
+       "years": []
+      }
+     ],
      "spesialiseringer": []
     }
    ]
@@ -16048,12 +17627,76 @@
      "institusjon": "Norges teknisk-naturvitenskapelige universitet",
      "isNmbu": false,
      "programnavn": "Bioteknologi (master 2 år)",
-     "studieplanAar": null,
-     "kilder": [],
-     "totaltStudiepoeng": null,
-     "obligatoriskeStudiepoeng": null,
-     "merknad": "Studieplan ikke hentet ennå.",
-     "obligatoriske": [],
+     "studieplanAar": "2025/2026",
+     "kilder": [
+      "https://www.ntnu.no/studier/msbiotech",
+      "https://www.ntnu.no/web/studier/studieplan?p_p_id=studyprogrammeplannerportlet_WAR_studyprogrammeplannerportlet_INSTANCE_KzJMPh2hQuXL&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=studyplan&p_p_cacheability=cacheLevelPage&code=MSBIOTECH&year=2025"
+     ],
+     "totaltStudiepoeng": 120,
+     "obligatoriskeStudiepoeng": 97.5,
+     "merknad": "Kilde er NTNUs studieplan-API for MSBIOTECH, kull 2025. Masteroppgaven (60 sp) er delt i 4 deler fordelt over alle 4 semestre, men med én av fire institutt-spesifikke emnekoder (BIOTBA3901/BIOTBI3901/BIOTBT3901/HBIOT3911) - BIOTBT3901 er brukt som representativ kode her, med de andre nevnt i merknad. Utover de 6 emnene over kreves 4 valgfrie emner gjennom programmet (bl.a. innen matkjemi, miljøbioteknologi og systembiologi), som ikke er navngitt med én fast kombinasjon og derfor ikke er tatt med i obligatoriske-listen; disse dekker differansen mellom obligatoriskeStudiepoeng (97,5) og totaltStudiepoeng (120). Kildedokumentet beskriver ingen egne navngitte studieretninger utover instituttvalget for masteroppgaven.",
+     "obligatoriske": [
+      {
+       "emnekode": "BI3016",
+       "emnenavn": "Molecular Cell Biology",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "BT3220",
+       "emnenavn": "Biotechnology, Advanced",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "TBT4146",
+       "emnenavn": "Molecular Genetics",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "HMS0003",
+       "emnenavn": "HMS-kurs for masterstudenter",
+       "studiepoeng": 0,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "BIOTBT3901",
+       "emnenavn": "Masteroppgave i bioteknologi",
+       "studiepoeng": 60,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": "60 sp totalt, fordelt over alle 4 semestre (del 1-4). Emnekoden avhenger av hvilket institutt oppgaven tas ved: BIOTBA3901 (IBA Ålesund), BIOTBI3901 (Institutt for biologi), BIOTBT3901 (Institutt for bioteknologi og matvitenskap) eller HBIOT3911 (bioingeniørfag).",
+       "years": []
+      },
+      {
+       "emnekode": "BT3091",
+       "emnenavn": "Spesialpensum",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": "Obligatorisk valg mellom BI3091 og BT3091 (begge «Spesialpensum»/Special Syllabus, 7,5 sp).",
+       "years": []
+      }
+     ],
      "spesialiseringer": []
     }
    ]
@@ -16098,13 +17741,100 @@
      "institusjon": "Universitetet i Oslo",
      "isNmbu": false,
      "programnavn": "Kjemi (master 2 år)",
-     "studieplanAar": null,
-     "kilder": [],
-     "totaltStudiepoeng": null,
-     "obligatoriskeStudiepoeng": null,
-     "merknad": "Studieplan ikke hentet ennå.",
-     "obligatoriske": [],
-     "spesialiseringer": []
+     "studieplanAar": "2025/2026",
+     "kilder": [
+      "https://www.uio.no/studier/program/kjemi-master/",
+      "https://www.uio.no/studier/program/kjemi-master/oppbygging/"
+     ],
+     "totaltStudiepoeng": 120,
+     "obligatoriskeStudiepoeng": 0,
+     "merknad": "Kilde er UiOs oppbygging-side for masterprogrammet i kjemi. Programmet har 8 navngitte studieretninger (listet under spesialiseringer), men kilden oppgir ikke konkrete obligatoriske emnekoder per retning - emnevalget (60-90 sp teori + 30-60 sp masteroppgave) avtales individuelt med veileder ut fra tema. Masteroppgaven kan være på enten 60 eller 30 sp (ingen fast verdi, og ingen egen emnekode oppgitt i kilden), og er derfor ikke tatt med som eget emne. Eneste bekreftede faste elementer er fem 0-poengs HMS-kurs i 1. semester (HMS0501, HMS0502, HMS0503, HMS0505, HMS0507; fra og med kull høst 2026 kommer trolig også HMS0508 om ansvarlig KI-bruk). obligatoriskeStudiepoeng er derfor 0 sp reelt (kun 0-poengs HMS-emner er navngitt); totaltStudiepoeng=120 er standard for et 2-årig masterprogram. Bør oppdateres med konkrete emnekoder per studieretning ved en grundigere gjennomgang av emneoversikten.",
+     "obligatoriske": [
+      {
+       "emnekode": "HMS0501",
+       "emnenavn": "Sikkerhet og fysisk læringsmiljø",
+       "studiepoeng": 0,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "HMS0502",
+       "emnenavn": "Utviklende læringsmiljø",
+       "studiepoeng": 0,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "HMS0503",
+       "emnenavn": "Laboratoriesikkerhet",
+       "studiepoeng": 0,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "HMS0505",
+       "emnenavn": "Elsikkerhet",
+       "studiepoeng": 0,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "HMS0507",
+       "emnenavn": "Brannsikkerhet",
+       "studiepoeng": 0,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      }
+     ],
+     "spesialiseringer": [
+      {
+       "navn": "Analytisk kjemi",
+       "obligatoriske": []
+      },
+      {
+       "navn": "Atmosfærekjemi",
+       "obligatoriske": []
+      },
+      {
+       "navn": "Biokjemi og Soft Matter",
+       "obligatoriske": []
+      },
+      {
+       "navn": "Kjemididaktikk og formidling",
+       "obligatoriske": []
+      },
+      {
+       "navn": "Kjernekjemi",
+       "obligatoriske": []
+      },
+      {
+       "navn": "Organisk kjemi",
+       "obligatoriske": []
+      },
+      {
+       "navn": "Teoretisk og fysikalsk kjemi",
+       "obligatoriske": []
+      },
+      {
+       "navn": "Uorganisk kjemi og materialkjemi",
+       "obligatoriske": []
+      }
+     ]
     },
     {
      "entryId": "uib_kjemi2",
@@ -16112,12 +17842,26 @@
      "institusjon": "Universitetet i Bergen",
      "isNmbu": false,
      "programnavn": "Kjemi (master 2 år)",
-     "studieplanAar": null,
-     "kilder": [],
-     "totaltStudiepoeng": null,
-     "obligatoriskeStudiepoeng": null,
-     "merknad": "Studieplan ikke hentet ennå.",
-     "obligatoriske": [],
+     "studieplanAar": "2025/2026",
+     "kilder": [
+      "https://www.uib.no/studier/MAMN-KJEM",
+      "https://www4.uib.no/studier/program/kjemi-master/plan"
+     ],
+     "totaltStudiepoeng": 120,
+     "obligatoriskeStudiepoeng": 60,
+     "merknad": "Kilde er UiBs programside MAMN-KJEM og tilhørende «plan»-side. Programmet har ingen faste emner utover masteroppgaven KJEM399 (60 sp): «Obligatoriske og valfrie emne i mastergraden i kjemi er bestemt av kva fagleg tema du vel for masterprosjektet ditt. Du og din hovudrettleiar blir samde om kva emne som skal inngå.» De resterende 60 sp (1.-2. semester) er dermed individuelt sammensatt i samråd med veileder, uten en fast obligatorisk kombinasjon, og er ikke tatt med i obligatoriske-listen. Kildedokumentet beskriver ingen egne navngitte studieretninger/spesialiseringer - forskningen dekker hele bredden av kjemi fra teoretisk til laboratorieorientert arbeid.",
+     "obligatoriske": [
+      {
+       "emnekode": "KJEM399",
+       "emnenavn": "Masteroppgave i kjemi",
+       "studiepoeng": 60,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": "60 sp, leveres innen 1. juni eller 15. november i løpet av 4. semester.",
+       "years": []
+      }
+     ],
      "spesialiseringer": []
     },
     {
@@ -16126,13 +17870,71 @@
      "institusjon": "Norges teknisk-naturvitenskapelige universitet",
      "isNmbu": false,
      "programnavn": "Kjemi (master 2 år)",
-     "studieplanAar": null,
-     "kilder": [],
-     "totaltStudiepoeng": null,
-     "obligatoriskeStudiepoeng": null,
-     "merknad": "Studieplan ikke hentet ennå.",
-     "obligatoriske": [],
-     "spesialiseringer": []
+     "studieplanAar": "2025/2026",
+     "kilder": [
+      "https://www.ntnu.no/studier/mschem",
+      "https://www.ntnu.no/web/studier/studieplan?p_p_id=studyprogrammeplannerportlet_WAR_studyprogrammeplannerportlet_INSTANCE_KzJMPh2hQuXL&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=studyplan&p_p_cacheability=cacheLevelPage&code=MSCHEM&year=2025"
+     ],
+     "totaltStudiepoeng": 120,
+     "obligatoriskeStudiepoeng": 60,
+     "merknad": "Kilde er NTNUs studieplan-API for MSCHEM, kull 2025 (hentet på engelsk - norske emnenavn for studieretningene er ikke bekreftet og kan avvike noe fra de brukte betegnelsene «Strukturkjemi» og «Anvendt teoretisk kjemi», oversatt fra hhv. «Structural Chemistry» og «Applied Theoretical Chemistry»). Programmet har 3 studieretninger; kun «Organisk kjemi» har egne navngitte obligatoriske emner utover fellesdelen (TKJ4155 Organic Synthesis II og TKJ4130 Organic Synthesis, Laboratory, til sammen 15 sp) - de to andre retningene har ifølge kilden ingen obligatoriske emner utover HMS-kurs og masteroppgave. Fellesdelen (60 sp) består av HMS0003 (0 sp) og masteroppgaven KJ3900 (60 sp, delt i 4 deler over alle 4 semestre). Resten av programmet (opptil 60 sp, eller 45 sp for Organisk kjemi-retningen) er valgfrie emner tilpasset masteroppgavens tema, ikke navngitt med én fast kombinasjon i kilden.",
+     "obligatoriske": [
+      {
+       "emnekode": "HMS0003",
+       "emnenavn": "HMS-kurs for masterstudenter",
+       "studiepoeng": 0,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "KJ3900",
+       "emnenavn": "Masteroppgave i kjemi",
+       "studiepoeng": 60,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": "60 sp totalt, delt i 4 deler fordelt over alle 4 semestre (del 1-4 ifølge studieplanen).",
+       "years": []
+      }
+     ],
+     "spesialiseringer": [
+      {
+       "navn": "Organisk kjemi",
+       "obligatoriske": [
+        {
+         "emnekode": "TKJ4155",
+         "emnenavn": "Organic Synthesis II",
+         "studiepoeng": 7.5,
+         "aar": 1,
+         "semester": "høst",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        },
+        {
+         "emnekode": "TKJ4130",
+         "emnenavn": "Organic Synthesis, Laboratory",
+         "studiepoeng": 7.5,
+         "aar": 1,
+         "semester": "vår",
+         "dbhEmnekoder": [],
+         "merknad": null,
+         "years": []
+        }
+       ]
+      },
+      {
+       "navn": "Strukturkjemi",
+       "obligatoriske": []
+      },
+      {
+       "navn": "Anvendt teoretisk kjemi",
+       "obligatoriske": []
+      }
+     ]
     }
    ]
   },
@@ -16318,12 +18120,96 @@
      "institusjon": "Norges teknisk-naturvitenskapelige universitet",
      "isNmbu": false,
      "programnavn": "Matvitenskap, teknologi og bærekraft (master 2 år)",
-     "studieplanAar": null,
-     "kilder": [],
-     "totaltStudiepoeng": null,
-     "obligatoriskeStudiepoeng": null,
-     "merknad": "Studieplan ikke hentet ennå.",
-     "obligatoriske": [],
+     "studieplanAar": "2025/2026",
+     "kilder": [
+      "https://www.ntnu.no/studier/ftmamat",
+      "https://www.ntnu.no/web/studier/studieplan?p_p_id=studyprogrammeplannerportlet_WAR_studyprogrammeplannerportlet_INSTANCE_KzJMPh2hQuXL&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=studyplan&p_p_cacheability=cacheLevelPage&code=FTMAMAT&year=2025"
+     ],
+     "totaltStudiepoeng": 120,
+     "obligatoriskeStudiepoeng": 90,
+     "merknad": "Kilde er NTNUs studieplan-API for FTMAMAT, kull 2025. 2. semester har utover MATV4010 (7,5 sp obligatorisk) et krav om å velge 2 valgfrie emner der minst étt må være MATV4008 eller TBT4507 - denne bundne valgdelen er ført opp som MATV4008 (7,5 sp) med alternativet nevnt i merknad, mens det gjenværende helt frie valgemnet (7,5 sp) ikke er tatt med. 3. semester har i tillegg til masteroppgavens del 1 to valgfrie emner (bl.a. MRK3015, TBT4135, TEP4285, MATV3002, MATV3004), heller ikke tatt med. Masteroppgaven TMMT5003 er splittet i del 1 (3. semester, studiepoeng ikke oppgitt i kilden) og del 2 (4. semester, 45 sp); kun de 45 sp fra del 2 er lagt til grunn i obligatoriskeStudiepoeng for å unngå dobbelttelling eller å gjette et tall som ikke står i kilden. obligatoriskeStudiepoeng (90) + valgfrie emner (2. og 3. semester, samt evt. udokumenterte sp for oppgavens del 1) utgjør totaltStudiepoeng=120. Kildedokumentet beskriver ingen egne navngitte studieretninger/spesialiseringer.",
+     "obligatoriske": [
+      {
+       "emnekode": "HMS0003",
+       "emnenavn": "HMS-kurs for masterstudenter",
+       "studiepoeng": 0,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "TMMT4001",
+       "emnenavn": "Bærekraftig matproduksjon",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "TPK4100",
+       "emnenavn": "Produksjonsledelse",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MATV4110",
+       "emnenavn": "Næringsmiddelressurser, prosessering og teknologi",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MATV4004",
+       "emnenavn": "Ressursutnyttelse i matsystemer",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MATV4010",
+       "emnenavn": "Trygg matproduksjon",
+       "studiepoeng": 7.5,
+       "aar": 1,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": null,
+       "years": []
+      },
+      {
+       "emnekode": "MATV4008",
+       "emnenavn": "Emne innen matmikrobiologi/-trygghet",
+       "studiepoeng": 7.5,
+       "aar": 2,
+       "semester": "høst",
+       "dbhEmnekoder": [],
+       "merknad": "Obligatorisk valg mellom MATV4008 og TBT4507 (ifølge studieplanens fotnote); studenter med tidligere MTMAT-bachelor kan ikke velge MATV3002 eller MATV3004 som erstatning.",
+       "years": []
+      },
+      {
+       "emnekode": "TMMT5003",
+       "emnenavn": "Masteroppgave",
+       "studiepoeng": 45,
+       "aar": 2,
+       "semester": "vår",
+       "dbhEmnekoder": [],
+       "merknad": "Deles i «del 1 av 2» (3. semester, studiepoeng for denne delen ikke eksplisitt oppgitt i kilden) og «del 2 av 2» (4. semester, 45 sp, som er tallet lagt til grunn her).",
+       "years": []
+      }
+     ],
      "spesialiseringer": []
     }
    ]

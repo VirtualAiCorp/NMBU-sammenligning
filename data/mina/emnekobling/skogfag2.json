@@ -1,0 +1,40 @@
+{
+  "groupId": "skogfag2",
+  "hentet": "2026-09-23",
+  "note": "Gruppen har bare to programmer, og de er bygd svært ulikt: NMBUs master er et toårig heltidsstudium på Ås med en liten obligatorisk kjerne (55 sp) og stor valgfrihet, mens INNs «Bærekraftig skogforvaltning» er et treårig nett- og samlingsbasert deltidsstudium der alle ti emnene (120 sp) er obligatoriske. INN hadde første opptak i 2024, så halvparten av emnene i studieplanen har ennå ingen rapporterte karakterer i DBH - det gjelder blant annet masteroppgaven SKO4900S, SKO4007S Beslutningsanalyse, SKO4006S Prosjektledelse og MBJ4004S Studiedesign og statistisk metode. Fordi programmene er små, er terskelen for å ta med et emne satt til minst ti kandidater samlet i perioden 2021-2025, ikke ti kandidater i siste årgang. Det er bare funnet tre reelle emnetyper. Emner som står uten motstykke og derfor ikke er koblet: NMBUs skogøkologi (SKOG304, tidligere SKS300), skoglig driftsteknikk (SKOG340), prosjektøkonomi (MINA330), treteknologi (TRE300) og tverrfaglig bærekraft (MINA320/MINA321) har ingen INN-emne; INNs bærekraftige skogproduksjon (SKO4002S), GIS (SKO4003S), areal- og eiendomsforvaltning (SKO4001S) og innføringsemnet i skogbruk (SKO2250) har ingen motsvarighet i NMBUs masterdata, fordi NMBUs skogskjøtsel- og GIS-emner ligger på bachelornivå og ikke rapporteres på masterprogrammet. Masteroppgaven er heller ikke koblet, siden INNs oppgave ennå ikke har kandidater.",
+  "emnetyper": [
+    {
+      "id": "forskningsmetode",
+      "label": "Forskningsmetode og dataanalyse",
+      "kategori": "Metode",
+      "desc": "Vitenskapelig metode, forskningsdesign og analyse av data i skog- og naturfaglige problemstillinger.",
+      "note": "NMBU byttet fra ECOL300 til MINA310 fra og med 2023, og begge kodene er tatt med. INNs andre metodeemne, MBJ4004S Studiedesign og statistisk metode (10 sp), ligger i 2. studieår og har ennå ingen rapporterte karakterer.",
+      "koblinger": [
+        { "entryId": "nmbu_skogfag2", "emnekoder": ["MINA310-1", "ECOL300-1"], "merknad": "5 sp; obligatorisk valg mellom MINA310 og MINA311 Samfunnsvitenskapelig forskningsmetode" },
+        { "entryId": "inn_skogforvaltning2", "emnekoder": ["MBJ4002S-1"], "merknad": "10 sp, obligatorisk i 1. studieår" }
+      ]
+    },
+    {
+      "id": "flerbruk-skog",
+      "label": "Flerbruk og flerbruksplanlegging i skog",
+      "kategori": "Skog",
+      "desc": "Skogens mange bruksformål - tømmer, friluftsliv, biologisk mangfold, karbon og reindrift - og hvordan hensynene avveies mot hverandre i praktisk skogforvaltning.",
+      "note": "Dette er den klareste parallellen mellom de to programmene: begge emnene er obligatoriske, går på 10 sp og ligger i første studieår.",
+      "koblinger": [
+        { "entryId": "nmbu_skogfag2", "emnekoder": ["SKOG302-1"], "merknad": "10 sp, obligatorisk; går over Augustblokk og høstparallell" },
+        { "entryId": "inn_skogforvaltning2", "emnekoder": ["SKO4004S-1"], "merknad": "10 sp, obligatorisk i 1. studieår" }
+      ]
+    },
+    {
+      "id": "skogkartlegging-planlegging",
+      "label": "Skogkartlegging og skogplanlegging",
+      "kategori": "Skog",
+      "desc": "Taksering og kartlegging av skogressurser, og bruk av ressursdataene til å sette opp og vurdere skogbruksplaner.",
+      "note": "NMBU deler faget i et takseringsemne (SKOG305) og et planleggingsemne (SKOG300). Hos INN dekkes takseringsdelen av SKO4005S Ressurskartlegging, mens selve plandelen ligger i SKO4007S Beslutningsanalyse i 3. studieår, som ennå ikke har rapporterte karakterer.",
+      "koblinger": [
+        { "entryId": "nmbu_skogfag2", "emnekoder": ["SKOG300-1", "SKOG305-1"], "merknad": "SKOG300 Skogplanlegging (10 sp) er programmets største emne; SKOG305 Utvalgsbasert skogkartlegging (5 sp) har få kandidater" },
+        { "entryId": "inn_skogforvaltning2", "emnekoder": ["SKO4005S-1"], "merknad": "10 sp, obligatorisk i 2. studieår" }
+      ]
+    }
+  ]
+}

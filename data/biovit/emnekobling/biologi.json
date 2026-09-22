@@ -1,0 +1,758 @@
+{
+  "groupId": "biologi",
+  "hentet": "2026-09-23",
+  "note": "Gruppa rommer sju breddebiologiprogrammer og ett smalere molekylærbiologiprogram. Sammenligningen er sterkest i de klassiske innføringsemnene i biologi – cellebiologi/molekylærbiologi, genetikk og evolusjon, økologi, organismebiologi og fysiologi – der alle de sju breddeprogrammene har obligatoriske emner. Den er svakest i matematikk og kjemi, der omfanget spriker: UiB og UiB Molekylærbiologi har både matematikk, fysikk, programmering og to kjemiemner, mens UiT og Nord ikke har noe eget matematikkemne i det hele tatt (Nord har MA116F/MAT1014, som er et kombinert matematikk- og statistikkemne, og UiT dekker det kvantitative i BIO-1007 og BIO-2004). Flere institusjoner slår sammen emner som NMBU holder atskilt, og motsatt: UiO har genetikk og evolusjon i ett emne (BIOS1140), NTNU i BI2017, og Nord i BI122F/BIO1013, mens NMBU har BIO120 Genetikk og BIO223 Evolusjonsbiologi hver for seg. Derfor er «Genetikk og evolusjon» satt opp som én emnetype. Av samme grunn er artskunnskap («Organismebiologi og artsmangfold») og fysiologi skilt fra hverandre framfor å deles i zoologi og botanikk – UiB (BIO101/BIO102 Organismebiologi 1 og 2), UiO (BIOS1150 Biologisk mangfold) og NTNU (BI1002 Faunistikk og floristikk) dekker dyr, planter og sopp i de samme emnene. Ingen emnetype for bacheloroppgave er satt opp, fordi NMBU, UiO, UiB og Nord ikke har obligatorisk bacheloroppgave i biologi; det har derimot UiA (BIO300, 20 sp) og NTNU (BI2900, 15 sp – men NTNUs emne er så nytt at DBH ikke har rapportert karakterer for det). UiB Molekylærbiologi er tatt med som svakere sammenligning og mangler emner i økologi, artsmangfold, fysiologi og mikrobiologi; den er derfor bare koblet i de sju emnetypene der den faktisk har et tilsvarende emne. UiT har i 2025 lagt om studieplanen og innført nye emnekoder (BIO-1012, BIO-2019, BIO-2020, BIO-2021, BIO-2022) som ennå ikke har rapporterte karakterer i DBH; koblingene bruker derfor de gamle kodene som har tall (BIO-1103 Botanikk, BIO-1601 Innføring i mikrobiologi, BIO-2016 Plantefysiologi, BIO-2017 Økologi og BIO-2018 Genetikk, molekylærbiologi og bioinformatikk). Merk også at emnekoden BIO100 betyr tre ulike emner i gruppa: NMBUs BIO100 er Cellebiologi, UiBs BIO100 er Innføring i evolusjon og økologi, og UiAs BIO102/BIO103 er Botanikk og Zoologi. HMS-emner uten studiepoeng (UiOs HMS05xx, NTNUs HMS0001, UiTs HMS-05xx, Nords KJE1001/KJ105F, UiAs ORG001) og UiBs DIGI-nettkurs er ikke koblet, siden de ikke gir karakter A–F.",
+  "emnetyper": [
+    {
+      "id": "generell-kjemi",
+      "label": "Generell kjemi",
+      "kategori": "Realfag",
+      "desc": "Grunnleggende kjemi: atomstruktur, binding, støkiometri, likevekt, syre-base og redoks, med laboratoriekurs.",
+      "note": "Alle åtte programmene har ett obligatorisk kjemiemne på 7,5–15 sp. Flere har byttet emnekode i perioden: UiB gikk fra KJEM110 Kjemi og energi til KJEM109 Kjemi grunnkurs, NTNU fra KJ1000/KJ1002 (15 sp) til KJ1004 (7,5 sp), og Nord fra KJ104F til KJE1002. UiOs biovitenskapsbachelor bruker fra 2025 KJM1003 Kjemi for biologer, som ennå ikke har rapporterte karakterer i DBH; KJM1101 og KJM1002 er de kodene som faktisk har tall.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_biologi",
+          "emnekoder": [
+            "KJM100-1"
+          ]
+        },
+        {
+          "entryId": "uio_biovitenskap",
+          "emnekoder": [
+            "KJM1101-1",
+            "KJM1002-1"
+          ],
+          "merknad": "Generell kjemi og Innføring i kjemi. Programmet har gått over til KJM1003 Kjemi for biologer, som ikke er rapportert med karakterer."
+        },
+        {
+          "entryId": "uib_biologi",
+          "emnekoder": [
+            "KJEM109-0",
+            "KJEM110-0"
+          ],
+          "merknad": "KJEM109 Kjemi grunnkurs erstattet KJEM110 Kjemi og energi fra 2023."
+        },
+        {
+          "entryId": "ntnu_biologi",
+          "emnekoder": [
+            "KJ1004-1",
+            "KJ1002-1",
+            "KJ1000-1"
+          ],
+          "merknad": "Tre kodeversjoner av generell kjemi; KJ1002 og KJ1000 er 15 sp-versjonene, KJ1004 den gjeldende på 7,5 sp."
+        },
+        {
+          "entryId": "uit_biologi",
+          "emnekoder": [
+            "KJE-1001-1"
+          ],
+          "merknad": "Introduksjon til kjemi og kjemisk biologi."
+        },
+        {
+          "entryId": "nord_biologi",
+          "emnekoder": [
+            "KJE1002-1",
+            "KJ104F-1"
+          ],
+          "merknad": "KJE1002 Prinsipper innen kjemi og biokjemi erstattet KJ104F Grunnleggende kjemi og miljøkjemi."
+        },
+        {
+          "entryId": "uia_biologi",
+          "emnekoder": [
+            "KJ-111-1"
+          ]
+        },
+        {
+          "entryId": "uib_molekylaerbiologi",
+          "emnekoder": [
+            "KJEM110-0"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "organisk-kjemi-og-biokjemi",
+      "label": "Organisk kjemi og biokjemi",
+      "kategori": "Realfag",
+      "desc": "Organiske forbindelsers struktur og reaksjoner, og biomolekylenes kjemi: proteiner, enzymer, karbohydrater, lipider og metabolisme.",
+      "note": "Her er forskjellene store. UiB Molekylærbiologi har mest (KJEM130 og MOL200, 20 sp), UiO og UiA har ett emne hver, mens NMBUs KJM110 Organisk kjemi og KJB200 Biokjemi begge er valgemner i biologibacheloren og derfor har få kandidater. UiT og Nord har ikke noe eget emne i organisk kjemi eller biokjemi – Nords BI132F Biokjemi og cellebiologi og BIO1018 Essensiell cellebiologi og biokjemi er ført under cellebiologi, siden cellebiologidelen dominerer.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_biologi",
+          "emnekoder": [
+            "KJM110-1",
+            "KJB200-1"
+          ],
+          "merknad": "Organisk kjemi og Biokjemi; begge valgemner i biologibacheloren, med 3 og 13 kandidater i 2025."
+        },
+        {
+          "entryId": "uio_biovitenskap",
+          "emnekoder": [
+            "BIOS1130-1"
+          ],
+          "merknad": "Biokjemi 1; obligatorisk i studieretningen molekylærbiologi og biomedisin."
+        },
+        {
+          "entryId": "uib_biologi",
+          "emnekoder": [
+            "KJEM130-0"
+          ],
+          "merknad": "Organisk kjemi; valgemne, ikke i den obligatoriske fellespakken."
+        },
+        {
+          "entryId": "ntnu_biologi",
+          "emnekoder": [
+            "KJ1021-1",
+            "TBT4102-1"
+          ],
+          "merknad": "Organisk kjemi grunnkurs uten laboratorium og Biokjemi 1; begge i fagpakken Kjemi."
+        },
+        {
+          "entryId": "uia_biologi",
+          "emnekoder": [
+            "KJ-213-1"
+          ],
+          "merknad": "Organisk kjemi, obligatorisk i 2. studieår."
+        },
+        {
+          "entryId": "uib_molekylaerbiologi",
+          "emnekoder": [
+            "KJEM130-0",
+            "MOL200-0"
+          ],
+          "merknad": "Organisk kjemi og Metabolisme; til sammen 20 sp og gruppas klart største omfang."
+        }
+      ]
+    },
+    {
+      "id": "matematikk",
+      "label": "Matematikk",
+      "kategori": "Metode",
+      "desc": "Innføringsemne i matematikk for biologer: funksjoner, derivasjon, integrasjon og enkle modeller.",
+      "note": "UiT og Nord har ikke noe eget matematikkemne. Nords MA116F/MAT1014 er et kombinert matematikk- og statistikkemne og er koblet under statistikk i stedet. UiOs biovitenskapsbachelor har bare matematikk i studieretningen beregningsbiologi og bioinformatikk, og kandidattallene der er svært lave (3–10 per år). NTNU har to emner (brukerkurs A og B) og er den eneste med et obligatorisk andre matematikkemne.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_biologi",
+          "emnekoder": [
+            "MATH100-1"
+          ],
+          "merknad": "Brukerkurs i matematikk; studieplanen lar studenter med sterkt matematikkgrunnlag ta MATH121 Kalkulus i stedet, men den har nesten ingen kandidater fra dette programmet."
+        },
+        {
+          "entryId": "uio_biovitenskap",
+          "emnekoder": [
+            "MAT1050-1",
+            "MAT1110-1"
+          ],
+          "merknad": "Matematikk for anvendelser 1, Kalkulus og Kalkulus og lineær algebra; bare i studieretningen beregningsbiologi, med 3–10 kandidater per år."
+        },
+        {
+          "entryId": "uib_biologi",
+          "emnekoder": [
+            "MAT101-0"
+          ],
+          "merknad": "MAT101 Brukerkurs i matematikk I; studieplanen åpner også for MAT111 Grunnkurs i matematikk I, men det emnet har nesten ingen kandidater fra biologiprogrammet."
+        },
+        {
+          "entryId": "ntnu_biologi",
+          "emnekoder": [
+            "MA0001-1",
+            "MA0002-1"
+          ],
+          "merknad": "Brukerkurs i matematikk A og B."
+        },
+        {
+          "entryId": "uia_biologi",
+          "emnekoder": [
+            "MA-168-1"
+          ],
+          "merknad": "Matematikk for biologer."
+        },
+        {
+          "entryId": "uib_molekylaerbiologi",
+          "emnekoder": [
+            "MAT101-0"
+          ],
+          "merknad": "MAT101 Brukerkurs i matematikk I; MAT111 er alternativet, men har svært få kandidater."
+        }
+      ]
+    },
+    {
+      "id": "statistikk",
+      "label": "Statistikk og studiedesign",
+      "kategori": "Metode",
+      "desc": "Beskrivende statistikk, sannsynlighet, hypotesetesting, regresjon og planlegging av biologiske forsøk.",
+      "note": "Alle åtte programmene har minst ett statistikkemne. NTNU har to (et brukerkurs og et biologispesifikt modelleringsemne) og NMBU to (STAT100 Statistikk og det mer dataanalysenære STIN100, som her er ført under programmering og dataanalyse). Nords emner blander matematikk, statistikk og vitenskapelig metode, og flere kodeversjoner har avløst hverandre i perioden.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_biologi",
+          "emnekoder": [
+            "STAT100-1"
+          ]
+        },
+        {
+          "entryId": "uio_biovitenskap",
+          "emnekoder": [
+            "STK1000-1"
+          ],
+          "merknad": "Innføring i anvendt statistikk."
+        },
+        {
+          "entryId": "uib_biologi",
+          "emnekoder": [
+            "STAT101-0"
+          ],
+          "merknad": "Elementær statistikk."
+        },
+        {
+          "entryId": "ntnu_biologi",
+          "emnekoder": [
+            "ST0103-1",
+            "ST2304-1"
+          ],
+          "merknad": "Brukerkurs i statistikk og Statistisk modellering for biologer/bioteknologer."
+        },
+        {
+          "entryId": "uit_biologi",
+          "emnekoder": [
+            "BIO-2004-1",
+            "BIO-1007-1"
+          ],
+          "merknad": "Studiedesign og dataanalyse i biologi og Kvantitative metoder; UiT har ikke noe eget matematikkemne, så disse dekker også det kvantitative grunnlaget."
+        },
+        {
+          "entryId": "nord_biologi",
+          "emnekoder": [
+            "MA116F-1",
+            "MAT1014-1",
+            "BI224F-1",
+            "MET1006-1"
+          ],
+          "merknad": "MA116F og MAT1014 er kombinerte matematikk- og statistikkemner; BI224F og MET1006 Vitenskapelige metoder er to kodeversjoner av metodeemnet."
+        },
+        {
+          "entryId": "uia_biologi",
+          "emnekoder": [
+            "MA-143-1"
+          ],
+          "merknad": "Biostatistikk."
+        },
+        {
+          "entryId": "uib_molekylaerbiologi",
+          "emnekoder": [
+            "STAT101-0"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "programmering-og-dataanalyse",
+      "label": "Programmering og biologisk dataanalyse",
+      "kategori": "Metode",
+      "desc": "Innføring i programmering og beregningsmodeller anvendt på biologiske data, som regel i Python eller R.",
+      "note": "UiT, Nord og UiA har ikke noe eget programmeringsemne. UiBs INF100 er fellesemnet for hele realfagsfakultetet og har derfor langt flere kandidater enn programmets egne studenter. NTNUs BI1014 Kvantitativ biologi er så nytt at DBH ikke har rapportert karakterer; TDT4110 er koblet i stedet, men bare med 10–15 kandidater fra biologiprogrammet.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_biologi",
+          "emnekoder": [
+            "STIN100-1"
+          ],
+          "merknad": "Biologisk dataanalyse; obligatorisk og programmeringsnært (R)."
+        },
+        {
+          "entryId": "uio_biovitenskap",
+          "emnekoder": [
+            "BIOS1100-1",
+            "BIOS1101-1"
+          ],
+          "merknad": "Innføring i beregningsmodeller for biovitenskap; BIOS1101 erstattet BIOS1100 fra 2025."
+        },
+        {
+          "entryId": "uib_biologi",
+          "emnekoder": [
+            "INF100-0"
+          ],
+          "merknad": "Innføring i programmering (Programmering I)."
+        },
+        {
+          "entryId": "ntnu_biologi",
+          "emnekoder": [
+            "TDT4110-1"
+          ],
+          "merknad": "Informasjonsteknologi, grunnkurs; valgemne med få kandidater fra biologiprogrammet."
+        },
+        {
+          "entryId": "uib_molekylaerbiologi",
+          "emnekoder": [
+            "INF100-0"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cellebiologi-og-molekylaerbiologi",
+      "label": "Cellebiologi og molekylærbiologi",
+      "kategori": "Biologi",
+      "desc": "Cellens oppbygning og funksjon, DNA, genuttrykk, proteinsyntese og molekylærbiologiske metoder.",
+      "note": "Dette er den best sammenlignbare emnetypen i gruppa: alle åtte programmene har minst ett obligatorisk emne. Omfanget varierer fra 7,5 sp (NTNUs enkeltemner) til 15 sp (NTNU BI1001, UiT MBI-1002, Nord BIO1018). NMBUs BIO210 Molekylærbiologi og BIO200 Molekylærgenetikk i eukaryoter er alternativer der studenten må ta minst ett av dem.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_biologi",
+          "emnekoder": [
+            "BIO100-1",
+            "BIO210-1",
+            "BIO200-1"
+          ],
+          "merknad": "Cellebiologi (obligatorisk) samt Molekylærbiologi og Molekylærgenetikk i eukaryoter, der studieplanen krever minst ett av de to."
+        },
+        {
+          "entryId": "uio_biovitenskap",
+          "emnekoder": [
+            "BIOS1110-1",
+            "BIOS2910-1",
+            "BIOS3700-1"
+          ],
+          "merknad": "Celle- og molekylærbiologi, Molekylærbiologi og Cellebiologi 2; de to siste er obligatoriske i studieretningen molekylærbiologi og biomedisin."
+        },
+        {
+          "entryId": "uib_biologi",
+          "emnekoder": [
+            "MOL100-0"
+          ],
+          "merknad": "Innføring i molekylærbiologi; UiB har ikke noe eget cellebiologiemne, cellebiologien ligger i BIO103 (ført under genetikk og evolusjon)."
+        },
+        {
+          "entryId": "ntnu_biologi",
+          "emnekoder": [
+            "BI1001-1",
+            "BI2012-1",
+            "BI2014-1"
+          ],
+          "merknad": "Celle- og molekylærbiologi (15 sp, obligatorisk) samt valgemnene Cellebiologi og Molekylærbiologi."
+        },
+        {
+          "entryId": "uit_biologi",
+          "emnekoder": [
+            "MBI-1002-1"
+          ],
+          "merknad": "Celle- og molekylærbiologi, 15 sp."
+        },
+        {
+          "entryId": "nord_biologi",
+          "emnekoder": [
+            "BI132F-1",
+            "BI210F-1",
+            "BIO2009-1",
+            "BIO1018-1"
+          ],
+          "merknad": "BI132F Biokjemi og cellebiologi og BIO1018 Essensiell cellebiologi og biokjemi dekker også biokjemi; BI210F og BIO2009 er to kodeversjoner av Molekylær cellebiologi."
+        },
+        {
+          "entryId": "uia_biologi",
+          "emnekoder": [
+            "BIO111-1",
+            "ML-208-1"
+          ],
+          "merknad": "Cellebiologi med genetikk og Molekylærbiologi."
+        },
+        {
+          "entryId": "uib_molekylaerbiologi",
+          "emnekoder": [
+            "MOL100-0",
+            "MOL201-0",
+            "MOL102-0",
+            "MOL222-0"
+          ],
+          "merknad": "Innføring i molekylærbiologi, Molekylær cellebiologi og de to eksperimentelle laboratorieemnene; MOL222 avløste MOL221."
+        }
+      ]
+    },
+    {
+      "id": "genetikk-og-evolusjon",
+      "label": "Genetikk og evolusjon",
+      "kategori": "Biologi",
+      "desc": "Arvelære, populasjonsgenetikk, seleksjon, artsdannelse og livets evolusjonshistorie.",
+      "note": "Genetikk og evolusjon er slått sammen til én emnetype fordi fire av programmene underviser dem i det samme emnet (UiO BIOS1140 Evolusjon og genetikk, NTNU BI2017 Genetikk og evolusjon, Nord BI122F/BIO1013 Genetikk og evolusjon, UiT BIO-1010 Evolusjon og adferd). NMBU og UiA holder dem atskilt. UiB Molekylærbiologi har bare genetikkdelen (MOL103) og ingen evolusjonsbiologi; UiB Biologi har evolusjon inne i BIO100 Innføring i evolusjon og økologi, som er ført under økologi, og har bare genetikkdelen som eget emne (BIO103).",
+      "koblinger": [
+        {
+          "entryId": "nmbu_biologi",
+          "emnekoder": [
+            "BIO120-1",
+            "BIO223-1"
+          ],
+          "merknad": "Genetikk og Evolusjonsbiologi, begge 10 sp og obligatoriske."
+        },
+        {
+          "entryId": "uio_biovitenskap",
+          "emnekoder": [
+            "BIOS1140-1"
+          ],
+          "merknad": "Evolusjon og genetikk; obligatorisk i studieretningen biomangfold, økologi og evolusjon."
+        },
+        {
+          "entryId": "uib_biologi",
+          "emnekoder": [
+            "BIO103-0",
+            "BIO210-0"
+          ],
+          "merknad": "BIO103 Cellebiologi og genetikk er den obligatoriske genetikkdelen; BIO210 Evolusjonsbiologi er et valgemne med svært få kandidater."
+        },
+        {
+          "entryId": "ntnu_biologi",
+          "emnekoder": [
+            "BI2017-1"
+          ],
+          "merknad": "Genetikk og evolusjon."
+        },
+        {
+          "entryId": "uit_biologi",
+          "emnekoder": [
+            "BIO-2018-1",
+            "BIO-1008-1",
+            "BIO-1010-1"
+          ],
+          "merknad": "Genetikk, molekylærbiologi og bioinformatikk samt Evolusjon; BIO-1010 Evolusjon og adferd erstattet BIO-1008 fra 2025."
+        },
+        {
+          "entryId": "nord_biologi",
+          "emnekoder": [
+            "BI122F-1",
+            "BIO1013-1"
+          ],
+          "merknad": "To kodeversjoner av Genetikk og evolusjon; BIO1013 er den nye."
+        },
+        {
+          "entryId": "uia_biologi",
+          "emnekoder": [
+            "BIO113-1"
+          ],
+          "merknad": "Evolusjonsbiologi; genetikken ligger i BIO111 Cellebiologi med genetikk, ført under cellebiologi."
+        },
+        {
+          "entryId": "uib_molekylaerbiologi",
+          "emnekoder": [
+            "MOL103-0",
+            "MOL213-0"
+          ],
+          "merknad": "Genstruktur, -funksjon og applikasjoner og Utviklingsgenetikk; ingen evolusjonsbiologi i programmet."
+        }
+      ]
+    },
+    {
+      "id": "mikrobiologi",
+      "label": "Mikrobiologi",
+      "kategori": "Biologi",
+      "desc": "Mikroorganismers oppbygning, vekst, fysiologi og rolle i miljø og næringsliv.",
+      "note": "Bare halvparten av gruppa har mikrobiologi. UiB Biologi, UiA og UiB Molekylærbiologi har ikke noe eget mikrobiologiemne, og UiOs BIOS3910 er et valgemne med 6–25 kandidater per år. Nords emner er akvatisk mikrobiologi og har dermed en marin vinkling NMBUs generelle emner ikke har.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_biologi",
+          "emnekoder": [
+            "BIO130-1",
+            "BIO230-1"
+          ],
+          "merknad": "Generell mikrobiologi I (obligatorisk) og II (valgemne med få kandidater)."
+        },
+        {
+          "entryId": "uio_biovitenskap",
+          "emnekoder": [
+            "BIOS3910-1"
+          ],
+          "merknad": "Mikrobiologi; valgemne."
+        },
+        {
+          "entryId": "ntnu_biologi",
+          "emnekoder": [
+            "TBT4110-1"
+          ],
+          "merknad": "Mikrobiologi; valgemne i fagpakken."
+        },
+        {
+          "entryId": "uit_biologi",
+          "emnekoder": [
+            "BIO-1601-1"
+          ],
+          "merknad": "Innføring i mikrobiologi, 5 sp."
+        },
+        {
+          "entryId": "nord_biologi",
+          "emnekoder": [
+            "BIO2001-1",
+            "BIO2012-1"
+          ],
+          "merknad": "To kodeversjoner av Akvatisk mikrobiologi; marin vinkling."
+        }
+      ]
+    },
+    {
+      "id": "okologi",
+      "label": "Økologi",
+      "kategori": "Biologi",
+      "desc": "Populasjons-, samfunns- og økosystemøkologi, samspillet mellom organismer og miljø, og biologisk mangfold i et økologisk perspektiv.",
+      "note": "Alle sju breddebiologiprogrammene har obligatorisk økologi; UiB Molekylærbiologi har ingen. Omfanget varierer mye: UiTs BIO-2017 er 20 sp og NTNUs BI1003 er 15 sp (og dekker også atferd, evolusjon og bærekraft), mens NMBUs ECOL100 er 5 sp og følges opp av valgemnet ECOL200. Nords BI206F Marinbiologi er tatt med fordi programmet er marint innrettet og emnet dekker marin økologi.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_biologi",
+          "emnekoder": [
+            "ECOL100-1",
+            "ECOL200-1"
+          ],
+          "merknad": "Grunnleggende økologi (5 sp, obligatorisk) og Generell økologi (10 sp, valgemne)."
+        },
+        {
+          "entryId": "uio_biovitenskap",
+          "emnekoder": [
+            "BIOS2100-1"
+          ],
+          "merknad": "Generell økologi; obligatorisk i studieretningen biomangfold, økologi og evolusjon."
+        },
+        {
+          "entryId": "uib_biologi",
+          "emnekoder": [
+            "BIO100-0",
+            "BIO201-0"
+          ],
+          "merknad": "BIO100 Innføring i evolusjon og økologi er obligatorisk; BIO201 Økologi er et valgemne."
+        },
+        {
+          "entryId": "ntnu_biologi",
+          "emnekoder": [
+            "BI1003-1",
+            "BI2033-1",
+            "BI2034-1"
+          ],
+          "merknad": "Økologi, atferd, evolusjon og bærekraft (15 sp, obligatorisk) samt valgemnene Populasjonsøkologi og Samfunnsøkologi og økosystemer."
+        },
+        {
+          "entryId": "uit_biologi",
+          "emnekoder": [
+            "BIO-2017-1",
+            "BIO-1011-1"
+          ],
+          "merknad": "Økologi (20 sp) og Økologi og biologisk mangfold; BIO-1011 er det nye innføringsemnet fra 2025."
+        },
+        {
+          "entryId": "nord_biologi",
+          "emnekoder": [
+            "BI123F-1",
+            "BIO1017-1",
+            "BI230F-1",
+            "BI206F-1"
+          ],
+          "merknad": "To kodeversjoner av Økologi, samt Økologi 2 og Marinbiologi."
+        },
+        {
+          "entryId": "uia_biologi",
+          "emnekoder": [
+            "BIO206-1",
+            "BIO201-1",
+            "BIO207-1"
+          ],
+          "merknad": "Generell økologi (obligatorisk) samt Akvatisk økologi og Marin bevaringsbiologi."
+        }
+      ]
+    },
+    {
+      "id": "organismebiologi-og-artsmangfold",
+      "label": "Organismebiologi og artsmangfold",
+      "kategori": "Biologi",
+      "desc": "Systematikk, morfologi og artskunnskap hos dyr, planter, sopp og alger, med feltkurs.",
+      "note": "Emnetypen er satt opp samlet framfor delt i zoologi og botanikk, fordi UiO (BIOS1150), UiB (BIO101 og BIO102) og NTNU (BI1002) dekker dyr, planter og sopp i de samme emnene. NMBU, UiT, Nord og UiA har derimot atskilte zoologi- og botanikkemner, og der er flere koder koblet. UiB Molekylærbiologi har ingen emner av denne typen.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_biologi",
+          "emnekoder": [
+            "ZOOL100-1",
+            "BOT100-1",
+            "ZOOL210-1",
+            "BIO140-1"
+          ],
+          "merknad": "Generell zoologi og Plantediversitet (med felles feltkurs i juniblokk), innføringsemnet BIO140 og valgemnet ZOOL210 Virveldyr."
+        },
+        {
+          "entryId": "uio_biovitenskap",
+          "emnekoder": [
+            "BIOS1150-1",
+            "BIOS2210-1"
+          ],
+          "merknad": "Biologisk mangfold (obligatorisk) og valgemnet Terrestrisk zoologi."
+        },
+        {
+          "entryId": "uib_biologi",
+          "emnekoder": [
+            "BIO101-0",
+            "BIO102-0"
+          ],
+          "merknad": "Organismebiologi 1 og 2; til sammen 20 sp og gruppas største omfang sammen med NTNUs."
+        },
+        {
+          "entryId": "ntnu_biologi",
+          "emnekoder": [
+            "BI1002-1",
+            "BI2001-1",
+            "BI2043-1"
+          ],
+          "merknad": "Faunistikk og floristikk (15 sp, med obligatoriske ekskursjoner) samt Biosystematikk og biomangfold og Biodiversitet og bevaringsbiologi."
+        },
+        {
+          "entryId": "uit_biologi",
+          "emnekoder": [
+            "BIO-1104-1",
+            "BIO-1103-1",
+            "BIO-1105-1"
+          ],
+          "merknad": "Zoologi, Botanikk og Innføring i biologi; de to første er erstattet av BIO-1012 i den nye studieplanen, som ennå ikke har rapporterte karakterer."
+        },
+        {
+          "entryId": "nord_biologi",
+          "emnekoder": [
+            "BIO1015-1",
+            "BIO1016-1",
+            "BIO1019-1",
+            "BIO1001-1",
+            "BIO1000-1"
+          ],
+          "merknad": "Biologisk mangfold I–III (protister og planter, invertebrater, vertebrater) i flere kodeversjoner."
+        },
+        {
+          "entryId": "uia_biologi",
+          "emnekoder": [
+            "BIO102-1",
+            "BIO103-1",
+            "BIO112-1"
+          ],
+          "merknad": "Botanikk, Zoologi og Introduksjon til biologien."
+        }
+      ]
+    },
+    {
+      "id": "fysiologi",
+      "label": "Fysiologi",
+      "kategori": "Biologi",
+      "desc": "Organismenes funksjon: organsystemer, stoffskifte, regulering og tilpasning hos dyr og planter.",
+      "note": "Alle sju breddebiologiprogrammene har obligatorisk fysiologi, men innholdet spriker. NTNU og UiT har både dyre- og plantefysiologi som egne emner, NMBU har dyrefysiologi (HFX201) og plantefysiologi (BOT130) hver for seg, mens UiO (BIOS1120), UiB (BIO104 Komparativ fysiologi) og Nord (BI105F Zoofysiologi) bare har dyrefysiologi. UiA har i tillegg humanfysiologi og anatomi. UiB Molekylærbiologi har ingen fysiologiemner.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_biologi",
+          "emnekoder": [
+            "HFX201-1",
+            "BOT130-1"
+          ],
+          "merknad": "Fysiologi (dyrefysiologi, 10 sp) og Grunnleggende plantefysiologi (5 sp)."
+        },
+        {
+          "entryId": "uio_biovitenskap",
+          "emnekoder": [
+            "BIOS1120-1",
+            "BIOS3800-1"
+          ],
+          "merknad": "Fysiologi (obligatorisk) og valgemnet Humanfysiologi."
+        },
+        {
+          "entryId": "uib_biologi",
+          "emnekoder": [
+            "BIO104-0"
+          ],
+          "merknad": "Komparativ fysiologi; UiB har ikke noe eget plantefysiologiemne."
+        },
+        {
+          "entryId": "ntnu_biologi",
+          "emnekoder": [
+            "BI1006-1",
+            "BI1007-1",
+            "BI2024-1"
+          ],
+          "merknad": "Dyrenes struktur og funksjon og Plantenes struktur og funksjon (begge obligatoriske) samt Menneskets anatomi og fysiologi."
+        },
+        {
+          "entryId": "uit_biologi",
+          "emnekoder": [
+            "BIO-2002-1",
+            "BIO-2016-1"
+          ],
+          "merknad": "Dyrefysiologi og Plantefysiologi."
+        },
+        {
+          "entryId": "nord_biologi",
+          "emnekoder": [
+            "BI105F-1"
+          ],
+          "merknad": "Zoofysiologi; erstattes av BIO1026 Zoofysiologi og embryologi, som ennå ikke har rapporterte karakterer."
+        },
+        {
+          "entryId": "uia_biologi",
+          "emnekoder": [
+            "BIO204-1",
+            "BIO104-1"
+          ],
+          "merknad": "Zoofysiologi og Human fysiologi og anatomi."
+        }
+      ]
+    },
+    {
+      "id": "exphil",
+      "label": "Examen philosophicum",
+      "kategori": "Ex.phil",
+      "desc": "Fellesemnet i vitenskapsfilosofi, etikk og argumentasjonslære.",
+      "note": "Alle åtte programmene har ex.phil, men NMBU og UiB tilbyr to eksamensformer av samme emne (seminarversjon og skoleeksamen), og NMBU har i tillegg en engelsk versjon. Nords FIL1000 har ikke rapporterte karakterer etter 2023.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_biologi",
+          "emnekoder": [
+            "PHI101-1",
+            "PHI100-1"
+          ],
+          "merknad": "PHI101 seminarversjon er hovedvalget i biologibacheloren; PHI100 er skoleeksamensversjonen av samme emne."
+        },
+        {
+          "entryId": "uio_biovitenskap",
+          "emnekoder": [
+            "EXPHIL03-1"
+          ]
+        },
+        {
+          "entryId": "uib_biologi",
+          "emnekoder": [
+            "EXPHIL-MNSEM-0",
+            "EXPHIL-MNEKS-0"
+          ],
+          "merknad": "Seminarmodell og skoleeksamen av samme emne."
+        },
+        {
+          "entryId": "ntnu_biologi",
+          "emnekoder": [
+            "EXPH0300-1"
+          ],
+          "merknad": "Examen philosophicum for naturvitenskap og teknologi."
+        },
+        {
+          "entryId": "uit_biologi",
+          "emnekoder": [
+            "FIL-0700-1"
+          ],
+          "merknad": "Examen philosophicum, Tromsøvarianten."
+        },
+        {
+          "entryId": "nord_biologi",
+          "emnekoder": [
+            "FIL1000-1"
+          ],
+          "merknad": "Ingen rapporterte karakterer etter 2023."
+        },
+        {
+          "entryId": "uia_biologi",
+          "emnekoder": [
+            "EX-100-1"
+          ]
+        },
+        {
+          "entryId": "uib_molekylaerbiologi",
+          "emnekoder": [
+            "EXPHIL-MNSEM-0",
+            "EXPHIL-MNEKS-0"
+          ]
+        }
+      ]
+    }
+  ]
+}

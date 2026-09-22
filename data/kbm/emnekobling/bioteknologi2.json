@@ -1,0 +1,75 @@
+{
+  "groupId": "bioteknologi2",
+  "hentet": "2026-09-23",
+  "note": "Toårige mastere har ingen felles grunnpakke slik femårige løp har: nesten alt utenom masteroppgaven er fordypnings- eller valgemner, og de tre programmene har ulike profiler. NMBUs master i bioteknologi er bredest, med tyngdepunkt i genomikk, mikrobiologi og proteinkjemi; UiBs master i molekylærbiologi er smalere og sterkt laboratorierettet, med forsøksdyrlære som en stor obligatorisk del; NTNUs MSBIOTECH er engelskspråklig og har tyngdepunkt i molekylærgenetikk og industriell bioteknologi. Sammenligningen er derfor smalere enn i bachelorgruppene, og det er bare grunnlag for seks emnetyper. Den er sterkest i masteroppgaven, proteinkjemi/strukturbiologi og genomikk, og svakest i metodefagene, der UiBs forsøksdyrlærekurs (LAS301, LAS302, LAS303) og NMBUs statistikk- og R-emner (STIN300, STAT340, STAT210) ikke har motstykker hos de andre og derfor ikke er koblet. Det samme gjelder NMBUs masterforberedende emner BIO305 og MTH300, NTNUs BI3018 Patentering og teknologietablering og de HMS-kursene alle tre har. Omfanget er også ulikt: NMBUs og UiBs emner er 5-10 sp, NTNUs 7,5 sp, og masteroppgaven er 60 sp ved alle tre.",
+  "emnetyper": [
+    {
+      "id": "oppgave",
+      "label": "Masteroppgave",
+      "kategori": "Oppgave",
+      "desc": "Det selvstendige avsluttende forskningsarbeidet i graden, 60 studiepoeng.",
+      "note": "Alle tre har masteroppgave på 60 sp, og dette er den best rapporterte koblingen i gruppa. NTNU har to emnekoder i perioden for oppgaven ved Institutt for bioteknologi og matvitenskap; BIOTBT3901 er koden som brukes på den toårige masteren, mens BIOTBT3900 bare har enkeltkandidater her og ellers hører til det femårige løpet.",
+      "koblinger": [
+        { "entryId": "nmbu_bioteknologi2", "emnekoder": ["M60-BIOTEK-1"], "merknad": "Masteroppgave, 60 sp; jevnt rundt 25-30 kandidater i året." },
+        { "entryId": "uib_molekylarbiologi2", "emnekoder": ["MOL399-0"], "merknad": "Masteroppgave i molekylærbiologi, 60 sp." },
+        { "entryId": "ntnu_msbiotech", "emnekoder": ["BIOTBT3901-1", "BIOTBT3900-1"], "merknad": "Masteroppgave i bioteknologi ved Institutt for bioteknologi og matvitenskap; to kodeversjoner." }
+      ]
+    },
+    {
+      "id": "proteinkjemi-og-strukturbiologi",
+      "label": "Proteinkjemi og strukturbiologi",
+      "kategori": "Kjemi",
+      "desc": "Proteiners struktur, funksjon og karakterisering, og biopolymerenes egenskaper.",
+      "note": "NMBUs KJB310 Proteinkjemi og UiBs MOL310 Strukturell molekylærbiologi er begge obligatoriske fordypningsemner og dekker mye av det samme. NTNUs TBT4135 Biopolymerer er en løsere parallell - den legger mer vekt på polysakkarider og industrielle biopolymerer enn på proteinstruktur - og er nytt med rapporterte kandidattall først fra 2024.",
+      "koblinger": [
+        { "entryId": "nmbu_bioteknologi2", "emnekoder": ["KJB310-1"], "merknad": "Proteinkjemi, 10 sp; rundt 20 kandidater i året." },
+        { "entryId": "uib_molekylarbiologi2", "emnekoder": ["MOL310-0"], "merknad": "Strukturell molekylærbiologi, 10 sp, obligatorisk." },
+        { "entryId": "ntnu_msbiotech", "emnekoder": ["TBT4135-1"], "merknad": "Biopolymerer; svakere parallell, og bare rapportert fra 2024." }
+      ]
+    },
+    {
+      "id": "eksperimentell-molekylaerbiologi",
+      "label": "Eksperimentell molekylærbiologi og laboratoriemetoder",
+      "kategori": "Biologi",
+      "desc": "Praktisk laboratoriearbeid med molekylærbiologiske og mikrobiologiske metoder på masternivå.",
+      "note": "NMBU og UiB har begge et stort praktisk metodeemne, men vinklingen er ulik: NMBUs BIO332 er mikrobiologisk, UiBs MOL300 er en bred praktisk pakke på 20 sp som er obligatorisk for alle. NTNU har ikke et tilsvarende laboratorieemne på den toårige masteren og er ikke koblet; UiBs MOL220 Teknikker, modellsystemer og aktuelle forskningstemaer er tatt med som den teoretiske metodedelen.",
+      "koblinger": [
+        { "entryId": "nmbu_bioteknologi2", "emnekoder": ["BIO332-1"], "merknad": "Eksperimentell molekylær mikrobiologi, 10 sp." },
+        { "entryId": "uib_molekylarbiologi2", "emnekoder": ["MOL300-0", "MOL220-0"], "merknad": "Praktisk biokjemi og molekylærbiologi (20 sp, obligatorisk) og Teknikker, modellsystemer og aktuelle forskningstemaer." }
+      ]
+    },
+    {
+      "id": "genomikk-og-molekylaergenetikk",
+      "label": "Genomikk og molekylærgenetikk",
+      "kategori": "Biologi",
+      "desc": "Genomanalyse, funksjonell genomikk, genregulering og molekylærgenetiske metoder.",
+      "note": "NMBU har klart størst omfang med tre emner i genomikkfamilien, mens NTNU har ett samlet molekylærgenetikkemne. UiBs MOL213 Utviklingsgenetikk er et lite valgemne med under fem kandidater i året og er ikke koblet; UiBs masterløp dekker genetikken inne i MOL300 og MOL310.",
+      "koblinger": [
+        { "entryId": "nmbu_bioteknologi2", "emnekoder": ["BIO322-1", "BIN315-1", "BIN310-1"], "merknad": "Avanserte emner i genomikk, Utvalgte emner i funksjonell genomikk og Utvalgte emner i mikrobiell genomikk." },
+        { "entryId": "ntnu_msbiotech", "emnekoder": ["TBT4146-1"], "merknad": "Molekylærgenetikk, 7,5 sp; programmets nest største emne." }
+      ]
+    },
+    {
+      "id": "avansert-cellebiologi",
+      "label": "Avansert cellebiologi",
+      "kategori": "Biologi",
+      "desc": "Cellulære prosesser på masternivå: signalveier, cellesyklus, transport og cellulær regulering.",
+      "note": "NMBUs BIO301 og NTNUs BI3016 er de to direkte parallellene. NTNUs emne har ingen rapporterte kandidater i 2025, mens NMBUs er et valgemne som bare tilbys enkelte år (ingen kandidater i 2022 og 2023). UiB har ikke et eget avansert cellebiologiemne på masteren.",
+      "koblinger": [
+        { "entryId": "nmbu_bioteknologi2", "emnekoder": ["BIO301-1"], "merknad": "Avansert cellebiologi, 10 sp; tilbys ikke hvert år." },
+        { "entryId": "ntnu_msbiotech", "emnekoder": ["BI3016-1"], "merknad": "Molekylær cellebiologi; ingen rapporterte kandidater i 2025." }
+      ]
+    },
+    {
+      "id": "videregaaende-bioteknologi",
+      "label": "Videregående og anvendt bioteknologi",
+      "kategori": "Biologi",
+      "desc": "Bioteknologiens metoder og industrielle anvendelser på masternivå: genredigering, biokatalyse, bioraffinering og bioprosesser.",
+      "note": "NTNUs BT3220 er det samlende fordypningsemnet i industriell bioteknologi og deles med det femårige løpet i Trondheim. NMBU har stoffet fordelt på to mindre emner, der CRISPR-emnet er det best rapporterte. UiBs MOL232 Innovasjon i industriell bioteknologi har bare åtte kandidater i ett enkelt år og er ikke koblet.",
+      "koblinger": [
+        { "entryId": "nmbu_bioteknologi2", "emnekoder": ["BIO325-1", "BIO335-1"], "merknad": "CRISPR Genome Editing (10 sp) og Anvendt biokatalyse og bioraffinering (5 sp)." },
+        { "entryId": "ntnu_msbiotech", "emnekoder": ["BT3220-1"], "merknad": "Videregående bioteknologi, 7,5 sp; deles med det femårige bioteknologiløpet." }
+      ]
+    }
+  ]
+}

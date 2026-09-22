@@ -1,0 +1,161 @@
+{
+  "programnavn": "Klinisk ernæring (master 5 år)",
+  "institusjon": "Universitetet i Oslo",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://www.uio.no/studier/program/ernering-5aar/",
+    "https://www.uio.no/studier/program/ernering-5aar/oppbygging/"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 300,
+  "obligatoriske": [
+    {
+      "emnekode": "ERN1010",
+      "emnenavn": "Innføring i klinisk ernæring",
+      "studiepoeng": 30,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "EXPHIL03",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ERN1100",
+      "emnenavn": "Ernæringsstudiet, Modul 1",
+      "studiepoeng": 50,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Spenner over 2. og 3. semester ifølge kilden (oppgitt samlet til 50 sp ved 3. semester, uten egen delt sp-verdi for 2. semester-delen); ført opp i 2. semester (vår, år 1) som startpunkt."
+    },
+    {
+      "emnekode": "ERN2200R",
+      "emnenavn": "Fysiologi, ernæring og medisinsk biokjemi",
+      "studiepoeng": 15,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Kilden oppgir ikke eksakt sp-fordeling mellom ERN2200R og ERN2300 i 4. semester (kun at de to til sammen utgjør semesterets 30 sp); delt likt (15/15) her som beste anslag - bør verifiseres."
+    },
+    {
+      "emnekode": "ERN2300",
+      "emnenavn": "Mikronæringsstoffer og fremmedstoffer - fra mekanismer til klinikk",
+      "studiepoeng": 15,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Se merknad på ERN2200R om usikker sp-fordeling."
+    },
+    {
+      "emnekode": "ERN3000",
+      "emnenavn": "Metoder for å kartlegge kosthold og energiforbruk",
+      "studiepoeng": 7,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ERN3010",
+      "emnenavn": "Metabolisme og livsstilssykdommer",
+      "studiepoeng": 23,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ERN3020",
+      "emnenavn": "Laboratoriearbeid i ernæringsforskning",
+      "studiepoeng": 6,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ERN3030",
+      "emnenavn": "Forebyggende ernæring - fra individ til samfunnsnivå",
+      "studiepoeng": 24,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ERN4000",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 6,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ERN4010",
+      "emnenavn": "Ernæringsepidemiologi",
+      "studiepoeng": 6,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ERN4020",
+      "emnenavn": "Ernæringsforskning",
+      "studiepoeng": 8,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ERN4030",
+      "emnenavn": "Avansert klinisk ernæring 1",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ERN4040",
+      "emnenavn": "Avansert klinisk ernæring 2",
+      "studiepoeng": 21,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ERN4050",
+      "emnenavn": "Klinisk praksis",
+      "studiepoeng": 9,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ERN4900",
+      "emnenavn": "Masteroppgave i ernæring",
+      "studiepoeng": 60,
+      "aar": 5,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "60 sp totalt, fordelt over 9. og 10. semester (5. år)."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Gjelder studenter som startet høsten 2021 eller senere. Programmet er et 5-årig integrert masterstudium der samtlige emner er obligatoriske (ingen valgfrie emner eller egne studieretninger er beskrevet i kilden). ERN1100 Ernæringsstudiet Modul 1 strekker seg over 2. og 3. semester; kilden oppgir kun én samlet sp-verdi (50 sp, nevnt ved 3. semester) uten å dele denne mellom de to semestrene, så emnet er ført opp med hele 50 sp i 2. semester (vår, år 1) som et forenklet valg. Fordelingen av sp mellom ERN2200R og ERN2300 (4. semester, til sammen 30 sp) er heller ikke eksplisitt oppgitt i kilden og er delt likt (15/15) som beste anslag. Studiet kan kombineres med bachelorprogrammet i ernæring (jf. nmbu- og uib/uit-bachelorene i dette datasettet), og oppfyller sammen med et eventuelt forkurs de nasjonale retningslinjene for klinisk ernæringsfysiolog-utdanning.",
+  "entryId": "uio_klinisk_ernaring"
+}

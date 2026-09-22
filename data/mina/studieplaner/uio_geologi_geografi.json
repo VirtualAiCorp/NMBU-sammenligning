@@ -1,0 +1,183 @@
+{
+  "entryId": "uio_geologi_geografi",
+  "programnavn": "Geologi og geografi (bachelor)",
+  "institusjon": "Universitetet i Oslo",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.uio.no/studier/program/geologi/",
+    "https://www.uio.no/studier/program/geologi/oppbygging/",
+    "https://www.uio.no/studier/program/geologi/studieretninger/geografi/oppbygging/",
+    "https://www.uio.no/studier/program/geologi/studieretninger/geologi/oppbygging/"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 80,
+  "obligatoriske": [
+    {
+      "emnekode": "GEO1100",
+      "emnenavn": "Jordens utvikling",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "I begynnelsen av 1. semester kreves i tillegg obligatoriske, studiepoenggivende HMS-emner (HMS0501, HMS0502, HMS0503, HMS0504, HMS0507, og HMS0505 for enkelte emner); disse gir 0 sp og er ikke ført som egne linjer."
+    },
+    {
+      "emnekode": "IN1900",
+      "emnenavn": "Introduksjon i programmering for naturvitenskapelige anvendelser",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen gir valget mellom IN1900 og IN-GEO1900 (Introduksjon i programmering for geofagstudenter)."
+    },
+    {
+      "emnekode": "MAT1050",
+      "emnenavn": "Matematikk for anvendelser 1",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen gir valget mellom MAT1050 og MAT1100 (Kalkulus); MAT1100 er et alternativ for studenter med R2-bakgrunn."
+    },
+    {
+      "emnekode": "GEO1110",
+      "emnenavn": "Jordens indre og ytre prosesser",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS1001",
+      "emnenavn": "Innføring i fysikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen gir valget mellom FYS1001 og FYS1100 (Mekanikk og modellering); FYS1100 er et alternativ for studenter med R2-bakgrunn."
+    },
+    {
+      "emnekode": "MAT1060",
+      "emnenavn": "Matematikk for anvendelser 2",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen gir valget mellom MAT1060 og MAT1110 (Kalkulus og lineær algebra); MAT1110 er et alternativ for studenter med R2-bakgrunn."
+    },
+    {
+      "emnekode": "GEO2120",
+      "emnenavn": "Sedimentologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "EXPHIL03",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Plassert i 5. semester (3. år høst) i standard studieløp; på studieretning geologi kan EXPHIL03 og fordypningsemnet i 5./6. semester bytte plass."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Geografi",
+      "emner": [
+        {
+          "emnekode": "GEO2210",
+          "emnenavn": "Geomorfologi og glasiologi",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "GEO3460",
+          "emnenavn": "Geografiske informasjonssystemer (GIS) og geografisk datainnsamling",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "GEO3000",
+          "emnenavn": "Bacheloroppgave i geofag",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Geologi",
+      "emner": [
+        {
+          "emnekode": "STK1000",
+          "emnenavn": "Innføring i anvendt statistikk",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "STK1100 godkjennes som erstatning (videregående kurs, høyere krav til forkunnskaper, undervises om våren)."
+        },
+        {
+          "emnekode": "KJM1101",
+          "emnenavn": "Generell kjemi",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "GEO2110",
+          "emnenavn": "Mineralogi",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "GEO2130",
+          "emnenavn": "Strukturgeologi",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "GEO2140",
+          "emnenavn": "Faste jords geofysikk",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "GEO3010",
+          "emnenavn": "Felt- og kartkurs",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er UiOs oppbygging-side for Geologi og geografi (bachelor) (uio.no/studier/program/geologi/oppbygging/, sist endret 25.3.2026), samt de to studieretningenes egne oppbygging-sider for Geografi og Geologi. Programmet er 180 sp: obligatoriske fellesemner (80 sp, felles for begge studieretninger, obligatoriske-listen over) + obligatoriske fordypningsemner (60 sp for geografi, 80 sp for geologi) + utviklingssemester/frie emner (40 sp for geografi, 20 sp for geologi). Studieplanen viser gjeldende studieløp for studenter tatt opp høsten 2022 eller senere (en eldre variant for kull 2021 og tidligere, med andre sp-tall og nedlagte emner som FYS-MEK1110/MAT-IN1105, er ikke brukt her). For Geografi er GEO2210, GEO3460 og GEO3000 (ført under spesialiseringer, 30 sp) obligatoriske for alle på retningen; i tillegg kreves 10 sp valgt fra GEO2330/GEO3032/GEO3515 og 20 sp valgt (to av tre) fra STK1000/MAT1120/KJM1101 — disse to valgpoolene (30 sp) er ikke ført som faste emner. For Geologi er STK1000, KJM1101, GEO2110, GEO2130, GEO2140 og GEO3010 (ført under spesialiseringer, 60 sp) obligatoriske, pluss et valg mellom GEO2150 (Petrologi og geokjemi) og GEO2160 (Paleontologi og paleoøkologi) (10 sp) og et fritt valg av ett fordypningsemne (10 sp) fra en lengre liste (GEO2150/GEO2160, GEO3000, GEO3030, GEO3032, GEO3100, GEO3211, GEO3240) — disse 20 sp er ikke ført som faste emner, i tråd med regelen om at obligatoriske valg mellom alternativer føres i merknad. Alle fysikk/matematikk-alternativer merket med stjerne (*) i kilden er for studenter med R2-bakgrunn. Emnenavn, koder og studiepoeng er hentet direkte fra de tre oppbygging-sidene."
+}

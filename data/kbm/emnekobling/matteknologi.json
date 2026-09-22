@@ -1,0 +1,157 @@
+{
+  "groupId": "matteknologi",
+  "hentet": "2026-09-23",
+  "note": "Gruppa har bare én reell konkurrent: NTNUs bachelor i matvitenskap, teknologi og bærekraft, som er den eneste andre matvitenskapsutdanningen på bachelornivå i Norge. Sammenligningen mot NTNU er til gjengjeld usedvanlig god - de to programmene har nesten den samme kjernen i mikrobiologi, mattrygghet, matteknologi, prosessteknologi og sensorikk. UiTs «Fiskeri- og havbruksvitenskap» ligger i samme næringskjede, men har tyngdepunkt i havbruk, fiskeri og næringsøkonomi, og er bare koblet der det finnes et reelt faglig motstykke (matematikk, statistikk, kjemi, biokjemi, sjømatproduksjon og innføringsemnet). Merk at de tre NMBU-radene i KBM-materialet - «Mat, teknologi og helse» og de to radene for «Matvitenskap og ernæring» - alle rapporteres under den samme DBH-programkoden B-MAT og derfor har identiske emnelister; koblingene er dermed like for nmbu_mat_teknologi_helse og nmbu_matvitenskap_ernaring_hist. NMBU-tallene er små og stort sett bare rapportert for 2021-2023, fordi det gamle programmet ble avviklet og det nye hadde første opptak i 2025; NMBU-siden er derfor vurdert mot summen for 2021-2025 og ikke mot siste år. Fire emnetyper lar seg ikke sette opp: NMBU har ingen rapporterte kandidater på ex.phil, ingen bacheloroppgave med egen emnekode, ingen programmerings- eller IT-emner (der NTNU har TDT4110/TDT4111), og MVI202 Matkjemi har ingen rapporterte kandidater, slik at NTNUs to store matkjemiemner (MATV1009 Matkjemi 1 og MATV2001 Matkjemi 2) står uten motstykke. NMBUs cellebiologi og genetikk (BIO100, BIO120) har ingen parallell hos NTNU i det hele tatt, og er bare grovt koblet mot UiTs marinbiologiske grunnemne.",
+  "emnetyper": [
+    {
+      "id": "matematikk",
+      "label": "Matematikk",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Innføringsemne i matematikk tilpasset biofag: funksjoner, derivasjon, integrasjon og enkle modeller.",
+      "note": "Alle tre bruker brukerkurs eller anvendelsesrettede emner, så nivået er jevnt. NMBUs MATH100 har bare tre rapporterte kandidater på dette programmet, siden det nye løpet startet i 2025. UiT har tre kodeversjoner i perioden, sist BED-1301 Matematikk for økonomer fra 2025, som viser at UiT-programmet har dreid mot næringsøkonomi.",
+      "koblinger": [
+        { "entryId": "nmbu_mat_teknologi_helse", "emnekoder": ["MATH100-1"], "merknad": "Brukerkurs i matematikk; svært få rapporterte kandidater." },
+        { "entryId": "nmbu_matvitenskap_ernaring_hist", "emnekoder": ["MATH100-1"], "merknad": "Samme emne og samme tall som raden over (felles DBH-programkode B-MAT)." },
+        { "entryId": "ntnu_matvitenskap", "emnekoder": ["MA0001-1"], "merknad": "Brukerkurs i matematikk A." },
+        { "entryId": "uit_fiskeri_havbruk", "emnekoder": ["MAT-0001-1", "FSK-1102-1", "BED-1301-1"], "merknad": "Brukerkurs i matematikk, det tidligere Matematikk og metode og det nye Matematikk for økonomer." }
+      ]
+    },
+    {
+      "id": "statistikk",
+      "label": "Statistikk",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Beskrivende statistikk, hypotesetesting, regresjon og forsøksplanlegging for matfaglige data.",
+      "note": "NTNU har statistikk og sensoriske metoder i ett emne, noe som gjør at MATV2002 også dekker en del av det NMBU har i MVI240 Sensorisk analyse. UiTs emne kombinerer statistikk med vitenskapelig metode.",
+      "koblinger": [
+        { "entryId": "nmbu_mat_teknologi_helse", "emnekoder": ["STAT100-1"], "merknad": "Statistikk, 10 sp, obligatorisk i 1. år." },
+        { "entryId": "nmbu_matvitenskap_ernaring_hist", "emnekoder": ["STAT100-1"], "merknad": "Samme emne og samme tall som raden over." },
+        { "entryId": "ntnu_matvitenskap", "emnekoder": ["MATV2002-1"], "merknad": "Statistikk og sensoriske metoder; dekker også sensorikk." },
+        { "entryId": "uit_fiskeri_havbruk", "emnekoder": ["FSK-1121-1"], "merknad": "Statistikk og metode for fiskeri- og havbruksvitenskap, 5 sp." }
+      ]
+    },
+    {
+      "id": "innforingsemne",
+      "label": "Innføringsemne i mat og matproduksjon",
+      "kategori": "Ernæring og mat",
+      "desc": "Innføring i matsystemet: råvarer, foredling, verdikjede, bærekraft og fagets samfunnsrolle.",
+      "note": "Alle tre programmene har et bredt innføringsemne i første studieår. NMBUs MVI100 er et lite augustblokkemne på 5 sp, mens NTNUs MATV1012 og UiTs FSK-1100 er fullverdige 7,5-10 sp-emner med langt flere kandidater. NMBUs HFX133 Utfordringer for framtidas matproduksjon er tatt med fordi den dekker bærekraftsdelen.",
+      "koblinger": [
+        { "entryId": "nmbu_mat_teknologi_helse", "emnekoder": ["MVI100-2", "HFX133-1"], "merknad": "Introduksjon til mat, teknologi og helse og Utfordringer for framtidas matproduksjon." },
+        { "entryId": "nmbu_matvitenskap_ernaring_hist", "emnekoder": ["MVI100-2", "HFX133-1"], "merknad": "Samme emner og samme tall som raden over." },
+        { "entryId": "ntnu_matvitenskap", "emnekoder": ["MATV1012-1"], "merknad": "Mat, foredlingsteknologi og bærekraft." },
+        { "entryId": "uit_fiskeri_havbruk", "emnekoder": ["FSK-1100-1"], "merknad": "Fiskeri- og havbruksvitenskap; bredt innføringsemne på 10 sp." }
+      ]
+    },
+    {
+      "id": "generell-og-organisk-kjemi",
+      "label": "Generell og organisk kjemi",
+      "kategori": "Kjemi",
+      "desc": "Grunnleggende kjemi: binding, støkiometri, likevekt og syre-base, samt organiske forbindelsers struktur og reaksjoner.",
+      "note": "NMBU er det eneste programmet med et eget organisk kjemiemne på 10 sp; NTNU og UiT har alt samlet i ett innføringsemne. UiT har to kodeversjoner i perioden, der FSK-1101 Kjemi for fiskeri- og havbruksvitenskap (5 sp) ble avløst av det bredere KJE-1001 (10 sp) fra 2023.",
+      "koblinger": [
+        { "entryId": "nmbu_mat_teknologi_helse", "emnekoder": ["KJM100-1", "KJM110-1"], "merknad": "Generell kjemi og Organisk kjemi, begge 10 sp." },
+        { "entryId": "nmbu_matvitenskap_ernaring_hist", "emnekoder": ["KJM100-1", "KJM110-1"], "merknad": "Samme emner og samme tall som raden over." },
+        { "entryId": "ntnu_matvitenskap", "emnekoder": ["TKJE1006-1"], "merknad": "Generell kjemi, 7,5 sp; NTNU har ikke eget organisk kjemiemne på dette programmet." },
+        { "entryId": "uit_fiskeri_havbruk", "emnekoder": ["KJE-1001-1", "FSK-1101-1"], "merknad": "Introduksjon til kjemi og kjemisk biologi, og den eldre varianten Kjemi for fiskeri- og havbruksvitenskap." }
+      ]
+    },
+    {
+      "id": "biokjemi",
+      "label": "Biokjemi",
+      "kategori": "Kjemi",
+      "desc": "Biomolekylers struktur og funksjon: proteiner, enzymer, karbohydrater, lipider og metabolisme.",
+      "note": "NMBU har et teoriemne og et eksperimentelt emne på til sammen 20 sp, NTNU ett emne på 7,5 sp. UiTs FSK-1122 dekker biokjemi og mikrobiologi i samme emne og er derfor bare delvis sammenlignbart.",
+      "koblinger": [
+        { "entryId": "nmbu_mat_teknologi_helse", "emnekoder": ["KJB200-1", "KJB210-1"], "merknad": "Biokjemi og Eksperimentell og anvendt biokjemi." },
+        { "entryId": "nmbu_matvitenskap_ernaring_hist", "emnekoder": ["KJB200-1", "KJB210-1"], "merknad": "Samme emner og samme tall som raden over." },
+        { "entryId": "ntnu_matvitenskap", "emnekoder": ["TBT4102-1"], "merknad": "Biokjemi 1; programmets største emne målt i kandidater." },
+        { "entryId": "uit_fiskeri_havbruk", "emnekoder": ["FSK-1122-1", "FSK-2052-1"], "merknad": "Biokjemi og mikrobiologi for fiskeri- og havbruksvitenskap, og Biokjemi, integrert metabolisme og forringelse av fisk." }
+      ]
+    },
+    {
+      "id": "mikrobiologi",
+      "label": "Mikrobiologi og matmikrobiologi",
+      "kategori": "Biologi",
+      "desc": "Mikroorganismers oppbygning og vekst, og deres rolle i produksjon, fermentering og forringelse av mat.",
+      "note": "Svært god kobling: begge programmene har både et generelt mikrobiologiemne og et rettet mot næringsmidler. NTNU har tre kodeversjoner i perioden fordi emnene ble omorganisert i 2024. UiT dekker mikrobiologi inne i FSK-1122, som er koblet under biokjemi, og er derfor ikke koblet her.",
+      "koblinger": [
+        { "entryId": "nmbu_mat_teknologi_helse", "emnekoder": ["BIO130-1", "MVI220-1"], "merknad": "Generell mikrobiologi I (5 sp) og Næringsmiddelmikrobiologi (10 sp)." },
+        { "entryId": "nmbu_matvitenskap_ernaring_hist", "emnekoder": ["BIO130-1", "MVI220-1"], "merknad": "Samme emner og samme tall som raden over." },
+        { "entryId": "ntnu_matvitenskap", "emnekoder": ["MATV1007-1", "MATV1008-1", "TMAT3001-A"], "merknad": "Mikrobiologi og bioteknologi, Mikrobiologi og mattrygghet (eldre kode) og Matmikrobiologi." }
+      ]
+    },
+    {
+      "id": "mattrygghet-og-kvalitet",
+      "label": "Mattrygghet og kvalitetsledelse",
+      "kategori": "Ernæring og mat",
+      "desc": "Hygiene, farevurdering, HACCP, regelverk og kvalitetsstyring i matproduksjon.",
+      "note": "NMBUs MVI230 er et lite emne på 5 sp, mens NTNUs tilsvarende emne er på 7,5 sp og i tillegg dekker kvalitetsledelse. UiT har mattrygghet inne i sjømatproduksjonsemnene og er ikke koblet her.",
+      "koblinger": [
+        { "entryId": "nmbu_mat_teknologi_helse", "emnekoder": ["MVI230-1"], "merknad": "Matvaretrygghet og -hygiene, 5 sp." },
+        { "entryId": "nmbu_matvitenskap_ernaring_hist", "emnekoder": ["MVI230-1"], "merknad": "Samme emne og samme tall som raden over." },
+        { "entryId": "ntnu_matvitenskap", "emnekoder": ["MATV3003-1", "TMAT3003-A"], "merknad": "Mattrygghet og kvalitetsledelse; to kodeversjoner av samme emne." }
+      ]
+    },
+    {
+      "id": "matteknologi-raavarer-og-produkter",
+      "label": "Matteknologi: råvarer og produkter",
+      "kategori": "Ernæring og mat",
+      "desc": "Råvarenes egenskaper og foredlingen av dem til ferdige produkter - melk, kjøtt, fisk og vegetabilier.",
+      "note": "Den tydeligste faglige parallellen i gruppa: begge programmene deler stoffet i en animalsk og en vegetabilsk/melkebasert del, NMBU i MVI273 og MVI274, NTNU i MATV3004 og MATV3002. NMBUs MVI275 Matplanter dekker råvaresiden på plantesiden. UiTs FSK-2041 Sjømatproduksjon er den marine parallellen.",
+      "koblinger": [
+        { "entryId": "nmbu_mat_teknologi_helse", "emnekoder": ["MVI273-1", "MVI274-1", "MVI275-1"], "merknad": "Melk og melkebehandling, Muskelmat - råvare og teknologi og Matplanter, alle 10 sp." },
+        { "entryId": "nmbu_matvitenskap_ernaring_hist", "emnekoder": ["MVI273-1", "MVI274-1", "MVI275-1"], "merknad": "Samme emner og samme tall som raden over." },
+        { "entryId": "ntnu_matvitenskap", "emnekoder": ["MATV3004-1", "MATV3002-1", "TMAT3002-A"], "merknad": "Matteknologi - melk og vegetabiler og Matteknologi - kjøtt og fisk; TMAT3002 er den gamle sammenslåtte 15 sp-varianten." },
+        { "entryId": "uit_fiskeri_havbruk", "emnekoder": ["FSK-2041-1"], "merknad": "Sjømatproduksjon; dekker bare den marine delen av råvarespekteret." }
+      ]
+    },
+    {
+      "id": "prosessteknologi-og-emballering",
+      "label": "Prosessteknologi og emballering",
+      "kategori": "Ernæring og mat",
+      "desc": "Enhetsoperasjoner i næringsmiddelindustrien: varmebehandling, tørking, separasjon og emballeringsteknologi.",
+      "note": "NMBU har tre små emner (Prosessteknologi I og II og Emballeringsteknologi), NTNU ett samlet emne på 7,5 sp. UiT har ingen prosessteknologiemner og er ikke koblet. Emballeringsteknologi har ingen direkte parallell hos NTNU, men er tatt med fordi det er obligatorisk hos NMBU og faglig nært prosessdelen.",
+      "koblinger": [
+        { "entryId": "nmbu_mat_teknologi_helse", "emnekoder": ["MVI261-1", "MVI280-1", "MVI250-1"], "merknad": "Prosessteknologi II, Prosessteknologi I og Emballeringsteknologi, alle 5 sp." },
+        { "entryId": "nmbu_matvitenskap_ernaring_hist", "emnekoder": ["MVI261-1", "MVI280-1", "MVI250-1"], "merknad": "Samme emner og samme tall som raden over." },
+        { "entryId": "ntnu_matvitenskap", "emnekoder": ["TMAT1010-A"], "merknad": "Prosessteknologi, 7,5 sp." }
+      ]
+    },
+    {
+      "id": "sensorikk-og-produktutvikling",
+      "label": "Sensorisk analyse og produktutvikling",
+      "kategori": "Ernæring og mat",
+      "desc": "Sensoriske metoder, forbrukertesting og utvikling av nye næringsmiddelprodukter.",
+      "note": "NTNU har sensorikk og produktutvikling i ett emne med ølbrygging som gjennomgående case, mens NMBU har sensorisk analyse og ølbrygging som to separate emner. NTNUs MATV2002 Statistikk og sensoriske metoder dekker også deler av dette, men er koblet under statistikk. UiT er ikke koblet.",
+      "koblinger": [
+        { "entryId": "nmbu_mat_teknologi_helse", "emnekoder": ["MVI240-1", "MVI276-1"], "merknad": "Sensorisk analyse og Ølbrygging, begge 5 sp." },
+        { "entryId": "nmbu_matvitenskap_ernaring_hist", "emnekoder": ["MVI240-1", "MVI276-1"], "merknad": "Samme emner og samme tall som raden over." },
+        { "entryId": "ntnu_matvitenskap", "emnekoder": ["TMAT2005-A"], "merknad": "Produktutvikling og sensorisk analyse - brygging av øl." }
+      ]
+    },
+    {
+      "id": "ernaering-mat-og-helse",
+      "label": "Ernæring, mat og helse",
+      "kategori": "Ernæring og mat",
+      "desc": "Næringsstoffenes funksjon, kostholdets betydning for helse og samspillet mellom mat og immunsystem.",
+      "note": "NTNU har et samlet ernæringsemne på 7,5 sp, mens NMBU har stoffet fordelt på tre emner med svært ulik rapportering: MVI292 Immunsystemet, mat og helse har 32 kandidater samlet, mens MVI291 og HFE200 har tre hver. Sammenligningen bør derfor bygge på MVI292. UiT er ikke koblet.",
+      "koblinger": [
+        { "entryId": "nmbu_mat_teknologi_helse", "emnekoder": ["MVI292-1", "MVI291-1", "HFE200-1"], "merknad": "Immunsystemet, mat og helse, Kosthold og helse og Generell ernæring; de to siste har svært få rapporterte kandidater." },
+        { "entryId": "nmbu_matvitenskap_ernaring_hist", "emnekoder": ["MVI292-1", "MVI291-1", "HFE200-1"], "merknad": "Samme emner og samme tall som raden over." },
+        { "entryId": "ntnu_matvitenskap", "emnekoder": ["TMAT2002-A"], "merknad": "Ernæring, 7,5 sp." }
+      ]
+    },
+    {
+      "id": "cellebiologi-og-genetikk",
+      "label": "Cellebiologi og genetikk",
+      "kategori": "Biologi",
+      "desc": "Cellens oppbygning og funksjon og grunnleggende arvelære.",
+      "note": "Bare NMBU og UiT har biologiemner i disse løpene, og UiTs er marinbiologisk snarere enn cellebiologisk; koblingen til UiT er derfor svak og tatt med bare som en grov parallell på biologigrunnlaget. NTNUs matvitenskapsbachelor har ikke celle- eller molekylærbiologi i det hele tatt.",
+      "koblinger": [
+        { "entryId": "nmbu_mat_teknologi_helse", "emnekoder": ["BIO100-1", "BIO120-1"], "merknad": "Cellebiologi (5 sp) og Genetikk (10 sp)." },
+        { "entryId": "nmbu_matvitenskap_ernaring_hist", "emnekoder": ["BIO100-1", "BIO120-1"], "merknad": "Samme emner og samme tall som raden over." },
+        { "entryId": "uit_fiskeri_havbruk", "emnekoder": ["FSK-1120-1"], "merknad": "Akvatisk biologi for fiskeri- og havbruksvitenskap; marinbiologisk innretning, så koblingen er svak." }
+      ]
+    }
+  ]
+}

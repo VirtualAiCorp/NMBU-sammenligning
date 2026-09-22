@@ -1,0 +1,153 @@
+{
+  "groupId": "kjemi",
+  "hentet": "2026-09-23",
+  "note": "Gruppa er den mest homogene i KBM-materialet: fem av sju programmer er treårige realfagsbachelorer i kjemi eller biologisk kjemi, og de har i praksis den samme kjernen - generell og uorganisk kjemi, organisk kjemi, fysikalsk kjemi og analytisk kjemi. Sammenligningen er derfor sterkest i de fire klassiske kjemiemnene og i ex.phil, og svakest i matematikk og programmering, der opplegget varierer mye. NMBUs kjemibachelor er liten (typisk 10-30 kandidater per emne), så koblingene på NMBU-siden er vurdert mot summen for 2021-2025 og ikke mot siste år alene; flere NMBU-emner har under ti kandidater i enkeltår. To av programmene i gruppa er utelatt fordi DBH nesten ikke har rapportert emnekarakterer for dem: UiTs kjemibachelor (siste opptak 2024) har bare seks emner med til sammen 23 kandidater over hele perioden, og UiTs etterfølger «Bærekraftig kjemi og innovasjon» (første opptak 2025) har ingen emner rapportert. NMBUs kjemibachelor har ingen bacheloroppgave, så emnetypen «oppgave» er utelatt selv om UiO (KJM3020), UiB (KJEM299), NTNU (KJ2900) og UiS (BIOBAC) har den. Kjemiteknikk og prosessteknikk er heller ikke satt opp som emnetype fordi NMBU ikke har noe tilsvarende emne.",
+  "emnetyper": [
+    {
+      "id": "matematikk",
+      "label": "Matematikk",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Kalkulus og lineær algebra: funksjoner, grenser, derivasjon, integrasjon, rekker og differensiallikninger.",
+      "note": "Nivået spriker. UiO og UiB har to emner hver (anvendelsesrettet matematikk 1 og 2 / brukerkurs I og II), NTNUs kjemibachelor bruker brukerkursene MA0001 og MA0002, mens NMBU og UiS bare har ett matematikkemne. NMBU har tre kodeversjoner i perioden: MATH100 Brukerkurs i matematikk er hovedemnet, MATH111 Kalkulus 1 er den gamle koden og MATH121 Kalkulus er den nye, tyngre varianten som studieplanen gir som alternativ til MATH100. NTNUs sivilingeniørmatematikk (TMA-emnene) forekommer med enkeltkandidater og er ikke koblet, siden kjemibachelorstudentene normalt tar brukerkursene.",
+      "koblinger": [
+        { "entryId": "nmbu_kjemi", "emnekoder": ["MATH100-1", "MATH121-1", "MATH111-1"], "merknad": "Brukerkurs i matematikk, Kalkulus (ny kode) og Kalkulus 1 (gammel kode); studieplanen lar studenten velge MATH100 eller MATH121." },
+        { "entryId": "uio_kjemi_biokjemi", "emnekoder": ["MAT1050-1", "MAT1060-1", "MAT1100-1"], "merknad": "Matematikk for anvendelser 1 og 2; MAT1100 Kalkulus er den tyngre varianten noen få tar." },
+        { "entryId": "uib_kjemi", "emnekoder": ["MAT101-0", "MAT102-0"], "merknad": "Brukerkurs i matematikk I og II." },
+        { "entryId": "ntnu_kjemi", "emnekoder": ["MA0001-1", "MA0002-1"], "merknad": "Brukerkurs i matematikk A og B." },
+        { "entryId": "uis_biologisk_kjemi", "emnekoder": ["MAT100-1"], "merknad": "Matematiske metoder 1; UiS har bare ett matematikkemne." }
+      ]
+    },
+    {
+      "id": "statistikk",
+      "label": "Statistikk",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Sannsynlighetsregning, beskrivende statistikk, hypotesetesting og regresjon.",
+      "note": "Verken UiOs kjemi- og biokjemibachelor eller UiBs kjemibachelor har obligatorisk statistikk, og de har heller ingen statistikkemner med rapporterte kandidater; de er derfor ikke koblet. NMBUs STAT100 er obligatorisk i første studieår.",
+      "koblinger": [
+        { "entryId": "nmbu_kjemi", "emnekoder": ["STAT100-1"], "merknad": "Statistikk, 10 sp, obligatorisk i 1. år." },
+        { "entryId": "ntnu_kjemi", "emnekoder": ["ST0103-1"], "merknad": "Brukerkurs i statistikk." },
+        { "entryId": "uis_biologisk_kjemi", "emnekoder": ["STA100-1"], "merknad": "Sannsynlighetsregning og statistikk 1." }
+      ]
+    },
+    {
+      "id": "fysikk",
+      "label": "Fysikk",
+      "kategori": "Fysikk",
+      "desc": "Innføringsemne i fysikk: mekanikk, varmelære og elektromagnetisme.",
+      "note": "UiS' bachelor i biologisk kjemi har ikke fysikk og er ikke koblet. NMBUs FYS100 Fysikk og natur er et bredt innføringsemne og ligger lavere enn UiBs PHYS101 Grunnkurs i mekanikk og varmelære; NMBUs tyngre FYS101 Mekanikk har bare enkeltkandidater på kjemiprogrammet, men er tatt med for fullstendighetens skyld.",
+      "koblinger": [
+        { "entryId": "nmbu_kjemi", "emnekoder": ["FYS100-1", "FYS101-1"], "merknad": "Fysikk og natur (obligatorisk, 10 sp) og Mekanikk (svært få kandidater)." },
+        { "entryId": "uio_kjemi_biokjemi", "emnekoder": ["FYS1001-1"], "merknad": "Innføring i fysikk." },
+        { "entryId": "uib_kjemi", "emnekoder": ["PHYS101-0"], "merknad": "Grunnkurs i mekanikk og varmelære." },
+        { "entryId": "ntnu_kjemi", "emnekoder": ["FY0001-1"], "merknad": "Brukerkurs i fysikk." }
+      ]
+    },
+    {
+      "id": "programmering",
+      "label": "Programmering og dataanalyse",
+      "kategori": "Programmering",
+      "desc": "Innføring i programmering, som regel i Python, med vekt på beregninger og databehandling i kjemi.",
+      "note": "UiS har ikke programmering i bachelorløpet i biologisk kjemi og er ikke koblet. NMBU er det eneste programmet med to obligatoriske programmeringsemner (INF120 og INF201). UiOs emne er spesiallaget for kjemistudenter, mens NTNUs TDT4110 er fellesemnet for alle realfags- og teknologistudenter og har langt flere kandidater enn programmets egne studenter; NTNUs nye KJ2222 Dataanalyse og visualisering i kjemi er tatt med som den fagnære parallellen.",
+      "koblinger": [
+        { "entryId": "nmbu_kjemi", "emnekoder": ["INF120-1", "INF201-1"], "merknad": "Programmering og databehandling (10 sp) og Videregående programmering (5 sp), begge obligatoriske." },
+        { "entryId": "uio_kjemi_biokjemi", "emnekoder": ["IN-KJM1900-1"], "merknad": "Introduksjon i programmering for kjemikere." },
+        { "entryId": "uib_kjemi", "emnekoder": ["INF100-0"], "merknad": "Innføring i programmering." },
+        { "entryId": "ntnu_kjemi", "emnekoder": ["TDT4110-1", "KJ2222-1"], "merknad": "Informasjonsteknologi, grunnkurs, og Dataanalyse og visualisering i kjemi (nytt fra 2025)." }
+      ]
+    },
+    {
+      "id": "exphil",
+      "label": "Examen philosophicum",
+      "kategori": "Ex.phil",
+      "desc": "Fellesemnet i vitenskapsfilosofi, etikk og argumentasjonslære.",
+      "note": "Alle fem programmene har ex.phil. NMBU har tre likeverdige varianter (hovedversjon, seminarversjon og engelsk versjon), og seminarversjonen PHI101 er den mest brukte på kjemiprogrammet.",
+      "koblinger": [
+        { "entryId": "nmbu_kjemi", "emnekoder": ["PHI101-1", "PHI100-1", "PHI102-1"], "merknad": "Seminarversjon, hovedversjon og engelsk versjon av samme emne." },
+        { "entryId": "uio_kjemi_biokjemi", "emnekoder": ["EXPHIL03-1"] },
+        { "entryId": "uib_kjemi", "emnekoder": ["EXPHIL-MNSEM-0"], "merknad": "Examen philosophicum - seminarmodell." },
+        { "entryId": "ntnu_kjemi", "emnekoder": ["EXPH0300-1"], "merknad": "Examen philosophicum for naturvitenskap og teknologi." },
+        { "entryId": "uis_biologisk_kjemi", "emnekoder": ["HHEXPHIL-1"], "merknad": "Examen philosophicum - HH." }
+      ]
+    },
+    {
+      "id": "generell-og-uorganisk-kjemi",
+      "label": "Generell og uorganisk kjemi",
+      "kategori": "Kjemi",
+      "desc": "Atomstruktur, binding, støkiometri, likevekt, syre-base og redoks, samt grunnstoffenes kjemi og periodesystemet.",
+      "note": "Alle fem programmene har både et generelt og et uorganisk emne, bortsett fra UiS, der KJE150 Generell kjemi er hovedemnet og KJE220 Anvendt industriell uorganisk kjemi er et mindre valgemne med få kandidater de siste årene. NTNU har tre kodeversjoner av generell kjemi i perioden (KJ1000 på 15 sp avløst av KJ1001 og KJ1003 på 7,5 sp) og to uorganiske emner (TMT4130 og påbyggingen KJ2031).",
+      "koblinger": [
+        { "entryId": "nmbu_kjemi", "emnekoder": ["KJM100-1", "KJM120-1"], "merknad": "Generell kjemi og Uorganisk kjemi, begge 10 sp og obligatoriske." },
+        { "entryId": "uio_kjemi_biokjemi", "emnekoder": ["KJM1101-1", "KJM1121-1"], "merknad": "Generell kjemi og Uorganisk kjemi." },
+        { "entryId": "uib_kjemi", "emnekoder": ["KJEM110-0", "KJEM120-0"], "merknad": "Kjemi og energi og Grunnstoffenes kjemi." },
+        { "entryId": "ntnu_kjemi", "emnekoder": ["KJ1001-1", "KJ1003-1", "KJ1000-1", "TMT4130-1", "KJ2031-1"], "merknad": "Tre kodeversjoner av Generell kjemi, samt Uorganisk kjemi og Videregående uorganisk kjemi." },
+        { "entryId": "uis_biologisk_kjemi", "emnekoder": ["KJE150-1", "KJE220-1"], "merknad": "Generell kjemi og Anvendt industriell uorganisk kjemi; sistnevnte har få kandidater etter 2021." }
+      ]
+    },
+    {
+      "id": "organisk-kjemi",
+      "label": "Organisk kjemi",
+      "kategori": "Kjemi",
+      "desc": "Organiske forbindelsers struktur, nomenklatur, reaksjonsmekanismer og syntese, med laboratoriekurs.",
+      "note": "Omfanget varierer: NMBU og UiB har et grunnemne pluss et påbyggingsemne, NTNU har teoriemnet og laboratoriekurset som to separate emner, mens UiO og UiS har ett emne hver. NMBUs KJM210 Utvidet organisk kjemi (20 sp) er den gamle sammenslåtte varianten og har ingen kandidater etter 2022.",
+      "koblinger": [
+        { "entryId": "nmbu_kjemi", "emnekoder": ["KJM110-1", "KJM211-1", "KJM210-1"], "merknad": "Organisk kjemi (obligatorisk), Organisk kjemi II (valgemne) og den nedlagte 20 sp-varianten Utvidet organisk kjemi." },
+        { "entryId": "uio_kjemi_biokjemi", "emnekoder": ["KJM1111-1"], "merknad": "Organisk kjemi I." },
+        { "entryId": "uib_kjemi", "emnekoder": ["KJEM130-0", "KJEM131-0"], "merknad": "Organisk kjemi og Organisk syntese og analyse." },
+        { "entryId": "ntnu_kjemi", "emnekoder": ["KJ1021-1", "KJ1024-1", "KJ1020-1"], "merknad": "Organisk kjemi grunnkurs uten laboratorium og det separate laboratoriekurset; KJ1020 er den eldre 15 sp-versjonen med lab." },
+        { "entryId": "uis_biologisk_kjemi", "emnekoder": ["KJE200-1"], "merknad": "Organisk kjemi 1." }
+      ]
+    },
+    {
+      "id": "fysikalsk-kjemi",
+      "label": "Fysikalsk kjemi",
+      "kategori": "Kjemi",
+      "desc": "Kjemisk termodynamikk, kinetikk, likevekt, molekylær struktur og spektroskopiens teoretiske grunnlag.",
+      "note": "UiS' bachelor i biologisk kjemi har ikke fysikalsk kjemi og er ikke koblet - det er den tydeligste faglige forskjellen mellom UiS og de andre programmene i gruppa. NTNU og UiB har dobbelt omfang (termodynamikk og molekylær struktur som to emner), NMBU og UiO ett hovedemne hver; UiOs KJM2601 Fysikalsk kjemi II er et valgemne med få kandidater.",
+      "koblinger": [
+        { "entryId": "nmbu_kjemi", "emnekoder": ["KJM230-1"], "merknad": "Fysikalsk kjemi, 10 sp, obligatorisk i 2. år." },
+        { "entryId": "uio_kjemi_biokjemi", "emnekoder": ["KJM1130-1", "KJM2601-1"], "merknad": "Fysikalsk kjemi I - termodynamikk og kinetikk, og Fysikalsk kjemi II - kvantekjemi og spektroskopi." },
+        { "entryId": "uib_kjemi", "emnekoder": ["KJEM210-0", "KJEM215-0"], "merknad": "Kjemisk termodynamikk og Molekylær fysikalsk kjemi." },
+        { "entryId": "ntnu_kjemi", "emnekoder": ["TKJ4162-1", "KJ1041-1"], "merknad": "Fysikalsk kjemi: Kjemisk termodynamikk og Fysikalsk kjemi: molekylær struktur." }
+      ]
+    },
+    {
+      "id": "analytisk-kjemi",
+      "label": "Analytisk kjemi",
+      "kategori": "Kjemi",
+      "desc": "Kvantitativ analyse, prøvebehandling, kalibrering, kromatografi og spektroskopiske analysemetoder.",
+      "note": "Alle fem har analytisk kjemi, men vinklingen er ulik: UiS' KJE240 Analytisk miljøkjemi er miljørettet, og UiBs KJEM124 Kjemisk syntese og analyse kombinerer syntese og analyse. NMBU har bare grunnemnet KJM240 på bachelornivå; KJM310 Kromatografi ligger på masterprogrammet og er koblet der.",
+      "koblinger": [
+        { "entryId": "nmbu_kjemi", "emnekoder": ["KJM240-1"], "merknad": "Analytisk kjemi, 10 sp, obligatorisk i 3. år." },
+        { "entryId": "uio_kjemi_biokjemi", "emnekoder": ["KJM2400-1", "KJM3400-1", "KJM3000-1"], "merknad": "Analytisk kjemi I, Analytisk kjemi II - separasjonsmetoder og Anvendt spektroskopi." },
+        { "entryId": "uib_kjemi", "emnekoder": ["KJEM250-0", "KJEM124-0"], "merknad": "Analytisk kjemi og Kjemisk syntese og analyse." },
+        { "entryId": "ntnu_kjemi", "emnekoder": ["KJ2050-1", "KJ2053-1", "KJ2022-1"], "merknad": "Analytisk kjemi grunnkurs, Kromatografi (Analytisk kjemi II) og Spektroskopiske metoder i organisk kjemi." },
+        { "entryId": "uis_biologisk_kjemi", "emnekoder": ["KJE240-1"], "merknad": "Analytisk miljøkjemi; tydeligere miljøprofil enn de andre." }
+      ]
+    },
+    {
+      "id": "biokjemi",
+      "label": "Biokjemi",
+      "kategori": "Kjemi",
+      "desc": "Biomolekylers struktur og funksjon: proteiner, enzymer, karbohydrater, lipider og metabolisme.",
+      "note": "UiBs kjemibachelor har ikke biokjemi - der dekkes biologidelen av MOL100 Innføring i molekylærbiologi, som er koblet under cellebiologi - og er ikke koblet her. NTNUs TBT4102 Biokjemi 1 er et valgemne på kjemibachelorprogrammet med moderate kandidattall. UiS' BIO200 Biokjemi er obligatorisk og har flest kandidater i gruppa.",
+      "koblinger": [
+        { "entryId": "nmbu_kjemi", "emnekoder": ["KJB200-1", "KJB210-1", "KJB201-1"], "merknad": "Biokjemi (obligatorisk, 10 sp), Eksperimentell og anvendt biokjemi og Laboratoriekurs i biokjemi og matkjemi." },
+        { "entryId": "uio_kjemi_biokjemi", "emnekoder": ["KJM1140-1"], "merknad": "Biokjemi 1 for kjemikere." },
+        { "entryId": "ntnu_kjemi", "emnekoder": ["TBT4102-1"], "merknad": "Biokjemi 1; valgemne på kjemibachelorprogrammet." },
+        { "entryId": "uis_biologisk_kjemi", "emnekoder": ["BIO200-1"], "merknad": "Biokjemi, 10 sp." }
+      ]
+    },
+    {
+      "id": "cellebiologi-og-molekylaerbiologi",
+      "label": "Cellebiologi og molekylærbiologi",
+      "kategori": "Biologi",
+      "desc": "Cellens oppbygning og funksjon, genstruktur og -regulering, og molekylærbiologiske metoder.",
+      "note": "Bare tre av fem programmer har biologi i kjemiløpet. NMBU har ett lite cellebiologiemne på 5 sp, UiB ett innføringsemne i molekylærbiologi, mens UiS - som har «biologisk kjemi» som profil - har tre emner og klart størst omfang. Verken UiOs kjemi- og biokjemibachelor eller NTNUs kjemibachelor har obligatorisk celle- eller molekylærbiologi.",
+      "koblinger": [
+        { "entryId": "nmbu_kjemi", "emnekoder": ["BIO100-1"], "merknad": "Cellebiologi, 5 sp, obligatorisk i 1. år." },
+        { "entryId": "uib_kjemi", "emnekoder": ["MOL100-0"], "merknad": "Innføring i molekylærbiologi." },
+        { "entryId": "uis_biologisk_kjemi", "emnekoder": ["BIO100-1", "BIO210-1", "BIO230-1"], "merknad": "Cellebiologi, Metoder i bioteknologi og Molekylærgenetikk og bioinformatikk; UiS' BIO100 har samme emnekode som NMBUs cellebiologiemne, men er et eget 10 sp-emne." }
+      ]
+    }
+  ]
+}

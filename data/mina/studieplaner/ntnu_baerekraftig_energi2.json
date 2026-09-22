@@ -1,0 +1,187 @@
+{
+  "entryId": "ntnu_baerekraftig_energi2",
+  "programnavn": "Bærekraftig energi (master 2 år)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://www.ntnu.no/studier/msse",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=MSSE&year=0",
+    "https://www.ntnu.no/web/studier/studieplan?p_p_id=studyprogrammeplannerportlet_WAR_studyprogrammeplannerportlet_INSTANCE_KzJMPh2hQuXL&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=studyplan&p_p_cacheability=cacheLevelPage&code=MSSE&year=2025"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 7.5,
+  "obligatoriske": [
+    {
+      "emnekode": "TEP4240",
+      "emnenavn": "System Simulation",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Felles for alle tre studieretninger."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Gas Technology",
+      "obligatoriske": [
+        {
+          "emnekode": "TEP4185",
+          "emnenavn": "Gas Process Technology",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4215",
+          "emnenavn": "Energy Efficiency and Process Integration",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4506",
+          "emnenavn": "Sustainable Energy Systems, Specialization Course",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4521",
+          "emnenavn": "Sustainable Energy Systems, Specialization Project",
+          "studiepoeng": 15,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4906",
+          "emnenavn": "Sustainable energy systems, master thesis",
+          "studiepoeng": 30,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Sustainable Heat Pumping Processes and Systems",
+      "obligatoriske": [
+        {
+          "emnekode": "TEP4185",
+          "emnenavn": "Gas Process Technology",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4255",
+          "emnenavn": "Heat Pumping Processes and Systems",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4506",
+          "emnenavn": "Sustainable Energy Systems, Specialization Course",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4521",
+          "emnenavn": "Sustainable Energy Systems, Specialization Project",
+          "studiepoeng": 15,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4906",
+          "emnenavn": "Sustainable energy systems, master thesis",
+          "studiepoeng": 30,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Sustainable Energy Use in Buildings",
+      "obligatoriske": [
+        {
+          "emnekode": "TEP4235",
+          "emnenavn": "Energy Management in Buildings",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4245",
+          "emnenavn": "HVAC Engineering",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4260",
+          "emnenavn": "Heat Pumps for Heating and Cooling of Buildings",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4530",
+          "emnenavn": "Energy and Indoor Environment, Specialization Project",
+          "studiepoeng": 15,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4535",
+          "emnenavn": "Thermal Energy and Indoor Environment, Specialization Course",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4910",
+          "emnenavn": "Energy and Indoor Environment, Master's Thesis",
+          "studiepoeng": 30,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er NTNUs studieplan-API (studyprogrammeplannerportlet, resource_id=studyplan) for MSSE, lest for kull 2025 (fullstendig 4-periodig/2-årig plan, oppdatert 12.05.2026); kull 2026 har foreløpig kun 1. år publisert. Programmet har tre studieretninger (Gas Technology, Sustainable Heat Pumping Processes and Systems, Sustainable Energy Use in Buildings). Kun TEP4240 System Simulation er felles obligatorisk for alle tre retninger; øvrige emner, inkl. masteroppgaven, har retningsspesifikke koder og er derfor ført opp under hver studieretning (Gas Technology og Sustainable Heat Pumping Processes and Systems deler for øvrig samme emnekoder for spesialiseringsemner og masteroppgave, TEP4506/TEP4521/TEP4906, mens Sustainable Energy Use in Buildings har egne koder TEP4530/TEP4535/TEP4910 for tilsvarende emner). I tillegg stiller hver studieretning kvantumskrav om et gitt antall emner fra egne emnegrupper (typisk «minst 2 emner fra gruppe A» i 1. år høst, «minst 2 fra gruppe B» i 1. år vår, «minst 1 fra gruppe A/B» i 2. år høst) - disse er valgfrie innenfor kvoten og derfor ikke ført opp som enkeltemner. dbhEmnekoder er ikke fylt ut siden DBH-rapportering for dette programmet ikke er slått opp i dette arbeidet."
+}

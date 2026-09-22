@@ -1,0 +1,436 @@
+{
+  "groupId": "husdyr",
+  "hentet": "2026-09-23",
+  "note": "Gruppa rommer fire ulike utdanningsfamilier. NMBUs og Nords bachelorer i husdyrvitenskap er de to direkte konkurrentene og har nesten identisk faglig kjerne: husdyrbiologi, ernæring, avl, etologi og produksjonsemner. INNs agronomibachelor på Blæstad er et landbruksprogram der husdyr bare er én av flere deler – den har tre husdyremner (AGR2203 Husdyrernæring, AGR2302 Husdyrhold og 6JB242 Husdyrmiljø og innendørsmekanisering) og er derfor bare koblet i seks av tolv emnetyper. Nords dyrepleiebachelor er tatt med som svakere sammenligning: den deler anatomi, fysiologi, atferd og ernæring med husdyrvitenskapen, men har ingen produksjonsemner, ingen avl og ingen landbruksøkonomi, og er i stedet bygd rundt klinisk dyrepleie, sykdomslære, farmakologi og nesten et helt studieår med praksis. Merk at NMBUs husdyrbachelor er et lite program: de fleste emnene har 10–23 kandidater i 2024/2025, så terskelen er senket til summen for 2021–2025 for flere koblinger. Sammenligningen er svakest i kjemi (INN har ikke noe eget kjemiemne) og i ex.phil (INN har ingen, og Nords FIL1001 har ikke rapporterte karakterer etter 2023). To emnetyper er utelatt med vilje: husdyrbygg og innendørsmekanisering, fordi NMBU ikke har noe tilsvarende obligatorisk emne med rapporterte karakterer (HET212 Dyrenes termoregulering og ventilasjon i husdyrrom har tre kandidater), mens Nord har fire emner (HUS2000, HUS2001, HUS2005) og INN har 6JB242; og klinisk sykdomslære og farmakologi, som bare finnes hos Nord dyrepleie. NMBUs HFX255/HFX256/HFE205 finnes i to kodeversjoner hver etter at emnene ble utvidet, og begge er koblet.",
+  "emnetyper": [
+    {
+      "id": "generell-kjemi",
+      "label": "Generell kjemi",
+      "kategori": "Realfag",
+      "desc": "Grunnleggende kjemi: atomstruktur, binding, støkiometri, likevekt og syre-base, med laboratoriekurs.",
+      "note": "INNs agronomibachelor har ikke noe eget kjemiemne; kjemien der inngår i AGR1101 Naturgrunnlaget og AGR2203 Husdyrernæring. NMBUs KJM100 er på 10 sp mot Nords 7,5 sp, men har bare 9 kandidater fra husdyrprogrammet i 2025 (68 i perioden 2021–2025).",
+      "koblinger": [
+        {
+          "entryId": "nmbu_husdyr",
+          "emnekoder": [
+            "KJM100-1"
+          ],
+          "merknad": "Generell kjemi, 10 sp."
+        },
+        {
+          "entryId": "nord_husdyr",
+          "emnekoder": [
+            "KJE1000-1",
+            "BIO101-2"
+          ],
+          "merknad": "Grunnleggende kjemi; BIO101-2 Kjemi, miljø og forurensning er den eldre kodeversjonen."
+        },
+        {
+          "entryId": "nord_dyrepleie",
+          "emnekoder": [
+            "KJE1000-1",
+            "KJ100F-1"
+          ],
+          "merknad": "To kodeversjoner av Grunnleggende kjemi."
+        }
+      ]
+    },
+    {
+      "id": "biokjemi-og-cellebiologi",
+      "label": "Biokjemi og cellebiologi",
+      "kategori": "Biologi",
+      "desc": "Cellens oppbygning og funksjon og biomolekylenes kjemi: proteiner, enzymer, karbohydrater, lipider og stoffskifte.",
+      "note": "INN har ikke noe eget celle- eller biokjemiemne. NMBUs KJB100 er et rent biokjemiemne på 5 sp, mens Nords BIO1009/BIO1002 er cellebiologiemner uten biokjemidel; sammenligningen er derfor delvis.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_husdyr",
+          "emnekoder": [
+            "KJB100-1"
+          ],
+          "merknad": "Introduksjon til biokjemi, 5 sp."
+        },
+        {
+          "entryId": "nord_husdyr",
+          "emnekoder": [
+            "BIO1009-1"
+          ],
+          "merknad": "Cellebiologi, 7,5 sp; ingen egen biokjemidel."
+        },
+        {
+          "entryId": "nord_dyrepleie",
+          "emnekoder": [
+            "BIO1009-1",
+            "BIO1002-1",
+            "MAR2034-1"
+          ],
+          "merknad": "Tre kodeversjoner av Cellebiologi."
+        }
+      ]
+    },
+    {
+      "id": "genetikk-og-husdyravl",
+      "label": "Genetikk og husdyravl",
+      "kategori": "Husdyr",
+      "desc": "Arvelære, kvantitativ genetikk, seleksjon og avlsplanlegging i husdyrpopulasjoner.",
+      "note": "NMBU er den eneste i gruppa med et eget avlsemne (HFA200 Generell husdyravl, 10 sp) i tillegg til et genetikkemne. Nord dekker bare genetikkdelen, og INN har ingen husdyrgenetikk – AGR2301 Planteforedling og diversitet er plantefag og er derfor ikke koblet her.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_husdyr",
+          "emnekoder": [
+            "BIO120-1",
+            "HFA200-1"
+          ],
+          "merknad": "Genetikk (10 sp) og Generell husdyravl (10 sp)."
+        },
+        {
+          "entryId": "nord_husdyr",
+          "emnekoder": [
+            "HUS1001-1"
+          ],
+          "merknad": "Genetikk og evolusjon; ingen egen avlsdel."
+        },
+        {
+          "entryId": "nord_dyrepleie",
+          "emnekoder": [
+            "BI122F-1"
+          ],
+          "merknad": "Genetikk og evolusjon."
+        }
+      ]
+    },
+    {
+      "id": "anatomi-og-fysiologi",
+      "label": "Husdyrenes anatomi og fysiologi",
+      "kategori": "Husdyr",
+      "desc": "Husdyrenes oppbygning og organfunksjon: fordøyelse, sirkulasjon, respirasjon, forplantning og regulering.",
+      "note": "Alle unntatt INN har et anatomi- og fysiologiemne. Omfanget er størst hos NMBU (HFX132 Husdyrbiologi og HFX201 Fysiologi, til sammen 20 sp) og hos Nord dyrepleie (DYR1004, 15 sp, med generell patologi i tillegg). Nords husdyrbachelor har 7,5 sp. INNs 6JB121 Biologi er et generelt biologiemne uten egen husdyrfysiologidel og er ikke koblet.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_husdyr",
+          "emnekoder": [
+            "HFX132-1",
+            "HFX201-1"
+          ],
+          "merknad": "Husdyrbiologi og Fysiologi."
+        },
+        {
+          "entryId": "nord_husdyr",
+          "emnekoder": [
+            "HUS1005-1",
+            "HUS120-1"
+          ],
+          "merknad": "Husdyrenes anatomi og fysiologi; HUS120 Fysiologi og anatomi er den eldre kodeversjonen."
+        },
+        {
+          "entryId": "nord_dyrepleie",
+          "emnekoder": [
+            "DYR1004-1",
+            "BI145F-1"
+          ],
+          "merknad": "Anatomi, fysiologi og generell patologi (15 sp) og den eldre koden Anatomi og fysiologi for dyrepleiere."
+        }
+      ]
+    },
+    {
+      "id": "ernaering-og-foring",
+      "label": "Ernæring og fôring",
+      "kategori": "Husdyr",
+      "desc": "Næringsstoffer, fordøyelse og omsetning, fôrmidler, fôrvurdering og fôrplanlegging.",
+      "note": "Den best sammenlignbare emnetypen i gruppa: alle fire programmene har ernæringsemner. Nord har mest (HUS1008 og HUS2004, i tillegg til fôrdyrkingsemnet HUS1004), NMBU har HFE200 Generell ernæring pluss grovfôr- og kraftfôremner som valgemner, og INN har ett emne på 7,5 sp. Nord dyrepleie har ernæring rettet mot kjæledyr.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_husdyr",
+          "emnekoder": [
+            "HFE200-1",
+            "HFE205-1",
+            "HFE205-2"
+          ],
+          "merknad": "Generell ernæring (obligatorisk) og valgemnet Grovfôr og drøvtyggerernæring i to kodeversjoner. Valgemnet HFE202 Kraftfôr er ikke koblet fordi det bare har åtte kandidater i perioden."
+        },
+        {
+          "entryId": "nord_husdyr",
+          "emnekoder": [
+            "HUS210-2",
+            "HUS2004-1",
+            "HUS1008-1",
+            "HUS1004-1"
+          ],
+          "merknad": "Husdyrernæring i tre kodeversjoner (HUS210, HUS1008 Husdyrernæring 1 og HUS2004 Husdyrernæring 2) samt Fôrdyrking og fôrmidler."
+        },
+        {
+          "entryId": "inn_agronomi_husdyr",
+          "emnekoder": [
+            "AGR2203-1"
+          ],
+          "merknad": "Husdyrernæring, 7,5 sp."
+        },
+        {
+          "entryId": "nord_dyrepleie",
+          "emnekoder": [
+            "BI247F-1"
+          ],
+          "merknad": "Fôr og ernæring; rettet mot kjæledyr og smådyr, ikke husdyrproduksjon."
+        }
+      ]
+    },
+    {
+      "id": "etologi-og-dyrevelferd",
+      "label": "Etologi og dyrevelferd",
+      "kategori": "Husdyr",
+      "desc": "Husdyrenes atferd, atferdsbehov, stress og velferdsvurdering, og regelverket for dyrevelferd.",
+      "note": "INN har ikke noe eget etologi- eller velferdsemne. NMBU har to emner à 5 sp (HET201 Husdyretologi og HET203 Dyrevelferd), Nord ett på 7,5 sp, og Nord dyrepleie to kodeversjoner av Atferd og dyrehold.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_husdyr",
+          "emnekoder": [
+            "HET201-1",
+            "HET203-1"
+          ],
+          "merknad": "Husdyretologi og Dyrevelferd, 5 sp hver."
+        },
+        {
+          "entryId": "nord_husdyr",
+          "emnekoder": [
+            "HUS1006-1",
+            "HUS1000-1"
+          ],
+          "merknad": "Dyrevelferd og etologi; HUS1000 Husdyrmiljø og dyrevelferd er den eldre kodeversjonen."
+        },
+        {
+          "entryId": "nord_dyrepleie",
+          "emnekoder": [
+            "DYR1006-1",
+            "DYR1001-1"
+          ],
+          "merknad": "To kodeversjoner av Atferd og dyrehold."
+        }
+      ]
+    },
+    {
+      "id": "husdyrproduksjon",
+      "label": "Husdyrhold og husdyrproduksjon",
+      "kategori": "Husdyr",
+      "desc": "Drift og produksjon i de enkelte husdyrslagene: storfe, småfe, gris, fjørfe og hest.",
+      "note": "Nord dyrepleie har ingen produksjonsemner og er ikke koblet. NMBU dekker husdyrslagene i en rekke valgemner à 5–15 sp, Nord har egne obligatoriske emner per dyreslag, og INN har ett samleemne (AGR2302 Husdyrhold, 7,5 sp). Nords HUS305 Storfeproduksjon og driftsøkonomi blander produksjon og økonomi.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_husdyr",
+          "emnekoder": [
+            "HFX131-1",
+            "HFX255-1",
+            "HFX255-2",
+            "HFX256-1",
+            "HFX256-2",
+            "HFX253-1",
+            "HFH255-1",
+            "HFX205-1"
+          ],
+          "merknad": "Introduksjon til norsk husdyrproduksjon (obligatorisk) samt valgemnene Melk og kjøttproduksjon på storfe, Småfe, Produksjon på gris og fjørfe, Hestevitenskap og Beiteøkologi og beitebruk; HFX255 og HFX256 finnes i to kodeversjoner hver."
+        },
+        {
+          "entryId": "nord_husdyr",
+          "emnekoder": [
+            "HUS2003-1",
+            "HUS2002-1",
+            "HUS305-3",
+            "HUS2030-1"
+          ],
+          "merknad": "Småfe og fjørfe, Svineproduksjon, Storfeproduksjon og driftsøkonomi, og Hest og hund."
+        },
+        {
+          "entryId": "inn_agronomi_husdyr",
+          "emnekoder": [
+            "AGR2302-1"
+          ],
+          "merknad": "Husdyrhold, 7,5 sp; ett samleemne for alle husdyrslag."
+        }
+      ]
+    },
+    {
+      "id": "statistikk-og-vitenskapelig-metode",
+      "label": "Statistikk og vitenskapelig metode",
+      "kategori": "Metode",
+      "desc": "Statistisk analyse av biologiske data, forsøksdesign, vitenskapelig metode og akademisk skriving.",
+      "note": "NMBU har klart mest rent statistikkfag (STAT100 og STIN100, til sammen 20 sp), mens Nord og INN har kombinerte metode- og skriveemner. INNs AGR2202 Vitenskapelig metode og statistikk (15 sp) er det nærmeste INN kommer et statistikkemne.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_husdyr",
+          "emnekoder": [
+            "STAT100-1",
+            "STIN100-1",
+            "LNG250-1"
+          ],
+          "merknad": "Statistikk, Biologisk dataanalyse og Akademisk skriving."
+        },
+        {
+          "entryId": "nord_husdyr",
+          "emnekoder": [
+            "MET2000-1"
+          ],
+          "merknad": "Innføring i vitenskapelig metode og skriving, 5 sp; ikke noe eget statistikkemne."
+        },
+        {
+          "entryId": "inn_agronomi_husdyr",
+          "emnekoder": [
+            "AGR2202-1",
+            "6JB295-1"
+          ],
+          "merknad": "Vitenskapelig metode og statistikk (15 sp) og Rapport og analyse."
+        },
+        {
+          "entryId": "nord_dyrepleie",
+          "emnekoder": [
+            "MET2000-1",
+            "MET1005-1"
+          ],
+          "merknad": "To kodeversjoner av metode- og skriveemnet."
+        }
+      ]
+    },
+    {
+      "id": "okonomi-og-landbrukspolitikk",
+      "label": "Økonomi og landbrukspolitikk",
+      "kategori": "Økonomi",
+      "desc": "Bedriftsøkonomi, regnskap og driftsledelse i landbruket, og rammevilkårene i norsk landbrukspolitikk.",
+      "note": "Nord dyrepleie har ingen økonomiemner og er ikke koblet. Nord husdyrvitenskap har klart mest (bedriftsøkonomi, regnskap, ledelse og landbrukspolitikk), INN har ett stort emne på 15 sp, og NMBUs emner er valgemner med få kandidater.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_husdyr",
+          "emnekoder": [
+            "BUS100-1",
+            "ECN260-1",
+            "BUS120-1"
+          ],
+          "merknad": "Bedriften – innføring i bedriftsøkonomiske sammenhenger, Landbrukspolitikk og Personlig økonomi; alle valgemner."
+        },
+        {
+          "entryId": "nord_husdyr",
+          "emnekoder": [
+            "ECO1014-1",
+            "HUS3301-1",
+            "REG1003-1",
+            "HUS2151-1"
+          ],
+          "merknad": "Bedriftsøkonomi for landbruket, Landbrukspolitikk, Landbruksregnskap og Ledelse og entreprenørskap."
+        },
+        {
+          "entryId": "inn_agronomi_husdyr",
+          "emnekoder": [
+            "6JB201-1"
+          ],
+          "merknad": "Landbruksøkonomi og grønt entreprenørskap, 15 sp."
+        }
+      ]
+    },
+    {
+      "id": "baerekraft-og-matproduksjon",
+      "label": "Bærekraft, klima og matproduksjon",
+      "kategori": "Bærekraft",
+      "desc": "Bærekraftige matproduksjonssystemer, klimagassutslipp fra husdyrhold og landbrukets rolle i samfunnet.",
+      "note": "Alle fire programmene har et emne av denne typen, men vinklingen er ulik: NMBU og INN ser på matproduksjon og landbrukets samfunnsrolle, mens Nords BIO1008 Bærekraft, klima og etikk også dekker etikk og delvis erstatter ex.phil.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_husdyr",
+          "emnekoder": [
+            "SDG200-1",
+            "HFX133-1",
+            "SDG201-1"
+          ],
+          "merknad": "Bærekraftige matproduksjonssystemer, Utfordringer for framtidas matproduksjon og Klimagasser fra plante- og husdyrproduksjoner."
+        },
+        {
+          "entryId": "nord_husdyr",
+          "emnekoder": [
+            "HUS1003-1",
+            "BIO1008-1"
+          ],
+          "merknad": "Klima og bærekraft; BIO1008 Bærekraft, klima og etikk er det nye fellesemnet."
+        },
+        {
+          "entryId": "inn_agronomi_husdyr",
+          "emnekoder": [
+            "AGR1102-1",
+            "6JB110-1"
+          ],
+          "merknad": "Landbruk, miljø og samfunn; 6JB110 er den eldre kodeversjonen."
+        },
+        {
+          "entryId": "nord_dyrepleie",
+          "emnekoder": [
+            "BIO1008-1"
+          ],
+          "merknad": "Bærekraft, klima og etikk."
+        }
+      ]
+    },
+    {
+      "id": "bacheloroppgave",
+      "label": "Bacheloroppgave",
+      "kategori": "Oppgave",
+      "desc": "Det selvstendige avsluttende arbeidet i graden.",
+      "note": "Omfanget er 15 sp hos NMBU, Nord og INN, mens Nord dyrepleie har 10 sp. Hos NMBU er bacheloroppgaven et valgemne i tredje studieår, ikke obligatorisk, og har 13 kandidater i 2025 (101 i perioden). Nords husdyroppgave finnes i to kodeversjoner.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_husdyr",
+          "emnekoder": [
+            "B15-HV-1"
+          ],
+          "merknad": "Bacheloroppgave, 15 sp; valgfri."
+        },
+        {
+          "entryId": "nord_husdyr",
+          "emnekoder": [
+            "BAC350-2",
+            "HUS2010-1"
+          ],
+          "merknad": "Bacheloroppgave i husdyrfag og den nye koden Bacheloroppgave i husdyrvitenskap."
+        },
+        {
+          "entryId": "inn_agronomi_husdyr",
+          "emnekoder": [
+            "6JB297-1"
+          ],
+          "merknad": "Bacheloroppgave i agronomi, 15 sp."
+        },
+        {
+          "entryId": "nord_dyrepleie",
+          "emnekoder": [
+            "DYR2000-1"
+          ],
+          "merknad": "Bacheloroppgave i dyrepleie, 10 sp."
+        }
+      ]
+    },
+    {
+      "id": "exphil",
+      "label": "Examen philosophicum",
+      "kategori": "Ex.phil",
+      "desc": "Fellesemnet i vitenskapsfilosofi og etikk.",
+      "note": "Svakeste emnetypen i gruppa. INNs agronomibachelor har ikke ex.phil. Hos NMBU er ex.phil ikke obligatorisk i husdyrbacheloren og har 3 kandidater i 2025 (26 i perioden), og Nords FIL1001 har ingen rapporterte karakterer etter 2023, selv om emnet har 33 og 124 kandidater i perioden for henholdsvis husdyrvitenskap og dyrepleie. Koblingen er derfor bare brukbar for tidsserien 2021–2023.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_husdyr",
+          "emnekoder": [
+            "PHI101-1",
+            "PHI100-1"
+          ],
+          "merknad": "Seminarversjonen og skoleeksamensversjonen av samme emne; valgfritt i husdyrbacheloren."
+        },
+        {
+          "entryId": "nord_husdyr",
+          "emnekoder": [
+            "FIL1001-1"
+          ],
+          "merknad": "Ex. Phil. Etikk, bærekraft og samfunnsansvar; ingen rapporterte karakterer etter 2023."
+        },
+        {
+          "entryId": "nord_dyrepleie",
+          "emnekoder": [
+            "FIL1001-1"
+          ],
+          "merknad": "Ingen rapporterte karakterer etter 2023."
+        }
+      ]
+    }
+  ]
+}

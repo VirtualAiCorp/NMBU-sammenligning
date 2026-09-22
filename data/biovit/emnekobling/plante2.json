@@ -1,0 +1,53 @@
+{
+  "groupId": "plante2",
+  "hentet": "2026-09-23",
+  "note": "Gruppen ender med bare fire emnetyper, fordi de tre programmene er bygd helt ulikt. INNs master i bærekraftig jordbruk er et samlingsbasert program med bare sju emner i DBH (MBJ4001S–MBJ4007S), alle brede 10–15 sp-emner, og uten registrert masteroppgavekode. NMBUs plantevitenskapsmaster består nesten utelukkende av valgemner (BIO302 og masteroppgaven er det eneste som er obligatorisk for alle), og NMBUs agroøkologimaster er systemorientert og har bare tre store emner (PAE302, PAE306 og oppgaven). Der INN har ett bredt emne, har NMBU fem–seks smale – koblingene er derfor mange-til-en. Emner er vurdert ut fra antall kandidater fra programmet i 2024 eller 2025 (minst ca. 10); for NMBUs to program er kravet myknet opp til summen for 2021–2025, siden de sjelden har mer enn 10–15 kandidater på et emne. To av NMBU-programmenes kjerneområder er ikke koblet fordi ingen av de andre har tilsvarende emner: plantevern (PLV321 plantepatologi og resistensforedling, PLV330 biologisk kontroll, PLV340 ugras) og plantefysiologi/plantebioteknologi (BIO324, BIO327, BOT200, BIO325). Motsatt er INNs emner i økologi (MBJ4003S) og i forvaltning, rådgiving og innovasjon (MBJ4006S) ikke koblet, fordi NMBU-programmene ikke har emner med nok kandidater på disse feltene (ECN260 Landbrukspolitikk og EDS330 Politisk økologi har 3 kandidater hver). Merk også at nmbu_agroekologi2 er NMBUs eget program, ikke en konkurrent ved en annen institusjon.",
+  "emnetyper": [
+    {
+      "id": "forskningsmetode",
+      "label": "Forskningsmetode, statistikk og oppgaveplanlegging",
+      "kategori": "Metode",
+      "desc": "Forskningsmetode, forsøksdesign, statistisk dataanalyse og planlegging av masteroppgaven.",
+      "note": "INN har to obligatoriske metodeemner på til sammen 20 sp, mens NMBUs plantevitenskapsmaster ikke har noe obligatorisk metode- eller statistikkemne i det hele tatt – studentene tar små valgemner, og MTH300 er et web-kurs i oppgaveplanlegging. Agroøkologimasteren har et eget forskningsmetodeemne som fra 2023 er avløst av et emne i handlingsorientert forskning.",
+      "koblinger": [
+        { "entryId": "nmbu_plante2", "emnekoder": ["MTH300-1", "STIN300-1", "BIN250-1"], "merknad": "MTH300 (5 sp web-kurs i planlegging og skriving av masteroppgaven) er det eneste med et rimelig antall kandidater; STIN300 og BIN250 er statistikkemner med svært få kandidater fra programmet" },
+        { "entryId": "inn_baerekraftig_jordbruk", "emnekoder": ["MBJ4002S-1", "MBJ4004S-1"], "merknad": "forskingsmetode og dataanalyse (10 sp) + studiedesign og statistisk metode (10 sp)" },
+        { "entryId": "nmbu_agroekologi2", "emnekoder": ["PAE305-1", "PAE306-1"], "merknad": "PAE305 «Forskningsmetoder» (2021–2022) er avløst av PAE306 «Agroøkologi: Handlingsorientert forskning» (10 sp) fra 2023" }
+      ]
+    },
+    {
+      "id": "baerekraftig-planteproduksjon",
+      "label": "Bærekraftig planteproduksjon og agroøkologi",
+      "kategori": "Plante",
+      "desc": "Bærekraftig produksjon av planteprodukter, agroøkologisk systemtenkning og teknologi i jordbruket.",
+      "note": "NMBUs to bærekraftsemner i plantevitenskap (SDG302 og PJH370) hadde ingen registrerte kandidater etter 2023 og er dermed en historisk sammenligning. INNs agroøkologiemne kom først i 2024. Nivåene er svært ulike: PAE302 ved NMBU er et 30 sp handlingslæringsemne over et helt semester, mens INNs emner er 10–15 sp.",
+      "koblinger": [
+        { "entryId": "nmbu_plante2", "emnekoder": ["SDG302-1", "PJH370-1"], "merknad": "bærekraftig planteproduksjon (5 sp) + produksjon av fremtidens planteprodukter (10 sp); begge uten kandidater fra programmet etter 2023" },
+        { "entryId": "inn_baerekraftig_jordbruk", "emnekoder": ["MBJ4007S-1", "MBJ4005S-1"], "merknad": "agroøkologi (15 sp, fra 2024) + teknologi og bærekraftig jordbruk (10 sp)" },
+        { "entryId": "nmbu_agroekologi2", "emnekoder": ["PAE302-1"], "merknad": "30 sp handlingsorientert læring i gårds- og matvaresystemer, programmets startemne" }
+      ]
+    },
+    {
+      "id": "jordfag",
+      "label": "Jord og jordkvalitet",
+      "kategori": "Plante",
+      "desc": "Jord som vekstmedium, jordhelse, jordøkologi og bærekraftig bruk av jordressursene.",
+      "note": "INNs emne er programmets tyngste enkeltemne på feltet, mens NMBUs jordemner er valgemner som bare noen få plantevitenskapsstudenter tar hvert år – kandidattallene ligger under terskelen og er tatt med fordi jordfag er et kjerneområde i begge program. Agroøkologimasteren har ingen egne jordemner; jord inngår i PAE302.",
+      "koblinger": [
+        { "entryId": "nmbu_plante2", "emnekoder": ["JORD330-1", "JORD230-1", "JORD231-1"], "merknad": "jordhelse og bærekraftig bruk av jordressurser (10 sp), jord som vekstmedium (15 sp) og gjødslingsplanlegging (5 sp); til sammen 14 kandidater 2021–2025" },
+        { "entryId": "inn_baerekraftig_jordbruk", "emnekoder": ["MBJ4001S-1"], "merknad": "jordøkologi og jordkvalitet, 10 sp; ingen registrerte kandidater etter 2024" }
+      ]
+    },
+    {
+      "id": "masteroppgave",
+      "label": "Masteroppgave",
+      "kategori": "Oppgave",
+      "desc": "Selvstendig vitenskapelig arbeid som avslutter masterstudiet.",
+      "note": "INN er ikke koblet: masteren i bærekraftig jordbruk har ingen masteroppgavekode i DBH-materialet, bare de sju MBJ-emnene. Koblingen sammenligner derfor to NMBU-program. Omfanget er også ulikt: plantevitenskap skriver i hovedsak 60 sp (M60-PV), mens agroøkologi i hovedsak skriver 30 sp (M30-AE), blant annet fordi dobbeltgraden med ISARA/FESIA krever 30 sp.",
+      "koblinger": [
+        { "entryId": "nmbu_plante2", "emnekoder": ["M60-PV-1", "M30-PV-1"], "merknad": "60 sp er hovedvalget (40 kandidater 2021–2025 mot 6 på 30 sp-varianten)" },
+        { "entryId": "nmbu_agroekologi2", "emnekoder": ["M30-AE-1", "M60-AE-1"], "merknad": "30 sp er hovedvalget (51 kandidater 2021–2025); 60 sp-varianten hadde kandidater bare i 2021" }
+      ]
+    }
+  ]
+}

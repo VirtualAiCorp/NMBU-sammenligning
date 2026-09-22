@@ -41,7 +41,6 @@ mangler ofte et fylt CA-lager, og cert-verifiseringen feiler selv med
 from __future__ import annotations
 
 import argparse
-import difflib
 import html
 import json
 import os
@@ -300,22 +299,60 @@ def _slug(s: str | None) -> str:
     return re.sub(r"[^a-zæøå0-9]", "", (s or "").lower())
 
 
-def _name_similarity(a: str, b: str) -> float:
-    return difflib.SequenceMatcher(None, (a or "").lower(), (b or "").lower()).ratio()
+# Ord som er for generiske til å telle som innholdsord når vi sammenligner
+# programnavn – gradsbetegnelser og bindeord som varierer fritt mellom DBH-
+# navnet og Studiebarometeret sitt navn på samme program, og som ellers gir
+# falske treff mellom to ULIKE programmer som tilfeldigvis deler dem (typisk
+# "Master i teknologi" som suffiks på et helt fakultets programnavn hos UiS).
+_NAME_STOPWORDS = {
+    "master", "bachelor", "masterprogram", "masterstudium", "bachelorstudium",
+    "siviløkonom", "sivilingeniør", "femårig", "integrert", "erfaringsbasert",
+    "deltid", "nettbasert", "nettstudium", "studium", "programmet", "program",
+    "alle", "linjer", "med", "for", "fra", "paa", "på", "til", "av", "og", "i",
+    "teknologi", "ingeniørfag", "siv", "ing", "år",
+}
+_VARIANT_SUFFIX_RE = re.compile(
+    r",?\s*(deltid|nettbasert|nettstudium|samlingsbasert|arbeidsplassbasert|kveld)\b.*$"
+)
 
 
-# Minste navnelikhet (difflib-ratio) OG minste margin til nest beste treff vi
+def _content_words(s: str | None) -> set[str]:
+    words = re.findall(r"[a-zæøå0-9]+", (s or "").lower())
+    return {w for w in words if w not in _NAME_STOPWORDS and len(w) >= 3}
+
+
+def _jaccard(a: str, b: str) -> float:
+    wa, wb = _content_words(a), _content_words(b)
+    if not wa or not wb:
+        return 0.0
+    return len(wa & wb) / len(wa | wb)
+
+
+def _variant_key(name: str) -> str:
+    """Slår sammen deltid/nettbasert-varianter av samme program til én gruppe
+    før vi rangerer treff, slik at f.eks. «X» og «X, deltid» ikke sluker
+    hverandres 'plass nr. 2' og kunstig visker ut margin-sjekken."""
+    return _VARIANT_SUFFIX_RE.sub("", (name or "").lower()).strip()
+
+
+def _degree_level(s: str | None) -> str | None:
+    sl = (s or "").lower()
+    if "master" in sl or "sivilingeniør" in sl or "siviløkonom" in sl:
+        return "master"
+    if "bachelor" in sl:
+        return "bachelor"
+    return None
+
+
+# Minste innholds-Jaccard OG minste margin til nest beste (ulike) treff vi
 # godtar når vi må velge basert på navn alene (kode ikke funnet i katalogen).
-# Kalibrert mot to ekte tilfeller (UiS "Byplanlegging" → 0.553 med margin
-# 0.153 til nr. 2; "Byplanlegging og samfunnssikkerhet" → 0.791/margin 0.284)
-# og to falske treff der programmet faktisk IKKE finnes på Studiebarometeret
-# (NMBU "Global økonomi og politikk" → 0.514/margin 0.067 mot «Økonomi og
-# administrasjon»; INN "Eiendomsmegling" → 0.412/margin 0.002). Rene
-# terskler på selve scoren skiller ikke godt nok (0.514 > 0.30 ville gitt
-# falskt treff) – marginen til nr. 2 er det som faktisk skiller ekte fra
-# tilfeldig ordoverlapp.
-NAME_MATCH_MIN_RATIO = 0.45
-NAME_MATCH_MIN_MARGIN = 0.12
+# Kalibrert mot ekte treff som scorer 1.0 med solid margin (UiS
+# "Byplanlegging" → 1.0/0.5; UiA "Industriell økonomi og teknologiledelse" →
+# 1.0/0.75) og falske treff der programmet faktisk IKKE finnes på
+# Studiebarometeret, som scorer lavt og/eller uten margin (NMBU "Global
+# økonomi og politikk" → 0.25/0.0; INN "Eiendomsmegling" → 0.0/0.0).
+NAME_MATCH_MIN_SCORE = 0.5
+NAME_MATCH_MIN_MARGIN = 0.3
 
 
 def find_sb_id_via_search(prog: dict, studiested: str | None, programnavn: str | None,
@@ -354,15 +391,26 @@ def find_sb_id_via_search(prog: dict, studiested: str | None, programnavn: str |
         if not catalog:
             continue
 
-        # 1) Kodematch: id-en er "<inst>_<kode>" eller "<inst>_<kode>-<campus>"
+        # 1) Kodematch: id-en er "<inst>_<kode>" eller "<inst>_<kode>-<campus>".
+        # Prøver også koden med ev. trailing sifre fjernet ("MASTINDØK5" ->
+        # "mastindøk") – DBH markerer varianter (5-årig, 2-årig) med et siffer
+        # på slutten som selve Studiebarometer-sbId-en ofte ikke har.
         for kode in koder:
             kode_l = kode.lower()
-            exact = f"{inst_i}_{kode_l}"
-            cands = [
-                h for h in catalog
-                if str(h.get("id", "")).lower() == exact
-                or str(h.get("id", "")).lower().startswith(exact + "-")
-            ]
+            kode_variants = [kode_l]
+            stripped = re.sub(r"\d+$", "", kode_l)
+            if stripped and stripped != kode_l:
+                kode_variants.append(stripped)
+            cands: list[dict] = []
+            for kv in kode_variants:
+                exact = f"{inst_i}_{kv}"
+                cands = [
+                    h for h in catalog
+                    if str(h.get("id", "")).lower() == exact
+                    or str(h.get("id", "")).lower().startswith(exact + "-")
+                ]
+                if cands:
+                    break
             if cands:
                 chosen = narrow_by_campus(cands)[0]
                 sb_id = chosen["id"]
@@ -371,24 +419,42 @@ def find_sb_id_via_search(prog: dict, studiested: str | None, programnavn: str |
                     return sb_id, got[0], got[1]
 
         # 2) Navnematch blant alt institusjonen har, hvis ingen kode traff.
-        # Krever både en absolutt minste likhet OG en klar margin til nr. 2
-        # (se NAME_MATCH_MIN_RATIO/-MARGIN) – uten det plukker den lett feil
-        # program ved tilfeldig ordoverlapp ("Global økonomi og politikk"
-        # ~ "Økonomi og administrasjon").
+        # Krever både en absolutt minste innholds-Jaccard OG en klar margin
+        # til nest beste, ULIKE program (se NAME_MATCH_MIN_SCORE/-MARGIN) –
+        # uten det plukker den lett feil program ved delt boilerplate
+        # ("Global økonomi og politikk" ~ "Økonomi og administrasjon", begge
+        # inneholder "økonomi" og "master").
         if programnavn:
             cands = narrow_by_campus(catalog) if studiested_slug or first_letter else catalog
-            ranked = sorted(cands, key=lambda h: _name_similarity(programnavn, h.get("name", "")), reverse=True)
+            groups: dict[str, tuple[float, dict]] = {}
+            for h in cands:
+                key = _variant_key(h.get("name", ""))
+                score = _jaccard(programnavn, h.get("name", ""))
+                if key not in groups or score > groups[key][0]:
+                    groups[key] = (score, h)
+            ranked = sorted(groups.values(), key=lambda t: t[0], reverse=True)
             if ranked:
-                best = ranked[0]
-                best_score = _name_similarity(programnavn, best.get("name", ""))
-                second_score = _name_similarity(programnavn, ranked[1].get("name", "")) if len(ranked) > 1 else 0.0
+                best_score, best_hit = ranked[0]
+                second_score = ranked[1][0] if len(ranked) > 1 else 0.0
                 margin = best_score - second_score
+                accept = best_score >= NAME_MATCH_MIN_SCORE and margin >= NAME_MATCH_MIN_MARGIN
+                if not accept and best_score >= NAME_MATCH_MIN_SCORE and margin == 0.0:
+                    # Uavgjort på tema (f.eks. bachelor- og mastervariant med
+                    # samme kjerneord) – avgjør på hvilken som matcher
+                    # gradsnivået i programnavn, hvis bare én gjør det.
+                    tied = [(s, h) for s, h in ranked if s == best_score]
+                    target_level = _degree_level(programnavn)
+                    level_matches = [h for _, h in tied if _degree_level(h.get("name", "")) == target_level] \
+                        if target_level else []
+                    if len(level_matches) == 1:
+                        best_hit = level_matches[0]
+                        accept = True
                 tried.append(
-                    f"navnematch:{programnavn!r}~={best.get('name')!r} "
-                    f"(score {best_score:.2f}, margin {margin:.2f})"
+                    f"navnematch:{programnavn!r}~={best_hit.get('name')!r} "
+                    f"(score {best_score:.2f}, margin {margin:.2f}, godtatt={accept})"
                 )
-                if best_score >= NAME_MATCH_MIN_RATIO and margin >= NAME_MATCH_MIN_MARGIN:
-                    sb_id = best["id"]
+                if accept:
+                    sb_id = best_hit["id"]
                     got = try_fetch_main_by_id(sb_id)
                     if got:
                         return sb_id, got[0], got[1]

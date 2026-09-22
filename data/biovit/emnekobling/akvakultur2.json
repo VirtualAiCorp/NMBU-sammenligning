@@ -1,0 +1,115 @@
+{
+  "groupId": "akvakultur2",
+  "hentet": "2026-09-23",
+  "note": "Dette er den gruppen i BIOVIT med best faglig overlapp, men tallgrunnlaget må leses med tre forbehold. (1) uit_akvamedisin2 er i virkeligheten et femårig integrert profesjonsstudium på 300 sp; de fleste emnene som kobles her ligger på 1000- og 2000-nivå og tas i bachelordelen, så karakterene sammenlignes med NMBU-emner på masternivå. (2) uit_fiskeri_havbruk2 henter tall fra den samme DBH-programkoden som den femårige fiskeri- og havbruksvitenskapen, og emnelisten er en delmengde av den; kandidatene kan derfor være studenter på det integrerte løpet. (3) nord_akvakultur2 er én felles programkode for hele Nords master i biovitenskap, med emneliste identisk med nord_biovitenskap2 og nord_husdyr2 – bare en del av kandidatene er akvakulturstudenter. Emner er vurdert ut fra antall kandidater fra programmet i 2024 eller 2025 (minst ca. 10); for NMBUs og Nords små program er kravet myknet opp til summen for 2021–2025. Tre temaer er ikke koblet: forskningsmetode og statistikk (UiT fiskeri og havbruk har SVF-3004/SVF-3033, Nord har BI300F/MET5019 og UiT akvamedisin STA-0001, men NMBUs akvakulturmaster har ikke noe eget metodeemne – STIN300 har 7 kandidater 2021–2025), marin økologi og miljøeffekter (NMBU har bare AQF200 og THT201 med svært få kandidater), og næringsøkonomi, marked og forvaltning, som er et stort felt ved UiT fiskeri og havbruk (FSK-3009, SVF-3555, BED-3074, FSK-3013) uten motstykke ved de andre.",
+  "emnetyper": [
+    {
+      "id": "akvakulturproduksjon",
+      "label": "Akvakulturproduksjon",
+      "kategori": "Akvakultur",
+      "desc": "Oppdrett av akvatiske organismer: produksjonsbiologi, driftsformer, produksjonsstyring og miljøeffekter av oppdrett.",
+      "note": "Alle fire programmene har et bredt produksjonsemne, men på ulikt nivå: NMBUs AQX300 og UiTs BIO-3011 er masteremner, mens UiT akvamedisins BIO-2508 «Aquaculture I» ligger i bachelordelen av det femårige løpet.",
+      "koblinger": [
+        { "entryId": "nmbu_akvakultur2", "emnekoder": ["AQX300-1", "AQX252-1"], "merknad": "anvendt akvakultur (10 sp, obligatorisk) + produksjonsstyring i akvakultur (nytt fra 2025)" },
+        { "entryId": "uit_fiskeri_havbruk2", "emnekoder": ["BIO-3011-2", "BIO-3011-1"], "merknad": "«Advances in Aquaculture»; emnet gikk fra 15 sp (BIO-3011-1, til og med 2021) til 10 sp" },
+        { "entryId": "nord_akvakultur2", "emnekoder": ["BIO5005-1"], "merknad": "akvakulturproduksjon og miljøeffekter, 10 sp" },
+        { "entryId": "uit_akvamedisin2", "emnekoder": ["BIO-2508-1"], "merknad": "«Aquaculture I», 10 sp på 2000-nivå" }
+      ]
+    },
+    {
+      "id": "anleggsteknologi",
+      "label": "Anleggs- og produksjonsteknologi",
+      "kategori": "Akvakultur",
+      "desc": "Teknisk utforming og drift av oppdrettsanlegg: vannbehandling, resirkulering, dimensjonering og anleggsdesign.",
+      "note": "Bare NMBU og UiT akvamedisin har egne teknologiemner. Nord og UiT fiskeri og havbruk dekker teknologi inne i de brede produksjonsemnene som er koblet under «Akvakulturproduksjon».",
+      "koblinger": [
+        { "entryId": "nmbu_akvakultur2", "emnekoder": ["AQP350-1", "AQP311-1", "AQP211-1", "AQT254-1"], "merknad": "planlegging og design av intensive fiskeoppdrettsanlegg (10 sp) + produksjonsteknikk (AQP211 er erstattet av AQP311 fra 2024) + grunnleggende akvakulturteknikk" },
+        { "entryId": "uit_akvamedisin2", "emnekoder": ["FSK-2010-1"], "merknad": "oppdrettsteknologi, 10 sp på 2000-nivå" }
+      ]
+    },
+    {
+      "id": "fiskehelse",
+      "label": "Fiskehelse og fiskesykdommer",
+      "kategori": "Akvakultur",
+      "desc": "Sykdommer hos oppdrettsfisk, patologi, parasitter, smittespredning og helsekontroll i anlegg.",
+      "note": "Dybden er helt ulik: UiT akvamedisin utdanner fiskehelsebiologer og har fem–seks emner med klinisk innretning, mens NMBU har to mindre emner og Nord ett. UiT fiskeri og havbruk har ingen fiskehelseemner i emnelisten sin.",
+      "koblinger": [
+        { "entryId": "nmbu_akvakultur2", "emnekoder": ["AQX301-1", "AQX201-1"], "merknad": "AQX201 «Fiskehelsebiologi» (10 sp) er fra 2024 avløst av AQX301 «Fiskehelse» (5 sp)" },
+        { "entryId": "uit_akvamedisin2", "emnekoder": ["BIO-2604-1", "BIO-2605-1", "BIO-3630-1", "BIO-3519-1"], "merknad": "fiskesykdommer, fiskepatologi, helsekontroll og klinikk i havbruk (praksisemne) og parasitter og epidemiologi" },
+        { "entryId": "nord_akvakultur2", "emnekoder": ["AK310F-1"], "merknad": "helse hos akvatiske oppdrettsorganismer, 10 sp" }
+      ]
+    },
+    {
+      "id": "fiskeernaering",
+      "label": "Fiskeernæring og fôr",
+      "kategori": "Akvakultur",
+      "desc": "Ernæringsbehov hos oppdrettsarter, fôrmidler, fôrsammensetning og bærekraftige fôrråvarer.",
+      "note": "UiT fiskeri og havbruk har ikke noe ernæringsemne i emnelisten sin og er derfor ikke koblet.",
+      "koblinger": [
+        { "entryId": "nmbu_akvakultur2", "emnekoder": ["AQN350-1", "AQN351-1"], "merknad": "akvakulturernæring (10 sp) + bærekraftige fôrråvarer (5 sp, ingen kandidater etter 2023)" },
+        { "entryId": "uit_akvamedisin2", "emnekoder": ["BIO-2602-1"], "merknad": "fiskeernæring, 10 sp" },
+        { "entryId": "nord_akvakultur2", "emnekoder": ["AK320F-1"], "merknad": "bærekraftig akvakulturernæring, 10 sp; få kandidater fra programmet" }
+      ]
+    },
+    {
+      "id": "fiskebiologi-fysiologi",
+      "label": "Fiskebiologi og fiskefysiologi",
+      "kategori": "Akvakultur",
+      "desc": "Fiskens anatomi, fysiologi, tilpasninger og atferd som grunnlag for oppdrett.",
+      "note": "UiT fiskeri og havbruk er ikke koblet: programmet har bare BIO-3512 «Early life of marine fish» med få kandidater. NMBUs BIO314 er obligatorisk og er det emnet i gruppen med flest kandidater fra eget program.",
+      "koblinger": [
+        { "entryId": "nmbu_akvakultur2", "emnekoder": ["BIO314-1", "BIO315-2", "BIO315-1"], "merknad": "fiskens fysiologi og tilpasninger (5 sp, obligatorisk) + adferdsbiologi hos fisk" },
+        { "entryId": "uit_akvamedisin2", "emnekoder": ["BIO-2504-1", "BIO-2506-1", "BIO-2002-1"], "merknad": "fiskefysiologi, innføring i fiskebiologi og dyrefysiologi, alle 10 sp på 2000-nivå" },
+        { "entryId": "nord_akvakultur2", "emnekoder": ["BIO5001-1", "BIO5026-1"], "merknad": "«Fiskefysiologi»; BIO5001 (10 sp) er erstattet av BIO5026 (7,5 sp) fra 2025" }
+      ]
+    },
+    {
+      "id": "dyrevelferd-baerekraft",
+      "label": "Dyrevelferd og bærekraft i akvakultur",
+      "kategori": "Akvakultur",
+      "desc": "Velferd hos oppdrettsorganismer, velferdsindikatorer og bærekraftvurdering av oppdrettsnæringen.",
+      "note": "Nord er ikke koblet: programmet har ingen velferdsemne for akvatiske dyr – DR443F og BIO5024 er forsøksdyrlære og dekker et annet formål. NMBUs AQX251 er obligatorisk og kombinerer bærekraft og velferd i ett emne.",
+      "koblinger": [
+        { "entryId": "nmbu_akvakultur2", "emnekoder": ["AQX251-1"], "merknad": "bærekraft og dyrevelferd i akvakultur, 5 sp, obligatorisk (20 kandidater i 2025)" },
+        { "entryId": "uit_akvamedisin2", "emnekoder": ["BIO-3503-1", "BIO-3613-1"], "merknad": "«Aquatic Animal Welfare» (5 sp) + fiskevelferd i havbruk (5 sp)" },
+        { "entryId": "uit_fiskeri_havbruk2", "emnekoder": ["BIO-3503-1", "SVF-3650-1"], "merknad": "samme velferdsemne som akvamedisin, i hovedsak tatt i 2021–2022; SVF-3650 er bærekraftig oppdrett av lavtrofiske arter" }
+      ]
+    },
+    {
+      "id": "produktkvalitet-sjomat",
+      "label": "Produktkvalitet og sjømat",
+      "kategori": "Akvakultur",
+      "desc": "Kvalitet, foredling og trygghet i sjømat- og akvakulturprodukter.",
+      "note": "Nord har ingen emner i sjømat eller produktkvalitet og er ikke koblet. UiTs BIO-3607 «Matvaretrygghet» er det samme emnet for begge UiT-programmene, men med ulik vekt: det er obligatorisk i akvamedisin og valgfritt i fiskeri- og havbruksvitenskap, der kandidattallet har falt kraftig.",
+      "koblinger": [
+        { "entryId": "nmbu_akvakultur2", "emnekoder": ["AQQ253-1", "MVI320-1"], "merknad": "produktkvalitet akvakultur (5 sp) + fisketeknologi (10 sp)" },
+        { "entryId": "uit_fiskeri_havbruk2", "emnekoder": ["FSK-3004-1", "BIO-3607-1"], "merknad": "næringsmiddelkunnskap (10 sp, vokst kraftig i 2025) + matvaretrygghet" },
+        { "entryId": "uit_akvamedisin2", "emnekoder": ["BIO-3607-1"], "merknad": "matvaretrygghet, 10 sp, obligatorisk" }
+      ]
+    },
+    {
+      "id": "avl-genomikk",
+      "label": "Avl, genetikk og genomikk",
+      "kategori": "Akvakultur",
+      "desc": "Avlsarbeid og genetikk hos oppdrettsarter, og genomiske og bioinformatiske verktøy for akvatiske arter.",
+      "note": "Koblingen er tematisk: NMBUs emner handler om avl og genetikk i oppdrett, mens Nords emne er akvagenomikk og bioinformatikk. Begge sider har få kandidater, og NMBUs AQB270 hadde ingen kandidater etter 2022. UiT-programmene har ikke egne avlsemner (FSK-3053 har 3 kandidater i 2022).",
+      "koblinger": [
+        { "entryId": "nmbu_akvakultur2", "emnekoder": ["AQB270-1", "AQB250-1"], "merknad": "AQB270 «Akvakultur – avl og genetikk» er erstattet av AQB250 «Bærekraftig akvakultur – avl og genetikk» fra 2022" },
+        { "entryId": "nord_akvakultur2", "emnekoder": ["BI311F-1"], "merknad": "akvagenomikk og bioinformatikk, 10 sp" }
+      ]
+    },
+    {
+      "id": "masteroppgave",
+      "label": "Masteroppgave",
+      "kategori": "Oppgave",
+      "desc": "Selvstendig vitenskapelig arbeid som avslutter masterstudiet.",
+      "note": "Hovedvalget er 60 sp i alle fire programmene, men NMBU og UiT fiskeri og havbruk har også mindre varianter (NMBU 30 og 45 sp, UiT 30 sp), og UiT akvamedisins oppgave er femte studieår i et integrert profesjonsstudium. Nord registrerer oppgaven per studieretning, og akvakulturkoden har bare 3 kandidater i 2024 og 2025.",
+      "koblinger": [
+        { "entryId": "nmbu_akvakultur2", "emnekoder": ["M60-AA-1", "M30-AA-1", "M60-AQFOOD-1"], "merknad": "M60-AA/M30-AA er akvakulturmasterens egne koder; M60-AQFOOD hører til fellesgraden Aquatic Food Production og har kandidater registrert på programmet fra 2024" },
+        { "entryId": "uit_fiskeri_havbruk2", "emnekoder": ["FSK-3960-1", "FSK-3960-2"], "merknad": "60 sp; to versjoner av samme emnekode i perioden" },
+        { "entryId": "nord_akvakultur2", "emnekoder": ["BIO5022-1", "AK306F-1"], "merknad": "60 sp masteroppgave i akvakultur; AK306F er den eldre koden (til og med 2023)" },
+        { "entryId": "uit_akvamedisin2", "emnekoder": ["BIO-3955-1"], "merknad": "60 sp mastergradsoppgave i akvamedisin, hele 5. studieår" }
+      ]
+    }
+  ]
+}

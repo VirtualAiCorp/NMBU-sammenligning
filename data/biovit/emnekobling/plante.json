@@ -1,0 +1,275 @@
+{
+  "groupId": "plante",
+  "hentet": "2026-09-23",
+  "note": "Dette er den tynneste gruppa i BIOVIT-kartet, og den har derfor bare ni emnetyper mot tolv i de andre gruppene. Grunnene er tre. For det første finnes det ingen andre rene plantevitenskapsprogrammer i Norge: de to konkurrentene er begge Blæstad-utdanninger ved Universitetet i Innlandet, og de deler tolv av atten emner med hverandre, slik at «to konkurrenter» i praksis er én emneportefølje. For det andre er INNs program agronomi- og teknikkutdanninger der planteproduksjon er én av flere deler; de har ingen emner i kjemi, mikrobiologi, økonomi eller ex.phil som kan måles mot NMBUs, og NMBUs KJM100, BIO130, BUS100 og PHI101 er derfor ikke koblet i det hele tatt. For det tredje er NMBUs plantevitenskapsbachelor et svært lite program: det høyeste kandidattallet i 2025 er 17 (PJH230 Frukt og bær), og de fleste emnene har 5–14. Terskelen er derfor senket til summen for 2021–2025 gjennomgående i denne gruppa, og det står i merknaden der et enkeltemne likevel er lite. Motsatt vei mangler NMBU en motpart til INNs landbruksteknikk: feltmekanisering, traktorer, landbruksmaskiner, presisjonsjordbruk og bygningsteknikk (LAN-emnene og 6JB242) utgjør 45–60 sp hos INN og har ingen tilsvarende emner med rapporterte karakterer hos NMBU, så de er ikke koblet. Det samme gjelder bacheloroppgave: INN har 6JB297 og 6JB299 på 15 sp, mens NMBUs plantevitenskapsbachelor ikke har noen obligatorisk eller valgfri bacheloroppgavekode med rapporterte karakterer. Merk til slutt at INNs Naturgrunnlaget finnes i to kodeversjoner (AGR1101 og AGR1105), og at inn_agronomi er det samme programmet som inn_agronomi_husdyr i husdyrgruppa.",
+  "emnetyper": [
+    {
+      "id": "innforing-i-faget",
+      "label": "Innføringsemne i faget",
+      "kategori": "Plante",
+      "desc": "Førstesemesteremnet som introduserer faget, næringa og yrkesmulighetene, ofte med gårds- og bedriftsbesøk.",
+      "note": "NMBUs PJH102 er et intensivt augustblokkemne på 5 sp før første høstsemester, mens INNs LAN1101 Innføring i landbruk er på 15 sp og dekker hele landbruket, ikke bare plantefag. Emnet er felles for INNs to program.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_plante",
+          "emnekoder": [
+            "PJH102-1"
+          ],
+          "merknad": "Innføringsemne i plantevitenskap, 5 sp i augustblokk."
+        },
+        {
+          "entryId": "inn_agronomi",
+          "emnekoder": [
+            "LAN1101-1"
+          ],
+          "merknad": "Innføring i landbruk, 15 sp; bredere enn NMBUs emne."
+        },
+        {
+          "entryId": "inn_landbruksteknikk",
+          "emnekoder": [
+            "LAN1101-1"
+          ],
+          "merknad": "Felles emne med agronomibacheloren."
+        }
+      ]
+    },
+    {
+      "id": "plantebiologi-og-plantefysiologi",
+      "label": "Plantebiologi og plantefysiologi",
+      "kategori": "Plante",
+      "desc": "Plantenes bygning, artsmangfold og funksjon: fotosyntese, vann- og næringsopptak, vekst og utvikling.",
+      "note": "Her er forskjellen størst i gruppa. NMBU har tre emner (BOT100 Plantediversitet, BOT130 Grunnleggende plantefysiologi og BOT200 Plantefysiologi, til sammen 20 sp), mens INNs agronomibachelor bare har 6JB121 Biologi på 7,5 sp, der plantebiologi er én del av et bredere pensum. INNs landbruksteknikk har ikke noe biologiemne i det hele tatt og er ikke koblet.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_plante",
+          "emnekoder": [
+            "BOT130-1",
+            "BOT200-1",
+            "BOT100-1"
+          ],
+          "merknad": "Grunnleggende plantefysiologi, Plantefysiologi og Plantediversitet."
+        },
+        {
+          "entryId": "inn_agronomi",
+          "emnekoder": [
+            "6JB121-1"
+          ],
+          "merknad": "Biologi, 7,5 sp; dekker plantebiologi som én av flere deler."
+        }
+      ]
+    },
+    {
+      "id": "plantedyrking-og-produksjon",
+      "label": "Plantedyrking og planteproduksjon",
+      "kategori": "Plante",
+      "desc": "Dyrking av kulturvekster: vekstkrav, kulturteknikk, gjødsling, avling og kvalitet i åker, hage og veksthus.",
+      "note": "NMBUs emner er hagebruksrettede (frukt og bær, grønnsaker og potet, veksthusproduksjon) og er valgemner i tredje studieår, mens INNs AGR1103 Planter og produksjon er et obligatorisk åkerbruksemne på 7,5 sp. Sammenligningen er derfor reell på fagnivå, men NMBU dekker hagebruk og INN dekker korn, gras og potet i stor skala.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_plante",
+          "emnekoder": [
+            "PJH230-1",
+            "PJH240-1",
+            "PJH250-1",
+            "PJH251-1",
+            "PJH105-1"
+          ],
+          "merknad": "Frukt og bær, Grønnsaker og potet, Planteproduksjon i regulert klima, Produksjon av utplantingsplanter og Urbant landbruk; alle valgemner med 6–17 kandidater i 2025."
+        },
+        {
+          "entryId": "inn_agronomi",
+          "emnekoder": [
+            "AGR1103-1"
+          ],
+          "merknad": "Planter og produksjon, 7,5 sp."
+        },
+        {
+          "entryId": "inn_landbruksteknikk",
+          "emnekoder": [
+            "AGR1103-1"
+          ],
+          "merknad": "Felles emne med agronomibacheloren."
+        }
+      ]
+    },
+    {
+      "id": "jordlaere",
+      "label": "Jordlære og naturgrunnlag",
+      "kategori": "Plante",
+      "desc": "Jordas oppbygning, egenskaper og prosesser, jord som vekstmedium, plantenæring, gjødsling og jordkultur.",
+      "note": "NMBU har to rene jordemner (JORD100 Jordlære, 5 sp, og JORD230 Jord som vekstmedium, 15 sp). INNs motpart er Naturgrunnlaget (15 sp), som i tillegg til jordlære dekker klima, geologi og botanikk; koblingen er derfor bredere enn NMBUs. Emnet finnes i to kodeversjoner (AGR1101 og den nye AGR1105) og er felles for INNs to program.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_plante",
+          "emnekoder": [
+            "JORD100-1",
+            "JORD230-1",
+            "JORD101-1"
+          ],
+          "merknad": "Jordlære (5 sp) og Jord som vekstmedium (15 sp); JORD101 er den eldre kodeversjonen av Jordlære."
+        },
+        {
+          "entryId": "inn_agronomi",
+          "emnekoder": [
+            "AGR1101-1",
+            "AGR1105-1"
+          ],
+          "merknad": "To kodeversjoner av Naturgrunnlaget, 15 sp; dekker også klima og geologi."
+        },
+        {
+          "entryId": "inn_landbruksteknikk",
+          "emnekoder": [
+            "AGR1101-1",
+            "AGR1105-1"
+          ],
+          "merknad": "Felles emne med agronomibacheloren."
+        }
+      ]
+    },
+    {
+      "id": "plantevern",
+      "label": "Plantevern og plantehelse",
+      "kategori": "Plante",
+      "desc": "Plantesykdommer, skadedyr og ugras, skadeterskler, integrert plantevern og plantevernmidler.",
+      "note": "INNs landbruksteknikk har ikke noe plantevernemne. NMBUs PLV200 er et intensivemne på 15 sp som strekker seg over juniblokk, augustblokk og høstparallell, mot INNs 7,5 sp – NMBUs emne har altså dobbelt omfang, men bare 7 kandidater i 2025 (50 i perioden) mot INNs 24.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_plante",
+          "emnekoder": [
+            "PLV200-1"
+          ],
+          "merknad": "Sykdommer, skadedyr og ugras i jord- og hagebruk, 15 sp."
+        },
+        {
+          "entryId": "inn_agronomi",
+          "emnekoder": [
+            "AGR2201-1"
+          ],
+          "merknad": "Plantevern og plantehelse, 7,5 sp."
+        }
+      ]
+    },
+    {
+      "id": "presisjonsjordbruk-og-gjodsling",
+      "label": "Gjødslingsplanlegging og presisjonsjordbruk",
+      "kategori": "Plante",
+      "desc": "Gjødslingsplanlegging, næringsbalanser og bruk av sensorer, kart og posisjonsdata i planteproduksjonen.",
+      "note": "NMBUs JORD231 er et valgemne på 5 sp som bare har vært rapportert i 2023 og 2025, med 6 og 7 kandidater; koblingen er derfor svak på NMBU-siden. INNs LAN2302 Presisjonsjordbruk er obligatorisk i begge Blæstad-programmene og har 13–20 kandidater i 2025. NMBUs TMPA210 Presisjonslandbruk og sensorteknologi er ikke koblet fordi det bare har tre kandidater i hele perioden.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_plante",
+          "emnekoder": [
+            "JORD231-1"
+          ],
+          "merknad": "Gjødslingsplanlegging og presisjonsjordbruk, 5 sp; valgemne med få kandidater."
+        },
+        {
+          "entryId": "inn_agronomi",
+          "emnekoder": [
+            "LAN2302-1"
+          ],
+          "merknad": "Presisjonsjordbruk, 7,5 sp."
+        },
+        {
+          "entryId": "inn_landbruksteknikk",
+          "emnekoder": [
+            "LAN2302-1"
+          ],
+          "merknad": "Felles emne med agronomibacheloren."
+        }
+      ]
+    },
+    {
+      "id": "genetikk-og-planteforedling",
+      "label": "Genetikk og planteforedling",
+      "kategori": "Plante",
+      "desc": "Arvelære, sortsutvikling, genetisk mangfold i kulturplanter og bioteknologiske metoder i planteforedling.",
+      "note": "INNs landbruksteknikk har ikke noe genetikkemne. NMBU har et generelt genetikkemne (BIO120, 10 sp) pluss to plantespesifikke valgemner, mens INNs AGR2301 Planteforedling og diversitet er ett emne på 7,5 sp uten generell genetikkdel.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_plante",
+          "emnekoder": [
+            "BIO120-1",
+            "BIO248-1",
+            "BIO244-1"
+          ],
+          "merknad": "Genetikk (10 sp) samt valgemnene Genetikk og planteforedling og Plantebioteknologi: celle- og vevskultur og genmodifisering."
+        },
+        {
+          "entryId": "inn_agronomi",
+          "emnekoder": [
+            "AGR2301-1"
+          ],
+          "merknad": "Planteforedling og diversitet, 7,5 sp."
+        }
+      ]
+    },
+    {
+      "id": "statistikk-og-vitenskapelig-metode",
+      "label": "Statistikk og vitenskapelig metode",
+      "kategori": "Metode",
+      "desc": "Statistisk analyse av forsøksdata, forsøksdesign, vitenskapelig metode og rapportskriving.",
+      "note": "NMBU har to rene metodeemner à 10 sp (STAT100 Statistikk og STIN100 Biologisk dataanalyse), men STAT100 har bare 3 kandidater fra plantebacheloren i 2025 og STIN100 er nytt i studieplanen. INN har ett stort kombinert emne (AGR2202, 15 sp) pluss rapportemnet 6JB295, begge felles for de to Blæstad-programmene.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_plante",
+          "emnekoder": [
+            "STIN100-1",
+            "STAT100-1"
+          ],
+          "merknad": "Biologisk dataanalyse og Statistikk; STAT100 har få kandidater fra plantebacheloren (46 i perioden 2021–2025)."
+        },
+        {
+          "entryId": "inn_agronomi",
+          "emnekoder": [
+            "AGR2202-1",
+            "6JB295-1"
+          ],
+          "merknad": "Vitenskapelig metode og statistikk (15 sp) og Rapport og analyse (7,5 sp)."
+        },
+        {
+          "entryId": "inn_landbruksteknikk",
+          "emnekoder": [
+            "AGR2202-1",
+            "6JB295-1"
+          ],
+          "merknad": "Felles emner med agronomibacheloren."
+        }
+      ]
+    },
+    {
+      "id": "baerekraft-og-landbruk-i-samfunnet",
+      "label": "Bærekraft, matproduksjon og landbruk i samfunnet",
+      "kategori": "Bærekraft",
+      "desc": "Bærekraftige matproduksjonssystemer, klima og miljø, og landbrukets rolle i samfunnet.",
+      "note": "NMBU har to emner à 5 sp med vekt på matproduksjonssystemer og bærekraft, mens INNs AGR1102 Landbruk, miljø og samfunn (7,5 sp) legger mer vekt på landbrukspolitikk og samfunnsrolle. INNs emne finnes i to kodeversjoner (AGR1102 og den eldre 6JB110) og er felles for begge Blæstad-programmene.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_plante",
+          "emnekoder": [
+            "HFX133-1",
+            "SDG200-1",
+            "PØL100-1"
+          ],
+          "merknad": "Utfordringer for framtidas matproduksjon, Bærekraftige matproduksjonssystemer og valgemnet PØL100 Økologisk landbruk."
+        },
+        {
+          "entryId": "inn_agronomi",
+          "emnekoder": [
+            "AGR1102-1",
+            "6JB110-1"
+          ],
+          "merknad": "To kodeversjoner av Landbruk, miljø og samfunn."
+        },
+        {
+          "entryId": "inn_landbruksteknikk",
+          "emnekoder": [
+            "AGR1102-1",
+            "6JB110-1"
+          ],
+          "merknad": "Felles emne med agronomibacheloren."
+        }
+      ]
+    }
+  ]
+}

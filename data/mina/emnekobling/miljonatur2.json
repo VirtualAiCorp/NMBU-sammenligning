@@ -1,0 +1,102 @@
+{
+  "groupId": "miljonatur2",
+  "hentet": "2026-09-23",
+  "note": "Gruppen er faglig bred, og overlappen varierer sterkt fra program til program. NMBUs miljøvitenskap er bygd på miljøkjemi, jord og vann; NTNUs miljøtoksikologi treffer godt på miljøkjemi- og økotoksikologisiden; geofagsmasterne ved UiO og UiB deler jord-, vann-, geokjemi- og klimatemaene, men har i tillegg store geologiske fagfelt (tektonikk, sedimentologi, seismikk) uten motstykke ved NMBU. NTNUs «Industrial Ecology» viste seg å overlappe svært lite: programmet er bygd på livsløpsvurdering, materialstrømanalyse, kryssløpsanalyse og miljøøkonomi, og NMBUs miljøvitenskap har ingen emner i dette med rapporterte karakterer (FORN220 Livsløpsvurdering ligger på fornybar energi-masteren). NTNU Industriell økologi er derfor bare koblet på masteroppgave, fordypningsprosjekt og fagseminar. NMBUs forgjengerprogram «Miljø og naturressurser» (siste opptak 2021) har data for 2021-2023 og er tatt med der emnene er de samme eller direkte forløpere; tallene er små. Fordi programmene er små, er terskelen for å ta med et emne satt til minst ti kandidater samlet i perioden 2021-2025. HMS- og sikkerhetskurs uten studiepoeng (HMS0003, HMS0501-HMS0507) er utelatt. Emner som ikke er koblet fordi de mangler motstykke: NMBUs miljøforvaltningsrett (JUS220), UiOs og UiBs geofarer-, tektonikk-, sedimentologi- og seismikkemner, NTNU Miljøtoksikologis arktiske Svalbard-emner (AT330, AT331), og hele NTNU Industriell økologis fagportefølje. Det finnes heller ingen GIS- eller fjernmålingskobling: NMBUs miljøvitenskap har ikke noe slikt emne med rapporterte karakterer, mens UiO og UiB har flere.",
+  "emnetyper": [
+    {
+      "id": "forskningsmetode",
+      "label": "Vitenskapelig metode, feltarbeid og formidling",
+      "kategori": "Metode",
+      "desc": "Vitenskapsteori og forskningsdesign, innsamling og kvalitetsvurdering av felt- og laboratoriedata, og vitenskapelig skriving og presentasjon.",
+      "note": "NMBUs MILJØ302 er et feltbasert augustblokkemne der studentene samler inn jord- og vannprøver i et nedbørfelt, analyserer dem og presenterer resultatene som poster og muntlig framlegg. Det vurderes bestått/ikke bestått og slår derfor ikke ut på karaktersnittet. Det samme gjelder NTNUs BI3086 (0 sp).",
+      "koblinger": [
+        { "entryId": "nmbu_miljovitenskap2", "emnekoder": ["MILJØ302-1", "MINA310-1", "LNG250-1"], "merknad": "MILJØ302 Miljøvitenskap (5 sp, obligatorisk, bestått/ikke bestått) + MINA310 Naturvitenskapelig metode + LNG250 Akademisk skriving" },
+        { "entryId": "nmbu_mina2_forgjenger", "emnekoder": ["MINA302-1", "ECOL300-1"], "merknad": "MINA302 Introduksjon til masterstudiet (5 sp) var forgjengerens obligatoriske innføringsemne" },
+        { "entryId": "ntnu_miljotoks2", "emnekoder": ["RFEL3070-1", "BI3086-1", "BI3052-1"], "merknad": "RFEL3070 Scientific Seminars in Environmental Toxicology and Chemistry (7,5 sp) er programmets obligatoriske seminaremne" },
+        { "entryId": "ntnu_industriell_okologi2", "emnekoder": ["TEP4305-1"], "merknad": "seminar i kritisk gjennomgang og formidling av vitenskap, 7,5 sp; siste kandidater i 2023" },
+        { "entryId": "uio_geofag2", "emnekoder": ["GEO4012-1", "GEO5550-1"], "merknad": "Vitenskapelig skriving og presentasjon (5 sp) + fagseminar (5 sp)" },
+        { "entryId": "uib_geovitenskap2", "emnekoder": ["GEOV300-0"], "merknad": "Akademisk skriving og kommunikasjon i geovitenskap, 5 sp" }
+      ]
+    },
+    {
+      "id": "miljokjemi-okotoksikologi",
+      "label": "Miljøkjemi og økotoksikologi",
+      "kategori": "Miljø",
+      "desc": "Miljøgifters kjemi, spredning og omdanning i naturen, effekter på organismer, og analysemetoder for miljøkjemi.",
+      "note": "Dette er den sterkeste koblingen i gruppen. NTNUs miljøtoksikologimaster har hele sin kjerne her, med seks emner fordelt på økotoksikologi (BI-emner) og analytisk og organisk miljøkjemi (KJ-emner), mens NMBU dekker feltet med to-tre valgemner. UiOs og UiBs emner er geokjemisk vinklet og dekker forurensning i grunn og berg mer enn i organismer.",
+      "koblinger": [
+        { "entryId": "nmbu_miljovitenskap2", "emnekoder": ["FMI310-1", "FMI312-1", "MILJØ200-1"], "merknad": "Miljøgifter og økotoksikologi (10 sp), Human miljøkjemi (10 sp) og Forurensning og miljø (10 sp)" },
+        { "entryId": "nmbu_mina2_forgjenger", "emnekoder": ["FMI310-1", "FMI309-1", "FMI330-1"], "merknad": "forgjengeren hadde en egen studieretning i miljøgifter og økotoksikologi; få kandidater per emne" },
+        { "entryId": "ntnu_miljotoks2", "emnekoder": ["BI3072-1", "BI3071-1", "BI3075-1", "BI3073-1", "KJ3073-1", "KJ3050-1"], "merknad": "miljøtoksikologi, avansert og eksperimentell økotoksikologi, gentoksikologi, analytisk miljøkjemi og marin organisk miljøkjemi, 7,5 sp hver" },
+        { "entryId": "uio_geofag2", "emnekoder": ["GEO4161-1"], "merknad": "Forurensninger i geomiljøet, 10 sp; få kandidater" },
+        { "entryId": "uib_geovitenskap2", "emnekoder": ["GEOV243-0"], "merknad": "Miljøgeokjemi, 10 sp" }
+      ]
+    },
+    {
+      "id": "jord-og-forurenset-grunn",
+      "label": "Jord og forurenset grunn",
+      "kategori": "Miljø",
+      "desc": "Jordas kjemiske og fysiske egenskaper, jordanalyser, jordhelse og håndtering av forurenset grunn.",
+      "note": "Jordfag er et NMBU-særtrekk i denne gruppen. UiO dekker den anvendte delen gjennom miljøgeologi og kjemiske prosesser i jord og grunnvann, mens verken NTNU-programmene eller UiB har jordfaglige emner.",
+      "koblinger": [
+        { "entryId": "nmbu_miljovitenskap2", "emnekoder": ["JORD310-1", "JORD213-1", "JORD210-2", "JORD330-1"], "merknad": "Jordforurensning og bærekraft (10 sp) er programmets største fagemne" },
+        { "entryId": "nmbu_mina2_forgjenger", "emnekoder": ["JORD310-1", "JORD212-1", "JORD101-1", "JORD210-1"], "merknad": "forgjengeren hadde en egen studieretning i jord og miljø" },
+        { "entryId": "uio_geofag2", "emnekoder": ["GEO4100-1", "GEO5900-1"], "merknad": "Miljøgeologi (10 sp) + Kjemiske prosesser i jord og grunnvann (10 sp)" }
+      ]
+    },
+    {
+      "id": "vann-og-hydrologi",
+      "label": "Vann, vannforurensning og hydrologi",
+      "kategori": "Vann",
+      "desc": "Vannkvalitet og vannforurensning, limnologiske metoder, tiltaksplanlegging i vannforvaltningen, og hydrologi og hydrogeologi.",
+      "note": "Koblingen er tematisk bred og dekker to litt ulike tradisjoner: NMBUs emner er rettet mot vannkvalitet, forurensning og forvaltning av vannforekomster, mens UiOs emner er rene hydrologi- og hydrogeologiemner om vannets kretsløp og bevegelse i grunnen. Felles for dem er nedbørfeltet som analyseenhet. Verken NTNU-programmene eller UiB har vannfaglige emner som er direkte sammenlignbare.",
+      "koblinger": [
+        { "entryId": "nmbu_miljovitenskap2", "emnekoder": ["VANN300-1", "VANN310-1", "MILJØ210-1", "VANN211-1", "VANN210-1", "VANN301-1"], "merknad": "Vannforurensning (10 sp), Tiltaksplanlegging i vannforvaltning (10 sp) og Biogeokjemi for vann- og avløpsforvaltning (10 sp) er de største" },
+        { "entryId": "nmbu_mina2_forgjenger", "emnekoder": ["VANN211-1", "VANN311-1", "VANN300-1", "VANN301-1", "VANN301-V22", "VANN210-1", "GEO300-1"], "merknad": "forgjengeren hadde en egen studieretning i limnologi og vannressurser; VANN301 endret kode og navn i 2022" },
+        { "entryId": "uio_geofag2", "emnekoder": ["GEO4190-1", "GEO4320-1", "GEO4360-1", "GEO4340-1"], "merknad": "Hydrogeologi, Hydrologisk modellering, Feltmetoder i hydrogeologi og Fluvial hydrologi" }
+      ]
+    },
+    {
+      "id": "globale-miljoendringer",
+      "label": "Globale miljøendringer og paleoklima",
+      "kategori": "Klima",
+      "desc": "Jordsystemet og samspillet mellom atmosfære, hav, is og land, klimaendringer i nåtid og fortid, og hvordan klimahistorien leses ut av sedimenter og iskjerner.",
+      "note": "NTNU Miljøtoksikologi har ingen klimaemner. NTNU Industriell økologis TEP4300 Klimavern handler om klimatiltak og utslippsreduksjon, ikke om jordsystemet, og er derfor ikke koblet her. NMBUs GEO310 har svært få kandidater.",
+      "koblinger": [
+        { "entryId": "nmbu_miljovitenskap2", "emnekoder": ["MILJØ300-1", "GEO310-1"], "merknad": "Globale miljøendringer og jordsystemet (10 sp) + Paleomiljø og klimaendringer (10 sp)" },
+        { "entryId": "nmbu_mina2_forgjenger", "emnekoder": ["MINA300-1"], "merknad": "Globale miljøendringer og jordsystemet; samme emne som dagens MILJØ300, med gammel kode" },
+        { "entryId": "uio_geofag2", "emnekoder": ["GEO4990-1", "GEO4140-1"], "merknad": "The Earth System (10 sp) + Miljøstratigrafi (10 sp)" },
+        { "entryId": "uib_geovitenskap2", "emnekoder": ["GEOV222-0", "GEOV324-0"], "merknad": "Paleoklimatologi (10 sp) + Paleoklima i polare strøk (5 sp)" }
+      ]
+    },
+    {
+      "id": "spesialpensum-fordypning",
+      "label": "Spesialpensum og fordypningsprosjekt",
+      "kategori": "Oppgave",
+      "desc": "Individuelt veiledet arbeid utenom de ordinære emnene: selvvalgt pensum eller et prosjekt som forbereder masteroppgaven.",
+      "note": "Alle programmene utenom forgjengeren har en slik ordning, men den er organisert ulikt: NMBU, NTNU Miljøtoksikologi, UiO og UiB har spesialpensum med individuelt fastsatt omfang, mens NTNU Industriell økologi har et strukturert prosjektemne på 15 sp som leder fram mot masteroppgaven på 30 sp. UiB har tre parallelle spesialpensumkoder.",
+      "koblinger": [
+        { "entryId": "nmbu_miljovitenskap2", "emnekoder": ["SPE-M-MINA-2"], "merknad": "Spesialpensum" },
+        { "entryId": "ntnu_miljotoks2", "emnekoder": ["KJ3091-2", "BI3091-1"], "merknad": "spesialpensum til mastergraden, 7,5 sp" },
+        { "entryId": "ntnu_industriell_okologi2", "emnekoder": ["TEP5100-1"], "merknad": "Industriell økologi, prosjekt, 15 sp" },
+        { "entryId": "uio_geofag2", "emnekoder": ["GEOSP050-1", "GEOSP100-1"], "merknad": "spesialpensum geofag, 5 og 10 sp" },
+        { "entryId": "uib_geovitenskap2", "emnekoder": ["Z-GEOV-0", "Z-GEOV-A-0", "Z-GEOV-B-0"], "merknad": "tre spesialpensumkoder med varierende omfang" }
+      ]
+    },
+    {
+      "id": "masteroppgave",
+      "label": "Masteroppgave",
+      "kategori": "Oppgave",
+      "desc": "Selvstendig vitenskapelig arbeid som avslutter masterstudiet.",
+      "note": "Omfanget varierer mest i denne gruppen: NMBUs miljøvitenskap har 45 sp som hovedvariant i dagens studieplan, men 60 sp-varianten er fortsatt den mest brukte i tallene, og 30 sp finnes også. NTNU Miljøtoksikologi, UiO og UiB har alle 60 sp, mens NTNU Industriell økologi har 30 sp pluss et eget prosjektemne på 15 sp. NTNU Miljøtoksikologi og forgjengerprogrammet ved NMBU har hver to oppgavekoder, en per studieretning.",
+      "koblinger": [
+        { "entryId": "nmbu_miljovitenskap2", "emnekoder": ["M60-MILJØ-1", "M45-MILJØ-1", "M30-MILJØ-1"], "merknad": "60, 45 og 30 sp" },
+        { "entryId": "nmbu_mina2_forgjenger", "emnekoder": ["M60-MINA-1", "M60-MILJØ-1"], "merknad": "60 sp; kullene fra det nedlagte programmet leverte dels på den nye koden" },
+        { "entryId": "ntnu_miljotoks2", "emnekoder": ["BIENV3900-1", "KJ3910-1"], "merknad": "60 sp; egen kode for biologi- og kjemiretningen" },
+        { "entryId": "ntnu_industriell_okologi2", "emnekoder": ["TEP4930-1"], "merknad": "30 sp" },
+        { "entryId": "uio_geofag2", "emnekoder": ["GEO5960-2"], "merknad": "60 sp" },
+        { "entryId": "uib_geovitenskap2", "emnekoder": ["GEOV399-0"], "merknad": "60 sp" }
+      ]
+    }
+  ]
+}

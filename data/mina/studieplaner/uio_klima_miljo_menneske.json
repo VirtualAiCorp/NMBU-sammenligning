@@ -1,0 +1,213 @@
+{
+  "entryId": "uio_klima_miljo_menneske",
+  "programnavn": "Klima, miljø og menneske (bachelor)",
+  "institusjon": "Universitetet i Oslo",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.uio.no/studier/program/klima-miljo-menneske/",
+    "https://www.uio.no/studier/program/klima-miljo-menneske/oppbygging/"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 70,
+  "obligatoriske": [
+    {
+      "emnekode": "KLM1000",
+      "emnenavn": "Mennesker, makt og miljø",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "GEO1000",
+      "emnenavn": "Klima og bærekraft: Naturlige prosesser og menneskets påvirkning",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "EXPHIL03",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FIL2390",
+      "emnenavn": "Miljøfilosofi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "HIS2170",
+      "emnenavn": "Climate and History: From the Little Ice Age to Global Warming",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KULH2011",
+      "emnenavn": "The Cultural History of Nature",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen gir valget mellom KULH2011 og SVEXFAC03 (Examen facultatum, samfunnsvitenskapelig variant) som tredje emne i 2. semester; hvilket som er obligatorisk/valgfritt varierer noe med hvilken fordypning studenten senere velger."
+    },
+    {
+      "emnekode": "KLM3090",
+      "emnenavn": "Bacheloroppgave i klima, miljø og menneske",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Obligatorisk for alle fordypninger i 6. semester (tverrfaglig bacheloroppgave)."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Filosofi",
+      "emner": [
+        {
+          "emnekode": "FIL1001",
+          "emnenavn": "Innføring i metafysikk og bevissthetsfilosofi",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FIL1002",
+          "emnenavn": "Innføring i erkjennelsesteori og vitenskapsfilosofi",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FIL1005",
+          "emnenavn": "Innføring i filosofihistorie frem til 1800",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FIL1003",
+          "emnenavn": "Innføring i etikk",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FIL1006",
+          "emnenavn": "Innføring i logikk",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Historie",
+      "emner": [
+        {
+          "emnekode": "HIS1200",
+          "emnenavn": "Eldre historie fram til ca. 1800",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "HIS1400",
+          "emnenavn": "Nyere historie fra ca. 1800 til vår tid",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Sosialantropologi",
+      "emner": [
+        {
+          "emnekode": "SOSANT1000",
+          "emnenavn": "Innføring i sosialantropologi",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Emnegruppen er under revisjon iht. kilden, endringer kan forekomme."
+        },
+        {
+          "emnekode": "SOSANT1050",
+          "emnenavn": "Etnografisk metode",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "SOSANT2510",
+          "emnenavn": "Environmental Anthropology",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "SOSANT1200",
+          "emnenavn": "Politikk, makt og ulikhet",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "SOSANT2300",
+          "emnenavn": "The Anthropology of Economic Life",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "SOSANT2700",
+          "emnenavn": "Antropologiens teori og faghistorie",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er UiOs oppbygging-side for bachelorprogrammet Klima, miljø og menneske (uio.no/studier/program/klima-miljo-menneske/oppbygging/, sist endret 18.8.2026). Programmet er 180 sp: felles kjerneemner (obligatoriske-listen over, 70 sp inkl. bacheloroppgaven KLM3090 i 6. semester) + fordypning (80 sp, avhengig av valgt fordypning fra og med 3. semester) + frie emner (30 sp, kan brukes til valgfrie UiO-emner, utveksling eller sertifikat) + ex.phil./ex.fac. (delvis overlappende med kjerneemnene over). Programmet tilbyr seks fordypninger: Klima, miljø og menneske; Filosofi; Historie; Idéhistorie; Kulturhistorie; og Sosialantropologi. For fordypningen «Klima, miljø og menneske» selv (130-gruppen) er det ingen ekstra faste obligatoriske emner utover kjerneemnene over — resten av dens 130 sp fylles av et krav om minst 30 sp fra en liste (B-LAB2010, ECON1922, JUR1520, JUR1911, TFF3219) pluss resterende sp fra en lengre valgfri liste (bl.a. IDE2019, IDE2058, KUN2203, KUN2580, ENG2507, ILN2301, MEVIT2615, MEVIT2616, PSY2506, REL2020, SOSGEO2302, SOSANT2510, STV2250, STV2547, TIK2101, TIK2111); denne er derfor ikke ført som egen spesialisering. Fordypningene Filosofi, Historie og Sosialantropologi har egne faste obligatoriske fordypningsemner utover kjerneemnene, ført under spesialiseringer over; i tillegg krever hver av dem 20 (filosofi og historie, i 6. semester) eller 10 (sosialantropologi) sp valgfrie fordypningsemner på 2000-nivå innen faget, samt at 5. semester («utviklingssemesteret») er fritt/utveksling (30 sp) for alle tre. Fordypningene Idéhistorie og Kulturhistorie er nevnt i kilden som valgbare alternativer, men den hentede oppbygging-siden inneholdt ikke egne semestertabeller/obligatoriske emnelister for disse to (mulig at innholdet lastes dynamisk og ikke var med i den statiske HTML-en som ble hentet); de er derfor ikke tatt med som spesialiseringer her for å unngå å finne opp emnekoder. Sem. 2-valget mellom KULH2011 og SVEXFAC03 er ført som én linje (KULH2011) med merknad, tilsvarende praksis for lignende valg i andre filer i dette datasettet."
+}

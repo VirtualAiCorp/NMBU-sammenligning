@@ -1,0 +1,158 @@
+{
+  "groupId": "skogfag",
+  "hentet": "2026-09-23",
+  "note": "Gruppa sammenligner to skogbruksbachelorer som er bygd helt ulikt. NMBUs bachelor i skogfag er et universitetsløp med 145 av 180 sp obligatorisk, der realfag (matematikk, statistikk, jordlære) og økonomi utgjør en stor del av grunnlaget. Universitetet i Innlandets bachelor i skogfag på Evenstad er 100 % obligatorisk og klart mer yrkesrettet, med store emner i foryngelseshogst og produksjonsskog, praksisemne og ingen egne matematikkemner. Nord universitets bachelor i skogfag er utelatt fordi DBH bare har rapportert karakterer for ett emne (SKO1000 Innføring i skogfag, 12 kandidater i 2025) – programmet hadde første opptak i 2025. INNs bachelor i utmarksforvaltning (entryId inn_utmark_skog) er en svakere sammenligning og er bare koblet der de to INN-programmene faktisk deler emner; de samme emnene er koblet en gang til under gruppen for økologi og naturforvaltning, der programmet heter inn_utmarksforvaltning. Fire deler av NMBU-løpet har ingen parallell hos INN og er derfor ikke satt opp som emnetyper: matematikk (MATH100 Brukerkurs i matematikk og ECN102 Innføring i matematikk for økonomer), skogskader (SKOG201 og SKOG202, tidligere kodet FEP201 og FEP202), skogtaksering (SKOG205 Inventering og ressurskartlegging) og examen philosophicum (PHI100/PHI101/PHI102). Motsatt har INN et obligatorisk praksisemne (SKO1170) og en bacheloroppgave (6EV299) som NMBUs skogfagsbachelor ikke har – NMBU avslutter i stedet med øvingskurset SKOG250.",
+  "emnetyper": [
+    {
+      "id": "skogforvaltning-innforing",
+      "label": "Skogforvaltning og skognæring (innføring)",
+      "kategori": "Skogfag",
+      "desc": "Innføringsemnet i skogbruk: skogressursene, skognæringens verdikjeder og rammene for forvaltningen av skogen.",
+      "note": "NMBU samler stoffet i ett stort førstesemesteremne på 10 sp, mens INN deler det på SKO1101 Skognæringen i Norge (7,5 sp). SKO1104 Boreal forest sector er den eldre, engelskspråklige kodeversjonen og har ingen kandidater etter 2023. Emnet er felles for INNs to Evenstad-bachelorer.",
+      "koblinger": [
+        { "entryId": "nmbu_skogfag", "emnekoder": ["SKOG100-1"] },
+        { "entryId": "inn_skogfag", "emnekoder": ["SKO1101-1", "SKO1104-1"], "merknad": "Skognæringen i Norge; SKO1104 Boreal forest sector er den eldre kodeversjonen." },
+        { "entryId": "inn_utmark_skog", "emnekoder": ["SKO1101-1"], "merknad": "Samme emne som på INNs skogfagsbachelor." }
+      ]
+    },
+    {
+      "id": "skogokologi",
+      "label": "Skogøkologi og skogproduksjon",
+      "kategori": "Skogfag",
+      "desc": "Skogens biologi og økologi: treslagene, voksestedet, bonitet og tilvekst.",
+      "note": "INNs SKO1106 Applied Forest Ecology er engelskspråklig og ligger i tredje studieår, mens NMBUs SKOG200 ligger i første. INNs utmarksforvaltning har ikke noe skogøkologiemne; der dekkes økologien av de generelle økologiemnene (se emnetypen Generell økologi).",
+      "koblinger": [
+        { "entryId": "nmbu_skogfag", "emnekoder": ["SKOG200-1"], "merknad": "Skogens biologi, økologi og produksjon." },
+        { "entryId": "inn_skogfag", "emnekoder": ["SKO1106-1"] }
+      ]
+    },
+    {
+      "id": "skogskjotsel",
+      "label": "Skogskjøtsel og skogbehandling",
+      "kategori": "Skogfag",
+      "desc": "Foryngelse, hogstformer, ungskogpleie og behandling av bestandet gjennom omløpet.",
+      "note": "Omfanget er svært ulikt: INN har to emner à 15 sp i andre studieår, altså 30 sp, mot NMBUs ene emne på 10 sp. INNs utmarksforvaltning har ingen skogskjøtselsemner.",
+      "koblinger": [
+        { "entryId": "nmbu_skogfag", "emnekoder": ["SKOG220-1"], "merknad": "Skogbehandling, 10 sp." },
+        { "entryId": "inn_skogfag", "emnekoder": ["SKO2202-1", "SKO2203-1"], "merknad": "Foryngelseshogst og Produksjonsskog, 15 sp hver." }
+      ]
+    },
+    {
+      "id": "skogplanlegging",
+      "label": "Skogbruksplanlegging og skogøkonomi",
+      "kategori": "Skogfag",
+      "desc": "Økonomisk planlegging i skogbruket: hogstmodenhet, avvirkningsberegning og lønnsomhet i skogbedriften.",
+      "note": "NMBUs SKOG250 er et tverrfaglig øvingskurs i skogforvaltning på 10 sp i juniblokka og er tatt med fordi det er den praktiske planleggingsdelen av studiet. Skogtaksering er ikke satt opp som egen emnetype: NMBU har SKOG205 Inventering og ressurskartlegging, mens INN dekker taksering inne i SKO2203 Produksjonsskog.",
+      "koblinger": [
+        { "entryId": "nmbu_skogfag", "emnekoder": ["SKOG230-1", "SKOG250-1"], "merknad": "Ressursøkonomi og planlegging i skogbruket og øvingskurset i tverrfaglig analyse." },
+        { "entryId": "inn_skogfag", "emnekoder": ["SKO2260-1"], "merknad": "Skogøkonomi." }
+      ]
+    },
+    {
+      "id": "treteknologi",
+      "label": "Treteknologi og skogindustri",
+      "kategori": "Skogfag",
+      "desc": "Trevirkets egenskaper og foredling, og verdikjeden fra tømmer til ferdig produkt.",
+      "note": "NMBU har tre emner på til sammen 20 sp, INN ett på 7,5 sp. TRE210 Trelastindustri er valgemne ved NMBU og har få kandidater.",
+      "koblinger": [
+        { "entryId": "nmbu_skogfag", "emnekoder": ["TRE200-1", "SKOG210-1", "TRE210-1"], "merknad": "Treteknologi I, Skogprodukter og materialteknologi og Trelastindustri." },
+        { "entryId": "inn_skogfag", "emnekoder": ["SKO1103-1"], "merknad": "Tømmerets verdikjede." }
+      ]
+    },
+    {
+      "id": "driftsteknikk",
+      "label": "Skogteknologi, drift og logistikk",
+      "kategori": "Skogfag",
+      "desc": "Hogstmaskiner og driftsapparat, skogsveier og transport av tømmer ut av skogen.",
+      "note": "Koblingen er delvis: INNs SKO1110 Landbruksvei dekker bare veidelen, mens NMBUs SKOG240 også omfatter driftsapparat og logistikk. SKOG101 Skogteknologi finnes i to kodeversjoner; -2 er den som brukes nå.",
+      "koblinger": [
+        { "entryId": "nmbu_skogfag", "emnekoder": ["SKOG240-1", "SKOG101-2", "SKOG101-1"], "merknad": "Skoglig driftsteknikk og logistikk og Skogteknologi (to kodeversjoner)." },
+        { "entryId": "inn_skogfag", "emnekoder": ["SKO1110-1"], "merknad": "Landbruksvei." }
+      ]
+    },
+    {
+      "id": "okonomi",
+      "label": "Økonomi",
+      "kategori": "Økonomi",
+      "desc": "Innføring i samfunns- og bedriftsøkonomi, medregnet miljø- og ressursøkonomi.",
+      "note": "NMBUs studieplan for kull 2026 har ECN101 Samfunnsøkonomi for miljø og utvikling (10 sp), men DBH har ikke rapportert kandidater på det emnet for skogfagsprogrammet; de rapporterte økonomiemnene er ECN110 og ECN170. UTM1160 Ressurs- og miljøøkonomi ved INN har ingen kandidater etter 2023.",
+      "koblinger": [
+        { "entryId": "nmbu_skogfag", "emnekoder": ["ECN110-1", "ECN170-1"], "merknad": "Mikroøkonomi I og Miljø- og ressursøkonomi." },
+        { "entryId": "inn_skogfag", "emnekoder": ["SKO1160-1", "UTM1160-1"], "merknad": "Grunnleggende økonomi og Ressurs- og miljøøkonomi." },
+        { "entryId": "inn_utmark_skog", "emnekoder": ["UTM1160-1", "SKO1160-1"] }
+      ]
+    },
+    {
+      "id": "gis",
+      "label": "GIS og geografisk analyse",
+      "kategori": "Metode",
+      "desc": "Kartgrunnlag, geografiske informasjonssystemer og romlig analyse av arealdata.",
+      "note": "INN har to emner: et innføringsemne i første eller andre studieår og et analyseemne i tredje. NMBU har bare innføringsemnet LAD102; GMGI210 Geografiske informasjonssystemer har nesten ingen kandidater fra skogfagsprogrammet og er ikke koblet.",
+      "koblinger": [
+        { "entryId": "nmbu_skogfag", "emnekoder": ["LAD102-1"], "merknad": "GIS - praktisk introduksjon, 5 sp." },
+        { "entryId": "inn_skogfag", "emnekoder": ["6EV153-1", "SKO2153-1"], "merknad": "Introduksjon til geografiske informasjonssystemer og Geografisk analyse." },
+        { "entryId": "inn_utmark_skog", "emnekoder": ["6EV153-1", "SKO2153-1"] }
+      ]
+    },
+    {
+      "id": "jordlare",
+      "label": "Jordlære og naturgrunnlag",
+      "kategori": "Geofag",
+      "desc": "Jordsmonn, geologi, landformer og vegetasjon som grunnlag for skogproduksjonen.",
+      "note": "INNs SKO1105 Naturgrunnlaget (15 sp) samler jord, geologi og vegetasjon i ett emne og har erstattet de eldre emnene 6EV131 Geologi og landformer og 6EV130 Vegetasjon og kretsløp, som ikke har kandidater etter 2023. NMBU har bare jorddelen, på 5 sp. JORD101 er den gamle kodeversjonen av JORD100.",
+      "koblinger": [
+        { "entryId": "nmbu_skogfag", "emnekoder": ["JORD100-1", "JORD101-1"], "merknad": "Jordlære; JORD101 er den eldre kodeversjonen." },
+        { "entryId": "inn_skogfag", "emnekoder": ["SKO1105-1", "6EV131-1", "6EV130-1"], "merknad": "Naturgrunnlaget; 6EV131 og 6EV130 er forgjengerne." },
+        { "entryId": "inn_utmark_skog", "emnekoder": ["SKO1105-1", "6EV131-1", "6EV130-1"] }
+      ]
+    },
+    {
+      "id": "statistikk",
+      "label": "Statistikk og vitenskapelig metode",
+      "kategori": "Metode",
+      "desc": "Sannsynlighetsregning, statistisk analyse og vitenskapelig arbeidsmetode med rapportskriving.",
+      "note": "INNs 6EV298 er på 15 sp og kombinerer metode, statistikk og oppgaveskriving; NMBUs STAT100 er et rent statistikkemne på 10 sp. 6EV198 Rapport og analyse er forgjengeren til 6EV298.",
+      "koblinger": [
+        { "entryId": "nmbu_skogfag", "emnekoder": ["STAT100-1"] },
+        { "entryId": "inn_skogfag", "emnekoder": ["6EV298-1", "6EV198-1"], "merknad": "Vitenskapelig metode og statistikk; 6EV198 Rapport og analyse er forgjengeren." },
+        { "entryId": "inn_utmark_skog", "emnekoder": ["6EV298-1", "6EV198-1"] }
+      ]
+    },
+    {
+      "id": "juss",
+      "label": "Juss og forvaltningsrett",
+      "kategori": "Forvaltning",
+      "desc": "Juridisk metode, norsk rettssystem og reglene for offentlig saksbehandling i natur- og skogforvaltningen.",
+      "note": "NMBUs JUS100 er et generelt innføringsemne i juridisk metode, mens INNs SKO1154 er spisset mot forvaltningsrett. Begge er obligatoriske.",
+      "koblinger": [
+        { "entryId": "nmbu_skogfag", "emnekoder": ["JUS100-1"], "merknad": "Juridisk metode og norsk rettssystem." },
+        { "entryId": "inn_skogfag", "emnekoder": ["SKO1154-1"], "merknad": "Forvaltningsrett." },
+        { "entryId": "inn_utmark_skog", "emnekoder": ["SKO1154-1"] }
+      ]
+    },
+    {
+      "id": "arealforvaltning",
+      "label": "Arealforvaltning og naturvern",
+      "kategori": "Forvaltning",
+      "desc": "Vern, arealbruk og forvaltning av natur- og utmarksarealer.",
+      "note": "Dette er den løseste koblingen i gruppa: NMBUs NATF200 handler om vern og forvaltning av norsk natur, mens INNs 6EV155 Arealforvaltning er rettet mot arealbruk og plansystemet. De overlapper på forvaltningsdelen, men ikke fullt ut.",
+      "koblinger": [
+        { "entryId": "nmbu_skogfag", "emnekoder": ["NATF200-1"], "merknad": "Vern og forvaltning av norsk natur, januarblokk." },
+        { "entryId": "inn_skogfag", "emnekoder": ["6EV155-1"] },
+        { "entryId": "inn_utmark_skog", "emnekoder": ["6EV155-1"] }
+      ]
+    },
+    {
+      "id": "okologi",
+      "label": "Generell økologi",
+      "kategori": "Økologi og natur",
+      "desc": "Grunnleggende økologi: populasjoner, samfunn, økosystemer og biologisk mangfold.",
+      "note": "NMBUs ECOL100 er innføringsemnet på 5 sp i første studieår; ECOL200 Generell økologi er valgemne for skogfagsstudentene og har få kandidater og er derfor ikke koblet. INNs UTM1133 Økologi har erstattet 6EV133 Økologi og mangfold (15 sp).",
+      "koblinger": [
+        { "entryId": "nmbu_skogfag", "emnekoder": ["ECOL100-1"], "merknad": "Grunnleggende økologi, 5 sp." },
+        { "entryId": "inn_skogfag", "emnekoder": ["UTM1133-1", "6EV133-1"], "merknad": "Økologi; 6EV133 Økologi og mangfold er forgjengeren." },
+        { "entryId": "inn_utmark_skog", "emnekoder": ["UTM1133-1", "6EV133-1"] }
+      ]
+    }
+  ]
+}

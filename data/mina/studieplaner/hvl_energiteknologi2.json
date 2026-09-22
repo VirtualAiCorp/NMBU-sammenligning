@@ -1,0 +1,81 @@
+{
+  "entryId": "hvl_energiteknologi2",
+  "programnavn": "Bærekraftig energiteknologi, sivilingeniør (master 2 år)",
+  "institusjon": "Høgskulen på Vestlandet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.hvl.no/studier/studieprogram/berekraftig-energiteknologi/",
+    "https://www.hvl.no/studier/studieprogram/berekraftig-energiteknologi/2026h/studieplan/",
+    "https://www.hvl.no/studier/studieprogram/berekraftig-energiteknologi/2026h/utdanningsplan/"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 80,
+  "obligatoriske": [
+    {
+      "emnekode": "MAS502",
+      "emnenavn": "Energy resources & conversion devices",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAS503",
+      "emnenavn": "Innføring i berekraftsanalysar",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAS504",
+      "emnenavn": "Energiøkonomi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MOA256",
+      "emnenavn": "Vitskapsteori og metodar",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAS520",
+      "emnenavn": "Design for Sustainable Energy Technology",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAS550",
+      "emnenavn": "Rettleia sjølvstudium",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Plassering gjelder standardveien med 30 sp masteroppgåve (semester 3). Ved valg av 50 sp masteroppgåve tas emnet i stedet i 1. år vår (semester 2)."
+    },
+    {
+      "emnekode": "MAS595",
+      "emnenavn": "Masteroppgåve",
+      "studiepoeng": 30,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Standardvegen (30 sp, semester 4). Alternativet er MAS599 Masteroppgåve på 50 sp i semester 3 (2. år høst), da med MAS550 flyttet til 1. år vår - se merknad på MAS550. Med 50 sp-alternativet reduseres antall sp valgemner tilsvarende."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er HVLs utdanningsplan-verktøy for kullet med studiestart høst 2026. Programmet har ingen studieretninger. Fellesemnene (40 sp) er obligatoriske for alle. Studenten velger mellom to veier for den individuelle oppgaven: 30 sp masteroppgave (MAS550 10 sp i 2. år høst + MAS595 30 sp i 2. år vår, standardveien - brukt her) eller 50 sp masteroppgave (MAS550 10 sp allerede i 1. år vår + MAS599 50 sp i 2. år høst). obligatoriskeStudiepoeng (80) gjelder standardveien; ved 50 sp-alternativet blir obligatorisk sum 100 sp. Utover dette velger studenten 20 sp valgemner i 2. semester og 20 sp i 3. semester (10+10 sp ved 50 sp-alternativet) fra to uformelle emnegrupper: energisystem/komponenter (MAS501, MAS532, MAS533, MAS534, MAS536, MAS538, MAS539) og havenergi (MAS532, MAS540, MAS541) - fri valgfrihet, ikke ført opp som enkeltemner. dbhEmnekoder er ikke fylt ut siden DBH-rapportering for dette programmet ikke er slått opp i dette arbeidet."
+}

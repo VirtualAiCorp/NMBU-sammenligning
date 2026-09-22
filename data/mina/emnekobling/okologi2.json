@@ -1,0 +1,117 @@
+{
+  "groupId": "okologi2",
+  "hentet": "2026-09-23",
+  "note": "De fire programmene har liten felles obligatorisk kjerne, slik toårige mastere flest har: NMBU har 90 sp obligatorisk (inkludert en 60 sp masteroppgave) fordelt på seks 5 sp-emner, INN har hele graden obligatorisk, mens NTNU og UiT er rene paraplyprogrammer i biologi med henholdsvis fire og sju studieretninger og nesten bare valgemner. Den reelle overlappen ligger derfor i metodeemnene, masteroppgaven og et knippe økologiske kjernetemaer. INN la om studieplanen i 2024: de gamle 6EV-emnene ble erstattet av MAOK-emner, og begge kodesettene er tatt med der de dekker samme tema. NTNUs og UiTs HMS- og sikkerhetskurs (HMS0003, HMS-0501 til HMS-0504) er utelatt, fordi de er obligatoriske kurs uten studiepoeng og uten faglig motstykke ved NMBU. Emner som ikke er koblet fordi de bare finnes ett sted: NMBUs restaureringsøkologi (ECOL350) og tropiske emner (NATF320, ECOL330), INNs viltovervåkingsemner (MAOK4004, MAOK4140, 6EV314, 6EV315), NTNUs celle- og molekylærbiologi (BI3016, BI3013) og genetikk (BI3083), og UiTs marine og arktiske emner (BIO-3009, BIO-3013, BIO-3029, BIO-3506), som følger av at UiT-programmet er bygd rundt arktisk marin biologi.",
+  "emnetyper": [
+    {
+      "id": "statistikk-studiedesign",
+      "label": "Statistikk og studiedesign",
+      "kategori": "Metode",
+      "desc": "Studiedesign, statistisk modellering og analyse av økologiske data, i praksis med R som verktøy.",
+      "note": "Omfanget varierer mye: NMBU dekker dette i ett 5 sp-emne, NTNU i to 7,5 sp-emner, UiT i ett 10 sp-emne, mens INN har en hel serie statistikkemner.",
+      "koblinger": [
+        { "entryId": "nmbu_okologi2", "emnekoder": ["ECOL340-1"], "merknad": "5 sp, utforsking og analyse av data i økologi og naturforvaltning" },
+        { "entryId": "inn_anvendt_okologi2", "emnekoder": ["MAOK4002-1", "MAOK4006-1", "6EV311-1", "6EV321-1", "6EV323-1"], "merknad": "MAOK4002 Biostatistics (10 sp) erstattet 6EV311 Study design and statistical modelling fra 2024" },
+        { "entryId": "ntnu_biologi2", "emnekoder": ["BI3052-1", "BI3051-1"], "merknad": "studiedesign + kvantitative analyser i økologi og evolusjon, 7,5 sp hver" },
+        { "entryId": "uit_biologi2", "emnekoder": ["BIO-3012-1"], "merknad": "10 sp, obligatorisk i fem av sju studieretninger" }
+      ]
+    },
+    {
+      "id": "forskningsmetode",
+      "label": "Vitenskapelig metode og forskningsprosess",
+      "kategori": "Metode",
+      "desc": "Vitenskapsteori, forskningsprosessen fra problemstilling til publisering, feltbasert datainnsamling og vitenskapelig formidling.",
+      "note": "NMBU byttet fra ECOL300 til MINA310 fra og med 2023. NTNUs BI3086 How to do Science gir ingen studiepoeng og vurderes bestått/ikke bestått, og slår derfor ikke ut på karaktersnittet.",
+      "koblinger": [
+        { "entryId": "nmbu_okologi2", "emnekoder": ["MINA310-1", "ECOL300-1", "ECOL302-1"], "merknad": "MINA310 Naturvitenskapelig metode (5 sp) + ECOL302 Økologisk forskning (5 sp), et treukers feltbasert forskningsemne som avsluttes med studentkonferanse" },
+        { "entryId": "inn_anvendt_okologi2", "emnekoder": ["MAOK4005-1"], "merknad": "Research process and topics, 10 sp" },
+        { "entryId": "ntnu_biologi2", "emnekoder": ["BI3086-1"], "merknad": "0 sp, bestått/ikke bestått" },
+        { "entryId": "uit_biologi2", "emnekoder": ["BIO-3529-1", "BIO-3529-2"], "merknad": "Academic skills, 5 sp; ny emneversjon fra 2025" }
+      ]
+    },
+    {
+      "id": "populasjonsokologi",
+      "label": "Populasjons- og samfunnsøkologi",
+      "kategori": "Økologi",
+      "desc": "Populasjonsdynamikk, artsinteraksjoner, atferdsøkologi og økologisk-evolusjonær teori.",
+      "note": "INNs «Concepts in ecology» er et bredere teoriemne som også dekker populasjons- og samfunnsøkologi, og er derfor en delvis, ikke fullstendig, parallell.",
+      "koblinger": [
+        { "entryId": "nmbu_okologi2", "emnekoder": ["ZOOL310-1"], "merknad": "Atferds- og populasjonsøkologi, 10 sp" },
+        { "entryId": "inn_anvendt_okologi2", "emnekoder": ["MAOK4001-1", "6EV310-1"], "merknad": "MAOK4001 (5 sp) erstattet 6EV310 (7,5 sp) fra 2024" },
+        { "entryId": "ntnu_biologi2", "emnekoder": ["BI3106-1", "BI3040-1"], "merknad": "økologisk og evolusjonær dynamikk + atferdsøkologi, 7,5 sp hver" },
+        { "entryId": "uit_biologi2", "emnekoder": ["BIO-3505-1"], "merknad": "Ecological Interactions, 10 sp" }
+      ]
+    },
+    {
+      "id": "bevaringsbiologi",
+      "label": "Bevaringsbiologi",
+      "kategori": "Økologi",
+      "desc": "Teori og metoder for å bevare arter og økosystemer: små populasjoner, fragmentering, rødlister og vernevurderinger.",
+      "note": "Verken INN eller UiT har et frittstående emne i bevaringsbiologi. INN dekker temaet innbakt i forvaltnings- og viltemnene, og UiTs nærmeste emne, BIO-3004 Ecosystem-based management, er et forvaltningsemne og ikke koblet her.",
+      "koblinger": [
+        { "entryId": "nmbu_okologi2", "emnekoder": ["NATF300-1"], "merknad": "5 sp, obligatorisk" },
+        { "entryId": "ntnu_biologi2", "emnekoder": ["BI3082-1"], "merknad": "Avansert bevaringsbiologi, 7,5 sp" }
+      ]
+    },
+    {
+      "id": "globale-miljoendringer",
+      "label": "Globale miljøendringer og økologi",
+      "kategori": "Økologi",
+      "desc": "Hvordan klimaendringer, arealbruk og annen menneskelig påvirkning endrer økosystemene.",
+      "note": "NTNUs biologimaster har ikke et eget emne om globale miljøendringer. INNs 6EV320 hadde siste kandidater i 2023 og er ikke erstattet av et tilsvarende MAOK-emne.",
+      "koblinger": [
+        { "entryId": "nmbu_okologi2", "emnekoder": ["ECOL310-1"], "merknad": "5 sp, obligatorisk; programmets største emne målt i kandidater" },
+        { "entryId": "inn_anvendt_okologi2", "emnekoder": ["6EV320-1"], "merknad": "Human impacts on ecological systems, 15 sp; siste kull 2023" },
+        { "entryId": "uit_biologi2", "emnekoder": ["BIO-3015-1"], "merknad": "arktisk marin systemøkologi og klimaendringer, 10 sp" }
+      ]
+    },
+    {
+      "id": "gis-romlig-analyse",
+      "label": "GIS og romlig analyse",
+      "kategori": "Metode",
+      "desc": "Geografiske informasjonssystemer, karttyper og analyse av romlige økologiske data.",
+      "note": "GIS er et tyngdepunkt ved INN, som har både et generelt GIS-emne og et eget emne i analyse av romlige dyredata, mens NMBU bare har et praktisk introduksjonsemne på 5 sp. NTNUs biologimaster har ingen GIS-emner; NTNUs GIS-tilbud ligger på naturressursforvaltningsprogrammet.",
+      "koblinger": [
+        { "entryId": "nmbu_okologi2", "emnekoder": ["LAD102-1"], "merknad": "GIS - praktisk introduksjon, 5 sp" },
+        { "entryId": "inn_anvendt_okologi2", "emnekoder": ["SKO4003S-1", "MAOK4110-1", "6EV324-1"], "merknad": "SKO4003S Geographic Information Systems (10 sp) erstattet MAOK4110 GIS (7,5 sp) fra 2025" },
+        { "entryId": "uit_biologi2", "emnekoder": ["BIO-3111-1"], "merknad": "GIS og jordobservasjon, 10 sp; siste kandidater i 2023" }
+      ]
+    },
+    {
+      "id": "menneske-vilt",
+      "label": "Menneske-vilt-interaksjoner",
+      "kategori": "Forvaltning",
+      "desc": "Konflikter og sameksistens mellom mennesker og vilt, og samfunnsfaglige sider ved økosystemforvaltning.",
+      "note": "Dette er INNs faglige signatur, og programmet har flere emner på feltet. Verken NTNU eller UiT har noe tilsvarende. INNs rene viltovervåkingsemner (MAOK4004 Wildlife monitoring, MAOK4140 Applied Wildlife Ecology, 6EV314 radiotelemetri) er ikke koblet, fordi NMBUs økologimaster ikke har noen motsvarighet til dem.",
+      "koblinger": [
+        { "entryId": "nmbu_okologi2", "emnekoder": ["NATF350-1"], "merknad": "Interaksjoner mellom mennesker og vilt, 5 sp" },
+        { "entryId": "inn_anvendt_okologi2", "emnekoder": ["6EV322-1", "MAOK4003-1"], "merknad": "Human dimensions in ecosystem management (7,5 sp) + Wildlife in the Anthropocene (15 sp)" }
+      ]
+    },
+    {
+      "id": "ferskvannsokologi",
+      "label": "Ferskvannsøkologi",
+      "kategori": "Økologi",
+      "desc": "Økologi i elver og innsjøer, limnologiske prosesser og forvaltning av ferskvannsforekomster.",
+      "note": "Alle tre emnene er valgemner med få kandidater. INN har ingen ferskvannsemner.",
+      "koblinger": [
+        { "entryId": "nmbu_okologi2", "emnekoder": ["ECOL380-1"], "merknad": "Økologi og forvaltning av elver og innsjøer, 10 sp" },
+        { "entryId": "ntnu_biologi2", "emnekoder": ["BI3037-1"], "merknad": "Ferskvannsøkologi, 7,5 sp; svært få kandidater" },
+        { "entryId": "uit_biologi2", "emnekoder": ["BIO-3518-2", "BIO-3521-1"], "merknad": "Northern inland waters and global change (10 sp) + seminar i ferskvannsøkologi (5 sp)" }
+      ]
+    },
+    {
+      "id": "masteroppgave",
+      "label": "Masteroppgave",
+      "kategori": "Oppgave",
+      "desc": "Selvstendig vitenskapelig arbeid som avslutter masterstudiet.",
+      "note": "Alle fire programmene har masteroppgave på 60 sp, altså et helt studieår. Det skiller denne gruppen fra NMBUs skog- og naturforvaltningsmastere, der oppgaven er på 30 eller 45 sp.",
+      "koblinger": [
+        { "entryId": "nmbu_okologi2", "emnekoder": ["M60-ECOL-1"], "merknad": "60 sp" },
+        { "entryId": "inn_anvendt_okologi2", "emnekoder": ["6EV399-1"], "merknad": "60 sp; emnekoden er beholdt fra den gamle studieplanen" },
+        { "entryId": "ntnu_biologi2", "emnekoder": ["BI3900-1"], "merknad": "60 sp" },
+        { "entryId": "uit_biologi2", "emnekoder": ["BIO-3950-1"], "merknad": "60 sp" }
+      ]
+    }
+  ]
+}

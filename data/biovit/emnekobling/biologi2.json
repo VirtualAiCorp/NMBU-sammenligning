@@ -1,0 +1,91 @@
+{
+  "groupId": "biologi2",
+  "hentet": "2026-09-23",
+  "note": "Toårige biologimastere har svært liten felles kjerne: alle seks programmene består i hovedsak av valgfrie emner rundt en masteroppgave på 60 sp, og hvert program deler emnene opp i studieretninger som ikke finnes hos de andre. Koblingene under gjelder derfor metode- og skriveemner, masteroppgaven og de tre disiplinområdene der flere program faktisk har emner med nok kandidater: økologi/bevaringsbiologi, evolusjon og populasjonsgenetikk, og molekylærbiologi/genomikk. Emner er vurdert ut fra antall kandidater fra programmet i 2024 eller 2025 (minst ca. 10); for NMBUs og Nords små program er kravet myknet opp til summen for 2021–2025, siden disse programmene sjelden har mer enn 10–20 kandidater på et emne i det hele tatt. Nords «Biovitenskap» er én DBH-programkode som dekker alle studieretningene (akvakultur, genomikk, marin økologi, husdyrvitenskap og terrestrisk økologi), og emnelisten er identisk med den som brukes i gruppene husdyr2 og akvakultur2 – Nords tall er derfor ikke rene biologitall. Fire temaer er bevisst ikke koblet: HMS- og sikkerhetsemner (UiO, UiT, NTNU og Nord har 0 sp-emner, NMBU og UiB har ingen tilsvarende i emnelisten), forsøksdyrlære (UiB LAS301/LAS303, Nord DR443F/BIO5024, UiO MF9495P, NTNU NEVR8014, UiT HEL-6320 – NMBU har ikke et slikt emne), marin og akvatisk økologi (stort tilbud ved UiO, UiB og UiT, men ingen tilsvarende emner i NMBUs biologimaster) og fysiologi (alle programmene har fysiologiemner, men samtlige har for få kandidater til at karakterfordelingen kan sammenlignes).",
+  "emnetyper": [
+    {
+      "id": "forskningsmetode",
+      "label": "Forskningsmetode, studiedesign og statistikk",
+      "kategori": "Metode",
+      "desc": "Vitenskapelig metode, forsøksdesign og statistisk analyse av biologiske data.",
+      "note": "Programmene løser dette svært ulikt: UiB og UiT har ett obligatorisk metodeemne for alle, NTNU har to atskilte 7,5 sp-emner, og UiO har ikke noe felles metodeemne i det hele tatt.",
+      "koblinger": [
+        { "entryId": "nmbu_biologi2", "emnekoder": ["MINA310-1", "ECOL300-1"], "merknad": "5 sp «Naturvitenskapelig metode»; ECOL300 (2021–2022) er erstattet av MINA310 fra 2023" },
+        { "entryId": "uio_biovitenskap2", "emnekoder": ["BIOS4000-1", "STK4900-1"], "merknad": "UiO har ikke ett felles metodeemne; BIOS4000 har ingen registrerte kandidater fra programmet etter 2023, og STK4900 er et statistikkemne fra Matematisk institutt" },
+        { "entryId": "uib_biologi2", "emnekoder": ["BIO300B-0"], "merknad": "5 sp biostatistikk, obligatorisk for alle" },
+        { "entryId": "ntnu_biologi2", "emnekoder": ["BI3052-1", "BI3051-1"], "merknad": "forsøksdesign + kvantitative analyser i økologi og evolusjon, 7,5 sp hver" },
+        { "entryId": "uit_biologi2", "emnekoder": ["BIO-3012-1"], "merknad": "10 sp, obligatorisk for flere av studieretningene" },
+        { "entryId": "nord_biovitenskap2", "emnekoder": ["BI300F-1", "MET5019-1"], "merknad": "BI300F kombinerer forskningsmetode og vitenskapelig kommunikasjon; kandidattallet falt fra 30 i 2024 til 5 i 2025 samtidig som MET5019 kom til med 22" }
+      ]
+    },
+    {
+      "id": "akademisk-skriving",
+      "label": "Akademisk skriving og innføring i masterstudiet",
+      "kategori": "Metode",
+      "desc": "Innføring i vitenskapelig arbeidsmåte, akademisk skriving og formidling ved starten av masterstudiet.",
+      "note": "Nord er ikke koblet her fordi den vitenskapelige kommunikasjonen ligger inne i det samme emnet som forskningsmetoden (BI300F/MET5019), som er koblet under forskningsmetode. UiOs emne er et formidlingsemne (vitenskapsjournalistikk) og dekker et bredere felt enn de andres skrive- og innføringsemner.",
+      "koblinger": [
+        { "entryId": "nmbu_biologi2", "emnekoder": ["BIO302-1", "MTH300-1"], "merknad": "BIO302 er fakultetets innføringsemne for masterstudenter (fra 2024); MTH300 er et 5 sp web-kurs i planlegging og skriving av masteroppgaven" },
+        { "entryId": "uio_biovitenskap2", "emnekoder": ["MNKOM4000-1"], "merknad": "10 sp formidling og vitenskapsjournalistikk" },
+        { "entryId": "uib_biologi2", "emnekoder": ["BIO300A-0"], "merknad": "5 sp akademisk skriving, obligatorisk for alle" },
+        { "entryId": "ntnu_biologi2", "emnekoder": ["BI3086-1"], "merknad": "«How to do Science», 0 sp, obligatorisk for alle fire studieretninger" },
+        { "entryId": "uit_biologi2", "emnekoder": ["BIO-3529-1", "BIO-3529-2"], "merknad": "«Academic skills», 5 sp; to versjoner av samme emne i perioden" }
+      ]
+    },
+    {
+      "id": "okologi",
+      "label": "Økologi og bevaringsbiologi",
+      "kategori": "Biologi",
+      "desc": "Økologisk teori, samspill i økosystemer, bevaringsbiologi og restaurering av natur.",
+      "note": "Dette er en paraply: programmene har ingen felles økologiemne, men hvert av dem tilbyr økologiemner på masternivå med ulik innretning. NMBUs emner er anvendte (restaurering og bevaring), UiB og NTNU har generelle og videregående økologiemner, UiT har samspill i økosystemer, og Nords emner er økosystemfunksjon og landskapsøkologi. UiO er ikke koblet: økologitilbudet er delt i mange små 10 sp-emner der ingen enkeltkode har nok kandidater fra programmet.",
+      "koblinger": [
+        { "entryId": "nmbu_biologi2", "emnekoder": ["ECOL350-1", "NATF300-1"], "merknad": "restaureringsøkologi (5 sp) og bevaringsbiologi (5 sp); begge er valgemner med få kandidater fra programmet" },
+        { "entryId": "uib_biologi2", "emnekoder": ["BIO201-0", "BIO301-0"], "merknad": "generell økologi + aktuelle tema i biodiversitet, evolusjon og økologi" },
+        { "entryId": "ntnu_biologi2", "emnekoder": ["BI3106-1", "BI3082-1"], "merknad": "økologisk og evolusjonær dynamikk (nytt fra 2025) + avansert bevaringsbiologi" },
+        { "entryId": "uit_biologi2", "emnekoder": ["BIO-3505-1"], "merknad": "«Ecological Interactions», 10 sp" },
+        { "entryId": "nord_biovitenskap2", "emnekoder": ["BI313F-1", "BIO5020-1", "BIO5032-1"], "merknad": "funksjon og stabilitet i økosystemer + landskapsøkologi i naturforvaltningen (BIO5020 erstattet av BIO5032 fra 2025)" }
+      ]
+    },
+    {
+      "id": "evolusjon-populasjonsgenetikk",
+      "label": "Evolusjon og populasjonsgenetikk",
+      "kategori": "Biologi",
+      "desc": "Evolusjonsbiologi, populasjonsgenetikk og molekylær evolusjon.",
+      "note": "UiO og UiT er ikke koblet: UiO deler feltet i flere små emner (blant annet BIOS4100 Evolusjon, BIOS5114 Molekylær evolusjon og BIOS5213 Fylogeni og klassifikasjon) uten at noen av dem har nok kandidater fra programmet, og UiT har ikke et eget evolusjonsemne på masternivå.",
+      "koblinger": [
+        { "entryId": "nmbu_biologi2", "emnekoder": ["BIO321-1"], "merknad": "10 sp, obligatorisk for studieretningen Evolusjonsbiologi og molekylær økologi" },
+        { "entryId": "uib_biologi2", "emnekoder": ["BIO210-0"], "merknad": "10 sp evolusjonsbiologi" },
+        { "entryId": "ntnu_biologi2", "emnekoder": ["BI3083-1"], "merknad": "evolusjonær og økologisk genetikk, 7,5 sp" },
+        { "entryId": "nord_biovitenskap2", "emnekoder": ["BI317F-1", "BIO5018-1"], "merknad": "«Evolusjonær genetikk»; BI317F er erstattet av BIO5018 (7,5 sp) fra 2025" }
+      ]
+    },
+    {
+      "id": "molekylaerbiologi-genomikk",
+      "label": "Molekylærbiologi og genomikk",
+      "kategori": "Biologi",
+      "desc": "Molekylær- og cellebiologi, genomikk og bioinformatiske analyser av sekvensdata.",
+      "note": "UiB er ikke koblet fordi molekylærbiologien der ligger i et eget masterprogram (molekylærbiologi), ikke i biologimasteren; biologistudentenes molekylæremner (BIO214, BIO217, BIO219) har for få kandidater. UiT er heller ikke koblet, av samme grunn (BIO-3018 Environmental Molecular Genetics har svært få kandidater).",
+      "koblinger": [
+        { "entryId": "nmbu_biologi2", "emnekoder": ["BIO322-1", "BIO326-1"], "merknad": "avanserte emner i genomikk (obligatorisk for studieretningen Genombiologi) + genomsekvensering" },
+        { "entryId": "uio_biovitenskap2", "emnekoder": ["BIOS5610-1", "BIOS4010-1", "BIOS-IN5410-1"], "merknad": "eukaryote gener og genomer, arbeidsmetoder i molekylærbiologi og biokjemi I, bioinformatikk for molekylærbiologi" },
+        { "entryId": "ntnu_biologi2", "emnekoder": ["BI3016-1"], "merknad": "molekylær cellebiologi, 7,5 sp, obligatorisk for studieretningen Cell and Molecular Biology" },
+        { "entryId": "nord_biovitenskap2", "emnekoder": ["BI311F-1", "BIO5025-1"], "merknad": "akvagenomikk og bioinformatikk + genomsammenstilling og annotering; Nords emner er rettet mot akvatiske arter" }
+      ]
+    },
+    {
+      "id": "masteroppgave",
+      "label": "Masteroppgave",
+      "kategori": "Oppgave",
+      "desc": "Selvstendig vitenskapelig arbeid som avslutter masterstudiet.",
+      "note": "Alle seks programmene har masteroppgave på 60 sp, altså halve graden – i motsetning til flere av de andre BIOVIT-gruppene. Nord registrerer oppgaven med egen emnekode per studieretning, og kandidatene fordeler seg derfor på flere små koder.",
+      "koblinger": [
+        { "entryId": "nmbu_biologi2", "emnekoder": ["M60-BIOL-1", "M60-ECOL-1"], "merknad": "M60-BIOL er dagens kode; M60-ECOL er den eldre oppgavekoden for økologiløpet" },
+        { "entryId": "uio_biovitenskap2", "emnekoder": ["BIOS5960-1"] },
+        { "entryId": "uib_biologi2", "emnekoder": ["BIO399-0"] },
+        { "entryId": "ntnu_biologi2", "emnekoder": ["BI3900-1"], "merknad": "registrert i fire deler gjennom studiet; studiepoengene gis samlet i 4. semester" },
+        { "entryId": "uit_biologi2", "emnekoder": ["BIO-3950-1"] },
+        { "entryId": "nord_biovitenskap2", "emnekoder": ["BIO5010-1", "BI309F-1", "BIO5011-1"], "merknad": "egne oppgavekoder for terrestrisk økologi og naturforvaltning, marin økologi og genomikk; oppgavene i akvakultur ligger i gruppen akvakultur2" }
+      ]
+    }
+  ]
+}

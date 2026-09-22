@@ -1,0 +1,151 @@
+{
+  "programnavn": "Biologisk kjemi (bachelor)",
+  "institusjon": "Universitetet i Stavanger",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.uis.no/nb/studier/biologisk-kjemi-bachelor"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 140,
+  "obligatoriske": [
+    {
+      "emnekode": "BIO100",
+      "emnenavn": "Cellebiologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJE150",
+      "emnenavn": "Generell kjemi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT100",
+      "emnenavn": "Matematiske metoder 1",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TN110",
+      "emnenavn": "Kurs i studieteknikk og ingeniør- og realfaglig arbeidsmetode",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Går over 1. og 2. semester, 0 studiepoeng."
+    },
+    {
+      "emnekode": "BIO110",
+      "emnenavn": "Anatomi og fysiologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO200",
+      "emnenavn": "Biokjemi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJE230",
+      "emnenavn": "Organisk kjemi",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJE250",
+      "emnenavn": "Organisk kjemi laboratorium",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO250",
+      "emnenavn": "Immunologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO220",
+      "emnenavn": "Mikrobiologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO230",
+      "emnenavn": "Molekylærgenetikk og bioinformatikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO210",
+      "emnenavn": "Metoder i bioteknologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "STA100",
+      "emnenavn": "Sannsynlighetsregning og statistikk 1",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO300",
+      "emnenavn": "Sykdomslære",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIOBAC",
+      "emnenavn": "Bacheloroppgave i biologisk kjemi",
+      "studiepoeng": 20,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Administrativt oppført som løpende over 5. og 6. semester, men med hele sp-summen (20 sp) først bekreftet ved 6. semester i kilden."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er UiS' programside for B-BIOKJE (dynamisk «Studieplan med emner»-seksjon, lest via nettleser). 5. semester («Emner ved UiS eller utveksling») er et fritt valg mellom emnepakke ved UiS eller utvekslingsopphold (30 sp, ikke navngitt) og er ikke tatt med. 6. semester krever minimum 30 sp; utover bacheloroppgaven BIOBAC (20 sp) skal studenten velge 10 sp blant anbefalte emner MLJ240 Hydrogeokjemi og MLJ250 Vannanalyse (anbefales ved opptak til master i biologisk kjemi) eller andre valgemner som ING200 Ingeniørfaglig systememne - Teknologiledelse og MAT200 Matematiske metoder 2; ingen av disse er tatt med som obligatoriske. obligatoriskeStudiepoeng (140) = summen av de 15 navngitte emnene; sammen med 5. semesters 30 valgfrie/utvekslings-sp og 6. semesters 10 valgfrie sp gir dette totaltStudiepoeng=180. Kildedokumentet beskriver ingen egne navngitte studieretninger/spesialiseringer for bachelorprogrammet.",
+  "entryId": "uis_biologisk_kjemi"
+}
