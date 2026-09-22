@@ -1,6 +1,7 @@
 import { Fragment, useState, useMemo } from 'react';
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
+  ScatterChart, Scatter, ZAxis,
 } from 'recharts';
 import { TrendingUp, TrendingDown, Minus, Info, ExternalLink, Filter, Users, ChevronDown, ChevronRight } from 'lucide-react';
 import { CsvExportButton } from './CsvExportButton';
@@ -17,7 +18,8 @@ import {
   LANDSAM_STUDYPLAN_GROUPS,
   type PlanCourse, type PlanSpecialisation, type ProgramStudyPlan,
 } from '../data/landsamStudyPlanData';
-import { LANDSAM_GROUPS, type LandsamLevel } from '../data/landsamAdmissionData';
+import { LANDSAM_GROUPS, LANDSAM_YEARS, type LandsamLevel } from '../data/landsamAdmissionData';
+import type { FullAdmissionEntry } from '../data/fullAdmissionData';
 import { landsamColorFor } from '../data/landsamPalette';
 import { landsamCourseHasComparison } from '../data/landsamUtils';
 
@@ -140,6 +142,164 @@ function programUrl(entryId: string): string | undefined {
     if (e) return e.url;
   }
   return undefined;
+}
+
+// ─── Poenggrenser og søkertall fra opptaksdataene ────────────────────────────
+
+/**
+ * Emnedataene og opptaksdataene deler id (`entryId` = `FullAdmissionEntry.id`),
+ * så poenggrensene kan leses rett ut av opptaksfilen. Merk at toårige mastere
+ * har lokalt opptak: der er `pg_ord` et karaktersnitt fra bachelorgraden (0–5),
+ * ikke en poenggrense fra Samordna opptak (~30–60). De to skalaene blandes ikke.
+ */
+function admissionEntryFor(entryId: string): FullAdmissionEntry | undefined {
+  for (const g of LANDSAM_GROUPS) {
+    const e = g.entries.find((x) => x.id === entryId);
+    if (e) return e;
+  }
+  return undefined;
+}
+
+interface AdmissionInfo {
+  /** Programmet finnes ikke i opptakstallene i det hele tatt. */
+  missing: boolean;
+  /** Toårig master med lokalt opptak – ikke via Samordna opptak. */
+  local: boolean;
+  /** Året poenggrensene er hentet fra; kan være tidligere enn det valgte året. */
+  pgYear: string | null;
+  pgOrd: number | null;
+  pgFv: number | null;
+  /** Alle publiserte grenser er 0: alle kvalifiserte kom inn. */
+  open: boolean;
+  /** Året søkertallene er hentet fra. */
+  sokerYear: string | null;
+  alleS: number | null;
+  fvS: number | null;
+  plasser: number | null;
+  /** Førstevalgssøkere per studieplass. */
+  sokerpress: number | null;
+}
+
+const EMPTY_ADMISSION: AdmissionInfo = {
+  missing: true, local: false, pgYear: null, pgOrd: null, pgFv: null, open: false,
+  sokerYear: null, alleS: null, fvS: null, plasser: null, sokerpress: null,
+};
+
+/**
+ * Opptakstallene for `entryId` i opptaket høsten `year` – samme år som emnetallene.
+ * Mangler året tall, brukes siste tidligere år som har dem, og `pgYear`/`sokerYear`
+ * sier hvilket år tallene faktisk er fra.
+ */
+function admissionInfo(entryId: string, year: number): AdmissionInfo {
+  const entry = admissionEntryFor(entryId);
+  if (!entry) return EMPTY_ADMISSION;
+
+  // Til og med det valgte året, nyeste først.
+  const years = LANDSAM_YEARS.filter((y) => Number(y) <= year).slice().reverse();
+
+  let pgYear: string | null = null;
+  let pgOrd: number | null = null;
+  let pgFv: number | null = null;
+  for (const y of years) {
+    const d = entry.years[y];
+    if (d && (d.pg_ord !== null || d.pg_fv !== null)) {
+      pgYear = y; pgOrd = d.pg_ord; pgFv = d.pg_fv;
+      break;
+    }
+  }
+
+  let sokerYear: string | null = null;
+  let alleS: number | null = null;
+  let fvS: number | null = null;
+  let plasser: number | null = null;
+  for (const y of years) {
+    const d = entry.years[y];
+    if (d && (d.alleS !== null || d.fvS !== null || d.plasser !== null)) {
+      sokerYear = y; alleS = d.alleS; fvS = d.fvS; plasser = d.plasser;
+      break;
+    }
+  }
+
+  return {
+    missing: false,
+    local: entry.type === 'master2',
+    pgYear, pgOrd, pgFv,
+    open: pgYear !== null && (pgOrd ?? 0) === 0 && (pgFv ?? 0) === 0,
+    sokerYear, alleS, fvS, plasser,
+    sokerpress: fvS !== null && plasser !== null && plasser > 0 ? fvS / plasser : null,
+  };
+}
+
+/** «Poenggrense 2025 · ord. 49,6 · FV 44,4», «åpent opptak», «Lokalt opptak» eller «–». */
+function admissionChipText(a: AdmissionInfo): string {
+  if (a.local) {
+    // Lokalt opptak: pg_ord er et karaktersnitt fra bachelorgraden, ikke opptakspoeng.
+    return a.pgYear !== null && a.pgOrd !== null && a.pgOrd > 0
+      ? `Lokalt opptak ${a.pgYear} · snittkrav ${nf(a.pgOrd, 1)}`
+      : 'Lokalt opptak';
+  }
+  if (a.missing || a.pgYear === null) return '–';
+  if (a.open) return `Poenggrense ${a.pgYear} · åpent opptak`;
+  const deler: string[] = [];
+  if (a.pgOrd !== null && a.pgOrd > 0) deler.push(`ord. ${nf(a.pgOrd, 1)}`);
+  if (a.pgFv !== null && a.pgFv > 0) deler.push(`FV ${nf(a.pgFv, 1)}`);
+  if (deler.length === 0) return '–';
+  return `Poenggrense ${a.pgYear} · ${deler.join(' · ')}`;
+}
+
+function admissionTitle(a: AdmissionInfo, year: number): string {
+  if (a.missing) return `Programmet er ikke med i opptakstallene for ${year}.`;
+  const linjer: string[] = [];
+  if (a.sokerYear !== null) {
+    linjer.push(
+      `Søkertall ${a.sokerYear}: ${a.alleS !== null ? nf(a.alleS) : '–'} søkere · ` +
+      `${a.fvS !== null ? nf(a.fvS) : '–'} førstevalgssøkere · ` +
+      `${a.plasser !== null ? nf(a.plasser) : '–'} studieplasser`
+    );
+  } else {
+    linjer.push('Ingen søkertall lagt inn.');
+  }
+  if (a.local) {
+    linjer.push('Toårig master med lokalt opptak: kravet er et karaktersnitt fra bachelorgraden, ikke opptakspoeng fra Samordna opptak.');
+  } else if (a.pgYear === null) {
+    linjer.push('Ingen poenggrense publisert.');
+  } else if (a.pgYear !== String(year)) {
+    linjer.push(`Poenggrensene for ${year} mangler, så siste år med tall (${a.pgYear}) vises.`);
+  }
+  linjer.push('Poenggrense 0 = alle kvalifiserte kom inn. Kilde: Samordna opptak / HKDIR.');
+  return linjer.join('\n');
+}
+
+/** Kompakt opptakschip på metalinjen i karakterindeksen. */
+function AdmissionChip({ info, year }: { info: AdmissionInfo; year: number }) {
+  const tekst = admissionChipText(info);
+  const dempet = tekst === '–' || info.open || info.local;
+  return (
+    <span className="inline-flex items-center gap-1 flex-wrap" title={admissionTitle(info, year)}>
+      <span className="inline-block px-1.5 rounded whitespace-nowrap"
+        style={{
+          backgroundColor: 'var(--nmbu-beige-light)',
+          border: '1px solid var(--nmbu-neutral-3)',
+          color: dempet ? 'var(--nmbu-neutral-2)' : '#1D4ED8',
+          fontWeight: 600,
+          fontSize: 10,
+        }}>
+        {tekst}
+      </span>
+      {info.sokerpress !== null && (
+        <span className="inline-block px-1.5 rounded whitespace-nowrap"
+          style={{
+            backgroundColor: 'var(--nmbu-beige-light)',
+            border: '1px solid var(--nmbu-neutral-3)',
+            color: 'var(--nmbu-neutral-2)',
+            fontWeight: 600,
+            fontSize: 10,
+          }}>
+          fv/plass {nf(info.sokerpress, 1)}×
+        </span>
+      )}
+    </span>
+  );
 }
 
 // ─── Institusjonsvelger ───────────────────────────────────────────────────────
@@ -334,6 +494,7 @@ function KarakterindeksView({
       p,
       agg: aggregateProgram(p, year, minKandidater),
       prev: prevYear ? aggregateProgram(p, prevYear, minKandidater) : null,
+      adm: admissionInfo(p.entryId, year),
     }))
     .filter((r) => r.agg.snitt !== null)
     .sort((a, b) => (b.agg.snitt ?? 0) - (a.agg.snitt ?? 0));
@@ -358,6 +519,79 @@ function KarakterindeksView({
 
   const lastIdx = trendData.length - 1;
 
+  // Punktene til seksjon 3: bare program med en reell poenggrense fra Samordna
+  // opptak. Lokale masteropptak holdes utenfor – kravet deres er et karaktersnitt
+  // på en annen skala.
+  const punkter = rows
+    .filter((r) => !r.adm.missing && !r.adm.local && r.adm.pgOrd !== null && r.adm.pgOrd > 0)
+    .map((r) => ({
+      id: r.p.entryId,
+      label: `${r.p.shortName}${r.p.isNmbu ? ' ★' : ''}`,
+      x: r.adm.pgOrd as number,
+      y: Number((r.agg.snitt as number).toFixed(2)),
+      fv: r.adm.pgFv,
+      pgYear: r.adm.pgYear as string,
+      col: landsamColorFor(r.p.entryId),
+      isNmbu: Boolean(r.p.isNmbu),
+    }));
+
+  const utenPoenggrense = rows
+    .filter((r) => !punkter.some((pt) => pt.id === r.p.entryId))
+    .map((r) => {
+      const grunn = r.adm.local ? 'lokalt opptak'
+        : r.adm.open ? 'åpent opptak'
+        : r.adm.missing ? 'ikke i Samordna opptak'
+        : 'ingen poenggrense publisert';
+      return `${r.p.shortName} (${grunn})`;
+    });
+
+  // Runde akser: poeng i steg på 5, karakterindeks i steg på 0,5.
+  const xVerdier = punkter.map((pt) => pt.x);
+  const yVerdier = punkter.map((pt) => pt.y);
+  const xDomain: [number, number] = punkter.length > 0
+    ? [Math.floor((Math.min(...xVerdier) - 2) / 5) * 5, Math.ceil((Math.max(...xVerdier) + 2) / 5) * 5]
+    : [0, 60];
+  const yDomain: [number, number] = punkter.length > 0
+    ? [
+        Math.max(0, Math.floor((Math.min(...yVerdier) - 0.25) * 2) / 2),
+        Math.min(5, Math.ceil((Math.max(...yVerdier) + 0.25) * 2) / 2),
+      ]
+    : [0, 5];
+  const xTicks = (() => {
+    const t: number[] = [];
+    for (let v = xDomain[0]; v <= xDomain[1] + 0.001; v += 5) t.push(v);
+    return t;
+  })();
+  const yTicks = (() => {
+    const t: number[] = [];
+    for (let v = yDomain[0]; v <= yDomain[1] + 0.001; v += 0.5) t.push(Number(v.toFixed(1)));
+    return t;
+  })();
+
+  const ScatterTip = ({ active, payload }: {
+    active?: boolean;
+    payload?: { payload: (typeof punkter)[number] }[];
+  }) => {
+    if (!active || !payload || payload.length === 0) return null;
+    const pt = payload[0].payload;
+    return (
+      <div style={{
+        backgroundColor: '#fff', border: '1px solid var(--nmbu-green-3)', borderRadius: 8,
+        fontSize: 12, padding: '7px 10px', boxShadow: '0 1px 4px rgba(2,92,79,0.12)',
+      }}>
+        <div style={{ fontWeight: 700, color: 'var(--nmbu-green-dark)', marginBottom: 2 }}>{pt.label}</div>
+        <div style={{ color: 'var(--nmbu-neutral-2)' }}>
+          Poenggrense {pt.pgYear}: <strong style={{ color: 'var(--nmbu-neutral-1)' }}>ord. {nf(pt.x, 1)}</strong>
+          {pt.fv !== null && pt.fv > 0 && <> · FV {nf(pt.fv, 1)}</>}
+        </div>
+        <div style={{ color: 'var(--nmbu-neutral-2)' }}>
+          Karakterindeks {year}:{' '}
+          <strong style={{ color: 'var(--nmbu-neutral-1)' }}>{nf(pt.y, 2)} ({letterFor(pt.y)})</strong>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div className="space-y-7">
       <section>
@@ -365,7 +599,7 @@ function KarakterindeksView({
           1. Karakterindeks per program · {year}
         </h3>
         <div className="flex flex-col gap-3">
-          {rows.map(({ p, agg, prev }) => {
+          {rows.map(({ p, agg, prev, adm }) => {
             const col = landsamColorFor(p.entryId);
             const snitt = agg.snitt!;
             return (
@@ -393,6 +627,9 @@ function KarakterindeksView({
                         · <TrendChip val={snitt} prev={prev.snitt} /> vs. {prevYear}
                       </span>
                     )}
+                  </div>
+                  <div className="flex items-center gap-1.5 flex-wrap" style={{ marginTop: 3 }}>
+                    <AdmissionChip info={adm} year={year} />
                   </div>
                 </div>
                 <div className="shrink-0 text-right" style={{ width: 96 }}>
@@ -450,6 +687,75 @@ function KarakterindeksView({
           </ResponsiveContainer>
         </section>
       )}
+
+      <section>
+        <h3 className="text-base mb-4" style={{ color: 'var(--nmbu-green-dark)', fontFamily: "'Lora', serif" }}>
+          3. Inntaksgrense og karakterindeks
+        </h3>
+
+        {punkter.length < 2 ? (
+          <div className="flex items-start gap-2 rounded-lg px-4 py-3"
+            style={{ backgroundColor: 'var(--nmbu-beige-light)', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-2)', fontSize: 12 }}>
+            <Info className="w-3.5 h-3.5 shrink-0 mt-0.5" />
+            <span>
+              For få program med poenggrense i {year} til å tegne et punktdiagram – det trengs minst to.
+              {utenPoenggrense.length > 0 && <> Uten poenggrense: {utenPoenggrense.join(', ')}.</>}
+            </span>
+          </div>
+        ) : (
+          <>
+            <ResponsiveContainer width="100%" height={300}>
+              <ScatterChart margin={{ top: 12, right: 90, bottom: 28, left: 8 }}>
+                <CartesianGrid strokeDasharray="3 3" stroke="var(--nmbu-neutral-3)" />
+                <XAxis type="number" dataKey="x" name="Poenggrense" domain={xDomain} ticks={xTicks}
+                  tick={{ fill: '#555', fontSize: 11 }} tickLine={false} axisLine={false}
+                  tickFormatter={(v: number) => nf(v, 0)}
+                  label={{
+                    value: 'Poenggrense, ordinær kvote', position: 'insideBottom', offset: -18,
+                    fill: '#555', fontSize: 11,
+                  }} />
+                <YAxis type="number" dataKey="y" name="Karakterindeks" domain={yDomain} ticks={yTicks} width={44}
+                  tick={{ fill: '#555', fontSize: 11 }} tickLine={false} axisLine={false}
+                  tickFormatter={(v: number) => nf(v, 1)} />
+                <ZAxis range={[80, 80]} />
+                <Tooltip cursor={{ strokeDasharray: '3 3', stroke: 'var(--nmbu-neutral-3)' }} content={<ScatterTip />} />
+                {punkter.map((pt) => {
+                  const r = pt.isNmbu ? 8 : 6;
+                  return (
+                    <Scatter key={pt.id} name={pt.label} data={[pt]} fill={pt.col} isAnimationActive={false}
+                      shape={(props: { cx?: number; cy?: number }) => (
+                        <g>
+                          <circle cx={props.cx} cy={props.cy} r={r}
+                            fill={pt.col} stroke="#fff" strokeWidth={pt.isNmbu ? 2.5 : 1.5} />
+                          <text x={(props.cx ?? 0) + r + 5} y={(props.cy ?? 0) + 4}
+                            textAnchor="start" fontSize={11} fontWeight={pt.isNmbu ? 700 : 600}
+                            fill={pt.col} paintOrder="stroke" stroke="#fff" strokeWidth={3}
+                            strokeLinejoin="round" style={{ userSelect: 'none' }}>
+                            {pt.label}
+                          </text>
+                        </g>
+                      )}
+                    />
+                  );
+                })}
+              </ScatterChart>
+            </ResponsiveContainer>
+
+            {utenPoenggrense.length > 0 && (
+              <p className="text-xs mt-2 leading-relaxed" style={{ color: 'var(--nmbu-neutral-2)' }}>
+                Uten poenggrense: {utenPoenggrense.join(', ')}.
+              </p>
+            )}
+          </>
+        )}
+
+        <p className="text-xs mt-3 leading-relaxed" style={{ color: 'var(--nmbu-neutral-2)' }}>
+          Høy poenggrense og lav karakterindeks peker mot streng karaktersetting, og motsatt – men les
+          det med varsomhet: nivå, fagsammensetning og emneutvalg er ulikt mellom programmene.
+          Poenggrensen er fra opptaket høsten {year} (ordinær kvote); står et annet årstall i chipene over,
+          mangler tall for {year} og siste tidligere år er brukt. Toårige mastere med lokalt opptak er holdt utenfor.
+        </p>
+      </section>
     </div>
   );
 }
@@ -2406,6 +2712,7 @@ export function LandsamCourseAnalysis({ initialGroup }: { initialGroup?: string 
             Kilde: DBH/HKDIR tabell 308 og 208. Snitt A=5…F=0 over bokstavkarakterer; bestått/ikke bestått
             holdes utenfor. Emner uten navn i DBH vises med emnekode.
             Emnekobling: manuelt kartlagt mot studieplanene.
+            {tab === 'indeks' && ' · Poenggrenser og søkertall: Samordna opptak / HKDIR'}
           </span>
         )}
       </div>
