@@ -19,7 +19,7 @@
      "isNmbu": true,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://www.nmbu.no/studier/master-5-aar/byggeteknikk-og-arkitektur",
      "localData": null
     },
     {
@@ -33,7 +33,7 @@
      "isNmbu": false,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://www.ntnu.no/studier/mtbygg",
      "localData": null
     },
     {
@@ -47,7 +47,7 @@
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://www.ntnu.no/studier/maar",
      "localData": null
     },
     {
@@ -61,7 +61,7 @@
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://www.ntnu.no/studier/bibygg",
      "localData": null
     },
     {
@@ -75,7 +75,7 @@
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://www.oslomet.no/studier/tkd/byggingenior",
      "localData": null
     },
     {
@@ -89,7 +89,7 @@
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://www.hvl.no/studier/studieprogram/byggingenior-bergen/",
      "localData": null
     },
     {
@@ -103,7 +103,7 @@
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://www.uis.no/nb/studier/byggingenior-bachelor",
      "localData": null
     }
    ]
@@ -126,7 +126,7 @@
      "isNmbu": true,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://www.nmbu.no/studier/master-5-aar/teknologi-og-produktutvikling",
      "localData": null
     },
     {
@@ -140,7 +140,7 @@
      "isNmbu": false,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://www.ntnu.no/studier/mtmaskin",
      "localData": null
     },
     {
@@ -154,7 +154,7 @@
      "isNmbu": false,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://www.ntnu.no/studier/mtdesig",
      "localData": null
     },
     {
@@ -168,7 +168,7 @@
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://www.ntnu.no/studier/mtprod",
      "localData": null
     },
     {
@@ -182,7 +182,7 @@
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://www.ntnu.no/studier/bimaskin",
      "localData": null
     },
     {
@@ -196,7 +196,7 @@
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://www.oslomet.no/studier/tkd/maskiningenior",
      "localData": null
     },
     {
@@ -210,7 +210,7 @@
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://www.usn.no/studier/bachelor-i-ingeniorfag-maskiningenior/produktutvikling/",
      "localData": null
     }
    ]
@@ -233,7 +233,7 @@
      "isNmbu": true,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://www.nmbu.no/studier/master-5-aar/industriell-okonomi",
      "localData": null
     },
     {
@@ -247,7 +247,7 @@
      "isNmbu": false,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://www.ntnu.no/studier/mtiot",
      "localData": null
     },
     {
@@ -261,7 +261,7 @@
      "isNmbu": false,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://www.uia.no/studier/program/industriell-okonomi-og-teknologiledelse-master-5-ar/",
      "localData": null
     },
     {
@@ -275,7 +275,7 @@
      "isNmbu": false,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://www.uis.no/nb/studier/industriell-okonomi-master-5-ar",
      "localData": null
     },
     {
@@ -289,7 +289,7 @@
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://www.uib.no/studier/MASV-IT%C3%98K",
      "localData": null
     },
     {
@@ -303,7 +303,7 @@
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://www.nord.no/studier/okonomi-og-teknologiledelse-bachelor",
      "localData": null
     }
    ]
@@ -313,7 +313,7 @@
    "label": "Kjemi og bioteknologi",
    "level": "master5",
    "desc": "Sammenligner de femårige sivilingeniørutdanningene innen kjemi og bioteknologi.",
-   "note": "NTNU endret navn og kode fra «Industriell kjemi og bioteknologi» til «Industriell kjemi, materialer og bioteknologi» fra opptaket 2025; begge er med slik at tidsserien kan følges (forgjengeren med default false). UiTs «Bærekraftig kjemi og innovasjon» startet i 2025. Realfagsbachelorene i kjemi og bioteknologi og de treårige kjemiingeniørene er svakere sammenligninger.",
+   "note": "NTNU endret navn og kode fra «Industriell kjemi og bioteknologi» til «Industriell kjemi, materialer og bioteknologi» fra opptaket 2025; begge er med slik at tidsserien kan følges (forgjengeren med default false). UiTs «Bærekraftig kjemi og innovasjon» startet i 2025. NTNUs femårige master i bioteknologi er et realfagsløp (ikke sivilingeniør) og er derfor merket som svakere sammenligning, det samme er UiOs realfagsbachelor og OsloMets treårige kjemi- og bioteknologiingeniør.",
    "programs": [
     {
      "id": "nmbu_kjemibio",
@@ -326,7 +326,7 @@
      "isNmbu": true,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://www.nmbu.no/studier/master-5-aar/kjemi-og-bioteknologi",
      "localData": null
     },
     {
@@ -340,7 +340,7 @@
      "isNmbu": false,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://www.ntnu.no/studier/mtkmb",
      "localData": null
     },
     {
@@ -354,7 +354,7 @@
      "isNmbu": false,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://uit.no/utdanning/program/868642/baerekraftig_kjemi_og_innovasjon_sivilingenior_-",
      "localData": null
     },
     {
@@ -368,7 +368,7 @@
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://www.ntnu.no/studier/mtkj",
      "localData": null
     },
     {
@@ -376,13 +376,13 @@
      "shortName": "NTNU",
      "institusjon": "Norges teknisk-naturvitenskapelige universitet",
      "studiested": "Trondheim",
-     "programnavn": "Bioteknologi (bachelor)",
+     "programnavn": "Bioteknologi (master 5 år)",
      "studiekode": "194855",
-     "type": "bachelor",
+     "type": "master",
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://www.ntnu.no/studier/mbiot5",
      "localData": null
     },
     {
@@ -396,7 +396,7 @@
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://www.oslomet.no/studier/tkd/bioteknologi-kjemiingenior",
      "localData": null
     },
     {
@@ -410,7 +410,7 @@
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://www.uio.no/studier/program/kjemi-biokjemi/",
      "localData": null
     }
    ]
@@ -433,7 +433,7 @@
      "isNmbu": true,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://www.nmbu.no/studier/master-5-aar/miljofysikk-og-fornybar-energi",
      "localData": null
     },
     {
@@ -447,7 +447,7 @@
      "isNmbu": false,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://www.ntnu.no/studier/mtenerg",
      "localData": null
     },
     {
@@ -461,7 +461,7 @@
      "isNmbu": false,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://www.uib.no/studier/5MAMN-ENER",
      "localData": null
     },
     {
@@ -475,7 +475,7 @@
      "isNmbu": false,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://uit.no/utdanning/program/798891/fornybar_energi_sivilingenior_-_master",
      "localData": null
     },
     {
@@ -489,7 +489,7 @@
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://www.ntnu.no/studier/mtfyma",
      "localData": null
     },
     {
@@ -503,7 +503,7 @@
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://uit.no/utdanning/program/324988/anvendt_fysikk_og_matematikk_sivilingenior_-_mas",
      "localData": null
     },
     {
@@ -517,7 +517,7 @@
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://www.uio.no/studier/program/nanoteknologi/",
      "localData": null
     }
    ]
@@ -527,7 +527,7 @@
    "label": "Datavitenskap",
    "level": "master5",
    "desc": "Sammenligner de femårige sivilingeniørutdanningene innen datateknologi, datavitenskap og kunstig intelligens.",
-   "note": "Alle konkurrentene som er satt til default true er femårige sivilingeniørutdanninger i Samordna opptak. UiOs og OsloMets informatikkbachelorer er blant de største alternativene for samme søkergruppe, men er treårige og derfor svakere sammenligninger. UiS la om fra «Data Science» (kode 217804, bare 2021) til «Datateknologi»; bare den gjeldende koden er tatt med.",
+   "note": "Alle konkurrentene som er satt til default true er femårige sivilingeniørutdanninger i Samordna opptak. UiOs og OsloMets informatikkbachelorer er blant de største alternativene for samme søkergruppe, men er treårige og derfor svakere sammenligninger. UiS hadde i 2021 også en egen femårig «Data Science» (kode 217804) ved siden av datateknologi; den finnes bare i ett opptaksår og er derfor ikke tatt med.",
    "programs": [
     {
      "id": "nmbu_datavitenskap",
@@ -540,7 +540,7 @@
      "isNmbu": true,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://www.nmbu.no/studier/master-5-aar/datavitenskap",
      "localData": null
     },
     {
@@ -554,7 +554,7 @@
      "isNmbu": false,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://www.ntnu.no/studier/mtdt",
      "localData": null
     },
     {
@@ -568,7 +568,7 @@
      "isNmbu": false,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://www.uib.no/studier/5MAMN-DSC",
      "localData": null
     },
     {
@@ -582,7 +582,7 @@
      "isNmbu": false,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://www.uis.no/nb/studier/datateknologi-master-5-ar",
      "localData": null
     },
     {
@@ -596,7 +596,7 @@
      "isNmbu": false,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://uit.no/utdanning/program/711597/kunstig_intelligens_sivilingenior_-_master",
      "localData": null
     },
     {
@@ -610,7 +610,7 @@
      "isNmbu": false,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://www.uia.no/studier/program/kunstig-intelligens-master-5-ar/",
      "localData": null
     },
     {
@@ -624,7 +624,7 @@
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://www.uio.no/studier/program/maskinlering-kunstig-intelligens/",
      "localData": null
     },
     {
@@ -638,7 +638,7 @@
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://www.oslomet.no/studier/tkd/anvendt-datateknologi",
      "localData": null
     }
    ]
@@ -661,7 +661,7 @@
      "isNmbu": true,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://www.nmbu.no/studier/master-5-aar/vann-og-miljoteknikk",
      "localData": null
     },
     {
@@ -675,7 +675,7 @@
      "isNmbu": false,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://www.ntnu.no/studier/mtbygg",
      "localData": null
     },
     {
@@ -689,7 +689,7 @@
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://www.ntnu.no/studier/mtenerg",
      "localData": null
     },
     {
@@ -703,7 +703,7 @@
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://www.uis.no/nb/studier/byggingenior-bachelor",
      "localData": null
     },
     {
@@ -717,7 +717,7 @@
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://www.hiof.no/studier/programmer/byg-bachelorstudium-i-ingeniorfag-bygg/",
      "localData": null
     },
     {
@@ -731,7 +731,7 @@
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://www.oslomet.no/studier/tkd/energi-miljo",
      "localData": null
     },
     {
@@ -745,7 +745,7 @@
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://www.usn.no/studier/bachelor-i-ingeniorfag-byggingenior/plan-og-infrastruktur/",
      "localData": null
     }
    ]
@@ -768,7 +768,7 @@
      "isNmbu": true,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://www.nmbu.no/studier/master-5-aar/anvendt-robotikk",
      "localData": null
     },
     {
@@ -782,7 +782,7 @@
      "isNmbu": false,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://www.ntnu.no/studier/mttk",
      "localData": null
     },
     {
@@ -796,7 +796,7 @@
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://www.uis.no/nb/studier/kybernetikk-og-robotteknologi-master-5-ar",
      "localData": null
     },
     {
@@ -810,7 +810,7 @@
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://www.uia.no/studier/program/mekatronikk-bachelor/",
      "localData": null
     },
     {
@@ -824,7 +824,7 @@
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://www.oslomet.no/studier/tkd/automatisering-robotikk",
      "localData": null
     },
     {
@@ -838,7 +838,7 @@
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://www.uio.no/studier/program/informatikk-robotikk/",
      "localData": null
     },
     {
@@ -852,7 +852,7 @@
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://www.ntnu.no/studier/bimepro",
      "localData": null
     }
    ]
@@ -875,7 +875,7 @@
      "isNmbu": true,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://www.nmbu.no/studier/master-5-aar/geoinformatikk",
      "localData": null
     },
     {
@@ -889,7 +889,7 @@
      "isNmbu": false,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://www.hvl.no/studier/studieprogram/landmaling-og-eiendomsdesign/",
      "localData": null
     },
     {
@@ -903,7 +903,7 @@
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://www.ntnu.no/studier/bigeomat",
      "localData": null
     },
     {
@@ -917,7 +917,7 @@
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://www.ntnu.no/studier/mtgeort",
      "localData": null
     }
    ]
@@ -940,7 +940,7 @@
      "isNmbu": true,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://www.nmbu.no/studier/bachelor/geomatikk",
      "localData": null
     },
     {
@@ -954,7 +954,7 @@
      "isNmbu": false,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://www.hvl.no/studier/studieprogram/landmaling-og-eiendomsdesign/",
      "localData": null
     },
     {
@@ -968,7 +968,7 @@
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://www.ntnu.no/studier/bigeomat",
      "localData": null
     }
    ]
@@ -978,7 +978,7 @@
    "label": "Energi- og miljøfysikk",
    "level": "bachelor",
    "desc": "Sammenligner realfagsbachelorene innen fysikk, energi og miljø.",
-   "note": "Alle konkurrentene er treårige realfagsbachelorer i Samordna opptak. UiT, UiS og UiA har fysikkløp som er kombinert med matematikk eller tilbys nettbasert, og er derfor merket som svakere sammenligninger.",
+   "note": "Konkurrentene med default true er treårige realfagsbachelorer i Samordna opptak. UiTs program kombinerer fysikk og matematikk i samme bachelor og er derfor en svakere sammenligning, og UiS har bare et femårig integrert masterløp i matematikk og fysikk (bachelorgrad kan tas ut etter tre år), som er tatt med som svakere sammenligning. UiAs fysikktilbud (kodene 201661 og 201233) er årsstudier, ikke bachelorprogrammer, og er derfor ikke med. NMBUs bachelor i fornybar energi (kode 192835) hører hjemme ved Fakultet for miljøvitenskap og naturforvaltning og er heller ikke med.",
    "programs": [
     {
      "id": "nmbu_energifysikk",
@@ -991,7 +991,7 @@
      "isNmbu": true,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://www.nmbu.no/studier/bachelor/energi-og-miljofysikk",
      "localData": null
     },
     {
@@ -1005,7 +1005,7 @@
      "isNmbu": false,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://www.ntnu.no/studier/bfy",
      "localData": null
     },
     {
@@ -1019,7 +1019,7 @@
      "isNmbu": false,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://www.uio.no/studier/program/fysikk-astronomi/",
      "localData": null
     },
     {
@@ -1033,7 +1033,7 @@
      "isNmbu": false,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://www.uib.no/studier/BAMN-PHYS",
      "localData": null
     },
     {
@@ -1047,7 +1047,7 @@
      "isNmbu": false,
      "default": true,
      "source": "SO",
-     "url": null,
+     "url": "https://www.uio.no/studier/program/nanoteknologi/",
      "localData": null
     },
     {
@@ -1061,7 +1061,7 @@
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://uit.no/utdanning/program/712953/fysikk_og_matematikk_-_bachelor",
      "localData": null
     },
     {
@@ -1069,28 +1069,440 @@
      "shortName": "UiS",
      "institusjon": "Universitetet i Stavanger",
      "studiested": "Stavanger",
-     "programnavn": "Matematikk og fysikk (bachelor)",
+     "programnavn": "Matematikk og fysikk (master 5 år)",
      "studiekode": "217747",
-     "type": "bachelor",
+     "type": "master",
      "isNmbu": false,
      "default": false,
      "source": "SO",
-     "url": null,
+     "url": "https://www.uis.no/nb/studier/matematikk-og-fysikk-master-5-ar",
      "localData": null
+    }
+   ]
+  },
+  {
+   "id": "datavitenskap2",
+   "label": "Datavitenskap (2-årig master)",
+   "level": "master2",
+   "desc": "Sammenligner de toårige masterne i datavitenskap og datateknologi med lokalt opptak.",
+   "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra NTNUs egne publiseringer. DBH har ikke rapportert høsten 2026 ennå, så 2026-tallene for NTNU er fra NTNUs søkertallsoversikt. NTNUs datateknologimaster tas opp per studieretning (kunstig intelligens, programvaresystemer, databaser og søk, effektive datasystemer, visuell databehandling); studieplasser og førstevalgssøkere er summert over studieretningene, og poenggrensen er derfor ikke ført inn siden den varierer mellom dem (2026: 2,6–4,2). NMBU oppgir 25 studieplasser på programsiden, uten tidsserie, og publiserer ingen poenggrense. NMBUs program er engelskspråklig, og fallet i søkertall fra 2023 til 2024 henger sammen med innføringen av studieavgift for søkere utenfor EØS. NTNUs engelskspråklige informatikkmaster er tatt med som svakere sammenligning.",
+   "programs": [
+    {
+     "id": "nmbu_datavitenskap2",
+     "shortName": "NMBU",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "studiested": "Ås",
+     "programnavn": "Datavitenskap (master 2 år)",
+     "studiekode": null,
+     "type": "master2",
+     "isNmbu": true,
+     "default": true,
+     "source": "local",
+     "url": "https://www.nmbu.no/studier/master-2-aar/datavitenskap",
+     "localData": {
+      "2021": {
+       "alleS": 786,
+       "fvS": null,
+       "plasser": null,
+       "kvinner": null,
+       "kvalifiserte": 184,
+       "tilbud": 53,
+       "pg_fv": null,
+       "pg_ord": null
+      },
+      "2022": {
+       "alleS": 913,
+       "fvS": null,
+       "plasser": null,
+       "kvinner": null,
+       "kvalifiserte": 225,
+       "tilbud": 77,
+       "pg_fv": null,
+       "pg_ord": null
+      },
+      "2023": {
+       "alleS": 891,
+       "fvS": null,
+       "plasser": null,
+       "kvinner": null,
+       "kvalifiserte": 73,
+       "tilbud": 63,
+       "pg_fv": null,
+       "pg_ord": null
+      },
+      "2024": {
+       "alleS": 169,
+       "fvS": null,
+       "plasser": null,
+       "kvinner": null,
+       "kvalifiserte": 57,
+       "tilbud": 50,
+       "pg_fv": null,
+       "pg_ord": null
+      },
+      "2025": {
+       "alleS": 365,
+       "fvS": null,
+       "plasser": null,
+       "kvinner": null,
+       "kvalifiserte": 74,
+       "tilbud": 65,
+       "pg_fv": null,
+       "pg_ord": null
+      },
+      "2026": {
+       "alleS": null,
+       "fvS": null,
+       "plasser": null,
+       "kvinner": null,
+       "kvalifiserte": null,
+       "tilbud": null,
+       "pg_fv": null,
+       "pg_ord": null
+      },
+      "localSource": [
+       "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
+       "https://www.nmbu.no/studier/master-2-aar/datavitenskap"
+      ]
+     }
     },
     {
-     "id": "uia_fysikk",
-     "shortName": "UiA",
-     "institusjon": "Universitetet i Agder",
-     "studiested": "Kristiansand",
-     "programnavn": "Fysikk (bachelor)",
-     "studiekode": "201661",
-     "type": "bachelor",
+     "id": "ntnu_midt",
+     "shortName": "NTNU",
+     "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+     "studiested": "Trondheim",
+     "programnavn": "Datateknologi (master 2 år)",
+     "studiekode": null,
+     "type": "master2",
+     "isNmbu": false,
+     "default": true,
+     "source": "local",
+     "url": "https://www.ntnu.no/studier/midt",
+     "localData": {
+      "2021": {
+       "alleS": 561,
+       "fvS": 178,
+       "plasser": 47,
+       "kvinner": null,
+       "kvalifiserte": 287,
+       "tilbud": 72,
+       "pg_fv": null,
+       "pg_ord": null
+      },
+      "2022": {
+       "alleS": 430,
+       "fvS": 139,
+       "plasser": 47,
+       "kvinner": null,
+       "kvalifiserte": 266,
+       "tilbud": 71,
+       "pg_fv": null,
+       "pg_ord": null
+      },
+      "2023": {
+       "alleS": 553,
+       "fvS": 163,
+       "plasser": 42,
+       "kvinner": null,
+       "kvalifiserte": 298,
+       "tilbud": 66,
+       "pg_fv": null,
+       "pg_ord": null
+      },
+      "2024": {
+       "alleS": 625,
+       "fvS": 196,
+       "plasser": 52,
+       "kvinner": null,
+       "kvalifiserte": 366,
+       "tilbud": 97,
+       "pg_fv": null,
+       "pg_ord": null
+      },
+      "2025": {
+       "alleS": 756,
+       "fvS": 210,
+       "plasser": 76,
+       "kvinner": null,
+       "kvalifiserte": 433,
+       "tilbud": 123,
+       "pg_fv": null,
+       "pg_ord": null
+      },
+      "2026": {
+       "alleS": 821,
+       "fvS": 222,
+       "plasser": 85,
+       "kvinner": null,
+       "kvalifiserte": null,
+       "tilbud": null,
+       "pg_fv": null,
+       "pg_ord": null
+      },
+      "localSource": [
+       "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
+       "https://www.ntnu.no/studier/opptak/statistikk"
+      ]
+     }
+    },
+    {
+     "id": "ntnu_msit",
+     "shortName": "NTNU",
+     "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+     "studiested": "Trondheim",
+     "programnavn": "Informatics – Master's Programme (master 2 år)",
+     "studiekode": null,
+     "type": "master2",
      "isNmbu": false,
      "default": false,
-     "source": "SO",
-     "url": null,
-     "localData": null
+     "source": "local",
+     "url": "https://www.ntnu.no/studier/msit",
+     "localData": {
+      "2021": {
+       "alleS": 2309,
+       "fvS": null,
+       "plasser": null,
+       "kvinner": null,
+       "kvalifiserte": 995,
+       "tilbud": 178,
+       "pg_fv": null,
+       "pg_ord": null
+      },
+      "2022": {
+       "alleS": 2130,
+       "fvS": null,
+       "plasser": null,
+       "kvinner": null,
+       "kvalifiserte": 950,
+       "tilbud": 170,
+       "pg_fv": null,
+       "pg_ord": null
+      },
+      "2023": {
+       "alleS": 912,
+       "fvS": null,
+       "plasser": null,
+       "kvinner": null,
+       "kvalifiserte": 577,
+       "tilbud": 133,
+       "pg_fv": null,
+       "pg_ord": null
+      },
+      "2024": {
+       "alleS": 1155,
+       "fvS": null,
+       "plasser": null,
+       "kvinner": null,
+       "kvalifiserte": 713,
+       "tilbud": 147,
+       "pg_fv": null,
+       "pg_ord": null
+      },
+      "2025": {
+       "alleS": 1086,
+       "fvS": null,
+       "plasser": null,
+       "kvinner": null,
+       "kvalifiserte": 618,
+       "tilbud": 170,
+       "pg_fv": null,
+       "pg_ord": null
+      },
+      "2026": {
+       "alleS": null,
+       "fvS": null,
+       "plasser": null,
+       "kvinner": null,
+       "kvalifiserte": null,
+       "tilbud": null,
+       "pg_fv": null,
+       "pg_ord": null
+      },
+      "localSource": [
+       "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "vannmiljo2",
+   "label": "Vannteknologi (2-årig master)",
+   "level": "master2",
+   "desc": "Sammenligner de toårige masterne innen vann- og miljøteknikk med lokalt opptak.",
+   "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra NTNUs egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. NMBUs «Intelligent Water Technology» er engelskspråklig og hadde første opptak i 2024; NMBU publiserer verken studieplasser, førstevalgssøkere eller poenggrense for programmet. NTNU dekker vann- og miljøteknikk som studieretning i den toårige masteren i bygg og infrastruktur (het «Bygg- og miljøteknikk» til og med 2024 og hadde fram til 2024 også et opptak i Gjøvik); studieplasser og førstevalgssøkere er summert over Trondheim og Gjøvik, mens poenggrensen gjelder Trondheim. OsloMets «Smart vannteknologi» er det nærmeste rene vannteknologiprogrammet, men er så nytt at DBH ikke har opptakstall for det.",
+   "programs": [
+    {
+     "id": "nmbu_iwt",
+     "shortName": "NMBU",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "studiested": "Ås",
+     "programnavn": "Intelligent Water Technology (master 2 år)",
+     "studiekode": null,
+     "type": "master2",
+     "isNmbu": true,
+     "default": true,
+     "source": "local",
+     "url": "https://www.nmbu.no/studier/master-2-aar/intelligent-water-technology",
+     "localData": {
+      "2021": {
+       "alleS": null,
+       "fvS": null,
+       "plasser": null,
+       "kvinner": null,
+       "kvalifiserte": null,
+       "tilbud": null,
+       "pg_fv": null,
+       "pg_ord": null
+      },
+      "2022": {
+       "alleS": null,
+       "fvS": null,
+       "plasser": null,
+       "kvinner": null,
+       "kvalifiserte": null,
+       "tilbud": null,
+       "pg_fv": null,
+       "pg_ord": null
+      },
+      "2023": {
+       "alleS": null,
+       "fvS": null,
+       "plasser": null,
+       "kvinner": null,
+       "kvalifiserte": null,
+       "tilbud": null,
+       "pg_fv": null,
+       "pg_ord": null
+      },
+      "2024": {
+       "alleS": 41,
+       "fvS": null,
+       "plasser": null,
+       "kvinner": null,
+       "kvalifiserte": 11,
+       "tilbud": 7,
+       "pg_fv": null,
+       "pg_ord": null
+      },
+      "2025": {
+       "alleS": 82,
+       "fvS": null,
+       "plasser": null,
+       "kvinner": null,
+       "kvalifiserte": 23,
+       "tilbud": 15,
+       "pg_fv": null,
+       "pg_ord": null
+      },
+      "2026": {
+       "alleS": null,
+       "fvS": null,
+       "plasser": null,
+       "kvinner": null,
+       "kvalifiserte": null,
+       "tilbud": null,
+       "pg_fv": null,
+       "pg_ord": null
+      },
+      "localSource": [
+       "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
+      ]
+     }
+    },
+    {
+     "id": "ntnu_mibygg",
+     "shortName": "NTNU",
+     "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+     "studiested": "Trondheim",
+     "programnavn": "Bygg og infrastruktur (master 2 år)",
+     "studiekode": null,
+     "type": "master2",
+     "isNmbu": false,
+     "default": true,
+     "source": "local",
+     "url": "https://www.ntnu.no/studier/mibygg",
+     "localData": {
+      "2021": {
+       "alleS": 479,
+       "fvS": 312,
+       "plasser": 88,
+       "kvinner": null,
+       "kvalifiserte": 380,
+       "tilbud": 156,
+       "pg_fv": null,
+       "pg_ord": 4.0
+      },
+      "2022": {
+       "alleS": 392,
+       "fvS": 252,
+       "plasser": 88,
+       "kvinner": null,
+       "kvalifiserte": 294,
+       "tilbud": 156,
+       "pg_fv": null,
+       "pg_ord": 3.7
+      },
+      "2023": {
+       "alleS": 330,
+       "fvS": 214,
+       "plasser": 74,
+       "kvinner": null,
+       "kvalifiserte": 249,
+       "tilbud": 147,
+       "pg_fv": null,
+       "pg_ord": 3.4
+      },
+      "2024": {
+       "alleS": 357,
+       "fvS": 227,
+       "plasser": 88,
+       "kvinner": null,
+       "kvalifiserte": 255,
+       "tilbud": 171,
+       "pg_fv": null,
+       "pg_ord": 3.4
+      },
+      "2025": {
+       "alleS": 298,
+       "fvS": 222,
+       "plasser": 90,
+       "kvinner": null,
+       "kvalifiserte": 216,
+       "tilbud": 183,
+       "pg_fv": null,
+       "pg_ord": 2.8
+      },
+      "2026": {
+       "alleS": 287,
+       "fvS": 215,
+       "plasser": 110,
+       "kvinner": null,
+       "kvalifiserte": null,
+       "tilbud": null,
+       "pg_fv": null,
+       "pg_ord": 2.7
+      },
+      "localSource": [
+       "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
+       "https://www.ntnu.no/studier/opptak/statistikk"
+      ]
+     }
+    },
+    {
+     "id": "oslomet_smart_vannteknologi",
+     "shortName": "OsloMet",
+     "institusjon": "OsloMet - storbyuniversitetet",
+     "studiested": "Oslo",
+     "programnavn": "Smart vannteknologi (master 2 år)",
+     "studiekode": null,
+     "type": "master2",
+     "isNmbu": false,
+     "default": false,
+     "source": "local",
+     "url": "https://www.oslomet.no/studier/tkd/smart-vannteknologi",
+     "localData": null,
+     "localSource": null
     }
    ]
   }

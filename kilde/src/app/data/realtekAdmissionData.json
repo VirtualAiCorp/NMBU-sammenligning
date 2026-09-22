@@ -1,0 +1,5581 @@
+{
+  "generert": "2026-09-22",
+  "programkartHentet": "2026-09-22",
+  "years": [
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+  ],
+  "groups": [
+    {
+      "id": "bygg",
+      "label": "Byggeteknikk og arkitektur",
+      "level": "master5",
+      "desc": "Sammenligner NMBUs femårige sivilingeniørutdanning i byggeteknikk og arkitektur med de andre bygg- og konstruksjonsutdanningene.",
+      "note": "NTNUs «Bygg og infrastruktur» er den eneste direkte konkurrenten på femårig sivilingeniørnivå. NTNUs arkitektutdanning er tatt med som svakere sammenligning fordi NMBU-programmet også har en arkitekturdel, men opptakskravene og søkergruppen er andre. Treårige byggingeniørutdanninger er vesentlig svakere sammenligninger (default false); av dem er bare de største tatt med.",
+      "nmbuIds": [
+        "nmbu_bygg"
+      ],
+      "defaultIds": [
+        "nmbu_bygg",
+        "ntnu_bygg_infrastruktur"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_bygg",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "192759",
+          "studiested": "Ås",
+          "type": "master",
+          "url": "https://www.nmbu.no/studier/master-5-aar/byggeteknikk-og-arkitektur",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 50.4,
+              "pg_ord": 56.6
+            },
+            "2021": {
+              "alleS": 612,
+              "fvS": 74,
+              "plasser": 35,
+              "kvinner": 27.0,
+              "kvalifiserte": 483,
+              "tilbud": 48,
+              "pg_fv": 51.4,
+              "pg_ord": 58.0
+            },
+            "2022": {
+              "alleS": 521,
+              "fvS": 67,
+              "plasser": 35,
+              "kvinner": 49.3,
+              "kvalifiserte": 403,
+              "tilbud": 52,
+              "pg_fv": 52.0,
+              "pg_ord": 56.4
+            },
+            "2023": {
+              "alleS": 517,
+              "fvS": 71,
+              "plasser": 35,
+              "kvinner": 54.9,
+              "kvalifiserte": 405,
+              "tilbud": 82,
+              "pg_fv": 49.5,
+              "pg_ord": 52.0
+            },
+            "2024": {
+              "alleS": 521,
+              "fvS": 65,
+              "plasser": 50,
+              "kvinner": 47.7,
+              "kvalifiserte": 382,
+              "tilbud": 88,
+              "pg_fv": 47.7,
+              "pg_ord": 52.0
+            },
+            "2025": {
+              "alleS": 517,
+              "fvS": 73,
+              "plasser": 50,
+              "kvinner": 47.9,
+              "kvalifiserte": 390,
+              "tilbud": 95,
+              "pg_fv": 44.7,
+              "pg_ord": 41.7
+            },
+            "2026": {
+              "alleS": 500,
+              "fvS": 61,
+              "plasser": 35,
+              "kvinner": 32.8,
+              "kvalifiserte": 361,
+              "tilbud": 70,
+              "pg_fv": 44.3,
+              "pg_ord": 47.2
+            }
+          }
+        },
+        {
+          "id": "ntnu_bygg_infrastruktur",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "194759",
+          "studiested": "Trondheim",
+          "type": "master",
+          "url": "https://www.ntnu.no/studier/mtbygg",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 52.5,
+              "pg_ord": 54.9
+            },
+            "2021": {
+              "alleS": 1601,
+              "fvS": 328,
+              "plasser": 215,
+              "kvinner": 37.8,
+              "kvalifiserte": 1314,
+              "tilbud": 336,
+              "pg_fv": 52.5,
+              "pg_ord": 54.1
+            },
+            "2022": {
+              "alleS": 1501,
+              "fvS": 318,
+              "plasser": 215,
+              "kvinner": 36.2,
+              "kvalifiserte": 1234,
+              "tilbud": 316,
+              "pg_fv": 52.5,
+              "pg_ord": 52.8
+            },
+            "2023": {
+              "alleS": 1569,
+              "fvS": 309,
+              "plasser": 190,
+              "kvinner": 37.9,
+              "kvalifiserte": 1220,
+              "tilbud": 344,
+              "pg_fv": 51.3,
+              "pg_ord": 53.3
+            },
+            "2024": {
+              "alleS": 1525,
+              "fvS": 302,
+              "plasser": 190,
+              "kvinner": 43.0,
+              "kvalifiserte": 1149,
+              "tilbud": 280,
+              "pg_fv": 52.2,
+              "pg_ord": 55.3
+            },
+            "2025": {
+              "alleS": 1635,
+              "fvS": 276,
+              "plasser": 180,
+              "kvinner": 35.1,
+              "kvalifiserte": 1285,
+              "tilbud": 284,
+              "pg_fv": 51.9,
+              "pg_ord": 53.1
+            },
+            "2026": {
+              "alleS": 1678,
+              "fvS": 298,
+              "plasser": 160,
+              "kvinner": 37.6,
+              "kvalifiserte": 1295,
+              "tilbud": 326,
+              "pg_fv": 51.3,
+              "pg_ord": 52.2
+            }
+          }
+        },
+        {
+          "id": "ntnu_arkitektur",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "194756",
+          "studiested": "Trondheim",
+          "type": "master",
+          "url": "https://www.ntnu.no/studier/maar",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 54.8,
+              "pg_ord": 59.7
+            },
+            "2021": {
+              "alleS": 1762,
+              "fvS": 415,
+              "plasser": 100,
+              "kvinner": 63.9,
+              "kvalifiserte": 1343,
+              "tilbud": 178,
+              "pg_fv": 55.7,
+              "pg_ord": 60.6
+            },
+            "2022": {
+              "alleS": 1584,
+              "fvS": 357,
+              "plasser": 100,
+              "kvinner": 63.3,
+              "kvalifiserte": 1181,
+              "tilbud": 190,
+              "pg_fv": 55.6,
+              "pg_ord": 60.0
+            },
+            "2023": {
+              "alleS": 1783,
+              "fvS": 397,
+              "plasser": 80,
+              "kvinner": 63.2,
+              "kvalifiserte": 1296,
+              "tilbud": 154,
+              "pg_fv": 55.9,
+              "pg_ord": 61.2
+            },
+            "2024": {
+              "alleS": 1549,
+              "fvS": 333,
+              "plasser": 84,
+              "kvinner": 64.0,
+              "kvalifiserte": 1124,
+              "tilbud": 160,
+              "pg_fv": 55.2,
+              "pg_ord": 60.5
+            },
+            "2025": {
+              "alleS": 1406,
+              "fvS": 273,
+              "plasser": 93,
+              "kvinner": 64.5,
+              "kvalifiserte": 1001,
+              "tilbud": 220,
+              "pg_fv": 51.3,
+              "pg_ord": 55.2
+            },
+            "2026": {
+              "alleS": 1548,
+              "fvS": 292,
+              "plasser": 93,
+              "kvinner": 67.8,
+              "kvalifiserte": 1060,
+              "tilbud": 210,
+              "pg_fv": 49.0,
+              "pg_ord": 54.0
+            }
+          }
+        },
+        {
+          "id": "ntnu_ing_bygg",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "194675",
+          "studiested": "Trondheim",
+          "type": "bachelor",
+          "url": "https://www.ntnu.no/studier/bibygg",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 50.3,
+              "pg_ord": 53.4
+            },
+            "2021": {
+              "alleS": 1687,
+              "fvS": 262,
+              "plasser": 125,
+              "kvinner": 21.8,
+              "kvalifiserte": 1422,
+              "tilbud": 208,
+              "pg_fv": 50.5,
+              "pg_ord": 54.0
+            },
+            "2022": {
+              "alleS": 1689,
+              "fvS": 270,
+              "plasser": 125,
+              "kvinner": 27.4,
+              "kvalifiserte": 1426,
+              "tilbud": 196,
+              "pg_fv": 50.9,
+              "pg_ord": 54.8
+            },
+            "2023": {
+              "alleS": 1563,
+              "fvS": 247,
+              "plasser": 105,
+              "kvinner": 29.6,
+              "kvalifiserte": 1282,
+              "tilbud": 181,
+              "pg_fv": 52.2,
+              "pg_ord": 55.8
+            },
+            "2024": {
+              "alleS": 1503,
+              "fvS": 232,
+              "plasser": 105,
+              "kvinner": 28.0,
+              "kvalifiserte": 1261,
+              "tilbud": 168,
+              "pg_fv": 51.3,
+              "pg_ord": 55.5
+            },
+            "2025": {
+              "alleS": 1649,
+              "fvS": 263,
+              "plasser": 120,
+              "kvinner": 31.6,
+              "kvalifiserte": 1389,
+              "tilbud": 232,
+              "pg_fv": 49.9,
+              "pg_ord": 54.1
+            },
+            "2026": {
+              "alleS": 1759,
+              "fvS": 250,
+              "plasser": 140,
+              "kvinner": 32.4,
+              "kvalifiserte": 1481,
+              "tilbud": 252,
+              "pg_fv": 49.3,
+              "pg_ord": 51.0
+            }
+          }
+        },
+        {
+          "id": "oslomet_ing_bygg",
+          "shortName": "OsloMet",
+          "institusjon": "OsloMet - storbyuniversitetet",
+          "studiekode": "215003",
+          "studiested": "Oslo",
+          "type": "bachelor",
+          "url": "https://www.oslomet.no/studier/tkd/byggingenior",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 40.9
+            },
+            "2021": {
+              "alleS": 1117,
+              "fvS": 221,
+              "plasser": 155,
+              "kvinner": 22.6,
+              "kvalifiserte": 668,
+              "tilbud": 223,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 1060,
+              "fvS": 208,
+              "plasser": 180,
+              "kvinner": 19.7,
+              "kvalifiserte": 652,
+              "tilbud": 210,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 1015,
+              "fvS": 194,
+              "plasser": 180,
+              "kvinner": 23.2,
+              "kvalifiserte": 571,
+              "tilbud": 175,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 976,
+              "fvS": 202,
+              "plasser": 160,
+              "kvinner": 19.3,
+              "kvalifiserte": 507,
+              "tilbud": 165,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 1031,
+              "fvS": 195,
+              "plasser": 160,
+              "kvinner": 24.6,
+              "kvalifiserte": 572,
+              "tilbud": 152,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 1075,
+              "fvS": 241,
+              "plasser": 160,
+              "kvinner": 29.0,
+              "kvalifiserte": 580,
+              "tilbud": 183,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "hvl_ing_bygg",
+          "shortName": "HVL",
+          "institusjon": "Høgskulen på Vestlandet",
+          "studiekode": "203003",
+          "studiested": "Bergen",
+          "type": "bachelor",
+          "url": "https://www.hvl.no/studier/studieprogram/byggingenior-bergen/",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 724,
+              "fvS": 152,
+              "plasser": 130,
+              "kvinner": 17.1,
+              "kvalifiserte": 497,
+              "tilbud": 148,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 685,
+              "fvS": 140,
+              "plasser": 110,
+              "kvinner": 28.6,
+              "kvalifiserte": 448,
+              "tilbud": 122,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 614,
+              "fvS": 121,
+              "plasser": 100,
+              "kvinner": 23.1,
+              "kvalifiserte": 391,
+              "tilbud": 102,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 693,
+              "fvS": 124,
+              "plasser": 100,
+              "kvinner": 27.4,
+              "kvalifiserte": 438,
+              "tilbud": 128,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 763,
+              "fvS": 147,
+              "plasser": 100,
+              "kvinner": 27.2,
+              "kvalifiserte": 489,
+              "tilbud": 140,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 858,
+              "fvS": 147,
+              "plasser": 100,
+              "kvinner": 29.9,
+              "kvalifiserte": 544,
+              "tilbud": 147,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "uis_ing_bygg_konstruksjon",
+          "shortName": "UiS",
+          "institusjon": "Universitetet i Stavanger",
+          "studiekode": "217675",
+          "studiested": "Stavanger",
+          "type": "bachelor",
+          "url": "https://www.uis.no/nb/studier/byggingenior-bachelor",
+          "years": {
+            "2023": {
+              "alleS": 196,
+              "fvS": 24,
+              "plasser": 35,
+              "kvinner": 33.3,
+              "kvalifiserte": 119,
+              "tilbud": 18,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 208,
+              "fvS": 33,
+              "plasser": 27,
+              "kvinner": 27.3,
+              "kvalifiserte": 136,
+              "tilbud": 26,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 277,
+              "fvS": 41,
+              "plasser": 22,
+              "kvinner": 31.7,
+              "kvalifiserte": 186,
+              "tilbud": 33,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 264,
+              "fvS": 36,
+              "plasser": 22,
+              "kvinner": 30.6,
+              "kvalifiserte": 170,
+              "tilbud": 27,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "maskin",
+      "label": "Teknologi og produktutvikling",
+      "level": "master5",
+      "desc": "Sammenligner NMBUs femårige sivilingeniørutdanning i teknologi og produktutvikling med maskin- og produktutviklingsutdanningene.",
+      "note": "NTNUs «Maskin- og energiteknologi» erstattet «Produktutvikling og produksjon» fra opptaket 2023; begge kodene er med slik at tidsserien kan følges (forgjengeren med default false). NTNUs industriell design er tatt med fordi den overlapper på produktutviklingssiden. Treårige maskin- og produktutviklingsingeniører er svakere sammenligninger (default false).",
+      "nmbuIds": [
+        "nmbu_maskin"
+      ],
+      "defaultIds": [
+        "nmbu_maskin",
+        "ntnu_maskin_energi",
+        "ntnu_industriell_design"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_maskin",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "192766",
+          "studiested": "Ås",
+          "type": "master",
+          "url": "https://www.nmbu.no/studier/master-5-aar/teknologi-og-produktutvikling",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 45.4,
+              "pg_ord": 50.0
+            },
+            "2021": {
+              "alleS": 204,
+              "fvS": 21,
+              "plasser": 20,
+              "kvinner": 14.3,
+              "kvalifiserte": 180,
+              "tilbud": 30,
+              "pg_fv": 42.4,
+              "pg_ord": 51.8
+            },
+            "2022": {
+              "alleS": 153,
+              "fvS": 21,
+              "plasser": 20,
+              "kvinner": 4.8,
+              "kvalifiserte": 127,
+              "tilbud": 30,
+              "pg_fv": 0.0,
+              "pg_ord": 42.3
+            },
+            "2023": {
+              "alleS": 166,
+              "fvS": 25,
+              "plasser": 20,
+              "kvinner": 4.0,
+              "kvalifiserte": 135,
+              "tilbud": 29,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 213,
+              "fvS": 26,
+              "plasser": 20,
+              "kvinner": 23.1,
+              "kvalifiserte": 163,
+              "tilbud": 37,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 221,
+              "fvS": 36,
+              "plasser": 20,
+              "kvinner": 19.4,
+              "kvalifiserte": 179,
+              "tilbud": 40,
+              "pg_fv": 0.0,
+              "pg_ord": 36.7
+            },
+            "2026": {
+              "alleS": 231,
+              "fvS": 41,
+              "plasser": 20,
+              "kvinner": 22.0,
+              "kvalifiserte": 189,
+              "tilbud": 40,
+              "pg_fv": 45.6,
+              "pg_ord": 47.8
+            }
+          }
+        },
+        {
+          "id": "ntnu_maskin_energi",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "194762",
+          "studiested": "Trondheim",
+          "type": "master",
+          "url": "https://www.ntnu.no/studier/mtmaskin",
+          "years": {
+            "2023": {
+              "alleS": 1397,
+              "fvS": 308,
+              "plasser": 140,
+              "kvinner": 19.2,
+              "kvalifiserte": 1139,
+              "tilbud": 240,
+              "pg_fv": 55.5,
+              "pg_ord": 56.8
+            },
+            "2024": {
+              "alleS": 1573,
+              "fvS": 338,
+              "plasser": 140,
+              "kvinner": 20.4,
+              "kvalifiserte": 1336,
+              "tilbud": 226,
+              "pg_fv": 56.3,
+              "pg_ord": 58.9
+            },
+            "2025": {
+              "alleS": 1604,
+              "fvS": 322,
+              "plasser": 144,
+              "kvinner": 24.5,
+              "kvalifiserte": 1424,
+              "tilbud": 252,
+              "pg_fv": 56.8,
+              "pg_ord": 59.1
+            },
+            "2026": {
+              "alleS": 1709,
+              "fvS": 380,
+              "plasser": 164,
+              "kvinner": 23.9,
+              "kvalifiserte": 1511,
+              "tilbud": 264,
+              "pg_fv": 57.6,
+              "pg_ord": 59.8
+            }
+          }
+        },
+        {
+          "id": "ntnu_industriell_design",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "194768",
+          "studiested": "Trondheim",
+          "type": "master",
+          "url": "https://www.ntnu.no/studier/mtdesig",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 56.9,
+              "pg_ord": 60.3
+            },
+            "2021": {
+              "alleS": 880,
+              "fvS": 171,
+              "plasser": 42,
+              "kvinner": 64.9,
+              "kvalifiserte": 707,
+              "tilbud": 72,
+              "pg_fv": 57.5,
+              "pg_ord": 61.6
+            },
+            "2022": {
+              "alleS": 829,
+              "fvS": 159,
+              "plasser": 42,
+              "kvinner": 70.4,
+              "kvalifiserte": 671,
+              "tilbud": 80,
+              "pg_fv": 56.7,
+              "pg_ord": 62.0
+            },
+            "2023": {
+              "alleS": 914,
+              "fvS": 159,
+              "plasser": 42,
+              "kvinner": 70.4,
+              "kvalifiserte": 743,
+              "tilbud": 62,
+              "pg_fv": 57.9,
+              "pg_ord": 63.5
+            },
+            "2024": {
+              "alleS": 865,
+              "fvS": 151,
+              "plasser": 43,
+              "kvinner": 70.2,
+              "kvalifiserte": 714,
+              "tilbud": 90,
+              "pg_fv": 57.2,
+              "pg_ord": 61.7
+            },
+            "2025": {
+              "alleS": 812,
+              "fvS": 140,
+              "plasser": 45,
+              "kvinner": 75.0,
+              "kvalifiserte": 646,
+              "tilbud": 82,
+              "pg_fv": 57.0,
+              "pg_ord": 61.8
+            },
+            "2026": {
+              "alleS": 788,
+              "fvS": 121,
+              "plasser": 45,
+              "kvinner": 71.9,
+              "kvalifiserte": 624,
+              "tilbud": 74,
+              "pg_fv": 55.7,
+              "pg_ord": 60.0
+            }
+          }
+        },
+        {
+          "id": "ntnu_produktutvikling_produksjon",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "194766",
+          "studiested": "Trondheim",
+          "type": "master",
+          "url": "https://www.ntnu.no/studier/mtprod",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 53.5,
+              "pg_ord": 55.0
+            },
+            "2021": {
+              "alleS": 1124,
+              "fvS": 181,
+              "plasser": 142,
+              "kvinner": 22.7,
+              "kvalifiserte": 951,
+              "tilbud": 204,
+              "pg_fv": 54.2,
+              "pg_ord": 56.0
+            },
+            "2022": {
+              "alleS": 1140,
+              "fvS": 189,
+              "plasser": 142,
+              "kvinner": 18.5,
+              "kvalifiserte": 968,
+              "tilbud": 242,
+              "pg_fv": 53.5,
+              "pg_ord": 53.0
+            }
+          }
+        },
+        {
+          "id": "ntnu_ing_maskin",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "194034",
+          "studiested": "Trondheim",
+          "type": "bachelor",
+          "url": "https://www.ntnu.no/studier/bimaskin",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 49.5,
+              "pg_ord": 52.3
+            },
+            "2021": {
+              "alleS": 1197,
+              "fvS": 207,
+              "plasser": 95,
+              "kvinner": 7.2,
+              "kvalifiserte": 1064,
+              "tilbud": 161,
+              "pg_fv": 49.8,
+              "pg_ord": 52.5
+            },
+            "2022": {
+              "alleS": 1200,
+              "fvS": 203,
+              "plasser": 95,
+              "kvinner": 13.8,
+              "kvalifiserte": 1072,
+              "tilbud": 158,
+              "pg_fv": 49.8,
+              "pg_ord": 53.1
+            },
+            "2023": {
+              "alleS": 1217,
+              "fvS": 180,
+              "plasser": 90,
+              "kvinner": 13.9,
+              "kvalifiserte": 1062,
+              "tilbud": 153,
+              "pg_fv": 51.4,
+              "pg_ord": 53.8
+            },
+            "2024": {
+              "alleS": 1493,
+              "fvS": 220,
+              "plasser": 90,
+              "kvinner": 19.1,
+              "kvalifiserte": 1307,
+              "tilbud": 152,
+              "pg_fv": 52.3,
+              "pg_ord": 55.7
+            },
+            "2025": {
+              "alleS": 1698,
+              "fvS": 318,
+              "plasser": 104,
+              "kvinner": 19.2,
+              "kvalifiserte": 1523,
+              "tilbud": 171,
+              "pg_fv": 53.2,
+              "pg_ord": 56.7
+            },
+            "2026": {
+              "alleS": 1956,
+              "fvS": 353,
+              "plasser": 115,
+              "kvinner": 15.0,
+              "kvalifiserte": 1755,
+              "tilbud": 187,
+              "pg_fv": 54.1,
+              "pg_ord": 56.9
+            }
+          }
+        },
+        {
+          "id": "oslomet_ing_maskin",
+          "shortName": "OsloMet",
+          "institusjon": "OsloMet - storbyuniversitetet",
+          "studiekode": "215012",
+          "studiested": "Oslo",
+          "type": "bachelor",
+          "url": "https://www.oslomet.no/studier/tkd/maskiningenior",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 562,
+              "fvS": 93,
+              "plasser": 80,
+              "kvinner": 15.1,
+              "kvalifiserte": 372,
+              "tilbud": 81,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 599,
+              "fvS": 87,
+              "plasser": 60,
+              "kvinner": 10.3,
+              "kvalifiserte": 406,
+              "tilbud": 85,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 522,
+              "fvS": 89,
+              "plasser": 60,
+              "kvinner": 13.5,
+              "kvalifiserte": 333,
+              "tilbud": 84,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 656,
+              "fvS": 105,
+              "plasser": 60,
+              "kvinner": 11.4,
+              "kvalifiserte": 401,
+              "tilbud": 103,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 753,
+              "fvS": 117,
+              "plasser": 70,
+              "kvinner": 14.5,
+              "kvalifiserte": 508,
+              "tilbud": 110,
+              "pg_fv": 38.3,
+              "pg_ord": 39.7
+            },
+            "2026": {
+              "alleS": 838,
+              "fvS": 117,
+              "plasser": 70,
+              "kvinner": 20.5,
+              "kvalifiserte": 524,
+              "tilbud": 110,
+              "pg_fv": 41.0,
+              "pg_ord": 41.9
+            }
+          }
+        },
+        {
+          "id": "usn_ing_maskin_produktutvikling",
+          "shortName": "USN",
+          "institusjon": "Universitetet i Sørøst-Norge",
+          "studiekode": "222069",
+          "studiested": "Kongsberg",
+          "type": "bachelor",
+          "url": "https://www.usn.no/studier/bachelor-i-ingeniorfag-maskiningenior/produktutvikling/",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 145,
+              "fvS": 25,
+              "plasser": 10,
+              "kvinner": 28.0,
+              "kvalifiserte": 94,
+              "tilbud": 21,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 138,
+              "fvS": 24,
+              "plasser": 10,
+              "kvinner": 4.2,
+              "kvalifiserte": 87,
+              "tilbud": 15,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 149,
+              "fvS": 36,
+              "plasser": 15,
+              "kvinner": 25.0,
+              "kvalifiserte": 95,
+              "tilbud": 21,
+              "pg_fv": 45.4,
+              "pg_ord": 45.5
+            },
+            "2024": {
+              "alleS": 138,
+              "fvS": 36,
+              "plasser": 20,
+              "kvinner": 11.1,
+              "kvalifiserte": 88,
+              "tilbud": 31,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 172,
+              "fvS": 32,
+              "plasser": 15,
+              "kvinner": 18.8,
+              "kvalifiserte": 113,
+              "tilbud": 27,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 196,
+              "fvS": 33,
+              "plasser": 15,
+              "kvinner": 18.2,
+              "kvalifiserte": 126,
+              "tilbud": 31,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "indok",
+      "label": "Industriell økonomi",
+      "level": "master5",
+      "desc": "Sammenligner de femårige sivilingeniørutdanningene i industriell økonomi og teknologiledelse.",
+      "note": "Fire institusjoner tilbyr industriell økonomi som femårig sivilingeniørutdanning i Samordna opptak: NMBU, NTNU, UiA og UiS. UiB-programmet i informasjonsteknologi og økonomi og Nords økonomi og teknologiledelse ligner tematisk, men er henholdsvis IT-tungt og et økonomistudium, og er derfor merket som svakere sammenligninger.",
+      "nmbuIds": [
+        "nmbu_indok"
+      ],
+      "defaultIds": [
+        "nmbu_indok",
+        "ntnu_indok",
+        "uia_indok",
+        "uis_indok"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_indok",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "192767",
+          "studiested": "Ås",
+          "type": "master",
+          "url": "https://www.nmbu.no/studier/master-5-aar/industriell-okonomi",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 54.4,
+              "pg_ord": 60.0
+            },
+            "2021": {
+              "alleS": 582,
+              "fvS": 98,
+              "plasser": 40,
+              "kvinner": 35.7,
+              "kvalifiserte": 507,
+              "tilbud": 56,
+              "pg_fv": 54.0,
+              "pg_ord": 60.9
+            },
+            "2022": {
+              "alleS": 492,
+              "fvS": 87,
+              "plasser": 40,
+              "kvinner": 35.6,
+              "kvalifiserte": 427,
+              "tilbud": 56,
+              "pg_fv": 55.1,
+              "pg_ord": 59.4
+            },
+            "2023": {
+              "alleS": 556,
+              "fvS": 107,
+              "plasser": 40,
+              "kvinner": 35.5,
+              "kvalifiserte": 487,
+              "tilbud": 78,
+              "pg_fv": 54.0,
+              "pg_ord": 58.9
+            },
+            "2024": {
+              "alleS": 618,
+              "fvS": 123,
+              "plasser": 60,
+              "kvinner": 34.1,
+              "kvalifiserte": 534,
+              "tilbud": 100,
+              "pg_fv": 52.7,
+              "pg_ord": 57.0
+            },
+            "2025": {
+              "alleS": 679,
+              "fvS": 117,
+              "plasser": 60,
+              "kvinner": 37.6,
+              "kvalifiserte": 578,
+              "tilbud": 100,
+              "pg_fv": 52.6,
+              "pg_ord": 57.1
+            },
+            "2026": {
+              "alleS": 683,
+              "fvS": 126,
+              "plasser": 40,
+              "kvinner": 28.6,
+              "kvalifiserte": 596,
+              "tilbud": 70,
+              "pg_fv": 53.6,
+              "pg_ord": 58.9
+            }
+          }
+        },
+        {
+          "id": "ntnu_indok",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "194767",
+          "studiested": "Trondheim",
+          "type": "master",
+          "url": "https://www.ntnu.no/studier/mtiot",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 60.7,
+              "pg_ord": 64.8
+            },
+            "2021": {
+              "alleS": 2428,
+              "fvS": 1126,
+              "plasser": 180,
+              "kvinner": 32.8,
+              "kvalifiserte": 2142,
+              "tilbud": 284,
+              "pg_fv": 61.6,
+              "pg_ord": 65.9
+            },
+            "2022": {
+              "alleS": 2139,
+              "fvS": 1060,
+              "plasser": 180,
+              "kvinner": 31.3,
+              "kvalifiserte": 1936,
+              "tilbud": 284,
+              "pg_fv": 61.9,
+              "pg_ord": 66.9
+            },
+            "2023": {
+              "alleS": 2396,
+              "fvS": 1225,
+              "plasser": 160,
+              "kvinner": 36.6,
+              "kvalifiserte": 2098,
+              "tilbud": 252,
+              "pg_fv": 63.0,
+              "pg_ord": 68.4
+            },
+            "2024": {
+              "alleS": 2244,
+              "fvS": 1213,
+              "plasser": 160,
+              "kvinner": 33.3,
+              "kvalifiserte": 1961,
+              "tilbud": 280,
+              "pg_fv": 62.1,
+              "pg_ord": 68.0
+            },
+            "2025": {
+              "alleS": 2096,
+              "fvS": 1163,
+              "plasser": 160,
+              "kvinner": 34.6,
+              "kvalifiserte": 1804,
+              "tilbud": 270,
+              "pg_fv": 61.5,
+              "pg_ord": 68.4
+            },
+            "2026": {
+              "alleS": 2221,
+              "fvS": 1248,
+              "plasser": 160,
+              "kvinner": 33.9,
+              "kvalifiserte": 1919,
+              "tilbud": 314,
+              "pg_fv": 61.2,
+              "pg_ord": 67.8
+            }
+          }
+        },
+        {
+          "id": "uia_indok",
+          "shortName": "UiA",
+          "institusjon": "Universitetet i Agder",
+          "studiekode": "201767",
+          "studiested": "Grimstad",
+          "type": "master",
+          "url": "https://www.uia.no/studier/program/industriell-okonomi-og-teknologiledelse-master-5-ar/",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 44.3,
+              "pg_ord": 48.7
+            },
+            "2021": {
+              "alleS": 557,
+              "fvS": 104,
+              "plasser": 30,
+              "kvinner": 31.7,
+              "kvalifiserte": 451,
+              "tilbud": 100,
+              "pg_fv": 45.9,
+              "pg_ord": 49.6
+            },
+            "2022": {
+              "alleS": 404,
+              "fvS": 78,
+              "plasser": 30,
+              "kvinner": 29.5,
+              "kvalifiserte": 309,
+              "tilbud": 100,
+              "pg_fv": 41.4,
+              "pg_ord": 47.0
+            },
+            "2023": {
+              "alleS": 460,
+              "fvS": 98,
+              "plasser": 30,
+              "kvinner": 32.7,
+              "kvalifiserte": 337,
+              "tilbud": 120,
+              "pg_fv": 37.2,
+              "pg_ord": 46.3
+            },
+            "2024": {
+              "alleS": 464,
+              "fvS": 105,
+              "plasser": 30,
+              "kvinner": 33.3,
+              "kvalifiserte": 334,
+              "tilbud": 120,
+              "pg_fv": 0.0,
+              "pg_ord": 42.4
+            },
+            "2025": {
+              "alleS": 455,
+              "fvS": 109,
+              "plasser": 30,
+              "kvinner": 29.4,
+              "kvalifiserte": 344,
+              "tilbud": 122,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 356,
+              "fvS": 69,
+              "plasser": 30,
+              "kvinner": 31.9,
+              "kvalifiserte": 276,
+              "tilbud": 88,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "uis_indok",
+          "shortName": "UiS",
+          "institusjon": "Universitetet i Stavanger",
+          "studiekode": "217813",
+          "studiested": "Stavanger",
+          "type": "master",
+          "url": "https://www.uis.no/nb/studier/industriell-okonomi-master-5-ar",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 42.0,
+              "pg_ord": 53.7
+            },
+            "2021": {
+              "alleS": 497,
+              "fvS": 118,
+              "plasser": 45,
+              "kvinner": 24.6,
+              "kvalifiserte": 381,
+              "tilbud": 90,
+              "pg_fv": 39.8,
+              "pg_ord": 54.4
+            },
+            "2022": {
+              "alleS": 391,
+              "fvS": 81,
+              "plasser": 38,
+              "kvinner": 14.8,
+              "kvalifiserte": 302,
+              "tilbud": 90,
+              "pg_fv": 0.0,
+              "pg_ord": 48.6
+            },
+            "2023": {
+              "alleS": 423,
+              "fvS": 86,
+              "plasser": 42,
+              "kvinner": 19.8,
+              "kvalifiserte": 311,
+              "tilbud": 118,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 425,
+              "fvS": 103,
+              "plasser": 42,
+              "kvinner": 20.4,
+              "kvalifiserte": 322,
+              "tilbud": 125,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 455,
+              "fvS": 113,
+              "plasser": 43,
+              "kvinner": 27.4,
+              "kvalifiserte": 329,
+              "tilbud": 119,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 437,
+              "fvS": 99,
+              "plasser": 50,
+              "kvinner": 27.3,
+              "kvalifiserte": 313,
+              "tilbud": 117,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "uib_it_okonomi",
+          "shortName": "UiB",
+          "institusjon": "Universitetet i Bergen",
+          "studiekode": "184803",
+          "studiested": "Bergen",
+          "type": "master",
+          "url": "https://www.uib.no/studier/MASV-IT%C3%98K",
+          "years": {
+            "2021": {
+              "alleS": 1092,
+              "fvS": 233,
+              "plasser": 25,
+              "kvinner": 24.5,
+              "kvalifiserte": 850,
+              "tilbud": 52,
+              "pg_fv": 55.4,
+              "pg_ord": 59.3
+            },
+            "2022": {
+              "alleS": 833,
+              "fvS": 132,
+              "plasser": 25,
+              "kvinner": 28.0,
+              "kvalifiserte": 714,
+              "tilbud": 63,
+              "pg_fv": 56.5,
+              "pg_ord": 60.0
+            },
+            "2023": {
+              "alleS": 856,
+              "fvS": 139,
+              "plasser": 25,
+              "kvinner": 25.2,
+              "kvalifiserte": 720,
+              "tilbud": 57,
+              "pg_fv": 58.3,
+              "pg_ord": 62.1
+            },
+            "2024": {
+              "alleS": 841,
+              "fvS": 117,
+              "plasser": 25,
+              "kvinner": 33.3,
+              "kvalifiserte": 725,
+              "tilbud": 60,
+              "pg_fv": 58.8,
+              "pg_ord": 62.5
+            },
+            "2025": {
+              "alleS": 694,
+              "fvS": 95,
+              "plasser": 25,
+              "kvinner": 34.7,
+              "kvalifiserte": 584,
+              "tilbud": 55,
+              "pg_fv": 57.2,
+              "pg_ord": 62.6
+            },
+            "2026": {
+              "alleS": 709,
+              "fvS": 78,
+              "plasser": 25,
+              "kvinner": 44.9,
+              "kvalifiserte": 592,
+              "tilbud": 56,
+              "pg_fv": 54.4,
+              "pg_ord": 61.6
+            }
+          }
+        },
+        {
+          "id": "nord_okonomi_teknologiledelse",
+          "shortName": "Nord",
+          "institusjon": "Nord universitet",
+          "studiekode": "204340",
+          "studiested": "Mo i Rana",
+          "type": "bachelor",
+          "url": "https://www.nord.no/studier/okonomi-og-teknologiledelse-bachelor",
+          "years": {
+            "2026": {
+              "alleS": 209,
+              "fvS": 35,
+              "plasser": 30,
+              "kvinner": 48.6,
+              "kvalifiserte": 186,
+              "tilbud": 63,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "kjemibio",
+      "label": "Kjemi og bioteknologi",
+      "level": "master5",
+      "desc": "Sammenligner de femårige sivilingeniørutdanningene innen kjemi og bioteknologi.",
+      "note": "NTNU endret navn og kode fra «Industriell kjemi og bioteknologi» til «Industriell kjemi, materialer og bioteknologi» fra opptaket 2025; begge er med slik at tidsserien kan følges (forgjengeren med default false). UiTs «Bærekraftig kjemi og innovasjon» startet i 2025. NTNUs femårige master i bioteknologi er et realfagsløp (ikke sivilingeniør) og er derfor merket som svakere sammenligning, det samme er UiOs realfagsbachelor og OsloMets treårige kjemi- og bioteknologiingeniør.",
+      "nmbuIds": [
+        "nmbu_kjemibio"
+      ],
+      "defaultIds": [
+        "nmbu_kjemibio",
+        "ntnu_ikmb",
+        "uit_baerekraftig_kjemi"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_kjemibio",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "192783",
+          "studiested": "Ås",
+          "type": "master",
+          "url": "https://www.nmbu.no/studier/master-5-aar/kjemi-og-bioteknologi",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 51.5,
+              "pg_ord": 52.0
+            },
+            "2021": {
+              "alleS": 327,
+              "fvS": 34,
+              "plasser": 25,
+              "kvinner": 61.8,
+              "kvalifiserte": 268,
+              "tilbud": 34,
+              "pg_fv": 53.4,
+              "pg_ord": 54.5
+            },
+            "2022": {
+              "alleS": 285,
+              "fvS": 41,
+              "plasser": 25,
+              "kvinner": 70.7,
+              "kvalifiserte": 228,
+              "tilbud": 38,
+              "pg_fv": 50.9,
+              "pg_ord": 54.4
+            },
+            "2023": {
+              "alleS": 276,
+              "fvS": 36,
+              "plasser": 25,
+              "kvinner": 77.8,
+              "kvalifiserte": 209,
+              "tilbud": 44,
+              "pg_fv": 49.1,
+              "pg_ord": 47.5
+            },
+            "2024": {
+              "alleS": 260,
+              "fvS": 45,
+              "plasser": 25,
+              "kvinner": 75.6,
+              "kvalifiserte": 208,
+              "tilbud": 48,
+              "pg_fv": 0.0,
+              "pg_ord": 47.3
+            },
+            "2025": {
+              "alleS": 307,
+              "fvS": 45,
+              "plasser": 25,
+              "kvinner": 75.6,
+              "kvalifiserte": 234,
+              "tilbud": 42,
+              "pg_fv": 48.6,
+              "pg_ord": 48.4
+            },
+            "2026": {
+              "alleS": 275,
+              "fvS": 56,
+              "plasser": 25,
+              "kvinner": 76.8,
+              "kvalifiserte": 231,
+              "tilbud": 46,
+              "pg_fv": 49.0,
+              "pg_ord": 55.9
+            }
+          }
+        },
+        {
+          "id": "ntnu_ikmb",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "194783",
+          "studiested": "Trondheim",
+          "type": "master",
+          "url": "https://www.ntnu.no/studier/mtkmb",
+          "years": {
+            "2025": {
+              "alleS": 1192,
+              "fvS": 221,
+              "plasser": 166,
+              "kvinner": 61.5,
+              "kvalifiserte": 931,
+              "tilbud": 246,
+              "pg_fv": 53.1,
+              "pg_ord": 50.5
+            },
+            "2026": {
+              "alleS": 1030,
+              "fvS": 171,
+              "plasser": 150,
+              "kvinner": 56.7,
+              "kvalifiserte": 773,
+              "tilbud": 190,
+              "pg_fv": 52.6,
+              "pg_ord": 48.1
+            }
+          }
+        },
+        {
+          "id": "uit_baerekraftig_kjemi",
+          "shortName": "UiT",
+          "institusjon": "UiT Norges arktiske universitet",
+          "studiekode": "186764",
+          "studiested": "Tromsø",
+          "type": "master",
+          "url": "https://uit.no/utdanning/program/868642/baerekraftig_kjemi_og_innovasjon_sivilingenior_-",
+          "years": {
+            "2025": {
+              "alleS": 88,
+              "fvS": 3,
+              "plasser": 15,
+              "kvinner": 66.7,
+              "kvalifiserte": 73,
+              "tilbud": 7,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 75,
+              "fvS": 7,
+              "plasser": 10,
+              "kvinner": 71.4,
+              "kvalifiserte": 57,
+              "tilbud": 5,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "ntnu_ikb",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "194764",
+          "studiested": "Trondheim",
+          "type": "master",
+          "url": "https://www.ntnu.no/studier/mtkj",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 55.7,
+              "pg_ord": 54.5
+            },
+            "2021": {
+              "alleS": 1037,
+              "fvS": 174,
+              "plasser": 115,
+              "kvinner": 71.3,
+              "kvalifiserte": 882,
+              "tilbud": 190,
+              "pg_fv": 55.6,
+              "pg_ord": 56.0
+            },
+            "2022": {
+              "alleS": 930,
+              "fvS": 154,
+              "plasser": 115,
+              "kvinner": 65.6,
+              "kvalifiserte": 793,
+              "tilbud": 190,
+              "pg_fv": 55.7,
+              "pg_ord": 53.5
+            },
+            "2023": {
+              "alleS": 1015,
+              "fvS": 180,
+              "plasser": 111,
+              "kvinner": 70.6,
+              "kvalifiserte": 837,
+              "tilbud": 186,
+              "pg_fv": 56.1,
+              "pg_ord": 55.4
+            },
+            "2024": {
+              "alleS": 983,
+              "fvS": 169,
+              "plasser": 120,
+              "kvinner": 68.0,
+              "kvalifiserte": 802,
+              "tilbud": 210,
+              "pg_fv": 54.4,
+              "pg_ord": 52.7
+            }
+          }
+        },
+        {
+          "id": "ntnu_bioteknologi",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "194855",
+          "studiested": "Trondheim",
+          "type": "master",
+          "url": "https://www.ntnu.no/studier/mbiot5",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 57.6,
+              "pg_ord": 60.7
+            },
+            "2021": {
+              "alleS": 1165,
+              "fvS": 172,
+              "plasser": 45,
+              "kvinner": 73.3,
+              "kvalifiserte": 1118,
+              "tilbud": 102,
+              "pg_fv": 58.2,
+              "pg_ord": 60.0
+            },
+            "2022": {
+              "alleS": 922,
+              "fvS": 148,
+              "plasser": 35,
+              "kvinner": 70.3,
+              "kvalifiserte": 903,
+              "tilbud": 74,
+              "pg_fv": 58.3,
+              "pg_ord": 61.2
+            },
+            "2023": {
+              "alleS": 961,
+              "fvS": 137,
+              "plasser": 35,
+              "kvinner": 86.9,
+              "kvalifiserte": 916,
+              "tilbud": 92,
+              "pg_fv": 57.7,
+              "pg_ord": 59.3
+            },
+            "2024": {
+              "alleS": 923,
+              "fvS": 150,
+              "plasser": 35,
+              "kvinner": 78.7,
+              "kvalifiserte": 881,
+              "tilbud": 78,
+              "pg_fv": 57.0,
+              "pg_ord": 60.5
+            },
+            "2025": {
+              "alleS": 824,
+              "fvS": 129,
+              "plasser": 35,
+              "kvinner": 73.6,
+              "kvalifiserte": 781,
+              "tilbud": 78,
+              "pg_fv": 56.2,
+              "pg_ord": 59.4
+            },
+            "2026": {
+              "alleS": 889,
+              "fvS": 139,
+              "plasser": 40,
+              "kvinner": 74.1,
+              "kvalifiserte": 829,
+              "tilbud": 78,
+              "pg_fv": 55.6,
+              "pg_ord": 57.8
+            }
+          }
+        },
+        {
+          "id": "oslomet_ing_bioteknologi_kjemi",
+          "shortName": "OsloMet",
+          "institusjon": "OsloMet - storbyuniversitetet",
+          "studiekode": "215009",
+          "studiested": "Oslo",
+          "type": "bachelor",
+          "url": "https://www.oslomet.no/studier/tkd/bioteknologi-kjemiingenior",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 583,
+              "fvS": 55,
+              "plasser": 40,
+              "kvinner": 63.6,
+              "kvalifiserte": 317,
+              "tilbud": 61,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 555,
+              "fvS": 60,
+              "plasser": 40,
+              "kvinner": 58.3,
+              "kvalifiserte": 311,
+              "tilbud": 47,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 540,
+              "fvS": 56,
+              "plasser": 35,
+              "kvinner": 76.8,
+              "kvalifiserte": 259,
+              "tilbud": 47,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 502,
+              "fvS": 49,
+              "plasser": 40,
+              "kvinner": 51.0,
+              "kvalifiserte": 254,
+              "tilbud": 48,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 524,
+              "fvS": 54,
+              "plasser": 47,
+              "kvinner": 63.0,
+              "kvalifiserte": 286,
+              "tilbud": 50,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 537,
+              "fvS": 54,
+              "plasser": 47,
+              "kvinner": 70.4,
+              "kvalifiserte": 262,
+              "tilbud": 35,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "uio_kjemi_biokjemi",
+          "shortName": "UiO",
+          "institusjon": "Universitetet i Oslo",
+          "studiekode": "185860",
+          "studiested": "Oslo",
+          "type": "bachelor",
+          "url": "https://www.uio.no/studier/program/kjemi-biokjemi/",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 45.9,
+              "pg_ord": 44.2
+            },
+            "2021": {
+              "alleS": 473,
+              "fvS": 46,
+              "plasser": 44,
+              "kvinner": 69.6,
+              "kvalifiserte": 314,
+              "tilbud": 61,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 453,
+              "fvS": 49,
+              "plasser": 40,
+              "kvinner": 65.3,
+              "kvalifiserte": 316,
+              "tilbud": 63,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 429,
+              "fvS": 52,
+              "plasser": 40,
+              "kvinner": 55.8,
+              "kvalifiserte": 286,
+              "tilbud": 50,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 417,
+              "fvS": 54,
+              "plasser": 40,
+              "kvinner": 61.1,
+              "kvalifiserte": 279,
+              "tilbud": 50,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 428,
+              "fvS": 56,
+              "plasser": 40,
+              "kvinner": 48.2,
+              "kvalifiserte": 294,
+              "tilbud": 53,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 414,
+              "fvS": 53,
+              "plasser": 40,
+              "kvinner": 47.2,
+              "kvalifiserte": 291,
+              "tilbud": 54,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "miljofysikk",
+      "label": "Miljøfysikk og fornybar energi",
+      "level": "master5",
+      "desc": "Sammenligner de femårige sivilingeniørutdanningene innen energi, miljø og anvendt fysikk.",
+      "note": "NTNUs «Energi og miljø», UiBs «Energi» og UiTs «Fornybar energi» er de nærmeste femårige sivilingeniørutdanningene. NTNUs fysikk og matematikk og UiTs anvendte fysikk og matematikk er bredere fysikkløp og merket som svakere sammenligninger, det samme er UiOs realfagsbachelor i fornybar energi og nanoteknologi.",
+      "nmbuIds": [
+        "nmbu_miljofysikk"
+      ],
+      "defaultIds": [
+        "nmbu_miljofysikk",
+        "ntnu_energi_miljo",
+        "uib_energi",
+        "uit_fornybar_energi"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_miljofysikk",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "192784",
+          "studiested": "Ås",
+          "type": "master",
+          "url": "https://www.nmbu.no/studier/master-5-aar/miljofysikk-og-fornybar-energi",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 55.9,
+              "pg_ord": 57.1
+            },
+            "2021": {
+              "alleS": 353,
+              "fvS": 55,
+              "plasser": 25,
+              "kvinner": 52.7,
+              "kvalifiserte": 319,
+              "tilbud": 34,
+              "pg_fv": 53.5,
+              "pg_ord": 59.4
+            },
+            "2022": {
+              "alleS": 299,
+              "fvS": 51,
+              "plasser": 25,
+              "kvinner": 58.8,
+              "kvalifiserte": 263,
+              "tilbud": 36,
+              "pg_fv": 54.0,
+              "pg_ord": 58.5
+            },
+            "2023": {
+              "alleS": 299,
+              "fvS": 39,
+              "plasser": 25,
+              "kvinner": 59.0,
+              "kvalifiserte": 276,
+              "tilbud": 56,
+              "pg_fv": 50.1,
+              "pg_ord": 48.5
+            },
+            "2024": {
+              "alleS": 291,
+              "fvS": 51,
+              "plasser": 25,
+              "kvinner": 49.0,
+              "kvalifiserte": 257,
+              "tilbud": 52,
+              "pg_fv": 46.7,
+              "pg_ord": 57.5
+            },
+            "2025": {
+              "alleS": 299,
+              "fvS": 36,
+              "plasser": 25,
+              "kvinner": 58.3,
+              "kvalifiserte": 272,
+              "tilbud": 35,
+              "pg_fv": 49.2,
+              "pg_ord": 51.6
+            },
+            "2026": {
+              "alleS": 254,
+              "fvS": 36,
+              "plasser": 25,
+              "kvinner": 44.4,
+              "kvalifiserte": 232,
+              "tilbud": 40,
+              "pg_fv": 49.2,
+              "pg_ord": 49.7
+            }
+          }
+        },
+        {
+          "id": "ntnu_energi_miljo",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "194769",
+          "studiested": "Trondheim",
+          "type": "master",
+          "url": "https://www.ntnu.no/studier/mtenerg",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 54.5,
+              "pg_ord": 56.0
+            },
+            "2021": {
+              "alleS": 1691,
+              "fvS": 196,
+              "plasser": 145,
+              "kvinner": 43.4,
+              "kvalifiserte": 1455,
+              "tilbud": 224,
+              "pg_fv": 55.2,
+              "pg_ord": 55.8
+            },
+            "2022": {
+              "alleS": 1620,
+              "fvS": 188,
+              "plasser": 145,
+              "kvinner": 51.6,
+              "kvalifiserte": 1424,
+              "tilbud": 246,
+              "pg_fv": 55.1,
+              "pg_ord": 53.9
+            },
+            "2023": {
+              "alleS": 1710,
+              "fvS": 179,
+              "plasser": 135,
+              "kvinner": 38.0,
+              "kvalifiserte": 1435,
+              "tilbud": 256,
+              "pg_fv": 54.5,
+              "pg_ord": 54.3
+            },
+            "2024": {
+              "alleS": 1648,
+              "fvS": 188,
+              "plasser": 135,
+              "kvinner": 39.4,
+              "kvalifiserte": 1347,
+              "tilbud": 220,
+              "pg_fv": 54.3,
+              "pg_ord": 56.0
+            },
+            "2025": {
+              "alleS": 1481,
+              "fvS": 150,
+              "plasser": 135,
+              "kvinner": 48.0,
+              "kvalifiserte": 1249,
+              "tilbud": 230,
+              "pg_fv": 52.8,
+              "pg_ord": 51.2
+            },
+            "2026": {
+              "alleS": 1567,
+              "fvS": 189,
+              "plasser": 130,
+              "kvinner": 41.8,
+              "kvalifiserte": 1250,
+              "tilbud": 220,
+              "pg_fv": 51.2,
+              "pg_ord": 50.1
+            }
+          }
+        },
+        {
+          "id": "uib_energi",
+          "shortName": "UiB",
+          "institusjon": "Universitetet i Bergen",
+          "studiekode": "184769",
+          "studiested": "Bergen",
+          "type": "master",
+          "url": "https://www.uib.no/studier/5MAMN-ENER",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 50.6,
+              "pg_ord": 51.6
+            },
+            "2021": {
+              "alleS": 547,
+              "fvS": 75,
+              "plasser": 49,
+              "kvinner": 42.7,
+              "kvalifiserte": 479,
+              "tilbud": 82,
+              "pg_fv": 50.0,
+              "pg_ord": 53.2
+            },
+            "2022": {
+              "alleS": 539,
+              "fvS": 77,
+              "plasser": 51,
+              "kvinner": 40.3,
+              "kvalifiserte": 481,
+              "tilbud": 72,
+              "pg_fv": 51.4,
+              "pg_ord": 53.0
+            },
+            "2023": {
+              "alleS": 523,
+              "fvS": 90,
+              "plasser": 49,
+              "kvinner": 51.1,
+              "kvalifiserte": 456,
+              "tilbud": 85,
+              "pg_fv": 51.2,
+              "pg_ord": 54.8
+            },
+            "2024": {
+              "alleS": 855,
+              "fvS": 104,
+              "plasser": 49,
+              "kvinner": 40.4,
+              "kvalifiserte": 720,
+              "tilbud": 84,
+              "pg_fv": 52.3,
+              "pg_ord": 54.9
+            },
+            "2025": {
+              "alleS": 868,
+              "fvS": 100,
+              "plasser": 49,
+              "kvinner": 39.0,
+              "kvalifiserte": 734,
+              "tilbud": 86,
+              "pg_fv": 52.1,
+              "pg_ord": 54.7
+            },
+            "2026": {
+              "alleS": 889,
+              "fvS": 114,
+              "plasser": 49,
+              "kvinner": 35.1,
+              "kvalifiserte": 741,
+              "tilbud": 88,
+              "pg_fv": 52.3,
+              "pg_ord": 53.3
+            }
+          }
+        },
+        {
+          "id": "uit_fornybar_energi",
+          "shortName": "UiT",
+          "institusjon": "UiT Norges arktiske universitet",
+          "studiekode": "186809",
+          "studiested": "Tromsø",
+          "type": "master",
+          "url": "https://uit.no/utdanning/program/798891/fornybar_energi_sivilingenior_-_master",
+          "years": {
+            "2023": {
+              "alleS": 268,
+              "fvS": 29,
+              "plasser": 20,
+              "kvinner": 34.5,
+              "kvalifiserte": 201,
+              "tilbud": 34,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 188,
+              "fvS": 19,
+              "plasser": 20,
+              "kvinner": 36.8,
+              "kvalifiserte": 150,
+              "tilbud": 29,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 168,
+              "fvS": 21,
+              "plasser": 15,
+              "kvinner": 42.9,
+              "kvalifiserte": 137,
+              "tilbud": 24,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 154,
+              "fvS": 16,
+              "plasser": 15,
+              "kvinner": 50.0,
+              "kvalifiserte": 119,
+              "tilbud": 18,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "ntnu_fysmat",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "194763",
+          "studiested": "Trondheim",
+          "type": "master",
+          "url": "https://www.ntnu.no/studier/mtfyma",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 58.5,
+              "pg_ord": 58.6
+            },
+            "2021": {
+              "alleS": 1200,
+              "fvS": 212,
+              "plasser": 120,
+              "kvinner": 32.1,
+              "kvalifiserte": 1130,
+              "tilbud": 194,
+              "pg_fv": 59.0,
+              "pg_ord": 58.5
+            },
+            "2022": {
+              "alleS": 1205,
+              "fvS": 219,
+              "plasser": 120,
+              "kvinner": 36.5,
+              "kvalifiserte": 1144,
+              "tilbud": 224,
+              "pg_fv": 58.7,
+              "pg_ord": 57.6
+            },
+            "2023": {
+              "alleS": 1196,
+              "fvS": 251,
+              "plasser": 115,
+              "kvinner": 32.3,
+              "kvalifiserte": 1103,
+              "tilbud": 214,
+              "pg_fv": 58.7,
+              "pg_ord": 58.4
+            },
+            "2024": {
+              "alleS": 1237,
+              "fvS": 276,
+              "plasser": 125,
+              "kvinner": 33.3,
+              "kvalifiserte": 1157,
+              "tilbud": 214,
+              "pg_fv": 58.6,
+              "pg_ord": 59.5
+            },
+            "2025": {
+              "alleS": 1229,
+              "fvS": 257,
+              "plasser": 125,
+              "kvinner": 33.1,
+              "kvalifiserte": 1147,
+              "tilbud": 206,
+              "pg_fv": 57.8,
+              "pg_ord": 57.8
+            },
+            "2026": {
+              "alleS": 1435,
+              "fvS": 297,
+              "plasser": 145,
+              "kvinner": 35.0,
+              "kvalifiserte": 1324,
+              "tilbud": 220,
+              "pg_fv": 58.6,
+              "pg_ord": 58.5
+            }
+          }
+        },
+        {
+          "id": "uit_anvendt_fysmat",
+          "shortName": "UiT",
+          "institusjon": "UiT Norges arktiske universitet",
+          "studiekode": "186953",
+          "studiested": "Tromsø",
+          "type": "master",
+          "url": "https://uit.no/utdanning/program/324988/anvendt_fysikk_og_matematikk_sivilingenior_-_mas",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 210,
+              "fvS": 17,
+              "plasser": 30,
+              "kvinner": 35.3,
+              "kvalifiserte": 191,
+              "tilbud": 23,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 200,
+              "fvS": 25,
+              "plasser": 30,
+              "kvinner": 20.0,
+              "kvalifiserte": 173,
+              "tilbud": 32,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 147,
+              "fvS": 16,
+              "plasser": 20,
+              "kvinner": 25.0,
+              "kvalifiserte": 127,
+              "tilbud": 24,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 172,
+              "fvS": 20,
+              "plasser": 20,
+              "kvinner": 20.0,
+              "kvalifiserte": 156,
+              "tilbud": 28,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 180,
+              "fvS": 27,
+              "plasser": 15,
+              "kvinner": 37.0,
+              "kvalifiserte": 158,
+              "tilbud": 21,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 138,
+              "fvS": 19,
+              "plasser": 15,
+              "kvinner": 42.1,
+              "kvalifiserte": 114,
+              "tilbud": 19,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "uio_fornybar_nano",
+          "shortName": "UiO",
+          "institusjon": "Universitetet i Oslo",
+          "studiekode": "185863",
+          "studiested": "Oslo",
+          "type": "bachelor",
+          "url": "https://www.uio.no/studier/program/nanoteknologi/",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 324,
+              "fvS": 25,
+              "plasser": 45,
+              "kvinner": 24.0,
+              "kvalifiserte": 256,
+              "tilbud": 26,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 288,
+              "fvS": 22,
+              "plasser": 30,
+              "kvinner": 45.5,
+              "kvalifiserte": 233,
+              "tilbud": 20,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 538,
+              "fvS": 56,
+              "plasser": 30,
+              "kvinner": 42.9,
+              "kvalifiserte": 400,
+              "tilbud": 50,
+              "pg_fv": 47.9,
+              "pg_ord": 48.8
+            },
+            "2024": {
+              "alleS": 523,
+              "fvS": 39,
+              "plasser": 40,
+              "kvinner": 51.3,
+              "kvalifiserte": 392,
+              "tilbud": 57,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 486,
+              "fvS": 28,
+              "plasser": 40,
+              "kvinner": 39.3,
+              "kvalifiserte": 365,
+              "tilbud": 37,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 416,
+              "fvS": 30,
+              "plasser": 40,
+              "kvinner": 33.3,
+              "kvalifiserte": 312,
+              "tilbud": 41,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "datavitenskap",
+      "label": "Datavitenskap",
+      "level": "master5",
+      "desc": "Sammenligner de femårige sivilingeniørutdanningene innen datateknologi, datavitenskap og kunstig intelligens.",
+      "note": "Alle konkurrentene som er satt til default true er femårige sivilingeniørutdanninger i Samordna opptak. UiOs og OsloMets informatikkbachelorer er blant de største alternativene for samme søkergruppe, men er treårige og derfor svakere sammenligninger. UiS hadde i 2021 også en egen femårig «Data Science» (kode 217804) ved siden av datateknologi; den finnes bare i ett opptaksår og er derfor ikke tatt med.",
+      "nmbuIds": [
+        "nmbu_datavitenskap"
+      ],
+      "defaultIds": [
+        "nmbu_datavitenskap",
+        "ntnu_datateknologi",
+        "uib_datascience",
+        "uis_datateknologi",
+        "uit_ki",
+        "uia_ki"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_datavitenskap",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "192804",
+          "studiested": "Ås",
+          "type": "master",
+          "url": "https://www.nmbu.no/studier/master-5-aar/datavitenskap",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 48.5,
+              "pg_ord": 53.6
+            },
+            "2021": {
+              "alleS": 292,
+              "fvS": 27,
+              "plasser": 20,
+              "kvinner": 29.6,
+              "kvalifiserte": 247,
+              "tilbud": 28,
+              "pg_fv": 47.8,
+              "pg_ord": 55.6
+            },
+            "2022": {
+              "alleS": 279,
+              "fvS": 35,
+              "plasser": 20,
+              "kvinner": 25.7,
+              "kvalifiserte": 212,
+              "tilbud": 30,
+              "pg_fv": 49.3,
+              "pg_ord": 53.3
+            },
+            "2023": {
+              "alleS": 235,
+              "fvS": 30,
+              "plasser": 20,
+              "kvinner": 36.7,
+              "kvalifiserte": 193,
+              "tilbud": 43,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 261,
+              "fvS": 28,
+              "plasser": 20,
+              "kvinner": 21.4,
+              "kvalifiserte": 187,
+              "tilbud": 42,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 198,
+              "fvS": 28,
+              "plasser": 20,
+              "kvinner": 25.0,
+              "kvalifiserte": 146,
+              "tilbud": 29,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 182,
+              "fvS": 34,
+              "plasser": 25,
+              "kvinner": 35.3,
+              "kvalifiserte": 125,
+              "tilbud": 32,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "ntnu_datateknologi",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "194760",
+          "studiested": "Trondheim",
+          "type": "master",
+          "url": "https://www.ntnu.no/studier/mtdt",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 59.0,
+              "pg_ord": 61.6
+            },
+            "2021": {
+              "alleS": 1858,
+              "fvS": 435,
+              "plasser": 155,
+              "kvinner": 23.0,
+              "kvalifiserte": 1660,
+              "tilbud": 228,
+              "pg_fv": 60.0,
+              "pg_ord": 63.1
+            },
+            "2022": {
+              "alleS": 1785,
+              "fvS": 400,
+              "plasser": 155,
+              "kvinner": 28.2,
+              "kvalifiserte": 1589,
+              "tilbud": 258,
+              "pg_fv": 60.3,
+              "pg_ord": 62.9
+            },
+            "2023": {
+              "alleS": 1828,
+              "fvS": 418,
+              "plasser": 155,
+              "kvinner": 28.2,
+              "kvalifiserte": 1596,
+              "tilbud": 248,
+              "pg_fv": 60.1,
+              "pg_ord": 64.0
+            },
+            "2024": {
+              "alleS": 1587,
+              "fvS": 381,
+              "plasser": 160,
+              "kvinner": 22.8,
+              "kvalifiserte": 1400,
+              "tilbud": 259,
+              "pg_fv": 58.7,
+              "pg_ord": 63.8
+            },
+            "2025": {
+              "alleS": 1255,
+              "fvS": 281,
+              "plasser": 160,
+              "kvinner": 24.6,
+              "kvalifiserte": 1110,
+              "tilbud": 248,
+              "pg_fv": 57.3,
+              "pg_ord": 62.1
+            },
+            "2026": {
+              "alleS": 1177,
+              "fvS": 176,
+              "plasser": 160,
+              "kvinner": 16.5,
+              "kvalifiserte": 997,
+              "tilbud": 250,
+              "pg_fv": 53.0,
+              "pg_ord": 50.8
+            }
+          }
+        },
+        {
+          "id": "uib_datascience",
+          "shortName": "UiB",
+          "institusjon": "Universitetet i Bergen",
+          "studiekode": "184585",
+          "studiested": "Bergen",
+          "type": "master",
+          "url": "https://www.uib.no/studier/5MAMN-DSC",
+          "years": {
+            "2023": {
+              "alleS": 1046,
+              "fvS": 130,
+              "plasser": 20,
+              "kvinner": 20.0,
+              "kvalifiserte": 780,
+              "tilbud": 51,
+              "pg_fv": 54.0,
+              "pg_ord": 58.1
+            },
+            "2024": {
+              "alleS": 821,
+              "fvS": 84,
+              "plasser": 20,
+              "kvinner": 17.9,
+              "kvalifiserte": 653,
+              "tilbud": 48,
+              "pg_fv": 53.5,
+              "pg_ord": 56.1
+            },
+            "2025": {
+              "alleS": 722,
+              "fvS": 59,
+              "plasser": 22,
+              "kvinner": 25.4,
+              "kvalifiserte": 556,
+              "tilbud": 60,
+              "pg_fv": 51.3,
+              "pg_ord": 55.5
+            },
+            "2026": {
+              "alleS": 600,
+              "fvS": 60,
+              "plasser": 22,
+              "kvinner": 30.0,
+              "kvalifiserte": 432,
+              "tilbud": 51,
+              "pg_fv": 50.1,
+              "pg_ord": 52.4
+            }
+          }
+        },
+        {
+          "id": "uis_datateknologi",
+          "shortName": "UiS",
+          "institusjon": "Universitetet i Stavanger",
+          "studiekode": "217760",
+          "studiested": "Stavanger",
+          "type": "master",
+          "url": "https://www.uis.no/nb/studier/datateknologi-master-5-ar",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 48.4,
+              "pg_ord": 47.2
+            },
+            "2021": {
+              "alleS": 374,
+              "fvS": 32,
+              "plasser": 20,
+              "kvinner": 9.4,
+              "kvalifiserte": 277,
+              "tilbud": 45,
+              "pg_fv": 39.8,
+              "pg_ord": 44.9
+            },
+            "2022": {
+              "alleS": 406,
+              "fvS": 53,
+              "plasser": 25,
+              "kvinner": 13.2,
+              "kvalifiserte": 252,
+              "tilbud": 45,
+              "pg_fv": 40.8,
+              "pg_ord": 41.2
+            },
+            "2023": {
+              "alleS": 349,
+              "fvS": 50,
+              "plasser": 29,
+              "kvinner": 10.0,
+              "kvalifiserte": 217,
+              "tilbud": 50,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 376,
+              "fvS": 52,
+              "plasser": 29,
+              "kvinner": 19.2,
+              "kvalifiserte": 212,
+              "tilbud": 42,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 265,
+              "fvS": 34,
+              "plasser": 29,
+              "kvinner": 5.9,
+              "kvalifiserte": 153,
+              "tilbud": 27,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 252,
+              "fvS": 33,
+              "plasser": 22,
+              "kvinner": 15.2,
+              "kvalifiserte": 135,
+              "tilbud": 20,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "uit_ki",
+          "shortName": "UiT",
+          "institusjon": "UiT Norges arktiske universitet",
+          "studiekode": "186803",
+          "studiested": "Tromsø",
+          "type": "master",
+          "url": "https://uit.no/utdanning/program/711597/kunstig_intelligens_sivilingenior_-_master",
+          "years": {
+            "2021": {
+              "alleS": 252,
+              "fvS": 27,
+              "plasser": 20,
+              "kvinner": 25.9,
+              "kvalifiserte": 221,
+              "tilbud": 40,
+              "pg_fv": 0.0,
+              "pg_ord": 44.0
+            },
+            "2022": {
+              "alleS": 168,
+              "fvS": 18,
+              "plasser": 20,
+              "kvinner": 16.7,
+              "kvalifiserte": 140,
+              "tilbud": 22,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 152,
+              "fvS": 16,
+              "plasser": 20,
+              "kvinner": 25.0,
+              "kvalifiserte": 131,
+              "tilbud": 17,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 163,
+              "fvS": 22,
+              "plasser": 20,
+              "kvinner": 13.6,
+              "kvalifiserte": 115,
+              "tilbud": 23,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 152,
+              "fvS": 19,
+              "plasser": 20,
+              "kvinner": 21.1,
+              "kvalifiserte": 119,
+              "tilbud": 21,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 137,
+              "fvS": 13,
+              "plasser": 20,
+              "kvinner": 23.1,
+              "kvalifiserte": 85,
+              "tilbud": 16,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "uia_ki",
+          "shortName": "UiA",
+          "institusjon": "Universitetet i Agder",
+          "studiekode": "201807",
+          "studiested": "Grimstad",
+          "type": "master",
+          "url": "https://www.uia.no/studier/program/kunstig-intelligens-master-5-ar/",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 214,
+              "fvS": 35,
+              "plasser": 35,
+              "kvinner": 20.0,
+              "kvalifiserte": 166,
+              "tilbud": 49,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 170,
+              "fvS": 30,
+              "plasser": 35,
+              "kvinner": 13.3,
+              "kvalifiserte": 127,
+              "tilbud": 32,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 162,
+              "fvS": 35,
+              "plasser": 35,
+              "kvinner": 14.3,
+              "kvalifiserte": 123,
+              "tilbud": 32,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 216,
+              "fvS": 35,
+              "plasser": 35,
+              "kvinner": 17.1,
+              "kvalifiserte": 137,
+              "tilbud": 24,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 184,
+              "fvS": 17,
+              "plasser": 35,
+              "kvinner": 17.6,
+              "kvalifiserte": 121,
+              "tilbud": 15,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 176,
+              "fvS": 37,
+              "plasser": 35,
+              "kvinner": 21.6,
+              "kvalifiserte": 102,
+              "tilbud": 32,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "uio_informatikk_ml_ki",
+          "shortName": "UiO",
+          "institusjon": "Universitetet i Oslo",
+          "studiekode": "185831",
+          "studiested": "Oslo",
+          "type": "bachelor",
+          "url": "https://www.uio.no/studier/program/maskinlering-kunstig-intelligens/",
+          "years": {
+            "2025": {
+              "alleS": 1520,
+              "fvS": 344,
+              "plasser": 70,
+              "kvinner": 26.5,
+              "kvalifiserte": 1266,
+              "tilbud": 150,
+              "pg_fv": 44.3,
+              "pg_ord": 59.1
+            },
+            "2026": {
+              "alleS": 1306,
+              "fvS": 235,
+              "plasser": 80,
+              "kvinner": 20.4,
+              "kvalifiserte": 1087,
+              "tilbud": 160,
+              "pg_fv": 41.9,
+              "pg_ord": 58.3
+            }
+          }
+        },
+        {
+          "id": "oslomet_anvendt_datateknologi",
+          "shortName": "OsloMet",
+          "institusjon": "OsloMet - storbyuniversitetet",
+          "studiekode": "215449",
+          "studiested": "Oslo",
+          "type": "bachelor",
+          "url": "https://www.oslomet.no/studier/tkd/anvendt-datateknologi",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 43.4,
+              "pg_ord": 54.7
+            },
+            "2021": {
+              "alleS": 2751,
+              "fvS": 520,
+              "plasser": 104,
+              "kvinner": 23.7,
+              "kvalifiserte": 2552,
+              "tilbud": 270,
+              "pg_fv": 44.5,
+              "pg_ord": 53.8
+            },
+            "2022": {
+              "alleS": 2620,
+              "fvS": 561,
+              "plasser": 100,
+              "kvinner": 25.5,
+              "kvalifiserte": 2424,
+              "tilbud": 280,
+              "pg_fv": 44.3,
+              "pg_ord": 53.6
+            },
+            "2023": {
+              "alleS": 2924,
+              "fvS": 648,
+              "plasser": 100,
+              "kvinner": 31.9,
+              "kvalifiserte": 2659,
+              "tilbud": 265,
+              "pg_fv": 45.4,
+              "pg_ord": 54.7
+            },
+            "2024": {
+              "alleS": 2561,
+              "fvS": 579,
+              "plasser": 190,
+              "kvinner": 32.3,
+              "kvalifiserte": 2295,
+              "tilbud": 340,
+              "pg_fv": 42.7,
+              "pg_ord": 54.2
+            },
+            "2025": {
+              "alleS": 2243,
+              "fvS": 510,
+              "plasser": 200,
+              "kvinner": 32.7,
+              "kvalifiserte": 2022,
+              "tilbud": 360,
+              "pg_fv": 38.6,
+              "pg_ord": 52.4
+            },
+            "2026": {
+              "alleS": 2291,
+              "fvS": 498,
+              "plasser": 200,
+              "kvinner": 28.7,
+              "kvalifiserte": 2003,
+              "tilbud": 390,
+              "pg_fv": 38.8,
+              "pg_ord": 50.1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "vannmiljo",
+      "label": "Vann- og miljøteknikk",
+      "level": "master5",
+      "desc": "Sammenligner NMBUs femårige sivilingeniørutdanning i vann- og miljøteknikk med bygg-, infrastruktur- og miljøteknikkutdanninger.",
+      "note": "NMBU er alene om en femårig sivilingeniørutdanning i vann- og miljøteknikk i Samordna opptak. NTNU dekker fagområdet som studieretning innenfor «Bygg og infrastruktur», som derfor er brukt som nærmeste konkurrent. De øvrige er treårige ingeniørutdanninger innen bygg, infrastruktur og miljø og er merket som svakere sammenligninger.",
+      "nmbuIds": [
+        "nmbu_vannmiljo"
+      ],
+      "defaultIds": [
+        "nmbu_vannmiljo",
+        "ntnu_bygg_infrastruktur_vann"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_vannmiljo",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "192809",
+          "studiested": "Ås",
+          "type": "master",
+          "url": "https://www.nmbu.no/studier/master-5-aar/vann-og-miljoteknikk",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 50.3
+            },
+            "2021": {
+              "alleS": 226,
+              "fvS": 55,
+              "plasser": 30,
+              "kvinner": 41.8,
+              "kvalifiserte": 188,
+              "tilbud": 44,
+              "pg_fv": 0.0,
+              "pg_ord": 52.0
+            },
+            "2022": {
+              "alleS": 157,
+              "fvS": 36,
+              "plasser": 30,
+              "kvinner": 41.7,
+              "kvalifiserte": 131,
+              "tilbud": 38,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 174,
+              "fvS": 38,
+              "plasser": 30,
+              "kvinner": 42.1,
+              "kvalifiserte": 132,
+              "tilbud": 38,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 152,
+              "fvS": 28,
+              "plasser": 30,
+              "kvinner": 25.0,
+              "kvalifiserte": 121,
+              "tilbud": 32,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 164,
+              "fvS": 28,
+              "plasser": 30,
+              "kvinner": 67.9,
+              "kvalifiserte": 140,
+              "tilbud": 36,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 181,
+              "fvS": 31,
+              "plasser": 20,
+              "kvinner": 35.5,
+              "kvalifiserte": 157,
+              "tilbud": 38,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "ntnu_bygg_infrastruktur_vann",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "194759",
+          "studiested": "Trondheim",
+          "type": "master",
+          "url": "https://www.ntnu.no/studier/mtbygg",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 52.5,
+              "pg_ord": 54.9
+            },
+            "2021": {
+              "alleS": 1601,
+              "fvS": 328,
+              "plasser": 215,
+              "kvinner": 37.8,
+              "kvalifiserte": 1314,
+              "tilbud": 336,
+              "pg_fv": 52.5,
+              "pg_ord": 54.1
+            },
+            "2022": {
+              "alleS": 1501,
+              "fvS": 318,
+              "plasser": 215,
+              "kvinner": 36.2,
+              "kvalifiserte": 1234,
+              "tilbud": 316,
+              "pg_fv": 52.5,
+              "pg_ord": 52.8
+            },
+            "2023": {
+              "alleS": 1569,
+              "fvS": 309,
+              "plasser": 190,
+              "kvinner": 37.9,
+              "kvalifiserte": 1220,
+              "tilbud": 344,
+              "pg_fv": 51.3,
+              "pg_ord": 53.3
+            },
+            "2024": {
+              "alleS": 1525,
+              "fvS": 302,
+              "plasser": 190,
+              "kvinner": 43.0,
+              "kvalifiserte": 1149,
+              "tilbud": 280,
+              "pg_fv": 52.2,
+              "pg_ord": 55.3
+            },
+            "2025": {
+              "alleS": 1635,
+              "fvS": 276,
+              "plasser": 180,
+              "kvinner": 35.1,
+              "kvalifiserte": 1285,
+              "tilbud": 284,
+              "pg_fv": 51.9,
+              "pg_ord": 53.1
+            },
+            "2026": {
+              "alleS": 1678,
+              "fvS": 298,
+              "plasser": 160,
+              "kvinner": 37.6,
+              "kvalifiserte": 1295,
+              "tilbud": 326,
+              "pg_fv": 51.3,
+              "pg_ord": 52.2
+            }
+          }
+        },
+        {
+          "id": "ntnu_energi_miljo_vann",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "194769",
+          "studiested": "Trondheim",
+          "type": "master",
+          "url": "https://www.ntnu.no/studier/mtenerg",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 54.5,
+              "pg_ord": 56.0
+            },
+            "2021": {
+              "alleS": 1691,
+              "fvS": 196,
+              "plasser": 145,
+              "kvinner": 43.4,
+              "kvalifiserte": 1455,
+              "tilbud": 224,
+              "pg_fv": 55.2,
+              "pg_ord": 55.8
+            },
+            "2022": {
+              "alleS": 1620,
+              "fvS": 188,
+              "plasser": 145,
+              "kvinner": 51.6,
+              "kvalifiserte": 1424,
+              "tilbud": 246,
+              "pg_fv": 55.1,
+              "pg_ord": 53.9
+            },
+            "2023": {
+              "alleS": 1710,
+              "fvS": 179,
+              "plasser": 135,
+              "kvinner": 38.0,
+              "kvalifiserte": 1435,
+              "tilbud": 256,
+              "pg_fv": 54.5,
+              "pg_ord": 54.3
+            },
+            "2024": {
+              "alleS": 1648,
+              "fvS": 188,
+              "plasser": 135,
+              "kvinner": 39.4,
+              "kvalifiserte": 1347,
+              "tilbud": 220,
+              "pg_fv": 54.3,
+              "pg_ord": 56.0
+            },
+            "2025": {
+              "alleS": 1481,
+              "fvS": 150,
+              "plasser": 135,
+              "kvinner": 48.0,
+              "kvalifiserte": 1249,
+              "tilbud": 230,
+              "pg_fv": 52.8,
+              "pg_ord": 51.2
+            },
+            "2026": {
+              "alleS": 1567,
+              "fvS": 189,
+              "plasser": 130,
+              "kvinner": 41.8,
+              "kvalifiserte": 1250,
+              "tilbud": 220,
+              "pg_fv": 51.2,
+              "pg_ord": 50.1
+            }
+          }
+        },
+        {
+          "id": "uis_ing_bygg_infrastruktur",
+          "shortName": "UiS",
+          "institusjon": "Universitetet i Stavanger",
+          "studiekode": "217033",
+          "studiested": "Stavanger",
+          "type": "bachelor",
+          "url": "https://www.uis.no/nb/studier/byggingenior-bachelor",
+          "years": {
+            "2023": {
+              "alleS": 144,
+              "fvS": 9,
+              "plasser": 10,
+              "kvinner": 33.3,
+              "kvalifiserte": 83,
+              "tilbud": 8,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 161,
+              "fvS": 10,
+              "plasser": 10,
+              "kvinner": 50.0,
+              "kvalifiserte": 95,
+              "tilbud": 4,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 220,
+              "fvS": 14,
+              "plasser": 10,
+              "kvinner": 21.4,
+              "kvalifiserte": 137,
+              "tilbud": 10,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 230,
+              "fvS": 19,
+              "plasser": 10,
+              "kvinner": 36.8,
+              "kvalifiserte": 135,
+              "tilbud": 11,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "hiof_ing_bygg_miljo",
+          "shortName": "HiØ",
+          "institusjon": "Høgskolen i Østfold",
+          "studiekode": "224003",
+          "studiested": "Fredrikstad",
+          "type": "bachelor",
+          "url": "https://www.hiof.no/studier/programmer/byg-bachelorstudium-i-ingeniorfag-bygg/",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 218,
+              "fvS": 37,
+              "plasser": 28,
+              "kvinner": 13.5,
+              "kvalifiserte": 116,
+              "tilbud": 27,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 163,
+              "fvS": 40,
+              "plasser": 28,
+              "kvinner": 32.5,
+              "kvalifiserte": 82,
+              "tilbud": 27,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 156,
+              "fvS": 38,
+              "plasser": 28,
+              "kvinner": 15.8,
+              "kvalifiserte": 81,
+              "tilbud": 23,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 179,
+              "fvS": 35,
+              "plasser": 28,
+              "kvinner": 11.4,
+              "kvalifiserte": 85,
+              "tilbud": 19,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 142,
+              "fvS": 28,
+              "plasser": 35,
+              "kvinner": 17.9,
+              "kvalifiserte": 69,
+              "tilbud": 17,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 140,
+              "fvS": 26,
+              "plasser": 35,
+              "kvinner": 26.9,
+              "kvalifiserte": 52,
+              "tilbud": 8,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "oslomet_ing_energi_miljo_bygg",
+          "shortName": "OsloMet",
+          "institusjon": "OsloMet - storbyuniversitetet",
+          "studiekode": "215822",
+          "studiested": "Oslo",
+          "type": "bachelor",
+          "url": "https://www.oslomet.no/studier/tkd/energi-miljo",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 437,
+              "fvS": 50,
+              "plasser": 51,
+              "kvinner": 22.0,
+              "kvalifiserte": 280,
+              "tilbud": 48,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 515,
+              "fvS": 46,
+              "plasser": 60,
+              "kvinner": 34.8,
+              "kvalifiserte": 317,
+              "tilbud": 46,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 398,
+              "fvS": 47,
+              "plasser": 60,
+              "kvinner": 25.5,
+              "kvalifiserte": 260,
+              "tilbud": 41,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 377,
+              "fvS": 34,
+              "plasser": 80,
+              "kvinner": 26.5,
+              "kvalifiserte": 222,
+              "tilbud": 31,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 319,
+              "fvS": 39,
+              "plasser": 60,
+              "kvinner": 35.9,
+              "kvalifiserte": 190,
+              "tilbud": 31,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 356,
+              "fvS": 36,
+              "plasser": 60,
+              "kvinner": 30.6,
+              "kvalifiserte": 185,
+              "tilbud": 21,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "usn_ing_bygg_plan_infrastruktur",
+          "shortName": "USN",
+          "institusjon": "Universitetet i Sørøst-Norge",
+          "studiekode": "222033",
+          "studiested": "Porsgrunn",
+          "type": "bachelor",
+          "url": "https://www.usn.no/studier/bachelor-i-ingeniorfag-byggingenior/plan-og-infrastruktur/",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 155,
+              "fvS": 14,
+              "plasser": 10,
+              "kvinner": 35.7,
+              "kvalifiserte": 87,
+              "tilbud": 11,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 131,
+              "fvS": 17,
+              "plasser": 10,
+              "kvinner": 41.2,
+              "kvalifiserte": 57,
+              "tilbud": 7,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 123,
+              "fvS": 17,
+              "plasser": 15,
+              "kvinner": 35.3,
+              "kvalifiserte": 53,
+              "tilbud": 6,
+              "pg_fv": null,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 127,
+              "fvS": 6,
+              "plasser": 10,
+              "kvinner": 50.0,
+              "kvalifiserte": 55,
+              "tilbud": 3,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 129,
+              "fvS": 13,
+              "plasser": 10,
+              "kvinner": 30.8,
+              "kvalifiserte": 65,
+              "tilbud": 5,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 120,
+              "fvS": 11,
+              "plasser": 10,
+              "kvinner": 45.5,
+              "kvalifiserte": 52,
+              "tilbud": 5,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "robotikk",
+      "label": "Anvendt robotikk",
+      "level": "master5",
+      "desc": "Sammenligner NMBUs femårige sivilingeniørutdanning i anvendt robotikk med kybernetikk-, robotikk- og mekatronikkutdanninger.",
+      "note": "NTNUs kybernetikk og robotikk er den eneste andre femårige sivilingeniørutdanningen i fagområdet i dag. UiS la ned «Kybernetikk og robotteknologi» etter opptaket 2022 og er tatt med som historisk sammenligning. De øvrige er treårige mekatronikk-, automasjons- og robotikkingeniører eller informatikkbachelorer og er svakere sammenligninger.",
+      "nmbuIds": [
+        "nmbu_robotikk"
+      ],
+      "defaultIds": [
+        "nmbu_robotikk",
+        "ntnu_kybernetikk_robotikk"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_robotikk",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "192810",
+          "studiested": "Ås",
+          "type": "master",
+          "url": "https://www.nmbu.no/studier/master-5-aar/anvendt-robotikk",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 44.3,
+              "pg_ord": 50.0
+            },
+            "2021": {
+              "alleS": 410,
+              "fvS": 49,
+              "plasser": 25,
+              "kvinner": 28.6,
+              "kvalifiserte": 322,
+              "tilbud": 40,
+              "pg_fv": 46.7,
+              "pg_ord": 51.2
+            },
+            "2022": {
+              "alleS": 323,
+              "fvS": 38,
+              "plasser": 25,
+              "kvinner": 21.1,
+              "kvalifiserte": 267,
+              "tilbud": 38,
+              "pg_fv": 47.5,
+              "pg_ord": 47.5
+            },
+            "2023": {
+              "alleS": 315,
+              "fvS": 40,
+              "plasser": 25,
+              "kvinner": 15.0,
+              "kvalifiserte": 254,
+              "tilbud": 56,
+              "pg_fv": 47.0,
+              "pg_ord": 46.1
+            },
+            "2024": {
+              "alleS": 306,
+              "fvS": 36,
+              "plasser": 25,
+              "kvinner": 22.2,
+              "kvalifiserte": 233,
+              "tilbud": 46,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 278,
+              "fvS": 40,
+              "plasser": 25,
+              "kvinner": 12.5,
+              "kvalifiserte": 224,
+              "tilbud": 45,
+              "pg_fv": 43.1,
+              "pg_ord": 43.1
+            },
+            "2026": {
+              "alleS": 291,
+              "fvS": 50,
+              "plasser": 25,
+              "kvinner": 20.0,
+              "kvalifiserte": 227,
+              "tilbud": 52,
+              "pg_fv": 43.8,
+              "pg_ord": 42.6
+            }
+          }
+        },
+        {
+          "id": "ntnu_kybernetikk_robotikk",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "194798",
+          "studiested": "Trondheim",
+          "type": "master",
+          "url": "https://www.ntnu.no/studier/mttk",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 60.0,
+              "pg_ord": 62.4
+            },
+            "2021": {
+              "alleS": 1503,
+              "fvS": 339,
+              "plasser": 140,
+              "kvinner": 20.1,
+              "kvalifiserte": 1381,
+              "tilbud": 206,
+              "pg_fv": 60.3,
+              "pg_ord": 62.5
+            },
+            "2022": {
+              "alleS": 1442,
+              "fvS": 330,
+              "plasser": 140,
+              "kvinner": 26.7,
+              "kvalifiserte": 1348,
+              "tilbud": 230,
+              "pg_fv": 60.3,
+              "pg_ord": 61.5
+            },
+            "2023": {
+              "alleS": 1477,
+              "fvS": 371,
+              "plasser": 140,
+              "kvinner": 23.2,
+              "kvalifiserte": 1335,
+              "tilbud": 226,
+              "pg_fv": 60.7,
+              "pg_ord": 62.7
+            },
+            "2024": {
+              "alleS": 1377,
+              "fvS": 354,
+              "plasser": 148,
+              "kvinner": 18.6,
+              "kvalifiserte": 1259,
+              "tilbud": 230,
+              "pg_fv": 59.2,
+              "pg_ord": 63.0
+            },
+            "2025": {
+              "alleS": 1272,
+              "fvS": 347,
+              "plasser": 148,
+              "kvinner": 17.9,
+              "kvalifiserte": 1169,
+              "tilbud": 228,
+              "pg_fv": 58.6,
+              "pg_ord": 61.8
+            },
+            "2026": {
+              "alleS": 1517,
+              "fvS": 403,
+              "plasser": 148,
+              "kvinner": 12.4,
+              "kvalifiserte": 1361,
+              "tilbud": 278,
+              "pg_fv": 58.2,
+              "pg_ord": 60.6
+            }
+          }
+        },
+        {
+          "id": "uis_kybernetikk_robotteknologi",
+          "shortName": "UiS",
+          "institusjon": "Universitetet i Stavanger",
+          "studiekode": "217798",
+          "studiested": "Stavanger",
+          "type": "master",
+          "url": "https://www.uis.no/nb/studier/kybernetikk-og-robotteknologi-master-5-ar",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 222,
+              "fvS": 31,
+              "plasser": 20,
+              "kvinner": 22.6,
+              "kvalifiserte": 186,
+              "tilbud": 43,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 190,
+              "fvS": 24,
+              "plasser": 20,
+              "kvinner": 4.2,
+              "kvalifiserte": 146,
+              "tilbud": 27,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "uia_ing_mekatronikk",
+          "shortName": "UiA",
+          "institusjon": "Universitetet i Agder",
+          "studiekode": "201012",
+          "studiested": "Grimstad",
+          "type": "bachelor",
+          "url": "https://www.uia.no/studier/program/mekatronikk-bachelor/",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 292,
+              "fvS": 79,
+              "plasser": 70,
+              "kvinner": 11.4,
+              "kvalifiserte": 213,
+              "tilbud": 72,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 297,
+              "fvS": 86,
+              "plasser": 70,
+              "kvinner": 10.5,
+              "kvalifiserte": 202,
+              "tilbud": 60,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 248,
+              "fvS": 56,
+              "plasser": 70,
+              "kvinner": 10.7,
+              "kvalifiserte": 169,
+              "tilbud": 38,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 343,
+              "fvS": 100,
+              "plasser": 70,
+              "kvinner": 20.0,
+              "kvalifiserte": 234,
+              "tilbud": 80,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 362,
+              "fvS": 103,
+              "plasser": 70,
+              "kvinner": 13.6,
+              "kvalifiserte": 233,
+              "tilbud": 67,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 376,
+              "fvS": 94,
+              "plasser": 70,
+              "kvinner": 12.8,
+              "kvalifiserte": 275,
+              "tilbud": 71,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "oslomet_ing_elektro_robotikk",
+          "shortName": "OsloMet",
+          "institusjon": "OsloMet - storbyuniversitetet",
+          "studiekode": "215025",
+          "studiested": "Oslo",
+          "type": "bachelor",
+          "url": "https://www.oslomet.no/studier/tkd/automatisering-robotikk",
+          "years": {
+            "2025": {
+              "alleS": 663,
+              "fvS": 75,
+              "plasser": 55,
+              "kvinner": 21.3,
+              "kvalifiserte": 394,
+              "tilbud": 65,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 701,
+              "fvS": 104,
+              "plasser": 55,
+              "kvinner": 17.3,
+              "kvalifiserte": 441,
+              "tilbud": 84,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "uio_informatikk_robotikk",
+          "shortName": "UiO",
+          "institusjon": "Universitetet i Oslo",
+          "studiekode": "185832",
+          "studiested": "Oslo",
+          "type": "bachelor",
+          "url": "https://www.uio.no/studier/program/informatikk-robotikk/",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 49.0,
+              "pg_ord": 55.2
+            },
+            "2021": {
+              "alleS": 951,
+              "fvS": 125,
+              "plasser": 76,
+              "kvinner": 13.6,
+              "kvalifiserte": 722,
+              "tilbud": 110,
+              "pg_fv": 48.3,
+              "pg_ord": 56.0
+            },
+            "2022": {
+              "alleS": 876,
+              "fvS": 107,
+              "plasser": 76,
+              "kvinner": 21.5,
+              "kvalifiserte": 660,
+              "tilbud": 110,
+              "pg_fv": 47.5,
+              "pg_ord": 51.4
+            },
+            "2023": {
+              "alleS": 902,
+              "fvS": 107,
+              "plasser": 73,
+              "kvinner": 20.6,
+              "kvalifiserte": 630,
+              "tilbud": 120,
+              "pg_fv": 44.0,
+              "pg_ord": 51.9
+            },
+            "2024": {
+              "alleS": 935,
+              "fvS": 132,
+              "plasser": 71,
+              "kvinner": 18.2,
+              "kvalifiserte": 628,
+              "tilbud": 125,
+              "pg_fv": 40.6,
+              "pg_ord": 53.4
+            },
+            "2025": {
+              "alleS": 728,
+              "fvS": 71,
+              "plasser": 71,
+              "kvinner": 18.3,
+              "kvalifiserte": 498,
+              "tilbud": 90,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 533,
+              "fvS": 48,
+              "plasser": 71,
+              "kvinner": 20.8,
+              "kvalifiserte": 343,
+              "tilbud": 63,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "ntnu_alesund_mekatronikk",
+          "shortName": "NTNU Ålesund",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "194025",
+          "studiested": "Ålesund",
+          "type": "bachelor",
+          "url": "https://www.ntnu.no/studier/bimepro",
+          "years": {
+            "2023": {
+              "alleS": 212,
+              "fvS": 26,
+              "plasser": 22,
+              "kvinner": 15.4,
+              "kvalifiserte": 167,
+              "tilbud": 33,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 270,
+              "fvS": 36,
+              "plasser": 22,
+              "kvinner": 11.1,
+              "kvalifiserte": 199,
+              "tilbud": 30,
+              "pg_fv": 44.9,
+              "pg_ord": 44.4
+            },
+            "2025": {
+              "alleS": 291,
+              "fvS": 48,
+              "plasser": 22,
+              "kvinner": 22.9,
+              "kvalifiserte": 216,
+              "tilbud": 38,
+              "pg_fv": 41.8,
+              "pg_ord": 44.0
+            },
+            "2026": {
+              "alleS": 356,
+              "fvS": 47,
+              "plasser": 25,
+              "kvinner": 21.3,
+              "kvalifiserte": 271,
+              "tilbud": 49,
+              "pg_fv": 45.7,
+              "pg_ord": 40.7
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "geoinformatikk",
+      "label": "Geoinformatikk",
+      "level": "master5",
+      "desc": "Sammenligner NMBUs femårige sivilingeniørutdanning i geoinformatikk med de nærmeste geomatikk- og geofagutdanningene.",
+      "note": "Ingen andre institusjoner tilbyr geoinformatikk som femårig sivilingeniørutdanning i Samordna opptak. HVLs landmåling og eiendomsdesign er den nærmeste faglige konkurrenten selv om den er treårig. NTNU Gjøviks geomatikkingeniør hadde siste opptak i 2024. NTNUs georessurser og geoteknologi er tatt med som beslektet femårig geofagutdanning, men overlapper lite faglig.",
+      "nmbuIds": [
+        "nmbu_geoinformatikk"
+      ],
+      "defaultIds": [
+        "nmbu_geoinformatikk",
+        "hvl_landmaling_geoinf"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_geoinformatikk",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "192813",
+          "studiested": "Ås",
+          "type": "master",
+          "url": "https://www.nmbu.no/studier/master-5-aar/geoinformatikk",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 48.0
+            },
+            "2021": {
+              "alleS": 125,
+              "fvS": 24,
+              "plasser": 15,
+              "kvinner": 29.2,
+              "kvalifiserte": 101,
+              "tilbud": 20,
+              "pg_fv": 0.0,
+              "pg_ord": 51.0
+            },
+            "2022": {
+              "alleS": 76,
+              "fvS": 19,
+              "plasser": 15,
+              "kvinner": 36.8,
+              "kvalifiserte": 59,
+              "tilbud": 20,
+              "pg_fv": 0.0,
+              "pg_ord": 46.7
+            },
+            "2023": {
+              "alleS": 82,
+              "fvS": 16,
+              "plasser": 15,
+              "kvinner": 31.2,
+              "kvalifiserte": 70,
+              "tilbud": 19,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 85,
+              "fvS": 13,
+              "plasser": 20,
+              "kvinner": 30.8,
+              "kvalifiserte": 67,
+              "tilbud": 16,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 103,
+              "fvS": 18,
+              "plasser": 20,
+              "kvinner": 44.4,
+              "kvalifiserte": 90,
+              "tilbud": 21,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 91,
+              "fvS": 13,
+              "plasser": 10,
+              "kvinner": 38.5,
+              "kvalifiserte": 66,
+              "tilbud": 11,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "hvl_landmaling_geoinf",
+          "shortName": "HVL",
+          "institusjon": "Høgskulen på Vestlandet",
+          "studiekode": "203753",
+          "studiested": "Bergen",
+          "type": "bachelor",
+          "url": "https://www.hvl.no/studier/studieprogram/landmaling-og-eiendomsdesign/",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 41.1,
+              "pg_ord": 48.0
+            },
+            "2021": {
+              "alleS": 796,
+              "fvS": 133,
+              "plasser": 50,
+              "kvinner": 33.1,
+              "kvalifiserte": 764,
+              "tilbud": 120,
+              "pg_fv": 41.7,
+              "pg_ord": 48.7
+            },
+            "2022": {
+              "alleS": 759,
+              "fvS": 130,
+              "plasser": 55,
+              "kvinner": 36.2,
+              "kvalifiserte": 740,
+              "tilbud": 154,
+              "pg_fv": 38.0,
+              "pg_ord": 46.1
+            },
+            "2023": {
+              "alleS": 739,
+              "fvS": 124,
+              "plasser": 55,
+              "kvinner": 37.1,
+              "kvalifiserte": 695,
+              "tilbud": 142,
+              "pg_fv": 41.0,
+              "pg_ord": 46.0
+            },
+            "2024": {
+              "alleS": 778,
+              "fvS": 151,
+              "plasser": 55,
+              "kvinner": 36.4,
+              "kvalifiserte": 741,
+              "tilbud": 192,
+              "pg_fv": 39.5,
+              "pg_ord": 45.0
+            },
+            "2025": {
+              "alleS": 927,
+              "fvS": 185,
+              "plasser": 80,
+              "kvinner": 36.2,
+              "kvalifiserte": 893,
+              "tilbud": 190,
+              "pg_fv": 41.4,
+              "pg_ord": 45.1
+            },
+            "2026": {
+              "alleS": 1161,
+              "fvS": 235,
+              "plasser": 80,
+              "kvinner": 44.3,
+              "kvalifiserte": 1108,
+              "tilbud": 190,
+              "pg_fv": 42.9,
+              "pg_ord": 48.9
+            }
+          }
+        },
+        {
+          "id": "ntnu_gjovik_ing_geomatikk_geoinf",
+          "shortName": "NTNU Gjøvik",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "194947",
+          "studiested": "Gjøvik",
+          "type": "bachelor",
+          "url": "https://www.ntnu.no/studier/bigeomat",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 123,
+              "fvS": 20,
+              "plasser": 20,
+              "kvinner": 25.0,
+              "kvalifiserte": 82,
+              "tilbud": 16,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 131,
+              "fvS": 24,
+              "plasser": 20,
+              "kvinner": 33.3,
+              "kvalifiserte": 88,
+              "tilbud": 24,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 113,
+              "fvS": 11,
+              "plasser": 20,
+              "kvinner": 27.3,
+              "kvalifiserte": 73,
+              "tilbud": 13,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 110,
+              "fvS": 17,
+              "plasser": 20,
+              "kvinner": 35.3,
+              "kvalifiserte": 76,
+              "tilbud": 13,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "ntnu_georessurser",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "194809",
+          "studiested": "Trondheim",
+          "type": "master",
+          "url": "https://www.ntnu.no/studier/mtgeort",
+          "years": {
+            "2023": {
+              "alleS": 671,
+              "fvS": 63,
+              "plasser": 26,
+              "kvinner": 39.7,
+              "kvalifiserte": 491,
+              "tilbud": 52,
+              "pg_fv": 54.4,
+              "pg_ord": 55.9
+            },
+            "2024": {
+              "alleS": 762,
+              "fvS": 105,
+              "plasser": 31,
+              "kvinner": 33.3,
+              "kvalifiserte": 586,
+              "tilbud": 66,
+              "pg_fv": 55.7,
+              "pg_ord": 56.0
+            },
+            "2025": {
+              "alleS": 892,
+              "fvS": 124,
+              "plasser": 37,
+              "kvinner": 35.5,
+              "kvalifiserte": 695,
+              "tilbud": 72,
+              "pg_fv": 55.2,
+              "pg_ord": 56.3
+            },
+            "2026": {
+              "alleS": 796,
+              "fvS": 112,
+              "plasser": 46,
+              "kvinner": 32.1,
+              "kvalifiserte": 648,
+              "tilbud": 84,
+              "pg_fv": 54.4,
+              "pg_ord": 56.3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "geomatikk",
+      "label": "Geomatikk",
+      "level": "bachelor",
+      "desc": "Sammenligner bachelorutdanningene innen geomatikk og landmåling.",
+      "note": "Bare tre bachelorprogrammer i Samordna opptak dekker geomatikk og landmåling. NTNU Gjøviks geomatikkingeniør hadde siste opptak i 2024 og er derfor merket som svakere sammenligning.",
+      "nmbuIds": [
+        "nmbu_geomatikk"
+      ],
+      "defaultIds": [
+        "nmbu_geomatikk",
+        "hvl_landmaling"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_geomatikk",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "192406",
+          "studiested": "Ås",
+          "type": "bachelor",
+          "url": "https://www.nmbu.no/studier/bachelor/geomatikk",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 35.4,
+              "pg_ord": 46.8
+            },
+            "2021": {
+              "alleS": 258,
+              "fvS": 46,
+              "plasser": 25,
+              "kvinner": 26.1,
+              "kvalifiserte": 217,
+              "tilbud": 36,
+              "pg_fv": 0.0,
+              "pg_ord": 53.4
+            },
+            "2022": {
+              "alleS": 199,
+              "fvS": 35,
+              "plasser": 25,
+              "kvinner": 37.1,
+              "kvalifiserte": 174,
+              "tilbud": 38,
+              "pg_fv": 0.0,
+              "pg_ord": 45.6
+            },
+            "2023": {
+              "alleS": 179,
+              "fvS": 28,
+              "plasser": 25,
+              "kvinner": 39.3,
+              "kvalifiserte": 136,
+              "tilbud": 34,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 217,
+              "fvS": 44,
+              "plasser": 25,
+              "kvinner": 22.7,
+              "kvalifiserte": 183,
+              "tilbud": 48,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 213,
+              "fvS": 31,
+              "plasser": 30,
+              "kvinner": 41.9,
+              "kvalifiserte": 175,
+              "tilbud": 40,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 207,
+              "fvS": 39,
+              "plasser": 25,
+              "kvinner": 35.9,
+              "kvalifiserte": 170,
+              "tilbud": 41,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "hvl_landmaling",
+          "shortName": "HVL",
+          "institusjon": "Høgskulen på Vestlandet",
+          "studiekode": "203753",
+          "studiested": "Bergen",
+          "type": "bachelor",
+          "url": "https://www.hvl.no/studier/studieprogram/landmaling-og-eiendomsdesign/",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 41.1,
+              "pg_ord": 48.0
+            },
+            "2021": {
+              "alleS": 796,
+              "fvS": 133,
+              "plasser": 50,
+              "kvinner": 33.1,
+              "kvalifiserte": 764,
+              "tilbud": 120,
+              "pg_fv": 41.7,
+              "pg_ord": 48.7
+            },
+            "2022": {
+              "alleS": 759,
+              "fvS": 130,
+              "plasser": 55,
+              "kvinner": 36.2,
+              "kvalifiserte": 740,
+              "tilbud": 154,
+              "pg_fv": 38.0,
+              "pg_ord": 46.1
+            },
+            "2023": {
+              "alleS": 739,
+              "fvS": 124,
+              "plasser": 55,
+              "kvinner": 37.1,
+              "kvalifiserte": 695,
+              "tilbud": 142,
+              "pg_fv": 41.0,
+              "pg_ord": 46.0
+            },
+            "2024": {
+              "alleS": 778,
+              "fvS": 151,
+              "plasser": 55,
+              "kvinner": 36.4,
+              "kvalifiserte": 741,
+              "tilbud": 192,
+              "pg_fv": 39.5,
+              "pg_ord": 45.0
+            },
+            "2025": {
+              "alleS": 927,
+              "fvS": 185,
+              "plasser": 80,
+              "kvinner": 36.2,
+              "kvalifiserte": 893,
+              "tilbud": 190,
+              "pg_fv": 41.4,
+              "pg_ord": 45.1
+            },
+            "2026": {
+              "alleS": 1161,
+              "fvS": 235,
+              "plasser": 80,
+              "kvinner": 44.3,
+              "kvalifiserte": 1108,
+              "tilbud": 190,
+              "pg_fv": 42.9,
+              "pg_ord": 48.9
+            }
+          }
+        },
+        {
+          "id": "ntnu_gjovik_ing_geomatikk",
+          "shortName": "NTNU Gjøvik",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "194947",
+          "studiested": "Gjøvik",
+          "type": "bachelor",
+          "url": "https://www.ntnu.no/studier/bigeomat",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 123,
+              "fvS": 20,
+              "plasser": 20,
+              "kvinner": 25.0,
+              "kvalifiserte": 82,
+              "tilbud": 16,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 131,
+              "fvS": 24,
+              "plasser": 20,
+              "kvinner": 33.3,
+              "kvalifiserte": 88,
+              "tilbud": 24,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 113,
+              "fvS": 11,
+              "plasser": 20,
+              "kvinner": 27.3,
+              "kvalifiserte": 73,
+              "tilbud": 13,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 110,
+              "fvS": 17,
+              "plasser": 20,
+              "kvinner": 35.3,
+              "kvalifiserte": 76,
+              "tilbud": 13,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "energifysikk",
+      "label": "Energi- og miljøfysikk",
+      "level": "bachelor",
+      "desc": "Sammenligner realfagsbachelorene innen fysikk, energi og miljø.",
+      "note": "Konkurrentene med default true er treårige realfagsbachelorer i Samordna opptak. UiTs program kombinerer fysikk og matematikk i samme bachelor og er derfor en svakere sammenligning, og UiS har bare et femårig integrert masterløp i matematikk og fysikk (bachelorgrad kan tas ut etter tre år), som er tatt med som svakere sammenligning. UiAs fysikktilbud (kodene 201661 og 201233) er årsstudier, ikke bachelorprogrammer, og er derfor ikke med. NMBUs bachelor i fornybar energi (kode 192835) hører hjemme ved Fakultet for miljøvitenskap og naturforvaltning og er heller ikke med.",
+      "nmbuIds": [
+        "nmbu_energifysikk"
+      ],
+      "defaultIds": [
+        "nmbu_energifysikk",
+        "ntnu_fysikk",
+        "uio_fysikk_astronomi",
+        "uib_fysikk",
+        "uio_fornybar_nano_b"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_energifysikk",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "192857",
+          "studiested": "Ås",
+          "type": "bachelor",
+          "url": "https://www.nmbu.no/studier/bachelor/energi-og-miljofysikk",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 52.6,
+              "pg_ord": 52.0
+            },
+            "2021": {
+              "alleS": 354,
+              "fvS": 24,
+              "plasser": 20,
+              "kvinner": 58.3,
+              "kvalifiserte": 327,
+              "tilbud": 28,
+              "pg_fv": 50.3,
+              "pg_ord": 53.5
+            },
+            "2022": {
+              "alleS": 266,
+              "fvS": 25,
+              "plasser": 20,
+              "kvinner": 48.0,
+              "kvalifiserte": 247,
+              "tilbud": 30,
+              "pg_fv": 51.9,
+              "pg_ord": 50.9
+            },
+            "2023": {
+              "alleS": 247,
+              "fvS": 19,
+              "plasser": 20,
+              "kvinner": 57.9,
+              "kvalifiserte": 224,
+              "tilbud": 30,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 233,
+              "fvS": 23,
+              "plasser": 20,
+              "kvinner": 47.8,
+              "kvalifiserte": 196,
+              "tilbud": 37,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 226,
+              "fvS": 18,
+              "plasser": 20,
+              "kvinner": 61.1,
+              "kvalifiserte": 195,
+              "tilbud": 21,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 189,
+              "fvS": 23,
+              "plasser": 15,
+              "kvinner": 39.1,
+              "kvalifiserte": 164,
+              "tilbud": 28,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "ntnu_fysikk",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "194857",
+          "studiested": "Trondheim",
+          "type": "bachelor",
+          "url": "https://www.ntnu.no/studier/bfy",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 54.0,
+              "pg_ord": 53.2
+            },
+            "2021": {
+              "alleS": 635,
+              "fvS": 94,
+              "plasser": 55,
+              "kvinner": 16.0,
+              "kvalifiserte": 570,
+              "tilbud": 96,
+              "pg_fv": 54.5,
+              "pg_ord": 52.5
+            },
+            "2022": {
+              "alleS": 566,
+              "fvS": 83,
+              "plasser": 50,
+              "kvinner": 28.9,
+              "kvalifiserte": 521,
+              "tilbud": 98,
+              "pg_fv": 52.4,
+              "pg_ord": 49.8
+            },
+            "2023": {
+              "alleS": 540,
+              "fvS": 72,
+              "plasser": 50,
+              "kvinner": 26.4,
+              "kvalifiserte": 488,
+              "tilbud": 98,
+              "pg_fv": 54.0,
+              "pg_ord": 51.7
+            },
+            "2024": {
+              "alleS": 570,
+              "fvS": 86,
+              "plasser": 50,
+              "kvinner": 31.4,
+              "kvalifiserte": 518,
+              "tilbud": 92,
+              "pg_fv": 53.1,
+              "pg_ord": 52.7
+            },
+            "2025": {
+              "alleS": 569,
+              "fvS": 77,
+              "plasser": 50,
+              "kvinner": 27.3,
+              "kvalifiserte": 516,
+              "tilbud": 86,
+              "pg_fv": 53.0,
+              "pg_ord": 50.8
+            },
+            "2026": {
+              "alleS": 538,
+              "fvS": 68,
+              "plasser": 50,
+              "kvinner": 30.9,
+              "kvalifiserte": 492,
+              "tilbud": 86,
+              "pg_fv": 51.1,
+              "pg_ord": 49.8
+            }
+          }
+        },
+        {
+          "id": "uio_fysikk_astronomi",
+          "shortName": "UiO",
+          "institusjon": "Universitetet i Oslo",
+          "studiekode": "185857",
+          "studiested": "Oslo",
+          "type": "bachelor",
+          "url": "https://www.uio.no/studier/program/fysikk-astronomi/",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 839,
+              "fvS": 152,
+              "plasser": 100,
+              "kvinner": 20.4,
+              "kvalifiserte": 672,
+              "tilbud": 140,
+              "pg_fv": 45.9,
+              "pg_ord": 44.1
+            },
+            "2022": {
+              "alleS": 790,
+              "fvS": 152,
+              "plasser": 100,
+              "kvinner": 30.3,
+              "kvalifiserte": 642,
+              "tilbud": 148,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 740,
+              "fvS": 119,
+              "plasser": 90,
+              "kvinner": 32.8,
+              "kvalifiserte": 581,
+              "tilbud": 127,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 641,
+              "fvS": 101,
+              "plasser": 85,
+              "kvinner": 29.7,
+              "kvalifiserte": 514,
+              "tilbud": 115,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 659,
+              "fvS": 146,
+              "plasser": 80,
+              "kvinner": 38.4,
+              "kvalifiserte": 525,
+              "tilbud": 157,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 637,
+              "fvS": 111,
+              "plasser": 80,
+              "kvinner": 36.0,
+              "kvalifiserte": 506,
+              "tilbud": 110,
+              "pg_fv": 0.0,
+              "pg_ord": 46.8
+            }
+          }
+        },
+        {
+          "id": "uib_fysikk",
+          "shortName": "UiB",
+          "institusjon": "Universitetet i Bergen",
+          "studiekode": "184857",
+          "studiested": "Bergen",
+          "type": "bachelor",
+          "url": "https://www.uib.no/studier/BAMN-PHYS",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 294,
+              "fvS": 39,
+              "plasser": 50,
+              "kvinner": 28.2,
+              "kvalifiserte": 245,
+              "tilbud": 47,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 280,
+              "fvS": 40,
+              "plasser": 50,
+              "kvinner": 22.5,
+              "kvalifiserte": 241,
+              "tilbud": 40,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 247,
+              "fvS": 35,
+              "plasser": 52,
+              "kvinner": 40.0,
+              "kvalifiserte": 215,
+              "tilbud": 44,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 274,
+              "fvS": 34,
+              "plasser": 52,
+              "kvinner": 26.5,
+              "kvalifiserte": 225,
+              "tilbud": 39,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 273,
+              "fvS": 37,
+              "plasser": 52,
+              "kvinner": 21.6,
+              "kvalifiserte": 234,
+              "tilbud": 39,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 259,
+              "fvS": 38,
+              "plasser": 26,
+              "kvinner": 23.7,
+              "kvalifiserte": 214,
+              "tilbud": 41,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "uio_fornybar_nano_b",
+          "shortName": "UiO",
+          "institusjon": "Universitetet i Oslo",
+          "studiekode": "185863",
+          "studiested": "Oslo",
+          "type": "bachelor",
+          "url": "https://www.uio.no/studier/program/nanoteknologi/",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 324,
+              "fvS": 25,
+              "plasser": 45,
+              "kvinner": 24.0,
+              "kvalifiserte": 256,
+              "tilbud": 26,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 288,
+              "fvS": 22,
+              "plasser": 30,
+              "kvinner": 45.5,
+              "kvalifiserte": 233,
+              "tilbud": 20,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 538,
+              "fvS": 56,
+              "plasser": 30,
+              "kvinner": 42.9,
+              "kvalifiserte": 400,
+              "tilbud": 50,
+              "pg_fv": 47.9,
+              "pg_ord": 48.8
+            },
+            "2024": {
+              "alleS": 523,
+              "fvS": 39,
+              "plasser": 40,
+              "kvinner": 51.3,
+              "kvalifiserte": 392,
+              "tilbud": 57,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 486,
+              "fvS": 28,
+              "plasser": 40,
+              "kvinner": 39.3,
+              "kvalifiserte": 365,
+              "tilbud": 37,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 416,
+              "fvS": 30,
+              "plasser": 40,
+              "kvinner": 33.3,
+              "kvalifiserte": 312,
+              "tilbud": 41,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "uit_fysmat_b",
+          "shortName": "UiT",
+          "institusjon": "UiT Norges arktiske universitet",
+          "studiekode": "186862",
+          "studiested": "Tromsø",
+          "type": "bachelor",
+          "url": "https://uit.no/utdanning/program/712953/fysikk_og_matematikk_-_bachelor",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 67,
+              "fvS": 16,
+              "plasser": 25,
+              "kvinner": 18.8,
+              "kvalifiserte": 56,
+              "tilbud": 13,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 61,
+              "fvS": 10,
+              "plasser": 30,
+              "kvinner": 20.0,
+              "kvalifiserte": 53,
+              "tilbud": 10,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 44,
+              "fvS": 7,
+              "plasser": 30,
+              "kvinner": 14.3,
+              "kvalifiserte": 36,
+              "tilbud": 5,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 59,
+              "fvS": 9,
+              "plasser": 25,
+              "kvinner": 0.0,
+              "kvalifiserte": 54,
+              "tilbud": 8,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 122,
+              "fvS": 10,
+              "plasser": 10,
+              "kvinner": 10.0,
+              "kvalifiserte": 111,
+              "tilbud": 17,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 97,
+              "fvS": 10,
+              "plasser": 10,
+              "kvinner": 40.0,
+              "kvalifiserte": 80,
+              "tilbud": 12,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "uis_matematikk_fysikk",
+          "shortName": "UiS",
+          "institusjon": "Universitetet i Stavanger",
+          "studiekode": "217747",
+          "studiested": "Stavanger",
+          "type": "master",
+          "url": "https://www.uis.no/nb/studier/matematikk-og-fysikk-master-5-ar",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 130,
+              "fvS": 20,
+              "plasser": 15,
+              "kvinner": 15.0,
+              "kvalifiserte": 115,
+              "tilbud": 26,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 160,
+              "fvS": 17,
+              "plasser": 15,
+              "kvinner": 52.9,
+              "kvalifiserte": 140,
+              "tilbud": 20,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 139,
+              "fvS": 16,
+              "plasser": 10,
+              "kvinner": 37.5,
+              "kvalifiserte": 124,
+              "tilbud": 16,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 113,
+              "fvS": 22,
+              "plasser": 10,
+              "kvinner": 22.7,
+              "kvalifiserte": 98,
+              "tilbud": 21,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 94,
+              "fvS": 10,
+              "plasser": 10,
+              "kvinner": 70.0,
+              "kvalifiserte": 86,
+              "tilbud": 15,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 125,
+              "fvS": 14,
+              "plasser": 10,
+              "kvinner": 21.4,
+              "kvalifiserte": 106,
+              "tilbud": 15,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "datavitenskap2",
+      "label": "Datavitenskap (2-årig master)",
+      "level": "master2",
+      "desc": "Sammenligner de toårige masterne i datavitenskap og datateknologi med lokalt opptak.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra NTNUs egne publiseringer. DBH har ikke rapportert høsten 2026 ennå, så 2026-tallene for NTNU er fra NTNUs søkertallsoversikt. NTNUs datateknologimaster tas opp per studieretning (kunstig intelligens, programvaresystemer, databaser og søk, effektive datasystemer, visuell databehandling); studieplasser og førstevalgssøkere er summert over studieretningene, og poenggrensen er derfor ikke ført inn siden den varierer mellom dem (2026: 2,6–4,2). NMBU oppgir 25 studieplasser på programsiden, uten tidsserie, og publiserer ingen poenggrense. NMBUs program er engelskspråklig, og fallet i søkertall fra 2023 til 2024 henger sammen med innføringen av studieavgift for søkere utenfor EØS. NTNUs engelskspråklige informatikkmaster er tatt med som svakere sammenligning.",
+      "nmbuIds": [
+        "nmbu_datavitenskap2"
+      ],
+      "defaultIds": [
+        "nmbu_datavitenskap2",
+        "ntnu_midt"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_datavitenskap2",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "",
+          "studiested": "Ås",
+          "type": "master2",
+          "url": "https://www.nmbu.no/studier/master-2-aar/datavitenskap",
+          "years": {
+            "2021": {
+              "alleS": 786,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 184,
+              "tilbud": 53,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 913,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 225,
+              "tilbud": 77,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 891,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 73,
+              "tilbud": 63,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 169,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 57,
+              "tilbud": 50,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 365,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 74,
+              "tilbud": 65,
+              "pg_fv": null,
+              "pg_ord": null
+            }
+          }
+        },
+        {
+          "id": "ntnu_midt",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "",
+          "studiested": "Trondheim",
+          "type": "master2",
+          "url": "https://www.ntnu.no/studier/midt",
+          "years": {
+            "2021": {
+              "alleS": 561,
+              "fvS": 178,
+              "plasser": 47,
+              "kvinner": null,
+              "kvalifiserte": 287,
+              "tilbud": 72,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 430,
+              "fvS": 139,
+              "plasser": 47,
+              "kvinner": null,
+              "kvalifiserte": 266,
+              "tilbud": 71,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 553,
+              "fvS": 163,
+              "plasser": 42,
+              "kvinner": null,
+              "kvalifiserte": 298,
+              "tilbud": 66,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 625,
+              "fvS": 196,
+              "plasser": 52,
+              "kvinner": null,
+              "kvalifiserte": 366,
+              "tilbud": 97,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 756,
+              "fvS": 210,
+              "plasser": 76,
+              "kvinner": null,
+              "kvalifiserte": 433,
+              "tilbud": 123,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": 821,
+              "fvS": 222,
+              "plasser": 85,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            }
+          }
+        },
+        {
+          "id": "ntnu_msit",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "",
+          "studiested": "Trondheim",
+          "type": "master2",
+          "url": "https://www.ntnu.no/studier/msit",
+          "years": {
+            "2021": {
+              "alleS": 2309,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 995,
+              "tilbud": 178,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 2130,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 950,
+              "tilbud": 170,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 912,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 577,
+              "tilbud": 133,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 1155,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 713,
+              "tilbud": 147,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 1086,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 618,
+              "tilbud": 170,
+              "pg_fv": null,
+              "pg_ord": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "vannmiljo2",
+      "label": "Vannteknologi (2-årig master)",
+      "level": "master2",
+      "desc": "Sammenligner de toårige masterne innen vann- og miljøteknikk med lokalt opptak.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra NTNUs egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. NMBUs «Intelligent Water Technology» er engelskspråklig og hadde første opptak i 2024; NMBU publiserer verken studieplasser, førstevalgssøkere eller poenggrense for programmet. NTNU dekker vann- og miljøteknikk som studieretning i den toårige masteren i bygg og infrastruktur (het «Bygg- og miljøteknikk» til og med 2024 og hadde fram til 2024 også et opptak i Gjøvik); studieplasser og førstevalgssøkere er summert over Trondheim og Gjøvik, mens poenggrensen gjelder Trondheim. OsloMets «Smart vannteknologi» er det nærmeste rene vannteknologiprogrammet, men er så nytt at DBH ikke har opptakstall for det.",
+      "nmbuIds": [
+        "nmbu_iwt"
+      ],
+      "defaultIds": [
+        "nmbu_iwt",
+        "ntnu_mibygg"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_iwt",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "",
+          "studiested": "Ås",
+          "type": "master2",
+          "url": "https://www.nmbu.no/studier/master-2-aar/intelligent-water-technology",
+          "years": {
+            "2024": {
+              "alleS": 41,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 11,
+              "tilbud": 7,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 82,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 23,
+              "tilbud": 15,
+              "pg_fv": null,
+              "pg_ord": null
+            }
+          }
+        },
+        {
+          "id": "ntnu_mibygg",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "",
+          "studiested": "Trondheim",
+          "type": "master2",
+          "url": "https://www.ntnu.no/studier/mibygg",
+          "years": {
+            "2021": {
+              "alleS": 479,
+              "fvS": 312,
+              "plasser": 88,
+              "kvinner": null,
+              "kvalifiserte": 380,
+              "tilbud": 156,
+              "pg_fv": null,
+              "pg_ord": 4.0
+            },
+            "2022": {
+              "alleS": 392,
+              "fvS": 252,
+              "plasser": 88,
+              "kvinner": null,
+              "kvalifiserte": 294,
+              "tilbud": 156,
+              "pg_fv": null,
+              "pg_ord": 3.7
+            },
+            "2023": {
+              "alleS": 330,
+              "fvS": 214,
+              "plasser": 74,
+              "kvinner": null,
+              "kvalifiserte": 249,
+              "tilbud": 147,
+              "pg_fv": null,
+              "pg_ord": 3.4
+            },
+            "2024": {
+              "alleS": 357,
+              "fvS": 227,
+              "plasser": 88,
+              "kvinner": null,
+              "kvalifiserte": 255,
+              "tilbud": 171,
+              "pg_fv": null,
+              "pg_ord": 3.4
+            },
+            "2025": {
+              "alleS": 298,
+              "fvS": 222,
+              "plasser": 90,
+              "kvinner": null,
+              "kvalifiserte": 216,
+              "tilbud": 183,
+              "pg_fv": null,
+              "pg_ord": 2.8
+            },
+            "2026": {
+              "alleS": 287,
+              "fvS": 215,
+              "plasser": 110,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": 2.7
+            }
+          }
+        },
+        {
+          "id": "oslomet_smart_vannteknologi",
+          "shortName": "OsloMet",
+          "institusjon": "OsloMet - storbyuniversitetet",
+          "studiekode": "",
+          "studiested": "Oslo",
+          "type": "master2",
+          "url": "https://www.oslomet.no/studier/tkd/smart-vannteknologi",
+          "years": {}
+        }
+      ]
+    }
+  ]
+}
