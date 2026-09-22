@@ -1,0 +1,335 @@
+{
+  "entryId": "nmbu_bygg",
+  "programnavn": "Byggeteknikk og arkitektur (master 5 år)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/master-5-aar/byggeteknikk-og-arkitektur",
+    "https://www.nmbu.no/studier/studieplaner-m-ba",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-07/Studieplanen%20-%20Bygg%20og%20arkitektur%20-%20kull%202026.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 260,
+  "obligatoriske": [
+    {
+      "emnekode": "IMRT100",
+      "emnenavn": "Innføringsemne - fagorientert prosjekt",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Augustblokk før høstsemesteret."
+    },
+    {
+      "emnekode": "MATH121",
+      "emnenavn": "Kalkulus",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF120",
+      "emnenavn": "Programmering og databehandling",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TBA150",
+      "emnenavn": "Bygningsanalyse",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS101",
+      "emnenavn": "Mekanikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MATH122",
+      "emnenavn": "Kalkulus og lineær algebra",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TBA100",
+      "emnenavn": "Bygningshistorie",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS110",
+      "emnenavn": "Statikk",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MATH123",
+      "emnenavn": "Lineær algebra og vektoranalyse",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TBM120",
+      "emnenavn": "Fasthetslære og grunnleggende beregningsteknikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS102A",
+      "emnenavn": "Fysikk for bioteknologer",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Emnenavnet virker generisk sammenlignet med programmets faglige profil (bygg/arkitektur); det er likevel dette navnet NMBUs emneside for FYS102A oppgir. Bør dobbeltsjekkes mot emnesøket."
+    },
+    {
+      "emnekode": "LAD102",
+      "emnenavn": "GIS - praktisk introduksjon",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TBA222",
+      "emnenavn": "Konstruksjonsteknikk stål og tre",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TBA190",
+      "emnenavn": "Trehus med bærekraft",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ARK100",
+      "emnenavn": "Arkitektur og bærekraft I",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Til tross for ARK-prefikset er dette felles for begge spesialiseringer (del av «Oblig. bygg og ark»-puljen på 180 sp), ikke spesialiseringsspesifikt."
+    },
+    {
+      "emnekode": "TBA201",
+      "emnenavn": "Geoteknikk",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TBA223",
+      "emnenavn": "Konstruksjonsteknikk betong",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TBA210",
+      "emnenavn": "Bygningsfysikk, energibruk og inneklima",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TBM200",
+      "emnenavn": "Materialteknologi",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TBA202",
+      "emnenavn": "Bærekraftig materialbruk",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TBA224",
+      "emnenavn": "Konstruksjonsteknikk II Bygg",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ARK210",
+      "emnenavn": "Arkitektur og bærekraft II",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Til tross for ARK-prefikset er dette felles for begge spesialiseringer (del av «Oblig. bygg og ark»-puljen på 180 sp), ikke spesialiseringsspesifikt."
+    },
+    {
+      "emnekode": "PHI102",
+      "emnenavn": "Examen philosophicum - engelsk versjon",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TBA270",
+      "emnenavn": "Bygningsadministrasjon og prosjektledelse",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TBA331",
+      "emnenavn": "Bygningsfysisk simulering",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Plassering (4. år høst) følger spesialiseringen «arkitektur og bærekraft» (side 1 i PDF-en). I «konstruksjonsteknikk»-sporet (side 2) er TBA331 i stedet lagt til 5. år høst – totalt studiepoeng og tilhørighet til fellespuljen er identisk, kun semesterplasseringen kan avvike ett år mellom sporene."
+    },
+    {
+      "emnekode": "TBA215",
+      "emnenavn": "Strukturell analyse",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "STAT100",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen skriver «STAT100/DAT110» samlet, dvs. valg mellom STAT100 (Statistikk) og DAT110; STAT100 er brukt som hovedkode her, tilsvarende praksisen for PHI100/PHI101 i søsterfilen nmbu_eiendom.json."
+    },
+    {
+      "emnekode": "TBA390",
+      "emnenavn": "Trekonstruksjonsteknikk",
+      "studiepoeng": 10,
+      "aar": 5,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "M30-BA",
+      "emnenavn": "Masteroppgave",
+      "studiepoeng": 30,
+      "aar": 5,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Arkitektur og bærekraft",
+      "obligatoriske": [
+        {
+          "emnekode": "ARK220",
+          "emnenavn": "Arkitektur og bærekraft III",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "ARK300",
+          "emnenavn": "Arkitektur og bærekraft IV",
+          "studiepoeng": 10,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Konstruksjonsteknikk",
+      "obligatoriske": [
+        {
+          "emnekode": "TBA320",
+          "emnenavn": "Konstruksjonsteknikk III Bygg",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TBM350",
+          "emnenavn": "Elementmetoden",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TRE200",
+          "emnenavn": "Treteknologi I",
+          "studiepoeng": 5,
+          "aar": 4,
+          "semester": "januarblokk",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er NMBUs studieplan-PDF for kull 2026 («Studieplanen - Bygg og arkitektur - kull 2026.pdf», to sider: side 1 = spesialisering i arkitektur og bærekraft, side 2 = spesialisering i konstruksjonsteknikk). PDF-en er et regneark/tidslinje-oppsett (år × semester-blokker) med kun emnekoder og studiepoeng; fulle emnenavn er hentet separat fra NMBUs emnesøk (nmbu.no/emne/<kode>) 22.09.2026 og bør dobbeltsjekkes mot gjeldende emnebeskrivelser. Programmet er 300 sp totalt: 85 sp felles sivilingeniør-emner + 180 sp felles bygg-og-arkitektur-emner (til sammen 260 sp, listet i «obligatoriske» over) + 20 sp spesialiseringsemner (arkitektur og bærekraft: ARK220+ARK300) eller 25 sp (konstruksjonsteknikk: TBA320+TBM350+TRE200), pluss valgfrie emner som fyller resten opp til 300 sp (15 sp for arkitektur og bærekraft-sporet, 10 sp for konstruksjonsteknikk-sporet, siden spesialiseringene har ulikt spesialiseringsomfang). Av de 85 sp felles sivilingeniør-emner er 5 sp en «øk./samf.»-kategori (økonomi/samfunnsfag) uten fast emnekode i tidslinjen (plassert 5. år høst i arkitektur-sporet) – dette er IKKE tatt med som et konkret obligatorisk emne her, og er ikke medregnet i obligatoriskeStudiepoeng (260), siden det er et valg mellom flere mulige emner (jf. tilsvarende praksis for JUS100/øk.-samf. i nmbu_vannmiljo.json). KJM007 (0 sp) er anbefalt, ikke obligatorisk, for studenter uten kjemi 1 og 2 fra videregående, og er derfor utelatt. TBA110 (5 sp) og THT100 (5 sp) er oppført i PDF-en under «Anbefalte valgfrie emner» (ikke obligatorisk) og er derfor utelatt fra obligatoriske-listen, selv om de vises plassert i tidslinjen (TBA110 i 1. år juniblokk, THT100 i 3. år januarblokk) som eksempler på anbefalte valgfag. Programsiden lenker til studieplaner for flere kull (2020–2026); 2026-planen (nyeste) er brukt her."
+}

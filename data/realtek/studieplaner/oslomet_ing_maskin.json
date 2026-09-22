@@ -1,0 +1,181 @@
+{
+  "entryId": "oslomet_ing_maskin",
+  "programnavn": "Ingeniør, maskin (bachelor)",
+  "institusjon": "OsloMet - storbyuniversitetet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.oslomet.no/studier/tkd/maskiningenior",
+    "https://student.oslomet.no/studier/-/studieinfo/programplan/HINGMASKIN/2026/H%C3%98ST"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 140,
+  "obligatoriske": [
+    {
+      "emnekode": "MEK1000",
+      "emnenavn": "Matematikk 1000",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAPE1300",
+      "emnenavn": "Statikk og fasthetslære",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MEK1300",
+      "emnenavn": "Introduksjon til python-programmering",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MEK1400",
+      "emnenavn": "Fysikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MATS1600",
+      "emnenavn": "Mekanisk design og produksjon",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MATS2100",
+      "emnenavn": "Termofluid",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MEK2000",
+      "emnenavn": "Matematikk 2000",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ELI1300",
+      "emnenavn": "Analoge og digitale kretser",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MATS1500",
+      "emnenavn": "Materialteknologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MEK2200",
+      "emnenavn": "Statistikk og risikoanalyse",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Obligatorisk i begge studieretninger (Konstruksjon og design / Mekatronikk)."
+    },
+    {
+      "emnekode": "ELI2300",
+      "emnenavn": "Dynamiske systemer",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Obligatorisk i begge studieretninger (Konstruksjon og design / Mekatronikk)."
+    },
+    {
+      "emnekode": "STKD6610",
+      "emnenavn": "Technology and Society II",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Obligatorisk i begge studieretninger."
+    },
+    {
+      "emnekode": "MATS3900",
+      "emnenavn": "Bacheloroppgave",
+      "studiepoeng": 20,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Obligatorisk i begge studieretninger."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Konstruksjon og design",
+      "obligatoriske": [
+        {
+          "emnekode": "MASK3610",
+          "emnenavn": "Anvendt fluidmekanikk",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MASK2300",
+          "emnenavn": "Konstruksjonsmekanikk og elementanalyse",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Mekatronikk",
+      "obligatoriske": [
+        {
+          "emnekode": "ELI2500",
+          "emnenavn": "Industriell automatisering og instrumentering",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "ELI1400",
+          "emnenavn": "Analog og digital elektronikk",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er OsloMets offisielle programplan for HINGMASKIN, gjeldende fra 2026 HØST (student.oslomet.no, hentet via nettleser fordi siden krever JavaScript-rendering). Programmet har to reelle studieretninger fra og med 2. år vår (Konstruksjon og design / Mekatronikk) med hver sine obligatoriske spesialiseringsemner à 20 sp; disse ligger i spesialiseringer-feltet og er IKKE talt med i obligatoriskeStudiepoeng (140) for hovedlisten. Legges spesialiseringsemnene til (20 sp, likt for begge retninger) blir reelt obligatorisk 160 sp. I tillegg er det 20 sp valgfrie emner i 3. år høst, hvor studenten velger 2 av 5: MAVE3600 Prosess og piping, DAVE3700 Matematikk 3000, DAVE3710 Akademisk Engelsk, EMVE3700 Numerisk varme- og strømningsteknikk, MEK3100 Avansert Python-programmering for ingeniører (Konstruksjon og design-retningen har også ELI3610 Robotikk som ekstra valgbart i Mekatronikk-retningen). 140 + 20 (spesialisering) + 20 (valgfritt) = 180 sp totalt. Programplansiden viser også en parallell «Maskin for tretermin»-variant med TRE-emner i 1. år (samme reelle innhold, annen semesterfordeling for studenter med tresemesterordning); denne er ikke tatt med, kun ordinær «Maskin»-variant."
+}

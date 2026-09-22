@@ -1,0 +1,133 @@
+{
+  "entryId": "oslomet_anvendt_datateknologi",
+  "programnavn": "Anvendt datateknologi (bachelor)",
+  "institusjon": "OsloMet - storbyuniversitetet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.oslomet.no/studier/tkd/anvendt-datateknologi"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 130,
+  "obligatoriske": [
+    {
+      "emnekode": "ADTS1600",
+      "emnenavn": "Interaksjonsdesign og prototyping",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "DAPE1400",
+      "emnenavn": "Programmering",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "DATA1100",
+      "emnenavn": "Teknologi og samfunn for programmerere",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "DATA1200",
+      "emnenavn": "Webutvikling og inkluderende design",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "DATA1300",
+      "emnenavn": "Hurtig utvikling med scripting-språk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "DATA1500",
+      "emnenavn": "Databaser",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "DATA1700",
+      "emnenavn": "Webprogrammering",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ADSE2100",
+      "emnenavn": "Menneske maskin interaksjon",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "DAFE2200",
+      "emnenavn": "Systemutvikling",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ADSE3200",
+      "emnenavn": "Visualisering",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ADTS2310",
+      "emnenavn": "Testing av programvare",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ITPE3100",
+      "emnenavn": "Datasikkerhet",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "DATA3900",
+      "emnenavn": "Bacheloroppgave",
+      "studiepoeng": 20,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Fra og med 2. studieår velger studenten én av tre spesialiseringer: Menneske-maskin-interaksjon, Teknologi-innovasjon og entreprenørskap, eller Programmering. Dette er et obligatorisk VALG av retning, og er derfor ikke tatt med i obligatoriske-lista, men hver retning har egne obligatoriske emner (10 sp per semester i 3., 4. og 5. semester = 30 sp): Menneske-maskin-interaksjon: DATA2600 (3. sem), DATA3710 (4. sem), ADTS3100 (5. sem). Teknologi-innovasjon og entreprenørskap: TEK2850 (3. sem), DATA3740 (4. sem), DATA3300 (5. sem). Programmering: DATS2300 (3. sem), DATA2500 (4. sem), ITPE3200 (5. sem). I tillegg har studenten 10 sp fritt valgemne i 5. semester og 10 sp fritt valgemne i 6. semester (utover ITPE3100/spesialiseringsemnet i 5. sem og DATA3900 i 6. sem), valgt fra en lang liste valgemner (bl.a. DAPE1300, DATA3710, DATA3720, DATA3730, DATA3740, DATA3750, DATA3760, DATA3770, DATA3790, DATA3800, DATS2300, DAVE3600, DAVE3625, DAVE3710, ITPE3200, TEK2850, DATA2410, DATA2500, DAVE3606, DAVE3610, DAVE3615). Til sammen: 130 sp obligatoriske fellesemner + 30 sp spesialiseringsspesifikke emner (retningsvalg) + 20 sp frie valgemner = 180 sp. Programplanen på oslomet.no lastes dynamisk inn på samme URL og oppgir ikke noe eksplisitt studieplanår i teksten (siden sier oversikten 'oppdateres hver vår, og fram til da vises emnene for nåværende studenter'); studieplanAar er derfor satt til inneværende studieår 2026/2027 basert på hentedato 2026-09-22, med noe usikkerhet. DBH-emnekoder er ikke fylt ut (tom liste) for noen emner i denne runden."
+}

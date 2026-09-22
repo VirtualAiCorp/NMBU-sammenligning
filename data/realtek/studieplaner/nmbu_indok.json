@@ -1,0 +1,751 @@
+{
+  "entryId": "nmbu_indok",
+  "programnavn": "Industriell økonomi (master 5 år)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026",
+  "kilder": [
+    "https://www.nmbu.no/studier/master-5-aar/industriell-okonomi",
+    "https://www.nmbu.no/studieplaner-m-io",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-07/Studieplan%20Industriell%20%C3%B8konomi%202026.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 170,
+  "obligatoriske": [
+    {
+      "emnekode": "IMRT100",
+      "emnenavn": "Innføringsemne - fagorientert prosjekt",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Augustblokk før 1. året."
+    },
+    {
+      "emnekode": "MATH121",
+      "emnenavn": "Kalkulus",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF120",
+      "emnenavn": "Programmering og databehandling",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "PHI100",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen skriver «PHI100/PHI101/PHI102»; de tre er alternative gjennomføringsformer av samme krav. Alle tre DBH-kodene er ikke kjent ennå (dbhEmnekoder kobles automatisk senere)."
+    },
+    {
+      "emnekode": "FYS101",
+      "emnenavn": "Mekanikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MATH122",
+      "emnenavn": "Kalkulus og lineær algebra",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS102A",
+      "emnenavn": "Fysikk for bioteknologer",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Gjelder spesialiseringene Bygge- og prosjektledelse, Datavitenskap og Vann- og miljøteknikk. For spesialiseringene Energisystemer og beredskap og Systemutvikling og produktinnovasjon kreves i stedet FYS102 (10 sp, samme semester); da blir Obligatorisk Siv.ing.-summen 115 sp i stedet for 110."
+    },
+    {
+      "emnekode": "MATH123",
+      "emnenavn": "Lineær algebra og vektoranalyse",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BUS110",
+      "emnenavn": "Finansregnskap og regnskapsanalyse",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "10 sp for alle spesialiseringer unntatt Bygge- og prosjektledelse, der emnet teller 5 sp i studieplanens sum (Oblig. INDØK 55 sp der, mot 60 sp for de andre)."
+    },
+    {
+      "emnekode": "DAT110",
+      "emnenavn": "Innføring i dataanalyse og -visualisering",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Semesterplassering hentet fra spesialiseringen Bygge- og prosjektledelse; for enkelte spesialiseringer (bl.a. Datavitenskap) ligger DAT110 i stedet i 1. året vår ifølge matrisen. Plasseringen er dermed noe usikker og kan variere mellom spesialiseringene."
+    },
+    {
+      "emnekode": "BUS210",
+      "emnenavn": "Økonomi- og virksomhetsstyring",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Gjelder alle spesialiseringer unntatt Vann- og miljøteknikk, der emnet er BUS220 Finansiering og investering (10 sp, samme plassering)."
+    },
+    {
+      "emnekode": "IND300",
+      "emnenavn": "Eksperter i team",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "januarblokk",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IND200",
+      "emnenavn": "Praktisk prosjektstyring",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IND210",
+      "emnenavn": "Driftsledelse",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IND240",
+      "emnenavn": "Usikkerhetsstyring i prosjekt",
+      "studiepoeng": 5,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IND310",
+      "emnenavn": "Driftsoptimalisering",
+      "studiepoeng": 10,
+      "aar": 5,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "Masteroppgave",
+      "emnenavn": "Masteroppgave",
+      "studiepoeng": 30,
+      "aar": 5,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen oppgir ikke en egen emnekode for masteroppgaven, bare teksten «Masteroppgave»."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Bygge- og prosjektledelse",
+      "obligatoriske": [
+        {
+          "emnekode": "ARK210",
+          "emnenavn": "Arkitektur og bærekraft II",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS110",
+          "emnenavn": "Statikk",
+          "studiepoeng": 5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "IND220",
+          "emnenavn": "Innovasjonsbedrift",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "helår",
+          "dbhEmnekoder": [],
+          "merknad": "Løper over vår og høst i 4. året ifølge matrisen (emnet er oppført i timeplanen begge semestre)."
+        },
+        {
+          "emnekode": "TBA190",
+          "emnenavn": "Trehus med bærekraft",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TBA202",
+          "emnenavn": "Bærekraftig materialbruk",
+          "studiepoeng": 5,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TBA210",
+          "emnenavn": "Bygningsfysikk, energibruk og inneklima",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TBA222",
+          "emnenavn": "Konstruksjonsteknikk stål og tre",
+          "studiepoeng": 5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TBA223",
+          "emnenavn": "Konstruksjonsteknikk betong",
+          "studiepoeng": 5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TBA270D",
+          "emnenavn": "Bygningsadministrasjon og prosjektledelse",
+          "studiepoeng": 5,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TBA331",
+          "emnenavn": "Bygningsfysisk simulering",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TBM120",
+          "emnenavn": "Fasthetslære og grunnleggende beregningsteknikk",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TBM200",
+          "emnenavn": "Materialteknologi",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ],
+      "merknad": "Spesialiseringens faste obligatoriske emner (Oblig. Byggeteknikk) summerer til 95 sp. I tillegg kommer et obligatorisk valg på 20 sp: enten TBA224 Bygningsmateriallære (10 sp) + TBA390 Prosjektoppgave i byggeteknikk (10 sp), eller ARK220 (10 sp) + ARK300 (10 sp) - studieplanen skriver «Velg enten TBA224+TBA390 eller ARK220+ARK300». Dette valget er ikke listet som enkeltemner. Spesialiseringens totale sum i studieplanen er 115 sp (95+20)."
+    },
+    {
+      "navn": "Datavitenskap",
+      "obligatoriske": [
+        {
+          "emnekode": "DAT200",
+          "emnenavn": "Anvendt maskinlæring",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "DAT300",
+          "emnenavn": "Anvendt dyplæring",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "IND320",
+          "emnenavn": "Data til beslutning",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "Semesterplassering er usikker; emnet opptrer flere steder i studieplanens matrise (bl.a. som eksempel på valgfag), og nøyaktig obligatorisk plassering er rekonstruert."
+        },
+        {
+          "emnekode": "INF131",
+          "emnenavn": "Datahandtering og logikk",
+          "studiepoeng": 5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "INF201",
+          "emnenavn": "Videregående programmering",
+          "studiepoeng": 5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "INF202",
+          "emnenavn": "Prosjektoppgave i videregående programmering",
+          "studiepoeng": 5,
+          "aar": 2,
+          "semester": "januarblokk",
+          "dbhEmnekoder": [],
+          "merknad": "Studieplanen gir valget mellom INF202 (januarblokk) og INF203 (juniblokk) - samme krav, ulik blokkplassering."
+        },
+        {
+          "emnekode": "INF221",
+          "emnenavn": "Informatikk for datavitere",
+          "studiepoeng": 5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "INF230",
+          "emnenavn": "Datahåndtering og -analyse",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "INF240",
+          "emnenavn": "Datasikkerhet",
+          "studiepoeng": 5,
+          "aar": 4,
+          "semester": "januarblokk",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MATH285",
+          "emnenavn": "Optimering",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MLA310",
+          "emnenavn": "Matrisemetoder for dataanalyse og maskinlæring",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "STAT351",
+          "emnenavn": "Statistisk teori",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ],
+      "merknad": "Spesialiseringens faste obligatoriske emner (Obligatorisk data) summerer til 95 sp. I tillegg kommer et obligatorisk valg: «Velg minst 20 sp av: DAT320 Cybersikkerhet(10 sp), DAT350(10 sp), INF250(10 sp), STAT340(10 sp), eventuelt relevante emner fra utveksling». Dette valget er ikke listet som enkeltemner. Spesialiseringens totale sum i studieplanen er 115 sp (95+20)."
+    },
+    {
+      "navn": "Energisystemer og beredskap",
+      "obligatoriske": [
+        {
+          "emnekode": "FYS103",
+          "emnenavn": "Måleteknikk og feilanalyse",
+          "studiepoeng": 5,
+          "aar": 2,
+          "semester": "januarblokk",
+          "dbhEmnekoder": [],
+          "merknad": "Studieplanen har fotnote om at FYS103 bare har en uke i vårparallellen."
+        },
+        {
+          "emnekode": "FYS230",
+          "emnenavn": "Elektroteknikk",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Semesterplassering er ikke entydig lesbar i studieplanens matrise og er et beste anslag."
+        },
+        {
+          "emnekode": "FYS235",
+          "emnenavn": "Elektronikk",
+          "studiepoeng": 5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS236",
+          "emnenavn": "Elektrodynamikk",
+          "studiepoeng": 5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS241",
+          "emnenavn": "Miljøfysikk",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "Kan byttes ut med FYS245 etter nærmere avtale (FYS376 har imidlertid FYS245 som forkunnskapskrav)."
+        },
+        {
+          "emnekode": "FYS251",
+          "emnenavn": "Varmeoverføring og energi",
+          "studiepoeng": 5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS254",
+          "emnenavn": "Anvendt termodynamikk",
+          "studiepoeng": 5,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS272",
+          "emnenavn": "Energiteknologier",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS375",
+          "emnenavn": "Energiteknologi laboratorium",
+          "studiepoeng": 10,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS377",
+          "emnenavn": "Elektriske kraftsystemer",
+          "studiepoeng": 10,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Kan byttes med andre FYS3xx-emner."
+        },
+        {
+          "emnekode": "IND250",
+          "emnenavn": "Produksjonslogistikk og distribusjon",
+          "studiepoeng": 5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "KJM100",
+          "emnenavn": "Generell kjemi",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ],
+      "merknad": "Spesialiseringens faste obligatoriske emner (Obligatoriske energifysikk) summerer til 90 sp, som matcher studieplanens oppgitte sum på 90 sp. I tillegg krever studieplanen «Velg i tillegg minst 10 sp i tekniske fag som valgfag (emner med kode MATH, FYS, TIP, TMP, INF, DAT, TEL, TIN eller tekniske utvekslingsemner)» - dette er en fri, ikke-spesifikk valgfagskategori og er ikke listet som enkeltemner."
+    },
+    {
+      "navn": "Systemutvikling og produktinnovasjon",
+      "obligatoriske": [
+        {
+          "emnekode": "FYS110",
+          "emnenavn": "Statikk",
+          "studiepoeng": 5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS230",
+          "emnenavn": "Elektroteknikk",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Semesterplassering er ikke entydig lesbar i studieplanens matrise og er et beste anslag."
+        },
+        {
+          "emnekode": "FYS235",
+          "emnenavn": "Elektronikk",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "Studieplanen oppgir 10 sp for FYS235 i denne spesialiseringen (mot 5 sp i spesialiseringen Energisystemer og beredskap)."
+        },
+        {
+          "emnekode": "IND230",
+          "emnenavn": "Kvalitetsstyring og systemkontroll",
+          "studiepoeng": 5,
+          "aar": 2,
+          "semester": "januarblokk",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "IND250",
+          "emnenavn": "Produksjonslogistikk og distribusjon",
+          "studiepoeng": 5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TBM120",
+          "emnenavn": "Fasthetslære og grunnleggende beregningsteknikk",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TBM200",
+          "emnenavn": "Materialteknologi",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TBM350",
+          "emnenavn": "Elementmetoden",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEL100",
+          "emnenavn": "Elektronisk prototyping",
+          "studiepoeng": 5,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Augustblokk."
+        },
+        {
+          "emnekode": "TEL330",
+          "emnenavn": "Mekatronikk",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMP160",
+          "emnenavn": "Teknisk design",
+          "studiepoeng": 5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMP220",
+          "emnenavn": "Maskinelementer og effektoverføringssystemer",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMP320",
+          "emnenavn": "Maskin- og produktutvikling",
+          "studiepoeng": 10,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Studieplanen skriver «TMP320/TIP300»; TIP300 er et alternativt emne som dekker samme krav."
+        }
+      ],
+      "merknad": "Spesialiseringens faste obligatoriske emner (Oblig. Maskin) summerer til 105 sp, som matcher studieplanens oppgitte sum på 105 sp. Ingen ytterligere obligatorisk valg innenfor denne spesialiseringsblokken."
+    },
+    {
+      "navn": "Vann- og miljøteknikk",
+      "obligatoriske": [
+        {
+          "emnekode": "FYS110",
+          "emnenavn": "Statikk",
+          "studiepoeng": 5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "KJM100",
+          "emnenavn": "Generell kjemi",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TBM120",
+          "emnenavn": "Fasthetslære og grunnleggende beregningsteknikk",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "THT100",
+          "emnenavn": "Kommunalteknikk",
+          "studiepoeng": 5,
+          "aar": 2,
+          "semester": "januarblokk",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "THT200",
+          "emnenavn": "Bærekraftig overvannshåndtering",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPS200",
+          "emnenavn": "Innføring i fluidmekanikk",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "THT211",
+          "emnenavn": "Strømning i kanaler og vassdrag",
+          "studiepoeng": 5,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "THT261",
+          "emnenavn": "Innføring i vann- og avløpssystemer",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "THT271",
+          "emnenavn": "Innføring i renseteknologi for vann og avløp",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "THT301",
+          "emnenavn": "Forvaltning av urban vanninfrastruktur",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "THT320",
+          "emnenavn": "Bærekraftsanalyser av VA-sektoren",
+          "studiepoeng": 5,
+          "aar": 4,
+          "semester": "januarblokk",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "VANN200",
+          "emnenavn": "Hydrologi",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ],
+      "merknad": "Spesialiseringens faste obligatoriske emner (Oblig. Vann og miljø) summerer til 95.0 sp. I tillegg kommer et obligatorisk valg: «Velg minst 15 studiepoeng blant: THT302 (7,5 sp), THT303 (7,5 sp), THT310 (10 sp), og THT390 (5 sp)», plassert i 5. året høst. Dette valget er ikke listet som enkeltemner. Spesialiseringens totale sum i studieplanen er 110 sp (95.0+15)."
+    }
+  ],
+  "merknad": "Kilde er NMBUs samlede studieplan-PDF «Studieplan – Industriell økonomi 2026» (Kull 2026), som dekker alle 5 spesialiseringer på samme dokument. Programmet krever obligatorisk valg av én av 5 spesialiseringer ved studiestart (studieplanen sier «6 ulike spesialiseringer» i ingressen, men lister og beskriver bare 5: Bygge- og prosjektledelse, Datavitenskap, Energisystemer og beredskap, Systemutvikling og produktinnovasjon, Vann- og miljøteknikk - avviket i antallet er ikke forklart i kildedokumentet). «obligatoriske» over inneholder emnene som er like (samme emnekode og normalt samme studiepoeng) i alle 5 spesialiseringene: 9 felles «Siv.ing.»-emner + masteroppgaven, samt de 5 IND/BUS-emnene som er felles for «Industriell økonomi»-delen. Noen av disse fellesemnene varierer likevel litt i emnekode eller studiepoeng mellom spesialiseringene (FYS102/FYS102A, BUS110 5/10 sp, BUS210/BUS220) - dette er notert i merknadsfeltet på det aktuelle emnet. Hver spesialiserings egne obligatoriske emner (utover fellesdelen) står under «spesialiseringer». Studieplanens egen oppsummering på side 1 oppgir at graden består av 300 sp: felles Siv.ing.-emner (80-85 sp), felles INDØK-emner inkl. masteroppgave (100 sp), spesialiseringsemner (95-110 sp) og valgfrie emner (10-30 sp) - denne firedelingen stemmer ikke helt overens med hvordan emnene faktisk er gruppert i de detaljerte spesialiseringstabellene (der «Obligatorisk Siv.ing.» inkluderer masteroppgaven), men er tatt med som bakgrunnsinformasjon. Semesterplasseringen (aar/semester) for spesialiseringsspesifikke emner er lest ut av studieplanens matrise per spesialisering (venstre del av tabellen, ikke referancelisten til høyre, som kun er en alfabetisk oversikt over emnekode+studiepoeng og ikke gjenspeiler faktisk semester). Noen få emner (bl.a. FYS230 i to spesialiseringer, IND320 i Datavitenskap) er ikke entydig plassert i matrisen, og plasseringen er da et beste anslag merket i emnets eget merknadsfelt. Alle DBH-emnekoder er satt til tom liste per instruks; kobling mot DBH gjøres automatisk senere ut fra emnekode."
+}

@@ -1,0 +1,98 @@
+{
+  "entryId": "uia_indok",
+  "programnavn": "Industriell økonomi og teknologiledelse (master 5 år)",
+  "institusjon": "Universitetet i Agder",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://www.uia.no/studier/program/industriell-okonomi-og-teknologiledelse-master-5-ar/",
+    "https://www.uia.no/studier/program/industriell-okonomi-og-teknologiledelse-master-5-ar/studieplaner/2025h.html"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 90,
+  "obligatoriske": [
+    {
+      "emnekode": "IND416",
+      "emnenavn": "Project Management & Procurement",
+      "studiepoeng": 7.5,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IND417",
+      "emnenavn": "Bedriftsøkonomisk analyse 1",
+      "studiepoeng": 7.5,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IND418",
+      "emnenavn": "Kontinuerlig forbedring og Lean",
+      "studiepoeng": 7.5,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ING400",
+      "emnenavn": "Forhandling og avtaleprosesser i ingeniørprosjekter",
+      "studiepoeng": 7.5,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "I tillegg er et femte emne (7,5 sp, «Ingeniørfaglig spesialisering») obligatorisk i dette semesteret, men studenten velger selv mellom seks spesialiseringsretninger (kunstig intelligens, bygg, cybersikkerhet, fornybar energi, Internet of Things, mekatronikk) - se merknadsfeltet på programnivå."
+    },
+    {
+      "emnekode": "IND415",
+      "emnenavn": "Ledelse og organisasjonsteori",
+      "studiepoeng": 7.5,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IND419",
+      "emnenavn": "Prosjekterings- og engineeringsledelse",
+      "studiepoeng": 7.5,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IND421",
+      "emnenavn": "Corporate Economic Analysis II",
+      "studiepoeng": 7.5,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ME-425",
+      "emnenavn": "Metode",
+      "studiepoeng": 7.5,
+      "aar": 5,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Resten av 9. semester (22,5 sp) er valgemner (bl.a. IND422, IND513, IND514, PRA400 - internship) - ikke tatt med her."
+    },
+    {
+      "emnekode": "IND590",
+      "emnenavn": "Masteroppgave",
+      "studiepoeng": 30,
+      "aar": 5,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er UiAs studieplan for Industriell økonomi og teknologiledelse, 5-årig masterprogram, gjeldende fra høsten 2025 (kull 2025-2030). Programmet er en ren 3+2-modell: de tre første årene (1.-6. semester) velger studenten ETT av fem helt separate, ordinære ingeniørbachelorprogram ved UiA - Byggdesign, Data, Elektronikk, Fornybar energi eller Mekatronikk - hver med egne emnekoder og egen studieplan (se f.eks. https://www.uia.no/studier/program/byggdesign-bachelor/studieplaner/, .../data-ingeniorutdanning-bachelor/, .../elektronikk-ingeniorutdanning-bachelor/, .../fornybar-energi-bachelor/, .../mekatronikk-bachelor/). Disse fem bachelorløpene er ikke industriell økonomi-spesifikke og er ikke listet i obligatoriske eller spesialiseringer her, da det ville kreve å hente og gjengi fem fullstendige, uavhengige 3-årige ingeniørstudieplaner (bygg/data/elektro/energi/mekatronikk) som ligger utenfor rammen av denne sammenligningen; dette bør følges opp som egen jobb om ønskelig. Emnene i obligatoriske-listen over dekker bare de to siste årene (7.-10. semester), som er felles for alle IndØk-studenter uansett hvilken ingeniørretning de kom fra. I 5. semester (3. år høst, del av bachelorløpet) må alle studenter i tillegg ta et obligatorisk matematikkemne som varierer med ingeniørretning (MA-307 Matematikk 4 for Byggdesign/Elektronikk/Fornybar energi/Mekatronikk, eller MA-224 Diskret matematikk 2 for Data) - dette er egentlig ikke et fritt valg, men er utelatt fra obligatoriske-listen fordi det ligger i bachelordelen som ikke er kartlagt. I 7. semester (4. år høst) er «Ingeniørfaglig spesialisering» (7,5 sp) obligatorisk som kategori, men studenten velger selv mellom seks spesialiseringsretninger (kunstig intelligens, bygg, cybersikkerhet, fornybar energi, Internet of Things, mekatronikk); den spesifikke emnekoden er derfor ikke ført opp. I 9. semester (5. år høst) er bare ME-425 Metode (7,5 sp) fast obligatorisk; resten av semesteret (22,5 sp) er valgemner. 5. og 9. semester er lagt til rette for utveksling. obligatoriskeStudiepoeng (90) dekker dermed bare de navngitte, ubetingede obligatoriske emnene i 4. og 5. år - ikke bachelordelen (180 sp) og ikke de emnene som avhenger av valg (spesialisering/matematikk)."
+}

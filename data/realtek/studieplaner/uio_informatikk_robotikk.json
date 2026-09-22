@@ -1,0 +1,143 @@
+{
+  "entryId": "uio_informatikk_robotikk",
+  "programnavn": "Informatikk: robotikk og intelligente systemer (bachelor)",
+  "institusjon": "Universitetet i Oslo",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://www.uio.no/studier/program/informatikk-robotikk/",
+    "https://www.uio.no/studier/program/informatikk-robotikk/oppbygging/"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 120,
+  "obligatoriske": [
+    {
+      "emnekode": "IN1000",
+      "emnenavn": "Introduksjon til objektorientert programmering",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IN1020",
+      "emnenavn": "Introduksjon til datateknologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT1100",
+      "emnenavn": "Kalkulus",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "HMS0501",
+      "emnenavn": "Sikkerhet og fysisk læringsmiljø",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "HMS0502",
+      "emnenavn": "Utvikling av læringsmiljø",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IN1010",
+      "emnenavn": "Objektorientert programmering",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IN1080",
+      "emnenavn": "Mekatronikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT1110",
+      "emnenavn": "Kalkulus og lineær algebra",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IN2010",
+      "emnenavn": "Algoritmer og datastrukturer",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IN2060",
+      "emnenavn": "Digitalteknikk og datamaskinarkitektur",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IN1030",
+      "emnenavn": "Systemer, krav og konsekvenser",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IN3140",
+      "emnenavn": "Introduksjon til robotikk",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IN3160",
+      "emnenavn": "Digital systemdesign",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "EXPHIL03",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er UiOs programside «Oppbygging og gjennomføring» (hentet 2026-09-22); siden oppga ikke eksplisitt hvilket kull/studieår teksten gjelder for, så studieplanAar er en antakelse basert på gjeldende plan på hentetidspunktet. Programmet har totalt 180 sp: 130 sp «obligatoriske fellesemner» (der 30 sp er obligatoriske VALG mellom navngitte alternativer, se under), 20 sp «obligatoriske spesialiseringsemner» (IN3140 og IN3160, tatt med i listen) og 30 sp utviklingssemester i 3. år høst (fritt, kan brukes til valgfrie emner eller utveksling — ikke med i obligatoriske-listen). Tre obligatoriske valgblokker på 10 sp hver er IKKE tatt med i obligatoriske-listen siden de er valg mellom alternativer, ikke faste emner: (1) 2. år høst — velg minst ett av MAT1120, STK1000 eller STK-FYS1110; (2) 2. år vår — velg IN1160 (Introduksjon til maskinlæring) ELLER IN3050 (Introduksjon til kunstig intelligens og maskinlæring); (3) 2. år vår — velg minst ett av FYS1100, IN3370 eller IN2140. Disse tre valgblokkene summerer seg til 30 sp og forklarer differansen mellom 120 sp i den faste obligatoriske-listen og de 150 sp UiO omtaler som «obligatorisk» (130+20)."
+}

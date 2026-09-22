@@ -1,0 +1,100 @@
+{
+  "entryId": "nmbu_iwt",
+  "programnavn": "Intelligent Water Technology (master 2 år)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/master-2-aar/intelligent-water-technology",
+    "https://www.nmbu.no/en/studies/master-2-year/intelligent-water-technology",
+    "https://www.nmbu.no/en/studies/study-plans-m-vr",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-07/Study%20plan%202026%20%E2%80%93%20Intelligent%20Water%20Technology.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 120,
+  "obligatoriske": [
+    {
+      "emnekode": "DAT221",
+      "emnenavn": "Fundamentals for data science",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Augustblokk («Aug») før høstsemesteret, ifølge studieplanens tidslinje."
+    },
+    {
+      "emnekode": "INF201",
+      "emnenavn": "Advanced Programming",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "DAT200",
+      "emnenavn": "Applied Machine Learning",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "THT302",
+      "emnenavn": "Analysis and Design of Water Distribution Networks",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "THT320",
+      "emnenavn": "Sustainability Assessment of Water and Wastewater Systems",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "januarblokk",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanens fotnote 1: THT320 kan erstattes av THT390 (delvis undervist på norsk) høsten 2. år."
+    },
+    {
+      "emnekode": "DAT300",
+      "emnenavn": "Applied Deep Learning",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanens fotnote 2: DAT300 kan erstattes av DAT320 (Sequential and Time Series Data Analysis) høsten 2. år, dersom studenten kan starte på masteroppgaven våren i 1. år."
+    },
+    {
+      "emnekode": "THT301",
+      "emnenavn": "Asset Management for Urban Water Infrastructure",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "THT271",
+      "emnenavn": "Introduction to Water and Wastewater Treatment Technology",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "M60-VM",
+      "emnenavn": "Master's Thesis",
+      "studiepoeng": 60,
+      "aar": 2,
+      "semester": "helår",
+      "dbhEmnekoder": [],
+      "merknad": "Masteroppgave på 60 sp, fordelt med 30 sp høst og 30 sp vår i 2. studieår."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er NMBUs engelskspråklige studieplan-PDF for kull 2026 («Study plan 2026 – Intelligent Water Technology.pdf»), én side med full tidslinje og emnenavn på engelsk (programmet undervises på engelsk). Programmet er et rent 2-årig masterprogram på 120 sp der ALLE emner er obligatoriske: 30 sp «Compulsory data science courses» (DAT200, DAT221, DAT300/DAT320, INF201) + 90 sp «Compulsory water engineering courses» (THT271, THT301, THT302, THT320, M60-VM masteroppgave). Ingen spesialiseringer og ingen valgfrie emner er del av det obligatoriske løpet; PDF-en lister i tillegg noen 'courses that may be of particular interest to students who are willing to take more credits' (DAT320, GEO220, THT200, THT201, THT211, THT261, THT303, TPS200) – disse er frivillige tilleggsemner utover de 120 sp og er ikke tatt med. Programsiden på norsk (nmbu.no/studier/master-2-aar/intelligent-water-technology) lenket ikke direkte til studieplanen; den engelske programsiden lenket videre til en felles studieplan-oversiktsside (study-plans-m-vr) der 2026-planen ble funnet."
+}

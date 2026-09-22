@@ -1,0 +1,100 @@
+{
+  "entryId": "nmbu_datavitenskap2",
+  "programnavn": "Datavitenskap (master 2 år)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/master-2-aar/datavitenskap",
+    "https://www.nmbu.no/en/studies/master-2-year/data-science",
+    "https://www.nmbu.no/en/studies/study-plans-m-dv",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-07/2026%20studieplan.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 95,
+  "obligatoriske": [
+    {
+      "emnekode": "DAT221",
+      "emnenavn": "Introduction Course for Data Scientists",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Augustblokk før høstparallellen."
+    },
+    {
+      "emnekode": "INF201",
+      "emnenavn": "Advanced programming",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF230",
+      "emnenavn": "Data Handling and Data Bases",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "DAT200",
+      "emnenavn": "Machine Learning and Deep Learning",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Flyttet fra vår- til høstparallell fra og med studieåret 2026/2027 (tidligere gikk emnet om våren)."
+    },
+    {
+      "emnekode": "DAT300",
+      "emnenavn": "Applied deep learning",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Flyttet fra høst- til vårparallell fra og med studieåret 2026/2027, men tilbys også høsten 2026."
+    },
+    {
+      "emnekode": "MATH285",
+      "emnenavn": "Optimization",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF221",
+      "emnenavn": "Computer Science for Data Scientists",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "DAT320",
+      "emnenavn": "Sequential and Time Series Data Analysis",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Erstatter DAT390, som er avviklet fra studieåret 2026/2027."
+    },
+    {
+      "emnekode": "M30-DV",
+      "emnenavn": "Master's Thesis",
+      "studiepoeng": 30,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Engelskspråklig program (Master of Science, 120 ECTS); emnenavn er derfor beholdt på engelsk, slik studieplanen selv skriver dem. Studieplan-PDF-en for opptak 2026 ('Data Science - Admission 2026') oppgir et femte obligatorisk 5 sp-emne i tillegg til de ni i lista over: et prosjektemne 'Advanced programming project', der studenten gjør et obligatorisk VALG mellom INF202 (januarblokk, 1. år) og INF203 (juniblokk, 1. år). Dette valget er per regelverket ikke tatt med i obligatoriske-lista (obligatoriskeStudiepoeng i denne fila er derfor 95, mens studieplanens egen 'Mandatory courses'-sum er 100 sp når INF202/203 telles med). Utover de obligatoriske emnene og masteroppgaven (M30-DV, 30 sp) må studenten velge minst 25 sp valgfrie spesialiseringsemner, hvorav minst 15 sp på 300-nivå, innenfor ett av følgende spesialiseringsområder oppgitt i planen: Geographical Modelling and Analysis, Geographical Database Systems, Geographical Data Mining, Climate Modelling, Biostatistics, Biophysics, Bioinformatics, Computational Neuroscience, Energy Physics, Building Structures, Building Performance Simulation, Economics. Disse spesialiseringsemnene er ikke egne obligatoriske emner og er ikke listet som 'spesialiseringer' i denne fila (tom liste), da de er individuelle valgemner og ikke faste spesialiseringsløp med egne emnekoder. NMBUs egen endringsoversikt for studieåret 2026/2027 bekrefter: DAT390 er avviklet (erstattet av DAT320, eller IND320 hvis DAT320 allerede er i planen), DAT200 er flyttet fra vår til høst, og DAT300 er flyttet fra høst til vår (men tilbys også høst 2026) — dette er reflektert i emnenes semesterplassering og merknadsfelt over. DBH-emnekoder er ikke fylt ut (tom liste) for noen emner i denne runden."
+}

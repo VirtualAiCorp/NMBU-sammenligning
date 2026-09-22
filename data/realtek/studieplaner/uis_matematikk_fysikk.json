@@ -1,0 +1,253 @@
+{
+  "entryId": "uis_matematikk_fysikk",
+  "programnavn": "Matematikk og fysikk (master 5 år)",
+  "institusjon": "Universitetet i Stavanger",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.uis.no/nb/studier/matematikk-og-fysikk-master-5-ar",
+    "https://www.uis.no/nb/fs/lazy/study-plan/2534038?study_offer_page=1&semester=2026H"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 170,
+  "obligatoriske": [
+    {
+      "emnekode": "MAT120",
+      "emnenavn": "Diskret matematikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TN110",
+      "emnenavn": "Kurs i studieteknikk og ingeniør- og realfaglig arbeidsmetode",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Går over 1. og 2. semester og gir 0 studiepoeng."
+    },
+    {
+      "emnekode": "MAT100",
+      "emnenavn": "Matematiske metoder 1",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS100",
+      "emnenavn": "Mekanikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS330",
+      "emnenavn": "Mikrofysikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT210",
+      "emnenavn": "Reell analyse",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "STA100",
+      "emnenavn": "Sannsynlighetsregning og statistikk 1",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT110",
+      "emnenavn": "Lineær algebra",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS200",
+      "emnenavn": "Termo- og fluiddynamikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT300",
+      "emnenavn": "Vektoranalyse",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT320",
+      "emnenavn": "Differensialligninger",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS300",
+      "emnenavn": "Elektromagnetisme og spesiell relativitetsteori",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS210",
+      "emnenavn": "Fysikklaboratorium",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS320",
+      "emnenavn": "Kvantemekanikk",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAF210",
+      "emnenavn": "Numerisk modellering 1",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAF220",
+      "emnenavn": "Numerisk modellering 2",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT250",
+      "emnenavn": "Abstrakt algebra",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT240",
+      "emnenavn": "Matematikkens historie",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS340",
+      "emnenavn": "Statistisk fysikk",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Matematikk",
+      "obligatoriske": [
+        {
+          "emnekode": "MAT510",
+          "emnenavn": "Mangfoldigheter",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "STA510",
+          "emnenavn": "Statistisk modellering og simulering",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MATMAS",
+          "emnenavn": "Masteroppgave i matematikk",
+          "studiepoeng": 60,
+          "aar": 5,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "Går over 8., 9. og 10. semester (fra 4. år vår til 5. år vår); de 60 studiepoengene krediteres samlet ved avslutning i 10. semester."
+        }
+      ]
+    },
+    {
+      "navn": "Fysikk",
+      "obligatoriske": [
+        {
+          "emnekode": "FYS500",
+          "emnenavn": "Analytisk mekanikk og feltteori",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS540",
+          "emnenavn": "Faststoffysikk",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYSMAS",
+          "emnenavn": "Masteroppgave i fysikk",
+          "studiepoeng": 60,
+          "aar": 5,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "Går over 8., 9. og 10. semester (fra 4. år vår til 5. år vår); de 60 studiepoengene krediteres samlet ved avslutning i 10. semester."
+        }
+      ]
+    }
+  ],
+  "merknad": "Programmet er et femårig integrert masterprogram (300 sp), tatt med i gruppen «energifysikk» sammen med treårige fysikkbachelorer fordi bachelorgrad kan tas ut etter 3 år. Studieplan hentet fra UiS' dynamisk lastede studieplan-fragment (htmx-endepunkt) for opptak/kull høsten 2026 (semester=2026H). De tre første årene (170 obligatoriske sp) er felles for alle studenter og ligger i «obligatoriske»; fra 4. år velger studenten spesialisering matematikk eller fysikk, med egne obligatoriske emner + masteroppgave (80 sp) under «spesialiseringer» — til sammen 250 av 300 sp obligatorisk per spesialisering. De resterende 50 sp er valgfrie: 10 sp anbefalte/andre valgemner i 5. semester, 10 sp «velg ett emne» i 7. semester (fast liste per spesialisering, f.eks. MAT310/STA500/STA530 for matematikk og KJE220/FYS220/MAT510 for fysikk), og 30 sp i 8. semester som enten 3 valgte emner fra en fast liste eller et utvekslingsopphold (UTV-30). Disse obligatoriske VALGENE er ikke tatt med som enkeltemner i listene, i tråd med regelen om at valg mellom alternativer skal stå i merknad, ikke i emnelisten."
+}

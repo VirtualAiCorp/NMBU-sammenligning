@@ -1,0 +1,17 @@
+{
+  "entryId": "uis_kybernetikk_robotteknologi",
+  "programnavn": "Kybernetikk og robotteknologi (master 5 år, lagt ned)",
+  "institusjon": "Universitetet i Stavanger",
+  "studieplanAar": "ukjent",
+  "kilder": [
+    "https://www.uis.no/nb/studier/kybernetikk-og-robotteknologi-master-5-ar",
+    "https://www.uis.no/nb/studieprogram-og-emner/kybernetikk-og-robotteknologi-master-i-teknologisiving-femarig/2022",
+    "https://www.uis.no/en/node/213"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 0,
+  "obligatoriske": [],
+  "spesialiseringer": [],
+  "merknad": "Emnelisten kunne ikke hentes ut til tross for gjentatte forsøk. Programmet er lagt ned og kan ikke søkes fra og med opptaket 2026 («I 2026 kan du ikke søke deg inn på en femårig master i kybernetikk og robotteknologi» — UiS henviser i stedet til Bachelor i automatisering og elektronikkdesign + toårig master i kybernetikk og anvendt KI/robotteknologi og signalbehandling). Programsiden med studieplan (uis.no/nb/studieprogram-og-emner/kybernetikk-og-robotteknologi-master-i-teknologisiving-femarig/2022) bygger emnetabellen dynamisk med JavaScript («Loading study plan…») og innholdet lastes ikke inn ved vanlig sideuthenting (verken via WebFetch, statisk curl-nedlasting eller en print-variant av siden). Det ble ikke funnet noen studieplan-PDF for programmet (kun for beslektede/nyere program som toårig master i robotteknologi og signalbehandling, som ikke er samme entryId). Forsøkte også flere gjetninger på underliggende API-endepunkter uten treff, samt web-søk etter emnekoder — søkene ga bare beslektede emnesider (f.eks. ELEMAS_1, ELE600_1, ELE630_1) uten en samlet, autoritativ emneliste for programmets obligatoriske emner. Kjent struktur (ikke inkludert i obligatoriske-listen fordi emnekoder og eksakt fordeling ikke kunne bekreftes): programmet fulgte en 3+2-modell med bachelor i «automatisering og elektronikkdesign» år 1–3 og master i «robotteknologi og signalbehandling» år 4–5. Feltet studieplanAar er satt til «ukjent» og obligatoriskeStudiepoeng til 0 fordi ingen emner kunne verifiseres — dette gjenspeiler manglende datatilgang, ikke et faktisk fravær av obligatoriske emner."
+}

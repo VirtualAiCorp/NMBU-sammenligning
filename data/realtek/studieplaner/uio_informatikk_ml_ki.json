@@ -1,0 +1,134 @@
+{
+  "entryId": "uio_informatikk_ml_ki",
+  "programnavn": "Informatikk: maskinlæring og kunstig intelligens (bachelor)",
+  "institusjon": "Universitetet i Oslo",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.uio.no/studier/program/maskinlering-kunstig-intelligens/",
+    "https://www.uio.no/studier/program/maskinlering-kunstig-intelligens/oppbygging/"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 110,
+  "obligatoriske": [
+    {
+      "emnekode": "IN1000",
+      "emnenavn": "Introduksjon til objektorientert programmering",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IN1020",
+      "emnenavn": "Introduksjon til datateknologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT1080",
+      "emnenavn": "Matematisk grunnlag for maskinlæring",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "HMS0501",
+      "emnenavn": "Sikkerhet og fysisk miljø",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Obligatorisk HMS-emne uten studiepoeng, tas i begynnelsen av 1. semester."
+    },
+    {
+      "emnekode": "HMS0502",
+      "emnenavn": "Utviklende læringsmiljø",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Obligatorisk HMS-emne uten studiepoeng, tas i begynnelsen av 1. semester."
+    },
+    {
+      "emnekode": "IN1010",
+      "emnenavn": "Objektorientert programmering",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IN1160",
+      "emnenavn": "Introduksjon til maskinlæring",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "STK-IN1050",
+      "emnenavn": "Statistikk for informatikere",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IN2010",
+      "emnenavn": "Algoritmer og datastrukturer",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IN2160",
+      "emnenavn": "Probabilistisk maskinlæring",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "EXPHIL03",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IN1030",
+      "emnenavn": "Systemer, krav og konsekvenser",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IN3410",
+      "emnenavn": "Anvendelser av dyp læring",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "UiOs egen studieløpstabell plasserer emnet i 6. semester (3. år vår). Emnesiden omtaler det som «nytt emne» og oppgir teksten «fra våren 2028», som er inkonsekvent med at studieplansiden sist ble endret 23.03.2026 og at emnet står i årets løpende studieløp – gjengitt her ordrett som usikkerhet, ikke rettet."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Programmet består av obligatoriske fellesemner (110 sp, inkl. to 0-poengs HMS-emner), obligatoriske fordypningsemner (20 sp) og et utviklingssemester/frie emner (50 sp). De 20 sp obligatoriske fordypningsemnene er et obligatorisk VALG av to av syv emner (IN2040, IN3060, IN3120, IN3130, IN3200, IN3370, IN3320) fordelt med ett emne i 4. semester (2. år vår) og ett i 6. semester (3. år vår), og er derfor ikke tatt med i obligatoriske-lista. 5. semester (3. år høst) er et rent utviklingssemester/frie emner (utveksling eller valgfrie bacheloremner, 30 sp) uten obligatoriske emner. Siden 'Oppbygging og gjennomføring' oppgir ikke noe eksplisitt kull-/studieplanår (kun 'Publisert 23. mai 2024 - Sist endret 23. mars 2026'); studieplanAar er derfor satt til inneværende studieår 2026/2027 basert på hentedato, med noe usikkerhet. DBH-emnekoder er ikke fylt ut (tom liste) for noen emner i denne runden."
+}

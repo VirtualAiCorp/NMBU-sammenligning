@@ -1,0 +1,199 @@
+{
+  "entryId": "ntnu_gjovik_ing_geomatikk",
+  "programnavn": "Ingeniør, geomatikk (bachelor, lagt ned)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2019/2020",
+  "kilder": [
+    "https://www.ntnu.no/studier/bigeomat",
+    "https://www.ntnu.no/documents/1281573922/0/Studieplan+Geomatikk.pdf/604af0af-8e34-4f97-9256-736da5a470d5"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 112.5,
+  "obligatoriske": [
+    {
+      "emnekode": "IMAA1001",
+      "emnenavn": "Matematiske metoder 1",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INGG1001",
+      "emnenavn": "Ingeniørfaglig yrkesutøvelse og arbeidsmetoder",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "GEOM1101",
+      "emnenavn": "Introduksjon til ingeniørfag geomatikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IMAA2021",
+      "emnenavn": "Matematiske metoder 2 for Dataingeniør",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IFYKJG1000",
+      "emnenavn": "Fysikk og kjemi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IIKG1002",
+      "emnenavn": "Front-end web utvikling",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "GEO1310",
+      "emnenavn": "Strukturering og modellering av geografiske data",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ISTG1001",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IDG2004",
+      "emnenavn": "Informasjonsstrukturer og databaser",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INGG2300",
+      "emnenavn": "Ingeniørfaglig systememne",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "GEOM2900",
+      "emnenavn": "Bacheloroppgave",
+      "studiepoeng": 20,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Landmåling",
+      "obligatoriske": [
+        {
+          "emnekode": "GEOM2110",
+          "emnenavn": "Landmåling",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "GEOM2120",
+          "emnenavn": "Grunnlagsnett",
+          "studiepoeng": 15,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "GEOM2130",
+          "emnenavn": "Terrengmodeller",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "GEOM2920",
+          "emnenavn": "Stikking",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "GIS",
+      "obligatoriske": [
+        {
+          "emnekode": "GEOM2210",
+          "emnenavn": "Laserskanning",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "GEOM2220",
+          "emnenavn": "Geografisk datafangst",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "GEOM2230",
+          "emnenavn": "Geografisk analyse",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "GEOM2240",
+          "emnenavn": "Geografisk infrastruktur og informasjonsbehandling",
+          "studiepoeng": 15,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Programmet er lagt ned; siste opptak var høsten 2024 (bekreftet på ntnu.no/studier/bigeomat: «Siste opptak var høsten 2024»). Kilden er studieplan-PDF-en «STUDIEPLAN BACHELOR I INGENIØRFAG, GEOMATIKK», godkjent av Forvaltningsutvalget for ingeniørutdanning, NTNU, 18.03.2019, med planlagt oppstart 2019/Høst — dette er den eldste og eneste tilgjengelige fullstendige studieplanen som ble funnet (NTNUs interaktive studieplanportal for BIGEOMAT laster emnedata dynamisk med JavaScript og ga ikke ut noen emneliste via WebFetch). Det er ikke bekreftet om planen ble revidert for senere kull frem til nedleggelsen i 2024; studieplanAar er derfor satt til '2019/2020', men strukturen kan ha vært uendret gjennom hele programmets levetid. Programmet hadde to studieretninger fra 2. studieår: 'Landmåling' og 'GIS', hver med 37,5 sp egne obligatoriske emner (i tillegg til 112,5 sp felles obligatoriske emner). 3. studieår høst besto av 30 sp valgemner (4 x 7,5 sp, fritt valgt blant en liste inkl. Juss og matrikkellære, Satellittgeodesi, Geomatikkprosjektoppgave, emner fra den andre studieretningen, Matematikk 3, BIM, Vegplanlegging, Universell utforming, Digitale byggeprosesser, Dataassistert design (CAD), Kvalitetsledelse, samt mulighet for internasjonalt semester) — disse er ikke tatt med i noen obligatoriske-liste. Totalt: 112,5 sp felles + 37,5 sp per studieretning + 30 sp valgfritt = 180 sp. Dette er samme programme som representerer både geoinformatikk- og geomatikk-sammenligningsgruppa i programkart.json (entryId ntnu_gjovik_ing_geomatikk_geoinf og ntnu_gjovik_ing_geomatikk har identisk innhold)."
+}

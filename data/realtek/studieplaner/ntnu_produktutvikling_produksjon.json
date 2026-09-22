@@ -1,0 +1,1459 @@
+{
+  "entryId": "ntnu_produktutvikling_produksjon",
+  "programnavn": "Produktutvikling og produksjon (master 5 år, lagt ned)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2022/2023 (kull 2022, siste kull)",
+  "kilder": [
+    "https://www.ntnu.no/studier/mtprod",
+    "https://www.ntnu.no/studier/mtprod/oppbygning",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=MTPROD&year=2022"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 120.0,
+  "obligatoriske": [
+    {
+      "emnekode": "SIVINGPRA",
+      "emnenavn": "Gjennomført krav om arbeidslivserfaring",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "0 sp administrativt krav (praksiskrav for sivilingeniørgraden), ingen egen DBH-emnekode."
+    },
+    {
+      "emnekode": "EXPH0300",
+      "emnenavn": "Examen philosophicum for naturvitenskap og teknologi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TDT4110",
+      "emnenavn": "Informasjonsteknologi, grunnkurs",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4100",
+      "emnenavn": "Matematikk 1",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMM4115",
+      "emnenavn": "Produktmodellering",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TKT4116",
+      "emnenavn": "Mekanikk 1",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4105",
+      "emnenavn": "Matematikk 2",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMT4106",
+      "emnenavn": "Kjemi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TPK4190",
+      "emnenavn": "Produksjonsteknologi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TEP4120",
+      "emnenavn": "Termodynamikk 1",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TFY4104",
+      "emnenavn": "Fysikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TKT4122",
+      "emnenavn": "Mekanikk 2",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4110",
+      "emnenavn": "Matematikk 3",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TEP4100",
+      "emnenavn": "Fluidmekanikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4245",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMM4100",
+      "emnenavn": "Materialteknikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMM4121",
+      "emnenavn": "Produktutvikling",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Bærekraftige og energieffektive systemer – Bærekraftige energisystemer",
+      "obligatoriske": [
+        {
+          "emnekode": "TEP4135",
+          "emnenavn": "Fluidmekanikk 2",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4100",
+          "emnenavn": "Produksjonsledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4130",
+          "emnenavn": "Varme- og massetransport",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TTK4105",
+          "emnenavn": "Reguleringsteknikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4506",
+          "emnenavn": "Bærekraftige energisystemer, fordypningsemne",
+          "studiepoeng": 7.5,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4521",
+          "emnenavn": "Bærekraftige energisystemer, fordypningsprosjekt",
+          "studiepoeng": 15,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4906",
+          "emnenavn": "Bærekraftige energisystemer, masteroppgave",
+          "studiepoeng": 30,
+          "aar": 5,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Bærekraftige og energieffektive systemer – Industriell økologi",
+      "obligatoriske": [
+        {
+          "emnekode": "TEP4135",
+          "emnenavn": "Fluidmekanikk 2",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4100",
+          "emnenavn": "Produksjonsledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4130",
+          "emnenavn": "Varme- og massetransport",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TTK4105",
+          "emnenavn": "Reguleringsteknikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP5100",
+          "emnenavn": "Industriell økologi, prosjekt",
+          "studiepoeng": 15,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4930",
+          "emnenavn": "Industriell økologi, masteroppgave",
+          "studiepoeng": 30,
+          "aar": 5,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Bærekraftige og energieffektive systemer – Inneklima og energi for bygninger",
+      "obligatoriske": [
+        {
+          "emnekode": "TEP4135",
+          "emnenavn": "Fluidmekanikk 2",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4100",
+          "emnenavn": "Produksjonsledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4130",
+          "emnenavn": "Varme- og massetransport",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TTK4105",
+          "emnenavn": "Reguleringsteknikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4530",
+          "emnenavn": "Energiforsyning og klimatisering av bygninger, fordypningsprosjekt",
+          "studiepoeng": 15,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4535",
+          "emnenavn": "Termisk energiforsyning og klimatisering av bygninger, fordypningsemne",
+          "studiepoeng": 7.5,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4910",
+          "emnenavn": "Energiforsyning og klimatisering av bygninger, masteroppgave",
+          "studiepoeng": 30,
+          "aar": 5,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Bærekraftige og energieffektive systemer – Termo- og fluiddynamikk",
+      "obligatoriske": [
+        {
+          "emnekode": "TEP4135",
+          "emnenavn": "Fluidmekanikk 2",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4100",
+          "emnenavn": "Produksjonsledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4130",
+          "emnenavn": "Varme- og massetransport",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TTK4105",
+          "emnenavn": "Reguleringsteknikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4541",
+          "emnenavn": "Termo- og fluiddynamikk, fordypningsprosjekt",
+          "studiepoeng": 15,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4546",
+          "emnenavn": "Termo- og fluiddynamikk, fordypningsemne",
+          "studiepoeng": 7.5,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4926",
+          "emnenavn": "Termo- og fluiddynamikk, masteroppgave",
+          "studiepoeng": 30,
+          "aar": 5,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Industriell mekanikk – Konstruksjonsteknikk",
+      "obligatoriske": [
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TKT4550",
+          "emnenavn": "Konstruksjonsteknikk, fordypningsprosjekt",
+          "studiepoeng": 7.5,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TKT4950",
+          "emnenavn": "Konstruksjonsteknikk, masteroppgave",
+          "studiepoeng": 30,
+          "aar": 5,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Industriell mekanikk – Kompositter og polymerer",
+      "obligatoriske": [
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4560",
+          "emnenavn": "Produktutvikling og materialer, fordypningsprosjekt",
+          "studiepoeng": 15,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4960",
+          "emnenavn": "Produktutvikling og materialer, masteroppgave",
+          "studiepoeng": 30,
+          "aar": 5,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Industriell mekanikk – Metalliske materialers integritet",
+      "obligatoriske": [
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4151",
+          "emnenavn": "Produkt- og materialtesting",
+          "studiepoeng": 7.5,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4560",
+          "emnenavn": "Produktutvikling og materialer, fordypningsprosjekt",
+          "studiepoeng": 15,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4960",
+          "emnenavn": "Produktutvikling og materialer, masteroppgave",
+          "studiepoeng": 30,
+          "aar": 5,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Industriell mekanikk – Produkters integritet",
+      "obligatoriske": [
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4250",
+          "emnenavn": "Avansert produktsimulering",
+          "studiepoeng": 7.5,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4560",
+          "emnenavn": "Produktutvikling og materialer, fordypningsprosjekt",
+          "studiepoeng": 15,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4960",
+          "emnenavn": "Produktutvikling og materialer, masteroppgave",
+          "studiepoeng": 30,
+          "aar": 5,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Industriell mekanikk – Termo- og fluiddynamikk",
+      "obligatoriske": [
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4541",
+          "emnenavn": "Termo- og fluiddynamikk, fordypningsprosjekt",
+          "studiepoeng": 15,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4546",
+          "emnenavn": "Termo- og fluiddynamikk, fordypningsemne",
+          "studiepoeng": 7.5,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4926",
+          "emnenavn": "Termo- og fluiddynamikk, masteroppgave",
+          "studiepoeng": 30,
+          "aar": 5,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Industriell ledelse og systemfag – Prosjekt- og kvalitetsledelse",
+      "obligatoriske": [
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4100",
+          "emnenavn": "Produksjonsledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4120",
+          "emnenavn": "Industriell sikkerhet og pålitelighet",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK5100",
+          "emnenavn": "Praktisk prosjektledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4186",
+          "emnenavn": "Avanserte verktøy for Performance Engineering",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4420",
+          "emnenavn": "Fleksibilitet i prosjekter",
+          "studiepoeng": 7.5,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4520",
+          "emnenavn": "Prosjekt- og kvalitetsledelse, fordypningsprosjekt",
+          "studiepoeng": 15,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4920",
+          "emnenavn": "Prosjekt- og kvalitetsledelse, masteroppgave",
+          "studiepoeng": 30,
+          "aar": 5,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Industriell ledelse og systemfag – Produksjonsledelse",
+      "obligatoriske": [
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4100",
+          "emnenavn": "Produksjonsledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4120",
+          "emnenavn": "Industriell sikkerhet og pålitelighet",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK5100",
+          "emnenavn": "Praktisk prosjektledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4186",
+          "emnenavn": "Avanserte verktøy for Performance Engineering",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4430",
+          "emnenavn": "Produksjonsledelse og logistikk",
+          "studiepoeng": 7.5,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4530",
+          "emnenavn": "Produksjonsledelse, fordypningsprosjekt",
+          "studiepoeng": 15,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4930",
+          "emnenavn": "Produksjonsledelse, masteroppgave",
+          "studiepoeng": 30,
+          "aar": 5,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Industriell ledelse og systemfag – Sikkerhet, pålitelighet og vedlikehold",
+      "obligatoriske": [
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4100",
+          "emnenavn": "Produksjonsledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4120",
+          "emnenavn": "Industriell sikkerhet og pålitelighet",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK5100",
+          "emnenavn": "Praktisk prosjektledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4186",
+          "emnenavn": "Avanserte verktøy for Performance Engineering",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4450",
+          "emnenavn": "Digitaliserte løsninger for prognose, forutsigende vedlikehold og sikkerhetsanalyse",
+          "studiepoeng": 7.5,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4550",
+          "emnenavn": "Sikkerhet, pålitelighet og vedlikehold, fordypningsprosjekt",
+          "studiepoeng": 15,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4950",
+          "emnenavn": "Sikkerhet, pålitelighet og vedlikehold, masteroppgave",
+          "studiepoeng": 30,
+          "aar": 5,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Produktutvikling og materialer – Produksjonsteknologi",
+      "obligatoriske": [
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4112",
+          "emnenavn": "Maskindeler",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4135",
+          "emnenavn": "Dimensjonering basert på elementmetoden, grunnkurs",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4125",
+          "emnenavn": "Mekatronikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TTK4105",
+          "emnenavn": "Reguleringsteknikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4540",
+          "emnenavn": "Produksjonsteknologi, fordypningsprosjekt",
+          "studiepoeng": 15,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4940",
+          "emnenavn": "Produksjonsteknologi, masteroppgave",
+          "studiepoeng": 30,
+          "aar": 5,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Produktutvikling og materialer – Robotteknikk og automatisering",
+      "obligatoriske": [
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4112",
+          "emnenavn": "Maskindeler",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4135",
+          "emnenavn": "Dimensjonering basert på elementmetoden, grunnkurs",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4125",
+          "emnenavn": "Mekatronikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TTK4105",
+          "emnenavn": "Reguleringsteknikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4560",
+          "emnenavn": "Robotteknikk og automatisering, fordypningsprosjekt",
+          "studiepoeng": 15,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4960",
+          "emnenavn": "Robotteknikk og automatisering, masteroppgave",
+          "studiepoeng": 30,
+          "aar": 5,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Produktutvikling og materialer – Kompositter og polymerer",
+      "obligatoriske": [
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4112",
+          "emnenavn": "Maskindeler",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4135",
+          "emnenavn": "Dimensjonering basert på elementmetoden, grunnkurs",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4125",
+          "emnenavn": "Mekatronikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TTK4105",
+          "emnenavn": "Reguleringsteknikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4560",
+          "emnenavn": "Produktutvikling og materialer, fordypningsprosjekt",
+          "studiepoeng": 15,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4960",
+          "emnenavn": "Produktutvikling og materialer, masteroppgave",
+          "studiepoeng": 30,
+          "aar": 5,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Produktutvikling og materialer – Metalliske materialers integritet",
+      "obligatoriske": [
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4112",
+          "emnenavn": "Maskindeler",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4135",
+          "emnenavn": "Dimensjonering basert på elementmetoden, grunnkurs",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4125",
+          "emnenavn": "Mekatronikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TTK4105",
+          "emnenavn": "Reguleringsteknikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4151",
+          "emnenavn": "Produkt- og materialtesting",
+          "studiepoeng": 7.5,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Fordypningsprosjekt og masteroppgave er her et obligatorisk VALG mellom to spor (TMM4560/TMT4500 og TMM4960/TMT4905, merket «M1A/M1B») og er derfor ikke tatt med som faste emnekoder."
+        }
+      ]
+    },
+    {
+      "navn": "Produktutvikling og materialer – Produkters integritet",
+      "obligatoriske": [
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4112",
+          "emnenavn": "Maskindeler",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4135",
+          "emnenavn": "Dimensjonering basert på elementmetoden, grunnkurs",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4125",
+          "emnenavn": "Mekatronikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TTK4105",
+          "emnenavn": "Reguleringsteknikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4250",
+          "emnenavn": "Avansert produktsimulering",
+          "studiepoeng": 7.5,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4560",
+          "emnenavn": "Produktutvikling og materialer, fordypningsprosjekt",
+          "studiepoeng": 15,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4960",
+          "emnenavn": "Produktutvikling og materialer, masteroppgave",
+          "studiepoeng": 30,
+          "aar": 5,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Produktutvikling og materialer – Produktutvikling",
+      "obligatoriske": [
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4112",
+          "emnenavn": "Maskindeler",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4135",
+          "emnenavn": "Dimensjonering basert på elementmetoden, grunnkurs",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4125",
+          "emnenavn": "Mekatronikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TTK4105",
+          "emnenavn": "Reguleringsteknikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4560",
+          "emnenavn": "Produktutvikling og materialer, fordypningsprosjekt",
+          "studiepoeng": 15,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4960",
+          "emnenavn": "Produktutvikling og materialer, masteroppgave",
+          "studiepoeng": 30,
+          "aar": 5,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Programmet MTPROD (Produktutvikling og produksjon) er lagt ned; siste opptak var høsten 2022, og programsiden viser fortsatt studieplanen for dette siste kullet. Programmet videreføres ikke direkte av MTMASKIN (Maskin- og energiteknologi), men de to programmene deler samme 1.–2. år og samme fire studieretningsnavn fra 3. år (Bærekraftige og energieffektive systemer/Energi- og strømningsteknikk, Industriell mekanikk, Industriell ledelse og systemfag, Produktutvikling og materialer), og har trolig vært nære faglige søsterprogram med overlappende fagmiljø. Kilde er NTNUs studieplan-verktøy (studyprogrammeplannerportlet) for kull 2022, som er det eneste kullet med hele 5-årsplanen (inkl. masteroppgave) publisert for dette nedlagte programmet (kull 2021 ga samme 1.–2.-års-innhold, men kull 2022 har i tillegg SIVINGPRA-praksiskravet og er derfor brukt). År 1–2 (120 sp) er felles for alle og ligger i obligatoriske, inkl. NTNUs generelle praksiskrav for sivilingeniørstudenter (SIVINGPRA, 0 sp, ingen egen DBH-emnekode). Fra 3. år velger studenten én av fire studieretninger. Alle fire splittes videre i 5. år i navngitte hovedprofiler (4, 5, 3 og 6 stykker – 18 totalt), og disse er derfor ført opp som egne spesialiseringer (navngitt «Studieretning – Hovedprofil»), hver med studieretningens felles 3.-års-emner pluss hovedprofilens fordypnings-/masteroppgave-emner i 5. år. 4. år har ingen obligatoriske emner utover studieretningens felles 3.-års-emner i noen av de fire studieretningene – der er 4. år bygget opp som obligatoriske VALG mellom flere emnealternativer (merket «M1A/M1B/M2A» i NTNUs studieplandata). Disse valgemnene, samt de ordinære valgbare emnene (VA/VB), komplementæremnene og Eksperter i team (EiT, obligatorisk som langsgående kategori i 4. år der studenten selv velger landsby/emne), er IKKE tatt med i obligatoriske-listene. For hovedprofilen «Metalliske materialers integritet» under Produktutvikling og materialer er selve fordypningsprosjektet og masteroppgaven et valg mellom to spor (se merknad på TMM4151-oppføringen der); ellers er fordypningsprosjekt/-emne og masteroppgave faste, navngitte obligatoriske emnekoder for hver hovedprofil. Hovedprofilen «Termo- og fluiddynamikk» finnes under to ulike studieretninger (Bærekraftige og energieffektive systemer og Industriell mekanikk) med identiske 5.-års-emnekoder; «Kompositter og polymerer», «Metalliske materialers integritet» og «Produkters integritet» finnes likeledes under to studieretninger (Industriell mekanikk og Produktutvikling og materialer), med identiske emnekoder bortsett fra at Industriell mekanikk-versjonen av «Metalliske materialers integritet» har faste emnekoder mens Produktutvikling og materialer-versjonen har et valg (se over). obligatoriskeStudiepoeng (120) dekker kun de felles 1.–2.-års-emnene, ikke spesialiseringenes emner."
+}

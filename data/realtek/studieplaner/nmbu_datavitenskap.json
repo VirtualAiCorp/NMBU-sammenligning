@@ -1,0 +1,198 @@
+{
+  "entryId": "nmbu_datavitenskap",
+  "programnavn": "Datavitenskap (master 5 år)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/master-5-aar/datavitenskap",
+    "https://www.nmbu.no/studieplaner-m-tdv",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-07/Studieplan%20Datavitenskap%202026.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 190,
+  "obligatoriske": [
+    {
+      "emnekode": "IMRT100",
+      "emnenavn": "Innføringsemne - fagorientert prosjekt",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Augustblokk."
+    },
+    {
+      "emnekode": "MATH121",
+      "emnenavn": "Kalkulus 1",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF120",
+      "emnenavn": "Programmering og databehandling",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Plassert i høstsemesteret i tidslinjematrisen (samme rute som MATH121) på alle spesialiseringssidene i studieplanen; selve emnelisten på grunnplan-siden merker emnet med «V» (vår). Tidslinjematrisen er lagt til grunn her siden den er konsistent på tvers av alle 6 spesialiseringssider."
+    },
+    {
+      "emnekode": "MATH122",
+      "emnenavn": "Kalkulus 2",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS101",
+      "emnenavn": "Mekanikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "DAT110",
+      "emnenavn": "Innføring i datanalyse",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF131",
+      "emnenavn": "Datahåndtering - grunnemne",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Augustblokk."
+    },
+    {
+      "emnekode": "INF201",
+      "emnenavn": "Videregående programmering",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS102",
+      "emnenavn": "Termofysikk og elektromagnetisme",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MATH123",
+      "emnenavn": "Lineær algebra og lineære differensiallikninger",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF202",
+      "emnenavn": "Prosjektoppgave i programmering",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "januarblokk",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen gir valget mellom INF202 (januarblokk) og INF203 (juniblokk) - samme prosjektoppgave, ulikt tidspunkt. Kun INF202 er tatt med i listen."
+    },
+    {
+      "emnekode": "INF221",
+      "emnenavn": "Informatikk for datavitere",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "DAT200",
+      "emnenavn": "Anvendt maskinlæring",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF230",
+      "emnenavn": "Datahåndtering og analyse",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "PHI100",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen gir valget mellom PHI100 og seminarversjonen PHI101; kun PHI100 er tatt med i listen."
+    },
+    {
+      "emnekode": "INF240",
+      "emnenavn": "Datasikkerhet",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "januarblokk",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "DAT300",
+      "emnenavn": "Anvendt dyplæring",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MATH285",
+      "emnenavn": "Optimering",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "DAT320",
+      "emnenavn": "Analyse av sekvensielle data og tidsseriedata",
+      "studiepoeng": 10,
+      "aar": 5,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Plassert i 5. år i tidslinjematrisen, trolig fordi 4. år ofte brukes til utveksling/spesialisering."
+    },
+    {
+      "emnekode": "M30-DV",
+      "emnenavn": "Mastergradsoppgave",
+      "studiepoeng": 30,
+      "aar": 5,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er NMBUs studieplan-PDF for kull 2026 (opptak høst 2026), lastet ned fra platformsh-lenken på studieplaner-siden for M-TDV. Programmet er bygd opp av: (1) felles obligatoriske emner for sivilingeniørstudenter (90 sp, inkl. et valgfritt emne i økonomi/samfunnsfag på 5 sp som IKKE er tatt med i obligatoriske-listen fordi det er et fritt valg innenfor en kategori, f.eks. ECN110 eller JUS100, plassert 1. år høst), (2) felles obligatoriske emner for datavitenskapstudenter (100 sp faste emner + 30 sp masteroppgave = 130 sp, hvorav 190-90=100 sp faste emner er inkludert her sammen med masteroppgaven), (3) et krav om minst 2 av 6 valgfrie fordypningsemner (\"Krav M2A\", 20 sp, plassert 4. år) som IKKE er tatt med fordi det er et obligatorisk valg mellom alternativer (IND320, INF250, INF305, MATH220, MLA210, MLA310, eller relevante utvekslingsemner), og (4) spesialiseringsemner (60-85 sp avhengig av valgt spesialisering: Bioinformatikk, Business Analytics, Fysikk, Geoinformatikk, Helsedatavitenskap, eller Matematikk og statistikk) som etter oppgavens instruks IKKE er tatt med her (spesialiseringer-listen skal være tom for dette programmet). Obligatoriske-listen under (190 sp) dekker altså kun grunnplanen: felles sivilingeniøremner + felles datavitenskapsemner + masteroppgave. Summen 190 (grunnplan obligatorisk) + 5 (øk/samf-valg) + 20 (Krav M2A) + 85 (spesialisering, øvre grense) = 300 sp, som stemmer med totalen i planen. INF202/INF203 og PHI100/PHI101 er par av alternative gjennomføringer av samme emne (ikke reelle valg mellom ulike emner); kun én kode av hvert par er tatt med, med merknad. 4. året inneholder utelukkende Krav M2A og spesialiseringsemner (ingen egne obligatoriske grunnplan-emner det året)."
+}

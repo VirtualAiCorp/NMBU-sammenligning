@@ -1,0 +1,325 @@
+{
+  "entryId": "uit_ki",
+  "programnavn": "Kunstig intelligens (master 5 år)",
+  "institusjon": "UiT Norges arktiske universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://uit.no/utdanning/program/711597/kunstig_intelligens_sivilingenior_-_master",
+    "https://uit.no/utdanning/program/oppbygging?studkode=IMAT-KUIN&p_document_id=711597"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 260,
+  "obligatoriske": [
+    {
+      "emnekode": "INF-0101",
+      "emnenavn": "Innføring i programmering",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF-0103",
+      "emnenavn": "Datamaskiners virkemåte og programmering",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF-1600",
+      "emnenavn": "Introduksjon til kunstig intelligens, KI",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT-1010",
+      "emnenavn": "Kalkulus",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF-1400",
+      "emnenavn": "Objektorientert programmering",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT-1020",
+      "emnenavn": "Lineær algebra",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "STA-1001",
+      "emnenavn": "Statistikk og sannsynlighet",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT-1030",
+      "emnenavn": "Vektorkalkulus",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT-2201",
+      "emnenavn": "Numerical Methods",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS-2021",
+      "emnenavn": "Machine Learning",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF-1101",
+      "emnenavn": "Datastrukturer og algoritmer",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF-2600",
+      "emnenavn": "Artificial Intelligence, AI - Methods and applications",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FIL-0700",
+      "emnenavn": "Examen philosophicum, Tromsøvarianten",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS-2010",
+      "emnenavn": "Image Analysis",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Felles for begge spesialiseringer."
+    },
+    {
+      "emnekode": "FYS-3012",
+      "emnenavn": "Pattern recognition",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Felles for begge spesialiseringer."
+    },
+    {
+      "emnekode": "FYS-3033",
+      "emnenavn": "Deep learning",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Felles for begge spesialiseringer."
+    },
+    {
+      "emnekode": "TVR-3000",
+      "emnenavn": "Activating Transformations for Sustainability",
+      "studiepoeng": 10,
+      "aar": 5,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Felles for begge spesialiseringer."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Distribuerte kunstig intelligens-systemer",
+      "obligatoriske": [
+        {
+          "emnekode": "INF-2200",
+          "emnenavn": "Computer architecture and organization",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "INF-2203",
+          "emnenavn": "Operating Systems Fundamentals",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "INF-2204",
+          "emnenavn": "Computer Systems Experiments, Methodologies, Performance Measurements and Evaluation",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "INF-3200",
+          "emnenavn": "Distributed Systems Fundamentals",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "INF-3203",
+          "emnenavn": "Advanced Distributed Systems",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "INF-3201",
+          "emnenavn": "Parallel Programming",
+          "studiepoeng": 10,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "INF-3952",
+          "emnenavn": "Project Thesis in Artificial Intelligence",
+          "studiepoeng": 10,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "INF-3951",
+          "emnenavn": "Master's Thesis in Artificial Intelligence",
+          "studiepoeng": 30,
+          "aar": 5,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Maskinlæring",
+      "obligatoriske": [
+        {
+          "emnekode": "STA-2002",
+          "emnenavn": "Theoretical Statistics",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "STA-2003",
+          "emnenavn": "Time series",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEK-3601",
+          "emnenavn": "Machine Vision",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "STA-2001",
+          "emnenavn": "Stochastic Processes",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "STA-3001",
+          "emnenavn": "Computer-intensive Statistics",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS-3032",
+          "emnenavn": "Health data analytics",
+          "studiepoeng": 10,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS-3750",
+          "emnenavn": "Project Thesis in Artificial Intelligence",
+          "studiepoeng": 10,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS-3951",
+          "emnenavn": "Master's Thesis in Artificial Intelligence",
+          "studiepoeng": 30,
+          "aar": 5,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er UiTs \"Oppbygging\"-side for Kunstig intelligens, sivilingeniør - master (studkode IMAT-KUIN), som viser fullt emneløp for kull med studiestart høsten 2026. Siden krever JavaScript og ble lest med nettleserverktøy (ikke ren WebFetch). Programmet har to spesialiseringer fra 3. år: \"Distribuerte kunstig intelligens-systemer\" og \"Maskinlæring\", valgt via faner på siden. De fire første semestrene (1.-2. år) er helt like for begge spesialiseringer og er lagt i `obligatoriske`. Fra og med 3. år er enkelte emner (FYS-2010, FYS-3012, FYS-3033, TVR-3000) identiske i begge spesialiseringers emneplan og er derfor også lagt i den felles `obligatoriske`-listen, mens de emnene som faktisk skiller spesialiseringene ligger under `spesialiseringer`. `obligatoriskeStudiepoeng` (260) er summen av felles obligatoriske (160 stp) og en spesialiserings obligatoriske (100 stp) - begge spesialiseringer summerer til nøyaktig samme antall stp. Utveksling er lagt til rette i 5. semester. Det finnes i tillegg valgfrie emneblokker i 5., 6. og 8. semester (til sammen 40 stp) som ikke er tatt med i obligatoriske-listen; siden oppgir bare noen eksempler på valgemner (bl.a. BED-1302/1303/1306, MNF-2001, ymse MIK-emner, SOK-1303), og presiserer at flere valgemner vil bli tilgjengelige. Emnenavn for spesialiseringsemnene er hentet fra sidens tekstvisning ved å matche rekkefølge og studiepoeng mot emnekodene i fanene, siden emnekodene selv ikke er direkte koblet til navn i den ekstraherte teksten."
+}

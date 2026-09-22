@@ -1,0 +1,606 @@
+{
+  "entryId": "ntnu_datateknologi",
+  "programnavn": "Datateknologi (master 5 år)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.ntnu.no/studier/mtdt",
+    "https://www.ntnu.no/studier/mtdt/studiets-oppbygning",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=MTDT&year=2026",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=MTDT&year=2025",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=MTDT&year=2024",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=MTDT&year=2023",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=MTDT&year=2022"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 172.5,
+  "obligatoriske": [
+    {
+      "emnekode": "HMS0002",
+      "emnenavn": "HMS-kurs for 1. årsstudenter",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TDT4109",
+      "emnenavn": "Informasjonsteknologi, grunnkurs",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4400",
+      "emnenavn": "Matematikk 1: Kalkulus og lineær algebra",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4412",
+      "emnenavn": "Matematikk 2C: Diskret matematikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "EXPH0300",
+      "emnenavn": "Examen philosophicum for naturvitenskap og teknologi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SIVINGPRA",
+      "emnenavn": "Gjennomført krav om arbeidslivserfaring",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Ikke et undervist emne, men et institusjonelt praksiskrav (arbeidslivserfaring) som må være oppfylt før masteroppgaven kan startes. Registreres i studieplanen som obligatorisk planelement uten fast plassert semester; satt til 1. år høst her."
+    },
+    {
+      "emnekode": "TDT4100",
+      "emnenavn": "Objektorientert programmering",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TDT4180",
+      "emnenavn": "Menneske–maskin-interaksjon",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4422",
+      "emnenavn": "Matematikk 3C: Lineær algebra, differensialligninger, funksjonsapproksimasjon og rekker",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TTT4203",
+      "emnenavn": "Innføring i analog og digital elektronikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IT1901",
+      "emnenavn": "Informatikk prosjektarbeid I",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TDT4120",
+      "emnenavn": "Algoritmer og datastrukturer",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TDT4160",
+      "emnenavn": "Datamaskiner",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4240",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TDT4140",
+      "emnenavn": "Programvareutvikling",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TDT4145",
+      "emnenavn": "Datamodellering og databasesystemer",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TDT4186",
+      "emnenavn": "Operativsystemer",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TTM4100",
+      "emnenavn": "Kommunikasjon - Tjenester og nett",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TDT4501",
+      "emnenavn": "Datateknologi, fordypningsprosjekt",
+      "studiepoeng": 15,
+      "aar": 5,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Felles for alle studieretninger."
+    },
+    {
+      "emnekode": "TDT4506",
+      "emnenavn": "Datateknologi, fordypningsemne",
+      "studiepoeng": 7.5,
+      "aar": 5,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Felles for alle studieretninger."
+    },
+    {
+      "emnekode": "TDT4900",
+      "emnenavn": "Datateknologi, masteroppgave",
+      "studiepoeng": 30,
+      "aar": 5,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Felles for alle studieretninger."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Databaser og søk",
+      "obligatoriske": [
+        {
+          "emnekode": "TDT4117",
+          "emnenavn": "Informasjonsgjenfinning",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4136",
+          "emnenavn": "Introduksjon til kunstig intelligens",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4135",
+          "emnenavn": "Matematikk 4D",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4237",
+          "emnenavn": "Programvaresikkerhet og personvern",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4300",
+          "emnenavn": "Datavarehus og datagruvedrift",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TFY4125",
+          "emnenavn": "Fysikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4225",
+          "emnenavn": "Store, distribuerte datamengder",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4290",
+          "emnenavn": "Kundestyrt prosjekt",
+          "studiepoeng": 15,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4305",
+          "emnenavn": "Big Data-arkitektur",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Kunstig intelligens",
+      "obligatoriske": [
+        {
+          "emnekode": "TDT4136",
+          "emnenavn": "Introduksjon til kunstig intelligens",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4172",
+          "emnenavn": "Introduksjon til maskinlæring",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4135",
+          "emnenavn": "Matematikk 4D",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4171",
+          "emnenavn": "Metoder i kunstig intelligens",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4237",
+          "emnenavn": "Programvaresikkerhet og personvern",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TFY4125",
+          "emnenavn": "Fysikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4173",
+          "emnenavn": "Moderne maskinlæring i praksis",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4290",
+          "emnenavn": "Kundestyrt prosjekt",
+          "studiepoeng": 15,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "IT3105",
+          "emnenavn": "Kunstig intelligens programmering",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Programvaresystemer",
+      "obligatoriske": [
+        {
+          "emnekode": "TDT4136",
+          "emnenavn": "Introduksjon til kunstig intelligens",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4175",
+          "emnenavn": "Informasjonssystemer",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4135",
+          "emnenavn": "Matematikk 4D",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4237",
+          "emnenavn": "Programvaresikkerhet og personvern",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4240",
+          "emnenavn": "Programvarearkitektur",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TFY4125",
+          "emnenavn": "Fysikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4290",
+          "emnenavn": "Kundestyrt prosjekt",
+          "studiepoeng": 15,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Denne studieretningen har få faste emner i 4. år utover dette - resten fylles med valgbare/komplementære emner."
+        }
+      ]
+    },
+    {
+      "navn": "Visuell databehandling",
+      "obligatoriske": [
+        {
+          "emnekode": "TDT4136",
+          "emnenavn": "Introduksjon til kunstig intelligens",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4195",
+          "emnenavn": "Grunnleggende visuell databehandling",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4135",
+          "emnenavn": "Matematikk 4D",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4237",
+          "emnenavn": "Programvaresikkerhet og personvern",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TFY4125",
+          "emnenavn": "Fysikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4230",
+          "emnenavn": "Grafikk og visualisering",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4265",
+          "emnenavn": "Datasyn og dyp læring",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Effektive datasystemer",
+      "obligatoriske": [
+        {
+          "emnekode": "TDT4136",
+          "emnenavn": "Introduksjon til kunstig intelligens",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4135",
+          "emnenavn": "Matematikk 4D",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4237",
+          "emnenavn": "Programvaresikkerhet og personvern",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TFY4125",
+          "emnenavn": "Fysikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "Denne studieretningen har ingen egne faste emner i 4. år utover det obligatoriske prosjektvalget (se programnivå-merknad) - resten fylles med valgbare emner."
+        }
+      ]
+    }
+  ],
+  "merknad": "NTNUs studieplansystem publiserer planen kull-for-kull, og for et gitt kull vises kun de studieårene som er nådd eller er inneværende studieår (senere år regnes som «foreløpig» og publiseres ikke før kullet når dem). For å kunne vise en fullstendig, mest mulig oppdatert 5-årsplan for studieåret 2026/27 er data hentet diagonalt: 1. år fra kull 2026 (deres inneværende 1. år), 2. år fra kull 2025 (deres inneværende 2. år), 3. år fra kull 2024 (deres inneværende 3. år, inkl. studieretningsvalg), 4. år fra kull 2023 (deres inneværende 4. år) og 5. år fra kull 2022 (deres inneværende 5. år, siste kull med full 5-årsplan publisert). Dette gir nettopp den planen som faktisk undervises i 2026/27 for hvert årstrinn. Emnekoder for 1.-2. år er kontrollert stabile på tvers av kull 2022-2026 bortsett fra en revisjon av matematikkemnene i 1. år (TMA4100/TMA4140/TMA4115 er erstattet av TMA4400/TMA4412/TMA4422 fra og med kull 2025/2026); studieretningsstrukturen i 3. år er identisk mellom kull 2022 og 2024. Programmet har 5 studieretninger fra 3. år: Databaser og søk, Kunstig intelligens, Programvaresystemer, Visuell databehandling og Effektive datasystemer - disse er lagt inn i spesialiseringer-listen med sine respektive obligatoriske emner for 3. og 4. år. 5. året (TDT4501, TDT4506, TDT4900) er identisk for alle studieretninger og er derfor lagt i den felles obligatoriske-listen i stedet for å gjentas i hver spesialisering. To studieretninger (Visuell databehandling og Effektive datasystemer) har et obligatorisk valg i 4. år høst mellom TDT4290 Kundestyrt prosjekt og TDT4295 Datamaskinprosjekt (begge 15 sp, kode MAX1A i NTNUs system); dette valget er IKKE tatt med i spesialiseringenes obligatoriske-lister siden det er et valg mellom alternativer, ikke et fast emne. Alle studieretninger krever i tillegg et betydelig antall valgbare emner (VA/VB) og eventuelt Eksperter i team (EiT) i 4. år for å fylle opp til 300 sp totalt; disse er ikke obligatoriske og er ikke tatt med. Krav om arbeidslivserfaring (SIVINGPRA, 0 sp) er et institusjonelt praksiskrav, ikke et undervist emne."
+}

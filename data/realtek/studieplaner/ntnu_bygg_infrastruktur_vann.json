@@ -1,0 +1,295 @@
+{
+  "entryId": "ntnu_bygg_infrastruktur_vann",
+  "programnavn": "Bygg og infrastruktur (master 5 år)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://www.ntnu.no/studier/mtbygg",
+    "https://www.ntnu.no/studier/mtbygg/studiets-oppbygning",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=MTBYGG&year=0"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 120,
+  "obligatoriske": [
+    {
+      "emnekode": "SIVINGPRA",
+      "emnenavn": "Gjennomført krav om arbeidslivserfaring",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Praksiskrav for sivilingeniørtittelen; registreres teknisk i 1. år høst i studieplansystemet, men kan i praksis oppfylles når som helst før masteroppgaven starter. Ikke en ordinær studiepoenggivende emne."
+    },
+    {
+      "emnekode": "TBM4110",
+      "emnenavn": "BYGG1 - Introduksjon til bygg og infrastruktur",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TDT4110",
+      "emnenavn": "Informasjonsteknologi, grunnkurs",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4400",
+      "emnenavn": "Matematikk 1: Kalkulus og lineær algebra",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMT4101",
+      "emnenavn": "Kjemi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "EXPH0300",
+      "emnenavn": "Examen philosophicum for naturvitenskap og teknologi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TBM4120",
+      "emnenavn": "BYGG2 – Bygningsteknologi og materialer",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TKT4116",
+      "emnenavn": "Mekanikk 1",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4411",
+      "emnenavn": "Matematikk 2B: Lineær algebra, differensialligninger og flervariabel analyse",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TKT4122",
+      "emnenavn": "Mekanikk 2",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "NTNU markerer studieplanen for 2. år (kull 2025) som «under revisjon. Vedtas i begynnelsen av april»; innholdet kan derfor bli endret."
+    },
+    {
+      "emnekode": "TKT4250",
+      "emnenavn": "BYGG3 - Konstruksjonslære",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4240",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4421",
+      "emnenavn": "Matematikk 3B: Vektoranalyse og funksjonsapproksimasjon",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TBM4150",
+      "emnenavn": "BYGG4 - Design av infrastruktursystemer",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TBM4240",
+      "emnenavn": "Geoteknikk 1",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TFY4106",
+      "emnenavn": "Fysikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TVM4116",
+      "emnenavn": "Hydromekanikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Byggeprosess og bygningsteknologi",
+      "obligatoriske": [
+        {
+          "emnekode": "TBM4210",
+          "emnenavn": "Byggeprosess, grunnkurs",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TBM4223",
+          "emnenavn": "Miljørådgivning for bygg",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Infrastruktur",
+      "obligatoriske": [
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TVM4105",
+          "emnenavn": "Hydrologi",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TBM4282",
+          "emnenavn": "Veg- og jernbaneteknologi 1",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Konstruksjon",
+      "obligatoriske": [
+        {
+          "emnekode": "TKT4132",
+          "emnenavn": "Mekanikk 3",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TKT4175",
+          "emnenavn": "Betongkonstruksjoner 1",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er NTNUs studieplansystem (studieplan-portlet på ntnu.no/studier/studieplan), hentet via kull-visning for programkode MTBYGG. Felles del (1.–2. år, 120 sp) er hentet fra kull 2025 (studieplanår 2025/2026), som er nyeste kull med publisert studieplan for disse årene. NTNU markerer selv studieplanen for 2. år som «under revisjon. Vedtas i begynnelsen av april», så innholdet i 2. år kan bli justert noe. Studieretningene fikk sine nåværende navn – Byggeprosess og bygningsteknologi, Infrastruktur, Konstruksjon – først fra og med kull 2023; kull 2025 har per uttrekksdato (september 2026) ennå ikke publisert retningsspesifikt innhold for 3.–5. år i systemet. Obligatoriske emner for 3. år (30 sp per retning, fordelt likt på høst og vår) er derfor hentet fra kull 2023, som er det eneste/siste kullet med fullt publiserte data under gjeldende retningsnavn. Eldre kull (f.eks. 2022) brukte en annen retningsstruktur (bl.a. «Bygg og anlegg» i stedet for «Byggeprosess og bygningsteknologi», og flere underliggende retninger) og er ikke brukt her. 4. år (60 sp per retning) består i sin helhet av valgbare emner – ingen enkeltemner er individuelt obligatoriske. Strukturen er: et sett fagspesifikke valgbare emner (dels «legges kollisjonsfritt», dels «kan kollidere» på timeplanen) spesifikt for hver retning, et sett komplementære emner med fritt utvalg på tvers av retningene, og et obligatorisk Eksperter i team (EiT)-krav på 7,5 sp der studenten velger landsby fritt blant et stort antall alternativer – altså et obligatorisk valg, ikke en obligatorisk emnekode, og derfor ikke listet som enkeltemne (jf. regelen om obligatoriske valg). 5. år er ikke publisert i studieplansystemet for noe kull under gjeldende retningsnavn. NTNUs programside (ntnu.no/studier/mtbygg/studiets-oppbygning) oppgir at retningene videreføres i mer spesialiserte profiler i 5. år (Byggeprosess/Bygningsteknologi under «Byggeprosess og bygningsteknologi»; Geoteknikk/Konstruksjonsteknikk/Marin og arktisk byggteknikk under «Konstruksjon»; Transportinfrastruktur/Vann og vannkraft under «Infrastruktur») og inneholder et obligatorisk fordypningsprosjekt samt en masteroppgave, men eksakte emnekoder og studiepoengfordeling for gjeldende studieplan er ikke bekreftet i kildene og er derfor utelatt helt (ingen oppdiktede koder). Alle studenter må i tillegg oppfylle et arbeidslivserfaringskrav (emnekode SIVINGPRA, 0 sp) før masteroppgaven kan påbegynnes; dette er tatt med som en egen obligatorisk post i 1. år høst siden det er slik det registreres teknisk i studieplansystemet. Denne filen finnes i to identiske kopier i BOA-verktøyet (ntnu_bygg_infrastruktur og ntnu_bygg_infrastruktur_vann) fordi det femårige programmet inngår i to ulike sammenligningsgrupper; innholdet er likt bortsett fra entryId."
+}

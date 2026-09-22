@@ -1,0 +1,152 @@
+{
+  "entryId": "nord_okonomi_teknologiledelse",
+  "programnavn": "Økonomi og teknologiledelse (bachelor)",
+  "institusjon": "Nord universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nord.no/studier/okonomi-og-teknologiledelse-bachelor",
+    "https://www.nord.no/studier/studieplaner/okonomi-og-teknologiledelse-baoktek-bachelor-host-2026"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 165,
+  "obligatoriske": [
+    {
+      "emnekode": "ENT1002",
+      "emnenavn": "Teamarbeid i praksis",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IKT1031",
+      "emnenavn": "Teknologi og digitalisering",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FIL1006",
+      "emnenavn": "Bærekraft, etikk og samfunnsansvar",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ORG1013",
+      "emnenavn": "Organisasjon og ledelse i teknologibaserte bedrifter",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ORG1014",
+      "emnenavn": "Strategi og konkurranseevne",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ECO1021",
+      "emnenavn": "Grunnleggende bedriftsøkonomi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAF1006",
+      "emnenavn": "Markedsføring og digital kommunikasjon",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ENT1003",
+      "emnenavn": "Entreprenørskap",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ECO1022",
+      "emnenavn": "Samfunnsøkonomi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ORG1015",
+      "emnenavn": "Kommunikasjon for ledere og organisasjoner",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ENT1004",
+      "emnenavn": "Innovasjonsledelse",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ECO1023",
+      "emnenavn": "Økonomistyring",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MET1008",
+      "emnenavn": "Anvendt metode for økonomi og teknologiledelse",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "LED2008",
+      "emnenavn": "Teknologiledelse",
+      "studiepoeng": 20,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "LED2009",
+      "emnenavn": "Bacheloroppgave i teknologiledelse",
+      "studiepoeng": 15,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Resten av 6. semester (15 sp) er valgemner - ikke tatt med."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Nytt studieprogram ved Nord universitet; studieplanen er hentet fra den offisielle studieplansiden for kullet som starter høsten 2026 (nettbasert/samlingsbasert, Mo i Rana). Studiet tilbys i to leveringsformer - nettbasert eller samlingsbasert i Mo i Rana - men ifølge programsiden gir samlingenes aktiviteter «det samme læringsutbyttet» som nettstudentenes skriftlige arbeidskrav, dvs. samme emner/pensum, bare ulik undervisningsform. Emnelisten over er hentet fra containeren «Obligatoriske emner for nettstudiet» i studieplanverktøyet; den parallelle containeren «Obligatoriske emner samlingstudiet» ble ikke åpnet separat, men antas å inneholde de samme emnekodene gitt beskrivelsen av at de to variantene gir likt læringsutbytte - dette er ikke eksplisitt verifisert emne for emne. Ingen formelle studieretninger/spesialiseringer med egne obligatoriske emnelister; i 6. semester (vår) er 15 av 30 sp valgemner (ikke navngitt i studieplanverktøyet, og derfor ikke tatt med). Progresjonskrav-teksten bekrefter at MET1008 (metodeemnet) og LED2008 (fordypningsemnet Teknologiledelse) begge må være bestått før bacheloroppgaven kan påbegynnes, i samsvar med plasseringen over."
+}

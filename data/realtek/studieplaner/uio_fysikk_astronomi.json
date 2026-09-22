@@ -1,0 +1,255 @@
+{
+  "entryId": "uio_fysikk_astronomi",
+  "programnavn": "Fysikk og astronomi (bachelor)",
+  "institusjon": "Universitetet i Oslo",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.uio.no/studier/program/fysikk-astronomi/",
+    "https://www.uio.no/studier/program/fysikk-astronomi/oppbygging/",
+    "https://www.uio.no/studier/program/fysikk-astronomi/studieretninger/fysikk/oppbygging/",
+    "https://www.uio.no/studier/program/fysikk-astronomi/studieretninger/astronomi/oppbygging/",
+    "https://www.uio.no/studier/program/fysikk-astronomi/studieretninger/fluidmekanikk/oppbygging/"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 100,
+  "obligatoriske": [
+    {
+      "emnekode": "IN1900",
+      "emnenavn": "Introduksjon i programmering for naturvitenskapelige anvendelser",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Studieløpet oppgir at HMS-emner («HMS-emner») også inngår i dette semesteret, uten eget emnenavn/emnekode eller egne studiepoeng oppgitt i kildene – derfor ikke lagt inn som egen linje."
+    },
+    {
+      "emnekode": "FYS1100",
+      "emnenavn": "Mekanikk og modellering",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT1100",
+      "emnenavn": "Kalkulus",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "STK-FYS1110",
+      "emnenavn": "Sannsynlighetsregning, modellering og dataanalyse for de fysiske fagene",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT1110",
+      "emnenavn": "Kalkulus og lineær algebra",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS1120",
+      "emnenavn": "Elektromagnetisme",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT1120",
+      "emnenavn": "Lineær algebra",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS2140",
+      "emnenavn": "Kvantefysikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS2160",
+      "emnenavn": "Termodynamikk og statistisk fysikk",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "EXPHIL03",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Oppgis som obligatorisk fellesemne (inngår i de 100 sp fellesemner som gjelder alle studieretninger), men tidspunktet er fleksibelt: i studieløpstabellene vises EXPHIL03 sammen med «Utviklingssemester/fritt emne» i 5. og/eller 6. semester for studieretningene Fysikk og Fluidmekanikk, mens studieretningen Astronomi viser det allerede i 4. semester. Plasseringen her (3. år vår) er derfor en representativ, ikke absolutt, plassering."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Fysikk",
+      "obligatoriskeStudiepoeng": 40,
+      "obligatoriske": [
+        {
+          "emnekode": "FYS1105",
+          "emnenavn": "Klassisk mekanikk",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "AST2000",
+          "emnenavn": "Innføring i astrofysikk",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS2130",
+          "emnenavn": "Svingninger og bølger",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS2150",
+          "emnenavn": "Eksperimentalfysikk",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Astronomi",
+      "obligatoriskeStudiepoeng": 60,
+      "obligatoriske": [
+        {
+          "emnekode": "FYS1105",
+          "emnenavn": "Klassisk mekanikk",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "AST2000",
+          "emnenavn": "Innføring i astrofysikk",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS2130",
+          "emnenavn": "Svingninger og bølger",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "AST2210",
+          "emnenavn": "Observasjonsastronomi",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "AST3310",
+          "emnenavn": "Astrofysiske plasma og stjernenes indre",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "AST3220",
+          "emnenavn": "Kosmologi I",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Fluidmekanikk",
+      "obligatoriskeStudiepoeng": 40,
+      "obligatoriske": [
+        {
+          "emnekode": "MEK1100",
+          "emnenavn": "Feltteori og vektoranalyse",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MEK2200",
+          "emnenavn": "Kontinuumsmekanikk",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MEK3230",
+          "emnenavn": "Fluidmekanikk",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS2150",
+          "emnenavn": "Eksperimentalfysikk",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "UiOs bachelorprogram Fysikk og astronomi har 180 sp fordelt på obligatoriske fellesemner (100 sp, gjelder alle studieretninger), obligatoriske fordypningsemner (40–60 sp, avhenger av valgt studieretning) og utviklingssemester/frie emner (20–40 sp). Studenten velger studieretning (Fysikk, Astronomi eller Fluidmekanikk) i løpet av de tre første semestrene; fordypningsemnene er derfor lagt under spesialiseringer[] i stedet for i hovedlisten, i tråd med instruksjonen om at obligatoriske valg mellom alternativer ikke skal inn i hovedlisten. Alle emner i programmet er 10 sp, bortsett fra det navnløse HMS-elementet i 1. semester (0 sp, ingen egen emnekode oppgitt i kildene). obligatoriskeStudiepoeng (100) gjelder kun de felles obligatoriske emnene i hovedlisten – fordypningsemnene i spesialiseringer[] kommer i tillegg og er ikke medregnet der. Sidene har ingen eksplisitt kull-/årstallsvelger slik NTNUs studieplanvisning har; studieplanAar er satt til 2026/2027 basert på at sidene er sist oppdatert i 2025/2026 og gjelder løpende opptak, men en tidligere variant («studieløp for deg som begynte 2017–2021») fantes for eldre kull med noe annen struktur – denne er ikke brukt her. Ex.phil (EXPHIL03, 10 sp) er talt med som obligatorisk i tråd med instruksjonen, selv om nøyaktig semesterplassering er fleksibel (se merknad på emnet)."
+}

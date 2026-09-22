@@ -1,0 +1,306 @@
+{
+  "entryId": "nmbu_maskin",
+  "programnavn": "Teknologi og produktutvikling (master 5 år)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/master-5-aar/teknologi-og-produktutvikling",
+    "https://www.nmbu.no/studieplaner-m-mpp",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-07/M-MPP%20studieplan%20for%20kull%202026.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 305,
+  "obligatoriskeStudiepoeng": 300,
+  "obligatoriske": [
+    {
+      "emnekode": "IMRT100",
+      "emnenavn": "Innføringsemne - fagorientert prosjekt",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Augustblokk før høstsemesteret."
+    },
+    {
+      "emnekode": "MATH121",
+      "emnenavn": "Kalkulus",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF120",
+      "emnenavn": "Programmering og databehandling",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "PHI100",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen gir valget mellom PHI100 og seminarversjonen PHI101 (samme forelesninger, ulikt seminar-/vurderingsopplegg)."
+    },
+    {
+      "emnekode": "TIN100",
+      "emnenavn": "Digital produksjon og designteknologi 1",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "januarblokk",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS101",
+      "emnenavn": "Mekanikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MATH122",
+      "emnenavn": "Kalkulus og lineær algebra",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS110",
+      "emnenavn": "Statikk",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TIP150",
+      "emnenavn": "Moderne verkstedteknikk, innføringsemne",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MATH123",
+      "emnenavn": "Lineær algebra og vektoranalyse",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS102",
+      "emnenavn": "Termofysikk og elektromagnetisme",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TBM120",
+      "emnenavn": "Fasthetslære og grunnleggende beregningsteknikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS251",
+      "emnenavn": "Varmeoverføring og energi",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "DAT110",
+      "emnenavn": "Innføring i dataanalyse og -visualisering",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMP160",
+      "emnenavn": "Teknisk design",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS235",
+      "emnenavn": "Elektronikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TBM200",
+      "emnenavn": "Materialteknologi",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TIP200",
+      "emnenavn": "Produktutvikling og produktdesign med 3D",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MATH250",
+      "emnenavn": "Partielle differensiallikninger og modeller",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Står i selve årsrutenettet i kull 2026-planen, men mangler i sidelegendens liste over 'Obligatoriske emner' (som i stedet fører opp TEL240 10 sp uten at TEL240 er plassert noe sted i rutenettet) – se generell merknad."
+    },
+    {
+      "emnekode": "TMP261",
+      "emnenavn": "Varme og strømningssimulering",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMP220",
+      "emnenavn": "Maskinelementer og effektoverføringssystemer",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMPP251",
+      "emnenavn": "Separasjonsteknikk",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TEL100",
+      "emnenavn": "Elektronisk prototyping",
+      "studiepoeng": 5,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Augustblokk før høstsemesteret."
+    },
+    {
+      "emnekode": "TBM350",
+      "emnenavn": "Elementmetoden",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TEL320",
+      "emnenavn": "Innebygde systemer",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Kan byttes ut med andre relevante teknologiemner, normalt ved utenlandsopphold eller i samråd med masterveileder (fotnote 1 i studieplanen)."
+    },
+    {
+      "emnekode": "MLA210",
+      "emnenavn": "Maskinlæring med eksempler fra teknologi og finans",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TEL330",
+      "emnenavn": "Mekatronikk",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Kan byttes ut med andre relevante teknologiemner, normalt ved utenlandsopphold eller i samråd med masterveileder (fotnote 1 i studieplanen)."
+    },
+    {
+      "emnekode": "TIN200",
+      "emnenavn": "Digital produksjon og designteknologi 2",
+      "studiepoeng": 5,
+      "aar": 4,
+      "semester": "juniblokk",
+      "dbhEmnekoder": [],
+      "merknad": "Kan byttes ut med andre relevante teknologiemner, normalt ved utenlandsopphold eller i samråd med masterveileder (fotnote 1 i studieplanen)."
+    },
+    {
+      "emnekode": "TMPP350",
+      "emnenavn": "Energi og prosessteknikk hovedkurs",
+      "studiepoeng": 10,
+      "aar": 5,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Kan byttes ut i samråd med masterveileder (fotnote 2 i studieplanen)."
+    },
+    {
+      "emnekode": "TIP300",
+      "emnenavn": "Konsept og produktrealisering",
+      "studiepoeng": 10,
+      "aar": 5,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Kan byttes ut i samråd med masterveileder (fotnote 2 i studieplanen)."
+    },
+    {
+      "emnekode": "TMP320",
+      "emnenavn": "Maskin- og produktutvikling",
+      "studiepoeng": 10,
+      "aar": 5,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Kan byttes ut i samråd med masterveileder (fotnote 2 i studieplanen)."
+    },
+    {
+      "emnekode": "M30-MPP",
+      "emnenavn": "Masteroppgave",
+      "studiepoeng": 30,
+      "aar": 5,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er NMBUs fargekodede rutenett-studieplan for kull 2026 (femårig sivilingeniørprogram), hentet fra nmbu.no/studieplaner-m-mpp. Tabellen skiller mellom «Grunnemner sivilingeniør» (90 sp, felles NMBU-sivilingeniørfag) og «Obligatoriske emner innen teknologi og produktutvikling» (215 sp); begge kategoriene er slått sammen i obligatoriske-listen over, til sammen 300 sp fordelt på 32 navngitte emnekoder. I tillegg krever programmet et obligatorisk valgfag innen økonomi/samfunnsfag («Øk/samf», 5 sp, plassert 4. år vår) uten egen fast emnekode i kilden, og dette er derfor IKKE tatt med i obligatoriske-listen eller i obligatoriskeStudiepoeng (som er 300, dvs. summen av de 32 navngitte emnene). Kildens egen bunnsum for hele tabellen er 305 sp (90+215, inkl. det ikke-kodede 5 sp-valgfaget), og totaltStudiepoeng er satt til 305 i tråd med denne kildesummen fremfor standard 300 for en femårig master. Det er en liten uoverensstemmelse i selve kildedokumentet: årsrutenettet for kull 2026 plasserer MATH250 (10 sp) i 3. år høst, mens sidelegenden med den fullstendige emnelisten for «Obligatoriske emner»-kategorien i stedet fører opp TEL240 (10 sp) uten at TEL240 forekommer noe sted i selve årsrutenettet – sannsynligvis en rest fra en tidligere versjon av planen som ikke er oppdatert i legendekolonnen. MATH250 er lagt til grunn her fordi årsrutenettet er den delen av dokumentet som faktisk viser hvilket år/semester hvert emne tas. Fotnote 1 i kilden («kan byttes ut med andre relevante teknologiemner, normalt ved utenlandsopphold eller i samråd med masterveileder») gjelder TEL320, TEL330 og TIN200; fotnote 2 («kan byttes ut i samråd med masterveileder») gjelder TMPP350, TIP300 og TMP320 i 5. år høst. Emner merket «augustblokk» (IMRT100 i 1. år, TEL100 i 4. år) er satt til semester «høst» med forklarende merknad, samme praksis som i nmbu_eiendom.json. Emnenavn er hentet fra NMBUs emnesøk (nmbu.no/emne/<kode>), siden selve studieplan-PDF-en kun oppgir emnekoder og studiepoeng i rutenettet. Listen «Anbefalte mulige ekstraemner (frivillig)» i kilden er valgfrie tilleggsemner utover de 305 obligatoriske studiepoengene og er ikke tatt med. Kildedokumentet beskriver ikke egne studieretninger/spesialiseringer med separate obligatoriske emner for dette programmet."
+}

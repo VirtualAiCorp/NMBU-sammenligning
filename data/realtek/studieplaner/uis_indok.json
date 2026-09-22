@@ -1,0 +1,53 @@
+{
+  "entryId": "uis_indok",
+  "programnavn": "Industriell økonomi, alle linjer (master 5 år)",
+  "institusjon": "Universitetet i Stavanger",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.uis.no/nb/studier/industriell-okonomi-master-5-ar",
+    "https://www.uis.no/nb/studier/industriell-okonomi-master-2-ar"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 50,
+  "obligatoriske": [
+    {
+      "emnekode": "IND500",
+      "emnenavn": "Investeringsanalyse",
+      "studiepoeng": 5,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IND510",
+      "emnenavn": "Prosjektledelse",
+      "studiepoeng": 5,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "I tillegg skal studenten i 1. semester velge ett emne mellom DAT540 Introduksjon til datavitenskap og STA510 Statistisk modellering og simulering (10 sp) - ikke tatt med her, se merknadsfeltet på programnivå."
+    },
+    {
+      "emnekode": "IND520",
+      "emnenavn": "Beslutningsanalyse med Excel",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INDMAS",
+      "emnenavn": "Masteroppgave i industriell økonomi",
+      "studiepoeng": 30,
+      "aar": 5,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Emnet går over 3. og 4. semester av det toårige masterprogrammet (dvs. 5. år høst og vår); plassert i vår siden det avsluttes da."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Programmet er en 3+2-modell: de tre første årene (1.-6. semester) velger studenten ETT av fem helt separate, ordinære ingeniørbachelorprogram ved UiS - byggingeniør, datateknologi, elektroteknologi, energi- og petroleumsteknologi eller maskiningeniør (jf. uis.no/nb/studier/industriell-okonomi-master-5-ar). Disse bachelorløpene er ikke industriell økonomi-spesifikke og er ikke kartlagt her, da det ville kreve å hente og gjengi fem uavhengige 3-årige ingeniørstudieplaner; dette bør følges opp som egen jobb om ønskelig. Obligatoriske-listen over dekker bare den felles toårige masterdelen (4.-5. år / 1.-4. semester av masterprogrammet 'Industriell økonomi - master 2 år', uis.no/nb/studier/industriell-okonomi-master-2-ar), som er lik for alle uansett ingeniørbakgrunn. I 1. semester må studenten i tillegg velge ETT ingeniørfaglig fordypningspakke (Petroleumsteknologi, Datateknikk, Kybernetikk/KI, Maskin- og materialteknologi, Risikostyring og vedlikehold, eller Bygg - konstruksjonsteknikk) som gir egne obligatoriske emner (10 sp i 1. semester og videre i 2. semester), og ETT emne mellom DAT540 og STA510 (10 sp). Studenten velger også en 'spesialisering' innen økonomi/ledelse (Kontraktadministrasjon, Prosjektledelse, Strategisk ledelse eller Investering og finans); UiS' egen studieplanside viser disse fire linjene ikke som en fast obligatorisk emneliste per linje, men som pooler av 'valgemner' (20 sp per linje, semester 1-3) pluss et 'fritt emnevalg'-alternativ - altså et reelt valg mellom flere emner innenfor hver linje, ikke ett fast obligatorisk emnesett. Etter regelen om at obligatoriske valg mellom alternativer ikke skal føres i obligatoriske-listen, er derfor spesialiseringer-feltet latt stå tomt i stedet for å liste opp valgemnepoolene som om de var obligatoriske kjerneemner; linjenavnene er gjengitt her i stedet. Sett sammen med den ingeniørfaglige fordypningspakken (20 sp) og valgemner (resten) summerer studieplanen slik: metode-/fellesemner (obligatorisk, som over) + fordypningspakke + spesialiseringens valgemnepool + masteroppgave = 120 sp for masterdelen. Under 3. semester viser studieplansiden også IND650 Innovasjonsledelse og entreprenørskap og IND610 Kontraktinngåelse og -gjennomføring under overskriften 'Mandatory courses', men disse emnene opptrer samtidig som valgbare alternativer inne i enkelte av de fire spesialiseringenes valgemnepooler på samme side; det er uklart ut fra den offentlige studieplansiden (som bygger på en dynamisk emnevelger) om disse to emnene er obligatoriske for absolutt alle studenter uansett spesialisering, eller bare for enkelte spesialiseringer - de er derfor ikke tatt med i obligatoriske-listen, og bør verifiseres direkte med UiS ved behov. Studieplanåret er anslått til 2026/2027 ut fra at studieplansidens emnevalg-nøkler (f.eks. 'M-INDØKG-26-...') og siste oppdatering (16.09.2026) peker mot gjeldende kull; siden er ikke like eksplisitt årstallsmerket som UiAs og NTNUs studieplansider."
+}

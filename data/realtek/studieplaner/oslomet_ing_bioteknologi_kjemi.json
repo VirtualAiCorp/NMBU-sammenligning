@@ -1,0 +1,161 @@
+{
+  "entryId": "oslomet_ing_bioteknologi_kjemi",
+  "programnavn": "Ingeniør, bioteknologi og kjemi (bachelor)",
+  "institusjon": "OsloMet - storbyuniversitetet",
+  "studieplanAar": "2026 (kull høst 2026)",
+  "kilder": [
+    "https://www.oslomet.no/studier/tkd/bioteknologi-kjemiingenior",
+    "https://student.oslomet.no/studier/-/studieinfo/programplan/HINGKJEMI/2026/H%C3%98ST"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 160,
+  "obligatoriske": [
+    {
+      "emnekode": "KJM1100",
+      "emnenavn": "Helse, miljø og sikkerhet",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MEK1000",
+      "emnenavn": "Matematikk 1000",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MEK1300",
+      "emnenavn": "Introduksjon til python-programmering",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJPE1300",
+      "emnenavn": "Generell kjemi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MEK1400",
+      "emnenavn": "Fysikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM1400",
+      "emnenavn": "Organisk kjemi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM1500",
+      "emnenavn": "Fysikalsk kjemi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM2400",
+      "emnenavn": "Biokjemi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MEK2000",
+      "emnenavn": "Matematikk 2000",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJTS2100",
+      "emnenavn": "Kjemiteknikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM3100",
+      "emnenavn": "Bioteknologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MEK2200",
+      "emnenavn": "Statistikk og risikoanalyse",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM2300",
+      "emnenavn": "Analytisk kjemi I",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM3500",
+      "emnenavn": "Molekylær- og cellebiologi",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "STKD6610",
+      "emnenavn": "Technology and Society II",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJTS3900",
+      "emnenavn": "Bacheloroppgave",
+      "studiepoeng": 20,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er programplanen for kull HINGKJEMI gjeldende fra høst 2026 på student.oslomet.no, lest ut interaktivt (retningsvalget «Bioteknologi og kjemi», ikke tretermin-varianten «Bioteknologi og kjemi for tretermin» som er et alternativt studieløp over flere terminer per år for samme grad). I 3. år høst er kun KJM3500 (10 sp) obligatorisk; de resterende 20 sp fylles med valgfrie emner (status «Valgbart») blant KJVE3510 Analytisk kjemi II, MEK3100 Avansert Python-programmering for ingeniører, DAVE3700 Matematikk 3000, DAVE3710 Akademisk Engelsk og BYGG3200 Planlegging, behandling og drift av vann og avløp - disse er ikke tatt med i obligatoriske-lista. Programmet er 180 sp over 6 semestre (3 år)."
+}

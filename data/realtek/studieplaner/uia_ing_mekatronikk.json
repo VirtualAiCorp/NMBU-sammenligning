@@ -1,0 +1,188 @@
+{
+  "entryId": "uia_ing_mekatronikk",
+  "programnavn": "Ingeniør, mekatronikk (bachelor)",
+  "institusjon": "Universitetet i Agder",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.uia.no/studier/program/mekatronikk-bachelor/",
+    "https://www.uia.no/studier/program/mekatronikk-bachelor/studieplaner/2026h.html"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 150,
+  "obligatoriske": [
+    {
+      "emnekode": "ING100",
+      "emnenavn": "Programmering og IKT-sikkerhet",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ING101",
+      "emnenavn": "Teknologi, miljø og bærekraft",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MA-178",
+      "emnenavn": "Matematikk 1",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAS132",
+      "emnenavn": "3D Design",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAS134",
+      "emnenavn": "Elektriske kretser og digitalteknikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ORG001",
+      "emnenavn": "HMS-kurs",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Obligatorisk HMS-kurs uten studiepoeng, jf. «Andre opplysninger» i studieplanen."
+    },
+    {
+      "emnekode": "FYS128",
+      "emnenavn": "Fysikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MA-179",
+      "emnenavn": "Matematikk 2",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAS100",
+      "emnenavn": "Mekanikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAS133",
+      "emnenavn": "Praktisk ingeniørfag",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MA-222",
+      "emnenavn": "Matematikk 3",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAS237",
+      "emnenavn": "Aktueringssystemer 1",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAS249",
+      "emnenavn": "Materialteknologi, Maskinelementer og FEM 1",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAS250",
+      "emnenavn": "Mekatronikkprosjekt 1",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MA-223",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAS200",
+      "emnenavn": "Mekatronikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAS239",
+      "emnenavn": "Reguleringsteknikk 1",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAS240",
+      "emnenavn": "Prosjektfag: måle- og reguleringsteknikk",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAS309",
+      "emnenavn": "Bacheloroppgave, mekatronikk",
+      "studiepoeng": 30,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er UiAs studieplan for Ingeniørfag - mekatronikk, bachelorprogram (2026–2029), Samordna opptak-sporet (www.uia.no, hentet via nettleser). I 3. år høst (5. semester, 30 sp) velger studenten fritt blant valgemner uten en fast, navngitt spesialiseringsstruktur med egne obligatoriske emnelister: ENE240 Vannkraft, ENE243 Vindkraft, IKT101 Grunnleggende softwareutvikling, MA-307 Matematikk 4, MA-308 Numeriske metoder, MAS242 Produktutvikling, MAS245 Innebygde datasystemer for mekatronikk, MAS246 Servoteknikk, MAS247 Industriell IT, MAS248 Robotteknologi, MAS308 Maskinelementer og FEM 2, samt PRA204 Internship. Siden dette er en fri valgfagpool og ikke reelle obligatoriske studieretninger, er den ikke ført som spesialiseringer, kun i denne merknaden. 150 (obligatorisk) + 30 (valgfritt, 5. semester) = 180 sp totalt. Studenter som vil videre til masterstudier i teknologi må velge MA-307 Matematikk 4. Kun ordinært Samordna opptak-løp er hentet ut; TRES- og Y-vei-studentene har i tillegg 0-poengs oppgraderingskurs i matematikk/fysikk (og NO-007 norsk for Y-vei) i 1. år, men ellers samme obligatoriske emner."
+}

@@ -1,0 +1,907 @@
+{
+  "entryId": "ntnu_maskin_energi",
+  "programnavn": "Maskin- og energiteknologi (master 5 år)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2023/2024 (kull 2023)",
+  "kilder": [
+    "https://www.ntnu.no/studier/mtmaskin",
+    "https://www.ntnu.no/studier/mtmaskin/studiets-oppbygning",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=MTMASKIN&year=2023"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 120.0,
+  "obligatoriske": [
+    {
+      "emnekode": "SIVINGPRA",
+      "emnenavn": "Gjennomført krav om arbeidslivserfaring",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "0 sp administrativt krav (praksiskrav for sivilingeniørgraden), ingen egen DBH-emnekode."
+    },
+    {
+      "emnekode": "TDT4110",
+      "emnenavn": "Informasjonsteknologi, grunnkurs",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TEP4111",
+      "emnenavn": "Energi og bærekraft",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4100",
+      "emnenavn": "Matematikk 1",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMM4115",
+      "emnenavn": "Produktmodellering",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TKT4116",
+      "emnenavn": "Mekanikk 1",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4105",
+      "emnenavn": "Matematikk 2",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMT4106",
+      "emnenavn": "Kjemi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TPK4190",
+      "emnenavn": "Produksjonsteknologi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TEP4120",
+      "emnenavn": "Termodynamikk 1",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TFY4104",
+      "emnenavn": "Fysikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TKT4122",
+      "emnenavn": "Mekanikk 2",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4110",
+      "emnenavn": "Matematikk 3",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TEP4100",
+      "emnenavn": "Fluidmekanikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4245",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMM4100",
+      "emnenavn": "Materialteknikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMM4121",
+      "emnenavn": "Produktutvikling",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Energi- og strømningsteknikk – Energi og klima i bygninger",
+      "obligatoriske": [
+        {
+          "emnekode": "EXPH0300",
+          "emnenavn": "Examen philosophicum for naturvitenskap og teknologi",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Energi- og strømningsteknikk – Energisystemer",
+      "obligatoriske": [
+        {
+          "emnekode": "EXPH0300",
+          "emnenavn": "Examen philosophicum for naturvitenskap og teknologi",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Energi- og strømningsteknikk – Miljøanalyse for maskin og energiteknologi",
+      "obligatoriske": [
+        {
+          "emnekode": "EXPH0300",
+          "emnenavn": "Examen philosophicum for naturvitenskap og teknologi",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Energi- og strømningsteknikk – Termo og fluiddynamikk",
+      "obligatoriske": [
+        {
+          "emnekode": "EXPH0300",
+          "emnenavn": "Examen philosophicum for naturvitenskap og teknologi",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Industriell mekanikk – Materialmekanikk",
+      "obligatoriske": [
+        {
+          "emnekode": "EXPH0300",
+          "emnenavn": "Examen philosophicum for naturvitenskap og teknologi",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TKT4132",
+          "emnenavn": "Mekanikk 3",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TKT4102",
+          "emnenavn": "Dynamikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TKT4140",
+          "emnenavn": "Numerisk mekanikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Industriell mekanikk – Konstruksjonsmekanikk",
+      "obligatoriske": [
+        {
+          "emnekode": "EXPH0300",
+          "emnenavn": "Examen philosophicum for naturvitenskap og teknologi",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TKT4132",
+          "emnenavn": "Mekanikk 3",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TKT4102",
+          "emnenavn": "Dynamikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TKT4140",
+          "emnenavn": "Numerisk mekanikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Industriell ledelse og systemfag – Produksjonsledelse",
+      "obligatoriske": [
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4100",
+          "emnenavn": "Produksjonsledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4120",
+          "emnenavn": "Industriell sikkerhet og pålitelighet",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK5100",
+          "emnenavn": "Praktisk prosjektledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "EXPH0300",
+          "emnenavn": "Examen philosophicum for naturvitenskap og teknologi",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4186",
+          "emnenavn": "Avanserte verktøy for Performance Engineering",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4160",
+          "emnenavn": "Verdikjedestyring",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4165",
+          "emnenavn": "ERP systemer",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4191",
+          "emnenavn": "Styring og optimalisering av produksjon",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4164",
+          "emnenavn": "Skipsbygging og kundespesifikk produksjon",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4180",
+          "emnenavn": "Produksjonsstrategi",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Industriell ledelse og systemfag – Prosjekt- og kvalitetsledelse",
+      "obligatoriske": [
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4100",
+          "emnenavn": "Produksjonsledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4120",
+          "emnenavn": "Industriell sikkerhet og pålitelighet",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK5100",
+          "emnenavn": "Praktisk prosjektledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "EXPH0300",
+          "emnenavn": "Examen philosophicum for naturvitenskap og teknologi",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4186",
+          "emnenavn": "Avanserte verktøy for Performance Engineering",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4191",
+          "emnenavn": "Styring og optimalisering av produksjon",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4110",
+          "emnenavn": "Kvalitets- og prestasjonsfokusert ledelse",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Industriell ledelse og systemfag – Sikkerhet, pålitelighet og vedlikehold - RAMS",
+      "obligatoriske": [
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4100",
+          "emnenavn": "Produksjonsledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4120",
+          "emnenavn": "Industriell sikkerhet og pålitelighet",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK5100",
+          "emnenavn": "Praktisk prosjektledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "EXPH0300",
+          "emnenavn": "Examen philosophicum for naturvitenskap og teknologi",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4186",
+          "emnenavn": "Avanserte verktøy for Performance Engineering",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4191",
+          "emnenavn": "Styring og optimalisering av produksjon",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4185",
+          "emnenavn": "Bærekraftig systemteknikk",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK5120",
+          "emnenavn": "Grunnlag for systemdynamikk",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4100",
+          "emnenavn": "Objektorientert programmering",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Produktutvikling og materialer – Materialer og strukturer",
+      "obligatoriske": [
+        {
+          "emnekode": "EXPH0300",
+          "emnenavn": "Examen philosophicum for naturvitenskap og teknologi",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4112",
+          "emnenavn": "Maskindeler",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4135",
+          "emnenavn": "Dimensjonering basert på elementmetoden, grunnkurs",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4125",
+          "emnenavn": "Mekatronikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Produktutvikling og materialer – Produktutvikling og produksjon",
+      "obligatoriske": [
+        {
+          "emnekode": "EXPH0300",
+          "emnenavn": "Examen philosophicum for naturvitenskap og teknologi",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4112",
+          "emnenavn": "Maskindeler",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4135",
+          "emnenavn": "Dimensjonering basert på elementmetoden, grunnkurs",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4125",
+          "emnenavn": "Mekatronikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Produktutvikling og materialer – Robotteknikk og automatisering",
+      "obligatoriske": [
+        {
+          "emnekode": "EXPH0300",
+          "emnenavn": "Examen philosophicum for naturvitenskap og teknologi",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4130",
+          "emnenavn": "Matematikk 4N",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4112",
+          "emnenavn": "Maskindeler",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMM4135",
+          "emnenavn": "Dimensjonering basert på elementmetoden, grunnkurs",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4125",
+          "emnenavn": "Mekatronikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4170",
+          "emnenavn": "Robotteknikk",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er NTNUs studieplan-verktøy (studyprogrammeplannerportlet) for MTMASKIN. Gjeldende kull (2025/2026) har foreløpig kun 1.–2. år publisert (studenten har ikke nådd retningsvalget ennå), så kull 2023 – det eldste tilgjengelige kullet med 3.–4. år publisert, og det nyeste kullet med fullt 4. år vedtatt – er brukt for å fange hele strukturen. Kullene 2023–2026 er de eneste tilgjengelige i verktøyet; år 1–2-emnekodene er identiske på tvers av disse kullene der de er sammenlignet. År 1–2 (120 sp) er felles for alle og ligger i obligatoriske, inkl. NTNUs generelle praksiskrav for sivilingeniørstudenter (SIVINGPRA, 0 sp, ingen egen DBH-emnekode). Fra 3. år velger studenten én av fire studieretninger: Energi- og strømningsteknikk, Industriell mekanikk, Industriell ledelse og systemfag, Produktutvikling og materialer. Alle fire splittes videre i 4. år i navngitte hovedprofiler (4, 2, 3 og 3 stykker), og disse 12 hovedprofilene er derfor ført opp som egne spesialiseringer (navngitt «Studieretning – Hovedprofil»), hver med studieretningens felles 3.-års-emner pluss eventuelle hovedprofil-spesifikke 4.-års-emner. TPK4191 er felles obligatorisk for alle tre hovedprofiler under Industriell ledelse og systemfag. For flere hovedprofiler (alle under Energi- og strømningsteknikk, begge under Industriell mekanikk, og to av tre under Produktutvikling og materialer) er det ingen hovedprofil-spesifikke obligatoriske emner utover studieretningens felles 3.-års-emner – der er 4. år bygget opp som obligatoriske VALG mellom flere emnealternativer (merket «M1A/M1B» i NTNUs studieplandata). Disse valgemnene, samt de ordinære valgbare emnene (VA/VB), komplementæremnene og Eksperter i team (EiT, obligatorisk som langsgående kategori i 4. år – studenten velger selv landsby/emne, ingen bestemt emnekode er obligatorisk), er IKKE tatt med i obligatoriske-listene. Kun emner merket «O» (obligatorisk for alle på retningen/profilen) er tatt med. 5. år (normalt 30 sp masteroppgave per hovedprofil, trolig med egne emnekoder slik man ser for det nedlagte søsterprogrammet MTPROD/Produktutvikling og produksjon) er IKKE publisert i NTNUs studieplan-verktøy for noe tilgjengelig MTMASKIN-kull (2023–2026) per 2026-09-22, og er derfor utelatt fra denne filen for å unngå å finne opp emnekoder. obligatoriskeStudiepoeng (120) dekker kun de felles 1.–2.-års-emnene, ikke spesialiseringenes emner eller det ikke-publiserte 5. året."
+}

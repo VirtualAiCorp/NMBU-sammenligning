@@ -1,0 +1,213 @@
+{
+  "entryId": "uit_fysmat_b",
+  "programnavn": "Fysikk og matematikk (bachelor)",
+  "institusjon": "UiT Norges arktiske universitet",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://uit.no/utdanning/program/712953/fysikk_og_matematikk_-_bachelor",
+    "https://uit.no/Content/873024/cache=20263108124137/Studieplan%20Bachelor%20i%20fysikk%20og%20matematikk%20gjeldende%20fra%20h%C3%B8sten%202025.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 90,
+  "obligatoriske": [
+    {
+      "emnekode": "MAT-1010",
+      "emnenavn": "Kalkulus",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF-0101",
+      "emnenavn": "Innføring i programmering",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF-0102",
+      "emnenavn": "Beregningsorientert programmering",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FIL-0700",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT-1020",
+      "emnenavn": "Lineær algebra",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS-1010",
+      "emnenavn": "Mekanikk og modellering",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "STA-1001",
+      "emnenavn": "Statistikk og sannsynlighet",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT-1030",
+      "emnenavn": "Vektorkalkulus",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJE-1001",
+      "emnenavn": "Introduksjon til kjemi og kjemisk biologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT-2010",
+      "emnenavn": "Complex analysis with applications",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Fysikk",
+      "obligatoriske": [
+        {
+          "emnekode": "FYS-1003",
+          "emnenavn": "Grunnkurs i eksperimentell fysikk",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS-1002",
+          "emnenavn": "Elektromagnetisme",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS-2000",
+          "emnenavn": "Quantum Mechanics",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS-2001",
+          "emnenavn": "Termodynamikk og statistisk fysikk",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Studieplanens tabell viser dette emnet som «FYS-2001 / Utveksling» i 5. semester: studenter som reiser på utveksling dette semesteret tar det ikke da, men emnet er ellers obligatorisk for studieretningen."
+        }
+      ]
+    },
+    {
+      "navn": "Matematikk og statistikk",
+      "obligatoriske": [
+        {
+          "emnekode": "STA-2001",
+          "emnenavn": "Stochastic Processes",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MAT-2200",
+          "emnenavn": "Differential Equations",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MAT-2300",
+          "emnenavn": "Algebra 1",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Molekylær modellering",
+      "obligatoriske": [
+        {
+          "emnekode": "FYS-1002",
+          "emnenavn": "Elektromagnetisme",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS-2000",
+          "emnenavn": "Quantum Mechanics",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "KJE-2001",
+          "emnenavn": "Molecular physical chemistry and foundations of spectroscopy",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Studieplan godkjent 05.11.2024, gjeldende fra høsten 2025. Programmet består av en felles bunnblokk på 90 sp (de fire første semestrene), deretter tre studieretninger: fysikk, matematikk og statistikk, og molekylær modellering. Studieretningens obligatoriske emner ligger under «spesialiseringer»; det gjenstår 50–60 valgfrie/utvekslings-studiepoeng avhengig av retning (180 sp totalt). For studieretning molekylær modellering er det i tillegg et obligatorisk VALG mellom KJE-1002 Organisk kjemi, KJE-1004 Innføring i uorganisk kjemi, eller KJE-1054+KJE-1055 (til sammen 10 sp) — dette er ikke tatt med i listen siden det er et valg mellom alternativer, ikke ett fast emne. 6. semester inneholder et obligatorisk «Mikroemne/Praksisemne» i alle retninger, men ingen bestemt emnekode er oppgitt i studieplanen."
+}

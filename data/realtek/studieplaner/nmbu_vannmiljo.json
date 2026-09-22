@@ -1,0 +1,317 @@
+{
+  "entryId": "nmbu_vannmiljo",
+  "programnavn": "Vann- og miljøteknikk (master 5 år)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/master-5-aar/vann-og-miljoteknikk",
+    "https://www.nmbu.no/studier/studieplaner-m-vm",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-06/Studieplan%20Vann-%20og%20milj%C3%B8teknikk%20kull%202026_0.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 220,
+  "obligatoriske": [
+    {
+      "emnekode": "IMRT100",
+      "emnenavn": "Innføringsemne - fagorientert prosjekt",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Augustblokk før høstsemesteret."
+    },
+    {
+      "emnekode": "MATH121",
+      "emnenavn": "Kalkulus",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF120",
+      "emnenavn": "Programmering og databehandling",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "PHI100",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen skriver «PHI100/PHI101» samlet (valg mellom ordinær versjon og seminarversjon); PHI100 er brukt som hovedkode her, tilsvarende praksis i søsterfilen nmbu_eiendom.json."
+    },
+    {
+      "emnekode": "THT100",
+      "emnenavn": "Kommunalteknikk",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "januarblokk",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS101",
+      "emnenavn": "Mekanikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MATH122",
+      "emnenavn": "Kalkulus og lineær algebra",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS110",
+      "emnenavn": "Statikk",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MATH123",
+      "emnenavn": "Lineær algebra og vektoranalyse",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS102A",
+      "emnenavn": "Fysikk for bioteknologer",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TPS200",
+      "emnenavn": "Innføring i fluidmekanikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "VANN200",
+      "emnenavn": "Hydrologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM100",
+      "emnenavn": "Generell kjemi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "THT261",
+      "emnenavn": "Innføring i vann- og avløpssystemer",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "THT211",
+      "emnenavn": "Strømning i kanaler og vassdrag",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM220",
+      "emnenavn": "Vannkjemi",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "THT271",
+      "emnenavn": "Innføring i renseteknologi for vann og avløp",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "THT280",
+      "emnenavn": "Desentraliserte avløpssystemer",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TBA201",
+      "emnenavn": "Geoteknikk",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "STAT100",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "THT320",
+      "emnenavn": "Bærekraftsanalyser av VA-sektoren",
+      "studiepoeng": 5,
+      "aar": 4,
+      "semester": "januarblokk",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "THT201",
+      "emnenavn": "Hurtigmetoder for måling av miljøtekniske parametre, laboratoriekurs",
+      "studiepoeng": 5,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "THT291",
+      "emnenavn": "Prosesser for ressursgjenvinning fra avfall i sirkulær bioøkonomi",
+      "studiepoeng": 5,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Plassering (4. år vår) følger spesialiseringen «Transportsystemer og overvannshåndtering» (side 2 i PDF-en). I «Renseteknikk og ressursgjenvinning»-sporet (side 3) er THT291 i stedet lagt til 3. år vår – totalt studiepoeng og tilhørighet til fellespuljen er identisk, kun semesterplasseringen kan avvike mellom sporene."
+    },
+    {
+      "emnekode": "THT390",
+      "emnenavn": "Forberedelse til masteroppgaven",
+      "studiepoeng": 5,
+      "aar": 5,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "M30-VM",
+      "emnenavn": "Masteroppgave",
+      "studiepoeng": 30,
+      "aar": 5,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Transportsystemer og overvannshåndtering",
+      "obligatoriske": [
+        {
+          "emnekode": "TBM120",
+          "emnenavn": "Fasthetslære og grunnleggende beregningsteknikk",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "THT200",
+          "emnenavn": "Bærekraftig overvannshåndtering",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "THT301",
+          "emnenavn": "Forvaltning av urban vanninfrastruktur",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "THT302",
+          "emnenavn": "Analyse og design av drikkevannsnett",
+          "studiepoeng": 7.5,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "THT303",
+          "emnenavn": "Analyse og design av systemer for avløp og overvann",
+          "studiepoeng": 7.5,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Renseteknikk og ressursgjenvinning",
+      "obligatoriske": [
+        {
+          "emnekode": "BIO130",
+          "emnenavn": "Generell mikrobiologi I",
+          "studiepoeng": 5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "THT310",
+          "emnenavn": "Analyse og design av renseprosesser for vann og avløp",
+          "studiepoeng": 10,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er NMBUs studieplan-PDF for kull 2026 («Studieplan Vann- og miljøteknikk kull 2026_0.pdf»), side 1 = generell oversikt/emnepulje-oversikt, side 2 = tidslinje for spesialiseringen «Transportsystemer og overvannshåndtering», side 3 = tidslinje for spesialiseringen «Renseteknikk og ressursgjenvinning». Disse to sidene er skannede regnearkbilder (ikke tekstlag i PDF-en) og er lest visuelt. Fulle emnenavn er hentet separat fra NMBUs emnesøk (nmbu.no/emne/<kode>) 22.09.2026 og bør dobbeltsjekkes. Programmet er 300 sp totalt: 85 sp felles sivilingeniør-emner (hvorav 5 sp er en «øk./samf.»-kategori uten fast emnekode, se under) + 140 sp felles vann- og miljøteknikk-emner (til sammen 220 sp med fast emnekode, listet i «obligatoriske» over) + 37,5–40 sp obligatoriske spesialiseringsemner (avhengig av spesialisering) + valgfrie emner som fyller resten opp til 300 sp. «Øk./samf.»-kategorien (5 sp) har en fotnote i PDF-en: «JUS100 er anbefalt for å dekke obligatorisk krav om 5 sp økonomi/samfunnsfag» – dette er en anbefaling, ikke et fast emnekrav, og er derfor utelatt fra obligatoriske-listen og fra obligatoriskeStudiepoeng (220). For spesialiseringen «Transportsystemer og overvannshåndtering» er alle 5 spesialiseringsemnene (TBM120, THT200, THT301, THT302, THT303 = 40 sp) direkte obligatoriske uten valgfrihet. For spesialiseringen «Renseteknikk og ressursgjenvinning» er BIO130 (5 sp) og THT310 (10 sp) faste obligatoriske emner, mens studieplanen i tillegg krever at studenten «må velge minst to av emnene THT301, THT302 og THT303» (fotnote 3, hver 7,5 sp); PDF-ens oppsummeringstall for denne spesialiseringen (37,5 sp) summerer alle tre valgemnene som om alle var obligatoriske, men det reelle minstekravet er 2 av 3 (15 sp), altså 30 sp reelt obligatorisk for spesialiseringen. Disse tre valgemnene er derfor IKKE listet under spesialiseringens obligatoriske-array (kun BIO130 og THT310); valgkravet beskrives her i stedet, i tråd med oppgavens regel om obligatoriske valg. Fotnote 2 nevner at GEO220 er et særlig aktuelt alternativ til THT301 blant valgfrie emner for renseteknikk-sporet. Enkelte felles emner (f.eks. THT291) er tidfestet til ulikt studieår avhengig av valgt spesialisering i PDF-ens tidslinjer; se merknad på det aktuelle emnet."
+}

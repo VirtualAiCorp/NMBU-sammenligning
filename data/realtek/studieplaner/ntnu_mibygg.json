@@ -1,0 +1,97 @@
+{
+  "entryId": "ntnu_mibygg",
+  "programnavn": "Bygg og infrastruktur (master 2 år)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.ntnu.no/studier/mibygg",
+    "https://www.ntnu.no/studier/mibygg/studiets-oppbygning",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=MIBYGG&year=0"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 0,
+  "obligatoriske": [
+    {
+      "emnekode": "SIVINGPRA",
+      "emnenavn": "Gjennomført krav om arbeidslivserfaring",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Praksiskrav for sivilingeniørtittelen (samme krav som i det femårige programmet MTBYGG); registreres teknisk i 1. år høst i studieplansystemet, men kan i praksis oppfylles når som helst før masteroppgaven starter. Ikke en ordinær studiepoenggivende emne."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Byggeprosess og bygningteknologi",
+      "obligatoriske": [
+        {
+          "emnekode": "TBM4500",
+          "emnenavn": "Bygg- og miljøteknikk, fordypningsprosjekt",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Hentet fra kull 2025 (eldre retningsstruktur), der emnet var likt og obligatorisk uavhengig av retning. Ikke direkte bekreftet for kull 2026 (gjeldende retningsnavn), se programmerknad."
+        },
+        {
+          "emnekode": "TBM4900",
+          "emnenavn": "Bygg- og miljøteknikk, masteroppgave",
+          "studiepoeng": 30,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "Hentet fra kull 2025 (eldre retningsstruktur), der emnet var likt og obligatorisk uavhengig av retning. Ikke direkte bekreftet for kull 2026 (gjeldende retningsnavn), se programmerknad."
+        }
+      ]
+    },
+    {
+      "navn": "Infrastruktur",
+      "obligatoriske": [
+        {
+          "emnekode": "TBM4500",
+          "emnenavn": "Bygg- og miljøteknikk, fordypningsprosjekt",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Hentet fra kull 2025 (eldre retningsstruktur), der emnet var likt og obligatorisk uavhengig av retning. Ikke direkte bekreftet for kull 2026 (gjeldende retningsnavn), se programmerknad."
+        },
+        {
+          "emnekode": "TBM4900",
+          "emnenavn": "Bygg- og miljøteknikk, masteroppgave",
+          "studiepoeng": 30,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "Hentet fra kull 2025 (eldre retningsstruktur), der emnet var likt og obligatorisk uavhengig av retning. Ikke direkte bekreftet for kull 2026 (gjeldende retningsnavn), se programmerknad."
+        }
+      ]
+    },
+    {
+      "navn": "Konstruksjon",
+      "obligatoriske": [
+        {
+          "emnekode": "TBM4500",
+          "emnenavn": "Bygg- og miljøteknikk, fordypningsprosjekt",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Hentet fra kull 2025 (eldre retningsstruktur), der emnet var likt og obligatorisk uavhengig av retning. Ikke direkte bekreftet for kull 2026 (gjeldende retningsnavn), se programmerknad."
+        },
+        {
+          "emnekode": "TBM4900",
+          "emnenavn": "Bygg- og miljøteknikk, masteroppgave",
+          "studiepoeng": 30,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "Hentet fra kull 2025 (eldre retningsstruktur), der emnet var likt og obligatorisk uavhengig av retning. Ikke direkte bekreftet for kull 2026 (gjeldende retningsnavn), se programmerknad."
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er NTNUs studieplansystem (studieplan-portlet på ntnu.no/studier/studieplan), hentet via kull-visning for programkode MIBYGG. Retningsnavnene endret seg nylig: kull 2025 og eldre bruker en gammel struktur med fem retninger (Bygg og anlegg, Kyst og arktisk, Konstruksjon, Vann og miljø, Veg, transport og geomatikk), mens kull 2026 (studiestart høst 2026, nyeste og gjeldende kull) bruker tre retningsnavn – Byggeprosess og bygningteknologi, Infrastruktur, Konstruksjon – i tråd med det femårige søsterprogrammet MTBYGG. Merk at «Byggeprosess og bygningteknologi» er stavet slik (uten 's' i 'bygnings-') i NTNUs eget system; navnet er kopiert eksakt derfra. For kull 2026 er kun 1. år (semester 1–2) publisert i studieplansystemet per uttrekksdato (september 2026); semester 3–4 (2. år) er ennå ikke lagt inn for dette kullet. 1. år (60 sp) består utelukkende av valgbare emner per retning – ingen enkeltemner er individuelt obligatoriske. Strukturen er et sett fagspesifikke valgbare emner (dels «legges kollisjonsfritt», dels «kan kollidere») spesifikt for hver retning, pluss et obligatorisk Eksperter i team (EiT)-krav på 7,5 sp der studenten velger landsby fritt blant et stort antall alternativer – et obligatorisk valg, ikke en obligatorisk emnekode, og derfor ikke listet som enkeltemne (jf. regelen om obligatoriske valg). Dette er grunnen til at 'obligatoriske' på toppnivå bare inneholder arbeidslivserfaringskravet (0 sp). For 2. år (semester 3–4) er emnene TBM4500 «Bygg- og miljøteknikk, fordypningsprosjekt» (7,5 sp) og TBM4900 «Bygg- og miljøteknikk, masteroppgave» (30 sp) hentet fra kull 2025 (eldre, gammel retningsstruktur), der de var identiske obligatoriske emner uavhengig av retning. Det er sannsynlig at de videreføres under samme koder i gjeldende ordning (kull 2026), siden kodene er programgenerelle og ikke retningsspesifikke, men dette er ikke bekreftet direkte siden kull 2026 ennå ikke har publisert 2. år. I tillegg hadde flere av de gamle retningene i kull 2025 ett ekstra retningsspesifikt obligatorisk fordypningsemne i semester 3 utover TBM4500 (f.eks. TBA4292 «Marin byggteknikk, videregående kurs» for «Kyst og arktisk», TBM4345 «Bærekraftig transport og transportinfrastruktur» for «Veg, transport og geomatikk»). Hvilket – om noe – tilsvarende emne som vil gjelde for de tre nye retningene er ikke kjent, og er derfor utelatt i tråd med regelen om å aldri finne opp emnekoder. Total obligatorisk studiepoengsum kan dermed være noe høyere enn de 37,5 sp (TBM4500+TBM4900) som er registrert her per retning. Programmet er 2-årig (120 sp) og bygger på fullført bachelor i ingeniørfag; det gir tilleggsbetegnelsen sivilingeniør og har derfor samme arbeidslivserfaringskrav (SIVINGPRA, 0 sp) som det femårige programmet MTBYGG."
+}

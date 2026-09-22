@@ -1,0 +1,435 @@
+{
+  "entryId": "ntnu_industriell_design",
+  "programnavn": "Industriell design (master 5 år)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2021/2022 (kull 2021)",
+  "kilder": [
+    "https://www.ntnu.no/studier/mtdesig",
+    "https://www.ntnu.no/studier/mtdesig/studiets-oppbygning",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=MTDESIG&year=2021",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=MTDESIG&year=2023"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 120.0,
+  "obligatoriske": [
+    {
+      "emnekode": "SIVINGPRA",
+      "emnenavn": "Gjennomført krav om arbeidslivserfaring",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "0 sp administrativt krav (praksiskrav for sivilingeniørgraden); vises fra og med kull 2023 i NTNUs studieplan-verktøy, ikke i kull 2021 som ellers er brukt for 3.–5. år i denne filen."
+    },
+    {
+      "emnekode": "HMS0200",
+      "emnenavn": "HMS-kurs med verkstedopplæring for studenter ved industriell design",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Het HMS0004 («HMS-kurs med verkstedopplæring for studenter ved AD-fakultetet») i kull 2021; omdøpt/omkodet til HMS0200 fra kull 2023."
+    },
+    {
+      "emnekode": "TDT4110",
+      "emnenavn": "Informasjonsteknologi, grunnkurs",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4100",
+      "emnenavn": "Matematikk 1",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TPD4100",
+      "emnenavn": "Design 1 - Introduksjon",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TPD4111",
+      "emnenavn": "Estetikk 1: Komposisjon og rom",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4105",
+      "emnenavn": "Matematikk 2",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TPD4102",
+      "emnenavn": "Design 2 - Komposisjon",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TPD4105",
+      "emnenavn": "Informasjonsteknologi for formgivning og kommunikasjon",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TPD4112",
+      "emnenavn": "Estetikk 2: Komposisjon og rytme",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "EXPH0100",
+      "emnenavn": "Examen philosophicum for humaniora og estetiske fag",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4110",
+      "emnenavn": "Matematikk 3",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TPD4113",
+      "emnenavn": "Estetikk 3: Kompleks komposisjon",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Kalles «Estetikk 3: Tegneteknikk 3» i kull 2023."
+    },
+    {
+      "emnekode": "TPD4121",
+      "emnenavn": "Design 3 - Bruk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Kalles «Design 3 - Menneskesentrert design & innovasjon» i kull 2023."
+    },
+    {
+      "emnekode": "TFY4125",
+      "emnenavn": "Fysikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TPD4126",
+      "emnenavn": "Prototyping av fysiske brukeropplevelser",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TPD4127",
+      "emnenavn": "Design 4 - Produksjon og materialer",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TPD4200",
+      "emnenavn": "Bærekraftig design",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Interaksjonsdesign",
+      "obligatoriske": [
+        {
+          "emnekode": "IT2805",
+          "emnenavn": "Webteknologi",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4240",
+          "emnenavn": "Statistikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPD4134",
+          "emnenavn": "Brukergrensesnittdesign",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPD4156",
+          "emnenavn": "Design 5 - Tjenestedesign",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4102",
+          "emnenavn": "Prosedyre- og objektorientert programmering",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TIØ4253",
+          "emnenavn": "Teknologiledelse for arkitektur- og designfag",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPD4144",
+          "emnenavn": "Design 6 - Fremtider",
+          "studiepoeng": 15,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPD4129",
+          "emnenavn": "Design 7 - System",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPD4168",
+          "emnenavn": "Spilldesign",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPD4166",
+          "emnenavn": "Design 8 - Strategi",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPD4167",
+          "emnenavn": "Informasjonsvisualisering",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPD4500",
+          "emnenavn": "Design 9, fordypningsprosjekt",
+          "studiepoeng": 15,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPD4505",
+          "emnenavn": "Designteori, fordypningsemne",
+          "studiepoeng": 7.5,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPD4900",
+          "emnenavn": "Industriell design, masteroppgave",
+          "studiepoeng": 30,
+          "aar": 5,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Produktdesign",
+      "obligatoriske": [
+        {
+          "emnekode": "TKT4118",
+          "emnenavn": "Mekanikk 1",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4240",
+          "emnenavn": "Statistikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPD4123",
+          "emnenavn": "Mekatronikk for designere",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPD4156",
+          "emnenavn": "Design 5 - Tjenestedesign",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TIØ4253",
+          "emnenavn": "Teknologiledelse for arkitektur- og designfag",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPD4144",
+          "emnenavn": "Design 6 - Fremtider",
+          "studiepoeng": 15,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPD4129",
+          "emnenavn": "Design 7 - System",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPD4169",
+          "emnenavn": "Design for industrialisering",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPD4153",
+          "emnenavn": "Design av strukturell emballasje",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPD4166",
+          "emnenavn": "Design 8 - Strategi",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPD4500",
+          "emnenavn": "Design 9, fordypningsprosjekt",
+          "studiepoeng": 15,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPD4505",
+          "emnenavn": "Designteori, fordypningsemne",
+          "studiepoeng": 7.5,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPD4900",
+          "emnenavn": "Industriell design, masteroppgave",
+          "studiepoeng": 30,
+          "aar": 5,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er NTNUs studieplan-verktøy (studyprogrammeplannerportlet) for MTDESIG. Gjeldende kull (2025/2026) har foreløpig kun 1.–2. år publisert. Kull 2021 er det eneste kullet i verktøyet med hele 5-årsplanen (inkl. masteroppgave) publisert, og er derfor brukt som hovedkilde for strukturen. 1.–2.-års-emnene er kryssjekket mot kull 2023 (nyeste kull med 3.–4. år publisert): innholdet er identisk bortsett fra to administrative tillegg i kull 2023 – SIVINGPRA (0 sp praksiskrav) og et rekodet HMS-kurs (HMS0004 → HMS0200) – samt mindre navnejusteringer på TPD4113 og TPD4121 (se merknad på hvert emne). Disse to nye/endrede postene er tatt med i obligatoriske under kull 2023-navnene. År 1–2 (120 sp) er felles for alle og ligger i obligatoriske. Fra 3. år velger studenten én av to studieretninger: Interaksjonsdesign eller Produktdesign (ingen videre hovedprofil-splitting for dette programmet). Begge retninger avsluttes i 5. år med et felles mønster: TPD4500 (fordypningsprosjekt, 15 sp) + TPD4505 (fordypningsemne, 7,5 sp) i høstsemesteret, og TPD4900 (masteroppgave, 30 sp) i vårsemesteret – kun emnenavnets kobling til retningen skiller dem i praksis, men emnekodene er identiske for begge retninger i studieplandataene. Ett obligatorisk VALG mellom alternative emner (TDT4102 «Prosedyre- og objektorientert programmering» og TKT4123 «Mekanikk 2», merket «M1A» i kull 2021) i Produktdesign vår 3. år er IKKE tatt med i listen. Ett komplementæremne (fritt valgt fra en lang liste, merket «VB») i 4. år og i 5. år, samt ett «ingeniøremne fra annet studieprogram» i 4. år og Eksperter i team (langsgående, obligatorisk kategori i 4. år der studenten selv velger landsby/emne) er heller ikke tatt med. obligatoriskeStudiepoeng (120) dekker kun de felles 1.–2.-års-emnene, ikke spesialiseringenes emner."
+}

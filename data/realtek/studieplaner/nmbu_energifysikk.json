@@ -1,0 +1,180 @@
+{
+  "entryId": "nmbu_energifysikk",
+  "programnavn": "Energi- og miljøfysikk (bachelor)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://www.nmbu.no/studier/bachelor/energi-og-miljofysikk",
+    "https://www.nmbu.no/studieplaner-b-emf",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-06/Studieplan%20B-EMF%202025%20og%202026.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 150,
+  "obligatoriske": [
+    {
+      "emnekode": "IMRT100",
+      "emnenavn": "Innføringsemne - fagorientert prosjekt",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Augustblokk."
+    },
+    {
+      "emnekode": "FYS140",
+      "emnenavn": "Klimaendringer, bærekraft og tilpasninger",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MATH121",
+      "emnenavn": "Kalkulus",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF120",
+      "emnenavn": "Programmering og databehandling",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS101",
+      "emnenavn": "Mekanikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MATH122",
+      "emnenavn": "Kalkulus og lineær algebra",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS102",
+      "emnenavn": "Termofysikk og elektromagnetisme",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MATH123",
+      "emnenavn": "Lineær algebra og vektoranalyse",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS155",
+      "emnenavn": "Laboratoriekurs i fysikk",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS103",
+      "emnenavn": "Måleteknikk og feilanalyse",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "januarblokk",
+      "dbhEmnekoder": [],
+      "merknad": "Starter i januarblokk og avsluttes i løpet av 1.-2. uke i vårparallellen."
+    },
+    {
+      "emnekode": "FYS235",
+      "emnenavn": "Elektronikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS236",
+      "emnenavn": "Elektrodynamikk",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM100",
+      "emnenavn": "Generell kjemi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS230",
+      "emnenavn": "Elektroteknikk",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Starter i høstparallellen og avsluttes i januarblokk."
+    },
+    {
+      "emnekode": "FYS253",
+      "emnenavn": "Termisk fysikk",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS272",
+      "emnenavn": "Energiteknologier",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS241",
+      "emnenavn": "Miljøfysikk",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS245",
+      "emnenavn": "Kvantefysikk",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er studieplan-PDF-en «Studieplan B-EMF 2025 og 2026» (publisert 2026-06, gjelder for både kull 2025 og kull 2026 – samme oppbygning for begge). PDF-en var et regneark eksportert som bilde (ikke tekst), så innholdet er lest av bildet med pypdf/pdfplumber for oppslag og deretter tolket visuelt; emnenavn er hentet fra NMBUs emnesider (nmbu.no/emne/<kode>), ikke fra selve PDF-en, som kun oppgir emnekoder. Studieplanen deler de obligatoriske emnene i en felles «Grunnpakke» (95 sp, delt med andre realfagsbachelorer) og programspesifikke «Energi- og miljøfysikk»-emner (75 sp); disse 170 sp er alle obligatoriske og ført opp i listen minus to obligatoriske valg mellom alternativer (se under), som gir 150 sp obligatoriske enkeltemner. To emnepar er obligatoriske valg mellom alternativer og er derfor IKKE ført opp som enkeltemner: DAT110 (Innføring i dataanalyse og -visualisering) eller STAT100 (Statistikk), 10 sp, 1. år vår; og PHI100 (Examen philosophicum) eller PHI101 (seminarversjon) — studieplanens fotnote 5 åpner også for PHI102 (vårversjon) — 10 sp, 3. år høst. I tillegg inngår 10 sp anbefalte valgfrie emner som ikke er obligatoriske: FYS141 Meteorologi for bærekraftig samfunnsutvikling (anbefalt, gis annenhvert år (oddetallsår) i augustblokk 3. år, 5 sp) og et generisk valgfritt emne på 5 sp i 3. år vår. Ingen egen bacheloroppgave er oppført i studieplanen. Totalsummen 180 sp stemmer med 150 (obligatoriske enkeltemner) + 20 (de to obligatoriske valgene) + 10 (valgfritt)."
+}

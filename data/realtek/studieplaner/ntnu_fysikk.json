@@ -1,0 +1,189 @@
+{
+  "entryId": "ntnu_fysikk",
+  "programnavn": "Fysikk (bachelor)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.ntnu.no/studier/bfy",
+    "https://www.ntnu.no/studier/bfy/studiets-oppbygning",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=BFY&year=2026"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 142.5,
+  "obligatoriske": [
+    {
+      "emnekode": "FY1008",
+      "emnenavn": "Introduksjon til numerisk fysikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FY1010",
+      "emnenavn": "Fysikk grunnkurs",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "NTNUs egen «Studiets oppbygning»-oversiktsside kaller dette emnet TFY4010, mens den offisielle studieplantabellen for kull 2026 bruker koden FY1010. FY1010 er brukt her siden studieplantabellen er den mer autoritative kilden."
+    },
+    {
+      "emnekode": "HMS0001",
+      "emnenavn": "HMS-kurs for 1. årsstudenter",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4401",
+      "emnenavn": "Matematikk 1D: Kalkulus",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4413",
+      "emnenavn": "Matematikk 2D: Lineær algebra og differensialligninger",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TFY4030",
+      "emnenavn": "Elektrisitet og magnetisme",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FY1020",
+      "emnenavn": "Mekanikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "EXPH0300",
+      "emnenavn": "Examen philosophicum for naturvitenskap og teknologi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MA1103",
+      "emnenavn": "Flervariabel analyse og vektoranalyse",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TFY4165",
+      "emnenavn": "Termisk fysikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4240",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TFY4160",
+      "emnenavn": "Bølgefysikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MA2106",
+      "emnenavn": "Kompleks funksjonsteori og differensialligninger",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FY2008",
+      "emnenavn": "Numerisk fysikk 2",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TFY4215",
+      "emnenavn": "Moderne fysikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TFY4195",
+      "emnenavn": "Innføring i optikk og fotonikk",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TFY4220",
+      "emnenavn": "Faste stoffers fysikk",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TFY4230",
+      "emnenavn": "Statistisk fysikk",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TFY4561",
+      "emnenavn": "Fysikk, prosjekt",
+      "studiepoeng": 15,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Dette er bacheloroppgaven i programmet (status O i studieplantabellen, merket «Fysikk, prosjekt»)."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er NTNUs offisielle studieplantabell for kull 2026 (status-kolonnen: O = obligatorisk, V/VA/VB = valgbart/valgbare alternativer), hentet via studieplan-visningen på ntnu.no/studier/studieplan for programkode BFY. Programmet har 180 sp totalt og er ikke delt i formelle studieretninger. Obligatoriske emner utgjør 142,5 sp; resten (37,5 sp) er valgbare emner/områdeemner: 2. år høst har et valgbart områdeemne (f.eks. ØKO1001 Ledelse, 7,5 sp), 2. år vår har to valgbare 7,5 sp-slots (bl.a. FY2450 Astrofysikk og områdeemner som BI2081, ITO1000, IØ2000), 3. år høst har to valgbare 7,5 sp-slots blant en lengre liste av emner ordnet i grupper (bl.a. TFY4185, TFY4345, TTT4234, FY2045 i gruppe VA og TFY4300, FY3201, TFY4280 i gruppe VB, og listen var avkortet med «vis mer» på siden slik at flere valgbare emner kan finnes), og 3. år vår har ett valgbart 7,5 sp-emne (bl.a. TFY4240 Elektromagnetisk teori). Ingen av disse valgbare emnene er tatt med i obligatoriske-listen. Bachelorprogrammet gir grunnlag for opptak til NTNUs masterprogram i fysikk, men har ingen egne obligatoriske spesialiseringsretninger i bachelorgraden."
+}

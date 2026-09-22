@@ -1,0 +1,86 @@
+{
+  "entryId": "ntnu_ikb",
+  "programnavn": "Industriell kjemi og bioteknologi (master 5 år, lagt ned)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2022/2023",
+  "kilder": [
+    "https://www.ntnu.no/studier/mtkj",
+    "https://www.ntnu.no/studier/mtkj/studiets-oppbygning",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=MTKJ&year=2024",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=MTKJ&year=2022"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 142.5,
+  "obligatoriske": [
+    { "emnekode": "EXPH0300", "emnenavn": "Examen philosophicum for naturvitenskap og teknologi", "studiepoeng": 7.5, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "HMS0001", "emnenavn": "HMS-kurs for 1. årsstudenter", "studiepoeng": 0, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "TDT4110", "emnenavn": "Informasjonsteknologi, grunnkurs", "studiepoeng": 7.5, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "TMA4101", "emnenavn": "Matematikk 1", "studiepoeng": 7.5, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "TMT4115", "emnenavn": "Generell kjemi", "studiepoeng": 7.5, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "SIVINGPRA", "emnenavn": "Gjennomført krav om arbeidslivserfaring", "studiepoeng": 0, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": "Praksiskrav (12 uker arbeidslivserfaring) registrert som eget obligatorisk 0 sp-element i studieplanen; kan i praksis oppfylles når som helst i studieløpet og må være oppfylt før masteroppgaven kan startes." },
+    { "emnekode": "TKP4120", "emnenavn": "Prosessteknikk", "studiepoeng": 7.5, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "TMA4106", "emnenavn": "Matematikk 2", "studiepoeng": 7.5, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "TMA4245", "emnenavn": "Statistikk", "studiepoeng": 7.5, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "TMT4130", "emnenavn": "Uorganisk kjemi", "studiepoeng": 7.5, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "TFY4104", "emnenavn": "Fysikk", "studiepoeng": 7.5, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "TKJ4102", "emnenavn": "Organisk kjemi, grunnkurs", "studiepoeng": 7.5, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "TMA4111", "emnenavn": "Matematikk 3", "studiepoeng": 7.5, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "TMT4122", "emnenavn": "Generell og organisk kjemi, laboratoriekurs", "studiepoeng": 7.5, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "TBT4170", "emnenavn": "Bioteknologi", "studiepoeng": 7.5, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "TKJ4162", "emnenavn": "Fysikalsk kjemi: Kjemisk termodynamikk", "studiepoeng": 7.5, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "TKP4100", "emnenavn": "Strømning og varmetransport", "studiepoeng": 7.5, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "TMA4121", "emnenavn": "Matematikk 4", "studiepoeng": 7.5, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "TKP4105", "emnenavn": "Separasjonsteknikk", "studiepoeng": 7.5, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "TKP4110", "emnenavn": "Kjemisk reaksjonsteknikk", "studiepoeng": 7.5, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "KJ1041", "emnenavn": "Fysikalsk kjemi: molekylær struktur", "studiepoeng": 7.5, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": "I tillegg skal studenten 3. år høst velge minst ett emne fra en C-gruppe (TBT4102 Biokjemi 1 ELLER TMT4186 Materialkjemi, begge 7,5 sp); dette er et reelt valg mellom alternativer og er derfor ikke tatt med i obligatoriske-lista." }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Bioteknologi",
+      "obligatoriske": [
+        { "emnekode": "TBT4107", "emnenavn": "Biokjemi 2", "studiepoeng": 7.5, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TBT4110", "emnenavn": "Mikrobiologi", "studiepoeng": 7.5, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TIØ4252", "emnenavn": "Teknologiledelse", "studiepoeng": 7.5, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TBT4135", "emnenavn": "Biopolymerer", "studiepoeng": 7.5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TBT4140", "emnenavn": "Biokjemiteknikk", "studiepoeng": 7.5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TBT4146", "emnenavn": "Molekylærgenetikk", "studiepoeng": 7.5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "HMS0003", "emnenavn": "HMS-kurs for masterstudenter", "studiepoeng": 0, "aar": 5, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TBT4500", "emnenavn": "Bioteknologi, fordypningsprosjekt", "studiepoeng": 15, "aar": 5, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TBT4900", "emnenavn": "Bioteknologi, masteroppgave", "studiepoeng": 30, "aar": 5, "semester": "vår", "dbhEmnekoder": [], "merknad": null }
+      ]
+    },
+    {
+      "navn": "Kjemi",
+      "obligatoriske": [
+        { "emnekode": "TIØ4252", "emnenavn": "Teknologiledelse", "studiepoeng": 7.5, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": "Felles for retningens hovedprofiler. Retningen «Kjemi» deles videre i tre hovedprofiler (Analytisk kjemi, Anvendt teoretisk kjemi, Organisk kjemi) med egne obligatoriske/valgbare emner utover dette; disse er ikke enkeltvis tatt med her." },
+        { "emnekode": "HMS0003", "emnenavn": "HMS-kurs for masterstudenter", "studiepoeng": 0, "aar": 5, "semester": "høst", "dbhEmnekoder": [], "merknad": "Felles for retningens hovedprofiler." },
+        { "emnekode": "TKJ4900", "emnenavn": "Kjemi, masteroppgave", "studiepoeng": 30, "aar": 5, "semester": "vår", "dbhEmnekoder": [], "merknad": "Felles for retningens hovedprofiler." }
+      ]
+    },
+    {
+      "navn": "Kjemisk prosessteknologi",
+      "obligatoriske": [
+        { "emnekode": "TIØ4252", "emnenavn": "Teknologiledelse", "studiepoeng": 7.5, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": "Felles for retningens fire hovedprofiler (Prosess-systemteknikk, Kolloid- og polymerkjemi, Miljø- og reaktorteknologi, Katalyse og petrokjemi)." },
+        { "emnekode": "TKP4107", "emnenavn": "Kjemiteknisk termodynamikk", "studiepoeng": 7.5, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": "Felles for retningens hovedprofiler." },
+        { "emnekode": "TKP4165", "emnenavn": "Prosessutforming", "studiepoeng": 7.5, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": "Felles for retningens hovedprofiler." },
+        { "emnekode": "TKP4170", "emnenavn": "Prosjektering av prosessanlegg", "studiepoeng": 7.5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": "Felles for retningens hovedprofiler." },
+        { "emnekode": "HMS0003", "emnenavn": "HMS-kurs for masterstudenter", "studiepoeng": 0, "aar": 5, "semester": "høst", "dbhEmnekoder": [], "merknad": "Felles for retningens hovedprofiler. Hver hovedprofil har i tillegg sitt eget obligatoriske 7,5 sp fordypningsemne (f.eks. TKP4555, TKP4525, TKP4535 eller TKP4515 avhengig av hovedprofil); disse er ikke tatt med her siden de er hovedprofilspesifikke." },
+        { "emnekode": "TKP4900", "emnenavn": "Kjemisk prosessteknologi, masteroppgave", "studiepoeng": 30, "aar": 5, "semester": "vår", "dbhEmnekoder": [], "merknad": "Felles for retningens hovedprofiler." }
+      ]
+    },
+    {
+      "navn": "Materialkjemi og energiteknologi",
+      "obligatoriske": [
+        { "emnekode": "TIØ4252", "emnenavn": "Teknologiledelse", "studiepoeng": 7.5, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TMT4252", "emnenavn": "Elektrokjemi", "studiepoeng": 7.5, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TMT4301", "emnenavn": "Materialkarakterisering", "studiepoeng": 7.5, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TMT4155", "emnenavn": "Heterogene likevekter og fasediagram", "studiepoeng": 7.5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "HMS0003", "emnenavn": "HMS-kurs for masterstudenter", "studiepoeng": 0, "aar": 5, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TMT4500", "emnenavn": "Materialteknologi, fordypningsprosjekt", "studiepoeng": 15, "aar": 5, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TMT4900", "emnenavn": "Materialkjemi og energiteknologi, masteroppgave", "studiepoeng": 30, "aar": 5, "semester": "vår", "dbhEmnekoder": [], "merknad": null }
+      ]
+    }
+  ],
+  "merknad": "MTKJ (Industriell kjemi og bioteknologi) er lagt ned fra og med opptaket 2025 og erstattet av MTKMB, «Industriell kjemi, materialer og bioteknologi» (se ntnu_ikmb.json). Siste opptatte kull er 2024, men dette kullet er per uttrekksdato (22.09.2026) kun kommet til 3. studieår i NTNUs studieplan-verktøy, slik at emnekoder for år 4-5 for kull 2024 ikke er publisert ennå. Denne filen bruker derfor kull 2022 (studieplan hentet fra samme verktøy: studieplan#programmeCode=MTKJ&year=2022) som kilde for den fullstendige 5-årsplanen, siden dette er det nyeste kullet med alle fem studieår ferdig publisert; år 1-3 er kryss-sjekket mot kull 2024 og er identiske i emnekode og plassering. Studieplanen deler seg i fire studieretninger fra 3. år vår (Bioteknologi, Kjemi, Kjemisk prosessteknologi, Materialkjemi og energiteknologi); retningen «Kjemi» deler seg videre i hovedprofiler (Analytisk kjemi, Anvendt teoretisk kjemi, Organisk kjemi) og «Kjemisk prosessteknologi» i fire hovedprofiler (Prosess-systemteknikk, Kolloid- og polymerkjemi, Miljø- og reaktorteknologi, Katalyse og petrokjemi). Spesialiseringer-lista under inneholder kun de emnene som er markert obligatorisk (status «O») og som er FELLES for alle hovedprofiler innad i retningen; hovedprofilspesifikke obligatoriske/valgbare emner (f.eks. ulike fordypningsemner i 5. år, eller TKJ4170/TKJ4175/TKJ4200/TKJ4205-valgene i Kjemi-retningens hovedprofiler) er ikke tatt med enkeltvis. I tillegg til de obligatoriske emnene har alle retninger: et obligatorisk valg mellom TBT4102 og TMT4186 i 3. år høst (7,5 sp, forklart i emnemerknad), et valgfritt «Eksperter i team»-emne (7,5 sp, normalt 4. år vår, mange titalls alternative emnekoder), krav om 12 ukers arbeidslivserfaring (SIVINGPRA, 0 sp), samt en rekke retningsspesifikke valgbare emner (VA/VB-grupper) som fyller opp til 30 sp/semester. obligatoriskeStudiepoeng (142,5) dekker kun de fellesemnene som er identiske uansett retning; hver retning legger i tillegg til egne obligatoriske emner (37,5-90 sp, se spesialiseringer) samt valgfrie/hovedprofilspesifikke emner som ikke er itemisert her, slik at summen blir 300 sp for alle retninger."
+}

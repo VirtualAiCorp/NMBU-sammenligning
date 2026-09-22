@@ -1,0 +1,296 @@
+{
+  "entryId": "uia_ki",
+  "programnavn": "Kunstig intelligens (master 5 år)",
+  "institusjon": "Universitetet i Agder",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.uia.no/studier/program/kunstig-intelligens-master-5-ar/",
+    "https://www.uia.no/studier/program/kunstig-intelligens-master-5-ar/studieplaner/2026h.html"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 255,
+  "obligatoriske": [
+    {
+      "emnekode": "EX-109",
+      "emnenavn": "Filosofi for mediefag og teknologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IKT101",
+      "emnenavn": "Grunnleggende softwareutvikling",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IKT111",
+      "emnenavn": "Concepts of Artificial Intelligence",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MA-178",
+      "emnenavn": "Matematikk 1",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ORG001",
+      "emnenavn": "HMS-kurs",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IKT103",
+      "emnenavn": "Videregående softwareutvikling",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IKT105",
+      "emnenavn": "Datamodellering og databaser",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IKT112",
+      "emnenavn": "Concepts of Machine Learning",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MA-179",
+      "emnenavn": "Matematikk 2",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MA-180",
+      "emnenavn": "Diskret matematikk 1",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS129",
+      "emnenavn": "Fysikk for IKT",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IKT110",
+      "emnenavn": "Artificial Intelligence Architecture",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IKT202",
+      "emnenavn": "Software Engineering",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IKT203",
+      "emnenavn": "Algoritmer og datastrukturer",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ELE213",
+      "emnenavn": "Signalbehandling",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IKT204",
+      "emnenavn": "Datakommunikasjon",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IKT218",
+      "emnenavn": "Avanserte operativsystemer",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MA-223",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IKT213",
+      "emnenavn": "Machine Vision",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MA-224",
+      "emnenavn": "Diskret matematikk 2",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen viser bare 15 obligatoriske stp + 7,5 valgfrie stp (velg ett av IKT212, IKT300, PRA204 eller PS-102) for dette semesteret, altså 22,5 av normalt 30 stp; femte semester er lagt til rette for utveksling, noe som kan forklare avviket."
+    },
+    {
+      "emnekode": "DAT304",
+      "emnenavn": "Bacheloroppgave, data",
+      "studiepoeng": 20,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IKT215",
+      "emnenavn": "Pattern Recognition",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IKT457",
+      "emnenavn": "Tsetlin Machines",
+      "studiepoeng": 7.5,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IKT465",
+      "emnenavn": "Research Methods",
+      "studiepoeng": 7.5,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MA-447",
+      "emnenavn": "AI Mathematics",
+      "studiepoeng": 7.5,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "I tillegg skal studenten velge ett ikke-STEM-emne på 7,5 stp (ING400 Forhandling og avtaleprosesser i ingeniørprosjekter eller ING402 Circular economy and eco-design), som ikke er tatt med her."
+    },
+    {
+      "emnekode": "IKT452",
+      "emnenavn": "Computer Vision",
+      "studiepoeng": 7.5,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IKT460",
+      "emnenavn": "Reinforcement Learning",
+      "studiepoeng": 7.5,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IKT468",
+      "emnenavn": "Applied Algorithms",
+      "studiepoeng": 7.5,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IKT469",
+      "emnenavn": "Deep Neural Networks",
+      "studiepoeng": 7.5,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IKT464",
+      "emnenavn": "Advanced ICT Project",
+      "studiepoeng": 7.5,
+      "aar": 5,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen viser bare 7,5 obligatoriske stp + 7,5 valgfrie stp (velg ett av flere valgemner, bl.a. IKT433, IKT436, IKT454, IKT467, IKT526, MAS416, MM-403 eller PRA400) for dette semesteret, altså 15 av normalt 30 stp; utveksling er også lagt til rette i niende semester, noe som kan forklare avviket."
+    },
+    {
+      "emnekode": "IKT590",
+      "emnenavn": "Master's Thesis",
+      "studiepoeng": 30,
+      "aar": 5,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er UiAs studieplan for Kunstig intelligens, sivilingeniør (5-årig masterprogram), gjeldende fra høsten 2026 (kull 2026–2031). Programmet har ingen formelle studieretninger/spesialiseringer med egne obligatoriske emnelister - alle studenter følger samme emneplan. De tre første årene samkjøres med bachelorprogrammet i data, de to siste med masterprogrammet i Artificial Intelligence and IoT. Valgfrie emner/emnegrupper (5. semester: velg ett av IKT212, IKT300, PRA204 15 stp-alternativ eller PS-102; 7. semester: velg ett ikke-STEM-emne, ING400 eller ING402; 9. semester: velg ett av flere valgemner, bl.a. IKT433, IKT436, IKT454, IKT467, IKT526, MAS416, MM-403 eller PRA400 15 stp-alternativ) er ikke tatt med i obligatoriske-listen. Summen av obligatoriske stp i studieplanen (255 av 300) reflekterer at 5. og 9. semester ifølge kildesiden bare summerer til hhv. 22,5 og 15 stp (obligatorisk + valgfritt), altså mindre enn et fullt semester på 30 stp - dette kan skyldes at disse semestrene er lagt til rette for utveksling, eller en visningsuklarhet i kildesystemet; tallet er gjengitt slik studieplanen faktisk viser det, uten å gjette på manglende emner."
+}

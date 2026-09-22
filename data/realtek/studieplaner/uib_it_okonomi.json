@@ -1,0 +1,206 @@
+{
+  "entryId": "uib_it_okonomi",
+  "programnavn": "Informasjonsteknologi og økonomi (master 5 år)",
+  "institusjon": "Universitetet i Bergen",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.uib.no/studier/MASV-IT%C3%98K",
+    "https://www.uib.no/studier/program/informasjonsteknologi-og-okonomi-integrert-masterprogram-sivilingenior/plan"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 230,
+  "obligatoriske": [
+    {
+      "emnekode": "ITØK101",
+      "emnenavn": "Mikroøkonomi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INFO132",
+      "emnenavn": "Innføring i programmering",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT111",
+      "emnenavn": "Grunnkurs i matematikk I",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ITØK102",
+      "emnenavn": "Makroøkonomi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INFO135",
+      "emnenavn": "Viderekommende programmering",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MNF130",
+      "emnenavn": "Diskrete strukturer",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ECON210",
+      "emnenavn": "Velferd og økonomisk politikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "STAT110",
+      "emnenavn": "Grunnkurs i statistikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF170",
+      "emnenavn": "Modellering og optimering",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ITØK281",
+      "emnenavn": "Utplassering i informasjonsteknologi og økonomi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ITØK264",
+      "emnenavn": "Financial Technology",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ECON263",
+      "emnenavn": "Bedriftsøkonomi for samfunnsøkonomer",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ITØK204",
+      "emnenavn": "Økonometri og dataanalyse",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF161",
+      "emnenavn": "Innføring i data science",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF264",
+      "emnenavn": "Machine Learning",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ITØK170",
+      "emnenavn": "Energi- og miljøfysikk",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "EXPHIL",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen oppgir bare «Examen philosophicum» uten å presisere hvilken av UiBs fakultetsvarianter (bl.a. EXPHIL-SVSEM, EXPHIL-SVEKS, EXPHIL-MNEKS, EXPHIL-HFSEM, EXPHIL-MOSEM) som gjelder for ITØK-studenter; emnekoden «EXPHIL» er derfor en generisk gjengivelse av studieplanteksten, ikke en offisiell emnekode. I tillegg er det 10 sp valgemne i dette semesteret (ikke tatt med)."
+    },
+    {
+      "emnekode": "ECON340",
+      "emnenavn": "Økonometri I",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ECON310",
+      "emnenavn": "Mikroøkonomisk analyse",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "I tillegg er det 10 sp valgemne i dette semesteret (ikke tatt med)."
+    },
+    {
+      "emnekode": "ITØK381",
+      "emnenavn": "Eksperter i team",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "I 8. semester er det i tillegg et obligatorisk valg mellom ITØK320 Supply Chain Analytics, ECON364 Corporate Finance og ECON360 Strategisk bedriftsadferd og markedsmakt (10 sp), samt 10 sp fritt valgemne - ingen av disse er tatt med i obligatoriske-listen."
+    },
+    {
+      "emnekode": "ITØK391",
+      "emnenavn": "Masteroppgåve",
+      "studiepoeng": 30,
+      "aar": 5,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er UiBs studieplan for MASV-ITØK, gjeldende fra høsten 2026 (sist henta frå studieplansida same dato). Programmet har ingen formelle studieretninger/spesialiseringar med eigne obligatoriske emnelister - alle studentar følgjer same emneplan. Studieplansida oppgir eksplisitt at graden totalt skal innehalde minimum 300 studiepoeng, fordelt på 200 sp obligatoriske emne (19 namngitte emne à 10 sp, pluss eitt obligatorisk val mellom tre alternativ à 10 sp i 8. semester), 10 sp Examen philosophicum, 60 sp valemne og 30 sp masteroppgåve (ITØK391). 9. semester består i sin heilheit av valemne (30 sp) og er ikkje teke med. obligatoriskeStudiepoeng (230) i denne fila er summen av dei 19 namngitte obligatoriske emna (190 sp) + Examen philosophicum (10 sp) + masteroppgåva (30 sp); det obligatoriske valet mellom ITØK320/ECON364/ECON360 (10 sp) og all valfri undervising (60 sp) er halde utanfor, i tråd med regelen om at obligatoriske val mellom alternativ ikkje skal førast opp som eit bestemt emne."
+}

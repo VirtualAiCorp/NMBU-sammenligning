@@ -1,0 +1,206 @@
+{
+  "entryId": "uib_datascience",
+  "programnavn": "Data science (master 5 år, sivilingeniør)",
+  "institusjon": "Universitetet i Bergen",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.uib.no/studier/5MAMN-DSC",
+    "https://www4.uib.no/studier/program/data-science-integrert-masterprogram-sivilingenior/plan"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 230,
+  "obligatoriske": [
+    {
+      "emnekode": "MAT111",
+      "emnenavn": "Grunnkurs i matematikk I",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF100",
+      "emnenavn": "Programmering 1",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "STAT110",
+      "emnenavn": "Grunnkurs i statistikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF115",
+      "emnenavn": "Databasar og modellering",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Erstattast av DAT107 Databasar (Høgskulen på Vestlandet) frå og med våren 2028."
+    },
+    {
+      "emnekode": "MNF130",
+      "emnenavn": "Diskrete strukturar",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF101",
+      "emnenavn": "Programmering 2",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF170",
+      "emnenavn": "Modellering og optimering",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF161",
+      "emnenavn": "Innføring i data science",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF102",
+      "emnenavn": "Algoritmar, datastrukturar og programmering",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT121",
+      "emnenavn": "Lineær algebra",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF112",
+      "emnenavn": "Innføring i systemutvikling",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "STAT200",
+      "emnenavn": "Anvendt statistikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF264",
+      "emnenavn": "Innføring i maskinlæring",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INNOV201",
+      "emnenavn": "Innovasjon ved designtenkning",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF234",
+      "emnenavn": "Algoritmer",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF226",
+      "emnenavn": "Programvaresikkerhet",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "AIKI210",
+      "emnenavn": "Etikk i kunstig intelligens",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "DSC319",
+      "emnenavn": "Praksis i data science",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF250",
+      "emnenavn": "Dataorientert visuell berekning",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "DSC300",
+      "emnenavn": "Data science prosjektstyring",
+      "studiepoeng": 10,
+      "aar": 5,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "DSC399K",
+      "emnenavn": "Masteroppgåve",
+      "studiepoeng": 30,
+      "aar": 5,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Programmet (5MAMN-DSC) har to studieretningar frå 4. semester: generell data science og medisinsk data science (studentane vel retning i løpet av 4. semester). Obligatoriske-listen over inneheld kun dei emna som er obligatoriske for BEGGE retningar (jf. UiBs eigne lister «For retninga generell data science er følgjande emnar obligatoriske» og «For retninga medisinsk data science er følgjande emnar obligatoriske», som er identiske bortsett frå dei retningsspesifikke emna nemnt her i merknaden). Retningsspesifikke obligatoriske emne er IKKE tatt med: generell data science har i tillegg PHYS116 (5. semester, 10 sp); medisinsk data science har i tillegg KJEM220, BINF100, BMEDKRO (6. semester, 10 sp kvar) og DSC316 (9. semester, 20 sp). Ex.phil (10 sp) er obligatorisk for begge retningar, men er ikkje tatt med i emnekode-lista sidan UiB sjølv listar «Ex.phil» som ein kategori (ikkje ein spesifikk emnekode) i «Innføringsemne»-feltet, og fordi plasseringa varierer (5. semester for medisinsk data science, 6. semester for generell data science). Kvart semester i studieplanen har normalt 3 emne à 10 sp (30 sp/semester); alle obligatoriske emne i lista er 10 sp, unntatt DSC399K (masteroppgåve, 30 sp i 10. semester). Studiepoeng-summen (230 sp felles obligatorisk + 10 sp Ex.phil + retningsspesifikke emne + valfrie emne) stemmer med totalen på 300 sp for begge retningar (generell: 230+10(Ex.phil)+10(PHYS116)+50(valfritt)=300; medisinsk: 230+10(Ex.phil)+10+10+10+20(retningsemne)+10(valfritt)=300). Emnenamn er henta frå UiBs emnesider (uib.no/emne/<kode>)."
+}

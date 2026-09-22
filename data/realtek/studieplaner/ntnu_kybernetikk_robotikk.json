@@ -1,0 +1,356 @@
+{
+  "entryId": "ntnu_kybernetikk_robotikk",
+  "programnavn": "Kybernetikk og robotikk (master 5 år)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://www.ntnu.no/studier/mttk",
+    "https://www.ntnu.no/studier/mttk/studiets-oppbygning",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=MTTK&year=2025",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=MTTK&year=2021"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 210,
+  "obligatoriske": [
+    {
+      "emnekode": "HMS0002",
+      "emnenavn": "HMS-kurs for 1. årsstudenter",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TTK4100",
+      "emnenavn": "Kybernetikk, introduksjon",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4400",
+      "emnenavn": "Matematikk 1: Kalkulus og lineær algebra",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TDT4110",
+      "emnenavn": "Informasjonsteknologi, grunnkurs",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TTT4203",
+      "emnenavn": "Innføring i analog og digital elektronikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SIVINGPRA",
+      "emnenavn": "Gjennomført krav om arbeidslivserfaring",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "helår",
+      "dbhEmnekoder": [],
+      "merknad": "Praksiskrav (arbeidslivserfaring) for sivilingeniørgraden. Registreres uten fast semesterplassering i NTNUs studieplanverktøy (vist under 1. år høst), men gjennomføres normalt over en eller flere sommerperioder i løpet av studiet."
+    },
+    {
+      "emnekode": "TMA4410",
+      "emnenavn": "Matematikk 2A: Lineær algebra, differensialligninger, integraltransformer og rekker",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4245",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TDT4102",
+      "emnenavn": "Prosedyre- og objektorientert programmering",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TTK4101",
+      "emnenavn": "Instrumentering og måleteknikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "EXPH0300",
+      "emnenavn": "Examen philosophicum for naturvitenskap og teknologi",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TFY4115",
+      "emnenavn": "Fysikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4420",
+      "emnenavn": "Matematikk 3A: Flervariabel analyse og integraltransformer",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TTK4111",
+      "emnenavn": "Reguleringsteknikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TMA4430",
+      "emnenavn": "Matematikk 4A: Vektoranalyse, partielle differensialligninger og approksimasjon",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TTK4235",
+      "emnenavn": "Tilpassede datasystemer",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TTK4240",
+      "emnenavn": "Industriell elektroteknikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TTK4245",
+      "emnenavn": "Kunstig intelligens for robotikk og automatisering",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TDT4120",
+      "emnenavn": "Algoritmer og datastrukturer",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Hentet fra kull 2021, siste kull med fullstendig 5-årig studieplan i NTNUs studieplanverktøy. Se generell merknad om kull-grunnlag for år 3-5."
+    },
+    {
+      "emnekode": "TIØ4252",
+      "emnenavn": "Teknologiledelse",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Hentet fra kull 2021. Se generell merknad om kull-grunnlag for år 3-5."
+    },
+    {
+      "emnekode": "TTK4115",
+      "emnenavn": "Lineær systemteori",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Hentet fra kull 2021. Se generell merknad om kull-grunnlag for år 3-5."
+    },
+    {
+      "emnekode": "TTK4130",
+      "emnenavn": "Modellering og simulering",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Hentet fra kull 2021. Se generell merknad om kull-grunnlag for år 3-5."
+    },
+    {
+      "emnekode": "TTK4135",
+      "emnenavn": "Optimalisering og regulering",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Hentet fra kull 2021. Se generell merknad om kull-grunnlag for år 3-5."
+    },
+    {
+      "emnekode": "TTK4145",
+      "emnenavn": "Sanntidsprogrammering",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Hentet fra kull 2021. Se generell merknad om kull-grunnlag for år 3-5."
+    },
+    {
+      "emnekode": "TTK4550",
+      "emnenavn": "Teknisk kybernetikk, fordypningsprosjekt",
+      "studiepoeng": 15,
+      "aar": 5,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Obligatorisk i alle 12 hovedprofiler (kull 2021-data). Se generell merknad om kull-grunnlag for år 3-5."
+    },
+    {
+      "emnekode": "TTK4900",
+      "emnenavn": "Teknisk kybernetikk, masteroppgave",
+      "studiepoeng": 30,
+      "aar": 5,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Obligatorisk i alle 12 hovedprofiler (kull 2021-data). Se generell merknad om kull-grunnlag for år 3-5."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Energi og prosesstyring - Prosessregulering",
+      "obligatoriske": [
+        { "emnekode": "TTK4150", "emnenavn": "Ulineære systemer", "studiepoeng": 7.5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TTK4215", "emnenavn": "Adaptiv regulering", "studiepoeng": 7.5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TTK4210", "emnenavn": "Avansert regulering av industrielle prosesser", "studiepoeng": 7.5, "aar": 4, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TTK4555", "emnenavn": "Teknisk kybernetikk, fordypningsemne", "studiepoeng": 7.5, "aar": 5, "semester": "høst", "dbhEmnekoder": [], "merknad": null }
+      ]
+    },
+    {
+      "navn": "Energi og prosesstyring - Styring av smarte nett og fornybar energi",
+      "obligatoriske": [
+        { "emnekode": "TTK4150", "emnenavn": "Ulineære systemer", "studiepoeng": 7.5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TTK4555", "emnenavn": "Teknisk kybernetikk, fordypningsemne", "studiepoeng": 7.5, "aar": 5, "semester": "høst", "dbhEmnekoder": [], "merknad": null }
+      ]
+    },
+    {
+      "navn": "Medisinske og biologiske systemer - Biomedisinsk kybernetikk",
+      "obligatoriske": [
+        { "emnekode": "FI3107", "emnenavn": "Bioteknologi og etikk", "studiepoeng": 7.5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TTK4270", "emnenavn": "Biomedisinsk instrumentering og regulering", "studiepoeng": 7.5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TTT4120", "emnenavn": "Digital signalbehandling", "studiepoeng": 7.5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TTK4260", "emnenavn": "Multivariat dataanalyse og maskinlæring", "studiepoeng": 7.5, "aar": 4, "semester": "vår", "dbhEmnekoder": [], "merknad": null }
+      ]
+    },
+    {
+      "navn": "Medisinske og biologiske systemer - Havbiokybernetikk",
+      "obligatoriske": [
+        { "emnekode": "TTK4555", "emnenavn": "Teknisk kybernetikk, fordypningsemne", "studiepoeng": 7.5, "aar": 5, "semester": "høst", "dbhEmnekoder": [], "merknad": "Eneste låste obligatoriske emne i år 4-5 utover felleslisten for denne hovedprofilen ifølge kull 2021-dataene; resten av studiepoengene i år 4 dekkes av valgbare emner (VA/VB)." }
+      ]
+    },
+    {
+      "navn": "Medisinske og biologiske systemer - Medisinsk billeddannelse",
+      "obligatoriske": [
+        { "emnekode": "MEDT4161", "emnenavn": "Medisinsk Ultralydavbildning", "studiepoeng": 7.5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TTT4120", "emnenavn": "Digital signalbehandling", "studiepoeng": 7.5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "MEDT4165", "emnenavn": "Signalbehandling i ultralyd-avbildning", "studiepoeng": 7.5, "aar": 4, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TTK4555", "emnenavn": "Teknisk kybernetikk, fordypningsemne", "studiepoeng": 7.5, "aar": 5, "semester": "høst", "dbhEmnekoder": [], "merknad": null }
+      ]
+    },
+    {
+      "navn": "Roboter og fartøystyring - Autonome systemer",
+      "obligatoriske": [
+        { "emnekode": "TTK4190", "emnenavn": "Navigasjon og fartøystyring", "studiepoeng": 7.5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TTK4250", "emnenavn": "Sensorfusjon", "studiepoeng": 7.5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TTK4255", "emnenavn": "Robotsyn", "studiepoeng": 7.5, "aar": 4, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TTK4555", "emnenavn": "Teknisk kybernetikk, fordypningsemne", "studiepoeng": 7.5, "aar": 5, "semester": "høst", "dbhEmnekoder": [], "merknad": null }
+      ]
+    },
+    {
+      "navn": "Roboter og fartøystyring - Navigasjon og fartøystyring",
+      "obligatoriske": [
+        { "emnekode": "TTK4190", "emnenavn": "Navigasjon og fartøystyring", "studiepoeng": 7.5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TTK4555", "emnenavn": "Teknisk kybernetikk, fordypningsemne", "studiepoeng": 7.5, "aar": 5, "semester": "høst", "dbhEmnekoder": [], "merknad": null }
+      ]
+    },
+    {
+      "navn": "Roboter og fartøystyring - Robotsystemer",
+      "obligatoriske": [
+        { "emnekode": "TTK4150", "emnenavn": "Ulineære systemer", "studiepoeng": 7.5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TTK4215", "emnenavn": "Adaptiv regulering", "studiepoeng": 7.5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TTK4195", "emnenavn": "Modellering og regulering av roboter", "studiepoeng": 7.5, "aar": 4, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TTK4555", "emnenavn": "Teknisk kybernetikk, fordypningsemne", "studiepoeng": 7.5, "aar": 5, "semester": "høst", "dbhEmnekoder": [], "merknad": null }
+      ]
+    },
+    {
+      "navn": "Tilpassede datasystemer - Innvevde datasystemer",
+      "obligatoriske": [
+        { "emnekode": "TTK4147", "emnenavn": "Sanntidssystemer", "studiepoeng": 7.5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TTK4155", "emnenavn": "Industrielle og innbygde datasystemers konstruksjon", "studiepoeng": 7.5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TTK4175", "emnenavn": "Instrumenteringssystemer og sikkerhet", "studiepoeng": 7.5, "aar": 4, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TTK4555", "emnenavn": "Teknisk kybernetikk, fordypningsemne", "studiepoeng": 7.5, "aar": 5, "semester": "høst", "dbhEmnekoder": [], "merknad": null }
+      ]
+    },
+    {
+      "navn": "Tilpassede datasystemer - Systemteknikk og sikkerhet",
+      "obligatoriske": [
+        { "emnekode": "TTK4147", "emnenavn": "Sanntidssystemer", "studiepoeng": 7.5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": "Identisk med Innvevde datasystemer og Sanntidssystemer i de obligatoriske emnene for kull 2021; profilene skiller seg trolig på valgbare emner (VA/VB), ikke på de låste obligatoriske emnene." },
+        { "emnekode": "TTK4155", "emnenavn": "Industrielle og innbygde datasystemers konstruksjon", "studiepoeng": 7.5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TTK4175", "emnenavn": "Instrumenteringssystemer og sikkerhet", "studiepoeng": 7.5, "aar": 4, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TTK4555", "emnenavn": "Teknisk kybernetikk, fordypningsemne", "studiepoeng": 7.5, "aar": 5, "semester": "høst", "dbhEmnekoder": [], "merknad": null }
+      ]
+    },
+    {
+      "navn": "Tilpassede datasystemer - Sanntidssystemer",
+      "obligatoriske": [
+        { "emnekode": "TTK4147", "emnenavn": "Sanntidssystemer", "studiepoeng": 7.5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": "Identisk med Innvevde datasystemer og Systemteknikk og sikkerhet i de obligatoriske emnene for kull 2021; se merknad der." },
+        { "emnekode": "TTK4155", "emnenavn": "Industrielle og innbygde datasystemers konstruksjon", "studiepoeng": 7.5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TTK4175", "emnenavn": "Instrumenteringssystemer og sikkerhet", "studiepoeng": 7.5, "aar": 4, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TTK4555", "emnenavn": "Teknisk kybernetikk, fordypningsemne", "studiepoeng": 7.5, "aar": 5, "semester": "høst", "dbhEmnekoder": [], "merknad": null }
+      ]
+    },
+    {
+      "navn": "Tilpassede datasystemer - Romsystemer",
+      "obligatoriske": [
+        { "emnekode": "TTK4265", "emnenavn": "Optisk fjernmåling", "studiepoeng": 7.5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TTT4234", "emnenavn": "Romteknologi I", "studiepoeng": 7.5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TTK4260", "emnenavn": "Multivariat dataanalyse og maskinlæring", "studiepoeng": 7.5, "aar": 4, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TTT4150", "emnenavn": "Navigasjonssystemer", "studiepoeng": 7.5, "aar": 4, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TTK4555", "emnenavn": "Teknisk kybernetikk, fordypningsemne", "studiepoeng": 7.5, "aar": 5, "semester": "høst", "dbhEmnekoder": [], "merknad": null }
+      ]
+    }
+  ],
+  "merknad": "Kilde-grunnlag: NTNUs studieplanverktøy viser data per kull, og for gjeldende kull (2025, opptak høsten 2025) er bare år 1-2 offentliggjort ennå (verktøyet markerer selv informasjon utover inneværende studieår som 'foreløpig'). År 1-2 i denne filen er derfor hentet fra kull 2025, mens år 3-5 (inkl. alle hovedprofiler) er hentet fra kull 2021 - siste kull med en fullstendig utfylt 5-årig studieplan i verktøyet. Emnekoder i matematikk-/innføringsfagene ble endret fra og med kull 2025 (f.eks. TMA4100->TMA4400, TMA4105->TMA4410, TMA4120->TMA4420, TTK4105->TTK4111, samt at Statistikk (TMA4245) flyttet fra 2. til 1. år og at Examen philosophicum flyttet fra 2. års vår til 2. års høst); det er ukjent om en tilsvarende revisjon også vil ramme år 3-5 når kull 2025 når dit. Retningsvalg skjer i 4. år (frist normalt medio mai i 3. år) mellom 4 brede studieretninger og totalt 12 hovedprofiler; emner felles for ALLE 12 hovedprofiler (TTK4550 og TTK4900) står i felleslisten 'obligatoriske', mens hver hovedprofils egne låste obligatoriske emner - inkludert TTK4555 som er obligatorisk i 11 av 12 hovedprofiler (unntak: Biomedisinsk kybernetikk, hvor TTK4555 er valgbar) - står under spesialiseringer. I tillegg må alle studenter ta Eksperter i team (EiT), 7,5 sp, i 4. år; dette er en obligatorisk KATEGORI, men studenten velger selv 'landsby' blant svært mange emnekoder, så ingen enkelt emnekode er obligatorisk - EiT er derfor ikke tatt med i noen liste. Praksiskravet SIVINGPRA (0 sp) er også obligatorisk, men uten fast studiepoengverdi utover selve kravet. Emnekoder for BOA-sammenligningens formål er hentet direkte fra studieplanverktøyet og ikke krysssjekket mot DBH (dbhEmnekoder er derfor tomme lister for alle emner, jf. oppdragsinstruksen)."
+}

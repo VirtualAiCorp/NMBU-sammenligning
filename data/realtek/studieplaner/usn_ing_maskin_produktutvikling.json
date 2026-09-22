@@ -1,0 +1,197 @@
+{
+  "entryId": "usn_ing_maskin_produktutvikling",
+  "programnavn": "Ingeniør, maskin – produktutvikling (bachelor)",
+  "institusjon": "Universitetet i Sørøst-Norge",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.usn.no/studier/bachelor-i-ingeniorfag-maskiningenior/produktutvikling/",
+    "https://www.usn.no/studier/studie-og-emneplaner/#/studieplan/ING6_2026_H%C3%98ST"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 140,
+  "obligatoriske": [
+    {
+      "emnekode": "IB1010",
+      "emnenavn": "Ingeniørrollen",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IB1020",
+      "emnenavn": "Programmering for beregning",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "PB1250K",
+      "emnenavn": "DAK 1 - Teknisk tegning",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "PB1240",
+      "emnenavn": "Praktisk innføringsemne",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Kun A-vei/TRES; Y-vei har i stedet Teknisk realfag I og II i 1. år."
+    },
+    {
+      "emnekode": "PB1260",
+      "emnenavn": "Statikk og fasthetslære",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "helår",
+      "dbhEmnekoder": [],
+      "merknad": "Går over 2 semestre (1. år høst og vår)."
+    },
+    {
+      "emnekode": "PB1010",
+      "emnenavn": "Fysikk 1 - Mekanikk",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IB1030",
+      "emnenavn": "Matematikk 1",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "PB1270K",
+      "emnenavn": "DAK 2 - 3D-modellering",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "PB1280",
+      "emnenavn": "Kvalitet og sikkerhet",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Kun A-vei/TRES."
+    },
+    {
+      "emnekode": "PB2010",
+      "emnenavn": "Matematikk 2",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "PB2050",
+      "emnenavn": "Fysikk 2 - Elektrisitetslære",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TSM2350",
+      "emnenavn": "DAK 3 - 3D-modellering videregående",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TSM2430",
+      "emnenavn": "Termodynamikk",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TSM2370",
+      "emnenavn": "Materialteknikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "helår",
+      "dbhEmnekoder": [],
+      "merknad": "Går over 2 semestre (2. år høst og vår)."
+    },
+    {
+      "emnekode": "PB2030",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IB2010",
+      "emnenavn": "Systems Design and Engineering",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TSM2360",
+      "emnenavn": "Fluidmekanikk",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TSM2510",
+      "emnenavn": "Produktutvikling 1",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TSM3180",
+      "emnenavn": "Produktutvikling 2",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TSM3191",
+      "emnenavn": "Produksjonsteknologi",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er USNs studiemodell for ING6 (Bachelor i ingeniørfag, maskiningeniør), Kull 2026 Høst, spesialisering «Produktutvikling» ved campus Kongsberg, A-vei (www.usn.no/studier/studie-og-emneplaner/#/studieplan/ING6_2026_HØST, hentet via nettleser siden innholdet lastes med JavaScript i en web component-tabell). USN oppgir selv «Obligatoriske emner 160 stp.» for denne studieretningen; de 160 sp inkluderer et obligatorisk VALG i 6. semester mellom TS3010 Studentbedrift og TS3000 Bacheloroppgave (begge 20 sp, merket «Valgemne» i kildetabellen). I tråd med instruksjonen om at obligatoriske valg mellom alternativer skal noteres i merknad og ikke i emnelisten, er denne 20 sp-posten holdt utenfor obligatoriske-listen, som dermed summerer seg til 140 sp. I tillegg er det 20 sp frie valgfag i 5. semester (2028 høst), typisk 2 av: VE3010/VE3010D Matematikk 3, VE3040 Ingeniørpraksis, VE3150 Utvikling av smarte systemer, VE3420 Polymerer og kompositter, VE3430 Programmering og mikrokontrollere (evt. et 30 sp utvekslingssemester ING6 UTV). 140 + 20 (bachelor-/studentbedriftsvalg) + 20 (frie valgfag) = 180 sp totalt. Kun A-vei-varianten er hentet ut; TRES- og Y-vei-studenter har samme obligatoriske emner fra og med 2. studieår, men noe ulik oppstart i 1. år (Y-vei har Teknisk realfag I og II i stedet for Praktisk innføringsemne/Kvalitet og sikkerhet). PB1260 og TSM2370 løper over to semestre og er ført med semester=\"helår\"."
+}

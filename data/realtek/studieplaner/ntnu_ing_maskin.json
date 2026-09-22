@@ -1,0 +1,174 @@
+{
+  "entryId": "ntnu_ing_maskin",
+  "programnavn": "Ingeniør, maskin (bachelor)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://www.ntnu.no/studier/bimaskin",
+    "https://www.ntnu.no/studier/bimaskin/studiets-oppbygning",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=BIMASKIN&year=2025",
+    "https://www.ntnu.no/studier/emner/MAST2910/2025"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 120,
+  "obligatoriske": [
+    {
+      "emnekode": "HMST1001",
+      "emnenavn": "HMS og praksiskurs Maskin",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IMAT1002",
+      "emnenavn": "Matematikk for ingeniørfag 1",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INGT1002",
+      "emnenavn": "Programmering, numerikk og sikkerhet",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAST1101",
+      "emnenavn": "Maskinteknikk 1",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MEKT1101",
+      "emnenavn": "Mekanikk 1",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IFYT1000",
+      "emnenavn": "Fysikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IMAT2022",
+      "emnenavn": "Matematikk for ingeniørfag 2 B",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAST1102",
+      "emnenavn": "Maskinteknikk 2",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAST2200",
+      "emnenavn": "Materialteknikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "EXPH0600",
+      "emnenavn": "Examen philosophicum for ingeniørfag",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Felles for begge studieretninger (Industriell drift og vedlikehold; Maskinkonstruksjon)."
+    },
+    {
+      "emnekode": "FENT1011",
+      "emnenavn": "Termodynamikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Felles for begge studieretninger."
+    },
+    {
+      "emnekode": "ISTT1002",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Felles for begge studieretninger."
+    },
+    {
+      "emnekode": "TPK4125",
+      "emnenavn": "Mekatronikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Felles for begge studieretninger."
+    },
+    {
+      "emnekode": "MAST2910",
+      "emnenavn": "Bacheloroppgave Maskin",
+      "studiepoeng": 22.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Ett emne på 22,5 sp som løper over 2 semestre (bekreftet på NTNUs emneside: 'Varighet 2 semestre'). Studieplanverktøyet viser det som to rader: 'del 1 av 2' i 3. år høst (uten oppgitt studiepoengverdi der) og 'del 2 av 2' i 3. år vår (22,5 sp). Her ført som ett emne i vårsemesteret for å unngå dobbelttelling av studiepoeng; emnet er obligatorisk for begge studieretninger."
+    },
+    {
+      "emnekode": "INGT2301",
+      "emnenavn": "Ingeniørfaglig systemtenkning",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Felles for begge studieretninger."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Industriell drift og vedlikehold",
+      "obligatoriske": [
+        { "emnekode": "MAST2003", "emnenavn": "Drift og vedlikehold I", "studiepoeng": 7.5, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "MAST2004", "emnenavn": "Prosjektoppgave Industriell drift og vedlikehold", "studiepoeng": 7.5, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "MAST2006", "emnenavn": "Drift og vedlikehold II", "studiepoeng": 7.5, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "MAST2012", "emnenavn": "Tilstandsbasert drift og vedlikehold", "studiepoeng": 7.5, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "TPK4100", "emnenavn": "Produksjonsledelse", "studiepoeng": 7.5, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": "Obligatorisk kun for denne studieretningen; valgbart (VB) for Maskinkonstruksjon." }
+      ]
+    },
+    {
+      "navn": "Maskinkonstruksjon",
+      "obligatoriske": [
+        { "emnekode": "MAST2001", "emnenavn": "Maskinkomponenter og sammenføyninger", "studiepoeng": 7.5, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": "Obligatorisk kun for denne studieretningen; valgbart (VA) for Industriell drift og vedlikehold." },
+        { "emnekode": "MAST2007", "emnenavn": "Dynamikk og maskindesign", "studiepoeng": 7.5, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "MAST2008", "emnenavn": "Produksjonsteknikk", "studiepoeng": 7.5, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "MAST2009", "emnenavn": "3D datamodellering og simulering", "studiepoeng": 7.5, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null }
+      ]
+    }
+  ],
+  "merknad": "Kull 2025 (opptak høst 2025) har fullstendig 3-årig studieplan publisert i NTNUs studieplanverktøy, inkludert begge studieretninger - i motsetning til masterprogrammene i samme leveranse. Studieretningsvalg skjer ved start av 2. år (frist normalt 15. mai i 1. år). Programmets navn på nettsiden bruker 'Maskinkonstruksjon' som retningsnavn, mens studieplanverktøyets korte kode/URL bruker 'konstruksjonsteknikk' - selve retningsnavnet i tabellene er 'Maskinkonstruksjon', som er brukt her. Programmet tilbys også med opptak ved NTNU i Ålesund og Gjøvik under andre programkoder/nettsider; denne filen dekker kun Trondheims-varianten (BIMASKIN), slik oppdraget spesifiserte via url-en https://www.ntnu.no/studier/bimaskin. 180 sp totalt; 120 sp er felles obligatorisk, og hver studieretning legger til 30-37,5 sp egne obligatoriske emner (se spesialiseringer), resten fylles av valgbare emner (VA/VB-grupper) i 3. år høst."
+}

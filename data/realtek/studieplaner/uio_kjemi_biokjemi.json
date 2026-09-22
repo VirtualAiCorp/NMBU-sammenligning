@@ -1,0 +1,155 @@
+{
+  "entryId": "uio_kjemi_biokjemi",
+  "programnavn": "Kjemi og biokjemi (bachelor)",
+  "institusjon": "Universitetet i Oslo",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.uio.no/studier/program/kjemi-biokjemi/",
+    "https://www.uio.no/studier/program/kjemi-biokjemi/oppbygging/",
+    "https://www.uio.no/studier/program/kjemi-biokjemi/studieretninger/kjemi/oppbygging/",
+    "https://www.uio.no/studier/program/kjemi-biokjemi/studieretninger/biokjemi/oppbygging/"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 80,
+  "obligatoriske": [
+    {
+      "emnekode": "KJM1101",
+      "emnenavn": "Generell kjemi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IN-KJM1900",
+      "emnenavn": "Introduksjon i programmering for kjemikere",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "HMS0501",
+      "emnenavn": "Sikkerhet og fysisk miljø",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Del av et obligatorisk HMS-kurspakke i 1. semester sammen med HMS0502, HMS0503, HMS0505 og HMS0507 (alle 0 sp)."
+    },
+    {
+      "emnekode": "HMS0502",
+      "emnenavn": "Utviklende læringsmiljø",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "HMS0503",
+      "emnenavn": "Laboratoriesikkerhet",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "HMS0505",
+      "emnenavn": "El-sikkerhet",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "HMS0507",
+      "emnenavn": "Brannsikkerhet",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM1111",
+      "emnenavn": "Organisk kjemi I",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM1121",
+      "emnenavn": "Uorganisk kjemi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Kan i noen løp utsettes til 4. semester ved valg av MAT1110 i fordypningsblokken (se merknad på programnivå)."
+    },
+    {
+      "emnekode": "KJM1130",
+      "emnenavn": "Fysikalsk kjemi I - termodynamikk og kinetikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM2400",
+      "emnenavn": "Analytisk kjemi I",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "For studieretningen Biokjemi kan KJM2400 og EXPHIL03 bytte plass mellom 3. og 5. semester (begge emnene er obligatoriske uansett rekkefølge)."
+    },
+    {
+      "emnekode": "EXPHIL03",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "For studieretningen Biokjemi kan EXPHIL03 og KJM2400 bytte plass mellom 3. og 5. semester (begge emnene er obligatoriske uansett rekkefølge)."
+    },
+    {
+      "emnekode": "KJM1140",
+      "emnenavn": "Biokjemi 1 for kjemikere",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Kjemi",
+      "obligatoriske": []
+    },
+    {
+      "navn": "Biokjemi",
+      "obligatoriske": [
+        {
+          "emnekode": "BIOS3900",
+          "emnenavn": "Biokjemi 2",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Bachelorprogrammet er delt i to studieretninger fra opptak: Kjemi og Biokjemi. De 100 studiepoengene «obligatoriske fellesemner» er identiske for begge retninger, men to av dem er reelt obligatoriske valg mellom alternativer og er derfor ikke ført opp som egne rader: MAT1050 eller MAT1100 (10 sp, 1. semester) og FYS1001 eller FYS1100 eller det nedlagte FYS-MEK1110 (10 sp, 2. semester). Disse to valgene utgjør de resterende 20 av de 100 sp fellesemner (80 sp er ført opp som faste rader over). Utover fellesemnene krever hver retning i tillegg «obligatoriske fordypningsemner»: Kjemi-retningen krever 40 sp fordypning som i sin helhet består av valg (MAT1060 eller MAT1110, 10 sp; KJM2500 eller KJM2601, 10 sp; og «velg 2 av» en liste på 13 emner, 20 sp) - ingen enkeltemner er derfor reelt obligatoriske for denne retningen utover fellesemnene, og spesialiseringens obligatoriske-liste er tom. Biokjemi-retningen krever 30 sp fordypning: BIOS2910 eller det utfasede BIOS2900 (10 sp, valg - ikke ført opp), BIOS3900 Biokjemi 2 (10 sp, uten alternativ - ført opp under spesialisering) og 10 valgfrie sp blant seks navngitte emner (BIOS1110, KJM2500, KJM3310, KJM3400, BIOS3910, BIOS3010). Resten av programmet (40 sp for Kjemi, 50 sp for Biokjemi) er utviklingssemester/frie emner i 5. og 6. semester. Total obligatorisk sp på tvers av hele programmet varierer dermed mellom retningene (Kjemi: 80 sp felles + 0 sp fast fordypning = 80; Biokjemi: 80 sp felles + 10 sp fast fordypning = 90); obligatoriskeStudiepoeng i denne filen viser bare det retningsuavhengige fellestallet (80)."
+}

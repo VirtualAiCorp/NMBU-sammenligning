@@ -1,0 +1,73 @@
+{
+  "entryId": "nmbu_kjemibio",
+  "programnavn": "Kjemi og bioteknologi (master 5 år)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/master-5-aar/kjemi-og-bioteknologi",
+    "https://www.nmbu.no/fakulteter/fakultet-kjemi-bioteknologi-og-matvitenskap/studieplaner-master-i-teknologi",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-08/M-KB%20studieplan%202026-2027%20-%20fellesemner.pdf",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-08/M-KB%20studieplan%202026-2027%20-%20kjemi.pdf",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-08/M-KB%20studieplan%202026-2027%20-%20molekyl%C3%A6rbiologi.pdf",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-08/M-KB%20studieplan%202026-2027%20-%20bioinformatikk.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 230,
+  "obligatoriske": [
+    { "emnekode": "BIO101", "emnenavn": "Introduksjon i bioteknologi og kjemi", "studiepoeng": 5, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": "Augustblokk (før høstparallellen), lagt til «høst» siden studieplanens skjema ikke har egen augustblokk-kategori." },
+    { "emnekode": "MATH121", "emnenavn": "Kalkulus", "studiepoeng": 10, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "INF120", "emnenavn": "Programmering og databehandling", "studiepoeng": 10, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "BIO100", "emnenavn": "Cellebiologi", "studiepoeng": 10, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "BIO102", "emnenavn": "Anvendt bioteknologi", "studiepoeng": 10, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": "Studieplanens rutediagram plasserer BIO100, BIO102, MATH121 og INF120 alle i 1. år høst (40 sp til sammen), som er mer enn normal semesterbelastning på 30 sp; PDF-uttrekket bevarer ikke kolonneposisjonene nøyaktig, så det er noe usikkert om ett av emnene i realiteten ligger et annet sted i første studieår." },
+    { "emnekode": "KJM100", "emnenavn": "Generell kjemi", "studiepoeng": 10, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "MATH122", "emnenavn": "Kalkulus og lineær algebra", "studiepoeng": 10, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "BIO120", "emnenavn": "Genetikk", "studiepoeng": 5, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "KJM110", "emnenavn": "Organisk kjemi", "studiepoeng": 10, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "STAT100", "emnenavn": "Statistikk", "studiepoeng": 10, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "BIO130", "emnenavn": "Generell mikrobiologi I", "studiepoeng": 5, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": "Studieplanens rutediagram viser et femte, uidentifisert 5 sp «Øk/samf.»-krav (økonomi/samfunnsfag) i denne delen av grunnplanen, men oppgir ingen konkret emnekode for det. Det er derfor ikke tatt med i obligatoriske-lista." },
+    { "emnekode": "KJB200", "emnenavn": "Biokjemi", "studiepoeng": 10, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "KJM230", "emnenavn": "Fysikalsk kjemi", "studiepoeng": 10, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "FYS101", "emnenavn": "Mekanikk", "studiepoeng": 10, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "BUS180", "emnenavn": "Globale utfordringer II. Miljø- og samfunnsmessige utfordringer i næringslivet", "studiepoeng": 5, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": "Augustblokk, lagt til «høst»." },
+    { "emnekode": "KJM240", "emnenavn": "Analytisk kjemi", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "MATH123", "emnenavn": "Lineær algebra og vektoranalyse", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "BIO210", "emnenavn": "Molekylærbiologi", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "BIN210", "emnenavn": "Introduksjon i bioinformatikk", "studiepoeng": 10, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "KJM120", "emnenavn": "Uorganisk kjemi", "studiepoeng": 10, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "PHI100", "emnenavn": "Examen philosophicum", "studiepoeng": 10, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": "Studieplanen gir valget mellom PHI100, seminarversjonen PHI101 (begge 4. år høst) og den engelske versjonen PHI102 (som i rutediagrammet er lagt til 3. år vår)." },
+    { "emnekode": "FYS102", "emnenavn": "Termofysikk og elektromagnetisme", "studiepoeng": 10, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": "Fellesplanen kaller emnet «FYS102/102A»; spesialiseringsplanene bruker enten FYS102 (kjemi) eller FYS102A (molekylærbiologi, bioinformatikk) for samme 10 sp-krav, delt over høst/vår i noen spesialiseringer." },
+    { "emnekode": "M30-KB", "emnenavn": "Masteroppgave", "studiepoeng": 30, "aar": 5, "semester": "vår", "dbhEmnekoder": [], "merknad": null }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Kjemi",
+      "obligatoriske": [
+        { "emnekode": "BIO335", "emnenavn": "Anvendt biokatalyse og bioraffinering", "studiepoeng": 5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": null }
+      ]
+    },
+    {
+      "navn": "Molekylærbiologi",
+      "obligatoriske": [
+        { "emnekode": "BIO211", "emnenavn": "Laboratorieøvelser i molekylærbiologi", "studiepoeng": 5, "aar": 3, "semester": "januarblokk", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "BIO230", "emnenavn": "Generell mikrobiologi II", "studiepoeng": 10, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "BIO332", "emnenavn": "Eksperimentell molekylær mikrobiologi", "studiepoeng": 10, "aar": 4, "semester": "januarblokk", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "KJB201", "emnenavn": "Laboratoriekurs i biokjemi og matkjemi", "studiepoeng": 5, "aar": 4, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "KJB310", "emnenavn": "Proteinkjemi", "studiepoeng": 10, "aar": 5, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "BIO322", "emnenavn": "Avanserte emner i genomikk", "studiepoeng": 10, "aar": 5, "semester": "høst", "dbhEmnekoder": [], "merknad": null }
+      ]
+    },
+    {
+      "navn": "Bioinformatikk",
+      "obligatoriske": [
+        { "emnekode": "INF201", "emnenavn": "Videregående programmering", "studiepoeng": 5, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "STAT210", "emnenavn": "Forsøksplanlegging og variansanalyse", "studiepoeng": 5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "BIN310", "emnenavn": "Utvalgte emner i mikrobiell genomikk", "studiepoeng": 10, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": "Rutediagrammet oppgir «BIN310/315»: BIN310 gis i oddetallsår, BIN315 i partallsår - samme krav, bare ulik kode avhengig av kullår." },
+        { "emnekode": "STIN300", "emnenavn": "Statistisk programmering i R", "studiepoeng": 5, "aar": 4, "semester": "januarblokk", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "STAT340", "emnenavn": "Anvendte metoder i statistikk", "studiepoeng": 10, "aar": 4, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+        { "emnekode": "BIO322", "emnenavn": "Avanserte emner i genomikk", "studiepoeng": 10, "aar": 5, "semester": "høst", "dbhEmnekoder": [], "merknad": null }
+      ]
+    }
+  ],
+  "merknad": "Kilde er fire separate PDF-er fra NMBUs studieplanside for kull 2026 (sist oppdatert august 2026): én fellesplan («grunnplan») og tre spesialiseringsplaner (kjemi, molekylærbiologi, bioinformatikk), alle bygget som grafiske rutediagram (år × semester) uten en ren tabell med emnekode/sp/semester i klartekst. Emnekoder og sp-verdier er lest ut av rutediagrammets celler og kryss-sjekket mot tallpar i den lineære PDF-teksten; semesterplassering (høst/vår/januarblokk) er rekonstruert fra rutenes posisjon og kan avvike noe fra den offisielle progresjonen der PDF-uttrekket har slått sammen kolonner (se enkeltmerknader). Augustblokk-emner er lagt til «høst» og juniblokk-emner forekommer ikke i denne planen, siden studieplanens eget skjema for «semester» ikke har en egen augustblokk-kategori. Examen philosophicum (PHI100/101/102) er tatt med med representant-koden PHI100; ex.phil kan alternativt tas som engelskspråklig PHI102 tidligere i løpet (3. år vår). KJM007 «Forkurs i kjemi» (0 sp, anbefalt for studenter uten kjemi 1 og 2 fra vgs) er IKKE tatt med i obligatoriske-lista siden det ikke er et reelt studiepoenggivende krav for alle. Et 5 sp «Øk/samf.»-krav (økonomi/samfunnsfag) i fellesplanen er utelatt fra obligatoriske-lista fordi studieplanen ikke oppgir en entydig emnekode for kravet. ObligatoriskeStudiepoeng (230) dekker KUN fellesemnene + masteroppgave (M30-KB, 30 sp); hver spesialisering legger til egne obligatoriske emner (5-50 sp, se spesialiseringer-lista) OG et antall valgfrie spesialiseringsemner som studieplanen bare beskriver som nivåkategorier uten konkrete emnekoder: kjemi-spesialiseringen krever i tillegg 2 valgfrie kjemiemner på 200-nivå (20 sp) og 3 valgfrie kjemiemner på 300-nivå (30 sp); molekylærbiologi- og bioinformatikk-spesialiseringene har ca. 15-20 sp i rutediagrammet som ikke lot seg tilordne en spesifikk emnekode. Disse valgfrie kravene er IKKE tatt med i obligatoriske-listene (per regelen om at obligatoriske valg mellom alternativer ikke skal stå der), men er beskrevet her slik at 230 + spesialisering + valgfritt + masteroppgave summerer til 300 sp totalt for alle tre spesialiseringer."
+}

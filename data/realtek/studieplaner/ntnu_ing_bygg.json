@@ -1,0 +1,303 @@
+{
+  "entryId": "ntnu_ing_bygg",
+  "programnavn": "Ingeniør, bygg (bachelor)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2024/2025 (kull 2024, studiested Trondheim)",
+  "kilder": [
+    "https://www.ntnu.no/studier/bibygg",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=BIBYGG&year=2024"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 90,
+  "obligatoriske": [
+    {
+      "emnekode": "BYGT1101",
+      "emnenavn": "Byggteknikk og BIM",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYGT1102",
+      "emnenavn": "Transportinfrastruktur",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IMAT1002",
+      "emnenavn": "Matematikk for ingeniørfag 1",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INGT1002",
+      "emnenavn": "Programmering, numerikk og sikkerhet",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYGT1200",
+      "emnenavn": "Vann- og miljøteknikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IFYT1000",
+      "emnenavn": "Fysikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IMAT2023",
+      "emnenavn": "Matematikk for ingeniørfag 2 C",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MEKT1201",
+      "emnenavn": "Mekanikk 1",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYGT2001",
+      "emnenavn": "Geoteknikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYGT2101",
+      "emnenavn": "Konstruksjonsteknikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "EXPH0600",
+      "emnenavn": "Examen philosophicum for ingeniørfag",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ISTT1001",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Byggteknikk",
+      "obligatoriske": [
+        {
+          "emnekode": "BYGT2203",
+          "emnenavn": "Digitalt samspill",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYGT2206",
+          "emnenavn": "Betongkonstruksjoner 1",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYGT2211",
+          "emnenavn": "Trekonstruksjoner",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TBM4223",
+          "emnenavn": "Miljørådgivning for bygg",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYGT2910",
+          "emnenavn": "Bacheloroppgave bygg",
+          "studiepoeng": 22.5,
+          "aar": 3,
+          "semester": "helår",
+          "dbhEmnekoder": [],
+          "merknad": "Går over to deler (3. år høst og vår); oppstart i høstsemesteret har 0 sp, studiepoengene realiseres i vårsemesteret."
+        },
+        {
+          "emnekode": "INGT2301",
+          "emnenavn": "Ingeniørfaglig systemtenkning",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Konstruksjonsteknikk",
+      "obligatoriske": [
+        {
+          "emnekode": "BYGT2104",
+          "emnenavn": "Konstruksjonslære",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYGT2206",
+          "emnenavn": "Betongkonstruksjoner 1",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYGT2211",
+          "emnenavn": "Trekonstruksjoner",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TBM4223",
+          "emnenavn": "Miljørådgivning for bygg",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYGT2950",
+          "emnenavn": "Bacheloroppgave konstruksjonsteknikk",
+          "studiepoeng": 22.5,
+          "aar": 3,
+          "semester": "helår",
+          "dbhEmnekoder": [],
+          "merknad": "Går over to deler (3. år høst og vår); oppstart i høstsemesteret har 0 sp, studiepoengene realiseres i vårsemesteret."
+        },
+        {
+          "emnekode": "INGT2301",
+          "emnenavn": "Ingeniørfaglig systemtenkning",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Veg, vann og anlegg",
+      "obligatoriske": [
+        {
+          "emnekode": "BYGT2203",
+          "emnenavn": "Digitalt samspill",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYGT2206",
+          "emnenavn": "Betongkonstruksjoner 1",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYGT2323",
+          "emnenavn": "Areal og VVA infrastruktur",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TBM4282",
+          "emnenavn": "Veg- og jernbaneteknologi 1",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYGT2910",
+          "emnenavn": "Bacheloroppgave bygg",
+          "studiepoeng": 22.5,
+          "aar": 3,
+          "semester": "helår",
+          "dbhEmnekoder": [],
+          "merknad": "Går over to deler (3. år høst og vår); oppstart i høstsemesteret har 0 sp, studiepoengene realiseres i vårsemesteret."
+        },
+        {
+          "emnekode": "INGT2301",
+          "emnenavn": "Ingeniørfaglig systemtenkning",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er NTNUs studieplan-API (studyprogrammeplannerportlet) for BIBYGG, kull 2024, retning Trondheim (programmet tilbys også i Ålesund og Gjøvik med noe andre emner/opptaksveier — disse er ikke tatt med, kun Trondheim, som er studiestedet i programkartet). Programmet er 180 sp over 3 år. År 1 og 2. år høst (90 sp) er felles for alle og ligger i obligatoriske. Fra 2. år vår velger studenten studieretning: Byggteknikk, Konstruksjonsteknikk eller Veg, vann og anlegg — hver retnings faste obligatoriske emner (60 sp: 30 sp i 2. år vår + 30 sp i 3. år, hvorav bacheloroppgaven er 22,5 sp og INGT2301 er 7,5 sp) ligger under spesialiseringer. obligatoriskeStudiepoeng (90) gjelder kun den felles obligatoriske-listen; total obligatorisk sp for en student blir 90 + 60 = 150 sp når en spesialisering er valgt. De resterende 30 sp (3. år høst, «VA»/«VB»-emnegrupper) er valgfrie emner studenten velger fra en liste per retning (f.eks. TBA4179, IMAT3012, TBM4210, TBM4221, TBM4222 for Byggteknikk) og er ikke tatt med."
+}

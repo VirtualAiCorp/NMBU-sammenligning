@@ -1,0 +1,43 @@
+{
+  "entryId": "ntnu_ikmb",
+  "programnavn": "Industriell kjemi, materialer og bioteknologi (master 5 år)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.ntnu.no/studier/mtkmb",
+    "https://www.ntnu.no/studier/mtkmb/studiets-oppbygning",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=MTKMB&year=2026",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=MTKMB&year=2025"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 127.5,
+  "obligatoriske": [
+    { "emnekode": "HMS0001", "emnenavn": "HMS-kurs for 1. årsstudenter", "studiepoeng": 0, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "TMA4400", "emnenavn": "Matematikk 1: Kalkulus og lineær algebra", "studiepoeng": 7.5, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "TDT4110", "emnenavn": "Informasjonsteknologi, grunnkurs", "studiepoeng": 7.5, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "TMT4111", "emnenavn": "Generell kjemi", "studiepoeng": 7.5, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "TMT4125", "emnenavn": "Innføring i materialvitenskap", "studiepoeng": 7.5, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "TMA4411", "emnenavn": "Matematikk 2B: Lineær algebra, differensialligninger og flervariabel analyse", "studiepoeng": 7.5, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "TMA4245", "emnenavn": "Statistikk", "studiepoeng": 7.5, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "TKJ4103", "emnenavn": "Organisk kjemi grunnkurs", "studiepoeng": 7.5, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "TMT4130", "emnenavn": "Uorganisk kjemi", "studiepoeng": 7.5, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "TMA4421", "emnenavn": "Matematikk 3B: Vektoranalyse og funksjonsapproksimasjon", "studiepoeng": 7.5, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "TBT4170", "emnenavn": "Bioteknologi", "studiepoeng": 7.5, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "TFY4104", "emnenavn": "Fysikk", "studiepoeng": 7.5, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "TKP4120", "emnenavn": "Prosessteknikk", "studiepoeng": 7.5, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "TMA4431", "emnenavn": "Matematikk 4B: Integraltransformasjoner, partielle differensialligninger, maskinlæring", "studiepoeng": 7.5, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "TKJ4162", "emnenavn": "Fysikalsk kjemi: Kjemisk termodynamikk", "studiepoeng": 7.5, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "TKP4100", "emnenavn": "Strømning, masse- og varmetransport", "studiepoeng": 7.5, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "TMT4135", "emnenavn": "Materialers overflatekjemi og korrosjon", "studiepoeng": 7.5, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
+    { "emnekode": "EXPH0300", "emnenavn": "Examen philosophicum for naturvitenskap og teknologi", "studiepoeng": 7.5, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": "Ikke i den strukturerte emnetabellen ennå (ingen kull har nådd 3. år), men eksplisitt nevnt i studieplanbeskrivelsens «Fellesemner»-avsnitt: «MTKMB studieprogrammet vil ta fellesemne EXPH0300 ... som er planlagt for høsten tredje studieår»." }
+  ],
+  "spesialiseringer": [
+    { "navn": "Industriell bioteknologi", "obligatoriske": [] },
+    { "navn": "Kjemisk prosessteknologi", "obligatoriske": [] },
+    { "navn": "Materialteknologi", "obligatoriske": [] },
+    { "navn": "Elektrokjemi og funksjonelle materialer", "obligatoriske": [] },
+    { "navn": "Molekylær kjemi", "obligatoriske": [] }
+  ],
+  "merknad": "Industriell kjemi, materialer og bioteknologi (MTKMB) er NTNUs nye programkode fra og med opptaket 2025, som erstattet «Industriell kjemi og bioteknologi» (MTKJ, se ntnu_ikb.json). Programmet startet høsten 2025, og per uttrekksdato (22.09.2026) har ingen kull nådd lenger enn 2. studieår i NTNUs strukturerte studieplan-verktøy (kull 2025 har fullført/påbegynt år 1-2, kull 2026 kun år 1). Obligatoriske-lista over dekker derfor kun de emnene som faktisk er publisert med emnekode i systemet: alle fellesemner for 1. og 2. år (17 emner + HMS0001), pluss examen philosophicum (EXPH0300), som studieplanbeskrivelsens tekst eksplisitt oppgir skal tas høsten 3. år selv om det ikke ligger i emnetabellen ennå. obligatoriskeStudiepoeng (127,5) dekker kun disse. Studiet har fem studieretninger fra 3. år (Industriell bioteknologi, Kjemisk prosessteknologi, Materialteknologi, Elektrokjemi og funksjonelle materialer, Molekylær kjemi), beskrevet med generelle fagnavn (ikke emnekoder) på «Studiets oppbygning»-siden: 5.-6. semester har «noen felles basisemner, men større innslag av ingeniøremner basert på valgt studieretning», inkludert et komplementært emne, «Teknologiledelse» (6. sem.), «Prosjektering av bærekraftige industrielle prosesser» og «Eksperter i team» (7.-8. sem.), fordypningsprosjekt/-emne (9. sem.) og masteroppgave (10. sem., normalt 30 sp). Ingen av disse er tatt med i obligatoriske-listene fordi NTNU ikke har publisert konkrete emnekoder for MTKMB for disse semestrene ennå, og forgjengerprogrammet MTKJs koder for tilsvarende emner (f.eks. TIØ4252 Teknologiledelse, TKP4170 Prosjektering av prosessanlegg) er IKKE kopiert inn her siden de ikke er bekreftet for MTKMB spesifikt - retningsnavnene kan også avvike noe fra MTKJs fire retninger. Filen bør oppdateres når NTNU publiserer emnekodene for år 3-5, forventet i takt med at kull 2025 og 2026 rykker opp."
+}

@@ -1,0 +1,65 @@
+{
+  "entryId": "oslomet_ing_bygg",
+  "programnavn": "Ingeniør, bygg (bachelor)",
+  "institusjon": "OsloMet - storbyuniversitetet",
+  "studieplanAar": "2026/2027 (HINGBYGG)",
+  "kilder": [
+    "https://www.oslomet.no/studier/tkd/byggingenior",
+    "https://student.oslomet.no/studier/-/studieinfo/programplan/HINGBYGG/2026/H%C3%98ST"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 90,
+  "obligatoriske": [
+    {"emnekode": "BYFE1201", "emnenavn": "Byggfaglig innføring", "studiepoeng": 10, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "BYPE1500", "emnenavn": "Fysikk og kjemi", "studiepoeng": 10, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "BYPE1600", "emnenavn": "Mekanikk 1", "studiepoeng": 5, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "BYFE1000", "emnenavn": "Matematikk 1000", "studiepoeng": 10, "aar": 1, "semester": "helår", "dbhEmnekoder": [], "merknad": "Går over to semestre (0 sp registrert høst, 10 sp registrert vår)."},
+    {"emnekode": "BYTS1401", "emnenavn": "Byggeteknikk", "studiepoeng": 10, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "BYGG2100", "emnenavn": "Programmering og statistikk", "studiepoeng": 10, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "BYPE1700", "emnenavn": "Mekanikk 2", "studiepoeng": 5, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "BYGG1110", "emnenavn": "Byggematerialer", "studiepoeng": 5, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "BYTS2310", "emnenavn": "Konstruksjonslære", "studiepoeng": 5, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "BYPE2000", "emnenavn": "Matematikk 2000", "studiepoeng": 10, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "BYGG2200", "emnenavn": "Geoteknikk", "studiepoeng": 10, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null}
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Konstruksjonsteknikk",
+      "obligatoriske": [
+        {"emnekode": "BYGG2300", "emnenavn": "Betongkonstruksjoner", "studiepoeng": 15, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
+        {"emnekode": "BYGG2800", "emnenavn": "Konstruksjonsmekanikk 1", "studiepoeng": 5, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
+        {"emnekode": "BYPE2700", "emnenavn": "Prosjektledelse og økonomi", "studiepoeng": 10, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
+        {"emnekode": "BYVE3200", "emnenavn": "Stål- og trekonstruksjoner", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+        {"emnekode": "BYVE3300", "emnenavn": "Statikk", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+        {"emnekode": "BYFE3100", "emnenavn": "Byggeprosess - ingeniørfaglig systememne", "studiepoeng": 10, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
+        {"emnekode": "BYTS3900", "emnenavn": "Bacheloroppgave", "studiepoeng": 20, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null}
+      ]
+    },
+    {
+      "navn": "By- og transportplanlegging",
+      "obligatoriske": [
+        {"emnekode": "BYGG3100", "emnenavn": "Teknisk infrastruktur", "studiepoeng": 10, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
+        {"emnekode": "BYGG2600", "emnenavn": "Samferdsel", "studiepoeng": 10, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
+        {"emnekode": "BYPE2700", "emnenavn": "Prosjektledelse og økonomi", "studiepoeng": 10, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
+        {"emnekode": "BYGG2500", "emnenavn": "Arealplanlegging", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+        {"emnekode": "BYVE3620", "emnenavn": "Vei- og jernbaneteknikk", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+        {"emnekode": "BYFE3100", "emnenavn": "Byggeprosess - ingeniørfaglig systememne", "studiepoeng": 10, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
+        {"emnekode": "BYTS3900", "emnenavn": "Bacheloroppgave", "studiepoeng": 20, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null}
+      ]
+    },
+    {
+      "navn": "Vann- og miljøteknikk",
+      "obligatoriske": [
+        {"emnekode": "BYGG3100", "emnenavn": "Teknisk infrastruktur", "studiepoeng": 10, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
+        {"emnekode": "BYGG2700", "emnenavn": "Overvann brukt som ressurs", "studiepoeng": 10, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
+        {"emnekode": "BYPE2700", "emnenavn": "Prosjektledelse og økonomi", "studiepoeng": 10, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
+        {"emnekode": "BYGG2500", "emnenavn": "Arealplanlegging", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+        {"emnekode": "BYGG3200", "emnenavn": "Planlegging, behandling og drift av vann og avløp", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+        {"emnekode": "BYFE3100", "emnenavn": "Byggeprosess - ingeniørfaglig systememne", "studiepoeng": 10, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
+        {"emnekode": "BYTS3900", "emnenavn": "Bacheloroppgave", "studiepoeng": 20, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null}
+      ]
+    }
+  ],
+  "merknad": "Kilde er OsloMets programplan-portal for HINGBYGG, gjeldende fra høst 2026 (kull 2026). Programmet er 180 sp over 6 semestre. Programmet tilbys også som «3-terminsordning» (en forlenget variant med ekstra forkurssemester for søkere uten full realfagsbakgrunn, TRE-emner) — denne varianten er IKKE brukt her, kun standardløpet «Ingeniørfag, bygg». År 1 og 2. år høst (90 sp) er felles for alle og ligger i obligatoriske. Fra 2. år vår velger studenten studieretning: Konstruksjonsteknikk, By- og transportplanlegging eller Vann- og miljøteknikk — hver retnings faste obligatoriske emner (80 sp) ligger under spesialiseringer; alle tre retninger har identisk struktur og sp-fordeling (30 sp i 2. år vår, 20 sp obligatorisk + 10 sp valgbart i 3. år høst, 30 sp i 3. år vår inkl. bacheloroppgaven BYTS3900 på 20 sp). obligatoriskeStudiepoeng (90) gjelder kun den felles obligatoriske-listen; total obligatorisk sp for en student blir 90 + 80 = 170 sp når en retning er valgt. De resterende 10 sp (3. år høst) er valgfritt blant en liste emner (bl.a. BYVE3605, BYVE3615, BYVE3630, DAVE3700, DAVE3710, MEK3100, og for Konstruksjonsteknikk/Vann- og miljøteknikk også BYVE3620/BYVE3300/BYGG3200) og er ikke tatt med."
+}

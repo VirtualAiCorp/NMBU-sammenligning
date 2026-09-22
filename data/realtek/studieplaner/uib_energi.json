@@ -1,0 +1,196 @@
+{
+  "entryId": "uib_energi",
+  "programnavn": "Energi (master 5 år, sivilingeniør)",
+  "institusjon": "Universitetet i Bergen",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.uib.no/studier/5MAMN-ENER",
+    "https://www4.uib.no/studier/program/energi-integrert-masterprogram-sivilingenior/plan"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 180,
+  "obligatoriske": [
+    {
+      "emnekode": "MAT111",
+      "emnenavn": "Grunnkurs i matematikk I",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF100",
+      "emnenavn": "Innføring i programmering",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ENERGI101",
+      "emnenavn": "Introduksjon til energiressurser og energiforbruk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Emnenavn er rekonstruert fra programbeskrivelsen; studieplanteksten oppgir bare emnekoden."
+    },
+    {
+      "emnekode": "MAT112",
+      "emnenavn": "Grunnkurs i matematikk II",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "PHYS111",
+      "emnenavn": "Mekanikk 1",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Emnenavn er rekonstruert fra programbeskrivelsen; studieplanteksten oppgir bare emnekoden."
+    },
+    {
+      "emnekode": "ENERGI102",
+      "emnenavn": "Livsløpsanalyse",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Emnenavn er rekonstruert fra programbeskrivelsen; studieplanteksten oppgir bare emnekoden."
+    },
+    {
+      "emnekode": "STAT110",
+      "emnenavn": "Statistikk I",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Emnenavn er rekonstruert; studieplanteksten oppgir bare emnekoden."
+    },
+    {
+      "emnekode": "KJEM110",
+      "emnenavn": "Generell kjemi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Emnenavn er rekonstruert; studieplanteksten oppgir bare emnekoden."
+    },
+    {
+      "emnekode": "ENERGI230",
+      "emnenavn": "Miljø og energi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Emnenavn er rekonstruert fra programbeskrivelsen; studieplanteksten oppgir bare emnekoden."
+    },
+    {
+      "emnekode": "MAT121",
+      "emnenavn": "Lineær algebra",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Emnenavn er rekonstruert; studieplanteksten oppgir bare emnekoden."
+    },
+    {
+      "emnekode": "INNOV201",
+      "emnenavn": "Innovasjon gjennom designtenkning",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Emnenavn er rekonstruert fra programbeskrivelsen; studieplanteksten oppgir bare emnekoden."
+    },
+    {
+      "emnekode": "EXPHIL-MNSEM",
+      "emnenavn": "Examen philosophicum, seminarmodellen for realfag",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ENERGI399I",
+      "emnenavn": "Masteroppgåve i energi",
+      "studiepoeng": 60,
+      "aar": 5,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Går over 9. og 10. semester (5. år haust og vår), felles for alle studieretninger."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Vind- og havenergi",
+      "obligatoriske": [
+        {"emnekode": "GEOF105", "emnenavn": "Elementær mekanikk for geofag", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert."},
+        {"emnekode": "ENERGI240", "emnenavn": "Fornybar energi, felles studieretningsemne", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert; ENERGI240 er felles startemne for fire av de fem studieretningene."},
+        {"emnekode": "PHYS113", "emnenavn": "Mekanikk 2", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert."},
+        {"emnekode": "MAT131", "emnenavn": "Differensiallikningar I", "studiepoeng": 10, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert."},
+        {"emnekode": "GEOF232", "emnenavn": "Introduksjon til fysisk oseanografi", "studiepoeng": 10, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert."},
+        {"emnekode": "GEOF110", "emnenavn": "Innføring i atmosfærens og havets dynamikk", "studiepoeng": 10, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert."},
+        {"emnekode": "MAT212", "emnenavn": "Numerisk lineær algebra", "studiepoeng": 10, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert; felles for fire av fem retninger i 7. semester."}
+      ]
+    },
+    {
+      "navn": "Reservoar og geoenergi",
+      "obligatoriske": [
+        {"emnekode": "ENERGI240", "emnenavn": "Fornybar energi, felles studieretningsemne", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert."},
+        {"emnekode": "GEOV101", "emnenavn": "Innføring i geovitenskap", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert."},
+        {"emnekode": "ENERGI261", "emnenavn": "Petroleumsressursar", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert."},
+        {"emnekode": "KJEM210", "emnenavn": "Fysikalsk kjemi", "studiepoeng": 10, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert; felles for tre av fem retninger."},
+        {"emnekode": "ENERGI364", "emnenavn": "CO2-handtering", "studiepoeng": 10, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert."},
+        {"emnekode": "GEOV261", "emnenavn": "Petroleumsgeologi", "studiepoeng": 10, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert."},
+        {"emnekode": "MAT212", "emnenavn": "Numerisk lineær algebra", "studiepoeng": 10, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert."}
+      ]
+    },
+    {
+      "navn": "Prosess- og energiteknologi",
+      "obligatoriske": [
+        {"emnekode": "PHYS112", "emnenavn": "Termodynamikk", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert."},
+        {"emnekode": "ENERGI240", "emnenavn": "Fornybar energi, felles studieretningsemne", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert."},
+        {"emnekode": "ENERGI257", "emnenavn": "Væskemekanikk", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert."},
+        {"emnekode": "KJEM210", "emnenavn": "Fysikalsk kjemi", "studiepoeng": 10, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert."},
+        {"emnekode": "PHYS114", "emnenavn": "Varmeoverføring", "studiepoeng": 10, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert."},
+        {"emnekode": "ENERGI351", "emnenavn": "Prosessteknologi", "studiepoeng": 10, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert."}
+      ]
+    },
+    {
+      "navn": "Kjemiske energiløysingar",
+      "obligatoriske": [
+        {"emnekode": "ENERGI240", "emnenavn": "Fornybar energi, felles studieretningsemne", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert."},
+        {"emnekode": "ENERGI270", "emnenavn": "Kjemiske energiberarar", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert."},
+        {"emnekode": "KJEM225", "emnenavn": "Uorganisk kjemi", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert."},
+        {"emnekode": "KJEM120", "emnenavn": "Organisk kjemi I", "studiepoeng": 10, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert."},
+        {"emnekode": "KJEM130", "emnenavn": "Grøn kjemi", "studiepoeng": 10, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert."},
+        {"emnekode": "KJEM210", "emnenavn": "Fysikalsk kjemi", "studiepoeng": 10, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert."},
+        {"emnekode": "KJEM124", "emnenavn": "Organisk kjemi II", "studiepoeng": 10, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert."}
+      ]
+    },
+    {
+      "navn": "Modellering av energisystem",
+      "obligatoriske": [
+        {"emnekode": "ENERGI240", "emnenavn": "Fornybar energi, felles studieretningsemne", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert."},
+        {"emnekode": "INF170", "emnenavn": "Programmering og datastrukturar", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert."},
+        {"emnekode": "MAT160", "emnenavn": "Matematisk modellering", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert."},
+        {"emnekode": "STAT200", "emnenavn": "Regresjon", "studiepoeng": 10, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert."},
+        {"emnekode": "INF101", "emnenavn": "Grunnkurs i programmering", "studiepoeng": 10, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert."},
+        {"emnekode": "MAT261", "emnenavn": "Numerisk lineær algebra", "studiepoeng": 10, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert."},
+        {"emnekode": "MAT212", "emnenavn": "Numerisk lineær algebra II", "studiepoeng": 10, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert."},
+        {"emnekode": "INF270", "emnenavn": "Algoritmar for biologiske data", "studiepoeng": 10, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert."},
+        {"emnekode": "INF264", "emnenavn": "Maskinlæring", "studiepoeng": 10, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": "Emnenavn rekonstruert."}
+      ]
+    }
+  ],
+  "merknad": "Kilde er UiBs studieplanside for 5MAMN-ENER, kull høst 2026. Studieplanteksten oppgir konsekvent kun emnekoder (ikke emnenavn eller studiepoeng) i semesteroversikten, og sier at «alle emne som berre er oppført med emnekode er obligatoriske». Emnenavn i denne filen er derfor rekonstruert fra UiBs egen emnekatalog/programbeskrivelse der det var mulig og markert med merknad; studiepoeng er satt til 10 sp per emne (UiBs standardstørrelse) siden hvert semester består av tre emner à 10 sp = 30 sp, bortsett fra masteroppgåva ENERGI399I (60 sp over 9.-10. semester). Etter fire felles semester (1.-4. år 1-2) velger studenten i 4. semester mellom fem studieretninger: Vind- og havenergi, Reservoar og geoenergi, Prosess- og energiteknologi (kalt «Energi- og prosessteknologi» i læringsutbyttedelen), Kjemiske energiløysingar og Modellering av energisystem. 8. semester (4. år vår) er valemne for alle retninger og er ikke tatt med. For Prosess- og energiteknologi er også 7. semester (4. år høst) rent valgfag, så retningen har ingen obligatoriske emner der. For Vind- og havenergi er GEOF210 i 7. semester kun «tilrådd» valgfag, ikke obligatorisk, og er derfor utelatt. ENERGI240 og KJEM210 og MAT212 går igjen i flere retninger som felles studieretningsemner."
+}

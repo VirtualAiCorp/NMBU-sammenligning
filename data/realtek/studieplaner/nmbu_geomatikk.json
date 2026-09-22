@@ -1,0 +1,245 @@
+{
+  "entryId": "nmbu_geomatikk",
+  "programnavn": "Geomatikk (bachelor)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/bachelor/geomatikk",
+    "https://www.nmbu.no/studier/studieplaner-b-geom",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-07/studieplaner%20B-GEOM%202026.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 115,
+  "obligatoriske": [
+    {
+      "emnekode": "IMRT100",
+      "emnenavn": "Innføringsemne - fagorientert prosjekt",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Augustblokk."
+    },
+    {
+      "emnekode": "INF120",
+      "emnenavn": "Programmering og databehandling",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "LAD102",
+      "emnenavn": "GIS - praktisk introduksjon",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF201",
+      "emnenavn": "Videregående programmering",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "GMGD200",
+      "emnenavn": "Geodesi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Het tidligere GMLM213 (nevnt i studieplanens variant «med overgang»)."
+    },
+    {
+      "emnekode": "GMGI210",
+      "emnenavn": "Geografiske informasjonssystemer (GIS)",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "GMLM102",
+      "emnenavn": "Landmåling 1",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "GMPE240",
+      "emnenavn": "Parameterestimering",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF203",
+      "emnenavn": "Prosjektoppgave i videregående programmering",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "juniblokk",
+      "dbhEmnekoder": [],
+      "merknad": "Emnelisten i studieplanen oppgir semesterkode JAN/JUN; fremdriftsskjemaet plasserer emnet spesifikt i juniblokk i 2. år."
+    },
+    {
+      "emnekode": "GMLM210",
+      "emnenavn": "Landmåling 2",
+      "studiepoeng": 12.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Augustblokk, fortsetter høstparallelt (12,5 sp samlet)."
+    },
+    {
+      "emnekode": "GMFO120",
+      "emnenavn": "Fotogrammetri 1",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "PHI100",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen gir valget mellom PHI100 og seminarversjonen PHI101 (samme mønster som i nmbu_eiendom.json). Emnet er markert V/H (tilbys både vår og høst); fremdriftsskjemaet plasserer det i 3. år høst."
+    },
+    {
+      "emnekode": "GMGD222",
+      "emnenavn": "Satellittgeodesi",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "GMFO205",
+      "emnenavn": "Fotogrammetri 2",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "B-GEOM uten overgang til master",
+      "obligatoriske": [
+        {
+          "emnekode": "MATH100",
+          "emnenavn": "Brukerkurs i matematikk",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS100",
+          "emnenavn": "Fysikk og natur",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MATH131",
+          "emnenavn": "Lineær algebra",
+          "studiepoeng": 5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "GMGD230",
+          "emnenavn": "Marin geodesi",
+          "studiepoeng": 5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "Obligatorisk kun for løpet «uten overgang»; i studieplanens tabell for dette løpet er emnekoden merket med fotnote a: «Obligatorisk emne for bachelor uten overgang til mastergrad, valgfritt emne for bachelor med overgang til master». For løpet «med overgang» er GMGD230 kun en anbefalt valgfri emne."
+        }
+      ]
+    },
+    {
+      "navn": "B-GEOM med overgang til master",
+      "obligatoriske": [
+        {
+          "emnekode": "MATH121",
+          "emnenavn": "Kalkulus 1",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS101",
+          "emnenavn": "Mekanikk",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MATH122",
+          "emnenavn": "Kalkulus og lineær algebra",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MATH123",
+          "emnenavn": "Lineær algebra og lineære differensiallikninger",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS102A",
+          "emnenavn": "Fysikk for bioteknologer",
+          "studiepoeng": 5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FYS103",
+          "emnenavn": "Måleteknikk, optikk og sensorer",
+          "studiepoeng": 5,
+          "aar": 2,
+          "semester": "januarblokk",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Studieplanen (PDF datert juli 2026, kull 2026) beskriver to alternative løp innenfor samme 3-årige bachelorprogram: «B-GEOM uten overgang til master» (155 obligatoriske sp + 25 valgfrie sp) og «B-GEOM med overgang til master» (175 obligatoriske sp + 5 valgfrie sp), begge 180 sp totalt. Fellesemnene og størstedelen av geomatikk-kjernen (80 av 85 sp) er identiske mellom løpene; forskjellen ligger i matematikk-/fysikkblokken (25 sp mot 50 sp, ulike emner) og i GMGD230 Marin geodesi, som kun er obligatorisk i løpet «uten overgang». Disse retningsspesifikke emnene er lagt under «spesialiseringer»; toppnivåets obligatoriskeStudiepoeng (115) er summen av kun de emnene som er obligatoriske uansett hvilket løp studenten velger. I tillegg må alle studenter velge ett av DAT110 «Innføring i dataanalyse og -visualisering» eller STAT100 «Statistikk» (begge 10 sp, 1. år vår) - et obligatorisk valg mellom to alternative emner som ikke er tatt med i obligatoriske-listen, og heller ikke i obligatoriskeStudiepoeng-summen (jf. samme praksis som EiT i ntnu_fysisk_planlegging.json og kjemivalget i uit_fysmat_b.json). Anbefalte, men ikke obligatoriske, valgfrie emner nevnt i planen inkluderer GMFM200 Fjernmåling I - Bildebehandling og GMGI221 Automatisering av GIS-prosesser (begge løp), samt GMGD230 for løpet «med overgang». PDF-en har en tabell-/fremdriftsskjema-layout der pypdf sin tekstuttrekking blander sammen kolonner; år- og semesterplassering er derfor rekonstruert ved å lese ordposisjonene direkte (pdfplumber) og kryssjekket mot de oppgitte sp-summene per kategori (fellesemner 45, matematikk/fysikk 25/50, geomatikk 85/80), som stemmer eksakt for begge løp. dbhEmnekoder er bevisst tomme lister og fylles ut i en senere automatisert prosess."
+}

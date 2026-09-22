@@ -1,0 +1,116 @@
+{
+  "entryId": "uib_fysikk",
+  "programnavn": "Fysikk (bachelor)",
+  "institusjon": "Universitetet i Bergen",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.uib.no/studier/BAMN-PHYS",
+    "https://www4.uib.no/studier/program/fysikk-bachelor/plan"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 110,
+  "obligatoriske": [
+    {
+      "emnekode": "INF100",
+      "emnenavn": "Programmering 1",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT111",
+      "emnenavn": "Grunnkurs i matematikk I",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "PHYS109",
+      "emnenavn": "Innføring i astrofysikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "PHYS111",
+      "emnenavn": "Mekanikk 1",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT112",
+      "emnenavn": "Grunnkurs i matematikk II",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "PHYS112",
+      "emnenavn": "Elektromagnetisme I",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "PHYS113",
+      "emnenavn": "Mekanikk 2 og termodynamikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "PHYS114",
+      "emnenavn": "Grunnleggjande målevitskap og eksperimentalfysikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "PHYS118",
+      "emnenavn": "Kvantefysikk og relativitet",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "EXPHIL",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen bruker fellesbetegnelsen «Exphil»; UiB tilbyr flere fakultetsvarianter (bl.a. EXPHIL-MNEKS skoleeksamen og EXPHIL-MNSEM seminarmodell for realfagsstudenter), som gir samme studiepoeng og teller som samme emne."
+    },
+    {
+      "emnekode": "PHYS299",
+      "emnenavn": "Bacheloroppgåve i fysikk",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er UiBs studieplan for BAMN-PHYS med studiestart høst 2026 (studieplan-siden viser «høst 2026»), samt programsiden. Studieplanen lister 180 sp totalt hvorav 130 sp inngår i en definert «spesialisering» og resten er ex.phil + valgfrie emner/utveksling. Ikke alle 130 sp i spesialiseringen er reelt obligatoriske for alle: studenten skal ta to av de tre emnene MAT121, MAT131 og MAT212 (hvert 10 sp, plassert i hhv. 2., 3. og 4. semester i tilrådd rekkefølge) og ett av PHYS116 (Signal- og systemanalyse) eller PHYS119 (Moderne fysikk II) i 5. semester (10 sp) – disse er obligatoriske valg mellom alternativer og er derfor IKKE tatt med i obligatoriske-listen, i tråd med instruksjonen. I tillegg inngår et fritt valgemne (10 sp) i 5. semester og 20 sp valgfrie emner/utveksling i 6. semester, som ikke er obligatoriske. De 11 emnene i obligatoriske-listen (110 sp) er de eneste som gjelder for absolutt alle studenter uansett valg. dbhEmnekoder er satt til tom liste for alle emner denne runden, som instruert."
+}

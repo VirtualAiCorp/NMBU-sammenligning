@@ -1,0 +1,1355 @@
+{
+ "hentet": "2026-09-22",
+ "institusjoner": {
+  "1173": "Norges miljø- og biovitenskapelige universitet",
+  "1150": "Norges teknisk-naturvitenskapelige universitet",
+  "1110": "Universitetet i Oslo",
+  "1120": "Universitetet i Bergen",
+  "1130": "UiT Norges arktiske universitet",
+  "1160": "Universitetet i Stavanger",
+  "1171": "Universitetet i Agder",
+  "1174": "Nord universitet",
+  "1175": "OsloMet - storbyuniversitetet",
+  "1176": "Universitetet i Sørøst-Norge",
+  "0238": "Høgskulen på Vestlandet",
+  "0256": "Høgskolen i Østfold"
+ },
+ "programs": [
+  {
+   "entryId": "nmbu_bygg",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "M-BA"
+   ],
+   "studieprogramnavn": "Byggeteknikk og arkitektur",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 1165
+  },
+  {
+   "entryId": "ntnu_bygg_infrastruktur",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "MTBYGG"
+   ],
+   "studieprogramnavn": "Bygg og infrastruktur - master (5-årig)",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 6465
+  },
+  {
+   "entryId": "ntnu_arkitektur",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "MAAR"
+   ],
+   "studieprogramnavn": "Arkitektur - master (5-årig)",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 2297
+  },
+  {
+   "entryId": "ntnu_ing_bygg",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "BIBYGG"
+   ],
+   "studieprogramnavn": "Bygg - bachelor i ingeniørfag",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 3806,
+   "merknad": "NTNU tilbyr programmet i både Trondheim og Ålesund under samme kode BIBYGG; DBH skiller ikke studiested. Nettbasert variant (BIBYG-F) er holdt utenfor."
+  },
+  {
+   "entryId": "oslomet_ing_bygg",
+   "institusjonskode": "1175",
+   "studieprogramkoder": [
+    "HINGBYGG"
+   ],
+   "studieprogramnavn": "Bachelorstudium i ingeniørfag - bygg",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 2555
+  },
+  {
+   "entryId": "hvl_ing_bygg",
+   "institusjonskode": "0238",
+   "studieprogramkoder": [
+    "BYGG"
+   ],
+   "studieprogramnavn": "Bachelor i ingeniørfag, bygg",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 1529,
+   "merknad": "Tilbys i Bergen (kode BYGG). Førde-varianten (BYGGF, nedlagt) og Y-veg-varianten (BYGGYF) er holdt utenfor."
+  },
+  {
+   "entryId": "uis_ing_bygg_konstruksjon",
+   "institusjonskode": "1160",
+   "studieprogramkoder": [
+    "B-BYGG"
+   ],
+   "studieprogramnavn": "Bygg - bachelor i ingeniørfag",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 777,
+   "merknad": "DBH skiller ikke studieretninger innenfor byggingeniørbacheloren. B-BYGG dekker hele programmet, ikke bare konstruksjonsteknikk. Samme kode som oppføringen uis_ing_bygg_infrastruktur i vann- og miljøteknikk-gruppa."
+  },
+  {
+   "entryId": "nmbu_maskin",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "M-MPP"
+   ],
+   "studieprogramnavn": "Teknologi og produktutvikling",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 564
+  },
+  {
+   "entryId": "ntnu_maskin_energi",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "MTMASKIN"
+   ],
+   "studieprogramnavn": "Maskin- og energiteknologi - master",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 2751,
+   "merknad": "Erstattet MTPROD (Produktutvikling og produksjon) fra opptaket 2023; karakterer finnes derfor bare fra 2023."
+  },
+  {
+   "entryId": "ntnu_industriell_design",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "MTDESIG"
+   ],
+   "studieprogramnavn": "Industriell design - master",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 1265
+  },
+  {
+   "entryId": "ntnu_produktutvikling_produksjon",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "MTPROD"
+   ],
+   "studieprogramnavn": "Produktutvikling og produksjon - master (5-årig)",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 2733,
+   "merknad": "Lagt ned og erstattet av MTMASKIN fra opptaket 2023, men koden har fremdeles fallende antall kandidater fra studenter som fullfører de siste årene."
+  },
+  {
+   "entryId": "ntnu_ing_maskin",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "BIMASKIN"
+   ],
+   "studieprogramnavn": "Maskin - bachelor i ingeniørfag",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 2730
+  },
+  {
+   "entryId": "oslomet_ing_maskin",
+   "institusjonskode": "1175",
+   "studieprogramkoder": [
+    "HINGMASKIN"
+   ],
+   "studieprogramnavn": "Bachelorstudium i ingeniørfag - maskin",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 1673
+  },
+  {
+   "entryId": "usn_ing_maskin_produktutvikling",
+   "institusjonskode": "1176",
+   "studieprogramkoder": [
+    "ING6"
+   ],
+   "studieprogramnavn": "Bachelor i ingeniørfag, maskiningeniør",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 1524,
+   "merknad": "USN bruker numeriske programkoder og skiller ikke studieretningen «produktutvikling» fra maskiningeniørbacheloren for øvrig; ING6 er den eneste maskiningeniørbacheloren ved USN."
+  },
+  {
+   "entryId": "nmbu_indok",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "M-IØ"
+   ],
+   "studieprogramnavn": "Industriell økonomi",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 1549
+  },
+  {
+   "entryId": "ntnu_indok",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "MTIØT"
+   ],
+   "studieprogramnavn": "Industriell økonomi og teknologiledelse - master",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 5349
+  },
+  {
+   "entryId": "uia_indok",
+   "institusjonskode": "1171",
+   "studieprogramkoder": [
+    "MASTINDØK5"
+   ],
+   "studieprogramnavn": "Industriell økonomi og teknologiledelse, 5-årig masterprogram",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 66
+  },
+  {
+   "entryId": "uis_indok",
+   "institusjonskode": "1160",
+   "studieprogramkoder": [
+    "M-INDØKG5"
+   ],
+   "studieprogramnavn": "Industriell økonomi - master i teknologi/siv.ing., femårig",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 12,
+   "merknad": "Lavt kandidattall (7-12 i året) er reelt: de fleste UiS-studentene på det femårige løpet får karakterer registrert under andre bachelor- og masterkoder underveis; M-INDØKG5 er likevel riktig programkode for opptaket."
+  },
+  {
+   "entryId": "uib_it_okonomi",
+   "institusjonskode": "1120",
+   "studieprogramkoder": [
+    "MASV-ITØK"
+   ],
+   "studieprogramnavn": "Integrert masterprogram i informasjonsteknologi og økonomi (sivilingeniør)",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 615
+  },
+  {
+   "entryId": "nord_okonomi_teknologiledelse",
+   "institusjonskode": "1174",
+   "studieprogramkoder": [
+    "BAØKTEK"
+   ],
+   "studieprogramnavn": "Bachelor i økonomi og teknologiledelse",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2025
+   ],
+   "kandidaterSiste": 100,
+   "merknad": "Nytt program, første opptak høsten 2025; karakterer finnes bare for 2025."
+  },
+  {
+   "entryId": "nmbu_kjemibio",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "M-KB"
+   ],
+   "studieprogramnavn": "Kjemi og bioteknologi",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 887
+  },
+  {
+   "entryId": "ntnu_ikmb",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "MTKMB"
+   ],
+   "studieprogramnavn": "Industriell kjemi, materialer og bioteknologi - master (5-årig)",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2025
+   ],
+   "kandidaterSiste": 526,
+   "merknad": "Erstattet MTKJ fra opptaket 2025; karakterer finnes derfor bare for 2025."
+  },
+  {
+   "entryId": "uit_baerekraftig_kjemi",
+   "institusjonskode": "1130",
+   "studieprogramkoder": [
+    "IMAT-BKI"
+   ],
+   "studieprogramnavn": "Bærekraftig kjemi og innovasjon, sivilingeniør - master",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2025
+   ],
+   "kandidaterSiste": 7,
+   "merknad": "Nytt program, første opptak høsten 2025; karakterer finnes bare for 2025."
+  },
+  {
+   "entryId": "ntnu_ikb",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "MTKJ"
+   ],
+   "studieprogramnavn": "Industriell kjemi og bioteknologi - master (5-årig)",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 3283,
+   "merknad": "Lagt ned og erstattet av MTKMB fra opptaket 2025, men koden har fremdeles kandidater fra studenter som fullfører de siste årene."
+  },
+  {
+   "entryId": "ntnu_bioteknologi",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "MBIOT5"
+   ],
+   "studieprogramnavn": "Bioteknologi - master",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 810
+  },
+  {
+   "entryId": "oslomet_ing_bioteknologi_kjemi",
+   "institusjonskode": "1175",
+   "studieprogramkoder": [
+    "HINGKJEMI"
+   ],
+   "studieprogramnavn": "Bachelorstudium i ingeniørfag - bioteknologi og kjemi",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 1040
+  },
+  {
+   "entryId": "uio_kjemi_biokjemi",
+   "institusjonskode": "1110",
+   "studieprogramkoder": [
+    "MNB-KJMB"
+   ],
+   "studieprogramnavn": "Kjemi og biokjemi",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 546
+  },
+  {
+   "entryId": "nmbu_miljofysikk",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "M-MF"
+   ],
+   "studieprogramnavn": "Miljøfysikk og fornybar energi",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 905
+  },
+  {
+   "entryId": "ntnu_energi_miljo",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "MTENERG"
+   ],
+   "studieprogramnavn": "Energi og miljø - master (5-årig)",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 3752
+  },
+  {
+   "entryId": "uib_energi",
+   "institusjonskode": "1120",
+   "studieprogramkoder": [
+    "5MAMN-ENER"
+   ],
+   "studieprogramnavn": "Integrert masterprogram i energi (sivilingeniør)",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 1122
+  },
+  {
+   "entryId": "uit_fornybar_energi",
+   "institusjonskode": "1130",
+   "studieprogramkoder": [
+    "IMAT-FOREN"
+   ],
+   "studieprogramnavn": "Fornybar energi, sivilingeniør - master",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 196
+  },
+  {
+   "entryId": "ntnu_fysmat",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "MTFYMA"
+   ],
+   "studieprogramnavn": "Fysikk og matematikk - master",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 4661
+  },
+  {
+   "entryId": "uit_anvendt_fysmat",
+   "institusjonskode": "1130",
+   "studieprogramkoder": [
+    "IMAT-FYMA"
+   ],
+   "studieprogramnavn": "Anvendt fysikk og matematikk, sivilingeniør - master",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 277
+  },
+  {
+   "entryId": "uio_fornybar_nano",
+   "institusjonskode": "1110",
+   "studieprogramkoder": [
+    "MNB-MENT"
+   ],
+   "studieprogramnavn": "Fornybar energi og nanoteknologi",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 472,
+   "merknad": "Samme DBH-program som oppføringen uio_fornybar_nano_b i energi- og miljøfysikk-gruppa."
+  },
+  {
+   "entryId": "nmbu_datavitenskap",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "M-TDV"
+   ],
+   "studieprogramnavn": "Datavitenskap",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 553,
+   "merknad": "Det femårige løpet (M-TDV) er en annen kode enn det toårige masterprogrammet i datavitenskap (M-DV), se datavitenskap2-gruppa."
+  },
+  {
+   "entryId": "ntnu_datateknologi",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "MTDT"
+   ],
+   "studieprogramnavn": "Datateknologi - master (5-årig)",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 5441
+  },
+  {
+   "entryId": "uib_datascience",
+   "institusjonskode": "1120",
+   "studieprogramkoder": [
+    "5MAMN-DSC"
+   ],
+   "studieprogramnavn": "Integrert masterprogram i data science (sivilingeniør)",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 431,
+   "merknad": "Karakterer finnes fra 2023, da tabell 308 først har rader for dette femårige løpet."
+  },
+  {
+   "entryId": "uis_datateknologi",
+   "institusjonskode": "1160",
+   "studieprogramkoder": [
+    "M-DATATEK5"
+   ],
+   "studieprogramnavn": "Datateknologi - master i teknologi/siv.ing., femårig",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [],
+   "kandidaterSiste": 0,
+   "merknad": "Tabell 308 har ingen rader for M-DATATEK5 i seksårsvinduet 2020-2025, til tross for at koden er aktiv i studieprogramregisteret (tabell 347) og programmet har vært tilbudt siden 2019. UiS ser ut til å føre karakterene for det femårige løpet under bachelorkoden B-DATA og deretter masterkoden M-DATENG, som også dekker studenter med annen opptaksvei (2-årig opptak). Disse kodene kan derfor ikke brukes uten å blande inn andre studenter, så karakterstatistikk for nettopp dette programmet er i praksis ikke tilgjengelig via DBH."
+  },
+  {
+   "entryId": "uit_ki",
+   "institusjonskode": "1130",
+   "studieprogramkoder": [
+    "IMAT-KUIN"
+   ],
+   "studieprogramnavn": "Kunstig intelligens, sivilingeniør - master",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 220
+  },
+  {
+   "entryId": "uia_ki",
+   "institusjonskode": "1171",
+   "studieprogramkoder": [
+    "MASTIKT5"
+   ],
+   "studieprogramnavn": "Kunstig intelligens, 5-årig masterprogram",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 502
+  },
+  {
+   "entryId": "uio_informatikk_ml_ki",
+   "institusjonskode": "1110",
+   "studieprogramkoder": [
+    "MNB-INM"
+   ],
+   "studieprogramnavn": "Informatikk: maskinlæring og kunstig intelligens",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2025
+   ],
+   "kandidaterSiste": 326,
+   "merknad": "Nytt program, første opptak høsten 2025; karakterer finnes bare for 2025."
+  },
+  {
+   "entryId": "oslomet_anvendt_datateknologi",
+   "institusjonskode": "1175",
+   "studieprogramkoder": [
+    "ANVDATA"
+   ],
+   "studieprogramnavn": "Bachelorstudium i anvendt datateknologi",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 2524
+  },
+  {
+   "entryId": "nmbu_vannmiljo",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "M-VM"
+   ],
+   "studieprogramnavn": "Vann- og miljøteknikk",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 503
+  },
+  {
+   "entryId": "ntnu_bygg_infrastruktur_vann",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "MTBYGG"
+   ],
+   "studieprogramnavn": "Bygg og infrastruktur - master (5-årig)",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 6465,
+   "merknad": "Samme DBH-program som oppføringen ntnu_bygg_infrastruktur i bygg-gruppa. Vann- og miljøteknikk er én av flere studieretninger i dette programmet; DBH skiller ikke studieretning."
+  },
+  {
+   "entryId": "ntnu_energi_miljo_vann",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "MTENERG"
+   ],
+   "studieprogramnavn": "Energi og miljø - master (5-årig)",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 3752,
+   "merknad": "Samme DBH-program som oppføringen ntnu_energi_miljo i miljøfysikk-gruppa."
+  },
+  {
+   "entryId": "uis_ing_bygg_infrastruktur",
+   "institusjonskode": "1160",
+   "studieprogramkoder": [
+    "B-BYGG"
+   ],
+   "studieprogramnavn": "Bygg - bachelor i ingeniørfag",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 777,
+   "merknad": "Samme DBH-program (B-BYGG) som oppføringen uis_ing_bygg_konstruksjon i bygg-gruppa. DBH skiller ikke studieretninger innenfor byggingeniørbacheloren."
+  },
+  {
+   "entryId": "hiof_ing_bygg_miljo",
+   "institusjonskode": "0256",
+   "studieprogramkoder": [
+    "BYG"
+   ],
+   "studieprogramnavn": "Bachelorstudium i ingeniørfag - bygg og miljø",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 231,
+   "merknad": "Y-veg-varianten (BYGY) og TRESS-varianten (TBYG) er holdt utenfor."
+  },
+  {
+   "entryId": "oslomet_ing_energi_miljo_bygg",
+   "institusjonskode": "1175",
+   "studieprogramkoder": [
+    "HINGENERGI"
+   ],
+   "studieprogramnavn": "Bachelorstudium i ingeniørfag - energi og miljø i bygg",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 613
+  },
+  {
+   "entryId": "usn_ing_bygg_plan_infrastruktur",
+   "institusjonskode": "1176",
+   "studieprogramkoder": [
+    "ING1"
+   ],
+   "studieprogramnavn": "Bachelor i ingeniørfag, byggingeniør",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 1127,
+   "merknad": "USN bruker numeriske programkoder og skiller ikke studieretningen «plan og infrastruktur» fra byggingeniørbacheloren for øvrig; ING1 er den eneste byggingeniørbacheloren ved USN i Porsgrunn."
+  },
+  {
+   "entryId": "nmbu_robotikk",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "M-RB"
+   ],
+   "studieprogramnavn": "Anvendt robotikk",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 796
+  },
+  {
+   "entryId": "ntnu_kybernetikk_robotikk",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "MTTK"
+   ],
+   "studieprogramnavn": "Kybernetikk og robotikk - master (5-årig)",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 4717
+  },
+  {
+   "entryId": "uis_kybernetikk_robotteknologi",
+   "institusjonskode": "1160",
+   "studieprogramkoder": [
+    "M-KYB5"
+   ],
+   "studieprogramnavn": "Kybernetikk og robotteknologi - Master i teknologi/siv.ing. - 5 år",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [],
+   "kandidaterSiste": 0,
+   "merknad": "Lagt ned etter opptaket 2022. Tabell 308 har ingen rader for M-KYB5 i seksårsvinduet 2020-2025; UiS ser ut til å føre karakterene for dette femårige løpet under bachelorkoden B-DATA og masterkoden M-ROBOT (som fra 2023 er videreført som «Kybernetikk og anvendt KI»), som også dekker andre studenter. Karakterstatistikk for nettopp dette programmet er derfor i praksis ikke tilgjengelig via DBH."
+  },
+  {
+   "entryId": "uia_ing_mekatronikk",
+   "institusjonskode": "1171",
+   "studieprogramkoder": [
+    "INGMASK3"
+   ],
+   "studieprogramnavn": "Ingeniørfag - mekatronikk, bachelorprogram",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 2419
+  },
+  {
+   "entryId": "oslomet_ing_elektro_robotikk",
+   "institusjonskode": "1175",
+   "studieprogramkoder": [
+    "HINGELEKTR"
+   ],
+   "studieprogramnavn": "Bachelorstudium i ingeniørfag - elektronikk",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 1697,
+   "merknad": "«Automatisering og robotikk» er én av flere studieretninger innenfor den generelle elektro-ingeniørbacheloren ved OsloMet (het «elektronikk og informasjonsteknologi» før navneendring). DBH har ingen egen kode for studieretningen."
+  },
+  {
+   "entryId": "uio_informatikk_robotikk",
+   "institusjonskode": "1110",
+   "studieprogramkoder": [
+    "MNB-INR"
+   ],
+   "studieprogramnavn": "Informatikk: robotikk og intelligente systemer",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 1161
+  },
+  {
+   "entryId": "ntnu_alesund_mekatronikk",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "BIMEPRO"
+   ],
+   "studieprogramnavn": "Mekatronikk og produktdesign - bachelor i ingeniørfag",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 436,
+   "merknad": "Relativt nytt program ved NTNU Ålesund; karakterer finnes fra 2023."
+  },
+  {
+   "entryId": "nmbu_geoinformatikk",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "M-GEOM"
+   ],
+   "studieprogramnavn": "Geoinformatikk",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 217
+  },
+  {
+   "entryId": "hvl_landmaling_geoinf",
+   "institusjonskode": "0238",
+   "studieprogramkoder": [
+    "LEIE"
+   ],
+   "studieprogramnavn": "Bachelor i landmåling og eiendomsdesign",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 900,
+   "merknad": "Tilbys i Bergen. Samme DBH-program som oppføringen hvl_landmaling i geomatikk-gruppa."
+  },
+  {
+   "entryId": "ntnu_gjovik_ing_geomatikk_geoinf",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "BGEO"
+   ],
+   "studieprogramnavn": "Geomatikk - bachelor",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 0,
+   "merknad": "Tilbys i Gjøvik (kode BGEO, adskilt fra Trondheim/Ålesund-programmet BIGEOMAT). Siste opptak høsten 2024; kandidattallet har falt kraftig og var 0 i 2025. Samme DBH-program som oppføringen ntnu_gjovik_ing_geomatikk i geomatikk-gruppa."
+  },
+  {
+   "entryId": "ntnu_georessurser",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "MTGEORT"
+   ],
+   "studieprogramnavn": "Georessurser og geoteknologi - master",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 776,
+   "merknad": "Karakterer finnes fra 2023, da tabell 308 først har rader for dette programmet."
+  },
+  {
+   "entryId": "nmbu_geomatikk",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "B-GEOM"
+   ],
+   "studieprogramnavn": "Geomatikk",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 376
+  },
+  {
+   "entryId": "hvl_landmaling",
+   "institusjonskode": "0238",
+   "studieprogramkoder": [
+    "LEIE"
+   ],
+   "studieprogramnavn": "Bachelor i landmåling og eiendomsdesign",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 900,
+   "merknad": "Tilbys i Bergen. Samme DBH-program som oppføringen hvl_landmaling_geoinf i geoinformatikk-gruppa."
+  },
+  {
+   "entryId": "ntnu_gjovik_ing_geomatikk",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "BGEO"
+   ],
+   "studieprogramnavn": "Geomatikk - bachelor",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 0,
+   "merknad": "Siste opptak høsten 2024; kandidattallet har falt kraftig og var 0 i 2025. Samme DBH-program som oppføringen ntnu_gjovik_ing_geomatikk_geoinf i geoinformatikk-gruppa."
+  },
+  {
+   "entryId": "nmbu_energifysikk",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "B-EMF"
+   ],
+   "studieprogramnavn": "Energi- og miljøfysikk",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 222
+  },
+  {
+   "entryId": "ntnu_fysikk",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "BFY"
+   ],
+   "studieprogramnavn": "Fysikk - bachelor",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 988
+  },
+  {
+   "entryId": "uio_fysikk_astronomi",
+   "institusjonskode": "1110",
+   "studieprogramkoder": [
+    "MNB-FAS"
+   ],
+   "studieprogramnavn": "Fysikk og astronomi",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 1300
+  },
+  {
+   "entryId": "uib_fysikk",
+   "institusjonskode": "1120",
+   "studieprogramkoder": [
+    "BAMN-PHYS"
+   ],
+   "studieprogramnavn": "Bachelorprogram i fysikk",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 420
+  },
+  {
+   "entryId": "uio_fornybar_nano_b",
+   "institusjonskode": "1110",
+   "studieprogramkoder": [
+    "MNB-MENT"
+   ],
+   "studieprogramnavn": "Fornybar energi og nanoteknologi",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 472,
+   "merknad": "Samme DBH-program som oppføringen uio_fornybar_nano i miljøfysikk-gruppa."
+  },
+  {
+   "entryId": "uit_fysmat_b",
+   "institusjonskode": "1130",
+   "studieprogramkoder": [
+    "B-MATRE"
+   ],
+   "studieprogramnavn": "Fysikk og matematikk - bachelor",
+   "nivaakode": "B3",
+   "aarMedKarakterer": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 61
+  },
+  {
+   "entryId": "uis_matematikk_fysikk",
+   "institusjonskode": "1160",
+   "studieprogramkoder": [
+    "M-MAFYS5"
+   ],
+   "studieprogramnavn": "Matematikk og fysikk - femårig integrert master",
+   "nivaakode": "M5",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 219
+  },
+  {
+   "entryId": "nmbu_datavitenskap2",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "M-DV"
+   ],
+   "studieprogramnavn": "Datavitenskap",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 206,
+   "merknad": "Det toårige masterprogrammet (M-DV) er en annen kode enn det femårige sivilingeniørløpet (M-TDV), se datavitenskap-gruppa."
+  },
+  {
+   "entryId": "ntnu_midt",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "MIDT"
+   ],
+   "studieprogramnavn": "Datateknologi - master (2-årig)",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 884
+  },
+  {
+   "entryId": "ntnu_msit",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "MSIT"
+   ],
+   "studieprogramnavn": "Informatics - Master's Programme",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 1062
+  },
+  {
+   "entryId": "nmbu_iwt",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "M-VR"
+   ],
+   "studieprogramnavn": "Intelligent Water Technology",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 28,
+   "merknad": "Første opptak i 2024; karakterer finnes bare for 2024 og 2025."
+  },
+  {
+   "entryId": "ntnu_mibygg",
+   "institusjonskode": "1150",
+   "studieprogramkoder": [
+    "MIBYGG"
+   ],
+   "studieprogramnavn": "Bygg og infrastruktur - master (2-årig)",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": 1315
+  },
+  {
+   "entryId": "oslomet_smart_vannteknologi",
+   "institusjonskode": "1175",
+   "studieprogramkoder": [],
+   "studieprogramnavn": "Smart vannteknologi",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [],
+   "kandidaterSiste": 0,
+   "merknad": "Programmet er ikke registrert i DBH tabell 347 for 2025 og finnes ikke i tabell 308; det er for nytt til at det har DBH-data. Ingen studieprogramkode kan derfor oppgis."
+  }
+ ]
+}

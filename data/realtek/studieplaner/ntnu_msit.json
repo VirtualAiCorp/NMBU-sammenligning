@@ -1,0 +1,417 @@
+{
+  "entryId": "ntnu_msit",
+  "programnavn": "Informatics – Master's Programme (master 2 år)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.ntnu.no/studier/msit",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=MSIT&year=0",
+    "https://www.ntnu.no/web/studier/studieplan?p_p_id=studyprogrammeplannerportlet_WAR_studyprogrammeplannerportlet_INSTANCE_KzJMPh2hQuXL&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=studyplan&p_p_cacheability=cacheLevelPage&code=MSIT&year=2026"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 0,
+  "obligatoriske": [],
+  "spesialiseringer": [
+    {
+      "navn": "Artificial Intelligence (Trondheim)",
+      "obligatoriske": [
+        {
+          "emnekode": "HMS0009",
+          "emnenavn": "Health, Safety and Environment (HSE) course for 1st year students",
+          "studiepoeng": 0,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4136",
+          "emnenavn": "Introduction to Artificial Intelligence",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4195",
+          "emnenavn": "Visual Computing Fundamentals",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4171",
+          "emnenavn": "Artificial Intelligence Methods",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "IT3915",
+          "emnenavn": "Master in Informatics, Preparatory Project",
+          "studiepoeng": 15,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "IT3920",
+          "emnenavn": "Master Thesis for MSIT",
+          "studiepoeng": 30,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Databases and Search (Trondheim)",
+      "obligatoriske": [
+        {
+          "emnekode": "HMS0009",
+          "emnenavn": "Health, Safety and Environment (HSE) course for 1st year students",
+          "studiepoeng": 0,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4117",
+          "emnenavn": "Information Retrieval",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "IT3010",
+          "emnenavn": "Research-based digitalization",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4300",
+          "emnenavn": "Data Warehousing and Data Mining",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "IT3915",
+          "emnenavn": "Master in Informatics, Preparatory Project",
+          "studiepoeng": 15,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "IT3920",
+          "emnenavn": "Master Thesis for MSIT",
+          "studiepoeng": 30,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Interaction Design, Game and Learning Technology (Trondheim)",
+      "obligatoriske": [
+        {
+          "emnekode": "HMS0009",
+          "emnenavn": "Health, Safety and Environment (HSE) course for 1st year students",
+          "studiepoeng": 0,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "IT3402",
+          "emnenavn": "User-centred interaction design",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "IT3010",
+          "emnenavn": "Research-based digitalization",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "IT3915",
+          "emnenavn": "Master in Informatics, Preparatory Project",
+          "studiepoeng": 15,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "IT3920",
+          "emnenavn": "Master Thesis for MSIT",
+          "studiepoeng": 30,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Software (Trondheim)",
+      "obligatoriske": [
+        {
+          "emnekode": "HMS0009",
+          "emnenavn": "Health, Safety and Environment (HSE) course for 1st year students",
+          "studiepoeng": 0,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TDT4175",
+          "emnenavn": "Information Systems",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "IT3010",
+          "emnenavn": "Research-based digitalization",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "IT3915",
+          "emnenavn": "Master in Informatics, Preparatory Project",
+          "studiepoeng": 15,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "IT3920",
+          "emnenavn": "Master Thesis for MSIT",
+          "studiepoeng": 30,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Programming and Security Engineering (Gjøvik)",
+      "obligatoriske": [
+        {
+          "emnekode": "IDIG4110",
+          "emnenavn": "Modern Software Engineering",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "IDIG4120",
+          "emnenavn": "Digital Information Processing",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "IMT4110",
+          "emnenavn": "Scientific Methodology and Communication",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "IMT4113",
+          "emnenavn": "Introduction to Cyber and Information Security Technology",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "IDIG4210",
+          "emnenavn": "Programming & Software Architecture",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "IDIG4220",
+          "emnenavn": "Modern Machine Learning",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "IDIG4300",
+          "emnenavn": "Specialisation (Programming & Security Engineering)",
+          "studiepoeng": 15,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Studieplanens studyChoice-felt for dette emnet er tomt («-») i stedet for «O», men emnet står i emnegruppen «Mandatory courses» og er derfor tolket som obligatorisk."
+        },
+        {
+          "emnekode": "MACS4000",
+          "emnenavn": "Research Project Planning (Applied Computer Science & MSIT)",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Studieplanens studyChoice-felt for dette emnet er tomt («-») i stedet for «O», men emnet står i emnegruppen «Mandatory courses» og er derfor tolket som obligatorisk."
+        },
+        {
+          "emnekode": "MACS490",
+          "emnenavn": "Master's Thesis (MACS & MSIT)",
+          "studiepoeng": 30,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "Studieplanens studyChoice-felt for dette emnet er tomt («-») i stedet for «O», men emnet står i emnegruppen «Mandatory courses» og er derfor tolket som obligatorisk."
+        }
+      ]
+    },
+    {
+      "navn": "Visual informatics (Gjøvik)",
+      "obligatoriske": [
+        {
+          "emnekode": "IDIG4110",
+          "emnenavn": "Modern Software Engineering",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "IDIG4120",
+          "emnenavn": "Digital Information Processing",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "IDIG4121",
+          "emnenavn": "Introduction to visual computing and informatics",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "IMT4110",
+          "emnenavn": "Scientific Methodology and Communication",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "IDIG4200",
+          "emnenavn": "Visual Informatics",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "IDIG4210",
+          "emnenavn": "Programming & Software Architecture",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "IDIG4220",
+          "emnenavn": "Modern Machine Learning",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "IDIG4322",
+          "emnenavn": "Advanced visual informatics",
+          "studiepoeng": 15,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MACS4000",
+          "emnenavn": "Research Project Planning (Applied Computer Science & MSIT)",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MACS490",
+          "emnenavn": "Master's Thesis (MACS & MSIT)",
+          "studiepoeng": 30,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er NTNUs studieplan-API (studyprogrammeplannerportlet, resource_id=studyplan) for MSIT, kull 2026 (fullstendig 2-årig plan, oppdatert 22.09.2026 – nyeste publiserte kull). MSIT er engelskspråklig og har ingen emner som er felles for alle seks studieretninger, derfor er toppnivå-listen «obligatoriske» tom og obligatoriskeStudiepoeng satt til 0; all obligatorisk informasjon ligger under spesialiseringer. Programmet driver reelt to atskilte studieløp under samme programkode: fire studieretninger i Trondheim (Artificial Intelligence, Databases and Search, Interaction Design/Game/Learning Technology, Software) med HMS0009 og et felles avsluttende forprosjekt/masteroppgave-par IT3915/IT3920, og to studieretninger i Gjøvik (Programming and Security Engineering, Visual informatics) med helt andre obligatoriske emnekoder (IDIG-/IMT-/MACS-serien) og uten HMS0009. Alle seks retninger har i tillegg en obligatorisk, langsgående emnekategori «Experts in Teamwork» i 1. år vår (7,5 sp; Trondheim-versjonen heter EKSP-I-TEAM-LANGSG26, Gjøvik-versjonen EIT-LANGSG-GJØVIK26), men studenten velger fritt blant et stort antall emnekoder, så ingen enkelt emnekode er obligatorisk der og kategorien er derfor ikke ført opp i emnelistene. Obligatorisk studiepoengsum per retning varierer fra 60 sp (Software; Interaction Design, Game and Learning Technology) og 67,5 sp (Artificial Intelligence; Databases and Search) til 97,5 sp (Programming and Security Engineering) og 112,5 sp (Visual informatics) – de to Gjøvik-retningene har vesentlig mer obligatorisk pensum og tilsvarende færre valgfrie emner enn Trondheims fire retninger. For IDIG4300, MACS4000 (i Programming and Security Engineering-varianten) og MACS490 (i Programming and Security Engineering-varianten) er studieplanens studyChoice-kode tom («-») i stedet for «O Compulsory course», men emnene ligger i emnegrupper kalt «Mandatory courses» sammen med ellers identiske obligatoriske emner i søsterretningen Visual informatics (der de samme emnekodene MACS4000/MACS490 er merket «O»), så de er tolket som obligatoriske her."
+}

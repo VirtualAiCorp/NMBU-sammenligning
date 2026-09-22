@@ -1,0 +1,143 @@
+{
+  "entryId": "oslomet_ing_elektro_robotikk",
+  "programnavn": "Ingeniør, elektro – automatisering og robotikk (bachelor)",
+  "institusjon": "OsloMet - storbyuniversitetet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.oslomet.no/studier/tkd/automatisering-robotikk",
+    "https://student.oslomet.no/studier/-/studieinfo/programplan/HINGELEKTR/2026/H%C3%98ST"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 150,
+  "obligatoriske": [
+    {
+      "emnekode": "MEK1000",
+      "emnenavn": "Matematikk 1000",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MEK1300",
+      "emnenavn": "Introduksjon til python-programmering",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ELI1300",
+      "emnenavn": "Analoge og digitale kretser",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MEK2200",
+      "emnenavn": "Statistikk og risikoanalyse",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MEK1400",
+      "emnenavn": "Fysikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ELI1000",
+      "emnenavn": "Innføring i automatisering og robotikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ELI2300",
+      "emnenavn": "Dynamiske systemer",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MEK2000",
+      "emnenavn": "Matematikk 2000",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MEK3100",
+      "emnenavn": "Avansert Python-programmering for ingeniører",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ELFT2400",
+      "emnenavn": "Kybernetikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ELI2500",
+      "emnenavn": "Industriell automatisering og instrumentering",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Det gjenstående 3. valgfrie emnet i dette semesteret (10 sp) velges fritt, f.eks. blant DATA1500 Databaser, DAVE3705 Matematikk 4000 eller ELI1400 Analog og digital elektronikk."
+    },
+    {
+      "emnekode": "ELI3610",
+      "emnenavn": "Robotikk",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "STKD6610",
+      "emnenavn": "Technology and Society II",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ELTS3900",
+      "emnenavn": "Bacheloroppgave",
+      "studiepoeng": 20,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er OsloMets offisielle programplan for HINGELEKTR («Bachelorstudium i ingeniørfag - elektro»), gjeldende fra 2026 HØST (student.oslomet.no, hentet via nettleser). Programmet har to studieretninger, Elektronikk og Automatisering og robotikk; kun retningen Automatisering og robotikk er hentet ut her, i tråd med oppdraget. Utover de 150 sp som er obligatoriske i denne retningen, er det 30 sp valgfrie emner fordelt med 10 sp i 2. år vår, 10 sp i 3. år høst og 10 sp i 3. år vår (typiske valgemner: DATA1500 Databaser, DAVE3705 Matematikk 4000, ELI1400 Analog og digital elektronikk, ELI3600 Industrielle informasjons- og kommunikasjonssystemer, ELI3740 Mikroelektriske kretser og systemer, DAVE3625 Introduksjon til kunstig intelligens, DAVE3700 Matematikk 3000, DAVE3710 Akademisk Engelsk, DATA2410 Datanettverk og skytjenester, ELI2200 Signalbehandling, ELI2700 Elektronikk). 150 + 30 = 180 sp totalt. Programplansiden viser også en parallell «Automatisering og robotikk for tretermin»-variant med samme obligatoriske emner men annen semesterfordeling i 1. år; denne er ikke tatt med."
+}
