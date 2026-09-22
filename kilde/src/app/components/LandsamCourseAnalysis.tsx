@@ -603,7 +603,7 @@ function strykTekst(d: CourseGradeYearX): string | null {
 function strykTittel(d: CourseGradeYearX): string | undefined {
   const spenn = strykSpenn(d);
   if (!spenn) return undefined;
-  return `${nf(skjultOf(d))} kandidater er skjermet av DBH, så reell strykprosent ligger mellom ${nf(spenn.lav, 1)} % og ${nf(spenn.hoy, 1)} %.`;
+  return `${nf(skjultOf(d))} ${skjultOf(d) === 1 ? 'kandidat' : 'kandidater'} er skjermet av DBH, så reell strykprosent ligger mellom ${nf(spenn.lav, 1)} % og ${nf(spenn.hoy, 1)} %.`;
 }
 
 const SKJULT_AMBER = '#c2963a';
@@ -732,7 +732,7 @@ function FordelingBlokk({ tittel, d, undertittel }: { tittel: string; d: CourseG
           style={{ backgroundColor: '#fdf4e0', border: `1px solid ${SKJULT_AMBER}`, color: '#7a5a14', fontSize: 11 }}>
           <Info className="w-3.5 h-3.5 shrink-0 mt-0.5" />
           <span>
-            {nf(skjult)} kandidater er skjermet av DBH (celler med 1–2 kandidater vises som 0).
+            {nf(skjult)} {skjult === 1 ? 'kandidat' : 'kandidater'} er skjermet av DBH (celler med 1–2 kandidater vises som 0).
             Reell strykprosent ligger mellom {nf(spenn.lav, 1)} % og {nf(spenn.hoy, 1)} %.
           </span>
         </div>
