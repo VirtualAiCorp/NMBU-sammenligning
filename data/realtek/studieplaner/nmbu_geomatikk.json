@@ -18,7 +18,9 @@
       "studiepoeng": 5,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "IMRT100-1"
+      ],
       "merknad": "Augustblokk."
     },
     {
@@ -27,7 +29,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "INF120-1"
+      ],
       "merknad": null
     },
     {
@@ -36,7 +40,9 @@
       "studiepoeng": 5,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "LAD102-1"
+      ],
       "merknad": null
     },
     {
@@ -45,7 +51,9 @@
       "studiepoeng": 5,
       "aar": 2,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "INF201-1"
+      ],
       "merknad": null
     },
     {
@@ -54,7 +62,9 @@
       "studiepoeng": 10,
       "aar": 2,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "GMGD200-1"
+      ],
       "merknad": "Het tidligere GMLM213 (nevnt i studieplanens variant «med overgang»)."
     },
     {
@@ -63,7 +73,9 @@
       "studiepoeng": 10,
       "aar": 2,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "GMGI210-1"
+      ],
       "merknad": null
     },
     {
@@ -72,7 +84,9 @@
       "studiepoeng": 5,
       "aar": 2,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "GMLM102-1"
+      ],
       "merknad": null
     },
     {
@@ -81,7 +95,9 @@
       "studiepoeng": 10,
       "aar": 2,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "GMPE240-1"
+      ],
       "merknad": null
     },
     {
@@ -99,7 +115,10 @@
       "studiepoeng": 12.5,
       "aar": 3,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "GMLM210-1",
+        "GMLM210-2"
+      ],
       "merknad": "Augustblokk, fortsetter høstparallelt (12,5 sp samlet)."
     },
     {
@@ -108,7 +127,10 @@
       "studiepoeng": 10,
       "aar": 3,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "GMFO120-1",
+        "GMFO120-2"
+      ],
       "merknad": null
     },
     {
@@ -117,7 +139,9 @@
       "studiepoeng": 10,
       "aar": 3,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "PHI100-1"
+      ],
       "merknad": "Studieplanen gir valget mellom PHI100 og seminarversjonen PHI101 (samme mønster som i nmbu_eiendom.json). Emnet er markert V/H (tilbys både vår og høst); fremdriftsskjemaet plasserer det i 3. år høst."
     },
     {
@@ -126,7 +150,10 @@
       "studiepoeng": 7.5,
       "aar": 3,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "GMGD222-1",
+        "GMGD222-2"
+      ],
       "merknad": null
     },
     {
@@ -135,7 +162,9 @@
       "studiepoeng": 10,
       "aar": 3,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "GMFO205-1"
+      ],
       "merknad": null
     }
   ],
@@ -149,7 +178,9 @@
           "studiepoeng": 10,
           "aar": 1,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "MATH100-1"
+          ],
           "merknad": null
         },
         {
@@ -158,7 +189,9 @@
           "studiepoeng": 10,
           "aar": 1,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "FYS100-1"
+          ],
           "merknad": null
         },
         {
@@ -167,7 +200,10 @@
           "studiepoeng": 5,
           "aar": 1,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "MATH131-1",
+            "MATH131-2"
+          ],
           "merknad": null
         },
         {
@@ -176,7 +212,9 @@
           "studiepoeng": 5,
           "aar": 3,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "GMGD230-1"
+          ],
           "merknad": "Obligatorisk kun for løpet «uten overgang»; i studieplanens tabell for dette løpet er emnekoden merket med fotnote a: «Obligatorisk emne for bachelor uten overgang til mastergrad, valgfritt emne for bachelor med overgang til master». For løpet «med overgang» er GMGD230 kun en anbefalt valgfri emne."
         }
       ]
@@ -190,7 +228,9 @@
           "studiepoeng": 10,
           "aar": 1,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "MATH121-1"
+          ],
           "merknad": null
         },
         {
@@ -199,7 +239,9 @@
           "studiepoeng": 10,
           "aar": 1,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "FYS101-1"
+          ],
           "merknad": null
         },
         {
@@ -208,7 +250,9 @@
           "studiepoeng": 10,
           "aar": 1,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "MATH122-1"
+          ],
           "merknad": null
         },
         {
@@ -217,7 +261,9 @@
           "studiepoeng": 10,
           "aar": 2,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "MATH123-1"
+          ],
           "merknad": null
         },
         {
@@ -226,7 +272,9 @@
           "studiepoeng": 5,
           "aar": 2,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "FYS102A-1"
+          ],
           "merknad": null
         },
         {

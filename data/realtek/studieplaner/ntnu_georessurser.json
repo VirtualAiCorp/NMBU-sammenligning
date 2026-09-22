@@ -28,7 +28,9 @@
       "studiepoeng": 7.5,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "TDT4110-1"
+      ],
       "merknad": null
     },
     {
@@ -37,7 +39,9 @@
       "studiepoeng": 7.5,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "TGB4100-1"
+      ],
       "merknad": null
     },
     {
@@ -46,7 +50,9 @@
       "studiepoeng": 7.5,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "TMA4400-1"
+      ],
       "merknad": null
     },
     {
@@ -55,7 +61,9 @@
       "studiepoeng": 7.5,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "TMT4101-1"
+      ],
       "merknad": null
     },
     {
@@ -64,7 +72,9 @@
       "studiepoeng": 7.5,
       "aar": 1,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "EXPH0300-1"
+      ],
       "merknad": null
     },
     {
@@ -73,7 +83,9 @@
       "studiepoeng": 7.5,
       "aar": 1,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "TGB4112-1"
+      ],
       "merknad": null
     },
     {
@@ -82,7 +94,9 @@
       "studiepoeng": 7.5,
       "aar": 1,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "TKT4126-1"
+      ],
       "merknad": null
     },
     {
@@ -100,7 +114,9 @@
       "studiepoeng": 7.5,
       "aar": 2,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "TFY4104-1"
+      ],
       "merknad": null
     },
     {
@@ -109,7 +125,9 @@
       "studiepoeng": 7.5,
       "aar": 2,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "TIØ4252-1"
+      ],
       "merknad": null
     },
     {
@@ -118,7 +136,9 @@
       "studiepoeng": 7.5,
       "aar": 2,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "TMA4240-1"
+      ],
       "merknad": null
     },
     {
@@ -136,7 +156,9 @@
       "studiepoeng": 7.5,
       "aar": 2,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "TEP4100-1"
+      ],
       "merknad": null
     },
     {
@@ -172,7 +194,9 @@
       "studiepoeng": 7.5,
       "aar": 3,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "TPG4155-1"
+      ],
       "merknad": "Eneste emne som er obligatorisk i begge studieretningene i 3. år (kull 2024-data); derfor i felleslisten selv om det ligger i studieretningenes egne emnetabeller i studieplanverktøyet."
     }
   ],
@@ -180,25 +204,143 @@
     {
       "navn": "Mineralproduksjon og teknisk ressursgeologi",
       "obligatoriske": [
-        { "emnekode": "TGB4126", "emnenavn": "Mineralogi, grunnkurs", "studiepoeng": 7.5, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
-        { "emnekode": "TGB4216", "emnenavn": "Mineralressursforvaltning, grunnleggende kurs", "studiepoeng": 7.5, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
-        { "emnekode": "TGB4242", "emnenavn": "Gruvedrift, grunnkurs", "studiepoeng": 7.5, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
-        { "emnekode": "TGB4301", "emnenavn": "Oppredning, grunnkurs", "studiepoeng": 7.5, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
-        { "emnekode": "TGB4130", "emnenavn": "Petrologi", "studiepoeng": 7.5, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
-        { "emnekode": "TGB4150", "emnenavn": "Strukturgeologi, grunnkurs", "studiepoeng": 7.5, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
-        { "emnekode": "TGB4270", "emnenavn": "Miljøaspekter ved mineralproduksjon og ved uttak og håndtering av bergmasser", "studiepoeng": 7.5, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null }
+        {
+          "emnekode": "TGB4126",
+          "emnenavn": "Mineralogi, grunnkurs",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TGB4126-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TGB4216",
+          "emnenavn": "Mineralressursforvaltning, grunnleggende kurs",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TGB4242",
+          "emnenavn": "Gruvedrift, grunnkurs",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TGB4301",
+          "emnenavn": "Oppredning, grunnkurs",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TGB4130",
+          "emnenavn": "Petrologi",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TGB4150",
+          "emnenavn": "Strukturgeologi, grunnkurs",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TGB4270",
+          "emnenavn": "Miljøaspekter ved mineralproduksjon og ved uttak og håndtering av bergmasser",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
       ]
     },
     {
       "navn": "Petroleums- og reservoarteknologi",
       "obligatoriske": [
-        { "emnekode": "TPG4105", "emnenavn": "Petroleumsteknologi, grunnkurs", "studiepoeng": 7.5, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
-        { "emnekode": "TPG4116", "emnenavn": "Beskrivelse og karakterisering av porøse medier og strømning ved laboratorieanalyse", "studiepoeng": 7.5, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
-        { "emnekode": "TPG4175", "emnenavn": "Petrofysikk - Boreholslogging, grunnkurs", "studiepoeng": 7.5, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
-        { "emnekode": "TPG4255", "emnenavn": "Geomekanikk for CO2-lagring", "studiepoeng": 7.5, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
-        { "emnekode": "TPG4127", "emnenavn": "Seismisk tolkning", "studiepoeng": 7.5, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
-        { "emnekode": "TPG4145", "emnenavn": "Reservoarfluider og strømning", "studiepoeng": 7.5, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
-        { "emnekode": "TPG4210", "emnenavn": "Boreteknologi 1", "studiepoeng": 7.5, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null }
+        {
+          "emnekode": "TPG4105",
+          "emnenavn": "Petroleumsteknologi, grunnkurs",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPG4116",
+          "emnenavn": "Beskrivelse og karakterisering av porøse medier og strømning ved laboratorieanalyse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TPG4116-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPG4175",
+          "emnenavn": "Petrofysikk - Boreholslogging, grunnkurs",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TPG4175-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPG4255",
+          "emnenavn": "Geomekanikk for CO2-lagring",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPG4127",
+          "emnenavn": "Seismisk tolkning",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPG4145",
+          "emnenavn": "Reservoarfluider og strømning",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPG4210",
+          "emnenavn": "Boreteknologi 1",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
       ]
     }
   ],

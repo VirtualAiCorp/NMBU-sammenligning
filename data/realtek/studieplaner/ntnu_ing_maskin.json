@@ -19,7 +19,9 @@
       "studiepoeng": 0,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "HMST1001-1"
+      ],
       "merknad": null
     },
     {
@@ -28,7 +30,9 @@
       "studiepoeng": 7.5,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "IMAT1002-1"
+      ],
       "merknad": null
     },
     {
@@ -37,7 +41,9 @@
       "studiepoeng": 7.5,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "INGT1002-1"
+      ],
       "merknad": null
     },
     {
@@ -46,7 +52,9 @@
       "studiepoeng": 7.5,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "MAST1101-1"
+      ],
       "merknad": null
     },
     {
@@ -55,7 +63,9 @@
       "studiepoeng": 7.5,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "MEKT1101-1"
+      ],
       "merknad": null
     },
     {
@@ -64,7 +74,9 @@
       "studiepoeng": 7.5,
       "aar": 1,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "IFYT1000-1"
+      ],
       "merknad": null
     },
     {
@@ -73,7 +85,9 @@
       "studiepoeng": 7.5,
       "aar": 1,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "IMAT2022-1"
+      ],
       "merknad": null
     },
     {
@@ -82,7 +96,9 @@
       "studiepoeng": 7.5,
       "aar": 1,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "MAST1102-1"
+      ],
       "merknad": null
     },
     {
@@ -91,7 +107,9 @@
       "studiepoeng": 7.5,
       "aar": 1,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "MAST2200-1"
+      ],
       "merknad": null
     },
     {
@@ -100,7 +118,9 @@
       "studiepoeng": 7.5,
       "aar": 2,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "EXPH0600-1"
+      ],
       "merknad": "Felles for begge studieretninger (Industriell drift og vedlikehold; Maskinkonstruksjon)."
     },
     {
@@ -109,7 +129,9 @@
       "studiepoeng": 7.5,
       "aar": 2,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "FENT1011-1"
+      ],
       "merknad": "Felles for begge studieretninger."
     },
     {
@@ -118,7 +140,9 @@
       "studiepoeng": 7.5,
       "aar": 2,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "ISTT1002-1"
+      ],
       "merknad": "Felles for begge studieretninger."
     },
     {
@@ -127,7 +151,9 @@
       "studiepoeng": 7.5,
       "aar": 2,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "TPK4125-1"
+      ],
       "merknad": "Felles for begge studieretninger."
     },
     {
@@ -153,20 +179,110 @@
     {
       "navn": "Industriell drift og vedlikehold",
       "obligatoriske": [
-        { "emnekode": "MAST2003", "emnenavn": "Drift og vedlikehold I", "studiepoeng": 7.5, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
-        { "emnekode": "MAST2004", "emnenavn": "Prosjektoppgave Industriell drift og vedlikehold", "studiepoeng": 7.5, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
-        { "emnekode": "MAST2006", "emnenavn": "Drift og vedlikehold II", "studiepoeng": 7.5, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
-        { "emnekode": "MAST2012", "emnenavn": "Tilstandsbasert drift og vedlikehold", "studiepoeng": 7.5, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
-        { "emnekode": "TPK4100", "emnenavn": "Produksjonsledelse", "studiepoeng": 7.5, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": "Obligatorisk kun for denne studieretningen; valgbart (VB) for Maskinkonstruksjon." }
+        {
+          "emnekode": "MAST2003",
+          "emnenavn": "Drift og vedlikehold I",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "MAST2003-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "MAST2004",
+          "emnenavn": "Prosjektoppgave Industriell drift og vedlikehold",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "MAST2004-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "MAST2006",
+          "emnenavn": "Drift og vedlikehold II",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "MAST2006-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "MAST2012",
+          "emnenavn": "Tilstandsbasert drift og vedlikehold",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "MAST2012-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPK4100",
+          "emnenavn": "Produksjonsledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TPK4100-1"
+          ],
+          "merknad": "Obligatorisk kun for denne studieretningen; valgbart (VB) for Maskinkonstruksjon."
+        }
       ]
     },
     {
       "navn": "Maskinkonstruksjon",
       "obligatoriske": [
-        { "emnekode": "MAST2001", "emnenavn": "Maskinkomponenter og sammenføyninger", "studiepoeng": 7.5, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": "Obligatorisk kun for denne studieretningen; valgbart (VA) for Industriell drift og vedlikehold." },
-        { "emnekode": "MAST2007", "emnenavn": "Dynamikk og maskindesign", "studiepoeng": 7.5, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
-        { "emnekode": "MAST2008", "emnenavn": "Produksjonsteknikk", "studiepoeng": 7.5, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
-        { "emnekode": "MAST2009", "emnenavn": "3D datamodellering og simulering", "studiepoeng": 7.5, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null }
+        {
+          "emnekode": "MAST2001",
+          "emnenavn": "Maskinkomponenter og sammenføyninger",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "MAST2001-1"
+          ],
+          "merknad": "Obligatorisk kun for denne studieretningen; valgbart (VA) for Industriell drift og vedlikehold."
+        },
+        {
+          "emnekode": "MAST2007",
+          "emnenavn": "Dynamikk og maskindesign",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "MAST2007-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "MAST2008",
+          "emnenavn": "Produksjonsteknikk",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "MAST2008-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "MAST2009",
+          "emnenavn": "3D datamodellering og simulering",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "MAST2009-1"
+          ],
+          "merknad": null
+        }
       ]
     }
   ],

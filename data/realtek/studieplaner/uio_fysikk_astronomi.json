@@ -20,7 +20,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "IN1900-1"
+      ],
       "merknad": "Studieløpet oppgir at HMS-emner («HMS-emner») også inngår i dette semesteret, uten eget emnenavn/emnekode eller egne studiepoeng oppgitt i kildene – derfor ikke lagt inn som egen linje."
     },
     {
@@ -29,7 +31,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "FYS1100-1"
+      ],
       "merknad": null
     },
     {
@@ -38,7 +42,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "MAT1100-1"
+      ],
       "merknad": null
     },
     {
@@ -47,7 +53,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "STK-FYS1110-1"
+      ],
       "merknad": null
     },
     {
@@ -56,7 +64,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "MAT1110-1"
+      ],
       "merknad": null
     },
     {
@@ -65,7 +75,9 @@
       "studiepoeng": 10,
       "aar": 2,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "FYS1120-1"
+      ],
       "merknad": null
     },
     {
@@ -74,7 +86,9 @@
       "studiepoeng": 10,
       "aar": 2,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "MAT1120-1"
+      ],
       "merknad": null
     },
     {
@@ -83,7 +97,9 @@
       "studiepoeng": 10,
       "aar": 2,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "FYS2140-1"
+      ],
       "merknad": null
     },
     {
@@ -92,7 +108,9 @@
       "studiepoeng": 10,
       "aar": 3,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "FYS2160-1"
+      ],
       "merknad": null
     },
     {
@@ -101,7 +119,9 @@
       "studiepoeng": 10,
       "aar": 3,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "EXPHIL03-1"
+      ],
       "merknad": "Oppgis som obligatorisk fellesemne (inngår i de 100 sp fellesemner som gjelder alle studieretninger), men tidspunktet er fleksibelt: i studieløpstabellene vises EXPHIL03 sammen med «Utviklingssemester/fritt emne» i 5. og/eller 6. semester for studieretningene Fysikk og Fluidmekanikk, mens studieretningen Astronomi viser det allerede i 4. semester. Plasseringen her (3. år vår) er derfor en representativ, ikke absolutt, plassering."
     }
   ],
@@ -116,7 +136,9 @@
           "studiepoeng": 10,
           "aar": 1,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "FYS1105-1"
+          ],
           "merknad": null
         },
         {
@@ -125,7 +147,9 @@
           "studiepoeng": 10,
           "aar": 2,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "AST2000-1"
+          ],
           "merknad": null
         },
         {
@@ -134,7 +158,9 @@
           "studiepoeng": 10,
           "aar": 2,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "FYS2130-1"
+          ],
           "merknad": null
         },
         {
@@ -143,7 +169,9 @@
           "studiepoeng": 10,
           "aar": 2,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "FYS2150-1"
+          ],
           "merknad": null
         }
       ]
@@ -158,7 +186,9 @@
           "studiepoeng": 10,
           "aar": 1,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "FYS1105-1"
+          ],
           "merknad": null
         },
         {
@@ -167,7 +197,9 @@
           "studiepoeng": 10,
           "aar": 2,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "AST2000-1"
+          ],
           "merknad": null
         },
         {
@@ -176,7 +208,9 @@
           "studiepoeng": 10,
           "aar": 2,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "FYS2130-1"
+          ],
           "merknad": null
         },
         {
@@ -185,7 +219,9 @@
           "studiepoeng": 10,
           "aar": 3,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "AST2210-1"
+          ],
           "merknad": null
         },
         {
@@ -194,7 +230,9 @@
           "studiepoeng": 10,
           "aar": 3,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "AST3310-1"
+          ],
           "merknad": null
         },
         {
@@ -203,7 +241,9 @@
           "studiepoeng": 10,
           "aar": 3,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "AST3220-1"
+          ],
           "merknad": null
         }
       ]
@@ -218,7 +258,9 @@
           "studiepoeng": 10,
           "aar": 1,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "MEK1100-1"
+          ],
           "merknad": null
         },
         {
@@ -245,7 +287,9 @@
           "studiepoeng": 10,
           "aar": 2,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "FYS2150-1"
+          ],
           "merknad": null
         }
       ]

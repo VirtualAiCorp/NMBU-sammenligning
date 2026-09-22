@@ -1,0 +1,230 @@
+{
+  "entryId": "uis_ing_bygg_konstruksjon",
+  "programnavn": "Ingeniør, bygg – konstruksjonsteknikk (bachelor)",
+  "institusjon": "Universitetet i Stavanger",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.uis.no/nb/studier/byggingenior-bachelor"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 100,
+  "obligatoriske": [
+    {
+      "emnekode": "BYG100",
+      "emnenavn": "Dataassistert konstruksjon (DAK)",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BYG100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "DAT125",
+      "emnenavn": "Introduksjon til Programmering",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "DAT125-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TN110",
+      "emnenavn": "Kurs i studieteknikk og ingeniør- og realfaglig arbeidsmetode",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "helår",
+      "dbhEmnekoder": [
+        "TN110-1"
+      ],
+      "merknad": "Går over 1. og 2. semester, 0 sp."
+    },
+    {
+      "emnekode": "MAT100",
+      "emnenavn": "Matematiske metoder 1",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "helår",
+      "dbhEmnekoder": [
+        "MAT100-1"
+      ],
+      "merknad": "Går over 1. og 2. semester."
+    },
+    {
+      "emnekode": "FYS100",
+      "emnenavn": "Mekanikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "helår",
+      "dbhEmnekoder": [
+        "FYS100-1"
+      ],
+      "merknad": "Går over 1. og 2. semester."
+    },
+    {
+      "emnekode": "BYG150",
+      "emnenavn": "Byggematerialer",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BYG150-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "GEO285",
+      "emnenavn": "Geoteknikk",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "GEO285-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYG140",
+      "emnenavn": "Konstruksjonsmekanikk 1",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BYG140-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT200",
+      "emnenavn": "Matematiske metoder 2",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MAT200-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJE101",
+      "emnenavn": "Grunnleggende kjemi",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "KJE101-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAF210",
+      "emnenavn": "Numerisk modellering 1",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "STA100",
+      "emnenavn": "Sannsynlighetsregning og statistikk 1",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "STA100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYG235",
+      "emnenavn": "Bygningsfysikk",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BYG235-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYG310",
+      "emnenavn": "Trekonstruksjoner",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BYG310-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ING200",
+      "emnenavn": "Ingeniørfaglig systememne - Teknologiledelse",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "ING200-1",
+        "ING200-2"
+      ],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Konstruksjonsteknikk",
+      "obligatoriske": [
+        {
+          "emnekode": "BYG205",
+          "emnenavn": "Konstruksjonsmekanikk 2",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BYG205-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYG200",
+          "emnenavn": "Stålkonstruksjoner",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BYG200-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYG220",
+          "emnenavn": "Betongkonstruksjoner",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "BYG220-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYGKBAC",
+          "emnenavn": "Bacheloroppgave i bygg - konstruksjonsteknikk",
+          "studiepoeng": 20,
+          "aar": 3,
+          "semester": "helår",
+          "dbhEmnekoder": [
+            "BYGKBAC-1"
+          ],
+          "merknad": "Går over 5. og 6. semester; alle 20 sp registrert på 6. semester."
+        }
+      ]
+    }
+  ],
+  "merknad": "Bachelorprogrammet «Byggingeniør» ved UiS er ett felles program (B-BYGG) som deler seg i tre studieretninger fra og med 3. semester: konstruksjonsteknikk, byplanlegging og infrastruktur (kun konstruksjonsteknikk og infrastruktur er del av denne sammenligningsgruppen; byplanlegging er ikke tatt med). Data er hentet fra UiS' nettside for programmet (dynamisk studieplan-seksjon, retning «Studieretning konstruksjonsteknikk» valgt), sist oppdatert 18.09.2026 ifølge siden. 1. og 2. semester (60 sp) er identiske for alle tre retninger. 3. og 4. semester har delvis felles emner (KJE101, MAF210, STA100, BYG235, BYG310 = 30 sp) og delvis retningsspesifikke emner (for konstruksjonsteknikk: BYG205, BYG200, BYG220 = 30 sp). 6. semester har ING200 (10 sp, felles) + bacheloroppgaven (20 sp, retningsspesifikk emnekode). 5. semester (30 sp) er et fritt valg mellom «Emner ved UiS» eller utveksling og er ikke tatt med som obligatorisk. obligatoriskeStudiepoeng (100) gjelder de felles emnene; total obligatorisk sp for en student på konstruksjonsteknikk blir 100 + 50 = 150 sp av 180 totalt (de resterende 30 sp er det frie 5. semesteret)."
+}

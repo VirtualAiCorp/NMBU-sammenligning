@@ -18,7 +18,9 @@
       "studiepoeng": 5,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "IMRT100-1"
+      ],
       "merknad": "Augustblokk."
     },
     {
@@ -27,7 +29,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "MATH121-1"
+      ],
       "merknad": null
     },
     {
@@ -36,7 +40,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "INF120-1"
+      ],
       "merknad": "Plassert i høstsemesteret i tidslinjematrisen (samme rute som MATH121) på alle spesialiseringssidene i studieplanen; selve emnelisten på grunnplan-siden merker emnet med «V» (vår). Tidslinjematrisen er lagt til grunn her siden den er konsistent på tvers av alle 6 spesialiseringssider."
     },
     {
@@ -45,7 +51,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "MATH122-1"
+      ],
       "merknad": null
     },
     {
@@ -54,7 +62,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "FYS101-1"
+      ],
       "merknad": null
     },
     {
@@ -63,7 +73,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "DAT110-1"
+      ],
       "merknad": null
     },
     {
@@ -72,7 +84,9 @@
       "studiepoeng": 5,
       "aar": 2,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "INF131-1"
+      ],
       "merknad": "Augustblokk."
     },
     {
@@ -81,7 +95,9 @@
       "studiepoeng": 5,
       "aar": 2,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "INF201-1"
+      ],
       "merknad": null
     },
     {
@@ -90,7 +106,9 @@
       "studiepoeng": 10,
       "aar": 2,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "FYS102-1"
+      ],
       "merknad": null
     },
     {
@@ -99,7 +117,9 @@
       "studiepoeng": 10,
       "aar": 2,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "MATH123-1"
+      ],
       "merknad": null
     },
     {
@@ -108,7 +128,9 @@
       "studiepoeng": 5,
       "aar": 2,
       "semester": "januarblokk",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "INF202-1"
+      ],
       "merknad": "Studieplanen gir valget mellom INF202 (januarblokk) og INF203 (juniblokk) - samme prosjektoppgave, ulikt tidspunkt. Kun INF202 er tatt med i listen."
     },
     {
@@ -117,7 +139,10 @@
       "studiepoeng": 5,
       "aar": 2,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "INF221-1",
+        "INF221-2"
+      ],
       "merknad": null
     },
     {
@@ -126,7 +151,9 @@
       "studiepoeng": 10,
       "aar": 3,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "DAT200-1"
+      ],
       "merknad": null
     },
     {
@@ -135,7 +162,10 @@
       "studiepoeng": 10,
       "aar": 3,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "INF230-1",
+        "INF230-2"
+      ],
       "merknad": null
     },
     {
@@ -144,7 +174,9 @@
       "studiepoeng": 10,
       "aar": 3,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "PHI100-1"
+      ],
       "merknad": "Studieplanen gir valget mellom PHI100 og seminarversjonen PHI101; kun PHI100 er tatt med i listen."
     },
     {
@@ -153,7 +185,9 @@
       "studiepoeng": 5,
       "aar": 3,
       "semester": "januarblokk",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "INF240-2"
+      ],
       "merknad": null
     },
     {
@@ -162,7 +196,9 @@
       "studiepoeng": 10,
       "aar": 3,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "DAT300-1"
+      ],
       "merknad": null
     },
     {
@@ -171,7 +207,9 @@
       "studiepoeng": 10,
       "aar": 3,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "MATH285-1"
+      ],
       "merknad": null
     },
     {
@@ -180,7 +218,9 @@
       "studiepoeng": 10,
       "aar": 5,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "DAT320-1"
+      ],
       "merknad": "Plassert i 5. år i tidslinjematrisen, trolig fordi 4. år ofte brukes til utveksling/spesialisering."
     },
     {
@@ -189,7 +229,9 @@
       "studiepoeng": 30,
       "aar": 5,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "M30-DV-1"
+      ],
       "merknad": null
     }
   ],

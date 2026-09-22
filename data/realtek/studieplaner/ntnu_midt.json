@@ -19,7 +19,9 @@
       "studiepoeng": 0,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "HMS0009-1"
+      ],
       "merknad": "Felles for alle fem studieretninger."
     },
     {
@@ -37,7 +39,9 @@
       "studiepoeng": 15,
       "aar": 2,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "TDT4501-1"
+      ],
       "merknad": "Felles for alle fem studieretninger."
     },
     {
@@ -46,7 +50,9 @@
       "studiepoeng": 7.5,
       "aar": 2,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "TDT4506-1"
+      ],
       "merknad": "Felles for alle fem studieretninger."
     },
     {
@@ -55,7 +61,9 @@
       "studiepoeng": 30,
       "aar": 2,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "TDT4900-1"
+      ],
       "merknad": "Felles for alle fem studieretninger."
     }
   ],
@@ -69,7 +77,9 @@
           "studiepoeng": 7.5,
           "aar": 1,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "TDT4117-1"
+          ],
           "merknad": null
         },
         {
@@ -78,7 +88,9 @@
           "studiepoeng": 7.5,
           "aar": 1,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "TDT4136-1"
+          ],
           "merknad": null
         },
         {
@@ -87,7 +99,9 @@
           "studiepoeng": 7.5,
           "aar": 1,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "TDT4300-1"
+          ],
           "merknad": null
         }
       ]
@@ -101,7 +115,9 @@
           "studiepoeng": 7.5,
           "aar": 1,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "TDT4136-1"
+          ],
           "merknad": null
         },
         {
@@ -110,7 +126,9 @@
           "studiepoeng": 7.5,
           "aar": 1,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "TDT4172-1"
+          ],
           "merknad": null
         },
         {
@@ -119,7 +137,9 @@
           "studiepoeng": 7.5,
           "aar": 1,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "TDT4171-1"
+          ],
           "merknad": null
         }
       ]
@@ -133,7 +153,9 @@
           "studiepoeng": 7.5,
           "aar": 1,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "TDT4175-1"
+          ],
           "merknad": "I tillegg krever studieretningen minst 2 emner fra en egen A-gruppe i 1. år høst (IT3402 Brukersentrert interaksjonsdesign, TDT4250 Modell-drevet programvareutvikling, TDT4252 Virksomhetsarkitektur og -innovasjon, TDT4259 Anvendt data science); dette er et obligatorisk valg mellom alternativer og er derfor ikke ført opp som enkeltemner."
         }
       ]
@@ -147,7 +169,9 @@
           "studiepoeng": 7.5,
           "aar": 1,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "TDT4195-1"
+          ],
           "merknad": null
         },
         {
@@ -156,7 +180,9 @@
           "studiepoeng": 7.5,
           "aar": 1,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "TDT4230-1"
+          ],
           "merknad": null
         },
         {
@@ -165,7 +191,9 @@
           "studiepoeng": 7.5,
           "aar": 1,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "TDT4265-1"
+          ],
           "merknad": null
         }
       ]

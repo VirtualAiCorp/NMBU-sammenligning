@@ -18,7 +18,9 @@
       "studiepoeng": 5,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "IMRT100-1"
+      ],
       "merknad": "Augustblokk før høstsemesteret."
     },
     {
@@ -27,7 +29,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "MATH121-1"
+      ],
       "merknad": null
     },
     {
@@ -36,7 +40,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "INF120-1"
+      ],
       "merknad": null
     },
     {
@@ -45,7 +51,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "PHI100-1"
+      ],
       "merknad": "Studieplanen skriver «PHI100/PHI101» samlet (valg mellom ordinær versjon og seminarversjon); PHI100 er brukt som hovedkode her, tilsvarende praksis i søsterfilen nmbu_eiendom.json."
     },
     {
@@ -54,7 +62,9 @@
       "studiepoeng": 5,
       "aar": 1,
       "semester": "januarblokk",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "THT100-1"
+      ],
       "merknad": null
     },
     {
@@ -63,7 +73,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "FYS101-1"
+      ],
       "merknad": null
     },
     {
@@ -81,7 +93,9 @@
       "studiepoeng": 5,
       "aar": 1,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "FYS110-1"
+      ],
       "merknad": null
     },
     {
@@ -99,7 +113,9 @@
       "studiepoeng": 5,
       "aar": 2,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "FYS102A-1"
+      ],
       "merknad": null
     },
     {
@@ -108,7 +124,9 @@
       "studiepoeng": 10,
       "aar": 2,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "TPS200-1"
+      ],
       "merknad": null
     },
     {
@@ -117,7 +135,9 @@
       "studiepoeng": 10,
       "aar": 2,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "VANN200-1"
+      ],
       "merknad": null
     },
     {
@@ -126,7 +146,9 @@
       "studiepoeng": 10,
       "aar": 2,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "KJM100-1"
+      ],
       "merknad": null
     },
     {
@@ -135,7 +157,9 @@
       "studiepoeng": 10,
       "aar": 3,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "THT261-1"
+      ],
       "merknad": null
     },
     {
@@ -144,7 +168,9 @@
       "studiepoeng": 5,
       "aar": 3,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "THT211-1"
+      ],
       "merknad": null
     },
     {
@@ -153,7 +179,9 @@
       "studiepoeng": 10,
       "aar": 3,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "KJM220-1"
+      ],
       "merknad": null
     },
     {
@@ -162,7 +190,9 @@
       "studiepoeng": 10,
       "aar": 3,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "THT271-1"
+      ],
       "merknad": null
     },
     {
@@ -171,7 +201,9 @@
       "studiepoeng": 10,
       "aar": 3,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "THT280-1"
+      ],
       "merknad": null
     },
     {
@@ -180,7 +212,9 @@
       "studiepoeng": 5,
       "aar": 3,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "TBA201-1"
+      ],
       "merknad": null
     },
     {
@@ -189,7 +223,9 @@
       "studiepoeng": 10,
       "aar": 4,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "STAT100-1"
+      ],
       "merknad": null
     },
     {
@@ -198,7 +234,10 @@
       "studiepoeng": 5,
       "aar": 4,
       "semester": "januarblokk",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "THT320-1",
+        "THT320-2"
+      ],
       "merknad": null
     },
     {
@@ -207,7 +246,9 @@
       "studiepoeng": 5,
       "aar": 4,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "THT201-1"
+      ],
       "merknad": null
     },
     {
@@ -216,7 +257,9 @@
       "studiepoeng": 5,
       "aar": 4,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "THT291-1"
+      ],
       "merknad": "Plassering (4. år vår) følger spesialiseringen «Transportsystemer og overvannshåndtering» (side 2 i PDF-en). I «Renseteknikk og ressursgjenvinning»-sporet (side 3) er THT291 i stedet lagt til 3. år vår – totalt studiepoeng og tilhørighet til fellespuljen er identisk, kun semesterplasseringen kan avvike mellom sporene."
     },
     {
@@ -225,7 +268,9 @@
       "studiepoeng": 5,
       "aar": 5,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "THT390-1"
+      ],
       "merknad": null
     },
     {
@@ -234,7 +279,9 @@
       "studiepoeng": 30,
       "aar": 5,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "M30-VM-1"
+      ],
       "merknad": null
     }
   ],
@@ -248,7 +295,9 @@
           "studiepoeng": 10,
           "aar": 2,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "TBM120-1"
+          ],
           "merknad": null
         },
         {
@@ -257,7 +306,9 @@
           "studiepoeng": 7.5,
           "aar": 3,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "THT200-2"
+          ],
           "merknad": null
         },
         {
@@ -266,7 +317,9 @@
           "studiepoeng": 7.5,
           "aar": 4,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "THT301-1"
+          ],
           "merknad": null
         },
         {
@@ -275,7 +328,9 @@
           "studiepoeng": 7.5,
           "aar": 5,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "THT302-1"
+          ],
           "merknad": null
         },
         {
@@ -284,7 +339,9 @@
           "studiepoeng": 7.5,
           "aar": 5,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "THT303-1"
+          ],
           "merknad": null
         }
       ]
@@ -298,7 +355,9 @@
           "studiepoeng": 5,
           "aar": 2,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "BIO130-1"
+          ],
           "merknad": null
         },
         {
@@ -307,7 +366,10 @@
           "studiepoeng": 10,
           "aar": 5,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "THT310-1",
+            "THT310-2"
+          ],
           "merknad": null
         }
       ]

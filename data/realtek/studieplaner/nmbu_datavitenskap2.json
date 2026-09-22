@@ -19,7 +19,9 @@
       "studiepoeng": 5,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "DAT221-1"
+      ],
       "merknad": "Augustblokk før høstparallellen."
     },
     {
@@ -28,7 +30,9 @@
       "studiepoeng": 5,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "INF201-1"
+      ],
       "merknad": null
     },
     {
@@ -37,7 +41,10 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "INF230-1",
+        "INF230-2"
+      ],
       "merknad": null
     },
     {
@@ -46,7 +53,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "DAT200-1"
+      ],
       "merknad": "Flyttet fra vår- til høstparallell fra og med studieåret 2026/2027 (tidligere gikk emnet om våren)."
     },
     {
@@ -55,7 +64,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "DAT300-1"
+      ],
       "merknad": "Flyttet fra høst- til vårparallell fra og med studieåret 2026/2027, men tilbys også høsten 2026."
     },
     {
@@ -73,7 +84,10 @@
       "studiepoeng": 5,
       "aar": 1,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "INF221-1",
+        "INF221-2"
+      ],
       "merknad": null
     },
     {
@@ -82,7 +96,9 @@
       "studiepoeng": 10,
       "aar": 2,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "DAT320-1"
+      ],
       "merknad": "Erstatter DAT390, som er avviklet fra studieåret 2026/2027."
     },
     {
@@ -91,7 +107,9 @@
       "studiepoeng": 30,
       "aar": 2,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "M30-DV-1"
+      ],
       "merknad": null
     }
   ],

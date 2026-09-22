@@ -1,0 +1,212 @@
+{
+  "entryId": "ntnu_alesund_mekatronikk",
+  "programnavn": "Ingeniør, mekatronikk og produktdesign (bachelor)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://www.ntnu.no/studier/bimepro",
+    "https://www.ntnu.no/studier/bimepro/studiets-oppbygging",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=BIMEPRO&year=2025"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 150,
+  "obligatoriske": [
+    {
+      "emnekode": "IMAA1002",
+      "emnenavn": "Matematikk for ingeniørfag 1",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "IMAA1002-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "INGA1002",
+      "emnenavn": "Programmering, numerikk og sikkerhet",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "INGA1002-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MEKA1101",
+      "emnenavn": "Mekanikk 1",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MEKA1101-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MEPA1001",
+      "emnenavn": "Mekatronikk 1 - Introduksjon",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MEPA1001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "IFYA1002",
+      "emnenavn": "Fysikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "IFYA1002-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "IMAA2022",
+      "emnenavn": "Matematikk for ingeniørfag 2 B",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "IMAA2022-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MASA2072",
+      "emnenavn": "Produktdesign",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MASA2072-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MEPA1002",
+      "emnenavn": "Mekatronikk 2 - Mikrokontrollere & sensorer",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MEPA1002-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EXPH0600",
+      "emnenavn": "Examen philosophicum for ingeniørfag",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EXPH0600-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ISTA1002",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "ISTA1002-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MEPA2001",
+      "emnenavn": "Mekatronikk 3 - Anvendt kontroll",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MEPA2001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MEPA2200",
+      "emnenavn": "Materialer og tilvirkning",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MEPA2200-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MASA2022",
+      "emnenavn": "Maskindeler",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MASA2022-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MASA2042",
+      "emnenavn": "Energioverføring og styring av maskinerisystemer",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MASA2042-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MEPA2002",
+      "emnenavn": "Mekatronikk 4 - Systemintegrasjon og design",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MEPA2002-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MEPA2202",
+      "emnenavn": "Dynamiske systemer",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MEPA2202-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MEPA2910",
+      "emnenavn": "Bacheloroppgave mekatronikk og produktdesign",
+      "studiepoeng": 22.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Ett emne på 22,5 sp som løper over 2 semestre. Studieplanverktøyet viser det som to rader: 'del 1 av 2' i 3. år høst (uten oppgitt studiepoengverdi der) og 'del 2 av 2' i 3. år vår (22,5 sp) - ført her som ett emne i vårsemesteret for å unngå dobbelttelling, i tråd med samme mønster som MAST2910 ved Maskin-bachelorprogrammet i Trondheim."
+    },
+    {
+      "emnekode": "INGA2301",
+      "emnenavn": "Ingeniørfaglig systemtenkning",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kull 2025 (opptak høst 2025, ordinært opptak - kode BIMEPRO-25-A-ORD) har fullstendig 3-årig studieplan publisert i NTNUs studieplanverktøy. Programmet har ingen studieretninger/spesialiseringer med egne obligatoriske emnelister - spesialiseringer er derfor tom liste. Studieplanverktøyet tilbyr også egne opptaksveier 'TRES' og 'y-vei' (ikke sjekket i detalj, men gjelder trolig kun opptaksgrunnlag/støttefag i 1. år, ikke separate obligatoriske emnelister for hele programmet). 3. år høst består i sin helhet av valgfag (VA/VB-grupper, ca. 30 sp), pluss den obligatoriske bacheloroppgaven som starter samme semester. 180 sp totalt, hvorav 150 sp er obligatorisk og 30 sp valgfritt."
+}

@@ -17,7 +17,9 @@
       "studiepoeng": 0,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "HMS0002-1"
+      ],
       "merknad": null
     },
     {
@@ -26,7 +28,9 @@
       "studiepoeng": 7.5,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "TDT4110-1"
+      ],
       "merknad": null
     },
     {
@@ -35,7 +39,9 @@
       "studiepoeng": 7.5,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "TEP4225-1"
+      ],
       "merknad": null
     },
     {
@@ -44,7 +50,9 @@
       "studiepoeng": 7.5,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "TMA4100-1"
+      ],
       "merknad": null
     },
     {
@@ -53,7 +61,9 @@
       "studiepoeng": 7.5,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "TMT4112-1"
+      ],
       "merknad": null
     },
     {
@@ -71,7 +81,9 @@
       "studiepoeng": 7.5,
       "aar": 1,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "TDT4102-1"
+      ],
       "merknad": null
     },
     {
@@ -80,7 +92,9 @@
       "studiepoeng": 7.5,
       "aar": 1,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "TMA4105-1"
+      ],
       "merknad": null
     },
     {
@@ -89,7 +103,9 @@
       "studiepoeng": 7.5,
       "aar": 1,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "TMA4115-1"
+      ],
       "merknad": null
     },
     {
@@ -98,7 +114,9 @@
       "studiepoeng": 7.5,
       "aar": 1,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "TTT4203-1"
+      ],
       "merknad": null
     },
     {
@@ -107,7 +125,9 @@
       "studiepoeng": 7.5,
       "aar": 2,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "TEP4120-1"
+      ],
       "merknad": null
     },
     {
@@ -116,7 +136,9 @@
       "studiepoeng": 7.5,
       "aar": 2,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "TET4100-1"
+      ],
       "merknad": null
     },
     {
@@ -125,7 +147,9 @@
       "studiepoeng": 7.5,
       "aar": 2,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "TFY4107-1"
+      ],
       "merknad": null
     },
     {
@@ -134,7 +158,9 @@
       "studiepoeng": 7.5,
       "aar": 2,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "TMA4130-1"
+      ],
       "merknad": null
     },
     {
@@ -143,7 +169,9 @@
       "studiepoeng": 7.5,
       "aar": 2,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "TEP4100-1"
+      ],
       "merknad": null
     },
     {
@@ -152,7 +180,9 @@
       "studiepoeng": 7.5,
       "aar": 2,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "TEP4295-1"
+      ],
       "merknad": null
     },
     {
@@ -161,7 +191,9 @@
       "studiepoeng": 7.5,
       "aar": 2,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "TFE4120-1"
+      ],
       "merknad": null
     },
     {
@@ -170,7 +202,9 @@
       "studiepoeng": 7.5,
       "aar": 2,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "TTK4105-1"
+      ],
       "merknad": null
     }
   ],
@@ -178,57 +212,367 @@
     {
       "navn": "Elektrisk energiteknikk og smarte nett",
       "obligatoriske": [
-        {"emnekode": "TET4105", "emnenavn": "Elektriske kraftsystemer 1", "studiepoeng": 7.5, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "TIØ4252", "emnenavn": "Teknologiledelse", "studiepoeng": 7.5, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "TMA4240", "emnenavn": "Statistikk", "studiepoeng": 7.5, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "EXPH0300", "emnenavn": "Examen philosophicum for naturvitenskap og teknologi", "studiepoeng": 7.5, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "TET4110", "emnenavn": "Elektriske maskiner og elektromagnetisk energiomforming", "studiepoeng": 7.5, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "TET4190", "emnenavn": "Kraftelektronikk", "studiepoeng": 7.5, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "TET4510", "emnenavn": "Elektrisk energi og energisystemer, fordypningsprosjekt", "studiepoeng": 15, "aar": 5, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "TET4900", "emnenavn": "Elektrisk energi og energisystemer, masteroppgave", "studiepoeng": 30, "aar": 5, "semester": "vår", "dbhEmnekoder": [], "merknad": null}
+        {
+          "emnekode": "TET4105",
+          "emnenavn": "Elektriske kraftsystemer 1",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TET4105-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TIØ4252-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4240",
+          "emnenavn": "Statistikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TMA4240-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "EXPH0300",
+          "emnenavn": "Examen philosophicum for naturvitenskap og teknologi",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "EXPH0300-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TET4110",
+          "emnenavn": "Elektriske maskiner og elektromagnetisk energiomforming",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TET4110-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TET4190",
+          "emnenavn": "Kraftelektronikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TET4190-2"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TET4510",
+          "emnenavn": "Elektrisk energi og energisystemer, fordypningsprosjekt",
+          "studiepoeng": 15,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TET4510-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TET4900",
+          "emnenavn": "Elektrisk energi og energisystemer, masteroppgave",
+          "studiepoeng": 30,
+          "aar": 5,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TET4900-1"
+          ],
+          "merknad": null
+        }
       ]
     },
     {
       "navn": "Energi- og prosessteknikk",
       "obligatoriske": [
-        {"emnekode": "TEP4135", "emnenavn": "Fluidmekanikk 2", "studiepoeng": 7.5, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "TIØ4252", "emnenavn": "Teknologiledelse", "studiepoeng": 7.5, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "TMA4240", "emnenavn": "Statistikk", "studiepoeng": 7.5, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "EXPH0300", "emnenavn": "Examen philosophicum for naturvitenskap og teknologi", "studiepoeng": 7.5, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "TEP4125", "emnenavn": "Termodynamikk 2", "studiepoeng": 7.5, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "TEP4130", "emnenavn": "Varme- og massetransport", "studiepoeng": 7.5, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null}
+        {
+          "emnekode": "TEP4135",
+          "emnenavn": "Fluidmekanikk 2",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TEP4135-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TIØ4252-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMA4240",
+          "emnenavn": "Statistikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TMA4240-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "EXPH0300",
+          "emnenavn": "Examen philosophicum for naturvitenskap og teknologi",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "EXPH0300-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4125",
+          "emnenavn": "Termodynamikk 2",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TEP4125-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4130",
+          "emnenavn": "Varme- og massetransport",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TEP4130-1"
+          ],
+          "merknad": null
+        }
       ]
     },
     {
       "navn": "Energiplanlegging og miljøanalyse – Energianalyse og planlegging",
       "obligatoriske": [
-        {"emnekode": "TIØ4252", "emnenavn": "Teknologiledelse", "studiepoeng": 7.5, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "EXPH0300", "emnenavn": "Examen philosophicum for naturvitenskap og teknologi", "studiepoeng": 7.5, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "TET4135", "emnenavn": "Energiplanlegging", "studiepoeng": 7.5, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "TET4205", "emnenavn": "Elektriske kraftsystemer 2", "studiepoeng": 7.5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "TET4185", "emnenavn": "Kraftmarkeder, ressurs og miljø", "studiepoeng": 7.5, "aar": 4, "semester": "vår", "dbhEmnekoder": [], "merknad": null}
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TIØ4252-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "EXPH0300",
+          "emnenavn": "Examen philosophicum for naturvitenskap og teknologi",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "EXPH0300-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TET4135",
+          "emnenavn": "Energiplanlegging",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TET4135-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TET4205",
+          "emnenavn": "Elektriske kraftsystemer 2",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TET4205-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TET4185",
+          "emnenavn": "Kraftmarkeder, ressurs og miljø",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TET4185-1"
+          ],
+          "merknad": null
+        }
       ]
     },
     {
       "navn": "Energiplanlegging og miljøanalyse – Energiforsyning og klimatisering av bygninger",
       "obligatoriske": [
-        {"emnekode": "TIØ4252", "emnenavn": "Teknologiledelse", "studiepoeng": 7.5, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "EXPH0300", "emnenavn": "Examen philosophicum for naturvitenskap og teknologi", "studiepoeng": 7.5, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "TET4135", "emnenavn": "Energiplanlegging", "studiepoeng": 7.5, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "TEP4235", "emnenavn": "Energibruk i bygninger", "studiepoeng": 7.5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": null}
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TIØ4252-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "EXPH0300",
+          "emnenavn": "Examen philosophicum for naturvitenskap og teknologi",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "EXPH0300-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TET4135",
+          "emnenavn": "Energiplanlegging",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TET4135-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4235",
+          "emnenavn": "Energibruk i bygninger",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TEP4235-1"
+          ],
+          "merknad": null
+        }
       ]
     },
     {
       "navn": "Energiplanlegging og miljøanalyse – Energi- og miljøanalyse",
       "obligatoriske": [
-        {"emnekode": "TIØ4252", "emnenavn": "Teknologiledelse", "studiepoeng": 7.5, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "EXPH0300", "emnenavn": "Examen philosophicum for naturvitenskap og teknologi", "studiepoeng": 7.5, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "TET4135", "emnenavn": "Energiplanlegging", "studiepoeng": 7.5, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "TEP4223", "emnenavn": "Livsløpsvurdering", "studiepoeng": 7.5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "TEP4285", "emnenavn": "Materialstrømanalyse (MFA1)", "studiepoeng": 7.5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "TEP4300", "emnenavn": "Klimavern", "studiepoeng": 7.5, "aar": 5, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "TEP5100", "emnenavn": "Industriell økologi, prosjekt", "studiepoeng": 15, "aar": 5, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "TEP4930", "emnenavn": "Industriell økologi, masteroppgave", "studiepoeng": 30, "aar": 5, "semester": "vår", "dbhEmnekoder": [], "merknad": null}
+        {
+          "emnekode": "TIØ4252",
+          "emnenavn": "Teknologiledelse",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TIØ4252-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "EXPH0300",
+          "emnenavn": "Examen philosophicum for naturvitenskap og teknologi",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "EXPH0300-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TET4135",
+          "emnenavn": "Energiplanlegging",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TET4135-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4223",
+          "emnenavn": "Livsløpsvurdering",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TEP4223-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4285",
+          "emnenavn": "Materialstrømanalyse (MFA1)",
+          "studiepoeng": 7.5,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TEP4285-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4300",
+          "emnenavn": "Klimavern",
+          "studiepoeng": 7.5,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TEP4300-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP5100",
+          "emnenavn": "Industriell økologi, prosjekt",
+          "studiepoeng": 15,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TEP5100-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEP4930",
+          "emnenavn": "Industriell økologi, masteroppgave",
+          "studiepoeng": 30,
+          "aar": 5,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TEP4930-1"
+          ],
+          "merknad": null
+        }
       ]
     }
   ],

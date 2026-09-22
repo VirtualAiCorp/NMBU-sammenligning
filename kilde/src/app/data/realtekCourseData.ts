@@ -1044,7 +1044,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
       },
       {
         entryId: "ntnu_bygg_infrastruktur",
-        shortName: "NTNU",
+        shortName: "NTNU Bygg og infrastruktur",
         institusjon: "Norges teknisk-naturvitenskapelige universitet",
         isNmbu: false,
         dbhInstitusjonskode: "1150",
@@ -4679,7 +4679,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
       },
       {
         entryId: "ntnu_arkitektur",
-        shortName: "NTNU",
+        shortName: "NTNU Arkitektur",
         institusjon: "Norges teknisk-naturvitenskapelige universitet",
         isNmbu: false,
         dbhInstitusjonskode: "1150",
@@ -6305,7 +6305,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
       },
       {
         entryId: "ntnu_ing_bygg",
-        shortName: "NTNU",
+        shortName: "NTNU Ing. bygg",
         institusjon: "Norges teknisk-naturvitenskapelige universitet",
         isNmbu: false,
         dbhInstitusjonskode: "1150",
@@ -12180,7 +12180,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
       },
       {
         entryId: "ntnu_maskin_energi",
-        shortName: "NTNU",
+        shortName: "NTNU Maskin og energi",
         institusjon: "Norges teknisk-naturvitenskapelige universitet",
         isNmbu: false,
         dbhInstitusjonskode: "1150",
@@ -12658,7 +12658,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
       },
       {
         entryId: "ntnu_industriell_design",
-        shortName: "NTNU",
+        shortName: "NTNU Industriell design",
         institusjon: "Norges teknisk-naturvitenskapelige universitet",
         isNmbu: false,
         dbhInstitusjonskode: "1150",
@@ -13748,7 +13748,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
       },
       {
         entryId: "ntnu_produktutvikling_produksjon",
-        shortName: "NTNU",
+        shortName: "NTNU Produktutvikling",
         institusjon: "Norges teknisk-naturvitenskapelige universitet",
         isNmbu: false,
         dbhInstitusjonskode: "1150",
@@ -17014,7 +17014,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
       },
       {
         entryId: "ntnu_ing_maskin",
-        shortName: "NTNU",
+        shortName: "NTNU Ing. maskin",
         institusjon: "Norges teknisk-naturvitenskapelige universitet",
         isNmbu: false,
         dbhInstitusjonskode: "1150",
@@ -28702,7 +28702,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
       },
       {
         entryId: "ntnu_ikmb",
-        shortName: "NTNU",
+        shortName: "NTNU Kjemi, materialer og bio",
         institusjon: "Norges teknisk-naturvitenskapelige universitet",
         isNmbu: false,
         dbhInstitusjonskode: "1150",
@@ -28771,7 +28771,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
       },
       {
         entryId: "ntnu_ikb",
-        shortName: "NTNU",
+        shortName: "NTNU Ind. kjemi og biotek",
         institusjon: "Norges teknisk-naturvitenskapelige universitet",
         isNmbu: false,
         dbhInstitusjonskode: "1150",
@@ -31324,7 +31324,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
       },
       {
         entryId: "ntnu_bioteknologi",
-        shortName: "NTNU",
+        shortName: "NTNU Bioteknologi",
         institusjon: "Norges teknisk-naturvitenskapelige universitet",
         isNmbu: false,
         dbhInstitusjonskode: "1150",
@@ -35254,7 +35254,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
       },
       {
         entryId: "ntnu_energi_miljo",
-        shortName: "NTNU",
+        shortName: "NTNU Energi og miljø",
         institusjon: "Norges teknisk-naturvitenskapelige universitet",
         isNmbu: false,
         dbhInstitusjonskode: "1150",
@@ -38979,7 +38979,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
       },
       {
         entryId: "uit_fornybar_energi",
-        shortName: "UiT",
+        shortName: "UiT Fornybar energi",
         institusjon: "UiT Norges arktiske universitet",
         isNmbu: false,
         dbhInstitusjonskode: "1130",
@@ -39278,7 +39278,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
       },
       {
         entryId: "ntnu_fysmat",
-        shortName: "NTNU",
+        shortName: "NTNU Fysikk og matematikk",
         institusjon: "Norges teknisk-naturvitenskapelige universitet",
         isNmbu: false,
         dbhInstitusjonskode: "1150",
@@ -41771,7 +41771,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
       },
       {
         entryId: "uit_anvendt_fysmat",
-        shortName: "UiT",
+        shortName: "UiT Anvendt fysmat",
         institusjon: "UiT Norges arktiske universitet",
         isNmbu: false,
         dbhInstitusjonskode: "1130",
@@ -42424,7 +42424,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
       },
       {
         entryId: "uio_fornybar_nano",
-        shortName: "UiO",
+        shortName: "UiO Fornybar og nano",
         institusjon: "Universitetet i Oslo",
         isNmbu: false,
         dbhInstitusjonskode: "1110",
@@ -49662,7 +49662,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
       },
       {
         entryId: "ntnu_bygg_infrastruktur_vann",
-        shortName: "NTNU",
+        shortName: "NTNU Bygg og infrastruktur",
         institusjon: "Norges teknisk-naturvitenskapelige universitet",
         isNmbu: false,
         dbhInstitusjonskode: "1150",
@@ -53297,7 +53297,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
       },
       {
         entryId: "ntnu_energi_miljo_vann",
-        shortName: "NTNU",
+        shortName: "NTNU Energi og miljø",
         institusjon: "Norges teknisk-naturvitenskapelige universitet",
         isNmbu: false,
         dbhInstitusjonskode: "1150",
@@ -68405,7 +68405,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
       },
       {
         entryId: "uio_fysikk_astronomi",
-        shortName: "UiO",
+        shortName: "UiO Fysikk og astronomi",
         institusjon: "Universitetet i Oslo",
         isNmbu: false,
         dbhInstitusjonskode: "1110",
@@ -69711,7 +69711,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
       },
       {
         entryId: "uio_fornybar_nano_b",
-        shortName: "UiO",
+        shortName: "UiO Fornybar og nano",
         institusjon: "Universitetet i Oslo",
         isNmbu: false,
         dbhInstitusjonskode: "1110",
@@ -71275,7 +71275,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
       },
       {
         entryId: "ntnu_midt",
-        shortName: "NTNU",
+        shortName: "NTNU Datateknologi",
         institusjon: "Norges teknisk-naturvitenskapelige universitet",
         isNmbu: false,
         dbhInstitusjonskode: "1150",
@@ -72447,7 +72447,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
       },
       {
         entryId: "ntnu_msit",
-        shortName: "NTNU",
+        shortName: "NTNU Informatics",
         institusjon: "Norges teknisk-naturvitenskapelige universitet",
         isNmbu: false,
         dbhInstitusjonskode: "1150",

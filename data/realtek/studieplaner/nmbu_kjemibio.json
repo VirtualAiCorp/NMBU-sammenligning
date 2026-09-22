@@ -15,57 +15,417 @@
   "totaltStudiepoeng": 300,
   "obligatoriskeStudiepoeng": 230,
   "obligatoriske": [
-    { "emnekode": "BIO101", "emnenavn": "Introduksjon i bioteknologi og kjemi", "studiepoeng": 5, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": "Augustblokk (før høstparallellen), lagt til «høst» siden studieplanens skjema ikke har egen augustblokk-kategori." },
-    { "emnekode": "MATH121", "emnenavn": "Kalkulus", "studiepoeng": 10, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
-    { "emnekode": "INF120", "emnenavn": "Programmering og databehandling", "studiepoeng": 10, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
-    { "emnekode": "BIO100", "emnenavn": "Cellebiologi", "studiepoeng": 10, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
-    { "emnekode": "BIO102", "emnenavn": "Anvendt bioteknologi", "studiepoeng": 10, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": "Studieplanens rutediagram plasserer BIO100, BIO102, MATH121 og INF120 alle i 1. år høst (40 sp til sammen), som er mer enn normal semesterbelastning på 30 sp; PDF-uttrekket bevarer ikke kolonneposisjonene nøyaktig, så det er noe usikkert om ett av emnene i realiteten ligger et annet sted i første studieår." },
-    { "emnekode": "KJM100", "emnenavn": "Generell kjemi", "studiepoeng": 10, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
-    { "emnekode": "MATH122", "emnenavn": "Kalkulus og lineær algebra", "studiepoeng": 10, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
-    { "emnekode": "BIO120", "emnenavn": "Genetikk", "studiepoeng": 5, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
-    { "emnekode": "KJM110", "emnenavn": "Organisk kjemi", "studiepoeng": 10, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
-    { "emnekode": "STAT100", "emnenavn": "Statistikk", "studiepoeng": 10, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
-    { "emnekode": "BIO130", "emnenavn": "Generell mikrobiologi I", "studiepoeng": 5, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": "Studieplanens rutediagram viser et femte, uidentifisert 5 sp «Øk/samf.»-krav (økonomi/samfunnsfag) i denne delen av grunnplanen, men oppgir ingen konkret emnekode for det. Det er derfor ikke tatt med i obligatoriske-lista." },
-    { "emnekode": "KJB200", "emnenavn": "Biokjemi", "studiepoeng": 10, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
-    { "emnekode": "KJM230", "emnenavn": "Fysikalsk kjemi", "studiepoeng": 10, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
-    { "emnekode": "FYS101", "emnenavn": "Mekanikk", "studiepoeng": 10, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
-    { "emnekode": "BUS180", "emnenavn": "Globale utfordringer II. Miljø- og samfunnsmessige utfordringer i næringslivet", "studiepoeng": 5, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": "Augustblokk, lagt til «høst»." },
-    { "emnekode": "KJM240", "emnenavn": "Analytisk kjemi", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
-    { "emnekode": "MATH123", "emnenavn": "Lineær algebra og vektoranalyse", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
-    { "emnekode": "BIO210", "emnenavn": "Molekylærbiologi", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
-    { "emnekode": "BIN210", "emnenavn": "Introduksjon i bioinformatikk", "studiepoeng": 10, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
-    { "emnekode": "KJM120", "emnenavn": "Uorganisk kjemi", "studiepoeng": 10, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
-    { "emnekode": "PHI100", "emnenavn": "Examen philosophicum", "studiepoeng": 10, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": "Studieplanen gir valget mellom PHI100, seminarversjonen PHI101 (begge 4. år høst) og den engelske versjonen PHI102 (som i rutediagrammet er lagt til 3. år vår)." },
-    { "emnekode": "FYS102", "emnenavn": "Termofysikk og elektromagnetisme", "studiepoeng": 10, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": "Fellesplanen kaller emnet «FYS102/102A»; spesialiseringsplanene bruker enten FYS102 (kjemi) eller FYS102A (molekylærbiologi, bioinformatikk) for samme 10 sp-krav, delt over høst/vår i noen spesialiseringer." },
-    { "emnekode": "M30-KB", "emnenavn": "Masteroppgave", "studiepoeng": 30, "aar": 5, "semester": "vår", "dbhEmnekoder": [], "merknad": null }
+    {
+      "emnekode": "BIO101",
+      "emnenavn": "Introduksjon i bioteknologi og kjemi",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO101-1"
+      ],
+      "merknad": "Augustblokk (før høstparallellen), lagt til «høst» siden studieplanens skjema ikke har egen augustblokk-kategori."
+    },
+    {
+      "emnekode": "MATH121",
+      "emnenavn": "Kalkulus",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MATH121-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF120",
+      "emnenavn": "Programmering og databehandling",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "INF120-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO100",
+      "emnenavn": "Cellebiologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO102",
+      "emnenavn": "Anvendt bioteknologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO102-1"
+      ],
+      "merknad": "Studieplanens rutediagram plasserer BIO100, BIO102, MATH121 og INF120 alle i 1. år høst (40 sp til sammen), som er mer enn normal semesterbelastning på 30 sp; PDF-uttrekket bevarer ikke kolonneposisjonene nøyaktig, så det er noe usikkert om ett av emnene i realiteten ligger et annet sted i første studieår."
+    },
+    {
+      "emnekode": "KJM100",
+      "emnenavn": "Generell kjemi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "KJM100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MATH122",
+      "emnenavn": "Kalkulus og lineær algebra",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MATH122-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO120",
+      "emnenavn": "Genetikk",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIO120-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM110",
+      "emnenavn": "Organisk kjemi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "KJM110-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "STAT100",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "STAT100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO130",
+      "emnenavn": "Generell mikrobiologi I",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO130-1"
+      ],
+      "merknad": "Studieplanens rutediagram viser et femte, uidentifisert 5 sp «Øk/samf.»-krav (økonomi/samfunnsfag) i denne delen av grunnplanen, men oppgir ingen konkret emnekode for det. Det er derfor ikke tatt med i obligatoriske-lista."
+    },
+    {
+      "emnekode": "KJB200",
+      "emnenavn": "Biokjemi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "KJB200-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM230",
+      "emnenavn": "Fysikalsk kjemi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "KJM230-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS101",
+      "emnenavn": "Mekanikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "FYS101-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BUS180",
+      "emnenavn": "Globale utfordringer II. Miljø- og samfunnsmessige utfordringer i næringslivet",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BUS180-1"
+      ],
+      "merknad": "Augustblokk, lagt til «høst»."
+    },
+    {
+      "emnekode": "KJM240",
+      "emnenavn": "Analytisk kjemi",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "KJM240-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MATH123",
+      "emnenavn": "Lineær algebra og vektoranalyse",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MATH123-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO210",
+      "emnenavn": "Molekylærbiologi",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO210-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIN210",
+      "emnenavn": "Introduksjon i bioinformatikk",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIN210-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM120",
+      "emnenavn": "Uorganisk kjemi",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "KJM120-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PHI100",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "PHI100-1"
+      ],
+      "merknad": "Studieplanen gir valget mellom PHI100, seminarversjonen PHI101 (begge 4. år høst) og den engelske versjonen PHI102 (som i rutediagrammet er lagt til 3. år vår)."
+    },
+    {
+      "emnekode": "FYS102",
+      "emnenavn": "Termofysikk og elektromagnetisme",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FYS102-1"
+      ],
+      "merknad": "Fellesplanen kaller emnet «FYS102/102A»; spesialiseringsplanene bruker enten FYS102 (kjemi) eller FYS102A (molekylærbiologi, bioinformatikk) for samme 10 sp-krav, delt over høst/vår i noen spesialiseringer."
+    },
+    {
+      "emnekode": "M30-KB",
+      "emnenavn": "Masteroppgave",
+      "studiepoeng": 30,
+      "aar": 5,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "M30-KB-1"
+      ],
+      "merknad": null
+    }
   ],
   "spesialiseringer": [
     {
       "navn": "Kjemi",
       "obligatoriske": [
-        { "emnekode": "BIO335", "emnenavn": "Anvendt biokatalyse og bioraffinering", "studiepoeng": 5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": null }
+        {
+          "emnekode": "BIO335",
+          "emnenavn": "Anvendt biokatalyse og bioraffinering",
+          "studiepoeng": 5,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BIO335-1"
+          ],
+          "merknad": null
+        }
       ]
     },
     {
       "navn": "Molekylærbiologi",
       "obligatoriske": [
-        { "emnekode": "BIO211", "emnenavn": "Laboratorieøvelser i molekylærbiologi", "studiepoeng": 5, "aar": 3, "semester": "januarblokk", "dbhEmnekoder": [], "merknad": null },
-        { "emnekode": "BIO230", "emnenavn": "Generell mikrobiologi II", "studiepoeng": 10, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
-        { "emnekode": "BIO332", "emnenavn": "Eksperimentell molekylær mikrobiologi", "studiepoeng": 10, "aar": 4, "semester": "januarblokk", "dbhEmnekoder": [], "merknad": null },
-        { "emnekode": "KJB201", "emnenavn": "Laboratoriekurs i biokjemi og matkjemi", "studiepoeng": 5, "aar": 4, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
-        { "emnekode": "KJB310", "emnenavn": "Proteinkjemi", "studiepoeng": 10, "aar": 5, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
-        { "emnekode": "BIO322", "emnenavn": "Avanserte emner i genomikk", "studiepoeng": 10, "aar": 5, "semester": "høst", "dbhEmnekoder": [], "merknad": null }
+        {
+          "emnekode": "BIO211",
+          "emnenavn": "Laboratorieøvelser i molekylærbiologi",
+          "studiepoeng": 5,
+          "aar": 3,
+          "semester": "januarblokk",
+          "dbhEmnekoder": [
+            "BIO211-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BIO230",
+          "emnenavn": "Generell mikrobiologi II",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "BIO230-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BIO332",
+          "emnenavn": "Eksperimentell molekylær mikrobiologi",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "januarblokk",
+          "dbhEmnekoder": [
+            "BIO332-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "KJB201",
+          "emnenavn": "Laboratoriekurs i biokjemi og matkjemi",
+          "studiepoeng": 5,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "KJB201-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "KJB310",
+          "emnenavn": "Proteinkjemi",
+          "studiepoeng": 10,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "KJB310-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BIO322",
+          "emnenavn": "Avanserte emner i genomikk",
+          "studiepoeng": 10,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BIO322-1"
+          ],
+          "merknad": null
+        }
       ]
     },
     {
       "navn": "Bioinformatikk",
       "obligatoriske": [
-        { "emnekode": "INF201", "emnenavn": "Videregående programmering", "studiepoeng": 5, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
-        { "emnekode": "STAT210", "emnenavn": "Forsøksplanlegging og variansanalyse", "studiepoeng": 5, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": null },
-        { "emnekode": "BIN310", "emnenavn": "Utvalgte emner i mikrobiell genomikk", "studiepoeng": 10, "aar": 4, "semester": "høst", "dbhEmnekoder": [], "merknad": "Rutediagrammet oppgir «BIN310/315»: BIN310 gis i oddetallsår, BIN315 i partallsår - samme krav, bare ulik kode avhengig av kullår." },
-        { "emnekode": "STIN300", "emnenavn": "Statistisk programmering i R", "studiepoeng": 5, "aar": 4, "semester": "januarblokk", "dbhEmnekoder": [], "merknad": null },
-        { "emnekode": "STAT340", "emnenavn": "Anvendte metoder i statistikk", "studiepoeng": 10, "aar": 4, "semester": "vår", "dbhEmnekoder": [], "merknad": null },
-        { "emnekode": "BIO322", "emnenavn": "Avanserte emner i genomikk", "studiepoeng": 10, "aar": 5, "semester": "høst", "dbhEmnekoder": [], "merknad": null }
+        {
+          "emnekode": "INF201",
+          "emnenavn": "Videregående programmering",
+          "studiepoeng": 5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "INF201-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "STAT210",
+          "emnenavn": "Forsøksplanlegging og variansanalyse",
+          "studiepoeng": 5,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "STAT210-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BIN310",
+          "emnenavn": "Utvalgte emner i mikrobiell genomikk",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BIN310-1"
+          ],
+          "merknad": "Rutediagrammet oppgir «BIN310/315»: BIN310 gis i oddetallsår, BIN315 i partallsår - samme krav, bare ulik kode avhengig av kullår."
+        },
+        {
+          "emnekode": "STIN300",
+          "emnenavn": "Statistisk programmering i R",
+          "studiepoeng": 5,
+          "aar": 4,
+          "semester": "januarblokk",
+          "dbhEmnekoder": [
+            "STIN300-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "STAT340",
+          "emnenavn": "Anvendte metoder i statistikk",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "STAT340-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BIO322",
+          "emnenavn": "Avanserte emner i genomikk",
+          "studiepoeng": 10,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BIO322-1"
+          ],
+          "merknad": null
+        }
       ]
     }
   ],

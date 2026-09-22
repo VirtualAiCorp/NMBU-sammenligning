@@ -18,7 +18,9 @@
       "studiepoeng": 5,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "IMRT100-1"
+      ],
       "merknad": "Augustblokk før 1. året."
     },
     {
@@ -27,7 +29,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "MATH121-1"
+      ],
       "merknad": null
     },
     {
@@ -36,7 +40,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "INF120-1"
+      ],
       "merknad": null
     },
     {
@@ -45,7 +51,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "PHI100-1"
+      ],
       "merknad": "Studieplanen skriver «PHI100/PHI101/PHI102»; de tre er alternative gjennomføringsformer av samme krav. Alle tre DBH-kodene er ikke kjent ennå (dbhEmnekoder kobles automatisk senere)."
     },
     {
@@ -54,7 +62,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "FYS101-1"
+      ],
       "merknad": null
     },
     {
@@ -63,7 +73,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "MATH122-1"
+      ],
       "merknad": null
     },
     {
@@ -72,7 +84,9 @@
       "studiepoeng": 5,
       "aar": 2,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "FYS102A-1"
+      ],
       "merknad": "Gjelder spesialiseringene Bygge- og prosjektledelse, Datavitenskap og Vann- og miljøteknikk. For spesialiseringene Energisystemer og beredskap og Systemutvikling og produktinnovasjon kreves i stedet FYS102 (10 sp, samme semester); da blir Obligatorisk Siv.ing.-summen 115 sp i stedet for 110."
     },
     {
@@ -81,7 +95,9 @@
       "studiepoeng": 10,
       "aar": 2,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "MATH123-1"
+      ],
       "merknad": null
     },
     {
@@ -90,7 +106,9 @@
       "studiepoeng": 10,
       "aar": 2,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "BUS110-1"
+      ],
       "merknad": "10 sp for alle spesialiseringer unntatt Bygge- og prosjektledelse, der emnet teller 5 sp i studieplanens sum (Oblig. INDØK 55 sp der, mot 60 sp for de andre)."
     },
     {
@@ -99,7 +117,9 @@
       "studiepoeng": 10,
       "aar": 3,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "DAT110-1"
+      ],
       "merknad": "Semesterplassering hentet fra spesialiseringen Bygge- og prosjektledelse; for enkelte spesialiseringer (bl.a. Datavitenskap) ligger DAT110 i stedet i 1. året vår ifølge matrisen. Plasseringen er dermed noe usikker og kan variere mellom spesialiseringene."
     },
     {
@@ -108,7 +128,9 @@
       "studiepoeng": 10,
       "aar": 3,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "BUS210-1"
+      ],
       "merknad": "Gjelder alle spesialiseringer unntatt Vann- og miljøteknikk, der emnet er BUS220 Finansiering og investering (10 sp, samme plassering)."
     },
     {
@@ -117,7 +139,9 @@
       "studiepoeng": 5,
       "aar": 3,
       "semester": "januarblokk",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "IND300-1"
+      ],
       "merknad": null
     },
     {
@@ -126,7 +150,9 @@
       "studiepoeng": 10,
       "aar": 3,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "IND200-1"
+      ],
       "merknad": null
     },
     {
@@ -135,7 +161,9 @@
       "studiepoeng": 10,
       "aar": 4,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "IND210-1"
+      ],
       "merknad": null
     },
     {
@@ -144,7 +172,9 @@
       "studiepoeng": 5,
       "aar": 4,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "IND240-1"
+      ],
       "merknad": null
     },
     {
@@ -153,7 +183,9 @@
       "studiepoeng": 10,
       "aar": 5,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "IND310-1"
+      ],
       "merknad": null
     },
     {
@@ -185,7 +217,9 @@
           "studiepoeng": 5,
           "aar": 1,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "FYS110-1"
+          ],
           "merknad": null
         },
         {
@@ -194,7 +228,9 @@
           "studiepoeng": 10,
           "aar": 4,
           "semester": "helår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "IND220-1"
+          ],
           "merknad": "Løper over vår og høst i 4. året ifølge matrisen (emnet er oppført i timeplanen begge semestre)."
         },
         {
@@ -203,7 +239,9 @@
           "studiepoeng": 10,
           "aar": 2,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "TBA190-1"
+          ],
           "merknad": null
         },
         {
@@ -212,7 +250,9 @@
           "studiepoeng": 5,
           "aar": 4,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "TBA202-1"
+          ],
           "merknad": null
         },
         {
@@ -221,7 +261,9 @@
           "studiepoeng": 10,
           "aar": 3,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "TBA210-1"
+          ],
           "merknad": null
         },
         {
@@ -230,7 +272,9 @@
           "studiepoeng": 5,
           "aar": 2,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "TBA222-1"
+          ],
           "merknad": null
         },
         {
@@ -239,7 +283,9 @@
           "studiepoeng": 5,
           "aar": 3,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "TBA223-1"
+          ],
           "merknad": null
         },
         {
@@ -248,7 +294,9 @@
           "studiepoeng": 5,
           "aar": 5,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "TBA270D-1"
+          ],
           "merknad": null
         },
         {
@@ -257,7 +305,9 @@
           "studiepoeng": 10,
           "aar": 4,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "TBA331-1"
+          ],
           "merknad": null
         },
         {
@@ -266,7 +316,9 @@
           "studiepoeng": 10,
           "aar": 2,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "TBM120-1"
+          ],
           "merknad": null
         },
         {
@@ -275,7 +327,9 @@
           "studiepoeng": 10,
           "aar": 4,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "TBM200-1"
+          ],
           "merknad": null
         }
       ],
@@ -290,7 +344,9 @@
           "studiepoeng": 10,
           "aar": 3,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "DAT200-1"
+          ],
           "merknad": null
         },
         {
@@ -299,7 +355,9 @@
           "studiepoeng": 10,
           "aar": 3,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "DAT300-1"
+          ],
           "merknad": null
         },
         {
@@ -308,7 +366,9 @@
           "studiepoeng": 10,
           "aar": 4,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "IND320-1"
+          ],
           "merknad": "Semesterplassering er usikker; emnet opptrer flere steder i studieplanens matrise (bl.a. som eksempel på valgfag), og nøyaktig obligatorisk plassering er rekonstruert."
         },
         {
@@ -317,7 +377,9 @@
           "studiepoeng": 5,
           "aar": 2,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "INF131-1"
+          ],
           "merknad": null
         },
         {
@@ -326,7 +388,9 @@
           "studiepoeng": 5,
           "aar": 2,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "INF201-1"
+          ],
           "merknad": null
         },
         {
@@ -335,7 +399,9 @@
           "studiepoeng": 5,
           "aar": 2,
           "semester": "januarblokk",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "INF202-1"
+          ],
           "merknad": "Studieplanen gir valget mellom INF202 (januarblokk) og INF203 (juniblokk) - samme krav, ulik blokkplassering."
         },
         {
@@ -344,7 +410,10 @@
           "studiepoeng": 5,
           "aar": 2,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "INF221-1",
+            "INF221-2"
+          ],
           "merknad": null
         },
         {
@@ -353,7 +422,10 @@
           "studiepoeng": 10,
           "aar": 2,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "INF230-1",
+            "INF230-2"
+          ],
           "merknad": null
         },
         {
@@ -371,7 +443,9 @@
           "studiepoeng": 10,
           "aar": 3,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "MATH285-1"
+          ],
           "merknad": null
         },
         {
@@ -380,7 +454,9 @@
           "studiepoeng": 10,
           "aar": 4,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "MLA310-2"
+          ],
           "merknad": null
         },
         {
@@ -389,7 +465,9 @@
           "studiepoeng": 10,
           "aar": 4,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "STAT351-1"
+          ],
           "merknad": null
         }
       ],
@@ -404,7 +482,9 @@
           "studiepoeng": 5,
           "aar": 2,
           "semester": "januarblokk",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "FYS103-1"
+          ],
           "merknad": "Studieplanen har fotnote om at FYS103 bare har en uke i vårparallellen."
         },
         {
@@ -413,7 +493,9 @@
           "studiepoeng": 10,
           "aar": 3,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "FYS230-1"
+          ],
           "merknad": "Semesterplassering er ikke entydig lesbar i studieplanens matrise og er et beste anslag."
         },
         {
@@ -422,7 +504,9 @@
           "studiepoeng": 5,
           "aar": 2,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "FYS235-1"
+          ],
           "merknad": null
         },
         {
@@ -449,7 +533,9 @@
           "studiepoeng": 5,
           "aar": 3,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "FYS251-1"
+          ],
           "merknad": null
         },
         {
@@ -467,7 +553,9 @@
           "studiepoeng": 10,
           "aar": 4,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "FYS272-1"
+          ],
           "merknad": null
         },
         {
@@ -476,7 +564,9 @@
           "studiepoeng": 10,
           "aar": 5,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "FYS375-1"
+          ],
           "merknad": null
         },
         {
@@ -485,7 +575,9 @@
           "studiepoeng": 10,
           "aar": 5,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "FYS377-1"
+          ],
           "merknad": "Kan byttes med andre FYS3xx-emner."
         },
         {
@@ -494,7 +586,9 @@
           "studiepoeng": 5,
           "aar": 3,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "IND250-1"
+          ],
           "merknad": null
         },
         {
@@ -503,7 +597,9 @@
           "studiepoeng": 10,
           "aar": 2,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "KJM100-1"
+          ],
           "merknad": null
         }
       ],
@@ -518,7 +614,9 @@
           "studiepoeng": 5,
           "aar": 1,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "FYS110-1"
+          ],
           "merknad": null
         },
         {
@@ -527,7 +625,9 @@
           "studiepoeng": 10,
           "aar": 2,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "FYS230-1"
+          ],
           "merknad": "Semesterplassering er ikke entydig lesbar i studieplanens matrise og er et beste anslag."
         },
         {
@@ -536,7 +636,9 @@
           "studiepoeng": 10,
           "aar": 2,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "FYS235-1"
+          ],
           "merknad": "Studieplanen oppgir 10 sp for FYS235 i denne spesialiseringen (mot 5 sp i spesialiseringen Energisystemer og beredskap)."
         },
         {
@@ -545,7 +647,9 @@
           "studiepoeng": 5,
           "aar": 2,
           "semester": "januarblokk",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "IND230-1"
+          ],
           "merknad": null
         },
         {
@@ -554,7 +658,9 @@
           "studiepoeng": 5,
           "aar": 3,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "IND250-1"
+          ],
           "merknad": null
         },
         {
@@ -563,7 +669,9 @@
           "studiepoeng": 10,
           "aar": 2,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "TBM120-1"
+          ],
           "merknad": null
         },
         {
@@ -572,7 +680,9 @@
           "studiepoeng": 10,
           "aar": 3,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "TBM200-1"
+          ],
           "merknad": null
         },
         {
@@ -581,7 +691,9 @@
           "studiepoeng": 10,
           "aar": 4,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "TBM350-1"
+          ],
           "merknad": null
         },
         {
@@ -590,7 +702,9 @@
           "studiepoeng": 5,
           "aar": 4,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "TEL100-1"
+          ],
           "merknad": "Augustblokk."
         },
         {
@@ -608,7 +722,9 @@
           "studiepoeng": 5,
           "aar": 2,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "TMP160-1"
+          ],
           "merknad": null
         },
         {
@@ -626,7 +742,9 @@
           "studiepoeng": 10,
           "aar": 5,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "TMP320-1"
+          ],
           "merknad": "Studieplanen skriver «TMP320/TIP300»; TIP300 er et alternativt emne som dekker samme krav."
         }
       ],
@@ -641,7 +759,9 @@
           "studiepoeng": 5,
           "aar": 1,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "FYS110-1"
+          ],
           "merknad": null
         },
         {
@@ -650,7 +770,9 @@
           "studiepoeng": 10,
           "aar": 2,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "KJM100-1"
+          ],
           "merknad": null
         },
         {
@@ -659,7 +781,9 @@
           "studiepoeng": 10,
           "aar": 2,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "TBM120-1"
+          ],
           "merknad": null
         },
         {
@@ -668,7 +792,9 @@
           "studiepoeng": 5,
           "aar": 2,
           "semester": "januarblokk",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "THT100-1"
+          ],
           "merknad": null
         },
         {
@@ -686,7 +812,9 @@
           "studiepoeng": 10,
           "aar": 3,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "TPS200-1"
+          ],
           "merknad": null
         },
         {
@@ -704,7 +832,9 @@
           "studiepoeng": 10,
           "aar": 4,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "THT261-1"
+          ],
           "merknad": null
         },
         {
@@ -713,7 +843,9 @@
           "studiepoeng": 10,
           "aar": 4,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "THT271-1"
+          ],
           "merknad": null
         },
         {
@@ -740,7 +872,9 @@
           "studiepoeng": 10,
           "aar": 2,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "VANN200-1"
+          ],
           "merknad": null
         }
       ],

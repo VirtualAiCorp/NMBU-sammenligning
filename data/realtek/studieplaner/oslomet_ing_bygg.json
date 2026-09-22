@@ -11,53 +11,365 @@
   "totaltStudiepoeng": 180,
   "obligatoriskeStudiepoeng": 90,
   "obligatoriske": [
-    {"emnekode": "BYFE1201", "emnenavn": "Byggfaglig innføring", "studiepoeng": 10, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "BYPE1500", "emnenavn": "Fysikk og kjemi", "studiepoeng": 10, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "BYPE1600", "emnenavn": "Mekanikk 1", "studiepoeng": 5, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "BYFE1000", "emnenavn": "Matematikk 1000", "studiepoeng": 10, "aar": 1, "semester": "helår", "dbhEmnekoder": [], "merknad": "Går over to semestre (0 sp registrert høst, 10 sp registrert vår)."},
-    {"emnekode": "BYTS1401", "emnenavn": "Byggeteknikk", "studiepoeng": 10, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "BYGG2100", "emnenavn": "Programmering og statistikk", "studiepoeng": 10, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "BYPE1700", "emnenavn": "Mekanikk 2", "studiepoeng": 5, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "BYGG1110", "emnenavn": "Byggematerialer", "studiepoeng": 5, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "BYTS2310", "emnenavn": "Konstruksjonslære", "studiepoeng": 5, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "BYPE2000", "emnenavn": "Matematikk 2000", "studiepoeng": 10, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "BYGG2200", "emnenavn": "Geoteknikk", "studiepoeng": 10, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null}
+    {
+      "emnekode": "BYFE1201",
+      "emnenavn": "Byggfaglig innføring",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BYFE1201-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYPE1500",
+      "emnenavn": "Fysikk og kjemi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BYPE1500-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYPE1600",
+      "emnenavn": "Mekanikk 1",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BYPE1600-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYFE1000",
+      "emnenavn": "Matematikk 1000",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "helår",
+      "dbhEmnekoder": [
+        "BYFE1000-1"
+      ],
+      "merknad": "Går over to semestre (0 sp registrert høst, 10 sp registrert vår)."
+    },
+    {
+      "emnekode": "BYTS1401",
+      "emnenavn": "Byggeteknikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BYTS1401-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYGG2100",
+      "emnenavn": "Programmering og statistikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BYGG2100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYPE1700",
+      "emnenavn": "Mekanikk 2",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYGG1110",
+      "emnenavn": "Byggematerialer",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYTS2310",
+      "emnenavn": "Konstruksjonslære",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYPE2000",
+      "emnenavn": "Matematikk 2000",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BYPE2000-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYGG2200",
+      "emnenavn": "Geoteknikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BYGG2200-1"
+      ],
+      "merknad": null
+    }
   ],
   "spesialiseringer": [
     {
       "navn": "Konstruksjonsteknikk",
       "obligatoriske": [
-        {"emnekode": "BYGG2300", "emnenavn": "Betongkonstruksjoner", "studiepoeng": 15, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "BYGG2800", "emnenavn": "Konstruksjonsmekanikk 1", "studiepoeng": 5, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "BYPE2700", "emnenavn": "Prosjektledelse og økonomi", "studiepoeng": 10, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "BYVE3200", "emnenavn": "Stål- og trekonstruksjoner", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "BYVE3300", "emnenavn": "Statikk", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "BYFE3100", "emnenavn": "Byggeprosess - ingeniørfaglig systememne", "studiepoeng": 10, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "BYTS3900", "emnenavn": "Bacheloroppgave", "studiepoeng": 20, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null}
+        {
+          "emnekode": "BYGG2300",
+          "emnenavn": "Betongkonstruksjoner",
+          "studiepoeng": 15,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "BYGG2300-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYGG2800",
+          "emnenavn": "Konstruksjonsmekanikk 1",
+          "studiepoeng": 5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYPE2700",
+          "emnenavn": "Prosjektledelse og økonomi",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "BYPE2700-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYVE3200",
+          "emnenavn": "Stål- og trekonstruksjoner",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BYVE3200-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYVE3300",
+          "emnenavn": "Statikk",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BYVE3300-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYFE3100",
+          "emnenavn": "Byggeprosess - ingeniørfaglig systememne",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "BYFE3100-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYTS3900",
+          "emnenavn": "Bacheloroppgave",
+          "studiepoeng": 20,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "BYTS3900-1"
+          ],
+          "merknad": null
+        }
       ]
     },
     {
       "navn": "By- og transportplanlegging",
       "obligatoriske": [
-        {"emnekode": "BYGG3100", "emnenavn": "Teknisk infrastruktur", "studiepoeng": 10, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "BYGG2600", "emnenavn": "Samferdsel", "studiepoeng": 10, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "BYPE2700", "emnenavn": "Prosjektledelse og økonomi", "studiepoeng": 10, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "BYGG2500", "emnenavn": "Arealplanlegging", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "BYVE3620", "emnenavn": "Vei- og jernbaneteknikk", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "BYFE3100", "emnenavn": "Byggeprosess - ingeniørfaglig systememne", "studiepoeng": 10, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "BYTS3900", "emnenavn": "Bacheloroppgave", "studiepoeng": 20, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null}
+        {
+          "emnekode": "BYGG3100",
+          "emnenavn": "Teknisk infrastruktur",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "BYGG3100-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYGG2600",
+          "emnenavn": "Samferdsel",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "BYGG2600-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYPE2700",
+          "emnenavn": "Prosjektledelse og økonomi",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "BYPE2700-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYGG2500",
+          "emnenavn": "Arealplanlegging",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BYGG2500-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYVE3620",
+          "emnenavn": "Vei- og jernbaneteknikk",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BYVE3620-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYFE3100",
+          "emnenavn": "Byggeprosess - ingeniørfaglig systememne",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "BYFE3100-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYTS3900",
+          "emnenavn": "Bacheloroppgave",
+          "studiepoeng": 20,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "BYTS3900-1"
+          ],
+          "merknad": null
+        }
       ]
     },
     {
       "navn": "Vann- og miljøteknikk",
       "obligatoriske": [
-        {"emnekode": "BYGG3100", "emnenavn": "Teknisk infrastruktur", "studiepoeng": 10, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "BYGG2700", "emnenavn": "Overvann brukt som ressurs", "studiepoeng": 10, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "BYPE2700", "emnenavn": "Prosjektledelse og økonomi", "studiepoeng": 10, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "BYGG2500", "emnenavn": "Arealplanlegging", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "BYGG3200", "emnenavn": "Planlegging, behandling og drift av vann og avløp", "studiepoeng": 10, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "BYFE3100", "emnenavn": "Byggeprosess - ingeniørfaglig systememne", "studiepoeng": 10, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-        {"emnekode": "BYTS3900", "emnenavn": "Bacheloroppgave", "studiepoeng": 20, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null}
+        {
+          "emnekode": "BYGG3100",
+          "emnenavn": "Teknisk infrastruktur",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "BYGG3100-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYGG2700",
+          "emnenavn": "Overvann brukt som ressurs",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "BYGG2700-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYPE2700",
+          "emnenavn": "Prosjektledelse og økonomi",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "BYPE2700-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYGG2500",
+          "emnenavn": "Arealplanlegging",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BYGG2500-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYGG3200",
+          "emnenavn": "Planlegging, behandling og drift av vann og avløp",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BYGG3200-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYFE3100",
+          "emnenavn": "Byggeprosess - ingeniørfaglig systememne",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "BYFE3100-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYTS3900",
+          "emnenavn": "Bacheloroppgave",
+          "studiepoeng": 20,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "BYTS3900-1"
+          ],
+          "merknad": null
+        }
       ]
     }
   ],

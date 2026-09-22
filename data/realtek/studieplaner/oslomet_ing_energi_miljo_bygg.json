@@ -11,22 +11,182 @@
   "totaltStudiepoeng": 180,
   "obligatoriskeStudiepoeng": 170,
   "obligatoriske": [
-    {"emnekode": "BYFE1000", "emnenavn": "Matematikk 1000", "studiepoeng": 10, "aar": 1, "semester": "helår", "dbhEmnekoder": [], "merknad": "Går over to semestre (0 sp registrert høst, 10 sp registrert vår)."},
-    {"emnekode": "BYFE1201", "emnenavn": "Byggfaglig innføring", "studiepoeng": 10, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "EMPE1300", "emnenavn": "Kjemi og miljø", "studiepoeng": 10, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "EMPE1500", "emnenavn": "Fysikk", "studiepoeng": 5, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "EMTS1400", "emnenavn": "Termodynamikk", "studiepoeng": 10, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "EMTS2200", "emnenavn": "Strømningsteknikk", "studiepoeng": 10, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "BEPE1700", "emnenavn": "Grunnleggende programmering", "studiepoeng": 5, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "EMTS2300", "emnenavn": "Varmetransport", "studiepoeng": 10, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "EMPE2500", "emnenavn": "Bygningssimulering", "studiepoeng": 10, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "BYPE2000", "emnenavn": "Matematikk 2000", "studiepoeng": 10, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "EMTS2600", "emnenavn": "Inneklima og måleteknikk", "studiepoeng": 15, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "FEPE2100", "emnenavn": "Statistikk", "studiepoeng": 5, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "EMFE2700", "emnenavn": "Elektroteknikk og byggautomasjon", "studiepoeng": 10, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "EMVE3500", "emnenavn": "VVS og fornybar energi", "studiepoeng": 20, "aar": 3, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "BYPE2700", "emnenavn": "Prosjektledelse og økonomi", "studiepoeng": 10, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
-    {"emnekode": "EMTS3900", "emnenavn": "Bacheloroppgave", "studiepoeng": 20, "aar": 3, "semester": "vår", "dbhEmnekoder": [], "merknad": null}
+    {
+      "emnekode": "BYFE1000",
+      "emnenavn": "Matematikk 1000",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "helår",
+      "dbhEmnekoder": [
+        "BYFE1000-1"
+      ],
+      "merknad": "Går over to semestre (0 sp registrert høst, 10 sp registrert vår)."
+    },
+    {
+      "emnekode": "BYFE1201",
+      "emnenavn": "Byggfaglig innføring",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BYFE1201-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EMPE1300",
+      "emnenavn": "Kjemi og miljø",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EMPE1300-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EMPE1500",
+      "emnenavn": "Fysikk",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EMPE1500-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EMTS1400",
+      "emnenavn": "Termodynamikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "EMTS1400-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EMTS2200",
+      "emnenavn": "Strømningsteknikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "EMTS2200-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BEPE1700",
+      "emnenavn": "Grunnleggende programmering",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BEPE1700-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EMTS2300",
+      "emnenavn": "Varmetransport",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EMTS2300-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EMPE2500",
+      "emnenavn": "Bygningssimulering",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EMPE2500-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYPE2000",
+      "emnenavn": "Matematikk 2000",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BYPE2000-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EMTS2600",
+      "emnenavn": "Inneklima og måleteknikk",
+      "studiepoeng": 15,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "EMTS2600-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FEPE2100",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "FEPE2100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EMFE2700",
+      "emnenavn": "Elektroteknikk og byggautomasjon",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "EMFE2700-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EMVE3500",
+      "emnenavn": "VVS og fornybar energi",
+      "studiepoeng": 20,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EMVE3500-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYPE2700",
+      "emnenavn": "Prosjektledelse og økonomi",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BYPE2700-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EMTS3900",
+      "emnenavn": "Bacheloroppgave",
+      "studiepoeng": 20,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "EMTS3900-1"
+      ],
+      "merknad": null
+    }
   ],
   "spesialiseringer": [],
   "merknad": "Kilde er OsloMets programplan-portal for HINGENERGI, gjeldende fra høst 2026. Programmet er 180 sp over 6 semestre og har ingen studieretninger. Programmet tilbys også som «for tretermin» (forlenget variant med ekstra forkurssemester) — denne er ikke brukt her. 170 av 180 sp er obligatorisk; de resterende 10 sp (3. år) er et «Minst ett av»-valg mellom EMVE3700 Numerisk varme- og strømningsteknikk, BYVE3605 Vannkraftteknikk, DAVE3700 Matematikk 3000, DAVE3710 Akademisk engelsk, STKD6610 Technology and Society II (undervist høst) og DAVE3705 Matematikk 4000 (undervist vår, samme valgpool listet på tvers av semestrene) — ingen av disse er tatt med i obligatoriske."

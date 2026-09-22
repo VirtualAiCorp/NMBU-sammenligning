@@ -46,7 +46,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         },
       },
       {
-        id: 'ntnu_bygg_infrastruktur', shortName: 'NTNU', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
+        id: 'ntnu_bygg_infrastruktur', shortName: 'NTNU Bygg og infrastruktur', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
         studiekode: '194759', studiested: 'Trondheim', type: 'master',
         url: 'https://www.ntnu.no/studier/mtbygg',
         years: {
@@ -60,7 +60,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         },
       },
       {
-        id: 'ntnu_arkitektur', shortName: 'NTNU', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
+        id: 'ntnu_arkitektur', shortName: 'NTNU Arkitektur', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
         studiekode: '194756', studiested: 'Trondheim', type: 'master',
         url: 'https://www.ntnu.no/studier/maar',
         years: {
@@ -74,7 +74,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         },
       },
       {
-        id: 'ntnu_ing_bygg', shortName: 'NTNU', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
+        id: 'ntnu_ing_bygg', shortName: 'NTNU Ing. bygg', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
         studiekode: '194675', studiested: 'Trondheim', type: 'bachelor',
         url: 'https://www.ntnu.no/studier/bibygg',
         years: {
@@ -149,7 +149,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         },
       },
       {
-        id: 'ntnu_maskin_energi', shortName: 'NTNU', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
+        id: 'ntnu_maskin_energi', shortName: 'NTNU Maskin og energi', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
         studiekode: '194762', studiested: 'Trondheim', type: 'master',
         url: 'https://www.ntnu.no/studier/mtmaskin',
         years: {
@@ -160,7 +160,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         },
       },
       {
-        id: 'ntnu_industriell_design', shortName: 'NTNU', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
+        id: 'ntnu_industriell_design', shortName: 'NTNU Industriell design', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
         studiekode: '194768', studiested: 'Trondheim', type: 'master',
         url: 'https://www.ntnu.no/studier/mtdesig',
         years: {
@@ -174,7 +174,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         },
       },
       {
-        id: 'ntnu_produktutvikling_produksjon', shortName: 'NTNU', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
+        id: 'ntnu_produktutvikling_produksjon', shortName: 'NTNU Produktutvikling', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
         studiekode: '194766', studiested: 'Trondheim', type: 'master',
         url: 'https://www.ntnu.no/studier/mtprod',
         years: {
@@ -184,7 +184,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         },
       },
       {
-        id: 'ntnu_ing_maskin', shortName: 'NTNU', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
+        id: 'ntnu_ing_maskin', shortName: 'NTNU Ing. maskin', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
         studiekode: '194034', studiested: 'Trondheim', type: 'bachelor',
         url: 'https://www.ntnu.no/studier/bimaskin',
         years: {
@@ -333,7 +333,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         },
       },
       {
-        id: 'ntnu_ikmb', shortName: 'NTNU', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
+        id: 'ntnu_ikmb', shortName: 'NTNU Kjemi, materialer og bio', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
         studiekode: '194783', studiested: 'Trondheim', type: 'master',
         url: 'https://www.ntnu.no/studier/mtkmb',
         years: {
@@ -351,7 +351,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         },
       },
       {
-        id: 'ntnu_ikb', shortName: 'NTNU', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
+        id: 'ntnu_ikb', shortName: 'NTNU Ind. kjemi og biotek', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
         studiekode: '194764', studiested: 'Trondheim', type: 'master',
         url: 'https://www.ntnu.no/studier/mtkj',
         years: {
@@ -363,7 +363,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         },
       },
       {
-        id: 'ntnu_bioteknologi', shortName: 'NTNU', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
+        id: 'ntnu_bioteknologi', shortName: 'NTNU Bioteknologi', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
         studiekode: '194855', studiested: 'Trondheim', type: 'master',
         url: 'https://www.ntnu.no/studier/mbiot5',
         years: {
@@ -427,7 +427,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         },
       },
       {
-        id: 'ntnu_energi_miljo', shortName: 'NTNU', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
+        id: 'ntnu_energi_miljo', shortName: 'NTNU Energi og miljø', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
         studiekode: '194769', studiested: 'Trondheim', type: 'master',
         url: 'https://www.ntnu.no/studier/mtenerg',
         years: {
@@ -455,7 +455,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         },
       },
       {
-        id: 'uit_fornybar_energi', shortName: 'UiT', institusjon: 'UiT Norges arktiske universitet',
+        id: 'uit_fornybar_energi', shortName: 'UiT Fornybar energi', institusjon: 'UiT Norges arktiske universitet',
         studiekode: '186809', studiested: 'Tromsø', type: 'master',
         url: 'https://uit.no/utdanning/program/798891/fornybar_energi_sivilingenior_-_master',
         years: {
@@ -466,7 +466,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         },
       },
       {
-        id: 'ntnu_fysmat', shortName: 'NTNU', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
+        id: 'ntnu_fysmat', shortName: 'NTNU Fysikk og matematikk', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
         studiekode: '194763', studiested: 'Trondheim', type: 'master',
         url: 'https://www.ntnu.no/studier/mtfyma',
         years: {
@@ -480,7 +480,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         },
       },
       {
-        id: 'uit_anvendt_fysmat', shortName: 'UiT', institusjon: 'UiT Norges arktiske universitet',
+        id: 'uit_anvendt_fysmat', shortName: 'UiT Anvendt fysmat', institusjon: 'UiT Norges arktiske universitet',
         studiekode: '186953', studiested: 'Tromsø', type: 'master',
         url: 'https://uit.no/utdanning/program/324988/anvendt_fysikk_og_matematikk_sivilingenior_-_mas',
         years: {
@@ -494,7 +494,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         },
       },
       {
-        id: 'uio_fornybar_nano', shortName: 'UiO', institusjon: 'Universitetet i Oslo',
+        id: 'uio_fornybar_nano', shortName: 'UiO Fornybar og nano', institusjon: 'Universitetet i Oslo',
         studiekode: '185863', studiested: 'Oslo', type: 'bachelor',
         url: 'https://www.uio.no/studier/program/nanoteknologi/',
         years: {
@@ -641,7 +641,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         },
       },
       {
-        id: 'ntnu_bygg_infrastruktur_vann', shortName: 'NTNU', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
+        id: 'ntnu_bygg_infrastruktur_vann', shortName: 'NTNU Bygg og infrastruktur', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
         studiekode: '194759', studiested: 'Trondheim', type: 'master',
         url: 'https://www.ntnu.no/studier/mtbygg',
         years: {
@@ -655,7 +655,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         },
       },
       {
-        id: 'ntnu_energi_miljo_vann', shortName: 'NTNU', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
+        id: 'ntnu_energi_miljo_vann', shortName: 'NTNU Energi og miljø', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
         studiekode: '194769', studiested: 'Trondheim', type: 'master',
         url: 'https://www.ntnu.no/studier/mtenerg',
         years: {
@@ -959,7 +959,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         },
       },
       {
-        id: 'uio_fysikk_astronomi', shortName: 'UiO', institusjon: 'Universitetet i Oslo',
+        id: 'uio_fysikk_astronomi', shortName: 'UiO Fysikk og astronomi', institusjon: 'Universitetet i Oslo',
         studiekode: '185857', studiested: 'Oslo', type: 'bachelor',
         url: 'https://www.uio.no/studier/program/fysikk-astronomi/',
         years: {
@@ -987,7 +987,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         },
       },
       {
-        id: 'uio_fornybar_nano_b', shortName: 'UiO', institusjon: 'Universitetet i Oslo',
+        id: 'uio_fornybar_nano_b', shortName: 'UiO Fornybar og nano', institusjon: 'Universitetet i Oslo',
         studiekode: '185863', studiested: 'Oslo', type: 'bachelor',
         url: 'https://www.uio.no/studier/program/nanoteknologi/',
         years: {
@@ -1049,7 +1049,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         },
       },
       {
-        id: 'ntnu_midt', shortName: 'NTNU', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
+        id: 'ntnu_midt', shortName: 'NTNU Datateknologi', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
         studiekode: '', studiested: 'Trondheim', type: 'master2',
         url: 'https://www.ntnu.no/studier/midt',
         years: {
@@ -1062,7 +1062,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         },
       },
       {
-        id: 'ntnu_msit', shortName: 'NTNU', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
+        id: 'ntnu_msit', shortName: 'NTNU Informatics', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
         studiekode: '', studiested: 'Trondheim', type: 'master2',
         url: 'https://www.ntnu.no/studier/msit',
         years: {

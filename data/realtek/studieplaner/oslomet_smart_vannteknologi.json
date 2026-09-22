@@ -1,0 +1,28 @@
+{
+  "entryId": "oslomet_smart_vannteknologi",
+  "programnavn": "Smart vannteknologi (master 2 år)",
+  "institusjon": "OsloMet - storbyuniversitetet",
+  "studieplanAar": "2026/2027 (MABY, studieretning Smart Water Process and Infrastructure Engineering)",
+  "kilder": [
+    "https://www.oslomet.no/studier/tkd/smart-vannteknologi",
+    "https://student.oslomet.no/studier/-/studieinfo/programplan/MABY/2026/H%C3%98ST"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 120,
+  "obligatoriske": [
+    {"emnekode": "MAEN4300", "emnenavn": "Strømningsteknikk og numeriske beregninger", "studiepoeng": 10, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "MABY4700", "emnenavn": "Life Cycle Assessment for Built Environment", "studiepoeng": 5, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "MAEN5300", "emnenavn": "Forskningsmetoder og etikk", "studiepoeng": 5, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "MABY5315", "emnenavn": "Urban Water Technology", "studiepoeng": 10, "aar": 1, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "SMUA4600", "emnenavn": "Geographical Information Systems", "studiepoeng": 10, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "MABY5330", "emnenavn": "Water Resource Recovery Technology", "studiepoeng": 10, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "MABY5345", "emnenavn": "Water Infrastructures and Sensor Networks", "studiepoeng": 10, "aar": 1, "semester": "vår", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "MABY5050", "emnenavn": "Smart Infrastructure and Asset Management", "studiepoeng": 10, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "MABY5060", "emnenavn": "Managing Infrastructure Projects", "studiepoeng": 10, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "MABY5360", "emnenavn": "Design and Optimisation Projects", "studiepoeng": 10, "aar": 2, "semester": "høst", "dbhEmnekoder": [], "merknad": null},
+    {"emnekode": "MABY5900", "emnenavn": "Master's Thesis", "studiepoeng": 30, "aar": 2, "semester": "vår", "dbhEmnekoder": [], "merknad": null}
+  ],
+  "spesialiseringer": [],
+  "merknad": "«Smart vannteknologi» er ikke et eget programkode ved OsloMet, men studieretningen «Smart Water Process and Infrastructure Engineering» innenfor det engelskspråklige toårige masterprogrammet MABY («Master's Programme in Civil Engineering» / «Master i bygg – sivilingeniør», programkode 215 6310 i Søknadsweb). Kilde er OsloMets programplan-portal for MABY, gjeldende fra høst 2026, med denne studieretningen valgt. Alle 120 sp i studieretningen er obligatoriske (ingen valgfrie emner er oppgitt for denne retningen i programplanen) — programmet har derfor ingen egen spesialiseringer-liste her, siden filen allerede representerer én bestemt studieretning. MABY har også fire andre studieretninger (Structural Engineering, Building Technology, Transport Infrastructure Engineering, Geotechnical Engineering) med felles 1. semester og andre emner i de øvrige tre semestrene — disse er ikke tatt med siden de faller utenfor denne sammenligningsgruppen."
+}
