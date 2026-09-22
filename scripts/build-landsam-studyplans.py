@@ -42,9 +42,10 @@ def sum_years(course_rows, codes):
     by_year = {}
     for code in codes:
         for y in course_rows.get(code, []):
-            acc = by_year.setdefault(y["year"], {g: 0 for g in GRADES})
+            acc = by_year.setdefault(y["year"], {g: 0 for g in GRADES + ["skjult"]})
             for g in GRADES:
                 acc[g] += int(y.get(g) or 0)
+            acc["skjult"] += int(y.get("skjult") or 0)
     out = []
     for year in sorted(by_year):
         c = by_year[year]
@@ -53,16 +54,16 @@ def sum_years(course_rows, codes):
         snitt = round(sum(POINTS[g] * c[g] for g in "ABCDEF") / letters, 2) if letters else None
         stryk = round(c["F"] / letters * 100, 1) if letters else None
         bestatt = round(c["G"] / gh * 100, 1) if gh else None
-        out.append({"year": year, **c, "total": letters + gh, "snitt": snitt,
-                    "strykprosent": stryk, "bestattprosent": bestatt})
+        out.append({"year": year, **{g: c[g] for g in GRADES}, "total": letters + gh, "snitt": snitt,
+                    "strykprosent": stryk, "bestattprosent": bestatt, "skjult": c["skjult"]})
     return out
 
 
 def render_year(y):
     return ("{ year: %d, A: %d, B: %d, C: %d, D: %d, E: %d, F: %d, G: %d, H: %d, total: %d, "
-            "snitt: %s, strykprosent: %s, bestattprosent: %s }") % (
+            "snitt: %s, strykprosent: %s, bestattprosent: %s, skjult: %d }") % (
         y["year"], y["A"], y["B"], y["C"], y["D"], y["E"], y["F"], y["G"], y["H"], y["total"],
-        num_or_null(y["snitt"]), num_or_null(y["strykprosent"]), num_or_null(y["bestattprosent"]))
+        num_or_null(y["snitt"]), num_or_null(y["strykprosent"]), num_or_null(y["bestattprosent"]), y.get("skjult", 0))
 
 
 def build_course(pc, course_rows, name_by_code):

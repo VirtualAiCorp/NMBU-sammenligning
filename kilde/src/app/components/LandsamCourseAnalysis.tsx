@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { Fragment, useState, useMemo } from 'react';
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
 } from 'recharts';
@@ -563,6 +563,286 @@ function KarakterfordelingView({
   );
 }
 
+// ─── DBH-skjerming og fordelingspanel ────────────────────────────────────────
+
+/**
+ * DBH skjermer celler med 1–2 kandidater (de vises som 0). Generatoren legger
+ * antallet skjermede kandidater i `skjult`, og hele emnets fordeling – alle
+ * studenter ved institusjonen, ikke bare programmets – i `emnenivaa`.
+ * Begge feltene er valgfrie: eldre datafiler har dem ikke.
+ */
+type CourseGradeYearX = CourseGradeYear & { skjult?: number };
+type CourseStatsX = CourseStats & { emnenivaa?: CourseGradeYearX[] };
+
+function skjultOf(d: CourseGradeYearX): number {
+  return typeof d.skjult === 'number' && d.skjult > 0 ? d.skjult : 0;
+}
+
+/** Nedre og øvre grense for reell strykprosent når DBH har skjermet kandidater. */
+function strykSpenn(d: CourseGradeYearX): { lav: number; hoy: number } | null {
+  const skjult = skjultOf(d);
+  if (skjult === 0) return null;
+  const bokstav = courseLetterTotal(d);
+  if (bokstav + skjult === 0) return null;
+  return {
+    lav: bokstav > 0 ? (d.F / bokstav) * 100 : 0,
+    hoy: ((d.F + skjult) / (bokstav + skjult)) * 100,
+  };
+}
+
+/** Strykprosent som tekst: «≥ 4,2 %» når noe er skjermet, ellers «4,2 %». */
+function strykTekst(d: CourseGradeYearX): string | null {
+  if (courseLetterTotal(d) > 0 && d.strykprosent !== null) {
+    return `${skjultOf(d) > 0 ? '≥ ' : ''}${nf(d.strykprosent, 1)} %`;
+  }
+  const bestatt = d.G + d.H;
+  if (bestatt > 0) return `${nf((d.H / bestatt) * 100, 1)} %`;
+  return null;
+}
+
+function strykTittel(d: CourseGradeYearX): string | undefined {
+  const spenn = strykSpenn(d);
+  if (!spenn) return undefined;
+  return `${nf(skjultOf(d))} kandidater er skjermet av DBH, så reell strykprosent ligger mellom ${nf(spenn.lav, 1)} % og ${nf(spenn.hoy, 1)} %.`;
+}
+
+const SKJULT_AMBER = '#c2963a';
+
+function SkjultPrikk() {
+  return (
+    <span aria-hidden="true"
+      style={{ width: 6, height: 6, borderRadius: '50%', backgroundColor: SKJULT_AMBER, display: 'inline-block', flexShrink: 0 }} />
+  );
+}
+
+/** Strykprosenten slik den vises i tabellene, med «≥» og amber prikk når DBH har skjermet. */
+function StrykVerdi({ d }: { d: CourseGradeYearX }) {
+  const tekst = strykTekst(d);
+  if (tekst === null) return <span style={{ color: 'var(--nmbu-neutral-3)' }}>–</span>;
+  const bokstav = courseLetterTotal(d);
+  const skjult = skjultOf(d);
+  if (bokstav === 0) return <span style={{ color: 'var(--nmbu-neutral-2)' }}>{tekst}</span>;
+  return (
+    <span className="inline-flex items-center gap-1 whitespace-nowrap" title={strykTittel(d)}
+      style={{ fontWeight: 600, color: d.strykprosent !== null && d.strykprosent > 20 ? '#9b3a3a' : 'var(--nmbu-neutral-1)' }}>
+      {tekst}
+      {skjult > 0 && <SkjultPrikk />}
+    </span>
+  );
+}
+
+/** A–F med antall og andel, og bestått / ikke bestått når emnet har det. */
+function FordelingTabell({ d }: { d: CourseGradeYearX }) {
+  const bokstav = courseLetterTotal(d);
+  const bestatt = d.G + d.H;
+  const celler: { key: string; label: string; n: number; pct: number | null; color: string }[] =
+    GRADES.map((g) => ({
+      key: g, label: g, n: d[g],
+      pct: bokstav > 0 ? (d[g] / bokstav) * 100 : null,
+      color: GRADE_COLORS[g],
+    }));
+  if (bestatt > 0) {
+    celler.push({ key: 'G', label: 'Bestått',      n: d.G, pct: (d.G / bestatt) * 100, color: BESTATT_COLOR });
+    celler.push({ key: 'H', label: 'Ikke bestått', n: d.H, pct: (d.H / bestatt) * 100, color: BESTATT_COLOR });
+  }
+  return (
+    <table className="border-collapse" style={{ fontSize: 11 }}>
+      <tbody>
+        <tr>
+          <th scope="row" className="pr-3 py-1 text-left whitespace-nowrap"
+            style={{ color: 'var(--nmbu-neutral-2)', fontWeight: 600 }}>Karakter</th>
+          {celler.map((cell) => (
+            <td key={cell.key} className="px-2 py-1 text-center whitespace-nowrap">
+              <span className="inline-flex items-center gap-1" style={{ fontWeight: 700, color: 'var(--nmbu-neutral-1)' }}>
+                <span style={{ width: 8, height: 8, borderRadius: 2, backgroundColor: cell.color, display: 'inline-block', flexShrink: 0 }} />
+                {cell.label}
+              </span>
+            </td>
+          ))}
+        </tr>
+        <tr style={{ borderTop: '1px solid var(--nmbu-neutral-3)' }}>
+          <th scope="row" className="pr-3 py-1 text-left whitespace-nowrap"
+            style={{ color: 'var(--nmbu-neutral-2)', fontWeight: 600 }}>Kandidater</th>
+          {celler.map((cell) => (
+            <td key={cell.key} className="px-2 py-1 text-center whitespace-nowrap"
+              style={{ color: cell.n === 0 ? 'var(--nmbu-neutral-3)' : 'var(--nmbu-neutral-1)', fontWeight: 600 }}>
+              {nf(cell.n)}
+            </td>
+          ))}
+        </tr>
+        <tr>
+          <th scope="row" className="pr-3 py-1 text-left whitespace-nowrap"
+            style={{ color: 'var(--nmbu-neutral-2)', fontWeight: 600 }}>Andel</th>
+          {celler.map((cell) => (
+            <td key={cell.key} className="px-2 py-1 text-center whitespace-nowrap" style={{ color: 'var(--nmbu-neutral-2)' }}>
+              {cell.pct === null ? '–' : `${nf(cell.pct, 1)} %`}
+            </td>
+          ))}
+        </tr>
+      </tbody>
+    </table>
+  );
+}
+
+/** Én fordeling med stolpe, tabell, nøkkeltall og eventuell skjermingsnote. */
+function FordelingBlokk({ tittel, d, undertittel }: { tittel: string; d: CourseGradeYearX; undertittel?: string }) {
+  const bokstav = courseLetterTotal(d);
+  const bestatt = d.G + d.H;
+  const skjult = skjultOf(d);
+  const spenn = strykSpenn(d);
+  return (
+    <div>
+      <h5 className="text-sm mb-1" style={{ color: 'var(--nmbu-green-dark)', fontFamily: "'Lora', serif" }}>{tittel}</h5>
+      {undertittel && (
+        <p className="mb-2" style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)' }}>{undertittel}</p>
+      )}
+      <div className="mb-2" style={{ maxWidth: 520 }}>
+        <MiniDistBar d={d} width="100%" />
+      </div>
+      <div className="overflow-x-auto">
+        <FordelingTabell d={d} />
+      </div>
+      <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1" style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)' }}>
+        <span>
+          Kandidater <strong style={{ color: 'var(--nmbu-neutral-1)' }}>{nf(d.total)}</strong>
+          {bokstav > 0 && bestatt > 0 ? ` (${nf(bokstav)} med bokstavkarakter)` : ''}
+        </span>
+        <span>
+          Snitt{' '}
+          <strong style={{ color: 'var(--nmbu-neutral-1)' }}>
+            {d.snitt !== null ? `${nf(d.snitt, 2)} (${letterFor(d.snitt)})` : '–'}
+          </strong>
+        </span>
+        <span className="inline-flex items-center gap-1">
+          Stryk <strong style={{ color: 'var(--nmbu-neutral-1)' }}>{strykTekst(d) ?? '–'}</strong>
+        </span>
+        {skjult > 0 && (
+          <span className="inline-flex items-center gap-1">
+            <SkjultPrikk />Skjermet <strong style={{ color: 'var(--nmbu-neutral-1)' }}>{nf(skjult)}</strong>
+          </span>
+        )}
+      </div>
+      {bokstav > 0 && bestatt > 0 && (
+        <p className="mt-1" style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)' }}>
+          Andelen for A–F er av bokstavkarakterene, andelen for bestått / ikke bestått av de to kategoriene.
+        </p>
+      )}
+      {spenn && (
+        <div className="mt-2 flex items-start gap-2 rounded-lg px-3 py-2"
+          style={{ backgroundColor: '#fdf4e0', border: `1px solid ${SKJULT_AMBER}`, color: '#7a5a14', fontSize: 11 }}>
+          <Info className="w-3.5 h-3.5 shrink-0 mt-0.5" />
+          <span>
+            {nf(skjult)} kandidater er skjermet av DBH (celler med 1–2 kandidater vises som 0).
+            Reell strykprosent ligger mellom {nf(spenn.lav, 1)} % og {nf(spenn.hoy, 1)} %.
+          </span>
+        </div>
+      )}
+    </div>
+  );
+}
+
+/** Kandidater, snitt og stryk per år – programnivå, og emnenivå når det finnes. */
+function EmneAarTabell({
+  years, emnenivaa, valgtAar,
+}: {
+  years: CourseGradeYearX[];
+  emnenivaa?: CourseGradeYearX[];
+  valgtAar: number;
+}) {
+  const harEmnenivaa = !!emnenivaa && emnenivaa.length > 0;
+  const rader = [...years].sort((a, b) => a.year - b.year);
+  if (rader.length === 0) return null;
+  return (
+    <div className="overflow-x-auto">
+      <table className="border-collapse" style={{ fontSize: 11 }}>
+        <thead>
+          <tr style={{ color: 'var(--nmbu-neutral-2)' }}>
+            <th className="px-2 py-1" />
+            <th className="px-2 py-1 text-center whitespace-nowrap" colSpan={3}
+              style={{ fontWeight: 600, borderBottom: '1px solid var(--nmbu-neutral-3)' }}>
+              Programmets studenter
+            </th>
+            {harEmnenivaa && (
+              <th className="px-2 py-1 text-center whitespace-nowrap" colSpan={3}
+                style={{ fontWeight: 600, borderBottom: '1px solid var(--nmbu-neutral-3)', borderLeft: '1px solid var(--nmbu-neutral-3)' }}>
+                Alle studenter på emnet
+              </th>
+            )}
+          </tr>
+          <tr style={{ backgroundColor: 'var(--nmbu-beige-light)', borderBottom: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-2)' }}>
+            <th className="px-2 py-1 text-left whitespace-nowrap" style={{ fontWeight: 600 }}>År</th>
+            <th className="px-2 py-1 text-center whitespace-nowrap" style={{ fontWeight: 600 }}>Kand.</th>
+            <th className="px-2 py-1 text-center whitespace-nowrap" style={{ fontWeight: 600 }}>Snitt</th>
+            <th className="px-2 py-1 text-center whitespace-nowrap" style={{ fontWeight: 600 }}>Stryk</th>
+            {harEmnenivaa && (
+              <>
+                <th className="px-2 py-1 text-center whitespace-nowrap" style={{ fontWeight: 600, borderLeft: '1px solid var(--nmbu-neutral-3)' }}>Kand.</th>
+                <th className="px-2 py-1 text-center whitespace-nowrap" style={{ fontWeight: 600 }}>Snitt</th>
+                <th className="px-2 py-1 text-center whitespace-nowrap" style={{ fontWeight: 600 }}>Stryk</th>
+              </>
+            )}
+          </tr>
+        </thead>
+        <tbody>
+          {rader.map((d) => {
+            const e = harEmnenivaa ? emnenivaa!.find((x) => x.year === d.year) : undefined;
+            const aktiv = d.year === valgtAar;
+            return (
+              <tr key={d.year} style={{ borderBottom: '1px solid var(--nmbu-neutral-3)', backgroundColor: aktiv ? 'var(--nmbu-green-4)' : 'transparent' }}>
+                <td className="px-2 py-1 whitespace-nowrap" style={{ color: 'var(--nmbu-neutral-1)', fontWeight: aktiv ? 700 : 600 }}>{d.year}</td>
+                <td className="px-2 py-1 text-center" style={{ color: 'var(--nmbu-neutral-1)' }}>{nf(d.total)}</td>
+                <td className="px-2 py-1 text-center whitespace-nowrap" style={{ color: 'var(--nmbu-neutral-1)' }}>
+                  {d.snitt !== null ? `${nf(d.snitt, 2)} (${letterFor(d.snitt)})` : '–'}
+                </td>
+                <td className="px-2 py-1 text-center"><StrykVerdi d={d} /></td>
+                {harEmnenivaa && (
+                  <>
+                    <td className="px-2 py-1 text-center" style={{ color: 'var(--nmbu-neutral-1)', borderLeft: '1px solid var(--nmbu-neutral-3)' }}>
+                      {e ? nf(e.total) : <span style={{ color: 'var(--nmbu-neutral-3)' }}>–</span>}
+                    </td>
+                    <td className="px-2 py-1 text-center whitespace-nowrap" style={{ color: 'var(--nmbu-neutral-1)' }}>
+                      {e && e.snitt !== null ? `${nf(e.snitt, 2)} (${letterFor(e.snitt)})` : <span style={{ color: 'var(--nmbu-neutral-3)' }}>–</span>}
+                    </td>
+                    <td className="px-2 py-1 text-center">
+                      {e ? <StrykVerdi d={e} /> : <span style={{ color: 'var(--nmbu-neutral-3)' }}>–</span>}
+                    </td>
+                  </>
+                )}
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+/** Detaljpanelet under en emnerad. Rendres bare for den raden som er åpen. */
+function EmneDetaljer({ c, d, year }: { c: CourseStatsX; d: CourseGradeYearX; year: number }) {
+  const emnenivaa = c.emnenivaa;
+  const e = emnenivaa?.find((x) => x.year === year);
+  return (
+    <div className="px-4 py-4" style={{ backgroundColor: 'var(--nmbu-beige-light)', borderTop: '1px solid var(--nmbu-neutral-3)' }}>
+      <div className="flex flex-col gap-5">
+        <FordelingBlokk tittel={`Programmets studenter i ${year}`} d={d} />
+        {e && (
+          <FordelingBlokk
+            tittel={`Alle studenter på emnet i ${year}`}
+            d={e}
+            undertittel="Tilsvarer tallene på karakterweb.no"
+          />
+        )}
+        <div>
+          <h5 className="text-sm mb-2" style={{ color: 'var(--nmbu-green-dark)', fontFamily: "'Lora', serif" }}>
+            År for år
+          </h5>
+          <EmneAarTabell years={c.years} emnenivaa={emnenivaa} valgtAar={year} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
 // ─── Fane 3: Emner ────────────────────────────────────────────────────────────
 
 type CourseSortKey = 'emnekode' | 'emnenavn' | 'studiepoeng' | 'kandidater' | 'snitt' | 'stryk';
@@ -576,13 +856,15 @@ function EmneTable({
 }) {
   const [sortKey, setSortKey] = useState<CourseSortKey>('kandidater');
   const [sortAsc, setSortAsc] = useState(false);
+  /** Emnekoden til raden som er åpen – bare én om gangen. */
+  const [openKode, setOpenKode] = useState<string | null>(null);
 
   const rows = program.courses
     .map((c) => {
       const d = c.years.find((yr) => yr.year === year);
       return d ? { c, d } : null;
     })
-    .filter((r): r is { c: (typeof program.courses)[number]; d: CourseGradeYear } => r !== null)
+    .filter((r): r is { c: CourseStatsX; d: CourseGradeYearX } => r !== null)
     .filter((r) => r.d.total > 0 && r.d.total >= minKandidater);
 
   const sorted = [...rows].sort((a, b) => {
@@ -635,6 +917,7 @@ function EmneTable({
       <table className="w-full border-collapse text-xs">
         <thead>
           <tr style={{ backgroundColor: 'var(--nmbu-beige-light)', borderBottom: '2px solid var(--nmbu-neutral-3)' }}>
+            <th className="px-2 py-2.5" style={{ width: 28 }}><span className="sr-only">Vis detaljer</span></th>
             {cols.map((col) => {
               const sortable = col.id !== 'fordeling';
               return (
@@ -658,8 +941,26 @@ function EmneTable({
           {sorted.map(({ c, d }, i) => {
             const bokstav = courseLetterTotal(d);
             const bestattOnly = bokstav === 0 && d.G + d.H > 0;
+            const apen = openKode === c.emnekode;
+            const toggle = () => setOpenKode((v) => (v === c.emnekode ? null : c.emnekode));
             return (
-              <tr key={c.emnekode} style={{ borderBottom: '1px solid var(--nmbu-neutral-3)', backgroundColor: i % 2 === 0 ? '#fff' : 'var(--nmbu-beige-light)' }}>
+              <Fragment key={c.emnekode}>
+              <tr
+                onClick={toggle}
+                onKeyDown={(ev) => {
+                  if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); toggle(); }
+                }}
+                tabIndex={0}
+                role="button"
+                aria-expanded={apen}
+                className="cursor-pointer"
+                title={apen ? 'Skjul fordelingen' : 'Vis fordelingen'}
+                style={{ borderBottom: '1px solid var(--nmbu-neutral-3)', backgroundColor: apen ? 'var(--nmbu-green-4)' : i % 2 === 0 ? '#fff' : 'var(--nmbu-beige-light)' }}>
+                <td className="px-2 py-2.5 align-middle">
+                  {apen
+                    ? <ChevronDown className="w-4 h-4 shrink-0" style={{ color: 'var(--nmbu-green)' }} />
+                    : <ChevronRight className="w-4 h-4 shrink-0" style={{ color: 'var(--nmbu-neutral-2)' }} />}
+                </td>
                 <td className="px-3 py-2.5 font-mono whitespace-nowrap" style={{ color: 'var(--nmbu-neutral-1)', fontWeight: 600 }}>{c.emnekode}</td>
                 <td className="px-3 py-2.5">
                   {c.emnenavn
@@ -688,14 +989,18 @@ function EmneTable({
                     <span style={{ color: 'var(--nmbu-neutral-2)' }}>
                       {d.H > 0 ? `${nf((d.H / (d.G + d.H)) * 100, 1)} %` : '0,0 %'}
                     </span>
-                  ) : d.strykprosent !== null ? (
-                    <span style={{ fontWeight: 600, color: d.strykprosent > 20 ? '#9b3a3a' : 'var(--nmbu-neutral-1)' }}>
-                      {nf(d.strykprosent, 1)} %
-                    </span>
-                  ) : <span style={{ color: 'var(--nmbu-neutral-3)' }}>–</span>}
+                  ) : <StrykVerdi d={d} />}
                 </td>
                 <td className="px-3 py-2.5"><MiniDistBar d={d} /></td>
               </tr>
+              {apen && (
+                <tr style={{ borderBottom: '1px solid var(--nmbu-neutral-3)' }}>
+                  <td colSpan={cols.length + 1} className="p-0">
+                    <EmneDetaljer c={c} d={d} year={year} />
+                  </td>
+                </tr>
+              )}
+              </Fragment>
             );
           })}
         </tbody>
@@ -2002,6 +2307,13 @@ export function LandsamCourseAnalysis({ initialGroup }: { initialGroup?: string 
                           {activeCourseProgram.dbhProgramnavn} · {activeCourseProgram.institusjon} ·{' '}
                           DBH {activeCourseProgram.dbhInstitusjonskode}
                           {activeCourseProgram.dbhProgramkoder.length > 0 ? ` / ${activeCourseProgram.dbhProgramkoder.join(', ')}` : ''}
+                        </div>
+                        <div className="mb-3 flex items-start gap-2" style={{ fontSize: 12, color: 'var(--nmbu-neutral-2)' }}>
+                          <Info className="w-3.5 h-3.5 shrink-0 mt-0.5" />
+                          <span>
+                            DBH skjermer celler med 1–2 kandidater. Stryk på programnivå kan være
+                            underestimert; åpne raden for fordeling og for tallene for alle studenter på emnet.
+                          </span>
                         </div>
                         <EmneTable program={activeCourseProgram} year={year} minKandidater={minKandidater} />
                         <div className="mt-3">

@@ -92,6 +92,64 @@ def dbh_query_308(institusjonskode: str, years: int) -> dict:
     }
 
 
+def dbh_query_308_emne(institusjonskode: str, years: int) -> dict:
+    """Karakterfordeling per EMNE (uten Semester/Studieprogramkode i groupBy) –
+    ALLE studenter ved institusjonen som tok emnet, uavhengig av program.
+    Cellene er større enn på programnivå og dermed langt mindre skjermet."""
+    return {
+        "tabell_id": 308,
+        "api_versjon": 1,
+        "statuslinje": "J",
+        "kodetekst": "J",
+        "desimal_separator": ".",
+        "groupBy": ["Institusjonskode", "Årstall", "Emnekode", "Karakter"],
+        "sortBy": ["Institusjonskode"],
+        "filter": [
+            {"variabel": "Institusjonskode", "selection": {"filter": "item", "values": [institusjonskode], "exclude": [""]}},
+            {"variabel": "Årstall", "selection": {"filter": "top", "values": [str(years)], "exclude": [""]}},
+        ],
+    }
+
+
+def dbh_query_308_program_totals(institusjonskode: str, years: int) -> dict:
+    """Reelle totaler per program+emne+år, UTEN Karakter i groupBy. Cellene er
+    større enn i dbh_query_308 (ikke splittet på karakter/semester), og dermed
+    lite eller ikke skjermet – brukes til å avdekke hvor mange kandidater som
+    er skjult i karakterfordelingen på programnivå."""
+    return {
+        "tabell_id": 308,
+        "api_versjon": 1,
+        "statuslinje": "J",
+        "kodetekst": "J",
+        "desimal_separator": ".",
+        "groupBy": ["Institusjonskode", "Årstall", "Studieprogramkode", "Emnekode"],
+        "sortBy": ["Institusjonskode"],
+        "filter": [
+            {"variabel": "Institusjonskode", "selection": {"filter": "item", "values": [institusjonskode], "exclude": [""]}},
+            {"variabel": "Årstall", "selection": {"filter": "top", "values": [str(years)], "exclude": [""]}},
+        ],
+    }
+
+
+def dbh_query_308_emne_totals(institusjonskode: str, years: int) -> dict:
+    """Reelle totaler per emne+år, uten Karakter OG uten Studieprogramkode i
+    groupBy – tilsvarende for emnenivå-tallene som dbh_query_308_program_totals
+    er for programnivå-tallene."""
+    return {
+        "tabell_id": 308,
+        "api_versjon": 1,
+        "statuslinje": "J",
+        "kodetekst": "J",
+        "desimal_separator": ".",
+        "groupBy": ["Institusjonskode", "Årstall", "Emnekode"],
+        "sortBy": ["Institusjonskode"],
+        "filter": [
+            {"variabel": "Institusjonskode", "selection": {"filter": "item", "values": [institusjonskode], "exclude": [""]}},
+            {"variabel": "Årstall", "selection": {"filter": "top", "values": [str(years)], "exclude": [""]}},
+        ],
+    }
+
+
 def dbh_query_208(institusjonskode: str, years: int) -> dict:
     return {
         "tabell_id": 208,
@@ -254,6 +312,62 @@ def aggregate_institution_308(rows: list, inst: str, progcodes: set, progcode_to
     return agg, kept
 
 
+def aggregate_program_totals(rows: list, inst: str, progcodes: set, progcode_to_entry: dict) -> dict:
+    """Reelle totaler (UTEN Karakter-splitt) per (entryId, Emnekode, Årstall),
+    fra dbh_query_308_program_totals. Brukes som fasit for å avdekke skjulte
+    kandidater i den karakter-splittede programnivå-tellingen."""
+    agg: dict = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
+    for row in rows:
+        progkode = row.get("Studieprogramkode")
+        if progkode not in progcodes:
+            continue
+        entry_ids = progcode_to_entry.get((inst, progkode)) or []
+        if not entry_ids:
+            continue
+        total = int(round(num(row.get("Antall kandidater totalt")) or 0))
+        year = int(row["Årstall"])
+        emnekode = row["Emnekode"]
+        for entry_id in entry_ids:
+            agg[entry_id][emnekode][year] += total
+    return agg
+
+
+def aggregate_course_grades(rows: list, relevant_emnekoder: set, grade_counter: dict, unknown_grades: dict) -> dict:
+    """Karakterfordeling per (Emnekode, Årstall), uavhengig av program (emnenivå,
+    fra dbh_query_308_emne). `relevant_emnekoder` er emnekodene som inngår i
+    minst ett av programmene våre ved denne institusjonen."""
+    agg: dict = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
+    for row in rows:
+        emnekode = row.get("Emnekode")
+        if emnekode not in relevant_emnekoder:
+            continue
+        karakter = row.get("Karakter")
+        antall = int(round(num(row.get("Antall kandidater totalt")) or 0))
+        if antall == 0:
+            continue
+        if karakter not in KNOWN_GRADES:
+            unknown_grades[karakter] = unknown_grades.get(karakter, 0) + antall
+            continue
+        year = int(row["Årstall"])
+        agg[emnekode][year][karakter] += antall
+        grade_counter[karakter] = grade_counter.get(karakter, 0) + antall
+    return agg
+
+
+def aggregate_course_totals(rows: list, relevant_emnekoder: set) -> dict:
+    """Reelle totaler (UTEN Karakter-splitt) per (Emnekode, Årstall), fra
+    dbh_query_308_emne_totals – fasit for emnenivå-tallene."""
+    agg: dict = defaultdict(lambda: defaultdict(int))
+    for row in rows:
+        emnekode = row.get("Emnekode")
+        if emnekode not in relevant_emnekoder:
+            continue
+        total = int(round(num(row.get("Antall kandidater totalt")) or 0))
+        year = int(row["Årstall"])
+        agg[emnekode][year] += total
+    return agg
+
+
 def build_course_name_lookups(rows_208: list, inst: str):
     """specific[(inst, progkode, emnekode)] = (year, navn, studiepoeng)
        fallback[(inst, emnekode)]            = (year, navn, studiepoeng)
@@ -308,7 +422,7 @@ def lookup_course_name(insts: list, progkoder: list, emnekode: str, specific_by_
 
 # ───────────────────────────── utregning ────────────────────────────────────
 
-def compute_grade_year(year: int, counts: dict) -> dict:
+def compute_grade_year(year: int, counts: dict, skjult: int = 0) -> dict:
     A, B, C, D, E, F = (counts.get(g, 0) for g in LETTER_GRADES)
     G, H = counts.get("G", 0), counts.get("H", 0)
     letter_total = A + B + C + D + E + F
@@ -324,7 +438,31 @@ def compute_grade_year(year: int, counts: dict) -> dict:
     return {
         "year": year, "A": A, "B": B, "C": C, "D": D, "E": E, "F": F, "G": G, "H": H,
         "total": total, "snitt": snitt, "strykprosent": strykprosent, "bestattprosent": bestattprosent,
+        "skjult": skjult,
     }
+
+
+def grade_year_with_skjult(year: int, counts: dict, true_total, label: str, log_ctx: str) -> dict:
+    """Bygger en CourseGradeYear og fyller `skjult` = fasit-total (uten
+    Karakter-splitt, fra en egen mindre-skjermet spørring) minus synlig total
+    (summen av A..H fra karakter-splittet spørring). Klipper til 0 og logger
+    hvis fasiten er lavere enn synlig total (kan skje pga. uavhengig avrunding/
+    skjerming i de to spørringene)."""
+    gy = compute_grade_year(year, counts)
+    visible = gy["total"]
+    if true_total is None:
+        skjult = 0
+    else:
+        skjult = true_total - visible
+        if skjult < 0:
+            print(
+                f"  [ADVARSEL] {label} {log_ctx} {year}: fasit-total ({true_total}) < synlig total "
+                f"({visible}) – setter skjult=0.",
+                file=sys.stderr,
+            )
+            skjult = 0
+    gy["skjult"] = skjult
+    return gy
 
 
 # ───────────────────────────── TS-utskrift ──────────────────────────────────
@@ -352,6 +490,7 @@ def render_grade_year(gy: dict) -> str:
     parts.append(f"snitt: {ts_number(gy['snitt'])}")
     parts.append(f"strykprosent: {ts_number(gy['strykprosent'])}")
     parts.append(f"bestattprosent: {ts_number(gy['bestattprosent'])}")
+    parts.append(f"skjult: {gy.get('skjult', 0)}")
     return "{ " + ", ".join(parts) + " }"
 
 
@@ -362,6 +501,10 @@ def render_course(course: dict, indent: str) -> str:
     lines.append(f"{indent}  studiepoeng: {ts_number(course['studiepoeng'])},")
     lines.append(f"{indent}  years: [")
     for gy in course["years"]:
+        lines.append(f"{indent}    {render_grade_year(gy)},")
+    lines.append(f"{indent}  ],")
+    lines.append(f"{indent}  emnenivaa: [")
+    for gy in course.get("emnenivaa", []):
         lines.append(f"{indent}    {render_grade_year(gy)},")
     lines.append(f"{indent}  ],")
     lines.append(f"{indent}}},")
@@ -408,13 +551,23 @@ def render_ts(groups: list, years: list, out_path: Path) -> str:
     parts = []
     parts.append(f"// GENERERT av scripts/build-landsam-courses.py {today} – ikke rediger for hånd.")
     parts.append("// Kilde: DBH/HKDIR tabell 308 (karakterer, aggregert) og 208 (emner). Snitt: A=5…F=0, kun bokstavkarakterer.")
+    parts.append("// DBH skjuler (setter til 0) celler med 1-2 kandidater i karakterfordelingen; dette rammer særlig")
+    parts.append("// programnivå (mindre celler) og kan gi kunstig lav strykprosent. «skjult» er antall kandidater DBH")
+    parts.append("// har skjult i akkurat den fordelingen, funnet ved å sammenligne med en uavhengig, mindre skjermet")
+    parts.append("// sum uten Karakter-oppdeling. «emnenivaa» viser fordelingen for ALLE studenter ved institusjonen som")
+    parts.append("// tok emnet det året, uavhengig av program – større celler, nærmere de reelle tallene på karakterweb.no.")
     parts.append("import type { LandsamLevel } from './landsamAdmissionData';")
     parts.append("")
     parts.append("export interface CourseGradeYear {")
     parts.append("  year: number; A: number; B: number; C: number; D: number; E: number; F: number; G: number; H: number;")
     parts.append("  total: number; snitt: number | null; strykprosent: number | null; bestattprosent: number | null;")
+    parts.append("  skjult: number;  // antall kandidater DBH har skjult (skjermet) i denne fordelingen")
     parts.append("}")
-    parts.append("export interface CourseStats { emnekode: string; emnenavn: string | null; studiepoeng: number | null; years: CourseGradeYear[]; }")
+    parts.append("export interface CourseStats {")
+    parts.append("  emnekode: string; emnenavn: string | null; studiepoeng: number | null;")
+    parts.append("  years: CourseGradeYear[];              // per program (kan ha skjulte kandidater)")
+    parts.append("  emnenivaa: CourseGradeYear[];           // ALLE studenter ved institusjonen, uavhengig av program")
+    parts.append("}")
     parts.append("export interface ProgramCourses {")
     parts.append("  entryId: string; shortName: string; institusjon: string; isNmbu: boolean;")
     parts.append("  dbhInstitusjonskode: string; dbhProgramkoder: string[]; dbhProgramnavn: string;")
@@ -453,6 +606,9 @@ def main():
     print(f"Institusjoner i dbh-programkart: {institutions}", file=sys.stderr)
 
     all_course_agg: dict = {}  # entryId -> emnekode -> year -> counts
+    all_prog_totals: dict = {}  # entryId -> emnekode -> year -> total (fasit, uten Karakter-splitt)
+    course_counts_by_inst: dict = {}  # inst -> emnekode -> year -> counts (emnenivå)
+    course_totals_by_inst: dict = {}  # inst -> emnekode -> year -> total (emnenivå-fasit)
     specific_by_inst: dict = {}
     fallback_by_inst: dict = {}
     inst_years_seen: dict = {}
@@ -475,6 +631,21 @@ def main():
         rows_208 = fetch_dbh(q208, cache_208, args.refresh)
         total_208_rows += len(rows_208)
 
+        q308_emne = dbh_query_308_emne(inst, args.years)
+        cache_308e = args.cache / f"308e_{inst}_{args.years}y.json"
+        rows_308_emne = fetch_dbh(q308_emne, cache_308e, args.refresh)
+        total_308_rows += len(rows_308_emne)
+
+        q308_pt = dbh_query_308_program_totals(inst, args.years)
+        cache_308pt = args.cache / f"308pt_{inst}_{args.years}y.json"
+        rows_308_pt = fetch_dbh(q308_pt, cache_308pt, args.refresh)
+        total_308_rows += len(rows_308_pt)
+
+        q308_et = dbh_query_308_emne_totals(inst, args.years)
+        cache_308et = args.cache / f"308et_{inst}_{args.years}y.json"
+        rows_308_et = fetch_dbh(q308_et, cache_308et, args.refresh)
+        total_308_rows += len(rows_308_et)
+
         agg, kept = aggregate_institution_308(
             rows_308, inst, inst_progcodes[inst], progcode_to_entry, grade_counter, unknown_grades,
         )
@@ -488,6 +659,31 @@ def main():
                     for k, v in counts.items():
                         all_course_agg[entry_id][emnekode][year][k] = all_course_agg[entry_id][emnekode][year].get(k, 0) + v
                     inst_years_seen.setdefault(inst, set()).add(year)
+
+        # Emnekodene som faktisk inngår i minst ett av programmene våre ved DENNE
+        # institusjonen – brukes til å filtrere emnenivå-spørringene (b/d).
+        relevant_emnekoder_inst = {emnekode for courses in agg.values() for emnekode in courses.keys()}
+
+        prog_totals = aggregate_program_totals(rows_308_pt, inst, inst_progcodes[inst], progcode_to_entry)
+        print(f"  {len(rows_308_pt)} 308pt-rader (programtotaler)", file=sys.stderr)
+        for entry_id, courses in prog_totals.items():
+            all_prog_totals.setdefault(entry_id, {})
+            for emnekode, by_year in courses.items():
+                all_prog_totals[entry_id].setdefault(emnekode, {})
+                for year, total in by_year.items():
+                    all_prog_totals[entry_id][emnekode][year] = all_prog_totals[entry_id][emnekode].get(year, 0) + total
+
+        course_counts = aggregate_course_grades(rows_308_emne, relevant_emnekoder_inst, grade_counter, unknown_grades)
+        course_counts_by_inst[inst] = course_counts
+        print(
+            f"  {len(rows_308_emne)} 308e-rader -> {sum(len(y) for y in course_counts.values())} emne-årganger "
+            f"({len(relevant_emnekoder_inst)} relevante emnekoder)",
+            file=sys.stderr,
+        )
+
+        course_totals = aggregate_course_totals(rows_308_et, relevant_emnekoder_inst)
+        course_totals_by_inst[inst] = course_totals
+        print(f"  {len(rows_308_et)} 308et-rader (emnetotaler)", file=sys.stderr)
 
         specific, fallback = build_course_name_lookups(rows_208, inst)
         specific_by_inst[inst] = specific
@@ -530,24 +726,58 @@ def main():
             insts = entry_insts.get(entry_id) or [str(meta["institusjonskode"])]
             progkoder = meta.get("studieprogramkoder") or []
             course_agg = all_course_agg.get(entry_id, {})
+            prog_totals_for_entry = all_prog_totals.get(entry_id, {})
 
             courses = []
             candidates_per_year: dict = defaultdict(int)
             prog_without_name = 0
+            last_year_global = max(all_years_union) if all_years_union else None
+            skjult_last_year_sum = 0
+            courses_with_skjult_last_year = 0
+
             for emnekode in sorted(course_agg.keys()):
                 by_year = course_agg[emnekode]
+                prog_totals_by_year = prog_totals_for_entry.get(emnekode, {})
+                all_years_this_course = sorted(set(by_year.keys()) | set(prog_totals_by_year.keys()))
+
                 years_out = []
-                for year in sorted(by_year.keys()):
-                    gy = compute_grade_year(year, by_year[year])
+                for year in all_years_this_course:
+                    counts = by_year.get(year, {})
+                    true_total = prog_totals_by_year.get(year)
+                    gy = grade_year_with_skjult(year, counts, true_total, "programnivå", f"{entry_id}/{emnekode}")
                     years_out.append(gy)
                     candidates_per_year[year] += gy["total"]
+                    if year == last_year_global:
+                        skjult_last_year_sum += gy["skjult"]
+                        if gy["skjult"] > 0:
+                            courses_with_skjult_last_year += 1
+
+                # Emnenivå: slå sammen emnedata på tvers av ALLE institusjonskodene
+                # programmet er registrert under (normalt bare én).
+                merged_counts: dict = defaultdict(lambda: defaultdict(int))
+                merged_totals: dict = defaultdict(int)
+                for inst_code in insts:
+                    for year, karakter_counts in course_counts_by_inst.get(inst_code, {}).get(emnekode, {}).items():
+                        for k, v in karakter_counts.items():
+                            merged_counts[year][k] += v
+                    for year, total in course_totals_by_inst.get(inst_code, {}).get(emnekode, {}).items():
+                        merged_totals[year] += total
+                all_years_emnenivaa = sorted(set(merged_counts.keys()) | set(merged_totals.keys()))
+                emnenivaa_out = []
+                for year in all_years_emnenivaa:
+                    counts = merged_counts.get(year, {})
+                    true_total = merged_totals.get(year)
+                    gy2 = grade_year_with_skjult(year, counts, true_total, "emnenivå", emnekode)
+                    emnenivaa_out.append(gy2)
+
                 navn, sp = lookup_course_name(insts, progkoder, emnekode, specific_by_inst, fallback_by_inst)
                 if navn is None:
                     courses_without_name += 1
                     prog_without_name += 1
                 total_courses += 1
                 courses.append({
-                    "emnekode": emnekode, "emnenavn": navn, "studiepoeng": sp, "years": years_out,
+                    "emnekode": emnekode, "emnenavn": navn, "studiepoeng": sp,
+                    "years": years_out, "emnenivaa": emnenivaa_out,
                 })
 
             out_programs.append({
@@ -558,7 +788,9 @@ def main():
             })
             summary_lines.append(
                 f"  {group['id']}/{entry_id}: {len(courses)} emner ({prog_without_name} uten navn), "
-                f"kandidater per år = {dict(sorted(candidates_per_year.items()))}"
+                f"kandidater per år = {dict(sorted(candidates_per_year.items()))}, "
+                f"skjult (programnivå, {last_year_global}): sum={skjult_last_year_sum}, "
+                f"emner med skjult>0: {courses_with_skjult_last_year}"
             )
 
         out_groups.append({

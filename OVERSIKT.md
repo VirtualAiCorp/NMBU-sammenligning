@@ -152,3 +152,10 @@ Regler og forbehold:
 - Én fil per program i `data/landsam/studieplaner/<entryId>.json`: obligatoriske emner med år, semester, studiepoeng, DBH-koder, kilder og forbehold, samt spesialiseringer. `scripts/build-landsam-studyplans.py` summerer karakterene over DBH-kodene og lager `landsamStudyPlanData.ts`.
 - «Obligatorisk karakterindeks» = kandidatvektet snitt over obligatoriske emner med bokstavkarakter i valgt år.
 - Forbehold som er verdt å kjenne: flere institusjoner har byttet emnekoder (HVL landmåling fra 2025, USN, Nord, UiO folkehelse fra 2026), og DBH-karakterene ligger på de gamle kodene. NMBU Eiendomsutvikling har bare 2024-planen publisert. INN eiendomsmegling ser ut til å være nedlagt (siste kull 2023).
+
+## Skjerming i DBH (funnet 22.09.2026)
+
+DBH skjermer celler med 1–2 kandidater i tabell 308 og viser dem som 0. På programnivå (studentene på ett program) forsvinner små strykantall, så strykprosenten er underestimert. Generatoren henter derfor også:
+- emnenivå (alle studenter på emnet ved institusjonen), som er lite skjermet og stemmer med karakterweb.no (`CourseStats.emnenivaa`);
+- reelle totaler uten karakterinndeling, slik at antall skjermede kandidater per emne og år kan telles (`CourseGradeYear.skjult`).
+I emnetabellen vises stryk som «≥ x %» når kandidater er skjermet, og nedtrekket per rad viser begge fordelingene og intervallet reell stryk ligger i. Karakterindeks på programnivå er i praksis lite påvirket (skjermede celler er små), men strykprosent på programnivå må leses som et minimum.
