@@ -16,7 +16,9 @@
       "studiepoeng": 0,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "HMS0003-1"
+      ],
       "merknad": null
     },
     {
@@ -25,7 +27,9 @@
       "studiepoeng": 60,
       "aar": 2,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "KJ3900-1"
+      ],
       "merknad": "60 sp totalt, delt i 4 deler fordelt over alle 4 semestre (del 1-4 ifølge studieplanen)."
     }
   ],
@@ -39,7 +43,9 @@
           "studiepoeng": 7.5,
           "aar": 1,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "TKJ4155-1"
+          ],
           "merknad": null
         },
         {
@@ -48,7 +54,9 @@
           "studiepoeng": 7.5,
           "aar": 1,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "TKJ4130-1"
+          ],
           "merknad": null
         }
       ]

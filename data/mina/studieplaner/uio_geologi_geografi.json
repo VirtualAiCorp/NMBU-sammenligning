@@ -19,7 +19,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "GEO1100-1"
+      ],
       "merknad": "I begynnelsen av 1. semester kreves i tillegg obligatoriske, studiepoenggivende HMS-emner (HMS0501, HMS0502, HMS0503, HMS0504, HMS0507, og HMS0505 for enkelte emner); disse gir 0 sp og er ikke ført som egne linjer."
     },
     {
@@ -37,7 +39,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "MAT1050-1"
+      ],
       "merknad": "Studieplanen gir valget mellom MAT1050 og MAT1100 (Kalkulus); MAT1100 er et alternativ for studenter med R2-bakgrunn."
     },
     {
@@ -46,7 +50,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "GEO1110-1"
+      ],
       "merknad": null
     },
     {
@@ -55,7 +61,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "FYS1001-1"
+      ],
       "merknad": "Studieplanen gir valget mellom FYS1001 og FYS1100 (Mekanikk og modellering); FYS1100 er et alternativ for studenter med R2-bakgrunn."
     },
     {
@@ -64,7 +72,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "MAT1060-1"
+      ],
       "merknad": "Studieplanen gir valget mellom MAT1060 og MAT1110 (Kalkulus og lineær algebra); MAT1110 er et alternativ for studenter med R2-bakgrunn."
     },
     {
@@ -73,7 +83,9 @@
       "studiepoeng": 10,
       "aar": 2,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "GEO2120-1"
+      ],
       "merknad": null
     },
     {
@@ -82,7 +94,9 @@
       "studiepoeng": 10,
       "aar": 3,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "EXPHIL03-1"
+      ],
       "merknad": "Plassert i 5. semester (3. år høst) i standard studieløp; på studieretning geologi kan EXPHIL03 og fordypningsemnet i 5./6. semester bytte plass."
     }
   ],
