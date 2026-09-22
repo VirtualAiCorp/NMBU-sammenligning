@@ -86,7 +86,7 @@ export default function App() {
   }
 
   // ── Fakultetsskjermene (LANDSAM, REALTEK …) ───────────────────────────────
-  if (faculty === 'landsam' || faculty === 'realtek') {
+  if (faculty === 'landsam' || faculty === 'realtek' || faculty === 'biovit' || faculty === 'kbm' || faculty === 'mina') {
     const fac = FACULTIES[faculty];
 
     if (facultyView === 'landing') {

@@ -23,7 +23,40 @@ import {
 import { LANDSAM_COURSE_MAPPING as REALTEK_COURSE_MAPPING } from './realtekCourseMapping';
 import { LANDSAM_STUDYPLAN_GROUPS as REALTEK_STUDYPLAN_GROUPS } from './realtekStudyPlanData';
 
-export type FacultyId = 'landsam' | 'realtek';
+import {
+  LANDSAM_GROUPS as BIOVIT_GROUPS,
+  LANDSAM_YEARS as BIOVIT_YEARS,
+} from './biovitAdmissionData';
+import {
+  LANDSAM_COURSE_GROUPS as BIOVIT_COURSE_GROUPS,
+  LANDSAM_COURSE_YEARS as BIOVIT_COURSE_YEARS,
+} from './biovitCourseData';
+import { LANDSAM_COURSE_MAPPING as BIOVIT_COURSE_MAPPING } from './biovitCourseMapping';
+import { LANDSAM_STUDYPLAN_GROUPS as BIOVIT_STUDYPLAN_GROUPS } from './biovitStudyPlanData';
+
+import {
+  LANDSAM_GROUPS as KBM_GROUPS,
+  LANDSAM_YEARS as KBM_YEARS,
+} from './kbmAdmissionData';
+import {
+  LANDSAM_COURSE_GROUPS as KBM_COURSE_GROUPS,
+  LANDSAM_COURSE_YEARS as KBM_COURSE_YEARS,
+} from './kbmCourseData';
+import { LANDSAM_COURSE_MAPPING as KBM_COURSE_MAPPING } from './kbmCourseMapping';
+import { LANDSAM_STUDYPLAN_GROUPS as KBM_STUDYPLAN_GROUPS } from './kbmStudyPlanData';
+
+import {
+  LANDSAM_GROUPS as MINA_GROUPS,
+  LANDSAM_YEARS as MINA_YEARS,
+} from './minaAdmissionData';
+import {
+  LANDSAM_COURSE_GROUPS as MINA_COURSE_GROUPS,
+  LANDSAM_COURSE_YEARS as MINA_COURSE_YEARS,
+} from './minaCourseData';
+import { LANDSAM_COURSE_MAPPING as MINA_COURSE_MAPPING } from './minaCourseMapping';
+import { LANDSAM_STUDYPLAN_GROUPS as MINA_STUDYPLAN_GROUPS } from './minaStudyPlanData';
+
+export type FacultyId = 'landsam' | 'realtek' | 'biovit' | 'kbm' | 'mina';
 
 export interface FacultyData {
   id: FacultyId;
@@ -71,9 +104,48 @@ export const FACULTIES: Record<FacultyId, FacultyData> = {
     courseMapping: REALTEK_COURSE_MAPPING,
     studyPlanGroups: REALTEK_STUDYPLAN_GROUPS,
   },
+  biovit: {
+    id: 'biovit',
+    label: 'Fakultet for biovitenskap',
+    shortLabel: 'BIOVIT',
+    subtitle: 'Biologi, husdyr, planter og akvakultur',
+    desc: 'Opptakstall og poenggrenser for fakultetets studieprogram sammenlignet med konkurrerende program.',
+    admissionGroups: BIOVIT_GROUPS,
+    admissionYears: BIOVIT_YEARS,
+    courseGroups: BIOVIT_COURSE_GROUPS,
+    courseYears: BIOVIT_COURSE_YEARS,
+    courseMapping: BIOVIT_COURSE_MAPPING,
+    studyPlanGroups: BIOVIT_STUDYPLAN_GROUPS,
+  },
+  kbm: {
+    id: 'kbm',
+    label: 'Fakultet for kjemi, bioteknologi og matvitenskap',
+    shortLabel: 'KBM',
+    subtitle: 'Bioteknologi, kjemi og matvitenskap',
+    desc: 'Opptakstall og poenggrenser for fakultetets studieprogram sammenlignet med konkurrerende program.',
+    admissionGroups: KBM_GROUPS,
+    admissionYears: KBM_YEARS,
+    courseGroups: KBM_COURSE_GROUPS,
+    courseYears: KBM_COURSE_YEARS,
+    courseMapping: KBM_COURSE_MAPPING,
+    studyPlanGroups: KBM_STUDYPLAN_GROUPS,
+  },
+  mina: {
+    id: 'mina',
+    label: 'Fakultet for miljøvitenskap og naturforvaltning',
+    shortLabel: 'MINA',
+    subtitle: 'Skogfag, økologi, naturforvaltning og fornybar energi',
+    desc: 'Opptakstall og poenggrenser for fakultetets studieprogram sammenlignet med konkurrerende program.',
+    admissionGroups: MINA_GROUPS,
+    admissionYears: MINA_YEARS,
+    courseGroups: MINA_COURSE_GROUPS,
+    courseYears: MINA_COURSE_YEARS,
+    courseMapping: MINA_COURSE_MAPPING,
+    studyPlanGroups: MINA_STUDYPLAN_GROUPS,
+  },
 };
 
-export const FACULTY_IDS: FacultyId[] = ['landsam', 'realtek'];
+export const FACULTY_IDS: FacultyId[] = ['landsam', 'realtek', 'biovit', 'kbm', 'mina'];
 
 /** Vises når et fakultet ennå ikke har noen data i de genererte modulene. */
 export const INGEN_DATA_TEKST = 'Ingen data lagt inn ennå for dette fakultetet';

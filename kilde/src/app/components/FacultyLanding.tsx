@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { Building2, Trees, Atom, Lock } from 'lucide-react';
+import { Building2, Trees, Atom, Leaf, FlaskConical, TreePine, Lock } from 'lucide-react';
 import { FACULTIES, FACULTY_IDS, type FacultyId } from '../data/faculties';
 
 export type Faculty = 'hh' | FacultyId;
@@ -21,6 +21,9 @@ interface FacultyCard {
 const FACULTY_ICONS: Record<FacultyId, ReactNode> = {
   landsam: <Trees className="w-5 h-5" style={{ color: 'var(--nmbu-green-dark)' }} />,
   realtek: <Atom className="w-5 h-5" style={{ color: 'var(--nmbu-green-dark)' }} />,
+  biovit: <Leaf className="w-5 h-5" style={{ color: 'var(--nmbu-green-dark)' }} />,
+  kbm: <FlaskConical className="w-5 h-5" style={{ color: 'var(--nmbu-green-dark)' }} />,
+  mina: <TreePine className="w-5 h-5" style={{ color: 'var(--nmbu-green-dark)' }} />,
 };
 
 const ACTIVE_FACULTIES: FacultyCard[] = [
@@ -43,10 +46,7 @@ const ACTIVE_FACULTIES: FacultyCard[] = [
 ];
 
 const COMING_FACULTIES: { id: string; label: string; sub: string }[] = [
-  { id: 'biovit',  label: 'BIOVIT',  sub: 'Biovitenskap' },
-  { id: 'kbm',     label: 'KBM',     sub: 'Kjemi, bioteknologi og matvitenskap' },
-  { id: 'mina',    label: 'MINA',    sub: 'Miljøvitenskap og naturforvaltning' },
-  { id: 'vet',     label: 'VET',     sub: 'Veterinærmedisin' },
+  { id: 'vet', label: 'VET', sub: 'Veterinærmedisin' },
 ];
 
 export function FacultyLanding({ onSelect }: Props) {
@@ -100,11 +100,11 @@ export function FacultyLanding({ onSelect }: Props) {
         </div>
 
         {/* Kommer-fakulteter */}
-        <div className="grid grid-cols-4 gap-3">
+        <div className="flex justify-center gap-3">
           {COMING_FACULTIES.map((f) => (
             <div key={f.id}
               className="rounded-xl p-4 text-left"
-              style={{ backgroundColor: '#fff', border: '1px dashed var(--nmbu-neutral-3)', opacity: 0.6, cursor: 'not-allowed' }}
+              style={{ backgroundColor: '#fff', border: '1px dashed var(--nmbu-neutral-3)', opacity: 0.6, cursor: 'not-allowed', width: 200 }}
               title="Kommer"
             >
               <div className="flex items-center gap-1.5 mb-2">
