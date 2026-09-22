@@ -100,6 +100,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'usn_eiendomsmegling', shortName: 'USN', institusjon: 'Universitetet i Sørøst-Norge',
         studiekode: '222368', studiested: 'Midt-Telemark', type: 'bachelor',
+        url: 'https://www.usn.no/studier/bachelor-i-eiendomsmegling/',
         years: {
           '2020': Y(null, null, null, null, null, null, 36.0, 39.2),
           '2021': Y(1628, 298, 70, 45.6, 1495, 201, 40.0, 44.1),
@@ -207,6 +208,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'uis_ing_bygg_byplan', shortName: 'UiS (ingeniør)', institusjon: 'Universitetet i Stavanger',
         studiekode: '217067', studiested: 'Stavanger', type: 'bachelor',
+        url: 'https://www.uis.no/nb/studier/byggingenior-bachelor',
         years: {
           '2023': Y(183, 16, 15, 37.5, 93, 9, 0, 0),
           '2024': Y(214, 12, 15, 50.0, 106, 8, 0, 0),
@@ -257,6 +259,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'hivolda_planlegging', shortName: 'HVO', institusjon: 'Høgskulen i Volda',
         studiekode: '223452', studiested: 'Volda', type: 'bachelor',
+        url: 'https://www.hivolda.no/studietilbod/planlegging-administrasjon-og-leiing/haust',
         years: {
           '2020': Y(null, null, null, null, null, null, 0, 0),
           '2021': Y(156, 23, 15, 43.5, 133, 40, 0, 0),
@@ -341,6 +344,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'uio_utvikling_baerekraft', shortName: 'UiO', institusjon: 'Universitetet i Oslo',
         studiekode: '185883', studiested: 'Oslo', type: 'bachelor',
+        url: 'https://www.uio.no/studier/program/utviklingsstudier/',
         years: {
           '2020': Y(null, null, null, null, null, null, 50.5, 53.1),
           '2021': Y(957, 78, 50, 78.2, 923, 95, 50.2, 53.5),
@@ -354,6 +358,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'oslomet_utviklingsstudier', shortName: 'OsloMet', institusjon: 'OsloMet - storbyuniversitetet',
         studiekode: '215484', studiested: 'Oslo', type: 'bachelor',
+        url: 'https://www.oslomet.no/studier/lui/utviklingsstudier',
         years: {
           '2020': Y(null, null, null, null, null, null, 45.4, 50.1),
           '2021': Y(711, 69, 35, 79.7, 675, 70, 46.0, 51.4),
@@ -395,6 +400,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'inn_internasjonale_studier', shortName: 'INN', institusjon: 'Universitetet i Innlandet',
         studiekode: '209872', studiested: 'Lillehammer', type: 'bachelor',
+        url: 'https://www.inn.no/studier/vare-studier/bachelor-i-internasjonale-studier/',
         years: {
           '2020': Y(null, null, null, null, null, null, 0, 0),
           '2021': Y(247, 46, 40, 45.7, 226, 67, 0, 38.4),
@@ -488,6 +494,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'uio_folkehelsearbeid', shortName: 'UiO', institusjon: 'Universitetet i Oslo',
         studiekode: '', studiested: 'Oslo', type: 'master2',
+        url: 'https://www.uio.no/studier/program/folkehelsevitenskap-og-epidemiologi/studieretninger/folkehelsevitenskap-og-berekraftige-helsetjenester/',
         years: {
           '2023': Y(320, null, null, null, null, 53, null, 3.8),
           '2024': Y(369, null, null, null, null, 64, null, 3.8),
