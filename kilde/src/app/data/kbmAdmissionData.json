@@ -1,0 +1,1893 @@
+{
+  "generert": "2026-09-22",
+  "programkartHentet": "2026-09-22",
+  "years": [
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+  ],
+  "groups": [
+    {
+      "id": "bioteknologi",
+      "label": "Bioteknologi",
+      "level": "bachelor",
+      "desc": "Sammenligner NMBUs bachelor i bioteknologi med de andre bioteknologi- og molekylærbiologiutdanningene.",
+      "note": "Konkurrentene med default true er treårige realfagsbachelorer i bioteknologi eller molekylærbiologi i Samordna opptak. NTNUs bioteknologiprogram i Trondheim (kode 194855) er et femårig integrert masterprogram og er derfor tatt med som svakere sammenligning, mens NTNUs treårige bachelor i Ålesund (kode 194427) er en direkte sammenligning. UiOs «Biovitenskap» er et bredt biologiprogram med over 150 studieplasser og mange studieretninger, og OsloMets «Ingeniør, bioteknologi og kjemi» er en treårig ingeniørutdanning med eget opptaksgrunnlag; begge er svakere sammenligninger. NTNUs «Medisinsk og biologisk kjemi» (kode 194163) og «Biologi og kjemi, realfag» (kode 194184) er årsstudier, ikke bachelorprogrammer, og er derfor ikke med. Nord universitet har ingen bioteknologibachelor i Samordna opptak. NTNUs «Biovitenskap og laboratorieteknologi» i Ålesund (kode 194820) hadde første opptak i 2026 og har for kort tidsserie.",
+      "nmbuIds": [
+        "nmbu_bioteknologi"
+      ],
+      "defaultIds": [
+        "nmbu_bioteknologi",
+        "uib_molekylarbiologi",
+        "uit_bioteknologi",
+        "ntnu_bioteknologi_alesund"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_bioteknologi",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "192299",
+          "studiested": "Ås",
+          "type": "bachelor",
+          "url": "https://www.nmbu.no/studier/bachelor/bioteknologi",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 54.0,
+              "pg_ord": 54.8
+            },
+            "2021": {
+              "alleS": 685,
+              "fvS": 73,
+              "plasser": 40,
+              "kvinner": 75.3,
+              "kvalifiserte": 637,
+              "tilbud": 56,
+              "pg_fv": 56.0,
+              "pg_ord": 56.0
+            },
+            "2022": {
+              "alleS": 528,
+              "fvS": 63,
+              "plasser": 40,
+              "kvinner": 74.6,
+              "kvalifiserte": 484,
+              "tilbud": 56,
+              "pg_fv": 55.1,
+              "pg_ord": 55.0
+            },
+            "2023": {
+              "alleS": 576,
+              "fvS": 79,
+              "plasser": 40,
+              "kvinner": 67.1,
+              "kvalifiserte": 522,
+              "tilbud": 70,
+              "pg_fv": 53.0,
+              "pg_ord": 52.0
+            },
+            "2024": {
+              "alleS": 656,
+              "fvS": 79,
+              "plasser": 40,
+              "kvinner": 69.6,
+              "kvalifiserte": 591,
+              "tilbud": 72,
+              "pg_fv": 51.7,
+              "pg_ord": 51.7
+            },
+            "2025": {
+              "alleS": 563,
+              "fvS": 72,
+              "plasser": 40,
+              "kvinner": 69.4,
+              "kvalifiserte": 509,
+              "tilbud": 72,
+              "pg_fv": 49.0,
+              "pg_ord": 50.5
+            },
+            "2026": {
+              "alleS": 672,
+              "fvS": 74,
+              "plasser": 40,
+              "kvinner": 66.2,
+              "kvalifiserte": 596,
+              "tilbud": 72,
+              "pg_fv": 50.0,
+              "pg_ord": 49.0
+            }
+          }
+        },
+        {
+          "id": "uib_molekylarbiologi",
+          "shortName": "UiB Molekylærbiologi",
+          "institusjon": "Universitetet i Bergen",
+          "studiekode": "184865",
+          "studiested": "Bergen",
+          "type": "bachelor",
+          "url": "https://www.uib.no/studier/BAMN-MOL",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 48.0,
+              "pg_ord": 49.3
+            },
+            "2021": {
+              "alleS": 692,
+              "fvS": 93,
+              "plasser": 50,
+              "kvinner": 77.4,
+              "kvalifiserte": 634,
+              "tilbud": 88,
+              "pg_fv": 52.1,
+              "pg_ord": 50.9
+            },
+            "2022": {
+              "alleS": 506,
+              "fvS": 71,
+              "plasser": 55,
+              "kvinner": 73.2,
+              "kvalifiserte": 473,
+              "tilbud": 98,
+              "pg_fv": 48.5,
+              "pg_ord": 44.4
+            },
+            "2023": {
+              "alleS": 495,
+              "fvS": 74,
+              "plasser": 40,
+              "kvinner": 74.3,
+              "kvalifiserte": 443,
+              "tilbud": 74,
+              "pg_fv": 50.0,
+              "pg_ord": 48.5
+            },
+            "2024": {
+              "alleS": 520,
+              "fvS": 66,
+              "plasser": 40,
+              "kvinner": 77.3,
+              "kvalifiserte": 488,
+              "tilbud": 71,
+              "pg_fv": 47.9,
+              "pg_ord": 48.6
+            },
+            "2025": {
+              "alleS": 559,
+              "fvS": 63,
+              "plasser": 40,
+              "kvinner": 69.8,
+              "kvalifiserte": 501,
+              "tilbud": 79,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 584,
+              "fvS": 74,
+              "plasser": 40,
+              "kvinner": 73.0,
+              "kvalifiserte": 502,
+              "tilbud": 71,
+              "pg_fv": 46.5,
+              "pg_ord": 45.9
+            }
+          }
+        },
+        {
+          "id": "uit_bioteknologi",
+          "shortName": "UiT",
+          "institusjon": "UiT Norges arktiske universitet",
+          "studiekode": "186299",
+          "studiested": "Tromsø",
+          "type": "bachelor",
+          "url": "https://uit.no/utdanning/studieprogram/b-biotek",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 49.2,
+              "pg_ord": 51.7
+            },
+            "2021": {
+              "alleS": 320,
+              "fvS": 17,
+              "plasser": 15,
+              "kvinner": 70.6,
+              "kvalifiserte": 287,
+              "tilbud": 30,
+              "pg_fv": 48.3,
+              "pg_ord": 49.5
+            },
+            "2022": {
+              "alleS": 279,
+              "fvS": 18,
+              "plasser": 15,
+              "kvinner": 61.1,
+              "kvalifiserte": 254,
+              "tilbud": 35,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 267,
+              "fvS": 21,
+              "plasser": 15,
+              "kvinner": 33.3,
+              "kvalifiserte": 213,
+              "tilbud": 30,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 214,
+              "fvS": 8,
+              "plasser": 15,
+              "kvinner": 75.0,
+              "kvalifiserte": 179,
+              "tilbud": 15,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 185,
+              "fvS": 9,
+              "plasser": 10,
+              "kvinner": 33.3,
+              "kvalifiserte": 158,
+              "tilbud": 13,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 215,
+              "fvS": 15,
+              "plasser": 10,
+              "kvinner": 53.3,
+              "kvalifiserte": 170,
+              "tilbud": 25,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "ntnu_bioteknologi_alesund",
+          "shortName": "NTNU Ålesund",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "194427",
+          "studiested": "Ålesund",
+          "type": "bachelor",
+          "url": "https://www.ntnu.no/studier/427bt",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 49.5,
+              "pg_ord": 48.5
+            },
+            "2021": {
+              "alleS": 506,
+              "fvS": 34,
+              "plasser": 24,
+              "kvinner": 55.9,
+              "kvalifiserte": 451,
+              "tilbud": 46,
+              "pg_fv": 50.3,
+              "pg_ord": 50.4
+            },
+            "2022": {
+              "alleS": 332,
+              "fvS": 26,
+              "plasser": 20,
+              "kvinner": 53.8,
+              "kvalifiserte": 301,
+              "tilbud": 40,
+              "pg_fv": 48.2,
+              "pg_ord": 45.1
+            },
+            "2023": {
+              "alleS": 359,
+              "fvS": 26,
+              "plasser": 20,
+              "kvinner": 69.2,
+              "kvalifiserte": 301,
+              "tilbud": 40,
+              "pg_fv": 49.6,
+              "pg_ord": 46.0
+            },
+            "2024": {
+              "alleS": 324,
+              "fvS": 27,
+              "plasser": 20,
+              "kvinner": 59.3,
+              "kvalifiserte": 273,
+              "tilbud": 52,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 289,
+              "fvS": 20,
+              "plasser": 19,
+              "kvinner": 60.0,
+              "kvalifiserte": 234,
+              "tilbud": 31,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "ntnu_bioteknologi_5aar",
+          "shortName": "NTNU Trondheim",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "194855",
+          "studiested": "Trondheim",
+          "type": "master",
+          "url": "https://www.ntnu.no/studier/mbiot5",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 57.6,
+              "pg_ord": 60.7
+            },
+            "2021": {
+              "alleS": 1165,
+              "fvS": 172,
+              "plasser": 45,
+              "kvinner": 73.3,
+              "kvalifiserte": 1118,
+              "tilbud": 102,
+              "pg_fv": 58.2,
+              "pg_ord": 60.0
+            },
+            "2022": {
+              "alleS": 922,
+              "fvS": 148,
+              "plasser": 35,
+              "kvinner": 70.3,
+              "kvalifiserte": 903,
+              "tilbud": 74,
+              "pg_fv": 58.3,
+              "pg_ord": 61.2
+            },
+            "2023": {
+              "alleS": 961,
+              "fvS": 137,
+              "plasser": 35,
+              "kvinner": 86.9,
+              "kvalifiserte": 916,
+              "tilbud": 92,
+              "pg_fv": 57.7,
+              "pg_ord": 59.3
+            },
+            "2024": {
+              "alleS": 923,
+              "fvS": 150,
+              "plasser": 35,
+              "kvinner": 78.7,
+              "kvalifiserte": 881,
+              "tilbud": 78,
+              "pg_fv": 57.0,
+              "pg_ord": 60.5
+            },
+            "2025": {
+              "alleS": 824,
+              "fvS": 129,
+              "plasser": 35,
+              "kvinner": 73.6,
+              "kvalifiserte": 781,
+              "tilbud": 78,
+              "pg_fv": 56.2,
+              "pg_ord": 59.4
+            },
+            "2026": {
+              "alleS": 889,
+              "fvS": 139,
+              "plasser": 40,
+              "kvinner": 74.1,
+              "kvalifiserte": 829,
+              "tilbud": 78,
+              "pg_fv": 55.6,
+              "pg_ord": 57.8
+            }
+          }
+        },
+        {
+          "id": "uio_biovitenskap",
+          "shortName": "UiO Biovitenskap",
+          "institusjon": "Universitetet i Oslo",
+          "studiekode": "185327",
+          "studiested": "Oslo",
+          "type": "bachelor",
+          "url": "https://www.uio.no/studier/program/biovitenskap/",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 706,
+              "fvS": 148,
+              "plasser": 148,
+              "kvinner": 58.8,
+              "kvalifiserte": 420,
+              "tilbud": 143,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 1109,
+              "fvS": 243,
+              "plasser": 160,
+              "kvinner": 67.5,
+              "kvalifiserte": 931,
+              "tilbud": 245,
+              "pg_fv": 44.0,
+              "pg_ord": 44.4
+            },
+            "2023": {
+              "alleS": 1074,
+              "fvS": 185,
+              "plasser": 160,
+              "kvinner": 62.2,
+              "kvalifiserte": 892,
+              "tilbud": 250,
+              "pg_fv": 41.9,
+              "pg_ord": 39.6
+            },
+            "2024": {
+              "alleS": 1092,
+              "fvS": 224,
+              "plasser": 157,
+              "kvinner": 65.2,
+              "kvalifiserte": 885,
+              "tilbud": 260,
+              "pg_fv": 40.8,
+              "pg_ord": 42.6
+            },
+            "2025": {
+              "alleS": 958,
+              "fvS": 200,
+              "plasser": 156,
+              "kvinner": 68.5,
+              "kvalifiserte": 767,
+              "tilbud": 235,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 962,
+              "fvS": 186,
+              "plasser": 156,
+              "kvinner": 62.9,
+              "kvalifiserte": 745,
+              "tilbud": 206,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "oslomet_ing_bioteknologi_kjemi",
+          "shortName": "OsloMet",
+          "institusjon": "OsloMet - storbyuniversitetet",
+          "studiekode": "215009",
+          "studiested": "Oslo",
+          "type": "bachelor",
+          "url": "https://www.oslomet.no/studier/tkd/bioteknologi-kjemiingenior",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 583,
+              "fvS": 55,
+              "plasser": 40,
+              "kvinner": 63.6,
+              "kvalifiserte": 317,
+              "tilbud": 61,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 555,
+              "fvS": 60,
+              "plasser": 40,
+              "kvinner": 58.3,
+              "kvalifiserte": 311,
+              "tilbud": 47,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 540,
+              "fvS": 56,
+              "plasser": 35,
+              "kvinner": 76.8,
+              "kvalifiserte": 259,
+              "tilbud": 47,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 502,
+              "fvS": 49,
+              "plasser": 40,
+              "kvinner": 51.0,
+              "kvalifiserte": 254,
+              "tilbud": 48,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 524,
+              "fvS": 54,
+              "plasser": 47,
+              "kvinner": 63.0,
+              "kvalifiserte": 286,
+              "tilbud": 50,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 537,
+              "fvS": 54,
+              "plasser": 47,
+              "kvinner": 70.4,
+              "kvalifiserte": 262,
+              "tilbud": 35,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "kjemi",
+      "label": "Kjemi",
+      "level": "bachelor",
+      "desc": "Sammenligner NMBUs bachelor i kjemi med kjemi- og biokjemibachelorene ved de andre universitetene.",
+      "note": "Konkurrentene med default true er treårige realfagsbachelorer i kjemi eller biokjemi i Samordna opptak. UiTs kjemibachelor (kode 186860) hadde siste opptak i 2024 og er avløst av det femårige sivilingeniørprogrammet «Bærekraftig kjemi og innovasjon» (kode 186764) fra 2025; begge er med, sivilingeniørløpet som svakere sammenligning fordi nivå og opptakskrav er andre. UiT har tatt ned programsiden for den gamle kjemibacheloren, så begge UiT-radene lenker til etterfølgeren. Treårige kjemiingeniørutdanninger (HVL 203009, NTNU 194009 og 194688, UiS 217009, USN 222688) har eget ingeniøropptak og er ikke tatt med, og NTNUs «Biologi og kjemi, realfag» (kode 194184) er et årsstudium.",
+      "nmbuIds": [
+        "nmbu_kjemi"
+      ],
+      "defaultIds": [
+        "nmbu_kjemi",
+        "uio_kjemi_biokjemi",
+        "uib_kjemi",
+        "ntnu_kjemi",
+        "uis_biologisk_kjemi",
+        "uit_kjemi"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_kjemi",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "192332",
+          "studiested": "Ås",
+          "type": "bachelor",
+          "url": "https://www.nmbu.no/studier/bachelor/kjemi",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 46.5,
+              "pg_ord": 49.3
+            },
+            "2021": {
+              "alleS": 238,
+              "fvS": 21,
+              "plasser": 20,
+              "kvinner": 57.1,
+              "kvalifiserte": 211,
+              "tilbud": 26,
+              "pg_fv": 49.5,
+              "pg_ord": 52.6
+            },
+            "2022": {
+              "alleS": 230,
+              "fvS": 28,
+              "plasser": 20,
+              "kvinner": 60.7,
+              "kvalifiserte": 212,
+              "tilbud": 28,
+              "pg_fv": 39.5,
+              "pg_ord": 50.5
+            },
+            "2023": {
+              "alleS": 212,
+              "fvS": 20,
+              "plasser": 20,
+              "kvinner": 65.0,
+              "kvalifiserte": 192,
+              "tilbud": 34,
+              "pg_fv": 46.1,
+              "pg_ord": 41.5
+            },
+            "2024": {
+              "alleS": 210,
+              "fvS": 22,
+              "plasser": 20,
+              "kvinner": 36.4,
+              "kvalifiserte": 179,
+              "tilbud": 30,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 173,
+              "fvS": 21,
+              "plasser": 20,
+              "kvinner": 71.4,
+              "kvalifiserte": 153,
+              "tilbud": 30,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 178,
+              "fvS": 16,
+              "plasser": 20,
+              "kvinner": 75.0,
+              "kvalifiserte": 154,
+              "tilbud": 21,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "uio_kjemi_biokjemi",
+          "shortName": "UiO",
+          "institusjon": "Universitetet i Oslo",
+          "studiekode": "185860",
+          "studiested": "Oslo",
+          "type": "bachelor",
+          "url": "https://www.uio.no/studier/program/kjemi-biokjemi/",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 45.9,
+              "pg_ord": 44.2
+            },
+            "2021": {
+              "alleS": 473,
+              "fvS": 46,
+              "plasser": 44,
+              "kvinner": 69.6,
+              "kvalifiserte": 314,
+              "tilbud": 61,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 453,
+              "fvS": 49,
+              "plasser": 40,
+              "kvinner": 65.3,
+              "kvalifiserte": 316,
+              "tilbud": 63,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 429,
+              "fvS": 52,
+              "plasser": 40,
+              "kvinner": 55.8,
+              "kvalifiserte": 286,
+              "tilbud": 50,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 417,
+              "fvS": 54,
+              "plasser": 40,
+              "kvinner": 61.1,
+              "kvalifiserte": 279,
+              "tilbud": 50,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 428,
+              "fvS": 56,
+              "plasser": 40,
+              "kvinner": 48.2,
+              "kvalifiserte": 294,
+              "tilbud": 53,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 414,
+              "fvS": 53,
+              "plasser": 40,
+              "kvinner": 47.2,
+              "kvalifiserte": 291,
+              "tilbud": 54,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "uib_kjemi",
+          "shortName": "UiB",
+          "institusjon": "Universitetet i Bergen",
+          "studiekode": "184860",
+          "studiested": "Bergen",
+          "type": "bachelor",
+          "url": "https://www.uib.no/studier/BAMN-KJEM",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 320,
+              "fvS": 23,
+              "plasser": 35,
+              "kvinner": 47.8,
+              "kvalifiserte": 277,
+              "tilbud": 60,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 350,
+              "fvS": 45,
+              "plasser": 35,
+              "kvinner": 48.9,
+              "kvalifiserte": 319,
+              "tilbud": 60,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 293,
+              "fvS": 29,
+              "plasser": 35,
+              "kvinner": 34.5,
+              "kvalifiserte": 263,
+              "tilbud": 48,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 322,
+              "fvS": 33,
+              "plasser": 35,
+              "kvinner": 51.5,
+              "kvalifiserte": 287,
+              "tilbud": 49,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 305,
+              "fvS": 43,
+              "plasser": 35,
+              "kvinner": 44.2,
+              "kvalifiserte": 269,
+              "tilbud": 46,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 277,
+              "fvS": 23,
+              "plasser": 35,
+              "kvinner": 43.5,
+              "kvalifiserte": 239,
+              "tilbud": 33,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "ntnu_kjemi",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "194860",
+          "studiested": "Trondheim",
+          "type": "bachelor",
+          "url": "https://www.ntnu.no/studier/bkj",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 48.5,
+              "pg_ord": 45.1
+            },
+            "2021": {
+              "alleS": 411,
+              "fvS": 31,
+              "plasser": 40,
+              "kvinner": 54.8,
+              "kvalifiserte": 331,
+              "tilbud": 58,
+              "pg_fv": 47.7,
+              "pg_ord": 47.0
+            },
+            "2022": {
+              "alleS": 431,
+              "fvS": 52,
+              "plasser": 40,
+              "kvinner": 53.8,
+              "kvalifiserte": 353,
+              "tilbud": 68,
+              "pg_fv": 48.7,
+              "pg_ord": 48.0
+            },
+            "2023": {
+              "alleS": 336,
+              "fvS": 37,
+              "plasser": 40,
+              "kvinner": 37.8,
+              "kvalifiserte": 263,
+              "tilbud": 50,
+              "pg_fv": 47.2,
+              "pg_ord": 46.4
+            },
+            "2024": {
+              "alleS": 369,
+              "fvS": 42,
+              "plasser": 35,
+              "kvinner": 50.0,
+              "kvalifiserte": 290,
+              "tilbud": 54,
+              "pg_fv": 50.2,
+              "pg_ord": 47.9
+            },
+            "2025": {
+              "alleS": 375,
+              "fvS": 43,
+              "plasser": 35,
+              "kvinner": 44.2,
+              "kvalifiserte": 310,
+              "tilbud": 48,
+              "pg_fv": 48.2,
+              "pg_ord": 47.5
+            },
+            "2026": {
+              "alleS": 381,
+              "fvS": 33,
+              "plasser": 35,
+              "kvinner": 45.5,
+              "kvalifiserte": 313,
+              "tilbud": 39,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "uis_biologisk_kjemi",
+          "shortName": "UiS",
+          "institusjon": "Universitetet i Stavanger",
+          "studiekode": "217860",
+          "studiested": "Stavanger",
+          "type": "bachelor",
+          "url": "https://www.uis.no/nb/studier/biologisk-kjemi-bachelor",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 44.0,
+              "pg_ord": 45.8
+            },
+            "2021": {
+              "alleS": 409,
+              "fvS": 62,
+              "plasser": 30,
+              "kvinner": 64.5,
+              "kvalifiserte": 320,
+              "tilbud": 60,
+              "pg_fv": 41.9,
+              "pg_ord": 48.4
+            },
+            "2022": {
+              "alleS": 346,
+              "fvS": 59,
+              "plasser": 30,
+              "kvinner": 66.1,
+              "kvalifiserte": 295,
+              "tilbud": 60,
+              "pg_fv": 39.8,
+              "pg_ord": 47.5
+            },
+            "2023": {
+              "alleS": 298,
+              "fvS": 40,
+              "plasser": 30,
+              "kvinner": 67.5,
+              "kvalifiserte": 242,
+              "tilbud": 55,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 315,
+              "fvS": 51,
+              "plasser": 30,
+              "kvinner": 64.7,
+              "kvalifiserte": 247,
+              "tilbud": 57,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 301,
+              "fvS": 42,
+              "plasser": 30,
+              "kvinner": 54.8,
+              "kvalifiserte": 226,
+              "tilbud": 38,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 299,
+              "fvS": 40,
+              "plasser": 30,
+              "kvinner": 72.5,
+              "kvalifiserte": 242,
+              "tilbud": 53,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "uit_kjemi",
+          "shortName": "UiT Kjemi",
+          "institusjon": "UiT Norges arktiske universitet",
+          "studiekode": "186860",
+          "studiested": "Tromsø",
+          "type": "bachelor",
+          "url": "https://uit.no/utdanning/program/868642/baerekraftig_kjemi_og_innovasjon_sivilingenior_-",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 71,
+              "fvS": 5,
+              "plasser": 18,
+              "kvinner": 40.0,
+              "kvalifiserte": 46,
+              "tilbud": 3,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 72,
+              "fvS": 6,
+              "plasser": 18,
+              "kvinner": 66.7,
+              "kvalifiserte": 61,
+              "tilbud": 6,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 58,
+              "fvS": 3,
+              "plasser": 18,
+              "kvinner": 100.0,
+              "kvalifiserte": 40,
+              "tilbud": 2,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 98,
+              "fvS": 9,
+              "plasser": 18,
+              "kvinner": 44.4,
+              "kvalifiserte": 80,
+              "tilbud": 8,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "uit_baerekraftig_kjemi",
+          "shortName": "UiT Bærekraftig kjemi",
+          "institusjon": "UiT Norges arktiske universitet",
+          "studiekode": "186764",
+          "studiested": "Tromsø",
+          "type": "master",
+          "url": "https://uit.no/utdanning/program/868642/baerekraftig_kjemi_og_innovasjon_sivilingenior_-",
+          "years": {
+            "2025": {
+              "alleS": 88,
+              "fvS": 3,
+              "plasser": 15,
+              "kvinner": 66.7,
+              "kvalifiserte": 73,
+              "tilbud": 7,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 75,
+              "fvS": 7,
+              "plasser": 10,
+              "kvinner": 71.4,
+              "kvalifiserte": 57,
+              "tilbud": 5,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "matvitenskap",
+      "label": "Matvitenskap og ernæring",
+      "level": "bachelor",
+      "desc": "Sammenligner NMBUs tidligere bachelor i matvitenskap og ernæring med ernæringsutdanningene ved de andre universitetene.",
+      "note": "NMBUs «Matvitenskap og ernæring» (kode 192948) hadde siste opptak i 2024 og er avløst av «Mat, teknologi og helse» (kode 192203), som ligger i gruppen matteknologi; den gamle programsiden er tatt ned, og lenken går til etterfølgeren. Konkurrentene er ernæringsbachelorer i Samordna opptak. UiOs «Klinisk ernæring» er et femårig profesjonsstudium som gir autorisasjon som klinisk ernæringsfysiolog og har et helt annet opptaksgrunnlag; det er tatt med som svakere sammenligning fordi det trekker mange av de samme søkerne. Universitetet i Innlandets «Mat, ernæring og helse» (kode 209446) hadde siste opptak i 2023 og har ingen programside igjen, og er derfor ikke med. UiAs og USNs ernæringsprogrammer er idretts- og samfunnsrettede og er heller ikke med.",
+      "nmbuIds": [
+        "nmbu_matvitenskap_ernaring"
+      ],
+      "defaultIds": [
+        "nmbu_matvitenskap_ernaring",
+        "uib_ernaring",
+        "uit_ernaring"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_matvitenskap_ernaring",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "192948",
+          "studiested": "Ås",
+          "type": "bachelor",
+          "url": "https://www.nmbu.no/studier/bachelor/mat-teknologi-og-helse",
+          "years": {
+            "2021": {
+              "alleS": 378,
+              "fvS": 47,
+              "plasser": 20,
+              "kvinner": 74.5,
+              "kvalifiserte": 309,
+              "tilbud": 28,
+              "pg_fv": 48.6,
+              "pg_ord": 55.3
+            },
+            "2022": {
+              "alleS": 262,
+              "fvS": 30,
+              "plasser": 20,
+              "kvinner": 86.7,
+              "kvalifiserte": 221,
+              "tilbud": 32,
+              "pg_fv": 0.0,
+              "pg_ord": 54.1
+            },
+            "2023": {
+              "alleS": 211,
+              "fvS": 28,
+              "plasser": 20,
+              "kvinner": 82.1,
+              "kvalifiserte": 169,
+              "tilbud": 40,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 188,
+              "fvS": 15,
+              "plasser": 20,
+              "kvinner": 80.0,
+              "kvalifiserte": 147,
+              "tilbud": 25,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "uib_ernaring",
+          "shortName": "UiB",
+          "institusjon": "Universitetet i Bergen",
+          "studiekode": "184708",
+          "studiested": "Bergen",
+          "type": "bachelor",
+          "url": "https://www4.uib.no/studier/program/ernaering-bachelor",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 44.3,
+              "pg_ord": 53.8
+            },
+            "2021": {
+              "alleS": 458,
+              "fvS": 61,
+              "plasser": 34,
+              "kvinner": 85.2,
+              "kvalifiserte": 210,
+              "tilbud": 70,
+              "pg_fv": 0.0,
+              "pg_ord": 48.6
+            },
+            "2022": {
+              "alleS": 444,
+              "fvS": 49,
+              "plasser": 34,
+              "kvinner": 93.9,
+              "kvalifiserte": 176,
+              "tilbud": 60,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 565,
+              "fvS": 62,
+              "plasser": 34,
+              "kvinner": 80.6,
+              "kvalifiserte": 184,
+              "tilbud": 48,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 661,
+              "fvS": 58,
+              "plasser": 34,
+              "kvinner": 81.0,
+              "kvalifiserte": 175,
+              "tilbud": 42,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 570,
+              "fvS": 59,
+              "plasser": 34,
+              "kvinner": 78.0,
+              "kvalifiserte": 141,
+              "tilbud": 40,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 582,
+              "fvS": 51,
+              "plasser": 34,
+              "kvinner": 84.3,
+              "kvalifiserte": 159,
+              "tilbud": 36,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "uit_ernaring",
+          "shortName": "UiT",
+          "institusjon": "UiT Norges arktiske universitet",
+          "studiekode": "186708",
+          "studiested": "Tromsø",
+          "type": "bachelor",
+          "url": "https://uit.no/utdanning/studieprogram/b-ern",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 266,
+              "fvS": 27,
+              "plasser": 15,
+              "kvinner": 88.9,
+              "kvalifiserte": 98,
+              "tilbud": 19,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 262,
+              "fvS": 14,
+              "plasser": 15,
+              "kvinner": 85.7,
+              "kvalifiserte": 79,
+              "tilbud": 16,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 180,
+              "fvS": 15,
+              "plasser": 15,
+              "kvinner": 86.7,
+              "kvalifiserte": 60,
+              "tilbud": 12,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 173,
+              "fvS": 14,
+              "plasser": 15,
+              "kvinner": 78.6,
+              "kvalifiserte": 60,
+              "tilbud": 6,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 179,
+              "fvS": 9,
+              "plasser": 15,
+              "kvinner": 66.7,
+              "kvalifiserte": 50,
+              "tilbud": 6,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 145,
+              "fvS": 6,
+              "plasser": 8,
+              "kvinner": 66.7,
+              "kvalifiserte": 45,
+              "tilbud": 4,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "uio_klinisk_ernaring",
+          "shortName": "UiO Klinisk ernæring",
+          "institusjon": "Universitetet i Oslo",
+          "studiekode": "185713",
+          "studiested": "Oslo",
+          "type": "master",
+          "url": "https://www.uio.no/studier/program/ernering-5aar/",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 50.8,
+              "pg_ord": 59.6
+            },
+            "2021": {
+              "alleS": 828,
+              "fvS": 110,
+              "plasser": 35,
+              "kvinner": 86.4,
+              "kvalifiserte": 573,
+              "tilbud": 100,
+              "pg_fv": 53.4,
+              "pg_ord": 61.1
+            },
+            "2022": {
+              "alleS": 740,
+              "fvS": 105,
+              "plasser": 35,
+              "kvinner": 87.6,
+              "kvalifiserte": 515,
+              "tilbud": 100,
+              "pg_fv": 54.0,
+              "pg_ord": 60.0
+            },
+            "2023": {
+              "alleS": 692,
+              "fvS": 101,
+              "plasser": 35,
+              "kvinner": 87.1,
+              "kvalifiserte": 432,
+              "tilbud": 80,
+              "pg_fv": 51.4,
+              "pg_ord": 59.6
+            },
+            "2024": {
+              "alleS": 642,
+              "fvS": 90,
+              "plasser": 48,
+              "kvinner": 81.1,
+              "kvalifiserte": 351,
+              "tilbud": 92,
+              "pg_fv": 0.0,
+              "pg_ord": 56.4
+            },
+            "2025": {
+              "alleS": 638,
+              "fvS": 91,
+              "plasser": 48,
+              "kvinner": 80.2,
+              "kvalifiserte": 318,
+              "tilbud": 100,
+              "pg_fv": 0.0,
+              "pg_ord": 51.8
+            },
+            "2026": {
+              "alleS": 607,
+              "fvS": 104,
+              "plasser": 50,
+              "kvinner": 90.4,
+              "kvalifiserte": 323,
+              "tilbud": 112,
+              "pg_fv": 0.0,
+              "pg_ord": 56.2
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "matteknologi",
+      "label": "Mat, teknologi og helse",
+      "level": "bachelor",
+      "desc": "Sammenligner NMBUs bachelor i mat, teknologi og helse med de andre matvitenskaps- og matteknologiutdanningene.",
+      "note": "NMBUs program hadde første opptak i 2025 og erstattet «Matvitenskap og ernæring» (kode 192948), som ligger i gruppen matvitenskap; forgjengeren er tatt med her med default false slik at tidsserien kan følges. NTNUs «Matvitenskap, teknologi og bærekraft» er den eneste direkte konkurrenten på bachelornivå. UiTs «Fiskeri- og havbruksvitenskap» ligger i samme næringskjede, men har tyngdepunkt i havbruk og er en svakere sammenligning. Nord universitets «Sirkulær bioøkonomi» (kode 204738) hadde bare opptak i 2022 og 2023, og programsiden lot seg ikke verifisere, så den er ikke med.",
+      "nmbuIds": [
+        "nmbu_mat_teknologi_helse",
+        "nmbu_matvitenskap_ernaring_hist"
+      ],
+      "defaultIds": [
+        "nmbu_mat_teknologi_helse",
+        "ntnu_matvitenskap"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_mat_teknologi_helse",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "192203",
+          "studiested": "Ås",
+          "type": "bachelor",
+          "url": "https://www.nmbu.no/studier/bachelor/mat-teknologi-og-helse",
+          "years": {
+            "2025": {
+              "alleS": 213,
+              "fvS": 26,
+              "plasser": 20,
+              "kvinner": 80.8,
+              "kvalifiserte": 162,
+              "tilbud": 23,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 160,
+              "fvS": 25,
+              "plasser": 20,
+              "kvinner": 76.0,
+              "kvalifiserte": 131,
+              "tilbud": 26,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "ntnu_matvitenskap",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "194346",
+          "studiested": "Trondheim",
+          "type": "bachelor",
+          "url": "https://www.ntnu.no/studier/mtmat",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 477,
+              "fvS": 83,
+              "plasser": 45,
+              "kvinner": 59.0,
+              "kvalifiserte": 387,
+              "tilbud": 80,
+              "pg_fv": 46.5,
+              "pg_ord": 47.8
+            },
+            "2022": {
+              "alleS": 419,
+              "fvS": 72,
+              "plasser": 45,
+              "kvinner": 65.3,
+              "kvalifiserte": 339,
+              "tilbud": 78,
+              "pg_fv": 45.0,
+              "pg_ord": 47.6
+            },
+            "2023": {
+              "alleS": 307,
+              "fvS": 54,
+              "plasser": 45,
+              "kvinner": 81.5,
+              "kvalifiserte": 251,
+              "tilbud": 50,
+              "pg_fv": 43.0,
+              "pg_ord": 48.5
+            },
+            "2024": {
+              "alleS": 349,
+              "fvS": 48,
+              "plasser": 38,
+              "kvinner": 81.2,
+              "kvalifiserte": 289,
+              "tilbud": 62,
+              "pg_fv": 48.5,
+              "pg_ord": 49.4
+            },
+            "2025": {
+              "alleS": 355,
+              "fvS": 44,
+              "plasser": 38,
+              "kvinner": 65.9,
+              "kvalifiserte": 289,
+              "tilbud": 50,
+              "pg_fv": 44.8,
+              "pg_ord": 45.6
+            },
+            "2026": {
+              "alleS": 251,
+              "fvS": 29,
+              "plasser": 30,
+              "kvinner": 65.5,
+              "kvalifiserte": 200,
+              "tilbud": 34,
+              "pg_fv": 39.6,
+              "pg_ord": 45.8
+            }
+          }
+        },
+        {
+          "id": "nmbu_matvitenskap_ernaring_hist",
+          "shortName": "NMBU Matvitenskap og ernæring",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "192948",
+          "studiested": "Ås",
+          "type": "bachelor",
+          "url": "https://www.nmbu.no/studier/bachelor/mat-teknologi-og-helse",
+          "years": {
+            "2021": {
+              "alleS": 378,
+              "fvS": 47,
+              "plasser": 20,
+              "kvinner": 74.5,
+              "kvalifiserte": 309,
+              "tilbud": 28,
+              "pg_fv": 48.6,
+              "pg_ord": 55.3
+            },
+            "2022": {
+              "alleS": 262,
+              "fvS": 30,
+              "plasser": 20,
+              "kvinner": 86.7,
+              "kvalifiserte": 221,
+              "tilbud": 32,
+              "pg_fv": 0.0,
+              "pg_ord": 54.1
+            },
+            "2023": {
+              "alleS": 211,
+              "fvS": 28,
+              "plasser": 20,
+              "kvinner": 82.1,
+              "kvalifiserte": 169,
+              "tilbud": 40,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 188,
+              "fvS": 15,
+              "plasser": 20,
+              "kvinner": 80.0,
+              "kvalifiserte": 147,
+              "tilbud": 25,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "uit_fiskeri_havbruk",
+          "shortName": "UiT",
+          "institusjon": "UiT Norges arktiske universitet",
+          "studiekode": "186331",
+          "studiested": "Tromsø",
+          "type": "bachelor",
+          "url": "https://uit.no/utdanning/program/268899/fiskeri-_og_havbruksvitenskap_-_bachelor",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 45.3,
+              "pg_ord": 50.0
+            },
+            "2021": {
+              "alleS": 1067,
+              "fvS": 190,
+              "plasser": 45,
+              "kvinner": 41.6,
+              "kvalifiserte": 1032,
+              "tilbud": 115,
+              "pg_fv": 45.5,
+              "pg_ord": 50.0
+            },
+            "2022": {
+              "alleS": 909,
+              "fvS": 164,
+              "plasser": 65,
+              "kvinner": 44.5,
+              "kvalifiserte": 870,
+              "tilbud": 110,
+              "pg_fv": 45.6,
+              "pg_ord": 49.8
+            },
+            "2023": {
+              "alleS": 902,
+              "fvS": 135,
+              "plasser": 60,
+              "kvinner": 50.4,
+              "kvalifiserte": 863,
+              "tilbud": 140,
+              "pg_fv": 42.0,
+              "pg_ord": 48.0
+            },
+            "2024": {
+              "alleS": 860,
+              "fvS": 142,
+              "plasser": 60,
+              "kvinner": 57.0,
+              "kvalifiserte": 813,
+              "tilbud": 150,
+              "pg_fv": 41.8,
+              "pg_ord": 44.6
+            },
+            "2025": {
+              "alleS": 812,
+              "fvS": 142,
+              "plasser": 60,
+              "kvinner": 50.0,
+              "kvalifiserte": 759,
+              "tilbud": 160,
+              "pg_fv": 37.5,
+              "pg_ord": 43.3
+            },
+            "2026": {
+              "alleS": 864,
+              "fvS": 125,
+              "plasser": 60,
+              "kvinner": 47.2,
+              "kvalifiserte": 810,
+              "tilbud": 160,
+              "pg_fv": 38.7,
+              "pg_ord": 42.9
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "bioteknologi2",
+      "label": "Bioteknologi (2-årig master)",
+      "level": "master2",
+      "desc": "Sammenligner de toårige masterne i bioteknologi og molekylærbiologi med lokalt opptak.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. DBH/HKDIR tabell 379 (lokalt opptak per studieprogram) svarte med serverfeil 22.09.2026, så søker-, kvalifiserte- og tilbudstallene mangler for alle programmene i gruppen. Studieplasser og poenggrenser er de som sto på institusjonenes egne programsider da dataene ble hentet, og gjelder siste opptak; de er ført inn på det året sidene oppgir. NMBU oppgir 45 studieplasser og poenggrense 3,0 i 2025 på programsiden. UiB oppgir 20 studieplasser på masteren i molekylærbiologi. NTNUs toårige bioteknologimaster (MSBIOTECH) er engelskspråklig, og NTNU opplyser at siste opptak var høsten 2026; programmet er tatt med som svakere sammenligning fordi det avvikles. NTNUs øvrige bioteknologiløp i Trondheim er femårige og hører hjemme i bachelorgruppen.",
+      "nmbuIds": [
+        "nmbu_bioteknologi2"
+      ],
+      "defaultIds": [
+        "nmbu_bioteknologi2",
+        "uib_molekylarbiologi2"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_bioteknologi2",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "",
+          "studiested": "Ås",
+          "type": "master2",
+          "url": "https://www.nmbu.no/studier/master-2-aar/bioteknologi",
+          "years": {
+            "2025": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": 3.0
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": 45,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            }
+          }
+        },
+        {
+          "id": "uib_molekylarbiologi2",
+          "shortName": "UiB Molekylærbiologi",
+          "institusjon": "Universitetet i Bergen",
+          "studiekode": "",
+          "studiested": "Bergen",
+          "type": "master2",
+          "url": "https://www.uib.no/studier/MAMN-MOL",
+          "years": {
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": 20,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            }
+          }
+        },
+        {
+          "id": "ntnu_msbiotech",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "",
+          "studiested": "Trondheim",
+          "type": "master2",
+          "url": "https://www.ntnu.no/studier/msbiotech",
+          "years": {}
+        }
+      ]
+    },
+    {
+      "id": "kjemi2",
+      "label": "Kjemi (2-årig master)",
+      "level": "master2",
+      "desc": "Sammenligner de toårige masterne i kjemi med lokalt opptak.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. DBH/HKDIR tabell 379 (lokalt opptak per studieprogram) svarte med serverfeil 22.09.2026, så søker-, kvalifiserte- og tilbudstallene mangler for alle programmene i gruppen. Studieplasser og poenggrenser er de som sto på institusjonenes egne programsider da dataene ble hentet, og gjelder siste opptak; de er ført inn på det året sidene oppgir. NMBU oppgir 15 studieplasser og poenggrense 2,6 i 2025 på programsiden, og UiB oppgir 23 studieplasser. UiO publiserer ikke studieplasstall på programsiden. NTNUs toårige kjemimaster (MSCHEM) er engelskspråklig, og NTNU opplyser at siste opptak var høsten 2025; den er derfor tatt med som svakere sammenligning.",
+      "nmbuIds": [
+        "nmbu_kjemi2"
+      ],
+      "defaultIds": [
+        "nmbu_kjemi2",
+        "uio_kjemi2",
+        "uib_kjemi2"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_kjemi2",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "",
+          "studiested": "Ås",
+          "type": "master2",
+          "url": "https://www.nmbu.no/studier/master-2-aar/kjemi",
+          "years": {
+            "2025": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": 2.6
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": 15,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            }
+          }
+        },
+        {
+          "id": "uio_kjemi2",
+          "shortName": "UiO",
+          "institusjon": "Universitetet i Oslo",
+          "studiekode": "",
+          "studiested": "Oslo",
+          "type": "master2",
+          "url": "https://www.uio.no/studier/program/kjemi-master/",
+          "years": {}
+        },
+        {
+          "id": "uib_kjemi2",
+          "shortName": "UiB",
+          "institusjon": "Universitetet i Bergen",
+          "studiekode": "",
+          "studiested": "Bergen",
+          "type": "master2",
+          "url": "https://www.uib.no/studier/MAMN-KJEM",
+          "years": {
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": 23,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            }
+          }
+        },
+        {
+          "id": "ntnu_mschem",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "",
+          "studiested": "Trondheim",
+          "type": "master2",
+          "url": "https://www.ntnu.no/studier/mschem",
+          "years": {}
+        }
+      ]
+    },
+    {
+      "id": "matteknologi2",
+      "label": "Mat, teknologi og helse (2-årig master)",
+      "level": "master2",
+      "desc": "Sammenligner de toårige masterne i matvitenskap og matteknologi med lokalt opptak.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. DBH/HKDIR tabell 379 (lokalt opptak per studieprogram) svarte med serverfeil 22.09.2026, så søker-, kvalifiserte- og tilbudstallene mangler for alle programmene i gruppen. Studieplasser og poenggrenser er de som sto på institusjonenes egne programsider da dataene ble hentet, og gjelder siste opptak; de er ført inn på det året sidene oppgir. NMBU oppgir 20 studieplasser på programsiden og publiserer ingen poenggrense. NTNUs «Matvitenskap, teknologi og bærekraft» er den eneste direkte konkurrenten; NTNU opplyser at siste opptak var høsten 2026. NMBUs toårige master i bioinformatikk og anvendt statistikk har ingen egen gruppe fordi bioinformatikk ved UiO og UiB bare tilbys som studieretning inne i informatikk- og Computational Science-masterne, uten eget opptak å sammenligne mot.",
+      "nmbuIds": [
+        "nmbu_mat_teknologi_helse2"
+      ],
+      "defaultIds": [
+        "nmbu_mat_teknologi_helse2",
+        "ntnu_ftmamat"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_mat_teknologi_helse2",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "",
+          "studiested": "Ås",
+          "type": "master2",
+          "url": "https://www.nmbu.no/studier/master-2-aar/mat-teknologi-og-helse",
+          "years": {
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": 20,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            }
+          }
+        },
+        {
+          "id": "ntnu_ftmamat",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "",
+          "studiested": "Trondheim",
+          "type": "master2",
+          "url": "https://www.ntnu.no/studier/ftmamat",
+          "years": {}
+        }
+      ]
+    }
+  ]
+}

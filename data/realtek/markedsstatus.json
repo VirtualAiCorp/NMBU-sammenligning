@@ -142,13 +142,39 @@
       "id": "hvl",
       "name": "HVL",
       "fullName": "Høgskulen på Vestlandet",
-      "enhet": "Fakultet for ingeniør- og naturvitskap (FIN)",
-      "styresider": ["https://opengov.360online.com/Meetings/hvl-uninett"],
-      "status": "none",
-      "dokumenter": [],
-      "punkter": [],
-      "oppsummering": "",
-      "relevanteProgram": []
+      "enhet": "Fakultet for teknologi, miljø- og samfunnsvitskap (FTMS) — Fakultet for ingeniør- og naturvitskap (FIN) fusjonerte inn i FTMS frå 1.1.2025",
+      "styresider": ["https://opengov.360online.com/Meetings/hvl-uninett/Boards/Details/302309"],
+      "status": "complete",
+      "dokumenter": [
+        {
+          "label": "FTMS Fakultetsråd – innkalling 12.02.2026 (Ingeniørløftet, økonomistatus, ph.d.-tilbod)",
+          "url": "https://opengov.360online.com/Meetings/hvl-uninett/File/Details/1275263.PDF",
+          "filnavn": "HVL_FTMS_Innkalling_12.02.2026.pdf",
+          "dato": "2026-02-12",
+          "storrelseMB": 0.92,
+          "lastetNed": true
+        },
+        {
+          "label": "FTMS Fakultetsråd – innkalling 21.05.2026 (arealprosessar Haugesund/Bergen, søkartal 2026, KI-emne, NOKUT-besøk)",
+          "url": "https://opengov.360online.com/Meetings/hvl-uninett/File/Details/1303215.pdf",
+          "filnavn": "HVL_FTMS_Innkalling_21.05.2026.pdf",
+          "dato": "2026-05-21",
+          "storrelseMB": 1.07,
+          "lastetNed": true
+        }
+      ],
+      "punkter": [
+        "Fakultet for ingeniør- og naturvitskap (FIN), som tidligere eide bygg- og landmålingsutdanningene, fusjonerte 1. januar med Fakultet for økonomi og samfunnsvitskap til Fakultet for teknologi, miljø- og samfunnsvitskap (FTMS). Ingeniørutdanningene forvaltes dermed nå av samme fakultet som handelshøgskolen.",
+        "I søkartalet for 2026 vokser Samordna opptak nasjonalt med 6,2 prosent, mens HVL totalt har en liten nedgang på 0,5 prosent. Landmåling og eiendomsdesign i Bergen er likevel HVLs 6. mest søkte studieprogram: 1 168 søkere til 80 plasser i 2026, opp fra 933 søkere til 65 plasser i 2025, med en økning i førstevalgssøkere fra 191 til 227 (+18,9 prosent).",
+        "Ingeniør, bygg i Bergen holder seg stabilt med 100 planlagte studieplasser (uendret) og 867 søkere i 2026 (opp fra 777), men antall førstevalgssøkere er tilnærmet uendret: 150 mot 151 i 2025 (-0,7 prosent). Den «forventet kvalifisert førstevalg per studieplass»-indikatoren er 1,00.",
+        "Ingeniør, data i Bergen faller derimot: planlagte plasser kuttes fra 100 til 95, søkere faller fra 519 til 418, og førstevalgssøkere faller 16,8 prosent fra 107 til 89. Informasjonsteknologi faller også ved campusene i Førde og Haugesund, mens fagområdet økonomi og administrasjon har størst vekst i fakultetet.",
+        "Et industrisamarbeid kalt «Ingeniørløftet i Haugesund» er etablert med Deep Ocean, SEAM og Næringsforeningen for å motvirke synkende søkertall til ingeniør- og teknologiutdanninger. I Haugalandsregionen valgte 67,2 prosent av videregåendeelevene yrkesfag våren 2025, og fakultetet innfører Y-vei innen kjemi, elektro og maskin fra neste studieår for å fange opp denne gruppen.",
+        "Nye opptaksveier (Y-vei og tresemesterordning) for elektroteknologi og kjemiingeniør i Bergen har gode søkertall i det lokale opptaket 2026, ifølge fakultetsrådssaken om søkartal.",
+        "Et nybygg i Haugesund skal være klart til studiestart 2026 og samlokaliserer alle fagmiljø på campus. Et tilsvarende byggeprosjekt på Kronstad i Bergen utredes sammen med Vestland fylkeskommune og Fagskulen Vestland, og omtales som et løft for hele HVL og en styrke i konkurransen om studenter.",
+        "Fakultetet setter ned en arbeidsgruppe for å utrede utvidelse av ph.d.-tilbudet ved FTMS, koblet til HVLs pågående overgang til universitetsstatus og rektors oppdragsbrev for 2026."
+      ],
+      "oppsummering": "HVLs ingeniørutdanninger inngår siden 1.1. i det nye Fakultet for teknologi, miljø- og samfunnsvitskap (FTMS), sammen med handelshøgskolen. Søkertallene er delte: landmåling og eiendomsdesign i Bergen vokser kraftig og er blant HVLs mest populære studier, mens ingeniør, data faller markert og informasjonsteknologi svikter flere steder. Fakultetet svarer med et industrisamarbeid i Haugesund («Ingeniørløftet»), nye Y-vei-opptak i kjemi, elektro og maskin, nybygg i Haugesund og Bergen, og en gjennomgang av ph.d.-tilbudet i forbindelse med universitetsstatus.",
+      "relevanteProgram": ["hvl_ing_bygg", "hvl_landmaling", "hvl_landmaling_geoinf"]
     },
     {
       "id": "usn",

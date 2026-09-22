@@ -1,0 +1,358 @@
+{
+ "hentet": "2026-09-22",
+ "institusjoner": {
+  "1173": "Norges miljø- og biovitenskapelige universitet",
+  "1150": "Norges teknisk-naturvitenskapelige universitet",
+  "1110": "Universitetet i Oslo",
+  "1120": "Universitetet i Bergen",
+  "1130": "UiT Norges arktiske universitet",
+  "1171": "Universitetet i Agder",
+  "1174": "Nord universitet",
+  "1177": "Høgskolen i Innlandet",
+  "0264": "Høgskolen i Innlandet (før 2025)"
+ },
+ "programs": [
+  {
+   "entryId": "nmbu_biologi",
+   "institusjonskode": "1173",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Biologi (bachelor)",
+   "nivaakode": "B3",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "uio_biovitenskap",
+   "institusjonskode": "1110",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Biovitenskap (bachelor)",
+   "nivaakode": "B3",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "uib_biologi",
+   "institusjonskode": "1120",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Biologi (bachelor)",
+   "nivaakode": "B3",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "ntnu_biologi",
+   "institusjonskode": "1150",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Biologi (bachelor)",
+   "nivaakode": "B3",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "uit_biologi",
+   "institusjonskode": "1130",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Biologi (bachelor)",
+   "nivaakode": "B3",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "nord_biologi",
+   "institusjonskode": "1174",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Biologi (bachelor)",
+   "nivaakode": "B3",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "uia_biologi",
+   "institusjonskode": "1171",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Biologi (bachelor)",
+   "nivaakode": "B3",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "uib_molekylaerbiologi",
+   "institusjonskode": "1120",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Molekylærbiologi (bachelor)",
+   "nivaakode": "B3",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "nmbu_husdyr",
+   "institusjonskode": "1173",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Husdyrvitenskap (bachelor)",
+   "nivaakode": "B3",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "nord_husdyr",
+   "institusjonskode": "1174",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Husdyrvitenskap (bachelor)",
+   "nivaakode": "B3",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "inn_agronomi_husdyr",
+   "institusjonskode": "1177",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Agronomi (bachelor)",
+   "nivaakode": "B3",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "nord_dyrepleie",
+   "institusjonskode": "1174",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Dyrepleie (bachelor)",
+   "nivaakode": "B3",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "nmbu_plante",
+   "institusjonskode": "1173",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Plantevitenskap (bachelor)",
+   "nivaakode": "B3",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "inn_agronomi",
+   "institusjonskode": "1177",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Agronomi (bachelor)",
+   "nivaakode": "B3",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "inn_landbruksteknikk",
+   "institusjonskode": "1177",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Landbruksteknikk (bachelor)",
+   "nivaakode": "B3",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "nmbu_akvakultur",
+   "institusjonskode": "1173",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Akvakultur (bachelor)",
+   "nivaakode": "B3",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "nord_havbruksdrift",
+   "institusjonskode": "1174",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Havbruksdrift og ledelse (bachelor)",
+   "nivaakode": "B3",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "ntnu_biomarin",
+   "institusjonskode": "1150",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Biomarin innovasjon (bachelor)",
+   "nivaakode": "B3",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "ntnu_ing_havbruk",
+   "institusjonskode": "1150",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Ingeniør, havbruk (bachelor)",
+   "nivaakode": "B3",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "uit_fiskeri_havbruk",
+   "institusjonskode": "1130",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Fiskeri- og havbruksvitenskap (master 5 år)",
+   "nivaakode": "M5",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "uib_havbruk",
+   "institusjonskode": "1120",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Havbruk, sivilingeniør (master 5 år)",
+   "nivaakode": "M5",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "uib_fiskehelse",
+   "institusjonskode": "1120",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Fiskehelse – akvamedisin (master 5 år)",
+   "nivaakode": "M5",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "nmbu_biologi2",
+   "institusjonskode": "1173",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Biologi (master 2 år)",
+   "nivaakode": "M2",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "uio_biovitenskap2",
+   "institusjonskode": "1110",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Biovitenskap (master 2 år)",
+   "nivaakode": "M2",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "uib_biologi2",
+   "institusjonskode": "1120",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Biologi (master 2 år)",
+   "nivaakode": "M2",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "ntnu_biologi2",
+   "institusjonskode": "1150",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Biologi (master 2 år)",
+   "nivaakode": "M2",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "uit_biologi2",
+   "institusjonskode": "1130",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Biologi (master 2 år)",
+   "nivaakode": "M2",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "nord_biovitenskap2",
+   "institusjonskode": "1174",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Biovitenskap (master 2 år)",
+   "nivaakode": "M2",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "nmbu_husdyr2",
+   "institusjonskode": "1173",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Husdyrvitenskap (master 2 år)",
+   "nivaakode": "M2",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "nord_husdyr2",
+   "institusjonskode": "1174",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Biovitenskap, studieretning husdyrvitenskap (master 2 år)",
+   "nivaakode": "M2",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "nmbu_emabg",
+   "institusjonskode": "1173",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "European Master in Animal Biodiversity and Genomics (master 2 år)",
+   "nivaakode": "M2",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "nmbu_plante2",
+   "institusjonskode": "1173",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Plantevitenskap (master 2 år)",
+   "nivaakode": "M2",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "inn_baerekraftig_jordbruk",
+   "institusjonskode": "1177",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Bærekraftig jordbruk (master 2 år)",
+   "nivaakode": "M2",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "nmbu_agroekologi2",
+   "institusjonskode": "1173",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Agroøkologi / Agroecology (master 2 år)",
+   "nivaakode": "M2",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "nmbu_akvakultur2",
+   "institusjonskode": "1173",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Aquaculture (master 2 år)",
+   "nivaakode": "M2",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "uit_fiskeri_havbruk2",
+   "institusjonskode": "1130",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Fiskeri- og havbruksvitenskap (master 2 år)",
+   "nivaakode": "M2",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "nord_akvakultur2",
+   "institusjonskode": "1174",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Biovitenskap, studieretning akvakultur (master 2 år)",
+   "nivaakode": "M2",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  },
+  {
+   "entryId": "uit_akvamedisin2",
+   "institusjonskode": "1130",
+   "studieprogramkoder": null,
+   "studieprogramnavn": "Akvamedisin (master)",
+   "nivaakode": "M2",
+   "aarMedKarakterer": null,
+   "kandidaterSiste": null
+  }
+ ]
+}

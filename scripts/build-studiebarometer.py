@@ -195,10 +195,10 @@ def parse_no_int(s: str | None) -> int | None:
 
 # ─── Én kandidat (inst, kode) → forsøk å finne et gyldig sbId ─────────────
 
-def try_fetch_main(inst: str, kode: str) -> tuple[str, str, dict] | None:
-    """Prøver https://.../studieprogram/<inst>_<kode-lower>. Returnerer
-    (sbId, url, parsed_json) ved treff, ellers None."""
-    sb_id = f"{inst}_{kode.lower()}"
+def try_fetch_main_by_id(sb_id: str) -> tuple[str, dict] | None:
+    """Henter https://.../studieprogram/<sbId> og sjekker at siden faktisk
+    svarer med dette programmet (302->'/' ved ugyldig id gir ikke treff her,
+    men sjekken dobbeltsjekker uansett kilde)."""
     url = f"{BASE}/no/student/studieprogram/{urllib.parse.quote(sb_id)}"
     status, body = fetch(url)
     time.sleep(SLEEP_S)
@@ -214,12 +214,102 @@ def try_fetch_main(inst: str, kode: str) -> tuple[str, str, dict] | None:
     first_prog = (cats[0].get("programs") or [{}])[0]
     if str(first_prog.get("id", "")).lower() != sb_id.lower():
         return None
-    return sb_id, url, data
+    return url, data
 
 
-def find_sb_id(prog: dict) -> tuple[str | None, str | None, dict | None, list[str]]:
-    """Prøver alle institusjonskode x studieprogramkode-kombinasjoner.
-    Returnerer (sbId, url, main_json, forsøkte_id-er)."""
+def try_fetch_main(inst: str, kode: str) -> tuple[str, str, dict] | None:
+    """Prøver https://.../studieprogram/<inst>_<kode-lower>. Returnerer
+    (sbId, url, parsed_json) ved treff, ellers None."""
+    sb_id = f"{inst}_{kode.lower()}"
+    got = try_fetch_main_by_id(sb_id)
+    if not got:
+        return None
+    return sb_id, got[0], got[1]
+
+
+# Søke-API-et som studiebarometeret.no sitt eget søkefelt bruker
+# (funnet via data-props på /no/student/finn – ikke dokumentert, men stabilt
+# nok til bruk her). Trengs fordi mange sbId-er IKKE er "<inst>_<dbh-kode>":
+# f.eks. er HVL Bergens landmåling-bachelor "238_leie-bergen" (uten ledende
+# 0 i institusjonskoden, og med campus-suffiks), ikke "0238_leie".
+SEARCH_ENDPOINT = f"{BASE}/no/api/student/finn"
+
+
+def search_api(query: str, inst_filter: str | None) -> list[dict]:
+    params = {"query": query}
+    if inst_filter:
+        params["i"] = inst_filter
+    url = f"{SEARCH_ENDPOINT}?{urllib.parse.urlencode(params)}"
+    status, body = fetch(url)
+    time.sleep(SLEEP_S)
+    if status != 200:
+        return []
+    try:
+        data = json.loads(body)
+    except json.JSONDecodeError:
+        return []
+    return data.get("hits") or []
+
+
+def _slug(s: str | None) -> str:
+    return re.sub(r"[^a-zæøå0-9]", "", (s or "").lower())
+
+
+def find_sb_id_via_search(prog: dict, studiested: str | None, programnavn: str | None,
+                           tried: list[str]) -> tuple[str, str, dict] | None:
+    """Fallback når det direkte gjettet <inst>_<kode>-URL-et ikke traff:
+    bruker søke-API-et, filtrert på institusjon, og velger blant treffene."""
+    insts = prog.get("institusjonskoder") or [prog["institusjonskode"]]
+    koder = prog.get("studieprogramkoder") or []
+    studiested_slug = _slug(studiested)
+
+    def choose(hits: list[dict], prefix: str | None) -> dict | None:
+        cands = hits
+        if prefix:
+            cands = [h for h in cands if str(h.get("id", "")).lower().startswith(prefix)]
+        if not cands:
+            return None
+        if len(cands) > 1 and studiested_slug:
+            narrowed = [h for h in cands if studiested_slug in _slug(h.get("id", ""))]
+            if narrowed:
+                cands = narrowed
+        return cands[0]
+
+    for inst in insts:
+        try:
+            inst_i = str(int(inst))
+        except ValueError:
+            inst_i = inst
+
+        for kode in koder:
+            prefix = f"{inst_i}_{kode.lower()}"
+            hits = search_api(kode, inst_i)
+            tried.append(f"søk:{kode}@{inst_i} ({len(hits)} treff)")
+            chosen = choose(hits, prefix)
+            if chosen:
+                sb_id = chosen["id"]
+                got = try_fetch_main_by_id(sb_id)
+                if got:
+                    return sb_id, got[0], got[1]
+
+        if programnavn:
+            hits = search_api(programnavn, inst_i)
+            tried.append(f"søk:{programnavn}@{inst_i} ({len(hits)} treff)")
+            chosen = choose(hits, prefix=f"{inst_i}_")
+            if chosen:
+                sb_id = chosen["id"]
+                got = try_fetch_main_by_id(sb_id)
+                if got:
+                    return sb_id, got[0], got[1]
+    return None
+
+
+def find_sb_id(prog: dict, studiested: str | None = None,
+                programnavn: str | None = None) -> tuple[str | None, str | None, dict | None, list[str]]:
+    """Prøver alle institusjonskode x studieprogramkode-kombinasjoner direkte
+    (raskt, treffer i de fleste tilfeller), og faller tilbake på søke-API-et
+    (find_sb_id_via_search) når ingen av dem gir treff.
+    Returnerer (sbId, url, main_json, forsøkte_id-er/søk)."""
     insts = prog.get("institusjonskoder") or [prog["institusjonskode"]]
     koder = prog.get("studieprogramkoder") or []
     tried: list[str] = []
@@ -230,6 +320,10 @@ def find_sb_id(prog: dict) -> tuple[str | None, str | None, dict | None, list[st
             hit = try_fetch_main(inst, kode)
             if hit:
                 return hit[0], hit[1], hit[2], tried
+
+    via_search = find_sb_id_via_search(prog, studiested, programnavn, tried)
+    if via_search:
+        return via_search[0], via_search[1], via_search[2], tried
     return None, None, None, tried
 
 
@@ -433,6 +527,7 @@ def load_group_info(fakultet: str) -> dict[str, dict]:
                 "institusjon": prog.get("institusjon", ""),
                 "programnavn": prog.get("programnavn", ""),
                 "isNmbu": bool(prog.get("isNmbu", False)),
+                "studiested": prog.get("studiested", ""),
             }
     return out
 
@@ -443,6 +538,7 @@ def process_program(fakultet: str, prog: dict, group_info: dict[str, dict], refr
     entry_id = prog["entryId"]
     ginfo = group_info.get(entry_id, {
         "groupId": entry_id, "shortName": entry_id, "institusjon": "", "programnavn": "", "isNmbu": False,
+        "studiested": "",
     })
 
     cached = None if refresh else load_cache(fakultet, entry_id)
@@ -455,7 +551,7 @@ def process_program(fakultet: str, prog: dict, group_info: dict[str, dict], refr
         detaljer_html = cached.get("detaljerHtml")
         tried = cached.get("tried", [])
     else:
-        sb_id, url, main_json, tried = find_sb_id(prog)
+        sb_id, url, main_json, tried = find_sb_id(prog, ginfo.get("studiested"), ginfo.get("programnavn"))
         tidsserie_json = fetch_tidsserie(sb_id) if sb_id else None
         detaljer_html = fetch_detaljer(sb_id) if sb_id else None
         save_cache(fakultet, entry_id, {
