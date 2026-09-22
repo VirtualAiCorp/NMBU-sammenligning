@@ -3,6 +3,7 @@ import { SAMF_DATA, SAMF_YEARS } from '../data/samfData';
 import { ANNUAL_STUDIES_DATA, ANNUAL_YEARS } from '../data/annualStudiesData';
 import { LANDSAM_GROUPS, LANDSAM_YEARS } from '../data/landsamAdmissionData';
 import { LANDSAM_COURSE_GROUPS } from '../data/landsamCourseData';
+import { LANDSAM_COURSE_MAPPING } from '../data/landsamCourseMapping';
 
 // ─── Core helpers ─────────────────────────────────────────────────────────────
 
@@ -205,4 +206,90 @@ export function exportLandsamCoursesCsv(
   }
 
   downloadCsv(`landsam_emner_${groupId}_${year}.csv`, lines);
+}
+
+/**
+ * Eksporterer sammenligningen av ÉN emnetype (samme fag) på tvers av programmene
+ * i én programgruppe, for ett år. Er faget delt i flere emnekoder, summeres
+ * karakterene. Program uten kobling tas med som tomme rader, slik at det går
+ * fram hvem som mangler et tilsvarende emne.
+ */
+export function exportLandsamCourseTypeCsv(
+  groupId: string,
+  courseTypeId: string,
+  entryIds: string[],
+  year: number,
+  minKandidater = 0,
+) {
+  const header = row(
+    'Programgruppe', 'Nivå', 'Emnetype', 'Kategori',
+    'Institusjon', 'Kortnavn', 'NMBU',
+    'DBH institusjonskode', 'DBH programnavn',
+    'År', 'Emnekoder', 'Emnenavn', 'Studiepoeng (sum)',
+    'A', 'B', 'C', 'D', 'E', 'F', 'G (bestått)', 'H (ikke bestått)',
+    'Kandidater', 'Bokstavkarakterer', 'Snitt (A=5…F=0)', 'Stryk %', 'Bestått %',
+    'Merknad'
+  );
+
+  const lines: string[] = [header];
+  const group = LANDSAM_COURSE_GROUPS.find((g) => g.id === groupId);
+  const mapping = LANDSAM_COURSE_MAPPING.find((m) => m.groupId === groupId);
+  const courseType = mapping?.courseTypes.find((c) => c.id === courseTypeId);
+
+  if (group && courseType) {
+    for (const p of group.programs) {
+      if (entryIds.length > 0 && !entryIds.includes(p.entryId)) continue;
+      const link = courseType.links.find((l) => l.entryId === p.entryId);
+
+      if (!link) {
+        lines.push(row(
+          group.label, group.level, courseType.label, courseType.kategori,
+          p.institusjon, p.shortName, p.isNmbu ? 'ja' : 'nei',
+          p.dbhInstitusjonskode, p.dbhProgramnavn,
+          year, '', '', '',
+          '', '', '', '', '', '', '', '',
+          '', '', '', '', '',
+          'Ingen tilsvarende emne kartlagt'
+        ));
+        continue;
+      }
+
+      const koder: string[] = [];
+      const navn: string[] = [];
+      let studiepoeng = 0;
+      let A = 0, B = 0, C = 0, D = 0, E = 0, F = 0, G = 0, H = 0, total = 0;
+
+      for (const kode of link.emnekoder) {
+        const c = p.courses.find((x) => x.emnekode === kode);
+        if (!c) continue;
+        const d = c.years.find((yr) => yr.year === year);
+        if (!d || d.total <= 0 || d.total < minKandidater) continue;
+        koder.push(c.emnekode);
+        navn.push(c.emnenavn ?? c.emnekode);
+        if (c.studiepoeng !== null) studiepoeng += c.studiepoeng;
+        A += d.A; B += d.B; C += d.C; D += d.D; E += d.E; F += d.F;
+        G += d.G; H += d.H; total += d.total;
+      }
+
+      const bokstav = A + B + C + D + E + F;
+      const snitt = bokstav > 0
+        ? +(((A * 5 + B * 4 + C * 3 + D * 2 + E * 1) / bokstav).toFixed(2)) : null;
+      const stryk = bokstav > 0 ? +(((F / bokstav) * 100).toFixed(1)) : null;
+      const bestatt = G + H > 0 ? +(((G / (G + H)) * 100).toFixed(1)) : null;
+
+      lines.push(row(
+        group.label, group.level, courseType.label, courseType.kategori,
+        p.institusjon, p.shortName, p.isNmbu ? 'ja' : 'nei',
+        p.dbhInstitusjonskode, p.dbhProgramnavn,
+        year, koder.join(' '), navn.join(' + '), studiepoeng > 0 ? studiepoeng : null,
+        A, B, C, D, E, F, G, H,
+        total, bokstav, snitt, stryk, bestatt,
+        koder.length === 0
+          ? `Ingen emnetall for ${year} over terskelen (kartlagt: ${link.emnekoder.join(' ')})`
+          : link.merknad ?? ''
+      ));
+    }
+  }
+
+  downloadCsv(`landsam_emnetype_${groupId}_${courseTypeId}_${year}.csv`, lines);
 }

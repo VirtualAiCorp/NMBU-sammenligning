@@ -4,11 +4,15 @@ import {
 } from 'recharts';
 import { TrendingUp, TrendingDown, Minus, Info, ExternalLink, Filter, Users } from 'lucide-react';
 import { CsvExportButton } from './CsvExportButton';
-import { exportLandsamCoursesCsv } from '../utils/csvExport';
+import { exportLandsamCoursesCsv, exportLandsamCourseTypeCsv } from '../utils/csvExport';
 import {
   LANDSAM_COURSE_GROUPS, LANDSAM_COURSE_YEARS,
-  type LandsamCourseGroup, type ProgramCourses, type CourseGradeYear,
+  type LandsamCourseGroup, type ProgramCourses, type CourseGradeYear, type CourseStats,
 } from '../data/landsamCourseData';
+import {
+  LANDSAM_COURSE_MAPPING,
+  type CourseType, type CourseTypeLink,
+} from '../data/landsamCourseMapping';
 import { LANDSAM_GROUPS, type LandsamLevel } from '../data/landsamAdmissionData';
 import { landsamColorFor } from '../data/landsamPalette';
 import { landsamCourseHasComparison } from '../data/landsamUtils';
@@ -696,6 +700,333 @@ function EmneTable({
   );
 }
 
+// ─── Fane 4: Sammenlign emne ──────────────────────────────────────────────────
+
+/** Summen av karaktertallene for de emnekodene som representerer ett fag. */
+interface CourseTypeAgg {
+  /** De emnene som faktisk hadde tall dette året (over terskelen). */
+  parts: { c: CourseStats; d: CourseGradeYear }[];
+  /** Emnekoder som er kartlagt, men som mangler tall dette året. */
+  manglerKoder: string[];
+  studiepoeng: number | null;
+  kandidater: number;
+  bokstav: number;
+  grades: Record<Grade, number>;
+  G: number;
+  H: number;
+  snitt: number | null;
+  strykprosent: number | null;
+  bestattprosent: number | null;
+}
+
+function aggregateCourseType(
+  p: ProgramCourses, link: CourseTypeLink, year: number, minKandidater: number,
+): CourseTypeAgg {
+  const grades = EMPTY_GRADES();
+  const parts: { c: CourseStats; d: CourseGradeYear }[] = [];
+  const manglerKoder: string[] = [];
+  let kandidater = 0, G = 0, H = 0, studiepoeng = 0, harStudiepoeng = false;
+
+  for (const kode of link.emnekoder) {
+    const c = p.courses.find((x) => x.emnekode === kode);
+    const d = c?.years.find((yr) => yr.year === year);
+    if (!c || !d || d.total <= 0 || d.total < minKandidater) {
+      manglerKoder.push(kode);
+      continue;
+    }
+    parts.push({ c, d });
+    kandidater += d.total;
+    if (c.studiepoeng !== null) { studiepoeng += c.studiepoeng; harStudiepoeng = true; }
+    grades.A += d.A; grades.B += d.B; grades.C += d.C;
+    grades.D += d.D; grades.E += d.E; grades.F += d.F;
+    G += d.G; H += d.H;
+  }
+
+  const bokstav = GRADES.reduce((s, g) => s + grades[g], 0);
+  const snitt = bokstav > 0
+    ? (grades.A * 5 + grades.B * 4 + grades.C * 3 + grades.D * 2 + grades.E * 1) / bokstav
+    : null;
+
+  return {
+    parts, manglerKoder,
+    studiepoeng: harStudiepoeng ? studiepoeng : null,
+    kandidater, bokstav, grades, G, H, snitt,
+    strykprosent: bokstav > 0 ? (grades.F / bokstav) * 100 : null,
+    bestattprosent: G + H > 0 ? (G / (G + H)) * 100 : null,
+  };
+}
+
+/** Fagvelger: emnetyper gruppert på kategori, som chips. */
+function CourseTypePicker({
+  courseTypes, selected, onSelect,
+}: {
+  courseTypes: CourseType[];
+  selected: CourseType;
+  onSelect: (id: string) => void;
+}) {
+  const kategorier: { kategori: string; typer: CourseType[] }[] = [];
+  for (const ct of courseTypes) {
+    const k = ct.kategori ?? 'Øvrige fag';
+    const bolk = kategorier.find((x) => x.kategori === k);
+    if (bolk) bolk.typer.push(ct);
+    else kategorier.push({ kategori: k, typer: [ct] });
+  }
+
+  return (
+    <div className="rounded-xl overflow-hidden mb-5" style={{ border: '1px solid var(--nmbu-neutral-3)', backgroundColor: '#fff' }}>
+      <div className="px-4 py-2.5" style={{ borderBottom: '1px solid var(--nmbu-neutral-3)', backgroundColor: 'var(--nmbu-beige-light)', fontSize: 12, fontWeight: 600, color: 'var(--nmbu-green-dark)' }}>
+        Velg fag
+      </div>
+      <div className="p-3 flex flex-col gap-3">
+        {kategorier.map((bolk) => (
+          <div key={bolk.kategori}>
+            <div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)', marginBottom: 5, fontWeight: 600, letterSpacing: '0.05em', textTransform: 'uppercase' }}>
+              {bolk.kategori}
+            </div>
+            <div className="flex flex-wrap gap-1.5">
+              {bolk.typer.map((ct) => {
+                const active = ct.id === selected.id;
+                return (
+                  <button key={ct.id} onClick={() => onSelect(ct.id)}
+                    className="px-3 py-1 rounded-full text-xs transition-all"
+                    style={{
+                      backgroundColor: active ? 'var(--nmbu-green-dark)' : 'var(--nmbu-beige-light)',
+                      color: active ? '#fff' : 'var(--nmbu-neutral-1)',
+                      border: `1.5px solid ${active ? 'var(--nmbu-green-dark)' : 'var(--nmbu-neutral-3)'}`,
+                      fontWeight: active ? 600 : 400,
+                    }}
+                  >
+                    {ct.label}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        ))}
+      </div>
+      {(selected.desc || selected.note) && (
+        <div className="px-4 py-3 flex items-start gap-2" style={{ borderTop: '1px solid var(--nmbu-neutral-3)', backgroundColor: 'var(--nmbu-beige-light)' }}>
+          <Info className="w-3.5 h-3.5 shrink-0 mt-0.5" style={{ color: 'var(--nmbu-green)' }} />
+          <div style={{ fontSize: 12, color: 'var(--nmbu-neutral-1)', lineHeight: 1.6 }}>
+            {selected.desc && <div>{selected.desc}</div>}
+            {selected.note && (
+              <div style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)', marginTop: selected.desc ? 4 : 0 }}>
+                {selected.note}
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function SammenlignEmneView({
+  courseType, programs, year, minKandidater,
+}: {
+  courseType: CourseType;
+  programs: ProgramCourses[];
+  year: number;
+  minKandidater: number;
+}) {
+  const rader = programs.map((p) => {
+    const link = courseType.links.find((l) => l.entryId === p.entryId);
+    return { p, link, agg: link ? aggregateCourseType(p, link, year, minKandidater) : null };
+  });
+
+  const medTall = rader
+    .filter((r) => r.agg !== null && r.agg.snitt !== null)
+    .sort((a, b) => (b.agg!.snitt ?? 0) - (a.agg!.snitt ?? 0));
+
+  const utenKobling = rader.filter((r) => !r.link);
+
+  return (
+    <div className="space-y-6">
+
+      {/* Sammenligningsstripe: snitt per program */}
+      {medTall.length > 0 && (
+        <section>
+          <h3 className="text-base mb-3" style={{ color: 'var(--nmbu-green-dark)', fontFamily: "'Lora', serif" }}>
+            Snitt i {courseType.label.toLowerCase()} · {year}
+          </h3>
+          <div className="flex flex-col gap-2">
+            {medTall.map(({ p, agg }) => {
+              const col = landsamColorFor(p.entryId);
+              const snitt = agg!.snitt!;
+              return (
+                <div key={p.entryId} className="flex items-center gap-3">
+                  <div style={{ width: 110, fontSize: 12, fontWeight: 600, color: 'var(--nmbu-neutral)' }} className="shrink-0 text-right">
+                    {p.shortName}
+                    {p.isNmbu && (
+                      <span className="ml-1 px-1.5 rounded-full" style={{ fontSize: 9, fontWeight: 700, backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)' }}>NMBU</span>
+                    )}
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="rounded-sm" style={{ backgroundColor: 'var(--nmbu-beige-light)', height: 16 }}>
+                      <div className="rounded-sm" style={{ width: `${Math.max(2, (snitt / 5) * 100)}%`, height: '100%', backgroundColor: col, transition: 'width 0.2s' }} />
+                    </div>
+                  </div>
+                  <div className="shrink-0 text-right" style={{ width: 96 }}>
+                    <span className="inline-block px-2 py-0.5 rounded" style={{ backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)', fontWeight: 600, fontSize: 12 }}>
+                      {nf(snitt, 2)} ({letterFor(snitt)})
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+      )}
+
+      <GradeLegend />
+
+      {/* Ett kort per program */}
+      <div className="flex flex-col gap-4">
+        {rader.map(({ p, link, agg }) => {
+          const col = landsamColorFor(p.entryId);
+
+          if (!link || !agg) {
+            return (
+              <div key={p.entryId} className="rounded-xl px-4 py-3"
+                style={{ border: '1px dashed var(--nmbu-neutral-3)', backgroundColor: 'var(--nmbu-beige-light)' }}>
+                <div className="flex items-center gap-1.5 mb-1">
+                  <div className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: col, opacity: 0.4 }} />
+                  <span style={{ fontSize: 13, fontWeight: 600, color: 'var(--nmbu-neutral-2)' }}>
+                    {p.shortName}{p.isNmbu ? ' ★' : ''}
+                  </span>
+                  <span style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)' }}>· {p.dbhProgramnavn}</span>
+                </div>
+                <div style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)' }}>
+                  Ingen tilsvarende emne kartlagt
+                </div>
+              </div>
+            );
+          }
+
+          const bokstav = agg.bokstav;
+          const bestatt = agg.G + agg.H;
+
+          return (
+            <div key={p.entryId} className="rounded-xl px-4 py-3"
+              style={{ border: '1px solid var(--nmbu-neutral-3)', backgroundColor: '#fff', borderLeft: `4px solid ${col}` }}>
+
+              <div className="flex items-start justify-between gap-3 flex-wrap mb-2">
+                <div className="min-w-0">
+                  <div className="flex items-center gap-1.5 flex-wrap">
+                    <div className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: col }} />
+                    <span style={{ fontSize: 13, fontWeight: 600, color: p.isNmbu ? 'var(--nmbu-green-dark)' : 'var(--nmbu-neutral)' }}>
+                      {p.shortName}{p.isNmbu ? ' ★' : ''}
+                    </span>
+                    {p.isNmbu && (
+                      <span className="px-1.5 rounded-full" style={{ fontSize: 9, fontWeight: 700, backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)' }}>NMBU</span>
+                    )}
+                    <span style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)' }}>· {p.dbhProgramnavn}</span>
+                  </div>
+                  <div className="mt-1.5 flex flex-col gap-0.5">
+                    {agg.parts.map(({ c }) => (
+                      <div key={c.emnekode} style={{ fontSize: 11, color: 'var(--nmbu-neutral-1)' }}>
+                        <span className="font-mono" style={{ fontWeight: 600 }}>{c.emnekode}</span>
+                        {' · '}{c.emnenavn ?? c.emnekode}
+                        {c.studiepoeng !== null && <span style={{ color: 'var(--nmbu-neutral-2)' }}> · {nf(c.studiepoeng, 0)} stp.</span>}
+                      </div>
+                    ))}
+                    {agg.parts.length === 0 && (
+                      <div style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)' }}>
+                        Kartlagt til {link.emnekoder.join(', ')}, men uten tall for {year} over terskelen.
+                      </div>
+                    )}
+                    {agg.parts.length > 0 && agg.manglerKoder.length > 0 && (
+                      <div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)' }}>
+                        Uten tall for {year}: {agg.manglerKoder.join(', ')}
+                      </div>
+                    )}
+                    {link.merknad && (
+                      <div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)', fontStyle: 'italic' }}>
+                        {link.merknad}
+                      </div>
+                    )}
+                  </div>
+                </div>
+
+                <div className="shrink-0 flex gap-5 flex-wrap" style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)' }}>
+                  <div>
+                    <div style={{ fontSize: 10, marginBottom: 2 }}>Kandidater</div>
+                    <div style={{ fontSize: 15, fontWeight: 700, color: 'var(--nmbu-neutral)' }}>{nf(agg.kandidater)}</div>
+                  </div>
+                  <div>
+                    <div style={{ fontSize: 10, marginBottom: 2 }}>Snitt</div>
+                    <div style={{ fontSize: 15, fontWeight: 700, color: 'var(--nmbu-neutral)' }}>
+                      {agg.snitt !== null ? `${nf(agg.snitt, 2)} (${letterFor(agg.snitt)})` : '–'}
+                    </div>
+                  </div>
+                  <div>
+                    <div style={{ fontSize: 10, marginBottom: 2 }}>Stryk</div>
+                    <div style={{ fontSize: 15, fontWeight: 700, color: (agg.strykprosent ?? 0) > 20 ? '#9b3a3a' : 'var(--nmbu-neutral)' }}>
+                      {agg.strykprosent !== null ? `${nf(agg.strykprosent, 1)} %` : '–'}
+                    </div>
+                  </div>
+                  {agg.studiepoeng !== null && (
+                    <div>
+                      <div style={{ fontSize: 10, marginBottom: 2 }}>Studiepoeng</div>
+                      <div style={{ fontSize: 15, fontWeight: 700, color: 'var(--nmbu-neutral)' }}>{nf(agg.studiepoeng, 0)}</div>
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              {bokstav > 0 ? (
+                <>
+                  <div className="flex rounded-md overflow-hidden" style={{ height: 26 }}>
+                    {GRADES.map((g) => {
+                      const n = agg.grades[g];
+                      if (n === 0) return null;
+                      const pct = (n / bokstav) * 100;
+                      return (
+                        <div key={g}
+                          title={`${g}: ${nf(n)} av ${nf(bokstav)} (${nf(pct, 1)} %)`}
+                          className="flex items-center justify-center"
+                          style={{ width: `${pct}%`, backgroundColor: GRADE_COLORS[g], color: '#fff', fontSize: 10, fontWeight: 700 }}>
+                          {pct >= 8 ? `${g} ${nf(pct, 0)}%` : ''}
+                        </div>
+                      );
+                    })}
+                  </div>
+                  <div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)', marginTop: 4 }}>
+                    {nf(bokstav)} bokstavkarakterer i {agg.parts.length} {agg.parts.length === 1 ? 'emne' : 'emner'}
+                  </div>
+                </>
+              ) : agg.parts.length > 0 && bestatt === 0 ? (
+                <div style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)' }}>
+                  Ingen bokstavkarakterer i {year}.
+                </div>
+              ) : null}
+
+              {bestatt > 0 && (
+                <div className="flex items-center gap-2 mt-2" style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)' }}>
+                  <span style={{ width: 10, height: 10, borderRadius: 2, backgroundColor: BESTATT_COLOR, display: 'inline-block', flexShrink: 0 }} />
+                  {nf(bestatt)} resultater med bestått / ikke bestått ·{' '}
+                  <strong style={{ color: 'var(--nmbu-neutral-1)' }}>
+                    {agg.bestattprosent !== null ? `${nf(agg.bestattprosent, 1)} %` : '–'} bestått
+                  </strong>{' '}
+                  {bokstav > 0 ? '(holdt utenfor fordelingen over)' : ''}
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+
+      {utenKobling.length > 0 && (
+        <p className="text-xs leading-relaxed" style={{ color: 'var(--nmbu-neutral-2)' }}>
+          {utenKobling.length} av de valgte programmene har ikke et emne som dekker{' '}
+          {courseType.label.toLowerCase()} i kartleggingen. Det kan bety at faget ikke finnes i
+          studieplanen, eller at koblingen ikke er laget ennå.
+        </p>
+      )}
+    </div>
+  );
+}
+
 // ─── NMBU-nøkkeltall i toppkortet ─────────────────────────────────────────────
 
 function NmbuKeyFigures({
@@ -774,7 +1105,12 @@ function NmbuKeyFigures({
 
 // ─── Hovedkomponent ───────────────────────────────────────────────────────────
 
-type CourseTab = 'indeks' | 'fordeling' | 'emner';
+type CourseTab = 'indeks' | 'fordeling' | 'emner' | 'sammenlign';
+
+/** Emnekoblingen for en programgruppe, eller undefined når den ikke er laget ennå. */
+function courseMappingFor(groupId: string) {
+  return LANDSAM_COURSE_MAPPING.find((m) => m.groupId === groupId);
+}
 
 /** Nyeste år i gruppen som faktisk har emnetall. */
 function latestYearWithData(g: LandsamCourseGroup): number {
@@ -815,6 +1151,7 @@ export function LandsamCourseAnalysis({ initialGroup }: { initialGroup?: string 
   const [minKandidater, setMinKandidater] = useState<number>(10);
   const [tab, setTab] = useState<CourseTab>('indeks');
   const [courseProgramId, setCourseProgramId] = useState<string | null>(null);
+  const [courseTypeByGroup, setCourseTypeByGroup] = useState<Record<string, string>>({});
 
   if (!group) {
     return (

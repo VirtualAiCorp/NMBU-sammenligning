@@ -28,7 +28,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
   {
     id: 'eiendom', label: 'Eiendom', level: 'master5',
     desc: 'Sammenligner NMBUs femårige eiendomsmaster med andre utdanninger innen landmåling, eiendomsfag og eiendomsmegling.',
-    note: 'Bare NMBU tilbyr et femårig masterløp i eiendomsfag; HVLs landmåling og eiendomsdesign er nærmeste faglige konkurrent, mens bachelorene i eiendomsmegling er tatt med som svakere sammenligning (default false).',
+    note: 'Bare NMBU tilbyr et femårig masterløp i eiendomsfag; HVLs landmåling og eiendomsdesign er nærmeste faglige konkurrent, mens bachelorene i eiendomsmegling er tatt med som svakere sammenligning (default false). BI er ikke med i Samordna opptak og publiserer ikke poenggrenser (opptak på kvalifikasjon), så BI mangler i opptakstallene, men karakterene finnes i DBH.',
     nmbuIds: ['nmbu_eiendom'], defaultIds: ['nmbu_eiendom', 'hvl_landmaling'],
     entries: [
       {
@@ -109,6 +109,13 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
           '2024': Y(1252, 228, 70, 44.3, 1116, 250, 38.5, 38.5),
           '2025': Y(1505, 288, 80, 44.8, 1352, 298, 38.8, 38.2),
           '2026': Y(1688, 331, 80, 38.4, 1500, 295, 39.1, 38.9),
+        },
+      },
+      {
+        id: 'bi_eiendomsmegling', shortName: 'BI', institusjon: 'Handelshøyskolen BI',
+        studiekode: '', studiested: 'Oslo m.fl.', type: 'bachelor',
+        url: 'https://www.bi.no/studier-og-kurs/bachelorstudier/eiendomsmegling-jus-okonomi/',
+        years: {
         },
       },
     ],

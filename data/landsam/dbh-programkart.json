@@ -15,7 +15,8 @@
     "1150": "Norges teknisk-naturvitenskapelige universitet",
     "1110": "Universitetet i Oslo",
     "1175": "OsloMet - storbyuniversitetet",
-    "1120": "Universitetet i Bergen"
+    "1120": "Universitetet i Bergen",
+    "8241": "Handelshøyskolen BI"
   },
   "programs": [
     {
@@ -816,6 +817,25 @@
         2025
       ],
       "kandidaterSiste": 234
+    },
+    {
+      "entryId": "bi_eiendomsmegling",
+      "institusjonskode": "8241",
+      "studieprogramkoder": [
+        "DIPEMH"
+      ],
+      "studieprogramnavn": "Bachelor i eiendomsmegling, jus og økonomi",
+      "nivaakode": "B3",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 15135,
+      "merknad": "Heltidsvarianten (DIPEMH). Deltids-/nettvarianten DIPEMD er utelatt. BI samler alle campuser under samme kode."
     }
   ]
 }

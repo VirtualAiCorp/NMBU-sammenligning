@@ -17,6 +17,7 @@ export const LANDSAM_PALETTE: Record<string, string> = {
   inn:      '#B8860B', // INN
   usn:      '#8B4513', // USN
   hivolda:  '#6B7B8C', // HVO
+  bi:       '#1B2A6B', // BI
 };
 
 export const LANDSAM_FALLBACK_PALETTE = [

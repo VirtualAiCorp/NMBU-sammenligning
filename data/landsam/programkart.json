@@ -6,7 +6,7 @@
       "label": "Eiendom",
       "level": "master5",
       "desc": "Sammenligner NMBUs femårige eiendomsmaster med andre utdanninger innen landmåling, eiendomsfag og eiendomsmegling.",
-      "note": "Bare NMBU tilbyr et femårig masterløp i eiendomsfag; HVLs landmåling og eiendomsdesign er nærmeste faglige konkurrent, mens bachelorene i eiendomsmegling er tatt med som svakere sammenligning (default false).",
+      "note": "Bare NMBU tilbyr et femårig masterløp i eiendomsfag; HVLs landmåling og eiendomsdesign er nærmeste faglige konkurrent, mens bachelorene i eiendomsmegling er tatt med som svakere sammenligning (default false). BI er ikke med i Samordna opptak og publiserer ikke poenggrenser (opptak på kvalifikasjon), så BI mangler i opptakstallene, men karakterene finnes i DBH.",
       "programs": [
         {
           "id": "nmbu_eiendom",
@@ -91,6 +91,21 @@
           "source": "SO",
           "url": "https://www.usn.no/studier/bachelor-i-eiendomsmegling/",
           "localData": null
+        },
+        {
+          "id": "bi_eiendomsmegling",
+          "shortName": "BI",
+          "institusjon": "Handelshøyskolen BI",
+          "studiested": "Oslo m.fl.",
+          "programnavn": "Bachelor i eiendomsmegling, jus og økonomi",
+          "studiekode": null,
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": false,
+          "source": "local",
+          "url": "https://www.bi.no/studier-og-kurs/bachelorstudier/eiendomsmegling-jus-okonomi/",
+          "localData": null,
+          "localSource": null
         }
       ]
     },
