@@ -28,8 +28,14 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
         obligatoriske: [
           {
             emnekode: 'SKOG100', emnenavn: 'Skogforvaltning', studiepoeng: 10, aar: 1, semester: 'høst',
-            dbhEmnekoder: [], merknad: '10 sp totalt, fordelt med 5 sp i augustblokk (før høstsemesteret) og 5 sp i høstparallell, jf. rutenettets kolonnebredder og NMBUs emnesøk.',
-            years: [],
+            dbhEmnekoder: ['SKOG100-1'], merknad: '10 sp totalt, fordelt med 5 sp i augustblokk (før høstsemesteret) og 5 sp i høstparallell, jf. rutenettets kolonnebredder og NMBUs emnesøk.',
+            years: [
+              { year: 2021, A: 0, B: 7, C: 4, D: 7, E: 0, F: 3, G: 0, H: 0, total: 21, snitt: 2.57, strykprosent: 14.3, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 0, B: 6, C: 0, D: 7, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 2.92, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2023, A: 0, B: 13, C: 8, D: 3, E: 0, F: 3, G: 0, H: 0, total: 27, snitt: 3.04, strykprosent: 11.1, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 0, B: 16, C: 6, D: 7, E: 0, F: 0, G: 0, H: 0, total: 29, snitt: 3.31, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 3, B: 13, C: 8, D: 9, E: 0, F: 0, G: 0, H: 0, total: 33, snitt: 3.3, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
           },
           {
             emnekode: 'REAL101', emnenavn: 'Matematikk for naturvitere', studiepoeng: 10, aar: 1, semester: 'høst',
@@ -38,28 +44,58 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
           },
           {
             emnekode: 'LAD102', emnenavn: 'GIS - praktisk introduksjon', studiepoeng: 5, aar: 1, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['LAD102-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 27, H: 10, total: 37, snitt: null, strykprosent: null, bestattprosent: 73, skjult: 0 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 20, H: 10, total: 30, snitt: null, strykprosent: null, bestattprosent: 66.7, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 19, H: 13, total: 32, snitt: null, strykprosent: null, bestattprosent: 59.4, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 35, H: 7, total: 42, snitt: null, strykprosent: null, bestattprosent: 83.3, skjult: 1 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 27, H: 7, total: 34, snitt: null, strykprosent: null, bestattprosent: 79.4, skjult: 2 },
+            ],
           },
           {
             emnekode: 'JUS100', emnenavn: 'Juridisk metode og norsk rettssystem', studiepoeng: 5, aar: 1, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['JUS100-1'],
+            years: [
+              { year: 2021, A: 0, B: 5, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 3.38, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2022, A: 0, B: 4, C: 14, D: 0, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 3.22, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 0, B: 6, C: 4, D: 4, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 3.14, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 0, B: 4, C: 5, D: 8, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 2.76, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 0, B: 5, C: 11, D: 17, E: 15, F: 6, G: 0, H: 0, total: 54, snitt: 1.89, strykprosent: 11.1, bestattprosent: null, skjult: 3 },
+            ],
           },
           {
             emnekode: 'SKOG200', emnenavn: 'Skogens biologi, økologi og produksjon', studiepoeng: 5, aar: 1, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKOG200-1'],
+            years: [
+              { year: 2021, A: 0, B: 3, C: 8, D: 4, E: 3, F: 0, G: 0, H: 0, total: 18, snitt: 2.61, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 0, B: 4, C: 8, D: 4, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 0, B: 9, C: 4, D: 4, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 3.29, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 0, B: 0, C: 6, D: 9, E: 3, F: 3, G: 0, H: 0, total: 21, snitt: 1.86, strykprosent: 14.3, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 0, B: 0, C: 9, D: 14, E: 7, F: 0, G: 0, H: 0, total: 30, snitt: 2.07, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
           },
           {
             emnekode: 'SKOG205', emnenavn: 'Inventering og ressurskartlegging', studiepoeng: 5, aar: 1, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKOG205-1'],
+            years: [
+              { year: 2021, A: 0, B: 4, C: 8, D: 3, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 3.07, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 0, B: 3, C: 5, D: 0, E: 0, F: 5, G: 0, H: 0, total: 13, snitt: 2.08, strykprosent: 38.5, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 0, B: 9, C: 6, D: 6, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3.14, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2024, A: 4, B: 13, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 4, B: 7, C: 15, D: 0, E: 0, F: 0, G: 0, H: 0, total: 26, snitt: 3.58, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
           },
           {
             emnekode: 'ECOL100', emnenavn: 'Innføring i økologi', studiepoeng: 5, aar: 1, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['ECOL100-1'],
+            years: [
+              { year: 2021, A: 0, B: 3, C: 13, D: 6, E: 4, F: 3, G: 0, H: 0, total: 29, snitt: 2.31, strykprosent: 10.3, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 0, B: 6, C: 5, D: 5, E: 6, F: 0, G: 0, H: 0, total: 22, snitt: 2.5, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 0, B: 6, C: 7, D: 4, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 3.12, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2024, A: 5, B: 6, C: 9, D: 3, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 3.57, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 0, B: 14, C: 8, D: 6, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 3.29, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
           },
           {
             emnekode: 'ECN101', emnenavn: 'Samfunnsøkonomi for miljø og utvikling', studiepoeng: 10, aar: 1, semester: 'vår',
@@ -68,63 +104,129 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
           },
           {
             emnekode: 'SKOG101', emnenavn: 'Skogteknologi', studiepoeng: 5, aar: 1, semester: 'juniblokk',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKOG101-1', 'SKOG101-2'],
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 16, H: 0, total: 16, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 5, H: 0, total: 5, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 19, H: 0, total: 19, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
           },
           {
             emnekode: 'SKOG201', emnenavn: 'Skader og sykdommer på skogstrær', studiepoeng: 5, aar: 2, semester: 'høst',
-            dbhEmnekoder: [], merknad: 'Augustblokk før høstsemesteret.',
-            years: [],
+            dbhEmnekoder: ['SKOG201-1'], merknad: 'Augustblokk før høstsemesteret.',
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 6 },
+              { year: 2025, A: 0, B: 6, C: 6, D: 3, E: 0, F: 4, G: 0, H: 0, total: 19, snitt: 2.53, strykprosent: 21.1, bestattprosent: null, skjult: 1 },
+            ],
           },
           {
             emnekode: 'PHI100', emnenavn: 'Examen philosophicum', studiepoeng: 10, aar: 2, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['PHI100-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 3, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 2, strykprosent: 0, bestattprosent: null, skjult: 7 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 4, E: 3, F: 0, G: 0, H: 0, total: 7, snitt: 1.57, strykprosent: 0, bestattprosent: null, skjult: 8 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 3, E: 0, F: 3, G: 0, H: 0, total: 6, snitt: 1, strykprosent: 50, bestattprosent: null, skjult: 6 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 4, G: 0, H: 0, total: 4, snitt: 0, strykprosent: 100, bestattprosent: null, skjult: 8 },
+              { year: 2025, A: 0, B: 3, C: 0, D: 3, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 5 },
+            ],
           },
           {
             emnekode: 'JORD100', emnenavn: 'Jordlære', studiepoeng: 5, aar: 2, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['JORD100-1'],
+            years: [
+              { year: 2022, A: 0, B: 4, C: 4, D: 3, E: 0, F: 5, G: 0, H: 0, total: 16, snitt: 2.12, strykprosent: 31.2, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 0, B: 4, C: 4, D: 4, E: 0, F: 3, G: 0, H: 0, total: 15, snitt: 2.4, strykprosent: 20, bestattprosent: null, skjult: 4 },
+              { year: 2024, A: 0, B: 5, C: 0, D: 10, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 2.67, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2025, A: 0, B: 5, C: 13, D: 10, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 2.82, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
           },
           {
             emnekode: 'SKOG202', emnenavn: 'Betydningen av insekter og sopper i produksjonsskog', studiepoeng: 5, aar: 2, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKOG202-1'],
+            years: [
+              { year: 2022, A: 0, B: 4, C: 11, D: 5, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 2.95, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 0, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 7 },
+              { year: 2024, A: 0, B: 4, C: 4, D: 3, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 3.09, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 3, B: 7, C: 5, D: 4, E: 0, F: 3, G: 0, H: 0, total: 22, snitt: 3, strykprosent: 13.6, bestattprosent: null, skjult: 0 },
+            ],
           },
           {
             emnekode: 'TRE200', emnenavn: 'Treteknologi I', studiepoeng: 5, aar: 2, semester: 'januarblokk',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['TRE200-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 15, H: 0, total: 15, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 2 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 17, H: 0, total: 17, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 4, B: 6, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 3.93, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 0, B: 7, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 8 },
+              { year: 2025, A: 0, B: 9, C: 4, D: 3, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 3.38, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
           },
           {
             emnekode: 'SKOG210', emnenavn: 'Skogprodukter og materialteknologi', studiepoeng: 5, aar: 2, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKOG210-1'],
+            years: [
+              { year: 2021, A: 3, B: 6, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 0, B: 5, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 3.42, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 0, B: 5, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 3.36, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 0, B: 7, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 3.64, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 0, B: 11, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 3.65, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
           },
           {
             emnekode: 'SKOG240', emnenavn: 'Skoglig driftsteknikk og logistikk', studiepoeng: 10, aar: 2, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKOG240-1'],
+            years: [
+              { year: 2021, A: 0, B: 3, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 3.27, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 0, B: 9, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 3.64, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 3, B: 9, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 3.94, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 4, B: 8, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 4.33, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 0, B: 9, C: 4, D: 3, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 3.38, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
           },
           {
             emnekode: 'SKOG220', emnenavn: 'Skogbehandling', studiepoeng: 10, aar: 3, semester: 'høst',
-            dbhEmnekoder: [], merknad: '10 sp totalt, fordelt med 5 sp i augustblokk (før høstsemesteret) og 5 sp i høstparallell, jf. rutenettets kolonnebredder og NMBUs emnesøk.',
-            years: [],
+            dbhEmnekoder: ['SKOG220-1'], merknad: '10 sp totalt, fordelt med 5 sp i augustblokk (før høstsemesteret) og 5 sp i høstparallell, jf. rutenettets kolonnebredder og NMBUs emnesøk.',
+            years: [
+              { year: 2021, A: 3, B: 3, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 3.82, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 3, B: 3, C: 10, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 3.56, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 0, B: 4, C: 7, D: 7, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 2.83, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 3, B: 5, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 3.85, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 0, B: 6, C: 11, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 3.35, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
           },
           {
             emnekode: 'STAT100', emnenavn: 'Statistikk', studiepoeng: 10, aar: 3, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['STAT100-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 3, E: 6, F: 10, G: 0, H: 0, total: 19, snitt: 0.63, strykprosent: 52.6, bestattprosent: null, skjult: 7 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 11 },
+              { year: 2023, A: 0, B: 6, C: 0, D: 0, E: 5, F: 7, G: 0, H: 0, total: 18, snitt: 1.61, strykprosent: 38.9, bestattprosent: null, skjult: 5 },
+              { year: 2024, A: 0, B: 3, C: 4, D: 3, E: 6, F: 9, G: 0, H: 0, total: 25, snitt: 1.44, strykprosent: 36, bestattprosent: null, skjult: 8 },
+              { year: 2025, A: 3, B: 0, C: 0, D: 4, E: 10, F: 11, G: 0, H: 0, total: 28, snitt: 1.18, strykprosent: 39.3, bestattprosent: null, skjult: 3 },
+            ],
           },
           {
             emnekode: 'SKOG250', emnenavn: 'Skogforvaltning - øvingskurs i tverrfaglig analyse', studiepoeng: 10, aar: 3, semester: 'juniblokk',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKOG250-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 16, H: 0, total: 16, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 14, H: 0, total: 14, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 16, H: 0, total: 16, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 13, H: 0, total: 13, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 18, H: 0, total: 18, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
           },
           {
             emnekode: 'SKOG230', emnenavn: 'Ressursøkonomi og planlegging i skogbruket', studiepoeng: 10, aar: 3, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKOG230-1'],
+            years: [
+              { year: 2021, A: 0, B: 5, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 3.42, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2022, A: 0, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 10 },
+              { year: 2023, A: 3, B: 6, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 3.75, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 0, B: 6, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 3.67, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 0, B: 8, C: 0, D: 4, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 3.33, strykprosent: 0, bestattprosent: null, skjult: 4 },
+            ],
           },
         ],
         spesialiseringer: [
@@ -138,88 +240,168 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
         obligatoriske: [
           {
             emnekode: 'SKO1105', emnenavn: 'Naturgrunnlaget', studiepoeng: 15, aar: 1, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKO1105-1'],
+            years: [
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 9, H: 0, total: 9, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 7, H: 4, total: 11, snitt: null, strykprosent: null, bestattprosent: 63.6, skjult: 1 },
+              { year: 2024, A: 0, B: 3, C: 4, D: 0, E: 0, F: 0, G: 3, H: 0, total: 10, snitt: 3.43, strykprosent: 0, bestattprosent: 100, skjult: 4 },
+              { year: 2025, A: 8, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 4.73, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
           },
           {
             emnekode: 'SKO1101', emnenavn: 'Skognæringen i Norge', studiepoeng: 7.5, aar: 1, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKO1101-1'],
+            years: [
+              { year: 2021, A: 0, B: 6, C: 10, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 3.38, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 7 },
+              { year: 2024, A: 3, B: 0, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 3.75, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 0, B: 3, C: 18, D: 0, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3.14, strykprosent: 0, bestattprosent: null, skjult: 5 },
+            ],
           },
           {
             emnekode: '6EV153', emnenavn: 'Introduksjon til geografiske informasjonssystemer', studiepoeng: 7.5, aar: 1, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['6EV153-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 3, D: 6, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 2.33, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 0, B: 17, C: 31, D: 7, E: 0, F: 5, G: 0, H: 0, total: 60, snitt: 2.92, strykprosent: 8.3, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 13, H: 0, total: 13, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 2 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 15, H: 0, total: 15, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
           },
           {
             emnekode: 'SKO1103', emnenavn: 'Tømmerets verdikjede', studiepoeng: 7.5, aar: 1, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKO1103-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 13, D: 3, E: 0, F: 4, G: 0, H: 0, total: 20, snitt: 2.25, strykprosent: 20, bestattprosent: null, skjult: 4 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 3, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 2, strykprosent: 0, bestattprosent: null, skjult: 8 },
+              { year: 2024, A: 0, B: 0, C: 3, D: 4, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 2.43, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2025, A: 0, B: 4, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 5 },
+            ],
           },
           {
             emnekode: 'SKO1110', emnenavn: 'Landbruksvei', studiepoeng: 7.5, aar: 1, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKO1110-1'],
+            years: [
+              { year: 2021, A: 0, B: 9, C: 4, D: 5, E: 5, F: 0, G: 0, H: 0, total: 23, snitt: 2.74, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 0, B: 0, C: 5, D: 5, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 2.5, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 5 },
+            ],
           },
           {
             emnekode: 'SKO1160', emnenavn: 'Grunnleggende økonomi', studiepoeng: 7.5, aar: 1, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKO1160-1'],
+            years: [
+              { year: 2023, A: 5, B: 6, C: 7, D: 6, E: 6, F: 5, G: 0, H: 0, total: 35, snitt: 2.51, strykprosent: 14.3, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 4, D: 0, E: 4, F: 0, G: 0, H: 0, total: 8, snitt: 2, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 0, B: 3, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 3.43, strykprosent: 0, bestattprosent: null, skjult: 4 },
+            ],
           },
           {
             emnekode: 'UTM1133', emnenavn: 'Økologi', studiepoeng: 7.5, aar: 1, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['UTM1133-1'],
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 3, F: 0, G: 0, H: 0, total: 3, snitt: 1, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 4, E: 0, F: 5, G: 0, H: 0, total: 9, snitt: 0.89, strykprosent: 55.6, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 0, B: 0, C: 5, D: 9, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 2.36, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
           },
           {
             emnekode: 'SKO2202', emnenavn: 'Foryngelseshogst', studiepoeng: 15, aar: 2, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKO2202-1'],
+            years: [
+              { year: 2021, A: 5, B: 7, C: 9, D: 0, E: 3, F: 0, G: 0, H: 0, total: 24, snitt: 3.46, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2022, A: 3, B: 6, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 3.8, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 8 },
+              { year: 2024, A: 0, B: 0, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 7 },
+              { year: 2025, A: 3, B: 4, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 3.83, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
           },
           {
             emnekode: 'SKO2203', emnenavn: 'Produksjonsskog', studiepoeng: 15, aar: 2, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKO2203-1'],
+            years: [
+              { year: 2021, A: 7, B: 9, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 4.05, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2022, A: 0, B: 7, C: 5, D: 3, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 3.27, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2023, A: 0, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2024, A: 0, B: 4, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 3.44, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 0, B: 3, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 3.3, strykprosent: 0, bestattprosent: null, skjult: 4 },
+            ],
           },
           {
             emnekode: '6EV298', emnenavn: 'Vitenskapelig metode og statistikk', studiepoeng: 15, aar: 2, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['6EV298-1'],
+            years: [
+              { year: 2021, A: 0, B: 4, C: 5, D: 5, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 2.93, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 0, B: 9, C: 11, D: 0, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 3.45, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 0, B: 0, C: 5, D: 5, E: 3, F: 0, G: 0, H: 0, total: 13, snitt: 2.15, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2024, A: 0, B: 0, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 4, F: 0, G: 0, H: 0, total: 4, snitt: 1, strykprosent: 0, bestattprosent: null, skjult: 7 },
+            ],
           },
           {
             emnekode: 'SKO1170', emnenavn: 'Praksis i næring eller forvaltning', studiepoeng: 7.5, aar: 2, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKO1170-1'],
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 7, H: 0, total: 7, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 8, H: 0, total: 8, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 8, H: 0, total: 8, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 3 },
+            ],
           },
           {
             emnekode: 'SKO2260', emnenavn: 'Skogøkonomi', studiepoeng: 7.5, aar: 2, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKO2260-1'],
+            years: [
+              { year: 2024, A: 0, B: 3, C: 3, D: 0, E: 3, F: 0, G: 0, H: 0, total: 9, snitt: 2.67, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 0, B: 0, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 7 },
+            ],
           },
           {
             emnekode: 'SKO2153', emnenavn: 'Geografisk analyse', studiepoeng: 7.5, aar: 3, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKO2153-1'],
+            years: [
+              { year: 2024, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 0, B: 0, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
           },
           {
             emnekode: 'SKO1154', emnenavn: 'Forvaltningsrett', studiepoeng: 7.5, aar: 3, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKO1154-1'],
+            years: [
+              { year: 2022, A: 6, B: 11, C: 5, D: 0, E: 3, F: 0, G: 0, H: 0, total: 25, snitt: 3.68, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 3, B: 3, C: 5, D: 3, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 3.43, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 3, F: 0, G: 0, H: 0, total: 3, snitt: 1, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2025, A: 0, B: 0, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
           },
           {
             emnekode: 'UTM2260', emnenavn: 'Bærekraftig næringsutvikling og innovasjon', studiepoeng: 7.5, aar: 3, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['UTM2260-1'],
+            years: [
+              { year: 2021, A: 3, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2022, A: 6, B: 5, C: 5, D: 0, E: 5, F: 0, G: 0, H: 0, total: 21, snitt: 3.33, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 12, H: 0, total: 12, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 2 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 7 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 8 },
+            ],
           },
           {
             emnekode: 'SKO1106', emnenavn: 'Applied Forest Ecology', studiepoeng: 7.5, aar: 3, semester: 'høst',
-            dbhEmnekoder: [], merknad: 'Undervises på engelsk, både for norske og utenlandske studenter (jf. studieplanens tekst om tredje studieår).',
-            years: [],
+            dbhEmnekoder: ['SKO1106-1'], merknad: 'Undervises på engelsk, både for norske og utenlandske studenter (jf. studieplanens tekst om tredje studieår).',
+            years: [
+              { year: 2024, A: 0, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 3, E: 0, F: 4, G: 0, H: 0, total: 7, snitt: 0.86, strykprosent: 57.1, bestattprosent: null, skjult: 4 },
+            ],
           },
           {
             emnekode: '6EV155', emnenavn: 'Arealforvaltning', studiepoeng: 7.5, aar: 3, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['6EV155-1'],
+            years: [
+              { year: 2022, A: 0, B: 3, C: 7, D: 4, E: 3, F: 0, G: 0, H: 0, total: 17, snitt: 2.59, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 0, B: 0, C: 3, D: 5, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 2.38, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 4, G: 0, H: 0, total: 4, snitt: 0, strykprosent: 100, bestattprosent: null, skjult: 6 },
+            ],
           },
           {
             emnekode: 'SKO2270', emnenavn: 'Flerbruksskjøtsel', studiepoeng: 7.5, aar: 3, semester: 'vår',
@@ -263,8 +445,10 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
           },
           {
             emnekode: 'SKO1000', emnenavn: 'Innføring i skogfag', studiepoeng: 7.5, aar: 1, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKO1000-1'],
+            years: [
+              { year: 2025, A: 4, B: 8, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 4.33, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
           },
           {
             emnekode: 'ECO1008', emnenavn: 'Innføring i økonomi', studiepoeng: 7.5, aar: 1, semester: 'vår',
@@ -353,98 +537,194 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
         obligatoriske: [
           {
             emnekode: 'SKO1105', emnenavn: 'Naturgrunnlaget', studiepoeng: 15, aar: 1, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKO1105-1'],
+            years: [
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 19, H: 0, total: 19, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 18, H: 0, total: 18, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2024, A: 3, B: 8, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3.74, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 7, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 4.58, strykprosent: 0, bestattprosent: null, skjult: 4 },
+            ],
           },
           {
             emnekode: 'UTM1100', emnenavn: 'Biologi', studiepoeng: 7.5, aar: 1, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['UTM1100-1'],
+            years: [
+              { year: 2021, A: 0, B: 5, C: 6, D: 3, E: 0, F: 5, G: 0, H: 0, total: 19, snitt: 2.32, strykprosent: 26.3, bestattprosent: null, skjult: 7 },
+              { year: 2022, A: 7, B: 4, C: 5, D: 3, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3.79, strykprosent: 0, bestattprosent: null, skjult: 8 },
+              { year: 2023, A: 7, B: 6, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 4.54, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2024, A: 0, B: 5, C: 6, D: 0, E: 3, F: 0, G: 0, H: 0, total: 14, snitt: 2.93, strykprosent: 0, bestattprosent: null, skjult: 7 },
+              { year: 2025, A: 5, B: 3, C: 3, D: 4, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 3.6, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
           },
           {
             emnekode: 'SKO1101', emnenavn: 'Skognæringen i Norge', studiepoeng: 7.5, aar: 1, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKO1101-1'],
+            years: [
+              { year: 2021, A: 0, B: 8, C: 14, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 3.36, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 0, B: 5, C: 4, D: 3, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 3.17, strykprosent: 0, bestattprosent: null, skjult: 6 },
+            ],
           },
           {
             emnekode: 'UTM1120', emnenavn: 'Ferskvannsøkologi', studiepoeng: 7.5, aar: 1, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['UTM1120-1'],
+            years: [
+              { year: 2023, A: 3, B: 6, C: 3, D: 6, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 3.33, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 0, B: 4, C: 9, D: 4, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 0, B: 3, C: 6, D: 3, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 4 },
+            ],
           },
           {
             emnekode: '6EV132', emnenavn: 'Norsk fauna', studiepoeng: 7.5, aar: 1, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['6EV132-1'],
+            years: [
+              { year: 2021, A: 3, B: 15, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 3.91, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 0, B: 0, C: 6, D: 11, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 2.35, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 17, H: 0, total: 17, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 17, H: 0, total: 17, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 9, B: 0, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 4.12, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
           },
           {
             emnekode: 'UTM1133', emnenavn: 'Økologi', studiepoeng: 7.5, aar: 1, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['UTM1133-1'],
+            years: [
+              { year: 2023, A: 0, B: 6, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 3.46, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2024, A: 0, B: 0, C: 5, D: 6, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 2.45, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 0, B: 3, C: 4, D: 6, E: 0, F: 4, G: 0, H: 0, total: 17, snitt: 2.12, strykprosent: 23.5, bestattprosent: null, skjult: 3 },
+            ],
           },
           {
             emnekode: 'UTM1140', emnenavn: 'Wildlife ecology', studiepoeng: 7.5, aar: 1, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['UTM1140-1'],
+            years: [
+              { year: 2021, A: 0, B: 4, C: 6, D: 3, E: 0, F: 7, G: 0, H: 0, total: 20, snitt: 2, strykprosent: 35, bestattprosent: null, skjult: 8 },
+              { year: 2022, A: 5, B: 3, C: 0, D: 7, E: 3, F: 4, G: 0, H: 0, total: 22, snitt: 2.45, strykprosent: 18.2, bestattprosent: null, skjult: 6 },
+              { year: 2023, A: 4, B: 3, C: 8, D: 0, E: 0, F: 3, G: 0, H: 0, total: 18, snitt: 3.11, strykprosent: 16.7, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 0, B: 4, C: 6, D: 5, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 2.93, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 3, B: 6, C: 6, D: 4, E: 4, F: 0, G: 0, H: 0, total: 23, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
           },
           {
             emnekode: 'UTM2220', emnenavn: 'Fiskeforvaltning', studiepoeng: 7.5, aar: 2, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['UTM2220-1'],
+            years: [
+              { year: 2021, A: 5, B: 8, C: 5, D: 4, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 3.64, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 3, B: 10, C: 6, D: 3, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 3.59, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 0, B: 9, C: 17, D: 7, E: 0, F: 0, G: 0, H: 0, total: 33, snitt: 3.06, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 0, B: 0, C: 5, D: 5, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 2.5, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 0, B: 5, C: 5, D: 8, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 2.83, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
           },
           {
             emnekode: 'UTM2140', emnenavn: 'Viltforvaltning', studiepoeng: 7.5, aar: 2, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['UTM2140-1'],
+            years: [
+              { year: 2023, A: 4, B: 6, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 3.93, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 7, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 4.64, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 4, B: 4, C: 4, D: 0, E: 0, F: 4, G: 0, H: 0, total: 16, snitt: 3, strykprosent: 25, bestattprosent: null, skjult: 2 },
+            ],
           },
           {
             emnekode: '6EV153', emnenavn: 'Introduksjon til geografiske informasjonssystemer', studiepoeng: 7.5, aar: 2, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['6EV153-1'],
+            years: [
+              { year: 2021, A: 0, B: 4, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 3.36, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 4, B: 16, C: 8, D: 10, E: 0, F: 0, G: 0, H: 0, total: 38, snitt: 3.37, strykprosent: 0, bestattprosent: null, skjult: 8 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 12, H: 0, total: 12, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 19, H: 0, total: 19, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
           },
           {
             emnekode: 'SKO1154', emnenavn: 'Forvaltningsrett', studiepoeng: 7.5, aar: 2, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKO1154-1'],
+            years: [
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 3, B: 0, C: 7, D: 4, E: 0, F: 3, G: 0, H: 0, total: 17, snitt: 2.59, strykprosent: 17.6, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 0, B: 5, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2025, A: 5, B: 5, C: 5, D: 3, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 3.67, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
           },
           {
             emnekode: '6EV298', emnenavn: 'Vitenskapelig metode og statistikk', studiepoeng: 15, aar: 2, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['6EV298-1'],
+            years: [
+              { year: 2021, A: 0, B: 10, C: 9, D: 4, E: 0, F: 4, G: 0, H: 0, total: 27, snitt: 2.78, strykprosent: 14.8, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 0, B: 9, C: 3, D: 5, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 3.24, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 0, B: 0, C: 5, D: 9, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 2.36, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2024, A: 0, B: 0, C: 16, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 0, B: 3, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 3.43, strykprosent: 0, bestattprosent: null, skjult: 4 },
+            ],
           },
           {
             emnekode: '6EV150', emnenavn: 'Naturoppsyn', studiepoeng: 7.5, aar: 2, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['6EV150-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 18, H: 0, total: 18, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 11, H: 0, total: 11, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 2 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 16, H: 0, total: 16, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 6, H: 0, total: 6, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 2 },
+            ],
           },
           {
             emnekode: 'UTM1176', emnenavn: 'Large predator ecology and management', studiepoeng: 7.5, aar: 3, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['UTM1176-1'],
+            years: [
+              { year: 2022, A: 0, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 7, B: 4, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 4.06, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 0, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
           },
           {
             emnekode: '6EV175', emnenavn: 'Biomedisin', studiepoeng: 7.5, aar: 3, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['6EV175-1'],
+            years: [
+              { year: 2021, A: 0, B: 9, C: 12, D: 0, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3.43, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 0, B: 3, C: 9, D: 6, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 2.83, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2024, A: 3, B: 3, C: 5, D: 5, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 3.25, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 4, F: 0, G: 0, H: 0, total: 4, snitt: 1, strykprosent: 0, bestattprosent: null, skjult: 4 },
+            ],
           },
           {
             emnekode: 'SKO2153', emnenavn: 'Geografisk analyse', studiepoeng: 7.5, aar: 3, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKO2153-1'],
+            years: [
+              { year: 2024, A: 6, B: 6, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 4.2, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 3, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
           },
           {
             emnekode: 'UTM1151', emnenavn: 'Besøksforvaltning og naturveiledning', studiepoeng: 7.5, aar: 3, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['UTM1151-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 8 },
+              { year: 2022, A: 0, B: 0, C: 7, D: 8, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 2.47, strykprosent: 0, bestattprosent: null, skjult: 7 },
+              { year: 2023, A: 0, B: 4, C: 3, D: 0, E: 4, F: 0, G: 0, H: 0, total: 11, snitt: 2.64, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2024, A: 0, B: 3, C: 3, D: 8, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 2.64, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 0, B: 0, C: 4, D: 4, E: 3, F: 0, G: 0, H: 0, total: 11, snitt: 2.09, strykprosent: 0, bestattprosent: null, skjult: 5 },
+            ],
           },
           {
             emnekode: '6EV155', emnenavn: 'Arealforvaltning', studiepoeng: 7.5, aar: 3, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['6EV155-1'],
+            years: [
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 6 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 4, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 2, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 3, B: 7, C: 4, D: 0, E: 4, F: 0, G: 0, H: 0, total: 18, snitt: 3.28, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
           },
           {
             emnekode: '6EV299', emnenavn: 'Bacheloroppgave', studiepoeng: 15, aar: 3, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['6EV299-1'],
+            years: [
+              { year: 2021, A: 0, B: 5, C: 4, D: 3, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 3.17, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2022, A: 0, B: 9, C: 8, D: 0, E: 3, F: 0, G: 0, H: 0, total: 20, snitt: 3.15, strykprosent: 0, bestattprosent: null, skjult: 8 },
+              { year: 2023, A: 0, B: 8, C: 4, D: 3, E: 0, F: 3, G: 0, H: 0, total: 18, snitt: 2.78, strykprosent: 16.7, bestattprosent: null, skjult: 4 },
+              { year: 2024, A: 0, B: 4, C: 5, D: 4, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 9 },
+              { year: 2025, A: 6, B: 5, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
           },
         ],
         spesialiseringer: [
@@ -467,13 +747,25 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
         obligatoriske: [
           {
             emnekode: 'NATF100', emnenavn: 'Innføringskurs i naturforvaltning', studiepoeng: 10, aar: 1, semester: 'helår',
-            dbhEmnekoder: [], merknad: '10 sp, undervises både i augustblokk/høstparallell og i vårparallell (5 sp hvert semester, iht. rutenettets kolonnebredder).',
-            years: [],
+            dbhEmnekoder: ['NATF100-1'], merknad: '10 sp, undervises både i augustblokk/høstparallell og i vårparallell (5 sp hvert semester, iht. rutenettets kolonnebredder).',
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 35, H: 0, total: 35, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 30, H: 0, total: 30, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 32, H: 0, total: 32, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 29, H: 0, total: 29, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 32, H: 0, total: 32, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
           },
           {
             emnekode: 'ZOOL100', emnenavn: 'Generell zoologi', studiepoeng: 5, aar: 1, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['ZOOL100-1'],
+            years: [
+              { year: 2021, A: 10, B: 12, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 4.03, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 10, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 4.71, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 10, B: 8, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 24, snitt: 4.17, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 7, B: 13, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 4.35, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 11, B: 11, C: 6, D: 3, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 3.97, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
           },
           {
             emnekode: 'MATH-INF100', emnenavn: 'Beregningsbasert matematikk i praksis', studiepoeng: 10, aar: 1, semester: 'høst',
@@ -482,78 +774,166 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
           },
           {
             emnekode: 'PHI100', emnenavn: 'Examen philosophicum', studiepoeng: 10, aar: 1, semester: 'høst',
-            dbhEmnekoder: [], merknad: 'Studieplanen gir valget mellom PHI100 og seminarversjonen PHI101 (samme forelesninger, ulikt seminar-/vurderingsopplegg).',
-            years: [],
+            dbhEmnekoder: ['PHI100-1'], merknad: 'Studieplanen gir valget mellom PHI100 og seminarversjonen PHI101 (samme forelesninger, ulikt seminar-/vurderingsopplegg).',
+            years: [
+              { year: 2021, A: 0, B: 3, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2022, A: 0, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2023, A: 0, B: 6, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 3.6, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 0, B: 3, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 3.38, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 0, B: 0, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 6 },
+            ],
           },
           {
             emnekode: 'NATF200', emnenavn: 'Vern og forvaltning av norsk natur', studiepoeng: 5, aar: 1, semester: 'januarblokk',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['NATF200-1'],
+            years: [
+              { year: 2021, A: 9, B: 12, C: 7, D: 6, E: 3, F: 0, G: 0, H: 0, total: 37, snitt: 3.49, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 3, B: 6, C: 8, D: 5, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 3.32, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 5, B: 17, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 3.87, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 0, B: 9, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 3.6, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 11, B: 10, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 4.14, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
           },
           {
             emnekode: 'BOT100', emnenavn: 'Plantediversitet', studiepoeng: 5, aar: 1, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['BOT100-1'],
+            years: [
+              { year: 2021, A: 3, B: 17, C: 10, D: 0, E: 0, F: 0, G: 0, H: 0, total: 30, snitt: 3.77, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 3, B: 7, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 3.76, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 0, B: 9, C: 12, D: 3, E: 0, F: 0, G: 0, H: 0, total: 24, snitt: 3.25, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 0, B: 13, C: 9, D: 3, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 3.4, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 0, B: 10, C: 9, D: 4, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 3.26, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
           },
           {
             emnekode: 'ZOOL220', emnenavn: 'Insekter og edderkoppdyr', studiepoeng: 5, aar: 1, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['ZOOL220-1'],
+            years: [
+              { year: 2021, A: 4, B: 15, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 3.85, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2022, A: 3, B: 11, C: 4, D: 3, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3.67, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 0, B: 13, C: 14, D: 4, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 3.29, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 0, B: 10, C: 6, D: 3, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3.37, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 4, B: 7, C: 13, D: 4, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 3.39, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
           },
           {
             emnekode: 'KJM100', emnenavn: 'Generell kjemi', studiepoeng: 10, aar: 1, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['KJM100-1'],
+            years: [
+              { year: 2021, A: 0, B: 12, C: 11, D: 6, E: 0, F: 0, G: 0, H: 0, total: 29, snitt: 3.21, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2022, A: 0, B: 9, C: 3, D: 3, E: 3, F: 0, G: 0, H: 0, total: 18, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 3, B: 11, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 3.77, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 7, B: 5, C: 6, D: 3, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3.76, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 14, B: 4, C: 3, D: 3, E: 0, F: 0, G: 0, H: 0, total: 24, snitt: 4.21, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
           },
           {
             emnekode: 'SKOG102', emnenavn: 'Innføring i skogforvaltning', studiepoeng: 5, aar: 2, semester: 'høst',
-            dbhEmnekoder: [], merknad: 'Studieplanens fotnote sier at SKOG100 (Skogforvaltning) kan tas i stedet for SKOG102; NMBUs emnesøk oppgir SKOG100 til 10 sp mot SKOG102s 5 sp, så de to alternativene er ikke nødvendigvis like store i praksis – uoverensstemmelsen er ikke videre forklart i kilden.',
-            years: [],
+            dbhEmnekoder: ['SKOG102-1'], merknad: 'Studieplanens fotnote sier at SKOG100 (Skogforvaltning) kan tas i stedet for SKOG102; NMBUs emnesøk oppgir SKOG100 til 10 sp mot SKOG102s 5 sp, så de to alternativene er ikke nødvendigvis like store i praksis – uoverensstemmelsen er ikke videre forklart i kilden.',
+            years: [
+              { year: 2021, A: 0, B: 8, C: 11, D: 3, E: 5, F: 0, G: 0, H: 0, total: 27, snitt: 2.81, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 5, B: 6, C: 5, D: 7, E: 5, F: 0, G: 0, H: 0, total: 28, snitt: 2.96, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 0, B: 13, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 3.72, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 0, B: 8, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 3.62, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2025, A: 8, B: 14, C: 10, D: 0, E: 0, F: 0, G: 0, H: 0, total: 32, snitt: 3.94, strykprosent: 0, bestattprosent: null, skjult: 4 },
+            ],
           },
           {
             emnekode: 'STAT100', emnenavn: 'Statistikk', studiepoeng: 10, aar: 2, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['STAT100-1'],
+            years: [
+              { year: 2021, A: 0, B: 5, C: 5, D: 4, E: 7, F: 10, G: 0, H: 0, total: 31, snitt: 1.61, strykprosent: 32.3, bestattprosent: null, skjult: 7 },
+              { year: 2022, A: 10, B: 4, C: 8, D: 0, E: 3, F: 0, G: 0, H: 0, total: 25, snitt: 3.72, strykprosent: 0, bestattprosent: null, skjult: 8 },
+              { year: 2023, A: 3, B: 8, C: 6, D: 6, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 3.35, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2024, A: 5, B: 3, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2025, A: 6, B: 0, C: 5, D: 3, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 3.64, strykprosent: 0, bestattprosent: null, skjult: 7 },
+            ],
           },
           {
             emnekode: 'LAD102', emnenavn: 'GIS - praktisk introduksjon', studiepoeng: 5, aar: 2, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['LAD102-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 31, H: 3, total: 34, snitt: null, strykprosent: null, bestattprosent: 91.2, skjult: 1 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 25, H: 0, total: 25, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 4 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 21, H: 3, total: 24, snitt: null, strykprosent: null, bestattprosent: 87.5, skjult: 2 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 24, H: 0, total: 24, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 4 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 25, H: 0, total: 25, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+            ],
           },
           {
             emnekode: 'ZOOL210', emnenavn: 'Virveldyr', studiepoeng: 10, aar: 2, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['ZOOL210-1'],
+            years: [
+              { year: 2021, A: 8, B: 16, C: 7, D: 3, E: 0, F: 0, G: 0, H: 0, total: 34, snitt: 3.85, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 6, B: 17, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 4.04, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 9, B: 10, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 4.22, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 6, B: 15, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 4.08, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 5, B: 11, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 3.95, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
           },
           {
             emnekode: 'ECOL200', emnenavn: 'Generell økologi', studiepoeng: 10, aar: 2, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['ECOL200-1'],
+            years: [
+              { year: 2021, A: 5, B: 8, C: 13, D: 6, E: 5, F: 0, G: 0, H: 0, total: 37, snitt: 3.05, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 4, B: 10, C: 16, D: 4, E: 0, F: 0, G: 0, H: 0, total: 34, snitt: 3.41, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 26, H: 0, total: 26, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 24, H: 0, total: 24, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 23, H: 0, total: 23, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 2 },
+            ],
           },
           {
             emnekode: 'ECN170', emnenavn: 'Miljø- og ressursøkonomi', studiepoeng: 5, aar: 2, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['ECN170-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 38, H: 6, total: 44, snitt: null, strykprosent: null, bestattprosent: 86.4, skjult: 0 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 22, H: 0, total: 22, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 3 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 41, H: 3, total: 44, snitt: null, strykprosent: null, bestattprosent: 93.2, skjult: 1 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 28, H: 4, total: 32, snitt: null, strykprosent: null, bestattprosent: 87.5, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 27, H: 0, total: 27, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 4 },
+            ],
           },
           {
             emnekode: 'BOT270', emnenavn: 'Kartlegging av natur', studiepoeng: 5, aar: 3, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['BOT270-1'],
+            years: [
+              { year: 2021, A: 4, B: 10, C: 16, D: 5, E: 0, F: 0, G: 0, H: 0, total: 35, snitt: 3.37, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 3, B: 12, C: 12, D: 0, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 3.67, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 3, B: 6, C: 13, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 3.55, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 0, B: 6, C: 23, D: 0, E: 0, F: 0, G: 0, H: 0, total: 29, snitt: 3.21, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 0, B: 5, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 3.36, strykprosent: 0, bestattprosent: null, skjult: 4 },
+            ],
           },
           {
             emnekode: 'JUS201', emnenavn: 'Offentlig saksbehandling og forvaltningsrett', studiepoeng: 5, aar: 3, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['JUS201-1'],
+            years: [
+              { year: 2021, A: 0, B: 15, C: 16, D: 0, E: 0, F: 6, G: 0, H: 0, total: 37, snitt: 2.92, strykprosent: 16.2, bestattprosent: null, skjult: 8 },
+              { year: 2022, A: 3, B: 10, C: 4, D: 3, E: 3, F: 0, G: 0, H: 0, total: 23, snitt: 3.3, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2023, A: 4, B: 7, C: 6, D: 0, E: 0, F: 5, G: 0, H: 0, total: 22, snitt: 3, strykprosent: 22.7, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 0, B: 11, C: 14, D: 3, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 3.29, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2025, A: 4, B: 7, C: 9, D: 7, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 3.3, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
           },
           {
             emnekode: 'MINA250', emnenavn: 'Tverrfaglig konsekvensanalyse', studiepoeng: 10, aar: 3, semester: 'vår',
-            dbhEmnekoder: [], merknad: '10 sp, undervises i januarblokk og vårparallell (5 sp hvert, iht. rutenettets kolonnebredder).',
-            years: [],
+            dbhEmnekoder: ['MINA250-1'], merknad: '10 sp, undervises i januarblokk og vårparallell (5 sp hvert, iht. rutenettets kolonnebredder).',
+            years: [
+              { year: 2023, A: 5, B: 19, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 29, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 0, B: 25, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 11, B: 14, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 30, snitt: 4.2, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
           },
           {
             emnekode: 'ECOL201', emnenavn: 'Økologisk fordypningsoppgave', studiepoeng: 5, aar: 3, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['ECOL201-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 6, H: 0, total: 6, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 6, H: 0, total: 6, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 3, H: 0, total: 3, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 25, H: 0, total: 25, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 2 },
+            ],
           },
         ],
         spesialiseringer: [
@@ -567,98 +947,194 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
         obligatoriske: [
           {
             emnekode: 'SKO1105', emnenavn: 'Naturgrunnlaget', studiepoeng: 15, aar: 1, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKO1105-1'],
+            years: [
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 19, H: 0, total: 19, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 18, H: 0, total: 18, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2024, A: 3, B: 8, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3.74, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 7, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 4.58, strykprosent: 0, bestattprosent: null, skjult: 4 },
+            ],
           },
           {
             emnekode: 'UTM1100', emnenavn: 'Biologi', studiepoeng: 7.5, aar: 1, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['UTM1100-1'],
+            years: [
+              { year: 2021, A: 0, B: 5, C: 6, D: 3, E: 0, F: 5, G: 0, H: 0, total: 19, snitt: 2.32, strykprosent: 26.3, bestattprosent: null, skjult: 7 },
+              { year: 2022, A: 7, B: 4, C: 5, D: 3, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3.79, strykprosent: 0, bestattprosent: null, skjult: 8 },
+              { year: 2023, A: 7, B: 6, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 4.54, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2024, A: 0, B: 5, C: 6, D: 0, E: 3, F: 0, G: 0, H: 0, total: 14, snitt: 2.93, strykprosent: 0, bestattprosent: null, skjult: 7 },
+              { year: 2025, A: 5, B: 3, C: 3, D: 4, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 3.6, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
           },
           {
             emnekode: 'SKO1101', emnenavn: 'Skognæringen i Norge', studiepoeng: 7.5, aar: 1, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKO1101-1'],
+            years: [
+              { year: 2021, A: 0, B: 8, C: 14, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 3.36, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 0, B: 5, C: 4, D: 3, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 3.17, strykprosent: 0, bestattprosent: null, skjult: 6 },
+            ],
           },
           {
             emnekode: 'UTM1120', emnenavn: 'Ferskvannsøkologi', studiepoeng: 7.5, aar: 1, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['UTM1120-1'],
+            years: [
+              { year: 2023, A: 3, B: 6, C: 3, D: 6, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 3.33, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 0, B: 4, C: 9, D: 4, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 0, B: 3, C: 6, D: 3, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 4 },
+            ],
           },
           {
             emnekode: '6EV132', emnenavn: 'Norsk fauna', studiepoeng: 7.5, aar: 1, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['6EV132-1'],
+            years: [
+              { year: 2021, A: 3, B: 15, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 3.91, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 0, B: 0, C: 6, D: 11, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 2.35, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 17, H: 0, total: 17, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 17, H: 0, total: 17, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 9, B: 0, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 4.12, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
           },
           {
             emnekode: 'UTM1133', emnenavn: 'Økologi', studiepoeng: 7.5, aar: 1, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['UTM1133-1'],
+            years: [
+              { year: 2023, A: 0, B: 6, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 3.46, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2024, A: 0, B: 0, C: 5, D: 6, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 2.45, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 0, B: 3, C: 4, D: 6, E: 0, F: 4, G: 0, H: 0, total: 17, snitt: 2.12, strykprosent: 23.5, bestattprosent: null, skjult: 3 },
+            ],
           },
           {
             emnekode: 'UTM1140', emnenavn: 'Wildlife ecology', studiepoeng: 7.5, aar: 1, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['UTM1140-1'],
+            years: [
+              { year: 2021, A: 0, B: 4, C: 6, D: 3, E: 0, F: 7, G: 0, H: 0, total: 20, snitt: 2, strykprosent: 35, bestattprosent: null, skjult: 8 },
+              { year: 2022, A: 5, B: 3, C: 0, D: 7, E: 3, F: 4, G: 0, H: 0, total: 22, snitt: 2.45, strykprosent: 18.2, bestattprosent: null, skjult: 6 },
+              { year: 2023, A: 4, B: 3, C: 8, D: 0, E: 0, F: 3, G: 0, H: 0, total: 18, snitt: 3.11, strykprosent: 16.7, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 0, B: 4, C: 6, D: 5, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 2.93, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 3, B: 6, C: 6, D: 4, E: 4, F: 0, G: 0, H: 0, total: 23, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
           },
           {
             emnekode: 'UTM2220', emnenavn: 'Fiskeforvaltning', studiepoeng: 7.5, aar: 2, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['UTM2220-1'],
+            years: [
+              { year: 2021, A: 5, B: 8, C: 5, D: 4, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 3.64, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 3, B: 10, C: 6, D: 3, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 3.59, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 0, B: 9, C: 17, D: 7, E: 0, F: 0, G: 0, H: 0, total: 33, snitt: 3.06, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 0, B: 0, C: 5, D: 5, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 2.5, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 0, B: 5, C: 5, D: 8, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 2.83, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
           },
           {
             emnekode: 'UTM2140', emnenavn: 'Viltforvaltning', studiepoeng: 7.5, aar: 2, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['UTM2140-1'],
+            years: [
+              { year: 2023, A: 4, B: 6, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 3.93, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 7, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 4.64, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 4, B: 4, C: 4, D: 0, E: 0, F: 4, G: 0, H: 0, total: 16, snitt: 3, strykprosent: 25, bestattprosent: null, skjult: 2 },
+            ],
           },
           {
             emnekode: '6EV153', emnenavn: 'Introduksjon til geografiske informasjonssystemer', studiepoeng: 7.5, aar: 2, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['6EV153-1'],
+            years: [
+              { year: 2021, A: 0, B: 4, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 3.36, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 4, B: 16, C: 8, D: 10, E: 0, F: 0, G: 0, H: 0, total: 38, snitt: 3.37, strykprosent: 0, bestattprosent: null, skjult: 8 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 12, H: 0, total: 12, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 19, H: 0, total: 19, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
           },
           {
             emnekode: 'SKO1154', emnenavn: 'Forvaltningsrett', studiepoeng: 7.5, aar: 2, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKO1154-1'],
+            years: [
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 3, B: 0, C: 7, D: 4, E: 0, F: 3, G: 0, H: 0, total: 17, snitt: 2.59, strykprosent: 17.6, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 0, B: 5, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2025, A: 5, B: 5, C: 5, D: 3, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 3.67, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
           },
           {
             emnekode: '6EV298', emnenavn: 'Vitenskapelig metode og statistikk', studiepoeng: 15, aar: 2, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['6EV298-1'],
+            years: [
+              { year: 2021, A: 0, B: 10, C: 9, D: 4, E: 0, F: 4, G: 0, H: 0, total: 27, snitt: 2.78, strykprosent: 14.8, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 0, B: 9, C: 3, D: 5, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 3.24, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 0, B: 0, C: 5, D: 9, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 2.36, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2024, A: 0, B: 0, C: 16, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 0, B: 3, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 3.43, strykprosent: 0, bestattprosent: null, skjult: 4 },
+            ],
           },
           {
             emnekode: '6EV150', emnenavn: 'Naturoppsyn', studiepoeng: 7.5, aar: 2, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['6EV150-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 18, H: 0, total: 18, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 11, H: 0, total: 11, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 2 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 16, H: 0, total: 16, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 6, H: 0, total: 6, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 2 },
+            ],
           },
           {
             emnekode: 'UTM1176', emnenavn: 'Large predator ecology and management', studiepoeng: 7.5, aar: 3, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['UTM1176-1'],
+            years: [
+              { year: 2022, A: 0, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 7, B: 4, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 4.06, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 0, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
           },
           {
             emnekode: '6EV175', emnenavn: 'Biomedisin', studiepoeng: 7.5, aar: 3, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['6EV175-1'],
+            years: [
+              { year: 2021, A: 0, B: 9, C: 12, D: 0, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3.43, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 0, B: 3, C: 9, D: 6, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 2.83, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2024, A: 3, B: 3, C: 5, D: 5, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 3.25, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 4, F: 0, G: 0, H: 0, total: 4, snitt: 1, strykprosent: 0, bestattprosent: null, skjult: 4 },
+            ],
           },
           {
             emnekode: 'SKO2153', emnenavn: 'Geografisk analyse', studiepoeng: 7.5, aar: 3, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKO2153-1'],
+            years: [
+              { year: 2024, A: 6, B: 6, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 4.2, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 3, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
           },
           {
             emnekode: 'UTM1151', emnenavn: 'Besøksforvaltning og naturveiledning', studiepoeng: 7.5, aar: 3, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['UTM1151-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 8 },
+              { year: 2022, A: 0, B: 0, C: 7, D: 8, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 2.47, strykprosent: 0, bestattprosent: null, skjult: 7 },
+              { year: 2023, A: 0, B: 4, C: 3, D: 0, E: 4, F: 0, G: 0, H: 0, total: 11, snitt: 2.64, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2024, A: 0, B: 3, C: 3, D: 8, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 2.64, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 0, B: 0, C: 4, D: 4, E: 3, F: 0, G: 0, H: 0, total: 11, snitt: 2.09, strykprosent: 0, bestattprosent: null, skjult: 5 },
+            ],
           },
           {
             emnekode: '6EV155', emnenavn: 'Arealforvaltning', studiepoeng: 7.5, aar: 3, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['6EV155-1'],
+            years: [
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 6 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 4, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 2, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 3, B: 7, C: 4, D: 0, E: 4, F: 0, G: 0, H: 0, total: 18, snitt: 3.28, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
           },
           {
             emnekode: '6EV299', emnenavn: 'Bacheloroppgave', studiepoeng: 15, aar: 3, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['6EV299-1'],
+            years: [
+              { year: 2021, A: 0, B: 5, C: 4, D: 3, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 3.17, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2022, A: 0, B: 9, C: 8, D: 0, E: 3, F: 0, G: 0, H: 0, total: 20, snitt: 3.15, strykprosent: 0, bestattprosent: null, skjult: 8 },
+              { year: 2023, A: 0, B: 8, C: 4, D: 3, E: 0, F: 3, G: 0, H: 0, total: 18, snitt: 2.78, strykprosent: 16.7, bestattprosent: null, skjult: 4 },
+              { year: 2024, A: 0, B: 4, C: 5, D: 4, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 9 },
+              { year: 2025, A: 6, B: 5, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
           },
         ],
         spesialiseringer: [
@@ -676,28 +1152,43 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
         obligatoriske: [
           {
             emnekode: 'KJE1001', emnenavn: 'Laboratoriesikkerhet', studiepoeng: 0, aar: 1, semester: 'høst',
-            dbhEmnekoder: [], merknad: '0 sp, men obligatorisk i studieplanen.',
-            years: [],
+            dbhEmnekoder: ['KJE1001-1'], merknad: '0 sp, men obligatorisk i studieplanen.',
+            years: [
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 18, H: 0, total: 18, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 23, H: 0, total: 23, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
           },
           {
             emnekode: 'GEO1010', emnenavn: 'Kartlære og datafangst', studiepoeng: 7.5, aar: 1, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['GEO1010-1'],
+            years: [
+              { year: 2024, A: 0, B: 0, C: 4, D: 9, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 2.31, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 0, B: 4, C: 11, D: 4, E: 6, F: 0, G: 0, H: 0, total: 25, snitt: 2.52, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
           },
           {
             emnekode: 'BIO1004', emnenavn: 'Naturtyper, klima og geologi', studiepoeng: 7.5, aar: 1, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['BIO1004-1'],
+            years: [
+              { year: 2024, A: 0, B: 5, C: 4, D: 0, E: 0, F: 3, G: 0, H: 0, total: 12, snitt: 2.67, strykprosent: 25, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 3, B: 5, C: 10, D: 3, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3.38, strykprosent: 0, bestattprosent: null, skjult: 4 },
+            ],
           },
           {
             emnekode: 'NAF1000', emnenavn: 'Fisk- og viltforvaltning', studiepoeng: 7.5, aar: 1, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['NAF1000-1'],
+            years: [
+              { year: 2024, A: 8, B: 3, C: 0, D: 4, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 9, B: 5, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 4.1, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
           },
           {
             emnekode: 'KJE1000', emnenavn: 'Grunnleggende kjemi', studiepoeng: 7.5, aar: 1, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['KJE1000-1'],
+            years: [
+              { year: 2024, A: 0, B: 0, C: 0, D: 5, E: 4, F: 5, G: 0, H: 0, total: 14, snitt: 1, strykprosent: 35.7, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 18, G: 0, H: 0, total: 18, snitt: 0, strykprosent: 100, bestattprosent: null, skjult: 8 },
+            ],
           },
           {
             emnekode: 'BIO1014', emnenavn: 'Innføring i zoologi', studiepoeng: 7.5, aar: 1, semester: 'vår',
@@ -706,38 +1197,52 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
           },
           {
             emnekode: 'BIO1011', emnenavn: 'Innføring i botanikk', studiepoeng: 7.5, aar: 1, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['BIO1011-1'],
+            years: [
+              { year: 2025, A: 0, B: 4, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 3.44, strykprosent: 0, bestattprosent: null, skjult: 7 },
+            ],
           },
           {
             emnekode: 'BIO1009', emnenavn: 'Cellebiologi', studiepoeng: 7.5, aar: 1, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['BIO1009-1'],
+            years: [
+              { year: 2025, A: 0, B: 3, C: 3, D: 3, E: 0, F: 5, G: 0, H: 0, total: 14, snitt: 1.93, strykprosent: 35.7, bestattprosent: null, skjult: 5 },
+            ],
           },
           {
             emnekode: 'BIO1008', emnenavn: 'Bærekraft, klima og etikk', studiepoeng: 7.5, aar: 1, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['BIO1008-1'],
+            years: [
+              { year: 2025, A: 0, B: 6, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 3.46, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
           },
           {
             emnekode: 'MET1005', emnenavn: 'Akademisk skriving og metode', studiepoeng: 7.5, aar: 2, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['MET1005-1'],
+            years: [
+              { year: 2025, A: 0, B: 0, C: 10, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 7 },
+            ],
           },
           {
             emnekode: 'GEO2011', emnenavn: 'Geografisk informasjonsbehandling', studiepoeng: 7.5, aar: 2, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['GEO2011-1'],
+            years: [
+              { year: 2025, A: 0, B: 0, C: 8, D: 4, E: 4, F: 0, G: 0, H: 0, total: 16, snitt: 2.25, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
           },
           {
             emnekode: 'NAF1001', emnenavn: 'Rettslære for naturforvaltere', studiepoeng: 7.5, aar: 2, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['NAF1001-1'],
+            years: [
+              { year: 2025, A: 0, B: 3, C: 6, D: 5, E: 3, F: 0, G: 0, H: 0, total: 17, snitt: 2.53, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
           },
           {
             emnekode: 'ØKO2002', emnenavn: 'Populasjonsøkologi', studiepoeng: 7.5, aar: 2, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['ØKO2002-1'],
+            years: [
+              { year: 2025, A: 4, B: 5, C: 7, D: 3, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3.53, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
           },
           {
             emnekode: 'NAF2007', emnenavn: 'Arealbruk i naturforvaltning', studiepoeng: 7.5, aar: 3, semester: 'høst',
@@ -761,8 +1266,14 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
           },
           {
             emnekode: 'BAC360', emnenavn: 'Bacheloroppgave i naturforvaltning', studiepoeng: 15, aar: 3, semester: 'vår',
-            dbhEmnekoder: [], merknad: 'Registreres i to deler: «1/2» i 5. semester (høst, 0 sp vist) og «2/2» i 6. semester (vår, 15 sp), ført her samlet som ett emne på 15 sp i 3. år vår.',
-            years: [],
+            dbhEmnekoder: ['BAC360-1'], merknad: 'Registreres i to deler: «1/2» i 5. semester (høst, 0 sp vist) og «2/2» i 6. semester (vår, 15 sp), ført her samlet som ett emne på 15 sp i 3. år vår.',
+            years: [
+              { year: 2021, A: 0, B: 12, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 3.6, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2022, A: 5, B: 9, C: 7, D: 7, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 3.43, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 6, B: 7, C: 7, D: 5, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 3.56, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 4, B: 10, C: 11, D: 3, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 3.54, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 3, B: 10, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 3.89, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
           },
         ],
         spesialiseringer: [
@@ -966,23 +1477,45 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
         obligatoriske: [
           {
             emnekode: 'SKOG302', emnenavn: 'Flerbruk og flerbruksplanlegging i skog', studiepoeng: 10, aar: 1, semester: 'høst',
-            dbhEmnekoder: [], merknad: 'Går over Augustblokk og Høstparallell samme semester.',
-            years: [],
+            dbhEmnekoder: ['SKOG302-1'], merknad: 'Går over Augustblokk og Høstparallell samme semester.',
+            years: [
+              { year: 2021, A: 3, B: 9, C: 5, D: 4, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3.52, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 0, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2023, A: 5, B: 8, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 4.38, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 0, B: 7, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 3.7, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 5, B: 8, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 4.38, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
           },
           {
             emnekode: 'MINA321', emnenavn: 'Tverrfaglig samarbeid og kontroverser om bærekraft - engelsk versjon', studiepoeng: 5, aar: 1, semester: 'vår',
-            dbhEmnekoder: [], merknad: 'Ligger i Januarblokk. MINA320 (norsk versjon av samme emne) kan tas i høstparallellen i stedet.',
-            years: [],
+            dbhEmnekoder: ['MINA321-1'], merknad: 'Ligger i Januarblokk. MINA320 (norsk versjon av samme emne) kan tas i høstparallellen i stedet.',
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 8, H: 0, total: 8, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+            ],
           },
           {
             emnekode: 'SKOG300', emnenavn: 'Skogplanlegging', studiepoeng: 10, aar: 2, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKOG300-1'],
+            years: [
+              { year: 2021, A: 0, B: 5, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 3.62, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 0, B: 5, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 3.36, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 0, B: 7, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2024, A: 0, B: 4, C: 9, D: 4, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 3, B: 4, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 3.83, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
           },
           {
             emnekode: 'M30-SF', emnenavn: 'Masteroppgave', studiepoeng: 30, aar: 2, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['M30-SF-1'],
+            years: [
+              { year: 2021, A: 4, B: 6, C: 4, D: 3, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 3.65, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 0, B: 4, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 3.57, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 0, B: 5, C: 5, D: 4, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 3.07, strykprosent: 0, bestattprosent: null, skjult: 7 },
+              { year: 2024, A: 3, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 4.38, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 0, B: 9, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 3.69, strykprosent: 0, bestattprosent: null, skjult: 5 },
+            ],
           },
         ],
         spesialiseringer: [
@@ -996,33 +1529,46 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
         obligatoriske: [
           {
             emnekode: 'SKO4004S', emnenavn: 'Flerbruk i skog: teori og praksis', studiepoeng: 10, aar: 1, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKO4004S-1'],
+            years: [
+              { year: 2025, A: 7, B: 9, C: 12, D: 5, E: 0, F: 0, G: 0, H: 0, total: 33, snitt: 3.55, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
           },
           {
             emnekode: 'MBJ4002S', emnenavn: 'Forskningsmetode og dataanalyse', studiepoeng: 10, aar: 1, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['MBJ4002S-1'],
+            years: [
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 17, H: 0, total: 17, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 17, H: 0, total: 17, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 2 },
+            ],
           },
           {
             emnekode: 'SKO4003S', emnenavn: 'Geographic Information Systems', studiepoeng: 10, aar: 1, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKO4003S-1'],
+            years: [
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 15, H: 0, total: 15, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 3 },
+            ],
           },
           {
             emnekode: 'SKO4002S', emnenavn: 'Bærekraftig skogbruk', studiepoeng: 10, aar: 1, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKO4002S-1'],
+            years: [
+              { year: 2025, A: 0, B: 3, C: 3, D: 4, E: 4, F: 0, G: 0, H: 0, total: 14, snitt: 2.36, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
           },
           {
             emnekode: 'SKO4001S', emnenavn: 'Areal- og eiendomsforvaltning', studiepoeng: 10, aar: 2, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKO4001S-1'],
+            years: [
+              { year: 2024, A: 0, B: 4, C: 6, D: 5, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 2.93, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
           },
           {
             emnekode: 'SKO4005S', emnenavn: 'Ressurskartlegging', studiepoeng: 10, aar: 2, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKO4005S-1'],
+            years: [
+              { year: 2025, A: 0, B: 0, C: 7, D: 4, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 2.64, strykprosent: 0, bestattprosent: null, skjult: 4 },
+            ],
           },
           {
             emnekode: 'SKO4006S', emnenavn: 'Prosjektledelse', studiepoeng: 10, aar: 2, semester: 'vår',
@@ -1061,38 +1607,74 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
         obligatoriske: [
           {
             emnekode: 'NATF300', emnenavn: 'Bevaringsbiologi', studiepoeng: 5, aar: 1, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['NATF300-1'],
+            years: [
+              { year: 2021, A: 0, B: 3, C: 6, D: 4, E: 4, F: 0, G: 0, H: 0, total: 17, snitt: 2.47, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2022, A: 6, B: 7, C: 0, D: 5, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 3.78, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 5, B: 11, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 4.05, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 0, B: 8, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 3.62, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 4, B: 5, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 3.81, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
           },
           {
             emnekode: 'ECOL310', emnenavn: 'Økologiske effekter av globale miljøendringer', studiepoeng: 5, aar: 1, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['ECOL310-1'],
+            years: [
+              { year: 2021, A: 5, B: 7, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 4.42, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 9, B: 7, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 4.25, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 11, B: 16, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 30, snitt: 4.27, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 6, B: 10, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 4.05, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 11, B: 9, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 4.55, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
           },
           {
             emnekode: 'ECOL302', emnenavn: 'Økologisk forskning', studiepoeng: 5, aar: 1, semester: 'høst',
-            dbhEmnekoder: [], merknad: 'Ligger i Augustblokk.',
-            years: [],
+            dbhEmnekoder: ['ECOL302-1'], merknad: 'Ligger i Augustblokk.',
+            years: [
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 22, H: 0, total: 22, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 23, H: 0, total: 23, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 17, H: 0, total: 17, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 20, H: 0, total: 20, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
           },
           {
             emnekode: 'MINA310', emnenavn: 'Naturvitenskapelig metode', studiepoeng: 5, aar: 1, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['MINA310-1'],
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 24, H: 0, total: 24, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 17, H: 0, total: 17, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 17, H: 0, total: 17, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
           },
           {
             emnekode: 'ECOL350', emnenavn: 'Restaureringsøkologi', studiepoeng: 5, aar: 1, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['ECOL350-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 11, H: 0, total: 11, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 24, H: 0, total: 24, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 16, H: 0, total: 16, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 17, H: 0, total: 17, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
           },
           {
             emnekode: 'MINA321', emnenavn: 'Tverrfaglig samarbeid og kontroverser om bærekraft - engelsk versjon', studiepoeng: 5, aar: 1, semester: 'vår',
-            dbhEmnekoder: [], merknad: 'Ligger i Januarblokk. MINA320 (norsk versjon av samme emne) kan tas i høstsemesteret av studenter som behersker norsk.',
-            years: [],
+            dbhEmnekoder: ['MINA321-1'], merknad: 'Ligger i Januarblokk. MINA320 (norsk versjon av samme emne) kan tas i høstsemesteret av studenter som behersker norsk.',
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 19, H: 0, total: 19, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 11, H: 0, total: 11, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 14, H: 0, total: 14, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
           },
           {
             emnekode: 'M60-ECOL', emnenavn: 'Masteroppgave', studiepoeng: 60, aar: 2, semester: 'høst',
-            dbhEmnekoder: [], merknad: 'Går over hele 2. studieår (30 sp høst + 30 sp vår), altså begge semestre i år 2.',
-            years: [],
+            dbhEmnekoder: ['M60-ECOL-1'], merknad: 'Går over hele 2. studieår (30 sp høst + 30 sp vår), altså begge semestre i år 2.',
+            years: [
+              { year: 2021, A: 6, B: 7, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 4.19, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 5, B: 8, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3.95, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 0, B: 8, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 3.67, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 6, B: 10, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 4.16, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 6, B: 10, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 4.05, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
           },
         ],
         spesialiseringer: [
@@ -1106,13 +1688,19 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
         obligatoriske: [
           {
             emnekode: 'MAOK4001', emnenavn: 'Concepts in ecology', studiepoeng: 5, aar: 1, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['MAOK4001-1'],
+            years: [
+              { year: 2024, A: 0, B: 7, C: 7, D: 3, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 3.24, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 9, B: 6, C: 9, D: 5, E: 0, F: 0, G: 0, H: 0, total: 29, snitt: 3.66, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
           },
           {
             emnekode: 'MAOK4002', emnenavn: 'Biostatistics', studiepoeng: 10, aar: 1, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['MAOK4002-1'],
+            years: [
+              { year: 2024, A: 6, B: 4, C: 5, D: 3, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 3.72, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 0, B: 3, C: 11, D: 3, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 5 },
+            ],
           },
           {
             emnekode: 'MAOK4012', emnenavn: 'Nature in the Anthropocene', studiepoeng: 5, aar: 1, semester: 'høst',
@@ -1131,23 +1719,35 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
           },
           {
             emnekode: 'SKO4003S', emnenavn: 'Geographic Information Systems', studiepoeng: 10, aar: 1, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKO4003S-1'],
+            years: [
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 17, H: 0, total: 17, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
           },
           {
             emnekode: 'MAOK4004', emnenavn: 'Wildlife monitoring', studiepoeng: 10, aar: 1, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['MAOK4004-1'],
+            years: [
+              { year: 2025, A: 0, B: 6, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 3.67, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
           },
           {
             emnekode: 'MAOK4005', emnenavn: 'Research process and topics', studiepoeng: 10, aar: 2, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['MAOK4005-1'],
+            years: [
+              { year: 2025, A: 10, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 4.67, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
           },
           {
             emnekode: '6EV399', emnenavn: 'Master thesis in applied ecology', studiepoeng: 60, aar: 1, semester: 'vår',
-            dbhEmnekoder: [], merknad: 'Går over tre semestre ifølge studiemodell-tabellen: 10 sp i 1. år vår, 20 sp i 2. år høst og 30 sp i 2. år vår (totalt 60 sp).',
-            years: [],
+            dbhEmnekoder: ['6EV399-1'], merknad: 'Går over tre semestre ifølge studiemodell-tabellen: 10 sp i 1. år vår, 20 sp i 2. år høst og 30 sp i 2. år vår (totalt 60 sp).',
+            years: [
+              { year: 2021, A: 0, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2022, A: 3, B: 18, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 3.89, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 8 },
+              { year: 2024, A: 3, B: 9, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 3.94, strykprosent: 0, bestattprosent: null, skjult: 8 },
+              { year: 2025, A: 8, B: 7, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 4.05, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
           },
         ],
         spesialiseringer: [
@@ -1161,18 +1761,34 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
         obligatoriske: [
           {
             emnekode: 'HMS0003', emnenavn: 'Health, Safety and Environment (HSE) course for master students', studiepoeng: 0, aar: 1, semester: 'høst',
-            dbhEmnekoder: [], merknad: 'Felles for alle fire studieretninger.',
-            years: [],
+            dbhEmnekoder: ['HMS0003-1'], merknad: 'Felles for alle fire studieretninger.',
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 50, H: 0, total: 50, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 22, H: 0, total: 22, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 20, H: 0, total: 20, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 21, H: 0, total: 21, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 2 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 36, H: 0, total: 36, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+            ],
           },
           {
             emnekode: 'BI3085', emnenavn: 'Biology without borders', studiepoeng: 7.5, aar: 1, semester: 'høst',
-            dbhEmnekoder: [], merknad: 'Går over alle fire semestre (del 1-4 av 4), 7,5 sp totalt. Felles for alle fire studieretninger.',
-            years: [],
+            dbhEmnekoder: ['BI3085-1'], merknad: 'Går over alle fire semestre (del 1-4 av 4), 7,5 sp totalt. Felles for alle fire studieretninger.',
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 21, H: 0, total: 21, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 14, H: 0, total: 14, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 2 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 15, H: 4, total: 19, snitt: null, strykprosent: null, bestattprosent: 78.9, skjult: 0 },
+            ],
           },
           {
             emnekode: 'BI3900', emnenavn: 'Master Thesis in Biology', studiepoeng: 60, aar: 1, semester: 'høst',
-            dbhEmnekoder: [], merknad: 'Går over alle fire semestre (del 1-4 av 4), 60 sp totalt. Obligatorisk for studieretningene Ecology/Behaviour/Evolution/Biosystematics, Physiology og Biodiversity and Systematics (Nabis). I studieretningen Cell and Molecular Biology er dette et obligatorisk valg mellom BI3900 og BT3920 (Master Thesis in Biology at IBT) - se merknad på den studieretningen.',
-            years: [],
+            dbhEmnekoder: ['BI3900-1'], merknad: 'Går over alle fire semestre (del 1-4 av 4), 60 sp totalt. Obligatorisk for studieretningene Ecology/Behaviour/Evolution/Biosystematics, Physiology og Biodiversity and Systematics (Nabis). I studieretningen Cell and Molecular Biology er dette et obligatorisk valg mellom BI3900 og BT3920 (Master Thesis in Biology at IBT) - se merknad på den studieretningen.',
+            years: [
+              { year: 2021, A: 7, B: 6, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 4.05, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 7, B: 14, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 4.04, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2023, A: 3, B: 16, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 3.88, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 0, B: 6, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 9 },
+              { year: 2025, A: 7, B: 6, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 4.54, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
           },
         ],
         spesialiseringer: [
@@ -1181,8 +1797,14 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
           { navn: 'Cell and Molecular Biology', obligatoriske: [
             {
               emnekode: 'BI3016', emnenavn: 'Molecular Cell Biology', studiepoeng: 7.5, aar: 1, semester: 'høst',
-              dbhEmnekoder: [],
-              years: [],
+              dbhEmnekoder: ['BI3016-1'],
+              years: [
+                { year: 2021, A: 0, B: 4, C: 3, D: 4, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 4 },
+                { year: 2022, A: 0, B: 0, C: 5, D: 4, E: 0, F: 6, G: 0, H: 0, total: 15, snitt: 1.53, strykprosent: 40, bestattprosent: null, skjult: 4 },
+                { year: 2023, A: 0, B: 3, C: 9, D: 4, E: 0, F: 3, G: 0, H: 0, total: 19, snitt: 2.47, strykprosent: 15.8, bestattprosent: null, skjult: 3 },
+                { year: 2024, A: 3, B: 3, C: 0, D: 3, E: 0, F: 7, G: 0, H: 0, total: 16, snitt: 2.06, strykprosent: 43.8, bestattprosent: null, skjult: 5 },
+                { year: 2025, A: 0, B: 0, C: 4, D: 0, E: 0, F: 6, G: 0, H: 0, total: 10, snitt: 1.2, strykprosent: 60, bestattprosent: null, skjult: 6 },
+              ],
             },
           ] },
           { navn: 'Physiology', obligatoriske: [
@@ -1209,8 +1831,14 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
           },
           {
             emnekode: 'BIO-3950', emnenavn: 'Master\'s Thesis Biology', studiepoeng: 60, aar: 2, semester: 'høst',
-            dbhEmnekoder: [], merknad: 'Går over hele 2. studieår (3. og 4. semester, 30 sp hvert semester). Felles for alle sju spesialiseringer.',
-            years: [],
+            dbhEmnekoder: ['BIO-3950-1'], merknad: 'Går over hele 2. studieår (3. og 4. semester, 30 sp hvert semester). Felles for alle sju spesialiseringer.',
+            years: [
+              { year: 2021, A: 8, B: 15, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2022, A: 9, B: 24, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 41, snitt: 4.02, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 6, B: 27, C: 5, D: 3, E: 0, F: 0, G: 0, H: 0, total: 41, snitt: 3.88, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2024, A: 10, B: 14, C: 13, D: 0, E: 0, F: 0, G: 0, H: 0, total: 37, snitt: 3.92, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 6, B: 16, C: 11, D: 0, E: 0, F: 0, G: 0, H: 0, total: 33, snitt: 3.85, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
           },
         ],
         spesialiseringer: [
@@ -1234,59 +1862,116 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
           { navn: 'Arctic marine ecology', obligatoriske: [
             {
               emnekode: 'BIO-3015', emnenavn: 'Arctic Marine System Biology and Climate Change', studiepoeng: 10, aar: 1, semester: 'høst',
-              dbhEmnekoder: [],
-              years: [],
+              dbhEmnekoder: ['BIO-3015-1'],
+              years: [
+                { year: 2021, A: 0, B: 8, C: 4, D: 5, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 3.18, strykprosent: 0, bestattprosent: null, skjult: 5 },
+                { year: 2022, A: 0, B: 11, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 3.65, strykprosent: 0, bestattprosent: null, skjult: 6 },
+                { year: 2023, A: 8, B: 8, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 4.26, strykprosent: 0, bestattprosent: null, skjult: 0 },
+                { year: 2024, A: 15, B: 12, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 4.56, strykprosent: 0, bestattprosent: null, skjult: 0 },
+                { year: 2025, A: 11, B: 8, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 4.58, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              ],
             },
             {
               emnekode: 'BIO-3012', emnenavn: 'Ecological methodology: Study design and statistical analysis', studiepoeng: 10, aar: 1, semester: 'vår',
-              dbhEmnekoder: [],
-              years: [],
+              dbhEmnekoder: ['BIO-3012-1'],
+              years: [
+                { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 40, H: 3, total: 43, snitt: null, strykprosent: null, bestattprosent: 93, skjult: 2 },
+                { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 43, H: 8, total: 51, snitt: null, strykprosent: null, bestattprosent: 84.3, skjult: 1 },
+                { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 35, H: 9, total: 44, snitt: null, strykprosent: null, bestattprosent: 79.5, skjult: 0 },
+                { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 42, H: 5, total: 47, snitt: null, strykprosent: null, bestattprosent: 89.4, skjult: 1 },
+                { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 46, H: 0, total: 46, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 2 },
+              ],
             },
           ] },
           { navn: 'Arctic marine ecotoxicology', obligatoriske: [
             {
               emnekode: 'BIO-3009', emnenavn: 'Arctic Marine Pollution', studiepoeng: 10, aar: 1, semester: 'høst',
-              dbhEmnekoder: [],
-              years: [],
+              dbhEmnekoder: ['BIO-3009-1'],
+              years: [
+                { year: 2021, A: 3, B: 5, C: 7, D: 4, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3.37, strykprosent: 0, bestattprosent: null, skjult: 2 },
+                { year: 2022, A: 3, B: 7, C: 3, D: 3, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 3.62, strykprosent: 0, bestattprosent: null, skjult: 0 },
+                { year: 2023, A: 3, B: 5, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 3.73, strykprosent: 0, bestattprosent: null, skjult: 0 },
+                { year: 2024, A: 8, B: 6, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 4.29, strykprosent: 0, bestattprosent: null, skjult: 2 },
+                { year: 2025, A: 0, B: 10, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              ],
             },
             {
               emnekode: 'BIO-3012', emnenavn: 'Ecological methodology: Study design and statistical analysis', studiepoeng: 10, aar: 1, semester: 'vår',
-              dbhEmnekoder: [],
-              years: [],
+              dbhEmnekoder: ['BIO-3012-1'],
+              years: [
+                { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 40, H: 3, total: 43, snitt: null, strykprosent: null, bestattprosent: 93, skjult: 2 },
+                { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 43, H: 8, total: 51, snitt: null, strykprosent: null, bestattprosent: 84.3, skjult: 1 },
+                { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 35, H: 9, total: 44, snitt: null, strykprosent: null, bestattprosent: 79.5, skjult: 0 },
+                { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 42, H: 5, total: 47, snitt: null, strykprosent: null, bestattprosent: 89.4, skjult: 1 },
+                { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 46, H: 0, total: 46, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 2 },
+              ],
             },
             {
               emnekode: 'BIO-3020', emnenavn: 'Fundamentals of Ecotoxicology', studiepoeng: 10, aar: 1, semester: 'vår',
-              dbhEmnekoder: [],
-              years: [],
+              dbhEmnekoder: ['BIO-3020-1'],
+              years: [
+                { year: 2021, A: 0, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 3 },
+                { year: 2022, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 3 },
+                { year: 2023, A: 0, B: 3, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 3.38, strykprosent: 0, bestattprosent: null, skjult: 1 },
+                { year: 2024, A: 0, B: 0, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 6 },
+                { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 4 },
+              ],
             },
           ] },
           { navn: 'Ecology and sustainability', obligatoriske: [
             {
               emnekode: 'BIO-3021', emnenavn: 'Sustainability Science', studiepoeng: 10, aar: 1, semester: 'høst',
-              dbhEmnekoder: [],
-              years: [],
+              dbhEmnekoder: ['BIO-3021-1'],
+              years: [
+                { year: 2022, A: 0, B: 4, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 3.44, strykprosent: 0, bestattprosent: null, skjult: 2 },
+                { year: 2023, A: 0, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 1 },
+                { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 6 },
+                { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 3 },
+              ],
             },
             {
               emnekode: 'BIO-3012', emnenavn: 'Ecological methodology: Study design and statistical analysis', studiepoeng: 10, aar: 1, semester: 'vår',
-              dbhEmnekoder: [], merknad: 'I tillegg kreves et valgfritt emne innen økologi-temaet (10 sp, vår) - obligatorisk valg mellom flere emner, ikke ført opp som enkeltemne.',
-              years: [],
+              dbhEmnekoder: ['BIO-3012-1'], merknad: 'I tillegg kreves et valgfritt emne innen økologi-temaet (10 sp, vår) - obligatorisk valg mellom flere emner, ikke ført opp som enkeltemne.',
+              years: [
+                { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 40, H: 3, total: 43, snitt: null, strykprosent: null, bestattprosent: 93, skjult: 2 },
+                { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 43, H: 8, total: 51, snitt: null, strykprosent: null, bestattprosent: 84.3, skjult: 1 },
+                { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 35, H: 9, total: 44, snitt: null, strykprosent: null, bestattprosent: 79.5, skjult: 0 },
+                { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 42, H: 5, total: 47, snitt: null, strykprosent: null, bestattprosent: 89.4, skjult: 1 },
+                { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 46, H: 0, total: 46, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 2 },
+              ],
             },
           ] },
           { navn: 'Freshwater ecology', obligatoriske: [
             {
               emnekode: 'BIO-3505', emnenavn: 'Ecological Interactions', studiepoeng: 10, aar: 1, semester: 'høst',
-              dbhEmnekoder: [],
-              years: [],
+              dbhEmnekoder: ['BIO-3505-1'],
+              years: [
+                { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+                { year: 2022, A: 3, B: 6, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 3.86, strykprosent: 0, bestattprosent: null, skjult: 2 },
+                { year: 2024, A: 3, B: 9, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 3.94, strykprosent: 0, bestattprosent: null, skjult: 1 },
+                { year: 2025, A: 4, B: 0, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 3.89, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              ],
             },
             {
               emnekode: 'BIO-3012', emnenavn: 'Ecological methodology: Study design and statistical analysis', studiepoeng: 10, aar: 1, semester: 'vår',
-              dbhEmnekoder: [],
-              years: [],
+              dbhEmnekoder: ['BIO-3012-1'],
+              years: [
+                { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 40, H: 3, total: 43, snitt: null, strykprosent: null, bestattprosent: 93, skjult: 2 },
+                { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 43, H: 8, total: 51, snitt: null, strykprosent: null, bestattprosent: 84.3, skjult: 1 },
+                { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 35, H: 9, total: 44, snitt: null, strykprosent: null, bestattprosent: 79.5, skjult: 0 },
+                { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 42, H: 5, total: 47, snitt: null, strykprosent: null, bestattprosent: 89.4, skjult: 1 },
+                { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 46, H: 0, total: 46, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 2 },
+              ],
             },
             {
               emnekode: 'BIO-3518', emnenavn: 'Northern Inland Waters and Climate Change', studiepoeng: 10, aar: 1, semester: 'vår',
-              dbhEmnekoder: [],
-              years: [],
+              dbhEmnekoder: ['BIO-3518-2'],
+              years: [
+                { year: 2022, A: 3, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 4.5, strykprosent: 0, bestattprosent: null, skjult: 1 },
+                { year: 2023, A: 0, B: 8, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 3.67, strykprosent: 0, bestattprosent: null, skjult: 1 },
+                { year: 2024, A: 0, B: 0, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 3 },
+                { year: 2025, A: 3, B: 6, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              ],
             },
           ] },
           { navn: 'Molecular environmental biology', obligatoriske: [
@@ -1302,20 +1987,38 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
             },
             {
               emnekode: 'BIO-3027', emnenavn: 'Scientific Programming with Python in the life sciences', studiepoeng: 10, aar: 1, semester: 'vår',
-              dbhEmnekoder: [],
-              years: [],
+              dbhEmnekoder: ['BIO-3027-1'],
+              years: [
+                { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 4, H: 0, total: 4, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+                { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 3, H: 0, total: 3, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+                { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 7, H: 0, total: 7, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+                { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 5, H: 0, total: 5, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+                { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 7, H: 0, total: 7, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              ],
             },
           ] },
           { navn: 'Northern populations and ecosystems', obligatoriske: [
             {
               emnekode: 'BIO-3013', emnenavn: 'Northern Food Web Ecology', studiepoeng: 10, aar: 1, semester: 'høst',
-              dbhEmnekoder: [],
-              years: [],
+              dbhEmnekoder: ['BIO-3013-1'],
+              years: [
+                { year: 2021, A: 3, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 5 },
+                { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 7 },
+                { year: 2023, A: 0, B: 0, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 10 },
+                { year: 2024, A: 4, B: 6, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 4.08, strykprosent: 0, bestattprosent: null, skjult: 2 },
+                { year: 2025, A: 0, B: 6, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 8 },
+              ],
             },
             {
               emnekode: 'BIO-3012', emnenavn: 'Ecological methodology: Study design and statistical analysis', studiepoeng: 10, aar: 1, semester: 'vår',
-              dbhEmnekoder: [],
-              years: [],
+              dbhEmnekoder: ['BIO-3012-1'],
+              years: [
+                { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 40, H: 3, total: 43, snitt: null, strykprosent: null, bestattprosent: 93, skjult: 2 },
+                { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 43, H: 8, total: 51, snitt: null, strykprosent: null, bestattprosent: 84.3, skjult: 1 },
+                { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 35, H: 9, total: 44, snitt: null, strykprosent: null, bestattprosent: 79.5, skjult: 0 },
+                { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 42, H: 5, total: 47, snitt: null, strykprosent: null, bestattprosent: 89.4, skjult: 1 },
+                { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 46, H: 0, total: 46, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 2 },
+              ],
             },
           ] },
         ],
@@ -1333,38 +2036,76 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
         obligatoriske: [
           {
             emnekode: 'JUS220', emnenavn: 'Miljøforvaltningsrett', studiepoeng: 5, aar: 1, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['JUS220-1'],
+            years: [
+              { year: 2021, A: 3, B: 5, C: 8, D: 4, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 3.35, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 3, B: 12, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 3.82, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 5, B: 8, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 4.12, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 4, B: 8, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3.84, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 3, B: 13, C: 3, D: 5, E: 0, F: 0, G: 0, H: 0, total: 24, snitt: 3.58, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
           },
           {
             emnekode: 'MINA320', emnenavn: 'Tverrfaglig samarbeid og kontroverser om bærekraft', studiepoeng: 5, aar: 1, semester: 'høst',
-            dbhEmnekoder: [], merknad: 'MINA321 (engelsk versjon av samme emne) kan tas i Januarblokk i stedet.',
-            years: [],
+            dbhEmnekoder: ['MINA320-1'], merknad: 'MINA321 (engelsk versjon av samme emne) kan tas i Januarblokk i stedet.',
+            years: [
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 19, H: 0, total: 19, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 12, H: 0, total: 12, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 29, H: 0, total: 29, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 25, H: 0, total: 25, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
           },
           {
             emnekode: 'NATF302', emnenavn: 'Norsk naturforvaltning', studiepoeng: 5, aar: 1, semester: 'høst',
-            dbhEmnekoder: [], merknad: 'Ligger i Augustblokk.',
-            years: [],
+            dbhEmnekoder: ['NATF302-1'], merknad: 'Ligger i Augustblokk.',
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 27, H: 0, total: 27, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 28, H: 0, total: 28, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 27, H: 0, total: 27, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 27, H: 0, total: 27, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 33, H: 0, total: 33, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
           },
           {
             emnekode: 'APL240', emnenavn: 'Miljø og planlegging, del 1', studiepoeng: 5, aar: 1, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['APL240-1'],
+            years: [
+              { year: 2021, A: 0, B: 11, C: 7, D: 3, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3.38, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 3, B: 5, C: 8, D: 3, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3.42, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 6, B: 12, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 3.96, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 4, B: 8, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 3.89, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 5, B: 6, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 3.89, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
           },
           {
             emnekode: 'APL241', emnenavn: 'Miljø og planlegging, del 2', studiepoeng: 5, aar: 1, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['APL241-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 25, H: 0, total: 25, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 25, H: 0, total: 25, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 28, H: 0, total: 28, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 26, H: 0, total: 26, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 26, H: 0, total: 26, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
           },
           {
             emnekode: 'NATF301', emnenavn: 'Praktisk naturforvaltning', studiepoeng: 5, aar: 2, semester: 'høst',
-            dbhEmnekoder: [], merknad: 'Kan erstattes av NATF370 Arbeidslivserfaring i økologi og naturforvaltning.',
-            years: [],
+            dbhEmnekoder: ['NATF301-1'], merknad: 'Kan erstattes av NATF370 Arbeidslivserfaring i økologi og naturforvaltning.',
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 22, H: 0, total: 22, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 29, H: 0, total: 29, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 27, H: 0, total: 27, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 17, H: 0, total: 17, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 21, H: 0, total: 21, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
           },
           {
             emnekode: 'M45-NF', emnenavn: 'Masteroppgave', studiepoeng: 45, aar: 2, semester: 'høst',
-            dbhEmnekoder: [], merknad: 'Går over tre deler ifølge studieplan-tabellen: 10 sp feltarbeid i Juniblokk 1. år, 5 sp i 2. år høst og 30 sp i 2. år vår (totalt 45 sp). Nettsiden lenker feilaktig emnekoden som «m60-nf», men den koden finnes ikke hos NMBU; den fungerende emnesiden er M45-NF Masteroppgave (45 sp), som stemmer med sp-summen i tabellen.',
-            years: [],
+            dbhEmnekoder: ['M45-NF-1'], merknad: 'Går over tre deler ifølge studieplan-tabellen: 10 sp feltarbeid i Juniblokk 1. år, 5 sp i 2. år høst og 30 sp i 2. år vår (totalt 45 sp). Nettsiden lenker feilaktig emnekoden som «m60-nf», men den koden finnes ikke hos NMBU; den fungerende emnesiden er M45-NF Masteroppgave (45 sp), som stemmer med sp-summen i tabellen.',
+            years: [
+              { year: 2024, A: 0, B: 11, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 7, B: 9, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 4.15, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
           },
         ],
         spesialiseringer: [
@@ -1378,48 +2119,94 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
         obligatoriske: [
           {
             emnekode: 'HMS0003', emnenavn: 'Health, Safety and Environment (HSE) course for master students', studiepoeng: 0, aar: 1, semester: 'høst',
-            dbhEmnekoder: [], merknad: 'Ført opp som obligatorisk for studieretningen Biology i studieplan-API-et; ikke listet for studieretningen Geography, som trolig er en inkonsistens i kildedataene.',
-            years: [],
+            dbhEmnekoder: ['HMS0003-1'], merknad: 'Ført opp som obligatorisk for studieretningen Biology i studieplan-API-et; ikke listet for studieretningen Geography, som trolig er en inkonsistens i kildedataene.',
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 21, H: 0, total: 21, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 12, H: 0, total: 12, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 7, H: 0, total: 7, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 8, H: 0, total: 8, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 13, H: 0, total: 13, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
           },
           {
             emnekode: 'GEOG3030', emnenavn: 'Natural Resources Planning and Management', studiepoeng: 7.5, aar: 1, semester: 'høst',
-            dbhEmnekoder: [], merknad: 'Felles for begge studieretninger.',
-            years: [],
+            dbhEmnekoder: ['GEOG3030-1'], merknad: 'Felles for begge studieretninger.',
+            years: [
+              { year: 2021, A: 0, B: 8, C: 14, D: 20, E: 3, F: 0, G: 0, H: 0, total: 45, snitt: 2.6, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 0, B: 8, C: 17, D: 7, E: 0, F: 0, G: 0, H: 0, total: 32, snitt: 3.03, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2023, A: 4, B: 8, C: 6, D: 6, E: 4, F: 0, G: 0, H: 0, total: 28, snitt: 3.07, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 0, B: 10, C: 7, D: 5, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 3.23, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 5, B: 9, C: 20, D: 4, E: 3, F: 0, G: 0, H: 0, total: 41, snitt: 3.22, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
           },
           {
             emnekode: 'RFEL3081', emnenavn: 'Interdisciplinary Project for Environmental Sustainability', studiepoeng: 7.5, aar: 1, semester: 'høst',
-            dbhEmnekoder: [], merknad: 'Felles for begge studieretninger.',
-            years: [],
+            dbhEmnekoder: ['RFEL3081-1'], merknad: 'Felles for begge studieretninger.',
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 26, H: 0, total: 26, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 17, H: 0, total: 17, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 11, H: 0, total: 11, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 13, H: 0, total: 13, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 22, H: 0, total: 22, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
           },
           {
             emnekode: 'RFEL3080', emnenavn: 'Scientific Research Seminar in Natural Resource Management', studiepoeng: 7.5, aar: 1, semester: 'høst',
-            dbhEmnekoder: [], merknad: 'Går over alle fire semestre (del 1-4 av 4), 7,5 sp totalt. Felles for begge studieretninger.',
-            years: [],
+            dbhEmnekoder: ['RFEL3080-1'], merknad: 'Går over alle fire semestre (del 1-4 av 4), 7,5 sp totalt. Felles for begge studieretninger.',
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 12, H: 0, total: 12, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 35, H: 0, total: 35, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 24, H: 0, total: 24, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 17, H: 0, total: 17, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 12, H: 0, total: 12, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
           },
           {
             emnekode: 'RFEL3082', emnenavn: 'Sustainable Management of Ecosystem Services', studiepoeng: 7.5, aar: 1, semester: 'vår',
-            dbhEmnekoder: [], merknad: 'Felles for begge studieretninger.',
-            years: [],
+            dbhEmnekoder: ['RFEL3082-1'], merknad: 'Felles for begge studieretninger.',
+            years: [
+              { year: 2021, A: 20, B: 11, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 34, snitt: 4.5, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 5, B: 15, C: 14, D: 0, E: 0, F: 0, G: 0, H: 0, total: 34, snitt: 3.74, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 4, B: 12, C: 12, D: 0, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 3.71, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 5, B: 9, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 4.36, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 4, B: 6, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 3.88, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
           },
         ],
         spesialiseringer: [
           { navn: 'Biology', obligatoriske: [
             {
               emnekode: 'BI3086', emnenavn: 'How to do Science', studiepoeng: 0, aar: 1, semester: 'høst',
-              dbhEmnekoder: [],
-              years: [],
+              dbhEmnekoder: ['BI3086-1'],
+              years: [
+                { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 7, H: 0, total: 7, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+                { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 8, H: 0, total: 8, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+                { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 12, H: 0, total: 12, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              ],
             },
             {
               emnekode: 'NATRBI3900', emnenavn: 'Master Thesis in Natural Resources Management - Biology', studiepoeng: 60, aar: 2, semester: 'høst',
-              dbhEmnekoder: [], merknad: 'Går over hele 2. studieår (del 1-2 av 2, periode 3 og 4).',
-              years: [],
+              dbhEmnekoder: ['NATRBI3900-1'], merknad: 'Går over hele 2. studieår (del 1-2 av 2, periode 3 og 4).',
+              years: [
+                { year: 2021, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 3 },
+                { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 7 },
+                { year: 2023, A: 0, B: 6, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 3.67, strykprosent: 0, bestattprosent: null, skjult: 6 },
+                { year: 2024, A: 0, B: 7, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 3.58, strykprosent: 0, bestattprosent: null, skjult: 2 },
+                { year: 2025, A: 4, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              ],
             },
           ] },
           { navn: 'Geography', obligatoriske: [
             {
               emnekode: 'GEOG3940', emnenavn: 'Master\'s Thesis - Natural Resources Management - Geography', studiepoeng: 60, aar: 2, semester: 'høst',
-              dbhEmnekoder: [], merknad: 'Går over hele 2. studieår (del 1-2 av 2, periode 3 og 4).',
-              years: [],
+              dbhEmnekoder: ['GEOG3940-1'], merknad: 'Går over hele 2. studieår (del 1-2 av 2, periode 3 og 4).',
+              years: [
+                { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 4 },
+                { year: 2022, A: 0, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 4 },
+                { year: 2023, A: 0, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 4 },
+                { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 3 },
+                { year: 2025, A: 3, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 4.5, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              ],
             },
           ] },
         ],
@@ -1432,18 +2219,34 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
         obligatoriske: [
           {
             emnekode: 'EE501', emnenavn: 'Climate Change and Ecology', studiepoeng: 7.5, aar: 1, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['EE501-1'],
+            years: [
+              { year: 2022, A: 0, B: 7, C: 11, D: 8, E: 16, F: 11, G: 0, H: 0, total: 53, snitt: 1.75, strykprosent: 20.8, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 3, D: 4, E: 5, F: 4, G: 0, H: 0, total: 16, snitt: 1.38, strykprosent: 25, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 3, B: 5, C: 9, D: 7, E: 7, F: 8, G: 0, H: 0, total: 39, snitt: 2.13, strykprosent: 20.5, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 5, B: 11, C: 6, D: 8, E: 7, F: 0, G: 0, H: 0, total: 37, snitt: 2.97, strykprosent: 0, bestattprosent: null, skjult: 5 },
+            ],
           },
           {
             emnekode: 'EE502', emnenavn: 'Statistics and Study Design', studiepoeng: 7.5, aar: 1, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['EE502-1'],
+            years: [
+              { year: 2022, A: 0, B: 16, C: 14, D: 9, E: 0, F: 0, G: 0, H: 0, total: 39, snitt: 3.18, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2023, A: 0, B: 3, C: 8, D: 4, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 2.93, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 0, B: 9, C: 21, D: 5, E: 0, F: 0, G: 0, H: 0, total: 35, snitt: 3.11, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 3, B: 6, C: 12, D: 4, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 3.32, strykprosent: 0, bestattprosent: null, skjult: 5 },
+            ],
           },
           {
             emnekode: '4317', emnenavn: 'Masteroppgave', studiepoeng: 60, aar: 2, semester: 'høst',
-            dbhEmnekoder: [], merknad: 'Går over 2 semestre ifølge studiemodellen: 2. år høst og 2. år vår.',
-            years: [],
+            dbhEmnekoder: ['4317-1'], merknad: 'Går over 2 semestre ifølge studiemodellen: 2. år høst og 2. år vår.',
+            years: [
+              { year: 2021, A: 0, B: 6, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 3.67, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2022, A: 0, B: 8, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 3.53, strykprosent: 0, bestattprosent: null, skjult: 8 },
+              { year: 2023, A: 7, B: 6, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 4.25, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 10, B: 13, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 4.22, strykprosent: 0, bestattprosent: null, skjult: 9 },
+              { year: 2025, A: 6, B: 10, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 4.38, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
           },
         ],
         spesialiseringer: [
@@ -1457,13 +2260,19 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
         obligatoriske: [
           {
             emnekode: 'MAOK4001', emnenavn: 'Concepts in ecology', studiepoeng: 5, aar: 1, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['MAOK4001-1'],
+            years: [
+              { year: 2024, A: 0, B: 7, C: 7, D: 3, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 3.24, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 9, B: 6, C: 9, D: 5, E: 0, F: 0, G: 0, H: 0, total: 29, snitt: 3.66, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
           },
           {
             emnekode: 'MAOK4002', emnenavn: 'Biostatistics', studiepoeng: 10, aar: 1, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['MAOK4002-1'],
+            years: [
+              { year: 2024, A: 6, B: 4, C: 5, D: 3, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 3.72, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 0, B: 3, C: 11, D: 3, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 5 },
+            ],
           },
           {
             emnekode: 'MAOK4012', emnenavn: 'Nature in the Anthropocene', studiepoeng: 5, aar: 1, semester: 'høst',
@@ -1482,23 +2291,35 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
           },
           {
             emnekode: 'SKO4003S', emnenavn: 'Geographic Information Systems', studiepoeng: 10, aar: 1, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['SKO4003S-1'],
+            years: [
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 17, H: 0, total: 17, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
           },
           {
             emnekode: 'MAOK4004', emnenavn: 'Wildlife monitoring', studiepoeng: 10, aar: 1, semester: 'vår',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['MAOK4004-1'],
+            years: [
+              { year: 2025, A: 0, B: 6, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 3.67, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
           },
           {
             emnekode: 'MAOK4005', emnenavn: 'Research process and topics', studiepoeng: 10, aar: 2, semester: 'høst',
-            dbhEmnekoder: [],
-            years: [],
+            dbhEmnekoder: ['MAOK4005-1'],
+            years: [
+              { year: 2025, A: 10, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 4.67, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
           },
           {
             emnekode: '6EV399', emnenavn: 'Master thesis in applied ecology', studiepoeng: 60, aar: 1, semester: 'vår',
-            dbhEmnekoder: [], merknad: 'Går over tre semestre ifølge studiemodell-tabellen: 10 sp i 1. år vår, 20 sp i 2. år høst og 30 sp i 2. år vår (totalt 60 sp).',
-            years: [],
+            dbhEmnekoder: ['6EV399-1'], merknad: 'Går over tre semestre ifølge studiemodell-tabellen: 10 sp i 1. år vår, 20 sp i 2. år høst og 30 sp i 2. år vår (totalt 60 sp).',
+            years: [
+              { year: 2021, A: 0, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2022, A: 3, B: 18, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 3.89, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 8 },
+              { year: 2024, A: 3, B: 9, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 3.94, strykprosent: 0, bestattprosent: null, skjult: 8 },
+              { year: 2025, A: 8, B: 7, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 4.05, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
           },
         ],
         spesialiseringer: [
@@ -1522,8 +2343,12 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
           },
           {
             emnekode: 'MINA321', emnenavn: 'Tverrfaglig samarbeid og kontroverser om bærekraft - engelsk versjon', studiepoeng: 5, aar: 1, semester: 'vår',
-            dbhEmnekoder: [], merknad: 'Ligger i Januarblokk. MINA320 (norsk versjon av samme emne) kan tas i høstparallellen i stedet.',
-            years: [],
+            dbhEmnekoder: ['MINA321-1'], merknad: 'Ligger i Januarblokk. MINA320 (norsk versjon av samme emne) kan tas i høstparallellen i stedet.',
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 11, H: 0, total: 11, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 5, H: 0, total: 5, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 7, H: 0, total: 7, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
           },
           {
             emnekode: 'M45-MILJO', emnenavn: 'Masteroppgave', studiepoeng: 45, aar: 2, semester: 'høst',
@@ -1536,12 +2361,134 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
       },
       {
         entryId: 'nmbu_mina2_forgjenger', shortName: 'NMBU Miljø og naturressurser', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Miljø og naturressurser (master 2 år, forgjenger)',
-        studieplanAar: null, kilder: [],
-        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
-        merknad: 'Studieplan ikke hentet ennå.',
+        studieplanAar: '2021/2022', kilder: ['https://static02.nmbu.no/mina/studier/M-MINA.php?sprx=n&aarx=2021', 'https://static02.nmbu.no/mina/studier/M-MINA.php?srex=mo&sprx=n&aarx=2021', 'https://static02.nmbu.no/mina/studier/M-MINA.php?srex=ge&sprx=n&aarx=2021', 'https://static02.nmbu.no/mina/studier/M-MINA.php?srex=jm&sprx=n&aarx=2021', 'https://static02.nmbu.no/mina/studier/M-MINA.php?srex=li&sprx=n&aarx=2021', 'https://static02.nmbu.no/mina/studier/M-MINA.php?srex=ro&sprx=n&aarx=2021'],
+        totaltStudiepoeng: 120, obligatoriskeStudiepoeng: 65,
+        merknad: 'Miljø og naturressurser (M-MINA) er en nedlagt forgjenger til dagens Miljøvitenskap (M-MILJØ) ved NMBU/MINA; siste opptak var høsten 2021. Programsiden nmbu.no/studier/master-2-aar/miljovitenskap fra programkart.json peker i dag til etterfølgerprogrammet og inneholder ikke lenger denne studieplanen - dataene her er hentet fra MINA-fakultetets arkiverte studieplan-verktøy for kullet med studiestart høsten 2021 (fullstendig 2-årig plan, gyldig til og med 2022/2023). Programmet hadde fem studieretninger valgt av studenten: Miljøgifter og økotoksikologi, Geologi, Jord og miljø, Limnologi og vannressurser og Radioøkologi. Alle fem retninger har MINA302 og masteroppgaven felles (65 sp), pluss retningsspesifikke obligatoriske emner (20-25 sp). I tillegg krever studieplanen at minst 30 studiepoeng totalt i graden består av 300-nivå emner («Til sammen må minst 30 studiepoeng bestå av 300-emner») - et krav på tvers av frie valgemner, ikke ført opp som enkeltemne. Flere av emnene (VANN301, VANN311, FMI330, KJM350, KJM351, ECOL300) er ikke lenger i NMBUs aktive emnekatalog; studiepoeng for disse er bekreftet via Wayback Machine-arkiverte emnesider fra studieåret 2021/2022. dbhEmnekoder er ikke fylt ut siden DBH-rapportering for dette (nedlagte) programmet ikke er slått opp i dette arbeidet.',
         obligatoriske: [
+          {
+            emnekode: 'MINA302', emnenavn: 'Introduksjon til masterstudiet i miljø og naturressurser', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['MINA302-1'], merknad: 'Ligger i Augustblokk. Felles for alle fem studieretninger.',
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 19, H: 0, total: 19, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: 'MASTER-OPPGAVEN', emnenavn: 'Masteroppgave', studiepoeng: 60, aar: 2, semester: 'høst',
+            dbhEmnekoder: [], merknad: 'Går over hele 2. studieår. Studieplanteksten sier eksplisitt at studenten arbeider med en masteroppgave på enten 30 eller 60 studiepoeng i løpet av det siste studieåret; grid-siden oppgir ingen hyperkoblet emnekode for oppgaven (bare teksten «MASTER-OPPGAVEN»), så feltet gjengir denne teksten i mangel av en offisiell emnekode. 60 sp er satt som representativ verdi; ved 30 sp-alternativet frigjøres 30 sp til ekstra emner. Felles for alle fem studieretninger.',
+            years: [],
+          },
         ],
         spesialiseringer: [
+          { navn: 'Miljøgifter og økotoksikologi', obligatoriske: [
+            {
+              emnekode: 'FMI312', emnenavn: 'Human miljøkjemi', studiepoeng: 10, aar: 1, semester: 'høst',
+              dbhEmnekoder: ['FMI312-1'],
+              years: [
+                { year: 2021, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 1 },
+                { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              ],
+            },
+            {
+              emnekode: 'FMI310', emnenavn: 'Miljøgifter og økotoksikologi', studiepoeng: 10, aar: 1, semester: 'vår',
+              dbhEmnekoder: ['FMI310-1'], merknad: 'Går over Vårparallell og Januarblokk.',
+              years: [
+                { year: 2021, A: 0, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              ],
+            },
+            {
+              emnekode: 'FMI330', emnenavn: 'Effekter og biomarkørmetoder i økotoksikologi', studiepoeng: 5, aar: 2, semester: 'høst',
+              dbhEmnekoder: ['FMI330-1'], merknad: 'Ligger i Augustblokk.',
+              years: [
+                { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 6, H: 0, total: 6, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              ],
+            },
+          ] },
+          { navn: 'Geologi', obligatoriske: [
+            {
+              emnekode: 'GEO310', emnenavn: 'Paleomiljø og klimaendringer', studiepoeng: 10, aar: 1, semester: 'høst',
+              dbhEmnekoder: [],
+              years: [],
+            },
+            {
+              emnekode: 'GEO300', emnenavn: 'Videregående hydrogeologi', studiepoeng: 10, aar: 1, semester: 'vår',
+              dbhEmnekoder: ['GEO300-1'],
+              years: [
+                { year: 2021, A: 0, B: 3, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 3.43, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              ],
+            },
+          ] },
+          { navn: 'Jord og miljø', obligatoriske: [
+            {
+              emnekode: 'JORD310', emnenavn: 'Jordforurensning og bærekraft', studiepoeng: 10, aar: 1, semester: 'vår',
+              dbhEmnekoder: ['JORD310-1'],
+              years: [
+                { year: 2021, A: 0, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 3 },
+                { year: 2022, A: 0, B: 0, C: 3, D: 3, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 2.5, strykprosent: 0, bestattprosent: null, skjult: 4 },
+                { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              ],
+            },
+            {
+              emnekode: 'GEO300', emnenavn: 'Videregående hydrogeologi', studiepoeng: 10, aar: 1, semester: 'vår',
+              dbhEmnekoder: ['GEO300-1'],
+              years: [
+                { year: 2021, A: 0, B: 3, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 3.43, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              ],
+            },
+          ] },
+          { navn: 'Limnologi og vannressurser', obligatoriske: [
+            {
+              emnekode: 'VANN300', emnenavn: 'Vannforurensning', studiepoeng: 10, aar: 1, semester: 'høst',
+              dbhEmnekoder: ['VANN300-1'],
+              years: [
+                { year: 2021, A: 0, B: 3, C: 0, D: 3, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 4 },
+                { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 3 },
+              ],
+            },
+            {
+              emnekode: 'VANN301', emnenavn: 'Tiltak mot forurensning av vannforekomster', studiepoeng: 5, aar: 1, semester: 'vår',
+              dbhEmnekoder: ['VANN301-1'], merknad: 'Ligger i Januarblokk.',
+              years: [
+                { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 7, H: 0, total: 7, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+                { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              ],
+            },
+            {
+              emnekode: 'VANN211', emnenavn: 'Limnologiske metoder', studiepoeng: 5, aar: 1, semester: 'vår',
+              dbhEmnekoder: ['VANN211-1'], merknad: 'Ligger i Juniblokk.',
+              years: [
+                { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 6, H: 0, total: 6, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+                { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 8, H: 0, total: 8, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              ],
+            },
+            {
+              emnekode: 'VANN311', emnenavn: 'Feltkurs i alpin limnologi', studiepoeng: 5, aar: 2, semester: 'høst',
+              dbhEmnekoder: ['VANN311-1'], merknad: 'Ligger i Augustblokk.',
+              years: [
+                { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 5, H: 0, total: 5, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+                { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 7, H: 0, total: 7, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              ],
+            },
+          ] },
+          { navn: 'Radioøkologi', obligatoriske: [
+            {
+              emnekode: 'KJM350', emnenavn: 'Radiokjemi', studiepoeng: 10, aar: 1, semester: 'høst',
+              dbhEmnekoder: [], merknad: 'Går over Høstparallell og Augustblokk.',
+              years: [],
+            },
+            {
+              emnekode: 'ECOL300', emnenavn: 'Naturvitenskapelig metode', studiepoeng: 5, aar: 1, semester: 'vår',
+              dbhEmnekoder: ['ECOL300-1'],
+              years: [
+                { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 4, H: 0, total: 4, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+                { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 5, H: 0, total: 5, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              ],
+            },
+            {
+              emnekode: 'KJM351', emnenavn: 'Eksperimentell radioøkologi', studiepoeng: 10, aar: 1, semester: 'vår',
+              dbhEmnekoder: [], merknad: 'Går over Vårparallell og Januarblokk.',
+              years: [],
+            },
+          ] },
         ],
       },
       {

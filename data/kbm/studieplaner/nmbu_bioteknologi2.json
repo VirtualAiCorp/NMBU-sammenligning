@@ -17,7 +17,9 @@
       "studiepoeng": 5,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "BIO305-1"
+      ],
       "merknad": "Augustblokk før høstsemesteret."
     },
     {
@@ -26,7 +28,9 @@
       "studiepoeng": 60,
       "aar": 2,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "M60-BIOTEK-1"
+      ],
       "merknad": "60 sp totalt fordelt over 2. år (5 sp august + 25 sp høst + 5 sp januar + 20 sp vår + 5 sp juni, ifølge rutenettet)."
     }
   ],

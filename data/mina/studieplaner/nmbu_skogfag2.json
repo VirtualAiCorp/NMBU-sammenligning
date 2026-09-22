@@ -17,7 +17,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "SKOG302-1"
+      ],
       "merknad": "Går over Augustblokk og Høstparallell samme semester."
     },
     {
@@ -26,7 +28,9 @@
       "studiepoeng": 5,
       "aar": 1,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "MINA321-1"
+      ],
       "merknad": "Ligger i Januarblokk. MINA320 (norsk versjon av samme emne) kan tas i høstparallellen i stedet."
     },
     {
@@ -35,7 +39,9 @@
       "studiepoeng": 10,
       "aar": 2,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "SKOG300-1"
+      ],
       "merknad": null
     },
     {
@@ -44,7 +50,9 @@
       "studiepoeng": 30,
       "aar": 2,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "M30-SF-1"
+      ],
       "merknad": null
     }
   ],

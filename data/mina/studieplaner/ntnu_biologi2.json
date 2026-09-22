@@ -18,7 +18,9 @@
       "studiepoeng": 0,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "HMS0003-1"
+      ],
       "merknad": "Felles for alle fire studieretninger."
     },
     {
@@ -27,7 +29,9 @@
       "studiepoeng": 7.5,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "BI3085-1"
+      ],
       "merknad": "Går over alle fire semestre (del 1-4 av 4), 7,5 sp totalt. Felles for alle fire studieretninger."
     },
     {
@@ -36,7 +40,9 @@
       "studiepoeng": 60,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "BI3900-1"
+      ],
       "merknad": "Går over alle fire semestre (del 1-4 av 4), 60 sp totalt. Obligatorisk for studieretningene Ecology/Behaviour/Evolution/Biosystematics, Physiology og Biodiversity and Systematics (Nabis). I studieretningen Cell and Molecular Biology er dette et obligatorisk valg mellom BI3900 og BT3920 (Master Thesis in Biology at IBT) - se merknad på den studieretningen."
     }
   ],
@@ -54,7 +60,9 @@
           "studiepoeng": 7.5,
           "aar": 1,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "BI3016-1"
+          ],
           "merknad": null
         }
       ]

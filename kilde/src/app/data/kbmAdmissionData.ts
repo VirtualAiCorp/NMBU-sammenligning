@@ -1,4 +1,4 @@
-// GENERERT av scripts/build-landsam-data.py 2026-09-22 – ikke rediger for hånd.
+// GENERERT av scripts/build-landsam-data.py 2026-09-23 – ikke rediger for hånd.
 // Kilder: Samordna opptak programtabell 2026 (søkertall 2021–2026) og SO poenggrenserapport (Tableau) 2020–2026, hovedopptak.
 // 0 i poenggrense = alle kvalifiserte kom inn · null = data ikke tilgjengelig
 import type { FullAdmissionEntry, FullYearData } from './fullAdmissionData';

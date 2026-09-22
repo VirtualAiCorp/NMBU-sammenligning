@@ -1,0 +1,225 @@
+{
+  "programnavn": "Biovitenskap (bachelor)",
+  "institusjon": "Universitetet i Oslo",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://www.uio.no/studier/program/biovitenskap/",
+    "https://www.uio.no/studier/program/biovitenskap/oppbygging/",
+    "https://www.uio.no/studier/program/biovitenskap/studieretninger/beregningsbiologi/oppbygging/",
+    "https://www.uio.no/studier/program/biovitenskap/studieretninger/biomangfold-evolusjon/oppbygging/",
+    "https://www.uio.no/studier/program/biovitenskap/studieretninger/molekylarbiologi/oppbygging/"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 60,
+  "obligatoriske": [
+    {
+      "emnekode": "BIOS1101",
+      "emnenavn": "Innføring i beregningsmodeller for biovitenskap",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIOS1110",
+      "emnenavn": "Celle- og molekylærbiologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIOS1150",
+      "emnenavn": "Biologisk mangfold",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIOS1120",
+      "emnenavn": "Fysiologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM1003",
+      "emnenavn": "Kjemi for biologer",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "EXPHIL03",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Tas på ulikt tidspunkt avhengig av studieretning (typisk 3. eller 5. semester ifølge kildene for de tre retningene)."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Beregningsbiologi og bioinformatikk",
+      "obligatoriske": [
+        {
+          "emnekode": "IN1010",
+          "emnenavn": "Objektorientert programmering",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "BIOS3011",
+          "emnenavn": "Bioinformatikk i prosjektgrupper",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "BIOS2140",
+          "emnenavn": "Evolusjon og genetikk",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MAT1100",
+          "emnenavn": "Kalkulus",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "STK1100",
+          "emnenavn": "Sannsynlighetsregning og statistisk modellering",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MAT1110",
+          "emnenavn": "Kalkulus og lineær algebra",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MAT1120",
+          "emnenavn": "Lineær algebra",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Biomangfold, økologi og evolusjon",
+      "obligatoriske": [
+        {
+          "emnekode": "BIOS2100",
+          "emnenavn": "Generell økologi",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "BIOS2140",
+          "emnenavn": "Evolusjon og genetikk",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "STK1000",
+          "emnenavn": "Innføring i anvendt statistikk",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Obligatorisk valg mellom STK1000 og MAT1050 Matematikk for anvendelser 1."
+        }
+      ]
+    },
+    {
+      "navn": "Molekylærbiologi og biomedisin",
+      "obligatoriske": [
+        {
+          "emnekode": "BIOS1130",
+          "emnenavn": "Biokjemi 1",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "BIOS2910",
+          "emnenavn": "Molekylærbiologi",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "BIOS3700",
+          "emnenavn": "Cellebiologi 2",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "BIOS3601",
+          "emnenavn": "Genetikk og utviklingsbiologi",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Obligatorisk valg mellom BIOS3601 og BIOS3800 Humanfysiologi."
+        },
+        {
+          "emnekode": "STK1000",
+          "emnenavn": "Innføring i anvendt statistikk",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Obligatorisk valg mellom STK1000 og MAT1050 Matematikk for anvendelser 1."
+        }
+      ]
+    }
+  ],
+  "merknad": "Gjelder studenter som starter høsten 2025 eller senere (ny studieplan). Felles obligatoriske emner (1.-2. semester, 50 sp) + Examen philosophicum (EXPHIL03, 10 sp, tatt på ulikt tidspunkt per retning) utgjør obligatoriske-listen (60 sp); studenten velger studieretning innen utgangen av 1. semester. De tre studieretningene har hver egne «obligatoriske fordypningsemner» utover fellesdelen: Beregningsbiologi og bioinformatikk har den mest presist spesifiserte listen (7 navngitte emner, 70 sp, hentet direkte fra retningens oppbygging-side, pluss et fritt valgemne i 4. semester og et retningsvalgemne i 5. semester som ikke er navngitt). Biomangfold, økologi og evolusjon og Molekylærbiologi og biomedisin har en mindre fast struktur: begge har 2-3 navngitte kjerneemner (henholdsvis BIOS2100+BIOS2140+STK1000/MAT1050, og BIOS1130+BIOS2910+BIOS3700+BIOS3601/BIOS3800+STK1000/MAT1050), men det resterende fordypningskravet (80 sp for Biomangfold, dvs. 50 sp utover kjerneemnene; tilsvarende for Molekylærbiologi) fylles ved å velge et bestemt ANTALL emner fra en lengre liste av navngitte valgemner (f.eks. «velg 5 av: BIOS2000, BIOS2200, BIOS2210, BIOS2220, BIOS2910, BIOS3000, BIOS3011, BIOS3060, BIOS3070, BIOS3250, BIOS3310, BIOS3601, BIOS3610, BIOS3700, BIOS3800, BIOS3900, BIOS3910, BIOS3920 m.fl.» for Biomangfold) - siden dette er et valg mellom mange alternativer uten én fast kombinasjon, er disse IKKE tatt med som egne obligatoriske emner i denne filen, i tråd med regelen om at obligatoriske valg mellom alternativer beskrives i merknad. I tillegg har alle retninger et utviklingssemester/frie emner (typisk 30-40 sp, ofte 6. semester) for utveksling, UNIS, praksis eller frie emner. obligatoriskeStudiepoeng på toppnivå (60) gjelder kun fellesdelen; faktisk navngitt obligatorisk sp-sum per retning (felles + retningens kjerneemner) er 130 (Beregningsbiologi), 90 (Biomangfold) og 110 (Molekylærbiologi), med differansen til 180 dekket av valgfrie fordypningsemner og utviklingssemester.",
+  "entryId": "uio_biovitenskap"
+}

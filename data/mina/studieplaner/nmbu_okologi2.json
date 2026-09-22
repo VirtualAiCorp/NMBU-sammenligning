@@ -17,7 +17,9 @@
       "studiepoeng": 5,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "NATF300-1"
+      ],
       "merknad": null
     },
     {
@@ -26,7 +28,9 @@
       "studiepoeng": 5,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "ECOL310-1"
+      ],
       "merknad": null
     },
     {
@@ -35,7 +39,9 @@
       "studiepoeng": 5,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "ECOL302-1"
+      ],
       "merknad": "Ligger i Augustblokk."
     },
     {
@@ -44,7 +50,9 @@
       "studiepoeng": 5,
       "aar": 1,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "MINA310-1"
+      ],
       "merknad": null
     },
     {
@@ -53,7 +61,9 @@
       "studiepoeng": 5,
       "aar": 1,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "ECOL350-1"
+      ],
       "merknad": null
     },
     {
@@ -62,7 +72,9 @@
       "studiepoeng": 5,
       "aar": 1,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "MINA321-1"
+      ],
       "merknad": "Ligger i Januarblokk. MINA320 (norsk versjon av samme emne) kan tas i høstsemesteret av studenter som behersker norsk."
     },
     {
@@ -71,7 +83,9 @@
       "studiepoeng": 60,
       "aar": 2,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "M60-ECOL-1"
+      ],
       "merknad": "Går over hele 2. studieår (30 sp høst + 30 sp vår), altså begge semestre i år 2."
     }
   ],

@@ -1,4 +1,4 @@
-// GENERERT av scripts/build-landsam-courses.py 2026-09-22 – ikke rediger for hånd.
+// GENERERT av scripts/build-landsam-courses.py 2026-09-23 – ikke rediger for hånd.
 // Kilde: DBH/HKDIR tabell 308 (karakterer, aggregert) og 208 (emner). Snitt: A=5…F=0, kun bokstavkarakterer.
 // DBH skjuler (setter til 0) celler med 1-2 kandidater i karakterfordelingen; dette rammer særlig
 // programnivå (mindre celler) og kan gi kunstig lav strykprosent. «skjult» er antall kandidater DBH
