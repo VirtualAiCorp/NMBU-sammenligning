@@ -117,3 +117,24 @@ Kilder og forbehold:
 - Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. Tall for NMBU (søkere, kvalifiserte, tilbud 2021–2025) er hentet fra DBH/HKDIR tabell 379 (NMBU institusjonskode 1173). Førstevalgssøkere, kjønn, plasser per år og poenggrenser 2021–2023 finnes ikke publisert. 2026 mangler i DBH.
 - NTNU-, UiO- og UiB-tall for lokale mastere er fra institusjonenes egne statistikksider; tellegrunnlaget avviker noe fra DBH (står i gruppenotatene).
 - AHO tar opp landskapsarkitekter etter opptaksprøve; poenggrensene deres er på en annen skala og er utelatt.
+
+## LANDSAM: emner og karakterer (lagt til 22.09.2026)
+
+Andre visning under LANDSAM: **Emner og karakterer**. Karakterindeks per program, karakterfordeling A–F og sorterbar emnetabell,
+for de samme 13 gruppene og 43 programmene som opptaksanalysen.
+
+| Hva | Hvor |
+|---|---|
+| Oppskrift for DBH-API-et (tabell 308 karakterer, 208 emner, 347 programregister) | `docs/oppskrift-dbh-karakterer.md` |
+| Kobling program → DBH-koder, verifisert mot 308, med forbehold per program | `data/landsam/dbh-programkart.json` |
+| Generator (henter 308/208 per institusjon, cache i `data/landsam/kilder/dbh-cache/`) | `scripts/build-landsam-courses.py` |
+| Generert datamodul (1 298 emner, 2021–2025) | `kilde/src/app/data/landsamCourseData.ts` + `.json` |
+| Komponent | `kilde/src/app/components/LandsamCourseAnalysis.tsx` |
+
+Regler og forbehold:
+- Karakterene er per program (studentene på programmet), per emnekode og år, summert over semestre. Snitt A=5…F=0 bare over bokstavkarakterer; bestått/ikke bestått (G/H) vises som egen andel.
+- Karakterindeks = kandidatvektet snitt over alle bokstavemner i valgt år. Emner med færre enn terskelen (standard 10 kandidater) holdes utenfor.
+- DBH skjermer små tall («med skjerming for utvalgte rapporter»); summene per emne kan ligge litt under grovere totaler.
+- Program som deler DBH-kode får identiske tall (HVL LANA i to grupper). INN skiftet institusjonskode 0264 → 1177 i 2025; AHO og UiT deler koden for landskapsarkitektur. Begge håndteres via feltet `institusjonskoder` i koblingen.
+- UiS femårig byplanlegging har i praksis ingen karakterrader i DBH (UiS fører dem på den toårige masteren). UiO folkehelse og NMBU sine nyeste mastere (M-GEP, M-EEG) har kort historikk.
+- Oppdatere: `python3 scripts/build-landsam-courses.py --refresh` (henter på nytt; uten `--refresh` brukes cachen).

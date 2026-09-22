@@ -1,0 +1,821 @@
+{
+  "hentet": "2026-09-22",
+  "institusjoner": {
+    "1173": "Norges miljø- og biovitenskapelige universitet",
+    "0238": "Høgskulen på Vestlandet",
+    "1174": "Nord universitet",
+    "1177": "Universitetet i Innlandet",
+    "0264": "Høgskolen i Innlandet (Universitetet i Innlandet til og med 2024)",
+    "1176": "Universitetet i Sørøst-Norge",
+    "1220": "Arkitektur- og designhøgskolen i Oslo",
+    "1130": "UiT Norges arktiske universitet",
+    "1160": "Universitetet i Stavanger",
+    "1171": "Universitetet i Agder",
+    "0236": "Høgskulen i Volda",
+    "1150": "Norges teknisk-naturvitenskapelige universitet",
+    "1110": "Universitetet i Oslo",
+    "1175": "OsloMet - storbyuniversitetet",
+    "1120": "Universitetet i Bergen"
+  },
+  "programs": [
+    {
+      "entryId": "nmbu_eiendom",
+      "institusjonskode": "1173",
+      "studieprogramkoder": [
+        "M-EIE"
+      ],
+      "studieprogramnavn": "Eiendom",
+      "nivaakode": "M5",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 1346,
+      "merknad": "Forgjengeren M-ARE (Arealplanlegging og eiendomsfag, 2014-2022) har ingen karakterrader i seksårsvinduet og er utelatt."
+    },
+    {
+      "entryId": "hvl_landmaling",
+      "institusjonskode": "0238",
+      "studieprogramkoder": [
+        "LEIE"
+      ],
+      "studieprogramnavn": "Bachelor i landmåling og eiendomsdesign",
+      "nivaakode": "B3",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 900,
+      "merknad": "Tilbys i Bergen. HVLs toårige master i areal og eiendom (EIE-MA) er et annet program og er utelatt."
+    },
+    {
+      "entryId": "hvl_eiendomsmegling",
+      "institusjonskode": "0238",
+      "studieprogramkoder": [
+        "EIMB"
+      ],
+      "studieprogramnavn": "Eiendomsmegling, bachelorstudium, Sogndal",
+      "nivaakode": "B3",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 991,
+      "merknad": "Het «Bachelor i eiendomsmegling, økonomi og jus» til og med 2022."
+    },
+    {
+      "entryId": "nord_eiendomsmegling",
+      "institusjonskode": "1174",
+      "studieprogramkoder": [
+        "BAEME"
+      ],
+      "studieprogramnavn": "Bachelor i eiendomsmegling og markedsanalyser",
+      "nivaakode": "B3",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 722,
+      "merknad": "Het «Bachelor i eiendomsmegling» før navneendringen."
+    },
+    {
+      "entryId": "inn_eiendomsmegling",
+      "institusjonskode": "1177",
+      "studieprogramkoder": [
+        "EIENDOM"
+      ],
+      "studieprogramnavn": "Bachelor i eiendomsmegling",
+      "nivaakode": "B3",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 383,
+      "merknad": "INN skiftet institusjonskode fra 0264 (Høgskolen i Innlandet) til 1177 i 2025; samme programkode EIENDOM i begge. Årene 2020-2024 ligger under 0264, 2025 under 1177. DBH skiller ikke studiested (Rena/Åmot).",
+      "institusjonskoder": [
+        "1177",
+        "0264"
+      ]
+    },
+    {
+      "entryId": "usn_eiendomsmegling",
+      "institusjonskode": "1176",
+      "studieprogramkoder": [
+        "368"
+      ],
+      "studieprogramnavn": "Bachelorstudium i eiendomsmegling",
+      "nivaakode": "B3",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 1369,
+      "merknad": "USN bruker numeriske programkoder. 368 er den eneste eiendomsmeglingsbacheloren ved USN; DBH skiller ikke studiested."
+    },
+    {
+      "entryId": "nmbu_la",
+      "institusjonskode": "1173",
+      "studieprogramkoder": [
+        "M-LA"
+      ],
+      "studieprogramnavn": "Landskapsarkitektur",
+      "nivaakode": "M5",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 1023
+    },
+    {
+      "entryId": "aho_la",
+      "institusjonskode": "1220",
+      "studieprogramkoder": [
+        "IMA-LANDA"
+      ],
+      "studieprogramnavn": "Landskapsarkitektur - master",
+      "nivaakode": "M5",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 337,
+      "merknad": "Femårig fellesprogram AHO/UiT. Begge institusjonene rapporterer samme programkode IMA-LANDA: AHO under institusjonskode 1220 (de tre første årene i Oslo) og UiT under 1130 (de to siste i Tromsø, 130 kandidater i 2025). Skal hele løpet dekkes, må begge institusjonskodene hentes. AHOs toårige MASTERLAND (120 sp) er et annet program og er utelatt.",
+      "institusjonskoder": [
+        "1220",
+        "1130"
+      ]
+    },
+    {
+      "entryId": "hvl_landskapsplanlegging_la",
+      "institusjonskode": "0238",
+      "studieprogramkoder": [
+        "LANA"
+      ],
+      "studieprogramnavn": "Bachelor i landskapsplanlegging med landskapsarkitektur",
+      "nivaakode": "B3",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 602,
+      "merknad": "Samme DBH-program som oppføringen hvl_landskapsplanlegging i landskapsingeniørgruppa."
+    },
+    {
+      "entryId": "nmbu_byreg",
+      "institusjonskode": "1173",
+      "studieprogramkoder": [
+        "M-BYREG"
+      ],
+      "studieprogramnavn": "By- og regionplanlegging",
+      "nivaakode": "M5",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 1429
+    },
+    {
+      "entryId": "uis_byplanlegging",
+      "institusjonskode": "1160",
+      "studieprogramkoder": [
+        "M-BYUTV5"
+      ],
+      "studieprogramnavn": "Byplanlegging - master i teknologi/siv.ing., femårig",
+      "nivaakode": "M5",
+      "aarMedKarakterer": [
+        2021,
+        2022,
+        2023
+      ],
+      "kandidaterSiste": 0,
+      "merknad": "Koden er entydig på navn og nivå (M5, 300 sp), men tabell 308 har nesten ingen kandidater: 4 i 2021 og 0 i 2022 og 2023, ingen rader i 2020, 2024 og 2025. UiS fører det aller meste av byplanleggingskarakterene på den toårige M-BYUTV. Karakterstatistikk for det femårige løpet er i praksis ikke tilgjengelig. Programmet er heller ikke registrert i 347 for 2026."
+    },
+    {
+      "entryId": "uis_byplan_samfsikkerhet",
+      "institusjonskode": "1160",
+      "studieprogramkoder": [
+        "B-BYSAM"
+      ],
+      "studieprogramnavn": "Byplanlegging og samfunnssikkerhet - bachelorstudium",
+      "nivaakode": "B3",
+      "aarMedKarakterer": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 846,
+      "merknad": "Programmet startet i 2021; ingen karakterer for 2020."
+    },
+    {
+      "entryId": "uis_ing_bygg_byplan",
+      "institusjonskode": "1160",
+      "studieprogramkoder": [
+        "B-BYGG"
+      ],
+      "studieprogramnavn": "Bygg - bachelor i ingeniørfag",
+      "nivaakode": "B3",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 777,
+      "merknad": "DBH skiller ikke studieretninger. B-BYGG dekker hele byggingeniørbacheloren, ikke bare studieretning byplanlegging, så karaktertallene er bredere enn studietilbudet i Samordna opptak."
+    },
+    {
+      "entryId": "uit_samfunnsplanlegging",
+      "institusjonskode": "1130",
+      "studieprogramkoder": [
+        "B-SPL"
+      ],
+      "studieprogramnavn": "Samfunnsplanlegging og kulturforståelse - bachelor",
+      "nivaakode": "B3",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 144,
+      "merknad": "Het «Samfunnsplanlegging - bachelor» tidligere."
+    },
+    {
+      "entryId": "nord_geografi_samfplan",
+      "institusjonskode": "1174",
+      "studieprogramkoder": [
+        "BAGEO"
+      ],
+      "studieprogramnavn": "Bachelor i geografi og samfunnsplanlegging",
+      "nivaakode": "B3",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 201,
+      "merknad": "Het «Bachelor i geografi» før navneendringen. Den eldre koden 438 (Geografi, bachelorgradsstudium, 2016-2018) har ingen rader i seksårsvinduet."
+    },
+    {
+      "entryId": "uia_samfunnsplanlegging",
+      "institusjonskode": "1171",
+      "studieprogramkoder": [
+        "BACSAMKOM"
+      ],
+      "studieprogramnavn": "Samfunnsplanlegging og kommunikasjon, bachelorprogram",
+      "nivaakode": "B3",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 538
+    },
+    {
+      "entryId": "hivolda_planlegging",
+      "institusjonskode": "0236",
+      "studieprogramkoder": [
+        "OFFBV"
+      ],
+      "studieprogramnavn": "Samfunnsutvikling - bachelor",
+      "nivaakode": "B3",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 137,
+      "merknad": "Samme kode gjennom hele perioden, men DBH-navnet endret seg fra «Bachelorgradsstudium i planlegging og administrasjon» til «Samfunnsutvikling - bachelor» i 2023. Samordna opptak bruker fortsatt navnet «Planlegging, administrasjon og leiing». OFFBV er den eneste planleggingsbacheloren ved Volda i 2026."
+    },
+    {
+      "entryId": "ntnu_fysisk_planlegging",
+      "institusjonskode": "1150",
+      "studieprogramkoder": [
+        "MFYSPL"
+      ],
+      "studieprogramnavn": "Fysisk planlegging - masterstudium",
+      "nivaakode": "M2",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 408,
+      "merknad": "NTNU har ikke registrert noen ny kode for «Byplanlegging» i 347 for 2026; MFYSPL er fortsatt aktiv."
+    },
+    {
+      "entryId": "nmbu_landskapsing",
+      "institusjonskode": "1173",
+      "studieprogramkoder": [
+        "B-LI"
+      ],
+      "studieprogramnavn": "Landskapsingeniør",
+      "nivaakode": "B3",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 583
+    },
+    {
+      "entryId": "hvl_landskapsplanlegging",
+      "institusjonskode": "0238",
+      "studieprogramkoder": [
+        "LANA"
+      ],
+      "studieprogramnavn": "Bachelor i landskapsplanlegging med landskapsarkitektur",
+      "nivaakode": "B3",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 602,
+      "merknad": "Samme DBH-program som oppføringen hvl_landskapsplanlegging_la i landskapsarkitekturgruppa."
+    },
+    {
+      "entryId": "nmbu_ims",
+      "institusjonskode": "1173",
+      "studieprogramkoder": [
+        "B-DS"
+      ],
+      "studieprogramnavn": "Internasjonale miljø- og utviklingsstudier",
+      "nivaakode": "B3",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 803
+    },
+    {
+      "entryId": "uio_utvikling_baerekraft",
+      "institusjonskode": "1110",
+      "studieprogramkoder": [
+        "SVB-UTV"
+      ],
+      "studieprogramnavn": "Utviklingsstudier og bærekraft",
+      "nivaakode": "B3",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 573,
+      "merknad": "Het «Utviklingsstudier» tidligere."
+    },
+    {
+      "entryId": "oslomet_utviklingsstudier",
+      "institusjonskode": "1175",
+      "studieprogramkoder": [
+        "UTVBA"
+      ],
+      "studieprogramnavn": "Bachelorstudium i utviklingsstudier",
+      "nivaakode": "B3",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 392
+    },
+    {
+      "entryId": "uia_globale_utviklingsstudier",
+      "institusjonskode": "1171",
+      "studieprogramkoder": [
+        "BACUTV"
+      ],
+      "studieprogramnavn": "Globale utviklingsstudier, bachelorprogram",
+      "nivaakode": "B3",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 792,
+      "merknad": "Het «Utviklingsstudier, bachelorprogram» tidligere."
+    },
+    {
+      "entryId": "uio_internasjonale_studier",
+      "institusjonskode": "1110",
+      "studieprogramkoder": [
+        "SVB-INTER"
+      ],
+      "studieprogramnavn": "Internasjonale studier",
+      "nivaakode": "B3",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 1114
+    },
+    {
+      "entryId": "inn_internasjonale_studier",
+      "institusjonskode": "1177",
+      "studieprogramkoder": [
+        "BAINTHIS"
+      ],
+      "studieprogramnavn": "Bachelor i internasjonale studier",
+      "nivaakode": "B3",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 735,
+      "merknad": "INN skiftet institusjonskode fra 0264 til 1177 i 2025; samme programkode BAINTHIS. Årene 2020-2024 ligger under 0264, 2025 under 1177. Het «Bachelor i internasjonale studier med historie» tidligere.",
+      "institusjonskoder": [
+        "1177",
+        "0264"
+      ]
+    },
+    {
+      "entryId": "nord_internasjonale_relasjoner_b",
+      "institusjonskode": "1174",
+      "studieprogramkoder": [
+        "BAINT"
+      ],
+      "studieprogramnavn": "Bachelor i internasjonale relasjoner",
+      "nivaakode": "B3",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 234
+    },
+    {
+      "entryId": "nmbu_eiendomsutvikling",
+      "institusjonskode": "1173",
+      "studieprogramkoder": [
+        "M-EUTV"
+      ],
+      "studieprogramnavn": "Eiendomsutvikling",
+      "nivaakode": "M2",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 298,
+      "merknad": "Deltidsvarianten M-EUTV-DEL (64 kandidater i 2025) er holdt utenfor, på samme måte som i programkartet."
+    },
+    {
+      "entryId": "ntnu_eiendomsutvikling",
+      "institusjonskode": "1150",
+      "studieprogramkoder": [
+        "MAEIENDOM"
+      ],
+      "studieprogramnavn": "Eiendomsutvikling og -forvaltning - masterstudium",
+      "nivaakode": "M2",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 369,
+      "merknad": "NTNU har to koder med nesten samme navn: MAEIENDOM er den toårige masteren (M2, 120 sp) og er den riktige her. MEIENDOM er den erfaringsbaserte masteren (ME, 90 sp, 248 kandidater i 2025) og er utelatt."
+    },
+    {
+      "entryId": "nmbu_folkehelse",
+      "institusjonskode": "1173",
+      "studieprogramkoder": [
+        "M-FOL"
+      ],
+      "studieprogramnavn": "Folkehelsevitenskap",
+      "nivaakode": "M2",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 198,
+      "merknad": "Deltidsvarianten M-FOL-DEL (140 kandidater i 2025) er holdt utenfor."
+    },
+    {
+      "entryId": "ntnu_folkehelse",
+      "institusjonskode": "1150",
+      "studieprogramkoder": [
+        "MFHLS"
+      ],
+      "studieprogramnavn": "Folkehelse - masterstudium",
+      "nivaakode": "M2",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 347
+    },
+    {
+      "entryId": "uio_folkehelsearbeid",
+      "institusjonskode": "1110",
+      "studieprogramkoder": [
+        "MFM2-FHEP"
+      ],
+      "studieprogramnavn": "Folkehelsevitenskap og epidemiologi",
+      "nivaakode": "M2",
+      "aarMedKarakterer": [
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 888,
+      "merknad": "DBH har ingen egen kode for studieretningen «Folkehelsearbeid og bærekraftige helsetjenester». MFM2-FHEP er hele masterprogrammet i folkehelsevitenskap og epidemiologi og dekker også de andre studieretningene. Programmet er registrert fra 2023, så det finnes ikke karakterer for 2020-2022."
+    },
+    {
+      "entryId": "nmbu_gep",
+      "institusjonskode": "1173",
+      "studieprogramkoder": [
+        "M-GEP"
+      ],
+      "studieprogramnavn": "Global økonomi og politikk",
+      "nivaakode": "M2",
+      "aarMedKarakterer": [
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 62,
+      "merknad": "Første opptak i 2024; karakterer finnes bare for 2024 og 2025."
+    },
+    {
+      "entryId": "nmbu_globale_utviklingsstudier",
+      "institusjonskode": "1173",
+      "studieprogramkoder": [
+        "M-DS"
+      ],
+      "studieprogramnavn": "Globale utviklingsstudier",
+      "nivaakode": "M2",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 184
+    },
+    {
+      "entryId": "uio_decc",
+      "institusjonskode": "1110",
+      "studieprogramkoder": [
+        "HFM2-CES"
+      ],
+      "studieprogramnavn": "Development, Environment and Cultural Change",
+      "nivaakode": "M2",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 163,
+      "merknad": "Het «Culture, Environment and Sustainability» tidligere."
+    },
+    {
+      "entryId": "nmbu_intmiljo",
+      "institusjonskode": "1173",
+      "studieprogramkoder": [
+        "M-IES"
+      ],
+      "studieprogramnavn": "Internasjonale miljøstudier",
+      "nivaakode": "M2",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 250
+    },
+    {
+      "entryId": "nmbu_intrel",
+      "institusjonskode": "1173",
+      "studieprogramkoder": [
+        "M-IR"
+      ],
+      "studieprogramnavn": "Internasjonale relasjoner",
+      "nivaakode": "M2",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 333,
+      "merknad": "Deltidsvarianten M-IR-DEL (12 kandidater i 2025) er holdt utenfor, i tråd med programkartet."
+    },
+    {
+      "entryId": "uio_pecos",
+      "institusjonskode": "1110",
+      "studieprogramkoder": [
+        "SVM2-PECOS"
+      ],
+      "studieprogramnavn": "Peace and Conflict Studies",
+      "nivaakode": "M2",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 232
+    },
+    {
+      "entryId": "nmbu_gla",
+      "institusjonskode": "1173",
+      "studieprogramkoder": [
+        "M-GLA"
+      ],
+      "studieprogramnavn": "Landskapsarkitektur for global bærekraft",
+      "nivaakode": "M2",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 186,
+      "merknad": "Programmet startet i 2020; 2020 er et oppstartsår med få kandidater."
+    },
+    {
+      "entryId": "nmbu_eeg",
+      "institusjonskode": "1173",
+      "studieprogramkoder": [
+        "M-EEG"
+      ],
+      "studieprogramnavn": "Samfunnsøkonomi og miljøforvaltning",
+      "nivaakode": "M2",
+      "aarMedKarakterer": [
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 102,
+      "merknad": "Første opptak i 2024; karakterer finnes bare for 2024 og 2025. NMBUs eldre samfunnsøkonomimaster M-ECON er et annet program og er ikke tatt med."
+    },
+    {
+      "entryId": "ntnu_msok",
+      "institusjonskode": "1150",
+      "studieprogramkoder": [
+        "MSØK"
+      ],
+      "studieprogramnavn": "Samfunnsøkonomi - masterstudium",
+      "nivaakode": "M2",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 249
+    },
+    {
+      "entryId": "uio_economics",
+      "institusjonskode": "1110",
+      "studieprogramkoder": [
+        "SVM2-ECON"
+      ],
+      "studieprogramnavn": "Economics",
+      "nivaakode": "M2",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 598
+    },
+    {
+      "entryId": "uib_samfunnsokonomi",
+      "institusjonskode": "1120",
+      "studieprogramkoder": [
+        "MASV-SØK"
+      ],
+      "studieprogramnavn": "Masterprogram i samfunnsøkonomi",
+      "nivaakode": "M2",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 234
+    }
+  ]
+}

@@ -2,6 +2,7 @@ import { FULL_ADMISSION_DATA, ALL_YEARS } from '../data/fullAdmissionData';
 import { SAMF_DATA, SAMF_YEARS } from '../data/samfData';
 import { ANNUAL_STUDIES_DATA, ANNUAL_YEARS } from '../data/annualStudiesData';
 import { LANDSAM_GROUPS, LANDSAM_YEARS } from '../data/landsamAdmissionData';
+import { LANDSAM_COURSE_GROUPS } from '../data/landsamCourseData';
 
 // ─── Core helpers ─────────────────────────────────────────────────────────────
 
@@ -157,4 +158,51 @@ export function exportLandsamCsv() {
   }
 
   downloadCsv('landsam_opptak_2020-2026.csv', lines);
+}
+
+// ─── LANDSAM: Emner og karakterer ────────────────────────────────────────────
+
+/**
+ * Eksporterer emnerader (ett emne per rad) for de valgte programmene i én
+ * programgruppe og ett år. `entryIds` er id-ene fra opptaksdataene.
+ */
+export function exportLandsamCoursesCsv(
+  groupId: string,
+  entryIds: string[],
+  year: number,
+  minKandidater = 0,
+) {
+  const header = row(
+    'Programgruppe', 'Nivå',
+    'Institusjon', 'Kortnavn', 'NMBU',
+    'DBH institusjonskode', 'DBH programkoder', 'DBH programnavn',
+    'År', 'Emnekode', 'Emnenavn', 'Studiepoeng',
+    'A', 'B', 'C', 'D', 'E', 'F', 'G (bestått)', 'H (ikke bestått)',
+    'Kandidater', 'Bokstavkarakterer', 'Snitt (A=5…F=0)', 'Stryk %', 'Bestått %'
+  );
+
+  const lines: string[] = [header];
+  const group = LANDSAM_COURSE_GROUPS.find((g) => g.id === groupId);
+
+  if (group) {
+    for (const p of group.programs) {
+      if (entryIds.length > 0 && !entryIds.includes(p.entryId)) continue;
+      for (const c of p.courses) {
+        const d = c.years.find((yr) => yr.year === year);
+        if (!d) continue;
+        if (d.total < minKandidater) continue;
+        const bokstav = d.A + d.B + d.C + d.D + d.E + d.F;
+        lines.push(row(
+          group.label, group.level,
+          p.institusjon, p.shortName, p.isNmbu ? 'ja' : 'nei',
+          p.dbhInstitusjonskode, p.dbhProgramkoder.join(' '), p.dbhProgramnavn,
+          d.year, c.emnekode, c.emnenavn, c.studiepoeng,
+          d.A, d.B, d.C, d.D, d.E, d.F, d.G, d.H,
+          d.total, bokstav, d.snitt, d.strykprosent, d.bestattprosent
+        ));
+      }
+    }
+  }
+
+  downloadCsv(`landsam_emner_${groupId}_${year}.csv`, lines);
 }

@@ -18,17 +18,19 @@ import { MarkedsstatusView } from './components/MarkedsstatusView';
 import { FacultyLanding, type Faculty } from './components/FacultyLanding';
 import { LandsamLanding } from './components/LandsamLanding';
 import { LandsamAdmissionAnalysis } from './components/LandsamAdmissionAnalysis';
+import { LandsamCourseAnalysis } from './components/LandsamCourseAnalysis';
 import { BookOpen, Table2, BarChart2, Star, Scale, Map, GraduationCap, GalleryVerticalEnd, Award, ScatterChart, TrendingUp, ArrowUpRight, Wifi, Globe2 } from 'lucide-react';
 
 type ProgramLevel = 'bachelor' | 'master' | 'opptak2026' | 'markedsstatus';
 type ViewMode = 'course' | 'mapping' | 'admission' | 'karakterindeks' | 'studiebarometer' | 'map' | 'firstyear' | 'online';
 type MasterViewMode = 'masteroppgave' | 'sammenligning' | 'nmbu-emner';
-type LandsamView = 'landing' | 'analyse';
+type LandsamView = 'landing' | 'analyse' | 'emner';
 
 export default function App() {
   const [faculty, setFaculty] = useState<Faculty | null>(null);
   const [landsamView, setLandsamView] = useState<LandsamView>('landing');
   const [landsamGroup, setLandsamGroup] = useState<string | undefined>(undefined);
+  const [landsamCourseGroup, setLandsamCourseGroup] = useState<string | undefined>(undefined);
   const [programLevel, setProgramLevel] = useState<ProgramLevel | null>(null);
   const [selectedUniversities, setSelectedUniversities] = useState<string[]>(
     ['nmbu', 'hio', 'uia', 'usn', 'nhh', 'bi', 'kristiania', 'oslomet', 'ntnu', 'ntnu_gjovik', 'ntnu_alesund', 'uit', 'nla', 'uis', 'inn', 'onh', 'nord', 'hvl', 'himolde', 'inn_rena']
@@ -77,7 +79,7 @@ export default function App() {
   if (faculty === null) {
     return (
       <FacultyLanding
-        onSelect={(f) => { setFaculty(f); setLandsamView('landing'); setLandsamGroup(undefined); }}
+        onSelect={(f) => { setFaculty(f); setLandsamView('landing'); setLandsamGroup(undefined); setLandsamCourseGroup(undefined); }}
       />
     );
   }
@@ -88,10 +90,50 @@ export default function App() {
       return (
         <LandsamLanding
           onOpenAnalysis={(g) => { setLandsamGroup(g); setLandsamView('analyse'); }}
+          onOpenCourses={(g) => { setLandsamCourseGroup(g); setLandsamView('emner'); }}
           onBackToFaculties={() => setFaculty(null)}
         />
       );
     }
+
+    if (landsamView === 'emner') {
+      return (
+        <div className="min-h-screen p-6" style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
+          <div className="max-w-7xl mx-auto">
+
+            {/* Top-level switcher */}
+            <div className="flex items-center gap-2 mb-6">
+              <button
+                onClick={() => setLandsamView('landing')}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs transition-all"
+                style={{ backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)' }}
+              >
+                ← Tilbake
+              </button>
+              <span className="px-3 py-1.5 rounded-lg text-xs" style={{ backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-1)' }}>
+                Fakultet for landskap og samfunn
+              </span>
+            </div>
+
+            {/* Header */}
+            <header className="mb-8">
+              <div className="flex items-center gap-3 mb-1">
+                <div className="w-1 h-9 rounded-sm" style={{ backgroundColor: 'var(--nmbu-green-dark)' }} />
+                <h1 className="text-4xl" style={{ color: 'var(--nmbu-green-dark)', fontFamily: "'Lora', serif", fontWeight: 500 }}>
+                  Emner og karakterer
+                </h1>
+              </div>
+              <p className="text-sm pl-4" style={{ color: 'var(--nmbu-neutral-1)' }}>
+                Karakterindeks, karakterfordeling og emnetabeller per studieprogram · Kilde: DBH/HKDIR
+              </p>
+            </header>
+
+            <LandsamCourseAnalysis key={landsamCourseGroup ?? 'alle'} initialGroup={landsamCourseGroup} />
+          </div>
+        </div>
+      );
+    }
+
     return (
       <div className="min-h-screen p-6" style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
         <div className="max-w-7xl mx-auto">

@@ -1,10 +1,16 @@
 import { TrendingUp, Lock, BookOpen, Globe2 } from 'lucide-react';
 import { LANDSAM_GROUPS } from '../data/landsamAdmissionData';
-import { landsamHasComparison, landsamProgramsWithData } from '../data/landsamUtils';
+import { LANDSAM_COURSE_GROUPS } from '../data/landsamCourseData';
+import {
+  landsamHasComparison, landsamProgramsWithData,
+  landsamCourseHasComparison, landsamCourseProgramsWithData,
+} from '../data/landsamUtils';
 
 interface Props {
   /** Åpner opptaksanalysen. groupId = programgruppen som skal være valgt. */
   onOpenAnalysis: (groupId?: string) => void;
+  /** Åpner emne- og karakteranalysen. groupId = emnegruppen som skal være valgt. */
+  onOpenCourses: (groupId?: string) => void;
   /** Tilbake til fakultetsoversikten. */
   onBackToFaculties: () => void;
 }
@@ -15,7 +21,7 @@ const LEVEL_LABEL: Record<string, string> = {
   master2:  'Toårig master',
 };
 
-export function LandsamLanding({ onOpenAnalysis, onBackToFaculties }: Props) {
+export function LandsamLanding({ onOpenAnalysis, onOpenCourses, onBackToFaculties }: Props) {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-6" style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
       <div className="max-w-3xl w-full">
@@ -123,6 +129,86 @@ export function LandsamLanding({ onOpenAnalysis, onBackToFaculties }: Props) {
           </div>
         </div>
 
+        {/* Skillelinje — Emner og karakterer */}
+        <div className="flex items-center gap-4 mt-8 mb-6">
+          <div className="h-px flex-1" style={{ backgroundColor: 'var(--nmbu-neutral-3)' }} />
+          <div className="flex items-center gap-2 px-3 py-1.5 rounded-full" style={{ backgroundColor: 'var(--nmbu-green-4)', border: '1px solid var(--nmbu-green-3)' }}>
+            <BookOpen className="w-3.5 h-3.5" style={{ color: 'var(--nmbu-green-dark)' }} />
+            <span style={{ fontSize: 11, fontWeight: 700, color: 'var(--nmbu-green-dark)', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
+              Emner og karakterer
+            </span>
+          </div>
+          <div className="h-px flex-1" style={{ backgroundColor: 'var(--nmbu-neutral-3)' }} />
+        </div>
+
+        {/* Emner og karakterer — hovedkort */}
+        <div className="w-full rounded-2xl text-left" style={{ backgroundColor: '#fff', border: '2px solid var(--nmbu-green-3)', boxShadow: '0 2px 8px rgba(2,92,79,0.10)' }}>
+          <button
+            onClick={() => onOpenCourses()}
+            className="w-full p-8 text-left transition-all rounded-t-2xl"
+            onMouseEnter={(e) => { (e.currentTarget as HTMLButtonElement).style.backgroundColor = 'var(--nmbu-green-light)'; }}
+            onMouseLeave={(e) => { (e.currentTarget as HTMLButtonElement).style.backgroundColor = ''; }}
+          >
+            <div className="flex items-start gap-6">
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: 'var(--nmbu-green-4)' }}>
+                <BookOpen className="w-6 h-6" style={{ color: 'var(--nmbu-green-dark)' }} />
+              </div>
+              <div className="flex-1">
+                <div className="flex items-center gap-3 mb-1">
+                  <div style={{ fontFamily: "'Lora', serif", fontWeight: 500, fontSize: '20px', color: 'var(--nmbu-green-dark)' }}>
+                    Emner og karakterer
+                  </div>
+                  <div className="text-xs px-2 py-0.5 rounded-full font-medium" style={{ backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)' }}>
+                    DBH/HKDIR
+                  </div>
+                </div>
+                <p style={{ fontSize: '13px', color: 'var(--nmbu-neutral-2)', lineHeight: 1.6, maxWidth: 620 }}>
+                  Karakterindeks, karakterfordeling og emnetabeller for studentene på fakultetets program,
+                  sammenlignet med de samme fagene ved andre institusjoner.
+                </p>
+              </div>
+            </div>
+          </button>
+
+          {/* Hurtigvalg per emnegruppe */}
+          <div className="px-8 pb-6 flex items-center gap-3 flex-wrap" style={{ borderTop: '1px solid var(--nmbu-green-3)' }}>
+            <span style={{ fontSize: 11, color: 'var(--nmbu-green-dark)', fontWeight: 600, opacity: 0.7, whiteSpace: 'nowrap', paddingTop: 12 }}>Gå direkte til:</span>
+            {LANDSAM_COURSE_GROUPS.map((g) => {
+              const ok = landsamCourseHasComparison(g);
+              if (!ok) return (
+                <div key={g.id} title="Ikke nok emnetall til sammenligning ennå"
+                  className="flex flex-col items-start rounded-xl px-4 py-2.5 text-left"
+                  style={{ backgroundColor: 'var(--nmbu-beige-light)', border: '1.5px dashed var(--nmbu-neutral-3)', marginTop: 12, minWidth: 170, cursor: 'not-allowed', opacity: 0.7 }}>
+                  <span style={{ fontSize: 13, fontWeight: 600, color: 'var(--nmbu-neutral-2)' }}>{g.label}</span>
+                  <span style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)', marginTop: 1 }}>
+                    {LEVEL_LABEL[g.level] ?? g.level} · {landsamCourseProgramsWithData(g) === 0 ? 'ingen emnetall ennå' : 'bare NMBU har emnetall'}
+                  </span>
+                </div>
+              );
+              return (
+                <button
+                  key={g.id}
+                  onClick={() => onOpenCourses(g.id)}
+                  className="flex flex-col items-start rounded-xl px-4 py-2.5 text-left transition-all"
+                  style={{
+                    backgroundColor: 'var(--nmbu-green-4)',
+                    border: '1.5px solid var(--nmbu-green-3)',
+                    marginTop: 12,
+                    minWidth: 170,
+                  }}
+                  onMouseEnter={(e) => { (e.currentTarget as HTMLButtonElement).style.backgroundColor = 'var(--nmbu-green-3)'; (e.currentTarget as HTMLButtonElement).style.borderColor = 'var(--nmbu-green-2)'; }}
+                  onMouseLeave={(e) => { (e.currentTarget as HTMLButtonElement).style.backgroundColor = 'var(--nmbu-green-4)'; (e.currentTarget as HTMLButtonElement).style.borderColor = 'var(--nmbu-green-3)'; }}
+                >
+                  <span style={{ fontSize: 13, fontWeight: 600, color: 'var(--nmbu-green-dark)' }}>{g.label}</span>
+                  <span style={{ fontSize: 10, color: 'var(--nmbu-green-6)', marginTop: 1 }}>
+                    {LEVEL_LABEL[g.level] ?? g.level} · {g.programs.length} program
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
         {/* Kommer-kort */}
         <div className="mt-5">
           <div className="flex items-center gap-4 mb-5">
@@ -135,12 +221,6 @@ export function LandsamLanding({ onOpenAnalysis, onBackToFaculties }: Props) {
 
           <div className="grid grid-cols-2 gap-5">
             {[
-              {
-                id: 'emner',
-                icon: <BookOpen className="w-5 h-5" style={{ color: 'var(--nmbu-neutral-2)' }} />,
-                title: 'Emner og karakterer',
-                desc: 'Karakterstatistikk og emnesammenligning for fakultetets program.',
-              },
               {
                 id: 'markedsstatus',
                 icon: <Globe2 className="w-5 h-5" style={{ color: 'var(--nmbu-neutral-2)' }} />,
