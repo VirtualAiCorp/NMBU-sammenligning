@@ -11,6 +11,11 @@ import {
 import { LANDSAM_COURSE_GROUPS, LANDSAM_COURSE_YEARS, type LandsamCourseGroup } from './landsamCourseData';
 import { LANDSAM_COURSE_MAPPING, type GroupCourseMapping } from './landsamCourseMapping';
 import { LANDSAM_STUDYPLAN_GROUPS, type LandsamStudyPlanGroup } from './landsamStudyPlanData';
+import {
+  MARKET_STATUS as LANDSAM_MARKET_STATUS,
+  MARKET_STATUS_HENTET as LANDSAM_MARKET_STATUS_HENTET,
+  type MarketInstitution, type MarketDoc,
+} from './landsamMarketStatusData';
 
 import {
   LANDSAM_GROUPS as REALTEK_GROUPS,
@@ -22,6 +27,10 @@ import {
 } from './realtekCourseData';
 import { LANDSAM_COURSE_MAPPING as REALTEK_COURSE_MAPPING } from './realtekCourseMapping';
 import { LANDSAM_STUDYPLAN_GROUPS as REALTEK_STUDYPLAN_GROUPS } from './realtekStudyPlanData';
+import {
+  MARKET_STATUS as REALTEK_MARKET_STATUS,
+  MARKET_STATUS_HENTET as REALTEK_MARKET_STATUS_HENTET,
+} from './realtekMarketStatusData';
 
 import {
   LANDSAM_GROUPS as BIOVIT_GROUPS,
@@ -33,6 +42,10 @@ import {
 } from './biovitCourseData';
 import { LANDSAM_COURSE_MAPPING as BIOVIT_COURSE_MAPPING } from './biovitCourseMapping';
 import { LANDSAM_STUDYPLAN_GROUPS as BIOVIT_STUDYPLAN_GROUPS } from './biovitStudyPlanData';
+import {
+  MARKET_STATUS as BIOVIT_MARKET_STATUS,
+  MARKET_STATUS_HENTET as BIOVIT_MARKET_STATUS_HENTET,
+} from './biovitMarketStatusData';
 
 import {
   LANDSAM_GROUPS as KBM_GROUPS,
@@ -44,6 +57,10 @@ import {
 } from './kbmCourseData';
 import { LANDSAM_COURSE_MAPPING as KBM_COURSE_MAPPING } from './kbmCourseMapping';
 import { LANDSAM_STUDYPLAN_GROUPS as KBM_STUDYPLAN_GROUPS } from './kbmStudyPlanData';
+import {
+  MARKET_STATUS as KBM_MARKET_STATUS,
+  MARKET_STATUS_HENTET as KBM_MARKET_STATUS_HENTET,
+} from './kbmMarketStatusData';
 
 import {
   LANDSAM_GROUPS as MINA_GROUPS,
@@ -55,6 +72,12 @@ import {
 } from './minaCourseData';
 import { LANDSAM_COURSE_MAPPING as MINA_COURSE_MAPPING } from './minaCourseMapping';
 import { LANDSAM_STUDYPLAN_GROUPS as MINA_STUDYPLAN_GROUPS } from './minaStudyPlanData';
+import {
+  MARKET_STATUS as MINA_MARKET_STATUS,
+  MARKET_STATUS_HENTET as MINA_MARKET_STATUS_HENTET,
+} from './minaMarketStatusData';
+
+export type { MarketInstitution, MarketDoc };
 
 export type FacultyId = 'landsam' | 'realtek' | 'biovit' | 'kbm' | 'mina';
 
@@ -75,6 +98,10 @@ export interface FacultyData {
   courseYears: number[];
   courseMapping: GroupCourseMapping[];
   studyPlanGroups: LandsamStudyPlanGroup[];
+  /** Markedsstatus fra styrepapirer hos konkurrerende institusjoner. */
+  marketStatus: MarketInstitution[];
+  /** Datoen markedsstatusen sist ble hentet inn, eller null. */
+  marketStatusHentet: string | null;
 }
 
 export const FACULTIES: Record<FacultyId, FacultyData> = {
@@ -90,6 +117,8 @@ export const FACULTIES: Record<FacultyId, FacultyData> = {
     courseYears: LANDSAM_COURSE_YEARS,
     courseMapping: LANDSAM_COURSE_MAPPING,
     studyPlanGroups: LANDSAM_STUDYPLAN_GROUPS,
+    marketStatus: LANDSAM_MARKET_STATUS,
+    marketStatusHentet: LANDSAM_MARKET_STATUS_HENTET,
   },
   realtek: {
     id: 'realtek',
@@ -103,6 +132,8 @@ export const FACULTIES: Record<FacultyId, FacultyData> = {
     courseYears: REALTEK_COURSE_YEARS,
     courseMapping: REALTEK_COURSE_MAPPING,
     studyPlanGroups: REALTEK_STUDYPLAN_GROUPS,
+    marketStatus: REALTEK_MARKET_STATUS,
+    marketStatusHentet: REALTEK_MARKET_STATUS_HENTET,
   },
   biovit: {
     id: 'biovit',
@@ -116,6 +147,8 @@ export const FACULTIES: Record<FacultyId, FacultyData> = {
     courseYears: BIOVIT_COURSE_YEARS,
     courseMapping: BIOVIT_COURSE_MAPPING,
     studyPlanGroups: BIOVIT_STUDYPLAN_GROUPS,
+    marketStatus: BIOVIT_MARKET_STATUS,
+    marketStatusHentet: BIOVIT_MARKET_STATUS_HENTET,
   },
   kbm: {
     id: 'kbm',
@@ -129,6 +162,8 @@ export const FACULTIES: Record<FacultyId, FacultyData> = {
     courseYears: KBM_COURSE_YEARS,
     courseMapping: KBM_COURSE_MAPPING,
     studyPlanGroups: KBM_STUDYPLAN_GROUPS,
+    marketStatus: KBM_MARKET_STATUS,
+    marketStatusHentet: KBM_MARKET_STATUS_HENTET,
   },
   mina: {
     id: 'mina',
@@ -142,6 +177,8 @@ export const FACULTIES: Record<FacultyId, FacultyData> = {
     courseYears: MINA_COURSE_YEARS,
     courseMapping: MINA_COURSE_MAPPING,
     studyPlanGroups: MINA_STUDYPLAN_GROUPS,
+    marketStatus: MINA_MARKET_STATUS,
+    marketStatusHentet: MINA_MARKET_STATUS_HENTET,
   },
 };
 

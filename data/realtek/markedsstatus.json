@@ -1,0 +1,190 @@
+{
+  "hentet": "2026-09-22",
+  "fakultet": "realtek",
+  "institusjoner": [
+    {
+      "id": "ntnu",
+      "name": "NTNU",
+      "fullName": "Norges teknisk-naturvitenskapelige universitet",
+      "enhet": "Fakultet for ingeniørvitenskap (IV), Fakultet for informasjonsteknologi og elektroteknikk (IE), Fakultet for naturvitenskap (NV), Fakultet for økonomi",
+      "styresider": ["https://www.ntnu.no/styret"],
+      "status": "none",
+      "dokumenter": [],
+      "punkter": [],
+      "oppsummering": "",
+      "relevanteProgram": []
+    },
+    {
+      "id": "uis",
+      "name": "UiS",
+      "fullName": "Universitetet i Stavanger",
+      "enhet": "Det teknisk-naturvitenskapelige fakultet (TN)",
+      "styresider": ["https://opengov.360online.com/Meetings/uis/Boards/Details/599422"],
+      "status": "complete",
+      "dokumenter": [
+        {
+          "label": "FSTN – møteinnkalling 19.03.2026 (sak 1–14/26)",
+          "url": "https://opengov.360online.com/Meetings/uis/File/Details/1458263.PDF",
+          "filnavn": "UiS_Innkalling_TN_19.03.2026.pdf",
+          "dato": "2026-03-19",
+          "storrelseMB": 0.31,
+          "lastetNed": true
+        },
+        {
+          "label": "FSTN – møteinnkalling 18.06.2026 (sak 15–29/26, inkl. opptaksrammer 2027 og KI og utdanning)",
+          "url": "https://opengov.360online.com/Meetings/uis/File/Details/1482784.pdf",
+          "filnavn": "UiS_Innkalling_TN_18.06.2026.pdf",
+          "dato": "2026-06-18",
+          "storrelseMB": 0.31,
+          "lastetNed": true
+        }
+      ],
+      "punkter": [
+        "Fakultetsstyret ved Det teknisk-naturvitenskapelige fakultet (FSTN) er et nytt styre for perioden 2025–2029 og hadde sine to første ordinære møter 19.03.2026 og 18.06.2026.",
+        "I forslaget til opptaksrammer for 2027 (sak 25/26) kuttes bachelor i datateknologi fra 80 til 60 ordinære plasser, samtidig som det opprettes 10 nye plasser på en ny Y-vei-inngang til samme program fra 2027. Bachelor i energi- og petroleumsteknologi kuttes fra 80 til 70 plasser og bachelor i biologisk kjemi fra 30 til 25, mens bachelor i maskin økes med 5 plasser. Totalt opptak ved TN-fakultetet øker likevel fra 1 060 plasser i 2026 til 1 105 i 2027, blant annet drevet av vekst i internasjonale opptaksplasser etter at studieavgiften ble halvert.",
+        "Bachelor i batteri- og energiteknologi ved Institutt for energi- og petroleumsteknologi foreslås nedlagt (sak 13/26) etter nullopptak siden 2025. Søkertallet kollapset da planlagte norske battericelle-gigafabrikker, blant dem Beyonder, ikke ble realisert.",
+        "Studiebarometeret 2025 viser at maskiningeniør-bachelor ved TN hadde et markant fall i studenttilfredshet: score på undervisning falt til 2,6 (ned 1,2 poeng) og overordnet tilfredshet til 3,2 (ned 0,8 poeng). Svarprosenten for TN-fakultetet var 35 prosent, opp fra 31 prosent året før, men fortsatt lavere enn UiS' snitt på 43 prosent.",
+        "Masterprogrammene i industriell teknologi og driftsledelse og marin- og offshoreteknologi fikk de beste resultatene i Studiebarometeret 2025, begge med overordnet tilfredshet over 4,7. Marin- og offshoreteknologi ble nummer 5 i Teknas kåring av Norges beste toårige masterprogram, med en snittscore på 4,51.",
+        "Instituttene ved TN-fakultetet skal utarbeide egne strategier frem mot 2030, som skal vedtas av fakultetsstyret og sette føringer for strategisk forankring av nyansettelser og hvor videre nedbemanning ikke bør skje.",
+        "Fakultetet arbeider med «KI-robust studieprogramutvikling» og progresjon i studentenes KI-bruk gjennom studieløpet (sak 28/26, juni 2026). Arbeidet er foreløpig på et utforskende pilotstadium.",
+        "Institutt for maskin, bygg og materialteknologi søkte i februar 2026 om å utrede en ny EVU-sertifisering som internasjonal sveiseingeniør (IWE) på masternivå, rettet mot offshore- og energiindustrien."
+      ],
+      "oppsummering": "UiS' TN-fakultet fikk sitt eget fakultetsstyre fra 2025 og bruker 2026 til å justere studieporteføljen: datateknologi kuttes med 20 ordinære plasser men får en ny Y-vei-inngang, batteriteknologi-bachelor legges ned etter kollaps i søkertall, og maskiningeniør sliter med studenttilfredshet. Totalt opptak ved fakultetet vokser likevel, drevet av internasjonale studenter etter halvert studieavgift, og instituttene skal nå utarbeide egne strategier mot 2030.",
+      "relevanteProgram": ["uis_datateknologi", "uis_indok", "uis_kybernetikk_robotteknologi", "uis_ing_bygg_konstruksjon", "uis_ing_bygg_infrastruktur", "uis_matematikk_fysikk"]
+    },
+    {
+      "id": "uia",
+      "name": "UiA",
+      "fullName": "Universitetet i Agder",
+      "enhet": "Fakultet for teknologi og realfag (TekReal)",
+      "styresider": ["https://opengov.360online.com/Meetings/uia/Boards/Details/213434"],
+      "status": "complete",
+      "dokumenter": [
+        {
+          "label": "Fakultetsstyret TekReal – innkalling 19.01.2026 (budsjett 2026, virksomhetsplan 2026)",
+          "url": "https://opengov.360online.com/Meetings/uia/File/Details/1154426.PDF",
+          "filnavn": "UiA_Innkalling_TR_19.01.2026.pdf",
+          "dato": "2026-01-19",
+          "storrelseMB": 3.63,
+          "lastetNed": true
+        },
+        {
+          "label": "Fakultetsstyret TekReal – innkalling 08.04.2026 (kvalitetsrapport 2025, studie- og emneportefølje 2026-2027)",
+          "url": "https://opengov.360online.com/Meetings/uia/File/Details/1178666.PDF",
+          "filnavn": "UiA_Innkalling_TR_08.04.2026.pdf",
+          "dato": "2026-04-08",
+          "storrelseMB": 4.33,
+          "lastetNed": true
+        }
+      ],
+      "punkter": [
+        "Fakultetsstyret vedtok budsjett 2026 på totalt 285,3 millioner kroner, en økning på 9,2 millioner fra 2025 som likevel ligger under lønns- og prisvekst. Toppforskningssenteret Mekatronikk fikk sin siste strategiske tildeling i 2025 og er ute av budsjettet fra 2026.",
+        "Virksomhetsplanen for 2026 erkjenner at «økonomisk ubalanse er spesielt utfordrende for to av instituttene» og krever strategisk omstilling for å sikre bærekraftig drift. Samtidig skal fakultetet etablere en egen KI-emnemodul i alle studieprogram ved TekReal i løpet av 2026.",
+        "Bachelorprogrammene hadde nesten 200 flere førsteprioritetssøkere i 2025 enn året før, hovedsakelig drevet av det nye fleksible, nett- og samlingsbaserte bachelorprogrammet i Byggdesign (171 førsteprioritetssøkere, 64 av 30 planlagte studenter startet høsten 2025; 50 fortsatt aktive våren 2026).",
+        "Andelen ingeniørstudenter som kommer inn via lokalt opptak uten realfagsfordypning (TRES/Y-vei) har de siste tre årene gått forbi andelen med realfagsfordypning fra Samordna opptak. Fakultetet venter at trenden fortsetter fordi færre elever i videregående skole velger matematikk R2.",
+        "På de toårige masterprogrammene har opptaket ligget stabilt på rundt 200 studenter de siste fire årene, men med fallende antall førsteprioritetssøkere og kvalifiserte søkere – i 2025 fikk alle kvalifiserte søkere tilbud. Alle masterprogram unntatt industriell økonomi og teknologiledelse undervises på engelsk, og sivilingeniørprogrammene er stengt for søkere utenfor EU/EØS på grunn av eksportkontrollregelverket. Fra 2026 venter fakultetet flere internasjonale masterstudenter etter at skolepengeavgiften for denne gruppen ble halvert.",
+        "Bachelor i industriell matematikk er fortsatt i rød kategori i fakultetets trafikklysmodell for studieporteføljen, tredje året på rad, og vurderes som sårbart på grunn av fallende søkertall til lærerutdanning og realfag. Programmet videreføres likevel fordi det fungerer som «mattepakke» for Handelshøyskolen og overlapper med flere andre programmer.",
+        "Nye fleksible studietilbud lanseres: et nettbasert årsstudium i fysikk fra høsten 2026, et digitalt årsstudium i matematikk fra høsten 2027, og et nettbasert halvårsstudium «Applied AI» rettet mot personer uten teknisk bakgrunn, med utspring i CAIR – Senter for forskning på kunstig intelligens, fra studieåret 2026–2027.",
+        "Mekatronikk, master (siving.) og AI og IoT, master står begge på planen for periodisk programevaluering i 2026, sammen med industriell matematikk, matematikk-master og fornybar energi bachelor/master."
+      ],
+      "oppsummering": "UiAs TekReal-fakultet vokser i bachelor-søkertall, særlig drevet av et nytt fleksibelt Byggdesign-program og en økende andel studenter uten realfagsfordypning, mens de toårige masterprogrammene har flatt opptak og fallende søkertall. Budsjett og virksomhetsplan for 2026 peker på økonomisk ubalanse ved to institutter og en satsing på KI i hele studieporteføljen, samtidig som industriell matematikk fortsatt er i rød kategori i porteføljestyringen.",
+      "relevanteProgram": ["uia_indok", "uia_ki", "uia_ing_mekatronikk"]
+    },
+    {
+      "id": "uit",
+      "name": "UiT",
+      "fullName": "UiT Norges arktiske universitet",
+      "enhet": "Fakultet for naturvitenskap og teknologi",
+      "styresider": ["https://uit.no/om/enhet/styret"],
+      "status": "none",
+      "dokumenter": [],
+      "punkter": [],
+      "oppsummering": "",
+      "relevanteProgram": []
+    },
+    {
+      "id": "uib",
+      "name": "UiB",
+      "fullName": "Universitetet i Bergen",
+      "enhet": "Det matematisk-naturvitenskapelige fakultet",
+      "styresider": ["https://www.uib.no/mn"],
+      "status": "none",
+      "dokumenter": [],
+      "punkter": [],
+      "oppsummering": "",
+      "relevanteProgram": []
+    },
+    {
+      "id": "uio",
+      "name": "UiO",
+      "fullName": "Universitetet i Oslo",
+      "enhet": "Det matematisk-naturvitenskapelige fakultet (MN)",
+      "styresider": ["https://www.mn.uio.no/om/organisasjon/fakultetsstyret/"],
+      "status": "none",
+      "dokumenter": [],
+      "punkter": [],
+      "oppsummering": "",
+      "relevanteProgram": []
+    },
+    {
+      "id": "oslomet",
+      "name": "OsloMet",
+      "fullName": "OsloMet - storbyuniversitetet",
+      "enhet": "Fakultet for teknologi, kunst og design (TKD)",
+      "styresider": ["https://ansatt.oslomet.no/om-oslomet/styret"],
+      "status": "none",
+      "dokumenter": [],
+      "punkter": [],
+      "oppsummering": "",
+      "relevanteProgram": []
+    },
+    {
+      "id": "hvl",
+      "name": "HVL",
+      "fullName": "Høgskulen på Vestlandet",
+      "enhet": "Fakultet for ingeniør- og naturvitskap (FIN)",
+      "styresider": ["https://opengov.360online.com/Meetings/hvl-uninett"],
+      "status": "none",
+      "dokumenter": [],
+      "punkter": [],
+      "oppsummering": "",
+      "relevanteProgram": []
+    },
+    {
+      "id": "usn",
+      "name": "USN",
+      "fullName": "Universitetet i Sørøst-Norge",
+      "enhet": "Fakultet for teknologi, naturvitenskap og maritime fag (TNM)",
+      "styresider": ["https://opengov.360online.com/Meetings/usn"],
+      "status": "none",
+      "dokumenter": [],
+      "punkter": [],
+      "oppsummering": "",
+      "relevanteProgram": []
+    },
+    {
+      "id": "nord",
+      "name": "Nord",
+      "fullName": "Nord universitet",
+      "enhet": "Fakultet for biovitenskap og akvakultur / handelshøgskolen (økonomi og teknologiledelse)",
+      "styresider": ["https://www.nord.no/no/om-nord/styret"],
+      "status": "none",
+      "dokumenter": [],
+      "punkter": [],
+      "oppsummering": "",
+      "relevanteProgram": []
+    },
+    {
+      "id": "hio",
+      "name": "HiØ",
+      "fullName": "Høgskolen i Østfold",
+      "enhet": "Fakultet for informasjonsteknologi, ingeniørfag og økonomi (IIØ)",
+      "styresider": ["https://opengov.360online.com/Meetings/hiof"],
+      "status": "none",
+      "dokumenter": [],
+      "punkter": [],
+      "oppsummering": "",
+      "relevanteProgram": []
+    }
+  ]
+}

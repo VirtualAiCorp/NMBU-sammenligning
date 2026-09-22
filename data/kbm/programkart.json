@@ -5,8 +5,8 @@
       "id": "bioteknologi",
       "label": "Bioteknologi",
       "level": "bachelor",
-      "desc": "Sammenligner NMBUs bachelor i bioteknologi med de andre bioteknologi- og molekylærbiologibachelorene.",
-      "note": "Konkurrentene med default true er treårige realfagsbachelorer i bioteknologi eller molekylærbiologi i Samordna opptak. UiOs «Biovitenskap» er et bredt biologiprogram med mange studieretninger og over 150 studieplasser, og er derfor en svakere sammenligning. OsloMets «Ingeniør, bioteknologi og kjemi» er en treårig ingeniørutdanning med eget opptaksgrunnlag og er også tatt med som svakere sammenligning. NTNUs «Medisinsk og biologisk kjemi» (kode 194163) hadde siste opptak i 2023 og er tatt med for å kunne følge tidsserien. Nord universitet har ingen bachelor i bioteknologi i Samordna opptak og er derfor ikke med. NTNUs «Biovitenskap og laboratorieteknologi» i Ålesund (kode 194820) hadde første opptak i 2026 og har for kort tidsserie til å være med.",
+      "desc": "Sammenligner NMBUs bachelor i bioteknologi med de andre bioteknologi- og molekylærbiologiutdanningene.",
+      "note": "Konkurrentene med default true er treårige realfagsbachelorer i bioteknologi eller molekylærbiologi i Samordna opptak. NTNUs bioteknologiprogram i Trondheim (kode 194855) er et femårig integrert masterprogram og er derfor tatt med som svakere sammenligning, mens NTNUs treårige bachelor i Ålesund (kode 194427) er en direkte sammenligning. UiOs «Biovitenskap» er et bredt biologiprogram med over 150 studieplasser og mange studieretninger, og OsloMets «Ingeniør, bioteknologi og kjemi» er en treårig ingeniørutdanning med eget opptaksgrunnlag; begge er svakere sammenligninger. NTNUs «Medisinsk og biologisk kjemi» (kode 194163) og «Biologi og kjemi, realfag» (kode 194184) er årsstudier, ikke bachelorprogrammer, og er derfor ikke med. Nord universitet har ingen bioteknologibachelor i Samordna opptak. NTNUs «Biovitenskap og laboratorieteknologi» i Ålesund (kode 194820) hadde første opptak i 2026 og har for kort tidsserie.",
       "programs": [
         {
           "id": "nmbu_bioteknologi",
@@ -20,20 +20,6 @@
           "default": true,
           "source": "SO",
           "url": "https://www.nmbu.no/studier/bachelor/bioteknologi",
-          "localData": null
-        },
-        {
-          "id": "ntnu_bioteknologi",
-          "shortName": "NTNU",
-          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
-          "studiested": "Trondheim",
-          "programnavn": "Bioteknologi (bachelor)",
-          "studiekode": "194855",
-          "type": "bachelor",
-          "isNmbu": false,
-          "default": true,
-          "source": "SO",
-          "url": "https://www.ntnu.no/studier/bbiotek",
           "localData": null
         },
         {
@@ -75,7 +61,21 @@
           "isNmbu": false,
           "default": true,
           "source": "SO",
-          "url": "https://www.ntnu.no/studier/bbiotekaa",
+          "url": "https://www.ntnu.no/studier/427bt",
+          "localData": null
+        },
+        {
+          "id": "ntnu_bioteknologi_5aar",
+          "shortName": "NTNU Trondheim",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiested": "Trondheim",
+          "programnavn": "Bioteknologi (master 5 år)",
+          "studiekode": "194855",
+          "type": "master",
+          "isNmbu": false,
+          "default": false,
+          "source": "SO",
+          "url": "https://www.ntnu.no/studier/mbiot5",
           "localData": null
         },
         {
@@ -103,21 +103,7 @@
           "isNmbu": false,
           "default": false,
           "source": "SO",
-          "url": "https://www.oslomet.no/studier/tkd/bioteknologi-kjemi",
-          "localData": null
-        },
-        {
-          "id": "ntnu_med_biol_kjemi",
-          "shortName": "NTNU Med. og biol. kjemi",
-          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
-          "studiested": "Trondheim",
-          "programnavn": "Medisinsk og biologisk kjemi (bachelor)",
-          "studiekode": "194163",
-          "type": "bachelor",
-          "isNmbu": false,
-          "default": false,
-          "source": "SO",
-          "url": "https://www.ntnu.no/studier/bmedbiolkjemi",
+          "url": "https://www.oslomet.no/studier/tkd/bioteknologi-kjemiingenior",
           "localData": null
         }
       ]
@@ -126,8 +112,8 @@
       "id": "kjemi",
       "label": "Kjemi",
       "level": "bachelor",
-      "desc": "Sammenligner NMBUs bachelor i kjemi med de andre kjemibachelorene ved universitetene.",
-      "note": "Konkurrentene med default true er treårige realfagsbachelorer i kjemi eller biokjemi i Samordna opptak. UiTs kjemibachelor (kode 186860) hadde siste opptak i 2024 og er erstattet av det femårige sivilingeniørprogrammet «Bærekraftig kjemi og innovasjon» (kode 186764) fra 2025; begge er med, sivilingeniørløpet som svakere sammenligning fordi nivå og opptakskrav er andre. NTNUs «Biologi og kjemi, realfag» er et kombinert biologi- og kjemiprogram og er derfor en svakere sammenligning. Treårige kjemiingeniørutdanninger (HVL 203009, NTNU 194009 og 194688, UiS 217009, USN 222688) har eget ingeniøropptak og er ikke tatt med.",
+      "desc": "Sammenligner NMBUs bachelor i kjemi med kjemi- og biokjemibachelorene ved de andre universitetene.",
+      "note": "Konkurrentene med default true er treårige realfagsbachelorer i kjemi eller biokjemi i Samordna opptak. UiTs kjemibachelor (kode 186860) hadde siste opptak i 2024 og er avløst av det femårige sivilingeniørprogrammet «Bærekraftig kjemi og innovasjon» (kode 186764) fra 2025; begge er med, sivilingeniørløpet som svakere sammenligning fordi nivå og opptakskrav er andre. Treårige kjemiingeniørutdanninger (HVL 203009, NTNU 194009 og 194688, UiS 217009, USN 222688) har eget ingeniøropptak og er ikke tatt med, og NTNUs «Biologi og kjemi, realfag» (kode 194184) er et årsstudium.",
       "programs": [
         {
           "id": "nmbu_kjemi",
@@ -226,20 +212,6 @@
           "source": "SO",
           "url": "https://uit.no/utdanning/program/850311/baerekraftig_kjemi_og_innovasjon_-_sivilingenior",
           "localData": null
-        },
-        {
-          "id": "ntnu_biologi_kjemi",
-          "shortName": "NTNU Biologi og kjemi",
-          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
-          "studiested": "Trondheim",
-          "programnavn": "Biologi og kjemi, realfag (bachelor)",
-          "studiekode": "194184",
-          "type": "bachelor",
-          "isNmbu": false,
-          "default": false,
-          "source": "SO",
-          "url": "https://www.ntnu.no/studier/blkj",
-          "localData": null
         }
       ]
     },
@@ -248,7 +220,7 @@
       "label": "Matvitenskap og ernæring",
       "level": "bachelor",
       "desc": "Sammenligner NMBUs tidligere bachelor i matvitenskap og ernæring med ernæringsutdanningene ved de andre universitetene.",
-      "note": "NMBUs «Matvitenskap og ernæring» (kode 192948) hadde siste opptak i 2024 og er avløst av «Mat, teknologi og helse» (kode 192203), som ligger i gruppen matteknologi. Konkurrentene er ernæringsbachelorer i Samordna opptak. UiOs «Klinisk ernæring» er et femårig profesjonsstudium som gir autorisasjon som klinisk ernæringsfysiolog og har et helt annet opptaksgrunnlag; det er tatt med som svakere sammenligning fordi det trekker mange av de samme søkerne. Universitetet i Innlandets «Mat, ernæring og helse» (kode 209446) hadde siste opptak i 2023 og er derfor også en svakere sammenligning. UiAs og USNs ernæringsprogrammer er idretts- og samfunnsrettede og er ikke tatt med.",
+      "note": "NMBUs «Matvitenskap og ernæring» (kode 192948) hadde siste opptak i 2024 og er avløst av «Mat, teknologi og helse» (kode 192203), som ligger i gruppen matteknologi; den gamle programsiden er tatt ned, og lenken går til etterfølgeren. Konkurrentene er ernæringsbachelorer i Samordna opptak. UiOs «Klinisk ernæring» er et femårig profesjonsstudium som gir autorisasjon som klinisk ernæringsfysiolog og har et helt annet opptaksgrunnlag; det er tatt med som svakere sammenligning fordi det trekker mange av de samme søkerne. Universitetet i Innlandets «Mat, ernæring og helse» (kode 209446) hadde siste opptak i 2023 og har ingen programside igjen, og er derfor ikke med. UiAs og USNs ernæringsprogrammer er idretts- og samfunnsrettede og er heller ikke med.",
       "programs": [
         {
           "id": "nmbu_matvitenskap_ernaring",
@@ -275,7 +247,7 @@
           "isNmbu": false,
           "default": true,
           "source": "SO",
-          "url": "https://www.uib.no/studier/BAMD-ERNÆR",
+          "url": "https://www4.uib.no/studier/program/ernaering-bachelor",
           "localData": null
         },
         {
@@ -303,21 +275,7 @@
           "isNmbu": false,
           "default": false,
           "source": "SO",
-          "url": "https://www.uio.no/studier/program/klinisk-ernaering-master/",
-          "localData": null
-        },
-        {
-          "id": "inn_mat_ernaring_helse",
-          "shortName": "INN",
-          "institusjon": "Universitetet i Innlandet",
-          "studiested": "Elverum",
-          "programnavn": "Mat, ernæring og helse (bachelor)",
-          "studiekode": "209446",
-          "type": "bachelor",
-          "isNmbu": false,
-          "default": false,
-          "source": "SO",
-          "url": "https://www.inn.no/studier/studiesok/mat-ernaering-og-helse-bachelor/",
+          "url": "https://www.uio.no/studier/program/ernering-5aar/",
           "localData": null
         }
       ]
@@ -327,7 +285,7 @@
       "label": "Mat, teknologi og helse",
       "level": "bachelor",
       "desc": "Sammenligner NMBUs bachelor i mat, teknologi og helse med de andre matvitenskaps- og matteknologiutdanningene.",
-      "note": "NMBUs program hadde første opptak i 2025 og erstattet «Matvitenskap og ernæring» (kode 192948), som ligger i gruppen matvitenskap; forgjengeren er tatt med her med default false slik at tidsserien kan følges. NTNUs «Matvitenskap, teknologi og bærekraft» er den eneste direkte konkurrenten. UiTs «Fiskeri- og havbruksvitenskap» og Nords «Sirkulær bioøkonomi» ligger i samme næringskjede, men har tyngdepunkt i havbruk og bioøkonomi og er derfor svakere sammenligninger; Nords program hadde bare opptak i 2022 og 2023.",
+      "note": "NMBUs program hadde første opptak i 2025 og erstattet «Matvitenskap og ernæring» (kode 192948), som ligger i gruppen matvitenskap; forgjengeren er tatt med her med default false slik at tidsserien kan følges. NTNUs «Matvitenskap, teknologi og bærekraft» er den eneste direkte konkurrenten på bachelornivå. UiTs «Fiskeri- og havbruksvitenskap» ligger i samme næringskjede, men har tyngdepunkt i havbruk og er en svakere sammenligning. Nord universitets «Sirkulær bioøkonomi» (kode 204738) hadde bare opptak i 2022 og 2023, og programsiden lot seg ikke verifisere, så den er ikke med.",
       "programs": [
         {
           "id": "nmbu_mat_teknologi_helse",
@@ -354,7 +312,7 @@
           "isNmbu": false,
           "default": true,
           "source": "SO",
-          "url": "https://www.ntnu.no/studier/bmat",
+          "url": "https://www.ntnu.no/studier/mtmat",
           "localData": null
         },
         {
@@ -384,20 +342,735 @@
           "source": "SO",
           "url": "https://uit.no/utdanning/program/270266/fiskeri-_og_havbruksvitenskap_-_bachelor",
           "localData": null
+        }
+      ]
+    },
+    {
+      "id": "bioteknologi2",
+      "label": "Bioteknologi (2-årig master)",
+      "level": "master2",
+      "desc": "Sammenligner de toårige masterne i bioteknologi og molekylærbiologi med lokalt opptak.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. DBH/HKDIR tabell 379 (lokalt opptak per studieprogram) svarte med serverfeil 22.09.2026, så søker-, kvalifiserte- og tilbudstallene mangler for alle programmene i gruppen. Studieplasser og poenggrenser er de som sto på institusjonenes egne programsider da dataene ble hentet, og gjelder siste opptak; de er ført inn på det året sidene oppgir. NMBU oppgir 45 studieplasser og poenggrense 3,0 i 2025 på programsiden. UiB oppgir 20 studieplasser på masteren i molekylærbiologi. NTNUs toårige bioteknologimaster (MSBIOTECH) er engelskspråklig, og NTNU opplyser at siste opptak var høsten 2026; programmet er tatt med som svakere sammenligning fordi det avvikles. NTNUs øvrige bioteknologiløp i Trondheim er femårige og hører hjemme i bachelorgruppen.",
+      "programs": [
+        {
+          "id": "nmbu_bioteknologi2",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Bioteknologi (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": true,
+          "default": true,
+          "source": "local",
+          "url": "https://www.nmbu.no/studier/master-2-aar/bioteknologi",
+          "localData": {
+            "2021": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": 3.0
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": 45,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://www.nmbu.no/studier/master-2-aar/bioteknologi"
+            ]
+          }
         },
         {
-          "id": "nord_sirkulaer_biookonomi",
-          "shortName": "Nord",
-          "institusjon": "Nord universitet",
-          "studiested": "Steinkjer",
-          "programnavn": "Sirkulær bioøkonomi (bachelor)",
-          "studiekode": "204738",
-          "type": "bachelor",
+          "id": "uib_molekylarbiologi2",
+          "shortName": "UiB Molekylærbiologi",
+          "institusjon": "Universitetet i Bergen",
+          "studiested": "Bergen",
+          "programnavn": "Molekylærbiologi (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": true,
+          "source": "local",
+          "url": "https://www.uib.no/studier/MAMN-MOL",
+          "localData": {
+            "2021": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": 20,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://www.uib.no/studier/MAMN-MOL"
+            ]
+          }
+        },
+        {
+          "id": "ntnu_msbiotech",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiested": "Trondheim",
+          "programnavn": "Bioteknologi (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
           "isNmbu": false,
           "default": false,
-          "source": "SO",
-          "url": "https://www.nord.no/studier/sirkulaer-biookonomi-bachelor",
-          "localData": null
+          "source": "local",
+          "url": "https://www.ntnu.no/studier/msbiotech",
+          "localData": {
+            "2021": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://www.ntnu.no/studier/msbiotech"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "kjemi2",
+      "label": "Kjemi (2-årig master)",
+      "level": "master2",
+      "desc": "Sammenligner de toårige masterne i kjemi med lokalt opptak.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. DBH/HKDIR tabell 379 (lokalt opptak per studieprogram) svarte med serverfeil 22.09.2026, så søker-, kvalifiserte- og tilbudstallene mangler for alle programmene i gruppen. Studieplasser og poenggrenser er de som sto på institusjonenes egne programsider da dataene ble hentet, og gjelder siste opptak; de er ført inn på det året sidene oppgir. NMBU oppgir 15 studieplasser og poenggrense 2,6 i 2025 på programsiden, og UiB oppgir 23 studieplasser. UiO publiserer ikke studieplasstall på programsiden. NTNUs toårige kjemimaster (MSCHEM) er engelskspråklig, og NTNU opplyser at siste opptak var høsten 2025; den er derfor tatt med som svakere sammenligning.",
+      "programs": [
+        {
+          "id": "nmbu_kjemi2",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Kjemi (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": true,
+          "default": true,
+          "source": "local",
+          "url": "https://www.nmbu.no/studier/master-2-aar/kjemi",
+          "localData": {
+            "2021": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": 2.6
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": 15,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://www.nmbu.no/studier/master-2-aar/kjemi"
+            ]
+          }
+        },
+        {
+          "id": "uio_kjemi2",
+          "shortName": "UiO",
+          "institusjon": "Universitetet i Oslo",
+          "studiested": "Oslo",
+          "programnavn": "Kjemi (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": true,
+          "source": "local",
+          "url": "https://www.uio.no/studier/program/kjemi-master/",
+          "localData": {
+            "2021": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://www.uio.no/studier/program/kjemi-master/"
+            ]
+          }
+        },
+        {
+          "id": "uib_kjemi2",
+          "shortName": "UiB",
+          "institusjon": "Universitetet i Bergen",
+          "studiested": "Bergen",
+          "programnavn": "Kjemi (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": true,
+          "source": "local",
+          "url": "https://www.uib.no/studier/MAMN-KJEM",
+          "localData": {
+            "2021": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": 23,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://www.uib.no/studier/MAMN-KJEM"
+            ]
+          }
+        },
+        {
+          "id": "ntnu_mschem",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiested": "Trondheim",
+          "programnavn": "Kjemi (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": false,
+          "source": "local",
+          "url": "https://www.ntnu.no/studier/mschem",
+          "localData": {
+            "2021": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://www.ntnu.no/studier/mschem"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "matteknologi2",
+      "label": "Mat, teknologi og helse (2-årig master)",
+      "level": "master2",
+      "desc": "Sammenligner de toårige masterne i matvitenskap og matteknologi med lokalt opptak.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. DBH/HKDIR tabell 379 (lokalt opptak per studieprogram) svarte med serverfeil 22.09.2026, så søker-, kvalifiserte- og tilbudstallene mangler for alle programmene i gruppen. Studieplasser og poenggrenser er de som sto på institusjonenes egne programsider da dataene ble hentet, og gjelder siste opptak; de er ført inn på det året sidene oppgir. NMBU oppgir 20 studieplasser på programsiden og publiserer ingen poenggrense. NTNUs «Matvitenskap, teknologi og bærekraft» er den eneste direkte konkurrenten; NTNU opplyser at siste opptak var høsten 2026. NMBUs toårige master i bioinformatikk og anvendt statistikk har ingen egen gruppe fordi bioinformatikk ved UiO og UiB bare tilbys som studieretning inne i informatikk- og Computational Science-masterne, uten eget opptak å sammenligne mot.",
+      "programs": [
+        {
+          "id": "nmbu_mat_teknologi_helse2",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Mat, teknologi og helse (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": true,
+          "default": true,
+          "source": "local",
+          "url": "https://www.nmbu.no/studier/master-2-aar/mat-teknologi-og-helse",
+          "localData": {
+            "2021": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": 20,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://www.nmbu.no/studier/master-2-aar/mat-teknologi-og-helse"
+            ]
+          }
+        },
+        {
+          "id": "ntnu_ftmamat",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiested": "Trondheim",
+          "programnavn": "Matvitenskap, teknologi og bærekraft (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": true,
+          "source": "local",
+          "url": "https://www.ntnu.no/studier/ftmamat",
+          "localData": {
+            "2021": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://www.ntnu.no/studier/ftmamat"
+            ]
+          }
         }
       ]
     }

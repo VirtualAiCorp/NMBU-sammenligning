@@ -1,0 +1,448 @@
+{
+  "entryId": "nmbu_robotikk",
+  "programnavn": "Anvendt robotikk (master 5 år)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/master-5-aar/anvendt-robotikk",
+    "https://www.nmbu.no/studieplaner-anvendt-robotikk",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-07/Studieplan%20Anvendt%20robotikk%202026.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 220,
+  "obligatoriske": [
+    {
+      "emnekode": "IMRT100",
+      "emnenavn": "Innføringsemne - fagorientert prosjekt",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "IMRT100-1"
+      ],
+      "merknad": "Augustblokk før høstsemesteret."
+    },
+    {
+      "emnekode": "MATH121",
+      "emnenavn": "Kalkulus",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MATH121-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PHI100",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "PHI100-1"
+      ],
+      "merknad": "Studieplanen gir valget mellom PHI100 og seminarversjonene PHI101/PHI102 (samme forelesninger, ulikt seminar-/vurderingsopplegg)."
+    },
+    {
+      "emnekode": "INF120",
+      "emnenavn": "Programmering og databehandling",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "INF120-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS101",
+      "emnenavn": "Mekanikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "FYS101-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MATH122",
+      "emnenavn": "Kalkulus og lineær algebra",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MATH122-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS110",
+      "emnenavn": "Statikk",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "FYS110-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TIP150",
+      "emnenavn": "Moderne verkstedteknikk, innføringsemne",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "TIP150-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TEL100",
+      "emnenavn": "Elektronisk prototyping",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "TEL100-1"
+      ],
+      "merknad": "Augustblokk før høstsemesteret."
+    },
+    {
+      "emnekode": "INF201",
+      "emnenavn": "Videregående programmering",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "INF201-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS102",
+      "emnenavn": "Termofysikk og elektromagnetisme",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FYS102-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MATH123",
+      "emnenavn": "Lineær algebra og vektoranalyse",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MATH123-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TEL200",
+      "emnenavn": "Introduksjon til robotikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "TEL200-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TEL211",
+      "emnenavn": "Robotprogrammering",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "TEL211-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "DAT110",
+      "emnenavn": "Innføring i dataanalyse og -visualisering",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "DAT110-1"
+      ],
+      "merknad": "Studieplanen gir valget mellom DAT110 og STAT100; studieplanen anbefaler sivilingeniørstudenter å ta DAT110 (fotnote 3 i kilden)."
+    },
+    {
+      "emnekode": "FYS103",
+      "emnenavn": "Måleteknikk og feilanalyse",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "januarblokk",
+      "dbhEmnekoder": [
+        "FYS103-1"
+      ],
+      "merknad": "Kun noe undervisningsaktivitet i uke 1-2 av vårparallellen (fotnote 1 i kilden)."
+    },
+    {
+      "emnekode": "FYS235",
+      "emnenavn": "Elektronikk",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "FYS235-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF205",
+      "emnenavn": "Ressurseffektiv programmering",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "INF205-1",
+        "INF205-2"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS230",
+      "emnenavn": "Elektroteknikk",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "januarblokk",
+      "dbhEmnekoder": [
+        "FYS230-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TEL260",
+      "emnenavn": "Sensorer og målesystemer",
+      "studiepoeng": 5,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TEL240",
+      "emnenavn": "Reguleringsteknikk og automasjon",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "TEL240-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TEL330",
+      "emnenavn": "Mekatronikk",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TEL390",
+      "emnenavn": "Spesielle emner i anvendt robotikk",
+      "studiepoeng": 10,
+      "aar": 5,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "TEL390-1",
+        "TEL390-2"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "M30-RB",
+      "emnenavn": "Masteroppgave",
+      "studiepoeng": 30,
+      "aar": 5,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "M30-RB-1"
+      ],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Robotdesign",
+      "obligatoriske": [
+        {
+          "emnekode": "TBM200",
+          "emnenavn": "Materialteknologi",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TBM200-1"
+          ],
+          "merknad": "Eventuelt utvekslingssemester (fotnote 2 i kilden)."
+        },
+        {
+          "emnekode": "TBM120",
+          "emnenavn": "Fasthetslære og grunnleggende beregningsteknikk",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TBM120-1"
+          ],
+          "merknad": "Eventuelt utvekslingssemester (fotnote 2 i kilden)."
+        },
+        {
+          "emnekode": "TMP160",
+          "emnenavn": "Teknisk design",
+          "studiepoeng": 5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TMP160-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMP220",
+          "emnenavn": "Maskinelementer og effektoverføringssystemer",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "TMP220-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TMP320",
+          "emnenavn": "Maskin- og produktutvikling",
+          "studiepoeng": 10,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TMP320-2"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TBM350",
+          "emnenavn": "Elementmetoden",
+          "studiepoeng": 10,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TBM350-1"
+          ],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Robotprogrammering og maskinlæring",
+      "obligatoriske": [
+        {
+          "emnekode": "INF250",
+          "emnenavn": "Bildeanalyse",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "INF250-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "INF230",
+          "emnenavn": "Datahåndtering og -analyse",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "INF230-1",
+            "INF230-2"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "DAT200",
+          "emnenavn": "Anvendt maskinlæring",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "DAT200-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "INF221",
+          "emnenavn": "Informatikk for datavitere",
+          "studiepoeng": 5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "INF221-1",
+            "INF221-2"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "DAT300",
+          "emnenavn": "Anvendt dyplæring",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "DAT300-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEL280",
+          "emnenavn": "Mobile roboter og navigasjon",
+          "studiepoeng": 10,
+          "aar": 4,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TEL280-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEL320",
+          "emnenavn": "Innebygde systemer",
+          "studiepoeng": 10,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TEL320-1",
+            "TEL320-2"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "TEL310",
+          "emnenavn": "Probabilistisk robotikk",
+          "studiepoeng": 10,
+          "aar": 5,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "TEL310-1"
+          ],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er NMBUs fargekodede rutenett-studieplan for kull 2026 («Studieplan Anvendt robotikk 2026.pdf»), hvor side 1 er en tekstlig oversikt og side 2-3 er skannede regnearkbilder (ikke tekstlag) med tidslinje for hver av de to spesialiseringene («Robotdesign» og «Robotprogrammering og maskinlæring»); disse er lest visuelt, inkl. fargekodene i cellene (identifisert nøyaktig via pikselfarger: grønn RGB(225,238,218) = «Grunnpakke»/felles sivilingeniøremner, gul RGB(255,241,204) = «Anvendt Robotikk»/felles emner for hele robotikkprogrammet inkl. masteroppgaven, blå RGB(221,235,247) = spesialiseringsspesifikke obligatoriske emner, lyserosa/laks RGB(251,227,213) = «Anbefalte valgfrie emner»/«Anbefalte ekstra emner» som IKKE er obligatoriske og derfor er utelatt helt fra denne filen (bl.a. INF202, INF203, INF305, TMP261, MATH220, samt TEL280/TEL320/TEL260/TEL310 slik de vises på Robotdesign-siden hvor de er krysslistet som anbefalte, ikke obligatoriske, emner for den spesialiseringen). Emnet TIP150 (5 sp, 1. år vår) er gult/felles i selve rutenettet på begge spesialiseringssider og er derfor plassert i fellesdelen her; kildens sidelegende for Robotdesign-siden fører TIP150 opp en gang til under «Robotdesign»-summen (60 sp), noe som ser ut som en kopieringsfeil i kildedokumentet – tallene i denne filen bygger på selve rutenettets fargekoder og emneplassering, ikke på legendens sumfelt, og gir dermed 55 sp reelt spesialiseringsspesifikke emner for Robotdesign (mot 75 sp for Robotprogrammering og maskinlæring, som stemmer eksakt med legendens tall). Fellesdelen (220 sp: «Grunnpakke» 90 sp minus det ikke-kodede «samf/øk»-valget, pluss «Anvendt Robotikk» 130 sp, pluss TIP150 5 sp) + spesialisering + masteroppgave (inkludert i fellesdelen som M30-RB) summerer til 295 sp (Robotprogrammering) og 275 sp (Robotdesign); resten opp til 300 sp fylles av valgfrie emner som varierer med spesialisering og som ikke er tatt med. Programmet krever i tillegg et obligatorisk valgfag innen økonomi/samfunnsfag («samf/øk», 5 sp, 3. år augustblokk) uten fast emnekode i kilden, og et obligatorisk valg mellom PHI100/PHI101/PHI102 (Examen philosophicum) og mellom DAT110/STAT100 (kilden anbefaler DAT110 for sivilingeniørstudenter, fotnote 3); disse valgene er dokumentert i merknadsfeltene og ikke splittet i separate emneoppføringer, i tråd med at «obligatoriske valg mellom alternativer» kun skal dokumenteres i merknad. Emnenavn er hentet fra NMBUs emnesøk (nmbu.no/emne/<kode>) 22.09.2026 siden studieplan-PDF-en kun oppgir emnekoder og studiepoeng i rutenettet."
+}

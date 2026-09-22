@@ -5,8 +5,8 @@
       "id": "biologi",
       "label": "Biologi",
       "level": "bachelor",
-      "desc": "Sammenligner NMBUs bachelor i biologi med de andre breddebiologiutdanningene ved universitetene.",
-      "note": "Alle programmene tas opp gjennom Samordna opptak. UiOs «Biovitenskap» er UiOs samlede biologiprogram og er den største av konkurrentene. UiBs molekylærbiologi er tatt med som svakere sammenligning fordi den er smalere enn et breddebiologiprogram, og UiS' «Biologisk kjemi» er holdt utenfor av samme grunn (den ligger nærmere kjemi/bioteknologi enn biologi). Årsstudier i biologi (Nord, UiA, NTNU) er ikke tatt med.",
+      "desc": "Sammenligner NMBUs bachelor i biologi med breddebiologiutdanningene ved de andre universitetene.",
+      "note": "Alle programmene tas opp gjennom Samordna opptak. UiOs «Biovitenskap» er UiOs samlede biologiprogram og den klart største av konkurrentene (156 plasser i 2026 mot NMBUs 60). UiBs molekylærbiologi er tatt med som svakere sammenligning (default false) fordi den er smalere enn et breddebiologiprogram. UiS' «Biologisk kjemi» (studiekode 217860) er vraket av samme grunn – den ligger nærmere kjemi og bioteknologi enn biologi. Årsstudier i biologi (Nord 204184, UiA 201184/201373, NTNU 194184) er ikke tatt med, og heller ikke NMBUs egen bachelor i bioteknologi (192299), som hører til KBM-fakultetet.",
       "programs": [
         {
           "id": "nmbu_biologi",
@@ -127,7 +127,7 @@
       "label": "Husdyrvitenskap",
       "level": "bachelor",
       "desc": "Sammenligner NMBUs bachelor i husdyrvitenskap med de andre husdyr- og landbruksutdanningene på bachelornivå.",
-      "note": "Nord universitet (Steinkjer) er den eneste andre institusjonen med en egen bachelor i husdyrvitenskap. INNs agronomibachelor på Blæstad dekker både husdyr- og planteproduksjon og er derfor en delvis konkurrent (den går igjen i plantegruppen). Nords årsstudium i husdyrvelferd (studiekode 204421) er holdt utenfor fordi det er et årsstudium, ikke et gradsstudium. NMBUs bachelor i dyrepleie hører til Veterinærhøgskolen, ikke BIOVIT, og er ikke med.",
+      "note": "Nord universitet (Steinkjer) er den eneste andre institusjonen med en egen bachelor i husdyrvitenskap. INNs agronomibachelor på Blæstad dekker både husdyr- og planteproduksjon og er derfor en delvis konkurrent; den går igjen i plantegruppen. Nords bachelor i dyrepleie er tatt med som svakere sammenligning (default false) fordi den trekker på den samme dyreinteresserte søkergruppen, men leder til et annet yrke. Nords husdyrvelferd (studiekode 204421) er vraket fordi det er et årsstudium, ikke en grad. NMBUs egen bachelor i dyrepleie (192504) hører til Veterinærhøgskolen, ikke BIOVIT, og er ikke med.",
       "programs": [
         {
           "id": "nmbu_husdyr",
@@ -145,7 +145,7 @@
         },
         {
           "id": "nord_husdyr",
-          "shortName": "Nord",
+          "shortName": "Nord Husdyrvitenskap",
           "institusjon": "Nord universitet",
           "studiested": "Steinkjer",
           "programnavn": "Husdyrvitenskap (bachelor)",
@@ -172,17 +172,17 @@
           "localData": null
         },
         {
-          "id": "inn_jordbruk_husdyr",
-          "shortName": "INN Jordbruk",
-          "institusjon": "Universitetet i Innlandet",
-          "studiested": "Hamar",
-          "programnavn": "Jordbruk (bachelor)",
-          "studiekode": "209730",
+          "id": "nord_dyrepleie",
+          "shortName": "Nord Dyrepleie",
+          "institusjon": "Nord universitet",
+          "studiested": "Bodø",
+          "programnavn": "Dyrepleie (bachelor)",
+          "studiekode": "204504",
           "type": "bachelor",
           "isNmbu": false,
           "default": false,
           "source": "SO",
-          "url": "https://www.inn.no/studier/vare-studier/bachelor-i-jordbruk/",
+          "url": "https://www.nord.no/studier/dyrepleie-bachelor",
           "localData": null
         }
       ]
@@ -191,8 +191,8 @@
       "id": "plante",
       "label": "Plantevitenskap",
       "level": "bachelor",
-      "desc": "Sammenligner NMBUs bachelor i plantevitenskap med agronomi- og jordbruksutdanningene på bachelornivå.",
-      "note": "Ingen andre institusjoner har et rent plantevitenskapsprogram; de nærmeste er agronomi- og jordbruksutdanningene ved Universitetet i Innlandet (Blæstad/Hamar), som dekker planteproduksjon som en av flere deler. Deltidstilbudene i jordbruk og økologisk landbruk er tatt med som svakere sammenligninger (default false): de er nettbaserte/deltid, har langt flere studieplasser og en helt annen søkergruppe – økologisk landbruk deltid gikk fra 70 til 300 plasser i 2025. Nords «Sirkulær bioøkonomi» (Steinkjer) er holdt utenfor fordi den bare hadde opptak i 2022 og 2023.",
+      "desc": "Sammenligner NMBUs bachelor i plantevitenskap med agronomi- og landbruksutdanningene på bachelornivå.",
+      "note": "Ingen andre institusjoner har et rent plantevitenskapsprogram; de nærmeste er Blæstad-utdanningene ved Universitetet i Innlandet, der agronomi dekker planteproduksjon som en av flere deler. Landbruksteknikk er tatt med som svakere sammenligning (default false) fordi den er teknisk og har en helt annen kjønnsfordeling (6,7–31 % kvinner blant førstevalgssøkerne). INNs «Jordbruk» (209730), «Jordbruk, deltid» (209733) og «Økologisk landbruk, deltid» (209409) er vraket fordi de er nettbaserte årsstudier, ikke bachelorgrader – deltidstilbudene har dessuten 120 og 300 plasser og en helt annen søkergruppe. Nords «Sirkulær bioøkonomi» (Steinkjer, 204738) er vraket fordi den bare hadde opptak i 2022 og 2023 og ikke lenger har en programside.",
       "programs": [
         {
           "id": "nmbu_plante",
@@ -223,48 +223,6 @@
           "localData": null
         },
         {
-          "id": "inn_jordbruk",
-          "shortName": "INN Jordbruk",
-          "institusjon": "Universitetet i Innlandet",
-          "studiested": "Hamar",
-          "programnavn": "Jordbruk (bachelor)",
-          "studiekode": "209730",
-          "type": "bachelor",
-          "isNmbu": false,
-          "default": true,
-          "source": "SO",
-          "url": "https://www.inn.no/studier/vare-studier/bachelor-i-jordbruk/",
-          "localData": null
-        },
-        {
-          "id": "inn_jordbruk_deltid",
-          "shortName": "INN Jordbruk deltid",
-          "institusjon": "Universitetet i Innlandet",
-          "studiested": "Hamar",
-          "programnavn": "Jordbruk, deltid (bachelor)",
-          "studiekode": "209733",
-          "type": "bachelor",
-          "isNmbu": false,
-          "default": false,
-          "source": "SO",
-          "url": "https://www.inn.no/studier/vare-studier/bachelor-i-jordbruk-deltid/",
-          "localData": null
-        },
-        {
-          "id": "inn_okologisk_landbruk",
-          "shortName": "INN Økologisk landbruk",
-          "institusjon": "Universitetet i Innlandet",
-          "studiested": "Hamar",
-          "programnavn": "Økologisk landbruk, deltid (bachelor)",
-          "studiekode": "209409",
-          "type": "bachelor",
-          "isNmbu": false,
-          "default": false,
-          "source": "SO",
-          "url": "https://www.inn.no/studier/vare-studier/bachelor-i-okologisk-landbruk-deltid/",
-          "localData": null
-        },
-        {
           "id": "inn_landbruksteknikk",
           "shortName": "INN Landbruksteknikk",
           "institusjon": "Universitetet i Innlandet",
@@ -285,7 +243,7 @@
       "label": "Akvakultur",
       "level": "bachelor",
       "desc": "Sammenligner NMBUs bachelor i akvakultur med havbruks- og fiskeriutdanningene ved de andre institusjonene.",
-      "note": "Nords «Havbruksdrift og ledelse» og NTNUs «Biomarin innovasjon» (Ålesund) er de nærmeste bachelorkonkurrentene. UiTs fiskeri- og havbruksvitenskap og UiBs havbruk (sivilingeniør) og fiskehelse/akvamedisin er femårige integrerte mastere med andre opptakskrav, og er derfor tatt med som svakere sammenligninger (default false); det samme gjelder NTNUs havbruksingeniør, som krever R2 og fysikk. HVL har ingen akvakulturutdanning i Samordna opptak i perioden.",
+      "note": "Nords «Havbruksdrift og ledelse» og NTNUs «Biomarin innovasjon» i Ålesund er de nærmeste bachelorkonkurrentene. UiTs fiskeri- og havbruksvitenskap og UiBs havbruk (sivilingeniør) og fiskehelse/akvamedisin er femårige integrerte mastere med andre opptakskrav og er derfor svakere sammenligninger (default false); det samme gjelder NTNUs havbruksingeniør, som krever R2 og fysikk. HVL har ingen akvakultur- eller havbruksutdanning i Samordna opptak i perioden 2021–2026.",
       "programs": [
         {
           "id": "nmbu_akvakultur",
@@ -384,6 +342,1291 @@
           "source": "SO",
           "url": "https://www4.uib.no/studier/program/fiskehelse-akvamedisin-profesjon",
           "localData": null
+        }
+      ]
+    },
+    {
+      "id": "biologi2",
+      "label": "Biologi (2-årig master)",
+      "level": "master2",
+      "desc": "Sammenligner de toårige masterne i biologi og biovitenskap med lokalt opptak.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. Tallene skulle vært hentet fra DBH/HKDIR tabell 379 (lokalt opptak per studieprogram), men API-et svarte med serverfeil for tabell 379 da dette kartet ble laget 22.09.2026; tidsserien står derfor tom og må etterfylles. Ingen tall er gjettet. NMBUs biologimaster undervises på norsk; NTNUs og Nords tilsvarende mastere er engelskspråklige, og Nords «Biovitenskap» tas opp per studieretning (akvakultur, genomikk og marin økologi i Bodø, husdyrvitenskap og terrestrisk økologi i Steinkjer). UiOs biovitenskapsmaster er den største av konkurrentene.",
+      "programs": [
+        {
+          "id": "nmbu_biologi2",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Biologi (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": true,
+          "default": true,
+          "source": "local",
+          "url": "https://www.nmbu.no/studier/master-2-aar/biologi",
+          "localData": {
+            "2021": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://www.nmbu.no/studier/master-2-aar/biologi",
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram – ikke tilgjengelig 22.09.2026)"
+            ]
+          }
+        },
+        {
+          "id": "uio_biovitenskap2",
+          "shortName": "UiO",
+          "institusjon": "Universitetet i Oslo",
+          "studiested": "Oslo",
+          "programnavn": "Biovitenskap (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": true,
+          "source": "local",
+          "url": "https://www.uio.no/studier/program/biovitenskap-master/",
+          "localData": {
+            "2021": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://www.uio.no/studier/program/biovitenskap-master/"
+            ]
+          }
+        },
+        {
+          "id": "uib_biologi2",
+          "shortName": "UiB",
+          "institusjon": "Universitetet i Bergen",
+          "studiested": "Bergen",
+          "programnavn": "Biologi (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": true,
+          "source": "local",
+          "url": "https://www4.uib.no/studier/program/biologi-master",
+          "localData": {
+            "2021": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://www4.uib.no/studier/program/biologi-master"
+            ]
+          }
+        },
+        {
+          "id": "ntnu_biologi2",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiested": "Trondheim",
+          "programnavn": "Biologi (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": true,
+          "source": "local",
+          "url": "https://www.ntnu.no/studier/msbio",
+          "localData": {
+            "2021": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://www.ntnu.no/studier/msbio"
+            ]
+          }
+        },
+        {
+          "id": "uit_biologi2",
+          "shortName": "UiT",
+          "institusjon": "UiT Norges arktiske universitet",
+          "studiested": "Tromsø",
+          "programnavn": "Biologi (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": true,
+          "source": "local",
+          "url": "https://uit.no/utdanning/program/269576/biologi_-_master",
+          "localData": {
+            "2021": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://uit.no/utdanning/program/269576/biologi_-_master"
+            ]
+          }
+        },
+        {
+          "id": "nord_biovitenskap2",
+          "shortName": "Nord",
+          "institusjon": "Nord universitet",
+          "studiested": "Bodø",
+          "programnavn": "Biovitenskap (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": true,
+          "source": "local",
+          "url": "https://www.nord.no/studier/biovitenskap-master",
+          "localData": {
+            "2021": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://www.nord.no/studier/biovitenskap-master"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "husdyr2",
+      "label": "Husdyrvitenskap (2-årig master)",
+      "level": "master2",
+      "desc": "Sammenligner de toårige masterne i husdyrvitenskap med lokalt opptak.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. Tallene skulle vært hentet fra DBH/HKDIR tabell 379 (lokalt opptak per studieprogram), men API-et svarte med serverfeil for tabell 379 da dette kartet ble laget 22.09.2026; tidsserien står derfor tom og må etterfylles. Ingen tall er gjettet. Nords master i biovitenskap med studieretning husdyrvitenskap (Steinkjer) er den eneste direkte konkurrenten; den er engelskspråklig og tas opp per studieretning. NMBUs eget «European Master in Animal Biodiversity and Genomics» (EMABG) er en internasjonal fellesgrad med Erasmus Mundus-opptak og er tatt med som svakere sammenligning (default false).",
+      "programs": [
+        {
+          "id": "nmbu_husdyr2",
+          "shortName": "NMBU Husdyrvitenskap",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Husdyrvitenskap (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": true,
+          "default": true,
+          "source": "local",
+          "url": "https://www.nmbu.no/studier/master-2-aar/husdyrvitenskap",
+          "localData": {
+            "2021": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://www.nmbu.no/studier/master-2-aar/husdyrvitenskap"
+            ]
+          }
+        },
+        {
+          "id": "nord_husdyr2",
+          "shortName": "Nord",
+          "institusjon": "Nord universitet",
+          "studiested": "Steinkjer",
+          "programnavn": "Biovitenskap, studieretning husdyrvitenskap (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": true,
+          "source": "local",
+          "url": "https://www.nord.no/studier/biovitenskap-master",
+          "localData": {
+            "2021": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://www.nord.no/studier/biovitenskap-master"
+            ]
+          }
+        },
+        {
+          "id": "nmbu_emabg",
+          "shortName": "NMBU EMABG",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "European Master in Animal Biodiversity and Genomics (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": true,
+          "default": false,
+          "source": "local",
+          "url": "https://www.nmbu.no/studier/master-2-aar/european-master-animal-biodiversity-and-genomics",
+          "localData": {
+            "2021": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://www.nmbu.no/studier/master-2-aar/european-master-animal-biodiversity-and-genomics"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "plante2",
+      "label": "Plantevitenskap (2-årig master)",
+      "level": "master2",
+      "desc": "Sammenligner de toårige masterne i plantevitenskap og jordbruk med lokalt opptak.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. Tallene skulle vært hentet fra DBH/HKDIR tabell 379 (lokalt opptak per studieprogram), men API-et svarte med serverfeil for tabell 379 da dette kartet ble laget 22.09.2026; tidsserien står derfor tom og må etterfylles. Ingen tall er gjettet. INNs master i bærekraftig jordbruk (Blæstad/Hamar) er den nærmeste konkurrenten. NMBUs egen agroøkologimaster er engelskspråklig og systemorientert og er tatt med som svakere sammenligning (default false) framfor å få en egen gruppe, siden den har den samme ene konkurrenten.",
+      "programs": [
+        {
+          "id": "nmbu_plante2",
+          "shortName": "NMBU Plantevitenskap",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Plantevitenskap (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": true,
+          "default": true,
+          "source": "local",
+          "url": "https://www.nmbu.no/studier/master-2-aar/plantevitenskap",
+          "localData": {
+            "2021": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://www.nmbu.no/studier/master-2-aar/plantevitenskap"
+            ]
+          }
+        },
+        {
+          "id": "inn_baerekraftig_jordbruk",
+          "shortName": "INN",
+          "institusjon": "Universitetet i Innlandet",
+          "studiested": "Hamar",
+          "programnavn": "Bærekraftig jordbruk (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": true,
+          "source": "local",
+          "url": "https://www.inn.no/studier/vare-studier/master-i-berekraftig-jordbruk/",
+          "localData": {
+            "2021": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://www.inn.no/studier/vare-studier/master-i-berekraftig-jordbruk/"
+            ]
+          }
+        },
+        {
+          "id": "nmbu_agroekologi2",
+          "shortName": "NMBU Agroøkologi",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Agroøkologi / Agroecology (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": true,
+          "default": false,
+          "source": "local",
+          "url": "https://www.nmbu.no/studier/master-2-aar/agroecology",
+          "localData": {
+            "2021": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://www.nmbu.no/studier/master-2-aar/agroecology"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "akvakultur2",
+      "label": "Akvakultur (2-årig master)",
+      "level": "master2",
+      "desc": "Sammenligner de toårige masterne i akvakultur og havbruksvitenskap med lokalt opptak.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. Tallene skulle vært hentet fra DBH/HKDIR tabell 379 (lokalt opptak per studieprogram), men API-et svarte med serverfeil for tabell 379 da dette kartet ble laget 22.09.2026; tidsserien står derfor tom og må etterfylles. Ingen tall er gjettet. NMBUs akvakulturmaster er engelskspråklig. UiTs toårige master i fiskeri- og havbruksvitenskap (fiskerikandidat, 40 plasser, lokalt opptak med søknadskode 6006) er den største konkurrenten, og Nords master i biovitenskap med studieretning akvakultur (Bodø) den nærmeste faglig. UiTs akvamedisinmaster er tatt med som svakere sammenligning (default false) fordi den leder til autorisasjon som fiskehelsebiolog og har andre opptakskrav.",
+      "programs": [
+        {
+          "id": "nmbu_akvakultur2",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Aquaculture (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": true,
+          "default": true,
+          "source": "local",
+          "url": "https://www.nmbu.no/studier/master-2-aar/aquaculture",
+          "localData": {
+            "2021": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://www.nmbu.no/studier/master-2-aar/aquaculture"
+            ]
+          }
+        },
+        {
+          "id": "uit_fiskeri_havbruk2",
+          "shortName": "UiT Fiskeri og havbruk",
+          "institusjon": "UiT Norges arktiske universitet",
+          "studiested": "Tromsø",
+          "programnavn": "Fiskeri- og havbruksvitenskap (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": true,
+          "source": "local",
+          "url": "https://uit.no/utdanning/program/268941/fiskeri-_og_havbruksvitenskap_-_master",
+          "localData": {
+            "2021": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": 40,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://uit.no/utdanning/program/268941/fiskeri-_og_havbruksvitenskap_-_master"
+            ]
+          }
+        },
+        {
+          "id": "nord_akvakultur2",
+          "shortName": "Nord",
+          "institusjon": "Nord universitet",
+          "studiested": "Bodø",
+          "programnavn": "Biovitenskap, studieretning akvakultur (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": true,
+          "source": "local",
+          "url": "https://www.nord.no/studier/biovitenskap-master",
+          "localData": {
+            "2021": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://www.nord.no/studier/biovitenskap-master"
+            ]
+          }
+        },
+        {
+          "id": "uit_akvamedisin2",
+          "shortName": "UiT Akvamedisin",
+          "institusjon": "UiT Norges arktiske universitet",
+          "studiested": "Tromsø",
+          "programnavn": "Akvamedisin (master)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": false,
+          "source": "local",
+          "url": "https://uit.no/utdanning/program/268952/akvamedisin_-_master",
+          "localData": {
+            "2021": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://uit.no/utdanning/program/268952/akvamedisin_-_master"
+            ]
+          }
         }
       ]
     }

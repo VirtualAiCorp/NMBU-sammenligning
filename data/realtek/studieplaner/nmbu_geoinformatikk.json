@@ -1,0 +1,302 @@
+{
+  "entryId": "nmbu_geoinformatikk",
+  "programnavn": "Geoinformatikk (master 5 år)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/master-5-aar/geoinformatikk",
+    "https://www.nmbu.no/studieplaner-m-geom",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-08/studieplan%20M-GEOM%202026.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 240,
+  "obligatoriske": [
+    {
+      "emnekode": "IMRT100",
+      "emnenavn": "Innføringsemne - fagorientert prosjekt",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "IMRT100-1"
+      ],
+      "merknad": "Augustblokk før høstsemesteret."
+    },
+    {
+      "emnekode": "MATH121",
+      "emnenavn": "Kalkulus 1",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF120",
+      "emnenavn": "Programmering og databehandling",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "INF120-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "LAD102",
+      "emnenavn": "GIS - praktisk introduksjon",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "LAD102-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "DAT110",
+      "emnenavn": "Innføring i dataanalyse",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen gir valget mellom DAT110 og STAT100 (Statistikk), begge 10 sp."
+    },
+    {
+      "emnekode": "FYS101",
+      "emnenavn": "Mekanikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "FYS101-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MATH122",
+      "emnenavn": "Kalkulus 2",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MATH123",
+      "emnenavn": "Lineær algebra og lineære differensiallikninger",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MATH123-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF201",
+      "emnenavn": "Videregående programmering",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "INF201-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "GMGD200",
+      "emnenavn": "Geodesi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "GMGD200-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS102A",
+      "emnenavn": "Fysikk for bioteknologer",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FYS102A-1"
+      ],
+      "merknad": "Studieplanens rutenett for dette kullet plasserer FYS102A (5 sp); studieplanen åpner alternativt for det lengre emnet FYS102 Termofysikk og elektromagnetisme (10 sp)."
+    },
+    {
+      "emnekode": "FYS103",
+      "emnenavn": "Måleteknikk, optikk og sensorer",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "januarblokk",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "GMGI210",
+      "emnenavn": "Geografiske informasjonssystem",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "GMGI210-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "GMPE240",
+      "emnenavn": "Parameterestimering",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "GMPE240-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "GMLM102",
+      "emnenavn": "Landmåling 1",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "GMLM102-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF203",
+      "emnenavn": "Prosjektoppgave i videregående programmering",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "juniblokk",
+      "dbhEmnekoder": [
+        "INF203-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "GMFM200",
+      "emnenavn": "Fjernmåling 1",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "juniblokk",
+      "dbhEmnekoder": [
+        "GMFM200-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "GMFO205",
+      "emnenavn": "Fotogrammetri 2",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "GMFO205-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "GMGD222",
+      "emnenavn": "Satellittgeodesi",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "GMGD222-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "GMLM210",
+      "emnenavn": "Landmåling 2",
+      "studiepoeng": 12.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "GMLM210-1",
+        "GMLM210-2"
+      ],
+      "merknad": "Emnet starter i augustblokk og fortsetter inn i høstsemesteret (12,5 sp totalt; kilden angir semester «AUG»)."
+    },
+    {
+      "emnekode": "GMFO120",
+      "emnenavn": "Fotogrammetri 1",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "GMFO120-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PHI100",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen gir valget mellom PHI100 og seminarversjonen PHI101 (samme forelesninger, ulikt seminar-/vurderingsopplegg)."
+    },
+    {
+      "emnekode": "INF250",
+      "emnenavn": "Bildeanalyse",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "INF250-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "DAT200",
+      "emnenavn": "Anvendt maskinlæring",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "DAT200-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "GMGI221",
+      "emnenavn": "Automatisering av GIS-prosesser",
+      "studiepoeng": 5,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "GMGD230",
+      "emnenavn": "Marin geodesi",
+      "studiepoeng": 5,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "M30-GEOM",
+      "emnenavn": "Masteroppgave",
+      "studiepoeng": 30,
+      "aar": 5,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "M30-GEOM-1"
+      ],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er NMBUs fargekodede ett-sides rutenett-studieplan for kull 2026 («studieplan M-GEOM 2026.pdf»), som er et skannet regnearkbilde (ikke tekstlag i PDF-en) og derfor lest visuelt, inkl. fargekodene i cellene: grønn = «Oblig siv.ing» (felles sivilingeniøremner, kildens sum 85 sp inkl. et ikke-kodet valgfag), gul/beige = «Felles oblig. geoinformatikk» (kildens sum 170 sp), lyserosa/laks = «Valgfritt»-blokker og den separate «Valgfrie emner»-listen nederst til høyre – disse er IKKE obligatoriske og er utelatt helt fra denne filen. Egne beregnede delsummer fra de navngitte emnene i rutenettet gir 80 sp (grønt, uten det ikke-kodede valgfaget) og 160 sp (gult), til sammen 240 sp; dette avviker med totalt 15 sp fra kildens egne oppgitte delsummer (85 og 170), uten at det er mulig å identifisere hvilke(t) navngitt emne kildens sumfelt eventuelt regner med utover det som faktisk er ført opp i emnelisten og plassert i årsrutenettet – summen 240 sp bygger på de emnene som er eksplisitt navngitt og plassert i rutenettet. Programmet krever i tillegg: (1) et obligatorisk valgfag innen økonomi/samfunnsfag («øk/samf.», 5 sp, 4. år høst) uten fast emnekode i kilden (fotnote 1 foreslår ECN120, BUS133 eller JUS100), (2) et obligatorisk valg mellom PHI100/PHI101 (Examen philosophicum) og mellom DAT110/STAT100 (Statistikk/dataanalyse, begge 10 sp), og (3) et krav om å velge minst ett matematikkemne fra listen MATH220/MATH250/MATH270/MATH285 (10 sp) samt minimum 30 studiepoeng valgfrie GM-emner på 300-nivå (fotnote 2) – disse valgene/kravene er dokumentert i merknadsfeltene og i denne generelle merknaden, ikke splittet i separate emneoppføringer, i tråd med at obligatoriske valg mellom alternativer kun skal dokumenteres i merknad. FYS102A (5 sp, «Fysikk for bioteknologer») er brukt som obligatorisk emne fordi det er det som faktisk er plassert i årsrutenettet for dette kullet (2. år høst), med det lengre alternativet FYS102 (10 sp) nevnt i emnets merknadsfelt. GMLM210 (Landmåling 2, 12,5 sp) er i kilden merket semester «AUG» og vises i rutenettet som en boks som strekker seg fra augustblokken inn i høstsemesteret 3. år; den er her ført med semester «høst» og forklart i emnets merknadsfelt. Emnenavn er hentet fra NMBUs emnesøk (nmbu.no/emne/<kode>) 22.09.2026 der studieplanen kun oppgir emnekoder og studiepoeng i rutenettet. Studieplanen beskriver ingen egne studieretninger/spesialiseringer med separate obligatoriske emner for dette programmet (kun ett rutenett-ark uten forgreninger), derfor er «spesialiseringer» tom."
+}

@@ -1,4 +1,2090 @@
 {
   "hentet": "2026-09-22",
-  "groups": []
+  "groups": [
+    {
+      "id": "skogfag",
+      "label": "Skogfag",
+      "level": "bachelor",
+      "desc": "Sammenligner NMBUs bachelor i skogfag med de andre skogbruksutdanningene i Norge.",
+      "note": "Skogfag er et lite fagfelt: bare NMBU, Universitetet i Innlandet (Evenstad) og Nord universitet tilbyr utdanningen. Nord startet opp bachelor i skogfag først i 2025, så programmet har bare to årganger. INNs utmarksforvaltning ligger på samme studiested som INNs skogfag og konkurrerer om mange av de samme søkerne, men er et annet fag og er derfor tatt med som svakere sammenligning (default false). Årsstudiene i skogfag ved INN og Nord er holdt utenfor.",
+      "programs": [
+        {
+          "id": "nmbu_skogfag",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Skogfag (bachelor)",
+          "studiekode": "192322",
+          "type": "bachelor",
+          "isNmbu": true,
+          "default": true,
+          "source": "SO",
+          "url": "https://www.nmbu.no/studier/bachelor/skogfag",
+          "localData": null
+        },
+        {
+          "id": "inn_skogfag",
+          "shortName": "INN",
+          "institusjon": "Universitetet i Innlandet",
+          "studiested": "Stor-Elvdal",
+          "programnavn": "Skogfag (bachelor)",
+          "studiekode": "209322",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": true,
+          "source": "SO",
+          "url": "https://www.inn.no/studier/vare-studier/bachelor-i-skogfag/",
+          "localData": null
+        },
+        {
+          "id": "nord_skogfag",
+          "shortName": "Nord",
+          "institusjon": "Nord universitet",
+          "studiested": "Steinkjer",
+          "programnavn": "Skogfag (bachelor)",
+          "studiekode": "204322",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": true,
+          "source": "SO",
+          "url": "https://www.nord.no/studier/skogfag-bachelor",
+          "localData": null
+        },
+        {
+          "id": "inn_utmark_skog",
+          "shortName": "INN Utmarksforvaltning",
+          "institusjon": "Universitetet i Innlandet",
+          "studiested": "Stor-Elvdal",
+          "programnavn": "Utmarksforvaltning (bachelor)",
+          "studiekode": "209323",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": false,
+          "source": "SO",
+          "url": "https://www.inn.no/studier/vare-studier/bachelor-i-utmarksforvaltning/",
+          "localData": null
+        }
+      ]
+    },
+    {
+      "id": "okologi",
+      "label": "Økologi og naturforvaltning",
+      "level": "bachelor",
+      "desc": "Sammenligner NMBUs bachelor i økologi og naturforvaltning med de andre naturforvaltnings- og biologiutdanningene.",
+      "note": "De nærmeste konkurrentene er de profesjonsrettede naturforvaltningsbachelorene ved Universitetet i Innlandet (Evenstad), Nord universitet (Steinkjer) og Universitetet i Sørøst-Norge (Bø). De rene biologibachelorene ved UiT og UiA overlapper på økologidelen, men mangler forvaltningsdelen og er derfor svakere sammenligninger (default false). Universitetet i Stavanger er vurdert, men har ingen bachelor i biologi eller naturforvaltning – bare «Biologisk kjemi», som er et kjemiprogram – og er derfor ikke tatt med. Årsstudiene i naturforvaltning ved Nord og USN er holdt utenfor.",
+      "programs": [
+        {
+          "id": "nmbu_okologi",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Økologi og naturforvaltning (bachelor)",
+          "studiekode": "192388",
+          "type": "bachelor",
+          "isNmbu": true,
+          "default": true,
+          "source": "SO",
+          "url": "https://www.nmbu.no/studier/bachelor/okologi-og-naturforvaltning",
+          "localData": null
+        },
+        {
+          "id": "inn_utmarksforvaltning",
+          "shortName": "INN",
+          "institusjon": "Universitetet i Innlandet",
+          "studiested": "Stor-Elvdal",
+          "programnavn": "Utmarksforvaltning (bachelor)",
+          "studiekode": "209323",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": true,
+          "source": "SO",
+          "url": "https://www.inn.no/studier/vare-studier/bachelor-i-utmarksforvaltning/",
+          "localData": null
+        },
+        {
+          "id": "nord_naturforvaltning",
+          "shortName": "Nord",
+          "institusjon": "Nord universitet",
+          "studiested": "Steinkjer",
+          "programnavn": "Naturforvaltning (bachelor)",
+          "studiekode": "204388",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": true,
+          "source": "SO",
+          "url": "https://www.nord.no/studier/naturforvaltning-bachelor",
+          "localData": null
+        },
+        {
+          "id": "usn_naturmiljoforvaltning",
+          "shortName": "USN",
+          "institusjon": "Universitetet i Sørøst-Norge",
+          "studiested": "Midt-Telemark",
+          "programnavn": "Natur- og miljøforvaltning (bachelor)",
+          "studiekode": "222315",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": true,
+          "source": "SO",
+          "url": "https://www.usn.no/studier/bachelor-i-natur-og-miljoforvaltning/",
+          "localData": null
+        },
+        {
+          "id": "uit_biologi",
+          "shortName": "UiT Biologi",
+          "institusjon": "UiT Norges arktiske universitet",
+          "studiested": "Tromsø",
+          "programnavn": "Biologi (bachelor)",
+          "studiekode": "186327",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": false,
+          "source": "SO",
+          "url": "https://uit.no/utdanning/program/274284/biologi_-_bachelor",
+          "localData": null
+        },
+        {
+          "id": "uia_biologi",
+          "shortName": "UiA Biologi",
+          "institusjon": "Universitetet i Agder",
+          "studiested": "Kristiansand",
+          "programnavn": "Biologi (bachelor)",
+          "studiekode": "201327",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": false,
+          "source": "SO",
+          "url": "https://www.uia.no/studier/biologi",
+          "localData": null
+        }
+      ]
+    },
+    {
+      "id": "miljonatur",
+      "label": "Miljø og naturressurser",
+      "level": "bachelor",
+      "desc": "Sammenligner NMBUs bachelor i miljø og naturressurser med de andre miljø- og geofagsbachelorene.",
+      "note": "NMBU-programmet bygger på geologi, jord, vann og miljøkjemi, og de nærmeste sammenligningene er derfor geofags- og miljøbachelorene ved UiO og UiB. UiOs «Klima, miljø og menneske» startet opp i 2025 og har bare to årganger. Geologiprogrammene ved NTNU og HVL er rene geofagsutdanninger uten miljøkjemi- og naturressursdel og er tatt med som svakere sammenligninger (default false). NTNU har ingen bachelor i miljøvitenskap; miljøfagene der ligger på sivilingeniør- og masternivå.",
+      "programs": [
+        {
+          "id": "nmbu_miljonatur",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Miljø og naturressurser (bachelor)",
+          "studiekode": "192377",
+          "type": "bachelor",
+          "isNmbu": true,
+          "default": true,
+          "source": "SO",
+          "url": "https://www.nmbu.no/studier/bachelor/miljo-og-naturressurser",
+          "localData": null
+        },
+        {
+          "id": "uio_klima_miljo_menneske",
+          "shortName": "UiO Klima, miljø og menneske",
+          "institusjon": "Universitetet i Oslo",
+          "studiested": "Oslo",
+          "programnavn": "Klima, miljø og menneske (bachelor)",
+          "studiekode": "185314",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": true,
+          "source": "SO",
+          "url": "https://www.uio.no/studier/program/klima-miljo-menneske/",
+          "localData": null
+        },
+        {
+          "id": "uio_geologi_geografi",
+          "shortName": "UiO Geologi og geografi",
+          "institusjon": "Universitetet i Oslo",
+          "studiested": "Oslo",
+          "programnavn": "Geologi og geografi (bachelor)",
+          "studiekode": "185858",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": true,
+          "source": "SO",
+          "url": "https://www.uio.no/studier/program/geologi/",
+          "localData": null
+        },
+        {
+          "id": "uib_geovitenskap",
+          "shortName": "UiB",
+          "institusjon": "Universitetet i Bergen",
+          "studiested": "Bergen",
+          "programnavn": "Geovitenskap, retning geologi (bachelor)",
+          "studiekode": "184859",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": true,
+          "source": "SO",
+          "url": "https://www.uib.no/studieprogram/BAMN-GEOV",
+          "localData": null
+        },
+        {
+          "id": "ntnu_geologi",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiested": "Trondheim",
+          "programnavn": "Geologi (bachelor)",
+          "studiekode": "194859",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": false,
+          "source": "SO",
+          "url": "https://www.ntnu.no/studier/bgeol",
+          "localData": null
+        },
+        {
+          "id": "hvl_geologi_geofare",
+          "shortName": "HVL",
+          "institusjon": "Høgskulen på Vestlandet",
+          "studiested": "Sogndal",
+          "programnavn": "Geologi og geofare (bachelor)",
+          "studiekode": "203469",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": false,
+          "source": "SO",
+          "url": "https://www.hvl.no/studier/studieprogram/geologi-og-geofare/",
+          "localData": null
+        }
+      ]
+    },
+    {
+      "id": "fornybar",
+      "label": "Fornybar energi",
+      "level": "bachelor",
+      "desc": "Sammenligner NMBUs tverrfaglige bachelor i fornybar energi med de andre fornybar energi-utdanningene.",
+      "note": "NMBUs bachelor i fornybar energi er tverrfaglig og kombinerer realfag med økonomi og samfunnsfag; den er ikke en ingeniørutdanning. Den eneste direkte parallellen var HVLs bachelor i fornybar energi i Sogndal, som hadde siste opptak i 2024 og derfor er ført med default false. Ingeniør- og sivilingeniørutdanningene i fornybar energi ved NTNU, UiA og UiT har realfagskrav (R1+R2+FYS1) og en annen søkergruppe, men er de største alternativene for søkere som vil jobbe med fornybar energi, og er tatt med som svakere sammenligninger. NTNU tar opp til fornybar energi-ingeniør på tre studiesteder med hver sin studiekode; alle tre er tatt med slik at det samlede bildet kommer fram.",
+      "programs": [
+        {
+          "id": "nmbu_fornybar",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Fornybar energi (bachelor)",
+          "studiekode": "192835",
+          "type": "bachelor",
+          "isNmbu": true,
+          "default": true,
+          "source": "SO",
+          "url": "https://www.nmbu.no/studier/bachelor/fornybar-energi",
+          "localData": null
+        },
+        {
+          "id": "hvl_fornybar",
+          "shortName": "HVL",
+          "institusjon": "Høgskulen på Vestlandet",
+          "studiested": "Sogndal",
+          "programnavn": "Fornybar energi (bachelor)",
+          "studiekode": "203835",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": false,
+          "source": "SO",
+          "url": "https://www.hvl.no/studier/studieprogram/fornybar-energi/",
+          "localData": null
+        },
+        {
+          "id": "ntnu_ing_fornybar_trondheim",
+          "shortName": "NTNU Trondheim",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiested": "Trondheim",
+          "programnavn": "Ingeniør, fornybar energi (bachelor)",
+          "studiekode": "194822",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": false,
+          "source": "SO",
+          "url": "https://www.ntnu.no/studier/biforen",
+          "localData": null
+        },
+        {
+          "id": "ntnu_ing_fornybar_gjovik",
+          "shortName": "NTNU Gjøvik",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiested": "Gjøvik",
+          "programnavn": "Ingeniør, fornybar energi (bachelor)",
+          "studiekode": "194835",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": false,
+          "source": "SO",
+          "url": "https://www.ntnu.no/studier/biforen",
+          "localData": null
+        },
+        {
+          "id": "ntnu_ing_fornybar_alesund",
+          "shortName": "NTNU Ålesund",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiested": "Ålesund",
+          "programnavn": "Ingeniør, fornybar energi (bachelor)",
+          "studiekode": "194072",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": false,
+          "source": "SO",
+          "url": "https://www.ntnu.no/studier/biforen",
+          "localData": null
+        },
+        {
+          "id": "uia_ing_fornybar",
+          "shortName": "UiA",
+          "institusjon": "Universitetet i Agder",
+          "studiested": "Grimstad",
+          "programnavn": "Ingeniør, fornybar energi (bachelor)",
+          "studiekode": "201006",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": false,
+          "source": "SO",
+          "url": "https://www.uia.no/studier/program/fornybar-energi-bachelor/",
+          "localData": null
+        },
+        {
+          "id": "uit_fornybar",
+          "shortName": "UiT",
+          "institusjon": "UiT Norges arktiske universitet",
+          "studiested": "Tromsø",
+          "programnavn": "Fornybar energi (master 5 år)",
+          "studiekode": "186809",
+          "type": "master",
+          "isNmbu": false,
+          "default": false,
+          "source": "SO",
+          "url": "https://uit.no/utdanning/program/798891/fornybar_energi_sivilingenior_-_master",
+          "localData": null
+        }
+      ]
+    },
+    {
+      "id": "radioaktivitet",
+      "label": "Radioaktivitet og miljø",
+      "level": "bachelor",
+      "desc": "Viser opptakstallene for NMBUs bachelor i radioaktivitet og miljø, som ikke har noen tilsvarende utdanning i Norge.",
+      "note": "Gruppen har bare NMBU. Programmet startet opp i 2024 og er den eneste bachelorutdanningen i Norge innen radioaktivitet, strålevern og radioøkologi; søk i Samordna opptak på radio-, stråle-, nukleær- og kjernefag gir ingen sammenlignbare program ved andre institusjoner. Tallene bør derfor leses som en tidsserie for NMBU alene, ikke som en sammenligning.",
+      "programs": [
+        {
+          "id": "nmbu_radioaktivitet",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Radioaktivitet og miljø (bachelor)",
+          "studiekode": "192315",
+          "type": "bachelor",
+          "isNmbu": true,
+          "default": true,
+          "source": "SO",
+          "url": "https://www.nmbu.no/studier/bachelor/radioaktivitet-og-miljo",
+          "localData": null
+        }
+      ]
+    },
+    {
+      "id": "skogfag2",
+      "label": "Skogfag (2-årig master)",
+      "level": "master2",
+      "desc": "Sammenligner de toårige masterne i skogfag med lokalt opptak.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere» (søknadsalternativer), kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (alle søknadsalternativer uansett prioritet; kvalifiserte = søknadsalternativer merket kvalifisert). Studieplasser, førstevalgssøkere, kvinneandel og poenggrenser publiseres ikke per program i denne tabellen og står derfor som null. DBH har ikke rapportert høstopptaket 2026 ennå, så 2026 er tomt for alle programmene. Universitetet i Innlandet er den eneste andre institusjonen med en master i skogfag; «Bærekraftig skogforvaltning» på Evenstad hadde første opptak i 2024 og er samlings- og nettbasert, noe som gjør at den trekker en annen og mer yrkesaktiv søkergruppe enn NMBUs heltidsmaster. INN rapporterte til og med 2024 under institusjonskoden til Høgskolen i Innlandet og fra 2025 under Universitetet i Innlandet; begge er slått sammen her. Nord universitet har bachelor, men ingen master i skogfag.",
+      "programs": [
+        {
+          "id": "nmbu_skogfag2",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Skogfag (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": true,
+          "default": true,
+          "source": "local",
+          "url": "https://www.nmbu.no/studier/master-2-aar/skogfag",
+          "localData": {
+            "2021": {
+              "alleS": 62,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 49,
+              "tilbud": 33,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 42,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 32,
+              "tilbud": 17,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 52,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 30,
+              "tilbud": 27,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 47,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 32,
+              "tilbud": 22,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 52,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 31,
+              "tilbud": 25,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
+              "https://www.nmbu.no/studier/master-2-aar/skogfag"
+            ]
+          }
+        },
+        {
+          "id": "inn_skogforvaltning2",
+          "shortName": "INN",
+          "institusjon": "Universitetet i Innlandet",
+          "studiested": "Stor-Elvdal",
+          "programnavn": "Bærekraftig skogforvaltning (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": true,
+          "source": "local",
+          "url": "https://www.inn.no/studier/vare-studier/master-i-berekraftig-skogforvaltning/",
+          "localData": {
+            "2021": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 82,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 68,
+              "tilbud": 48,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 82,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 72,
+              "tilbud": 57,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
+              "https://www.inn.no/studier/vare-studier/master-i-berekraftig-skogforvaltning/"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "okologi2",
+      "label": "Økologi (2-årig master)",
+      "level": "master2",
+      "desc": "Sammenligner de toårige masterne i økologi med lokalt opptak.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere» (søknadsalternativer), kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (alle søknadsalternativer uansett prioritet; kvalifiserte = søknadsalternativer merket kvalifisert). Studieplasser, førstevalgssøkere, kvinneandel og poenggrenser publiseres ikke per program i denne tabellen og står derfor som null. DBH har ikke rapportert høstopptaket 2026 ennå, så 2026 er tomt for alle programmene. NMBUs master i økologi er engelskspråklig, og fallet i søkertall fra 2023 til 2024 henger sammen med innføringen av studieavgift for søkere utenfor EØS. Universitetet i Innlandets «Anvendt økologi» på Evenstad er den nærmeste norske parallellen; INN rapporterte til og med 2024 under Høgskolen i Innlandet og fra 2025 under Universitetet i Innlandet, og de to seriene er slått sammen. Biologimasterne ved NTNU og UiT dekker økologi som én av flere retninger og er tatt med som svakere sammenligninger (default false). UiBs «Global endringsøkologi» er utelatt fordi den er så ny at DBH bare har to årganger med svært få søkere.",
+      "programs": [
+        {
+          "id": "nmbu_okologi2",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Økologi (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": true,
+          "default": true,
+          "source": "local",
+          "url": "https://www.nmbu.no/studier/master-2-aar/okologi",
+          "localData": {
+            "2021": {
+              "alleS": 282,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 115,
+              "tilbud": 47,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 327,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 137,
+              "tilbud": 40,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 295,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 110,
+              "tilbud": 57,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 179,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 102,
+              "tilbud": 42,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 196,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 76,
+              "tilbud": 41,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
+              "https://www.nmbu.no/studier/master-2-aar/okologi"
+            ]
+          }
+        },
+        {
+          "id": "inn_anvendt_okologi2",
+          "shortName": "INN",
+          "institusjon": "Universitetet i Innlandet",
+          "studiested": "Stor-Elvdal",
+          "programnavn": "Anvendt økologi (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": true,
+          "source": "local",
+          "url": "https://www.inn.no/studier/vare-studier/master-i-anvendt-okologi/",
+          "localData": {
+            "2021": {
+              "alleS": 461,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 120,
+              "tilbud": 59,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 364,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 120,
+              "tilbud": 57,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 434,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 64,
+              "tilbud": 48,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 108,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 50,
+              "tilbud": 47,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 118,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 53,
+              "tilbud": 48,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
+              "https://www.inn.no/studier/vare-studier/master-i-anvendt-okologi/"
+            ]
+          }
+        },
+        {
+          "id": "ntnu_biologi2",
+          "shortName": "NTNU Biologi",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiested": "Trondheim",
+          "programnavn": "Biologi (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": false,
+          "source": "local",
+          "url": "https://www.ntnu.no/studier/msbio",
+          "localData": {
+            "2021": {
+              "alleS": 842,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 332,
+              "tilbud": 85,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 869,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 343,
+              "tilbud": 66,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 484,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 173,
+              "tilbud": 60,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 256,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 132,
+              "tilbud": 57,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 310,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 153,
+              "tilbud": 64,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
+              "https://www.ntnu.no/studier/msbio"
+            ]
+          }
+        },
+        {
+          "id": "uit_biologi2",
+          "shortName": "UiT Biologi",
+          "institusjon": "UiT Norges arktiske universitet",
+          "studiested": "Tromsø",
+          "programnavn": "Biology (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": false,
+          "source": "local",
+          "url": "https://uit.no/utdanning/program/270464/biology_-_master",
+          "localData": {
+            "2021": {
+              "alleS": 352,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 124,
+              "tilbud": 111,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 645,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 216,
+              "tilbud": 104,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 693,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 310,
+              "tilbud": 133,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 508,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 284,
+              "tilbud": 128,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 546,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 275,
+              "tilbud": 130,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
+              "https://uit.no/utdanning/program/270464/biology_-_master"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "naturforvaltning2",
+      "label": "Naturforvaltning (2-årig master)",
+      "level": "master2",
+      "desc": "Sammenligner de toårige masterne i natur- og naturressursforvaltning med lokalt opptak.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere» (søknadsalternativer), kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (alle søknadsalternativer uansett prioritet; kvalifiserte = søknadsalternativer merket kvalifisert). Studieplasser, førstevalgssøkere, kvinneandel og poenggrenser publiseres ikke per program i denne tabellen og står derfor som null. DBH har ikke rapportert høstopptaket 2026 ennå, så 2026 er tomt for alle programmene. NTNUs «Naturressursforvaltning» og USNs «Økologi og miljøforvaltning» i Bø er de nærmeste sammenligningene. USN byttet programkode i 2022 (fra «Master i natur-, helse- og miljøvern» til «Master i økologi og miljøforvaltning»); de to kodene er slått sammen til én serie, og 2021-tallet gjelder det gamle programmet. Universitetet i Innlandets «Anvendt økologi» er også med her fordi den er forvaltningsrettet, og ligger i tillegg i gruppen for økologi. Nord universitet har ingen master i naturforvaltning.",
+      "programs": [
+        {
+          "id": "nmbu_naturforvaltning2",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Naturforvaltning (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": true,
+          "default": true,
+          "source": "local",
+          "url": "https://www.nmbu.no/studier/master-2-aar/naturforvaltning",
+          "localData": {
+            "2021": {
+              "alleS": 183,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 138,
+              "tilbud": 44,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 173,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 130,
+              "tilbud": 37,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 183,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 129,
+              "tilbud": 38,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 181,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 127,
+              "tilbud": 47,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 183,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 108,
+              "tilbud": 47,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
+              "https://www.nmbu.no/studier/master-2-aar/naturforvaltning"
+            ]
+          }
+        },
+        {
+          "id": "ntnu_naturressurs2",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiested": "Trondheim",
+          "programnavn": "Naturressursforvaltning (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": true,
+          "source": "local",
+          "url": "https://www.ntnu.no/studier/msnarm",
+          "localData": {
+            "2021": {
+              "alleS": 278,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 89,
+              "tilbud": 50,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 299,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 102,
+              "tilbud": 47,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 267,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 75,
+              "tilbud": 40,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 153,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 69,
+              "tilbud": 32,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 170,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 88,
+              "tilbud": 41,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
+              "https://www.ntnu.no/studier/msnarm"
+            ]
+          }
+        },
+        {
+          "id": "usn_okologi_miljoforvaltning2",
+          "shortName": "USN",
+          "institusjon": "Universitetet i Sørøst-Norge",
+          "studiested": "Midt-Telemark",
+          "programnavn": "Økologi og miljøforvaltning (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": true,
+          "source": "local",
+          "url": "https://www.usn.no/studier/master-i-okologi-og-miljoforvaltning/",
+          "localData": {
+            "2021": {
+              "alleS": 77,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 45,
+              "tilbud": 39,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 357,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 171,
+              "tilbud": 101,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 310,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 100,
+              "tilbud": 100,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 116,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 90,
+              "tilbud": 88,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 130,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 88,
+              "tilbud": 87,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
+              "https://www.usn.no/studier/master-i-okologi-og-miljoforvaltning/"
+            ]
+          }
+        },
+        {
+          "id": "inn_anvendt_okologi_nf2",
+          "shortName": "INN",
+          "institusjon": "Universitetet i Innlandet",
+          "studiested": "Stor-Elvdal",
+          "programnavn": "Anvendt økologi (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": false,
+          "source": "local",
+          "url": "https://www.inn.no/studier/vare-studier/master-i-anvendt-okologi/",
+          "localData": {
+            "2021": {
+              "alleS": 461,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 120,
+              "tilbud": 59,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 364,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 120,
+              "tilbud": 57,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 434,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 64,
+              "tilbud": 48,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 108,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 50,
+              "tilbud": 47,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 118,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 53,
+              "tilbud": 48,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
+              "https://www.inn.no/studier/vare-studier/master-i-anvendt-okologi/"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "miljonatur2",
+      "label": "Miljøvitenskap (2-årig master)",
+      "level": "master2",
+      "desc": "Sammenligner de toårige masterne i miljøvitenskap og geofag med lokalt opptak.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere» (søknadsalternativer), kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (alle søknadsalternativer uansett prioritet; kvalifiserte = søknadsalternativer merket kvalifisert). Studieplasser, førstevalgssøkere, kvinneandel og poenggrenser publiseres ikke per program i denne tabellen og står derfor som null. DBH har ikke rapportert høstopptaket 2026 ennå, så 2026 er tomt for alle programmene. NMBUs master i miljøvitenskap overtok etter «Miljø og naturressurser» fra opptaket 2022; forgjengeren er tatt med med default false slik at 2021-tallet kan følges. NTNUs «Miljøtoksikologi og naturmiljøkjemi» er den nærmeste faglige parallellen på forurensnings- og miljøkjemisiden, og NTNUs «Industriell økologi» dekker miljøanalyse og livsløpsvurdering. Geofagsmasterne ved UiO og UiB er bredere geovitenskapelige program og er tatt med som svakere sammenligninger (default false).",
+      "programs": [
+        {
+          "id": "nmbu_miljovitenskap2",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Miljøvitenskap (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": true,
+          "default": true,
+          "source": "local",
+          "url": "https://www.nmbu.no/studier/master-2-aar/miljovitenskap",
+          "localData": {
+            "2021": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 99,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 59,
+              "tilbud": 42,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 91,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 45,
+              "tilbud": 33,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 87,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 44,
+              "tilbud": 38,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 98,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 42,
+              "tilbud": 35,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
+              "https://www.nmbu.no/studier/master-2-aar/miljovitenskap"
+            ]
+          }
+        },
+        {
+          "id": "nmbu_mina2_forgjenger",
+          "shortName": "NMBU Miljø og naturressurser",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Miljø og naturressurser (master 2 år, forgjenger)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": true,
+          "default": false,
+          "source": "local",
+          "url": "https://www.nmbu.no/studier/master-2-aar/miljovitenskap",
+          "localData": {
+            "2021": {
+              "alleS": 118,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 69,
+              "tilbud": 41,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
+              "https://www.nmbu.no/studier/master-2-aar/miljovitenskap"
+            ]
+          }
+        },
+        {
+          "id": "ntnu_miljotoks2",
+          "shortName": "NTNU Miljøtoksikologi",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiested": "Trondheim",
+          "programnavn": "Miljøtoksikologi og naturmiljøkjemi (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": true,
+          "source": "local",
+          "url": "https://www.ntnu.no/studier/msenvitox",
+          "localData": {
+            "2021": {
+              "alleS": 217,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 85,
+              "tilbud": 41,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 258,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 86,
+              "tilbud": 35,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 219,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 55,
+              "tilbud": 33,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 72,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 37,
+              "tilbud": 20,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 108,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 62,
+              "tilbud": 23,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
+              "https://www.ntnu.no/studier/msenvitox"
+            ]
+          }
+        },
+        {
+          "id": "ntnu_industriell_okologi2",
+          "shortName": "NTNU Industriell økologi",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiested": "Trondheim",
+          "programnavn": "Industrial Ecology (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": true,
+          "source": "local",
+          "url": "https://www.ntnu.no/studier/msindecol",
+          "localData": {
+            "2021": {
+              "alleS": 232,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 135,
+              "tilbud": 42,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 183,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 89,
+              "tilbud": 40,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 134,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 56,
+              "tilbud": 40,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 92,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 54,
+              "tilbud": 32,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 106,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 53,
+              "tilbud": 27,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
+              "https://www.ntnu.no/studier/msindecol"
+            ]
+          }
+        },
+        {
+          "id": "uio_geofag2",
+          "shortName": "UiO Geofag",
+          "institusjon": "Universitetet i Oslo",
+          "studiested": "Oslo",
+          "programnavn": "Geofag (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": false,
+          "source": "local",
+          "url": "https://www.uio.no/studier/program/geofag-master/",
+          "localData": {
+            "2021": {
+              "alleS": 389,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 209,
+              "tilbud": 108,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 579,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 204,
+              "tilbud": 104,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 486,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 194,
+              "tilbud": 94,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 425,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 237,
+              "tilbud": 133,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 498,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 285,
+              "tilbud": 146,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
+              "https://www.uio.no/studier/program/geofag-master/"
+            ]
+          }
+        },
+        {
+          "id": "uib_geovitenskap2",
+          "shortName": "UiB Geovitskap",
+          "institusjon": "Universitetet i Bergen",
+          "studiested": "Bergen",
+          "programnavn": "Geovitskap (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": false,
+          "source": "local",
+          "url": "https://www.uib.no/studieprogram/MAMN-GEOV",
+          "localData": {
+            "2021": {
+              "alleS": 84,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 57,
+              "tilbud": 54,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 352,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 84,
+              "tilbud": 69,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 355,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 103,
+              "tilbud": 93,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 148,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 107,
+              "tilbud": 90,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 236,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 155,
+              "tilbud": 95,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
+              "https://www.uib.no/studieprogram/MAMN-GEOV"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fornybar2",
+      "label": "Fornybar energi (2-årig master)",
+      "level": "master2",
+      "desc": "Sammenligner de toårige masterne i fornybar energi med lokalt opptak.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere» (søknadsalternativer), kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (alle søknadsalternativer uansett prioritet; kvalifiserte = søknadsalternativer merket kvalifisert). Studieplasser, førstevalgssøkere, kvinneandel og poenggrenser publiseres ikke per program i denne tabellen og står derfor som null. DBH har ikke rapportert høstopptaket 2026 ennå, så 2026 er tomt for alle programmene. UiOs «Fornybare energisystemer» på Kjeller er den nærmeste tverrfaglige parallellen til NMBUs master. UiAs og HVLs mastere gir sivilingeniørgrad og NTNUs «Bærekraftig energi» er engelskspråklig; alle tre krever ingeniør- eller realfagsbakgrunn og er tatt med som svakere sammenligninger (default false). HVLs master startet opp i 2023. Nedgangen i søkertall fra 2023 til 2024 ved de engelskspråklige programmene henger sammen med innføringen av studieavgift for søkere utenfor EØS.",
+      "programs": [
+        {
+          "id": "nmbu_fornybar2",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Fornybar energi (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": true,
+          "default": true,
+          "source": "local",
+          "url": "https://www.nmbu.no/studier/master-2-aar/fornybar-energi",
+          "localData": {
+            "2021": {
+              "alleS": 144,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 82,
+              "tilbud": 50,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 126,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 62,
+              "tilbud": 44,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 131,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 51,
+              "tilbud": 45,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 88,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 30,
+              "tilbud": 27,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 95,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 49,
+              "tilbud": 45,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
+              "https://www.nmbu.no/studier/master-2-aar/fornybar-energi"
+            ]
+          }
+        },
+        {
+          "id": "uio_fornybare_energisystemer2",
+          "shortName": "UiO",
+          "institusjon": "Universitetet i Oslo",
+          "studiested": "Oslo",
+          "programnavn": "Fornybare energisystemer (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": true,
+          "source": "local",
+          "url": "https://www.uio.no/studier/program/fornybar-energi-master/",
+          "localData": {
+            "2021": {
+              "alleS": 803,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 117,
+              "tilbud": 54,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 572,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 170,
+              "tilbud": 59,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 640,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 126,
+              "tilbud": 71,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 238,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 105,
+              "tilbud": 75,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 192,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 77,
+              "tilbud": 63,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
+              "https://www.uio.no/studier/program/fornybar-energi-master/"
+            ]
+          }
+        },
+        {
+          "id": "uia_fornybar2",
+          "shortName": "UiA",
+          "institusjon": "Universitetet i Agder",
+          "studiested": "Grimstad",
+          "programnavn": "Fornybar energi, sivilingeniør (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": false,
+          "source": "local",
+          "url": "https://www.uia.no/studier/program/fornybar-energi-master-2-ar/",
+          "localData": {
+            "2021": {
+              "alleS": 253,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 117,
+              "tilbud": 71,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 171,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 86,
+              "tilbud": 58,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 142,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 69,
+              "tilbud": 46,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 148,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 79,
+              "tilbud": 46,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 133,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 51,
+              "tilbud": 31,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
+              "https://www.uia.no/studier/program/fornybar-energi-master-2-ar/"
+            ]
+          }
+        },
+        {
+          "id": "ntnu_baerekraftig_energi2",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiested": "Trondheim",
+          "programnavn": "Bærekraftig energi (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": false,
+          "source": "local",
+          "url": "https://www.ntnu.no/studier/msse",
+          "localData": {
+            "2021": {
+              "alleS": 949,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 220,
+              "tilbud": 69,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 720,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 203,
+              "tilbud": 35,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 582,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 84,
+              "tilbud": 44,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 194,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 52,
+              "tilbud": 17,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 194,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 32,
+              "tilbud": 7,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
+              "https://www.ntnu.no/studier/msse"
+            ]
+          }
+        },
+        {
+          "id": "hvl_energiteknologi2",
+          "shortName": "HVL",
+          "institusjon": "Høgskulen på Vestlandet",
+          "studiested": "Bergen",
+          "programnavn": "Bærekraftig energiteknologi, sivilingeniør (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": false,
+          "default": false,
+          "source": "local",
+          "url": "https://www.hvl.no/studier/studieprogram/berekraftig-energiteknologi/",
+          "localData": {
+            "2021": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 102,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 49,
+              "tilbud": 40,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 109,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 46,
+              "tilbud": 42,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 112,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 37,
+              "tilbud": 36,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
+              "https://www.hvl.no/studier/studieprogram/berekraftig-energiteknologi/"
+            ]
+          }
+        }
+      ]
+    }
+  ]
 }

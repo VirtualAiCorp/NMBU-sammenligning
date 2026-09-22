@@ -1,4 +1,4 @@
-import { TrendingUp, Lock, BookOpen, Globe2 } from 'lucide-react';
+import { TrendingUp, BookOpen, Globe2 } from 'lucide-react';
 import { INGEN_DATA_TEKST, type FacultyData } from '../data/faculties';
 import {
   landsamHasComparison, landsamProgramsWithData,
@@ -12,6 +12,8 @@ interface Props {
   onOpenAnalysis: (groupId?: string) => void;
   /** Åpner emne- og karakteranalysen. groupId = emnegruppen som skal være valgt. */
   onOpenCourses: (groupId?: string) => void;
+  /** Åpner markedsstatusen for fakultetet. */
+  onOpenMarketStatus: () => void;
   /** Tilbake til fakultetsoversikten. */
   onBackToFaculties: () => void;
 }
@@ -22,9 +24,14 @@ const LEVEL_LABEL: Record<string, string> = {
   master2:  'Toårig master',
 };
 
-export function LandsamLanding({ faculty, onOpenAnalysis, onOpenCourses, onBackToFaculties }: Props) {
+export function LandsamLanding({ faculty, onOpenAnalysis, onOpenCourses, onOpenMarketStatus, onBackToFaculties }: Props) {
   const admissionGroups = faculty.admissionGroups;
   const courseGroups = faculty.courseGroups;
+  const markedsstatus = faculty.marketStatus;
+  const antallDok = markedsstatus.reduce((sum, i) => sum + i.dokumenter.length, 0);
+  const markedsstatusTekst = markedsstatus.length === 0
+    ? ' Ingen styrepapirer samlet inn ennå for dette fakultetet.'
+    : ` ${markedsstatus.length} institusjoner, ${antallDok} nedlastbare dokumenter.`;
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-6" style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
@@ -223,43 +230,46 @@ export function LandsamLanding({ faculty, onOpenAnalysis, onOpenCourses, onBackT
           </div>
         </div>
 
-        {/* Kommer-kort */}
-        <div className="mt-5">
-          <div className="flex items-center gap-4 mb-5">
+        {/* Markedsstatus */}
+        <div className="mt-8">
+          <div className="flex items-center gap-4 mb-6">
             <div className="h-px flex-1" style={{ backgroundColor: 'var(--nmbu-neutral-3)' }} />
-            <span style={{ fontSize: 11, fontWeight: 700, color: 'var(--nmbu-neutral-2)', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
-              Under arbeid
-            </span>
+            <div className="flex items-center gap-2 px-3 py-1.5 rounded-full" style={{ backgroundColor: '#EFF6FF', border: '1px solid #93C5FD' }}>
+              <Globe2 className="w-3.5 h-3.5" style={{ color: '#1D4ED8' }} />
+              <span style={{ fontSize: 11, fontWeight: 700, color: '#1D4ED8', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
+                Markedsstatus
+              </span>
+            </div>
             <div className="h-px flex-1" style={{ backgroundColor: 'var(--nmbu-neutral-3)' }} />
           </div>
 
-          <div className="grid grid-cols-2 gap-5">
-            {[
-              {
-                id: 'markedsstatus',
-                icon: <Globe2 className="w-5 h-5" style={{ color: 'var(--nmbu-neutral-2)' }} />,
-                title: 'Markedsstatus',
-                desc: 'Status og utvikling hos konkurrerende institusjoner.',
-              },
-            ].map((card) => (
-              <div key={card.id}
-                className="rounded-2xl p-7 text-left"
-                style={{ backgroundColor: '#fff', border: '1px dashed var(--nmbu-neutral-3)', opacity: 0.6, cursor: 'not-allowed' }}
-                title="Kommer"
-              >
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center" style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
-                    {card.icon}
+          <button
+            onClick={onOpenMarketStatus}
+            className="w-full rounded-2xl p-7 text-left transition-all"
+            style={{ backgroundColor: '#fff', border: '2px solid #93C5FD', boxShadow: '0 2px 8px rgba(29,78,216,0.08)' }}
+            onMouseEnter={(e) => { (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 4px 16px rgba(29,78,216,0.14)'; (e.currentTarget as HTMLButtonElement).style.transform = 'translateY(-2px)'; }}
+            onMouseLeave={(e) => { (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 2px 8px rgba(29,78,216,0.08)'; (e.currentTarget as HTMLButtonElement).style.transform = 'translateY(0)'; }}
+          >
+            <div className="flex items-start gap-5">
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: '#DBEAFE' }}>
+                <Globe2 className="w-6 h-6" style={{ color: '#1D4ED8' }} />
+              </div>
+              <div>
+                <div className="flex items-center gap-3 mb-1">
+                  <div style={{ fontFamily: "'Lora', serif", fontWeight: 500, fontSize: '20px', color: 'var(--nmbu-green-dark)' }}>
+                    Markedsstatus
                   </div>
-                  <div className="flex items-center gap-1.5 text-xs px-2 py-1 rounded-full font-medium" style={{ backgroundColor: 'var(--nmbu-beige-light)', color: 'var(--nmbu-neutral-2)' }}>
-                    <Lock className="w-3 h-3" /> Kommer
+                  <div className="text-xs px-2 py-0.5 rounded-full font-medium" style={{ backgroundColor: '#DBEAFE', color: '#1D4ED8' }}>
+                    Konkurrentanalyse
                   </div>
                 </div>
-                <div style={{ fontFamily: "'Lora', serif", fontWeight: 500, fontSize: '18px', color: 'var(--nmbu-neutral-1)', marginBottom: 8 }}>{card.title}</div>
-                <p style={{ fontSize: '13px', color: 'var(--nmbu-neutral-2)', lineHeight: 1.5 }}>{card.desc}</p>
+                <p style={{ fontSize: '13px', color: 'var(--nmbu-neutral-2)', lineHeight: 1.6, maxWidth: 580 }}>
+                  Status og utvikling hos konkurrerende institusjoner — basert på styrepapirer og årsrapporter.
+                  {markedsstatusTekst}
+                </p>
               </div>
-            ))}
-          </div>
+            </div>
+          </button>
         </div>
 
         {/* Footer notice */}

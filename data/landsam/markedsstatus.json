@@ -1,0 +1,193 @@
+{
+  "hentet": "2026-09-22",
+  "fakultet": "landsam",
+  "institusjoner": [
+    {
+      "id": "ntnu",
+      "name": "NTNU",
+      "fullName": "Norges teknisk-naturvitenskapelige universitet",
+      "enhet": "Fakultet for arkitektur og design / Institutt for arkitektur og planlegging",
+      "styresider": ["https://www.ntnu.no/adm/styret/saker", "https://i.ntnu.no/wiki/-/wiki/Norsk/Fakultetsstyret+ved+AD"],
+      "status": "partial",
+      "dokumenter": [
+        { "label": "Byplanlegging - master (studieprogramside)", "url": "https://www.ntnu.no/studier/mbyplan", "filnavn": null, "dato": "2026", "storrelseMB": null, "lastetNed": false },
+        { "label": "Fysisk planlegging - masterstudium, opptak (studieprogramside)", "url": "https://www.ntnu.no/studier/mfyspl/opptak", "filnavn": null, "dato": "2026", "storrelseMB": null, "lastetNed": false }
+      ],
+      "punkter": [
+        "NTNUs sakspapirer til universitetsstyret (2025–2026) og protokoller ligger som lenker til SharePoint (studntnu.sharepoint.com) som krever NTNU-innlogging, og fakultetsstyret ved Fakultet for arkitektur og design (AD) sine sakspapirer ligger på et internt kunnskapsbase-oppslag (i.ntnu.no) som var tomt/uten innhold ved uthenting 22.09.2026. Vi fant derfor ingen offentlig tilgjengelige styrepapirer for AD-fakultetet eller Institutt for arkitektur og planlegging (IAP) i perioden.",
+        "Det er likevel dokumentert på NTNUs egne studieprogramsider at den toårige masteren i Fysisk planlegging avvikles og erstattes av en ny master i Byplanlegging (MBYPLAN) med oppstart høsten 2026 – i tråd med det programkart.json allerede har notert. Emnebeskrivelsene for Byplanlegging er datert 20. mars 2026, og lokalt opptak (DBH tabell 379) viser 34 studieplasser og 107 førstevalgssøkere i 2026 på det gamle programnavnet, opp fra 97 i 2025.",
+        "Ingen tall for studieportefølje, søkertall eller økonomi ved AD-fakultetet for 2025–2026 kunne bekreftes i primærkilder (styresaker); dette er derfor ikke inkludert som punkter her utover det som allerede finnes i programkart.json."
+      ],
+      "oppsummering": "NTNUs styrepapirer på universitets- og fakultetsnivå var ikke offentlig tilgjengelige ved uthenting (SharePoint-lenker krever NTNU-pålogging, og fakultetsstyret AD sin kunnskapsbaseside var tom). Det eneste bekreftede funnet er at masteren i Fysisk planlegging erstattes av en ny Byplanlegging-master fra høsten 2026, dokumentert på NTNUs egne studieprogramsider. Status settes til «partial» inntil styrepapirer blir tilgjengelige.",
+      "relevanteProgram": ["ntnu_fysisk_planlegging", "ntnu_eiendomsutvikling", "ntnu_folkehelse", "ntnu_msok"]
+    },
+    {
+      "id": "uis",
+      "name": "UiS",
+      "fullName": "Universitetet i Stavanger",
+      "enhet": "Det teknisk-naturvitenskapelige fakultet (Institutt for sikkerhet, økonomi og planlegging, ISØP) / Det samfunnsvitenskapelige fakultet",
+      "styresider": ["https://opengov.360online.com/Meetings/uis/Boards/Details/599422", "https://opengov.360online.com/Meetings/uis/Boards/Details/599302"],
+      "status": "complete",
+      "dokumenter": [
+        { "label": "Møtereferat Fakultetsstyret TN 18.06.2026", "url": "https://opengov.360online.com/Meetings/uis/File/Details/1485780.pdf", "filnavn": "UiS_TN_Motereferat_18.06.2026.pdf", "dato": "2026-06-18", "storrelseMB": 0.15, "lastetNed": true },
+        { "label": "Møteinnkalling Fakultetsstyret TN 18.06.2026 (sakspapirer)", "url": "https://opengov.360online.com/Meetings/uis/File/Details/1482784.pdf", "filnavn": "UiS_TN_Moteinnkalling_18.06.2026.pdf", "dato": "2026-06-18", "storrelseMB": 0.29, "lastetNed": true },
+        { "label": "Møtebok Fakultetsstyret SV 11.08.2026", "url": "https://opengov.360online.com/Meetings/uis/File/Details/1501305.pdf", "filnavn": "UiS_SV_Motebok_11.08.2026.pdf", "dato": "2026-08-11", "storrelseMB": 0.11, "lastetNed": true }
+      ],
+      "punkter": [
+        "Byplanlegging-programmene ved UiS (master 5 år, bachelor Byplanlegging og samfunnssikkerhet, og byggingeniør med studieretning byplanlegging) hører til Institutt for sikkerhet, økonomi og planlegging (ISØP) under Det teknisk-naturvitenskapelige fakultet (TN). Fra 1. oktober 2026 får instituttet ny leder, Øystein Lund Bø, som tar over etter Tore Markeset, som har vært instituttleder i tolv år (FSTN-møtereferat 18.06.2026, sak 18/26).",
+        "TN-fakultetets økonomi bedres: fakultetet opplever realvekst for første gang siden 2022–2023, blant annet som følge av økte studenttall og økt studiepoengproduksjon. Det er usikkerhet om BOA-inntekter, men prognosen viser økt handlingsrom frem mot 2028, som delvis skal brukes til strategisk bemanningsplanlegging (FSTN 18.06.2026, sak 18/26).",
+        "Fakultetsstyret godkjente TN-fakultetets studieporteføljerapport for 2025/2026 i sak 27/26, som ligger til grunn for universitetsstyrets senere behandling av UiS' samlede studieportefølje. Rapporten peker på at gjennomføringsgrad og frafall fortsatt er et forbedringsområde, men at datagrunnlaget er usikkert (FSTN 18.06.2026, sak 27/26).",
+        "TN-fakultetet foreslo i sak 25/26 en fordeling av opptaksrammer for 2027 med bare moderate endringer: økt satsing på internasjonale opptak, videreført nullopptak på bachelor i miljøteknologi, samt planlagt nyopptak til årsstudier i samfunnssikkerhet og beredskap og i entreprenørskap. Selve talloppstillingen for byplanleggingsprogrammene spesifikt var ikke lesbar i sakspapirene som ble hentet ut.",
+        "ISØP fikk i sak 24/26 utredningstillatelse til et nytt årsstudium i entreprenørskap (60 studiepoeng, planlagt oppstart høsten 2027), med krav om at forholdet til eksisterende programmer – inkludert mulig overlapp med Handelshøgskolen ved UiS – avklares nærmere før en eventuell akkrediteringssøknad (FSTN 18.06.2026, sak 24/26).",
+        "Det samfunnsvitenskapelige fakultet (SV) ved UiS har ingen programmer som direkte konkurrerer med LANDSAM; fakultetsstyret der behandlet i august 2026 blant annet nedleggelse av en master i Digital Society and Societal Transformations fra høsten 2027 og en generell studieporteføljerapport, uten punkter relevante for LANDSAMs fagområder (FSSV-møtebok 11.08.2026, sak 12/26 og 13/26).",
+        "Vi fant ingen bekreftelse i styrepapirene på om masteren i byplanlegging (5 år) har stanset eller redusert opptaket, selv om enkelte kilder tyder på at søkere i praksis har blitt henvist til byggingeniør-programmet og den toårige masteren i byplanlegging; dette er derfor ikke tatt med som en bekreftet påstand."
+      ],
+      "oppsummering": "UiS' byplanleggingsfaglige miljø (ISØP ved TN-fakultetet) får ny instituttleder fra oktober 2026 etter tolv år med samme leder, og fakultetet melder om bedret økonomi og godkjent studieporteføljerapport for 2025/2026. Opptaksrammene for 2027 endres bare moderat, med nye årsstudier i samfunnssikkerhet/beredskap og entreprenørskap som mest konkrete nyheter. SV-fakultetet har ingen direkte LANDSAM-relevante saker i perioden.",
+      "relevanteProgram": ["uis_byplanlegging", "uis_byplan_samfsikkerhet", "uis_ing_bygg_byplan"]
+    },
+    {
+      "id": "uit",
+      "name": "UiT",
+      "fullName": "UiT Norges arktiske universitet",
+      "enhet": "Fakultet for humaniora, samfunnsvitenskap og lærerutdanning",
+      "styresider": ["https://uit.no/om/universitetsstyret"],
+      "status": "none",
+      "dokumenter": [],
+      "punkter": [],
+      "oppsummering": "",
+      "relevanteProgram": ["uit_samfunnsplanlegging"]
+    },
+    {
+      "id": "hvl",
+      "name": "HVL",
+      "fullName": "Høgskulen på Vestlandet",
+      "enhet": "Fakultet for ingeniør- og naturvitskap",
+      "styresider": ["https://www.hvl.no/om/organisering/styret/"],
+      "status": "none",
+      "dokumenter": [],
+      "punkter": [],
+      "oppsummering": "",
+      "relevanteProgram": ["hvl_landmaling", "hvl_eiendomsmegling", "hvl_landskapsplanlegging_la"]
+    },
+    {
+      "id": "aho",
+      "name": "AHO",
+      "fullName": "Arkitektur- og designhøgskolen i Oslo",
+      "enhet": "Institusjonsnivå (egen høgskole)",
+      "styresider": ["https://www.aho.no/om-aho/organisasjon/styret/"],
+      "status": "none",
+      "dokumenter": [],
+      "punkter": [],
+      "oppsummering": "",
+      "relevanteProgram": ["aho_la"]
+    },
+    {
+      "id": "nord",
+      "name": "Nord",
+      "fullName": "Nord universitet",
+      "enhet": "Fakultet for samfunnsvitenskap",
+      "styresider": ["https://www.nord.no/om/organisasjon/styret"],
+      "status": "none",
+      "dokumenter": [],
+      "punkter": [],
+      "oppsummering": "",
+      "relevanteProgram": ["nord_eiendomsmegling", "nord_geografi_samfplan", "nord_internasjonale_relasjoner_b"]
+    },
+    {
+      "id": "uia",
+      "name": "UiA",
+      "fullName": "Universitetet i Agder",
+      "enhet": "Fakultet for samfunnsvitenskap",
+      "styresider": ["https://www.uia.no/om-uia/styre-og-organisasjon/styret"],
+      "status": "none",
+      "dokumenter": [],
+      "punkter": [],
+      "oppsummering": "",
+      "relevanteProgram": ["uia_samfunnsplanlegging", "uia_globale_utviklingsstudier"]
+    },
+    {
+      "id": "inn",
+      "name": "INN",
+      "fullName": "Universitetet i Innlandet",
+      "enhet": "Universitetsstyret / Handelshøgskolen Innlandet",
+      "styresider": ["https://www.inn.no/om-universitetet/organisering/universitetsstyret/saksdokumenter-styret-inn/"],
+      "status": "none",
+      "dokumenter": [],
+      "punkter": [],
+      "oppsummering": "",
+      "relevanteProgram": ["inn_eiendomsmegling", "inn_internasjonale_studier"]
+    },
+    {
+      "id": "oslomet",
+      "name": "OsloMet",
+      "fullName": "OsloMet – storbyuniversitetet",
+      "enhet": "Fakultet for samfunnsvitenskap",
+      "styresider": ["https://www.oslomet.no/om/styret"],
+      "status": "none",
+      "dokumenter": [],
+      "punkter": [],
+      "oppsummering": "",
+      "relevanteProgram": ["oslomet_utviklingsstudier"]
+    },
+    {
+      "id": "uio",
+      "name": "UiO",
+      "fullName": "Universitetet i Oslo",
+      "enhet": "Det samfunnsvitenskapelige fakultet / Institutt for sosiologi og samfunnsgeografi / Institutt for helse og samfunn",
+      "styresider": ["https://www.uio.no/om/organisasjon/styret/"],
+      "status": "none",
+      "dokumenter": [],
+      "punkter": [],
+      "oppsummering": "",
+      "relevanteProgram": ["uio_utvikling_baerekraft", "uio_internasjonale_studier", "uio_folkehelsearbeid", "uio_decc", "uio_pecos", "uio_economics"]
+    },
+    {
+      "id": "uib",
+      "name": "UiB",
+      "fullName": "Universitetet i Bergen",
+      "enhet": "Det samfunnsvitenskapelige fakultet",
+      "styresider": ["https://www.uib.no/universitetsstyret"],
+      "status": "none",
+      "dokumenter": [],
+      "punkter": [],
+      "oppsummering": "",
+      "relevanteProgram": ["uib_samfunnsokonomi"]
+    },
+    {
+      "id": "usn",
+      "name": "USN",
+      "fullName": "Universitetet i Sørøst-Norge",
+      "enhet": "Handelshøyskolen / Fakultet for teknologi, naturvitenskap og maritime fag",
+      "styresider": ["https://opengov.360online.com/Meetings/usn"],
+      "status": "none",
+      "dokumenter": [],
+      "punkter": [],
+      "oppsummering": "",
+      "relevanteProgram": ["usn_eiendomsmegling"]
+    },
+    {
+      "id": "volda",
+      "name": "Volda",
+      "fullName": "Høgskulen i Volda",
+      "enhet": "Institusjonsnivå (egen høgskole)",
+      "styresider": ["https://opengov.360online.com/Meetings/volda"],
+      "status": "none",
+      "dokumenter": [],
+      "punkter": [],
+      "oppsummering": "",
+      "relevanteProgram": ["hivolda_planlegging"]
+    },
+    {
+      "id": "bi",
+      "name": "BI",
+      "fullName": "Handelshøyskolen BI",
+      "enhet": "Privat institusjon",
+      "styresider": [],
+      "status": "none",
+      "dokumenter": [],
+      "punkter": ["BI er en privat stiftelse og har ikke offentlig styre eller offentlige styrepapirer/møteportal på linje med de statlige institusjonene. BI omfattes derfor ikke av offentleglova, og det finnes ingen tilgjengelige styresaker å hente markedsstatus fra."],
+      "oppsummering": "BI er privat og har ingen offentlige styrepapirer. Tatt med i programkartet (bachelor i eiendomsmegling, jus og økonomi), men kan ikke dekkes i denne markedsstatusen.",
+      "relevanteProgram": ["bi_eiendomsmegling"]
+    }
+  ]
+}
