@@ -138,3 +138,17 @@ Regler og forbehold:
 - Program som deler DBH-kode får identiske tall (HVL LANA i to grupper). INN skiftet institusjonskode 0264 → 1177 i 2025; AHO og UiT deler koden for landskapsarkitektur. Begge håndteres via feltet `institusjonskoder` i koblingen.
 - UiS femårig byplanlegging har i praksis ingen karakterrader i DBH (UiS fører dem på den toårige masteren). UiO folkehelse og NMBU sine nyeste mastere (M-GEP, M-EEG) har kort historikk.
 - Oppdatere: `python3 scripts/build-landsam-courses.py --refresh` (henter på nytt; uten `--refresh` brukes cachen).
+
+## LANDSAM: emnekobling, BI og studieplaner (lagt til 22.09.2026)
+
+**Sammenlign emne** (fane i Emner og karakterer): samme fag på tvers av institusjoner.
+- Koblingene ligger i `data/landsam/emnekobling/<gruppe>.json` (manuelt kartlagt av agenter mot studieplaner og emnebeskrivelser; 85 emnetyper, 272 koblinger). `scripts/build-landsam-course-mapping.py` validerer mot DBH-dataene og lager `landsamCourseMapping.ts`.
+- Er faget delt i flere emner summeres karakterene. Terskelen for kandidater gjelder per emnekode.
+- Samfunnsøkonomi og miljøforvaltning har bare én emnetype: NMBU-programmet er nytt fra 2024. Gjør gruppen på nytt når kullene er ferdige.
+
+**BI** er lagt inn i eiendom-gruppen (Bachelor i eiendomsmegling, jus og økonomi, DBH-kode DIPEMH under institusjonskode 8241). BI er ikke i Samordna opptak, så opptakstall mangler. DBH rapporterer høye kandidattall for BI-emner som deles med andre BI-bachelorer; tallene er ikke rene programtall.
+
+**Studieplan** (fane i Emner og karakterer): obligatoriske emner per program fra de offisielle studieplanene, koblet til DBH-karakterer.
+- Én fil per program i `data/landsam/studieplaner/<entryId>.json`: obligatoriske emner med år, semester, studiepoeng, DBH-koder, kilder og forbehold, samt spesialiseringer. `scripts/build-landsam-studyplans.py` summerer karakterene over DBH-kodene og lager `landsamStudyPlanData.ts`.
+- «Obligatorisk karakterindeks» = kandidatvektet snitt over obligatoriske emner med bokstavkarakter i valgt år.
+- Forbehold som er verdt å kjenne: flere institusjoner har byttet emnekoder (HVL landmåling fra 2025, USN, Nord, UiO folkehelse fra 2026), og DBH-karakterene ligger på de gamle kodene. NMBU Eiendomsutvikling har bare 2024-planen publisert. INN eiendomsmegling ser ut til å være nedlagt (siste kull 2023).
