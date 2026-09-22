@@ -1,0 +1,373 @@
+{
+  "groupId": "landskapsarkitektur",
+  "hentet": "2026-09-22",
+  "note": "NMBU og AHO er femårige masterløp, mens HVL Sogndal er en treårig bachelor – HVL mangler derfor masternivået og de store prosjektfagene. AHO har ingen emner i GIS, arealplanlegging etter plan- og bygningsloven eller geologi/jord, og har et vesentlig mindre omfang i plantefag (4 sp mot NMBUs ca. 65 sp). Emnetypene under er bygd på de emnene DBH faktisk rapporterer for programmene, og AHOs studioemner (Form, Systemer, Fellesrom, Studio 1–3) dekker flere fagfelt samtidig; koblingene deres er derfor grovere enn for NMBU og HVL.",
+  "emnetyper": [
+    {
+      "id": "grunnkurs-form",
+      "label": "Form- og designgrunnkurs",
+      "kategori": "Design",
+      "desc": "Grunnleggende formgiving, romforståelse og designmetodikk i de første studieårene.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_la",
+          "emnekoder": [
+            "LAA115-1",
+            "LAA116-1"
+          ],
+          "merknad": "Introduksjon til profesjonsstudiet og Introduksjon i landskapsarkitektur II, til sammen 25 sp."
+        },
+        {
+          "entryId": "aho_la",
+          "emnekoder": [
+            "61 110-1",
+            "61 110-2",
+            "61 120-1"
+          ],
+          "merknad": "Form – Landskapslaboratorium (utvidet fra 20 til 24 sp i 2024) og Form – Parklaboratorium."
+        },
+        {
+          "entryId": "hvl_landskapsplanlegging_la",
+          "emnekoder": [
+            "PL425-2"
+          ],
+          "merknad": "Rom og design, 10 sp – klart mindre omfang enn NMBU og AHO."
+        }
+      ]
+    },
+    {
+      "id": "landskapsanalyse",
+      "label": "Landskapsanalyse og landskapsforståelse",
+      "kategori": "Metode",
+      "desc": "Å lese, beskrive og analysere landskap som grunnlag for planlegging og prosjektering.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_la",
+          "emnekoder": [
+            "LAA250-1"
+          ]
+        },
+        {
+          "entryId": "aho_la",
+          "emnekoder": [
+            "61 161-1"
+          ],
+          "merknad": "Landskapsteori – forståelse og lesning av nordlige landskap, 6 sp; mer teoretisk vinklet."
+        },
+        {
+          "entryId": "hvl_landskapsplanlegging_la",
+          "emnekoder": [
+            "PL416-2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plantekunnskap",
+      "label": "Plantekunnskap og vegetasjonsbruk",
+      "kategori": "Natur/Økologi",
+      "desc": "Artskunnskap, plantebruk og forming med vegetasjon i grøntanlegg og urbane omgivelser.",
+      "note": "Omfanget er svært ulikt: NMBU har rundt 65 sp plantefag, HVL 20 sp og AHO bare 4 sp.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_la",
+          "emnekoder": [
+            "PHG113-1",
+            "PHG113-2",
+            "PHG213-1",
+            "PHG215-1",
+            "LAA224-1",
+            "LAA224-2"
+          ],
+          "merknad": "PHG113 og LAA224 ble lagt om i 2025 (nye emnevarianter med flere studiepoeng)."
+        },
+        {
+          "entryId": "aho_la",
+          "emnekoder": [
+            "61 111-1"
+          ],
+          "merknad": "Plantebruk, 4 sp – eneste rene plantefag."
+        },
+        {
+          "entryId": "hvl_landskapsplanlegging_la",
+          "emnekoder": [
+            "BI424-1",
+            "BI436-1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "okologi",
+      "label": "Økologi og landskapsøkologi",
+      "kategori": "Natur/Økologi",
+      "desc": "Økologiske prosesser, naturtyper og landskapsøkologisk sammenheng som premiss for landskapsfaget.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_la",
+          "emnekoder": [
+            "LAA370-1"
+          ]
+        },
+        {
+          "entryId": "aho_la",
+          "emnekoder": [
+            "61 123-1",
+            "61 134-1",
+            "61 162-1"
+          ],
+          "merknad": "Økologi for landskapsarkitektur 1–3, 4 sp hver, til sammen 12 sp."
+        },
+        {
+          "entryId": "hvl_landskapsplanlegging_la",
+          "emnekoder": [
+            "BI445-3",
+            "BI435-1",
+            "BI434-1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "naturgrunnlag",
+      "label": "Geologi og jord",
+      "kategori": "Natur/Økologi",
+      "desc": "Berggrunn, løsmasser og jord som fysisk grunnlag for landskap og anlegg.",
+      "note": "AHO har ikke eget emne i geologi eller jordfag.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_la",
+          "emnekoder": [
+            "GEO100-1",
+            "JORD160-1"
+          ]
+        },
+        {
+          "entryId": "hvl_landskapsplanlegging_la",
+          "emnekoder": [
+            "GE406-1"
+          ],
+          "merknad": "Geologi grunnkurs; HVL har ikke eget jordfagsemne."
+        }
+      ]
+    },
+    {
+      "id": "landskapsteknikk",
+      "label": "Landskapsteknikk og prosjektering",
+      "kategori": "Fagspesifikt",
+      "desc": "Terrengforming, materialer, konstruksjoner og tekniske prosjekteringsunderlag for uterom.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_la",
+          "emnekoder": [
+            "LAA215-1",
+            "LAA221-1"
+          ],
+          "merknad": "Byrom, form og konstruksjoner (15 sp) og Konkurransegrunnlag (5 sp)."
+        },
+        {
+          "entryId": "aho_la",
+          "emnekoder": [
+            "61 131-1",
+            "61 141-1"
+          ],
+          "merknad": "Landskapsmedia: terrengforming og material- og konstruksjonslære, 6 sp hver."
+        },
+        {
+          "entryId": "hvl_landskapsplanlegging_la",
+          "emnekoder": [
+            "PL412-2"
+          ],
+          "merknad": "Landskapsinngrep dekker terrengframstilling og konsekvensvurdering av inngrep, og har svakere prosjekteringsinnhold enn NMBU og AHO."
+        }
+      ]
+    },
+    {
+      "id": "historie-teori",
+      "label": "Landskapsarkitekturens historie og teori",
+      "kategori": "Fagspesifikt",
+      "desc": "Hagekunstens og landskapsarkitekturens historie, teorigrunnlag og samtidsfaglige retninger.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_la",
+          "emnekoder": [
+            "LAA211-1"
+          ],
+          "merknad": "Hagekunstens og landskapsarkitekturens historie, 5 sp."
+        },
+        {
+          "entryId": "aho_la",
+          "emnekoder": [
+            "61 121-1",
+            "61 144-1"
+          ],
+          "merknad": "Landskapsarkitekturens historie og Samtidens landskapsarkitektur."
+        },
+        {
+          "entryId": "hvl_landskapsplanlegging_la",
+          "emnekoder": [
+            "PL471-2"
+          ],
+          "merknad": "Kulturmiljøforvaltning er nærmeste ekvivalent, men er forvaltningsrettet snarere enn fagshistorisk."
+        }
+      ]
+    },
+    {
+      "id": "digitale-verktoy",
+      "label": "Digitale verktøy og 3D",
+      "kategori": "Geomatikk/Teknologi",
+      "desc": "Tegne- og modelleringsverktøy, 3D-datamodellering og digital framstilling av landskapsprosjekter.",
+      "note": "HVL har ingen emner i digital modellering ut over kartlære og GIS.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_la",
+          "emnekoder": [
+            "LAD100-1",
+            "LAD202-1",
+            "LAD302-1"
+          ]
+        },
+        {
+          "entryId": "aho_la",
+          "emnekoder": [
+            "LAN-3072-1"
+          ],
+          "merknad": "Digitale landskaper, 6 sp, på masternivå i Tromsø."
+        }
+      ]
+    },
+    {
+      "id": "gis",
+      "label": "GIS og kartlære",
+      "kategori": "Geomatikk/Teknologi",
+      "desc": "Kartgrunnlag, geodata og praktisk bruk av geografiske informasjonssystemer.",
+      "note": "AHO har ikke noe eget GIS- eller kartemne i DBH-rapporteringen.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_la",
+          "emnekoder": [
+            "LAD102-1"
+          ],
+          "merknad": "GIS – praktisk introduksjon, 5 sp."
+        },
+        {
+          "entryId": "hvl_landskapsplanlegging_la",
+          "emnekoder": [
+            "GE413-1"
+          ],
+          "merknad": "Kartlære og GIS, 10 sp – dobbelt omfang av NMBUs emne."
+        }
+      ]
+    },
+    {
+      "id": "byrom-urbanisme",
+      "label": "Byrom, urbanisme og bylandskap",
+      "kategori": "Planlegging",
+      "desc": "Bylandskapet som sosial og fysisk arena: byrom, urbane strukturer og byplanhistorie.",
+      "note": "HVL har ingen emner rettet mot bylandskap ut over Grønnstruktur og urban vegetasjon, som er kodet under plantekunnskap.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_la",
+          "emnekoder": [
+            "LAA341-1",
+            "LAA313-1"
+          ],
+          "merknad": "LAA341 går annethvert år."
+        },
+        {
+          "entryId": "aho_la",
+          "emnekoder": [
+            "61 150-1",
+            "61 151-1",
+            "LAN-3071-1"
+          ],
+          "merknad": "Fellesrom – by og landskap, By- og byplanhistorie og Studio 1: Urbane praksiser."
+        }
+      ]
+    },
+    {
+      "id": "arealplanlegging",
+      "label": "Arealplanlegging og planprosess",
+      "kategori": "Planlegging",
+      "desc": "Kommunal og regional arealplanlegging, reguleringsplaner og planprosess etter plan- og bygningsloven.",
+      "note": "AHO har ingen emner i offentlig arealplanlegging.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_la",
+          "emnekoder": [
+            "APL200-1",
+            "LAA360-1"
+          ],
+          "merknad": "Begge er valgbare for LA-studentene og har derfor færre kandidater enn kjerneemnene."
+        },
+        {
+          "entryId": "hvl_landskapsplanlegging_la",
+          "emnekoder": [
+            "PL417-1",
+            "PL418-1"
+          ],
+          "merknad": "Arealplanlegging og Reguleringsplanlegging, 10 sp hver."
+        }
+      ]
+    },
+    {
+      "id": "studio-prosjekt",
+      "label": "Prosjektfag og studio",
+      "kategori": "Design",
+      "desc": "Store prosjektbaserte studioemner der landskapsprosjekter utvikles fra analyse til ferdig forslag.",
+      "note": "HVLs bachelor har ingen tilsvarende store studioemner; Rom og design (10 sp) er kodet som grunnkurs.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_la",
+          "emnekoder": [
+            "LAA214-1",
+            "LAA340-1",
+            "LAA307-2"
+          ],
+          "merknad": "LAA340 og LAA307 er valgbare studioemner som veksler mellom år."
+        },
+        {
+          "entryId": "aho_la",
+          "emnekoder": [
+            "61 133-1",
+            "61 143-1",
+            "61 160-1",
+            "LAN-3081-1",
+            "LAN-3091-1"
+          ],
+          "merknad": "Systemer-, Fellesrom- og Studio-emnene på 20–24 sp utgjør ryggraden i AHOs løp."
+        }
+      ]
+    },
+    {
+      "id": "oppgave",
+      "label": "Masteroppgave og diplom",
+      "kategori": "Oppgave",
+      "desc": "Avsluttende selvstendig arbeid med tilhørende forberedende emne.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_la",
+          "emnekoder": [
+            "M30-LA-1",
+            "MAST302-1"
+          ]
+        },
+        {
+          "entryId": "aho_la",
+          "emnekoder": [
+            "LAN-3900-1",
+            "LAN-3092-1"
+          ],
+          "merknad": "Diplomoppgave (30 sp) og Prediplom (6 sp); diplom er rapportert med få kandidater i 2025."
+        },
+        {
+          "entryId": "hvl_landskapsplanlegging_la",
+          "emnekoder": [
+            "PL491-1"
+          ],
+          "merknad": "Bacheloroppgave på 20 sp – lavere nivå og omfang enn masteroppgavene."
+        }
+      ]
+    }
+  ]
+}

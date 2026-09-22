@@ -1,0 +1,4890 @@
+{
+  "generert": "2026-09-22",
+  "groups": [
+    {
+      "groupId": "byregion",
+      "note": "Bare NMBUs femårige master har hele bredden av plan-, juss- og geomatikkemner. UiS' femårige byplanleggingsmaster (uis_byplanlegging) har ingen emner i DBH-materialet og er derfor ikke koblet. NTNUs toårige master er faglig nærmest NMBUs masterdel, mens bachelorprogrammene ved UiS, UiT, Nord, UiA og Volda er samfunnsvitenskapelige og mangler juss- og prosjekteringsemner. UiS' byggingeniør (studieretning byplanlegging) er i hovedsak et konstruksjonsteknisk løp; bare noen få emner lar seg koble. Nord og Volda har svært få emner over ti kandidater i 2024–2025, så koblingene deres er tynne. Transport og mobilitet er ikke tatt med som egen emnetype, fordi NMBUs APL270 hadde for få kandidater i 2024 og 2025 til å kunne sammenlignes.",
+      "courseTypes": [
+        {
+          "id": "planteori",
+          "label": "Planteori og innføring i planlegging",
+          "kategori": "Planlegging",
+          "desc": "Planleggingens teorigrunnlag, fagtradisjon og rolle i samfunnet.",
+          "note": "Nord og UiS' byggingeniør har ingen emner over terskelen i planteori.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_byreg",
+              "emnekoder": [
+                "APL100-1",
+                "APL103-1",
+                "APL230-1"
+              ],
+              "merknad": "Introduksjon til profesjonsstudiet, fagets historie og fagtradisjon, og Planteori – til sammen 35 sp."
+            },
+            {
+              "entryId": "ntnu_fysisk_planlegging",
+              "emnekoder": [
+                "FP4350-1"
+              ]
+            },
+            {
+              "entryId": "uis_byplan_samfsikkerhet",
+              "emnekoder": [
+                "BYS115-1"
+              ],
+              "merknad": "Innføring i samfunnsplanlegging, bare 5 sp."
+            },
+            {
+              "entryId": "uit_samfunnsplanlegging",
+              "emnekoder": [
+                "SPL-1001-1"
+              ],
+              "merknad": "Plan, kultur og næring er UiTs innføringsemne i planlegging."
+            },
+            {
+              "entryId": "uia_samfunnsplanlegging",
+              "emnekoder": [
+                "SV-151-1",
+                "SV-200-2"
+              ]
+            },
+            {
+              "entryId": "hivolda_planlegging",
+              "emnekoder": [
+                "PLA102-1"
+              ]
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_byreg",
+              "emnekoder": [
+                "APL100-1",
+                "APL103-1",
+                "APL230-1"
+              ],
+              "merknad": "Introduksjon til profesjonsstudiet, fagets historie og fagtradisjon, og Planteori – til sammen 35 sp."
+            },
+            {
+              "entryId": "ntnu_fysisk_planlegging",
+              "emnekoder": [
+                "FP4350-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "uis_byplan_samfsikkerhet",
+              "emnekoder": [
+                "BYS115-1"
+              ],
+              "merknad": "Innføring i samfunnsplanlegging, bare 5 sp."
+            },
+            {
+              "entryId": "uit_samfunnsplanlegging",
+              "emnekoder": [
+                "SPL-1001-1"
+              ],
+              "merknad": "Plan, kultur og næring er UiTs innføringsemne i planlegging."
+            },
+            {
+              "entryId": "uia_samfunnsplanlegging",
+              "emnekoder": [
+                "SV-151-1",
+                "SV-200-2"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "hivolda_planlegging",
+              "emnekoder": [
+                "PLA102-1"
+              ],
+              "merknad": null
+            }
+          ]
+        },
+        {
+          "id": "arealplan",
+          "label": "Areal- og reguleringsplanlegging",
+          "kategori": "Planlegging",
+          "desc": "Utarbeiding av areal- og reguleringsplaner, planprosess og medvirkning.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_byreg",
+              "emnekoder": [
+                "APL108-1",
+                "APL200-1"
+              ],
+              "merknad": "Introduksjon til arealplanlegging og Lokal planlegging, til sammen 25 sp."
+            },
+            {
+              "entryId": "ntnu_fysisk_planlegging",
+              "emnekoder": [
+                "AAR4215-1"
+              ]
+            },
+            {
+              "entryId": "uis_byplan_samfsikkerhet",
+              "emnekoder": [
+                "BYG120-1",
+                "BYG285-1"
+              ]
+            },
+            {
+              "entryId": "uis_ing_bygg_byplan",
+              "emnekoder": [
+                "BYG120-1"
+              ],
+              "merknad": "Områdeplanlegging er det eneste arealplanemnet i byggingeniørløpet med minst ti kandidater (2024)."
+            },
+            {
+              "entryId": "uit_samfunnsplanlegging",
+              "emnekoder": [
+                "SPL-2009-1"
+              ],
+              "merknad": "Plan, medvirkning og prosess dekker planprosessen, men ikke plantegning og arealformål."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_byreg",
+              "emnekoder": [
+                "APL108-1",
+                "APL200-1"
+              ],
+              "merknad": "Introduksjon til arealplanlegging og Lokal planlegging, til sammen 25 sp."
+            },
+            {
+              "entryId": "ntnu_fysisk_planlegging",
+              "emnekoder": [
+                "AAR4215-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "uis_byplan_samfsikkerhet",
+              "emnekoder": [
+                "BYG120-1",
+                "BYG285-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "uis_ing_bygg_byplan",
+              "emnekoder": [
+                "BYG120-1"
+              ],
+              "merknad": "Områdeplanlegging er det eneste arealplanemnet i byggingeniørløpet med minst ti kandidater (2024)."
+            },
+            {
+              "entryId": "uit_samfunnsplanlegging",
+              "emnekoder": [
+                "SPL-2009-1"
+              ],
+              "merknad": "Plan, medvirkning og prosess dekker planprosessen, men ikke plantegning og arealformål."
+            }
+          ]
+        },
+        {
+          "id": "byplan-urbanisme",
+          "label": "Byutvikling, byrom og stedsforming",
+          "kategori": "Planlegging",
+          "desc": "Byteori, stedsanalyse og utforming av byrom, bebyggelse og byutviklingsprosjekter.",
+          "note": "UiT, Nord og Volda har ingen emner i fysisk byforming over terskelen.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_byreg",
+              "emnekoder": [
+                "LAA200-1",
+                "LAA350-1",
+                "LAA313-1"
+              ]
+            },
+            {
+              "entryId": "ntnu_fysisk_planlegging",
+              "emnekoder": [
+                "FP4100-1",
+                "AAR4845-1"
+              ],
+              "merknad": "Arkitektur og stedsforming dekker stedsanalyse, byformingshistorie og urban design; Landskapsanalyse svarer til den romlige analysedelen i NMBUs LAA200."
+            },
+            {
+              "entryId": "uis_byplan_samfsikkerhet",
+              "emnekoder": [
+                "BYG105-1",
+                "BYG115-1"
+              ]
+            },
+            {
+              "entryId": "uia_samfunnsplanlegging",
+              "emnekoder": [
+                "SV-213-1"
+              ],
+              "merknad": "Byutvikling og planlegging er samfunnsvitenskapelig, uten formgivingsdel."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_byreg",
+              "emnekoder": [
+                "LAA200-1",
+                "LAA350-1",
+                "LAA313-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "ntnu_fysisk_planlegging",
+              "emnekoder": [
+                "FP4100-1",
+                "AAR4845-1"
+              ],
+              "merknad": "Arkitektur og stedsforming dekker stedsanalyse, byformingshistorie og urban design; Landskapsanalyse svarer til den romlige analysedelen i NMBUs LAA200."
+            },
+            {
+              "entryId": "uis_byplan_samfsikkerhet",
+              "emnekoder": [
+                "BYG105-1",
+                "BYG115-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "uia_samfunnsplanlegging",
+              "emnekoder": [
+                "SV-213-1"
+              ],
+              "merknad": "Byutvikling og planlegging er samfunnsvitenskapelig, uten formgivingsdel."
+            }
+          ]
+        },
+        {
+          "id": "planjus",
+          "label": "Plan- og bygningsrett",
+          "kategori": "Juss",
+          "desc": "Plan- og bygningsloven, planvedtak, gjennomføringsvirkemidler og byggesaksbehandling.",
+          "note": "Ingen av bachelorprogrammene har et eget emne i plan- og bygningsrett.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_byreg",
+              "emnekoder": [
+                "JUS320-1",
+                "JUS321-1"
+              ],
+              "merknad": "Plan- og bygningsrett I og II, 5 sp hver."
+            },
+            {
+              "entryId": "ntnu_fysisk_planlegging",
+              "emnekoder": [
+                "AAR4815-1"
+              ],
+              "merknad": "Plan og byggeprosess dekker det juridiske og prosessuelle sporet, men er ikke et rent jusemne."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_byreg",
+              "emnekoder": [
+                "JUS320-1",
+                "JUS321-1"
+              ],
+              "merknad": "Plan- og bygningsrett I og II, 5 sp hver."
+            },
+            {
+              "entryId": "ntnu_fysisk_planlegging",
+              "emnekoder": [
+                "AAR4815-1"
+              ],
+              "merknad": "Plan og byggeprosess dekker det juridiske og prosessuelle sporet, men er ikke et rent jusemne."
+            }
+          ]
+        },
+        {
+          "id": "forvaltningsrett",
+          "label": "Forvaltningsrett og juridisk metode",
+          "kategori": "Juss",
+          "desc": "Juridisk metode, forvaltningsrett og offentlig saksbehandling i planmyndighetenes arbeid.",
+          "note": "NTNU, UiT og UiS har ingen juridiske emner over terskelen.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_byreg",
+              "emnekoder": [
+                "JUS100-1",
+                "JUS201-1"
+              ]
+            },
+            {
+              "entryId": "uia_samfunnsplanlegging",
+              "emnekoder": [
+                "JU-200-1"
+              ],
+              "merknad": "Forvaltningsrett, 10 sp; nådde ti kandidater i 2024, færre i 2025."
+            },
+            {
+              "entryId": "nord_geografi_samfplan",
+              "emnekoder": [
+                "JUR1001-1"
+              ]
+            },
+            {
+              "entryId": "hivolda_planlegging",
+              "emnekoder": [
+                "GOV121-1"
+              ],
+              "merknad": "Innføring i forvaltnings- og miljørett dekker både forvaltningsrett og miljørett."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_byreg",
+              "emnekoder": [
+                "JUS100-1",
+                "JUS201-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "uia_samfunnsplanlegging",
+              "emnekoder": [
+                "JU-200-1"
+              ],
+              "merknad": "Forvaltningsrett, 10 sp; nådde ti kandidater i 2024, færre i 2025."
+            },
+            {
+              "entryId": "nord_geografi_samfplan",
+              "emnekoder": [
+                "JUR1001-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "hivolda_planlegging",
+              "emnekoder": [
+                "GOV121-1"
+              ],
+              "merknad": "Innføring i forvaltnings- og miljørett dekker både forvaltningsrett og miljørett."
+            }
+          ]
+        },
+        {
+          "id": "miljoforvaltning",
+          "label": "Miljø- og naturforvaltning",
+          "kategori": "Natur/Økologi",
+          "desc": "Vern og forvaltning av natur, miljøstyring og miljøpolitikk som rammer for arealbruk.",
+          "note": "NTNU, Volda og UiS' byggingeniør har ingen tilsvarende emner over terskelen.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_byreg",
+              "emnekoder": [
+                "JUS220-1",
+                "NATF200-1",
+                "APL380-1"
+              ],
+              "merknad": "Miljøforvaltningsrett, Vern og forvaltning av norsk natur og Environmental Governance for Planning."
+            },
+            {
+              "entryId": "uis_byplan_samfsikkerhet",
+              "emnekoder": [
+                "BST210-1"
+              ],
+              "merknad": "Miljø- og energipolitikk, politikkfaglig vinklet."
+            },
+            {
+              "entryId": "uia_samfunnsplanlegging",
+              "emnekoder": [
+                "UT-204-2"
+              ]
+            },
+            {
+              "entryId": "nord_geografi_samfplan",
+              "emnekoder": [
+                "GEO1132-1"
+              ]
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_byreg",
+              "emnekoder": [
+                "JUS220-1",
+                "NATF200-1",
+                "APL380-1"
+              ],
+              "merknad": "Miljøforvaltningsrett, Vern og forvaltning av norsk natur og Environmental Governance for Planning."
+            },
+            {
+              "entryId": "uis_byplan_samfsikkerhet",
+              "emnekoder": [
+                "BST210-1"
+              ],
+              "merknad": "Miljø- og energipolitikk, politikkfaglig vinklet."
+            },
+            {
+              "entryId": "uia_samfunnsplanlegging",
+              "emnekoder": [
+                "UT-204-2"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "nord_geografi_samfplan",
+              "emnekoder": [
+                "GEO1132-1"
+              ],
+              "merknad": null
+            }
+          ]
+        },
+        {
+          "id": "baerekraft",
+          "label": "Bærekraft og klima i planlegging",
+          "kategori": "Planlegging",
+          "desc": "Klimatilpasning, miljøhensyn og bærekraftmål som premiss for plan- og arealbeslutninger.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_byreg",
+              "emnekoder": [
+                "APL240-1",
+                "APL241-1"
+              ],
+              "merknad": "Miljø og planlegging del 1 og 2, 5 sp hver; del 2 så vidt over terskelen i 2025."
+            },
+            {
+              "entryId": "uis_byplan_samfsikkerhet",
+              "emnekoder": [
+                "BYS310-1"
+              ]
+            },
+            {
+              "entryId": "uit_samfunnsplanlegging",
+              "emnekoder": [
+                "SPL-2011-1"
+              ],
+              "merknad": "Bærekraftige samfunn; nådde ti kandidater i 2024."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_byreg",
+              "emnekoder": [
+                "APL240-1",
+                "APL241-1"
+              ],
+              "merknad": "Miljø og planlegging del 1 og 2, 5 sp hver; del 2 så vidt over terskelen i 2025."
+            },
+            {
+              "entryId": "uis_byplan_samfsikkerhet",
+              "emnekoder": [
+                "BYS310-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "uit_samfunnsplanlegging",
+              "emnekoder": [
+                "SPL-2011-1"
+              ],
+              "merknad": "Bærekraftige samfunn; nådde ti kandidater i 2024."
+            }
+          ]
+        },
+        {
+          "id": "gis",
+          "label": "GIS og digitale planverktøy",
+          "kategori": "Geomatikk/Teknologi",
+          "desc": "Geografiske informasjonssystemer, romlig analyse og digitale tegne- og modelleringsverktøy.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_byreg",
+              "emnekoder": [
+                "LAD100-1",
+                "LAD102-1",
+                "LAD203-1"
+              ]
+            },
+            {
+              "entryId": "ntnu_fysisk_planlegging",
+              "emnekoder": [
+                "AAR4841-1",
+                "AAR4843-1"
+              ]
+            },
+            {
+              "entryId": "uit_samfunnsplanlegging",
+              "emnekoder": [
+                "SPL-2012-1"
+              ]
+            },
+            {
+              "entryId": "nord_geografi_samfplan",
+              "emnekoder": [
+                "GEO2006-1"
+              ],
+              "merknad": "Romlig analyse er GIS-basert; Nords rene GIS-emne GEO1009 har for få kandidater."
+            },
+            {
+              "entryId": "uis_byplan_samfsikkerhet",
+              "emnekoder": [
+                "BYG100-1"
+              ],
+              "merknad": "Dataassistert konstruksjon (DAK) er CAD-tegning, ikke GIS; svarer nærmest til NMBUs LAD100."
+            },
+            {
+              "entryId": "uis_ing_bygg_byplan",
+              "emnekoder": [
+                "BYG100-1"
+              ],
+              "merknad": "Samme DAK-emne som bachelorprogrammet i byplanlegging og samfunnssikkerhet."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_byreg",
+              "emnekoder": [
+                "LAD100-1",
+                "LAD102-1",
+                "LAD203-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "ntnu_fysisk_planlegging",
+              "emnekoder": [
+                "AAR4841-1",
+                "AAR4843-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "uit_samfunnsplanlegging",
+              "emnekoder": [
+                "SPL-2012-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "nord_geografi_samfplan",
+              "emnekoder": [
+                "GEO2006-1"
+              ],
+              "merknad": "Romlig analyse er GIS-basert; Nords rene GIS-emne GEO1009 har for få kandidater."
+            },
+            {
+              "entryId": "uis_byplan_samfsikkerhet",
+              "emnekoder": [
+                "BYG100-1"
+              ],
+              "merknad": "Dataassistert konstruksjon (DAK) er CAD-tegning, ikke GIS; svarer nærmest til NMBUs LAD100."
+            },
+            {
+              "entryId": "uis_ing_bygg_byplan",
+              "emnekoder": [
+                "BYG100-1"
+              ],
+              "merknad": "Samme DAK-emne som bachelorprogrammet i byplanlegging og samfunnssikkerhet."
+            }
+          ]
+        },
+        {
+          "id": "metode",
+          "label": "Samfunnsvitenskapelig metode og statistikk",
+          "kategori": "Metode",
+          "desc": "Forskningsdesign, datainnsamling, analyse og statistikk som grunnlag for plan- og oppgavearbeid.",
+          "note": "UiTs metodeemne (SVF-1050/1051) hadde for få kandidater i 2024–2025 til å tas med.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_byreg",
+              "emnekoder": [
+                "AOS240-1"
+              ],
+              "merknad": "Samfunnsvitenskapelig metode, bare 5 sp mot 7,5–10 sp hos de andre."
+            },
+            {
+              "entryId": "ntnu_fysisk_planlegging",
+              "emnekoder": [
+                "AAR4874-1"
+              ]
+            },
+            {
+              "entryId": "uia_samfunnsplanlegging",
+              "emnekoder": [
+                "ME-107-1"
+              ]
+            },
+            {
+              "entryId": "nord_geografi_samfplan",
+              "emnekoder": [
+                "MET1007-1"
+              ]
+            },
+            {
+              "entryId": "hivolda_planlegging",
+              "emnekoder": [
+                "PRO121-1"
+              ],
+              "merknad": "Nådde ti kandidater i 2024, færre i 2025."
+            },
+            {
+              "entryId": "uis_ing_bygg_byplan",
+              "emnekoder": [
+                "STA100-1"
+              ],
+              "merknad": "Sannsynlighetsregning og statistikk er ingeniørløpets metodeemne; mer statistikk og mindre samfunnsvitenskapelig design."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_byreg",
+              "emnekoder": [
+                "AOS240-1"
+              ],
+              "merknad": "Samfunnsvitenskapelig metode, bare 5 sp mot 7,5–10 sp hos de andre."
+            },
+            {
+              "entryId": "ntnu_fysisk_planlegging",
+              "emnekoder": [
+                "AAR4874-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "uia_samfunnsplanlegging",
+              "emnekoder": [
+                "ME-107-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "nord_geografi_samfplan",
+              "emnekoder": [
+                "MET1007-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "hivolda_planlegging",
+              "emnekoder": [
+                "PRO121-1"
+              ],
+              "merknad": "Nådde ti kandidater i 2024, færre i 2025."
+            },
+            {
+              "entryId": "uis_ing_bygg_byplan",
+              "emnekoder": [
+                "STA100-1"
+              ],
+              "merknad": "Sannsynlighetsregning og statistikk er ingeniørløpets metodeemne; mer statistikk og mindre samfunnsvitenskapelig design."
+            }
+          ]
+        },
+        {
+          "id": "regional",
+          "label": "Regional utvikling og byregioner",
+          "kategori": "Planlegging",
+          "desc": "Regionale utviklingstrekk, kommune- og regionplanlegging og samspillet mellom by og omland.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_byreg",
+              "emnekoder": [
+                "APL360-1",
+                "LAA360-1"
+              ],
+              "merknad": "Begge er valgbare emner på masternivå."
+            },
+            {
+              "entryId": "ntnu_fysisk_planlegging",
+              "emnekoder": [
+                "AAR4220-1"
+              ]
+            },
+            {
+              "entryId": "uis_byplan_samfsikkerhet",
+              "emnekoder": [
+                "BYG240-1"
+              ]
+            },
+            {
+              "entryId": "uia_samfunnsplanlegging",
+              "emnekoder": [
+                "SV-152-1"
+              ],
+              "merknad": "Økonomisk geografi og planlegging dekker regional næringsutvikling."
+            },
+            {
+              "entryId": "hivolda_planlegging",
+              "emnekoder": [
+                "GOV231-1",
+                "IPA213-2"
+              ],
+              "merknad": "Samme emne før og etter emnekodeskiftet i 2025; begge handler om regional utvikling i EU og Norge."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_byreg",
+              "emnekoder": [
+                "APL360-1",
+                "LAA360-1"
+              ],
+              "merknad": "Begge er valgbare emner på masternivå."
+            },
+            {
+              "entryId": "ntnu_fysisk_planlegging",
+              "emnekoder": [
+                "AAR4220-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "uis_byplan_samfsikkerhet",
+              "emnekoder": [
+                "BYG240-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "uia_samfunnsplanlegging",
+              "emnekoder": [
+                "SV-152-1"
+              ],
+              "merknad": "Økonomisk geografi og planlegging dekker regional næringsutvikling."
+            },
+            {
+              "entryId": "hivolda_planlegging",
+              "emnekoder": [
+                "GOV231-1",
+                "IPA213-2"
+              ],
+              "merknad": "Samme emne før og etter emnekodeskiftet i 2025; begge handler om regional utvikling i EU og Norge."
+            }
+          ]
+        },
+        {
+          "id": "samfunnsgeografi",
+          "label": "Samfunnsgeografi og urban sosiologi",
+          "kategori": "Fagspesifikt",
+          "desc": "Samfunnsfaglige perspektiver på sted, by og befolkning: kulturgeografi og sosiologi.",
+          "note": "NTNU og Volda har ingen emner i dette over terskelen.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_byreg",
+              "emnekoder": [
+                "APL280-1"
+              ],
+              "merknad": "Urban sosiologi, 5 sp."
+            },
+            {
+              "entryId": "uia_samfunnsplanlegging",
+              "emnekoder": [
+                "SV-153-1",
+                "SV-133-1"
+              ]
+            },
+            {
+              "entryId": "nord_geografi_samfplan",
+              "emnekoder": [
+                "GEO1123-1"
+              ]
+            },
+            {
+              "entryId": "uit_samfunnsplanlegging",
+              "emnekoder": [
+                "SOS-2001-1"
+              ],
+              "merknad": "Sosiologiske analysemåter; nådde ti kandidater i 2024, ingen i 2025."
+            },
+            {
+              "entryId": "uis_byplan_samfsikkerhet",
+              "emnekoder": [
+                "BSS360-1"
+              ],
+              "merknad": "Global sosiologi er bredere enn urban sosiologi."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_byreg",
+              "emnekoder": [
+                "APL280-1"
+              ],
+              "merknad": "Urban sosiologi, 5 sp."
+            },
+            {
+              "entryId": "uia_samfunnsplanlegging",
+              "emnekoder": [
+                "SV-153-1",
+                "SV-133-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "nord_geografi_samfplan",
+              "emnekoder": [
+                "GEO1123-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "uit_samfunnsplanlegging",
+              "emnekoder": [
+                "SOS-2001-1"
+              ],
+              "merknad": "Sosiologiske analysemåter; nådde ti kandidater i 2024, ingen i 2025."
+            },
+            {
+              "entryId": "uis_byplan_samfsikkerhet",
+              "emnekoder": [
+                "BSS360-1"
+              ],
+              "merknad": "Global sosiologi er bredere enn urban sosiologi."
+            }
+          ]
+        },
+        {
+          "id": "eiendom-okonomi",
+          "label": "Eiendom, prosjektutvikling og økonomi",
+          "kategori": "Fagspesifikt",
+          "desc": "Eiendomsrett, eiendomsmarked og utvikling og gjennomføring av utbyggingsprosjekter.",
+          "note": "UiT, Nord, UiA og Volda har ingen emner i eiendom eller prosjektutvikling.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_byreg",
+              "emnekoder": [
+                "JUS110-1",
+                "EIE310-1",
+                "APL350-1"
+              ],
+              "merknad": "Innføring i eiendomsjus, Eiendomsmarked og analyse og Prosjektutvikling og prosjektgjennomføring."
+            },
+            {
+              "entryId": "ntnu_fysisk_planlegging",
+              "emnekoder": [
+                "AAR4828-1"
+              ],
+              "merknad": "Eiendomsutvikling; nådde ti kandidater i 2024, færre i 2025."
+            },
+            {
+              "entryId": "uis_ing_bygg_byplan",
+              "emnekoder": [
+                "IND200-1"
+              ],
+              "merknad": "Økonomi og marked er et generelt ingeniørøkonomiemne, uten eiendomsfaglig innhold."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_byreg",
+              "emnekoder": [
+                "JUS110-1",
+                "EIE310-1",
+                "APL350-1"
+              ],
+              "merknad": "Innføring i eiendomsjus, Eiendomsmarked og analyse og Prosjektutvikling og prosjektgjennomføring."
+            },
+            {
+              "entryId": "ntnu_fysisk_planlegging",
+              "emnekoder": [
+                "AAR4828-1"
+              ],
+              "merknad": "Eiendomsutvikling; nådde ti kandidater i 2024, færre i 2025."
+            },
+            {
+              "entryId": "uis_ing_bygg_byplan",
+              "emnekoder": [
+                "IND200-1"
+              ],
+              "merknad": "Økonomi og marked er et generelt ingeniørøkonomiemne, uten eiendomsfaglig innhold."
+            }
+          ]
+        },
+        {
+          "id": "teknisk-infra",
+          "label": "Kommunalteknikk og teknisk infrastruktur",
+          "kategori": "Geomatikk/Teknologi",
+          "desc": "Vann, avløp, overvann og annen teknisk infrastruktur som premiss for utbygging.",
+          "note": "Bare NMBU og UiS' bachelor i byplanlegging og samfunnssikkerhet har slike emner over terskelen.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_byreg",
+              "emnekoder": [
+                "THT100-1",
+                "THT200-2"
+              ],
+              "merknad": "Kommunalteknikk (5 sp) og Bærekraftig overvannshåndtering (7,5 sp, nytt i 2025)."
+            },
+            {
+              "entryId": "uis_byplan_samfsikkerhet",
+              "emnekoder": [
+                "BYG125-1"
+              ],
+              "merknad": "Vann og avløp, 10 sp."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_byreg",
+              "emnekoder": [
+                "THT100-1",
+                "THT200-2"
+              ],
+              "merknad": "Kommunalteknikk (5 sp) og Bærekraftig overvannshåndtering (7,5 sp, nytt i 2025)."
+            },
+            {
+              "entryId": "uis_byplan_samfsikkerhet",
+              "emnekoder": [
+                "BYG125-1"
+              ],
+              "merknad": "Vann og avløp, 10 sp."
+            }
+          ]
+        },
+        {
+          "id": "oppgave",
+          "label": "Bachelor- og masteroppgave",
+          "kategori": "Oppgave",
+          "desc": "Avsluttende selvstendig arbeid med tilhørende forberedende emne.",
+          "note": "Nords bacheloroppgave (GEO2003) har for få kandidater. UiS' byggingeniør er utelatt: bacheloroppgaven i byplanlegging (BYGBBAC) har for få kandidater, og BYGKBAC er konstruksjonsteknikk og dermed et annet fag.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_byreg",
+              "emnekoder": [
+                "M30-BYREG-1",
+                "MAST301-1"
+              ]
+            },
+            {
+              "entryId": "ntnu_fysisk_planlegging",
+              "emnekoder": [
+                "FP4400-1"
+              ]
+            },
+            {
+              "entryId": "uis_byplan_samfsikkerhet",
+              "emnekoder": [
+                "BYSBAC-1"
+              ]
+            },
+            {
+              "entryId": "uit_samfunnsplanlegging",
+              "emnekoder": [
+                "SPL-2003-1"
+              ]
+            },
+            {
+              "entryId": "uia_samfunnsplanlegging",
+              "emnekoder": [
+                "SV-301-1"
+              ]
+            },
+            {
+              "entryId": "hivolda_planlegging",
+              "emnekoder": [
+                "IPA210A-1"
+              ],
+              "merknad": "Bacheloroppgave i planlegging og administrasjon, 15 sp."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_byreg",
+              "emnekoder": [
+                "M30-BYREG-1",
+                "MAST301-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "ntnu_fysisk_planlegging",
+              "emnekoder": [
+                "FP4400-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "uis_byplan_samfsikkerhet",
+              "emnekoder": [
+                "BYSBAC-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "uit_samfunnsplanlegging",
+              "emnekoder": [
+                "SPL-2003-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "uia_samfunnsplanlegging",
+              "emnekoder": [
+                "SV-301-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "hivolda_planlegging",
+              "emnekoder": [
+                "IPA210A-1"
+              ],
+              "merknad": "Bacheloroppgave i planlegging og administrasjon, 15 sp."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "eiendom",
+      "note": "Gruppa rommer to ganske ulike utdanningsfamilier. NMBUs femårige eiendomsmaster og HVL Bergens bachelor i landmåling og eiendomsdesign er land- og eiendomsadministrative løp med tyngde i tingsrett, matrikkel, jordskifte, landmåling og GIS. De fem bachelorene i eiendomsmegling (HVL Sogndal, Nord, INN, USN og BI) følger de nasjonale retningslinjene for eiendomsmeglerutdanningen og har tyngde i eiendomsjus knyttet til omsetning, oppgjør, bedriftsøkonomi og markedsføring. Sammenligningen er derfor sterkest innenfor juss, økonomi og oppgave, og svakest innenfor geomatikk og jordskifte, der bare NMBU og HVL Bergen har emner. Merk også at NMBU er et femårig masterløp: emner på 300-nivå måles mot bacheloremner hos konkurrentene, og nivåforskjellen bør leses inn i karaktersnittet. For BI rapporterer DBH svært høye kandidattall på flere emner fordi emnene deles med andre BI-bachelorer; tallene er derfor ikke rene programtall på samme måte som hos de øvrige.",
+      "courseTypes": [
+        {
+          "id": "juridisk-metode-forretningsjus",
+          "label": "Juridisk metode og forretningsjus",
+          "kategori": "Juss",
+          "desc": "Rettskildelære og juridisk metode sammen med de alminnelige privatrettslige emnene avtalerett, kjøpsrett, selskapsrett og pengekravsrett.",
+          "note": "Meglerutdanningene pakker juridisk metode inn i det første jusemnet sitt, mens NMBU har et eget metodeemne (JUS100) i tillegg til forretningsjusen.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_eiendom",
+              "emnekoder": [
+                "JUS100-1",
+                "JUS102-1"
+              ],
+              "merknad": "JUS100 er juridisk metode, JUS102 er forretningsjus I."
+            },
+            {
+              "entryId": "hvl_landmaling",
+              "emnekoder": [
+                "LEI100-1"
+              ],
+              "merknad": "LEI100 gir juridisk metode, forvaltningsrett, planrett og avtalerett samlet i ett innføringsemne."
+            },
+            {
+              "entryId": "hvl_eiendomsmegling",
+              "emnekoder": [
+                "EM6-1003-1"
+              ],
+              "merknad": "Jus for eiendomsmeglere 1 dekker forretningsjus og juridisk metode."
+            },
+            {
+              "entryId": "nord_eiendomsmegling",
+              "emnekoder": [
+                "RET1001-1"
+              ]
+            },
+            {
+              "entryId": "inn_eiendomsmegling",
+              "emnekoder": [
+                "3JUS200-1"
+              ],
+              "merknad": "Foretaksrett; INNs innledende jusemne rapporteres ikke med nok kandidater i 2024/2025."
+            },
+            {
+              "entryId": "usn_eiendomsmegling",
+              "emnekoder": [
+                "JUR1000-1",
+                "RET2000-1"
+              ],
+              "merknad": "To emnekoder for samme rettslærekurs i overgangen mellom kull."
+            },
+            {
+              "entryId": "bi_eiendomsmegling",
+              "emnekoder": [
+                "EMS34161"
+              ],
+              "merknad": "Jus og eiendomsmegling dekker forretningsjus og juridisk metode og overlapper BIs ordinære forretningsjusemne."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_eiendom",
+              "emnekoder": [
+                "JUS100-1",
+                "JUS102-1"
+              ],
+              "merknad": "JUS100 er juridisk metode, JUS102 er forretningsjus I."
+            },
+            {
+              "entryId": "hvl_landmaling",
+              "emnekoder": [
+                "LEI100-1"
+              ],
+              "merknad": "LEI100 gir juridisk metode, forvaltningsrett, planrett og avtalerett samlet i ett innføringsemne."
+            },
+            {
+              "entryId": "hvl_eiendomsmegling",
+              "emnekoder": [
+                "EM6-1003-1"
+              ],
+              "merknad": "Jus for eiendomsmeglere 1 dekker forretningsjus og juridisk metode."
+            },
+            {
+              "entryId": "nord_eiendomsmegling",
+              "emnekoder": [
+                "RET1001-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "inn_eiendomsmegling",
+              "emnekoder": [
+                "3JUS200-1"
+              ],
+              "merknad": "Foretaksrett; INNs innledende jusemne rapporteres ikke med nok kandidater i 2024/2025."
+            },
+            {
+              "entryId": "usn_eiendomsmegling",
+              "emnekoder": [
+                "JUR1000-1",
+                "RET2000-1"
+              ],
+              "merknad": "To emnekoder for samme rettslærekurs i overgangen mellom kull."
+            },
+            {
+              "entryId": "bi_eiendomsmegling",
+              "emnekoder": [
+                "EMS34161"
+              ],
+              "merknad": "Jus og eiendomsmegling dekker forretningsjus og juridisk metode og overlapper BIs ordinære forretningsjusemne."
+            }
+          ]
+        },
+        {
+          "id": "eiendomsrett-tingsrett",
+          "label": "Eiendomsrett og tingsrett",
+          "kategori": "Juss",
+          "desc": "Rettigheter i fast eiendom: eiendomsrett, sameie, servitutter, hevd, naborett, grenser og rettsvern.",
+          "note": "HVL Bergen har ikke et eget tingsrettsemne; stoffet ligger i innføringsemnet LEI100 og i LEI300, som er koblet til andre emnetyper.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_eiendom",
+              "emnekoder": [
+                "JUS110-1",
+                "JUS310-1"
+              ],
+              "merknad": "JUS110 er innføringen, JUS310 er hovedemnet om rettigheter i fast eiendom."
+            },
+            {
+              "entryId": "hvl_eiendomsmegling",
+              "emnekoder": [
+                "EM6-2000-1"
+              ],
+              "merknad": "Jus for eiendomsmeglere 2 dekker rettsforhold for fast eiendom, tinglysing, odel og konsesjon."
+            },
+            {
+              "entryId": "nord_eiendomsmegling",
+              "emnekoder": [
+                "RET2004-1"
+              ]
+            },
+            {
+              "entryId": "inn_eiendomsmegling",
+              "emnekoder": [
+                "3JUS210-1"
+              ],
+              "merknad": "Jus II dekker tingsrett, hevd og servitutter sammen med forvaltnings- og familierett."
+            },
+            {
+              "entryId": "usn_eiendomsmegling",
+              "emnekoder": [
+                "EML201B-1"
+              ]
+            },
+            {
+              "entryId": "bi_eiendomsmegling",
+              "emnekoder": [
+                "EMS35241"
+              ],
+              "merknad": "Eiendomsjus II dekker tingsrett, hevd, servitutter, eiendomsgrenser og matrikkel."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_eiendom",
+              "emnekoder": [
+                "JUS110-1",
+                "JUS310-1"
+              ],
+              "merknad": "JUS110 er innføringen, JUS310 er hovedemnet om rettigheter i fast eiendom."
+            },
+            {
+              "entryId": "hvl_eiendomsmegling",
+              "emnekoder": [
+                "EM6-2000-1"
+              ],
+              "merknad": "Jus for eiendomsmeglere 2 dekker rettsforhold for fast eiendom, tinglysing, odel og konsesjon."
+            },
+            {
+              "entryId": "nord_eiendomsmegling",
+              "emnekoder": [
+                "RET2004-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "inn_eiendomsmegling",
+              "emnekoder": [
+                "3JUS210-1"
+              ],
+              "merknad": "Jus II dekker tingsrett, hevd og servitutter sammen med forvaltnings- og familierett."
+            },
+            {
+              "entryId": "usn_eiendomsmegling",
+              "emnekoder": [
+                "EML201B-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "bi_eiendomsmegling",
+              "emnekoder": [
+                "EMS35241"
+              ],
+              "merknad": "Eiendomsjus II dekker tingsrett, hevd, servitutter, eiendomsgrenser og matrikkel."
+            }
+          ]
+        },
+        {
+          "id": "overforing-av-fast-eiendom",
+          "label": "Overføring av fast eiendom",
+          "kategori": "Juss",
+          "desc": "Avtaleinngåelse, budgivning, avhendingsloven, mangler og tinglysing ved kjøp og salg av fast eiendom.",
+          "note": "HVL Sogndal dekker salg av brukt bolig inne i EM6-2000, som allerede er koblet til eiendomsrett; HVL Bergen har ingen tilsvarende emne.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_eiendom",
+              "emnekoder": [
+                "JUS311-1"
+              ]
+            },
+            {
+              "entryId": "nord_eiendomsmegling",
+              "emnekoder": [
+                "RE217E-1"
+              ],
+              "merknad": "Jus for eiendomsmeglere I er bygd rundt avhendingslova, avtaleinngåelse og tinglysing."
+            },
+            {
+              "entryId": "inn_eiendomsmegling",
+              "emnekoder": [
+                "3JUS300-1"
+              ],
+              "merknad": "Jus III er avtalerett med vekt på avhending og bustadoppføring."
+            },
+            {
+              "entryId": "usn_eiendomsmegling",
+              "emnekoder": [
+                "EML101B-1"
+              ]
+            },
+            {
+              "entryId": "bi_eiendomsmegling",
+              "emnekoder": [
+                "EMS35211"
+              ],
+              "merknad": "Eiendomsjus I bygger på avtalerett og avhendingsloven."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_eiendom",
+              "emnekoder": [
+                "JUS311-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "nord_eiendomsmegling",
+              "emnekoder": [
+                "RE217E-1"
+              ],
+              "merknad": "Jus for eiendomsmeglere I er bygd rundt avhendingslova, avtaleinngåelse og tinglysing."
+            },
+            {
+              "entryId": "inn_eiendomsmegling",
+              "emnekoder": [
+                "3JUS300-1"
+              ],
+              "merknad": "Jus III er avtalerett med vekt på avhending og bustadoppføring."
+            },
+            {
+              "entryId": "usn_eiendomsmegling",
+              "emnekoder": [
+                "EML101B-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "bi_eiendomsmegling",
+              "emnekoder": [
+                "EMS35211"
+              ],
+              "merknad": "Eiendomsjus I bygger på avtalerett og avhendingsloven."
+            }
+          ]
+        },
+        {
+          "id": "arealplanlegging-plan-og-bygningsrett",
+          "label": "Arealplanlegging og plan- og bygningsrett",
+          "kategori": "Planlegging",
+          "desc": "Plansystemet etter plan- og bygningsloven, arealplaner, planprosess og byggesaksbehandling.",
+          "note": "Nord, INN, USN og BI har ikke eget planemne; hos Nord og BI ligger plan- og byggesaksstoffet inne i eiendomsutviklingsemnet, som er koblet til emnetypen eiendomsutvikling.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_eiendom",
+              "emnekoder": [
+                "JUS320-1",
+                "JUS321-1"
+              ],
+              "merknad": "Plan- og bygningsrett I (planlegging) og II (byggesak)."
+            },
+            {
+              "entryId": "hvl_landmaling",
+              "emnekoder": [
+                "BYG110-1"
+              ],
+              "merknad": "Vei- og arealplanlegging; erstattet av LEI210 Arealplanlegging i planen fra 2026, som ennå ikke har DBH-tall."
+            },
+            {
+              "entryId": "hvl_eiendomsmegling",
+              "emnekoder": [
+                "PL433-1"
+              ]
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_eiendom",
+              "emnekoder": [
+                "JUS320-1",
+                "JUS321-1"
+              ],
+              "merknad": "Plan- og bygningsrett I (planlegging) og II (byggesak)."
+            },
+            {
+              "entryId": "hvl_landmaling",
+              "emnekoder": [
+                "BYG110-1"
+              ],
+              "merknad": "Vei- og arealplanlegging; erstattet av LEI210 Arealplanlegging i planen fra 2026, som ennå ikke har DBH-tall."
+            },
+            {
+              "entryId": "hvl_eiendomsmegling",
+              "emnekoder": [
+                "PL433-1"
+              ],
+              "merknad": null
+            }
+          ]
+        },
+        {
+          "id": "eiendomsutvikling",
+          "label": "Eiendomsutvikling",
+          "kategori": "Fagspesifikt",
+          "desc": "Utvikling av tomt og eiendom fra idé til gjennomføring: mulighetsstudier, planskapte verdier, aktører og prosjektgjennomføring.",
+          "note": "HVL Bergen, HVL Sogndal, INN og USN har ikke et eget emne i eiendomsutvikling. NMBUs APL350 er vesentlig større (15 sp) enn konkurrentenes emner (7,5 sp).",
+          "koblinger": [
+            {
+              "entryId": "nmbu_eiendom",
+              "emnekoder": [
+                "APL350-1"
+              ]
+            },
+            {
+              "entryId": "nord_eiendomsmegling",
+              "emnekoder": [
+                "RET1007-1"
+              ],
+              "merknad": "Innføring i eiendomsutvikling med vekt på plan- og byggesaksbehandling og planskapte verdier."
+            },
+            {
+              "entryId": "bi_eiendomsmegling",
+              "emnekoder": [
+                "EMS36701"
+              ]
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_eiendom",
+              "emnekoder": [
+                "APL350-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "nord_eiendomsmegling",
+              "emnekoder": [
+                "RET1007-1"
+              ],
+              "merknad": "Innføring i eiendomsutvikling med vekt på plan- og byggesaksbehandling og planskapte verdier."
+            },
+            {
+              "entryId": "bi_eiendomsmegling",
+              "emnekoder": [
+                "EMS36701"
+              ],
+              "merknad": null
+            }
+          ]
+        },
+        {
+          "id": "eiendomsregistrering-matrikkel",
+          "label": "Eiendomsregistrering og matrikkel",
+          "kategori": "Fagspesifikt",
+          "desc": "Matrikkelloven, eiendomsdanning, oppmålingsforretning og føring av offentlige eiendomsregistre.",
+          "note": "Ingen av eiendomsmeglerutdanningene har et eget matrikkelemne; de dekker grunnbok og tinglysing inne i oppgjørsemnene sine.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_eiendom",
+              "emnekoder": [
+                "EIE200-1"
+              ]
+            },
+            {
+              "entryId": "hvl_landmaling",
+              "emnekoder": [
+                "LEI104-1"
+              ],
+              "merknad": "Praktisk gjennomføring av reelle oppmålingsforretninger etter matrikkellova."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_eiendom",
+              "emnekoder": [
+                "EIE200-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "hvl_landmaling",
+              "emnekoder": [
+                "LEI104-1"
+              ],
+              "merknad": "Praktisk gjennomføring av reelle oppmålingsforretninger etter matrikkellova."
+            }
+          ]
+        },
+        {
+          "id": "jordskifte",
+          "label": "Jordskifte og rettsfastsetting",
+          "kategori": "Fagspesifikt",
+          "desc": "Jordskiftelova, jordskifteløsninger, skjønn og saksbehandling i jordskifteretten.",
+          "note": "Bare NMBU og HVL Bergen har jordskifte. NMBU har vesentlig større omfang (35–40 sp fordelt på to emner) enn HVLs 15 sp, så karakterene er ikke direkte sammenlignbare.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_eiendom",
+              "emnekoder": [
+                "EIE302-2",
+                "EIE302-3",
+                "JUS331-1",
+                "JUS331-2"
+              ],
+              "merknad": "To emnekodeversjoner av både Jordskiftearbeid og Prosess og jordskifte i perioden."
+            },
+            {
+              "entryId": "hvl_landmaling",
+              "emnekoder": [
+                "LEI300-1"
+              ],
+              "merknad": "Eiendom, matrikkel og jordskifte; jordskiftedelen er én av flere deler av emnet."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_eiendom",
+              "emnekoder": [
+                "EIE302-2",
+                "EIE302-3",
+                "JUS331-1",
+                "JUS331-2"
+              ],
+              "merknad": "To emnekodeversjoner av både Jordskiftearbeid og Prosess og jordskifte i perioden."
+            },
+            {
+              "entryId": "hvl_landmaling",
+              "emnekoder": [
+                "LEI300-1"
+              ],
+              "merknad": "Eiendom, matrikkel og jordskifte; jordskiftedelen er én av flere deler av emnet."
+            }
+          ]
+        },
+        {
+          "id": "landmaling-og-geodesi",
+          "label": "Landmåling og geodesi",
+          "kategori": "Geomatikk/Teknologi",
+          "desc": "Måleteknikk, referansesystemer, utstyr og feillære ved innmåling og utstikking i felt.",
+          "note": "Bare NMBU og HVL Bergen har landmåling. HVL har klart størst omfang: NMBUs EIE105 på 10 sp mot to landmålingsemner på til sammen 20 sp i Bergen.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_eiendom",
+              "emnekoder": [
+                "EIE105-1"
+              ]
+            },
+            {
+              "entryId": "hvl_landmaling",
+              "emnekoder": [
+                "LEI105-1",
+                "LEI107-1"
+              ],
+              "merknad": "Eiendomslandmåling og ingeniørlandmåling."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_eiendom",
+              "emnekoder": [
+                "EIE105-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "hvl_landmaling",
+              "emnekoder": [
+                "LEI105-1",
+                "LEI107-1"
+              ],
+              "merknad": "Eiendomslandmåling og ingeniørlandmåling."
+            }
+          ]
+        },
+        {
+          "id": "gis-og-geomatikk",
+          "label": "GIS og geomatikk",
+          "kategori": "Geomatikk/Teknologi",
+          "desc": "Geografiske informasjonssystemer, kartografi, geodatakilder og romlig analyse.",
+          "note": "Bare NMBU og HVL Bergen har GIS-emner. HVL har vesentlig større omfang (30 sp) enn NMBU (10 sp), og HVLs emner ligger på et mer teknisk nivå.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_eiendom",
+              "emnekoder": [
+                "LAD102-1",
+                "LAD103-1"
+              ],
+              "merknad": "GIS - praktisk introduksjon og Kartografi og geodatakilder i planlegging."
+            },
+            {
+              "entryId": "hvl_landmaling",
+              "emnekoder": [
+                "LEI117-1",
+                "LEI111-1",
+                "BYG109-1"
+              ],
+              "merknad": "Innføring i geomatikk, geografisk informasjonsanalyse og GIS-analyse."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_eiendom",
+              "emnekoder": [
+                "LAD102-1",
+                "LAD103-1"
+              ],
+              "merknad": "GIS - praktisk introduksjon og Kartografi og geodatakilder i planlegging."
+            },
+            {
+              "entryId": "hvl_landmaling",
+              "emnekoder": [
+                "LEI117-1",
+                "LEI111-1",
+                "BYG109-1"
+              ],
+              "merknad": "Innføring i geomatikk, geografisk informasjonsanalyse og GIS-analyse."
+            }
+          ]
+        },
+        {
+          "id": "eiendomsverdsetting",
+          "label": "Verdsetting av fast eiendom",
+          "kategori": "Økonomi",
+          "desc": "Metoder for å verdsette fast eiendom: sammenligning, avkastning, kostnad og nytte-kostnadsanalyse.",
+          "note": "Eiendomsmeglerutdanningene har ikke eget takst- eller verdsettingsemne; verdivurdering inngår i praktisk eiendomsmegling og i finansemnene.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_eiendom",
+              "emnekoder": [
+                "EIE222-1"
+              ]
+            },
+            {
+              "entryId": "hvl_landmaling",
+              "emnekoder": [
+                "LEI113-1"
+              ],
+              "merknad": "Økonomi og ressursforvaltning har verdsetting av fast eiendom og nytte-kostnadsanalyse som hoveddel."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_eiendom",
+              "emnekoder": [
+                "EIE222-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "hvl_landmaling",
+              "emnekoder": [
+                "LEI113-1"
+              ],
+              "merknad": "Økonomi og ressursforvaltning har verdsetting av fast eiendom og nytte-kostnadsanalyse som hoveddel."
+            }
+          ]
+        },
+        {
+          "id": "eiendomsmarked-og-finans",
+          "label": "Eiendomsmarked og eiendomsfinans",
+          "kategori": "Økonomi",
+          "desc": "Hvordan eiendomsmarkedet fungerer, markedsanalyse og finansiering av bolig- og næringseiendom.",
+          "note": "Nord, INN og BI dekker eiendomsfinans inne i generelle finansemner som ikke er eiendomsspesifikke, og er derfor holdt utenfor. HVL Bergen har ikke et markedsemne.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_eiendom",
+              "emnekoder": [
+                "EIE310-1"
+              ]
+            },
+            {
+              "entryId": "hvl_eiendomsmegling",
+              "emnekoder": [
+                "EM6-3000-1"
+              ],
+              "merknad": "Anvendt finans for eiendomsmarkedet."
+            },
+            {
+              "entryId": "usn_eiendomsmegling",
+              "emnekoder": [
+                "EML304B-1"
+              ],
+              "merknad": "Eiendomsfinansiering; mer finansrettet enn NMBUs markedsanalyseemne."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_eiendom",
+              "emnekoder": [
+                "EIE310-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "hvl_eiendomsmegling",
+              "emnekoder": [
+                "EM6-3000-1"
+              ],
+              "merknad": "Anvendt finans for eiendomsmarkedet."
+            },
+            {
+              "entryId": "usn_eiendomsmegling",
+              "emnekoder": [
+                "EML304B-1"
+              ],
+              "merknad": "Eiendomsfinansiering; mer finansrettet enn NMBUs markedsanalyseemne."
+            }
+          ]
+        },
+        {
+          "id": "bedriftsokonomi-og-regnskap",
+          "label": "Bedriftsøkonomi og regnskap",
+          "kategori": "Økonomi",
+          "desc": "Grunnleggende bedriftsøkonomiske sammenhenger, regnskapsføring og regnskapsanalyse.",
+          "note": "NMBU har bare ett innføringsemne på 5 sp, mens meglerutdanningene har 15–22,5 sp fordelt på bedriftsøkonomi, regnskap og regnskapsanalyse. Omfanget er derfor svært ulikt. HVL Bergen dekker bedriftsøkonomi i LEI113, som er koblet til verdsetting.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_eiendom",
+              "emnekoder": [
+                "BUS100-1"
+              ]
+            },
+            {
+              "entryId": "hvl_eiendomsmegling",
+              "emnekoder": [
+                "BØA113-1",
+                "BØA117-1"
+              ]
+            },
+            {
+              "entryId": "nord_eiendomsmegling",
+              "emnekoder": [
+                "ECO1002-1",
+                "FIN1001-1"
+              ]
+            },
+            {
+              "entryId": "inn_eiendomsmegling",
+              "emnekoder": [
+                "3BED100-1",
+                "3REV100-1"
+              ]
+            },
+            {
+              "entryId": "usn_eiendomsmegling",
+              "emnekoder": [
+                "BØK1000-1",
+                "BED1000-1",
+                "REG1000-1"
+              ],
+              "merknad": "BØK1000 og BED1000 er to kodeversjoner av samme bedriftsøkonomiemne."
+            },
+            {
+              "entryId": "bi_eiendomsmegling",
+              "emnekoder": [
+                "BØK34301"
+              ],
+              "merknad": "Innføring i bedriftsøkonomi og finans."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_eiendom",
+              "emnekoder": [
+                "BUS100-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "hvl_eiendomsmegling",
+              "emnekoder": [
+                "BØA113-1",
+                "BØA117-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "nord_eiendomsmegling",
+              "emnekoder": [
+                "ECO1002-1",
+                "FIN1001-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "inn_eiendomsmegling",
+              "emnekoder": [
+                "3BED100-1",
+                "3REV100-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "usn_eiendomsmegling",
+              "emnekoder": [
+                "BØK1000-1",
+                "BED1000-1",
+                "REG1000-1"
+              ],
+              "merknad": "BØK1000 og BED1000 er to kodeversjoner av samme bedriftsøkonomiemne."
+            },
+            {
+              "entryId": "bi_eiendomsmegling",
+              "emnekoder": [
+                "BØK34301"
+              ],
+              "merknad": "Innføring i bedriftsøkonomi og finans."
+            }
+          ]
+        },
+        {
+          "id": "samfunnsvitenskapelig-metode",
+          "label": "Samfunnsvitenskapelig metode",
+          "kategori": "Metode",
+          "desc": "Forskningsdesign, datainnsamling og kvalitative og kvantitative analysemetoder som grunnlag for oppgaveskriving.",
+          "note": "HVL Bergen har ikke et eget metodeemne, og BIs metodeemner er valgfrie for eiendomsmeglerstudentene og er derfor ikke koblet.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_eiendom",
+              "emnekoder": [
+                "AOS240-1",
+                "AOS340-1"
+              ],
+              "merknad": "Samfunnsvitenskapelig metode og Kvalitativ metode."
+            },
+            {
+              "entryId": "hvl_eiendomsmegling",
+              "emnekoder": [
+                "ME6-1002-1"
+              ]
+            },
+            {
+              "entryId": "nord_eiendomsmegling",
+              "emnekoder": [
+                "MET1001-1"
+              ]
+            },
+            {
+              "entryId": "inn_eiendomsmegling",
+              "emnekoder": [
+                "3MET200-1",
+                "3MET100-1"
+              ]
+            },
+            {
+              "entryId": "usn_eiendomsmegling",
+              "emnekoder": [
+                "MET1020-1",
+                "SAM2000-1"
+              ],
+              "merknad": "To kodeversjoner av samme metodeemne."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_eiendom",
+              "emnekoder": [
+                "AOS240-1",
+                "AOS340-1"
+              ],
+              "merknad": "Samfunnsvitenskapelig metode og Kvalitativ metode."
+            },
+            {
+              "entryId": "hvl_eiendomsmegling",
+              "emnekoder": [
+                "ME6-1002-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "nord_eiendomsmegling",
+              "emnekoder": [
+                "MET1001-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "inn_eiendomsmegling",
+              "emnekoder": [
+                "3MET200-1",
+                "3MET100-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "usn_eiendomsmegling",
+              "emnekoder": [
+                "MET1020-1",
+                "SAM2000-1"
+              ],
+              "merknad": "To kodeversjoner av samme metodeemne."
+            }
+          ]
+        },
+        {
+          "id": "bachelor-og-masteroppgave",
+          "label": "Bachelor- og masteroppgave",
+          "kategori": "Oppgave",
+          "desc": "Det selvstendige avsluttende arbeidet i graden.",
+          "note": "NMBUs masteroppgave er 30 sp på masternivå og er ikke direkte sammenlignbar med bacheloroppgavene på 15–20 sp. Nord har ingen bacheloroppgave med rapporterte karakterer i 2024/2025, og BIs bacheloroppgave er et valgfritt emne.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_eiendom",
+              "emnekoder": [
+                "M30-EIE-1"
+              ]
+            },
+            {
+              "entryId": "hvl_landmaling",
+              "emnekoder": [
+                "LEI350-1"
+              ]
+            },
+            {
+              "entryId": "hvl_eiendomsmegling",
+              "emnekoder": [
+                "BO6-2011-1"
+              ]
+            },
+            {
+              "entryId": "inn_eiendomsmegling",
+              "emnekoder": [
+                "3EDMBA300-1"
+              ]
+            },
+            {
+              "entryId": "usn_eiendomsmegling",
+              "emnekoder": [
+                "BAC3040-1"
+              ]
+            },
+            {
+              "entryId": "bi_eiendomsmegling",
+              "emnekoder": [
+                "ELE37881"
+              ],
+              "merknad": "Valgfritt emne ved BI."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_eiendom",
+              "emnekoder": [
+                "M30-EIE-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "hvl_landmaling",
+              "emnekoder": [
+                "LEI350-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "hvl_eiendomsmegling",
+              "emnekoder": [
+                "BO6-2011-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "inn_eiendomsmegling",
+              "emnekoder": [
+                "3EDMBA300-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "usn_eiendomsmegling",
+              "emnekoder": [
+                "BAC3040-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "bi_eiendomsmegling",
+              "emnekoder": [
+                "ELE37881"
+              ],
+              "merknad": "Valgfritt emne ved BI."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "eiendomsutvikling",
+      "note": "NMBU og NTNU har begge et toårig masterløp i eiendomsutvikling, og de er derfor godt sammenlignbare på nivå og lengde. Profilen er likevel ulik: NMBU ligger tett på eiendomsfag, juss og by- og prosjektutvikling, mens NTNU ligger tett på bygg, arkitektur og forvaltning av bygninger (facility management). NMBU bruker større emner (10–20 sp), NTNU nesten bare 7,5 sp-emner, så et NMBU-emne svarer ofte til deler av flere NTNU-emner og omvendt. NTNUs emne AAR4235 Eiendomsøkonomi og TIØ4215 Kontraktsrett og kontraktsforhandlinger dekker hver for seg tema som NMBU har delt på flere emner; de er derfor brukt i mer enn én emnetype, og det er merket av i merknadene.",
+      "courseTypes": [
+        {
+          "id": "eiendomsutvikling-og-prosjektgjennomforing",
+          "label": "Eiendomsutvikling og prosjektgjennomføring",
+          "kategori": "Fagspesifikt",
+          "desc": "Utviklingsprosessen fra tomteanalyse og mulighetsstudie til konsept, aktørbilde og gjennomføring av utviklingsprosjektet.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_eiendomsutvikling",
+              "emnekoder": [
+                "APL350-1"
+              ],
+              "merknad": "15 sp mot NTNUs 7,5 sp."
+            },
+            {
+              "entryId": "ntnu_eiendomsutvikling",
+              "emnekoder": [
+                "AAR4828-1"
+              ],
+              "merknad": "Tomteanalyser, prosessanalyser, markedsanalyser og konseptutvikling."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_eiendomsutvikling",
+              "emnekoder": [
+                "APL350-1"
+              ],
+              "merknad": "15 sp mot NTNUs 7,5 sp."
+            },
+            {
+              "entryId": "ntnu_eiendomsutvikling",
+              "emnekoder": [
+                "AAR4828-1"
+              ],
+              "merknad": "Tomteanalyser, prosessanalyser, markedsanalyser og konseptutvikling."
+            }
+          ]
+        },
+        {
+          "id": "eiendomsokonomi-marked-og-verdsetting",
+          "label": "Eiendomsøkonomi, marked og verdsetting",
+          "kategori": "Økonomi",
+          "desc": "Eiendomsmarkedets virkemåte, markedsanalyse, kalkyle og metoder for verdsetting av eiendom og eiendomsprosjekter.",
+          "note": "NMBU deler stoffet i to emner på til sammen 20 sp; NTNU dekker det samme i ett emne på 7,5 sp, som også inneholder grunnleggende regnskap.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_eiendomsutvikling",
+              "emnekoder": [
+                "EIE310-1",
+                "EIE311-1"
+              ],
+              "merknad": "Eiendomsmarked og analyse og Eiendomsutvikling, kalkyle og verdsetting."
+            },
+            {
+              "entryId": "ntnu_eiendomsutvikling",
+              "emnekoder": [
+                "AAR4235-1"
+              ]
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_eiendomsutvikling",
+              "emnekoder": [
+                "EIE310-1",
+                "EIE311-1"
+              ],
+              "merknad": "Eiendomsmarked og analyse og Eiendomsutvikling, kalkyle og verdsetting."
+            },
+            {
+              "entryId": "ntnu_eiendomsutvikling",
+              "emnekoder": [
+                "AAR4235-1"
+              ],
+              "merknad": null
+            }
+          ]
+        },
+        {
+          "id": "plan-og-bygningsrett",
+          "label": "Plan- og bygningsrett og byggeprosess",
+          "kategori": "Juss",
+          "desc": "Plan- og bygningsloven i praksis: planprosess, reguleringsplan, rammesøknad og byggesaksbehandling.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_eiendomsutvikling",
+              "emnekoder": [
+                "JUS320-1",
+                "JUS321-1"
+              ],
+              "merknad": "Plan- og bygningsrett I (planlegging og gjennomføringsvirkemidler) og II (byggesak)."
+            },
+            {
+              "entryId": "ntnu_eiendomsutvikling",
+              "emnekoder": [
+                "AAR4815-1"
+              ],
+              "merknad": "Plan og byggeprosess dekker både planprosess, byggesaksbehandling og gjennomføringsstrategier."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_eiendomsutvikling",
+              "emnekoder": [
+                "JUS320-1",
+                "JUS321-1"
+              ],
+              "merknad": "Plan- og bygningsrett I (planlegging og gjennomføringsvirkemidler) og II (byggesak)."
+            },
+            {
+              "entryId": "ntnu_eiendomsutvikling",
+              "emnekoder": [
+                "AAR4815-1"
+              ],
+              "merknad": "Plan og byggeprosess dekker både planprosess, byggesaksbehandling og gjennomføringsstrategier."
+            }
+          ]
+        },
+        {
+          "id": "byutvikling-arkitektur-og-plan",
+          "label": "Byutvikling, arkitektur og planprosjekt",
+          "kategori": "Planlegging",
+          "desc": "Prosjektbasert arbeid med stedsanalyse, arkitektonisk utforming, uterom og utarbeiding av plan for et byområde.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_eiendomsutvikling",
+              "emnekoder": [
+                "LAA350-1"
+              ],
+              "merknad": "20 sp prosjektemne i byutvikling; svarer til begge NTNU-emnene til sammen."
+            },
+            {
+              "entryId": "ntnu_eiendomsutvikling",
+              "emnekoder": [
+                "FP4100-1",
+                "AAR4215-1"
+              ],
+              "merknad": "Arkitektur og stedsforming og Reguleringsplanlegging; AAR4215 har bare rapporterte karakterer i 2025."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_eiendomsutvikling",
+              "emnekoder": [
+                "LAA350-1"
+              ],
+              "merknad": "20 sp prosjektemne i byutvikling; svarer til begge NTNU-emnene til sammen."
+            },
+            {
+              "entryId": "ntnu_eiendomsutvikling",
+              "emnekoder": [
+                "FP4100-1",
+                "AAR4215-1"
+              ],
+              "merknad": "Arkitektur og stedsforming og Reguleringsplanlegging; AAR4215 har bare rapporterte karakterer i 2025."
+            }
+          ]
+        },
+        {
+          "id": "kontrakts-og-avtalerett",
+          "label": "Kontrakts- og avtalerett",
+          "kategori": "Juss",
+          "desc": "Avtale- og kontraktsrett knyttet til overdragelse av fast eiendom og til entreprise- og tilvirkningskontrakter.",
+          "note": "NMBUs emne er spisset mot overføring av fast eiendom, mens NTNUs er allmenn kontraktsrett med entrepriserett. Samme NTNU-emne er også koblet til emnetypen forhandlinger.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_eiendomsutvikling",
+              "emnekoder": [
+                "JUS311-1"
+              ]
+            },
+            {
+              "entryId": "ntnu_eiendomsutvikling",
+              "emnekoder": [
+                "TIØ4215-1"
+              ]
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_eiendomsutvikling",
+              "emnekoder": [
+                "JUS311-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "ntnu_eiendomsutvikling",
+              "emnekoder": [
+                "TIØ4215-1"
+              ],
+              "merknad": null
+            }
+          ]
+        },
+        {
+          "id": "forhandlinger-og-konflikthandtering",
+          "label": "Forhandlinger og konflikthåndtering",
+          "kategori": "Fagspesifikt",
+          "desc": "Forhandlingsteori, forberedelse og gjennomføring av forhandlinger og håndtering av konflikter mellom parter i eiendomssaker.",
+          "note": "NTNU har ikke et eget forhandlingsemne; forhandlingsdelen ligger inne i TIØ4215 Kontraktsrett og kontraktsforhandlinger, som også er koblet til kontrakts- og avtalerett. Karaktertallene for TIØ4215 gjelder derfor hele emnet, ikke bare forhandlingsdelen.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_eiendomsutvikling",
+              "emnekoder": [
+                "EIE306-2"
+              ]
+            },
+            {
+              "entryId": "ntnu_eiendomsutvikling",
+              "emnekoder": [
+                "TIØ4215-1"
+              ]
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_eiendomsutvikling",
+              "emnekoder": [
+                "EIE306-2"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "ntnu_eiendomsutvikling",
+              "emnekoder": [
+                "TIØ4215-1"
+              ],
+              "merknad": null
+            }
+          ]
+        },
+        {
+          "id": "vitenskapelig-metode",
+          "label": "Vitenskapelig metode og oppgaveforberedelse",
+          "kategori": "Metode",
+          "desc": "Vitenskapsteori, forskningsdesign og kvalitative og kvantitative metoder som forberedelse til masteroppgaven.",
+          "note": "NMBUs MAST303 vurderes bestått/ikke bestått og har derfor ikke karaktersnitt, mens NTNUs AAR4874 gis bokstavkarakter. Emnetypen kan sammenlignes på omfang og gjennomstrømming, ikke på snitt.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_eiendomsutvikling",
+              "emnekoder": [
+                "MAST303-1"
+              ]
+            },
+            {
+              "entryId": "ntnu_eiendomsutvikling",
+              "emnekoder": [
+                "AAR4874-1"
+              ]
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_eiendomsutvikling",
+              "emnekoder": [
+                "MAST303-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "ntnu_eiendomsutvikling",
+              "emnekoder": [
+                "AAR4874-1"
+              ],
+              "merknad": null
+            }
+          ]
+        },
+        {
+          "id": "masteroppgave",
+          "label": "Masteroppgave",
+          "kategori": "Oppgave",
+          "desc": "Det selvstendige avsluttende masterarbeidet på 30 studiepoeng i fjerde semester.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_eiendomsutvikling",
+              "emnekoder": [
+                "M30-EUTV-1"
+              ]
+            },
+            {
+              "entryId": "ntnu_eiendomsutvikling",
+              "emnekoder": [
+                "AAR4992-1"
+              ]
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_eiendomsutvikling",
+              "emnekoder": [
+                "M30-EUTV-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "ntnu_eiendomsutvikling",
+              "emnekoder": [
+                "AAR4992-1"
+              ],
+              "merknad": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "folkehelse",
+      "note": "De tre programmene har en felles kjerne i folkehelsevitenskap, epidemiologi, forskningsmetode og masteroppgave, men bygger den ulikt opp: NMBU har få og store emner (10-15 sp), NTNU har 7,5 sp-emner, og UiOs erfaringsbaserte program er delt i mange 5 sp-moduler. Flere av UiO-emnene er derfor bare en delmengde av det tilsvarende NMBU-emnet. Helseokonomi (NTNU FH3008, UiO HECON4100/HEVAL4200), ikke-smittsomme sykdommer (UiO FHE5200) og lokalt miljoretta helsevern (NMBU FHV314/APL240) er ikke koblet, fordi bare ett eller to av programmene har emner i disse temaene.",
+      "courseTypes": [
+        {
+          "id": "folkehelsevitenskap-innforing",
+          "label": "Innføring i folkehelsevitenskap",
+          "kategori": "Helse",
+          "desc": "Grunnbegreper i folkehelsevitenskap: helsedeterminanter, forebygging, helsefremming og folkehelsens organisering.",
+          "note": "NTNU byttet fra det gamle 15 sp-emnet FH3000 til 7,5 sp-emnet FH3012 i 2025, og begge kodene er tatt med.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_folkehelse",
+              "emnekoder": [
+                "FHV330-1"
+              ],
+              "merknad": "15 sp, programmets hovedemne i folkehelsevitenskap"
+            },
+            {
+              "entryId": "ntnu_folkehelse",
+              "emnekoder": [
+                "FH3012-1",
+                "FH3000-1"
+              ],
+              "merknad": "FH3000 (15 sp) er erstattet av FH3012 (7,5 sp)"
+            },
+            {
+              "entryId": "uio_folkehelsearbeid",
+              "emnekoder": [
+                "FHE4000-1"
+              ],
+              "merknad": "10 sp, kombinerer innføring i folkehelse, epidemiologi og bærekraft"
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_folkehelse",
+              "emnekoder": [
+                "FHV330-1"
+              ],
+              "merknad": "15 sp, programmets hovedemne i folkehelsevitenskap"
+            },
+            {
+              "entryId": "ntnu_folkehelse",
+              "emnekoder": [
+                "FH3012-1",
+                "FH3000-1"
+              ],
+              "merknad": "FH3000 (15 sp) er erstattet av FH3012 (7,5 sp)"
+            },
+            {
+              "entryId": "uio_folkehelsearbeid",
+              "emnekoder": [
+                "FHE4000-1"
+              ],
+              "merknad": "10 sp, kombinerer innføring i folkehelse, epidemiologi og bærekraft"
+            }
+          ]
+        },
+        {
+          "id": "epidemiologi",
+          "label": "Epidemiologi",
+          "kategori": "Metode",
+          "desc": "Epidemiologiske grunnbegreper, studiedesign, mål på sykdomsforekomst og årsakstolkning i befolkningsstudier.",
+          "note": "UiO deler epidemiologien i flere 5 sp-moduler (i tillegg til INTHE4021 finnes blant annet FHE4100 om klinisk epidemiologi og FHE5100 om registerstudier); NMBUs emne kombinerer epidemiologi med geografiske informasjonssystemer.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_folkehelse",
+              "emnekoder": [
+                "FHV320-1"
+              ],
+              "merknad": "15 sp, inkluderer GIS og statistikkprogramvare"
+            },
+            {
+              "entryId": "ntnu_folkehelse",
+              "emnekoder": [
+                "MH3002-1"
+              ]
+            },
+            {
+              "entryId": "uio_folkehelsearbeid",
+              "emnekoder": [
+                "INTHE4021-1"
+              ],
+              "merknad": "5 sp innføringsmodul"
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_folkehelse",
+              "emnekoder": [
+                "FHV320-1"
+              ],
+              "merknad": "15 sp, inkluderer GIS og statistikkprogramvare"
+            },
+            {
+              "entryId": "ntnu_folkehelse",
+              "emnekoder": [
+                "MH3002-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "uio_folkehelsearbeid",
+              "emnekoder": [
+                "INTHE4021-1"
+              ],
+              "merknad": "5 sp innføringsmodul"
+            }
+          ]
+        },
+        {
+          "id": "forskningsmetode",
+          "label": "Vitenskapsteori og forskningsmetode",
+          "kategori": "Metode",
+          "desc": "Vitenskapsteori, forskningsdesign og kvalitative og kvantitative metoder i helsefaglig forskning.",
+          "note": "NMBU samler vitenskapsteori og begge metodetradisjonene i ett 15 sp-emne, mens NTNU og UiO deler dem i egne emner. Rene statistikkemner (NTNU MH3003/MH3024, UiO FHE4110/FHE4120/HELSEF4430) er ikke koblet, fordi NMBU ikke har et tilsvarende frittstående statistikkemne.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_folkehelse",
+              "emnekoder": [
+                "FHV315-1"
+              ]
+            },
+            {
+              "entryId": "ntnu_folkehelse",
+              "emnekoder": [
+                "MH3012-1",
+                "MH3022-1"
+              ],
+              "merknad": "kvalitativ metode + statistiske og epidemiologiske metoder"
+            },
+            {
+              "entryId": "uio_folkehelsearbeid",
+              "emnekoder": [
+                "INTHE4020-1",
+                "HELSEF4410-1"
+              ],
+              "merknad": "innføring i kvantitativ og kvalitativ metode, 5 sp hver"
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_folkehelse",
+              "emnekoder": [
+                "FHV315-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "ntnu_folkehelse",
+              "emnekoder": [
+                "MH3012-1",
+                "MH3022-1"
+              ],
+              "merknad": "kvalitativ metode + statistiske og epidemiologiske metoder"
+            },
+            {
+              "entryId": "uio_folkehelsearbeid",
+              "emnekoder": [
+                "INTHE4020-1",
+                "HELSEF4410-1"
+              ],
+              "merknad": "innføring i kvantitativ og kvalitativ metode, 5 sp hver"
+            }
+          ]
+        },
+        {
+          "id": "helsefremmende-arbeid",
+          "label": "Helsefremmende og systematisk folkehelsearbeid",
+          "kategori": "Helse",
+          "desc": "Planlegging, gjennomføring og evaluering av helsefremmende tiltak og folkehelsearbeid, med vekt på medvirkning og implementering.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_folkehelse",
+              "emnekoder": [
+                "FHV310-2"
+              ],
+              "merknad": "deltakerorienterte metoder i folkehelsearbeid"
+            },
+            {
+              "entryId": "ntnu_folkehelse",
+              "emnekoder": [
+                "FH3010-1"
+              ]
+            },
+            {
+              "entryId": "uio_folkehelsearbeid",
+              "emnekoder": [
+                "FHE4200-1",
+                "FHE5010-1"
+              ],
+              "merknad": "helsepedagogikk og helsekommunikasjon + komplekse intervensjoner og implementering"
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_folkehelse",
+              "emnekoder": [
+                "FHV310-2"
+              ],
+              "merknad": "deltakerorienterte metoder i folkehelsearbeid"
+            },
+            {
+              "entryId": "ntnu_folkehelse",
+              "emnekoder": [
+                "FH3010-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "uio_folkehelsearbeid",
+              "emnekoder": [
+                "FHE4200-1",
+                "FHE5010-1"
+              ],
+              "merknad": "helsepedagogikk og helsekommunikasjon + komplekse intervensjoner og implementering"
+            }
+          ]
+        },
+        {
+          "id": "sosiale-determinanter",
+          "label": "Sosiale og psykososiale determinanter for helse",
+          "kategori": "Helse",
+          "desc": "Hvordan sosiale, psykososiale og strukturelle forhold påvirker helse, og hvordan sosial ulikhet i helse oppstår.",
+          "note": "NTNU har ikke et eget emne om sosiale determinanter; FH3001 Arbeid og helse dekker bare arbeidslivsdelen og er derfor ikke koblet.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_folkehelse",
+              "emnekoder": [
+                "FHV313-1"
+              ],
+              "merknad": "psykososiale faktorer og helse, 10 sp"
+            },
+            {
+              "entryId": "uio_folkehelsearbeid",
+              "emnekoder": [
+                "FHE5210-1"
+              ],
+              "merknad": "sosial ulikhet i helse, 5 sp"
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_folkehelse",
+              "emnekoder": [
+                "FHV313-1"
+              ],
+              "merknad": "psykososiale faktorer og helse, 10 sp"
+            },
+            {
+              "entryId": "uio_folkehelsearbeid",
+              "emnekoder": [
+                "FHE5210-1"
+              ],
+              "merknad": "sosial ulikhet i helse, 5 sp"
+            }
+          ]
+        },
+        {
+          "id": "prosjektplan",
+          "label": "Prosjektplan og forskningsetikk",
+          "kategori": "Oppgave",
+          "desc": "Utarbeiding av prosjektplan for masteroppgaven, med forskningsetikk og datahåndtering.",
+          "note": "NTNU har ikke et eget prosjektplanemne; prosjektplanen inngår i masteroppgaven FH3901.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_folkehelse",
+              "emnekoder": [
+                "FHV353-1"
+              ]
+            },
+            {
+              "entryId": "uio_folkehelsearbeid",
+              "emnekoder": [
+                "FHE5120-1",
+                "HELSEF4510-1"
+              ],
+              "merknad": "prosjektplanlegging av epidemiologiske studier + forskningsetikk"
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_folkehelse",
+              "emnekoder": [
+                "FHV353-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "uio_folkehelsearbeid",
+              "emnekoder": [
+                "FHE5120-1",
+                "HELSEF4510-1"
+              ],
+              "merknad": "prosjektplanlegging av epidemiologiske studier + forskningsetikk"
+            }
+          ]
+        },
+        {
+          "id": "masteroppgave",
+          "label": "Masteroppgave",
+          "kategori": "Oppgave",
+          "desc": "Selvstendig vitenskapelig arbeid som avslutter masterstudiet.",
+          "note": "Omfanget varierer: 30 sp ved NMBU og UiO, 45 sp ved NTNU.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_folkehelse",
+              "emnekoder": [
+                "M30-FOL-1"
+              ]
+            },
+            {
+              "entryId": "ntnu_folkehelse",
+              "emnekoder": [
+                "FH3901-1"
+              ],
+              "merknad": "45 sp"
+            },
+            {
+              "entryId": "uio_folkehelsearbeid",
+              "emnekoder": [
+                "FHE5090-1"
+              ]
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_folkehelse",
+              "emnekoder": [
+                "M30-FOL-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "ntnu_folkehelse",
+              "emnekoder": [
+                "FH3901-1"
+              ],
+              "merknad": "45 sp"
+            },
+            {
+              "entryId": "uio_folkehelsearbeid",
+              "emnekoder": [
+                "FHE5090-1"
+              ],
+              "merknad": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "globaleutvikling",
+      "note": "Gruppen har bare to programmer, og de deler en smal kjerne: utviklingsteori, forskningsmetode og masteroppgave. Det er derfor bare fire emnetyper. UiO bygger studiet rundt fire store emner (15-60 sp) og byttet emnekoder fra SUM til GLOBE fra 2025; begge kodene er tatt med der emnet er det samme. NMBUs program har få kandidater per emne, og masteroppgaven M30-DS hadde bare 3-4 kandidater i 2024 og 2025 mot 22 i 2023. NMBUs ECN352 (Fattigdom og ulikhet) og EDS370 (Kjønn og utvikling) og UiOs SUM4300 (Text Lab, akademisk skriving) har ingen motpart i det andre programmet og er ikke koblet.",
+      "courseTypes": [
+        {
+          "id": "utviklingsteori",
+          "label": "Utviklingsteori og utviklingspolitikk",
+          "kategori": "Teori",
+          "desc": "Utviklingsstudier som tverrfaglig felt: utviklingsteorier, utviklingspolitikk og forholdet mellom miljø og samfunnsendring.",
+          "note": "NMBU deler stoffet i et 5 sp innføringsemne og et 10 sp teoriemne; UiO har ett samlet 15 sp-emne.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_globale_utviklingsstudier",
+              "emnekoder": [
+                "EDS201-1",
+                "EDS305-1"
+              ]
+            },
+            {
+              "entryId": "uio_decc",
+              "emnekoder": [
+                "GLOBE4200-1",
+                "SUM4200-1"
+              ],
+              "merknad": "samme emne; SUM4200 er erstattet av GLOBE4200 fra 2025"
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_globale_utviklingsstudier",
+              "emnekoder": [
+                "EDS201-1",
+                "EDS305-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "uio_decc",
+              "emnekoder": [
+                "GLOBE4200-1",
+                "SUM4200-1"
+              ],
+              "merknad": "samme emne; SUM4200 er erstattet av GLOBE4200 fra 2025"
+            }
+          ]
+        },
+        {
+          "id": "forskningsmetode",
+          "label": "Forskningsmetode og prosjektdesign",
+          "kategori": "Metode",
+          "desc": "Samfunnsvitenskapelig metode på masternivå med utforming av prosjektskisse for masteroppgaven.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_globale_utviklingsstudier",
+              "emnekoder": [
+                "EDS312-1"
+              ],
+              "merknad": "15 sp, felles metodeemne for M-GDS, M-IR og M-IES"
+            },
+            {
+              "entryId": "uio_decc",
+              "emnekoder": [
+                "GLOBE4100-1",
+                "SUM4100-1"
+              ],
+              "merknad": "samme emne; SUM4100 er erstattet av GLOBE4100 fra 2025"
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_globale_utviklingsstudier",
+              "emnekoder": [
+                "EDS312-1"
+              ],
+              "merknad": "15 sp, felles metodeemne for M-GDS, M-IR og M-IES"
+            },
+            {
+              "entryId": "uio_decc",
+              "emnekoder": [
+                "GLOBE4100-1",
+                "SUM4100-1"
+              ],
+              "merknad": "samme emne; SUM4100 er erstattet av GLOBE4100 fra 2025"
+            }
+          ]
+        },
+        {
+          "id": "global-styring-bistand",
+          "label": "Global utvikling, bistand og styring",
+          "kategori": "Politikk",
+          "desc": "Institusjonene og aktørene i det internasjonale utviklingsfeltet, og hvordan global utvikling styres.",
+          "note": "Svakere kobling enn de øvrige: NMBUs emne handler om bistand og alternativer til bistand, mens UiOs valgemne handler om global styring for bærekraftig utvikling. UiO-emnet hadde 10 kandidater i 2024 og 7 i 2025.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_globale_utviklingsstudier",
+              "emnekoder": [
+                "EDS230-1"
+              ]
+            },
+            {
+              "entryId": "uio_decc",
+              "emnekoder": [
+                "SUM4029-1"
+              ],
+              "merknad": "valgemne, ikke obligatorisk"
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_globale_utviklingsstudier",
+              "emnekoder": [
+                "EDS230-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "uio_decc",
+              "emnekoder": [
+                "SUM4029-1"
+              ],
+              "merknad": "valgemne, ikke obligatorisk"
+            }
+          ]
+        },
+        {
+          "id": "masteroppgave",
+          "label": "Masteroppgave",
+          "kategori": "Oppgave",
+          "desc": "Selvstendig vitenskapelig arbeid som avslutter masterstudiet.",
+          "note": "Omfanget er svært ulikt: 30 sp ved NMBU og 60 sp ved UiO. NMBU hadde bare 3-4 kandidater i 2024 og 2025.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_globale_utviklingsstudier",
+              "emnekoder": [
+                "M30-DS-1"
+              ],
+              "merknad": "30 sp"
+            },
+            {
+              "entryId": "uio_decc",
+              "emnekoder": [
+                "SUM4091-1"
+              ],
+              "merknad": "60 sp"
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_globale_utviklingsstudier",
+              "emnekoder": [
+                "M30-DS-1"
+              ],
+              "merknad": "30 sp"
+            },
+            {
+              "entryId": "uio_decc",
+              "emnekoder": [
+                "SUM4091-1"
+              ],
+              "merknad": "60 sp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "intrelasjoner",
+      "note": "Gruppen har bare to programmer, og UiOs Peace and Conflict Studies er en fredsfaglig master, ikke en generell master i internasjonale relasjoner. Overlappet er derfor begrenset til teori, metode, sikkerhet/konflikt og masteroppgave, og det ble fem emnetyper. NMBUs EDS203 (innføring, 5 sp), EDS379 (global politisk økonomi) og EDS381 (feministisk og kritisk IR-teori) har ingen motpart ved UiO, og UiOs PECOS4022 (anvendt statistikk) har ingen frittstående motpart ved NMBU. Emnekodene gjelder studieløpet slik det var rapportert til DBH til og med 2025; UiO la om PECOS til Peace, Conflict and Democracy Studies fra høsten 2026.",
+      "courseTypes": [
+        {
+          "id": "ir-teori",
+          "label": "Teori i internasjonale relasjoner",
+          "kategori": "Teori",
+          "desc": "Sentrale teoretiske perspektiver på internasjonal politikk, konflikt og samarbeid mellom stater og andre aktører.",
+          "note": "NMBU deler teorien i to 10 sp-emner over to semestre; UiOs PECOS4025 er ett 10 sp-emne med fredsfaglig innretning. NMBUs innføringsemne EDS203 (5 sp) har ingen motpart ved UiO.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_intrel",
+              "emnekoder": [
+                "EDS374A-1",
+                "EDS374B-1"
+              ]
+            },
+            {
+              "entryId": "uio_pecos",
+              "emnekoder": [
+                "PECOS4025-1"
+              ],
+              "merknad": "analytiske perspektiver på fred og konflikt"
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_intrel",
+              "emnekoder": [
+                "EDS374A-1",
+                "EDS374B-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "uio_pecos",
+              "emnekoder": [
+                "PECOS4025-1"
+              ],
+              "merknad": "analytiske perspektiver på fred og konflikt"
+            }
+          ]
+        },
+        {
+          "id": "forskningsmetode",
+          "label": "Forskningsmetode og prosjektdesign",
+          "kategori": "Metode",
+          "desc": "Samfunnsvitenskapelig metode på masternivå og utforming av forskningsdesign for masteroppgaven.",
+          "note": "NMBU samler metode og prosjektdesign i ett 15 sp-emne; UiO deler det i et kvalitativt metodeemne (10 sp) og et designseminar (5 sp). UiOs obligatoriske statistikkemne PECOS4022 har ingen frittstående motpart ved NMBU.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_intrel",
+              "emnekoder": [
+                "EDS312-1"
+              ]
+            },
+            {
+              "entryId": "uio_pecos",
+              "emnekoder": [
+                "STV4030B-1",
+                "STV4911-1"
+              ]
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_intrel",
+              "emnekoder": [
+                "EDS312-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "uio_pecos",
+              "emnekoder": [
+                "STV4030B-1",
+                "STV4911-1"
+              ],
+              "merknad": null
+            }
+          ]
+        },
+        {
+          "id": "sikkerhetsstudier",
+          "label": "Sikkerhetsstudier og strategi",
+          "kategori": "Politikk",
+          "desc": "Sikkerhetsbegrepet, trusselbilder, strategi og sikkerhetspolitikk i internasjonal politikk.",
+          "note": "Begge er valgemner. UiO-emnet er lite (13 kandidater i 2024, 6 i 2025) mot 51 ved NMBU i 2025.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_intrel",
+              "emnekoder": [
+                "EDS372-1"
+              ]
+            },
+            {
+              "entryId": "uio_pecos",
+              "emnekoder": [
+                "STV4225B-1"
+              ]
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_intrel",
+              "emnekoder": [
+                "EDS372-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "uio_pecos",
+              "emnekoder": [
+                "STV4225B-1"
+              ],
+              "merknad": null
+            }
+          ]
+        },
+        {
+          "id": "konflikt-statsbygging",
+          "label": "Konflikt og statsbygging",
+          "kategori": "Politikk",
+          "desc": "Årsaker til væpnet konflikt og statsbygging i sårbare og konfliktberørte stater.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_intrel",
+              "emnekoder": [
+                "EDS378-2"
+              ]
+            },
+            {
+              "entryId": "uio_pecos",
+              "emnekoder": [
+                "PECOS4010-1"
+              ]
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_intrel",
+              "emnekoder": [
+                "EDS378-2"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "uio_pecos",
+              "emnekoder": [
+                "PECOS4010-1"
+              ],
+              "merknad": null
+            }
+          ]
+        },
+        {
+          "id": "masteroppgave",
+          "label": "Masteroppgave",
+          "kategori": "Oppgave",
+          "desc": "Selvstendig vitenskapelig arbeid som avslutter masterstudiet.",
+          "note": "Omfanget er ulikt: 30 sp ved NMBU og 45 sp ved UiO.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_intrel",
+              "emnekoder": [
+                "M30-IR-1"
+              ]
+            },
+            {
+              "entryId": "uio_pecos",
+              "emnekoder": [
+                "PECOS4096-1"
+              ]
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_intrel",
+              "emnekoder": [
+                "M30-IR-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "uio_pecos",
+              "emnekoder": [
+                "PECOS4096-1"
+              ],
+              "merknad": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "landskapsarkitektur",
+      "note": "NMBU og AHO er femårige masterløp, mens HVL Sogndal er en treårig bachelor – HVL mangler derfor masternivået og de store prosjektfagene. AHO har ingen emner i GIS, arealplanlegging etter plan- og bygningsloven eller geologi/jord, og har et vesentlig mindre omfang i plantefag (4 sp mot NMBUs ca. 65 sp). Emnetypene under er bygd på de emnene DBH faktisk rapporterer for programmene, og AHOs studioemner (Form, Systemer, Fellesrom, Studio 1–3) dekker flere fagfelt samtidig; koblingene deres er derfor grovere enn for NMBU og HVL.",
+      "courseTypes": [
+        {
+          "id": "grunnkurs-form",
+          "label": "Form- og designgrunnkurs",
+          "kategori": "Design",
+          "desc": "Grunnleggende formgiving, romforståelse og designmetodikk i de første studieårene.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_la",
+              "emnekoder": [
+                "LAA115-1",
+                "LAA116-1"
+              ],
+              "merknad": "Introduksjon til profesjonsstudiet og Introduksjon i landskapsarkitektur II, til sammen 25 sp."
+            },
+            {
+              "entryId": "aho_la",
+              "emnekoder": [
+                "61 110-1",
+                "61 110-2",
+                "61 120-1"
+              ],
+              "merknad": "Form – Landskapslaboratorium (utvidet fra 20 til 24 sp i 2024) og Form – Parklaboratorium."
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging_la",
+              "emnekoder": [
+                "PL425-2"
+              ],
+              "merknad": "Rom og design, 10 sp – klart mindre omfang enn NMBU og AHO."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_la",
+              "emnekoder": [
+                "LAA115-1",
+                "LAA116-1"
+              ],
+              "merknad": "Introduksjon til profesjonsstudiet og Introduksjon i landskapsarkitektur II, til sammen 25 sp."
+            },
+            {
+              "entryId": "aho_la",
+              "emnekoder": [
+                "61 110-1",
+                "61 110-2",
+                "61 120-1"
+              ],
+              "merknad": "Form – Landskapslaboratorium (utvidet fra 20 til 24 sp i 2024) og Form – Parklaboratorium."
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging_la",
+              "emnekoder": [
+                "PL425-2"
+              ],
+              "merknad": "Rom og design, 10 sp – klart mindre omfang enn NMBU og AHO."
+            }
+          ]
+        },
+        {
+          "id": "landskapsanalyse",
+          "label": "Landskapsanalyse og landskapsforståelse",
+          "kategori": "Metode",
+          "desc": "Å lese, beskrive og analysere landskap som grunnlag for planlegging og prosjektering.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_la",
+              "emnekoder": [
+                "LAA250-1"
+              ]
+            },
+            {
+              "entryId": "aho_la",
+              "emnekoder": [
+                "61 161-1"
+              ],
+              "merknad": "Landskapsteori – forståelse og lesning av nordlige landskap, 6 sp; mer teoretisk vinklet."
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging_la",
+              "emnekoder": [
+                "PL416-2"
+              ]
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_la",
+              "emnekoder": [
+                "LAA250-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "aho_la",
+              "emnekoder": [
+                "61 161-1"
+              ],
+              "merknad": "Landskapsteori – forståelse og lesning av nordlige landskap, 6 sp; mer teoretisk vinklet."
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging_la",
+              "emnekoder": [
+                "PL416-2"
+              ],
+              "merknad": null
+            }
+          ]
+        },
+        {
+          "id": "plantekunnskap",
+          "label": "Plantekunnskap og vegetasjonsbruk",
+          "kategori": "Natur/Økologi",
+          "desc": "Artskunnskap, plantebruk og forming med vegetasjon i grøntanlegg og urbane omgivelser.",
+          "note": "Omfanget er svært ulikt: NMBU har rundt 65 sp plantefag, HVL 20 sp og AHO bare 4 sp.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_la",
+              "emnekoder": [
+                "PHG113-1",
+                "PHG113-2",
+                "PHG213-1",
+                "PHG215-1",
+                "LAA224-1",
+                "LAA224-2"
+              ],
+              "merknad": "PHG113 og LAA224 ble lagt om i 2025 (nye emnevarianter med flere studiepoeng)."
+            },
+            {
+              "entryId": "aho_la",
+              "emnekoder": [
+                "61 111-1"
+              ],
+              "merknad": "Plantebruk, 4 sp – eneste rene plantefag."
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging_la",
+              "emnekoder": [
+                "BI424-1",
+                "BI436-1"
+              ]
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_la",
+              "emnekoder": [
+                "PHG113-1",
+                "PHG113-2",
+                "PHG213-1",
+                "PHG215-1",
+                "LAA224-1",
+                "LAA224-2"
+              ],
+              "merknad": "PHG113 og LAA224 ble lagt om i 2025 (nye emnevarianter med flere studiepoeng)."
+            },
+            {
+              "entryId": "aho_la",
+              "emnekoder": [
+                "61 111-1"
+              ],
+              "merknad": "Plantebruk, 4 sp – eneste rene plantefag."
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging_la",
+              "emnekoder": [
+                "BI424-1",
+                "BI436-1"
+              ],
+              "merknad": null
+            }
+          ]
+        },
+        {
+          "id": "okologi",
+          "label": "Økologi og landskapsøkologi",
+          "kategori": "Natur/Økologi",
+          "desc": "Økologiske prosesser, naturtyper og landskapsøkologisk sammenheng som premiss for landskapsfaget.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_la",
+              "emnekoder": [
+                "LAA370-1"
+              ]
+            },
+            {
+              "entryId": "aho_la",
+              "emnekoder": [
+                "61 123-1",
+                "61 134-1",
+                "61 162-1"
+              ],
+              "merknad": "Økologi for landskapsarkitektur 1–3, 4 sp hver, til sammen 12 sp."
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging_la",
+              "emnekoder": [
+                "BI445-3",
+                "BI435-1",
+                "BI434-1"
+              ]
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_la",
+              "emnekoder": [
+                "LAA370-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "aho_la",
+              "emnekoder": [
+                "61 123-1",
+                "61 134-1",
+                "61 162-1"
+              ],
+              "merknad": "Økologi for landskapsarkitektur 1–3, 4 sp hver, til sammen 12 sp."
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging_la",
+              "emnekoder": [
+                "BI445-3",
+                "BI435-1",
+                "BI434-1"
+              ],
+              "merknad": null
+            }
+          ]
+        },
+        {
+          "id": "naturgrunnlag",
+          "label": "Geologi og jord",
+          "kategori": "Natur/Økologi",
+          "desc": "Berggrunn, løsmasser og jord som fysisk grunnlag for landskap og anlegg.",
+          "note": "AHO har ikke eget emne i geologi eller jordfag.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_la",
+              "emnekoder": [
+                "GEO100-1",
+                "JORD160-1"
+              ]
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging_la",
+              "emnekoder": [
+                "GE406-1"
+              ],
+              "merknad": "Geologi grunnkurs; HVL har ikke eget jordfagsemne."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_la",
+              "emnekoder": [
+                "GEO100-1",
+                "JORD160-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging_la",
+              "emnekoder": [
+                "GE406-1"
+              ],
+              "merknad": "Geologi grunnkurs; HVL har ikke eget jordfagsemne."
+            }
+          ]
+        },
+        {
+          "id": "landskapsteknikk",
+          "label": "Landskapsteknikk og prosjektering",
+          "kategori": "Fagspesifikt",
+          "desc": "Terrengforming, materialer, konstruksjoner og tekniske prosjekteringsunderlag for uterom.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_la",
+              "emnekoder": [
+                "LAA215-1",
+                "LAA221-1"
+              ],
+              "merknad": "Byrom, form og konstruksjoner (15 sp) og Konkurransegrunnlag (5 sp)."
+            },
+            {
+              "entryId": "aho_la",
+              "emnekoder": [
+                "61 131-1",
+                "61 141-1"
+              ],
+              "merknad": "Landskapsmedia: terrengforming og material- og konstruksjonslære, 6 sp hver."
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging_la",
+              "emnekoder": [
+                "PL412-2"
+              ],
+              "merknad": "Landskapsinngrep dekker terrengframstilling og konsekvensvurdering av inngrep, og har svakere prosjekteringsinnhold enn NMBU og AHO."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_la",
+              "emnekoder": [
+                "LAA215-1",
+                "LAA221-1"
+              ],
+              "merknad": "Byrom, form og konstruksjoner (15 sp) og Konkurransegrunnlag (5 sp)."
+            },
+            {
+              "entryId": "aho_la",
+              "emnekoder": [
+                "61 131-1",
+                "61 141-1"
+              ],
+              "merknad": "Landskapsmedia: terrengforming og material- og konstruksjonslære, 6 sp hver."
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging_la",
+              "emnekoder": [
+                "PL412-2"
+              ],
+              "merknad": "Landskapsinngrep dekker terrengframstilling og konsekvensvurdering av inngrep, og har svakere prosjekteringsinnhold enn NMBU og AHO."
+            }
+          ]
+        },
+        {
+          "id": "historie-teori",
+          "label": "Landskapsarkitekturens historie og teori",
+          "kategori": "Fagspesifikt",
+          "desc": "Hagekunstens og landskapsarkitekturens historie, teorigrunnlag og samtidsfaglige retninger.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_la",
+              "emnekoder": [
+                "LAA211-1"
+              ],
+              "merknad": "Hagekunstens og landskapsarkitekturens historie, 5 sp."
+            },
+            {
+              "entryId": "aho_la",
+              "emnekoder": [
+                "61 121-1",
+                "61 144-1"
+              ],
+              "merknad": "Landskapsarkitekturens historie og Samtidens landskapsarkitektur."
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging_la",
+              "emnekoder": [
+                "PL471-2"
+              ],
+              "merknad": "Kulturmiljøforvaltning er nærmeste ekvivalent, men er forvaltningsrettet snarere enn fagshistorisk."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_la",
+              "emnekoder": [
+                "LAA211-1"
+              ],
+              "merknad": "Hagekunstens og landskapsarkitekturens historie, 5 sp."
+            },
+            {
+              "entryId": "aho_la",
+              "emnekoder": [
+                "61 121-1",
+                "61 144-1"
+              ],
+              "merknad": "Landskapsarkitekturens historie og Samtidens landskapsarkitektur."
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging_la",
+              "emnekoder": [
+                "PL471-2"
+              ],
+              "merknad": "Kulturmiljøforvaltning er nærmeste ekvivalent, men er forvaltningsrettet snarere enn fagshistorisk."
+            }
+          ]
+        },
+        {
+          "id": "digitale-verktoy",
+          "label": "Digitale verktøy og 3D",
+          "kategori": "Geomatikk/Teknologi",
+          "desc": "Tegne- og modelleringsverktøy, 3D-datamodellering og digital framstilling av landskapsprosjekter.",
+          "note": "HVL har ingen emner i digital modellering ut over kartlære og GIS.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_la",
+              "emnekoder": [
+                "LAD100-1",
+                "LAD202-1",
+                "LAD302-1"
+              ]
+            },
+            {
+              "entryId": "aho_la",
+              "emnekoder": [
+                "LAN-3072-1"
+              ],
+              "merknad": "Digitale landskaper, 6 sp, på masternivå i Tromsø."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_la",
+              "emnekoder": [
+                "LAD100-1",
+                "LAD202-1",
+                "LAD302-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "aho_la",
+              "emnekoder": [
+                "LAN-3072-1"
+              ],
+              "merknad": "Digitale landskaper, 6 sp, på masternivå i Tromsø."
+            }
+          ]
+        },
+        {
+          "id": "gis",
+          "label": "GIS og kartlære",
+          "kategori": "Geomatikk/Teknologi",
+          "desc": "Kartgrunnlag, geodata og praktisk bruk av geografiske informasjonssystemer.",
+          "note": "AHO har ikke noe eget GIS- eller kartemne i DBH-rapporteringen.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_la",
+              "emnekoder": [
+                "LAD102-1"
+              ],
+              "merknad": "GIS – praktisk introduksjon, 5 sp."
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging_la",
+              "emnekoder": [
+                "GE413-1"
+              ],
+              "merknad": "Kartlære og GIS, 10 sp – dobbelt omfang av NMBUs emne."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_la",
+              "emnekoder": [
+                "LAD102-1"
+              ],
+              "merknad": "GIS – praktisk introduksjon, 5 sp."
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging_la",
+              "emnekoder": [
+                "GE413-1"
+              ],
+              "merknad": "Kartlære og GIS, 10 sp – dobbelt omfang av NMBUs emne."
+            }
+          ]
+        },
+        {
+          "id": "byrom-urbanisme",
+          "label": "Byrom, urbanisme og bylandskap",
+          "kategori": "Planlegging",
+          "desc": "Bylandskapet som sosial og fysisk arena: byrom, urbane strukturer og byplanhistorie.",
+          "note": "HVL har ingen emner rettet mot bylandskap ut over Grønnstruktur og urban vegetasjon, som er kodet under plantekunnskap.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_la",
+              "emnekoder": [
+                "LAA341-1",
+                "LAA313-1"
+              ],
+              "merknad": "LAA341 går annethvert år."
+            },
+            {
+              "entryId": "aho_la",
+              "emnekoder": [
+                "61 150-1",
+                "61 151-1",
+                "LAN-3071-1"
+              ],
+              "merknad": "Fellesrom – by og landskap, By- og byplanhistorie og Studio 1: Urbane praksiser."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_la",
+              "emnekoder": [
+                "LAA341-1",
+                "LAA313-1"
+              ],
+              "merknad": "LAA341 går annethvert år."
+            },
+            {
+              "entryId": "aho_la",
+              "emnekoder": [
+                "61 150-1",
+                "61 151-1",
+                "LAN-3071-1"
+              ],
+              "merknad": "Fellesrom – by og landskap, By- og byplanhistorie og Studio 1: Urbane praksiser."
+            }
+          ]
+        },
+        {
+          "id": "arealplanlegging",
+          "label": "Arealplanlegging og planprosess",
+          "kategori": "Planlegging",
+          "desc": "Kommunal og regional arealplanlegging, reguleringsplaner og planprosess etter plan- og bygningsloven.",
+          "note": "AHO har ingen emner i offentlig arealplanlegging.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_la",
+              "emnekoder": [
+                "APL200-1",
+                "LAA360-1"
+              ],
+              "merknad": "Begge er valgbare for LA-studentene og har derfor færre kandidater enn kjerneemnene."
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging_la",
+              "emnekoder": [
+                "PL417-1",
+                "PL418-1"
+              ],
+              "merknad": "Arealplanlegging og Reguleringsplanlegging, 10 sp hver."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_la",
+              "emnekoder": [
+                "APL200-1",
+                "LAA360-1"
+              ],
+              "merknad": "Begge er valgbare for LA-studentene og har derfor færre kandidater enn kjerneemnene."
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging_la",
+              "emnekoder": [
+                "PL417-1",
+                "PL418-1"
+              ],
+              "merknad": "Arealplanlegging og Reguleringsplanlegging, 10 sp hver."
+            }
+          ]
+        },
+        {
+          "id": "studio-prosjekt",
+          "label": "Prosjektfag og studio",
+          "kategori": "Design",
+          "desc": "Store prosjektbaserte studioemner der landskapsprosjekter utvikles fra analyse til ferdig forslag.",
+          "note": "HVLs bachelor har ingen tilsvarende store studioemner; Rom og design (10 sp) er kodet som grunnkurs.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_la",
+              "emnekoder": [
+                "LAA214-1",
+                "LAA340-1",
+                "LAA307-2"
+              ],
+              "merknad": "LAA340 og LAA307 er valgbare studioemner som veksler mellom år."
+            },
+            {
+              "entryId": "aho_la",
+              "emnekoder": [
+                "61 133-1",
+                "61 143-1",
+                "61 160-1",
+                "LAN-3081-1",
+                "LAN-3091-1"
+              ],
+              "merknad": "Systemer-, Fellesrom- og Studio-emnene på 20–24 sp utgjør ryggraden i AHOs løp."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_la",
+              "emnekoder": [
+                "LAA214-1",
+                "LAA340-1",
+                "LAA307-2"
+              ],
+              "merknad": "LAA340 og LAA307 er valgbare studioemner som veksler mellom år."
+            },
+            {
+              "entryId": "aho_la",
+              "emnekoder": [
+                "61 133-1",
+                "61 143-1",
+                "61 160-1",
+                "LAN-3081-1",
+                "LAN-3091-1"
+              ],
+              "merknad": "Systemer-, Fellesrom- og Studio-emnene på 20–24 sp utgjør ryggraden i AHOs løp."
+            }
+          ]
+        },
+        {
+          "id": "oppgave",
+          "label": "Masteroppgave og diplom",
+          "kategori": "Oppgave",
+          "desc": "Avsluttende selvstendig arbeid med tilhørende forberedende emne.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_la",
+              "emnekoder": [
+                "M30-LA-1",
+                "MAST302-1"
+              ]
+            },
+            {
+              "entryId": "aho_la",
+              "emnekoder": [
+                "LAN-3900-1",
+                "LAN-3092-1"
+              ],
+              "merknad": "Diplomoppgave (30 sp) og Prediplom (6 sp); diplom er rapportert med få kandidater i 2025."
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging_la",
+              "emnekoder": [
+                "PL491-1"
+              ],
+              "merknad": "Bacheloroppgave på 20 sp – lavere nivå og omfang enn masteroppgavene."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_la",
+              "emnekoder": [
+                "M30-LA-1",
+                "MAST302-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "aho_la",
+              "emnekoder": [
+                "LAN-3900-1",
+                "LAN-3092-1"
+              ],
+              "merknad": "Diplomoppgave (30 sp) og Prediplom (6 sp); diplom er rapportert med få kandidater i 2025."
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging_la",
+              "emnekoder": [
+                "PL491-1"
+              ],
+              "merknad": "Bacheloroppgave på 20 sp – lavere nivå og omfang enn masteroppgavene."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "landskapsingenior",
+      "note": "De to bachelorene har et felles naturfaglig og landskapsfaglig fundament, men peker i hver sin retning. NMBUs landskapsingeniør er en teknisk utførelsesutdanning med tyngde i prosjektering, anleggsteknikk, vann og drift av grøntanlegg, mens HVLs landskapsplanlegging med landskapsarkitektur er en planleggings- og naturforvaltningsutdanning med tyngde i økologi, landskapsanalyse og arealplanlegging. Koblingene under dekker derfor bare det felles grunnlaget: planter, økologi, geologi og jord, kart og GIS, landskapsforvaltning, introduksjonen til landskapsarkitekturfaget og bacheloroppgaven. Emnestørrelsene er også ulike: HVL bruker gjennomgående 10 sp-blokker, NMBU alt fra 5 til 20 sp. NMBU har dessuten skiftet emnekoder og -omfang i perioden, slik at flere emnetyper må kobles til to kodeversjoner.",
+      "courseTypes": [
+        {
+          "id": "botanikk-og-okologi",
+          "label": "Botanikk og økologi",
+          "kategori": "Fagspesifikt",
+          "desc": "Plantenes systematikk, anatomi og fysiologi sammen med grunnleggende økologi, plantesamfunn og økosystemer.",
+          "note": "NMBU samler botanikk og økologi i ett plantefaglig emne, mens HVL har to atskilte grunnkurs. Samlet omfang er om lag likt (NMBU 10–20 sp, HVL 20 sp).",
+          "koblinger": [
+            {
+              "entryId": "nmbu_landskapsing",
+              "emnekoder": [
+                "PHG113-1",
+                "PHG113-2"
+              ],
+              "merknad": "PHG113-1 (10 sp) er erstattet av PHG113-2 (20 sp) fra 2025."
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging",
+              "emnekoder": [
+                "BI424-1",
+                "BI445-3"
+              ],
+              "merknad": "Botanikk grunnkurs og Økologi grunnkurs."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_landskapsing",
+              "emnekoder": [
+                "PHG113-1",
+                "PHG113-2"
+              ],
+              "merknad": "PHG113-1 (10 sp) er erstattet av PHG113-2 (20 sp) fra 2025."
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging",
+              "emnekoder": [
+                "BI424-1",
+                "BI445-3"
+              ],
+              "merknad": "Botanikk grunnkurs og Økologi grunnkurs."
+            }
+          ]
+        },
+        {
+          "id": "plantebruk-i-grontanlegg",
+          "label": "Plantebruk i grøntanlegg",
+          "kategori": "Fagspesifikt",
+          "desc": "Valg og bruk av landskapsplanter og vegetasjon i utforming av grønnstruktur og grøntanlegg i by og tettsted.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_landskapsing",
+              "emnekoder": [
+                "PHG213-1"
+              ],
+              "merknad": "Landskapsplanter - Planteplan i praksis."
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging",
+              "emnekoder": [
+                "BI436-1"
+              ],
+              "merknad": "Grønnstruktur og urban vegetasjon, med vekt på planter som er vanlige i norske grøntanlegg."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_landskapsing",
+              "emnekoder": [
+                "PHG213-1"
+              ],
+              "merknad": "Landskapsplanter - Planteplan i praksis."
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging",
+              "emnekoder": [
+                "BI436-1"
+              ],
+              "merknad": "Grønnstruktur og urban vegetasjon, med vekt på planter som er vanlige i norske grøntanlegg."
+            }
+          ]
+        },
+        {
+          "id": "skjotsel-og-vegetasjonsforvaltning",
+          "label": "Skjøtsel og forvaltning av vegetasjon",
+          "kategori": "Fagspesifikt",
+          "desc": "Etablering, skjøtsel og bevaring av vegetasjon og grøntareal over tid.",
+          "note": "Konteksten er ulik: NMBU ser på etablering og drift av anlagte grøntanlegg, mens HVL ser på skjøtsel og restaurering av semi-naturlige kulturmarkstyper. Fellesnevneren er skjøtselsfaget, og karakterene bør leses med det forbeholdet.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_landskapsing",
+              "emnekoder": [
+                "PHG215-1",
+                "TMPA220-1"
+              ],
+              "merknad": "Landskapsplanter - etablering, skjøtsel og bevaring og Park- og grøntanleggsteknikk, nyanlegg og skjøtsel."
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging",
+              "emnekoder": [
+                "PL462-1"
+              ],
+              "merknad": "Naturrestaurering, med hovedvekt på forvaltning og skjøtsel av kulturmark."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_landskapsing",
+              "emnekoder": [
+                "PHG215-1",
+                "TMPA220-1"
+              ],
+              "merknad": "Landskapsplanter - etablering, skjøtsel og bevaring og Park- og grøntanleggsteknikk, nyanlegg og skjøtsel."
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging",
+              "emnekoder": [
+                "PL462-1"
+              ],
+              "merknad": "Naturrestaurering, med hovedvekt på forvaltning og skjøtsel av kulturmark."
+            }
+          ]
+        },
+        {
+          "id": "geologi-og-jord",
+          "label": "Geologi og jord",
+          "kategori": "Fagspesifikt",
+          "desc": "Berggrunn, løsmasser og landformer sammen med jordas oppbygning og egenskaper som vekstmedium.",
+          "note": "NMBU har i tillegg et eget innføringsemne om jord (JORD160) som HVL ikke har; HVLs jordstoff ligger inne i geologiemnet.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_landskapsing",
+              "emnekoder": [
+                "GEO100-1",
+                "JORD160-1"
+              ]
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging",
+              "emnekoder": [
+                "GE406-1"
+              ],
+              "merknad": "Geologi grunnkurs."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_landskapsing",
+              "emnekoder": [
+                "GEO100-1",
+                "JORD160-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging",
+              "emnekoder": [
+                "GE406-1"
+              ],
+              "merknad": "Geologi grunnkurs."
+            }
+          ]
+        },
+        {
+          "id": "kart-gis-og-digitale-verktoy",
+          "label": "Kart, GIS og digitale verktøy",
+          "kategori": "Geomatikk/Teknologi",
+          "desc": "Kartlære, geografiske informasjonssystemer og digitale tegne- og analyseverktøy i landskapsfaget.",
+          "note": "NMBUs emne har hovedvekt på DAK/tegneverktøy med en GIS-del, mens HVLs har hovedvekt på kartlære og GIS-analyse i QGIS. HVLs emne er dobbelt så stort (10 mot 5 sp).",
+          "koblinger": [
+            {
+              "entryId": "nmbu_landskapsing",
+              "emnekoder": [
+                "LAD100-1"
+              ],
+              "merknad": "Introduksjon til digitale verktøy (DAK og GIS)."
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging",
+              "emnekoder": [
+                "GE413-1"
+              ],
+              "merknad": "Kartlære og GIS."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_landskapsing",
+              "emnekoder": [
+                "LAD100-1"
+              ],
+              "merknad": "Introduksjon til digitale verktøy (DAK og GIS)."
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging",
+              "emnekoder": [
+                "GE413-1"
+              ],
+              "merknad": "Kartlære og GIS."
+            }
+          ]
+        },
+        {
+          "id": "landskapsforvaltning",
+          "label": "Landskaps- og kulturmiljøforvaltning",
+          "kategori": "Planlegging",
+          "desc": "Forvaltning av landskap, grøntanlegg og kulturmiljø: forvaltningssystem, roller, kulturminnevern og medvirkning.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_landskapsing",
+              "emnekoder": [
+                "LAA231-1",
+                "LAA231-2"
+              ],
+              "merknad": "To kodeversjoner av Bærekraftig landskapsforvaltning i perioden."
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging",
+              "emnekoder": [
+                "PL471-2"
+              ],
+              "merknad": "Kulturmiljøforvaltning; mer rettet mot kulturarv og bygde kulturmiljø enn NMBUs grøntforvaltning."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_landskapsing",
+              "emnekoder": [
+                "LAA231-1",
+                "LAA231-2"
+              ],
+              "merknad": "To kodeversjoner av Bærekraftig landskapsforvaltning i perioden."
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging",
+              "emnekoder": [
+                "PL471-2"
+              ],
+              "merknad": "Kulturmiljøforvaltning; mer rettet mot kulturarv og bygde kulturmiljø enn NMBUs grøntforvaltning."
+            }
+          ]
+        },
+        {
+          "id": "landskapsarkitektur-og-formgiving",
+          "label": "Innføring i landskapsarkitektur og formgiving",
+          "kategori": "Fagspesifikt",
+          "desc": "Introduksjon til landskapsarkitekturfaget: sentrale begreper, faghistorie, analyse av uterom og visuell formidling av egne ideer.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_landskapsing",
+              "emnekoder": [
+                "LAA115-1"
+              ],
+              "merknad": "Introduksjon til profesjonsstudiet, felles for landskapsarkitekt og landskapsingeniør."
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging",
+              "emnekoder": [
+                "PL425-2"
+              ],
+              "merknad": "Rom og design; har i tillegg praktisk skisse- og tegnetrening."
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_landskapsing",
+              "emnekoder": [
+                "LAA115-1"
+              ],
+              "merknad": "Introduksjon til profesjonsstudiet, felles for landskapsarkitekt og landskapsingeniør."
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging",
+              "emnekoder": [
+                "PL425-2"
+              ],
+              "merknad": "Rom og design; har i tillegg praktisk skisse- og tegnetrening."
+            }
+          ]
+        },
+        {
+          "id": "bacheloroppgave",
+          "label": "Bacheloroppgave",
+          "kategori": "Oppgave",
+          "desc": "Det selvstendige avsluttende arbeidet i graden.",
+          "note": "HVLs bacheloroppgave er 20 sp mot NMBUs 15 sp.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_landskapsing",
+              "emnekoder": [
+                "B15-LI-1"
+              ]
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging",
+              "emnekoder": [
+                "PL491-1"
+              ]
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_landskapsing",
+              "emnekoder": [
+                "B15-LI-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "hvl_landskapsplanlegging",
+              "emnekoder": [
+                "PL491-1"
+              ],
+              "merknad": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "miljoutvikling",
+      "note": "Gruppen består av to ulike familier: de fire utviklingsstudiene (NMBU, UiO, OsloMet, UiA), som har et godt overlapp, og de tre bachelorene i internasjonale studier/relasjoner (UiO int.stud., INN, Nord), som deler ex.phil., metode, økonomi og bacheloroppgave med de øvrige, men ikke miljø- og utviklingsemnene. NMBUs naturvitenskapelige del (ECOL200 Generell økologi) og EDS271 Introduksjon til kjønn og utvikling har ingen motpart hos konkurrentene. Motsatt har OsloMet (UTVB2000 Makt og politikk), UiA (UT-107 Makt, motstand og utvikling), UiO og INN emner i politisk teori og komparativ politikk som NMBU ikke har, og UiO int.stud. har et stort folkerettsemne (JUROFF1410) uten motpart. Et eget emne i statistikk/kvantitativ metode finnes bare ved UiO og er derfor ikke skilt ut.",
+      "courseTypes": [
+        {
+          "id": "innforing-fagfeltet",
+          "label": "Innføring i utviklingsstudier",
+          "kategori": "Teori",
+          "desc": "Førsteårs innføring i fagfeltet: sentrale begreper, aktører og problemstillinger i studiet av global utvikling.",
+          "note": "De tre programmene i internasjonale studier/relasjoner har innføringsemner i sitt eget fagfelt, ikke i utviklingsstudier, og er derfor en svakere sammenligning.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_ims",
+              "emnekoder": [
+                "EDS101-1",
+                "EDS102-1"
+              ],
+              "merknad": "5 sp innføring + 15 sp introduksjon til utviklingstenkning"
+            },
+            {
+              "entryId": "uio_utvikling_baerekraft",
+              "emnekoder": [
+                "UTV1000-1"
+              ]
+            },
+            {
+              "entryId": "oslomet_utviklingsstudier",
+              "emnekoder": [
+                "UTVB1100-1"
+              ],
+              "merknad": "20 sp"
+            },
+            {
+              "entryId": "uia_globale_utviklingsstudier",
+              "emnekoder": [
+                "UT-113-2"
+              ]
+            },
+            {
+              "entryId": "uio_internasjonale_studier",
+              "emnekoder": [
+                "INTER1000-1"
+              ],
+              "merknad": "innføring i internasjonale studier, ikke utviklingsstudier"
+            },
+            {
+              "entryId": "inn_internasjonale_studier",
+              "emnekoder": [
+                "INT1000-1"
+              ],
+              "merknad": "historisk innføring i internasjonale studier"
+            },
+            {
+              "entryId": "nord_internasjonale_relasjoner_b",
+              "emnekoder": [
+                "STA1006-1"
+              ],
+              "merknad": "innføring i internasjonale relasjoner som akademisk disiplin"
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_ims",
+              "emnekoder": [
+                "EDS101-1",
+                "EDS102-1"
+              ],
+              "merknad": "5 sp innføring + 15 sp introduksjon til utviklingstenkning"
+            },
+            {
+              "entryId": "uio_utvikling_baerekraft",
+              "emnekoder": [
+                "UTV1000-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "oslomet_utviklingsstudier",
+              "emnekoder": [
+                "UTVB1100-1"
+              ],
+              "merknad": "20 sp"
+            },
+            {
+              "entryId": "uia_globale_utviklingsstudier",
+              "emnekoder": [
+                "UT-113-2"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "uio_internasjonale_studier",
+              "emnekoder": [
+                "INTER1000-1"
+              ],
+              "merknad": "innføring i internasjonale studier, ikke utviklingsstudier"
+            },
+            {
+              "entryId": "inn_internasjonale_studier",
+              "emnekoder": [
+                "INT1000-1"
+              ],
+              "merknad": "historisk innføring i internasjonale studier"
+            },
+            {
+              "entryId": "nord_internasjonale_relasjoner_b",
+              "emnekoder": [
+                "STA1006-1"
+              ],
+              "merknad": "innføring i internasjonale relasjoner som akademisk disiplin"
+            }
+          ]
+        },
+        {
+          "id": "exphil",
+          "label": "Examen philosophicum",
+          "kategori": "Fellesemne",
+          "desc": "Det obligatoriske fellesemnet i filosofi- og vitenskapshistorie og etikk.",
+          "note": "OsloMet har ikke examen philosophicum i utviklingsstudier; vitenskapsteori inngår der i metodeemnet UTVB1300. UiO og UiA har i tillegg examen facultatum (SVEXFAC03, EX-104), som NMBU ikke har og som derfor ikke er koblet.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_ims",
+              "emnekoder": [
+                "PHI102-1"
+              ],
+              "merknad": "engelsk versjon"
+            },
+            {
+              "entryId": "uio_utvikling_baerekraft",
+              "emnekoder": [
+                "EXPHIL03-1"
+              ]
+            },
+            {
+              "entryId": "uia_globale_utviklingsstudier",
+              "emnekoder": [
+                "EX-112-1"
+              ],
+              "merknad": "engelsk versjon"
+            },
+            {
+              "entryId": "uio_internasjonale_studier",
+              "emnekoder": [
+                "EXPHIL03-1"
+              ]
+            },
+            {
+              "entryId": "inn_internasjonale_studier",
+              "emnekoder": [
+                "INT1009-1"
+              ],
+              "merknad": "egen variant for internasjonale studier"
+            },
+            {
+              "entryId": "nord_internasjonale_relasjoner_b",
+              "emnekoder": [
+                "FIL1005-1"
+              ]
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_ims",
+              "emnekoder": [
+                "PHI102-1"
+              ],
+              "merknad": "engelsk versjon"
+            },
+            {
+              "entryId": "uio_utvikling_baerekraft",
+              "emnekoder": [
+                "EXPHIL03-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "uia_globale_utviklingsstudier",
+              "emnekoder": [
+                "EX-112-1"
+              ],
+              "merknad": "engelsk versjon"
+            },
+            {
+              "entryId": "uio_internasjonale_studier",
+              "emnekoder": [
+                "EXPHIL03-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "inn_internasjonale_studier",
+              "emnekoder": [
+                "INT1009-1"
+              ],
+              "merknad": "egen variant for internasjonale studier"
+            },
+            {
+              "entryId": "nord_internasjonale_relasjoner_b",
+              "emnekoder": [
+                "FIL1005-1"
+              ],
+              "merknad": null
+            }
+          ]
+        },
+        {
+          "id": "metode",
+          "label": "Samfunnsvitenskapelig metode",
+          "kategori": "Metode",
+          "desc": "Innføring i samfunnsvitenskapelig forskningsmetode: forskningsdesign og kvalitative og kvantitative datainnsamlings- og analyseteknikker.",
+          "note": "Vektingen er ulik: NMBU, OsloMet, UiA og Nord har brede innføringsemner, UiOs emner er kvantitativt orienterte, og INNs INT2009 dekker bare kvalitativ metode (INNs INT2010 om metode og statistikk hadde under ti kandidater).",
+          "koblinger": [
+            {
+              "entryId": "nmbu_ims",
+              "emnekoder": [
+                "EDS115-1"
+              ],
+              "merknad": "både kvalitativ og kvantitativ metode"
+            },
+            {
+              "entryId": "uio_utvikling_baerekraft",
+              "emnekoder": [
+                "STV1020-1",
+                "SOSGEO1120-1"
+              ],
+              "merknad": "metodeemnet avhenger av valgt fordypning"
+            },
+            {
+              "entryId": "oslomet_utviklingsstudier",
+              "emnekoder": [
+                "UTVB1300-1"
+              ],
+              "merknad": "inkluderer vitenskapsteori"
+            },
+            {
+              "entryId": "uia_globale_utviklingsstudier",
+              "emnekoder": [
+                "ME-107-1"
+              ]
+            },
+            {
+              "entryId": "uio_internasjonale_studier",
+              "emnekoder": [
+                "STV1020-1"
+              ]
+            },
+            {
+              "entryId": "inn_internasjonale_studier",
+              "emnekoder": [
+                "INT2009-1"
+              ],
+              "merknad": "bare kvalitativ metode"
+            },
+            {
+              "entryId": "nord_internasjonale_relasjoner_b",
+              "emnekoder": [
+                "ME118S-1"
+              ]
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_ims",
+              "emnekoder": [
+                "EDS115-1"
+              ],
+              "merknad": "både kvalitativ og kvantitativ metode"
+            },
+            {
+              "entryId": "uio_utvikling_baerekraft",
+              "emnekoder": [
+                "STV1020-1",
+                "SOSGEO1120-1"
+              ],
+              "merknad": "metodeemnet avhenger av valgt fordypning"
+            },
+            {
+              "entryId": "oslomet_utviklingsstudier",
+              "emnekoder": [
+                "UTVB1300-1"
+              ],
+              "merknad": "inkluderer vitenskapsteori"
+            },
+            {
+              "entryId": "uia_globale_utviklingsstudier",
+              "emnekoder": [
+                "ME-107-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "uio_internasjonale_studier",
+              "emnekoder": [
+                "STV1020-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "inn_internasjonale_studier",
+              "emnekoder": [
+                "INT2009-1"
+              ],
+              "merknad": "bare kvalitativ metode"
+            },
+            {
+              "entryId": "nord_internasjonale_relasjoner_b",
+              "emnekoder": [
+                "ME118S-1"
+              ],
+              "merknad": null
+            }
+          ]
+        },
+        {
+          "id": "okonomi-global",
+          "label": "Økonomi og global politisk økonomi",
+          "kategori": "Økonomi",
+          "desc": "Økonomiske perspektiver på utvikling og verdensøkonomien: marked, fattigdom, ulikhet, handel og maktforhold i den globale økonomien.",
+          "note": "OsloMet og Nord har ingen egne økonomiemner. Innretningen varierer: NMBU og UiO (utviklingsstudier) har samfunnsøkonomiske emner, mens UiA, INN og UiO int.stud. har internasjonal/global politisk økonomi med mer statsvitenskapelig vinkling.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_ims",
+              "emnekoder": [
+                "ECN101-1"
+              ],
+              "merknad": "innføring i samfunnsøkonomi med vekt på miljø, ressurser og utvikling"
+            },
+            {
+              "entryId": "uio_utvikling_baerekraft",
+              "emnekoder": [
+                "ECON1910-1"
+              ],
+              "merknad": "utviklingsøkonomi: fattigdom og fordeling"
+            },
+            {
+              "entryId": "uia_globale_utviklingsstudier",
+              "emnekoder": [
+                "UT-101-3"
+              ]
+            },
+            {
+              "entryId": "uio_internasjonale_studier",
+              "emnekoder": [
+                "ECON1410-1",
+                "STV2220-1"
+              ],
+              "merknad": "internasjonal økonomi + internasjonal politisk økonomi"
+            },
+            {
+              "entryId": "inn_internasjonale_studier",
+              "emnekoder": [
+                "INT1019-1"
+              ]
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_ims",
+              "emnekoder": [
+                "ECN101-1"
+              ],
+              "merknad": "innføring i samfunnsøkonomi med vekt på miljø, ressurser og utvikling"
+            },
+            {
+              "entryId": "uio_utvikling_baerekraft",
+              "emnekoder": [
+                "ECON1910-1"
+              ],
+              "merknad": "utviklingsøkonomi: fattigdom og fordeling"
+            },
+            {
+              "entryId": "uia_globale_utviklingsstudier",
+              "emnekoder": [
+                "UT-101-3"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "uio_internasjonale_studier",
+              "emnekoder": [
+                "ECON1410-1",
+                "STV2220-1"
+              ],
+              "merknad": "internasjonal økonomi + internasjonal politisk økonomi"
+            },
+            {
+              "entryId": "inn_internasjonale_studier",
+              "emnekoder": [
+                "INT1019-1"
+              ],
+              "merknad": null
+            }
+          ]
+        },
+        {
+          "id": "miljo-og-baerekraft",
+          "label": "Miljø, klima og bærekraft",
+          "kategori": "Miljø",
+          "desc": "Globale miljø- og klimaendringer, forholdet mellom miljø og samfunn og veier til bærekraftig omstilling.",
+          "note": "De tre programmene i internasjonale studier/relasjoner (UiO int.stud., INN, Nord) har ingen miljøemner og er derfor ikke med. UiA-emnet er et valgemne i fordypningen Sustainable Transformation.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_ims",
+              "emnekoder": [
+                "EDS260-1",
+                "EDS261-1",
+                "EDS225-1"
+              ],
+              "merknad": "globale miljøforandringer med seminarer + økologisk og sosial resiliens"
+            },
+            {
+              "entryId": "uio_utvikling_baerekraft",
+              "emnekoder": [
+                "SGO2500-1",
+                "SOSGEO2302-1"
+              ],
+              "merknad": "obligatorisk emne om energiomstilling nord/sør + miljø og samfunn"
+            },
+            {
+              "entryId": "oslomet_utviklingsstudier",
+              "emnekoder": [
+                "UTVB2500-1"
+              ]
+            },
+            {
+              "entryId": "uia_globale_utviklingsstudier",
+              "emnekoder": [
+                "SV-156-1"
+              ],
+              "merknad": "valgemne, 14 kandidater i 2025"
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_ims",
+              "emnekoder": [
+                "EDS260-1",
+                "EDS261-1",
+                "EDS225-1"
+              ],
+              "merknad": "globale miljøforandringer med seminarer + økologisk og sosial resiliens"
+            },
+            {
+              "entryId": "uio_utvikling_baerekraft",
+              "emnekoder": [
+                "SGO2500-1",
+                "SOSGEO2302-1"
+              ],
+              "merknad": "obligatorisk emne om energiomstilling nord/sør + miljø og samfunn"
+            },
+            {
+              "entryId": "oslomet_utviklingsstudier",
+              "emnekoder": [
+                "UTVB2500-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "uia_globale_utviklingsstudier",
+              "emnekoder": [
+                "SV-156-1"
+              ],
+              "merknad": "valgemne, 14 kandidater i 2025"
+            }
+          ]
+        },
+        {
+          "id": "politisk-okologi",
+          "label": "Politisk økologi",
+          "kategori": "Miljø",
+          "desc": "Politisk økologi: makt, rettigheter og konflikt knyttet til naturressurser og globale miljøutfordringer.",
+          "note": "Bare NMBU og UiA har et eget emne i politisk økologi.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_ims",
+              "emnekoder": [
+                "EDS130-1"
+              ]
+            },
+            {
+              "entryId": "uia_globale_utviklingsstudier",
+              "emnekoder": [
+                "UT-204-2"
+              ],
+              "merknad": "obligatorisk emne"
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_ims",
+              "emnekoder": [
+                "EDS130-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "uia_globale_utviklingsstudier",
+              "emnekoder": [
+                "UT-204-2"
+              ],
+              "merknad": "obligatorisk emne"
+            }
+          ]
+        },
+        {
+          "id": "feltarbeid",
+          "label": "Feltarbeid og praksis",
+          "kategori": "Fagspesifikt",
+          "desc": "Emner der studentene arbeider med utviklingsspørsmål i felt eller i praksis, med egen datainnsamling.",
+          "note": "Bare utviklingsstudiene har feltkomponent. NMBUs feltemne er knyttet til studieoppholdet i Tanzania, mens UiOs emne er et anvendelses- og praksisemne uten obligatorisk feltarbeid.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_ims",
+              "emnekoder": [
+                "EDS210-1"
+              ],
+              "merknad": "Tanzania-oppholdet"
+            },
+            {
+              "entryId": "uio_utvikling_baerekraft",
+              "emnekoder": [
+                "UTV2001-1"
+              ],
+              "merknad": "utvikling og bærekraft i praksis"
+            },
+            {
+              "entryId": "oslomet_utviklingsstudier",
+              "emnekoder": [
+                "UTVB1400-1"
+              ],
+              "merknad": "20 sp med femukers feltarbeid"
+            },
+            {
+              "entryId": "uia_globale_utviklingsstudier",
+              "emnekoder": [
+                "UT-109-2",
+                "UT-200-1"
+              ],
+              "merknad": "feltkurs i første studieår + feltarbeid for bacheloroppgaven"
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_ims",
+              "emnekoder": [
+                "EDS210-1"
+              ],
+              "merknad": "Tanzania-oppholdet"
+            },
+            {
+              "entryId": "uio_utvikling_baerekraft",
+              "emnekoder": [
+                "UTV2001-1"
+              ],
+              "merknad": "utvikling og bærekraft i praksis"
+            },
+            {
+              "entryId": "oslomet_utviklingsstudier",
+              "emnekoder": [
+                "UTVB1400-1"
+              ],
+              "merknad": "20 sp med femukers feltarbeid"
+            },
+            {
+              "entryId": "uia_globale_utviklingsstudier",
+              "emnekoder": [
+                "UT-109-2",
+                "UT-200-1"
+              ],
+              "merknad": "feltkurs i første studieår + feltarbeid for bacheloroppgaven"
+            }
+          ]
+        },
+        {
+          "id": "utviklingsteori-fordypning",
+          "label": "Utviklingsdebatter og bistand",
+          "kategori": "Teori",
+          "desc": "Fordypning i utviklingsfeltet: bistandens institusjoner og praksis, globale trender og kritiske debatter om utvikling.",
+          "note": "Programmene i internasjonale studier/relasjoner har ingen tilsvarende fordypning i utviklingsfeltet.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_ims",
+              "emnekoder": [
+                "EDS230-1"
+              ],
+              "merknad": "global utvikling og bistand"
+            },
+            {
+              "entryId": "uio_utvikling_baerekraft",
+              "emnekoder": [
+                "SOSANT2530-1"
+              ],
+              "merknad": "sosialantropologisk vinkling"
+            },
+            {
+              "entryId": "oslomet_utviklingsstudier",
+              "emnekoder": [
+                "UTVB3003-1"
+              ],
+              "merknad": "innføring i utviklingsindustrien, 15 sp"
+            },
+            {
+              "entryId": "uia_globale_utviklingsstudier",
+              "emnekoder": [
+                "UT-300-1"
+              ]
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_ims",
+              "emnekoder": [
+                "EDS230-1"
+              ],
+              "merknad": "global utvikling og bistand"
+            },
+            {
+              "entryId": "uio_utvikling_baerekraft",
+              "emnekoder": [
+                "SOSANT2530-1"
+              ],
+              "merknad": "sosialantropologisk vinkling"
+            },
+            {
+              "entryId": "oslomet_utviklingsstudier",
+              "emnekoder": [
+                "UTVB3003-1"
+              ],
+              "merknad": "innføring i utviklingsindustrien, 15 sp"
+            },
+            {
+              "entryId": "uia_globale_utviklingsstudier",
+              "emnekoder": [
+                "UT-300-1"
+              ],
+              "merknad": null
+            }
+          ]
+        },
+        {
+          "id": "regional-analyse",
+          "label": "Regional fordypning",
+          "kategori": "Fagspesifikt",
+          "desc": "Regionalt avgrensede emner om utviklingsutfordringer i en bestemt del av verden.",
+          "note": "UiO (begge programmene), INN og Nord har regionale emner, men de er historie- eller utenrikspolitisk orientert og er derfor ikke koblet.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_ims",
+              "emnekoder": [
+                "EDS272-1"
+              ],
+              "merknad": "rurale India, knyttet til India-oppholdet"
+            },
+            {
+              "entryId": "oslomet_utviklingsstudier",
+              "emnekoder": [
+                "UTVB1200-1",
+                "UTVB3141-1"
+              ],
+              "merknad": "regionalkunnskap og globalhistorie + Midtøsten"
+            },
+            {
+              "entryId": "uia_globale_utviklingsstudier",
+              "emnekoder": [
+                "UT-203-1"
+              ],
+              "merknad": "obligatorisk emne i regional analyse"
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_ims",
+              "emnekoder": [
+                "EDS272-1"
+              ],
+              "merknad": "rurale India, knyttet til India-oppholdet"
+            },
+            {
+              "entryId": "oslomet_utviklingsstudier",
+              "emnekoder": [
+                "UTVB1200-1",
+                "UTVB3141-1"
+              ],
+              "merknad": "regionalkunnskap og globalhistorie + Midtøsten"
+            },
+            {
+              "entryId": "uia_globale_utviklingsstudier",
+              "emnekoder": [
+                "UT-203-1"
+              ],
+              "merknad": "obligatorisk emne i regional analyse"
+            }
+          ]
+        },
+        {
+          "id": "menneskerettigheter",
+          "label": "Menneskerettigheter og global rettferdighet",
+          "kategori": "Politikk",
+          "desc": "Menneskerettighetene som normativt og politisk rammeverk, og spørsmål om global rettferdighet.",
+          "note": "Innretningen er ulik: NMBU knytter menneskerettighetene til utvikling, UiO til konflikt i internasjonal politikk og INN til global rettferdighet i et politisk-filosofisk perspektiv. UiO int.stud. er ikke koblet, fordi programmets menneskerettighetsemner er rettsvitenskapelige (JUROFF1410 Folkerett, JUR1910 Women's Law and Human Rights) og ikke faglig likeverdige. OsloMet, UiA og Nord har ingen tilsvarende emner.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_ims",
+              "emnekoder": [
+                "EDS245-1"
+              ]
+            },
+            {
+              "entryId": "uio_utvikling_baerekraft",
+              "emnekoder": [
+                "STV2235-1"
+              ],
+              "merknad": "valgemne, 13 kandidater i 2024"
+            },
+            {
+              "entryId": "inn_internasjonale_studier",
+              "emnekoder": [
+                "INT2012-1"
+              ]
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_ims",
+              "emnekoder": [
+                "EDS245-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "uio_utvikling_baerekraft",
+              "emnekoder": [
+                "STV2235-1"
+              ],
+              "merknad": "valgemne, 13 kandidater i 2024"
+            },
+            {
+              "entryId": "inn_internasjonale_studier",
+              "emnekoder": [
+                "INT2012-1"
+              ],
+              "merknad": null
+            }
+          ]
+        },
+        {
+          "id": "bacheloroppgave",
+          "label": "Bacheloroppgave",
+          "kategori": "Oppgave",
+          "desc": "Selvstendig avsluttende oppgave i tredje studieår.",
+          "note": "Omfanget varierer mye, fra 10 sp (UiO int.stud., Nord) til 30 sp (UiO utviklingsstudier, OsloMet). INN byttet emnekode fra INT2011 (20 sp) til INT2016 (10 sp), og begge er tatt med.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_ims",
+              "emnekoder": [
+                "B15-DS-1"
+              ],
+              "merknad": "15 sp"
+            },
+            {
+              "entryId": "uio_utvikling_baerekraft",
+              "emnekoder": [
+                "UTV3091-1"
+              ],
+              "merknad": "avslutningsemne, 30 sp"
+            },
+            {
+              "entryId": "oslomet_utviklingsstudier",
+              "emnekoder": [
+                "UTVB3300-1"
+              ],
+              "merknad": "30 sp; bacheloroppgaven skrives innenfor dette emnet"
+            },
+            {
+              "entryId": "uia_globale_utviklingsstudier",
+              "emnekoder": [
+                "UT-201-2"
+              ],
+              "merknad": "15 sp"
+            },
+            {
+              "entryId": "uio_internasjonale_studier",
+              "emnekoder": [
+                "INTER3090-1"
+              ],
+              "merknad": "oppgaveemne, 10 sp"
+            },
+            {
+              "entryId": "inn_internasjonale_studier",
+              "emnekoder": [
+                "INT2011-1",
+                "INT2016-1"
+              ]
+            },
+            {
+              "entryId": "nord_internasjonale_relasjoner_b",
+              "emnekoder": [
+                "IN200S-1"
+              ],
+              "merknad": "10 sp"
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_ims",
+              "emnekoder": [
+                "B15-DS-1"
+              ],
+              "merknad": "15 sp"
+            },
+            {
+              "entryId": "uio_utvikling_baerekraft",
+              "emnekoder": [
+                "UTV3091-1"
+              ],
+              "merknad": "avslutningsemne, 30 sp"
+            },
+            {
+              "entryId": "oslomet_utviklingsstudier",
+              "emnekoder": [
+                "UTVB3300-1"
+              ],
+              "merknad": "30 sp; bacheloroppgaven skrives innenfor dette emnet"
+            },
+            {
+              "entryId": "uia_globale_utviklingsstudier",
+              "emnekoder": [
+                "UT-201-2"
+              ],
+              "merknad": "15 sp"
+            },
+            {
+              "entryId": "uio_internasjonale_studier",
+              "emnekoder": [
+                "INTER3090-1"
+              ],
+              "merknad": "oppgaveemne, 10 sp"
+            },
+            {
+              "entryId": "inn_internasjonale_studier",
+              "emnekoder": [
+                "INT2011-1",
+                "INT2016-1"
+              ],
+              "merknad": null
+            },
+            {
+              "entryId": "nord_internasjonale_relasjoner_b",
+              "emnekoder": [
+                "IN200S-1"
+              ],
+              "merknad": "10 sp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "samfok_miljo",
+      "note": "Denne gruppen har for lite overlapp til en reell emnekobling, og det ble bare én emnetype. NMBUs master i samfunnsøkonomi og miljøforvaltning tok opp første kull høsten 2024, og DBH har bare rapportert sju emner for programmet. Bare to av dem har minst ti kandidater (ECN340 og ECN306), og programmets egne kjerneemner i naturressurs- og miljøøkonomi, global miljøstyring, klimaøkonomi og klima og samfunn hadde 0-3 kandidater i 2024 og 2025. Det finnes ennå ingen masteroppgave rapportert for programmet, så masteroppgaven kan ikke kobles mot NTNU SØK3900, UiO ECON4091 eller UiB ECON391. Mikroøkonomi og økonometri er heller ikke koblet: NMBUs ECN215 og ECN201 ligger på 200-nivå og er ifølge studieplanen oppkvalifiseringsemner i første semester, ikke masteremner på linje med UiO ECON4220/ECON4150 og UiB ECON310/ECON340, og de hadde 8 og 3 kandidater. ECN340 (Introduksjon til samfunnsøkonomi, global økonomi og miljøforvaltning) er et programinternt innføringsemne uten motpart. NTNU inngår ikke i den ene emnetypen, fordi NTNU ikke har rapportert miljø- eller ressursøkonomiemner med minst ti kandidater. Gruppen bør vurderes på nytt når NMBU-kullene fra 2024 og 2025 er ferdige.",
+      "courseTypes": [
+        {
+          "id": "miljo-ressursokonomi",
+          "label": "Miljø- og ressursøkonomi",
+          "kategori": "Økonomi",
+          "desc": "Økonomisk analyse av miljø- og ressursbruk: eksternaliteter, virkemidler som avgifter og kvoter, verdsetting og bærekraft.",
+          "note": "NTNU har ingen rapporterte emner i miljø- eller ressursøkonomi med nok kandidater og er derfor ikke med. NMBUs ECN306 er 5 sp og bredere anlagt (bærekraftens økonomi), men krever mikroøkonomi og miljø- og ressursøkonomi og ligger på masternivå.",
+          "koblinger": [
+            {
+              "entryId": "nmbu_eeg",
+              "emnekoder": [
+                "ECN306-1"
+              ],
+              "merknad": "Økonomi og bærekraft, 5 sp"
+            },
+            {
+              "entryId": "uio_economics",
+              "emnekoder": [
+                "ECON4910-1",
+                "ECON4925-1"
+              ],
+              "merknad": "miljøøkonomi og ressursøkonomi, 10 sp hver; begge hadde 10-11 kandidater i 2025"
+            },
+            {
+              "entryId": "uib_samfunnsokonomi",
+              "emnekoder": [
+                "ECON316A-0"
+              ],
+              "merknad": "Miljøøkonomi, 5 sp; 16 kandidater i 2024"
+            }
+          ],
+          "links": [
+            {
+              "entryId": "nmbu_eeg",
+              "emnekoder": [
+                "ECN306-1"
+              ],
+              "merknad": "Økonomi og bærekraft, 5 sp"
+            },
+            {
+              "entryId": "uio_economics",
+              "emnekoder": [
+                "ECON4910-1",
+                "ECON4925-1"
+              ],
+              "merknad": "miljøøkonomi og ressursøkonomi, 10 sp hver; begge hadde 10-11 kandidater i 2025"
+            },
+            {
+              "entryId": "uib_samfunnsokonomi",
+              "emnekoder": [
+                "ECON316A-0"
+              ],
+              "merknad": "Miljøøkonomi, 5 sp; 16 kandidater i 2024"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

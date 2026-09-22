@@ -1172,10 +1172,18 @@ export function LandsamCourseAnalysis({ initialGroup }: { initialGroup?: string 
     selectedPrograms.find((p) => p.entryId === courseProgramId) ?? selectedPrograms[0] ?? null;
 
   const tabs: { id: CourseTab; label: string }[] = [
-    { id: 'indeks',    label: 'Karakterindeks' },
-    { id: 'fordeling', label: 'Karakterfordeling' },
-    { id: 'emner',     label: 'Emner' },
+    { id: 'indeks',     label: 'Karakterindeks' },
+    { id: 'fordeling',  label: 'Karakterfordeling' },
+    { id: 'emner',      label: 'Emner' },
+    { id: 'sammenlign', label: 'Sammenlign emne' },
   ];
+
+  const mapping = courseMappingFor(group.id);
+  const courseTypes = mapping?.courseTypes ?? [];
+  const activeCourseType =
+    courseTypes.find((ct) => ct.id === courseTypeByGroup[group.id]) ?? courseTypes[0] ?? null;
+  const setCourseTypeId = (id: string) =>
+    setCourseTypeByGroup((prev) => ({ ...prev, [group.id]: id }));
 
   return (
     <div className="space-y-5">
@@ -1221,8 +1229,12 @@ export function LandsamCourseAnalysis({ initialGroup }: { initialGroup?: string 
           </div>
           <div className="flex items-center gap-2 shrink-0">
             <CsvExportButton
-              onExport={() => exportLandsamCoursesCsv(group.id, selectedIds, year, minKandidater)}
-              label="Last ned CSV"
+              onExport={() =>
+                tab === 'sammenlign' && activeCourseType
+                  ? exportLandsamCourseTypeCsv(group.id, activeCourseType.id, selectedIds, year, minKandidater)
+                  : exportLandsamCoursesCsv(group.id, selectedIds, year, minKandidater)
+              }
+              label={tab === 'sammenlign' && activeCourseType ? 'Last ned faget som CSV' : 'Last ned CSV'}
               dark
             />
             <a href="https://dbh.hkdir.no" target="_blank" rel="noopener noreferrer"
@@ -1349,6 +1361,42 @@ export function LandsamCourseAnalysis({ initialGroup }: { initialGroup?: string 
                     )}
                   </>
                 )}
+
+                {tab === 'sammenlign' && (
+                  !mapping || !activeCourseType ? (
+                    <div className="flex items-start gap-2 rounded-lg px-4 py-3"
+                      style={{ backgroundColor: 'var(--nmbu-beige-light)', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-2)', fontSize: 12 }}>
+                      <Info className="w-3.5 h-3.5 shrink-0 mt-0.5" />
+                      <span>Emnekobling for denne gruppen er ikke laget ennå.</span>
+                    </div>
+                  ) : (
+                    <>
+                      <div className="mb-4 flex items-start gap-2" style={{ fontSize: 12, color: 'var(--nmbu-neutral-2)' }}>
+                        <Info className="w-3.5 h-3.5 shrink-0 mt-0.5" />
+                        <span>
+                          Samme fag hos alle de valgte programmene i {year}. Er faget delt i flere emner,
+                          summeres karakterene. Terskelen på minst {minKandidater} kandidater gjelder per emnekode.
+                        </span>
+                      </div>
+                      {mapping.note && (
+                        <p className="mb-4 text-xs leading-relaxed" style={{ color: 'var(--nmbu-neutral-2)' }}>
+                          {mapping.note}
+                        </p>
+                      )}
+                      <CourseTypePicker
+                        courseTypes={courseTypes}
+                        selected={activeCourseType}
+                        onSelect={setCourseTypeId}
+                      />
+                      <SammenlignEmneView
+                        courseType={activeCourseType}
+                        programs={selectedPrograms}
+                        year={year}
+                        minKandidater={minKandidater}
+                      />
+                    </>
+                  )
+                )}
               </>
             )}
           </div>
@@ -1361,6 +1409,7 @@ export function LandsamCourseAnalysis({ initialGroup }: { initialGroup?: string 
         <span>
           Kilde: DBH/HKDIR tabell 308 og 208. Snitt A=5…F=0 over bokstavkarakterer; bestått/ikke bestått
           holdes utenfor. Emner uten navn i DBH vises med emnekode.
+          Emnekobling: manuelt kartlagt mot studieplanene.
         </span>
       </div>
 

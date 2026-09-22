@@ -1,0 +1,61 @@
+{
+  "groupId": "intrelasjoner",
+  "hentet": "2026-09-22",
+  "note": "Gruppen har bare to programmer, og UiOs Peace and Conflict Studies er en fredsfaglig master, ikke en generell master i internasjonale relasjoner. Overlappet er derfor begrenset til teori, metode, sikkerhet/konflikt og masteroppgave, og det ble fem emnetyper. NMBUs EDS203 (innføring, 5 sp), EDS379 (global politisk økonomi) og EDS381 (feministisk og kritisk IR-teori) har ingen motpart ved UiO, og UiOs PECOS4022 (anvendt statistikk) har ingen frittstående motpart ved NMBU. Emnekodene gjelder studieløpet slik det var rapportert til DBH til og med 2025; UiO la om PECOS til Peace, Conflict and Democracy Studies fra høsten 2026.",
+  "emnetyper": [
+    {
+      "id": "ir-teori",
+      "label": "Teori i internasjonale relasjoner",
+      "kategori": "Teori",
+      "desc": "Sentrale teoretiske perspektiver på internasjonal politikk, konflikt og samarbeid mellom stater og andre aktører.",
+      "note": "NMBU deler teorien i to 10 sp-emner over to semestre; UiOs PECOS4025 er ett 10 sp-emne med fredsfaglig innretning. NMBUs innføringsemne EDS203 (5 sp) har ingen motpart ved UiO.",
+      "koblinger": [
+        { "entryId": "nmbu_intrel", "emnekoder": ["EDS374A-1", "EDS374B-1"] },
+        { "entryId": "uio_pecos", "emnekoder": ["PECOS4025-1"], "merknad": "analytiske perspektiver på fred og konflikt" }
+      ]
+    },
+    {
+      "id": "forskningsmetode",
+      "label": "Forskningsmetode og prosjektdesign",
+      "kategori": "Metode",
+      "desc": "Samfunnsvitenskapelig metode på masternivå og utforming av forskningsdesign for masteroppgaven.",
+      "note": "NMBU samler metode og prosjektdesign i ett 15 sp-emne; UiO deler det i et kvalitativt metodeemne (10 sp) og et designseminar (5 sp). UiOs obligatoriske statistikkemne PECOS4022 har ingen frittstående motpart ved NMBU.",
+      "koblinger": [
+        { "entryId": "nmbu_intrel", "emnekoder": ["EDS312-1"] },
+        { "entryId": "uio_pecos", "emnekoder": ["STV4030B-1", "STV4911-1"] }
+      ]
+    },
+    {
+      "id": "sikkerhetsstudier",
+      "label": "Sikkerhetsstudier og strategi",
+      "kategori": "Politikk",
+      "desc": "Sikkerhetsbegrepet, trusselbilder, strategi og sikkerhetspolitikk i internasjonal politikk.",
+      "note": "Begge er valgemner. UiO-emnet er lite (13 kandidater i 2024, 6 i 2025) mot 51 ved NMBU i 2025.",
+      "koblinger": [
+        { "entryId": "nmbu_intrel", "emnekoder": ["EDS372-1"] },
+        { "entryId": "uio_pecos", "emnekoder": ["STV4225B-1"] }
+      ]
+    },
+    {
+      "id": "konflikt-statsbygging",
+      "label": "Konflikt og statsbygging",
+      "kategori": "Politikk",
+      "desc": "Årsaker til væpnet konflikt og statsbygging i sårbare og konfliktberørte stater.",
+      "koblinger": [
+        { "entryId": "nmbu_intrel", "emnekoder": ["EDS378-2"] },
+        { "entryId": "uio_pecos", "emnekoder": ["PECOS4010-1"] }
+      ]
+    },
+    {
+      "id": "masteroppgave",
+      "label": "Masteroppgave",
+      "kategori": "Oppgave",
+      "desc": "Selvstendig vitenskapelig arbeid som avslutter masterstudiet.",
+      "note": "Omfanget er ulikt: 30 sp ved NMBU og 45 sp ved UiO.",
+      "koblinger": [
+        { "entryId": "nmbu_intrel", "emnekoder": ["M30-IR-1"] },
+        { "entryId": "uio_pecos", "emnekoder": ["PECOS4096-1"] }
+      ]
+    }
+  ]
+}

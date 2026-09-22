@@ -1,0 +1,553 @@
+{
+  "groupId": "byregion",
+  "hentet": "2026-09-22",
+  "note": "Bare NMBUs femårige master har hele bredden av plan-, juss- og geomatikkemner. UiS' femårige byplanleggingsmaster (uis_byplanlegging) har ingen emner i DBH-materialet og er derfor ikke koblet. NTNUs toårige master er faglig nærmest NMBUs masterdel, mens bachelorprogrammene ved UiS, UiT, Nord, UiA og Volda er samfunnsvitenskapelige og mangler juss- og prosjekteringsemner. UiS' byggingeniør (studieretning byplanlegging) er i hovedsak et konstruksjonsteknisk løp; bare noen få emner lar seg koble. Nord og Volda har svært få emner over ti kandidater i 2024–2025, så koblingene deres er tynne. Transport og mobilitet er ikke tatt med som egen emnetype, fordi NMBUs APL270 hadde for få kandidater i 2024 og 2025 til å kunne sammenlignes.",
+  "emnetyper": [
+    {
+      "id": "planteori",
+      "label": "Planteori og innføring i planlegging",
+      "kategori": "Planlegging",
+      "desc": "Planleggingens teorigrunnlag, fagtradisjon og rolle i samfunnet.",
+      "note": "Nord og UiS' byggingeniør har ingen emner over terskelen i planteori.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_byreg",
+          "emnekoder": [
+            "APL100-1",
+            "APL103-1",
+            "APL230-1"
+          ],
+          "merknad": "Introduksjon til profesjonsstudiet, fagets historie og fagtradisjon, og Planteori – til sammen 35 sp."
+        },
+        {
+          "entryId": "ntnu_fysisk_planlegging",
+          "emnekoder": [
+            "FP4350-1"
+          ]
+        },
+        {
+          "entryId": "uis_byplan_samfsikkerhet",
+          "emnekoder": [
+            "BYS115-1"
+          ],
+          "merknad": "Innføring i samfunnsplanlegging, bare 5 sp."
+        },
+        {
+          "entryId": "uit_samfunnsplanlegging",
+          "emnekoder": [
+            "SPL-1001-1"
+          ],
+          "merknad": "Plan, kultur og næring er UiTs innføringsemne i planlegging."
+        },
+        {
+          "entryId": "uia_samfunnsplanlegging",
+          "emnekoder": [
+            "SV-151-1",
+            "SV-200-2"
+          ]
+        },
+        {
+          "entryId": "hivolda_planlegging",
+          "emnekoder": [
+            "PLA102-1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arealplan",
+      "label": "Areal- og reguleringsplanlegging",
+      "kategori": "Planlegging",
+      "desc": "Utarbeiding av areal- og reguleringsplaner, planprosess og medvirkning.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_byreg",
+          "emnekoder": [
+            "APL108-1",
+            "APL200-1"
+          ],
+          "merknad": "Introduksjon til arealplanlegging og Lokal planlegging, til sammen 25 sp."
+        },
+        {
+          "entryId": "ntnu_fysisk_planlegging",
+          "emnekoder": [
+            "AAR4215-1"
+          ]
+        },
+        {
+          "entryId": "uis_byplan_samfsikkerhet",
+          "emnekoder": [
+            "BYG120-1",
+            "BYG285-1"
+          ]
+        },
+        {
+          "entryId": "uis_ing_bygg_byplan",
+          "emnekoder": [
+            "BYG120-1"
+          ],
+          "merknad": "Områdeplanlegging er det eneste arealplanemnet i byggingeniørløpet med minst ti kandidater (2024)."
+        },
+        {
+          "entryId": "uit_samfunnsplanlegging",
+          "emnekoder": [
+            "SPL-2009-1"
+          ],
+          "merknad": "Plan, medvirkning og prosess dekker planprosessen, men ikke plantegning og arealformål."
+        }
+      ]
+    },
+    {
+      "id": "byplan-urbanisme",
+      "label": "Byutvikling, byrom og stedsforming",
+      "kategori": "Planlegging",
+      "desc": "Byteori, stedsanalyse og utforming av byrom, bebyggelse og byutviklingsprosjekter.",
+      "note": "UiT, Nord og Volda har ingen emner i fysisk byforming over terskelen.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_byreg",
+          "emnekoder": [
+            "LAA200-1",
+            "LAA350-1",
+            "LAA313-1"
+          ]
+        },
+        {
+          "entryId": "ntnu_fysisk_planlegging",
+          "emnekoder": [
+            "FP4100-1",
+            "AAR4845-1"
+          ],
+          "merknad": "Arkitektur og stedsforming dekker stedsanalyse, byformingshistorie og urban design; Landskapsanalyse svarer til den romlige analysedelen i NMBUs LAA200."
+        },
+        {
+          "entryId": "uis_byplan_samfsikkerhet",
+          "emnekoder": [
+            "BYG105-1",
+            "BYG115-1"
+          ]
+        },
+        {
+          "entryId": "uia_samfunnsplanlegging",
+          "emnekoder": [
+            "SV-213-1"
+          ],
+          "merknad": "Byutvikling og planlegging er samfunnsvitenskapelig, uten formgivingsdel."
+        }
+      ]
+    },
+    {
+      "id": "planjus",
+      "label": "Plan- og bygningsrett",
+      "kategori": "Juss",
+      "desc": "Plan- og bygningsloven, planvedtak, gjennomføringsvirkemidler og byggesaksbehandling.",
+      "note": "Ingen av bachelorprogrammene har et eget emne i plan- og bygningsrett.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_byreg",
+          "emnekoder": [
+            "JUS320-1",
+            "JUS321-1"
+          ],
+          "merknad": "Plan- og bygningsrett I og II, 5 sp hver."
+        },
+        {
+          "entryId": "ntnu_fysisk_planlegging",
+          "emnekoder": [
+            "AAR4815-1"
+          ],
+          "merknad": "Plan og byggeprosess dekker det juridiske og prosessuelle sporet, men er ikke et rent jusemne."
+        }
+      ]
+    },
+    {
+      "id": "forvaltningsrett",
+      "label": "Forvaltningsrett og juridisk metode",
+      "kategori": "Juss",
+      "desc": "Juridisk metode, forvaltningsrett og offentlig saksbehandling i planmyndighetenes arbeid.",
+      "note": "NTNU, UiT og UiS har ingen juridiske emner over terskelen.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_byreg",
+          "emnekoder": [
+            "JUS100-1",
+            "JUS201-1"
+          ]
+        },
+        {
+          "entryId": "uia_samfunnsplanlegging",
+          "emnekoder": [
+            "JU-200-1"
+          ],
+          "merknad": "Forvaltningsrett, 10 sp; nådde ti kandidater i 2024, færre i 2025."
+        },
+        {
+          "entryId": "nord_geografi_samfplan",
+          "emnekoder": [
+            "JUR1001-1"
+          ]
+        },
+        {
+          "entryId": "hivolda_planlegging",
+          "emnekoder": [
+            "GOV121-1"
+          ],
+          "merknad": "Innføring i forvaltnings- og miljørett dekker både forvaltningsrett og miljørett."
+        }
+      ]
+    },
+    {
+      "id": "miljoforvaltning",
+      "label": "Miljø- og naturforvaltning",
+      "kategori": "Natur/Økologi",
+      "desc": "Vern og forvaltning av natur, miljøstyring og miljøpolitikk som rammer for arealbruk.",
+      "note": "NTNU, Volda og UiS' byggingeniør har ingen tilsvarende emner over terskelen.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_byreg",
+          "emnekoder": [
+            "JUS220-1",
+            "NATF200-1",
+            "APL380-1"
+          ],
+          "merknad": "Miljøforvaltningsrett, Vern og forvaltning av norsk natur og Environmental Governance for Planning."
+        },
+        {
+          "entryId": "uis_byplan_samfsikkerhet",
+          "emnekoder": [
+            "BST210-1"
+          ],
+          "merknad": "Miljø- og energipolitikk, politikkfaglig vinklet."
+        },
+        {
+          "entryId": "uia_samfunnsplanlegging",
+          "emnekoder": [
+            "UT-204-2"
+          ]
+        },
+        {
+          "entryId": "nord_geografi_samfplan",
+          "emnekoder": [
+            "GEO1132-1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "baerekraft",
+      "label": "Bærekraft og klima i planlegging",
+      "kategori": "Planlegging",
+      "desc": "Klimatilpasning, miljøhensyn og bærekraftmål som premiss for plan- og arealbeslutninger.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_byreg",
+          "emnekoder": [
+            "APL240-1",
+            "APL241-1"
+          ],
+          "merknad": "Miljø og planlegging del 1 og 2, 5 sp hver; del 2 så vidt over terskelen i 2025."
+        },
+        {
+          "entryId": "uis_byplan_samfsikkerhet",
+          "emnekoder": [
+            "BYS310-1"
+          ]
+        },
+        {
+          "entryId": "uit_samfunnsplanlegging",
+          "emnekoder": [
+            "SPL-2011-1"
+          ],
+          "merknad": "Bærekraftige samfunn; nådde ti kandidater i 2024."
+        }
+      ]
+    },
+    {
+      "id": "gis",
+      "label": "GIS og digitale planverktøy",
+      "kategori": "Geomatikk/Teknologi",
+      "desc": "Geografiske informasjonssystemer, romlig analyse og digitale tegne- og modelleringsverktøy.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_byreg",
+          "emnekoder": [
+            "LAD100-1",
+            "LAD102-1",
+            "LAD203-1"
+          ]
+        },
+        {
+          "entryId": "ntnu_fysisk_planlegging",
+          "emnekoder": [
+            "AAR4841-1",
+            "AAR4843-1"
+          ]
+        },
+        {
+          "entryId": "uit_samfunnsplanlegging",
+          "emnekoder": [
+            "SPL-2012-1"
+          ]
+        },
+        {
+          "entryId": "nord_geografi_samfplan",
+          "emnekoder": [
+            "GEO2006-1"
+          ],
+          "merknad": "Romlig analyse er GIS-basert; Nords rene GIS-emne GEO1009 har for få kandidater."
+        },
+        {
+          "entryId": "uis_byplan_samfsikkerhet",
+          "emnekoder": [
+            "BYG100-1"
+          ],
+          "merknad": "Dataassistert konstruksjon (DAK) er CAD-tegning, ikke GIS; svarer nærmest til NMBUs LAD100."
+        },
+        {
+          "entryId": "uis_ing_bygg_byplan",
+          "emnekoder": [
+            "BYG100-1"
+          ],
+          "merknad": "Samme DAK-emne som bachelorprogrammet i byplanlegging og samfunnssikkerhet."
+        }
+      ]
+    },
+    {
+      "id": "metode",
+      "label": "Samfunnsvitenskapelig metode og statistikk",
+      "kategori": "Metode",
+      "desc": "Forskningsdesign, datainnsamling, analyse og statistikk som grunnlag for plan- og oppgavearbeid.",
+      "note": "UiTs metodeemne (SVF-1050/1051) hadde for få kandidater i 2024–2025 til å tas med.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_byreg",
+          "emnekoder": [
+            "AOS240-1"
+          ],
+          "merknad": "Samfunnsvitenskapelig metode, bare 5 sp mot 7,5–10 sp hos de andre."
+        },
+        {
+          "entryId": "ntnu_fysisk_planlegging",
+          "emnekoder": [
+            "AAR4874-1"
+          ]
+        },
+        {
+          "entryId": "uia_samfunnsplanlegging",
+          "emnekoder": [
+            "ME-107-1"
+          ]
+        },
+        {
+          "entryId": "nord_geografi_samfplan",
+          "emnekoder": [
+            "MET1007-1"
+          ]
+        },
+        {
+          "entryId": "hivolda_planlegging",
+          "emnekoder": [
+            "PRO121-1"
+          ],
+          "merknad": "Nådde ti kandidater i 2024, færre i 2025."
+        },
+        {
+          "entryId": "uis_ing_bygg_byplan",
+          "emnekoder": [
+            "STA100-1"
+          ],
+          "merknad": "Sannsynlighetsregning og statistikk er ingeniørløpets metodeemne; mer statistikk og mindre samfunnsvitenskapelig design."
+        }
+      ]
+    },
+    {
+      "id": "regional",
+      "label": "Regional utvikling og byregioner",
+      "kategori": "Planlegging",
+      "desc": "Regionale utviklingstrekk, kommune- og regionplanlegging og samspillet mellom by og omland.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_byreg",
+          "emnekoder": [
+            "APL360-1",
+            "LAA360-1"
+          ],
+          "merknad": "Begge er valgbare emner på masternivå."
+        },
+        {
+          "entryId": "ntnu_fysisk_planlegging",
+          "emnekoder": [
+            "AAR4220-1"
+          ]
+        },
+        {
+          "entryId": "uis_byplan_samfsikkerhet",
+          "emnekoder": [
+            "BYG240-1"
+          ]
+        },
+        {
+          "entryId": "uia_samfunnsplanlegging",
+          "emnekoder": [
+            "SV-152-1"
+          ],
+          "merknad": "Økonomisk geografi og planlegging dekker regional næringsutvikling."
+        },
+        {
+          "entryId": "hivolda_planlegging",
+          "emnekoder": [
+            "GOV231-1",
+            "IPA213-2"
+          ],
+          "merknad": "Samme emne før og etter emnekodeskiftet i 2025; begge handler om regional utvikling i EU og Norge."
+        }
+      ]
+    },
+    {
+      "id": "samfunnsgeografi",
+      "label": "Samfunnsgeografi og urban sosiologi",
+      "kategori": "Fagspesifikt",
+      "desc": "Samfunnsfaglige perspektiver på sted, by og befolkning: kulturgeografi og sosiologi.",
+      "note": "NTNU og Volda har ingen emner i dette over terskelen.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_byreg",
+          "emnekoder": [
+            "APL280-1"
+          ],
+          "merknad": "Urban sosiologi, 5 sp."
+        },
+        {
+          "entryId": "uia_samfunnsplanlegging",
+          "emnekoder": [
+            "SV-153-1",
+            "SV-133-1"
+          ]
+        },
+        {
+          "entryId": "nord_geografi_samfplan",
+          "emnekoder": [
+            "GEO1123-1"
+          ]
+        },
+        {
+          "entryId": "uit_samfunnsplanlegging",
+          "emnekoder": [
+            "SOS-2001-1"
+          ],
+          "merknad": "Sosiologiske analysemåter; nådde ti kandidater i 2024, ingen i 2025."
+        },
+        {
+          "entryId": "uis_byplan_samfsikkerhet",
+          "emnekoder": [
+            "BSS360-1"
+          ],
+          "merknad": "Global sosiologi er bredere enn urban sosiologi."
+        }
+      ]
+    },
+    {
+      "id": "eiendom-okonomi",
+      "label": "Eiendom, prosjektutvikling og økonomi",
+      "kategori": "Fagspesifikt",
+      "desc": "Eiendomsrett, eiendomsmarked og utvikling og gjennomføring av utbyggingsprosjekter.",
+      "note": "UiT, Nord, UiA og Volda har ingen emner i eiendom eller prosjektutvikling.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_byreg",
+          "emnekoder": [
+            "JUS110-1",
+            "EIE310-1",
+            "APL350-1"
+          ],
+          "merknad": "Innføring i eiendomsjus, Eiendomsmarked og analyse og Prosjektutvikling og prosjektgjennomføring."
+        },
+        {
+          "entryId": "ntnu_fysisk_planlegging",
+          "emnekoder": [
+            "AAR4828-1"
+          ],
+          "merknad": "Eiendomsutvikling; nådde ti kandidater i 2024, færre i 2025."
+        },
+        {
+          "entryId": "uis_ing_bygg_byplan",
+          "emnekoder": [
+            "IND200-1"
+          ],
+          "merknad": "Økonomi og marked er et generelt ingeniørøkonomiemne, uten eiendomsfaglig innhold."
+        }
+      ]
+    },
+    {
+      "id": "teknisk-infra",
+      "label": "Kommunalteknikk og teknisk infrastruktur",
+      "kategori": "Geomatikk/Teknologi",
+      "desc": "Vann, avløp, overvann og annen teknisk infrastruktur som premiss for utbygging.",
+      "note": "Bare NMBU og UiS' bachelor i byplanlegging og samfunnssikkerhet har slike emner over terskelen.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_byreg",
+          "emnekoder": [
+            "THT100-1",
+            "THT200-2"
+          ],
+          "merknad": "Kommunalteknikk (5 sp) og Bærekraftig overvannshåndtering (7,5 sp, nytt i 2025)."
+        },
+        {
+          "entryId": "uis_byplan_samfsikkerhet",
+          "emnekoder": [
+            "BYG125-1"
+          ],
+          "merknad": "Vann og avløp, 10 sp."
+        }
+      ]
+    },
+    {
+      "id": "oppgave",
+      "label": "Bachelor- og masteroppgave",
+      "kategori": "Oppgave",
+      "desc": "Avsluttende selvstendig arbeid med tilhørende forberedende emne.",
+      "note": "Nords bacheloroppgave (GEO2003) har for få kandidater. UiS' byggingeniør er utelatt: bacheloroppgaven i byplanlegging (BYGBBAC) har for få kandidater, og BYGKBAC er konstruksjonsteknikk og dermed et annet fag.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_byreg",
+          "emnekoder": [
+            "M30-BYREG-1",
+            "MAST301-1"
+          ]
+        },
+        {
+          "entryId": "ntnu_fysisk_planlegging",
+          "emnekoder": [
+            "FP4400-1"
+          ]
+        },
+        {
+          "entryId": "uis_byplan_samfsikkerhet",
+          "emnekoder": [
+            "BYSBAC-1"
+          ]
+        },
+        {
+          "entryId": "uit_samfunnsplanlegging",
+          "emnekoder": [
+            "SPL-2003-1"
+          ]
+        },
+        {
+          "entryId": "uia_samfunnsplanlegging",
+          "emnekoder": [
+            "SV-301-1"
+          ]
+        },
+        {
+          "entryId": "hivolda_planlegging",
+          "emnekoder": [
+            "IPA210A-1"
+          ],
+          "merknad": "Bacheloroppgave i planlegging og administrasjon, 15 sp."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "groupId": "landskapsingenior",
+  "hentet": "2026-09-22",
+  "note": "De to bachelorene har et felles naturfaglig og landskapsfaglig fundament, men peker i hver sin retning. NMBUs landskapsingeniør er en teknisk utførelsesutdanning med tyngde i prosjektering, anleggsteknikk, vann og drift av grøntanlegg, mens HVLs landskapsplanlegging med landskapsarkitektur er en planleggings- og naturforvaltningsutdanning med tyngde i økologi, landskapsanalyse og arealplanlegging. Koblingene under dekker derfor bare det felles grunnlaget: planter, økologi, geologi og jord, kart og GIS, landskapsforvaltning, introduksjonen til landskapsarkitekturfaget og bacheloroppgaven. Emnestørrelsene er også ulike: HVL bruker gjennomgående 10 sp-blokker, NMBU alt fra 5 til 20 sp. NMBU har dessuten skiftet emnekoder og -omfang i perioden, slik at flere emnetyper må kobles til to kodeversjoner.",
+  "emnetyper": [
+    {
+      "id": "botanikk-og-okologi",
+      "label": "Botanikk og økologi",
+      "kategori": "Fagspesifikt",
+      "desc": "Plantenes systematikk, anatomi og fysiologi sammen med grunnleggende økologi, plantesamfunn og økosystemer.",
+      "note": "NMBU samler botanikk og økologi i ett plantefaglig emne, mens HVL har to atskilte grunnkurs. Samlet omfang er om lag likt (NMBU 10–20 sp, HVL 20 sp).",
+      "koblinger": [
+        { "entryId": "nmbu_landskapsing", "emnekoder": ["PHG113-1", "PHG113-2"], "merknad": "PHG113-1 (10 sp) er erstattet av PHG113-2 (20 sp) fra 2025." },
+        { "entryId": "hvl_landskapsplanlegging", "emnekoder": ["BI424-1", "BI445-3"], "merknad": "Botanikk grunnkurs og Økologi grunnkurs." }
+      ]
+    },
+    {
+      "id": "plantebruk-i-grontanlegg",
+      "label": "Plantebruk i grøntanlegg",
+      "kategori": "Fagspesifikt",
+      "desc": "Valg og bruk av landskapsplanter og vegetasjon i utforming av grønnstruktur og grøntanlegg i by og tettsted.",
+      "koblinger": [
+        { "entryId": "nmbu_landskapsing", "emnekoder": ["PHG213-1"], "merknad": "Landskapsplanter - Planteplan i praksis." },
+        { "entryId": "hvl_landskapsplanlegging", "emnekoder": ["BI436-1"], "merknad": "Grønnstruktur og urban vegetasjon, med vekt på planter som er vanlige i norske grøntanlegg." }
+      ]
+    },
+    {
+      "id": "skjotsel-og-vegetasjonsforvaltning",
+      "label": "Skjøtsel og forvaltning av vegetasjon",
+      "kategori": "Fagspesifikt",
+      "desc": "Etablering, skjøtsel og bevaring av vegetasjon og grøntareal over tid.",
+      "note": "Konteksten er ulik: NMBU ser på etablering og drift av anlagte grøntanlegg, mens HVL ser på skjøtsel og restaurering av semi-naturlige kulturmarkstyper. Fellesnevneren er skjøtselsfaget, og karakterene bør leses med det forbeholdet.",
+      "koblinger": [
+        { "entryId": "nmbu_landskapsing", "emnekoder": ["PHG215-1", "TMPA220-1"], "merknad": "Landskapsplanter - etablering, skjøtsel og bevaring og Park- og grøntanleggsteknikk, nyanlegg og skjøtsel." },
+        { "entryId": "hvl_landskapsplanlegging", "emnekoder": ["PL462-1"], "merknad": "Naturrestaurering, med hovedvekt på forvaltning og skjøtsel av kulturmark." }
+      ]
+    },
+    {
+      "id": "geologi-og-jord",
+      "label": "Geologi og jord",
+      "kategori": "Fagspesifikt",
+      "desc": "Berggrunn, løsmasser og landformer sammen med jordas oppbygning og egenskaper som vekstmedium.",
+      "note": "NMBU har i tillegg et eget innføringsemne om jord (JORD160) som HVL ikke har; HVLs jordstoff ligger inne i geologiemnet.",
+      "koblinger": [
+        { "entryId": "nmbu_landskapsing", "emnekoder": ["GEO100-1", "JORD160-1"] },
+        { "entryId": "hvl_landskapsplanlegging", "emnekoder": ["GE406-1"], "merknad": "Geologi grunnkurs." }
+      ]
+    },
+    {
+      "id": "kart-gis-og-digitale-verktoy",
+      "label": "Kart, GIS og digitale verktøy",
+      "kategori": "Geomatikk/Teknologi",
+      "desc": "Kartlære, geografiske informasjonssystemer og digitale tegne- og analyseverktøy i landskapsfaget.",
+      "note": "NMBUs emne har hovedvekt på DAK/tegneverktøy med en GIS-del, mens HVLs har hovedvekt på kartlære og GIS-analyse i QGIS. HVLs emne er dobbelt så stort (10 mot 5 sp).",
+      "koblinger": [
+        { "entryId": "nmbu_landskapsing", "emnekoder": ["LAD100-1"], "merknad": "Introduksjon til digitale verktøy (DAK og GIS)." },
+        { "entryId": "hvl_landskapsplanlegging", "emnekoder": ["GE413-1"], "merknad": "Kartlære og GIS." }
+      ]
+    },
+    {
+      "id": "landskapsforvaltning",
+      "label": "Landskaps- og kulturmiljøforvaltning",
+      "kategori": "Planlegging",
+      "desc": "Forvaltning av landskap, grøntanlegg og kulturmiljø: forvaltningssystem, roller, kulturminnevern og medvirkning.",
+      "koblinger": [
+        { "entryId": "nmbu_landskapsing", "emnekoder": ["LAA231-1", "LAA231-2"], "merknad": "To kodeversjoner av Bærekraftig landskapsforvaltning i perioden." },
+        { "entryId": "hvl_landskapsplanlegging", "emnekoder": ["PL471-2"], "merknad": "Kulturmiljøforvaltning; mer rettet mot kulturarv og bygde kulturmiljø enn NMBUs grøntforvaltning." }
+      ]
+    },
+    {
+      "id": "landskapsarkitektur-og-formgiving",
+      "label": "Innføring i landskapsarkitektur og formgiving",
+      "kategori": "Fagspesifikt",
+      "desc": "Introduksjon til landskapsarkitekturfaget: sentrale begreper, faghistorie, analyse av uterom og visuell formidling av egne ideer.",
+      "koblinger": [
+        { "entryId": "nmbu_landskapsing", "emnekoder": ["LAA115-1"], "merknad": "Introduksjon til profesjonsstudiet, felles for landskapsarkitekt og landskapsingeniør." },
+        { "entryId": "hvl_landskapsplanlegging", "emnekoder": ["PL425-2"], "merknad": "Rom og design; har i tillegg praktisk skisse- og tegnetrening." }
+      ]
+    },
+    {
+      "id": "bacheloroppgave",
+      "label": "Bacheloroppgave",
+      "kategori": "Oppgave",
+      "desc": "Det selvstendige avsluttende arbeidet i graden.",
+      "note": "HVLs bacheloroppgave er 20 sp mot NMBUs 15 sp.",
+      "koblinger": [
+        { "entryId": "nmbu_landskapsing", "emnekoder": ["B15-LI-1"] },
+        { "entryId": "hvl_landskapsplanlegging", "emnekoder": ["PL491-1"] }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "groupId": "eiendom",
+  "hentet": "2026-09-22",
+  "note": "Gruppa rommer to ganske ulike utdanningsfamilier. NMBUs femårige eiendomsmaster og HVL Bergens bachelor i landmåling og eiendomsdesign er land- og eiendomsadministrative løp med tyngde i tingsrett, matrikkel, jordskifte, landmåling og GIS. De fem bachelorene i eiendomsmegling (HVL Sogndal, Nord, INN, USN og BI) følger de nasjonale retningslinjene for eiendomsmeglerutdanningen og har tyngde i eiendomsjus knyttet til omsetning, oppgjør, bedriftsøkonomi og markedsføring. Sammenligningen er derfor sterkest innenfor juss, økonomi og oppgave, og svakest innenfor geomatikk og jordskifte, der bare NMBU og HVL Bergen har emner. Merk også at NMBU er et femårig masterløp: emner på 300-nivå måles mot bacheloremner hos konkurrentene, og nivåforskjellen bør leses inn i karaktersnittet. For BI rapporterer DBH svært høye kandidattall på flere emner fordi emnene deles med andre BI-bachelorer; tallene er derfor ikke rene programtall på samme måte som hos de øvrige.",
+  "emnetyper": [
+    {
+      "id": "juridisk-metode-forretningsjus",
+      "label": "Juridisk metode og forretningsjus",
+      "kategori": "Juss",
+      "desc": "Rettskildelære og juridisk metode sammen med de alminnelige privatrettslige emnene avtalerett, kjøpsrett, selskapsrett og pengekravsrett.",
+      "note": "Meglerutdanningene pakker juridisk metode inn i det første jusemnet sitt, mens NMBU har et eget metodeemne (JUS100) i tillegg til forretningsjusen.",
+      "koblinger": [
+        { "entryId": "nmbu_eiendom", "emnekoder": ["JUS100-1", "JUS102-1"], "merknad": "JUS100 er juridisk metode, JUS102 er forretningsjus I." },
+        { "entryId": "hvl_landmaling", "emnekoder": ["LEI100-1"], "merknad": "LEI100 gir juridisk metode, forvaltningsrett, planrett og avtalerett samlet i ett innføringsemne." },
+        { "entryId": "hvl_eiendomsmegling", "emnekoder": ["EM6-1003-1"], "merknad": "Jus for eiendomsmeglere 1 dekker forretningsjus og juridisk metode." },
+        { "entryId": "nord_eiendomsmegling", "emnekoder": ["RET1001-1"] },
+        { "entryId": "inn_eiendomsmegling", "emnekoder": ["3JUS200-1"], "merknad": "Foretaksrett; INNs innledende jusemne rapporteres ikke med nok kandidater i 2024/2025." },
+        { "entryId": "usn_eiendomsmegling", "emnekoder": ["JUR1000-1", "RET2000-1"], "merknad": "To emnekoder for samme rettslærekurs i overgangen mellom kull." },
+        { "entryId": "bi_eiendomsmegling", "emnekoder": ["EMS34161"], "merknad": "Jus og eiendomsmegling dekker forretningsjus og juridisk metode og overlapper BIs ordinære forretningsjusemne." }
+      ]
+    },
+    {
+      "id": "eiendomsrett-tingsrett",
+      "label": "Eiendomsrett og tingsrett",
+      "kategori": "Juss",
+      "desc": "Rettigheter i fast eiendom: eiendomsrett, sameie, servitutter, hevd, naborett, grenser og rettsvern.",
+      "note": "HVL Bergen har ikke et eget tingsrettsemne; stoffet ligger i innføringsemnet LEI100 og i LEI300, som er koblet til andre emnetyper.",
+      "koblinger": [
+        { "entryId": "nmbu_eiendom", "emnekoder": ["JUS110-1", "JUS310-1"], "merknad": "JUS110 er innføringen, JUS310 er hovedemnet om rettigheter i fast eiendom." },
+        { "entryId": "hvl_eiendomsmegling", "emnekoder": ["EM6-2000-1"], "merknad": "Jus for eiendomsmeglere 2 dekker rettsforhold for fast eiendom, tinglysing, odel og konsesjon." },
+        { "entryId": "nord_eiendomsmegling", "emnekoder": ["RET2004-1"] },
+        { "entryId": "inn_eiendomsmegling", "emnekoder": ["3JUS210-1"], "merknad": "Jus II dekker tingsrett, hevd og servitutter sammen med forvaltnings- og familierett." },
+        { "entryId": "usn_eiendomsmegling", "emnekoder": ["EML201B-1"] },
+        { "entryId": "bi_eiendomsmegling", "emnekoder": ["EMS35241"], "merknad": "Eiendomsjus II dekker tingsrett, hevd, servitutter, eiendomsgrenser og matrikkel." }
+      ]
+    },
+    {
+      "id": "overforing-av-fast-eiendom",
+      "label": "Overføring av fast eiendom",
+      "kategori": "Juss",
+      "desc": "Avtaleinngåelse, budgivning, avhendingsloven, mangler og tinglysing ved kjøp og salg av fast eiendom.",
+      "note": "HVL Sogndal dekker salg av brukt bolig inne i EM6-2000, som allerede er koblet til eiendomsrett; HVL Bergen har ingen tilsvarende emne.",
+      "koblinger": [
+        { "entryId": "nmbu_eiendom", "emnekoder": ["JUS311-1"] },
+        { "entryId": "nord_eiendomsmegling", "emnekoder": ["RE217E-1"], "merknad": "Jus for eiendomsmeglere I er bygd rundt avhendingslova, avtaleinngåelse og tinglysing." },
+        { "entryId": "inn_eiendomsmegling", "emnekoder": ["3JUS300-1"], "merknad": "Jus III er avtalerett med vekt på avhending og bustadoppføring." },
+        { "entryId": "usn_eiendomsmegling", "emnekoder": ["EML101B-1"] },
+        { "entryId": "bi_eiendomsmegling", "emnekoder": ["EMS35211"], "merknad": "Eiendomsjus I bygger på avtalerett og avhendingsloven." }
+      ]
+    },
+    {
+      "id": "arealplanlegging-plan-og-bygningsrett",
+      "label": "Arealplanlegging og plan- og bygningsrett",
+      "kategori": "Planlegging",
+      "desc": "Plansystemet etter plan- og bygningsloven, arealplaner, planprosess og byggesaksbehandling.",
+      "note": "Nord, INN, USN og BI har ikke eget planemne; hos Nord og BI ligger plan- og byggesaksstoffet inne i eiendomsutviklingsemnet, som er koblet til emnetypen eiendomsutvikling.",
+      "koblinger": [
+        { "entryId": "nmbu_eiendom", "emnekoder": ["JUS320-1", "JUS321-1"], "merknad": "Plan- og bygningsrett I (planlegging) og II (byggesak)." },
+        { "entryId": "hvl_landmaling", "emnekoder": ["BYG110-1"], "merknad": "Vei- og arealplanlegging; erstattet av LEI210 Arealplanlegging i planen fra 2026, som ennå ikke har DBH-tall." },
+        { "entryId": "hvl_eiendomsmegling", "emnekoder": ["PL433-1"] }
+      ]
+    },
+    {
+      "id": "eiendomsutvikling",
+      "label": "Eiendomsutvikling",
+      "kategori": "Fagspesifikt",
+      "desc": "Utvikling av tomt og eiendom fra idé til gjennomføring: mulighetsstudier, planskapte verdier, aktører og prosjektgjennomføring.",
+      "note": "HVL Bergen, HVL Sogndal, INN og USN har ikke et eget emne i eiendomsutvikling. NMBUs APL350 er vesentlig større (15 sp) enn konkurrentenes emner (7,5 sp).",
+      "koblinger": [
+        { "entryId": "nmbu_eiendom", "emnekoder": ["APL350-1"] },
+        { "entryId": "nord_eiendomsmegling", "emnekoder": ["RET1007-1"], "merknad": "Innføring i eiendomsutvikling med vekt på plan- og byggesaksbehandling og planskapte verdier." },
+        { "entryId": "bi_eiendomsmegling", "emnekoder": ["EMS36701"] }
+      ]
+    },
+    {
+      "id": "eiendomsregistrering-matrikkel",
+      "label": "Eiendomsregistrering og matrikkel",
+      "kategori": "Fagspesifikt",
+      "desc": "Matrikkelloven, eiendomsdanning, oppmålingsforretning og føring av offentlige eiendomsregistre.",
+      "note": "Ingen av eiendomsmeglerutdanningene har et eget matrikkelemne; de dekker grunnbok og tinglysing inne i oppgjørsemnene sine.",
+      "koblinger": [
+        { "entryId": "nmbu_eiendom", "emnekoder": ["EIE200-1"] },
+        { "entryId": "hvl_landmaling", "emnekoder": ["LEI104-1"], "merknad": "Praktisk gjennomføring av reelle oppmålingsforretninger etter matrikkellova." }
+      ]
+    },
+    {
+      "id": "jordskifte",
+      "label": "Jordskifte og rettsfastsetting",
+      "kategori": "Fagspesifikt",
+      "desc": "Jordskiftelova, jordskifteløsninger, skjønn og saksbehandling i jordskifteretten.",
+      "note": "Bare NMBU og HVL Bergen har jordskifte. NMBU har vesentlig større omfang (35–40 sp fordelt på to emner) enn HVLs 15 sp, så karakterene er ikke direkte sammenlignbare.",
+      "koblinger": [
+        { "entryId": "nmbu_eiendom", "emnekoder": ["EIE302-2", "EIE302-3", "JUS331-1", "JUS331-2"], "merknad": "To emnekodeversjoner av både Jordskiftearbeid og Prosess og jordskifte i perioden." },
+        { "entryId": "hvl_landmaling", "emnekoder": ["LEI300-1"], "merknad": "Eiendom, matrikkel og jordskifte; jordskiftedelen er én av flere deler av emnet." }
+      ]
+    },
+    {
+      "id": "landmaling-og-geodesi",
+      "label": "Landmåling og geodesi",
+      "kategori": "Geomatikk/Teknologi",
+      "desc": "Måleteknikk, referansesystemer, utstyr og feillære ved innmåling og utstikking i felt.",
+      "note": "Bare NMBU og HVL Bergen har landmåling. HVL har klart størst omfang: NMBUs EIE105 på 10 sp mot to landmålingsemner på til sammen 20 sp i Bergen.",
+      "koblinger": [
+        { "entryId": "nmbu_eiendom", "emnekoder": ["EIE105-1"] },
+        { "entryId": "hvl_landmaling", "emnekoder": ["LEI105-1", "LEI107-1"], "merknad": "Eiendomslandmåling og ingeniørlandmåling." }
+      ]
+    },
+    {
+      "id": "gis-og-geomatikk",
+      "label": "GIS og geomatikk",
+      "kategori": "Geomatikk/Teknologi",
+      "desc": "Geografiske informasjonssystemer, kartografi, geodatakilder og romlig analyse.",
+      "note": "Bare NMBU og HVL Bergen har GIS-emner. HVL har vesentlig større omfang (30 sp) enn NMBU (10 sp), og HVLs emner ligger på et mer teknisk nivå.",
+      "koblinger": [
+        { "entryId": "nmbu_eiendom", "emnekoder": ["LAD102-1", "LAD103-1"], "merknad": "GIS - praktisk introduksjon og Kartografi og geodatakilder i planlegging." },
+        { "entryId": "hvl_landmaling", "emnekoder": ["LEI117-1", "LEI111-1", "BYG109-1"], "merknad": "Innføring i geomatikk, geografisk informasjonsanalyse og GIS-analyse." }
+      ]
+    },
+    {
+      "id": "eiendomsverdsetting",
+      "label": "Verdsetting av fast eiendom",
+      "kategori": "Økonomi",
+      "desc": "Metoder for å verdsette fast eiendom: sammenligning, avkastning, kostnad og nytte-kostnadsanalyse.",
+      "note": "Eiendomsmeglerutdanningene har ikke eget takst- eller verdsettingsemne; verdivurdering inngår i praktisk eiendomsmegling og i finansemnene.",
+      "koblinger": [
+        { "entryId": "nmbu_eiendom", "emnekoder": ["EIE222-1"] },
+        { "entryId": "hvl_landmaling", "emnekoder": ["LEI113-1"], "merknad": "Økonomi og ressursforvaltning har verdsetting av fast eiendom og nytte-kostnadsanalyse som hoveddel." }
+      ]
+    },
+    {
+      "id": "eiendomsmarked-og-finans",
+      "label": "Eiendomsmarked og eiendomsfinans",
+      "kategori": "Økonomi",
+      "desc": "Hvordan eiendomsmarkedet fungerer, markedsanalyse og finansiering av bolig- og næringseiendom.",
+      "note": "Nord, INN og BI dekker eiendomsfinans inne i generelle finansemner som ikke er eiendomsspesifikke, og er derfor holdt utenfor. HVL Bergen har ikke et markedsemne.",
+      "koblinger": [
+        { "entryId": "nmbu_eiendom", "emnekoder": ["EIE310-1"] },
+        { "entryId": "hvl_eiendomsmegling", "emnekoder": ["EM6-3000-1"], "merknad": "Anvendt finans for eiendomsmarkedet." },
+        { "entryId": "usn_eiendomsmegling", "emnekoder": ["EML304B-1"], "merknad": "Eiendomsfinansiering; mer finansrettet enn NMBUs markedsanalyseemne." }
+      ]
+    },
+    {
+      "id": "bedriftsokonomi-og-regnskap",
+      "label": "Bedriftsøkonomi og regnskap",
+      "kategori": "Økonomi",
+      "desc": "Grunnleggende bedriftsøkonomiske sammenhenger, regnskapsføring og regnskapsanalyse.",
+      "note": "NMBU har bare ett innføringsemne på 5 sp, mens meglerutdanningene har 15–22,5 sp fordelt på bedriftsøkonomi, regnskap og regnskapsanalyse. Omfanget er derfor svært ulikt. HVL Bergen dekker bedriftsøkonomi i LEI113, som er koblet til verdsetting.",
+      "koblinger": [
+        { "entryId": "nmbu_eiendom", "emnekoder": ["BUS100-1"] },
+        { "entryId": "hvl_eiendomsmegling", "emnekoder": ["BØA113-1", "BØA117-1"] },
+        { "entryId": "nord_eiendomsmegling", "emnekoder": ["ECO1002-1", "FIN1001-1"] },
+        { "entryId": "inn_eiendomsmegling", "emnekoder": ["3BED100-1", "3REV100-1"] },
+        { "entryId": "usn_eiendomsmegling", "emnekoder": ["BØK1000-1", "BED1000-1", "REG1000-1"], "merknad": "BØK1000 og BED1000 er to kodeversjoner av samme bedriftsøkonomiemne." },
+        { "entryId": "bi_eiendomsmegling", "emnekoder": ["BØK34301"], "merknad": "Innføring i bedriftsøkonomi og finans." }
+      ]
+    },
+    {
+      "id": "samfunnsvitenskapelig-metode",
+      "label": "Samfunnsvitenskapelig metode",
+      "kategori": "Metode",
+      "desc": "Forskningsdesign, datainnsamling og kvalitative og kvantitative analysemetoder som grunnlag for oppgaveskriving.",
+      "note": "HVL Bergen har ikke et eget metodeemne, og BIs metodeemner er valgfrie for eiendomsmeglerstudentene og er derfor ikke koblet.",
+      "koblinger": [
+        { "entryId": "nmbu_eiendom", "emnekoder": ["AOS240-1", "AOS340-1"], "merknad": "Samfunnsvitenskapelig metode og Kvalitativ metode." },
+        { "entryId": "hvl_eiendomsmegling", "emnekoder": ["ME6-1002-1"] },
+        { "entryId": "nord_eiendomsmegling", "emnekoder": ["MET1001-1"] },
+        { "entryId": "inn_eiendomsmegling", "emnekoder": ["3MET200-1", "3MET100-1"] },
+        { "entryId": "usn_eiendomsmegling", "emnekoder": ["MET1020-1", "SAM2000-1"], "merknad": "To kodeversjoner av samme metodeemne." }
+      ]
+    },
+    {
+      "id": "bachelor-og-masteroppgave",
+      "label": "Bachelor- og masteroppgave",
+      "kategori": "Oppgave",
+      "desc": "Det selvstendige avsluttende arbeidet i graden.",
+      "note": "NMBUs masteroppgave er 30 sp på masternivå og er ikke direkte sammenlignbar med bacheloroppgavene på 15–20 sp. Nord har ingen bacheloroppgave med rapporterte karakterer i 2024/2025, og BIs bacheloroppgave er et valgfritt emne.",
+      "koblinger": [
+        { "entryId": "nmbu_eiendom", "emnekoder": ["M30-EIE-1"] },
+        { "entryId": "hvl_landmaling", "emnekoder": ["LEI350-1"] },
+        { "entryId": "hvl_eiendomsmegling", "emnekoder": ["BO6-2011-1"] },
+        { "entryId": "inn_eiendomsmegling", "emnekoder": ["3EDMBA300-1"] },
+        { "entryId": "usn_eiendomsmegling", "emnekoder": ["BAC3040-1"] },
+        { "entryId": "bi_eiendomsmegling", "emnekoder": ["ELE37881"], "merknad": "Valgfritt emne ved BI." }
+      ]
+    }
+  ]
+}

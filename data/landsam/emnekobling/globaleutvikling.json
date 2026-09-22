@@ -1,0 +1,50 @@
+{
+  "groupId": "globaleutvikling",
+  "hentet": "2026-09-22",
+  "note": "Gruppen har bare to programmer, og de deler en smal kjerne: utviklingsteori, forskningsmetode og masteroppgave. Det er derfor bare fire emnetyper. UiO bygger studiet rundt fire store emner (15-60 sp) og byttet emnekoder fra SUM til GLOBE fra 2025; begge kodene er tatt med der emnet er det samme. NMBUs program har få kandidater per emne, og masteroppgaven M30-DS hadde bare 3-4 kandidater i 2024 og 2025 mot 22 i 2023. NMBUs ECN352 (Fattigdom og ulikhet) og EDS370 (Kjønn og utvikling) og UiOs SUM4300 (Text Lab, akademisk skriving) har ingen motpart i det andre programmet og er ikke koblet.",
+  "emnetyper": [
+    {
+      "id": "utviklingsteori",
+      "label": "Utviklingsteori og utviklingspolitikk",
+      "kategori": "Teori",
+      "desc": "Utviklingsstudier som tverrfaglig felt: utviklingsteorier, utviklingspolitikk og forholdet mellom miljø og samfunnsendring.",
+      "note": "NMBU deler stoffet i et 5 sp innføringsemne og et 10 sp teoriemne; UiO har ett samlet 15 sp-emne.",
+      "koblinger": [
+        { "entryId": "nmbu_globale_utviklingsstudier", "emnekoder": ["EDS201-1", "EDS305-1"] },
+        { "entryId": "uio_decc", "emnekoder": ["GLOBE4200-1", "SUM4200-1"], "merknad": "samme emne; SUM4200 er erstattet av GLOBE4200 fra 2025" }
+      ]
+    },
+    {
+      "id": "forskningsmetode",
+      "label": "Forskningsmetode og prosjektdesign",
+      "kategori": "Metode",
+      "desc": "Samfunnsvitenskapelig metode på masternivå med utforming av prosjektskisse for masteroppgaven.",
+      "koblinger": [
+        { "entryId": "nmbu_globale_utviklingsstudier", "emnekoder": ["EDS312-1"], "merknad": "15 sp, felles metodeemne for M-GDS, M-IR og M-IES" },
+        { "entryId": "uio_decc", "emnekoder": ["GLOBE4100-1", "SUM4100-1"], "merknad": "samme emne; SUM4100 er erstattet av GLOBE4100 fra 2025" }
+      ]
+    },
+    {
+      "id": "global-styring-bistand",
+      "label": "Global utvikling, bistand og styring",
+      "kategori": "Politikk",
+      "desc": "Institusjonene og aktørene i det internasjonale utviklingsfeltet, og hvordan global utvikling styres.",
+      "note": "Svakere kobling enn de øvrige: NMBUs emne handler om bistand og alternativer til bistand, mens UiOs valgemne handler om global styring for bærekraftig utvikling. UiO-emnet hadde 10 kandidater i 2024 og 7 i 2025.",
+      "koblinger": [
+        { "entryId": "nmbu_globale_utviklingsstudier", "emnekoder": ["EDS230-1"] },
+        { "entryId": "uio_decc", "emnekoder": ["SUM4029-1"], "merknad": "valgemne, ikke obligatorisk" }
+      ]
+    },
+    {
+      "id": "masteroppgave",
+      "label": "Masteroppgave",
+      "kategori": "Oppgave",
+      "desc": "Selvstendig vitenskapelig arbeid som avslutter masterstudiet.",
+      "note": "Omfanget er svært ulikt: 30 sp ved NMBU og 60 sp ved UiO. NMBU hadde bare 3-4 kandidater i 2024 og 2025.",
+      "koblinger": [
+        { "entryId": "nmbu_globale_utviklingsstudier", "emnekoder": ["M30-DS-1"], "merknad": "30 sp" },
+        { "entryId": "uio_decc", "emnekoder": ["SUM4091-1"], "merknad": "60 sp" }
+      ]
+    }
+  ]
+}

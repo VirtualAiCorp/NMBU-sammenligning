@@ -1,0 +1,91 @@
+{
+  "groupId": "eiendomsutvikling",
+  "hentet": "2026-09-22",
+  "note": "NMBU og NTNU har begge et toårig masterløp i eiendomsutvikling, og de er derfor godt sammenlignbare på nivå og lengde. Profilen er likevel ulik: NMBU ligger tett på eiendomsfag, juss og by- og prosjektutvikling, mens NTNU ligger tett på bygg, arkitektur og forvaltning av bygninger (facility management). NMBU bruker større emner (10–20 sp), NTNU nesten bare 7,5 sp-emner, så et NMBU-emne svarer ofte til deler av flere NTNU-emner og omvendt. NTNUs emne AAR4235 Eiendomsøkonomi og TIØ4215 Kontraktsrett og kontraktsforhandlinger dekker hver for seg tema som NMBU har delt på flere emner; de er derfor brukt i mer enn én emnetype, og det er merket av i merknadene.",
+  "emnetyper": [
+    {
+      "id": "eiendomsutvikling-og-prosjektgjennomforing",
+      "label": "Eiendomsutvikling og prosjektgjennomføring",
+      "kategori": "Fagspesifikt",
+      "desc": "Utviklingsprosessen fra tomteanalyse og mulighetsstudie til konsept, aktørbilde og gjennomføring av utviklingsprosjektet.",
+      "koblinger": [
+        { "entryId": "nmbu_eiendomsutvikling", "emnekoder": ["APL350-1"], "merknad": "15 sp mot NTNUs 7,5 sp." },
+        { "entryId": "ntnu_eiendomsutvikling", "emnekoder": ["AAR4828-1"], "merknad": "Tomteanalyser, prosessanalyser, markedsanalyser og konseptutvikling." }
+      ]
+    },
+    {
+      "id": "eiendomsokonomi-marked-og-verdsetting",
+      "label": "Eiendomsøkonomi, marked og verdsetting",
+      "kategori": "Økonomi",
+      "desc": "Eiendomsmarkedets virkemåte, markedsanalyse, kalkyle og metoder for verdsetting av eiendom og eiendomsprosjekter.",
+      "note": "NMBU deler stoffet i to emner på til sammen 20 sp; NTNU dekker det samme i ett emne på 7,5 sp, som også inneholder grunnleggende regnskap.",
+      "koblinger": [
+        { "entryId": "nmbu_eiendomsutvikling", "emnekoder": ["EIE310-1", "EIE311-1"], "merknad": "Eiendomsmarked og analyse og Eiendomsutvikling, kalkyle og verdsetting." },
+        { "entryId": "ntnu_eiendomsutvikling", "emnekoder": ["AAR4235-1"] }
+      ]
+    },
+    {
+      "id": "plan-og-bygningsrett",
+      "label": "Plan- og bygningsrett og byggeprosess",
+      "kategori": "Juss",
+      "desc": "Plan- og bygningsloven i praksis: planprosess, reguleringsplan, rammesøknad og byggesaksbehandling.",
+      "koblinger": [
+        { "entryId": "nmbu_eiendomsutvikling", "emnekoder": ["JUS320-1", "JUS321-1"], "merknad": "Plan- og bygningsrett I (planlegging og gjennomføringsvirkemidler) og II (byggesak)." },
+        { "entryId": "ntnu_eiendomsutvikling", "emnekoder": ["AAR4815-1"], "merknad": "Plan og byggeprosess dekker både planprosess, byggesaksbehandling og gjennomføringsstrategier." }
+      ]
+    },
+    {
+      "id": "byutvikling-arkitektur-og-plan",
+      "label": "Byutvikling, arkitektur og planprosjekt",
+      "kategori": "Planlegging",
+      "desc": "Prosjektbasert arbeid med stedsanalyse, arkitektonisk utforming, uterom og utarbeiding av plan for et byområde.",
+      "koblinger": [
+        { "entryId": "nmbu_eiendomsutvikling", "emnekoder": ["LAA350-1"], "merknad": "20 sp prosjektemne i byutvikling; svarer til begge NTNU-emnene til sammen." },
+        { "entryId": "ntnu_eiendomsutvikling", "emnekoder": ["FP4100-1", "AAR4215-1"], "merknad": "Arkitektur og stedsforming og Reguleringsplanlegging; AAR4215 har bare rapporterte karakterer i 2025." }
+      ]
+    },
+    {
+      "id": "kontrakts-og-avtalerett",
+      "label": "Kontrakts- og avtalerett",
+      "kategori": "Juss",
+      "desc": "Avtale- og kontraktsrett knyttet til overdragelse av fast eiendom og til entreprise- og tilvirkningskontrakter.",
+      "note": "NMBUs emne er spisset mot overføring av fast eiendom, mens NTNUs er allmenn kontraktsrett med entrepriserett. Samme NTNU-emne er også koblet til emnetypen forhandlinger.",
+      "koblinger": [
+        { "entryId": "nmbu_eiendomsutvikling", "emnekoder": ["JUS311-1"] },
+        { "entryId": "ntnu_eiendomsutvikling", "emnekoder": ["TIØ4215-1"] }
+      ]
+    },
+    {
+      "id": "forhandlinger-og-konflikthandtering",
+      "label": "Forhandlinger og konflikthåndtering",
+      "kategori": "Fagspesifikt",
+      "desc": "Forhandlingsteori, forberedelse og gjennomføring av forhandlinger og håndtering av konflikter mellom parter i eiendomssaker.",
+      "note": "NTNU har ikke et eget forhandlingsemne; forhandlingsdelen ligger inne i TIØ4215 Kontraktsrett og kontraktsforhandlinger, som også er koblet til kontrakts- og avtalerett. Karaktertallene for TIØ4215 gjelder derfor hele emnet, ikke bare forhandlingsdelen.",
+      "koblinger": [
+        { "entryId": "nmbu_eiendomsutvikling", "emnekoder": ["EIE306-2"] },
+        { "entryId": "ntnu_eiendomsutvikling", "emnekoder": ["TIØ4215-1"] }
+      ]
+    },
+    {
+      "id": "vitenskapelig-metode",
+      "label": "Vitenskapelig metode og oppgaveforberedelse",
+      "kategori": "Metode",
+      "desc": "Vitenskapsteori, forskningsdesign og kvalitative og kvantitative metoder som forberedelse til masteroppgaven.",
+      "note": "NMBUs MAST303 vurderes bestått/ikke bestått og har derfor ikke karaktersnitt, mens NTNUs AAR4874 gis bokstavkarakter. Emnetypen kan sammenlignes på omfang og gjennomstrømming, ikke på snitt.",
+      "koblinger": [
+        { "entryId": "nmbu_eiendomsutvikling", "emnekoder": ["MAST303-1"] },
+        { "entryId": "ntnu_eiendomsutvikling", "emnekoder": ["AAR4874-1"] }
+      ]
+    },
+    {
+      "id": "masteroppgave",
+      "label": "Masteroppgave",
+      "kategori": "Oppgave",
+      "desc": "Det selvstendige avsluttende masterarbeidet på 30 studiepoeng i fjerde semester.",
+      "koblinger": [
+        { "entryId": "nmbu_eiendomsutvikling", "emnekoder": ["M30-EUTV-1"] },
+        { "entryId": "ntnu_eiendomsutvikling", "emnekoder": ["AAR4992-1"] }
+      ]
+    }
+  ]
+}

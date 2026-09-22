@@ -1,0 +1,88 @@
+{
+  "groupId": "folkehelse",
+  "hentet": "2026-09-22",
+  "note": "De tre programmene har en felles kjerne i folkehelsevitenskap, epidemiologi, forskningsmetode og masteroppgave, men bygger den ulikt opp: NMBU har få og store emner (10-15 sp), NTNU har 7,5 sp-emner, og UiOs erfaringsbaserte program er delt i mange 5 sp-moduler. Flere av UiO-emnene er derfor bare en delmengde av det tilsvarende NMBU-emnet. Helseokonomi (NTNU FH3008, UiO HECON4100/HEVAL4200), ikke-smittsomme sykdommer (UiO FHE5200) og lokalt miljoretta helsevern (NMBU FHV314/APL240) er ikke koblet, fordi bare ett eller to av programmene har emner i disse temaene.",
+  "emnetyper": [
+    {
+      "id": "folkehelsevitenskap-innforing",
+      "label": "Innføring i folkehelsevitenskap",
+      "kategori": "Helse",
+      "desc": "Grunnbegreper i folkehelsevitenskap: helsedeterminanter, forebygging, helsefremming og folkehelsens organisering.",
+      "note": "NTNU byttet fra det gamle 15 sp-emnet FH3000 til 7,5 sp-emnet FH3012 i 2025, og begge kodene er tatt med.",
+      "koblinger": [
+        { "entryId": "nmbu_folkehelse", "emnekoder": ["FHV330-1"], "merknad": "15 sp, programmets hovedemne i folkehelsevitenskap" },
+        { "entryId": "ntnu_folkehelse", "emnekoder": ["FH3012-1", "FH3000-1"], "merknad": "FH3000 (15 sp) er erstattet av FH3012 (7,5 sp)" },
+        { "entryId": "uio_folkehelsearbeid", "emnekoder": ["FHE4000-1"], "merknad": "10 sp, kombinerer innføring i folkehelse, epidemiologi og bærekraft" }
+      ]
+    },
+    {
+      "id": "epidemiologi",
+      "label": "Epidemiologi",
+      "kategori": "Metode",
+      "desc": "Epidemiologiske grunnbegreper, studiedesign, mål på sykdomsforekomst og årsakstolkning i befolkningsstudier.",
+      "note": "UiO deler epidemiologien i flere 5 sp-moduler (i tillegg til INTHE4021 finnes blant annet FHE4100 om klinisk epidemiologi og FHE5100 om registerstudier); NMBUs emne kombinerer epidemiologi med geografiske informasjonssystemer.",
+      "koblinger": [
+        { "entryId": "nmbu_folkehelse", "emnekoder": ["FHV320-1"], "merknad": "15 sp, inkluderer GIS og statistikkprogramvare" },
+        { "entryId": "ntnu_folkehelse", "emnekoder": ["MH3002-1"] },
+        { "entryId": "uio_folkehelsearbeid", "emnekoder": ["INTHE4021-1"], "merknad": "5 sp innføringsmodul" }
+      ]
+    },
+    {
+      "id": "forskningsmetode",
+      "label": "Vitenskapsteori og forskningsmetode",
+      "kategori": "Metode",
+      "desc": "Vitenskapsteori, forskningsdesign og kvalitative og kvantitative metoder i helsefaglig forskning.",
+      "note": "NMBU samler vitenskapsteori og begge metodetradisjonene i ett 15 sp-emne, mens NTNU og UiO deler dem i egne emner. Rene statistikkemner (NTNU MH3003/MH3024, UiO FHE4110/FHE4120/HELSEF4430) er ikke koblet, fordi NMBU ikke har et tilsvarende frittstående statistikkemne.",
+      "koblinger": [
+        { "entryId": "nmbu_folkehelse", "emnekoder": ["FHV315-1"] },
+        { "entryId": "ntnu_folkehelse", "emnekoder": ["MH3012-1", "MH3022-1"], "merknad": "kvalitativ metode + statistiske og epidemiologiske metoder" },
+        { "entryId": "uio_folkehelsearbeid", "emnekoder": ["INTHE4020-1", "HELSEF4410-1"], "merknad": "innføring i kvantitativ og kvalitativ metode, 5 sp hver" }
+      ]
+    },
+    {
+      "id": "helsefremmende-arbeid",
+      "label": "Helsefremmende og systematisk folkehelsearbeid",
+      "kategori": "Helse",
+      "desc": "Planlegging, gjennomføring og evaluering av helsefremmende tiltak og folkehelsearbeid, med vekt på medvirkning og implementering.",
+      "koblinger": [
+        { "entryId": "nmbu_folkehelse", "emnekoder": ["FHV310-2"], "merknad": "deltakerorienterte metoder i folkehelsearbeid" },
+        { "entryId": "ntnu_folkehelse", "emnekoder": ["FH3010-1"] },
+        { "entryId": "uio_folkehelsearbeid", "emnekoder": ["FHE4200-1", "FHE5010-1"], "merknad": "helsepedagogikk og helsekommunikasjon + komplekse intervensjoner og implementering" }
+      ]
+    },
+    {
+      "id": "sosiale-determinanter",
+      "label": "Sosiale og psykososiale determinanter for helse",
+      "kategori": "Helse",
+      "desc": "Hvordan sosiale, psykososiale og strukturelle forhold påvirker helse, og hvordan sosial ulikhet i helse oppstår.",
+      "note": "NTNU har ikke et eget emne om sosiale determinanter; FH3001 Arbeid og helse dekker bare arbeidslivsdelen og er derfor ikke koblet.",
+      "koblinger": [
+        { "entryId": "nmbu_folkehelse", "emnekoder": ["FHV313-1"], "merknad": "psykososiale faktorer og helse, 10 sp" },
+        { "entryId": "uio_folkehelsearbeid", "emnekoder": ["FHE5210-1"], "merknad": "sosial ulikhet i helse, 5 sp" }
+      ]
+    },
+    {
+      "id": "prosjektplan",
+      "label": "Prosjektplan og forskningsetikk",
+      "kategori": "Oppgave",
+      "desc": "Utarbeiding av prosjektplan for masteroppgaven, med forskningsetikk og datahåndtering.",
+      "note": "NTNU har ikke et eget prosjektplanemne; prosjektplanen inngår i masteroppgaven FH3901.",
+      "koblinger": [
+        { "entryId": "nmbu_folkehelse", "emnekoder": ["FHV353-1"] },
+        { "entryId": "uio_folkehelsearbeid", "emnekoder": ["FHE5120-1", "HELSEF4510-1"], "merknad": "prosjektplanlegging av epidemiologiske studier + forskningsetikk" }
+      ]
+    },
+    {
+      "id": "masteroppgave",
+      "label": "Masteroppgave",
+      "kategori": "Oppgave",
+      "desc": "Selvstendig vitenskapelig arbeid som avslutter masterstudiet.",
+      "note": "Omfanget varierer: 30 sp ved NMBU og UiO, 45 sp ved NTNU.",
+      "koblinger": [
+        { "entryId": "nmbu_folkehelse", "emnekoder": ["M30-FOL-1"] },
+        { "entryId": "ntnu_folkehelse", "emnekoder": ["FH3901-1"], "merknad": "45 sp" },
+        { "entryId": "uio_folkehelsearbeid", "emnekoder": ["FHE5090-1"] }
+      ]
+    }
+  ]
+}

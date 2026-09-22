@@ -1,0 +1,19 @@
+{
+  "groupId": "samfok_miljo",
+  "hentet": "2026-09-22",
+  "note": "Denne gruppen har for lite overlapp til en reell emnekobling, og det ble bare én emnetype. NMBUs master i samfunnsøkonomi og miljøforvaltning tok opp første kull høsten 2024, og DBH har bare rapportert sju emner for programmet. Bare to av dem har minst ti kandidater (ECN340 og ECN306), og programmets egne kjerneemner i naturressurs- og miljøøkonomi, global miljøstyring, klimaøkonomi og klima og samfunn hadde 0-3 kandidater i 2024 og 2025. Det finnes ennå ingen masteroppgave rapportert for programmet, så masteroppgaven kan ikke kobles mot NTNU SØK3900, UiO ECON4091 eller UiB ECON391. Mikroøkonomi og økonometri er heller ikke koblet: NMBUs ECN215 og ECN201 ligger på 200-nivå og er ifølge studieplanen oppkvalifiseringsemner i første semester, ikke masteremner på linje med UiO ECON4220/ECON4150 og UiB ECON310/ECON340, og de hadde 8 og 3 kandidater. ECN340 (Introduksjon til samfunnsøkonomi, global økonomi og miljøforvaltning) er et programinternt innføringsemne uten motpart. NTNU inngår ikke i den ene emnetypen, fordi NTNU ikke har rapportert miljø- eller ressursøkonomiemner med minst ti kandidater. Gruppen bør vurderes på nytt når NMBU-kullene fra 2024 og 2025 er ferdige.",
+  "emnetyper": [
+    {
+      "id": "miljo-ressursokonomi",
+      "label": "Miljø- og ressursøkonomi",
+      "kategori": "Økonomi",
+      "desc": "Økonomisk analyse av miljø- og ressursbruk: eksternaliteter, virkemidler som avgifter og kvoter, verdsetting og bærekraft.",
+      "note": "NTNU har ingen rapporterte emner i miljø- eller ressursøkonomi med nok kandidater og er derfor ikke med. NMBUs ECN306 er 5 sp og bredere anlagt (bærekraftens økonomi), men krever mikroøkonomi og miljø- og ressursøkonomi og ligger på masternivå.",
+      "koblinger": [
+        { "entryId": "nmbu_eeg", "emnekoder": ["ECN306-1"], "merknad": "Økonomi og bærekraft, 5 sp" },
+        { "entryId": "uio_economics", "emnekoder": ["ECON4910-1", "ECON4925-1"], "merknad": "miljøøkonomi og ressursøkonomi, 10 sp hver; begge hadde 10-11 kandidater i 2025" },
+        { "entryId": "uib_samfunnsokonomi", "emnekoder": ["ECON316A-0"], "merknad": "Miljøøkonomi, 5 sp; 16 kandidater i 2024" }
+      ]
+    }
+  ]
+}

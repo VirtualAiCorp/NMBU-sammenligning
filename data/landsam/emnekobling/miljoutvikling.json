@@ -1,0 +1,158 @@
+{
+  "groupId": "miljoutvikling",
+  "hentet": "2026-09-22",
+  "note": "Gruppen består av to ulike familier: de fire utviklingsstudiene (NMBU, UiO, OsloMet, UiA), som har et godt overlapp, og de tre bachelorene i internasjonale studier/relasjoner (UiO int.stud., INN, Nord), som deler ex.phil., metode, økonomi og bacheloroppgave med de øvrige, men ikke miljø- og utviklingsemnene. NMBUs naturvitenskapelige del (ECOL200 Generell økologi) og EDS271 Introduksjon til kjønn og utvikling har ingen motpart hos konkurrentene. Motsatt har OsloMet (UTVB2000 Makt og politikk), UiA (UT-107 Makt, motstand og utvikling), UiO og INN emner i politisk teori og komparativ politikk som NMBU ikke har, og UiO int.stud. har et stort folkerettsemne (JUROFF1410) uten motpart. Et eget emne i statistikk/kvantitativ metode finnes bare ved UiO og er derfor ikke skilt ut.",
+  "emnetyper": [
+    {
+      "id": "innforing-fagfeltet",
+      "label": "Innføring i utviklingsstudier",
+      "kategori": "Teori",
+      "desc": "Førsteårs innføring i fagfeltet: sentrale begreper, aktører og problemstillinger i studiet av global utvikling.",
+      "note": "De tre programmene i internasjonale studier/relasjoner har innføringsemner i sitt eget fagfelt, ikke i utviklingsstudier, og er derfor en svakere sammenligning.",
+      "koblinger": [
+        { "entryId": "nmbu_ims", "emnekoder": ["EDS101-1", "EDS102-1"], "merknad": "5 sp innføring + 15 sp introduksjon til utviklingstenkning" },
+        { "entryId": "uio_utvikling_baerekraft", "emnekoder": ["UTV1000-1"] },
+        { "entryId": "oslomet_utviklingsstudier", "emnekoder": ["UTVB1100-1"], "merknad": "20 sp" },
+        { "entryId": "uia_globale_utviklingsstudier", "emnekoder": ["UT-113-2"] },
+        { "entryId": "uio_internasjonale_studier", "emnekoder": ["INTER1000-1"], "merknad": "innføring i internasjonale studier, ikke utviklingsstudier" },
+        { "entryId": "inn_internasjonale_studier", "emnekoder": ["INT1000-1"], "merknad": "historisk innføring i internasjonale studier" },
+        { "entryId": "nord_internasjonale_relasjoner_b", "emnekoder": ["STA1006-1"], "merknad": "innføring i internasjonale relasjoner som akademisk disiplin" }
+      ]
+    },
+    {
+      "id": "exphil",
+      "label": "Examen philosophicum",
+      "kategori": "Fellesemne",
+      "desc": "Det obligatoriske fellesemnet i filosofi- og vitenskapshistorie og etikk.",
+      "note": "OsloMet har ikke examen philosophicum i utviklingsstudier; vitenskapsteori inngår der i metodeemnet UTVB1300. UiO og UiA har i tillegg examen facultatum (SVEXFAC03, EX-104), som NMBU ikke har og som derfor ikke er koblet.",
+      "koblinger": [
+        { "entryId": "nmbu_ims", "emnekoder": ["PHI102-1"], "merknad": "engelsk versjon" },
+        { "entryId": "uio_utvikling_baerekraft", "emnekoder": ["EXPHIL03-1"] },
+        { "entryId": "uia_globale_utviklingsstudier", "emnekoder": ["EX-112-1"], "merknad": "engelsk versjon" },
+        { "entryId": "uio_internasjonale_studier", "emnekoder": ["EXPHIL03-1"] },
+        { "entryId": "inn_internasjonale_studier", "emnekoder": ["INT1009-1"], "merknad": "egen variant for internasjonale studier" },
+        { "entryId": "nord_internasjonale_relasjoner_b", "emnekoder": ["FIL1005-1"] }
+      ]
+    },
+    {
+      "id": "metode",
+      "label": "Samfunnsvitenskapelig metode",
+      "kategori": "Metode",
+      "desc": "Innføring i samfunnsvitenskapelig forskningsmetode: forskningsdesign og kvalitative og kvantitative datainnsamlings- og analyseteknikker.",
+      "note": "Vektingen er ulik: NMBU, OsloMet, UiA og Nord har brede innføringsemner, UiOs emner er kvantitativt orienterte, og INNs INT2009 dekker bare kvalitativ metode (INNs INT2010 om metode og statistikk hadde under ti kandidater).",
+      "koblinger": [
+        { "entryId": "nmbu_ims", "emnekoder": ["EDS115-1"], "merknad": "både kvalitativ og kvantitativ metode" },
+        { "entryId": "uio_utvikling_baerekraft", "emnekoder": ["STV1020-1", "SOSGEO1120-1"], "merknad": "metodeemnet avhenger av valgt fordypning" },
+        { "entryId": "oslomet_utviklingsstudier", "emnekoder": ["UTVB1300-1"], "merknad": "inkluderer vitenskapsteori" },
+        { "entryId": "uia_globale_utviklingsstudier", "emnekoder": ["ME-107-1"] },
+        { "entryId": "uio_internasjonale_studier", "emnekoder": ["STV1020-1"] },
+        { "entryId": "inn_internasjonale_studier", "emnekoder": ["INT2009-1"], "merknad": "bare kvalitativ metode" },
+        { "entryId": "nord_internasjonale_relasjoner_b", "emnekoder": ["ME118S-1"] }
+      ]
+    },
+    {
+      "id": "okonomi-global",
+      "label": "Økonomi og global politisk økonomi",
+      "kategori": "Økonomi",
+      "desc": "Økonomiske perspektiver på utvikling og verdensøkonomien: marked, fattigdom, ulikhet, handel og maktforhold i den globale økonomien.",
+      "note": "OsloMet og Nord har ingen egne økonomiemner. Innretningen varierer: NMBU og UiO (utviklingsstudier) har samfunnsøkonomiske emner, mens UiA, INN og UiO int.stud. har internasjonal/global politisk økonomi med mer statsvitenskapelig vinkling.",
+      "koblinger": [
+        { "entryId": "nmbu_ims", "emnekoder": ["ECN101-1"], "merknad": "innføring i samfunnsøkonomi med vekt på miljø, ressurser og utvikling" },
+        { "entryId": "uio_utvikling_baerekraft", "emnekoder": ["ECON1910-1"], "merknad": "utviklingsøkonomi: fattigdom og fordeling" },
+        { "entryId": "uia_globale_utviklingsstudier", "emnekoder": ["UT-101-3"] },
+        { "entryId": "uio_internasjonale_studier", "emnekoder": ["ECON1410-1", "STV2220-1"], "merknad": "internasjonal økonomi + internasjonal politisk økonomi" },
+        { "entryId": "inn_internasjonale_studier", "emnekoder": ["INT1019-1"] }
+      ]
+    },
+    {
+      "id": "miljo-og-baerekraft",
+      "label": "Miljø, klima og bærekraft",
+      "kategori": "Miljø",
+      "desc": "Globale miljø- og klimaendringer, forholdet mellom miljø og samfunn og veier til bærekraftig omstilling.",
+      "note": "De tre programmene i internasjonale studier/relasjoner (UiO int.stud., INN, Nord) har ingen miljøemner og er derfor ikke med. UiA-emnet er et valgemne i fordypningen Sustainable Transformation.",
+      "koblinger": [
+        { "entryId": "nmbu_ims", "emnekoder": ["EDS260-1", "EDS261-1", "EDS225-1"], "merknad": "globale miljøforandringer med seminarer + økologisk og sosial resiliens" },
+        { "entryId": "uio_utvikling_baerekraft", "emnekoder": ["SGO2500-1", "SOSGEO2302-1"], "merknad": "obligatorisk emne om energiomstilling nord/sør + miljø og samfunn" },
+        { "entryId": "oslomet_utviklingsstudier", "emnekoder": ["UTVB2500-1"] },
+        { "entryId": "uia_globale_utviklingsstudier", "emnekoder": ["SV-156-1"], "merknad": "valgemne, 14 kandidater i 2025" }
+      ]
+    },
+    {
+      "id": "politisk-okologi",
+      "label": "Politisk økologi",
+      "kategori": "Miljø",
+      "desc": "Politisk økologi: makt, rettigheter og konflikt knyttet til naturressurser og globale miljøutfordringer.",
+      "note": "Bare NMBU og UiA har et eget emne i politisk økologi.",
+      "koblinger": [
+        { "entryId": "nmbu_ims", "emnekoder": ["EDS130-1"] },
+        { "entryId": "uia_globale_utviklingsstudier", "emnekoder": ["UT-204-2"], "merknad": "obligatorisk emne" }
+      ]
+    },
+    {
+      "id": "feltarbeid",
+      "label": "Feltarbeid og praksis",
+      "kategori": "Fagspesifikt",
+      "desc": "Emner der studentene arbeider med utviklingsspørsmål i felt eller i praksis, med egen datainnsamling.",
+      "note": "Bare utviklingsstudiene har feltkomponent. NMBUs feltemne er knyttet til studieoppholdet i Tanzania, mens UiOs emne er et anvendelses- og praksisemne uten obligatorisk feltarbeid.",
+      "koblinger": [
+        { "entryId": "nmbu_ims", "emnekoder": ["EDS210-1"], "merknad": "Tanzania-oppholdet" },
+        { "entryId": "uio_utvikling_baerekraft", "emnekoder": ["UTV2001-1"], "merknad": "utvikling og bærekraft i praksis" },
+        { "entryId": "oslomet_utviklingsstudier", "emnekoder": ["UTVB1400-1"], "merknad": "20 sp med femukers feltarbeid" },
+        { "entryId": "uia_globale_utviklingsstudier", "emnekoder": ["UT-109-2", "UT-200-1"], "merknad": "feltkurs i første studieår + feltarbeid for bacheloroppgaven" }
+      ]
+    },
+    {
+      "id": "utviklingsteori-fordypning",
+      "label": "Utviklingsdebatter og bistand",
+      "kategori": "Teori",
+      "desc": "Fordypning i utviklingsfeltet: bistandens institusjoner og praksis, globale trender og kritiske debatter om utvikling.",
+      "note": "Programmene i internasjonale studier/relasjoner har ingen tilsvarende fordypning i utviklingsfeltet.",
+      "koblinger": [
+        { "entryId": "nmbu_ims", "emnekoder": ["EDS230-1"], "merknad": "global utvikling og bistand" },
+        { "entryId": "uio_utvikling_baerekraft", "emnekoder": ["SOSANT2530-1"], "merknad": "sosialantropologisk vinkling" },
+        { "entryId": "oslomet_utviklingsstudier", "emnekoder": ["UTVB3003-1"], "merknad": "innføring i utviklingsindustrien, 15 sp" },
+        { "entryId": "uia_globale_utviklingsstudier", "emnekoder": ["UT-300-1"] }
+      ]
+    },
+    {
+      "id": "regional-analyse",
+      "label": "Regional fordypning",
+      "kategori": "Fagspesifikt",
+      "desc": "Regionalt avgrensede emner om utviklingsutfordringer i en bestemt del av verden.",
+      "note": "UiO (begge programmene), INN og Nord har regionale emner, men de er historie- eller utenrikspolitisk orientert og er derfor ikke koblet.",
+      "koblinger": [
+        { "entryId": "nmbu_ims", "emnekoder": ["EDS272-1"], "merknad": "rurale India, knyttet til India-oppholdet" },
+        { "entryId": "oslomet_utviklingsstudier", "emnekoder": ["UTVB1200-1", "UTVB3141-1"], "merknad": "regionalkunnskap og globalhistorie + Midtøsten" },
+        { "entryId": "uia_globale_utviklingsstudier", "emnekoder": ["UT-203-1"], "merknad": "obligatorisk emne i regional analyse" }
+      ]
+    },
+    {
+      "id": "menneskerettigheter",
+      "label": "Menneskerettigheter og global rettferdighet",
+      "kategori": "Politikk",
+      "desc": "Menneskerettighetene som normativt og politisk rammeverk, og spørsmål om global rettferdighet.",
+      "note": "Innretningen er ulik: NMBU knytter menneskerettighetene til utvikling, UiO til konflikt i internasjonal politikk og INN til global rettferdighet i et politisk-filosofisk perspektiv. UiO int.stud. er ikke koblet, fordi programmets menneskerettighetsemner er rettsvitenskapelige (JUROFF1410 Folkerett, JUR1910 Women's Law and Human Rights) og ikke faglig likeverdige. OsloMet, UiA og Nord har ingen tilsvarende emner.",
+      "koblinger": [
+        { "entryId": "nmbu_ims", "emnekoder": ["EDS245-1"] },
+        { "entryId": "uio_utvikling_baerekraft", "emnekoder": ["STV2235-1"], "merknad": "valgemne, 13 kandidater i 2024" },
+        { "entryId": "inn_internasjonale_studier", "emnekoder": ["INT2012-1"] }
+      ]
+    },
+    {
+      "id": "bacheloroppgave",
+      "label": "Bacheloroppgave",
+      "kategori": "Oppgave",
+      "desc": "Selvstendig avsluttende oppgave i tredje studieår.",
+      "note": "Omfanget varierer mye, fra 10 sp (UiO int.stud., Nord) til 30 sp (UiO utviklingsstudier, OsloMet). INN byttet emnekode fra INT2011 (20 sp) til INT2016 (10 sp), og begge er tatt med.",
+      "koblinger": [
+        { "entryId": "nmbu_ims", "emnekoder": ["B15-DS-1"], "merknad": "15 sp" },
+        { "entryId": "uio_utvikling_baerekraft", "emnekoder": ["UTV3091-1"], "merknad": "avslutningsemne, 30 sp" },
+        { "entryId": "oslomet_utviklingsstudier", "emnekoder": ["UTVB3300-1"], "merknad": "30 sp; bacheloroppgaven skrives innenfor dette emnet" },
+        { "entryId": "uia_globale_utviklingsstudier", "emnekoder": ["UT-201-2"], "merknad": "15 sp" },
+        { "entryId": "uio_internasjonale_studier", "emnekoder": ["INTER3090-1"], "merknad": "oppgaveemne, 10 sp" },
+        { "entryId": "inn_internasjonale_studier", "emnekoder": ["INT2011-1", "INT2016-1"] },
+        { "entryId": "nord_internasjonale_relasjoner_b", "emnekoder": ["IN200S-1"], "merknad": "10 sp" }
+      ]
+    }
+  ]
+}
