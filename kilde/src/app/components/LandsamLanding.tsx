@@ -1,5 +1,6 @@
 import { TrendingUp, Lock, BookOpen, Globe2 } from 'lucide-react';
 import { LANDSAM_GROUPS } from '../data/landsamAdmissionData';
+import { landsamHasComparison, landsamProgramsWithData } from '../data/landsamUtils';
 
 interface Props {
   /** Åpner opptaksanalysen. groupId = programgruppen som skal være valgt. */
@@ -86,7 +87,19 @@ export function LandsamLanding({ onOpenAnalysis, onBackToFaculties }: Props) {
           {/* Hurtigvalg per programgruppe */}
           <div className="px-8 pb-6 flex items-center gap-3 flex-wrap" style={{ borderTop: '1px solid #F0C040' }}>
             <span style={{ fontSize: 11, color: '#856404', fontWeight: 600, opacity: 0.7, whiteSpace: 'nowrap', paddingTop: 12 }}>Gå direkte til:</span>
-            {LANDSAM_GROUPS.map((g) => (
+            {LANDSAM_GROUPS.map((g) => {
+              const ok = landsamHasComparison(g);
+              if (!ok) return (
+                <div key={g.id} title="Ikke nok data til sammenligning ennå"
+                  className="flex flex-col items-start rounded-xl px-4 py-2.5 text-left"
+                  style={{ backgroundColor: 'var(--nmbu-beige-light)', border: '1.5px dashed var(--nmbu-neutral-3)', marginTop: 12, minWidth: 170, cursor: 'not-allowed', opacity: 0.7 }}>
+                  <span style={{ fontSize: 13, fontWeight: 600, color: 'var(--nmbu-neutral-2)' }}>{g.label}</span>
+                  <span style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)', marginTop: 1 }}>
+                    {LEVEL_LABEL[g.level] ?? g.level} · {landsamProgramsWithData(g) === 0 ? 'ingen tall ennå' : 'bare NMBU har tall'}
+                  </span>
+                </div>
+              );
+              return (
               <button
                 key={g.id}
                 onClick={() => onOpenAnalysis(g.id)}
@@ -105,7 +118,8 @@ export function LandsamLanding({ onOpenAnalysis, onBackToFaculties }: Props) {
                   {LEVEL_LABEL[g.level] ?? g.level} · {g.entries.length} program
                 </span>
               </button>
-            ))}
+              );
+            })}
           </div>
         </div>
 

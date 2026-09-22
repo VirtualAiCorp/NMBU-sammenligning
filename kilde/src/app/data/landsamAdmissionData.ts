@@ -34,6 +34,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'nmbu_eiendom', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet',
         studiekode: '192230', studiested: 'Ås', type: 'master',
+        url: 'https://www.nmbu.no/studier/master-5-aar/eiendom',
         years: {
           '2020': Y(null, null, null, null, null, null, 44.3, 51.8),
           '2021': Y(701, 135, 38, 36.3, 675, 60, 47.0, 56.8),
@@ -47,6 +48,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'hvl_landmaling', shortName: 'HVL Bergen', institusjon: 'Høgskulen på Vestlandet',
         studiekode: '203753', studiested: 'Bergen', type: 'bachelor',
+        url: 'https://www.hvl.no/studier/studieprogram/landmaling-og-eiendomsdesign/',
         years: {
           '2020': Y(null, null, null, null, null, null, 41.1, 48.0),
           '2021': Y(796, 133, 50, 33.1, 764, 120, 41.7, 48.7),
@@ -60,6 +62,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'hvl_eiendomsmegling', shortName: 'HVL Sogndal', institusjon: 'Høgskulen på Vestlandet',
         studiekode: '203368', studiested: 'Sogndal', type: 'bachelor',
+        url: 'https://www.hvl.no/studier/studieprogram/eiendomsmegling-okonomi-og-jus/',
         years: {
           '2020': Y(null, null, null, null, null, null, 35.7, 36.8),
           '2021': Y(1213, 142, 40, 41.5, 1120, 170, 39.5, 41.9),
@@ -73,6 +76,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'nord_eiendomsmegling', shortName: 'Nord', institusjon: 'Nord universitet',
         studiekode: '204368', studiested: 'Bodø', type: 'bachelor',
+        url: 'https://www.nord.no/studier/eiendomsmegling-og-markedsanalyser-bachelor',
         years: {
           '2020': Y(null, null, null, null, null, null, 39.1, 42.4),
           '2021': Y(996, 147, 30, 32.0, 919, 130, 41.4, 43.1),
@@ -117,6 +121,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'nmbu_la', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet',
         studiekode: '192732', studiested: 'Ås', type: 'master',
+        url: 'https://www.nmbu.no/studier/master-5-aar/landskapsarkitektur',
         years: {
           '2020': Y(null, null, null, null, null, null, 53.0, 58.6),
           '2021': Y(1058, 227, 40, 76.7, 1033, 60, 54.4, 60.5),
@@ -130,6 +135,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'aho_la', shortName: 'AHO', institusjon: 'Arkitektur- og designhøgskolen i Oslo',
         studiekode: '189732', studiested: 'Oslo', type: 'master',
+        url: 'https://www.aho.no/studier/program/master-i-landskapsarkitektur/',
         years: {
           '2021': Y(811, 96, 20, 64.6, 144, 20, null, null),
           '2022': Y(670, 70, 20, 81.4, 189, 20, null, null),
@@ -142,6 +148,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'hvl_landskapsplanlegging_la', shortName: 'HVL Sogndal', institusjon: 'Høgskulen på Vestlandet',
         studiekode: '203310', studiested: 'Sogndal', type: 'bachelor',
+        url: 'https://www.hvl.no/studier/studieprogram/landskapsplanlegging-med-landskapsarkitektur/',
         years: {
           '2020': Y(null, null, null, null, null, null, 42.2, 46.4),
           '2021': Y(497, 72, 35, 63.9, 478, 86, 44.5, 49.6),
@@ -163,6 +170,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'nmbu_byreg', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet',
         studiekode: '192949', studiested: 'Ås', type: 'master',
+        url: 'https://www.nmbu.no/studier/master-5-aar/og-regionplanlegging',
         years: {
           '2020': Y(null, null, null, null, null, null, 48.1, 55.7),
           '2021': Y(748, 121, 45, 52.9, 727, 68, 49.5, 58.0),
@@ -176,6 +184,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'uis_byplanlegging', shortName: 'UiS', institusjon: 'Universitetet i Stavanger',
         studiekode: '217938', studiested: 'Stavanger', type: 'master',
+        url: 'https://www.uis.no/nb/studier/byplanlegging-master-5-ar',
         years: {
           '2020': Y(null, null, null, null, null, null, 0, 0),
           '2021': Y(227, 18, 12, 44.4, 127, 29, 0, 0),
@@ -185,6 +194,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'uis_byplan_samfsikkerhet', shortName: 'UiS (bachelor)', institusjon: 'Universitetet i Stavanger',
         studiekode: '217530', studiested: 'Stavanger', type: 'bachelor',
+        url: 'https://www.uis.no/nb/studier/byplanlegging-og-samfunnssikkerhet-bachelor',
         years: {
           '2021': Y(1231, 184, 20, 54.3, 1155, 50, 45.5, 54.8),
           '2022': Y(752, 100, 32, 53.0, 728, 60, 45.5, 51.4),
@@ -207,6 +217,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'uit_samfunnsplanlegging', shortName: 'UiT', institusjon: 'UiT Norges arktiske universitet',
         studiekode: '186474', studiested: 'Tromsø', type: 'bachelor',
+        url: 'https://uit.no/utdanning/program/272680/samfunnsplanlegging_-_bachelor',
         years: {
           '2020': Y(null, null, null, null, null, null, 0, 0),
           '2021': Y(174, 27, 40, 48.1, 161, 50, 0, 0),
@@ -220,6 +231,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'nord_geografi_samfplan', shortName: 'Nord', institusjon: 'Nord universitet',
         studiekode: '204438', studiested: 'Levanger', type: 'bachelor',
+        url: 'https://www.nord.no/studier/geografi-og-samfunnsplanlegging-bachelor',
         years: {
           '2022': Y(152, 25, 20, 52.0, 143, 31, 0, 0),
           '2023': Y(128, 27, 20, 48.1, 123, 31, 0, 0),
@@ -231,6 +243,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'uia_samfunnsplanlegging', shortName: 'UiA', institusjon: 'Universitetet i Agder',
         studiekode: '201474', studiested: 'Kristiansand', type: 'bachelor',
+        url: 'https://www.uia.no/studier/program/samfunnsplanlegging-og-kommunikasjon-bachelor/',
         years: {
           '2020': Y(null, null, null, null, null, null, 35.3, 41.4),
           '2021': Y(444, 53, 40, 58.5, 421, 80, 38.0, 44.3),
@@ -257,6 +270,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'ntnu_fysisk_planlegging', shortName: 'NTNU (master 2 år)', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
         studiekode: '', studiested: 'Trondheim', type: 'master2',
+        url: 'https://www.ntnu.no/studier/mfyspl',
         years: {
           '2021': Y(212, 124, 40, null, 170, 71, null, 3.3),
           '2022': Y(204, 104, 40, null, 164, 84, null, 3.2),
@@ -277,6 +291,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'nmbu_landskapsing', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet',
         studiekode: '192310', studiested: 'Ås', type: 'bachelor',
+        url: 'https://www.nmbu.no/studier/bachelor/landskapsingenior',
         years: {
           '2020': Y(null, null, null, null, null, null, 45.5, 54.2),
           '2021': Y(691, 107, 25, 57.0, 675, 38, 50.1, 57.3),
@@ -290,6 +305,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'hvl_landskapsplanlegging', shortName: 'HVL Sogndal', institusjon: 'Høgskulen på Vestlandet',
         studiekode: '203310', studiested: 'Sogndal', type: 'bachelor',
+        url: 'https://www.hvl.no/studier/studieprogram/landskapsplanlegging-med-landskapsarkitektur/',
         years: {
           '2020': Y(null, null, null, null, null, null, 42.2, 46.4),
           '2021': Y(497, 72, 35, 63.9, 478, 86, 44.5, 49.6),
@@ -311,6 +327,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'nmbu_ims', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet',
         studiekode: '192484', studiested: 'Ås', type: 'bachelor',
+        url: 'https://www.nmbu.no/studier/bachelor/internasjonale-miljo-og-utviklingsstudier',
         years: {
           '2020': Y(null, null, null, null, null, null, 52.1, 55.5),
           '2021': Y(467, 85, 20, 74.1, 417, 50, 51.5, 54.0),
@@ -350,6 +367,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'uia_globale_utviklingsstudier', shortName: 'UiA', institusjon: 'Universitetet i Agder',
         studiekode: '201484', studiested: 'Kristiansand', type: 'bachelor',
+        url: 'https://www.uia.no/studier/program/globale-utviklingsstudier-bachelor/',
         years: {
           '2020': Y(null, null, null, null, null, null, 42.5, 42.7),
           '2021': Y(399, 72, 25, 76.4, 373, 58, 44.1, 47.6),
@@ -363,6 +381,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'uio_internasjonale_studier', shortName: 'UiO (int.stud.)', institusjon: 'Universitetet i Oslo',
         studiekode: '185872', studiested: 'Oslo', type: 'bachelor',
+        url: 'https://www.uio.no/studier/program/internasjonale-studier/',
         years: {
           '2020': Y(null, null, null, null, null, null, 55.0, 59.0),
           '2021': Y(1879, 353, 80, 70.5, 1808, 140, 55.2, 59.2),
@@ -389,6 +408,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'nord_internasjonale_relasjoner_b', shortName: 'Nord', institusjon: 'Nord universitet',
         studiekode: '204872', studiested: 'Bodø', type: 'bachelor',
+        url: 'https://www.nord.no/studier/internasjonale-relasjoner-bachelor',
         years: {
           '2020': Y(null, null, null, null, null, null, 0, 0),
           '2021': Y(322, 44, 20, 38.6, 288, 50, 41.7, 43.6),
@@ -410,6 +430,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'nmbu_eiendomsutvikling', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet',
         studiekode: '', studiested: 'Ås', type: 'master2',
+        url: 'https://www.nmbu.no/studier/master-2-aar/eiendomsutvikling',
         years: {
           '2021': Y(220, null, null, null, 127, 60, null, null),
           '2022': Y(172, null, null, null, 119, 81, null, null),
@@ -421,6 +442,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'ntnu_eiendomsutvikling', shortName: 'NTNU', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
         studiekode: '', studiested: 'Trondheim', type: 'master2',
+        url: 'https://www.ntnu.no/studier/maeiendom',
         years: {
           '2021': Y(280, 113, 24, null, 227, 60, null, 3.3),
           '2022': Y(272, 110, 24, null, 215, 58, null, 3.3),
@@ -441,6 +463,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'nmbu_folkehelse', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet',
         studiekode: '', studiested: 'Ås', type: 'master2',
+        url: 'https://www.nmbu.no/studier/master-2-aar/folkehelsevitenskap',
         years: {
           '2021': Y(232, null, null, null, 221, 101, null, null),
           '2022': Y(181, null, null, null, 175, 106, null, null),
@@ -452,6 +475,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'ntnu_folkehelse', shortName: 'NTNU', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
         studiekode: '', studiested: 'Trondheim', type: 'master2',
+        url: 'https://www.ntnu.no/studier/mfhls',
         years: {
           '2021': Y(430, 196, 30, null, 364, 129, null, 3.8),
           '2022': Y(385, 126, 30, null, 339, 105, null, 3.6),
@@ -482,6 +506,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'nmbu_gep', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet',
         studiekode: '', studiested: 'Ås', type: 'master2',
+        url: 'https://www.nmbu.no/studier/master-2-aar/global-okonomi-og-politikk',
         years: {
           '2024': Y(163, null, null, null, 28, 17, null, null),
           '2025': Y(244, null, null, null, 71, 52, null, 3.0),
@@ -498,6 +523,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'nmbu_globale_utviklingsstudier', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet',
         studiekode: '', studiested: 'Ås', type: 'master2',
+        url: 'https://www.nmbu.no/studier/master-2-aar/globale-utviklingsstudier',
         years: {
           '2021': Y(718, null, null, null, 304, 102, null, null),
           '2022': Y(858, null, null, null, 297, 99, null, null),
@@ -509,6 +535,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'uio_decc', shortName: 'UiO', institusjon: 'Universitetet i Oslo',
         studiekode: '', studiested: 'Oslo', type: 'master2',
+        url: 'https://www.uio.no/english/studies/programmes/ces-master/',
         years: {
           '2021': Y(548, null, null, null, null, 39, null, 4.5),
           '2022': Y(437, null, null, null, null, 42, null, 4.4),
@@ -529,6 +556,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'nmbu_intmiljo', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet',
         studiekode: '', studiested: 'Ås', type: 'master2',
+        url: 'https://www.nmbu.no/studier/master-2-aar/internasjonale-miljostudier',
         years: {
           '2021': Y(751, null, null, null, 361, 93, null, null),
           '2022': Y(739, null, null, null, 197, 64, null, null),
@@ -548,6 +576,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'nmbu_intrel', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet',
         studiekode: '', studiested: 'Ås', type: 'master2',
+        url: 'https://www.nmbu.no/studier/master-2-aar/internasjonale-relasjoner',
         years: {
           '2021': Y(715, null, null, null, 309, 109, null, null),
           '2022': Y(800, null, null, null, 269, 103, null, null),
@@ -559,6 +588,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'uio_pecos', shortName: 'UiO', institusjon: 'Universitetet i Oslo',
         studiekode: '', studiested: 'Oslo', type: 'master2',
+        url: 'https://www.uio.no/english/studies/programmes/peace-master/',
         years: {
           '2021': Y(591, null, null, null, null, 37, null, 4.2),
           '2022': Y(546, null, null, null, null, 31, null, 4.2),
@@ -579,6 +609,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'nmbu_gla', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet',
         studiekode: '', studiested: 'Ås', type: 'master2',
+        url: 'https://www.nmbu.no/studier/master-2-aar/landskapsarkitektur-global-baerekraft',
         years: {
           '2021': Y(213, null, null, null, 48, 37, null, null),
           '2022': Y(241, null, null, null, 68, 47, null, null),
@@ -598,6 +629,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'nmbu_eeg', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet',
         studiekode: '', studiested: 'Ås', type: 'master2',
+        url: 'https://www.nmbu.no/studier/master-2-aar/samfunnsokonomi-og-miljoforvaltning',
         years: {
           '2024': Y(188, null, null, null, 50, 21, null, null),
           '2025': Y(257, null, null, null, 78, 59, null, 3.0),
@@ -606,6 +638,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'ntnu_msok', shortName: 'NTNU', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
         studiekode: '', studiested: 'Trondheim', type: 'master2',
+        url: 'https://www.ntnu.no/studier/msok',
         years: {
           '2021': Y(312, 90, 25, null, 106, 67, null, 3.0),
           '2022': Y(284, 69, 25, null, 89, 50, null, 2.5),
@@ -618,6 +651,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'uio_economics', shortName: 'UiO', institusjon: 'Universitetet i Oslo',
         studiekode: '', studiested: 'Oslo', type: 'master2',
+        url: 'https://www.uio.no/english/studies/programmes/economics-master/',
         years: {
           '2021': Y(455, null, null, null, null, 149, null, 3.1),
           '2022': Y(400, null, null, null, null, 131, null, 3.4),
@@ -630,6 +664,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'uib_samfunnsokonomi', shortName: 'UiB', institusjon: 'Universitetet i Bergen',
         studiekode: '', studiested: 'Bergen', type: 'master2',
+        url: 'https://www4.uib.no/studier/program/samfunnsokonomi-master',
         years: {
           '2021': Y(null, 163, 25, null, null, 60, null, null),
           '2022': Y(null, 145, 27, null, null, 57, null, 3.4),

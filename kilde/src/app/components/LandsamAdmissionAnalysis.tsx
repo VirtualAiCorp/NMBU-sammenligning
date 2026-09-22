@@ -8,6 +8,7 @@ import { CsvExportButton } from './CsvExportButton';
 import { exportLandsamCsv } from '../utils/csvExport';
 import { LANDSAM_GROUPS, LANDSAM_YEARS, type LandsamGroup, type LandsamLevel } from '../data/landsamAdmissionData';
 import { landsamColorFor } from '../data/landsamPalette';
+import { landsamHasComparison } from '../data/landsamUtils';
 import type { FullAdmissionEntry, FullYearData } from '../data/fullAdmissionData';
 
 // ─── Metrics ─────────────────────────────────────────────────────────────────
@@ -114,12 +115,20 @@ function InstitutionPicker({
               }}
             >
               <div className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: active ? '#fff' : col, opacity: active ? 0.9 : 1 }} />
-              <div>
+              <div className="flex-1 min-w-0">
                 <div>{e.shortName}{isNmbu ? ' ★' : ''}</div>
                 <div style={{ fontSize: 10, opacity: 0.75, fontWeight: 400 }}>
-                  {e.studiekode} · {e.studiested}
+                  {e.studiekode ? `${e.studiekode} · ` : ''}{e.studiested}
                 </div>
               </div>
+              {e.url && (
+                <a href={e.url} target="_blank" rel="noopener noreferrer" title="Åpne programsiden"
+                  onClick={(ev) => ev.stopPropagation()}
+                  className="shrink-0 rounded-md p-1 hover:opacity-100"
+                  style={{ opacity: 0.7, color: active ? '#fff' : 'var(--nmbu-green)' }}>
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+              )}
             </button>
           );
         })}
@@ -302,7 +311,14 @@ function DataTable({
               <td className="px-3 py-2.5">
                 <div className="flex items-center gap-1.5">
                   <div className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: landsamColorFor(e.id) }} />
-                  <span style={{ fontWeight: 600, color: 'var(--nmbu-green-dark)' }}>{e.shortName}</span>
+                  {e.url ? (
+                    <a href={e.url} target="_blank" rel="noopener noreferrer" title="Åpne programsiden"
+                      className="flex items-center gap-1 hover:underline" style={{ fontWeight: 600, color: 'var(--nmbu-green-dark)' }}>
+                      {e.shortName} <ExternalLink className="w-3 h-3" style={{ opacity: 0.6 }} />
+                    </a>
+                  ) : (
+                    <span style={{ fontWeight: 600, color: 'var(--nmbu-green-dark)' }}>{e.shortName}</span>
+                  )}
                   {group.nmbuIds.includes(e.id) && (
                     <span className="px-1.5 rounded-full" style={{ fontSize: 9, fontWeight: 700, backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)' }}>NMBU</span>
                   )}
@@ -471,18 +487,25 @@ export function LandsamAdmissionAnalysis({ initialGroup }: { initialGroup?: stri
 
       {/* Programgruppe-faner — hentet fra data */}
       <div className="flex items-center gap-1 rounded-xl p-1.5 flex-wrap" style={{ backgroundColor: 'var(--nmbu-beige-light)', border: '1px solid var(--nmbu-neutral-3)', width: 'fit-content' }}>
-        {LANDSAM_GROUPS.map((g) => (
-          <button key={g.id} onClick={() => setGroupId(g.id)}
-            className="px-5 py-2 rounded-lg text-sm transition-all"
-            style={{
-              backgroundColor: groupId === g.id ? 'var(--nmbu-green-dark)' : 'transparent',
-              color: groupId === g.id ? '#fff' : 'var(--nmbu-neutral-1)',
-              fontWeight: groupId === g.id ? 600 : 400,
-            }}
-          >
-            {g.label}
-          </button>
-        ))}
+        {LANDSAM_GROUPS.map((g) => {
+          const ok = landsamHasComparison(g);
+          return (
+            <button key={g.id} onClick={() => ok && setGroupId(g.id)} disabled={!ok}
+              title={ok ? undefined : 'Ikke nok data til sammenligning ennå'}
+              className="px-5 py-2 rounded-lg text-sm transition-all"
+              style={{
+                backgroundColor: groupId === g.id ? 'var(--nmbu-green-dark)' : 'transparent',
+                color: groupId === g.id ? '#fff' : ok ? 'var(--nmbu-neutral-1)' : 'var(--nmbu-neutral-2)',
+                fontWeight: groupId === g.id ? 600 : 400,
+                opacity: ok ? 1 : 0.55,
+                cursor: ok ? 'pointer' : 'not-allowed',
+                textDecoration: ok ? 'none' : 'line-through',
+              }}
+            >
+              {g.label}
+            </button>
+          );
+        })}
       </div>
 
       {/* Header */}

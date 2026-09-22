@@ -35,6 +35,7 @@ export interface FullAdmissionEntry {
   type: ProgramType;
   years: Partial<Record<string, FullYearData>>;
   campuses?: CampusBreakdown[];
+  url?: string; // lenke til programsiden hos institusjonen
   stipulatedSokerpress?: number;
 }
 

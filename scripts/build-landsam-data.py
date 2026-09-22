@@ -354,6 +354,7 @@ def process_programkart(programkart, sokertall_index, poenggrenser_index):
                     "studiekode": studiekode,
                     "studiested": prog.get("studiested", ""),
                     "type": prog.get("type", "master"),
+                    "url": prog.get("url") or None,
                     "years": years,
                 }
             )
@@ -466,6 +467,8 @@ def render_ts(groups_out, generated_date: str) -> str:
                 f"        studiekode: {ts_string(entry['studiekode'])}, studiested: {ts_string(entry['studiested'])}, "
                 f"type: {ts_string(entry['type'])},"
             )
+            if entry.get("url"):
+                lines.append(f"        url: {ts_string(entry['url'])},")
             lines.append("        years: {")
             for y in YEARS:
                 if y in entry["years"]:
