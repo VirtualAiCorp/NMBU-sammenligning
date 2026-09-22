@@ -1,0 +1,35 @@
+{
+  "programnavn": "Ernæring (bachelor)",
+  "institusjon": "Universitetet i Bergen",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://www.uib.no/studier/program/ernaering-bachelor",
+    "https://www4.uib.no/studier/program/ernaering-bachelor/plan"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 0,
+  "obligatoriske": [
+    {
+      "emnekode": "EXPHIL",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Nøyaktig UiB-emnekode (variant) ikke bekreftet i denne runden."
+    },
+    {
+      "emnekode": "NUTR290",
+      "emnenavn": "Bacheloroppgave",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Studiepoeng ikke eksplisitt bekreftet i kildene brukt her (antatt 10 sp iht. UiBs standard bacheloroppgave-emner); bør verifiseres."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Den fullstendige semester-for-semester emnetabellen for BAMD-NUHUM (Bachelor i ernæring, UiB) kunne ikke hentes ut i denne runden - programmets «plan»-side oppgir at «alle emner i programmet er obligatoriske» og at emnene må tas i fastsatt rekkefølge, men den selve emnetabellen med koder/studiepoeng per semester var ikke tilgjengelig i den hentede sideteksten (kun en lenke til en egen emneoversikt som ikke ble funnet). Bekreftede elementer: Examen philosophicum (10 sp, eksakt UiB-variantkode ikke bekreftet), DIGI100 og DIGI101 (obligatoriske digitale kompetanseemner fra og med kull 25, skal være fullført innen slutten av 2. semester - studiepoeng ikke bekreftet og derfor ikke tatt med som egne emner), NUTR244 og NUTR249 (praksisbaserte emner med maks to forsøk - studiepoeng ikke bekreftet), NUTR290 Bacheloroppgave (satt til 10 sp, ikke eksplisitt bekreftet). obligatoriskeStudiepoeng er satt til 0 fordi de fleste emnene mangler bekreftede studiepoeng-tall; totaltStudiepoeng=180 er standard for et treårig bachelorprogram. Bør hentes på nytt med tilgang til selve emneoversikt-siden eller en studieplan-PDF for å få fullstendig og presis emneliste.",
+  "entryId": "uib_ernaring"
+}

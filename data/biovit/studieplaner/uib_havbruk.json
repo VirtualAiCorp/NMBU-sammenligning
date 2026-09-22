@@ -1,0 +1,242 @@
+{
+  "entryId": "uib_havbruk",
+  "programnavn": "Havbruk, sivilingeniør (integrert masterprogram, 5 år)",
+  "institusjon": "Universitetet i Bergen",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www4.uib.no/studier/program/havbruk-integrert-masterprogram-sivilingenior",
+    "https://www4.uib.no/studier/program/havbruk-integrert-masterprogram-sivilingenior/plan"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 250,
+  "obligatoriske": [
+    {
+      "emnekode": "BIO100",
+      "emnenavn": "Biologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO100-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIF100",
+      "emnenavn": "Grunnkurs i bioinformatikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIF100-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "INF100",
+      "emnenavn": "Programmering I",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "INF100-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIF101",
+      "emnenavn": "Molekylærbiologisk bioinformatikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIF101-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO280",
+      "emnenavn": "Havbruksbiologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO280-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PHYS101",
+      "emnenavn": "Fysikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "PHYS101-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO291",
+      "emnenavn": "Fiskefysiologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO291-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIF200",
+      "emnenavn": "Statistikk for bioinformatikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIF200-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EXPHIL",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Emnekoden er oppgitt som «EXPHIL» uten variantsuffiks i studieplanens rutenett (jf. UiBs vanlige varianter EXPHIL-MNSEM/EXPHIL-MNEKS)."
+    },
+    {
+      "emnekode": "KJEM109",
+      "emnenavn": "Kjemi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "KJEM109-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO205",
+      "emnenavn": "Fiskesykdommer",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIO205-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO208",
+      "emnenavn": "Akvakultur",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIO208-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "STAT110",
+      "emnenavn": "Statistikk I",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "STAT110-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "INNOV201",
+      "emnenavn": "Innovasjon",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "INNOV201-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO300",
+      "emnenavn": "Populasjonsgenetikk",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Oppgitt i studieplanens rutenett som «(BIO300 A+B)», dvs. sammensatt av to deler."
+    },
+    {
+      "emnekode": "BIO213",
+      "emnenavn": "Akvakultur - avl og genetikk",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO213-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "LAS301",
+      "emnenavn": "Laboratoriedyrkunnskap, del 1",
+      "studiepoeng": 5,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "LAS301-0"
+      ],
+      "merknad": "Oppgitt sammen med LAS303 som «LAS301 og LAS303 (10 sp)» i studieplanens rutenett; studiepoeng er fordelt likt (5+5) mellom de to i mangel av annen fordeling i kilden."
+    },
+    {
+      "emnekode": "LAS303",
+      "emnenavn": "Laboratoriedyrkunnskap, del 2",
+      "studiepoeng": 5,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "LAS303-0"
+      ],
+      "merknad": "Se merknad på LAS301."
+    },
+    {
+      "emnekode": "BIO207",
+      "emnenavn": "Fiskeernæring",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIO207-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO382",
+      "emnenavn": "Avlsforskning i akvakultur",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIO382-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HAVB399",
+      "emnenavn": "Masteroppgave i havbruk",
+      "studiepoeng": 60,
+      "aar": 5,
+      "semester": "helår",
+      "dbhEmnekoder": [],
+      "merknad": "Masteroppgave (fortrinnsvis 60 sp, men 30 sp oppgave + 30 sp kurs er også mulig), gjennomføres over 9. og 10. semester (5. år)."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er UiBs studieplanside for MAMN-HAVSJ Integrert masterprogram i havbruk (sivilingeniør), høst 2026 (www4.uib.no/studier/program/havbruk-integrert-masterprogram-sivilingenior/plan). Programmet er et 5-årig (10 semester) integrert sivilingeniørprogram på 300 sp totalt: emnedel 240 sp + individuell masteroppgave 60 sp (HAVB399). De 21 emnene/oppføringene i obligatoriske-listen over (250 sp) er uten valgalternativ (bortsett fra selve masteroppgavens fleksible 60/30+30-fordeling, som er notert i egen merknad på HAVB399). To obligatoriske krav er valg mellom alternativer og derfor IKKE ført i listen, i tråd med oppgavens regel: MAT101/MAT111 (10 sp, 1. semester) og MAT102/MAT112 (10 sp, 2. semester), begge valgt etter matematikkbakgrunn. 5. semester (30 sp, høst år 3) består utelukkende av «Frie studiepoeng»/utveksling og er derfor ikke ført. 250 (listen) + 20 (matematikkvalgene) + 30 (5. semester, fritt) = 300 sp. Studieplanens krav til progresjon fastslår at alle emner til og med 6. semester (inkl. valgfrie) må være bestått før oppstart av masteroppgaven. Programmet har ingen egne navngitte studieretninger med separate obligatoriske emnelister ut over selve hovedstudieplanen."
+}

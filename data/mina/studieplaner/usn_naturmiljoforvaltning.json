@@ -1,0 +1,125 @@
+{
+  "entryId": "usn_naturmiljoforvaltning",
+  "programnavn": "Natur- og miljøforvaltning (bachelor)",
+  "institusjon": "Universitetet i Sørøst-Norge",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.usn.no/studier/bachelor-i-natur-og-miljoforvaltning/",
+    "https://www.usn.no/studier/studie-og-emneplaner/#/studieplan/315_2026_HØST"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 97.5,
+  "obligatoriske": [
+    {
+      "emnekode": "NM101",
+      "emnenavn": "Geologi og landskap",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "NM102",
+      "emnenavn": "Bærekraftsmål og bevaringsbiologi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "NM103",
+      "emnenavn": "Økologi og evolusjon",
+      "studiepoeng": 15,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "NM104",
+      "emnenavn": "Klima og Miljø",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "NM105",
+      "emnenavn": "Cellebiologi og genetikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "NM106",
+      "emnenavn": "Floristikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "NM107",
+      "emnenavn": "Faunistikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "NM109",
+      "emnenavn": "Arealplanlegging",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "NM110",
+      "emnenavn": "Anvendt statistikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "GIS3000",
+      "emnenavn": "Geografiske informasjonssystemer",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "NM111",
+      "emnenavn": "Ferskvannsøkologi",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "NM112",
+      "emnenavn": "Anvendt kjemi",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er USNs interaktive studiemodell for Bachelor i natur- og miljøforvaltning, kull 2026 høst (studieprogramkode 315), tilgjengelig via nettleservirkomponenten på usn.no/studier/studie-og-emneplaner/#/studieplan/315_2026_HØST (rute #/studiemodel/315_2026_HØST viser selve emnetabellen). Siden er en JavaScript-app (web components) der studiemodell-tabellen bare lastes ved navigering internt i appen, og innholdet er derfor hentet ut direkte fra den renderte DOM-strukturen. USNs egen tabell skiller eksplisitt mellom «Obligatoriske emner» (97,5 sp, de 12 emnene i obligatoriske-listen over, fordelt 2026 høst / 2027 vår / 2027 høst / 2028 vår) og «Valgemner» (82,5 sp i 3.–6. semester). Valgemnene er ikke frie, men styrt av flere obligatoriske delvalg: 3. semester (7,5 sp, 2027 høst) krever minst én av FM201 Arbeidsmiljø og HMS eller NF210 Vegetasjonsøkologi; 4. semester (15 sp, 2028 vår) krever minst to av FM202 Fysiologi og toksikologi, FM203 Grunnvann og vannforsyning, NF211 Populasjons- og adferdsøkologi, NF212 Viltøkologi og viltforvaltning; 5. semester (30 sp, 2028 høst, «utviklingssemesteret») krever minst én av NMARB30 Arbeidslivsrelevant praksis eller NMBA30 Bacheloroppgave (begge 30 sp) – altså er selve bacheloroppgaven her et reelt alternativ til praksis, ikke fast obligatorisk, og studenter kan i stedet reise på utveksling eller til UNIS/Svalbard; 6. semester (30 sp, 2029 vår) krever minst fire av FM204 Miljøforurensning (15 sp), NM113 Soil Ecology, NM115 Ferskvannsfisk og vannressursforvaltning, NF213 Naturkartlegging og overvåking, NF214 Wildlife Conflict Management, NM117 Naturvariasjon satt i system (NiN). Siden alle disse er kategorisert som «Valgemner» av kilden selv (ikke «Obligatoriske emner»), og alternativene har ulikt studiepoengomfang/antall som skal velges, er de holdt utenfor obligatoriske-listen og obligatoriskeStudiepoeng, og bare beskrevet her, i tråd med regelen om at obligatoriske valg mellom alternativer føres i merknad. 97,5 sp obligatorisk + 82,5 sp valgfritt (med de nevnte delkravene) = 180 sp totalt, i samsvar med programsidens «Studiepoeng: 180»."
+}

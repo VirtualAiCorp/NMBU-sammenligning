@@ -1,0 +1,161 @@
+{
+  "entryId": "nmbu_miljonatur",
+  "programnavn": "Miljø og naturressurser (bachelor)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/bachelor/miljo-og-naturressurser",
+    "https://static02.nmbu.no/mina/studier/B-MILJØ.php"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 135,
+  "obligatoriske": [
+    {
+      "emnekode": "MILJØ100",
+      "emnenavn": "Miljø, naturressurser og radioaktivitet",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "10 sp totalt, fordelt med 5 sp i augustblokk (før høstsemesteret) og 5 sp i høstparallell, jf. rutenettets kolonnebredder og NMBUs emnesøk."
+    },
+    {
+      "emnekode": "MATH-INF100",
+      "emnenavn": "Beregningsbasert matematikk i praksis",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen gir valget mellom MATH-INF100 og MATH121 (Kalkulus); MATH121 anbefales for studenter med matematikk R2 fra videregående skole."
+    },
+    {
+      "emnekode": "GEO100",
+      "emnenavn": "Geologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ZOOL100",
+      "emnenavn": "Generell zoologi",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS101",
+      "emnenavn": "Mekanikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen gir valget mellom FYS101 og FYS100; FYS101 anbefales for studenter med fysikk 1 og matematikk R2 fra videregående skole."
+    },
+    {
+      "emnekode": "KJM100",
+      "emnenavn": "Generell kjemi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BOT100",
+      "emnenavn": "Plantediversitet",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "PHI100",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen gir valget mellom PHI100 og seminarversjonen PHI101."
+    },
+    {
+      "emnekode": "JORD100",
+      "emnenavn": "Jordlære",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO130",
+      "emnenavn": "Mikrobiologi",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "LAD102",
+      "emnenavn": "GIS - praktisk introduksjon",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "VANN200",
+      "emnenavn": "Vannkvalitet og vannforurensning",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM120",
+      "emnenavn": "Organisk kjemi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MILJØ200",
+      "emnenavn": "Forurensning og miljø",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "STAT100",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanens fotnote sier STAT100 kan tas høst eller vår."
+    },
+    {
+      "emnekode": "MINA250",
+      "emnenavn": "Tverrfaglig konsekvensanalyse",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "10 sp, undervises i januarblokk og vårparallell (5 sp hvert, iht. rutenettets kolonnebredder)."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er NMBUs fargekodede rutenett-studieplan for kull 2026 (static02.nmbu.no/mina/studier/B-MILJØ.php), linket fra programsiden nmbu.no/studier/bachelor/miljo-og-naturressurser. Studiepoeng er lest av fra cellenes colspan (kolonnebredde 5 sp), kryssjekket mot nmbu.no/emne/<kode> (bl.a. bekreftet at MILJØ100 er 10 sp totalt: 5 sp augustblokk + 5 sp høstparallell, samme mønster som MINA250 og NATF100/SKOG100/SKOG220 i beslektede MINA-studieplaner). De 15 navngitte obligatoriske emnene summerer til 135 sp av totalt 180 sp. De resterende 45 sp er dels frie eksempelplaner/emnepakker uten faste emnelister (Geologi, Hydrologi, Jord og miljø, Limnologi, Miljøgifter og økotoksikologi, Miljøkjemi, Ressursforvaltning), dels et obligatorisk minstekrav utenfor rutenettet: «Velg minst 20 studiepoeng blant» FMI210 Generell miljøtoksikologi (10 sp vår), FYS140 Klimaendringer, bærekraft og tilpasninger (5 sp høst), GEO210 Kvartærgeologi (10 sp vår), GEO220 Hydrogeologi (10 sp vår), INF120 Programmering og databehandling (10 sp høst), JORD210 Dynamisk modellering i jord-plante-atmosfære systemet (10 sp høst), JORD230 Jord som vekstmedium (15 sp, augustblokk+høstparallell), KJM220 Vannkjemi (10 sp høst), KJM240 Analytisk kjemi (10 sp høst), VANN210 Ferskvannsøkologi (10 sp høst), VANN220 Vannressurser og vannforsyning (5 sp vår), «pluss minst 5 studiepoeng blant» GEO250 Jord og geologi i landskapet (5 sp juniblokk) eller GEO320 Hydrogeologi - feltkurs (5 sp juniblokk) — til sammen minst 25 sp fra en fleksibel emnepool. Siden dette er et minstekrav fra en stor pool av alternativer (ikke faste, navngitte obligatoriske emner), er det holdt utenfor obligatoriske-listen og obligatoriskeStudiepoeng, i tråd med regelen om at obligatoriske valg mellom alternativer føres i merknad. Emnenavn er hentet fra NMBUs emnesøk (nmbu.no/emne/<kode>)."
+}

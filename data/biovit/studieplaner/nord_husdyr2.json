@@ -1,0 +1,49 @@
+{
+  "entryId": "nord_husdyr2",
+  "programnavn": "Biovitenskap, studieretning Animal science / Husdyrvitenskap (master 2 år)",
+  "institusjon": "Nord universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nord.no/studier/biovitenskap-master",
+    "https://www.nord.no/studier/studieplaner/biovitenskap-mabio-master-host-2026",
+    "https://www.nord.no/studier/husdyrvitenskap-master-i-biovitenskap-master"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 15,
+  "obligatoriske": [
+    {
+      "emnekode": "MET5019",
+      "emnenavn": "Vitenskapelig kommunikasjon",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MET5019-1"
+      ],
+      "merknad": "Felles for hele masterprogrammet i biovitenskap (alle studieretninger og studiesteder)."
+    },
+    {
+      "emnekode": "KJ301F",
+      "emnenavn": "Laboratoriesikkerhet master",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "KJ301F-1"
+      ],
+      "merknad": "0-poengs sikkerhetskurs, må gjennomføres før bruk av spesialrom/-utstyr eller prosedyrer med forhøyet risiko."
+    },
+    {
+      "emnekode": "MET5020",
+      "emnenavn": "Biologisk dataanalyse",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Felles for hele masterprogrammet i biovitenskap."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "VIKTIG: Programsiden for denne studieretningen (Animal science / Husdyrvitenskap, Steinkjer) oppgir eksplisitt: «Dette studieprogrammet er vedtatt å ikke starte høst 2026». Studieretningen var derfor heller ikke blant de fire containerne («Spesialisering») i Nords nettbaserte semesterplan-verktøy for kull 2026 (kun Marin økologi, Akvakultur, Genomikk og Terrestrisk økologi og naturforvaltning var aktive der). Det er dermed ikke mulig å hente en gjeldende, kullspesifikk emneliste for husdyrvitenskapsretningen akkurat nå; «spesialiseringer» er derfor tom. Programmets tre felles emner (MET5019, KJ301F, MET5020, til sammen 15 sp) gjelder uansett for hele Biovitenskap-programmet og er ført opp i «obligatoriske». Retningsbeskrivelsen (fra husdyrvitenskap-siden, når den var/blir aktiv) er faglig rettet mot dyrevelferd, klimafotavtrykk, biologisk mangfold, One Health og teknologiutvikling i husdyrnæringen, men uten publiserte emnekoder. Masteroppgaven i programmet kan normalt være på 30 eller 60 studiepoeng (bekreftet for Akvakultur-retningen; ikke retningsspesifikt bekreftet for husdyrvitenskap siden retningen ikke er aktiv for dette kullet), uten egen oppgitt emnekode i planverktøyet. Se nord_biovitenskap2.json for hovedbeskrivelsen av programmet og de øvrige fire studieretningene."
+}

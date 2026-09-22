@@ -1,0 +1,304 @@
+{
+  "entryId": "uib_fiskehelse",
+  "programnavn": "Fiskehelse – akvamedisin (profesjonsstudium, master 5 år)",
+  "institusjon": "Universitetet i Bergen",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www4.uib.no/studier/program/fiskehelse-akvamedisin-profesjon",
+    "https://www4.uib.no/studier/program/fiskehelse-akvamedisin-profesjon/plan"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 290,
+  "obligatoriske": [
+    {
+      "emnekode": "BIF100",
+      "emnenavn": "Grunnkurs i bioinformatikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIF100-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO100",
+      "emnenavn": "Biologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO100-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIF200",
+      "emnenavn": "Statistikk for bioinformatikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIF200-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIF101",
+      "emnenavn": "Molekylærbiologisk bioinformatikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIF101-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJEM109",
+      "emnenavn": "Kjemi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "KJEM109-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO213",
+      "emnenavn": "Akvakultur - avl og genetikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO213-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO291",
+      "emnenavn": "Fiskefysiologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO291-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO280",
+      "emnenavn": "Havbruksbiologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO280-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EXPHIL",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Emnekoden er oppgitt som «EXPHIL» uten variantsuffiks i studieplanens rutenett."
+    },
+    {
+      "emnekode": "BIO103",
+      "emnenavn": "Biologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIO103-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO205A",
+      "emnenavn": "Fiskesykdommer, del A",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIO205A-0"
+      ],
+      "merknad": "Studiepoeng er anslått til 5 ut fra semestersummen (30 sp), siden kilden kun oppgir «BIO205A» uten eksplisitt studiepoengtall for delemnet."
+    },
+    {
+      "emnekode": "LAS301",
+      "emnenavn": "Laboratoriedyrkunnskap, del 1",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "LAS301-0"
+      ],
+      "merknad": "Studiepoeng anslått til 5 (sammen med LAS303 i 6. semester utgjør de til sammen 10 sp, jf. tilsvarende emnepar i uib_havbruk.json)."
+    },
+    {
+      "emnekode": "BIO206",
+      "emnenavn": "Fiskesykdommer",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO206-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO273",
+      "emnenavn": "Fiskeimmunologi",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO273-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MOL100",
+      "emnenavn": "Innføring i molekylærbiologi",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MOL100-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "LAS303",
+      "emnenavn": "Laboratoriedyrkunnskap, del 2",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "LAS303-0"
+      ],
+      "merknad": "Se merknad på LAS301."
+    },
+    {
+      "emnekode": "BIO207",
+      "emnenavn": "Fiskeernæring",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIO207-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO274",
+      "emnenavn": "Fiskepatologi",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIO274-0"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIF210",
+      "emnenavn": "Lovverk og forvaltning",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIF210-0"
+      ],
+      "merknad": "Studiepoeng er anslått til 5 ut fra semestersummen (30 sp)."
+    },
+    {
+      "emnekode": "BIO381",
+      "emnenavn": "Fiskesykdommer, virus og bakterier",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO374",
+      "emnenavn": "Fiskesykdommer, parasitter",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO300A",
+      "emnenavn": "Populasjonsgenetikk, del A",
+      "studiepoeng": 5,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO300A-0"
+      ],
+      "merknad": "Studiepoeng anslått til 5 (BIO300A og BIO300B utgjør til sammen 10 sp, jf. tilsvarende emne i uib_havbruk.json der BIO300 A+B er ført samlet som 10 sp)."
+    },
+    {
+      "emnekode": "BIO300B",
+      "emnenavn": "Populasjonsgenetikk, del B",
+      "studiepoeng": 5,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BIO300B-0"
+      ],
+      "merknad": "Se merknad på BIO300A."
+    },
+    {
+      "emnekode": "BIO371",
+      "emnenavn": "Fiskehelseforvaltning",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIF310",
+      "emnenavn": "Praksis i fiskehelsetjenesten",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BIF310-0"
+      ],
+      "merknad": "Praksisemne. Kan unntaksvis gjennomføres parallelt med masteroppgaven, men må være bestått før avsluttende mastereksamen."
+    },
+    {
+      "emnekode": "BIO372",
+      "emnenavn": "Fiskehelse, klinisk diagnostikk og behandling",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FISK399",
+      "emnenavn": "Masteroppgave i fiskehelse",
+      "studiepoeng": 60,
+      "aar": 5,
+      "semester": "helår",
+      "dbhEmnekoder": [
+        "FISK399-0"
+      ],
+      "merknad": "Selvstendig vitenskapelig arbeid, 60 sp, gjennomføres over 9. og 10. semester (5. år). Alle andre emner i graden skal være bestått før oppstart (unntatt praksisdelen av BIF310)."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er UiBs studieplanside for Profesjonsstudium i fiskehelse - akvamedisin, høst 2026 (www4.uib.no/studier/program/fiskehelse-akvamedisin-profesjon/plan). Programmet er et integrert 5-årig profesjonsstudium (10 semester) på 300 sp totalt: emnedel 240 sp + masteroppgave 60 sp (FISK399). Fullført grad gir den lovbeskyttede tittelen Fiskehelsebiolog. I motsetning til uib_havbruk (samme fakultet) har dette programmet INGEN egen valgfri/frie studiepoeng-periode eller utvekslingssemester – «alle emnene i graden skal være bestått før oppstart av masteroppgåva». Kun ett obligatorisk valg mellom alternativer finnes, og er derfor IKKE ført i listen, i tråd med oppgavens regel: MAT101/MAT111 (10 sp, 1. semester, valgt etter matematikkbakgrunn). Enkelte emnekoder i kildens rutenett (BIO205A, LAS301/LAS303, BIO300A/BIO300B, BIF210) er oppgitt uten eksplisitt studiepoengtall for hvert delemne; studiepoeng for disse er anslått ut fra at hvert semester skal summere til 30 sp (se egne merknader per emne). 290 (listen) + 10 (MAT101/MAT111) = 300 sp. Programmet har ingen egne navngitte studieretninger med separate obligatoriske emnelister."
+}

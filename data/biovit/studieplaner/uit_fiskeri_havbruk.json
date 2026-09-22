@@ -1,0 +1,170 @@
+{
+  "entryId": "uit_fiskeri_havbruk",
+  "programnavn": "Fiskeri- og havbruksvitenskap (bachelor, 3 år – se merknad om programkartets «master 5 år»-merking)",
+  "institusjon": "UiT Norges arktiske universitet",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://uit.no/go/target/268899/1B66060A685CD95EE0632F03F60AE5F6 (Fiskeri- og havbruksvitenskap - bachelor)",
+    "https://uit.no/Content/915965/cache=20262209145837/Studieplan%20for%20bachelor%20i%20fiskeri-%20og%20havbruksvitenskap%20fra%20kull%202025.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 140,
+  "obligatoriske": [
+    {
+      "emnekode": "FSK-1100",
+      "emnenavn": "Introduksjon til fiskeri- og havbruksvitenskap",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FSK-1100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJE-1001",
+      "emnenavn": "Introduksjon til kjemi og kjemisk biologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "KJE-1001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BED-1007",
+      "emnenavn": "Matematikk for økonomer",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FSK-1020",
+      "emnenavn": "Bærekraft og etikk",
+      "studiepoeng": 2.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FSK-1020-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO-1501",
+      "emnenavn": "Akvatisk økologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FSK-1122",
+      "emnenavn": "Biokjemi og mikrobiologi for FHV",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "FSK-1122-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FSK-1121",
+      "emnenavn": "Statistikk og metode for FHV",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "FSK-1121-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FSK-1123",
+      "emnenavn": "Økonomi for FHV",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "FSK-1123-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO-2406",
+      "emnenavn": "Introduction to Fish Biology",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO-2407",
+      "emnenavn": "Introduction to Aquaculture",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FSK-2408",
+      "emnenavn": "Havbruksforvaltning",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FSK-2409",
+      "emnenavn": "Bedriftsøkonomi for FHV",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FSK-2020",
+      "emnenavn": "Bærekraftig fiskeri",
+      "studiepoeng": 30,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "FSK-2020-1"
+      ],
+      "merknad": "Ett samlet 30 sp-emne internt sammensatt av fire delemner à 7,5 sp: fiskeribiologi, ressursøkonomi, forvaltning og redskapsteknologi."
+    },
+    {
+      "emnekode": "FSK-2041",
+      "emnenavn": "Sjømatproduksjon",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "FSK-2041-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FSK-2042",
+      "emnenavn": "Praksis for en bærekraftig sjømatnæring",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "FSK-2042-1"
+      ],
+      "merknad": "Obligatorisk praksisemne, tre ukers praksisopphold fordelt utover semesteret."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "VIKTIG AVVIK FRA PROGRAMKARTET: programkart.json beskriver entryId uit_fiskeri_havbruk som «Fiskeri- og havbruksvitenskap (master 5 år)», studiekode 186331, med url .../269552/fiskeri-_og_havbruksvitenskap_-_master. Denne URL-en er død (viser tom side/omdirigerer til uit.no forside per 22.09.2026), og UiTs nåværende studiekatalog (uit.no/utdanning) lister IKKE noe integrert 5-årig masterprogram i fiskeri- og havbruksvitenskap – kun et frittstående 3-årig bachelorprogram (Fiskeri- og havbruksvitenskap, bachelor, 180 sp, Tromsø) etterfulgt av et separat 2-årig masterprogram («fiskerikandidat», opptak krever minimum C i snitt fra bacheloren). Studiekode 186331 ser ut til å tilhøre bachelorprogrammet (jf. tredjepartskilder som studievalg.no). Denne filen er derfor bygget på studieplanen for BACHELORPROGRAMMET (kull 2025, godkjent 19.9.2024, 180 sp, 6 semester), som er det som faktisk finnes og er søkbart under denne studiekoden – «master 5 år»-merkingen i programkartet bør vurderes oppdatert eller fjernet. Kilde: uit.no/Content/915965/.../Studieplan for bachelor i fiskeri- og havbruksvitenskap fra kull 2025.pdf. De 14 emnene i obligatoriske-listen (140 sp) er faste for alle studenter i 1., 2., 3. og 6. semester. 5. semester (30 sp) består utelukkende av valgpakker (anbefalt innen havbruk, forvaltning eller økonomi) eller utveksling, og er derfor ikke ført. I 6. semester velges i tillegg ett av tre 10 sp-emner (obligatorisk valg mellom alternativer, ikke ført i listen): FSK-2043 Strategi og markedsføring for sjømatnæringen / BIO-2002 Dyrefysiologi / GIS. 140 (listen) + 30 (5. semester) + 10 (valg 6. semester) = 180 sp. Programmet har ingen egne, navngitte studieretninger med separate obligatoriske emnelister; kandidater som fullfører kvalifiserer til opptak på masterprogrammet i fiskeri- og havbruksvitenskap ved UiT."
+}

@@ -1,0 +1,74 @@
+{
+  "entryId": "nord_biovitenskap2",
+  "programnavn": "Biovitenskap (master 2 år)",
+  "institusjon": "Nord universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nord.no/studier/biovitenskap-master",
+    "https://www.nord.no/studier/studieplaner/biovitenskap-mabio-master-host-2026",
+    "https://www.nord.no/studier/akvakultur-master-i-biovitenskap-master",
+    "https://www.nord.no/studier/genomikk-master-i-biovitenskap-master",
+    "https://www.nord.no/studier/marin-okologi-master-i-biovitenskap-master",
+    "https://www.nord.no/studier/husdyrvitenskap-master-i-biovitenskap-master",
+    "https://www.nord.no/studier/terrestrisk-okologi-og-naturforvaltning-master-i-biovitenskap-master"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 15,
+  "obligatoriske": [
+    {
+      "emnekode": "MET5019",
+      "emnenavn": "Vitenskapelig kommunikasjon",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MET5019-1"
+      ],
+      "merknad": "Felles for alle studieretninger/studiesteder (Bodø og Steinkjer)."
+    },
+    {
+      "emnekode": "KJ301F",
+      "emnenavn": "Laboratoriesikkerhet master",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "KJ301F-1"
+      ],
+      "merknad": "0-poengs sikkerhetskurs, må gjennomføres før bruk av spesialrom/-utstyr eller prosedyrer med forhøyet risiko. Felles for alle studieretninger."
+    },
+    {
+      "emnekode": "MET5020",
+      "emnenavn": "Biologisk dataanalyse",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Felles for alle studieretninger."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Akvakultur (Bodø)",
+      "obligatoriske": []
+    },
+    {
+      "navn": "Genomikk (Bodø)",
+      "obligatoriske": []
+    },
+    {
+      "navn": "Marin økologi (Bodø)",
+      "obligatoriske": []
+    },
+    {
+      "navn": "Terrestrisk økologi og naturforvaltning (Steinkjer)",
+      "obligatoriske": []
+    },
+    {
+      "navn": "Animal science / Husdyrvitenskap (Steinkjer)",
+      "obligatoriske": []
+    }
+  ],
+  "merknad": "Kilde er Nords nettbaserte studieplanverktøy «Studieplan - Biovitenskap, MABIO-master, høst 2026» samt de fem retningssidene. Nords studieplan er en dynamisk «kurvmodell»: utover de tre felles emnene (MET5019, KJ301F, MET5020, til sammen 15 sp) består resten av programmet av containerposter uten forhåndsdefinerte emnekoder – «Anbefalte valgemner pr. studiested» (Bodø/Steinkjer) og «Spesialisering» (egne containere for hver av de fire retningene som var aktive i planverktøyet for kull 2026: Marin økologi, Akvakultur, Genomikk og Terrestrisk økologi og naturforvaltning). Konkrete emnekoder for disse containerne publiseres ikke i studieplanen eller på retningssidene; retningssidene henviser tilbake til samme studieplanside for emneinnhold, uten å oppgi noen liste. «obligatoriske» er derfor tom for alle fem retninger. Masteroppgaven kan være på 30 eller 60 studiepoeng (bekreftet eksplisitt på Akvakultur-siden; programmets 120 sp/4-semesterstruktur tilsier at dette gjelder generelt), men det er ikke oppgitt noen egen emnekode for oppgaven i planverktøyet, og den er derfor ikke ført opp som enkeltemne. Retningen «Animal science» (husdyrvitenskap, Steinkjer) er beskrevet i programteksten og har en egen programside, men var IKKE blant containerne i selve semesterplanen for kull 2026, og programsiden for husdyrvitenskap/animal science oppgir eksplisitt: «Dette studieprogrammet er vedtatt å ikke starte høst 2026» – dvs. denne studieretningen tas ikke opp for kullet studieplanen gjelder for. entryId nord_husdyr2 og nord_akvakultur2 i programkartet viser til de tilsvarende retningene innenfor dette samme Nord-programmet og har egne filer med identisk fellesdel."
+}

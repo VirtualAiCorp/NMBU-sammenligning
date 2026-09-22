@@ -1,0 +1,49 @@
+{
+  "entryId": "nord_akvakultur2",
+  "programnavn": "Biovitenskap, studieretning Akvakultur (master 2 år)",
+  "institusjon": "Nord universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nord.no/studier/biovitenskap-master",
+    "https://www.nord.no/studier/studieplaner/biovitenskap-mabio-master-host-2026",
+    "https://www.nord.no/studier/akvakultur-master-i-biovitenskap-master"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 15,
+  "obligatoriske": [
+    {
+      "emnekode": "MET5019",
+      "emnenavn": "Vitenskapelig kommunikasjon",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MET5019-1"
+      ],
+      "merknad": "Felles for hele masterprogrammet i biovitenskap (alle studieretninger og studiesteder)."
+    },
+    {
+      "emnekode": "KJ301F",
+      "emnenavn": "Laboratoriesikkerhet master",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "KJ301F-1"
+      ],
+      "merknad": "0-poengs sikkerhetskurs, må gjennomføres før bruk av spesialrom/-utstyr eller prosedyrer med forhøyet risiko."
+    },
+    {
+      "emnekode": "MET5020",
+      "emnenavn": "Biologisk dataanalyse",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Felles for hele masterprogrammet i biovitenskap."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er Nords nettbaserte studieplanverktøy «Studieplan - Biovitenskap, MABIO-master, høst 2026» samt retningssiden for Akvakultur (Bodø, ved forskningsstasjonen Mørkvedbukta). Utover de tre felles emnene (MET5019, KJ301F, MET5020, til sammen 15 sp) er retningen i planverktøyet en tom container («Spesialisering - Akvakultur - Bodø», 0 sp) uten forhåndsdefinerte emnekoder – studenten setter selv sammen fordypningsemner (f.eks. innen akvakulturernæring, fiskefysiologi, fiskehelse, kvalitet/matsikkerhet) i samråd med veileder, og retningssiden lister ingen konkrete emnekoder. «spesialiseringer» er derfor tom for denne filen (ingen fast obligatorisk emnepakke er publisert). Masteroppgaven kan være på 30 eller 60 studiepoeng (studentens eget valg); velges 30 sp kan studenten i tillegg ta valgemner innen f.eks. økonomi og ledelse ved andre fakulteter ved Nord universitet. Praktisk arbeid kan gjøres ved universitetets forskningsstasjon i Mørkvedbukta eller i samarbeid med næringen. Se nord_biovitenskap2.json for hovedbeskrivelsen av programmet og de øvrige fire studieretningene."
+}

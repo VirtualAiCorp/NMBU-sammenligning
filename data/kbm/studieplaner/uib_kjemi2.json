@@ -1,0 +1,26 @@
+{
+  "programnavn": "Kjemi (master 2 år)",
+  "institusjon": "Universitetet i Bergen",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://www.uib.no/studier/MAMN-KJEM",
+    "https://www4.uib.no/studier/program/kjemi-master/plan"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 60,
+  "obligatoriske": [
+    {
+      "emnekode": "KJEM399",
+      "emnenavn": "Masteroppgave i kjemi",
+      "studiepoeng": 60,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "60 sp, leveres innen 1. juni eller 15. november i løpet av 4. semester."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er UiBs programside MAMN-KJEM og tilhørende «plan»-side. Programmet har ingen faste emner utover masteroppgaven KJEM399 (60 sp): «Obligatoriske og valfrie emne i mastergraden i kjemi er bestemt av kva fagleg tema du vel for masterprosjektet ditt. Du og din hovudrettleiar blir samde om kva emne som skal inngå.» De resterende 60 sp (1.-2. semester) er dermed individuelt sammensatt i samråd med veileder, uten en fast obligatorisk kombinasjon, og er ikke tatt med i obligatoriske-listen. Kildedokumentet beskriver ingen egne navngitte studieretninger/spesialiseringer - forskningen dekker hele bredden av kjemi fra teoretisk til laboratorieorientert arbeid.",
+  "entryId": "uib_kjemi2"
+}

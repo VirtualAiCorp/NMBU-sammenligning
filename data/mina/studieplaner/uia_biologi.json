@@ -1,0 +1,258 @@
+{
+  "entryId": "uia_biologi",
+  "programnavn": "Biologi (bachelor)",
+  "institusjon": "Universitetet i Agder",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.uia.no/studier/biologi",
+    "https://www.uia.no/studier/program/biologi-bachelor/studieplaner/2026h.html"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 180,
+  "obligatoriske": [
+    {
+      "emnekode": "BIO104",
+      "emnenavn": "Human fysiologi og anatomi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO111",
+      "emnenavn": "Cellebiologi med genetikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO112",
+      "emnenavn": "Introduksjon til biologien",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ORG001",
+      "emnenavn": "HMS-kurs",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "0 sp, men obligatorisk deltakelse ved studiestart."
+    },
+    {
+      "emnekode": "BIO102",
+      "emnenavn": "Botanikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO103",
+      "emnenavn": "Zoologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO113",
+      "emnenavn": "Evolusjonsbiologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO206",
+      "emnenavn": "Generell økologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJ-111",
+      "emnenavn": "Generell kjemi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ML-208",
+      "emnenavn": "Molekylærbiologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJ-213",
+      "emnenavn": "Organisk kjemi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Del av standardsporet i 4. semester; studenten kan i stedet velge studieretning UNIS eller Utveksling for dette semesteret (se spesialiseringer)."
+    },
+    {
+      "emnekode": "MA-143",
+      "emnenavn": "Biostatistikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Del av standardsporet i 4. semester; studenten kan i stedet velge studieretning UNIS eller Utveksling for dette semesteret (se spesialiseringer)."
+    },
+    {
+      "emnekode": "MA-168",
+      "emnenavn": "Matematikk for biologer",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Del av standardsporet i 4. semester; studenten kan i stedet velge studieretning UNIS eller Utveksling for dette semesteret (se spesialiseringer)."
+    },
+    {
+      "emnekode": "BIO201",
+      "emnenavn": "Akvatisk økologi",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Del av standardsporet i 5. semester; studenten kan i stedet velge studieretning Internship, UNIS eller Utveksling for dette semesteret (se spesialiseringer)."
+    },
+    {
+      "emnekode": "BIO204",
+      "emnenavn": "Zoophysiology",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Del av standardsporet i 5. semester; studenten kan i stedet velge studieretning Internship, UNIS eller Utveksling for dette semesteret (se spesialiseringer)."
+    },
+    {
+      "emnekode": "BIO207",
+      "emnenavn": "Marin bevaringsbiologi",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Del av standardsporet i 5. semester; studenten kan i stedet velge studieretning Internship, UNIS eller Utveksling for dette semesteret (se spesialiseringer)."
+    },
+    {
+      "emnekode": "BIO300",
+      "emnenavn": "Bacheloroppgave",
+      "studiepoeng": 20,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "EX-100",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Kan også tas vår eller høst i 2. eller 3. studieår, ikke nødvendigvis samtidig med bacheloroppgaven."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "UNIS (Svalbard)",
+      "emner": [
+        {
+          "emnekode": "AB-202",
+          "emnenavn": "Marine Arctic Biology",
+          "studiepoeng": 15,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "Alternativ til standardsporet i 4. semester."
+        },
+        {
+          "emnekode": "AB-203",
+          "emnenavn": "Arctic Environmental Management",
+          "studiepoeng": 15,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "Alternativ til standardsporet i 4. semester."
+        },
+        {
+          "emnekode": "AB-201",
+          "emnenavn": "Terrestrial Arctic Biology",
+          "studiepoeng": 15,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Alternativ til standardsporet i 5. semester."
+        },
+        {
+          "emnekode": "AB-204",
+          "emnenavn": "Arctic Ecology and Population Biology",
+          "studiepoeng": 15,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Alternativ til standardsporet i 5. semester."
+        }
+      ]
+    },
+    {
+      "navn": "Utveksling",
+      "emner": [
+        {
+          "emnekode": "UTVOPP",
+          "emnenavn": "Utvekslingsopphold",
+          "studiepoeng": 30,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "Alternativ til standardsporet i 4. semester. Emneside mangler i kilden."
+        },
+        {
+          "emnekode": "UTVOPP",
+          "emnenavn": "Utvekslingsopphold",
+          "studiepoeng": 30,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Alternativ til standardsporet i 5. semester. Emneside mangler i kilden."
+        }
+      ]
+    },
+    {
+      "navn": "Internship",
+      "emner": [
+        {
+          "emnekode": "PRA205",
+          "emnenavn": "Internship for bachelorstudenter i teknologi og realfag",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Alternativ til (deler av) standardsporet i 5. semester. Kilden oppgir bare 10 sp for dette valget, ikke et fullt semester (30 sp) slik de andre alternativene gjør; ikke nærmere forklart i kilden."
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er UiAs studieplan for Biologi, bachelorprogram (2026–2029) (uia.no, hentet via nettleser). Studiemodellen viser en «standard»-obligatorisk løype gjennom alle 6 semestre (180 sp, inkl. 0 sp-kurset ORG001 HMS-kurs), men for 4. og 5. semester kan studenten i stedet velge studieretning UNIS (Svalbard), Utveksling, eller for 5. semester også Internship (PRA205) — disse er ført som spesialiseringer siden kilden oppgir konkrete emner/koder for dem, i motsetning til f.eks. Nord universitets tilsvarende campus-valg der bare plassholderkoder uten emneinnhold var tilgjengelig. Siden studenten uansett kun kan følge ett spor per semester og standardsporet alene gir nøyaktig 180 sp, er obligatoriskeStudiepoeng satt til 180 (standardsporet), og UNIS/Utveksling/Internship-emnene er ikke medregnet i obligatoriskeStudiepoeng. EX-100 kan ifølge kilden tas i et annet semester enn oppført (2. eller 3. studieår, vår eller høst), men er plassert i 3. år vår i tråd med studiemodell-tabellens standardplassering. Emnenavn, koder og studiepoeng er hentet direkte fra studieplan-siden."
+}

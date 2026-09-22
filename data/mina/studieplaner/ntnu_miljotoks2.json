@@ -1,0 +1,110 @@
+{
+  "entryId": "ntnu_miljotoks2",
+  "programnavn": "Miljøtoksikologi og naturmiljøkjemi (master 2 år)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://www.ntnu.no/studier/msenvitox",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=MSENVITOX&year=0",
+    "https://www.ntnu.no/web/studier/studieplan?p_p_id=studyprogrammeplannerportlet_WAR_studyprogrammeplannerportlet_INSTANCE_KzJMPh2hQuXL&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=studyplan&p_p_cacheability=cacheLevelPage&code=MSENVITOX&year=2025"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 7.5,
+  "obligatoriske": [
+    {
+      "emnekode": "HMS0003",
+      "emnenavn": "Health, Safety and Environment (HSE) course for master students",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Felles for begge studieretninger."
+    },
+    {
+      "emnekode": "BI3086",
+      "emnenavn": "How to do Science",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Felles for begge studieretninger."
+    },
+    {
+      "emnekode": "RFEL3070",
+      "emnenavn": "Scientific Seminars in Environmental Toxicology and Chemistry",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Går over alle fire semestre (del 1-4 av 4), 7,5 sp totalt. Felles for begge studieretninger."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Environmental Chemistry",
+      "obligatoriske": [
+        {
+          "emnekode": "KJ3910",
+          "emnenavn": "Master Thesis in Environmental Chemistry",
+          "studiepoeng": 60,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Går over alle fire semestre (del 1-4 av 4), 60 sp totalt - starter allerede i 1. år høst."
+        },
+        {
+          "emnekode": "KJ3073",
+          "emnenavn": "Analytical Environmental Chemistry",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Environmental Toxicology",
+      "obligatoriske": [
+        {
+          "emnekode": "BI3071",
+          "emnenavn": "Advanced Ecotoxicology",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "BI3072",
+          "emnenavn": "Environmental Toxicology",
+          "studiepoeng": 7.5,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "BIENV3900",
+          "emnenavn": "Master Thesis in Environmental Toxicology and Chemistry",
+          "studiepoeng": 60,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Går over alle fire semestre (del 1-4 av 4), 60 sp totalt - starter allerede i 1. år høst."
+        },
+        {
+          "emnekode": "BI3075",
+          "emnenavn": "Experimental Ecotoxicology",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er NTNUs studieplan-API (studyprogrammeplannerportlet, resource_id=studyplan) for MSENVITOX, lest for kull 2025 (fullstendig 4-periodig/2-årig plan, oppdatert 18.09.2026); kull 2026 har foreløpig ingen publisert studieplan. Programmet har to studieretninger (Environmental Chemistry og Environmental Toxicology), hver med egen masteroppgave (60 sp) som løper over alle fire semestre parallelt med emnene, i motsetning til de fleste andre NTNU-programmer der masteroppgaven kommer i 2. år. dbhEmnekoder er ikke fylt ut siden DBH-rapportering for dette programmet ikke er slått opp i dette arbeidet."
+}

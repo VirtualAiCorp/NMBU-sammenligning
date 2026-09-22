@@ -1,0 +1,185 @@
+{
+  "groupId": "bioteknologi",
+  "hentet": "2026-09-23",
+  "note": "Gruppa rommer fire utdanningstyper. NMBUs bachelor i bioteknologi, UiBs bachelor i molekylærbiologi, UiTs bachelor i bioteknologi og NTNUs treårige bioteknologibachelor i Ålesund er treårige løp; NTNUs bioteknologiprogram i Trondheim er et femårig integrert masterløp, UiOs biovitenskap er en bred biologibachelor med mange studieretninger, og OsloMets bioteknologi- og kjemiingeniør er en treårig ingeniørutdanning med eget opptaksgrunnlag. Sammenligningen er sterkest i biokjemi, cellebiologi/molekylærbiologi og generell kjemi, der alle sju programmene har obligatoriske emner på samme nivå, og svakest i matematikk, der NMBU, UiB, UiT og NTNU alle bruker brukerkurs mens OsloMet har to ingeniørmatematikkemner og UiO ikke har obligatorisk matematikk i det hele tatt. UiTs bioteknologibachelor er liten: de fleste emnene har under ti kandidater i 2024 og 2025, så koblingene for UiT er vurdert mot summen for 2021-2025 i stedet for siste år. Det samme gjelder NMBUs valgemner. To ting lar seg ikke koble: NMBUs bachelor i bioteknologi har ingen bacheloroppgave, så emnetypen «oppgave» er utelatt selv om UiT (BIO-2610), NTNU Ålesund (BTA3002) og OsloMet (KJTS3900) har den; og NMBU har ikke lenger fysikk i studieplanen (FYS100 Fysikk og natur har ingen rapporterte kandidater etter 2023), så fysikk er ikke satt opp som emnetype selv om OsloMet (MEK1400) og UiO (FYS1001) har store fysikkemner. OsloMet har ikke ex.phil; STKD6610 Technology and Society II dekker noe av det samme, men er ikke koblet fordi innholdet er et annet. Merk at NTNU-emnene i Trondheim og UiO-emnene deles med mange andre programmer, slik at kandidattallene her bare er programmets egen andel.",
+  "emnetyper": [
+    {
+      "id": "matematikk",
+      "label": "Matematikk",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Innføringsemne(r) i matematikk: funksjoner, derivasjon, integrasjon og enkle differensiallikninger, tilpasset biologi- og kjemistudenter.",
+      "note": "Nivået er jevnt lavt: NMBU, UiB, UiT og NTNU bruker alle brukerkurs. OsloMet skiller seg ut med to fulle ingeniørmatematikkemner (20 sp). UiOs biovitenskap har ingen obligatorisk matematikk - MAT1050 er valgfritt og har bare ti rapporterte kandidater - og er derfor ikke koblet. NTNU Ålesund har matematikk og statistikk i ett og samme emne (BR100121), som er koblet her og ikke under statistikk.",
+      "koblinger": [
+        { "entryId": "nmbu_bioteknologi", "emnekoder": ["MATH100-1"], "merknad": "Brukerkurs i matematikk, 10 sp; MATH121 Kalkulus er den nye, tyngre varianten og har ennå bare åtte rapporterte kandidater." },
+        { "entryId": "uib_molekylarbiologi", "emnekoder": ["MAT101-0"], "merknad": "Brukerkurs i matematikk I." },
+        { "entryId": "uit_bioteknologi", "emnekoder": ["MAT-0001-1"], "merknad": "Brukerkurs i matematikk." },
+        { "entryId": "ntnu_bioteknologi_alesund", "emnekoder": ["BR100121-1"], "merknad": "Matematikk og statistikk i ett emne på 7,5 sp; dekker begge fagene og har derfor mindre matematikk enn de andre." },
+        { "entryId": "ntnu_bioteknologi_5aar", "emnekoder": ["MA0001-1", "MA0002-1"], "merknad": "Brukerkurs i matematikk A og B, til sammen 15 sp." },
+        { "entryId": "oslomet_ing_bioteknologi_kjemi", "emnekoder": ["MEK1000-1", "MEK2000-1"], "merknad": "Matematikk 1000 og Matematikk 2000; klart størst omfang i gruppa." }
+      ]
+    },
+    {
+      "id": "statistikk",
+      "label": "Statistikk",
+      "kategori": "Matematikk og statistikk",
+      "desc": "Sannsynlighetsregning, beskrivende statistikk, hypotesetesting, regresjon og forsøksplanlegging.",
+      "note": "NTNU i Trondheim har mest statistikk (et brukerkurs og et påbyggingsemne rettet mot biologer). NMBUs STAT210 Forsøksplanlegging og variansanalyse er et obligatorisk valg mot STAT200 Regresjon, og begge er tatt med. NTNU Ålesund er ikke koblet her fordi statistikken deres ligger inne i matematikkemnet BR100121. OsloMets emne inneholder i tillegg risikoanalyse, som ingen av de andre har.",
+      "koblinger": [
+        { "entryId": "nmbu_bioteknologi", "emnekoder": ["STAT100-1", "STAT210-1", "STAT200-1"], "merknad": "Statistikk (10 sp) og de to 5-sp-emnene Forsøksplanlegging og variansanalyse og Regresjon, der studieplanen krever minst ett av de to." },
+        { "entryId": "uib_molekylarbiologi", "emnekoder": ["STAT101-0", "STAT110-0"], "merknad": "Elementær statistikk; STAT110 Grunnkurs i statistikk er den eldre kodevarianten." },
+        { "entryId": "uit_bioteknologi", "emnekoder": ["STA-0001-1"], "merknad": "Brukerkurs i statistikk 1." },
+        { "entryId": "ntnu_bioteknologi_5aar", "emnekoder": ["ST0103-1", "ST2304-1"], "merknad": "Brukerkurs i statistikk og Statistisk modellering for biologer/bioteknologer." },
+        { "entryId": "uio_biovitenskap", "emnekoder": ["STK1000-1"], "merknad": "Innføring i anvendt statistikk." },
+        { "entryId": "oslomet_ing_bioteknologi_kjemi", "emnekoder": ["MEK2200-1"], "merknad": "Statistikk og risikoanalyse." }
+      ]
+    },
+    {
+      "id": "programmering",
+      "label": "Programmering og dataanalyse",
+      "kategori": "Programmering",
+      "desc": "Innføring i programmering og databehandling, som regel i Python eller R, med vekt på beregninger og dataanalyse i biofag.",
+      "note": "NMBUs STIN100 Biologisk data-analyse er et R-basert obligatorisk emne og er hovedkoblingen; INF120 Programmering og databehandling er valgfritt på bioteknologi og har få kandidater, men er tatt med fordi det er det rene programmeringsemnet. Verken UiT eller NTNU Ålesund har et obligatorisk programmeringsemne. NTNUs TDT4110 er fellesemnet for alle realfags- og teknologistudenter i Trondheim.",
+      "koblinger": [
+        { "entryId": "nmbu_bioteknologi", "emnekoder": ["STIN100-1", "INF120-1"], "merknad": "Biologisk data-analyse (obligatorisk, 10 sp) og Programmering og databehandling (valgfritt, få kandidater)." },
+        { "entryId": "uib_molekylarbiologi", "emnekoder": ["INF100-0"], "merknad": "Innføring i programmering / Programmering I." },
+        { "entryId": "ntnu_bioteknologi_5aar", "emnekoder": ["TDT4110-1"], "merknad": "Informasjonsteknologi, grunnkurs." },
+        { "entryId": "uio_biovitenskap", "emnekoder": ["BIOS1100-1", "BIOS1101-1"], "merknad": "Innføring i beregningsmodeller for biovitenskap; BIOS1101 er den nye kodeversjonen fra 2025." },
+        { "entryId": "oslomet_ing_bioteknologi_kjemi", "emnekoder": ["MEK1300-1", "MEK3100-1"], "merknad": "Programmering 1 (Introduksjon til python-programmering) og Programmering 2." }
+      ]
+    },
+    {
+      "id": "bioinformatikk",
+      "label": "Bioinformatikk",
+      "kategori": "Programmering",
+      "desc": "Analyse av sekvens- og genomdata: databaser, alignment, fylogeni og verktøy for biologiske datasett.",
+      "note": "Fire av sju programmer har et eget bioinformatikkemne. NTNUs BT2100 Beregningsbasert bioteknologi er et bredere beregningsemne, men er nærmeste parallell i Trondheim. Verken UiB (som dekker feltet i MOL204 Anvendt bioinformatikk) - som er koblet - eller OsloMet har noe ut over dette; OsloMet har ikke bioinformatikk i det hele tatt.",
+      "koblinger": [
+        { "entryId": "nmbu_bioteknologi", "emnekoder": ["BIN210-1"], "merknad": "Introduksjon i bioinformatikk, 10 sp, obligatorisk i 2. år." },
+        { "entryId": "uib_molekylarbiologi", "emnekoder": ["MOL204-0"], "merknad": "Anvendt bioinformatikk." },
+        { "entryId": "uit_bioteknologi", "emnekoder": ["KJE-2004-1"], "merknad": "Bioinformatics - An introduction." },
+        { "entryId": "ntnu_bioteknologi_alesund", "emnekoder": ["HBIOA2007-1"], "merknad": "Anvendt bioinformatikk." },
+        { "entryId": "ntnu_bioteknologi_5aar", "emnekoder": ["BT2100-1"], "merknad": "Beregningsbasert bioteknologi; bredere enn de rene bioinformatikkemnene." },
+        { "entryId": "uio_biovitenskap", "emnekoder": ["BIOS3010-1"], "merknad": "Bioinformatikk; ligger på 3000-nivå og er ikke obligatorisk i alle studieretninger." }
+      ]
+    },
+    {
+      "id": "exphil",
+      "label": "Examen philosophicum",
+      "kategori": "Ex.phil",
+      "desc": "Fellesemnet i vitenskapsfilosofi, etikk og argumentasjonslære.",
+      "note": "OsloMets ingeniørutdanning har ikke ex.phil; STKD6610 Technology and Society II dekker deler av det samme, men er et annet emne og er ikke koblet. NMBU har to likeverdige varianter, og NTNU bruker samme emnekode i Trondheim og Ålesund.",
+      "koblinger": [
+        { "entryId": "nmbu_bioteknologi", "emnekoder": ["PHI101-1", "PHI100-1"], "merknad": "PHI101 er seminarversjonen og den mest brukte på bioteknologi; PHI100 er hovedversjonen." },
+        { "entryId": "uib_molekylarbiologi", "emnekoder": ["EXPHIL-MNSEM-0"], "merknad": "Examen philosophicum - seminarmodell." },
+        { "entryId": "uit_bioteknologi", "emnekoder": ["FIL-0700-1"], "merknad": "Examen philosophicum, Tromsøvarianten." },
+        { "entryId": "ntnu_bioteknologi_alesund", "emnekoder": ["EXPH0300-1"] },
+        { "entryId": "ntnu_bioteknologi_5aar", "emnekoder": ["EXPH0300-1"], "merknad": "Examen philosophicum for naturvitenskap og teknologi." },
+        { "entryId": "uio_biovitenskap", "emnekoder": ["EXPHIL03-1"] }
+      ]
+    },
+    {
+      "id": "generell-kjemi",
+      "label": "Generell kjemi",
+      "kategori": "Kjemi",
+      "desc": "Grunnleggende kjemi: atomstruktur, binding, støkiometri, likevekt, syre-base og redoks, med laboratoriekurs.",
+      "note": "Alle sju programmene har et obligatorisk innføringsemne i kjemi. NTNU i Trondheim har tre kodeversjoner i perioden (KJ1000 på 15 sp, KJ1002 på 15 sp og KJ1004 på 7,5 sp), og UiO to (KJM1002 Innføring i kjemi ble avløst av KJM1101 Generell kjemi). UiBs KJEM110 «Kjemi og energi» og UiTs KJE-1001 dekker både generell kjemi og en del fysikalsk kjemi.",
+      "koblinger": [
+        { "entryId": "nmbu_bioteknologi", "emnekoder": ["KJM100-1"], "merknad": "Generell kjemi, 10 sp." },
+        { "entryId": "uib_molekylarbiologi", "emnekoder": ["KJEM110-0"], "merknad": "Kjemi og energi." },
+        { "entryId": "uit_bioteknologi", "emnekoder": ["KJE-1001-1"], "merknad": "Introduksjon til kjemi og kjemisk biologi." },
+        { "entryId": "ntnu_bioteknologi_alesund", "emnekoder": ["HBIOA1004-1"], "merknad": "Generell kjemi." },
+        { "entryId": "ntnu_bioteknologi_5aar", "emnekoder": ["KJ1004-1", "KJ1002-1", "KJ1000-1"], "merknad": "Tre kodeversjoner av generell kjemi i perioden; KJ1000 og KJ1002 er 15 sp-versjoner med laboratoriekurs, KJ1004 er 7,5 sp." },
+        { "entryId": "uio_biovitenskap", "emnekoder": ["KJM1101-1", "KJM1002-1"], "merknad": "Generell kjemi; KJM1002 Innføring i kjemi er den eldre varianten for biovitenskapsstudenter." },
+        { "entryId": "oslomet_ing_bioteknologi_kjemi", "emnekoder": ["KJPE1300-1"], "merknad": "Generell kjemi." }
+      ]
+    },
+    {
+      "id": "organisk-kjemi",
+      "label": "Organisk kjemi",
+      "kategori": "Kjemi",
+      "desc": "Organiske forbindelsers struktur, nomenklatur, reaksjonsmekanismer og syntese.",
+      "note": "UiOs biovitenskap har ikke organisk kjemi i det hele tatt og er ikke koblet. NTNUs bioteknologiprogram i Trondheim har grunnkurset uten laboratorium (KJ1021), med KJ1020 som den eldre 15 sp-versjonen med lab.",
+      "koblinger": [
+        { "entryId": "nmbu_bioteknologi", "emnekoder": ["KJM110-1"], "merknad": "Organisk kjemi, 10 sp, obligatorisk i 2. år." },
+        { "entryId": "uib_molekylarbiologi", "emnekoder": ["KJEM130-0"] },
+        { "entryId": "uit_bioteknologi", "emnekoder": ["KJE-1002-1"], "merknad": "Få kandidater; emnet er obligatorisk, men programmet er lite." },
+        { "entryId": "ntnu_bioteknologi_alesund", "emnekoder": ["HBIOA1002-1"] },
+        { "entryId": "ntnu_bioteknologi_5aar", "emnekoder": ["KJ1021-1", "KJ1020-1"], "merknad": "Organisk kjemi grunnkurs uten laboratorium; KJ1020 er den eldre 15 sp-versjonen." },
+        { "entryId": "oslomet_ing_bioteknologi_kjemi", "emnekoder": ["KJM1400-1"] }
+      ]
+    },
+    {
+      "id": "biokjemi",
+      "label": "Biokjemi",
+      "kategori": "Kjemi",
+      "desc": "Biomolekylers struktur og funksjon: proteiner, enzymer, karbohydrater, lipider, metabolisme og regulering.",
+      "note": "Dette er den sterkeste koblingen i gruppa - alle sju programmene har obligatorisk biokjemi. Merk at OsloMets emnekode KJM2400 er Biokjemi, mens samme kode ved UiO er Analytisk kjemi I. UiBs MOL200 er metabolismeemnet og tilsvarer biokjemidelen. NTNU i Trondheim har dobbelt omfang (Biokjemi 1 og 2), og UiO har Biokjemi 1 på 1000-nivå og Biokjemi 2 på 3000-nivå.",
+      "koblinger": [
+        { "entryId": "nmbu_bioteknologi", "emnekoder": ["KJB200-1", "KJB201-1"], "merknad": "Biokjemi (10 sp) og Laboratoriekurs i biokjemi og matkjemi (5 sp)." },
+        { "entryId": "uib_molekylarbiologi", "emnekoder": ["MOL200-0"], "merknad": "Metabolisme; reaksjoner, regulering og kompartmentalisering." },
+        { "entryId": "uit_bioteknologi", "emnekoder": ["MBI-2001-1"], "merknad": "Biokjemi." },
+        { "entryId": "ntnu_bioteknologi_alesund", "emnekoder": ["HBIOA1003-1"], "merknad": "Biokjemi med cellebiologi; dekker også noe av cellebiologien." },
+        { "entryId": "ntnu_bioteknologi_5aar", "emnekoder": ["TBT4102-1", "TBT4107-1"], "merknad": "Biokjemi 1 og 2, begge obligatoriske." },
+        { "entryId": "uio_biovitenskap", "emnekoder": ["BIOS1130-1", "BIOS3900-1"], "merknad": "Biokjemi 1 og Biokjemi 2." },
+        { "entryId": "oslomet_ing_bioteknologi_kjemi", "emnekoder": ["KJM2400-1"], "merknad": "OsloMets KJM2400 er emnet Biokjemi." }
+      ]
+    },
+    {
+      "id": "cellebiologi-og-molekylaerbiologi",
+      "label": "Cellebiologi, genetikk og molekylærbiologi",
+      "kategori": "Biologi",
+      "desc": "Cellens oppbygning og funksjon, arvelære, genstruktur og -regulering, og molekylærbiologiske metoder.",
+      "note": "Alle sju har dette, men omfanget spriker mye: NMBU, UiB og UiO har tre emner hver, mens NTNU Ålesund og OsloMet har alt samlet i ett emne på 7,5-10 sp. NMBUs og UiBs laboratorieemner er tatt med fordi de er obligatoriske og utgjør en stor del av fagområdet.",
+      "koblinger": [
+        { "entryId": "nmbu_bioteknologi", "emnekoder": ["BIO100-1", "BIO120-1", "BIO210-1", "BIO211-1"], "merknad": "Cellebiologi, Genetikk, Molekylærbiologi og Laboratorieøvelser i molekylærbiologi." },
+        { "entryId": "uib_molekylarbiologi", "emnekoder": ["MOL100-0", "MOL103-0", "MOL201-0", "MOL102-0", "MOL222-0", "MOL221-0"], "merknad": "Innføring i molekylærbiologi, Genstruktur og Molekylær cellebiologi, samt de to eksperimentelle emnene; MOL221 er den gamle koden for Eksperimentell molekylærbiologi I." },
+        { "entryId": "uit_bioteknologi", "emnekoder": ["MBI-1002-1", "MBI-2011-1"], "merknad": "Celle- og molekylærbiologi og Molekylær cellebiologi - genetikk og cellesignallering." },
+        { "entryId": "ntnu_bioteknologi_alesund", "emnekoder": ["HBIOA2004-1"], "merknad": "Celle- og molekylærbiologi samlet i ett emne." },
+        { "entryId": "ntnu_bioteknologi_5aar", "emnekoder": ["BI1001-1", "BI2012-1", "BI2014-1", "BI2015-1"], "merknad": "Celle- og molekylærbiologi (15 sp), Cellebiologi, Molekylærbiologi og laboratoriekurset." },
+        { "entryId": "uio_biovitenskap", "emnekoder": ["BIOS1110-1", "BIOS1140-1", "BIOS2910-1", "BIOS2900-1"], "merknad": "Celle- og molekylærbiologi, Evolusjon og genetikk og Molekylærbiologi; BIOS2900 er den eldre koden for molekylærbiologiemnet." },
+        { "entryId": "oslomet_ing_bioteknologi_kjemi", "emnekoder": ["KJM3500-1"], "merknad": "Molekylær- og cellebiologi samlet i ett emne." }
+      ]
+    },
+    {
+      "id": "mikrobiologi",
+      "label": "Mikrobiologi",
+      "kategori": "Biologi",
+      "desc": "Mikroorganismers oppbygning, vekst, fysiologi, systematikk og økologiske og industrielle roller.",
+      "note": "UiBs molekylærbiologibachelor og OsloMets ingeniørutdanning har ikke noe eget mikrobiologiemne og er ikke koblet. NMBU har størst omfang (Generell mikrobiologi I og II). UiOs BIOS3910 er et valgemne på 3000-nivå med relativt få kandidater.",
+      "koblinger": [
+        { "entryId": "nmbu_bioteknologi", "emnekoder": ["BIO130-1", "BIO230-1"], "merknad": "Generell mikrobiologi I og II." },
+        { "entryId": "uit_bioteknologi", "emnekoder": ["BIO-1601-1", "BIO-2601-1"], "merknad": "Innføring i mikrobiologi (5 sp) og Generell mikrobiologi (10 sp)." },
+        { "entryId": "ntnu_bioteknologi_alesund", "emnekoder": ["BTA1001-1", "BTA2002-1"], "merknad": "Generell mikrobiologi og Mikrobiell økologi." },
+        { "entryId": "ntnu_bioteknologi_5aar", "emnekoder": ["TBT4110-1"], "merknad": "Mikrobiologi, 7,5 sp." },
+        { "entryId": "uio_biovitenskap", "emnekoder": ["BIOS3910-1"], "merknad": "Mikrobiologi; valgemne på 3000-nivå med få kandidater." }
+      ]
+    },
+    {
+      "id": "anvendt-bioteknologi",
+      "label": "Bioteknologiske metoder og anvendt bioteknologi",
+      "kategori": "Biologi",
+      "desc": "Bioteknologiens metoder og industrielle anvendelser: genteknologi, bioprosesser, produktutvikling og næringsliv.",
+      "note": "Dette er kjernen i bioteknologiutdanningene, men ligger svært ulikt i løpene: NMBU og NTNU har innføringsemner i første studieår og påbygging senere, mens UiT og OsloMet legger emnene i tredje år. Verken UiB (molekylærbiologi) eller UiO (biovitenskap) har bioteknologiemner og er ikke koblet. NMBUs BIO235 er et næringslivsrettet emne og har ingen direkte parallell, men er tatt med fordi det er obligatorisk.",
+      "koblinger": [
+        { "entryId": "nmbu_bioteknologi", "emnekoder": ["BIO101-1", "BIO102-1", "BIO235-1"], "merknad": "Introduksjon i bioteknologi og kjemi, Anvendt bioteknologi og Bioteknologi og kjemi i næringslivet." },
+        { "entryId": "uit_bioteknologi", "emnekoder": ["BIO-2606-1", "BIO-2608-1", "BIO-1505-1"], "merknad": "Generell og marin bioteknologi, Metoder i molekylær bioteknologi og Innføring i bioteknologi." },
+        { "entryId": "ntnu_bioteknologi_alesund", "emnekoder": ["BTA2004-1", "MB301712-1"], "merknad": "Grunnleggende bioteknologi og Anvendt bioteknologi (15 sp)." },
+        { "entryId": "ntnu_bioteknologi_5aar", "emnekoder": ["BT1101-1", "BT3220-1"], "merknad": "Introduksjon til bioteknologi og Videregående bioteknologi." },
+        { "entryId": "oslomet_ing_bioteknologi_kjemi", "emnekoder": ["KJM3100-1", "KJTS3100-1"], "merknad": "Bioteknologi; KJTS3100 er den gamle emnekoden, avløst av KJM3100 fra 2024." }
+      ]
+    },
+    {
+      "id": "fysiologi-og-immunologi",
+      "label": "Fysiologi og immunologi",
+      "kategori": "Biologi",
+      "desc": "Menneskets og dyrs organsystemer og deres funksjon, og immunsystemets oppbygning og virkemåte.",
+      "note": "Bare fire av sju programmene har dette. NMBUs HFX201 Fysiologi er et valgemne med fallende kandidattall, mens BIO292 Immunsystemet, mat og helse er nytt fra 2024 og har over 25 kandidater begge år. NTNU Ålesund har begge deler obligatorisk, noe som henger sammen med at programmet også kvalifiserer for bioingeniørnære oppgaver. Verken UiB, NTNU Trondheim eller OsloMet har egne emner her.",
+      "koblinger": [
+        { "entryId": "nmbu_bioteknologi", "emnekoder": ["BIO292-1", "HFX201-1", "MVI292-1"], "merknad": "Immunsystemet, mat og helse (nytt fra 2024) og Fysiologi; MVI292 er den gamle emnekoden for immunologiemnet." },
+        { "entryId": "uit_bioteknologi", "emnekoder": ["BIO-2002-1"], "merknad": "Dyrefysiologi; valgemne med svært få rapporterte kandidater." },
+        { "entryId": "ntnu_bioteknologi_alesund", "emnekoder": ["HBIOA1005-1", "HBIOA2003-1"], "merknad": "Anatomi, fysiologi og histologi og Immunologi og immunologiske teknikker, begge obligatoriske." },
+        { "entryId": "uio_biovitenskap", "emnekoder": ["BIOS1120-1", "BIOS3800-1"], "merknad": "Fysiologi og Humanfysiologi." }
+      ]
+    }
+  ]
+}

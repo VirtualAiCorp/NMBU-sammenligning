@@ -1,0 +1,16 @@
+{
+  "programnavn": "Kjemi (bachelor)",
+  "institusjon": "UiT Norges arktiske universitet",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://uit.no/utdanning/program/279717/kjemi_-_bachelor",
+    "https://uit.no/utdanning/program/oppbygging?studkode=B-KJEMI&p_document_id=279717"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 0,
+  "obligatoriske": [],
+  "spesialiseringer": [],
+  "merknad": "Studieplanen for B-KJEMI (Kjemi - bachelor) ved UiT kunne ikke hentes i denne runden: programsiden (uit.no/utdanning/program/279717/kjemi_-_bachelor) inneholder ikke selve emnetabellen i statisk HTML, og «oppbygging»-siden (uit.no/utdanning/program/oppbygging?studkode=B-KJEMI&p_document_id=279717) er en dynamisk (JavaScript-lastet) widget som verken WebFetch eller en enkel nettleser-navigering klarte å rendre innholdet av innenfor denne økten (siden lastet tom/«Loading...»). I motsetning til andre UiT-bachelorprogrammer i dette datasettet (bioteknologi, ernæring, fiskeri- og havbruksvitenskap) ble det heller ikke funnet noen direkte PDF-lenke til en fagplan/studieplan for B-KJEMI ved søk. Emnekoder er derfor ikke fylt inn (tom liste) i tråd med instruksjonen om å aldri finne opp emnekoder. Bør hentes på nytt med en nettleser som kan kjøre JavaScript, eller ved å lete etter en «Fagplan Bachelor i kjemi»-PDF tilsvarende de andre UiT-programmene.",
+  "entryId": "uit_kjemi"
+}

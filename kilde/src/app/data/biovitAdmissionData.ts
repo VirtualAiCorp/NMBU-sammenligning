@@ -322,7 +322,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       },
       {
         id: 'uit_fiskeri_havbruk', shortName: 'UiT', institusjon: 'UiT Norges arktiske universitet',
-        studiekode: '186331', studiested: 'Tromsø', type: 'master',
+        studiekode: '186331', studiested: 'Tromsø', type: 'bachelor',
         url: 'https://uit.no/utdanning/program/269552/fiskeri-_og_havbruksvitenskap_-_master',
         years: {
           '2020': Y(null, null, null, null, null, null, 45.3, 50.0),
@@ -502,7 +502,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       },
       {
         id: 'uit_akvamedisin2', shortName: 'UiT Akvamedisin', institusjon: 'UiT Norges arktiske universitet',
-        studiekode: '', studiested: 'Tromsø', type: 'master2',
+        studiekode: '', studiested: 'Tromsø', type: 'master',
         url: 'https://uit.no/utdanning/program/268952/akvamedisin_-_master',
         years: {
         },

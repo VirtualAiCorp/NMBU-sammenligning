@@ -1,0 +1,93 @@
+{
+  "entryId": "uio_geofag2",
+  "programnavn": "Geofag (master 2 år)",
+  "institusjon": "Universitetet i Oslo",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.uio.no/studier/program/geofag-master/",
+    "https://www.uio.no/studier/program/geofag-master/oppbygging/",
+    "https://www.uio.no/studier/program/geofag-master/studieretninger/anvendt-bassenganalyse/oppbygging/",
+    "https://www.uio.no/studier/program/geofag-master/studieretninger/jordens-strukturer-og-planetere-prosesser/oppbygging/",
+    "https://www.uio.no/studier/program/geofag-master/studieretninger/miljogeofag-geofarer-geomatikk/oppbygging/",
+    "https://www.uio.no/studier/program/geofag-master/studieretninger/vann-og-klima/oppbygging/"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 60,
+  "obligatoriske": [
+    {
+      "emnekode": "HMS0501",
+      "emnenavn": "Sikkerhet og fysisk miljø",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Felles for alle fire studieretninger. Gir ingen studiepoeng."
+    },
+    {
+      "emnekode": "HMS0502",
+      "emnenavn": "Utviklende læringsmiljø",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Felles for alle fire studieretninger. Gir ingen studiepoeng."
+    },
+    {
+      "emnekode": "HMS0503",
+      "emnenavn": "Laboratoriesikkerhet",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Felles for alle fire studieretninger. Gir ingen studiepoeng."
+    },
+    {
+      "emnekode": "HMS0504",
+      "emnenavn": "Feltsikkerhet",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Felles for alle fire studieretninger. Gir ingen studiepoeng."
+    },
+    {
+      "emnekode": "MASTEROPPGAVE",
+      "emnenavn": "Masteroppgave",
+      "studiepoeng": 60,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen oppgir ingen felles emnekode for oppgaven (den varierer trolig med veileder/tema); «MASTEROPPGAVE» gjengir betegnelsen fra studieplanteksten. Arbeidet starter fra 2. eller 3. semester (dvs. 1. år vår eller 2. år høst) og avsluttes i 4. semester (2. år vår); 2. år høst er brukt som representativ plassering. Felles for alle fire studieretninger."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Anvendt bassenganalyse: prosesser, ressurser og livets utvikling",
+      "obligatoriske": []
+    },
+    {
+      "navn": "Jordens strukturer og planetære prosesser",
+      "obligatoriske": []
+    },
+    {
+      "navn": "Miljøgeofag, geofarer og geomatikk",
+      "obligatoriske": []
+    },
+    {
+      "navn": "Vann og klima",
+      "obligatoriske": [
+        {
+          "emnekode": "GEO4990",
+          "emnenavn": "The Earth System",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er programmets «Oppbygging og gjennomføring»-sider på uio.no (evigrønne sider uten årstall-kull). Programmet har 4 studieretninger; for studenter med geofaglig bakgrunn kreves 20-50 sp obligatoriske emner (avhengig av retning) pluss masteroppgave (60 sp); studenter uten geofaglig bakgrunn må ta 40 sp obligatoriske emner. I tre av de fire studieretningene finnes ingen enkelt fast obligatorisk emnekode - i stedet må studenten velge minst 20 sp (40 sp uten geofaglig bakgrunn) fra en liste med retningsspesifikke emner, som er et obligatorisk kvantum snarere enn faste enkeltemner og derfor ikke ført opp i obligatoriske-listen: «Anvendt bassenganalyse» velger blant GEO4014, GEO4240, GEO4216, GEO4250, GEO4260, GEO4850 (10 sp hver); «Jordens strukturer og planetære prosesser» velger blant GEO4120, GEO4151, GEO4131, GEO4620, GEO4140, GEO4840, GEO-AST4410, GEO5900, GEO4630, GEO4810, GEO4812, GEO4822 (10 sp hver); «Miljøgeofag, geofarer og geomatikk» velger blant GEO4034, GEO4151, GEO4100, GEO4171, GEO4120, GEO4360 (5 sp), GEO4131, GEO4432, GEO4140, GEO4460, GEO4161, GEO4530, GEO4190, GEO5900, GEO4410, GEO4420, GEO4515, GEO4520 (10 sp hver ellers). Studieretningen «Vann og klima» har ett fast obligatorisk emne (GEO4990, 10 sp) pluss et kvantumskrav om minst 10 sp til (30 sp uten geofaglig bakgrunn) fra en liste med emner innen hydrologi, glasiologi, meteorologi og oseanografi. dbhEmnekoder er ikke fylt ut siden DBH-rapportering for dette programmet ikke er slått opp i dette arbeidet."
+}

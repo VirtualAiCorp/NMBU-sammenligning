@@ -1,0 +1,103 @@
+{
+  "entryId": "inn_baerekraftig_jordbruk",
+  "programnavn": "Bærekraftig jordbruk (master, 3 år deltid)",
+  "institusjon": "Universitetet i Innlandet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.inn.no/studier/vare-studier/master-i-berekraftig-jordbruk/",
+    "https://studiekatalog.edutorium.no/inn/nb/program/MABJO"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 120,
+  "obligatoriske": [
+    {
+      "emnekode": "MBJ4001S",
+      "emnenavn": "Jordøkologi og jordkvalitet",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MBJ4001S-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MBJ4002S",
+      "emnenavn": "Forskningsmetode og dataanalyse",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MBJ4002S-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MBJ4003S",
+      "emnenavn": "Sentrale temaer i økologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MBJ4003S-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MBJ4004S",
+      "emnenavn": "Studiedesign og statistisk metode",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MBJ4004S-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MBJ4005S",
+      "emnenavn": "Teknologi og bærekraftig jordbruk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MBJ4005S-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MBJ4006S",
+      "emnenavn": "Forvaltning, rådgiving og innovasjon",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MBJ4006S-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MBJ4007S",
+      "emnenavn": "Agroøkologi",
+      "studiepoeng": 15,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MBJ4007S-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MBJ4900S",
+      "emnenavn": "Masteroppgave i bærekraftig jordbruk",
+      "studiepoeng": 45,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Fordelt med 5 sp i 2. år vår, 20 sp i 3. år høst og 20 sp i 3. år vår (dvs. hovedsakelig hele 3. studieår)."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "VIKTIG AVVIK: programkartets oppføring inn_baerekraftig_jordbruk er typet «master2» (2-årig, sammenlignet med NMBUs toårige mastere), men dette INN-programmet er offisielt et TREÅRIG deltidsstudium («normert til tre år på deltid», nett- og samlingsbasert), fortsatt på 120 sp totalt. programnavn er derfor satt til «Bærekraftig jordbruk (master, 3 år deltid)» for å reflektere kilden korrekt; aar-feltene i obligatoriske-listen er satt til 1/2 ut fra sp-progresjon (40/40/40 sp per studieår), ikke ut fra semestrenes kalenderår. Kilde er Edutorium-studiekatalogens emnemodell for MABJO (kull høst 2026), som viser alle åtte emner merket «O» (obligatorisk) uten valgfrie emner eller studieretninger – programmet har derfor ingen spesialiseringer, og hele graden (120 sp) er obligatorisk. Studenter som mangler 15 sp jordbruksfaglig bakgrunn må i tillegg ta det nettbaserte bro-emnet LAN1101N «Innføring i landbruk» i 1. semester; dette er et opptakskrav/tilleggsemne og ikke en del av selve 120 sp-graden, og er derfor ikke ført opp i obligatoriske-listen. Opptak skjer i to kvoter (50/50): kvote 1 for søkere med bachelor i agronomi, landbruksteknikk, husdyr- eller plantevitenskap, kvote 2 for søkere med annen bachelorbakgrunn."
+}
