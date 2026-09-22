@@ -1,0 +1,688 @@
+{
+  "groupId": "akvakultur",
+  "hentet": "2026-09-23",
+  "note": "Gruppa rommer tre utdanningsfamilier, og det må leses inn i alle sammenligningene. NMBU, Nord og NTNU Ålesund er treårige bachelorer; NTNUs havbruksingeniør i Trondheim er en treårig ingeniørutdanning med R2-krav, mye matematikk, mekanikk og fluidmekanikk; og UiTs fiskeri- og havbruksvitenskap og UiBs havbruk (sivilingeniør) og fiskehelse/akvamedisin er femårige integrerte mastere, der emner på 200- og 300-nivå her måles mot bacheloremner. De to UiB-programmene deler en stor felles emneportefølje (BIF100, BIF101, BIF200, BIO280, BIO291, BIO206, BIO207, LAS301/LAS303) og gir derfor nesten like tall i mange emnetyper. Sammenligningen er sterkest i fiskehelse, fôr og ernæring, fiskebiologi og oppdrettsproduksjon, og svakest i cellebiologi og genetikk, der NTNUs to programmer ikke har noe tilsvarende emne. Programmene har også helt ulik tyngdepunkt: Nords havbruksdrift og ledelse og NTNUs biomarin innovasjon er i praksis halvt økonomi- og ledelsesutdanninger, med bedriftsøkonomi, regnskap, markedsføring og entreprenørskap som obligatoriske emner, mens NMBU har tre små valgemner i økonomi. Tre emnetyper er utelatt med vilje fordi NMBU mangler en motpart med rapporterte karakterer: havbruksteknologi og vannbehandling (Nord HAV1001, NTNU BMR3000 og BT3102, UiB BIF200 – NMBUs AQT254 Grunnleggende akvakulturteknikk har tre kandidater og AQP255 Akvatisk miljø i akvakultur er så nytt at det ikke er rapportert); marin økologi og oseanografi (NTNU BIA2001 og MB104314, UiB BIO213, Nord BI222F – NMBUs AQF200 Primærproduksjon har sju kandidater); og bacheloroppgave (Nord HAV2010, NTNU BIA3002 og BMR3900, UiT FSK-2050 – NMBUs akvakulturbachelor har ingen bacheloroppgavekode i det hele tatt, tredje studieår er satt av til valgemner, internship eller utveksling). Avl og genetikk i akvakultur (NMBU AQB250/AQB270) er heller ikke satt opp som egen emnetype, fordi ingen av konkurrentene har et tilsvarende emne. Merk at NMBUs akvakulturbachelor er et lite program med 10–24 kandidater per emne, og at Nord og UiT har byttet emnekoder midt i perioden (Nords MAR-koder ble til HAV-koder, og HAV2000/HAV2002/HAV2001 fikk nye koder HAV2012/HAV2015/HAV2014 i 2025); begge kodeversjonene er koblet der de finnes.",
+  "emnetyper": [
+    {
+      "id": "akvakultur-innforing",
+      "label": "Innføring i akvakultur og havbruk",
+      "kategori": "Akvakultur",
+      "desc": "Innføringsemne om akvakulturnæringa: arter, produksjonsformer, verdikjede, forvaltning og samfunnsbetydning.",
+      "note": "Nords havbruksbachelor har ikke noe eget innføringsemne – der begynner studentene direkte på produksjonsemnene – og er derfor ikke koblet her, men under oppdrettsproduksjon. NTNUs havbruksingeniør har BI2065 Akvakultur som valgemne med 13 kandidater i 2025.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_akvakultur",
+          "emnekoder": [
+            "AQX100-1"
+          ],
+          "merknad": "Introduksjon til norsk akvakulturproduksjon, 5 sp i augustblokk."
+        },
+        {
+          "entryId": "ntnu_biomarin",
+          "emnekoder": [
+            "BIA2002-1",
+            "MB102019-1"
+          ],
+          "merknad": "Akvakultur og Biomarin verdiskaping."
+        },
+        {
+          "entryId": "ntnu_ing_havbruk",
+          "emnekoder": [
+            "BI2065-1"
+          ],
+          "merknad": "Akvakultur; valgemne med få kandidater."
+        },
+        {
+          "entryId": "uit_fiskeri_havbruk",
+          "emnekoder": [
+            "FSK-1100-1"
+          ],
+          "merknad": "Fiskeri- og havbruksvitenskap, 10 sp; programmets innføringsemne."
+        },
+        {
+          "entryId": "uib_havbruk",
+          "emnekoder": [
+            "BIF100-0"
+          ],
+          "merknad": "Innføring i fiskehelse og havbruk; felles emne for UiBs to program."
+        },
+        {
+          "entryId": "uib_fiskehelse",
+          "emnekoder": [
+            "BIF100-0"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oppdrettsproduksjon",
+      "label": "Oppdrettsproduksjon av laks og marine arter",
+      "kategori": "Akvakultur",
+      "desc": "Produksjonsbiologi og drift i oppdrett: settefisk, matfisk, smoltifisering, produksjonsplanlegging og marine arter.",
+      "note": "Dette er den faglige kjernen hos Nord, som har fire emner på til sammen 47,5 sp. NMBUs AQX120 Intensiv akvakultur (10 sp) og produksjonsstyringsemnet AQX252 er det nærmeste NMBU kommer. UiBs fiskehelseprogram har ikke produksjonsemner utover BIF100 og er ikke koblet. UiTs FSK-2030 Bærekraftig havbruk er et semesteremne på 30 sp og dekker langt mer enn produksjon alene.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_akvakultur",
+          "emnekoder": [
+            "AQX120-1"
+          ],
+          "merknad": "Intensiv akvakultur, 10 sp; NMBUs eneste produksjonsemne med et rimelig kandidatgrunnlag. Valgemnet AQX252 Produksjonsstyring i akvakultur har bare ni kandidater og er ikke koblet."
+        },
+        {
+          "entryId": "nord_havbruksdrift",
+          "emnekoder": [
+            "HAV2000-1",
+            "HAV2012-1",
+            "HAV2006-1",
+            "HAV2013-1",
+            "MAR2032-1"
+          ],
+          "merknad": "Produksjon av laksefisk i tre kodeversjoner (MAR2032, HAV2000, HAV2012) samt Produksjon av marin fisk og Marine arter i oppdrett."
+        },
+        {
+          "entryId": "ntnu_ing_havbruk",
+          "emnekoder": [
+            "BI1011-1",
+            "BI1012-1",
+            "BI1008-1"
+          ],
+          "merknad": "Laksens biologi i oppdrett (settefisk) og Laks – matfisk; BI1008 er den eldre samlekoden."
+        },
+        {
+          "entryId": "uit_fiskeri_havbruk",
+          "emnekoder": [
+            "FSK-2030-1"
+          ],
+          "merknad": "Bærekraftig havbruk, 30 sp semesteremne; bredere enn de andres produksjonsemner."
+        },
+        {
+          "entryId": "uib_havbruk",
+          "emnekoder": [
+            "BIO382-0"
+          ],
+          "merknad": "Akvatisk matproduksjon."
+        }
+      ]
+    },
+    {
+      "id": "fiskebiologi-og-fiskefysiologi",
+      "label": "Fiskebiologi og fiskefysiologi",
+      "kategori": "Akvakultur",
+      "desc": "Fiskens systematikk, anatomi og fysiologi: osmoregulering, respirasjon, vekst, forplantning og tilpasning til vannmiljø.",
+      "note": "NMBU har ikke noe stort teoriemne i fiskebiologi. AQX110 Akvalabb er et praktisk laboratorieemne på 10 sp som dekker fiskeanatomi, disseksjon og vannkvalitet, og valgemnet BIO314 Fiskens fysiologi og tilpasninger er på 5 sp med bare 7 kandidater i perioden; koblingen er derfor svakere på NMBU-siden enn hos de andre. UiB har gruppas klart største omfang (BIO280 og BIO291, 20 sp), NTNUs to programmer har ingen egne emner av denne typen.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_akvakultur",
+          "emnekoder": [
+            "AQX110-1",
+            "BIO314-1"
+          ],
+          "merknad": "Akvalabb (praktisk fiskeanatomi og -biologi) og valgemnet Fiskens fysiologi og tilpasninger; NMBU har ikke noe eget teoriemne i fiskebiologi."
+        },
+        {
+          "entryId": "nord_havbruksdrift",
+          "emnekoder": [
+            "HAV1002-1",
+            "HAV1000-1"
+          ],
+          "merknad": "To kodeversjoner av Fiskebiologi."
+        },
+        {
+          "entryId": "uit_fiskeri_havbruk",
+          "emnekoder": [
+            "FSK-1120-1",
+            "FSK-2051-1"
+          ],
+          "merknad": "Akvatisk biologi for fiskeri- og havbruksvitenskap og Aquatic Biology II."
+        },
+        {
+          "entryId": "uib_havbruk",
+          "emnekoder": [
+            "BIO280-0",
+            "BIO291-0"
+          ],
+          "merknad": "Fiskebiologi I – systematikk og anatomi og Fiskebiologi II – fysiologi."
+        },
+        {
+          "entryId": "uib_fiskehelse",
+          "emnekoder": [
+            "BIO280-0",
+            "BIO291-0"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fiskehelse-og-fiskevelferd",
+      "label": "Fiskehelse og fiskevelferd",
+      "kategori": "Akvakultur",
+      "desc": "Fiskens immunforsvar, smittestoff og sykdommer, forebygging og behandling, og vurdering av fiskevelferd.",
+      "note": "Omfanget spriker mer her enn noe annet sted i gruppa: UiBs fiskehelseprofesjon har seks sykdomsemner og et diagnostikkemne på til sammen 65 sp og leder til autorisasjon som fiskehelsebiolog, mens NMBU har ett emne på 10 sp. UiTs fiskehelse- og velferdsstoff ligger inne i FSK-2030 Bærekraftig havbruk og er ikke skilt ut som eget emne; UiT er derfor ikke koblet. UiBs havbruksprogram har heller ikke egne sykdomsemner.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_akvakultur",
+          "emnekoder": [
+            "AQX201-1",
+            "AQX251-1"
+          ],
+          "merknad": "Fiskehelsebiologi (10 sp) og valgemnet Bærekraft og dyrevelferd i akvakultur."
+        },
+        {
+          "entryId": "nord_havbruksdrift",
+          "emnekoder": [
+            "HAV2001-1",
+            "HAV2014-1",
+            "HAV2004-1",
+            "MAR2033-1",
+            "MAR2036-1"
+          ],
+          "merknad": "Fiskehelse og Fiskevelferd, begge i flere kodeversjoner (MAR2033/HAV2001/HAV2014 og MAR2036/HAV2004). Den nyeste velferdskoden HAV2016 har ennå ikke rapporterte karakterer."
+        },
+        {
+          "entryId": "ntnu_ing_havbruk",
+          "emnekoder": [
+            "BI1009-1"
+          ],
+          "merknad": "Fiskehelse og velferd, 7,5 sp; obligatorisk og med gruppas høyeste kandidattall."
+        },
+        {
+          "entryId": "uib_fiskehelse",
+          "emnekoder": [
+            "BIO270-0",
+            "BIO271-0",
+            "BIO272-0",
+            "BIO273-0",
+            "BIO274-0",
+            "BIO275-0",
+            "BIF210-0"
+          ],
+          "merknad": "Fiskesykdommer – parasitter, virologi, bakterier/sopp, fiskeimmunologi, farmakologi og fiskehistopatologi, samt molekylærbiologisk diagnostikk; til sammen 65 sp."
+        }
+      ]
+    },
+    {
+      "id": "for-og-ernaering",
+      "label": "Fôr og ernæring",
+      "kategori": "Akvakultur",
+      "desc": "Næringsstoffbehov, fôrmidler og fôrsammensetning, fôringsstrategier og fôrets betydning for vekst og kvalitet.",
+      "note": "Alle unntatt NTNUs havbruksingeniør har et ernæringsemne. NMBUs HFE200 Generell ernæring er et husdyrernæringsemne som deles med husdyr- og akvakulturstudentene og er derfor ikke fiskespesifikt, mens Nord (HAV2002/HAV2015, 12,5–15 sp) og UiB (BIO206 Ernæring hos fisk) har rene fiskeernæringsemner. UiTs BIO-2602 Fiskeernæring er et valgemne med 9 kandidater i 2025.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_akvakultur",
+          "emnekoder": [
+            "HFE200-1"
+          ],
+          "merknad": "Generell ernæring, 10 sp; felles husdyr- og akvakulturemne, ikke fiskespesifikt."
+        },
+        {
+          "entryId": "nord_havbruksdrift",
+          "emnekoder": [
+            "HAV2002-1",
+            "HAV2015-1"
+          ],
+          "merknad": "To kodeversjoner av Fiskeernæring og produktkvalitet; emnet dekker også produktkvalitet."
+        },
+        {
+          "entryId": "ntnu_biomarin",
+          "emnekoder": [
+            "BTA2001-1"
+          ],
+          "merknad": "Ernæring, 7,5 sp."
+        },
+        {
+          "entryId": "uit_fiskeri_havbruk",
+          "emnekoder": [
+            "BIO-2602-1"
+          ],
+          "merknad": "Fiskeernæring; valgemne med få kandidater."
+        },
+        {
+          "entryId": "uib_havbruk",
+          "emnekoder": [
+            "BIO206-0"
+          ],
+          "merknad": "Ernæring hos fisk."
+        },
+        {
+          "entryId": "uib_fiskehelse",
+          "emnekoder": [
+            "BIO206-0"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kjemi-og-biokjemi",
+      "label": "Kjemi og biokjemi",
+      "kategori": "Realfag",
+      "desc": "Grunnleggende kjemi og biomolekylenes kjemi, med vekt på vannkjemi og biologiske anvendelser.",
+      "note": "Alle sju programmene har kjemi, men på svært ulikt nivå. NMBU har mest (KJM100 10 sp og KJB100 5 sp), UiT har både et kjemiemne og et kombinert biokjemi- og mikrobiologiemne, mens NTNUs havbruksingeniør bare har hatt kjemi som del av det kombinerte emnet IFYKJT1000 Fysikk/kjemi – dagens KJ1005 Generell kjemi har ingen rapporterte karakterer. Nords vannkjemiemne HAV1001 er koblet her fordi det er programmets eneste anvendte kjemiemne utover KJE1000.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_akvakultur",
+          "emnekoder": [
+            "KJM100-1",
+            "KJB100-1"
+          ],
+          "merknad": "Generell kjemi (10 sp) og Introduksjon til biokjemi (5 sp)."
+        },
+        {
+          "entryId": "nord_havbruksdrift",
+          "emnekoder": [
+            "KJE1000-1",
+            "HAV1001-1"
+          ],
+          "merknad": "Grunnleggende kjemi og Vannkjemi og vannbehandling i akvakultur."
+        },
+        {
+          "entryId": "ntnu_biomarin",
+          "emnekoder": [
+            "MK103119-1"
+          ],
+          "merknad": "Innføring i kjemi, 7,5 sp."
+        },
+        {
+          "entryId": "ntnu_ing_havbruk",
+          "emnekoder": [
+            "IFYKJT1000-1"
+          ],
+          "merknad": "Fysikk/kjemi, 10 sp; kombinert emne, utgått. Dagens KJ1005 Generell kjemi har ingen rapporterte karakterer."
+        },
+        {
+          "entryId": "uit_fiskeri_havbruk",
+          "emnekoder": [
+            "KJE-1001-1",
+            "FSK-1122-1",
+            "FSK-1101-1"
+          ],
+          "merknad": "Introduksjon til kjemi og kjemisk biologi, Biokjemi og mikrobiologi for fiskeri- og havbruksvitenskap, og den eldre koden Kjemi for fiskeri- og havbruksvitenskap."
+        },
+        {
+          "entryId": "uib_havbruk",
+          "emnekoder": [
+            "KJEM109-0"
+          ],
+          "merknad": "Kjemi grunnkurs."
+        },
+        {
+          "entryId": "uib_fiskehelse",
+          "emnekoder": [
+            "KJEM109-0"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cellebiologi-og-genetikk",
+      "label": "Cellebiologi, molekylærbiologi og genetikk",
+      "kategori": "Biologi",
+      "desc": "Cellens oppbygning og funksjon, DNA og genuttrykk, og arvelære.",
+      "note": "NTNUs to programmer har ingen emner av denne typen, og UiT dekker molekylærbiologien inne i FSK-1122 (koblet under kjemi og biokjemi). NMBU er den eneste i gruppa med et eget genetikkemne på 10 sp; Nord og UiB har bare cellebiologidelen.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_akvakultur",
+          "emnekoder": [
+            "BIO100-1",
+            "BIO120-1",
+            "BIO200-1"
+          ],
+          "merknad": "Cellebiologi, Genetikk og valgemnet Molekylærgenetikk i eukaryoter."
+        },
+        {
+          "entryId": "nord_havbruksdrift",
+          "emnekoder": [
+            "BIO1009-1",
+            "BIO1002-1",
+            "MAR2034-1"
+          ],
+          "merknad": "Tre kodeversjoner av Cellebiologi."
+        },
+        {
+          "entryId": "uib_havbruk",
+          "emnekoder": [
+            "BIO103-0"
+          ],
+          "merknad": "Cellebiologi og genetikk."
+        },
+        {
+          "entryId": "uib_fiskehelse",
+          "emnekoder": [
+            "BIO103-0",
+            "MOL100-0"
+          ],
+          "merknad": "Cellebiologi og genetikk og Innføring i molekylærbiologi."
+        }
+      ]
+    },
+    {
+      "id": "produktkvalitet-og-sjomat",
+      "label": "Produktkvalitet, sjømat og foredling",
+      "kategori": "Akvakultur",
+      "desc": "Sjømatens kvalitet og sammensetning, råstoffhåndtering, foredling, næringsmiddelhygiene og kvalitetssikring.",
+      "note": "Dette er tyngdepunktet i NTNUs biomarine innovasjonsbachelor (BIA1001 Marint råstoff, BIA2004 Sjømatforedling og MN304012 Kvalitetssikring, til sammen 22,5 sp) og en stor del av UiTs FSK-2041 Sjømatproduksjon. NMBUs AQQ253 Produktkvalitet Akvakultur er et valgemne på 5 sp med 10 kandidater i 2025. Nords produktkvalitetsstoff ligger i HAV2002/HAV2015 sammen med fiskeernæring og er koblet der i stedet, for å unngå å telle det samme emnet to ganger.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_akvakultur",
+          "emnekoder": [
+            "AQQ253-1",
+            "AQT251-1"
+          ],
+          "merknad": "Produktkvalitet Akvakultur og Laboratoriekurs i internasjonal akvakultur; begge valgemner på 5 sp."
+        },
+        {
+          "entryId": "ntnu_biomarin",
+          "emnekoder": [
+            "BIA1001-1",
+            "BIA2004-1",
+            "MN304012-1",
+            "BTA1001-1"
+          ],
+          "merknad": "Marint råstoff, Sjømatforedling, Kvalitetssikring og sertifisering og Generell mikrobiologi."
+        },
+        {
+          "entryId": "uit_fiskeri_havbruk",
+          "emnekoder": [
+            "FSK-2041-1",
+            "FSK-3004-1"
+          ],
+          "merknad": "Sjømatproduksjon og Næringsmiddelkunnskap."
+        },
+        {
+          "entryId": "uib_havbruk",
+          "emnekoder": [
+            "BIO207-0"
+          ],
+          "merknad": "Næringsmiddelmikrobiologi med spesiell relevans til sjømat."
+        },
+        {
+          "entryId": "uib_fiskehelse",
+          "emnekoder": [
+            "BIO207-0"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "okonomi-og-ledelse",
+      "label": "Økonomi, marked og ledelse",
+      "kategori": "Økonomi",
+      "desc": "Bedriftsøkonomi, regnskap, markedsføring, ledelse og entreprenørskap i havbruksnæringa.",
+      "note": "Her er forskjellen mellom programmene størst. Nord og NTNU Ålesund har økonomi og ledelse som en hovedbolk (Nord: ECO1002, FIN1001, HAV2009, LED2005, til sammen 37,5 sp; NTNU: fem emner på 37,5 sp), UiT har to obligatoriske økonomiemner, mens NMBU bare har små valgemner på 5 sp og UiBs fiskehelseprofesjon ingen i det hele tatt. NTNUs havbruksingeniør har bare prosjektledelse.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_akvakultur",
+          "emnekoder": [
+            "ECN180-1",
+            "BUS100-1",
+            "BUS120-1"
+          ],
+          "merknad": "Globale utfordringer I: økonomi og bærekraft, Bedriften – innføring i bedriftsøkonomiske sammenhenger og Personlig økonomi; alle valgemner på 5 sp."
+        },
+        {
+          "entryId": "nord_havbruksdrift",
+          "emnekoder": [
+            "ECO1002-1",
+            "FIN1001-1",
+            "HAV2009-1",
+            "HAV2007-1",
+            "MAR2038-1",
+            "LED2005-1",
+            "HAV2008-1"
+          ],
+          "merknad": "Bedriftsøkonomisk analyse, Innføring i regnskap, Havbruksøkonomi (tre kodeversjoner: MAR2038, HAV2007, HAV2009), Ledelse og Kvalitetsledelse og HMS i havbruk."
+        },
+        {
+          "entryId": "ntnu_biomarin",
+          "emnekoder": [
+            "AE101108-1",
+            "AE101124-1",
+            "AM101020-1",
+            "AM101108-1",
+            "AI201312-1"
+          ],
+          "merknad": "Bedriftsøkonomi med regnskap, Økonomisk styring I, Praktisk økonomi med regning, Markedsføring grunnkurs og Entreprenørskap og forretningsutvikling."
+        },
+        {
+          "entryId": "ntnu_ing_havbruk",
+          "emnekoder": [
+            "TLOG2007-1"
+          ],
+          "merknad": "Prosjektledelse; valgemne."
+        },
+        {
+          "entryId": "uit_fiskeri_havbruk",
+          "emnekoder": [
+            "FSK-1123-1",
+            "FSK-2043-1"
+          ],
+          "merknad": "Økonomi for fiskeri- og havbruksvitenskap og Strategi og markedsføring for sjømatnæringen."
+        },
+        {
+          "entryId": "uib_havbruk",
+          "emnekoder": [
+            "INNOV201-0"
+          ],
+          "merknad": "Innovasjon ved designtenking; UiB har ingen egne økonomiemner i programmet."
+        }
+      ]
+    },
+    {
+      "id": "statistikk-og-vitenskapelig-metode",
+      "label": "Statistikk og vitenskapelig metode",
+      "kategori": "Metode",
+      "desc": "Statistisk analyse, forsøksdesign, vitenskapelig metode og akademisk skriving.",
+      "note": "Alle sju programmene har metodeemner, men med ulik vekt: NMBU og UiB har rene statistikkemner, Nord og NTNU Ålesund har metode- og skriveemner med lite statistikk, og NTNUs havbruksingeniør har ingeniørstatistikk. UiTs FSK-1121 er bare 5 sp og dekker både statistikk og metode, i tillegg til at programmet har et eget brukerkurs i matematikk.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_akvakultur",
+          "emnekoder": [
+            "STAT100-1",
+            "STIN100-1"
+          ],
+          "merknad": "Statistikk og Biologisk dataanalyse, 10 sp hver."
+        },
+        {
+          "entryId": "nord_havbruksdrift",
+          "emnekoder": [
+            "MET1005-1",
+            "MET2000-1",
+            "MA116F-1"
+          ],
+          "merknad": "To kodeversjoner av metode- og skriveemnet samt Matematikk/statistikk for biologer."
+        },
+        {
+          "entryId": "ntnu_biomarin",
+          "emnekoder": [
+            "BIA3003-1",
+            "AR100219-1"
+          ],
+          "merknad": "Innføring i vitenskapelig metode og Statistikk for økonomer."
+        },
+        {
+          "entryId": "ntnu_ing_havbruk",
+          "emnekoder": [
+            "ISTT1001-1"
+          ],
+          "merknad": "Statistikk for ingeniørfag."
+        },
+        {
+          "entryId": "uit_fiskeri_havbruk",
+          "emnekoder": [
+            "FSK-1121-1",
+            "MAT-0001-1",
+            "FSK-1102-1"
+          ],
+          "merknad": "Statistikk og metode for fiskeri- og havbruksvitenskap, Brukerkurs i matematikk og den eldre koden FSK-1102 Matematikk og metode."
+        },
+        {
+          "entryId": "uib_havbruk",
+          "emnekoder": [
+            "BIO300B-0",
+            "STAT110-0",
+            "BIO300A-0"
+          ],
+          "merknad": "Biostatistikk, Grunnkurs i statistikk og Akademisk skriving."
+        },
+        {
+          "entryId": "uib_fiskehelse",
+          "emnekoder": [
+            "BIO300B-0",
+            "BIO300A-0"
+          ],
+          "merknad": "Biostatistikk og Akademisk skriving."
+        }
+      ]
+    },
+    {
+      "id": "praksis-og-internship",
+      "label": "Praksis og internship",
+      "kategori": "Praksis",
+      "desc": "Veiledet praksisperiode i oppdrettsanlegg, forvaltning eller næringsliv som del av graden.",
+      "note": "Praksis er obligatorisk og stor hos Nord (20–22,5 sp) og UiT (10 sp), og inngår i profesjonsutdanninga hos UiB fiskehelse. Hos NMBU er BINT302 Internship akvakultur et valgemne på 10 sp med 11 kandidater i 2025. NTNUs havbruksingeniør har ingen praksisperiode og er ikke koblet.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_akvakultur",
+          "emnekoder": [
+            "BINT302-1"
+          ],
+          "merknad": "Internship akvakultur, 10 sp; valgemne."
+        },
+        {
+          "entryId": "nord_havbruksdrift",
+          "emnekoder": [
+            "HAV2005-1",
+            "MAR2040-1",
+            "HAV2011-1"
+          ],
+          "merknad": "Praksis i havbruksdrift og ledelse i to kodeversjoner, samt Praksisseminar (0 sp)."
+        },
+        {
+          "entryId": "ntnu_biomarin",
+          "emnekoder": [
+            "BIA2003-1"
+          ],
+          "merknad": "Ekstern praksis 1."
+        },
+        {
+          "entryId": "uit_fiskeri_havbruk",
+          "emnekoder": [
+            "FSK-2042-1"
+          ],
+          "merknad": "Praksis for en bærekraftig sjømatnæring."
+        },
+        {
+          "entryId": "uib_havbruk",
+          "emnekoder": [
+            "BIO205-0"
+          ],
+          "merknad": "Praksisperiode, lovverk og forvaltning i akvakultur."
+        },
+        {
+          "entryId": "uib_fiskehelse",
+          "emnekoder": [
+            "BIF310-0",
+            "BIO205A-0"
+          ],
+          "merknad": "Profesjonsutøvelse og praksis i fiskehelse og Lovverk og forvaltning i fiskehelse og havbruk."
+        }
+      ]
+    },
+    {
+      "id": "baerekraft-og-matproduksjon",
+      "label": "Bærekraft, miljø og matproduksjon",
+      "kategori": "Bærekraft",
+      "desc": "Bærekraftige matproduksjonssystemer, miljøpåvirkning fra oppdrett, klima og etikk.",
+      "note": "NTNUs havbruksingeniør og UiBs fiskehelseprofesjon har ingen egne bærekraftsemner. UiBs havbruksprogram har BIO208 Miljøpåvirkning av oppdrett, som er mer teknisk-miljøfaglig enn de andres. UiTs FSK-1020 er bare 2,5 sp.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_akvakultur",
+          "emnekoder": [
+            "SDG200-1",
+            "HFX133-1"
+          ],
+          "merknad": "Bærekraftige matproduksjonssystemer og Utfordringer for framtidas matproduksjon, 5 sp hver."
+        },
+        {
+          "entryId": "ntnu_biomarin",
+          "emnekoder": [
+            "BI2081-1"
+          ],
+          "merknad": "Natur, miljø og bærekraft."
+        },
+        {
+          "entryId": "uit_fiskeri_havbruk",
+          "emnekoder": [
+            "FSK-1020-1"
+          ],
+          "merknad": "Etikk, bærekraft og tverrfaglighet, 2,5 sp."
+        },
+        {
+          "entryId": "uib_havbruk",
+          "emnekoder": [
+            "BIO208-0"
+          ],
+          "merknad": "Miljøpåvirkning av oppdrett."
+        }
+      ]
+    },
+    {
+      "id": "exphil",
+      "label": "Examen philosophicum",
+      "kategori": "Ex.phil",
+      "desc": "Fellesemnet i vitenskapsfilosofi og etikk.",
+      "note": "Alle sju programmene har ex.phil, men Nord og UiT har ikke rapporterte karakterer etter 2023 (Nords FIL1001 og UiTs FIL-0700, som har 138 og 101 kandidater i perioden). NMBUs akvakulturbachelor bruker i hovedsak den engelske versjonen PHI102 og seminarversjonen PHI101, og ex.phil er ikke obligatorisk i programmet.",
+      "koblinger": [
+        {
+          "entryId": "nmbu_akvakultur",
+          "emnekoder": [
+            "PHI102-1",
+            "PHI101-1"
+          ],
+          "merknad": "Den engelske versjonen PHI102 og seminarversjonen PHI101 av samme emne; ex.phil er valgfritt i akvakulturbacheloren, og kandidattallene er derfor lave (12 og 9 i 2025)."
+        },
+        {
+          "entryId": "nord_havbruksdrift",
+          "emnekoder": [
+            "FIL1001-1"
+          ],
+          "merknad": "Ex. Phil. Etikk, bærekraft og samfunnsansvar; ingen rapporterte karakterer etter 2023."
+        },
+        {
+          "entryId": "ntnu_biomarin",
+          "emnekoder": [
+            "EXPH0300-1"
+          ],
+          "merknad": "Examen philosophicum for naturvitenskap og teknologi."
+        },
+        {
+          "entryId": "ntnu_ing_havbruk",
+          "emnekoder": [
+            "EXPH0300-1"
+          ],
+          "merknad": "Programmet bruker nå EXPH0600 Examen philosophicum for ingeniørfag, som ikke har rapporterte karakterer."
+        },
+        {
+          "entryId": "uit_fiskeri_havbruk",
+          "emnekoder": [
+            "FIL-0700-1"
+          ],
+          "merknad": "Examen philosophicum, Tromsøvarianten; ingen rapporterte karakterer etter 2023."
+        },
+        {
+          "entryId": "uib_havbruk",
+          "emnekoder": [
+            "EXPHIL-MNSEM-0"
+          ],
+          "merknad": "Seminarmodellen; skoleeksamensversjonen EXPHIL-MNEKS har bare fire–fem kandidater."
+        },
+        {
+          "entryId": "uib_fiskehelse",
+          "emnekoder": [
+            "EXPHIL-MNSEM-0"
+          ],
+          "merknad": "Seminarmodellen; skoleeksamensversjonen EXPHIL-MNEKS har bare fire–fem kandidater."
+        }
+      ]
+    }
+  ]
+}

@@ -1,8 +1,853 @@
-// GENERERT av scripts/build-biovit-course-mapping.py – stub. Ikke rediger for hånd.
-// Tom foreløpig: generatoren skriver over hele filen når emnekoblingen for BIOVIT er laget.
-// Eksportnavnene er med vilje de samme som i landsamCourseMapping.ts.
-import type { GroupCourseMapping } from './landsamCourseMapping';
+// GENERERT av scripts/build-landsam-course-mapping.py 2026-09-23 – ikke rediger for hånd.
+// Kilde: data/landsam/emnekobling/*.json (manuelt kartlagt mot studieplanene).
+export interface CourseTypeLink { entryId: string; emnekoder: string[]; merknad?: string; }
+export interface CourseType { id: string; label: string; kategori?: string; desc?: string; note?: string; links: CourseTypeLink[]; }
+export interface GroupCourseMapping { groupId: string; note?: string; courseTypes: CourseType[]; }
 
-export type { CourseTypeLink, CourseType, GroupCourseMapping } from './landsamCourseMapping';
-
-export const LANDSAM_COURSE_MAPPING: GroupCourseMapping[] = [];
+export const LANDSAM_COURSE_MAPPING: GroupCourseMapping[] = [
+  {
+    groupId: 'akvakultur',
+    note: 'Gruppa rommer tre utdanningsfamilier, og det må leses inn i alle sammenligningene. NMBU, Nord og NTNU Ålesund er treårige bachelorer; NTNUs havbruksingeniør i Trondheim er en treårig ingeniørutdanning med R2-krav, mye matematikk, mekanikk og fluidmekanikk; og UiTs fiskeri- og havbruksvitenskap og UiBs havbruk (sivilingeniør) og fiskehelse/akvamedisin er femårige integrerte mastere, der emner på 200- og 300-nivå her måles mot bacheloremner. De to UiB-programmene deler en stor felles emneportefølje (BIF100, BIF101, BIF200, BIO280, BIO291, BIO206, BIO207, LAS301/LAS303) og gir derfor nesten like tall i mange emnetyper. Sammenligningen er sterkest i fiskehelse, fôr og ernæring, fiskebiologi og oppdrettsproduksjon, og svakest i cellebiologi og genetikk, der NTNUs to programmer ikke har noe tilsvarende emne. Programmene har også helt ulik tyngdepunkt: Nords havbruksdrift og ledelse og NTNUs biomarin innovasjon er i praksis halvt økonomi- og ledelsesutdanninger, med bedriftsøkonomi, regnskap, markedsføring og entreprenørskap som obligatoriske emner, mens NMBU har tre små valgemner i økonomi. Tre emnetyper er utelatt med vilje fordi NMBU mangler en motpart med rapporterte karakterer: havbruksteknologi og vannbehandling (Nord HAV1001, NTNU BMR3000 og BT3102, UiB BIF200 – NMBUs AQT254 Grunnleggende akvakulturteknikk har tre kandidater og AQP255 Akvatisk miljø i akvakultur er så nytt at det ikke er rapportert); marin økologi og oseanografi (NTNU BIA2001 og MB104314, UiB BIO213, Nord BI222F – NMBUs AQF200 Primærproduksjon har sju kandidater); og bacheloroppgave (Nord HAV2010, NTNU BIA3002 og BMR3900, UiT FSK-2050 – NMBUs akvakulturbachelor har ingen bacheloroppgavekode i det hele tatt, tredje studieår er satt av til valgemner, internship eller utveksling). Avl og genetikk i akvakultur (NMBU AQB250/AQB270) er heller ikke satt opp som egen emnetype, fordi ingen av konkurrentene har et tilsvarende emne. Merk at NMBUs akvakulturbachelor er et lite program med 10–24 kandidater per emne, og at Nord og UiT har byttet emnekoder midt i perioden (Nords MAR-koder ble til HAV-koder, og HAV2000/HAV2002/HAV2001 fikk nye koder HAV2012/HAV2015/HAV2014 i 2025); begge kodeversjonene er koblet der de finnes.',
+    courseTypes: [
+      {
+        id: 'akvakultur-innforing', label: 'Innføring i akvakultur og havbruk', kategori: 'Akvakultur',
+        desc: 'Innføringsemne om akvakulturnæringa: arter, produksjonsformer, verdikjede, forvaltning og samfunnsbetydning.',
+        note: 'Nords havbruksbachelor har ikke noe eget innføringsemne – der begynner studentene direkte på produksjonsemnene – og er derfor ikke koblet her, men under oppdrettsproduksjon. NTNUs havbruksingeniør har BI2065 Akvakultur som valgemne med 13 kandidater i 2025.',
+        links: [
+          { entryId: 'nmbu_akvakultur', emnekoder: ['AQX100-1'], merknad: 'Introduksjon til norsk akvakulturproduksjon, 5 sp i augustblokk.' },
+          { entryId: 'ntnu_biomarin', emnekoder: ['BIA2002-1', 'MB102019-1'], merknad: 'Akvakultur og Biomarin verdiskaping.' },
+          { entryId: 'ntnu_ing_havbruk', emnekoder: ['BI2065-1'], merknad: 'Akvakultur; valgemne med få kandidater.' },
+          { entryId: 'uit_fiskeri_havbruk', emnekoder: ['FSK-1100-1'], merknad: 'Fiskeri- og havbruksvitenskap, 10 sp; programmets innføringsemne.' },
+          { entryId: 'uib_havbruk', emnekoder: ['BIF100-0'], merknad: 'Innføring i fiskehelse og havbruk; felles emne for UiBs to program.' },
+          { entryId: 'uib_fiskehelse', emnekoder: ['BIF100-0'] },
+        ],
+      },
+      {
+        id: 'oppdrettsproduksjon', label: 'Oppdrettsproduksjon av laks og marine arter', kategori: 'Akvakultur',
+        desc: 'Produksjonsbiologi og drift i oppdrett: settefisk, matfisk, smoltifisering, produksjonsplanlegging og marine arter.',
+        note: 'Dette er den faglige kjernen hos Nord, som har fire emner på til sammen 47,5 sp. NMBUs AQX120 Intensiv akvakultur (10 sp) og produksjonsstyringsemnet AQX252 er det nærmeste NMBU kommer. UiBs fiskehelseprogram har ikke produksjonsemner utover BIF100 og er ikke koblet. UiTs FSK-2030 Bærekraftig havbruk er et semesteremne på 30 sp og dekker langt mer enn produksjon alene.',
+        links: [
+          { entryId: 'nmbu_akvakultur', emnekoder: ['AQX120-1'], merknad: 'Intensiv akvakultur, 10 sp; NMBUs eneste produksjonsemne med et rimelig kandidatgrunnlag. Valgemnet AQX252 Produksjonsstyring i akvakultur har bare ni kandidater og er ikke koblet.' },
+          { entryId: 'nord_havbruksdrift', emnekoder: ['HAV2000-1', 'HAV2012-1', 'HAV2006-1', 'HAV2013-1', 'MAR2032-1'], merknad: 'Produksjon av laksefisk i tre kodeversjoner (MAR2032, HAV2000, HAV2012) samt Produksjon av marin fisk og Marine arter i oppdrett.' },
+          { entryId: 'ntnu_ing_havbruk', emnekoder: ['BI1011-1', 'BI1012-1', 'BI1008-1'], merknad: 'Laksens biologi i oppdrett (settefisk) og Laks – matfisk; BI1008 er den eldre samlekoden.' },
+          { entryId: 'uit_fiskeri_havbruk', emnekoder: ['FSK-2030-1'], merknad: 'Bærekraftig havbruk, 30 sp semesteremne; bredere enn de andres produksjonsemner.' },
+          { entryId: 'uib_havbruk', emnekoder: ['BIO382-0'], merknad: 'Akvatisk matproduksjon.' },
+        ],
+      },
+      {
+        id: 'fiskebiologi-og-fiskefysiologi', label: 'Fiskebiologi og fiskefysiologi', kategori: 'Akvakultur',
+        desc: 'Fiskens systematikk, anatomi og fysiologi: osmoregulering, respirasjon, vekst, forplantning og tilpasning til vannmiljø.',
+        note: 'NMBU har ikke noe stort teoriemne i fiskebiologi. AQX110 Akvalabb er et praktisk laboratorieemne på 10 sp som dekker fiskeanatomi, disseksjon og vannkvalitet, og valgemnet BIO314 Fiskens fysiologi og tilpasninger er på 5 sp med bare 7 kandidater i perioden; koblingen er derfor svakere på NMBU-siden enn hos de andre. UiB har gruppas klart største omfang (BIO280 og BIO291, 20 sp), NTNUs to programmer har ingen egne emner av denne typen.',
+        links: [
+          { entryId: 'nmbu_akvakultur', emnekoder: ['AQX110-1', 'BIO314-1'], merknad: 'Akvalabb (praktisk fiskeanatomi og -biologi) og valgemnet Fiskens fysiologi og tilpasninger; NMBU har ikke noe eget teoriemne i fiskebiologi.' },
+          { entryId: 'nord_havbruksdrift', emnekoder: ['HAV1002-1', 'HAV1000-1'], merknad: 'To kodeversjoner av Fiskebiologi.' },
+          { entryId: 'uit_fiskeri_havbruk', emnekoder: ['FSK-1120-1', 'FSK-2051-1'], merknad: 'Akvatisk biologi for fiskeri- og havbruksvitenskap og Aquatic Biology II.' },
+          { entryId: 'uib_havbruk', emnekoder: ['BIO280-0', 'BIO291-0'], merknad: 'Fiskebiologi I – systematikk og anatomi og Fiskebiologi II – fysiologi.' },
+          { entryId: 'uib_fiskehelse', emnekoder: ['BIO280-0', 'BIO291-0'] },
+        ],
+      },
+      {
+        id: 'fiskehelse-og-fiskevelferd', label: 'Fiskehelse og fiskevelferd', kategori: 'Akvakultur',
+        desc: 'Fiskens immunforsvar, smittestoff og sykdommer, forebygging og behandling, og vurdering av fiskevelferd.',
+        note: 'Omfanget spriker mer her enn noe annet sted i gruppa: UiBs fiskehelseprofesjon har seks sykdomsemner og et diagnostikkemne på til sammen 65 sp og leder til autorisasjon som fiskehelsebiolog, mens NMBU har ett emne på 10 sp. UiTs fiskehelse- og velferdsstoff ligger inne i FSK-2030 Bærekraftig havbruk og er ikke skilt ut som eget emne; UiT er derfor ikke koblet. UiBs havbruksprogram har heller ikke egne sykdomsemner.',
+        links: [
+          { entryId: 'nmbu_akvakultur', emnekoder: ['AQX201-1', 'AQX251-1'], merknad: 'Fiskehelsebiologi (10 sp) og valgemnet Bærekraft og dyrevelferd i akvakultur.' },
+          { entryId: 'nord_havbruksdrift', emnekoder: ['HAV2001-1', 'HAV2014-1', 'HAV2004-1', 'MAR2033-1', 'MAR2036-1'], merknad: 'Fiskehelse og Fiskevelferd, begge i flere kodeversjoner (MAR2033/HAV2001/HAV2014 og MAR2036/HAV2004). Den nyeste velferdskoden HAV2016 har ennå ikke rapporterte karakterer.' },
+          { entryId: 'ntnu_ing_havbruk', emnekoder: ['BI1009-1'], merknad: 'Fiskehelse og velferd, 7,5 sp; obligatorisk og med gruppas høyeste kandidattall.' },
+          { entryId: 'uib_fiskehelse', emnekoder: ['BIO270-0', 'BIO271-0', 'BIO272-0', 'BIO273-0', 'BIO274-0', 'BIO275-0', 'BIF210-0'], merknad: 'Fiskesykdommer – parasitter, virologi, bakterier/sopp, fiskeimmunologi, farmakologi og fiskehistopatologi, samt molekylærbiologisk diagnostikk; til sammen 65 sp.' },
+        ],
+      },
+      {
+        id: 'for-og-ernaering', label: 'Fôr og ernæring', kategori: 'Akvakultur',
+        desc: 'Næringsstoffbehov, fôrmidler og fôrsammensetning, fôringsstrategier og fôrets betydning for vekst og kvalitet.',
+        note: 'Alle unntatt NTNUs havbruksingeniør har et ernæringsemne. NMBUs HFE200 Generell ernæring er et husdyrernæringsemne som deles med husdyr- og akvakulturstudentene og er derfor ikke fiskespesifikt, mens Nord (HAV2002/HAV2015, 12,5–15 sp) og UiB (BIO206 Ernæring hos fisk) har rene fiskeernæringsemner. UiTs BIO-2602 Fiskeernæring er et valgemne med 9 kandidater i 2025.',
+        links: [
+          { entryId: 'nmbu_akvakultur', emnekoder: ['HFE200-1'], merknad: 'Generell ernæring, 10 sp; felles husdyr- og akvakulturemne, ikke fiskespesifikt.' },
+          { entryId: 'nord_havbruksdrift', emnekoder: ['HAV2002-1', 'HAV2015-1'], merknad: 'To kodeversjoner av Fiskeernæring og produktkvalitet; emnet dekker også produktkvalitet.' },
+          { entryId: 'ntnu_biomarin', emnekoder: ['BTA2001-1'], merknad: 'Ernæring, 7,5 sp.' },
+          { entryId: 'uit_fiskeri_havbruk', emnekoder: ['BIO-2602-1'], merknad: 'Fiskeernæring; valgemne med få kandidater.' },
+          { entryId: 'uib_havbruk', emnekoder: ['BIO206-0'], merknad: 'Ernæring hos fisk.' },
+          { entryId: 'uib_fiskehelse', emnekoder: ['BIO206-0'] },
+        ],
+      },
+      {
+        id: 'kjemi-og-biokjemi', label: 'Kjemi og biokjemi', kategori: 'Realfag',
+        desc: 'Grunnleggende kjemi og biomolekylenes kjemi, med vekt på vannkjemi og biologiske anvendelser.',
+        note: 'Alle sju programmene har kjemi, men på svært ulikt nivå. NMBU har mest (KJM100 10 sp og KJB100 5 sp), UiT har både et kjemiemne og et kombinert biokjemi- og mikrobiologiemne, mens NTNUs havbruksingeniør bare har hatt kjemi som del av det kombinerte emnet IFYKJT1000 Fysikk/kjemi – dagens KJ1005 Generell kjemi har ingen rapporterte karakterer. Nords vannkjemiemne HAV1001 er koblet her fordi det er programmets eneste anvendte kjemiemne utover KJE1000.',
+        links: [
+          { entryId: 'nmbu_akvakultur', emnekoder: ['KJM100-1', 'KJB100-1'], merknad: 'Generell kjemi (10 sp) og Introduksjon til biokjemi (5 sp).' },
+          { entryId: 'nord_havbruksdrift', emnekoder: ['KJE1000-1', 'HAV1001-1'], merknad: 'Grunnleggende kjemi og Vannkjemi og vannbehandling i akvakultur.' },
+          { entryId: 'ntnu_biomarin', emnekoder: ['MK103119-1'], merknad: 'Innføring i kjemi, 7,5 sp.' },
+          { entryId: 'ntnu_ing_havbruk', emnekoder: ['IFYKJT1000-1'], merknad: 'Fysikk/kjemi, 10 sp; kombinert emne, utgått. Dagens KJ1005 Generell kjemi har ingen rapporterte karakterer.' },
+          { entryId: 'uit_fiskeri_havbruk', emnekoder: ['KJE-1001-1', 'FSK-1122-1', 'FSK-1101-1'], merknad: 'Introduksjon til kjemi og kjemisk biologi, Biokjemi og mikrobiologi for fiskeri- og havbruksvitenskap, og den eldre koden Kjemi for fiskeri- og havbruksvitenskap.' },
+          { entryId: 'uib_havbruk', emnekoder: ['KJEM109-0'], merknad: 'Kjemi grunnkurs.' },
+          { entryId: 'uib_fiskehelse', emnekoder: ['KJEM109-0'] },
+        ],
+      },
+      {
+        id: 'cellebiologi-og-genetikk', label: 'Cellebiologi, molekylærbiologi og genetikk', kategori: 'Biologi',
+        desc: 'Cellens oppbygning og funksjon, DNA og genuttrykk, og arvelære.',
+        note: 'NTNUs to programmer har ingen emner av denne typen, og UiT dekker molekylærbiologien inne i FSK-1122 (koblet under kjemi og biokjemi). NMBU er den eneste i gruppa med et eget genetikkemne på 10 sp; Nord og UiB har bare cellebiologidelen.',
+        links: [
+          { entryId: 'nmbu_akvakultur', emnekoder: ['BIO100-1', 'BIO120-1', 'BIO200-1'], merknad: 'Cellebiologi, Genetikk og valgemnet Molekylærgenetikk i eukaryoter.' },
+          { entryId: 'nord_havbruksdrift', emnekoder: ['BIO1009-1', 'BIO1002-1', 'MAR2034-1'], merknad: 'Tre kodeversjoner av Cellebiologi.' },
+          { entryId: 'uib_havbruk', emnekoder: ['BIO103-0'], merknad: 'Cellebiologi og genetikk.' },
+          { entryId: 'uib_fiskehelse', emnekoder: ['BIO103-0', 'MOL100-0'], merknad: 'Cellebiologi og genetikk og Innføring i molekylærbiologi.' },
+        ],
+      },
+      {
+        id: 'produktkvalitet-og-sjomat', label: 'Produktkvalitet, sjømat og foredling', kategori: 'Akvakultur',
+        desc: 'Sjømatens kvalitet og sammensetning, råstoffhåndtering, foredling, næringsmiddelhygiene og kvalitetssikring.',
+        note: 'Dette er tyngdepunktet i NTNUs biomarine innovasjonsbachelor (BIA1001 Marint råstoff, BIA2004 Sjømatforedling og MN304012 Kvalitetssikring, til sammen 22,5 sp) og en stor del av UiTs FSK-2041 Sjømatproduksjon. NMBUs AQQ253 Produktkvalitet Akvakultur er et valgemne på 5 sp med 10 kandidater i 2025. Nords produktkvalitetsstoff ligger i HAV2002/HAV2015 sammen med fiskeernæring og er koblet der i stedet, for å unngå å telle det samme emnet to ganger.',
+        links: [
+          { entryId: 'nmbu_akvakultur', emnekoder: ['AQQ253-1', 'AQT251-1'], merknad: 'Produktkvalitet Akvakultur og Laboratoriekurs i internasjonal akvakultur; begge valgemner på 5 sp.' },
+          { entryId: 'ntnu_biomarin', emnekoder: ['BIA1001-1', 'BIA2004-1', 'MN304012-1', 'BTA1001-1'], merknad: 'Marint råstoff, Sjømatforedling, Kvalitetssikring og sertifisering og Generell mikrobiologi.' },
+          { entryId: 'uit_fiskeri_havbruk', emnekoder: ['FSK-2041-1', 'FSK-3004-1'], merknad: 'Sjømatproduksjon og Næringsmiddelkunnskap.' },
+          { entryId: 'uib_havbruk', emnekoder: ['BIO207-0'], merknad: 'Næringsmiddelmikrobiologi med spesiell relevans til sjømat.' },
+          { entryId: 'uib_fiskehelse', emnekoder: ['BIO207-0'] },
+        ],
+      },
+      {
+        id: 'okonomi-og-ledelse', label: 'Økonomi, marked og ledelse', kategori: 'Økonomi',
+        desc: 'Bedriftsøkonomi, regnskap, markedsføring, ledelse og entreprenørskap i havbruksnæringa.',
+        note: 'Her er forskjellen mellom programmene størst. Nord og NTNU Ålesund har økonomi og ledelse som en hovedbolk (Nord: ECO1002, FIN1001, HAV2009, LED2005, til sammen 37,5 sp; NTNU: fem emner på 37,5 sp), UiT har to obligatoriske økonomiemner, mens NMBU bare har små valgemner på 5 sp og UiBs fiskehelseprofesjon ingen i det hele tatt. NTNUs havbruksingeniør har bare prosjektledelse.',
+        links: [
+          { entryId: 'nmbu_akvakultur', emnekoder: ['ECN180-1', 'BUS100-1', 'BUS120-1'], merknad: 'Globale utfordringer I: økonomi og bærekraft, Bedriften – innføring i bedriftsøkonomiske sammenhenger og Personlig økonomi; alle valgemner på 5 sp.' },
+          { entryId: 'nord_havbruksdrift', emnekoder: ['ECO1002-1', 'FIN1001-1', 'HAV2009-1', 'HAV2007-1', 'MAR2038-1', 'LED2005-1', 'HAV2008-1'], merknad: 'Bedriftsøkonomisk analyse, Innføring i regnskap, Havbruksøkonomi (tre kodeversjoner: MAR2038, HAV2007, HAV2009), Ledelse og Kvalitetsledelse og HMS i havbruk.' },
+          { entryId: 'ntnu_biomarin', emnekoder: ['AE101108-1', 'AE101124-1', 'AM101020-1', 'AM101108-1', 'AI201312-1'], merknad: 'Bedriftsøkonomi med regnskap, Økonomisk styring I, Praktisk økonomi med regning, Markedsføring grunnkurs og Entreprenørskap og forretningsutvikling.' },
+          { entryId: 'ntnu_ing_havbruk', emnekoder: ['TLOG2007-1'], merknad: 'Prosjektledelse; valgemne.' },
+          { entryId: 'uit_fiskeri_havbruk', emnekoder: ['FSK-1123-1', 'FSK-2043-1'], merknad: 'Økonomi for fiskeri- og havbruksvitenskap og Strategi og markedsføring for sjømatnæringen.' },
+          { entryId: 'uib_havbruk', emnekoder: ['INNOV201-0'], merknad: 'Innovasjon ved designtenking; UiB har ingen egne økonomiemner i programmet.' },
+        ],
+      },
+      {
+        id: 'statistikk-og-vitenskapelig-metode', label: 'Statistikk og vitenskapelig metode', kategori: 'Metode',
+        desc: 'Statistisk analyse, forsøksdesign, vitenskapelig metode og akademisk skriving.',
+        note: 'Alle sju programmene har metodeemner, men med ulik vekt: NMBU og UiB har rene statistikkemner, Nord og NTNU Ålesund har metode- og skriveemner med lite statistikk, og NTNUs havbruksingeniør har ingeniørstatistikk. UiTs FSK-1121 er bare 5 sp og dekker både statistikk og metode, i tillegg til at programmet har et eget brukerkurs i matematikk.',
+        links: [
+          { entryId: 'nmbu_akvakultur', emnekoder: ['STAT100-1', 'STIN100-1'], merknad: 'Statistikk og Biologisk dataanalyse, 10 sp hver.' },
+          { entryId: 'nord_havbruksdrift', emnekoder: ['MET1005-1', 'MET2000-1', 'MA116F-1'], merknad: 'To kodeversjoner av metode- og skriveemnet samt Matematikk/statistikk for biologer.' },
+          { entryId: 'ntnu_biomarin', emnekoder: ['BIA3003-1', 'AR100219-1'], merknad: 'Innføring i vitenskapelig metode og Statistikk for økonomer.' },
+          { entryId: 'ntnu_ing_havbruk', emnekoder: ['ISTT1001-1'], merknad: 'Statistikk for ingeniørfag.' },
+          { entryId: 'uit_fiskeri_havbruk', emnekoder: ['FSK-1121-1', 'MAT-0001-1', 'FSK-1102-1'], merknad: 'Statistikk og metode for fiskeri- og havbruksvitenskap, Brukerkurs i matematikk og den eldre koden FSK-1102 Matematikk og metode.' },
+          { entryId: 'uib_havbruk', emnekoder: ['BIO300B-0', 'STAT110-0', 'BIO300A-0'], merknad: 'Biostatistikk, Grunnkurs i statistikk og Akademisk skriving.' },
+          { entryId: 'uib_fiskehelse', emnekoder: ['BIO300B-0', 'BIO300A-0'], merknad: 'Biostatistikk og Akademisk skriving.' },
+        ],
+      },
+      {
+        id: 'praksis-og-internship', label: 'Praksis og internship', kategori: 'Praksis',
+        desc: 'Veiledet praksisperiode i oppdrettsanlegg, forvaltning eller næringsliv som del av graden.',
+        note: 'Praksis er obligatorisk og stor hos Nord (20–22,5 sp) og UiT (10 sp), og inngår i profesjonsutdanninga hos UiB fiskehelse. Hos NMBU er BINT302 Internship akvakultur et valgemne på 10 sp med 11 kandidater i 2025. NTNUs havbruksingeniør har ingen praksisperiode og er ikke koblet.',
+        links: [
+          { entryId: 'nmbu_akvakultur', emnekoder: ['BINT302-1'], merknad: 'Internship akvakultur, 10 sp; valgemne.' },
+          { entryId: 'nord_havbruksdrift', emnekoder: ['HAV2005-1', 'MAR2040-1', 'HAV2011-1'], merknad: 'Praksis i havbruksdrift og ledelse i to kodeversjoner, samt Praksisseminar (0 sp).' },
+          { entryId: 'ntnu_biomarin', emnekoder: ['BIA2003-1'], merknad: 'Ekstern praksis 1.' },
+          { entryId: 'uit_fiskeri_havbruk', emnekoder: ['FSK-2042-1'], merknad: 'Praksis for en bærekraftig sjømatnæring.' },
+          { entryId: 'uib_havbruk', emnekoder: ['BIO205-0'], merknad: 'Praksisperiode, lovverk og forvaltning i akvakultur.' },
+          { entryId: 'uib_fiskehelse', emnekoder: ['BIF310-0', 'BIO205A-0'], merknad: 'Profesjonsutøvelse og praksis i fiskehelse og Lovverk og forvaltning i fiskehelse og havbruk.' },
+        ],
+      },
+      {
+        id: 'baerekraft-og-matproduksjon', label: 'Bærekraft, miljø og matproduksjon', kategori: 'Bærekraft',
+        desc: 'Bærekraftige matproduksjonssystemer, miljøpåvirkning fra oppdrett, klima og etikk.',
+        note: 'NTNUs havbruksingeniør og UiBs fiskehelseprofesjon har ingen egne bærekraftsemner. UiBs havbruksprogram har BIO208 Miljøpåvirkning av oppdrett, som er mer teknisk-miljøfaglig enn de andres. UiTs FSK-1020 er bare 2,5 sp.',
+        links: [
+          { entryId: 'nmbu_akvakultur', emnekoder: ['SDG200-1', 'HFX133-1'], merknad: 'Bærekraftige matproduksjonssystemer og Utfordringer for framtidas matproduksjon, 5 sp hver.' },
+          { entryId: 'ntnu_biomarin', emnekoder: ['BI2081-1'], merknad: 'Natur, miljø og bærekraft.' },
+          { entryId: 'uit_fiskeri_havbruk', emnekoder: ['FSK-1020-1'], merknad: 'Etikk, bærekraft og tverrfaglighet, 2,5 sp.' },
+          { entryId: 'uib_havbruk', emnekoder: ['BIO208-0'], merknad: 'Miljøpåvirkning av oppdrett.' },
+        ],
+      },
+      {
+        id: 'exphil', label: 'Examen philosophicum', kategori: 'Ex.phil',
+        desc: 'Fellesemnet i vitenskapsfilosofi og etikk.',
+        note: 'Alle sju programmene har ex.phil, men Nord og UiT har ikke rapporterte karakterer etter 2023 (Nords FIL1001 og UiTs FIL-0700, som har 138 og 101 kandidater i perioden). NMBUs akvakulturbachelor bruker i hovedsak den engelske versjonen PHI102 og seminarversjonen PHI101, og ex.phil er ikke obligatorisk i programmet.',
+        links: [
+          { entryId: 'nmbu_akvakultur', emnekoder: ['PHI102-1', 'PHI101-1'], merknad: 'Den engelske versjonen PHI102 og seminarversjonen PHI101 av samme emne; ex.phil er valgfritt i akvakulturbacheloren, og kandidattallene er derfor lave (12 og 9 i 2025).' },
+          { entryId: 'nord_havbruksdrift', emnekoder: ['FIL1001-1'], merknad: 'Ex. Phil. Etikk, bærekraft og samfunnsansvar; ingen rapporterte karakterer etter 2023.' },
+          { entryId: 'ntnu_biomarin', emnekoder: ['EXPH0300-1'], merknad: 'Examen philosophicum for naturvitenskap og teknologi.' },
+          { entryId: 'ntnu_ing_havbruk', emnekoder: ['EXPH0300-1'], merknad: 'Programmet bruker nå EXPH0600 Examen philosophicum for ingeniørfag, som ikke har rapporterte karakterer.' },
+          { entryId: 'uit_fiskeri_havbruk', emnekoder: ['FIL-0700-1'], merknad: 'Examen philosophicum, Tromsøvarianten; ingen rapporterte karakterer etter 2023.' },
+          { entryId: 'uib_havbruk', emnekoder: ['EXPHIL-MNSEM-0'], merknad: 'Seminarmodellen; skoleeksamensversjonen EXPHIL-MNEKS har bare fire–fem kandidater.' },
+          { entryId: 'uib_fiskehelse', emnekoder: ['EXPHIL-MNSEM-0'], merknad: 'Seminarmodellen; skoleeksamensversjonen EXPHIL-MNEKS har bare fire–fem kandidater.' },
+        ],
+      },
+    ],
+  },
+  {
+    groupId: 'akvakultur2',
+    note: 'Dette er den gruppen i BIOVIT med best faglig overlapp, men tallgrunnlaget må leses med tre forbehold. (1) uit_akvamedisin2 er i virkeligheten et femårig integrert profesjonsstudium på 300 sp; de fleste emnene som kobles her ligger på 1000- og 2000-nivå og tas i bachelordelen, så karakterene sammenlignes med NMBU-emner på masternivå. (2) uit_fiskeri_havbruk2 henter tall fra den samme DBH-programkoden som den femårige fiskeri- og havbruksvitenskapen, og emnelisten er en delmengde av den; kandidatene kan derfor være studenter på det integrerte løpet. (3) nord_akvakultur2 er én felles programkode for hele Nords master i biovitenskap, med emneliste identisk med nord_biovitenskap2 og nord_husdyr2 – bare en del av kandidatene er akvakulturstudenter. Emner er vurdert ut fra antall kandidater fra programmet i 2024 eller 2025 (minst ca. 10); for NMBUs og Nords små program er kravet myknet opp til summen for 2021–2025. Tre temaer er ikke koblet: forskningsmetode og statistikk (UiT fiskeri og havbruk har SVF-3004/SVF-3033, Nord har BI300F/MET5019 og UiT akvamedisin STA-0001, men NMBUs akvakulturmaster har ikke noe eget metodeemne – STIN300 har 7 kandidater 2021–2025), marin økologi og miljøeffekter (NMBU har bare AQF200 og THT201 med svært få kandidater), og næringsøkonomi, marked og forvaltning, som er et stort felt ved UiT fiskeri og havbruk (FSK-3009, SVF-3555, BED-3074, FSK-3013) uten motstykke ved de andre.',
+    courseTypes: [
+      {
+        id: 'akvakulturproduksjon', label: 'Akvakulturproduksjon', kategori: 'Akvakultur',
+        desc: 'Oppdrett av akvatiske organismer: produksjonsbiologi, driftsformer, produksjonsstyring og miljøeffekter av oppdrett.',
+        note: 'Alle fire programmene har et bredt produksjonsemne, men på ulikt nivå: NMBUs AQX300 og UiTs BIO-3011 er masteremner, mens UiT akvamedisins BIO-2508 «Aquaculture I» ligger i bachelordelen av det femårige løpet.',
+        links: [
+          { entryId: 'nmbu_akvakultur2', emnekoder: ['AQX300-1', 'AQX252-1'], merknad: 'anvendt akvakultur (10 sp, obligatorisk) + produksjonsstyring i akvakultur (nytt fra 2025)' },
+          { entryId: 'uit_fiskeri_havbruk2', emnekoder: ['BIO-3011-2', 'BIO-3011-1'], merknad: '«Advances in Aquaculture»; emnet gikk fra 15 sp (BIO-3011-1, til og med 2021) til 10 sp' },
+          { entryId: 'nord_akvakultur2', emnekoder: ['BIO5005-1'], merknad: 'akvakulturproduksjon og miljøeffekter, 10 sp' },
+          { entryId: 'uit_akvamedisin2', emnekoder: ['BIO-2508-1'], merknad: '«Aquaculture I», 10 sp på 2000-nivå' },
+        ],
+      },
+      {
+        id: 'anleggsteknologi', label: 'Anleggs- og produksjonsteknologi', kategori: 'Akvakultur',
+        desc: 'Teknisk utforming og drift av oppdrettsanlegg: vannbehandling, resirkulering, dimensjonering og anleggsdesign.',
+        note: 'Bare NMBU og UiT akvamedisin har egne teknologiemner. Nord og UiT fiskeri og havbruk dekker teknologi inne i de brede produksjonsemnene som er koblet under «Akvakulturproduksjon».',
+        links: [
+          { entryId: 'nmbu_akvakultur2', emnekoder: ['AQP350-1', 'AQP311-1', 'AQP211-1', 'AQT254-1'], merknad: 'planlegging og design av intensive fiskeoppdrettsanlegg (10 sp) + produksjonsteknikk (AQP211 er erstattet av AQP311 fra 2024) + grunnleggende akvakulturteknikk' },
+          { entryId: 'uit_akvamedisin2', emnekoder: ['FSK-2010-1'], merknad: 'oppdrettsteknologi, 10 sp på 2000-nivå' },
+        ],
+      },
+      {
+        id: 'fiskehelse', label: 'Fiskehelse og fiskesykdommer', kategori: 'Akvakultur',
+        desc: 'Sykdommer hos oppdrettsfisk, patologi, parasitter, smittespredning og helsekontroll i anlegg.',
+        note: 'Dybden er helt ulik: UiT akvamedisin utdanner fiskehelsebiologer og har fem–seks emner med klinisk innretning, mens NMBU har to mindre emner og Nord ett. UiT fiskeri og havbruk har ingen fiskehelseemner i emnelisten sin.',
+        links: [
+          { entryId: 'nmbu_akvakultur2', emnekoder: ['AQX301-1', 'AQX201-1'], merknad: 'AQX201 «Fiskehelsebiologi» (10 sp) er fra 2024 avløst av AQX301 «Fiskehelse» (5 sp)' },
+          { entryId: 'uit_akvamedisin2', emnekoder: ['BIO-2604-1', 'BIO-2605-1', 'BIO-3630-1', 'BIO-3519-1'], merknad: 'fiskesykdommer, fiskepatologi, helsekontroll og klinikk i havbruk (praksisemne) og parasitter og epidemiologi' },
+          { entryId: 'nord_akvakultur2', emnekoder: ['AK310F-1'], merknad: 'helse hos akvatiske oppdrettsorganismer, 10 sp' },
+        ],
+      },
+      {
+        id: 'fiskeernaering', label: 'Fiskeernæring og fôr', kategori: 'Akvakultur',
+        desc: 'Ernæringsbehov hos oppdrettsarter, fôrmidler, fôrsammensetning og bærekraftige fôrråvarer.',
+        note: 'UiT fiskeri og havbruk har ikke noe ernæringsemne i emnelisten sin og er derfor ikke koblet.',
+        links: [
+          { entryId: 'nmbu_akvakultur2', emnekoder: ['AQN350-1', 'AQN351-1'], merknad: 'akvakulturernæring (10 sp) + bærekraftige fôrråvarer (5 sp, ingen kandidater etter 2023)' },
+          { entryId: 'uit_akvamedisin2', emnekoder: ['BIO-2602-1'], merknad: 'fiskeernæring, 10 sp' },
+          { entryId: 'nord_akvakultur2', emnekoder: ['AK320F-1'], merknad: 'bærekraftig akvakulturernæring, 10 sp; få kandidater fra programmet' },
+        ],
+      },
+      {
+        id: 'fiskebiologi-fysiologi', label: 'Fiskebiologi og fiskefysiologi', kategori: 'Akvakultur',
+        desc: 'Fiskens anatomi, fysiologi, tilpasninger og atferd som grunnlag for oppdrett.',
+        note: 'UiT fiskeri og havbruk er ikke koblet: programmet har bare BIO-3512 «Early life of marine fish» med få kandidater. NMBUs BIO314 er obligatorisk og er det emnet i gruppen med flest kandidater fra eget program.',
+        links: [
+          { entryId: 'nmbu_akvakultur2', emnekoder: ['BIO314-1', 'BIO315-2', 'BIO315-1'], merknad: 'fiskens fysiologi og tilpasninger (5 sp, obligatorisk) + adferdsbiologi hos fisk' },
+          { entryId: 'uit_akvamedisin2', emnekoder: ['BIO-2504-1', 'BIO-2506-1', 'BIO-2002-1'], merknad: 'fiskefysiologi, innføring i fiskebiologi og dyrefysiologi, alle 10 sp på 2000-nivå' },
+          { entryId: 'nord_akvakultur2', emnekoder: ['BIO5001-1', 'BIO5026-1'], merknad: '«Fiskefysiologi»; BIO5001 (10 sp) er erstattet av BIO5026 (7,5 sp) fra 2025' },
+        ],
+      },
+      {
+        id: 'dyrevelferd-baerekraft', label: 'Dyrevelferd og bærekraft i akvakultur', kategori: 'Akvakultur',
+        desc: 'Velferd hos oppdrettsorganismer, velferdsindikatorer og bærekraftvurdering av oppdrettsnæringen.',
+        note: 'Nord er ikke koblet: programmet har ingen velferdsemne for akvatiske dyr – DR443F og BIO5024 er forsøksdyrlære og dekker et annet formål. NMBUs AQX251 er obligatorisk og kombinerer bærekraft og velferd i ett emne.',
+        links: [
+          { entryId: 'nmbu_akvakultur2', emnekoder: ['AQX251-1'], merknad: 'bærekraft og dyrevelferd i akvakultur, 5 sp, obligatorisk (20 kandidater i 2025)' },
+          { entryId: 'uit_akvamedisin2', emnekoder: ['BIO-3503-1', 'BIO-3613-1'], merknad: '«Aquatic Animal Welfare» (5 sp) + fiskevelferd i havbruk (5 sp)' },
+          { entryId: 'uit_fiskeri_havbruk2', emnekoder: ['BIO-3503-1', 'SVF-3650-1'], merknad: 'samme velferdsemne som akvamedisin, i hovedsak tatt i 2021–2022; SVF-3650 er bærekraftig oppdrett av lavtrofiske arter' },
+        ],
+      },
+      {
+        id: 'produktkvalitet-sjomat', label: 'Produktkvalitet og sjømat', kategori: 'Akvakultur',
+        desc: 'Kvalitet, foredling og trygghet i sjømat- og akvakulturprodukter.',
+        note: 'Nord har ingen emner i sjømat eller produktkvalitet og er ikke koblet. UiTs BIO-3607 «Matvaretrygghet» er det samme emnet for begge UiT-programmene, men med ulik vekt: det er obligatorisk i akvamedisin og valgfritt i fiskeri- og havbruksvitenskap, der kandidattallet har falt kraftig.',
+        links: [
+          { entryId: 'nmbu_akvakultur2', emnekoder: ['AQQ253-1', 'MVI320-1'], merknad: 'produktkvalitet akvakultur (5 sp) + fisketeknologi (10 sp)' },
+          { entryId: 'uit_fiskeri_havbruk2', emnekoder: ['FSK-3004-1', 'BIO-3607-1'], merknad: 'næringsmiddelkunnskap (10 sp, vokst kraftig i 2025) + matvaretrygghet' },
+          { entryId: 'uit_akvamedisin2', emnekoder: ['BIO-3607-1'], merknad: 'matvaretrygghet, 10 sp, obligatorisk' },
+        ],
+      },
+      {
+        id: 'avl-genomikk', label: 'Avl, genetikk og genomikk', kategori: 'Akvakultur',
+        desc: 'Avlsarbeid og genetikk hos oppdrettsarter, og genomiske og bioinformatiske verktøy for akvatiske arter.',
+        note: 'Koblingen er tematisk: NMBUs emner handler om avl og genetikk i oppdrett, mens Nords emne er akvagenomikk og bioinformatikk. Begge sider har få kandidater, og NMBUs AQB270 hadde ingen kandidater etter 2022. UiT-programmene har ikke egne avlsemner (FSK-3053 har 3 kandidater i 2022).',
+        links: [
+          { entryId: 'nmbu_akvakultur2', emnekoder: ['AQB270-1', 'AQB250-1'], merknad: 'AQB270 «Akvakultur – avl og genetikk» er erstattet av AQB250 «Bærekraftig akvakultur – avl og genetikk» fra 2022' },
+          { entryId: 'nord_akvakultur2', emnekoder: ['BI311F-1'], merknad: 'akvagenomikk og bioinformatikk, 10 sp' },
+        ],
+      },
+      {
+        id: 'masteroppgave', label: 'Masteroppgave', kategori: 'Oppgave',
+        desc: 'Selvstendig vitenskapelig arbeid som avslutter masterstudiet.',
+        note: 'Hovedvalget er 60 sp i alle fire programmene, men NMBU og UiT fiskeri og havbruk har også mindre varianter (NMBU 30 og 45 sp, UiT 30 sp), og UiT akvamedisins oppgave er femte studieår i et integrert profesjonsstudium. Nord registrerer oppgaven per studieretning, og akvakulturkoden har bare 3 kandidater i 2024 og 2025.',
+        links: [
+          { entryId: 'nmbu_akvakultur2', emnekoder: ['M60-AA-1', 'M30-AA-1', 'M60-AQFOOD-1'], merknad: 'M60-AA/M30-AA er akvakulturmasterens egne koder; M60-AQFOOD hører til fellesgraden Aquatic Food Production og har kandidater registrert på programmet fra 2024' },
+          { entryId: 'uit_fiskeri_havbruk2', emnekoder: ['FSK-3960-1', 'FSK-3960-2'], merknad: '60 sp; to versjoner av samme emnekode i perioden' },
+          { entryId: 'nord_akvakultur2', emnekoder: ['BIO5022-1', 'AK306F-1'], merknad: '60 sp masteroppgave i akvakultur; AK306F er den eldre koden (til og med 2023)' },
+          { entryId: 'uit_akvamedisin2', emnekoder: ['BIO-3955-1'], merknad: '60 sp mastergradsoppgave i akvamedisin, hele 5. studieår' },
+        ],
+      },
+    ],
+  },
+  {
+    groupId: 'biologi',
+    note: 'Gruppa rommer sju breddebiologiprogrammer og ett smalere molekylærbiologiprogram. Sammenligningen er sterkest i de klassiske innføringsemnene i biologi – cellebiologi/molekylærbiologi, genetikk og evolusjon, økologi, organismebiologi og fysiologi – der alle de sju breddeprogrammene har obligatoriske emner. Den er svakest i matematikk og kjemi, der omfanget spriker: UiB og UiB Molekylærbiologi har både matematikk, fysikk, programmering og to kjemiemner, mens UiT og Nord ikke har noe eget matematikkemne i det hele tatt (Nord har MA116F/MAT1014, som er et kombinert matematikk- og statistikkemne, og UiT dekker det kvantitative i BIO-1007 og BIO-2004). Flere institusjoner slår sammen emner som NMBU holder atskilt, og motsatt: UiO har genetikk og evolusjon i ett emne (BIOS1140), NTNU i BI2017, og Nord i BI122F/BIO1013, mens NMBU har BIO120 Genetikk og BIO223 Evolusjonsbiologi hver for seg. Derfor er «Genetikk og evolusjon» satt opp som én emnetype. Av samme grunn er artskunnskap («Organismebiologi og artsmangfold») og fysiologi skilt fra hverandre framfor å deles i zoologi og botanikk – UiB (BIO101/BIO102 Organismebiologi 1 og 2), UiO (BIOS1150 Biologisk mangfold) og NTNU (BI1002 Faunistikk og floristikk) dekker dyr, planter og sopp i de samme emnene. Ingen emnetype for bacheloroppgave er satt opp, fordi NMBU, UiO, UiB og Nord ikke har obligatorisk bacheloroppgave i biologi; det har derimot UiA (BIO300, 20 sp) og NTNU (BI2900, 15 sp – men NTNUs emne er så nytt at DBH ikke har rapportert karakterer for det). UiB Molekylærbiologi er tatt med som svakere sammenligning og mangler emner i økologi, artsmangfold, fysiologi og mikrobiologi; den er derfor bare koblet i de sju emnetypene der den faktisk har et tilsvarende emne. UiT har i 2025 lagt om studieplanen og innført nye emnekoder (BIO-1012, BIO-2019, BIO-2020, BIO-2021, BIO-2022) som ennå ikke har rapporterte karakterer i DBH; koblingene bruker derfor de gamle kodene som har tall (BIO-1103 Botanikk, BIO-1601 Innføring i mikrobiologi, BIO-2016 Plantefysiologi, BIO-2017 Økologi og BIO-2018 Genetikk, molekylærbiologi og bioinformatikk). Merk også at emnekoden BIO100 betyr tre ulike emner i gruppa: NMBUs BIO100 er Cellebiologi, UiBs BIO100 er Innføring i evolusjon og økologi, og UiAs BIO102/BIO103 er Botanikk og Zoologi. HMS-emner uten studiepoeng (UiOs HMS05xx, NTNUs HMS0001, UiTs HMS-05xx, Nords KJE1001/KJ105F, UiAs ORG001) og UiBs DIGI-nettkurs er ikke koblet, siden de ikke gir karakter A–F.',
+    courseTypes: [
+      {
+        id: 'generell-kjemi', label: 'Generell kjemi', kategori: 'Realfag',
+        desc: 'Grunnleggende kjemi: atomstruktur, binding, støkiometri, likevekt, syre-base og redoks, med laboratoriekurs.',
+        note: 'Alle åtte programmene har ett obligatorisk kjemiemne på 7,5–15 sp. Flere har byttet emnekode i perioden: UiB gikk fra KJEM110 Kjemi og energi til KJEM109 Kjemi grunnkurs, NTNU fra KJ1000/KJ1002 (15 sp) til KJ1004 (7,5 sp), og Nord fra KJ104F til KJE1002. UiOs biovitenskapsbachelor bruker fra 2025 KJM1003 Kjemi for biologer, som ennå ikke har rapporterte karakterer i DBH; KJM1101 og KJM1002 er de kodene som faktisk har tall.',
+        links: [
+          { entryId: 'nmbu_biologi', emnekoder: ['KJM100-1'] },
+          { entryId: 'uio_biovitenskap', emnekoder: ['KJM1101-1', 'KJM1002-1'], merknad: 'Generell kjemi og Innføring i kjemi. Programmet har gått over til KJM1003 Kjemi for biologer, som ikke er rapportert med karakterer.' },
+          { entryId: 'uib_biologi', emnekoder: ['KJEM109-0', 'KJEM110-0'], merknad: 'KJEM109 Kjemi grunnkurs erstattet KJEM110 Kjemi og energi fra 2023.' },
+          { entryId: 'ntnu_biologi', emnekoder: ['KJ1004-1', 'KJ1002-1', 'KJ1000-1'], merknad: 'Tre kodeversjoner av generell kjemi; KJ1002 og KJ1000 er 15 sp-versjonene, KJ1004 den gjeldende på 7,5 sp.' },
+          { entryId: 'uit_biologi', emnekoder: ['KJE-1001-1'], merknad: 'Introduksjon til kjemi og kjemisk biologi.' },
+          { entryId: 'nord_biologi', emnekoder: ['KJE1002-1', 'KJ104F-1'], merknad: 'KJE1002 Prinsipper innen kjemi og biokjemi erstattet KJ104F Grunnleggende kjemi og miljøkjemi.' },
+          { entryId: 'uia_biologi', emnekoder: ['KJ-111-1'] },
+          { entryId: 'uib_molekylaerbiologi', emnekoder: ['KJEM110-0'] },
+        ],
+      },
+      {
+        id: 'organisk-kjemi-og-biokjemi', label: 'Organisk kjemi og biokjemi', kategori: 'Realfag',
+        desc: 'Organiske forbindelsers struktur og reaksjoner, og biomolekylenes kjemi: proteiner, enzymer, karbohydrater, lipider og metabolisme.',
+        note: 'Her er forskjellene store. UiB Molekylærbiologi har mest (KJEM130 og MOL200, 20 sp), UiO og UiA har ett emne hver, mens NMBUs KJM110 Organisk kjemi og KJB200 Biokjemi begge er valgemner i biologibacheloren og derfor har få kandidater. UiT og Nord har ikke noe eget emne i organisk kjemi eller biokjemi – Nords BI132F Biokjemi og cellebiologi og BIO1018 Essensiell cellebiologi og biokjemi er ført under cellebiologi, siden cellebiologidelen dominerer.',
+        links: [
+          { entryId: 'nmbu_biologi', emnekoder: ['KJM110-1', 'KJB200-1'], merknad: 'Organisk kjemi og Biokjemi; begge valgemner i biologibacheloren, med 3 og 13 kandidater i 2025.' },
+          { entryId: 'uio_biovitenskap', emnekoder: ['BIOS1130-1'], merknad: 'Biokjemi 1; obligatorisk i studieretningen molekylærbiologi og biomedisin.' },
+          { entryId: 'uib_biologi', emnekoder: ['KJEM130-0'], merknad: 'Organisk kjemi; valgemne, ikke i den obligatoriske fellespakken.' },
+          { entryId: 'ntnu_biologi', emnekoder: ['KJ1021-1', 'TBT4102-1'], merknad: 'Organisk kjemi grunnkurs uten laboratorium og Biokjemi 1; begge i fagpakken Kjemi.' },
+          { entryId: 'uia_biologi', emnekoder: ['KJ-213-1'], merknad: 'Organisk kjemi, obligatorisk i 2. studieår.' },
+          { entryId: 'uib_molekylaerbiologi', emnekoder: ['KJEM130-0', 'MOL200-0'], merknad: 'Organisk kjemi og Metabolisme; til sammen 20 sp og gruppas klart største omfang.' },
+        ],
+      },
+      {
+        id: 'matematikk', label: 'Matematikk', kategori: 'Metode',
+        desc: 'Innføringsemne i matematikk for biologer: funksjoner, derivasjon, integrasjon og enkle modeller.',
+        note: 'UiT og Nord har ikke noe eget matematikkemne. Nords MA116F/MAT1014 er et kombinert matematikk- og statistikkemne og er koblet under statistikk i stedet. UiOs biovitenskapsbachelor har bare matematikk i studieretningen beregningsbiologi og bioinformatikk, og kandidattallene der er svært lave (3–10 per år). NTNU har to emner (brukerkurs A og B) og er den eneste med et obligatorisk andre matematikkemne.',
+        links: [
+          { entryId: 'nmbu_biologi', emnekoder: ['MATH100-1'], merknad: 'Brukerkurs i matematikk; studieplanen lar studenter med sterkt matematikkgrunnlag ta MATH121 Kalkulus i stedet, men den har nesten ingen kandidater fra dette programmet.' },
+          { entryId: 'uio_biovitenskap', emnekoder: ['MAT1050-1', 'MAT1110-1'], merknad: 'Matematikk for anvendelser 1, Kalkulus og Kalkulus og lineær algebra; bare i studieretningen beregningsbiologi, med 3–10 kandidater per år.' },
+          { entryId: 'uib_biologi', emnekoder: ['MAT101-0'], merknad: 'MAT101 Brukerkurs i matematikk I; studieplanen åpner også for MAT111 Grunnkurs i matematikk I, men det emnet har nesten ingen kandidater fra biologiprogrammet.' },
+          { entryId: 'ntnu_biologi', emnekoder: ['MA0001-1', 'MA0002-1'], merknad: 'Brukerkurs i matematikk A og B.' },
+          { entryId: 'uia_biologi', emnekoder: ['MA-168-1'], merknad: 'Matematikk for biologer.' },
+          { entryId: 'uib_molekylaerbiologi', emnekoder: ['MAT101-0'], merknad: 'MAT101 Brukerkurs i matematikk I; MAT111 er alternativet, men har svært få kandidater.' },
+        ],
+      },
+      {
+        id: 'statistikk', label: 'Statistikk og studiedesign', kategori: 'Metode',
+        desc: 'Beskrivende statistikk, sannsynlighet, hypotesetesting, regresjon og planlegging av biologiske forsøk.',
+        note: 'Alle åtte programmene har minst ett statistikkemne. NTNU har to (et brukerkurs og et biologispesifikt modelleringsemne) og NMBU to (STAT100 Statistikk og det mer dataanalysenære STIN100, som her er ført under programmering og dataanalyse). Nords emner blander matematikk, statistikk og vitenskapelig metode, og flere kodeversjoner har avløst hverandre i perioden.',
+        links: [
+          { entryId: 'nmbu_biologi', emnekoder: ['STAT100-1'] },
+          { entryId: 'uio_biovitenskap', emnekoder: ['STK1000-1'], merknad: 'Innføring i anvendt statistikk.' },
+          { entryId: 'uib_biologi', emnekoder: ['STAT101-0'], merknad: 'Elementær statistikk.' },
+          { entryId: 'ntnu_biologi', emnekoder: ['ST0103-1', 'ST2304-1'], merknad: 'Brukerkurs i statistikk og Statistisk modellering for biologer/bioteknologer.' },
+          { entryId: 'uit_biologi', emnekoder: ['BIO-2004-1', 'BIO-1007-1'], merknad: 'Studiedesign og dataanalyse i biologi og Kvantitative metoder; UiT har ikke noe eget matematikkemne, så disse dekker også det kvantitative grunnlaget.' },
+          { entryId: 'nord_biologi', emnekoder: ['MA116F-1', 'MAT1014-1', 'BI224F-1', 'MET1006-1'], merknad: 'MA116F og MAT1014 er kombinerte matematikk- og statistikkemner; BI224F og MET1006 Vitenskapelige metoder er to kodeversjoner av metodeemnet.' },
+          { entryId: 'uia_biologi', emnekoder: ['MA-143-1'], merknad: 'Biostatistikk.' },
+          { entryId: 'uib_molekylaerbiologi', emnekoder: ['STAT101-0'] },
+        ],
+      },
+      {
+        id: 'programmering-og-dataanalyse', label: 'Programmering og biologisk dataanalyse', kategori: 'Metode',
+        desc: 'Innføring i programmering og beregningsmodeller anvendt på biologiske data, som regel i Python eller R.',
+        note: 'UiT, Nord og UiA har ikke noe eget programmeringsemne. UiBs INF100 er fellesemnet for hele realfagsfakultetet og har derfor langt flere kandidater enn programmets egne studenter. NTNUs BI1014 Kvantitativ biologi er så nytt at DBH ikke har rapportert karakterer; TDT4110 er koblet i stedet, men bare med 10–15 kandidater fra biologiprogrammet.',
+        links: [
+          { entryId: 'nmbu_biologi', emnekoder: ['STIN100-1'], merknad: 'Biologisk dataanalyse; obligatorisk og programmeringsnært (R).' },
+          { entryId: 'uio_biovitenskap', emnekoder: ['BIOS1100-1', 'BIOS1101-1'], merknad: 'Innføring i beregningsmodeller for biovitenskap; BIOS1101 erstattet BIOS1100 fra 2025.' },
+          { entryId: 'uib_biologi', emnekoder: ['INF100-0'], merknad: 'Innføring i programmering (Programmering I).' },
+          { entryId: 'ntnu_biologi', emnekoder: ['TDT4110-1'], merknad: 'Informasjonsteknologi, grunnkurs; valgemne med få kandidater fra biologiprogrammet.' },
+          { entryId: 'uib_molekylaerbiologi', emnekoder: ['INF100-0'] },
+        ],
+      },
+      {
+        id: 'cellebiologi-og-molekylaerbiologi', label: 'Cellebiologi og molekylærbiologi', kategori: 'Biologi',
+        desc: 'Cellens oppbygning og funksjon, DNA, genuttrykk, proteinsyntese og molekylærbiologiske metoder.',
+        note: 'Dette er den best sammenlignbare emnetypen i gruppa: alle åtte programmene har minst ett obligatorisk emne. Omfanget varierer fra 7,5 sp (NTNUs enkeltemner) til 15 sp (NTNU BI1001, UiT MBI-1002, Nord BIO1018). NMBUs BIO210 Molekylærbiologi og BIO200 Molekylærgenetikk i eukaryoter er alternativer der studenten må ta minst ett av dem.',
+        links: [
+          { entryId: 'nmbu_biologi', emnekoder: ['BIO100-1', 'BIO210-1', 'BIO200-1'], merknad: 'Cellebiologi (obligatorisk) samt Molekylærbiologi og Molekylærgenetikk i eukaryoter, der studieplanen krever minst ett av de to.' },
+          { entryId: 'uio_biovitenskap', emnekoder: ['BIOS1110-1', 'BIOS2910-1', 'BIOS3700-1'], merknad: 'Celle- og molekylærbiologi, Molekylærbiologi og Cellebiologi 2; de to siste er obligatoriske i studieretningen molekylærbiologi og biomedisin.' },
+          { entryId: 'uib_biologi', emnekoder: ['MOL100-0'], merknad: 'Innføring i molekylærbiologi; UiB har ikke noe eget cellebiologiemne, cellebiologien ligger i BIO103 (ført under genetikk og evolusjon).' },
+          { entryId: 'ntnu_biologi', emnekoder: ['BI1001-1', 'BI2012-1', 'BI2014-1'], merknad: 'Celle- og molekylærbiologi (15 sp, obligatorisk) samt valgemnene Cellebiologi og Molekylærbiologi.' },
+          { entryId: 'uit_biologi', emnekoder: ['MBI-1002-1'], merknad: 'Celle- og molekylærbiologi, 15 sp.' },
+          { entryId: 'nord_biologi', emnekoder: ['BI132F-1', 'BI210F-1', 'BIO2009-1', 'BIO1018-1'], merknad: 'BI132F Biokjemi og cellebiologi og BIO1018 Essensiell cellebiologi og biokjemi dekker også biokjemi; BI210F og BIO2009 er to kodeversjoner av Molekylær cellebiologi.' },
+          { entryId: 'uia_biologi', emnekoder: ['BIO111-1', 'ML-208-1'], merknad: 'Cellebiologi med genetikk og Molekylærbiologi.' },
+          { entryId: 'uib_molekylaerbiologi', emnekoder: ['MOL100-0', 'MOL201-0', 'MOL102-0', 'MOL222-0'], merknad: 'Innføring i molekylærbiologi, Molekylær cellebiologi og de to eksperimentelle laboratorieemnene; MOL222 avløste MOL221.' },
+        ],
+      },
+      {
+        id: 'genetikk-og-evolusjon', label: 'Genetikk og evolusjon', kategori: 'Biologi',
+        desc: 'Arvelære, populasjonsgenetikk, seleksjon, artsdannelse og livets evolusjonshistorie.',
+        note: 'Genetikk og evolusjon er slått sammen til én emnetype fordi fire av programmene underviser dem i det samme emnet (UiO BIOS1140 Evolusjon og genetikk, NTNU BI2017 Genetikk og evolusjon, Nord BI122F/BIO1013 Genetikk og evolusjon, UiT BIO-1010 Evolusjon og adferd). NMBU og UiA holder dem atskilt. UiB Molekylærbiologi har bare genetikkdelen (MOL103) og ingen evolusjonsbiologi; UiB Biologi har evolusjon inne i BIO100 Innføring i evolusjon og økologi, som er ført under økologi, og har bare genetikkdelen som eget emne (BIO103).',
+        links: [
+          { entryId: 'nmbu_biologi', emnekoder: ['BIO120-1', 'BIO223-1'], merknad: 'Genetikk og Evolusjonsbiologi, begge 10 sp og obligatoriske.' },
+          { entryId: 'uio_biovitenskap', emnekoder: ['BIOS1140-1'], merknad: 'Evolusjon og genetikk; obligatorisk i studieretningen biomangfold, økologi og evolusjon.' },
+          { entryId: 'uib_biologi', emnekoder: ['BIO103-0', 'BIO210-0'], merknad: 'BIO103 Cellebiologi og genetikk er den obligatoriske genetikkdelen; BIO210 Evolusjonsbiologi er et valgemne med svært få kandidater.' },
+          { entryId: 'ntnu_biologi', emnekoder: ['BI2017-1'], merknad: 'Genetikk og evolusjon.' },
+          { entryId: 'uit_biologi', emnekoder: ['BIO-2018-1', 'BIO-1008-1', 'BIO-1010-1'], merknad: 'Genetikk, molekylærbiologi og bioinformatikk samt Evolusjon; BIO-1010 Evolusjon og adferd erstattet BIO-1008 fra 2025.' },
+          { entryId: 'nord_biologi', emnekoder: ['BI122F-1', 'BIO1013-1'], merknad: 'To kodeversjoner av Genetikk og evolusjon; BIO1013 er den nye.' },
+          { entryId: 'uia_biologi', emnekoder: ['BIO113-1'], merknad: 'Evolusjonsbiologi; genetikken ligger i BIO111 Cellebiologi med genetikk, ført under cellebiologi.' },
+          { entryId: 'uib_molekylaerbiologi', emnekoder: ['MOL103-0', 'MOL213-0'], merknad: 'Genstruktur, -funksjon og applikasjoner og Utviklingsgenetikk; ingen evolusjonsbiologi i programmet.' },
+        ],
+      },
+      {
+        id: 'mikrobiologi', label: 'Mikrobiologi', kategori: 'Biologi',
+        desc: 'Mikroorganismers oppbygning, vekst, fysiologi og rolle i miljø og næringsliv.',
+        note: 'Bare halvparten av gruppa har mikrobiologi. UiB Biologi, UiA og UiB Molekylærbiologi har ikke noe eget mikrobiologiemne, og UiOs BIOS3910 er et valgemne med 6–25 kandidater per år. Nords emner er akvatisk mikrobiologi og har dermed en marin vinkling NMBUs generelle emner ikke har.',
+        links: [
+          { entryId: 'nmbu_biologi', emnekoder: ['BIO130-1', 'BIO230-1'], merknad: 'Generell mikrobiologi I (obligatorisk) og II (valgemne med få kandidater).' },
+          { entryId: 'uio_biovitenskap', emnekoder: ['BIOS3910-1'], merknad: 'Mikrobiologi; valgemne.' },
+          { entryId: 'ntnu_biologi', emnekoder: ['TBT4110-1'], merknad: 'Mikrobiologi; valgemne i fagpakken.' },
+          { entryId: 'uit_biologi', emnekoder: ['BIO-1601-1'], merknad: 'Innføring i mikrobiologi, 5 sp.' },
+          { entryId: 'nord_biologi', emnekoder: ['BIO2001-1', 'BIO2012-1'], merknad: 'To kodeversjoner av Akvatisk mikrobiologi; marin vinkling.' },
+        ],
+      },
+      {
+        id: 'okologi', label: 'Økologi', kategori: 'Biologi',
+        desc: 'Populasjons-, samfunns- og økosystemøkologi, samspillet mellom organismer og miljø, og biologisk mangfold i et økologisk perspektiv.',
+        note: 'Alle sju breddebiologiprogrammene har obligatorisk økologi; UiB Molekylærbiologi har ingen. Omfanget varierer mye: UiTs BIO-2017 er 20 sp og NTNUs BI1003 er 15 sp (og dekker også atferd, evolusjon og bærekraft), mens NMBUs ECOL100 er 5 sp og følges opp av valgemnet ECOL200. Nords BI206F Marinbiologi er tatt med fordi programmet er marint innrettet og emnet dekker marin økologi.',
+        links: [
+          { entryId: 'nmbu_biologi', emnekoder: ['ECOL100-1', 'ECOL200-1'], merknad: 'Grunnleggende økologi (5 sp, obligatorisk) og Generell økologi (10 sp, valgemne).' },
+          { entryId: 'uio_biovitenskap', emnekoder: ['BIOS2100-1'], merknad: 'Generell økologi; obligatorisk i studieretningen biomangfold, økologi og evolusjon.' },
+          { entryId: 'uib_biologi', emnekoder: ['BIO100-0', 'BIO201-0'], merknad: 'BIO100 Innføring i evolusjon og økologi er obligatorisk; BIO201 Økologi er et valgemne.' },
+          { entryId: 'ntnu_biologi', emnekoder: ['BI1003-1', 'BI2033-1', 'BI2034-1'], merknad: 'Økologi, atferd, evolusjon og bærekraft (15 sp, obligatorisk) samt valgemnene Populasjonsøkologi og Samfunnsøkologi og økosystemer.' },
+          { entryId: 'uit_biologi', emnekoder: ['BIO-2017-1', 'BIO-1011-1'], merknad: 'Økologi (20 sp) og Økologi og biologisk mangfold; BIO-1011 er det nye innføringsemnet fra 2025.' },
+          { entryId: 'nord_biologi', emnekoder: ['BI123F-1', 'BIO1017-1', 'BI230F-1', 'BI206F-1'], merknad: 'To kodeversjoner av Økologi, samt Økologi 2 og Marinbiologi.' },
+          { entryId: 'uia_biologi', emnekoder: ['BIO206-1', 'BIO201-1', 'BIO207-1'], merknad: 'Generell økologi (obligatorisk) samt Akvatisk økologi og Marin bevaringsbiologi.' },
+        ],
+      },
+      {
+        id: 'organismebiologi-og-artsmangfold', label: 'Organismebiologi og artsmangfold', kategori: 'Biologi',
+        desc: 'Systematikk, morfologi og artskunnskap hos dyr, planter, sopp og alger, med feltkurs.',
+        note: 'Emnetypen er satt opp samlet framfor delt i zoologi og botanikk, fordi UiO (BIOS1150), UiB (BIO101 og BIO102) og NTNU (BI1002) dekker dyr, planter og sopp i de samme emnene. NMBU, UiT, Nord og UiA har derimot atskilte zoologi- og botanikkemner, og der er flere koder koblet. UiB Molekylærbiologi har ingen emner av denne typen.',
+        links: [
+          { entryId: 'nmbu_biologi', emnekoder: ['ZOOL100-1', 'BOT100-1', 'ZOOL210-1', 'BIO140-1'], merknad: 'Generell zoologi og Plantediversitet (med felles feltkurs i juniblokk), innføringsemnet BIO140 og valgemnet ZOOL210 Virveldyr.' },
+          { entryId: 'uio_biovitenskap', emnekoder: ['BIOS1150-1', 'BIOS2210-1'], merknad: 'Biologisk mangfold (obligatorisk) og valgemnet Terrestrisk zoologi.' },
+          { entryId: 'uib_biologi', emnekoder: ['BIO101-0', 'BIO102-0'], merknad: 'Organismebiologi 1 og 2; til sammen 20 sp og gruppas største omfang sammen med NTNUs.' },
+          { entryId: 'ntnu_biologi', emnekoder: ['BI1002-1', 'BI2001-1', 'BI2043-1'], merknad: 'Faunistikk og floristikk (15 sp, med obligatoriske ekskursjoner) samt Biosystematikk og biomangfold og Biodiversitet og bevaringsbiologi.' },
+          { entryId: 'uit_biologi', emnekoder: ['BIO-1104-1', 'BIO-1103-1', 'BIO-1105-1'], merknad: 'Zoologi, Botanikk og Innføring i biologi; de to første er erstattet av BIO-1012 i den nye studieplanen, som ennå ikke har rapporterte karakterer.' },
+          { entryId: 'nord_biologi', emnekoder: ['BIO1015-1', 'BIO1016-1', 'BIO1019-1', 'BIO1001-1', 'BIO1000-1'], merknad: 'Biologisk mangfold I–III (protister og planter, invertebrater, vertebrater) i flere kodeversjoner.' },
+          { entryId: 'uia_biologi', emnekoder: ['BIO102-1', 'BIO103-1', 'BIO112-1'], merknad: 'Botanikk, Zoologi og Introduksjon til biologien.' },
+        ],
+      },
+      {
+        id: 'fysiologi', label: 'Fysiologi', kategori: 'Biologi',
+        desc: 'Organismenes funksjon: organsystemer, stoffskifte, regulering og tilpasning hos dyr og planter.',
+        note: 'Alle sju breddebiologiprogrammene har obligatorisk fysiologi, men innholdet spriker. NTNU og UiT har både dyre- og plantefysiologi som egne emner, NMBU har dyrefysiologi (HFX201) og plantefysiologi (BOT130) hver for seg, mens UiO (BIOS1120), UiB (BIO104 Komparativ fysiologi) og Nord (BI105F Zoofysiologi) bare har dyrefysiologi. UiA har i tillegg humanfysiologi og anatomi. UiB Molekylærbiologi har ingen fysiologiemner.',
+        links: [
+          { entryId: 'nmbu_biologi', emnekoder: ['HFX201-1', 'BOT130-1'], merknad: 'Fysiologi (dyrefysiologi, 10 sp) og Grunnleggende plantefysiologi (5 sp).' },
+          { entryId: 'uio_biovitenskap', emnekoder: ['BIOS1120-1', 'BIOS3800-1'], merknad: 'Fysiologi (obligatorisk) og valgemnet Humanfysiologi.' },
+          { entryId: 'uib_biologi', emnekoder: ['BIO104-0'], merknad: 'Komparativ fysiologi; UiB har ikke noe eget plantefysiologiemne.' },
+          { entryId: 'ntnu_biologi', emnekoder: ['BI1006-1', 'BI1007-1', 'BI2024-1'], merknad: 'Dyrenes struktur og funksjon og Plantenes struktur og funksjon (begge obligatoriske) samt Menneskets anatomi og fysiologi.' },
+          { entryId: 'uit_biologi', emnekoder: ['BIO-2002-1', 'BIO-2016-1'], merknad: 'Dyrefysiologi og Plantefysiologi.' },
+          { entryId: 'nord_biologi', emnekoder: ['BI105F-1'], merknad: 'Zoofysiologi; erstattes av BIO1026 Zoofysiologi og embryologi, som ennå ikke har rapporterte karakterer.' },
+          { entryId: 'uia_biologi', emnekoder: ['BIO204-1', 'BIO104-1'], merknad: 'Zoofysiologi og Human fysiologi og anatomi.' },
+        ],
+      },
+      {
+        id: 'exphil', label: 'Examen philosophicum', kategori: 'Ex.phil',
+        desc: 'Fellesemnet i vitenskapsfilosofi, etikk og argumentasjonslære.',
+        note: 'Alle åtte programmene har ex.phil, men NMBU og UiB tilbyr to eksamensformer av samme emne (seminarversjon og skoleeksamen), og NMBU har i tillegg en engelsk versjon. Nords FIL1000 har ikke rapporterte karakterer etter 2023.',
+        links: [
+          { entryId: 'nmbu_biologi', emnekoder: ['PHI101-1', 'PHI100-1'], merknad: 'PHI101 seminarversjon er hovedvalget i biologibacheloren; PHI100 er skoleeksamensversjonen av samme emne.' },
+          { entryId: 'uio_biovitenskap', emnekoder: ['EXPHIL03-1'] },
+          { entryId: 'uib_biologi', emnekoder: ['EXPHIL-MNSEM-0', 'EXPHIL-MNEKS-0'], merknad: 'Seminarmodell og skoleeksamen av samme emne.' },
+          { entryId: 'ntnu_biologi', emnekoder: ['EXPH0300-1'], merknad: 'Examen philosophicum for naturvitenskap og teknologi.' },
+          { entryId: 'uit_biologi', emnekoder: ['FIL-0700-1'], merknad: 'Examen philosophicum, Tromsøvarianten.' },
+          { entryId: 'nord_biologi', emnekoder: ['FIL1000-1'], merknad: 'Ingen rapporterte karakterer etter 2023.' },
+          { entryId: 'uia_biologi', emnekoder: ['EX-100-1'] },
+          { entryId: 'uib_molekylaerbiologi', emnekoder: ['EXPHIL-MNSEM-0', 'EXPHIL-MNEKS-0'] },
+        ],
+      },
+    ],
+  },
+  {
+    groupId: 'biologi2',
+    note: 'Toårige biologimastere har svært liten felles kjerne: alle seks programmene består i hovedsak av valgfrie emner rundt en masteroppgave på 60 sp, og hvert program deler emnene opp i studieretninger som ikke finnes hos de andre. Koblingene under gjelder derfor metode- og skriveemner, masteroppgaven og de tre disiplinområdene der flere program faktisk har emner med nok kandidater: økologi/bevaringsbiologi, evolusjon og populasjonsgenetikk, og molekylærbiologi/genomikk. Emner er vurdert ut fra antall kandidater fra programmet i 2024 eller 2025 (minst ca. 10); for NMBUs og Nords små program er kravet myknet opp til summen for 2021–2025, siden disse programmene sjelden har mer enn 10–20 kandidater på et emne i det hele tatt. Nords «Biovitenskap» er én DBH-programkode som dekker alle studieretningene (akvakultur, genomikk, marin økologi, husdyrvitenskap og terrestrisk økologi), og emnelisten er identisk med den som brukes i gruppene husdyr2 og akvakultur2 – Nords tall er derfor ikke rene biologitall. Fire temaer er bevisst ikke koblet: HMS- og sikkerhetsemner (UiO, UiT, NTNU og Nord har 0 sp-emner, NMBU og UiB har ingen tilsvarende i emnelisten), forsøksdyrlære (UiB LAS301/LAS303, Nord DR443F/BIO5024, UiO MF9495P, NTNU NEVR8014, UiT HEL-6320 – NMBU har ikke et slikt emne), marin og akvatisk økologi (stort tilbud ved UiO, UiB og UiT, men ingen tilsvarende emner i NMBUs biologimaster) og fysiologi (alle programmene har fysiologiemner, men samtlige har for få kandidater til at karakterfordelingen kan sammenlignes).',
+    courseTypes: [
+      {
+        id: 'forskningsmetode', label: 'Forskningsmetode, studiedesign og statistikk', kategori: 'Metode',
+        desc: 'Vitenskapelig metode, forsøksdesign og statistisk analyse av biologiske data.',
+        note: 'Programmene løser dette svært ulikt: UiB og UiT har ett obligatorisk metodeemne for alle, NTNU har to atskilte 7,5 sp-emner, og UiO har ikke noe felles metodeemne i det hele tatt.',
+        links: [
+          { entryId: 'nmbu_biologi2', emnekoder: ['MINA310-1', 'ECOL300-1'], merknad: '5 sp «Naturvitenskapelig metode»; ECOL300 (2021–2022) er erstattet av MINA310 fra 2023' },
+          { entryId: 'uio_biovitenskap2', emnekoder: ['BIOS4000-1', 'STK4900-1'], merknad: 'UiO har ikke ett felles metodeemne; BIOS4000 har ingen registrerte kandidater fra programmet etter 2023, og STK4900 er et statistikkemne fra Matematisk institutt' },
+          { entryId: 'uib_biologi2', emnekoder: ['BIO300B-0'], merknad: '5 sp biostatistikk, obligatorisk for alle' },
+          { entryId: 'ntnu_biologi2', emnekoder: ['BI3052-1', 'BI3051-1'], merknad: 'forsøksdesign + kvantitative analyser i økologi og evolusjon, 7,5 sp hver' },
+          { entryId: 'uit_biologi2', emnekoder: ['BIO-3012-1'], merknad: '10 sp, obligatorisk for flere av studieretningene' },
+          { entryId: 'nord_biovitenskap2', emnekoder: ['BI300F-1', 'MET5019-1'], merknad: 'BI300F kombinerer forskningsmetode og vitenskapelig kommunikasjon; kandidattallet falt fra 30 i 2024 til 5 i 2025 samtidig som MET5019 kom til med 22' },
+        ],
+      },
+      {
+        id: 'akademisk-skriving', label: 'Akademisk skriving og innføring i masterstudiet', kategori: 'Metode',
+        desc: 'Innføring i vitenskapelig arbeidsmåte, akademisk skriving og formidling ved starten av masterstudiet.',
+        note: 'Nord er ikke koblet her fordi den vitenskapelige kommunikasjonen ligger inne i det samme emnet som forskningsmetoden (BI300F/MET5019), som er koblet under forskningsmetode. UiOs emne er et formidlingsemne (vitenskapsjournalistikk) og dekker et bredere felt enn de andres skrive- og innføringsemner.',
+        links: [
+          { entryId: 'nmbu_biologi2', emnekoder: ['BIO302-1', 'MTH300-1'], merknad: 'BIO302 er fakultetets innføringsemne for masterstudenter (fra 2024); MTH300 er et 5 sp web-kurs i planlegging og skriving av masteroppgaven' },
+          { entryId: 'uio_biovitenskap2', emnekoder: ['MNKOM4000-1'], merknad: '10 sp formidling og vitenskapsjournalistikk' },
+          { entryId: 'uib_biologi2', emnekoder: ['BIO300A-0'], merknad: '5 sp akademisk skriving, obligatorisk for alle' },
+          { entryId: 'ntnu_biologi2', emnekoder: ['BI3086-1'], merknad: '«How to do Science», 0 sp, obligatorisk for alle fire studieretninger' },
+          { entryId: 'uit_biologi2', emnekoder: ['BIO-3529-1', 'BIO-3529-2'], merknad: '«Academic skills», 5 sp; to versjoner av samme emne i perioden' },
+        ],
+      },
+      {
+        id: 'okologi', label: 'Økologi og bevaringsbiologi', kategori: 'Biologi',
+        desc: 'Økologisk teori, samspill i økosystemer, bevaringsbiologi og restaurering av natur.',
+        note: 'Dette er en paraply: programmene har ingen felles økologiemne, men hvert av dem tilbyr økologiemner på masternivå med ulik innretning. NMBUs emner er anvendte (restaurering og bevaring), UiB og NTNU har generelle og videregående økologiemner, UiT har samspill i økosystemer, og Nords emner er økosystemfunksjon og landskapsøkologi. UiO er ikke koblet: økologitilbudet er delt i mange små 10 sp-emner der ingen enkeltkode har nok kandidater fra programmet.',
+        links: [
+          { entryId: 'nmbu_biologi2', emnekoder: ['ECOL350-1', 'NATF300-1'], merknad: 'restaureringsøkologi (5 sp) og bevaringsbiologi (5 sp); begge er valgemner med få kandidater fra programmet' },
+          { entryId: 'uib_biologi2', emnekoder: ['BIO201-0', 'BIO301-0'], merknad: 'generell økologi + aktuelle tema i biodiversitet, evolusjon og økologi' },
+          { entryId: 'ntnu_biologi2', emnekoder: ['BI3106-1', 'BI3082-1'], merknad: 'økologisk og evolusjonær dynamikk (nytt fra 2025) + avansert bevaringsbiologi' },
+          { entryId: 'uit_biologi2', emnekoder: ['BIO-3505-1'], merknad: '«Ecological Interactions», 10 sp' },
+          { entryId: 'nord_biovitenskap2', emnekoder: ['BI313F-1', 'BIO5020-1', 'BIO5032-1'], merknad: 'funksjon og stabilitet i økosystemer + landskapsøkologi i naturforvaltningen (BIO5020 erstattet av BIO5032 fra 2025)' },
+        ],
+      },
+      {
+        id: 'evolusjon-populasjonsgenetikk', label: 'Evolusjon og populasjonsgenetikk', kategori: 'Biologi',
+        desc: 'Evolusjonsbiologi, populasjonsgenetikk og molekylær evolusjon.',
+        note: 'UiO og UiT er ikke koblet: UiO deler feltet i flere små emner (blant annet BIOS4100 Evolusjon, BIOS5114 Molekylær evolusjon og BIOS5213 Fylogeni og klassifikasjon) uten at noen av dem har nok kandidater fra programmet, og UiT har ikke et eget evolusjonsemne på masternivå.',
+        links: [
+          { entryId: 'nmbu_biologi2', emnekoder: ['BIO321-1'], merknad: '10 sp, obligatorisk for studieretningen Evolusjonsbiologi og molekylær økologi' },
+          { entryId: 'uib_biologi2', emnekoder: ['BIO210-0'], merknad: '10 sp evolusjonsbiologi' },
+          { entryId: 'ntnu_biologi2', emnekoder: ['BI3083-1'], merknad: 'evolusjonær og økologisk genetikk, 7,5 sp' },
+          { entryId: 'nord_biovitenskap2', emnekoder: ['BI317F-1', 'BIO5018-1'], merknad: '«Evolusjonær genetikk»; BI317F er erstattet av BIO5018 (7,5 sp) fra 2025' },
+        ],
+      },
+      {
+        id: 'molekylaerbiologi-genomikk', label: 'Molekylærbiologi og genomikk', kategori: 'Biologi',
+        desc: 'Molekylær- og cellebiologi, genomikk og bioinformatiske analyser av sekvensdata.',
+        note: 'UiB er ikke koblet fordi molekylærbiologien der ligger i et eget masterprogram (molekylærbiologi), ikke i biologimasteren; biologistudentenes molekylæremner (BIO214, BIO217, BIO219) har for få kandidater. UiT er heller ikke koblet, av samme grunn (BIO-3018 Environmental Molecular Genetics har svært få kandidater).',
+        links: [
+          { entryId: 'nmbu_biologi2', emnekoder: ['BIO322-1', 'BIO326-1'], merknad: 'avanserte emner i genomikk (obligatorisk for studieretningen Genombiologi) + genomsekvensering' },
+          { entryId: 'uio_biovitenskap2', emnekoder: ['BIOS5610-1', 'BIOS4010-1', 'BIOS-IN5410-1'], merknad: 'eukaryote gener og genomer, arbeidsmetoder i molekylærbiologi og biokjemi I, bioinformatikk for molekylærbiologi' },
+          { entryId: 'ntnu_biologi2', emnekoder: ['BI3016-1'], merknad: 'molekylær cellebiologi, 7,5 sp, obligatorisk for studieretningen Cell and Molecular Biology' },
+          { entryId: 'nord_biovitenskap2', emnekoder: ['BI311F-1', 'BIO5025-1'], merknad: 'akvagenomikk og bioinformatikk + genomsammenstilling og annotering; Nords emner er rettet mot akvatiske arter' },
+        ],
+      },
+      {
+        id: 'masteroppgave', label: 'Masteroppgave', kategori: 'Oppgave',
+        desc: 'Selvstendig vitenskapelig arbeid som avslutter masterstudiet.',
+        note: 'Alle seks programmene har masteroppgave på 60 sp, altså halve graden – i motsetning til flere av de andre BIOVIT-gruppene. Nord registrerer oppgaven med egen emnekode per studieretning, og kandidatene fordeler seg derfor på flere små koder.',
+        links: [
+          { entryId: 'nmbu_biologi2', emnekoder: ['M60-BIOL-1', 'M60-ECOL-1'], merknad: 'M60-BIOL er dagens kode; M60-ECOL er den eldre oppgavekoden for økologiløpet' },
+          { entryId: 'uio_biovitenskap2', emnekoder: ['BIOS5960-1'] },
+          { entryId: 'uib_biologi2', emnekoder: ['BIO399-0'] },
+          { entryId: 'ntnu_biologi2', emnekoder: ['BI3900-1'], merknad: 'registrert i fire deler gjennom studiet; studiepoengene gis samlet i 4. semester' },
+          { entryId: 'uit_biologi2', emnekoder: ['BIO-3950-1'] },
+          { entryId: 'nord_biovitenskap2', emnekoder: ['BIO5010-1', 'BI309F-1', 'BIO5011-1'], merknad: 'egne oppgavekoder for terrestrisk økologi og naturforvaltning, marin økologi og genomikk; oppgavene i akvakultur ligger i gruppen akvakultur2' },
+        ],
+      },
+    ],
+  },
+  {
+    groupId: 'husdyr',
+    note: 'Gruppa rommer fire ulike utdanningsfamilier. NMBUs og Nords bachelorer i husdyrvitenskap er de to direkte konkurrentene og har nesten identisk faglig kjerne: husdyrbiologi, ernæring, avl, etologi og produksjonsemner. INNs agronomibachelor på Blæstad er et landbruksprogram der husdyr bare er én av flere deler – den har tre husdyremner (AGR2203 Husdyrernæring, AGR2302 Husdyrhold og 6JB242 Husdyrmiljø og innendørsmekanisering) og er derfor bare koblet i seks av tolv emnetyper. Nords dyrepleiebachelor er tatt med som svakere sammenligning: den deler anatomi, fysiologi, atferd og ernæring med husdyrvitenskapen, men har ingen produksjonsemner, ingen avl og ingen landbruksøkonomi, og er i stedet bygd rundt klinisk dyrepleie, sykdomslære, farmakologi og nesten et helt studieår med praksis. Merk at NMBUs husdyrbachelor er et lite program: de fleste emnene har 10–23 kandidater i 2024/2025, så terskelen er senket til summen for 2021–2025 for flere koblinger. Sammenligningen er svakest i kjemi (INN har ikke noe eget kjemiemne) og i ex.phil (INN har ingen, og Nords FIL1001 har ikke rapporterte karakterer etter 2023). To emnetyper er utelatt med vilje: husdyrbygg og innendørsmekanisering, fordi NMBU ikke har noe tilsvarende obligatorisk emne med rapporterte karakterer (HET212 Dyrenes termoregulering og ventilasjon i husdyrrom har tre kandidater), mens Nord har fire emner (HUS2000, HUS2001, HUS2005) og INN har 6JB242; og klinisk sykdomslære og farmakologi, som bare finnes hos Nord dyrepleie. NMBUs HFX255/HFX256/HFE205 finnes i to kodeversjoner hver etter at emnene ble utvidet, og begge er koblet.',
+    courseTypes: [
+      {
+        id: 'generell-kjemi', label: 'Generell kjemi', kategori: 'Realfag',
+        desc: 'Grunnleggende kjemi: atomstruktur, binding, støkiometri, likevekt og syre-base, med laboratoriekurs.',
+        note: 'INNs agronomibachelor har ikke noe eget kjemiemne; kjemien der inngår i AGR1101 Naturgrunnlaget og AGR2203 Husdyrernæring. NMBUs KJM100 er på 10 sp mot Nords 7,5 sp, men har bare 9 kandidater fra husdyrprogrammet i 2025 (68 i perioden 2021–2025).',
+        links: [
+          { entryId: 'nmbu_husdyr', emnekoder: ['KJM100-1'], merknad: 'Generell kjemi, 10 sp.' },
+          { entryId: 'nord_husdyr', emnekoder: ['KJE1000-1', 'BIO101-2'], merknad: 'Grunnleggende kjemi; BIO101-2 Kjemi, miljø og forurensning er den eldre kodeversjonen.' },
+          { entryId: 'nord_dyrepleie', emnekoder: ['KJE1000-1', 'KJ100F-1'], merknad: 'To kodeversjoner av Grunnleggende kjemi.' },
+        ],
+      },
+      {
+        id: 'biokjemi-og-cellebiologi', label: 'Biokjemi og cellebiologi', kategori: 'Biologi',
+        desc: 'Cellens oppbygning og funksjon og biomolekylenes kjemi: proteiner, enzymer, karbohydrater, lipider og stoffskifte.',
+        note: 'INN har ikke noe eget celle- eller biokjemiemne. NMBUs KJB100 er et rent biokjemiemne på 5 sp, mens Nords BIO1009/BIO1002 er cellebiologiemner uten biokjemidel; sammenligningen er derfor delvis.',
+        links: [
+          { entryId: 'nmbu_husdyr', emnekoder: ['KJB100-1'], merknad: 'Introduksjon til biokjemi, 5 sp.' },
+          { entryId: 'nord_husdyr', emnekoder: ['BIO1009-1'], merknad: 'Cellebiologi, 7,5 sp; ingen egen biokjemidel.' },
+          { entryId: 'nord_dyrepleie', emnekoder: ['BIO1009-1', 'BIO1002-1', 'MAR2034-1'], merknad: 'Tre kodeversjoner av Cellebiologi.' },
+        ],
+      },
+      {
+        id: 'genetikk-og-husdyravl', label: 'Genetikk og husdyravl', kategori: 'Husdyr',
+        desc: 'Arvelære, kvantitativ genetikk, seleksjon og avlsplanlegging i husdyrpopulasjoner.',
+        note: 'NMBU er den eneste i gruppa med et eget avlsemne (HFA200 Generell husdyravl, 10 sp) i tillegg til et genetikkemne. Nord dekker bare genetikkdelen, og INN har ingen husdyrgenetikk – AGR2301 Planteforedling og diversitet er plantefag og er derfor ikke koblet her.',
+        links: [
+          { entryId: 'nmbu_husdyr', emnekoder: ['BIO120-1', 'HFA200-1'], merknad: 'Genetikk (10 sp) og Generell husdyravl (10 sp).' },
+          { entryId: 'nord_husdyr', emnekoder: ['HUS1001-1'], merknad: 'Genetikk og evolusjon; ingen egen avlsdel.' },
+          { entryId: 'nord_dyrepleie', emnekoder: ['BI122F-1'], merknad: 'Genetikk og evolusjon.' },
+        ],
+      },
+      {
+        id: 'anatomi-og-fysiologi', label: 'Husdyrenes anatomi og fysiologi', kategori: 'Husdyr',
+        desc: 'Husdyrenes oppbygning og organfunksjon: fordøyelse, sirkulasjon, respirasjon, forplantning og regulering.',
+        note: 'Alle unntatt INN har et anatomi- og fysiologiemne. Omfanget er størst hos NMBU (HFX132 Husdyrbiologi og HFX201 Fysiologi, til sammen 20 sp) og hos Nord dyrepleie (DYR1004, 15 sp, med generell patologi i tillegg). Nords husdyrbachelor har 7,5 sp. INNs 6JB121 Biologi er et generelt biologiemne uten egen husdyrfysiologidel og er ikke koblet.',
+        links: [
+          { entryId: 'nmbu_husdyr', emnekoder: ['HFX132-1', 'HFX201-1'], merknad: 'Husdyrbiologi og Fysiologi.' },
+          { entryId: 'nord_husdyr', emnekoder: ['HUS1005-1', 'HUS120-1'], merknad: 'Husdyrenes anatomi og fysiologi; HUS120 Fysiologi og anatomi er den eldre kodeversjonen.' },
+          { entryId: 'nord_dyrepleie', emnekoder: ['DYR1004-1', 'BI145F-1'], merknad: 'Anatomi, fysiologi og generell patologi (15 sp) og den eldre koden Anatomi og fysiologi for dyrepleiere.' },
+        ],
+      },
+      {
+        id: 'ernaering-og-foring', label: 'Ernæring og fôring', kategori: 'Husdyr',
+        desc: 'Næringsstoffer, fordøyelse og omsetning, fôrmidler, fôrvurdering og fôrplanlegging.',
+        note: 'Den best sammenlignbare emnetypen i gruppa: alle fire programmene har ernæringsemner. Nord har mest (HUS1008 og HUS2004, i tillegg til fôrdyrkingsemnet HUS1004), NMBU har HFE200 Generell ernæring pluss grovfôr- og kraftfôremner som valgemner, og INN har ett emne på 7,5 sp. Nord dyrepleie har ernæring rettet mot kjæledyr.',
+        links: [
+          { entryId: 'nmbu_husdyr', emnekoder: ['HFE200-1', 'HFE205-1', 'HFE205-2'], merknad: 'Generell ernæring (obligatorisk) og valgemnet Grovfôr og drøvtyggerernæring i to kodeversjoner. Valgemnet HFE202 Kraftfôr er ikke koblet fordi det bare har åtte kandidater i perioden.' },
+          { entryId: 'nord_husdyr', emnekoder: ['HUS210-2', 'HUS2004-1', 'HUS1008-1', 'HUS1004-1'], merknad: 'Husdyrernæring i tre kodeversjoner (HUS210, HUS1008 Husdyrernæring 1 og HUS2004 Husdyrernæring 2) samt Fôrdyrking og fôrmidler.' },
+          { entryId: 'inn_agronomi_husdyr', emnekoder: ['AGR2203-1'], merknad: 'Husdyrernæring, 7,5 sp.' },
+          { entryId: 'nord_dyrepleie', emnekoder: ['BI247F-1'], merknad: 'Fôr og ernæring; rettet mot kjæledyr og smådyr, ikke husdyrproduksjon.' },
+        ],
+      },
+      {
+        id: 'etologi-og-dyrevelferd', label: 'Etologi og dyrevelferd', kategori: 'Husdyr',
+        desc: 'Husdyrenes atferd, atferdsbehov, stress og velferdsvurdering, og regelverket for dyrevelferd.',
+        note: 'INN har ikke noe eget etologi- eller velferdsemne. NMBU har to emner à 5 sp (HET201 Husdyretologi og HET203 Dyrevelferd), Nord ett på 7,5 sp, og Nord dyrepleie to kodeversjoner av Atferd og dyrehold.',
+        links: [
+          { entryId: 'nmbu_husdyr', emnekoder: ['HET201-1', 'HET203-1'], merknad: 'Husdyretologi og Dyrevelferd, 5 sp hver.' },
+          { entryId: 'nord_husdyr', emnekoder: ['HUS1006-1', 'HUS1000-1'], merknad: 'Dyrevelferd og etologi; HUS1000 Husdyrmiljø og dyrevelferd er den eldre kodeversjonen.' },
+          { entryId: 'nord_dyrepleie', emnekoder: ['DYR1006-1', 'DYR1001-1'], merknad: 'To kodeversjoner av Atferd og dyrehold.' },
+        ],
+      },
+      {
+        id: 'husdyrproduksjon', label: 'Husdyrhold og husdyrproduksjon', kategori: 'Husdyr',
+        desc: 'Drift og produksjon i de enkelte husdyrslagene: storfe, småfe, gris, fjørfe og hest.',
+        note: 'Nord dyrepleie har ingen produksjonsemner og er ikke koblet. NMBU dekker husdyrslagene i en rekke valgemner à 5–15 sp, Nord har egne obligatoriske emner per dyreslag, og INN har ett samleemne (AGR2302 Husdyrhold, 7,5 sp). Nords HUS305 Storfeproduksjon og driftsøkonomi blander produksjon og økonomi.',
+        links: [
+          { entryId: 'nmbu_husdyr', emnekoder: ['HFX131-1', 'HFX255-1', 'HFX255-2', 'HFX256-1', 'HFX256-2', 'HFX253-1', 'HFH255-1', 'HFX205-1'], merknad: 'Introduksjon til norsk husdyrproduksjon (obligatorisk) samt valgemnene Melk og kjøttproduksjon på storfe, Småfe, Produksjon på gris og fjørfe, Hestevitenskap og Beiteøkologi og beitebruk; HFX255 og HFX256 finnes i to kodeversjoner hver.' },
+          { entryId: 'nord_husdyr', emnekoder: ['HUS2003-1', 'HUS2002-1', 'HUS305-3', 'HUS2030-1'], merknad: 'Småfe og fjørfe, Svineproduksjon, Storfeproduksjon og driftsøkonomi, og Hest og hund.' },
+          { entryId: 'inn_agronomi_husdyr', emnekoder: ['AGR2302-1'], merknad: 'Husdyrhold, 7,5 sp; ett samleemne for alle husdyrslag.' },
+        ],
+      },
+      {
+        id: 'statistikk-og-vitenskapelig-metode', label: 'Statistikk og vitenskapelig metode', kategori: 'Metode',
+        desc: 'Statistisk analyse av biologiske data, forsøksdesign, vitenskapelig metode og akademisk skriving.',
+        note: 'NMBU har klart mest rent statistikkfag (STAT100 og STIN100, til sammen 20 sp), mens Nord og INN har kombinerte metode- og skriveemner. INNs AGR2202 Vitenskapelig metode og statistikk (15 sp) er det nærmeste INN kommer et statistikkemne.',
+        links: [
+          { entryId: 'nmbu_husdyr', emnekoder: ['STAT100-1', 'STIN100-1', 'LNG250-1'], merknad: 'Statistikk, Biologisk dataanalyse og Akademisk skriving.' },
+          { entryId: 'nord_husdyr', emnekoder: ['MET2000-1'], merknad: 'Innføring i vitenskapelig metode og skriving, 5 sp; ikke noe eget statistikkemne.' },
+          { entryId: 'inn_agronomi_husdyr', emnekoder: ['AGR2202-1', '6JB295-1'], merknad: 'Vitenskapelig metode og statistikk (15 sp) og Rapport og analyse.' },
+          { entryId: 'nord_dyrepleie', emnekoder: ['MET2000-1', 'MET1005-1'], merknad: 'To kodeversjoner av metode- og skriveemnet.' },
+        ],
+      },
+      {
+        id: 'okonomi-og-landbrukspolitikk', label: 'Økonomi og landbrukspolitikk', kategori: 'Økonomi',
+        desc: 'Bedriftsøkonomi, regnskap og driftsledelse i landbruket, og rammevilkårene i norsk landbrukspolitikk.',
+        note: 'Nord dyrepleie har ingen økonomiemner og er ikke koblet. Nord husdyrvitenskap har klart mest (bedriftsøkonomi, regnskap, ledelse og landbrukspolitikk), INN har ett stort emne på 15 sp, og NMBUs emner er valgemner med få kandidater.',
+        links: [
+          { entryId: 'nmbu_husdyr', emnekoder: ['BUS100-1', 'ECN260-1', 'BUS120-1'], merknad: 'Bedriften – innføring i bedriftsøkonomiske sammenhenger, Landbrukspolitikk og Personlig økonomi; alle valgemner.' },
+          { entryId: 'nord_husdyr', emnekoder: ['ECO1014-1', 'HUS3301-1', 'REG1003-1', 'HUS2151-1'], merknad: 'Bedriftsøkonomi for landbruket, Landbrukspolitikk, Landbruksregnskap og Ledelse og entreprenørskap.' },
+          { entryId: 'inn_agronomi_husdyr', emnekoder: ['6JB201-1'], merknad: 'Landbruksøkonomi og grønt entreprenørskap, 15 sp.' },
+        ],
+      },
+      {
+        id: 'baerekraft-og-matproduksjon', label: 'Bærekraft, klima og matproduksjon', kategori: 'Bærekraft',
+        desc: 'Bærekraftige matproduksjonssystemer, klimagassutslipp fra husdyrhold og landbrukets rolle i samfunnet.',
+        note: 'Alle fire programmene har et emne av denne typen, men vinklingen er ulik: NMBU og INN ser på matproduksjon og landbrukets samfunnsrolle, mens Nords BIO1008 Bærekraft, klima og etikk også dekker etikk og delvis erstatter ex.phil.',
+        links: [
+          { entryId: 'nmbu_husdyr', emnekoder: ['SDG200-1', 'HFX133-1', 'SDG201-1'], merknad: 'Bærekraftige matproduksjonssystemer, Utfordringer for framtidas matproduksjon og Klimagasser fra plante- og husdyrproduksjoner.' },
+          { entryId: 'nord_husdyr', emnekoder: ['HUS1003-1', 'BIO1008-1'], merknad: 'Klima og bærekraft; BIO1008 Bærekraft, klima og etikk er det nye fellesemnet.' },
+          { entryId: 'inn_agronomi_husdyr', emnekoder: ['AGR1102-1', '6JB110-1'], merknad: 'Landbruk, miljø og samfunn; 6JB110 er den eldre kodeversjonen.' },
+          { entryId: 'nord_dyrepleie', emnekoder: ['BIO1008-1'], merknad: 'Bærekraft, klima og etikk.' },
+        ],
+      },
+      {
+        id: 'bacheloroppgave', label: 'Bacheloroppgave', kategori: 'Oppgave',
+        desc: 'Det selvstendige avsluttende arbeidet i graden.',
+        note: 'Omfanget er 15 sp hos NMBU, Nord og INN, mens Nord dyrepleie har 10 sp. Hos NMBU er bacheloroppgaven et valgemne i tredje studieår, ikke obligatorisk, og har 13 kandidater i 2025 (101 i perioden). Nords husdyroppgave finnes i to kodeversjoner.',
+        links: [
+          { entryId: 'nmbu_husdyr', emnekoder: ['B15-HV-1'], merknad: 'Bacheloroppgave, 15 sp; valgfri.' },
+          { entryId: 'nord_husdyr', emnekoder: ['BAC350-2', 'HUS2010-1'], merknad: 'Bacheloroppgave i husdyrfag og den nye koden Bacheloroppgave i husdyrvitenskap.' },
+          { entryId: 'inn_agronomi_husdyr', emnekoder: ['6JB297-1'], merknad: 'Bacheloroppgave i agronomi, 15 sp.' },
+          { entryId: 'nord_dyrepleie', emnekoder: ['DYR2000-1'], merknad: 'Bacheloroppgave i dyrepleie, 10 sp.' },
+        ],
+      },
+      {
+        id: 'exphil', label: 'Examen philosophicum', kategori: 'Ex.phil',
+        desc: 'Fellesemnet i vitenskapsfilosofi og etikk.',
+        note: 'Svakeste emnetypen i gruppa. INNs agronomibachelor har ikke ex.phil. Hos NMBU er ex.phil ikke obligatorisk i husdyrbacheloren og har 3 kandidater i 2025 (26 i perioden), og Nords FIL1001 har ingen rapporterte karakterer etter 2023, selv om emnet har 33 og 124 kandidater i perioden for henholdsvis husdyrvitenskap og dyrepleie. Koblingen er derfor bare brukbar for tidsserien 2021–2023.',
+        links: [
+          { entryId: 'nmbu_husdyr', emnekoder: ['PHI101-1', 'PHI100-1'], merknad: 'Seminarversjonen og skoleeksamensversjonen av samme emne; valgfritt i husdyrbacheloren.' },
+          { entryId: 'nord_husdyr', emnekoder: ['FIL1001-1'], merknad: 'Ex. Phil. Etikk, bærekraft og samfunnsansvar; ingen rapporterte karakterer etter 2023.' },
+          { entryId: 'nord_dyrepleie', emnekoder: ['FIL1001-1'], merknad: 'Ingen rapporterte karakterer etter 2023.' },
+        ],
+      },
+    ],
+  },
+  {
+    groupId: 'husdyr2',
+    note: 'Gruppen har lite reell overlapp, og det er to grunner til det. For det første er Nords oppføring i DBH én felles programkode for hele masteren i biovitenskap – emnelisten er identisk med den som brukes for nord_biovitenskap2 og nord_akvakultur2 og domineres av akvatiske emner og økologi; av rene husdyremner finnes bare «Husdyr og Én helse» (BIO5012), «Livestock and One Health» (BIO5029) og «Presisjonshusdyrbruk» (HUS5000). For det andre er nmbu_emabg NMBUs egen fellesgrad (Erasmus Mundus), ikke en konkurrent ved en annen institusjon; emnetypene «Husdyravl og kvantitativ genetikk» og «Bærekraft i matsystemer» sammenligner derfor to NMBU-program, ikke NMBU mot en annen institusjon. EMABG har dessuten bare ett semester ved NMBU (35 sp), slik at bare de emnene kan kobles. Emner er vurdert ut fra antall kandidater fra programmet i 2024 eller 2025 (minst ca. 10), men alle tre programmene er så små at kravet i praksis er myknet opp til summen for 2021–2025; unntak er merket i den enkelte koblingen. Tre sentrale husdyrtemaer er ikke koblet fordi bare NMBU har emner i dem: husdyrernæring og fôrteknologi (HFE302, HFE303, HFE305, HFE308, HFE314), etologi og dyrevelferd (HET300, HET301, HET212) og husdyrproduksjon per art (HFX253, HFX255, HFX256). Forsøksdyrlære er heller ikke koblet, fordi bare Nord har slike emner (DR443F, BIO5024).',
+    courseTypes: [
+      {
+        id: 'statistikk-metode', label: 'Statistikk og forskningsmetode', kategori: 'Metode',
+        desc: 'Kvantitative metoder, forsøksplanlegging og statistisk databehandling for husdyrfaglige forsøk.',
+        note: 'NMBU dekker statistikkravet med BIN250 (5 sp) og har i tillegg to valgfrie statistikkemner, mens Nord samler forskningsmetode og vitenskapelig kommunikasjon i ett emne. EMABG er ikke koblet: statistikk- og metodeemnene i sporene ligger ved partneruniversitetene og har ingen NMBU-emnekode.',
+        links: [
+          { entryId: 'nmbu_husdyr2', emnekoder: ['BIN250-1', 'STIN300-1', 'STAT210-1'], merknad: 'BIN250 er det obligatoriske statistikkemnet (19 kandidater i 2025); STAT210 hadde kandidater til og med 2023, STIN300 er statistisk programmering i R' },
+          { entryId: 'nord_husdyr2', emnekoder: ['BI300F-1', 'MET5019-1'], merknad: 'BI300F kombinerer forskningsmetode og vitenskapelig kommunikasjon; kandidattallet falt fra 30 i 2024 til 5 i 2025 samtidig som MET5019 kom til med 22' },
+        ],
+      },
+      {
+        id: 'avl-genetikk', label: 'Husdyravl og kvantitativ genetikk', kategori: 'Husdyr',
+        desc: 'Avlsteori, seleksjon, kvantitativ genetikk og beregning av avlsverdier.',
+        note: 'Nord har ikke et eneste emne i husdyravl i emnelisten sin, og er derfor ikke koblet. Koblingen sammenligner dermed to NMBU-program. HFA303 og HFA350 er obligatoriske i EMABGs NMBU-semester og går også inn i husdyrvitenskapsmasteren, slik at de samme emnene har kandidater fra begge program.',
+        links: [
+          { entryId: 'nmbu_husdyr2', emnekoder: ['HFA303-1', 'HFA350-1', 'HFA300-1', 'HFA300-2'], merknad: 'HFA303 (5 sp) er programmets tyngste avlsemne; HFA350 «Fra fenotyper til avlsverdier» (15 sp) kom i 2025 og erstatter i praksis avlsplanleggingsemnet HFA300' },
+          { entryId: 'nmbu_emabg', emnekoder: ['HFA350-1', 'BIN300-1'], merknad: 'HFA350 er obligatorisk for alle fem mobilitetsspor; BIN300 (statistisk genomforskning) er ett av to alternativer i 2. semester. HFA303 er også obligatorisk, men har ingen registrerte kandidater på EMABG-koden i DBH' },
+        ],
+      },
+      {
+        id: 'genomikk-bioinformatikk', label: 'Genomikk og bioinformatikk', kategori: 'Husdyr',
+        desc: 'Genomanalyse, sekvensdata og bioinformatiske verktøy brukt på dyrepopulasjoner.',
+        note: 'Dette er det eneste fagområdet der alle tre programmene faktisk har emner. Nords emner er rettet mot akvatiske arter (akvagenomikk), mens NMBUs og EMABGs er artsnøytrale eller husdyrrettede, så koblingen er tematisk og ikke en én-til-én-kobling.',
+        links: [
+          { entryId: 'nmbu_husdyr2', emnekoder: ['BIO322-1', 'BIN301-1'], merknad: 'få kandidater fra programmet (BIO322 hadde 3 i 2025, BIN301 12 til sammen 2021–2025)' },
+          { entryId: 'nmbu_emabg', emnekoder: ['BIO322-1', 'BIN301-1'], merknad: 'BIO322 er ett av to alternativer i det obligatoriske NMBU-semesteret (9 kandidater i 2025)' },
+          { entryId: 'nord_husdyr2', emnekoder: ['BI311F-1', 'BIO5025-1', 'BI229F-1'], merknad: 'akvagenomikk og bioinformatikk, genomsammenstilling og annotering; BI229F er den eldre genomikk- og bioinformatikkoden' },
+        ],
+      },
+      {
+        id: 'husdyrproduksjon-helse', label: 'Husdyrproduksjon og husdyrhelse', kategori: 'Husdyr',
+        desc: 'Produksjonssystemer for husdyr, presisjonshusdyrbruk, og sammenhengen mellom fôring, drift og dyrehelse.',
+        note: 'Koblingen er tematisk og ikke emne-for-emne: NMBUs emner er produksjonsrettede og artsnære (smart husdyrproduksjon, storfe), mens Nords to helseemner har et Én helse-perspektiv der husdyrhelse ses sammen med folkehelse og miljø. EMABG har ingen produksjons- eller helseemner ved NMBU.',
+        links: [
+          { entryId: 'nmbu_husdyr2', emnekoder: ['HFX315-1', 'HFX306-1'], merknad: 'smart husdyrproduksjon (10 sp, programmets største valgemne) + fôring, sjukdom og produksjonssvikt hos storfe' },
+          { entryId: 'nord_husdyr2', emnekoder: ['BIO5012-1', 'BIO5029-1', 'HUS5000-1'], merknad: 'BIO5012 «Husdyr og Én helse» er avløst av det engelskspråklige BIO5029 «Livestock and One Health» i 2025; HUS5000 «Presisjonshusdyrbruk» er tatt med fordi det er Nords eneste produksjonsemne, men det har bare 3 kandidater (2022) og er under terskelen' },
+        ],
+      },
+      {
+        id: 'baerekraft-matsystemer', label: 'Bærekraft i matsystemer', kategori: 'Husdyr',
+        desc: 'Bærekraftsmålene anvendt på matproduksjon med planter og dyr, og redesign av matsystemer.',
+        note: 'Samme emne (SDG300) i begge program, men med ulikt emnenavn i DBH over tid («Bærekraftsmål i matsystemer med planter og dyr» / «Bærekraftsmål og redesign av matsystemer»). Nord har ingen tilsvarende emne, så også denne koblingen sammenligner to NMBU-program.',
+        links: [
+          { entryId: 'nmbu_husdyr2', emnekoder: ['SDG300-1'], merknad: '5 sp valgemne, 27 kandidater 2021–2025' },
+          { entryId: 'nmbu_emabg', emnekoder: ['SDG300-1'], merknad: 'obligatorisk i to av de fem mobilitetssporene (NMBU–AgroParisTech og NMBU–SLU)' },
+        ],
+      },
+      {
+        id: 'masteroppgave', label: 'Masteroppgave', kategori: 'Oppgave',
+        desc: 'Selvstendig vitenskapelig arbeid som avslutter masterstudiet.',
+        note: 'Omfanget er svært ulikt. NMBUs studieplan anbefaler 60 sp, men i praksis skriver de aller fleste en oppgave på 30 sp (M30-HV har 53 kandidater 2021–2025, mot 3 på hver av M45-HV og M60-HV). EMABG har 30 sp i alle spor unntatt Wageningen-sporet, som i tillegg har en 30 sp-oppgave ved partneruniversitetet. Nords oppgaver er på 60 sp og registreres med egen kode per studieretning, uten at husdyrretningen har en egen kode.',
+        links: [
+          { entryId: 'nmbu_husdyr2', emnekoder: ['M30-HV-1', 'M45-HV-1', 'M60-HV-1'], merknad: '30, 45 og 60 sp; M30-HV er den klart vanligste' },
+          { entryId: 'nmbu_emabg', emnekoder: ['M30-ABG-1'], merknad: '30 sp, avsluttende oppgave i 4. semester' },
+          { entryId: 'nord_husdyr2', emnekoder: ['BIO5010-1', 'BIO5011-1'], merknad: '60 sp; husdyrstudentene i Steinkjer leverer på kodene for terrestrisk økologi og naturforvaltning eller genomikk – det finnes ingen egen husdyrkode' },
+        ],
+      },
+    ],
+  },
+  {
+    groupId: 'plante',
+    note: 'Dette er den tynneste gruppa i BIOVIT-kartet, og den har derfor bare ni emnetyper mot tolv i de andre gruppene. Grunnene er tre. For det første finnes det ingen andre rene plantevitenskapsprogrammer i Norge: de to konkurrentene er begge Blæstad-utdanninger ved Universitetet i Innlandet, og de deler tolv av atten emner med hverandre, slik at «to konkurrenter» i praksis er én emneportefølje. For det andre er INNs program agronomi- og teknikkutdanninger der planteproduksjon er én av flere deler; de har ingen emner i kjemi, mikrobiologi, økonomi eller ex.phil som kan måles mot NMBUs, og NMBUs KJM100, BIO130, BUS100 og PHI101 er derfor ikke koblet i det hele tatt. For det tredje er NMBUs plantevitenskapsbachelor et svært lite program: det høyeste kandidattallet i 2025 er 17 (PJH230 Frukt og bær), og de fleste emnene har 5–14. Terskelen er derfor senket til summen for 2021–2025 gjennomgående i denne gruppa, og det står i merknaden der et enkeltemne likevel er lite. Motsatt vei mangler NMBU en motpart til INNs landbruksteknikk: feltmekanisering, traktorer, landbruksmaskiner, presisjonsjordbruk og bygningsteknikk (LAN-emnene og 6JB242) utgjør 45–60 sp hos INN og har ingen tilsvarende emner med rapporterte karakterer hos NMBU, så de er ikke koblet. Det samme gjelder bacheloroppgave: INN har 6JB297 og 6JB299 på 15 sp, mens NMBUs plantevitenskapsbachelor ikke har noen obligatorisk eller valgfri bacheloroppgavekode med rapporterte karakterer. Merk til slutt at INNs Naturgrunnlaget finnes i to kodeversjoner (AGR1101 og AGR1105), og at inn_agronomi er det samme programmet som inn_agronomi_husdyr i husdyrgruppa.',
+    courseTypes: [
+      {
+        id: 'innforing-i-faget', label: 'Innføringsemne i faget', kategori: 'Plante',
+        desc: 'Førstesemesteremnet som introduserer faget, næringa og yrkesmulighetene, ofte med gårds- og bedriftsbesøk.',
+        note: 'NMBUs PJH102 er et intensivt augustblokkemne på 5 sp før første høstsemester, mens INNs LAN1101 Innføring i landbruk er på 15 sp og dekker hele landbruket, ikke bare plantefag. Emnet er felles for INNs to program.',
+        links: [
+          { entryId: 'nmbu_plante', emnekoder: ['PJH102-1'], merknad: 'Innføringsemne i plantevitenskap, 5 sp i augustblokk.' },
+          { entryId: 'inn_agronomi', emnekoder: ['LAN1101-1'], merknad: 'Innføring i landbruk, 15 sp; bredere enn NMBUs emne.' },
+          { entryId: 'inn_landbruksteknikk', emnekoder: ['LAN1101-1'], merknad: 'Felles emne med agronomibacheloren.' },
+        ],
+      },
+      {
+        id: 'plantebiologi-og-plantefysiologi', label: 'Plantebiologi og plantefysiologi', kategori: 'Plante',
+        desc: 'Plantenes bygning, artsmangfold og funksjon: fotosyntese, vann- og næringsopptak, vekst og utvikling.',
+        note: 'Her er forskjellen størst i gruppa. NMBU har tre emner (BOT100 Plantediversitet, BOT130 Grunnleggende plantefysiologi og BOT200 Plantefysiologi, til sammen 20 sp), mens INNs agronomibachelor bare har 6JB121 Biologi på 7,5 sp, der plantebiologi er én del av et bredere pensum. INNs landbruksteknikk har ikke noe biologiemne i det hele tatt og er ikke koblet.',
+        links: [
+          { entryId: 'nmbu_plante', emnekoder: ['BOT130-1', 'BOT200-1', 'BOT100-1'], merknad: 'Grunnleggende plantefysiologi, Plantefysiologi og Plantediversitet.' },
+          { entryId: 'inn_agronomi', emnekoder: ['6JB121-1'], merknad: 'Biologi, 7,5 sp; dekker plantebiologi som én av flere deler.' },
+        ],
+      },
+      {
+        id: 'plantedyrking-og-produksjon', label: 'Plantedyrking og planteproduksjon', kategori: 'Plante',
+        desc: 'Dyrking av kulturvekster: vekstkrav, kulturteknikk, gjødsling, avling og kvalitet i åker, hage og veksthus.',
+        note: 'NMBUs emner er hagebruksrettede (frukt og bær, grønnsaker og potet, veksthusproduksjon) og er valgemner i tredje studieår, mens INNs AGR1103 Planter og produksjon er et obligatorisk åkerbruksemne på 7,5 sp. Sammenligningen er derfor reell på fagnivå, men NMBU dekker hagebruk og INN dekker korn, gras og potet i stor skala.',
+        links: [
+          { entryId: 'nmbu_plante', emnekoder: ['PJH230-1', 'PJH240-1', 'PJH250-1', 'PJH251-1', 'PJH105-1'], merknad: 'Frukt og bær, Grønnsaker og potet, Planteproduksjon i regulert klima, Produksjon av utplantingsplanter og Urbant landbruk; alle valgemner med 6–17 kandidater i 2025.' },
+          { entryId: 'inn_agronomi', emnekoder: ['AGR1103-1'], merknad: 'Planter og produksjon, 7,5 sp.' },
+          { entryId: 'inn_landbruksteknikk', emnekoder: ['AGR1103-1'], merknad: 'Felles emne med agronomibacheloren.' },
+        ],
+      },
+      {
+        id: 'jordlaere', label: 'Jordlære og naturgrunnlag', kategori: 'Plante',
+        desc: 'Jordas oppbygning, egenskaper og prosesser, jord som vekstmedium, plantenæring, gjødsling og jordkultur.',
+        note: 'NMBU har to rene jordemner (JORD100 Jordlære, 5 sp, og JORD230 Jord som vekstmedium, 15 sp). INNs motpart er Naturgrunnlaget (15 sp), som i tillegg til jordlære dekker klima, geologi og botanikk; koblingen er derfor bredere enn NMBUs. Emnet finnes i to kodeversjoner (AGR1101 og den nye AGR1105) og er felles for INNs to program.',
+        links: [
+          { entryId: 'nmbu_plante', emnekoder: ['JORD100-1', 'JORD230-1', 'JORD101-1'], merknad: 'Jordlære (5 sp) og Jord som vekstmedium (15 sp); JORD101 er den eldre kodeversjonen av Jordlære.' },
+          { entryId: 'inn_agronomi', emnekoder: ['AGR1101-1', 'AGR1105-1'], merknad: 'To kodeversjoner av Naturgrunnlaget, 15 sp; dekker også klima og geologi.' },
+          { entryId: 'inn_landbruksteknikk', emnekoder: ['AGR1101-1', 'AGR1105-1'], merknad: 'Felles emne med agronomibacheloren.' },
+        ],
+      },
+      {
+        id: 'plantevern', label: 'Plantevern og plantehelse', kategori: 'Plante',
+        desc: 'Plantesykdommer, skadedyr og ugras, skadeterskler, integrert plantevern og plantevernmidler.',
+        note: 'INNs landbruksteknikk har ikke noe plantevernemne. NMBUs PLV200 er et intensivemne på 15 sp som strekker seg over juniblokk, augustblokk og høstparallell, mot INNs 7,5 sp – NMBUs emne har altså dobbelt omfang, men bare 7 kandidater i 2025 (50 i perioden) mot INNs 24.',
+        links: [
+          { entryId: 'nmbu_plante', emnekoder: ['PLV200-1'], merknad: 'Sykdommer, skadedyr og ugras i jord- og hagebruk, 15 sp.' },
+          { entryId: 'inn_agronomi', emnekoder: ['AGR2201-1'], merknad: 'Plantevern og plantehelse, 7,5 sp.' },
+        ],
+      },
+      {
+        id: 'presisjonsjordbruk-og-gjodsling', label: 'Gjødslingsplanlegging og presisjonsjordbruk', kategori: 'Plante',
+        desc: 'Gjødslingsplanlegging, næringsbalanser og bruk av sensorer, kart og posisjonsdata i planteproduksjonen.',
+        note: 'NMBUs JORD231 er et valgemne på 5 sp som bare har vært rapportert i 2023 og 2025, med 6 og 7 kandidater; koblingen er derfor svak på NMBU-siden. INNs LAN2302 Presisjonsjordbruk er obligatorisk i begge Blæstad-programmene og har 13–20 kandidater i 2025. NMBUs TMPA210 Presisjonslandbruk og sensorteknologi er ikke koblet fordi det bare har tre kandidater i hele perioden.',
+        links: [
+          { entryId: 'nmbu_plante', emnekoder: ['JORD231-1'], merknad: 'Gjødslingsplanlegging og presisjonsjordbruk, 5 sp; valgemne med få kandidater.' },
+          { entryId: 'inn_agronomi', emnekoder: ['LAN2302-1'], merknad: 'Presisjonsjordbruk, 7,5 sp.' },
+          { entryId: 'inn_landbruksteknikk', emnekoder: ['LAN2302-1'], merknad: 'Felles emne med agronomibacheloren.' },
+        ],
+      },
+      {
+        id: 'genetikk-og-planteforedling', label: 'Genetikk og planteforedling', kategori: 'Plante',
+        desc: 'Arvelære, sortsutvikling, genetisk mangfold i kulturplanter og bioteknologiske metoder i planteforedling.',
+        note: 'INNs landbruksteknikk har ikke noe genetikkemne. NMBU har et generelt genetikkemne (BIO120, 10 sp) pluss to plantespesifikke valgemner, mens INNs AGR2301 Planteforedling og diversitet er ett emne på 7,5 sp uten generell genetikkdel.',
+        links: [
+          { entryId: 'nmbu_plante', emnekoder: ['BIO120-1', 'BIO248-1', 'BIO244-1'], merknad: 'Genetikk (10 sp) samt valgemnene Genetikk og planteforedling og Plantebioteknologi: celle- og vevskultur og genmodifisering.' },
+          { entryId: 'inn_agronomi', emnekoder: ['AGR2301-1'], merknad: 'Planteforedling og diversitet, 7,5 sp.' },
+        ],
+      },
+      {
+        id: 'statistikk-og-vitenskapelig-metode', label: 'Statistikk og vitenskapelig metode', kategori: 'Metode',
+        desc: 'Statistisk analyse av forsøksdata, forsøksdesign, vitenskapelig metode og rapportskriving.',
+        note: 'NMBU har to rene metodeemner à 10 sp (STAT100 Statistikk og STIN100 Biologisk dataanalyse), men STAT100 har bare 3 kandidater fra plantebacheloren i 2025 og STIN100 er nytt i studieplanen. INN har ett stort kombinert emne (AGR2202, 15 sp) pluss rapportemnet 6JB295, begge felles for de to Blæstad-programmene.',
+        links: [
+          { entryId: 'nmbu_plante', emnekoder: ['STIN100-1', 'STAT100-1'], merknad: 'Biologisk dataanalyse og Statistikk; STAT100 har få kandidater fra plantebacheloren (46 i perioden 2021–2025).' },
+          { entryId: 'inn_agronomi', emnekoder: ['AGR2202-1', '6JB295-1'], merknad: 'Vitenskapelig metode og statistikk (15 sp) og Rapport og analyse (7,5 sp).' },
+          { entryId: 'inn_landbruksteknikk', emnekoder: ['AGR2202-1', '6JB295-1'], merknad: 'Felles emner med agronomibacheloren.' },
+        ],
+      },
+      {
+        id: 'baerekraft-og-landbruk-i-samfunnet', label: 'Bærekraft, matproduksjon og landbruk i samfunnet', kategori: 'Bærekraft',
+        desc: 'Bærekraftige matproduksjonssystemer, klima og miljø, og landbrukets rolle i samfunnet.',
+        note: 'NMBU har to emner à 5 sp med vekt på matproduksjonssystemer og bærekraft, mens INNs AGR1102 Landbruk, miljø og samfunn (7,5 sp) legger mer vekt på landbrukspolitikk og samfunnsrolle. INNs emne finnes i to kodeversjoner (AGR1102 og den eldre 6JB110) og er felles for begge Blæstad-programmene.',
+        links: [
+          { entryId: 'nmbu_plante', emnekoder: ['HFX133-1', 'SDG200-1', 'PØL100-1'], merknad: 'Utfordringer for framtidas matproduksjon, Bærekraftige matproduksjonssystemer og valgemnet PØL100 Økologisk landbruk.' },
+          { entryId: 'inn_agronomi', emnekoder: ['AGR1102-1', '6JB110-1'], merknad: 'To kodeversjoner av Landbruk, miljø og samfunn.' },
+          { entryId: 'inn_landbruksteknikk', emnekoder: ['AGR1102-1', '6JB110-1'], merknad: 'Felles emne med agronomibacheloren.' },
+        ],
+      },
+    ],
+  },
+  {
+    groupId: 'plante2',
+    note: 'Gruppen ender med bare fire emnetyper, fordi de tre programmene er bygd helt ulikt. INNs master i bærekraftig jordbruk er et samlingsbasert program med bare sju emner i DBH (MBJ4001S–MBJ4007S), alle brede 10–15 sp-emner, og uten registrert masteroppgavekode. NMBUs plantevitenskapsmaster består nesten utelukkende av valgemner (BIO302 og masteroppgaven er det eneste som er obligatorisk for alle), og NMBUs agroøkologimaster er systemorientert og har bare tre store emner (PAE302, PAE306 og oppgaven). Der INN har ett bredt emne, har NMBU fem–seks smale – koblingene er derfor mange-til-en. Emner er vurdert ut fra antall kandidater fra programmet i 2024 eller 2025 (minst ca. 10); for NMBUs to program er kravet myknet opp til summen for 2021–2025, siden de sjelden har mer enn 10–15 kandidater på et emne. To av NMBU-programmenes kjerneområder er ikke koblet fordi ingen av de andre har tilsvarende emner: plantevern (PLV321 plantepatologi og resistensforedling, PLV330 biologisk kontroll, PLV340 ugras) og plantefysiologi/plantebioteknologi (BIO324, BIO327, BOT200, BIO325). Motsatt er INNs emner i økologi (MBJ4003S) og i forvaltning, rådgiving og innovasjon (MBJ4006S) ikke koblet, fordi NMBU-programmene ikke har emner med nok kandidater på disse feltene (ECN260 Landbrukspolitikk og EDS330 Politisk økologi har 3 kandidater hver). Merk også at nmbu_agroekologi2 er NMBUs eget program, ikke en konkurrent ved en annen institusjon.',
+    courseTypes: [
+      {
+        id: 'forskningsmetode', label: 'Forskningsmetode, statistikk og oppgaveplanlegging', kategori: 'Metode',
+        desc: 'Forskningsmetode, forsøksdesign, statistisk dataanalyse og planlegging av masteroppgaven.',
+        note: 'INN har to obligatoriske metodeemner på til sammen 20 sp, mens NMBUs plantevitenskapsmaster ikke har noe obligatorisk metode- eller statistikkemne i det hele tatt – studentene tar små valgemner, og MTH300 er et web-kurs i oppgaveplanlegging. Agroøkologimasteren har et eget forskningsmetodeemne som fra 2023 er avløst av et emne i handlingsorientert forskning.',
+        links: [
+          { entryId: 'nmbu_plante2', emnekoder: ['MTH300-1', 'STIN300-1', 'BIN250-1'], merknad: 'MTH300 (5 sp web-kurs i planlegging og skriving av masteroppgaven) er det eneste med et rimelig antall kandidater; STIN300 og BIN250 er statistikkemner med svært få kandidater fra programmet' },
+          { entryId: 'inn_baerekraftig_jordbruk', emnekoder: ['MBJ4002S-1', 'MBJ4004S-1'], merknad: 'forskingsmetode og dataanalyse (10 sp) + studiedesign og statistisk metode (10 sp)' },
+          { entryId: 'nmbu_agroekologi2', emnekoder: ['PAE305-1', 'PAE306-1'], merknad: 'PAE305 «Forskningsmetoder» (2021–2022) er avløst av PAE306 «Agroøkologi: Handlingsorientert forskning» (10 sp) fra 2023' },
+        ],
+      },
+      {
+        id: 'baerekraftig-planteproduksjon', label: 'Bærekraftig planteproduksjon og agroøkologi', kategori: 'Plante',
+        desc: 'Bærekraftig produksjon av planteprodukter, agroøkologisk systemtenkning og teknologi i jordbruket.',
+        note: 'NMBUs to bærekraftsemner i plantevitenskap (SDG302 og PJH370) hadde ingen registrerte kandidater etter 2023 og er dermed en historisk sammenligning. INNs agroøkologiemne kom først i 2024. Nivåene er svært ulike: PAE302 ved NMBU er et 30 sp handlingslæringsemne over et helt semester, mens INNs emner er 10–15 sp.',
+        links: [
+          { entryId: 'nmbu_plante2', emnekoder: ['SDG302-1', 'PJH370-1'], merknad: 'bærekraftig planteproduksjon (5 sp) + produksjon av fremtidens planteprodukter (10 sp); begge uten kandidater fra programmet etter 2023' },
+          { entryId: 'inn_baerekraftig_jordbruk', emnekoder: ['MBJ4007S-1', 'MBJ4005S-1'], merknad: 'agroøkologi (15 sp, fra 2024) + teknologi og bærekraftig jordbruk (10 sp)' },
+          { entryId: 'nmbu_agroekologi2', emnekoder: ['PAE302-1'], merknad: '30 sp handlingsorientert læring i gårds- og matvaresystemer, programmets startemne' },
+        ],
+      },
+      {
+        id: 'jordfag', label: 'Jord og jordkvalitet', kategori: 'Plante',
+        desc: 'Jord som vekstmedium, jordhelse, jordøkologi og bærekraftig bruk av jordressursene.',
+        note: 'INNs emne er programmets tyngste enkeltemne på feltet, mens NMBUs jordemner er valgemner som bare noen få plantevitenskapsstudenter tar hvert år – kandidattallene ligger under terskelen og er tatt med fordi jordfag er et kjerneområde i begge program. Agroøkologimasteren har ingen egne jordemner; jord inngår i PAE302.',
+        links: [
+          { entryId: 'nmbu_plante2', emnekoder: ['JORD330-1', 'JORD230-1', 'JORD231-1'], merknad: 'jordhelse og bærekraftig bruk av jordressurser (10 sp), jord som vekstmedium (15 sp) og gjødslingsplanlegging (5 sp); til sammen 14 kandidater 2021–2025' },
+          { entryId: 'inn_baerekraftig_jordbruk', emnekoder: ['MBJ4001S-1'], merknad: 'jordøkologi og jordkvalitet, 10 sp; ingen registrerte kandidater etter 2024' },
+        ],
+      },
+      {
+        id: 'masteroppgave', label: 'Masteroppgave', kategori: 'Oppgave',
+        desc: 'Selvstendig vitenskapelig arbeid som avslutter masterstudiet.',
+        note: 'INN er ikke koblet: masteren i bærekraftig jordbruk har ingen masteroppgavekode i DBH-materialet, bare de sju MBJ-emnene. Koblingen sammenligner derfor to NMBU-program. Omfanget er også ulikt: plantevitenskap skriver i hovedsak 60 sp (M60-PV), mens agroøkologi i hovedsak skriver 30 sp (M30-AE), blant annet fordi dobbeltgraden med ISARA/FESIA krever 30 sp.',
+        links: [
+          { entryId: 'nmbu_plante2', emnekoder: ['M60-PV-1', 'M30-PV-1'], merknad: '60 sp er hovedvalget (40 kandidater 2021–2025 mot 6 på 30 sp-varianten)' },
+          { entryId: 'nmbu_agroekologi2', emnekoder: ['M30-AE-1', 'M60-AE-1'], merknad: '30 sp er hovedvalget (51 kandidater 2021–2025); 60 sp-varianten hadde kandidater bare i 2021' },
+        ],
+      },
+    ],
+  },
+];

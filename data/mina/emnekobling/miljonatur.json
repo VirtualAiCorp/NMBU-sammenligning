@@ -1,0 +1,148 @@
+{
+  "groupId": "miljonatur",
+  "hentet": "2026-09-23",
+  "note": "NMBUs bachelor i miljø og naturressurser er et lite program, og DBH har svært få rapporterte kandidater per emne i 2024 og 2025 (de fleste emnene har null). Utvalget av NMBU-emner er derfor gjort på summen av kandidater i hele perioden 2021–2025, ikke på de to siste årene slik som i de andre gruppene; flere av koblingene hviler på 5–40 kandidater samlet over fem år og må leses med varsomhet. Konkurrentene er geofagsbachelorer, og det gir to systematiske skjevheter. For det første har NMBU en jordfaglig og biologisk del (JORD100/JORD101 Jordlære, JORD210 GIS og dynamisk modellering i jord, BOT100 Plantediversitet, ZOOL100 Generell zoologi, BIO130 Generell mikrobiologi, VANN210 Ferskvannsøkologi) som ingen av geologiprogrammene har, og disse er derfor ikke satt opp som emnetyper. For det andre har geologiprogrammene tunge emner i strukturgeologi, sedimentologi, mineralogi, petrologi og geofysikk som NMBU ikke har. Klima er heller ikke satt opp som emnetype: HVLs GE483 Climate Change og UiBs GEOV222 Paleoklimatologi har ingen parallell i NMBU-programmet. UiOs bachelor i klima, miljø og menneske er utelatt fordi DBH bare har rapportert tre emner for programmet, som startet opp i 2025.",
+  "emnetyper": [
+    {
+      "id": "geologi-innforing",
+      "label": "Geologi, innføring",
+      "kategori": "Geofag",
+      "desc": "Jordas oppbygning og utvikling, bergartene, platetektonikk og de geologiske grunnprosessene.",
+      "note": "Alle fem programmene har et innføringsemne i geologi, men vekten er helt ulik: NMBU har ett emne på 10 sp, mens geologibachelorene har flere innføringsemner og bygger hele graden videre på dem.",
+      "koblinger": [
+        { "entryId": "nmbu_miljonatur", "emnekoder": ["GEO100-1"], "merknad": "Geologi, 10 sp." },
+        { "entryId": "uio_geologi_geografi", "emnekoder": ["GEO1100-1", "GEO1110-1"], "merknad": "Jordens utvikling og Jordens indre og ytre prosesser." },
+        { "entryId": "uib_geovitenskap", "emnekoder": ["GEOV101-0", "GEOV102-0"], "merknad": "Innføring i geologi og Ekskursjoner og øvelser i geologi." },
+        { "entryId": "ntnu_geologi", "emnekoder": ["TGB4100-1", "TGB4112-1", "GEOL1001-1"], "merknad": "Geologi innføring, Norges geologi og georessurser og Historisk geologi og paleontologi." },
+        { "entryId": "hvl_geologi_geofare", "emnekoder": ["GE406-1"], "merknad": "Geologi grunnkurs." }
+      ]
+    },
+    {
+      "id": "kvartaergeologi",
+      "label": "Kvartærgeologi og landformer",
+      "kategori": "Geofag",
+      "desc": "Løsmasser, isbreenes avsetninger, landformdannelse og paleoklima i kvartærtiden.",
+      "note": "UiO og NTNU har ikke egne kvartærgeologiemner på bachelornivå. NMBUs tre emner er små (5–10 sp) og har til sammen bare 7–10 kandidater i femårsperioden, så tallene er usikre.",
+      "koblinger": [
+        { "entryId": "nmbu_miljonatur", "emnekoder": ["GEO210-1", "GEO211-1", "GEO250-1"], "merknad": "Kvartærgeologi, Kvartærgeologisk feltkurs og Jord og geologi i landskapet; få kandidater." },
+        { "entryId": "uib_geovitenskap", "emnekoder": ["GEOV110-0", "GEOV225-0", "GEOV229-0"], "merknad": "Innføring i eksogene prosesser og paleoklima, Feltkurs i kvartærgeologi og paleoklima og Geomorfologi." },
+        { "entryId": "hvl_geologi_geofare", "emnekoder": ["GE486-1"], "merknad": "Glasialgeologi." }
+      ]
+    },
+    {
+      "id": "hydrologi",
+      "label": "Hydrologi og hydrogeologi",
+      "kategori": "Geofag",
+      "desc": "Vannets kretsløp, avrenning, grunnvann og vannressursforvaltning.",
+      "note": "Vannfaget er NMBUs sterkeste side i denne gruppa: programmet har fire emner på til sammen 30 sp, mot ett emne hos NTNU og HVL. UiO og UiB har ikke hydrologi eller hydrogeologi på bachelornivå.",
+      "koblinger": [
+        { "entryId": "nmbu_miljonatur", "emnekoder": ["VANN200-1", "GEO220-1", "GEO221-1", "VANN220-1"], "merknad": "Hydrologi, Hydrogeologi med feltkurs og Vannressurser og vannforsyning." },
+        { "entryId": "ntnu_geologi", "emnekoder": ["TGB4205-1"], "merknad": "Hydrogeologi." },
+        { "entryId": "hvl_geologi_geofare", "emnekoder": ["GE482-1"], "merknad": "Hydrogeologi." }
+      ]
+    },
+    {
+      "id": "kjemi",
+      "label": "Kjemi",
+      "kategori": "Realfag",
+      "desc": "Generell kjemi med atomstruktur, binding, likevekt og syre-base, og uorganisk kjemi.",
+      "note": "NMBU har mest kjemi (20 sp fordelt på generell og uorganisk kjemi), fordi miljøkjemien er en bærebjelke i programmet. HVL har ikke kjemi. NTNUs generelle kjemi finnes i fire kodeversjoner i perioden, med ulikt omfang (KJ1000 og KJ1002 er 15 sp-versjonene).",
+      "koblinger": [
+        { "entryId": "nmbu_miljonatur", "emnekoder": ["KJM100-1", "KJM120-1"], "merknad": "Generell kjemi og Uorganisk kjemi." },
+        { "entryId": "uio_geologi_geografi", "emnekoder": ["KJM1101-1"], "merknad": "Generell kjemi." },
+        { "entryId": "uib_geovitenskap", "emnekoder": ["KJEM109-0", "KJEM110-0", "KJEM100-0"], "merknad": "Kjemi grunnkurs, Kjemi og energi og Kjemi i naturen." },
+        { "entryId": "ntnu_geologi", "emnekoder": ["KJ1004-1", "KJ1002-1", "KJ1001-1", "KJ1000-1"], "merknad": "Fire kodeversjoner av generell kjemi i perioden." }
+      ]
+    },
+    {
+      "id": "miljokjemi",
+      "label": "Forurensning og miljøkjemi",
+      "kategori": "Miljø",
+      "desc": "Miljøgifter og forurensning i jord, vann og luft, og kjemiske prosesser i naturmiljøet.",
+      "note": "Dette er kjernen i NMBU-programmet, men bare en randsone hos geologibachelorene: UiOs GEO3100 Miljøgeologi og UiBs GEOV243 Miljøgeokjemi er valgemner med få kandidater. NTNUs KJ2072 Naturmiljøkjemi og TGB4270 om miljøaspekter ved mineralproduksjon har for få rapporterte kandidater til å kobles. MINA200 er den eldre kodeversjonen av MILJØ200.",
+      "koblinger": [
+        { "entryId": "nmbu_miljonatur", "emnekoder": ["MILJØ200-1", "MINA200-1"], "merknad": "Forurensning og miljø; MINA200 er den eldre kodeversjonen." },
+        { "entryId": "uio_geologi_geografi", "emnekoder": ["GEO3100-1"], "merknad": "Miljøgeologi; valgemne med få kandidater." },
+        { "entryId": "uib_geovitenskap", "emnekoder": ["GEOV243-0"], "merknad": "Miljøgeokjemi; valgemne med få kandidater." }
+      ]
+    },
+    {
+      "id": "gis",
+      "label": "GIS og kartlegging",
+      "kategori": "Metode",
+      "desc": "Kartgrunnlag, geografiske informasjonssystemer og romlig modellering av miljø- og geodata.",
+      "note": "UiOs GIS-emne GEO3460 har nesten ingen rapporterte kandidater i perioden og er derfor ikke koblet. NMBUs JORD210 er et modelleringsemne som går lenger enn innføringsemnet LAD102.",
+      "koblinger": [
+        { "entryId": "nmbu_miljonatur", "emnekoder": ["LAD102-1", "JORD210-1"], "merknad": "GIS - praktisk introduksjon og GIS og dynamisk modellering i jord." },
+        { "entryId": "uib_geovitenskap", "emnekoder": ["GEOV205-0"], "merknad": "Geografiske informasjonssystem: Teori og praksis." },
+        { "entryId": "ntnu_geologi", "emnekoder": ["TBA4240-1"], "merknad": "Geografisk informasjonsbehandling 1, grunnkurs." },
+        { "entryId": "hvl_geologi_geofare", "emnekoder": ["GE413-1"], "merknad": "Kartlære og GIS." }
+      ]
+    },
+    {
+      "id": "statistikk",
+      "label": "Statistikk",
+      "kategori": "Metode",
+      "desc": "Sannsynlighetsregning, statistisk inferens og dataanalyse.",
+      "note": "Alle fem har et statistikkemne, men UiBs to emner er valgemner for geovitenskapsstudentene og har få rapporterte kandidater. NTNUs ST0103 er brukerkurset for realfagsstudenter og har langt flere kandidater enn geologiprogrammet alene.",
+      "koblinger": [
+        { "entryId": "nmbu_miljonatur", "emnekoder": ["STAT100-1"] },
+        { "entryId": "uio_geologi_geografi", "emnekoder": ["STK1000-1"], "merknad": "Innføring i anvendt statistikk." },
+        { "entryId": "uib_geovitenskap", "emnekoder": ["STAT110-0", "STAT101-0"], "merknad": "Grunnkurs i statistikk og Elementær statistikk; valgemner med få kandidater." },
+        { "entryId": "ntnu_geologi", "emnekoder": ["ST0103-1"], "merknad": "Brukerkurs i statistikk." },
+        { "entryId": "hvl_geologi_geofare", "emnekoder": ["ME420-4"], "merknad": "Statistikk." }
+      ]
+    },
+    {
+      "id": "matematikk",
+      "label": "Matematikk",
+      "kategori": "Realfag",
+      "desc": "Kalkulus og lineær algebra på brukerkursnivå for natur- og geofag.",
+      "note": "Nivåforskjellene er store. NMBU, NTNU og HVL har brukerkurs på ett eller to emner, UiO har to anvendelsesrettede emner (MAT1050/MAT1060), mens UiB har både brukerkurset MAT101 og det tyngre MAT111 Grunnkurs i matematikk I. NMBUs MATH100 har få rapporterte kandidater fra dette programmet.",
+      "koblinger": [
+        { "entryId": "nmbu_miljonatur", "emnekoder": ["MATH100-1"], "merknad": "Brukerkurs i matematikk, 10 sp." },
+        { "entryId": "uio_geologi_geografi", "emnekoder": ["MAT1050-1", "MAT1060-1"], "merknad": "Matematikk for anvendelser 1 og 2." },
+        { "entryId": "uib_geovitenskap", "emnekoder": ["MAT101-0", "MAT111-0"], "merknad": "Brukerkurs i matematikk I og Grunnkurs i matematikk I." },
+        { "entryId": "ntnu_geologi", "emnekoder": ["MA0001-1", "MA0002-1"], "merknad": "Brukerkurs i matematikk A og B." },
+        { "entryId": "hvl_geologi_geofare", "emnekoder": ["MA414-3"], "merknad": "Matematikk naturfag." }
+      ]
+    },
+    {
+      "id": "fysikk",
+      "label": "Fysikk",
+      "kategori": "Realfag",
+      "desc": "Innføringsemne i fysikk: mekanikk, energi og fysiske prosesser i naturen.",
+      "note": "UiB har det tyngste emnet (PHYS111 Mekanikk 1), mens NMBUs FYS100 Fysikk og natur er et anvendt emne rettet mot miljø- og naturfag. NTNU har både brukerkurset FY0001 og det geofaglige TPG4100 Fysikk og geofysikk.",
+      "koblinger": [
+        { "entryId": "nmbu_miljonatur", "emnekoder": ["FYS100-1"], "merknad": "Fysikk og natur, 10 sp." },
+        { "entryId": "uio_geologi_geografi", "emnekoder": ["FYS1001-1"], "merknad": "Innføring i fysikk." },
+        { "entryId": "uib_geovitenskap", "emnekoder": ["PHYS111-0"], "merknad": "Mekanikk 1." },
+        { "entryId": "ntnu_geologi", "emnekoder": ["FY0001-1", "TPG4100-1"], "merknad": "Brukerkurs i fysikk og Fysikk og geofysikk." },
+        { "entryId": "hvl_geologi_geofare", "emnekoder": ["FY400-1"], "merknad": "Innføring i fysikk." }
+      ]
+    },
+    {
+      "id": "miljoforvaltning",
+      "label": "Miljøforvaltning og arealplanlegging",
+      "kategori": "Forvaltning",
+      "desc": "Forvaltning av naturressurser, arealplanlegging og tverrfaglig konsekvensutredning av inngrep.",
+      "note": "UiO og NTNU har ingen forvaltnings- eller planemner i geologibachelorene. HVL har mest, med tre planemner, fordi programmet er rettet mot geofare og arealbruk. UiBs GEO-SD330 Natural Resources Management er et valgemne fra utviklingsstudiene.",
+      "koblinger": [
+        { "entryId": "nmbu_miljonatur", "emnekoder": ["MINA250-1", "NATF260-1", "NATF200-1"], "merknad": "Tverrfaglig konsekvensanalyse (NATF260 er den eldre kodeversjonen) og Vern og forvaltning av norsk natur." },
+        { "entryId": "uib_geovitenskap", "emnekoder": ["GEO-SD330-0"], "merknad": "Natural Resources Management; valgemne." },
+        { "entryId": "hvl_geologi_geofare", "emnekoder": ["PL433-1", "PL417-1", "PL418-1"], "merknad": "Innføring i arealplanlegging, Arealplanlegging og Reguleringsplanlegging." }
+      ]
+    },
+    {
+      "id": "miljo-baerekraft-innforing",
+      "label": "Miljø og bærekraft, innføring",
+      "kategori": "Miljø",
+      "desc": "Bredt innføringsemne om miljøutfordringer, naturressurser og bærekraft.",
+      "note": "Dette er den løseste koblingen i gruppa. NMBUs MINA100 er programmets eget innføringsemne i miljø og naturressurser, mens NTNUs BI2081 Natur, miljø og bærekraft er et bredt emne fra biologifagmiljøet som geologistudentene tar som valgemne. UiO, UiB og HVL har ingen tilsvarende innføringsemne.",
+      "koblinger": [
+        { "entryId": "nmbu_miljonatur", "emnekoder": ["MINA100-1"], "merknad": "Innføring i miljø og naturressurser, 10 sp." },
+        { "entryId": "ntnu_geologi", "emnekoder": ["BI2081-1"], "merknad": "Natur, miljø og bærekraft; valgemne." }
+      ]
+    }
+  ]
+}

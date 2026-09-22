@@ -1,0 +1,198 @@
+{
+  "groupId": "okologi",
+  "hentet": "2026-09-23",
+  "note": "Gruppa rommer to utdanningsfamilier. NMBUs bachelor i økologi og naturforvaltning, INNs utmarksforvaltning på Evenstad, Nords naturforvaltning på Steinkjer og USNs natur- og miljøforvaltning i Bø er profesjonsrettede naturforvaltningsbachelorer der biologi kombineres med forvaltning, juss, GIS og arealplanlegging. Biologibachelorene ved UiT og UiA er rene realfagsløp: de er sterke på økologi, zoologi, botanikk, kjemi og statistikk, men har verken forvaltningsemner, GIS eller arealplanlegging, og er derfor bare koblet på realfagsdelen. Både USN og INN la om studieplanene sine i perioden; de gamle emnekodene (USNs firesifrede koder og INNs 6EV-koder) er koblet sammen med de nye, slik at tidsseriene henger sammen. To fag som konkurrentene har, er ikke satt opp som emnetyper fordi NMBU-programmet ikke har dem: evolusjon og genetikk (Nord BIO140, USN NM103/NM105, UiT BIO-1008/BIO-2018, UiA BIO113/BIO111, INN 6AE124) og celle- og molekylærbiologi (Nord BIO1009, USN NM105, UiT MBI-1002, UiA BIO111). Examen philosophicum er heller ikke satt opp: NMBU, Nord, UiT og UiA har det, men INN og USN har ikke noe tilsvarende emne.",
+  "emnetyper": [
+    {
+      "id": "okologi",
+      "label": "Generell økologi",
+      "kategori": "Økologi og natur",
+      "desc": "Grunnleggende økologi: populasjoner, samfunn, økosystemer, energistrøm og biologisk mangfold.",
+      "note": "Omfanget spenner fra 5 sp (NMBUs innføringsemne ECOL100) til 20 sp (UiTs BIO-2017). Alle seks programmene har økologi som bærebjelke, og dette er den sterkeste koblingen i gruppa. USNs NM103 Økologi og evolusjon (15 sp) slår sammen økologi og evolusjon og erstattet 4105 Økologi ved studieplanomleggingen.",
+      "koblinger": [
+        { "entryId": "nmbu_okologi", "emnekoder": ["ECOL200-1", "ECOL100-1"], "merknad": "ECOL200 Generell økologi (10 sp) er hovedemnet; ECOL100 Grunnleggende økologi er innføringsemnet." },
+        { "entryId": "inn_utmarksforvaltning", "emnekoder": ["UTM1133-1", "6EV133-1"], "merknad": "Økologi; 6EV133 Økologi og mangfold (15 sp) er forgjengeren." },
+        { "entryId": "nord_naturforvaltning", "emnekoder": ["BIO201-1", "ØKO2002-1"], "merknad": "Økologi og Populasjonsøkologi; ØKO2002 kom inn med den nye studieplanen i 2025." },
+        { "entryId": "usn_naturmiljoforvaltning", "emnekoder": ["NM103-1", "4105-1", "NF211-1"], "merknad": "Økologi og evolusjon (15 sp), forgjengeren 4105 Økologi og fordypningsemnet Populasjons- og adferdsøkologi." },
+        { "entryId": "uit_biologi", "emnekoder": ["BIO-2017-1", "BIO-1011-1"], "merknad": "Økologi (20 sp) og Økologi og biologisk mangfold." },
+        { "entryId": "uia_biologi", "emnekoder": ["BIO206-1"] }
+      ]
+    },
+    {
+      "id": "zoologi",
+      "label": "Zoologi og faunakunnskap",
+      "kategori": "Økologi og natur",
+      "desc": "Dyrerikets systematikk, artskunnskap og biologi, med vekt på norsk fauna.",
+      "note": "NMBU har klart størst omfang med 20 sp fordelt på tre emner, der ZOOL220 Insekter og edderkoppdyr er et eget entomologiemne som ingen av de andre har. INN dekker artskunnskapen i 6EV132 Norsk fauna.",
+      "koblinger": [
+        { "entryId": "nmbu_okologi", "emnekoder": ["ZOOL100-1", "ZOOL210-1", "ZOOL220-1"], "merknad": "Generell zoologi, Virveldyr og Insekter og edderkoppdyr." },
+        { "entryId": "inn_utmarksforvaltning", "emnekoder": ["6EV132-1"], "merknad": "Norsk fauna." },
+        { "entryId": "nord_naturforvaltning", "emnekoder": ["BIO1020-1", "BIO1012-1"], "merknad": "Zoologisk artslære; BIO1012 Innføring i zoologi er det nye emnet fra 2025." },
+        { "entryId": "usn_naturmiljoforvaltning", "emnekoder": ["NM107-1", "4019-1"], "merknad": "Faunistikk; 4019 Zoologi er forgjengeren." },
+        { "entryId": "uit_biologi", "emnekoder": ["BIO-1104-1"] },
+        { "entryId": "uia_biologi", "emnekoder": ["BIO103-1"] }
+      ]
+    },
+    {
+      "id": "botanikk",
+      "label": "Botanikk og vegetasjonskunnskap",
+      "kategori": "Økologi og natur",
+      "desc": "Planterikets systematikk, artskunnskap og vegetasjonsøkologi.",
+      "note": "INNs 6EV130 Vegetasjon og kretsløp har ingen kandidater etter 2023 og er ikke erstattet av et eget botanikkemne; plantekunnskapen der ligger nå inne i SKO1105 Naturgrunnlaget. NMBUs BOT210 Sopp, lav og mose er et kryptogamemne som bare Nord og USN har noe tilsvarende til.",
+      "koblinger": [
+        { "entryId": "nmbu_okologi", "emnekoder": ["BOT100-1", "BOT210-2", "BOT210-1"], "merknad": "Plantediversitet og Sopp, lav og mose (to kodeversjoner)." },
+        { "entryId": "inn_utmarksforvaltning", "emnekoder": ["6EV130-1"], "merknad": "Vegetasjon og kretsløp; ingen kandidater etter 2023." },
+        { "entryId": "nord_naturforvaltning", "emnekoder": ["BIO2060-1", "BIO1011-1"], "merknad": "Botanisk artslære; BIO1011 Innføring i botanikk er det nye emnet fra 2025." },
+        { "entryId": "usn_naturmiljoforvaltning", "emnekoder": ["NM106-1", "4018-1", "NF210-1"], "merknad": "Floristikk, forgjengeren 4018 Botanikk og fordypningsemnet Vegetasjonsøkologi." },
+        { "entryId": "uit_biologi", "emnekoder": ["BIO-1103-1"] },
+        { "entryId": "uia_biologi", "emnekoder": ["BIO102-1"] }
+      ]
+    },
+    {
+      "id": "naturkartlegging",
+      "label": "Naturtypekartlegging og naturovervåking",
+      "kategori": "Økologi og natur",
+      "desc": "Feltbasert kartlegging av naturtyper etter NiN, registrering av arter og overvåking av natur.",
+      "note": "Dette er et typisk forvaltningsemne: INN, UiT og UiA har ikke noe eget kartleggingsemne. Nords BIO2310 Naturregistrering er størst med 15 sp.",
+      "koblinger": [
+        { "entryId": "nmbu_okologi", "emnekoder": ["BOT270-1"], "merknad": "Kartlegging av natur." },
+        { "entryId": "nord_naturforvaltning", "emnekoder": ["BIO2310-1"], "merknad": "Naturregistrering, 15 sp." },
+        { "entryId": "usn_naturmiljoforvaltning", "emnekoder": ["NF213-1"], "merknad": "Naturkartlegging og overvåking; nytt emne fra 2025." }
+      ]
+    },
+    {
+      "id": "naturforvaltning",
+      "label": "Naturforvaltning og bevaringsbiologi",
+      "kategori": "Forvaltning",
+      "desc": "Vern og forvaltning av natur: verneformer, forvaltningsapparatet, bevaringsbiologi og naturveiledning.",
+      "note": "Biologibachelorene ved UiT og UiA har ingen forvaltningsemner og er derfor ikke koblet. INNs to emner er spissere enn de andres: 6EV150 Naturoppsyn handler om oppsyns- og kontrollarbeid og UTM1151 om besøksforvaltning. USNs emner er bevaringsbiologi på engelsk (NM116 avløste 4505).",
+      "koblinger": [
+        { "entryId": "nmbu_okologi", "emnekoder": ["NATF100-1", "NATF200-1"], "merknad": "Innføringskurs i naturforvaltning (10 sp) og Vern og forvaltning av norsk natur." },
+        { "entryId": "inn_utmarksforvaltning", "emnekoder": ["6EV150-1", "UTM1151-1"], "merknad": "Naturoppsyn og Besøksforvaltning og naturveiledning." },
+        { "entryId": "nord_naturforvaltning", "emnekoder": ["NAT330-1"], "merknad": "Naturforvaltning, 20 sp." },
+        { "entryId": "usn_naturmiljoforvaltning", "emnekoder": ["NM102-1", "NM116-1", "4505-1"], "merknad": "Bærekraftsmål og bevaringsbiologi og Conservation Biology; 4505 er den gamle koden for Conservation Biology." }
+      ]
+    },
+    {
+      "id": "vilt-og-fiskeforvaltning",
+      "label": "Vilt- og fiskeforvaltning",
+      "kategori": "Forvaltning",
+      "desc": "Bestandsforvaltning av vilt og fisk: viltbiologi, jakt, rovvilt, fiskeforvaltning og konflikter mellom mennesker og vilt.",
+      "note": "Dette er kjernen i INNs utmarksforvaltning, som har fem emner på til sammen 37,5 sp. NMBU har to emner på 25 sp. UiT og UiA har ingen forvaltningsemner for vilt og fisk og er ikke koblet.",
+      "koblinger": [
+        { "entryId": "nmbu_okologi", "emnekoder": ["NATF230-1", "NATF240-1"], "merknad": "Viltbiologi og forvaltning (15 sp) og Fiskeøkologi og forvaltning (10 sp)." },
+        { "entryId": "inn_utmarksforvaltning", "emnekoder": ["UTM2140-1", "6EV240-1", "UTM1140-1", "UTM1176-1", "UTM2220-1"], "merknad": "Viltforvaltning (6EV240 er forgjengeren på 15 sp), Wildlife ecology, Large predator ecology and management og Fiskeforvaltning." },
+        { "entryId": "nord_naturforvaltning", "emnekoder": ["NAF1000-1", "BIO1210-1"], "merknad": "Fisk- og viltforvaltning; BIO1210 Fisk- og hjorteviltforvaltning er forgjengeren." },
+        { "entryId": "usn_naturmiljoforvaltning", "emnekoder": ["NF212-1", "4208-1", "NF214-1", "NM115-1", "4207-1"], "merknad": "Viltøkologi og viltforvaltning (4208 er forgjengeren), Wildlife Conflict Management og Ferskvannsfisk og vannressursforvaltning (4207 er forgjengeren)." }
+      ]
+    },
+    {
+      "id": "ferskvannsokologi",
+      "label": "Ferskvannsøkologi",
+      "kategori": "Økologi og natur",
+      "desc": "Innsjøers og vassdrags økologi: limnologi, vannkvalitet og ferskvannets organismesamfunn.",
+      "note": "Nord og UiT har ikke noe eget ferskvannsemne. UiAs BIO201 Akvatisk økologi dekker både ferskvann og marint miljø og er derfor en svakere kobling. Merk at Nords BIO201 er et helt annet emne (Økologi) – samme emnekode brukes om to ulike emner ved de to institusjonene.",
+      "koblinger": [
+        { "entryId": "nmbu_okologi", "emnekoder": ["VANN210-1"], "merknad": "Ferskvannsøkologi, 10 sp." },
+        { "entryId": "inn_utmarksforvaltning", "emnekoder": ["UTM1120-1", "6EV120-1"], "merknad": "Ferskvannsøkologi; 6EV120 Ferskvannsfisk og ferskvannsøkologi (15 sp) er forgjengeren." },
+        { "entryId": "usn_naturmiljoforvaltning", "emnekoder": ["NM111-1", "4503-1"], "merknad": "Ferskvannsøkologi; 4503 er forgjengeren." },
+        { "entryId": "uia_biologi", "emnekoder": ["BIO201-1"], "merknad": "Akvatisk økologi; dekker både ferskvann og marine miljøer." }
+      ]
+    },
+    {
+      "id": "gis",
+      "label": "GIS og geografisk analyse",
+      "kategori": "Metode",
+      "desc": "Kartgrunnlag, geografiske informasjonssystemer, datafangst og romlig analyse.",
+      "note": "GIS skiller forvaltningsbachelorene fra biologibachelorene: verken UiT eller UiA har GIS-emner. Nord har mest, med fire emner i den nye og gamle studieplanen til sammen.",
+      "koblinger": [
+        { "entryId": "nmbu_okologi", "emnekoder": ["LAD102-1"], "merknad": "GIS - praktisk introduksjon, 5 sp." },
+        { "entryId": "inn_utmarksforvaltning", "emnekoder": ["6EV153-1", "SKO2153-1"], "merknad": "Introduksjon til geografiske informasjonssystemer og Geografisk analyse." },
+        { "entryId": "nord_naturforvaltning", "emnekoder": ["GEO2011-1", "GEO220-1", "GEO1010-1", "GEO2009-1"], "merknad": "Geografisk informasjonsbehandling (GEO220 er 20 sp-forgjengeren), Kartlære og datafangst og GIS 3D-visualisering." },
+        { "entryId": "usn_naturmiljoforvaltning", "emnekoder": ["GIS3000-1", "5708-1"], "merknad": "Geografiske informasjonssystemer; 5708 GIS og kart er forgjengeren." }
+      ]
+    },
+    {
+      "id": "statistikk",
+      "label": "Statistikk og vitenskapelig metode",
+      "kategori": "Metode",
+      "desc": "Statistisk analyse, studiedesign og vitenskapelig arbeidsmetode med rapportskriving.",
+      "note": "Alle seks programmene har dette. INNs 6EV298 (15 sp) og Nords MA116F kombinerer metode, matematikk og statistikk i samme emne, mens NMBU, USN, UiT og UiA har rene statistikk- eller dataanalyseemner. Nord har i tillegg to rene skrive- og metodeemner (MET2000 og MET1005).",
+      "koblinger": [
+        { "entryId": "nmbu_okologi", "emnekoder": ["STAT100-1"] },
+        { "entryId": "inn_utmarksforvaltning", "emnekoder": ["6EV298-1", "6EV198-1"], "merknad": "Vitenskapelig metode og statistikk; 6EV198 Rapport og analyse er forgjengeren." },
+        { "entryId": "nord_naturforvaltning", "emnekoder": ["MA116F-1", "MET2000-1", "MET1005-1"], "merknad": "Matematikk/Statistikk for biologer, Innføring i vitenskapelig metode og skriving og Akademisk skriving og metode." },
+        { "entryId": "usn_naturmiljoforvaltning", "emnekoder": ["NM110-1", "4013-1"], "merknad": "Anvendt statistikk; 4013 er forgjengeren." },
+        { "entryId": "uit_biologi", "emnekoder": ["BIO-2004-1", "BIO-1007-1"], "merknad": "Studiedesign og dataanalyse i biologi og Kvantitative metoder." },
+        { "entryId": "uia_biologi", "emnekoder": ["MA-143-1"], "merknad": "Biostatistikk." }
+      ]
+    },
+    {
+      "id": "kjemi",
+      "label": "Kjemi",
+      "kategori": "Realfag",
+      "desc": "Generell kjemi: atomer, binding, likevekt og syre-base, med laboratoriearbeid.",
+      "note": "INNs utmarksforvaltning er det eneste programmet uten kjemiemne. Nords BIO101 Kjemi, miljø og forurensning kombinerer kjemi med forurensningslære. UiA har i tillegg organisk kjemi, som de andre ikke har.",
+      "koblinger": [
+        { "entryId": "nmbu_okologi", "emnekoder": ["KJM100-1"], "merknad": "Generell kjemi, 10 sp." },
+        { "entryId": "nord_naturforvaltning", "emnekoder": ["KJE1000-1", "BIO101-2"], "merknad": "Grunnleggende kjemi; BIO101 Kjemi, miljø og forurensning er forgjengeren." },
+        { "entryId": "usn_naturmiljoforvaltning", "emnekoder": ["NM112-1", "4110-1"], "merknad": "Anvendt kjemi; 4110 er forgjengeren." },
+        { "entryId": "uit_biologi", "emnekoder": ["KJE-1001-1"], "merknad": "Introduksjon til kjemi og kjemisk biologi." },
+        { "entryId": "uia_biologi", "emnekoder": ["KJ-111-1", "KJ-213-1"], "merknad": "Generell kjemi og Organisk kjemi." }
+      ]
+    },
+    {
+      "id": "geologi-naturgrunnlag",
+      "label": "Geologi, naturtyper og landskap",
+      "kategori": "Geofag",
+      "desc": "Berggrunn, løsmasser, landformer og hvordan geologi og klima setter rammene for naturtypene.",
+      "note": "De fire forvaltningsbachelorene har alle et naturgrunnlagsemne, mens biologibachelorene ved UiT og UiA ikke har geologi. INNs SKO1105 Naturgrunnlaget (15 sp) dekker jord, geologi og vegetasjon samlet.",
+      "koblinger": [
+        { "entryId": "nmbu_okologi", "emnekoder": ["GEO100-1"], "merknad": "Geologi, 10 sp." },
+        { "entryId": "inn_utmarksforvaltning", "emnekoder": ["SKO1105-1", "6EV131-1"], "merknad": "Naturgrunnlaget; 6EV131 Geologi og landformer er forgjengeren." },
+        { "entryId": "nord_naturforvaltning", "emnekoder": ["BIO1004-1", "BIO1010-1"], "merknad": "Naturtyper, klima og geologi; BIO1010 Vegetasjon, klima og geologi er forgjengeren." },
+        { "entryId": "usn_naturmiljoforvaltning", "emnekoder": ["NM101-1", "4009-1"], "merknad": "Geologi og landskap; 4009 er forgjengeren." }
+      ]
+    },
+    {
+      "id": "forvaltningsrett",
+      "label": "Forvaltningsrett og miljørett",
+      "kategori": "Forvaltning",
+      "desc": "Offentlig saksbehandling, forvaltningsloven og det juridiske rammeverket for natur- og miljøforvaltning.",
+      "note": "USN dekker miljøretten inne i arealplanleggingsemnet 4112 Arealplanlegging og miljørett og er derfor koblet under arealplanlegging i stedet. UiT og UiA har ingen juridiske emner.",
+      "koblinger": [
+        { "entryId": "nmbu_okologi", "emnekoder": ["JUS201-1"], "merknad": "Offentlig saksbehandling og forvaltningsrett." },
+        { "entryId": "inn_utmarksforvaltning", "emnekoder": ["SKO1154-1"], "merknad": "Forvaltningsrett." },
+        { "entryId": "nord_naturforvaltning", "emnekoder": ["NAF1001-1", "NAT203-2"], "merknad": "Rettslære for naturforvaltere; NAT203 Forvaltnings- og miljørett er forgjengeren." }
+      ]
+    },
+    {
+      "id": "arealplanlegging",
+      "label": "Arealplanlegging og konsekvensutredning",
+      "kategori": "Forvaltning",
+      "desc": "Plan- og bygningsloven, arealplanprosesser og tverrfaglig konsekvensutredning av naturinngrep.",
+      "note": "NMBUs MINA250 er et tverrfaglig konsekvensanalysekurs på 10 sp i siste semester (tidligere kodet NATF260). INN har bare arealforvaltningsdelen, mens Nord og USN har rene arealplanleggingsemner. UiT og UiA har ingen planfag.",
+      "koblinger": [
+        { "entryId": "nmbu_okologi", "emnekoder": ["MINA250-1", "NATF260-1"], "merknad": "Tverrfaglig konsekvensanalyse; NATF260 er den eldre kodeversjonen." },
+        { "entryId": "inn_utmarksforvaltning", "emnekoder": ["6EV155-1"], "merknad": "Arealforvaltning." },
+        { "entryId": "nord_naturforvaltning", "emnekoder": ["GEO2008-1", "NAF2000-1"], "merknad": "Arealplanlegging; NAF2000 Arealplanlegging med GIS (20 sp) er forgjengeren." },
+        { "entryId": "usn_naturmiljoforvaltning", "emnekoder": ["NM109-1", "4112-1"], "merknad": "Arealplanlegging; 4112 Arealplanlegging og miljørett er forgjengeren og dekker også miljøretten." }
+      ]
+    },
+    {
+      "id": "oppgave",
+      "label": "Bacheloroppgave",
+      "kategori": "Oppgave",
+      "desc": "Det selvstendige avsluttende arbeidet i graden.",
+      "note": "Omfanget spriker mye: NMBUs ECOL201 Økologisk fordypningsoppgave er på 5 sp, INN og Nord har 15 sp, UiT og UiA 20 sp og USN 30 sp (NMBA30, som erstattet 4050 på 20 sp). UiTs to oppgavekoder har få rapporterte kandidater fordi de fleste biologistudentene der går videre på master uten å levere bacheloroppgave.",
+      "koblinger": [
+        { "entryId": "nmbu_okologi", "emnekoder": ["ECOL201-1"], "merknad": "Økologisk fordypningsoppgave, 5 sp." },
+        { "entryId": "inn_utmarksforvaltning", "emnekoder": ["6EV299-1"], "merknad": "Bacheloroppgave, 15 sp." },
+        { "entryId": "nord_naturforvaltning", "emnekoder": ["BAC360-1"], "merknad": "Bacheloroppgave i naturforvaltning, 15 sp." },
+        { "entryId": "usn_naturmiljoforvaltning", "emnekoder": ["NMBA30-1", "4050-1"], "merknad": "Bacheloroppgave 30 sp; 4050 er 20 sp-forgjengeren." },
+        { "entryId": "uit_biologi", "emnekoder": ["BIO-2203-H04", "BIO-2201-1"], "merknad": "Bachelor's Thesis in Biology, 20 sp; få rapporterte kandidater." },
+        { "entryId": "uia_biologi", "emnekoder": ["BIO300-1"], "merknad": "Bacheloroppgave, 20 sp." }
+      ]
+    }
+  ]
+}

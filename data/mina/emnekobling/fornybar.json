@@ -1,0 +1,198 @@
+{
+  "groupId": "fornybar",
+  "hentet": "2026-09-23",
+  "note": "Gruppa sammenligner ett tverrfaglig universitetsløp med fem ingeniørutdanninger, og forskjellen preger hele emnekoblingen. NMBUs bachelor i fornybar energi bygger på brukerkurs i matematikk og fysikk og kombinerer energifag med økonomi, juss, økologi og arealplanlegging. HVLs bachelor i Sogndal (siste opptak 2024) er den nærmeste parallellen og er like tverrfaglig. NTNU, UiA og UiT har ingeniørløp med R1+R2+FYS1 i opptakskravet, tre til fire matematikkemner, kretsteknikk, termodynamikk og mekanikk. Tre emnetyper er derfor ikke satt opp, fordi NMBU ikke har noe tilsvarende emne: termodynamikk og varmelære (NTNU FENT1011/FENT2010, UiA ENE113, UiT PRO-2604), elektroteknikk og kretslære (NTNU ELET1001/ELET1002 og IELET1001, UiA ELE113/ELE114/ENE235/ENE236, UiT AUT-2503) og mekanikk (NTNU MEKT1101, UiA ENE114). Det samme gjelder bacheloroppgaven: NMBUs bachelor i fornybar energi har ingen obligatorisk avsluttende oppgave, mens HVL (FE403, 20 sp), NTNU (FENT2900, 20 sp) og UiA (ENE304/ENE306, 20–30 sp) alle har det. NTNU tar opp til fornybar energi-ingeniør på tre studiesteder med hver sin studiekode, men rapporterer alle tre under én DBH-programkode, slik at emnelisten er identisk for ntnu_ing_fornybar_trondheim, _gjovik og _alesund. For å skille studiestedene er hvert studiested koblet til sine egne emnekoder: NTNUs koder har studiestedet i fjerde bokstav (T = Trondheim, G = Gjøvik, A = Ålesund), for eksempel FENT/FENG/FENA, IMAT/IMAG/IMAA og ISTT/ISTG/ISTA. UiTs femårige sivilingeniørløp har svært få rapporterte kandidater per emne (høyest 11), så UiT-tallene er usikre.",
+  "emnetyper": [
+    {
+      "id": "matematikk",
+      "label": "Matematikk",
+      "kategori": "Realfag",
+      "desc": "Første matematikkemne: funksjoner, derivasjon, integrasjon og enkel lineær algebra.",
+      "note": "Nivåforskjellen er den største i gruppa. NMBU har bare brukerkurset MATH100 (10 sp), mens ingeniørløpene har tre til fire matematikkemner: NTNU har Matematikk for ingeniørfag 1–3 og Matematiske metoder 1–3, og UiA har Matematikk 1–4. Bare det første emnet i hvert løp er koblet her; de videregående matematikkemnene har ingen NMBU-parallell.",
+      "koblinger": [
+        { "entryId": "nmbu_fornybar", "emnekoder": ["MATH100-1"], "merknad": "Brukerkurs i matematikk, 10 sp." },
+        { "entryId": "hvl_fornybar", "emnekoder": ["FE404-1", "MA415-1"], "merknad": "Matematikk for fornybar energi og Matematikk brukeremne." },
+        { "entryId": "ntnu_ing_fornybar_trondheim", "emnekoder": ["IMAT1002-1", "IMAT1001-1"], "merknad": "Matematikk for ingeniørfag 1; IMAT1001 Matematiske metoder 1 er forgjengeren." },
+        { "entryId": "ntnu_ing_fornybar_gjovik", "emnekoder": ["IMAG1002-1", "IMAG1001-1"], "merknad": "Gjøvik-versjonen av de samme emnene." },
+        { "entryId": "ntnu_ing_fornybar_alesund", "emnekoder": ["IMAA1002-1", "IMAA1001-1"], "merknad": "Ålesund-versjonen av de samme emnene." },
+        { "entryId": "uia_ing_fornybar", "emnekoder": ["MA-178-G"], "merknad": "Matematikk 1." },
+        { "entryId": "uit_fornybar", "emnekoder": ["MAT-1050-1", "MAT-1507-1"], "merknad": "Matematikk 1 for ingeniører, to kodeversjoner; få kandidater." }
+      ]
+    },
+    {
+      "id": "fysikk",
+      "label": "Fysikk",
+      "kategori": "Realfag",
+      "desc": "Innføringsemne i fysikk: mekanikk, energi, varme og elektromagnetisme.",
+      "note": "NMBUs FYS100 Fysikk og natur er et anvendt emne rettet mot miljø- og naturfag, mens ingeniørløpene har ordinær ingeniørfysikk. NTNUs IFYKJ-emner (10 sp) kombinerer fysikk og kjemi og er forgjengerne til de rene fysikkemnene.",
+      "koblinger": [
+        { "entryId": "nmbu_fornybar", "emnekoder": ["FYS100-1"], "merknad": "Fysikk og natur, 10 sp." },
+        { "entryId": "hvl_fornybar", "emnekoder": ["FY400-1"], "merknad": "Innføring i fysikk." },
+        { "entryId": "ntnu_ing_fornybar_trondheim", "emnekoder": ["IFYT1002-1", "IFYKJT1001-1"], "merknad": "Fysikk; IFYKJT1001 Fysikk/kjemi er forgjengeren." },
+        { "entryId": "ntnu_ing_fornybar_gjovik", "emnekoder": ["IFYG1002-1", "IFYKJG1001-1"], "merknad": "Gjøvik-versjonen av de samme emnene." },
+        { "entryId": "ntnu_ing_fornybar_alesund", "emnekoder": ["IFYA1002-1", "IFYKJA1001-1"], "merknad": "Ålesund-versjonen av de samme emnene." },
+        { "entryId": "uia_ing_fornybar", "emnekoder": ["FYS128-G"] },
+        { "entryId": "uit_fornybar", "emnekoder": ["FYS-2500-1"], "merknad": "Fysikk for ingeniører; få kandidater." }
+      ]
+    },
+    {
+      "id": "fornybare-energikilder",
+      "label": "Fornybare energikilder og -teknologier",
+      "kategori": "Energi",
+      "desc": "Oversikt over energikildene – sol, vind, vann, bio og varme – og teknologiene som utnytter dem.",
+      "note": "NMBU samler hele oversikten i ett emne (FORNY200, 10 sp), mens ingeniørløpene har egne emner per energikilde. Sol, vind og vannkraft er derfor ikke satt opp som egne emnetyper: NTNUs FENT2021 Solenergi, FENT2321 Vindenergi og TVM4165 Vannkraftverk, UiAs ENE241 Solenergisystemer, ENE243 Vindkraft og ENE240 Vannkraft og UiTs FYS-2024 og FYS-2023 er koblet inn her i stedet.",
+      "koblinger": [
+        { "entryId": "nmbu_fornybar", "emnekoder": ["FORNY200-1", "FORN200-1"], "merknad": "Fornybare energikilder og -teknologier; FORN200 Energisystemer og produksjonsteknologier er den eldre kodeversjonen." },
+        { "entryId": "hvl_fornybar", "emnekoder": ["FE407-1", "FE405-1"], "merknad": "Fornybar energiteknologi og ressursvurdering og Grunnleggende energikonsepter." },
+        { "entryId": "ntnu_ing_fornybar_trondheim", "emnekoder": ["FENT1101-1", "FENT1102-1", "FENT1001-1", "FENT2021-1", "FENT2321-1", "TVM4165-1"], "merknad": "Fornybar energi grunnkurs 1 og 2 (FENT1001 er 10 sp-forgjengeren), Solenergi, Vindenergi og design av vindturbin og Vannkraftverk og vassdragsteknikk." },
+        { "entryId": "ntnu_ing_fornybar_gjovik", "emnekoder": ["FENG1101-1", "FENG1102-1", "FENG1001-1", "FENG2021-1"], "merknad": "Gjøvik-versjonene: Fornybar energi grunnkurs 1 og 2 og Solenergi." },
+        { "entryId": "ntnu_ing_fornybar_alesund", "emnekoder": ["FENA1101-1", "FENA1102-1", "FENA1001-1", "FENA2021-1"], "merknad": "Ålesund-versjonene: Fornybar energi grunnkurs 1 og 2 og Solenergi." },
+        { "entryId": "uia_ing_fornybar", "emnekoder": ["ENE111-G", "ENE109-G", "ENE241-G", "ENE243-G", "ENE240-G"], "merknad": "Fornybar energi, Energilab, Solenergisystemer, Vindkraft og Vannkraft." },
+        { "entryId": "uit_fornybar", "emnekoder": ["FYS-2024-1", "FYS-2023-1"], "merknad": "Solar and wind energy systems og Introduksjon til vannkraft; få kandidater." }
+      ]
+    },
+    {
+      "id": "energi-miljo-samfunn",
+      "label": "Energi, miljø og samfunn",
+      "kategori": "Energi",
+      "desc": "Energiomstillingen i et samfunnsperspektiv: energipolitikk, bærekraft og teknologiens rolle.",
+      "note": "Dette er innfallsporten til studiet ved NMBU, HVL, UiA og UiT. NTNUs fornybar energi-ingeniør har ikke noe eget samfunnsemne; der ligger systemperspektivet i INGT2300 Ingeniørfaglig systemtenkning, som er et generelt ingeniøremne og ikke er koblet.",
+      "koblinger": [
+        { "entryId": "nmbu_fornybar", "emnekoder": ["FORNY100-1", "FORN100-1", "ECN180-1"], "merknad": "Energi, miljø og samfunn (FORN100 er den eldre kodeversjonen) og Globale utfordringer I. Økonomi og bærekraft." },
+        { "entryId": "hvl_fornybar", "emnekoder": ["FE410-1", "FE401-1", "FE408-1"], "merknad": "Teknologi, innovasjon og samfunn, Miljø- og energipolitikk og Bærekraftig energiomstilling." },
+        { "entryId": "uia_ing_fornybar", "emnekoder": ["ING101-G", "ING200-G"], "merknad": "Teknologi, miljø og bærekraft og Teknologi, bærekraft og samfunn i et systemperspektiv." },
+        { "entryId": "uit_fornybar", "emnekoder": ["FYS-1008-1"], "merknad": "Fornybar energi, bærekraft og samfunn; få kandidater." }
+      ]
+    },
+    {
+      "id": "energisystemanalyse",
+      "label": "Energibruk og energisystemanalyse",
+      "kategori": "Energi",
+      "desc": "Analyse av energisystemer: energibalanser, energibruk i bygg og industri og modellering av systemene.",
+      "note": "UiA og UiT har ikke noe eget systemanalyseemne. HVLs FE411 Energisystemer er nærmest NMBUs FORNY260, mens NTNUs FENT2020 er et rent analyseemne i tredje studieår.",
+      "koblinger": [
+        { "entryId": "nmbu_fornybar", "emnekoder": ["FORNY260-1"], "merknad": "Energibruk og energisystemanalyse." },
+        { "entryId": "hvl_fornybar", "emnekoder": ["FE411-1", "FE402-1"], "merknad": "Energisystemer og Anvendte øvinger i energiomstilling." },
+        { "entryId": "ntnu_ing_fornybar_trondheim", "emnekoder": ["FENT2020-1"], "merknad": "Energisystem analyse." },
+        { "entryId": "ntnu_ing_fornybar_gjovik", "emnekoder": ["FENG2020-1"] },
+        { "entryId": "ntnu_ing_fornybar_alesund", "emnekoder": ["FENA2020-1"] }
+      ]
+    },
+    {
+      "id": "kraftnett-energilagring",
+      "label": "Kraftnett, energidistribusjon og energilagring",
+      "kategori": "Energi",
+      "desc": "Overføring og distribusjon av energi, nettilknytning av fornybar produksjon, fjernvarme og lagring av energi.",
+      "note": "NMBU dekker både distribusjon og lagring i ett emne på 5 sp, mens NTNU har to til tre emner og UiA tre. HVL og UiT har ingen emner på dette feltet. Den elektrotekniske grunnlagsdelen (kretsteknikk, elektriske maskiner) har NMBU ikke og er ikke koblet.",
+      "koblinger": [
+        { "entryId": "nmbu_fornybar", "emnekoder": ["FORNY240-1", "FORN240-1"], "merknad": "Energidistribusjon og -lagringssystemer; FORN240 er den eldre kodeversjonen." },
+        { "entryId": "ntnu_ing_fornybar_trondheim", "emnekoder": ["FENT2001-1", "FENT2011-1", "FENT2314-1"], "merknad": "Elektriske energisystemer og fjernvarme og Energilagring 1 og 2." },
+        { "entryId": "ntnu_ing_fornybar_gjovik", "emnekoder": ["FENG2001-1", "FENG2011-1"], "merknad": "Gjøvik-versjonene av Elektriske energisystemer og fjernvarme og Energilagring 1." },
+        { "entryId": "ntnu_ing_fornybar_alesund", "emnekoder": ["FENA2001-1", "FENA2011-1", "FENA2314-1", "FENA2101-1"], "merknad": "Ålesund-versjonene, i tillegg til Elektriske energisystemer og mikrogrid." },
+        { "entryId": "uia_ing_fornybar", "emnekoder": ["ENE229-G", "ENE231-G", "ENE246-G"], "merknad": "Fornybar energi i kraftnettet, Lavspennings- og høgspenningsteknologi og Batterier." }
+      ]
+    },
+    {
+      "id": "bioenergi",
+      "label": "Bioenergi",
+      "kategori": "Energi",
+      "desc": "Biomasse som energiressurs: råstoff, forbrenning, biodrivstoff og verdikjedene.",
+      "note": "Alle utenom HVL har et eget bioenergiemne. NTNU har emnet i Trondheim og på Gjøvik, men ikke i Ålesund. UiTs emne er engelskspråklig og har få kandidater.",
+      "koblinger": [
+        { "entryId": "nmbu_fornybar", "emnekoder": ["FORNY210-1"], "merknad": "Bioenergi - teknologi og verdikjeder." },
+        { "entryId": "ntnu_ing_fornybar_trondheim", "emnekoder": ["FENT2022-1"] },
+        { "entryId": "ntnu_ing_fornybar_gjovik", "emnekoder": ["FENG2022-1"] },
+        { "entryId": "uia_ing_fornybar", "emnekoder": ["ENE239-G"] },
+        { "entryId": "uit_fornybar", "emnekoder": ["KJE-2006-1"], "merknad": "Introduction to modern bioenergy; få kandidater." }
+      ]
+    },
+    {
+      "id": "livslopsvurdering",
+      "label": "Livsløpsvurdering og miljøeffekter",
+      "kategori": "Miljø",
+      "desc": "Livsløpsanalyse (LCA) av energi- og avfallssystemer og vurdering av miljøeffektene ved energiteknologi.",
+      "note": "HVL og UiA har ikke noe eget LCA-emne; miljøvurderingen ligger der inne i bærekraftsemnene. NMBUs emne er på 10 sp mot NTNUs 7,5 sp.",
+      "koblinger": [
+        { "entryId": "nmbu_fornybar", "emnekoder": ["FORNY220-1", "FORN220-1"], "merknad": "Livsløpsvurdering - miljøeffekter av energi- og avfallssystemer; FORN220 er den eldre kodeversjonen." },
+        { "entryId": "ntnu_ing_fornybar_trondheim", "emnekoder": ["FENT2023-1"], "merknad": "Livsløpsvurderinger av energisystem." },
+        { "entryId": "ntnu_ing_fornybar_gjovik", "emnekoder": ["FENG2023-1"] },
+        { "entryId": "ntnu_ing_fornybar_alesund", "emnekoder": ["FENA2023-1"] },
+        { "entryId": "uit_fornybar", "emnekoder": ["TEK-2007-1"], "merknad": "Sustainable Design and Life Cycle Assessments; få kandidater." }
+      ]
+    },
+    {
+      "id": "energiokonomi",
+      "label": "Energiøkonomi og energimarkeder",
+      "kategori": "Økonomi",
+      "desc": "Kraftmarkedet, prisdannelse, virkemidler og lønnsomhetsvurdering av energiprosjekter.",
+      "note": "Økonomi er NMBUs sterkeste side i denne gruppa, med fire emner på til sammen 25 sp. HVL har ett energiøkonomiemne og UiA ett kombinert økonomi- og innovasjonsemne. NTNU og UiT har ingen økonomiemner i fornybarløpene.",
+      "koblinger": [
+        { "entryId": "nmbu_fornybar", "emnekoder": ["FORNY150-1", "FORNY230-1", "FORN230-1", "FORN120-1", "ECN101-1"], "merknad": "Investeringsanalyse av energiprosjekter, Energimarkeder og virkemidler (FORN230 Energimarkeder og energipolitikk er den eldre kodeversjonen), Grunnleggende energiøkonomi og Samfunnsøkonomi for miljø og utvikling." },
+        { "entryId": "hvl_fornybar", "emnekoder": ["FE406-1"], "merknad": "Energiøkonomi." },
+        { "entryId": "uia_ing_fornybar", "emnekoder": ["ING201-G"], "merknad": "Økonomi og innovasjon." }
+      ]
+    },
+    {
+      "id": "klima",
+      "label": "Klimaendringer og klimatilpasning",
+      "kategori": "Miljø",
+      "desc": "Klimasystemet, menneskeskapte klimaendringer og tilpasning til dem.",
+      "note": "Bare NMBU og HVL har et eget klimaemne; hos NTNU, UiA og UiT ligger klimastoffet inne i energi- og bærekraftsemnene. HVLs GE483 Climate Change er engelskspråklig og deles med geologibachelorene i Sogndal.",
+      "koblinger": [
+        { "entryId": "nmbu_fornybar", "emnekoder": ["FYS140-1"], "merknad": "Klimaendringer, bærekraft og tilpasninger." },
+        { "entryId": "hvl_fornybar", "emnekoder": ["GE483-1"], "merknad": "Climate Change." }
+      ]
+    },
+    {
+      "id": "statistikk",
+      "label": "Statistikk",
+      "kategori": "Metode",
+      "desc": "Sannsynlighetsregning, statistisk inferens og dataanalyse.",
+      "note": "HVL dekker statistikk inne i metodekurset FE409 Metodekurs for fornybar energi, som også omfatter oppgaveskriving, og er derfor ikke koblet. UiTs to statistikkemner har for få rapporterte kandidater til å kobles.",
+      "koblinger": [
+        { "entryId": "nmbu_fornybar", "emnekoder": ["STAT100-1"] },
+        { "entryId": "ntnu_ing_fornybar_trondheim", "emnekoder": ["ISTT1002-1"] },
+        { "entryId": "ntnu_ing_fornybar_gjovik", "emnekoder": ["ISTG1002-1"] },
+        { "entryId": "ntnu_ing_fornybar_alesund", "emnekoder": ["ISTA1002-1"] },
+        { "entryId": "uia_ing_fornybar", "emnekoder": ["MA-223-G"], "merknad": "Statistikk." }
+      ]
+    },
+    {
+      "id": "programmering",
+      "label": "Programmering og databehandling",
+      "kategori": "Metode",
+      "desc": "Innføring i programmering og verktøy for å behandle og analysere data.",
+      "note": "Her er forskjellen stor. Ingeniørløpene har programmering som obligatorisk emne, mens NMBU-studentene i praksis bruker BUS133 Excel - fra data til informasjon; INF120 Programmering og databehandling er valgemne med få kandidater. HVL har ikke programmering i fornybarløpet.",
+      "koblinger": [
+        { "entryId": "nmbu_fornybar", "emnekoder": ["BUS133-1", "INF120-1"], "merknad": "Excel - fra data til informasjon er det mest brukte databehandlingsemnet; INF120 Programmering og databehandling er valgemne med få kandidater." },
+        { "entryId": "ntnu_ing_fornybar_trondheim", "emnekoder": ["INGT1002-1"], "merknad": "Programmering, numerikk og sikkerhet." },
+        { "entryId": "ntnu_ing_fornybar_gjovik", "emnekoder": ["INGG1002-1"] },
+        { "entryId": "ntnu_ing_fornybar_alesund", "emnekoder": ["INGA1002-1"] },
+        { "entryId": "uia_ing_fornybar", "emnekoder": ["ING100-G"], "merknad": "Programmering og IKT-sikkerhet." },
+        { "entryId": "uit_fornybar", "emnekoder": ["INF-0101-1", "INF-1049-1"], "merknad": "Innføring i programmering og Introduksjon til beregningsorientert programmering; få kandidater." }
+      ]
+    },
+    {
+      "id": "arealplanlegging-gis",
+      "label": "GIS, arealplanlegging og konsekvensutredning",
+      "kategori": "Forvaltning",
+      "desc": "Kart- og GIS-verktøy, arealplanprosesser og konsekvensutredning av naturinngrep fra energiutbygging.",
+      "note": "Dette skiller de to tverrfaglige programmene fra ingeniørutdanningene: verken NTNU, UiA eller UiT har plan- eller GIS-emner i fornybarløpene. HVL har tre planemner og deler dem med geologibacheloren i Sogndal.",
+      "koblinger": [
+        { "entryId": "nmbu_fornybar", "emnekoder": ["LAD102-1", "MINA250-1", "NATF260-1", "JUS220-1"], "merknad": "GIS - praktisk introduksjon, Tverrfaglig konsekvensanalyse (NATF260 er den eldre kodeversjonen) og Miljøforvaltningsrett." },
+        { "entryId": "hvl_fornybar", "emnekoder": ["GE413-1", "PL412-2", "PL417-1", "PL418-1", "PL433-1"], "merknad": "Kartlære og GIS, Landskapsinngrep, Arealplanlegging, Reguleringsplanlegging og Innføring i arealplanlegging." }
+      ]
+    },
+    {
+      "id": "okologi-natur",
+      "label": "Økologi og naturkunnskap",
+      "kategori": "Økologi og natur",
+      "desc": "Grunnleggende økologi og kunnskap om norsk natur som bakgrunn for å vurdere naturinngrep.",
+      "note": "Bare de to tverrfaglige programmene har økologi. NMBUs ECOL100 er obligatorisk innføringsemne; ECOL200 Generell økologi og NATF200 Vern og forvaltning av norsk natur er valgemner med færre kandidater.",
+      "koblinger": [
+        { "entryId": "nmbu_fornybar", "emnekoder": ["ECOL100-1", "ECOL200-1", "NATF200-1"], "merknad": "Grunnleggende økologi, Generell økologi og Vern og forvaltning av norsk natur." },
+        { "entryId": "hvl_fornybar", "emnekoder": ["BI445-3"], "merknad": "Økologi grunnkurs." }
+      ]
+    }
+  ]
+}
