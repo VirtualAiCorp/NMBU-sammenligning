@@ -1,0 +1,200 @@
+{
+  "entryId": "nmbu_la",
+  "programnavn": "Landskapsarkitektur (master 5 år)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/master-5-aar/landskapsarkitektur",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-06/M-LA%20studieplan%202026%20-%202027%202026.05.05.pdf",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2025-05/M-LA%20studieplan%20matrise%202025-26%20-%20mai%202025.pdf",
+    "https://www.nmbu.no/emne/LAA214",
+    "https://www.nmbu.no/emne/LAA211",
+    "https://www.nmbu.no/emne/PHG213"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 185,
+  "obligatoriske": [
+    {
+      "emnekode": "LAA115",
+      "emnenavn": "Introduksjon til profesjonsstudiet",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "LAA115-1"
+      ],
+      "merknad": "Oppstart augustblokk, fortsetter i høstparallell."
+    },
+    {
+      "emnekode": "GEO100",
+      "emnenavn": "Geologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "GEO100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PHI100",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "PHI100-1",
+        "PHI101-1"
+      ],
+      "merknad": "Studieplanen skriver «PHI100/PHI101 Ex Phil»; PHI101 er seminarversjonen."
+    },
+    {
+      "emnekode": "LAD100",
+      "emnenavn": "Introduksjon til digitale verktøy",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "januarblokk",
+      "dbhEmnekoder": [
+        "LAD100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "LAA116",
+      "emnenavn": "Introduksjon i landskapsarkitektur II",
+      "studiepoeng": 15,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "LAA116-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "APL240",
+      "emnenavn": "Miljø og planlegging, del 1",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "APL240-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "JORD160",
+      "emnenavn": "Introduksjon om jord",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "JORD160-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "LAA214",
+      "emnenavn": "Bebyggelse og landskap",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "LAA214-1"
+      ],
+      "merknad": "Emnet er redusert fra 15 til 10 sp; DBH-tallene for LAA214-1 er registrert med 15 sp."
+    },
+    {
+      "emnekode": "PHG113",
+      "emnenavn": "Landskapsplanter - Økologi og bærekraftig plantebruk",
+      "studiepoeng": 20,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "PHG113-2",
+        "PHG113-1"
+      ],
+      "merknad": "Oppstart augustblokk, fortsetter i høstparallell. PHG113-1 er den eldre 10 sp-versjonen."
+    },
+    {
+      "emnekode": "LAA250",
+      "emnenavn": "Landskapsforståelse",
+      "studiepoeng": 15,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "LAA250-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "LAA211",
+      "emnenavn": "Hagekunstens og landskapsarkitekturens historie",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "LAA211-1"
+      ],
+      "merknad": "Utvidet fra 5 til 10 sp; DBH-tallene for LAA211-1 er registrert med 5 sp."
+    },
+    {
+      "emnekode": "PHG213",
+      "emnenavn": "Landskapsplanter - Planteplan i praksis",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "juniblokk",
+      "dbhEmnekoder": [
+        "PHG213-1"
+      ],
+      "merknad": "Emnekatalogen oppgir 5 sp og juniblokk; DBH har registrert PHG213-1 med 15 sp."
+    },
+    {
+      "emnekode": "LAA224",
+      "emnenavn": "Forming med vegetasjon",
+      "studiepoeng": 20,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "LAA224-2",
+        "LAA224-1"
+      ],
+      "merknad": "Oppstart augustblokk, fortsetter i høstparallell. LAA224-1 er den eldre 15 sp-versjonen."
+    },
+    {
+      "emnekode": "PHG215",
+      "emnenavn": "Landskapsplanter - etablering, skjøtsel og bevaring",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "PHG215-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAST302",
+      "emnenavn": "Planlegging av masteroppgaven - landskapsarkitektur",
+      "studiepoeng": 5,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MAST302-1"
+      ],
+      "merknad": "Studenter på utveksling kan få fritak."
+    },
+    {
+      "emnekode": "M30-LA",
+      "emnenavn": "Masteroppgave",
+      "studiepoeng": 30,
+      "aar": 5,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "M30-LA-1"
+      ],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Studieplanen for 2026/2027 er merket «Utkast 2026.05.06 – med forbehold om endringer»; matrisen for 2025/2026 er lagt ved som andre kilde. Listen over inneholder bare emner alle studenter må ta. I tillegg finnes to obligatoriske valg: (1) våren 3. år velges enten LAA215 Byrom, form og konstruksjoner (15 sp, DBH LAA215-1) eller APL200 Lokal planlegging (15 sp, DBH APL200-1) – 2025/26-matrisen kalte dette profilvalg mellom «overordnet profil» (APL200 + LAD102) og «designprofil» (LAA215 + LAA221); (2) i masterdelen må to av de prosjektbaserte masteremnene LAA340/LAA341, LAA360, LAA307, LAA321/LAD302, LAA310 og LAA370 tas – noen tilbys bare annethvert år, og plassene er begrensede. Resten av 3.–5. studieår fylles med valgfrie emner fra emnekatalogen, praksis (PRAK202) eller utveksling. Studieplanen oppgir emneenheter, ikke eksplisitte semestertall; semesterverdiene over er lest ut av matrisens år-/blokkrader."
+}

@@ -1,0 +1,253 @@
+{
+  "entryId": "uis_byplanlegging",
+  "programnavn": "Byplanlegging (master 5 år)",
+  "institusjon": "Universitetet i Stavanger",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.uis.no/nb/studier/byplanlegging-master-5-ar",
+    "http://web.archive.org/web/20250122085935/https://www.uis.no/nb/studier/byplanlegging-master-5-ar",
+    "https://www.uis.no/nb/studier/byggingenior-bachelor",
+    "https://www.uis.no/nb/studier/byplanlegging-master-2-ar"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 210,
+  "obligatoriske": [
+    {
+      "emnekode": "BYG100",
+      "emnenavn": "Dataassistert konstruksjon (DAK)",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "DAT125",
+      "emnenavn": "Introduksjon til Programmering",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TN110",
+      "emnenavn": "Kurs i studieteknikk og ingeniør- og realfaglig arbeidsmetode",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "helår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT100",
+      "emnenavn": "Matematiske metoder 1",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS100",
+      "emnenavn": "Mekanikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYG150",
+      "emnenavn": "Byggematerialer",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYG115",
+      "emnenavn": "Byrommet",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT200",
+      "emnenavn": "Matematiske metoder 2",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYG105",
+      "emnenavn": "Stedsforståelse og byteori",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJE101",
+      "emnenavn": "Grunnleggende kjemi",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAF210",
+      "emnenavn": "Numerisk modellering 1",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYG120",
+      "emnenavn": "Områdeplanlegging",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYG130",
+      "emnenavn": "Vegplanlegging",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYG285",
+      "emnenavn": "Arealplanlegging for bærekraft og resiliens",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYG235",
+      "emnenavn": "Bygningsfysikk",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYG225",
+      "emnenavn": "Bytransformasjon",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "STA100",
+      "emnenavn": "Sannsynlighetsregning og statistikk 1",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYGBBAC",
+      "emnenavn": "Bacheloroppgave i bygg - byplanlegging",
+      "studiepoeng": 20,
+      "aar": 3,
+      "semester": "helår",
+      "dbhEmnekoder": [],
+      "merknad": "Går over 5. og 6. semester."
+    },
+    {
+      "emnekode": "ING200",
+      "emnenavn": "Ingeniørfaglig systememne - Teknologiledelse",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYG655",
+      "emnenavn": "New Technologies and Ideas for Sustainable City Development",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYG510",
+      "emnenavn": "Placemaking",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYG500",
+      "emnenavn": "Urban Analysis and Planning Methods",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "RIS660",
+      "emnenavn": "Research Methods in Risk, Safety, and Security Studies",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYG640",
+      "emnenavn": "Selected Topics in City and Regional Planning",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYG610",
+      "emnenavn": "Sustainable City Regions",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYGMAS",
+      "emnenavn": "Master's Thesis in City and Regional Planning",
+      "studiepoeng": 30,
+      "aar": 5,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Går over 3. og 4. semester av masterdelen (9. og 10. semester)."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "VIKTIG FORBEHOLD: UiS tar ikke lenger opp studenter til det femårige masterløpet i byplanlegging – fra 2025 er programsiden avpublisert (krever innlogging), og den arkiverte siden fra januar 2025 sier eksplisitt: «I 2025 kan du ikke søke deg inn på byplanlegging master 5 år». Samme side beskriver løpet som «en kombinasjon av treårig bachelorgrad i byggingeniør (studieretning byplanlegging) og en toårig mastergrad i byplanlegging». Emnelisten over er derfor rekonstruert fra de to gjeldende delprogrammene slik de står i UiS' studieplaner for 2026/2027: år 1–3 er de obligatoriske emnene på bachelor i byggingeniør med studieretning byplanlegging (identisk med uis_ing_bygg_byplan), og år 4–5 er de obligatoriske emnene på master i byplanlegging (2 år). Den opprinnelige femårige studieplanen er ikke tilgjengelig. Alle dbhEmnekoder er tomme fordi DBH ikke har karakterdata registrert på denne entryId-en. 5. semester (30 sp) er valgemner eller utveksling; BYG240 Byregionen anbefales for opptak til masterstudiet. 3. semester av masterdelen (9. semester) er valgemner/utveksling med fire emnepakker: Sustainable Urban Development and Mobility, Renewable Urban Energy, Safe and Resilient Cities og Management. Obligatoriske studiepoeng (210) er summen av emnene over."
+}

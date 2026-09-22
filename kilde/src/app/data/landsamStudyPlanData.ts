@@ -1631,30 +1631,638 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
     programs: [
       {
         entryId: 'nmbu_la', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Landskapsarkitektur (master 5 år)',
-        studieplanAar: null, kilder: [],
-        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
-        merknad: 'Studieplan ikke hentet ennå.',
+        studieplanAar: '2026/2027', kilder: ['https://www.nmbu.no/studier/master-5-aar/landskapsarkitektur', 'https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-06/M-LA%20studieplan%202026%20-%202027%202026.05.05.pdf', 'https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2025-05/M-LA%20studieplan%20matrise%202025-26%20-%20mai%202025.pdf', 'https://www.nmbu.no/emne/LAA214', 'https://www.nmbu.no/emne/LAA211', 'https://www.nmbu.no/emne/PHG213'],
+        totaltStudiepoeng: 300, obligatoriskeStudiepoeng: 185,
+        merknad: 'Studieplanen for 2026/2027 er merket «Utkast 2026.05.06 – med forbehold om endringer»; matrisen for 2025/2026 er lagt ved som andre kilde. Listen over inneholder bare emner alle studenter må ta. I tillegg finnes to obligatoriske valg: (1) våren 3. år velges enten LAA215 Byrom, form og konstruksjoner (15 sp, DBH LAA215-1) eller APL200 Lokal planlegging (15 sp, DBH APL200-1) – 2025/26-matrisen kalte dette profilvalg mellom «overordnet profil» (APL200 + LAD102) og «designprofil» (LAA215 + LAA221); (2) i masterdelen må to av de prosjektbaserte masteremnene LAA340/LAA341, LAA360, LAA307, LAA321/LAD302, LAA310 og LAA370 tas – noen tilbys bare annethvert år, og plassene er begrensede. Resten av 3.–5. studieår fylles med valgfrie emner fra emnekatalogen, praksis (PRAK202) eller utveksling. Studieplanen oppgir emneenheter, ikke eksplisitte semestertall; semesterverdiene over er lest ut av matrisens år-/blokkrader.',
         obligatoriske: [
+          {
+            emnekode: 'LAA115', emnenavn: 'Introduksjon til profesjonsstudiet', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['LAA115-1'], merknad: 'Oppstart augustblokk, fortsetter i høstparallell.',
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 35, H: 3, total: 38, snitt: null, strykprosent: null, bestattprosent: 92.1 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 37, H: 0, total: 37, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 40, H: 0, total: 40, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 35, H: 0, total: 35, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 42, H: 0, total: 42, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'GEO100', emnenavn: 'Geologi', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['GEO100-1'],
+            years: [
+              { year: 2021, A: 5, B: 11, C: 17, D: 0, E: 0, F: 0, G: 0, H: 0, total: 33, snitt: 3.64, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 17, C: 10, D: 4, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 3.42, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 8, B: 18, C: 15, D: 0, E: 0, F: 0, G: 0, H: 0, total: 41, snitt: 3.83, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 4, B: 22, C: 8, D: 5, E: 0, F: 0, G: 0, H: 0, total: 39, snitt: 3.64, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 4, B: 18, C: 13, D: 5, E: 0, F: 3, G: 0, H: 0, total: 43, snitt: 3.28, strykprosent: 7, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'PHI100', emnenavn: 'Examen philosophicum', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['PHI100-1', 'PHI101-1'], merknad: 'Studieplanen skriver «PHI100/PHI101 Ex Phil»; PHI101 er seminarversjonen.',
+            years: [
+              { year: 2021, A: 8, B: 7, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 4, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 9, B: 10, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 4.27, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 8, B: 21, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 37, snitt: 4, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 8, B: 6, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 4, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 5, B: 11, C: 9, D: 6, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 3.48, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'LAD100', emnenavn: 'Introduksjon til digitale verktøy', studiepoeng: 5, aar: 1, semester: 'januarblokk',
+            dbhEmnekoder: ['LAD100-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 38, H: 0, total: 38, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 36, H: 0, total: 36, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 42, H: 0, total: 42, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 43, H: 0, total: 43, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 36, H: 0, total: 36, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'LAA116', emnenavn: 'Introduksjon i landskapsarkitektur II', studiepoeng: 15, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['LAA116-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 42, H: 0, total: 42, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 43, H: 0, total: 43, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 46, H: 0, total: 46, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 43, H: 0, total: 43, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 42, H: 0, total: 42, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'APL240', emnenavn: 'Miljø og planlegging, del 1', studiepoeng: 5, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['APL240-1'],
+            years: [
+              { year: 2021, A: 6, B: 20, C: 9, D: 4, E: 0, F: 0, G: 0, H: 0, total: 39, snitt: 3.72, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 5, B: 11, C: 11, D: 3, E: 4, F: 0, G: 0, H: 0, total: 34, snitt: 3.29, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 6, C: 25, D: 5, E: 0, F: 0, G: 0, H: 0, total: 36, snitt: 3.03, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 14, C: 19, D: 4, E: 0, F: 0, G: 0, H: 0, total: 37, snitt: 3.27, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 9, C: 17, D: 6, E: 4, F: 0, G: 0, H: 0, total: 36, snitt: 2.86, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'JORD160', emnenavn: 'Introduksjon om jord', studiepoeng: 5, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['JORD160-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 36, H: 0, total: 36, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2022, A: 12, B: 10, C: 7, D: 6, E: 0, F: 0, G: 0, H: 0, total: 35, snitt: 3.8, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 11, B: 21, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 41, snitt: 4.05, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 24, B: 10, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 37, snitt: 4.57, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 5, B: 19, C: 10, D: 4, E: 0, F: 0, G: 0, H: 0, total: 38, snitt: 3.66, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'LAA214', emnenavn: 'Bebyggelse og landskap', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['LAA214-1'], merknad: 'Emnet er redusert fra 15 til 10 sp; DBH-tallene for LAA214-1 er registrert med 15 sp.',
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 36, H: 0, total: 36, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 45, H: 0, total: 45, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 41, H: 0, total: 41, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 38, H: 0, total: 38, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 36, H: 0, total: 36, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'PHG113', emnenavn: 'Landskapsplanter - Økologi og bærekraftig plantebruk', studiepoeng: 20, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['PHG113-2', 'PHG113-1'], merknad: 'Oppstart augustblokk, fortsetter i høstparallell. PHG113-1 er den eldre 10 sp-versjonen.',
+            years: [
+              { year: 2021, A: 0, B: 7, C: 17, D: 6, E: 0, F: 0, G: 0, H: 0, total: 30, snitt: 3.03, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 4, C: 18, D: 7, E: 0, F: 0, G: 0, H: 0, total: 29, snitt: 2.9, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 4, B: 8, C: 17, D: 0, E: 0, F: 0, G: 0, H: 0, total: 29, snitt: 3.55, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 3, B: 12, C: 16, D: 0, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 3.58, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 6, B: 16, C: 11, D: 0, E: 0, F: 0, G: 0, H: 0, total: 33, snitt: 3.85, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'LAA250', emnenavn: 'Landskapsforståelse', studiepoeng: 15, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['LAA250-1'],
+            years: [
+              { year: 2021, A: 4, B: 13, C: 15, D: 10, E: 0, F: 0, G: 0, H: 0, total: 42, snitt: 3.26, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 12, C: 17, D: 0, E: 0, F: 0, G: 0, H: 0, total: 29, snitt: 3.41, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 3, B: 12, C: 20, D: 4, E: 0, F: 0, G: 0, H: 0, total: 39, snitt: 3.36, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 7, C: 16, D: 10, E: 0, F: 0, G: 0, H: 0, total: 33, snitt: 2.91, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 3, B: 9, C: 19, D: 0, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 3.48, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'LAA211', emnenavn: 'Hagekunstens og landskapsarkitekturens historie', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['LAA211-1'], merknad: 'Utvidet fra 5 til 10 sp; DBH-tallene for LAA211-1 er registrert med 5 sp.',
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 47, H: 7, total: 54, snitt: null, strykprosent: null, bestattprosent: 87 },
+              { year: 2022, A: 0, B: 4, C: 21, D: 6, E: 6, F: 6, G: 0, H: 0, total: 43, snitt: 2.26, strykprosent: 14, bestattprosent: null },
+              { year: 2023, A: 0, B: 8, C: 14, D: 10, E: 5, F: 0, G: 0, H: 0, total: 37, snitt: 2.68, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 4, B: 13, C: 19, D: 7, E: 0, F: 0, G: 0, H: 0, total: 43, snitt: 3.33, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 37, H: 4, total: 41, snitt: null, strykprosent: null, bestattprosent: 90.2 },
+            ],
+          },
+          {
+            emnekode: 'PHG213', emnenavn: 'Landskapsplanter - Planteplan i praksis', studiepoeng: 5, aar: 2, semester: 'juniblokk',
+            dbhEmnekoder: ['PHG213-1'], merknad: 'Emnekatalogen oppgir 5 sp og juniblokk; DBH har registrert PHG213-1 med 15 sp.',
+            years: [
+              { year: 2021, A: 22, B: 9, C: 5, D: 0, E: 0, F: 5, G: 0, H: 0, total: 41, snitt: 3.93, strykprosent: 12.2, bestattprosent: null },
+              { year: 2022, A: 18, B: 10, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 37, snitt: 4.24, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 24, B: 8, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 32, snitt: 4.75, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 11, B: 20, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 34, snitt: 4.24, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 12, B: 18, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 34, snitt: 4.24, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'LAA224', emnenavn: 'Forming med vegetasjon', studiepoeng: 20, aar: 3, semester: 'høst',
+            dbhEmnekoder: ['LAA224-2', 'LAA224-1'], merknad: 'Oppstart augustblokk, fortsetter i høstparallell. LAA224-1 er den eldre 15 sp-versjonen.',
+            years: [
+              { year: 2021, A: 0, B: 17, C: 22, D: 6, E: 0, F: 0, G: 0, H: 0, total: 45, snitt: 3.24, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 16, C: 17, D: 3, E: 0, F: 0, G: 0, H: 0, total: 36, snitt: 3.36, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 5, B: 16, C: 20, D: 0, E: 0, F: 0, G: 0, H: 0, total: 41, snitt: 3.63, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 3, B: 15, C: 22, D: 0, E: 0, F: 0, G: 0, H: 0, total: 40, snitt: 3.52, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 16, C: 15, D: 4, E: 0, F: 0, G: 0, H: 0, total: 35, snitt: 3.34, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'PHG215', emnenavn: 'Landskapsplanter - etablering, skjøtsel og bevaring', studiepoeng: 10, aar: 3, semester: 'høst',
+            dbhEmnekoder: ['PHG215-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 48, H: 0, total: 48, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2022, A: 3, B: 26, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 32, snitt: 4, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 4, B: 23, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 35, snitt: 3.89, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 19, C: 15, D: 4, E: 0, F: 0, G: 0, H: 0, total: 38, snitt: 3.39, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 5, B: 27, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 37, snitt: 4, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'MAST302', emnenavn: 'Planlegging av masteroppgaven - landskapsarkitektur', studiepoeng: 5, aar: 4, semester: 'vår',
+            dbhEmnekoder: ['MAST302-1'], merknad: 'Studenter på utveksling kan få fritak.',
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 36, H: 0, total: 36, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 43, H: 0, total: 43, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 44, H: 0, total: 44, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 49, H: 0, total: 49, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 40, H: 0, total: 40, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'M30-LA', emnenavn: 'Masteroppgave', studiepoeng: 30, aar: 5, semester: 'vår',
+            dbhEmnekoder: ['M30-LA-1'],
+            years: [
+              { year: 2021, A: 16, B: 18, C: 6, D: 4, E: 0, F: 0, G: 0, H: 0, total: 44, snitt: 4.05, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 14, B: 13, C: 11, D: 0, E: 0, F: 0, G: 0, H: 0, total: 38, snitt: 4.08, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 6, B: 27, C: 11, D: 0, E: 0, F: 0, G: 0, H: 0, total: 44, snitt: 3.89, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 12, B: 21, C: 10, D: 0, E: 0, F: 0, G: 0, H: 0, total: 43, snitt: 4.05, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 12, B: 19, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 39, snitt: 4.1, strykprosent: 0, bestattprosent: null },
+            ],
+          },
         ],
         spesialiseringer: [
         ],
       },
       {
         entryId: 'aho_la', shortName: 'AHO', institusjon: 'Arkitektur- og designhøgskolen i Oslo', isNmbu: false, programnavn: 'Landskapsarkitektur',
-        studieplanAar: null, kilder: [],
-        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
-        merknad: 'Studieplan ikke hentet ennå.',
+        studieplanAar: '2026/2027', kilder: ['https://www.aho.no/studier/program/master-i-landskapsarkitektur/', 'https://www.aho.no/studier/program/master-i-landskapsarkitektur/studieplaner/2026.html', 'https://uit.no/utdanning/program/oppbygging?studkode=IMA-LANDA&p_document_id=553760'],
+        totaltStudiepoeng: 300, obligatoriskeStudiepoeng: 300,
+        merknad: 'Femårig fellesgrad: de tre første årene (seks første semestre) tas ved AHO i Oslo, de to siste ved UiT Norges arktiske universitet i Tromsø. AHOs egen studieplanside viser bare år 1–3; år 4–5 er hentet fra UiTs oppbyggingsside for programkode IMA-LANDA. Hele graden på 300 sp er obligatorisk – det finnes ingen valgemner, bare mulighet til å søke utveksling i 4. studieår. I DBH-tallene ligger det også «80 112-1 GK1 Examen Philosophicum» og «80 113-1 GK1 Skriveøvelser» fra tidligere kull (erstattet av EXFAC), samt HMS-0501-1 og HMS-0502-1 (0 sp HMS-kurs ved UiT) som ikke står i studieplanen for 2026.',
         obligatoriske: [
+          {
+            emnekode: '61 110', emnenavn: 'Form - Landskapslaboratorium', studiepoeng: 20, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['61 110-1', '61 110-2'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 23, H: 0, total: 23, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 24, H: 0, total: 24, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 20, H: 0, total: 20, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 21, H: 0, total: 21, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 19, H: 0, total: 19, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: '61 111', emnenavn: 'Plantebruk', studiepoeng: 4, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['61 111-1'],
+            years: [
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 19, H: 0, total: 19, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'EXFAC', emnenavn: 'Examen facultatum - Teori og praksis for arkitektur, design og landskapsarkitektur', studiepoeng: 6, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['EXFAC-1'],
+            years: [
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 20, H: 0, total: 20, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 21, H: 0, total: 21, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: '61 120', emnenavn: 'Form - Parklaboratorium', studiepoeng: 20, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['61 120-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 25, H: 0, total: 25, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 23, H: 0, total: 23, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 25, H: 0, total: 25, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 20, H: 3, total: 23, snitt: null, strykprosent: null, bestattprosent: 87 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 21, H: 0, total: 21, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: '61 121', emnenavn: 'Landskapsarkitekturens historie', studiepoeng: 6, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['61 121-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 25, H: 6, total: 31, snitt: null, strykprosent: null, bestattprosent: 80.6 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 23, H: 0, total: 23, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2023, A: 5, B: 14, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 3.96, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 5, B: 10, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 4.05, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 4, B: 10, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 3.9, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: '61 123', emnenavn: 'Økologi for landskapsarkitektur 1', studiepoeng: 4, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['61 123-1'],
+            years: [
+              { year: 2021, A: 4, B: 11, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 3.83, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 4, B: 10, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 3.78, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 25, H: 0, total: 25, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 20, H: 0, total: 20, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 20, H: 0, total: 20, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: '61 131', emnenavn: 'Landskapsmedia: Landskap- og terrengforming', studiepoeng: 6, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['61 131-1'],
+            years: [
+              { year: 2021, A: 10, B: 11, C: 3, D: 0, E: 0, F: 4, G: 0, H: 0, total: 28, snitt: 3.68, strykprosent: 14.3, bestattprosent: null },
+              { year: 2022, A: 5, B: 8, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 4, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 6, B: 10, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 3.96, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 5, B: 6, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 3.94, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 3, B: 9, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 3.83, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: '61 133', emnenavn: 'Systemer – Naturlaboratorium', studiepoeng: 20, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['61 133-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 25, H: 0, total: 25, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 17, H: 3, total: 20, snitt: null, strykprosent: null, bestattprosent: 85 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 26, H: 0, total: 26, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 19, H: 6, total: 25, snitt: null, strykprosent: null, bestattprosent: 76 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 19, H: 0, total: 19, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: '61 134', emnenavn: 'Økologi for landskapsarkitektur 2', studiepoeng: 4, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['61 134-1'],
+            years: [
+              { year: 2021, A: 3, B: 9, C: 11, D: 0, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 3.65, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 3, B: 9, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 3.94, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 23, H: 0, total: 23, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 21, H: 0, total: 21, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 19, H: 3, total: 22, snitt: null, strykprosent: null, bestattprosent: 86.4 },
+            ],
+          },
+          {
+            emnekode: '61 141', emnenavn: 'Landskapsmedia - Material- og konstruksjonslære', studiepoeng: 6, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['61 141-1'],
+            years: [
+              { year: 2021, A: 3, B: 13, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 4.19, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 8, B: 12, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 4.12, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 3, B: 9, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3.79, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 6, B: 12, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 4.09, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 6, B: 7, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 4.06, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: '61 143', emnenavn: 'Systemer – Bynaturlaboratorium', studiepoeng: 20, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['61 143-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 18, H: 0, total: 18, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 26, H: 0, total: 26, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 21, H: 0, total: 21, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 23, H: 0, total: 23, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 19, H: 0, total: 19, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: '61 144', emnenavn: 'Samtidens landskapsarkitektur', studiepoeng: 4, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['61 144-1'],
+            years: [
+              { year: 2021, A: 4, B: 11, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 4, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 5, B: 14, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 24, snitt: 4, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 5, B: 14, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 4.26, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 4, B: 15, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 4, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 3, B: 13, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 4.19, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: '61 150', emnenavn: 'Fellesrom - By og landskap', studiepoeng: 24, aar: 3, semester: 'høst',
+            dbhEmnekoder: ['61 150-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 19, H: 0, total: 19, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 24, H: 0, total: 24, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 20, H: 0, total: 20, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 21, H: 0, total: 21, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 17, H: 0, total: 17, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: '61 151', emnenavn: 'By- og byplanhistorie', studiepoeng: 6, aar: 3, semester: 'høst',
+            dbhEmnekoder: ['61 151-1'],
+            years: [
+              { year: 2021, A: 3, B: 3, C: 12, D: 0, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 3.5, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 5, C: 10, D: 5, E: 3, F: 0, G: 0, H: 0, total: 23, snitt: 2.74, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 3, B: 12, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 3.9, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 3, B: 5, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 3.65, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 3, C: 8, D: 4, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 2.93, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: '61 160', emnenavn: 'Fellesrom - Sted og territorier i nord', studiepoeng: 20, aar: 3, semester: 'vår',
+            dbhEmnekoder: ['61 160-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 16, H: 0, total: 16, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 19, H: 0, total: 19, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 24, H: 6, total: 30, snitt: null, strykprosent: null, bestattprosent: 80 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 21, H: 0, total: 21, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 21, H: 0, total: 21, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: '61 161', emnenavn: 'Landskapsteori - Forståelse og lesning av nordlige landskap og steder', studiepoeng: 6, aar: 3, semester: 'vår',
+            dbhEmnekoder: ['61 161-1'],
+            years: [
+              { year: 2021, A: 5, B: 8, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 4.12, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 4, B: 15, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 4.21, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 4, B: 6, C: 12, D: 3, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 3.44, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 5, B: 10, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3.95, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 3, B: 7, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3.68, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: '61 162', emnenavn: 'Økologi for landskapsarkitektur 3', studiepoeng: 4, aar: 3, semester: 'vår',
+            dbhEmnekoder: ['61 162-1'],
+            years: [
+              { year: 2021, A: 3, B: 4, C: 6, D: 3, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 3.44, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 0, C: 9, D: 6, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 2.6, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 26, H: 0, total: 26, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 20, H: 0, total: 20, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 20, H: 0, total: 20, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'LAN-3071', emnenavn: 'Studio 1: Urbane praksiser', studiepoeng: 24, aar: 4, semester: 'høst',
+            dbhEmnekoder: ['LAN-3071-1'], merknad: 'Undervises ved UiT i Tromsø.',
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 5, H: 0, total: 5, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 11, H: 0, total: 11, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 4, H: 0, total: 4, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 17, H: 0, total: 17, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 14, H: 0, total: 14, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'LAN-3072', emnenavn: 'Digitale landskaper', studiepoeng: 6, aar: 4, semester: 'høst',
+            dbhEmnekoder: ['LAN-3072-1'], merknad: 'Undervises ved UiT i Tromsø.',
+            years: [
+              { year: 2022, A: 4, B: 4, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 4, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 4, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 16, H: 0, total: 16, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 14, H: 0, total: 14, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'LAN-3081', emnenavn: 'Studio 2: Landskapspraksiser', studiepoeng: 24, aar: 4, semester: 'vår',
+            dbhEmnekoder: ['LAN-3081-1'], merknad: 'Undervises ved UiT i Tromsø.',
+            years: [
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 4, H: 0, total: 4, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 12, H: 0, total: 12, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 4, H: 0, total: 4, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 16, H: 0, total: 16, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'LAN-3082', emnenavn: 'Natursyn og landskapspraksiser', studiepoeng: 6, aar: 4, semester: 'vår',
+            dbhEmnekoder: ['LAN-3082-1'], merknad: 'Undervises ved UiT i Tromsø.',
+            years: [
+              { year: 2022, A: 0, B: 0, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 3, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 7, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 3.7, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 5, H: 0, total: 5, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 17, H: 0, total: 17, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'LAN-3091', emnenavn: 'Studio 3: Territorielle praksiser', studiepoeng: 24, aar: 5, semester: 'høst',
+            dbhEmnekoder: ['LAN-3091-1'], merknad: 'Undervises ved UiT i Tromsø.',
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 13, H: 0, total: 13, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 5, H: 0, total: 5, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 18, H: 0, total: 18, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'LAN-3092', emnenavn: 'Prediplom', studiepoeng: 6, aar: 5, semester: 'høst',
+            dbhEmnekoder: ['LAN-3092-1'], merknad: 'Undervises ved UiT i Tromsø.',
+            years: [
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 3, H: 0, total: 3, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 13, H: 0, total: 13, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 4, H: 0, total: 4, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 18, H: 0, total: 18, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'LAN-3900', emnenavn: 'Diplomoppgave / Masteroppgave', studiepoeng: 30, aar: 5, semester: 'vår',
+            dbhEmnekoder: ['LAN-3900-1'], merknad: 'Undervises ved UiT i Tromsø.',
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 3, H: 0, total: 3, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 12, H: 0, total: 12, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 5, H: 0, total: 5, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
         ],
         spesialiseringer: [
         ],
       },
       {
         entryId: 'hvl_landskapsplanlegging_la', shortName: 'HVL Sogndal', institusjon: 'Høgskulen på Vestlandet', isNmbu: false, programnavn: 'Landskapsplanlegging med landskapsarkitektur',
-        studieplanAar: null, kilder: [],
-        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
-        merknad: 'Studieplan ikke hentet ennå.',
+        studieplanAar: '2026/2027', kilder: ['https://www.hvl.no/studier/studieprogram/landskapsplanlegging-med-landskapsarkitektur/', 'https://www.hvl.no/studier/studieprogram/landskapsplanlegging-med-landskapsarkitektur/2026h/studieplan/', 'https://www.hvl.no/studier/studieprogram/landskapsplanlegging-med-landskapsarkitektur/2026h/utdanningsplan/'],
+        totaltStudiepoeng: 180, obligatoriskeStudiepoeng: 180,
+        merknad: 'Heile graden er obligatorisk: seks semester à 30 sp, der alle emna er sette opp i utdanningsplanen for kull haust 2026. Det finst ingen valemne, men 4. semester er tilrettelagt for utveksling, og emnevalet i utlandet må førehandsgodkjennast av HVL. Dei fleste emna blir underviste i blokk over 6–7 veker med sluttvurdering før neste emne startar. PL461-3 Kulturlandskapsskjøtsel ligg i DBH-tala frå eldre kull, men står ikkje i planen for 2026.',
         obligatoriske: [
+          {
+            emnekode: 'BI424', emnenavn: 'Botanikk grunnkurs', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['BI424-1'],
+            years: [
+              { year: 2021, A: 0, B: 13, C: 16, D: 8, E: 0, F: 0, G: 0, H: 0, total: 37, snitt: 3.14, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 8, C: 13, D: 7, E: 0, F: 3, G: 0, H: 0, total: 31, snitt: 2.74, strykprosent: 9.7, bestattprosent: null },
+              { year: 2023, A: 3, B: 10, C: 13, D: 9, E: 0, F: 5, G: 0, H: 0, total: 40, snitt: 2.8, strykprosent: 12.5, bestattprosent: null },
+              { year: 2024, A: 0, B: 7, C: 13, D: 12, E: 4, F: 4, G: 0, H: 0, total: 40, snitt: 2.38, strykprosent: 10, bestattprosent: null },
+              { year: 2025, A: 5, B: 12, C: 12, D: 8, E: 4, F: 13, G: 0, H: 0, total: 54, snitt: 2.39, strykprosent: 24.1, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'GE413', emnenavn: 'Kartlære og GIS', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['GE413-1'],
+            years: [
+              { year: 2021, A: 0, B: 13, C: 13, D: 13, E: 0, F: 0, G: 0, H: 0, total: 39, snitt: 3, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 6, C: 12, D: 6, E: 0, F: 3, G: 0, H: 0, total: 27, snitt: 2.67, strykprosent: 11.1, bestattprosent: null },
+              { year: 2023, A: 4, B: 7, C: 18, D: 12, E: 0, F: 0, G: 0, H: 0, total: 41, snitt: 3.07, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 11, C: 16, D: 8, E: 3, F: 0, G: 0, H: 0, total: 38, snitt: 2.92, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 7, C: 17, D: 10, E: 4, F: 7, G: 0, H: 0, total: 45, snitt: 2.29, strykprosent: 15.6, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'PL425', emnenavn: 'Rom og design', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['PL425-2'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 34, H: 0, total: 34, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 28, H: 0, total: 28, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 39, H: 0, total: 39, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 43, H: 0, total: 43, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 46, H: 0, total: 46, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'BI436', emnenavn: 'Grønstruktur og urban vegetasjon', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['BI436-1'],
+            years: [
+              { year: 2021, A: 8, B: 17, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 29, snitt: 4.14, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 8, B: 16, C: 0, D: 3, E: 0, F: 3, G: 0, H: 0, total: 30, snitt: 3.67, strykprosent: 10, bestattprosent: null },
+              { year: 2023, A: 8, B: 10, C: 6, D: 0, E: 0, F: 7, G: 0, H: 0, total: 31, snitt: 3.16, strykprosent: 22.6, bestattprosent: null },
+              { year: 2024, A: 7, B: 24, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 39, snitt: 3.97, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 11, B: 21, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 41, snitt: 4.05, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'BI445', emnenavn: 'Økologi grunnkurs', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['BI445-3'],
+            years: [
+              { year: 2021, A: 7, B: 7, C: 14, D: 3, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 3.58, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 6, B: 15, C: 9, D: 3, E: 0, F: 0, G: 0, H: 0, total: 33, snitt: 3.73, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 14, C: 8, D: 5, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 3.33, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 9, B: 18, C: 12, D: 0, E: 0, F: 0, G: 0, H: 0, total: 39, snitt: 3.92, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 12, B: 14, C: 10, D: 3, E: 0, F: 0, G: 0, H: 0, total: 39, snitt: 3.9, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'PL471', emnenavn: 'Kulturmiljøforvaltning', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['PL471-2'],
+            years: [
+              { year: 2021, A: 5, B: 6, C: 15, D: 12, E: 3, F: 0, G: 0, H: 0, total: 41, snitt: 2.95, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 4, B: 12, C: 10, D: 6, E: 0, F: 0, G: 0, H: 0, total: 32, snitt: 3.44, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 3, B: 4, C: 11, D: 6, E: 4, F: 0, G: 0, H: 0, total: 28, snitt: 2.86, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 12, C: 12, D: 9, E: 0, F: 0, G: 0, H: 0, total: 33, snitt: 3.09, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 3, B: 13, C: 18, D: 7, E: 0, F: 0, G: 0, H: 0, total: 41, snitt: 3.29, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'GE406', emnenavn: 'Geologi grunnkurs', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['GE406-1'],
+            years: [
+              { year: 2021, A: 0, B: 4, C: 9, D: 11, E: 0, F: 0, G: 0, H: 0, total: 24, snitt: 2.71, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 3, C: 12, D: 4, E: 4, F: 0, G: 0, H: 0, total: 23, snitt: 2.61, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 0, C: 5, D: 6, E: 5, F: 11, G: 0, H: 0, total: 27, snitt: 1.19, strykprosent: 40.7, bestattprosent: null },
+              { year: 2024, A: 0, B: 0, C: 18, D: 12, E: 8, F: 3, G: 0, H: 0, total: 41, snitt: 2.1, strykprosent: 7.3, bestattprosent: null },
+              { year: 2025, A: 0, B: 3, C: 14, D: 6, E: 7, F: 12, G: 0, H: 0, total: 42, snitt: 1.74, strykprosent: 28.6, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'ME420', emnenavn: 'Statistikk', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['ME420-4'],
+            years: [
+              { year: 2021, A: 0, B: 10, C: 12, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 3.45, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 5, B: 9, C: 12, D: 0, E: 0, F: 0, G: 0, H: 0, total: 26, snitt: 3.73, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 4, B: 5, C: 13, D: 3, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 3.4, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 4, B: 18, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 29, snitt: 3.9, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 9, B: 10, C: 15, D: 0, E: 0, F: 0, G: 0, H: 0, total: 34, snitt: 3.82, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'PL416', emnenavn: 'Landskapsanalyse', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['PL416-2'],
+            years: [
+              { year: 2021, A: 0, B: 7, C: 15, D: 7, E: 0, F: 0, G: 0, H: 0, total: 29, snitt: 3, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 8, B: 7, C: 8, D: 3, E: 0, F: 0, G: 0, H: 0, total: 26, snitt: 3.77, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 3, B: 6, C: 8, D: 5, E: 3, F: 0, G: 0, H: 0, total: 25, snitt: 3.04, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 7, C: 14, D: 7, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 3, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 5, C: 20, D: 10, E: 4, F: 0, G: 0, H: 0, total: 39, snitt: 2.67, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'BI434', emnenavn: 'Vegetasjonsøkologi', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['BI434-1'],
+            years: [
+              { year: 2021, A: 4, B: 8, C: 5, D: 4, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3.57, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 3, B: 7, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 4.3, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 5, C: 10, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 3.33, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 3, C: 13, D: 3, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 9, C: 6, D: 3, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 3.33, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'BI435', emnenavn: 'Landskapsøkologi', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['BI435-1'],
+            years: [
+              { year: 2021, A: 0, B: 5, C: 10, D: 5, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 3, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 5, C: 8, D: 4, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 3.06, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 3, C: 7, D: 9, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 2.68, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 3, C: 12, D: 3, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 3, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 3, B: 4, C: 7, D: 4, E: 3, F: 3, G: 0, H: 0, total: 24, snitt: 2.62, strykprosent: 12.5, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'PL412', emnenavn: 'Landskapsinngrep', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['PL412-2'],
+            years: [
+              { year: 2021, A: 6, B: 14, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 4.3, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 4, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 3.33, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 8, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 3.57, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 12, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 3.6, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 3, B: 7, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 3.76, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'PL413', emnenavn: 'Miljø- og forvaltningsrett', studiepoeng: 10, aar: 3, semester: 'høst',
+            dbhEmnekoder: ['PL413-1'],
+            years: [
+              { year: 2021, A: 0, B: 5, C: 10, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 3.33, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 16, C: 19, D: 15, E: 0, F: 0, G: 0, H: 0, total: 50, snitt: 3.02, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 9, C: 6, D: 5, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 3.2, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 5, C: 14, D: 8, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 2.89, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'PL417', emnenavn: 'Arealplanlegging', studiepoeng: 10, aar: 3, semester: 'høst',
+            dbhEmnekoder: ['PL417-1'],
+            years: [
+              { year: 2021, A: 0, B: 7, C: 9, D: 3, E: 0, F: 3, G: 0, H: 0, total: 22, snitt: 2.77, strykprosent: 13.6, bestattprosent: null },
+              { year: 2022, A: 3, B: 10, C: 11, D: 4, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 3.43, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 4, B: 14, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 3.96, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 9, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 3.5, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 4, B: 11, C: 12, D: 0, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 3.7, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'PL462', emnenavn: 'Naturrestaurering', studiepoeng: 10, aar: 3, semester: 'høst',
+            dbhEmnekoder: ['PL462-1'],
+            years: [
+              { year: 2024, A: 0, B: 5, C: 9, D: 5, E: 3, F: 0, G: 0, H: 0, total: 22, snitt: 2.73, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 7, C: 12, D: 8, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 2.96, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'PL418', emnenavn: 'Reguleringsplanlegging', studiepoeng: 10, aar: 3, semester: 'vår',
+            dbhEmnekoder: ['PL418-1'],
+            years: [
+              { year: 2021, A: 10, B: 4, C: 7, D: 3, E: 0, F: 0, G: 0, H: 0, total: 24, snitt: 3.88, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 4, B: 9, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3.81, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 4, B: 9, C: 13, D: 0, E: 0, F: 0, G: 0, H: 0, total: 26, snitt: 3.65, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 3, B: 14, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 3.8, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 9, B: 0, C: 6, D: 6, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3.57, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'PL491', emnenavn: 'Bacheloroppgåve i Landskapsplanlegging med landskapsarkitektur', studiepoeng: 20, aar: 3, semester: 'vår',
+            dbhEmnekoder: ['PL491-1'],
+            years: [
+              { year: 2021, A: 7, B: 10, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 4.09, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 8, B: 6, C: 3, D: 3, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 3.95, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 7, B: 15, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 30, snitt: 3.97, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 12, B: 7, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 24, snitt: 4.29, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 12, B: 3, C: 4, D: 4, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 4, strykprosent: 0, bestattprosent: null },
+            ],
+          },
         ],
         spesialiseringer: [
         ],
@@ -1666,90 +2274,1304 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
     programs: [
       {
         entryId: 'nmbu_byreg', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'By- og regionplanlegging (master 5 år)',
-        studieplanAar: null, kilder: [],
-        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
-        merknad: 'Studieplan ikke hentet ennå.',
+        studieplanAar: '2025/2026', kilder: ['https://www.nmbu.no/studier/master-5-aar/og-regionplanlegging', 'https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2025-07/BYREG%20studieplan%202025%20pr%20juni%202025.pdf', 'https://www.nmbu.no/emne/LAA200', 'https://www.nmbu.no/emne/EIE310', 'https://www.nmbu.no/emne/MAST301'],
+        totaltStudiepoeng: 300, obligatoriskeStudiepoeng: 185,
+        merknad: 'Studieplanmatrisen gjelder opptak 2025; NMBU hadde ikke publisert en egen 2026-matrise for BYREG da dette ble hentet. Listen over inneholder bare emner alle studenter må ta. I tillegg krever planen to obligatoriske valg: (1) minst to av de fire fordypningsemnene på masternivå LAA350 Prosjekter i byutvikling (20 sp), LAA360 Regional landskapsplanlegging og lokalsamfunnsutvikling (20 sp), APL360 Planlegging for bærekraftige byregioner (15 sp) og APL350 Prosjektutvikling og prosjektgjennomføring (15 sp); (2) ett av emnene MAST301 Planlegging av masteroppgaven (5 sp, fordelt på 2,5 sp vår 4. år og 2,5 sp høst 5. år) eller AOS340 Kvalitativ metode (5 sp) – bare ett av dem er obligatorisk. 3. studieår er tilrettelagt for utveksling og/eller praksis (PRAK200, 30 sp), og resten av studiet fylles med valgfrie emner. Semesterverdiene over er lest ut av matrisens blokk-/parallellrader.',
         obligatoriske: [
+          {
+            emnekode: 'APL100', emnenavn: 'Introduksjon til profesjonsstudie i By- og regionplanlegging', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['APL100-1'], merknad: 'Oppstart augustblokk (5 sp), fortsetter i høstparallell (5 sp).',
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 41, H: 0, total: 41, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 36, H: 0, total: 36, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 39, H: 0, total: 39, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 43, H: 0, total: 43, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 47, H: 0, total: 47, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'JUS100', emnenavn: 'Juridisk metode og norsk rettssystem', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['JUS100-1'],
+            years: [
+              { year: 2021, A: 8, B: 11, C: 17, D: 8, E: 0, F: 0, G: 0, H: 0, total: 44, snitt: 3.43, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 4, B: 11, C: 15, D: 0, E: 0, F: 0, G: 0, H: 0, total: 30, snitt: 3.63, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 4, B: 17, C: 14, D: 5, E: 0, F: 0, G: 0, H: 0, total: 40, snitt: 3.5, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 6, B: 12, C: 14, D: 8, E: 0, F: 0, G: 0, H: 0, total: 40, snitt: 3.4, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 10, C: 16, D: 9, E: 7, F: 3, G: 0, H: 0, total: 45, snitt: 2.51, strykprosent: 6.7, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'JUS201', emnenavn: 'Offentlig saksbehandling og forvaltningsrett', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['JUS201-1'],
+            years: [
+              { year: 2021, A: 4, B: 20, C: 19, D: 6, E: 0, F: 0, G: 0, H: 0, total: 49, snitt: 3.45, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 4, B: 17, C: 11, D: 3, E: 0, F: 0, G: 0, H: 0, total: 35, snitt: 3.63, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 4, B: 19, C: 13, D: 6, E: 0, F: 0, G: 0, H: 0, total: 42, snitt: 3.5, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 3, B: 10, C: 21, D: 10, E: 4, F: 3, G: 0, H: 0, total: 51, snitt: 2.78, strykprosent: 5.9, bestattprosent: null },
+              { year: 2025, A: 6, B: 18, C: 19, D: 8, E: 0, F: 0, G: 0, H: 0, total: 51, snitt: 3.43, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'PHI100', emnenavn: 'Examen philosophicum', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['PHI100-1', 'PHI101-1', 'PHI102-1'], merknad: 'PHI101 er seminarversjonen og PHI102 den engelske versjonen.',
+            years: [
+              { year: 2022, A: 0, B: 12, C: 11, D: 0, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 3.52, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 11, B: 9, C: 9, D: 3, E: 0, F: 0, G: 0, H: 0, total: 32, snitt: 3.88, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 6, B: 18, C: 13, D: 0, E: 0, F: 0, G: 25, H: 0, total: 62, snitt: 3.81, strykprosent: 0, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 14, C: 11, D: 4, E: 0, F: 6, G: 3, H: 0, total: 38, snitt: 2.77, strykprosent: 17.1, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'LAD100', emnenavn: 'Introduksjon til digitale verktøy', studiepoeng: 5, aar: 1, semester: 'januarblokk',
+            dbhEmnekoder: ['LAD100-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 48, H: 0, total: 48, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 46, H: 0, total: 46, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 43, H: 0, total: 43, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 47, H: 0, total: 47, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 48, H: 0, total: 48, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'APL103', emnenavn: 'By- og regionplanleggingens historie og fagtradisjon', studiepoeng: 15, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['APL103-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 52, H: 0, total: 52, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 46, H: 0, total: 46, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 46, H: 0, total: 46, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 48, H: 0, total: 48, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 56, H: 0, total: 56, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'APL108', emnenavn: 'Introduksjon til arealplanlegging', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['APL108-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 38, H: 0, total: 38, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 39, H: 0, total: 39, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 37, H: 0, total: 37, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 38, H: 0, total: 38, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 43, H: 0, total: 43, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'LAA200', emnenavn: 'Stedsutvikling og romlig analyse', studiepoeng: 15, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['LAA200-1'], merknad: 'Studieplanen kaller emnet «Landskapsforståelse og stedsutvikling»; oppstart augustblokk (5 sp), fortsetter i høstparallell (10 sp).',
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 36, H: 0, total: 36, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 44, H: 0, total: 44, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 43, H: 0, total: 43, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 47, H: 0, total: 47, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 45, H: 0, total: 45, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'JUS220', emnenavn: 'Miljøforvaltningsrett', studiepoeng: 5, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['JUS220-1'],
+            years: [
+              { year: 2021, A: 6, B: 12, C: 13, D: 5, E: 0, F: 0, G: 0, H: 0, total: 36, snitt: 3.53, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 4, B: 12, C: 14, D: 4, E: 4, F: 8, G: 0, H: 0, total: 46, snitt: 2.65, strykprosent: 17.4, bestattprosent: null },
+              { year: 2023, A: 7, B: 16, C: 12, D: 6, E: 0, F: 0, G: 0, H: 0, total: 41, snitt: 3.59, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 8, B: 12, C: 20, D: 7, E: 0, F: 0, G: 0, H: 0, total: 47, snitt: 3.45, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 8, C: 18, D: 11, E: 6, F: 3, G: 0, H: 0, total: 46, snitt: 2.48, strykprosent: 6.5, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'AOS240', emnenavn: 'Samfunnsvitenskapelig metode', studiepoeng: 5, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['AOS240-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 26, H: 0, total: 26, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2022, A: 0, B: 7, C: 18, D: 3, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 3.14, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 6, B: 25, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 34, snitt: 4.09, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 6, B: 15, C: 14, D: 0, E: 0, F: 0, G: 0, H: 0, total: 35, snitt: 3.77, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 22, C: 16, D: 0, E: 0, F: 0, G: 0, H: 0, total: 38, snitt: 3.58, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'JUS110', emnenavn: 'Innføring i eiendomsjus', studiepoeng: 5, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['JUS110-1'],
+            years: [
+              { year: 2021, A: 0, B: 5, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 3.5, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 6, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 4, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 4, B: 11, C: 23, D: 14, E: 9, F: 7, G: 0, H: 0, total: 68, snitt: 2.5, strykprosent: 10.3, bestattprosent: null },
+              { year: 2025, A: 9, B: 32, C: 23, D: 11, E: 0, F: 0, G: 0, H: 0, total: 75, snitt: 3.52, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'NATF200', emnenavn: 'Vern og forvaltning av norsk natur', studiepoeng: 5, aar: 2, semester: 'januarblokk',
+            dbhEmnekoder: ['NATF200-1'],
+            years: [
+              { year: 2021, A: 0, B: 4, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 3.44, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 4, C: 7, D: 7, E: 3, F: 3, G: 0, H: 0, total: 24, snitt: 2.25, strykprosent: 12.5, bestattprosent: null },
+              { year: 2023, A: 0, B: 6, C: 14, D: 12, E: 0, F: 0, G: 0, H: 0, total: 32, snitt: 2.81, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 3, B: 10, C: 10, D: 10, E: 0, F: 0, G: 0, H: 0, total: 33, snitt: 3.18, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 4, B: 10, C: 12, D: 8, E: 0, F: 0, G: 0, H: 0, total: 34, snitt: 3.29, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'APL200', emnenavn: 'Lokal planlegging', studiepoeng: 15, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['APL200-1'],
+            years: [
+              { year: 2021, A: 10, B: 20, C: 10, D: 0, E: 0, F: 0, G: 0, H: 0, total: 40, snitt: 4, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 10, B: 12, C: 13, D: 0, E: 0, F: 0, G: 0, H: 0, total: 35, snitt: 3.91, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 6, B: 25, C: 15, D: 0, E: 4, F: 0, G: 0, H: 0, total: 50, snitt: 3.58, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 6, B: 12, C: 13, D: 12, E: 0, F: 0, G: 0, H: 0, total: 43, snitt: 3.28, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 15, B: 21, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 44, snitt: 4.16, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'JUS320', emnenavn: 'Plan- og bygningsrett I - planlegging og gjennomføringsvirkemidler', studiepoeng: 5, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['JUS320-1'],
+            years: [
+              { year: 2021, A: 5, B: 9, C: 12, D: 11, E: 0, F: 4, G: 0, H: 0, total: 41, snitt: 2.9, strykprosent: 9.8, bestattprosent: null },
+              { year: 2022, A: 4, B: 10, C: 17, D: 7, E: 0, F: 0, G: 0, H: 0, total: 38, snitt: 3.29, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 4, B: 15, C: 15, D: 9, E: 5, F: 0, G: 0, H: 0, total: 48, snitt: 3.08, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 6, B: 14, C: 17, D: 10, E: 0, F: 0, G: 0, H: 0, total: 47, snitt: 3.34, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 6, B: 17, C: 14, D: 9, E: 6, F: 0, G: 0, H: 0, total: 52, snitt: 3.15, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'APL230', emnenavn: 'Planteori', studiepoeng: 10, aar: 3, semester: 'høst',
+            dbhEmnekoder: ['APL230-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 40, H: 0, total: 40, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 36, H: 0, total: 36, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 42, H: 0, total: 42, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 36, H: 0, total: 36, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 58, H: 0, total: 58, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'EIE310', emnenavn: 'Eiendomsmarked og analyse', studiepoeng: 10, aar: 3, semester: 'høst',
+            dbhEmnekoder: ['EIE310-1'], merknad: 'Studieplanen kaller emnet «Eiendomsutvikling og analyse».',
+            years: [
+              { year: 2021, A: 0, B: 8, C: 10, D: 0, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 3.44, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 3, B: 12, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 3.78, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 4, B: 12, C: 4, D: 5, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 3.6, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 0, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 3, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 4, B: 10, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3.86, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'JUS321', emnenavn: 'Plan- og bygningsrett II - byggesak', studiepoeng: 5, aar: 3, semester: 'høst',
+            dbhEmnekoder: ['JUS321-1'],
+            years: [
+              { year: 2021, A: 4, B: 11, C: 6, D: 4, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 3.6, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 5, B: 7, C: 12, D: 0, E: 0, F: 0, G: 0, H: 0, total: 24, snitt: 3.71, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 4, B: 9, C: 11, D: 4, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 3.46, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 4, B: 0, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 3.73, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 7, B: 9, C: 14, D: 6, E: 0, F: 3, G: 0, H: 0, total: 39, snitt: 3.21, strykprosent: 7.7, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'APL280', emnenavn: 'Urban sosiologi', studiepoeng: 5, aar: 3, semester: 'høst',
+            dbhEmnekoder: ['APL280-1'],
+            years: [
+              { year: 2021, A: 6, B: 11, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 4.35, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 12, B: 16, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 4.43, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 6, B: 15, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 4, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 6, B: 7, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 4.46, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 6, B: 21, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 4.22, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'APL380', emnenavn: 'Environmental Governance for Planning', studiepoeng: 10, aar: 5, semester: 'høst',
+            dbhEmnekoder: ['APL380-1'],
+            years: [
+              { year: 2021, A: 0, B: 7, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 3.7, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 3, B: 13, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 4.19, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 3, B: 13, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 3.86, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 8, B: 13, C: 11, D: 0, E: 0, F: 0, G: 0, H: 0, total: 32, snitt: 3.91, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 4, B: 29, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 37, snitt: 4, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'M30-BYREG', emnenavn: 'Masteroppgave', studiepoeng: 30, aar: 5, semester: 'vår',
+            dbhEmnekoder: ['M30-BYREG-1'], merknad: 'Januarblokk + vårparallell.',
+            years: [
+              { year: 2021, A: 3, B: 17, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 24, snitt: 3.96, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 9, B: 15, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 4.18, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 7, B: 8, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 3.96, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 6, B: 20, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 34, snitt: 3.94, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 12, B: 13, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 32, snitt: 4.16, strykprosent: 0, bestattprosent: null },
+            ],
+          },
         ],
         spesialiseringer: [
         ],
       },
       {
         entryId: 'uis_byplanlegging', shortName: 'UiS', institusjon: 'Universitetet i Stavanger', isNmbu: false, programnavn: 'Byplanlegging',
-        studieplanAar: null, kilder: [],
-        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
-        merknad: 'Studieplan ikke hentet ennå.',
+        studieplanAar: '2026/2027', kilder: ['https://www.uis.no/nb/studier/byplanlegging-master-5-ar', 'http://web.archive.org/web/20250122085935/https://www.uis.no/nb/studier/byplanlegging-master-5-ar', 'https://www.uis.no/nb/studier/byggingenior-bachelor', 'https://www.uis.no/nb/studier/byplanlegging-master-2-ar'],
+        totaltStudiepoeng: 300, obligatoriskeStudiepoeng: 210,
+        merknad: 'VIKTIG FORBEHOLD: UiS tar ikke lenger opp studenter til det femårige masterløpet i byplanlegging – fra 2025 er programsiden avpublisert (krever innlogging), og den arkiverte siden fra januar 2025 sier eksplisitt: «I 2025 kan du ikke søke deg inn på byplanlegging master 5 år». Samme side beskriver løpet som «en kombinasjon av treårig bachelorgrad i byggingeniør (studieretning byplanlegging) og en toårig mastergrad i byplanlegging». Emnelisten over er derfor rekonstruert fra de to gjeldende delprogrammene slik de står i UiS\' studieplaner for 2026/2027: år 1–3 er de obligatoriske emnene på bachelor i byggingeniør med studieretning byplanlegging (identisk med uis_ing_bygg_byplan), og år 4–5 er de obligatoriske emnene på master i byplanlegging (2 år). Den opprinnelige femårige studieplanen er ikke tilgjengelig. Alle dbhEmnekoder er tomme fordi DBH ikke har karakterdata registrert på denne entryId-en. 5. semester (30 sp) er valgemner eller utveksling; BYG240 Byregionen anbefales for opptak til masterstudiet. 3. semester av masterdelen (9. semester) er valgemner/utveksling med fire emnepakker: Sustainable Urban Development and Mobility, Renewable Urban Energy, Safe and Resilient Cities og Management. Obligatoriske studiepoeng (210) er summen av emnene over.',
         obligatoriske: [
+          {
+            emnekode: 'BYG100', emnenavn: 'Dataassistert konstruksjon (DAK)', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'DAT125', emnenavn: 'Introduksjon til Programmering', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'TN110', emnenavn: 'Kurs i studieteknikk og ingeniør- og realfaglig arbeidsmetode', studiepoeng: 0, aar: 1, semester: 'helår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'MAT100', emnenavn: 'Matematiske metoder 1', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'FYS100', emnenavn: 'Mekanikk', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BYG150', emnenavn: 'Byggematerialer', studiepoeng: 5, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BYG115', emnenavn: 'Byrommet', studiepoeng: 5, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'MAT200', emnenavn: 'Matematiske metoder 2', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BYG105', emnenavn: 'Stedsforståelse og byteori', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'KJE101', emnenavn: 'Grunnleggende kjemi', studiepoeng: 5, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'MAF210', emnenavn: 'Numerisk modellering 1', studiepoeng: 5, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BYG120', emnenavn: 'Områdeplanlegging', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BYG130', emnenavn: 'Vegplanlegging', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BYG285', emnenavn: 'Arealplanlegging for bærekraft og resiliens', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BYG235', emnenavn: 'Bygningsfysikk', studiepoeng: 5, aar: 2, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BYG225', emnenavn: 'Bytransformasjon', studiepoeng: 5, aar: 2, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'STA100', emnenavn: 'Sannsynlighetsregning og statistikk 1', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BYGBBAC', emnenavn: 'Bacheloroppgave i bygg - byplanlegging', studiepoeng: 20, aar: 3, semester: 'helår',
+            dbhEmnekoder: [], merknad: 'Går over 5. og 6. semester.',
+            years: [],
+          },
+          {
+            emnekode: 'ING200', emnenavn: 'Ingeniørfaglig systememne - Teknologiledelse', studiepoeng: 10, aar: 3, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BYG655', emnenavn: 'New Technologies and Ideas for Sustainable City Development', studiepoeng: 10, aar: 4, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BYG510', emnenavn: 'Placemaking', studiepoeng: 10, aar: 4, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BYG500', emnenavn: 'Urban Analysis and Planning Methods', studiepoeng: 10, aar: 4, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'RIS660', emnenavn: 'Research Methods in Risk, Safety, and Security Studies', studiepoeng: 10, aar: 4, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BYG640', emnenavn: 'Selected Topics in City and Regional Planning', studiepoeng: 10, aar: 4, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BYG610', emnenavn: 'Sustainable City Regions', studiepoeng: 10, aar: 4, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'BYGMAS', emnenavn: 'Master\'s Thesis in City and Regional Planning', studiepoeng: 30, aar: 5, semester: 'vår',
+            dbhEmnekoder: [], merknad: 'Går over 3. og 4. semester av masterdelen (9. og 10. semester).',
+            years: [],
+          },
         ],
         spesialiseringer: [
         ],
       },
       {
         entryId: 'uis_byplan_samfsikkerhet', shortName: 'UiS (bachelor)', institusjon: 'Universitetet i Stavanger', isNmbu: false, programnavn: 'Byplanlegging og samfunnssikkerhet',
-        studieplanAar: null, kilder: [],
-        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
-        merknad: 'Studieplan ikke hentet ennå.',
+        studieplanAar: '2026/2027', kilder: ['https://www.uis.no/nb/studier/byplanlegging-og-samfunnssikkerhet-bachelor'],
+        totaltStudiepoeng: 180, obligatoriskeStudiepoeng: 140,
+        merknad: 'I 4. semester er det i tillegg et obligatorisk valg mellom BYG285 Arealplanlegging for bærekraft og resiliens (10 sp, DBH BYG285-1) og BYG125 Vann og avløp (10 sp; BYG125-1 finnes i DBH for byggingeniør, men ikke registrert på dette programmet). 5. semester (30 sp) er valgemner, praksis eller utveksling. Anbefalte valgemner: BYG240 Byregionen (anbefales for opptak til masterstudiet i byplanlegging), BST210 Miljø- og energipolitikk, BYS300 Praksis i byplanlegging og samfunnssikkerhet og BYG130 Vegplanlegging. Examen philosophicum (SVEXPHIL) er ikke obligatorisk i denne planen, men ligger som valgemne i 5. semester – DBH-tallene inneholder derfor SVEXPHIL-6. Planen er revidert: BYS110 er erstattet av BYS225, og BYS220 har byttet navn fra «Kriser og beredskap» til «Samfunnssikkerhet og beredskap».',
         obligatoriske: [
+          {
+            emnekode: 'BYG100', emnenavn: 'Dataassistert konstruksjon (DAK)', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['BYG100-1'],
+            years: [
+              { year: 2022, A: 0, B: 13, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3.62, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 4, C: 21, D: 0, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 3.16, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 15, C: 23, D: 0, E: 0, F: 0, G: 0, H: 0, total: 38, snitt: 3.39, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 0, C: 21, D: 13, E: 9, F: 0, G: 39, H: 8, total: 90, snitt: 2.28, strykprosent: 0, bestattprosent: 83 },
+            ],
+          },
+          {
+            emnekode: 'BYS115', emnenavn: 'Innføring i samfunnsplanlegging', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['BYS115-1'],
+            years: [
+              { year: 2025, A: 14, B: 16, C: 14, D: 0, E: 3, F: 0, G: 0, H: 0, total: 47, snitt: 3.81, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'TN120', emnenavn: 'Kurs i studieteknikk og arbeidsmetode', studiepoeng: 0, aar: 1, semester: 'helår',
+            dbhEmnekoder: ['TN120-1'], merknad: 'Går over 1. og 2. semester.',
+            years: [
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 47, H: 0, total: 47, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'BYS120', emnenavn: 'Risiko- og sårbarhetsanalyse', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['BYS120-1'],
+            years: [
+              { year: 2023, A: 4, B: 8, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 3.94, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 10, B: 23, C: 31, D: 6, E: 4, F: 0, G: 0, H: 0, total: 74, snitt: 3.39, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 9, B: 20, C: 37, D: 20, E: 0, F: 3, G: 0, H: 0, total: 89, snitt: 3.1, strykprosent: 3.4, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'BYS100', emnenavn: 'Risikosamfunnet', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['BYS100-1'],
+            years: [
+              { year: 2021, A: 4, B: 11, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3.9, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 3, B: 9, C: 9, D: 6, E: 3, F: 0, G: 0, H: 0, total: 30, snitt: 3.1, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 5, B: 13, C: 16, D: 7, E: 0, F: 0, G: 0, H: 0, total: 41, snitt: 3.39, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 4, B: 18, C: 17, D: 8, E: 0, F: 0, G: 0, H: 0, total: 47, snitt: 3.38, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 10, B: 13, C: 11, D: 13, E: 3, F: 0, G: 0, H: 0, total: 50, snitt: 3.28, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'BYS225', emnenavn: 'Byplanlegging og sikkerhet i praksis', studiepoeng: 5, aar: 1, semester: 'vår',
+            dbhEmnekoder: [], merknad: 'Nytt emne i den reviderte planen; ingen karakterdata i DBH ennå. Erstatter BYS110-1 Byplanlegging og sikkerhet (10 sp).',
+            years: [],
+          },
+          {
+            emnekode: 'BYG115', emnenavn: 'Byrommet', studiepoeng: 5, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['BYG115-1'],
+            years: [
+              { year: 2022, A: 4, B: 12, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3.95, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 3, B: 21, C: 4, D: 0, E: 0, F: 3, G: 0, H: 0, total: 31, snitt: 3.58, strykprosent: 9.7, bestattprosent: null },
+              { year: 2024, A: 4, B: 17, C: 17, D: 4, E: 0, F: 0, G: 0, H: 0, total: 42, snitt: 3.5, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 3, B: 19, C: 18, D: 4, E: 0, F: 0, G: 0, H: 0, total: 44, snitt: 3.48, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'BYS220', emnenavn: 'Samfunnssikkerhet og beredskap', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['BYS220-1'], merknad: 'DBH har emnet registrert under det tidligere navnet «Kriser og beredskap».',
+            years: [
+              { year: 2023, A: 5, B: 17, C: 18, D: 7, E: 0, F: 0, G: 0, H: 0, total: 47, snitt: 3.43, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 4, B: 9, C: 16, D: 6, E: 7, F: 0, G: 0, H: 0, total: 42, snitt: 2.93, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 12, B: 13, C: 11, D: 8, E: 3, F: 3, G: 0, H: 0, total: 50, snitt: 3.28, strykprosent: 6, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'BYG105', emnenavn: 'Stedsforståelse og byteori', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['BYG105-1'], merknad: 'DBH har emnet registrert som «Stedsforståelse og Byteori».',
+            years: [
+              { year: 2022, A: 3, B: 11, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 3.77, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 3, B: 11, C: 10, D: 0, E: 0, F: 0, G: 0, H: 0, total: 24, snitt: 3.71, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 3, B: 15, C: 17, D: 5, E: 0, F: 0, G: 0, H: 0, total: 40, snitt: 3.4, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 17, C: 26, D: 3, E: 0, F: 0, G: 0, H: 0, total: 46, snitt: 3.3, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'BST120', emnenavn: 'Offentlig politikk og administrasjon', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['BST120-1'],
+            years: [
+              { year: 2021, A: 4, B: 10, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3.86, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 11, C: 11, D: 6, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 3.18, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 7, B: 11, C: 9, D: 5, E: 0, F: 0, G: 0, H: 0, total: 32, snitt: 3.62, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 4, B: 14, C: 10, D: 11, E: 0, F: 0, G: 0, H: 0, total: 39, snitt: 3.28, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'BYG120', emnenavn: 'Områdeplanlegging', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['BYG120-1'],
+            years: [
+              { year: 2022, A: 8, B: 8, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 4.2, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 18, C: 10, D: 0, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 3.64, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 5, B: 22, C: 12, D: 0, E: 0, F: 0, G: 0, H: 0, total: 39, snitt: 3.82, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 6, B: 22, C: 12, D: 0, E: 0, F: 0, G: 0, H: 0, total: 40, snitt: 3.85, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'BYS200', emnenavn: 'Politikk, beslutninger og risiko', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['BYS200-1'],
+            years: [
+              { year: 2022, A: 0, B: 4, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 3.36, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 5, C: 7, D: 10, E: 9, F: 0, G: 0, H: 0, total: 31, snitt: 2.26, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 3, B: 7, C: 14, D: 12, E: 3, F: 0, G: 0, H: 0, total: 39, snitt: 2.87, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 3, C: 5, D: 18, E: 4, F: 0, G: 0, H: 0, total: 30, snitt: 2.23, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'BYS310', emnenavn: 'Klima, risiko og bærekraftig utvikling', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['BYS310-1'],
+            years: [
+              { year: 2024, A: 3, B: 9, C: 4, D: 5, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3.48, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 13, C: 12, D: 3, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 3.36, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'BRH220', emnenavn: 'Samfunnsvitenskapelig metode', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: [], merknad: 'Emnet er hentet fra et annet fagmiljø ved UiS og har ingen karakterdata registrert på dette studieprogrammet i DBH.',
+            years: [],
+          },
+          {
+            emnekode: 'BYSBAC', emnenavn: 'Bacheloroppgave i byplanlegging og samfunnssikkerhet', studiepoeng: 20, aar: 3, semester: 'helår',
+            dbhEmnekoder: ['BYSBAC-1'], merknad: 'Går over 5. og 6. semester.',
+            years: [
+              { year: 2024, A: 0, B: 9, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 3.64, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 8, B: 13, C: 7, D: 4, E: 0, F: 0, G: 0, H: 0, total: 32, snitt: 3.78, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'BYS210', emnenavn: 'Sårbarhet og teknologisk utvikling', studiepoeng: 10, aar: 3, semester: 'vår',
+            dbhEmnekoder: ['BYS210-1'],
+            years: [
+              { year: 2022, A: 0, B: 0, C: 8, D: 9, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 2.47, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 7, C: 11, D: 8, E: 3, F: 0, G: 0, H: 0, total: 29, snitt: 2.76, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 10, C: 14, D: 9, E: 6, F: 0, G: 0, H: 0, total: 39, snitt: 2.72, strykprosent: 0, bestattprosent: null },
+            ],
+          },
         ],
         spesialiseringer: [
         ],
       },
       {
         entryId: 'uis_ing_bygg_byplan', shortName: 'UiS (ingeniør)', institusjon: 'Universitetet i Stavanger', isNmbu: false, programnavn: 'Ingeniør, bygg, studieretning byplanlegging',
-        studieplanAar: null, kilder: [],
-        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
-        merknad: 'Studieplan ikke hentet ennå.',
+        studieplanAar: '2026/2027', kilder: ['https://www.uis.no/nb/studier/byggingenior-bachelor'],
+        totaltStudiepoeng: 180, obligatoriskeStudiepoeng: 80,
+        merknad: 'Bachelor i byggingeniør har tre studieretninger – byplanlegging, infrastruktur og konstruksjonsteknikk – og valget tas etter 1. semester. Feltet «obligatoriske» inneholder bare de emnene som er felles for alle tre studieretningene (80 sp). Emnene som er spesifikke for byplanlegging (70 sp) står under «spesialiseringer». En student på byplanlegging har dermed 150 sp obligatorisk av 180; 5. semester (30 sp) er valgemner, praksis (BYG270) eller utveksling. Anbefalte valgemner for byplanlegging: BYG230 Byggadministrasjon med BIM, BYG240 Byregionen (anbefales for opptak til masterstudiet i byplanlegging), BYG270 Praksis i bygg, byplanlegging/teknisk planlegging og MAT300 Vektoranalyse; BYG260 Byutviklingsprosjekt 1 og IND200 Økonomi og marked ligger som «andre valgemner». DBH-tallene for entryId-en dekker hele byggingeniørprogrammet og inneholder derfor også emner fra de to andre studieretningene (BYG140, BYG200, BYG205, BYG220, BYG310, GEO285, BYGKBAC, BYGTBAC med flere).',
         obligatoriske: [
+          {
+            emnekode: 'BYG100', emnenavn: 'Dataassistert konstruksjon (DAK)', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['BYG100-1'],
+            years: [
+              { year: 2022, A: 0, B: 8, C: 21, D: 3, E: 0, F: 0, G: 0, H: 0, total: 32, snitt: 3.16, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 0, C: 23, D: 6, E: 5, F: 0, G: 0, H: 0, total: 34, snitt: 2.53, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 8, C: 13, D: 5, E: 3, F: 3, G: 0, H: 0, total: 32, snitt: 2.62, strykprosent: 9.4, bestattprosent: null },
+              { year: 2025, A: 0, B: 0, C: 13, D: 3, E: 6, F: 4, G: 32, H: 7, total: 65, snitt: 1.96, strykprosent: 15.4, bestattprosent: 82.1 },
+            ],
+          },
+          {
+            emnekode: 'DAT125', emnenavn: 'Introduksjon til Programmering', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['DAT125-1'],
+            years: [
+              { year: 2025, A: 3, B: 3, C: 13, D: 0, E: 10, F: 6, G: 0, H: 0, total: 35, snitt: 2.17, strykprosent: 17.1, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'TN110', emnenavn: 'Kurs i studieteknikk og ingeniør- og realfaglig arbeidsmetode', studiepoeng: 0, aar: 1, semester: 'helår',
+            dbhEmnekoder: ['TN110-1'], merknad: 'Går over 1. og 2. semester.',
+            years: [
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 30, H: 0, total: 30, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'MAT100', emnenavn: 'Matematiske metoder 1', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['MAT100-1'],
+            years: [
+              { year: 2021, A: 0, B: 7, C: 15, D: 5, E: 0, F: 12, G: 0, H: 0, total: 39, snitt: 2.13, strykprosent: 30.8, bestattprosent: null },
+              { year: 2022, A: 0, B: 8, C: 7, D: 0, E: 5, F: 19, G: 0, H: 0, total: 39, snitt: 1.49, strykprosent: 48.7, bestattprosent: null },
+              { year: 2023, A: 0, B: 5, C: 10, D: 6, E: 8, F: 20, G: 0, H: 0, total: 49, snitt: 1.43, strykprosent: 40.8, bestattprosent: null },
+              { year: 2024, A: 4, B: 3, C: 5, D: 7, E: 4, F: 13, G: 0, H: 0, total: 36, snitt: 1.81, strykprosent: 36.1, bestattprosent: null },
+              { year: 2025, A: 5, B: 9, C: 17, D: 8, E: 6, F: 12, G: 0, H: 0, total: 57, snitt: 2.35, strykprosent: 21.1, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'FYS100', emnenavn: 'Mekanikk', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['FYS100-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 4, E: 15, F: 21, G: 0, H: 0, total: 40, snitt: 0.57, strykprosent: 52.5, bestattprosent: null },
+              { year: 2022, A: 0, B: 0, C: 10, D: 7, E: 11, F: 16, G: 0, H: 0, total: 44, snitt: 1.25, strykprosent: 36.4, bestattprosent: null },
+              { year: 2023, A: 0, B: 0, C: 0, D: 7, E: 8, F: 23, G: 0, H: 0, total: 38, snitt: 0.58, strykprosent: 60.5, bestattprosent: null },
+              { year: 2024, A: 0, B: 0, C: 0, D: 8, E: 24, F: 15, G: 0, H: 0, total: 47, snitt: 0.85, strykprosent: 31.9, bestattprosent: null },
+              { year: 2025, A: 0, B: 0, C: 8, D: 7, E: 12, F: 16, G: 0, H: 0, total: 43, snitt: 1.16, strykprosent: 37.2, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'BYG150', emnenavn: 'Byggematerialer', studiepoeng: 5, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['BYG150-1'],
+            years: [
+              { year: 2022, A: 4, B: 8, C: 5, D: 3, E: 5, F: 0, G: 0, H: 0, total: 25, snitt: 3.12, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 10, C: 12, D: 3, E: 5, F: 0, G: 0, H: 0, total: 30, snitt: 2.9, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 6, B: 4, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3.84, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 5, B: 4, C: 13, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 3.64, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'MAT200', emnenavn: 'Matematiske metoder 2', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['MAT200-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 5, D: 7, E: 21, F: 18, G: 0, H: 0, total: 51, snitt: 0.98, strykprosent: 35.3, bestattprosent: null },
+              { year: 2022, A: 0, B: 4, C: 8, D: 6, E: 9, F: 12, G: 0, H: 0, total: 39, snitt: 1.56, strykprosent: 30.8, bestattprosent: null },
+              { year: 2023, A: 0, B: 4, C: 15, D: 7, E: 10, F: 10, G: 0, H: 0, total: 46, snitt: 1.85, strykprosent: 21.7, bestattprosent: null },
+              { year: 2024, A: 3, B: 0, C: 20, D: 5, E: 7, F: 6, G: 0, H: 0, total: 41, snitt: 2.24, strykprosent: 14.6, bestattprosent: null },
+              { year: 2025, A: 0, B: 0, C: 11, D: 0, E: 8, F: 10, G: 0, H: 0, total: 29, snitt: 1.41, strykprosent: 34.5, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'KJE101', emnenavn: 'Grunnleggende kjemi', studiepoeng: 5, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['KJE101-1'],
+            years: [
+              { year: 2022, A: 0, B: 3, C: 10, D: 5, E: 6, F: 5, G: 0, H: 0, total: 29, snitt: 2, strykprosent: 17.2, bestattprosent: null },
+              { year: 2023, A: 0, B: 5, C: 9, D: 5, E: 7, F: 15, G: 0, H: 0, total: 41, snitt: 1.56, strykprosent: 36.6, bestattprosent: null },
+              { year: 2024, A: 0, B: 6, C: 14, D: 0, E: 6, F: 14, G: 0, H: 0, total: 40, snitt: 1.8, strykprosent: 35, bestattprosent: null },
+              { year: 2025, A: 4, B: 6, C: 13, D: 3, E: 0, F: 5, G: 0, H: 0, total: 31, snitt: 2.87, strykprosent: 16.1, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'MAF210', emnenavn: 'Numerisk modellering 1', studiepoeng: 5, aar: 2, semester: 'høst',
+            dbhEmnekoder: [], merknad: 'Studieplanen oppgir MAF210. DBH har et emne med samme navn under koden MAF310-1; koden er ikke matchet fordi den ikke er lik eller et prefiks av MAF210.',
+            years: [],
+          },
+          {
+            emnekode: 'BYG235', emnenavn: 'Bygningsfysikk', studiepoeng: 5, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['BYG235-1'],
+            years: [
+              { year: 2023, A: 0, B: 4, C: 6, D: 11, E: 3, F: 9, G: 0, H: 0, total: 33, snitt: 1.79, strykprosent: 27.3, bestattprosent: null },
+              { year: 2024, A: 0, B: 4, C: 5, D: 17, E: 6, F: 11, G: 0, H: 0, total: 43, snitt: 1.65, strykprosent: 25.6, bestattprosent: null },
+              { year: 2025, A: 0, B: 3, C: 13, D: 11, E: 0, F: 15, G: 0, H: 0, total: 42, snitt: 1.74, strykprosent: 35.7, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'STA100', emnenavn: 'Sannsynlighetsregning og statistikk 1', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['STA100-1'],
+            years: [
+              { year: 2021, A: 0, B: 7, C: 9, D: 7, E: 9, F: 9, G: 0, H: 0, total: 41, snitt: 1.9, strykprosent: 22, bestattprosent: null },
+              { year: 2022, A: 0, B: 3, C: 5, D: 4, E: 13, F: 13, G: 0, H: 0, total: 38, snitt: 1.26, strykprosent: 34.2, bestattprosent: null },
+              { year: 2023, A: 4, B: 3, C: 6, D: 11, E: 12, F: 10, G: 0, H: 0, total: 46, snitt: 1.83, strykprosent: 21.7, bestattprosent: null },
+              { year: 2024, A: 0, B: 5, C: 8, D: 3, E: 8, F: 17, G: 0, H: 0, total: 41, snitt: 1.41, strykprosent: 41.5, bestattprosent: null },
+              { year: 2025, A: 4, B: 0, C: 11, D: 3, E: 8, F: 17, G: 0, H: 0, total: 43, snitt: 1.56, strykprosent: 39.5, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'ING200', emnenavn: 'Ingeniørfaglig systememne - Teknologiledelse', studiepoeng: 10, aar: 3, semester: 'vår',
+            dbhEmnekoder: ['ING200-1', 'ING200-2'],
+            years: [
+              { year: 2021, A: 9, B: 21, C: 24, D: 9, E: 3, F: 3, G: 0, H: 0, total: 69, snitt: 3.22, strykprosent: 4.3, bestattprosent: null },
+              { year: 2022, A: 0, B: 5, C: 3, D: 5, E: 12, F: 0, G: 0, H: 0, total: 25, snitt: 2.04, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 6, C: 4, D: 7, E: 9, F: 10, G: 0, H: 0, total: 36, snitt: 1.64, strykprosent: 27.8, bestattprosent: null },
+              { year: 2024, A: 0, B: 0, C: 15, D: 8, E: 3, F: 3, G: 0, H: 0, total: 29, snitt: 2.21, strykprosent: 10.3, bestattprosent: null },
+              { year: 2025, A: 4, B: 14, C: 10, D: 3, E: 6, F: 3, G: 0, H: 0, total: 40, snitt: 2.95, strykprosent: 7.5, bestattprosent: null },
+            ],
+          },
         ],
         spesialiseringer: [
+          { navn: 'Studieretning byplanlegging', obligatoriske: [
+            {
+              emnekode: 'BYG115', emnenavn: 'Byrommet', studiepoeng: 5, aar: 1, semester: 'vår',
+              dbhEmnekoder: ['BYG115-1'], merknad: 'BYG110-1 Byrommet (10 sp) i DBH er den eldre versjonen av emnet.',
+              years: [
+                { year: 2022, A: 0, B: 11, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 4, strykprosent: 0, bestattprosent: null },
+                { year: 2023, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null },
+                { year: 2024, A: 0, B: 8, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 4, strykprosent: 0, bestattprosent: null },
+              ],
+            },
+            {
+              emnekode: 'BYG105', emnenavn: 'Stedsforståelse og byteori', studiepoeng: 10, aar: 1, semester: 'vår',
+              dbhEmnekoder: ['BYG105-1'],
+              years: [
+                { year: 2021, A: 0, B: 0, C: 6, D: 5, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 2.55, strykprosent: 0, bestattprosent: null },
+                { year: 2022, A: 0, B: 0, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 3, strykprosent: 0, bestattprosent: null },
+                { year: 2023, A: 0, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 3, strykprosent: 0, bestattprosent: null },
+                { year: 2024, A: 0, B: 3, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 3.33, strykprosent: 0, bestattprosent: null },
+              ],
+            },
+            {
+              emnekode: 'BYG120', emnenavn: 'Områdeplanlegging', studiepoeng: 10, aar: 2, semester: 'høst',
+              dbhEmnekoder: ['BYG120-1'],
+              years: [
+                { year: 2021, A: 0, B: 8, C: 11, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3.42, strykprosent: 0, bestattprosent: null },
+                { year: 2022, A: 0, B: 0, C: 10, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 3, strykprosent: 0, bestattprosent: null },
+                { year: 2023, A: 0, B: 8, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 3.73, strykprosent: 0, bestattprosent: null },
+                { year: 2024, A: 0, B: 7, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 3.64, strykprosent: 0, bestattprosent: null },
+                { year: 2025, A: 0, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 3, strykprosent: 0, bestattprosent: null },
+              ],
+            },
+            {
+              emnekode: 'BYG130', emnenavn: 'Vegplanlegging', studiepoeng: 10, aar: 2, semester: 'høst',
+              dbhEmnekoder: ['BYG130-1'],
+              years: [
+                { year: 2021, A: 0, B: 6, C: 11, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 3.35, strykprosent: 0, bestattprosent: null },
+                { year: 2022, A: 0, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 3, strykprosent: 0, bestattprosent: null },
+                { year: 2023, A: 0, B: 4, C: 0, D: 4, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 3, strykprosent: 0, bestattprosent: null },
+                { year: 2024, A: 3, B: 8, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 4, strykprosent: 0, bestattprosent: null },
+              ],
+            },
+            {
+              emnekode: 'BYG285', emnenavn: 'Arealplanlegging for bærekraft og resiliens', studiepoeng: 10, aar: 2, semester: 'vår',
+              dbhEmnekoder: ['BYG285-1'],
+              years: [
+                { year: 2025, A: 0, B: 0, C: 0, D: 3, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 2, strykprosent: 0, bestattprosent: null },
+              ],
+            },
+            {
+              emnekode: 'BYG225', emnenavn: 'Bytransformasjon', studiepoeng: 5, aar: 2, semester: 'vår',
+              dbhEmnekoder: ['BYG225-1'],
+              years: [
+                { year: 2023, A: 4, B: 6, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 3.93, strykprosent: 0, bestattprosent: null },
+                { year: 2024, A: 0, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 3, strykprosent: 0, bestattprosent: null },
+                { year: 2025, A: 0, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 4, strykprosent: 0, bestattprosent: null },
+              ],
+            },
+            {
+              emnekode: 'BYGBBAC', emnenavn: 'Bacheloroppgave i bygg - byplanlegging', studiepoeng: 20, aar: 3, semester: 'helår',
+              dbhEmnekoder: ['BYGBBAC-1'], merknad: 'Går over 5. og 6. semester.',
+              years: [
+                { year: 2021, A: 0, B: 0, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 3, strykprosent: 0, bestattprosent: null },
+                { year: 2022, A: 0, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 4, strykprosent: 0, bestattprosent: null },
+                { year: 2024, A: 3, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 4.43, strykprosent: 0, bestattprosent: null },
+              ],
+            },
+          ] },
         ],
       },
       {
         entryId: 'uit_samfunnsplanlegging', shortName: 'UiT', institusjon: 'UiT Norges arktiske universitet', isNmbu: false, programnavn: 'Samfunnsplanlegging',
-        studieplanAar: null, kilder: [],
-        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
-        merknad: 'Studieplan ikke hentet ennå.',
+        studieplanAar: '2026/2027', kilder: ['https://sa.uit.no/utdanning/program/276304/samfunnsplanlegging_og_kulturforstaelse_-_bachelor', 'https://sa.uit.no/Content/930058/cache=20263108124229/Studieplan%20Bachelor%20i%20samfunnsplanlegging%20fra%20og%20med%202026.pdf'],
+        totaltStudiepoeng: 180, obligatoriskeStudiepoeng: 110,
+        merknad: 'Studieplanen er godkjent av HSL-fakultetet 25.09.2024, sist redigert 05.02.2026 og gjelder fra og med høsten 2026. Planen oppgir at 100 sp er obligatoriske emner i samfunnsplanlegging pluss 10 sp obligatorisk examen philosophicum – til sammen 110 sp. 4. og 5. semester er 60 sp valgfrie emner (emnepakker på 30 sp, utveksling, eller praksisemnet SPL-2004 Praksissemester/Internship i 5. semester). I 6. semester kommer 10 sp mikroemner i tillegg til bacheloroppgaven; studenten velger fire heldigitale mikroemner som til sammen gir 10 sp, og disse er ikke navngitt i planen. Programmet er revidert og har byttet navn fra «Samfunnsplanlegging og kulturforståelse» til «Samfunnsplanlegging»; DBH-tallene inneholder derfor også emner fra den gamle planen (EXF-0714, FIL-0700, SOS-2001, SPL-1003, SPL-1011, SPL-2001, STV-1000). Programsiden som er oppført i programkart.json (uit.no/utdanning/program/272680) gir en tom side; gjeldende programside er 276304.',
         obligatoriske: [
+          {
+            emnekode: 'SPL-1001', emnenavn: 'Introduksjon til samfunnsplanlegging', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['SPL-1001-1'],
+            years: [
+              { year: 2021, A: 3, B: 3, C: 10, D: 0, E: 0, F: 3, G: 0, H: 0, total: 19, snitt: 3, strykprosent: 15.8, bestattprosent: null },
+              { year: 2022, A: 0, B: 6, C: 6, D: 6, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 3, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 3, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 3.33, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 3, B: 3, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 3.69, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 0, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 3, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'SPL-1002', emnenavn: 'Geografi og samfunn', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['SPL-1002-2'],
+            years: [
+              { year: 2021, A: 5, B: 8, C: 9, D: 5, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 3.48, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 5, C: 9, D: 5, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 4, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 3.36, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 3, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 3.43, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 0, C: 5, D: 3, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 2.62, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'SPL-2011', emnenavn: 'Bærekraftige samfunn', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['SPL-2011-1'],
+            years: [
+              { year: 2021, A: 3, B: 6, C: 9, D: 6, E: 0, F: 0, G: 0, H: 0, total: 24, snitt: 3.25, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 5, B: 4, C: 4, D: 4, E: 4, F: 0, G: 0, H: 0, total: 21, snitt: 3.1, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 8, C: 7, D: 4, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3.21, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 0, C: 4, D: 6, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 2.4, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 5, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 3.62, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'FIL-0700', emnenavn: 'Examen philosophicum - Tromsøvarianten', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['FIL-0700-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 6, D: 8, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 2.43, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 5, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 3.5, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 0, C: 4, D: 3, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 2.57, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 3, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'SPL-2012', emnenavn: 'GIS i samfunns- og arealplanlegging', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['SPL-2012-1'],
+            years: [
+              { year: 2021, A: 6, B: 7, C: 6, D: 3, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 3.73, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 7, B: 9, C: 7, D: 3, E: 0, F: 0, G: 0, H: 0, total: 26, snitt: 3.77, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 5, B: 5, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 4, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 5, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 3.42, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 7, C: 0, D: 3, E: 0, F: 3, G: 0, H: 0, total: 13, snitt: 2.62, strykprosent: 23.1, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'SPL-2014', emnenavn: 'Regional analyse med feltkurs', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['SPL-2014-1'], merknad: 'SPL-2001-2 i DBH er den eldre 20 sp-versjonen av feltkursemnet.',
+            years: [
+              { year: 2025, A: 0, B: 3, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 3.43, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'SPL-2009', emnenavn: 'Plan, medvirkning og prosess', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['SPL-2009-1'],
+            years: [
+              { year: 2021, A: 0, B: 8, C: 12, D: 3, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 3.22, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 9, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 3.56, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 3, C: 9, D: 4, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 2.94, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 5, C: 3, D: 3, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 3.18, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 3, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 3.5, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'SVF-1050', emnenavn: 'Samfunnsvitenskapelig metode', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['SVF-1050-1', 'SVF-1051-1'], merknad: 'SVF-1051-1 er den nettbaserte varianten.',
+            years: [
+              { year: 2021, A: 0, B: 0, C: 5, D: 5, E: 0, F: 3, G: 0, H: 0, total: 13, snitt: 1.92, strykprosent: 23.1, bestattprosent: null },
+              { year: 2022, A: 0, B: 0, C: 4, D: 0, E: 0, F: 10, G: 0, H: 0, total: 14, snitt: 0.86, strykprosent: 71.4, bestattprosent: null },
+              { year: 2023, A: 0, B: 3, C: 0, D: 0, E: 0, F: 8, G: 0, H: 0, total: 11, snitt: 1.09, strykprosent: 72.7, bestattprosent: null },
+              { year: 2024, A: 0, B: 0, C: 0, D: 3, E: 0, F: 12, G: 0, H: 0, total: 15, snitt: 0.4, strykprosent: 80, bestattprosent: null },
+              { year: 2025, A: 0, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 3, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'SPL-2010', emnenavn: 'Plan- og nettverksstyring', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['SPL-2010-1'],
+            years: [
+              { year: 2021, A: 3, B: 8, C: 5, D: 3, E: 3, F: 0, G: 0, H: 0, total: 22, snitt: 3.23, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 6, C: 8, D: 3, E: 4, F: 3, G: 0, H: 0, total: 24, snitt: 2.42, strykprosent: 12.5, bestattprosent: null },
+              { year: 2023, A: 0, B: 5, C: 5, D: 4, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 3.07, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 4, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 3, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'SPL-2003', emnenavn: 'Bachelorgradsoppgave i samfunnsplanlegging', studiepoeng: 20, aar: 3, semester: 'vår',
+            dbhEmnekoder: ['SPL-2003-1'], merknad: 'DBH har emnet registrert som «Bachelorgradsoppgave i samfunnsplanlegging og kulturforståelse».',
+            years: [
+              { year: 2021, A: 6, B: 3, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 4, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 5, B: 7, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3.89, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 5, B: 5, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 4.07, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 4, B: 6, C: 0, D: 3, E: 0, F: 3, G: 0, H: 0, total: 16, snitt: 3.12, strykprosent: 18.8, bestattprosent: null },
+              { year: 2025, A: 0, B: 5, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 3.56, strykprosent: 0, bestattprosent: null },
+            ],
+          },
         ],
         spesialiseringer: [
         ],
       },
       {
         entryId: 'nord_geografi_samfplan', shortName: 'Nord', institusjon: 'Nord universitet', isNmbu: false, programnavn: 'Geografi og samfunnsplanlegging',
-        studieplanAar: null, kilder: [],
-        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
-        merknad: 'Studieplan ikke hentet ennå.',
+        studieplanAar: '2026/2027', kilder: ['https://www.nord.no/studier/geografi-og-samfunnsplanlegging-bachelor', 'https://www.nord.no/studier/studieplaner/geografi-og-samfunnsplanlegging-bageo-bachelor-host-2026', 'https://www.nord.no/studier/studieplaner/geografi-og-samfunnsplanlegging-bageo-bachelor-host-2025'],
+        totaltStudiepoeng: 180, obligatoriskeStudiepoeng: 140,
+        merknad: 'Studiet er samlingsbasert på campus Levanger. Hele 4. semester (30 sp) er «valg om utveksling eller emner ved Nord», og i 5. semester er det ytterligere 12,5 sp valgfritt ved siden av de obligatoriske emnene. Planen er revidert: GEO2005 Arealplanlegging (10 sp) er erstattet av GEO2014 (7,5 sp) og GEO2003 Bacheloroppgave (20 sp) av GEO2013 (22,5 sp), begge uten karakterdata i DBH. DBH-tallene inneholder også emner fra eldre kull og valgemneporteføljen: GEO2002 Samfunnsplanlegging med GIS, GEO2004 Bærekraftig reiseliv, GEO2006 Romlig analyse, GEO2007 Samfunnsplanlegging og urban teori og JUR1001 Rettslige verktøy i samfunnsfag og forvaltning (obligatorisk i 2025-kullet, ikke i 2026-kullet). Rekkefølgen på emnene er endret mellom kull 2025 og 2026, men emnesettet er nesten likt.',
         obligatoriske: [
+          {
+            emnekode: 'GEO1123', emnenavn: 'Geografi i tekst, teori og vitenskap', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['GEO1123-1'],
+            years: [
+              { year: 2022, A: 0, B: 6, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 3.55, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 3, B: 3, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 3.9, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 3, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 3.5, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 3, B: 6, C: 4, D: 3, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 3.56, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'GEO1132', emnenavn: 'Miljø- og ressursgeografi', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['GEO1132-1'],
+            years: [
+              { year: 2022, A: 0, B: 4, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 3.4, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 4, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 7, B: 5, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 4.12, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'GEO1112', emnenavn: 'Naturgeografi', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['GEO1112-1'],
+            years: [
+              { year: 2022, A: 0, B: 0, C: 4, D: 5, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 2.44, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 4, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 3.57, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 0, C: 0, D: 3, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 2, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 3, B: 8, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 3.93, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'GEO2010', emnenavn: 'Samfunnsplanlegging', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['GEO2010-1'],
+            years: [
+              { year: 2023, A: 0, B: 4, C: 3, D: 3, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 3.1, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 4, C: 0, D: 3, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 3.14, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 4, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 5, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'GEO1142', emnenavn: 'Regional utvikling og globalisering', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['GEO1142-1'],
+            years: [
+              { year: 2023, A: 0, B: 4, C: 3, D: 3, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 3.1, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 0, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 3, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'GEO1043', emnenavn: 'Kartografi', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['GEO1043-1'],
+            years: [
+              { year: 2023, A: 0, B: 0, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 3, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 4, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 0, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 3, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'MET1007', emnenavn: 'Innføring i samfunnsvitenskapelig metode', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['MET1007-1'],
+            years: [
+              { year: 2024, A: 3, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 4.43, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 7, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 3.5, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'GEO1009', emnenavn: 'Geografiske informasjonssystemer (GIS)', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['GEO1009-1'],
+            years: [
+              { year: 2023, A: 3, B: 4, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 3.77, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 6, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 3.67, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'FIL1003', emnenavn: 'Examen philosophicum', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['FIL1003-1'],
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 3, F: 0, G: 0, H: 0, total: 3, snitt: 1, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 0, C: 0, D: 4, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 2, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'GEO2014', emnenavn: 'Arealplanlegging', studiepoeng: 7.5, aar: 3, semester: 'høst',
+            dbhEmnekoder: [], merknad: 'Nytt emne som har erstattet GEO2005-1 Arealplanlegging (10 sp); ingen karakterdata i DBH ennå.',
+            years: [],
+          },
+          {
+            emnekode: 'FIL1004', emnenavn: 'Examen facultatum', studiepoeng: 10, aar: 3, semester: 'høst',
+            dbhEmnekoder: ['FIL1004-1'],
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 3, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 2, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 3, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'GEO2013', emnenavn: 'Bacheloroppgave', studiepoeng: 22.5, aar: 3, semester: 'helår',
+            dbhEmnekoder: [], merknad: 'Går over 5. semester (0 sp) og 6. semester (22,5 sp). Nytt emne som har erstattet GEO2003-1 Bacheloroppgave (20 sp); ingen karakterdata i DBH ennå.',
+            years: [],
+          },
+          {
+            emnekode: 'GEO2001', emnenavn: 'Turisme, lokalsamfunn og sikkerhet', studiepoeng: 10, aar: 3, semester: 'vår',
+            dbhEmnekoder: ['GEO2001-2'],
+            years: [
+              { year: 2024, A: 0, B: 7, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 3.58, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 3, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 4.38, strykprosent: 0, bestattprosent: null },
+            ],
+          },
         ],
         spesialiseringer: [
         ],
       },
       {
         entryId: 'uia_samfunnsplanlegging', shortName: 'UiA', institusjon: 'Universitetet i Agder', isNmbu: false, programnavn: 'Samfunnsplanlegging og kommunikasjon',
-        studieplanAar: null, kilder: [],
-        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
-        merknad: 'Studieplan ikke hentet ennå.',
+        studieplanAar: '2026/2027', kilder: ['https://www.uia.no/studier/program/samfunnsplanlegging-og-kommunikasjon-bachelor/', 'https://www.uia.no/studier/program/samfunnsplanlegging-og-kommunikasjon-bachelor/studieplaner/2026h.html'],
+        totaltStudiepoeng: 180, obligatoriskeStudiepoeng: 120,
+        merknad: 'Studieplanen for kull 2026–2029. I 3. og 4. semester velger studentene en breddeenhet på 40 sp (10 sp høst + 30 sp vår) eller utveksling; tilbudene er Folkehelsearbeid (HEL100, HEL102, HEL103, HEL104), Kommunikasjon og medier (KOM111, KOM112, KOM109 – 45 sp), Sosiologi (SV-133, SV-209, SV-211, SV-134), Statsvitenskap og organisasjon (ORG100, ST-101, ST-102, ST-103), Sustainable Transformation (ORG100, SV-156, SV-157, SV-220) og Globale utviklingsstudier (UT-113, SV-156, UT-107, UT-101). Disse er ikke regnet som obligatoriske siden ingen av dem gjelder alle studenter. I tillegg er det valgemne på 10 sp i 2. semester (ST-101, SV-134 eller SV-211) og 10 sp i 6. semester. DBH-tallene inneholder derfor mange breddeemner. UiA oppgir årene som semestre (Høst 2026 = år 1 høst osv.).',
         obligatoriske: [
+          {
+            emnekode: 'EX-104', emnenavn: 'Examen facultatum, samfunnsvitenskapelig variant', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['EX-104-1'], merknad: 'DBH har emnet registrert som «Examen Facultatum, Social Science Theory and Epistemology».',
+            years: [
+              { year: 2021, A: 0, B: 6, C: 5, D: 9, E: 0, F: 5, G: 0, H: 0, total: 25, snitt: 2.28, strykprosent: 20, bestattprosent: null },
+              { year: 2022, A: 0, B: 8, C: 17, D: 7, E: 5, F: 0, G: 0, H: 0, total: 37, snitt: 2.76, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 4, B: 9, C: 13, D: 4, E: 0, F: 5, G: 0, H: 0, total: 35, snitt: 2.94, strykprosent: 14.3, bestattprosent: null },
+              { year: 2024, A: 0, B: 7, C: 10, D: 8, E: 0, F: 5, G: 0, H: 0, total: 30, snitt: 2.47, strykprosent: 16.7, bestattprosent: null },
+              { year: 2025, A: 0, B: 11, C: 6, D: 9, E: 3, F: 3, G: 0, H: 0, total: 32, snitt: 2.59, strykprosent: 9.4, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'SV-151', emnenavn: 'Innføring i samfunnsplanlegging', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['SV-151-1'],
+            years: [
+              { year: 2021, A: 4, B: 10, C: 7, D: 4, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 3.56, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 9, C: 15, D: 7, E: 3, F: 0, G: 0, H: 0, total: 34, snitt: 2.88, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 7, C: 14, D: 6, E: 7, F: 0, G: 0, H: 0, total: 34, snitt: 2.62, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 6, C: 15, D: 8, E: 0, F: 0, G: 0, H: 0, total: 29, snitt: 2.93, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 4, B: 6, C: 8, D: 7, E: 4, F: 3, G: 0, H: 0, total: 32, snitt: 2.69, strykprosent: 9.4, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'SV-153', emnenavn: 'Kulturgeografiske perspektiver på planlegging og samfunnsendring', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['SV-153-1'],
+            years: [
+              { year: 2021, A: 4, B: 7, C: 12, D: 4, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 3.41, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 12, C: 14, D: 10, E: 0, F: 0, G: 0, H: 0, total: 36, snitt: 3.06, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 5, B: 6, C: 14, D: 11, E: 0, F: 0, G: 0, H: 0, total: 36, snitt: 3.14, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 17, C: 14, D: 0, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 3.55, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 11, C: 20, D: 0, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 3.35, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'EX-100', emnenavn: 'Examen philosophicum', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['EX-100-1'], merknad: 'Flyttes til 4. semester for studenter som velger breddeenheten Folkehelsearbeid.',
+            years: [
+              { year: 2021, A: 0, B: 0, C: 6, D: 6, E: 3, F: 0, G: 0, H: 0, total: 15, snitt: 2.2, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 6, C: 9, D: 0, E: 0, F: 3, G: 0, H: 0, total: 18, snitt: 2.83, strykprosent: 16.7, bestattprosent: null },
+              { year: 2023, A: 0, B: 3, C: 17, D: 5, E: 0, F: 4, G: 0, H: 0, total: 29, snitt: 2.52, strykprosent: 13.8, bestattprosent: null },
+              { year: 2024, A: 0, B: 0, C: 11, D: 11, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 2.5, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 4, C: 4, D: 14, E: 5, F: 0, G: 0, H: 0, total: 27, snitt: 2.26, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'SV-152', emnenavn: 'Økonomisk geografi og planlegging', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['SV-152-1'],
+            years: [
+              { year: 2021, A: 0, B: 8, C: 10, D: 5, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 3.13, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 9, C: 7, D: 5, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3.19, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 7, C: 16, D: 7, E: 0, F: 0, G: 0, H: 0, total: 30, snitt: 3, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 10, C: 14, D: 5, E: 0, F: 0, G: 0, H: 0, total: 29, snitt: 3.17, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 5, C: 9, D: 11, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 2.76, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'SV-200', emnenavn: 'Samfunnsplanlegging - teorier og metoder', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['SV-200-2'],
+            years: [
+              { year: 2021, A: 3, B: 6, C: 11, D: 8, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 3.14, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 8, C: 9, D: 4, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3.19, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 6, B: 8, C: 15, D: 5, E: 0, F: 0, G: 0, H: 0, total: 34, snitt: 3.44, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 3, B: 9, C: 6, D: 11, E: 3, F: 0, G: 0, H: 0, total: 32, snitt: 2.94, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 4, B: 7, C: 8, D: 8, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 3.26, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'SV-212', emnenavn: 'Communication, Media and Planning', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['SV-212-1'],
+            years: [
+              { year: 2021, A: 0, B: 10, C: 13, D: 0, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 3.43, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 9, B: 6, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 4.6, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 18, B: 16, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 34, snitt: 4.53, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 11, C: 17, D: 0, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 3.39, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 5, B: 24, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 29, snitt: 4.17, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'ME-107', emnenavn: 'Research Methods', studiepoeng: 10, aar: 3, semester: 'høst',
+            dbhEmnekoder: ['ME-107-1'],
+            years: [
+              { year: 2021, A: 0, B: 6, C: 10, D: 6, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 3, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 4, B: 0, C: 6, D: 8, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 3, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 5, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 3.38, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 3, B: 14, C: 15, D: 3, E: 0, F: 0, G: 0, H: 0, total: 35, snitt: 3.49, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 7, B: 12, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 24, snitt: 4.08, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'SV-213', emnenavn: 'Byutvikling og planlegging', studiepoeng: 10, aar: 3, semester: 'høst',
+            dbhEmnekoder: ['SV-213-1'],
+            years: [
+              { year: 2021, A: 4, B: 7, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 3.75, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 4, B: 7, C: 6, D: 3, E: 0, F: 4, G: 0, H: 0, total: 24, snitt: 3, strykprosent: 16.7, bestattprosent: null },
+              { year: 2023, A: 0, B: 6, C: 11, D: 4, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3.1, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 4, B: 16, C: 13, D: 0, E: 0, F: 0, G: 0, H: 0, total: 33, snitt: 3.73, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 7, B: 8, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 3.96, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'UT-204', emnenavn: 'The political ecology of global environmental challenges', studiepoeng: 10, aar: 3, semester: 'høst',
+            dbhEmnekoder: ['UT-204-2'],
+            years: [
+              { year: 2021, A: 0, B: 8, C: 8, D: 4, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 3.2, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 4, B: 7, C: 5, D: 6, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 3.41, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 5, C: 10, D: 4, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3.05, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 4, B: 11, C: 15, D: 3, E: 0, F: 0, G: 0, H: 0, total: 33, snitt: 3.48, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 4, B: 13, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 26, snitt: 3.81, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'SV-301', emnenavn: 'Bacheloroppgave i samfunnsplanlegging og kommunikasjon', studiepoeng: 20, aar: 3, semester: 'vår',
+            dbhEmnekoder: ['SV-301-1'],
+            years: [
+              { year: 2021, A: 10, B: 10, C: 3, D: 3, E: 0, F: 0, G: 0, H: 0, total: 26, snitt: 4.04, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 6, B: 8, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 3.91, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 3, B: 8, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 3.7, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 8, B: 0, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 4.07, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 7, B: 12, C: 10, D: 0, E: 0, F: 0, G: 0, H: 0, total: 29, snitt: 3.9, strykprosent: 0, bestattprosent: null },
+            ],
+          },
         ],
         spesialiseringer: [
         ],
       },
       {
         entryId: 'hivolda_planlegging', shortName: 'HVO', institusjon: 'Høgskulen i Volda', isNmbu: false, programnavn: 'Planlegging, administrasjon og ledelse',
-        studieplanAar: null, kilder: [],
-        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
-        merknad: 'Studieplan ikke hentet ennå.',
+        studieplanAar: '2026/2027', kilder: ['https://www.hivolda.no/studietilbod/planlegging-administrasjon-og-leiing/haust'],
+        totaltStudiepoeng: 180, obligatoriskeStudiepoeng: 150,
+        merknad: 'Studieplanen for kull 2026 (matrisa går frå 26H til 29V). Studiet har 150 sp obligatoriske og 30 sp valfrie emne, og er bygd rundt tre søyler: samfunnsplanlegging (PLA), samfunnsstyring/governance (GOV) og prosessleiing (PRO). Heile 4. semester (30 sp) er valemne eller utveksling, og ein kan velje spesialisering innanfor ei av dei tre søylene der og i bacheloroppgåva. Valemne: IPA171 Grunnleggande innføring i leiing (15), IPA203 Internship with internship report (15), IPA206 Internship (30), PLA221 Fordjuping i arealplanlegging, kartkunnskap og GIS (15), GOV115N Kommunal økonomi (15), NAT150 Human evolution and a sustainable future (15) og KOH139 Entreprenørskap i kreative næringar (15). Planen er revidert: PRO231 og IPA250 er nye, og DBH-tala inneheld framleis emne frå den gamle IPA-baserte planen (IPA110, IPA111, IPA112, IPA115, IPA172, IPA173, IPA202, IPA209, IPA210A, IPA274, IPA213).',
         obligatoriske: [
+          {
+            emnekode: 'GOV101', emnenavn: 'Politikk, makt og juss', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['GOV101-1'],
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 12, H: 0, total: 12, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 7, H: 0, total: 7, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 7, H: 0, total: 7, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'PLA101', emnenavn: 'Berekraftig samfunnsutvikling', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['PLA101-1'],
+            years: [
+              { year: 2023, A: 0, B: 0, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 3, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 0, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 3, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'PRO101', emnenavn: 'Organisasjonslære og teamarbeid', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['PRO101-1'],
+            years: [
+              { year: 2023, A: 0, B: 3, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 3.43, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 4, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'GOV102', emnenavn: 'Økonomiske krefter i eit globalt samfunn', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['GOV102-1'],
+            years: [
+              { year: 2024, A: 0, B: 0, C: 5, D: 4, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 2.56, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 6, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 3.67, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'PLA102', emnenavn: 'Samarbeidsdriven samfunnsplanlegging', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['PLA102-1'],
+            years: [
+              { year: 2024, A: 0, B: 0, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 3, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 4, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 3.4, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'PRO102', emnenavn: 'Prosjektarbeid lokalsamfunnsanalyse', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['PRO102-1'],
+            years: [
+              { year: 2024, A: 0, B: 8, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 4, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 5, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 4.56, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'GOV121', emnenavn: 'Innføring i forvaltings- og miljørett', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['GOV121-1'],
+            years: [
+              { year: 2024, A: 0, B: 3, C: 3, D: 4, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 2.9, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'PLA121', emnenavn: 'GIS og kartkunnskap i arealplanlegging', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['PLA121-1'],
+            years: [
+              { year: 2024, A: 0, B: 0, C: 3, D: 3, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 2.5, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'PRO121', emnenavn: 'Samfunnsvitskapleg metode', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['PRO121-1'],
+            years: [
+              { year: 2024, A: 0, B: 0, C: 4, D: 3, E: 3, F: 0, G: 0, H: 0, total: 10, snitt: 2.1, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 0, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 3, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'PLA231', emnenavn: 'Lokal utvikling og strategisk planlegging', studiepoeng: 15, aar: 3, semester: 'høst',
+            dbhEmnekoder: ['PLA231-1'],
+            years: [
+              { year: 2025, A: 0, B: 5, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 3.62, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'GOV231', emnenavn: 'Regional development in the European Union and Norway: Theories and Practice', studiepoeng: 15, aar: 3, semester: 'høst',
+            dbhEmnekoder: ['GOV231-1'],
+            years: [
+              { year: 2025, A: 5, B: 6, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 4, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'PRO231', emnenavn: 'Prosessleiing', studiepoeng: 15, aar: 3, semester: 'vår',
+            dbhEmnekoder: [], merknad: 'Nytt emne i den reviderte planen; ingen karakterdata i DBH ennå.',
+            years: [],
+          },
+          {
+            emnekode: 'IPA250', emnenavn: 'Bacheloroppgåve i samfunnsutvikling', studiepoeng: 15, aar: 3, semester: 'vår',
+            dbhEmnekoder: [], merknad: 'Nytt emne som har erstatta IPA210A-1 Bacheloroppgave i planlegging og administrasjon; ingen karakterdata i DBH ennå.',
+            years: [],
+          },
         ],
         spesialiseringer: [
         ],
       },
       {
         entryId: 'ntnu_fysisk_planlegging', shortName: 'NTNU (master 2 år)', institusjon: 'Norges teknisk-naturvitenskapelige universitet', isNmbu: false, programnavn: 'Fysisk planlegging (fra 2026 Byplanlegging, master 2 år)',
-        studieplanAar: null, kilder: [],
-        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
-        merknad: 'Studieplan ikke hentet ennå.',
+        studieplanAar: '2025/2026', kilder: ['https://www.ntnu.no/studier/mfyspl', 'https://www.ntnu.no/studier/mfyspl/studiets-oppbygning', 'https://www.ntnu.no/studier/studieplan#programmeCode=MFYSPL&year=0'],
+        totaltStudiepoeng: 120, obligatoriskeStudiepoeng: 97.5,
+        merknad: 'Studieplanen for kull 2025, som er det siste kullet: NTNU legger ned masterprogrammet i fysisk planlegging og erstatter det med et nytt masterprogram i byplanlegging fra høsten 2026 (studieplanens kull-liste stopper på 2025). I tillegg til emnene over må studentene ta 7,5 sp Eksperter i team (EiT) i 1. studieår; EiT er obligatorisk som kategori, men studenten velger selv landsby, så ingen enkelt emnekode er obligatorisk – DBH-tallene inneholder derfor flere EiT-emner (TBA4859, TBA4860, TBA4861, TDT4857, TFE4853, TIØ4850, TPD4852). Valgbare emner er AAR4843 GIS-metoder for samordnet areal- og transportplanlegging og AAR5220 Byplanleggingspraksis i uforutsigbare forhold (1. år vår), og AAR4360 Arkitekturens teori og historie B, AAR4828 Eiendomsutvikling og TBM4280 Veg- og transportplanlegging (2. år høst). Inntil ett semester kan tas ved et utenlandsk universitet, fortrinnsvis 3. semester.',
         obligatoriske: [
+          {
+            emnekode: 'AAR4220', emnenavn: 'Region- og kommuneplanlegging', studiepoeng: 7.5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['AAR4220-1'],
+            years: [
+              { year: 2021, A: 10, B: 13, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 30, snitt: 4.1, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 6, B: 10, C: 12, D: 3, E: 0, F: 4, G: 0, H: 0, total: 35, snitt: 3.2, strykprosent: 11.4, bestattprosent: null },
+              { year: 2023, A: 6, B: 19, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 33, snitt: 3.94, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 28, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 4, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 4, B: 29, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 33, snitt: 4.12, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'AAR4841', emnenavn: 'GIS som planverktøy', studiepoeng: 7.5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['AAR4841-1'],
+            years: [
+              { year: 2021, A: 3, B: 16, C: 15, D: 0, E: 0, F: 0, G: 0, H: 0, total: 34, snitt: 3.65, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 4, B: 12, C: 17, D: 5, E: 0, F: 0, G: 0, H: 0, total: 38, snitt: 3.39, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 6, B: 22, C: 10, D: 5, E: 0, F: 0, G: 0, H: 0, total: 43, snitt: 3.67, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 3, B: 12, C: 9, D: 4, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 3.5, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 4, B: 16, C: 10, D: 4, E: 0, F: 0, G: 0, H: 0, total: 34, snitt: 3.59, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'AAR4845', emnenavn: 'Landskapsanalyse', studiepoeng: 7.5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['AAR4845-1'],
+            years: [
+              { year: 2021, A: 3, B: 26, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 34, snitt: 3.94, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 4, B: 21, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 34, snitt: 3.85, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 3, B: 29, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 35, snitt: 4, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 5, B: 23, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 4.18, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 14, B: 20, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 34, snitt: 4.41, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'FP4100', emnenavn: 'Arkitektur og stedsforming', studiepoeng: 7.5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['FP4100-1'],
+            years: [
+              { year: 2021, A: 10, B: 24, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 34, snitt: 4.29, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 18, C: 15, D: 0, E: 0, F: 0, G: 0, H: 0, total: 33, snitt: 3.55, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 9, B: 21, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 34, snitt: 4.15, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 12, C: 16, D: 0, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 3.43, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 11, B: 19, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 30, snitt: 4.37, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'HMS0005', emnenavn: 'HMS-kurs for studenter ved MAEIENDOM, MFYSPL og UEP', studiepoeng: 0, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['HMS0005-1'],
+            years: [
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 32, H: 4, total: 36, snitt: null, strykprosent: null, bestattprosent: 88.9 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 38, H: 0, total: 38, snitt: null, strykprosent: null, bestattprosent: 100 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 22, H: 9, total: 31, snitt: null, strykprosent: null, bestattprosent: 71 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 32, H: 0, total: 32, snitt: null, strykprosent: null, bestattprosent: 100 },
+            ],
+          },
+          {
+            emnekode: 'AAR4215', emnenavn: 'Reguleringsplanlegging', studiepoeng: 7.5, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['AAR4215-1'],
+            years: [
+              { year: 2021, A: 0, B: 33, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 37, snitt: 3.89, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 20, C: 11, D: 0, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 3.65, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 3, B: 19, C: 14, D: 0, E: 0, F: 0, G: 0, H: 0, total: 36, snitt: 3.69, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 8, B: 21, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 36, snitt: 4.03, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 4, B: 12, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 3.8, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'AAR4225', emnenavn: 'Samordnet areal- og transportplanlegging', studiepoeng: 7.5, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['AAR4225-1'],
+            years: [
+              { year: 2021, A: 0, B: 9, C: 18, D: 7, E: 0, F: 0, G: 0, H: 0, total: 34, snitt: 3.06, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 4, B: 15, C: 16, D: 0, E: 0, F: 0, G: 0, H: 0, total: 35, snitt: 3.66, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 0, B: 7, C: 14, D: 9, E: 5, F: 0, G: 0, H: 0, total: 35, snitt: 2.66, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 8, B: 17, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 34, snitt: 3.97, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 9, C: 9, D: 3, E: 4, F: 0, G: 0, H: 0, total: 25, snitt: 2.92, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'AAR4815', emnenavn: 'Plan og byggeprosess', studiepoeng: 7.5, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['AAR4815-1'],
+            years: [
+              { year: 2021, A: 11, B: 18, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 36, snitt: 4.11, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 6, B: 12, C: 13, D: 0, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 3.77, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 10, B: 9, C: 14, D: 0, E: 0, F: 0, G: 0, H: 0, total: 33, snitt: 3.88, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 7, B: 13, C: 7, D: 3, E: 0, F: 0, G: 0, H: 0, total: 30, snitt: 3.8, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 3, B: 8, C: 8, D: 0, E: 3, F: 0, G: 0, H: 0, total: 22, snitt: 3.36, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'AAR4874', emnenavn: 'Teori og metoder for masteroppgaver', studiepoeng: 7.5, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['AAR4874-1'],
+            years: [
+              { year: 2021, A: 4, B: 11, C: 15, D: 6, E: 0, F: 0, G: 0, H: 0, total: 36, snitt: 3.36, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 13, B: 15, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 36, snitt: 4.14, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 13, B: 9, C: 11, D: 0, E: 0, F: 0, G: 0, H: 0, total: 33, snitt: 4.06, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 5, B: 15, C: 14, D: 0, E: 0, F: 0, G: 0, H: 0, total: 34, snitt: 3.74, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 0, B: 5, C: 13, D: 3, E: 3, F: 0, G: 0, H: 0, total: 24, snitt: 2.83, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'FP4350', emnenavn: 'Planleggingsteori', studiepoeng: 7.5, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['FP4350-1'],
+            years: [
+              { year: 2021, A: 5, B: 8, C: 12, D: 9, E: 0, F: 0, G: 0, H: 0, total: 34, snitt: 3.26, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 4, B: 11, C: 11, D: 5, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 3.45, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 3, B: 14, C: 9, D: 6, E: 0, F: 0, G: 0, H: 0, total: 32, snitt: 3.44, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 0, B: 10, C: 18, D: 0, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 3.36, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 3, B: 14, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 3.87, strykprosent: 0, bestattprosent: null },
+            ],
+          },
+          {
+            emnekode: 'FP4400', emnenavn: 'Masteroppgave i fysisk planlegging', studiepoeng: 30, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['FP4400-1'],
+            years: [
+              { year: 2021, A: 5, B: 8, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 3.82, strykprosent: 0, bestattprosent: null },
+              { year: 2022, A: 0, B: 13, C: 13, D: 6, E: 0, F: 0, G: 0, H: 0, total: 32, snitt: 3.22, strykprosent: 0, bestattprosent: null },
+              { year: 2023, A: 10, B: 6, C: 8, D: 6, E: 0, F: 0, G: 0, H: 0, total: 30, snitt: 3.67, strykprosent: 0, bestattprosent: null },
+              { year: 2024, A: 3, B: 10, C: 9, D: 9, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 3.23, strykprosent: 0, bestattprosent: null },
+              { year: 2025, A: 4, B: 16, C: 11, D: 0, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 3.77, strykprosent: 0, bestattprosent: null },
+            ],
+          },
         ],
         spesialiseringer: [
         ],

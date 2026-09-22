@@ -1,0 +1,230 @@
+{
+  "entryId": "uis_ing_bygg_byplan",
+  "programnavn": "Ingeniør, bygg, studieretning byplanlegging (bachelor)",
+  "institusjon": "Universitetet i Stavanger",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.uis.no/nb/studier/byggingenior-bachelor"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 80,
+  "obligatoriske": [
+    {
+      "emnekode": "BYG100",
+      "emnenavn": "Dataassistert konstruksjon (DAK)",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BYG100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "DAT125",
+      "emnenavn": "Introduksjon til Programmering",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "DAT125-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TN110",
+      "emnenavn": "Kurs i studieteknikk og ingeniør- og realfaglig arbeidsmetode",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "helår",
+      "dbhEmnekoder": [
+        "TN110-1"
+      ],
+      "merknad": "Går over 1. og 2. semester."
+    },
+    {
+      "emnekode": "MAT100",
+      "emnenavn": "Matematiske metoder 1",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MAT100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS100",
+      "emnenavn": "Mekanikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FYS100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYG150",
+      "emnenavn": "Byggematerialer",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BYG150-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT200",
+      "emnenavn": "Matematiske metoder 2",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MAT200-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJE101",
+      "emnenavn": "Grunnleggende kjemi",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "KJE101-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAF210",
+      "emnenavn": "Numerisk modellering 1",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen oppgir MAF210. DBH har et emne med samme navn under koden MAF310-1; koden er ikke matchet fordi den ikke er lik eller et prefiks av MAF210."
+    },
+    {
+      "emnekode": "BYG235",
+      "emnenavn": "Bygningsfysikk",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BYG235-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "STA100",
+      "emnenavn": "Sannsynlighetsregning og statistikk 1",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "STA100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ING200",
+      "emnenavn": "Ingeniørfaglig systememne - Teknologiledelse",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "ING200-1",
+        "ING200-2"
+      ],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Studieretning byplanlegging",
+      "obligatoriske": [
+        {
+          "emnekode": "BYG115",
+          "emnenavn": "Byrommet",
+          "studiepoeng": 5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "BYG115-1"
+          ],
+          "merknad": "BYG110-1 Byrommet (10 sp) i DBH er den eldre versjonen av emnet."
+        },
+        {
+          "emnekode": "BYG105",
+          "emnenavn": "Stedsforståelse og byteori",
+          "studiepoeng": 10,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "BYG105-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYG120",
+          "emnenavn": "Områdeplanlegging",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BYG120-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYG130",
+          "emnenavn": "Vegplanlegging",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "BYG130-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYG285",
+          "emnenavn": "Arealplanlegging for bærekraft og resiliens",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "BYG285-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYG225",
+          "emnenavn": "Bytransformasjon",
+          "studiepoeng": 5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "BYG225-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "BYGBBAC",
+          "emnenavn": "Bacheloroppgave i bygg - byplanlegging",
+          "studiepoeng": 20,
+          "aar": 3,
+          "semester": "helår",
+          "dbhEmnekoder": [
+            "BYGBBAC-1"
+          ],
+          "merknad": "Går over 5. og 6. semester."
+        }
+      ]
+    }
+  ],
+  "merknad": "Bachelor i byggingeniør har tre studieretninger – byplanlegging, infrastruktur og konstruksjonsteknikk – og valget tas etter 1. semester. Feltet «obligatoriske» inneholder bare de emnene som er felles for alle tre studieretningene (80 sp). Emnene som er spesifikke for byplanlegging (70 sp) står under «spesialiseringer». En student på byplanlegging har dermed 150 sp obligatorisk av 180; 5. semester (30 sp) er valgemner, praksis (BYG270) eller utveksling. Anbefalte valgemner for byplanlegging: BYG230 Byggadministrasjon med BIM, BYG240 Byregionen (anbefales for opptak til masterstudiet i byplanlegging), BYG270 Praksis i bygg, byplanlegging/teknisk planlegging og MAT300 Vektoranalyse; BYG260 Byutviklingsprosjekt 1 og IND200 Økonomi og marked ligger som «andre valgemner». DBH-tallene for entryId-en dekker hele byggingeniørprogrammet og inneholder derfor også emner fra de to andre studieretningene (BYG140, BYG200, BYG205, BYG220, BYG310, GEO285, BYGKBAC, BYGTBAC med flere)."
+}

@@ -1,0 +1,139 @@
+{
+  "entryId": "ntnu_fysisk_planlegging",
+  "programnavn": "Fysisk planlegging (master 2 år)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://www.ntnu.no/studier/mfyspl",
+    "https://www.ntnu.no/studier/mfyspl/studiets-oppbygning",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=MFYSPL&year=0"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 97.5,
+  "obligatoriske": [
+    {
+      "emnekode": "AAR4220",
+      "emnenavn": "Region- og kommuneplanlegging",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "AAR4220-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "AAR4841",
+      "emnenavn": "GIS som planverktøy",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "AAR4841-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "AAR4845",
+      "emnenavn": "Landskapsanalyse",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "AAR4845-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FP4100",
+      "emnenavn": "Arkitektur og stedsforming",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FP4100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HMS0005",
+      "emnenavn": "HMS-kurs for studenter ved MAEIENDOM, MFYSPL og UEP",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "HMS0005-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "AAR4215",
+      "emnenavn": "Reguleringsplanlegging",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "AAR4215-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "AAR4225",
+      "emnenavn": "Samordnet areal- og transportplanlegging",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "AAR4225-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "AAR4815",
+      "emnenavn": "Plan og byggeprosess",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "AAR4815-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "AAR4874",
+      "emnenavn": "Teori og metoder for masteroppgaver",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "AAR4874-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FP4350",
+      "emnenavn": "Planleggingsteori",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FP4350-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FP4400",
+      "emnenavn": "Masteroppgave i fysisk planlegging",
+      "studiepoeng": 30,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "FP4400-1"
+      ],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Studieplanen for kull 2025, som er det siste kullet: NTNU legger ned masterprogrammet i fysisk planlegging og erstatter det med et nytt masterprogram i byplanlegging fra høsten 2026 (studieplanens kull-liste stopper på 2025). I tillegg til emnene over må studentene ta 7,5 sp Eksperter i team (EiT) i 1. studieår; EiT er obligatorisk som kategori, men studenten velger selv landsby, så ingen enkelt emnekode er obligatorisk – DBH-tallene inneholder derfor flere EiT-emner (TBA4859, TBA4860, TBA4861, TDT4857, TFE4853, TIØ4850, TPD4852). Valgbare emner er AAR4843 GIS-metoder for samordnet areal- og transportplanlegging og AAR5220 Byplanleggingspraksis i uforutsigbare forhold (1. år vår), og AAR4360 Arkitekturens teori og historie B, AAR4828 Eiendomsutvikling og TBM4280 Veg- og transportplanlegging (2. år høst). Inntil ett semester kan tas ved et utenlandsk universitet, fortrinnsvis 3. semester."
+}

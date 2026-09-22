@@ -1,0 +1,128 @@
+{
+  "entryId": "uit_samfunnsplanlegging",
+  "programnavn": "Samfunnsplanlegging (bachelor)",
+  "institusjon": "UiT Norges arktiske universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://sa.uit.no/utdanning/program/276304/samfunnsplanlegging_og_kulturforstaelse_-_bachelor",
+    "https://sa.uit.no/Content/930058/cache=20263108124229/Studieplan%20Bachelor%20i%20samfunnsplanlegging%20fra%20og%20med%202026.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 110,
+  "obligatoriske": [
+    {
+      "emnekode": "SPL-1001",
+      "emnenavn": "Introduksjon til samfunnsplanlegging",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "SPL-1001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "SPL-1002",
+      "emnenavn": "Geografi og samfunn",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "SPL-1002-2"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "SPL-2011",
+      "emnenavn": "Bærekraftige samfunn",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "SPL-2011-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FIL-0700",
+      "emnenavn": "Examen philosophicum - Tromsøvarianten",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "FIL-0700-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "SPL-2012",
+      "emnenavn": "GIS i samfunns- og arealplanlegging",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "SPL-2012-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "SPL-2014",
+      "emnenavn": "Regional analyse med feltkurs",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "SPL-2014-1"
+      ],
+      "merknad": "SPL-2001-2 i DBH er den eldre 20 sp-versjonen av feltkursemnet."
+    },
+    {
+      "emnekode": "SPL-2009",
+      "emnenavn": "Plan, medvirkning og prosess",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "SPL-2009-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "SVF-1050",
+      "emnenavn": "Samfunnsvitenskapelig metode",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "SVF-1050-1",
+        "SVF-1051-1"
+      ],
+      "merknad": "SVF-1051-1 er den nettbaserte varianten."
+    },
+    {
+      "emnekode": "SPL-2010",
+      "emnenavn": "Plan- og nettverksstyring",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "SPL-2010-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "SPL-2003",
+      "emnenavn": "Bachelorgradsoppgave i samfunnsplanlegging",
+      "studiepoeng": 20,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "SPL-2003-1"
+      ],
+      "merknad": "DBH har emnet registrert som «Bachelorgradsoppgave i samfunnsplanlegging og kulturforståelse»."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Studieplanen er godkjent av HSL-fakultetet 25.09.2024, sist redigert 05.02.2026 og gjelder fra og med høsten 2026. Planen oppgir at 100 sp er obligatoriske emner i samfunnsplanlegging pluss 10 sp obligatorisk examen philosophicum – til sammen 110 sp. 4. og 5. semester er 60 sp valgfrie emner (emnepakker på 30 sp, utveksling, eller praksisemnet SPL-2004 Praksissemester/Internship i 5. semester). I 6. semester kommer 10 sp mikroemner i tillegg til bacheloroppgaven; studenten velger fire heldigitale mikroemner som til sammen gir 10 sp, og disse er ikke navngitt i planen. Programmet er revidert og har byttet navn fra «Samfunnsplanlegging og kulturforståelse» til «Samfunnsplanlegging»; DBH-tallene inneholder derfor også emner fra den gamle planen (EXF-0714, FIL-0700, SOS-2001, SPL-1003, SPL-1011, SPL-2001, STV-1000). Programsiden som er oppført i programkart.json (uit.no/utdanning/program/272680) gir en tom side; gjeldende programside er 276304."
+}

@@ -1,0 +1,155 @@
+{
+  "entryId": "hivolda_planlegging",
+  "programnavn": "Planlegging, administrasjon og leiing (bachelor)",
+  "institusjon": "Høgskulen i Volda",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.hivolda.no/studietilbod/planlegging-administrasjon-og-leiing/haust"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 150,
+  "obligatoriske": [
+    {
+      "emnekode": "GOV101",
+      "emnenavn": "Politikk, makt og juss",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "GOV101-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PLA101",
+      "emnenavn": "Berekraftig samfunnsutvikling",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "PLA101-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PRO101",
+      "emnenavn": "Organisasjonslære og teamarbeid",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "PRO101-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "GOV102",
+      "emnenavn": "Økonomiske krefter i eit globalt samfunn",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "GOV102-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PLA102",
+      "emnenavn": "Samarbeidsdriven samfunnsplanlegging",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "PLA102-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PRO102",
+      "emnenavn": "Prosjektarbeid lokalsamfunnsanalyse",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "PRO102-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "GOV121",
+      "emnenavn": "Innføring i forvaltings- og miljørett",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "GOV121-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PLA121",
+      "emnenavn": "GIS og kartkunnskap i arealplanlegging",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "PLA121-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PRO121",
+      "emnenavn": "Samfunnsvitskapleg metode",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "PRO121-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PLA231",
+      "emnenavn": "Lokal utvikling og strategisk planlegging",
+      "studiepoeng": 15,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "PLA231-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "GOV231",
+      "emnenavn": "Regional development in the European Union and Norway: Theories and Practice",
+      "studiepoeng": 15,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "GOV231-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PRO231",
+      "emnenavn": "Prosessleiing",
+      "studiepoeng": 15,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Nytt emne i den reviderte planen; ingen karakterdata i DBH ennå."
+    },
+    {
+      "emnekode": "IPA250",
+      "emnenavn": "Bacheloroppgåve i samfunnsutvikling",
+      "studiepoeng": 15,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Nytt emne som har erstatta IPA210A-1 Bacheloroppgave i planlegging og administrasjon; ingen karakterdata i DBH ennå."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Studieplanen for kull 2026 (matrisa går frå 26H til 29V). Studiet har 150 sp obligatoriske og 30 sp valfrie emne, og er bygd rundt tre søyler: samfunnsplanlegging (PLA), samfunnsstyring/governance (GOV) og prosessleiing (PRO). Heile 4. semester (30 sp) er valemne eller utveksling, og ein kan velje spesialisering innanfor ei av dei tre søylene der og i bacheloroppgåva. Valemne: IPA171 Grunnleggande innføring i leiing (15), IPA203 Internship with internship report (15), IPA206 Internship (30), PLA221 Fordjuping i arealplanlegging, kartkunnskap og GIS (15), GOV115N Kommunal økonomi (15), NAT150 Human evolution and a sustainable future (15) og KOH139 Entreprenørskap i kreative næringar (15). Planen er revidert: PRO231 og IPA250 er nye, og DBH-tala inneheld framleis emne frå den gamle IPA-baserte planen (IPA110, IPA111, IPA112, IPA115, IPA172, IPA173, IPA202, IPA209, IPA210A, IPA274, IPA213)."
+}

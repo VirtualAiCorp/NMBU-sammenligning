@@ -1,0 +1,242 @@
+{
+  "entryId": "nmbu_byreg",
+  "programnavn": "By- og regionplanlegging (master 5 år)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://www.nmbu.no/studier/master-5-aar/og-regionplanlegging",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2025-07/BYREG%20studieplan%202025%20pr%20juni%202025.pdf",
+    "https://www.nmbu.no/emne/LAA200",
+    "https://www.nmbu.no/emne/EIE310",
+    "https://www.nmbu.no/emne/MAST301"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 185,
+  "obligatoriske": [
+    {
+      "emnekode": "APL100",
+      "emnenavn": "Introduksjon til profesjonsstudie i By- og regionplanlegging",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "APL100-1"
+      ],
+      "merknad": "Oppstart augustblokk (5 sp), fortsetter i høstparallell (5 sp)."
+    },
+    {
+      "emnekode": "JUS100",
+      "emnenavn": "Juridisk metode og norsk rettssystem",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "JUS100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "JUS201",
+      "emnenavn": "Offentlig saksbehandling og forvaltningsrett",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "JUS201-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PHI100",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "PHI100-1",
+        "PHI101-1",
+        "PHI102-1"
+      ],
+      "merknad": "PHI101 er seminarversjonen og PHI102 den engelske versjonen."
+    },
+    {
+      "emnekode": "LAD100",
+      "emnenavn": "Introduksjon til digitale verktøy",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "januarblokk",
+      "dbhEmnekoder": [
+        "LAD100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "APL103",
+      "emnenavn": "By- og regionplanleggingens historie og fagtradisjon",
+      "studiepoeng": 15,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "APL103-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "APL108",
+      "emnenavn": "Introduksjon til arealplanlegging",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "APL108-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "LAA200",
+      "emnenavn": "Stedsutvikling og romlig analyse",
+      "studiepoeng": 15,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "LAA200-1"
+      ],
+      "merknad": "Studieplanen kaller emnet «Landskapsforståelse og stedsutvikling»; oppstart augustblokk (5 sp), fortsetter i høstparallell (10 sp)."
+    },
+    {
+      "emnekode": "JUS220",
+      "emnenavn": "Miljøforvaltningsrett",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "JUS220-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "AOS240",
+      "emnenavn": "Samfunnsvitenskapelig metode",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "AOS240-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "JUS110",
+      "emnenavn": "Innføring i eiendomsjus",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "JUS110-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "NATF200",
+      "emnenavn": "Vern og forvaltning av norsk natur",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "januarblokk",
+      "dbhEmnekoder": [
+        "NATF200-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "APL200",
+      "emnenavn": "Lokal planlegging",
+      "studiepoeng": 15,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "APL200-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "JUS320",
+      "emnenavn": "Plan- og bygningsrett I - planlegging og gjennomføringsvirkemidler",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "JUS320-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "APL230",
+      "emnenavn": "Planteori",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "APL230-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EIE310",
+      "emnenavn": "Eiendomsmarked og analyse",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EIE310-1"
+      ],
+      "merknad": "Studieplanen kaller emnet «Eiendomsutvikling og analyse»."
+    },
+    {
+      "emnekode": "JUS321",
+      "emnenavn": "Plan- og bygningsrett II - byggesak",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "JUS321-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "APL280",
+      "emnenavn": "Urban sosiologi",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "APL280-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "APL380",
+      "emnenavn": "Environmental Governance for Planning",
+      "studiepoeng": 10,
+      "aar": 5,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "APL380-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "M30-BYREG",
+      "emnenavn": "Masteroppgave",
+      "studiepoeng": 30,
+      "aar": 5,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "M30-BYREG-1"
+      ],
+      "merknad": "Januarblokk + vårparallell."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Studieplanmatrisen gjelder opptak 2025; NMBU hadde ikke publisert en egen 2026-matrise for BYREG da dette ble hentet. Listen over inneholder bare emner alle studenter må ta. I tillegg krever planen to obligatoriske valg: (1) minst to av de fire fordypningsemnene på masternivå LAA350 Prosjekter i byutvikling (20 sp), LAA360 Regional landskapsplanlegging og lokalsamfunnsutvikling (20 sp), APL360 Planlegging for bærekraftige byregioner (15 sp) og APL350 Prosjektutvikling og prosjektgjennomføring (15 sp); (2) ett av emnene MAST301 Planlegging av masteroppgaven (5 sp, fordelt på 2,5 sp vår 4. år og 2,5 sp høst 5. år) eller AOS340 Kvalitativ metode (5 sp) – bare ett av dem er obligatorisk. 3. studieår er tilrettelagt for utveksling og/eller praksis (PRAK200, 30 sp), og resten av studiet fylles med valgfrie emner. Semesterverdiene over er lest ut av matrisens blokk-/parallellrader."
+}

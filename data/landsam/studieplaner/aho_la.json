@@ -1,0 +1,283 @@
+{
+  "entryId": "aho_la",
+  "programnavn": "Landskapsarkitektur (master 5 år, AHO/UiT)",
+  "institusjon": "Arkitektur- og designhøgskolen i Oslo",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.aho.no/studier/program/master-i-landskapsarkitektur/",
+    "https://www.aho.no/studier/program/master-i-landskapsarkitektur/studieplaner/2026.html",
+    "https://uit.no/utdanning/program/oppbygging?studkode=IMA-LANDA&p_document_id=553760"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 300,
+  "obligatoriske": [
+    {
+      "emnekode": "61 110",
+      "emnenavn": "Form - Landskapslaboratorium",
+      "studiepoeng": 20,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "61 110-1",
+        "61 110-2"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "61 111",
+      "emnenavn": "Plantebruk",
+      "studiepoeng": 4,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "61 111-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EXFAC",
+      "emnenavn": "Examen facultatum - Teori og praksis for arkitektur, design og landskapsarkitektur",
+      "studiepoeng": 6,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EXFAC-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "61 120",
+      "emnenavn": "Form - Parklaboratorium",
+      "studiepoeng": 20,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "61 120-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "61 121",
+      "emnenavn": "Landskapsarkitekturens historie",
+      "studiepoeng": 6,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "61 121-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "61 123",
+      "emnenavn": "Økologi for landskapsarkitektur 1",
+      "studiepoeng": 4,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "61 123-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "61 131",
+      "emnenavn": "Landskapsmedia: Landskap- og terrengforming",
+      "studiepoeng": 6,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "61 131-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "61 133",
+      "emnenavn": "Systemer – Naturlaboratorium",
+      "studiepoeng": 20,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "61 133-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "61 134",
+      "emnenavn": "Økologi for landskapsarkitektur 2",
+      "studiepoeng": 4,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "61 134-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "61 141",
+      "emnenavn": "Landskapsmedia - Material- og konstruksjonslære",
+      "studiepoeng": 6,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "61 141-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "61 143",
+      "emnenavn": "Systemer – Bynaturlaboratorium",
+      "studiepoeng": 20,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "61 143-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "61 144",
+      "emnenavn": "Samtidens landskapsarkitektur",
+      "studiepoeng": 4,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "61 144-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "61 150",
+      "emnenavn": "Fellesrom - By og landskap",
+      "studiepoeng": 24,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "61 150-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "61 151",
+      "emnenavn": "By- og byplanhistorie",
+      "studiepoeng": 6,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "61 151-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "61 160",
+      "emnenavn": "Fellesrom - Sted og territorier i nord",
+      "studiepoeng": 20,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "61 160-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "61 161",
+      "emnenavn": "Landskapsteori - Forståelse og lesning av nordlige landskap og steder",
+      "studiepoeng": 6,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "61 161-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "61 162",
+      "emnenavn": "Økologi for landskapsarkitektur 3",
+      "studiepoeng": 4,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "61 162-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "LAN-3071",
+      "emnenavn": "Studio 1: Urbane praksiser",
+      "studiepoeng": 24,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "LAN-3071-1"
+      ],
+      "merknad": "Undervises ved UiT i Tromsø."
+    },
+    {
+      "emnekode": "LAN-3072",
+      "emnenavn": "Digitale landskaper",
+      "studiepoeng": 6,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "LAN-3072-1"
+      ],
+      "merknad": "Undervises ved UiT i Tromsø."
+    },
+    {
+      "emnekode": "LAN-3081",
+      "emnenavn": "Studio 2: Landskapspraksiser",
+      "studiepoeng": 24,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "LAN-3081-1"
+      ],
+      "merknad": "Undervises ved UiT i Tromsø."
+    },
+    {
+      "emnekode": "LAN-3082",
+      "emnenavn": "Natursyn og landskapspraksiser",
+      "studiepoeng": 6,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "LAN-3082-1"
+      ],
+      "merknad": "Undervises ved UiT i Tromsø."
+    },
+    {
+      "emnekode": "LAN-3091",
+      "emnenavn": "Studio 3: Territorielle praksiser",
+      "studiepoeng": 24,
+      "aar": 5,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "LAN-3091-1"
+      ],
+      "merknad": "Undervises ved UiT i Tromsø."
+    },
+    {
+      "emnekode": "LAN-3092",
+      "emnenavn": "Prediplom",
+      "studiepoeng": 6,
+      "aar": 5,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "LAN-3092-1"
+      ],
+      "merknad": "Undervises ved UiT i Tromsø."
+    },
+    {
+      "emnekode": "LAN-3900",
+      "emnenavn": "Diplomoppgave / Masteroppgave",
+      "studiepoeng": 30,
+      "aar": 5,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "LAN-3900-1"
+      ],
+      "merknad": "Undervises ved UiT i Tromsø."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Femårig fellesgrad: de tre første årene (seks første semestre) tas ved AHO i Oslo, de to siste ved UiT Norges arktiske universitet i Tromsø. AHOs egen studieplanside viser bare år 1–3; år 4–5 er hentet fra UiTs oppbyggingsside for programkode IMA-LANDA. Hele graden på 300 sp er obligatorisk – det finnes ingen valgemner, bare mulighet til å søke utveksling i 4. studieår. I DBH-tallene ligger det også «80 112-1 GK1 Examen Philosophicum» og «80 113-1 GK1 Skriveøvelser» fra tidligere kull (erstattet av EXFAC), samt HMS-0501-1 og HMS-0502-1 (0 sp HMS-kurs ved UiT) som ikke står i studieplanen for 2026."
+}

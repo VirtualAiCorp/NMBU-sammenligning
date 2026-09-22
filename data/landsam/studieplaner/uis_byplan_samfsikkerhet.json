@@ -1,0 +1,188 @@
+{
+  "entryId": "uis_byplan_samfsikkerhet",
+  "programnavn": "Byplanlegging og samfunnssikkerhet (bachelor)",
+  "institusjon": "Universitetet i Stavanger",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.uis.no/nb/studier/byplanlegging-og-samfunnssikkerhet-bachelor"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 140,
+  "obligatoriske": [
+    {
+      "emnekode": "BYG100",
+      "emnenavn": "Dataassistert konstruksjon (DAK)",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BYG100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYS115",
+      "emnenavn": "Innføring i samfunnsplanlegging",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BYS115-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TN120",
+      "emnenavn": "Kurs i studieteknikk og arbeidsmetode",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "helår",
+      "dbhEmnekoder": [
+        "TN120-1"
+      ],
+      "merknad": "Går over 1. og 2. semester."
+    },
+    {
+      "emnekode": "BYS120",
+      "emnenavn": "Risiko- og sårbarhetsanalyse",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BYS120-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYS100",
+      "emnenavn": "Risikosamfunnet",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BYS100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYS225",
+      "emnenavn": "Byplanlegging og sikkerhet i praksis",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Nytt emne i den reviderte planen; ingen karakterdata i DBH ennå. Erstatter BYS110-1 Byplanlegging og sikkerhet (10 sp)."
+    },
+    {
+      "emnekode": "BYG115",
+      "emnenavn": "Byrommet",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BYG115-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYS220",
+      "emnenavn": "Samfunnssikkerhet og beredskap",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BYS220-1"
+      ],
+      "merknad": "DBH har emnet registrert under det tidligere navnet «Kriser og beredskap»."
+    },
+    {
+      "emnekode": "BYG105",
+      "emnenavn": "Stedsforståelse og byteori",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BYG105-1"
+      ],
+      "merknad": "DBH har emnet registrert som «Stedsforståelse og Byteori»."
+    },
+    {
+      "emnekode": "BST120",
+      "emnenavn": "Offentlig politikk og administrasjon",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BST120-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYG120",
+      "emnenavn": "Områdeplanlegging",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BYG120-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYS200",
+      "emnenavn": "Politikk, beslutninger og risiko",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BYS200-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BYS310",
+      "emnenavn": "Klima, risiko og bærekraftig utvikling",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BYS310-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BRH220",
+      "emnenavn": "Samfunnsvitenskapelig metode",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Emnet er hentet fra et annet fagmiljø ved UiS og har ingen karakterdata registrert på dette studieprogrammet i DBH."
+    },
+    {
+      "emnekode": "BYSBAC",
+      "emnenavn": "Bacheloroppgave i byplanlegging og samfunnssikkerhet",
+      "studiepoeng": 20,
+      "aar": 3,
+      "semester": "helår",
+      "dbhEmnekoder": [
+        "BYSBAC-1"
+      ],
+      "merknad": "Går over 5. og 6. semester."
+    },
+    {
+      "emnekode": "BYS210",
+      "emnenavn": "Sårbarhet og teknologisk utvikling",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BYS210-1"
+      ],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "I 4. semester er det i tillegg et obligatorisk valg mellom BYG285 Arealplanlegging for bærekraft og resiliens (10 sp, DBH BYG285-1) og BYG125 Vann og avløp (10 sp; BYG125-1 finnes i DBH for byggingeniør, men ikke registrert på dette programmet). 5. semester (30 sp) er valgemner, praksis eller utveksling. Anbefalte valgemner: BYG240 Byregionen (anbefales for opptak til masterstudiet i byplanlegging), BST210 Miljø- og energipolitikk, BYS300 Praksis i byplanlegging og samfunnssikkerhet og BYG130 Vegplanlegging. Examen philosophicum (SVEXPHIL) er ikke obligatorisk i denne planen, men ligger som valgemne i 5. semester – DBH-tallene inneholder derfor SVEXPHIL-6. Planen er revidert: BYS110 er erstattet av BYS225, og BYS220 har byttet navn fra «Kriser og beredskap» til «Samfunnssikkerhet og beredskap»."
+}

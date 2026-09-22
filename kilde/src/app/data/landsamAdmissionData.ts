@@ -226,7 +226,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'uit_samfunnsplanlegging', shortName: 'UiT', institusjon: 'UiT Norges arktiske universitet',
         studiekode: '186474', studiested: 'Tromsø', type: 'bachelor',
-        url: 'https://uit.no/utdanning/program/272680/samfunnsplanlegging_-_bachelor',
+        url: 'https://uit.no/utdanning/program/276304/samfunnsplanlegging_og_kulturforstaelse_-_bachelor',
         years: {
           '2020': Y(null, null, null, null, null, null, 0, 0),
           '2021': Y(174, 27, 40, 48.1, 161, 50, 0, 0),
