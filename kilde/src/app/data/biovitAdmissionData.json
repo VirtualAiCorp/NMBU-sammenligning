@@ -1,0 +1,2100 @@
+{
+  "generert": "2026-09-22",
+  "programkartHentet": "2026-09-22",
+  "years": [
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+  ],
+  "groups": [
+    {
+      "id": "biologi",
+      "label": "Biologi",
+      "level": "bachelor",
+      "desc": "Sammenligner NMBUs bachelor i biologi med breddebiologiutdanningene ved de andre universitetene.",
+      "note": "Alle programmene tas opp gjennom Samordna opptak. UiOs «Biovitenskap» er UiOs samlede biologiprogram og den klart største av konkurrentene (156 plasser i 2026 mot NMBUs 60). UiBs molekylærbiologi er tatt med som svakere sammenligning (default false) fordi den er smalere enn et breddebiologiprogram. UiS' «Biologisk kjemi» (studiekode 217860) er vraket av samme grunn – den ligger nærmere kjemi og bioteknologi enn biologi. Årsstudier i biologi (Nord 204184, UiA 201184/201373, NTNU 194184) er ikke tatt med, og heller ikke NMBUs egen bachelor i bioteknologi (192299), som hører til KBM-fakultetet.",
+      "nmbuIds": [
+        "nmbu_biologi"
+      ],
+      "defaultIds": [
+        "nmbu_biologi",
+        "uio_biovitenskap",
+        "uib_biologi",
+        "ntnu_biologi",
+        "uit_biologi",
+        "nord_biologi",
+        "uia_biologi"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_biologi",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "192327",
+          "studiested": "Ås",
+          "type": "bachelor",
+          "url": "https://www.nmbu.no/studier/bachelor/biologi",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 50.0,
+              "pg_ord": 53.1
+            },
+            "2021": {
+              "alleS": 678,
+              "fvS": 112,
+              "plasser": 50,
+              "kvinner": 63.4,
+              "kvalifiserte": 575,
+              "tilbud": 70,
+              "pg_fv": 52.9,
+              "pg_ord": 54.3
+            },
+            "2022": {
+              "alleS": 522,
+              "fvS": 76,
+              "plasser": 50,
+              "kvinner": 69.7,
+              "kvalifiserte": 457,
+              "tilbud": 74,
+              "pg_fv": 49.7,
+              "pg_ord": 51.0
+            },
+            "2023": {
+              "alleS": 580,
+              "fvS": 84,
+              "plasser": 50,
+              "kvinner": 71.4,
+              "kvalifiserte": 503,
+              "tilbud": 88,
+              "pg_fv": 48.3,
+              "pg_ord": 46.9
+            },
+            "2024": {
+              "alleS": 566,
+              "fvS": 85,
+              "plasser": 50,
+              "kvinner": 72.9,
+              "kvalifiserte": 478,
+              "tilbud": 100,
+              "pg_fv": 41.9,
+              "pg_ord": 42.8
+            },
+            "2025": {
+              "alleS": 583,
+              "fvS": 85,
+              "plasser": 60,
+              "kvinner": 69.4,
+              "kvalifiserte": 495,
+              "tilbud": 91,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 515,
+              "fvS": 91,
+              "plasser": 60,
+              "kvinner": 52.7,
+              "kvalifiserte": 403,
+              "tilbud": 89,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "uio_biovitenskap",
+          "shortName": "UiO",
+          "institusjon": "Universitetet i Oslo",
+          "studiekode": "185327",
+          "studiested": "Oslo",
+          "type": "bachelor",
+          "url": "https://www.uio.no/studier/program/biovitenskap/",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 706,
+              "fvS": 148,
+              "plasser": 148,
+              "kvinner": 58.8,
+              "kvalifiserte": 420,
+              "tilbud": 143,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 1109,
+              "fvS": 243,
+              "plasser": 160,
+              "kvinner": 67.5,
+              "kvalifiserte": 931,
+              "tilbud": 245,
+              "pg_fv": 44.0,
+              "pg_ord": 44.4
+            },
+            "2023": {
+              "alleS": 1074,
+              "fvS": 185,
+              "plasser": 160,
+              "kvinner": 62.2,
+              "kvalifiserte": 892,
+              "tilbud": 250,
+              "pg_fv": 41.9,
+              "pg_ord": 39.6
+            },
+            "2024": {
+              "alleS": 1092,
+              "fvS": 224,
+              "plasser": 157,
+              "kvinner": 65.2,
+              "kvalifiserte": 885,
+              "tilbud": 260,
+              "pg_fv": 40.8,
+              "pg_ord": 42.6
+            },
+            "2025": {
+              "alleS": 958,
+              "fvS": 200,
+              "plasser": 156,
+              "kvinner": 68.5,
+              "kvalifiserte": 767,
+              "tilbud": 235,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 962,
+              "fvS": 186,
+              "plasser": 156,
+              "kvinner": 62.9,
+              "kvalifiserte": 745,
+              "tilbud": 206,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "uib_biologi",
+          "shortName": "UiB Biologi",
+          "institusjon": "Universitetet i Bergen",
+          "studiekode": "184327",
+          "studiested": "Bergen",
+          "type": "bachelor",
+          "url": "https://www4.uib.no/studier/program/biologi-bachelor",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 43.0,
+              "pg_ord": 42.7
+            },
+            "2021": {
+              "alleS": 887,
+              "fvS": 124,
+              "plasser": 99,
+              "kvinner": 56.5,
+              "kvalifiserte": 740,
+              "tilbud": 190,
+              "pg_fv": 42.3,
+              "pg_ord": 41.7
+            },
+            "2022": {
+              "alleS": 818,
+              "fvS": 128,
+              "plasser": 99,
+              "kvinner": 73.4,
+              "kvalifiserte": 675,
+              "tilbud": 179,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 751,
+              "fvS": 131,
+              "plasser": 99,
+              "kvinner": 66.4,
+              "kvalifiserte": 622,
+              "tilbud": 167,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 716,
+              "fvS": 127,
+              "plasser": 99,
+              "kvinner": 60.6,
+              "kvalifiserte": 586,
+              "tilbud": 158,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 689,
+              "fvS": 131,
+              "plasser": 99,
+              "kvinner": 60.3,
+              "kvalifiserte": 551,
+              "tilbud": 129,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 646,
+              "fvS": 96,
+              "plasser": 99,
+              "kvinner": 47.9,
+              "kvalifiserte": 492,
+              "tilbud": 115,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "ntnu_biologi",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "194327",
+          "studiested": "Trondheim",
+          "type": "bachelor",
+          "url": "https://www.ntnu.no/studier/bbi",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 52.0,
+              "pg_ord": 52.4
+            },
+            "2021": {
+              "alleS": 1005,
+              "fvS": 180,
+              "plasser": 85,
+              "kvinner": 71.1,
+              "kvalifiserte": 906,
+              "tilbud": 140,
+              "pg_fv": 51.5,
+              "pg_ord": 53.5
+            },
+            "2022": {
+              "alleS": 975,
+              "fvS": 171,
+              "plasser": 85,
+              "kvinner": 70.2,
+              "kvalifiserte": 888,
+              "tilbud": 138,
+              "pg_fv": 54.1,
+              "pg_ord": 53.5
+            },
+            "2023": {
+              "alleS": 880,
+              "fvS": 157,
+              "plasser": 75,
+              "kvinner": 69.4,
+              "kvalifiserte": 793,
+              "tilbud": 140,
+              "pg_fv": 52.4,
+              "pg_ord": 52.7
+            },
+            "2024": {
+              "alleS": 862,
+              "fvS": 155,
+              "plasser": 75,
+              "kvinner": 73.5,
+              "kvalifiserte": 762,
+              "tilbud": 124,
+              "pg_fv": 51.5,
+              "pg_ord": 53.7
+            },
+            "2025": {
+              "alleS": 860,
+              "fvS": 168,
+              "plasser": 75,
+              "kvinner": 65.5,
+              "kvalifiserte": 771,
+              "tilbud": 134,
+              "pg_fv": 50.7,
+              "pg_ord": 51.8
+            },
+            "2026": {
+              "alleS": 891,
+              "fvS": 141,
+              "plasser": 75,
+              "kvinner": 66.7,
+              "kvalifiserte": 753,
+              "tilbud": 122,
+              "pg_fv": 49.8,
+              "pg_ord": 50.0
+            }
+          }
+        },
+        {
+          "id": "uit_biologi",
+          "shortName": "UiT",
+          "institusjon": "UiT Norges arktiske universitet",
+          "studiekode": "186327",
+          "studiested": "Tromsø",
+          "type": "bachelor",
+          "url": "https://uit.no/utdanning/program/271262/biologi_-_bachelor",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 377,
+              "fvS": 51,
+              "plasser": 60,
+              "kvinner": 58.8,
+              "kvalifiserte": 290,
+              "tilbud": 76,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 313,
+              "fvS": 50,
+              "plasser": 60,
+              "kvinner": 60.0,
+              "kvalifiserte": 249,
+              "tilbud": 44,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 266,
+              "fvS": 35,
+              "plasser": 60,
+              "kvinner": 65.7,
+              "kvalifiserte": 206,
+              "tilbud": 36,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 261,
+              "fvS": 47,
+              "plasser": 60,
+              "kvinner": 72.3,
+              "kvalifiserte": 207,
+              "tilbud": 46,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 234,
+              "fvS": 39,
+              "plasser": 35,
+              "kvinner": 69.2,
+              "kvalifiserte": 189,
+              "tilbud": 40,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 231,
+              "fvS": 32,
+              "plasser": 35,
+              "kvinner": 62.5,
+              "kvalifiserte": 183,
+              "tilbud": 28,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "nord_biologi",
+          "shortName": "Nord",
+          "institusjon": "Nord universitet",
+          "studiekode": "204327",
+          "studiested": "Bodø",
+          "type": "bachelor",
+          "url": "https://www.nord.no/studier/biologi-bachelor",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 194,
+              "fvS": 22,
+              "plasser": 30,
+              "kvinner": 31.8,
+              "kvalifiserte": 130,
+              "tilbud": 28,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 164,
+              "fvS": 23,
+              "plasser": 20,
+              "kvinner": 43.5,
+              "kvalifiserte": 112,
+              "tilbud": 15,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 129,
+              "fvS": 25,
+              "plasser": 30,
+              "kvinner": 56.0,
+              "kvalifiserte": 87,
+              "tilbud": 16,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 98,
+              "fvS": 11,
+              "plasser": 20,
+              "kvinner": 36.4,
+              "kvalifiserte": 64,
+              "tilbud": 7,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 101,
+              "fvS": 8,
+              "plasser": 20,
+              "kvinner": 25.0,
+              "kvalifiserte": 66,
+              "tilbud": 5,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 113,
+              "fvS": 18,
+              "plasser": 10,
+              "kvinner": 44.4,
+              "kvalifiserte": 64,
+              "tilbud": 8,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "uia_biologi",
+          "shortName": "UiA",
+          "institusjon": "Universitetet i Agder",
+          "studiekode": "201327",
+          "studiested": "Kristiansand",
+          "type": "bachelor",
+          "url": "https://www.uia.no/studier/program/biologi-bachelor/",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 43.7,
+              "pg_ord": 48.9
+            },
+            "2021": {
+              "alleS": 303,
+              "fvS": 39,
+              "plasser": 35,
+              "kvinner": 43.6,
+              "kvalifiserte": 248,
+              "tilbud": 60,
+              "pg_fv": 40.4,
+              "pg_ord": 43.8
+            },
+            "2022": {
+              "alleS": 296,
+              "fvS": 47,
+              "plasser": 40,
+              "kvinner": 66.0,
+              "kvalifiserte": 224,
+              "tilbud": 45,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 257,
+              "fvS": 40,
+              "plasser": 40,
+              "kvinner": 65.0,
+              "kvalifiserte": 189,
+              "tilbud": 45,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 220,
+              "fvS": 35,
+              "plasser": 40,
+              "kvinner": 54.3,
+              "kvalifiserte": 154,
+              "tilbud": 28,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 205,
+              "fvS": 25,
+              "plasser": 30,
+              "kvinner": 68.0,
+              "kvalifiserte": 146,
+              "tilbud": 22,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 197,
+              "fvS": 18,
+              "plasser": 30,
+              "kvinner": 77.8,
+              "kvalifiserte": 140,
+              "tilbud": 19,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "uib_molekylaerbiologi",
+          "shortName": "UiB Molekylærbiologi",
+          "institusjon": "Universitetet i Bergen",
+          "studiekode": "184865",
+          "studiested": "Bergen",
+          "type": "bachelor",
+          "url": "https://www4.uib.no/studier/program/molekylaerbiologi-bachelor",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 48.0,
+              "pg_ord": 49.3
+            },
+            "2021": {
+              "alleS": 692,
+              "fvS": 93,
+              "plasser": 50,
+              "kvinner": 77.4,
+              "kvalifiserte": 634,
+              "tilbud": 88,
+              "pg_fv": 52.1,
+              "pg_ord": 50.9
+            },
+            "2022": {
+              "alleS": 506,
+              "fvS": 71,
+              "plasser": 55,
+              "kvinner": 73.2,
+              "kvalifiserte": 473,
+              "tilbud": 98,
+              "pg_fv": 48.5,
+              "pg_ord": 44.4
+            },
+            "2023": {
+              "alleS": 495,
+              "fvS": 74,
+              "plasser": 40,
+              "kvinner": 74.3,
+              "kvalifiserte": 443,
+              "tilbud": 74,
+              "pg_fv": 50.0,
+              "pg_ord": 48.5
+            },
+            "2024": {
+              "alleS": 520,
+              "fvS": 66,
+              "plasser": 40,
+              "kvinner": 77.3,
+              "kvalifiserte": 488,
+              "tilbud": 71,
+              "pg_fv": 47.9,
+              "pg_ord": 48.6
+            },
+            "2025": {
+              "alleS": 559,
+              "fvS": 63,
+              "plasser": 40,
+              "kvinner": 69.8,
+              "kvalifiserte": 501,
+              "tilbud": 79,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 584,
+              "fvS": 74,
+              "plasser": 40,
+              "kvinner": 73.0,
+              "kvalifiserte": 502,
+              "tilbud": 71,
+              "pg_fv": 46.5,
+              "pg_ord": 45.9
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "husdyr",
+      "label": "Husdyrvitenskap",
+      "level": "bachelor",
+      "desc": "Sammenligner NMBUs bachelor i husdyrvitenskap med de andre husdyr- og landbruksutdanningene på bachelornivå.",
+      "note": "Nord universitet (Steinkjer) er den eneste andre institusjonen med en egen bachelor i husdyrvitenskap. INNs agronomibachelor på Blæstad dekker både husdyr- og planteproduksjon og er derfor en delvis konkurrent; den går igjen i plantegruppen. Nords bachelor i dyrepleie er tatt med som svakere sammenligning (default false) fordi den trekker på den samme dyreinteresserte søkergruppen, men leder til et annet yrke. Nords husdyrvelferd (studiekode 204421) er vraket fordi det er et årsstudium, ikke en grad. NMBUs egen bachelor i dyrepleie (192504) hører til Veterinærhøgskolen, ikke BIOVIT, og er ikke med.",
+      "nmbuIds": [
+        "nmbu_husdyr"
+      ],
+      "defaultIds": [
+        "nmbu_husdyr",
+        "nord_husdyr",
+        "inn_agronomi_husdyr"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_husdyr",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "192321",
+          "studiested": "Ås",
+          "type": "bachelor",
+          "url": "https://www.nmbu.no/studier/bachelor/husdyrvitenskap",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 246,
+              "fvS": 30,
+              "plasser": 30,
+              "kvinner": 80.0,
+              "kvalifiserte": 171,
+              "tilbud": 49,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 195,
+              "fvS": 33,
+              "plasser": 30,
+              "kvinner": 84.8,
+              "kvalifiserte": 138,
+              "tilbud": 39,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 196,
+              "fvS": 26,
+              "plasser": 35,
+              "kvinner": 80.8,
+              "kvalifiserte": 140,
+              "tilbud": 27,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 179,
+              "fvS": 23,
+              "plasser": 35,
+              "kvinner": 78.3,
+              "kvalifiserte": 108,
+              "tilbud": 21,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 192,
+              "fvS": 21,
+              "plasser": 25,
+              "kvinner": 85.7,
+              "kvalifiserte": 122,
+              "tilbud": 17,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 214,
+              "fvS": 36,
+              "plasser": 25,
+              "kvinner": 75.0,
+              "kvalifiserte": 123,
+              "tilbud": 19,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "nord_husdyr",
+          "shortName": "Nord Husdyrvitenskap",
+          "institusjon": "Nord universitet",
+          "studiekode": "204321",
+          "studiested": "Steinkjer",
+          "type": "bachelor",
+          "url": "https://www.nord.no/studier/husdyrvitenskap-bachelor",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 191,
+              "fvS": 21,
+              "plasser": 32,
+              "kvinner": 71.4,
+              "kvalifiserte": 174,
+              "tilbud": 46,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 136,
+              "fvS": 22,
+              "plasser": 32,
+              "kvinner": 72.7,
+              "kvalifiserte": 127,
+              "tilbud": 34,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 156,
+              "fvS": 20,
+              "plasser": 32,
+              "kvinner": 70.0,
+              "kvalifiserte": 139,
+              "tilbud": 26,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 156,
+              "fvS": 26,
+              "plasser": 32,
+              "kvinner": 84.6,
+              "kvalifiserte": 142,
+              "tilbud": 32,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 133,
+              "fvS": 31,
+              "plasser": 25,
+              "kvinner": 80.6,
+              "kvalifiserte": 126,
+              "tilbud": 36,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 155,
+              "fvS": 33,
+              "plasser": 20,
+              "kvinner": 72.7,
+              "kvalifiserte": 145,
+              "tilbud": 35,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "inn_agronomi_husdyr",
+          "shortName": "INN Agronomi",
+          "institusjon": "Universitetet i Innlandet",
+          "studiekode": "209320",
+          "studiested": "Hamar",
+          "type": "bachelor",
+          "url": "https://www.inn.no/studier/vare-studier/bachelor-i-agronomi/",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 329,
+              "fvS": 62,
+              "plasser": 25,
+              "kvinner": 66.1,
+              "kvalifiserte": 287,
+              "tilbud": 60,
+              "pg_fv": 41.3,
+              "pg_ord": 45.8
+            },
+            "2022": {
+              "alleS": 266,
+              "fvS": 43,
+              "plasser": 25,
+              "kvinner": 41.9,
+              "kvalifiserte": 247,
+              "tilbud": 50,
+              "pg_fv": 36.3,
+              "pg_ord": 39.0
+            },
+            "2023": {
+              "alleS": 254,
+              "fvS": 46,
+              "plasser": 25,
+              "kvinner": 71.7,
+              "kvalifiserte": 224,
+              "tilbud": 54,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 233,
+              "fvS": 40,
+              "plasser": 25,
+              "kvinner": 57.5,
+              "kvalifiserte": 200,
+              "tilbud": 47,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 237,
+              "fvS": 42,
+              "plasser": 25,
+              "kvinner": 45.2,
+              "kvalifiserte": 214,
+              "tilbud": 42,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 245,
+              "fvS": 28,
+              "plasser": 25,
+              "kvinner": 60.7,
+              "kvalifiserte": 217,
+              "tilbud": 29,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "nord_dyrepleie",
+          "shortName": "Nord Dyrepleie",
+          "institusjon": "Nord universitet",
+          "studiekode": "204504",
+          "studiested": "Bodø",
+          "type": "bachelor",
+          "url": "https://www.nord.no/studier/dyrepleie-bachelor",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 45.9,
+              "pg_ord": 51.8
+            },
+            "2021": {
+              "alleS": 977,
+              "fvS": 228,
+              "plasser": 47,
+              "kvinner": 94.7,
+              "kvalifiserte": 930,
+              "tilbud": 114,
+              "pg_fv": 45.3,
+              "pg_ord": 50.8
+            },
+            "2022": {
+              "alleS": 769,
+              "fvS": 181,
+              "plasser": 47,
+              "kvinner": 96.1,
+              "kvalifiserte": 727,
+              "tilbud": 150,
+              "pg_fv": 42.7,
+              "pg_ord": 46.3
+            },
+            "2023": {
+              "alleS": 786,
+              "fvS": 173,
+              "plasser": 47,
+              "kvinner": 95.4,
+              "kvalifiserte": 724,
+              "tilbud": 170,
+              "pg_fv": 40.0,
+              "pg_ord": 45.7
+            },
+            "2024": {
+              "alleS": 693,
+              "fvS": 138,
+              "plasser": 47,
+              "kvinner": 95.7,
+              "kvalifiserte": 641,
+              "tilbud": 170,
+              "pg_fv": 36.2,
+              "pg_ord": 43.1
+            },
+            "2025": {
+              "alleS": 580,
+              "fvS": 119,
+              "plasser": 50,
+              "kvinner": 94.1,
+              "kvalifiserte": 537,
+              "tilbud": 187,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 572,
+              "fvS": 125,
+              "plasser": 50,
+              "kvinner": 95.2,
+              "kvalifiserte": 517,
+              "tilbud": 187,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "plante",
+      "label": "Plantevitenskap",
+      "level": "bachelor",
+      "desc": "Sammenligner NMBUs bachelor i plantevitenskap med agronomi- og landbruksutdanningene på bachelornivå.",
+      "note": "Ingen andre institusjoner har et rent plantevitenskapsprogram; de nærmeste er Blæstad-utdanningene ved Universitetet i Innlandet, der agronomi dekker planteproduksjon som en av flere deler. Landbruksteknikk er tatt med som svakere sammenligning (default false) fordi den er teknisk og har en helt annen kjønnsfordeling (6,7–31 % kvinner blant førstevalgssøkerne). INNs «Jordbruk» (209730), «Jordbruk, deltid» (209733) og «Økologisk landbruk, deltid» (209409) er vraket fordi de er nettbaserte årsstudier, ikke bachelorgrader – deltidstilbudene har dessuten 120 og 300 plasser og en helt annen søkergruppe. Nords «Sirkulær bioøkonomi» (Steinkjer, 204738) er vraket fordi den bare hadde opptak i 2022 og 2023 og ikke lenger har en programside.",
+      "nmbuIds": [
+        "nmbu_plante"
+      ],
+      "defaultIds": [
+        "nmbu_plante",
+        "inn_agronomi"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_plante",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "192842",
+          "studiested": "Ås",
+          "type": "bachelor",
+          "url": "https://www.nmbu.no/studier/bachelor/plantevitenskap",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 231,
+              "fvS": 44,
+              "plasser": 30,
+              "kvinner": 56.8,
+              "kvalifiserte": 160,
+              "tilbud": 45,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 196,
+              "fvS": 34,
+              "plasser": 30,
+              "kvinner": 52.9,
+              "kvalifiserte": 146,
+              "tilbud": 32,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 180,
+              "fvS": 25,
+              "plasser": 25,
+              "kvinner": 44.0,
+              "kvalifiserte": 130,
+              "tilbud": 19,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 165,
+              "fvS": 24,
+              "plasser": 25,
+              "kvinner": 58.3,
+              "kvalifiserte": 107,
+              "tilbud": 13,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 171,
+              "fvS": 31,
+              "plasser": 25,
+              "kvinner": 61.3,
+              "kvalifiserte": 121,
+              "tilbud": 26,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 135,
+              "fvS": 26,
+              "plasser": 25,
+              "kvinner": 73.1,
+              "kvalifiserte": 95,
+              "tilbud": 22,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "inn_agronomi",
+          "shortName": "INN Agronomi",
+          "institusjon": "Universitetet i Innlandet",
+          "studiekode": "209320",
+          "studiested": "Hamar",
+          "type": "bachelor",
+          "url": "https://www.inn.no/studier/vare-studier/bachelor-i-agronomi/",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 329,
+              "fvS": 62,
+              "plasser": 25,
+              "kvinner": 66.1,
+              "kvalifiserte": 287,
+              "tilbud": 60,
+              "pg_fv": 41.3,
+              "pg_ord": 45.8
+            },
+            "2022": {
+              "alleS": 266,
+              "fvS": 43,
+              "plasser": 25,
+              "kvinner": 41.9,
+              "kvalifiserte": 247,
+              "tilbud": 50,
+              "pg_fv": 36.3,
+              "pg_ord": 39.0
+            },
+            "2023": {
+              "alleS": 254,
+              "fvS": 46,
+              "plasser": 25,
+              "kvinner": 71.7,
+              "kvalifiserte": 224,
+              "tilbud": 54,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 233,
+              "fvS": 40,
+              "plasser": 25,
+              "kvinner": 57.5,
+              "kvalifiserte": 200,
+              "tilbud": 47,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 237,
+              "fvS": 42,
+              "plasser": 25,
+              "kvinner": 45.2,
+              "kvalifiserte": 214,
+              "tilbud": 42,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 245,
+              "fvS": 28,
+              "plasser": 25,
+              "kvinner": 60.7,
+              "kvalifiserte": 217,
+              "tilbud": 29,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "inn_landbruksteknikk",
+          "shortName": "INN Landbruksteknikk",
+          "institusjon": "Universitetet i Innlandet",
+          "studiekode": "209311",
+          "studiested": "Hamar",
+          "type": "bachelor",
+          "url": "https://www.inn.no/studier/vare-studier/bachelor-i-landbruksteknikk/",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2021": {
+              "alleS": 110,
+              "fvS": 17,
+              "plasser": 20,
+              "kvinner": 17.6,
+              "kvalifiserte": 105,
+              "tilbud": 31,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2022": {
+              "alleS": 80,
+              "fvS": 13,
+              "plasser": 25,
+              "kvinner": 15.4,
+              "kvalifiserte": 74,
+              "tilbud": 17,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 97,
+              "fvS": 21,
+              "plasser": 25,
+              "kvinner": 4.8,
+              "kvalifiserte": 86,
+              "tilbud": 20,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 96,
+              "fvS": 15,
+              "plasser": 25,
+              "kvinner": 26.7,
+              "kvalifiserte": 88,
+              "tilbud": 20,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 83,
+              "fvS": 15,
+              "plasser": 25,
+              "kvinner": 6.7,
+              "kvalifiserte": 77,
+              "tilbud": 19,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 85,
+              "fvS": 16,
+              "plasser": 25,
+              "kvinner": 31.2,
+              "kvalifiserte": 78,
+              "tilbud": 16,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "akvakultur",
+      "label": "Akvakultur",
+      "level": "bachelor",
+      "desc": "Sammenligner NMBUs bachelor i akvakultur med havbruks- og fiskeriutdanningene ved de andre institusjonene.",
+      "note": "Nords «Havbruksdrift og ledelse» og NTNUs «Biomarin innovasjon» i Ålesund er de nærmeste bachelorkonkurrentene. UiTs fiskeri- og havbruksvitenskap og UiBs havbruk (sivilingeniør) og fiskehelse/akvamedisin er femårige integrerte mastere med andre opptakskrav og er derfor svakere sammenligninger (default false); det samme gjelder NTNUs havbruksingeniør, som krever R2 og fysikk. HVL har ingen akvakultur- eller havbruksutdanning i Samordna opptak i perioden 2021–2026.",
+      "nmbuIds": [
+        "nmbu_akvakultur"
+      ],
+      "defaultIds": [
+        "nmbu_akvakultur",
+        "nord_havbruksdrift",
+        "ntnu_biomarin"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_akvakultur",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "192298",
+          "studiested": "Ås",
+          "type": "bachelor",
+          "url": "https://www.nmbu.no/studier/bachelor/akvakultur",
+          "years": {
+            "2021": {
+              "alleS": 466,
+              "fvS": 53,
+              "plasser": 25,
+              "kvinner": 52.8,
+              "kvalifiserte": 331,
+              "tilbud": 50,
+              "pg_fv": 44.9,
+              "pg_ord": 46.6
+            },
+            "2022": {
+              "alleS": 395,
+              "fvS": 39,
+              "plasser": 25,
+              "kvinner": 41.0,
+              "kvalifiserte": 262,
+              "tilbud": 49,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2023": {
+              "alleS": 369,
+              "fvS": 37,
+              "plasser": 30,
+              "kvinner": 56.8,
+              "kvalifiserte": 255,
+              "tilbud": 35,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2024": {
+              "alleS": 363,
+              "fvS": 51,
+              "plasser": 30,
+              "kvinner": 54.9,
+              "kvalifiserte": 247,
+              "tilbud": 41,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2025": {
+              "alleS": 337,
+              "fvS": 34,
+              "plasser": 30,
+              "kvinner": 50.0,
+              "kvalifiserte": 234,
+              "tilbud": 33,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 338,
+              "fvS": 43,
+              "plasser": 30,
+              "kvinner": 55.8,
+              "kvalifiserte": 205,
+              "tilbud": 31,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "nord_havbruksdrift",
+          "shortName": "Nord",
+          "institusjon": "Nord universitet",
+          "studiekode": "204867",
+          "studiested": "Bodø",
+          "type": "bachelor",
+          "url": "https://www.nord.no/studier/havbruksdrift-og-ledelse-bachelor",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 44.4,
+              "pg_ord": 50.3
+            },
+            "2021": {
+              "alleS": 874,
+              "fvS": 219,
+              "plasser": 50,
+              "kvinner": 38.4,
+              "kvalifiserte": 844,
+              "tilbud": 110,
+              "pg_fv": 44.2,
+              "pg_ord": 49.4
+            },
+            "2022": {
+              "alleS": 716,
+              "fvS": 174,
+              "plasser": 50,
+              "kvinner": 43.1,
+              "kvalifiserte": 688,
+              "tilbud": 140,
+              "pg_fv": 42.2,
+              "pg_ord": 46.6
+            },
+            "2023": {
+              "alleS": 795,
+              "fvS": 202,
+              "plasser": 50,
+              "kvinner": 43.1,
+              "kvalifiserte": 740,
+              "tilbud": 150,
+              "pg_fv": 42.2,
+              "pg_ord": 47.5
+            },
+            "2024": {
+              "alleS": 692,
+              "fvS": 139,
+              "plasser": 50,
+              "kvinner": 46.0,
+              "kvalifiserte": 654,
+              "tilbud": 150,
+              "pg_fv": 39.2,
+              "pg_ord": 44.1
+            },
+            "2025": {
+              "alleS": 582,
+              "fvS": 136,
+              "plasser": 50,
+              "kvinner": 50.7,
+              "kvalifiserte": 546,
+              "tilbud": 186,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 633,
+              "fvS": 137,
+              "plasser": 50,
+              "kvinner": 43.8,
+              "kvalifiserte": 588,
+              "tilbud": 165,
+              "pg_fv": 35.0,
+              "pg_ord": 36.0
+            }
+          }
+        },
+        {
+          "id": "ntnu_biomarin",
+          "shortName": "NTNU Biomarin innovasjon",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "194298",
+          "studiested": "Ålesund",
+          "type": "bachelor",
+          "url": "https://www.ntnu.no/studier/298bmi",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 44.6,
+              "pg_ord": 48.3
+            },
+            "2021": {
+              "alleS": 995,
+              "fvS": 147,
+              "plasser": 40,
+              "kvinner": 53.1,
+              "kvalifiserte": 970,
+              "tilbud": 98,
+              "pg_fv": 46.7,
+              "pg_ord": 49.5
+            },
+            "2022": {
+              "alleS": 782,
+              "fvS": 125,
+              "plasser": 35,
+              "kvinner": 55.2,
+              "kvalifiserte": 753,
+              "tilbud": 80,
+              "pg_fv": 49.5,
+              "pg_ord": 50.5
+            },
+            "2023": {
+              "alleS": 742,
+              "fvS": 126,
+              "plasser": 35,
+              "kvinner": 58.7,
+              "kvalifiserte": 703,
+              "tilbud": 90,
+              "pg_fv": 48.1,
+              "pg_ord": 49.9
+            },
+            "2024": {
+              "alleS": 835,
+              "fvS": 130,
+              "plasser": 40,
+              "kvinner": 62.3,
+              "kvalifiserte": 805,
+              "tilbud": 120,
+              "pg_fv": 46.8,
+              "pg_ord": 48.0
+            },
+            "2025": {
+              "alleS": 784,
+              "fvS": 107,
+              "plasser": 43,
+              "kvinner": 67.3,
+              "kvalifiserte": 751,
+              "tilbud": 118,
+              "pg_fv": 45.9,
+              "pg_ord": 46.1
+            },
+            "2026": {
+              "alleS": 733,
+              "fvS": 92,
+              "plasser": 43,
+              "kvinner": 57.6,
+              "kvalifiserte": 698,
+              "tilbud": 120,
+              "pg_fv": 42.4,
+              "pg_ord": 45.7
+            }
+          }
+        },
+        {
+          "id": "ntnu_ing_havbruk",
+          "shortName": "NTNU Ing. havbruk",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "194021",
+          "studiested": "Trondheim",
+          "type": "bachelor",
+          "url": "https://www.ntnu.no/studier/bihav",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 49.2,
+              "pg_ord": 56.4
+            },
+            "2021": {
+              "alleS": 554,
+              "fvS": 57,
+              "plasser": 35,
+              "kvinner": 42.1,
+              "kvalifiserte": 445,
+              "tilbud": 52,
+              "pg_fv": 49.2,
+              "pg_ord": 53.5
+            },
+            "2022": {
+              "alleS": 627,
+              "fvS": 63,
+              "plasser": 35,
+              "kvinner": 50.8,
+              "kvalifiserte": 486,
+              "tilbud": 55,
+              "pg_fv": 48.7,
+              "pg_ord": 53.6
+            },
+            "2023": {
+              "alleS": 627,
+              "fvS": 63,
+              "plasser": 35,
+              "kvinner": 49.2,
+              "kvalifiserte": 480,
+              "tilbud": 67,
+              "pg_fv": 49.8,
+              "pg_ord": 53.2
+            },
+            "2024": {
+              "alleS": 715,
+              "fvS": 73,
+              "plasser": 45,
+              "kvinner": 46.6,
+              "kvalifiserte": 550,
+              "tilbud": 77,
+              "pg_fv": 49.3,
+              "pg_ord": 53.0
+            },
+            "2025": {
+              "alleS": 741,
+              "fvS": 57,
+              "plasser": 45,
+              "kvinner": 50.9,
+              "kvalifiserte": 581,
+              "tilbud": 77,
+              "pg_fv": 47.6,
+              "pg_ord": 49.5
+            },
+            "2026": {
+              "alleS": 733,
+              "fvS": 76,
+              "plasser": 45,
+              "kvinner": 59.2,
+              "kvalifiserte": 560,
+              "tilbud": 85,
+              "pg_fv": 46.9,
+              "pg_ord": 50.5
+            }
+          }
+        },
+        {
+          "id": "uit_fiskeri_havbruk",
+          "shortName": "UiT",
+          "institusjon": "UiT Norges arktiske universitet",
+          "studiekode": "186331",
+          "studiested": "Tromsø",
+          "type": "master",
+          "url": "https://uit.no/utdanning/program/269552/fiskeri-_og_havbruksvitenskap_-_master",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 45.3,
+              "pg_ord": 50.0
+            },
+            "2021": {
+              "alleS": 1067,
+              "fvS": 190,
+              "plasser": 45,
+              "kvinner": 41.6,
+              "kvalifiserte": 1032,
+              "tilbud": 115,
+              "pg_fv": 45.5,
+              "pg_ord": 50.0
+            },
+            "2022": {
+              "alleS": 909,
+              "fvS": 164,
+              "plasser": 65,
+              "kvinner": 44.5,
+              "kvalifiserte": 870,
+              "tilbud": 110,
+              "pg_fv": 45.6,
+              "pg_ord": 49.8
+            },
+            "2023": {
+              "alleS": 902,
+              "fvS": 135,
+              "plasser": 60,
+              "kvinner": 50.4,
+              "kvalifiserte": 863,
+              "tilbud": 140,
+              "pg_fv": 42.0,
+              "pg_ord": 48.0
+            },
+            "2024": {
+              "alleS": 860,
+              "fvS": 142,
+              "plasser": 60,
+              "kvinner": 57.0,
+              "kvalifiserte": 813,
+              "tilbud": 150,
+              "pg_fv": 41.8,
+              "pg_ord": 44.6
+            },
+            "2025": {
+              "alleS": 812,
+              "fvS": 142,
+              "plasser": 60,
+              "kvinner": 50.0,
+              "kvalifiserte": 759,
+              "tilbud": 160,
+              "pg_fv": 37.5,
+              "pg_ord": 43.3
+            },
+            "2026": {
+              "alleS": 864,
+              "fvS": 125,
+              "plasser": 60,
+              "kvinner": 47.2,
+              "kvalifiserte": 810,
+              "tilbud": 160,
+              "pg_fv": 38.7,
+              "pg_ord": 42.9
+            }
+          }
+        },
+        {
+          "id": "uib_havbruk",
+          "shortName": "UiB Havbruk",
+          "institusjon": "Universitetet i Bergen",
+          "studiekode": "184711",
+          "studiested": "Bergen",
+          "type": "master",
+          "url": "https://www4.uib.no/studier/program/havbruk-integrert-masterprogram-sivilingenior",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 42.4,
+              "pg_ord": 49.2
+            },
+            "2021": {
+              "alleS": 235,
+              "fvS": 43,
+              "plasser": 20,
+              "kvinner": 62.8,
+              "kvalifiserte": 137,
+              "tilbud": 30,
+              "pg_fv": 0.0,
+              "pg_ord": 52.6
+            },
+            "2022": {
+              "alleS": 430,
+              "fvS": 62,
+              "plasser": 20,
+              "kvinner": 53.2,
+              "kvalifiserte": 270,
+              "tilbud": 30,
+              "pg_fv": 48.2,
+              "pg_ord": 55.7
+            },
+            "2023": {
+              "alleS": 398,
+              "fvS": 57,
+              "plasser": 20,
+              "kvinner": 59.6,
+              "kvalifiserte": 263,
+              "tilbud": 33,
+              "pg_fv": 51.9,
+              "pg_ord": 56.0
+            },
+            "2024": {
+              "alleS": 388,
+              "fvS": 44,
+              "plasser": 20,
+              "kvinner": 52.3,
+              "kvalifiserte": 264,
+              "tilbud": 34,
+              "pg_fv": 49.7,
+              "pg_ord": 55.5
+            },
+            "2025": {
+              "alleS": 373,
+              "fvS": 36,
+              "plasser": 20,
+              "kvinner": 58.3,
+              "kvalifiserte": 246,
+              "tilbud": 35,
+              "pg_fv": 46.4,
+              "pg_ord": 52.2
+            },
+            "2026": {
+              "alleS": 390,
+              "fvS": 43,
+              "plasser": 20,
+              "kvinner": 55.8,
+              "kvalifiserte": 239,
+              "tilbud": 36,
+              "pg_fv": 47.3,
+              "pg_ord": 55.0
+            }
+          }
+        },
+        {
+          "id": "uib_fiskehelse",
+          "shortName": "UiB Fiskehelse",
+          "institusjon": "Universitetet i Bergen",
+          "studiekode": "184827",
+          "studiested": "Bergen",
+          "type": "master",
+          "url": "https://www4.uib.no/studier/program/fiskehelse-akvamedisin-profesjon",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 46.3,
+              "pg_ord": 49.8
+            },
+            "2021": {
+              "alleS": 364,
+              "fvS": 81,
+              "plasser": 28,
+              "kvinner": 74.1,
+              "kvalifiserte": 324,
+              "tilbud": 48,
+              "pg_fv": 47.2,
+              "pg_ord": 53.1
+            },
+            "2022": {
+              "alleS": 464,
+              "fvS": 91,
+              "plasser": 28,
+              "kvinner": 69.2,
+              "kvalifiserte": 417,
+              "tilbud": 48,
+              "pg_fv": 50.5,
+              "pg_ord": 57.7
+            },
+            "2023": {
+              "alleS": 421,
+              "fvS": 76,
+              "plasser": 25,
+              "kvinner": 68.4,
+              "kvalifiserte": 369,
+              "tilbud": 45,
+              "pg_fv": 52.0,
+              "pg_ord": 58.0
+            },
+            "2024": {
+              "alleS": 420,
+              "fvS": 82,
+              "plasser": 25,
+              "kvinner": 74.4,
+              "kvalifiserte": 373,
+              "tilbud": 50,
+              "pg_fv": 50.1,
+              "pg_ord": 56.4
+            },
+            "2025": {
+              "alleS": 370,
+              "fvS": 57,
+              "plasser": 25,
+              "kvinner": 73.7,
+              "kvalifiserte": 301,
+              "tilbud": 53,
+              "pg_fv": 44.0,
+              "pg_ord": 56.3
+            },
+            "2026": {
+              "alleS": 401,
+              "fvS": 78,
+              "plasser": 25,
+              "kvinner": 79.5,
+              "kvalifiserte": 337,
+              "tilbud": 57,
+              "pg_fv": 45.8,
+              "pg_ord": 57.7
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "biologi2",
+      "label": "Biologi (2-årig master)",
+      "level": "master2",
+      "desc": "Sammenligner de toårige masterne i biologi og biovitenskap med lokalt opptak.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. Tallene skulle vært hentet fra DBH/HKDIR tabell 379 (lokalt opptak per studieprogram), men API-et svarte med serverfeil for tabell 379 da dette kartet ble laget 22.09.2026; tidsserien står derfor tom og må etterfylles. Ingen tall er gjettet. NMBUs biologimaster undervises på norsk; NTNUs og Nords tilsvarende mastere er engelskspråklige, og Nords «Biovitenskap» tas opp per studieretning (akvakultur, genomikk og marin økologi i Bodø, husdyrvitenskap og terrestrisk økologi i Steinkjer). UiOs biovitenskapsmaster er den største av konkurrentene.",
+      "nmbuIds": [
+        "nmbu_biologi2"
+      ],
+      "defaultIds": [
+        "nmbu_biologi2",
+        "uio_biovitenskap2",
+        "uib_biologi2",
+        "ntnu_biologi2",
+        "uit_biologi2",
+        "nord_biovitenskap2"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_biologi2",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "",
+          "studiested": "Ås",
+          "type": "master2",
+          "url": "https://www.nmbu.no/studier/master-2-aar/biologi",
+          "years": {}
+        },
+        {
+          "id": "uio_biovitenskap2",
+          "shortName": "UiO",
+          "institusjon": "Universitetet i Oslo",
+          "studiekode": "",
+          "studiested": "Oslo",
+          "type": "master2",
+          "url": "https://www.uio.no/studier/program/biovitenskap-master/",
+          "years": {}
+        },
+        {
+          "id": "uib_biologi2",
+          "shortName": "UiB",
+          "institusjon": "Universitetet i Bergen",
+          "studiekode": "",
+          "studiested": "Bergen",
+          "type": "master2",
+          "url": "https://www4.uib.no/studier/program/biologi-master",
+          "years": {}
+        },
+        {
+          "id": "ntnu_biologi2",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "",
+          "studiested": "Trondheim",
+          "type": "master2",
+          "url": "https://www.ntnu.no/studier/msbio",
+          "years": {}
+        },
+        {
+          "id": "uit_biologi2",
+          "shortName": "UiT",
+          "institusjon": "UiT Norges arktiske universitet",
+          "studiekode": "",
+          "studiested": "Tromsø",
+          "type": "master2",
+          "url": "https://uit.no/utdanning/program/269576/biologi_-_master",
+          "years": {}
+        },
+        {
+          "id": "nord_biovitenskap2",
+          "shortName": "Nord",
+          "institusjon": "Nord universitet",
+          "studiekode": "",
+          "studiested": "Bodø",
+          "type": "master2",
+          "url": "https://www.nord.no/studier/biovitenskap-master",
+          "years": {}
+        }
+      ]
+    },
+    {
+      "id": "husdyr2",
+      "label": "Husdyrvitenskap (2-årig master)",
+      "level": "master2",
+      "desc": "Sammenligner de toårige masterne i husdyrvitenskap med lokalt opptak.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. Tallene skulle vært hentet fra DBH/HKDIR tabell 379 (lokalt opptak per studieprogram), men API-et svarte med serverfeil for tabell 379 da dette kartet ble laget 22.09.2026; tidsserien står derfor tom og må etterfylles. Ingen tall er gjettet. Nords master i biovitenskap med studieretning husdyrvitenskap (Steinkjer) er den eneste direkte konkurrenten; den er engelskspråklig og tas opp per studieretning. NMBUs eget «European Master in Animal Biodiversity and Genomics» (EMABG) er en internasjonal fellesgrad med Erasmus Mundus-opptak og er tatt med som svakere sammenligning (default false).",
+      "nmbuIds": [
+        "nmbu_husdyr2",
+        "nmbu_emabg"
+      ],
+      "defaultIds": [
+        "nmbu_husdyr2",
+        "nord_husdyr2"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_husdyr2",
+          "shortName": "NMBU Husdyrvitenskap",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "",
+          "studiested": "Ås",
+          "type": "master2",
+          "url": "https://www.nmbu.no/studier/master-2-aar/husdyrvitenskap",
+          "years": {}
+        },
+        {
+          "id": "nord_husdyr2",
+          "shortName": "Nord",
+          "institusjon": "Nord universitet",
+          "studiekode": "",
+          "studiested": "Steinkjer",
+          "type": "master2",
+          "url": "https://www.nord.no/studier/biovitenskap-master",
+          "years": {}
+        },
+        {
+          "id": "nmbu_emabg",
+          "shortName": "NMBU EMABG",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "",
+          "studiested": "Ås",
+          "type": "master2",
+          "url": "https://www.nmbu.no/studier/master-2-aar/european-master-animal-biodiversity-and-genomics",
+          "years": {}
+        }
+      ]
+    },
+    {
+      "id": "plante2",
+      "label": "Plantevitenskap (2-årig master)",
+      "level": "master2",
+      "desc": "Sammenligner de toårige masterne i plantevitenskap og jordbruk med lokalt opptak.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. Tallene skulle vært hentet fra DBH/HKDIR tabell 379 (lokalt opptak per studieprogram), men API-et svarte med serverfeil for tabell 379 da dette kartet ble laget 22.09.2026; tidsserien står derfor tom og må etterfylles. Ingen tall er gjettet. INNs master i bærekraftig jordbruk (Blæstad/Hamar) er den nærmeste konkurrenten. NMBUs egen agroøkologimaster er engelskspråklig og systemorientert og er tatt med som svakere sammenligning (default false) framfor å få en egen gruppe, siden den har den samme ene konkurrenten.",
+      "nmbuIds": [
+        "nmbu_plante2",
+        "nmbu_agroekologi2"
+      ],
+      "defaultIds": [
+        "nmbu_plante2",
+        "inn_baerekraftig_jordbruk"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_plante2",
+          "shortName": "NMBU Plantevitenskap",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "",
+          "studiested": "Ås",
+          "type": "master2",
+          "url": "https://www.nmbu.no/studier/master-2-aar/plantevitenskap",
+          "years": {}
+        },
+        {
+          "id": "inn_baerekraftig_jordbruk",
+          "shortName": "INN",
+          "institusjon": "Universitetet i Innlandet",
+          "studiekode": "",
+          "studiested": "Hamar",
+          "type": "master2",
+          "url": "https://www.inn.no/studier/vare-studier/master-i-berekraftig-jordbruk/",
+          "years": {}
+        },
+        {
+          "id": "nmbu_agroekologi2",
+          "shortName": "NMBU Agroøkologi",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "",
+          "studiested": "Ås",
+          "type": "master2",
+          "url": "https://www.nmbu.no/studier/master-2-aar/agroecology",
+          "years": {}
+        }
+      ]
+    },
+    {
+      "id": "akvakultur2",
+      "label": "Akvakultur (2-årig master)",
+      "level": "master2",
+      "desc": "Sammenligner de toårige masterne i akvakultur og havbruksvitenskap med lokalt opptak.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. Tallene skulle vært hentet fra DBH/HKDIR tabell 379 (lokalt opptak per studieprogram), men API-et svarte med serverfeil for tabell 379 da dette kartet ble laget 22.09.2026; tidsserien står derfor tom og må etterfylles. Ingen tall er gjettet. NMBUs akvakulturmaster er engelskspråklig. UiTs toårige master i fiskeri- og havbruksvitenskap (fiskerikandidat, 40 plasser, lokalt opptak med søknadskode 6006) er den største konkurrenten, og Nords master i biovitenskap med studieretning akvakultur (Bodø) den nærmeste faglig. UiTs akvamedisinmaster er tatt med som svakere sammenligning (default false) fordi den leder til autorisasjon som fiskehelsebiolog og har andre opptakskrav.",
+      "nmbuIds": [
+        "nmbu_akvakultur2"
+      ],
+      "defaultIds": [
+        "nmbu_akvakultur2",
+        "uit_fiskeri_havbruk2",
+        "nord_akvakultur2"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_akvakultur2",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "",
+          "studiested": "Ås",
+          "type": "master2",
+          "url": "https://www.nmbu.no/studier/master-2-aar/aquaculture",
+          "years": {}
+        },
+        {
+          "id": "uit_fiskeri_havbruk2",
+          "shortName": "UiT Fiskeri og havbruk",
+          "institusjon": "UiT Norges arktiske universitet",
+          "studiekode": "",
+          "studiested": "Tromsø",
+          "type": "master2",
+          "url": "https://uit.no/utdanning/program/268941/fiskeri-_og_havbruksvitenskap_-_master",
+          "years": {
+            "2026": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": 40,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": null,
+              "pg_ord": null
+            }
+          }
+        },
+        {
+          "id": "nord_akvakultur2",
+          "shortName": "Nord",
+          "institusjon": "Nord universitet",
+          "studiekode": "",
+          "studiested": "Bodø",
+          "type": "master2",
+          "url": "https://www.nord.no/studier/biovitenskap-master",
+          "years": {}
+        },
+        {
+          "id": "uit_akvamedisin2",
+          "shortName": "UiT Akvamedisin",
+          "institusjon": "UiT Norges arktiske universitet",
+          "studiekode": "",
+          "studiested": "Tromsø",
+          "type": "master2",
+          "url": "https://uit.no/utdanning/program/268952/akvamedisin_-_master",
+          "years": {}
+        }
+      ]
+    }
+  ]
+}

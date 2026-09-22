@@ -47,7 +47,7 @@
           "isNmbu": false,
           "default": true,
           "source": "SO",
-          "url": "https://uit.no/utdanning/program/271224/bioteknologi_-_bachelor",
+          "url": "https://uit.no/utdanning/studieprogram/b-biotek",
           "localData": null
         },
         {
@@ -113,7 +113,7 @@
       "label": "Kjemi",
       "level": "bachelor",
       "desc": "Sammenligner NMBUs bachelor i kjemi med kjemi- og biokjemibachelorene ved de andre universitetene.",
-      "note": "Konkurrentene med default true er treårige realfagsbachelorer i kjemi eller biokjemi i Samordna opptak. UiTs kjemibachelor (kode 186860) hadde siste opptak i 2024 og er avløst av det femårige sivilingeniørprogrammet «Bærekraftig kjemi og innovasjon» (kode 186764) fra 2025; begge er med, sivilingeniørløpet som svakere sammenligning fordi nivå og opptakskrav er andre. Treårige kjemiingeniørutdanninger (HVL 203009, NTNU 194009 og 194688, UiS 217009, USN 222688) har eget ingeniøropptak og er ikke tatt med, og NTNUs «Biologi og kjemi, realfag» (kode 194184) er et årsstudium.",
+      "note": "Konkurrentene med default true er treårige realfagsbachelorer i kjemi eller biokjemi i Samordna opptak. UiTs kjemibachelor (kode 186860) hadde siste opptak i 2024 og er avløst av det femårige sivilingeniørprogrammet «Bærekraftig kjemi og innovasjon» (kode 186764) fra 2025; begge er med, sivilingeniørløpet som svakere sammenligning fordi nivå og opptakskrav er andre. UiT har tatt ned programsiden for den gamle kjemibacheloren, så begge UiT-radene lenker til etterfølgeren. Treårige kjemiingeniørutdanninger (HVL 203009, NTNU 194009 og 194688, UiS 217009, USN 222688) har eget ingeniøropptak og er ikke tatt med, og NTNUs «Biologi og kjemi, realfag» (kode 194184) er et årsstudium.",
       "programs": [
         {
           "id": "nmbu_kjemi",
@@ -196,7 +196,7 @@
           "isNmbu": false,
           "default": true,
           "source": "SO",
-          "url": "https://uit.no/utdanning/program/271144/kjemi_-_bachelor",
+          "url": "https://uit.no/utdanning/program/868642/baerekraftig_kjemi_og_innovasjon_sivilingenior_-",
           "localData": null
         },
         {
@@ -210,7 +210,7 @@
           "isNmbu": false,
           "default": false,
           "source": "SO",
-          "url": "https://uit.no/utdanning/program/850311/baerekraftig_kjemi_og_innovasjon_-_sivilingenior",
+          "url": "https://uit.no/utdanning/program/868642/baerekraftig_kjemi_og_innovasjon_sivilingenior_-",
           "localData": null
         }
       ]
@@ -261,7 +261,7 @@
           "isNmbu": false,
           "default": true,
           "source": "SO",
-          "url": "https://uit.no/utdanning/program/269071/ernaering_-_bachelor",
+          "url": "https://uit.no/utdanning/studieprogram/b-ern",
           "localData": null
         },
         {
@@ -340,7 +340,7 @@
           "isNmbu": false,
           "default": false,
           "source": "SO",
-          "url": "https://uit.no/utdanning/program/270266/fiskeri-_og_havbruksvitenskap_-_bachelor",
+          "url": "https://uit.no/utdanning/program/268899/fiskeri-_og_havbruksvitenskap_-_bachelor",
           "localData": null
         }
       ]
