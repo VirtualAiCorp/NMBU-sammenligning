@@ -11,6 +11,11 @@ import { landsamColorFor } from '../data/landsamPalette';
 import { landsamHasComparison } from '../data/landsamUtils';
 import type { FullAdmissionEntry, FullYearData } from '../data/fullAdmissionData';
 
+// Norsk tallformat (desimalkomma, mellomrom som tusenskille)
+function nf(v: number, dec: number): string {
+  return v.toLocaleString('nb-NO', { minimumFractionDigits: dec, maximumFractionDigits: dec });
+}
+
 // ─── Metrics ─────────────────────────────────────────────────────────────────
 
 type MetricKey = 'alleS' | 'fvS' | 'sokerpress' | 'plasser' | 'kvinner' | 'kvalifiserte' | 'pg_ord' | 'pg_fv' | 'pg_snitt';
@@ -65,12 +70,12 @@ function TrendChip({ val, prev }: { val: number | null; prev: number | null }) {
   if (Math.abs(diff) < 0.05) return <Minus className="w-3.5 h-3.5 inline" style={{ color: '#888' }} />;
   if (diff > 0) return (
     <span className="inline-flex items-center gap-0.5 text-xs" style={{ color: '#2a7a55' }}>
-      <TrendingUp className="w-3 h-3" />+{Math.abs(diff).toFixed(1)}
+      <TrendingUp className="w-3 h-3" />+{nf(Math.abs(diff), 1)}
     </span>
   );
   return (
     <span className="inline-flex items-center gap-0.5 text-xs" style={{ color: '#9b3a3a' }}>
-      <TrendingDown className="w-3 h-3" />−{Math.abs(diff).toFixed(1)}
+      <TrendingDown className="w-3 h-3" />−{nf(Math.abs(diff), 1)}
     </span>
   );
 }
@@ -177,7 +182,7 @@ function TrendChart({ selectedEntries, metric }: { selectedEntries: FullAdmissio
         <Tooltip
           formatter={(v: number, key: string) => {
             const e = selectedEntries.find((x) => x.id === key);
-            return [`${v.toFixed(metric.decimals)}${metric.unit ? ' ' + metric.unit : ''}`, e?.shortName ?? key];
+            return [`${nf(v, metric.decimals)}${metric.unit ? ' ' + metric.unit : ''}`, e?.shortName ?? key];
           }}
           contentStyle={{ border: '1px solid var(--nmbu-green-3)', borderRadius: 8, fontSize: 12 }}
         />
@@ -241,11 +246,11 @@ function BarComparison({
           tickFormatter={(v) => metric.unit === '%' ? `${v}%` : metric.unit === 'x' ? `${v}x` : String(v)} />
         <YAxis type="category" dataKey="name" tick={{ fill: '#333', fontSize: 11 }} tickLine={false} axisLine={false} width={150} />
         <Tooltip
-          formatter={(v: number) => [`${v.toFixed(metric.decimals)}${metric.unit ? ' ' + metric.unit : ''}`, metric.label]}
+          formatter={(v: number) => [`${nf(v, metric.decimals)}${metric.unit ? ' ' + metric.unit : ''}`, metric.label]}
           contentStyle={{ border: '1px solid var(--nmbu-green-3)', borderRadius: 8, fontSize: 12 }}
         />
         <ReferenceLine x={avg} stroke="#888" strokeDasharray="4 3"
-          label={{ value: `Snitt ${avg.toFixed(metric.decimals)}`, position: 'top', fontSize: 10, fill: '#888' }} />
+          label={{ value: `Snitt ${nf(avg, metric.decimals)}`, position: 'top', fontSize: 10, fill: '#888' }} />
         <Bar dataKey="value" radius={[0, 4, 4, 0]}>
           {data.map((d) => <Cell key={d.id} fill={landsamColorFor(d.id)} />)}
         </Bar>
@@ -332,7 +337,7 @@ function DataTable({
                 return (
                   <td key={m.id} className="px-3 py-2.5 text-center">
                     <div style={{ fontWeight: 600, color: v === null ? 'var(--nmbu-neutral-3)' : isZeroPg ? 'var(--nmbu-green-6)' : 'var(--nmbu-neutral)' }}>
-                      {v === null ? '–' : isZeroPg ? 'Alle inn' : `${v.toFixed(m.decimals)}${m.unit ? ' ' + m.unit : ''}`}
+                      {v === null ? '–' : isZeroPg ? 'Alle inn' : `${nf(v, m.decimals)}${m.unit ? ' ' + m.unit : ''}`}
                     </div>
                     {v !== null && !isZeroPg && <div className="mt-0.5"><TrendChip val={v} prev={vPrev} /></div>}
                   </td>
@@ -352,7 +357,7 @@ function NmbuKeyFigures({ group, year: requestedYear }: { group: LandsamGroup; y
   const nmbuEntries = group.entries.filter((e) => group.nmbuIds.includes(e.id));
   if (nmbuEntries.length === 0) return null;
 
-  const fmt = (d: number, dec = 0) => (d >= 0 ? '+' : '') + (dec ? d.toFixed(dec) : Math.round(d));
+  const fmt = (d: number, dec = 0) => (d >= 0 ? '+' : '') + (dec ? nf(d, dec) : Math.round(d));
 
   // Bruk ønsket år hvis programmet har søkertall der, ellers siste tidligere år med tall
   // (lokale masteropptak i DBH ligger typisk ett år bak Samordna opptak).
@@ -395,13 +400,13 @@ function NmbuKeyFigures({ group, year: requestedYear }: { group: LandsamGroup; y
           },
           {
             label: 'Søkerpress',
-            value: sp != null ? `${sp.toFixed(2)}×` : '–',
+            value: sp != null ? `${nf(sp, 2)}×` : '–',
             delta: sp != null && spPrev != null ? `${fmt(sp - spPrev, 2)}× vs. ${prevYear}` : null,
           },
           {
             label: 'Poenggrense (fv. / ord.)',
             value: cur?.pg_fv != null && cur?.pg_ord != null
-              ? `${cur.pg_fv.toFixed(1)} / ${cur.pg_ord.toFixed(1)}`
+              ? `${nf(cur.pg_fv, 1)} / ${nf(cur.pg_ord, 1)}`
               : '–',
             delta: cur?.pg_ord != null && prev?.pg_ord != null
               ? `${fmt(cur.pg_ord - prev.pg_ord, 1)} vs. ${prevYear}` : null,
