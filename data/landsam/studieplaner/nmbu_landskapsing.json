@@ -1,0 +1,187 @@
+{
+  "entryId": "nmbu_landskapsing",
+  "programnavn": "Landskapsingeniør (bachelor)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://www.nmbu.no/studier/bachelor/landskapsingenior",
+    "https://www.nmbu.no/studier/studieplan-landskapsingenior-20252026",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/inline-images/Studieplan%20B-LI%202025_2026_0.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 137.5,
+  "obligatoriske": [
+    {
+      "emnekode": "LAA115",
+      "emnenavn": "Introduksjon til profesjonsstudiet",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "LAA115-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "GEO100",
+      "emnenavn": "Geologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "GEO100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PHI100",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "PHI100-1",
+        "PHI101-1"
+      ],
+      "merknad": "Studieplanen gir valget mellom PHI100 og seminarversjonen PHI101."
+    },
+    {
+      "emnekode": "LAD100",
+      "emnenavn": "Landskapsdata",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "januarblokk",
+      "dbhEmnekoder": [
+        "LAD100-1"
+      ],
+      "merknad": "DBH-navnet er «Introduksjon til digitale verktøy»; emnet er omdøpt."
+    },
+    {
+      "emnekode": "THT200",
+      "emnenavn": "Bærekraftig overvannshåndtering",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "THT200-2",
+        "THT200-1"
+      ],
+      "merknad": "THT200-2 er dagens 7,5 sp-versjon; THT200-1 var «Vannteknikk for landskapsplanleggere» (10 sp)."
+    },
+    {
+      "emnekode": "LAA222",
+      "emnenavn": "Konkurransegrunnlag og anleggsteknikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "LAA222-2"
+      ],
+      "merknad": "Erstatter det eldre emnet LAA221 «Konkurransegrunnlag» (5 sp), som ligger på egen kode i DBH."
+    },
+    {
+      "emnekode": "JORD160",
+      "emnenavn": "Introduksjon om jord",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "juniblokk",
+      "dbhEmnekoder": [
+        "JORD160-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PHG113",
+      "emnenavn": "Landskapsplanter – Økologi og bærekraftig plantebruk",
+      "studiepoeng": 20,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "PHG113-2",
+        "PHG113-1"
+      ],
+      "merknad": "PHG113-2 er dagens 20 sp-versjon; PHG113-1 var 10 sp."
+    },
+    {
+      "emnekode": "LAA231",
+      "emnenavn": "Bærekraftig landskapsforvaltning",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "LAA231-1",
+        "LAA231-2"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PHG213",
+      "emnenavn": "Landskapsplanter - Planteplan i praksis",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "juniblokk",
+      "dbhEmnekoder": [
+        "PHG213-1"
+      ],
+      "merknad": "Studieplanen oppgir 5 sp, mens DBH-koden PHG213-1 er registrert med 15 sp."
+    },
+    {
+      "emnekode": "PHG215",
+      "emnenavn": "Landskapsplanter – Etablering, skjøtsel og bevaring",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "PHG215-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PLV210",
+      "emnenavn": "Plantevern i grøntanlegg",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "PLV210-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "LAA233",
+      "emnenavn": "Prosjektledelse og gjennomføring",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "LAA233-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "LAA216",
+      "emnenavn": "Prosjektering med konkurransegrunnlag",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "LAA216-1"
+      ],
+      "merknad": "DBH-navnet er «Konstruksjonsteknikk»; emnet er omdøpt."
+    },
+    {
+      "emnekode": "B15-LI",
+      "emnenavn": "Bacheloroppgave",
+      "studiepoeng": 15,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "B15-LI-1"
+      ],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er NMBUs studieplan-PDF for kullet 2025/2026. Obligatorisk portefølje er 137,5 sp, som stemmer med programsidens «137,5 studiepoeng obligatoriske emner»; de resterende 42,5 sp er valgfrie og må velges i løpet av de tre årene (anbefalte emner ligger i Canvas-rommet for B-LI). Januarblokk og vårparallell i 2. år er holdt fri for timeplansikrede emner og brukes til valgfrie emner og eventuelt praksis (PRAK202). Semesterkodene i planen (1-1 til 3-4) er tolket som augustblokk, høstparallell, januarblokk, vårparallell og juniblokk."
+}

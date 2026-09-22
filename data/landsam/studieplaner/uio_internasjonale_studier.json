@@ -1,0 +1,275 @@
+{
+  "entryId": "uio_internasjonale_studier",
+  "programnavn": "Internasjonale studier (bachelor)",
+  "institusjon": "Universitetet i Oslo",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.uio.no/studier/program/internasjonale-studier/",
+    "https://www.uio.no/studier/program/internasjonale-studier/oppbygging/",
+    "https://www.uio.no/studier/program/internasjonale-studier/oppbygging/anbefaltlop_historie.html",
+    "https://www.uio.no/studier/program/internasjonale-studier/oppbygging/anbefalt_lop_jus.html",
+    "https://www.uio.no/studier/program/internasjonale-studier/oppbygging/anbefalt_lop_statsvit.html",
+    "https://www.uio.no/studier/program/internasjonale-studier/oppbygging/anbefaltlop_samfok.html"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 110,
+  "obligatoriske": [
+    {
+      "emnekode": "INTER1000",
+      "emnenavn": "Innføringsemne i internasjonale studier",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "INTER1000-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "STV1200",
+      "emnenavn": "Internasjonal politikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "STV1200-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EXPHIL03",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EXPHIL03-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HIS1410INTER",
+      "emnenavn": "Nyere historie fra ca. 1800 til vår tid for Internasjonale studier",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "HIS1410INTER-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ECON1410",
+      "emnenavn": "Internasjonal økonomi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "ECON1410-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "JUROFF1410",
+      "emnenavn": "Folkerett",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "JUROFF1410-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "INTER2000",
+      "emnenavn": "Case Work in International Studies",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "INTER2000-1"
+      ],
+      "merknad": "Ligger i 5. semester i det anbefalte løpet for fordypning i samfunnsøkonomi"
+    },
+    {
+      "emnekode": "SVEXFAC03",
+      "emnenavn": "Examen facultatum, samfunnsvitenskapelig variant",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "SVEXFAC03-1"
+      ],
+      "merknad": "Tas i 3. eller 4. semester. Studenter med fordypning i jus tar JFEXFAC04 i stedet, og historiestudenter kan bytte til EXFAC03-HARK"
+    },
+    {
+      "emnekode": "STV2220",
+      "emnenavn": "Internasjonal politisk økonomi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "STV2220-1",
+        "STV2230-1",
+        "STV2235-1",
+        "STV2250-1"
+      ],
+      "merknad": "Ett IP-emne på 2000-nivå er obligatorisk: velg mellom STV2220, STV2230 International Security Policy, STV2235 Conflict and Human Rights in International Politics og STV2250 International Environmental and Resource Politics"
+    },
+    {
+      "emnekode": "Valgfritt historie-emne",
+      "emnenavn": "Valgfritt historie-emne på bachelornivå",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Programplanen krever ett historieemne, men angir ingen bestemt emnekode; kan ikke kobles til én DBH-kode"
+    },
+    {
+      "emnekode": "INTER3090",
+      "emnenavn": "Oppgaveemne i internasjonale studier",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "INTER3090-1"
+      ],
+      "merknad": "Bacheloroppgaven"
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Historie",
+      "obligatoriske": [
+        {
+          "emnekode": "HIS1210INTER",
+          "emnenavn": "Eldre historie fram til ca. 1800 for Internasjonale studier",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "HIS1210INTER-1"
+          ],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Jus",
+      "obligatoriske": [
+        {
+          "emnekode": "JFEXFAC04",
+          "emnenavn": "Examen facultatum, rettsvitenskapelig variant",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "JFEXFAC04-1"
+          ],
+          "merknad": "Erstatter SVEXFAC03 for denne fordypningen"
+        },
+        {
+          "emnekode": "STV1020",
+          "emnenavn": "Politisk analyse 2: Forskningsdesign og kvantitative metoder",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "STV1020-1",
+            "STV1010-1"
+          ],
+          "merknad": "Velg mellom STV1020 og STV1010 Politisk analyse 1: Forskningsdesign og kvalitative metoder"
+        }
+      ]
+    },
+    {
+      "navn": "Statsvitenskap",
+      "obligatoriske": [
+        {
+          "emnekode": "STV1020",
+          "emnenavn": "Politisk analyse 2: Forskningsdesign og kvantitative metoder",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "STV1020-1"
+          ],
+          "merknad": "Obligatorisk metodeemne"
+        }
+      ]
+    },
+    {
+      "navn": "Samfunnsøkonomi",
+      "obligatoriske": [
+        {
+          "emnekode": "ECON1100",
+          "emnenavn": "Matematikk I",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "ECON1100-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "ECON1210",
+          "emnenavn": "Mikroøkonomi 1",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "ECON1210-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "ECON1310",
+          "emnenavn": "Makroøkonomi 1",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "ECON1310-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "ECON2220",
+          "emnenavn": "Mikroøkonomi 2",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "ECON2220-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "ECON2310",
+          "emnenavn": "Makroøkonomi 2",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "ECON2310-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "ECON2130",
+          "emnenavn": "Statistikk for økonomer",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "ECON2130-1"
+          ],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Programmet består av fellesemner (110 sp) og fordypning/frie emner (70 sp). Alle studenter må velge én av fire fordypninger: historie, jus, statsvitenskap eller samfunnsøkonomi. Ett av de 110 fellespoengene er et «valgfritt historie-emne» uten fast emnekode, og ett er et valg mellom fire IP-emner på STV 2000-nivå - disse er ført opp med henholdsvis tom kobling og fire alternative DBH-koder. Fordypningene i statsvitenskap og historie har i tillegg 30 sp valgfrie fordypningsemner (STV 2000-nivå innen politisk teori, komparativ politikk og offentlig politikk / HIS 2000-nivå) og 30 sp frie emner; fordypningen i jus krever seks juridiske emner (60 sp), hvorav minst tre fra listen over INTER-relevante JUR-emner; fordypningen i samfunnsøkonomi krever i tillegg ett valgfritt ECON-emne. Disse valgene har ingen faste emnekoder og er derfor ikke ført opp. År/semester for fordypningsemnene følger det anbefalte løpet; UiO publiserer egne tabeller for studenter med og uten utveksling, og plasseringen kan variere mellom dem."
+}

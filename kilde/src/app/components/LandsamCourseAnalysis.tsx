@@ -2,9 +2,9 @@ import { useState, useMemo } from 'react';
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
 } from 'recharts';
-import { TrendingUp, TrendingDown, Minus, Info, ExternalLink, Filter, Users } from 'lucide-react';
+import { TrendingUp, TrendingDown, Minus, Info, ExternalLink, Filter, Users, ChevronDown, ChevronRight } from 'lucide-react';
 import { CsvExportButton } from './CsvExportButton';
-import { exportLandsamCoursesCsv, exportLandsamCourseTypeCsv } from '../utils/csvExport';
+import { exportLandsamCoursesCsv, exportLandsamCourseTypeCsv, exportLandsamStudyPlanCsv } from '../utils/csvExport';
 import {
   LANDSAM_COURSE_GROUPS, LANDSAM_COURSE_YEARS,
   type LandsamCourseGroup, type ProgramCourses, type CourseGradeYear, type CourseStats,
@@ -13,6 +13,10 @@ import {
   LANDSAM_COURSE_MAPPING,
   type CourseType, type CourseTypeLink,
 } from '../data/landsamCourseMapping';
+import {
+  LANDSAM_STUDYPLAN_GROUPS,
+  type PlanCourse, type PlanSpecialisation, type ProgramStudyPlan,
+} from '../data/landsamStudyPlanData';
 import { LANDSAM_GROUPS, type LandsamLevel } from '../data/landsamAdmissionData';
 import { landsamColorFor } from '../data/landsamPalette';
 import { landsamCourseHasComparison } from '../data/landsamUtils';
@@ -284,7 +288,7 @@ function YearAndThresholdPicker({
 
 // ─── Mini-fordelingsstolpe ────────────────────────────────────────────────────
 
-function MiniDistBar({ d, width = 130 }: { d: CourseGradeYear; width?: number }) {
+function MiniDistBar({ d, width = 130 }: { d: CourseGradeYear; width?: number | string }) {
   const bokstav = courseLetterTotal(d);
   if (bokstav === 0) {
     const bestatt = d.G + d.H;
@@ -1027,6 +1031,631 @@ function SammenlignEmneView({
   );
 }
 
+// ─── Fane 5: Studieplan ───────────────────────────────────────────────────────
+
+/** Rekkefølgen semestrene skal stå i innenfor ett studieår. */
+const SEMESTER_ORDER = ['høst', 'januarblokk', 'vår', 'juniblokk', 'helår'];
+
+function semesterRank(semester: string | null): number {
+  if (!semester) return SEMESTER_ORDER.length + 1;
+  const i = SEMESTER_ORDER.indexOf(semester.trim().toLowerCase());
+  return i >= 0 ? i : SEMESTER_ORDER.length;
+}
+
+function storForbokstav(s: string): string {
+  return s.length === 0 ? s : s.charAt(0).toUpperCase() + s.slice(1);
+}
+
+/** Studieår først (emner uten årsplassering bakerst), deretter semester, så emnekode. */
+function sortPlanCourses(courses: PlanCourse[]): PlanCourse[] {
+  return [...courses].sort((a, b) => {
+    const ay = a.aar ?? 99, by = b.aar ?? 99;
+    if (ay !== by) return ay - by;
+    const as = semesterRank(a.semester), bs = semesterRank(b.semester);
+    if (as !== bs) return as - bs;
+    return a.emnekode.localeCompare(b.emnekode, 'nb');
+  });
+}
+
+interface StudyYearBlock { aar: number | null; label: string; emner: PlanCourse[] }
+
+function groupByStudyYear(courses: PlanCourse[]): StudyYearBlock[] {
+  const bolker: StudyYearBlock[] = [];
+  for (const c of sortPlanCourses(courses)) {
+    let b = bolker.find((x) => x.aar === c.aar);
+    if (!b) {
+      b = { aar: c.aar, label: c.aar === null ? 'Uten årsplassering' : `${c.aar}. studieår`, emner: [] };
+      bolker.push(b);
+    }
+    b.emner.push(c);
+  }
+  return bolker;
+}
+
+/** Karaktertallene for emnet i det valgte året, eller null når de mangler / er under terskelen. */
+function planYear(c: PlanCourse, year: number, minKandidater: number): CourseGradeYear | null {
+  const d = c.years.find((yr) => yr.year === year);
+  if (!d || d.total <= 0 || d.total < minKandidater) return null;
+  return d;
+}
+
+/** Sant når DBH-kodene er noe annet enn emnekoden selv, og derfor bør vises. */
+function dbhKoderAvviker(c: PlanCourse): boolean {
+  if (c.dbhEmnekoder.length === 0) return true;
+  return c.dbhEmnekoder.length !== 1 || c.dbhEmnekoder[0] !== c.emnekode;
+}
+
+interface PlanAgg {
+  /** Antall obligatoriske emner i studieplanen. */
+  emner: number;
+  /** Av disse: emner med karaktertall dette året, over terskelen. */
+  medTall: number;
+  kandidater: number;
+  bokstav: number;
+  grades: Record<Grade, number>;
+  G: number;
+  H: number;
+  /** Kandidatvektet snitt over de obligatoriske emnene med bokstavkarakter. */
+  snitt: number | null;
+  strykprosent: number | null;
+  bestattprosent: number | null;
+}
+
+function aggregatePlanCourses(courses: PlanCourse[], year: number, minKandidater: number): PlanAgg {
+  const grades = EMPTY_GRADES();
+  let medTall = 0, kandidater = 0, G = 0, H = 0;
+
+  for (const c of courses) {
+    const d = planYear(c, year, minKandidater);
+    if (!d) continue;
+    medTall += 1;
+    kandidater += d.total;
+    grades.A += d.A; grades.B += d.B; grades.C += d.C;
+    grades.D += d.D; grades.E += d.E; grades.F += d.F;
+    G += d.G; H += d.H;
+  }
+
+  const bokstav = GRADES.reduce((s, g) => s + grades[g], 0);
+  const snitt = bokstav > 0
+    ? (grades.A * 5 + grades.B * 4 + grades.C * 3 + grades.D * 2 + grades.E * 1) / bokstav
+    : null;
+
+  return {
+    emner: courses.length, medTall, kandidater, bokstav, grades, G, H, snitt,
+    strykprosent: bokstav > 0 ? (grades.F / bokstav) * 100 : null,
+    bestattprosent: G + H > 0 ? (G / (G + H)) * 100 : null,
+  };
+}
+
+function harStudieplan(p: ProgramStudyPlan): boolean {
+  return p.obligatoriske.length > 0 || p.spesialiseringer.length > 0;
+}
+
+// ─── Toppstripe: ett nøkkeltallskort per program ──────────────────────────────
+
+function StudyPlanTopStrip({
+  plans, year, minKandidater,
+}: {
+  plans: ProgramStudyPlan[];
+  year: number;
+  minKandidater: number;
+}) {
+  const rader = plans.map((p) => ({ p, agg: aggregatePlanCourses(p.obligatoriske, year, minKandidater) }));
+
+  const medPlan = rader
+    .filter((r) => harStudieplan(r.p))
+    .sort((a, b) => {
+      if (a.agg.snitt === null && b.agg.snitt === null) return 0;
+      if (a.agg.snitt === null) return 1;
+      if (b.agg.snitt === null) return -1;
+      return b.agg.snitt - a.agg.snitt;
+    });
+  const utenPlan = rader.filter((r) => !harStudieplan(r.p));
+
+  return (
+    <div className="flex flex-wrap gap-3">
+      {medPlan.map(({ p, agg }) => {
+        const col = landsamColorFor(p.entryId);
+        return (
+          <div key={p.entryId} className="rounded-xl px-4 py-3"
+            style={{
+              border: '1px solid var(--nmbu-neutral-3)', backgroundColor: '#fff',
+              borderLeft: `4px solid ${col}`, minWidth: 230, flex: '1 1 230px',
+            }}>
+            <div className="flex items-center gap-1.5 mb-2 flex-wrap">
+              <div className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: col }} />
+              <span style={{ fontSize: 13, fontWeight: 600, color: p.isNmbu ? 'var(--nmbu-green-dark)' : 'var(--nmbu-neutral)' }}>
+                {p.shortName}{p.isNmbu ? ' ★' : ''}
+              </span>
+              {p.isNmbu && (
+                <span className="px-1.5 rounded-full" style={{ fontSize: 9, fontWeight: 700, backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)' }}>NMBU</span>
+              )}
+            </div>
+
+            <div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)', marginBottom: 3 }}>
+              Obligatorisk karakterindeks {year}
+            </div>
+            <div className="flex items-baseline gap-2 flex-wrap">
+              <span style={{ fontSize: 19, fontWeight: 700, lineHeight: 1, color: 'var(--nmbu-neutral)' }}>
+                {agg.snitt !== null ? `${nf(agg.snitt, 2)} (${letterFor(agg.snitt)})` : '–'}
+              </span>
+              <span style={{ fontSize: 11, color: (agg.strykprosent ?? 0) > 20 ? '#9b3a3a' : 'var(--nmbu-neutral-2)' }}>
+                stryk {agg.strykprosent !== null ? `${nf(agg.strykprosent, 1)} %` : '–'}
+              </span>
+            </div>
+
+            <div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)', marginTop: 8, lineHeight: 1.6 }}>
+              {p.obligatoriskeStudiepoeng !== null && p.totaltStudiepoeng !== null
+                ? <>{nf(p.obligatoriskeStudiepoeng)} av {nf(p.totaltStudiepoeng)} sp obligatorisk</>
+                : <>Studiepoeng ikke oppgitt</>}
+              <br />
+              {agg.emner} obligatoriske emner · {agg.medTall} med karaktertall i {year}
+            </div>
+          </div>
+        );
+      })}
+
+      {utenPlan.map(({ p }) => {
+        const col = landsamColorFor(p.entryId);
+        return (
+          <div key={p.entryId} className="rounded-xl px-4 py-3"
+            style={{
+              border: '1px dashed var(--nmbu-neutral-3)', backgroundColor: 'var(--nmbu-beige-light)',
+              minWidth: 230, flex: '1 1 230px',
+            }}>
+            <div className="flex items-center gap-1.5 mb-1 flex-wrap">
+              <div className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: col, opacity: 0.4 }} />
+              <span style={{ fontSize: 13, fontWeight: 600, color: 'var(--nmbu-neutral-2)' }}>
+                {p.shortName}{p.isNmbu ? ' ★' : ''}
+              </span>
+            </div>
+            <div style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)' }}>
+              {p.merknad ?? 'Studieplan ikke hentet ennå'}
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+// ─── Emnetabell for én studieplanbolk ─────────────────────────────────────────
+
+type PlanTableRow =
+  | { kind: 'bolk'; key: string; label: string }
+  | { kind: 'emne'; key: string; c: PlanCourse; stripe: number };
+
+function PlanCourseTable({
+  courses, year, minKandidater,
+}: {
+  courses: PlanCourse[];
+  year: number;
+  minKandidater: number;
+}) {
+  if (courses.length === 0) {
+    return (
+      <p className="text-xs py-3" style={{ color: 'var(--nmbu-neutral-2)' }}>
+        Ingen obligatoriske emner er listet her i studieplanen.
+      </p>
+    );
+  }
+
+  const rader: PlanTableRow[] = [];
+  let stripe = 0;
+  for (const b of groupByStudyYear(courses)) {
+    rader.push({ kind: 'bolk', key: `bolk-${b.aar ?? 'ukjent'}`, label: b.label });
+    for (const c of b.emner) {
+      rader.push({ kind: 'emne', key: `emne-${b.aar ?? 'ukjent'}-${c.emnekode}`, c, stripe: stripe++ });
+    }
+  }
+
+  const cols: { label: string; align: 'left' | 'center' }[] = [
+    { label: 'Semester',  align: 'left' },
+    { label: 'Emnekode',  align: 'left' },
+    { label: 'Emnenavn',  align: 'left' },
+    { label: 'Sp.',       align: 'center' },
+    { label: 'Kandidater', align: 'center' },
+    { label: 'Snitt',     align: 'center' },
+    { label: 'Stryk %',   align: 'center' },
+    { label: 'Fordeling', align: 'left' },
+  ];
+
+  return (
+    <div className="overflow-x-auto">
+      <table className="w-full border-collapse text-xs">
+        <thead>
+          <tr style={{ backgroundColor: 'var(--nmbu-beige-light)', borderBottom: '2px solid var(--nmbu-neutral-3)' }}>
+            {cols.map((col) => (
+              <th key={col.label} className={`px-3 py-2.5 text-${col.align} whitespace-nowrap`}
+                style={{ color: 'var(--nmbu-neutral-2)', fontWeight: 600 }}>
+                {col.label}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {rader.map((r) => {
+            if (r.kind === 'bolk') {
+              return (
+                <tr key={r.key}>
+                  <td colSpan={cols.length} className="px-3 py-1.5"
+                    style={{
+                      backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)',
+                      fontWeight: 700, fontSize: 11, letterSpacing: '0.05em', textTransform: 'uppercase',
+                      borderBottom: '1px solid var(--nmbu-neutral-3)',
+                    }}>
+                    {r.label}
+                  </td>
+                </tr>
+              );
+            }
+
+            const c = r.c;
+            const raw = c.years.find((yr) => yr.year === year);
+            const d = planYear(c, year, minKandidater);
+            const bokstav = d ? courseLetterTotal(d) : 0;
+            const bestattOnly = d !== null && bokstav === 0 && d.G + d.H > 0;
+            const manglerTekst = raw
+              ? `Under terskelen på ${minKandidater} kandidater (${nf(raw.total)} i ${year}).`
+              : `Emnet har ingen karaktertall i DBH for ${year}.`;
+
+            return (
+              <tr key={r.key}
+                style={{ borderBottom: '1px solid var(--nmbu-neutral-3)', backgroundColor: r.stripe % 2 === 0 ? '#fff' : 'var(--nmbu-beige-light)' }}>
+                <td className="px-3 py-2.5 whitespace-nowrap" style={{ color: 'var(--nmbu-neutral-2)' }}>
+                  {c.semester ? storForbokstav(c.semester) : '–'}
+                </td>
+                <td className="px-3 py-2.5 whitespace-nowrap">
+                  <div className="font-mono" style={{ color: 'var(--nmbu-neutral-1)', fontWeight: 600 }}>{c.emnekode}</div>
+                  {dbhKoderAvviker(c) && (
+                    <div className="font-mono" style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)' }}
+                      title={c.dbhEmnekoder.length > 0 ? 'Emnekode(r) i DBH' : 'Emnet er ikke koblet til en DBH-kode'}>
+                      {c.dbhEmnekoder.length > 0 ? c.dbhEmnekoder.join(', ') : 'ingen DBH-kode'}
+                    </div>
+                  )}
+                </td>
+                <td className="px-3 py-2.5">
+                  <span style={{ color: 'var(--nmbu-neutral)' }}>{c.emnenavn}</span>
+                  {c.merknad && (
+                    <div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)', fontStyle: 'italic' }}>{c.merknad}</div>
+                  )}
+                  {d === null && (
+                    <div title={c.merknad ?? manglerTekst} style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)' }}>
+                      {raw ? `Under terskelen (${nf(raw.total)} kandidater)` : `Ingen karaktertall i DBH for ${year}`}
+                    </div>
+                  )}
+                </td>
+                <td className="px-3 py-2.5 text-center" style={{ color: c.studiepoeng === null ? 'var(--nmbu-neutral-3)' : 'var(--nmbu-neutral-1)' }}>
+                  {c.studiepoeng === null ? '–' : nf(c.studiepoeng, 0)}
+                </td>
+                <td className="px-3 py-2.5 text-center" style={{ color: d ? 'var(--nmbu-neutral-1)' : 'var(--nmbu-neutral-3)', fontWeight: d ? 600 : 400 }}>
+                  {d ? nf(d.total) : '–'}
+                </td>
+                <td className="px-3 py-2.5 text-center whitespace-nowrap">
+                  {d && d.snitt !== null ? (
+                    <span className="inline-block px-2 py-1 rounded" style={{ backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)', fontWeight: 600 }}>
+                      {nf(d.snitt, 2)} ({letterFor(d.snitt)})
+                    </span>
+                  ) : bestattOnly && d ? (
+                    <span style={{ color: 'var(--nmbu-neutral-2)' }}>
+                      bestått {d.bestattprosent !== null ? nf(d.bestattprosent, 1) : '–'} %
+                    </span>
+                  ) : (
+                    <span style={{ color: 'var(--nmbu-neutral-3)' }}>–</span>
+                  )}
+                </td>
+                <td className="px-3 py-2.5 text-center">
+                  {bestattOnly && d ? (
+                    <span style={{ color: 'var(--nmbu-neutral-2)' }}>
+                      {d.H > 0 ? `${nf((d.H / (d.G + d.H)) * 100, 1)} %` : '0,0 %'}
+                    </span>
+                  ) : d && d.strykprosent !== null ? (
+                    <span style={{ fontWeight: 600, color: d.strykprosent > 20 ? '#9b3a3a' : 'var(--nmbu-neutral-1)' }}>
+                      {nf(d.strykprosent, 1)} %
+                    </span>
+                  ) : <span style={{ color: 'var(--nmbu-neutral-3)' }}>–</span>}
+                </td>
+                <td className="px-3 py-2.5">
+                  {d ? <MiniDistBar d={d} /> : <span style={{ color: 'var(--nmbu-neutral-3)' }}>–</span>}
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+// ─── Spesialisering: sammenleggbar blokk ──────────────────────────────────────
+
+function SpecialisationBlock({
+  spes, year, minKandidater,
+}: {
+  spes: PlanSpecialisation;
+  year: number;
+  minKandidater: number;
+}) {
+  const [open, setOpen] = useState(false);
+  const agg = aggregatePlanCourses(spes.obligatoriske, year, minKandidater);
+
+  return (
+    <div className="rounded-lg overflow-hidden mt-3" style={{ border: '1px solid var(--nmbu-neutral-3)' }}>
+      <button onClick={() => setOpen((v) => !v)}
+        className="w-full flex items-center gap-2 px-3 py-2 text-left transition-all"
+        style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
+        {open
+          ? <ChevronDown className="w-4 h-4 shrink-0" style={{ color: 'var(--nmbu-green)' }} />
+          : <ChevronRight className="w-4 h-4 shrink-0" style={{ color: 'var(--nmbu-neutral-2)' }} />}
+        <span className="flex-1 min-w-0" style={{ fontSize: 12, fontWeight: 600, color: 'var(--nmbu-green-dark)' }}>
+          Spesialisering: {spes.navn}
+        </span>
+        <span className="shrink-0" style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)' }}>
+          {spes.obligatoriske.length} {spes.obligatoriske.length === 1 ? 'emne' : 'emner'}
+          {agg.snitt !== null ? ` · snitt ${nf(agg.snitt, 2)} (${letterFor(agg.snitt)})` : ''}
+        </span>
+      </button>
+      {open && (
+        <div style={{ backgroundColor: '#fff' }}>
+          <PlanCourseTable courses={spes.obligatoriske} year={year} minKandidater={minKandidater} />
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ─── Én seksjon per program ───────────────────────────────────────────────────
+
+function StudyPlanProgramSection({
+  plan, year, minKandidater,
+}: {
+  plan: ProgramStudyPlan;
+  year: number;
+  minKandidater: number;
+}) {
+  const col = landsamColorFor(plan.entryId);
+  const finnes = harStudieplan(plan);
+
+  return (
+    <div className="rounded-xl overflow-hidden"
+      style={{ border: '1px solid var(--nmbu-neutral-3)', backgroundColor: '#fff', borderLeft: `4px solid ${col}` }}>
+
+      <div className="px-4 py-3 flex items-start justify-between gap-3 flex-wrap"
+        style={{ borderBottom: '1px solid var(--nmbu-neutral-3)', backgroundColor: 'var(--nmbu-beige-light)' }}>
+        <div className="min-w-0">
+          <div className="flex items-center gap-1.5 flex-wrap">
+            <div className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: col }} />
+            <span style={{ fontSize: 13, fontWeight: 600, color: plan.isNmbu ? 'var(--nmbu-green-dark)' : 'var(--nmbu-neutral)' }}>
+              {plan.shortName}{plan.isNmbu ? ' ★' : ''}
+            </span>
+            {plan.isNmbu && (
+              <span className="px-1.5 rounded-full" style={{ fontSize: 9, fontWeight: 700, backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)' }}>NMBU</span>
+            )}
+            <span style={{ fontSize: 12, color: 'var(--nmbu-neutral-1)' }}>· {plan.programnavn}</span>
+          </div>
+          <div style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)', marginTop: 3 }}>
+            {plan.institusjon}
+            {plan.obligatoriskeStudiepoeng !== null && plan.totaltStudiepoeng !== null && (
+              <> · {nf(plan.obligatoriskeStudiepoeng)} av {nf(plan.totaltStudiepoeng)} sp obligatorisk</>
+            )}
+          </div>
+        </div>
+
+        <div className="flex items-center gap-2 flex-wrap shrink-0">
+          {plan.studieplanAar && (
+            <span className="px-2 py-0.5 rounded-full" style={{ fontSize: 10, fontWeight: 600, backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)' }}>
+              Studieplan {plan.studieplanAar}
+            </span>
+          )}
+          {plan.kilder.map((url, i) => (
+            <a key={url} href={url} target="_blank" rel="noopener noreferrer" title={url}
+              className="flex items-center gap-1 text-xs hover:underline"
+              style={{ color: 'var(--nmbu-green)' }}>
+              <ExternalLink className="w-3.5 h-3.5" />
+              {plan.kilder.length > 1 ? `Kilde ${i + 1}` : 'Kilde'}
+            </a>
+          ))}
+        </div>
+      </div>
+
+      {plan.merknad && (
+        <div className="px-4 py-3 flex items-start gap-2"
+          style={{ borderBottom: finnes ? '1px solid var(--nmbu-neutral-3)' : 'none' }}>
+          <Info className="w-3.5 h-3.5 shrink-0 mt-0.5" style={{ color: 'var(--nmbu-green)' }} />
+          <span style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)', lineHeight: 1.6 }}>{plan.merknad}</span>
+        </div>
+      )}
+
+      {finnes ? (
+        <>
+          <PlanCourseTable courses={plan.obligatoriske} year={year} minKandidater={minKandidater} />
+          {plan.spesialiseringer.length > 0 && (
+            <div className="px-4 pb-4 pt-1">
+              {plan.spesialiseringer.map((s) => (
+                <SpecialisationBlock key={s.navn} spes={s} year={year} minKandidater={minKandidater} />
+              ))}
+            </div>
+          )}
+        </>
+      ) : (
+        !plan.merknad && (
+          <div className="px-4 py-4" style={{ fontSize: 12, color: 'var(--nmbu-neutral-2)' }}>
+            Studieplan ikke hentet ennå.
+          </div>
+        )
+      )}
+    </div>
+  );
+}
+
+// ─── Side ved side: ett studieår om gangen, ett program per kolonne ───────────
+
+function StudyPlanSideBySide({
+  plans, year, minKandidater,
+}: {
+  plans: ProgramStudyPlan[];
+  year: number;
+  minKandidater: number;
+}) {
+  // Alle studieårene som finnes hos minst ett av programmene, i rekkefølge.
+  const aarene: (number | null)[] = [];
+  for (const p of plans) {
+    for (const b of groupByStudyYear(p.obligatoriske)) {
+      if (!aarene.some((a) => a === b.aar)) aarene.push(b.aar);
+    }
+  }
+  aarene.sort((a, b) => (a ?? 99) - (b ?? 99));
+
+  if (aarene.length === 0) {
+    return (
+      <p className="text-sm text-center py-8" style={{ color: 'var(--nmbu-neutral-2)' }}>
+        Ingen av de valgte programmene har en studieplan i datasettet ennå.
+      </p>
+    );
+  }
+
+  return (
+    <div className="space-y-6">
+      {aarene.map((aar) => (
+        <section key={aar ?? 'ukjent'}>
+          <h4 className="text-sm mb-3" style={{ color: 'var(--nmbu-green-dark)', fontFamily: "'Lora', serif" }}>
+            {aar === null ? 'Uten årsplassering' : `${aar}. studieår`}
+          </h4>
+          <div className="overflow-x-auto">
+            <div className="grid gap-3 items-start"
+              style={{ gridTemplateColumns: `repeat(${plans.length}, minmax(240px, 1fr))`, minWidth: plans.length * 240 }}>
+              {plans.map((p) => {
+                const col = landsamColorFor(p.entryId);
+                const bolk = groupByStudyYear(p.obligatoriske).find((b) => b.aar === aar);
+                const emner = bolk?.emner ?? [];
+                return (
+                  <div key={p.entryId} className="rounded-lg overflow-hidden"
+                    style={{ border: '1px solid var(--nmbu-neutral-3)', backgroundColor: '#fff', borderTop: `3px solid ${col}` }}>
+                    <div className="px-3 py-2 flex items-center gap-1.5"
+                      style={{ backgroundColor: 'var(--nmbu-beige-light)', borderBottom: '1px solid var(--nmbu-neutral-3)' }}>
+                      <div className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: col }} />
+                      <span style={{ fontSize: 12, fontWeight: 600, color: p.isNmbu ? 'var(--nmbu-green-dark)' : 'var(--nmbu-neutral)' }}>
+                        {p.shortName}{p.isNmbu ? ' ★' : ''}
+                      </span>
+                    </div>
+
+                    {emner.length === 0 ? (
+                      <div className="px-3 py-3" style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)' }}>
+                        {harStudieplan(p) ? 'Ingen obligatoriske emner dette studieåret.' : 'Studieplan ikke hentet ennå.'}
+                      </div>
+                    ) : emner.map((c, i) => {
+                      const d = planYear(c, year, minKandidater);
+                      const bokstav = d ? courseLetterTotal(d) : 0;
+                      const bestattOnly = d !== null && bokstav === 0 && d.G + d.H > 0;
+                      return (
+                        <div key={c.emnekode} className="px-3 py-2"
+                          style={{ backgroundColor: i % 2 === 0 ? '#fff' : 'var(--nmbu-beige-light)', borderBottom: '1px solid var(--nmbu-neutral-3)' }}>
+                          <div className="flex items-baseline justify-between gap-2">
+                            <span className="font-mono" style={{ fontSize: 11, fontWeight: 600, color: 'var(--nmbu-neutral-1)' }}>{c.emnekode}</span>
+                            <span style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)' }}>
+                              {c.studiepoeng === null ? '–' : `${nf(c.studiepoeng, 0)} sp`}
+                            </span>
+                          </div>
+                          <div style={{ fontSize: 11, color: 'var(--nmbu-neutral)', lineHeight: 1.4, marginTop: 1 }}>{c.emnenavn}</div>
+                          <div className="flex items-center justify-between gap-2 flex-wrap" style={{ marginTop: 4 }}>
+                            <span style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)' }}>
+                              {c.semester ? storForbokstav(c.semester) : '–'}
+                              {d ? ` · ${nf(d.total)} kand.` : ''}
+                            </span>
+                            {d && d.snitt !== null ? (
+                              <span className="inline-block px-1.5 rounded" style={{ fontSize: 10, fontWeight: 600, backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)' }}>
+                                {nf(d.snitt, 2)} ({letterFor(d.snitt)})
+                              </span>
+                            ) : bestattOnly && d ? (
+                              <span style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)' }}>
+                                bestått {d.bestattprosent !== null ? nf(d.bestattprosent, 1) : '–'} %
+                              </span>
+                            ) : (
+                              <span title={c.merknad ?? `Ingen karaktertall i DBH for ${year}`} style={{ fontSize: 10, color: 'var(--nmbu-neutral-3)' }}>–</span>
+                            )}
+                          </div>
+                          {d && <div style={{ marginTop: 4 }}><MiniDistBar d={d} width="100%" /></div>}
+                        </div>
+                      );
+                    })}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      ))}
+    </div>
+  );
+}
+
+// ─── Selve fanen ──────────────────────────────────────────────────────────────
+
+function StudieplanView({
+  plans, year, minKandidater, sideBySide, onSideBySide,
+}: {
+  plans: ProgramStudyPlan[];
+  year: number;
+  minKandidater: number;
+  sideBySide: boolean;
+  onSideBySide: (v: boolean) => void;
+}) {
+  const antallMedPlan = plans.filter(harStudieplan).length;
+  const kanSideBySide = antallMedPlan >= 2;
+
+  return (
+    <div className="space-y-7">
+      <section>
+        <div className="flex items-center justify-between gap-3 flex-wrap mb-4">
+          <h3 className="text-base" style={{ color: 'var(--nmbu-green-dark)', fontFamily: "'Lora', serif" }}>
+            1. Obligatorisk karakterindeks · {year}
+          </h3>
+          <button
+            onClick={() => kanSideBySide && onSideBySide(!sideBySide)}
+            disabled={!kanSideBySide}
+            title={kanSideBySide
+              ? 'Vis studieårene i kolonner, ett program per kolonne'
+              : 'Krever minst to valgte program med studieplan'}
+            className="px-2.5 py-1 rounded-full text-xs transition-all"
+            style={{
+              backgroundColor: sideBySide && kanSideBySide ? 'var(--nmbu-green-dark)' : 'var(--nmbu-beige-light)',
+              color: sideBySide && kanSideBySide ? '#fff' : 'var(--nmbu-neutral-1)',
+              border: `1.5px solid ${sideBySide && kanSideBySide ? 'var(--nmbu-green-dark)' : 'var(--nmbu-neutral-3)'}`,
+              fontWeight: sideBySide && kanSideBySide ? 600 : 400,
+              opacity: kanSideBySide ? 1 : 0.5,
+              cursor: kanSideBySide ? 'pointer' : 'not-allowed',
+            }}
+          >
+            Vis side ved side
+          </button>
+        </div>
+        <StudyPlanTopStrip plans={plans} year={year} minKandidater={minKandidater} />
+        <p className="text-xs mt-3 leading-relaxed" style={{ color: 'var(--nmbu-neutral-2)' }}>
+          Karakterindeksen er et kandidatvektet snitt (A=5 … F=0) over de obligatoriske emnene som har
+          bokstavkarakterer i {year}. Emner med bestått / ikke bestått teller ikke med, og terskelen på
+          minst {minKandidater} kandidater gjelder per emne.
+        </p>
+      </section>
+
+      <section>
+        <h3 className="text-base mb-4" style={{ color: 'var(--nmbu-green-dark)', fontFamily: "'Lora', serif" }}>
+          2. {sideBySide && kanSideBySide ? 'Obligatoriske emner side ved side' : 'Obligatorisk emnerekke per program'}
+        </h3>
+        <GradeLegend />
+        {sideBySide && kanSideBySide ? (
+          <StudyPlanSideBySide plans={plans.filter(harStudieplan)} year={year} minKandidater={minKandidater} />
+        ) : (
+          <div className="flex flex-col gap-4">
+            {plans.map((p) => (
+              <StudyPlanProgramSection key={p.entryId} plan={p} year={year} minKandidater={minKandidater} />
+            ))}
+          </div>
+        )}
+      </section>
+    </div>
+  );
+}
+
 // ─── NMBU-nøkkeltall i toppkortet ─────────────────────────────────────────────
 
 function NmbuKeyFigures({
@@ -1105,11 +1734,22 @@ function NmbuKeyFigures({
 
 // ─── Hovedkomponent ───────────────────────────────────────────────────────────
 
-type CourseTab = 'indeks' | 'fordeling' | 'emner' | 'sammenlign';
+type CourseTab = 'indeks' | 'fordeling' | 'emner' | 'sammenlign' | 'studieplan';
 
 /** Emnekoblingen for en programgruppe, eller undefined når den ikke er laget ennå. */
 function courseMappingFor(groupId: string) {
   return LANDSAM_COURSE_MAPPING.find((m) => m.groupId === groupId);
+}
+
+/**
+ * Studieplanene for de valgte programmene i en gruppe, i samme rekkefølge som i
+ * institusjonsvelgeren, men med NMBU-programmene først.
+ */
+function studyPlansFor(groupId: string, selectedIds: string[]): ProgramStudyPlan[] {
+  const planGroup = LANDSAM_STUDYPLAN_GROUPS.find((g) => g.id === groupId);
+  if (!planGroup) return [];
+  const valgte = planGroup.programs.filter((p) => selectedIds.includes(p.entryId));
+  return [...valgte.filter((p) => p.isNmbu), ...valgte.filter((p) => !p.isNmbu)];
 }
 
 /** Nyeste år i gruppen som faktisk har emnetall. */
@@ -1152,6 +1792,7 @@ export function LandsamCourseAnalysis({ initialGroup }: { initialGroup?: string 
   const [tab, setTab] = useState<CourseTab>('indeks');
   const [courseProgramId, setCourseProgramId] = useState<string | null>(null);
   const [courseTypeByGroup, setCourseTypeByGroup] = useState<Record<string, string>>({});
+  const [planSideBySide, setPlanSideBySide] = useState(false);
 
   if (!group) {
     return (
@@ -1176,7 +1817,10 @@ export function LandsamCourseAnalysis({ initialGroup }: { initialGroup?: string 
     { id: 'fordeling',  label: 'Karakterfordeling' },
     { id: 'emner',      label: 'Emner' },
     { id: 'sammenlign', label: 'Sammenlign emne' },
+    { id: 'studieplan',  label: 'Studieplan' },
   ];
+
+  const selectedPlans = studyPlansFor(group.id, selectedIds);
 
   const mapping = courseMappingFor(group.id);
   const courseTypes = mapping?.courseTypes ?? [];
@@ -1229,12 +1873,18 @@ export function LandsamCourseAnalysis({ initialGroup }: { initialGroup?: string 
           </div>
           <div className="flex items-center gap-2 shrink-0">
             <CsvExportButton
-              onExport={() =>
-                tab === 'sammenlign' && activeCourseType
-                  ? exportLandsamCourseTypeCsv(group.id, activeCourseType.id, selectedIds, year, minKandidater)
-                  : exportLandsamCoursesCsv(group.id, selectedIds, year, minKandidater)
+              onExport={() => {
+                if (tab === 'studieplan') return exportLandsamStudyPlanCsv(group.id, selectedIds, year, minKandidater);
+                if (tab === 'sammenlign' && activeCourseType) {
+                  return exportLandsamCourseTypeCsv(group.id, activeCourseType.id, selectedIds, year, minKandidater);
+                }
+                return exportLandsamCoursesCsv(group.id, selectedIds, year, minKandidater);
+              }}
+              label={
+                tab === 'studieplan' ? 'Last ned studieplanen som CSV'
+                  : tab === 'sammenlign' && activeCourseType ? 'Last ned faget som CSV'
+                  : 'Last ned CSV'
               }
-              label={tab === 'sammenlign' && activeCourseType ? 'Last ned faget som CSV' : 'Last ned CSV'}
               dark
             />
             <a href="https://dbh.hkdir.no" target="_blank" rel="noopener noreferrer"
@@ -1397,6 +2047,34 @@ export function LandsamCourseAnalysis({ initialGroup }: { initialGroup?: string 
                     </>
                   )
                 )}
+
+                {tab === 'studieplan' && (
+                  selectedPlans.length === 0 ? (
+                    <div className="flex items-start gap-2 rounded-lg px-4 py-3"
+                      style={{ backgroundColor: 'var(--nmbu-beige-light)', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-2)', fontSize: 12 }}>
+                      <Info className="w-3.5 h-3.5 shrink-0 mt-0.5" />
+                      <span>Studieplaner for denne gruppen er ikke lagt inn ennå.</span>
+                    </div>
+                  ) : (
+                    <>
+                      <div className="mb-4 flex items-start gap-2" style={{ fontSize: 12, color: 'var(--nmbu-neutral-2)' }}>
+                        <Info className="w-3.5 h-3.5 shrink-0 mt-0.5" />
+                        <span>
+                          De obligatoriske emnene i studieplanen til hvert program, i den rekkefølgen
+                          studentene tar dem, med karakterene DBH har for {year}. Valgemner og utveksling
+                          er ikke med.
+                        </span>
+                      </div>
+                      <StudieplanView
+                        plans={selectedPlans}
+                        year={year}
+                        minKandidater={minKandidater}
+                        sideBySide={planSideBySide}
+                        onSideBySide={setPlanSideBySide}
+                      />
+                    </>
+                  )
+                )}
               </>
             )}
           </div>
@@ -1406,11 +2084,18 @@ export function LandsamCourseAnalysis({ initialGroup }: { initialGroup?: string 
       <div className="flex items-start gap-2 text-xs rounded-lg px-4 py-3"
         style={{ backgroundColor: 'var(--nmbu-beige-light)', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-2)' }}>
         <Info className="w-3.5 h-3.5 shrink-0 mt-0.5" />
-        <span>
-          Kilde: DBH/HKDIR tabell 308 og 208. Snitt A=5…F=0 over bokstavkarakterer; bestått/ikke bestått
-          holdes utenfor. Emner uten navn i DBH vises med emnekode.
-          Emnekobling: manuelt kartlagt mot studieplanene.
-        </span>
+        {tab === 'studieplan' ? (
+          <span>
+            Kilde: studieplanene til hvert program (lenker i seksjonene) og DBH/HKDIR tabell 308/208.
+            Obligatoriske emner per studieplanår; karakterer per valgt år.
+          </span>
+        ) : (
+          <span>
+            Kilde: DBH/HKDIR tabell 308 og 208. Snitt A=5…F=0 over bokstavkarakterer; bestått/ikke bestått
+            holdes utenfor. Emner uten navn i DBH vises med emnekode.
+            Emnekobling: manuelt kartlagt mot studieplanene.
+          </span>
+        )}
       </div>
 
     </div>

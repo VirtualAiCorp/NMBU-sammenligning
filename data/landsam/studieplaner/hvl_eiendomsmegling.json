@@ -1,0 +1,235 @@
+{
+  "entryId": "hvl_eiendomsmegling",
+  "programnavn": "Eiendomsmegling, økonomi og jus",
+  "institusjon": "Høgskulen på Vestlandet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.hvl.no/studier/studieprogram/eiendomsmegling-okonomi-og-jus/",
+    "https://www.hvl.no/studier/studieprogram/eiendomsmegling-okonomi-og-jus/2026h/utdanningsplan/",
+    "https://www.hvl.no/studier/studieprogram/eiendomsmegling-okonomi-og-jus/2025h/utdanningsplan/"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 150,
+  "obligatoriske": [
+    {
+      "emnekode": "BØA111",
+      "emnenavn": "Matematikk for økonomar",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BØA111-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BØA112",
+      "emnenavn": "Organisasjon og leiing",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BØA112-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BØA119",
+      "emnenavn": "Danning og akademisk handverk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Nytt emne fra kull 2026; ingen DBH-karakterer ennå. Erstatter BØA113 i 1. semester."
+    },
+    {
+      "emnekode": "EM6-1003",
+      "emnenavn": "Jus for eigedomsmeglarar 1",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EM6-1003-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BØA116",
+      "emnenavn": "Marknadsføring",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BØA116-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BØA118",
+      "emnenavn": "Makroøkonomi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BØA118-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EM6-1001",
+      "emnenavn": "Praktisk eigedomsmekling 1",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "EM6-1001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EM6-2000",
+      "emnenavn": "Jus for eigedomsmeglarar 2",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "EM6-2000-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BØA113",
+      "emnenavn": "Innføring i bedriftsøkonomi og rekneskap",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BØA113-1"
+      ],
+      "merknad": "Flyttet fra 1. til 3. semester i kull 2026."
+    },
+    {
+      "emnekode": "EM6-1002",
+      "emnenavn": "Oppgjør av eigedomshandel",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EM6-1002-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ME6-1001",
+      "emnenavn": "Statistikk og marknadsanalyse",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "ME6-1001-1"
+      ],
+      "merknad": "DBH-navnet er «Statistikk»."
+    },
+    {
+      "emnekode": "PL233",
+      "emnenavn": "Innføring i arealplanlegging",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Ny emnekode; DBH-karakterene for programmet ligger på den eldre 10 sp-koden PL433-1 med samme emnenavn."
+    },
+    {
+      "emnekode": "BØA204",
+      "emnenavn": "Investering og finansiering",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BØA204-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EM6-2003",
+      "emnenavn": "Praktisk eigedomsmegling 2",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EM6-2003-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "JU6-1004",
+      "emnenavn": "Skatte- og avgiftsrett for eigedomsmeglarar",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "JU6-1004-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ME6-1002",
+      "emnenavn": "Samfunnsvitskapleg metode",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "ME6-1002-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BO6-2009",
+      "emnenavn": "Munnleg eksamen for bachelor i eiendomsmegling",
+      "studiepoeng": 0,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BO6-2009-1"
+      ],
+      "merknad": "0 sp, men obligatorisk avsluttende eksamen."
+    },
+    {
+      "emnekode": "EM6-2002",
+      "emnenavn": "Jus for eigedomsmeglarar 3",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "EM6-2002-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EM6-3000",
+      "emnenavn": "Anvendt finans for eigedomsmarknaden",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "EM6-3000-1",
+        "EM6-2005-1"
+      ],
+      "merknad": "EM6-2005-1 er den eldre koden for samme emne."
+    },
+    {
+      "emnekode": "BO6-2011",
+      "emnenavn": "Bacheloroppgåve",
+      "studiepoeng": 15,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BO6-2011-1"
+      ],
+      "merknad": "Obligatorisk oppgave, men studenten velger mellom BO6-2011 (ordinær) og BO6-2008 (praksisbasert bacheloroppgave). BO6-2008 har ingen DBH-karakterer ennå."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er HVLs utdanningsplan for kull haust 2026. 150 av 180 sp er obligatoriske; 30 sp er valgfrie emner i 4. semester (BØ6-2008 Internship, BØA117, BØA205, MF6-2000, OR6-1008, OR6-2003, RE6-2004). Planen ble endret fra kull 2025 til 2026: BØA119 «Danning og akademisk handverk» er nytt i 1. semester, BØA113 er flyttet fra 1. til 3. semester, BØA202 «Etikk, samfunnsansvar og bærekraft» er tatt ut av den obligatoriske kjernen, og bacheloroppgaven er flyttet fra 5. til 6. semester med to varianter (BO6-2011 og BO6-2008). Utdanningsplanen tar selv forbehold om endringer i 2. studieår. HVL oppgir ikke studiepoeng per emne ut over det som står i planen; alle emner utenom oppgaven er 7,5 sp."
+}

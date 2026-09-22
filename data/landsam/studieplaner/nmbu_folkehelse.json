@@ -1,0 +1,72 @@
+{
+  "entryId": "nmbu_folkehelse",
+  "programnavn": "Folkehelsevitenskap (master 2 år)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/master-2-aar/folkehelsevitenskap",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-08/FOL%20Studieplan%202026-27%20.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 80,
+  "obligatoriske": [
+    {
+      "emnekode": "FHV330",
+      "emnenavn": "Folkehelsevitenskap - innføringsemne",
+      "studiepoeng": 15,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FHV330-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FHV315",
+      "emnenavn": "Vitenskapsteori og forskningsmetoder",
+      "studiepoeng": 15,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FHV315-1"
+      ],
+      "merknad": "Det gis ikke fritak på grunnlag av examen philosophicum eller examen facultatum"
+    },
+    {
+      "emnekode": "FHV320",
+      "emnenavn": "Epidemiologi og geografiske informasjonssystemer",
+      "studiepoeng": 15,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "FHV320-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FHV353",
+      "emnenavn": "Prosjektplan masteroppgave i folkehelsevitenskap",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FHV353-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "M30-FOL",
+      "emnenavn": "Masteroppgave",
+      "studiepoeng": 30,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "M30-FOL-1"
+      ],
+      "merknad": "Januarblokk + vårparallell. Deltidsstudenter tar emnet som M30-FOLDEL, som ikke har egne karakterdata i DBH"
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Studieplanen for undervisningsåret 2026-27 (M-FOL). 80 av 120 studiepoeng er obligatoriske: fire felles emner på 300-nivå (50 sp) pluss masteroppgaven (30 sp). I tillegg må minst 25 sp velges blant betingede valgemner (FHV314, FHV310, FHV372, APL240, APL241, FMI312, FHV313, AOS339, EDS355), og 15 sp er helt frie emner, hvorav inntil 5 sp kan være på 100-nivå. Studiet tilbys også på deltid over fire år med samme krav. Tredje semester er tilrettelagt for utveksling. Alle fem obligatoriske emner er koblet til DBH-koder. Merk at AOS339 Strategisk ledelse erstatter AOS337 fra høsten 2026 blant valgemnene."
+}

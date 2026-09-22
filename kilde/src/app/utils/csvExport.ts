@@ -4,6 +4,7 @@ import { ANNUAL_STUDIES_DATA, ANNUAL_YEARS } from '../data/annualStudiesData';
 import { LANDSAM_GROUPS, LANDSAM_YEARS } from '../data/landsamAdmissionData';
 import { LANDSAM_COURSE_GROUPS } from '../data/landsamCourseData';
 import { LANDSAM_COURSE_MAPPING } from '../data/landsamCourseMapping';
+import { LANDSAM_STUDYPLAN_GROUPS, type PlanCourse } from '../data/landsamStudyPlanData';
 
 // ─── Core helpers ─────────────────────────────────────────────────────────────
 
@@ -292,4 +293,80 @@ export function exportLandsamCourseTypeCsv(
   }
 
   downloadCsv(`landsam_emnetype_${groupId}_${courseTypeId}_${year}.csv`, lines);
+}
+
+// ─── LANDSAM: Studieplan (obligatoriske emner) ───────────────────────────────
+
+const STUDYPLAN_SEMESTER_ORDER = ['høst', 'januarblokk', 'vår', 'juniblokk', 'helår'];
+
+function studyPlanSemesterRank(semester: string | null): number {
+  if (!semester) return STUDYPLAN_SEMESTER_ORDER.length + 1;
+  const i = STUDYPLAN_SEMESTER_ORDER.indexOf(semester.trim().toLowerCase());
+  return i >= 0 ? i : STUDYPLAN_SEMESTER_ORDER.length;
+}
+
+/** Studieår først (emner uten årsplassering bakerst), deretter semester. */
+function sortPlanCourses(courses: PlanCourse[]): PlanCourse[] {
+  return [...courses].sort((a, b) => {
+    const ay = a.aar ?? 99, by = b.aar ?? 99;
+    if (ay !== by) return ay - by;
+    const as = studyPlanSemesterRank(a.semester), bs = studyPlanSemesterRank(b.semester);
+    if (as !== bs) return as - bs;
+    return a.emnekode.localeCompare(b.emnekode, 'nb');
+  });
+}
+
+/**
+ * Eksporterer de obligatoriske emnene fra studieplanene til de valgte programmene
+ * i én programgruppe, med DBH-karakterene for ett år. Emner uten karaktertall for
+ * året (eller under kandidatterskelen) tas med med tomme tallkolonner, slik at hele
+ * emnerekken i studieplanen går fram. Spesialiseringer kommer etter de felles
+ * obligatoriske emnene, merket i kolonnen «Del».
+ */
+export function exportLandsamStudyPlanCsv(
+  groupId: string,
+  entryIds: string[],
+  year: number,
+  minKandidater = 0,
+) {
+  const header = row(
+    'Programgruppe', 'Nivå',
+    'Institusjon', 'Kortnavn', 'NMBU', 'Program', 'Studieplanår', 'Del',
+    'Studieår', 'Semester', 'Emnekode', 'DBH emnekoder', 'Emnenavn', 'Studiepoeng',
+    'År', 'Kandidater', 'Snitt (A=5…F=0)', 'Stryk %',
+    'A', 'B', 'C', 'D', 'E', 'F', 'G (bestått)', 'H (ikke bestått)', 'Bestått %',
+    'Merknad'
+  );
+
+  const lines: string[] = [header];
+  const group = LANDSAM_STUDYPLAN_GROUPS.find((g) => g.id === groupId);
+
+  if (group) {
+    for (const p of group.programs) {
+      if (entryIds.length > 0 && !entryIds.includes(p.entryId)) continue;
+
+      const bolker: { del: string; emner: PlanCourse[] }[] = [
+        { del: 'Obligatorisk', emner: p.obligatoriske },
+        ...p.spesialiseringer.map((s) => ({ del: `Spesialisering: ${s.navn}`, emner: s.obligatoriske })),
+      ];
+
+      for (const bolk of bolker) {
+        for (const c of sortPlanCourses(bolk.emner)) {
+          const raw = c.years.find((yr) => yr.year === year);
+          const d = raw && raw.total > 0 && raw.total >= minKandidater ? raw : null;
+          lines.push(row(
+            group.label, group.level,
+            p.institusjon, p.shortName, p.isNmbu ? 'ja' : 'nei', p.programnavn, p.studieplanAar, bolk.del,
+            c.aar, c.semester, c.emnekode, c.dbhEmnekoder.join(' '), c.emnenavn, c.studiepoeng,
+            year, d ? d.total : null, d ? d.snitt : null, d ? d.strykprosent : null,
+            d ? d.A : null, d ? d.B : null, d ? d.C : null, d ? d.D : null, d ? d.E : null, d ? d.F : null,
+            d ? d.G : null, d ? d.H : null, d ? d.bestattprosent : null,
+            c.merknad ?? (raw && !d ? `Under terskelen på ${minKandidater} kandidater` : '')
+          ));
+        }
+      }
+    }
+  }
+
+  downloadCsv(`landsam_studieplan_${groupId}_${year}.csv`, lines);
 }

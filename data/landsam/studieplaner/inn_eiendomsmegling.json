@@ -1,0 +1,227 @@
+{
+  "entryId": "inn_eiendomsmegling",
+  "programnavn": "Eiendomsmegling (bachelor)",
+  "institusjon": "Universitetet i Innlandet",
+  "studieplanAar": "2023/2024",
+  "kilder": [
+    "https://studiekatalog.edutorium.no/inn/nb/program/EIENDOM/2023",
+    "https://studiekatalog.edutorium.no/inn/nb/program/EIENDOM"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 150,
+  "obligatoriske": [
+    {
+      "emnekode": "3EDM100",
+      "emnenavn": "Praktisk eiendomsmegling I",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "3EDM100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "3MET120",
+      "emnenavn": "Matematikk for økonomer",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "3MET120-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "3REV100",
+      "emnenavn": "Grunnleggende regnskap",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "3REV100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "3MAR100",
+      "emnenavn": "Markedsføring",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "3MAR100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "3EDM200",
+      "emnenavn": "Praktisk eiendomsmegling II",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "3EDM200-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "3BED100",
+      "emnenavn": "Grunnleggende bedriftsøkonomi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "3BED100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "3JUS200",
+      "emnenavn": "Jus I - rettslære",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "3JUS200-1"
+      ],
+      "merknad": "DBH-navnet på 3JUS200-1 er «Foretaksrett»; emnet er omdøpt i studieplanen for kull 2023."
+    },
+    {
+      "emnekode": "3JUS210",
+      "emnenavn": "Jus II",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "3JUS210-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "3EDM300",
+      "emnenavn": "Praktisk eiendomsmegling III",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "3EDM300-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "3MET200",
+      "emnenavn": "Samfunnsvitenskapelig metode",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "3MET200-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "3ORG100",
+      "emnenavn": "Organisasjonsforståelse",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "3ORG100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "3BED200",
+      "emnenavn": "Investering og finansiering",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "3BED200-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "3SAM100",
+      "emnenavn": "Makroøkonomi",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "3SAM100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "3JUS300",
+      "emnenavn": "Jus III",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "3JUS300-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "3LED300",
+      "emnenavn": "Strategi",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "3LED300-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "3JUS330",
+      "emnenavn": "Skatte- og avgiftsrett for eiendomsmeglere",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "3JUS330-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "3EDM210",
+      "emnenavn": "Oppgjør for eiendomsmeglere",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "3EDM210-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "3MAR200",
+      "emnenavn": "Salg og salgsledelse",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "3MAR200-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "3EDM350",
+      "emnenavn": "Praksis med fordypningsoppgave / Bacheloroppgave",
+      "studiepoeng": 15,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "3EDM350-1",
+        "3EDMBA300-1"
+      ],
+      "merknad": "Obligatorisk avsluttende arbeid på 15 sp, men studenten velger mellom 3EDM350 (praksis med fordypningsoppgave) og 3EDMBA300 (bacheloroppgave eiendomsmegling). Begge DBH-kodene er tatt med."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Programsiden på inn.no er tatt ned (lenken i programkartet er null, og www.inn.no/studier/studietilbud/... redirigerer til studieoversikten). Nyeste publiserte studieplan i INNs studiekatalog er for kull 2023 høst; katalogen lister ingen startsemestre etter 2023, så studiet ser ut til å være lagt ned etter opptaket i 2023 og siste kull ble ferdig våren 2026. Studieplanen for kull 2023 er derfor brukt. 150 av 180 sp er obligatoriske; 30 sp er valgemner fordelt på 2. semester (7,5 sp: 3MET130 eller 3MET100), 4. semester (15 sp: 3SAM120 eller 3REG160) og 5. semester (7,5 sp: 3REV220). Alle obligatoriske emner lar seg koble til DBH-koder."
+}

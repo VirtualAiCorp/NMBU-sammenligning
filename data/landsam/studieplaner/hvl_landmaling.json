@@ -1,0 +1,180 @@
+{
+  "entryId": "hvl_landmaling",
+  "programnavn": "Landmåling og eiendomsdesign",
+  "institusjon": "Høgskulen på Vestlandet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.hvl.no/studier/studieprogram/landmaling-og-eiendomsdesign/",
+    "https://www.hvl.no/studier/studieprogram/landmaling-og-eiendomsdesign/2026h/studieplan/",
+    "https://www.hvl.no/studier/studieprogram/landmaling-og-eiendomsdesign/2026h/utdanningsplan/"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 155,
+  "obligatoriske": [
+    {
+      "emnekode": "LEI100",
+      "emnenavn": "Innføring i eigedomsfaga",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "LEI100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "LEI102",
+      "emnenavn": "Matematikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "LEI102-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "LEI117",
+      "emnenavn": "Innføring i geomatikk og geo-informatikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "LEI117-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "LEI121",
+      "emnenavn": "Landmåling",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Ny emnekode fra kull 2025; ingen DBH-karakterer ennå. Erstatter deler av BYG102 «Statistikk og landmåling»."
+    },
+    {
+      "emnekode": "LEI122",
+      "emnenavn": "Eigedom og matrikkel",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Ny emnekode fra kull 2025; ingen DBH-karakterer ennå. Erstatter deler av LEI300 «Eiendom, matrikkel og jordskifte»."
+    },
+    {
+      "emnekode": "LEI123",
+      "emnenavn": "Klarlegging av grenser, mekling og rettsfastsetjing",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Ny emnekode fra kull 2025; ingen DBH-karakterer ennå. Overtar stoff fra LEI300/LEI301."
+    },
+    {
+      "emnekode": "LEI124",
+      "emnenavn": "Introduksjon til fjernmåling",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Ny emnekode fra kull 2025; ingen DBH-karakterer ennå."
+    },
+    {
+      "emnekode": "LEI104",
+      "emnenavn": "Eigedomsdanning ved oppmålingsforretning",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "LEI104-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "LEI105",
+      "emnenavn": "Eigedomslandmåling",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "LEI105-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "LEI200",
+      "emnenavn": "Digital prosjektgjennomføring",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Ny emnekode fra kull 2025; ingen DBH-karakterer ennå. Avløser BYG119/BYG123 «Tegning DAK/BIM»."
+    },
+    {
+      "emnekode": "LEI107",
+      "emnenavn": "Ingeniørlandmåling",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "LEI107-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "LEI113",
+      "emnenavn": "Økonomi og ressursforvaltning",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "LEI113-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "LEI210",
+      "emnenavn": "Arealplanlegging",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Ny emnekode fra kull 2025; ingen DBH-karakterer ennå. Avløser BYG110 «Vei- og arealplanlegging»."
+    },
+    {
+      "emnekode": "LEI111",
+      "emnenavn": "Geografiske informasjonssystem og analysar",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "LEI111-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "LEI302",
+      "emnenavn": "Rettsendring og skjønn",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Ny emnekode fra kull 2025; ingen DBH-karakterer ennå. Avløser LEI301 «Jordskifterett og saksbehandling»."
+    },
+    {
+      "emnekode": "LEI350",
+      "emnenavn": "Bacheloroppgåve - Landmåling og eigedomsdesign",
+      "studiepoeng": 20,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "LEI350-1"
+      ],
+      "merknad": "Utdanningsplanen plasserer oppgaven i 5. semester, men den går i praksis over 5. og 6. semester. LEI150-1 er den eldre koden for samme oppgave."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er HVLs utdanningsplan for kull haust 2026; kull 2025 har identisk emnesammensetning. Studiet har 155 sp obligatoriske emner og 25 sp valemne i 3. studieår (BYG111, BYG112, BYG130, BYG305, LEI303, LEI304, LEI305, LEI310, BYG113, LEI110, LEI116). Studieplanen ble lagt kraftig om fra kull 2025: de nye kodene LEI121, LEI122, LEI123, LEI124, LEI200, LEI210 og LEI302 erstatter blant annet BYG102, BYG110, BYG119/BYG123, LEI300 og LEI301, som var obligatoriske til og med kull 2024. Sju av 16 obligatoriske emner har derfor ennå ingen karakterdata i DBH; DBH-tallene for programmet kommer fortsatt fra den gamle emnestrukturen."
+}

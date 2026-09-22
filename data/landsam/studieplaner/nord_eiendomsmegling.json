@@ -1,0 +1,261 @@
+{
+  "entryId": "nord_eiendomsmegling",
+  "programnavn": "Eiendomsmegling og markedsanalyser",
+  "institusjon": "Nord universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nord.no/studier/eiendomsmegling-og-markedsanalyser-bachelor",
+    "https://www.nord.no/studier/studieplaner/eiendomsmegling-og-markedsanalyser-baeme-bachelor-host-2026"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 172.5,
+  "obligatoriske": [
+    {
+      "emnekode": "MAT1001",
+      "emnenavn": "Matematikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MAT1001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "RE215E",
+      "emnenavn": "Praktisk eiendomsmegling I",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "RE215E-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "RE217E",
+      "emnenavn": "Jus for eiendomsmeglere I",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "RE217E-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ECO1002",
+      "emnenavn": "Bedriftsøkonomisk analyse med programvare",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "ECO1002-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "RE216E",
+      "emnenavn": "Praktisk eiendomsmegling II",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "RE216E-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "RET2004",
+      "emnenavn": "Jus for eiendomsmeglere II",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "RET2004-1",
+        "RE207E-1"
+      ],
+      "merknad": "RE207E-1 er den eldre 10 sp-koden for samme emne."
+    },
+    {
+      "emnekode": "FIN1001",
+      "emnenavn": "Innføring i regnskap",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "FIN1001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "STT1001",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "STT1001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FIN1002",
+      "emnenavn": "Finansiering og investering",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FIN1002-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ECO1001",
+      "emnenavn": "Samfunnsøkonomi, mikro",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "ECO1001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAF1001",
+      "emnenavn": "Markedsføring",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MAF1001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FIL1001",
+      "emnenavn": "Ex. Phil. Etikk, bærekraft og samfunnsansvar",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FIL1001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MET1001",
+      "emnenavn": "Anvendt metode",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MET1001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ECO1003",
+      "emnenavn": "Samfunnsøkonomi, makro",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "ECO1003-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "RET1001",
+      "emnenavn": "Rettslære",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "RET1001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ORG1001",
+      "emnenavn": "Organisasjon",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "ORG1001-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "RET1007",
+      "emnenavn": "Innføring i eiendomsutvikling",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "RET1007-1",
+        "RET1006-1"
+      ],
+      "merknad": "RET1006-1 er den eldre 10 sp-koden for samme emne."
+    },
+    {
+      "emnekode": "RET1003",
+      "emnenavn": "Oppgjør for eiendomsmeglere",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "RET1003-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "RET1004",
+      "emnenavn": "Skatt og avgift for eiendomsmeglere",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "RET1004-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "RE214E",
+      "emnenavn": "Praktisk eiendomsmegling III",
+      "studiepoeng": 15,
+      "aar": 3,
+      "semester": "helår",
+      "dbhEmnekoder": [
+        "RE214E-1"
+      ],
+      "merknad": "Går over 5. og 6. semester (0 sp i 5. semester, 15 sp i 6.). Avsluttes med obligatorisk muntlig eksamen."
+    },
+    {
+      "emnekode": "REG1002",
+      "emnenavn": "Driftsregnskap og budsjettering",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "REG1002-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ORG2001",
+      "emnenavn": "Internasjonal foretagsstrategi",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "ORG2001-1"
+      ],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er Nords studieplan for kull haust 2026. 172,5 av 180 sp er obligatoriske; det eneste valget er ett 7,5 sp valgemne i 5. semester (MAF2005 Digital markedsføring og kundeverdi eller MAF1008 Personlig salg i internasjonale markeder). Studiet har ingen egen bacheloroppgave; avsluttende arbeid ligger i RE214E Praktisk eiendomsmegling III, som går over de to siste semestrene og avsluttes med muntlig eksamen. Studiemodellen følger forskrift om eiendomsmegling § 4-2 og UHR-ØAs anbefaling. Alle 22 obligatoriske emner lar seg koble til DBH-koder."
+}

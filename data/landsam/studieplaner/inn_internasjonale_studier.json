@@ -1,0 +1,138 @@
+{
+  "entryId": "inn_internasjonale_studier",
+  "programnavn": "Internasjonale studier, bachelor",
+  "institusjon": "Universitetet i Innlandet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.inn.no/studier/vare-studier/bachelor-i-internasjonale-studier/",
+    "https://studiekatalog.edutorium.no/inn/nb/program/BAINTHIS/"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 110,
+  "obligatoriske": [
+    {
+      "emnekode": "INT1009",
+      "emnenavn": "Examen philosophicum for internasjonale studier",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "INT1009-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "INT1000",
+      "emnenavn": "Internasjonale studier: en historisk innføring",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "INT1000-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "INT1018",
+      "emnenavn": "Det korte tyvende århundre - politikk, økonomi, ideologi og sosiale endringer 1914-1989",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "INT1018-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "INT1022",
+      "emnenavn": "Global samtidshistorie: verden siden 1989",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "INT1022-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "INT1014",
+      "emnenavn": "Politisk teori",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "INT1014-1"
+      ],
+      "merknad": "Undervises på engelsk (Political Theory)"
+    },
+    {
+      "emnekode": "INT1015",
+      "emnenavn": "Internasjonal politikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "INT1015-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "INT1017",
+      "emnenavn": "Sammenlignende politikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "INT1017-1"
+      ],
+      "merknad": "DBH-navn: Comparative Politics"
+    },
+    {
+      "emnekode": "INT1021",
+      "emnenavn": "Sikkerhetspolitikk internasjonalt og i Norge - en teoretisk og historisk innføring",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "INT1021-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "INT2007",
+      "emnenavn": "War and Peace",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "INT2007-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "INT1019",
+      "emnenavn": "Internasjonal politisk økonomi: teori og historie",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "INT1019-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "INT2016",
+      "emnenavn": "Bacheloroppgave i internasjonale studier",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "INT2016-1"
+      ],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Studieplanen gjelder kullet med oppstart høst 2026 (BAINTHIS i INNs studiekatalog). 110 av 180 studiepoeng er obligatoriske, fordelt på 11 emner à 10 sp. Hele 4. semester (30 sp) er valgemner eller utveksling; i 5. semester er 20 sp valgfrie, og minst ett av valgemnene må være et metodeemne (INT2009 Kvalitative metoder eller INT2010 Samfunnsvitenskapelige metoder og statistikk); i 6. semester er 20 sp valgfrie i tillegg til bacheloroppgaven. Examen philosophicum (INT1009) er obligatorisk, mens examen facultatum (INT1016) bare er ett av mange valgemner i 5. semester og derfor ikke ført opp som obligatorisk. Programmet har hatt flere emnekodeskifter de siste årene (bl.a. INT2011/INT2002 -> INT2016 for bacheloroppgaven, og 15 sp-varianter som INT2012/INT2018 Global Justice). Alle 11 obligatoriske emner er koblet til DBH-koder."
+}

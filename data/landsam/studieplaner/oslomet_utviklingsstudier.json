@@ -1,0 +1,163 @@
+{
+  "entryId": "oslomet_utviklingsstudier",
+  "programnavn": "Utviklingsstudier, bachelor",
+  "institusjon": "OsloMet - storbyuniversitetet",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://www.oslomet.no/studier/lui/utviklingsstudier",
+    "https://student.oslomet.no/studier/-/studieinfo/programplan/UTVBA/2025/H%C3%98ST",
+    "https://student.oslomet.no/studier/-/studieinfo/programplan/UTVBA/2026/H%C3%98ST"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 150,
+  "obligatoriske": [
+    {
+      "emnekode": "UTVB1100",
+      "emnenavn": "Introduksjon til utviklingsstudier",
+      "studiepoeng": 20,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "UTVB1100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "UTVB1300",
+      "emnenavn": "Innføring i metoder og vitenskapsteori",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "UTVB1300-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "UTVB1200",
+      "emnenavn": "Regionalkunnskap og globalhistorie",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "UTVB1200-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "UTVB1400",
+      "emnenavn": "Feltarbeid i utviklingsstudier",
+      "studiepoeng": 20,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "UTVB1400-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "UTVB2000",
+      "emnenavn": "Makt og politikk",
+      "studiepoeng": 30,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "UTVB2000-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "UTVB2100",
+      "emnenavn": "Utvikling og migrasjon",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "UTVB2100-1"
+      ],
+      "merknad": "Undervises på engelsk (Development and Migration)"
+    },
+    {
+      "emnekode": "UTVB2400",
+      "emnenavn": "Medier og utvikling",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "UTVB2400-1"
+      ],
+      "merknad": "Undervises på engelsk (Media and Development)"
+    },
+    {
+      "emnekode": "UTVB2500",
+      "emnenavn": "Veivalg for bærekraftig utvikling",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "UTVB2500-1"
+      ],
+      "merknad": "Undervises på engelsk (Choices of Sustainability Transitions)"
+    },
+    {
+      "emnekode": "UTVB2210",
+      "emnenavn": "Education and Religion in Development",
+      "studiepoeng": 15,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "UTVB2210-1",
+        "UTVB2200-1"
+      ],
+      "merknad": "UTVB2200 er den eldre 10 sp-varianten av samme emne i DBH"
+    },
+    {
+      "emnekode": "UTVB3003",
+      "emnenavn": "En introduksjon til utviklingsindustrien",
+      "studiepoeng": 15,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "UTVB3003-1",
+        "UTVB3002-1"
+      ],
+      "merknad": "UTVB3002 er den eldre 10 sp-varianten av samme emne i DBH"
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Teorivariant (6. semester)",
+      "obligatoriske": [
+        {
+          "emnekode": "UTVB3300",
+          "emnenavn": "Teorier om utvikling, globalisering og sosial endring",
+          "studiepoeng": 30,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "UTVB3300-1"
+          ],
+          "merknad": "Inkluderer individuell bacheloroppgave"
+        }
+      ]
+    },
+    {
+      "navn": "Hospiteringsvariant (6. semester)",
+      "obligatoriske": [
+        {
+          "emnekode": "UTVB3901",
+          "emnenavn": "Hospitering i utviklingsindustrien - med bacheloroppgave",
+          "studiepoeng": 30,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "UTVB3901-1"
+          ],
+          "merknad": "Begrenset antall plasser; krever bestått UTVB3002/UTVB3003"
+        }
+      ]
+    }
+  ],
+  "merknad": "OsloMets programplan er nesten helt bundet: alle 180 studiepoengene er definerte emner, og det finnes ingen frie valgemner. 150 sp er felles obligatoriske emner; i 6. semester velger studenten mellom to løp på 30 sp (teorivarianten UTVB3300 eller det hospiteringsbaserte løpet UTVB3901), og begge inneholder en individuell bacheloroppgave. Fjerde og femte semester kan erstattes av utveksling (inntil 60 sp fra annen institusjon), men tredje og sjette semester må tas ved OsloMet. Programplanen for kullet 2026 er identisk med 2025. Alle ti felles obligatoriske emner og begge sjettesemester-emnene er koblet til DBH-koder."
+}

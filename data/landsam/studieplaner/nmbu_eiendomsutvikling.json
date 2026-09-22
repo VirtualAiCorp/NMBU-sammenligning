@@ -1,0 +1,138 @@
+{
+  "entryId": "nmbu_eiendomsutvikling",
+  "programnavn": "Eiendomsutvikling (master 2 år)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2024/2025",
+  "kilder": [
+    "https://www.nmbu.no/studier/master-2-aar/eiendomsutvikling",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2024-08/M-EUTV%20heltid%20-%20Studieplan%202024.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 120,
+  "obligatoriske": [
+    {
+      "emnekode": "EIE311",
+      "emnenavn": "Eiendomsutvikling, kalkyle og verdsetting",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EIE311-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EIE310",
+      "emnenavn": "Eiendomsmarked og analyse",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EIE310-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EIE306",
+      "emnenavn": "Forhandlinger og konflikthåndtering",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EIE306-2"
+      ],
+      "merknad": "EIE306-2 er 5 sp-versjonen. Den eldre 10 sp-versjonen EIE306-1 er ikke rapportert for dette programmet i DBH."
+    },
+    {
+      "emnekode": "APL350",
+      "emnenavn": "Prosjektutvikling og prosjektgjennomføring",
+      "studiepoeng": 15,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "APL350-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "JUS310",
+      "emnenavn": "Rettigheter i fast eiendom",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "JUS310-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "JUS320",
+      "emnenavn": "Plan- og bygningsrett I - planlegging og gjennomføringsvirkemidler",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "JUS320-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAST303",
+      "emnenavn": "Planlegging av masteroppgaven ved Eiendom og Eiendomsutvikling",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MAST303-1"
+      ],
+      "merknad": "Går over to semestre: 2,5 sp i 1. år vår og 2,5 sp i 2. år høst."
+    },
+    {
+      "emnekode": "LAA350",
+      "emnenavn": "Prosjekter i byutvikling. Arkitektur, form og rom",
+      "studiepoeng": 20,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "LAA350-1"
+      ],
+      "merknad": "LAA350-1 ligger i DBH-tallene for dette programmet."
+    },
+    {
+      "emnekode": "JUS311",
+      "emnenavn": "Overføring av fast eiendom",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "JUS311-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "JUS321",
+      "emnenavn": "Plan- og bygningsrett II - byggesak",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "JUS321-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "M30-EUTV",
+      "emnenavn": "Masteroppgave",
+      "studiepoeng": 30,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "M30-EUTV-1"
+      ],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Nyeste publiserte studieplan er PDF-en for oppstart høsten 2024 (redigert 22.08.2024); programsiden lenker ikke til noen 2025- eller 2026-versjon, og forsøk på tilsvarende filnavn for 2025/2026 gir 404. De obligatoriske emnene summerer seg til 120 sp, altså hele graden. Studieplanen viser i tillegg en 5 sp «mulig valgfag»-luke i 1. år høstparallell med JUS220 (Miljøforvaltningsrett), EIE280 (Land rights) og EIE222 (Verdsetting av fast eiendom) som aktuelle emner; semestersummene i matrisen (25/30/35/30 = 120) går ikke helt opp med denne luken, så valgfriheten er trolig en mulighet til å bytte ut eller supplere et emne. PRAK203 (Praksisbasert læring) og BUS133 finnes i DBH-tallene, men er valgfrie og ikke del av den obligatoriske kjernen."
+}

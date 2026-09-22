@@ -1,0 +1,92 @@
+{
+  "entryId": "uio_folkehelsearbeid",
+  "programnavn": "Folkehelsearbeid og bærekraftige helsetjenester (master 2 år)",
+  "institusjon": "Universitetet i Oslo",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.uio.no/studier/program/folkehelsevitenskap-og-epidemiologi/studieretninger/folkehelsevitenskap-og-berekraftige-helsetjenester/",
+    "https://www.uio.no/studier/program/folkehelsevitenskap-og-epidemiologi/studieretninger/folkehelsevitenskap-og-berekraftige-helsetjenester/oppbygging/",
+    "https://www.uio.no/studier/program/folkehelsevitenskap-og-epidemiologi/oppbygging/",
+    "https://www.uio.no/studier/program/folkehelsevitenskap-og-epidemiologi/studieretninger/epidemiologi/oppbygging/"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 100,
+  "obligatoriske": [
+    {
+      "emnekode": "FHE4000",
+      "emnenavn": "Innføring i folkehelse, epidemiologi og bærekraft",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FHE4000-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FHE4010",
+      "emnenavn": "Introduction to Research Methods",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Nytt emne fra høsten 2026; ingen karakterdata i DBH ennå"
+    },
+    {
+      "emnekode": "FHE4020",
+      "emnenavn": "Public Health Epidemiology",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Nytt emne fra høsten 2026; ingen karakterdata i DBH ennå"
+    },
+    {
+      "emnekode": "FHE4030",
+      "emnenavn": "Ikke smittsomme sykdommer - folkehelse og bærekraftige tjenester",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Nytt emne fra våren 2027; DBH har forgjengeren FHE5200 Folkehelse og ikke-smittsomme sykdommer (5 sp)"
+    },
+    {
+      "emnekode": "FHE4040",
+      "emnenavn": "Project Planning and Research Ethics",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Nytt emne fra våren 2027; ingen karakterdata i DBH ennå"
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Folkehelsearbeid og bærekraftige helsetjenester",
+      "obligatoriske": [
+        {
+          "emnekode": "FHE4110",
+          "emnenavn": "Fundamentals in Data Management and Statistics",
+          "studiepoeng": 5,
+          "aar": 1,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "FHE4110-1"
+          ],
+          "merknad": "Studenten velger ett av to metodeemner: FHE4110 (kvantitativ) eller INTHE4032 Advanced Module in Qualitative Methods, avhengig av metode i masteroppgaven. INTHE4032 har ingen karakterdata i DBH"
+        },
+        {
+          "emnekode": "FHE5080",
+          "emnenavn": "Masteroppgave",
+          "studiepoeng": 45,
+          "aar": 2,
+          "semester": "helår",
+          "dbhEmnekoder": [],
+          "merknad": "Går over 3. og 4. semester. Nytt emne fra 2027; DBH har forgjengeren FHE5090 Masteroppgave (30 sp)"
+        }
+      ]
+    }
+  ],
+  "merknad": "Studieretningen ligger under masterprogrammet Folkehelsevitenskap og epidemiologi, som har to studieretninger (epidemiologi og folkehelsearbeid og bærekraftige helsetjenester). Programmet har ingen egen felles emnelisteside; de programfelles obligatoriske emnene er identifisert som de emnene begge studieretningene har felles i studieløpet fra høst 2026: FHE4000, FHE4010, FHE4020, FHE4030 og FHE4040 (50 sp). Under spesialiseringen er studieretningens egne obligatoriske emner ført opp: metodeemnet FHE4110/INTHE4032 (5 sp) og masteroppgaven FHE5080 (45 sp). Til sammen 100 obligatoriske sp av 120; de resterende 20 sp er valgfrie emner (5 sp i 2. semester og 15 sp i 3./4. semester). VIKTIG: studieplanen ble lagt helt om fra og med høsten 2026, og de fleste nye emnekodene har derfor ingen karakterdata i DBH ennå (DBH-dataene dekker 2021-2025). Bare FHE4000 og FHE4110 lar seg koble. Den forrige planen (studieløp 2023-2025) hadde disse obligatoriske emnene, som alle finnes i DBH: 1. semester FHE4000, FHE4200 Helsepedagogikk og helsekommunikasjon, HELSEF4410 Introduction to Qualitative Methods og INTHE4020 Introduction to Quantitative Methods; 2. semester FHE4210 Folkehelse og aldring, HELSEF4510 Medical and Health Related Research Ethics og HELSEF4420/HELSEF4430 fordypning i kvalitativ/kvantitativ metode; 3. semester FHE5200 Folkehelse og ikke-smittsomme sykdommer, FHE5000 Folkehelseetikk, FHE5210 Sosial ulikhet i helse og FHE5010 Komplekse intervensjoner og implementering; 4. semester FHE5090 Masteroppgave (30 sp). Flere av disse emnene er nå merket nedlagt."
+}

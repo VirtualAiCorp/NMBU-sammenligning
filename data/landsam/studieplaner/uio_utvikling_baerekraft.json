@@ -1,0 +1,347 @@
+{
+  "entryId": "uio_utvikling_baerekraft",
+  "programnavn": "Utviklingsstudier og bærekraft (bachelor)",
+  "institusjon": "Universitetet i Oslo",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.uio.no/studier/program/utviklingsstudier/",
+    "https://www.uio.no/studier/program/utviklingsstudier/oppbygging/",
+    "https://www.uio.no/studier/program/utviklingsstudier/oppbygging/samfunnsgeografi.html",
+    "https://www.uio.no/studier/program/utviklingsstudier/oppbygging/samfunnsokonomi.html",
+    "https://www.uio.no/studier/program/utviklingsstudier/oppbygging/sosialantropologi.html",
+    "https://www.uio.no/studier/program/utviklingsstudier/oppbygging/statsvitenskap.html"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 110,
+  "obligatoriske": [
+    {
+      "emnekode": "UTV1000",
+      "emnenavn": "Innføring i utviklingsstudier og bærekraft",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "UTV1000-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "SGO2500",
+      "emnenavn": "North/South Development: Energy transitions",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "SGO2500-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "SVEXFAC03",
+      "emnenavn": "Examen facultatum, samfunnsvitenskapelig variant",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "SVEXFAC03-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "STV1300",
+      "emnenavn": "Comparative Politics",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "STV1300-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ECON1910",
+      "emnenavn": "Poverty and Distribution in Developing Countries",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "ECON1910-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "SOSANT2530",
+      "emnenavn": "Development",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "SOSANT2530-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "UTV2001",
+      "emnenavn": "Utvikling og bærekraft i praksis",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "UTV2001-1"
+      ],
+      "merknad": "Het UTV2000 for kull 2020-2021; begge koder finnes i DBH"
+    },
+    {
+      "emnekode": "EXPHIL03",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EXPHIL03-1"
+      ],
+      "merknad": "Ligger i 4. semester i fordypningene sosialantropologi og statsvitenskap"
+    },
+    {
+      "emnekode": "UTV3091",
+      "emnenavn": "Avslutningsemne i utviklingsstudier og bærekraft",
+      "studiepoeng": 30,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "UTV3091-1"
+      ],
+      "merknad": "Fyller hele 6. semester"
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Samfunnsgeografi",
+      "obligatoriske": [
+        {
+          "emnekode": "SGO1001",
+          "emnenavn": "Innføring i samfunnsgeografi",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "SGO1001-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "SGO2400",
+          "emnenavn": "Politisk geografi",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "SGO2400-1"
+          ],
+          "merknad": "Velg mellom SGO2400 og SGO2200 Economic geography: Globalisation and regional development (SGO2200-1)"
+        },
+        {
+          "emnekode": "SOSGEO2302",
+          "emnenavn": "Environment and Society",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "SOSGEO2302-1",
+            "SGO2302-1"
+          ],
+          "merknad": "Emnet ligger i DBH både som SOSGEO2302 og som den eldre koden SGO2302"
+        },
+        {
+          "emnekode": "SGO2250",
+          "emnenavn": "Sustainability Transitions, Innovation and Social Change",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "SGO2250-1",
+            "SGO3200-1"
+          ],
+          "merknad": "SGO3200 er 3000-nivåvarianten av samme emne i DBH"
+        },
+        {
+          "emnekode": "SOSGEO1120",
+          "emnenavn": "Kvantitativ metode",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "SOSGEO1120-1"
+          ],
+          "merknad": "Velg mellom SOSGEO1120 og SVMET1010 Kvalitative metoder; SVMET1010 har ingen karakterdata under dette programmet i DBH"
+        }
+      ]
+    },
+    {
+      "navn": "Samfunnsøkonomi",
+      "obligatoriske": [
+        {
+          "emnekode": "ECON1100",
+          "emnenavn": "Matematikk I",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "ECON1100-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "ECON1210",
+          "emnenavn": "Mikroøkonomi 1",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "ECON1210-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "ECON1310",
+          "emnenavn": "Makroøkonomi 1",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "ECON1310-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "ECON2130",
+          "emnenavn": "Statistikk for økonomer",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "ECON2130-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "ECON2220",
+          "emnenavn": "Mikroøkonomi 2",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "ECON2220-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "ECON2310",
+          "emnenavn": "Makroøkonomi 2",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Ingen karakterdata på ECON2310 under dette programmet i DBH (koden finnes derimot under UiOs bachelor i internasjonale studier)"
+        }
+      ]
+    },
+    {
+      "navn": "Sosialantropologi",
+      "obligatoriske": [
+        {
+          "emnekode": "SOSANT1000",
+          "emnenavn": "Innføring i sosialantropologi",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "SOSANT1000-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "SOSANT1050",
+          "emnenavn": "Etnografisk metode",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "SOSANT1050-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "SOSANT1200",
+          "emnenavn": "Politikk, makt og ulikhet",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "SOSANT1200-1"
+          ],
+          "merknad": "Het tidligere Politisk antropologi"
+        },
+        {
+          "emnekode": "SOSANT2700",
+          "emnenavn": "History and Theory of Anthropology",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "Nytt emne for kullet 2026; erstatter SOSANT2000 Central themes in contemporary anthropology (SOSANT2000-1), som gjaldt for kullet 2025. Ingen DBH-data ennå"
+        },
+        {
+          "emnekode": "SOSANT2510",
+          "emnenavn": "Environmental Anthropology",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Ingen karakterdata under dette programmet i DBH"
+        }
+      ]
+    },
+    {
+      "navn": "Statsvitenskap",
+      "obligatoriske": [
+        {
+          "emnekode": "STV1200",
+          "emnenavn": "Internasjonal politikk",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "STV1200-1"
+          ],
+          "merknad": null
+        },
+        {
+          "emnekode": "STV1100",
+          "emnenavn": "Politisk teori",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [
+            "STV1100-1",
+            "STV1400-1"
+          ],
+          "merknad": "Velg ett av STV1100 Politisk teori og STV1400 Offentlig politikk og administrasjon"
+        },
+        {
+          "emnekode": "STV1020",
+          "emnenavn": "Politisk analyse 2: Forskningsdesign og kvantitative metoder",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [
+            "STV1020-1"
+          ],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Programmet er delt i obligatoriske emner (90 sp), fordypning (50-70 sp), frie emner (inntil 20 sp) og ex.phil./ex.fac. (20 sp). Vi har regnet ex.phil. og ex.fac. som obligatoriske, slik oppgaven ber om, og oppgir derfor 110 obligatoriske studiepoeng. De to første semestrene er felles for alle, deretter avhenger løpet av hvilken av de fire fordypningene studenten velger. Fordypningen i statsvitenskap krever i tillegg to fordypningsemner på STV 2000-nivå (ett i internasjonal politikk og ett fra et annet fagområde) som studenten velger selv - disse er ikke ført opp som enkeltemner. Fordypningen i samfunnsøkonomi krever i tillegg ett valgfritt ECON-emne på 2000-/3000-nivå, og sosialantropologi 10 sp valgfrie SOSANT-emner på 2000-nivå. Fordypningsløpet i sosialantropologi ble endret fra og med kullet 2026 (SOSANT2700 erstatter SOSANT2000)."
+}

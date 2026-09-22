@@ -1,0 +1,123 @@
+{
+  "entryId": "ntnu_folkehelse",
+  "programnavn": "Folkehelse (master 2 år)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.ntnu.no/studier/mfhls",
+    "https://www.ntnu.no/studier/mfhls/studiets-oppbygning",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=MFHLS&year=2026"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 97.5,
+  "obligatoriske": [
+    {
+      "emnekode": "FH3012",
+      "emnenavn": "Folkehelse 1 - en innføring i folkehelse",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FH3012-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MH3002",
+      "emnenavn": "Epidemiologi I",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MH3002-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MH3012",
+      "emnenavn": "Kvalitative metoder 1",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MH3012-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MH3022",
+      "emnenavn": "Statistiske og epidemiologiske metoder 1",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MH3022-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FH3010",
+      "emnenavn": "Systematisk folkehelsearbeid",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "FH3010-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "FH3013",
+      "emnenavn": "Nye perspektiver på folkehelse",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "FH3013-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MH3014",
+      "emnenavn": "Kvalitative metoder 2",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MH3014-1",
+        "MH3024-1"
+      ],
+      "merknad": "Studieplanen merker MH3014 Kvalitative metoder 2 og MH3024 Statistiske og epidemiologiske metoder 2 som MAX1A - studenten tar ett av dem"
+    },
+    {
+      "emnekode": "Eksperter i team",
+      "emnenavn": "Eksperter i team (landsby velges av studenten)",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Obligatorisk i alle NTNUs masterprogram, men emnekoden avhenger av hvilken landsby studenten kommer inn på. I DBH-dataene for dette programmet finnes EIT3020, ISA3800 og ISA3801"
+    },
+    {
+      "emnekode": "SYT3408",
+      "emnenavn": "Prosjektplan",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Ingen karakterdata på SYT3408 under dette programmet i DBH"
+    },
+    {
+      "emnekode": "FH3902",
+      "emnenavn": "Masteroppgave i folkehelse",
+      "studiepoeng": 30,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Ingen karakterdata på FH3902 i DBH; DBH har forgjengeren FH3901 Masteroppgave i folkehelse på 45 sp"
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Studieplanen er hentet fra NTNUs studieplanverktøy for kullet 2026 (identisk med kullet 2025). Obligatorisk: fire emner i 1. semester (30 sp), to emner + ett av to metodeemner + Eksperter i team i 2. semester (30 sp), prosjektplan i 3. semester (7,5 sp) og masteroppgave i 4. semester (30 sp) - til sammen 97,5 sp. De resterende 22,5 sp er valgemner: to valgemner i 3. semester velges blant FH3001 Arbeid og helse, FH3008 Helseøkonomi og folkehelse, FH3009 Aldring og folkehelse og SYT3411 Folkehelse - barn og unge. MERK avvik i kildene: teksten under «studiets oppbygning» på ntnu.no omtaler en masteroppgave på 45 sp, mens studieplantabellen for kull 2025 og 2026 viser FH3902 på 30 sp. Vi har fulgt studieplantabellen. Det finnes også deltidsløp med masteroppgave på henholdsvis 45 og 30 sp. Summen av emnene i studieplantabellen er 112,5 sp (97,5 obligatorisk + 15 sp valgemner), så 7,5 sp i 3. semester er ikke spesifisert i tabellen. Tre obligatoriske elementer mangler DBH-kobling: SYT3408, FH3902 (DBH har forgjengeren FH3901, 45 sp) og Eksperter i team (varierende emnekode)."
+}

@@ -1,0 +1,224 @@
+{
+  "entryId": "bi_eiendomsmegling",
+  "programnavn": "Bachelor i eiendomsmegling, jus og økonomi",
+  "institusjon": "Handelshøyskolen BI",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.bi.no/studier-og-kurs/bachelorstudier/eiendomsmegling-jus-okonomi/",
+    "https://www.bi.no/studier-og-kurs/bachelorstudier/eiendomsmegling-jus-okonomi/valgkurs-bachelor-i-eiendomsmegling/"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 135,
+  "obligatoriske": [
+    {
+      "emnekode": "EMS3521",
+      "emnenavn": "Eiendomsjus I",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EMS35211"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EMS3416",
+      "emnenavn": "Jus og eiendomsmegling",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EMS34161"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BØK3430",
+      "emnenavn": "Innføring i bedriftsøkonomi og finans",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BØK34301"
+      ],
+      "merknad": "DBH-navnet er «Innføring i bed.øk. & finans»."
+    },
+    {
+      "emnekode": "SØK3420",
+      "emnenavn": "Samfunnsøkonomi I",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "SØK34201"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EMS3524",
+      "emnenavn": "Eiendomsjus II",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "EMS35241"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EMS3528",
+      "emnenavn": "Eiendomsmegling I",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "EMS35281",
+        "EMS35252"
+      ],
+      "merknad": "EMS35252 er en 15 sp-variant av Eiendomsmegling I i DBH."
+    },
+    {
+      "emnekode": "MET2910",
+      "emnenavn": "Matematikk for økonomer",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MET29107",
+        "MET29104",
+        "MET29106",
+        "MET29105",
+        "MET29102",
+        "MET29101",
+        "MET29103"
+      ],
+      "merknad": "BI rapporterer matematikkemnet på mange delkoder i DBH (hel- og deleksamener); alle er tatt med."
+    },
+    {
+      "emnekode": "BØK3423",
+      "emnenavn": "Finans",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BØK34231",
+        "BØK34232",
+        "BØK34233"
+      ],
+      "merknad": "Rapporteres som hel- og deleksamener i DBH."
+    },
+    {
+      "emnekode": "EMS3670",
+      "emnenavn": "Eiendomsutvikling",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EMS36701"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EMS3666",
+      "emnenavn": "Eiendomsmegling II",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EMS36661"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "SØK3500",
+      "emnenavn": "Samfunnsøkonomi II",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "SØK35001"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EMS3651",
+      "emnenavn": "Oppgjør av eiendomshandler",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EMS36511"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MRK3580",
+      "emnenavn": "Markedsføringsledelse og strategi",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MRK35801"
+      ],
+      "merknad": "BIs publiserte studieplan lister emnet både i 4. og 5. semester; 4. og 5. semester er fleksible (internship/utveksling/valgkurs), og emnet tas i ett av dem."
+    },
+    {
+      "emnekode": "ORG3403",
+      "emnenavn": "Organisasjonsatferd og ledelse",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "ORG34031"
+      ],
+      "merknad": "Samme som MRK3580: listet både i 4. og 5. semester i BIs studieplan."
+    },
+    {
+      "emnekode": "EMS3642",
+      "emnenavn": "Eiendomsjus III",
+      "studiepoeng": 15,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "EMS36422"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EMS3623",
+      "emnenavn": "Eiendomsmegling III",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "EMS36231"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EMS3618",
+      "emnenavn": "Muntlig eksamen for eiendomsmeglerstudiet",
+      "studiepoeng": 0,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "EMS36181"
+      ],
+      "merknad": "0 sp, men obligatorisk muntlig eksamen i 6. semester."
+    },
+    {
+      "emnekode": "STR3610",
+      "emnenavn": "Doing Sustainable Business",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "STR36101"
+      ],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er BIs studieplan på programsiden (studieplanene oppdateres årlig i juni og gjelder fra neste studieår, altså 2026/2027). BI oppgir bare emnenavn i studieplanen; emnekodene er hentet fra lenkene til kursbeskrivelsene på samme side, og DBH-kodene er kode + versjonssiffer (EMS3521 -> EMS35211). 135 sp er obligatoriske. 4. og 5. semester er fleksible: BI lister MRK3580 og ORG3403 i begge semestre og 15 sp «internship, utveksling og valgkurs» i hvert av dem, slik at de to emnene tas én gang og de resterende 45 sp fylles med valgkurs, internship eller utveksling. Merk at BI rapporterer svært høye kandidattall på flere av disse emnene i DBH fordi emnene deles med andre BI-bachelorer; tallene er derfor ikke rene programtall."
+}

@@ -1,0 +1,287 @@
+{
+  "entryId": "usn_eiendomsmegling",
+  "programnavn": "Eiendomsmegling (bachelor)",
+  "institusjon": "Universitetet i Sørøst-Norge",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.usn.no/studier/bachelor-i-eiendomsmegling/",
+    "https://www.usn.no/studier/studie-og-emneplaner/#/studieplan/368_2026_H%C3%98ST"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 180,
+  "obligatoriske": [
+    {
+      "emnekode": "EML100B",
+      "emnenavn": "Eiendomsmegling og etikk I",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EML100B-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "REG1000",
+      "emnenavn": "Grunnleggende regnskap",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "REG1000-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "JUR1000",
+      "emnenavn": "Rettslære",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "JUR1000-1",
+        "RET2000-1"
+      ],
+      "merknad": "RET2000-1 er en parallell/eldre kode for samme rettslærekurs i DBH."
+    },
+    {
+      "emnekode": "MET1000",
+      "emnenavn": "Matematikk for økonomer",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MET1000-1",
+        "MAT1000-1"
+      ],
+      "merknad": "MAT1000-1 er den eldre koden for samme emne."
+    },
+    {
+      "emnekode": "EML101B",
+      "emnenavn": "Jus for eiendomsmeglere I",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "EML101B-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MET1010",
+      "emnenavn": "Statistikk for økonomer",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MET1010-1",
+        "STA1000-1"
+      ],
+      "merknad": "STA1000-1 er den eldre koden for samme emne."
+    },
+    {
+      "emnekode": "REG1010",
+      "emnenavn": "Finansregnskap med analyse",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "REG1010-1",
+        "FIN1000-1"
+      ],
+      "merknad": "FIN1000-1 er den eldre koden for samme emne."
+    },
+    {
+      "emnekode": "BØK1000",
+      "emnenavn": "Bedriftsøkonomi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BØK1000-1",
+        "BED1000-1"
+      ],
+      "merknad": "BED1000-1 er den eldre koden for samme emne."
+    },
+    {
+      "emnekode": "EML200B",
+      "emnenavn": "Eiendomsmegling II",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EML200B-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAR1000",
+      "emnenavn": "Markedsføringsledelse",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "MAR1000-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EML201B",
+      "emnenavn": "Jus for eiendomsmeglere II",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EML201B-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "SØK1000",
+      "emnenavn": "Mikroøkonomi",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "SØK1000-1",
+        "MIK2000-1"
+      ],
+      "merknad": "MIK2000-1 er den eldre koden for samme emne."
+    },
+    {
+      "emnekode": "ORG1010",
+      "emnenavn": "Organisering og ledelse",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Ny emnekode; DBH-karakterene for programmet ligger på den eldre koden ORL1000-1 med samme emnenavn."
+    },
+    {
+      "emnekode": "MET1020",
+      "emnenavn": "Samfunnsvitenskapelig metode",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MET1020-1",
+        "SAM2000-1"
+      ],
+      "merknad": "SAM2000-1 er den eldre koden for samme emne."
+    },
+    {
+      "emnekode": "SØK1010",
+      "emnenavn": "Makroøkonomi",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "SØK1010-1",
+        "MAK2000-1"
+      ],
+      "merknad": "MAK2000-1 er den eldre koden for samme emne."
+    },
+    {
+      "emnekode": "MAR2020",
+      "emnenavn": "Markedskommunikasjon",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Ny emnekode; DBH-karakterene ligger på de eldre kodene MKO2000-1 og IMR104B-1 med samme emnenavn."
+    },
+    {
+      "emnekode": "FIN2000",
+      "emnenavn": "Finansiering og investering",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FIN2000-1",
+        "INV2000-1"
+      ],
+      "merknad": "INV2000-1 er en parallell kode for samme emne."
+    },
+    {
+      "emnekode": "EML300B",
+      "emnenavn": "Skatt- og avgiftsrett for eiendomsmeglere",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EML300B-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "STR1000",
+      "emnenavn": "Strategisk ledelse",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "STR1000-1",
+        "STR2000-1"
+      ],
+      "merknad": "STR2000-1 er den eldre koden for samme emne."
+    },
+    {
+      "emnekode": "EML301B",
+      "emnenavn": "Eiendomsmegling III, etikk og samfunnsansvar",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EML301B-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EML303B",
+      "emnenavn": "Oppgjør og regnskap for eiendomshandel",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "EML303B-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EML304B",
+      "emnenavn": "Eiendomsfinansiering",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "EML304B-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BAC3040",
+      "emnenavn": "Bacheloroppgave i eiendomsmegling",
+      "studiepoeng": 15,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BAC3040-1"
+      ],
+      "merknad": "Studiemodellen merker BAC3040 og INT3020 som valgemner, men «velg minst én av INT3020 og BAC3040» gjør de 15 sp obligatoriske."
+    },
+    {
+      "emnekode": "INT3020",
+      "emnenavn": "Internship i eiendomsmegling",
+      "studiepoeng": 15,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "INT3020-1"
+      ],
+      "merknad": "Alternativ til BAC3040; studenten må ta minst én av de to."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er USNs studiemodell for kull 2026 høst (studieplanen for 2027 høst er ennå ikke klar, og USN viser selv 2026-planen som illustrasjon). Hele graden er i praksis obligatorisk: 22 emner à 7,5 sp pluss 15 sp der studenten må velge minst ett av INT3020 (internship) og BAC3040 (bacheloroppgave) – begge er ført opp som obligatoriske her, men bare 15 sp av dem inngår i totalen på 180. USN har gjennom flere kull byttet emnekoder på støttefagene; der DBH har både gammel og ny kode for samme emne, er begge tatt med. To emner i den nye planen, ORG1010 «Organisering og ledelse» og MAR2020 «Markedskommunikasjon», har ennå ingen karakterdata på sin egen kode; tallene ligger på ORL1000-1 respektive MKO2000-1/IMR104B-1. EML302B «Eiendomsmegling IV» (15 sp) finnes i DBH-tallene, men er tatt ut av studiemodellen for kull 2026."
+}

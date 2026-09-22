@@ -1,0 +1,155 @@
+{
+  "entryId": "ntnu_eiendomsutvikling",
+  "programnavn": "Eiendomsutvikling og -forvaltning (master 2 år)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://www.ntnu.no/studier/maeiendom",
+    "https://www.ntnu.no/studier/maeiendom/studiets-oppbygning",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=MAEIENDOM&year=2025"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 120,
+  "obligatoriskeStudiepoeng": 105,
+  "obligatoriske": [
+    {
+      "emnekode": "AAR4235",
+      "emnenavn": "Eiendomsøkonomi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "AAR4235-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "AAR4815",
+      "emnenavn": "Plan og byggeprosess",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "AAR4815-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "AAR4827",
+      "emnenavn": "Eiendomsforvaltning - Facility Management",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "AAR4827-1",
+        "AAR4821-1"
+      ],
+      "merknad": "AAR4821-1 «Bærekraftig eiendomsforvaltning - FM» ligger også i DBH-tallene og er den eldre koden for emnet."
+    },
+    {
+      "emnekode": "FP4100",
+      "emnenavn": "Arkitektur og stedsforming",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "FP4100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "HMS0005",
+      "emnenavn": "HMS-kurs for studenter ved MAEIENDOM, MFYSPL og UEP",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "HMS0005-1"
+      ],
+      "merknad": "0 sp, men obligatorisk."
+    },
+    {
+      "emnekode": "AAR4950",
+      "emnenavn": "Programmering og evaluering av bygninger",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "AAR4950-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "TBA4170",
+      "emnenavn": "Transformasjon og ny bruk av eksisterende bygninger",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "TBA4170-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EiT",
+      "emnenavn": "Eksperter i team (landsby velges fritt)",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "TBA4856-1",
+        "TBA4859-1",
+        "TBA4860-1",
+        "TDT4857-1",
+        "TIØ4850-2"
+      ],
+      "merknad": "Eksperter i team er obligatorisk for alle NTNU-studenter i 4. årskurs, men landsbyen velges fritt fra en lang liste. DBH-kodene her er de EiT-landsbyene som faktisk har kandidater fra dette programmet."
+    },
+    {
+      "emnekode": "AAR4828",
+      "emnenavn": "Eiendomsutvikling",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "AAR4828-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "AAR4831",
+      "emnenavn": "Bærekraft og muliggjørende teknologier",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "AAR4831-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "AAR4874",
+      "emnenavn": "Teori og metoder for masteroppgaver",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "AAR4874-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "AAR4992",
+      "emnenavn": "Masteroppgave i eiendomsutvikling og -forvaltning",
+      "studiepoeng": 30,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "AAR4992-1"
+      ],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er NTNUs studieplan for kull 2025 (1. år 2025–2026, 2. år 2026–2027). Av 120 sp er 105 obligatoriske: fire emner i 1. semester, tre i 2. semester (inkludert Eksperter i team), tre i 3. semester og masteroppgaven på 30 sp i 4. semester. Studenten velger selv ett valgbart emne på 7,5 sp i både 2. og 3. semester, til sammen 15 sp – anbefalte valgemner er blant annet AAR4215 Reguleringsplanlegging, TBA4155, TIØ4215, TIØ4252, TPK5100 og TEP4235. Eksperter i team er ført opp som ett obligatorisk emne fordi landsbyen velges fritt; de DBH-kodene som er listet, er EiT-landsbyene med registrerte kandidater fra programmet."
+}

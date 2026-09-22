@@ -1,0 +1,363 @@
+{
+  "entryId": "nmbu_eiendom",
+  "programnavn": "Eiendom (master 5 år)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/master-5-aar/eiendom",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2026-08/2026%20Studieplan%20for%20M-EIE.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 300,
+  "obligatoriskeStudiepoeng": 260,
+  "obligatoriske": [
+    {
+      "emnekode": "EIE100",
+      "emnenavn": "Innføring i eiendomsfag II",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EIE100-1"
+      ],
+      "merknad": "Augustblokk + høstparallell."
+    },
+    {
+      "emnekode": "JUS100",
+      "emnenavn": "Juridisk metode og norsk rettssystem",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "JUS100-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PHI100",
+      "emnenavn": "Examen philosophicum",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "PHI100-1",
+        "PHI101-1"
+      ],
+      "merknad": "Studieplanen gir valget mellom PHI100 og seminarversjonen PHI101; begge DBH-kodene er tatt med."
+    },
+    {
+      "emnekode": "JUS110",
+      "emnenavn": "Innføring i eiendomsjuss",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "JUS110-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "JUS201",
+      "emnenavn": "Offentlig saksbehandling og forvaltningsrett",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "JUS201-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "JUS102",
+      "emnenavn": "Forretningsjus I",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "JUS102-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EIE202",
+      "emnenavn": "Eiendomshistorie",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "EIE202-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BUS100",
+      "emnenavn": "Grunnleggende bedriftsøkonomi",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BUS100-1"
+      ],
+      "merknad": "DBH-navnet er «Bedriften – innføring i bedriftsøkonomiske sammenhenger». Nettversjonen BUS100F-1 er ikke tatt med."
+    },
+    {
+      "emnekode": "JUS220",
+      "emnenavn": "Miljøforvaltningsrett",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "JUS220-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "LAD102",
+      "emnenavn": "GIS - praktisk introduksjon",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "LAD102-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "LAD103",
+      "emnenavn": "Kartografi og geodatakilder i planlegging",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "LAD103-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EIE105",
+      "emnenavn": "Kart- og landmålingslære",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EIE105-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "AOS240",
+      "emnenavn": "Samfunnsvitenskapelig metode",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "AOS240-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "JUS320",
+      "emnenavn": "Plan- og bygningsrett I - planlegging og gjennomføringsvirkemidler",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "JUS320-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EIE200",
+      "emnenavn": "Eiendomsregistrering og eiendomsdanning",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "EIE200-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EIE222",
+      "emnenavn": "Verdsetting av fast eiendom",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "EIE222-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EIE310",
+      "emnenavn": "Eiendomsmarked og analyse",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EIE310-1"
+      ],
+      "merknad": "Det er lagt til rette for utveksling høsten i 3. året."
+    },
+    {
+      "emnekode": "JUS321",
+      "emnenavn": "Plan- og bygningsrett II - byggesak",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "JUS321-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EIE280",
+      "emnenavn": "Land Rights",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "januarblokk",
+      "dbhEmnekoder": [
+        "EIE280-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "JUS310",
+      "emnenavn": "Rettigheter i fast eiendom",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "JUS310-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "APL350",
+      "emnenavn": "Prosjektutvikling og prosjektgjennomføring",
+      "studiepoeng": 15,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "APL350-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "JUS311",
+      "emnenavn": "Overføring av fast eiendom",
+      "studiepoeng": 5,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "JUS311-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EIE306",
+      "emnenavn": "Forhandlinger og konflikthåndtering",
+      "studiepoeng": 5,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EIE306-1",
+        "EIE306-2"
+      ],
+      "merknad": "EIE306-2 er 5 sp-versjonen som gjelder nå; EIE306-1 er den gamle 10 sp-versjonen."
+    },
+    {
+      "emnekode": "EIE320",
+      "emnenavn": "Ekspropriasjon og grunnerverv",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EIE320-1"
+      ],
+      "merknad": "Fortsetter i januarblokka."
+    },
+    {
+      "emnekode": "EIE302",
+      "emnenavn": "Jordskiftearbeid",
+      "studiepoeng": 5,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EIE302-1",
+        "EIE302-2",
+        "EIE302-3"
+      ],
+      "merknad": "Kalles «Materielt jordskifte» i matrisen på side 1 i studieplanen. DBH har tre versjoner på 10/15/10 sp."
+    },
+    {
+      "emnekode": "JUS322",
+      "emnenavn": "Spesiell forvaltningsrett, skjønn og skjønnsprosess",
+      "studiepoeng": 10,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "JUS322-1"
+      ],
+      "merknad": "DBH-koden JUS322-1 er registrert med 5 sp; studieplanen 2026 oppgir 10 sp."
+    },
+    {
+      "emnekode": "AOS340",
+      "emnenavn": "Kvalitativ metode",
+      "studiepoeng": 5,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "AOS340-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "JUS331",
+      "emnenavn": "Prosess og jordskifte",
+      "studiepoeng": 20,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "JUS331-1",
+        "JUS331-2"
+      ],
+      "merknad": "Går over to semestre (4. år vår og 5. år høst). Plasseringen er utledet av semestersummene i studieplanen (27,5 sp begge semestre) og er noe usikker."
+    },
+    {
+      "emnekode": "MAST303",
+      "emnenavn": "Planlegging av masteroppgaven ved Eiendom og Eiendomsutvikling",
+      "studiepoeng": 5,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "MAST303-1"
+      ],
+      "merknad": "2,5 sp i 4. år vår og 2,5 sp i 5. år høst."
+    },
+    {
+      "emnekode": "EIE304",
+      "emnenavn": "Feltarbeid i eiendomsfag",
+      "studiepoeng": 10,
+      "aar": 5,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EIE304-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "M30-EIE",
+      "emnenavn": "Masteroppgave",
+      "studiepoeng": 30,
+      "aar": 5,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "M30-EIE-1"
+      ],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er NMBUs studieplan-PDF for opptak høsten 2026 (sist oppdatert 06.08.2026). Studieplanen oppgir 300 sp totalt, hvorav 260 obligatoriske og 40 valgfrie. De valgfrie 5 sp-blokkene ligger i 1. år vår (10 sp), 2. år vår (5), 3. år høst (15), 4. år høst (5) og 4. år vår (5). Semesterplasseringen av EIE302, JUS322, JUS331 og MAST303 i 4. og 5. år er rekonstruert fra semestersummene i matrisen (35/30/30/30/30/30/30/30/27,5/27,5 = 300) fordi PDF-uttrekket ikke bevarer kolonneposisjonene; fordelingen summerer seg nøyaktig til 260 obligatoriske sp. NMBU tilbyr i tillegg tilpassede studieplaner for studenter med bachelor eller master i rettsvitenskap (egne PDF-er fra 2025); disse er ikke tatt med her. EIE101 «Innføring i eiendomsfag I» finnes i DBH-tallene, men inngår ikke i studieplanen for 2026 – den hører til et eldre kull."
+}

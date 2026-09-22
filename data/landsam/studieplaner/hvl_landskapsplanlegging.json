@@ -1,0 +1,204 @@
+{
+  "entryId": "hvl_landskapsplanlegging",
+  "programnavn": "Landskapsplanlegging med landskapsarkitektur",
+  "institusjon": "Høgskulen på Vestlandet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.hvl.no/studier/studieprogram/landskapsplanlegging-med-landskapsarkitektur/",
+    "https://www.hvl.no/studier/studieprogram/landskapsplanlegging-med-landskapsarkitektur/2026h/utdanningsplan/"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 180,
+  "obligatoriske": [
+    {
+      "emnekode": "BI424",
+      "emnenavn": "Botanikk grunnkurs",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "BI424-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "GE413",
+      "emnenavn": "Kartlære og GIS",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "GE413-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PL425",
+      "emnenavn": "Rom og design",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "PL425-2"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BI436",
+      "emnenavn": "Grønstruktur og urban vegetasjon",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BI436-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BI445",
+      "emnenavn": "Økologi grunnkurs",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BI445-3"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PL471",
+      "emnenavn": "Kulturmiljøforvaltning",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "PL471-2"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "GE406",
+      "emnenavn": "Geologi grunnkurs",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "GE406-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ME420",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "ME420-4"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PL416",
+      "emnenavn": "Landskapsanalyse",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "PL416-2"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BI434",
+      "emnenavn": "Vegetasjonsøkologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BI434-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "BI435",
+      "emnenavn": "Landskapsøkologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "BI435-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PL412",
+      "emnenavn": "Landskapsinngrep",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "PL412-2"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PL413",
+      "emnenavn": "Miljø- og forvaltningsrett",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "PL413-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PL417",
+      "emnenavn": "Arealplanlegging",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "PL417-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PL462",
+      "emnenavn": "Naturrestaurering",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "PL462-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PL418",
+      "emnenavn": "Reguleringsplanlegging",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "PL418-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PL491",
+      "emnenavn": "Bacheloroppgåve i Landskapsplanlegging med landskapsarkitektur",
+      "studiepoeng": 20,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "PL491-1"
+      ],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er HVLs utdanningsplan for kull haust 2026; kull 2025 har identisk emnesammensetning. Hele graden på 180 sp er obligatorisk – programmet har ingen valgfrie emner. PL461 «Kulturlandskapsskjøtsel» finnes i DBH-tallene, men inngår ikke i planen for 2025/2026 og 2026/2027; emnet hører til en eldre versjon av studieplanen. Det samme programmet ligger i programkartet både i gruppa «landskapsingeniør» (entryId hvl_landskapsplanlegging) og i gruppa «landskapsarkitektur» (hvl_landskapsplanlegging_la)."
+}

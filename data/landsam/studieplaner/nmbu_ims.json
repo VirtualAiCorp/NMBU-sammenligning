@@ -1,0 +1,128 @@
+{
+  "entryId": "nmbu_ims",
+  "programnavn": "Internasjonale miljø- og utviklingsstudier (bachelor)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2025/2026",
+  "kilder": [
+    "https://www.nmbu.no/studier/bachelor/internasjonale-miljo-og-utviklingsstudier",
+    "https://www.nmbu.no/en/studies/study-plan-bachelors-study-international-environment-and-development-studies-202526",
+    "https://main-bvxea6i-kdsvgmpf4iwws.eu-5.platformsh.site/sites/default/files/2025-06/B-IEDS%202025%20Study%20plan.pdf"
+  ],
+  "hentet": "2026-09-22",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 90,
+  "obligatoriske": [
+    {
+      "emnekode": "EDS101",
+      "emnenavn": "Introduksjon til miljø og utvikling",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EDS101-1"
+      ],
+      "merknad": "Augustblokk"
+    },
+    {
+      "emnekode": "EDS102",
+      "emnenavn": "Introduksjon til utviklingstenkning",
+      "studiepoeng": 15,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EDS102-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EDS260",
+      "emnenavn": "Globale miljøforandringer",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EDS260-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EDS261",
+      "emnenavn": "Globale miljøforandringer - seminarer",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EDS261-1"
+      ],
+      "merknad": "Studieplanen kaller emnet EDS260E i emnebeskrivelsen, men EDS261 i emnetabellen; DBH bruker EDS261"
+    },
+    {
+      "emnekode": "ECN101",
+      "emnenavn": "Samfunnsøkonomi for miljø og utvikling",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "ECN101-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "PHI102",
+      "emnenavn": "Examen philosophicum - engelsk versjon",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "PHI102-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "ECOL200",
+      "emnenavn": "Generell økologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [
+        "ECOL200-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EDS115",
+      "emnenavn": "Innføring i forskningsmetode",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EDS115-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EDS225",
+      "emnenavn": "Linking Ecological and Social Resilience",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EDS225-1"
+      ],
+      "merknad": null
+    },
+    {
+      "emnekode": "EDS230",
+      "emnenavn": "Global utvikling og bistand",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [
+        "EDS230-1"
+      ],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Studieplanen er den engelske B-IEDS-planen for kullet 2025/26 (PDF lenket fra programsiden). 90 av 180 studiepoeng er obligatoriske: hele første studieår (60 sp) pluss høstparallellen i andre år (30 sp). I tillegg må minst 55 sp velges blant betingede valgemner (bl.a. B15-DS bacheloroppgave 15 sp, EDS313 internship, feltkursene EDS210 Tanzania og EDS272 India, EDS245, EDS285, EDS330, EDS370, AOS236, ECN230, APL280, BOT200, BOT201, MINA321), og 35 sp er helt frie emner som kan tas ved NMBU eller på utveksling. Bacheloroppgaven er IKKE obligatorisk i dette programmet - den er et betinget valgemne som anbefales for dem som vil videre på master. Merk at programsiden på nmbu.no oppgir «115 studiepoeng obligatoriske emner», mens selve studieplanen (tabell 2) lister 90 sp; vi har fulgt studieplanen. Alle ti obligatoriske emner er koblet til DBH-koder."
+}
