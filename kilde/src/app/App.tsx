@@ -17,6 +17,7 @@ import { AdmissionAnalysis2026 } from './components/AdmissionAnalysis2026';
 import { MarkedsstatusView } from './components/MarkedsstatusView';
 import { FacultyLanding, type Faculty } from './components/FacultyLanding';
 import { PasswordGate } from './components/PasswordGate';
+import { NmbuCourseExplorer } from './components/NmbuCourseExplorer';
 import { LandsamLanding } from './components/LandsamLanding';
 import { LandsamAdmissionAnalysis } from './components/LandsamAdmissionAnalysis';
 import { LandsamCourseAnalysis } from './components/LandsamCourseAnalysis';
@@ -86,6 +87,11 @@ export default function App() {
         onSelect={(f) => { setFaculty(f); setFacultyView('landing'); setFacultyGroup(undefined); setFacultyCourseGroup(undefined); }}
       />
     );
+  }
+
+  // ── Alle emner ved NMBU ───────────────────────────────────────────────────
+  if (faculty === 'nmbu-emner') {
+    return <NmbuCourseExplorer onBack={() => setFaculty(null)} />;
   }
 
   // ── Fakultetsskjermene (LANDSAM, REALTEK …) ───────────────────────────────

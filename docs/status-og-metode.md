@@ -31,6 +31,13 @@ Hvert fakultet (`landsam`, `realtek`, `biovit`, `kbm`, `mina`) har samme mappe o
 
 Steg 7 og 8 kjøres separat, ikke av `build-faculty.sh`.
 
+I tillegg, på tvers av fakultetene: **Alle emner ved NMBU** (`scripts/build-nmbu-courses.py` →
+`kilde/public/nmbu-emner.json`, lastes med fetch ved åpning). Bruker DBH-cachen for institusjon 1173
+(308 på emnenivå og programnivå, totaler for skjerming, 208 for emnenavn) pluss
+`data/nmbu/kilder/347_1173_*.json` for studieprogramnavn, nivå og fakultet. Visning:
+`NmbuCourseExplorer.tsx`, kort nederst på NMBU-forsiden. Kjør skriptet på nytt etter
+`build-faculty.sh landsam --refresh` (som fornyer cachen for 1173).
+
 Generatorene skriver alltid en `.json`-tvilling ved siden av `.ts`. Genererte filer skal aldri
 redigeres for hånd; endre input-filen og kjør på nytt.
 

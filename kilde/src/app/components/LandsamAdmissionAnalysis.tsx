@@ -67,7 +67,8 @@ function getVal(data: FullYearData, metric: MetricKey): number | null {
     if (data.pg_fv === 0 || data.pg_ord === 0) return null;
     return (data.pg_fv + data.pg_ord) / 2;
   }
-  return data[metric as keyof FullYearData] as number | null;
+  const v = data[metric as keyof FullYearData];
+  return v === undefined ? null : (v as number | null);
 }
 
 const LEVEL_LABEL: Record<LandsamLevel, string> = {
