@@ -4,7 +4,7 @@ Skrevet 23.09.2026, oppdatert samme kveld. Repoet ligger privat på GitHub
 (`VirtualAiCorp/NMBU-sammenligning`); Cloudflare Pages bygger automatisk ved hver push til `main`.
 
 **Besluttet 23.09:** ett åpent nettsted, `nmbu-sammenligning.pages.dev`, uten innlogging, siden alt er
-offentlig statistikk. Handelshøyskolen er med, bak passordsperren i appen (`VITE_HH_PASSORD`).
+offentlig statistikk. Handelshøyskolen er med og åpen; bare fanen «Emner + masteroppgave (NMBU)» med studentnivådata ligger bak passordsperren i appen (`VITE_HH_PASSORD`).
 Sperren er en visningssperre, ikke sikkerhet: HH-dataene ligger i den bygde JavaScript-en.
 Det alternative oppsettet med to nettsteder og Cloudflare Access står under som reserve.
 

@@ -278,7 +278,6 @@ export default function App() {
   // Landing / program picker
   if (programLevel === null) {
     return (
-      <PasswordGate storageKey="hh-unlocked" title="Handelshøyskolen NMBU" onBack={() => setFaculty(null)}>
       <div className="min-h-screen flex flex-col items-center justify-center p-6" style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
         <div className="max-w-3xl w-full">
           <div className="flex items-center gap-2 mb-6">
@@ -466,7 +465,6 @@ export default function App() {
           </div>
         </div>
       </div>
-      </PasswordGate>
     );
   }
 
@@ -600,7 +598,12 @@ export default function App() {
 
             {masterViewMode === 'masteroppgave' && <MasterView />}
             {masterViewMode === 'sammenligning' && <MasterComparisonChart />}
-            {masterViewMode === 'nmbu-emner' && <NMBUMasterAnalysis />}
+            {masterViewMode === 'nmbu-emner' && (
+              <PasswordGate storageKey="hh-studentdata-unlocked" title="Emner + masteroppgave (NMBU)" compact
+                intro="Denne fanen viser karakterer på studentnivå (anonymiserte løpenummer) og er passordbeskyttet. Resten av nettstedet er åpent.">
+                <NMBUMasterAnalysis />
+              </PasswordGate>
+            )}
           </>
         )}
 

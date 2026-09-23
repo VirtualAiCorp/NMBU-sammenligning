@@ -4,7 +4,8 @@ import { Lock } from 'lucide-react';
 /**
  * Enkel passordsperre foran en del av appen. Passordet settes i kilde/.env.local
  * som VITE_HH_PASSORD (standard «nmbu» hvis ikke satt). Låst opp for fanen
- * (sessionStorage) til fanen lukkes.
+ * (sessionStorage) til fanen lukkes. Med `compact` rendres sperren som et kort
+ * inne i siden (uten fullskjerm og tilbakeknapp), f.eks. rundt én fane.
  *
  * Merk: dette er en visningssperre for intern demo. Innholdet ligger fortsatt i
  * den bygde JavaScript-en, så sperren beskytter ikke mot noen som leser kildekoden.
@@ -18,11 +19,13 @@ function isUnlocked(key: string): boolean {
 interface Props {
   storageKey: string;
   title: string;
-  onBack: () => void;
+  onBack?: () => void;
+  compact?: boolean;
+  intro?: string;
   children: ReactNode;
 }
 
-export function PasswordGate({ storageKey, title, onBack, children }: Props) {
+export function PasswordGate({ storageKey, title, onBack, compact = false, intro, children }: Props) {
   const [unlocked, setUnlocked] = useState(() => isUnlocked(storageKey));
   const [value, setValue] = useState('');
   const [error, setError] = useState(false);
@@ -41,17 +44,20 @@ export function PasswordGate({ storageKey, title, onBack, children }: Props) {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-6" style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
+    <div className={compact ? 'flex flex-col items-center py-10' : 'min-h-screen flex flex-col items-center justify-center p-6'}
+      style={compact ? undefined : { backgroundColor: 'var(--nmbu-beige-light)' }}>
       <div className="w-full" style={{ maxWidth: 420 }}>
-        <div className="flex items-center gap-2 mb-6">
-          <button
-            onClick={onBack}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs transition-all"
-            style={{ backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)' }}
-          >
-            ← Fakulteter
-          </button>
-        </div>
+        {onBack && (
+          <div className="flex items-center gap-2 mb-6">
+            <button
+              onClick={onBack}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs transition-all"
+              style={{ backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)' }}
+            >
+              ← Fakulteter
+            </button>
+          </div>
+        )}
         <form
           onSubmit={submit}
           className="rounded-2xl p-8"
@@ -64,7 +70,7 @@ export function PasswordGate({ storageKey, title, onBack, children }: Props) {
             <div style={{ fontFamily: "'Lora', serif", fontWeight: 500, fontSize: '20px', color: 'var(--nmbu-green-dark)' }}>{title}</div>
           </div>
           <p className="mb-4" style={{ fontSize: '13px', color: 'var(--nmbu-neutral-2)', lineHeight: 1.5 }}>
-            Denne delen er passordbeskyttet. Skriv inn passordet for å fortsette.
+            {intro ?? 'Denne delen er passordbeskyttet. Skriv inn passordet for å fortsette.'}
           </p>
           <input
             type="password"
