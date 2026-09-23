@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
-import { Search } from 'lucide-react';
+import { Search, ExternalLink } from 'lucide-react';
+import { emneUrl } from '../data/emneUrl';
 import { ALLE, GradeCells, LETTERS, StackedBar, nf, sumPacked, type Packed, type Stats } from './NmbuCourseExplorer';
 
 /**
@@ -218,7 +219,7 @@ export function NmbuNationalCompare({ course, year, visAntall, whole }: {
             <tbody>
               <tr style={{ borderBottom: '1px solid var(--nmbu-neutral-3)', backgroundColor: 'var(--nmbu-green-4)' }}>
                 <td className="px-3 py-2" style={{ fontWeight: 700, color: 'var(--nmbu-green-dark)' }}>NMBU</td>
-                <td className="px-3 py-2"><div style={{ fontWeight: 700, color: 'var(--nmbu-green-dark)' }}>{course.kode}</div><div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)' }}>{course.navn}</div></td>
+                <td className="px-3 py-2"><div style={{ fontWeight: 700, color: 'var(--nmbu-green-dark)' }}>{emneUrl('1173', course.kode) ? <a href={emneUrl('1173', course.kode)!} target="_blank" rel="noreferrer" style={{ textDecoration: 'underline' }}>{course.kode}</a> : course.kode}</div><div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)' }}>{course.navn}</div></td>
                 <td className="px-3 py-2 text-right">{course.sp != null ? nf(course.sp, 0) : '–'}</td>
                 <td className="px-3 py-2 text-right" style={{ fontWeight: 700 }}>{whole.total.toLocaleString('nb-NO')}</td>
                 <td className="px-3 py-2 text-right" style={{ fontWeight: 700 }}>{whole.snitt != null ? nf(whole.snitt, 2) : '–'}</td>
@@ -230,7 +231,11 @@ export function NmbuNationalCompare({ course, year, visAntall, whole }: {
                 <tr key={`${c.inst}|${c.kode}`} style={{ borderBottom: '1px solid var(--nmbu-beige-light)' }}>
                   <td className="px-3 py-2" style={{ fontWeight: 600, whiteSpace: 'nowrap' }} title={meta?.institusjoner[c.inst]?.navn}>{meta?.institusjoner[c.inst]?.kort ?? c.inst}</td>
                   <td className="px-3 py-2">
-                    <div style={{ fontWeight: 600, color: 'var(--nmbu-neutral-1)' }}>{c.kode}</div>
+                    <div style={{ fontWeight: 600, color: 'var(--nmbu-neutral-1)' }}>
+                      {emneUrl(c.inst, c.kode)
+                        ? <a href={emneUrl(c.inst, c.kode)!} target="_blank" rel="noreferrer" title="Emnebeskrivelse hos institusjonen" className="inline-flex items-center gap-1" style={{ color: 'var(--nmbu-green-dark)', textDecoration: 'underline' }}>{c.kode} <ExternalLink className="w-3 h-3" /></a>
+                        : c.kode}
+                    </div>
                     <div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)' }}>{c.navn}{c.nus && c.nus !== nus ? ` · NUS ${c.nus}` : ''}</div>
                   </td>
                   <td className="px-3 py-2 text-right">{c.sp != null ? nf(c.sp, 0) : '–'}</td>

@@ -1,0 +1,284 @@
+{
+  "hentet": "2026-09-23",
+  "institusjoner": {
+    "1110": {
+      "kort": "UiO",
+      "monster": null,
+      "kodeform": null,
+      "strip": null,
+      "type": null,
+      "testet": 0,
+      "treff": 0,
+      "eksempler": [],
+      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+    },
+    "1120": {
+      "kort": "UiB",
+      "monster": "https://www4.uib.no/emner/{kode}",
+      "kodeform": "upper",
+      "strip": [
+        "-\\d+$",
+        "-0$"
+      ],
+      "type": "direkte",
+      "testet": 5,
+      "treff": 5,
+      "eksempler": [
+        "https://www4.uib.no/emner/DIGI100",
+        "https://www4.uib.no/emner/INF100"
+      ],
+      "merknad": ""
+    },
+    "1130": {
+      "kort": "UiT",
+      "monster": null,
+      "kodeform": null,
+      "strip": null,
+      "type": null,
+      "testet": 0,
+      "treff": 0,
+      "eksempler": [],
+      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+    },
+    "1150": {
+      "kort": "NTNU",
+      "monster": "https://www.ntnu.no/studier/emner/{kode}",
+      "kodeform": "upper",
+      "strip": [
+        "-\\d+$"
+      ],
+      "type": "direkte",
+      "testet": 5,
+      "treff": 5,
+      "eksempler": [
+        "https://www.ntnu.no/studier/emner/EXPH0300",
+        "https://www.ntnu.no/studier/emner/TDT4110"
+      ],
+      "merknad": ""
+    },
+    "1160": {
+      "kort": "UiS",
+      "monster": "https://www.uis.no/course/{kode}",
+      "kodeform": "lower",
+      "strip": [
+        "-\\d+$"
+      ],
+      "type": "direkte",
+      "testet": 5,
+      "treff": 5,
+      "eksempler": [
+        "https://www.uis.no/course/mat100",
+        "https://www.uis.no/course/dat120"
+      ],
+      "merknad": ""
+    },
+    "1171": {
+      "kort": "UiA",
+      "monster": null,
+      "kodeform": null,
+      "strip": null,
+      "type": null,
+      "testet": 0,
+      "treff": 0,
+      "eksempler": [],
+      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+    },
+    "1173": {
+      "kort": "NMBU",
+      "monster": "https://www.nmbu.no/emne/{kode}",
+      "kodeform": "lower",
+      "strip": [
+        "-\\d+$"
+      ],
+      "type": "direkte",
+      "testet": 5,
+      "treff": 5,
+      "eksempler": [
+        "https://www.nmbu.no/emne/stat100",
+        "https://www.nmbu.no/emne/aos229-b"
+      ],
+      "merknad": ""
+    },
+    "1175": {
+      "kort": "OsloMet",
+      "monster": null,
+      "kodeform": null,
+      "strip": null,
+      "type": null,
+      "testet": 0,
+      "treff": 0,
+      "eksempler": [],
+      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+    },
+    "1176": {
+      "kort": "USN",
+      "monster": null,
+      "kodeform": null,
+      "strip": null,
+      "type": null,
+      "testet": 0,
+      "treff": 0,
+      "eksempler": [],
+      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+    },
+    "1177": {
+      "kort": "INN",
+      "monster": null,
+      "kodeform": null,
+      "strip": null,
+      "type": null,
+      "testet": 0,
+      "treff": 0,
+      "eksempler": [],
+      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+    },
+    "1220": {
+      "kort": "AHO",
+      "monster": null,
+      "kodeform": null,
+      "strip": null,
+      "type": null,
+      "testet": 0,
+      "treff": 0,
+      "eksempler": [],
+      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+    },
+    "1240": {
+      "kort": "NHH",
+      "monster": null,
+      "kodeform": null,
+      "strip": null,
+      "type": null,
+      "testet": 0,
+      "treff": 0,
+      "eksempler": [],
+      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+    },
+    "1260": {
+      "kort": "NIH",
+      "monster": null,
+      "kodeform": null,
+      "strip": null,
+      "type": null,
+      "testet": 0,
+      "treff": 0,
+      "eksempler": [],
+      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+    },
+    "1407": {
+      "kort": "Oslo Nye",
+      "monster": null,
+      "kodeform": null,
+      "strip": null,
+      "type": null,
+      "testet": 0,
+      "treff": 0,
+      "eksempler": [],
+      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+    },
+    "8202": {
+      "kort": "LDH",
+      "monster": null,
+      "kodeform": null,
+      "strip": null,
+      "type": null,
+      "testet": 0,
+      "treff": 0,
+      "eksempler": [],
+      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+    },
+    "8208": {
+      "kort": "VID",
+      "monster": null,
+      "kodeform": null,
+      "strip": null,
+      "type": null,
+      "testet": 0,
+      "treff": 0,
+      "eksempler": [],
+      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+    },
+    "8223": {
+      "kort": "NLA",
+      "monster": null,
+      "kodeform": null,
+      "strip": null,
+      "type": null,
+      "testet": 0,
+      "treff": 0,
+      "eksempler": [],
+      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+    },
+    "8241": {
+      "kort": "BI",
+      "monster": null,
+      "kodeform": null,
+      "strip": null,
+      "type": null,
+      "testet": 0,
+      "treff": 0,
+      "eksempler": [],
+      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+    },
+    "8253": {
+      "kort": "Kristiania",
+      "monster": null,
+      "kodeform": null,
+      "strip": null,
+      "type": null,
+      "testet": 0,
+      "treff": 0,
+      "eksempler": [],
+      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+    },
+    "0232": {
+      "kort": "HiMolde",
+      "monster": null,
+      "kodeform": null,
+      "strip": null,
+      "type": null,
+      "testet": 0,
+      "treff": 0,
+      "eksempler": [],
+      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+    },
+    "0236": {
+      "kort": "HVO",
+      "monster": "https://www.hivolda.no/emne/{kode}",
+      "kodeform": "lower",
+      "strip": [
+        "-\\d+$"
+      ],
+      "type": "direkte",
+      "testet": 5,
+      "treff": 5,
+      "eksempler": [
+        "https://www.hivolda.no/emne/rel151n",
+        "https://www.hivolda.no/emne/afpth101"
+      ],
+      "merknad": ""
+    },
+    "0238": {
+      "kort": "HVL",
+      "monster": null,
+      "kodeform": null,
+      "strip": null,
+      "type": null,
+      "testet": 0,
+      "treff": 0,
+      "eksempler": [],
+      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+    },
+    "0256": {
+      "kort": "HiØ",
+      "monster": null,
+      "kodeform": null,
+      "strip": null,
+      "type": null,
+      "testet": 0,
+      "treff": 0,
+      "eksempler": [],
+      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+    }
+  }
+}

@@ -16,6 +16,7 @@ import {
   type PlanCourse, type PlanSpecialisation, type ProgramStudyPlan,
 } from '../data/landsamStudyPlanData';
 import type { LandsamLevel } from '../data/landsamAdmissionData';
+import { emneUrl } from '../data/emneUrl';
 import type { FullAdmissionEntry } from '../data/fullAdmissionData';
 import { INGEN_DATA_TEKST, type FacultyData } from '../data/faculties';
 import { FacultyContext, useFaculty, useFacultyColor } from '../data/facultyContext';
@@ -1274,7 +1275,11 @@ function EmneTable({
                     ? <ChevronDown className="w-4 h-4 shrink-0" style={{ color: 'var(--nmbu-green)' }} />
                     : <ChevronRight className="w-4 h-4 shrink-0" style={{ color: 'var(--nmbu-neutral-2)' }} />}
                 </td>
-                <td className="px-3 py-2.5 font-mono whitespace-nowrap" style={{ color: 'var(--nmbu-neutral-1)', fontWeight: 600 }}>{c.emnekode}</td>
+                <td className="px-3 py-2.5 font-mono whitespace-nowrap" style={{ color: 'var(--nmbu-neutral-1)', fontWeight: 600 }}>
+                  {emneUrl(program.dbhInstitusjonskode, c.emnekode)
+                    ? <a href={emneUrl(program.dbhInstitusjonskode, c.emnekode)!} target="_blank" rel="noreferrer" title="Emnebeskrivelse hos institusjonen" style={{ color: 'var(--nmbu-green-dark)', textDecoration: 'underline' }}>{c.emnekode}</a>
+                    : c.emnekode}
+                </td>
                 <td className="px-3 py-2.5">
                   {c.emnenavn
                     ? <span style={{ color: 'var(--nmbu-neutral)' }}>{c.emnenavn}</span>

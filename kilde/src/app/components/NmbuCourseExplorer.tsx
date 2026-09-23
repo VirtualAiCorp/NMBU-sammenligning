@@ -1,6 +1,7 @@
 import { Fragment, useEffect, useMemo, useState } from 'react';
 import { Search, Info, ExternalLink } from 'lucide-react';
 import { NmbuNationalCompare } from './NmbuNationalCompare';
+import { emneUrl } from '../data/emneUrl';
 
 /**
  * Alle emner ved NMBU: karakterfordeling for hele emnet og per studieprogram
@@ -243,6 +244,12 @@ export function NmbuCourseExplorer({ onBack }: { onBack: () => void }) {
                 </div>
                 <h2 style={{ fontFamily: "'Lora', serif", fontWeight: 500, fontSize: '1.4rem', color: 'var(--nmbu-green-dark)', marginTop: 4 }}>
                   {course.kode} · {course.navn}
+                  {emneUrl('1173', course.kode) && (
+                    <a href={emneUrl('1173', course.kode)!} target="_blank" rel="noreferrer" title="Emnebeskrivelse hos NMBU"
+                      className="inline-flex items-center gap-1 ml-3 align-middle" style={{ fontSize: 12, fontFamily: 'inherit', fontWeight: 500, color: 'var(--nmbu-green-dark)', textDecoration: 'underline' }}>
+                      <ExternalLink className="w-3.5 h-3.5" /> Emnebeskrivelse
+                    </a>
+                  )}
                 </h2>
                 <div style={{ fontSize: 12, color: 'var(--nmbu-neutral-2)', marginTop: 2 }}>
                   Hele emnet · {year === ALLE ? `${data!.years[0]}–${data!.years[data!.years.length - 1]}` : year}
