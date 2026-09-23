@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Search, Info, ExternalLink } from 'lucide-react';
+import { NmbuNationalCompare } from './NmbuNationalCompare';
 
 /**
  * Alle emner ved NMBU: karakterfordeling for hele emnet og per studieprogram
@@ -7,9 +8,9 @@ import { Search, Info, ExternalLink } from 'lucide-react';
  * (scripts/build-nmbu-courses.py, DBH tabell 308/208/347).
  */
 
-type Packed = number[]; // [A,B,C,D,E,F,G,H,total,skjult]
+export type Packed = number[]; // [A,B,C,D,E,F,G,H,total,skjult]
 interface CourseRow {
-  kode: string; navn: string; studiepoeng: number | null; nivaa: string | null; fakultet: string | null;
+  kode: string; navn: string; studiepoeng: number | null; nivaa: string | null; nus?: string | null; fakultet: string | null;
   years: Record<string, Packed>;
   programs: Record<string, Record<string, Packed>>;
 }
@@ -19,20 +20,20 @@ interface Dataset {
   courses: CourseRow[];
 }
 
-const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'] as const;
-const GRADE_COLORS: Record<string, string> = {
+export const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'] as const;
+export const GRADE_COLORS: Record<string, string> = {
   A: '#025c4f', B: '#2ea87e', C: '#c2963a', D: '#c17a3a', E: '#e05c2a', F: '#c13a5a',
 };
 const POINTS: Record<string, number> = { A: 5, B: 4, C: 3, D: 2, E: 1, F: 0 };
-const ALLE = 'alle';
+export const ALLE = 'alle';
 
-function nf(v: number, dec = 1): string {
+export function nf(v: number, dec = 1): string {
   return v.toLocaleString('nb-NO', { minimumFractionDigits: dec, maximumFractionDigits: dec });
 }
 
-interface Stats { counts: Record<string, number>; letters: number; G: number; H: number; total: number; skjult: number; snitt: number | null; stryk: number | null; }
+export interface Stats { counts: Record<string, number>; letters: number; G: number; H: number; total: number; skjult: number; snitt: number | null; stryk: number | null; }
 
-function sumPacked(byYear: Record<string, Packed> | undefined, year: string): Stats {
+export function sumPacked(byYear: Record<string, Packed> | undefined, year: string): Stats {
   const counts: Record<string, number> = { A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0 };
   let total = 0, skjult = 0;
   if (byYear) {
@@ -48,7 +49,7 @@ function sumPacked(byYear: Record<string, Packed> | undefined, year: string): St
   return { counts, letters, G: counts.G, H: counts.H, total, skjult, snitt, stryk };
 }
 
-function StackedBar({ s, height = 10 }: { s: Stats; height?: number }) {
+export function StackedBar({ s, height = 10 }: { s: Stats; height?: number }) {
   if (!s.letters) return <div className="rounded-full" style={{ height, backgroundColor: 'var(--nmbu-neutral-3)', opacity: 0.4 }} />;
   return (
     <div className="flex rounded-full overflow-hidden" style={{ height, backgroundColor: 'var(--nmbu-neutral-3)' }}>
@@ -60,7 +61,7 @@ function StackedBar({ s, height = 10 }: { s: Stats; height?: number }) {
   );
 }
 
-function GradeCells({ s, bold = false }: { s: Stats; bold?: boolean }) {
+export function GradeCells({ s, bold = false }: { s: Stats; bold?: boolean }) {
   return (
     <>
       {LETTERS.map((g) => {
@@ -94,6 +95,7 @@ export function NmbuCourseExplorer({ onBack }: { onBack: () => void }) {
   const [year, setYear] = useState<string>(ALLE);
   const [selected, setSelected] = useState<string | null>(null);
   const [visAntall, setVisAntall] = useState(false);
+  const [visning, setVisning] = useState<'program' | 'nasjonalt'>('program');
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}nmbu-emner.json`)
@@ -258,17 +260,28 @@ export function NmbuCourseExplorer({ onBack }: { onBack: () => void }) {
                   </div>
                 </div>
 
-                {/* Per studieprogram */}
+                {/* Visningsvalg: per studieprogram / andre studiesteder */}
                 <div className="mt-7 flex items-center justify-between gap-3 flex-wrap">
-                  <h3 style={{ fontFamily: "'Lora', serif", fontWeight: 500, fontSize: '1.1rem', color: 'var(--nmbu-green-dark)' }}>Per studieprogram</h3>
+                  <div className="flex rounded-lg overflow-hidden" style={{ border: '1px solid var(--nmbu-neutral-3)' }}>
+                    {([['program', 'Per studieprogram'], ['nasjonalt', 'Sammenlignbare emner ved andre studiesteder']] as const).map(([id, label]) => (
+                      <button key={id} onClick={() => setVisning(id)} className="px-3 py-1.5 text-xs font-medium transition-all"
+                        style={{ backgroundColor: visning === id ? 'var(--nmbu-green-dark)' : '#fff', color: visning === id ? '#fff' : 'var(--nmbu-neutral-1)' }}>
+                        {label}
+                      </button>
+                    ))}
+                  </div>
                   <div className="flex items-center gap-4">
                     <label className="flex items-center gap-1.5 cursor-pointer select-none" style={{ fontSize: 12, color: 'var(--nmbu-neutral-1)' }}>
                       <input type="checkbox" checked={visAntall} onChange={(e) => setVisAntall(e.target.checked)} style={{ accentColor: 'var(--nmbu-green-dark)' }} />
                       Vis antall og prosent per karakter
                     </label>
-                    <span style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)' }}>{programRows.length} program med studenter på emnet</span>
+                    {visning === 'program' && <span style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)' }}>{programRows.length} program med studenter på emnet</span>}
                   </div>
                 </div>
+                {visning === 'nasjonalt' && (
+                  <NmbuNationalCompare course={{ kode: course.kode, navn: course.navn, nus: course.nus ?? null, sp: course.studiepoeng }} year={year} visAntall={visAntall} whole={whole} />
+                )}
+                {visning === 'program' && (<>
                 <div className="overflow-x-auto mt-2">
                   <table className="w-full border-collapse text-xs">
                     <thead>
@@ -319,6 +332,7 @@ export function NmbuCourseExplorer({ onBack }: { onBack: () => void }) {
                   </table>
                 </div>
 
+                </>)}
                 <div className="flex items-start gap-2 text-xs rounded-lg px-4 py-3 mt-5"
                   style={{ backgroundColor: 'var(--nmbu-beige-light)', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-2)' }}>
                   <Info className="w-3.5 h-3.5 shrink-0 mt-0.5" />

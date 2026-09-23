@@ -76,7 +76,7 @@ def main():
         d[r["Årstall"]] = d.get(r["Årstall"], 0) + n(r)
 
     # Emnenavn, studiepoeng, nivå (siste år vinner)
-    names, sp, nivaa, course_fac = {}, {}, {}, collections.defaultdict(collections.Counter)
+    names, sp, nivaa, nus_by, course_fac = {}, {}, {}, {}, collections.defaultdict(collections.Counter)
     for r in sorted(rows(C("208")), key=lambda r: (r.get("Årstall", ""), r.get("Semester", ""))):
         k = r["Emnekode"]
         if r.get("Emnenavn"):
@@ -88,6 +88,8 @@ def main():
                 pass
         if r.get("Nivånavn"):
             nivaa[k] = r["Nivånavn"]
+        if r.get("NUS-kode"):
+            nus_by[k] = r["NUS-kode"]
         if r.get("Avdelingsnavn") and "uspesifisert" not in r["Avdelingsnavn"]:
             course_fac[k][r["Avdelingsnavn"]] += 1
 
@@ -129,7 +131,7 @@ def main():
                 progs[pk] = py
         fac = course_fac[k].most_common(1)[0][0] if course_fac.get(k) else None
         out_courses.append({"kode": k, "navn": names.get(k, ""), "studiepoeng": sp.get(k), "nivaa": nivaa.get(k),
-                            "fakultet": fac, "years": yrs, "programs": progs})
+                            "nus": nus_by.get(k), "fakultet": fac, "years": yrs, "programs": progs})
 
     used = {pk for c in out_courses for pk in c["programs"]}
     out = {"generert": dt.date.today().isoformat(), "kilde": "DBH/HKDIR tabell 308 (karakterer), 208 (emner), 347 (studieprogram); institusjon 1173",

@@ -41,6 +41,16 @@ I tillegg, på tvers av fakultetene: **Alle emner ved NMBU** (`scripts/build-nmb
 Generatorene skriver alltid en `.json`-tvilling ved siden av `.ts`. Genererte filer skal aldri
 redigeres for hånd; endre input-filen og kjør på nytt.
 
+**Sammenlignbare emner ved andre studiesteder** (23.09 kveld): `scripts/build-national-courses.py` henter
+208 + 308 (emnenivå) for 24 institusjoner (≈43 000 emner, 2021–2025) til `kilde/public/emner/`:
+`meta.json` (institusjoner, NUS-navn fra SSB Klass 36), `index.json` (søkeindeks, 3,4 MB) og
+`nus/<xxx>.json` (karakterer per NUS-fagfelt, siffer 2–4 i NUS-koden). Visningen
+`NmbuNationalCompare.tsx` (fane i «Alle emner ved NMBU») viser emner i samme fagfelt rangert etter
+navnelikhet (norsk/engelsk synonymliste) og størrelse, med institusjonsfilter og fritekstsøk i hele
+registeret. Agentkuraterte koblinger legges i `data/nmbu/sammenlignbare/<emnekode>.json`
+(oppgaveliste `_oppgaver.json`, søkehjelp `scripts/sok-nasjonale-emner.py`) og bygges med
+`scripts/build-curated-courses.py` til `emner/kuratert.json`; de vises først i tabellen.
+
 ## 3. Appen
 
 - `kilde/src/app/data/faculties.ts` er registeret: ett `FacultyData`-objekt per fakultet med alle
