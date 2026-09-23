@@ -337,3 +337,19 @@ Knappen «Oppsett» øverst til høyre (ved siden av lys/mørk, `TopRightControl
   `AppShells.tsx`. HH-delen er uendret, bare pakket inn i `renderHH()` så den kan vises i alle rammene.
 - Nye moduler legges inn ett sted (tabellen i App.tsx og `FAKULTETSMODULER` i AppShells.tsx) og vises da i alle tre oppsett.
 - Kjent: fakultetenes landingsside og HH-sidene har fortsatt sin egen tilbakeknapp og smale bredde inne i de nye rammene.
+
+## 20. Inntekt per program (anslått resultatbasert finansiering)
+
+Ny fakultetsmodul «Inntekt» (alle tre oppsett, og kort på fakultetets oversiktsside). Per program og år (produksjon 2023–2025):
+anslått inntekt, per registrert student, studiepoeng per student, fra studiepoeng, fra fullførte grader, studentårsverk,
+fullførte grader og snittsats per 60 sp, NMBU mot konkurrentene med median.
+- **Skript:** `scripts/build-revenue.py [--refresh]` → `kilde/src/app/data/revenueData.ts/.json`; kjøres etter `build-completion.py`.
+  Cache `data/nmbu/kilder/dbh-finansiering/`.
+- **Modell (finansieringssystemet fra 2025):** egenfinansierte studiepoeng (DBH 900, «Ny produksjon egentfin», per studentens
+  program og emnets kategori) × sats for kategori 1/2/3, pluss kandidater (DBH 104) × sats for fullført gradsprogram (G3).
+  Satser fra DBH 908: 2025 = 56 600 / 84 900 / 198 150 per 60 sp og 51 900 per grad; 2026 = 58 650 / 87 950 / 205 300 og 53 750.
+  Produksjon i år Y utløses i budsjett Y + 2; for 2025-produksjon brukes 2026-satser (merket foreløpig).
+- DBH har omkodet studiepoengproduksjonen fra 2023 til kategoriene 1–3; 2021–2022 ligger i gamle A–F og er ikke med.
+- **Tilnærminger:** DBH har ingen tabell for G3 ennå (907 slutter med gamle kandidatindikator i 2022), så ferdige kandidater
+  brukes. Studiepoeng tilskrives studentens program uansett emneeier. Doktorgrad, EU, NFR og basis er ikke med.
+- Emnets kategori er brukt (ikke studentens); forskjellen i totalene er liten (NMBU 2025: kategori 1 = 2 277 mot 2 216 årsverk).

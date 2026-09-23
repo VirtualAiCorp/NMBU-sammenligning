@@ -29,6 +29,7 @@ import { StaffComparison } from './components/StaffComparison';
 import { StudiestedBolig } from './components/StudiestedBolig';
 import { EconomyComparison } from './components/EconomyComparison';
 import { LayoutLab } from './components/LayoutLab';
+import { FacultyRevenue } from './components/FacultyRevenue';
 import { ECON_UNITS } from './data/economyData';
 import { STAFF_INSTITUTIONS, STAFF_FACULTIES, STAFF_NMBU_FACULTIES } from './data/staffData';
 import { FACULTIES, type FacultyData, type FacultyId } from './data/faculties';
@@ -39,7 +40,7 @@ import { BookOpen, Table2, BarChart2, Star, Scale, Map, GraduationCap, GalleryVe
 type ProgramLevel = 'bachelor' | 'master' | 'opptak2026' | 'markedsstatus';
 type ViewMode = 'course' | 'mapping' | 'admission' | 'karakterindeks' | 'studiebarometer' | 'map' | 'firstyear' | 'online';
 type MasterViewMode = 'masteroppgave' | 'sammenligning' | 'nmbu-emner';
-type FacultyView = 'landing' | 'analyse' | 'emner' | 'markedsstatus' | 'studiebarometer' | 'gjennomforing' | 'studentene' | 'fagmiljo' | 'bolig' | 'okonomi';
+type FacultyView = 'landing' | 'analyse' | 'emner' | 'markedsstatus' | 'studiebarometer' | 'gjennomforing' | 'studentene' | 'fagmiljo' | 'bolig' | 'okonomi' | 'inntekt';
 
 export default function App() {
   const [faculty, setFaculty] = useState<Faculty | null>(null);
@@ -112,6 +113,7 @@ export default function App() {
     markedsstatus: { title: 'Markedsstatus', subtitle: 'Status og utvikling hos konkurrerende institusjoner · Kilde: styrepapirer og årsrapporter' },
     fagmiljo: { title: 'Fagmiljøet: tilsatte og publisering', subtitle: 'Studentårsverk per faglig årsverk, førstestillinger og publisering, fakultet mot fakultet · Kilde: DBH/HK-dir' },
     bolig: { title: 'Bolig og studentboliger', subtitle: 'Studentboliger, kjøpspriser og leiepriser ved NMBU og konkurrentenes studiesteder · Kilde: NSO og SSB' },
+    inntekt: { title: 'Inntekt per program', subtitle: 'Anslått resultatbasert finansiering fra studiepoeng og fullførte grader, NMBU mot konkurrentene · Kilde: DBH/HK-dir tabell 900, 908 og 104' },
     okonomi: { title: 'Økonomi og styringsindikatorer', subtitle: 'NMBU mot institusjonene i fakultetets sammenligninger · Kilde: DBH/HK-dir tabell 902 og 750' },
   };
   const facultyModuleBody = (fac: FacultyData, view: Exclude<FacultyView, 'landing'>): ReactNode => {
@@ -120,6 +122,7 @@ export default function App() {
       case 'emner': return <LandsamCourseAnalysis key={`${fac.id}-${facultyCourseGroup ?? 'alle'}`} faculty={fac} initialGroup={facultyCourseGroup} />;
       case 'gjennomforing': return <FacultyCompletion key={fac.id} faculty={fac} />;
       case 'studentene': return <FacultyStudents key={fac.id} faculty={fac} />;
+      case 'inntekt': return <FacultyRevenue key={fac.id} faculty={fac} />;
       case 'studiebarometer': return <FacultyStudiebarometer key={fac.id} faculty={fac} />;
       case 'markedsstatus': return <FacultyMarketStatus key={fac.id} faculty={fac} />;
       case 'bolig': return <StudiestedBolig key={fac.id} steder={[...new Set(fac.admissionGroups.flatMap((g) => g.entries.map((e) => e.studiested)).filter(Boolean))]} />;
@@ -177,6 +180,7 @@ export default function App() {
       onOpenStaff={() => setFacultyView('fagmiljo')}
       onOpenHousing={() => setFacultyView('bolig')}
       onOpenEconomy={() => setFacultyView('okonomi')}
+      onOpenRevenue={() => setFacultyView('inntekt')}
       onBackToFaculties={goHome}
     />
   );

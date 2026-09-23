@@ -1,7 +1,7 @@
 import { useState, type ReactNode } from 'react';
 import {
   LayoutDashboard, BookOpen, Microscope, Home, Landmark, TrendingUp, GraduationCap, Users, Star, Globe2,
-  LayoutGrid, Menu, X,
+  LayoutGrid, Menu, X, Coins,
 } from 'lucide-react';
 import { FACULTIES, FACULTY_IDS, type FacultyId } from '../data/faculties';
 import type { Faculty } from './FacultyLanding';
@@ -12,7 +12,7 @@ import { Matrise, lagRader } from './LayoutLab';
  * som i «oversikt»; App.tsx leverer dem som children. Navigasjonen går via onNavigate(fakultet, visning).
  */
 
-export type ShellView = 'landing' | 'analyse' | 'emner' | 'markedsstatus' | 'studiebarometer' | 'gjennomforing' | 'studentene' | 'fagmiljo' | 'bolig' | 'okonomi';
+export type ShellView = 'landing' | 'analyse' | 'emner' | 'markedsstatus' | 'studiebarometer' | 'gjennomforing' | 'studentene' | 'fagmiljo' | 'bolig' | 'okonomi' | 'inntekt';
 type Nav = (f: Faculty | null, view?: ShellView, gruppe?: string) => void;
 
 export const FAKULTETSMODULER: { view: ShellView; label: string; icon: typeof BookOpen }[] = [
@@ -23,6 +23,7 @@ export const FAKULTETSMODULER: { view: ShellView; label: string; icon: typeof Bo
   { view: 'studentene', label: 'Studentene', icon: Users },
   { view: 'studiebarometer', label: 'Studiebarometeret', icon: Star },
   { view: 'markedsstatus', label: 'Markedsstatus', icon: Globe2 },
+  { view: 'inntekt', label: 'Inntekt', icon: Coins },
   { view: 'fagmiljo', label: 'Fagmiljøet', icon: Microscope },
   { view: 'bolig', label: 'Bolig', icon: Home },
   { view: 'okonomi', label: 'Økonomi', icon: Landmark },
