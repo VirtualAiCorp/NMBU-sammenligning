@@ -1680,7 +1680,7 @@
       "label": "Bioteknologi (2-årig master)",
       "level": "master2",
       "desc": "Sammenligner de toårige masterne i bioteknologi og molekylærbiologi med lokalt opptak.",
-      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. DBH/HKDIR tabell 379 (lokalt opptak per studieprogram) svarte med serverfeil 22.09.2026, så søker-, kvalifiserte- og tilbudstallene mangler for alle programmene i gruppen. Studieplasser og poenggrenser er de som sto på institusjonenes egne programsider da dataene ble hentet, og gjelder siste opptak; de er ført inn på det året sidene oppgir. NMBU oppgir 45 studieplasser og poenggrense 3,0 i 2025 på programsiden. UiB oppgir 20 studieplasser på masteren i molekylærbiologi. NTNUs toårige bioteknologimaster (MSBIOTECH) er engelskspråklig, og NTNU opplyser at siste opptak var høsten 2026; programmet er tatt med som svakere sammenligning fordi det avvikles. NTNUs øvrige bioteknologiløp i Trondheim er femårige og hører hjemme i bachelorgruppen.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere» (søknadsalternativer), kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (alle søknadsalternativer uansett prioritet; kvalifiserte = søknadsalternativer merket kvalifisert); tabellen svarte med serverfeil 22.09.2026 og ble hentet på nytt 23.09.2026. DBH har ikke rapportert høstopptaket 2026 ennå, så 2026 er tomt for alle programmene. UiBs molekylærbiologimaster hadde våropptak i 2021, 2024 og 2025 i tillegg til høstopptaket; tallene for de årene er summen av vår og høst. Studieplasser og poenggrenser er de som sto på institusjonenes egne programsider da dataene ble hentet, og gjelder siste opptak; de er ført inn på det året sidene oppgir. NMBU oppgir 45 studieplasser og poenggrense 3,0 i 2025 på programsiden. UiB oppgir 20 studieplasser på masteren i molekylærbiologi. NTNUs toårige bioteknologimaster (MSBIOTECH) er engelskspråklig, og NTNU opplyser at siste opptak var høsten 2026; programmet er tatt med som svakere sammenligning fordi det avvikles. NTNUs øvrige bioteknologiløp i Trondheim er femårige og hører hjemme i bachelorgruppen.",
       "nmbuIds": [
         "nmbu_bioteknologi2"
       ],
@@ -1698,13 +1698,53 @@
           "type": "master2",
           "url": "https://www.nmbu.no/studier/master-2-aar/bioteknologi",
           "years": {
-            "2025": {
-              "alleS": null,
+            "2021": {
+              "alleS": 179,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 118,
+              "tilbud": 90,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 153,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 99,
+              "tilbud": 77,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 163,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 91,
+              "tilbud": 76,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 154,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 99,
+              "tilbud": 64,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 160,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 100,
+              "tilbud": 85,
               "pg_fv": null,
               "pg_ord": 3.0
             },
@@ -1729,6 +1769,56 @@
           "type": "master2",
           "url": "https://www.uib.no/studier/MAMN-MOL",
           "years": {
+            "2021": {
+              "alleS": 131,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 64,
+              "tilbud": 39,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 114,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 56,
+              "tilbud": 35,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 107,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 39,
+              "tilbud": 29,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 140,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 57,
+              "tilbud": 42,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 187,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 61,
+              "tilbud": 38,
+              "pg_fv": null,
+              "pg_ord": null
+            },
             "2026": {
               "alleS": null,
               "fvS": null,
@@ -1749,7 +1839,58 @@
           "studiested": "Trondheim",
           "type": "master2",
           "url": "https://www.ntnu.no/studier/msbiotech",
-          "years": {}
+          "years": {
+            "2021": {
+              "alleS": 607,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 266,
+              "tilbud": 52,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 724,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 289,
+              "tilbud": 59,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 616,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 163,
+              "tilbud": 67,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 216,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 143,
+              "tilbud": 56,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 251,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 153,
+              "tilbud": 60,
+              "pg_fv": null,
+              "pg_ord": null
+            }
+          }
         }
       ]
     },
@@ -1758,7 +1899,7 @@
       "label": "Kjemi (2-årig master)",
       "level": "master2",
       "desc": "Sammenligner de toårige masterne i kjemi med lokalt opptak.",
-      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. DBH/HKDIR tabell 379 (lokalt opptak per studieprogram) svarte med serverfeil 22.09.2026, så søker-, kvalifiserte- og tilbudstallene mangler for alle programmene i gruppen. Studieplasser og poenggrenser er de som sto på institusjonenes egne programsider da dataene ble hentet, og gjelder siste opptak; de er ført inn på det året sidene oppgir. NMBU oppgir 15 studieplasser og poenggrense 2,6 i 2025 på programsiden, og UiB oppgir 23 studieplasser. UiO publiserer ikke studieplasstall på programsiden. NTNUs toårige kjemimaster (MSCHEM) er engelskspråklig, og NTNU opplyser at siste opptak var høsten 2025; den er derfor tatt med som svakere sammenligning.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere» (søknadsalternativer), kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (alle søknadsalternativer uansett prioritet; kvalifiserte = søknadsalternativer merket kvalifisert); tabellen svarte med serverfeil 22.09.2026 og ble hentet på nytt 23.09.2026. DBH har ikke rapportert høstopptaket 2026 ennå, så 2026 er tomt for alle programmene. UiBs kjemimaster har våropptak hvert år i perioden i tillegg til høstopptaket; tallene er summen av vår og høst. Studieplasser og poenggrenser er de som sto på institusjonenes egne programsider da dataene ble hentet, og gjelder siste opptak; de er ført inn på det året sidene oppgir. NMBU oppgir 15 studieplasser og poenggrense 2,6 i 2025 på programsiden, og UiB oppgir 23 studieplasser. UiO publiserer ikke studieplasstall på programsiden. NTNUs toårige kjemimaster (MSCHEM) er engelskspråklig, og NTNU opplyser at siste opptak var høsten 2025; den er derfor tatt med som svakere sammenligning.",
       "nmbuIds": [
         "nmbu_kjemi2"
       ],
@@ -1777,13 +1918,53 @@
           "type": "master2",
           "url": "https://www.nmbu.no/studier/master-2-aar/kjemi",
           "years": {
-            "2025": {
-              "alleS": null,
+            "2021": {
+              "alleS": 55,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 42,
+              "tilbud": 27,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 90,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 41,
+              "tilbud": 26,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 80,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 37,
+              "tilbud": 21,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 39,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 22,
+              "tilbud": 13,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 48,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 29,
+              "tilbud": 26,
               "pg_fv": null,
               "pg_ord": 2.6
             },
@@ -1807,7 +1988,58 @@
           "studiested": "Oslo",
           "type": "master2",
           "url": "https://www.uio.no/studier/program/kjemi-master/",
-          "years": {}
+          "years": {
+            "2021": {
+              "alleS": 355,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 122,
+              "tilbud": 56,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 365,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 126,
+              "tilbud": 56,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 336,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 101,
+              "tilbud": 36,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 240,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 104,
+              "tilbud": 47,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 254,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 121,
+              "tilbud": 49,
+              "pg_fv": null,
+              "pg_ord": null
+            }
+          }
         },
         {
           "id": "uib_kjemi2",
@@ -1818,6 +2050,56 @@
           "type": "master2",
           "url": "https://www.uib.no/studier/MAMN-KJEM",
           "years": {
+            "2021": {
+              "alleS": 39,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 26,
+              "tilbud": 22,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 50,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 34,
+              "tilbud": 33,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 29,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 21,
+              "tilbud": 16,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 51,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 28,
+              "tilbud": 25,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 61,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 39,
+              "tilbud": 32,
+              "pg_fv": null,
+              "pg_ord": null
+            },
             "2026": {
               "alleS": null,
               "fvS": null,
@@ -1838,7 +2120,58 @@
           "studiested": "Trondheim",
           "type": "master2",
           "url": "https://www.ntnu.no/studier/mschem",
-          "years": {}
+          "years": {
+            "2021": {
+              "alleS": 197,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 73,
+              "tilbud": 31,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 207,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 60,
+              "tilbud": 27,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 192,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 46,
+              "tilbud": 29,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 65,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 29,
+              "tilbud": 14,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 93,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 50,
+              "tilbud": 25,
+              "pg_fv": null,
+              "pg_ord": null
+            }
+          }
         }
       ]
     },
@@ -1847,7 +2180,7 @@
       "label": "Mat, teknologi og helse (2-årig master)",
       "level": "master2",
       "desc": "Sammenligner de toårige masterne i matvitenskap og matteknologi med lokalt opptak.",
-      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. DBH/HKDIR tabell 379 (lokalt opptak per studieprogram) svarte med serverfeil 22.09.2026, så søker-, kvalifiserte- og tilbudstallene mangler for alle programmene i gruppen. Studieplasser og poenggrenser er de som sto på institusjonenes egne programsider da dataene ble hentet, og gjelder siste opptak; de er ført inn på det året sidene oppgir. NMBU oppgir 20 studieplasser på programsiden og publiserer ingen poenggrense. NTNUs «Matvitenskap, teknologi og bærekraft» er den eneste direkte konkurrenten; NTNU opplyser at siste opptak var høsten 2026. NMBUs toårige master i bioinformatikk og anvendt statistikk har ingen egen gruppe fordi bioinformatikk ved UiO og UiB bare tilbys som studieretning inne i informatikk- og Computational Science-masterne, uten eget opptak å sammenligne mot.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere» (søknadsalternativer), kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (alle søknadsalternativer uansett prioritet; kvalifiserte = søknadsalternativer merket kvalifisert); tabellen svarte med serverfeil 22.09.2026 og ble hentet på nytt 23.09.2026. DBH har ikke rapportert høstopptaket 2026 ennå, så 2026 er tomt for alle programmene. NMBUs kode M-MAT har i tabell 379 bare data for 2025 (35 søkere uten kvalifikasjon, 4 kvalifiserte søknadsalternativer, 0 tilbud); koden brukt før 2025 er ikke sikkert identifisert og er derfor ikke gjettet - 2021-2024 står som null. Studieplasser og poenggrenser er de som sto på institusjonenes egne programsider da dataene ble hentet, og gjelder siste opptak; de er ført inn på det året sidene oppgir. NMBU oppgir 20 studieplasser på programsiden og publiserer ingen poenggrense. NTNUs «Matvitenskap, teknologi og bærekraft» er den eneste direkte konkurrenten; NTNU opplyser at siste opptak var høsten 2026. NMBUs toårige master i bioinformatikk og anvendt statistikk har ingen egen gruppe fordi bioinformatikk ved UiO og UiB bare tilbys som studieretning inne i informatikk- og Computational Science-masterne, uten eget opptak å sammenligne mot.",
       "nmbuIds": [
         "nmbu_mat_teknologi_helse2"
       ],
@@ -1865,6 +2198,16 @@
           "type": "master2",
           "url": "https://www.nmbu.no/studier/master-2-aar/mat-teknologi-og-helse",
           "years": {
+            "2025": {
+              "alleS": 39,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 4,
+              "tilbud": 0,
+              "pg_fv": null,
+              "pg_ord": null
+            },
             "2026": {
               "alleS": null,
               "fvS": null,
@@ -1885,7 +2228,58 @@
           "studiested": "Trondheim",
           "type": "master2",
           "url": "https://www.ntnu.no/studier/ftmamat",
-          "years": {}
+          "years": {
+            "2021": {
+              "alleS": 111,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 88,
+              "tilbud": 38,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2022": {
+              "alleS": 85,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 69,
+              "tilbud": 35,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2023": {
+              "alleS": 70,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 57,
+              "tilbud": 22,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2024": {
+              "alleS": 95,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 74,
+              "tilbud": 36,
+              "pg_fv": null,
+              "pg_ord": null
+            },
+            "2025": {
+              "alleS": 78,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 60,
+              "tilbud": 20,
+              "pg_fv": null,
+              "pg_ord": null
+            }
+          }
         }
       ]
     }

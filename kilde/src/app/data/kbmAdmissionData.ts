@@ -349,7 +349,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
   {
     id: 'bioteknologi2', label: 'Bioteknologi (2-årig master)', level: 'master2',
     desc: 'Sammenligner de toårige masterne i bioteknologi og molekylærbiologi med lokalt opptak.',
-    note: 'Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. DBH/HKDIR tabell 379 (lokalt opptak per studieprogram) svarte med serverfeil 22.09.2026, så søker-, kvalifiserte- og tilbudstallene mangler for alle programmene i gruppen. Studieplasser og poenggrenser er de som sto på institusjonenes egne programsider da dataene ble hentet, og gjelder siste opptak; de er ført inn på det året sidene oppgir. NMBU oppgir 45 studieplasser og poenggrense 3,0 i 2025 på programsiden. UiB oppgir 20 studieplasser på masteren i molekylærbiologi. NTNUs toårige bioteknologimaster (MSBIOTECH) er engelskspråklig, og NTNU opplyser at siste opptak var høsten 2026; programmet er tatt med som svakere sammenligning fordi det avvikles. NTNUs øvrige bioteknologiløp i Trondheim er femårige og hører hjemme i bachelorgruppen.',
+    note: 'Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere» (søknadsalternativer), kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (alle søknadsalternativer uansett prioritet; kvalifiserte = søknadsalternativer merket kvalifisert); tabellen svarte med serverfeil 22.09.2026 og ble hentet på nytt 23.09.2026. DBH har ikke rapportert høstopptaket 2026 ennå, så 2026 er tomt for alle programmene. UiBs molekylærbiologimaster hadde våropptak i 2021, 2024 og 2025 i tillegg til høstopptaket; tallene for de årene er summen av vår og høst. Studieplasser og poenggrenser er de som sto på institusjonenes egne programsider da dataene ble hentet, og gjelder siste opptak; de er ført inn på det året sidene oppgir. NMBU oppgir 45 studieplasser og poenggrense 3,0 i 2025 på programsiden. UiB oppgir 20 studieplasser på masteren i molekylærbiologi. NTNUs toårige bioteknologimaster (MSBIOTECH) er engelskspråklig, og NTNU opplyser at siste opptak var høsten 2026; programmet er tatt med som svakere sammenligning fordi det avvikles. NTNUs øvrige bioteknologiløp i Trondheim er femårige og hører hjemme i bachelorgruppen.',
     nmbuIds: ['nmbu_bioteknologi2'], defaultIds: ['nmbu_bioteknologi2', 'uib_molekylarbiologi2'],
     entries: [
       {
@@ -357,7 +357,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Ås', type: 'master2',
         url: 'https://www.nmbu.no/studier/master-2-aar/bioteknologi',
         years: {
-          '2025': Y(null, null, null, null, null, null, null, 3.0),
+          '2021': Y(179, null, null, null, 118, 90, null, null),
+          '2022': Y(153, null, null, null, 99, 77, null, null),
+          '2023': Y(163, null, null, null, 91, 76, null, null),
+          '2024': Y(154, null, null, null, 99, 64, null, null),
+          '2025': Y(160, null, null, null, 100, 85, null, 3.0),
           '2026': Y(null, null, 45, null, null, null, null, null),
         },
       },
@@ -366,6 +370,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Bergen', type: 'master2',
         url: 'https://www.uib.no/studier/MAMN-MOL',
         years: {
+          '2021': Y(131, null, null, null, 64, 39, null, null),
+          '2022': Y(114, null, null, null, 56, 35, null, null),
+          '2023': Y(107, null, null, null, 39, 29, null, null),
+          '2024': Y(140, null, null, null, 57, 42, null, null),
+          '2025': Y(187, null, null, null, 61, 38, null, null),
           '2026': Y(null, null, 20, null, null, null, null, null),
         },
       },
@@ -374,6 +383,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Trondheim', type: 'master2',
         url: 'https://www.ntnu.no/studier/msbiotech',
         years: {
+          '2021': Y(607, null, null, null, 266, 52, null, null),
+          '2022': Y(724, null, null, null, 289, 59, null, null),
+          '2023': Y(616, null, null, null, 163, 67, null, null),
+          '2024': Y(216, null, null, null, 143, 56, null, null),
+          '2025': Y(251, null, null, null, 153, 60, null, null),
         },
       },
     ],
@@ -381,7 +395,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
   {
     id: 'kjemi2', label: 'Kjemi (2-årig master)', level: 'master2',
     desc: 'Sammenligner de toårige masterne i kjemi med lokalt opptak.',
-    note: 'Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. DBH/HKDIR tabell 379 (lokalt opptak per studieprogram) svarte med serverfeil 22.09.2026, så søker-, kvalifiserte- og tilbudstallene mangler for alle programmene i gruppen. Studieplasser og poenggrenser er de som sto på institusjonenes egne programsider da dataene ble hentet, og gjelder siste opptak; de er ført inn på det året sidene oppgir. NMBU oppgir 15 studieplasser og poenggrense 2,6 i 2025 på programsiden, og UiB oppgir 23 studieplasser. UiO publiserer ikke studieplasstall på programsiden. NTNUs toårige kjemimaster (MSCHEM) er engelskspråklig, og NTNU opplyser at siste opptak var høsten 2025; den er derfor tatt med som svakere sammenligning.',
+    note: 'Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere» (søknadsalternativer), kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (alle søknadsalternativer uansett prioritet; kvalifiserte = søknadsalternativer merket kvalifisert); tabellen svarte med serverfeil 22.09.2026 og ble hentet på nytt 23.09.2026. DBH har ikke rapportert høstopptaket 2026 ennå, så 2026 er tomt for alle programmene. UiBs kjemimaster har våropptak hvert år i perioden i tillegg til høstopptaket; tallene er summen av vår og høst. Studieplasser og poenggrenser er de som sto på institusjonenes egne programsider da dataene ble hentet, og gjelder siste opptak; de er ført inn på det året sidene oppgir. NMBU oppgir 15 studieplasser og poenggrense 2,6 i 2025 på programsiden, og UiB oppgir 23 studieplasser. UiO publiserer ikke studieplasstall på programsiden. NTNUs toårige kjemimaster (MSCHEM) er engelskspråklig, og NTNU opplyser at siste opptak var høsten 2025; den er derfor tatt med som svakere sammenligning.',
     nmbuIds: ['nmbu_kjemi2'], defaultIds: ['nmbu_kjemi2', 'uio_kjemi2', 'uib_kjemi2'],
     entries: [
       {
@@ -389,7 +403,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Ås', type: 'master2',
         url: 'https://www.nmbu.no/studier/master-2-aar/kjemi',
         years: {
-          '2025': Y(null, null, null, null, null, null, null, 2.6),
+          '2021': Y(55, null, null, null, 42, 27, null, null),
+          '2022': Y(90, null, null, null, 41, 26, null, null),
+          '2023': Y(80, null, null, null, 37, 21, null, null),
+          '2024': Y(39, null, null, null, 22, 13, null, null),
+          '2025': Y(48, null, null, null, 29, 26, null, 2.6),
           '2026': Y(null, null, 15, null, null, null, null, null),
         },
       },
@@ -398,6 +416,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Oslo', type: 'master2',
         url: 'https://www.uio.no/studier/program/kjemi-master/',
         years: {
+          '2021': Y(355, null, null, null, 122, 56, null, null),
+          '2022': Y(365, null, null, null, 126, 56, null, null),
+          '2023': Y(336, null, null, null, 101, 36, null, null),
+          '2024': Y(240, null, null, null, 104, 47, null, null),
+          '2025': Y(254, null, null, null, 121, 49, null, null),
         },
       },
       {
@@ -405,6 +428,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Bergen', type: 'master2',
         url: 'https://www.uib.no/studier/MAMN-KJEM',
         years: {
+          '2021': Y(39, null, null, null, 26, 22, null, null),
+          '2022': Y(50, null, null, null, 34, 33, null, null),
+          '2023': Y(29, null, null, null, 21, 16, null, null),
+          '2024': Y(51, null, null, null, 28, 25, null, null),
+          '2025': Y(61, null, null, null, 39, 32, null, null),
           '2026': Y(null, null, 23, null, null, null, null, null),
         },
       },
@@ -413,6 +441,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Trondheim', type: 'master2',
         url: 'https://www.ntnu.no/studier/mschem',
         years: {
+          '2021': Y(197, null, null, null, 73, 31, null, null),
+          '2022': Y(207, null, null, null, 60, 27, null, null),
+          '2023': Y(192, null, null, null, 46, 29, null, null),
+          '2024': Y(65, null, null, null, 29, 14, null, null),
+          '2025': Y(93, null, null, null, 50, 25, null, null),
         },
       },
     ],
@@ -420,7 +453,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
   {
     id: 'matteknologi2', label: 'Mat, teknologi og helse (2-årig master)', level: 'master2',
     desc: 'Sammenligner de toårige masterne i matvitenskap og matteknologi med lokalt opptak.',
-    note: 'Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. DBH/HKDIR tabell 379 (lokalt opptak per studieprogram) svarte med serverfeil 22.09.2026, så søker-, kvalifiserte- og tilbudstallene mangler for alle programmene i gruppen. Studieplasser og poenggrenser er de som sto på institusjonenes egne programsider da dataene ble hentet, og gjelder siste opptak; de er ført inn på det året sidene oppgir. NMBU oppgir 20 studieplasser på programsiden og publiserer ingen poenggrense. NTNUs «Matvitenskap, teknologi og bærekraft» er den eneste direkte konkurrenten; NTNU opplyser at siste opptak var høsten 2026. NMBUs toårige master i bioinformatikk og anvendt statistikk har ingen egen gruppe fordi bioinformatikk ved UiO og UiB bare tilbys som studieretning inne i informatikk- og Computational Science-masterne, uten eget opptak å sammenligne mot.',
+    note: 'Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere» (søknadsalternativer), kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (alle søknadsalternativer uansett prioritet; kvalifiserte = søknadsalternativer merket kvalifisert); tabellen svarte med serverfeil 22.09.2026 og ble hentet på nytt 23.09.2026. DBH har ikke rapportert høstopptaket 2026 ennå, så 2026 er tomt for alle programmene. NMBUs kode M-MAT har i tabell 379 bare data for 2025 (35 søkere uten kvalifikasjon, 4 kvalifiserte søknadsalternativer, 0 tilbud); koden brukt før 2025 er ikke sikkert identifisert og er derfor ikke gjettet - 2021-2024 står som null. Studieplasser og poenggrenser er de som sto på institusjonenes egne programsider da dataene ble hentet, og gjelder siste opptak; de er ført inn på det året sidene oppgir. NMBU oppgir 20 studieplasser på programsiden og publiserer ingen poenggrense. NTNUs «Matvitenskap, teknologi og bærekraft» er den eneste direkte konkurrenten; NTNU opplyser at siste opptak var høsten 2026. NMBUs toårige master i bioinformatikk og anvendt statistikk har ingen egen gruppe fordi bioinformatikk ved UiO og UiB bare tilbys som studieretning inne i informatikk- og Computational Science-masterne, uten eget opptak å sammenligne mot.',
     nmbuIds: ['nmbu_mat_teknologi_helse2'], defaultIds: ['nmbu_mat_teknologi_helse2', 'ntnu_ftmamat'],
     entries: [
       {
@@ -428,6 +461,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Ås', type: 'master2',
         url: 'https://www.nmbu.no/studier/master-2-aar/mat-teknologi-og-helse',
         years: {
+          '2025': Y(39, null, null, null, 4, 0, null, null),
           '2026': Y(null, null, 20, null, null, null, null, null),
         },
       },
@@ -436,6 +470,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Trondheim', type: 'master2',
         url: 'https://www.ntnu.no/studier/ftmamat',
         years: {
+          '2021': Y(111, null, null, null, 88, 38, null, null),
+          '2022': Y(85, null, null, null, 69, 35, null, null),
+          '2023': Y(70, null, null, null, 57, 22, null, null),
+          '2024': Y(95, null, null, null, 74, 36, null, null),
+          '2025': Y(78, null, null, null, 60, 20, null, null),
         },
       },
     ],

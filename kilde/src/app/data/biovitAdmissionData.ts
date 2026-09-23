@@ -367,7 +367,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
   {
     id: 'biologi2', label: 'Biologi (2-årig master)', level: 'master2',
     desc: 'Sammenligner de toårige masterne i biologi og biovitenskap med lokalt opptak.',
-    note: 'Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. Tallene skulle vært hentet fra DBH/HKDIR tabell 379 (lokalt opptak per studieprogram), men API-et svarte med serverfeil for tabell 379 da dette kartet ble laget 22.09.2026; tidsserien står derfor tom og må etterfylles. Ingen tall er gjettet. NMBUs biologimaster undervises på norsk; NTNUs og Nords tilsvarende mastere er engelskspråklige, og Nords «Biovitenskap» tas opp per studieretning (akvakultur, genomikk og marin økologi i Bodø, husdyrvitenskap og terrestrisk økologi i Steinkjer). UiOs biovitenskapsmaster er den største av konkurrentene.',
+    note: 'Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere» (søknadsalternativer), kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (alle søknadsalternativer uansett prioritet; kvalifiserte = søknadsalternativer merket kvalifisert); tabellen svarte med serverfeil 22.09.2026 og ble hentet på nytt 23.09.2026. Studieplasser, førstevalgssøkere, kvinneandel og poenggrenser publiseres ikke per program i denne tabellen og står derfor som null. DBH har ikke rapportert høstopptaket 2026 ennå, så 2026 er tomt for alle programmene. UiO hadde våropptak i tillegg til høstopptaket til og med 2023, UiB har våropptak hvert år i perioden, og UiT hadde våropptak i 2021 og 2022; tallene for de årene er summen av vår- og høstopptaket. NMBUs biologimaster undervises på norsk; NTNUs og Nords tilsvarende mastere er engelskspråklige, og Nords «Biovitenskap» tas opp per studieretning (akvakultur, genomikk og marin økologi i Bodø, husdyrvitenskap og terrestrisk økologi i Steinkjer). UiOs biovitenskapsmaster er den største av konkurrentene.',
     nmbuIds: ['nmbu_biologi2'], defaultIds: ['nmbu_biologi2', 'uio_biovitenskap2', 'uib_biologi2', 'ntnu_biologi2', 'uit_biologi2', 'nord_biovitenskap2'],
     entries: [
       {
@@ -375,6 +375,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Ås', type: 'master2',
         url: 'https://www.nmbu.no/studier/master-2-aar/biologi',
         years: {
+          '2021': Y(109, null, null, null, 83, 42, null, null),
+          '2022': Y(115, null, null, null, 88, 41, null, null),
+          '2023': Y(135, null, null, null, 107, 49, null, null),
+          '2024': Y(121, null, null, null, 94, 50, null, null),
+          '2025': Y(124, null, null, null, 105, 49, null, null),
         },
       },
       {
@@ -382,6 +387,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Oslo', type: 'master2',
         url: 'https://www.uio.no/studier/program/biovitenskap-master/',
         years: {
+          '2021': Y(1630, null, null, null, 452, 188, null, null),
+          '2022': Y(1428, null, null, null, 373, 172, null, null),
+          '2023': Y(1599, null, null, null, 382, 179, null, null),
+          '2024': Y(1046, null, null, null, 382, 181, null, null),
+          '2025': Y(1101, null, null, null, 372, 177, null, null),
         },
       },
       {
@@ -389,6 +399,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Bergen', type: 'master2',
         url: 'https://www4.uib.no/studier/program/biologi-master',
         years: {
+          '2021': Y(454, null, null, null, 243, 108, null, null),
+          '2022': Y(361, null, null, null, 139, 83, null, null),
+          '2023': Y(350, null, null, null, 152, 82, null, null),
+          '2024': Y(539, null, null, null, 287, 156, null, null),
+          '2025': Y(296, null, null, null, 130, 102, null, null),
         },
       },
       {
@@ -396,6 +411,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Trondheim', type: 'master2',
         url: 'https://www.ntnu.no/studier/msbio',
         years: {
+          '2021': Y(842, null, null, null, 332, 85, null, null),
+          '2022': Y(869, null, null, null, 343, 66, null, null),
+          '2023': Y(484, null, null, null, 173, 60, null, null),
+          '2024': Y(256, null, null, null, 132, 57, null, null),
+          '2025': Y(310, null, null, null, 153, 64, null, null),
         },
       },
       {
@@ -403,6 +423,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Tromsø', type: 'master2',
         url: 'https://uit.no/utdanning/program/269576/biologi_-_master',
         years: {
+          '2021': Y(352, null, null, null, 124, 111, null, null),
+          '2022': Y(645, null, null, null, 216, 104, null, null),
+          '2023': Y(693, null, null, null, 310, 133, null, null),
+          '2024': Y(508, null, null, null, 284, 128, null, null),
+          '2025': Y(546, null, null, null, 275, 130, null, null),
         },
       },
       {
@@ -410,6 +435,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Bodø', type: 'master2',
         url: 'https://www.nord.no/studier/biovitenskap-master',
         years: {
+          '2021': Y(902, null, null, null, 224, 101, null, null),
+          '2022': Y(1311, null, null, null, 236, 101, null, null),
+          '2023': Y(1336, null, null, null, 276, 107, null, null),
+          '2024': Y(327, null, null, null, 151, 72, null, null),
+          '2025': Y(365, null, null, null, 170, 75, null, null),
         },
       },
     ],
@@ -417,7 +447,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
   {
     id: 'husdyr2', label: 'Husdyrvitenskap (2-årig master)', level: 'master2',
     desc: 'Sammenligner de toårige masterne i husdyrvitenskap med lokalt opptak.',
-    note: 'Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. Tallene skulle vært hentet fra DBH/HKDIR tabell 379 (lokalt opptak per studieprogram), men API-et svarte med serverfeil for tabell 379 da dette kartet ble laget 22.09.2026; tidsserien står derfor tom og må etterfylles. Ingen tall er gjettet. Nords master i biovitenskap med studieretning husdyrvitenskap (Steinkjer) er den eneste direkte konkurrenten; den er engelskspråklig og tas opp per studieretning. NMBUs eget «European Master in Animal Biodiversity and Genomics» (EMABG) er en internasjonal fellesgrad med Erasmus Mundus-opptak og er tatt med som svakere sammenligning (default false).',
+    note: 'Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere» (søknadsalternativer), kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (alle søknadsalternativer uansett prioritet; kvalifiserte = søknadsalternativer merket kvalifisert); tabellen svarte med serverfeil 22.09.2026 og ble hentet på nytt 23.09.2026. Studieplasser, førstevalgssøkere, kvinneandel og poenggrenser publiseres ikke per program i denne tabellen og står derfor som null. DBH har ikke rapportert høstopptaket 2026 ennå, så 2026 er tomt for alle programmene. DBH har bare én rad for EM-ABG i tabell 379, for 2025 (15 søknadsalternativer, alle kvalifisert, 15 tilbud); koden for 2021-2024 er ikke identifisert, og de årene står derfor som null i stedet for gjettet. Nords master i biovitenskap med studieretning husdyrvitenskap (Steinkjer) er den eneste direkte konkurrenten; den er engelskspråklig og tas opp per studieretning. NMBUs eget «European Master in Animal Biodiversity and Genomics» (EMABG) er en internasjonal fellesgrad med Erasmus Mundus-opptak og er tatt med som svakere sammenligning (default false).',
     nmbuIds: ['nmbu_husdyr2', 'nmbu_emabg'], defaultIds: ['nmbu_husdyr2', 'nord_husdyr2'],
     entries: [
       {
@@ -425,6 +455,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Ås', type: 'master2',
         url: 'https://www.nmbu.no/studier/master-2-aar/husdyrvitenskap',
         years: {
+          '2021': Y(196, null, null, null, 61, 32, null, null),
+          '2022': Y(271, null, null, null, 85, 41, null, null),
+          '2023': Y(214, null, null, null, 44, 34, null, null),
+          '2024': Y(71, null, null, null, 27, 21, null, null),
+          '2025': Y(86, null, null, null, 33, 26, null, null),
         },
       },
       {
@@ -432,6 +467,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Steinkjer', type: 'master2',
         url: 'https://www.nord.no/studier/biovitenskap-master',
         years: {
+          '2021': Y(902, null, null, null, 224, 101, null, null),
+          '2022': Y(1311, null, null, null, 236, 101, null, null),
+          '2023': Y(1336, null, null, null, 276, 107, null, null),
+          '2024': Y(327, null, null, null, 151, 72, null, null),
+          '2025': Y(365, null, null, null, 170, 75, null, null),
         },
       },
       {
@@ -439,6 +479,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Ås', type: 'master2',
         url: 'https://www.nmbu.no/studier/master-2-aar/european-master-animal-biodiversity-and-genomics',
         years: {
+          '2025': Y(15, null, null, null, 15, 15, null, null),
         },
       },
     ],
@@ -446,7 +487,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
   {
     id: 'plante2', label: 'Plantevitenskap (2-årig master)', level: 'master2',
     desc: 'Sammenligner de toårige masterne i plantevitenskap og jordbruk med lokalt opptak.',
-    note: 'Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. Tallene skulle vært hentet fra DBH/HKDIR tabell 379 (lokalt opptak per studieprogram), men API-et svarte med serverfeil for tabell 379 da dette kartet ble laget 22.09.2026; tidsserien står derfor tom og må etterfylles. Ingen tall er gjettet. INNs master i bærekraftig jordbruk (Blæstad/Hamar) er den nærmeste konkurrenten. NMBUs egen agroøkologimaster er engelskspråklig og systemorientert og er tatt med som svakere sammenligning (default false) framfor å få en egen gruppe, siden den har den samme ene konkurrenten.',
+    note: 'Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere» (søknadsalternativer), kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (alle søknadsalternativer uansett prioritet; kvalifiserte = søknadsalternativer merket kvalifisert); tabellen svarte med serverfeil 22.09.2026 og ble hentet på nytt 23.09.2026. Studieplasser, førstevalgssøkere, kvinneandel og poenggrenser publiseres ikke per program i denne tabellen og står derfor som null. DBH har ikke rapportert høstopptaket 2026 ennå, så 2026 er tomt for alle programmene. INNs master i bærekraftig jordbruk hadde første opptak i 2022, så 2021 står som null (ikke manglende data, men programmet fantes ikke). INNs master i bærekraftig jordbruk (Blæstad/Hamar) er den nærmeste konkurrenten. NMBUs egen agroøkologimaster er engelskspråklig og systemorientert og er tatt med som svakere sammenligning (default false) framfor å få en egen gruppe, siden den har den samme ene konkurrenten.',
     nmbuIds: ['nmbu_plante2', 'nmbu_agroekologi2'], defaultIds: ['nmbu_plante2', 'inn_baerekraftig_jordbruk'],
     entries: [
       {
@@ -454,6 +495,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Ås', type: 'master2',
         url: 'https://www.nmbu.no/studier/master-2-aar/plantevitenskap',
         years: {
+          '2021': Y(232, null, null, null, 63, 27, null, null),
+          '2022': Y(240, null, null, null, 41, 23, null, null),
+          '2023': Y(225, null, null, null, 35, 28, null, null),
+          '2024': Y(87, null, null, null, 26, 21, null, null),
+          '2025': Y(120, null, null, null, 50, 40, null, null),
         },
       },
       {
@@ -461,6 +507,10 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Hamar', type: 'master2',
         url: 'https://www.inn.no/studier/vare-studier/master-i-berekraftig-jordbruk/',
         years: {
+          '2022': Y(37, null, null, null, 29, 29, null, null),
+          '2023': Y(39, null, null, null, 33, 33, null, null),
+          '2024': Y(41, null, null, null, 29, 28, null, null),
+          '2025': Y(42, null, null, null, 22, 19, null, null),
         },
       },
       {
@@ -468,6 +518,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Ås', type: 'master2',
         url: 'https://www.nmbu.no/studier/master-2-aar/agroecology',
         years: {
+          '2021': Y(206, null, null, null, 50, 29, null, null),
+          '2022': Y(233, null, null, null, 68, 31, null, null),
+          '2023': Y(147, null, null, null, 24, 22, null, null),
+          '2024': Y(54, null, null, null, 26, 19, null, null),
+          '2025': Y(85, null, null, null, 34, 27, null, null),
         },
       },
     ],
@@ -475,7 +530,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
   {
     id: 'akvakultur2', label: 'Akvakultur (2-årig master)', level: 'master2',
     desc: 'Sammenligner de toårige masterne i akvakultur og havbruksvitenskap med lokalt opptak.',
-    note: 'Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. Tallene skulle vært hentet fra DBH/HKDIR tabell 379 (lokalt opptak per studieprogram), men API-et svarte med serverfeil for tabell 379 da dette kartet ble laget 22.09.2026; tidsserien står derfor tom og må etterfylles. Ingen tall er gjettet. NMBUs akvakulturmaster er engelskspråklig. UiTs toårige master i fiskeri- og havbruksvitenskap (fiskerikandidat, 40 plasser, lokalt opptak med søknadskode 6006) er den største konkurrenten, og Nords master i biovitenskap med studieretning akvakultur (Bodø) den nærmeste faglig. UiTs akvamedisinmaster er tatt med som svakere sammenligning (default false) fordi den leder til autorisasjon som fiskehelsebiolog og har andre opptakskrav.',
+    note: 'Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere» (søknadsalternativer), kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (alle søknadsalternativer uansett prioritet; kvalifiserte = søknadsalternativer merket kvalifisert); tabellen svarte med serverfeil 22.09.2026 og ble hentet på nytt 23.09.2026. Studieplasser, førstevalgssøkere, kvinneandel og poenggrenser publiseres ikke per program i denne tabellen og står derfor som null. DBH har ikke rapportert høstopptaket 2026 ennå, så 2026 er tomt for alle programmene. NMBUs akvakulturmaster er engelskspråklig. UiTs toårige master i fiskeri- og havbruksvitenskap (fiskerikandidat, 40 plasser, lokalt opptak med søknadskode 6006) er den største konkurrenten, og Nords master i biovitenskap med studieretning akvakultur (Bodø) den nærmeste faglig. UiTs akvamedisinmaster er tatt med som svakere sammenligning (default false) fordi den leder til autorisasjon som fiskehelsebiolog og har andre opptakskrav.',
     nmbuIds: ['nmbu_akvakultur2'], defaultIds: ['nmbu_akvakultur2', 'uit_fiskeri_havbruk2', 'nord_akvakultur2'],
     entries: [
       {
@@ -483,6 +538,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Ås', type: 'master2',
         url: 'https://www.nmbu.no/studier/master-2-aar/aquaculture',
         years: {
+          '2021': Y(186, null, null, null, 69, 40, null, null),
+          '2022': Y(221, null, null, null, 72, 45, null, null),
+          '2023': Y(165, null, null, null, 45, 34, null, null),
+          '2024': Y(92, null, null, null, 52, 46, null, null),
+          '2025': Y(115, null, null, null, 60, 37, null, null),
         },
       },
       {
@@ -490,6 +550,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Tromsø', type: 'master2',
         url: 'https://uit.no/utdanning/program/268941/fiskeri-_og_havbruksvitenskap_-_master',
         years: {
+          '2021': Y(94, null, null, null, 55, 52, null, null),
+          '2022': Y(75, null, null, null, 58, 58, null, null),
+          '2023': Y(81, null, null, null, 59, 59, null, null),
+          '2024': Y(102, null, null, null, 77, 77, null, null),
+          '2025': Y(91, null, null, null, 70, 65, null, null),
           '2026': Y(null, null, 40, null, null, null, null, null),
         },
       },
@@ -498,6 +563,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Bodø', type: 'master2',
         url: 'https://www.nord.no/studier/biovitenskap-master',
         years: {
+          '2021': Y(902, null, null, null, 224, 101, null, null),
+          '2022': Y(1311, null, null, null, 236, 101, null, null),
+          '2023': Y(1336, null, null, null, 276, 107, null, null),
+          '2024': Y(327, null, null, null, 151, 72, null, null),
+          '2025': Y(365, null, null, null, 170, 75, null, null),
         },
       },
       {
@@ -505,6 +575,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Tromsø', type: 'master',
         url: 'https://uit.no/utdanning/program/268952/akvamedisin_-_master',
         years: {
+          '2021': Y(388, null, null, null, 340, 59, null, null),
+          '2022': Y(349, null, null, null, 302, 70, null, null),
+          '2023': Y(359, null, null, null, 295, 75, null, null),
+          '2024': Y(305, null, null, null, 238, 41, null, null),
+          '2025': Y(296, null, null, null, 210, 54, null, null),
         },
       },
     ],
