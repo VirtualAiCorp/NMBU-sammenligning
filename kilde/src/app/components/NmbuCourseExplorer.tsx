@@ -60,6 +60,23 @@ function StackedBar({ s, height = 10 }: { s: Stats; height?: number }) {
   );
 }
 
+function GradeCells({ s, bold = false }: { s: Stats; bold?: boolean }) {
+  return (
+    <>
+      {LETTERS.map((g) => {
+        const n = s.counts[g];
+        const pct = s.letters ? (n / s.letters) * 100 : null;
+        return (
+          <td key={g} className="px-2 py-2 text-right" style={{ whiteSpace: 'nowrap' }}>
+            <div style={{ fontWeight: bold ? 700 : 600, color: n ? 'var(--nmbu-neutral-1)' : 'var(--nmbu-neutral-3)' }}>{n.toLocaleString('nb-NO')}</div>
+            <div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)' }}>{pct != null ? `${nf(pct, 0)} %` : '–'}</div>
+          </td>
+        );
+      })}
+    </>
+  );
+}
+
 function Chip({ active, onClick, children }: { active: boolean; onClick: () => void; children: React.ReactNode }) {
   return (
     <button onClick={onClick} className="px-3 py-1.5 rounded-full text-xs font-medium transition-all"
@@ -76,6 +93,7 @@ export function NmbuCourseExplorer({ onBack }: { onBack: () => void }) {
   const [fakultet, setFakultet] = useState<string>('');
   const [year, setYear] = useState<string>(ALLE);
   const [selected, setSelected] = useState<string | null>(null);
+  const [visAntall, setVisAntall] = useState(false);
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}nmbu-emner.json`)
@@ -241,17 +259,29 @@ export function NmbuCourseExplorer({ onBack }: { onBack: () => void }) {
                 </div>
 
                 {/* Per studieprogram */}
-                <div className="mt-7 flex items-baseline justify-between">
+                <div className="mt-7 flex items-center justify-between gap-3 flex-wrap">
                   <h3 style={{ fontFamily: "'Lora', serif", fontWeight: 500, fontSize: '1.1rem', color: 'var(--nmbu-green-dark)' }}>Per studieprogram</h3>
-                  <span style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)' }}>{programRows.length} program med studenter på emnet</span>
+                  <div className="flex items-center gap-4">
+                    <label className="flex items-center gap-1.5 cursor-pointer select-none" style={{ fontSize: 12, color: 'var(--nmbu-neutral-1)' }}>
+                      <input type="checkbox" checked={visAntall} onChange={(e) => setVisAntall(e.target.checked)} style={{ accentColor: 'var(--nmbu-green-dark)' }} />
+                      Vis antall og prosent per karakter
+                    </label>
+                    <span style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)' }}>{programRows.length} program med studenter på emnet</span>
+                  </div>
                 </div>
                 <div className="overflow-x-auto mt-2">
                   <table className="w-full border-collapse text-xs">
                     <thead>
                       <tr style={{ backgroundColor: 'var(--nmbu-beige-light)', borderBottom: '2px solid var(--nmbu-neutral-3)' }}>
-                        {['Studieprogram', 'Nivå', 'Kand.', 'Snitt', 'Stryk', 'Fordeling A–F', 'Skjermet'].map((h, i) => (
-                          <th key={h} className={`px-3 py-2 ${i >= 2 && i !== 5 ? 'text-right' : 'text-left'}`} style={{ color: 'var(--nmbu-neutral-2)', fontWeight: 600, whiteSpace: 'nowrap' }}>{h}</th>
+                        {['Studieprogram', 'Nivå', 'Kand.', 'Snitt', 'Stryk'].map((h, i) => (
+                          <th key={h} className={`px-3 py-2 ${i >= 2 ? 'text-right' : 'text-left'}`} style={{ color: 'var(--nmbu-neutral-2)', fontWeight: 600, whiteSpace: 'nowrap' }}>{h}</th>
                         ))}
+                        {visAntall
+                          ? LETTERS.map((g) => (
+                            <th key={g} className="px-2 py-2 text-right" style={{ color: GRADE_COLORS[g], fontWeight: 700 }}>{g}</th>
+                          ))
+                          : <th className="px-3 py-2 text-left" style={{ color: 'var(--nmbu-neutral-2)', fontWeight: 600, whiteSpace: 'nowrap' }}>Fordeling A–F</th>}
+                        <th className="px-3 py-2 text-right" style={{ color: 'var(--nmbu-neutral-2)', fontWeight: 600 }}>Skjermet</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -260,8 +290,8 @@ export function NmbuCourseExplorer({ onBack }: { onBack: () => void }) {
                         <td className="px-3 py-2" style={{ color: 'var(--nmbu-neutral-2)' }}>–</td>
                         <td className="px-3 py-2 text-right" style={{ fontWeight: 700 }}>{whole.total.toLocaleString('nb-NO')}</td>
                         <td className="px-3 py-2 text-right" style={{ fontWeight: 700 }}>{whole.snitt != null ? nf(whole.snitt, 2) : '–'}</td>
-                        <td className="px-3 py-2 text-right" style={{ fontWeight: 700 }}>{whole.stryk != null ? `${nf(whole.stryk, 1)} %` : '–'}</td>
-                        <td className="px-3 py-2" style={{ minWidth: 180 }}><StackedBar s={whole} height={9} /></td>
+                        <td className="px-3 py-2 text-right" style={{ fontWeight: 700, whiteSpace: 'nowrap' }}>{whole.stryk != null ? `${nf(whole.stryk, 1)} %` : '–'}</td>
+                        {visAntall ? <GradeCells s={whole} bold /> : <td className="px-3 py-2" style={{ minWidth: 180 }}><StackedBar s={whole} height={9} /></td>}
                         <td className="px-3 py-2 text-right" style={{ color: 'var(--nmbu-neutral-2)' }}>{whole.skjult || '–'}</td>
                       </tr>
                       {programRows.map((r) => (
@@ -273,8 +303,8 @@ export function NmbuCourseExplorer({ onBack }: { onBack: () => void }) {
                           <td className="px-3 py-2" style={{ color: 'var(--nmbu-neutral-2)', whiteSpace: 'nowrap' }}>{r.nivaa ?? '–'}</td>
                           <td className="px-3 py-2 text-right" style={{ fontWeight: 600 }}>{r.s.total.toLocaleString('nb-NO')}</td>
                           <td className="px-3 py-2 text-right">{r.s.snitt != null ? nf(r.s.snitt, 2) : '–'}</td>
-                          <td className="px-3 py-2 text-right">{r.s.stryk != null ? `${r.s.skjult ? '≥ ' : ''}${nf(r.s.stryk, 1)} %` : '–'}</td>
-                          <td className="px-3 py-2" style={{ minWidth: 180 }}><StackedBar s={r.s} height={9} /></td>
+                          <td className="px-3 py-2 text-right" style={{ whiteSpace: 'nowrap' }}>{r.s.stryk != null ? `${r.s.skjult ? '≥ ' : ''}${nf(r.s.stryk, 1)} %` : '–'}</td>
+                          {visAntall ? <GradeCells s={r.s} /> : <td className="px-3 py-2" style={{ minWidth: 180 }}><StackedBar s={r.s} height={9} /></td>}
                           <td className="px-3 py-2 text-right" style={{ color: 'var(--nmbu-neutral-2)' }}>{r.s.skjult || '–'}</td>
                         </tr>
                       ))}
@@ -282,7 +312,7 @@ export function NmbuCourseExplorer({ onBack }: { onBack: () => void }) {
                         <tr>
                           <td className="px-3 py-2" colSpan={2} style={{ color: 'var(--nmbu-neutral-2)', fontStyle: 'italic' }}>Ikke fordelt på program (enkeltemnestudenter, utveksling, skjerming)</td>
                           <td className="px-3 py-2 text-right" style={{ color: 'var(--nmbu-neutral-2)' }}>{rest.toLocaleString('nb-NO')}</td>
-                          <td colSpan={4} />
+                          <td colSpan={visAntall ? 8 : 3} />
                         </tr>
                       )}
                     </tbody>
