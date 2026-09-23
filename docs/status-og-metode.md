@@ -227,3 +227,18 @@ Lagt inn 23.09 kveld i «Gjennomføring, frafall og studenttall».
   fra den kjønnsdelte spørringen. Før rettingen var frafall for lavt i omtrent en tredel av kullene (f.eks.
   NMBU B-BIOL kull 2018: 5 → 7).
 - **Skjermede nuller** i andeler vises som «≤ x %» i tabellen (x = 2 personer av kullet). Grafen viser 0.
+
+## 13. «Studentene» (DBH 60/135/142)
+
+Nytt kort på fakultetssiden, under Gjennomføring. Per program: aldersfordeling (≤ 21, 22–24, 25–29, 30+),
+andel og antall utenlandske studenter (utenlandsk statsborgerskap), og utveksling ut (programmets egne studenter
+i utlandet, vår + høst) i antall og per 100 registrerte. Trend, aldersfordeling som stablede søyler, og tabell,
+med landssnitt for NMBU-programmets gradsnivå.
+- **Skript:** `scripts/build-students.py [fakultet ...] [--refresh]` → `<f>StudentData.ts/.json` og felles
+  `studentNationalData.ts`. Cache: `data/nmbu/kilder/dbh-studenter/<inst>_<serie>.json`.
+- **Aldersgrupper via filter:** tabell 60 per enkeltår er hardt skjermet (1–2 → 0), og det rammer de eldste.
+  Skriptet filtrerer derfor på alder (`between`) og grupperer bare på år × program, én spørring per gruppe.
+  NMBU B-BIOL høst 2024: 8 studenter 30+ med filter, mot 3 ved å summere enkeltår.
+- **DBH-grense:** tabell 60 tillater høyst seks verdier i et filter; årene hentes derfor som intervall.
+- **Utveksling:** 142 Type NORSK = programmets studenter ut. Innreisende (UTENL) ligger på programmet UTVEKSLING
+  og kan ikke fordeles på studieprogram.

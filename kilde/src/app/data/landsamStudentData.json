@@ -1,0 +1,3437 @@
+{
+ "generert": "2026-09-23",
+ "groups": [
+  {
+   "id": "eiendom",
+   "label": "Eiendom",
+   "level": "master5",
+   "nmbuIds": [
+    "nmbu_eiendom"
+   ],
+   "defaultIds": [
+    "nmbu_eiendom",
+    "hvl_landmaling"
+   ],
+   "programs": [
+    {
+     "entryId": "nmbu_eiendom",
+     "shortName": "NMBU",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "isNmbu": true,
+     "programnavn": "Eiendom (master 5 år)",
+     "nivaa": "M5",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 189,
+       "a21": 54,
+       "a24": 63,
+       "a29": 43,
+       "a30": 29,
+       "utenlandske": 6,
+       "utveksling": 10
+      },
+      {
+       "aar": 2020,
+       "total": 203,
+       "a21": 55,
+       "a24": 84,
+       "a29": 37,
+       "a30": 27,
+       "utenlandske": 3,
+       "utveksling": 3
+      },
+      {
+       "aar": 2021,
+       "total": 207,
+       "a21": 52,
+       "a24": 80,
+       "a29": 40,
+       "a30": 35,
+       "utenlandske": 3,
+       "utveksling": 0
+      },
+      {
+       "aar": 2022,
+       "total": 208,
+       "a21": 64,
+       "a24": 75,
+       "a29": 38,
+       "a30": 31,
+       "utenlandske": 0,
+       "utveksling": 5
+      },
+      {
+       "aar": 2023,
+       "total": 227,
+       "a21": 63,
+       "a24": 69,
+       "a29": 51,
+       "a30": 44,
+       "utenlandske": 7,
+       "utveksling": 3
+      },
+      {
+       "aar": 2024,
+       "total": 228,
+       "a21": 61,
+       "a24": 84,
+       "a29": 50,
+       "a30": 33,
+       "utenlandske": 4,
+       "utveksling": 8
+      },
+      {
+       "aar": 2025,
+       "total": 210,
+       "a21": 63,
+       "a24": 84,
+       "a29": 40,
+       "a30": 23,
+       "utenlandske": 0,
+       "utveksling": 14
+      }
+     ]
+    },
+    {
+     "entryId": "hvl_landmaling",
+     "shortName": "HVL Bergen",
+     "institusjon": "Høgskulen på Vestlandet",
+     "isNmbu": false,
+     "programnavn": "Landmåling og eiendomsdesign",
+     "nivaa": "B3",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 120,
+       "a21": 51,
+       "a24": 44,
+       "a29": 17,
+       "a30": 8,
+       "utenlandske": 0,
+       "utveksling": 0
+      },
+      {
+       "aar": 2020,
+       "total": 137,
+       "a21": 45,
+       "a24": 52,
+       "a29": 28,
+       "a30": 12,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2021,
+       "total": 129,
+       "a21": 42,
+       "a24": 41,
+       "a29": 27,
+       "a30": 19,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2022,
+       "total": 145,
+       "a21": 49,
+       "a24": 47,
+       "a29": 30,
+       "a30": 19,
+       "utenlandske": 0,
+       "utveksling": 0
+      },
+      {
+       "aar": 2023,
+       "total": 129,
+       "a21": 51,
+       "a24": 40,
+       "a29": 24,
+       "a30": 14,
+       "utenlandske": 0,
+       "utveksling": 0
+      },
+      {
+       "aar": 2024,
+       "total": 163,
+       "a21": 70,
+       "a24": 50,
+       "a29": 25,
+       "a30": 18,
+       "utenlandske": 3,
+       "utveksling": null
+      },
+      {
+       "aar": 2025,
+       "total": 196,
+       "a21": 66,
+       "a24": 80,
+       "a29": 29,
+       "a30": 21,
+       "utenlandske": 3,
+       "utveksling": 0
+      }
+     ]
+    },
+    {
+     "entryId": "hvl_eiendomsmegling",
+     "shortName": "HVL Sogndal",
+     "institusjon": "Høgskulen på Vestlandet",
+     "isNmbu": false,
+     "programnavn": "Eiendomsmegling, økonomi og jus",
+     "nivaa": "B3",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 73,
+       "a21": 28,
+       "a24": 24,
+       "a29": 13,
+       "a30": 8,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2020,
+       "total": 78,
+       "a21": 36,
+       "a24": 28,
+       "a29": 9,
+       "a30": 5,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2021,
+       "total": 84,
+       "a21": 39,
+       "a24": 30,
+       "a29": 11,
+       "a30": 4,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2022,
+       "total": 99,
+       "a21": 45,
+       "a24": 36,
+       "a29": 14,
+       "a30": 4,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2023,
+       "total": 121,
+       "a21": 68,
+       "a24": 35,
+       "a29": 15,
+       "a30": 3,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2024,
+       "total": 137,
+       "a21": 78,
+       "a24": 42,
+       "a29": 11,
+       "a30": 6,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2025,
+       "total": 136,
+       "a21": 70,
+       "a24": 48,
+       "a29": 12,
+       "a30": 6,
+       "utenlandske": null,
+       "utveksling": null
+      }
+     ]
+    },
+    {
+     "entryId": "nord_eiendomsmegling",
+     "shortName": "Nord",
+     "institusjon": "Nord universitet",
+     "isNmbu": false,
+     "programnavn": "Eiendomsmegling og markedsanalyser",
+     "nivaa": "B3",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 48,
+       "a21": 21,
+       "a24": 19,
+       "a29": 6,
+       "a30": 0,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2020,
+       "total": 65,
+       "a21": 28,
+       "a24": 23,
+       "a29": 7,
+       "a30": 7,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2021,
+       "total": 86,
+       "a21": 42,
+       "a24": 30,
+       "a29": 10,
+       "a30": 4,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2022,
+       "total": 90,
+       "a21": 36,
+       "a24": 38,
+       "a29": 11,
+       "a30": 5,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2023,
+       "total": 109,
+       "a21": 46,
+       "a24": 43,
+       "a29": 12,
+       "a30": 8,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2024,
+       "total": 106,
+       "a21": 52,
+       "a24": 36,
+       "a29": 10,
+       "a30": 8,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2025,
+       "total": 114,
+       "a21": 49,
+       "a24": 35,
+       "a29": 18,
+       "a30": 12,
+       "utenlandske": 0,
+       "utveksling": null
+      }
+     ]
+    },
+    {
+     "entryId": "inn_eiendomsmegling",
+     "shortName": "INN",
+     "institusjon": "Universitetet i Innlandet",
+     "isNmbu": false,
+     "programnavn": "Eiendomsmegling",
+     "nivaa": "B3",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 127,
+       "a21": 52,
+       "a24": 34,
+       "a29": 17,
+       "a30": 24,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2020,
+       "total": 135,
+       "a21": 58,
+       "a24": 41,
+       "a29": 18,
+       "a30": 18,
+       "utenlandske": 0,
+       "utveksling": 0
+      },
+      {
+       "aar": 2021,
+       "total": 131,
+       "a21": 48,
+       "a24": 41,
+       "a29": 17,
+       "a30": 25,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2022,
+       "total": 125,
+       "a21": 48,
+       "a24": 37,
+       "a29": 16,
+       "a30": 24,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2023,
+       "total": 139,
+       "a21": 50,
+       "a24": 43,
+       "a29": 19,
+       "a30": 27,
+       "utenlandske": null,
+       "utveksling": 0
+      },
+      {
+       "aar": 2024,
+       "total": 90,
+       "a21": 26,
+       "a24": 36,
+       "a29": 11,
+       "a30": 17,
+       "utenlandske": null,
+       "utveksling": 0
+      },
+      {
+       "aar": 2025,
+       "total": 45,
+       "a21": 15,
+       "a24": 16,
+       "a29": 9,
+       "a30": 5,
+       "utenlandske": null,
+       "utveksling": null
+      }
+     ]
+    },
+    {
+     "entryId": "usn_eiendomsmegling",
+     "shortName": "USN",
+     "institusjon": "Universitetet i Sørøst-Norge",
+     "isNmbu": false,
+     "programnavn": "Eiendomsmegling",
+     "nivaa": "B3",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 131,
+       "a21": 65,
+       "a24": 32,
+       "a29": 15,
+       "a30": 19,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2020,
+       "total": 145,
+       "a21": 75,
+       "a24": 39,
+       "a29": 20,
+       "a30": 11,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2021,
+       "total": 170,
+       "a21": 76,
+       "a24": 48,
+       "a29": 21,
+       "a30": 25,
+       "utenlandske": 3,
+       "utveksling": null
+      },
+      {
+       "aar": 2022,
+       "total": 171,
+       "a21": 79,
+       "a24": 50,
+       "a29": 22,
+       "a30": 20,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2023,
+       "total": 180,
+       "a21": 87,
+       "a24": 45,
+       "a29": 29,
+       "a30": 19,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2024,
+       "total": 170,
+       "a21": 71,
+       "a24": 48,
+       "a29": 26,
+       "a30": 25,
+       "utenlandske": 12,
+       "utveksling": null
+      },
+      {
+       "aar": 2025,
+       "total": 202,
+       "a21": 90,
+       "a24": 62,
+       "a29": 22,
+       "a30": 28,
+       "utenlandske": 10,
+       "utveksling": null
+      }
+     ]
+    },
+    {
+     "entryId": "bi_eiendomsmegling",
+     "shortName": "BI",
+     "institusjon": "Handelshøyskolen BI",
+     "isNmbu": false,
+     "programnavn": "Bachelor i eiendomsmegling, jus og økonomi",
+     "nivaa": "B3",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 764,
+       "a21": 299,
+       "a24": 279,
+       "a29": 141,
+       "a30": 45,
+       "utenlandske": 35,
+       "utveksling": null
+      },
+      {
+       "aar": 2020,
+       "total": 916,
+       "a21": 446,
+       "a24": 284,
+       "a29": 132,
+       "a30": 54,
+       "utenlandske": 37,
+       "utveksling": null
+      },
+      {
+       "aar": 2021,
+       "total": 1047,
+       "a21": 501,
+       "a24": 356,
+       "a29": 138,
+       "a30": 52,
+       "utenlandske": 38,
+       "utveksling": null
+      },
+      {
+       "aar": 2022,
+       "total": 1436,
+       "a21": 767,
+       "a24": 440,
+       "a29": 160,
+       "a30": 69,
+       "utenlandske": 69,
+       "utveksling": null
+      },
+      {
+       "aar": 2023,
+       "total": 1749,
+       "a21": 963,
+       "a24": 527,
+       "a29": 179,
+       "a30": 80,
+       "utenlandske": 75,
+       "utveksling": null
+      },
+      {
+       "aar": 2024,
+       "total": 1866,
+       "a21": 958,
+       "a24": 627,
+       "a29": 201,
+       "a30": 80,
+       "utenlandske": 84,
+       "utveksling": 6
+      },
+      {
+       "aar": 2025,
+       "total": 1934,
+       "a21": 942,
+       "a24": 708,
+       "a29": 204,
+       "a30": 80,
+       "utenlandske": 74,
+       "utveksling": 10
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "landskapsarkitektur",
+   "label": "Landskapsarkitektur",
+   "level": "master5",
+   "nmbuIds": [
+    "nmbu_la"
+   ],
+   "defaultIds": [
+    "nmbu_la",
+    "aho_la"
+   ],
+   "programs": [
+    {
+     "entryId": "nmbu_la",
+     "shortName": "NMBU",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "isNmbu": true,
+     "programnavn": "Landskapsarkitektur (master 5 år)",
+     "nivaa": "M5",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 242,
+       "a21": 62,
+       "a24": 85,
+       "a29": 73,
+       "a30": 22,
+       "utenlandske": 6,
+       "utveksling": 12
+      },
+      {
+       "aar": 2020,
+       "total": 241,
+       "a21": 61,
+       "a24": 89,
+       "a29": 64,
+       "a30": 27,
+       "utenlandske": 0,
+       "utveksling": 21
+      },
+      {
+       "aar": 2021,
+       "total": 235,
+       "a21": 51,
+       "a24": 90,
+       "a29": 66,
+       "a30": 28,
+       "utenlandske": 4,
+       "utveksling": 3
+      },
+      {
+       "aar": 2022,
+       "total": 224,
+       "a21": 46,
+       "a24": 88,
+       "a29": 61,
+       "a30": 29,
+       "utenlandske": 0,
+       "utveksling": 11
+      },
+      {
+       "aar": 2023,
+       "total": 220,
+       "a21": 50,
+       "a24": 76,
+       "a29": 66,
+       "a30": 28,
+       "utenlandske": 0,
+       "utveksling": 23
+      },
+      {
+       "aar": 2024,
+       "total": 216,
+       "a21": 50,
+       "a24": 78,
+       "a29": 62,
+       "a30": 26,
+       "utenlandske": 4,
+       "utveksling": 7
+      },
+      {
+       "aar": 2025,
+       "total": 215,
+       "a21": 57,
+       "a24": 80,
+       "a29": 55,
+       "a30": 23,
+       "utenlandske": 6,
+       "utveksling": 12
+      }
+     ]
+    },
+    {
+     "entryId": "aho_la",
+     "shortName": "AHO",
+     "institusjon": "Arkitektur- og designhøgskolen i Oslo",
+     "isNmbu": false,
+     "programnavn": "Landskapsarkitektur",
+     "nivaa": "M5",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 42,
+       "a21": 18,
+       "a24": 14,
+       "a29": 5,
+       "a30": 5,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2020,
+       "total": 67,
+       "a21": 27,
+       "a24": 22,
+       "a29": 9,
+       "a30": 9,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2021,
+       "total": 85,
+       "a21": 21,
+       "a24": 40,
+       "a29": 14,
+       "a30": 9,
+       "utenlandske": 0,
+       "utveksling": 0
+      },
+      {
+       "aar": 2022,
+       "total": 99,
+       "a21": 26,
+       "a24": 44,
+       "a29": 17,
+       "a30": 11,
+       "utenlandske": 0,
+       "utveksling": 0
+      },
+      {
+       "aar": 2023,
+       "total": 89,
+       "a21": 27,
+       "a24": 32,
+       "a29": 17,
+       "a30": 11,
+       "utenlandske": 0,
+       "utveksling": 0
+      },
+      {
+       "aar": 2024,
+       "total": 98,
+       "a21": 25,
+       "a24": 37,
+       "a29": 24,
+       "a30": 12,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2025,
+       "total": 95,
+       "a21": 23,
+       "a24": 41,
+       "a29": 24,
+       "a30": 7,
+       "utenlandske": 0,
+       "utveksling": 7
+      }
+     ]
+    },
+    {
+     "entryId": "hvl_landskapsplanlegging_la",
+     "shortName": "HVL Sogndal",
+     "institusjon": "Høgskulen på Vestlandet",
+     "isNmbu": false,
+     "programnavn": "Landskapsplanlegging med landskapsarkitektur",
+     "nivaa": "B3",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 84,
+       "a21": 23,
+       "a24": 38,
+       "a29": 19,
+       "a30": 4,
+       "utenlandske": null,
+       "utveksling": 10
+      },
+      {
+       "aar": 2020,
+       "total": 81,
+       "a21": 26,
+       "a24": 29,
+       "a29": 24,
+       "a30": 0,
+       "utenlandske": null,
+       "utveksling": 0
+      },
+      {
+       "aar": 2021,
+       "total": 92,
+       "a21": 38,
+       "a24": 26,
+       "a29": 21,
+       "a30": 7,
+       "utenlandske": null,
+       "utveksling": 0
+      },
+      {
+       "aar": 2022,
+       "total": 92,
+       "a21": 25,
+       "a24": 40,
+       "a29": 19,
+       "a30": 8,
+       "utenlandske": null,
+       "utveksling": 14
+      },
+      {
+       "aar": 2023,
+       "total": 100,
+       "a21": 39,
+       "a24": 40,
+       "a29": 14,
+       "a30": 7,
+       "utenlandske": null,
+       "utveksling": 10
+      },
+      {
+       "aar": 2024,
+       "total": 107,
+       "a21": 45,
+       "a24": 44,
+       "a29": 13,
+       "a30": 5,
+       "utenlandske": null,
+       "utveksling": 0
+      },
+      {
+       "aar": 2025,
+       "total": 121,
+       "a21": 44,
+       "a24": 54,
+       "a29": 16,
+       "a30": 7,
+       "utenlandske": 0,
+       "utveksling": 13
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "byregion",
+   "label": "By- og regionplanlegging",
+   "level": "master5",
+   "nmbuIds": [
+    "nmbu_byreg"
+   ],
+   "defaultIds": [
+    "nmbu_byreg",
+    "uis_byplanlegging"
+   ],
+   "programs": [
+    {
+     "entryId": "nmbu_byreg",
+     "shortName": "NMBU",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "isNmbu": true,
+     "programnavn": "By- og regionplanlegging (master 5 år)",
+     "nivaa": "M5",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 167,
+       "a21": 49,
+       "a24": 59,
+       "a29": 47,
+       "a30": 12,
+       "utenlandske": null,
+       "utveksling": 12
+      },
+      {
+       "aar": 2020,
+       "total": 187,
+       "a21": 59,
+       "a24": 63,
+       "a29": 54,
+       "a30": 11,
+       "utenlandske": 0,
+       "utveksling": 8
+      },
+      {
+       "aar": 2021,
+       "total": 188,
+       "a21": 59,
+       "a24": 70,
+       "a29": 47,
+       "a30": 12,
+       "utenlandske": 0,
+       "utveksling": 0
+      },
+      {
+       "aar": 2022,
+       "total": 192,
+       "a21": 61,
+       "a24": 74,
+       "a29": 47,
+       "a30": 10,
+       "utenlandske": null,
+       "utveksling": 10
+      },
+      {
+       "aar": 2023,
+       "total": 212,
+       "a21": 67,
+       "a24": 85,
+       "a29": 48,
+       "a30": 12,
+       "utenlandske": null,
+       "utveksling": 17
+      },
+      {
+       "aar": 2024,
+       "total": 224,
+       "a21": 67,
+       "a24": 84,
+       "a29": 56,
+       "a30": 17,
+       "utenlandske": 3,
+       "utveksling": 18
+      },
+      {
+       "aar": 2025,
+       "total": 232,
+       "a21": 65,
+       "a24": 97,
+       "a29": 52,
+       "a30": 18,
+       "utenlandske": 4,
+       "utveksling": 21
+      }
+     ]
+    },
+    {
+     "entryId": "uis_byplan_samfsikkerhet",
+     "shortName": "UiS (bachelor)",
+     "institusjon": "Universitetet i Stavanger",
+     "isNmbu": false,
+     "programnavn": "Byplanlegging og samfunnssikkerhet",
+     "nivaa": "B3",
+     "aar": [
+      {
+       "aar": 2021,
+       "total": 28,
+       "a21": 18,
+       "a24": 4,
+       "a29": 3,
+       "a30": 3,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2022,
+       "total": 59,
+       "a21": 33,
+       "a24": 15,
+       "a29": 6,
+       "a30": 5,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2023,
+       "total": 103,
+       "a21": 55,
+       "a24": 29,
+       "a29": 10,
+       "a30": 9,
+       "utenlandske": 0,
+       "utveksling": 3
+      },
+      {
+       "aar": 2024,
+       "total": 127,
+       "a21": 62,
+       "a24": 42,
+       "a29": 14,
+       "a30": 9,
+       "utenlandske": 0,
+       "utveksling": 7
+      },
+      {
+       "aar": 2025,
+       "total": 135,
+       "a21": 61,
+       "a24": 50,
+       "a29": 13,
+       "a30": 11,
+       "utenlandske": 0,
+       "utveksling": 6
+      }
+     ]
+    },
+    {
+     "entryId": "uis_ing_bygg_byplan",
+     "shortName": "UiS (ingeniør)",
+     "institusjon": "Universitetet i Stavanger",
+     "isNmbu": false,
+     "programnavn": "Ingeniør, bygg, studieretning byplanlegging",
+     "nivaa": "B3",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 231,
+       "a21": 86,
+       "a24": 73,
+       "a29": 34,
+       "a30": 38,
+       "utenlandske": 17,
+       "utveksling": 13
+      },
+      {
+       "aar": 2020,
+       "total": 212,
+       "a21": 66,
+       "a24": 74,
+       "a29": 37,
+       "a30": 35,
+       "utenlandske": 13,
+       "utveksling": null
+      },
+      {
+       "aar": 2021,
+       "total": 176,
+       "a21": 58,
+       "a24": 49,
+       "a29": 32,
+       "a30": 37,
+       "utenlandske": 11,
+       "utveksling": null
+      },
+      {
+       "aar": 2022,
+       "total": 144,
+       "a21": 56,
+       "a24": 36,
+       "a29": 27,
+       "a30": 25,
+       "utenlandske": 11,
+       "utveksling": 0
+      },
+      {
+       "aar": 2023,
+       "total": 148,
+       "a21": 54,
+       "a24": 44,
+       "a29": 27,
+       "a30": 23,
+       "utenlandske": 9,
+       "utveksling": 0
+      },
+      {
+       "aar": 2024,
+       "total": 144,
+       "a21": 40,
+       "a24": 51,
+       "a29": 24,
+       "a30": 29,
+       "utenlandske": 8,
+       "utveksling": 0
+      },
+      {
+       "aar": 2025,
+       "total": 137,
+       "a21": 53,
+       "a24": 46,
+       "a29": 19,
+       "a30": 19,
+       "utenlandske": 5,
+       "utveksling": 4
+      }
+     ]
+    },
+    {
+     "entryId": "uit_samfunnsplanlegging",
+     "shortName": "UiT",
+     "institusjon": "UiT Norges arktiske universitet",
+     "isNmbu": false,
+     "programnavn": "Samfunnsplanlegging",
+     "nivaa": "B3",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 87,
+       "a21": 27,
+       "a24": 29,
+       "a29": 17,
+       "a30": 14,
+       "utenlandske": null,
+       "utveksling": 7
+      },
+      {
+       "aar": 2020,
+       "total": 87,
+       "a21": 25,
+       "a24": 28,
+       "a29": 20,
+       "a30": 14,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2021,
+       "total": 86,
+       "a21": 24,
+       "a24": 24,
+       "a29": 22,
+       "a30": 16,
+       "utenlandske": null,
+       "utveksling": 0
+      },
+      {
+       "aar": 2022,
+       "total": 62,
+       "a21": 14,
+       "a24": 19,
+       "a29": 12,
+       "a30": 17,
+       "utenlandske": null,
+       "utveksling": 4
+      },
+      {
+       "aar": 2023,
+       "total": 49,
+       "a21": 12,
+       "a24": 15,
+       "a29": 8,
+       "a30": 14,
+       "utenlandske": null,
+       "utveksling": 3
+      },
+      {
+       "aar": 2024,
+       "total": 39,
+       "a21": 8,
+       "a24": 12,
+       "a29": 11,
+       "a30": 8,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2025,
+       "total": 28,
+       "a21": 9,
+       "a24": 5,
+       "a29": 3,
+       "a30": 11,
+       "utenlandske": null,
+       "utveksling": null
+      }
+     ]
+    },
+    {
+     "entryId": "nord_geografi_samfplan",
+     "shortName": "Nord",
+     "institusjon": "Nord universitet",
+     "isNmbu": false,
+     "programnavn": "Geografi og samfunnsplanlegging",
+     "nivaa": "B3",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 24,
+       "a21": 0,
+       "a24": 6,
+       "a29": 6,
+       "a30": 11,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2020,
+       "total": 10,
+       "a21": 0,
+       "a24": 0,
+       "a29": 0,
+       "a30": 8,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2022,
+       "total": 22,
+       "a21": 3,
+       "a24": 0,
+       "a29": 7,
+       "a30": 10,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2023,
+       "total": 29,
+       "a21": 0,
+       "a24": 4,
+       "a29": 3,
+       "a30": 20,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2024,
+       "total": 41,
+       "a21": 4,
+       "a24": 5,
+       "a29": 6,
+       "a30": 26,
+       "utenlandske": null,
+       "utveksling": 0
+      },
+      {
+       "aar": 2025,
+       "total": 47,
+       "a21": 7,
+       "a24": 0,
+       "a29": 7,
+       "a30": 31,
+       "utenlandske": null,
+       "utveksling": null
+      }
+     ]
+    },
+    {
+     "entryId": "uia_samfunnsplanlegging",
+     "shortName": "UiA",
+     "institusjon": "Universitetet i Agder",
+     "isNmbu": false,
+     "programnavn": "Samfunnsplanlegging og kommunikasjon",
+     "nivaa": "B3",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 96,
+       "a21": 32,
+       "a24": 30,
+       "a29": 18,
+       "a30": 16,
+       "utenlandske": 3,
+       "utveksling": 4
+      },
+      {
+       "aar": 2020,
+       "total": 108,
+       "a21": 34,
+       "a24": 38,
+       "a29": 19,
+       "a30": 17,
+       "utenlandske": 0,
+       "utveksling": 7
+      },
+      {
+       "aar": 2021,
+       "total": 91,
+       "a21": 36,
+       "a24": 30,
+       "a29": 13,
+       "a30": 12,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2022,
+       "total": 83,
+       "a21": 43,
+       "a24": 23,
+       "a29": 7,
+       "a30": 10,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2023,
+       "total": 101,
+       "a21": 48,
+       "a24": 32,
+       "a29": 10,
+       "a30": 11,
+       "utenlandske": 0,
+       "utveksling": 0
+      },
+      {
+       "aar": 2024,
+       "total": 99,
+       "a21": 44,
+       "a24": 37,
+       "a29": 10,
+       "a30": 8,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2025,
+       "total": 94,
+       "a21": 42,
+       "a24": 27,
+       "a29": 14,
+       "a30": 11,
+       "utenlandske": 3,
+       "utveksling": null
+      }
+     ]
+    },
+    {
+     "entryId": "hivolda_planlegging",
+     "shortName": "HVO",
+     "institusjon": "Høgskulen i Volda",
+     "isNmbu": false,
+     "programnavn": "Planlegging, administrasjon og ledelse",
+     "nivaa": "B3",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 86,
+       "a21": 17,
+       "a24": 31,
+       "a29": 17,
+       "a30": 21,
+       "utenlandske": 4,
+       "utveksling": 5
+      },
+      {
+       "aar": 2020,
+       "total": 69,
+       "a21": 19,
+       "a24": 19,
+       "a29": 13,
+       "a30": 18,
+       "utenlandske": 3,
+       "utveksling": 3
+      },
+      {
+       "aar": 2021,
+       "total": 74,
+       "a21": 17,
+       "a24": 21,
+       "a29": 17,
+       "a30": 19,
+       "utenlandske": 3,
+       "utveksling": null
+      },
+      {
+       "aar": 2022,
+       "total": 68,
+       "a21": 15,
+       "a24": 20,
+       "a29": 18,
+       "a30": 15,
+       "utenlandske": 4,
+       "utveksling": 4
+      },
+      {
+       "aar": 2023,
+       "total": 57,
+       "a21": 12,
+       "a24": 17,
+       "a29": 17,
+       "a30": 11,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2024,
+       "total": 35,
+       "a21": 9,
+       "a24": 9,
+       "a29": 7,
+       "a30": 10,
+       "utenlandske": 4,
+       "utveksling": null
+      },
+      {
+       "aar": 2025,
+       "total": 28,
+       "a21": 4,
+       "a24": 11,
+       "a29": 5,
+       "a30": 8,
+       "utenlandske": 0,
+       "utveksling": 0
+      }
+     ]
+    },
+    {
+     "entryId": "ntnu_fysisk_planlegging",
+     "shortName": "NTNU (master 2 år)",
+     "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+     "isNmbu": false,
+     "programnavn": "Fysisk planlegging (fra 2026 Byplanlegging, master 2 år)",
+     "nivaa": "M2",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 54,
+       "a21": 0,
+       "a24": 15,
+       "a29": 29,
+       "a30": 9,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2020,
+       "total": 78,
+       "a21": 0,
+       "a24": 33,
+       "a29": 32,
+       "a30": 13,
+       "utenlandske": 3,
+       "utveksling": null
+      },
+      {
+       "aar": 2021,
+       "total": 78,
+       "a21": 0,
+       "a24": 42,
+       "a29": 25,
+       "a30": 10,
+       "utenlandske": 5,
+       "utveksling": null
+      },
+      {
+       "aar": 2022,
+       "total": 82,
+       "a21": 0,
+       "a24": 40,
+       "a29": 29,
+       "a30": 13,
+       "utenlandske": 6,
+       "utveksling": 3
+      },
+      {
+       "aar": 2023,
+       "total": 79,
+       "a21": 0,
+       "a24": 39,
+       "a29": 30,
+       "a30": 10,
+       "utenlandske": 3,
+       "utveksling": 0
+      },
+      {
+       "aar": 2024,
+       "total": 80,
+       "a21": 0,
+       "a24": 30,
+       "a29": 38,
+       "a30": 12,
+       "utenlandske": 3,
+       "utveksling": 0
+      },
+      {
+       "aar": 2025,
+       "total": 73,
+       "a21": 0,
+       "a24": 32,
+       "a29": 28,
+       "a30": 11,
+       "utenlandske": 3,
+       "utveksling": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "landskapsingenior",
+   "label": "Landskapsingeniør",
+   "level": "bachelor",
+   "nmbuIds": [
+    "nmbu_landskapsing"
+   ],
+   "defaultIds": [
+    "nmbu_landskapsing",
+    "hvl_landskapsplanlegging"
+   ],
+   "programs": [
+    {
+     "entryId": "nmbu_landskapsing",
+     "shortName": "NMBU",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "isNmbu": true,
+     "programnavn": "Landskapsingeniør (bachelor)",
+     "nivaa": "B3",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 87,
+       "a21": 27,
+       "a24": 28,
+       "a29": 14,
+       "a30": 18,
+       "utenlandske": 0,
+       "utveksling": 0
+      },
+      {
+       "aar": 2020,
+       "total": 83,
+       "a21": 31,
+       "a24": 26,
+       "a29": 9,
+       "a30": 17,
+       "utenlandske": 0,
+       "utveksling": 0
+      },
+      {
+       "aar": 2021,
+       "total": 75,
+       "a21": 25,
+       "a24": 26,
+       "a29": 9,
+       "a30": 15,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2022,
+       "total": 71,
+       "a21": 23,
+       "a24": 26,
+       "a29": 7,
+       "a30": 15,
+       "utenlandske": null,
+       "utveksling": 0
+      },
+      {
+       "aar": 2023,
+       "total": 78,
+       "a21": 29,
+       "a24": 21,
+       "a29": 13,
+       "a30": 15,
+       "utenlandske": null,
+       "utveksling": 0
+      },
+      {
+       "aar": 2024,
+       "total": 82,
+       "a21": 32,
+       "a24": 27,
+       "a29": 11,
+       "a30": 12,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2025,
+       "total": 80,
+       "a21": 24,
+       "a24": 38,
+       "a29": 4,
+       "a30": 14,
+       "utenlandske": null,
+       "utveksling": 0
+      }
+     ]
+    },
+    {
+     "entryId": "hvl_landskapsplanlegging",
+     "shortName": "HVL Sogndal",
+     "institusjon": "Høgskulen på Vestlandet",
+     "isNmbu": false,
+     "programnavn": "Landskapsplanlegging med landskapsarkitektur",
+     "nivaa": "B3",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 84,
+       "a21": 23,
+       "a24": 38,
+       "a29": 19,
+       "a30": 4,
+       "utenlandske": null,
+       "utveksling": 10
+      },
+      {
+       "aar": 2020,
+       "total": 81,
+       "a21": 26,
+       "a24": 29,
+       "a29": 24,
+       "a30": 0,
+       "utenlandske": null,
+       "utveksling": 0
+      },
+      {
+       "aar": 2021,
+       "total": 92,
+       "a21": 38,
+       "a24": 26,
+       "a29": 21,
+       "a30": 7,
+       "utenlandske": null,
+       "utveksling": 0
+      },
+      {
+       "aar": 2022,
+       "total": 92,
+       "a21": 25,
+       "a24": 40,
+       "a29": 19,
+       "a30": 8,
+       "utenlandske": null,
+       "utveksling": 14
+      },
+      {
+       "aar": 2023,
+       "total": 100,
+       "a21": 39,
+       "a24": 40,
+       "a29": 14,
+       "a30": 7,
+       "utenlandske": null,
+       "utveksling": 10
+      },
+      {
+       "aar": 2024,
+       "total": 107,
+       "a21": 45,
+       "a24": 44,
+       "a29": 13,
+       "a30": 5,
+       "utenlandske": null,
+       "utveksling": 0
+      },
+      {
+       "aar": 2025,
+       "total": 121,
+       "a21": 44,
+       "a24": 54,
+       "a29": 16,
+       "a30": 7,
+       "utenlandske": 0,
+       "utveksling": 13
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "miljoutvikling",
+   "label": "Internasjonale miljø- og utviklingsstudier",
+   "level": "bachelor",
+   "nmbuIds": [
+    "nmbu_ims"
+   ],
+   "defaultIds": [
+    "nmbu_ims",
+    "uio_utvikling_baerekraft",
+    "oslomet_utviklingsstudier",
+    "uia_globale_utviklingsstudier"
+   ],
+   "programs": [
+    {
+     "entryId": "nmbu_ims",
+     "shortName": "NMBU",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "isNmbu": true,
+     "programnavn": "Internasjonale miljø- og utviklingsstudier (bachelor)",
+     "nivaa": "B3",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 120,
+       "a21": 55,
+       "a24": 35,
+       "a29": 23,
+       "a30": 7,
+       "utenlandske": 36,
+       "utveksling": 8
+      },
+      {
+       "aar": 2020,
+       "total": 122,
+       "a21": 51,
+       "a24": 40,
+       "a29": 20,
+       "a30": 11,
+       "utenlandske": 33,
+       "utveksling": 0
+      },
+      {
+       "aar": 2021,
+       "total": 123,
+       "a21": 38,
+       "a24": 51,
+       "a29": 23,
+       "a30": 11,
+       "utenlandske": 39,
+       "utveksling": 12
+      },
+      {
+       "aar": 2022,
+       "total": 111,
+       "a21": 42,
+       "a24": 34,
+       "a29": 20,
+       "a30": 15,
+       "utenlandske": 51,
+       "utveksling": 8
+      },
+      {
+       "aar": 2023,
+       "total": 124,
+       "a21": 49,
+       "a24": 37,
+       "a29": 25,
+       "a30": 13,
+       "utenlandske": 60,
+       "utveksling": 15
+      },
+      {
+       "aar": 2024,
+       "total": 130,
+       "a21": 46,
+       "a24": 46,
+       "a29": 22,
+       "a30": 16,
+       "utenlandske": 65,
+       "utveksling": 10
+      },
+      {
+       "aar": 2025,
+       "total": 120,
+       "a21": 31,
+       "a24": 42,
+       "a29": 28,
+       "a30": 19,
+       "utenlandske": 58,
+       "utveksling": 15
+      }
+     ]
+    },
+    {
+     "entryId": "uio_utvikling_baerekraft",
+     "shortName": "UiO",
+     "institusjon": "Universitetet i Oslo",
+     "isNmbu": false,
+     "programnavn": "Utviklingsstudier og bærekraft",
+     "nivaa": "B3",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 114,
+       "a21": 59,
+       "a24": 38,
+       "a29": 10,
+       "a30": 7,
+       "utenlandske": 5,
+       "utveksling": 9
+      },
+      {
+       "aar": 2020,
+       "total": 122,
+       "a21": 64,
+       "a24": 34,
+       "a29": 19,
+       "a30": 5,
+       "utenlandske": 4,
+       "utveksling": 0
+      },
+      {
+       "aar": 2021,
+       "total": 120,
+       "a21": 55,
+       "a24": 44,
+       "a29": 14,
+       "a30": 7,
+       "utenlandske": 6,
+       "utveksling": 13
+      },
+      {
+       "aar": 2022,
+       "total": 123,
+       "a21": 65,
+       "a24": 39,
+       "a29": 11,
+       "a30": 8,
+       "utenlandske": 5,
+       "utveksling": 12
+      },
+      {
+       "aar": 2023,
+       "total": 121,
+       "a21": 62,
+       "a24": 43,
+       "a29": 9,
+       "a30": 7,
+       "utenlandske": 7,
+       "utveksling": 13
+      },
+      {
+       "aar": 2024,
+       "total": 127,
+       "a21": 62,
+       "a24": 43,
+       "a29": 14,
+       "a30": 8,
+       "utenlandske": 5,
+       "utveksling": 12
+      },
+      {
+       "aar": 2025,
+       "total": 130,
+       "a21": 58,
+       "a24": 50,
+       "a29": 12,
+       "a30": 10,
+       "utenlandske": 0,
+       "utveksling": 21
+      }
+     ]
+    },
+    {
+     "entryId": "oslomet_utviklingsstudier",
+     "shortName": "OsloMet",
+     "institusjon": "OsloMet - storbyuniversitetet",
+     "isNmbu": false,
+     "programnavn": "Utviklingsstudier, bachelor",
+     "nivaa": "B3",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 133,
+       "a21": 67,
+       "a24": 45,
+       "a29": 17,
+       "a30": 4,
+       "utenlandske": 5,
+       "utveksling": 17
+      },
+      {
+       "aar": 2020,
+       "total": 143,
+       "a21": 65,
+       "a24": 54,
+       "a29": 17,
+       "a30": 7,
+       "utenlandske": null,
+       "utveksling": 18
+      },
+      {
+       "aar": 2021,
+       "total": 128,
+       "a21": 56,
+       "a24": 51,
+       "a29": 14,
+       "a30": 7,
+       "utenlandske": 0,
+       "utveksling": 10
+      },
+      {
+       "aar": 2022,
+       "total": 125,
+       "a21": 58,
+       "a24": 46,
+       "a29": 15,
+       "a30": 6,
+       "utenlandske": null,
+       "utveksling": 33
+      },
+      {
+       "aar": 2023,
+       "total": 115,
+       "a21": 55,
+       "a24": 45,
+       "a29": 9,
+       "a30": 6,
+       "utenlandske": null,
+       "utveksling": 18
+      },
+      {
+       "aar": 2024,
+       "total": 116,
+       "a21": 48,
+       "a24": 43,
+       "a29": 19,
+       "a30": 6,
+       "utenlandske": null,
+       "utveksling": 17
+      },
+      {
+       "aar": 2025,
+       "total": 139,
+       "a21": 68,
+       "a24": 45,
+       "a29": 18,
+       "a30": 8,
+       "utenlandske": 0,
+       "utveksling": 18
+      }
+     ]
+    },
+    {
+     "entryId": "uia_globale_utviklingsstudier",
+     "shortName": "UiA",
+     "institusjon": "Universitetet i Agder",
+     "isNmbu": false,
+     "programnavn": "Globale utviklingsstudier, bachelor",
+     "nivaa": "B3",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 92,
+       "a21": 40,
+       "a24": 30,
+       "a29": 13,
+       "a30": 9,
+       "utenlandske": 10,
+       "utveksling": 33
+      },
+      {
+       "aar": 2020,
+       "total": 105,
+       "a21": 36,
+       "a24": 41,
+       "a29": 18,
+       "a30": 10,
+       "utenlandske": 25,
+       "utveksling": 22
+      },
+      {
+       "aar": 2021,
+       "total": 111,
+       "a21": 44,
+       "a24": 39,
+       "a29": 14,
+       "a30": 14,
+       "utenlandske": 37,
+       "utveksling": 8
+      },
+      {
+       "aar": 2022,
+       "total": 129,
+       "a21": 52,
+       "a24": 40,
+       "a29": 21,
+       "a30": 16,
+       "utenlandske": 58,
+       "utveksling": 10
+      },
+      {
+       "aar": 2023,
+       "total": 138,
+       "a21": 65,
+       "a24": 29,
+       "a29": 24,
+       "a30": 20,
+       "utenlandske": 57,
+       "utveksling": 26
+      },
+      {
+       "aar": 2024,
+       "total": 148,
+       "a21": 65,
+       "a24": 35,
+       "a29": 28,
+       "a30": 20,
+       "utenlandske": 62,
+       "utveksling": 35
+      },
+      {
+       "aar": 2025,
+       "total": 141,
+       "a21": 57,
+       "a24": 43,
+       "a29": 18,
+       "a30": 23,
+       "utenlandske": 64,
+       "utveksling": 36
+      }
+     ]
+    },
+    {
+     "entryId": "uio_internasjonale_studier",
+     "shortName": "UiO (int.stud.)",
+     "institusjon": "Universitetet i Oslo",
+     "isNmbu": false,
+     "programnavn": "Internasjonale studier",
+     "nivaa": "B3",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 194,
+       "a21": 93,
+       "a24": 74,
+       "a29": 20,
+       "a30": 7,
+       "utenlandske": 0,
+       "utveksling": 33
+      },
+      {
+       "aar": 2020,
+       "total": 204,
+       "a21": 107,
+       "a24": 68,
+       "a29": 21,
+       "a30": 8,
+       "utenlandske": 6,
+       "utveksling": 6
+      },
+      {
+       "aar": 2021,
+       "total": 197,
+       "a21": 96,
+       "a24": 73,
+       "a29": 15,
+       "a30": 13,
+       "utenlandske": 8,
+       "utveksling": 35
+      },
+      {
+       "aar": 2022,
+       "total": 185,
+       "a21": 81,
+       "a24": 75,
+       "a29": 17,
+       "a30": 12,
+       "utenlandske": 6,
+       "utveksling": 41
+      },
+      {
+       "aar": 2023,
+       "total": 179,
+       "a21": 95,
+       "a24": 57,
+       "a29": 16,
+       "a30": 11,
+       "utenlandske": 8,
+       "utveksling": 35
+      },
+      {
+       "aar": 2024,
+       "total": 211,
+       "a21": 110,
+       "a24": 70,
+       "a29": 22,
+       "a30": 9,
+       "utenlandske": 6,
+       "utveksling": 30
+      },
+      {
+       "aar": 2025,
+       "total": 214,
+       "a21": 83,
+       "a24": 99,
+       "a29": 23,
+       "a30": 9,
+       "utenlandske": 6,
+       "utveksling": 53
+      }
+     ]
+    },
+    {
+     "entryId": "inn_internasjonale_studier",
+     "shortName": "INN",
+     "institusjon": "Universitetet i Innlandet",
+     "isNmbu": false,
+     "programnavn": "Internasjonale studier , bachelor",
+     "nivaa": "B3",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 151,
+       "a21": 64,
+       "a24": 63,
+       "a29": 16,
+       "a30": 8,
+       "utenlandske": null,
+       "utveksling": 17
+      },
+      {
+       "aar": 2020,
+       "total": 132,
+       "a21": 44,
+       "a24": 55,
+       "a29": 18,
+       "a30": 15,
+       "utenlandske": 0,
+       "utveksling": 16
+      },
+      {
+       "aar": 2021,
+       "total": 126,
+       "a21": 36,
+       "a24": 52,
+       "a29": 24,
+       "a30": 14,
+       "utenlandske": 0,
+       "utveksling": 10
+      },
+      {
+       "aar": 2022,
+       "total": 106,
+       "a21": 35,
+       "a24": 43,
+       "a29": 20,
+       "a30": 8,
+       "utenlandske": 0,
+       "utveksling": 18
+      },
+      {
+       "aar": 2023,
+       "total": 115,
+       "a21": 56,
+       "a24": 31,
+       "a29": 14,
+       "a30": 14,
+       "utenlandske": null,
+       "utveksling": 18
+      },
+      {
+       "aar": 2024,
+       "total": 125,
+       "a21": 68,
+       "a24": 30,
+       "a29": 16,
+       "a30": 11,
+       "utenlandske": null,
+       "utveksling": 13
+      },
+      {
+       "aar": 2025,
+       "total": 147,
+       "a21": 88,
+       "a24": 36,
+       "a29": 12,
+       "a30": 11,
+       "utenlandske": 0,
+       "utveksling": 19
+      }
+     ]
+    },
+    {
+     "entryId": "nord_internasjonale_relasjoner_b",
+     "shortName": "Nord",
+     "institusjon": "Nord universitet",
+     "isNmbu": false,
+     "programnavn": "Internasjonale relasjoner, bachelor",
+     "nivaa": "B3",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 84,
+       "a21": 34,
+       "a24": 38,
+       "a29": 10,
+       "a30": 0,
+       "utenlandske": 0,
+       "utveksling": 6
+      },
+      {
+       "aar": 2020,
+       "total": 83,
+       "a21": 34,
+       "a24": 29,
+       "a29": 19,
+       "a30": 0,
+       "utenlandske": 0,
+       "utveksling": 3
+      },
+      {
+       "aar": 2021,
+       "total": 79,
+       "a21": 30,
+       "a24": 28,
+       "a29": 17,
+       "a30": 4,
+       "utenlandske": 0,
+       "utveksling": 0
+      },
+      {
+       "aar": 2022,
+       "total": 71,
+       "a21": 21,
+       "a24": 30,
+       "a29": 11,
+       "a30": 9,
+       "utenlandske": 0,
+       "utveksling": 3
+      },
+      {
+       "aar": 2023,
+       "total": 52,
+       "a21": 22,
+       "a24": 21,
+       "a29": 6,
+       "a30": 3,
+       "utenlandske": null,
+       "utveksling": 4
+      },
+      {
+       "aar": 2024,
+       "total": 59,
+       "a21": 27,
+       "a24": 16,
+       "a29": 12,
+       "a30": 4,
+       "utenlandske": null,
+       "utveksling": 7
+      },
+      {
+       "aar": 2025,
+       "total": 54,
+       "a21": 22,
+       "a24": 15,
+       "a29": 9,
+       "a30": 8,
+       "utenlandske": null,
+       "utveksling": 8
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eiendomsutvikling",
+   "label": "Eiendomsutvikling",
+   "level": "master2",
+   "nmbuIds": [
+    "nmbu_eiendomsutvikling"
+   ],
+   "defaultIds": [
+    "nmbu_eiendomsutvikling",
+    "ntnu_eiendomsutvikling"
+   ],
+   "programs": [
+    {
+     "entryId": "nmbu_eiendomsutvikling",
+     "shortName": "NMBU",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "isNmbu": true,
+     "programnavn": "Eiendomsutvikling (master 2 år)",
+     "nivaa": "M2",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 61,
+       "a21": 0,
+       "a24": 24,
+       "a29": 27,
+       "a30": 9,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2020,
+       "total": 58,
+       "a21": 0,
+       "a24": 20,
+       "a29": 25,
+       "a30": 11,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2021,
+       "total": 61,
+       "a21": 0,
+       "a24": 21,
+       "a29": 30,
+       "a30": 10,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2022,
+       "total": 64,
+       "a21": 0,
+       "a24": 15,
+       "a29": 36,
+       "a30": 13,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2023,
+       "total": 78,
+       "a21": 0,
+       "a24": 38,
+       "a29": 26,
+       "a30": 13,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2024,
+       "total": 72,
+       "a21": 0,
+       "a24": 32,
+       "a29": 32,
+       "a30": 8,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2025,
+       "total": 63,
+       "a21": 0,
+       "a24": 20,
+       "a29": 31,
+       "a30": 11,
+       "utenlandske": 0,
+       "utveksling": null
+      }
+     ]
+    },
+    {
+     "entryId": "ntnu_eiendomsutvikling",
+     "shortName": "NTNU",
+     "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+     "isNmbu": false,
+     "programnavn": "Eiendomsutvikling og -forvaltning (master 2 år)",
+     "nivaa": "M2",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 42,
+       "a21": 0,
+       "a24": 21,
+       "a29": 16,
+       "a30": 3,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2020,
+       "total": 52,
+       "a21": 0,
+       "a24": 25,
+       "a29": 23,
+       "a30": 4,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2021,
+       "total": 59,
+       "a21": 0,
+       "a24": 26,
+       "a29": 29,
+       "a30": 4,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2022,
+       "total": 64,
+       "a21": 3,
+       "a24": 31,
+       "a29": 26,
+       "a30": 4,
+       "utenlandske": null,
+       "utveksling": 0
+      },
+      {
+       "aar": 2023,
+       "total": 63,
+       "a21": 0,
+       "a24": 33,
+       "a29": 26,
+       "a30": 3,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2024,
+       "total": 56,
+       "a21": 0,
+       "a24": 28,
+       "a29": 26,
+       "a30": 0,
+       "utenlandske": null,
+       "utveksling": 6
+      },
+      {
+       "aar": 2025,
+       "total": 64,
+       "a21": 0,
+       "a24": 36,
+       "a29": 24,
+       "a30": 3,
+       "utenlandske": null,
+       "utveksling": 11
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "folkehelse",
+   "label": "Folkehelsevitenskap",
+   "level": "master2",
+   "nmbuIds": [
+    "nmbu_folkehelse"
+   ],
+   "defaultIds": [
+    "nmbu_folkehelse",
+    "ntnu_folkehelse"
+   ],
+   "programs": [
+    {
+     "entryId": "nmbu_folkehelse",
+     "shortName": "NMBU",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "isNmbu": true,
+     "programnavn": "Folkehelsevitenskap (master 2 år)",
+     "nivaa": "M2",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 59,
+       "a21": 0,
+       "a24": 5,
+       "a29": 26,
+       "a30": 28,
+       "utenlandske": 6,
+       "utveksling": null
+      },
+      {
+       "aar": 2020,
+       "total": 64,
+       "a21": 0,
+       "a24": 7,
+       "a29": 33,
+       "a30": 24,
+       "utenlandske": 5,
+       "utveksling": null
+      },
+      {
+       "aar": 2021,
+       "total": 66,
+       "a21": 0,
+       "a24": 7,
+       "a29": 32,
+       "a30": 27,
+       "utenlandske": 6,
+       "utveksling": null
+      },
+      {
+       "aar": 2022,
+       "total": 59,
+       "a21": 0,
+       "a24": 9,
+       "a29": 28,
+       "a30": 22,
+       "utenlandske": 3,
+       "utveksling": null
+      },
+      {
+       "aar": 2023,
+       "total": 61,
+       "a21": 0,
+       "a24": 10,
+       "a29": 31,
+       "a30": 20,
+       "utenlandske": 0,
+       "utveksling": 0
+      },
+      {
+       "aar": 2024,
+       "total": 57,
+       "a21": 0,
+       "a24": 7,
+       "a29": 25,
+       "a30": 25,
+       "utenlandske": 0,
+       "utveksling": 0
+      },
+      {
+       "aar": 2025,
+       "total": 46,
+       "a21": 0,
+       "a24": 6,
+       "a29": 16,
+       "a30": 24,
+       "utenlandske": 5,
+       "utveksling": 0
+      }
+     ]
+    },
+    {
+     "entryId": "ntnu_folkehelse",
+     "shortName": "NTNU",
+     "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+     "isNmbu": false,
+     "programnavn": "Folkehelse (master 2 år)",
+     "nivaa": "M2",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 77,
+       "a21": 0,
+       "a24": 10,
+       "a29": 21,
+       "a30": 46,
+       "utenlandske": 4,
+       "utveksling": null
+      },
+      {
+       "aar": 2020,
+       "total": 70,
+       "a21": 0,
+       "a24": 9,
+       "a29": 19,
+       "a30": 42,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2021,
+       "total": 68,
+       "a21": 0,
+       "a24": 18,
+       "a29": 27,
+       "a30": 23,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2022,
+       "total": 107,
+       "a21": 0,
+       "a24": 20,
+       "a29": 38,
+       "a30": 49,
+       "utenlandske": 4,
+       "utveksling": null
+      },
+      {
+       "aar": 2023,
+       "total": 102,
+       "a21": 0,
+       "a24": 18,
+       "a29": 35,
+       "a30": 49,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2024,
+       "total": 91,
+       "a21": 0,
+       "a24": 16,
+       "a29": 35,
+       "a30": 40,
+       "utenlandske": 3,
+       "utveksling": null
+      },
+      {
+       "aar": 2025,
+       "total": 91,
+       "a21": 0,
+       "a24": 20,
+       "a29": 33,
+       "a30": 38,
+       "utenlandske": 5,
+       "utveksling": null
+      }
+     ]
+    },
+    {
+     "entryId": "uio_folkehelsearbeid",
+     "shortName": "UiO",
+     "institusjon": "Universitetet i Oslo",
+     "isNmbu": false,
+     "programnavn": "Folkehelsearbeid og bærekraftige helsetjenester (master 2 år)",
+     "nivaa": "M2",
+     "aar": [
+      {
+       "aar": 2023,
+       "total": 44,
+       "a21": 0,
+       "a24": 14,
+       "a29": 19,
+       "a30": 11,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2024,
+       "total": 86,
+       "a21": 0,
+       "a24": 23,
+       "a29": 41,
+       "a30": 21,
+       "utenlandske": 3,
+       "utveksling": null
+      },
+      {
+       "aar": 2025,
+       "total": 123,
+       "a21": 0,
+       "a24": 32,
+       "a29": 62,
+       "a30": 28,
+       "utenlandske": 8,
+       "utveksling": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "globalokonomi",
+   "label": "Global økonomi og politikk",
+   "level": "master2",
+   "nmbuIds": [
+    "nmbu_gep"
+   ],
+   "defaultIds": [
+    "nmbu_gep"
+   ],
+   "programs": [
+    {
+     "entryId": "nmbu_gep",
+     "shortName": "NMBU",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "isNmbu": true,
+     "programnavn": "Global økonomi og politikk (master 2 år)",
+     "nivaa": "M2",
+     "aar": [
+      {
+       "aar": 2025,
+       "total": 15,
+       "a21": 0,
+       "a24": 8,
+       "a29": 6,
+       "a30": 0,
+       "utenlandske": 4,
+       "utveksling": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "globaleutvikling",
+   "label": "Globale utviklingsstudier",
+   "level": "master2",
+   "nmbuIds": [
+    "nmbu_globale_utviklingsstudier"
+   ],
+   "defaultIds": [
+    "nmbu_globale_utviklingsstudier",
+    "uio_decc"
+   ],
+   "programs": [
+    {
+     "entryId": "nmbu_globale_utviklingsstudier",
+     "shortName": "NMBU",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "isNmbu": true,
+     "programnavn": "Globale utviklingsstudier (master 2 år)",
+     "nivaa": "M2",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 70,
+       "a21": 0,
+       "a24": 12,
+       "a29": 31,
+       "a30": 27,
+       "utenlandske": 48,
+       "utveksling": 3
+      },
+      {
+       "aar": 2020,
+       "total": 70,
+       "a21": 0,
+       "a24": 17,
+       "a29": 28,
+       "a30": 25,
+       "utenlandske": 42,
+       "utveksling": 3
+      },
+      {
+       "aar": 2021,
+       "total": 70,
+       "a21": 0,
+       "a24": 7,
+       "a29": 34,
+       "a30": 29,
+       "utenlandske": 38,
+       "utveksling": 0
+      },
+      {
+       "aar": 2022,
+       "total": 52,
+       "a21": 0,
+       "a24": 3,
+       "a29": 29,
+       "a30": 20,
+       "utenlandske": 31,
+       "utveksling": 0
+      },
+      {
+       "aar": 2023,
+       "total": 38,
+       "a21": 0,
+       "a24": 7,
+       "a29": 18,
+       "a30": 13,
+       "utenlandske": 22,
+       "utveksling": 0
+      },
+      {
+       "aar": 2024,
+       "total": 43,
+       "a21": 0,
+       "a24": 7,
+       "a29": 22,
+       "a30": 14,
+       "utenlandske": 26,
+       "utveksling": 0
+      },
+      {
+       "aar": 2025,
+       "total": 46,
+       "a21": 0,
+       "a24": 11,
+       "a29": 21,
+       "a30": 13,
+       "utenlandske": 30,
+       "utveksling": 3
+      }
+     ]
+    },
+    {
+     "entryId": "uio_decc",
+     "shortName": "UiO",
+     "institusjon": "Universitetet i Oslo",
+     "isNmbu": false,
+     "programnavn": "Development, Environment and Cultural Change (master 2 år)",
+     "nivaa": "M2",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 55,
+       "a21": 0,
+       "a24": 12,
+       "a29": 27,
+       "a30": 15,
+       "utenlandske": 35,
+       "utveksling": null
+      },
+      {
+       "aar": 2020,
+       "total": 71,
+       "a21": 0,
+       "a24": 17,
+       "a29": 32,
+       "a30": 22,
+       "utenlandske": 37,
+       "utveksling": 0
+      },
+      {
+       "aar": 2021,
+       "total": 76,
+       "a21": 0,
+       "a24": 17,
+       "a29": 34,
+       "a30": 25,
+       "utenlandske": 37,
+       "utveksling": null
+      },
+      {
+       "aar": 2022,
+       "total": 76,
+       "a21": 0,
+       "a24": 21,
+       "a29": 35,
+       "a30": 19,
+       "utenlandske": 35,
+       "utveksling": null
+      },
+      {
+       "aar": 2023,
+       "total": 77,
+       "a21": 0,
+       "a24": 14,
+       "a29": 45,
+       "a30": 17,
+       "utenlandske": 41,
+       "utveksling": null
+      },
+      {
+       "aar": 2024,
+       "total": 67,
+       "a21": 0,
+       "a24": 17,
+       "a29": 37,
+       "a30": 11,
+       "utenlandske": 38,
+       "utveksling": null
+      },
+      {
+       "aar": 2025,
+       "total": 71,
+       "a21": 0,
+       "a24": 20,
+       "a29": 34,
+       "a30": 16,
+       "utenlandske": 45,
+       "utveksling": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "intmiljo",
+   "label": "Internasjonale miljøstudier",
+   "level": "master2",
+   "nmbuIds": [
+    "nmbu_intmiljo"
+   ],
+   "defaultIds": [
+    "nmbu_intmiljo"
+   ],
+   "programs": [
+    {
+     "entryId": "nmbu_intmiljo",
+     "shortName": "NMBU",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "isNmbu": true,
+     "programnavn": "Internasjonale miljøstudier (master 2 år)",
+     "nivaa": "M2",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 80,
+       "a21": 0,
+       "a24": 16,
+       "a29": 36,
+       "a30": 28,
+       "utenlandske": 43,
+       "utveksling": 0
+      },
+      {
+       "aar": 2020,
+       "total": 80,
+       "a21": 0,
+       "a24": 20,
+       "a29": 35,
+       "a30": 25,
+       "utenlandske": 41,
+       "utveksling": 3
+      },
+      {
+       "aar": 2021,
+       "total": 80,
+       "a21": 0,
+       "a24": 25,
+       "a29": 29,
+       "a30": 24,
+       "utenlandske": 44,
+       "utveksling": 0
+      },
+      {
+       "aar": 2022,
+       "total": 64,
+       "a21": 3,
+       "a24": 19,
+       "a29": 32,
+       "a30": 10,
+       "utenlandske": 30,
+       "utveksling": 4
+      },
+      {
+       "aar": 2023,
+       "total": 59,
+       "a21": 0,
+       "a24": 15,
+       "a29": 25,
+       "a30": 19,
+       "utenlandske": 28,
+       "utveksling": 4
+      },
+      {
+       "aar": 2024,
+       "total": 64,
+       "a21": 0,
+       "a24": 14,
+       "a29": 26,
+       "a30": 24,
+       "utenlandske": 29,
+       "utveksling": 4
+      },
+      {
+       "aar": 2025,
+       "total": 52,
+       "a21": 0,
+       "a24": 10,
+       "a29": 27,
+       "a30": 15,
+       "utenlandske": 26,
+       "utveksling": 7
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "intrelasjoner",
+   "label": "Internasjonale relasjoner",
+   "level": "master2",
+   "nmbuIds": [
+    "nmbu_intrel"
+   ],
+   "defaultIds": [
+    "nmbu_intrel",
+    "uio_pecos"
+   ],
+   "programs": [
+    {
+     "entryId": "nmbu_intrel",
+     "shortName": "NMBU",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "isNmbu": true,
+     "programnavn": "Internasjonale relasjoner (master 2 år)",
+     "nivaa": "M2",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 92,
+       "a21": 0,
+       "a24": 20,
+       "a29": 42,
+       "a30": 30,
+       "utenlandske": 44,
+       "utveksling": 4
+      },
+      {
+       "aar": 2020,
+       "total": 81,
+       "a21": 0,
+       "a24": 14,
+       "a29": 37,
+       "a30": 28,
+       "utenlandske": 44,
+       "utveksling": 0
+      },
+      {
+       "aar": 2021,
+       "total": 77,
+       "a21": 0,
+       "a24": 20,
+       "a29": 29,
+       "a30": 28,
+       "utenlandske": 43,
+       "utveksling": 6
+      },
+      {
+       "aar": 2022,
+       "total": 81,
+       "a21": 0,
+       "a24": 20,
+       "a29": 32,
+       "a30": 27,
+       "utenlandske": 43,
+       "utveksling": 8
+      },
+      {
+       "aar": 2023,
+       "total": 76,
+       "a21": 0,
+       "a24": 22,
+       "a29": 30,
+       "a30": 24,
+       "utenlandske": 34,
+       "utveksling": 5
+      },
+      {
+       "aar": 2024,
+       "total": 71,
+       "a21": 0,
+       "a24": 29,
+       "a29": 32,
+       "a30": 10,
+       "utenlandske": 19,
+       "utveksling": 5
+      },
+      {
+       "aar": 2025,
+       "total": 93,
+       "a21": 0,
+       "a24": 31,
+       "a29": 51,
+       "a30": 10,
+       "utenlandske": 12,
+       "utveksling": 12
+      }
+     ]
+    },
+    {
+     "entryId": "uio_pecos",
+     "shortName": "UiO",
+     "institusjon": "Universitetet i Oslo",
+     "isNmbu": false,
+     "programnavn": "Peace and Conflict Studies (master 2 år)",
+     "nivaa": "M2",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 66,
+       "a21": 0,
+       "a24": 27,
+       "a29": 28,
+       "a30": 10,
+       "utenlandske": 21,
+       "utveksling": null
+      },
+      {
+       "aar": 2020,
+       "total": 58,
+       "a21": 0,
+       "a24": 23,
+       "a29": 27,
+       "a30": 8,
+       "utenlandske": 21,
+       "utveksling": null
+      },
+      {
+       "aar": 2021,
+       "total": 54,
+       "a21": 0,
+       "a24": 18,
+       "a29": 25,
+       "a30": 10,
+       "utenlandske": 21,
+       "utveksling": 0
+      },
+      {
+       "aar": 2022,
+       "total": 49,
+       "a21": 0,
+       "a24": 18,
+       "a29": 24,
+       "a30": 6,
+       "utenlandske": 17,
+       "utveksling": null
+      },
+      {
+       "aar": 2023,
+       "total": 45,
+       "a21": 0,
+       "a24": 18,
+       "a29": 23,
+       "a30": 4,
+       "utenlandske": 12,
+       "utveksling": 0
+      },
+      {
+       "aar": 2024,
+       "total": 53,
+       "a21": 3,
+       "a24": 22,
+       "a29": 24,
+       "a30": 4,
+       "utenlandske": 16,
+       "utveksling": 7
+      },
+      {
+       "aar": 2025,
+       "total": 63,
+       "a21": 3,
+       "a24": 34,
+       "a29": 21,
+       "a30": 5,
+       "utenlandske": 21,
+       "utveksling": 6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "landskapglobal",
+   "label": "Landskapsarkitektur for global bærekraft",
+   "level": "master2",
+   "nmbuIds": [
+    "nmbu_gla"
+   ],
+   "defaultIds": [
+    "nmbu_gla"
+   ],
+   "programs": [
+    {
+     "entryId": "nmbu_gla",
+     "shortName": "NMBU",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "isNmbu": true,
+     "programnavn": "Landskapsarkitektur for global bærekraft (master 2 år)",
+     "nivaa": "M2",
+     "aar": [
+      {
+       "aar": 2020,
+       "total": 12,
+       "a21": 0,
+       "a24": 0,
+       "a29": 8,
+       "a30": 0,
+       "utenlandske": 5,
+       "utveksling": null
+      },
+      {
+       "aar": 2021,
+       "total": 28,
+       "a21": 0,
+       "a24": 6,
+       "a29": 11,
+       "a30": 10,
+       "utenlandske": 11,
+       "utveksling": null
+      },
+      {
+       "aar": 2022,
+       "total": 43,
+       "a21": 0,
+       "a24": 9,
+       "a29": 19,
+       "a30": 15,
+       "utenlandske": 17,
+       "utveksling": 4
+      },
+      {
+       "aar": 2023,
+       "total": 32,
+       "a21": 0,
+       "a24": 0,
+       "a29": 17,
+       "a30": 13,
+       "utenlandske": 13,
+       "utveksling": 0
+      },
+      {
+       "aar": 2024,
+       "total": 31,
+       "a21": 0,
+       "a24": 9,
+       "a29": 14,
+       "a30": 8,
+       "utenlandske": 13,
+       "utveksling": null
+      },
+      {
+       "aar": 2025,
+       "total": 39,
+       "a21": 0,
+       "a24": 10,
+       "a29": 21,
+       "a30": 8,
+       "utenlandske": 14,
+       "utveksling": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "samfok_miljo",
+   "label": "Samfunnsøkonomi og miljøforvaltning",
+   "level": "master2",
+   "nmbuIds": [
+    "nmbu_eeg"
+   ],
+   "defaultIds": [
+    "nmbu_eeg",
+    "ntnu_msok",
+    "uio_economics"
+   ],
+   "programs": [
+    {
+     "entryId": "nmbu_eeg",
+     "shortName": "NMBU",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "isNmbu": true,
+     "programnavn": "Samfunnsøkonomi og miljøforvaltning (master 2 år)",
+     "nivaa": "M2",
+     "aar": [
+      {
+       "aar": 2024,
+       "total": 6,
+       "a21": 0,
+       "a24": 0,
+       "a29": 0,
+       "a30": 0,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2025,
+       "total": 20,
+       "a21": 0,
+       "a24": 4,
+       "a29": 7,
+       "a30": 9,
+       "utenlandske": 10,
+       "utveksling": 0
+      }
+     ]
+    },
+    {
+     "entryId": "ntnu_msok",
+     "shortName": "NTNU",
+     "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+     "isNmbu": false,
+     "programnavn": "Samfunnsøkonomi (master 2 år)",
+     "nivaa": "M2",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 48,
+       "a21": 0,
+       "a24": 18,
+       "a29": 21,
+       "a30": 8,
+       "utenlandske": 4,
+       "utveksling": 5
+      },
+      {
+       "aar": 2020,
+       "total": 55,
+       "a21": 3,
+       "a24": 24,
+       "a29": 19,
+       "a30": 9,
+       "utenlandske": 3,
+       "utveksling": 0
+      },
+      {
+       "aar": 2021,
+       "total": 68,
+       "a21": 3,
+       "a24": 37,
+       "a29": 21,
+       "a30": 7,
+       "utenlandske": 4,
+       "utveksling": 3
+      },
+      {
+       "aar": 2022,
+       "total": 63,
+       "a21": 0,
+       "a24": 36,
+       "a29": 18,
+       "a30": 9,
+       "utenlandske": 5,
+       "utveksling": 9
+      },
+      {
+       "aar": 2023,
+       "total": 75,
+       "a21": 0,
+       "a24": 28,
+       "a29": 36,
+       "a30": 10,
+       "utenlandske": 4,
+       "utveksling": 0
+      },
+      {
+       "aar": 2024,
+       "total": 55,
+       "a21": 0,
+       "a24": 18,
+       "a29": 28,
+       "a30": 9,
+       "utenlandske": 3,
+       "utveksling": 3
+      },
+      {
+       "aar": 2025,
+       "total": 58,
+       "a21": 0,
+       "a24": 27,
+       "a29": 22,
+       "a30": 8,
+       "utenlandske": 0,
+       "utveksling": 5
+      }
+     ]
+    },
+    {
+     "entryId": "uio_economics",
+     "shortName": "UiO",
+     "institusjon": "Universitetet i Oslo",
+     "isNmbu": false,
+     "programnavn": "Economics (master 2 år)",
+     "nivaa": "M2",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 162,
+       "a21": 0,
+       "a24": 65,
+       "a29": 69,
+       "a30": 28,
+       "utenlandske": 42,
+       "utveksling": 12
+      },
+      {
+       "aar": 2020,
+       "total": 176,
+       "a21": 0,
+       "a24": 64,
+       "a29": 75,
+       "a30": 35,
+       "utenlandske": 49,
+       "utveksling": 5
+      },
+      {
+       "aar": 2021,
+       "total": 164,
+       "a21": 0,
+       "a24": 64,
+       "a29": 67,
+       "a30": 31,
+       "utenlandske": 37,
+       "utveksling": 9
+      },
+      {
+       "aar": 2022,
+       "total": 156,
+       "a21": 0,
+       "a24": 78,
+       "a29": 53,
+       "a30": 23,
+       "utenlandske": 21,
+       "utveksling": 10
+      },
+      {
+       "aar": 2023,
+       "total": 133,
+       "a21": 0,
+       "a24": 62,
+       "a29": 54,
+       "a30": 16,
+       "utenlandske": 16,
+       "utveksling": 14
+      },
+      {
+       "aar": 2024,
+       "total": 135,
+       "a21": 0,
+       "a24": 64,
+       "a29": 56,
+       "a30": 14,
+       "utenlandske": 15,
+       "utveksling": 13
+      },
+      {
+       "aar": 2025,
+       "total": 161,
+       "a21": 0,
+       "a24": 73,
+       "a29": 69,
+       "a30": 17,
+       "utenlandske": 14,
+       "utveksling": 16
+      }
+     ]
+    },
+    {
+     "entryId": "uib_samfunnsokonomi",
+     "shortName": "UiB",
+     "institusjon": "Universitetet i Bergen",
+     "isNmbu": false,
+     "programnavn": "Samfunnsøkonomi (master 2 år)",
+     "nivaa": "M2",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 50,
+       "a21": 0,
+       "a24": 19,
+       "a29": 21,
+       "a30": 9,
+       "utenlandske": 0,
+       "utveksling": 3
+      },
+      {
+       "aar": 2020,
+       "total": 59,
+       "a21": 0,
+       "a24": 37,
+       "a29": 18,
+       "a30": 4,
+       "utenlandske": 0,
+       "utveksling": 0
+      },
+      {
+       "aar": 2021,
+       "total": 64,
+       "a21": 0,
+       "a24": 40,
+       "a29": 20,
+       "a30": 3,
+       "utenlandske": 0,
+       "utveksling": 0
+      },
+      {
+       "aar": 2022,
+       "total": 59,
+       "a21": 0,
+       "a24": 33,
+       "a29": 21,
+       "a30": 4,
+       "utenlandske": 0,
+       "utveksling": 5
+      },
+      {
+       "aar": 2023,
+       "total": 50,
+       "a21": 0,
+       "a24": 32,
+       "a29": 13,
+       "a30": 4,
+       "utenlandske": null,
+       "utveksling": 0
+      },
+      {
+       "aar": 2024,
+       "total": 54,
+       "a21": 0,
+       "a24": 35,
+       "a29": 15,
+       "a30": 4,
+       "utenlandske": null,
+       "utveksling": 3
+      },
+      {
+       "aar": 2025,
+       "total": 62,
+       "a21": 0,
+       "a24": 38,
+       "a29": 19,
+       "a30": 4,
+       "utenlandske": null,
+       "utveksling": null
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

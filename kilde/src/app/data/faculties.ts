@@ -108,6 +108,13 @@ import { COMPLETION_GROUPS as BIOVIT_COMPLETION, COMPLETION_HENTET as BIOVIT_COM
 import { COMPLETION_GROUPS as KBM_COMPLETION, COMPLETION_HENTET as KBM_COMPLETION_HENTET } from './kbmCompletionData';
 import { COMPLETION_GROUPS as MINA_COMPLETION, COMPLETION_HENTET as MINA_COMPLETION_HENTET } from './minaCompletionData';
 import { COMPLETION_GROUPS as VET_COMPLETION, COMPLETION_HENTET as VET_COMPLETION_HENTET } from './vetCompletionData';
+import type { StudentGroup } from './landsamStudentData';
+import { STUDENT_GROUPS as LANDSAM_STUDENTS } from './landsamStudentData';
+import { STUDENT_GROUPS as REALTEK_STUDENTS } from './realtekStudentData';
+import { STUDENT_GROUPS as BIOVIT_STUDENTS } from './biovitStudentData';
+import { STUDENT_GROUPS as KBM_STUDENTS } from './kbmStudentData';
+import { STUDENT_GROUPS as MINA_STUDENTS } from './minaStudentData';
+import { STUDENT_GROUPS as VET_STUDENTS } from './vetStudentData';
 
 export type { MarketInstitution, MarketDoc };
 export type { CompletionGroup };
@@ -141,6 +148,8 @@ export interface FacultyData {
   /** Gjennomføring, frafall, registrerte, nye og kandidater per program (DBH 707/123/110/104/335). */
   completionGroups: CompletionGroup[];
   completionHentet: string | null;
+  /** «Studentene»: alder, utenlandske og utveksling per program (DBH 60/135/142). */
+  studentGroups: StudentGroup[];
 }
 
 export const FACULTIES: Record<FacultyId, FacultyData> = {
@@ -161,6 +170,7 @@ export const FACULTIES: Record<FacultyId, FacultyData> = {
     studiebarometer: LANDSAM_STUDIEBAROMETER,
     completionGroups: LANDSAM_COMPLETION,
     completionHentet: LANDSAM_COMPLETION_HENTET,
+    studentGroups: LANDSAM_STUDENTS,
   },
   realtek: {
     id: 'realtek',
@@ -179,6 +189,7 @@ export const FACULTIES: Record<FacultyId, FacultyData> = {
     studiebarometer: REALTEK_STUDIEBAROMETER,
     completionGroups: REALTEK_COMPLETION,
     completionHentet: REALTEK_COMPLETION_HENTET,
+    studentGroups: REALTEK_STUDENTS,
   },
   biovit: {
     id: 'biovit',
@@ -197,6 +208,7 @@ export const FACULTIES: Record<FacultyId, FacultyData> = {
     studiebarometer: BIOVIT_STUDIEBAROMETER,
     completionGroups: BIOVIT_COMPLETION,
     completionHentet: BIOVIT_COMPLETION_HENTET,
+    studentGroups: BIOVIT_STUDENTS,
   },
   kbm: {
     id: 'kbm',
@@ -215,6 +227,7 @@ export const FACULTIES: Record<FacultyId, FacultyData> = {
     studiebarometer: KBM_STUDIEBAROMETER,
     completionGroups: KBM_COMPLETION,
     completionHentet: KBM_COMPLETION_HENTET,
+    studentGroups: KBM_STUDENTS,
   },
   mina: {
     id: 'mina',
@@ -233,6 +246,7 @@ export const FACULTIES: Record<FacultyId, FacultyData> = {
     studiebarometer: MINA_STUDIEBAROMETER,
     completionGroups: MINA_COMPLETION,
     completionHentet: MINA_COMPLETION_HENTET,
+    studentGroups: MINA_STUDENTS,
   },
   vet: {
     id: 'vet',
@@ -251,6 +265,7 @@ export const FACULTIES: Record<FacultyId, FacultyData> = {
     studiebarometer: VET_STUDIEBAROMETER,
     completionGroups: VET_COMPLETION,
     completionHentet: VET_COMPLETION_HENTET,
+    studentGroups: VET_STUDENTS,
   },
 };
 
