@@ -16,6 +16,23 @@ function figmaAssetResolver() {
   }
 }
 
+// Bygg uten Handelshøyskolen (det åpne nettstedet): HH-komponenter og HH-datasett byttes ut
+// med tomme stubber, slik at ingenting fra HH havner i bunten. Se docs/publisering-cloudflare.md.
+const UTEN_HH = process.env.VITE_UTEN_HH === '1'
+const HH_KOMPONENTER = [
+  'CourseSelector', 'CourseComparison', 'UniversityFilter', 'CourseMappingTable', 'AdmissionStats',
+  'StudiebarometerStats', 'GradingHarshnessSummary', 'GradeInflationDashboard', 'MapView',
+  'FirstYearComparison', 'OnlineBachelorView', 'MasterView', 'MasterComparisonChart',
+  'NMBUMasterAnalysis', 'AdmissionAnalysis2026', 'MarkedsstatusView',
+]
+const HH_DATA = ['fullAdmissionData', 'samfData', 'annualStudiesData']
+const hhAlias = UTEN_HH
+  ? [
+      { find: new RegExp(`^\\./components/(${HH_KOMPONENTER.join('|')})$`), replacement: path.resolve(__dirname, 'src/app/hh-stub.tsx') },
+      { find: new RegExp(`^\\.\\./data/(${HH_DATA.join('|')})$`), replacement: path.resolve(__dirname, 'src/app/hh-stub-data.ts') },
+    ]
+  : []
+
 export default defineConfig({
   plugins: [
     figmaAssetResolver(),
@@ -25,10 +42,11 @@ export default defineConfig({
     tailwindcss(),
   ],
   resolve: {
-    alias: {
+    alias: [
       // Alias @ to the src directory
-      '@': path.resolve(__dirname, './src'),
-    },
+      { find: '@', replacement: path.resolve(__dirname, './src') },
+      ...hhAlias,
+    ],
   },
 
   // File types to support raw imports. Never add .css, .tsx, or .ts files to this.

@@ -67,7 +67,7 @@ export function FacultyLanding({ onSelect }: Props) {
 
         {/* Aktive fakulteter */}
         <div className="grid grid-cols-2 gap-5 mb-8">
-          {ACTIVE_FACULTIES.map((card) => (
+          {ACTIVE_FACULTIES.filter((card) => card.id !== 'hh' || import.meta.env.VITE_UTEN_HH !== '1').map((card) => (
             <button key={card.id}
               onClick={() => onSelect(card.id)}
               className="rounded-2xl p-8 text-left transition-all"

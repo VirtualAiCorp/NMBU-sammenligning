@@ -270,6 +270,11 @@ export default function App() {
     );
   }
 
+  // ── Handelshøyskolen ──────────────────────────────────────────────────────
+  // Bygget uten Handelshøyskolen (VITE_UTEN_HH=1, det åpne nettstedet): alt nedenfor er
+  // død kode og fjernes av bundleren, sammen med HH-komponentene og HH-dataene.
+  if (import.meta.env.VITE_UTEN_HH === '1') return null;
+
   // Landing / program picker
   if (programLevel === null) {
     return (
