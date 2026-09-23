@@ -1,4 +1,4 @@
-// GENERERT av scripts/build-markedsstatus.py ukjent dato – ikke rediger for hånd.
+// GENERERT av scripts/build-markedsstatus.py 2026-09-23 – ikke rediger for hånd.
 // Kilde: data/biovit/markedsstatus.json · PDF-er i kilde/public/markedsstatus/biovit/
 
 export interface MarketDoc {
@@ -22,6 +22,315 @@ export interface MarketInstitution {
   relevanteProgram: string[];
 }
 
-export const MARKET_STATUS_HENTET: string | null = null;
+export const MARKET_STATUS_HENTET: string | null = "2026-09-23";
 
-export const MARKET_STATUS: MarketInstitution[] = [];
+export const MARKET_STATUS: MarketInstitution[] = [
+  {
+    "id": "uio",
+    "name": "UiO",
+    "fullName": "Universitetet i Oslo",
+    "enhet": "Det matematisk-naturvitenskapelige fakultet (MN) — Institutt for biovitenskap (IBV), som har eget instituttstyre og publiserer referater fra styremøtene",
+    "styresider": [
+      "https://www.mn.uio.no/ibv/om/organisasjon/styret/referater/",
+      "https://www.uio.no/om/organisasjon/styret/"
+    ],
+    "status": "complete",
+    "dokumenter": [
+      {
+        "label": "IBV instituttstyre – referat IS5/2025 (T2-regnskap, økonomiprosjekt, faglig strategi og bemanningsplan)",
+        "url": "https://www.mn.uio.no/ibv/om/organisasjon/styret/referater/styremotereferater-ibv/2025/referat-is5-2025.pdf",
+        "localPath": "/markedsstatus/biovit/UiO_IBV_Referat_IS5_08.10.2025.pdf",
+        "dato": "2025-10-08",
+        "storrelseMB": 0.11
+      },
+      {
+        "label": "IBV instituttstyre – referat IS6/2025 (budsjett 2026 og langtidsprognose, frysing av KD-stillinger)",
+        "url": "https://www.mn.uio.no/ibv/om/organisasjon/styret/referater/styremotereferater-ibv/2025/referat-is6-2025.pdf",
+        "localPath": "/markedsstatus/biovit/UiO_IBV_Referat_IS6_11.12.2025.pdf",
+        "dato": "2025-12-11",
+        "storrelseMB": 0.17
+      },
+      {
+        "label": "IBV instituttstyre – referat IS1/2026 (regnskap T3-2025, driftsmidler, rekrutteringsmodell for instituttleder)",
+        "url": "https://www.mn.uio.no/ibv/om/organisasjon/styret/referater/styremotereferater-ibv/2026/referat-is1-2026.pdf",
+        "localPath": "/markedsstatus/biovit/UiO_IBV_Referat_IS1_04.03.2026.pdf",
+        "dato": "2026-03-04",
+        "storrelseMB": 0.2
+      },
+      {
+        "label": "IBV instituttstyre – referat IS2/2026 (ny seksjonsinndeling, søkertall 2026, strategisk bemanningsplan)",
+        "url": "https://www.mn.uio.no/ibv/om/organisasjon/styret/referater/styremotereferater-ibv/2026/referat-is2-2026-web.pdf",
+        "localPath": "/markedsstatus/biovit/UiO_IBV_Referat_IS2_17.06.2026.pdf",
+        "dato": "2026-06-17",
+        "storrelseMB": 0.2
+      },
+      {
+        "label": "V-sak 59-25 Universitetet i Oslos utdanningsportefølje for studieåret 2026/2027 (universitetsstyret, kun mindre biologirelevans)",
+        "url": "https://www.uio.no/om/organisasjon/styret/moter/2025/06-10/v-sak-59-25-universitetet-i-oslos-utdanningsportefolje-for-studiearet-2026-2027.pdf",
+        "localPath": "/markedsstatus/biovit/UiO_Vsak59-25_Utdanningsportefolje2026-27.pdf",
+        "dato": "2025-06-10",
+        "storrelseMB": 3.72
+      }
+    ],
+    "punkter": [
+      "IBVs instituttstyre vedtok 17.06.2026 (V-sak 05/2026) en ny seksjonsinndeling med fire seksjoner fra 15.08.2026, dimensjonert til om lag 8–10 vitenskapelig ansatte per seksjon, som del av forberedelsene til flytting til Livsvitenskapsbygget (LVB).",
+      "IBV har hatt merforbruk i minst åtte år og hadde per oktober 2025 et akkumulert underskudd på 87,5 millioner kroner overfor MN-fakultetet; fakultetet krever mindreforbruk og gjeldssanering, og instituttleder forhandler med fakultetet om modeller for raskere nedbetaling.",
+      "Styret vedtok 11.12.2025 (V-sak 10/2025), med dissens (6 for, 2 mot, 1 avsto), å fryse tre 4-årige KD-finansierte stillinger i 2026 og ytterligere tre i 2030 som ett av flere tiltak for å komme i økonomisk balanse innen budsjett 2026.",
+      "For opptaket 2026 er det 192 førstevalgssøkere og totalt 975 søkere til IBVs 156 planlagte studieplasser – en nedgang i førstevalgsandelen i tråd med nasjonale trender for tilsvarende programmer; rekrutteringskampanjen for bachelorprogrammet videreføres i 2026 med justeringer (mer film, færre stillbilder).",
+      "Instituttleder arbeider med en strategisk bemanningsplan fordi lønnskostnadene på basisbevilgningen overstiger den tildelte rammen; planen skal identifisere kritisk kompetanse og sårbare fagområder ved redusert fast bemanning, og et utkast med risikovurdering skulle etter planen legges frem for styret i 2026.",
+      "Styret vedtok en ny modell for tildeling av driftsmidler til stipendiater, postdoktorer og masterstudenter med et samlet tak på om lag 3,6 millioner kroner, og advarte om at en modell med begrensede midler kan gi insentiv til å redusere antall masterstudenter, særlig i eksperimentelle fag.",
+      "IBV flytter til Livsvitenskapsbygget (LVB) i flere trinn fra sommeren 2026, med undervisning fra januar 2027; instituttet gjennomførte 21 disputaser i 2025 med forventning om et tilsvarende nivå i 2026.",
+      "På UiO-nivå vedtok universitetsstyret 10.06.2025 (V-sak 59-25) bare én konkret, vedtatt endring med biologirelevans: 7 nye studieplasser til masterprogrammet i nukleærteknologi ved MN-fakultetet; for øvrig inneholder dokumentet ingen vedtatte endringer i biovitenskaps- eller biologiporteføljen."
+    ],
+    "oppsummering": "UiOs Institutt for biovitenskap (IBV) publiserer egne, detaljerte instituttstyrereferater og er inne i en krevende økonomisk periode med et akkumulert underskudd på 87,5 millioner kroner, frysing av seks KD-stillinger og en pågående strategisk bemanningsplan. Samtidig reorganiseres instituttet i fire seksjoner og flytter til Livsvitenskapsbygget fra 2026/27, mens søkertallene til bachelorprogrammet (192 førstevalg/156 plasser i 2026) holder seg bedre enn ved sammenlignbare institusjoner nasjonalt. På fakultets- og universitetsnivå er det ingen vedtatte endringer i selve biologiporteføljen i perioden.",
+    "relevanteProgram": [
+      "uio_biovitenskap",
+      "uio_biovitenskap2"
+    ]
+  },
+  {
+    "id": "uib",
+    "name": "UiB",
+    "fullName": "Universitetet i Bergen",
+    "enhet": "Fakultet for naturvitenskap og teknologi (tidligere Det matematisk-naturvitenskapelige fakultet) — Institutt for biovitenskap (BIO)",
+    "styresider": [
+      "https://www.uib.no/nt",
+      "https://www4.uib.no/fakultet-for-naturvitenskap-og-teknologi/institutt-for-biovitenskap",
+      "https://www.uib.no/ledelsen",
+      "https://ekstern.filer.uib.no/bio/Rad_og_utvalg/Instituttrad/"
+    ],
+    "status": "partial",
+    "dokumenter": [
+      {
+        "label": "S 103/25 Endringer i UiBs studieportefølje 2026 og opptaksrammer 2026-2027",
+        "url": "https://ekstern.filer.uib.no/ledelse/universitetsstyret/2025/2025-11-27/S_103-25Endringer-i-UiBs-studieportef%C3%B8lje2026-og-opptaksrammer2026-27.pdf",
+        "localPath": "/markedsstatus/biovit/UiB_S103-25_Studieportefolje2026.pdf",
+        "dato": "2025-11-27",
+        "storrelseMB": 0.29
+      },
+      {
+        "label": "UiB Realfaghøyden – prosjektside og styresak om konseptvalg (KS1-rapport desember 2025)",
+        "url": "https://www.uib.no/realfaghoyden",
+        "localPath": null,
+        "dato": "2025-12",
+        "storrelseMB": 0.0
+      }
+    ],
+    "punkter": [
+      "I motsetning til bachelor i fysikk, som kuttes fra 52 til 26 plasser (-50 %) fra 2026/27, holdes opptaksrammene for UiBs biologiprogrammer uendret i vedtak S 103/25 (27.11.2025): bachelor i biologi 99→99, bachelor i molekylærbiologi 40→40, master i biologi 48→48 og master i molekylærbiologi 20→20 plasser.",
+      "Sivilingeniørprogrammet i havbruk (20 plasser) og masteren i fiskehelse–akvamedisin (25 plasser) holdes også uendret i samme vedtak, i en portefølje der fakultetets samlede opptaksramme for grunnstudier for øvrig går ned fra 849 til 843 plasser.",
+      "Fakultetet står foran en flerårig omstilling gjennom prosjektet UiB Realfaghøyden – beskrevet som Norges største investering i realfag og teknologi – som skal samle all forskning og utdanning innen naturvitenskap og teknologi, inkludert biovitenskap, i nye bygg. En KS1-rapport levert desember 2025 bekreftet og styrket grunnlaget for det foretrukne konseptet (K4-3); en politisk beslutning ventes tidligst i statsbudsjettet for 2027.",
+      "Fakultetet fikk i UiBs budsjett for 2026 en samlet ramme på 1 538,7 millioner kroner (+2,9 % fra 2025), og har ifølge budsjettdokumentet over tid «evnet å takle større underskudd innenfor egen ramme uten at fakultetet samlet har vist underskudd» – i motsetning til flere andre UiB-fakulteter som sliter med intern gjeld.",
+      "Instituttrådet ved Institutt for biovitenskap (BIO) har ikke publisert møtereferater eller sakspapirer offentlig siden 2022 (fildelingen ekstern.filer.uib.no/bio/Rad_og_utvalg/Instituttrad/ stopper ved mappen for 2022), slik at detaljerte instituttvise opptakstall, budsjett- og bemanningssaker for BIO i 2025–2026 ikke var tilgjengelige i dette arbeidet."
+    ],
+    "oppsummering": "UiB holder opptaksrammene for biologi, molekylærbiologi, havbruk og fiskehelse–akvamedisin uendret i vedtaket for 2026/27, samtidig som fysikk kuttes kraftig – biologi rammes altså ikke av den samme porteføljeinnstrammingen. Det klareste strategiske signalet er den flerårige Realfaghøyden-satsingen, der en politisk beslutning om ny bygningsmasse for hele realfagsmiljøet (inkl. biovitenskap) ventes i statsbudsjettet for 2027. Institutt for biovitenskap har imidlertid ikke publisert egne instituttrådsdokumenter siden 2022, så instituttvise tall for budsjett, bemanning og søkertall mangler, og vurderingen er derfor merket delvis.",
+    "relevanteProgram": [
+      "uib_biologi",
+      "uib_molekylaerbiologi",
+      "uib_biologi2",
+      "uib_havbruk",
+      "uib_fiskehelse"
+    ]
+  },
+  {
+    "id": "ntnu",
+    "name": "NTNU",
+    "fullName": "Norges teknisk-naturvitenskapelige universitet",
+    "enhet": "Fakultet for naturvitenskap (NV) — Institutt for biologi (IBI) og Institutt for biologiske fag Ålesund (IBA)",
+    "styresider": [
+      "https://www.ntnu.no/adm/styret/saker",
+      "https://i.ntnu.no/wiki/-/wiki/Norsk/Fakultetsstyret+ved+NV-fakultetet"
+    ],
+    "status": "complete",
+    "dokumenter": [
+      {
+        "label": "Fakultetsstyret NV – møteinnkalling med saksvedlegg 05.03.2026 (instituttstrategier 2026-2035 for IBI og IBA, navneendring, instituttregnskap)",
+        "url": "https://i.ntnu.no/documents/portlet_file_entry/1305837853/Moteinnkalling+NV-Fakstyret+samlefil+5+mars+2026.pdf/a869055d-0760-a30a-4b4e-28b70bd55fb5",
+        "localPath": "/markedsstatus/biovit/NTNU_NV_Innkalling_05.03.2026.pdf",
+        "dato": "2026-03-05",
+        "storrelseMB": 1.39
+      }
+    ],
+    "punkter": [
+      "Fakultetsstyret ved NV fikk 05.03.2026 til orientering nye tiårige instituttstrategier (2026–2035) for samtlige institutt, inkludert Institutt for biologi (IBI) og Institutt for biologiske fag Ålesund (IBA), som konkretiserer fakultetsstrategien vedtatt i sak NVS 18/25 før jul 2025.",
+      "IBI har nasjonalt ansvar for grunnleggende og anvendt forskning og utdanning innen fysiologi, cellebiologi, økologi/evolusjon, marinbiologi, akvakultur og miljøtoksikologi, sysselsetter om lag 140 ansatte og utdanner om lag 500 studenter årlig.",
+      "Fra august 2025 er IBI reorganisert i tre seksjoner – Biodiversity, Ecology and Evolution; Cell and Organismal Biology; og Marine Sciences – med delt ledelse (forskning, utdanning, seksjonskoordinering) i hver seksjon.",
+      "IBI, IBA, Institutt for bioteknologi og matvitenskap (IBT) og det nye, sammenslåtte Institutt for kjemi og bioingeniørfag (IKB, fra 1.1.2026) utgjør sammen NV-fakultetets «biocluster»; IBI danner sammen med fysikk (IFY) og IKB fakultetets «grunnleggende triangel» innen naturvitenskap.",
+      "IBA i Ålesund tilbyr tre bachelorprogram – Biomarin innovasjon, Biovitenskap og laboratorieteknologi, og Bioingeniør – med tett kobling til havbruksnæringen og helsevesenet regionalt, og har som mål for 2035 å bli et tverrfaglig regionalt knutepunkt innen hav og helse.",
+      "Et felles identitetsareal for biologi ble etablert i fellesarealet i kjelleren i Realfagbygget etter lang dialog med Eiendom, i tillegg til et eget identitetsareal for havbruksingeniørstudiet i IBIs arealer, som del av fakultetets tiltak for bedre studentmiljø."
+    ],
+    "oppsummering": "NTNUs NV-fakultet rullet i mars 2026 ut nye, tiårige instituttstrategier for hele sitt biologi-/biovitenskapscluster. Institutt for biologi (IBI, ca. 140 ansatte, 500 studenter årlig) er reorganisert i tre faglige seksjoner fra august 2025, mens Institutt for biologiske fag Ålesund (IBA, bl.a. Biomarin innovasjon) satser på å bli et regionalt hav- og helse-knutepunkt. Sakspapirene inneholder ingen konkrete opptakstall eller portefølje-vedtak spesifikt for biologiprogrammene utover den generelle NV-omtalen (poenggrenser, dimensjoneringsmodell) som allerede er dekket i REALTEK-oversikten for samme fakultet.",
+    "relevanteProgram": [
+      "ntnu_biologi",
+      "ntnu_biologi2",
+      "ntnu_biomarin",
+      "ntnu_ing_havbruk"
+    ]
+  },
+  {
+    "id": "uit",
+    "name": "UiT",
+    "fullName": "UiT Norges arktiske universitet",
+    "enhet": "Fakultet for biovitenskap, fiskeri og økonomi (BFE) — Institutt for arktisk og marin biologi (AMB) og Norges fiskerihøgskole (NFH)",
+    "styresider": [
+      "https://uit.no/moteportalen",
+      "https://prod02.elementscloud.no/publikum/970422528_PROD-970422528/Dmb",
+      "https://uit.no/enhet/bfe"
+    ],
+    "status": "complete",
+    "dokumenter": [
+      {
+        "label": "Fakultetsstyret BFE – møteinnkalling 16.09.2026 (foreløpig budsjettfordeling 2027, langtidsprognoser, BFEs strategiske langtidsplan 2027-2030 med instituttinnspill fra AMB)",
+        "url": "https://prod02.elementscloud.no/publikum/Documents/ShowMeetingDocument/de4d0236-5326-4fe9-bfb7-b2cc7e469013/798/MI/3928",
+        "localPath": "/markedsstatus/biovit/UiT_BFE_Innkalling_16.09.2026.pdf",
+        "dato": "2026-09-16",
+        "storrelseMB": 3.44
+      },
+      {
+        "label": "Fakultetsstyret BFE – møteprotokoll 16.09.2026",
+        "url": "https://prod02.elementscloud.no/publikum/Documents/ShowMeetingDocument/de4d0236-5326-4fe9-bfb7-b2cc7e469013/798/MP/3931",
+        "localPath": "/markedsstatus/biovit/UiT_BFE_Protokoll_16.09.2026.pdf",
+        "dato": "2026-09-16",
+        "storrelseMB": 0.22
+      }
+    ],
+    "punkter": [
+      "BFE-fakultetets foreløpige budsjett for 2027 viser en alvorlig økonomisk situasjon: fra et underskudd på frie midler på -19,25 mill. kroner ved inngangen til 2026 vokser det akkumulerte underskuddet til -99,5 mill. kroner i 2030 i prognosen, og styret ba 16.09.2026 om en tiltaksplan for å få langtidsprognosen i balanse innen 2031.",
+      "Studiepoengproduksjonen ved BFE falt uventet med 11,8 % i grunnlaget for 2027 sammenlignet med 2026, hovedsakelig drevet av Handelshøgskolen (HHA); saksfremlegget varsler videre kvalitetssikring av produksjonsanslagene frem mot oktobermøtet 2026.",
+      "Institutt for arktisk og marin biologi (AMB) er tildelt et øremerket tilskudd på 3,5 mill. kroner for 2027 til satsingen COAS – en utvidelse av det landbaserte klimaovervåkingsprogrammet COAT til også å dekke arktiske marine økosystemer og havområder.",
+      "Til forskjell fra AMB og Handelshøgskolen, som begge får en forverret langtidsprognose (AMB fra +6,8 mill. kroner i frie midler 2026 til -17,1 mill. akkumulert i 2030), forventes Norges fiskerihøgskole (NFH) å snu fra akkumulert underskudd til et overskudd på 18,1 mill. kroner i 2030.",
+      "Universitetet og Nofima eier Havbruksstasjonen i Tromsø 50/50, og BFE mottar et årlig, prisjustert driftstilskudd på 20,9 mill. kroner gjennom budsjettfordelingen for å holde infrastrukturen relevant for oppdrettsnæringen.",
+      "I utkastet til BFEs fireårige strategiske langtidsplan 2027–2030 (instituttinnspill fra AMB, 1.9.2026) heter det at «biologimiljøet må opprettholdes i en bredde og et omfang som sikrer biologi som fag ved UiT, dvs. at alle typer avganger erstattes med tilsvarende stillinger» – en eksplisitt bemanningsgaranti for faget.",
+      "Fakultetsstyret behandlet 16.09.2026 en muntlig orientering om møtt-tall for opptaket høsten 2026 (sak OS 21/26), men tok saken kun til orientering uten at konkrete tall fremgår av de skriftlige sakspapirene."
+    ],
+    "oppsummering": "BFE-fakultetet ved UiT (som eier AMB og NFH) går inn i en alvorlig økonomisk periode med et akkumulert underskudd som i prognosen vokser mot -99,5 mill. kroner i 2030, hovedsakelig drevet av fallende studiepoengproduksjon ved Handelshøgskolen. AMB (biologi) får likevel en øremerket satsing på marin klimaovervåking (COAS, 3,5 mill. kr) og en eksplisitt strategisk bemanningsgaranti for biologifaget i utkastet til ny langtidsplan, mens NFH ventes å snu til overskudd innen 2030. Havbruksstasjonen i Tromsø (eid 50/50 med Nofima, 20,9 mill. kr i årlig tilskudd) er sentral, felles infrastruktur for havbruksforskningen ved fakultetet.",
+    "relevanteProgram": [
+      "uit_biologi",
+      "uit_biologi2",
+      "uit_fiskeri_havbruk",
+      "uit_fiskeri_havbruk2",
+      "uit_akvamedisin2"
+    ]
+  },
+  {
+    "id": "nord",
+    "name": "Nord",
+    "fullName": "Nord universitet",
+    "enhet": "Fakultet for biovitenskap og akvakultur (FBA)",
+    "styresider": [
+      "https://www.nord.no/no/om-nord/styret"
+    ],
+    "status": "complete",
+    "dokumenter": [
+      {
+        "label": "Styret for Nord universitet – komplett innkalling 05.03.2026 (årsregnskap 2025 for FBA, rapport om utdanningskvalitet, investeringsplan)",
+        "url": "https://www.nord.no/sites/default/files/2026-02/Komplett-innkalling-Styret-for-Nord-universitet-05-03-2026.pdf",
+        "localPath": "/markedsstatus/biovit/Nord_Styret_Innkalling_05.03.2026.pdf",
+        "dato": "2026-03-05",
+        "storrelseMB": 5.04
+      },
+      {
+        "label": "Styret for Nord universitet – komplett innkalling 07.05.2026 (ny inntektsfordelingsmodell for fakultetene fra 2027)",
+        "url": "https://www.nord.no/sites/default/files/2026-04/Komplett-innkalling-Styret-for-Nord-universitet-07-05-2026.pdf",
+        "localPath": "/markedsstatus/biovit/Nord_Styret_Innkalling_07.05.2026.pdf",
+        "dato": "2026-05-07",
+        "storrelseMB": 4.48
+      }
+    ],
+    "punkter": [
+      "FBA fikk en budsjettramme på 135,9 mill. kroner for 2026; under den nye inntektsfordelingsmodellen som styret behandlet 07.05.2026 øker rammen til 143,2 mill. kroner i 2027 (før en gradvis overgangsordning), fordi fakultetets «uforklarte basis» i hovedsak er knyttet til øremerket infrastruktur som videreføres.",
+      "FBA lanserte høsten 2025 et nytt bachelorprogram i skogfag ved studiested Steinkjer; en intern investeringstildeling til dette ble ikke brukt i 2025 og er avsatt til påfølgende år, noe som bidro til et driftsresultat på 13,0 mill. kroner for FBA i 2025.",
+      "I løpet av 2025 utviklet FBA, i samarbeid med oppdrettsnæringa på Helgeland, to nye emner på 7,5 studiepoeng innen havbruksdrift og ledelse, tilbudt nett- og samlingsbasert på Nesna fra vårsemesteret 2026, med planer om å utvide til 2–3 emner per semester de neste tre årene.",
+      "FBAs eksterne BOA-inntekter vokste fra 31,5 til 43,1 mill. kroner i perioden 2022–2025 – nest sterkest vekst blant Nords fem fakulteter.",
+      "Det nye laboratoriebygget «Noatun» (Blått Bygg-prosjektet, finansiert med 87,8 mill. kroner over statsbudsjettet fra 2022) ble tatt i bruk av FBA til studiestart 2024; det pågår videre investeringer i infrastruktur til skogfagstudiet i Steinkjer og i utbedring av landanlegg og vannkvalitet ved forskningsstasjonen i Mørkvedbukta.",
+      "FBAs bachelorkull fra 2021 har den beste gjennomføringen av Nords fem fakulteter: 63,8 % fullførte på normert tid og bare 19,6 % falt fra, mot et Nord-snitt på hhv. 54,6 % og 26,5 %. På de toårige masterprogrammene er bildet svakere: bare 25,8 % av FBAs masterkull fra 2021 fullførte på normert tid (Nord-snitt 43,9 %), mens frafallet (25,8 %) ligger på linje med resten av Nord.",
+      "Kvalifiserte førstevalgssøkere per studieplass ved FBA har falt jevnt fra 2,5 i 2020 til 1,5 i 2025 – fortsatt over Nord-snittet (1,4 i 2025) men under sektorsnittet (1,9)."
+    ],
+    "oppsummering": "FBA er det av Nords fem fakulteter med sterkest vekst i eksterne inntekter og får en styrket rammetildeling under den nye finansieringsmodellen fra 2027, drevet av et nytt skogfagstudium på Steinkjer og nye havbruksemner utviklet sammen med næringen på Helgeland. Samtidig faller søkerkonkurransen jevnt (fra 2,5 til 1,5 kvalifiserte førstevalgssøkere per plass 2020–2025), og de toårige masterprogrammene har markert dårligere gjennomføring enn bachelorprogrammene, som til gjengjeld har Nords beste gjennomføringstall.",
+    "relevanteProgram": [
+      "nord_biologi",
+      "nord_husdyr",
+      "nord_dyrepleie",
+      "nord_biovitenskap2",
+      "nord_husdyr2",
+      "nord_havbruksdrift",
+      "nord_akvakultur2"
+    ]
+  },
+  {
+    "id": "uia",
+    "name": "UiA",
+    "fullName": "Universitetet i Agder",
+    "enhet": "Fakultet for teknologi og realfag (TekReal) — Institutt for naturvitenskapelige fag",
+    "styresider": [
+      "https://opengov.360online.com/Meetings/uia/Boards/Details/213434"
+    ],
+    "status": "complete",
+    "dokumenter": [
+      {
+        "label": "Fakultetsstyret TekReal – innkalling 19.01.2026 (budsjett 2026, virksomhetsplan 2026)",
+        "url": "https://opengov.360online.com/Meetings/uia/File/Details/1154426.PDF",
+        "localPath": "/markedsstatus/biovit/UiA_Innkalling_TR_19.01.2026.pdf",
+        "dato": "2026-01-19",
+        "storrelseMB": 3.63
+      },
+      {
+        "label": "Fakultetsstyret TekReal – innkalling 08.04.2026 (kvalitetsrapport 2025 inkl. biologi årsstudium, studie- og emneportefølje 2026-2027, gruppeinndeling for porteføljegjennomgang)",
+        "url": "https://opengov.360online.com/Meetings/uia/File/Details/1178666.PDF",
+        "localPath": "/markedsstatus/biovit/UiA_Innkalling_TR_08.04.2026.pdf",
+        "dato": "2026-04-08",
+        "storrelseMB": 4.33
+      }
+    ],
+    "punkter": [
+      "UiAs nettbaserte årsstudium i biologi (oppstart 2024) hadde 133 førstevalgssøkere og 79 studenter som startet i 2024, mot 125 førstevalgssøkere og 110 startende studenter i 2025 – altså færre søkere som toppvalg, men flere som faktisk starter på studiet.",
+      "I fakultetets prosess «Styrket bærekraft i studie- og emneporteføljen» (oppfølging av tidligere styrevedtak) er bachelor i biologi plassert i «Gruppe 3» for videre gjennomgang sammen med bachelor i industriell matematikk – det eneste TekReal-programmet som tidligere er merket rødt/sårbart i fakultetets trafikklysmodell.",
+      "Målet med porteføljegjennomgangen er å effektivisere ressursbruken i emneporteføljen, redusere kostnader (blant annet ved innleide timelærere) og vurdere hvilke stillinger som skal erstattes ved avgang – kriterier som også omfatter biologimiljøet ved Institutt for naturvitenskapelige fag.",
+      "Bachelor i biologi inngår i fakultetets liste over programmer med egen studiestart-mentorordning (FYSE) for nye studenter, sammen med blant annet ingeniørprogrammene og kunstig intelligens-masteren."
+    ],
+    "oppsummering": "UiAs bachelor i biologi (og det tilhørende nettbaserte årsstudiet) holder søkertallene noenlunde stabile, men er nå satt i «Gruppe 3» av fakultetets porteføljegjennomgang sammen med det tidligere rødmerkede industriell matematikk-programmet, som ledd i et bredere kostnadskutt- og effektiviseringsarbeid ved TekReal der budsjett 2026 (285,3 mill. kroner) ligger under lønns- og prisvekst og to institutter har uttalt økonomisk ubalanse.",
+    "relevanteProgram": [
+      "uia_biologi"
+    ]
+  },
+  {
+    "id": "inn",
+    "name": "INN",
+    "fullName": "Universitetet i Innlandet",
+    "enhet": "Fakultet for anvendt økologi, landbruksfag og bioteknologi (studiested Blæstad/Evenstad) — fakultetet har ikke et eget offentlig fakultetsstyre atskilt fra universitetsstyret",
+    "styresider": [
+      "https://www.inn.no/om-universitetet/organisering/universitetsstyret/saksdokumenter-styret-inn/"
+    ],
+    "status": "partial",
+    "dokumenter": [
+      {
+        "label": "Universitetsstyret INN – innkalling og agenda 08.09.2026 (satsingsforslag utenfor rammen 2028 med Blæstad-laboratorium, protokoll fra møtene 17.06. og 24.06.2026 inkl. ny dekan ved FALB)",
+        "url": "https://www.inn.no/om-universitetet/organisering/universitetsstyret/saksdokumenter-styret-inn/Innkalling%20og%20agenda%20universitetsstyret%2008.09.2026",
+        "localPath": "/markedsstatus/biovit/INN_Styret_Innkalling_08.09.2026.pdf",
+        "dato": "2026-09-08",
+        "storrelseMB": 0.89
+      },
+      {
+        "label": "Universitetsstyret INN – innkalling og agenda 17.06.2026 (bl.a. orientering om foreløpig studieportefølje 2027/2028)",
+        "url": "https://www.inn.no/om-universitetet/organisering/universitetsstyret/saksdokumenter-styret-inn/Innkalling%20og%20agenda%20Universitetsstyret%2017.06.2026",
+        "localPath": null,
+        "dato": "2026-06-17",
+        "storrelseMB": 27.55
+      }
+    ],
+    "punkter": [
+      "Universitetsstyret vedtok 24.06.2026 (sak 30/26) å tilby Karianne Eide-Longva en åremålsstilling (4 år) som dekan ved Fakultet for anvendt økologi, landbruksfag og bioteknologi.",
+      "I sak 7/26 «Satsingsforslag utenfor rammen 2028» ber INN om midler til et nytt laboratorium for jordbruksforskning og -undervisning ved Blæstad: 30 mill. kroner i etableringsfasen, hvorav 6 mill. kroner (en femtedel) som en varig økt rammebevilgning til drift. Laboratoriet skal være en nøkkelarena for analyser av jordhelse, planteproduksjon og ressurseffektiv drift.",
+      "Bakgrunnen er at Innlandet fylkeskommune har besluttet å bygge nytt bygg på Blæstad med tilhørende løfter om husleiekompensasjon over statsbudsjettet; INN omtaler dette som en mulighet til å løfte jordbruksfagmiljøet til «et nasjonalt tyngdepunkt innen jordbruk og grønn omstilling».",
+      "Styret vedtok 17.06.2026 reviderte kriterier for studieporteføljeutvikling og en endringsforskrift til opptaksforskriften med virkning fra hhv. 17.06. og 1.8.2026, men ingen av sakene i det tilgjengelige materialet omtaler konkrete programendringer eller opptakstall for agronomi- eller jordbruksutdanningene ved Blæstad.",
+      "INNs orientering om foreløpig studieportefølje 2027/2028 ble lagt frem for styret 17.06.2026, men det fulle sakspapiret for dette møtet var på 27,6 MB (over størrelsesgrensen i dette arbeidet) og bare kort oppsummert i protokollteksten som er gjengitt i sakspapirene for 08.09.2026-møtet; programspesifikke opptakstall for Blæstad var derfor ikke tilgjengelige."
+    ],
+    "oppsummering": "INNs sentrale universitetsstyre publiserer sakspapirer åpent, men fakultetet for anvendt økologi, landbruksfag og bioteknologi (Blæstad/Evenstad) har ikke et eget offentlig fakultetsstyre atskilt fra universitetsstyret. Det klareste signalet for BIOVIT er en betydelig satsing på jordbruksfagmiljøet ved Blæstad: et nytt fylkeskommunalt bygg med statlig husleiekompensasjon har utløst et forslag om 30 mill. kroner til et nytt laboratorium for jordbruksforskning, og en ny dekan er tilsatt fra sommeren 2026. Programspesifikke opptakstall for agronomi/husdyr og plantevitenskap var ikke tilgjengelige innenfor størrelsesgrensen for nedlasting i dette arbeidet, så vurderingen er merket delvis.",
+    "relevanteProgram": [
+      "inn_agronomi_husdyr",
+      "inn_agronomi",
+      "inn_landbruksteknikk",
+      "inn_baerekraftig_jordbruk"
+    ]
+  }
+];

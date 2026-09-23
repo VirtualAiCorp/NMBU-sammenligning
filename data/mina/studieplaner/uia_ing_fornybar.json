@@ -1,0 +1,366 @@
+{
+  "entryId": "uia_ing_fornybar",
+  "programnavn": "Ingeniør, fornybar energi (bachelor)",
+  "institusjon": "Universitetet i Agder",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.uia.no/studier/program/fornybar-energi-bachelor/",
+    "https://www.uia.no/studier/program/fornybar-energi-bachelor/studieplaner/2026h.html"
+  ],
+  "hentet": "2026-09-23",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 90,
+  "obligatoriske": [
+    {
+      "emnekode": "ELE113",
+      "emnenavn": "Kretsteknikk",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ENE109",
+      "emnenavn": "Energilab",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ING100",
+      "emnenavn": "Programmering og IKT-sikkerhet",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ING101",
+      "emnenavn": "Teknologi, miljø og bærekraft",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MA-178",
+      "emnenavn": "Matematikk 1",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ORG001",
+      "emnenavn": "HMS-kurs",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Obligatorisk HMS-kurs uten studiepoeng, jf. «Andre opplysninger» i studieplanen."
+    },
+    {
+      "emnekode": "ELE114",
+      "emnenavn": "Elektroniske kretser",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ENE111",
+      "emnenavn": "Fornybar energi",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ENE113",
+      "emnenavn": "Termodynamikk",
+      "studiepoeng": 5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS128",
+      "emnenavn": "Fysikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MA-179",
+      "emnenavn": "Matematikk 2",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Fra og med 3. semester (2. år høst) velger studenten studieretning (Batteriteknologi, Elkraftteknikk eller Energiteknikk). Studieretningsspesifikke obligatoriske emner i 2. og deler av 3. år er ført under spesialiseringer."
+    },
+    {
+      "emnekode": "ENE306",
+      "emnenavn": "Bacheloroppgave, fornybar energi",
+      "studiepoeng": 30,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Identisk obligatorisk emne (6. semester) for alle tre studieretninger."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Elkraftteknikk",
+      "obligatoriske": [
+        {
+          "emnekode": "ENE235",
+          "emnenavn": "Elektromagnetisme",
+          "studiepoeng": 5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "ENE236",
+          "emnenavn": "Elektriske maskiner",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MA-222",
+          "emnenavn": "Matematikk 3",
+          "studiepoeng": 5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MA-223",
+          "emnenavn": "Statistikk",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "I tillegg velges 5 sp valgemne 3. semester blant ENE239 Bioenergi, ENE240 Vannkraft, ENE241 Solenergisystemer og ENE243 Vindkraft, ikke tatt med her da dette er fritt valg mellom fire emner."
+        },
+        {
+          "emnekode": "ENE114",
+          "emnenavn": "Teknisk tegning",
+          "studiepoeng": 5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "ENE229",
+          "emnenavn": "Fornybar energi i kraftnettet",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "ENE237",
+          "emnenavn": "Materialer og korrosjon",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "ENE238",
+          "emnenavn": "Moderne instrumenteringssystemer",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Energiteknikk",
+      "obligatoriske": [
+        {
+          "emnekode": "BYG229",
+          "emnenavn": "Bygningsfysikk",
+          "studiepoeng": 5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "ENE234",
+          "emnenavn": "Varmesystemer og energieffektive bygninger",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "ENE239",
+          "emnenavn": "Bioenergi",
+          "studiepoeng": 5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MA-222",
+          "emnenavn": "Matematikk 3",
+          "studiepoeng": 5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MA-223",
+          "emnenavn": "Statistikk",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "ENE114",
+          "emnenavn": "Teknisk tegning",
+          "studiepoeng": 5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "ENE230",
+          "emnenavn": "VVS og strømningsprosesser for energisystemer",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "ENE237",
+          "emnenavn": "Materialer og korrosjon",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "ENE238",
+          "emnenavn": "Moderne instrumenteringssystemer",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Batteriteknologi",
+      "obligatoriske": [
+        {
+          "emnekode": "ENE245",
+          "emnenavn": "Innsikt i batteriindustrien",
+          "studiepoeng": 5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "ENE246",
+          "emnenavn": "Batterier",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MA-222",
+          "emnenavn": "Matematikk 3",
+          "studiepoeng": 5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "MA-223",
+          "emnenavn": "Statistikk",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "I tillegg velges 5 sp valgemne 3. semester blant ENE239 Bioenergi, ENE240 Vannkraft, ENE241 Solenergisystemer og ENE243 Vindkraft, ikke tatt med her da dette er fritt valg mellom fire emner."
+        },
+        {
+          "emnekode": "ENE114",
+          "emnenavn": "Teknisk tegning",
+          "studiepoeng": 5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "ENE237",
+          "emnenavn": "Materialer og korrosjon",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "ENE238",
+          "emnenavn": "Moderne instrumenteringssystemer",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "ENE244",
+          "emnenavn": "Batterilaboratorium",
+          "studiepoeng": 10,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er UiAs studieplan for Ingeniørfag - fornybar energi, bachelorprogram (2026-2029), Samordna opptak-sporet (www.uia.no, hentet via nettleser med studieretningsvelgeren satt til hver av de tre studieretningene). Programmet deler seg i tre studieretninger fra og med 3. semester (2. år høst): Batteriteknologi, Elkraftteknikk og Energiteknikk; disse er ført under spesialiseringer. 5. semester (3. år høst) er i alle tre studieretninger et fritt valgfag-/utvekslingssemester («I 5. semester velger studenten relevante valgfag på Universitetet i Agder eller drar på et utvekslingsopphold»); studieplanen lister riktignok en anbefalt emnepakke for hver studieretning i dette semesteret (Elkraft: ELE303, ENE231, ENE239, ENE240, ENE243, MA-307, MAS239, PRA204, TFL300; Energiteknikk: BYG225, ENE240, ENE243, MA-307, MAS239, PRA204, TFL300; Batteriteknologi: ELE303, ENE231, ENE235, ENE236, ENE239, ENE240, ENE243, MA-307, MAS239, PRA204, TFL300), men dette er en fri valgfagpool og ikke reelle obligatoriske emnelister, og er derfor ikke tatt med i obligatoriske-lista, tilsvarende praksis for 5. semester i uia_ing_mekatronikk.json. I 3. semester (2. år høst) er det i tillegg et reelt valg mellom fire emner (ENE239/240/241/243, 5 sp) for studieretningene Elkraftteknikk og Batteriteknologi (Energiteknikk har i stedet ENE239 Bioenergi som fast obligatorisk emne); dette valget er ført i merknad, ikke i obligatoriske-lista. ENE306 Bacheloroppgave, fornybar energi (30 sp, 6. semester) er identisk for alle tre studieretninger og er derfor ført på toppnivå i obligatoriske sammen med de ti felles emnene i 1. år (60 sp), som gir toppnivåets obligatoriskeStudiepoeng på 90 sp. Hver studieretning legger i tillegg til egne obligatoriske emner i 2. år (55-60 sp, se spesialiseringer) samt valgfrie emner i 3. semester og 5. semester, slik at summen blir 180 sp for alle tre studieretningene (Elkraftteknikk: 90+55=145 sp obligatorisk, 35 sp valgfritt; Energiteknikk: 90+60=150 sp obligatorisk, 30 sp valgfritt; Batteriteknologi: 90+55=145 sp obligatorisk, 35 sp valgfritt). Studenter tatt opp på TRES eller Y-vei har i tillegg 0-poengs oppgraderingskurs i matematikk/fysikk (og NO-007 norsk for Y-vei) i 1. år, men ellers samme obligatoriske emner; kun ordinært Samordna opptak-løp er hentet ut her."
+}
