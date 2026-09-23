@@ -296,3 +296,18 @@ tegning, så siden ikke blinker.
   inline-farger (React skriver dem som `rgb(...)`) og lager overstyringer etter luminans. Slik får også de
   originale HH-komponentene mørk modus uten å endres. Kjør skriptet på nytt etter nye komponenter med faste farger.
 - Utviklingsserveren må startes på nytt etter nye `@import` i `index.css` (Tailwind-pluginen cacher importgrafen).
+
+## 17. Økonomi og styringsindikatorer (DBH 902 og 750)
+
+Kort på forsiden (alle 16 institusjoner) og på fakultetssidene (institusjonene i fakultetets sammenligninger).
+DBH har økonomi bare per institusjon, ikke per fakultet.
+- **Skript:** `scripts/build-economy.py [--refresh]` → `kilde/src/app/data/economyData.ts/.json`. Cache
+  `data/nmbu/kilder/dbh-okonomi/`. Kjøres etter `build-staff.py` (henter studentårsverk derfra).
+- **902** (1 000 kr): driftsinntekter og -kostnader, statstilskudd, NFR, RFF, EU, bidrag, oppdrag, lønn,
+  avsetninger. Avledet: andel statstilskudd, andel eksterne inntekter, driftsinntekter per studentårsverk,
+  lønnsandel, driftsresultat, avsetninger i % av driftskostnader. UiB mangler 2024 i DBH.
+- **750:** alle KDs styringsindikatorer (gjennomføring, studiekvalitet, publisering, NFR og andre eksterne inntekter
+  per faglig årsverk, studiepoeng per faglig årsverk, kvinner i toppstillinger, midlertidighet m.m.).
+  KDs faglige årsverk inkluderer rekrutteringsstillinger (NMBU 2024: 912 mot 601 uten), så tall per årsverk
+  i fagmiljøkortet og her er ikke like; det står i visningen.
+- Regnskapspakkene 700–703 er rå kontodata og er ikke brukt.
