@@ -28,6 +28,7 @@ import { FacultyStudents } from './components/FacultyStudents';
 import { StaffComparison } from './components/StaffComparison';
 import { StudiestedBolig } from './components/StudiestedBolig';
 import { EconomyComparison } from './components/EconomyComparison';
+import { LayoutLab } from './components/LayoutLab';
 import { ECON_UNITS } from './data/economyData';
 import { STAFF_INSTITUTIONS, STAFF_FACULTIES, STAFF_NMBU_FACULTIES } from './data/staffData';
 import { FACULTIES } from './data/faculties';
@@ -119,6 +120,9 @@ export default function App() {
         </div>
       </div>
     );
+  }
+  if (faculty === 'nmbu-oppsett') {
+    return <LayoutLab onBack={() => setFaculty(null)} />;
   }
   if (faculty === 'nmbu-okonomi') {
     return (

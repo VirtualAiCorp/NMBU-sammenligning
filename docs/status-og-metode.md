@@ -311,3 +311,12 @@ DBH har økonomi bare per institusjon, ikke per fakultet.
   KDs faglige årsverk inkluderer rekrutteringsstillinger (NMBU 2024: 912 mot 601 uten), så tall per årsverk
   i fagmiljøkortet og her er ikke like; det står i visningen.
 - Regnskapspakkene 700–703 er rå kontodata og er ikke brukt.
+
+## 18. Alternative oppsett (forslag, ikke bygget)
+
+`LayoutLab.tsx`, lenke nederst på forsiden («Se forslag til alternative oppsett av nettsiden»). Viser dagens oppsett og fem
+forslag som klikkbare skisser med ekte tall, i en ramme med bredde skrivebord/nettbrett/mobil, med idé, fordeler/ulemper og
+anslag på byggearbeid: 1 fullskjerm-dashboard med sidemeny, 2 toppmeny med moduler som faner, 3 program-først profilside,
+4 sammenligningsmatrise (varmekart NMBU mot konkurrentmedian), 5 rapport-/presentasjonsmodus.
+Forslag til to valgbare oppsett: «Oversikt» (dagens) og «Arbeidsflate» (dashboard med matrisen som startside), valgt med en
+bryter ved siden av lys/mørk og husket i nettleseren. Venter på Mathias' valg før noe bygges.

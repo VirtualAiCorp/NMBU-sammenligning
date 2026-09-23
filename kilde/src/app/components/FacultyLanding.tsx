@@ -1,8 +1,8 @@
 import type { ReactNode } from 'react';
-import { BookOpen, Building2, Trees, Atom, Leaf, FlaskConical, TreePine, Lock, PawPrint, Users, Home, Landmark } from 'lucide-react';
+import { BookOpen, Building2, Trees, Atom, Leaf, FlaskConical, TreePine, Lock, PawPrint, Users, Home, Landmark, LayoutGrid } from 'lucide-react';
 import { FACULTIES, FACULTY_IDS, type FacultyId } from '../data/faculties';
 
-export type Faculty = 'hh' | FacultyId | 'nmbu-emner' | 'nmbu-fagmiljo' | 'nmbu-bolig' | 'nmbu-okonomi';
+export type Faculty = 'hh' | FacultyId | 'nmbu-emner' | 'nmbu-fagmiljo' | 'nmbu-bolig' | 'nmbu-okonomi' | 'nmbu-oppsett';
 
 interface Props {
   onSelect: (faculty: Faculty) => void;
@@ -164,6 +164,14 @@ export function FacultyLanding({ onSelect }: Props) {
             </p>
           </div>
         </button>
+
+        {/* Alternative oppsett (forslag) */}
+        <div className="text-center mb-8">
+          <button onClick={() => onSelect('nmbu-oppsett')} className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs"
+            style={{ border: '1px dashed var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-1)', backgroundColor: 'transparent' }}>
+            <LayoutGrid className="w-3.5 h-3.5" /> Se forslag til alternative oppsett av nettsiden
+          </button>
+        </div>
 
         {COMING_FACULTIES.length > 0 && (<>
         {/* Skillelinje */}

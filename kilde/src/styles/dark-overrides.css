@@ -20,6 +20,7 @@
 :root[data-theme="dark"] [style*="background-color: rgb(219, 234, 254)"], :root[data-theme="dark"] [style*="background: rgb(219, 234, 254)"] { background-color: #1b293c !important; }
 :root[data-theme="dark"] [style*="background-color: rgb(229, 231, 235)"], :root[data-theme="dark"] [style*="background: rgb(229, 231, 235)"] { background-color: #141916 !important; }
 :root[data-theme="dark"] [style*="background-color: rgb(110, 231, 183)"], :root[data-theme="dark"] [style*="background: rgb(110, 231, 183)"] { background-color: #1b3c2f !important; }
+:root[data-theme="dark"] [style*="background-color: rgb(251, 191, 36)"], :root[data-theme="dark"] [style*="background: rgb(251, 191, 36)"] { background-color: #3c331b !important; }
 :root[data-theme="dark"] [style^="color: rgb(31, 41, 55)"], :root[data-theme="dark"] [style*=" color: rgb(31, 41, 55)"] { color: #848991 !important; }
 :root[data-theme="dark"] [style^="color: rgb(74, 29, 107)"], :root[data-theme="dark"] [style*=" color: rgb(74, 29, 107)"] { color: #9b83ae !important; }
 :root[data-theme="dark"] [style^="color: rgb(0, 48, 135)"], :root[data-theme="dark"] [style*=" color: rgb(0, 48, 135)"] { color: #738dbd !important; }
