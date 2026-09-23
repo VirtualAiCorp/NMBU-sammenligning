@@ -16,6 +16,10 @@ import {
   MARKET_STATUS_HENTET as LANDSAM_MARKET_STATUS_HENTET,
   type MarketInstitution, type MarketDoc,
 } from './landsamMarketStatusData';
+import {
+  STUDIEBAROMETER_ENTRIES as LANDSAM_STUDIEBAROMETER,
+  type SbEntry,
+} from './landsamStudiebarometerData';
 
 import {
   LANDSAM_GROUPS as REALTEK_GROUPS,
@@ -31,6 +35,7 @@ import {
   MARKET_STATUS as REALTEK_MARKET_STATUS,
   MARKET_STATUS_HENTET as REALTEK_MARKET_STATUS_HENTET,
 } from './realtekMarketStatusData';
+import { STUDIEBAROMETER_ENTRIES as REALTEK_STUDIEBAROMETER } from './realtekStudiebarometerData';
 
 import {
   LANDSAM_GROUPS as BIOVIT_GROUPS,
@@ -46,6 +51,7 @@ import {
   MARKET_STATUS as BIOVIT_MARKET_STATUS,
   MARKET_STATUS_HENTET as BIOVIT_MARKET_STATUS_HENTET,
 } from './biovitMarketStatusData';
+import { STUDIEBAROMETER_ENTRIES as BIOVIT_STUDIEBAROMETER } from './biovitStudiebarometerData';
 
 import {
   LANDSAM_GROUPS as KBM_GROUPS,
@@ -61,6 +67,7 @@ import {
   MARKET_STATUS as KBM_MARKET_STATUS,
   MARKET_STATUS_HENTET as KBM_MARKET_STATUS_HENTET,
 } from './kbmMarketStatusData';
+import { STUDIEBAROMETER_ENTRIES as KBM_STUDIEBAROMETER } from './kbmStudiebarometerData';
 
 import {
   LANDSAM_GROUPS as MINA_GROUPS,
@@ -76,8 +83,10 @@ import {
   MARKET_STATUS as MINA_MARKET_STATUS,
   MARKET_STATUS_HENTET as MINA_MARKET_STATUS_HENTET,
 } from './minaMarketStatusData';
+import { STUDIEBAROMETER_ENTRIES as MINA_STUDIEBAROMETER } from './minaStudiebarometerData';
 
 export type { MarketInstitution, MarketDoc };
+export type { SbEntry };
 
 export type FacultyId = 'landsam' | 'realtek' | 'biovit' | 'kbm' | 'mina';
 
@@ -102,6 +111,8 @@ export interface FacultyData {
   marketStatus: MarketInstitution[];
   /** Datoen markedsstatusen sist ble hentet inn, eller null. */
   marketStatusHentet: string | null;
+  /** Studiebarometeret: ett innslag per studieprogram i opptaksgruppene. */
+  studiebarometer: SbEntry[];
 }
 
 export const FACULTIES: Record<FacultyId, FacultyData> = {
@@ -119,6 +130,7 @@ export const FACULTIES: Record<FacultyId, FacultyData> = {
     studyPlanGroups: LANDSAM_STUDYPLAN_GROUPS,
     marketStatus: LANDSAM_MARKET_STATUS,
     marketStatusHentet: LANDSAM_MARKET_STATUS_HENTET,
+    studiebarometer: LANDSAM_STUDIEBAROMETER,
   },
   realtek: {
     id: 'realtek',
@@ -134,6 +146,7 @@ export const FACULTIES: Record<FacultyId, FacultyData> = {
     studyPlanGroups: REALTEK_STUDYPLAN_GROUPS,
     marketStatus: REALTEK_MARKET_STATUS,
     marketStatusHentet: REALTEK_MARKET_STATUS_HENTET,
+    studiebarometer: REALTEK_STUDIEBAROMETER,
   },
   biovit: {
     id: 'biovit',
@@ -149,6 +162,7 @@ export const FACULTIES: Record<FacultyId, FacultyData> = {
     studyPlanGroups: BIOVIT_STUDYPLAN_GROUPS,
     marketStatus: BIOVIT_MARKET_STATUS,
     marketStatusHentet: BIOVIT_MARKET_STATUS_HENTET,
+    studiebarometer: BIOVIT_STUDIEBAROMETER,
   },
   kbm: {
     id: 'kbm',
@@ -164,6 +178,7 @@ export const FACULTIES: Record<FacultyId, FacultyData> = {
     studyPlanGroups: KBM_STUDYPLAN_GROUPS,
     marketStatus: KBM_MARKET_STATUS,
     marketStatusHentet: KBM_MARKET_STATUS_HENTET,
+    studiebarometer: KBM_STUDIEBAROMETER,
   },
   mina: {
     id: 'mina',
@@ -179,6 +194,7 @@ export const FACULTIES: Record<FacultyId, FacultyData> = {
     studyPlanGroups: MINA_STUDYPLAN_GROUPS,
     marketStatus: MINA_MARKET_STATUS,
     marketStatusHentet: MINA_MARKET_STATUS_HENTET,
+    studiebarometer: MINA_STUDIEBAROMETER,
   },
 };
 

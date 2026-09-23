@@ -20,13 +20,14 @@ import { LandsamLanding } from './components/LandsamLanding';
 import { LandsamAdmissionAnalysis } from './components/LandsamAdmissionAnalysis';
 import { LandsamCourseAnalysis } from './components/LandsamCourseAnalysis';
 import { FacultyMarketStatus } from './components/FacultyMarketStatus';
+import { FacultyStudiebarometer } from './components/FacultyStudiebarometer';
 import { FACULTIES } from './data/faculties';
 import { BookOpen, Table2, BarChart2, Star, Scale, Map, GraduationCap, GalleryVerticalEnd, Award, ScatterChart, TrendingUp, ArrowUpRight, Wifi, Globe2 } from 'lucide-react';
 
 type ProgramLevel = 'bachelor' | 'master' | 'opptak2026' | 'markedsstatus';
 type ViewMode = 'course' | 'mapping' | 'admission' | 'karakterindeks' | 'studiebarometer' | 'map' | 'firstyear' | 'online';
 type MasterViewMode = 'masteroppgave' | 'sammenligning' | 'nmbu-emner';
-type FacultyView = 'landing' | 'analyse' | 'emner' | 'markedsstatus';
+type FacultyView = 'landing' | 'analyse' | 'emner' | 'markedsstatus' | 'studiebarometer';
 
 export default function App() {
   const [faculty, setFaculty] = useState<Faculty | null>(null);
@@ -97,8 +98,47 @@ export default function App() {
           onOpenAnalysis={(g) => { setFacultyGroup(g); setFacultyView('analyse'); }}
           onOpenCourses={(g) => { setFacultyCourseGroup(g); setFacultyView('emner'); }}
           onOpenMarketStatus={() => setFacultyView('markedsstatus')}
+          onOpenStudiebarometer={() => setFacultyView('studiebarometer')}
           onBackToFaculties={() => setFaculty(null)}
         />
+      );
+    }
+
+    if (facultyView === 'studiebarometer') {
+      return (
+        <div className="min-h-screen p-6" style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
+          <div className="max-w-7xl mx-auto">
+
+            {/* Top-level switcher */}
+            <div className="flex items-center gap-2 mb-6">
+              <button
+                onClick={() => setFacultyView('landing')}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs transition-all"
+                style={{ backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)' }}
+              >
+                ← Tilbake
+              </button>
+              <span className="px-3 py-1.5 rounded-lg text-xs" style={{ backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-1)' }}>
+                {fac.label}
+              </span>
+            </div>
+
+            {/* Header */}
+            <header className="mb-8">
+              <div className="flex items-center gap-3 mb-1">
+                <div className="w-1 h-9 rounded-sm" style={{ backgroundColor: 'var(--nmbu-green-dark)' }} />
+                <h1 className="text-4xl" style={{ color: 'var(--nmbu-green-dark)', fontFamily: "'Lora', serif", fontWeight: 500 }}>
+                  Studiebarometeret
+                </h1>
+              </div>
+              <p className="text-sm pl-4" style={{ color: 'var(--nmbu-neutral-1)' }}>
+                Studentenes vurdering av studieprogrammet · skala 1–5 · Kilde: studiebarometeret.no
+              </p>
+            </header>
+
+            <FacultyStudiebarometer key={fac.id} faculty={fac} />
+          </div>
+        </div>
       );
     }
 

@@ -1,0 +1,283 @@
+{
+  "entryId": "ntnu_geologi",
+  "programnavn": "Geologi (bachelor)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.ntnu.no/studier/bgeol",
+    "https://www.ntnu.no/studier/bgeol/studiets-oppbygning",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=BGEOL&year=2026",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=BGEOL&year=2025",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=BGEOL&year=2024",
+    "https://www.unis.no/studies/arctic-geology-courses/",
+    "https://www.unis.no/courses/ag-214-the-geological-evolution-of-svalbard-15-ects/",
+    "https://www.unis.no/courses/ag-211-arctic-marine-geology/",
+    "https://www.unis.no/courses/ag-223-arctic-climate-change-past-to-future/"
+  ],
+  "hentet": "2026-09-23",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 112.5,
+  "obligatoriske": [
+    {
+      "emnekode": "HMS0001",
+      "emnenavn": "HMS-kurs for 1. årsstudenter",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJ1004",
+      "emnenavn": "Generell kjemi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TDT4110",
+      "emnenavn": "Informasjonsteknologi, grunnkurs",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TGB4100",
+      "emnenavn": "Geologi, innføring",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MA0001",
+      "emnenavn": "Brukerkurs i matematikk A",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen (kull 2026) gir valget mellom MA0001 og TMA4400 (Matematikk 1: Kalkulus og lineær algebra), avhengig av matematikkbakgrunn fra videregående skole."
+    },
+    {
+      "emnekode": "EXPH0300",
+      "emnenavn": "Examen philosophicum for naturvitenskap og teknologi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TGB4112",
+      "emnenavn": "Norges geologi og georessurser",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MA0002",
+      "emnenavn": "Brukerkurs i matematikk B",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen (kull 2026) gir valget mellom MA0002 og TMA4411 (Matematikk 2B), avhengig av matematikkbakgrunn fra videregående skole."
+    },
+    {
+      "emnekode": "TKT4126",
+      "emnenavn": "Mekanikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ST0103",
+      "emnenavn": "Brukerkurs i statistikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TBA4240",
+      "emnenavn": "Geografiske informasjonssystemer, grunnkurs",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TGB4126",
+      "emnenavn": "Mineralogi, grunnkurs",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "I tillegg skal studenten 2. år høst velge ett «områdeemne» (7,5 sp) blant BI2081 Natur, miljø og bærekraft, ITO1000 Digitalisering, IØ2000 Hvordan bli en endringsagent? og ØKO1001 Ledelse. Dette er et reelt valg mellom fire ulike emner utenfor geologifaget og er derfor holdt utenfor obligatoriske-lista og obligatoriskeStudiepoeng."
+    },
+    {
+      "emnekode": "GEOL1001",
+      "emnenavn": "Historisk geologi og paleontologi",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "GEOL1009",
+      "emnenavn": "Sedimentologi, innføring",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TGB4130",
+      "emnenavn": "Petrologi",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "TGB4150",
+      "emnenavn": "Strukturgeologi, grunnkurs",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Fra og med 2. år vår («Valg av studieretning») deler programmet seg i tre studieretninger (Arktisk geologi, Grunnleggende og anvendt geologi, Miljø- og anleggsgeologi); disse fire emnene (GEOL1001, GEOL1009, TGB4130, TGB4150) er obligatoriske og identiske for alle tre studieretningene dette semesteret. Studieretningsspesifikke obligatoriske emner i 3. år er ført under spesialiseringer."
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Arktisk geologi",
+      "obligatoriske": [
+        {
+          "emnekode": "AG214",
+          "emnenavn": "The geological evolution of Svalbard",
+          "studiepoeng": 15,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Undervises ved UNIS (Universitetssenteret på Svalbard); NTNUs studieplan angir kun at «Følgende emner skal tas ved UNIS: AG214 og AG215 (høst) og AG211 og AG223 (vår)» uten egne norske studiepoengtall i studieplanverktøyet, så studiepoeng (15 sp, standard UNIS-bachelorkurs) og emnenavn er hentet fra UNIS' egne emnesider."
+        },
+        {
+          "emnekode": "AG215",
+          "emnenavn": "Arctic Landforms and Processes",
+          "studiepoeng": 15,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "Undervises ved UNIS, se merknad på AG214."
+        },
+        {
+          "emnekode": "AG211",
+          "emnenavn": "Arctic Marine Geology",
+          "studiepoeng": 15,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "Undervises ved UNIS, se merknad på AG214."
+        },
+        {
+          "emnekode": "AG223",
+          "emnenavn": "Arctic Climate Change: Past to Future",
+          "studiepoeng": 15,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "Undervises ved UNIS, se merknad på AG214."
+        }
+      ]
+    },
+    {
+      "navn": "Grunnleggende og anvendt geologi",
+      "obligatoriske": [
+        {
+          "emnekode": "GEOL1008",
+          "emnenavn": "Vitenskapelig og teknisk kommunikasjon",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TGB4266",
+          "emnenavn": "Tektonikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "I tillegg velges 15 sp valgbare emner 3. år høst (bl.a. TGB4242, TGB4301, TGB4115, TGB4185, TPG4175, TBA4150), ikke tatt med her da dette er fritt valg og ikke navngitt obligatorisk emne."
+        },
+        {
+          "emnekode": "TPG4101",
+          "emnenavn": "Generell og anvendt geofysikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "I tillegg velges 22,5 sp valgbare emner 3. år vår (bl.a. TPG4127, TGB4205, TGB4270, TGB4276, TGB4240), ikke tatt med her da dette er fritt valg."
+        }
+      ]
+    },
+    {
+      "navn": "Miljø- og anleggsgeologi",
+      "obligatoriske": [
+        {
+          "emnekode": "GEOL1008",
+          "emnenavn": "Vitenskapelig og teknisk kommunikasjon",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TGB4185",
+          "emnenavn": "Ingeniørgeologi, grunnkurs",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": "I tillegg velges 15 sp valgbare emner 3. år høst (bl.a. TPG4175, TVM4105, TBA4150), ikke tatt med her da dette er fritt valg."
+        },
+        {
+          "emnekode": "TGB4205",
+          "emnenavn": "Hydrogeologi",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "TPG4101",
+          "emnenavn": "Generell og anvendt geofysikk",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "I tillegg velges 15 sp valgbare emner 3. år vår (bl.a. TGB4270, TGB4276, TPG4127, TEP4100), ikke tatt med her da dette er fritt valg."
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er NTNUs studieplanverktøy (www.ntnu.no/studier/studieplan#programmeCode=BGEOL), hentet direkte fra JSON-endepunktet bak knappen «Gå til studieplan» (p_p_resource_id=studyplan) via nettleser. NTNUs studieplaner er organisert per kull (opptaksår), og siden kull 2026 (dette studieårets nye studenter) foreløpig kun har publisert 1. studieår, er filen satt sammen av tre ulike kull for å vise emnene som faktisk undervises i studieåret 2026/2027: 1. år er hentet fra kull 2026 (periodeNumber 1-2), 2. år fra kull 2025 (periodeNumber 3-4, siden dette kullet er i sitt andre studieår i 2026/2027), og 3. år/studieretningene fra kull 2024 (periodeNumber 5-6, siden dette kullet er i sitt tredje og siste studieår i 2026/2027). 1. år for kull 2025 og kull 2026 er kryss-sjekket og avviker noe: kull 2025 tilbyr flere matematikk/fysikk-alternativer (MA1101/MA1102, FY0001) enn kull 2026, som denne filen følger siden det er det nyeste og gjeldende opptakskullet. Programmet er 180 sp/3 år. Alle emner merket status «O» (Obligatorisk emne) i NTNUs studieplandata er ført som obligatoriske; grupper merket «Minst 1 emne fra A/B/C-gruppe» (matematikk/fysikk-alternativ avhengig av bakgrunn) er ført som én linje med merknad om alternativet, mens genuine valgfrie emnegrupper (VA/VB, «Minst en av» for områdeemne, og de brede valgbare emnelistene i 3. år) er holdt utenfor obligatoriske-lista og bare beskrevet i merknad, i tråd med regelen om at reelle valg mellom alternativer føres i merknad. Fra og med 2. år vår («Valg av studieretning», frist normalt 1. februar i 2. år) deler programmet seg i tre studieretninger: Arktisk geologi (undervises ved UNIS på Svalbard hele 3. år, 60 sp obligatorisk, ingen valgfri del), Grunnleggende og anvendt geologi (22,5 sp obligatorisk + 37,5 sp valgfritt i 3. år) og Miljø- og anleggsgeologi (30 sp obligatorisk + 30 sp valgfritt i 3. år); disse er ført under spesialiseringer. obligatoriskeStudiepoeng (112,5 sp) dekker kun de emnene som er felles for alle studenter uansett studieretning (1. og 2. år); hver studieretning legger i tillegg til egne obligatoriske emner (22,5-60 sp, se spesialiseringer) samt valgfrie emner, slik at summen blir 180 sp for alle tre retningene (112,5 + 22,5 + 37,5 + valgfritt gir avvik på ±7,5 sp mellom retningene pga. ulik fordeling mellom obligatorisk og valgfritt i 3. år, men totalt er alle 180 sp)."
+}

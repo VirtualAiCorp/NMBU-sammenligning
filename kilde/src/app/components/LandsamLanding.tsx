@@ -1,4 +1,4 @@
-import { TrendingUp, BookOpen, Globe2 } from 'lucide-react';
+import { TrendingUp, BookOpen, Globe2, Star } from 'lucide-react';
 import { INGEN_DATA_TEKST, type FacultyData } from '../data/faculties';
 import {
   landsamHasComparison, landsamProgramsWithData,
@@ -14,6 +14,8 @@ interface Props {
   onOpenCourses: (groupId?: string) => void;
   /** Åpner markedsstatusen for fakultetet. */
   onOpenMarketStatus: () => void;
+  /** Åpner Studiebarometeret for fakultetet. */
+  onOpenStudiebarometer: () => void;
   /** Tilbake til fakultetsoversikten. */
   onBackToFaculties: () => void;
 }
@@ -24,7 +26,7 @@ const LEVEL_LABEL: Record<string, string> = {
   master2:  'Toårig master',
 };
 
-export function LandsamLanding({ faculty, onOpenAnalysis, onOpenCourses, onOpenMarketStatus, onBackToFaculties }: Props) {
+export function LandsamLanding({ faculty, onOpenAnalysis, onOpenCourses, onOpenMarketStatus, onOpenStudiebarometer, onBackToFaculties }: Props) {
   const admissionGroups = faculty.admissionGroups;
   const courseGroups = faculty.courseGroups;
   const markedsstatus = faculty.marketStatus;
@@ -32,6 +34,12 @@ export function LandsamLanding({ faculty, onOpenAnalysis, onOpenCourses, onOpenM
   const markedsstatusTekst = markedsstatus.length === 0
     ? ' Ingen styrepapirer samlet inn ennå for dette fakultetet.'
     : ` ${markedsstatus.length} institusjoner, ${antallDok} nedlastbare dokumenter.`;
+
+  const sbEntries = faculty.studiebarometer;
+  const sbMedTall = sbEntries.filter((e) => e.scores.helhetsvurdering != null).length;
+  const sbTekst = sbEntries.length === 0
+    ? ' Ingen tall hentet inn ennå for dette fakultetet.'
+    : ` ${sbMedTall} av ${sbEntries.length} program har publiserte tall.`;
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-6" style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
@@ -266,6 +274,49 @@ export function LandsamLanding({ faculty, onOpenAnalysis, onOpenCourses, onOpenM
                 <p style={{ fontSize: '13px', color: 'var(--nmbu-neutral-2)', lineHeight: 1.6, maxWidth: 580 }}>
                   Status og utvikling hos konkurrerende institusjoner — basert på styrepapirer og årsrapporter.
                   {markedsstatusTekst}
+                </p>
+              </div>
+            </div>
+          </button>
+        </div>
+
+        {/* Studiebarometeret */}
+        <div className="mt-8">
+          <div className="flex items-center gap-4 mb-6">
+            <div className="h-px flex-1" style={{ backgroundColor: 'var(--nmbu-neutral-3)' }} />
+            <div className="flex items-center gap-2 px-3 py-1.5 rounded-full" style={{ backgroundColor: '#F5F3FF', border: '1px solid #C4B5FD' }}>
+              <Star className="w-3.5 h-3.5" style={{ color: '#6D28D9' }} />
+              <span style={{ fontSize: 11, fontWeight: 700, color: '#6D28D9', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
+                Studiebarometeret
+              </span>
+            </div>
+            <div className="h-px flex-1" style={{ backgroundColor: 'var(--nmbu-neutral-3)' }} />
+          </div>
+
+          <button
+            onClick={onOpenStudiebarometer}
+            className="w-full rounded-2xl p-7 text-left transition-all"
+            style={{ backgroundColor: '#fff', border: '2px solid #C4B5FD', boxShadow: '0 2px 8px rgba(109,40,217,0.08)' }}
+            onMouseEnter={(e) => { (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 4px 16px rgba(109,40,217,0.14)'; (e.currentTarget as HTMLButtonElement).style.transform = 'translateY(-2px)'; }}
+            onMouseLeave={(e) => { (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 2px 8px rgba(109,40,217,0.08)'; (e.currentTarget as HTMLButtonElement).style.transform = 'translateY(0)'; }}
+          >
+            <div className="flex items-start gap-5">
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: '#EDE9FE' }}>
+                <Star className="w-6 h-6" style={{ color: '#6D28D9' }} />
+              </div>
+              <div>
+                <div className="flex items-center gap-3 mb-1">
+                  <div style={{ fontFamily: "'Lora', serif", fontWeight: 500, fontSize: '20px', color: 'var(--nmbu-green-dark)' }}>
+                    Studiebarometeret
+                  </div>
+                  <div className="text-xs px-2 py-0.5 rounded-full font-medium" style={{ backgroundColor: '#EDE9FE', color: '#6D28D9' }}>
+                    NOKUT/HK-dir
+                  </div>
+                </div>
+                <p style={{ fontSize: '13px', color: 'var(--nmbu-neutral-2)', lineHeight: 1.6, maxWidth: 580 }}>
+                  Studentenes vurdering av studieprogrammet — undervisning, læringsmiljø, yrkesrelevans og
+                  helhetsvurdering på skala 1–5, mot konkurrerende program og fagfeltsnittet.
+                  {sbTekst}
                 </p>
               </div>
             </div>

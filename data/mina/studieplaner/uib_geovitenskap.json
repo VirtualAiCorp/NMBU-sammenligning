@@ -1,0 +1,139 @@
+{
+  "entryId": "uib_geovitenskap",
+  "programnavn": "Geovitenskap, retning geologi (bachelor)",
+  "institusjon": "Universitetet i Bergen",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.uib.no/studieprogram/BAMN-GEOV",
+    "https://www4.uib.no/studier/program/geovitskap-bachelor/plan-1",
+    "https://www4.uib.no/studier/emner/GEOV101",
+    "https://www4.uib.no/studier/emner/GEOV102",
+    "https://www4.uib.no/studier/emner/GEOV103",
+    "https://www4.uib.no/studier/emner/GEOV104",
+    "https://www4.uib.no/studier/emner/GEOV107",
+    "https://www4.uib.no/studier/emner/GEOV109",
+    "https://www4.uib.no/studier/emner/GEOV110",
+    "https://www4.uib.no/studier/emner/GEOV111",
+    "https://www4.uib.no/studier/emner/GEOV114",
+    "https://www4.uib.no/studier/emner/MAT101",
+    "https://www4.uib.no/studier/emner/MAT111",
+    "https://www4.uib.no/studier/emner/INF100",
+    "https://www4.uib.no/studier/emner/EXPHIL-MNEKS",
+    "https://www4.uib.no/studier/emner/EXPHIL-MNSEM"
+  ],
+  "hentet": "2026-09-23",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 120,
+  "obligatoriske": [
+    {
+      "emnekode": "GEOV101",
+      "emnenavn": "Innføring i geovitskap",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MAT101",
+      "emnenavn": "Brukarkurs i matematikk I",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen gir valget mellom MAT101 og MAT111 (Grunnkurs i matematikk I), avhengig av forkunnskapar frå vidaregåande skole."
+    },
+    {
+      "emnekode": "INF100",
+      "emnenavn": "Programmering 1",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen sitt tilrådde løp set INF100 i 1. semester og eit valemne (t.d. KJEM109/KJEM110) i 2. semester; INF100 kan òg takast i 2. semester med eit valemne i staden i 1. semester. Uansett rekkjefølgje er INF100 sjølv obligatorisk, jf. den offisielle lista over obligatoriske emne på programsida."
+    },
+    {
+      "emnekode": "GEOV102",
+      "emnenavn": "Geologi i praksis",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "GEOV111",
+      "emnenavn": "Geofysiske metodar",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "GEOV103",
+      "emnenavn": "Jorda og livet sine byggjesteinar",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "GEOV107",
+      "emnenavn": "Innføring i sedimentologi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "GEOV110",
+      "emnenavn": "Innføring i eksogene prosessar og paleoklima",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "GEOV104",
+      "emnenavn": "Innføring i strukturgeologi og tektonikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "GEOV109",
+      "emnenavn": "Samspel mellom Jorda og Livet",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "EXPHIL-MNEKS",
+      "emnenavn": "Examen philosophicum - skuleeksamen",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen gir valget mellom EXPHIL-MNEKS (skuleeksamen) og EXPHIL-MNSEM (seminarmodell); begge er 10 sp og reelt likeverdige alternativ for det obligatoriske exphil-kravet."
+    },
+    {
+      "emnekode": "GEOV114",
+      "emnenavn": "Jorda og livet si felles historie",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er UiBs studieplan for BAMN-GEOV, studieretning geologi (www4.uib.no/studier/program/geovitskap-bachelor/plan-1), publisert for studieplan høst 2026, kryssjekket mot programsida www.uib.no/studieprogram/BAMN-GEOV og mot dei enkelte emnesidene (www4.uib.no/studier/emner/<KODE>) for studiepoeng og emnenamn. Studieplanen sitt eige avsnitt «Obligatoriske emne» lister nøyaktig desse 11 emnekodane (der MAT101/MAT111 og EXPHIL-MNEKS/EXPHIL-MNSEM er oppgitt som par): MAT101/MAT111, EXPHIL-MNEKS/EXPHIL-MNSEM, INF100, GEOV101, GEOV102, GEOV103, GEOV104, GEOV107, GEOV109, GEOV110, GEOV111 og GEOV114 - til saman 120 sp av 180 sp totalt. Dei resterande 60 sp er frie/tilrådde valemne (m.a. kjemi-, matematikk-, statistikk- og fysikkemne som KJEM109/110/120/130/131, MAT102, MAT121, STAT101/110, PHYS101/111), fordelt med typisk 10 sp i 2. semester, 20 sp i 5. semester og 30 sp i 6. semester (der 30 sp av dei frie studiepoenga kan takast som utveksling i 6. semester). MAT101/MAT111 er eit reelt val avhengig av matematikkbakgrunn frå vidaregåande og er ført som éin linje (MAT101) med merknad, tilsvarende praksis for REAL101/MATH-INF100 i nmbu_skogfag.json. EXPHIL-MNEKS/EXPHIL-MNSEM er to jamstilte eksamensformer for same exphil-krav og handsama på same måte. INF100 er sett til 1. semester (haust, år 1) i denne fila i tråd med studieplanen sitt tilrådde løp, sjølv om studieplanteksten opnar for at INF100 kan takast i 2. semester i staden, med tilsvarande byte av eit valemne mellom semestera; dette endrar ikkje at INF100 sjølv er obligatorisk uansett plassering. Bachelorprogrammet i geovitskap har òg ei retning i geofysikk (plan-0) med delvis andre obligatoriske emne frå og med 3. semester; denne fila dekker berre retninga geologi (plan-1), som er den etterspurde samanlikninga med NMBUs miljø og naturressurser-bachelor."
+}

@@ -3,6 +3,7 @@ import { SAMF_DATA, SAMF_YEARS } from '../data/samfData';
 import { ANNUAL_STUDIES_DATA, ANNUAL_YEARS } from '../data/annualStudiesData';
 import type { FacultyData } from '../data/faculties';
 import type { PlanCourse } from '../data/landsamStudyPlanData';
+import type { SbDimension } from '../data/landsamStudiebarometerData';
 
 // ─── Core helpers ─────────────────────────────────────────────────────────────
 
@@ -372,4 +373,69 @@ export function exportFacultyStudyPlanCsv(
   }
 
   downloadCsv(`${faculty.id}_studieplan_${groupId}_${year}.csv`, lines);
+}
+
+// ─── Studiebarometeret ────────────────────────────────────────────────────────
+
+const SB_CSV_DIMENSIONS: SbDimension[] = [
+  'undervisning', 'tilbakemeldinger', 'vurderingsformer', 'laeringsmiljo',
+  'organisering', 'yrkesrelevans', 'engasjement', 'helhetsvurdering',
+];
+
+/**
+ * Alle Studiebarometer-tall for fakultetet: én rad per program per år, pluss én
+ * rad med fagfeltsnittet for siste år. `groupId` begrenser til én programgruppe.
+ */
+export function exportFacultyStudiebarometerCsv(faculty: FacultyData, groupId?: string) {
+  const header = row(
+    'Programgruppe', 'Institusjon', 'Kortnavn', 'NMBU', 'Program', 'Rad',
+    'År', 'Respondenter', 'Svarprosent',
+    'Undervisning', 'Tilbakemeldinger', 'Vurderingsformer', 'Læringsmiljø',
+    'Organisering', 'Tilknytning til yrkeslivet', 'Eget engasjement', 'Helhetsvurdering',
+    'Fagfelt', 'Merknad', 'Lenke'
+  );
+
+  const lines: string[] = [header];
+  const entries = faculty.studiebarometer.filter((e) => !groupId || e.groupId === groupId);
+
+  const gruppeNavn = (id: string): string =>
+    faculty.admissionGroups.find((g) => g.id === id)?.label ?? id;
+
+  for (const e of entries) {
+    const gruppe = gruppeNavn(e.groupId);
+    const base = [gruppe, e.institusjon, e.shortName, e.isNmbu ? 'ja' : 'nei', e.programnavn];
+
+    for (const h of e.history) {
+      const siste = h.year === e.latestYear;
+      lines.push(row(
+        ...base, 'Program',
+        h.year,
+        siste ? e.respondents : null,
+        siste ? e.responseRate : null,
+        ...SB_CSV_DIMENSIONS.map((d) => h.scores[d]),
+        e.fieldLabel, siste ? e.warning : null, siste ? e.url : null
+      ));
+    }
+
+    // Programmer uten tidsserie: ta med siste år likevel.
+    if (e.history.length === 0) {
+      lines.push(row(
+        ...base, 'Program',
+        e.latestYear, e.respondents, e.responseRate,
+        ...SB_CSV_DIMENSIONS.map((d) => e.scores[d]),
+        e.fieldLabel, e.warning, e.url
+      ));
+    }
+
+    if (e.fieldLabel) {
+      lines.push(row(
+        ...base, 'Fagfeltsnitt',
+        e.latestYear, null, null,
+        ...SB_CSV_DIMENSIONS.map((d) => e.fieldAverage[d]),
+        e.fieldLabel, null, null
+      ));
+    }
+  }
+
+  downloadCsv(`${faculty.id}_studiebarometeret${groupId ? `_${groupId}` : ''}.csv`, lines);
 }
