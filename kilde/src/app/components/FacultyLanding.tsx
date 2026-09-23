@@ -30,7 +30,7 @@ const ACTIVE_FACULTIES: FacultyCard[] = [
   {
     id: 'hh',
     icon: <Building2 className="w-5 h-5" style={{ color: 'var(--nmbu-green-dark)' }} />,
-    badge: 'Handelshøyskolen',
+    badge: 'HH',
     title: 'Handelshøyskolen',
     subtitle: 'Økonomi og administrasjon, samfunnsøkonomi, årsstudier',
     desc: 'Opptakstall, poenggrenser, emnekarakterer, karakterindeks, Studiebarometeret og markedsstatus for bachelor, master og årsstudier — sammenlignet med alle norske universiteter og høyskoler.',
