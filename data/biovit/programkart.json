@@ -366,52 +366,52 @@
           "url": "https://www.nmbu.no/studier/master-2-aar/biologi",
           "localData": {
             "2021": {
-              "alleS": null,
+              "alleS": 109,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 83,
+              "tilbud": 42,
               "pg_fv": null,
               "pg_ord": null
             },
             "2022": {
-              "alleS": null,
+              "alleS": 115,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 88,
+              "tilbud": 41,
               "pg_fv": null,
               "pg_ord": null
             },
             "2023": {
-              "alleS": null,
+              "alleS": 135,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 107,
+              "tilbud": 49,
               "pg_fv": null,
               "pg_ord": null
             },
             "2024": {
-              "alleS": null,
+              "alleS": 121,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 94,
+              "tilbud": 50,
               "pg_fv": null,
               "pg_ord": null
             },
             "2025": {
-              "alleS": null,
+              "alleS": 124,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 105,
+              "tilbud": 49,
               "pg_fv": null,
               "pg_ord": null
             },
@@ -427,7 +427,7 @@
             },
             "localSource": [
               "https://www.nmbu.no/studier/master-2-aar/biologi",
-              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram – ikke tilgjengelig 22.09.2026)"
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
         },
@@ -445,52 +445,52 @@
           "url": "https://www.uio.no/studier/program/biovitenskap-master/",
           "localData": {
             "2021": {
-              "alleS": null,
+              "alleS": 1630,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 452,
+              "tilbud": 188,
               "pg_fv": null,
               "pg_ord": null
             },
             "2022": {
-              "alleS": null,
+              "alleS": 1428,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 373,
+              "tilbud": 172,
               "pg_fv": null,
               "pg_ord": null
             },
             "2023": {
-              "alleS": null,
+              "alleS": 1599,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 382,
+              "tilbud": 179,
               "pg_fv": null,
               "pg_ord": null
             },
             "2024": {
-              "alleS": null,
+              "alleS": 1046,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 382,
+              "tilbud": 181,
               "pg_fv": null,
               "pg_ord": null
             },
             "2025": {
-              "alleS": null,
+              "alleS": 1101,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 372,
+              "tilbud": 177,
               "pg_fv": null,
               "pg_ord": null
             },
@@ -505,7 +505,8 @@
               "pg_ord": null
             },
             "localSource": [
-              "https://www.uio.no/studier/program/biovitenskap-master/"
+              "https://www.uio.no/studier/program/biovitenskap-master/",
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
         },
@@ -523,52 +524,52 @@
           "url": "https://www4.uib.no/studier/program/biologi-master",
           "localData": {
             "2021": {
-              "alleS": null,
+              "alleS": 454,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 243,
+              "tilbud": 108,
               "pg_fv": null,
               "pg_ord": null
             },
             "2022": {
-              "alleS": null,
+              "alleS": 361,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 139,
+              "tilbud": 83,
               "pg_fv": null,
               "pg_ord": null
             },
             "2023": {
-              "alleS": null,
+              "alleS": 350,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 152,
+              "tilbud": 82,
               "pg_fv": null,
               "pg_ord": null
             },
             "2024": {
-              "alleS": null,
+              "alleS": 539,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 287,
+              "tilbud": 156,
               "pg_fv": null,
               "pg_ord": null
             },
             "2025": {
-              "alleS": null,
+              "alleS": 296,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 130,
+              "tilbud": 102,
               "pg_fv": null,
               "pg_ord": null
             },
@@ -583,7 +584,8 @@
               "pg_ord": null
             },
             "localSource": [
-              "https://www4.uib.no/studier/program/biologi-master"
+              "https://www4.uib.no/studier/program/biologi-master",
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
         },
@@ -601,52 +603,52 @@
           "url": "https://www.ntnu.no/studier/msbio",
           "localData": {
             "2021": {
-              "alleS": null,
+              "alleS": 842,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 332,
+              "tilbud": 85,
               "pg_fv": null,
               "pg_ord": null
             },
             "2022": {
-              "alleS": null,
+              "alleS": 869,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 343,
+              "tilbud": 66,
               "pg_fv": null,
               "pg_ord": null
             },
             "2023": {
-              "alleS": null,
+              "alleS": 484,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 173,
+              "tilbud": 60,
               "pg_fv": null,
               "pg_ord": null
             },
             "2024": {
-              "alleS": null,
+              "alleS": 256,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 132,
+              "tilbud": 57,
               "pg_fv": null,
               "pg_ord": null
             },
             "2025": {
-              "alleS": null,
+              "alleS": 310,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 153,
+              "tilbud": 64,
               "pg_fv": null,
               "pg_ord": null
             },
@@ -661,7 +663,8 @@
               "pg_ord": null
             },
             "localSource": [
-              "https://www.ntnu.no/studier/msbio"
+              "https://www.ntnu.no/studier/msbio",
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
         },
@@ -679,52 +682,52 @@
           "url": "https://uit.no/utdanning/program/269576/biologi_-_master",
           "localData": {
             "2021": {
-              "alleS": null,
+              "alleS": 352,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 124,
+              "tilbud": 111,
               "pg_fv": null,
               "pg_ord": null
             },
             "2022": {
-              "alleS": null,
+              "alleS": 645,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 216,
+              "tilbud": 104,
               "pg_fv": null,
               "pg_ord": null
             },
             "2023": {
-              "alleS": null,
+              "alleS": 693,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 310,
+              "tilbud": 133,
               "pg_fv": null,
               "pg_ord": null
             },
             "2024": {
-              "alleS": null,
+              "alleS": 508,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 284,
+              "tilbud": 128,
               "pg_fv": null,
               "pg_ord": null
             },
             "2025": {
-              "alleS": null,
+              "alleS": 546,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 275,
+              "tilbud": 130,
               "pg_fv": null,
               "pg_ord": null
             },
@@ -739,7 +742,8 @@
               "pg_ord": null
             },
             "localSource": [
-              "https://uit.no/utdanning/program/269576/biologi_-_master"
+              "https://uit.no/utdanning/program/269576/biologi_-_master",
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
         },
@@ -757,52 +761,52 @@
           "url": "https://www.nord.no/studier/biovitenskap-master",
           "localData": {
             "2021": {
-              "alleS": null,
+              "alleS": 902,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 224,
+              "tilbud": 101,
               "pg_fv": null,
               "pg_ord": null
             },
             "2022": {
-              "alleS": null,
+              "alleS": 1311,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 236,
+              "tilbud": 101,
               "pg_fv": null,
               "pg_ord": null
             },
             "2023": {
-              "alleS": null,
+              "alleS": 1336,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 276,
+              "tilbud": 107,
               "pg_fv": null,
               "pg_ord": null
             },
             "2024": {
-              "alleS": null,
+              "alleS": 327,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 151,
+              "tilbud": 72,
               "pg_fv": null,
               "pg_ord": null
             },
             "2025": {
-              "alleS": null,
+              "alleS": 365,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 170,
+              "tilbud": 75,
               "pg_fv": null,
               "pg_ord": null
             },
@@ -817,7 +821,8 @@
               "pg_ord": null
             },
             "localSource": [
-              "https://www.nord.no/studier/biovitenskap-master"
+              "https://www.nord.no/studier/biovitenskap-master",
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
         }
@@ -844,52 +849,52 @@
           "url": "https://www.nmbu.no/studier/master-2-aar/husdyrvitenskap",
           "localData": {
             "2021": {
-              "alleS": null,
+              "alleS": 196,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 61,
+              "tilbud": 32,
               "pg_fv": null,
               "pg_ord": null
             },
             "2022": {
-              "alleS": null,
+              "alleS": 271,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 85,
+              "tilbud": 41,
               "pg_fv": null,
               "pg_ord": null
             },
             "2023": {
-              "alleS": null,
+              "alleS": 214,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 44,
+              "tilbud": 34,
               "pg_fv": null,
               "pg_ord": null
             },
             "2024": {
-              "alleS": null,
+              "alleS": 71,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 27,
+              "tilbud": 21,
               "pg_fv": null,
               "pg_ord": null
             },
             "2025": {
-              "alleS": null,
+              "alleS": 86,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 33,
+              "tilbud": 26,
               "pg_fv": null,
               "pg_ord": null
             },
@@ -904,7 +909,8 @@
               "pg_ord": null
             },
             "localSource": [
-              "https://www.nmbu.no/studier/master-2-aar/husdyrvitenskap"
+              "https://www.nmbu.no/studier/master-2-aar/husdyrvitenskap",
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
         },
@@ -922,52 +928,52 @@
           "url": "https://www.nord.no/studier/biovitenskap-master",
           "localData": {
             "2021": {
-              "alleS": null,
+              "alleS": 902,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 224,
+              "tilbud": 101,
               "pg_fv": null,
               "pg_ord": null
             },
             "2022": {
-              "alleS": null,
+              "alleS": 1311,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 236,
+              "tilbud": 101,
               "pg_fv": null,
               "pg_ord": null
             },
             "2023": {
-              "alleS": null,
+              "alleS": 1336,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 276,
+              "tilbud": 107,
               "pg_fv": null,
               "pg_ord": null
             },
             "2024": {
-              "alleS": null,
+              "alleS": 327,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 151,
+              "tilbud": 72,
               "pg_fv": null,
               "pg_ord": null
             },
             "2025": {
-              "alleS": null,
+              "alleS": 365,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 170,
+              "tilbud": 75,
               "pg_fv": null,
               "pg_ord": null
             },
@@ -982,7 +988,8 @@
               "pg_ord": null
             },
             "localSource": [
-              "https://www.nord.no/studier/biovitenskap-master"
+              "https://www.nord.no/studier/biovitenskap-master",
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
         },
@@ -1040,12 +1047,12 @@
               "pg_ord": null
             },
             "2025": {
-              "alleS": null,
+              "alleS": 15,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 15,
+              "tilbud": 15,
               "pg_fv": null,
               "pg_ord": null
             },
@@ -1060,7 +1067,8 @@
               "pg_ord": null
             },
             "localSource": [
-              "https://www.nmbu.no/studier/master-2-aar/european-master-animal-biodiversity-and-genomics"
+              "https://www.nmbu.no/studier/master-2-aar/european-master-animal-biodiversity-and-genomics",
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
         }
@@ -1087,52 +1095,52 @@
           "url": "https://www.nmbu.no/studier/master-2-aar/plantevitenskap",
           "localData": {
             "2021": {
-              "alleS": null,
+              "alleS": 232,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 63,
+              "tilbud": 27,
               "pg_fv": null,
               "pg_ord": null
             },
             "2022": {
-              "alleS": null,
+              "alleS": 240,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 41,
+              "tilbud": 23,
               "pg_fv": null,
               "pg_ord": null
             },
             "2023": {
-              "alleS": null,
+              "alleS": 225,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 35,
+              "tilbud": 28,
               "pg_fv": null,
               "pg_ord": null
             },
             "2024": {
-              "alleS": null,
+              "alleS": 87,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 26,
+              "tilbud": 21,
               "pg_fv": null,
               "pg_ord": null
             },
             "2025": {
-              "alleS": null,
+              "alleS": 120,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 50,
+              "tilbud": 40,
               "pg_fv": null,
               "pg_ord": null
             },
@@ -1147,7 +1155,8 @@
               "pg_ord": null
             },
             "localSource": [
-              "https://www.nmbu.no/studier/master-2-aar/plantevitenskap"
+              "https://www.nmbu.no/studier/master-2-aar/plantevitenskap",
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
         },
@@ -1175,42 +1184,42 @@
               "pg_ord": null
             },
             "2022": {
-              "alleS": null,
+              "alleS": 37,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 29,
+              "tilbud": 29,
               "pg_fv": null,
               "pg_ord": null
             },
             "2023": {
-              "alleS": null,
+              "alleS": 39,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 33,
+              "tilbud": 33,
               "pg_fv": null,
               "pg_ord": null
             },
             "2024": {
-              "alleS": null,
+              "alleS": 41,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 29,
+              "tilbud": 28,
               "pg_fv": null,
               "pg_ord": null
             },
             "2025": {
-              "alleS": null,
+              "alleS": 42,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 22,
+              "tilbud": 19,
               "pg_fv": null,
               "pg_ord": null
             },
@@ -1225,7 +1234,8 @@
               "pg_ord": null
             },
             "localSource": [
-              "https://www.inn.no/studier/vare-studier/master-i-berekraftig-jordbruk/"
+              "https://www.inn.no/studier/vare-studier/master-i-berekraftig-jordbruk/",
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
         },
@@ -1243,52 +1253,52 @@
           "url": "https://www.nmbu.no/studier/master-2-aar/agroecology",
           "localData": {
             "2021": {
-              "alleS": null,
+              "alleS": 206,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 50,
+              "tilbud": 29,
               "pg_fv": null,
               "pg_ord": null
             },
             "2022": {
-              "alleS": null,
+              "alleS": 233,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 68,
+              "tilbud": 31,
               "pg_fv": null,
               "pg_ord": null
             },
             "2023": {
-              "alleS": null,
+              "alleS": 147,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 24,
+              "tilbud": 22,
               "pg_fv": null,
               "pg_ord": null
             },
             "2024": {
-              "alleS": null,
+              "alleS": 54,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 26,
+              "tilbud": 19,
               "pg_fv": null,
               "pg_ord": null
             },
             "2025": {
-              "alleS": null,
+              "alleS": 85,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 34,
+              "tilbud": 27,
               "pg_fv": null,
               "pg_ord": null
             },
@@ -1303,7 +1313,8 @@
               "pg_ord": null
             },
             "localSource": [
-              "https://www.nmbu.no/studier/master-2-aar/agroecology"
+              "https://www.nmbu.no/studier/master-2-aar/agroecology",
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
         }
@@ -1330,52 +1341,52 @@
           "url": "https://www.nmbu.no/studier/master-2-aar/aquaculture",
           "localData": {
             "2021": {
-              "alleS": null,
+              "alleS": 186,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 69,
+              "tilbud": 40,
               "pg_fv": null,
               "pg_ord": null
             },
             "2022": {
-              "alleS": null,
+              "alleS": 221,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 72,
+              "tilbud": 45,
               "pg_fv": null,
               "pg_ord": null
             },
             "2023": {
-              "alleS": null,
+              "alleS": 165,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 45,
+              "tilbud": 34,
               "pg_fv": null,
               "pg_ord": null
             },
             "2024": {
-              "alleS": null,
+              "alleS": 92,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 52,
+              "tilbud": 46,
               "pg_fv": null,
               "pg_ord": null
             },
             "2025": {
-              "alleS": null,
+              "alleS": 115,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 60,
+              "tilbud": 37,
               "pg_fv": null,
               "pg_ord": null
             },
@@ -1390,7 +1401,8 @@
               "pg_ord": null
             },
             "localSource": [
-              "https://www.nmbu.no/studier/master-2-aar/aquaculture"
+              "https://www.nmbu.no/studier/master-2-aar/aquaculture",
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
         },
@@ -1408,52 +1420,52 @@
           "url": "https://uit.no/utdanning/program/268941/fiskeri-_og_havbruksvitenskap_-_master",
           "localData": {
             "2021": {
-              "alleS": null,
+              "alleS": 94,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 55,
+              "tilbud": 52,
               "pg_fv": null,
               "pg_ord": null
             },
             "2022": {
-              "alleS": null,
+              "alleS": 75,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 58,
+              "tilbud": 58,
               "pg_fv": null,
               "pg_ord": null
             },
             "2023": {
-              "alleS": null,
+              "alleS": 81,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 59,
+              "tilbud": 59,
               "pg_fv": null,
               "pg_ord": null
             },
             "2024": {
-              "alleS": null,
+              "alleS": 102,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 77,
+              "tilbud": 77,
               "pg_fv": null,
               "pg_ord": null
             },
             "2025": {
-              "alleS": null,
+              "alleS": 91,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 70,
+              "tilbud": 65,
               "pg_fv": null,
               "pg_ord": null
             },
@@ -1468,7 +1480,8 @@
               "pg_ord": null
             },
             "localSource": [
-              "https://uit.no/utdanning/program/268941/fiskeri-_og_havbruksvitenskap_-_master"
+              "https://uit.no/utdanning/program/268941/fiskeri-_og_havbruksvitenskap_-_master",
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
         },
@@ -1486,52 +1499,52 @@
           "url": "https://www.nord.no/studier/biovitenskap-master",
           "localData": {
             "2021": {
-              "alleS": null,
+              "alleS": 902,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 224,
+              "tilbud": 101,
               "pg_fv": null,
               "pg_ord": null
             },
             "2022": {
-              "alleS": null,
+              "alleS": 1311,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 236,
+              "tilbud": 101,
               "pg_fv": null,
               "pg_ord": null
             },
             "2023": {
-              "alleS": null,
+              "alleS": 1336,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 276,
+              "tilbud": 107,
               "pg_fv": null,
               "pg_ord": null
             },
             "2024": {
-              "alleS": null,
+              "alleS": 327,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 151,
+              "tilbud": 72,
               "pg_fv": null,
               "pg_ord": null
             },
             "2025": {
-              "alleS": null,
+              "alleS": 365,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 170,
+              "tilbud": 75,
               "pg_fv": null,
               "pg_ord": null
             },
@@ -1546,7 +1559,8 @@
               "pg_ord": null
             },
             "localSource": [
-              "https://www.nord.no/studier/biovitenskap-master"
+              "https://www.nord.no/studier/biovitenskap-master",
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
         },
@@ -1564,52 +1578,52 @@
           "url": "https://uit.no/utdanning/program/268952/akvamedisin_-_master",
           "localData": {
             "2021": {
-              "alleS": null,
+              "alleS": 388,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 340,
+              "tilbud": 59,
               "pg_fv": null,
               "pg_ord": null
             },
             "2022": {
-              "alleS": null,
+              "alleS": 349,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 302,
+              "tilbud": 70,
               "pg_fv": null,
               "pg_ord": null
             },
             "2023": {
-              "alleS": null,
+              "alleS": 359,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 295,
+              "tilbud": 75,
               "pg_fv": null,
               "pg_ord": null
             },
             "2024": {
-              "alleS": null,
+              "alleS": 305,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 238,
+              "tilbud": 41,
               "pg_fv": null,
               "pg_ord": null
             },
             "2025": {
-              "alleS": null,
+              "alleS": 296,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 210,
+              "tilbud": 54,
               "pg_fv": null,
               "pg_ord": null
             },
@@ -1624,7 +1638,8 @@
               "pg_ord": null
             },
             "localSource": [
-              "https://uit.no/utdanning/program/268952/akvamedisin_-_master"
+              "https://uit.no/utdanning/program/268952/akvamedisin_-_master",
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
         }

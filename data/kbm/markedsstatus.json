@@ -310,6 +310,72 @@
       ],
       "oppsummering": "IKBM ved UiS er et relativt lite institutt (40 ansatte, 270 studenter) som nå for første gang skal få en formelt vedtatt instituttstrategi fram mot 2030, etter at nasjonale fagevalueringer (EVALMIT, EVALNAT) pekte på mangelen som en svakhet ved fakultetet. Samtidig krymper bachelor i biologisk kjemi med 5 plasser i opptaksrammene for 2027, og instituttets miljøteknologi-bachelor fortsetter med nullopptak mens fagmiljøet forbereder et nytt bachelorprogram i vann- og havbruksteknologi.",
       "relevanteProgram": ["uis_biologisk_kjemi"]
+    },
+    {
+      "id": "oslomet",
+      "name": "OsloMet",
+      "fullName": "OsloMet - storbyuniversitetet",
+      "enhet": "Fakultet for teknologi, kunst og design (TKD) — Institutt for maskin, elektronikk og kjemi (MEK)",
+      "styresider": ["https://opengov.360online.com/Meetings/oslomet/Boards/Details/304093", "https://www.oslomet.no/om/tkd/fakultetsstyret-ved-tkd"],
+      "status": "partial",
+      "dokumenter": [
+        {
+          "label": "Fakultetsstyret TKD – møteprotokoll 26.02.2026 (årsrapport 2025, strategimidler, risikobilde)",
+          "url": "https://opengov.360online.com/Meetings/oslomet/File/Details/1368923.PDF",
+          "filnavn": "OsloMet_TKD_Protokoll_26.02.2026.pdf",
+          "dato": "2026-02-26",
+          "storrelseMB": 0.11,
+          "lastetNed": true
+        },
+        {
+          "label": "Fakultetsstyret TKD – møteprotokoll 16.04.2026 (risikobilde 2026-2030, oppdragsbrev TKD 2026)",
+          "url": "https://opengov.360online.com/Meetings/oslomet/File/Details/1383216.pdf",
+          "filnavn": "OsloMet_TKD_Protokoll_16.04.2026.pdf",
+          "dato": "2026-04-16",
+          "storrelseMB": 0.11,
+          "lastetNed": true
+        },
+        {
+          "label": "Fakultetsstyret TKD – møteprotokoll 11.06.2026 (tertialrapport T1 2026, prognose, tiltaksplan 2027)",
+          "url": "https://opengov.360online.com/Meetings/oslomet/File/Details/1400326.pdf",
+          "filnavn": "OsloMet_TKD_Protokoll_11.06.2026.pdf",
+          "dato": "2026-06-11",
+          "storrelseMB": 0.13,
+          "lastetNed": true
+        },
+        {
+          "label": "OsloMet: Institutt for maskin, elektronikk og kjemi (MEK) – Forskning og utvikling (prioriterte satsingsområder og forskningsgrupper)",
+          "url": "https://www.oslomet.no/om/tkd/mek/fou",
+          "filnavn": "",
+          "dato": "2026",
+          "storrelseMB": 0,
+          "lastetNed": false
+        },
+        {
+          "label": "OsloMet: Studieprogramside «Studier bioteknologi- og kjemiingeniør på OsloMet!» (studieplasser, opptak, jobbmuligheter)",
+          "url": "https://www.oslomet.no/studier/tkd/bioteknologi-kjemiingenior",
+          "filnavn": "",
+          "dato": "2026",
+          "storrelseMB": 0,
+          "lastetNed": false
+        },
+        {
+          "label": "TKD Strategisk handlingsplan 2025-2029 (kjemi/bioteknologi og MEK omtales ikke navngitt i planen)",
+          "url": "https://www.oslomet.no/om/tkd/tkd-strategisk-handlingsplan-2025-2029",
+          "filnavn": "",
+          "dato": "2025",
+          "storrelseMB": 0,
+          "lastetNed": false
+        }
+      ],
+      "punkter": [
+        "Bachelorprogrammet Ingeniør, bioteknologi og kjemi ligger under Institutt for maskin, elektronikk og kjemi (MEK) ved TKD, og har 47 studieplasser. Programsiden opplyser at «ved forrige opptak kom alle kvalifiserte søkere inn» — det vil si ingen kvoteutvelgelse, et tegn på at programmet ikke er blant fakultetets mest søkte.",
+        "MEK-instituttets egne sider for forskning og utvikling lister mekanikk/maskinteknikk, robotikk/kybernetikk og medisinsk teknologi som prioriterte satsingsområder, med to formaliserte forskningsgrupper (ADEPT og M3T) og egne laboratorier (bevegelsesanalyselab, Oceanlab). Kjemi er ikke nevnt som et eget prioritert satsingsområde eller med egen forskningsgruppe, til tross for at faget inngår i instituttets navn og studieporteføljen.",
+        "TKDs strategiske handlingsplan 2025-2029 nevner verken kjemi, bioteknologi eller MEK-instituttet ved navn — i motsetning til fakultetets øvrige, mer teknologitunge fagområder (ingeniørfag for øvrig, kunst og design), som omtales eksplisitt i planen.",
+        "Som i REALTEK-sammenligningen for OsloMet publiserer fakultetsstyret TKD bare korte møteprotokoller med vedtakstekst i sin åpne møteportal, uten vedlagte sakspapirer med søkertall, økonomital eller risikovurderinger for det enkelte institutt. Instituttspesifikk økonomi- og søkertallsinformasjon for bioteknologi- og kjemiingeniørprogrammet var derfor ikke tilgjengelig i offentlig, nedlastbart format, og vurderingen er merket delvis."
+      ],
+      "oppsummering": "OsloMets bioteknologi- og kjemiingeniørutdanning ligger organisatorisk under Institutt for maskin, elektronikk og kjemi (MEK), et institutt der fakultetets egne nettsider og strategiske handlingsplan tydelig prioriterer mekanikk, robotikk/kybernetikk og medisinsk teknologi — kjemifaget er verken navngitt som satsingsområde i instituttets FoU-presentasjon eller i TKDs strategiplan 2025-2029, og programmet fylte ikke opp med kvalifiserte søkere ved forrige opptak. Fakultetsstyret TKD publiserer fortsatt bare korte møteprotokoller uten sakspapirer i sin åpne portal, slik at institutt- og programspesifikk økonomi og søkertall ikke lot seg dokumentere i dette arbeidet.",
+      "relevanteProgram": ["oslomet_ing_bioteknologi_kjemi"]
     }
   ]
 }

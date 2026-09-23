@@ -1,0 +1,200 @@
+{
+  "entryId": "hvl_fornybar",
+  "programnavn": "Fornybar energi (bachelor)",
+  "institusjon": "Høgskulen på Vestlandet",
+  "studieplanAar": "2024/2025",
+  "kilder": [
+    "https://www.hvl.no/studier/studieprogram/fornybar-energi/",
+    "https://www.hvl.no/studier/studieprogram/energiomstilling/2024h/studieplan/",
+    "https://www.hvl.no/studier/studieprogram/energiomstilling/2024h/utdanningsplan/"
+  ],
+  "hentet": "2026-09-23",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 160,
+  "obligatoriske": [
+    {
+      "emnekode": "FE401",
+      "emnenavn": "Miljø- og energipolitikk",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FE405",
+      "emnenavn": "Grunnleggjande energikonsept",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MA415",
+      "emnenavn": "Matematikk brukaremne",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "BI445",
+      "emnenavn": "Økologi grunnkurs",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FE410",
+      "emnenavn": "Teknologi, innovasjon og samfunn",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FE404",
+      "emnenavn": "Matematikk for fornybar energi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Utdanningsplanen fører FE404 og GE483 (Climate Change) som «Valgfrie emne» i samme obligatoriske-emne-blokk (samlet krav 160 sp for blokken); ett av de to må velges for å fylle opp semester 2 til 30 sp. Ført som én linje (FE404) med merknad om alternativet GE483, tilsvarende praksis for REAL101/MATH-INF100 i nmbu_skogfag.json."
+    },
+    {
+      "emnekode": "FE406",
+      "emnenavn": "Energiøkonomi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FE407",
+      "emnenavn": "Fornybar energiteknologi og ressursvurdering",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "GE413",
+      "emnenavn": "Kartlære og GIS",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FE409",
+      "emnenavn": "Metodekurs for fornybar energi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FE411",
+      "emnenavn": "Energisystem",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "PL412",
+      "emnenavn": "Landskapsinngrep",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FE402",
+      "emnenavn": "Anvendte øvingar i energiomstilling",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FE403",
+      "emnenavn": "Bacheloroppgåve i fornybar energi",
+      "studiepoeng": 20,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FE408",
+      "emnenavn": "Berekraftig energiomstilling",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "Fordjuping i planlegging",
+      "obligatoriske": [
+        {
+          "emnekode": "PL417",
+          "emnenavn": "Arealplanlegging",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "PL418",
+          "emnenavn": "Reguleringsplanlegging",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Innføring i planlegging",
+      "obligatoriske": [
+        {
+          "emnekode": "PL433",
+          "emnenavn": "Innføring i arealplanlegging",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "høst",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FY400",
+          "emnenavn": "Innføring i fysikk",
+          "studiepoeng": 10,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "Utdanningsplanen fører FY400 og ING303 (Systemtenking og innovasjon for ingeniørar) som «Valgfrie emne» innanfor denne valretninga (samlet krav 20 sp for retninga); ett av de to må velges for å fylle opp retningskravet. Ført som én linje (FY400) med merknad om alternativet ING303."
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er HVLs utdanningsplan-verktøy (www.hvl.no/studier/studieprogram/energiomstilling/2024h/utdanningsplan/), for kullet med studiestart høst 2024. Programmet het tidligere «Fornybar energi» og heter nå «Energiomstilling» (samme studiekode FEN); programsiden nmbu.no-ekvivalenten hos HVL (hvl.no/studier/studieprogram/fornybar-energi/) viser at «Denne utdanninga hadde siste opptak av studentar i 2024», så det finnes ingen nyere kull enn 2024 (kullet med studiestart 2025 er ikke reelt, HVL har fortsatt en «Studiestart 2025h»-lenke i utdanningsplanverktøyet, men programsiden bekrefter at opptaket ble avsluttet i 2024). Kull 2024 er derfor både det siste og det eneste aktuelle kullet, og er nå i sitt 3. og siste studieår (2026/2027). Utdanningsplanen deler emnene i to nivå: en hovedblokk «Obligatoriske emne» med samlet krav 160 studiepoeng (14 navngitte obligatoriske emner à 150 sp, pluss et reelt valg i 2. semester mellom FE404 og GE483 à 10 sp for å fylle opp til 160 sp), og en valretning «Krav: 20 studiepoeng» i 3. år der studenten velger mellom to spor: «Fordjuping i planlegging» (PL417+PL418, begge obligatoriske, 20 sp) og «Innføring i planlegging» (PL433 obligatorisk 10 sp, pluss et reelt valg mellom FY400 og ING303 for de resterende 10 sp). 160 + 20 = 180 sp totalt, dvs. hele programmet består av obligatoriske emner og reelle 1-av-2-valg mellom nær-likeverdige alternativer; det finnes ingen fri valgfagpool utover dette. Emnenavn og studiepoeng er hentet direkte fra utdanningsplanverktøyet."
+}

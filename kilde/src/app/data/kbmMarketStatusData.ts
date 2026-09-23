@@ -1,4 +1,4 @@
-// GENERERT av scripts/build-markedsstatus.py ukjent dato – ikke rediger for hånd.
+// GENERERT av scripts/build-markedsstatus.py 2026-09-23 – ikke rediger for hånd.
 // Kilde: data/kbm/markedsstatus.json · PDF-er i kilde/public/markedsstatus/kbm/
 
 export interface MarketDoc {
@@ -22,6 +22,397 @@ export interface MarketInstitution {
   relevanteProgram: string[];
 }
 
-export const MARKET_STATUS_HENTET: string | null = null;
+export const MARKET_STATUS_HENTET: string | null = "2026-09-23";
 
-export const MARKET_STATUS: MarketInstitution[] = [];
+export const MARKET_STATUS: MarketInstitution[] = [
+  {
+    "id": "uio",
+    "name": "UiO",
+    "fullName": "Universitetet i Oslo",
+    "enhet": "Det matematisk-naturvitenskapelige fakultet (MN) — Kjemisk institutt og Institutt for biovitenskap (IBV) — og Det medisinske fakultet (klinisk ernæring)",
+    "styresider": [
+      "https://www.mn.uio.no/om/organisasjon/styret/",
+      "https://www.mn.uio.no/ibv/om/organisasjon/styret/",
+      "https://www.med.uio.no/om/organisasjon/styret/"
+    ],
+    "status": "complete",
+    "dokumenter": [
+      {
+        "label": "V-sak 59-25 Universitetet i Oslos utdanningsportefølje for studieåret 2026/2027 (inkl. femårig master i klinisk ernæring, frafall/gjennomstrømning)",
+        "url": "https://www.uio.no/om/organisasjon/styret/moter/2025/06-10/v-sak-59-25-universitetet-i-oslos-utdanningsportefolje-for-studiearet-2026-2027.pdf",
+        "localPath": "/markedsstatus/kbm/UiO_Vsak59-25_Utdanningsportefolje2026-27.pdf",
+        "dato": "2025-06-10",
+        "storrelseMB": 3.72
+      },
+      {
+        "label": "Det medisinske fakultet – sak 36/25, saksfremlegg om opptak og studiestart høsten 2025 (søker- og opptakstall for klinisk ernæring m.fl.)",
+        "url": "https://www.med.uio.no/om/organisasjon/styret/moter/2025/09-30/dokumenter/36-25-saksfremlegg-opptak-og-studiestart-2025.pdf",
+        "localPath": "/markedsstatus/kbm/UiO_Med_Sak36-25_Opptak2025.pdf",
+        "dato": "2025-09-30",
+        "storrelseMB": 0.24
+      },
+      {
+        "label": "Institutt for biovitenskap (IBV) – styrereferat IS1/2026, instituttets økonomi og videre arbeid (kostnadskutt, budsjett 2026, langtidsprognose 2027-2030)",
+        "url": "https://www.mn.uio.no/ibv/om/organisasjon/styret/referater/styremotereferater-ibv/2026/referat-is1-2026.pdf",
+        "localPath": "/markedsstatus/kbm/UiO_IBV_Referat_IS1-2026.pdf",
+        "dato": "2026-03-04",
+        "storrelseMB": 0.2
+      },
+      {
+        "label": "Institutt for biovitenskap (IBV) – styrereferat IS2/2026, søkertall til programmene og status økonomi",
+        "url": "https://www.mn.uio.no/ibv/om/organisasjon/styret/referater/styremotereferater-ibv/2026/referat-is2-2026-web.pdf",
+        "localPath": "/markedsstatus/kbm/UiO_IBV_Referat_IS2-2026.pdf",
+        "dato": "2026-06-17",
+        "storrelseMB": 0.2
+      },
+      {
+        "label": "Institutt for biovitenskap (IBV) – styrereferat IS6/2025, V-sak 10/2025 budsjett for 2026 og langtidsprognose (vedtak om å fryse KD-stillinger)",
+        "url": "https://www.mn.uio.no/ibv/om/organisasjon/styret/referater/styremotereferater-ibv/2025/referat-is6-2025.pdf",
+        "localPath": "/markedsstatus/kbm/UiO_IBV_Referat_IS6-2025.pdf",
+        "dato": "2025-12-11",
+        "storrelseMB": 0.17
+      },
+      {
+        "label": "Apollon/Forskningsnytt: «Store forhåpninger til landets mest moderne laboratoriebygning» om Livsvitenskapsbygget (åpnet 22.06.2026)",
+        "url": "https://www.uio.no/forskning/forskningsnytt/apollon/artikler/2026/3-livsvitenskapsbygningen.html",
+        "localPath": null,
+        "dato": "2026",
+        "storrelseMB": 0.0
+      },
+      {
+        "label": "Uniforum: «Lite nytt om hva som skal skje på Nedre Blindern» (om lokalene Kjemisk institutt og IBV forlater)",
+        "url": "https://www.uniforum.uio.no/nyheter/2026/04/lite-nytt-om-utviklingen-pa-nedre-pa-blindern.html",
+        "localPath": null,
+        "dato": "2026-04",
+        "storrelseMB": 0.0
+      },
+      {
+        "label": "Kjemisk institutt: «Kjemi holder koken med søkerantall» (nyhetssak om søkertall 2026)",
+        "url": "https://www.mn.uio.no/kjemi/om/aktuelt/aktuelle-saker/2026/kjemi-holder-koken-med-sokerantall.html",
+        "localPath": null,
+        "dato": "2026",
+        "storrelseMB": 0.0
+      },
+      {
+        "label": "Khrono (kronikk av instituttleder Stian Svelle, Kjemisk institutt UiO): «Hvorfor det er viktig å løfte kjemifaget, og hvordan vi kan gjøre det», om Forskningsrådets fagevaluering EVALNAT",
+        "url": "https://www.khrono.no/hvorfor-det-er-viktig-a-lofte-kjemifaget-og-hvordan-vi-kan-gjore-det/885372",
+        "localPath": null,
+        "dato": "2025",
+        "storrelseMB": 0.0
+      }
+    ],
+    "punkter": [
+      "Høsten 2026 åpnet Livsvitenskapsbygget i Gaustadbekkdalen (97 000 kvm, 13,7 milliarder kroner, Norges største forskningsbygg), der Kjemisk institutt, Institutt for biovitenskap (IBV), Farmasøytisk institutt og Institutt for oral biologi flytter inn sammen med deler av Det medisinske fakultet og Oslo universitetssykehus; full innflytting er ventet i løpet av 2027.",
+      "Flyttingen frigjør store arealer på Nedre Blindern: hele Farmasibygningen (overtas av Senter for global bærekraft, vedtatt 2024) og størstedelen av Kjemibygningen, der rundt 30 000 kvm foreløpig er ledig og uten avklart bruk. Universitetsledelsen beskriver Kjemibygningen som i dårlig stand, og videre renovering forutsetter statlig støtte (Uniforum, april 2026); prosessen med å tømme og gjenbruke arealene ventes å ta rundt et tiår.",
+      "Institutt for biovitenskap (IBV) har hatt merforbruk i minst åtte år og er pålagt mindreforbruk for å komme i økonomisk balanse. I styresak V-sak 10/2025 (11.12.2025) vedtok instituttstyret – med dissens 6 mot 2, én avsto – å fryse tre fireårige KD-finansierte stillinger i 2026 og ytterligere tre i 2030, og ba instituttleder undersøke kompensasjon for areal i Kristine Bonnevies hus som sies opp frem mot flyttingen til Livsvitenskapsbygget.",
+      "I styresak O-sak 01/2026 (04.03.2026) la IBV frem gjennomførte og planlagte kostnadskutt: avvikling av forsøksdyrfasiliteten Invivo, omorganisering av Plantelaben, reduksjon ved sekvenseringssenteret, arealbesparelser og reduksjon/omlegging av administrasjon, IT og innkjøp. Fakultetet gir et ekstra tilskudd tilsvarende instituttets mindreforbruk, og instituttleder forhandler med MN-fakultetet om raskere gjeldssanering.",
+      "IBVs søkertall for 2026 (O-sak 06/2026, 17.06.2026): 975 søkere totalt og 192 førstevalgssøkere til 156 planlagte studieplasser. Andelen som har IBVs programmer som førstevalg faller, i tråd med en nasjonal trend ved sammenlignbare studieprogrammer. Instituttet viderefører rekrutteringskampanjen for bachelorprogrammet i 2026 med økt bruk av film, og mener tidligere kampanjer har bidratt til å holde søkertallene oppe.",
+      "Kjemisk institutts bachelorprogram Kjemi og biokjemi hadde 12 prosent flere førstevalgssøkere i 2026 sammenlignet med året før, ifølge instituttets egen omtale («Kjemi holder koken med søkerantall»), i kontrast til IBVs fallende førstevalgsandel.",
+      "Ved Det medisinske fakultet hadde den femårige integrerte masteren i klinisk ernæring 638 søkere i 2025, hvorav 104 fikk tilbud, 56 svarte ja og 46 møtte til studiestart (38 kvinner, 8 menn) (sak 36/25). I 2026 økte antall førstevalgssøkere noe videre til 2,3 søkere per studieplass.",
+      "Det medisinske fakultet nedsatte høsten 2024 en arbeidsgruppe for å redusere frafall og bedre gjennomstrømning i klinisk ernæring, som i mange år har hatt et problem med studenter som bruker opptaket til klinisk ernæring som en snarvei inn i medisin og odontologi, og bytter studium når de har opparbeidet nok konkurransepoeng. Arbeidsgruppen anbefalte i mars 2025 å omstrukturere fellesundervisningen med medisin og odontologi for å begrense slike overganger, og å utrede en egen årsenhet i klinisk ernæring som kvalifiserer direkte til andre studieår, blant annet for å øke studiepoengproduksjon og inntekter. Fakultetsstyrebehandling av rapporten var ventet innen utgangen av 2025 (V-sak 59-25).",
+      "I en kronikk i Khrono (2025) peker instituttleder Stian Svelle ved Kjemisk institutt på Forskningsrådets fagevaluering EVALNAT, som karakteriserer situasjonen for norsk kjemi som «totalt utilfredsstillende», særlig innen organisk kjemi. Over en periode på 11 år har Forskningsrådet bevilget om lag halvparten så mye til kjemi som til hvert av fagfeltene geofag og fysikk; til sammenligning har fysikk fått over 1,1 milliarder kroner til utstyr og infrastruktur mot rundt 50 millioner kroner til kjemi. Enkelte av UiOs kjemimiljøer (teoretisk kjemi, kjemisk livsvitenskap, elektrokjemi) vurderes likevel som svært gode i evalueringen."
+    ],
+    "oppsummering": "UiOs kjemi- og biovitenskapsmiljø er midt i en historisk infrastruktursatsing: Livsvitenskapsbygget åpnet sommeren 2026 og samler Kjemisk institutt, IBV og Farmasøytisk institutt i Norges største forskningsbygg, men etterlater et uavklart spørsmål om bruken av store deler av de gamle lokalene på Nedre Blindern. Samtidig er situasjonen delt økonomisk: IBV har hatt underskudd i minst åtte år og må fryse stillinger og kutte i infrastruktur (blant annet avvikle forsøksdyranlegget Invivo) samtidig som instituttets førstevalgsandel faller i tråd med nasjonale trender, mens Kjemisk institutt melder om 12 prosent flere førstevalgssøkere i 2026. Ved klinisk ernæring på Det medisinske fakultet jobbes det systematisk med å redusere frafallet fra studenter som bruker programmet som en «snarvei» inn i medisin og odontologi.",
+    "relevanteProgram": [
+      "uio_kjemi_biokjemi",
+      "uio_kjemi2",
+      "uio_biovitenskap",
+      "uio_klinisk_ernaring"
+    ]
+  },
+  {
+    "id": "uib",
+    "name": "UiB",
+    "fullName": "Universitetet i Bergen",
+    "enhet": "Fakultet for naturvitenskap og teknologi (tidligere MN) — Kjemisk institutt og Institutt for biovitenskap (BIO)",
+    "styresider": [
+      "https://www.uib.no/ledelsen",
+      "https://ekstern.filer.uib.no/ledelse/universitetsstyret/",
+      "https://ekstern.filer.uib.no/bio/Rad_og_utvalg/Instituttrad/"
+    ],
+    "status": "partial",
+    "dokumenter": [
+      {
+        "label": "S 103/25 Endringer i UiBs studieportefølje 2026 og opptaksrammer 2026-2027 (opptaksrammer for kjemi, molekylærbiologi, ernæring og klinisk ernæring)",
+        "url": "https://ekstern.filer.uib.no/ledelse/universitetsstyret/2025/2025-11-27/S_103-25Endringer-i-UiBs-studieportef%C3%B8lje2026-og-opptaksrammer2026-27.pdf",
+        "localPath": "/markedsstatus/kbm/UiB_S103-25_Studieportefolje2026.pdf",
+        "dato": "2025-11-27",
+        "storrelseMB": 0.29
+      },
+      {
+        "label": "Khrono (kronikk av instituttleder Stian Svelle, Kjemisk institutt UiO, men om nasjonal kjemifagevaluering EVALNAT som også omfatter UiB)",
+        "url": "https://www.khrono.no/hvorfor-det-er-viktig-a-lofte-kjemifaget-og-hvordan-vi-kan-gjore-det/885372",
+        "localPath": null,
+        "dato": "2025",
+        "storrelseMB": 0.0
+      },
+      {
+        "label": "Instituttrådet ved Institutt for biovitenskap (BIO) – filarkiv, siste publiserte protokoll er fra 28.03.2022",
+        "url": "https://ekstern.filer.uib.no/bio/Rad_og_utvalg/Instituttrad/",
+        "localPath": null,
+        "dato": "2022-03-28",
+        "storrelseMB": 0.0
+      }
+    ],
+    "punkter": [
+      "I S-sak 103/25 (27.11.2025) holdes opptaksrammene for de KBM-relevante programmene ved Fakultet for naturvitenskap og teknologi uendret fra 2025/26 til 2026/27: bachelor i kjemi 35 plasser, bachelor i molekylærbiologi 40 plasser, toårig master i kjemi 23 plasser og toårig master i molekylærbiologi 20 plasser. Dette skjer i samme styresak der bachelor i fysikk kuttes fra 52 til 26 plasser for å finansiere et nytt sivilingeniørprogram i kvanteteknologi.",
+      "Ved Det medisinske fakultet holdes opptaksrammene for bachelor i ernæring (34 plasser) og masterprogrammet i klinisk ernæring (25 plasser) også uendret i samme styresak.",
+      "Den eksterne fagfellen som vurderte søknaden om det nye sivilingeniørprogrammet i kvanteteknologi (S-sak 103/25) anbefalte at programmet bør integrere elementer fra kjemi og livsvitenskap for å møte behov i blant annet industrien — et signal om at fakultetet ser kjemikompetanse som en ressurs inn mot nye teknologisatsinger, uten at dette er fulgt opp med konkrete vedtak i denne saken.",
+      "Forskningsrådets fagevaluering EVALNAT, omtalt i en kronikk av UiOs kjemi-instituttleder (Khrono, 2025), karakteriserer den nasjonale situasjonen for kjemifaget som «totalt utilfredsstillende», særlig innen organisk kjemi, og gjelder dermed også kjemimiljøet ved UiB: over 11 år har Forskningsrådet bevilget om lag halvparten så mye til kjemi som til geofag og fysikk hver for seg.",
+      "Instituttrådet ved Institutt for biovitenskap (BIO), som tidligere publiserte egne protokoller om instituttets økonomi og prioriteringer, har ikke lagt ut nye protokoller i det offentlige filarkivet siden 28.03.2022, og Kjemisk institutt har ikke et tilsvarende offentlig filarkiv i det hele tatt. Instituttspesifikk økonomi-, bemannings- og søkertallsinformasjon for BIO og Kjemisk institutt ved UiB var derfor ikke tilgjengelig i offentlig, nedlastbart format i dette arbeidet, og vurderingen er merket delvis."
+    ],
+    "oppsummering": "UiBs fakultetsstyre holder opptaksrammene for kjemi, molekylærbiologi, ernæring og klinisk ernæring uendret i porteføljevedtaket for 2026/2027, mens fysikk kuttes kraftig for å finansiere et nytt kvanteteknologiprogram — der ekstern fagfelle selv pekte på at kjemi- og livsvitenskapskompetanse bør inn i det nye programmet. Den nasjonale fagevalueringen EVALNAT peker samtidig på en varig underfinansiering av norsk kjemiforskning som også rammer UiB. Institutt- og styrenivådokumenter for Kjemisk institutt og Institutt for biovitenskap er imidlertid ikke offentlig tilgjengelige utover 2022 i UiBs filarkiv, så den institusjonsinterne økonomi- og søkertallssituasjonen ved de to instituttene er ikke kartlagt her.",
+    "relevanteProgram": [
+      "uib_kjemi",
+      "uib_kjemi2",
+      "uib_molekylarbiologi",
+      "uib_molekylarbiologi2",
+      "uib_ernaring"
+    ]
+  },
+  {
+    "id": "ntnu",
+    "name": "NTNU",
+    "fullName": "Norges teknisk-naturvitenskapelige universitet",
+    "enhet": "Fakultet for naturvitenskap (NV) — Institutt for kjemi og bioingeniørfag (IKB, fra 01.01.2026, tidl. Institutt for kjemi/IKJ og Institutt for bioingeniørfag/IBF), Institutt for bioteknologi og matvitenskap (IBT) og Institutt for kjemisk prosessteknologi (IKP)",
+    "styresider": [
+      "https://www.ntnu.no/adm/styret/saker",
+      "https://i.ntnu.no/wiki/-/wiki/Norsk/Fakultetsstyret+ved+NV-fakultetet"
+    ],
+    "status": "complete",
+    "dokumenter": [
+      {
+        "label": "Fakultetsstyret NV – møteinnkalling med saksvedlegg 05.03.2026 (bl.a. instituttstrategier for IBT og IKP, orienteringssak om IKB, årsregnskap 2025)",
+        "url": "https://i.ntnu.no/documents/portlet_file_entry/1305837853/Moteinnkalling+NV-Fakstyret+samlefil+5+mars+2026.pdf/a869055d-0760-a30a-4b4e-28b70bd55fb5",
+        "localPath": "/markedsstatus/kbm/NTNU_NV_Innkalling_05.03.2026.pdf",
+        "dato": "2026-03-05",
+        "storrelseMB": 1.33
+      },
+      {
+        "label": "Studieprogramoversikt – intern overgang studieåret 2026/2027 (overgangsordninger for kjemi- og matvitenskapsstudenter ved programnedleggelser/-sammenslåinger)",
+        "url": "https://i.ntnu.no/documents/1305837853/1306916537/2026-27+oppdatert+intern+o.pdf/857585ad-49ac-c464-2b9e-379533b67b69?t=1769526528578",
+        "localPath": "/markedsstatus/kbm/NTNU_Studieprogramoversikt_Intern_Overgang_2026-27.pdf",
+        "dato": "2026-01-27",
+        "storrelseMB": 0.08
+      },
+      {
+        "label": "Kunnskapsbasen (NTNU-wiki): «Evaluering av NVs studieprogramportefølje» (vedtak om sammenslåing av MSBIOTECH og FTMAMAT, videreføring av kjemi/biologi/fysikk-bachelorene hver for seg)",
+        "url": "https://i.ntnu.no/wiki/-/wiki/Norsk/Evaluering+av+NVs+studieprogramportef%C3%B8lje",
+        "localPath": null,
+        "dato": "2024-2025",
+        "storrelseMB": 0.0
+      },
+      {
+        "label": "Universitetsavisa: «Dekanens forslag ble stemt ned» (fakultetsstyrets votering 27.09.2024 om å redusere NV fra 8 til 5 institutt)",
+        "url": "https://www.universitetsavisa.no/fakultet-for-naturvitenskap-instituttstruktur-omorganisering/dekanens-forslag-ble-stemt-ned/416323",
+        "localPath": null,
+        "dato": "2024-09-27",
+        "storrelseMB": 0.0
+      },
+      {
+        "label": "Universitetsavisa: «Nei til fusjon av IBT, IBA og IBF ved NV» (IBTs egen argumentasjon mot å bli fusjonert inn)",
+        "url": "https://www.universitetsavisa.no/fakultet-for-naturvitenskap-fusjon-institutt-for-bioteknologi-og-matvitenskap/nei-til-fusjon-av-ibt-iba-og-ibf-ved-nv/416022",
+        "localPath": null,
+        "dato": "2024-09",
+        "storrelseMB": 0.0
+      },
+      {
+        "label": "Universitetsavisa: «Tok initativ til samling, nå skal han lede nytt institutt» (om dannelsen av IKB og Hallstein Hemmer som instituttleder)",
+        "url": "https://www.universitetsavisa.no/ansettelser-fakultet-for-naturvitenskap-hallstein-hemmer/tok-initativ-til-samling-na-skal-han-lede-nytt-institutt/441171",
+        "localPath": null,
+        "dato": "2025",
+        "storrelseMB": 0.0
+      },
+      {
+        "label": "Universitetsavisa: «Slår likevel ikke sammen biologi, fysikk og kjemi til felles bachelor i realfag»",
+        "url": "https://www.universitetsavisa.no/christophe-pelabon-institutt-for-biologi-nv-fakultetet/slar-likevel-ikke-sammen-biologi-fysikk-og-kjemi-til-felles-bachelor-i-realfag/396253",
+        "localPath": null,
+        "dato": "2024",
+        "storrelseMB": 0.0
+      },
+      {
+        "label": "Bioingeniøren.no: «Institutt for bioingeniørfag (IBF) slår seg sammen med Institutt for kjemi (IKJ) på NTNU i Trondheim»",
+        "url": "https://www.bioingenioren.no/aktuelt/nytt-institutt-pa-ntnu-fra-nyttar/143275",
+        "localPath": null,
+        "dato": "2025",
+        "storrelseMB": 0.0
+      }
+    ],
+    "punkter": [
+      "Dekan Øyvind Gregersen foreslo i februar 2024 å redusere NV-fakultetet fra 8 til 5 institutt, blant annet ved å slå sammen Institutt for materialteknologi (IMA) og Institutt for kjemi (IKJ) til én enhet (242 ansatte) og Institutt for bioteknologi og matvitenskap (IBT), Institutt for bioingeniørfag (IBF) og Institutt for biologiske fag Ålesund (IBA) til en annen (198 ansatte). Forslaget ble nedstemt i fakultetsstyret 27.09.2024 med minst mulig margin (5 for, 6 mot), og «nullalternativet» (uendret struktur) ble stående siden blanke stemmer ikke var tillatt.",
+      "IBT argumenterte offentlig mot å bli fusjonert inn i en institusjon med IBA og IBF: instituttet pekte på sunn og god økonomistyring over tid, svært liten faglig overlapp på tvers av tre institutt fordelt på tre campus, internasjonalt anerkjent bioteknologiforskning og en nasjonalt og internasjonalt sterk matvitenskapsforskning, samt at en pågående flytteprosess (ventet fullført i løpet av 2025, etter fusjonen mellom NTNUs bioteknologimiljø og HiSTs matteknologimiljø i 2016) gjorde tidspunktet dårlig valgt.",
+      "Kort tid etter at dekanens forslag falt, tok instituttlederne for kjemi (Hallstein Hemmer, IKJ) og bioingeniørfag (Lars Gunnar Landrø, IBF) selv initiativ til en frivillig, nedenfra-styrt sammenslåing av bare sine to institutt. Fakultetsstyret vedtok forslaget enstemmig, og fra 1. januar 2026 er de slått sammen til Institutt for kjemi og bioingeniørfag (IKB), ledet av Hemmer; syv ansatte fra materialteknologi (IMA) overføres samtidig til det nye instituttet. Begrunnelsen er trang økonomi og et ønske om å bruke mer ressurser på kjerneaktivitet (undervisning og forskning) og mindre på administrasjon — instituttet får én administrativ leder færre, men risikovurderingen flagget «rødt» for administrativ arbeidsbyrde og faren for at det mindre bioingeniørmiljøet skal føle seg «absorbert» av det større kjemimiljøet.",
+      "NV vurderte også å slå sammen bachelorprogrammene i biologi, fysikk og kjemi til ett felles realfagsprogram, men skrinla dette etter sterke høringsinnspill og offentlig motstand fra fysikk- og biologimiljøene. I stedet innføres et krav om minst 30 studiepoeng i et valgt fagfelt 2 og minst 30 studiepoeng i realfaglige støttefag i alle tre bachelorprogrammene, og egne arbeidsgrupper skal konkretisere hva dette betyr for hvert fag.",
+      "To andre programsammenslåinger ved NV er gjennomført med første opptak høsten 2025: den femårige sivilingeniørutdanningen Industriell kjemi og bioteknologi (MTKJ) er slått sammen med materialteknologi (MTMT) til Industriell kjemi, materialer og bioteknologi, og de treårige ingeniørprogrammene i kjemi (FTHINGKJ) og materialteknologi (FTHINGMAT) er slått sammen til Ingeniørfag kjemi og materialteknologi.",
+      "Det toårige, engelskspråklige masterprogrammet i kjemi (MSCHEM) hadde siste opptak høsten 2025. Fra høsten 2027 slås det toårige masterprogrammet i bioteknologi (MSBIOTECH, siste separate opptak høsten 2026) sammen med det toårige masterprogrammet Matvitenskap, teknologi og bærekraft (FTMAMAT, siste separate opptak høsten 2026) til et nytt felles program, «Biotechnology and Food Science»; studentene velger fordypning i enten bioteknologi eller matvitenskap etter studiestart.",
+      "IBTs instituttstrategi 2026-2035 (vedlagt fakultetsstyresak 05.03.2026) formulerer et mål om at IBT i 2035 skal være «et kraftsenter for kunnskap og innovasjon innen bioteknologi og matvitenskap» og et nasjonalt ledende forsknings- og utdanningsmiljø; instituttet omtaler seg selv som å tilby «Norges eneste bioteknologiutdanning med industrielt perspektiv» og «Norges mest attraktive utdanning innen matvitenskap».",
+      "Institutt for kjemisk prosessteknologi (IKP, 132 ansatte ifølge dekanens forslag i 2024) forblir et eget institutt utenfor IKB-fusjonen, med nasjonalt hovedansvar for utdanning av sivilingeniører og ph.d.-kandidater innen kjemisk prosessteknologi; instituttets strategi peker på KI-bruk for å løse kjemitekniske problemstillinger og på prosesser basert på biologisk råstoff som satsingsområder."
+    ],
+    "oppsummering": "NTNUs kjemi-, bioteknologi- og matvitenskapsmiljø har vært gjennom to år med til dels konfliktfylt omorganisering: dekanens forslag om å redusere NV fra 8 til 5 institutt falt med én stemmes margin i 2024 etter at IBT (bioteknologi/matvitenskap) aktivt gikk imot å bli fusjonert inn sammen med IBA og IBF, men kjemi- og bioingeniørinstituttene tok kort tid etter selv initiativ til en mindre, frivillig fusjon som ble vedtatt enstemmig og trådte i kraft 1.1.2026 som Institutt for kjemi og bioingeniørfag (IKB). Samtidig er studieporteføljen i endring: bachelorprogrammene i kjemi, biologi og fysikk beholdes separate etter sterk motstand mot en samling, mens de toårige masterne i kjemi (siste opptak 2025) og i bioteknologi/matvitenskap (siste separate opptak 2026) enten avvikles eller slås sammen til et nytt felles «Biotechnology and Food Science»-program fra 2027 — en direkte endring i konkurransebildet mot NMBUs tilsvarende toårige mastere. IBT selv satser strategisk på en posisjon som Norges eneste industrielt orienterte bioteknologiutdanning og mest attraktive matvitenskapsutdanning.",
+    "relevanteProgram": [
+      "ntnu_bioteknologi_alesund",
+      "ntnu_bioteknologi_5aar",
+      "ntnu_msbiotech",
+      "ntnu_kjemi",
+      "ntnu_mschem",
+      "ntnu_matvitenskap",
+      "ntnu_ftmamat"
+    ]
+  },
+  {
+    "id": "uit",
+    "name": "UiT",
+    "fullName": "UiT Norges arktiske universitet",
+    "enhet": "Fakultet for naturvitenskap og teknologi (NT, Institutt for kjemi) og Fakultet for biovitenskap, fiskeri og økonomi (BFE, bioteknologi/ernæring)",
+    "styresider": [
+      "https://uit.no/project/studieportefoljen",
+      "https://uit.no/moteportalen"
+    ],
+    "status": "partial",
+    "dokumenter": [
+      {
+        "label": "Porteføljeutviklingsplan UiT 2025-2026 (vedtatt av universitetsstyret 27.11.2024) — tiltak 5 om samkjøring innen biokjemi/kjemi, tiltak 14 om rekruttering til klinisk ernæring",
+        "url": "https://uit.no/Content/867210/cache=1733993935000/Elements_Portef%C3%B8ljeutviklingsplan%20UiT%202025%E2%80%932026.pdf",
+        "localPath": "/markedsstatus/kbm/UiT_Portefoljeutviklingsplan_2025-2026.pdf",
+        "dato": "2024-11-27",
+        "storrelseMB": 0.27
+      },
+      {
+        "label": "Revidert porteføljeutviklingsplan UiT 2026-2027 (vedtatt av universitetsstyret høsten 2025)",
+        "url": "https://uit.no/Content/919752/cache=1769697826000/Revidert%20portef%C3%B8ljeutviklingsplan%20UiT%202026%E2%80%932027.pdf",
+        "localPath": "/markedsstatus/kbm/UiT_Portefoljeutviklingsplan_2026-2027.pdf",
+        "dato": "2025-11-01",
+        "storrelseMB": 0.25
+      },
+      {
+        "label": "UiT: Bærekraftig kjemi og innovasjon, sivilingeniør (masterprogramside, om det nye programmet og opptak 2025)",
+        "url": "https://uit.no/utdanning/program/868642/baerekraftig_kjemi_og_innovasjon_sivilingenior_-",
+        "localPath": null,
+        "dato": "2025",
+        "storrelseMB": 0.0
+      }
+    ],
+    "punkter": [
+      "UiT opprettet høsten 2025 et nytt femårig sivilingeniørprogram, Bærekraftig kjemi og innovasjon, med 15 studieplasser ved Institutt for kjemi (NT-fakultetet). Programmet avløser den gamle treårige kjemibacheloren (siste opptak 2024) og kombinerer kjemifag med innovasjon og ledelse, med mål om grønnere prosesser og produkter for industri, forskning og offentlig forvaltning.",
+      "Porteføljeutviklingsplanen (tiltak 5, videreført uendret fra 2025-2026- til 2026-2027-versjonen) identifiserer statistikk/bioinformatikk, biokjemi og kjemi som fagområder som skal samkjøres videre på tvers av MNT-disiplinutdanninger og femårige sivilingeniørprogram, og peker særskilt på behovet for samordning mellom kjemiundervisningen ved NT-fakultetet og den kjemiorienterte undervisningen i farmasi ved Helsefak. Den tverrfakultære arbeidsgruppen (NT, BFE, Helsefak, NT koordinerer) foreslås gjort permanent, med utvidet mandat til å koordinere også de toårige masterprogrammene.",
+      "Porteføljeplanens tiltak 14 pålegger Helsefak å evaluere effekten av endrede opptakskrav og rekrutteringstiltak for klinisk ernæring høsten 2025, som grunnlag for å vurdere behovet for ytterligere tiltak; ernæring omtales som et tema som går igjen i flere av planens øvrige tiltak.",
+      "UiTs bachelor i ernæring (NT/BFE-tilknyttet studieprogram, søknadskode 186708) er et lite program med 8 studieplasser og krav om realfagsfordypning (matematikk R1, fysikk 1, kjemi 1+2), noe som gjør det sårbart for den nasjonalt fallende andelen elever med slik fordypning som porteføljeplanen og REALTEK-sammenligningen for UiT også peker på.",
+      "UiTs sentrale møteportal viser til at protokoller for universitetsstyret og fakultetsstyrene publiseres i «Elements publikum», en portal som krever JavaScript-rendering og ikke lot seg hente ut i dette arbeidet. Instituttspesifikke sakspapirer for Institutt for kjemi (NT) og for bioteknologi-/ernæringsmiljøene ved BFE-fakultetet var derfor ikke tilgjengelige i offentlig, nedlastbart format, og vurderingen er merket delvis — i tråd med den samme begrensningen som er dokumentert for UiT i REALTEK-sammenligningen."
+    ],
+    "oppsummering": "UiT viderefører en flerårig, styrevedtatt porteføljefornyelse der kjemi- og bioteknologimiljøene ved NT- og BFE-fakultetet skal samkjøres tettere med farmasi ved Helsefak, gjennom en tverrfakultær arbeidsgruppe som nå foreslås gjort permanent. Det klareste konkurransesignalet for KBM er lanseringen av det nye femårige sivilingeniørprogrammet Bærekraftig kjemi og innovasjon høsten 2025 (15 plasser), som erstatter den gamle kjemibacheloren og løfter kjemiutdanningen til sivilingeniørnivå. UiTs lille ernæringsbachelor (8 plasser) er gjenstand for egne rekrutteringstiltak som evalueres fortløpende. Program- og instituttspesifikke sakspapirer fra fakultetsstyrene ved NT og BFE var ikke offentlig tilgjengelige i dette arbeidet, siden UiTs møteportal krever JavaScript-rendering, så vurderingen er merket delvis.",
+    "relevanteProgram": [
+      "uit_baerekraftig_kjemi",
+      "uit_bioteknologi",
+      "uit_ernaring",
+      "uit_fiskeri_havbruk"
+    ]
+  },
+  {
+    "id": "uis",
+    "name": "UiS",
+    "fullName": "Universitetet i Stavanger",
+    "enhet": "Det teknisk-naturvitenskapelige fakultet (TN) — Institutt for kjemi, biovitenskap og miljøteknologi (IKBM)",
+    "styresider": [
+      "https://opengov.360online.com/Meetings/uis/Boards/Details/599422"
+    ],
+    "status": "complete",
+    "dokumenter": [
+      {
+        "label": "FSTN – møteinnkalling 19.03.2026 (sak 1–14/26)",
+        "url": "https://opengov.360online.com/Meetings/uis/File/Details/1458263.PDF",
+        "localPath": "/markedsstatus/kbm/UiS_Innkalling_TN_19.03.2026.pdf",
+        "dato": "2026-03-19",
+        "storrelseMB": 0.31
+      },
+      {
+        "label": "FSTN – møteinnkalling 18.06.2026 (sak 21/26 Instituttstrategier, inkl. IKBM; sak om opptaksrammer 2027)",
+        "url": "https://opengov.360online.com/Meetings/uis/File/Details/1482784.pdf",
+        "localPath": "/markedsstatus/kbm/UiS_Innkalling_TN_18.06.2026.pdf",
+        "dato": "2026-06-18",
+        "storrelseMB": 0.31
+      },
+      {
+        "label": "UiS: Institutt for kjemi, biovitskap og miljøteknologi (instituttside med bemannings-/studenttall og forskningsområder)",
+        "url": "https://www.uis.no/nb/om-uis/institutt-for-kjemi-biovitskap-og-miljoteknologi",
+        "localPath": null,
+        "dato": "2026-08-19",
+        "storrelseMB": 0.0
+      }
+    ],
+    "punkter": [
+      "Institutt for kjemi, biovitenskap og miljøteknologi (IKBM) har 40 ansatte og 270 studenter (instituttsiden, august 2026), og tilbyr bachelor i biologisk kjemi (3 år), toårige mastere i biokjemi og miljøteknologi, samt ph.d.-program i kjemi og biovitenskap. Instituttets forskning spenner fra funksjonelle materialer og prosesskjemi til miljøtoksikologi, molekylær parasittologi og nanomedisin.",
+      "Fakultetsstyret vedtok 23.10.2025 at alle institutt ved TN-fakultetet, inkludert IKBM, skal utarbeide egne strategier fram mot 2030 etter en felles mal, og behandlet instituttenes strategiforslag i sak FSTN 21/26 (18.06.2026, «Forslag_juni_2026_strategi IKBM»). Bakgrunnen er at de nasjonale fagevalueringene EVALMIT og EVALNAT pekte på at fakultetet manglet formelt forankrede instituttstrategier, og at slike strategier er nødvendige for langsiktig utvikling og tydelig faglig prioritering.",
+      "I dekanens forslag til opptaksrammer for 2027 (samme møte, 18.06.2026) kuttes bachelor i biologisk kjemi med 5 plasser, fra 30 til 25, som del av en bredere omprioritering ved fakultetet der blant annet datateknologi og energi- og petroleumsteknologi også kuttes, mens fakultetet samtidig satser på flere internasjonale opptaksplasser etter at studieavgiften for søkere utenfor EU/EØS ble halvert.",
+      "Nullopptaket på bachelor i miljøteknologi videreføres i 2027 for å gi fagmiljøet — som hører til IKBM — tid til å arbeide med akkrediteringssøknad for et nytt bachelorprogram i vann- og havbruksteknologi, ifølge samme sak."
+    ],
+    "oppsummering": "IKBM ved UiS er et relativt lite institutt (40 ansatte, 270 studenter) som nå for første gang skal få en formelt vedtatt instituttstrategi fram mot 2030, etter at nasjonale fagevalueringer (EVALMIT, EVALNAT) pekte på mangelen som en svakhet ved fakultetet. Samtidig krymper bachelor i biologisk kjemi med 5 plasser i opptaksrammene for 2027, og instituttets miljøteknologi-bachelor fortsetter med nullopptak mens fagmiljøet forbereder et nytt bachelorprogram i vann- og havbruksteknologi.",
+    "relevanteProgram": [
+      "uis_biologisk_kjemi"
+    ]
+  },
+  {
+    "id": "oslomet",
+    "name": "OsloMet",
+    "fullName": "OsloMet - storbyuniversitetet",
+    "enhet": "Fakultet for teknologi, kunst og design (TKD) — Institutt for maskin, elektronikk og kjemi (MEK)",
+    "styresider": [
+      "https://opengov.360online.com/Meetings/oslomet/Boards/Details/304093",
+      "https://www.oslomet.no/om/tkd/fakultetsstyret-ved-tkd"
+    ],
+    "status": "partial",
+    "dokumenter": [
+      {
+        "label": "Fakultetsstyret TKD – møteprotokoll 26.02.2026 (årsrapport 2025, strategimidler, risikobilde)",
+        "url": "https://opengov.360online.com/Meetings/oslomet/File/Details/1368923.PDF",
+        "localPath": "/markedsstatus/kbm/OsloMet_TKD_Protokoll_26.02.2026.pdf",
+        "dato": "2026-02-26",
+        "storrelseMB": 0.11
+      },
+      {
+        "label": "Fakultetsstyret TKD – møteprotokoll 16.04.2026 (risikobilde 2026-2030, oppdragsbrev TKD 2026)",
+        "url": "https://opengov.360online.com/Meetings/oslomet/File/Details/1383216.pdf",
+        "localPath": "/markedsstatus/kbm/OsloMet_TKD_Protokoll_16.04.2026.pdf",
+        "dato": "2026-04-16",
+        "storrelseMB": 0.11
+      },
+      {
+        "label": "Fakultetsstyret TKD – møteprotokoll 11.06.2026 (tertialrapport T1 2026, prognose, tiltaksplan 2027)",
+        "url": "https://opengov.360online.com/Meetings/oslomet/File/Details/1400326.pdf",
+        "localPath": "/markedsstatus/kbm/OsloMet_TKD_Protokoll_11.06.2026.pdf",
+        "dato": "2026-06-11",
+        "storrelseMB": 0.13
+      },
+      {
+        "label": "OsloMet: Institutt for maskin, elektronikk og kjemi (MEK) – Forskning og utvikling (prioriterte satsingsområder og forskningsgrupper)",
+        "url": "https://www.oslomet.no/om/tkd/mek/fou",
+        "localPath": null,
+        "dato": "2026",
+        "storrelseMB": 0.0
+      },
+      {
+        "label": "OsloMet: Studieprogramside «Studier bioteknologi- og kjemiingeniør på OsloMet!» (studieplasser, opptak, jobbmuligheter)",
+        "url": "https://www.oslomet.no/studier/tkd/bioteknologi-kjemiingenior",
+        "localPath": null,
+        "dato": "2026",
+        "storrelseMB": 0.0
+      },
+      {
+        "label": "TKD Strategisk handlingsplan 2025-2029 (kjemi/bioteknologi og MEK omtales ikke navngitt i planen)",
+        "url": "https://www.oslomet.no/om/tkd/tkd-strategisk-handlingsplan-2025-2029",
+        "localPath": null,
+        "dato": "2025",
+        "storrelseMB": 0.0
+      }
+    ],
+    "punkter": [
+      "Bachelorprogrammet Ingeniør, bioteknologi og kjemi ligger under Institutt for maskin, elektronikk og kjemi (MEK) ved TKD, og har 47 studieplasser. Programsiden opplyser at «ved forrige opptak kom alle kvalifiserte søkere inn» — det vil si ingen kvoteutvelgelse, et tegn på at programmet ikke er blant fakultetets mest søkte.",
+      "MEK-instituttets egne sider for forskning og utvikling lister mekanikk/maskinteknikk, robotikk/kybernetikk og medisinsk teknologi som prioriterte satsingsområder, med to formaliserte forskningsgrupper (ADEPT og M3T) og egne laboratorier (bevegelsesanalyselab, Oceanlab). Kjemi er ikke nevnt som et eget prioritert satsingsområde eller med egen forskningsgruppe, til tross for at faget inngår i instituttets navn og studieporteføljen.",
+      "TKDs strategiske handlingsplan 2025-2029 nevner verken kjemi, bioteknologi eller MEK-instituttet ved navn — i motsetning til fakultetets øvrige, mer teknologitunge fagområder (ingeniørfag for øvrig, kunst og design), som omtales eksplisitt i planen.",
+      "Som i REALTEK-sammenligningen for OsloMet publiserer fakultetsstyret TKD bare korte møteprotokoller med vedtakstekst i sin åpne møteportal, uten vedlagte sakspapirer med søkertall, økonomital eller risikovurderinger for det enkelte institutt. Instituttspesifikk økonomi- og søkertallsinformasjon for bioteknologi- og kjemiingeniørprogrammet var derfor ikke tilgjengelig i offentlig, nedlastbart format, og vurderingen er merket delvis."
+    ],
+    "oppsummering": "OsloMets bioteknologi- og kjemiingeniørutdanning ligger organisatorisk under Institutt for maskin, elektronikk og kjemi (MEK), et institutt der fakultetets egne nettsider og strategiske handlingsplan tydelig prioriterer mekanikk, robotikk/kybernetikk og medisinsk teknologi — kjemifaget er verken navngitt som satsingsområde i instituttets FoU-presentasjon eller i TKDs strategiplan 2025-2029, og programmet fylte ikke opp med kvalifiserte søkere ved forrige opptak. Fakultetsstyret TKD publiserer fortsatt bare korte møteprotokoller uten sakspapirer i sin åpne portal, slik at institutt- og programspesifikk økonomi og søkertall ikke lot seg dokumentere i dette arbeidet.",
+    "relevanteProgram": [
+      "oslomet_ing_bioteknologi_kjemi"
+    ]
+  }
+];

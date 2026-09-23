@@ -366,52 +366,52 @@
           "url": "https://www.nmbu.no/studier/master-2-aar/bioteknologi",
           "localData": {
             "2021": {
-              "alleS": null,
+              "alleS": 179,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 118,
+              "tilbud": 90,
               "pg_fv": null,
               "pg_ord": null
             },
             "2022": {
-              "alleS": null,
+              "alleS": 153,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 99,
+              "tilbud": 77,
               "pg_fv": null,
               "pg_ord": null
             },
             "2023": {
-              "alleS": null,
+              "alleS": 163,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 91,
+              "tilbud": 76,
               "pg_fv": null,
               "pg_ord": null
             },
             "2024": {
-              "alleS": null,
+              "alleS": 154,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 99,
+              "tilbud": 64,
               "pg_fv": null,
               "pg_ord": null
             },
             "2025": {
-              "alleS": null,
+              "alleS": 160,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 100,
+              "tilbud": 85,
               "pg_fv": null,
               "pg_ord": 3.0
             },
@@ -426,7 +426,8 @@
               "pg_ord": null
             },
             "localSource": [
-              "https://www.nmbu.no/studier/master-2-aar/bioteknologi"
+              "https://www.nmbu.no/studier/master-2-aar/bioteknologi",
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
         },
@@ -444,52 +445,52 @@
           "url": "https://www.uib.no/studier/MAMN-MOL",
           "localData": {
             "2021": {
-              "alleS": null,
+              "alleS": 131,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 64,
+              "tilbud": 39,
               "pg_fv": null,
               "pg_ord": null
             },
             "2022": {
-              "alleS": null,
+              "alleS": 114,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 56,
+              "tilbud": 35,
               "pg_fv": null,
               "pg_ord": null
             },
             "2023": {
-              "alleS": null,
+              "alleS": 107,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 39,
+              "tilbud": 29,
               "pg_fv": null,
               "pg_ord": null
             },
             "2024": {
-              "alleS": null,
+              "alleS": 140,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 57,
+              "tilbud": 42,
               "pg_fv": null,
               "pg_ord": null
             },
             "2025": {
-              "alleS": null,
+              "alleS": 187,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 61,
+              "tilbud": 38,
               "pg_fv": null,
               "pg_ord": null
             },
@@ -504,7 +505,8 @@
               "pg_ord": null
             },
             "localSource": [
-              "https://www.uib.no/studier/MAMN-MOL"
+              "https://www.uib.no/studier/MAMN-MOL",
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
         },
@@ -522,52 +524,52 @@
           "url": "https://www.ntnu.no/studier/msbiotech",
           "localData": {
             "2021": {
-              "alleS": null,
+              "alleS": 607,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 266,
+              "tilbud": 52,
               "pg_fv": null,
               "pg_ord": null
             },
             "2022": {
-              "alleS": null,
+              "alleS": 724,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 289,
+              "tilbud": 59,
               "pg_fv": null,
               "pg_ord": null
             },
             "2023": {
-              "alleS": null,
+              "alleS": 616,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 163,
+              "tilbud": 67,
               "pg_fv": null,
               "pg_ord": null
             },
             "2024": {
-              "alleS": null,
+              "alleS": 216,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 143,
+              "tilbud": 56,
               "pg_fv": null,
               "pg_ord": null
             },
             "2025": {
-              "alleS": null,
+              "alleS": 251,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 153,
+              "tilbud": 60,
               "pg_fv": null,
               "pg_ord": null
             },
@@ -582,7 +584,8 @@
               "pg_ord": null
             },
             "localSource": [
-              "https://www.ntnu.no/studier/msbiotech"
+              "https://www.ntnu.no/studier/msbiotech",
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
         }
@@ -609,52 +612,52 @@
           "url": "https://www.nmbu.no/studier/master-2-aar/kjemi",
           "localData": {
             "2021": {
-              "alleS": null,
+              "alleS": 55,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 42,
+              "tilbud": 27,
               "pg_fv": null,
               "pg_ord": null
             },
             "2022": {
-              "alleS": null,
+              "alleS": 90,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 41,
+              "tilbud": 26,
               "pg_fv": null,
               "pg_ord": null
             },
             "2023": {
-              "alleS": null,
+              "alleS": 80,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 37,
+              "tilbud": 21,
               "pg_fv": null,
               "pg_ord": null
             },
             "2024": {
-              "alleS": null,
+              "alleS": 39,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 22,
+              "tilbud": 13,
               "pg_fv": null,
               "pg_ord": null
             },
             "2025": {
-              "alleS": null,
+              "alleS": 48,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 29,
+              "tilbud": 26,
               "pg_fv": null,
               "pg_ord": 2.6
             },
@@ -669,7 +672,8 @@
               "pg_ord": null
             },
             "localSource": [
-              "https://www.nmbu.no/studier/master-2-aar/kjemi"
+              "https://www.nmbu.no/studier/master-2-aar/kjemi",
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
         },
@@ -687,52 +691,52 @@
           "url": "https://www.uio.no/studier/program/kjemi-master/",
           "localData": {
             "2021": {
-              "alleS": null,
+              "alleS": 355,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 122,
+              "tilbud": 56,
               "pg_fv": null,
               "pg_ord": null
             },
             "2022": {
-              "alleS": null,
+              "alleS": 365,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 126,
+              "tilbud": 56,
               "pg_fv": null,
               "pg_ord": null
             },
             "2023": {
-              "alleS": null,
+              "alleS": 336,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 101,
+              "tilbud": 36,
               "pg_fv": null,
               "pg_ord": null
             },
             "2024": {
-              "alleS": null,
+              "alleS": 240,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 104,
+              "tilbud": 47,
               "pg_fv": null,
               "pg_ord": null
             },
             "2025": {
-              "alleS": null,
+              "alleS": 254,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 121,
+              "tilbud": 49,
               "pg_fv": null,
               "pg_ord": null
             },
@@ -747,7 +751,8 @@
               "pg_ord": null
             },
             "localSource": [
-              "https://www.uio.no/studier/program/kjemi-master/"
+              "https://www.uio.no/studier/program/kjemi-master/",
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
         },
@@ -765,52 +770,52 @@
           "url": "https://www.uib.no/studier/MAMN-KJEM",
           "localData": {
             "2021": {
-              "alleS": null,
+              "alleS": 39,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 26,
+              "tilbud": 22,
               "pg_fv": null,
               "pg_ord": null
             },
             "2022": {
-              "alleS": null,
+              "alleS": 50,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 34,
+              "tilbud": 33,
               "pg_fv": null,
               "pg_ord": null
             },
             "2023": {
-              "alleS": null,
+              "alleS": 29,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 21,
+              "tilbud": 16,
               "pg_fv": null,
               "pg_ord": null
             },
             "2024": {
-              "alleS": null,
+              "alleS": 51,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 28,
+              "tilbud": 25,
               "pg_fv": null,
               "pg_ord": null
             },
             "2025": {
-              "alleS": null,
+              "alleS": 61,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 39,
+              "tilbud": 32,
               "pg_fv": null,
               "pg_ord": null
             },
@@ -825,7 +830,8 @@
               "pg_ord": null
             },
             "localSource": [
-              "https://www.uib.no/studier/MAMN-KJEM"
+              "https://www.uib.no/studier/MAMN-KJEM",
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
         },
@@ -843,52 +849,52 @@
           "url": "https://www.ntnu.no/studier/mschem",
           "localData": {
             "2021": {
-              "alleS": null,
+              "alleS": 197,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 73,
+              "tilbud": 31,
               "pg_fv": null,
               "pg_ord": null
             },
             "2022": {
-              "alleS": null,
+              "alleS": 207,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 60,
+              "tilbud": 27,
               "pg_fv": null,
               "pg_ord": null
             },
             "2023": {
-              "alleS": null,
+              "alleS": 192,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 46,
+              "tilbud": 29,
               "pg_fv": null,
               "pg_ord": null
             },
             "2024": {
-              "alleS": null,
+              "alleS": 65,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 29,
+              "tilbud": 14,
               "pg_fv": null,
               "pg_ord": null
             },
             "2025": {
-              "alleS": null,
+              "alleS": 93,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 50,
+              "tilbud": 25,
               "pg_fv": null,
               "pg_ord": null
             },
@@ -903,7 +909,8 @@
               "pg_ord": null
             },
             "localSource": [
-              "https://www.ntnu.no/studier/mschem"
+              "https://www.ntnu.no/studier/mschem",
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
         }
@@ -970,12 +977,12 @@
               "pg_ord": null
             },
             "2025": {
-              "alleS": null,
+              "alleS": 39,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 4,
+              "tilbud": 0,
               "pg_fv": null,
               "pg_ord": null
             },
@@ -990,7 +997,8 @@
               "pg_ord": null
             },
             "localSource": [
-              "https://www.nmbu.no/studier/master-2-aar/mat-teknologi-og-helse"
+              "https://www.nmbu.no/studier/master-2-aar/mat-teknologi-og-helse",
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
         },
@@ -1008,52 +1016,52 @@
           "url": "https://www.ntnu.no/studier/ftmamat",
           "localData": {
             "2021": {
-              "alleS": null,
+              "alleS": 111,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 88,
+              "tilbud": 38,
               "pg_fv": null,
               "pg_ord": null
             },
             "2022": {
-              "alleS": null,
+              "alleS": 85,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 69,
+              "tilbud": 35,
               "pg_fv": null,
               "pg_ord": null
             },
             "2023": {
-              "alleS": null,
+              "alleS": 70,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 57,
+              "tilbud": 22,
               "pg_fv": null,
               "pg_ord": null
             },
             "2024": {
-              "alleS": null,
+              "alleS": 95,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 74,
+              "tilbud": 36,
               "pg_fv": null,
               "pg_ord": null
             },
             "2025": {
-              "alleS": null,
+              "alleS": 78,
               "fvS": null,
               "plasser": null,
               "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": null,
+              "kvalifiserte": 60,
+              "tilbud": 20,
               "pg_fv": null,
               "pg_ord": null
             },
@@ -1068,7 +1076,8 @@
               "pg_ord": null
             },
             "localSource": [
-              "https://www.ntnu.no/studier/ftmamat"
+              "https://www.ntnu.no/studier/ftmamat",
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
         }
