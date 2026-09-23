@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, Fragment } from 'react';
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
   BarChart, Bar, Cell, ReferenceLine,
@@ -19,7 +19,8 @@ function nf(v: number, dec: number): string {
 
 // ─── Metrics ─────────────────────────────────────────────────────────────────
 
-type MetricKey = 'alleS' | 'fvS' | 'sokerpress' | 'plasser' | 'kvinner' | 'kvalifiserte' | 'tilbud' | 'mott' | 'oppmote' | 'pg_ord' | 'pg_fv' | 'pg_snitt';
+type MetricKey = 'alleS' | 'fvS' | 'sokerpress' | 'plasser' | 'kvinner' | 'kvalifiserte' | 'tilbud' | 'mott' | 'oppmote' | 'pg_ord' | 'pg_fv' | 'pg_snitt'
+  | 'op_mott' | 'kp_mott' | 'op_fv' | 'op_alle';
 
 interface MetricDef {
   id: MetricKey;
@@ -27,6 +28,8 @@ interface MetricDef {
   unit: string;
   decimals: number;
   description: string;
+  /** 'dbh571' = snittpoeng fra DBH tabell 571 (bare Samordna-program, siste år 2025). */
+  kilde?: 'dbh571';
 }
 
 const METRICS: MetricDef[] = [
@@ -42,11 +45,26 @@ const METRICS: MetricDef[] = [
   { id: 'pg_ord',       label: 'Poenggrense ordinær', unit: '',  decimals: 1, description: 'Opptaksgrense ordinær kvote' },
   { id: 'pg_fv',        label: 'Poenggrense FV',      unit: '',  decimals: 1, description: 'Opptaksgrense førstegangsvitnemål' },
   { id: 'pg_snitt',     label: 'Snitt poenggrense',   unit: '',  decimals: 1, description: 'Gjennomsnitt av ordinær og førstegangsvitnemål poenggrense' },
+  { id: 'op_mott',      label: 'Møtt: opptakspoeng',  unit: '',  decimals: 1, kilde: 'dbh571', description: 'Gjennomsnittlige opptakspoeng (karakterpoeng + alders- og tilleggspoeng) for studentene som møtte til studiestart (DBH 571)' },
+  { id: 'kp_mott',      label: 'Møtt: karakterpoeng', unit: '',  decimals: 1, kilde: 'dbh571', description: 'Gjennomsnittlige karakterpoeng (skolepoeng uten alders- og tilleggspoeng) for studentene som møtte til studiestart (DBH 571)' },
+  { id: 'op_fv',        label: 'Førstevalg: poeng',   unit: '',  decimals: 1, kilde: 'dbh571', description: 'Gjennomsnittlige opptakspoeng for førstevalgssøkerne (DBH 571)' },
+  { id: 'op_alle',      label: 'Alle søkere: poeng',  unit: '',  decimals: 1, kilde: 'dbh571', description: 'Gjennomsnittlige opptakspoeng for alle søkerne i institusjonens opptak (DBH 571)' },
 ];
 
-/** Møtt og oppmøteandel finnes bare for lokale opptak (DBH 379). */
+const isPointMetric = (m: MetricKey) => METRICS.find((d) => d.id === m)?.kilde === 'dbh571';
+
+/** Møtt og oppmøteandel finnes bare for lokale opptak (DBH 379); snittpoeng (DBH 571) bare for Samordna-program. */
 function metricsFor(local: boolean): MetricDef[] {
-  return METRICS.filter((m) => local || (m.id !== 'mott' && m.id !== 'oppmote'));
+  return METRICS.filter((m) => local ? m.kilde !== 'dbh571' : (m.id !== 'mott' && m.id !== 'oppmote'));
+}
+
+/** Siste år (≤ ønsket år) der oppføringen har verdi for målet. */
+function latestYearWith(e: FullAdmissionEntry, metric: MetricKey, years: readonly string[], upTo: string): string | null {
+  for (let i = years.indexOf(upTo); i >= 0; i--) {
+    const d = e.years[years[i]];
+    if (d && getVal(d, metric) !== null) return years[i];
+  }
+  return null;
 }
 
 function getVal(data: FullYearData, metric: MetricKey): number | null {
@@ -188,7 +206,11 @@ function TrendChart({ selectedEntries, metric }: { selectedEntries: FullAdmissio
     );
   }
 
-  const lastIdx = YEARS.length - 1;
+  // Navnelapp ved hver linjes siste punkt (snittpoeng fra DBH slutter før siste Samordna-år).
+  const lastIdxFor = (id: string) => {
+    for (let i = data.length - 1; i >= 0; i--) if (data[i][id] !== undefined) return i;
+    return -1;
+  };
 
   return (
     <ResponsiveContainer width="100%" height={340}>
@@ -215,7 +237,7 @@ function TrendChart({ selectedEntries, metric }: { selectedEntries: FullAdmissio
               activeDot={{ r: 6 }}
               label={(props: { x?: number; y?: number; index?: number; value?: number }) => {
                 const k = `lbl-${e.id}-${props.index ?? 0}`;
-                if (props.index !== lastIdx || props.value == null) return <g key={k} />;
+                if (props.index !== lastIdxFor(e.id) || props.value == null) return <g key={k} />;
                 return (
                   <text key={k} x={(props.x ?? 0) + 8} y={(props.y ?? 0) + 4} fontSize={11} fontWeight={700} fill={col} textAnchor="start">
                     {e.shortName}
@@ -350,13 +372,20 @@ function DataTable({
                   )}
                 </div>
                 <div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)', marginTop: 1 }}>{e.studiekode} · {e.studiested}</div>
+                {e.poengFellesMed && (
+                  <div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)', marginTop: 1, fontStyle: 'italic' }}
+                    title="DBH registrerer opptaket på ett studieprogram som dekker flere studiesteder eller varianter. Snittpoengene er derfor like for disse oppføringene.">
+                    * Snittpoeng felles for hele DBH-programmet
+                  </div>
+                )}
               </td>
               {metricsFor(group.level === 'master2').map((m) => {
                 const v = cur ? getVal(cur, m.id) : null;
                 const vPrev = prev ? getVal(prev, m.id) : null;
                 const isZeroPg = v === 0 && (m.id === 'pg_ord' || m.id === 'pg_fv' || m.id === 'pg_snitt');
                 return (
-                  <td key={m.id} className="px-3 py-2.5 text-center">
+                  <td key={m.id} className="px-3 py-2.5 text-center"
+                    title={(m.id === 'op_mott' || m.id === 'kp_mott') && cur?.n_mott ? `Snitt av ${cur.n_mott} som møtte til studiestart` : undefined}>
                     <div style={{ fontWeight: 600, color: v === null ? 'var(--nmbu-neutral-3)' : isZeroPg ? 'var(--nmbu-green-6)' : 'var(--nmbu-neutral)' }}>
                       {v === null ? '–' : isZeroPg ? 'Alle inn' : `${nf(v, m.decimals)}${m.unit ? ' ' + m.unit : ''}`}
                     </div>
@@ -455,6 +484,18 @@ function NmbuKeyFigures({ group, year: requestedYear }: { group: LandsamGroup; y
             value: sp != null ? `${nf(sp, 2)}×` : '–',
             delta: sp != null && spPrev != null ? `${fmt(sp - spPrev, 2)}× vs. ${prevYear}` : null,
           },
+          (() => {
+            const py = latestYearWith(e, 'op_mott', YEARS, requestedYear);
+            const pc = py ? e.years[py] : undefined;
+            const pyPrev = py ? YEARS[YEARS.indexOf(py) - 1] : undefined;
+            const pp = pyPrev ? e.years[pyPrev] : undefined;
+            return {
+              label: `Snitt opptakspoeng, møtt${py && py !== year ? ` (${py})` : ''}`,
+              value: pc?.op_mott != null ? nf(pc.op_mott, 1) : '–',
+              sub: pc?.kp_mott != null ? `karakterpoeng ${nf(pc.kp_mott, 1)}${pc.n_mott ? ` · ${pc.n_mott} studenter` : ''}` : undefined,
+              delta: pc?.op_mott != null && pp?.op_mott != null ? `${fmt(pc.op_mott - pp.op_mott, 1)} vs. ${pyPrev}` : null,
+            };
+          })(),
           {
             label: 'Poenggrense (fv. / ord.)',
             value: cur?.pg_fv != null && cur?.pg_ord != null
@@ -529,6 +570,7 @@ export function LandsamAdmissionAnalysis({ faculty, initialGroup }: { faculty: F
       if (metric === 'mott' || metric === 'oppmote') setMetric('pg_ord');
       return;
     }
+    if (isPointMetric(metric)) setMetric('alleS');
     const nmbu = group.entries.filter((e) => group.nmbuIds.includes(e.id));
     const hasYear = (y: string) => nmbu.some((e) => e.years[y]?.alleS != null);
     if (!hasYear(year)) {
@@ -540,6 +582,17 @@ export function LandsamAdmissionAnalysis({ faculty, initialGroup }: { faculty: F
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [group?.id]);
+
+  // Snittpoeng (DBH 571) finnes til og med 2025: flytt året bakover hvis valgt år mangler poeng.
+  useEffect(() => {
+    if (!group || !isPointMetric(metric)) return;
+    const has = (y: string) => group.entries.some((e) => e.years[y] && getVal(e.years[y]!, metric) !== null);
+    if (!has(year)) {
+      const latest = [...YEARS].reverse().find(has);
+      if (latest) setYear(latest);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [metric, group?.id]);
 
   if (!group) {
     return (
@@ -636,8 +689,15 @@ export function LandsamAdmissionAnalysis({ faculty, initialGroup }: { faculty: F
         <div className="rounded-xl overflow-hidden" style={{ border: '1px solid var(--nmbu-neutral-3)', backgroundColor: '#fff' }}>
           <div className="px-5 py-4 flex items-center justify-between gap-3 flex-wrap" style={{ borderBottom: '1px solid var(--nmbu-neutral-3)' }}>
             <div className="flex flex-wrap gap-1.5">
-              {metricsFor(isLocal).map((m) => (
-                <button key={m.id} onClick={() => setMetric(m.id)}
+              {metricsFor(isLocal).map((m, i, arr) => (
+                <Fragment key={m.id}>
+                {m.kilde === 'dbh571' && arr[i - 1]?.kilde !== 'dbh571' && (
+                  <span className="flex items-center gap-1.5 pl-2 ml-1 text-xs" title="Snittpoeng fra DBH tabell 571, til og med 2025"
+                    style={{ borderLeft: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-2)', fontWeight: 600 }}>
+                    Snittpoeng (DBH):
+                  </span>
+                )}
+                <button onClick={() => setMetric(m.id)}
                   className="px-3 py-1 rounded-full text-xs transition-all"
                   title={m.description}
                   style={{
@@ -648,6 +708,7 @@ export function LandsamAdmissionAnalysis({ faculty, initialGroup }: { faculty: F
                 >
                   {m.label}
                 </button>
+                </Fragment>
               ))}
             </div>
             <div className="flex items-center gap-2 flex-wrap">
@@ -730,8 +791,8 @@ export function LandsamAdmissionAnalysis({ faculty, initialGroup }: { faculty: F
         <span>
           {isLocal
             ? 'Kilde: DBH/HKDIR tabell 379 (lokale opptak) for søkere, førstevalgssøkere, kvinneandel, kvalifiserte og tilbud; studieplasser og poenggrenser fra institusjonenes egne sider der de finnes. Lokale masteropptak er ikke med i Samordna opptak. Søkerpress = førstevalgssøkere / studieplasser, eller / tilbud om opptak der studieplasser ikke er publisert.'
-            : 'Kilde: Samordna opptak / HKDIR. Søkerpress = førstevalgssøkere / studieplasser.'}
-          Poenggrense 0 = åpent opptak (alle kvalifiserte kom inn), «–» = tall ikke lagt inn ennå.
+            : 'Kilde: Samordna opptak / HKDIR. Søkerpress = førstevalgssøkere / studieplasser. Snittpoeng: DBH/HKDIR tabell 571, gjennomsnittlige opptakspoeng og karakterpoeng for dem som møtte til studiestart, for førstevalgssøkerne og for alle søkerne i institusjonens opptak (til og med 2025). Små grupper er skjermet av DBH og utelatt. Der flere oppføringer deler DBH-program, er snittet felles (merket med * i tabellen).'}
+          {' '}Poenggrense 0 = åpent opptak (alle kvalifiserte kom inn), «–» = tall ikke lagt inn ennå.
         </span>
       </div>
 

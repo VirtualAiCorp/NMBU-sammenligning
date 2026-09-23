@@ -1,0 +1,1234 @@
+{
+ "hentet": "2026-09-23",
+ "kilde": "DBH/HKDIR tabell 571 «Gjennomsnittlige opptakspoeng for søkere», opptakstype N (Samordna opptak), https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData",
+ "forklaring": "op_mott/kp_mott = snitt opptakspoeng/karakterpoeng for dem som møtte til studiestart; op_fv = snitt opptakspoeng for førstevalgssøkere; op_alle = snitt for alle søkere i DBH-utvalget; n_* = antall personer bak snittet (skjermede celler er utelatt).",
+ "programs": {
+  "nmbu_eiendom": {
+   "studieprogramkoder": [
+    "M-EIE"
+   ],
+   "years": {
+    "2021": {
+     "op_mott": 50.6,
+     "kp_mott": 45.1,
+     "n_mott": 26,
+     "op_fv": 46.9,
+     "n_fv": 100,
+     "op_alle": 49.1,
+     "n_alle": 194
+    },
+    "2022": {
+     "op_mott": 52.3,
+     "kp_mott": 47.9,
+     "n_mott": 24,
+     "op_fv": 49.1,
+     "n_fv": 76,
+     "op_alle": 50.0,
+     "n_alle": 165
+    },
+    "2023": {
+     "op_mott": 52.1,
+     "kp_mott": 46.3,
+     "n_mott": 25,
+     "op_fv": 47.8,
+     "n_fv": 87,
+     "op_alle": 48.9,
+     "n_alle": 174
+    },
+    "2024": {
+     "op_mott": 52.5,
+     "kp_mott": 46.1,
+     "n_mott": 28,
+     "op_fv": 48.3,
+     "n_fv": 99,
+     "op_alle": 49.1,
+     "n_alle": 195
+    },
+    "2025": {
+     "op_mott": 51.7,
+     "kp_mott": 45.7,
+     "n_mott": 30,
+     "op_fv": 47.8,
+     "n_fv": 95,
+     "op_alle": 49.3,
+     "n_alle": 223
+    }
+   }
+  },
+  "hvl_landmaling": {
+   "studieprogramkoder": [
+    "LEIE"
+   ],
+   "years": {
+    "2021": {
+     "op_mott": 49.1,
+     "kp_mott": 42.2,
+     "n_mott": 37,
+     "op_fv": 46.1,
+     "n_fv": 96,
+     "op_alle": 46.4,
+     "n_alle": 298
+    },
+    "2022": {
+     "op_mott": 48.5,
+     "kp_mott": 41.8,
+     "n_mott": 44,
+     "op_fv": 45.6,
+     "n_fv": 94,
+     "op_alle": 46.3,
+     "n_alle": 279
+    },
+    "2023": {
+     "op_mott": 47.9,
+     "kp_mott": 41.8,
+     "n_mott": 35,
+     "op_fv": 44.5,
+     "n_fv": 83,
+     "op_alle": 45.5,
+     "n_alle": 274
+    },
+    "2024": {
+     "op_mott": 49.0,
+     "kp_mott": 42.4,
+     "n_mott": 57,
+     "op_fv": 45.9,
+     "n_fv": 109,
+     "op_alle": 46.6,
+     "n_alle": 288
+    },
+    "2025": {
+     "op_mott": 50.2,
+     "kp_mott": 42.9,
+     "n_mott": 60,
+     "op_fv": 46.3,
+     "n_fv": 126,
+     "op_alle": 46.9,
+     "n_alle": 371
+    }
+   }
+  },
+  "hvl_eiendomsmegling": {
+   "studieprogramkoder": [
+    "EIMB"
+   ],
+   "years": {
+    "2021": {
+     "op_mott": 45.6,
+     "kp_mott": 39.7,
+     "n_mott": 22,
+     "op_fv": 42.6,
+     "n_fv": 97,
+     "op_alle": 42.5,
+     "n_alle": 316
+    },
+    "2022": {
+     "op_mott": 44.2,
+     "kp_mott": 39.9,
+     "n_mott": 28,
+     "op_fv": 41.4,
+     "n_fv": 109,
+     "op_alle": 43.1,
+     "n_alle": 298
+    },
+    "2023": {
+     "op_mott": 41.3,
+     "kp_mott": 38.3,
+     "n_mott": 30,
+     "op_fv": 41.6,
+     "n_fv": 93,
+     "op_alle": 43.2,
+     "n_alle": 308
+    },
+    "2024": {
+     "op_mott": 38.8,
+     "kp_mott": 34.4,
+     "n_mott": 41,
+     "op_fv": 39.9,
+     "n_fv": 75,
+     "op_alle": 42.1,
+     "n_alle": 263
+    },
+    "2025": {
+     "op_mott": 44.6,
+     "kp_mott": 39.1,
+     "n_mott": 34,
+     "op_fv": 41.3,
+     "n_fv": 125,
+     "op_alle": 42.6,
+     "n_alle": 336
+    }
+   }
+  },
+  "nord_eiendomsmegling": {
+   "studieprogramkoder": [
+    "BAEME"
+   ],
+   "years": {
+    "2021": {
+     "op_mott": 47.2,
+     "kp_mott": 41.7,
+     "n_mott": 29,
+     "op_fv": 41.9,
+     "n_fv": 107,
+     "op_alle": 42.8,
+     "n_alle": 340
+    },
+    "2022": {
+     "op_mott": 47.8,
+     "kp_mott": 41.6,
+     "n_mott": 27,
+     "op_fv": 44.7,
+     "n_fv": 85,
+     "op_alle": 44.5,
+     "n_alle": 264
+    },
+    "2023": {
+     "op_mott": 46.0,
+     "kp_mott": 40.0,
+     "n_mott": 34,
+     "op_fv": 44.2,
+     "n_fv": 90,
+     "op_alle": 43.6,
+     "n_alle": 255
+    },
+    "2024": {
+     "op_mott": 43.8,
+     "kp_mott": 39.3,
+     "n_mott": 37,
+     "op_fv": 42.3,
+     "n_fv": 82,
+     "op_alle": 43.2,
+     "n_alle": 258
+    },
+    "2025": {
+     "op_mott": 42.1,
+     "kp_mott": 36.5,
+     "n_mott": 29,
+     "op_fv": 42.2,
+     "n_fv": 66,
+     "op_alle": 43.0,
+     "n_alle": 202
+    }
+   }
+  },
+  "inn_eiendomsmegling": {
+   "studieprogramkoder": [
+    "EIENDOM"
+   ],
+   "years": {
+    "2021": {
+     "op_mott": 48.4,
+     "kp_mott": 39.3,
+     "n_mott": 31,
+     "op_fv": 43.2,
+     "n_fv": 142,
+     "op_alle": 43.2,
+     "n_alle": 301
+    },
+    "2022": {
+     "op_mott": 44.8,
+     "kp_mott": 39.2,
+     "n_mott": 43,
+     "op_fv": 41.8,
+     "n_fv": 111,
+     "op_alle": 42.3,
+     "n_alle": 282
+    },
+    "2023": {
+     "op_mott": 44.3,
+     "kp_mott": 38.0,
+     "n_mott": 34,
+     "op_fv": 42.2,
+     "n_fv": 102,
+     "op_alle": 42.5,
+     "n_alle": 246
+    }
+   }
+  },
+  "usn_eiendomsmegling": {
+   "studieprogramkoder": [
+    "368"
+   ],
+   "years": {
+    "2021": {
+     "op_mott": 46.5,
+     "kp_mott": 40.6,
+     "n_mott": 59,
+     "op_fv": 42.5,
+     "n_fv": 208,
+     "op_alle": 42.0,
+     "n_alle": 528
+    },
+    "2022": {
+     "op_mott": 46.7,
+     "kp_mott": 41.2,
+     "n_mott": 56,
+     "op_fv": 43.8,
+     "n_fv": 185,
+     "op_alle": 43.9,
+     "n_alle": 468
+    },
+    "2023": {
+     "op_mott": 46.3,
+     "kp_mott": 40.2,
+     "n_mott": 56,
+     "op_fv": 42.9,
+     "n_fv": 164,
+     "op_alle": 43.1,
+     "n_alle": 442
+    },
+    "2024": {
+     "op_mott": 43.8,
+     "kp_mott": 38.3,
+     "n_mott": 45,
+     "op_fv": 42.5,
+     "n_fv": 147,
+     "op_alle": 42.8,
+     "n_alle": 387
+    },
+    "2025": {
+     "op_mott": 46.0,
+     "kp_mott": 40.7,
+     "n_mott": 62,
+     "op_fv": 42.3,
+     "n_fv": 206,
+     "op_alle": 42.1,
+     "n_alle": 438
+    }
+   }
+  },
+  "nmbu_la": {
+   "studieprogramkoder": [
+    "M-LA"
+   ],
+   "years": {
+    "2021": {
+     "op_mott": 60.3,
+     "kp_mott": 52.4,
+     "n_mott": 21,
+     "op_fv": 54.4,
+     "n_fv": 138,
+     "op_alle": 53.8,
+     "n_alle": 316
+    },
+    "2022": {
+     "op_mott": 60.3,
+     "kp_mott": 52.4,
+     "n_mott": 19,
+     "op_fv": 55.6,
+     "n_fv": 87,
+     "op_alle": 55.7,
+     "n_alle": 185
+    },
+    "2023": {
+     "op_mott": 60.5,
+     "kp_mott": 53.1,
+     "n_mott": 17,
+     "op_fv": 56.1,
+     "n_fv": 93,
+     "op_alle": 55.1,
+     "n_alle": 191
+    },
+    "2024": {
+     "op_mott": 59.4,
+     "kp_mott": 51.7,
+     "n_mott": 20,
+     "op_fv": 54.9,
+     "n_fv": 94,
+     "op_alle": 54.6,
+     "n_alle": 212
+    },
+    "2025": {
+     "op_mott": 58.1,
+     "kp_mott": 50.7,
+     "n_mott": 32,
+     "op_fv": 53.1,
+     "n_fv": 99,
+     "op_alle": 53.8,
+     "n_alle": 310
+    }
+   }
+  },
+  "hvl_landskapsplanlegging_la": {
+   "studieprogramkoder": [
+    "LANA"
+   ],
+   "years": {
+    "2021": {
+     "op_mott": 50.5,
+     "kp_mott": 44.5,
+     "n_mott": 16,
+     "op_fv": 47.1,
+     "n_fv": 49,
+     "op_alle": 47.4,
+     "n_alle": 123
+    },
+    "2022": {
+     "op_mott": 51.6,
+     "kp_mott": 42.9,
+     "n_mott": 8,
+     "op_fv": 52.1,
+     "n_fv": 28,
+     "op_alle": 48.8,
+     "n_alle": 85
+    },
+    "2023": {
+     "op_mott": 51.3,
+     "kp_mott": 45.9,
+     "n_mott": 14,
+     "op_fv": 48.9,
+     "n_fv": 30,
+     "op_alle": 47.9,
+     "n_alle": 89
+    },
+    "2024": {
+     "op_mott": 48.0,
+     "kp_mott": 42.3,
+     "n_mott": 21,
+     "op_fv": 47.3,
+     "n_fv": 36,
+     "op_alle": 47.2,
+     "n_alle": 93
+    },
+    "2025": {
+     "op_mott": 45.2,
+     "kp_mott": 39.2,
+     "n_mott": 22,
+     "op_fv": 47.3,
+     "n_fv": 33,
+     "op_alle": 47.3,
+     "n_alle": 78
+    }
+   },
+   "delerDbhProgramMed": [
+    "hvl_landskapsplanlegging"
+   ]
+  },
+  "nmbu_byreg": {
+   "studieprogramkoder": [
+    "M-BYREG"
+   ],
+   "years": {
+    "2021": {
+     "op_mott": 54.9,
+     "kp_mott": 48.8,
+     "n_mott": 30,
+     "op_fv": 53.0,
+     "n_fv": 77,
+     "op_alle": 52.7,
+     "n_alle": 225
+    },
+    "2022": {
+     "op_mott": 54.6,
+     "kp_mott": 48.5,
+     "n_mott": 23,
+     "op_fv": 53.1,
+     "n_fv": 63,
+     "op_alle": 53.1,
+     "n_alle": 176
+    },
+    "2023": {
+     "op_mott": 55.2,
+     "kp_mott": 48.5,
+     "n_mott": 28,
+     "op_fv": 53.1,
+     "n_fv": 60,
+     "op_alle": 52.9,
+     "n_alle": 168
+    },
+    "2024": {
+     "op_mott": 53.8,
+     "kp_mott": 47.2,
+     "n_mott": 25,
+     "op_fv": 52.2,
+     "n_fv": 60,
+     "op_alle": 53.1,
+     "n_alle": 186
+    },
+    "2025": {
+     "op_mott": 51.3,
+     "kp_mott": 45.0,
+     "n_mott": 38,
+     "op_fv": 51.9,
+     "n_fv": 65,
+     "op_alle": 51.8,
+     "n_alle": 249
+    }
+   }
+  },
+  "uis_byplan_samfsikkerhet": {
+   "studieprogramkoder": [
+    "B-BYSAM"
+   ],
+   "years": {
+    "2021": {
+     "op_mott": 52.6,
+     "kp_mott": 46.1,
+     "n_mott": 21,
+     "op_fv": 46.3,
+     "n_fv": 132,
+     "op_alle": 45.4,
+     "n_alle": 578
+    },
+    "2022": {
+     "op_mott": 50.7,
+     "kp_mott": 44.3,
+     "n_mott": 26,
+     "op_fv": 46.5,
+     "n_fv": 78,
+     "op_alle": 46.7,
+     "n_alle": 327
+    },
+    "2023": {
+     "op_mott": 50.2,
+     "kp_mott": 44.2,
+     "n_mott": 34,
+     "op_fv": 46.6,
+     "n_fv": 69,
+     "op_alle": 47.3,
+     "n_alle": 342
+    },
+    "2024": {
+     "op_mott": 48.7,
+     "kp_mott": 43.5,
+     "n_mott": 35,
+     "op_fv": 45.8,
+     "n_fv": 88,
+     "op_alle": 46.6,
+     "n_alle": 403
+    },
+    "2025": {
+     "op_mott": 50.5,
+     "kp_mott": 44.4,
+     "n_mott": 36,
+     "op_fv": 47.0,
+     "n_fv": 86,
+     "op_alle": 46.5,
+     "n_alle": 376
+    }
+   }
+  },
+  "uis_ing_bygg_byplan": {
+   "studieprogramkoder": [
+    "B-BYGG"
+   ],
+   "years": {
+    "2021": {
+     "op_mott": 46.6,
+     "kp_mott": 37.3,
+     "n_mott": 33,
+     "op_fv": 47.3,
+     "n_fv": 45,
+     "op_alle": 48.8,
+     "n_alle": 209
+    },
+    "2022": {
+     "op_mott": 47.6,
+     "kp_mott": 40.0,
+     "n_mott": 30,
+     "op_fv": 48.7,
+     "n_fv": 38,
+     "op_alle": 49.3,
+     "n_alle": 172
+    },
+    "2023": {
+     "op_mott": 51.3,
+     "kp_mott": 41.7,
+     "n_mott": 27,
+     "op_fv": 50.5,
+     "n_fv": 27,
+     "op_alle": 49.7,
+     "n_alle": 198
+    },
+    "2024": {
+     "op_mott": 47.3,
+     "kp_mott": 39.3,
+     "n_mott": 25,
+     "op_fv": 48.1,
+     "n_fv": 23,
+     "op_alle": 49.1,
+     "n_alle": 211
+    },
+    "2025": {
+     "op_mott": 47.9,
+     "kp_mott": 39.3,
+     "n_mott": 41,
+     "op_fv": 48.9,
+     "n_fv": 40,
+     "op_alle": 48.3,
+     "n_alle": 311
+    }
+   }
+  },
+  "uit_samfunnsplanlegging": {
+   "studieprogramkoder": [
+    "B-SPL"
+   ],
+   "years": {
+    "2021": {
+     "op_mott": 44.7,
+     "kp_mott": 38.0,
+     "n_mott": 25,
+     "op_fv": 46.8,
+     "n_fv": 23,
+     "op_alle": 45.5,
+     "n_alle": 130
+    },
+    "2022": {
+     "op_mott": 46.0,
+     "kp_mott": 37.9,
+     "n_mott": 12,
+     "op_fv": 49.7,
+     "n_fv": 9,
+     "op_alle": 47.6,
+     "n_alle": 88
+    },
+    "2023": {
+     "op_mott": 44.7,
+     "kp_mott": 39.7,
+     "n_mott": 9,
+     "op_fv": 45.1,
+     "n_fv": 8,
+     "op_alle": 48.4,
+     "n_alle": 76
+    },
+    "2024": {
+     "op_mott": 48.5,
+     "kp_mott": 42.2,
+     "n_mott": 8,
+     "op_fv": 51.7,
+     "n_fv": 15,
+     "op_alle": 49.7,
+     "n_alle": 91
+    },
+    "2025": {
+     "op_mott": 52.4,
+     "kp_mott": 44.7,
+     "n_mott": 8,
+     "op_fv": 52.4,
+     "n_fv": 8,
+     "op_alle": 49.2,
+     "n_alle": 95
+    }
+   }
+  },
+  "nord_geografi_samfplan": {
+   "studieprogramkoder": [
+    "BAGEO"
+   ],
+   "years": {
+    "2022": {
+     "op_mott": 45.9,
+     "kp_mott": 37.0,
+     "n_mott": 17,
+     "op_fv": 48.4,
+     "n_fv": 20,
+     "op_alle": 46.0,
+     "n_alle": 67
+    },
+    "2023": {
+     "op_mott": 48.6,
+     "kp_mott": 39.5,
+     "n_mott": 11,
+     "op_fv": 48.8,
+     "n_fv": 21,
+     "op_alle": 47.7,
+     "n_alle": 59
+    },
+    "2024": {
+     "op_mott": 46.4,
+     "kp_mott": 37.1,
+     "n_mott": 13,
+     "op_fv": 46.6,
+     "n_fv": 17,
+     "op_alle": 47.5,
+     "n_alle": 75
+    },
+    "2025": {
+     "op_mott": 47.2,
+     "kp_mott": 38.4,
+     "n_mott": 22,
+     "op_fv": 51.3,
+     "n_fv": 22,
+     "op_alle": 48.4,
+     "n_alle": 59
+    }
+   }
+  },
+  "uia_samfunnsplanlegging": {
+   "studieprogramkoder": [
+    "BACSAMKOM"
+   ],
+   "years": {
+    "2021": {
+     "op_mott": 45.0,
+     "kp_mott": 39.9,
+     "n_mott": 25,
+     "op_fv": 46.8,
+     "n_fv": 34,
+     "op_alle": 46.0,
+     "n_alle": 234
+    },
+    "2022": {
+     "op_mott": 45.4,
+     "kp_mott": 41.1,
+     "n_mott": 26,
+     "op_fv": 47.0,
+     "n_fv": 29,
+     "op_alle": 46.7,
+     "n_alle": 170
+    },
+    "2023": {
+     "op_mott": 45.1,
+     "kp_mott": 38.6,
+     "n_mott": 30,
+     "op_fv": 45.5,
+     "n_fv": 33,
+     "op_alle": 46.2,
+     "n_alle": 163
+    },
+    "2024": {
+     "op_mott": 43.2,
+     "kp_mott": 38.4,
+     "n_mott": 30,
+     "op_fv": 43.0,
+     "n_fv": 30,
+     "op_alle": 45.3,
+     "n_alle": 183
+    },
+    "2025": {
+     "op_mott": 45.5,
+     "kp_mott": 40.9,
+     "n_mott": 21,
+     "op_fv": 46.3,
+     "n_fv": 20,
+     "op_alle": 45.4,
+     "n_alle": 169
+    }
+   }
+  },
+  "hivolda_planlegging": {
+   "studieprogramkoder": [
+    "OFFBV"
+   ],
+   "years": {
+    "2021": {
+     "op_mott": 41.5,
+     "kp_mott": 35.5,
+     "n_mott": 26,
+     "op_fv": 44.6,
+     "n_fv": 14,
+     "op_alle": 41.3,
+     "n_alle": 134
+    },
+    "2022": {
+     "op_mott": 43.2,
+     "kp_mott": 36.3,
+     "n_mott": 12,
+     "op_fv": 42.7,
+     "n_fv": 15,
+     "op_alle": 44.4,
+     "n_alle": 76
+    },
+    "2023": {
+     "op_mott": 46.8,
+     "kp_mott": 40.9,
+     "n_mott": 10,
+     "op_fv": 47.9,
+     "n_fv": 16,
+     "op_alle": 46.8,
+     "n_alle": 52
+    },
+    "2024": {
+     "op_mott": 39.8,
+     "kp_mott": 32.3,
+     "n_mott": 4,
+     "op_fv": 43.7,
+     "n_fv": 8,
+     "op_alle": 45.0,
+     "n_alle": 22
+    },
+    "2025": {
+     "op_mott": null,
+     "kp_mott": null,
+     "n_mott": null,
+     "op_fv": 38.9,
+     "n_fv": 6,
+     "op_alle": 46.7,
+     "n_alle": 40
+    }
+   }
+  },
+  "nmbu_landskapsing": {
+   "studieprogramkoder": [
+    "B-LI"
+   ],
+   "years": {
+    "2021": {
+     "op_mott": 55.0,
+     "kp_mott": 47.3,
+     "n_mott": 19,
+     "op_fv": 49.5,
+     "n_fv": 68,
+     "op_alle": 51.5,
+     "n_alle": 246
+    },
+    "2022": {
+     "op_mott": 54.8,
+     "kp_mott": 47.7,
+     "n_mott": 14,
+     "op_fv": 49.5,
+     "n_fv": 43,
+     "op_alle": 51.7,
+     "n_alle": 160
+    },
+    "2023": {
+     "op_mott": 54.4,
+     "kp_mott": 47.7,
+     "n_mott": 22,
+     "op_fv": 49.8,
+     "n_fv": 44,
+     "op_alle": 50.7,
+     "n_alle": 176
+    },
+    "2024": {
+     "op_mott": 55.4,
+     "kp_mott": 49.7,
+     "n_mott": 14,
+     "op_fv": 50.9,
+     "n_fv": 45,
+     "op_alle": 51.8,
+     "n_alle": 206
+    },
+    "2025": {
+     "op_mott": 53.3,
+     "kp_mott": 46.9,
+     "n_mott": 27,
+     "op_fv": 51.6,
+     "n_fv": 67,
+     "op_alle": 51.7,
+     "n_alle": 529
+    }
+   }
+  },
+  "hvl_landskapsplanlegging": {
+   "studieprogramkoder": [
+    "LANA"
+   ],
+   "years": {
+    "2021": {
+     "op_mott": 50.5,
+     "kp_mott": 44.5,
+     "n_mott": 16,
+     "op_fv": 47.1,
+     "n_fv": 49,
+     "op_alle": 47.4,
+     "n_alle": 123
+    },
+    "2022": {
+     "op_mott": 51.6,
+     "kp_mott": 42.9,
+     "n_mott": 8,
+     "op_fv": 52.1,
+     "n_fv": 28,
+     "op_alle": 48.8,
+     "n_alle": 85
+    },
+    "2023": {
+     "op_mott": 51.3,
+     "kp_mott": 45.9,
+     "n_mott": 14,
+     "op_fv": 48.9,
+     "n_fv": 30,
+     "op_alle": 47.9,
+     "n_alle": 89
+    },
+    "2024": {
+     "op_mott": 48.0,
+     "kp_mott": 42.3,
+     "n_mott": 21,
+     "op_fv": 47.3,
+     "n_fv": 36,
+     "op_alle": 47.2,
+     "n_alle": 93
+    },
+    "2025": {
+     "op_mott": 45.2,
+     "kp_mott": 39.2,
+     "n_mott": 22,
+     "op_fv": 47.3,
+     "n_fv": 33,
+     "op_alle": 47.3,
+     "n_alle": 78
+    }
+   },
+   "delerDbhProgramMed": [
+    "hvl_landskapsplanlegging_la"
+   ]
+  },
+  "nmbu_ims": {
+   "studieprogramkoder": [
+    "B-DS"
+   ],
+   "years": {
+    "2021": {
+     "op_mott": 56.4,
+     "kp_mott": 47.7,
+     "n_mott": 13,
+     "op_fv": 53.2,
+     "n_fv": 50,
+     "op_alle": 54.7,
+     "n_alle": 98
+    },
+    "2022": {
+     "op_mott": 55.2,
+     "kp_mott": 47.3,
+     "n_mott": 9,
+     "op_fv": 54.5,
+     "n_fv": 27,
+     "op_alle": 54.8,
+     "n_alle": 74
+    },
+    "2023": {
+     "op_mott": 56.3,
+     "kp_mott": 51.1,
+     "n_mott": 15,
+     "op_fv": 54.6,
+     "n_fv": 33,
+     "op_alle": 53.7,
+     "n_alle": 84
+    },
+    "2024": {
+     "op_mott": 54.0,
+     "kp_mott": 47.5,
+     "n_mott": 23,
+     "op_fv": 52.9,
+     "n_fv": 43,
+     "op_alle": 52.9,
+     "n_alle": 106
+    },
+    "2025": {
+     "op_mott": 46.7,
+     "kp_mott": 40.7,
+     "n_mott": 10,
+     "op_fv": 49.2,
+     "n_fv": 22,
+     "op_alle": 53.0,
+     "n_alle": 95
+    }
+   }
+  },
+  "uio_utvikling_baerekraft": {
+   "studieprogramkoder": [
+    "SVB-UTV"
+   ],
+   "years": {
+    "2021": {
+     "op_mott": 55.5,
+     "kp_mott": 49.3,
+     "n_mott": 29,
+     "op_fv": 52.9,
+     "n_fv": 49,
+     "op_alle": 53.9,
+     "n_alle": 473
+    },
+    "2022": {
+     "op_mott": 54.7,
+     "kp_mott": 49.3,
+     "n_mott": 35,
+     "op_fv": 53.4,
+     "n_fv": 32,
+     "op_alle": 53.8,
+     "n_alle": 401
+    },
+    "2023": {
+     "op_mott": 55.9,
+     "kp_mott": 49.6,
+     "n_mott": 30,
+     "op_fv": 53.3,
+     "n_fv": 50,
+     "op_alle": 53.8,
+     "n_alle": 389
+    },
+    "2024": {
+     "op_mott": 55.6,
+     "kp_mott": 48.7,
+     "n_mott": 41,
+     "op_fv": 52.9,
+     "n_fv": 58,
+     "op_alle": 54.1,
+     "n_alle": 400
+    },
+    "2025": {
+     "op_mott": 54.7,
+     "kp_mott": 48.1,
+     "n_mott": 48,
+     "op_fv": 53.5,
+     "n_fv": 61,
+     "op_alle": 53.8,
+     "n_alle": 390
+    }
+   }
+  },
+  "oslomet_utviklingsstudier": {
+   "studieprogramkoder": [
+    "UTVBA"
+   ],
+   "years": {
+    "2021": {
+     "op_mott": 52.3,
+     "kp_mott": 47.1,
+     "n_mott": 23,
+     "op_fv": 49.0,
+     "n_fv": 57,
+     "op_alle": 48.9,
+     "n_alle": 285
+    },
+    "2022": {
+     "op_mott": 49.4,
+     "kp_mott": 44.5,
+     "n_mott": 19,
+     "op_fv": 49.5,
+     "n_fv": 38,
+     "op_alle": 49.9,
+     "n_alle": 251
+    },
+    "2023": {
+     "op_mott": 50.8,
+     "kp_mott": 44.8,
+     "n_mott": 25,
+     "op_fv": 48.6,
+     "n_fv": 49,
+     "op_alle": 48.5,
+     "n_alle": 276
+    },
+    "2024": {
+     "op_mott": 45.8,
+     "kp_mott": 40.8,
+     "n_mott": 22,
+     "op_fv": 49.2,
+     "n_fv": 35,
+     "op_alle": 48.9,
+     "n_alle": 219
+    },
+    "2025": {
+     "op_mott": 45.5,
+     "kp_mott": 40.6,
+     "n_mott": 31,
+     "op_fv": 46.8,
+     "n_fv": 30,
+     "op_alle": 46.5,
+     "n_alle": 196
+    }
+   }
+  },
+  "uia_globale_utviklingsstudier": {
+   "studieprogramkoder": [
+    "BACUTV"
+   ],
+   "years": {
+    "2021": {
+     "op_mott": 51.9,
+     "kp_mott": 46.4,
+     "n_mott": 18,
+     "op_fv": 48.0,
+     "n_fv": 42,
+     "op_alle": 47.0,
+     "n_alle": 149
+    },
+    "2022": {
+     "op_mott": 51.3,
+     "kp_mott": 45.4,
+     "n_mott": 20,
+     "op_fv": 49.2,
+     "n_fv": 44,
+     "op_alle": 48.6,
+     "n_alle": 191
+    },
+    "2023": {
+     "op_mott": 50.1,
+     "kp_mott": 45.3,
+     "n_mott": 22,
+     "op_fv": 51.0,
+     "n_fv": 33,
+     "op_alle": 49.7,
+     "n_alle": 135
+    },
+    "2024": {
+     "op_mott": 50.0,
+     "kp_mott": 44.1,
+     "n_mott": 20,
+     "op_fv": 49.5,
+     "n_fv": 29,
+     "op_alle": 47.6,
+     "n_alle": 125
+    },
+    "2025": {
+     "op_mott": 44.6,
+     "kp_mott": 39.2,
+     "n_mott": 11,
+     "op_fv": 44.9,
+     "n_fv": 19,
+     "op_alle": 46.0,
+     "n_alle": 112
+    }
+   }
+  },
+  "uio_internasjonale_studier": {
+   "studieprogramkoder": [
+    "SVB-INTER"
+   ],
+   "years": {
+    "2021": {
+     "op_mott": 60.5,
+     "kp_mott": 53.9,
+     "n_mott": 57,
+     "op_fv": 54.4,
+     "n_fv": 265,
+     "op_alle": 54.8,
+     "n_alle": 956
+    },
+    "2022": {
+     "op_mott": 60.2,
+     "kp_mott": 54.1,
+     "n_mott": 45,
+     "op_fv": 54.6,
+     "n_fv": 248,
+     "op_alle": 54.7,
+     "n_alle": 883
+    },
+    "2023": {
+     "op_mott": 61.2,
+     "kp_mott": 54.2,
+     "n_mott": 67,
+     "op_fv": 54.5,
+     "n_fv": 255,
+     "op_alle": 55.3,
+     "n_alle": 962
+    },
+    "2024": {
+     "op_mott": 61.1,
+     "kp_mott": 53.9,
+     "n_mott": 75,
+     "op_fv": 53.8,
+     "n_fv": 329,
+     "op_alle": 54.5,
+     "n_alle": 1107
+    },
+    "2025": {
+     "op_mott": 61.5,
+     "kp_mott": 53.9,
+     "n_mott": 65,
+     "op_fv": 54.6,
+     "n_fv": 310,
+     "op_alle": 54.7,
+     "n_alle": 1070
+    }
+   }
+  },
+  "inn_internasjonale_studier": {
+   "studieprogramkoder": [
+    "BAINTHIS"
+   ],
+   "years": {
+    "2021": {
+     "op_mott": 47.9,
+     "kp_mott": 39.9,
+     "n_mott": 27,
+     "op_fv": 48.0,
+     "n_fv": 27,
+     "op_alle": 46.5,
+     "n_alle": 59
+    },
+    "2022": {
+     "op_mott": 44.9,
+     "kp_mott": 38.0,
+     "n_mott": 30,
+     "op_fv": 44.5,
+     "n_fv": 33,
+     "op_alle": 43.9,
+     "n_alle": 100
+    },
+    "2023": {
+     "op_mott": 43.6,
+     "kp_mott": 39.3,
+     "n_mott": 36,
+     "op_fv": 43.1,
+     "n_fv": 26,
+     "op_alle": 45.1,
+     "n_alle": 107
+    },
+    "2024": {
+     "op_mott": 45.4,
+     "kp_mott": 41.5,
+     "n_mott": 29,
+     "op_fv": 47.5,
+     "n_fv": 21,
+     "op_alle": 46.4,
+     "n_alle": 97
+    },
+    "2025": {
+     "op_mott": 45.8,
+     "kp_mott": 41.2,
+     "n_mott": 31,
+     "op_fv": 46.8,
+     "n_fv": 31,
+     "op_alle": 45.7,
+     "n_alle": 96
+    }
+   }
+  },
+  "nord_internasjonale_relasjoner_b": {
+   "studieprogramkoder": [
+    "BAINT"
+   ],
+   "years": {
+    "2021": {
+     "op_mott": 45.2,
+     "kp_mott": 38.3,
+     "n_mott": 23,
+     "op_fv": 46.9,
+     "n_fv": 27,
+     "op_alle": 45.7,
+     "n_alle": 95
+    },
+    "2022": {
+     "op_mott": 45.1,
+     "kp_mott": 39.4,
+     "n_mott": 16,
+     "op_fv": 46.7,
+     "n_fv": 29,
+     "op_alle": 45.7,
+     "n_alle": 70
+    },
+    "2023": {
+     "op_mott": 42.9,
+     "kp_mott": 36.9,
+     "n_mott": 13,
+     "op_fv": 46.2,
+     "n_fv": 20,
+     "op_alle": 45.4,
+     "n_alle": 75
+    },
+    "2024": {
+     "op_mott": 46.3,
+     "kp_mott": 40.8,
+     "n_mott": 22,
+     "op_fv": 47.5,
+     "n_fv": 35,
+     "op_alle": 45.4,
+     "n_alle": 87
+    },
+    "2025": {
+     "op_mott": 47.0,
+     "kp_mott": 38.6,
+     "n_mott": 17,
+     "op_fv": 47.4,
+     "n_fv": 19,
+     "op_alle": 46.3,
+     "n_alle": 70
+    }
+   }
+  }
+ }
+}

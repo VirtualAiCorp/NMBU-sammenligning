@@ -12,6 +12,8 @@ PY=python3
 if [[ " $* " == *" --refresh "* ]] && [ -f "$D/dbh-programkart.json" ]; then
   echo "== $FAK: lokale opptak fra DBH 379 =="
   $PY "$ROOT/scripts/fill-local-admissions.py" "$FAK" | tail -1
+  echo "== $FAK: opptakspoeng fra DBH 571 =="
+  $PY "$ROOT/scripts/fetch-admission-points.py" "$FAK" --refresh | tail -1
 fi
 echo "== $FAK: opptak =="
 $PY "$ROOT/scripts/build-landsam-data.py" \

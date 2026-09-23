@@ -1,0 +1,371 @@
+{
+ "hentet": "2026-09-23",
+ "kilde": "DBH/HKDIR tabell 571 «Gjennomsnittlige opptakspoeng for søkere», opptakstype N (Samordna opptak), https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData",
+ "forklaring": "op_mott/kp_mott = snitt opptakspoeng/karakterpoeng for dem som møtte til studiestart; op_fv = snitt opptakspoeng for førstevalgssøkere; op_alle = snitt for alle søkere i DBH-utvalget; n_* = antall personer bak snittet (skjermede celler er utelatt).",
+ "programs": {
+  "nmbu_veterinaermedisin": {
+   "studieprogramkoder": [
+    "VET"
+   ],
+   "years": {
+    "2021": {
+     "op_mott": 62.5,
+     "kp_mott": 54.3,
+     "n_mott": 77,
+     "op_fv": 57.3,
+     "n_fv": 428,
+     "op_alle": 57.4,
+     "n_alle": 471
+    },
+    "2022": {
+     "op_mott": 63.3,
+     "kp_mott": 54.2,
+     "n_mott": 81,
+     "op_fv": 57.9,
+     "n_fv": 360,
+     "op_alle": 58.0,
+     "n_alle": 422
+    },
+    "2023": {
+     "op_mott": 62.5,
+     "kp_mott": 53.7,
+     "n_mott": 82,
+     "op_fv": 57.6,
+     "n_fv": 335,
+     "op_alle": 57.5,
+     "n_alle": 389
+    },
+    "2024": {
+     "op_mott": 62.6,
+     "kp_mott": 53.9,
+     "n_mott": 77,
+     "op_fv": 57.2,
+     "n_fv": 325,
+     "op_alle": 57.2,
+     "n_alle": 379
+    },
+    "2025": {
+     "op_mott": 60.6,
+     "kp_mott": 52.6,
+     "n_mott": 82,
+     "op_fv": 56.4,
+     "n_fv": 331,
+     "op_alle": 56.3,
+     "n_alle": 377
+    }
+   }
+  },
+  "uio_medisin": {
+   "studieprogramkoder": [
+    "MEDISIN"
+   ],
+   "years": {
+    "2021": {
+     "op_mott": 66.8,
+     "kp_mott": 57.8,
+     "n_mott": 93,
+     "op_fv": 61.5,
+     "n_fv": 993,
+     "op_alle": 61.6,
+     "n_alle": 2131
+    },
+    "2022": {
+     "op_mott": 66.8,
+     "kp_mott": 57.9,
+     "n_mott": 103,
+     "op_fv": 61.8,
+     "n_fv": 912,
+     "op_alle": 61.9,
+     "n_alle": 2015
+    },
+    "2023": {
+     "op_mott": 67.0,
+     "kp_mott": 57.6,
+     "n_mott": 97,
+     "op_fv": 61.6,
+     "n_fv": 881,
+     "op_alle": 61.8,
+     "n_alle": 1910
+    },
+    "2024": {
+     "op_mott": 66.7,
+     "kp_mott": 57.3,
+     "n_mott": 113,
+     "op_fv": 60.4,
+     "n_fv": 999,
+     "op_alle": 60.6,
+     "n_alle": 3373
+    },
+    "2025": {
+     "op_mott": 65.5,
+     "kp_mott": 56.7,
+     "n_mott": 126,
+     "op_fv": 60.4,
+     "n_fv": 938,
+     "op_alle": 60.8,
+     "n_alle": 3557
+    }
+   }
+  },
+  "uib_medisin": {
+   "studieprogramkoder": [
+    "PRMEDISIN"
+   ],
+   "years": {
+    "2021": {
+     "op_mott": 66.0,
+     "kp_mott": 56.9,
+     "n_mott": 127,
+     "op_fv": 61.2,
+     "n_fv": 570,
+     "op_alle": 61.1,
+     "n_alle": 754
+    },
+    "2022": {
+     "op_mott": 66.4,
+     "kp_mott": 57.0,
+     "n_mott": 127,
+     "op_fv": 61.7,
+     "n_fv": 543,
+     "op_alle": 61.5,
+     "n_alle": 719
+    },
+    "2023": {
+     "op_mott": 65.9,
+     "kp_mott": 56.7,
+     "n_mott": 134,
+     "op_fv": 61.9,
+     "n_fv": 518,
+     "op_alle": 61.5,
+     "n_alle": 686
+    },
+    "2024": {
+     "op_mott": 65.6,
+     "kp_mott": 56.4,
+     "n_mott": 161,
+     "op_fv": 60.0,
+     "n_fv": 643,
+     "op_alle": 60.0,
+     "n_alle": 1356
+    },
+    "2025": {
+     "op_mott": 64.8,
+     "kp_mott": 55.7,
+     "n_mott": 189,
+     "op_fv": 60.7,
+     "n_fv": 575,
+     "op_alle": 60.6,
+     "n_alle": 1569
+    }
+   }
+  },
+  "ntnu_medisin": {
+   "studieprogramkoder": [
+    "CMED"
+   ],
+   "years": {
+    "2021": {
+     "op_mott": 66.9,
+     "kp_mott": 57.4,
+     "n_mott": 136,
+     "op_fv": 62.2,
+     "n_fv": 769,
+     "op_alle": 62.2,
+     "n_alle": 1104
+    },
+    "2022": {
+     "op_mott": 66.8,
+     "kp_mott": 57.7,
+     "n_mott": 134,
+     "op_fv": 60.4,
+     "n_fv": 969,
+     "op_alle": 60.4,
+     "n_alle": 2841
+    },
+    "2023": {
+     "op_mott": 67.1,
+     "kp_mott": 58.0,
+     "n_mott": 137,
+     "op_fv": 62.1,
+     "n_fv": 685,
+     "op_alle": 62.3,
+     "n_alle": 2002
+    },
+    "2024": {
+     "op_mott": 67.0,
+     "kp_mott": 57.2,
+     "n_mott": 161,
+     "op_fv": 62.3,
+     "n_fv": 633,
+     "op_alle": 62.6,
+     "n_alle": 2063
+    },
+    "2025": {
+     "op_mott": 66.2,
+     "kp_mott": 56.8,
+     "n_mott": 210,
+     "op_fv": 62.5,
+     "n_fv": 634,
+     "op_alle": 62.2,
+     "n_alle": 1978
+    }
+   }
+  },
+  "uit_medisin": {
+   "studieprogramkoder": [
+    "MEDISIN"
+   ],
+   "years": {
+    "2021": {
+     "op_mott": 62.5,
+     "kp_mott": 53.6,
+     "n_mott": 113,
+     "op_fv": 58.7,
+     "n_fv": 395,
+     "op_alle": 58.6,
+     "n_alle": 565
+    },
+    "2022": {
+     "op_mott": 62.5,
+     "kp_mott": 53.4,
+     "n_mott": 103,
+     "op_fv": 59.3,
+     "n_fv": 348,
+     "op_alle": 59.2,
+     "n_alle": 496
+    },
+    "2023": {
+     "op_mott": 60.9,
+     "kp_mott": 52.1,
+     "n_mott": 124,
+     "op_fv": 58.7,
+     "n_fv": 377,
+     "op_alle": 58.6,
+     "n_alle": 514
+    },
+    "2024": {
+     "op_mott": 59.8,
+     "kp_mott": 51.4,
+     "n_mott": 130,
+     "op_fv": 58.0,
+     "n_fv": 299,
+     "op_alle": 58.4,
+     "n_alle": 420
+    },
+    "2025": {
+     "op_mott": 58.4,
+     "kp_mott": 50.6,
+     "n_mott": 135,
+     "op_fv": 57.0,
+     "n_fv": 353,
+     "op_alle": 56.9,
+     "n_alle": 503
+    }
+   }
+  },
+  "nmbu_dyrepleie": {
+   "studieprogramkoder": [
+    "B-DYR"
+   ],
+   "years": {
+    "2021": {
+     "op_mott": 55.8,
+     "kp_mott": 46.9,
+     "n_mott": 24,
+     "op_fv": 51.5,
+     "n_fv": 59,
+     "op_alle": 53.7,
+     "n_alle": 193
+    },
+    "2022": {
+     "op_mott": 55.4,
+     "kp_mott": 47.3,
+     "n_mott": 28,
+     "op_fv": 53.1,
+     "n_fv": 45,
+     "op_alle": 54.1,
+     "n_alle": 155
+    },
+    "2023": {
+     "op_mott": 52.0,
+     "kp_mott": 44.0,
+     "n_mott": 25,
+     "op_fv": 53.1,
+     "n_fv": 32,
+     "op_alle": 53.6,
+     "n_alle": 149
+    },
+    "2024": {
+     "op_mott": 52.0,
+     "kp_mott": 44.8,
+     "n_mott": 27,
+     "op_fv": 51.0,
+     "n_fv": 37,
+     "op_alle": 54.4,
+     "n_alle": 140
+    },
+    "2025": {
+     "op_mott": 49.9,
+     "kp_mott": 42.2,
+     "n_mott": 38,
+     "op_fv": 52.2,
+     "n_fv": 41,
+     "op_alle": 53.1,
+     "n_alle": 144
+    }
+   }
+  },
+  "nord_dyrepleie": {
+   "studieprogramkoder": [
+    "BADYR"
+   ],
+   "years": {
+    "2021": {
+     "op_mott": 51.9,
+     "kp_mott": 46.2,
+     "n_mott": 32,
+     "op_fv": 46.1,
+     "n_fv": 181,
+     "op_alle": 46.2,
+     "n_alle": 372
+    },
+    "2022": {
+     "op_mott": 49.0,
+     "kp_mott": 43.8,
+     "n_mott": 30,
+     "op_fv": 45.4,
+     "n_fv": 141,
+     "op_alle": 46.0,
+     "n_alle": 258
+    },
+    "2023": {
+     "op_mott": 49.0,
+     "kp_mott": 43.7,
+     "n_mott": 39,
+     "op_fv": 46.0,
+     "n_fv": 134,
+     "op_alle": 46.3,
+     "n_alle": 251
+    },
+    "2024": {
+     "op_mott": 48.5,
+     "kp_mott": 42.7,
+     "n_mott": 33,
+     "op_fv": 46.0,
+     "n_fv": 106,
+     "op_alle": 45.5,
+     "n_alle": 198
+    },
+    "2025": {
+     "op_mott": 45.3,
+     "kp_mott": 40.2,
+     "n_mott": 43,
+     "op_fv": 46.4,
+     "n_fv": 84,
+     "op_alle": 45.8,
+     "n_alle": 167
+    }
+   }
+  }
+ }
+}

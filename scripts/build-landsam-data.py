@@ -53,6 +53,8 @@ NK_TILBUD = "Antall tilbud"
 FIELD_ORDER = ["alleS", "fvS", "plasser", "kvinner", "kvalifiserte", "tilbud", "pg_fv", "pg_ord"]
 # Bare for lokale opptak (DBH 379): ja-svar og møtt til studiestart. Skrives som valgfrie felt.
 EXTRA_FIELDS = ["akseptert", "mott"]
+# Opptakspoeng fra DBH 571 (Samordna-program): skrives som valgfrie felt ved siden av Y(...).
+POINT_FIELDS = ["op_mott", "kp_mott", "op_fv", "op_alle", "n_mott"]
 
 MISSING_TOKENS = {"", "-", "–", "NA"}
 
@@ -283,7 +285,19 @@ def build_years_for_local_entry(local_data: dict):
     return years_out
 
 
-def process_programkart(programkart, sokertall_index, poenggrenser_index):
+def merge_points(years: dict, points: dict | None) -> None:
+    """Legger DBH 571-snitt inn i årsradene (oppretter tomme rader der SO mangler året)."""
+    if not points:
+        return
+    for y, row in (points.get("years") or {}).items():
+        if y not in YEARS or not any(row.get(f) is not None for f in POINT_FIELDS):
+            continue
+        target = years.setdefault(y, {f: None for f in FIELD_ORDER})
+        for f in POINT_FIELDS:
+            target[f] = row.get(f)
+
+
+def process_programkart(programkart, sokertall_index, poenggrenser_index, points_index=None):
     """
     Returnerer (groups_out, summary_lines, warnings) hvor groups_out er en
     liste av dicts klare til å skrives ut som TS/JSON.
@@ -347,6 +361,7 @@ def process_programkart(programkart, sokertall_index, poenggrenser_index):
                         warnings.append(
                             f"{pid}: studiekode {studiekode} finnes i søkertall-kilden men ikke i poenggrense-kilden (Hovedopptak)"
                         )
+                merge_points(years, (points_index or {}).get(pid))
                 summary_lines.append(
                     f"  - {pid} ({prog.get('shortName', '')}, SO {studiekode or '?'}): år med data = {years_present or '(ingen)'}"
                 )
@@ -361,6 +376,8 @@ def process_programkart(programkart, sokertall_index, poenggrenser_index):
                     "type": prog.get("type", "master"),
                     "url": prog.get("url") or None,
                     "years": years,
+                    **({"poengFellesMed": (points_index or {})[pid]["delerDbhProgramMed"]}
+                       if source != "local" and ((points_index or {}).get(pid) or {}).get("delerDbhProgramMed") else {}),
                 }
             )
 
@@ -419,14 +436,19 @@ def render_year_call(values: dict) -> str:
     ]
     if any(values.get(f) is not None for f in EXTRA_FIELDS):
         parts += [fmt_int_or_null(values.get(f)) for f in EXTRA_FIELDS]
-    return "Y(" + ", ".join(parts) + ")"
+    call = "Y(" + ", ".join(parts) + ")"
+    pts = [(f, values.get(f)) for f in POINT_FIELDS if values.get(f) is not None]
+    if pts:
+        call = "{ ..." + call + ", " + ", ".join(
+            f"{f}: {int(v) if f.startswith('n_') else f'{v:.1f}'}" for f, v in pts) + " }"
+    return call
 
 
 def render_ts(groups_out, generated_date: str) -> str:
     lines = []
     lines.append(f"// GENERERT av scripts/build-landsam-data.py {generated_date} – ikke rediger for hånd.")
     lines.append(
-        "// Kilder: Samordna opptak programtabell 2026 (søkertall 2021–2026) og SO poenggrenserapport (Tableau) 2020–2026, hovedopptak."
+        "// Kilder: Samordna opptak programtabell 2026 (søkertall 2021–2026) og SO poenggrenserapport (Tableau) 2020–2026, hovedopptak; opptakspoeng (op_*/kp_*) fra DBH tabell 571."
     )
     lines.append("// 0 i poenggrense = alle kvalifiserte kom inn · null = data ikke tilgjengelig")
     lines.append("import type { FullAdmissionEntry, FullYearData } from './fullAdmissionData';")
@@ -477,6 +499,8 @@ def render_ts(groups_out, generated_date: str) -> str:
             )
             if entry.get("url"):
                 lines.append(f"        url: {ts_string(entry['url'])},")
+            if entry.get("poengFellesMed"):
+                lines.append(f"        poengFellesMed: [{', '.join(ts_string(i) for i in entry['poengFellesMed'])}],")
             lines.append("        years: {")
             for y in YEARS:
                 if y in entry["years"]:
@@ -508,6 +532,8 @@ def main():
     parser.add_argument("--sokertall", type=Path, default=DEFAULT_SOKERTALL)
     parser.add_argument("--poenggrenser", type=Path, default=DEFAULT_POENGGRENSER)
     parser.add_argument("--out", type=Path, default=DEFAULT_OUT)
+    parser.add_argument("--opptakspoeng", type=Path, default=None,
+                        help="DBH 571-snitt (standard: kilder/dbh571_opptakspoeng.json ved siden av programkartet)")
     args = parser.parse_args()
 
     if not args.programkart.exists():
@@ -523,11 +549,14 @@ def main():
     with open(args.programkart, encoding="utf-8") as f:
         programkart = json.load(f)
 
+    points_path = args.opptakspoeng or args.programkart.parent / "kilder" / "dbh571_opptakspoeng.json"
+    points_index = json.loads(points_path.read_text(encoding="utf-8"))["programs"] if points_path.exists() else {}
+
     sokertall_index, sokertall_names, sokertall_conflicts = load_sokertall(args.sokertall)
     poenggrenser_index, poenggrenser_conflicts = load_poenggrenser(args.poenggrenser)
 
     groups_out, summary_lines, warnings = process_programkart(
-        programkart, sokertall_index, poenggrenser_index
+        programkart, sokertall_index, poenggrenser_index, points_index
     )
 
     generated_date = date.today().isoformat()
@@ -543,6 +572,7 @@ def main():
     # ── stdout-oppsummering ──
     print(f"Skrev {args.out}")
     print(f"Skrev {json_out_path}")
+    print(f"Opptakspoeng (DBH 571): {len(points_index)} program fra {points_path.name if points_index else '(ingen fil)'}")
     for line in summary_lines:
         print(line)
 

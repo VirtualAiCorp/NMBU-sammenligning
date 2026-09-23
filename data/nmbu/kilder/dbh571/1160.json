@@ -1,0 +1,5937 @@
+{
+ "hentet": "2026-09-23",
+ "institusjonskode": "1160",
+ "kilde": "DBH/HKDIR tabell 571 «Gjennomsnittlige opptakspoeng for søkere», opptakstype N (Samordna opptak), https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData",
+ "motte": [
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-BALÆD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6281.20",
+   "Karakterpoeng": "5171.70",
+   "Søkere totalt": "148"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-BALÆD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2168.30",
+   "Karakterpoeng": "1774.30",
+   "Søkere totalt": "48"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-BALÆR",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "19897.00",
+   "Karakterpoeng": "17330.50",
+   "Søkere totalt": "463"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-BALÆR",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "4369.30",
+   "Karakterpoeng": "3829.80",
+   "Søkere totalt": "101"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-BARNEV",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "44414.80",
+   "Karakterpoeng": "39020.70",
+   "Søkere totalt": "1012"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-BARNEV",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3259.90",
+   "Karakterpoeng": "2892.90",
+   "Søkere totalt": "67"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-BIOKJE",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4238.90",
+   "Karakterpoeng": "3521.40",
+   "Søkere totalt": "83"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-BIOKJE",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1242.40",
+   "Karakterpoeng": "1033.90",
+   "Søkere totalt": "25"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-BYGG",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "8661.40",
+   "Karakterpoeng": "7026.90",
+   "Søkere totalt": "176"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-BYGG",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1537.70",
+   "Karakterpoeng": "1230.70",
+   "Søkere totalt": "33"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-BYSAM",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "25117.80",
+   "Karakterpoeng": "21195.80",
+   "Søkere totalt": "557"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-BYSAM",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1104.90",
+   "Karakterpoeng": "968.40",
+   "Søkere totalt": "21"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-DATA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "18326.30",
+   "Karakterpoeng": "14915.30",
+   "Søkere totalt": "371"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-DATA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "5179.60",
+   "Karakterpoeng": "4234.60",
+   "Søkere totalt": "106"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-ELEKTRO",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9772.10",
+   "Karakterpoeng": "8070.10",
+   "Søkere totalt": "200"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-ELEKTRO",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2208.20",
+   "Karakterpoeng": "1757.70",
+   "Søkere totalt": "45"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-ENERGI",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "8637.40",
+   "Karakterpoeng": "7095.40",
+   "Søkere totalt": "178"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-ENERGI",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1805.60",
+   "Karakterpoeng": "1483.10",
+   "Søkere totalt": "38"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-ESPRÅKL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4685.50",
+   "Karakterpoeng": "4105.00",
+   "Søkere totalt": "105"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-ESPRÅKL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1291.00",
+   "Karakterpoeng": "1141.50",
+   "Søkere totalt": "28"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-FJERMU",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "11427.00",
+   "Karakterpoeng": "9966.80",
+   "Søkere totalt": "255"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-FJERMU",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "976.30",
+   "Karakterpoeng": "871.80",
+   "Søkere totalt": "19"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-GEONRG",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4347.60",
+   "Karakterpoeng": "3564.10",
+   "Søkere totalt": "89"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-GEONRG",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "543.20",
+   "Karakterpoeng": "432.20",
+   "Søkere totalt": "11"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-HISTORIE",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "5602.10",
+   "Karakterpoeng": "4897.30",
+   "Søkere totalt": "128"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-HISTORIE",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1139.60",
+   "Karakterpoeng": "999.60",
+   "Søkere totalt": "26"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-HOTLED",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "34296.40",
+   "Karakterpoeng": "30789.90",
+   "Søkere totalt": "786"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-HOTLED",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3409.70",
+   "Karakterpoeng": "2958.20",
+   "Søkere totalt": "79"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-IDRETT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "15186.30",
+   "Karakterpoeng": "13455.80",
+   "Søkere totalt": "342"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-IDRETT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1732.60",
+   "Karakterpoeng": "1533.10",
+   "Søkere totalt": "36"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-JOURNAL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "20515.10",
+   "Karakterpoeng": "18108.10",
+   "Søkere totalt": "444"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-JOURNAL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "767.80",
+   "Karakterpoeng": "658.80",
+   "Søkere totalt": "15"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-KJEMIL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3069.70",
+   "Karakterpoeng": "2508.20",
+   "Søkere totalt": "62"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-KJEMIL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "706.20",
+   "Karakterpoeng": "571.20",
+   "Søkere totalt": "14"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-MASKIN",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4654.40",
+   "Karakterpoeng": "3765.40",
+   "Søkere totalt": "98"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-MASKIN",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1627.20",
+   "Karakterpoeng": "1343.20",
+   "Søkere totalt": "35"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-NSPRÅKL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2235.20",
+   "Karakterpoeng": "1913.70",
+   "Søkere totalt": "48"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-NSPRÅKL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "663.70",
+   "Karakterpoeng": "556.70",
+   "Søkere totalt": "15"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-PARAMED",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9209.40",
+   "Karakterpoeng": "7965.40",
+   "Søkere totalt": "181"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-PARAMED",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "925.20",
+   "Karakterpoeng": "823.70",
+   "Søkere totalt": "16"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-PSYKOL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "37512.20",
+   "Karakterpoeng": "32573.20",
+   "Søkere totalt": "795"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-PSYKOL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2346.10",
+   "Karakterpoeng": "2085.10",
+   "Søkere totalt": "43"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-REILED",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "15280.90",
+   "Karakterpoeng": "13515.40",
+   "Søkere totalt": "353"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-REILED",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2420.80",
+   "Karakterpoeng": "2149.30",
+   "Søkere totalt": "59"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-REL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3699.10",
+   "Karakterpoeng": "3220.60",
+   "Søkere totalt": "81"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-REL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "897.20",
+   "Karakterpoeng": "770.20",
+   "Søkere totalt": "23"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-RETVIT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "26584.60",
+   "Karakterpoeng": "23345.60",
+   "Søkere totalt": "551"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-RETVIT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1647.00",
+   "Karakterpoeng": "1450.00",
+   "Søkere totalt": "29"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-SOSIOL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "23422.60",
+   "Karakterpoeng": "20507.00",
+   "Søkere totalt": "535"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-SOSIOL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3318.10",
+   "Karakterpoeng": "2919.60",
+   "Søkere totalt": "73"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-SOSION",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "38592.70",
+   "Karakterpoeng": "33626.10",
+   "Søkere totalt": "859"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-SOSION",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2965.00",
+   "Karakterpoeng": "2655.00",
+   "Søkere totalt": "58"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-STATSVIT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "14986.10",
+   "Karakterpoeng": "12964.80",
+   "Søkere totalt": "335"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-STATSVIT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1807.90",
+   "Karakterpoeng": "1599.90",
+   "Søkere totalt": "37"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-SYKEPL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "38985.70",
+   "Karakterpoeng": "34656.70",
+   "Søkere totalt": "824"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-SYKEPL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "11136.70",
+   "Karakterpoeng": "9933.20",
+   "Søkere totalt": "218"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-TOLL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "105149.00",
+   "Karakterpoeng": "90767.90",
+   "Søkere totalt": "2394"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-TOLL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1786.30",
+   "Karakterpoeng": "1614.80",
+   "Søkere totalt": "32"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-ØKAD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "45753.00",
+   "Karakterpoeng": "39838.00",
+   "Søkere totalt": "1008"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-ØKAD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "8540.20",
+   "Karakterpoeng": "7547.70",
+   "Søkere totalt": "171"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "M-GLU1-7",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9027.20",
+   "Karakterpoeng": "8203.20",
+   "Søkere totalt": "184"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "M-GLU1-7",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3334.70",
+   "Karakterpoeng": "3016.20",
+   "Søkere totalt": "71"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "M-GLU5-10",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "14363.70",
+   "Karakterpoeng": "12873.70",
+   "Søkere totalt": "293"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "M-GLU5-10",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3301.30",
+   "Karakterpoeng": "2931.30",
+   "Søkere totalt": "69"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "M-INDØKG5",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6833.10",
+   "Karakterpoeng": "5524.10",
+   "Søkere totalt": "134"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "M-INDØKG5",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1805.10",
+   "Karakterpoeng": "1511.60",
+   "Søkere totalt": "34"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "M-KONMAT5",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2090.00",
+   "Karakterpoeng": "1683.00",
+   "Søkere totalt": "42"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "M-KONMAT5",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "615.50",
+   "Karakterpoeng": "483.50",
+   "Søkere totalt": "13"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "M-LEKTOR",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "8304.80",
+   "Karakterpoeng": "7338.80",
+   "Søkere totalt": "164"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "M-LEKTOR",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3332.10",
+   "Karakterpoeng": "3003.60",
+   "Søkere totalt": "69"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "M-MAFYS5",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1590.70",
+   "Karakterpoeng": "1313.20",
+   "Søkere totalt": "30"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "M-MAFYS5",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "703.40",
+   "Karakterpoeng": "581.90",
+   "Søkere totalt": "14"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "M-OFFSH5",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3170.60",
+   "Karakterpoeng": "2602.10",
+   "Søkere totalt": "63"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "M-OFFSH5",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "600.00",
+   "Karakterpoeng": "514.00",
+   "Søkere totalt": "12"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "Å-DRAMA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3460.80",
+   "Karakterpoeng": "2913.80",
+   "Søkere totalt": "74"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "Å-DRAMA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "605.60",
+   "Karakterpoeng": "508.10",
+   "Søkere totalt": "12"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "Å-ENGELSK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "10440.60",
+   "Karakterpoeng": "9061.60",
+   "Søkere totalt": "228"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "Å-ENGELSK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1661.80",
+   "Karakterpoeng": "1411.80",
+   "Søkere totalt": "35"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "Å-HISTORIE",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "10058.30",
+   "Karakterpoeng": "8687.30",
+   "Søkere totalt": "216"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "Å-HISTORIE",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1362.50",
+   "Karakterpoeng": "1195.00",
+   "Søkere totalt": "30"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "Å-IDR/KRO",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "14445.80",
+   "Karakterpoeng": "12862.30",
+   "Søkere totalt": "313"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "Å-IDR/KRO",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "904.20",
+   "Karakterpoeng": "826.20",
+   "Søkere totalt": "18"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "Å-KOM",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "25100.30",
+   "Karakterpoeng": "21317.60",
+   "Søkere totalt": "538"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "Å-KOM",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1686.40",
+   "Karakterpoeng": "1502.40",
+   "Søkere totalt": "32"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "Å-KRISREL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "5846.10",
+   "Karakterpoeng": "4929.60",
+   "Søkere totalt": "122"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "Å-KRISREL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1290.00",
+   "Karakterpoeng": "1059.50",
+   "Søkere totalt": "26"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "Å-KUNSTHÅN",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "5823.10",
+   "Karakterpoeng": "4958.60",
+   "Søkere totalt": "117"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "Å-KUNSTHÅN",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "540.80",
+   "Karakterpoeng": "476.80",
+   "Søkere totalt": "11"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "Å-MATEMA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3328.90",
+   "Karakterpoeng": "2729.40",
+   "Søkere totalt": "64"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "Å-MATEMA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "861.80",
+   "Karakterpoeng": "683.80",
+   "Søkere totalt": "16"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "Å-NORDISK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "5469.20",
+   "Karakterpoeng": "4467.20",
+   "Søkere totalt": "108"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "Å-NORDISK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "948.80",
+   "Karakterpoeng": "769.30",
+   "Søkere totalt": "18"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "Å-SOSIO",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "21963.80",
+   "Karakterpoeng": "19195.30",
+   "Søkere totalt": "476"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "Å-SOSIO",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1805.70",
+   "Karakterpoeng": "1603.70",
+   "Søkere totalt": "37"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-BALÆD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6026.30",
+   "Karakterpoeng": "4999.80",
+   "Søkere totalt": "142"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-BALÆD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2180.90",
+   "Karakterpoeng": "1753.90",
+   "Søkere totalt": "50"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-BALÆR",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "13888.40",
+   "Karakterpoeng": "12040.40",
+   "Søkere totalt": "316"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-BALÆR",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "4297.10",
+   "Karakterpoeng": "3737.10",
+   "Søkere totalt": "104"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-BARNEV",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "30511.80",
+   "Karakterpoeng": "27117.30",
+   "Søkere totalt": "682"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-BARNEV",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "4233.40",
+   "Karakterpoeng": "3729.40",
+   "Søkere totalt": "92"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-BATTEK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6216.60",
+   "Karakterpoeng": "5081.60",
+   "Søkere totalt": "125"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-BATTEK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1162.60",
+   "Karakterpoeng": "974.60",
+   "Søkere totalt": "24"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-BIOKJE",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3626.00",
+   "Karakterpoeng": "3068.00",
+   "Søkere totalt": "70"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-BIOKJE",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1133.80",
+   "Karakterpoeng": "960.30",
+   "Søkere totalt": "23"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-BYGG",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "7057.70",
+   "Karakterpoeng": "5780.20",
+   "Søkere totalt": "142"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-BYGG",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1428.90",
+   "Karakterpoeng": "1199.90",
+   "Søkere totalt": "30"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-BYSAM",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "13938.90",
+   "Karakterpoeng": "12200.40",
+   "Søkere totalt": "301"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-BYSAM",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1318.30",
+   "Karakterpoeng": "1150.80",
+   "Søkere totalt": "26"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-DATA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "10486.50",
+   "Karakterpoeng": "8692.50",
+   "Søkere totalt": "211"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-DATA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "4536.80",
+   "Karakterpoeng": "3637.30",
+   "Søkere totalt": "92"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-ELEKTRO",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9056.40",
+   "Karakterpoeng": "7432.90",
+   "Søkere totalt": "185"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-ELEKTRO",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2061.40",
+   "Karakterpoeng": "1652.90",
+   "Søkere totalt": "42"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-ENERGI",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "5196.50",
+   "Karakterpoeng": "4335.00",
+   "Søkere totalt": "108"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-ENERGI",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1639.60",
+   "Karakterpoeng": "1405.10",
+   "Søkere totalt": "34"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-ESPRÅKL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4131.70",
+   "Karakterpoeng": "3605.70",
+   "Søkere totalt": "92"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-ESPRÅKL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1287.60",
+   "Karakterpoeng": "1129.10",
+   "Søkere totalt": "31"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-FJERMU",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9002.30",
+   "Karakterpoeng": "7851.80",
+   "Søkere totalt": "195"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-FJERMU",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "876.50",
+   "Karakterpoeng": "771.00",
+   "Søkere totalt": "17"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-GEONRG",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3801.80",
+   "Karakterpoeng": "3158.80",
+   "Søkere totalt": "77"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-GEONRG",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "356.90",
+   "Karakterpoeng": "304.40",
+   "Søkere totalt": "7"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-HISTORIE",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "5803.30",
+   "Karakterpoeng": "5008.30",
+   "Søkere totalt": "131"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-HISTORIE",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1122.90",
+   "Karakterpoeng": "991.40",
+   "Søkere totalt": "26"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-HOTLED",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "31621.40",
+   "Karakterpoeng": "28372.40",
+   "Søkere totalt": "726"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-HOTLED",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3163.20",
+   "Karakterpoeng": "2853.70",
+   "Søkere totalt": "73"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-IDRETT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "15266.10",
+   "Karakterpoeng": "13761.10",
+   "Søkere totalt": "340"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-IDRETT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2522.00",
+   "Karakterpoeng": "2193.00",
+   "Søkere totalt": "51"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-JOURNAL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "19902.70",
+   "Karakterpoeng": "17743.70",
+   "Søkere totalt": "419"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-JOURNAL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1056.70",
+   "Karakterpoeng": "919.20",
+   "Søkere totalt": "21"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-KJEMIL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2693.90",
+   "Karakterpoeng": "2191.90",
+   "Søkere totalt": "53"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-KJEMIL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "582.40",
+   "Karakterpoeng": "471.90",
+   "Søkere totalt": "11"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-MASKIN",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4053.20",
+   "Karakterpoeng": "3355.20",
+   "Søkere totalt": "85"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-MASKIN",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1330.80",
+   "Karakterpoeng": "1079.30",
+   "Søkere totalt": "27"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-MEDTEK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6343.00",
+   "Karakterpoeng": "5226.70",
+   "Søkere totalt": "127"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-MEDTEK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "765.90",
+   "Karakterpoeng": "662.40",
+   "Søkere totalt": "15"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-NSPRÅKL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1834.30",
+   "Karakterpoeng": "1520.80",
+   "Søkere totalt": "38"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-NSPRÅKL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "254.50",
+   "Karakterpoeng": "201.50",
+   "Søkere totalt": "6"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-PARAMED",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2636.70",
+   "Karakterpoeng": "2308.70",
+   "Søkere totalt": "50"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-PARAMED",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1084.30",
+   "Karakterpoeng": "971.30",
+   "Søkere totalt": "19"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-PSYKOL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "30350.70",
+   "Karakterpoeng": "26616.20",
+   "Søkere totalt": "642"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-PSYKOL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2729.40",
+   "Karakterpoeng": "2407.40",
+   "Søkere totalt": "51"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-REILED",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "15950.50",
+   "Karakterpoeng": "14222.50",
+   "Søkere totalt": "370"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-REILED",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1662.40",
+   "Karakterpoeng": "1420.90",
+   "Søkere totalt": "39"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-REL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3765.90",
+   "Karakterpoeng": "3282.90",
+   "Søkere totalt": "85"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-REL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "631.60",
+   "Karakterpoeng": "538.10",
+   "Søkere totalt": "14"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-RETVIT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "25541.10",
+   "Karakterpoeng": "22852.60",
+   "Søkere totalt": "521"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-RETVIT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1367.00",
+   "Karakterpoeng": "1205.50",
+   "Søkere totalt": "24"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-SOSIOL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "19552.70",
+   "Karakterpoeng": "17251.70",
+   "Søkere totalt": "439"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-SOSIOL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3578.10",
+   "Karakterpoeng": "3105.60",
+   "Søkere totalt": "81"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-SOSION",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "28092.50",
+   "Karakterpoeng": "24535.00",
+   "Søkere totalt": "623"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-SOSION",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3988.20",
+   "Karakterpoeng": "3583.20",
+   "Søkere totalt": "80"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-STATSVIT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "13130.50",
+   "Karakterpoeng": "11626.00",
+   "Søkere totalt": "288"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-STATSVIT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1898.20",
+   "Karakterpoeng": "1693.70",
+   "Søkere totalt": "40"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-SYKEPL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "23394.90",
+   "Karakterpoeng": "20911.90",
+   "Søkere totalt": "490"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-SYKEPL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "12498.10",
+   "Karakterpoeng": "11182.60",
+   "Søkere totalt": "255"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-TOLL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "66070.70",
+   "Karakterpoeng": "58092.20",
+   "Søkere totalt": "1431"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-TOLL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2371.80",
+   "Karakterpoeng": "2101.30",
+   "Søkere totalt": "43"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-ØKAD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "39041.40",
+   "Karakterpoeng": "34437.90",
+   "Søkere totalt": "858"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-ØKAD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "9232.50",
+   "Karakterpoeng": "8178.00",
+   "Søkere totalt": "185"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "M-GLU1-7",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "10593.70",
+   "Karakterpoeng": "9620.20",
+   "Søkere totalt": "217"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "M-GLU1-7",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3704.50",
+   "Karakterpoeng": "3380.50",
+   "Søkere totalt": "77"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "M-GLU5-10",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "13783.60",
+   "Karakterpoeng": "12445.10",
+   "Søkere totalt": "278"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "M-GLU5-10",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3388.00",
+   "Karakterpoeng": "3053.50",
+   "Søkere totalt": "69"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "M-INDØKG5",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4220.60",
+   "Karakterpoeng": "3465.60",
+   "Søkere totalt": "83"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "M-INDØKG5",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1441.70",
+   "Karakterpoeng": "1215.20",
+   "Søkere totalt": "29"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "M-KONMAT5",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1408.40",
+   "Karakterpoeng": "1107.40",
+   "Søkere totalt": "29"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "M-KONMAT5",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "281.60",
+   "Karakterpoeng": "224.10",
+   "Søkere totalt": "6"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "M-LEKTOR",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "8272.50",
+   "Karakterpoeng": "7403.00",
+   "Søkere totalt": "165"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "M-LEKTOR",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3608.10",
+   "Karakterpoeng": "3235.60",
+   "Søkere totalt": "74"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "M-MAFYS5",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1873.00",
+   "Karakterpoeng": "1569.00",
+   "Søkere totalt": "36"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "M-MAFYS5",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "620.20",
+   "Karakterpoeng": "546.20",
+   "Søkere totalt": "12"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "Å-DRAMA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1922.40",
+   "Karakterpoeng": "1647.40",
+   "Søkere totalt": "41"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "Å-DRAMA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "491.90",
+   "Karakterpoeng": "464.40",
+   "Søkere totalt": "11"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "Å-ENGELSK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "7760.90",
+   "Karakterpoeng": "6822.90",
+   "Søkere totalt": "168"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "Å-ENGELSK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1573.80",
+   "Karakterpoeng": "1337.80",
+   "Søkere totalt": "35"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "Å-HISTORIE",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9316.50",
+   "Karakterpoeng": "8106.50",
+   "Søkere totalt": "197"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "Å-HISTORIE",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1168.00",
+   "Karakterpoeng": "986.50",
+   "Søkere totalt": "25"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "Å-KOM",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "10898.90",
+   "Karakterpoeng": "9552.40",
+   "Søkere totalt": "228"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "Å-KOM",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1412.60",
+   "Karakterpoeng": "1225.60",
+   "Søkere totalt": "28"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "Å-KRISREL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "5506.90",
+   "Karakterpoeng": "4703.40",
+   "Søkere totalt": "113"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "Å-KRISREL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1257.20",
+   "Karakterpoeng": "1034.70",
+   "Søkere totalt": "25"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "Å-KUNSTHÅN",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3851.70",
+   "Karakterpoeng": "3317.20",
+   "Søkere totalt": "80"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "Å-KUNSTHÅN",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "529.30",
+   "Karakterpoeng": "467.30",
+   "Søkere totalt": "10"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "Å-MATEMA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3004.50",
+   "Karakterpoeng": "2470.00",
+   "Søkere totalt": "58"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "Å-MATEMA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "944.00",
+   "Karakterpoeng": "776.50",
+   "Søkere totalt": "18"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "Å-NORDISK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4753.00",
+   "Karakterpoeng": "3913.50",
+   "Søkere totalt": "97"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "Å-NORDISK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "805.30",
+   "Karakterpoeng": "660.30",
+   "Søkere totalt": "16"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-BALÆD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4587.40",
+   "Karakterpoeng": "3783.40",
+   "Søkere totalt": "103"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-BALÆD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1840.00",
+   "Karakterpoeng": "1516.00",
+   "Søkere totalt": "42"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-BALÆR",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9956.00",
+   "Karakterpoeng": "8596.50",
+   "Søkere totalt": "225"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-BALÆR",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2848.20",
+   "Karakterpoeng": "2491.20",
+   "Søkere totalt": "69"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-BARNEV",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "24481.10",
+   "Karakterpoeng": "21556.60",
+   "Søkere totalt": "557"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-BARNEV",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3780.60",
+   "Karakterpoeng": "3327.60",
+   "Søkere totalt": "84"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-BATTEK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "5596.50",
+   "Karakterpoeng": "4655.50",
+   "Søkere totalt": "112"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-BATTEK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "904.50",
+   "Karakterpoeng": "748.00",
+   "Søkere totalt": "19"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-BIOKJE",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3538.00",
+   "Karakterpoeng": "2977.50",
+   "Søkere totalt": "69"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-BIOKJE",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1098.60",
+   "Karakterpoeng": "942.60",
+   "Søkere totalt": "22"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-BYGG",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "8449.20",
+   "Karakterpoeng": "6968.20",
+   "Søkere totalt": "171"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-BYGG",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1385.80",
+   "Karakterpoeng": "1126.80",
+   "Søkere totalt": "27"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-BYSAM",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "14471.20",
+   "Karakterpoeng": "12643.40",
+   "Søkere totalt": "308"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-BYSAM",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1708.40",
+   "Karakterpoeng": "1504.40",
+   "Søkere totalt": "34"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-DATA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9702.60",
+   "Karakterpoeng": "7889.60",
+   "Søkere totalt": "191"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-DATA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "4668.00",
+   "Karakterpoeng": "3805.00",
+   "Søkere totalt": "97"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-DIGSERV",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "16042.50",
+   "Karakterpoeng": "13941.50",
+   "Søkere totalt": "374"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-DIGSERV",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2394.50",
+   "Karakterpoeng": "2108.00",
+   "Søkere totalt": "51"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-ELEKTRO",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "5224.30",
+   "Karakterpoeng": "4256.80",
+   "Søkere totalt": "107"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-ELEKTRO",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1482.60",
+   "Karakterpoeng": "1203.10",
+   "Søkere totalt": "31"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-ENERGI",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "5345.90",
+   "Karakterpoeng": "4444.90",
+   "Søkere totalt": "110"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-ENERGI",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1711.00",
+   "Karakterpoeng": "1437.50",
+   "Søkere totalt": "36"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-ESPRÅKL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3630.40",
+   "Karakterpoeng": "3142.40",
+   "Søkere totalt": "79"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-ESPRÅKL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "869.10",
+   "Karakterpoeng": "719.60",
+   "Søkere totalt": "19"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-FJERMU",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6944.90",
+   "Karakterpoeng": "6079.90",
+   "Søkere totalt": "149"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-FJERMU",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "795.30",
+   "Karakterpoeng": "702.80",
+   "Søkere totalt": "16"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-HISTORIE",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3386.10",
+   "Karakterpoeng": "2901.60",
+   "Søkere totalt": "75"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-HISTORIE",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1131.00",
+   "Karakterpoeng": "955.50",
+   "Søkere totalt": "27"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-HOTLED",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "26690.30",
+   "Karakterpoeng": "23997.30",
+   "Søkere totalt": "605"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-HOTLED",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3067.10",
+   "Karakterpoeng": "2675.60",
+   "Søkere totalt": "73"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-IDRETT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9235.50",
+   "Karakterpoeng": "8225.20",
+   "Søkere totalt": "198"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-IDRETT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1694.50",
+   "Karakterpoeng": "1499.50",
+   "Søkere totalt": "37"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-JOURNAL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "16234.90",
+   "Karakterpoeng": "14743.40",
+   "Søkere totalt": "346"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-JOURNAL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1015.10",
+   "Karakterpoeng": "919.10",
+   "Søkere totalt": "20"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-KJEMIL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2598.70",
+   "Karakterpoeng": "2159.20",
+   "Søkere totalt": "50"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-KJEMIL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "563.80",
+   "Karakterpoeng": "471.30",
+   "Søkere totalt": "11"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-MASKIN",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "5965.20",
+   "Karakterpoeng": "4903.70",
+   "Søkere totalt": "124"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-MASKIN",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1341.60",
+   "Karakterpoeng": "1145.10",
+   "Søkere totalt": "27"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-MEDTEK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4061.70",
+   "Karakterpoeng": "3317.70",
+   "Søkere totalt": "78"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-MEDTEK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "700.40",
+   "Karakterpoeng": "562.90",
+   "Søkere totalt": "14"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-NSPRÅKL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1570.90",
+   "Karakterpoeng": "1322.90",
+   "Søkere totalt": "33"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-NSPRÅKL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "137.90",
+   "Karakterpoeng": "111.90",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-PARAMED",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2148.20",
+   "Karakterpoeng": "1862.20",
+   "Søkere totalt": "44"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-PARAMED",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "980.80",
+   "Karakterpoeng": "871.30",
+   "Søkere totalt": "17"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-PSYKOL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "32291.20",
+   "Karakterpoeng": "28373.20",
+   "Søkere totalt": "683"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-PSYKOL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1985.90",
+   "Karakterpoeng": "1747.90",
+   "Søkere totalt": "36"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-REILED",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "13800.60",
+   "Karakterpoeng": "12225.10",
+   "Søkere totalt": "311"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-REILED",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1934.40",
+   "Karakterpoeng": "1667.40",
+   "Søkere totalt": "46"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-REL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3123.80",
+   "Karakterpoeng": "2625.30",
+   "Søkere totalt": "66"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-REL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "184.90",
+   "Karakterpoeng": "153.40",
+   "Søkere totalt": "4"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-RETVIT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "28807.20",
+   "Karakterpoeng": "25725.70",
+   "Søkere totalt": "586"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-RETVIT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1754.20",
+   "Karakterpoeng": "1504.20",
+   "Søkere totalt": "29"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-SFO-D",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "7721.00",
+   "Karakterpoeng": "6266.50",
+   "Søkere totalt": "178"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-SFO-D",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "840.00",
+   "Karakterpoeng": "701.00",
+   "Søkere totalt": "17"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-SOSIOL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "16948.10",
+   "Karakterpoeng": "14886.60",
+   "Søkere totalt": "383"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-SOSIOL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2640.20",
+   "Karakterpoeng": "2353.20",
+   "Søkere totalt": "59"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-SOSION",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "26624.70",
+   "Karakterpoeng": "23327.20",
+   "Søkere totalt": "594"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-SOSION",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3473.10",
+   "Karakterpoeng": "3104.10",
+   "Søkere totalt": "70"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-STATSVIT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "12976.90",
+   "Karakterpoeng": "11391.90",
+   "Søkere totalt": "279"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-STATSVIT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1834.00",
+   "Karakterpoeng": "1644.50",
+   "Søkere totalt": "38"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-SYKEPL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "19648.00",
+   "Karakterpoeng": "17616.00",
+   "Søkere totalt": "408"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-SYKEPL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "11048.40",
+   "Karakterpoeng": "9832.40",
+   "Søkere totalt": "234"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-TOLL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "55696.40",
+   "Karakterpoeng": "48293.40",
+   "Søkere totalt": "1173"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-TOLL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2183.70",
+   "Karakterpoeng": "1944.70",
+   "Søkere totalt": "39"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-ØKAD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "37713.00",
+   "Karakterpoeng": "33467.00",
+   "Søkere totalt": "831"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-ØKAD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "8812.30",
+   "Karakterpoeng": "7738.30",
+   "Søkere totalt": "172"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "M-GLU1-7",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6486.60",
+   "Karakterpoeng": "5863.10",
+   "Søkere totalt": "132"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "M-GLU1-7",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2355.30",
+   "Karakterpoeng": "2136.80",
+   "Søkere totalt": "48"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "M-GLU5-10",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9552.90",
+   "Karakterpoeng": "8661.90",
+   "Søkere totalt": "192"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "M-GLU5-10",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2277.30",
+   "Karakterpoeng": "2053.80",
+   "Søkere totalt": "46"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "M-INDØKG5",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3497.40",
+   "Karakterpoeng": "2855.90",
+   "Søkere totalt": "67"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "M-INDØKG5",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2240.30",
+   "Karakterpoeng": "1811.80",
+   "Søkere totalt": "44"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "M-LEKTOR",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4976.40",
+   "Karakterpoeng": "4488.40",
+   "Søkere totalt": "100"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "M-LEKTOR",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2087.30",
+   "Karakterpoeng": "1868.30",
+   "Søkere totalt": "42"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "M-LEKTREA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1876.80",
+   "Karakterpoeng": "1592.80",
+   "Søkere totalt": "36"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "M-LEKTREA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "484.20",
+   "Karakterpoeng": "404.20",
+   "Søkere totalt": "9"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "M-MAFYS5",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2400.20",
+   "Karakterpoeng": "2004.20",
+   "Søkere totalt": "44"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "M-MAFYS5",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "663.60",
+   "Karakterpoeng": "532.60",
+   "Søkere totalt": "12"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "Å-DRAMA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2694.30",
+   "Karakterpoeng": "2238.30",
+   "Søkere totalt": "55"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "Å-DRAMA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "740.10",
+   "Karakterpoeng": "639.10",
+   "Søkere totalt": "15"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "Å-ENGELSK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "5780.20",
+   "Karakterpoeng": "4987.70",
+   "Søkere totalt": "121"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "Å-ENGELSK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1322.90",
+   "Karakterpoeng": "1116.90",
+   "Søkere totalt": "28"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "Å-HISTORIE",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "7414.60",
+   "Karakterpoeng": "6529.60",
+   "Søkere totalt": "156"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "Å-HISTORIE",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1006.40",
+   "Karakterpoeng": "814.90",
+   "Søkere totalt": "22"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "Å-IDR/KRO",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9457.00",
+   "Karakterpoeng": "8308.00",
+   "Søkere totalt": "204"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "Å-IDR/KRO",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "579.80",
+   "Karakterpoeng": "514.30",
+   "Søkere totalt": "11"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "Å-KOM",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9077.70",
+   "Karakterpoeng": "7847.70",
+   "Søkere totalt": "190"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "Å-KOM",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1671.20",
+   "Karakterpoeng": "1498.20",
+   "Søkere totalt": "35"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "Å-KRISREL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4163.90",
+   "Karakterpoeng": "3489.90",
+   "Søkere totalt": "84"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "Å-KRISREL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1235.40",
+   "Karakterpoeng": "1034.40",
+   "Søkere totalt": "25"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "Å-KUNSTHÅN",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4035.40",
+   "Karakterpoeng": "3444.90",
+   "Søkere totalt": "83"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "Å-KUNSTHÅN",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "337.50",
+   "Karakterpoeng": "287.50",
+   "Søkere totalt": "6"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "Å-MATEMA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3252.30",
+   "Karakterpoeng": "2682.80",
+   "Søkere totalt": "60"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "Å-MATEMA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1075.50",
+   "Karakterpoeng": "894.50",
+   "Søkere totalt": "20"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "Å-NORDISK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4231.40",
+   "Karakterpoeng": "3538.90",
+   "Søkere totalt": "83"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "Å-NORDISK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1192.90",
+   "Karakterpoeng": "954.90",
+   "Søkere totalt": "24"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-BALÆD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4766.20",
+   "Karakterpoeng": "3992.20",
+   "Søkere totalt": "107"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-BALÆD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2146.10",
+   "Karakterpoeng": "1789.60",
+   "Søkere totalt": "47"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-BALÆR",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9919.60",
+   "Karakterpoeng": "8685.60",
+   "Søkere totalt": "226"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-BALÆR",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2818.10",
+   "Karakterpoeng": "2494.10",
+   "Søkere totalt": "66"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-BARNEV",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "25861.30",
+   "Karakterpoeng": "23260.80",
+   "Søkere totalt": "591"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-BARNEV",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "4387.40",
+   "Karakterpoeng": "3953.90",
+   "Søkere totalt": "95"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-BATTEK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "5971.70",
+   "Karakterpoeng": "4943.70",
+   "Søkere totalt": "121"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-BATTEK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "202.60",
+   "Karakterpoeng": "157.60",
+   "Søkere totalt": "4"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-BIOKJE",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3016.90",
+   "Karakterpoeng": "2579.40",
+   "Søkere totalt": "59"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-BIOKJE",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1309.90",
+   "Karakterpoeng": "1112.90",
+   "Søkere totalt": "27"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-BYGG",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9182.10",
+   "Karakterpoeng": "7650.60",
+   "Søkere totalt": "186"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-BYGG",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1183.10",
+   "Karakterpoeng": "982.60",
+   "Søkere totalt": "25"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-BYSAM",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "17061.80",
+   "Karakterpoeng": "14924.30",
+   "Søkere totalt": "368"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-BYSAM",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1705.50",
+   "Karakterpoeng": "1523.50",
+   "Søkere totalt": "35"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-DATA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "12137.00",
+   "Karakterpoeng": "9865.00",
+   "Søkere totalt": "242"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-DATA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "5205.40",
+   "Karakterpoeng": "4266.40",
+   "Søkere totalt": "105"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-DIGSERV",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "15127.10",
+   "Karakterpoeng": "13404.60",
+   "Søkere totalt": "337"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-DIGSERV",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2404.60",
+   "Karakterpoeng": "2106.10",
+   "Søkere totalt": "52"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-ELEKTRO",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "7302.50",
+   "Karakterpoeng": "6077.50",
+   "Søkere totalt": "146"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-ELEKTRO",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1699.50",
+   "Karakterpoeng": "1419.00",
+   "Søkere totalt": "34"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-ENERGI",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6821.90",
+   "Karakterpoeng": "5757.90",
+   "Søkere totalt": "136"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-ENERGI",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2584.40",
+   "Karakterpoeng": "2155.90",
+   "Søkere totalt": "53"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-ESPRÅKL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3608.60",
+   "Karakterpoeng": "3182.60",
+   "Søkere totalt": "79"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-ESPRÅKL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1088.20",
+   "Karakterpoeng": "918.70",
+   "Søkere totalt": "25"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-FJERMU",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6147.50",
+   "Karakterpoeng": "5388.00",
+   "Søkere totalt": "133"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-FJERMU",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "921.00",
+   "Karakterpoeng": "823.50",
+   "Søkere totalt": "20"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-HISTORIE",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4994.30",
+   "Karakterpoeng": "4336.80",
+   "Søkere totalt": "109"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-HISTORIE",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1202.40",
+   "Karakterpoeng": "1000.40",
+   "Søkere totalt": "26"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-HOTLED",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "26060.30",
+   "Karakterpoeng": "23454.80",
+   "Søkere totalt": "594"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-HOTLED",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3569.90",
+   "Karakterpoeng": "3157.90",
+   "Søkere totalt": "83"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-IDRETT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "8685.30",
+   "Karakterpoeng": "7831.80",
+   "Søkere totalt": "190"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-IDRETT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1750.70",
+   "Karakterpoeng": "1567.70",
+   "Søkere totalt": "41"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-JOURNAL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "19987.60",
+   "Karakterpoeng": "18129.60",
+   "Søkere totalt": "426"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-JOURNAL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "796.10",
+   "Karakterpoeng": "697.10",
+   "Søkere totalt": "16"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-KJEMIL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1656.60",
+   "Karakterpoeng": "1356.60",
+   "Søkere totalt": "32"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-KJEMIL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "293.50",
+   "Karakterpoeng": "238.00",
+   "Søkere totalt": "6"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-MASKIN",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "5810.50",
+   "Karakterpoeng": "4918.00",
+   "Søkere totalt": "118"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-MASKIN",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1704.80",
+   "Karakterpoeng": "1441.80",
+   "Søkere totalt": "35"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-MEDTEK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4935.90",
+   "Karakterpoeng": "3999.40",
+   "Søkere totalt": "96"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-MEDTEK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "825.40",
+   "Karakterpoeng": "704.90",
+   "Søkere totalt": "16"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-NSPRÅKL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1521.40",
+   "Karakterpoeng": "1283.40",
+   "Søkere totalt": "31"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-NSPRÅKL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "229.80",
+   "Karakterpoeng": "190.80",
+   "Søkere totalt": "5"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-PARAMED",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3486.90",
+   "Karakterpoeng": "3104.40",
+   "Søkere totalt": "67"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-PARAMED",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1134.90",
+   "Karakterpoeng": "993.40",
+   "Søkere totalt": "20"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-PSYKOL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "34212.20",
+   "Karakterpoeng": "30348.60",
+   "Søkere totalt": "714"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-PSYKOL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1941.00",
+   "Karakterpoeng": "1698.00",
+   "Søkere totalt": "35"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-REILED",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "13918.10",
+   "Karakterpoeng": "12478.60",
+   "Søkere totalt": "320"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-REILED",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1589.10",
+   "Karakterpoeng": "1421.60",
+   "Søkere totalt": "38"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-REL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2631.60",
+   "Karakterpoeng": "2290.60",
+   "Søkere totalt": "57"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-REL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "257.20",
+   "Karakterpoeng": "226.70",
+   "Søkere totalt": "6"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-RETVIT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "31267.70",
+   "Karakterpoeng": "28041.20",
+   "Søkere totalt": "628"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-RETVIT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1979.10",
+   "Karakterpoeng": "1740.60",
+   "Søkere totalt": "33"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-SFO-D",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3393.10",
+   "Karakterpoeng": "2816.10",
+   "Søkere totalt": "75"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-SFO-D",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "559.10",
+   "Karakterpoeng": "454.10",
+   "Søkere totalt": "13"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-SOSIOL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "16830.20",
+   "Karakterpoeng": "15115.70",
+   "Søkere totalt": "379"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-SOSIOL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2531.40",
+   "Karakterpoeng": "2182.90",
+   "Søkere totalt": "59"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-SOSION",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "27851.50",
+   "Karakterpoeng": "24893.50",
+   "Søkere totalt": "626"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-SOSION",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3108.70",
+   "Karakterpoeng": "2752.20",
+   "Søkere totalt": "61"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-STATSVIT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "14864.30",
+   "Karakterpoeng": "13332.80",
+   "Søkere totalt": "322"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-STATSVIT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1915.10",
+   "Karakterpoeng": "1685.60",
+   "Søkere totalt": "39"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-SYKEPL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "19460.20",
+   "Karakterpoeng": "17511.20",
+   "Søkere totalt": "405"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-SYKEPL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "10335.00",
+   "Karakterpoeng": "9312.50",
+   "Søkere totalt": "222"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-TOLL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "64581.90",
+   "Karakterpoeng": "56134.40",
+   "Søkere totalt": "1362"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-TOLL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2989.70",
+   "Karakterpoeng": "2611.70",
+   "Søkere totalt": "53"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-ØKAD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "41234.00",
+   "Karakterpoeng": "36745.00",
+   "Søkere totalt": "894"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-ØKAD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "7544.60",
+   "Karakterpoeng": "6661.60",
+   "Søkere totalt": "148"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "M-GLU1-7",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6901.50",
+   "Karakterpoeng": "6293.50",
+   "Søkere totalt": "141"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "M-GLU1-7",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "984.30",
+   "Karakterpoeng": "915.80",
+   "Søkere totalt": "20"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "M-GLU5-10",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6314.60",
+   "Karakterpoeng": "5767.60",
+   "Søkere totalt": "130"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "M-GLU5-10",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1521.20",
+   "Karakterpoeng": "1358.20",
+   "Søkere totalt": "30"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "M-INDØKG5",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4263.30",
+   "Karakterpoeng": "3523.80",
+   "Søkere totalt": "81"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "M-INDØKG5",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2493.70",
+   "Karakterpoeng": "2056.20",
+   "Søkere totalt": "48"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "M-LEKTOR",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4249.00",
+   "Karakterpoeng": "3874.00",
+   "Søkere totalt": "84"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "M-LEKTOR",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1628.10",
+   "Karakterpoeng": "1511.80",
+   "Søkere totalt": "35"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "M-LEKTREA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1664.90",
+   "Karakterpoeng": "1389.90",
+   "Søkere totalt": "31"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "M-LEKTREA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "170.30",
+   "Karakterpoeng": "143.30",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "M-MAFYS5",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2165.70",
+   "Karakterpoeng": "1817.70",
+   "Søkere totalt": "42"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "M-MAFYS5",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "749.00",
+   "Karakterpoeng": "617.50",
+   "Søkere totalt": "14"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-DRAMA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2386.40",
+   "Karakterpoeng": "1995.90",
+   "Søkere totalt": "48"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-DRAMA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "405.00",
+   "Karakterpoeng": "333.50",
+   "Søkere totalt": "8"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-ENGELSK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6492.50",
+   "Karakterpoeng": "5611.00",
+   "Søkere totalt": "137"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-ENGELSK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1324.50",
+   "Karakterpoeng": "1149.00",
+   "Søkere totalt": "28"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-HISTORIE",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6739.20",
+   "Karakterpoeng": "5898.70",
+   "Søkere totalt": "141"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-HISTORIE",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1308.90",
+   "Karakterpoeng": "1129.90",
+   "Søkere totalt": "28"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-IDR/KRO",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9431.50",
+   "Karakterpoeng": "8489.00",
+   "Søkere totalt": "203"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-IDR/KRO",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "869.10",
+   "Karakterpoeng": "771.10",
+   "Søkere totalt": "18"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-KOM",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "10825.50",
+   "Karakterpoeng": "9423.50",
+   "Søkere totalt": "224"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-KOM",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1627.40",
+   "Karakterpoeng": "1377.90",
+   "Søkere totalt": "35"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-KRISREL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "5216.70",
+   "Karakterpoeng": "4494.20",
+   "Søkere totalt": "104"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-KRISREL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "948.90",
+   "Karakterpoeng": "772.90",
+   "Søkere totalt": "18"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-KUNSTHÅN",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3814.60",
+   "Karakterpoeng": "3253.60",
+   "Søkere totalt": "80"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-KUNSTHÅN",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "389.50",
+   "Karakterpoeng": "350.00",
+   "Søkere totalt": "8"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-MATEMA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1984.60",
+   "Karakterpoeng": "1619.60",
+   "Søkere totalt": "38"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-MATEMA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1001.50",
+   "Karakterpoeng": "793.00",
+   "Søkere totalt": "18"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-MUSIKK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2049.10",
+   "Karakterpoeng": "1718.60",
+   "Søkere totalt": "42"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-MUSIKK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "331.80",
+   "Karakterpoeng": "288.80",
+   "Søkere totalt": "8"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-NORDISK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4054.90",
+   "Karakterpoeng": "3407.90",
+   "Søkere totalt": "82"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-NORDISK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "825.70",
+   "Karakterpoeng": "694.20",
+   "Søkere totalt": "16"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-REATEK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3400.50",
+   "Karakterpoeng": "2806.00",
+   "Søkere totalt": "65"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-REATEK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "705.20",
+   "Karakterpoeng": "595.70",
+   "Søkere totalt": "14"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-ØKONOMI",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "33190.80",
+   "Karakterpoeng": "28930.80",
+   "Søkere totalt": "717"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-ØKONOMI",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2430.90",
+   "Karakterpoeng": "2116.90",
+   "Søkere totalt": "45"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-BALÆD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3870.60",
+   "Karakterpoeng": "3243.10",
+   "Søkere totalt": "87"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-BALÆD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1287.70",
+   "Karakterpoeng": "1074.80",
+   "Søkere totalt": "28"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-BALÆR",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9314.10",
+   "Karakterpoeng": "8243.70",
+   "Søkere totalt": "209"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-BALÆR",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1497.30",
+   "Karakterpoeng": "1304.30",
+   "Søkere totalt": "36"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-BARNEV",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "23173.80",
+   "Karakterpoeng": "20928.30",
+   "Søkere totalt": "528"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-BARNEV",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "5025.70",
+   "Karakterpoeng": "4501.20",
+   "Søkere totalt": "119"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-BIOKJE",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3457.60",
+   "Karakterpoeng": "2911.10",
+   "Søkere totalt": "71"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-BIOKJE",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1049.30",
+   "Karakterpoeng": "839.80",
+   "Søkere totalt": "21"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-BYGG",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "13057.70",
+   "Karakterpoeng": "11046.70",
+   "Søkere totalt": "270"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-BYGG",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1962.60",
+   "Karakterpoeng": "1612.10",
+   "Søkere totalt": "41"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-BYSAM",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "15668.40",
+   "Karakterpoeng": "13847.40",
+   "Søkere totalt": "340"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-BYSAM",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1818.40",
+   "Karakterpoeng": "1597.40",
+   "Søkere totalt": "36"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-DATA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "8659.60",
+   "Karakterpoeng": "7049.10",
+   "Søkere totalt": "176"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-DATA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3612.50",
+   "Karakterpoeng": "2930.00",
+   "Søkere totalt": "73"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-DIGSERV",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "18534.40",
+   "Karakterpoeng": "16181.90",
+   "Søkere totalt": "417"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-DIGSERV",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3453.60",
+   "Karakterpoeng": "2967.10",
+   "Søkere totalt": "78"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-ELEKTRO",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6241.90",
+   "Karakterpoeng": "5198.90",
+   "Søkere totalt": "126"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-ELEKTRO",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1832.20",
+   "Karakterpoeng": "1491.70",
+   "Søkere totalt": "36"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-ENERGI",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "7218.40",
+   "Karakterpoeng": "6072.40",
+   "Søkere totalt": "148"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-ENERGI",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3705.80",
+   "Karakterpoeng": "3170.30",
+   "Søkere totalt": "77"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-ESPRÅKL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2910.20",
+   "Karakterpoeng": "2540.70",
+   "Søkere totalt": "62"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-ESPRÅKL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "808.70",
+   "Karakterpoeng": "663.70",
+   "Søkere totalt": "17"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-FJERMU",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "10508.60",
+   "Karakterpoeng": "9393.60",
+   "Søkere totalt": "235"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-FJERMU",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "768.10",
+   "Karakterpoeng": "682.10",
+   "Søkere totalt": "15"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-HISTORIE",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4868.50",
+   "Karakterpoeng": "4293.50",
+   "Søkere totalt": "105"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-HISTORIE",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "887.00",
+   "Karakterpoeng": "755.00",
+   "Søkere totalt": "19"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-HOTLED",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "20992.50",
+   "Karakterpoeng": "18953.00",
+   "Søkere totalt": "481"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-HOTLED",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2478.30",
+   "Karakterpoeng": "2220.30",
+   "Søkere totalt": "58"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-IDRETT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "10049.40",
+   "Karakterpoeng": "9006.90",
+   "Søkere totalt": "225"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-IDRETT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1472.70",
+   "Karakterpoeng": "1332.70",
+   "Søkere totalt": "35"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-JOURNAL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "18782.30",
+   "Karakterpoeng": "17123.80",
+   "Søkere totalt": "398"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-JOURNAL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1438.60",
+   "Karakterpoeng": "1284.60",
+   "Søkere totalt": "30"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-KJEMIL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2884.80",
+   "Karakterpoeng": "2370.30",
+   "Søkere totalt": "57"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-KJEMIL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "366.80",
+   "Karakterpoeng": "303.80",
+   "Søkere totalt": "7"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-MASKIN",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6235.80",
+   "Karakterpoeng": "5249.80",
+   "Søkere totalt": "130"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-MASKIN",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2065.90",
+   "Karakterpoeng": "1762.40",
+   "Søkere totalt": "43"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-MEDTEK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4952.00",
+   "Karakterpoeng": "4108.50",
+   "Søkere totalt": "98"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-MEDTEK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "675.10",
+   "Karakterpoeng": "562.10",
+   "Søkere totalt": "14"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-NSPRÅKL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "891.90",
+   "Karakterpoeng": "772.40",
+   "Søkere totalt": "18"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-NSPRÅKL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "334.40",
+   "Karakterpoeng": "276.40",
+   "Søkere totalt": "7"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-PARAMED",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2675.40",
+   "Karakterpoeng": "2345.90",
+   "Søkere totalt": "53"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-PARAMED",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1183.90",
+   "Karakterpoeng": "1044.40",
+   "Søkere totalt": "21"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-PSYKOL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "26490.00",
+   "Karakterpoeng": "23694.00",
+   "Søkere totalt": "563"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-PSYKOL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2161.10",
+   "Karakterpoeng": "1908.60",
+   "Søkere totalt": "40"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-REL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2078.60",
+   "Karakterpoeng": "1863.10",
+   "Søkere totalt": "46"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-REL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "55.30",
+   "Karakterpoeng": "45.30",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-RETVIT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "30458.90",
+   "Karakterpoeng": "27429.40",
+   "Søkere totalt": "618"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-RETVIT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2840.00",
+   "Karakterpoeng": "2515.00",
+   "Søkere totalt": "48"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-SFO-D",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3779.20",
+   "Karakterpoeng": "3145.20",
+   "Søkere totalt": "85"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-SFO-D",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "608.50",
+   "Karakterpoeng": "498.50",
+   "Søkere totalt": "14"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-SOSIOL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "16013.20",
+   "Karakterpoeng": "14203.70",
+   "Søkere totalt": "360"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-SOSIOL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2235.50",
+   "Karakterpoeng": "1969.00",
+   "Søkere totalt": "54"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-SOSION",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "23281.70",
+   "Karakterpoeng": "20845.20",
+   "Søkere totalt": "525"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-SOSION",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3608.40",
+   "Karakterpoeng": "3179.90",
+   "Søkere totalt": "72"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-STATSVIT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "14174.60",
+   "Karakterpoeng": "12823.60",
+   "Søkere totalt": "306"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-STATSVIT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2218.80",
+   "Karakterpoeng": "2019.30",
+   "Søkere totalt": "45"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-SYKEPL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "36362.30",
+   "Karakterpoeng": "32142.90",
+   "Søkere totalt": "837"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-SYKEPL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "10929.50",
+   "Karakterpoeng": "9685.00",
+   "Søkere totalt": "227"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-TOLL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "56357.70",
+   "Karakterpoeng": "49338.70",
+   "Søkere totalt": "1190"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-TOLL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2417.50",
+   "Karakterpoeng": "2132.00",
+   "Søkere totalt": "43"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-ØKAD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "42200.50",
+   "Karakterpoeng": "37701.50",
+   "Søkere totalt": "929"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-ØKAD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "8026.00",
+   "Karakterpoeng": "7074.50",
+   "Søkere totalt": "158"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "M-GLU1-7",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "11539.50",
+   "Karakterpoeng": "10409.00",
+   "Søkere totalt": "256"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "M-GLU1-7",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3279.70",
+   "Karakterpoeng": "2989.20",
+   "Søkere totalt": "74"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "M-GLU5-10",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "11221.50",
+   "Karakterpoeng": "10201.00",
+   "Søkere totalt": "252"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "M-GLU5-10",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2770.60",
+   "Karakterpoeng": "2411.60",
+   "Søkere totalt": "62"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "M-INDØKG5",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4515.40",
+   "Karakterpoeng": "3697.40",
+   "Søkere totalt": "88"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "M-INDØKG5",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2702.10",
+   "Karakterpoeng": "2217.60",
+   "Søkere totalt": "52"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "M-LEKTOR",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6619.70",
+   "Karakterpoeng": "5956.20",
+   "Søkere totalt": "144"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "M-LEKTOR",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2300.30",
+   "Karakterpoeng": "2058.80",
+   "Søkere totalt": "50"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "M-LEKTREA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1160.50",
+   "Karakterpoeng": "997.00",
+   "Søkere totalt": "22"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "M-LEKTREA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "205.40",
+   "Karakterpoeng": "168.90",
+   "Søkere totalt": "4"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "M-MAFYS5",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1466.80",
+   "Karakterpoeng": "1199.30",
+   "Søkere totalt": "28"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "M-MAFYS5",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "305.60",
+   "Karakterpoeng": "247.10",
+   "Søkere totalt": "6"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-DRAMA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1739.70",
+   "Karakterpoeng": "1513.70",
+   "Søkere totalt": "35"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-DRAMA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "40.40",
+   "Karakterpoeng": "36.40",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-ENGELSK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6772.00",
+   "Karakterpoeng": "5819.00",
+   "Søkere totalt": "140"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-ENGELSK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2014.10",
+   "Karakterpoeng": "1675.60",
+   "Søkere totalt": "40"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-FRILUFT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6680.80",
+   "Karakterpoeng": "5686.80",
+   "Søkere totalt": "137"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-FRILUFT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "473.40",
+   "Karakterpoeng": "403.90",
+   "Søkere totalt": "10"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-HISTORIE",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "8715.30",
+   "Karakterpoeng": "7568.30",
+   "Søkere totalt": "181"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-HISTORIE",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1460.00",
+   "Karakterpoeng": "1250.00",
+   "Søkere totalt": "29"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-IDR/KRO",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9748.40",
+   "Karakterpoeng": "8734.40",
+   "Søkere totalt": "210"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-IDR/KRO",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1074.40",
+   "Karakterpoeng": "978.40",
+   "Søkere totalt": "23"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-KOM",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "10184.40",
+   "Karakterpoeng": "8823.90",
+   "Søkere totalt": "216"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-KOM",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2014.10",
+   "Karakterpoeng": "1721.10",
+   "Søkere totalt": "44"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-KRISREL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "5757.20",
+   "Karakterpoeng": "4985.20",
+   "Søkere totalt": "119"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-KRISREL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1123.40",
+   "Karakterpoeng": "918.90",
+   "Søkere totalt": "22"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-KUNSTHÅN",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3777.30",
+   "Karakterpoeng": "3184.80",
+   "Søkere totalt": "76"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-KUNSTHÅN",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "390.70",
+   "Karakterpoeng": "346.70",
+   "Søkere totalt": "9"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-LÆRPSY",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "15353.00",
+   "Karakterpoeng": "13536.00",
+   "Søkere totalt": "330"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-LÆRPSY",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1096.80",
+   "Karakterpoeng": "992.80",
+   "Søkere totalt": "23"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-MATEMA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2947.90",
+   "Karakterpoeng": "2392.90",
+   "Søkere totalt": "55"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-MATEMA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "740.70",
+   "Karakterpoeng": "575.70",
+   "Søkere totalt": "14"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-MUSIKK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1561.90",
+   "Karakterpoeng": "1350.40",
+   "Søkere totalt": "33"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-MUSIKK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "189.10",
+   "Karakterpoeng": "156.10",
+   "Søkere totalt": "4"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-NORDISK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3447.90",
+   "Karakterpoeng": "2856.90",
+   "Søkere totalt": "67"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-NORDISK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "652.30",
+   "Karakterpoeng": "529.80",
+   "Søkere totalt": "12"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-PSYKOL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "30658.50",
+   "Karakterpoeng": "26916.50",
+   "Søkere totalt": "656"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-PSYKOL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2364.50",
+   "Karakterpoeng": "2103.00",
+   "Søkere totalt": "44"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-REATEK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2883.10",
+   "Karakterpoeng": "2356.10",
+   "Søkere totalt": "55"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-REATEK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1306.10",
+   "Karakterpoeng": "1077.10",
+   "Søkere totalt": "25"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-REISE",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "7483.20",
+   "Karakterpoeng": "6396.70",
+   "Søkere totalt": "158"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-REISE",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1520.90",
+   "Karakterpoeng": "1228.90",
+   "Søkere totalt": "30"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-SOSIO",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "10054.00",
+   "Karakterpoeng": "8945.50",
+   "Søkere totalt": "212"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-SOSIO",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1310.80",
+   "Karakterpoeng": "1179.80",
+   "Søkere totalt": "30"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-STATSVIT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "8592.10",
+   "Karakterpoeng": "7665.10",
+   "Søkere totalt": "178"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-STATSVIT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1221.10",
+   "Karakterpoeng": "1064.10",
+   "Søkere totalt": "27"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-ØKONOMI",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "27104.90",
+   "Karakterpoeng": "23814.40",
+   "Søkere totalt": "573"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-ØKONOMI",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2533.20",
+   "Karakterpoeng": "2254.20",
+   "Søkere totalt": "48"
+  }
+ ],
+ "forstevalg": [
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-BALÆD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3605.20",
+   "Karakterpoeng": "2923.20",
+   "Søkere totalt": "80"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-BALÆR",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "5341.00",
+   "Karakterpoeng": "4616.50",
+   "Søkere totalt": "126"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-BARNEV",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "9498.00",
+   "Karakterpoeng": "8258.00",
+   "Søkere totalt": "216"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-BIOKJE",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2126.30",
+   "Karakterpoeng": "1744.80",
+   "Søkere totalt": "41"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-BYGG",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2129.70",
+   "Karakterpoeng": "1708.70",
+   "Søkere totalt": "45"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-BYSAM",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6111.90",
+   "Karakterpoeng": "5099.90",
+   "Søkere totalt": "132"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-DATA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6975.40",
+   "Karakterpoeng": "5610.40",
+   "Søkere totalt": "140"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-ELEKTRO",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2823.80",
+   "Karakterpoeng": "2252.30",
+   "Søkere totalt": "55"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-ENERGI",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1763.00",
+   "Karakterpoeng": "1470.50",
+   "Søkere totalt": "37"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-ESPRÅKL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1386.10",
+   "Karakterpoeng": "1231.10",
+   "Søkere totalt": "31"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-FJERMU",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3448.00",
+   "Karakterpoeng": "3040.30",
+   "Søkere totalt": "75"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-GEONRG",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "337.00",
+   "Karakterpoeng": "266.50",
+   "Søkere totalt": "7"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-HISTORIE",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1067.40",
+   "Karakterpoeng": "925.40",
+   "Søkere totalt": "25"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-HOTLED",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4104.70",
+   "Karakterpoeng": "3610.20",
+   "Søkere totalt": "95"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-IDRETT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3430.10",
+   "Karakterpoeng": "2956.60",
+   "Søkere totalt": "78"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-JOURNAL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2372.40",
+   "Karakterpoeng": "2024.40",
+   "Søkere totalt": "51"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-KJEMIL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "827.90",
+   "Karakterpoeng": "661.90",
+   "Søkere totalt": "16"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-MASKIN",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2055.90",
+   "Karakterpoeng": "1689.90",
+   "Søkere totalt": "44"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-NSPRÅKL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "448.50",
+   "Karakterpoeng": "363.00",
+   "Søkere totalt": "9"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-PARAMED",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6486.00",
+   "Karakterpoeng": "5582.00",
+   "Søkere totalt": "126"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-PSYKOL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "11323.40",
+   "Karakterpoeng": "9592.90",
+   "Søkere totalt": "234"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-REILED",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2231.00",
+   "Karakterpoeng": "1978.00",
+   "Søkere totalt": "51"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-REL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "448.10",
+   "Karakterpoeng": "397.10",
+   "Søkere totalt": "10"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-RETVIT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "11070.10",
+   "Karakterpoeng": "9660.60",
+   "Søkere totalt": "223"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-SOSIOL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3304.50",
+   "Karakterpoeng": "2823.00",
+   "Søkere totalt": "75"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-SOSION",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "9676.40",
+   "Karakterpoeng": "8467.40",
+   "Søkere totalt": "213"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-STATSVIT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2901.70",
+   "Karakterpoeng": "2486.20",
+   "Søkere totalt": "64"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-SYKEPL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "23228.60",
+   "Karakterpoeng": "20455.10",
+   "Søkere totalt": "483"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-TOLL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "64250.40",
+   "Karakterpoeng": "55222.30",
+   "Søkere totalt": "1480"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "B-ØKAD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "20546.30",
+   "Karakterpoeng": "18047.80",
+   "Søkere totalt": "446"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "M-GLU1-7",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3461.40",
+   "Karakterpoeng": "3130.40",
+   "Søkere totalt": "72"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "M-GLU5-10",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2864.20",
+   "Karakterpoeng": "2580.20",
+   "Søkere totalt": "59"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "M-INDØKG5",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4773.10",
+   "Karakterpoeng": "3837.10",
+   "Søkere totalt": "93"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "M-KONMAT5",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "548.90",
+   "Karakterpoeng": "433.40",
+   "Søkere totalt": "11"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "M-LEKTOR",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3916.00",
+   "Karakterpoeng": "3500.00",
+   "Søkere totalt": "79"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "M-MAFYS5",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "843.70",
+   "Karakterpoeng": "700.20",
+   "Søkere totalt": "16"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "M-OFFSH5",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "360.80",
+   "Karakterpoeng": "300.80",
+   "Søkere totalt": "7"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "Å-DRAMA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "408.70",
+   "Karakterpoeng": "345.20",
+   "Søkere totalt": "8"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "Å-ENGELSK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2225.90",
+   "Karakterpoeng": "1850.90",
+   "Søkere totalt": "45"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "Å-HISTORIE",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2135.00",
+   "Karakterpoeng": "1821.00",
+   "Søkere totalt": "45"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "Å-IDR/KRO",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3316.80",
+   "Karakterpoeng": "2990.80",
+   "Søkere totalt": "70"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "Å-KOM",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "9026.90",
+   "Karakterpoeng": "7510.90",
+   "Søkere totalt": "182"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "Å-KRISREL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1979.00",
+   "Karakterpoeng": "1618.50",
+   "Søkere totalt": "38"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "Å-KUNSTHÅN",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1432.20",
+   "Karakterpoeng": "1216.20",
+   "Søkere totalt": "27"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "Å-MATEMA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1765.60",
+   "Karakterpoeng": "1406.10",
+   "Søkere totalt": "32"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "Å-NORDISK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2076.40",
+   "Karakterpoeng": "1668.40",
+   "Søkere totalt": "39"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "Å-SOSIO",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4183.30",
+   "Karakterpoeng": "3599.30",
+   "Søkere totalt": "87"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-BALÆD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2471.80",
+   "Karakterpoeng": "1992.80",
+   "Søkere totalt": "56"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-BALÆR",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3985.80",
+   "Karakterpoeng": "3429.30",
+   "Søkere totalt": "92"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-BARNEV",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6164.90",
+   "Karakterpoeng": "5405.90",
+   "Søkere totalt": "141"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-BATTEK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1505.10",
+   "Karakterpoeng": "1230.60",
+   "Søkere totalt": "30"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-BIOKJE",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2008.40",
+   "Karakterpoeng": "1676.40",
+   "Søkere totalt": "39"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-BYGG",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1851.70",
+   "Karakterpoeng": "1552.70",
+   "Søkere totalt": "38"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-BYSAM",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3625.70",
+   "Karakterpoeng": "3076.20",
+   "Søkere totalt": "78"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-DATA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "5958.70",
+   "Karakterpoeng": "4801.20",
+   "Søkere totalt": "119"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-ELEKTRO",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1818.60",
+   "Karakterpoeng": "1476.60",
+   "Søkere totalt": "36"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-ENERGI",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1738.10",
+   "Karakterpoeng": "1479.10",
+   "Søkere totalt": "37"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-ESPRÅKL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1193.70",
+   "Karakterpoeng": "1021.20",
+   "Søkere totalt": "26"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-FJERMU",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2690.40",
+   "Karakterpoeng": "2332.90",
+   "Søkere totalt": "58"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-GEONRG",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "369.60",
+   "Karakterpoeng": "314.60",
+   "Søkere totalt": "7"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-HISTORIE",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1248.40",
+   "Karakterpoeng": "1100.40",
+   "Søkere totalt": "28"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-HOTLED",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4795.20",
+   "Karakterpoeng": "4292.20",
+   "Søkere totalt": "113"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-IDRETT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4575.00",
+   "Karakterpoeng": "4029.50",
+   "Søkere totalt": "100"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-JOURNAL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2725.50",
+   "Karakterpoeng": "2367.00",
+   "Søkere totalt": "57"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-KJEMIL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "596.20",
+   "Karakterpoeng": "487.20",
+   "Søkere totalt": "11"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-MASKIN",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "989.40",
+   "Karakterpoeng": "807.90",
+   "Søkere totalt": "20"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-MEDTEK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1463.60",
+   "Karakterpoeng": "1191.10",
+   "Søkere totalt": "28"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-NSPRÅKL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "231.50",
+   "Karakterpoeng": "192.50",
+   "Søkere totalt": "5"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-PARAMED",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2564.30",
+   "Karakterpoeng": "2272.30",
+   "Søkere totalt": "48"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-PSYKOL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "8222.90",
+   "Karakterpoeng": "7047.40",
+   "Søkere totalt": "169"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-REILED",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1721.60",
+   "Karakterpoeng": "1519.10",
+   "Søkere totalt": "41"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-REL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "294.10",
+   "Karakterpoeng": "242.10",
+   "Søkere totalt": "6"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-RETVIT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "9916.80",
+   "Karakterpoeng": "8727.80",
+   "Søkere totalt": "197"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-SOSIOL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3192.20",
+   "Karakterpoeng": "2724.70",
+   "Søkere totalt": "72"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-SOSION",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "8935.20",
+   "Karakterpoeng": "7744.20",
+   "Søkere totalt": "195"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-STATSVIT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3046.40",
+   "Karakterpoeng": "2687.90",
+   "Søkere totalt": "68"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-SYKEPL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "16701.70",
+   "Karakterpoeng": "14799.70",
+   "Søkere totalt": "344"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-TOLL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "39736.00",
+   "Karakterpoeng": "34747.00",
+   "Søkere totalt": "870"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "B-ØKAD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "20427.70",
+   "Karakterpoeng": "18111.70",
+   "Søkere totalt": "446"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "M-GLU1-7",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4653.00",
+   "Karakterpoeng": "4198.00",
+   "Søkere totalt": "95"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "M-GLU5-10",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3725.60",
+   "Karakterpoeng": "3352.10",
+   "Søkere totalt": "75"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "M-INDØKG5",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3276.00",
+   "Karakterpoeng": "2672.00",
+   "Søkere totalt": "64"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "M-KONMAT5",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "411.40",
+   "Karakterpoeng": "314.90",
+   "Søkere totalt": "9"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "M-LEKTOR",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3520.00",
+   "Karakterpoeng": "3173.00",
+   "Søkere totalt": "72"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "M-MAFYS5",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "684.50",
+   "Karakterpoeng": "603.00",
+   "Søkere totalt": "13"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "Å-DRAMA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "579.80",
+   "Karakterpoeng": "532.80",
+   "Søkere totalt": "12"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "Å-ENGELSK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1979.00",
+   "Karakterpoeng": "1664.00",
+   "Søkere totalt": "42"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "Å-HISTORIE",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2030.20",
+   "Karakterpoeng": "1701.70",
+   "Søkere totalt": "42"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "Å-KOM",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3847.90",
+   "Karakterpoeng": "3296.40",
+   "Søkere totalt": "77"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "Å-KRISREL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1610.10",
+   "Karakterpoeng": "1327.60",
+   "Søkere totalt": "31"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "Å-KUNSTHÅN",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1328.50",
+   "Karakterpoeng": "1148.00",
+   "Søkere totalt": "26"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "Å-MATEMA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "974.20",
+   "Karakterpoeng": "795.70",
+   "Søkere totalt": "18"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "Å-NORDISK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1164.70",
+   "Karakterpoeng": "951.70",
+   "Søkere totalt": "21"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-BALÆD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2804.20",
+   "Karakterpoeng": "2256.70",
+   "Søkere totalt": "64"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-BALÆR",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2915.20",
+   "Karakterpoeng": "2558.20",
+   "Søkere totalt": "68"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-BARNEV",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "5621.30",
+   "Karakterpoeng": "4917.80",
+   "Søkere totalt": "130"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-BATTEK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "753.30",
+   "Karakterpoeng": "632.30",
+   "Søkere totalt": "16"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-BIOKJE",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1432.70",
+   "Karakterpoeng": "1228.70",
+   "Søkere totalt": "28"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-BYGG",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1363.70",
+   "Karakterpoeng": "1111.70",
+   "Søkere totalt": "27"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-BYSAM",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3214.10",
+   "Karakterpoeng": "2829.10",
+   "Søkere totalt": "69"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-DATA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4958.20",
+   "Karakterpoeng": "4018.70",
+   "Søkere totalt": "98"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-DIGSERV",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "5816.70",
+   "Karakterpoeng": "5003.70",
+   "Søkere totalt": "134"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-ELEKTRO",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1347.50",
+   "Karakterpoeng": "1091.50",
+   "Søkere totalt": "28"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-ENERGI",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2799.30",
+   "Karakterpoeng": "2340.30",
+   "Søkere totalt": "59"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-ESPRÅKL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "881.40",
+   "Karakterpoeng": "759.90",
+   "Søkere totalt": "19"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-FJERMU",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2158.50",
+   "Karakterpoeng": "1894.50",
+   "Søkere totalt": "47"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-HISTORIE",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1193.30",
+   "Karakterpoeng": "1013.80",
+   "Søkere totalt": "27"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-HOTLED",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3873.40",
+   "Karakterpoeng": "3396.90",
+   "Søkere totalt": "91"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-IDRETT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2522.40",
+   "Karakterpoeng": "2213.40",
+   "Søkere totalt": "55"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-JOURNAL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2358.90",
+   "Karakterpoeng": "2146.40",
+   "Søkere totalt": "51"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-KJEMIL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "312.70",
+   "Karakterpoeng": "260.20",
+   "Søkere totalt": "6"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-MASKIN",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1149.10",
+   "Karakterpoeng": "970.10",
+   "Søkere totalt": "23"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-MEDTEK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1263.20",
+   "Karakterpoeng": "1027.20",
+   "Søkere totalt": "25"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-NSPRÅKL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "88.60",
+   "Karakterpoeng": "80.60",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-PARAMED",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2027.60",
+   "Karakterpoeng": "1778.60",
+   "Søkere totalt": "39"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-PSYKOL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "9245.10",
+   "Karakterpoeng": "7924.10",
+   "Søkere totalt": "191"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-REILED",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1639.20",
+   "Karakterpoeng": "1459.70",
+   "Søkere totalt": "36"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-REL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "106.30",
+   "Karakterpoeng": "85.80",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-RETVIT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "12937.20",
+   "Karakterpoeng": "11361.20",
+   "Søkere totalt": "254"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-SFO-D",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4421.00",
+   "Karakterpoeng": "3523.00",
+   "Søkere totalt": "99"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-SOSIOL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2606.90",
+   "Karakterpoeng": "2295.90",
+   "Søkere totalt": "58"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-SOSION",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "9503.30",
+   "Karakterpoeng": "8298.30",
+   "Søkere totalt": "210"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-STATSVIT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2599.00",
+   "Karakterpoeng": "2285.50",
+   "Søkere totalt": "55"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-SYKEPL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "13602.00",
+   "Karakterpoeng": "12058.00",
+   "Søkere totalt": "285"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-TOLL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "31432.80",
+   "Karakterpoeng": "26980.80",
+   "Søkere totalt": "664"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "B-ØKAD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "21804.50",
+   "Karakterpoeng": "19439.00",
+   "Søkere totalt": "467"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "M-GLU1-7",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2851.50",
+   "Karakterpoeng": "2594.00",
+   "Søkere totalt": "58"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "M-GLU5-10",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2738.20",
+   "Karakterpoeng": "2488.20",
+   "Søkere totalt": "55"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "M-INDØKG5",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3210.40",
+   "Karakterpoeng": "2547.90",
+   "Søkere totalt": "62"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "M-LEKTOR",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1996.30",
+   "Karakterpoeng": "1787.80",
+   "Søkere totalt": "40"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "M-LEKTREA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "496.30",
+   "Karakterpoeng": "417.30",
+   "Søkere totalt": "9"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "M-MAFYS5",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "508.50",
+   "Karakterpoeng": "427.00",
+   "Søkere totalt": "9"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "Å-DRAMA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "576.80",
+   "Karakterpoeng": "496.80",
+   "Søkere totalt": "12"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "Å-ENGELSK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2296.50",
+   "Karakterpoeng": "1925.00",
+   "Søkere totalt": "47"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "Å-HISTORIE",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "966.50",
+   "Karakterpoeng": "784.00",
+   "Søkere totalt": "20"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "Å-IDR/KRO",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2255.50",
+   "Karakterpoeng": "1998.00",
+   "Søkere totalt": "49"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "Å-KOM",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2963.20",
+   "Karakterpoeng": "2516.20",
+   "Søkere totalt": "60"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "Å-KRISREL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1271.50",
+   "Karakterpoeng": "1058.00",
+   "Søkere totalt": "25"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "Å-KUNSTHÅN",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1612.90",
+   "Karakterpoeng": "1364.40",
+   "Søkere totalt": "32"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "Å-MATEMA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1130.50",
+   "Karakterpoeng": "919.00",
+   "Søkere totalt": "20"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "Å-NORDISK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1441.30",
+   "Karakterpoeng": "1181.30",
+   "Søkere totalt": "28"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-BALÆD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2779.00",
+   "Karakterpoeng": "2309.00",
+   "Søkere totalt": "60"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-BALÆR",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2436.80",
+   "Karakterpoeng": "2123.80",
+   "Søkere totalt": "53"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-BARNEV",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6226.40",
+   "Karakterpoeng": "5533.40",
+   "Søkere totalt": "143"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-BATTEK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "338.20",
+   "Karakterpoeng": "250.70",
+   "Søkere totalt": "7"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-BIOKJE",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1603.10",
+   "Karakterpoeng": "1341.10",
+   "Søkere totalt": "33"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-BYGG",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1106.80",
+   "Karakterpoeng": "930.30",
+   "Søkere totalt": "23"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-BYSAM",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4028.70",
+   "Karakterpoeng": "3497.70",
+   "Søkere totalt": "88"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-DATA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "5276.90",
+   "Karakterpoeng": "4289.90",
+   "Søkere totalt": "107"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-DIGSERV",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3364.80",
+   "Karakterpoeng": "2946.80",
+   "Søkere totalt": "75"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-ELEKTRO",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2374.70",
+   "Karakterpoeng": "1950.20",
+   "Søkere totalt": "46"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-ENERGI",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3840.60",
+   "Karakterpoeng": "3217.10",
+   "Søkere totalt": "79"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-ESPRÅKL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "799.40",
+   "Karakterpoeng": "673.90",
+   "Søkere totalt": "18"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-FJERMU",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1850.10",
+   "Karakterpoeng": "1637.10",
+   "Søkere totalt": "41"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-HISTORIE",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "921.00",
+   "Karakterpoeng": "770.50",
+   "Søkere totalt": "20"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-HOTLED",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3476.40",
+   "Karakterpoeng": "3083.90",
+   "Søkere totalt": "80"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-IDRETT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2119.10",
+   "Karakterpoeng": "1916.60",
+   "Søkere totalt": "48"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-JOURNAL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2172.90",
+   "Karakterpoeng": "1952.40",
+   "Søkere totalt": "46"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-KJEMIL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "399.80",
+   "Karakterpoeng": "328.30",
+   "Søkere totalt": "8"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-MASKIN",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1556.30",
+   "Karakterpoeng": "1307.30",
+   "Søkere totalt": "31"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-MEDTEK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "748.50",
+   "Karakterpoeng": "648.50",
+   "Søkere totalt": "14"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-NSPRÅKL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "88.20",
+   "Karakterpoeng": "69.20",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-PARAMED",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2579.60",
+   "Karakterpoeng": "2311.60",
+   "Søkere totalt": "49"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-PSYKOL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "10013.70",
+   "Karakterpoeng": "8620.70",
+   "Søkere totalt": "205"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-REILED",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1259.00",
+   "Karakterpoeng": "1113.50",
+   "Søkere totalt": "29"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-REL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "32.30",
+   "Karakterpoeng": "31.30",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-RETVIT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "15488.90",
+   "Karakterpoeng": "13704.40",
+   "Søkere totalt": "301"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-SFO-D",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1916.90",
+   "Karakterpoeng": "1507.40",
+   "Søkere totalt": "42"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-SOSIOL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2557.00",
+   "Karakterpoeng": "2200.50",
+   "Søkere totalt": "58"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-SOSION",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "9120.40",
+   "Karakterpoeng": "8032.40",
+   "Søkere totalt": "202"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-STATSVIT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2361.30",
+   "Karakterpoeng": "2042.80",
+   "Søkere totalt": "51"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-SYKEPL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "12803.50",
+   "Karakterpoeng": "11419.00",
+   "Søkere totalt": "270"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-TOLL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "37513.80",
+   "Karakterpoeng": "32320.30",
+   "Søkere totalt": "791"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "B-ØKAD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "17964.70",
+   "Karakterpoeng": "16079.20",
+   "Søkere totalt": "389"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "M-GLU1-7",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1840.60",
+   "Karakterpoeng": "1680.60",
+   "Søkere totalt": "37"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "M-GLU5-10",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1683.40",
+   "Karakterpoeng": "1507.40",
+   "Søkere totalt": "34"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "M-INDØKG5",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3893.20",
+   "Karakterpoeng": "3153.70",
+   "Søkere totalt": "74"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "M-LEKTOR",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1595.60",
+   "Karakterpoeng": "1471.30",
+   "Søkere totalt": "34"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "M-LEKTREA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "273.90",
+   "Karakterpoeng": "220.40",
+   "Søkere totalt": "5"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "M-MAFYS5",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "926.70",
+   "Karakterpoeng": "781.20",
+   "Søkere totalt": "18"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-DRAMA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "305.40",
+   "Karakterpoeng": "263.40",
+   "Søkere totalt": "6"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-ENGELSK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1543.70",
+   "Karakterpoeng": "1302.20",
+   "Søkere totalt": "31"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-HISTORIE",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2159.50",
+   "Karakterpoeng": "1850.50",
+   "Søkere totalt": "45"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-IDR/KRO",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2345.70",
+   "Karakterpoeng": "2062.70",
+   "Søkere totalt": "51"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-KOM",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3151.70",
+   "Karakterpoeng": "2623.70",
+   "Søkere totalt": "64"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-KRISREL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2145.60",
+   "Karakterpoeng": "1772.60",
+   "Søkere totalt": "40"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-KUNSTHÅN",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1504.90",
+   "Karakterpoeng": "1308.40",
+   "Søkere totalt": "33"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-MATEMA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "532.70",
+   "Karakterpoeng": "413.70",
+   "Søkere totalt": "10"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-MUSIKK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "638.80",
+   "Karakterpoeng": "537.80",
+   "Søkere totalt": "13"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-NORDISK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "967.50",
+   "Karakterpoeng": "802.50",
+   "Søkere totalt": "19"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-REATEK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "590.20",
+   "Karakterpoeng": "489.20",
+   "Søkere totalt": "11"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "Å-ØKONOMI",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "11366.00",
+   "Karakterpoeng": "9883.00",
+   "Søkere totalt": "241"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-BALÆD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1656.50",
+   "Karakterpoeng": "1355.00",
+   "Søkere totalt": "35"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-BALÆR",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1890.60",
+   "Karakterpoeng": "1619.60",
+   "Søkere totalt": "43"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-BARNEV",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4848.30",
+   "Karakterpoeng": "4313.30",
+   "Søkere totalt": "115"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-BIOKJE",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1194.20",
+   "Karakterpoeng": "984.70",
+   "Søkere totalt": "24"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-BYGG",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1957.90",
+   "Karakterpoeng": "1633.90",
+   "Søkere totalt": "40"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-BYSAM",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4039.40",
+   "Karakterpoeng": "3498.40",
+   "Søkere totalt": "86"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-DATA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4024.20",
+   "Karakterpoeng": "3256.20",
+   "Søkere totalt": "81"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-DIGSERV",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3817.40",
+   "Karakterpoeng": "3300.90",
+   "Søkere totalt": "87"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-ELEKTRO",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1837.60",
+   "Karakterpoeng": "1499.60",
+   "Søkere totalt": "35"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-ENERGI",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4780.20",
+   "Karakterpoeng": "4068.70",
+   "Søkere totalt": "99"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-ESPRÅKL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "855.40",
+   "Karakterpoeng": "726.90",
+   "Søkere totalt": "18"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-FJERMU",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2325.80",
+   "Karakterpoeng": "2090.30",
+   "Søkere totalt": "52"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-HISTORIE",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "736.40",
+   "Karakterpoeng": "636.40",
+   "Søkere totalt": "16"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-HOTLED",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3082.30",
+   "Karakterpoeng": "2732.80",
+   "Søkere totalt": "73"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-IDRETT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2336.80",
+   "Karakterpoeng": "2081.80",
+   "Søkere totalt": "54"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-JOURNAL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2693.40",
+   "Karakterpoeng": "2415.90",
+   "Søkere totalt": "58"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-KJEMIL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "263.60",
+   "Karakterpoeng": "213.60",
+   "Søkere totalt": "5"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-MASKIN",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2896.50",
+   "Karakterpoeng": "2461.50",
+   "Søkere totalt": "61"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-MEDTEK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "865.80",
+   "Karakterpoeng": "724.30",
+   "Søkere totalt": "18"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-NSPRÅKL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "133.00",
+   "Karakterpoeng": "104.00",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-PARAMED",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2829.20",
+   "Karakterpoeng": "2476.70",
+   "Søkere totalt": "53"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-PSYKOL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "5426.10",
+   "Karakterpoeng": "4738.60",
+   "Søkere totalt": "112"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-REL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "95.60",
+   "Karakterpoeng": "75.60",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-RETVIT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "16090.80",
+   "Karakterpoeng": "14326.30",
+   "Søkere totalt": "308"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-SFO-D",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "691.70",
+   "Karakterpoeng": "555.70",
+   "Søkere totalt": "15"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-SOSIOL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1490.10",
+   "Karakterpoeng": "1292.60",
+   "Søkere totalt": "34"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-SOSION",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "8085.10",
+   "Karakterpoeng": "7135.60",
+   "Søkere totalt": "181"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-STATSVIT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3121.10",
+   "Karakterpoeng": "2848.10",
+   "Søkere totalt": "68"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-SYKEPL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "22990.00",
+   "Karakterpoeng": "20105.00",
+   "Søkere totalt": "521"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-TOLL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "32298.40",
+   "Karakterpoeng": "28045.40",
+   "Søkere totalt": "683"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "B-ØKAD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "19336.90",
+   "Karakterpoeng": "17330.90",
+   "Søkere totalt": "425"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "M-GLU1-7",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3886.60",
+   "Karakterpoeng": "3495.10",
+   "Søkere totalt": "85"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "M-GLU5-10",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3096.70",
+   "Karakterpoeng": "2729.70",
+   "Søkere totalt": "67"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "M-INDØKG5",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4332.80",
+   "Karakterpoeng": "3509.80",
+   "Søkere totalt": "83"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "M-LEKTOR",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2195.40",
+   "Karakterpoeng": "1968.40",
+   "Søkere totalt": "48"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "M-LEKTREA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "387.90",
+   "Karakterpoeng": "313.90",
+   "Søkere totalt": "7"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "M-MAFYS5",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "396.10",
+   "Karakterpoeng": "323.10",
+   "Søkere totalt": "8"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-DRAMA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "291.20",
+   "Karakterpoeng": "248.20",
+   "Søkere totalt": "6"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-ENGELSK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1538.70",
+   "Karakterpoeng": "1289.70",
+   "Søkere totalt": "30"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-FRILUFT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1014.20",
+   "Karakterpoeng": "853.70",
+   "Søkere totalt": "20"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-HISTORIE",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1731.10",
+   "Karakterpoeng": "1479.60",
+   "Søkere totalt": "34"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-IDR/KRO",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1919.50",
+   "Karakterpoeng": "1660.00",
+   "Søkere totalt": "40"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-KOM",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2042.10",
+   "Karakterpoeng": "1721.10",
+   "Søkere totalt": "43"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-KRISREL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "798.20",
+   "Karakterpoeng": "640.20",
+   "Søkere totalt": "15"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-KUNSTHÅN",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1247.90",
+   "Karakterpoeng": "1059.40",
+   "Søkere totalt": "26"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-LÆRPSY",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2393.10",
+   "Karakterpoeng": "2093.10",
+   "Søkere totalt": "50"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-MATEMA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "845.60",
+   "Karakterpoeng": "678.10",
+   "Søkere totalt": "15"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-MUSIKK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "329.30",
+   "Karakterpoeng": "272.30",
+   "Søkere totalt": "7"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-NORDISK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "658.30",
+   "Karakterpoeng": "530.30",
+   "Søkere totalt": "12"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-PSYKOL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "8290.30",
+   "Karakterpoeng": "7046.30",
+   "Søkere totalt": "172"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-REATEK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1037.30",
+   "Karakterpoeng": "848.80",
+   "Søkere totalt": "20"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-REISE",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3626.10",
+   "Karakterpoeng": "2967.10",
+   "Søkere totalt": "72"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-SOSIO",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1178.00",
+   "Karakterpoeng": "1049.00",
+   "Søkere totalt": "24"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-STATSVIT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1230.70",
+   "Karakterpoeng": "1060.20",
+   "Søkere totalt": "26"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "Å-ØKONOMI",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "8990.50",
+   "Karakterpoeng": "7721.50",
+   "Søkere totalt": "182"
+  }
+ ]
+}

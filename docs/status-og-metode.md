@@ -21,7 +21,7 @@ Hvert fakultet (`landsam`, `realtek`, `biovit`, `kbm`, `mina`) har samme mappe o
 | Steg | Input (redigerbar) | Kilde | Skript | Output i appen |
 |---|---|---|---|---|
 | 1 Programkart | `data/<f>/programkart.json` | Agent: nmbu.no + SO-tabellen | – | – |
-| 2 Opptak | programkart + `data/<f>/kilder/so_*.{json,csv}` | Samordna opptak (programtabell 2026 med 2021–2026; Tableau-CSV for poenggrenser 2020–2026). Lokale opptak (toårig master): DBH tabell 379 via `fill-local-admissions.py <f>` som skriver `localData` i programkartet (søkere, førstevalg, kvinneandel, kvalifiserte, tilbud, akseptert, møtt) | `build-landsam-data.py` + `check-landsam-data.py` | `<f>AdmissionData.ts` |
+| 2 Opptak | programkart + `data/<f>/kilder/so_*.{json,csv}` | Samordna opptak (programtabell 2026 med 2021–2026; Tableau-CSV for poenggrenser 2020–2026). Lokale opptak (toårig master): DBH tabell 379 via `fill-local-admissions.py <f>` som skriver `localData` i programkartet (søkere, førstevalg, kvinneandel, kvalifiserte, tilbud, akseptert, møtt). Snittpoeng for Samordna-program: DBH tabell 571 via `fetch-admission-points.py` → `kilder/dbh571_opptakspoeng.json` (se §11) | `build-landsam-data.py` + `check-landsam-data.py` | `<f>AdmissionData.ts` |
 | 3 DBH-kobling | `data/<f>/dbh-programkart.json` | Agent: DBH tabell 347 verifisert mot 308 | – | – |
 | 4 Karakterer | dbh-programkart | DBH tabell 308 (karakterer) + 208 (emnenavn), programnivå og emnenivå, totaler uten karakter for skjerming | `build-landsam-courses.py` (cache i `data/<f>/kilder/dbh-cache/`, gitignored) | `<f>CourseData.ts` |
 | 5 Emnekobling | `data/<f>/emnekobling/<gruppe>.json` | Agent: studieplaner + emnebeskrivelser | `build-landsam-course-mapping.py` (validerer koder mot steg 4) | `<f>CourseMapping.ts` |
@@ -172,6 +172,7 @@ cd ~/Desktop/BOA-sammenligning/kilde && npx vite --port 5173      # kjør appen
 scripts/build-faculty.sh realtek                                  # opptak → karakterer → kobling → studieplaner
 scripts/build-faculty.sh realtek --refresh                        # hent DBH på nytt (ny årgang), inkl. lokale opptak (379)
 python3 scripts/fill-local-admissions.py realtek                   # bare lokale opptak fra DBH 379
+python3 scripts/fetch-admission-points.py [realtek] [--refresh]   # snittpoeng fra DBH 571 (alle fakulteter uten argument)
 python3 scripts/build-studiebarometer.py realtek [--refresh]
 python3 scripts/build-markedsstatus.py realtek
 python3 scripts/link-studyplan-codes.py realtek                   # etter nye studieplanfiler
@@ -183,3 +184,32 @@ Passordsperren (`PasswordGate.tsx`) ligger fra 23.09 kveld bare rundt fanen «Em
 Passordet settes i `kilde/.env.local` som `VITE_HH_PASSORD` (filen er gitignored; uten filen er
 passordet «nmbu»). Dev-serveren må startes på nytt etter endring. Opplåsingen varer til fanen lukkes.
 Sperren skjuler bare visningen: dataene ligger fortsatt i den bygde JavaScript-en.
+
+## 11. Opptakspoeng (DBH 571) og studieplasser (DBH 370)
+
+Lagt inn 23.09 kveld. Opptaksvisningen for Samordna-program har fire nye mål under «Snittpoeng (DBH)»:
+snitt opptakspoeng og snitt karakterpoeng for dem som møtte til studiestart, snitt for førstevalgssøkerne
+og snitt for alle søkerne. NMBU-nøkkeltallene viser snitt opptakspoeng for møtte med karakterpoeng og antall.
+
+- **Kjede:** `scripts/fetch-admission-points.py` henter to spørringer per institusjon (Årstall × program ×
+  møtt, og Årstall × program × prioritet 1), opptakstype N, og cacher rådata i `data/nmbu/kilder/dbh571/<inst>.json`.
+  Resultatet per fakultet ligger i `data/<f>/kilder/dbh571_opptakspoeng.json`, som `build-landsam-data.py`
+  leser automatisk. Feltene heter `op_mott`, `kp_mott`, `op_fv`, `op_alle`, `n_mott` i `FullYearData`.
+  `build-faculty.sh <f> --refresh` henter 571 på nytt.
+- **Tolkning:** 571 gir summer, snitt = poengsum / antall. DBH skjermer antall i små celler (vises som 0),
+  men ikke poengsummen; slike celler er utelatt fra både teller og nevner. «Søkere» i 571 er søkerne i
+  institusjonens FS-opptak, ikke alle som har programmet på listen hos Samordna. Kontroll: NMBU B-ØA
+  «alle søkere» gir 49,5/49,6/48,9 for 2023–2025 med 293/387/398 søkere, identisk med HH-filen
+  `dbhSokerpoeng.ts` fra samme tabell.
+- **Dekning:** 165 av 171 Samordna-program har tall. Uten tall: AHO landskapsarkitektur (opptaksprøve), UiS
+  byplanlegging, UiS kybernetikk, NTNU Gjøvik geomatikk (nedlagt) og UiS datateknologi femårig (ingen egen
+  opptakskode i DBH). 2026 finnes ikke i 571 ennå; visningen hopper til 2025 når et poengmål er valgt.
+- **Felles DBH-program:** 13 oppføringer deler DBH-programkode med en annen oppføring (flere studiesteder
+  eller varianter, f.eks. NTNU fornybar energi Trondheim/Gjøvik/Ålesund). De har felles snitt og er merket
+  med * i datatabellen (`poengFellesMed`).
+- **Lokale opptak:** toårige mastere har ingen poeng i 571 (opptak på bachelorkarakterer), så målene vises ikke der.
+- **Studieplasser (370) er ikke tatt i bruk.** For lokale opptak er studieplasser praktisk talt ikke
+  rapportert etter 2012 (0 av flere tusen programrader 2021–2026 hos alle våre institusjoner). For
+  Samordna-program teller 370 per DBH-program samlet over studiesteder og kvoter, og avviker derfor fra
+  Samordnas tall per studiested, som vi allerede har. Studieplasser for toårige mastere må eventuelt hentes
+  fra institusjonenes egne opptakssider.

@@ -134,7 +134,9 @@ export function exportFacultyAdmissionCsv(faculty: FacultyData) {
     'År',
     'Alle søkere', 'Førstevalgssøkere', 'Studieplasser', 'Søkerpress (fv/pl, lokale opptak: fv/tilbud)',
     'Kvinner % (1.valg)', 'Kvalifiserte', 'Tilbud', 'Ja-svar', 'Møtt', 'Oppmøteandel % (møtt/tilbud)',
-    'Poenggrense FV', 'Poenggrense Ord.'
+    'Poenggrense FV', 'Poenggrense Ord.',
+    'Snitt opptakspoeng møtt (DBH 571)', 'Snitt karakterpoeng møtt (DBH 571)', 'Antall møtt (DBH 571)',
+    'Snitt opptakspoeng førstevalg (DBH 571)', 'Snitt opptakspoeng alle søkere (DBH 571)'
   );
 
   const lines: string[] = [header];
@@ -154,7 +156,8 @@ export function exportFacultyAdmissionCsv(faculty: FacultyData) {
           year,
           d.alleS, d.fvS, d.plasser, sp,
           d.kvinner, d.kvalifiserte, d.tilbud, d.akseptert ?? null, d.mott ?? null, opp,
-          d.pg_fv, d.pg_ord
+          d.pg_fv, d.pg_ord,
+          d.op_mott ?? null, d.kp_mott ?? null, d.n_mott ?? null, d.op_fv ?? null, d.op_alle ?? null
         ));
       }
     }

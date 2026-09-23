@@ -15,6 +15,12 @@ export interface FullYearData {
   pg_ord:       number | null; // poenggrense ordinær kvote
   akseptert?:   number | null; // ja-svar på tilbud (DBH 379, lokale opptak)
   mott?:        number | null; // møtt til studiestart (DBH 379, lokale opptak)
+  // DBH tabell 571, Samordna-program: snitt av opptakspoeng (med tilleggspoeng) og karakterpoeng
+  op_mott?:     number | null; // snitt opptakspoeng, møtt til studiestart
+  kp_mott?:     number | null; // snitt karakterpoeng (skolepoeng uten tilleggspoeng), møtt
+  op_fv?:       number | null; // snitt opptakspoeng, førstevalgssøkere
+  op_alle?:     number | null; // snitt opptakspoeng, alle søkere i institusjonens opptak
+  n_mott?:      number | null; // antall som møtte (grunnlaget for op_mott/kp_mott)
 }
 
 // 'master2' = toårig master med lokalt opptak (ikke via Samordna opptak)
@@ -39,6 +45,7 @@ export interface FullAdmissionEntry {
   campuses?: CampusBreakdown[];
   url?: string; // lenke til programsiden hos institusjonen
   stipulatedSokerpress?: number;
+  poengFellesMed?: string[]; // andre oppføringer med samme DBH-program (felles opptakspoeng)
 }
 
 const Y = (

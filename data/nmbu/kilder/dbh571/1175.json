@@ -1,0 +1,6633 @@
+{
+ "hentet": "2026-09-23",
+ "institusjonskode": "1175",
+ "kilde": "DBH/HKDIR tabell 571 «Gjennomsnittlige opptakspoeng for søkere», opptakstype N (Samordna opptak), https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData",
+ "motte": [
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "ADML",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "81363.90",
+   "Karakterpoeng": "71967.40",
+   "Søkere totalt": "1743"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "ADML",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "4058.90",
+   "Karakterpoeng": "3557.90",
+   "Søkere totalt": "77"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "ANVDATA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "50823.90",
+   "Karakterpoeng": "43620.90",
+   "Søkere totalt": "1076"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "ANVDATA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "4586.40",
+   "Karakterpoeng": "4034.40",
+   "Søkere totalt": "88"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "BIGB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "23021.80",
+   "Karakterpoeng": "19737.80",
+   "Søkere totalt": "441"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "BIGB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2149.30",
+   "Karakterpoeng": "1869.80",
+   "Søkere totalt": "38"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "BLD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1262.80",
+   "Karakterpoeng": "1023.80",
+   "Søkere totalt": "28"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "BLD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2562.30",
+   "Karakterpoeng": "2055.30",
+   "Søkere totalt": "59"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "BLH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "44253.80",
+   "Karakterpoeng": "37796.30",
+   "Søkere totalt": "1002"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "BLH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "10188.30",
+   "Karakterpoeng": "8838.80",
+   "Søkere totalt": "229"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "BVUH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "81733.90",
+   "Karakterpoeng": "71937.60",
+   "Søkere totalt": "1772"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "BVUH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "6087.80",
+   "Karakterpoeng": "5367.30",
+   "Søkere totalt": "117"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DKDM",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "35745.40",
+   "Karakterpoeng": "30380.50",
+   "Søkere totalt": "727"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DKDM",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2280.60",
+   "Karakterpoeng": "1934.10",
+   "Søkere totalt": "42"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DOKÅRSD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "19954.40",
+   "Karakterpoeng": "15884.80",
+   "Søkere totalt": "399"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DOKÅRSD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2211.60",
+   "Karakterpoeng": "1804.60",
+   "Søkere totalt": "37"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DT1",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "7462.50",
+   "Karakterpoeng": "6569.00",
+   "Søkere totalt": "148"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DT1",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "789.00",
+   "Karakterpoeng": "684.50",
+   "Søkere totalt": "15"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "ERGB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "35660.10",
+   "Karakterpoeng": "31077.70",
+   "Søkere totalt": "771"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "ERGB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2784.20",
+   "Karakterpoeng": "2406.20",
+   "Søkere totalt": "55"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "ESTDTK-BA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6583.80",
+   "Karakterpoeng": "5704.80",
+   "Søkere totalt": "139"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "ESTDTK-BA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1302.10",
+   "Karakterpoeng": "1171.10",
+   "Søkere totalt": "27"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "ESTKD-BA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "39150.60",
+   "Karakterpoeng": "34341.60",
+   "Søkere totalt": "817"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "ESTKD-BA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3274.10",
+   "Karakterpoeng": "2871.60",
+   "Søkere totalt": "62"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "FAGFKH-BA2",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "8659.10",
+   "Karakterpoeng": "7557.60",
+   "Søkere totalt": "174"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "FAGFKH-BA2",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2663.60",
+   "Karakterpoeng": "2275.60",
+   "Søkere totalt": "55"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "FUTB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "72461.50",
+   "Karakterpoeng": "64015.60",
+   "Søkere totalt": "1451"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "FUTB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "6985.80",
+   "Karakterpoeng": "6231.80",
+   "Søkere totalt": "124"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "HINGBYGG",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "11223.20",
+   "Karakterpoeng": "9199.70",
+   "Søkere totalt": "223"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "HINGBYGG",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "6190.30",
+   "Karakterpoeng": "5040.80",
+   "Søkere totalt": "127"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "HINGDATA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "12238.40",
+   "Karakterpoeng": "9974.90",
+   "Søkere totalt": "244"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "HINGDATA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3556.60",
+   "Karakterpoeng": "2995.60",
+   "Søkere totalt": "69"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "HINGELEKTR",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "7968.70",
+   "Karakterpoeng": "6468.20",
+   "Søkere totalt": "161"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "HINGELEKTR",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3616.90",
+   "Karakterpoeng": "2979.40",
+   "Søkere totalt": "77"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "HINGENERGI",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "7786.80",
+   "Karakterpoeng": "6291.80",
+   "Søkere totalt": "155"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "HINGENERGI",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1230.00",
+   "Karakterpoeng": "988.50",
+   "Søkere totalt": "24"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "HINGKJEMI",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4760.10",
+   "Karakterpoeng": "3987.10",
+   "Søkere totalt": "93"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "HINGKJEMI",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1646.30",
+   "Karakterpoeng": "1360.30",
+   "Søkere totalt": "32"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "HINGMASKIN",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "8375.70",
+   "Karakterpoeng": "6881.70",
+   "Søkere totalt": "169"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "HINGMASKIN",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2689.90",
+   "Karakterpoeng": "2151.40",
+   "Søkere totalt": "57"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "IFHBA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "15714.70",
+   "Karakterpoeng": "13979.20",
+   "Søkere totalt": "319"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "IFHBA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1439.00",
+   "Karakterpoeng": "1281.00",
+   "Søkere totalt": "29"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "INFORMATIK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "20694.50",
+   "Karakterpoeng": "17192.00",
+   "Søkere totalt": "416"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "INFORMATIK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3429.60",
+   "Karakterpoeng": "2979.60",
+   "Søkere totalt": "66"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "JFOTO",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "0.00",
+   "Karakterpoeng": "0.00",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "JFOTO",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "826.00",
+   "Karakterpoeng": "517.00",
+   "Søkere totalt": "12"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "JMOK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "28387.40",
+   "Karakterpoeng": "24977.90",
+   "Søkere totalt": "581"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "JMOK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2512.20",
+   "Karakterpoeng": "2236.70",
+   "Søkere totalt": "46"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "JOURNALIST",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "62177.90",
+   "Karakterpoeng": "55782.20",
+   "Søkere totalt": "1181"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "JOURNALIST",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "4619.90",
+   "Karakterpoeng": "4086.40",
+   "Søkere totalt": "82"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "LARKIVDOK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "10799.40",
+   "Karakterpoeng": "8845.90",
+   "Søkere totalt": "223"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "LARKIVDOK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1690.70",
+   "Karakterpoeng": "1429.20",
+   "Søkere totalt": "35"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "LBIBIN",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "12806.20",
+   "Karakterpoeng": "10478.70",
+   "Søkere totalt": "261"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "LBIBIN",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "5277.00",
+   "Karakterpoeng": "4384.50",
+   "Søkere totalt": "105"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "LBIBÅRS",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "12271.40",
+   "Karakterpoeng": "10001.40",
+   "Søkere totalt": "238"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "LBIBÅRS",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1499.30",
+   "Karakterpoeng": "1239.30",
+   "Søkere totalt": "26"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "M1GLU",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "20724.60",
+   "Karakterpoeng": "18369.60",
+   "Søkere totalt": "413"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "M1GLU",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "8723.90",
+   "Karakterpoeng": "7759.90",
+   "Søkere totalt": "178"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "M1GSP",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3049.40",
+   "Karakterpoeng": "2614.40",
+   "Søkere totalt": "62"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "M1GSP",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "192.00",
+   "Karakterpoeng": "160.50",
+   "Søkere totalt": "4"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "M5GLU",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "28799.60",
+   "Karakterpoeng": "25197.60",
+   "Søkere totalt": "566"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "M5GLU",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "6348.30",
+   "Karakterpoeng": "5558.80",
+   "Søkere totalt": "127"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MINF",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "8849.40",
+   "Karakterpoeng": "7423.20",
+   "Søkere totalt": "176"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MINF",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "741.50",
+   "Karakterpoeng": "627.50",
+   "Søkere totalt": "15"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MOKÅRS",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "22822.70",
+   "Karakterpoeng": "19688.20",
+   "Søkere totalt": "455"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MOKÅRS",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "468.70",
+   "Karakterpoeng": "412.20",
+   "Søkere totalt": "8"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "OKAD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "77979.40",
+   "Karakterpoeng": "68660.00",
+   "Søkere totalt": "1617"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "OKAD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "9909.60",
+   "Karakterpoeng": "8741.10",
+   "Søkere totalt": "180"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "ORTB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3168.40",
+   "Karakterpoeng": "2658.40",
+   "Søkere totalt": "59"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "ORTB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "849.50",
+   "Karakterpoeng": "725.00",
+   "Søkere totalt": "15"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "PARA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "22770.40",
+   "Karakterpoeng": "19617.40",
+   "Søkere totalt": "447"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "PARA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2324.10",
+   "Karakterpoeng": "2011.60",
+   "Søkere totalt": "40"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "PDB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "0.00",
+   "Karakterpoeng": "0.00",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "PDB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "0.00",
+   "Karakterpoeng": "0.00",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "PSYK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "28092.70",
+   "Karakterpoeng": "24527.70",
+   "Søkere totalt": "585"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "PSYK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1717.70",
+   "Karakterpoeng": "1560.20",
+   "Søkere totalt": "33"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "RADB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "39075.00",
+   "Karakterpoeng": "34020.00",
+   "Søkere totalt": "835"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "RADB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1388.90",
+   "Karakterpoeng": "1237.40",
+   "Søkere totalt": "26"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "RESB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "13275.20",
+   "Karakterpoeng": "11393.70",
+   "Søkere totalt": "265"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "RESB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2523.00",
+   "Karakterpoeng": "2184.00",
+   "Søkere totalt": "46"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "SOSH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "61206.20",
+   "Karakterpoeng": "53759.20",
+   "Søkere totalt": "1299"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "SOSH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "5564.60",
+   "Karakterpoeng": "5063.80",
+   "Søkere totalt": "104"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "SYKK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "54080.00",
+   "Karakterpoeng": "47648.00",
+   "Søkere totalt": "1152"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "SYKK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "6307.00",
+   "Karakterpoeng": "5676.00",
+   "Søkere totalt": "127"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "SYKP",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "96200.10",
+   "Karakterpoeng": "85309.10",
+   "Søkere totalt": "1977"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "SYKP",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "13373.90",
+   "Karakterpoeng": "11925.90",
+   "Søkere totalt": "260"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "TANNTEKB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "17751.50",
+   "Karakterpoeng": "15267.00",
+   "Søkere totalt": "395"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "TANNTEKB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "628.60",
+   "Karakterpoeng": "567.10",
+   "Søkere totalt": "13"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "TLB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "11147.90",
+   "Karakterpoeng": "8882.40",
+   "Søkere totalt": "242"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "TLB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1027.90",
+   "Karakterpoeng": "846.90",
+   "Søkere totalt": "19"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "UTVBA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "12736.40",
+   "Karakterpoeng": "11267.70",
+   "Søkere totalt": "262"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "UTVBA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1203.40",
+   "Karakterpoeng": "1084.40",
+   "Søkere totalt": "23"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "UTVÅRS",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "13926.90",
+   "Karakterpoeng": "12038.90",
+   "Søkere totalt": "267"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "UTVÅRS",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1306.80",
+   "Karakterpoeng": "1215.30",
+   "Søkere totalt": "25"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "UV1-SPPT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "15808.80",
+   "Karakterpoeng": "13394.80",
+   "Søkere totalt": "314"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "UV1-SPPT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1139.50",
+   "Karakterpoeng": "998.00",
+   "Søkere totalt": "23"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "UVB-SPPT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "7719.70",
+   "Karakterpoeng": "6513.00",
+   "Søkere totalt": "162"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "UVB-SPPT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "808.90",
+   "Karakterpoeng": "723.90",
+   "Søkere totalt": "17"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "VERB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "44216.50",
+   "Karakterpoeng": "38067.20",
+   "Søkere totalt": "991"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "VERB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "6928.90",
+   "Karakterpoeng": "6156.40",
+   "Søkere totalt": "143"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "YFLH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2278.20",
+   "Karakterpoeng": "1830.20",
+   "Søkere totalt": "49"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "YFLH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1636.30",
+   "Karakterpoeng": "1317.30",
+   "Søkere totalt": "36"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "YFLN",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "834.70",
+   "Karakterpoeng": "660.20",
+   "Søkere totalt": "18"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "YFLN",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "504.00",
+   "Karakterpoeng": "404.00",
+   "Søkere totalt": "11"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "ØKLED",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "39236.10",
+   "Karakterpoeng": "33246.10",
+   "Søkere totalt": "753"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "ØKLED",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "844.80",
+   "Karakterpoeng": "725.80",
+   "Søkere totalt": "14"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "ØKLEDEL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "35221.30",
+   "Karakterpoeng": "29164.00",
+   "Søkere totalt": "681"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "ØKLEDEL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1214.00",
+   "Karakterpoeng": "994.50",
+   "Søkere totalt": "19"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "ÅRSIT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "49739.70",
+   "Karakterpoeng": "40565.20",
+   "Søkere totalt": "1012"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "ÅRSIT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "886.70",
+   "Karakterpoeng": "796.20",
+   "Søkere totalt": "16"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "ADML",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "68861.50",
+   "Karakterpoeng": "61369.50",
+   "Søkere totalt": "1464"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "ADML",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "4540.60",
+   "Karakterpoeng": "3989.60",
+   "Søkere totalt": "89"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "ANVDATA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "49213.50",
+   "Karakterpoeng": "42250.50",
+   "Søkere totalt": "1035"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "ANVDATA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "5038.70",
+   "Karakterpoeng": "4377.20",
+   "Søkere totalt": "95"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "BIGB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "21131.60",
+   "Karakterpoeng": "18025.60",
+   "Søkere totalt": "405"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "BIGB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2773.60",
+   "Karakterpoeng": "2367.60",
+   "Søkere totalt": "48"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "BLD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1384.40",
+   "Karakterpoeng": "1104.40",
+   "Søkere totalt": "30"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "BLD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2198.60",
+   "Karakterpoeng": "1769.60",
+   "Søkere totalt": "49"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "BLH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "36791.20",
+   "Karakterpoeng": "31530.70",
+   "Søkere totalt": "820"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "BLH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "9010.90",
+   "Karakterpoeng": "7793.40",
+   "Søkere totalt": "208"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "BVUH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "73656.70",
+   "Karakterpoeng": "65102.90",
+   "Søkere totalt": "1589"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "BVUH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "5560.50",
+   "Karakterpoeng": "4921.00",
+   "Søkere totalt": "109"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DKDM",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "27655.40",
+   "Karakterpoeng": "23694.90",
+   "Søkere totalt": "561"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DKDM",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2730.90",
+   "Karakterpoeng": "2281.40",
+   "Søkere totalt": "51"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DOKÅRSD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "14459.00",
+   "Karakterpoeng": "11530.00",
+   "Søkere totalt": "287"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DOKÅRSD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2374.90",
+   "Karakterpoeng": "1936.40",
+   "Søkere totalt": "41"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DT1",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "8517.40",
+   "Karakterpoeng": "7402.90",
+   "Søkere totalt": "173"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DT1",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "644.00",
+   "Karakterpoeng": "575.00",
+   "Søkere totalt": "12"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "ERGB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "32452.70",
+   "Karakterpoeng": "28385.30",
+   "Søkere totalt": "685"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "ERGB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2973.70",
+   "Karakterpoeng": "2617.70",
+   "Søkere totalt": "61"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "ESTDTK-BA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6639.30",
+   "Karakterpoeng": "5726.80",
+   "Søkere totalt": "139"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "ESTDTK-BA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1675.50",
+   "Karakterpoeng": "1459.00",
+   "Søkere totalt": "35"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "ESTKD-BA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "39011.10",
+   "Karakterpoeng": "34340.10",
+   "Søkere totalt": "805"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "ESTKD-BA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3193.60",
+   "Karakterpoeng": "2871.60",
+   "Søkere totalt": "61"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "FUTB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "63678.90",
+   "Karakterpoeng": "56598.40",
+   "Søkere totalt": "1267"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "FUTB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "8316.20",
+   "Karakterpoeng": "7387.70",
+   "Søkere totalt": "149"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "HINGBYGG",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "11716.10",
+   "Karakterpoeng": "9728.10",
+   "Søkere totalt": "229"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "HINGBYGG",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "5810.30",
+   "Karakterpoeng": "4880.80",
+   "Søkere totalt": "121"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "HINGDATA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "13308.80",
+   "Karakterpoeng": "11154.30",
+   "Søkere totalt": "269"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "HINGDATA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3673.60",
+   "Karakterpoeng": "3114.10",
+   "Søkere totalt": "70"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "HINGELEKTR",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "8534.50",
+   "Karakterpoeng": "7087.00",
+   "Søkere totalt": "172"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "HINGELEKTR",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3393.40",
+   "Karakterpoeng": "2783.80",
+   "Søkere totalt": "70"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "HINGENERGI",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9036.80",
+   "Karakterpoeng": "7566.30",
+   "Søkere totalt": "180"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "HINGENERGI",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1030.80",
+   "Karakterpoeng": "838.80",
+   "Søkere totalt": "20"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "HINGKJEMI",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6240.40",
+   "Karakterpoeng": "5166.80",
+   "Søkere totalt": "122"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "HINGKJEMI",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "963.60",
+   "Karakterpoeng": "801.60",
+   "Søkere totalt": "21"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "HINGMASKIN",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9500.50",
+   "Karakterpoeng": "7891.50",
+   "Søkere totalt": "193"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "HINGMASKIN",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2598.40",
+   "Karakterpoeng": "2092.90",
+   "Søkere totalt": "53"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "INFORMATIK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "22641.20",
+   "Karakterpoeng": "18948.50",
+   "Søkere totalt": "457"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "INFORMATIK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3982.20",
+   "Karakterpoeng": "3391.20",
+   "Søkere totalt": "73"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "JFOTO",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "227.30",
+   "Karakterpoeng": "127.30",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "JFOTO",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "742.10",
+   "Karakterpoeng": "441.10",
+   "Søkere totalt": "10"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "JMOK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "30085.20",
+   "Karakterpoeng": "26894.20",
+   "Søkere totalt": "613"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "JMOK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2901.00",
+   "Karakterpoeng": "2530.50",
+   "Søkere totalt": "53"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "JOURNALIST",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "57884.30",
+   "Karakterpoeng": "51931.30",
+   "Søkere totalt": "1085"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "JOURNALIST",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "4925.40",
+   "Karakterpoeng": "4403.90",
+   "Søkere totalt": "87"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "LARKIVDOK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9713.70",
+   "Karakterpoeng": "8020.20",
+   "Søkere totalt": "199"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "LARKIVDOK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1850.00",
+   "Karakterpoeng": "1562.00",
+   "Søkere totalt": "38"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "LBIBIN",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "12163.20",
+   "Karakterpoeng": "10122.70",
+   "Søkere totalt": "246"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "LBIBIN",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "5618.80",
+   "Karakterpoeng": "4620.30",
+   "Søkere totalt": "118"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "LBIBÅRS",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9222.50",
+   "Karakterpoeng": "7585.00",
+   "Søkere totalt": "177"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "LBIBÅRS",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1047.00",
+   "Karakterpoeng": "872.00",
+   "Søkere totalt": "19"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "M1GLU",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "26376.50",
+   "Karakterpoeng": "23926.50",
+   "Søkere totalt": "536"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "M1GLU",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "9145.90",
+   "Karakterpoeng": "8147.90",
+   "Søkere totalt": "185"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "M1GSP",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4615.70",
+   "Karakterpoeng": "4037.20",
+   "Søkere totalt": "94"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "M1GSP",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "527.70",
+   "Karakterpoeng": "453.20",
+   "Søkere totalt": "11"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "M1KPL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "13541.70",
+   "Karakterpoeng": "12033.20",
+   "Søkere totalt": "279"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "M1KPL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1856.60",
+   "Karakterpoeng": "1671.60",
+   "Søkere totalt": "37"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "M5GLU",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "34667.80",
+   "Karakterpoeng": "30623.80",
+   "Søkere totalt": "688"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "M5GLU",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "8149.80",
+   "Karakterpoeng": "7298.30",
+   "Søkere totalt": "165"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MINF",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6555.80",
+   "Karakterpoeng": "5495.80",
+   "Søkere totalt": "127"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MINF",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "797.40",
+   "Karakterpoeng": "669.40",
+   "Søkere totalt": "16"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MLEST",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "7751.70",
+   "Karakterpoeng": "6760.70",
+   "Søkere totalt": "155"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MLEST",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1887.40",
+   "Karakterpoeng": "1637.90",
+   "Søkere totalt": "39"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MOKÅRS",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "19037.40",
+   "Karakterpoeng": "16552.90",
+   "Søkere totalt": "370"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MOKÅRS",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "633.40",
+   "Karakterpoeng": "562.40",
+   "Søkere totalt": "11"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "OKAD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "69472.20",
+   "Karakterpoeng": "61782.20",
+   "Søkere totalt": "1436"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "OKAD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "10837.40",
+   "Karakterpoeng": "9565.90",
+   "Søkere totalt": "199"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "ORTB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2882.80",
+   "Karakterpoeng": "2467.80",
+   "Søkere totalt": "55"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "ORTB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "833.70",
+   "Karakterpoeng": "695.20",
+   "Søkere totalt": "15"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "PARA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2973.90",
+   "Karakterpoeng": "2583.90",
+   "Søkere totalt": "56"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "PARA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2410.50",
+   "Karakterpoeng": "2102.00",
+   "Søkere totalt": "42"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "PDB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "0.00",
+   "Karakterpoeng": "0.00",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "PDB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "0.00",
+   "Karakterpoeng": "0.00",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "PSYK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "25560.30",
+   "Karakterpoeng": "22435.90",
+   "Søkere totalt": "529"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "PSYK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1800.30",
+   "Karakterpoeng": "1617.30",
+   "Søkere totalt": "35"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "RADB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "29052.70",
+   "Karakterpoeng": "25375.30",
+   "Søkere totalt": "597"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "RADB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1760.50",
+   "Karakterpoeng": "1552.50",
+   "Søkere totalt": "33"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "RESB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "14627.10",
+   "Karakterpoeng": "12432.60",
+   "Søkere totalt": "289"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "RESB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3115.50",
+   "Karakterpoeng": "2655.00",
+   "Søkere totalt": "56"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "SOSH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "58645.90",
+   "Karakterpoeng": "51815.90",
+   "Søkere totalt": "1243"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "SOSH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "5535.80",
+   "Karakterpoeng": "4984.30",
+   "Søkere totalt": "102"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "SYKK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "34635.90",
+   "Karakterpoeng": "30807.30",
+   "Søkere totalt": "726"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "SYKK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "6680.60",
+   "Karakterpoeng": "5932.10",
+   "Søkere totalt": "140"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "SYKP",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "66144.10",
+   "Karakterpoeng": "59133.10",
+   "Søkere totalt": "1335"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "SYKP",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "14552.80",
+   "Karakterpoeng": "13012.30",
+   "Søkere totalt": "296"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "UTVBA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "11584.10",
+   "Karakterpoeng": "10321.10",
+   "Søkere totalt": "232"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "UTVBA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "938.30",
+   "Karakterpoeng": "845.80",
+   "Søkere totalt": "19"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "UTVÅRS",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "10847.00",
+   "Karakterpoeng": "9483.50",
+   "Søkere totalt": "211"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "UTVÅRS",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1688.70",
+   "Karakterpoeng": "1497.20",
+   "Søkere totalt": "32"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "UV1-SPPT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "11433.20",
+   "Karakterpoeng": "9709.00",
+   "Søkere totalt": "226"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "UV1-SPPT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1774.80",
+   "Karakterpoeng": "1533.80",
+   "Søkere totalt": "33"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "UVB-SPPT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "204.40",
+   "Karakterpoeng": "170.40",
+   "Søkere totalt": "4"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "UVB-SPPT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "324.90",
+   "Karakterpoeng": "265.40",
+   "Søkere totalt": "7"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "VERB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "34478.00",
+   "Karakterpoeng": "29690.70",
+   "Søkere totalt": "760"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "VERB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "5429.20",
+   "Karakterpoeng": "4770.20",
+   "Søkere totalt": "113"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "YFLH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1922.30",
+   "Karakterpoeng": "1525.30",
+   "Søkere totalt": "42"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "YFLH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2077.40",
+   "Karakterpoeng": "1708.40",
+   "Søkere totalt": "43"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "YFLN",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "932.40",
+   "Karakterpoeng": "757.90",
+   "Søkere totalt": "19"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "YFLN",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "308.10",
+   "Karakterpoeng": "249.10",
+   "Søkere totalt": "7"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "ØKLED",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "31208.80",
+   "Karakterpoeng": "26943.80",
+   "Søkere totalt": "603"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "ØKLED",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1008.30",
+   "Karakterpoeng": "877.30",
+   "Søkere totalt": "17"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "ØKLEDEL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "26202.80",
+   "Karakterpoeng": "22204.80",
+   "Søkere totalt": "522"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "ØKLEDEL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "837.50",
+   "Karakterpoeng": "701.00",
+   "Søkere totalt": "14"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "ÅRSIT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "22941.80",
+   "Karakterpoeng": "19056.30",
+   "Søkere totalt": "454"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "ÅRSIT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "983.40",
+   "Karakterpoeng": "849.90",
+   "Søkere totalt": "18"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "ADML",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "83413.50",
+   "Karakterpoeng": "74236.00",
+   "Søkere totalt": "1792"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "ADML",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "4657.20",
+   "Karakterpoeng": "4065.20",
+   "Søkere totalt": "89"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "ANVDATA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "55855.40",
+   "Karakterpoeng": "48044.40",
+   "Søkere totalt": "1161"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "ANVDATA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "4669.10",
+   "Karakterpoeng": "4096.60",
+   "Søkere totalt": "86"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "BIGB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "18794.30",
+   "Karakterpoeng": "15962.60",
+   "Søkere totalt": "358"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "BIGB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3291.90",
+   "Karakterpoeng": "2828.90",
+   "Søkere totalt": "61"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "BLD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "913.50",
+   "Karakterpoeng": "729.50",
+   "Søkere totalt": "21"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "BLD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1957.70",
+   "Karakterpoeng": "1571.70",
+   "Søkere totalt": "43"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "BLH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "30425.30",
+   "Karakterpoeng": "26220.30",
+   "Søkere totalt": "667"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "BLH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "9364.30",
+   "Karakterpoeng": "7958.90",
+   "Søkere totalt": "221"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "BVUH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "65546.20",
+   "Karakterpoeng": "58236.80",
+   "Søkere totalt": "1420"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "BVUH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "5570.00",
+   "Karakterpoeng": "4886.00",
+   "Søkere totalt": "111"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DKDM",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "31421.30",
+   "Karakterpoeng": "26933.80",
+   "Søkere totalt": "639"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DKDM",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2124.90",
+   "Karakterpoeng": "1812.90",
+   "Søkere totalt": "38"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DOKÅRSD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "13675.60",
+   "Karakterpoeng": "10943.10",
+   "Søkere totalt": "277"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DOKÅRSD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3178.40",
+   "Karakterpoeng": "2590.40",
+   "Søkere totalt": "58"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DT1",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "8011.20",
+   "Karakterpoeng": "7001.70",
+   "Søkere totalt": "155"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DT1",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "514.10",
+   "Karakterpoeng": "457.10",
+   "Søkere totalt": "9"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "ERGB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "30675.60",
+   "Karakterpoeng": "26697.10",
+   "Søkere totalt": "655"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "ERGB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2807.90",
+   "Karakterpoeng": "2506.90",
+   "Søkere totalt": "61"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "ESTDTK-BA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6943.40",
+   "Karakterpoeng": "5976.40",
+   "Søkere totalt": "144"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "ESTDTK-BA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1481.10",
+   "Karakterpoeng": "1288.60",
+   "Søkere totalt": "32"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "ESTKD-BA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "37637.20",
+   "Karakterpoeng": "32845.20",
+   "Søkere totalt": "773"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "ESTKD-BA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2955.20",
+   "Karakterpoeng": "2681.20",
+   "Søkere totalt": "59"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "FUTB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "78743.80",
+   "Karakterpoeng": "69978.10",
+   "Søkere totalt": "1578"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "FUTB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "8471.60",
+   "Karakterpoeng": "7494.60",
+   "Søkere totalt": "151"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "HINGBYGG",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "12741.10",
+   "Karakterpoeng": "10648.60",
+   "Søkere totalt": "250"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "HINGBYGG",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "5153.40",
+   "Karakterpoeng": "4231.40",
+   "Søkere totalt": "105"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "HINGDATA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "11189.40",
+   "Karakterpoeng": "9297.90",
+   "Søkere totalt": "224"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "HINGDATA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "4238.90",
+   "Karakterpoeng": "3565.90",
+   "Søkere totalt": "81"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "HINGELEKTR",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "10096.20",
+   "Karakterpoeng": "8257.20",
+   "Søkere totalt": "200"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "HINGELEKTR",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3806.90",
+   "Karakterpoeng": "3088.40",
+   "Søkere totalt": "78"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "HINGENERGI",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "7677.70",
+   "Karakterpoeng": "6243.20",
+   "Søkere totalt": "153"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "HINGENERGI",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1403.50",
+   "Karakterpoeng": "1168.00",
+   "Søkere totalt": "27"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "HINGKJEMI",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "5896.80",
+   "Karakterpoeng": "4900.30",
+   "Søkere totalt": "113"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "HINGKJEMI",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1596.20",
+   "Karakterpoeng": "1352.20",
+   "Søkere totalt": "31"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "HINGMAMO",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3818.20",
+   "Karakterpoeng": "3149.20",
+   "Søkere totalt": "76"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "HINGMAMO",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "684.90",
+   "Karakterpoeng": "555.90",
+   "Søkere totalt": "15"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "HINGMASKIN",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "7864.20",
+   "Karakterpoeng": "6555.20",
+   "Søkere totalt": "161"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "HINGMASKIN",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2339.50",
+   "Karakterpoeng": "1942.50",
+   "Søkere totalt": "46"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "INFORMATIK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "20675.00",
+   "Karakterpoeng": "17343.00",
+   "Søkere totalt": "415"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "INFORMATIK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3662.20",
+   "Karakterpoeng": "3118.70",
+   "Søkere totalt": "67"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "JFOTO",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "370.40",
+   "Karakterpoeng": "279.40",
+   "Søkere totalt": "6"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "JFOTO",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1039.40",
+   "Karakterpoeng": "600.40",
+   "Søkere totalt": "14"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "JMOK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "31139.00",
+   "Karakterpoeng": "27796.00",
+   "Søkere totalt": "638"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "JMOK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2796.30",
+   "Karakterpoeng": "2497.80",
+   "Søkere totalt": "50"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "JOURNALIST",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "56943.50",
+   "Karakterpoeng": "51186.00",
+   "Søkere totalt": "1059"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "JOURNALIST",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "4271.20",
+   "Karakterpoeng": "3779.20",
+   "Søkere totalt": "75"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "LARKIVDOK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9733.50",
+   "Karakterpoeng": "8110.00",
+   "Søkere totalt": "202"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "LARKIVDOK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2126.20",
+   "Karakterpoeng": "1796.20",
+   "Søkere totalt": "43"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "LBIBIN",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "13073.30",
+   "Karakterpoeng": "10912.30",
+   "Søkere totalt": "268"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "LBIBIN",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "5764.20",
+   "Karakterpoeng": "4780.70",
+   "Søkere totalt": "122"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "LBIBÅRS",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9838.10",
+   "Karakterpoeng": "8125.10",
+   "Søkere totalt": "187"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "LBIBÅRS",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1320.80",
+   "Karakterpoeng": "1069.80",
+   "Søkere totalt": "25"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "M1GLU",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "25145.40",
+   "Karakterpoeng": "22555.00",
+   "Søkere totalt": "504"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "M1GLU",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "6440.80",
+   "Karakterpoeng": "5810.80",
+   "Søkere totalt": "131"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "M1GSP",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3962.60",
+   "Karakterpoeng": "3352.10",
+   "Søkere totalt": "78"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "M1GSP",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "345.80",
+   "Karakterpoeng": "275.80",
+   "Søkere totalt": "7"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "M1KPL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "8528.40",
+   "Karakterpoeng": "7649.40",
+   "Søkere totalt": "171"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "M1KPL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2030.00",
+   "Karakterpoeng": "1784.00",
+   "Søkere totalt": "42"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "M5GLU",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "27312.90",
+   "Karakterpoeng": "24246.90",
+   "Søkere totalt": "545"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "M5GLU",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "5672.00",
+   "Karakterpoeng": "5112.00",
+   "Søkere totalt": "114"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MINF",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "7262.70",
+   "Karakterpoeng": "6009.70",
+   "Søkere totalt": "149"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MINF",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1158.60",
+   "Karakterpoeng": "971.60",
+   "Søkere totalt": "23"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MLEST",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4880.50",
+   "Karakterpoeng": "4241.00",
+   "Søkere totalt": "96"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MLEST",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1565.40",
+   "Karakterpoeng": "1386.40",
+   "Søkere totalt": "32"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MOKÅRS",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "20590.80",
+   "Karakterpoeng": "17841.30",
+   "Søkere totalt": "401"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MOKÅRS",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "644.00",
+   "Karakterpoeng": "566.50",
+   "Søkere totalt": "11"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "OKAD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "80033.90",
+   "Karakterpoeng": "71164.40",
+   "Søkere totalt": "1656"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "OKAD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "10544.50",
+   "Karakterpoeng": "9303.00",
+   "Søkere totalt": "194"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "OKADSIV",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "22916.50",
+   "Karakterpoeng": "19832.80",
+   "Søkere totalt": "462"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "OKADSIV",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2933.50",
+   "Karakterpoeng": "2576.00",
+   "Søkere totalt": "53"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "ORTB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3120.80",
+   "Karakterpoeng": "2611.80",
+   "Søkere totalt": "57"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "ORTB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "765.30",
+   "Karakterpoeng": "654.30",
+   "Søkere totalt": "13"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "PARA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "5411.90",
+   "Karakterpoeng": "4764.90",
+   "Søkere totalt": "108"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "PARA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2783.40",
+   "Karakterpoeng": "2405.40",
+   "Søkere totalt": "49"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "PDB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "0.00",
+   "Karakterpoeng": "0.00",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "PDB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "0.00",
+   "Karakterpoeng": "0.00",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "PSYK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "22596.20",
+   "Karakterpoeng": "19960.70",
+   "Søkere totalt": "476"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "PSYK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1452.00",
+   "Karakterpoeng": "1264.50",
+   "Søkere totalt": "29"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "RADB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "34212.30",
+   "Karakterpoeng": "29760.30",
+   "Søkere totalt": "711"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "RADB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1727.60",
+   "Karakterpoeng": "1539.10",
+   "Søkere totalt": "32"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "RESB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "11374.40",
+   "Karakterpoeng": "9574.90",
+   "Søkere totalt": "223"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "RESB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2749.80",
+   "Karakterpoeng": "2326.80",
+   "Søkere totalt": "52"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "SOSH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "59925.50",
+   "Karakterpoeng": "52879.30",
+   "Søkere totalt": "1276"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "SOSH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "5601.60",
+   "Karakterpoeng": "5035.10",
+   "Søkere totalt": "103"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "SYKK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "29264.60",
+   "Karakterpoeng": "25958.60",
+   "Søkere totalt": "628"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "SYKK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "6754.00",
+   "Karakterpoeng": "5940.50",
+   "Søkere totalt": "146"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "SYKP",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "62211.30",
+   "Karakterpoeng": "55525.30",
+   "Søkere totalt": "1280"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "SYKP",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "14511.50",
+   "Karakterpoeng": "12814.50",
+   "Søkere totalt": "308"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "TANNTEKB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "17283.00",
+   "Karakterpoeng": "15032.00",
+   "Søkere totalt": "379"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "TANNTEKB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1175.90",
+   "Karakterpoeng": "1011.40",
+   "Søkere totalt": "23"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "TLB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "8885.70",
+   "Karakterpoeng": "7116.20",
+   "Søkere totalt": "192"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "TLB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1495.90",
+   "Karakterpoeng": "1224.40",
+   "Søkere totalt": "28"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "UTVBA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "12104.00",
+   "Karakterpoeng": "10595.50",
+   "Søkere totalt": "251"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "UTVBA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1270.00",
+   "Karakterpoeng": "1120.50",
+   "Søkere totalt": "25"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "UTVÅRS",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "12563.70",
+   "Karakterpoeng": "10895.70",
+   "Søkere totalt": "244"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "UTVÅRS",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1484.60",
+   "Karakterpoeng": "1337.60",
+   "Søkere totalt": "31"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "UV1-SPPT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "14294.40",
+   "Karakterpoeng": "11963.10",
+   "Søkere totalt": "276"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "UV1-SPPT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1761.20",
+   "Karakterpoeng": "1540.20",
+   "Søkere totalt": "34"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "UVB-SPPT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "532.10",
+   "Karakterpoeng": "454.60",
+   "Søkere totalt": "10"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "UVB-SPPT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "796.50",
+   "Karakterpoeng": "655.00",
+   "Søkere totalt": "16"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "VERB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "32238.00",
+   "Karakterpoeng": "27610.80",
+   "Søkere totalt": "719"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "VERB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "6643.90",
+   "Karakterpoeng": "5836.40",
+   "Søkere totalt": "143"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "YFLH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2235.70",
+   "Karakterpoeng": "1795.20",
+   "Søkere totalt": "48"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "YFLH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1556.00",
+   "Karakterpoeng": "1259.50",
+   "Søkere totalt": "34"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "YFLN",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "664.00",
+   "Karakterpoeng": "533.50",
+   "Søkere totalt": "13"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "YFLN",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "545.10",
+   "Karakterpoeng": "447.10",
+   "Søkere totalt": "11"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "ØKLED",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "34791.50",
+   "Karakterpoeng": "29742.00",
+   "Søkere totalt": "672"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "ØKLED",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1506.20",
+   "Karakterpoeng": "1290.70",
+   "Søkere totalt": "25"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "ØKLEDEL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "27519.00",
+   "Karakterpoeng": "23095.50",
+   "Søkere totalt": "541"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "ØKLEDEL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "984.60",
+   "Karakterpoeng": "830.60",
+   "Søkere totalt": "16"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "ÅRSIT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "25359.00",
+   "Karakterpoeng": "21248.50",
+   "Søkere totalt": "507"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "ÅRSIT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1051.10",
+   "Karakterpoeng": "917.60",
+   "Søkere totalt": "19"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "ADML",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "82021.00",
+   "Karakterpoeng": "73017.00",
+   "Søkere totalt": "1744"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "ADML",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "4408.40",
+   "Karakterpoeng": "3872.40",
+   "Søkere totalt": "84"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "ANVDATA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "47346.60",
+   "Karakterpoeng": "40476.50",
+   "Søkere totalt": "984"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "ANVDATA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "6741.50",
+   "Karakterpoeng": "5876.00",
+   "Søkere totalt": "128"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "BIGB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "19698.10",
+   "Karakterpoeng": "16628.60",
+   "Søkere totalt": "393"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "BIGB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2124.80",
+   "Karakterpoeng": "1829.30",
+   "Søkere totalt": "40"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "BLD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "694.40",
+   "Karakterpoeng": "543.90",
+   "Søkere totalt": "15"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "BLD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2041.50",
+   "Karakterpoeng": "1659.50",
+   "Søkere totalt": "45"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "BLH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "31182.40",
+   "Karakterpoeng": "26830.90",
+   "Søkere totalt": "694"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "BLH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "9384.10",
+   "Karakterpoeng": "8031.20",
+   "Søkere totalt": "216"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "BVUH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "74407.80",
+   "Karakterpoeng": "65758.80",
+   "Søkere totalt": "1622"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "BVUH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "5573.60",
+   "Karakterpoeng": "4868.60",
+   "Søkere totalt": "109"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DKDM",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "32888.80",
+   "Karakterpoeng": "28029.80",
+   "Søkere totalt": "648"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DKDM",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2469.20",
+   "Karakterpoeng": "2080.20",
+   "Søkere totalt": "43"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DOKÅRSD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "15401.60",
+   "Karakterpoeng": "12273.60",
+   "Søkere totalt": "310"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DOKÅRSD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3454.00",
+   "Karakterpoeng": "2797.00",
+   "Søkere totalt": "61"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DT1",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6081.50",
+   "Karakterpoeng": "5267.50",
+   "Søkere totalt": "114"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DT1",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "694.30",
+   "Karakterpoeng": "589.80",
+   "Søkere totalt": "12"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "ERGB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "32631.50",
+   "Karakterpoeng": "28430.20",
+   "Søkere totalt": "705"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "ERGB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3684.00",
+   "Karakterpoeng": "3218.50",
+   "Søkere totalt": "77"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "ESTDTK-BA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "7534.00",
+   "Karakterpoeng": "6396.50",
+   "Søkere totalt": "156"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "ESTDTK-BA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "892.80",
+   "Karakterpoeng": "752.80",
+   "Søkere totalt": "18"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "ESTKD-BA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "37341.40",
+   "Karakterpoeng": "32712.40",
+   "Søkere totalt": "766"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "ESTKD-BA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3777.80",
+   "Karakterpoeng": "3318.80",
+   "Søkere totalt": "75"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "FUTB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "72677.40",
+   "Karakterpoeng": "64361.90",
+   "Søkere totalt": "1473"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "FUTB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "8927.30",
+   "Karakterpoeng": "7839.80",
+   "Søkere totalt": "160"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "HINGBYGG",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "10526.10",
+   "Karakterpoeng": "8736.10",
+   "Søkere totalt": "204"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "HINGBYGG",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "4331.00",
+   "Karakterpoeng": "3645.50",
+   "Søkere totalt": "89"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "HINGDATA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "12066.90",
+   "Karakterpoeng": "9957.40",
+   "Søkere totalt": "239"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "HINGDATA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3811.10",
+   "Karakterpoeng": "3221.60",
+   "Søkere totalt": "73"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "HINGELEKTR",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "7668.10",
+   "Karakterpoeng": "6345.60",
+   "Søkere totalt": "152"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "HINGELEKTR",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3545.00",
+   "Karakterpoeng": "2889.00",
+   "Søkere totalt": "71"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "HINGENERGI",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "5972.50",
+   "Karakterpoeng": "4955.00",
+   "Søkere totalt": "119"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "HINGENERGI",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "734.10",
+   "Karakterpoeng": "580.60",
+   "Søkere totalt": "15"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "HINGKJEMI",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4900.40",
+   "Karakterpoeng": "4047.90",
+   "Søkere totalt": "94"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "HINGKJEMI",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1451.80",
+   "Karakterpoeng": "1187.80",
+   "Søkere totalt": "29"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "HINGMAMO",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4940.70",
+   "Karakterpoeng": "4011.20",
+   "Søkere totalt": "97"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "HINGMAMO",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1381.60",
+   "Karakterpoeng": "1104.10",
+   "Søkere totalt": "27"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "HINGMASKIN",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "8379.20",
+   "Karakterpoeng": "7022.20",
+   "Søkere totalt": "166"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "HINGMASKIN",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2701.30",
+   "Karakterpoeng": "2293.30",
+   "Søkere totalt": "55"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "INFORMATIK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "19688.50",
+   "Karakterpoeng": "16329.50",
+   "Søkere totalt": "389"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "INFORMATIK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "4484.80",
+   "Karakterpoeng": "3812.30",
+   "Søkere totalt": "87"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "JFOTO",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "598.10",
+   "Karakterpoeng": "356.10",
+   "Søkere totalt": "8"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "JFOTO",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "988.50",
+   "Karakterpoeng": "585.00",
+   "Søkere totalt": "13"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "JMOK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "29346.10",
+   "Karakterpoeng": "26057.10",
+   "Søkere totalt": "591"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "JMOK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2741.70",
+   "Karakterpoeng": "2458.70",
+   "Søkere totalt": "50"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "JOURNALIST",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "61870.20",
+   "Karakterpoeng": "55264.70",
+   "Søkere totalt": "1144"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "JOURNALIST",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "5005.70",
+   "Karakterpoeng": "4451.20",
+   "Søkere totalt": "88"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "LARKIVDOK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9463.90",
+   "Karakterpoeng": "7836.90",
+   "Søkere totalt": "195"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "LARKIVDOK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2579.80",
+   "Karakterpoeng": "2152.80",
+   "Søkere totalt": "49"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "LBIBIN",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "15846.20",
+   "Karakterpoeng": "13052.70",
+   "Søkere totalt": "326"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "LBIBIN",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "5785.20",
+   "Karakterpoeng": "4802.20",
+   "Søkere totalt": "120"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "LBIBÅRS",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "10697.60",
+   "Karakterpoeng": "8752.10",
+   "Søkere totalt": "203"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "LBIBÅRS",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1276.30",
+   "Karakterpoeng": "1046.30",
+   "Søkere totalt": "22"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "M1GLU",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "19698.90",
+   "Karakterpoeng": "17567.40",
+   "Søkere totalt": "392"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "M1GLU",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "6940.90",
+   "Karakterpoeng": "6263.90",
+   "Søkere totalt": "140"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "M1GSP",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4091.70",
+   "Karakterpoeng": "3409.70",
+   "Søkere totalt": "77"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "M1GSP",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "321.70",
+   "Karakterpoeng": "266.20",
+   "Søkere totalt": "6"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "M1KPL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "7935.60",
+   "Karakterpoeng": "7020.60",
+   "Søkere totalt": "159"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "M1KPL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1232.20",
+   "Karakterpoeng": "1089.20",
+   "Søkere totalt": "26"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "M5GLU",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "21628.00",
+   "Karakterpoeng": "19083.00",
+   "Søkere totalt": "422"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "M5GLU",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3971.00",
+   "Karakterpoeng": "3576.00",
+   "Søkere totalt": "81"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MINF",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "5573.10",
+   "Karakterpoeng": "4615.10",
+   "Søkere totalt": "111"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MINF",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1042.90",
+   "Karakterpoeng": "846.40",
+   "Søkere totalt": "21"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MLEST",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3924.60",
+   "Karakterpoeng": "3431.60",
+   "Søkere totalt": "76"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MLEST",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1067.70",
+   "Karakterpoeng": "947.70",
+   "Søkere totalt": "21"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MOKÅRS",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "20711.70",
+   "Karakterpoeng": "17834.70",
+   "Søkere totalt": "398"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MOKÅRS",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "528.70",
+   "Karakterpoeng": "453.20",
+   "Søkere totalt": "9"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "OKAD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "85048.00",
+   "Karakterpoeng": "75500.50",
+   "Søkere totalt": "1766"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "OKAD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "10292.20",
+   "Karakterpoeng": "9021.70",
+   "Søkere totalt": "187"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "OKADSIV",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "19558.50",
+   "Karakterpoeng": "16835.00",
+   "Søkere totalt": "384"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "OKADSIV",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3477.00",
+   "Karakterpoeng": "3014.50",
+   "Søkere totalt": "63"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "ORTB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1602.40",
+   "Karakterpoeng": "1347.90",
+   "Søkere totalt": "30"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "ORTB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "803.00",
+   "Karakterpoeng": "671.50",
+   "Søkere totalt": "14"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "PARA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6841.40",
+   "Karakterpoeng": "5934.40",
+   "Søkere totalt": "135"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "PARA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3008.50",
+   "Karakterpoeng": "2628.00",
+   "Søkere totalt": "53"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "PDB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "0.00",
+   "Karakterpoeng": "0.00",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "PDB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "0.00",
+   "Karakterpoeng": "0.00",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "PSYK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "28177.00",
+   "Karakterpoeng": "24842.50",
+   "Søkere totalt": "605"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "PSYK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1985.10",
+   "Karakterpoeng": "1763.60",
+   "Søkere totalt": "39"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "RADB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "36542.00",
+   "Karakterpoeng": "31610.00",
+   "Søkere totalt": "774"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "RADB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2016.20",
+   "Karakterpoeng": "1803.20",
+   "Søkere totalt": "38"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "RESB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9324.70",
+   "Karakterpoeng": "7729.20",
+   "Søkere totalt": "188"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "RESB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2735.00",
+   "Karakterpoeng": "2324.50",
+   "Søkere totalt": "54"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "SOSH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "56253.30",
+   "Karakterpoeng": "49360.70",
+   "Søkere totalt": "1200"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "SOSH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "4887.30",
+   "Karakterpoeng": "4392.30",
+   "Søkere totalt": "91"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "SYKK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "31463.20",
+   "Karakterpoeng": "27502.20",
+   "Søkere totalt": "672"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "SYKK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "7262.00",
+   "Karakterpoeng": "6327.50",
+   "Søkere totalt": "159"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "SYKP",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "59166.70",
+   "Karakterpoeng": "52512.20",
+   "Søkere totalt": "1219"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "SYKP",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "18565.00",
+   "Karakterpoeng": "16285.00",
+   "Søkere totalt": "394"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "UTVBA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9695.90",
+   "Karakterpoeng": "8579.90",
+   "Søkere totalt": "197"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "UTVBA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1007.50",
+   "Karakterpoeng": "896.50",
+   "Søkere totalt": "22"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "UTVÅRS",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "13057.80",
+   "Karakterpoeng": "11079.30",
+   "Søkere totalt": "255"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "UTVÅRS",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1683.50",
+   "Karakterpoeng": "1496.50",
+   "Søkere totalt": "36"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "UV1-SPPT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "11369.50",
+   "Karakterpoeng": "9521.00",
+   "Søkere totalt": "217"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "UV1-SPPT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2184.10",
+   "Karakterpoeng": "1851.10",
+   "Søkere totalt": "43"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "UVB-SPPT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "919.30",
+   "Karakterpoeng": "759.80",
+   "Søkere totalt": "17"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "UVB-SPPT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "462.50",
+   "Karakterpoeng": "390.00",
+   "Søkere totalt": "10"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "VERB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "33887.10",
+   "Karakterpoeng": "28825.60",
+   "Søkere totalt": "768"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "VERB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "6280.30",
+   "Karakterpoeng": "5536.30",
+   "Søkere totalt": "140"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "YFLH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2570.80",
+   "Karakterpoeng": "2065.80",
+   "Søkere totalt": "55"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "YFLH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1215.70",
+   "Karakterpoeng": "971.20",
+   "Søkere totalt": "27"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "YFLN",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "537.30",
+   "Karakterpoeng": "415.30",
+   "Søkere totalt": "12"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "YFLN",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "656.70",
+   "Karakterpoeng": "527.70",
+   "Søkere totalt": "15"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "ØKLED",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "36652.50",
+   "Karakterpoeng": "31285.50",
+   "Søkere totalt": "694"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "ØKLED",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1440.20",
+   "Karakterpoeng": "1213.70",
+   "Søkere totalt": "24"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "ØKLEDEL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "23904.60",
+   "Karakterpoeng": "20083.10",
+   "Søkere totalt": "459"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "ØKLEDEL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1314.40",
+   "Karakterpoeng": "1129.90",
+   "Søkere totalt": "22"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "ÅRSIT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "26060.00",
+   "Karakterpoeng": "21509.50",
+   "Søkere totalt": "504"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "ÅRSIT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1727.80",
+   "Karakterpoeng": "1483.30",
+   "Søkere totalt": "32"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "ADML",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "73535.00",
+   "Karakterpoeng": "65311.00",
+   "Søkere totalt": "1576"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "ADML",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "5093.30",
+   "Karakterpoeng": "4433.30",
+   "Søkere totalt": "98"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "ANVDATA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "40195.70",
+   "Karakterpoeng": "34251.20",
+   "Søkere totalt": "843"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "ANVDATA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "6855.00",
+   "Karakterpoeng": "6045.00",
+   "Søkere totalt": "137"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "BIGB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "16925.40",
+   "Karakterpoeng": "14209.90",
+   "Søkere totalt": "338"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "BIGB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2973.10",
+   "Karakterpoeng": "2501.10",
+   "Søkere totalt": "56"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "BLA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "563.00",
+   "Karakterpoeng": "441.50",
+   "Søkere totalt": "13"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "BLA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "635.00",
+   "Karakterpoeng": "512.00",
+   "Søkere totalt": "13"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "BLD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "735.10",
+   "Karakterpoeng": "591.10",
+   "Søkere totalt": "16"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "BLD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1152.20",
+   "Karakterpoeng": "932.20",
+   "Søkere totalt": "25"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "BLH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "27952.20",
+   "Karakterpoeng": "23948.70",
+   "Søkere totalt": "617"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "BLH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "8524.90",
+   "Karakterpoeng": "7175.90",
+   "Søkere totalt": "197"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "BVUH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "68504.80",
+   "Karakterpoeng": "60344.30",
+   "Søkere totalt": "1503"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "BVUH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "7127.10",
+   "Karakterpoeng": "6255.60",
+   "Søkere totalt": "144"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DKDM",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "26201.10",
+   "Karakterpoeng": "22155.60",
+   "Søkere totalt": "518"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DKDM",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2994.30",
+   "Karakterpoeng": "2497.80",
+   "Søkere totalt": "52"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DOKÅRSD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "17192.50",
+   "Karakterpoeng": "13720.00",
+   "Søkere totalt": "339"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DOKÅRSD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2678.20",
+   "Karakterpoeng": "2179.20",
+   "Søkere totalt": "45"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DT1",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4986.30",
+   "Karakterpoeng": "4249.30",
+   "Søkere totalt": "99"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DT1",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "683.10",
+   "Karakterpoeng": "594.10",
+   "Søkere totalt": "13"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "ERGB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "29606.30",
+   "Karakterpoeng": "25895.80",
+   "Søkere totalt": "636"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "ERGB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3975.80",
+   "Karakterpoeng": "3518.30",
+   "Søkere totalt": "85"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "ESTDTK-BA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6529.80",
+   "Karakterpoeng": "5501.80",
+   "Søkere totalt": "137"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "ESTDTK-BA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "972.50",
+   "Karakterpoeng": "828.00",
+   "Søkere totalt": "19"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "ESTKD-BA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "34474.40",
+   "Karakterpoeng": "30095.40",
+   "Søkere totalt": "706"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "ESTKD-BA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3416.30",
+   "Karakterpoeng": "3007.30",
+   "Søkere totalt": "69"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "FUTB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "71176.90",
+   "Karakterpoeng": "63030.90",
+   "Søkere totalt": "1446"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "FUTB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "9065.30",
+   "Karakterpoeng": "7878.80",
+   "Søkere totalt": "164"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "HINGBYGG",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "11502.70",
+   "Karakterpoeng": "9632.70",
+   "Søkere totalt": "229"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "HINGBYGG",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "4645.60",
+   "Karakterpoeng": "3896.10",
+   "Søkere totalt": "97"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "HINGDATA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9096.20",
+   "Karakterpoeng": "7489.70",
+   "Søkere totalt": "180"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "HINGDATA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3996.50",
+   "Karakterpoeng": "3354.50",
+   "Søkere totalt": "82"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "HINGELEKTR",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "16460.90",
+   "Karakterpoeng": "13676.90",
+   "Søkere totalt": "331"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "HINGELEKTR",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "4149.80",
+   "Karakterpoeng": "3415.80",
+   "Søkere totalt": "86"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "HINGENERGI",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6893.30",
+   "Karakterpoeng": "5620.30",
+   "Søkere totalt": "135"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "HINGENERGI",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "607.80",
+   "Karakterpoeng": "517.80",
+   "Søkere totalt": "12"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "HINGKJEMI",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "5908.20",
+   "Karakterpoeng": "4891.20",
+   "Søkere totalt": "114"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "HINGKJEMI",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1460.60",
+   "Karakterpoeng": "1246.60",
+   "Søkere totalt": "30"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "HINGMAMO",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "5489.00",
+   "Karakterpoeng": "4516.50",
+   "Søkere totalt": "108"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "HINGMAMO",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1049.70",
+   "Karakterpoeng": "826.70",
+   "Søkere totalt": "20"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "HINGMASKIN",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9141.70",
+   "Karakterpoeng": "7693.20",
+   "Søkere totalt": "185"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "HINGMASKIN",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2681.80",
+   "Karakterpoeng": "2245.80",
+   "Søkere totalt": "54"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "INFORMATIK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "12249.10",
+   "Karakterpoeng": "10162.60",
+   "Søkere totalt": "240"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "INFORMATIK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "4552.50",
+   "Karakterpoeng": "3738.50",
+   "Søkere totalt": "92"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "JFOTO",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "333.90",
+   "Karakterpoeng": "172.90",
+   "Søkere totalt": "4"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "JFOTO",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "975.00",
+   "Karakterpoeng": "508.50",
+   "Søkere totalt": "11"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "JMOK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "27353.40",
+   "Karakterpoeng": "24006.40",
+   "Søkere totalt": "553"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "JMOK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2355.30",
+   "Karakterpoeng": "2094.80",
+   "Søkere totalt": "43"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "JOURNALIST",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "49036.00",
+   "Karakterpoeng": "43846.50",
+   "Søkere totalt": "911"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "JOURNALIST",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "4581.40",
+   "Karakterpoeng": "4045.40",
+   "Søkere totalt": "83"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "LARKIVDOK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "8959.50",
+   "Karakterpoeng": "7486.50",
+   "Søkere totalt": "184"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "LARKIVDOK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1719.10",
+   "Karakterpoeng": "1405.60",
+   "Søkere totalt": "34"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "LBIBIN",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "13115.30",
+   "Karakterpoeng": "10785.80",
+   "Søkere totalt": "263"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "LBIBIN",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "5088.00",
+   "Karakterpoeng": "4259.00",
+   "Søkere totalt": "104"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "LBIBÅRS",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "8388.20",
+   "Karakterpoeng": "6867.70",
+   "Søkere totalt": "158"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "LBIBÅRS",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1012.20",
+   "Karakterpoeng": "811.20",
+   "Søkere totalt": "19"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "M1GLU",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "27538.70",
+   "Karakterpoeng": "24346.20",
+   "Søkere totalt": "597"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "M1GLU",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "9260.20",
+   "Karakterpoeng": "8262.20",
+   "Søkere totalt": "204"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "M1GSP",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "10191.10",
+   "Karakterpoeng": "8522.60",
+   "Søkere totalt": "223"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "M1GSP",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "610.20",
+   "Karakterpoeng": "504.70",
+   "Søkere totalt": "15"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "M1KPL",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "8974.50",
+   "Karakterpoeng": "7927.00",
+   "Søkere totalt": "194"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "M1KPL",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1765.80",
+   "Karakterpoeng": "1555.30",
+   "Søkere totalt": "41"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "M5GLU",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "24837.70",
+   "Karakterpoeng": "21676.20",
+   "Søkere totalt": "526"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "M5GLU",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "5397.40",
+   "Karakterpoeng": "4780.40",
+   "Søkere totalt": "119"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MINF",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4201.10",
+   "Karakterpoeng": "3477.10",
+   "Søkere totalt": "82"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MINF",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1035.90",
+   "Karakterpoeng": "842.40",
+   "Søkere totalt": "20"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MLEST",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "7034.20",
+   "Karakterpoeng": "5962.70",
+   "Søkere totalt": "145"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MLEST",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1678.80",
+   "Karakterpoeng": "1437.80",
+   "Søkere totalt": "37"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MOKÅRS",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "22031.70",
+   "Karakterpoeng": "18819.20",
+   "Søkere totalt": "431"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MOKÅRS",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "445.40",
+   "Karakterpoeng": "402.90",
+   "Søkere totalt": "8"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "OKAD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "86535.70",
+   "Karakterpoeng": "76808.70",
+   "Søkere totalt": "1801"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "OKAD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "10383.70",
+   "Karakterpoeng": "9122.70",
+   "Søkere totalt": "188"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "OKADSIV",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "19805.10",
+   "Karakterpoeng": "17033.10",
+   "Søkere totalt": "384"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "OKADSIV",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3816.80",
+   "Karakterpoeng": "3304.30",
+   "Søkere totalt": "70"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "ORTB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2747.90",
+   "Karakterpoeng": "2322.90",
+   "Søkere totalt": "52"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "ORTB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "759.00",
+   "Karakterpoeng": "650.00",
+   "Søkere totalt": "13"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "PARA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "5815.40",
+   "Karakterpoeng": "5035.90",
+   "Søkere totalt": "113"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "PARA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3222.70",
+   "Karakterpoeng": "2809.20",
+   "Søkere totalt": "56"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "PDB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "0.00",
+   "Karakterpoeng": "0.00",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "PDB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "0.00",
+   "Karakterpoeng": "0.00",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "PSYK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "22488.80",
+   "Karakterpoeng": "19877.30",
+   "Søkere totalt": "478"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "PSYK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2289.40",
+   "Karakterpoeng": "1964.90",
+   "Søkere totalt": "47"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "RADB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "42009.50",
+   "Karakterpoeng": "36673.00",
+   "Søkere totalt": "894"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "RADB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1787.00",
+   "Karakterpoeng": "1558.00",
+   "Søkere totalt": "33"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "RESB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "10680.30",
+   "Karakterpoeng": "8855.80",
+   "Søkere totalt": "217"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "RESB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2420.70",
+   "Karakterpoeng": "2071.70",
+   "Søkere totalt": "45"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "SOSH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "55845.00",
+   "Karakterpoeng": "49150.50",
+   "Søkere totalt": "1197"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "SOSH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "6939.20",
+   "Karakterpoeng": "6169.20",
+   "Søkere totalt": "129"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "SYKD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "17791.30",
+   "Karakterpoeng": "14424.80",
+   "Søkere totalt": "403"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "SYKD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1384.80",
+   "Karakterpoeng": "1167.30",
+   "Søkere totalt": "30"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "SYKK",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "47829.00",
+   "Karakterpoeng": "41097.00",
+   "Søkere totalt": "1125"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "SYKK",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "7834.40",
+   "Karakterpoeng": "6876.90",
+   "Søkere totalt": "172"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "SYKP",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "102569.20",
+   "Karakterpoeng": "89681.10",
+   "Søkere totalt": "2309"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "SYKP",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "17797.20",
+   "Karakterpoeng": "15703.70",
+   "Søkere totalt": "368"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "UTVBA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "7708.50",
+   "Karakterpoeng": "6730.50",
+   "Søkere totalt": "165"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "UTVBA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1411.60",
+   "Karakterpoeng": "1259.60",
+   "Søkere totalt": "31"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "UTVÅRS",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9046.70",
+   "Karakterpoeng": "7655.70",
+   "Søkere totalt": "179"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "UTVÅRS",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2288.30",
+   "Karakterpoeng": "1953.30",
+   "Søkere totalt": "50"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "UV1-SPPT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "10622.70",
+   "Karakterpoeng": "8783.20",
+   "Søkere totalt": "202"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "UV1-SPPT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2233.70",
+   "Karakterpoeng": "1859.20",
+   "Søkere totalt": "44"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "UVB-SPPT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "622.90",
+   "Karakterpoeng": "501.40",
+   "Søkere totalt": "12"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "UVB-SPPT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "808.90",
+   "Karakterpoeng": "653.90",
+   "Søkere totalt": "16"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "VERB",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "28541.90",
+   "Karakterpoeng": "24473.90",
+   "Søkere totalt": "630"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "VERB",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "8069.30",
+   "Karakterpoeng": "7006.80",
+   "Søkere totalt": "176"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "YFLH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2087.10",
+   "Karakterpoeng": "1672.10",
+   "Søkere totalt": "46"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "YFLH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1311.00",
+   "Karakterpoeng": "1063.50",
+   "Søkere totalt": "28"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "YFLN",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "405.30",
+   "Karakterpoeng": "325.30",
+   "Søkere totalt": "9"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "YFLN",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "353.50",
+   "Karakterpoeng": "283.00",
+   "Søkere totalt": "8"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "ØKLED",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "45613.50",
+   "Karakterpoeng": "39295.00",
+   "Søkere totalt": "890"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "ØKLED",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1675.10",
+   "Karakterpoeng": "1410.10",
+   "Søkere totalt": "27"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "ÅRSIT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "22238.50",
+   "Karakterpoeng": "18413.00",
+   "Søkere totalt": "443"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "ÅRSIT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1543.70",
+   "Karakterpoeng": "1329.70",
+   "Søkere totalt": "30"
+  }
+ ],
+ "forstevalg": [
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "ADML",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "19333.80",
+   "Karakterpoeng": "17019.30",
+   "Søkere totalt": "429"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "ANVDATA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "17552.50",
+   "Karakterpoeng": "15090.50",
+   "Søkere totalt": "374"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "BIGB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "8077.00",
+   "Karakterpoeng": "6813.00",
+   "Søkere totalt": "154"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "BLD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2827.00",
+   "Karakterpoeng": "2286.00",
+   "Søkere totalt": "63"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "BLH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "15775.10",
+   "Karakterpoeng": "13286.10",
+   "Søkere totalt": "365"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "BVUH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "20717.30",
+   "Karakterpoeng": "18059.30",
+   "Søkere totalt": "451"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DKDM",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "11277.60",
+   "Karakterpoeng": "9329.10",
+   "Søkere totalt": "224"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DOKÅRSD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "14791.30",
+   "Karakterpoeng": "11776.20",
+   "Søkere totalt": "290"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DT1",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2684.00",
+   "Karakterpoeng": "2370.50",
+   "Søkere totalt": "54"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "ERGB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6550.40",
+   "Karakterpoeng": "5562.40",
+   "Søkere totalt": "142"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "ESTDTK-BA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2522.20",
+   "Karakterpoeng": "2232.70",
+   "Søkere totalt": "51"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "ESTKD-BA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "11420.80",
+   "Karakterpoeng": "10100.30",
+   "Søkere totalt": "238"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "FAGFKH-BA2",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3095.30",
+   "Karakterpoeng": "2661.80",
+   "Søkere totalt": "62"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "FUTB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "33565.50",
+   "Karakterpoeng": "29552.00",
+   "Søkere totalt": "664"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "HINGBYGG",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6256.30",
+   "Karakterpoeng": "5083.30",
+   "Søkere totalt": "127"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "HINGDATA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6276.90",
+   "Karakterpoeng": "5218.90",
+   "Søkere totalt": "126"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "HINGELEKTR",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2955.70",
+   "Karakterpoeng": "2409.70",
+   "Søkere totalt": "62"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "HINGENERGI",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1401.40",
+   "Karakterpoeng": "1131.40",
+   "Søkere totalt": "28"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "HINGKJEMI",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1577.80",
+   "Karakterpoeng": "1315.80",
+   "Søkere totalt": "29"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "HINGMASKIN",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2288.50",
+   "Karakterpoeng": "1831.50",
+   "Søkere totalt": "47"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "IFHBA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3211.20",
+   "Karakterpoeng": "2868.20",
+   "Søkere totalt": "67"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "INFORMATIK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "7490.60",
+   "Karakterpoeng": "6225.60",
+   "Søkere totalt": "153"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "JFOTO",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "826.00",
+   "Karakterpoeng": "517.00",
+   "Søkere totalt": "12"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "JMOK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "7203.30",
+   "Karakterpoeng": "6309.30",
+   "Søkere totalt": "144"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "JOURNALIST",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "13924.20",
+   "Karakterpoeng": "12200.70",
+   "Søkere totalt": "262"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "LARKIVDOK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3448.10",
+   "Karakterpoeng": "2810.10",
+   "Søkere totalt": "72"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "LBIBIN",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "7218.90",
+   "Karakterpoeng": "5912.40",
+   "Søkere totalt": "146"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "LBIBÅRS",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "5138.70",
+   "Karakterpoeng": "4167.20",
+   "Søkere totalt": "95"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "M1GLU",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "10582.20",
+   "Karakterpoeng": "9379.70",
+   "Søkere totalt": "213"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "M1GSP",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "185.80",
+   "Karakterpoeng": "164.30",
+   "Søkere totalt": "4"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "M5GLU",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "7370.90",
+   "Karakterpoeng": "6442.40",
+   "Søkere totalt": "146"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MINF",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2845.90",
+   "Karakterpoeng": "2305.90",
+   "Søkere totalt": "54"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MOKÅRS",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4725.90",
+   "Karakterpoeng": "4088.40",
+   "Søkere totalt": "93"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "OKAD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "36583.20",
+   "Karakterpoeng": "32577.80",
+   "Søkere totalt": "750"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "ORTB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1425.30",
+   "Karakterpoeng": "1200.80",
+   "Søkere totalt": "26"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "PARA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "14328.60",
+   "Karakterpoeng": "12270.10",
+   "Søkere totalt": "278"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "PDB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "0.00",
+   "Karakterpoeng": "0.00",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "PSYK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6383.00",
+   "Karakterpoeng": "5582.00",
+   "Søkere totalt": "135"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "RADB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "9274.00",
+   "Karakterpoeng": "7989.00",
+   "Søkere totalt": "202"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "RESB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6180.60",
+   "Karakterpoeng": "5258.60",
+   "Søkere totalt": "119"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "SOSH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "20384.10",
+   "Karakterpoeng": "18005.80",
+   "Søkere totalt": "428"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "SYKK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "13113.00",
+   "Karakterpoeng": "11518.50",
+   "Søkere totalt": "281"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "SYKP",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "30553.00",
+   "Karakterpoeng": "27014.50",
+   "Søkere totalt": "630"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "TANNTEKB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2978.60",
+   "Karakterpoeng": "2585.60",
+   "Søkere totalt": "68"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "TLB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "7000.50",
+   "Karakterpoeng": "5579.50",
+   "Søkere totalt": "151"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "UTVBA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2793.80",
+   "Karakterpoeng": "2507.10",
+   "Søkere totalt": "57"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "UTVÅRS",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3352.10",
+   "Karakterpoeng": "2876.60",
+   "Søkere totalt": "64"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "UV1-SPPT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6383.30",
+   "Karakterpoeng": "5304.30",
+   "Søkere totalt": "125"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "UVB-SPPT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2179.70",
+   "Karakterpoeng": "1834.70",
+   "Søkere totalt": "46"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "VERB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "15173.70",
+   "Karakterpoeng": "12928.70",
+   "Søkere totalt": "336"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "YFLH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2285.30",
+   "Karakterpoeng": "1840.30",
+   "Søkere totalt": "50"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "YFLN",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "473.10",
+   "Karakterpoeng": "383.10",
+   "Søkere totalt": "10"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "ØKLED",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "11793.70",
+   "Karakterpoeng": "9902.20",
+   "Søkere totalt": "225"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "ØKLEDEL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "15950.40",
+   "Karakterpoeng": "12839.90",
+   "Søkere totalt": "295"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "ÅRSIT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "19739.40",
+   "Karakterpoeng": "15965.40",
+   "Søkere totalt": "398"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "ADML",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "15936.50",
+   "Karakterpoeng": "14265.00",
+   "Søkere totalt": "347"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "ANVDATA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "19176.20",
+   "Karakterpoeng": "16523.70",
+   "Søkere totalt": "408"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "BIGB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "7296.40",
+   "Karakterpoeng": "6131.90",
+   "Søkere totalt": "138"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "BLD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2833.70",
+   "Karakterpoeng": "2286.20",
+   "Søkere totalt": "61"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "BLH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "13466.00",
+   "Karakterpoeng": "11401.50",
+   "Søkere totalt": "312"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "BVUH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "17985.50",
+   "Karakterpoeng": "15819.00",
+   "Søkere totalt": "393"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DKDM",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "9121.30",
+   "Karakterpoeng": "7588.80",
+   "Søkere totalt": "182"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DOKÅRSD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "10592.90",
+   "Karakterpoeng": "8439.90",
+   "Søkere totalt": "208"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DT1",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2924.00",
+   "Karakterpoeng": "2565.50",
+   "Søkere totalt": "58"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "ERGB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4950.00",
+   "Karakterpoeng": "4281.00",
+   "Søkere totalt": "107"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "ESTDTK-BA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2687.20",
+   "Karakterpoeng": "2298.20",
+   "Søkere totalt": "56"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "ESTKD-BA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "12125.20",
+   "Karakterpoeng": "10719.70",
+   "Søkere totalt": "253"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "FUTB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "30705.30",
+   "Karakterpoeng": "27174.30",
+   "Søkere totalt": "606"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "HINGBYGG",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "5467.80",
+   "Karakterpoeng": "4534.80",
+   "Søkere totalt": "111"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "HINGDATA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "7519.50",
+   "Karakterpoeng": "6265.50",
+   "Søkere totalt": "151"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "HINGELEKTR",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2273.00",
+   "Karakterpoeng": "1867.00",
+   "Søkere totalt": "46"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "HINGENERGI",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1117.20",
+   "Karakterpoeng": "896.20",
+   "Søkere totalt": "22"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "HINGKJEMI",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "877.10",
+   "Karakterpoeng": "736.60",
+   "Søkere totalt": "18"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "HINGMASKIN",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2030.30",
+   "Karakterpoeng": "1638.80",
+   "Søkere totalt": "42"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "INFORMATIK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "9528.60",
+   "Karakterpoeng": "7950.60",
+   "Søkere totalt": "193"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "JFOTO",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "822.10",
+   "Karakterpoeng": "477.10",
+   "Søkere totalt": "11"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "JMOK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "7463.90",
+   "Karakterpoeng": "6653.90",
+   "Søkere totalt": "152"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "JOURNALIST",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "14743.90",
+   "Karakterpoeng": "13030.40",
+   "Søkere totalt": "275"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "LARKIVDOK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3179.70",
+   "Karakterpoeng": "2626.20",
+   "Søkere totalt": "67"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "LBIBIN",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "7357.80",
+   "Karakterpoeng": "6056.30",
+   "Søkere totalt": "151"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "LBIBÅRS",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3634.60",
+   "Karakterpoeng": "2957.60",
+   "Søkere totalt": "69"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "M1GLU",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "11978.70",
+   "Karakterpoeng": "10775.20",
+   "Søkere totalt": "243"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "M1GSP",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "333.70",
+   "Karakterpoeng": "279.70",
+   "Søkere totalt": "7"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "M1KPL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3536.00",
+   "Karakterpoeng": "3137.50",
+   "Søkere totalt": "74"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "M5GLU",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "9958.70",
+   "Karakterpoeng": "8865.70",
+   "Søkere totalt": "197"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MINF",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2515.60",
+   "Karakterpoeng": "2098.10",
+   "Søkere totalt": "47"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MLEST",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1591.30",
+   "Karakterpoeng": "1414.30",
+   "Søkere totalt": "31"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MOKÅRS",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3076.90",
+   "Karakterpoeng": "2681.90",
+   "Søkere totalt": "60"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "OKAD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "33247.50",
+   "Karakterpoeng": "29803.00",
+   "Søkere totalt": "678"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "ORTB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1582.10",
+   "Karakterpoeng": "1342.60",
+   "Søkere totalt": "29"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "PARA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3645.20",
+   "Karakterpoeng": "3155.70",
+   "Søkere totalt": "66"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "PDB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "0.00",
+   "Karakterpoeng": "0.00",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "PSYK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6232.10",
+   "Karakterpoeng": "5473.60",
+   "Søkere totalt": "133"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "RADB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6845.30",
+   "Karakterpoeng": "5883.30",
+   "Søkere totalt": "144"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "RESB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "7001.60",
+   "Karakterpoeng": "5866.60",
+   "Søkere totalt": "134"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "SOSH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "19676.10",
+   "Karakterpoeng": "17428.10",
+   "Søkere totalt": "411"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "SYKK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "9344.30",
+   "Karakterpoeng": "8258.80",
+   "Søkere totalt": "198"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "SYKP",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "21124.90",
+   "Karakterpoeng": "18922.40",
+   "Søkere totalt": "433"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "UTVBA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1879.70",
+   "Karakterpoeng": "1683.70",
+   "Søkere totalt": "38"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "UTVÅRS",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3600.20",
+   "Karakterpoeng": "3162.20",
+   "Søkere totalt": "70"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "UV1-SPPT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4654.30",
+   "Karakterpoeng": "3881.80",
+   "Søkere totalt": "90"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "UVB-SPPT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "270.30",
+   "Karakterpoeng": "224.30",
+   "Søkere totalt": "6"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "VERB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "10842.70",
+   "Karakterpoeng": "9194.70",
+   "Søkere totalt": "235"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "YFLH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2421.40",
+   "Karakterpoeng": "1962.40",
+   "Søkere totalt": "51"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "YFLN",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "883.10",
+   "Karakterpoeng": "715.10",
+   "Søkere totalt": "19"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "ØKLED",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "9615.40",
+   "Karakterpoeng": "8193.40",
+   "Søkere totalt": "184"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "ØKLEDEL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "10080.40",
+   "Karakterpoeng": "8327.40",
+   "Søkere totalt": "195"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "ÅRSIT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "8270.30",
+   "Karakterpoeng": "6783.80",
+   "Søkere totalt": "161"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "ADML",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "19763.20",
+   "Karakterpoeng": "17374.20",
+   "Søkere totalt": "430"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "ANVDATA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "22375.50",
+   "Karakterpoeng": "19224.50",
+   "Søkere totalt": "464"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "BIGB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6898.20",
+   "Karakterpoeng": "5758.20",
+   "Søkere totalt": "132"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "BLD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1960.00",
+   "Karakterpoeng": "1572.00",
+   "Søkere totalt": "43"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "BLH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "11010.70",
+   "Karakterpoeng": "9316.20",
+   "Søkere totalt": "248"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "BVUH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "15415.80",
+   "Karakterpoeng": "13497.80",
+   "Søkere totalt": "343"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DKDM",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "9503.10",
+   "Karakterpoeng": "7920.10",
+   "Søkere totalt": "187"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DOKÅRSD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "10725.60",
+   "Karakterpoeng": "8530.10",
+   "Søkere totalt": "215"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DT1",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2853.00",
+   "Karakterpoeng": "2462.50",
+   "Søkere totalt": "54"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "ERGB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4867.00",
+   "Karakterpoeng": "4199.50",
+   "Søkere totalt": "107"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "ESTDTK-BA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2229.60",
+   "Karakterpoeng": "2000.60",
+   "Søkere totalt": "46"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "ESTKD-BA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "10768.20",
+   "Karakterpoeng": "9357.70",
+   "Søkere totalt": "224"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "FUTB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "36301.70",
+   "Karakterpoeng": "32149.20",
+   "Søkere totalt": "718"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "HINGBYGG",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4649.90",
+   "Karakterpoeng": "3834.40",
+   "Søkere totalt": "95"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "HINGDATA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6771.90",
+   "Karakterpoeng": "5618.40",
+   "Søkere totalt": "135"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "HINGELEKTR",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2334.80",
+   "Karakterpoeng": "1914.80",
+   "Søkere totalt": "47"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "HINGENERGI",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1064.60",
+   "Karakterpoeng": "891.60",
+   "Søkere totalt": "21"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "HINGKJEMI",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1220.10",
+   "Karakterpoeng": "1025.60",
+   "Søkere totalt": "23"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "HINGMAMO",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "729.60",
+   "Karakterpoeng": "590.60",
+   "Søkere totalt": "15"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "HINGMASKIN",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2733.20",
+   "Karakterpoeng": "2284.70",
+   "Søkere totalt": "55"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "INFORMATIK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "8079.10",
+   "Karakterpoeng": "6753.10",
+   "Søkere totalt": "163"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "JFOTO",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1089.30",
+   "Karakterpoeng": "664.30",
+   "Søkere totalt": "15"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "JMOK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "8503.40",
+   "Karakterpoeng": "7558.90",
+   "Søkere totalt": "169"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "JOURNALIST",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "12951.80",
+   "Karakterpoeng": "11510.30",
+   "Søkere totalt": "239"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "LARKIVDOK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3400.80",
+   "Karakterpoeng": "2803.30",
+   "Søkere totalt": "70"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "LBIBIN",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6337.50",
+   "Karakterpoeng": "5276.00",
+   "Søkere totalt": "129"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "LBIBÅRS",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3429.20",
+   "Karakterpoeng": "2773.20",
+   "Søkere totalt": "64"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "M1GLU",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "8399.60",
+   "Karakterpoeng": "7565.20",
+   "Søkere totalt": "169"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "M1GSP",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "243.70",
+   "Karakterpoeng": "197.70",
+   "Søkere totalt": "5"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "M1KPL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2115.20",
+   "Karakterpoeng": "1895.70",
+   "Søkere totalt": "44"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "M5GLU",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6292.70",
+   "Karakterpoeng": "5660.70",
+   "Søkere totalt": "125"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MINF",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2719.60",
+   "Karakterpoeng": "2201.60",
+   "Søkere totalt": "52"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MLEST",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1368.60",
+   "Karakterpoeng": "1220.60",
+   "Søkere totalt": "28"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MOKÅRS",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3088.40",
+   "Karakterpoeng": "2641.90",
+   "Søkere totalt": "60"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "OKAD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "34560.60",
+   "Karakterpoeng": "30809.10",
+   "Søkere totalt": "711"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "OKADSIV",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "11677.60",
+   "Karakterpoeng": "10030.10",
+   "Søkere totalt": "235"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "ORTB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1764.00",
+   "Karakterpoeng": "1467.50",
+   "Søkere totalt": "31"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "PARA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "5405.70",
+   "Karakterpoeng": "4728.70",
+   "Søkere totalt": "103"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "PDB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "0.00",
+   "Karakterpoeng": "0.00",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "PSYK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4806.60",
+   "Karakterpoeng": "4213.10",
+   "Søkere totalt": "102"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "RADB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "8325.60",
+   "Karakterpoeng": "7220.60",
+   "Søkere totalt": "175"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "RESB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "5055.60",
+   "Karakterpoeng": "4198.60",
+   "Søkere totalt": "99"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "SOSH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "20584.70",
+   "Karakterpoeng": "18109.70",
+   "Søkere totalt": "426"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "SYKK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "7711.70",
+   "Karakterpoeng": "6750.70",
+   "Søkere totalt": "165"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "SYKP",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "19413.90",
+   "Karakterpoeng": "17168.40",
+   "Søkere totalt": "413"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "TANNTEKB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3038.10",
+   "Karakterpoeng": "2569.60",
+   "Søkere totalt": "66"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "TLB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "7023.10",
+   "Karakterpoeng": "5623.60",
+   "Søkere totalt": "151"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "UTVBA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2381.90",
+   "Karakterpoeng": "2131.40",
+   "Søkere totalt": "49"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "UTVÅRS",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3028.00",
+   "Karakterpoeng": "2670.00",
+   "Søkere totalt": "59"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "UV1-SPPT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6053.50",
+   "Karakterpoeng": "4984.00",
+   "Søkere totalt": "115"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "UVB-SPPT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "767.00",
+   "Karakterpoeng": "640.00",
+   "Søkere totalt": "15"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "VERB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "12484.10",
+   "Karakterpoeng": "10610.60",
+   "Søkere totalt": "280"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "YFLH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1680.80",
+   "Karakterpoeng": "1362.80",
+   "Søkere totalt": "35"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "YFLN",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "869.80",
+   "Karakterpoeng": "700.30",
+   "Søkere totalt": "18"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "ØKLED",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "10496.30",
+   "Karakterpoeng": "8798.80",
+   "Søkere totalt": "198"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "ØKLEDEL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "9238.40",
+   "Karakterpoeng": "7582.90",
+   "Søkere totalt": "174"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "ÅRSIT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "8733.20",
+   "Karakterpoeng": "7168.70",
+   "Søkere totalt": "172"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "ADML",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "21197.50",
+   "Karakterpoeng": "18764.50",
+   "Søkere totalt": "461"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "ANVDATA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "20286.60",
+   "Karakterpoeng": "17387.60",
+   "Søkere totalt": "422"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "BIGB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6930.40",
+   "Karakterpoeng": "5738.40",
+   "Søkere totalt": "138"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "BLD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2168.30",
+   "Karakterpoeng": "1747.80",
+   "Søkere totalt": "47"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "BLH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "10129.40",
+   "Karakterpoeng": "8663.00",
+   "Søkere totalt": "229"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "BVUH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "16854.80",
+   "Karakterpoeng": "14580.30",
+   "Søkere totalt": "375"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DKDM",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "10011.30",
+   "Karakterpoeng": "8300.80",
+   "Søkere totalt": "190"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DOKÅRSD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "12601.10",
+   "Karakterpoeng": "10028.10",
+   "Søkere totalt": "252"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DT1",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2254.40",
+   "Karakterpoeng": "1966.40",
+   "Søkere totalt": "42"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "ERGB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "7073.50",
+   "Karakterpoeng": "6054.50",
+   "Søkere totalt": "153"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "ESTDTK-BA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1430.70",
+   "Karakterpoeng": "1244.70",
+   "Søkere totalt": "28"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "ESTKD-BA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "12775.90",
+   "Karakterpoeng": "11170.40",
+   "Søkere totalt": "266"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "FUTB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "32867.40",
+   "Karakterpoeng": "28885.40",
+   "Søkere totalt": "652"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "HINGBYGG",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4300.90",
+   "Karakterpoeng": "3610.90",
+   "Søkere totalt": "87"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "HINGDATA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6294.00",
+   "Karakterpoeng": "5189.50",
+   "Søkere totalt": "125"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "HINGELEKTR",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2030.40",
+   "Karakterpoeng": "1637.90",
+   "Søkere totalt": "41"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "HINGENERGI",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1091.90",
+   "Karakterpoeng": "878.90",
+   "Søkere totalt": "22"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "HINGKJEMI",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1117.50",
+   "Karakterpoeng": "930.50",
+   "Søkere totalt": "22"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "HINGMAMO",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "442.70",
+   "Karakterpoeng": "367.70",
+   "Søkere totalt": "8"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "HINGMASKIN",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2812.20",
+   "Karakterpoeng": "2391.20",
+   "Søkere totalt": "57"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "INFORMATIK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "8395.00",
+   "Karakterpoeng": "6882.00",
+   "Søkere totalt": "165"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "JFOTO",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1586.60",
+   "Karakterpoeng": "941.10",
+   "Søkere totalt": "21"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "JMOK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "7632.80",
+   "Karakterpoeng": "6852.80",
+   "Søkere totalt": "151"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "JOURNALIST",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "14241.70",
+   "Karakterpoeng": "12616.20",
+   "Søkere totalt": "264"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "LARKIVDOK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4078.60",
+   "Karakterpoeng": "3361.60",
+   "Søkere totalt": "81"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "LBIBIN",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6324.90",
+   "Karakterpoeng": "5251.90",
+   "Søkere totalt": "127"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "LBIBÅRS",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "5171.80",
+   "Karakterpoeng": "4192.30",
+   "Søkere totalt": "94"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "M1GLU",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "8423.40",
+   "Karakterpoeng": "7572.90",
+   "Søkere totalt": "168"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "M1GSP",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "246.30",
+   "Karakterpoeng": "213.80",
+   "Søkere totalt": "5"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "M1KPL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1123.00",
+   "Karakterpoeng": "966.50",
+   "Søkere totalt": "22"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "M5GLU",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4180.70",
+   "Karakterpoeng": "3738.70",
+   "Søkere totalt": "83"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MINF",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2380.60",
+   "Karakterpoeng": "1935.10",
+   "Søkere totalt": "46"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MLEST",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1218.40",
+   "Karakterpoeng": "1068.90",
+   "Søkere totalt": "24"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MOKÅRS",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3563.50",
+   "Karakterpoeng": "3018.00",
+   "Søkere totalt": "69"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "OKAD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "36010.90",
+   "Karakterpoeng": "32102.90",
+   "Søkere totalt": "746"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "OKADSIV",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "11557.50",
+   "Karakterpoeng": "9852.50",
+   "Søkere totalt": "224"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "ORTB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1336.00",
+   "Karakterpoeng": "1108.00",
+   "Søkere totalt": "24"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "PARA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6178.90",
+   "Karakterpoeng": "5342.90",
+   "Søkere totalt": "118"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "PDB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "0.00",
+   "Karakterpoeng": "0.00",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "PSYK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "5919.80",
+   "Karakterpoeng": "5168.30",
+   "Søkere totalt": "126"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "RADB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "8524.00",
+   "Karakterpoeng": "7301.00",
+   "Søkere totalt": "181"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "RESB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4721.60",
+   "Karakterpoeng": "3929.10",
+   "Søkere totalt": "95"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "SOSH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "18439.40",
+   "Karakterpoeng": "16229.40",
+   "Søkere totalt": "388"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "SYKK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "5345.00",
+   "Karakterpoeng": "4716.00",
+   "Søkere totalt": "114"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "SYKP",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "24022.80",
+   "Karakterpoeng": "21150.30",
+   "Søkere totalt": "512"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "UTVBA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1722.60",
+   "Karakterpoeng": "1554.10",
+   "Søkere totalt": "35"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "UTVÅRS",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4452.50",
+   "Karakterpoeng": "3788.50",
+   "Søkere totalt": "86"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "UV1-SPPT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4622.10",
+   "Karakterpoeng": "3861.10",
+   "Søkere totalt": "89"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "UVB-SPPT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "542.80",
+   "Karakterpoeng": "446.30",
+   "Søkere totalt": "11"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "VERB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "12832.60",
+   "Karakterpoeng": "10860.10",
+   "Søkere totalt": "294"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "YFLH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2167.70",
+   "Karakterpoeng": "1740.70",
+   "Søkere totalt": "47"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "YFLN",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "913.90",
+   "Karakterpoeng": "718.40",
+   "Søkere totalt": "21"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "ØKLED",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "12363.50",
+   "Karakterpoeng": "10290.50",
+   "Søkere totalt": "227"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "ØKLEDEL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "8515.90",
+   "Karakterpoeng": "7062.40",
+   "Søkere totalt": "159"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "ÅRSIT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "8802.50",
+   "Karakterpoeng": "7182.50",
+   "Søkere totalt": "167"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "ADML",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "18937.30",
+   "Karakterpoeng": "16520.80",
+   "Søkere totalt": "409"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "ANVDATA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "17833.90",
+   "Karakterpoeng": "15194.90",
+   "Søkere totalt": "376"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "BIGB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6556.60",
+   "Karakterpoeng": "5390.10",
+   "Søkere totalt": "130"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "BLA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "717.70",
+   "Karakterpoeng": "571.70",
+   "Søkere totalt": "15"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "BLD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1022.60",
+   "Karakterpoeng": "826.10",
+   "Søkere totalt": "22"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "BLH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "8208.90",
+   "Karakterpoeng": "6976.90",
+   "Søkere totalt": "184"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "BVUH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "18074.00",
+   "Karakterpoeng": "15695.00",
+   "Søkere totalt": "399"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DKDM",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "8130.40",
+   "Karakterpoeng": "6645.90",
+   "Søkere totalt": "153"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DOKÅRSD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "12967.20",
+   "Karakterpoeng": "10350.70",
+   "Søkere totalt": "252"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DT1",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1750.60",
+   "Karakterpoeng": "1491.60",
+   "Søkere totalt": "34"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "ERGB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "5628.80",
+   "Karakterpoeng": "4800.80",
+   "Søkere totalt": "122"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "ESTDTK-BA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1502.60",
+   "Karakterpoeng": "1304.60",
+   "Søkere totalt": "30"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "ESTKD-BA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "10225.60",
+   "Karakterpoeng": "8947.60",
+   "Søkere totalt": "212"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "FUTB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "31337.30",
+   "Karakterpoeng": "27521.80",
+   "Søkere totalt": "623"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "HINGBYGG",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3971.30",
+   "Karakterpoeng": "3333.30",
+   "Søkere totalt": "83"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "HINGDATA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "5294.30",
+   "Karakterpoeng": "4389.30",
+   "Søkere totalt": "107"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "HINGELEKTR",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3787.40",
+   "Karakterpoeng": "3161.40",
+   "Søkere totalt": "77"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "HINGENERGI",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "964.70",
+   "Karakterpoeng": "822.70",
+   "Søkere totalt": "18"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "HINGKJEMI",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1219.40",
+   "Karakterpoeng": "1033.90",
+   "Søkere totalt": "24"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "HINGMAMO",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "698.20",
+   "Karakterpoeng": "553.20",
+   "Søkere totalt": "13"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "HINGMASKIN",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3525.60",
+   "Karakterpoeng": "2938.60",
+   "Søkere totalt": "71"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "INFORMATIK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "5059.80",
+   "Karakterpoeng": "4141.80",
+   "Søkere totalt": "100"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "JFOTO",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1233.10",
+   "Karakterpoeng": "645.60",
+   "Søkere totalt": "14"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "JMOK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6299.10",
+   "Karakterpoeng": "5570.10",
+   "Søkere totalt": "127"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "JOURNALIST",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "10456.90",
+   "Karakterpoeng": "9283.40",
+   "Søkere totalt": "197"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "LARKIVDOK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2668.70",
+   "Karakterpoeng": "2158.70",
+   "Søkere totalt": "54"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "LBIBIN",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6486.10",
+   "Karakterpoeng": "5361.60",
+   "Søkere totalt": "130"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "LBIBÅRS",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3184.00",
+   "Karakterpoeng": "2568.50",
+   "Søkere totalt": "59"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "M1GLU",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "13278.90",
+   "Karakterpoeng": "11756.90",
+   "Søkere totalt": "287"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "M1GSP",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "174.40",
+   "Karakterpoeng": "153.40",
+   "Søkere totalt": "4"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "M1KPL",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1563.50",
+   "Karakterpoeng": "1378.50",
+   "Søkere totalt": "37"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "M5GLU",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6086.10",
+   "Karakterpoeng": "5324.10",
+   "Søkere totalt": "131"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MINF",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1990.40",
+   "Karakterpoeng": "1625.40",
+   "Søkere totalt": "37"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MLEST",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1930.40",
+   "Karakterpoeng": "1670.40",
+   "Søkere totalt": "39"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MOKÅRS",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4919.10",
+   "Karakterpoeng": "4147.10",
+   "Søkere totalt": "94"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "OKAD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "38605.90",
+   "Karakterpoeng": "34671.40",
+   "Søkere totalt": "806"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "OKADSIV",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "11527.00",
+   "Karakterpoeng": "9808.00",
+   "Søkere totalt": "222"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "ORTB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1626.40",
+   "Karakterpoeng": "1342.40",
+   "Søkere totalt": "29"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "PARA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6631.50",
+   "Karakterpoeng": "5753.00",
+   "Søkere totalt": "123"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "PDB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "0.00",
+   "Karakterpoeng": "0.00",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "PSYK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "5191.30",
+   "Karakterpoeng": "4482.30",
+   "Søkere totalt": "112"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "RADB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "9439.60",
+   "Karakterpoeng": "8133.60",
+   "Søkere totalt": "198"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "RESB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "5206.10",
+   "Karakterpoeng": "4328.60",
+   "Søkere totalt": "103"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "SOSH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "20630.00",
+   "Karakterpoeng": "18121.00",
+   "Søkere totalt": "431"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "SYKD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "5241.20",
+   "Karakterpoeng": "4165.70",
+   "Søkere totalt": "116"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "SYKK",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "11427.70",
+   "Karakterpoeng": "9758.70",
+   "Søkere totalt": "263"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "SYKP",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "41649.10",
+   "Karakterpoeng": "36158.10",
+   "Søkere totalt": "944"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "UTVBA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1405.10",
+   "Karakterpoeng": "1256.60",
+   "Søkere totalt": "30"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "UTVÅRS",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2507.10",
+   "Karakterpoeng": "2114.60",
+   "Søkere totalt": "51"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "UV1-SPPT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "5492.40",
+   "Karakterpoeng": "4547.90",
+   "Søkere totalt": "103"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "UVB-SPPT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "933.90",
+   "Karakterpoeng": "754.90",
+   "Søkere totalt": "18"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "VERB",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "10897.60",
+   "Karakterpoeng": "9272.60",
+   "Søkere totalt": "237"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "YFLH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1595.90",
+   "Karakterpoeng": "1284.40",
+   "Søkere totalt": "34"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "YFLN",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "532.60",
+   "Karakterpoeng": "427.10",
+   "Søkere totalt": "12"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "ØKLED",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "17491.50",
+   "Karakterpoeng": "14664.50",
+   "Søkere totalt": "324"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "ÅRSIT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "8361.70",
+   "Karakterpoeng": "6843.20",
+   "Søkere totalt": "164"
+  }
+ ]
+}
