@@ -131,3 +131,10 @@ python3 scripts/build-studiebarometer.py realtek [--refresh]
 python3 scripts/build-markedsstatus.py realtek
 python3 scripts/link-studyplan-codes.py realtek                   # etter nye studieplanfiler
 ```
+
+## 10. Passordsperre på Handelshøyskolen
+
+Handelshøyskolen ligger bak en enkel passordsperre (`PasswordGate.tsx`, koblet inn i `App.tsx`).
+Passordet settes i `kilde/.env.local` som `VITE_HH_PASSORD` (filen er gitignored; uten filen er
+passordet «nmbu»). Dev-serveren må startes på nytt etter endring. Opplåsingen varer til fanen lukkes.
+Sperren skjuler bare visningen: dataene ligger fortsatt i den bygde JavaScript-en.

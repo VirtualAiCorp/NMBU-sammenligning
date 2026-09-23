@@ -16,6 +16,7 @@ import { NMBUMasterAnalysis } from './components/NMBUMasterAnalysis';
 import { AdmissionAnalysis2026 } from './components/AdmissionAnalysis2026';
 import { MarkedsstatusView } from './components/MarkedsstatusView';
 import { FacultyLanding, type Faculty } from './components/FacultyLanding';
+import { PasswordGate } from './components/PasswordGate';
 import { LandsamLanding } from './components/LandsamLanding';
 import { LandsamAdmissionAnalysis } from './components/LandsamAdmissionAnalysis';
 import { LandsamCourseAnalysis } from './components/LandsamCourseAnalysis';
@@ -266,6 +267,7 @@ export default function App() {
   // Landing / program picker
   if (programLevel === null) {
     return (
+      <PasswordGate storageKey="hh-unlocked" title="Handelshøyskolen NMBU" onBack={() => setFaculty(null)}>
       <div className="min-h-screen flex flex-col items-center justify-center p-6" style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
         <div className="max-w-3xl w-full">
           <div className="flex items-center gap-2 mb-6">
@@ -453,6 +455,7 @@ export default function App() {
           </div>
         </div>
       </div>
+      </PasswordGate>
     );
   }
 
