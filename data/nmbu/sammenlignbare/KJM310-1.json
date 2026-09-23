@@ -1,0 +1,8 @@
+{
+ "kode": "KJM310-1", "navn": "Kromatografi", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Emne i kromatografiske analysemetoder. Sammenlignet med tilsvarende kromatografiemner ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "1150", "kode": "KJ2053-1", "navn": "Kromatografi (Analytisk kjemi II)", "sikkerhet": "høy", "merknad": "NTNU, identisk emnenavn og nivå, 7,5 stp"},
+  {"inst": "1150", "kode": "KJ3059-1", "navn": "Videregående kromatografi", "sikkerhet": "middels", "merknad": "NTNU, videregående variant, noe høyere nivå (master)"}
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "kode": "NATF240-1", "navn": "Fiskeøkologi og forvaltning", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Bachelor-emne om fiskeøkologi og fiskeforvaltning. Sammenlignet med tilsvarende fiskeforvaltnings-/fiskeøkologiemner ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "1177", "kode": "UTM2220-1", "navn": "Fiskeforvaltning", "sikkerhet": "høy", "merknad": "INN, 7,5 stp, bachelor, direkte tilsvarende emne i fiskeforvaltning"},
+  {"inst": "1110", "kode": "BIOS4315-1", "navn": "Fiskeøkologi", "sikkerhet": "middels", "merknad": "UiO, 10 stp, masternivå (HN) mot NMBUs bachelor-emne, men samme kjernetema fiskeøkologi"},
+  {"inst": "1171", "kode": "BIO407-1", "navn": "Applied Fish Ecology", "sikkerhet": "middels", "merknad": "UiA, 5 stp, masternivå (HN), anvendt fiskeøkologi"}
+ ]
+}

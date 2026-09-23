@@ -1,0 +1,9 @@
+{
+ "kode": "NATF230-1", "navn": "Viltbiologi og forvaltning", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Bachelor-emne om viltbiologi og viltforvaltning. Sammenlignet med tilsvarende wildlife-emner ved INN og USN, bachelornivå.",
+ "sammenlignbare": [
+  {"inst": "1177", "kode": "UTM1140-1", "navn": "Wildlife ecology", "sikkerhet": "høy", "merknad": "INN, 7,5 stp, bachelor, direkte tilsvarende tema viltbiologi/-økologi"},
+  {"inst": "1177", "kode": "6AE216-1", "navn": "Wildlife management", "sikkerhet": "høy", "merknad": "INN, 7,5 stp, bachelor, direkte tilsvarende tema viltforvaltning"},
+  {"inst": "1176", "kode": "NF214-1", "navn": "Wildlife Conflict Management", "sikkerhet": "middels", "merknad": "USN, 7,5 stp, bachelor, viltforvaltning med konfliktvinkling"}
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "kode": "TEL100-1", "navn": "Elektronisk prototyping", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Praktisk innføring i elektronikk og prototyping (kretsbygging, mikrokontrollere, prosjektarbeid) for ingeniørstudenter. Ingen andre institusjoner har et emne med akkurat samme profil; sammenlignet med nærmeste elektronikk-/mikrokontroller-/prototypingemner.",
+ "sammenlignbare": [
+  {"inst": "1110", "kode": "FYS1210-1", "navn": "Elektronikk med prosjektoppgaver", "sikkerhet": "middels", "merknad": "UiO, elektronikk med praktisk prosjektarbeid, samme nivå"},
+  {"inst": "1171", "kode": "IKT104-G", "navn": "Mikrokontrollere", "sikkerhet": "middels", "merknad": "UiA, praktisk mikrokontrollerprogrammering som ofte inngår i prototyping"},
+  {"inst": "1150", "kode": "IDG1060-1", "navn": "Prototyping", "sikkerhet": "lav", "merknad": "NTNU, generell prototyping (mer produktdesign enn elektronikk)"},
+  {"inst": "1175", "kode": "ELI1100-1", "navn": "Elektronikk", "sikkerhet": "lav", "merknad": "OsloMet, grunnleggende elektronikk uten eksplisitt prototypingfokus"}
+ ]
+}

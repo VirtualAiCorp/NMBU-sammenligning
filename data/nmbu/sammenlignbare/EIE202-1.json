@@ -1,0 +1,8 @@
+{
+ "kode": "EIE202-1", "navn": "Eiendomshistorie", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Svært spesifikt emne om eiendomsrettens og eiendomsforholdenes historiske utvikling i Norge. Ingen andre institusjoner har et rendyrket eiendomshistorie-emne; nærmeste er generell rettshistorie og eiendomsrett. Lav-middels sikkerhet.",
+ "sammenlignbare": [
+  {"inst": "1110", "kode": "JUS3220-1", "navn": "Rettshistorie", "sikkerhet": "lav", "merknad": "UiO, 8 stp, bachelor, generell rettshistorie (ikke spesifikt eiendom)"},
+  {"inst": "8253", "kode": "6353-1", "navn": "Eiendomsrett", "sikkerhet": "lav", "merknad": "Kristiania, 15 stp, bachelor, eiendomsrett men ikke historisk vinklet"}
+ ]
+}

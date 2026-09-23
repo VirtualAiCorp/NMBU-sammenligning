@@ -1,0 +1,8 @@
+{
+ "kode": "MVI382A-1", "navn": "Alkoholholdig drikke", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Emne om produksjon og kvalitet av alkoholholdige drikkevarer. Ingen andre institusjoner har et bredt «alkoholholdig drikke»-emne; sammenlignet med nærmeste emner om ølbrygging (den mest utbredte alkoholholdig-drikke-produksjonen i registeret).",
+ "sammenlignbare": [
+  {"inst": "0238", "kode": "KJE117-1", "navn": "Ølbrygging som næringsmiddelindustri", "sikkerhet": "middels", "merknad": "HVL, produksjon av alkoholholdig drikke som næringsmiddelindustri, 10 stp"},
+  {"inst": "1130", "kode": "AUT-2600-1", "navn": "Ølbrygging", "sikkerhet": "lav", "merknad": "UiT, smalere (kun øl), mindre omfang (5 stp)"}
+ ]
+}

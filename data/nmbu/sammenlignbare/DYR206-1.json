@@ -1,0 +1,9 @@
+{
+ "kode": "DYR206-1", "navn": "Sykdomslære og dyrepleie", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Bredt emne som kombinerer sykdomslære med praktisk dyrepleie (25 stp, NUS 667205). Nords 'Sykdomslære og ernæring' har svært likt navn og tema; 'Sykdomslære 1/2' dekker sykdomslæredelen mer isolert.",
+ "sammenlignbare": [
+  {"inst": "1174", "kode": "DYR2005-1", "navn": "Sykdomslære og ernæring", "sikkerhet": "høy", "merknad": "Nord, dyrepleie, kombinerer sykdomslære med tilstøtende tema (ernæring i stedet for dyrepleiepraksis), 15 stp"},
+  {"inst": "1174", "kode": "DYR2001-1", "navn": "Sykdomslære 2", "sikkerhet": "middels", "merknad": "Nord, dyrepleie, sykdomslære isolert uten den praktiske dyrepleiedelen, 5 stp"},
+  {"inst": "1174", "kode": "DYR1002-1", "navn": "Sykdomslære 1", "sikkerhet": "middels", "merknad": "Nord, dyrepleie, grunnleggende sykdomslære, 7,5 stp"}
+ ]
+}

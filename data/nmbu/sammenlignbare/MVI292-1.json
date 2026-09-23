@@ -1,0 +1,9 @@
+{
+ "kode": "MVI292-1", "navn": "Immunsystemet, mat og helse", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Emne om sammenhengen mellom immunsystem, ernæring/mat og helse. Ingen andre institusjoner har et identisk «mat/ernæring og immunsystem»-emne; sammenlignet med generelle immunologiemner (nærmeste tilgjengelige) og et ernæringsfysiologiemne.",
+ "sammenlignbare": [
+  {"inst": "1160", "kode": "BIO250-1", "navn": "Immunologi", "sikkerhet": "lav", "merknad": "UiS, generell immunologi på bachelornivå, uten eksplisitt mat-/ernæringsvinkling"},
+  {"inst": "8253", "kode": "BIO500-1", "navn": "Immunologi", "sikkerhet": "lav", "merknad": "Høyskolen Kristiania, generell immunologi, samme nivå"},
+  {"inst": "1120", "kode": "NUTR203-0", "navn": "Ernæringsfysiologi - makronæringsstoffer", "sikkerhet": "lav", "merknad": "UiB, ernæringsfysiologi som delvis overlapper mat/helse-perspektivet, ikke immunfokusert"}
+ ]
+}

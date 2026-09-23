@@ -1,0 +1,10 @@
+{
+ "kode": "IND230-1", "navn": "Kvalitetsstyring", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Bachelorkurs i kvalitetsstyring/-ledelse for industri-/teknologistudenter. Sammenlignet med tilsvarende kvalitetsstyrings-/kvalitetsledelsesemner ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "1150", "kode": "TLOG2008-1", "navn": "Produksjons- og kvalitetsstyring", "sikkerhet": "høy", "merknad": "NTNU, identisk fagfelt og nivå, 7,5 stp"},
+  {"inst": "1176", "kode": "KL3000K-1", "navn": "Kvalitetsledelse", "sikkerhet": "høy", "merknad": "USN, samme tema, 7,5 stp"},
+  {"inst": "0232", "kode": "LOG525-1", "navn": "Kvalitetsledelse og LEAN", "sikkerhet": "middels", "merknad": "HiMolde, kvalitetsledelse kombinert med LEAN"},
+  {"inst": "1130", "kode": "MAS-2604-1", "navn": "Konstruksjonselementer, standarder og kvalitetsstyring", "sikkerhet": "lav", "merknad": "UiT, kvalitetsstyring som del av bredere emne"}
+ ]
+}

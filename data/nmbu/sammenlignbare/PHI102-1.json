@@ -1,0 +1,11 @@
+{
+ "kode": "PHI102-1", "navn": "Examen philosophicum - Engelsk versjon", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Obligatorisk examen philosophicum, 10 stp bachelor. Alle norske universiteter har eget exphil-emne; prioritert de største generelle variantene samt NTNUs og UiS' økonomitilpassede exphil siden NMBU-emnet gis til Handelshøyskolens studenter.",
+ "sammenlignbare": [
+  {"inst": "1110", "kode": "EXPHIL03-1", "navn": "Examen philosophicum", "sikkerhet": "høy", "merknad": "UiO, 10 stp, bachelor, størst i kandidattall nasjonalt"},
+  {"inst": "1150", "kode": "EXPH0500-1", "navn": "Examen philosophicum for økonomi", "sikkerhet": "høy", "merknad": "NTNU, 7,5 stp, bachelor, tilpasset økonomistudenter som NMBU-emnet"},
+  {"inst": "1160", "kode": "HHEXPHIL-1", "navn": "Examen Philosophicum - HH", "sikkerhet": "høy", "merknad": "UiS, 10 stp, bachelor, tilpasset Handelshøgskolens studenter"},
+  {"inst": "1120", "kode": "EXPHIL-SVSEM-0", "navn": "Examen philosophicum - seminarmodell", "sikkerhet": "middels", "merknad": "UiB, 10 stp, bachelor, generell variant (samfunnsvitenskap)"},
+  {"inst": "1171", "kode": "EX-100-1", "navn": "Examen philosophicum", "sikkerhet": "middels", "merknad": "UiA, 10 stp, bachelor, generell variant"}
+ ]
+}

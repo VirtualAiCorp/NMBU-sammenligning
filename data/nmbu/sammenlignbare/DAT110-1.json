@@ -1,0 +1,10 @@
+{
+ "kode": "DAT110-1", "navn": "Innføring i dataanalyse og -visualisering", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Innføringsemne (1. år) i praktisk dataanalyse og visualisering. Sammenlignet med tilsvarende innførings-/visualiseringsemner ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "1171", "kode": "ME-111-1", "navn": "Innføring i dataanalyse", "sikkerhet": "høy", "merknad": "UiA, identisk emnenavn (innføring), samme nivå, 7,5 stp"},
+  {"inst": "1175", "kode": "ADSE3200-1", "navn": "Visualisering", "sikkerhet": "middels", "merknad": "OsloMet, 10 stp, dekker visualiseringsdelen"},
+  {"inst": "1176", "kode": "VIS3000V-1", "navn": "Visualisering av data", "sikkerhet": "middels", "merknad": "USN, samme tema, 7,5 stp"},
+  {"inst": "1150", "kode": "IE500417-1", "navn": "Databehandling og visualisering", "sikkerhet": "middels", "merknad": "NTNU, kombinerer databehandling og visualisering som DAT110"}
+ ]
+}

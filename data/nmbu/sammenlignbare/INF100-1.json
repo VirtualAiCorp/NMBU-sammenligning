@@ -1,0 +1,10 @@
+{
+ "kode": "INF100-1", "navn": "Prinsipper i informasjonsbehandling", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Innføringsemne (1. år) i grunnleggende programmering/informasjonsbehandling. Sammenlignet med tilsvarende grunnkurs i programmering/informasjonsbehandling ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "0232", "kode": "IBE201-1", "navn": "Informasjonsbehandling", "sikkerhet": "høy", "merknad": "HiMolde, identisk emnenavn, 7,5 stp"},
+  {"inst": "1110", "kode": "IN1000-1", "navn": "Introduksjon til objektorientert programmering", "sikkerhet": "middels", "merknad": "UiO, standard førsteårs programmeringskurs, 10 stp"},
+  {"inst": "1150", "kode": "PROG1001-1", "navn": "Grunnleggende programmering", "sikkerhet": "middels", "merknad": "NTNU, grunnleggende programmering på tilsvarende nivå"},
+  {"inst": "1160", "kode": "DAT120-1", "navn": "Grunnleggende programmering", "sikkerhet": "middels", "merknad": "UiS, 10 stp, samme nivå"}
+ ]
+}

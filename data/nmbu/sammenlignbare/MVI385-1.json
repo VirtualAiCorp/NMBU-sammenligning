@@ -1,0 +1,9 @@
+{
+ "kode": "MVI385-1", "navn": "Produktutvikling av mat", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Emne om utvikling av nye matprodukter, inkludert sensorikk. Sammenlignet med tilsvarende produktutviklings-/sensorikkemner innen matvitenskap ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "1150", "kode": "TMAT2005-A", "navn": "Produktutvikling og sensorisk analyse - brygging av håndverksøl", "sikkerhet": "høy", "merknad": "NTNU, samme kjerne (produktutvikling og sensorikk) i matvitenskap, 7,5 stp"},
+  {"inst": "1150", "kode": "MATV3002-1", "navn": "Matteknologi - kjøtt og fisk", "sikkerhet": "middels", "merknad": "NTNU, produktrettet matteknologi, samme fagmiljø"},
+  {"inst": "1150", "kode": "TMMT5001-A", "navn": "Rammebetingelser for matindustrien", "sikkerhet": "lav", "merknad": "NTNU, bredere om matindustriens rammer, ikke ren produktutvikling"}
+ ]
+}

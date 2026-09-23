@@ -1,0 +1,9 @@
+{
+ "kode": "NATF100-1", "navn": "Innføringskurs i naturforvaltning", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Bachelor innføringsemne i naturforvaltning. Sammenlignet med tilsvarende innførings-/breddeemner i naturforvaltning ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "1174", "kode": "NAT330-1", "navn": "Naturforvaltning", "sikkerhet": "høy", "merknad": "Nord universitet, 20 stp, bachelor, bredt naturforvaltningsemne, større omfang"},
+  {"inst": "1150", "kode": "GEOG1013-1", "navn": "Naturressursforvaltning, miljø og bærekraftig utvikling", "sikkerhet": "middels", "merknad": "NTNU, 15 stp, bachelor, naturressursforvaltning som del av bredere emne"},
+  {"inst": "1177", "kode": "UTM1140-1", "navn": "Wildlife ecology", "sikkerhet": "lav", "merknad": "INN, 7,5 stp, bachelor, delmengde av naturforvaltningsfeltet (vilt)"}
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "kode": "INF221-1", "navn": "Informatikk for datavitere", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Informatikkgrunnlag (programmering, algoritmer, datastrukturer) tilpasset data science-studenter. Ingen andre institusjoner har et identisk «informatikk for data scientists»-emne; sammenlignet med nærmeste algoritme-/datastrukturemner som brukes i data science-programmer.",
+ "sammenlignbare": [
+  {"inst": "1120", "kode": "INF102-0", "navn": "Algoritmer, datastrukturer og programmering", "sikkerhet": "middels", "merknad": "UiB, samme kjernetema, del av data science-løp"},
+  {"inst": "1110", "kode": "IN2010-1", "navn": "Algoritmer og datastrukturer", "sikkerhet": "middels", "merknad": "UiO, sentralt informatikkfag for realfags-/dataviterstudenter"},
+  {"inst": "1150", "kode": "TDT4120-1", "navn": "Algoritmer og datastrukturer", "sikkerhet": "lav", "merknad": "NTNU, generelt informatikkfag, ikke spesifikt rettet mot dataviterstudenter"}
+ ]
+}

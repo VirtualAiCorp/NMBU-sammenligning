@@ -1,0 +1,10 @@
+{
+ "kode": "FYS103-1", "navn": "Måleteknikk og dataanalyse", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Grunnkurs i eksperimentell fysikk: instrumentering, måleusikkerhet og dataanalyse. Sammenlignet med tilsvarende måleteknikkemner ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "1150", "kode": "TFY4185-2", "navn": "Måleteknikk", "sikkerhet": "høy", "merknad": "NTNU, identisk emnenavn og fagfelt, 7,5 stp"},
+  {"inst": "0238", "kode": "ELE161-1", "navn": "Statistikk og måleteknikk", "sikkerhet": "middels", "merknad": "HVL, kombinerer statistikk og måleteknikk som FYS103"},
+  {"inst": "1150", "kode": "TTK4101-1", "navn": "Instrumentering og måleteknikk", "sikkerhet": "middels", "merknad": "NTNU, mer instrumenteringsrettet, samme nivå"},
+  {"inst": "1176", "kode": "TSE2280-1", "navn": "Måleteknikk og signalbehandling", "sikkerhet": "middels", "merknad": "USN, måleteknikk kombinert med signalbehandling"}
+ ]
+}

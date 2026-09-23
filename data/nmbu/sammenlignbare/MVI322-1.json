@@ -1,0 +1,9 @@
+{
+ "kode": "MVI322-1", "navn": "Patogene mikroorganismer", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Emne om sykdomsfremkallende mikroorganismer i mat. Ingen andre institusjoner har et rendyrket «patogene mikroorganismer i mat»-emne; sammenlignet med tilsvarende næringsmiddelmikrobiologiemner.",
+ "sammenlignbare": [
+  {"inst": "1120", "kode": "BIO207-0", "navn": "Næringsmiddelmikrobiologi med spesiell relevans til sjømat", "sikkerhet": "middels", "merknad": "UiB, dekker patogene mikroorganismer i mat som del av bredere næringsmiddelmikrobiologi"},
+  {"inst": "1160", "kode": "BIO600-1", "navn": "Næringsmiddelmikrobiologi", "sikkerhet": "middels", "merknad": "UiS, samme fagfelt, masternivå"},
+  {"inst": "1150", "kode": "MATV1008-1", "navn": "Mikrobiologi og mattrygghet", "sikkerhet": "lav", "merknad": "NTNU, bredere innføring i mikrobiologi og mattrygghet, lavere nivå"}
+ ]
+}

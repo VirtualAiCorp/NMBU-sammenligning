@@ -1,0 +1,10 @@
+{
+ "kode": "IND210-1", "navn": "Driftsledelse", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Bachelorkurs i drifts-/produksjonsledelse (operations management) for industri-/teknologistudenter. Sammenlignet med tilsvarende operations management/produksjonsledelsesemner ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "1150", "kode": "TLOG1020-1", "navn": "Operations Management", "sikkerhet": "høy", "merknad": "NTNU, samme fagfelt og nivå, 7,5 stp"},
+  {"inst": "1150", "kode": "TPK4100-1", "navn": "Produksjonsledelse", "sikkerhet": "høy", "merknad": "NTNU, direkte oversettelse av driftsledelse/operations management"},
+  {"inst": "0238", "kode": "ØAL116-1", "navn": "Produksjonsledelse og prosessforbedring", "sikkerhet": "middels", "merknad": "HVL, produksjonsledelse med prosessforbedring"},
+  {"inst": "1160", "kode": "MSB255-1", "navn": "Supply Chain and Operations Management", "sikkerhet": "middels", "merknad": "UiS, bredere med forsyningskjede, men samme kjerne"}
+ ]
+}

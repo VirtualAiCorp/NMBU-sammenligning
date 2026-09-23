@@ -1,0 +1,10 @@
+{
+ "kode": "FHV330-1", "navn": "Folkehelsevitenskap", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Masteremne i folkehelsevitenskap. Sammenlignet med tilsvarende folkehelseemner på masternivå, flere med identisk NUS-kode (769915).",
+ "sammenlignbare": [
+  {"inst": "1130", "kode": "HEL-3005-1", "navn": "Society, Culture and Public Health", "sikkerhet": "høy", "merknad": "UiT, 10 stp, master, identisk NUS-kode (769915), samme kjernetema folkehelsevitenskap"},
+  {"inst": "1130", "kode": "HEL-3045-1", "navn": "Introduction to Public Health", "sikkerhet": "høy", "merknad": "UiT, 10 stp, master, identisk NUS-kode (769915)"},
+  {"inst": "8253", "kode": "FHV4100-1", "navn": "Folkehelsevitenskap", "sikkerhet": "høy", "merknad": "Kristiania, 15 stp, master, navnelikt emne"},
+  {"inst": "1171", "kode": "ME-516-1", "navn": "Masteroppgave i folkehelsevitenskap", "sikkerhet": "middels", "merknad": "UiA, 60 stp, master, samme fagfelt men masteroppgave ikke fagemne"}
+ ]
+}

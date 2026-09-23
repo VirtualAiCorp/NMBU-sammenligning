@@ -1,0 +1,9 @@
+{
+ "kode": "VET306-1", "navn": "Allmenn sykdomslære", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Grunnleggende generell patologi/sykdomslære i veterinærstudiet (21 stp, NUS 767101). Sammenlignet med generell patologi-emner for humanmedisin/helsefag ved andre institusjoner - samme basalfag, men for annen art/profesjon og ofte mindre omfang.",
+ "sammenlignbare": [
+  {"inst": "1150", "kode": "FYST2202-1", "navn": "Generell patologi", "sikkerhet": "middels", "merknad": "NTNU, generell patologi for farmasi/helsefag, 7,5 stp - samme basaltema, humanmedisin og mindre omfang"},
+  {"inst": "1120", "kode": "TPBAPAT-0", "navn": "Patologi generell", "sikkerhet": "lav", "merknad": "UiB, bioingeniørutdanning, generell patologi, 5 stp - langt mindre omfang"},
+  {"inst": "1171", "kode": "ML-306-1", "navn": "Patologi", "sikkerhet": "lav", "merknad": "UiA, medisinske laboratoriefag, patologi, 10 stp - annen profesjon, mindre omfang"}
+ ]
+}

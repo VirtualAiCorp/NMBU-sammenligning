@@ -1,0 +1,9 @@
+{
+ "kode": "FYS241-1", "navn": "Miljøfysikk", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Bachelorkurs i miljøfysikk (energi, stråling, klima sett fra fysikk). Få direkte treff nasjonalt; sammenlignet med nærmeste energi-/miljøfysikkemner.",
+ "sammenlignbare": [
+  {"inst": "1150", "kode": "TFY4300-1", "navn": "Energi- og miljøfysikk", "sikkerhet": "høy", "merknad": "NTNU, tett faglig overlapp, samme nivå, 7,5 stp"},
+  {"inst": "1120", "kode": "ITØK170-0", "navn": "Energi- og miljøfysikk", "sikkerhet": "høy", "merknad": "UiB, identisk fagfelt, 10 stp"},
+  {"inst": "1120", "kode": "PHYS231-0", "navn": "Strålingsfysikk", "sikkerhet": "lav", "merknad": "UiB, delvis overlapp (stråling som miljøfysikk-tema), smalere fokus"}
+ ]
+}

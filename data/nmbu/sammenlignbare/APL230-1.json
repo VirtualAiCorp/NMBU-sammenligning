@@ -1,0 +1,9 @@
+{
+ "kode": "APL230-1", "navn": "Planteori", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Bachelor-emne om planleggingsteori. Sammenlignet med teoriemner i samfunns- og arealplanlegging ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "1171", "kode": "SV-200-2", "navn": "Samfunnsplanlegging - teorier og metoder", "sikkerhet": "høy", "merknad": "UiA, 10 stp, bachelor, direkte tilsvarende planleggingsteori-emne"},
+  {"inst": "1150", "kode": "FP4350-1", "navn": "Planleggingsteori", "sikkerhet": "middels", "merknad": "NTNU, 7,5 stp, masternivå (HN) mot NMBUs bachelor-emne, men eksakt samme tema"},
+  {"inst": "1174", "kode": "GEO2007-1", "navn": "Samfunnsplanlegging og urban teori", "sikkerhet": "middels", "merknad": "Nord universitet, 10 stp, bachelor, planleggingsteori med urban vinkling"}
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "kode": "FYS230-1", "navn": "Elektroteknikk", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Grunnleggende elektroteknikk (kretsteori, elektriske maskiner) for ingeniørstudenter, bachelornivå. Sammenlignet med tilsvarende grunnkurs i elektroteknikk ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "1150", "kode": "IELET1001-1", "navn": "Elektroteknikk 1", "sikkerhet": "høy", "merknad": "NTNUs grunnkurs i elektroteknikk, 10 stp, samme nivå"},
+  {"inst": "1160", "kode": "ELE100-1", "navn": "Elektroteknikk", "sikkerhet": "høy", "merknad": "UiS, identisk emnenavn og nivå, 10 stp"},
+  {"inst": "1175", "kode": "EMFE2700-1", "navn": "Elektroteknikk og byggautomasjon", "sikkerhet": "middels", "merknad": "OsloMet, noe mer byggautomasjonsrettet"},
+  {"inst": "1130", "kode": "MAS-2602-1", "navn": "Elektroteknikk og automasjonsteknikk", "sikkerhet": "middels", "merknad": "UiT, kombinert med automasjonsteknikk"},
+  {"inst": "0238", "kode": "MAS146-1", "navn": "Grunnleggende elektroteknikk", "sikkerhet": "høy", "merknad": "HVL, grunnkurs på samme nivå, noe mindre omfang (5 stp)"}
+ ]
+}

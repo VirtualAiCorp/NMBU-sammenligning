@@ -1,0 +1,9 @@
+{
+ "kode": "NATF330-1", "navn": "Viltforvaltning", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Masteremne i viltforvaltning. Sammenlignet med viltforvaltningsemner ved andre institusjoner, hovedsakelig bachelornivå der master ikke fantes.",
+ "sammenlignbare": [
+  {"inst": "1177", "kode": "UTM2140-1", "navn": "Viltforvaltning", "sikkerhet": "middels", "merknad": "INN, 7,5 stp, bachelornivå (LN) mot NMBUs masteremne, men identisk emnenavn og tema"},
+  {"inst": "1176", "kode": "4208-1", "navn": "Viltøkologi og viltforvaltning", "sikkerhet": "middels", "merknad": "USN, 10 stp, bachelor, viltøkologi og -forvaltning"},
+  {"inst": "1150", "kode": "BI3084-1", "navn": "Applied population dynamics for conservation and management", "sikkerhet": "middels", "merknad": "NTNU, 7,5 stp, master, bestandsdynamikk relevant for viltforvaltning"}
+ ]
+}

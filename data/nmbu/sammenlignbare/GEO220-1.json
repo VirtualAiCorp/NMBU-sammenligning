@@ -1,0 +1,9 @@
+{
+ "kode": "GEO220-1", "navn": "Hydrogeologi", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Bachelor-emne i hydrogeologi. Flere institusjoner har emner med identisk navn.",
+ "sammenlignbare": [
+  {"inst": "1150", "kode": "TGB4205-1", "navn": "Hydrogeologi", "sikkerhet": "høy", "merknad": "NTNU, 7,5 stp, bachelor, identisk emnenavn og tema"},
+  {"inst": "0238", "kode": "GE482-1", "navn": "Hydrogeologi", "sikkerhet": "høy", "merknad": "HVL, 10 stp, bachelor, identisk emnenavn og tema"},
+  {"inst": "1110", "kode": "GEO4190-1", "navn": "Hydrogeologi", "sikkerhet": "middels", "merknad": "UiO, 10 stp, masternivå (HN) mot NMBUs bachelor-emne, men identisk emnenavn"}
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "kode": "FYS272-1", "navn": "Energiteknologier", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Fysikkbasert bachelorkurs om energiteknologier (fornybar energi, energiomforming). Sammenlignet med tilsvarende energiteknologiemner ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "1160", "kode": "ENP120-1", "navn": "Energiteknologi", "sikkerhet": "høy", "merknad": "UiS, identisk emnenavn og nivå, 10 stp"},
+  {"inst": "0238", "kode": "FE407-1", "navn": "Fornybar energiteknologi og ressursvurdering", "sikkerhet": "høy", "merknad": "HVL, samme tema, 10 stp"},
+  {"inst": "1150", "kode": "FENT1001-1", "navn": "Fornybar energi grunnkurs", "sikkerhet": "middels", "merknad": "NTNU, grunnkurs i fornybar energi, samme nivå"},
+  {"inst": "1150", "kode": "IMAK1003-1", "navn": "Introduksjon til material- og energiteknologi", "sikkerhet": "middels", "merknad": "NTNU, kombinerer material- og energiteknologi"}
+ ]
+}

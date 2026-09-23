@@ -1,0 +1,8 @@
+{
+ "kode": "SKOG200-1", "navn": "Skogens biologi, økologi og produksjon", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Bachelor-emne om skogens biologi, økologi og produksjon. Sammenlignet med tilsvarende skogøkologi-/produksjonsemner ved INN, bachelornivå.",
+ "sammenlignbare": [
+  {"inst": "1177", "kode": "SKO1106-1", "navn": "Applied Forest Ecology", "sikkerhet": "høy", "merknad": "INN, 7,5 stp, bachelor, direkte tema skogøkologi"},
+  {"inst": "1177", "kode": "SKO2203-1", "navn": "Produksjonsskog", "sikkerhet": "høy", "merknad": "INN, 15 stp, bachelor, direkte tema produksjonsskog"}
+ ]
+}

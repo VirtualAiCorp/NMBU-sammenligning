@@ -1,0 +1,10 @@
+{
+ "kode": "INF230-2", "navn": "Datahåndtering og -analyse", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Bachelorkurs i praktisk databehandling og statistisk/dataanalytisk metode (data science-retning). Sammenlignet med tilsvarende innførings-/grunnkurs i data science og dataanalyse ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "1120", "kode": "INF161-0", "navn": "Innføring i data science", "sikkerhet": "høy", "merknad": "UiB, samme nivå og bredde (data science-innføring), 10 stp"},
+  {"inst": "1171", "kode": "IS-216-1", "navn": "Data Science Applications", "sikkerhet": "middels", "merknad": "UiA, anvendt data science på bachelornivå"},
+  {"inst": "1110", "kode": "STK1110-1", "navn": "Statistiske metoder og dataanalyse", "sikkerhet": "middels", "merknad": "UiO, mer statistikktungt, men samme tema og nivå"},
+  {"inst": "8253", "kode": "MOD3100-1", "navn": "Metode og dataanalyse", "sikkerhet": "middels", "merknad": "Høyskolen Kristiania, bredere metodekurs med dataanalysedel"}
+ ]
+}

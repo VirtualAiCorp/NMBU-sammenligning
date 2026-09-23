@@ -1,0 +1,9 @@
+{
+ "kode": "KJB210-1", "navn": "Eksperimentell og anvendt biokjemi", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Praktisk/anvendt biokjemikurs (laboratoriemetoder), bachelornivå. Sammenlignet med tilsvarende biokjemi-emner (del 2) og metodeemner ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "1150", "kode": "TBT4107-1", "navn": "Biokjemi 2", "sikkerhet": "middels", "merknad": "NTNU, oppfølgingsemne i biokjemi på samme nivå, 7,5 stp"},
+  {"inst": "1110", "kode": "BIOS3900-1", "navn": "Biokjemi 2", "sikkerhet": "middels", "merknad": "UiO, oppfølgingsemne i biokjemi, 10 stp"},
+  {"inst": "1175", "kode": "MABIO4200-1", "navn": "Biokjemiske og cellebiologiske metoder", "sikkerhet": "lav", "merknad": "OsloMet, praktisk metodeemne som matcher «eksperimentell», men på masternivå"}
+ ]
+}

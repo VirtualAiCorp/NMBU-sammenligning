@@ -1,0 +1,9 @@
+{
+ "kode": "IND300-1", "navn": "Eksperter i team", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Tverrfaglig, prosjektbasert teamarbeidsemne. NTNU har det samme konseptet «Eksperter i team» (EiT) som varemerket, obligatorisk tverrfaglig kurs med mange parallelle temagrupper - samme NUS-kode (759915) som IND300. Sammenlignet med noen av NTNUs EiT-emner (temaene varierer, men formatet er identisk).",
+ "sammenlignbare": [
+  {"inst": "1150", "kode": "TIØ4858-1", "navn": "Eksperter i team - Bli en endringsagent!", "sikkerhet": "høy", "merknad": "NTNU, samme NUS-kode (759915) og identisk EiT-format"},
+  {"inst": "1150", "kode": "TIØ4851-2", "navn": "Eksperter i team - Kommersialisering av teknologi", "sikkerhet": "høy", "merknad": "NTNU, samme EiT-format, annet tema"},
+  {"inst": "1150", "kode": "TBA4851-2", "navn": "Eksperter i team - Idrettsteknologi - ParaGO", "sikkerhet": "høy", "merknad": "NTNU, samme EiT-format, teknologirettet tema"}
+ ]
+}

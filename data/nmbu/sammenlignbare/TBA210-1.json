@@ -1,0 +1,11 @@
+{
+ "kode": "TBA210-1", "navn": "Bygningsfysikk med bærekraft", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Bachelorkurs i bygningsfysikk (varme, fukt, energi i bygninger) med bærekraftperspektiv. Sammenlignet med tilsvarende bygningsfysikkemner ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "0238", "kode": "BYG104-1", "navn": "Bygningsfysikk", "sikkerhet": "høy", "merknad": "HVL, identisk emnenavn og nivå, 10 stp"},
+  {"inst": "1150", "kode": "TBA4160-1", "navn": "Bygningsfysikk, grunnkurs", "sikkerhet": "høy", "merknad": "NTNU, grunnkurs i bygningsfysikk, samme nivå"},
+  {"inst": "1160", "kode": "BYG210-1", "navn": "Bygningsfysikk og husbygg", "sikkerhet": "høy", "merknad": "UiS, 10 stp, samme tema"},
+  {"inst": "1171", "kode": "BYG229-G", "navn": "Bygningsfysikk", "sikkerhet": "høy", "merknad": "UiA, identisk emnenavn, noe mindre omfang (5 stp)"},
+  {"inst": "0256", "kode": "IRB10019-1", "navn": "Bygningsfysikk", "sikkerhet": "høy", "merknad": "HiØ, identisk emnenavn, 10 stp"}
+ ]
+}

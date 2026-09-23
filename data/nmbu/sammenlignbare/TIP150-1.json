@@ -1,0 +1,9 @@
+{
+ "kode": "TIP150-1", "navn": "Moderne verkstedteknikk, innføringsemne", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Praktisk innføringsemne i verksted-/tilvirkningsteknikk (maskinering, sveising, moderne verktøy) for ingeniørstudenter. Få direkte treff nasjonalt - de fleste institusjoner tilbyr ikke et rendyrket praktisk verkstedemne på dette nivået; sammenlignet med nærmeste tilvirknings-/verkstedfagemner.",
+ "sammenlignbare": [
+  {"inst": "1176", "kode": "MTT2200-1", "navn": "Tilvirkningsteknikk", "sikkerhet": "middels", "merknad": "USN, praktisk tilvirkningsteknikk, samme nivå, 10 stp"},
+  {"inst": "1176", "kode": "TSM3190-1", "navn": "Tilvirkningsteknikk", "sikkerhet": "middels", "merknad": "USN, alternativt tilvirkningsteknikkemne, 10 stp"},
+  {"inst": "1171", "kode": "KF-105-1", "navn": "Verksted og materialer", "sikkerhet": "lav", "merknad": "UiA, praktisk verkstedemne, men del av kunstfaglig utdanning"}
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "kode": "FYS140-1", "navn": "Klimaendringer, bærekraft og tilpasninger", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Fysikkbasert innføring i klimaendringer og bærekraft for bachelorstudenter. Sammenlignet med emner om klimaendringer/klimafysikk og klima-bærekraft ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "1110", "kode": "FYS1035-1", "navn": "Fysikk og klimaendringer", "sikkerhet": "høy", "merknad": "UiO, samme NUS-kode (fysikk) og tema, noe mindre omfang (5 stp)"},
+  {"inst": "1120", "kode": "SDG213-0", "navn": "Klimaendringer - årsaker og konsekvenser", "sikkerhet": "høy", "merknad": "UiB, samme tema og nivå, 10 stp"},
+  {"inst": "1110", "kode": "GEO1000-1", "navn": "Klima og bærekraft: Naturlige prosesser og menneskets påvirkning", "sikkerhet": "middels", "merknad": "UiO, geofaglig i stedet for fysikkfaglig vinkling, samme bredde"},
+  {"inst": "1174", "kode": "BIO1008-1", "navn": "Bærekraft, klima og etikk", "sikkerhet": "lav", "merknad": "Nord, bredere tverrfaglig tilnærming til klima og bærekraft"}
+ ]
+}

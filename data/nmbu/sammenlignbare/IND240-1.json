@@ -1,0 +1,10 @@
+{
+ "kode": "IND240-1", "navn": "Usikkerhetsstyring i prosjekt", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Bachelorkurs i risiko-/usikkerhetsstyring i prosjekter. Sammenlignet med tilsvarende risikostyringsemner på bachelornivå ved andre institusjoner (de fleste risikostyringsemner er på masternivå).",
+ "sammenlignbare": [
+  {"inst": "0232", "kode": "LOG255-1", "navn": "Innføring i risikostyring", "sikkerhet": "høy", "merknad": "HiMolde, innføringskurs på samme nivå, 7,5 stp"},
+  {"inst": "1150", "kode": "DCSG2005-1", "navn": "Risikostyring", "sikkerhet": "høy", "merknad": "NTNU, samme tema og nivå, 7,5 stp"},
+  {"inst": "1130", "kode": "SIK-1508-1", "navn": "Risiko, risikostyring og sårbarhetsanalyse", "sikkerhet": "middels", "merknad": "UiT, bredere risikofokus, 10 stp"},
+  {"inst": "1150", "kode": "TLOG2010-1", "navn": "Driftslogistikk og risikostyring", "sikkerhet": "middels", "merknad": "NTNU, risikostyring kombinert med logistikk"}
+ ]
+}

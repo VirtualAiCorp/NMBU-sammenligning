@@ -1,0 +1,10 @@
+{
+ "kode": "VET307-1", "navn": "Infeksjonslære", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Stort emne (24 stp, NUS 767101) som samler mikrobiologi, immunologi og infeksjonssykdomslære for veterinærstudenter. Sammenlignet med tilsvarende, men mindre og humanrettede, infeksjonsbiologi/immunologi-emner ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "1130", "kode": "FAR-2205-1", "navn": "Infeksjonsbiologi og immunologi", "sikkerhet": "middels", "merknad": "UiT, farmasistudiet, infeksjonsbiologi og immunologi, 10 stp - samme kjernetema, mindre omfang og humanrettet"},
+  {"inst": "1130", "kode": "FAR-2201-1", "navn": "Immunologi og mikrobiologi", "sikkerhet": "middels", "merknad": "UiT, farmasistudiet, 15 stp - bredere basalfag, human kontekst"},
+  {"inst": "1174", "kode": "DYR1003-1", "navn": "Infeksjonssykdommer og smittevern", "sikkerhet": "middels", "merknad": "Nord, dyrepleie, infeksjonssykdommer og smittevern hos dyr, 7,5 stp - dyrerettet som VET307, men mindre omfang og for dyrepleiere ikke veterinærer"},
+  {"inst": "1150", "kode": "MOL3005-1", "navn": "Immunologi", "sikkerhet": "lav", "merknad": "NTNU, generell immunologi, 7,5 stp - dekker kun immunologidelen"}
+ ]
+}
