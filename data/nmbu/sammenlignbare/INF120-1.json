@@ -1,0 +1,11 @@
+{
+ "kode": "INF120-1", "navn": "Programmering og databehandling", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Bredt introduksjonsemne i programmering (Python) og databehandling for realfagsstudenter uten CS-bakgrunn. Sammenlignet med tilsvarende introduksjonsemner for naturvitenskapelige/ingeniørfag ved andre institusjoner, ikke rene informatikk-programmeringsemner.",
+ "sammenlignbare": [
+  {"inst": "1110", "kode": "IN1900-1", "navn": "Introduksjon i programmering for naturvitenskapelige anvendelser", "sikkerhet": "høy", "merknad": "UiOs Python-innføring rettet mot realfagsstudenter, svært lik målgruppe og innhold"},
+  {"inst": "1175", "kode": "MEK1300-1", "navn": "Introduksjon til Python-programmering", "sikkerhet": "høy", "merknad": "OsloMets Python-innføring for ingeniørstudenter"},
+  {"inst": "1150", "kode": "INGT1002-1", "navn": "Programmering, numerikk og sikkerhet", "sikkerhet": "middels", "merknad": "NTNUs tverrfaglige programmerings-/numerikkemne for ingeniørstudier"},
+  {"inst": "1160", "kode": "DAT120-1", "navn": "Grunnleggende programmering", "sikkerhet": "middels", "merknad": "UiS' grunnkurs i programmering, bredt anlagt"},
+  {"inst": "1176", "kode": "IB1020-1", "navn": "Programmering for beregning", "sikkerhet": "middels", "merknad": "USNs programmeringsemne rettet mot beregning, ligner databehandlingsdelen av INF120"}
+ ]
+}

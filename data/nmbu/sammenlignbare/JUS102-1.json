@@ -1,0 +1,11 @@
+{
+ "kode": "JUS102-1", "navn": "Forretningsjus I", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Generelt forretningsjus-emne på bachelornivå. Svært utbredt emnetype nasjonalt; valgt de mest sammenlignbare, inkludert et med identisk NUS-kode.",
+ "sammenlignbare": [
+  {"inst": "8241", "kode": "JUR34201", "navn": "Forretningsjus", "sikkerhet": "høy", "merknad": "BI, 7,5 stp, bachelor, svært stort emne"},
+  {"inst": "8253", "kode": "FOJ2102-1", "navn": "Forretningsjus", "sikkerhet": "høy", "merknad": "Høyskolen Kristiania, 7,5 stp, bachelor, samme NUS-kode (637999)"},
+  {"inst": "1150", "kode": "AJ200115-1", "navn": "Forretningsjus", "sikkerhet": "høy", "merknad": "NTNU, 7,5 stp, bachelor"},
+  {"inst": "0238", "kode": "JU6-1000-1", "navn": "Forretningsjus", "sikkerhet": "høy", "merknad": "HVL, 7,5 stp, bachelor"},
+  {"inst": "1130", "kode": "BED-2010-1", "navn": "Forretningsjus og arbeidsrett", "sikkerhet": "middels", "merknad": "UiT, 10 stp, bachelor, inkluderer arbeidsrett"}
+ ]
+}

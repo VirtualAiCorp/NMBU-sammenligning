@@ -1,0 +1,8 @@
+{
+ "kode": "TBA110-1", "navn": "Frihåndstegning", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Rent frihåndstegningskurs er sjelden i det nasjonale emneregisteret utenfor kunst-/designhøgskoler som ikke er godt dekket i registeret (bl.a. AHO har ingen emner med 'tegning' i navnet i datagrunnlaget). Nærmeste treff er tegneteknikk-emner ved design-/arkitekturutdanning og et generelt tegneemne i lærerutdanning; ingen er direkte sammenlignbare i innhold eller rolle (landskapsarkitektur-forkurs).",
+ "sammenlignbare": [
+  {"inst": "1150", "kode": "TPD4111-1", "navn": "Estetikk 1: Tegneteknikk 1", "sikkerhet": "lav", "merknad": "NTNUs tegneteknikk-emne på produktdesign, annen studieretning men lik ferdighetstrening"},
+  {"inst": "1175", "kode": "FKH1002-1", "navn": "Tegning", "sikkerhet": "lav", "merknad": "OsloMets tegneemne i faglærerutdanning i kunst og håndverk, annen målgruppe"}
+ ]
+}

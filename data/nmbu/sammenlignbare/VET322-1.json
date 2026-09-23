@@ -1,0 +1,8 @@
+{
+ "kode": "VET322-1", "navn": "Smittevern", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Smittevern i veterinærmedisin (NUS 767101). Nærmeste dyrebaserte motpart er Nords infeksjonssykdoms-/smittevernemne i dyrepleie.",
+ "sammenlignbare": [
+  {"inst": "1174", "kode": "DYR1003-1", "navn": "Infeksjonssykdommer og smittevern", "sikkerhet": "høy", "merknad": "Nord, dyrebasert smittevernemne i dyrepleie, samme kjernetema"},
+  {"inst": "1150", "kode": "NRS8005-1", "navn": "Smittevern i et globalt perspektiv", "sikkerhet": "lav", "merknad": "NTNU, humanmedisinsk smittevern på forskerutdanningsnivå, annen art og nivå"}
+ ]
+}

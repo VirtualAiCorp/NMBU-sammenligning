@@ -1,0 +1,11 @@
+{
+ "kode": "PHI101-1", "navn": "Examen philosophicum - seminarversjon", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Examen philosophicum er et nasjonalt obligatorisk innføringsemne i filosofi som finnes ved svært mange institusjoner. Dette er seminarversjonen, så UiBs eksplisitte seminarmodell-varianter er prioritert høyest; ellers er andre institusjoners standard exphil-emner (samme NUS 619902, bachelor) tatt med.",
+ "sammenlignbare": [
+  {"inst": "1120", "kode": "EXPHIL-SVSEM-0", "navn": "Examen philosophicum - seminarmodell", "sikkerhet": "høy", "merknad": "UiB, 10 stp, bachelor, eksplisitt seminarmodell (samfunnsvitenskap)"},
+  {"inst": "1120", "kode": "EXPHIL-HFSEM-0", "navn": "Examen philosophicum - seminarmodell", "sikkerhet": "høy", "merknad": "UiB, 10 stp, bachelor, eksplisitt seminarmodell (humaniora)"},
+  {"inst": "1171", "kode": "EX-100-1", "navn": "Examen philosophicum", "sikkerhet": "middels", "merknad": "UiA, 10 stp, bachelor, samme NUS-kode"},
+  {"inst": "8223", "kode": "EX101-1", "navn": "Examen philosophicum", "sikkerhet": "middels", "merknad": "NLA, 10 stp, bachelor, samme NUS-kode"},
+  {"inst": "1110", "kode": "EXPHIL03-1", "navn": "Examen philosophicum", "sikkerhet": "middels", "merknad": "UiO, 10 stp, bachelor, det klart største exphil-emnet nasjonalt"}
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "kode": "INF200-1", "navn": "Videregående programmering", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "NMBU har to emner med navnet 'Videregående programmering' (INF200 og INF201); denne filen dekker INF200 (færre kandidater, trolig en annen studieretning/språkspor). Samme sammenligningsgrunnlag som INF201 er brukt siden vi ikke finner offentlig dokumentasjon som skiller de to i emneregisteret.",
+ "sammenlignbare": [
+  {"inst": "1150", "kode": "TDT4120-1", "navn": "Algoritmer og datastrukturer", "sikkerhet": "høy", "merknad": "NTNUs standard andrekurs i programmering/algoritmer"},
+  {"inst": "1110", "kode": "IN2010-1", "navn": "Algoritmer og datastrukturer", "sikkerhet": "høy", "merknad": "UiOs videregående programmerings-/algoritmeemne"},
+  {"inst": "1171", "kode": "IKT203-G", "navn": "Algoritmer og datastrukturer", "sikkerhet": "middels", "merknad": "UiAs videregående programmeringsemne"},
+  {"inst": "1160", "kode": "DAT200-1", "navn": "Algoritmer og datastrukturer", "sikkerhet": "middels", "merknad": "UiS' videregående programmeringsemne (samme emnekode som NMBUs DAT200, men annet fag)"}
+ ]
+}

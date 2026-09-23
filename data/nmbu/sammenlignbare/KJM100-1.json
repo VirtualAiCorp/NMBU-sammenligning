@@ -1,0 +1,11 @@
+{
+ "kode": "KJM100-1", "navn": "Generell kjemi", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Grunnleggende kjemi for realfags-/bioteknologistudenter uten forkunnskaper. Sammenlignet med tilsvarende generell kjemi-emner ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "1110", "kode": "KJM1101-1", "navn": "Generell kjemi", "sikkerhet": "høy", "merknad": "identisk emnenavn og funksjon ved UiO"},
+  {"inst": "1150", "kode": "KJ1002-1", "navn": "Generell kjemi", "sikkerhet": "høy", "merknad": "identisk emnenavn ved NTNU, 15 stp"},
+  {"inst": "1175", "kode": "KJPE1300-1", "navn": "Generell kjemi", "sikkerhet": "høy", "merknad": "identisk emnenavn ved OsloMet"},
+  {"inst": "0238", "kode": "KJE100-1", "navn": "Generell kjemi", "sikkerhet": "høy", "merknad": "identisk emnenavn ved HVL"},
+  {"inst": "1160", "kode": "KJE150-1", "navn": "Generell kjemi", "sikkerhet": "høy", "merknad": "identisk emnenavn ved UiS"}
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "kode": "KJM110-1", "navn": "Organisk kjemi", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Grunnkurs i organisk kjemi på bachelornivå. Sammenlignet med tilsvarende grunnkurs i organisk kjemi ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "1120", "kode": "KJEM130-0", "navn": "Organisk kjemi", "sikkerhet": "høy", "merknad": "identisk emnenavn ved UiB"},
+  {"inst": "1110", "kode": "KJM1111-1", "navn": "Organisk kjemi I", "sikkerhet": "høy", "merknad": "UiOs grunnkurs i organisk kjemi"},
+  {"inst": "1150", "kode": "TKJ4102-1", "navn": "Organisk kjemi, grunnkurs", "sikkerhet": "høy", "merknad": "NTNUs grunnkurs i organisk kjemi"},
+  {"inst": "1175", "kode": "KJM1400-1", "navn": "Organisk kjemi", "sikkerhet": "høy", "merknad": "identisk emnenavn ved OsloMet"},
+  {"inst": "1160", "kode": "KJE200-1", "navn": "Organisk kjemi 1", "sikkerhet": "høy", "merknad": "UiS' grunnkurs i organisk kjemi"}
+ ]
+}

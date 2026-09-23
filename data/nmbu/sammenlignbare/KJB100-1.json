@@ -1,0 +1,9 @@
+{
+ "kode": "KJB100-1", "navn": "Introduksjon til biokjemi", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Innledende biokjemiemne før det mer fullstendige KJB200. Sammenlignet med tilsvarende introduksjons-/grunnkurs i biokjemi ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "1407", "kode": "MB1120", "navn": "Introduksjon til biokjemi", "sikkerhet": "høy", "merknad": "identisk emnenavn ved Oslo Nye Høyskole"},
+  {"inst": "1174", "kode": "KJE1002-1", "navn": "Prinsipper innen kjemi og biokjemi", "sikkerhet": "middels", "merknad": "Nords innledende kjemi/biokjemi-emne"},
+  {"inst": "1174", "kode": "BIO1027-1", "navn": "Biokjemi", "sikkerhet": "middels", "merknad": "Nords grunnleggende biokjemiemne, mindre omfang (7,5 stp)"}
+ ]
+}

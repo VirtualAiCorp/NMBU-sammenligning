@@ -1,0 +1,8 @@
+{
+ "kode": "HFX132-1", "navn": "Husdyrbiologi", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Grunnleggende husdyrbiologi (anatomi/fysiologi hos husdyr, NUS 679903). Sammenlignet med tilsvarende husdyrfaglige emner ved Nord og INN, de eneste andre institusjonene med bredt husdyrfagtilbud.",
+ "sammenlignbare": [
+  {"inst": "1174", "kode": "HUS1005-1", "navn": "Husdyrenes anatomi og fysiologi", "sikkerhet": "høy", "merknad": "Nord, identisk NUS-kode (679903), samme kjernetema (husdyrs biologi/anatomi/fysiologi)"},
+  {"inst": "1174", "kode": "HUS1000-1", "navn": "Husdyrmiljø og dyrevelferd", "sikkerhet": "middels", "merknad": "Nord, beslektet husdyrfaglig grunnemne, noe annen vinkling (miljø/velferd)"}
+ ]
+}

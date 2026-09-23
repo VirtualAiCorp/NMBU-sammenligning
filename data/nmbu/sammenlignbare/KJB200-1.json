@@ -1,0 +1,10 @@
+{
+ "kode": "KJB200-1", "navn": "Biokjemi", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Grunnleggende biokjemi på bachelornivå etter et introduksjonsemne. Sammenlignet med rene biokjemi-emner (ikke sykepleiefagets kombinerte anatomi/fysiologi/biokjemi-emner).",
+ "sammenlignbare": [
+  {"inst": "1150", "kode": "TBT4102-1", "navn": "Biokjemi 1", "sikkerhet": "høy", "merknad": "NTNUs biokjemiemne for bioteknologistudenter, samme nivå"},
+  {"inst": "1110", "kode": "BIOS1130-1", "navn": "Biokjemi 1", "sikkerhet": "høy", "merknad": "UiOs grunnleggende biokjemiemne"},
+  {"inst": "1130", "kode": "MBI-2001-1", "navn": "Biokjemi", "sikkerhet": "høy", "merknad": "UiTs biokjemiemne på bachelornivå"},
+  {"inst": "1174", "kode": "BI132F-1", "navn": "Biokjemi og cellebiologi", "sikkerhet": "middels", "merknad": "Nords kombinerte biokjemi/cellebiologiemne"}
+ ]
+}

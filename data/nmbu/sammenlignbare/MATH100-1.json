@@ -1,0 +1,11 @@
+{
+ "kode": "MATH100-1", "navn": "Brukerkurs i matematikk", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Bredt grunnkurs i matematikk for bachelorstudenter uten fordypning i matematikk. Sammenlignet med tilsvarende 'brukerkurs'/grunnkurs i matematikk ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "1130", "kode": "MAT-0001-1", "navn": "Brukerkurs i matematikk", "sikkerhet": "høy", "merknad": "Identisk emnenavn og funksjon ved UiT"},
+  {"inst": "1120", "kode": "MAT101-0", "navn": "Brukerkurs i matematikk I", "sikkerhet": "høy", "merknad": "Identisk emnenavn ved UiB"},
+  {"inst": "0238", "kode": "MAT110-1", "navn": "Matematikk 1", "sikkerhet": "middels", "merknad": "HVLs grunnkurs i matematikk 1, tilsvarende nivå"},
+  {"inst": "1171", "kode": "MA-178-G", "navn": "Matematikk 1", "sikkerhet": "middels", "merknad": "UiAs grunnkurs i matematikk 1"},
+  {"inst": "1150", "kode": "IMAT1002-1", "navn": "Matematikk for ingeniørfag 1", "sikkerhet": "lav", "merknad": "NTNUs grunnkurs, noe smalere (ingeniørrettet) enn NMBUs brede brukerkurs"}
+ ]
+}

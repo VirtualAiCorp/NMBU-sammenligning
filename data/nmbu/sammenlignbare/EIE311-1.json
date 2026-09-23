@@ -1,0 +1,10 @@
+{
+ "kode": "EIE311-1", "navn": "Eiendomsutvikling, kalkyle og verdsetting", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Master-emne som kombinerer eiendomsutvikling med kalkyle/verdsetting. Valgt NTNUs eiendomsutviklingsemne på master samt et NTNU-emne spesifikt om eiendomsverdsetting (lite emne), pluss BIs store bachelor-eiendomsutviklingsemne.",
+ "sammenlignbare": [
+  {"inst": "1150", "kode": "AAR4828-1", "navn": "Eiendomsutvikling", "sikkerhet": "høy", "merknad": "NTNU, 7,5 stp, master"},
+  {"inst": "1150", "kode": "BFIN8001-1", "navn": "Temaer innen eiendomsverdsetting og bærekraft", "sikkerhet": "middels", "merknad": "NTNU, 5 stp, videreutdanning, direkte tematisk match på verdsetting, lite emne"},
+  {"inst": "8241", "kode": "EMS36701", "navn": "Eiendomsutvikling", "sikkerhet": "middels", "merknad": "BI, 7,5 stp, bachelor (lavere nivå), svært stort emne"},
+  {"inst": "1174", "kode": "RET1007-1", "navn": "Innføring i eiendomsutvikling", "sikkerhet": "lav", "merknad": "Nord universitet, 7,5 stp, bachelor (lavere nivå og mer innføringspreget)"}
+ ]
+}

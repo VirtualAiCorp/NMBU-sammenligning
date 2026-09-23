@@ -1,0 +1,9 @@
+{
+ "kode": "BIO200-1", "navn": "Molekylærgenetikk i eukaryoter", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Videregående bachelor-/overgangsemne i molekylærgenetikk (NUS 652210) med fokus på eukaryote organismer. Sammenlignet med molekylærgenetikkemner ved andre institusjoner, noen på litt annet nivå.",
+ "sammenlignbare": [
+  {"inst": "1160", "kode": "BIO230-1", "navn": "Molekylærgenetikk og bioinformatikk", "sikkerhet": "høy", "merknad": "UiS, identisk NUS-kode (652210), 10 stp, bachelor, samme kjernetema"},
+  {"inst": "1150", "kode": "TBT4146-1", "navn": "Molekylærgenetikk", "sikkerhet": "middels", "merknad": "NTNU, samme tema men masternivå (HN) mot NMBUs bachelor-emne"},
+  {"inst": "1110", "kode": "BIOS5610-1", "navn": "Eukaryote gener og genomer", "sikkerhet": "middels", "merknad": "UiO, spesifikt eukaryot fokus som i NMBU-emnet, men masternivå (HN)"}
+ ]
+}

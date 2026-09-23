@@ -1,0 +1,10 @@
+{
+ "kode": "MATH112-1", "navn": "Kalkulus 2", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Fortsettelsesemne i kalkulus (flervariabel, rekker, differensialligninger) etter et Kalkulus 1-emne. Sammenlignet med tilsvarende andrekurs i kalkulus ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "1130", "kode": "MAT-1002-1", "navn": "Kalkulus 2", "sikkerhet": "høy", "merknad": "identisk emnenavn og plassering (etter Kalkulus 1) ved UiT"},
+  {"inst": "1171", "kode": "MA-184-1", "navn": "Kalkulus 2", "sikkerhet": "høy", "merknad": "identisk emnenavn ved UiA, 10 stp"},
+  {"inst": "1120", "kode": "MAT112-0", "navn": "Grunnkurs i matematikk II", "sikkerhet": "middels", "merknad": "UiBs fortsettelseskurs i kalkulus, tilsvarende funksjon"},
+  {"inst": "1110", "kode": "MAT1110-1", "navn": "Kalkulus og lineær algebra", "sikkerhet": "middels", "merknad": "UiOs videreføring dekker delvis samme stoff, men kombinert med lineær algebra"}
+ ]
+}

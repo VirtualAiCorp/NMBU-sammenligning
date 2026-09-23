@@ -1,0 +1,9 @@
+{
+ "kode": "VET327-1", "navn": "Dyrevelferd", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Dyrevelferdsemne i veterinærstudiet (NUS 767101). Sammenlignet med dyrevelferdsemner i husdyrfag ved Nord (se også VET353-1-1), samt et akvatisk dyrevelferdsemne ved UiT.",
+ "sammenlignbare": [
+  {"inst": "1174", "kode": "HUS1006-1", "navn": "Dyrevelferd og etologi", "sikkerhet": "middels", "merknad": "Nord, dyrevelferd i husdyrfag, samme kjernetema, annen studiekontekst"},
+  {"inst": "1174", "kode": "HUS1000-1", "navn": "Husdyrmiljø og dyrevelferd", "sikkerhet": "middels", "merknad": "Nord, husdyrmiljø og dyrevelferd"},
+  {"inst": "1130", "kode": "BIO-3503-1", "navn": "Aquatic Animal Welfare", "sikkerhet": "lav", "merknad": "UiT, dyrevelferd avgrenset til akvatiske dyr, masternivå"}
+ ]
+}

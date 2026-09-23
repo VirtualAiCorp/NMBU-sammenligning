@@ -1,0 +1,9 @@
+{
+ "kode": "BIO102-1", "navn": "Anvendt bioteknologi", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Bachelor-emne i anvendt bioteknologi, bygger videre på et introduksjonsemne. Sammenlignet med tilsvarende bioteknologiemner på bachelornivå ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "1150", "kode": "TBT4170-1", "navn": "Bioteknologi", "sikkerhet": "middels", "merknad": "NTNUs generelle bioteknologiemne på bachelornivå"},
+  {"inst": "1175", "kode": "KJTS3100-1", "navn": "Bioteknologi", "sikkerhet": "middels", "merknad": "OsloMets bioteknologiemne"},
+  {"inst": "1150", "kode": "BT2100-1", "navn": "Beregningsbasert bioteknologi", "sikkerhet": "lav", "merknad": "NTNUs emne, men med spesifikt beregningsfokus"}
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "kode": "JUS310-1", "navn": "Rettigheter i fast eiendom", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Master-emne om rettigheter/rettsforhold knyttet til fast eiendom (tingsrett/eiendomsrett). Valgt tilsvarende eiendomsrettsemner på master, samt bachelor-tingsrettsemner (nærmeste faginnhold, men lavere nivå) som mellomtreff.",
+ "sammenlignbare": [
+  {"inst": "1110", "kode": "JUS5251-1", "navn": "Eiendomsrett og ekspropriasjon", "sikkerhet": "høy", "merknad": "UiO, 10 stp, master, samme NUS-kode (737999)"},
+  {"inst": "0238", "kode": "MOA253-1", "navn": "Avtalerett, ekspropriasjonsrett og grunnerverv", "sikkerhet": "middels", "merknad": "HVL, 10 stp, master, delvis overlappende tema"},
+  {"inst": "1120", "kode": "JUS124-0", "navn": "Tingsrett", "sikkerhet": "middels", "merknad": "UiB, 13 stp, bachelor (lavere nivå enn NMBU-emnet), samme grunnfagsområde"},
+  {"inst": "1160", "kode": "BRV350-1", "navn": "Tingsrett", "sikkerhet": "middels", "merknad": "UiS, 10 stp, bachelor (lavere nivå), samme grunnfagsområde"},
+  {"inst": "8241", "kode": "JUR34351", "navn": "Fast eiendoms rettsforhold", "sikkerhet": "middels", "merknad": "BI, 7,5 stp, bachelor (lavere nivå), tematisk tett på"}
+ ]
+}

@@ -1,0 +1,8 @@
+{
+ "kode": "VET354A-1", "navn": "Organsystemer 1", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Del av NMBUs organsystembaserte fysiologi-/anatomiundervisning i veterinærstudiet (NUS 767101), se også VET355-1 (Organsystemer 2). Medisinstudiene ved UiO/UiB/NTNU/UiT er organisert i store, brede moduler (50-60 stp) som ikke lar seg sammenligne direkte på NMBUs finere emneoppdeling. Nærmeste tilgjengelige er generelle anatomi-/fysiologiemner andre steder, med lav-middels sikkerhet.",
+ "sammenlignbare": [
+  {"inst": "1174", "kode": "BI145F-1", "navn": "Anatomi og fysiologi for dyrepleiere", "sikkerhet": "middels", "merknad": "Nord, dyrebasert anatomi/fysiologi, men ikke organsystem-inndelt på samme måte"},
+  {"inst": "1150", "kode": "BI2024-1", "navn": "Menneskets anatomi og fysiologi", "sikkerhet": "lav", "merknad": "NTNU, humanfysiologi i biologi, annen art og ikke organsystem-inndelt likt"}
+ ]
+}

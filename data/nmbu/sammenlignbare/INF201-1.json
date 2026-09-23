@@ -1,0 +1,11 @@
+{
+ "kode": "INF201-1", "navn": "Videregående programmering", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Videregående programmeringsemne (objektorientering, algoritmer/datastrukturer) etter et innføringsemne. NMBU har to emner med dette navnet (INF200 og INF201); denne filen dekker INF201, den med flest kandidater.",
+ "sammenlignbare": [
+  {"inst": "1150", "kode": "TDT4120-1", "navn": "Algoritmer og datastrukturer", "sikkerhet": "høy", "merknad": "NTNUs standard andrekurs i programmering/algoritmer"},
+  {"inst": "1110", "kode": "IN2010-1", "navn": "Algoritmer og datastrukturer", "sikkerhet": "høy", "merknad": "UiOs videregående programmerings-/algoritmeemne"},
+  {"inst": "1175", "kode": "DATS2300-1", "navn": "Algoritmer og datastrukturer", "sikkerhet": "høy", "merknad": "OsloMets videregående programmeringsemne"},
+  {"inst": "1120", "kode": "INF102-0", "navn": "Algoritmer, datastrukturer og programmering", "sikkerhet": "middels", "merknad": "UiBs videreføring av innføringsprogrammering"},
+  {"inst": "0238", "kode": "DAT102-1", "navn": "Algoritmer og datastrukturer", "sikkerhet": "middels", "merknad": "HVLs videregående programmeringsemne"}
+ ]
+}

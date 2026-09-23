@@ -1,0 +1,8 @@
+{
+ "kode": "VET358-1", "navn": "Farmakologi og toksikologi", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Farmakologi og toksikologi i veterinærstudiet (NUS 767101). Sammenlignet med Nords dyrebaserte farmakologiemne i dyrepleie og et generelt toksikologiemne ved UiB, siden ingen andre institusjoner tilbyr en kombinert farmakologi/toksikologi-emne for dyr.",
+ "sammenlignbare": [
+  {"inst": "1174", "kode": "BI242F-1", "navn": "Teoretisk og anvendt farmakologi", "sikkerhet": "middels", "merknad": "Nord, dyrebasert farmakologiemne i dyrepleie, dekker ikke toksikologidelen"},
+  {"inst": "1120", "kode": "BIO216-0", "navn": "Toksikologi", "sikkerhet": "lav", "merknad": "UiB, generell toksikologi, ikke dyre-/veterinærspesifikk"}
+ ]
+}

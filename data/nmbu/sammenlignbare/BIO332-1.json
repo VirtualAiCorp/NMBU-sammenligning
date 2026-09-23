@@ -1,0 +1,9 @@
+{
+ "kode": "BIO332-1", "navn": "Eksperimentell molekylær mikrobiologi", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Praktisk/eksperimentelt masternivå-emne som kombinerer molekylærbiologi og mikrobiologi. Fant ingen emner med akkurat denne kombinasjonen; sammenlignet med beslektede eksperimentelle molekylærbiologiemner.",
+ "sammenlignbare": [
+  {"inst": "1120", "kode": "MOL221-0", "navn": "Eksperimentell molekylærbiologi I", "sikkerhet": "middels", "merknad": "UiBs eksperimentelle molekylærbiologikurs, mangler mikrobiologifokuset"},
+  {"inst": "1120", "kode": "MOL222-0", "navn": "Eksperimentell molekylærbiologi II", "sikkerhet": "middels", "merknad": "UiBs videreførende eksperimentelle molekylærbiologikurs"},
+  {"inst": "1150", "kode": "TBT4110-1", "navn": "Mikrobiologi", "sikkerhet": "lav", "merknad": "NTNUs mikrobiologiemne, mangler den molekylære eksperimentelle vinklingen"}
+ ]
+}

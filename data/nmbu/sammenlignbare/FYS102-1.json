@@ -1,0 +1,11 @@
+{
+ "kode": "FYS102-1", "navn": "Termofysikk og elektromagnetisme", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Kombinasjon av termofysikk og elektromagnetisme i ett emne. Fant ingen emner ved andre institusjoner med akkurat samme kombinasjon; listen viser NTNUs generelle 'Fysikk 2' (bredt fysikk 2-emne) og rene elektromagnetisme-emner på tilsvarende nivå.",
+ "sammenlignbare": [
+  {"inst": "1150", "kode": "TFY4170-1", "navn": "Fysikk 2", "sikkerhet": "middels", "merknad": "NTNUs bredere fysikk 2-emne, dekker delvis samme temaer"},
+  {"inst": "1110", "kode": "FYS1120-1", "navn": "Elektromagnetisme", "sikkerhet": "middels", "merknad": "UiOs rene elektromagnetisme-emne, mangler termofysikkdelen"},
+  {"inst": "1120", "kode": "PHYS112-0", "navn": "Elektromagnetisme I", "sikkerhet": "middels", "merknad": "UiBs rene elektromagnetisme-emne, mangler termofysikkdelen"},
+  {"inst": "1120", "kode": "PHYS101-0", "navn": "Grunnkurs i mekanikk og varmelære", "sikkerhet": "lav", "merknad": "dekker varmelære men mekanikk i stedet for elektromagnetisme"},
+  {"inst": "1130", "kode": "FYS-1002-1", "navn": "Elektromagnetisme", "sikkerhet": "lav", "merknad": "UiTs elektromagnetisme-emne, mangler termofysikkdelen"}
+ ]
+}

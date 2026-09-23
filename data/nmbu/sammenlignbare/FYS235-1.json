@@ -1,0 +1,10 @@
+{
+ "kode": "FYS235-1", "navn": "Elektronikk", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Grunnleggende elektronikk-emne på bachelornivå. Sammenlignet med tilsvarende grunnkurs i elektronikk ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "1110", "kode": "FYS1210-1", "navn": "Elektronikk med prosjektoppgaver", "sikkerhet": "høy", "merknad": "UiOs elektronikkemne for realfagsstudenter, praktisk anlagt som NMBUs"},
+  {"inst": "1175", "kode": "ELI1100-1", "navn": "Elektronikk", "sikkerhet": "høy", "merknad": "identisk emnenavn ved OsloMet"},
+  {"inst": "1130", "kode": "AUT-2501-1", "navn": "Elektronikk", "sikkerhet": "middels", "merknad": "identisk emnenavn ved UiT"},
+  {"inst": "0256", "kode": "IRE20012-1", "navn": "Elektronikk", "sikkerhet": "middels", "merknad": "identisk emnenavn ved HiØ"}
+ ]
+}

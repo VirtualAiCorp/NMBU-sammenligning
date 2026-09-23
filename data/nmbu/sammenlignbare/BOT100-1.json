@@ -1,0 +1,10 @@
+{
+ "kode": "BOT100-1", "navn": "Plantediversitet", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Bachelor-emne om plantemangfold/plantesystematikk. Ingen institusjoner bruker begrepet 'plantediversitet' i emnenavn; valgt tilsvarende grunnleggende botanikkemner (samme rolle: innføring i planteriket) på bachelornivå.",
+ "sammenlignbare": [
+  {"inst": "1171", "kode": "BIO102-1", "navn": "Botanikk", "sikkerhet": "høy", "merknad": "UiA, 10 stp, bachelor"},
+  {"inst": "0238", "kode": "BI424-1", "navn": "Botanikk grunnkurs", "sikkerhet": "høy", "merknad": "HVL, 10 stp, bachelor"},
+  {"inst": "1130", "kode": "BIO-1103-1", "navn": "Botanikk", "sikkerhet": "høy", "merknad": "UiT, 10 stp, bachelor"},
+  {"inst": "1176", "kode": "4018-1", "navn": "Botanikk", "sikkerhet": "middels", "merknad": "USN, 10 stp, bachelor"}
+ ]
+}

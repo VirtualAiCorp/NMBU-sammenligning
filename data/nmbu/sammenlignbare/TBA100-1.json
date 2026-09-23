@@ -1,0 +1,9 @@
+{
+ "kode": "TBA100-1", "navn": "Bygningshistorie", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Rent bygningshistorie-emne er sjelden i registeret. NTNUs KULMI-emner (kulturminneforvaltning) og tekniske bygningsvern-emne er nærmeste treff, men bredere/smalere enn NMBUs emne. Fant ingen direkte navnematch med tilstrekkelig kandidattall.",
+ "sammenlignbare": [
+  {"inst": "1150", "kode": "TBBY6001-1", "navn": "Introduksjon til teknisk bygningsvern og bygningshistorie", "sikkerhet": "middels", "merknad": "eneste emne i registeret med 'bygningshistorie' i navnet, men videreutdanningsemne med få kandidater"},
+  {"inst": "1150", "kode": "KULMI1000-1", "navn": "Innføring i kulturminneforvaltning", "sikkerhet": "lav", "merknad": "bredere kulturminnefag, ikke spesifikt bygningshistorie"},
+  {"inst": "1175", "kode": "BYVE3615-1", "navn": "Byggeskikk, arkitektur og design", "sikkerhet": "lav", "merknad": "beslektet tema (byggeskikk/arkitekturhistorie) for byggingeniørstudenter"}
+ ]
+}

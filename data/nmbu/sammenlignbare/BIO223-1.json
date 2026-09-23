@@ -1,0 +1,10 @@
+{
+ "kode": "BIO223-1", "navn": "Evolusjonsbiologi", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Rendyrket evolusjonsbiologiemne på bachelornivå. Sammenlignet med tilsvarende evolusjonsbiologiemner ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "1171", "kode": "BIO113-1", "navn": "Evolusjonsbiologi", "sikkerhet": "høy", "merknad": "Identisk emnenavn ved UiA, 10 stp, bachelor"},
+  {"inst": "1120", "kode": "BIO210-0", "navn": "Evolusjonsbiologi", "sikkerhet": "høy", "merknad": "Identisk emnenavn ved UiB, 10 stp, bachelor"},
+  {"inst": "1110", "kode": "BIOS3100-1", "navn": "Evolusjon", "sikkerhet": "høy", "merknad": "UiOs rendyrkede evolusjonsemne, 10 stp, bachelor"},
+  {"inst": "1120", "kode": "BIO100-0", "navn": "Innføring i evolusjon og økologi", "sikkerhet": "middels", "merknad": "UiB, kombinerer evolusjon med økologi, bredere enn NMBUs rendyrkede emne"}
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "kode": "MATH113-1", "navn": "Lineær algebra og lineære differensiallikninger", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Kombinerer lineær algebra med lineære differensialligninger. NTNUs TMA4413 er den eneste vi fant med akkurat samme kombinasjon; øvrige er rene lineær algebra-kurs på tilsvarende nivå.",
+ "sammenlignbare": [
+  {"inst": "1150", "kode": "TMA4413-1", "navn": "Matematikk 2D: Lineær algebra og differensialligninger", "sikkerhet": "høy", "merknad": "kombinerer samme to temaer som NMBU-emnet"},
+  {"inst": "1110", "kode": "MAT1120-1", "navn": "Lineær algebra", "sikkerhet": "middels", "merknad": "UiOs lineær algebra-emne, mangler differensiallikningsdelen"},
+  {"inst": "1120", "kode": "MAT121-0", "navn": "Lineær algebra", "sikkerhet": "middels", "merknad": "UiBs lineær algebra-emne, mangler differensiallikningsdelen"},
+  {"inst": "1130", "kode": "MAT-1004-1", "navn": "Lineær algebra", "sikkerhet": "middels", "merknad": "UiTs lineær algebra-emne, mangler differensiallikningsdelen"}
+ ]
+}

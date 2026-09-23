@@ -1,0 +1,11 @@
+{
+ "kode": "PHI100-1", "navn": "Examen philosophicum", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Standard (ikke-seminar) versjon av det nasjonale obligatoriske exphil-emnet. Prioritert vanlige forelesningsbaserte varianter, inkludert NTNUs egen versjon for økonomifag og UiS' versjon for handelshøgskolen som treffer NMBU-studentenes fagprofil best.",
+ "sammenlignbare": [
+  {"inst": "1110", "kode": "EXPHIL03-1", "navn": "Examen philosophicum", "sikkerhet": "høy", "merknad": "UiO, 10 stp, bachelor, det klart største exphil-emnet nasjonalt"},
+  {"inst": "1130", "kode": "FIL-0700-1", "navn": "Examen philosophicum, Tromsøvarianten", "sikkerhet": "høy", "merknad": "UiT, 10 stp, bachelor, standard forelesningsbasert variant"},
+  {"inst": "1150", "kode": "EXPH0500-1", "navn": "Examen philosophicum for økonomi", "sikkerhet": "høy", "merknad": "NTNU, 7,5 stp, bachelor, tilpasset økonomistudenter som ved NMBUs handelshøyskole"},
+  {"inst": "1160", "kode": "HHEXPHIL-1", "navn": "Examen Philosophicum - HH", "sikkerhet": "høy", "merknad": "UiS, 10 stp, bachelor, egen variant for Handelshøgskolen"},
+  {"inst": "1174", "kode": "FIL1005-1", "navn": "Examen philosophicum", "sikkerhet": "middels", "merknad": "Nord universitet, 10 stp, bachelor"}
+ ]
+}

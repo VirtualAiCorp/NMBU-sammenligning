@@ -1,0 +1,11 @@
+{
+ "kode": "BIO100-1", "navn": "Cellebiologi", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Grunnleggende cellebiologi på bachelornivå (NUS 652210). Sammenlignet med tilsvarende innføringsemner i cellebiologi ved andre institusjoner, samme NUS-kode der mulig.",
+ "sammenlignbare": [
+  {"inst": "1160", "kode": "BIO100-1", "navn": "Cellebiologi", "sikkerhet": "høy", "merknad": "Identisk emnenavn, identisk NUS-kode (652210) og omfang (10 stp) ved UiS"},
+  {"inst": "1150", "kode": "BI2012-1", "navn": "Cellebiologi", "sikkerhet": "høy", "merknad": "NTNUs grunnkurs i cellebiologi, 7,5 stp, bachelor"},
+  {"inst": "1120", "kode": "BIO103-0", "navn": "Cellebiologi og genetikk", "sikkerhet": "høy", "merknad": "UiBs innføringsemne, kombinerer cellebiologi og genetikk, 10 stp"},
+  {"inst": "0238", "kode": "BIO174-1", "navn": "Cellebiologi", "sikkerhet": "middels", "merknad": "HVLs cellebiologiemne, 7,5 stp, noe mindre omfang"},
+  {"inst": "1174", "kode": "BIO1002-1", "navn": "Cellebiologi", "sikkerhet": "middels", "merknad": "Nords cellebiologiemne, 5 stp, smalere omfang enn NMBUs 10 stp-emne"}
+ ]
+}

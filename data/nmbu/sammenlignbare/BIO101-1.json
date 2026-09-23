@@ -1,0 +1,9 @@
+{
+ "kode": "BIO101-1", "navn": "Introduksjon i bioteknologi og kjemi", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Bredt førstesemesteremne som kombinerer introduksjon til bioteknologi og kjemi. Sammenlignet med tilsvarende introduksjonsemner i bioteknologi ved andre institusjoner (ren kjemidel dekkes separat av KJM100).",
+ "sammenlignbare": [
+  {"inst": "1150", "kode": "BT1101-1", "navn": "Introduksjon til bioteknologi", "sikkerhet": "høy", "merknad": "NTNUs introduksjonsemne i bioteknologi, samme funksjon som bioteknologidelen"},
+  {"inst": "1175", "kode": "KJTS3100-1", "navn": "Bioteknologi", "sikkerhet": "middels", "merknad": "OsloMets bioteknologiemne"},
+  {"inst": "1150", "kode": "TBT4170-1", "navn": "Bioteknologi", "sikkerhet": "middels", "merknad": "NTNUs generelle bioteknologiemne"}
+ ]
+}

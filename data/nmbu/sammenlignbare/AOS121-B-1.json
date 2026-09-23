@@ -1,0 +1,11 @@
+{
+ "kode": "AOS121-B-1", "navn": "Bærekraftig markedsføringsledelse", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Bachelor-emne som kombinerer markedsføringsledelse med bærekraft. BI har et rendyrket bærekraft-markedsføringsemne; ellers er generelle markedsføringsledelse-/markedsføringsgrunnkurs ved konkurrentene nærmeste sammenlignbare.",
+ "sammenlignbare": [
+  {"inst": "8241", "kode": "MRK35121", "navn": "Bærekraftig markedsføring", "sikkerhet": "høy", "merknad": "BI, 7,5 stp, bachelor, samme bærekraftvinkling"},
+  {"inst": "1176", "kode": "MAR1000-1", "navn": "Markedsføringsledelse", "sikkerhet": "middels", "merknad": "USN, 7,5 stp, bachelor, samme fagtema (ledelsesperspektiv) uten eksplisitt bærekraft"},
+  {"inst": "8241", "kode": "MRK34143", "navn": "Markedsføringsledelse", "sikkerhet": "middels", "merknad": "BI, bachelor, svært stort emne, generell markedsføringsledelse"},
+  {"inst": "1240", "kode": "SOL2-1", "navn": "Markedsføring", "sikkerhet": "middels", "merknad": "NHH, 7,5 stp, bachelor, generelt markedsføringsgrunnkurs"},
+  {"inst": "1150", "kode": "MRK1001-A", "navn": "Markedsføring - grunnkurs", "sikkerhet": "lav", "merknad": "NTNU Handelshøyskolen, 7,5 stp, bachelor grunnkurs uten bærekraftvinkling"}
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "kode": "STIN300-1", "navn": "Statistisk programmering i R", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Emne i statistisk programmering med R. Rene 'R-programmering'-emner er sjeldne som egne emner nasjonalt; nærmeste treff er data science/statistikk-emner der R er verktøyet.",
+ "sammenlignbare": [
+  {"inst": "0256", "kode": "ITD20218-1", "navn": "Statistikk og statistisk programmering", "sikkerhet": "middels", "merknad": "HiØs kombinerte emne i statistikk og statistisk programmering"},
+  {"inst": "1120", "kode": "STAT623-0", "navn": "Data Science med R - anvendt prediktiv modellering", "sikkerhet": "middels", "merknad": "UiBs emne med R som gjennomgående verktøy"},
+  {"inst": "1120", "kode": "STAT100-0", "navn": "Introduksjon til Data Science med R", "sikkerhet": "middels", "merknad": "UiBs innføring i dataanalyse med R"}
+ ]
+}

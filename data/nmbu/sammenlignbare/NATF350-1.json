@@ -1,0 +1,9 @@
+{
+ "kode": "NATF350-1", "navn": "Interaksjoner mellom mennesker og vilt", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Master-emne om menneske-vilt-interaksjoner/konflikter. Valgt USNs emne om viltkonflikthåndtering (direkte tematisk match, men bachelornivå) samt viltforvaltningsemner som bredere sammenligning.",
+ "sammenlignbare": [
+  {"inst": "1176", "kode": "NF214-1", "navn": "Wildlife Conflict Management", "sikkerhet": "høy", "merknad": "USN, 7,5 stp, bachelor (lavere nivå enn NMBU-emnet), direkte tematisk match"},
+  {"inst": "1176", "kode": "4208-1", "navn": "Viltøkologi og viltforvaltning", "sikkerhet": "middels", "merknad": "USN, 10 stp, bachelor"},
+  {"inst": "1174", "kode": "BIO1210-1", "navn": "Fisk- og hjorteviltforvaltning", "sikkerhet": "lav", "merknad": "Nord universitet, 10 stp, bachelor, bredere viltforvaltning uten spesifikt fokus på menneske-vilt-interaksjon"}
+ ]
+}

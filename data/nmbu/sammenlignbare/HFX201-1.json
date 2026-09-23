@@ -1,0 +1,10 @@
+{
+ "kode": "HFX201-1", "navn": "Fysiologi", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Generell dyre-/organismefysiologi for husdyr- og biovitenskapstudenter (NUS 679903). Sammenlignet med tilsvarende generelle fysiologiemner i biologiutdanninger ved andre institusjoner (ikke sykepleie-/helsefagfysiologi, som er en annen kontekst).",
+ "sammenlignbare": [
+  {"inst": "1110", "kode": "BIOS1120-1", "navn": "Fysiologi", "sikkerhet": "høy", "merknad": "UiOs generelle fysiologiemne i biologi, 10 stp, bachelor"},
+  {"inst": "1120", "kode": "BIO104-0", "navn": "Komparativ fysiologi", "sikkerhet": "høy", "merknad": "UiBs komparative fysiologiemne på tvers av dyregrupper, 10 stp"},
+  {"inst": "1130", "kode": "BIO-2002-1", "navn": "Dyrefysiologi", "sikkerhet": "høy", "merknad": "UiTs dyrefysiologiemne, 10 stp, bachelor"},
+  {"inst": "1174", "kode": "BI105F-1", "navn": "Zoofysiologi", "sikkerhet": "middels", "merknad": "Nords zoofysiologiemne, noe smalere fokus på dyrefysiologi"}
+ ]
+}

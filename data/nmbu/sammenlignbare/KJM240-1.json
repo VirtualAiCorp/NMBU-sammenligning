@@ -1,0 +1,11 @@
+{
+ "kode": "KJM240-1", "navn": "Analytisk kjemi", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Bachelor-emne i analytisk kjemi, standard emnetype. Valgt tilsvarende grunnkurs i analytisk kjemi ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "1175", "kode": "KJM2300-1", "navn": "Analytisk kjemi I", "sikkerhet": "høy", "merknad": "OsloMet, 10 stp, bachelor"},
+  {"inst": "1150", "kode": "KJ2050-1", "navn": "Analytisk kjemi, grunnkurs", "sikkerhet": "høy", "merknad": "NTNU, 7,5 stp, bachelor"},
+  {"inst": "1110", "kode": "KJM2400-1", "navn": "Analytisk kjemi I", "sikkerhet": "høy", "merknad": "UiO, 10 stp, bachelor"},
+  {"inst": "1120", "kode": "KJEM250-0", "navn": "Analytisk kjemi", "sikkerhet": "høy", "merknad": "UiB, 10 stp, master (litt høyere nivå), identisk emnenavn"},
+  {"inst": "1171", "kode": "KJ-113-1", "navn": "Organisk og analytisk kjemi", "sikkerhet": "middels", "merknad": "UiA, 10 stp, bachelor, kombinert med organisk kjemi"}
+ ]
+}

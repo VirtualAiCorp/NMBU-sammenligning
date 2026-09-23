@@ -1,0 +1,11 @@
+{
+ "kode": "AOS238-B-1", "navn": "Bærekraftige strategier", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Bachelor-emne som kombinerer strategifag med bærekraft. NTNU har et emne med identisk navn. Ellers finnes få rendyrkede 'bærekraftig strategi'-emner på bachelornivå, så generelle strategisk-ledelse-emner ved store konkurrenter er tatt med som nærmeste sammenlignbare (middels sikkerhet).",
+ "sammenlignbare": [
+  {"inst": "1150", "kode": "SMF3091-1", "navn": "Bærekraftige Strategier", "sikkerhet": "høy", "merknad": "NTNU Handelshøyskolen, 7,5 stp, bachelor, identisk emnenavn"},
+  {"inst": "1176", "kode": "ESB101E-1", "navn": "Strategi og bærekraftig forretningsutvikling i finansnæringen", "sikkerhet": "middels", "merknad": "USN, 7,5 stp, bachelor, bærekraftig strategi men avgrenset til finansnæringen"},
+  {"inst": "1240", "kode": "SOL4-1", "navn": "Strategisk ledelse", "sikkerhet": "lav", "merknad": "NHH, 7,5 stp, bachelor, generelt strategiemne uten eksplisitt bærekraftvinkling"},
+  {"inst": "1171", "kode": "ORG209-1", "navn": "Strategisk ledelse", "sikkerhet": "lav", "merknad": "UiA, 7,5 stp, bachelor, generelt strategiemne"},
+  {"inst": "1176", "kode": "STR2000-1", "navn": "Strategisk ledelse", "sikkerhet": "lav", "merknad": "USN, 7,5 stp, bachelor, generelt strategiemne"}
+ ]
+}

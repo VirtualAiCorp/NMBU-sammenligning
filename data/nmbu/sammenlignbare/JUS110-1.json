@@ -1,0 +1,9 @@
+{
+ "kode": "JUS110-1", "navn": "Innføring i eiendomsjus", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Innføringsemne i eiendomsjus på bachelornivå. Valgt BIs eiendomsjusserie (svært store emner) samt eiendomsrettsemne ved Kristiania på samme nivå.",
+ "sammenlignbare": [
+  {"inst": "8241", "kode": "EMS35211", "navn": "Eiendomsjus I", "sikkerhet": "høy", "merknad": "BI, 7,5 stp, bachelor, svært stort emne, direkte navnematch"},
+  {"inst": "8241", "kode": "EMS35241", "navn": "Eiendomsjus II", "sikkerhet": "høy", "merknad": "BI, 7,5 stp, bachelor, videreføring av EMS35211"},
+  {"inst": "8253", "kode": "6353-1", "navn": "Eiendomsrett", "sikkerhet": "høy", "merknad": "Høyskolen Kristiania, 15 stp, bachelor"}
+ ]
+}

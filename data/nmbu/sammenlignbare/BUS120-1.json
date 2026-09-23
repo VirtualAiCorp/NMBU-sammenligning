@@ -1,0 +1,12 @@
+{
+ "kode": "BUS120-1", "navn": "Personlig økonomi", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Bachelor-emne. Direkte navnetreff finnes ved flere institusjoner på samme nivå; NHHs emne er på masternivå og tatt med med lavere sikkerhet siden temaet er identisk.",
+ "sammenlignbare": [
+  {"inst": "8241", "kode": "ELE37431", "navn": "Personlig økonomi", "sikkerhet": "høy", "merknad": "BI, 7,5 stp, bachelor, svært stort emne"},
+  {"inst": "1160", "kode": "BØK310-1", "navn": "Personlig økonomi", "sikkerhet": "høy", "merknad": "UiS handelshøyskole, 10 stp, bachelor"},
+  {"inst": "1150", "kode": "BFIN1001-1", "navn": "Personlig økonomi", "sikkerhet": "høy", "merknad": "NTNU Handelshøyskolen, 7,5 stp, bachelor"},
+  {"inst": "1150", "kode": "FIN1001-1", "navn": "Personlig økonomi", "sikkerhet": "middels", "merknad": "NTNU, eldre emnekode med samme navn, 7,5 stp, bachelor"},
+  {"inst": "1160", "kode": "BØK445-1", "navn": "Finansmarkeder og personlig økonomi", "sikkerhet": "middels", "merknad": "UiS, 10 stp, bachelor, bredere finansmarkedsfokus"},
+  {"inst": "1240", "kode": "FIE432-1", "navn": "Personlig økonomi(N)", "sikkerhet": "lav", "merknad": "NHH, 7,5 stp, men på masternivå (HN) mot NMBU-emnets bachelornivå"}
+ ]
+}

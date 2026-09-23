@@ -1,0 +1,9 @@
+{
+ "kode": "KJB310-1", "navn": "Proteinkjemi", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Masternivå-emne i proteinkjemi/-struktur. Sammenlignet med tilsvarende proteinfokuserte kjemi-/bioteknologiemner på masternivå ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "1130", "kode": "KJE-3402-1", "navn": "Protein Structure", "sikkerhet": "høy", "merknad": "UiTs emne dedikert til proteinstruktur, masternivå"},
+  {"inst": "1130", "kode": "KJE-3603-1", "navn": "Protein Production Technology", "sikkerhet": "middels", "merknad": "UiTs emne om proteinproduksjon, beslektet tema"},
+  {"inst": "1160", "kode": "BIO580-1", "navn": "Protein design", "sikkerhet": "lav", "merknad": "UiS' emne om proteindesign, smalere vinkling"}
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "kode": "BUS134-B-1", "navn": "Excel i økonomisk virksomhetsstyring", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Bachelor-emne om praktisk bruk av Excel til økonomistyring/regnskap. Matchet mot tilsvarende anvendte Excel-emner i bedriftsøkonomi ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "1175", "kode": "ØABED1000-1", "navn": "Grunnleggende årsregnskap med Excel", "sikkerhet": "høy", "merknad": "OsloMet, 7,5 stp, bachelor, stort emne, Excel brukt på regnskap/virksomhetsstyring"},
+  {"inst": "1150", "kode": "BØA2042-A", "navn": "Financial Modeling using Excel", "sikkerhet": "høy", "merknad": "NTNU Handelshøyskolen, 7,5 stp, bachelor, finansiell modellering i Excel"},
+  {"inst": "8241", "kode": "ELE39151", "navn": "Excel Programming & Automation", "sikkerhet": "middels", "merknad": "BI, 7,5 stp, bachelor, bredere Excel-programmering, ikke rendyrket virksomhetsstyring"},
+  {"inst": "1175", "kode": "ØABED6000-1", "navn": "Bedriftsøkonomi 1 med Excel", "sikkerhet": "middels", "merknad": "OsloMet, 10 stp, bachelor, bedriftsøkonomi anvendt med Excel"},
+  {"inst": "0238", "kode": "FØS8303-1", "navn": "Modellering og analyse med Excel", "sikkerhet": "lav", "merknad": "HVL, 2,5 stp, lite emne men direkte tematisk match"}
+ ]
+}

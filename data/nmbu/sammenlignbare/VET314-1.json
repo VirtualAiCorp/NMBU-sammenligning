@@ -1,0 +1,8 @@
+{
+ "kode": "VET314-1", "navn": "Spesiell patologi", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Patologiemne i veterinærstudiet (NUS 767101). Ingen veterinærspesifikke motparter; sammenlignet med generell/spesifikk patologi i humanmedisin-/helsefagsutdanninger ved andre institusjoner (annen art).",
+ "sammenlignbare": [
+  {"inst": "1150", "kode": "FYST2204-1", "navn": "Spesifikk patologi", "sikkerhet": "lav", "merknad": "NTNU, lignende navn og tema (spesifikk/spesiell patologi), men humanmedisinsk (farmasistudiet)"},
+  {"inst": "1120", "kode": "HUPAT301-0", "navn": "Basal humanpatologi", "sikkerhet": "lav", "merknad": "UiB, basal patologi på masternivå, humanmedisinsk"}
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "kode": "HFE200-1", "navn": "Generell ernæring", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "NUS-koden (679903, husdyrfag) viser at dette er husdyrernæring/fôringslære, ikke human ernæring. Sammenlignet med husdyrernæringsemner ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "1174", "kode": "HUS210-2", "navn": "Husdyrernæring", "sikkerhet": "høy", "merknad": "Nord, identisk NUS-kode (679903), 10 stp, bachelor, samme kjernetema"},
+  {"inst": "1177", "kode": "AGR2203-1", "navn": "Husdyrernæring", "sikkerhet": "høy", "merknad": "INN, husdyrernæringsemne, 7,5 stp, bachelor"},
+  {"inst": "1174", "kode": "HUS1008-1", "navn": "Husdyrernæring 1", "sikkerhet": "middels", "merknad": "Nord, første del av todelt husdyrernæringsemne, 7,5 stp"},
+  {"inst": "1174", "kode": "BI247F-1", "navn": "Fôr og ernæring", "sikkerhet": "middels", "merknad": "Nord, fôrings- og ernæringsemne, 10 stp"}
+ ]
+}

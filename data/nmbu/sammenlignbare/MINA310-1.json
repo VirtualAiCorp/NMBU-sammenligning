@@ -1,0 +1,9 @@
+{
+ "kode": "MINA310-1", "navn": "Naturvitenskapelig metode", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Emne i naturvitenskapelig metode (i motsetning til samfunnsvitenskapelig metode, som er svært vanlig). Rene 'naturvitenskapelig metode'-emner er sjeldne; valgt de nærmeste treffene.",
+ "sammenlignbare": [
+  {"inst": "1150", "kode": "MN8000-1", "navn": "Naturvitenskap i praksis: Metode, Etikk og Formidling", "sikkerhet": "middels", "merknad": "NTNU, 7,5 stp, videreutdanning (ph.d.-nivå), direkte tematisk match men annet nivå"},
+  {"inst": "1174", "kode": "BI300F-1", "navn": "Vitenskapelig kommunikasjon og forskningsmetode", "sikkerhet": "middels", "merknad": "Nord universitet, 10 stp, master (høyere nivå), biologifaglig metodeemne"},
+  {"inst": "0256", "kode": "IRBIO30320-1", "navn": "Bachelorprosjekt med naturvitenskapelig metode og profesjonsutøvelse", "sikkerhet": "lav", "merknad": "HiØ, 30 stp (mye større omfang), bachelor, kombinert med bacheloroppgave"}
+ ]
+}

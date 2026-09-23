@@ -1,0 +1,11 @@
+{
+ "kode": "BUS133-1", "navn": "Excel - fra data til informasjon", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Bachelor-emne i anvendt Excel/regneark for bedriftsøkonomiske beslutninger og dataanalyse (bredere enn BUS134 som er rettet mot virksomhetsstyring spesifikt). Matchet mot tilsvarende regneark-/dataanalyseemner for økonomistudenter.",
+ "sammenlignbare": [
+  {"inst": "1176", "kode": "BBM2000-1", "navn": "Bedriftsøkonomiske beslutninger og modellering i regneark", "sikkerhet": "høy", "merknad": "USN, 7,5 stp, bachelor, stort emne (609 kand), samme anvendte regnearkfokus"},
+  {"inst": "1150", "kode": "DIFT1006-1", "navn": "Økonomisk analyse og rapportering med regneark", "sikkerhet": "høy", "merknad": "NTNU, 7,5 stp, bachelor, samme tema (fra data til informasjon/rapportering)"},
+  {"inst": "1177", "kode": "ØKA1027-1", "navn": "Regneark og databaser", "sikkerhet": "middels", "merknad": "INN (Høgskolen i Innlandet), 7,5 stp, bachelor, regneark for økonomer"},
+  {"inst": "0256", "kode": "ØKA201-1", "navn": "Dataanalyse og programmering for økonomer", "sikkerhet": "middels", "merknad": "HiØ, 10 stp, bachelor, bredere dataanalysefokus"},
+  {"inst": "1176", "kode": "BØK2010-1", "navn": "Bedriftsøkonomiske beslutninger og modellering i regneark", "sikkerhet": "høy", "merknad": "USN, mindre variant av BBM2000-1, samme emne/tema"}
+ ]
+}

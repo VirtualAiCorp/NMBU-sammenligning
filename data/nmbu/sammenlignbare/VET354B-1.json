@@ -1,0 +1,8 @@
+{
+ "kode": "VET354B-1", "navn": "Ernæring og metabolisme", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Ernæring og metabolisme i veterinærstudiet (NUS 767101). Ingen veterinærspesifikke motparter finnes; sammenlignet med tilsvarende humanmedisinske ernærings-/metabolismeemner (annen art, samme fagtema).",
+ "sammenlignbare": [
+  {"inst": "1171", "kode": "ERN139-1", "navn": "Ernæring og metabolisme", "sikkerhet": "middels", "merknad": "UiA, identisk emnenavn, 10 stp, bachelor, men humanernæring (annen art)"},
+  {"inst": "1174", "kode": "HUS210-2", "navn": "Husdyrernæring", "sikkerhet": "lav", "merknad": "Nord, dyrebasert ernæringsemne, men ikke metabolismefokusert"}
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "kode": "DAT300-1", "navn": "Anvendt dyplæring", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Masternivå-emne (300-kode) i anvendt dyp læring. Sammenlignet med tilsvarende praktisk/anvendte dyplæringsemner på master-/videreutdanningsnivå ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "0256", "kode": "ITI41720-1", "navn": "Machine Learning and Deep Learning", "sikkerhet": "middels", "merknad": "HiØs kombinerte ML/dyplæringsemne, bachelornivå men praktisk anlagt"},
+  {"inst": "0238", "kode": "DAT255-1", "navn": "Deep learning engineering", "sikkerhet": "middels", "merknad": "HVLs anvendte dyplæringsemne, masternivå"},
+  {"inst": "1150", "kode": "IMT4392-1", "navn": "Deep Learning", "sikkerhet": "middels", "merknad": "NTNUs dyplæringsemne på masternivå"},
+  {"inst": "1160", "kode": "DAT550-1", "navn": "Datautvinning og dyplæring", "sikkerhet": "lav", "merknad": "UiS' emne kombinerer datautvinning og dyplæring, bredere enn NMBUs emne"}
+ ]
+}

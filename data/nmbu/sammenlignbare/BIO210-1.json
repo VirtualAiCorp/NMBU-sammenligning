@@ -1,0 +1,10 @@
+{
+ "kode": "BIO210-1", "navn": "Molekylærbiologi", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Grunnleggende molekylærbiologi på bachelornivå. Sammenlignet med tilsvarende molekylærbiologi-emner ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "1150", "kode": "BI2014-1", "navn": "Molekylærbiologi", "sikkerhet": "høy", "merknad": "identisk emnenavn ved NTNU"},
+  {"inst": "1171", "kode": "ML-208-1", "navn": "Molekylærbiologi", "sikkerhet": "høy", "merknad": "identisk emnenavn ved UiA"},
+  {"inst": "1110", "kode": "BIOS2910-1", "navn": "Molekylærbiologi", "sikkerhet": "høy", "merknad": "identisk emnenavn ved UiO"},
+  {"inst": "1120", "kode": "MOL100-0", "navn": "Innføring i molekylærbiologi", "sikkerhet": "middels", "merknad": "UiBs innføringsemne, stort emne med mange kandidater"}
+ ]
+}

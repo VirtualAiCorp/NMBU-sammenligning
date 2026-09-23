@@ -1,0 +1,9 @@
+{
+ "kode": "LNG250-1", "navn": "Akademisk skriving", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Generisk emne i akademisk skriving (NUS 611999). Sammenlignet med tilsvarende brede skriveemner ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "1130", "kode": "HIF-0100-1", "navn": "Akademisk skriving og formidling I", "sikkerhet": "høy", "merknad": "UiT, identisk NUS-kode (611999), bachelor"},
+  {"inst": "1120", "kode": "EXFAC00AS-0", "navn": "Akademisk skriving", "sikkerhet": "høy", "merknad": "UiB, bredt tverrfaglig emne i akademisk skriving, 10 stp, bachelor"},
+  {"inst": "1120", "kode": "BIO300A-0", "navn": "Akademisk skriving", "sikkerhet": "middels", "merknad": "UiB, akademisk skriving spesifikt for biologistudenter, men masternivå (HN)"}
+ ]
+}

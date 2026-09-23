@@ -1,0 +1,9 @@
+{
+ "kode": "BIO322-1", "navn": "Avanserte emner i genomikk", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Masteremne i genomikk (NUS 752218, HN). Få institusjoner har et rendyrket avansert genomikkemne; nærmeste motparter er master-emner i genomikk/bioinformatikk, med noe ulik spesialisering.",
+ "sammenlignbare": [
+  {"inst": "1130", "kode": "KJE-3604-1", "navn": "Bioinformatics: Microbial genomics and metagenomics", "sikkerhet": "middels", "merknad": "UiT, avansert genomikk-/bioinformatikkemne på masternivå, mikrobielt fokus"},
+  {"inst": "1174", "kode": "BI311F-1", "navn": "Akvagenomikk og bioinformatikk", "sikkerhet": "middels", "merknad": "Nord, avansert genomikkemne på masternivå, akvakulturrettet"},
+  {"inst": "1110", "kode": "MED3007-1", "navn": "Statistical Principles in Genomics: an Introduction with R", "sikkerhet": "lav", "merknad": "UiO, kort introduksjonsemne (2 stp) til statistisk genomikk, mindre omfang"}
+ ]
+}
