@@ -84,7 +84,12 @@ export function NmbuNationalCompare({ course, year, visAntall, whole }: {
   const grp = nus.length >= 4 ? nus.slice(1, 4) : 'ukjent';
 
   useEffect(() => { loadMeta().then(setMeta).catch((e) => setError(String(e))); }, []);
-  useEffect(() => { setGroup(null); loadGroup(grp).then(setGroup).catch((e) => setError(String(e))); }, [grp]);
+  // Fagfeltgruppen pluss «999» (uspesifisert NUS, bl.a. alle BI-emner), som bare tas med ved navnelikhet.
+  useEffect(() => {
+    setGroup(null);
+    Promise.all([loadGroup(grp), grp === '999' ? Promise.resolve([]) : loadGroup('999')])
+      .then(([g, u]) => setGroup([...g, ...u])).catch((e) => setError(String(e)));
+  }, [grp]);
 
   // Kuraterte koblinger (data/nmbu/sammenlignbare/, bygd til emner/kuratert.json): vises først.
   useEffect(() => {
@@ -133,11 +138,13 @@ export function NmbuNationalCompare({ course, year, visAntall, whole }: {
       if (insts && !insts.has(c.inst)) continue;
       const s = sumPacked(c.years, year);
       if (s.total === 0) continue;
-      const sameNus = nus && c.nus && c.nus.slice(1) === nus.slice(1);
+      const sameNus = !!(nus && c.nus && c.nus.slice(1) === nus.slice(1));
+      const uspes = !c.nus || c.nus.startsWith('9') || (c.nus.length >= 4 && c.nus.slice(1, 4) !== grp);
       const sim = similarity(course.navn, c.navn);
+      if (!hits && uspes && sim < 0.3) continue;
       const score = (hits ? 0 : (sameNus ? 2 : 0)) + sim * 3 + Math.min(s.total, 500) / 2000;
       if (!hits && sim < 0.15 && !sameNus) continue;
-      out.push({ c, s, score, grunn: sameNus ? (sim >= 0.3 ? 'Samme NUS-kode og likt navn' : 'Samme NUS-kode') : sim >= 0.3 ? 'Likt navn, samme fagfelt' : 'Samme fagfelt' });
+      out.push({ c, s, score, grunn: uspes ? 'Likt navn (NUS uspesifisert)' : sameNus ? (sim >= 0.3 ? 'Samme NUS-kode og likt navn' : 'Samme NUS-kode') : sim >= 0.3 ? 'Likt navn, samme fagfelt' : 'Samme fagfelt' });
     }
     out.sort((a, b) => b.score - a.score || b.s.total - a.s.total);
     if (hits || !curated?.length) return out.slice(0, 120);
