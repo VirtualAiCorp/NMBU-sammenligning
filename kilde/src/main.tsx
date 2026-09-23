@@ -1,8 +1,8 @@
 
   import { createRoot } from "react-dom/client";
   import App from "./app/App.tsx";
-  import { ThemeToggle } from "./app/components/ThemeToggle";
+  import { TopRightControls } from "./app/components/TopRightControls";
   import "./styles/index.css";
 
-  createRoot(document.getElementById("root")!).render(<><App /><ThemeToggle /></>);
+  createRoot(document.getElementById("root")!).render(<><App /><TopRightControls /></>);
   

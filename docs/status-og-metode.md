@@ -320,3 +320,19 @@ anslag på byggearbeid: 1 fullskjerm-dashboard med sidemeny, 2 toppmeny med modu
 4 sammenligningsmatrise (varmekart NMBU mot konkurrentmedian), 5 rapport-/presentasjonsmodus.
 Forslag til to valgbare oppsett: «Oversikt» (dagens) og «Arbeidsflate» (dashboard med matrisen som startside), valgt med en
 bryter ved siden av lys/mørk og husket i nettleseren. Venter på Mathias' valg før noe bygges.
+
+## 19. Tre valgbare oppsett
+
+Knappen «Oppsett» øverst til høyre (ved siden av lys/mørk, `TopRightControls.tsx`) velger mellom:
+1. **Oversikt** (standard): dagens oppsett med kort, landingssider og egne sider per modul.
+2. **Fullskjerm-dashboard**: fast grønn sidemeny (Hele NMBU, HH, fakultetene med moduler under), brødsmuler og full
+   innholdsbredde; startsiden er sammenligningsmatrisen. På smal skjerm blir sidemenyen en uttrekksmeny.
+3. **Toppmeny**: enhetene (Hele NMBU, HH, fakultetene) som faner øverst og modulene i en rad under; valgt modul beholdes
+   når man bytter fakultet. Samme startside.
+- Valget lagres i localStorage («layout») og kan settes i en lenke med `?oppsett=dashboard` / `?oppsett=toppmeny` / `?oppsett=oversikt`
+  (`layoutStore.ts`).
+- Alle tre bruker de samme modulene: `App.tsx` har én tabell over fakultetsmodulene (`FACULTY_MODULE_META` + `facultyModuleBody`) og
+  NMBU-sidene (`NMBU_PAGE_META` + `nmbuPageBody`). «Oversikt» pakker dem i den gamle sideformen (`classicPage`), de to andre i
+  `AppShells.tsx`. HH-delen er uendret, bare pakket inn i `renderHH()` så den kan vises i alle rammene.
+- Nye moduler legges inn ett sted (tabellen i App.tsx og `FAKULTETSMODULER` i AppShells.tsx) og vises da i alle tre oppsett.
+- Kjent: fakultetenes landingsside og HH-sidene har fortsatt sin egen tilbakeknapp og smale bredde inne i de nye rammene.

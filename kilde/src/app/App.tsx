@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, type ReactNode } from 'react';
 import { CourseSelector } from './components/CourseSelector';
 import { CourseComparison } from './components/CourseComparison';
 import { UniversityFilter } from './components/UniversityFilter';
@@ -31,7 +31,9 @@ import { EconomyComparison } from './components/EconomyComparison';
 import { LayoutLab } from './components/LayoutLab';
 import { ECON_UNITS } from './data/economyData';
 import { STAFF_INSTITUTIONS, STAFF_FACULTIES, STAFF_NMBU_FACULTIES } from './data/staffData';
-import { FACULTIES } from './data/faculties';
+import { FACULTIES, type FacultyData, type FacultyId } from './data/faculties';
+import { useLayout } from './layoutStore';
+import { DashboardShell, TopbarShell, ShellHome, ShellHeader } from './components/AppShells';
 import { BookOpen, Table2, BarChart2, Star, Scale, Map, GraduationCap, GalleryVerticalEnd, Award, ScatterChart, TrendingUp, ArrowUpRight, Wifi, Globe2 } from 'lucide-react';
 
 type ProgramLevel = 'bachelor' | 'master' | 'opptak2026' | 'markedsstatus';
@@ -88,449 +90,165 @@ export default function App() {
     return { backgroundColor: 'var(--nmbu-beige-light)', color: 'var(--nmbu-neutral-1)' };
   };
 
-  // ── Fakultetsnivå: NMBU-forside ──────────────────────────────────────────
-  if (faculty === null) {
-    return (
-      <FacultyLanding
-        onSelect={(f) => { setFaculty(f); setFacultyView('landing'); setFacultyGroup(undefined); setFacultyCourseGroup(undefined); }}
-      />
-    );
-  }
+  // ── Oppsett og navigasjon ─────────────────────────────────────────────────
+  const layout = useLayout();
+  const goHome = () => { setFaculty(null); setFacultyView('landing'); };
+  const navigate = (f: Faculty | null, view: FacultyView = 'landing', gruppe?: string) => {
+    setFaculty(f);
+    setFacultyView(view);
+    setFacultyGroup(view === 'analyse' ? gruppe : undefined);
+    setFacultyCourseGroup(view === 'emner' ? gruppe : undefined);
+    if (f === 'hh') setProgramLevel(null);
+    window.scrollTo({ top: 0 });
+  };
 
-  // ── Alle emner ved NMBU ───────────────────────────────────────────────────
-  if (faculty === 'nmbu-emner') {
-    return <NmbuCourseExplorer onBack={() => setFaculty(null)} />;
-  }
-  if (faculty === 'nmbu-bolig') {
-    return (
-      <div className="min-h-screen p-6" style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
-        <div className="max-w-7xl mx-auto">
-          <button onClick={() => setFaculty(null)} className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs mb-6"
-            style={{ backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)' }}>← Fakulteter</button>
-          <header className="mb-8">
-            <div className="flex items-center gap-3 mb-1">
-              <div className="w-1 h-9 rounded-sm" style={{ backgroundColor: 'var(--nmbu-green-dark)' }} />
-              <h1 className="text-4xl" style={{ color: 'var(--nmbu-green-dark)', fontFamily: "'Lora', serif", fontWeight: 500 }}>Bolig og studentboliger</h1>
-            </div>
-            <p className="text-sm pl-4" style={{ color: 'var(--nmbu-neutral-1)' }}>
-              Ås mot studiestedene til institusjonene vi konkurrerer med · Kilde: NSO Studentboligundersøkelsen og SSB
-            </p>
-          </header>
-          <StudiestedBolig />
-        </div>
-      </div>
-    );
-  }
-  if (faculty === 'nmbu-oppsett') {
-    return <LayoutLab onBack={() => setFaculty(null)} />;
-  }
-  if (faculty === 'nmbu-okonomi') {
-    return (
-      <div className="min-h-screen p-6" style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
-        <div className="max-w-7xl mx-auto">
-          <button onClick={() => setFaculty(null)} className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs mb-6"
-            style={{ backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)' }}>← Fakulteter</button>
-          <header className="mb-8">
-            <div className="flex items-center gap-3 mb-1">
-              <div className="w-1 h-9 rounded-sm" style={{ backgroundColor: 'var(--nmbu-green-dark)' }} />
-              <h1 className="text-4xl" style={{ color: 'var(--nmbu-green-dark)', fontFamily: "'Lora', serif", fontWeight: 500 }}>Økonomi og styringsindikatorer</h1>
-            </div>
-            <p className="text-sm pl-4" style={{ color: 'var(--nmbu-neutral-1)' }}>
-              NMBU mot institusjonene vi konkurrerer med · Kilde: DBH/HK-dir tabell 902 og 750
-            </p>
-          </header>
-          <EconomyComparison units={ECON_UNITS} />
-        </div>
-      </div>
-    );
-  }
-  if (faculty === 'nmbu-fagmiljo') {
-    return (
-      <div className="min-h-screen p-6" style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
-        <div className="max-w-7xl mx-auto">
-          <button onClick={() => setFaculty(null)} className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs mb-6"
-            style={{ backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)' }}>← Fakulteter</button>
-          <header className="mb-8">
-            <div className="flex items-center gap-3 mb-1">
-              <div className="w-1 h-9 rounded-sm" style={{ backgroundColor: 'var(--nmbu-green-dark)' }} />
-              <h1 className="text-4xl" style={{ color: 'var(--nmbu-green-dark)', fontFamily: "'Lora', serif", fontWeight: 500 }}>Fagmiljøet: tilsatte og publisering</h1>
-            </div>
-            <p className="text-sm pl-4" style={{ color: 'var(--nmbu-neutral-1)' }}>
-              NMBU mot institusjonene vi konkurrerer med, og NMBUs fakulteter mot hverandre · Kilde: DBH/HK-dir
-            </p>
-          </header>
-          <StaffComparison views={[
-            { id: 'institusjon', label: 'Institusjonene', units: STAFF_INSTITUTIONS, unitLabel: (u) => u.kort,
-              note: 'Alle institusjonene som har minst ett konkurrentprogram i fakultetenes sammenligninger.' },
-            { id: 'nmbu', label: 'NMBUs fakulteter', units: STAFF_NMBU_FACULTIES, unitLabel: (u) => u.navn },
+  // Innholdet i hver fakultetsmodul (samme i alle oppsett); rammen rundt velges av oppsettet.
+  const FACULTY_MODULE_META: Record<Exclude<FacultyView, 'landing'>, { title: string; subtitle: string }> = {
+    analyse: { title: 'Analyse opptak', subtitle: 'Søkertall, poenggrenser og trender 2020–2026 · Kilde: Samordna opptak / HKDIR' },
+    emner: { title: 'Emner og karakterer', subtitle: 'Karakterindeks, karakterfordeling og emnetabeller per studieprogram · Kilde: DBH/HKDIR' },
+    gjennomforing: { title: 'Gjennomføring, frafall og studenttall', subtitle: 'Startkull, fullført på normert tid, frafall, registrerte, nye studenter og kandidater · Kilde: DBH/HK-dir' },
+    studentene: { title: 'Studentene', subtitle: 'Alder, utenlandske studenter og utveksling per program · Kilde: DBH/HK-dir' },
+    studiebarometer: { title: 'Studiebarometeret', subtitle: 'Studentenes vurdering av studieprogrammet · skala 1–5 · Kilde: studiebarometeret.no' },
+    markedsstatus: { title: 'Markedsstatus', subtitle: 'Status og utvikling hos konkurrerende institusjoner · Kilde: styrepapirer og årsrapporter' },
+    fagmiljo: { title: 'Fagmiljøet: tilsatte og publisering', subtitle: 'Studentårsverk per faglig årsverk, førstestillinger og publisering, fakultet mot fakultet · Kilde: DBH/HK-dir' },
+    bolig: { title: 'Bolig og studentboliger', subtitle: 'Studentboliger, kjøpspriser og leiepriser ved NMBU og konkurrentenes studiesteder · Kilde: NSO og SSB' },
+    okonomi: { title: 'Økonomi og styringsindikatorer', subtitle: 'NMBU mot institusjonene i fakultetets sammenligninger · Kilde: DBH/HK-dir tabell 902 og 750' },
+  };
+  const facultyModuleBody = (fac: FacultyData, view: Exclude<FacultyView, 'landing'>): ReactNode => {
+    switch (view) {
+      case 'analyse': return <LandsamAdmissionAnalysis key={`${fac.id}-${facultyGroup ?? 'alle'}`} faculty={fac} initialGroup={facultyGroup} />;
+      case 'emner': return <LandsamCourseAnalysis key={`${fac.id}-${facultyCourseGroup ?? 'alle'}`} faculty={fac} initialGroup={facultyCourseGroup} />;
+      case 'gjennomforing': return <FacultyCompletion key={fac.id} faculty={fac} />;
+      case 'studentene': return <FacultyStudents key={fac.id} faculty={fac} />;
+      case 'studiebarometer': return <FacultyStudiebarometer key={fac.id} faculty={fac} />;
+      case 'markedsstatus': return <FacultyMarketStatus key={fac.id} faculty={fac} />;
+      case 'bolig': return <StudiestedBolig key={fac.id} steder={[...new Set(fac.admissionGroups.flatMap((g) => g.entries.map((e) => e.studiested)).filter(Boolean))]} />;
+      case 'okonomi': {
+        const fakUnits = STAFF_FACULTIES[fac.id] ?? [];
+        const insts = new Set(fakUnits.map((u) => u.inst));
+        return <EconomyComparison key={fac.id} units={ECON_UNITS.filter((u) => u.isNmbu || insts.has(u.inst))} hovedInst={fakUnits.filter((u) => u.hoved).map((u) => u.inst)} />;
+      }
+      case 'fagmiljo': {
+        const fakUnits = STAFF_FACULTIES[fac.id] ?? [];
+        const instCodes = new Set(fakUnits.map((u) => u.inst));
+        const hovedInst = new Set(fakUnits.filter((u) => u.hoved).map((u) => u.inst));
+        return (
+          <StaffComparison key={fac.id} views={[
+            { id: 'fakultet', label: 'Fakultet mot fakultet', units: fakUnits, unitLabel: (u) => `${u.kort} · ${u.navn}`,
+              note: `${fac.label} mot fakultetene som eier konkurrentprogrammene i fakultetets sammenligninger (DBH 347). Fakulteter som bare eier svakere sammenligninger er ikke valgt fra start.` },
+            { id: 'institusjon', label: 'Institusjon mot institusjon', unitLabel: (u) => u.kort,
+              units: STAFF_INSTITUTIONS.filter((u) => instCodes.has(u.inst)).map((u) => ({ ...u, hoved: u.isNmbu || hovedInst.has(u.inst) })) },
           ]} />
-        </div>
-      </div>
-    );
-  }
-
-  // ── Fakultetsskjermene (LANDSAM, REALTEK …) ───────────────────────────────
-  if (faculty === 'landsam' || faculty === 'realtek' || faculty === 'biovit' || faculty === 'kbm' || faculty === 'mina' || faculty === 'vet') {
-    const fac = FACULTIES[faculty];
-
-    if (facultyView === 'landing') {
-      return (
-        <LandsamLanding
-          faculty={fac}
-          onOpenAnalysis={(g) => { setFacultyGroup(g); setFacultyView('analyse'); }}
-          onOpenCourses={(g) => { setFacultyCourseGroup(g); setFacultyView('emner'); }}
-          onOpenMarketStatus={() => setFacultyView('markedsstatus')}
-          onOpenStudiebarometer={() => setFacultyView('studiebarometer')}
-          onOpenCompletion={() => setFacultyView('gjennomforing')}
-          onOpenStudents={() => setFacultyView('studentene')}
-          onOpenStaff={() => setFacultyView('fagmiljo')}
-          onOpenHousing={() => setFacultyView('bolig')}
-          onOpenEconomy={() => setFacultyView('okonomi')}
-          onBackToFaculties={() => setFaculty(null)}
-        />
-      );
+        );
+      }
     }
+  };
 
-    if (facultyView === 'gjennomforing') {
-      return (
-        <div className="min-h-screen p-6" style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
-          <div className="max-w-7xl mx-auto">
-            <div className="flex items-center gap-2 mb-6">
-              <button
-                onClick={() => setFacultyView('landing')}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs transition-all"
-                style={{ backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)' }}
-              >
-                ← Tilbake
-              </button>
-              <span className="px-3 py-1.5 rounded-lg text-xs" style={{ backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-1)' }}>
-                {fac.label}
-              </span>
-            </div>
-            <header className="mb-8">
-              <div className="flex items-center gap-3 mb-1">
-                <div className="w-1 h-9 rounded-sm" style={{ backgroundColor: 'var(--nmbu-green-dark)' }} />
-                <h1 className="text-4xl" style={{ color: 'var(--nmbu-green-dark)', fontFamily: "'Lora', serif", fontWeight: 500 }}>
-                  Gjennomføring, frafall og studenttall
-                </h1>
-              </div>
-              <p className="text-sm pl-4" style={{ color: 'var(--nmbu-neutral-1)' }}>
-                Startkull, fullført på normert tid, frafall, registrerte, nye studenter og kandidater · Kilde: DBH/HK-dir
-              </p>
-            </header>
-            <FacultyCompletion key={fac.id} faculty={fac} />
-          </div>
-        </div>
-      );
-    }
-
-    if (facultyView === 'studentene') {
-      return (
-        <div className="min-h-screen p-6" style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
-          <div className="max-w-7xl mx-auto">
-            <div className="flex items-center gap-2 mb-6">
-              <button
-                onClick={() => setFacultyView('landing')}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs transition-all"
-                style={{ backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)' }}
-              >
-                ← Tilbake
-              </button>
-              <span className="px-3 py-1.5 rounded-lg text-xs" style={{ backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-1)' }}>
-                {fac.label}
-              </span>
-            </div>
-            <header className="mb-8">
-              <div className="flex items-center gap-3 mb-1">
-                <div className="w-1 h-9 rounded-sm" style={{ backgroundColor: 'var(--nmbu-green-dark)' }} />
-                <h1 className="text-4xl" style={{ color: 'var(--nmbu-green-dark)', fontFamily: "'Lora', serif", fontWeight: 500 }}>
-                  Studentene
-                </h1>
-              </div>
-              <p className="text-sm pl-4" style={{ color: 'var(--nmbu-neutral-1)' }}>
-                Alder, utenlandske studenter og utveksling per program · Kilde: DBH/HK-dir
-              </p>
-            </header>
-            <FacultyStudents key={fac.id} faculty={fac} />
-          </div>
-        </div>
-      );
-    }
-
-    if (facultyView === 'bolig') {
-      return (
-        <div className="min-h-screen p-6" style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
-          <div className="max-w-7xl mx-auto">
-            <div className="flex items-center gap-2 mb-6">
-              <button
-                onClick={() => setFacultyView('landing')}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs transition-all"
-                style={{ backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)' }}
-              >
-                ← Tilbake
-              </button>
-              <span className="px-3 py-1.5 rounded-lg text-xs" style={{ backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-1)' }}>
-                {fac.label}
-              </span>
-            </div>
-            <header className="mb-8">
-              <div className="flex items-center gap-3 mb-1">
-                <div className="w-1 h-9 rounded-sm" style={{ backgroundColor: 'var(--nmbu-green-dark)' }} />
-                <h1 className="text-4xl" style={{ color: 'var(--nmbu-green-dark)', fontFamily: "'Lora', serif", fontWeight: 500 }}>
-                  Bolig og studentboliger
-                </h1>
-              </div>
-              <p className="text-sm pl-4" style={{ color: 'var(--nmbu-neutral-1)' }}>
-                Studentboliger, kjøpspriser og leiepriser ved NMBU og konkurrentenes studiesteder · Kilde: NSO og SSB
-              </p>
-            </header>
-            <StudiestedBolig key={fac.id} steder={[...new Set(fac.admissionGroups.flatMap((g) => g.entries.map((e) => e.studiested)).filter(Boolean))]} />
-          </div>
-        </div>
-      );
-    }
-
-    if (facultyView === 'okonomi') {
-      return (
-        <div className="min-h-screen p-6" style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
-          <div className="max-w-7xl mx-auto">
-            <div className="flex items-center gap-2 mb-6">
-              <button
-                onClick={() => setFacultyView('landing')}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs transition-all"
-                style={{ backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)' }}
-              >
-                ← Tilbake
-              </button>
-              <span className="px-3 py-1.5 rounded-lg text-xs" style={{ backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-1)' }}>
-                {fac.label}
-              </span>
-            </div>
-            <header className="mb-8">
-              <div className="flex items-center gap-3 mb-1">
-                <div className="w-1 h-9 rounded-sm" style={{ backgroundColor: 'var(--nmbu-green-dark)' }} />
-                <h1 className="text-4xl" style={{ color: 'var(--nmbu-green-dark)', fontFamily: "'Lora', serif", fontWeight: 500 }}>
-                  Økonomi og styringsindikatorer
-                </h1>
-              </div>
-              <p className="text-sm pl-4" style={{ color: 'var(--nmbu-neutral-1)' }}>
-                NMBU mot institusjonene i fakultetets sammenligninger · Kilde: DBH/HK-dir tabell 902 og 750
-              </p>
-            </header>
-            <EconomyComparison key={fac.id} units={(() => {
-              const insts = new Set((STAFF_FACULTIES[fac.id] ?? []).map((u) => u.inst));
-              return ECON_UNITS.filter((u) => u.isNmbu || insts.has(u.inst));
-            })()} hovedInst={(STAFF_FACULTIES[fac.id] ?? []).filter((u) => u.hoved).map((u) => u.inst)} />
-          </div>
-        </div>
-      );
-    }
-
-    if (facultyView === 'fagmiljo') {
-      return (
-        <div className="min-h-screen p-6" style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
-          <div className="max-w-7xl mx-auto">
-            <div className="flex items-center gap-2 mb-6">
-              <button
-                onClick={() => setFacultyView('landing')}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs transition-all"
-                style={{ backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)' }}
-              >
-                ← Tilbake
-              </button>
-              <span className="px-3 py-1.5 rounded-lg text-xs" style={{ backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-1)' }}>
-                {fac.label}
-              </span>
-            </div>
-            <header className="mb-8">
-              <div className="flex items-center gap-3 mb-1">
-                <div className="w-1 h-9 rounded-sm" style={{ backgroundColor: 'var(--nmbu-green-dark)' }} />
-                <h1 className="text-4xl" style={{ color: 'var(--nmbu-green-dark)', fontFamily: "'Lora', serif", fontWeight: 500 }}>
-                  Fagmiljøet: tilsatte og publisering
-                </h1>
-              </div>
-              <p className="text-sm pl-4" style={{ color: 'var(--nmbu-neutral-1)' }}>
-                Studentårsverk per faglig årsverk, førstestillinger og publisering, fakultet mot fakultet · Kilde: DBH/HK-dir
-              </p>
-            </header>
-            <StaffComparison key={fac.id} views={(() => {
-              const fakUnits = STAFF_FACULTIES[fac.id] ?? [];
-              const instCodes = new Set(fakUnits.map((u) => u.inst));
-              const hovedInst = new Set(fakUnits.filter((u) => u.hoved).map((u) => u.inst));
-              return [
-                { id: 'fakultet', label: 'Fakultet mot fakultet', units: fakUnits, unitLabel: (u) => `${u.kort} · ${u.navn}`,
-                  note: `${fac.label} mot fakultetene som eier konkurrentprogrammene i fakultetets sammenligninger (DBH 347). Fakulteter som bare eier svakere sammenligninger er ikke valgt fra start.` },
-                { id: 'institusjon', label: 'Institusjon mot institusjon', unitLabel: (u) => u.kort,
-                  units: STAFF_INSTITUTIONS.filter((u) => instCodes.has(u.inst)).map((u) => ({ ...u, hoved: u.isNmbu || hovedInst.has(u.inst) })) },
-              ];
-            })()} />
-          </div>
-        </div>
-      );
-    }
-
-    if (facultyView === 'studiebarometer') {
-      return (
-        <div className="min-h-screen p-6" style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
-          <div className="max-w-7xl mx-auto">
-
-            {/* Top-level switcher */}
-            <div className="flex items-center gap-2 mb-6">
-              <button
-                onClick={() => setFacultyView('landing')}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs transition-all"
-                style={{ backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)' }}
-              >
-                ← Tilbake
-              </button>
-              <span className="px-3 py-1.5 rounded-lg text-xs" style={{ backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-1)' }}>
-                {fac.label}
-              </span>
-            </div>
-
-            {/* Header */}
-            <header className="mb-8">
-              <div className="flex items-center gap-3 mb-1">
-                <div className="w-1 h-9 rounded-sm" style={{ backgroundColor: 'var(--nmbu-green-dark)' }} />
-                <h1 className="text-4xl" style={{ color: 'var(--nmbu-green-dark)', fontFamily: "'Lora', serif", fontWeight: 500 }}>
-                  Studiebarometeret
-                </h1>
-              </div>
-              <p className="text-sm pl-4" style={{ color: 'var(--nmbu-neutral-1)' }}>
-                Studentenes vurdering av studieprogrammet · skala 1–5 · Kilde: studiebarometeret.no
-              </p>
-            </header>
-
-            <FacultyStudiebarometer key={fac.id} faculty={fac} />
-          </div>
-        </div>
-      );
-    }
-
-    if (facultyView === 'markedsstatus') {
-      return (
-        <div className="min-h-screen p-6" style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
-          <div className="max-w-7xl mx-auto">
-
-            {/* Top-level switcher */}
-            <div className="flex items-center gap-2 mb-6">
-              <button
-                onClick={() => setFacultyView('landing')}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs transition-all"
-                style={{ backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)' }}
-              >
-                ← Tilbake
-              </button>
-              <span className="px-3 py-1.5 rounded-lg text-xs" style={{ backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-1)' }}>
-                {fac.label}
-              </span>
-            </div>
-
-            {/* Header */}
-            <header className="mb-8">
-              <div className="flex items-center gap-3 mb-1">
-                <div className="w-1 h-9 rounded-sm" style={{ backgroundColor: 'var(--nmbu-green-dark)' }} />
-                <h1 className="text-4xl" style={{ color: 'var(--nmbu-green-dark)', fontFamily: "'Lora', serif", fontWeight: 500 }}>
-                  Markedsstatus
-                </h1>
-              </div>
-              <p className="text-sm pl-4" style={{ color: 'var(--nmbu-neutral-1)' }}>
-                Status og utvikling hos konkurrerende institusjoner · Kilde: styrepapirer og årsrapporter
-              </p>
-            </header>
-
-            <FacultyMarketStatus key={fac.id} faculty={fac} />
-          </div>
-        </div>
-      );
-    }
-
-    if (facultyView === 'emner') {
-      return (
-        <div className="min-h-screen p-6" style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
-          <div className="max-w-7xl mx-auto">
-
-            {/* Top-level switcher */}
-            <div className="flex items-center gap-2 mb-6">
-              <button
-                onClick={() => setFacultyView('landing')}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs transition-all"
-                style={{ backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)' }}
-              >
-                ← Tilbake
-              </button>
-              <span className="px-3 py-1.5 rounded-lg text-xs" style={{ backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-1)' }}>
-                {fac.label}
-              </span>
-            </div>
-
-            {/* Header */}
-            <header className="mb-8">
-              <div className="flex items-center gap-3 mb-1">
-                <div className="w-1 h-9 rounded-sm" style={{ backgroundColor: 'var(--nmbu-green-dark)' }} />
-                <h1 className="text-4xl" style={{ color: 'var(--nmbu-green-dark)', fontFamily: "'Lora', serif", fontWeight: 500 }}>
-                  Emner og karakterer
-                </h1>
-              </div>
-              <p className="text-sm pl-4" style={{ color: 'var(--nmbu-neutral-1)' }}>
-                Karakterindeks, karakterfordeling og emnetabeller per studieprogram · Kilde: DBH/HKDIR
-              </p>
-            </header>
-
-            <LandsamCourseAnalysis
-              key={`${fac.id}-${facultyCourseGroup ?? 'alle'}`}
-              faculty={fac}
-              initialGroup={facultyCourseGroup}
-            />
-          </div>
-        </div>
-      );
-    }
-
+  // Sider for hele NMBU
+  type NmbuPage = 'nmbu-bolig' | 'nmbu-okonomi' | 'nmbu-fagmiljo';
+  const NMBU_PAGE_META: Record<NmbuPage, { title: string; subtitle: string }> = {
+    'nmbu-bolig': { title: 'Bolig og studentboliger', subtitle: 'Ås mot studiestedene til institusjonene vi konkurrerer med · Kilde: NSO Studentboligundersøkelsen og SSB' },
+    'nmbu-okonomi': { title: 'Økonomi og styringsindikatorer', subtitle: 'NMBU mot institusjonene vi konkurrerer med · Kilde: DBH/HK-dir tabell 902 og 750' },
+    'nmbu-fagmiljo': { title: 'Fagmiljøet: tilsatte og publisering', subtitle: 'NMBU mot institusjonene vi konkurrerer med, og NMBUs fakulteter mot hverandre · Kilde: DBH/HK-dir' },
+  };
+  const nmbuPageBody = (page: NmbuPage): ReactNode => {
+    if (page === 'nmbu-bolig') return <StudiestedBolig />;
+    if (page === 'nmbu-okonomi') return <EconomyComparison units={ECON_UNITS} />;
     return (
-      <div className="min-h-screen p-6" style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
-        <div className="max-w-7xl mx-auto">
-
-          {/* Top-level switcher */}
-          <div className="flex items-center gap-2 mb-6">
-            <button
-              onClick={() => setFacultyView('landing')}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs transition-all"
-              style={{ backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)' }}
-            >
-              ← Tilbake
-            </button>
-            <span className="px-3 py-1.5 rounded-lg text-xs" style={{ backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-1)' }}>
-              {fac.label}
-            </span>
-          </div>
-
-          {/* Header */}
-          <header className="mb-8">
-            <div className="flex items-center gap-3 mb-1">
-              <div className="w-1 h-9 rounded-sm" style={{ backgroundColor: 'var(--nmbu-green-dark)' }} />
-              <h1 className="text-4xl" style={{ color: 'var(--nmbu-green-dark)', fontFamily: "'Lora', serif", fontWeight: 500 }}>
-                Analyse opptak
-              </h1>
-            </div>
-            <p className="text-sm pl-4" style={{ color: 'var(--nmbu-neutral-1)' }}>
-              Søkertall, poenggrenser og trender 2020–2026 · Kilde: Samordna opptak / HKDIR
-            </p>
-          </header>
-
-          <LandsamAdmissionAnalysis
-            key={`${fac.id}-${facultyGroup ?? 'alle'}`}
-            faculty={fac}
-            initialGroup={facultyGroup}
-          />
-        </div>
-      </div>
+      <StaffComparison views={[
+        { id: 'institusjon', label: 'Institusjonene', units: STAFF_INSTITUTIONS, unitLabel: (u) => u.kort,
+          note: 'Alle institusjonene som har minst ett konkurrentprogram i fakultetenes sammenligninger.' },
+        { id: 'nmbu', label: 'NMBUs fakulteter', units: STAFF_NMBU_FACULTIES, unitLabel: (u) => u.navn },
+      ]} />
     );
-  }
+  };
+  const isNmbuPage = (f: Faculty | null): f is NmbuPage => f === 'nmbu-bolig' || f === 'nmbu-okonomi' || f === 'nmbu-fagmiljo';
+  const isFacultyId = (f: Faculty | null): f is FacultyId => f === 'landsam' || f === 'realtek' || f === 'biovit' || f === 'kbm' || f === 'mina' || f === 'vet';
+
+  const facultyLanding = (fac: FacultyData) => (
+    <LandsamLanding
+      faculty={fac}
+      onOpenAnalysis={(g) => { setFacultyGroup(g); setFacultyView('analyse'); }}
+      onOpenCourses={(g) => { setFacultyCourseGroup(g); setFacultyView('emner'); }}
+      onOpenMarketStatus={() => setFacultyView('markedsstatus')}
+      onOpenStudiebarometer={() => setFacultyView('studiebarometer')}
+      onOpenCompletion={() => setFacultyView('gjennomforing')}
+      onOpenStudents={() => setFacultyView('studentene')}
+      onOpenStaff={() => setFacultyView('fagmiljo')}
+      onOpenHousing={() => setFacultyView('bolig')}
+      onOpenEconomy={() => setFacultyView('okonomi')}
+      onBackToFaculties={goHome}
+    />
+  );
+
+  // ── Oppsett «oversikt» (dagens): egne sider med tilbakeknapp og smal innholdsbredde ──
+  const classicPage = (opts: { title: string; subtitle: string; backLabel: string; onBack: () => void; chip?: string }, body: ReactNode) => (
+    <div className="min-h-screen p-6" style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
+      <div className="max-w-7xl mx-auto">
+        <div className="flex items-center gap-2 mb-6">
+          <button onClick={opts.onBack} className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs transition-all"
+            style={{ backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)' }}>
+            {opts.backLabel}
+          </button>
+          {opts.chip && (
+            <span className="px-3 py-1.5 rounded-lg text-xs" style={{ backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-1)' }}>
+              {opts.chip}
+            </span>
+          )}
+        </div>
+        <header className="mb-8">
+          <div className="flex items-center gap-3 mb-1">
+            <div className="w-1 h-9 rounded-sm" style={{ backgroundColor: 'var(--nmbu-green-dark)' }} />
+            <h1 className="text-4xl" style={{ color: 'var(--nmbu-green-dark)', fontFamily: "'Lora', serif", fontWeight: 500 }}>{opts.title}</h1>
+          </div>
+          <p className="text-sm pl-4" style={{ color: 'var(--nmbu-neutral-1)' }}>{opts.subtitle}</p>
+        </header>
+        {body}
+      </div>
+    </div>
+  );
+
+  const renderClassic = (): ReactNode => {
+    if (faculty === null) {
+      return <FacultyLanding onSelect={(f) => { setFaculty(f); setFacultyView('landing'); setFacultyGroup(undefined); setFacultyCourseGroup(undefined); }} />;
+    }
+    if (faculty === 'nmbu-emner') return <NmbuCourseExplorer onBack={goHome} />;
+    if (faculty === 'nmbu-oppsett') return <LayoutLab onBack={goHome} />;
+    if (isNmbuPage(faculty)) {
+      const m = NMBU_PAGE_META[faculty];
+      return classicPage({ ...m, backLabel: '← Fakulteter', onBack: goHome }, nmbuPageBody(faculty));
+    }
+    if (isFacultyId(faculty)) {
+      const fac = FACULTIES[faculty];
+      if (facultyView === 'landing') return facultyLanding(fac);
+      const m = FACULTY_MODULE_META[facultyView];
+      return classicPage({ ...m, backLabel: '← Tilbake', onBack: () => setFacultyView('landing'), chip: fac.label }, facultyModuleBody(fac, facultyView));
+    }
+    return renderHH();
+  };
+
+  // ── Oppsett «dashboard» og «toppmeny»: samme moduler i full bredde inne i en fast ramme ──
+  const renderShellContent = (): ReactNode => {
+    if (faculty === null) return <ShellHome onNavigate={navigate} />;
+    if (faculty === 'nmbu-emner') return <NmbuCourseExplorer onBack={goHome} />;
+    if (faculty === 'nmbu-oppsett') return <LayoutLab onBack={goHome} />;
+    if (isNmbuPage(faculty)) {
+      const m = NMBU_PAGE_META[faculty];
+      return <><ShellHeader title={m.title} subtitle={m.subtitle} eyebrow="Hele NMBU" />{nmbuPageBody(faculty)}</>;
+    }
+    if (isFacultyId(faculty)) {
+      const fac = FACULTIES[faculty];
+      if (facultyView === 'landing') return facultyLanding(fac);
+      const m = FACULTY_MODULE_META[facultyView];
+      return <><ShellHeader title={m.title} subtitle={m.subtitle} eyebrow={fac.label} />{facultyModuleBody(fac, facultyView)}</>;
+    }
+    return renderHH();
+  };
 
   // ── Handelshøyskolen ──────────────────────────────────────────────────────
   // Bygget uten Handelshøyskolen (VITE_UTEN_HH=1, det åpne nettstedet): alt nedenfor er
   // død kode og fjernes av bundleren, sammen med HH-komponentene og HH-dataene.
+  const renderHH = (): ReactNode => {
   if (import.meta.env.VITE_UTEN_HH === '1') return null;
 
   // Landing / program picker
@@ -874,4 +592,13 @@ export default function App() {
       </div>
     </div>
   );
+  };
+
+  if (layout === 'dashboard') {
+    return <DashboardShell faculty={faculty} view={facultyView} onNavigate={navigate}>{renderShellContent()}</DashboardShell>;
+  }
+  if (layout === 'toppmeny') {
+    return <TopbarShell faculty={faculty} view={facultyView} onNavigate={navigate}>{renderShellContent()}</TopbarShell>;
+  }
+  return <>{renderClassic()}</>;
 }

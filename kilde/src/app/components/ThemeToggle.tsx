@@ -36,7 +36,7 @@ export function ThemeToggle() {
       onClick={() => { try { localStorage.setItem(KEY, neste); } catch { /* privat modus */ } setTheme(neste); }}
       title={theme === 'dark' ? 'Bytt til lys modus' : 'Bytt til mørk modus'}
       aria-label={theme === 'dark' ? 'Bytt til lys modus' : 'Bytt til mørk modus'}
-      className="fixed top-4 right-4 z-50 w-9 h-9 rounded-full flex items-center justify-center transition-colors"
+      className="w-9 h-9 rounded-full flex items-center justify-center transition-colors"
       style={{ backgroundColor: 'var(--card)', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-1)', boxShadow: '0 1px 3px rgba(0,0,0,0.12)' }}
     >
       {theme === 'dark' ? <Moon className="w-4 h-4" /> : <Sun className="w-4 h-4" />}

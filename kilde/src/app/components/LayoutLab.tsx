@@ -23,7 +23,7 @@ const MODULER = [
   { id: 'okonomi', label: 'Økonomi', icon: Landmark },
 ] as const;
 
-interface Rad {
+export interface Rad {
   fak: FacultyData; gruppe: string; gruppeLabel: string; program: string;
   pg: number | null; pgK: number | null; op: number | null; opK: number | null; sp: number | null; spK: number | null;
   norm: number | null; normK: number | null; fraf: number | null; frafK: number | null; kullAar: number | null; apent: boolean;
@@ -31,7 +31,7 @@ interface Rad {
 const median = (xs: number[]) => { const s = [...xs].sort((a, b) => a - b); return s.length ? (s.length % 2 ? s[(s.length - 1) / 2] : (s[s.length / 2 - 1] + s[s.length / 2]) / 2) : null; };
 const nf = (v: number | null | undefined, d = 1) => (v == null ? '–' : v.toLocaleString('nb-NO', { minimumFractionDigits: d, maximumFractionDigits: d }));
 
-function lagRader(): Rad[] {
+export function lagRader(): Rad[] {
   const out: Rad[] = [];
   for (const id of FACULTY_IDS) {
     const fak = FACULTIES[id];
@@ -294,7 +294,7 @@ const INDIKATORER: Ind[] = [
   { k: 'norm', l: 'Fullført normert', v: (r) => [r.norm, r.normK], hoy: true, d: 0, enhet: ' %' },
   { k: 'fraf', l: 'Frafall', v: (r) => [r.fraf, r.frafK], hoy: false, d: 0, enhet: ' %' },
 ];
-function Matrise({ rader }: { rader: Rad[] }) {
+export function Matrise({ rader, onOpen, embedded }: { rader: Rad[]; onOpen?: (fakId: FacultyData['id'], gruppe: string) => void; embedded?: boolean }) {
   const [aapen, setAapen] = useState<string | null>(null);
   const farge = (nm: number | null, k: number | null, hoy: boolean) => {
     if (nm == null || k == null || k === 0) return 'var(--nmbu-beige-light)';
@@ -304,13 +304,13 @@ function Matrise({ rader }: { rader: Rad[] }) {
     return diff > 0 ? `rgba(4, 120, 87, ${0.15 + 0.6 * t})` : `rgba(185, 28, 28, ${0.15 + 0.6 * t})`;
   };
   return (
-    <div className="p-4" style={{ minHeight: 520, backgroundColor: 'var(--nmbu-beige-light)' }}>
+    <div className={embedded ? '' : 'p-4'} style={{ minHeight: embedded ? undefined : 520, backgroundColor: embedded ? undefined : 'var(--nmbu-beige-light)' }}>
       <div className="flex items-center gap-3 mb-3 flex-wrap text-xs">
         <span style={{ fontWeight: 700, color: 'var(--nmbu-green-dark)', fontSize: 15 }}>Alle NMBU-program mot konkurrentene (median), 2025</span>
         <span className="ml-auto flex items-center gap-1"><span className="w-3 h-3 rounded-sm inline-block" style={{ backgroundColor: 'rgba(4,120,87,0.6)' }} /> bedre</span>
         <span className="flex items-center gap-1"><span className="w-3 h-3 rounded-sm inline-block" style={{ backgroundColor: 'rgba(185,28,28,0.6)' }} /> svakere</span>
       </div>
-      <div className="overflow-auto rounded-xl" style={{ maxHeight: 560, border: '1px solid var(--nmbu-neutral-3)', backgroundColor: '#fff' }}>
+      <div className="overflow-auto rounded-xl" style={{ maxHeight: embedded ? '70vh' : 560, border: '1px solid var(--nmbu-neutral-3)', backgroundColor: '#fff' }}>
         <table className="w-full text-xs border-collapse">
           <thead className="sticky top-0" style={{ backgroundColor: '#fff' }}>
             <tr>
@@ -337,6 +337,10 @@ function Matrise({ rader }: { rader: Rad[] }) {
                       <Panel title="Poenggrense over tid"><MiniTrend fak={r.fak} gruppe={r.gruppe} /></Panel>
                       <Panel title="Snitt møtt 2025"><MiniBar data={opMottData(r.fak, r.gruppe)} /></Panel>
                     </div>
+                    {onOpen && (
+                      <button onClick={() => onOpen(r.fak.id, r.gruppe)} className="mt-3 px-3 py-1.5 rounded-lg text-xs"
+                        style={{ backgroundColor: 'var(--nmbu-green-dark)', color: '#fff' }}>Åpne opptaksanalysen for {r.gruppeLabel} →</button>
+                    )}
                   </td></tr>
                 ),
               ];
@@ -427,8 +431,8 @@ export function LayoutLab({ onBack }: { onBack: () => void }) {
           <h1 className="text-4xl" style={{ color: 'var(--nmbu-green-dark)', fontFamily: "'Lora', serif", fontWeight: 500 }}>Alternative oppsett</h1>
         </div>
         <p className="text-sm pl-4" style={{ color: 'var(--nmbu-neutral-1)', maxWidth: 820 }}>
-          Fem forslag til hvordan nettsiden kan struktureres, ved siden av dagens oppsett. Skissene er klikkbare og bruker ekte tall, men er ikke
-          fullverdige løsninger. Tanken er at to av oppsettene blir valgbare på nettsiden, med en bryter ved siden av lys/mørk.
+          Fem forslag til hvordan nettsiden kan struktureres, ved siden av dagens oppsett. Skissene er klikkbare og bruker ekte tall.
+          Forslag 1 og 2 er nå bygget som valgbare oppsett (knappen «Oppsett» øverst til høyre); de andre er fortsatt skisser.
         </p>
       </header>
 
@@ -477,13 +481,13 @@ export function LayoutLab({ onBack }: { onBack: () => void }) {
       </div>
 
       <div className="rounded-2xl p-5 mt-6" style={{ backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)' }}>
-        <div style={{ fontFamily: "'Lora', serif", fontSize: 20, color: 'var(--nmbu-green-dark)', marginBottom: 6 }}>Forslag til de to valgbare oppsettene</div>
+        <div style={{ fontFamily: "'Lora', serif", fontSize: 20, color: 'var(--nmbu-green-dark)', marginBottom: 6 }}>Valgt: tre oppsett (bygget)</div>
         <div className="text-sm" style={{ color: 'var(--nmbu-neutral-1)', lineHeight: 1.7, maxWidth: 900 }}>
-          <p><b>«Oversikt»</b> = dagens kortbaserte oppsett, for nye brukere, mobil og møter der man går steg for steg.</p>
-          <p><b>«Arbeidsflate»</b> = fullskjerm-dashboardet (forslag 1), for daglig bruk på stor skjerm, med sammenligningsmatrisen (forslag 4) som startside.</p>
+          <p><b>Oversikt</b> (standard) = dagens oppsett, <b>Fullskjerm-dashboard</b> = forslag 1 med sammenligningsmatrisen (forslag 4) som startside,
+            og <b>Toppmeny</b> = forslag 2. Velg oppsett med «Oppsett»-knappen øverst til høyre, ved siden av lys/mørk. Valget huskes i nettleseren,
+            og en lenke kan åpne et bestemt oppsett med <code>?oppsett=dashboard</code> eller <code>?oppsett=toppmeny</code>.</p>
           <p className="mt-2" style={{ color: 'var(--nmbu-neutral-2)' }}>
-            Begge bruker de samme modulene og dataene; bare rammen og navigasjonen byttes. Valget legges som en bryter ved siden av lys/mørk og huskes
-            i nettleseren, som temavalget. Program-først (3) og rapportmodus (5) kan senere komme som egne innganger i begge oppsettene.
+            Alle tre bruker de samme modulene og dataene; bare rammen og navigasjonen byttes. Program-først (3) og rapportmodus (5) er fortsatt bare skisser.
           </p>
         </div>
       </div>
