@@ -1,4 +1,4 @@
-// GENERERT av scripts/build-landsam-data.py 2026-09-22 – ikke rediger for hånd.
+// GENERERT av scripts/build-landsam-data.py 2026-09-23 – ikke rediger for hånd.
 // Kilder: Samordna opptak programtabell 2026 (søkertall 2021–2026) og SO poenggrenserapport (Tableau) 2020–2026, hovedopptak.
 // 0 i poenggrense = alle kvalifiserte kom inn · null = data ikke tilgjengelig
 import type { FullAdmissionEntry, FullYearData } from './fullAdmissionData';
@@ -116,6 +116,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Oslo m.fl.', type: 'bachelor',
         url: 'https://www.bi.no/studier-og-kurs/bachelorstudier/eiendomsmegling-jus-okonomi/',
         years: {
+          '2021': Y(1113, 1078, null, 45.8, 866, 860, null, null),
+          '2022': Y(1592, 1549, null, 49.5, 1392, 1383, null, null),
+          '2023': Y(1723, 1580, null, 46.5, 1515, 1513, null, null),
+          '2024': Y(1655, 1519, null, 50.4, 1410, 1405, null, null),
+          '2025': Y(1946, 1794, null, 44.1, 1485, 1485, null, null),
         },
       },
     ],
@@ -282,11 +287,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Trondheim', type: 'master2',
         url: 'https://www.ntnu.no/studier/mfyspl',
         years: {
-          '2021': Y(212, 124, 40, null, 170, 71, null, 3.3),
-          '2022': Y(204, 104, 40, null, 164, 84, null, 3.2),
-          '2023': Y(152, 75, 30, null, 133, 72, null, 2.8),
-          '2024': Y(150, 72, 30, null, 125, 74, null, 2.4),
-          '2025': Y(179, 97, 34, null, 149, 80, null, 2.8),
+          '2021': Y(212, 125, 40, 61.6, 170, 71, null, 3.3),
+          '2022': Y(204, 101, 40, 57.4, 164, 84, null, 3.2),
+          '2023': Y(152, 77, 30, 54.5, 133, 72, null, 2.8),
+          '2024': Y(150, 74, 30, 54.1, 125, 74, null, 2.4),
+          '2025': Y(179, 97, 34, 57.7, 149, 80, null, 2.8),
           '2026': Y(273, 107, 34, null, null, null, null, 2.9),
         },
       },
@@ -437,7 +442,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
   {
     id: 'eiendomsutvikling', label: 'Eiendomsutvikling', level: 'master2',
     desc: 'Sammenligner de toårige masterne i eiendomsutvikling og -forvaltning.',
-    note: 'Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra institusjonenes egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere og kjønnsfordeling publiseres ikke for NMBU. NMBU oppgir 30 studieplasser og poenggrense 3,5 ved opptaket 2024 på programsiden, men publiserer ingen tidsserie.',
+    note: 'Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», førstevalgssøkere, kvinneandel, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (årstotal, søknadsalternativer = alle søkere uansett prioritet); studieplasser og poenggrenser er hentet fra institusjonenes egne publiseringer der de finnes. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere (prioritet 1) og kvinneandel blant førstevalgssøkerne er hentet fra DBH tabell 379 for alle institusjonene. NMBU oppgir 30 studieplasser og poenggrense 3,5 ved opptaket 2024 på programsiden, men publiserer ingen tidsserie.',
     nmbuIds: ['nmbu_eiendomsutvikling'], defaultIds: ['nmbu_eiendomsutvikling', 'ntnu_eiendomsutvikling'],
     entries: [
       {
@@ -445,11 +450,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Ås', type: 'master2',
         url: 'https://www.nmbu.no/studier/master-2-aar/eiendomsutvikling',
         years: {
-          '2021': Y(220, null, null, null, 127, 60, null, null),
-          '2022': Y(172, null, null, null, 119, 81, null, null),
-          '2023': Y(195, null, null, null, 128, 85, null, null),
-          '2024': Y(215, null, null, null, 128, 68, null, 3.5),
-          '2025': Y(202, null, null, null, 112, 71, null, null),
+          '2021': Y(220, 140, null, 39.3, 127, 60, null, null),
+          '2022': Y(172, 108, null, 36.1, 119, 81, null, null),
+          '2023': Y(195, 111, null, 43.2, 128, 85, null, null),
+          '2024': Y(215, 132, null, 37.1, 128, 68, null, 3.5),
+          '2025': Y(202, 135, null, 39.3, 112, 71, null, null),
         },
       },
       {
@@ -457,11 +462,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Trondheim', type: 'master2',
         url: 'https://www.ntnu.no/studier/maeiendom',
         years: {
-          '2021': Y(280, 113, 24, null, 227, 60, null, 3.3),
-          '2022': Y(272, 110, 24, null, 215, 58, null, 3.3),
-          '2023': Y(262, 110, 24, null, 220, 80, null, 3.3),
-          '2024': Y(218, 91, 24, null, 169, 62, null, 3.0),
-          '2025': Y(266, 116, 30, null, 223, 74, null, 3.3),
+          '2021': Y(280, 114, 24, 37.7, 227, 60, null, 3.3),
+          '2022': Y(272, 112, 24, 30.4, 215, 58, null, 3.3),
+          '2023': Y(262, 109, 24, 34.9, 220, 80, null, 3.3),
+          '2024': Y(218, 88, 24, 50.0, 169, 62, null, 3.0),
+          '2025': Y(266, 116, 30, 33.6, 223, 74, null, 3.3),
           '2026': Y(302, 153, 30, null, null, null, null, 3.3),
         },
       },
@@ -470,7 +475,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
   {
     id: 'folkehelse', label: 'Folkehelsevitenskap', level: 'master2',
     desc: 'Sammenligner de toårige masterne innen folkehelse.',
-    note: 'Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra institusjonenes egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere og kjønnsfordeling publiseres ikke for NMBU. NMBU oppgir 36 studieplasser på programsiden og publiserer ingen poenggrense. NTNUs egne søkertall gjelder bare norske og nordiske søkere og er derfor lavere enn DBH-tallene for dette programmet; 2026-tallet er derfor ikke ført inn. UiOs tall er fra UiOs egen poenggrenseoversikt og har et annet tellegrunnlag enn DBH.',
+    note: 'Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», førstevalgssøkere, kvinneandel, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (årstotal, søknadsalternativer = alle søkere uansett prioritet); studieplasser og poenggrenser er hentet fra institusjonenes egne publiseringer der de finnes. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere (prioritet 1) og kvinneandel blant førstevalgssøkerne er hentet fra DBH tabell 379 for alle institusjonene. NMBU oppgir 36 studieplasser på programsiden og publiserer ingen poenggrense. NTNUs egne søkertall gjelder bare norske og nordiske søkere og er derfor lavere enn DBH-tallene for dette programmet; 2026-tallet er derfor ikke ført inn. UiOs tall er fra UiOs egen poenggrenseoversikt og har et annet tellegrunnlag enn DBH.',
     nmbuIds: ['nmbu_folkehelse'], defaultIds: ['nmbu_folkehelse', 'ntnu_folkehelse'],
     entries: [
       {
@@ -478,11 +483,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Ås', type: 'master2',
         url: 'https://www.nmbu.no/studier/master-2-aar/folkehelsevitenskap',
         years: {
-          '2021': Y(232, null, null, null, 221, 101, null, null),
-          '2022': Y(181, null, null, null, 175, 106, null, null),
-          '2023': Y(169, null, null, null, 144, 102, null, null),
-          '2024': Y(195, null, null, null, 154, 86, null, null),
-          '2025': Y(180, null, null, null, 170, 128, null, null),
+          '2021': Y(232, 148, null, 89.2, 221, 101, null, null),
+          '2022': Y(181, 128, null, 89.8, 175, 106, null, null),
+          '2023': Y(169, 115, null, 85.2, 144, 102, null, null),
+          '2024': Y(195, 127, null, 85.8, 154, 86, null, null),
+          '2025': Y(180, 113, null, 82.3, 170, 128, null, null),
         },
       },
       {
@@ -490,11 +495,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Trondheim', type: 'master2',
         url: 'https://www.ntnu.no/studier/mfhls',
         years: {
-          '2021': Y(430, 196, 30, null, 364, 129, null, 3.8),
-          '2022': Y(385, 126, 30, null, 339, 105, null, 3.6),
-          '2023': Y(400, 128, 30, null, 347, 112, null, 3.7),
-          '2024': Y(369, 126, 30, null, 323, 134, null, 3.4),
-          '2025': Y(376, 119, 40, null, 333, 135, null, 3.5),
+          '2021': Y(430, 226, 30, 92.0, 364, 129, null, 3.8),
+          '2022': Y(385, 145, 30, 94.5, 339, 105, null, 3.6),
+          '2023': Y(400, 146, 30, 87.7, 347, 112, null, 3.7),
+          '2024': Y(369, 130, 30, 86.2, 323, 134, null, 3.4),
+          '2025': Y(376, 134, 40, 86.6, 333, 135, null, 3.5),
           '2026': Y(null, 140, 40, null, null, null, null, 2.9),
         },
       },
@@ -503,9 +508,9 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Oslo', type: 'master2',
         url: 'https://www.uio.no/studier/program/folkehelsevitenskap-og-epidemiologi/studieretninger/folkehelsevitenskap-og-berekraftige-helsetjenester/',
         years: {
-          '2023': Y(320, null, null, null, null, 53, null, 3.8),
-          '2024': Y(369, null, null, null, null, 64, null, 3.8),
-          '2025': Y(373, null, null, null, null, 178, null, 3.1),
+          '2023': Y(482, 216, null, 85.2, 431, 153, null, 3.8),
+          '2024': Y(541, 228, null, 84.6, 506, 175, null, 3.8),
+          '2025': Y(572, 217, null, 86.2, 523, 263, null, 3.1),
           '2026': Y(366, null, null, null, null, 219, null, 2.7),
         },
       },
@@ -514,7 +519,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
   {
     id: 'globalokonomi', label: 'Global økonomi og politikk', level: 'master2',
     desc: 'Viser søkningen til NMBUs master i global økonomi og politikk.',
-    note: 'Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra institusjonenes egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere og kjønnsfordeling publiseres ikke for NMBU. Vi fant ingen norsk master med tydelig samme profil (politisk økonomi/global økonomi og politikk), så gruppa har foreløpig bare NMBU. NMBU oppgir 25 studieplasser og poenggrense C/3,00 ved opptaket 2025. Første opptak var i 2024.',
+    note: 'Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», førstevalgssøkere, kvinneandel, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (årstotal, søknadsalternativer = alle søkere uansett prioritet); studieplasser og poenggrenser er hentet fra institusjonenes egne publiseringer der de finnes. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere (prioritet 1) og kvinneandel blant førstevalgssøkerne er hentet fra DBH tabell 379 for alle institusjonene. Vi fant ingen norsk master med tydelig samme profil (politisk økonomi/global økonomi og politikk), så gruppa har foreløpig bare NMBU. NMBU oppgir 25 studieplasser og poenggrense C/3,00 ved opptaket 2025. Første opptak var i 2024.',
     nmbuIds: ['nmbu_gep'], defaultIds: ['nmbu_gep'],
     entries: [
       {
@@ -522,8 +527,8 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Ås', type: 'master2',
         url: 'https://www.nmbu.no/studier/master-2-aar/global-okonomi-og-politikk',
         years: {
-          '2024': Y(163, null, null, null, 28, 17, null, null),
-          '2025': Y(244, null, null, null, 71, 52, null, 3.0),
+          '2024': Y(163, 37, null, 43.2, 28, 17, null, null),
+          '2025': Y(244, 77, null, 49.4, 71, 52, null, 3.0),
         },
       },
     ],
@@ -531,7 +536,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
   {
     id: 'globaleutvikling', label: 'Globale utviklingsstudier', level: 'master2',
     desc: 'Sammenligner de toårige masterne innen globale utviklingsstudier.',
-    note: 'Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra institusjonenes egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere og kjønnsfordeling publiseres ikke for NMBU. NMBU-tallene ligger i DBH under programkoden M-DS (Globale utviklingsstudier). NMBU oppgir bare karakterkravet C for opptaket 2024, ikke en tallfestet poenggrense. UiO-tallene er fra UiOs egen poenggrenseoversikt og har et annet tellegrunnlag enn DBH.',
+    note: 'Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», førstevalgssøkere, kvinneandel, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (årstotal, søknadsalternativer = alle søkere uansett prioritet); studieplasser og poenggrenser er hentet fra institusjonenes egne publiseringer der de finnes. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere (prioritet 1) og kvinneandel blant førstevalgssøkerne er hentet fra DBH tabell 379 for alle institusjonene. NMBU-tallene ligger i DBH under programkoden M-DS (Globale utviklingsstudier). NMBU oppgir bare karakterkravet C for opptaket 2024, ikke en tallfestet poenggrense. UiO-tallene for 2026 er fra UiOs egen poenggrenseoversikt og har et annet tellegrunnlag enn DBH-tallene for 2021–2025.',
     nmbuIds: ['nmbu_globale_utviklingsstudier'], defaultIds: ['nmbu_globale_utviklingsstudier', 'uio_decc'],
     entries: [
       {
@@ -539,11 +544,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Ås', type: 'master2',
         url: 'https://www.nmbu.no/studier/master-2-aar/globale-utviklingsstudier',
         years: {
-          '2021': Y(718, null, null, null, 304, 102, null, null),
-          '2022': Y(858, null, null, null, 297, 99, null, null),
-          '2023': Y(709, null, null, null, 116, 71, null, null),
-          '2024': Y(220, null, null, null, 77, 60, null, null),
-          '2025': Y(284, null, null, null, 95, 67, null, null),
+          '2021': Y(718, 225, null, 55.6, 304, 102, null, null),
+          '2022': Y(858, 331, null, 50.5, 297, 99, null, null),
+          '2023': Y(709, 358, null, 49.2, 116, 71, null, null),
+          '2024': Y(220, 96, null, 67.7, 77, 60, null, null),
+          '2025': Y(284, 121, null, 57.0, 95, 67, null, null),
         },
       },
       {
@@ -551,11 +556,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Oslo', type: 'master2',
         url: 'https://www.uio.no/english/studies/programmes/ces-master/',
         years: {
-          '2021': Y(548, null, null, null, null, 39, null, 4.5),
-          '2022': Y(437, null, null, null, null, 42, null, 4.4),
-          '2023': Y(411, null, null, null, null, 62, null, 4.2),
-          '2024': Y(390, null, null, null, null, 74, null, 3.9),
-          '2025': Y(369, null, null, null, null, 68, null, 3.8),
+          '2021': Y(821, 445, null, 70.6, 455, 59, null, 4.5),
+          '2022': Y(629, 315, null, 69.5, 329, 70, null, 4.4),
+          '2023': Y(617, 319, null, 67.7, 328, 95, null, 4.2),
+          '2024': Y(436, 185, null, 75.7, 281, 83, null, 3.9),
+          '2025': Y(412, 174, null, 66.7, 264, 79, null, 3.8),
           '2026': Y(286, null, null, null, null, 47, null, 3.9),
         },
       },
@@ -564,7 +569,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
   {
     id: 'intmiljo', label: 'Internasjonale miljøstudier', level: 'master2',
     desc: 'Viser søkningen til NMBUs master i internasjonale miljøstudier.',
-    note: 'Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra institusjonenes egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere og kjønnsfordeling publiseres ikke for NMBU. Vi fant ingen norsk master med tydelig samme profil, så gruppa har foreløpig bare NMBU. NMBU oppgir bare karakterkravet C for opptaket 2024, ikke en tallfestet poenggrense.',
+    note: 'Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», førstevalgssøkere, kvinneandel, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (årstotal, søknadsalternativer = alle søkere uansett prioritet); studieplasser og poenggrenser er hentet fra institusjonenes egne publiseringer der de finnes. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere (prioritet 1) og kvinneandel blant førstevalgssøkerne er hentet fra DBH tabell 379 for alle institusjonene. Vi fant ingen norsk master med tydelig samme profil, så gruppa har foreløpig bare NMBU. NMBU oppgir bare karakterkravet C for opptaket 2024, ikke en tallfestet poenggrense.',
     nmbuIds: ['nmbu_intmiljo'], defaultIds: ['nmbu_intmiljo'],
     entries: [
       {
@@ -572,11 +577,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Ås', type: 'master2',
         url: 'https://www.nmbu.no/studier/master-2-aar/internasjonale-miljostudier',
         years: {
-          '2021': Y(751, null, null, null, 361, 93, null, null),
-          '2022': Y(739, null, null, null, 197, 64, null, null),
-          '2023': Y(531, null, null, null, 119, 88, null, null),
-          '2024': Y(205, null, null, null, 89, 63, null, null),
-          '2025': Y(217, null, null, null, 88, 67, null, null),
+          '2021': Y(751, 308, null, 59.7, 361, 93, null, null),
+          '2022': Y(739, 266, null, 54.1, 197, 64, null, null),
+          '2023': Y(531, 268, null, 54.9, 119, 88, null, null),
+          '2024': Y(205, 86, null, 66.3, 89, 63, null, null),
+          '2025': Y(217, 87, null, 63.2, 88, 67, null, null),
         },
       },
     ],
@@ -584,7 +589,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
   {
     id: 'intrelasjoner', label: 'Internasjonale relasjoner', level: 'master2',
     desc: 'Sammenligner NMBUs master i internasjonale relasjoner med nærmeste fredsfaglige masterprogram.',
-    note: 'Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra institusjonenes egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere og kjønnsfordeling publiseres ikke for NMBU. UiO har ingen master som heter Internasjonale relasjoner; Peace and Conflict Studies er nærmeste faglige motpart. NMBU oppgir 35 studieplasser og bare karakterkravet C for opptaket 2024. UiO-tallene er fra UiOs egen poenggrenseoversikt og har et annet tellegrunnlag enn DBH. Deltidsvarianten M-IR-DEL er holdt utenfor.',
+    note: 'Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», førstevalgssøkere, kvinneandel, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (årstotal, søknadsalternativer = alle søkere uansett prioritet); studieplasser og poenggrenser er hentet fra institusjonenes egne publiseringer der de finnes. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere (prioritet 1) og kvinneandel blant førstevalgssøkerne er hentet fra DBH tabell 379 for alle institusjonene. UiO har ingen master som heter Internasjonale relasjoner; Peace and Conflict Studies er nærmeste faglige motpart. NMBU oppgir 35 studieplasser og bare karakterkravet C for opptaket 2024. UiO-tallene for 2026 er fra UiOs egen poenggrenseoversikt og har et annet tellegrunnlag enn DBH-tallene for 2021–2025. Deltidsvarianten M-IR-DEL er holdt utenfor.',
     nmbuIds: ['nmbu_intrel'], defaultIds: ['nmbu_intrel', 'uio_pecos'],
     entries: [
       {
@@ -592,11 +597,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Ås', type: 'master2',
         url: 'https://www.nmbu.no/studier/master-2-aar/internasjonale-relasjoner',
         years: {
-          '2021': Y(715, null, null, null, 309, 109, null, null),
-          '2022': Y(800, null, null, null, 269, 103, null, null),
-          '2023': Y(679, null, null, null, 148, 121, null, null),
-          '2024': Y(318, null, null, null, 172, 134, null, null),
-          '2025': Y(405, null, null, null, 219, 167, null, null),
+          '2021': Y(715, 412, null, 48.1, 309, 109, null, null),
+          '2022': Y(800, 435, null, 46.2, 269, 103, null, null),
+          '2023': Y(679, 429, null, 52.9, 148, 121, null, null),
+          '2024': Y(318, 196, null, 61.7, 172, 134, null, null),
+          '2025': Y(405, 268, null, 59.7, 219, 167, null, null),
         },
       },
       {
@@ -604,11 +609,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Oslo', type: 'master2',
         url: 'https://www.uio.no/english/studies/programmes/peace-master/',
         years: {
-          '2021': Y(591, null, null, null, null, 37, null, 4.2),
-          '2022': Y(546, null, null, null, null, 31, null, 4.2),
-          '2023': Y(531, null, null, null, null, 48, null, 4.2),
-          '2024': Y(585, null, null, null, null, 59, null, 4.2),
-          '2025': Y(578, null, null, null, null, 70, null, 4.2),
+          '2021': Y(801, 402, null, 58.0, 295, 46, null, 4.2),
+          '2022': Y(726, 371, null, 60.1, 278, 48, null, 4.2),
+          '2023': Y(706, 355, null, 55.5, 292, 78, null, 4.2),
+          '2024': Y(629, 331, null, 58.3, 332, 69, null, 4.2),
+          '2025': Y(617, 316, null, 63.3, 335, 74, null, 4.2),
           '2026': Y(518, null, null, null, null, 50, null, 4.1),
         },
       },
@@ -617,7 +622,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
   {
     id: 'landskapglobal', label: 'Landskapsarkitektur for global bærekraft', level: 'master2',
     desc: 'Viser søkningen til NMBUs toårige master i landskapsarkitektur for global bærekraft.',
-    note: 'Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra institusjonenes egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere og kjønnsfordeling publiseres ikke for NMBU. Vi fant ingen tilsvarende toårig landskapsarkitekturmaster ved andre norske institusjoner, så gruppa har foreløpig bare NMBU. NMBU oppgir bare karakterkravet C for opptaket 2024.',
+    note: 'Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», førstevalgssøkere, kvinneandel, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (årstotal, søknadsalternativer = alle søkere uansett prioritet); studieplasser og poenggrenser er hentet fra institusjonenes egne publiseringer der de finnes. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere (prioritet 1) og kvinneandel blant førstevalgssøkerne er hentet fra DBH tabell 379 for alle institusjonene. Vi fant ingen tilsvarende toårig landskapsarkitekturmaster ved andre norske institusjoner, så gruppa har foreløpig bare NMBU. NMBU oppgir bare karakterkravet C for opptaket 2024.',
     nmbuIds: ['nmbu_gla'], defaultIds: ['nmbu_gla'],
     entries: [
       {
@@ -625,11 +630,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Ås', type: 'master2',
         url: 'https://www.nmbu.no/studier/master-2-aar/landskapsarkitektur-global-baerekraft',
         years: {
-          '2021': Y(213, null, null, null, 48, 37, null, null),
-          '2022': Y(241, null, null, null, 68, 47, null, null),
-          '2023': Y(174, null, null, null, 33, 31, null, null),
-          '2024': Y(88, null, null, null, 32, 27, null, null),
-          '2025': Y(123, null, null, null, 37, 35, null, null),
+          '2021': Y(213, 98, null, 57.1, 48, 37, null, null),
+          '2022': Y(241, 144, null, 63.2, 68, 47, null, null),
+          '2023': Y(174, 130, null, 59.2, 33, 31, null, null),
+          '2024': Y(88, 53, null, 69.8, 32, 27, null, null),
+          '2025': Y(123, 86, null, 61.6, 37, 35, null, null),
         },
       },
     ],
@@ -637,7 +642,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
   {
     id: 'samfok_miljo', label: 'Samfunnsøkonomi og miljøforvaltning', level: 'master2',
     desc: 'Sammenligner NMBUs samfunnsøkonomiske master med de øvrige norske samfunnsøkonomimasterne.',
-    note: 'Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra institusjonenes egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere og kjønnsfordeling publiseres ikke for NMBU. NMBU oppgir 35 studieplasser og poenggrense C/3,00 ved opptaket 2025; første opptak var i 2024. UiO-tallene er fra UiOs egen poenggrenseoversikt. UiB-tallene er fra fakultetsstyresak 53/25 og gjelder førstevalgssøkere, ikke alle søknadsalternativer; UiB publiserer ikke antall kvalifiserte søkere totalt, og 2026 var ikke publisert.',
+    note: 'Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», førstevalgssøkere, kvinneandel, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (årstotal, søknadsalternativer = alle søkere uansett prioritet); studieplasser og poenggrenser er hentet fra institusjonenes egne publiseringer der de finnes. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere (prioritet 1) og kvinneandel blant førstevalgssøkerne er hentet fra DBH tabell 379 for alle institusjonene. NMBU oppgir 35 studieplasser og poenggrense C/3,00 ved opptaket 2025; første opptak var i 2024. UiO-tallene for 2026 er fra UiOs egen poenggrenseoversikt; 2021–2025 er fra DBH. UiB-tallene er fra fakultetsstyresak 53/25 og gjelder førstevalgssøkere, ikke alle søknadsalternativer; UiB publiserer ikke antall kvalifiserte søkere totalt, og 2026 var ikke publisert.',
     nmbuIds: ['nmbu_eeg'], defaultIds: ['nmbu_eeg', 'ntnu_msok', 'uio_economics'],
     entries: [
       {
@@ -645,8 +650,8 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Ås', type: 'master2',
         url: 'https://www.nmbu.no/studier/master-2-aar/samfunnsokonomi-og-miljoforvaltning',
         years: {
-          '2024': Y(188, null, null, null, 50, 21, null, null),
-          '2025': Y(257, null, null, null, 78, 59, null, 3.0),
+          '2024': Y(188, 45, null, 62.2, 50, 21, null, null),
+          '2025': Y(257, 94, null, 52.1, 78, 59, null, 3.0),
         },
       },
       {
@@ -654,11 +659,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Trondheim', type: 'master2',
         url: 'https://www.ntnu.no/studier/msok',
         years: {
-          '2021': Y(312, 90, 25, null, 106, 67, null, 3.0),
-          '2022': Y(284, 69, 25, null, 89, 50, null, 2.5),
-          '2023': Y(279, 75, 25, null, 105, 67, null, 2.5),
-          '2024': Y(275, 66, 25, null, 85, 55, null, 2.5),
-          '2025': Y(321, 72, 25, null, 107, 65, null, 2.5),
+          '2021': Y(312, 87, 25, 52.9, 106, 67, null, 3.0),
+          '2022': Y(284, 72, 25, 41.7, 89, 50, null, 2.5),
+          '2023': Y(279, 71, 25, 43.7, 105, 67, null, 2.5),
+          '2024': Y(275, 62, 25, 38.7, 85, 55, null, 2.5),
+          '2025': Y(321, 72, 25, 47.2, 107, 65, null, 2.5),
           '2026': Y(359, 98, 25, null, null, null, null, 3.1),
         },
       },
@@ -667,11 +672,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Oslo', type: 'master2',
         url: 'https://www.uio.no/english/studies/programmes/economics-master/',
         years: {
-          '2021': Y(455, null, null, null, null, 149, null, 3.1),
-          '2022': Y(400, null, null, null, null, 131, null, 3.4),
-          '2023': Y(355, null, null, null, null, 130, null, 3.2),
-          '2024': Y(431, null, null, null, null, 171, null, 2.7),
-          '2025': Y(474, null, null, null, null, 179, null, 3.0),
+          '2021': Y(660, 494, null, 41.5, 192, 158, null, 3.1),
+          '2022': Y(573, 425, null, 38.1, 174, 135, null, 3.4),
+          '2023': Y(587, 421, null, 38.7, 167, 148, null, 3.2),
+          '2024': Y(479, 352, null, 40.1, 195, 174, null, 2.7),
+          '2025': Y(504, 372, null, 37.1, 214, 180, null, 3.0),
           '2026': Y(482, null, null, null, null, 161, null, 3.3),
         },
       },
@@ -680,11 +685,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Bergen', type: 'master2',
         url: 'https://www4.uib.no/studier/program/samfunnsokonomi-master',
         years: {
-          '2021': Y(null, 163, 25, null, null, 60, null, null),
-          '2022': Y(null, 145, 27, null, null, 57, null, 3.4),
-          '2023': Y(null, 147, 27, null, null, 58, null, 3.3),
-          '2024': Y(null, 149, 27, null, null, 69, null, 3.2),
-          '2025': Y(null, 182, 27, null, null, 82, null, 3.0),
+          '2021': Y(185, 163, 25, 44.8, 74, 60, null, null),
+          '2022': Y(168, 145, 27, 38.6, 81, 57, null, 3.4),
+          '2023': Y(163, 147, 27, 45.6, 75, 57, null, 3.3),
+          '2024': Y(161, 149, 27, 32.2, 78, 69, null, 3.2),
+          '2025': Y(204, 182, 27, 39.0, 84, 82, null, 3.0),
         },
       },
     ],

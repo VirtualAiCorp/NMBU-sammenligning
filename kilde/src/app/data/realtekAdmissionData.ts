@@ -1,4 +1,4 @@
-// GENERERT av scripts/build-landsam-data.py 2026-09-22 – ikke rediger for hånd.
+// GENERERT av scripts/build-landsam-data.py 2026-09-23 – ikke rediger for hånd.
 // Kilder: Samordna opptak programtabell 2026 (søkertall 2021–2026) og SO poenggrenserapport (Tableau) 2020–2026, hovedopptak.
 // 0 i poenggrense = alle kvalifiserte kom inn · null = data ikke tilgjengelig
 import type { FullAdmissionEntry, FullYearData } from './fullAdmissionData';
@@ -1041,11 +1041,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Ås', type: 'master2',
         url: 'https://www.nmbu.no/studier/master-2-aar/datavitenskap',
         years: {
-          '2021': Y(786, null, null, null, 184, 53, null, null),
-          '2022': Y(913, null, null, null, 225, 77, null, null),
-          '2023': Y(891, null, null, null, 73, 63, null, null),
-          '2024': Y(169, null, null, null, 57, 50, null, null),
-          '2025': Y(365, null, null, null, 74, 65, null, null),
+          '2021': Y(786, 673, null, 22.6, 184, 53, null, null),
+          '2022': Y(913, 749, null, 26.3, 225, 77, null, null),
+          '2023': Y(891, 787, null, 26.6, 73, 63, null, null),
+          '2024': Y(169, 129, null, 34.9, 57, 50, null, null),
+          '2025': Y(365, 312, null, 30.1, 74, 65, null, null),
         },
       },
       {
@@ -1053,11 +1053,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Trondheim', type: 'master2',
         url: 'https://www.ntnu.no/studier/midt',
         years: {
-          '2021': Y(561, 178, 47, null, 287, 72, null, null),
-          '2022': Y(430, 139, 47, null, 266, 71, null, null),
-          '2023': Y(553, 163, 42, null, 298, 66, null, null),
-          '2024': Y(625, 196, 52, null, 366, 97, null, null),
-          '2025': Y(756, 210, 76, null, 433, 123, null, null),
+          '2021': Y(561, 174, 47, 10.9, 287, 72, null, null),
+          '2022': Y(430, 139, 47, 7.2, 266, 71, null, null),
+          '2023': Y(553, 166, 42, 12.0, 298, 66, null, null),
+          '2024': Y(625, 196, 52, 14.8, 366, 97, null, null),
+          '2025': Y(756, 211, 76, 13.7, 433, 123, null, null),
           '2026': Y(821, 222, 85, null, null, null, null, null),
         },
       },
@@ -1066,11 +1066,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Trondheim', type: 'master2',
         url: 'https://www.ntnu.no/studier/msit',
         years: {
-          '2021': Y(2309, null, null, null, 995, 178, null, null),
-          '2022': Y(2130, null, null, null, 950, 170, null, null),
-          '2023': Y(912, null, null, null, 577, 133, null, null),
-          '2024': Y(1155, null, null, null, 713, 147, null, null),
-          '2025': Y(1086, null, null, null, 618, 170, null, null),
+          '2021': Y(2309, 851, null, 20.6, 995, 178, null, null),
+          '2022': Y(2130, 858, null, 23.7, 950, 170, null, null),
+          '2023': Y(912, 259, null, 28.6, 577, 133, null, null),
+          '2024': Y(1155, 313, null, 21.7, 713, 147, null, null),
+          '2025': Y(1086, 315, null, 24.8, 618, 170, null, null),
         },
       },
     ],
@@ -1086,8 +1086,8 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Ås', type: 'master2',
         url: 'https://www.nmbu.no/studier/master-2-aar/intelligent-water-technology',
         years: {
-          '2024': Y(41, null, null, null, 11, 7, null, null),
-          '2025': Y(82, null, null, null, 23, 15, null, null),
+          '2024': Y(41, 19, null, 31.6, 11, 7, null, null),
+          '2025': Y(82, 39, null, 41.0, 23, 15, null, null),
         },
       },
       {
@@ -1095,11 +1095,11 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Trondheim', type: 'master2',
         url: 'https://www.ntnu.no/studier/mibygg',
         years: {
-          '2021': Y(479, 312, 88, null, 380, 156, null, 4.0),
-          '2022': Y(392, 252, 88, null, 294, 156, null, 3.7),
-          '2023': Y(330, 214, 74, null, 249, 147, null, 3.4),
-          '2024': Y(357, 227, 88, null, 255, 171, null, 3.4),
-          '2025': Y(298, 222, 90, null, 216, 183, null, 2.8),
+          '2021': Y(479, 313, 88, 25.9, 380, 156, null, 4.0),
+          '2022': Y(392, 251, 88, 30.7, 294, 156, null, 3.7),
+          '2023': Y(330, 212, 74, 28.3, 249, 147, null, 3.4),
+          '2024': Y(357, 226, 88, 25.2, 255, 171, null, 3.4),
+          '2025': Y(298, 222, 90, 32.0, 216, 183, null, 2.8),
           '2026': Y(287, 215, 110, null, null, null, null, 2.7),
         },
       },

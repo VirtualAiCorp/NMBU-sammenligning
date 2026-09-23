@@ -21,7 +21,7 @@ Hvert fakultet (`landsam`, `realtek`, `biovit`, `kbm`, `mina`) har samme mappe o
 | Steg | Input (redigerbar) | Kilde | Skript | Output i appen |
 |---|---|---|---|---|
 | 1 Programkart | `data/<f>/programkart.json` | Agent: nmbu.no + SO-tabellen | – | – |
-| 2 Opptak | programkart + `data/<f>/kilder/so_*.{json,csv}` | Samordna opptak (programtabell 2026 med 2021–2026; Tableau-CSV for poenggrenser 2020–2026) | `build-landsam-data.py` + `check-landsam-data.py` | `<f>AdmissionData.ts` |
+| 2 Opptak | programkart + `data/<f>/kilder/so_*.{json,csv}` | Samordna opptak (programtabell 2026 med 2021–2026; Tableau-CSV for poenggrenser 2020–2026). Lokale opptak (toårig master): DBH tabell 379 via `fill-local-admissions.py <f>` som skriver `localData` i programkartet (søkere, førstevalg, kvinneandel, kvalifiserte, tilbud, akseptert, møtt) | `build-landsam-data.py` + `check-landsam-data.py` | `<f>AdmissionData.ts` |
 | 3 DBH-kobling | `data/<f>/dbh-programkart.json` | Agent: DBH tabell 347 verifisert mot 308 | – | – |
 | 4 Karakterer | dbh-programkart | DBH tabell 308 (karakterer) + 208 (emnenavn), programnivå og emnenivå, totaler uten karakter for skjerming | `build-landsam-courses.py` (cache i `data/<f>/kilder/dbh-cache/`, gitignored) | `<f>CourseData.ts` |
 | 5 Emnekobling | `data/<f>/emnekobling/<gruppe>.json` | Agent: studieplaner + emnebeskrivelser | `build-landsam-course-mapping.py` (validerer koder mot steg 4) | `<f>CourseMapping.ts` |
@@ -81,6 +81,13 @@ i `OVERSIKT.md`. Alt er committet i git; arbeidstreet er rent.
 
 ## 7. Fallgruver som er funnet
 
+- Lokale opptak (toårige mastere) finnes ikke i Samordna opptak eller HK-dir sin nedlastingsside; disse
+  dekker bare det samordnede opptaket. DBH tabell 379 har søkere, prioritet (førstevalg = prioritet 1),
+  kjønn, kvalifiserte, tilbud, aksepterte og møtte for alle institusjoner, men ikke studieplasser eller
+  poenggrenser. Søkerpress for lokale opptak regnes derfor som førstevalgssøkere per tilbud der
+  studieplasser mangler. DBH skjermer også her: jo finere gruppering, desto flere celler nulles, så
+  skriptet henter totaler, førstevalg og kjønn i tre separate spørringer. 2026 hoppes over til
+  høstopptaket er rapportert (`SKIP_YEARS` i skriptet).
 - DBH skjermer celler med 1–2 kandidater (vises som 0). Strykprosent på programnivå er derfor et
   minimum og vises som «≥ x %». Emnenivået (alle studenter på emnet) er lite skjermet og stemmer
   eksakt med karakterweb. Bruk emnenivået for stryk.
@@ -126,7 +133,8 @@ i `OVERSIKT.md`. Alt er committet i git; arbeidstreet er rent.
 ```bash
 cd ~/Desktop/BOA-sammenligning/kilde && npx vite --port 5173      # kjør appen
 scripts/build-faculty.sh realtek                                  # opptak → karakterer → kobling → studieplaner
-scripts/build-faculty.sh realtek --refresh                        # hent DBH på nytt (ny årgang)
+scripts/build-faculty.sh realtek --refresh                        # hent DBH på nytt (ny årgang), inkl. lokale opptak (379)
+python3 scripts/fill-local-admissions.py realtek                   # bare lokale opptak fra DBH 379
 python3 scripts/build-studiebarometer.py realtek [--refresh]
 python3 scripts/build-markedsstatus.py realtek
 python3 scripts/link-studyplan-codes.py realtek                   # etter nye studieplanfiler

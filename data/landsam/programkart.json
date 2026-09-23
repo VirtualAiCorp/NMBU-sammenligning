@@ -104,7 +104,71 @@
           "default": false,
           "source": "local",
           "url": "https://www.bi.no/studier-og-kurs/bachelorstudier/eiendomsmegling-jus-okonomi/",
-          "localData": null,
+          "localData": {
+            "2021": {
+              "alleS": 1113,
+              "fvS": 1078,
+              "plasser": null,
+              "kvinner": 45.8,
+              "kvalifiserte": 866,
+              "tilbud": 860,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 605,
+              "mott": 509
+            },
+            "2022": {
+              "alleS": 1592,
+              "fvS": 1549,
+              "plasser": null,
+              "kvinner": 49.5,
+              "kvalifiserte": 1392,
+              "tilbud": 1383,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 1003,
+              "mott": 823
+            },
+            "2023": {
+              "alleS": 1723,
+              "fvS": 1580,
+              "plasser": null,
+              "kvinner": 46.5,
+              "kvalifiserte": 1515,
+              "tilbud": 1513,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 1050,
+              "mott": 890
+            },
+            "2024": {
+              "alleS": 1655,
+              "fvS": 1519,
+              "plasser": null,
+              "kvinner": 50.4,
+              "kvalifiserte": 1410,
+              "tilbud": 1405,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 928,
+              "mott": 769
+            },
+            "2025": {
+              "alleS": 1946,
+              "fvS": 1794,
+              "plasser": null,
+              "kvinner": 44.1,
+              "kvalifiserte": 1485,
+              "tilbud": 1485,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 974,
+              "mott": 754
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram: søkere, kvalifiserte, tilbud; førstevalg = prioritet 1; kvinneandel blant førstevalgssøkere)"
+            ]
+          },
           "localSource": null
         }
       ]
@@ -295,53 +359,63 @@
           "localData": {
             "2021": {
               "alleS": 212,
-              "fvS": 124,
+              "fvS": 125,
               "plasser": 40,
-              "kvinner": null,
+              "kvinner": 61.6,
               "kvalifiserte": 170,
               "tilbud": 71,
               "pg_fv": null,
-              "pg_ord": 3.3
+              "pg_ord": 3.3,
+              "akseptert": 42,
+              "mott": 35
             },
             "2022": {
               "alleS": 204,
-              "fvS": 104,
+              "fvS": 101,
               "plasser": 40,
-              "kvinner": null,
+              "kvinner": 57.4,
               "kvalifiserte": 164,
               "tilbud": 84,
               "pg_fv": null,
-              "pg_ord": 3.2
+              "pg_ord": 3.2,
+              "akseptert": 49,
+              "mott": 43
             },
             "2023": {
               "alleS": 152,
-              "fvS": 75,
+              "fvS": 77,
               "plasser": 30,
-              "kvinner": null,
+              "kvinner": 54.5,
               "kvalifiserte": 133,
               "tilbud": 72,
               "pg_fv": null,
-              "pg_ord": 2.8
+              "pg_ord": 2.8,
+              "akseptert": 39,
+              "mott": 36
             },
             "2024": {
               "alleS": 150,
-              "fvS": 72,
+              "fvS": 74,
               "plasser": 30,
-              "kvinner": null,
+              "kvinner": 54.1,
               "kvalifiserte": 125,
               "tilbud": 74,
               "pg_fv": null,
-              "pg_ord": 2.4
+              "pg_ord": 2.4,
+              "akseptert": 36,
+              "mott": 31
             },
             "2025": {
               "alleS": 179,
               "fvS": 97,
               "plasser": 34,
-              "kvinner": null,
+              "kvinner": 57.7,
               "kvalifiserte": 149,
               "tilbud": 80,
               "pg_fv": null,
-              "pg_ord": 2.8
+              "pg_ord": 2.8,
+              "akseptert": 38,
+              "mott": 36
             },
             "2026": {
               "alleS": 273,
@@ -354,6 +428,7 @@
               "pg_ord": 2.9
             },
             "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram: søkere, kvalifiserte, tilbud; førstevalg = prioritet 1; kvinneandel blant førstevalgssøkere)",
               "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
               "https://www.ntnu.no/studier/opptak/statistikk"
             ]
@@ -510,7 +585,7 @@
       "label": "Eiendomsutvikling",
       "level": "master2",
       "desc": "Sammenligner de toårige masterne i eiendomsutvikling og -forvaltning.",
-      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra institusjonenes egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere og kjønnsfordeling publiseres ikke for NMBU. NMBU oppgir 30 studieplasser og poenggrense 3,5 ved opptaket 2024 på programsiden, men publiserer ingen tidsserie.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», førstevalgssøkere, kvinneandel, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (årstotal, søknadsalternativer = alle søkere uansett prioritet); studieplasser og poenggrenser er hentet fra institusjonenes egne publiseringer der de finnes. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere (prioritet 1) og kvinneandel blant førstevalgssøkerne er hentet fra DBH tabell 379 for alle institusjonene. NMBU oppgir 30 studieplasser og poenggrense 3,5 ved opptaket 2024 på programsiden, men publiserer ingen tidsserie.",
       "programs": [
         {
           "id": "nmbu_eiendomsutvikling",
@@ -527,53 +602,63 @@
           "localData": {
             "2021": {
               "alleS": 220,
-              "fvS": null,
+              "fvS": 140,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 39.3,
               "kvalifiserte": 127,
               "tilbud": 60,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 30,
+              "mott": 26
             },
             "2022": {
               "alleS": 172,
-              "fvS": null,
+              "fvS": 108,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 36.1,
               "kvalifiserte": 119,
               "tilbud": 81,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 30,
+              "mott": 27
             },
             "2023": {
               "alleS": 195,
-              "fvS": null,
+              "fvS": 111,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 43.2,
               "kvalifiserte": 128,
               "tilbud": 85,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 48,
+              "mott": 44
             },
             "2024": {
               "alleS": 215,
-              "fvS": null,
+              "fvS": 132,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 37.1,
               "kvalifiserte": 128,
               "tilbud": 68,
               "pg_fv": null,
-              "pg_ord": 3.5
+              "pg_ord": 3.5,
+              "akseptert": 32,
+              "mott": 26
             },
             "2025": {
               "alleS": 202,
-              "fvS": null,
+              "fvS": 135,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 39.3,
               "kvalifiserte": 112,
               "tilbud": 71,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 39,
+              "mott": 35
             },
             "2026": {
               "alleS": null,
@@ -586,6 +671,7 @@
               "pg_ord": null
             },
             "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram: søkere, kvalifiserte, tilbud; førstevalg = prioritet 1; kvinneandel blant førstevalgssøkere)",
               "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
@@ -605,53 +691,63 @@
           "localData": {
             "2021": {
               "alleS": 280,
-              "fvS": 113,
+              "fvS": 114,
               "plasser": 24,
-              "kvinner": null,
+              "kvinner": 37.7,
               "kvalifiserte": 227,
               "tilbud": 60,
               "pg_fv": null,
-              "pg_ord": 3.3
+              "pg_ord": 3.3,
+              "akseptert": 33,
+              "mott": 27
             },
             "2022": {
               "alleS": 272,
-              "fvS": 110,
+              "fvS": 112,
               "plasser": 24,
-              "kvinner": null,
+              "kvinner": 30.4,
               "kvalifiserte": 215,
               "tilbud": 58,
               "pg_fv": null,
-              "pg_ord": 3.3
+              "pg_ord": 3.3,
+              "akseptert": 35,
+              "mott": 32
             },
             "2023": {
               "alleS": 262,
-              "fvS": 110,
+              "fvS": 109,
               "plasser": 24,
-              "kvinner": null,
+              "kvinner": 34.9,
               "kvalifiserte": 220,
               "tilbud": 80,
               "pg_fv": null,
-              "pg_ord": 3.3
+              "pg_ord": 3.3,
+              "akseptert": 32,
+              "mott": 28
             },
             "2024": {
               "alleS": 218,
-              "fvS": 91,
+              "fvS": 88,
               "plasser": 24,
-              "kvinner": null,
+              "kvinner": 50.0,
               "kvalifiserte": 169,
               "tilbud": 62,
               "pg_fv": null,
-              "pg_ord": 3.0
+              "pg_ord": 3.0,
+              "akseptert": 31,
+              "mott": 27
             },
             "2025": {
               "alleS": 266,
               "fvS": 116,
               "plasser": 30,
-              "kvinner": null,
+              "kvinner": 33.6,
               "kvalifiserte": 223,
               "tilbud": 74,
               "pg_fv": null,
-              "pg_ord": 3.3
+              "pg_ord": 3.3,
+              "akseptert": 38,
+              "mott": 37
             },
             "2026": {
               "alleS": 302,
@@ -664,6 +760,7 @@
               "pg_ord": 3.3
             },
             "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram: søkere, kvalifiserte, tilbud; førstevalg = prioritet 1; kvinneandel blant førstevalgssøkere)",
               "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
               "https://www.ntnu.no/studier/opptak/statistikk"
             ]
@@ -676,7 +773,7 @@
       "label": "Folkehelsevitenskap",
       "level": "master2",
       "desc": "Sammenligner de toårige masterne innen folkehelse.",
-      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra institusjonenes egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere og kjønnsfordeling publiseres ikke for NMBU. NMBU oppgir 36 studieplasser på programsiden og publiserer ingen poenggrense. NTNUs egne søkertall gjelder bare norske og nordiske søkere og er derfor lavere enn DBH-tallene for dette programmet; 2026-tallet er derfor ikke ført inn. UiOs tall er fra UiOs egen poenggrenseoversikt og har et annet tellegrunnlag enn DBH.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», førstevalgssøkere, kvinneandel, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (årstotal, søknadsalternativer = alle søkere uansett prioritet); studieplasser og poenggrenser er hentet fra institusjonenes egne publiseringer der de finnes. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere (prioritet 1) og kvinneandel blant førstevalgssøkerne er hentet fra DBH tabell 379 for alle institusjonene. NMBU oppgir 36 studieplasser på programsiden og publiserer ingen poenggrense. NTNUs egne søkertall gjelder bare norske og nordiske søkere og er derfor lavere enn DBH-tallene for dette programmet; 2026-tallet er derfor ikke ført inn. UiOs tall er fra UiOs egen poenggrenseoversikt og har et annet tellegrunnlag enn DBH.",
       "programs": [
         {
           "id": "nmbu_folkehelse",
@@ -693,53 +790,63 @@
           "localData": {
             "2021": {
               "alleS": 232,
-              "fvS": null,
+              "fvS": 148,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 89.2,
               "kvalifiserte": 221,
               "tilbud": 101,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 40,
+              "mott": 31
             },
             "2022": {
               "alleS": 181,
-              "fvS": null,
+              "fvS": 128,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 89.8,
               "kvalifiserte": 175,
               "tilbud": 106,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 34,
+              "mott": 29
             },
             "2023": {
               "alleS": 169,
-              "fvS": null,
+              "fvS": 115,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 85.2,
               "kvalifiserte": 144,
               "tilbud": 102,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 36,
+              "mott": 31
             },
             "2024": {
               "alleS": 195,
-              "fvS": null,
+              "fvS": 127,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 85.8,
               "kvalifiserte": 154,
               "tilbud": 86,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 31,
+              "mott": 20
             },
             "2025": {
               "alleS": 180,
-              "fvS": null,
+              "fvS": 113,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 82.3,
               "kvalifiserte": 170,
               "tilbud": 128,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 31,
+              "mott": 24
             },
             "2026": {
               "alleS": null,
@@ -752,6 +859,7 @@
               "pg_ord": null
             },
             "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram: søkere, kvalifiserte, tilbud; førstevalg = prioritet 1; kvinneandel blant førstevalgssøkere)",
               "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
@@ -771,53 +879,63 @@
           "localData": {
             "2021": {
               "alleS": 430,
-              "fvS": 196,
+              "fvS": 226,
               "plasser": 30,
-              "kvinner": null,
+              "kvinner": 92.0,
               "kvalifiserte": 364,
               "tilbud": 129,
               "pg_fv": null,
-              "pg_ord": 3.8
+              "pg_ord": 3.8,
+              "akseptert": 53,
+              "mott": 45
             },
             "2022": {
               "alleS": 385,
-              "fvS": 126,
+              "fvS": 145,
               "plasser": 30,
-              "kvinner": null,
+              "kvinner": 94.5,
               "kvalifiserte": 339,
               "tilbud": 105,
               "pg_fv": null,
-              "pg_ord": 3.6
+              "pg_ord": 3.6,
+              "akseptert": 46,
+              "mott": 35
             },
             "2023": {
               "alleS": 400,
-              "fvS": 128,
+              "fvS": 146,
               "plasser": 30,
-              "kvinner": null,
+              "kvinner": 87.7,
               "kvalifiserte": 347,
               "tilbud": 112,
               "pg_fv": null,
-              "pg_ord": 3.7
+              "pg_ord": 3.7,
+              "akseptert": 50,
+              "mott": 37
             },
             "2024": {
               "alleS": 369,
-              "fvS": 126,
+              "fvS": 130,
               "plasser": 30,
-              "kvinner": null,
+              "kvinner": 86.2,
               "kvalifiserte": 323,
               "tilbud": 134,
               "pg_fv": null,
-              "pg_ord": 3.4
+              "pg_ord": 3.4,
+              "akseptert": 46,
+              "mott": 37
             },
             "2025": {
               "alleS": 376,
-              "fvS": 119,
+              "fvS": 134,
               "plasser": 40,
-              "kvinner": null,
+              "kvinner": 86.6,
               "kvalifiserte": 333,
               "tilbud": 135,
               "pg_fv": null,
-              "pg_ord": 3.5
+              "pg_ord": 3.5,
+              "akseptert": 57,
+              "mott": 48
             },
             "2026": {
               "alleS": null,
@@ -830,6 +948,7 @@
               "pg_ord": 2.9
             },
             "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram: søkere, kvalifiserte, tilbud; førstevalg = prioritet 1; kvinneandel blant førstevalgssøkere)",
               "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
               "https://www.ntnu.no/studier/opptak/statistikk"
             ]
@@ -869,34 +988,40 @@
               "pg_ord": null
             },
             "2023": {
-              "alleS": 320,
-              "fvS": null,
+              "alleS": 482,
+              "fvS": 216,
               "plasser": null,
-              "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": 53,
+              "kvinner": 85.2,
+              "kvalifiserte": 431,
+              "tilbud": 153,
               "pg_fv": null,
-              "pg_ord": 3.77
+              "pg_ord": 3.77,
+              "akseptert": 54,
+              "mott": 44
             },
             "2024": {
-              "alleS": 369,
-              "fvS": null,
+              "alleS": 541,
+              "fvS": 228,
               "plasser": null,
-              "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": 64,
+              "kvinner": 84.6,
+              "kvalifiserte": 506,
+              "tilbud": 175,
               "pg_fv": null,
-              "pg_ord": 3.77
+              "pg_ord": 3.77,
+              "akseptert": 61,
+              "mott": 49
             },
             "2025": {
-              "alleS": 373,
-              "fvS": null,
+              "alleS": 572,
+              "fvS": 217,
               "plasser": null,
-              "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": 178,
+              "kvinner": 86.2,
+              "kvalifiserte": 523,
+              "tilbud": 263,
               "pg_fv": null,
-              "pg_ord": 3.15
+              "pg_ord": 3.15,
+              "akseptert": 91,
+              "mott": 71
             },
             "2026": {
               "alleS": 366,
@@ -909,6 +1034,7 @@
               "pg_ord": 2.7
             },
             "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram: søkere, kvalifiserte, tilbud; førstevalg = prioritet 1; kvinneandel blant førstevalgssøkere)",
               "https://www.uio.no/studier/opptak/master/poenggrenser-masteropptak-2025.html"
             ]
           }
@@ -920,7 +1046,7 @@
       "label": "Global økonomi og politikk",
       "level": "master2",
       "desc": "Viser søkningen til NMBUs master i global økonomi og politikk.",
-      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra institusjonenes egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere og kjønnsfordeling publiseres ikke for NMBU. Vi fant ingen norsk master med tydelig samme profil (politisk økonomi/global økonomi og politikk), så gruppa har foreløpig bare NMBU. NMBU oppgir 25 studieplasser og poenggrense C/3,00 ved opptaket 2025. Første opptak var i 2024.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», førstevalgssøkere, kvinneandel, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (årstotal, søknadsalternativer = alle søkere uansett prioritet); studieplasser og poenggrenser er hentet fra institusjonenes egne publiseringer der de finnes. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere (prioritet 1) og kvinneandel blant førstevalgssøkerne er hentet fra DBH tabell 379 for alle institusjonene. Vi fant ingen norsk master med tydelig samme profil (politisk økonomi/global økonomi og politikk), så gruppa har foreløpig bare NMBU. NMBU oppgir 25 studieplasser og poenggrense C/3,00 ved opptaket 2025. Første opptak var i 2024.",
       "programs": [
         {
           "id": "nmbu_gep",
@@ -967,23 +1093,27 @@
             },
             "2024": {
               "alleS": 163,
-              "fvS": null,
+              "fvS": 37,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 43.2,
               "kvalifiserte": 28,
               "tilbud": 17,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 3,
+              "mott": 3
             },
             "2025": {
               "alleS": 244,
-              "fvS": null,
+              "fvS": 77,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 49.4,
               "kvalifiserte": 71,
               "tilbud": 52,
               "pg_fv": null,
-              "pg_ord": 3.0
+              "pg_ord": 3.0,
+              "akseptert": 18,
+              "mott": 15
             },
             "2026": {
               "alleS": null,
@@ -996,6 +1126,7 @@
               "pg_ord": null
             },
             "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram: søkere, kvalifiserte, tilbud; førstevalg = prioritet 1; kvinneandel blant førstevalgssøkere)",
               "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
@@ -1007,7 +1138,7 @@
       "label": "Globale utviklingsstudier",
       "level": "master2",
       "desc": "Sammenligner de toårige masterne innen globale utviklingsstudier.",
-      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra institusjonenes egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere og kjønnsfordeling publiseres ikke for NMBU. NMBU-tallene ligger i DBH under programkoden M-DS (Globale utviklingsstudier). NMBU oppgir bare karakterkravet C for opptaket 2024, ikke en tallfestet poenggrense. UiO-tallene er fra UiOs egen poenggrenseoversikt og har et annet tellegrunnlag enn DBH.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», førstevalgssøkere, kvinneandel, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (årstotal, søknadsalternativer = alle søkere uansett prioritet); studieplasser og poenggrenser er hentet fra institusjonenes egne publiseringer der de finnes. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere (prioritet 1) og kvinneandel blant førstevalgssøkerne er hentet fra DBH tabell 379 for alle institusjonene. NMBU-tallene ligger i DBH under programkoden M-DS (Globale utviklingsstudier). NMBU oppgir bare karakterkravet C for opptaket 2024, ikke en tallfestet poenggrense. UiO-tallene for 2026 er fra UiOs egen poenggrenseoversikt og har et annet tellegrunnlag enn DBH-tallene for 2021–2025.",
       "programs": [
         {
           "id": "nmbu_globale_utviklingsstudier",
@@ -1024,53 +1155,63 @@
           "localData": {
             "2021": {
               "alleS": 718,
-              "fvS": null,
+              "fvS": 225,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 55.6,
               "kvalifiserte": 304,
               "tilbud": 102,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 34,
+              "mott": 28
             },
             "2022": {
               "alleS": 858,
-              "fvS": null,
+              "fvS": 331,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 50.5,
               "kvalifiserte": 297,
               "tilbud": 99,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 22,
+              "mott": 16
             },
             "2023": {
               "alleS": 709,
-              "fvS": null,
+              "fvS": 358,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 49.2,
               "kvalifiserte": 116,
               "tilbud": 71,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 27,
+              "mott": 22
             },
             "2024": {
               "alleS": 220,
-              "fvS": null,
+              "fvS": 96,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 67.7,
               "kvalifiserte": 77,
               "tilbud": 60,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 27,
+              "mott": 22
             },
             "2025": {
               "alleS": 284,
-              "fvS": null,
+              "fvS": 121,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 57.0,
               "kvalifiserte": 95,
               "tilbud": 67,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 27,
+              "mott": 23
             },
             "2026": {
               "alleS": null,
@@ -1083,6 +1224,7 @@
               "pg_ord": null
             },
             "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram: søkere, kvalifiserte, tilbud; førstevalg = prioritet 1; kvinneandel blant førstevalgssøkere)",
               "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
@@ -1101,54 +1243,64 @@
           "url": "https://www.uio.no/english/studies/programmes/ces-master/",
           "localData": {
             "2021": {
-              "alleS": 548,
-              "fvS": null,
+              "alleS": 821,
+              "fvS": 445,
               "plasser": null,
-              "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": 39,
+              "kvinner": 70.6,
+              "kvalifiserte": 455,
+              "tilbud": 59,
               "pg_fv": null,
-              "pg_ord": 4.53
+              "pg_ord": 4.53,
+              "akseptert": 29,
+              "mott": 23
             },
             "2022": {
-              "alleS": 437,
-              "fvS": null,
+              "alleS": 629,
+              "fvS": 315,
               "plasser": null,
-              "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": 42,
+              "kvinner": 69.5,
+              "kvalifiserte": 329,
+              "tilbud": 70,
               "pg_fv": null,
-              "pg_ord": 4.38
+              "pg_ord": 4.38,
+              "akseptert": 33,
+              "mott": 25
             },
             "2023": {
-              "alleS": 411,
-              "fvS": null,
+              "alleS": 617,
+              "fvS": 319,
               "plasser": null,
-              "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": 62,
+              "kvinner": 67.7,
+              "kvalifiserte": 328,
+              "tilbud": 95,
               "pg_fv": null,
-              "pg_ord": 4.25
+              "pg_ord": 4.25,
+              "akseptert": 29,
+              "mott": 26
             },
             "2024": {
-              "alleS": 390,
-              "fvS": null,
+              "alleS": 436,
+              "fvS": 185,
               "plasser": null,
-              "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": 74,
+              "kvinner": 75.7,
+              "kvalifiserte": 281,
+              "tilbud": 83,
               "pg_fv": null,
-              "pg_ord": 3.94
+              "pg_ord": 3.94,
+              "akseptert": 33,
+              "mott": 25
             },
             "2025": {
-              "alleS": 369,
-              "fvS": null,
+              "alleS": 412,
+              "fvS": 174,
               "plasser": null,
-              "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": 68,
+              "kvinner": 66.7,
+              "kvalifiserte": 264,
+              "tilbud": 79,
               "pg_fv": null,
-              "pg_ord": 3.81
+              "pg_ord": 3.81,
+              "akseptert": 34,
+              "mott": 31
             },
             "2026": {
               "alleS": 286,
@@ -1161,6 +1313,7 @@
               "pg_ord": 3.88
             },
             "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram: søkere, kvalifiserte, tilbud; førstevalg = prioritet 1; kvinneandel blant førstevalgssøkere)",
               "https://www.uio.no/studier/opptak/master/poenggrenser-masteropptak-2025.html"
             ]
           }
@@ -1172,7 +1325,7 @@
       "label": "Internasjonale miljøstudier",
       "level": "master2",
       "desc": "Viser søkningen til NMBUs master i internasjonale miljøstudier.",
-      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra institusjonenes egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere og kjønnsfordeling publiseres ikke for NMBU. Vi fant ingen norsk master med tydelig samme profil, så gruppa har foreløpig bare NMBU. NMBU oppgir bare karakterkravet C for opptaket 2024, ikke en tallfestet poenggrense.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», førstevalgssøkere, kvinneandel, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (årstotal, søknadsalternativer = alle søkere uansett prioritet); studieplasser og poenggrenser er hentet fra institusjonenes egne publiseringer der de finnes. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere (prioritet 1) og kvinneandel blant førstevalgssøkerne er hentet fra DBH tabell 379 for alle institusjonene. Vi fant ingen norsk master med tydelig samme profil, så gruppa har foreløpig bare NMBU. NMBU oppgir bare karakterkravet C for opptaket 2024, ikke en tallfestet poenggrense.",
       "programs": [
         {
           "id": "nmbu_intmiljo",
@@ -1189,53 +1342,63 @@
           "localData": {
             "2021": {
               "alleS": 751,
-              "fvS": null,
+              "fvS": 308,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 59.7,
               "kvalifiserte": 361,
               "tilbud": 93,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 34,
+              "mott": 32
             },
             "2022": {
               "alleS": 739,
-              "fvS": null,
+              "fvS": 266,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 54.1,
               "kvalifiserte": 197,
               "tilbud": 64,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 25,
+              "mott": 22
             },
             "2023": {
               "alleS": 531,
-              "fvS": null,
+              "fvS": 268,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 54.9,
               "kvalifiserte": 119,
               "tilbud": 88,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 37,
+              "mott": 30
             },
             "2024": {
               "alleS": 205,
-              "fvS": null,
+              "fvS": 86,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 66.3,
               "kvalifiserte": 89,
               "tilbud": 63,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 28,
+              "mott": 25
             },
             "2025": {
               "alleS": 217,
-              "fvS": null,
+              "fvS": 87,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 63.2,
               "kvalifiserte": 88,
               "tilbud": 67,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 24,
+              "mott": 22
             },
             "2026": {
               "alleS": null,
@@ -1248,6 +1411,7 @@
               "pg_ord": null
             },
             "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram: søkere, kvalifiserte, tilbud; førstevalg = prioritet 1; kvinneandel blant førstevalgssøkere)",
               "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
@@ -1259,7 +1423,7 @@
       "label": "Internasjonale relasjoner",
       "level": "master2",
       "desc": "Sammenligner NMBUs master i internasjonale relasjoner med nærmeste fredsfaglige masterprogram.",
-      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra institusjonenes egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere og kjønnsfordeling publiseres ikke for NMBU. UiO har ingen master som heter Internasjonale relasjoner; Peace and Conflict Studies er nærmeste faglige motpart. NMBU oppgir 35 studieplasser og bare karakterkravet C for opptaket 2024. UiO-tallene er fra UiOs egen poenggrenseoversikt og har et annet tellegrunnlag enn DBH. Deltidsvarianten M-IR-DEL er holdt utenfor.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», førstevalgssøkere, kvinneandel, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (årstotal, søknadsalternativer = alle søkere uansett prioritet); studieplasser og poenggrenser er hentet fra institusjonenes egne publiseringer der de finnes. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere (prioritet 1) og kvinneandel blant førstevalgssøkerne er hentet fra DBH tabell 379 for alle institusjonene. UiO har ingen master som heter Internasjonale relasjoner; Peace and Conflict Studies er nærmeste faglige motpart. NMBU oppgir 35 studieplasser og bare karakterkravet C for opptaket 2024. UiO-tallene for 2026 er fra UiOs egen poenggrenseoversikt og har et annet tellegrunnlag enn DBH-tallene for 2021–2025. Deltidsvarianten M-IR-DEL er holdt utenfor.",
       "programs": [
         {
           "id": "nmbu_intrel",
@@ -1276,53 +1440,63 @@
           "localData": {
             "2021": {
               "alleS": 715,
-              "fvS": null,
+              "fvS": 412,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 48.1,
               "kvalifiserte": 309,
               "tilbud": 109,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 41,
+              "mott": 31
             },
             "2022": {
               "alleS": 800,
-              "fvS": null,
+              "fvS": 435,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 46.2,
               "kvalifiserte": 269,
               "tilbud": 103,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 42,
+              "mott": 35
             },
             "2023": {
               "alleS": 679,
-              "fvS": null,
+              "fvS": 429,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 52.9,
               "kvalifiserte": 148,
               "tilbud": 121,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 29,
+              "mott": 20
             },
             "2024": {
               "alleS": 318,
-              "fvS": null,
+              "fvS": 196,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 61.7,
               "kvalifiserte": 172,
               "tilbud": 134,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 59,
+              "mott": 35
             },
             "2025": {
               "alleS": 405,
-              "fvS": null,
+              "fvS": 268,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 59.7,
               "kvalifiserte": 219,
               "tilbud": 167,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 78,
+              "mott": 57
             },
             "2026": {
               "alleS": null,
@@ -1335,6 +1509,7 @@
               "pg_ord": null
             },
             "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram: søkere, kvalifiserte, tilbud; førstevalg = prioritet 1; kvinneandel blant førstevalgssøkere)",
               "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
@@ -1353,54 +1528,64 @@
           "url": "https://www.uio.no/english/studies/programmes/peace-master/",
           "localData": {
             "2021": {
-              "alleS": 591,
-              "fvS": null,
+              "alleS": 801,
+              "fvS": 402,
               "plasser": null,
-              "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": 37,
+              "kvinner": 58.0,
+              "kvalifiserte": 295,
+              "tilbud": 46,
               "pg_fv": null,
-              "pg_ord": 4.19
+              "pg_ord": 4.19,
+              "akseptert": 22,
+              "mott": 20
             },
             "2022": {
-              "alleS": 546,
-              "fvS": null,
+              "alleS": 726,
+              "fvS": 371,
               "plasser": null,
-              "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": 31,
-              "pg_fv": null,
-              "pg_ord": 4.25
-            },
-            "2023": {
-              "alleS": 531,
-              "fvS": null,
-              "plasser": null,
-              "kvinner": null,
-              "kvalifiserte": null,
+              "kvinner": 60.1,
+              "kvalifiserte": 278,
               "tilbud": 48,
               "pg_fv": null,
-              "pg_ord": 4.22
+              "pg_ord": 4.25,
+              "akseptert": 27,
+              "mott": 21
+            },
+            "2023": {
+              "alleS": 706,
+              "fvS": 355,
+              "plasser": null,
+              "kvinner": 55.5,
+              "kvalifiserte": 292,
+              "tilbud": 78,
+              "pg_fv": null,
+              "pg_ord": 4.22,
+              "akseptert": 29,
+              "mott": 23
             },
             "2024": {
-              "alleS": 585,
-              "fvS": null,
+              "alleS": 629,
+              "fvS": 331,
               "plasser": null,
-              "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": 59,
+              "kvinner": 58.3,
+              "kvalifiserte": 332,
+              "tilbud": 69,
               "pg_fv": null,
-              "pg_ord": 4.25
+              "pg_ord": 4.25,
+              "akseptert": 36,
+              "mott": 24
             },
             "2025": {
-              "alleS": 578,
-              "fvS": null,
+              "alleS": 617,
+              "fvS": 316,
               "plasser": null,
-              "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": 70,
+              "kvinner": 63.3,
+              "kvalifiserte": 335,
+              "tilbud": 74,
               "pg_fv": null,
-              "pg_ord": 4.2
+              "pg_ord": 4.2,
+              "akseptert": 38,
+              "mott": 29
             },
             "2026": {
               "alleS": 518,
@@ -1413,6 +1598,7 @@
               "pg_ord": 4.08
             },
             "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram: søkere, kvalifiserte, tilbud; førstevalg = prioritet 1; kvinneandel blant førstevalgssøkere)",
               "https://www.uio.no/studier/opptak/master/poenggrenser-masteropptak-2025.html"
             ]
           }
@@ -1424,7 +1610,7 @@
       "label": "Landskapsarkitektur for global bærekraft",
       "level": "master2",
       "desc": "Viser søkningen til NMBUs toårige master i landskapsarkitektur for global bærekraft.",
-      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra institusjonenes egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere og kjønnsfordeling publiseres ikke for NMBU. Vi fant ingen tilsvarende toårig landskapsarkitekturmaster ved andre norske institusjoner, så gruppa har foreløpig bare NMBU. NMBU oppgir bare karakterkravet C for opptaket 2024.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», førstevalgssøkere, kvinneandel, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (årstotal, søknadsalternativer = alle søkere uansett prioritet); studieplasser og poenggrenser er hentet fra institusjonenes egne publiseringer der de finnes. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere (prioritet 1) og kvinneandel blant førstevalgssøkerne er hentet fra DBH tabell 379 for alle institusjonene. Vi fant ingen tilsvarende toårig landskapsarkitekturmaster ved andre norske institusjoner, så gruppa har foreløpig bare NMBU. NMBU oppgir bare karakterkravet C for opptaket 2024.",
       "programs": [
         {
           "id": "nmbu_gla",
@@ -1441,53 +1627,63 @@
           "localData": {
             "2021": {
               "alleS": 213,
-              "fvS": null,
+              "fvS": 98,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 57.1,
               "kvalifiserte": 48,
               "tilbud": 37,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 21,
+              "mott": 19
             },
             "2022": {
               "alleS": 241,
-              "fvS": null,
+              "fvS": 144,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 63.2,
               "kvalifiserte": 68,
               "tilbud": 47,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 28,
+              "mott": 22
             },
             "2023": {
               "alleS": 174,
-              "fvS": null,
+              "fvS": 130,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 59.2,
               "kvalifiserte": 33,
               "tilbud": 31,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 13,
+              "mott": 11
             },
             "2024": {
               "alleS": 88,
-              "fvS": null,
+              "fvS": 53,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 69.8,
               "kvalifiserte": 32,
               "tilbud": 27,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 19,
+              "mott": 17
             },
             "2025": {
               "alleS": 123,
-              "fvS": null,
+              "fvS": 86,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 61.6,
               "kvalifiserte": 37,
               "tilbud": 35,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 25,
+              "mott": 21
             },
             "2026": {
               "alleS": null,
@@ -1500,6 +1696,7 @@
               "pg_ord": null
             },
             "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram: søkere, kvalifiserte, tilbud; førstevalg = prioritet 1; kvinneandel blant førstevalgssøkere)",
               "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
@@ -1511,7 +1708,7 @@
       "label": "Samfunnsøkonomi og miljøforvaltning",
       "level": "master2",
       "desc": "Sammenligner NMBUs samfunnsøkonomiske master med de øvrige norske samfunnsøkonomimasterne.",
-      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (høstopptak, søknadsalternativer = alle søkere uansett prioritet); studieplasser, førstevalgssøkere og poenggrenser er hentet fra institusjonenes egne publiseringer. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere og kjønnsfordeling publiseres ikke for NMBU. NMBU oppgir 35 studieplasser og poenggrense C/3,00 ved opptaket 2025; første opptak var i 2024. UiO-tallene er fra UiOs egen poenggrenseoversikt. UiB-tallene er fra fakultetsstyresak 53/25 og gjelder førstevalgssøkere, ikke alle søknadsalternativer; UiB publiserer ikke antall kvalifiserte søkere totalt, og 2026 var ikke publisert.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere», førstevalgssøkere, kvinneandel, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (årstotal, søknadsalternativer = alle søkere uansett prioritet); studieplasser og poenggrenser er hentet fra institusjonenes egne publiseringer der de finnes. DBH har ikke rapportert høsten 2026 ennå. Førstevalgssøkere (prioritet 1) og kvinneandel blant førstevalgssøkerne er hentet fra DBH tabell 379 for alle institusjonene. NMBU oppgir 35 studieplasser og poenggrense C/3,00 ved opptaket 2025; første opptak var i 2024. UiO-tallene for 2026 er fra UiOs egen poenggrenseoversikt; 2021–2025 er fra DBH. UiB-tallene er fra fakultetsstyresak 53/25 og gjelder førstevalgssøkere, ikke alle søknadsalternativer; UiB publiserer ikke antall kvalifiserte søkere totalt, og 2026 var ikke publisert.",
       "programs": [
         {
           "id": "nmbu_eeg",
@@ -1558,23 +1755,27 @@
             },
             "2024": {
               "alleS": 188,
-              "fvS": null,
+              "fvS": 45,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 62.2,
               "kvalifiserte": 50,
               "tilbud": 21,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 8,
+              "mott": 7
             },
             "2025": {
               "alleS": 257,
-              "fvS": null,
+              "fvS": 94,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 52.1,
               "kvalifiserte": 78,
               "tilbud": 59,
               "pg_fv": null,
-              "pg_ord": 3.0
+              "pg_ord": 3.0,
+              "akseptert": 21,
+              "mott": 15
             },
             "2026": {
               "alleS": null,
@@ -1587,6 +1788,7 @@
               "pg_ord": null
             },
             "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram: søkere, kvalifiserte, tilbud; førstevalg = prioritet 1; kvinneandel blant førstevalgssøkere)",
               "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
@@ -1606,53 +1808,63 @@
           "localData": {
             "2021": {
               "alleS": 312,
-              "fvS": 90,
+              "fvS": 87,
               "plasser": 25,
-              "kvinner": null,
+              "kvinner": 52.9,
               "kvalifiserte": 106,
               "tilbud": 67,
               "pg_fv": null,
-              "pg_ord": 3.0
+              "pg_ord": 3.0,
+              "akseptert": 32,
+              "mott": 29
             },
             "2022": {
               "alleS": 284,
-              "fvS": 69,
+              "fvS": 72,
               "plasser": 25,
-              "kvinner": null,
+              "kvinner": 41.7,
               "kvalifiserte": 89,
               "tilbud": 50,
               "pg_fv": null,
-              "pg_ord": 2.5
+              "pg_ord": 2.5,
+              "akseptert": 27,
+              "mott": 23
             },
             "2023": {
               "alleS": 279,
-              "fvS": 75,
+              "fvS": 71,
               "plasser": 25,
-              "kvinner": null,
+              "kvinner": 43.7,
               "kvalifiserte": 105,
               "tilbud": 67,
               "pg_fv": null,
-              "pg_ord": 2.5
+              "pg_ord": 2.5,
+              "akseptert": 35,
+              "mott": 32
             },
             "2024": {
               "alleS": 275,
-              "fvS": 66,
+              "fvS": 62,
               "plasser": 25,
-              "kvinner": null,
+              "kvinner": 38.7,
               "kvalifiserte": 85,
               "tilbud": 55,
               "pg_fv": null,
-              "pg_ord": 2.5
+              "pg_ord": 2.5,
+              "akseptert": 17,
+              "mott": 15
             },
             "2025": {
               "alleS": 321,
               "fvS": 72,
               "plasser": 25,
-              "kvinner": null,
+              "kvinner": 47.2,
               "kvalifiserte": 107,
               "tilbud": 65,
               "pg_fv": null,
-              "pg_ord": 2.5
+              "pg_ord": 2.5,
+              "akseptert": 35,
+              "mott": 34
             },
             "2026": {
               "alleS": 359,
@@ -1665,6 +1877,7 @@
               "pg_ord": 3.1
             },
             "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram: søkere, kvalifiserte, tilbud; førstevalg = prioritet 1; kvinneandel blant førstevalgssøkere)",
               "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
               "https://www.ntnu.no/studier/opptak/statistikk"
             ]
@@ -1684,54 +1897,64 @@
           "url": "https://www.uio.no/english/studies/programmes/economics-master/",
           "localData": {
             "2021": {
-              "alleS": 455,
-              "fvS": null,
+              "alleS": 660,
+              "fvS": 494,
               "plasser": null,
-              "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": 149,
+              "kvinner": 41.5,
+              "kvalifiserte": 192,
+              "tilbud": 158,
               "pg_fv": null,
-              "pg_ord": 3.11
+              "pg_ord": 3.11,
+              "akseptert": 89,
+              "mott": 76
             },
             "2022": {
-              "alleS": 400,
-              "fvS": null,
+              "alleS": 573,
+              "fvS": 425,
               "plasser": null,
-              "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": 131,
+              "kvinner": 38.1,
+              "kvalifiserte": 174,
+              "tilbud": 135,
               "pg_fv": null,
-              "pg_ord": 3.39
+              "pg_ord": 3.39,
+              "akseptert": 76,
+              "mott": 69
             },
             "2023": {
-              "alleS": 355,
-              "fvS": null,
+              "alleS": 587,
+              "fvS": 421,
               "plasser": null,
-              "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": 130,
+              "kvinner": 38.7,
+              "kvalifiserte": 167,
+              "tilbud": 148,
               "pg_fv": null,
-              "pg_ord": 3.17
+              "pg_ord": 3.17,
+              "akseptert": 70,
+              "mott": 59
             },
             "2024": {
-              "alleS": 431,
-              "fvS": null,
+              "alleS": 479,
+              "fvS": 352,
               "plasser": null,
-              "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": 171,
+              "kvinner": 40.1,
+              "kvalifiserte": 195,
+              "tilbud": 174,
               "pg_fv": null,
-              "pg_ord": 2.7
+              "pg_ord": 2.7,
+              "akseptert": 91,
+              "mott": 80
             },
             "2025": {
-              "alleS": 474,
-              "fvS": null,
+              "alleS": 504,
+              "fvS": 372,
               "plasser": null,
-              "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": 179,
+              "kvinner": 37.1,
+              "kvalifiserte": 214,
+              "tilbud": 180,
               "pg_fv": null,
-              "pg_ord": 3.0
+              "pg_ord": 3.0,
+              "akseptert": 93,
+              "mott": 88
             },
             "2026": {
               "alleS": 482,
@@ -1744,6 +1967,7 @@
               "pg_ord": 3.27
             },
             "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram: søkere, kvalifiserte, tilbud; førstevalg = prioritet 1; kvinneandel blant førstevalgssøkere)",
               "https://www.uio.no/studier/opptak/master/poenggrenser-masteropptak-2025.html"
             ]
           }
@@ -1762,54 +1986,64 @@
           "url": "https://www4.uib.no/studier/program/samfunnsokonomi-master",
           "localData": {
             "2021": {
-              "alleS": null,
+              "alleS": 185,
               "fvS": 163,
               "plasser": 25,
-              "kvinner": null,
-              "kvalifiserte": null,
+              "kvinner": 44.8,
+              "kvalifiserte": 74,
               "tilbud": 60,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 34,
+              "mott": 33
             },
             "2022": {
-              "alleS": null,
+              "alleS": 168,
               "fvS": 145,
               "plasser": 27,
-              "kvinner": null,
-              "kvalifiserte": null,
+              "kvinner": 38.6,
+              "kvalifiserte": 81,
               "tilbud": 57,
               "pg_fv": null,
-              "pg_ord": 3.44
+              "pg_ord": 3.44,
+              "akseptert": 28,
+              "mott": 25
             },
             "2023": {
-              "alleS": null,
+              "alleS": 163,
               "fvS": 147,
               "plasser": 27,
-              "kvinner": null,
-              "kvalifiserte": null,
-              "tilbud": 58,
+              "kvinner": 45.6,
+              "kvalifiserte": 75,
+              "tilbud": 57,
               "pg_fv": null,
-              "pg_ord": 3.33
+              "pg_ord": 3.33,
+              "akseptert": 29,
+              "mott": 23
             },
             "2024": {
-              "alleS": null,
+              "alleS": 161,
               "fvS": 149,
               "plasser": 27,
-              "kvinner": null,
-              "kvalifiserte": null,
+              "kvinner": 32.2,
+              "kvalifiserte": 78,
               "tilbud": 69,
               "pg_fv": null,
-              "pg_ord": 3.22
+              "pg_ord": 3.22,
+              "akseptert": 25,
+              "mott": 20
             },
             "2025": {
-              "alleS": null,
+              "alleS": 204,
               "fvS": 182,
               "plasser": 27,
-              "kvinner": null,
-              "kvalifiserte": null,
+              "kvinner": 39.0,
+              "kvalifiserte": 84,
               "tilbud": 82,
               "pg_fv": null,
-              "pg_ord": 3.0
+              "pg_ord": 3.0,
+              "akseptert": 43,
+              "mott": 38
             },
             "2026": {
               "alleS": null,
@@ -1822,6 +2056,7 @@
               "pg_ord": null
             },
             "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram: søkere, kvalifiserte, tilbud; førstevalg = prioritet 1; kvinneandel blant førstevalgssøkere)",
               "https://www.uib.no/sites/w3.uib.no/files/attachments/53-25_orientering_om_opptaket_2025.pdf"
             ]
           }

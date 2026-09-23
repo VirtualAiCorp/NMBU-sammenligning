@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
   BarChart, Bar, Cell, ReferenceLine,
@@ -32,7 +32,7 @@ interface MetricDef {
 const METRICS: MetricDef[] = [
   { id: 'alleS',        label: 'Alle søkere',         unit: '',  decimals: 0, description: 'Totalt antall søkere' },
   { id: 'fvS',          label: 'Førstevalgssøkere',   unit: '',  decimals: 0, description: 'Søkere med studiet som 1. valg' },
-  { id: 'sokerpress',   label: 'Søkerpress',          unit: 'x', decimals: 1, description: 'Førstevalgssøkere per studieplass' },
+  { id: 'sokerpress',   label: 'Søkerpress',          unit: 'x', decimals: 1, description: 'Førstevalgssøkere per studieplass (lokale opptak: per tilbud om opptak)' },
   { id: 'plasser',      label: 'Studieplasser',       unit: '',  decimals: 0, description: 'Antall studieplasser' },
   { id: 'kvinner',      label: 'Kvinner %',           unit: '%', decimals: 1, description: 'Andel kvinner blant 1. valg-søkere' },
   { id: 'kvalifiserte', label: 'Kvalifiserte',        unit: '',  decimals: 0, description: 'Antall kvalifiserte søkere' },
@@ -43,8 +43,11 @@ const METRICS: MetricDef[] = [
 
 function getVal(data: FullYearData, metric: MetricKey): number | null {
   if (metric === 'sokerpress') {
-    if (data.fvS === null || data.plasser === null || data.plasser === 0) return null;
-    return data.fvS / data.plasser;
+    if (data.fvS === null) return null;
+    if (data.plasser !== null && data.plasser > 0) return data.fvS / data.plasser;
+    // Lokale opptak (SO-program har alltid studieplasser): bruk tilbud om opptak som nevner.
+    if (data.tilbud !== null && data.tilbud > 0) return data.fvS / data.tilbud;
+    return null;
   }
   if (metric === 'pg_snitt') {
     if (data.pg_fv === null || data.pg_ord === null) return null;
@@ -385,8 +388,8 @@ function NmbuKeyFigures({ group, year: requestedYear }: { group: LandsamGroup; y
         })();
         const cur = e.years[year] ?? null;
         const prev = prevYear ? (e.years[prevYear] ?? null) : null;
-        const sp = cur?.fvS != null && cur?.plasser ? cur.fvS / cur.plasser : null;
-        const spPrev = prev?.fvS != null && prev?.plasser ? prev.fvS / prev.plasser : null;
+        const sp = cur ? getVal(cur, 'sokerpress') : null;
+        const spPrev = prev ? getVal(prev, 'sokerpress') : null;
 
         const highlights: { label: string; value: string; sub?: string; delta: string | null }[] = [
           {
@@ -474,6 +477,22 @@ export function LandsamAdmissionAnalysis({ faculty, initialGroup }: { faculty: F
   const [chartTab, setChartTab] = useState<ChartTab>('trend');
   const [year, setYear] = useState<string>(YEARS[YEARS.length - 1]);
 
+  // Lokale opptak (toårig master): DBH rapporterer senere enn Samordna opptak, og poenggrenser finnes sjelden.
+  // Ved gruppebytte: hopp til siste år med NMBU-tall, og bytt fra poenggrense til «Alle søkere» hvis gruppen mangler poenggrenser.
+  useEffect(() => {
+    if (!group || group.level !== 'master2') return;
+    const nmbu = group.entries.filter((e) => group.nmbuIds.includes(e.id));
+    const hasYear = (y: string) => nmbu.some((e) => e.years[y]?.alleS != null);
+    if (!hasYear(year)) {
+      const latest = [...YEARS].reverse().find(hasYear);
+      if (latest) setYear(latest);
+    }
+    if (metric.startsWith('pg_') && !group.entries.some((e) => Object.values(e.years).some((y) => y?.pg_ord != null))) {
+      setMetric('alleS');
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [group?.id]);
+
   if (!group) {
     return (
       <div className="rounded-xl p-8 text-center" style={{ border: '1px solid var(--nmbu-neutral-3)', backgroundColor: '#fff', color: 'var(--nmbu-neutral-2)', fontSize: 13 }}>
@@ -544,7 +563,7 @@ export function LandsamAdmissionAnalysis({ faculty, initialGroup }: { faculty: F
             <a href={isLocal ? 'https://dbh.hkdir.no' : 'https://hkdir.no/sokertall-fra-samordna-opptak-til-nedlasting'}
               target="_blank" rel="noopener noreferrer"
               className="flex items-center gap-1.5 text-xs hover:underline" style={{ color: 'rgba(255,255,255,0.7)' }}>
-              <ExternalLink className="w-3.5 h-3.5" /> {isLocal ? 'Kilde: DBH/HKDIR og institusjonenes egne tall' : 'Kilde: Samordna opptak / HKDIR'}
+              <ExternalLink className="w-3.5 h-3.5" /> {isLocal ? 'Kilde: DBH/HKDIR tabell 379' : 'Kilde: Samordna opptak / HKDIR'}
             </a>
           </div>
         </div>
@@ -662,8 +681,8 @@ export function LandsamAdmissionAnalysis({ faculty, initialGroup }: { faculty: F
         <Info className="w-3.5 h-3.5 shrink-0 mt-0.5" />
         <span>
           {isLocal
-            ? 'Kilde: DBH/HKDIR (tabell 379) for NMBU, og institusjonenes egne opptaksstatistikker for de andre. Lokale masteropptak er ikke med i Samordna opptak; tellegrunnlaget kan avvike mellom kildene.'
-            : 'Kilde: Samordna opptak / HKDIR.'} Søkerpress = førstevalgssøkere / studieplasser.
+            ? 'Kilde: DBH/HKDIR tabell 379 (lokale opptak) for søkere, førstevalgssøkere, kvinneandel, kvalifiserte og tilbud; studieplasser og poenggrenser fra institusjonenes egne sider der de finnes. Lokale masteropptak er ikke med i Samordna opptak. Søkerpress = førstevalgssøkere / studieplasser, eller / tilbud om opptak der studieplasser ikke er publisert.'
+            : 'Kilde: Samordna opptak / HKDIR. Søkerpress = førstevalgssøkere / studieplasser.'}
           Poenggrense 0 = åpent opptak (alle kvalifiserte kom inn), «–» = tall ikke lagt inn ennå.
         </span>
       </div>

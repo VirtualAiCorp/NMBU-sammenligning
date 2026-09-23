@@ -1102,53 +1102,63 @@
           "localData": {
             "2021": {
               "alleS": 786,
-              "fvS": null,
+              "fvS": 673,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 22.6,
               "kvalifiserte": 184,
               "tilbud": 53,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 27,
+              "mott": 20
             },
             "2022": {
               "alleS": 913,
-              "fvS": null,
+              "fvS": 749,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 26.3,
               "kvalifiserte": 225,
               "tilbud": 77,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 37,
+              "mott": 31
             },
             "2023": {
               "alleS": 891,
-              "fvS": null,
+              "fvS": 787,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 26.6,
               "kvalifiserte": 73,
               "tilbud": 63,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 17,
+              "mott": 11
             },
             "2024": {
               "alleS": 169,
-              "fvS": null,
+              "fvS": 129,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 34.9,
               "kvalifiserte": 57,
               "tilbud": 50,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 15,
+              "mott": 12
             },
             "2025": {
               "alleS": 365,
-              "fvS": null,
+              "fvS": 312,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 30.1,
               "kvalifiserte": 74,
               "tilbud": 65,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 23,
+              "mott": 19
             },
             "2026": {
               "alleS": null,
@@ -1161,6 +1171,7 @@
               "pg_ord": null
             },
             "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram: søkere, kvalifiserte, tilbud; førstevalg = prioritet 1; kvinneandel blant førstevalgssøkere)",
               "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
               "https://www.nmbu.no/studier/master-2-aar/datavitenskap"
             ]
@@ -1181,53 +1192,63 @@
           "localData": {
             "2021": {
               "alleS": 561,
-              "fvS": 178,
+              "fvS": 174,
               "plasser": 47,
-              "kvinner": null,
+              "kvinner": 10.9,
               "kvalifiserte": 287,
               "tilbud": 72,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 59,
+              "mott": 57
             },
             "2022": {
               "alleS": 430,
               "fvS": 139,
               "plasser": 47,
-              "kvinner": null,
+              "kvinner": 7.2,
               "kvalifiserte": 266,
               "tilbud": 71,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 54,
+              "mott": 54
             },
             "2023": {
               "alleS": 553,
-              "fvS": 163,
+              "fvS": 166,
               "plasser": 42,
-              "kvinner": null,
+              "kvinner": 12.0,
               "kvalifiserte": 298,
               "tilbud": 66,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 50,
+              "mott": 50
             },
             "2024": {
               "alleS": 625,
               "fvS": 196,
               "plasser": 52,
-              "kvinner": null,
+              "kvinner": 14.8,
               "kvalifiserte": 366,
               "tilbud": 97,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 69,
+              "mott": 67
             },
             "2025": {
               "alleS": 756,
-              "fvS": 210,
+              "fvS": 211,
               "plasser": 76,
-              "kvinner": null,
+              "kvinner": 13.7,
               "kvalifiserte": 433,
               "tilbud": 123,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 101,
+              "mott": 98
             },
             "2026": {
               "alleS": 821,
@@ -1240,6 +1261,7 @@
               "pg_ord": null
             },
             "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram: søkere, kvalifiserte, tilbud; førstevalg = prioritet 1; kvinneandel blant førstevalgssøkere)",
               "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
               "https://www.ntnu.no/studier/opptak/statistikk"
             ]
@@ -1260,53 +1282,63 @@
           "localData": {
             "2021": {
               "alleS": 2309,
-              "fvS": null,
+              "fvS": 851,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 20.6,
               "kvalifiserte": 995,
               "tilbud": 178,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 127,
+              "mott": 119
             },
             "2022": {
               "alleS": 2130,
-              "fvS": null,
+              "fvS": 858,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 23.7,
               "kvalifiserte": 950,
               "tilbud": 170,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 130,
+              "mott": 123
             },
             "2023": {
               "alleS": 912,
-              "fvS": null,
+              "fvS": 259,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 28.6,
               "kvalifiserte": 577,
               "tilbud": 133,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 109,
+              "mott": 103
             },
             "2024": {
               "alleS": 1155,
-              "fvS": null,
+              "fvS": 313,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 21.7,
               "kvalifiserte": 713,
               "tilbud": 147,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 110,
+              "mott": 103
             },
             "2025": {
               "alleS": 1086,
-              "fvS": null,
+              "fvS": 315,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 24.8,
               "kvalifiserte": 618,
               "tilbud": 170,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 111,
+              "mott": 102
             },
             "2026": {
               "alleS": null,
@@ -1319,6 +1351,7 @@
               "pg_ord": null
             },
             "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram: søkere, kvalifiserte, tilbud; førstevalg = prioritet 1; kvinneandel blant førstevalgssøkere)",
               "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
@@ -1377,23 +1410,27 @@
             },
             "2024": {
               "alleS": 41,
-              "fvS": null,
+              "fvS": 19,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 31.6,
               "kvalifiserte": 11,
               "tilbud": 7,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 0,
+              "mott": 0
             },
             "2025": {
               "alleS": 82,
-              "fvS": null,
+              "fvS": 39,
               "plasser": null,
-              "kvinner": null,
+              "kvinner": 41.0,
               "kvalifiserte": 23,
               "tilbud": 15,
               "pg_fv": null,
-              "pg_ord": null
+              "pg_ord": null,
+              "akseptert": 6,
+              "mott": 6
             },
             "2026": {
               "alleS": null,
@@ -1406,6 +1443,7 @@
               "pg_ord": null
             },
             "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram: søkere, kvalifiserte, tilbud; førstevalg = prioritet 1; kvinneandel blant førstevalgssøkere)",
               "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)"
             ]
           }
@@ -1425,53 +1463,63 @@
           "localData": {
             "2021": {
               "alleS": 479,
-              "fvS": 312,
+              "fvS": 313,
               "plasser": 88,
-              "kvinner": null,
+              "kvinner": 25.9,
               "kvalifiserte": 380,
               "tilbud": 156,
               "pg_fv": null,
-              "pg_ord": 4.0
+              "pg_ord": 4.0,
+              "akseptert": 94,
+              "mott": 88
             },
             "2022": {
               "alleS": 392,
-              "fvS": 252,
+              "fvS": 251,
               "plasser": 88,
-              "kvinner": null,
+              "kvinner": 30.7,
               "kvalifiserte": 294,
               "tilbud": 156,
               "pg_fv": null,
-              "pg_ord": 3.7
+              "pg_ord": 3.7,
+              "akseptert": 94,
+              "mott": 87
             },
             "2023": {
               "alleS": 330,
-              "fvS": 214,
+              "fvS": 212,
               "plasser": 74,
-              "kvinner": null,
+              "kvinner": 28.3,
               "kvalifiserte": 249,
               "tilbud": 147,
               "pg_fv": null,
-              "pg_ord": 3.4
+              "pg_ord": 3.4,
+              "akseptert": 96,
+              "mott": 82
             },
             "2024": {
               "alleS": 357,
-              "fvS": 227,
+              "fvS": 226,
               "plasser": 88,
-              "kvinner": null,
+              "kvinner": 25.2,
               "kvalifiserte": 255,
               "tilbud": 171,
               "pg_fv": null,
-              "pg_ord": 3.4
+              "pg_ord": 3.4,
+              "akseptert": 128,
+              "mott": 120
             },
             "2025": {
               "alleS": 298,
               "fvS": 222,
               "plasser": 90,
-              "kvinner": null,
+              "kvinner": 32.0,
               "kvalifiserte": 216,
               "tilbud": 183,
               "pg_fv": null,
-              "pg_ord": 2.8
+              "pg_ord": 2.8,
+              "akseptert": 120,
+              "mott": 116
             },
             "2026": {
               "alleS": 287,
@@ -1484,6 +1532,7 @@
               "pg_ord": 2.7
             },
             "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram: søkere, kvalifiserte, tilbud; førstevalg = prioritet 1; kvinneandel blant førstevalgssøkere)",
               "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram)",
               "https://www.ntnu.no/studier/opptak/statistikk"
             ]
