@@ -213,3 +213,17 @@ og snitt for alle søkerne. NMBU-nøkkeltallene viser snitt opptakspoeng for mø
   Samordna-program teller 370 per DBH-program samlet over studiesteder og kvoter, og avviker derfor fra
   Samordnas tall per studiested, som vi allerede har. Studieplasser for toårige mastere må eventuelt hentes
   fra institusjonenes egne opptakssider.
+
+## 12. Gjennomføring mot institusjon, sektor og landssnitt (DBH 705/706)
+
+Lagt inn 23.09 kveld i «Gjennomføring, frafall og studenttall».
+- **Målenivå-velger** for fullført og frafall: «Samme program» (707), «Samme institusjon» (706: grad på samme
+  nivå ved samme institusjon, også etter programbytte) og «Hele sektoren» (705: grad på samme nivå ved en
+  hvilken som helst norsk institusjon; frafall = ute av høyere utdanning). Samme startkull i alle tre.
+- **Landssnitt** som stiplet grå linje og egen rad i tabellen: 707/706/705 summert over alle institusjoner per
+  startår og nivåkode (B3, M2, M5, PR), i `completionNationalData.ts`. Gruppene blander nivåer, så linjen følger
+  NMBU-programmets nivå (ellers gruppens vanligste). NMBU-nøkkeltallene viser landssnitt og frafall ut av sektoren.
+- **Rettet skjerming:** kulltotalene hentes nå uten kjønnsdeling (`<tid>t_<inst>.json` i dbh-cachen); kvinnetall
+  fra den kjønnsdelte spørringen. Før rettingen var frafall for lavt i omtrent en tredel av kullene (f.eks.
+  NMBU B-BIOL kull 2018: 5 → 7).
+- **Skjermede nuller** i andeler vises som «≤ x %» i tabellen (x = 2 personer av kullet). Grafen viser 0.

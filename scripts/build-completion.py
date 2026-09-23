@@ -3,7 +3,13 @@
 
 Kilder (DBH/HKDIR, per institusjon, cache i data/*/kilder/dbh-cache/):
   707  Gjennomføring og frafall (studieprogramnivå): per startkull (Årstall = startår, høst):
-       Startkull, Fullført normert / +1 år / +2 år, Studerer, Frafalt (samme tre horisonter), per kjønn.
+       Startkull, Fullført normert / +1 år / +2 år, Studerer, Frafalt (samme tre horisonter).
+       Totalene hentes UTEN kjønnsdeling (grov gruppering = minst skjerming); kvinnetallene fra en egen
+       spørring per kjønn.
+  706  Samme kull, men gjennomført = grad på samme nivå ved samme institusjon (studiumnivå).
+  705  Samme kull, men gjennomført = grad på samme nivå hvor som helst i sektoren; frafall = ute av
+       høyere utdanning (sektornivå).
+  Landssnitt: 707/706/705 summert over alle institusjoner per startår og nivåkode (én spørring per tabell).
   123  Registrerte studenter (høstsemester), totalt og kvinner.
   110  Nye studenter (sum vår+høst), totalt og kvinner.
   104  Ferdige kandidater (sum vår+høst), totalt og kvinner.
@@ -55,6 +61,36 @@ def fetch(tid, inst, group_by, fak, refresh):
         return []
 
 
+NATIONAL_CACHE = ROOT / "data" / "nmbu" / "kilder" / "dbh-cache"
+KULL_KEYS = [("fullfortNormert", "Fullført normert"), ("fullfort1", "Fullført normert1"), ("fullfort2", "Fullført normert2"),
+             ("studerer", "Studerer"), ("studerer1", "Studerer1"), ("studerer2", "Studerer2"),
+             ("frafalt", "Frafalt"), ("frafalt1", "Frafalt1"), ("frafalt2", "Frafalt2")]
+REF_KEYS = [("fullfortNormert", "Fullført normert"), ("fullfort1", "Fullført normert1"), ("fullfort2", "Fullført normert2"),
+            ("frafalt", "Frafalt"), ("frafalt2", "Frafalt2")]
+
+
+def fetch_national(tid, refresh):
+    """Alle institusjoner, per startår × nivåkode. Filteret må ha minst én variabel: bruker Nivåkode."""
+    q = {"tabell_id": tid, "api_versjon": 1, "statuslinje": "J", "kodetekst": "J", "desimal_separator": ".",
+         "groupBy": ["Årstall", "Nivåkode", "Årstall normert tid"], "sortBy": ["Årstall"],
+         "filter": [{"variabel": "Nivåkode", "selection": {"filter": "item", "values": ["B3", "M2", "M5", "PR"], "exclude": [""]}},
+                    {"variabel": "Årstall", "selection": {"filter": "top", "values": [YEARS_TOP], "exclude": [""]}}]}
+    return blc.fetch_dbh(q, NATIONAL_CACHE / f"{tid}_nasjonalt_nivaa.json", refresh)
+
+
+def fetch_tot(tid, inst, fak, refresh):
+    """Kulltall uten kjønnsdeling (cache-navn <tid>t_<inst>.json)."""
+    name = f"{tid}t_{inst}.json"
+    path = find_cache(name) if not refresh else None
+    if path is None:
+        path = ROOT / "data" / fak / "kilder" / "dbh-cache" / name
+    try:
+        return blc.fetch_dbh(query(tid, inst, ["Institusjonskode", "Årstall", "Studieprogramkode", "Nivåkode", "Årstall normert tid"]), path, refresh)
+    except json.JSONDecodeError:
+        print(f"  [tomt]  tabell {tid} (total) inst={inst}", file=sys.stderr)
+        return []
+
+
 def n(r, k):
     try:
         return int(float(r.get(k) or 0))
@@ -89,6 +125,9 @@ def main():
         print(f"== {inst}", file=sys.stderr)
         raw[inst] = {
             707: fetch(707, inst, ["Institusjonskode", "Årstall", "Studieprogramkode", "Nivåkode", "Årstall normert tid", "Kjønnkode"], fak, a.refresh),
+            "707t": fetch_tot(707, inst, fak, a.refresh),
+            706: fetch_tot(706, inst, fak, a.refresh),
+            705: fetch_tot(705, inst, fak, a.refresh),
             123: fetch(123, inst, ["Institusjonskode", "Årstall", "Semester", "Studieprogramkode"], fak, a.refresh),
             110: fetch(110, inst, ["Institusjonskode", "Årstall", "Semester", "Studieprogramkode"], fak, a.refresh),
             104: fetch(104, inst, ["Institusjonskode", "Årstall", "Semester", "Studieprogramkode"], fak, a.refresh),
@@ -107,21 +146,30 @@ def main():
                                                "_reg": False, "_nye": False, "_kand": False, "_sp": False})
         for inst in icodes:
             r = raw.get(inst, {})
-            for row in r.get(707, []):
+            def kobj(row):
+                y = int(row["Årstall"])
+                return kull.setdefault(y, {"aar": y, "normertAar": int(row.get("Årstall normert tid") or 0) or None, "nivaa": row.get("Nivåkode"),
+                                           "startkull": 0, "startkullKvinner": 0, "fullfortNormert": 0, "fullfortNormertKvinner": 0,
+                                           "fullfort1": 0, "fullfort2": 0, "studerer": 0, "studerer1": 0, "studerer2": 0,
+                                           "frafalt": 0, "frafalt1": 0, "frafalt2": 0,
+                                           "inst": {kk: 0 for kk, _ in REF_KEYS}, "sektor": {kk: 0 for kk, _ in REF_KEYS}})
+            tot = r.get("707t") or []
+            for row in (tot or r.get(707, [])):
                 if row.get("Studieprogramkode") not in codes:
                     continue
-                y = int(row["Årstall"])
-                k = kull.setdefault(y, {"aar": y, "normertAar": int(row.get("Årstall normert tid") or 0) or None, "nivaa": row.get("Nivåkode"),
-                                        "startkull": 0, "startkullKvinner": 0, "fullfortNormert": 0, "fullfortNormertKvinner": 0,
-                                        "fullfort1": 0, "fullfort2": 0, "studerer": 0, "studerer1": 0, "studerer2": 0,
-                                        "frafalt": 0, "frafalt1": 0, "frafalt2": 0})
-                kv = row.get("Kjønnkode") == "1"
-                k["startkull"] += n(row, "Startkull"); k["fullfortNormert"] += n(row, "Fullført normert")
-                k["fullfort1"] += n(row, "Fullført normert1"); k["fullfort2"] += n(row, "Fullført normert2")
-                k["studerer"] += n(row, "Studerer"); k["studerer1"] += n(row, "Studerer1"); k["studerer2"] += n(row, "Studerer2")
-                k["frafalt"] += n(row, "Frafalt"); k["frafalt1"] += n(row, "Frafalt1"); k["frafalt2"] += n(row, "Frafalt2")
-                if kv:
+                k = kobj(row)
+                k["startkull"] += n(row, "Startkull")
+                for kk, dk_ in KULL_KEYS:
+                    k[kk] += n(row, dk_)
+            for row in r.get(707, []):
+                if row.get("Studieprogramkode") in codes and row.get("Kjønnkode") == "1":
+                    k = kobj(row)
                     k["startkullKvinner"] += n(row, "Startkull"); k["fullfortNormertKvinner"] += n(row, "Fullført normert")
+            for tid, key in ((706, "inst"), (705, "sektor")):
+                for row in r.get(tid, []):
+                    if row.get("Studieprogramkode") in codes and int(row["Årstall"]) in kull:
+                        for kk, dk_ in REF_KEYS:
+                            kull[int(row["Årstall"])][key][kk] += n(row, dk_)
             for row in r.get(123, []):
                 if row.get("Studieprogramkode") in codes and row.get("Semester") == "3":
                     y = aar[int(row["Årstall"])]; y["registrerte"] += n(row, "Antall totalt"); y["registrerteKvinner"] += n(row, "Antall kvinner"); y["_reg"] = True
@@ -148,7 +196,14 @@ def main():
                             "spPlanlagt": round(v["spPlanlagt"], 1) if v["_sp"] else None, "spGjennomfort": round(v["spGjennomfort"], 1) if v["_sp"] else None})
         return {"entryId": entry["id"], "shortName": entry["shortName"], "institusjon": entry["institusjon"], "isNmbu": bool(entry.get("isNmbu")),
                 "programnavn": entry.get("programnavn", ""), "dbhKoder": sorted(codes),
-                "kull": [kull[y] for y in sorted(kull) if kull[y]["startkull"] > 0], "aar": aar_out}
+                "kull": [finish_kull(kull[y]) for y in sorted(kull) if kull[y]["startkull"] > 0], "aar": aar_out}
+
+    def finish_kull(k):
+        # 705/706 mangler for kullet (ingen rader): null i stedet for nuller
+        for key in ("inst", "sektor"):
+            if not any(k[key].values()):
+                k[key] = None
+        return k
 
     groups = []
     n_prog = n_kull = 0
@@ -170,7 +225,10 @@ def main():
          "  aar: number; normertAar: number | null; nivaa: string | null; startkull: number; startkullKvinner: number;",
          "  fullfortNormert: number; fullfortNormertKvinner: number; fullfort1: number; fullfort2: number;",
          "  studerer: number; studerer1: number; studerer2: number; frafalt: number; frafalt1: number; frafalt2: number;",
+         "  /** DBH 706: grad på samme nivå ved samme institusjon. */ inst: CompletionRef | null;",
+         "  /** DBH 705: grad på samme nivå hvor som helst i sektoren; frafall = ute av høyere utdanning. */ sektor: CompletionRef | null;",
          "}",
+         "export interface CompletionRef { fullfortNormert: number; fullfort1: number; fullfort2: number; frafalt: number; frafalt2: number; }",
          "export interface CompletionYear {",
          "  aar: number; registrerte: number | null; registrerteKvinner: number | null; nye: number | null; nyeKvinner: number | null;",
          "  kandidater: number | null; kandidaterKvinner: number | null; spPlanlagt: number | null; spGjennomfort: number | null;",
@@ -190,7 +248,13 @@ def main():
             L.append(f"        entryId: {ts(p['entryId'])}, shortName: {ts(p['shortName'])}, institusjon: {ts(p['institusjon'])}, isNmbu: {'true' if p['isNmbu'] else 'false'}, programnavn: {ts(p['programnavn'])}, dbhKoder: [{', '.join(ts(x) for x in p['dbhKoder'])}],")
             L.append("        kull: [")
             for k in p["kull"]:
-                L.append("          { " + ", ".join(f"{key}: {num(k[key])}" if key not in ('nivaa',) else f"{key}: {ts(k[key]) if k[key] else 'null'}" for key in k) + " },")
+                def val(key, v):
+                    if key == "nivaa":
+                        return ts(v) if v else "null"
+                    if isinstance(v, dict):
+                        return "{ " + ", ".join(f"{kk}: {num(vv)}" for kk, vv in v.items()) + " }"
+                    return num(v)
+                L.append("          { " + ", ".join(f"{key}: {val(key, k[key])}" for key in k) + " },")
             L.append("        ],")
             L.append("        aar: [")
             for y in p["aar"]:
@@ -203,6 +267,45 @@ def main():
     out.write_text("\n".join(L), encoding="utf-8")
     json.dump({"generert": today, "groups": groups}, open(str(out)[:-3] + ".json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(f"{fak}: {n_prog} program, {n_kull} startkull med data. Skrev {out}")
+    write_national(a.refresh)
+
+
+def write_national(refresh):
+    """Landssnitt per nivåkode og startår for 707 (program), 706 (institusjon) og 705 (sektor)."""
+    nat = {}
+    for tid, key in ((707, "program"), (706, "inst"), (705, "sektor")):
+        try:
+            rows = fetch_national(tid, refresh)
+        except json.JSONDecodeError:
+            rows = []
+        for row in rows:
+            niv = row.get("Nivåkode"); y = int(row["Årstall"])
+            k = nat.setdefault(niv, {}).setdefault(y, {"aar": y, "normertAar": int(row.get("Årstall normert tid") or 0) or None})
+            d = k.setdefault(key, {"startkull": 0, **{kk: 0 for kk, _ in REF_KEYS}})
+            d["startkull"] += n(row, "Startkull")
+            for kk, dk_ in REF_KEYS:
+                d[kk] += n(row, dk_)
+    today = dt.date.today().isoformat()
+    out = ROOT / "kilde" / "src" / "app" / "data" / "completionNationalData.ts"
+    L = [f"// GENERERT av scripts/build-completion.py {today} – ikke rediger for hånd.",
+         "// Landssnitt: DBH/HKDIR 707 (studieprogramnivå), 706 (studiumnivå), 705 (sektornivå), summert over alle institusjoner per startår og nivåkode.",
+         "export interface NationalRef { startkull: number; fullfortNormert: number; fullfort1: number; fullfort2: number; frafalt: number; frafalt2: number; }",
+         "export interface NationalCohort { aar: number; normertAar: number | null; program?: NationalRef; inst?: NationalRef; sektor?: NationalRef; }",
+         "export const NIVAA_NAVN: Record<string, string> = { B3: 'bachelor', M2: 'toårig master', M5: 'femårig master', PR: 'profesjonsstudium' };",
+         "export const COMPLETION_NATIONAL: Record<string, NationalCohort[]> = {"]
+    for niv in sorted(nat):
+        L.append(f"  {niv}: [")
+        for y in sorted(nat[niv]):
+            k = nat[niv][y]
+            parts = [f"aar: {y}", f"normertAar: {num(k['normertAar'])}"]
+            for key in ("program", "inst", "sektor"):
+                if key in k:
+                    parts.append(f"{key}: {{ " + ", ".join(f"{kk}: {vv}" for kk, vv in k[key].items()) + " }")
+            L.append("    { " + ", ".join(parts) + " },")
+        L.append("  ],")
+    L.append("};"); L.append("")
+    out.write_text("\n".join(L), encoding="utf-8")
+    print(f"landssnitt: {', '.join(f'{k} ({len(v)} kull)' for k, v in sorted(nat.items()))}. Skrev {out.name}")
 
 
 if __name__ == "__main__":

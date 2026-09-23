@@ -37,9 +37,23 @@
        "studerer": 0,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 4,
-       "frafalt1": 5,
-       "frafalt2": 5
+       "frafalt": 5,
+       "frafalt1": 6,
+       "frafalt2": 6,
+       "inst": {
+        "fullfortNormert": 9,
+        "fullfort1": 9,
+        "fullfort2": 9,
+        "frafalt": 6,
+        "frafalt2": 6
+       },
+       "sektor": {
+        "fullfortNormert": 9,
+        "fullfort1": 9,
+        "fullfort2": 9,
+        "frafalt": 4,
+        "frafalt2": 6
+       }
       },
       {
        "aar": 2015,
@@ -47,16 +61,30 @@
        "nivaa": "B3",
        "startkull": 25,
        "startkullKvinner": 13,
-       "fullfortNormert": 5,
+       "fullfortNormert": 7,
        "fullfortNormertKvinner": 0,
        "fullfort1": 11,
        "fullfort2": 11,
        "studerer": 12,
-       "studerer1": 3,
+       "studerer1": 5,
        "studerer2": 0,
-       "frafalt": 5,
+       "frafalt": 6,
        "frafalt1": 9,
-       "frafalt2": 12
+       "frafalt2": 12,
+       "inst": {
+        "fullfortNormert": 7,
+        "fullfort1": 11,
+        "fullfort2": 11,
+        "frafalt": 9,
+        "frafalt2": 12
+       },
+       "sektor": {
+        "fullfortNormert": 8,
+        "fullfort1": 13,
+        "fullfort2": 14,
+        "frafalt": 4,
+        "frafalt2": 9
+       }
       },
       {
        "aar": 2016,
@@ -64,16 +92,30 @@
        "nivaa": "B3",
        "startkull": 21,
        "startkullKvinner": 6,
-       "fullfortNormert": 3,
+       "fullfortNormert": 5,
        "fullfortNormertKvinner": 0,
        "fullfort1": 10,
        "fullfort2": 10,
-       "studerer": 7,
+       "studerer": 9,
        "studerer1": 0,
        "studerer2": 3,
-       "frafalt": 5,
+       "frafalt": 7,
        "frafalt1": 10,
-       "frafalt2": 8
+       "frafalt2": 8,
+       "inst": {
+        "fullfortNormert": 5,
+        "fullfort1": 11,
+        "fullfort2": 11,
+        "frafalt": 7,
+        "frafalt2": 8
+       },
+       "sektor": {
+        "fullfortNormert": 6,
+        "fullfort1": 12,
+        "fullfort2": 12,
+        "frafalt": 6,
+        "frafalt2": 7
+       }
       },
       {
        "aar": 2017,
@@ -81,16 +123,30 @@
        "nivaa": "B3",
        "startkull": 28,
        "startkullKvinner": 12,
-       "fullfortNormert": 3,
+       "fullfortNormert": 5,
        "fullfortNormertKvinner": 0,
-       "fullfort1": 7,
-       "fullfort2": 7,
+       "fullfort1": 9,
+       "fullfort2": 9,
        "studerer": 10,
-       "studerer1": 4,
+       "studerer1": 5,
        "studerer2": 0,
        "frafalt": 13,
        "frafalt1": 14,
-       "frafalt2": 17
+       "frafalt2": 17,
+       "inst": {
+        "fullfortNormert": 5,
+        "fullfort1": 10,
+        "fullfort2": 10,
+        "frafalt": 16,
+        "frafalt2": 17
+       },
+       "sektor": {
+        "fullfortNormert": 7,
+        "fullfort1": 12,
+        "fullfort2": 12,
+        "frafalt": 11,
+        "frafalt2": 12
+       }
       },
       {
        "aar": 2018,
@@ -98,16 +154,30 @@
        "nivaa": "B3",
        "startkull": 29,
        "startkullKvinner": 12,
-       "fullfortNormert": 9,
+       "fullfortNormert": 11,
        "fullfortNormertKvinner": 0,
        "fullfort1": 12,
        "fullfort2": 14,
        "studerer": 8,
        "studerer1": 7,
-       "studerer2": 3,
+       "studerer2": 4,
        "frafalt": 10,
        "frafalt1": 10,
-       "frafalt2": 11
+       "frafalt2": 11,
+       "inst": {
+        "fullfortNormert": 11,
+        "fullfort1": 12,
+        "fullfort2": 14,
+        "frafalt": 11,
+        "frafalt2": 12
+       },
+       "sektor": {
+        "fullfortNormert": 12,
+        "fullfort1": 14,
+        "fullfort2": 16,
+        "frafalt": 8,
+        "frafalt2": 9
+       }
       },
       {
        "aar": 2019,
@@ -120,11 +190,25 @@
        "fullfort1": 10,
        "fullfort2": 12,
        "studerer": 14,
-       "studerer1": 3,
-       "studerer2": 0,
-       "frafalt": 7,
+       "studerer1": 5,
+       "studerer2": 4,
+       "frafalt": 8,
        "frafalt1": 12,
-       "frafalt2": 11
+       "frafalt2": 11,
+       "inst": {
+        "fullfortNormert": 5,
+        "fullfort1": 10,
+        "fullfort2": 13,
+        "frafalt": 11,
+        "frafalt2": 12
+       },
+       "sektor": {
+        "fullfortNormert": 7,
+        "fullfort1": 12,
+        "fullfort2": 16,
+        "frafalt": 5,
+        "frafalt2": 5
+       }
       },
       {
        "aar": 2020,
@@ -138,10 +222,24 @@
        "fullfort2": 15,
        "studerer": 15,
        "studerer1": 12,
-       "studerer2": 5,
+       "studerer2": 7,
        "frafalt": 11,
        "frafalt1": 12,
-       "frafalt2": 14
+       "frafalt2": 14,
+       "inst": {
+        "fullfortNormert": 13,
+        "fullfort1": 17,
+        "fullfort2": 20,
+        "frafalt": 13,
+        "frafalt2": 15
+       },
+       "sektor": {
+        "fullfortNormert": 14,
+        "fullfort1": 20,
+        "fullfort2": 23,
+        "frafalt": 7,
+        "frafalt2": 7
+       }
       },
       {
        "aar": 2021,
@@ -153,12 +251,26 @@
        "fullfortNormertKvinner": 3,
        "fullfort1": 13,
        "fullfort2": 0,
-       "studerer": 5,
-       "studerer1": 4,
+       "studerer": 7,
+       "studerer1": 5,
        "studerer2": 0,
-       "frafalt": 5,
-       "frafalt1": 5,
-       "frafalt2": 0
+       "frafalt": 6,
+       "frafalt1": 7,
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 12,
+        "fullfort1": 13,
+        "fullfort2": 0,
+        "frafalt": 6,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 12,
+        "fullfort1": 14,
+        "fullfort2": 0,
+        "frafalt": 5,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2022,
@@ -175,7 +287,21 @@
        "studerer2": 0,
        "frafalt": 8,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 11,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 11,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 14,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 8,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -307,33 +433,61 @@
        "nivaa": "B3",
        "startkull": 18,
        "startkullKvinner": 4,
-       "fullfortNormert": 3,
+       "fullfortNormert": 5,
        "fullfortNormertKvinner": 3,
        "fullfort1": 9,
        "fullfort2": 9,
-       "studerer": 10,
+       "studerer": 11,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 7,
-       "frafalt2": 8
+       "frafalt2": 8,
+       "inst": {
+        "fullfortNormert": 5,
+        "fullfort1": 10,
+        "fullfort2": 10,
+        "frafalt": 0,
+        "frafalt2": 7
+       },
+       "sektor": {
+        "fullfortNormert": 5,
+        "fullfort1": 10,
+        "fullfort2": 10,
+        "frafalt": 0,
+        "frafalt2": 6
+       }
       },
       {
        "aar": 2019,
        "normertAar": 2022,
        "nivaa": "B3",
-       "startkull": 10,
+       "startkull": 11,
        "startkullKvinner": 0,
        "fullfortNormert": 5,
        "fullfortNormertKvinner": 0,
-       "fullfort1": 6,
-       "fullfort2": 6,
-       "studerer": 3,
+       "fullfort1": 7,
+       "fullfort2": 7,
+       "studerer": 4,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 3,
-       "frafalt2": 4
+       "frafalt2": 4,
+       "inst": {
+        "fullfortNormert": 5,
+        "fullfort1": 7,
+        "fullfort2": 7,
+        "frafalt": 0,
+        "frafalt2": 4
+       },
+       "sektor": {
+        "fullfortNormert": 5,
+        "fullfort1": 7,
+        "fullfort2": 7,
+        "frafalt": 0,
+        "frafalt2": 4
+       }
       },
       {
        "aar": 2020,
@@ -345,29 +499,57 @@
        "fullfortNormertKvinner": 4,
        "fullfort1": 19,
        "fullfort2": 20,
-       "studerer": 6,
-       "studerer1": 3,
+       "studerer": 7,
+       "studerer1": 4,
        "studerer2": 0,
-       "frafalt": 3,
-       "frafalt1": 4,
-       "frafalt2": 6
+       "frafalt": 4,
+       "frafalt1": 5,
+       "frafalt2": 7,
+       "inst": {
+        "fullfortNormert": 17,
+        "fullfort1": 19,
+        "fullfort2": 20,
+        "frafalt": 5,
+        "frafalt2": 8
+       },
+       "sektor": {
+        "fullfortNormert": 17,
+        "fullfort1": 19,
+        "fullfort2": 21,
+        "frafalt": 4,
+        "frafalt2": 7
+       }
       },
       {
        "aar": 2021,
        "normertAar": 2024,
        "nivaa": "B3",
-       "startkull": 22,
+       "startkull": 23,
        "startkullKvinner": 0,
        "fullfortNormert": 13,
        "fullfortNormertKvinner": 0,
-       "fullfort1": 13,
+       "fullfort1": 14,
        "fullfort2": 0,
-       "studerer": 0,
+       "studerer": 3,
        "studerer1": 3,
        "studerer2": 0,
        "frafalt": 7,
        "frafalt1": 6,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 13,
+        "fullfort1": 14,
+        "fullfort2": 0,
+        "frafalt": 8,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 13,
+        "fullfort1": 14,
+        "fullfort2": 0,
+        "frafalt": 5,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2022,
@@ -375,16 +557,30 @@
        "nivaa": "B3",
        "startkull": 15,
        "startkullKvinner": 3,
-       "fullfortNormert": 4,
+       "fullfortNormert": 6,
        "fullfortNormertKvinner": 0,
        "fullfort1": 0,
        "fullfort2": 0,
-       "studerer": 3,
+       "studerer": 4,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 5,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 6,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 5,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 6,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 5,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -525,9 +721,23 @@
        "studerer": 4,
        "studerer1": 0,
        "studerer2": 3,
-       "frafalt": 4,
-       "frafalt1": 5,
-       "frafalt2": 3
+       "frafalt": 5,
+       "frafalt1": 6,
+       "frafalt2": 4,
+       "inst": {
+        "fullfortNormert": 14,
+        "fullfort1": 16,
+        "fullfort2": 16,
+        "frafalt": 5,
+        "frafalt2": 4
+       },
+       "sektor": {
+        "fullfortNormert": 14,
+        "fullfort1": 16,
+        "fullfort2": 16,
+        "frafalt": 4,
+        "frafalt2": 4
+       }
       },
       {
        "aar": 2019,
@@ -535,16 +745,30 @@
        "nivaa": "B3",
        "startkull": 28,
        "startkullKvinner": 7,
-       "fullfortNormert": 12,
+       "fullfortNormert": 14,
        "fullfortNormertKvinner": 0,
        "fullfort1": 19,
        "fullfort2": 20,
        "studerer": 13,
-       "studerer1": 3,
+       "studerer1": 5,
        "studerer2": 0,
        "frafalt": 0,
-       "frafalt1": 3,
-       "frafalt2": 8
+       "frafalt1": 4,
+       "frafalt2": 8,
+       "inst": {
+        "fullfortNormert": 15,
+        "fullfort1": 21,
+        "fullfort2": 22,
+        "frafalt": 0,
+        "frafalt2": 6
+       },
+       "sektor": {
+        "fullfortNormert": 15,
+        "fullfort1": 22,
+        "fullfort2": 23,
+        "frafalt": 0,
+        "frafalt2": 5
+       }
       },
       {
        "aar": 2020,
@@ -556,12 +780,26 @@
        "fullfortNormertKvinner": 8,
        "fullfort1": 20,
        "fullfort2": 20,
-       "studerer": 3,
+       "studerer": 4,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 4,
-       "frafalt1": 4,
-       "frafalt2": 5
+       "frafalt": 5,
+       "frafalt1": 5,
+       "frafalt2": 6,
+       "inst": {
+        "fullfortNormert": 18,
+        "fullfort1": 21,
+        "fullfort2": 21,
+        "frafalt": 4,
+        "frafalt2": 5
+       },
+       "sektor": {
+        "fullfortNormert": 18,
+        "fullfort1": 22,
+        "fullfort2": 22,
+        "frafalt": 3,
+        "frafalt2": 4
+       }
       },
       {
        "aar": 2021,
@@ -576,9 +814,23 @@
        "studerer": 6,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 9,
-       "frafalt1": 9,
-       "frafalt2": 0
+       "frafalt": 10,
+       "frafalt1": 10,
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 15,
+        "fullfort1": 19,
+        "fullfort2": 0,
+        "frafalt": 11,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 15,
+        "fullfort1": 19,
+        "fullfort2": 0,
+        "frafalt": 8,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2022,
@@ -595,7 +847,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 15,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 15,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -726,11 +992,25 @@
        "fullfort1": 16,
        "fullfort2": 17,
        "studerer": 11,
-       "studerer1": 4,
-       "studerer2": 3,
+       "studerer1": 6,
+       "studerer2": 4,
        "frafalt": 12,
        "frafalt1": 15,
-       "frafalt2": 16
+       "frafalt2": 16,
+       "inst": {
+        "fullfortNormert": 14,
+        "fullfort1": 16,
+        "fullfort2": 17,
+        "frafalt": 14,
+        "frafalt2": 17
+       },
+       "sektor": {
+        "fullfortNormert": 15,
+        "fullfort1": 20,
+        "fullfort2": 21,
+        "frafalt": 7,
+        "frafalt2": 9
+       }
       },
       {
        "aar": 2015,
@@ -743,11 +1023,25 @@
        "fullfort1": 23,
        "fullfort2": 26,
        "studerer": 9,
-       "studerer1": 0,
+       "studerer1": 3,
        "studerer2": 0,
        "frafalt": 3,
        "frafalt1": 4,
-       "frafalt2": 4
+       "frafalt2": 4,
+       "inst": {
+        "fullfortNormert": 18,
+        "fullfort1": 23,
+        "fullfort2": 26,
+        "frafalt": 3,
+        "frafalt2": 4
+       },
+       "sektor": {
+        "fullfortNormert": 18,
+        "fullfort1": 24,
+        "fullfort2": 27,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2016,
@@ -764,7 +1058,21 @@
        "studerer2": 3,
        "frafalt": 10,
        "frafalt1": 11,
-       "frafalt2": 10
+       "frafalt2": 10,
+       "inst": {
+        "fullfortNormert": 13,
+        "fullfort1": 17,
+        "fullfort2": 18,
+        "frafalt": 11,
+        "frafalt2": 11
+       },
+       "sektor": {
+        "fullfortNormert": 13,
+        "fullfort1": 19,
+        "fullfort2": 20,
+        "frafalt": 7,
+        "frafalt2": 4
+       }
       },
       {
        "aar": 2017,
@@ -777,11 +1085,25 @@
        "fullfort1": 18,
        "fullfort2": 18,
        "studerer": 13,
-       "studerer1": 5,
-       "studerer2": 3,
-       "frafalt": 0,
-       "frafalt1": 3,
-       "frafalt2": 6
+       "studerer1": 6,
+       "studerer2": 4,
+       "frafalt": 3,
+       "frafalt1": 4,
+       "frafalt2": 6,
+       "inst": {
+        "fullfortNormert": 13,
+        "fullfort1": 20,
+        "fullfort2": 20,
+        "frafalt": 3,
+        "frafalt2": 4
+       },
+       "sektor": {
+        "fullfortNormert": 13,
+        "fullfort1": 20,
+        "fullfort2": 20,
+        "frafalt": 3,
+        "frafalt2": 4
+       }
       },
       {
        "aar": 2018,
@@ -798,7 +1120,21 @@
        "studerer2": 9,
        "frafalt": 6,
        "frafalt1": 7,
-       "frafalt2": 4
+       "frafalt2": 6,
+       "inst": {
+        "fullfortNormert": 12,
+        "fullfort1": 18,
+        "fullfort2": 19,
+        "frafalt": 8,
+        "frafalt2": 7
+       },
+       "sektor": {
+        "fullfortNormert": 12,
+        "fullfort1": 19,
+        "fullfort2": 21,
+        "frafalt": 3,
+        "frafalt2": 3
+       }
       },
       {
        "aar": 2019,
@@ -814,8 +1150,22 @@
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
-       "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt1": 4,
+       "frafalt2": 4,
+       "inst": {
+        "fullfortNormert": 20,
+        "fullfort1": 29,
+        "fullfort2": 31,
+        "frafalt": 0,
+        "frafalt2": 4
+       },
+       "sektor": {
+        "fullfortNormert": 20,
+        "fullfort1": 29,
+        "fullfort2": 31,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2020,
@@ -827,12 +1177,26 @@
        "fullfortNormertKvinner": 13,
        "fullfort1": 25,
        "fullfort2": 26,
-       "studerer": 8,
-       "studerer1": 0,
+       "studerer": 10,
+       "studerer1": 3,
        "studerer2": 0,
-       "frafalt": 4,
-       "frafalt1": 6,
-       "frafalt2": 6
+       "frafalt": 6,
+       "frafalt1": 8,
+       "frafalt2": 8,
+       "inst": {
+        "fullfortNormert": 20,
+        "fullfort1": 25,
+        "fullfort2": 26,
+        "frafalt": 7,
+        "frafalt2": 9
+       },
+       "sektor": {
+        "fullfortNormert": 21,
+        "fullfort1": 26,
+        "fullfort2": 29,
+        "frafalt": 0,
+        "frafalt2": 5
+       }
       },
       {
        "aar": 2021,
@@ -849,7 +1213,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 25,
+        "fullfort1": 27,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 25,
+        "fullfort1": 27,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2022,
@@ -861,12 +1239,26 @@
        "fullfortNormertKvinner": 13,
        "fullfort1": 0,
        "fullfort2": 0,
-       "studerer": 3,
+       "studerer": 4,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 0,
+       "frafalt": 3,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 22,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 5,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 23,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -1005,9 +1397,23 @@
        "studerer": 4,
        "studerer1": 0,
        "studerer2": 3,
-       "frafalt": 4,
-       "frafalt1": 5,
-       "frafalt2": 3
+       "frafalt": 5,
+       "frafalt1": 6,
+       "frafalt2": 4,
+       "inst": {
+        "fullfortNormert": 14,
+        "fullfort1": 16,
+        "fullfort2": 16,
+        "frafalt": 5,
+        "frafalt2": 4
+       },
+       "sektor": {
+        "fullfortNormert": 14,
+        "fullfort1": 16,
+        "fullfort2": 16,
+        "frafalt": 4,
+        "frafalt2": 4
+       }
       },
       {
        "aar": 2019,
@@ -1015,16 +1421,30 @@
        "nivaa": "B3",
        "startkull": 28,
        "startkullKvinner": 7,
-       "fullfortNormert": 12,
+       "fullfortNormert": 14,
        "fullfortNormertKvinner": 0,
        "fullfort1": 19,
        "fullfort2": 20,
        "studerer": 13,
-       "studerer1": 3,
+       "studerer1": 5,
        "studerer2": 0,
        "frafalt": 0,
-       "frafalt1": 3,
-       "frafalt2": 8
+       "frafalt1": 4,
+       "frafalt2": 8,
+       "inst": {
+        "fullfortNormert": 15,
+        "fullfort1": 21,
+        "fullfort2": 22,
+        "frafalt": 0,
+        "frafalt2": 6
+       },
+       "sektor": {
+        "fullfortNormert": 15,
+        "fullfort1": 22,
+        "fullfort2": 23,
+        "frafalt": 0,
+        "frafalt2": 5
+       }
       },
       {
        "aar": 2020,
@@ -1036,12 +1456,26 @@
        "fullfortNormertKvinner": 8,
        "fullfort1": 20,
        "fullfort2": 20,
-       "studerer": 3,
+       "studerer": 4,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 4,
-       "frafalt1": 4,
-       "frafalt2": 5
+       "frafalt": 5,
+       "frafalt1": 5,
+       "frafalt2": 6,
+       "inst": {
+        "fullfortNormert": 18,
+        "fullfort1": 21,
+        "fullfort2": 21,
+        "frafalt": 4,
+        "frafalt2": 5
+       },
+       "sektor": {
+        "fullfortNormert": 18,
+        "fullfort1": 22,
+        "fullfort2": 22,
+        "frafalt": 3,
+        "frafalt2": 4
+       }
       },
       {
        "aar": 2021,
@@ -1056,9 +1490,23 @@
        "studerer": 6,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 9,
-       "frafalt1": 9,
-       "frafalt2": 0
+       "frafalt": 10,
+       "frafalt1": 10,
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 15,
+        "fullfort1": 19,
+        "fullfort2": 0,
+        "frafalt": 11,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 15,
+        "fullfort1": 19,
+        "fullfort2": 0,
+        "frafalt": 8,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2022,
@@ -1075,7 +1523,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 15,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 15,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -1194,7 +1656,21 @@
        "studerer2": 0,
        "frafalt": 9,
        "frafalt1": 13,
-       "frafalt2": 13
+       "frafalt2": 13,
+       "inst": {
+        "fullfortNormert": 11,
+        "fullfort1": 14,
+        "fullfort2": 14,
+        "frafalt": 10,
+        "frafalt2": 11
+       },
+       "sektor": {
+        "fullfortNormert": 11,
+        "fullfort1": 14,
+        "fullfort2": 14,
+        "frafalt": 8,
+        "frafalt2": 10
+       }
       },
       {
        "aar": 2017,
@@ -1206,12 +1682,26 @@
        "fullfortNormertKvinner": 3,
        "fullfort1": 13,
        "fullfort2": 14,
-       "studerer": 6,
+       "studerer": 7,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 5,
-       "frafalt1": 7,
-       "frafalt2": 7
+       "frafalt": 7,
+       "frafalt1": 9,
+       "frafalt2": 9,
+       "inst": {
+        "fullfortNormert": 11,
+        "fullfort1": 14,
+        "fullfort2": 15,
+        "frafalt": 7,
+        "frafalt2": 9
+       },
+       "sektor": {
+        "fullfortNormert": 12,
+        "fullfort1": 15,
+        "fullfort2": 17,
+        "frafalt": 5,
+        "frafalt2": 6
+       }
       },
       {
        "aar": 2018,
@@ -1223,12 +1713,26 @@
        "fullfortNormertKvinner": 12,
        "fullfort1": 26,
        "fullfort2": 26,
-       "studerer": 3,
+       "studerer": 5,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 8,
        "frafalt1": 10,
-       "frafalt2": 10
+       "frafalt2": 10,
+       "inst": {
+        "fullfortNormert": 25,
+        "fullfort1": 26,
+        "fullfort2": 26,
+        "frafalt": 10,
+        "frafalt2": 12
+       },
+       "sektor": {
+        "fullfortNormert": 26,
+        "fullfort1": 28,
+        "fullfort2": 28,
+        "frafalt": 6,
+        "frafalt2": 7
+       }
       },
       {
        "aar": 2019,
@@ -1241,11 +1745,25 @@
        "fullfort1": 24,
        "fullfort2": 24,
        "studerer": 11,
-       "studerer1": 3,
+       "studerer1": 5,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 4
+       "frafalt2": 6,
+       "inst": {
+        "fullfortNormert": 20,
+        "fullfort1": 24,
+        "fullfort2": 24,
+        "frafalt": 0,
+        "frafalt2": 6
+       },
+       "sektor": {
+        "fullfortNormert": 20,
+        "fullfort1": 25,
+        "fullfort2": 26,
+        "frafalt": 0,
+        "frafalt2": 5
+       }
       },
       {
        "aar": 2020,
@@ -1258,11 +1776,25 @@
        "fullfort1": 27,
        "fullfort2": 28,
        "studerer": 12,
-       "studerer1": 0,
+       "studerer1": 3,
        "studerer2": 0,
-       "frafalt": 4,
-       "frafalt1": 6,
-       "frafalt2": 7
+       "frafalt": 5,
+       "frafalt1": 7,
+       "frafalt2": 8,
+       "inst": {
+        "fullfortNormert": 20,
+        "fullfort1": 27,
+        "fullfort2": 28,
+        "frafalt": 5,
+        "frafalt2": 9
+       },
+       "sektor": {
+        "fullfortNormert": 20,
+        "fullfort1": 27,
+        "fullfort2": 28,
+        "frafalt": 5,
+        "frafalt2": 7
+       }
       },
       {
        "aar": 2021,
@@ -1279,7 +1811,21 @@
        "studerer2": 0,
        "frafalt": 6,
        "frafalt1": 9,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 18,
+        "fullfort1": 25,
+        "fullfort2": 0,
+        "frafalt": 7,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 18,
+        "fullfort1": 25,
+        "fullfort2": 0,
+        "frafalt": 5,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2022,
@@ -1291,12 +1837,26 @@
        "fullfortNormertKvinner": 5,
        "fullfort1": 0,
        "fullfort2": 0,
-       "studerer": 8,
+       "studerer": 10,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 6,
+       "frafalt": 7,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 19,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 8,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 19,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 5,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -1432,12 +1992,26 @@
        "fullfortNormertKvinner": 14,
        "fullfort1": 22,
        "fullfort2": 23,
-       "studerer": 7,
-       "studerer1": 5,
+       "studerer": 9,
+       "studerer1": 6,
        "studerer2": 0,
        "frafalt": 17,
        "frafalt1": 18,
-       "frafalt2": 22
+       "frafalt2": 22,
+       "inst": {
+        "fullfortNormert": 20,
+        "fullfort1": 22,
+        "fullfort2": 23,
+        "frafalt": 17,
+        "frafalt2": 22
+       },
+       "sektor": {
+        "fullfortNormert": 22,
+        "fullfort1": 24,
+        "fullfort2": 27,
+        "frafalt": 13,
+        "frafalt2": 17
+       }
       },
       {
        "aar": 2019,
@@ -1451,10 +2025,24 @@
        "fullfort2": 25,
        "studerer": 16,
        "studerer1": 7,
-       "studerer2": 5,
+       "studerer2": 6,
        "frafalt": 17,
        "frafalt1": 24,
-       "frafalt2": 23
+       "frafalt2": 23,
+       "inst": {
+        "fullfortNormert": 21,
+        "fullfort1": 24,
+        "fullfort2": 26,
+        "frafalt": 16,
+        "frafalt2": 24
+       },
+       "sektor": {
+        "fullfortNormert": 24,
+        "fullfort1": 32,
+        "fullfort2": 34,
+        "frafalt": 10,
+        "frafalt2": 15
+       }
       },
       {
        "aar": 2020,
@@ -1467,11 +2055,25 @@
        "fullfort1": 35,
        "fullfort2": 36,
        "studerer": 9,
-       "studerer1": 0,
+       "studerer1": 3,
        "studerer2": 3,
        "frafalt": 13,
        "frafalt1": 17,
-       "frafalt2": 16
+       "frafalt2": 16,
+       "inst": {
+        "fullfortNormert": 33,
+        "fullfort1": 35,
+        "fullfort2": 36,
+        "frafalt": 12,
+        "frafalt2": 18
+       },
+       "sektor": {
+        "fullfortNormert": 38,
+        "fullfort1": 40,
+        "fullfort2": 41,
+        "frafalt": 8,
+        "frafalt2": 10
+       }
       },
       {
        "aar": 2021,
@@ -1488,7 +2090,21 @@
        "studerer2": 0,
        "frafalt": 11,
        "frafalt1": 17,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 36,
+        "fullfort1": 40,
+        "fullfort2": 0,
+        "frafalt": 11,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 37,
+        "fullfort1": 42,
+        "fullfort2": 0,
+        "frafalt": 8,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2022,
@@ -1505,7 +2121,21 @@
        "studerer2": 0,
        "frafalt": 12,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 28,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 12,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 31,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 8,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -1615,16 +2245,30 @@
        "nivaa": "B3",
        "startkull": 22,
        "startkullKvinner": 14,
-       "fullfortNormert": 6,
+       "fullfortNormert": 7,
        "fullfortNormertKvinner": 6,
-       "fullfort1": 7,
-       "fullfort2": 7,
+       "fullfort1": 9,
+       "fullfort2": 9,
        "studerer": 8,
        "studerer1": 7,
-       "studerer2": 3,
+       "studerer2": 4,
        "frafalt": 7,
        "frafalt1": 6,
-       "frafalt2": 9
+       "frafalt2": 9,
+       "inst": {
+        "fullfortNormert": 7,
+        "fullfort1": 12,
+        "fullfort2": 13,
+        "frafalt": 7,
+        "frafalt2": 9
+       },
+       "sektor": {
+        "fullfortNormert": 8,
+        "fullfort1": 14,
+        "fullfort2": 15,
+        "frafalt": 4,
+        "frafalt2": 5
+       }
       },
       {
        "aar": 2015,
@@ -1636,12 +2280,26 @@
        "fullfortNormertKvinner": 5,
        "fullfort1": 13,
        "fullfort2": 16,
-       "studerer": 7,
-       "studerer1": 4,
-       "studerer2": 3,
-       "frafalt": 5,
-       "frafalt1": 6,
-       "frafalt2": 5
+       "studerer": 9,
+       "studerer1": 6,
+       "studerer2": 5,
+       "frafalt": 7,
+       "frafalt1": 8,
+       "frafalt2": 6,
+       "inst": {
+        "fullfortNormert": 11,
+        "fullfort1": 13,
+        "fullfort2": 16,
+        "frafalt": 10,
+        "frafalt2": 10
+       },
+       "sektor": {
+        "fullfortNormert": 12,
+        "fullfort1": 17,
+        "fullfort2": 20,
+        "frafalt": 3,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2016,
@@ -1654,11 +2312,25 @@
        "fullfort1": 21,
        "fullfort2": 23,
        "studerer": 16,
-       "studerer1": 4,
+       "studerer1": 5,
        "studerer2": 4,
        "frafalt": 8,
        "frafalt1": 12,
-       "frafalt2": 11
+       "frafalt2": 11,
+       "inst": {
+        "fullfortNormert": 15,
+        "fullfort1": 23,
+        "fullfort2": 26,
+        "frafalt": 8,
+        "frafalt2": 10
+       },
+       "sektor": {
+        "fullfortNormert": 15,
+        "fullfort1": 23,
+        "fullfort2": 26,
+        "frafalt": 5,
+        "frafalt2": 5
+       }
       },
       {
        "aar": 2017,
@@ -1671,11 +2343,25 @@
        "fullfort1": 20,
        "fullfort2": 21,
        "studerer": 14,
-       "studerer1": 4,
-       "studerer2": 0,
-       "frafalt": 6,
+       "studerer1": 6,
+       "studerer2": 3,
+       "frafalt": 8,
        "frafalt1": 13,
-       "frafalt2": 15
+       "frafalt2": 15,
+       "inst": {
+        "fullfortNormert": 19,
+        "fullfort1": 22,
+        "fullfort2": 23,
+        "frafalt": 11,
+        "frafalt2": 15
+       },
+       "sektor": {
+        "fullfortNormert": 19,
+        "fullfort1": 23,
+        "fullfort2": 24,
+        "frafalt": 6,
+        "frafalt2": 10
+       }
       },
       {
        "aar": 2018,
@@ -1692,7 +2378,21 @@
        "studerer2": 4,
        "frafalt": 11,
        "frafalt1": 13,
-       "frafalt2": 14
+       "frafalt2": 14,
+       "inst": {
+        "fullfortNormert": 27,
+        "fullfort1": 31,
+        "fullfort2": 32,
+        "frafalt": 13,
+        "frafalt2": 13
+       },
+       "sektor": {
+        "fullfortNormert": 27,
+        "fullfort1": 33,
+        "fullfort2": 36,
+        "frafalt": 5,
+        "frafalt2": 6
+       }
       },
       {
        "aar": 2019,
@@ -1705,11 +2405,25 @@
        "fullfort1": 27,
        "fullfort2": 30,
        "studerer": 9,
-       "studerer1": 4,
-       "studerer2": 3,
+       "studerer1": 6,
+       "studerer2": 4,
        "frafalt": 19,
        "frafalt1": 20,
-       "frafalt2": 19
+       "frafalt2": 19,
+       "inst": {
+        "fullfortNormert": 26,
+        "fullfort1": 28,
+        "fullfort2": 31,
+        "frafalt": 20,
+        "frafalt2": 19
+       },
+       "sektor": {
+        "fullfortNormert": 27,
+        "fullfort1": 32,
+        "fullfort2": 35,
+        "frafalt": 13,
+        "frafalt2": 11
+       }
       },
       {
        "aar": 2020,
@@ -1726,7 +2440,21 @@
        "studerer2": 0,
        "frafalt": 9,
        "frafalt1": 10,
-       "frafalt2": 9
+       "frafalt2": 9,
+       "inst": {
+        "fullfortNormert": 29,
+        "fullfort1": 35,
+        "fullfort2": 37,
+        "frafalt": 7,
+        "frafalt2": 6
+       },
+       "sektor": {
+        "fullfortNormert": 29,
+        "fullfort1": 36,
+        "fullfort2": 38,
+        "frafalt": 6,
+        "frafalt2": 3
+       }
       },
       {
        "aar": 2021,
@@ -1739,11 +2467,25 @@
        "fullfort1": 35,
        "fullfort2": 0,
        "studerer": 10,
-       "studerer1": 0,
+       "studerer1": 3,
        "studerer2": 0,
        "frafalt": 8,
        "frafalt1": 10,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 32,
+        "fullfort1": 37,
+        "fullfort2": 0,
+        "frafalt": 9,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 32,
+        "fullfort1": 37,
+        "fullfort2": 0,
+        "frafalt": 5,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2022,
@@ -1755,12 +2497,26 @@
        "fullfortNormertKvinner": 8,
        "fullfort1": 0,
        "fullfort2": 0,
-       "studerer": 4,
+       "studerer": 6,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 0,
+       "frafalt": 3,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 15,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 4,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 15,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -1892,16 +2648,30 @@
        "nivaa": "B3",
        "startkull": 20,
        "startkullKvinner": 15,
-       "fullfortNormert": 6,
+       "fullfortNormert": 7,
        "fullfortNormertKvinner": 6,
-       "fullfort1": 10,
+       "fullfort1": 12,
        "fullfort2": 13,
        "studerer": 12,
        "studerer1": 8,
-       "studerer2": 3,
+       "studerer2": 5,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 8,
+        "fullfort1": 13,
+        "fullfort2": 14,
+        "frafalt": 4,
+        "frafalt2": 5
+       },
+       "sektor": {
+        "fullfortNormert": 8,
+        "fullfort1": 13,
+        "fullfort2": 15,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2015,
@@ -1914,11 +2684,25 @@
        "fullfort1": 18,
        "fullfort2": 18,
        "studerer": 7,
-       "studerer1": 5,
+       "studerer1": 6,
        "studerer2": 3,
-       "frafalt": 10,
-       "frafalt1": 8,
-       "frafalt2": 13
+       "frafalt": 11,
+       "frafalt1": 10,
+       "frafalt2": 13,
+       "inst": {
+        "fullfortNormert": 16,
+        "fullfort1": 20,
+        "fullfort2": 20,
+        "frafalt": 11,
+        "frafalt2": 13
+       },
+       "sektor": {
+        "fullfortNormert": 17,
+        "fullfort1": 22,
+        "fullfort2": 22,
+        "frafalt": 5,
+        "frafalt2": 6
+       }
       },
       {
        "aar": 2016,
@@ -1930,12 +2714,26 @@
        "fullfortNormertKvinner": 3,
        "fullfort1": 12,
        "fullfort2": 12,
-       "studerer": 4,
+       "studerer": 5,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 10,
        "frafalt1": 11,
-       "frafalt2": 10
+       "frafalt2": 10,
+       "inst": {
+        "fullfortNormert": 9,
+        "fullfort1": 13,
+        "fullfort2": 13,
+        "frafalt": 8,
+        "frafalt2": 6
+       },
+       "sektor": {
+        "fullfortNormert": 9,
+        "fullfort1": 14,
+        "fullfort2": 15,
+        "frafalt": 4,
+        "frafalt2": 4
+       }
       },
       {
        "aar": 2017,
@@ -1952,7 +2750,21 @@
        "studerer2": 0,
        "frafalt": 12,
        "frafalt1": 13,
-       "frafalt2": 15
+       "frafalt2": 15,
+       "inst": {
+        "fullfortNormert": 18,
+        "fullfort1": 24,
+        "fullfort2": 26,
+        "frafalt": 13,
+        "frafalt2": 12
+       },
+       "sektor": {
+        "fullfortNormert": 20,
+        "fullfort1": 28,
+        "fullfort2": 31,
+        "frafalt": 6,
+        "frafalt2": 5
+       }
       },
       {
        "aar": 2018,
@@ -1965,11 +2777,25 @@
        "fullfort1": 25,
        "fullfort2": 26,
        "studerer": 6,
-       "studerer1": 3,
+       "studerer1": 4,
        "studerer2": 0,
        "frafalt": 10,
        "frafalt1": 11,
-       "frafalt2": 12
+       "frafalt2": 12,
+       "inst": {
+        "fullfortNormert": 24,
+        "fullfort1": 25,
+        "fullfort2": 26,
+        "frafalt": 9,
+        "frafalt2": 11
+       },
+       "sektor": {
+        "fullfortNormert": 25,
+        "fullfort1": 28,
+        "fullfort2": 30,
+        "frafalt": 3,
+        "frafalt2": 5
+       }
       },
       {
        "aar": 2019,
@@ -1982,11 +2808,25 @@
        "fullfort1": 26,
        "fullfort2": 26,
        "studerer": 9,
-       "studerer1": 3,
+       "studerer1": 5,
        "studerer2": 0,
        "frafalt": 3,
-       "frafalt1": 3,
-       "frafalt2": 5
+       "frafalt1": 4,
+       "frafalt2": 7,
+       "inst": {
+        "fullfortNormert": 23,
+        "fullfort1": 26,
+        "fullfort2": 26,
+        "frafalt": 6,
+        "frafalt2": 8
+       },
+       "sektor": {
+        "fullfortNormert": 23,
+        "fullfort1": 27,
+        "fullfort2": 28,
+        "frafalt": 0,
+        "frafalt2": 3
+       }
       },
       {
        "aar": 2020,
@@ -2003,7 +2843,21 @@
        "studerer2": 0,
        "frafalt": 10,
        "frafalt1": 9,
-       "frafalt2": 9
+       "frafalt2": 9,
+       "inst": {
+        "fullfortNormert": 25,
+        "fullfort1": 26,
+        "fullfort2": 27,
+        "frafalt": 9,
+        "frafalt2": 10
+       },
+       "sektor": {
+        "fullfortNormert": 25,
+        "fullfort1": 26,
+        "fullfort2": 28,
+        "frafalt": 6,
+        "frafalt2": 7
+       }
       },
       {
        "aar": 2021,
@@ -2016,11 +2870,25 @@
        "fullfort1": 18,
        "fullfort2": 0,
        "studerer": 10,
-       "studerer1": 0,
+       "studerer1": 4,
        "studerer2": 0,
        "frafalt": 12,
        "frafalt1": 15,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 15,
+        "fullfort1": 18,
+        "fullfort2": 0,
+        "frafalt": 13,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 16,
+        "fullfort1": 19,
+        "fullfort2": 0,
+        "frafalt": 4,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2022,
@@ -2035,9 +2903,23 @@
        "studerer": 11,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 5,
+       "frafalt": 7,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 16,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 11,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 16,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 4,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -2185,16 +3067,30 @@
        "nivaa": "B3",
        "startkull": 21,
        "startkullKvinner": 17,
-       "fullfortNormert": 7,
+       "fullfortNormert": 8,
        "fullfortNormertKvinner": 7,
-       "fullfort1": 9,
-       "fullfort2": 10,
-       "studerer": 8,
-       "studerer1": 5,
-       "studerer2": 4,
-       "frafalt": 0,
-       "frafalt1": 3,
-       "frafalt2": 3
+       "fullfort1": 11,
+       "fullfort2": 12,
+       "studerer": 10,
+       "studerer1": 6,
+       "studerer2": 5,
+       "frafalt": 3,
+       "frafalt1": 4,
+       "frafalt2": 4,
+       "inst": {
+        "fullfortNormert": 8,
+        "fullfort1": 11,
+        "fullfort2": 12,
+        "frafalt": 9,
+        "frafalt2": 8
+       },
+       "sektor": {
+        "fullfortNormert": 10,
+        "fullfort1": 13,
+        "fullfort2": 16,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2015,
@@ -2202,16 +3098,30 @@
        "nivaa": "B3",
        "startkull": 26,
        "startkullKvinner": 13,
-       "fullfortNormert": 4,
+       "fullfortNormert": 6,
        "fullfortNormertKvinner": 4,
        "fullfort1": 12,
        "fullfort2": 12,
        "studerer": 15,
        "studerer1": 9,
        "studerer2": 7,
-       "frafalt": 3,
-       "frafalt1": 3,
-       "frafalt2": 5
+       "frafalt": 5,
+       "frafalt1": 5,
+       "frafalt2": 7,
+       "inst": {
+        "fullfortNormert": 6,
+        "fullfort1": 13,
+        "fullfort2": 13,
+        "frafalt": 9,
+        "frafalt2": 12
+       },
+       "sektor": {
+        "fullfortNormert": 6,
+        "fullfort1": 14,
+        "fullfort2": 15,
+        "frafalt": 0,
+        "frafalt2": 4
+       }
       },
       {
        "aar": 2016,
@@ -2221,14 +3131,28 @@
        "startkullKvinner": 14,
        "fullfortNormert": 5,
        "fullfortNormertKvinner": 5,
-       "fullfort1": 7,
-       "fullfort2": 7,
+       "fullfort1": 9,
+       "fullfort2": 9,
        "studerer": 10,
-       "studerer1": 5,
+       "studerer1": 6,
        "studerer2": 4,
        "frafalt": 8,
-       "frafalt1": 6,
-       "frafalt2": 10
+       "frafalt1": 8,
+       "frafalt2": 10,
+       "inst": {
+        "fullfortNormert": 5,
+        "fullfort1": 9,
+        "fullfort2": 9,
+        "frafalt": 11,
+        "frafalt2": 14
+       },
+       "sektor": {
+        "fullfortNormert": 6,
+        "fullfort1": 10,
+        "fullfort2": 12,
+        "frafalt": 7,
+        "frafalt2": 6
+       }
       },
       {
        "aar": 2017,
@@ -2240,12 +3164,26 @@
        "fullfortNormertKvinner": 3,
        "fullfort1": 7,
        "fullfort2": 7,
-       "studerer": 0,
-       "studerer1": 0,
-       "studerer2": 0,
-       "frafalt": 3,
-       "frafalt1": 3,
-       "frafalt2": 3
+       "studerer": 3,
+       "studerer1": 3,
+       "studerer2": 3,
+       "frafalt": 5,
+       "frafalt1": 5,
+       "frafalt2": 5,
+       "inst": {
+        "fullfortNormert": 9,
+        "fullfort1": 9,
+        "fullfort2": 9,
+        "frafalt": 6,
+        "frafalt2": 6
+       },
+       "sektor": {
+        "fullfortNormert": 9,
+        "fullfort1": 9,
+        "fullfort2": 9,
+        "frafalt": 4,
+        "frafalt2": 4
+       }
       },
       {
        "aar": 2018,
@@ -2253,16 +3191,30 @@
        "nivaa": "B3",
        "startkull": 20,
        "startkullKvinner": 14,
-       "fullfortNormert": 6,
+       "fullfortNormert": 7,
        "fullfortNormertKvinner": 6,
-       "fullfort1": 8,
-       "fullfort2": 8,
-       "studerer": 6,
+       "fullfort1": 10,
+       "fullfort2": 10,
+       "studerer": 8,
        "studerer1": 4,
        "studerer2": 4,
-       "frafalt": 3,
-       "frafalt1": 4,
-       "frafalt2": 4
+       "frafalt": 5,
+       "frafalt1": 6,
+       "frafalt2": 6,
+       "inst": {
+        "fullfortNormert": 9,
+        "fullfort1": 12,
+        "fullfort2": 12,
+        "frafalt": 7,
+        "frafalt2": 8
+       },
+       "sektor": {
+        "fullfortNormert": 9,
+        "fullfort1": 13,
+        "fullfort2": 13,
+        "frafalt": 3,
+        "frafalt2": 3
+       }
       },
       {
        "aar": 2019,
@@ -2270,16 +3222,30 @@
        "nivaa": "B3",
        "startkull": 19,
        "startkullKvinner": 12,
-       "fullfortNormert": 4,
+       "fullfortNormert": 5,
        "fullfortNormertKvinner": 4,
-       "fullfort1": 4,
-       "fullfort2": 4,
-       "studerer": 4,
-       "studerer1": 0,
-       "studerer2": 3,
-       "frafalt": 6,
+       "fullfort1": 5,
+       "fullfort2": 6,
+       "studerer": 6,
+       "studerer1": 4,
+       "studerer2": 5,
+       "frafalt": 8,
        "frafalt1": 10,
-       "frafalt2": 6
+       "frafalt2": 8,
+       "inst": {
+        "fullfortNormert": 5,
+        "fullfort1": 5,
+        "fullfort2": 6,
+        "frafalt": 8,
+        "frafalt2": 11
+       },
+       "sektor": {
+        "fullfortNormert": 6,
+        "fullfort1": 7,
+        "fullfort2": 10,
+        "frafalt": 4,
+        "frafalt2": 5
+       }
       },
       {
        "aar": 2020,
@@ -2294,9 +3260,23 @@
        "studerer": 7,
        "studerer1": 4,
        "studerer2": 0,
-       "frafalt": 5,
-       "frafalt1": 6,
-       "frafalt2": 6
+       "frafalt": 6,
+       "frafalt1": 7,
+       "frafalt2": 7,
+       "inst": {
+        "fullfortNormert": 11,
+        "fullfort1": 13,
+        "fullfort2": 15,
+        "frafalt": 6,
+        "frafalt2": 7
+       },
+       "sektor": {
+        "fullfortNormert": 11,
+        "fullfort1": 13,
+        "fullfort2": 17,
+        "frafalt": 3,
+        "frafalt2": 3
+       }
       },
       {
        "aar": 2021,
@@ -2304,16 +3284,30 @@
        "nivaa": "B3",
        "startkull": 20,
        "startkullKvinner": 12,
-       "fullfortNormert": 6,
+       "fullfortNormert": 8,
        "fullfortNormertKvinner": 6,
        "fullfort1": 11,
        "fullfort2": 0,
        "studerer": 8,
-       "studerer1": 4,
+       "studerer1": 6,
        "studerer2": 0,
-       "frafalt": 0,
-       "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt": 4,
+       "frafalt1": 3,
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 13,
+        "fullfort1": 16,
+        "fullfort2": 0,
+        "frafalt": 4,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 13,
+        "fullfort1": 16,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -2469,16 +3463,30 @@
        "nivaa": "B3",
        "startkull": 30,
        "startkullKvinner": 12,
-       "fullfortNormert": 3,
+       "fullfortNormert": 4,
        "fullfortNormertKvinner": 3,
        "fullfort1": 7,
        "fullfort2": 8,
        "studerer": 13,
        "studerer1": 9,
-       "studerer2": 4,
-       "frafalt": 11,
+       "studerer2": 6,
+       "frafalt": 13,
        "frafalt1": 14,
-       "frafalt2": 16
+       "frafalt2": 16,
+       "inst": {
+        "fullfortNormert": 5,
+        "fullfort1": 11,
+        "fullfort2": 15,
+        "frafalt": 14,
+        "frafalt2": 13
+       },
+       "sektor": {
+        "fullfortNormert": 5,
+        "fullfort1": 12,
+        "fullfort2": 17,
+        "frafalt": 8,
+        "frafalt2": 6
+       }
       },
       {
        "aar": 2018,
@@ -2486,16 +3494,30 @@
        "nivaa": "B3",
        "startkull": 15,
        "startkullKvinner": 5,
-       "fullfortNormert": 5,
+       "fullfortNormert": 7,
        "fullfortNormertKvinner": 0,
        "fullfort1": 10,
        "fullfort2": 10,
-       "studerer": 3,
+       "studerer": 4,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 0,
-       "frafalt1": 3,
-       "frafalt2": 3
+       "frafalt": 4,
+       "frafalt1": 5,
+       "frafalt2": 5,
+       "inst": {
+        "fullfortNormert": 8,
+        "fullfort1": 11,
+        "fullfort2": 11,
+        "frafalt": 4,
+        "frafalt2": 3
+       },
+       "sektor": {
+        "fullfortNormert": 8,
+        "fullfort1": 11,
+        "fullfort2": 11,
+        "frafalt": 3,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2019,
@@ -2507,12 +3529,26 @@
        "fullfortNormertKvinner": 6,
        "fullfort1": 13,
        "fullfort2": 14,
-       "studerer": 6,
-       "studerer1": 0,
+       "studerer": 7,
+       "studerer1": 3,
        "studerer2": 0,
-       "frafalt": 3,
-       "frafalt1": 4,
-       "frafalt2": 4
+       "frafalt": 4,
+       "frafalt1": 5,
+       "frafalt2": 5,
+       "inst": {
+        "fullfortNormert": 11,
+        "fullfort1": 14,
+        "fullfort2": 15,
+        "frafalt": 5,
+        "frafalt2": 6
+       },
+       "sektor": {
+        "fullfortNormert": 11,
+        "fullfort1": 16,
+        "fullfort2": 18,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2020,
@@ -2520,16 +3556,30 @@
        "nivaa": "B3",
        "startkull": 19,
        "startkullKvinner": 10,
-       "fullfortNormert": 8,
+       "fullfortNormert": 10,
        "fullfortNormertKvinner": 8,
        "fullfort1": 13,
        "fullfort2": 13,
-       "studerer": 5,
+       "studerer": 7,
        "studerer1": 3,
        "studerer2": 3,
        "frafalt": 0,
        "frafalt1": 3,
-       "frafalt2": 3
+       "frafalt2": 3,
+       "inst": {
+        "fullfortNormert": 10,
+        "fullfort1": 13,
+        "fullfort2": 13,
+        "frafalt": 3,
+        "frafalt2": 3
+       },
+       "sektor": {
+        "fullfortNormert": 10,
+        "fullfort1": 13,
+        "fullfort2": 13,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2021,
@@ -2539,14 +3589,28 @@
        "startkullKvinner": 5,
        "fullfortNormert": 0,
        "fullfortNormertKvinner": 0,
-       "fullfort1": 3,
+       "fullfort1": 5,
        "fullfort2": 0,
-       "studerer": 4,
-       "studerer1": 0,
+       "studerer": 6,
+       "studerer1": 4,
        "studerer2": 0,
-       "frafalt": 3,
-       "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt": 4,
+       "frafalt1": 3,
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 0,
+        "fullfort1": 5,
+        "fullfort2": 0,
+        "frafalt": 6,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 0,
+        "fullfort1": 6,
+        "fullfort2": 0,
+        "frafalt": 3,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2022,
@@ -2563,7 +3627,21 @@
        "studerer2": 0,
        "frafalt": 9,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 21,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 9,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 21,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 5,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -2693,7 +3771,21 @@
        "studerer2": 7,
        "frafalt": 19,
        "frafalt1": 21,
-       "frafalt2": 21
+       "frafalt2": 21,
+       "inst": {
+        "fullfortNormert": 56,
+        "fullfort1": 65,
+        "fullfort2": 68,
+        "frafalt": 21,
+        "frafalt2": 23
+       },
+       "sektor": {
+        "fullfortNormert": 57,
+        "fullfort1": 70,
+        "fullfort2": 77,
+        "frafalt": 4,
+        "frafalt2": 5
+       }
       },
       {
        "aar": 2015,
@@ -2710,7 +3802,21 @@
        "studerer2": 6,
        "frafalt": 20,
        "frafalt1": 23,
-       "frafalt2": 25
+       "frafalt2": 25,
+       "inst": {
+        "fullfortNormert": 57,
+        "fullfort1": 66,
+        "fullfort2": 68,
+        "frafalt": 18,
+        "frafalt2": 22
+       },
+       "sektor": {
+        "fullfortNormert": 58,
+        "fullfort1": 73,
+        "fullfort2": 77,
+        "frafalt": 0,
+        "frafalt2": 5
+       }
       },
       {
        "aar": 2016,
@@ -2723,11 +3829,25 @@
        "fullfort1": 45,
        "fullfort2": 46,
        "studerer": 20,
-       "studerer1": 0,
+       "studerer1": 4,
        "studerer2": 0,
        "frafalt": 15,
        "frafalt1": 17,
-       "frafalt2": 18
+       "frafalt2": 18,
+       "inst": {
+        "fullfortNormert": 31,
+        "fullfort1": 45,
+        "fullfort2": 46,
+        "frafalt": 17,
+        "frafalt2": 18
+       },
+       "sektor": {
+        "fullfortNormert": 31,
+        "fullfort1": 48,
+        "fullfort2": 52,
+        "frafalt": 7,
+        "frafalt2": 9
+       }
       },
       {
        "aar": 2017,
@@ -2740,11 +3860,25 @@
        "fullfort1": 41,
        "fullfort2": 41,
        "studerer": 15,
-       "studerer1": 3,
+       "studerer1": 5,
        "studerer2": 0,
        "frafalt": 10,
        "frafalt1": 12,
-       "frafalt2": 15
+       "frafalt2": 15,
+       "inst": {
+        "fullfortNormert": 33,
+        "fullfort1": 41,
+        "fullfort2": 41,
+        "frafalt": 15,
+        "frafalt2": 17
+       },
+       "sektor": {
+        "fullfortNormert": 34,
+        "fullfort1": 45,
+        "fullfort2": 49,
+        "frafalt": 4,
+        "frafalt2": 4
+       }
       },
       {
        "aar": 2018,
@@ -2756,12 +3890,26 @@
        "fullfortNormertKvinner": 7,
        "fullfort1": 14,
        "fullfort2": 14,
-       "studerer": 3,
-       "studerer1": 0,
-       "studerer2": 0,
+       "studerer": 5,
+       "studerer1": 3,
+       "studerer2": 3,
        "frafalt": 7,
        "frafalt1": 8,
-       "frafalt2": 8
+       "frafalt2": 8,
+       "inst": {
+        "fullfortNormert": 14,
+        "fullfort1": 15,
+        "fullfort2": 15,
+        "frafalt": 7,
+        "frafalt2": 7
+       },
+       "sektor": {
+        "fullfortNormert": 14,
+        "fullfort1": 16,
+        "fullfort2": 18,
+        "frafalt": 0,
+        "frafalt2": 3
+       }
       },
       {
        "aar": 2019,
@@ -2773,12 +3921,26 @@
        "fullfortNormertKvinner": 11,
        "fullfort1": 21,
        "fullfort2": 22,
-       "studerer": 0,
+       "studerer": 3,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 10,
        "frafalt1": 10,
-       "frafalt2": 10
+       "frafalt2": 10,
+       "inst": {
+        "fullfortNormert": 19,
+        "fullfort1": 21,
+        "fullfort2": 22,
+        "frafalt": 9,
+        "frafalt2": 10
+       },
+       "sektor": {
+        "fullfortNormert": 19,
+        "fullfort1": 21,
+        "fullfort2": 23,
+        "frafalt": 5,
+        "frafalt2": 4
+       }
       },
       {
        "aar": 2020,
@@ -2792,10 +3954,24 @@
        "fullfort2": 78,
        "studerer": 21,
        "studerer1": 9,
-       "studerer2": 4,
+       "studerer2": 6,
        "frafalt": 17,
        "frafalt1": 19,
-       "frafalt2": 19
+       "frafalt2": 19,
+       "inst": {
+        "fullfortNormert": 65,
+        "fullfort1": 77,
+        "fullfort2": 81,
+        "frafalt": 16,
+        "frafalt2": 16
+       },
+       "sektor": {
+        "fullfortNormert": 65,
+        "fullfort1": 81,
+        "fullfort2": 88,
+        "frafalt": 5,
+        "frafalt2": 3
+       }
       },
       {
        "aar": 2021,
@@ -2812,7 +3988,21 @@
        "studerer2": 0,
        "frafalt": 16,
        "frafalt1": 17,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 41,
+        "fullfort1": 48,
+        "fullfort2": 0,
+        "frafalt": 16,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 41,
+        "fullfort1": 52,
+        "fullfort2": 0,
+        "frafalt": 8,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2022,
@@ -2829,7 +4019,21 @@
        "studerer2": 0,
        "frafalt": 14,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 61,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 16,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 62,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 8,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -2968,9 +4172,23 @@
        "studerer": 13,
        "studerer1": 11,
        "studerer2": 9,
-       "frafalt": 3,
-       "frafalt1": 3,
-       "frafalt2": 4
+       "frafalt": 4,
+       "frafalt1": 4,
+       "frafalt2": 5,
+       "inst": {
+        "fullfortNormert": 9,
+        "fullfort1": 11,
+        "fullfort2": 12,
+        "frafalt": 12,
+        "frafalt2": 11
+       },
+       "sektor": {
+        "fullfortNormert": 9,
+        "fullfort1": 12,
+        "fullfort2": 15,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2015,
@@ -2982,12 +4200,26 @@
        "fullfortNormertKvinner": 13,
        "fullfort1": 18,
        "fullfort2": 18,
-       "studerer": 5,
-       "studerer1": 4,
+       "studerer": 7,
+       "studerer1": 6,
        "studerer2": 4,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 3
+       "frafalt2": 4,
+       "inst": {
+        "fullfortNormert": 17,
+        "fullfort1": 18,
+        "fullfort2": 18,
+        "frafalt": 6,
+        "frafalt2": 8
+       },
+       "sektor": {
+        "fullfortNormert": 17,
+        "fullfort1": 20,
+        "fullfort2": 21,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2016,
@@ -3001,10 +4233,24 @@
        "fullfort2": 20,
        "studerer": 18,
        "studerer1": 8,
-       "studerer2": 5,
-       "frafalt": 0,
-       "frafalt1": 0,
-       "frafalt2": 0
+       "studerer2": 7,
+       "frafalt": 3,
+       "frafalt1": 3,
+       "frafalt2": 3,
+       "inst": {
+        "fullfortNormert": 9,
+        "fullfort1": 19,
+        "fullfort2": 20,
+        "frafalt": 5,
+        "frafalt2": 6
+       },
+       "sektor": {
+        "fullfortNormert": 9,
+        "fullfort1": 20,
+        "fullfort2": 21,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2017,
@@ -3018,10 +4264,24 @@
        "fullfort2": 14,
        "studerer": 13,
        "studerer1": 8,
-       "studerer2": 0,
-       "frafalt": 0,
-       "frafalt1": 0,
-       "frafalt2": 8
+       "studerer2": 3,
+       "frafalt": 4,
+       "frafalt1": 4,
+       "frafalt2": 8,
+       "inst": {
+        "fullfortNormert": 8,
+        "fullfort1": 13,
+        "fullfort2": 14,
+        "frafalt": 7,
+        "frafalt2": 9
+       },
+       "sektor": {
+        "fullfortNormert": 8,
+        "fullfort1": 14,
+        "fullfort2": 15,
+        "frafalt": 3,
+        "frafalt2": 7
+       }
       },
       {
        "aar": 2018,
@@ -3029,16 +4289,30 @@
        "nivaa": "B3",
        "startkull": 23,
        "startkullKvinner": 15,
-       "fullfortNormert": 4,
+       "fullfortNormert": 5,
        "fullfortNormertKvinner": 4,
        "fullfort1": 12,
        "fullfort2": 13,
        "studerer": 15,
-       "studerer1": 6,
-       "studerer2": 6,
-       "frafalt": 0,
-       "frafalt1": 0,
-       "frafalt2": 0
+       "studerer1": 8,
+       "studerer2": 7,
+       "frafalt": 3,
+       "frafalt1": 3,
+       "frafalt2": 3,
+       "inst": {
+        "fullfortNormert": 5,
+        "fullfort1": 13,
+        "fullfort2": 15,
+        "frafalt": 9,
+        "frafalt2": 8
+       },
+       "sektor": {
+        "fullfortNormert": 5,
+        "fullfort1": 14,
+        "fullfort2": 17,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2019,
@@ -3055,7 +4329,21 @@
        "studerer2": 7,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 20,
+        "fullfort1": 20,
+        "fullfort2": 21,
+        "frafalt": 6,
+        "frafalt2": 7
+       },
+       "sektor": {
+        "fullfortNormert": 20,
+        "fullfort1": 20,
+        "fullfort2": 23,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2020,
@@ -3070,9 +4358,23 @@
        "studerer": 11,
        "studerer1": 8,
        "studerer2": 6,
-       "frafalt": 3,
-       "frafalt1": 0,
-       "frafalt2": 6
+       "frafalt": 5,
+       "frafalt1": 4,
+       "frafalt2": 6,
+       "inst": {
+        "fullfortNormert": 17,
+        "fullfort1": 21,
+        "fullfort2": 22,
+        "frafalt": 9,
+        "frafalt2": 10
+       },
+       "sektor": {
+        "fullfortNormert": 17,
+        "fullfort1": 21,
+        "fullfort2": 23,
+        "frafalt": 5,
+        "frafalt2": 5
+       }
       },
       {
        "aar": 2021,
@@ -3087,9 +4389,23 @@
        "studerer": 10,
        "studerer1": 9,
        "studerer2": 0,
-       "frafalt": 0,
-       "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt": 3,
+       "frafalt1": 3,
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 28,
+        "fullfort1": 30,
+        "fullfort2": 0,
+        "frafalt": 8,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 30,
+        "fullfort1": 33,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2022,
@@ -3104,9 +4420,23 @@
        "studerer": 14,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 0,
+       "frafalt": 3,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 16,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 13,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 16,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -3242,12 +4572,26 @@
        "fullfortNormertKvinner": 4,
        "fullfort1": 14,
        "fullfort2": 14,
-       "studerer": 0,
+       "studerer": 3,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
-       "frafalt1": 0,
-       "frafalt2": 3
+       "frafalt1": 3,
+       "frafalt2": 3,
+       "inst": {
+        "fullfortNormert": 13,
+        "fullfort1": 14,
+        "fullfort2": 14,
+        "frafalt": 0,
+        "frafalt2": 4
+       },
+       "sektor": {
+        "fullfortNormert": 13,
+        "fullfort1": 14,
+        "fullfort2": 14,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2018,
@@ -3260,11 +4604,25 @@
        "fullfort1": 14,
        "fullfort2": 15,
        "studerer": 10,
-       "studerer1": 3,
-       "studerer2": 0,
-       "frafalt": 4,
-       "frafalt1": 4,
-       "frafalt2": 5
+       "studerer1": 5,
+       "studerer2": 3,
+       "frafalt": 6,
+       "frafalt1": 6,
+       "frafalt2": 7,
+       "inst": {
+        "fullfortNormert": 9,
+        "fullfort1": 14,
+        "fullfort2": 15,
+        "frafalt": 8,
+        "frafalt2": 9
+       },
+       "sektor": {
+        "fullfortNormert": 9,
+        "fullfort1": 15,
+        "fullfort2": 16,
+        "frafalt": 4,
+        "frafalt2": 4
+       }
       },
       {
        "aar": 2019,
@@ -3277,11 +4635,25 @@
        "fullfort1": 20,
        "fullfort2": 20,
        "studerer": 7,
-       "studerer1": 0,
+       "studerer1": 3,
        "studerer2": 0,
-       "frafalt": 4,
-       "frafalt1": 4,
-       "frafalt2": 9
+       "frafalt": 6,
+       "frafalt1": 6,
+       "frafalt2": 9,
+       "inst": {
+        "fullfortNormert": 16,
+        "fullfort1": 20,
+        "fullfort2": 20,
+        "frafalt": 9,
+        "frafalt2": 8
+       },
+       "sektor": {
+        "fullfortNormert": 16,
+        "fullfort1": 25,
+        "fullfort2": 25,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2020,
@@ -3294,11 +4666,25 @@
        "fullfort1": 13,
        "fullfort2": 15,
        "studerer": 10,
-       "studerer1": 3,
+       "studerer1": 5,
        "studerer2": 0,
        "frafalt": 12,
        "frafalt1": 13,
-       "frafalt2": 14
+       "frafalt2": 14,
+       "inst": {
+        "fullfortNormert": 9,
+        "fullfort1": 13,
+        "fullfort2": 15,
+        "frafalt": 11,
+        "frafalt2": 11
+       },
+       "sektor": {
+        "fullfortNormert": 9,
+        "fullfort1": 13,
+        "fullfort2": 15,
+        "frafalt": 9,
+        "frafalt2": 8
+       }
       },
       {
        "aar": 2021,
@@ -3310,12 +4696,26 @@
        "fullfortNormertKvinner": 5,
        "fullfort1": 16,
        "fullfort2": 0,
-       "studerer": 7,
-       "studerer1": 6,
+       "studerer": 9,
+       "studerer1": 7,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 14,
+        "fullfort1": 16,
+        "fullfort2": 0,
+        "frafalt": 5,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 14,
+        "fullfort1": 18,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2022,
@@ -3327,12 +4727,26 @@
        "fullfortNormertKvinner": 7,
        "fullfort1": 0,
        "fullfort2": 0,
-       "studerer": 3,
+       "studerer": 5,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 3,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 18,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 3,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 18,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -3470,12 +4884,26 @@
        "fullfortNormertKvinner": 3,
        "fullfort1": 11,
        "fullfort2": 11,
-       "studerer": 9,
-       "studerer1": 5,
-       "studerer2": 7,
+       "studerer": 11,
+       "studerer1": 6,
+       "studerer2": 8,
        "frafalt": 12,
        "frafalt1": 16,
-       "frafalt2": 14
+       "frafalt2": 14,
+       "inst": {
+        "fullfortNormert": 10,
+        "fullfort1": 13,
+        "fullfort2": 13,
+        "frafalt": 18,
+        "frafalt2": 18
+       },
+       "sektor": {
+        "fullfortNormert": 13,
+        "fullfort1": 18,
+        "fullfort2": 18,
+        "frafalt": 6,
+        "frafalt2": 8
+       }
       },
       {
        "aar": 2015,
@@ -3488,11 +4916,25 @@
        "fullfort1": 12,
        "fullfort2": 13,
        "studerer": 18,
-       "studerer1": 11,
-       "studerer2": 9,
+       "studerer1": 13,
+       "studerer2": 11,
        "frafalt": 7,
        "frafalt1": 8,
-       "frafalt2": 9
+       "frafalt2": 9,
+       "inst": {
+        "fullfortNormert": 8,
+        "fullfort1": 13,
+        "fullfort2": 14,
+        "frafalt": 17,
+        "frafalt2": 19
+       },
+       "sektor": {
+        "fullfortNormert": 9,
+        "fullfort1": 16,
+        "fullfort2": 17,
+        "frafalt": 0,
+        "frafalt2": 4
+       }
       },
       {
        "aar": 2016,
@@ -3507,9 +4949,23 @@
        "studerer": 15,
        "studerer1": 12,
        "studerer2": 10,
-       "frafalt": 3,
-       "frafalt1": 4,
-       "frafalt2": 5
+       "frafalt": 4,
+       "frafalt1": 6,
+       "frafalt2": 6,
+       "inst": {
+        "fullfortNormert": 13,
+        "fullfort1": 14,
+        "fullfort2": 16,
+        "frafalt": 13,
+        "frafalt2": 14
+       },
+       "sektor": {
+        "fullfortNormert": 15,
+        "fullfort1": 20,
+        "fullfort2": 23,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2017,
@@ -3521,12 +4977,26 @@
        "fullfortNormertKvinner": 6,
        "fullfort1": 16,
        "fullfort2": 17,
-       "studerer": 5,
+       "studerer": 7,
        "studerer1": 4,
        "studerer2": 3,
        "frafalt": 14,
        "frafalt1": 16,
-       "frafalt2": 16
+       "frafalt2": 16,
+       "inst": {
+        "fullfortNormert": 15,
+        "fullfort1": 16,
+        "fullfort2": 17,
+        "frafalt": 18,
+        "frafalt2": 19
+       },
+       "sektor": {
+        "fullfortNormert": 15,
+        "fullfort1": 19,
+        "fullfort2": 23,
+        "frafalt": 5,
+        "frafalt2": 6
+       }
       },
       {
        "aar": 2018,
@@ -3541,9 +5011,23 @@
        "studerer": 8,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 0,
+       "frafalt": 4,
        "frafalt1": 7,
-       "frafalt2": 8
+       "frafalt2": 8,
+       "inst": {
+        "fullfortNormert": 20,
+        "fullfort1": 23,
+        "fullfort2": 23,
+        "frafalt": 5,
+        "frafalt2": 7
+       },
+       "sektor": {
+        "fullfortNormert": 20,
+        "fullfort1": 23,
+        "fullfort2": 23,
+        "frafalt": 0,
+        "frafalt2": 4
+       }
       },
       {
        "aar": 2019,
@@ -3555,12 +5039,26 @@
        "fullfortNormertKvinner": 10,
        "fullfort1": 18,
        "fullfort2": 20,
-       "studerer": 9,
-       "studerer1": 7,
-       "studerer2": 4,
-       "frafalt": 6,
+       "studerer": 11,
+       "studerer1": 8,
+       "studerer2": 5,
+       "frafalt": 8,
        "frafalt1": 10,
-       "frafalt2": 11
+       "frafalt2": 11,
+       "inst": {
+        "fullfortNormert": 20,
+        "fullfort1": 21,
+        "fullfort2": 23,
+        "frafalt": 11,
+        "frafalt2": 13
+       },
+       "sektor": {
+        "fullfortNormert": 21,
+        "fullfort1": 23,
+        "fullfort2": 28,
+        "frafalt": 3,
+        "frafalt2": 6
+       }
       },
       {
        "aar": 2020,
@@ -3572,12 +5070,26 @@
        "fullfortNormertKvinner": 6,
        "fullfort1": 14,
        "fullfort2": 14,
-       "studerer": 5,
-       "studerer1": 4,
-       "studerer2": 4,
+       "studerer": 6,
+       "studerer1": 5,
+       "studerer2": 5,
        "frafalt": 11,
        "frafalt1": 11,
-       "frafalt2": 11
+       "frafalt2": 11,
+       "inst": {
+        "fullfortNormert": 13,
+        "fullfort1": 15,
+        "fullfort2": 15,
+        "frafalt": 13,
+        "frafalt2": 13
+       },
+       "sektor": {
+        "fullfortNormert": 14,
+        "fullfort1": 16,
+        "fullfort2": 17,
+        "frafalt": 5,
+        "frafalt2": 5
+       }
       },
       {
        "aar": 2021,
@@ -3589,12 +5101,26 @@
        "fullfortNormertKvinner": 7,
        "fullfort1": 12,
        "fullfort2": 0,
-       "studerer": 7,
-       "studerer1": 0,
+       "studerer": 9,
+       "studerer1": 4,
        "studerer2": 0,
        "frafalt": 10,
        "frafalt1": 10,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 7,
+        "fullfort1": 12,
+        "fullfort2": 0,
+        "frafalt": 11,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 7,
+        "fullfort1": 13,
+        "fullfort2": 0,
+        "frafalt": 8,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2022,
@@ -3606,12 +5132,26 @@
        "fullfortNormertKvinner": 8,
        "fullfort1": 0,
        "fullfort2": 0,
-       "studerer": 6,
+       "studerer": 8,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 5,
+       "frafalt": 7,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 15,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 9,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 16,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 4,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -3750,9 +5290,23 @@
        "studerer": 10,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 6,
-       "frafalt1": 9,
-       "frafalt2": 9
+       "frafalt": 8,
+       "frafalt1": 11,
+       "frafalt2": 11,
+       "inst": {
+        "fullfortNormert": 12,
+        "fullfort1": 17,
+        "fullfort2": 17,
+        "frafalt": 9,
+        "frafalt2": 11
+       },
+       "sektor": {
+        "fullfortNormert": 12,
+        "fullfort1": 18,
+        "fullfort2": 20,
+        "frafalt": 5,
+        "frafalt2": 7
+       }
       },
       {
        "aar": 2018,
@@ -3767,9 +5321,23 @@
        "studerer": 9,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 0,
+       "frafalt": 4,
        "frafalt1": 8,
-       "frafalt2": 8
+       "frafalt2": 8,
+       "inst": {
+        "fullfortNormert": 14,
+        "fullfort1": 18,
+        "fullfort2": 19,
+        "frafalt": 5,
+        "frafalt2": 8
+       },
+       "sektor": {
+        "fullfortNormert": 15,
+        "fullfort1": 19,
+        "fullfort2": 20,
+        "frafalt": 0,
+        "frafalt2": 4
+       }
       },
       {
        "aar": 2019,
@@ -3782,11 +5350,25 @@
        "fullfort1": 22,
        "fullfort2": 24,
        "studerer": 10,
-       "studerer1": 5,
-       "studerer2": 0,
-       "frafalt": 8,
-       "frafalt1": 10,
-       "frafalt2": 12
+       "studerer1": 7,
+       "studerer2": 3,
+       "frafalt": 9,
+       "frafalt1": 11,
+       "frafalt2": 13,
+       "inst": {
+        "fullfortNormert": 21,
+        "fullfort1": 22,
+        "fullfort2": 24,
+        "frafalt": 10,
+        "frafalt2": 12
+       },
+       "sektor": {
+        "fullfortNormert": 21,
+        "fullfort1": 23,
+        "fullfort2": 25,
+        "frafalt": 6,
+        "frafalt2": 9
+       }
       },
       {
        "aar": 2020,
@@ -3799,11 +5381,25 @@
        "fullfort1": 17,
        "fullfort2": 21,
        "studerer": 14,
-       "studerer1": 5,
-       "studerer2": 0,
+       "studerer1": 7,
+       "studerer2": 3,
        "frafalt": 10,
        "frafalt1": 11,
-       "frafalt2": 11
+       "frafalt2": 11,
+       "inst": {
+        "fullfortNormert": 11,
+        "fullfort1": 18,
+        "fullfort2": 22,
+        "frafalt": 10,
+        "frafalt2": 11
+       },
+       "sektor": {
+        "fullfortNormert": 11,
+        "fullfort1": 19,
+        "fullfort2": 24,
+        "frafalt": 5,
+        "frafalt2": 4
+       }
       },
       {
        "aar": 2021,
@@ -3815,12 +5411,26 @@
        "fullfortNormertKvinner": 7,
        "fullfort1": 21,
        "fullfort2": 0,
-       "studerer": 8,
+       "studerer": 9,
        "studerer1": 4,
        "studerer2": 0,
        "frafalt": 10,
        "frafalt1": 13,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 19,
+        "fullfort1": 22,
+        "fullfort2": 0,
+        "frafalt": 11,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 19,
+        "fullfort1": 25,
+        "fullfort2": 0,
+        "frafalt": 7,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2022,
@@ -3832,12 +5442,26 @@
        "fullfortNormertKvinner": 6,
        "fullfort1": 0,
        "fullfort2": 0,
-       "studerer": 5,
+       "studerer": 6,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 11,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 15,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 11,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 16,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 7,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -3966,8 +5590,22 @@
        "studerer1": 24,
        "studerer2": 15,
        "frafalt": 19,
-       "frafalt1": 17,
-       "frafalt2": 21
+       "frafalt1": 19,
+       "frafalt2": 21,
+       "inst": {
+        "fullfortNormert": 56,
+        "fullfort1": 67,
+        "fullfort2": 77,
+        "frafalt": 24,
+        "frafalt2": 26
+       },
+       "sektor": {
+        "fullfortNormert": 57,
+        "fullfort1": 69,
+        "fullfort2": 79,
+        "frafalt": 14,
+        "frafalt2": 13
+       }
       },
       {
        "aar": 2020,
@@ -3984,7 +5622,21 @@
        "studerer2": 25,
        "frafalt": 20,
        "frafalt1": 23,
-       "frafalt2": 30
+       "frafalt2": 30,
+       "inst": {
+        "fullfortNormert": 89,
+        "fullfort1": 99,
+        "fullfort2": 100,
+        "frafalt": 37,
+        "frafalt2": 44
+       },
+       "sektor": {
+        "fullfortNormert": 91,
+        "fullfort1": 108,
+        "fullfort2": 110,
+        "frafalt": 11,
+        "frafalt2": 18
+       }
       },
       {
        "aar": 2021,
@@ -4001,7 +5653,21 @@
        "studerer2": 0,
        "frafalt": 20,
        "frafalt1": 26,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 75,
+        "fullfort1": 88,
+        "fullfort2": 0,
+        "frafalt": 24,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 75,
+        "fullfort1": 91,
+        "fullfort2": 0,
+        "frafalt": 9,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2022,
@@ -4018,7 +5684,21 @@
        "studerer2": 0,
        "frafalt": 26,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 72,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 30,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 72,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 14,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -4125,8 +5805,22 @@
        "studerer1": 24,
        "studerer2": 15,
        "frafalt": 19,
-       "frafalt1": 17,
-       "frafalt2": 21
+       "frafalt1": 19,
+       "frafalt2": 21,
+       "inst": {
+        "fullfortNormert": 56,
+        "fullfort1": 67,
+        "fullfort2": 77,
+        "frafalt": 24,
+        "frafalt2": 26
+       },
+       "sektor": {
+        "fullfortNormert": 57,
+        "fullfort1": 69,
+        "fullfort2": 79,
+        "frafalt": 14,
+        "frafalt2": 13
+       }
       },
       {
        "aar": 2020,
@@ -4143,7 +5837,21 @@
        "studerer2": 25,
        "frafalt": 20,
        "frafalt1": 23,
-       "frafalt2": 30
+       "frafalt2": 30,
+       "inst": {
+        "fullfortNormert": 89,
+        "fullfort1": 99,
+        "fullfort2": 100,
+        "frafalt": 37,
+        "frafalt2": 44
+       },
+       "sektor": {
+        "fullfortNormert": 91,
+        "fullfort1": 108,
+        "fullfort2": 110,
+        "frafalt": 11,
+        "frafalt2": 18
+       }
       },
       {
        "aar": 2021,
@@ -4160,7 +5868,21 @@
        "studerer2": 0,
        "frafalt": 20,
        "frafalt1": 26,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 75,
+        "fullfort1": 88,
+        "fullfort2": 0,
+        "frafalt": 24,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 75,
+        "fullfort1": 91,
+        "fullfort2": 0,
+        "frafalt": 9,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2022,
@@ -4177,7 +5899,21 @@
        "studerer2": 0,
        "frafalt": 26,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 72,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 30,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 72,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 14,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -4284,8 +6020,22 @@
        "studerer1": 24,
        "studerer2": 15,
        "frafalt": 19,
-       "frafalt1": 17,
-       "frafalt2": 21
+       "frafalt1": 19,
+       "frafalt2": 21,
+       "inst": {
+        "fullfortNormert": 56,
+        "fullfort1": 67,
+        "fullfort2": 77,
+        "frafalt": 24,
+        "frafalt2": 26
+       },
+       "sektor": {
+        "fullfortNormert": 57,
+        "fullfort1": 69,
+        "fullfort2": 79,
+        "frafalt": 14,
+        "frafalt2": 13
+       }
       },
       {
        "aar": 2020,
@@ -4302,7 +6052,21 @@
        "studerer2": 25,
        "frafalt": 20,
        "frafalt1": 23,
-       "frafalt2": 30
+       "frafalt2": 30,
+       "inst": {
+        "fullfortNormert": 89,
+        "fullfort1": 99,
+        "fullfort2": 100,
+        "frafalt": 37,
+        "frafalt2": 44
+       },
+       "sektor": {
+        "fullfortNormert": 91,
+        "fullfort1": 108,
+        "fullfort2": 110,
+        "frafalt": 11,
+        "frafalt2": 18
+       }
       },
       {
        "aar": 2021,
@@ -4319,7 +6083,21 @@
        "studerer2": 0,
        "frafalt": 20,
        "frafalt1": 26,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 75,
+        "fullfort1": 88,
+        "fullfort2": 0,
+        "frafalt": 24,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 75,
+        "fullfort1": 91,
+        "fullfort2": 0,
+        "frafalt": 9,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2022,
@@ -4336,7 +6114,21 @@
        "studerer2": 0,
        "frafalt": 26,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 72,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 30,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 72,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 14,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -4441,10 +6233,24 @@
        "fullfort2": 60,
        "studerer": 27,
        "studerer1": 13,
-       "studerer2": 5,
-       "frafalt": 22,
+       "studerer2": 6,
+       "frafalt": 24,
        "frafalt1": 28,
-       "frafalt2": 31
+       "frafalt2": 31,
+       "inst": {
+        "fullfortNormert": 46,
+        "fullfort1": 58,
+        "fullfort2": 62,
+        "frafalt": 24,
+        "frafalt2": 28
+       },
+       "sektor": {
+        "fullfortNormert": 46,
+        "fullfort1": 59,
+        "fullfort2": 63,
+        "frafalt": 20,
+        "frafalt2": 23
+       }
       },
       {
        "aar": 2015,
@@ -4457,11 +6263,25 @@
        "fullfort1": 61,
        "fullfort2": 62,
        "studerer": 22,
-       "studerer1": 7,
-       "studerer2": 5,
+       "studerer1": 9,
+       "studerer2": 7,
        "frafalt": 14,
        "frafalt1": 17,
-       "frafalt2": 18
+       "frafalt2": 18,
+       "inst": {
+        "fullfortNormert": 52,
+        "fullfort1": 63,
+        "fullfort2": 64,
+        "frafalt": 18,
+        "frafalt2": 22
+       },
+       "sektor": {
+        "fullfortNormert": 53,
+        "fullfort1": 65,
+        "fullfort2": 67,
+        "frafalt": 8,
+        "frafalt2": 11
+       }
       },
       {
        "aar": 2016,
@@ -4474,11 +6294,25 @@
        "fullfort1": 52,
        "fullfort2": 55,
        "studerer": 16,
-       "studerer1": 7,
+       "studerer1": 8,
        "studerer2": 4,
-       "frafalt": 13,
-       "frafalt1": 14,
-       "frafalt2": 17
+       "frafalt": 14,
+       "frafalt1": 16,
+       "frafalt2": 17,
+       "inst": {
+        "fullfortNormert": 46,
+        "fullfort1": 52,
+        "fullfort2": 57,
+        "frafalt": 14,
+        "frafalt2": 16
+       },
+       "sektor": {
+        "fullfortNormert": 46,
+        "fullfort1": 54,
+        "fullfort2": 60,
+        "frafalt": 11,
+        "frafalt2": 10
+       }
       },
       {
        "aar": 2017,
@@ -4493,9 +6327,23 @@
        "studerer": 21,
        "studerer1": 12,
        "studerer2": 8,
-       "frafalt": 7,
+       "frafalt": 9,
        "frafalt1": 12,
-       "frafalt2": 15
+       "frafalt2": 15,
+       "inst": {
+        "fullfortNormert": 38,
+        "fullfort1": 47,
+        "fullfort2": 48,
+        "frafalt": 11,
+        "frafalt2": 14
+       },
+       "sektor": {
+        "fullfortNormert": 39,
+        "fullfort1": 48,
+        "fullfort2": 51,
+        "frafalt": 8,
+        "frafalt2": 8
+       }
       },
       {
        "aar": 2018,
@@ -4508,11 +6356,25 @@
        "fullfort1": 34,
        "fullfort2": 35,
        "studerer": 19,
-       "studerer1": 7,
-       "studerer2": 4,
-       "frafalt": 9,
-       "frafalt1": 9,
-       "frafalt2": 14
+       "studerer1": 9,
+       "studerer2": 5,
+       "frafalt": 10,
+       "frafalt1": 11,
+       "frafalt2": 14,
+       "inst": {
+        "fullfortNormert": 25,
+        "fullfort1": 35,
+        "fullfort2": 36,
+        "frafalt": 10,
+        "frafalt2": 13
+       },
+       "sektor": {
+        "fullfortNormert": 25,
+        "fullfort1": 37,
+        "fullfort2": 38,
+        "frafalt": 6,
+        "frafalt2": 10
+       }
       },
       {
        "aar": 2019,
@@ -4527,9 +6389,23 @@
        "studerer": 12,
        "studerer1": 8,
        "studerer2": 6,
-       "frafalt": 10,
-       "frafalt1": 11,
-       "frafalt2": 12
+       "frafalt": 11,
+       "frafalt1": 12,
+       "frafalt2": 13,
+       "inst": {
+        "fullfortNormert": 30,
+        "fullfort1": 33,
+        "fullfort2": 34,
+        "frafalt": 12,
+        "frafalt2": 13
+       },
+       "sektor": {
+        "fullfortNormert": 30,
+        "fullfort1": 34,
+        "fullfort2": 35,
+        "frafalt": 7,
+        "frafalt2": 8
+       }
       },
       {
        "aar": 2020,
@@ -4541,12 +6417,26 @@
        "fullfortNormertKvinner": 7,
        "fullfort1": 22,
        "fullfort2": 22,
-       "studerer": 14,
-       "studerer1": 7,
+       "studerer": 16,
+       "studerer1": 8,
        "studerer2": 3,
        "frafalt": 11,
        "frafalt1": 16,
-       "frafalt2": 21
+       "frafalt2": 21,
+       "inst": {
+        "fullfortNormert": 19,
+        "fullfort1": 24,
+        "fullfort2": 25,
+        "frafalt": 13,
+        "frafalt2": 19
+       },
+       "sektor": {
+        "fullfortNormert": 19,
+        "fullfort1": 25,
+        "fullfort2": 26,
+        "frafalt": 9,
+        "frafalt2": 15
+       }
       },
       {
        "aar": 2021,
@@ -4563,7 +6453,21 @@
        "studerer2": 0,
        "frafalt": 29,
        "frafalt1": 32,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 13,
+        "fullfort1": 24,
+        "fullfort2": 0,
+        "frafalt": 24,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 13,
+        "fullfort1": 26,
+        "fullfort2": 0,
+        "frafalt": 17,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2022,
@@ -4575,12 +6479,26 @@
        "fullfortNormertKvinner": 4,
        "fullfort1": 0,
        "fullfort2": 0,
-       "studerer": 13,
+       "studerer": 15,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 7,
+       "frafalt": 9,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 15,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 11,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 15,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 5,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -4820,16 +6738,30 @@
        "nivaa": "M2",
        "startkull": 16,
        "startkullKvinner": 3,
-       "fullfortNormert": 10,
+       "fullfortNormert": 12,
        "fullfortNormertKvinner": 0,
-       "fullfort1": 11,
-       "fullfort2": 11,
-       "studerer": 0,
+       "fullfort1": 13,
+       "fullfort2": 13,
+       "studerer": 3,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 3,
+       "inst": {
+        "fullfortNormert": 13,
+        "fullfort1": 14,
+        "fullfort2": 14,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 13,
+        "fullfort1": 14,
+        "fullfort2": 14,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2015,
@@ -4841,12 +6773,26 @@
        "fullfortNormertKvinner": 5,
        "fullfort1": 15,
        "fullfort2": 15,
-       "studerer": 4,
+       "studerer": 5,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 4,
-       "frafalt2": 3
+       "frafalt2": 4,
+       "inst": {
+        "fullfortNormert": 15,
+        "fullfort1": 17,
+        "fullfort2": 18,
+        "frafalt": 3,
+        "frafalt2": 3
+       },
+       "sektor": {
+        "fullfortNormert": 16,
+        "fullfort1": 18,
+        "fullfort2": 19,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2016,
@@ -4863,7 +6809,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 18,
+        "fullfort1": 19,
+        "fullfort2": 19,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 18,
+        "fullfort1": 19,
+        "fullfort2": 19,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2017,
@@ -4880,7 +6840,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 9,
+        "fullfort1": 9,
+        "fullfort2": 9,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 9,
+        "fullfort1": 9,
+        "fullfort2": 9,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2018,
@@ -4892,12 +6866,26 @@
        "fullfortNormertKvinner": 4,
        "fullfort1": 15,
        "fullfort2": 15,
-       "studerer": 3,
+       "studerer": 4,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 3,
+       "inst": {
+        "fullfortNormert": 14,
+        "fullfort1": 15,
+        "fullfort2": 15,
+        "frafalt": 0,
+        "frafalt2": 3
+       },
+       "sektor": {
+        "fullfortNormert": 14,
+        "fullfort1": 15,
+        "fullfort2": 15,
+        "frafalt": 0,
+        "frafalt2": 3
+       }
       },
       {
        "aar": 2019,
@@ -4909,29 +6897,57 @@
        "fullfortNormertKvinner": 6,
        "fullfort1": 17,
        "fullfort2": 17,
-       "studerer": 3,
+       "studerer": 4,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 3,
-       "frafalt1": 4,
-       "frafalt2": 3
+       "frafalt1": 6,
+       "frafalt2": 5,
+       "inst": {
+        "fullfortNormert": 17,
+        "fullfort1": 18,
+        "fullfort2": 18,
+        "frafalt": 3,
+        "frafalt2": 4
+       },
+       "sektor": {
+        "fullfortNormert": 17,
+        "fullfort1": 18,
+        "fullfort2": 18,
+        "frafalt": 3,
+        "frafalt2": 4
+       }
       },
       {
        "aar": 2020,
        "normertAar": 2022,
        "nivaa": "M2",
-       "startkull": 9,
+       "startkull": 11,
        "startkullKvinner": 0,
-       "fullfortNormert": 5,
+       "fullfortNormert": 6,
        "fullfortNormertKvinner": 0,
-       "fullfort1": 5,
-       "fullfort2": 5,
+       "fullfort1": 6,
+       "fullfort2": 6,
        "studerer": 0,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 3,
        "frafalt1": 4,
-       "frafalt2": 4
+       "frafalt2": 4,
+       "inst": {
+        "fullfortNormert": 6,
+        "fullfort1": 6,
+        "fullfort2": 6,
+        "frafalt": 3,
+        "frafalt2": 4
+       },
+       "sektor": {
+        "fullfortNormert": 6,
+        "fullfort1": 6,
+        "fullfort2": 6,
+        "frafalt": 3,
+        "frafalt2": 4
+       }
       },
       {
        "aar": 2021,
@@ -4946,15 +6962,29 @@
        "studerer": 6,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 3,
-       "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt": 4,
+       "frafalt1": 3,
+       "frafalt2": 3,
+       "inst": {
+        "fullfortNormert": 14,
+        "fullfort1": 19,
+        "fullfort2": 20,
+        "frafalt": 4,
+        "frafalt2": 3
+       },
+       "sektor": {
+        "fullfortNormert": 14,
+        "fullfort1": 19,
+        "fullfort2": 20,
+        "frafalt": 4,
+        "frafalt2": 3
+       }
       },
       {
        "aar": 2022,
        "normertAar": 2024,
        "nivaa": "M2",
-       "startkull": 8,
+       "startkull": 10,
        "startkullKvinner": 0,
        "fullfortNormert": 8,
        "fullfortNormertKvinner": 0,
@@ -4965,7 +6995,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 8,
+        "fullfort1": 8,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 8,
+        "fullfort1": 8,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2023,
@@ -4977,12 +7021,26 @@
        "fullfortNormertKvinner": 4,
        "fullfort1": 0,
        "fullfort2": 0,
-       "studerer": 0,
+       "studerer": 3,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 13,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 13,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -5170,9 +7228,23 @@
        "studerer": 11,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 0,
-       "frafalt1": 3,
-       "frafalt2": 3
+       "frafalt": 3,
+       "frafalt1": 5,
+       "frafalt2": 5,
+       "inst": {
+        "fullfortNormert": 18,
+        "fullfort1": 26,
+        "fullfort2": 27,
+        "frafalt": 3,
+        "frafalt2": 5
+       },
+       "sektor": {
+        "fullfortNormert": 18,
+        "fullfort1": 27,
+        "fullfort2": 28,
+        "frafalt": 0,
+        "frafalt2": 4
+       }
       },
       {
        "aar": 2015,
@@ -5184,12 +7256,26 @@
        "fullfortNormertKvinner": 8,
        "fullfort1": 18,
        "fullfort2": 18,
-       "studerer": 5,
+       "studerer": 7,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 4,
-       "frafalt1": 6,
-       "frafalt2": 6
+       "frafalt": 5,
+       "frafalt1": 7,
+       "frafalt2": 7,
+       "inst": {
+        "fullfortNormert": 16,
+        "fullfort1": 20,
+        "fullfort2": 20,
+        "frafalt": 5,
+        "frafalt2": 5
+       },
+       "sektor": {
+        "fullfortNormert": 17,
+        "fullfort1": 21,
+        "fullfort2": 21,
+        "frafalt": 3,
+        "frafalt2": 4
+       }
       },
       {
        "aar": 2016,
@@ -5201,12 +7287,26 @@
        "fullfortNormertKvinner": 12,
        "fullfort1": 21,
        "fullfort2": 21,
-       "studerer": 0,
+       "studerer": 3,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 18,
+        "fullfort1": 21,
+        "fullfort2": 21,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 18,
+        "fullfort1": 21,
+        "fullfort2": 21,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2017,
@@ -5218,12 +7318,26 @@
        "fullfortNormertKvinner": 4,
        "fullfort1": 9,
        "fullfort2": 10,
-       "studerer": 3,
+       "studerer": 5,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 3,
-       "frafalt1": 5,
-       "frafalt2": 4
+       "frafalt": 4,
+       "frafalt1": 6,
+       "frafalt2": 6,
+       "inst": {
+        "fullfortNormert": 9,
+        "fullfort1": 11,
+        "fullfort2": 12,
+        "frafalt": 3,
+        "frafalt2": 5
+       },
+       "sektor": {
+        "fullfortNormert": 10,
+        "fullfort1": 12,
+        "fullfort2": 13,
+        "frafalt": 0,
+        "frafalt2": 3
+       }
       },
       {
        "aar": 2018,
@@ -5235,12 +7349,26 @@
        "fullfortNormertKvinner": 13,
        "fullfort1": 24,
        "fullfort2": 24,
-       "studerer": 3,
+       "studerer": 4,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 20,
+        "fullfort1": 24,
+        "fullfort2": 24,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 20,
+        "fullfort1": 24,
+        "fullfort2": 24,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2019,
@@ -5252,29 +7380,57 @@
        "fullfortNormertKvinner": 4,
        "fullfort1": 12,
        "fullfort2": 12,
-       "studerer": 5,
+       "studerer": 6,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 5,
-       "frafalt2": 5
+       "frafalt2": 5,
+       "inst": {
+        "fullfortNormert": 10,
+        "fullfort1": 12,
+        "fullfort2": 12,
+        "frafalt": 0,
+        "frafalt2": 5
+       },
+       "sektor": {
+        "fullfortNormert": 10,
+        "fullfort1": 12,
+        "fullfort2": 12,
+        "frafalt": 0,
+        "frafalt2": 4
+       }
       },
       {
        "aar": 2020,
        "normertAar": 2022,
        "nivaa": "M2",
-       "startkull": 19,
+       "startkull": 20,
        "startkullKvinner": 19,
-       "fullfortNormert": 12,
+       "fullfortNormert": 13,
        "fullfortNormertKvinner": 12,
-       "fullfort1": 17,
-       "fullfort2": 17,
+       "fullfort1": 18,
+       "fullfort2": 18,
        "studerer": 6,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 13,
+        "fullfort1": 18,
+        "fullfort2": 18,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 13,
+        "fullfort1": 18,
+        "fullfort2": 18,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2021,
@@ -5291,7 +7447,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 11,
+        "fullfort1": 12,
+        "fullfort2": 12,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 11,
+        "fullfort1": 12,
+        "fullfort2": 12,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2022,
@@ -5303,12 +7473,26 @@
        "fullfortNormertKvinner": 9,
        "fullfort1": 22,
        "fullfort2": 0,
-       "studerer": 4,
+       "studerer": 6,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 19,
+        "fullfort1": 23,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 19,
+        "fullfort1": 24,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2023,
@@ -5320,12 +7504,26 @@
        "fullfortNormertKvinner": 14,
        "fullfort1": 0,
        "fullfort2": 0,
-       "studerer": 0,
+       "studerer": 4,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 18,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 18,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -5466,7 +7664,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 9,
+        "fullfort1": 13,
+        "fullfort2": 14,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 9,
+        "fullfort1": 13,
+        "fullfort2": 14,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2019,
@@ -5474,7 +7686,7 @@
        "nivaa": "M2",
        "startkull": 21,
        "startkullKvinner": 8,
-       "fullfortNormert": 4,
+       "fullfortNormert": 6,
        "fullfortNormertKvinner": 4,
        "fullfort1": 14,
        "fullfort2": 16,
@@ -5483,7 +7695,21 @@
        "studerer2": 3,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 6,
+        "fullfort1": 14,
+        "fullfort2": 16,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 6,
+        "fullfort1": 14,
+        "fullfort2": 16,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2020,
@@ -5500,7 +7726,21 @@
        "studerer2": 3,
        "frafalt": 12,
        "frafalt1": 13,
-       "frafalt2": 12
+       "frafalt2": 12,
+       "inst": {
+        "fullfortNormert": 13,
+        "fullfort1": 22,
+        "fullfort2": 22,
+        "frafalt": 10,
+        "frafalt2": 10
+       },
+       "sektor": {
+        "fullfortNormert": 13,
+        "fullfort1": 23,
+        "fullfort2": 23,
+        "frafalt": 9,
+        "frafalt2": 10
+       }
       },
       {
        "aar": 2021,
@@ -5508,7 +7748,7 @@
        "nivaa": "M2",
        "startkull": 12,
        "startkullKvinner": 6,
-       "fullfortNormert": 0,
+       "fullfortNormert": 3,
        "fullfortNormertKvinner": 0,
        "fullfort1": 10,
        "fullfort2": 10,
@@ -5517,7 +7757,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 3,
+        "fullfort1": 10,
+        "fullfort2": 10,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 3,
+        "fullfort1": 10,
+        "fullfort2": 10,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2022,
@@ -5525,16 +7779,30 @@
        "nivaa": "M2",
        "startkull": 30,
        "startkullKvinner": 12,
-       "fullfortNormert": 6,
+       "fullfortNormert": 7,
        "fullfortNormertKvinner": 0,
        "fullfort1": 20,
        "fullfort2": 0,
        "studerer": 16,
        "studerer1": 3,
        "studerer2": 0,
-       "frafalt": 6,
-       "frafalt1": 5,
-       "frafalt2": 0
+       "frafalt": 7,
+       "frafalt1": 7,
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 7,
+        "fullfort1": 20,
+        "fullfort2": 0,
+        "frafalt": 7,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 7,
+        "fullfort1": 20,
+        "fullfort2": 0,
+        "frafalt": 6,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2023,
@@ -5551,7 +7819,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 16,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 16,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -5666,11 +7948,25 @@
        "fullfort1": 17,
        "fullfort2": 18,
        "studerer": 9,
-       "studerer1": 0,
+       "studerer1": 3,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 3,
+       "inst": {
+        "fullfortNormert": 12,
+        "fullfort1": 18,
+        "fullfort2": 19,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 12,
+        "fullfort1": 18,
+        "fullfort2": 19,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2015,
@@ -5682,12 +7978,26 @@
        "fullfortNormertKvinner": 9,
        "fullfort1": 18,
        "fullfort2": 18,
-       "studerer": 3,
+       "studerer": 5,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 14,
+        "fullfort1": 18,
+        "fullfort2": 18,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 14,
+        "fullfort1": 18,
+        "fullfort2": 18,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2016,
@@ -5699,12 +8009,26 @@
        "fullfortNormertKvinner": 11,
        "fullfort1": 17,
        "fullfort2": 17,
-       "studerer": 5,
+       "studerer": 7,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 3,
        "frafalt1": 6,
-       "frafalt2": 6
+       "frafalt2": 6,
+       "inst": {
+        "fullfortNormert": 17,
+        "fullfort1": 21,
+        "fullfort2": 21,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 17,
+        "fullfort1": 21,
+        "fullfort2": 21,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2017,
@@ -5716,12 +8040,26 @@
        "fullfortNormertKvinner": 19,
        "fullfort1": 35,
        "fullfort2": 36,
-       "studerer": 6,
+       "studerer": 8,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 30,
+        "fullfort1": 35,
+        "fullfort2": 36,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 30,
+        "fullfort1": 35,
+        "fullfort2": 36,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2018,
@@ -5733,12 +8071,26 @@
        "fullfortNormertKvinner": 5,
        "fullfort1": 11,
        "fullfort2": 12,
-       "studerer": 4,
+       "studerer": 5,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
-       "frafalt1": 0,
-       "frafalt2": 3
+       "frafalt1": 3,
+       "frafalt2": 3,
+       "inst": {
+        "fullfortNormert": 10,
+        "fullfort1": 12,
+        "fullfort2": 13,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 10,
+        "fullfort1": 12,
+        "fullfort2": 13,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2019,
@@ -5750,12 +8102,26 @@
        "fullfortNormertKvinner": 8,
        "fullfort1": 19,
        "fullfort2": 19,
-       "studerer": 6,
-       "studerer1": 0,
+       "studerer": 8,
+       "studerer1": 3,
        "studerer2": 0,
-       "frafalt": 0,
-       "frafalt1": 3,
-       "frafalt2": 7
+       "frafalt": 3,
+       "frafalt1": 5,
+       "frafalt2": 7,
+       "inst": {
+        "fullfortNormert": 16,
+        "fullfort1": 19,
+        "fullfort2": 20,
+        "frafalt": 3,
+        "frafalt2": 5
+       },
+       "sektor": {
+        "fullfortNormert": 16,
+        "fullfort1": 19,
+        "fullfort2": 20,
+        "frafalt": 3,
+        "frafalt2": 5
+       }
       },
       {
        "aar": 2020,
@@ -5770,9 +8136,23 @@
        "studerer": 11,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 3,
+       "frafalt": 5,
        "frafalt1": 7,
-       "frafalt2": 7
+       "frafalt2": 7,
+       "inst": {
+        "fullfortNormert": 21,
+        "fullfort1": 29,
+        "fullfort2": 30,
+        "frafalt": 5,
+        "frafalt2": 7
+       },
+       "sektor": {
+        "fullfortNormert": 21,
+        "fullfort1": 29,
+        "fullfort2": 30,
+        "frafalt": 5,
+        "frafalt2": 7
+       }
       },
       {
        "aar": 2021,
@@ -5788,8 +8168,22 @@
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
-       "frafalt1": 0,
-       "frafalt2": 3
+       "frafalt1": 4,
+       "frafalt2": 5,
+       "inst": {
+        "fullfortNormert": 25,
+        "fullfort1": 30,
+        "fullfort2": 30,
+        "frafalt": 0,
+        "frafalt2": 3
+       },
+       "sektor": {
+        "fullfortNormert": 25,
+        "fullfort1": 31,
+        "fullfort2": 31,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2022,
@@ -5802,11 +8196,25 @@
        "fullfort1": 15,
        "fullfort2": 0,
        "studerer": 7,
-       "studerer1": 0,
+       "studerer1": 3,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 11,
+        "fullfort1": 15,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 11,
+        "fullfort1": 15,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2023,
@@ -5823,7 +8231,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 14,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 14,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -5959,12 +8381,26 @@
        "fullfortNormertKvinner": 9,
        "fullfort1": 17,
        "fullfort2": 17,
-       "studerer": 3,
+       "studerer": 4,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 14,
+        "fullfort1": 17,
+        "fullfort2": 17,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 14,
+        "fullfort1": 17,
+        "fullfort2": 17,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2015,
@@ -5976,12 +8412,26 @@
        "fullfortNormertKvinner": 10,
        "fullfort1": 19,
        "fullfort2": 19,
-       "studerer": 4,
+       "studerer": 6,
        "studerer1": 3,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 3
+       "frafalt2": 3,
+       "inst": {
+        "fullfortNormert": 16,
+        "fullfort1": 19,
+        "fullfort2": 19,
+        "frafalt": 3,
+        "frafalt2": 5
+       },
+       "sektor": {
+        "fullfortNormert": 16,
+        "fullfort1": 19,
+        "fullfort2": 19,
+        "frafalt": 0,
+        "frafalt2": 3
+       }
       },
       {
        "aar": 2016,
@@ -5998,7 +8448,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 18,
+        "fullfort1": 20,
+        "fullfort2": 20,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 18,
+        "fullfort1": 20,
+        "fullfort2": 20,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2017,
@@ -6015,7 +8479,21 @@
        "studerer2": 0,
        "frafalt": 3,
        "frafalt1": 4,
-       "frafalt2": 3
+       "frafalt2": 4,
+       "inst": {
+        "fullfortNormert": 24,
+        "fullfort1": 32,
+        "fullfort2": 33,
+        "frafalt": 0,
+        "frafalt2": 3
+       },
+       "sektor": {
+        "fullfortNormert": 24,
+        "fullfort1": 33,
+        "fullfort2": 34,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2018,
@@ -6027,12 +8505,26 @@
        "fullfortNormertKvinner": 14,
        "fullfort1": 33,
        "fullfort2": 33,
-       "studerer": 6,
+       "studerer": 7,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 5,
-       "frafalt1": 5,
-       "frafalt2": 5
+       "frafalt": 7,
+       "frafalt1": 7,
+       "frafalt2": 7,
+       "inst": {
+        "fullfortNormert": 27,
+        "fullfort1": 33,
+        "fullfort2": 33,
+        "frafalt": 7,
+        "frafalt2": 7
+       },
+       "sektor": {
+        "fullfortNormert": 27,
+        "fullfort1": 33,
+        "fullfort2": 33,
+        "frafalt": 7,
+        "frafalt2": 7
+       }
       },
       {
        "aar": 2019,
@@ -6048,8 +8540,22 @@
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
-       "frafalt1": 3,
-       "frafalt2": 3
+       "frafalt1": 4,
+       "frafalt2": 4,
+       "inst": {
+        "fullfortNormert": 23,
+        "fullfort1": 31,
+        "fullfort2": 32,
+        "frafalt": 0,
+        "frafalt2": 4
+       },
+       "sektor": {
+        "fullfortNormert": 23,
+        "fullfort1": 31,
+        "fullfort2": 32,
+        "frafalt": 0,
+        "frafalt2": 4
+       }
       },
       {
        "aar": 2020,
@@ -6061,12 +8567,26 @@
        "fullfortNormertKvinner": 19,
        "fullfort1": 35,
        "fullfort2": 37,
-       "studerer": 8,
+       "studerer": 10,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 0,
-       "frafalt1": 4,
-       "frafalt2": 3
+       "frafalt": 3,
+       "frafalt1": 5,
+       "frafalt2": 4,
+       "inst": {
+        "fullfortNormert": 29,
+        "fullfort1": 35,
+        "fullfort2": 37,
+        "frafalt": 3,
+        "frafalt2": 4
+       },
+       "sektor": {
+        "fullfortNormert": 29,
+        "fullfort1": 35,
+        "fullfort2": 37,
+        "frafalt": 0,
+        "frafalt2": 3
+       }
       },
       {
        "aar": 2021,
@@ -6081,9 +8601,23 @@
        "studerer": 12,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 3,
-       "frafalt1": 3,
-       "frafalt2": 3
+       "frafalt": 4,
+       "frafalt1": 5,
+       "frafalt2": 5,
+       "inst": {
+        "fullfortNormert": 29,
+        "fullfort1": 38,
+        "fullfort2": 40,
+        "frafalt": 4,
+        "frafalt2": 5
+       },
+       "sektor": {
+        "fullfortNormert": 29,
+        "fullfort1": 38,
+        "fullfort2": 40,
+        "frafalt": 4,
+        "frafalt2": 5
+       }
       },
       {
        "aar": 2022,
@@ -6098,9 +8632,23 @@
        "studerer": 9,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 0,
-       "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt": 3,
+       "frafalt1": 3,
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 25,
+        "fullfort1": 32,
+        "fullfort2": 0,
+        "frafalt": 4,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 25,
+        "fullfort1": 32,
+        "fullfort2": 0,
+        "frafalt": 3,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2023,
@@ -6115,9 +8663,23 @@
        "studerer": 12,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 3,
+       "frafalt": 4,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 31,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 5,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 31,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 4,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -6273,7 +8835,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 18,
+        "fullfort1": 24,
+        "fullfort2": 24,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 19,
+        "fullfort1": 25,
+        "fullfort2": 25,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2015,
@@ -6289,8 +8865,22 @@
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
-       "frafalt1": 3,
-       "frafalt2": 0
+       "frafalt1": 4,
+       "frafalt2": 3,
+       "inst": {
+        "fullfortNormert": 19,
+        "fullfort1": 22,
+        "fullfort2": 22,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 19,
+        "fullfort1": 22,
+        "fullfort2": 22,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2016,
@@ -6302,12 +8892,26 @@
        "fullfortNormertKvinner": 6,
        "fullfort1": 21,
        "fullfort2": 22,
-       "studerer": 5,
-       "studerer1": 0,
+       "studerer": 6,
+       "studerer1": 3,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 3,
+       "inst": {
+        "fullfortNormert": 18,
+        "fullfort1": 21,
+        "fullfort2": 22,
+        "frafalt": 0,
+        "frafalt2": 3
+       },
+       "sektor": {
+        "fullfortNormert": 18,
+        "fullfort1": 22,
+        "fullfort2": 23,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2017,
@@ -6319,12 +8923,26 @@
        "fullfortNormertKvinner": 12,
        "fullfort1": 23,
        "fullfort2": 24,
-       "studerer": 0,
+       "studerer": 4,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 0,
-       "frafalt1": 3,
-       "frafalt2": 4
+       "frafalt": 4,
+       "frafalt1": 5,
+       "frafalt2": 6,
+       "inst": {
+        "fullfortNormert": 22,
+        "fullfort1": 23,
+        "fullfort2": 25,
+        "frafalt": 4,
+        "frafalt2": 5
+       },
+       "sektor": {
+        "fullfortNormert": 22,
+        "fullfort1": 23,
+        "fullfort2": 25,
+        "frafalt": 3,
+        "frafalt2": 4
+       }
       },
       {
        "aar": 2018,
@@ -6336,12 +8954,26 @@
        "fullfortNormertKvinner": 12,
        "fullfort1": 23,
        "fullfort2": 26,
-       "studerer": 4,
+       "studerer": 5,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 3,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 21,
+        "fullfort1": 23,
+        "fullfort2": 26,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 21,
+        "fullfort1": 23,
+        "fullfort2": 26,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2019,
@@ -6357,8 +8989,22 @@
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
-       "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt1": 3,
+       "frafalt2": 3,
+       "inst": {
+        "fullfortNormert": 19,
+        "fullfort1": 26,
+        "fullfort2": 26,
+        "frafalt": 0,
+        "frafalt2": 3
+       },
+       "sektor": {
+        "fullfortNormert": 19,
+        "fullfort1": 27,
+        "fullfort2": 27,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2020,
@@ -6370,12 +9016,26 @@
        "fullfortNormertKvinner": 11,
        "fullfort1": 23,
        "fullfort2": 23,
-       "studerer": 4,
+       "studerer": 6,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 19,
+        "fullfort1": 23,
+        "fullfort2": 23,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 19,
+        "fullfort1": 23,
+        "fullfort2": 23,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2021,
@@ -6387,12 +9047,26 @@
        "fullfortNormertKvinner": 11,
        "fullfort1": 23,
        "fullfort2": 23,
-       "studerer": 0,
+       "studerer": 4,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 20,
+        "fullfort1": 23,
+        "fullfort2": 23,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 20,
+        "fullfort1": 23,
+        "fullfort2": 23,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2022,
@@ -6404,12 +9078,26 @@
        "fullfortNormertKvinner": 15,
        "fullfort1": 22,
        "fullfort2": 0,
-       "studerer": 4,
-       "studerer1": 0,
+       "studerer": 5,
+       "studerer1": 3,
        "studerer2": 0,
        "frafalt": 0,
-       "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt1": 3,
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 21,
+        "fullfort1": 22,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 21,
+        "fullfort1": 22,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2023,
@@ -6426,7 +9114,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 19,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 19,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -6567,7 +9269,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 14,
+        "fullfort1": 14,
+        "fullfort2": 14,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 14,
+        "fullfort1": 14,
+        "fullfort2": 14,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2015,
@@ -6583,8 +9299,22 @@
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
-       "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt1": 3,
+       "frafalt2": 3,
+       "inst": {
+        "fullfortNormert": 10,
+        "fullfort1": 11,
+        "fullfort2": 11,
+        "frafalt": 0,
+        "frafalt2": 3
+       },
+       "sektor": {
+        "fullfortNormert": 10,
+        "fullfort1": 11,
+        "fullfort2": 11,
+        "frafalt": 0,
+        "frafalt2": 3
+       }
       },
       {
        "aar": 2016,
@@ -6600,8 +9330,22 @@
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
-       "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt1": 3,
+       "frafalt2": 3,
+       "inst": {
+        "fullfortNormert": 15,
+        "fullfort1": 16,
+        "fullfort2": 16,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 15,
+        "fullfort1": 16,
+        "fullfort2": 16,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2017,
@@ -6613,12 +9357,26 @@
        "fullfortNormertKvinner": 5,
        "fullfort1": 11,
        "fullfort2": 13,
-       "studerer": 3,
+       "studerer": 5,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 9,
+        "fullfort1": 12,
+        "fullfort2": 14,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 9,
+        "fullfort1": 12,
+        "fullfort2": 14,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2018,
@@ -6630,12 +9388,26 @@
        "fullfortNormertKvinner": 7,
        "fullfort1": 16,
        "fullfort2": 16,
-       "studerer": 3,
+       "studerer": 5,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 11,
+        "fullfort1": 16,
+        "fullfort2": 16,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 11,
+        "fullfort1": 16,
+        "fullfort2": 16,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2019,
@@ -6643,16 +9415,30 @@
        "nivaa": "M2",
        "startkull": 14,
        "startkullKvinner": 9,
-       "fullfortNormert": 4,
+       "fullfortNormert": 6,
        "fullfortNormertKvinner": 4,
        "fullfort1": 9,
        "fullfort2": 9,
        "studerer": 7,
-       "studerer1": 0,
+       "studerer1": 3,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 3
+       "frafalt2": 3,
+       "inst": {
+        "fullfortNormert": 6,
+        "fullfort1": 9,
+        "fullfort2": 9,
+        "frafalt": 0,
+        "frafalt2": 3
+       },
+       "sektor": {
+        "fullfortNormert": 6,
+        "fullfort1": 9,
+        "fullfort2": 9,
+        "frafalt": 0,
+        "frafalt2": 3
+       }
       },
       {
        "aar": 2020,
@@ -6660,16 +9446,30 @@
        "nivaa": "M2",
        "startkull": 22,
        "startkullKvinner": 15,
-       "fullfortNormert": 7,
+       "fullfortNormert": 8,
        "fullfortNormertKvinner": 7,
        "fullfort1": 17,
        "fullfort2": 18,
        "studerer": 14,
-       "studerer1": 0,
+       "studerer1": 3,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 8,
+        "fullfort1": 18,
+        "fullfort2": 19,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 8,
+        "fullfort1": 18,
+        "fullfort2": 19,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2021,
@@ -6684,9 +9484,23 @@
        "studerer": 7,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 0,
-       "frafalt1": 0,
-       "frafalt2": 4
+       "frafalt": 3,
+       "frafalt1": 3,
+       "frafalt2": 5,
+       "inst": {
+        "fullfortNormert": 15,
+        "fullfort1": 20,
+        "fullfort2": 20,
+        "frafalt": 3,
+        "frafalt2": 5
+       },
+       "sektor": {
+        "fullfortNormert": 15,
+        "fullfort1": 20,
+        "fullfort2": 20,
+        "frafalt": 3,
+        "frafalt2": 5
+       }
       },
       {
        "aar": 2022,
@@ -6698,12 +9512,26 @@
        "fullfortNormertKvinner": 9,
        "fullfort1": 17,
        "fullfort2": 0,
-       "studerer": 3,
+       "studerer": 4,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 13,
+        "fullfort1": 17,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 13,
+        "fullfort1": 17,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2023,
@@ -6720,7 +9548,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 12,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 12,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -6862,7 +9704,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 13,
+        "fullfort1": 19,
+        "fullfort2": 19,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 13,
+        "fullfort1": 19,
+        "fullfort2": 19,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2019,
@@ -6879,7 +9735,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 12,
+        "fullfort1": 15,
+        "fullfort2": 16,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 12,
+        "fullfort1": 15,
+        "fullfort2": 16,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2020,
@@ -6895,8 +9765,22 @@
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 3,
-       "frafalt1": 3,
-       "frafalt2": 3
+       "frafalt1": 4,
+       "frafalt2": 4,
+       "inst": {
+        "fullfortNormert": 16,
+        "fullfort1": 22,
+        "fullfort2": 22,
+        "frafalt": 0,
+        "frafalt2": 3
+       },
+       "sektor": {
+        "fullfortNormert": 16,
+        "fullfort1": 22,
+        "fullfort2": 22,
+        "frafalt": 0,
+        "frafalt2": 3
+       }
       },
       {
        "aar": 2021,
@@ -6908,12 +9792,26 @@
        "fullfortNormertKvinner": 10,
        "fullfort1": 15,
        "fullfort2": 15,
-       "studerer": 0,
+       "studerer": 3,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 13,
+        "fullfort1": 15,
+        "fullfort2": 15,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 13,
+        "fullfort1": 15,
+        "fullfort2": 15,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2022,
@@ -6925,12 +9823,26 @@
        "fullfortNormertKvinner": 15,
        "fullfort1": 35,
        "fullfort2": 0,
-       "studerer": 10,
+       "studerer": 11,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 3,
+       "frafalt": 5,
        "frafalt1": 7,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 27,
+        "fullfort1": 35,
+        "fullfort2": 0,
+        "frafalt": 4,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 27,
+        "fullfort1": 35,
+        "fullfort2": 0,
+        "frafalt": 4,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2023,
@@ -6947,7 +9859,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 14,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 14,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -7066,7 +9992,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 9,
+        "fullfort1": 13,
+        "fullfort2": 14,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 9,
+        "fullfort1": 13,
+        "fullfort2": 14,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2019,
@@ -7074,7 +10014,7 @@
        "nivaa": "M2",
        "startkull": 21,
        "startkullKvinner": 8,
-       "fullfortNormert": 4,
+       "fullfortNormert": 6,
        "fullfortNormertKvinner": 4,
        "fullfort1": 14,
        "fullfort2": 16,
@@ -7083,7 +10023,21 @@
        "studerer2": 3,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 6,
+        "fullfort1": 14,
+        "fullfort2": 16,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 6,
+        "fullfort1": 14,
+        "fullfort2": 16,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2020,
@@ -7100,7 +10054,21 @@
        "studerer2": 3,
        "frafalt": 12,
        "frafalt1": 13,
-       "frafalt2": 12
+       "frafalt2": 12,
+       "inst": {
+        "fullfortNormert": 13,
+        "fullfort1": 22,
+        "fullfort2": 22,
+        "frafalt": 10,
+        "frafalt2": 10
+       },
+       "sektor": {
+        "fullfortNormert": 13,
+        "fullfort1": 23,
+        "fullfort2": 23,
+        "frafalt": 9,
+        "frafalt2": 10
+       }
       },
       {
        "aar": 2021,
@@ -7108,7 +10076,7 @@
        "nivaa": "M2",
        "startkull": 12,
        "startkullKvinner": 6,
-       "fullfortNormert": 0,
+       "fullfortNormert": 3,
        "fullfortNormertKvinner": 0,
        "fullfort1": 10,
        "fullfort2": 10,
@@ -7117,7 +10085,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 3,
+        "fullfort1": 10,
+        "fullfort2": 10,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 3,
+        "fullfort1": 10,
+        "fullfort2": 10,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2022,
@@ -7125,16 +10107,30 @@
        "nivaa": "M2",
        "startkull": 30,
        "startkullKvinner": 12,
-       "fullfortNormert": 6,
+       "fullfortNormert": 7,
        "fullfortNormertKvinner": 0,
        "fullfort1": 20,
        "fullfort2": 0,
        "studerer": 16,
        "studerer1": 3,
        "studerer2": 0,
-       "frafalt": 6,
-       "frafalt1": 5,
-       "frafalt2": 0
+       "frafalt": 7,
+       "frafalt1": 7,
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 7,
+        "fullfort1": 20,
+        "fullfort2": 0,
+        "frafalt": 7,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 7,
+        "fullfort1": 20,
+        "fullfort2": 0,
+        "frafalt": 6,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2023,
@@ -7151,7 +10147,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 16,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 16,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -7281,12 +10291,26 @@
        "fullfortNormertKvinner": 14,
        "fullfort1": 23,
        "fullfort2": 0,
-       "studerer": 3,
+       "studerer": 5,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 3,
-       "frafalt1": 5,
-       "frafalt2": 0
+       "frafalt1": 6,
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 23,
+        "fullfort1": 25,
+        "fullfort2": 0,
+        "frafalt": 3,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 23,
+        "fullfort1": 26,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2023,
@@ -7303,7 +10327,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 15,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 15,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -7374,11 +10412,25 @@
        "fullfort1": 14,
        "fullfort2": 16,
        "studerer": 11,
-       "studerer1": 3,
-       "studerer2": 0,
+       "studerer1": 4,
+       "studerer2": 3,
        "frafalt": 0,
-       "frafalt1": 3,
-       "frafalt2": 0
+       "frafalt1": 5,
+       "frafalt2": 4,
+       "inst": {
+        "fullfortNormert": 11,
+        "fullfort1": 14,
+        "fullfort2": 16,
+        "frafalt": 0,
+        "frafalt2": 5
+       },
+       "sektor": {
+        "fullfortNormert": 12,
+        "fullfort1": 15,
+        "fullfort2": 18,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2015,
@@ -7390,12 +10442,26 @@
        "fullfortNormertKvinner": 9,
        "fullfort1": 17,
        "fullfort2": 17,
-       "studerer": 3,
+       "studerer": 5,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 14,
+        "fullfort1": 17,
+        "fullfort2": 17,
+        "frafalt": 3,
+        "frafalt2": 4
+       },
+       "sektor": {
+        "fullfortNormert": 14,
+        "fullfort1": 17,
+        "fullfort2": 18,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2016,
@@ -7403,16 +10469,30 @@
        "nivaa": "M2",
        "startkull": 23,
        "startkullKvinner": 16,
-       "fullfortNormert": 13,
+       "fullfortNormert": 15,
        "fullfortNormertKvinner": 13,
        "fullfort1": 17,
        "fullfort2": 17,
-       "studerer": 4,
-       "studerer1": 0,
+       "studerer": 5,
+       "studerer1": 3,
        "studerer2": 0,
-       "frafalt": 0,
-       "frafalt1": 0,
-       "frafalt2": 3
+       "frafalt": 3,
+       "frafalt1": 3,
+       "frafalt2": 4,
+       "inst": {
+        "fullfortNormert": 16,
+        "fullfort1": 18,
+        "fullfort2": 18,
+        "frafalt": 0,
+        "frafalt2": 3
+       },
+       "sektor": {
+        "fullfortNormert": 16,
+        "fullfort1": 18,
+        "fullfort2": 18,
+        "frafalt": 0,
+        "frafalt2": 3
+       }
       },
       {
        "aar": 2017,
@@ -7424,12 +10504,26 @@
        "fullfortNormertKvinner": 12,
        "fullfort1": 21,
        "fullfort2": 21,
-       "studerer": 3,
+       "studerer": 5,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 4,
-       "frafalt1": 3,
-       "frafalt2": 4
+       "frafalt": 5,
+       "frafalt1": 5,
+       "frafalt2": 6,
+       "inst": {
+        "fullfortNormert": 18,
+        "fullfort1": 22,
+        "fullfort2": 22,
+        "frafalt": 5,
+        "frafalt2": 5
+       },
+       "sektor": {
+        "fullfortNormert": 18,
+        "fullfort1": 23,
+        "fullfort2": 23,
+        "frafalt": 3,
+        "frafalt2": 3
+       }
       },
       {
        "aar": 2018,
@@ -7441,12 +10535,26 @@
        "fullfortNormertKvinner": 12,
        "fullfort1": 24,
        "fullfort2": 25,
-       "studerer": 4,
-       "studerer1": 0,
+       "studerer": 6,
+       "studerer1": 3,
        "studerer2": 0,
-       "frafalt": 0,
+       "frafalt": 3,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 21,
+        "fullfort1": 25,
+        "fullfort2": 26,
+        "frafalt": 3,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 21,
+        "fullfort1": 25,
+        "fullfort2": 26,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2019,
@@ -7463,7 +10571,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 3
+       "frafalt2": 3,
+       "inst": {
+        "fullfortNormert": 16,
+        "fullfort1": 20,
+        "fullfort2": 20,
+        "frafalt": 0,
+        "frafalt2": 3
+       },
+       "sektor": {
+        "fullfortNormert": 16,
+        "fullfort1": 20,
+        "fullfort2": 20,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2020,
@@ -7475,12 +10597,26 @@
        "fullfortNormertKvinner": 13,
        "fullfort1": 18,
        "fullfort2": 18,
-       "studerer": 4,
+       "studerer": 5,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
-       "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt1": 3,
+       "frafalt2": 3,
+       "inst": {
+        "fullfortNormert": 16,
+        "fullfort1": 18,
+        "fullfort2": 19,
+        "frafalt": 0,
+        "frafalt2": 3
+       },
+       "sektor": {
+        "fullfortNormert": 16,
+        "fullfort1": 18,
+        "fullfort2": 19,
+        "frafalt": 0,
+        "frafalt2": 3
+       }
       },
       {
        "aar": 2021,
@@ -7497,7 +10633,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 17,
+        "fullfort1": 17,
+        "fullfort2": 17,
+        "frafalt": 3,
+        "frafalt2": 3
+       },
+       "sektor": {
+        "fullfortNormert": 17,
+        "fullfort1": 18,
+        "fullfort2": 18,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -7622,12 +10772,26 @@
        "fullfortNormertKvinner": 7,
        "fullfort1": 14,
        "fullfort2": 14,
-       "studerer": 3,
+       "studerer": 4,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 12,
+        "fullfort1": 14,
+        "fullfort2": 14,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 12,
+        "fullfort1": 14,
+        "fullfort2": 14,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2015,
@@ -7644,7 +10808,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 7,
+        "fullfort1": 10,
+        "fullfort2": 11,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 7,
+        "fullfort1": 10,
+        "fullfort2": 11,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2016,
@@ -7661,7 +10839,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 17,
+        "fullfort1": 20,
+        "fullfort2": 20,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 17,
+        "fullfort1": 20,
+        "fullfort2": 20,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2017,
@@ -7678,7 +10870,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 12,
+        "fullfort1": 15,
+        "fullfort2": 15,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 12,
+        "fullfort1": 15,
+        "fullfort2": 15,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2018,
@@ -7695,7 +10901,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 9,
+        "fullfort1": 11,
+        "fullfort2": 11,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 9,
+        "fullfort1": 11,
+        "fullfort2": 11,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2019,
@@ -7707,12 +10927,26 @@
        "fullfortNormertKvinner": 10,
        "fullfort1": 21,
        "fullfort2": 21,
-       "studerer": 4,
+       "studerer": 5,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 17,
+        "fullfort1": 21,
+        "fullfort2": 21,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 17,
+        "fullfort1": 21,
+        "fullfort2": 21,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2020,
@@ -7724,12 +10958,26 @@
        "fullfortNormertKvinner": 16,
        "fullfort1": 24,
        "fullfort2": 24,
-       "studerer": 0,
+       "studerer": 3,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 23,
+        "fullfort1": 24,
+        "fullfort2": 24,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 23,
+        "fullfort1": 24,
+        "fullfort2": 24,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2021,
@@ -7741,12 +10989,26 @@
        "fullfortNormertKvinner": 9,
        "fullfort1": 20,
        "fullfort2": 20,
-       "studerer": 5,
+       "studerer": 7,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 13,
+        "fullfort1": 20,
+        "fullfort2": 20,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 13,
+        "fullfort1": 20,
+        "fullfort2": 20,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2022,
@@ -7763,7 +11025,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 10,
+        "fullfort1": 18,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 10,
+        "fullfort1": 18,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2023,
@@ -7771,7 +11047,7 @@
        "nivaa": "M2",
        "startkull": 13,
        "startkullKvinner": 10,
-       "fullfortNormert": 8,
+       "fullfortNormert": 10,
        "fullfortNormertKvinner": 8,
        "fullfort1": 0,
        "fullfort2": 0,
@@ -7780,7 +11056,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 10,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 10,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -7916,12 +11206,26 @@
        "fullfortNormertKvinner": 7,
        "fullfort1": 15,
        "fullfort2": 16,
-       "studerer": 3,
+       "studerer": 5,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 3,
+       "inst": {
+        "fullfortNormert": 12,
+        "fullfort1": 15,
+        "fullfort2": 16,
+        "frafalt": 0,
+        "frafalt2": 3
+       },
+       "sektor": {
+        "fullfortNormert": 12,
+        "fullfort1": 15,
+        "fullfort2": 16,
+        "frafalt": 0,
+        "frafalt2": 3
+       }
       },
       {
        "aar": 2015,
@@ -7929,16 +11233,30 @@
        "nivaa": "M2",
        "startkull": 11,
        "startkullKvinner": 5,
-       "fullfortNormert": 3,
+       "fullfortNormert": 4,
        "fullfortNormertKvinner": 3,
        "fullfort1": 10,
        "fullfort2": 10,
-       "studerer": 5,
+       "studerer": 7,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 4,
+        "fullfort1": 10,
+        "fullfort2": 10,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 4,
+        "fullfort1": 10,
+        "fullfort2": 10,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2016,
@@ -7946,16 +11264,30 @@
        "nivaa": "M2",
        "startkull": 15,
        "startkullKvinner": 8,
-       "fullfortNormert": 6,
+       "fullfortNormert": 7,
        "fullfortNormertKvinner": 6,
        "fullfort1": 10,
        "fullfort2": 10,
-       "studerer": 4,
+       "studerer": 6,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
-       "frafalt1": 3,
-       "frafalt2": 3
+       "frafalt1": 4,
+       "frafalt2": 4,
+       "inst": {
+        "fullfortNormert": 7,
+        "fullfort1": 10,
+        "fullfort2": 10,
+        "frafalt": 0,
+        "frafalt2": 4
+       },
+       "sektor": {
+        "fullfortNormert": 8,
+        "fullfort1": 11,
+        "fullfort2": 11,
+        "frafalt": 0,
+        "frafalt2": 3
+       }
       },
       {
        "aar": 2017,
@@ -7963,16 +11295,30 @@
        "nivaa": "M2",
        "startkull": 15,
        "startkullKvinner": 10,
-       "fullfortNormert": 7,
+       "fullfortNormert": 9,
        "fullfortNormertKvinner": 7,
        "fullfort1": 12,
        "fullfort2": 13,
-       "studerer": 3,
+       "studerer": 5,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 9,
+        "fullfort1": 12,
+        "fullfort2": 13,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 9,
+        "fullfort1": 12,
+        "fullfort2": 13,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2018,
@@ -7980,16 +11326,30 @@
        "nivaa": "M2",
        "startkull": 11,
        "startkullKvinner": 8,
-       "fullfortNormert": 4,
+       "fullfortNormert": 5,
        "fullfortNormertKvinner": 4,
        "fullfort1": 10,
        "fullfort2": 10,
-       "studerer": 4,
+       "studerer": 6,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 5,
+        "fullfort1": 10,
+        "fullfort2": 11,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 5,
+        "fullfort1": 10,
+        "fullfort2": 11,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2019,
@@ -8001,12 +11361,26 @@
        "fullfortNormertKvinner": 6,
        "fullfort1": 15,
        "fullfort2": 17,
-       "studerer": 0,
+       "studerer": 4,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 12,
+        "fullfort1": 15,
+        "fullfort2": 17,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 12,
+        "fullfort1": 15,
+        "fullfort2": 17,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2020,
@@ -8023,7 +11397,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 12,
+        "fullfort1": 18,
+        "fullfort2": 19,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 12,
+        "fullfort1": 18,
+        "fullfort2": 19,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2021,
@@ -8035,12 +11423,26 @@
        "fullfortNormertKvinner": 10,
        "fullfort1": 21,
        "fullfort2": 21,
-       "studerer": 3,
+       "studerer": 4,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 18,
+        "fullfort1": 21,
+        "fullfort2": 21,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 18,
+        "fullfort1": 21,
+        "fullfort2": 21,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2022,
@@ -8057,7 +11459,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 11,
+        "fullfort1": 14,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 11,
+        "fullfort1": 14,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2023,
@@ -8072,9 +11488,23 @@
        "studerer": 0,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 0,
+       "frafalt": 3,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 10,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 3,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 10,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 3,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -8226,7 +11656,21 @@
        "studerer2": 0,
        "frafalt": 7,
        "frafalt1": 6,
-       "frafalt2": 6
+       "frafalt2": 6,
+       "inst": {
+        "fullfortNormert": 40,
+        "fullfort1": 49,
+        "fullfort2": 50,
+        "frafalt": 7,
+        "frafalt2": 5
+       },
+       "sektor": {
+        "fullfortNormert": 40,
+        "fullfort1": 49,
+        "fullfort2": 50,
+        "frafalt": 6,
+        "frafalt2": 4
+       }
       },
       {
        "aar": 2015,
@@ -8242,8 +11686,22 @@
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 7,
-       "frafalt1": 4,
-       "frafalt2": 4
+       "frafalt1": 6,
+       "frafalt2": 6,
+       "inst": {
+        "fullfortNormert": 39,
+        "fullfort1": 49,
+        "fullfort2": 49,
+        "frafalt": 7,
+        "frafalt2": 6
+       },
+       "sektor": {
+        "fullfortNormert": 39,
+        "fullfort1": 49,
+        "fullfort2": 49,
+        "frafalt": 7,
+        "frafalt2": 6
+       }
       },
       {
        "aar": 2016,
@@ -8256,11 +11714,25 @@
        "fullfort1": 50,
        "fullfort2": 52,
        "studerer": 9,
-       "studerer1": 0,
-       "studerer2": 0,
+       "studerer1": 3,
+       "studerer2": 3,
        "frafalt": 3,
        "frafalt1": 5,
-       "frafalt2": 3
+       "frafalt2": 3,
+       "inst": {
+        "fullfortNormert": 46,
+        "fullfort1": 50,
+        "fullfort2": 52,
+        "frafalt": 3,
+        "frafalt2": 3
+       },
+       "sektor": {
+        "fullfortNormert": 46,
+        "fullfort1": 50,
+        "fullfort2": 52,
+        "frafalt": 3,
+        "frafalt2": 3
+       }
       },
       {
        "aar": 2017,
@@ -8277,7 +11749,21 @@
        "studerer2": 0,
        "frafalt": 6,
        "frafalt1": 9,
-       "frafalt2": 9
+       "frafalt2": 9,
+       "inst": {
+        "fullfortNormert": 53,
+        "fullfort1": 58,
+        "fullfort2": 58,
+        "frafalt": 5,
+        "frafalt2": 8
+       },
+       "sektor": {
+        "fullfortNormert": 53,
+        "fullfort1": 59,
+        "fullfort2": 59,
+        "frafalt": 3,
+        "frafalt2": 5
+       }
       },
       {
        "aar": 2018,
@@ -8290,11 +11776,25 @@
        "fullfort1": 57,
        "fullfort2": 58,
        "studerer": 20,
-       "studerer1": 0,
+       "studerer1": 3,
        "studerer2": 0,
-       "frafalt": 4,
+       "frafalt": 6,
        "frafalt1": 9,
-       "frafalt2": 7
+       "frafalt2": 9,
+       "inst": {
+        "fullfortNormert": 43,
+        "fullfort1": 57,
+        "fullfort2": 58,
+        "frafalt": 6,
+        "frafalt2": 9
+       },
+       "sektor": {
+        "fullfortNormert": 43,
+        "fullfort1": 57,
+        "fullfort2": 58,
+        "frafalt": 6,
+        "frafalt2": 9
+       }
       },
       {
        "aar": 2019,
@@ -8309,9 +11809,23 @@
        "studerer": 16,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 3,
-       "frafalt1": 5,
-       "frafalt2": 6
+       "frafalt": 4,
+       "frafalt1": 6,
+       "frafalt2": 7,
+       "inst": {
+        "fullfortNormert": 44,
+        "fullfort1": 56,
+        "fullfort2": 56,
+        "frafalt": 4,
+        "frafalt2": 8
+       },
+       "sektor": {
+        "fullfortNormert": 45,
+        "fullfort1": 57,
+        "fullfort2": 57,
+        "frafalt": 4,
+        "frafalt2": 6
+       }
       },
       {
        "aar": 2020,
@@ -8324,11 +11838,25 @@
        "fullfort1": 40,
        "fullfort2": 43,
        "studerer": 14,
-       "studerer1": 4,
+       "studerer1": 6,
        "studerer2": 0,
        "frafalt": 3,
-       "frafalt1": 6,
-       "frafalt2": 7
+       "frafalt1": 7,
+       "frafalt2": 8,
+       "inst": {
+        "fullfortNormert": 36,
+        "fullfort1": 41,
+        "fullfort2": 44,
+        "frafalt": 3,
+        "frafalt2": 5
+       },
+       "sektor": {
+        "fullfortNormert": 37,
+        "fullfort1": 42,
+        "fullfort2": 45,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2021,
@@ -8341,11 +11869,25 @@
        "fullfort1": 43,
        "fullfort2": 45,
        "studerer": 14,
-       "studerer1": 3,
+       "studerer1": 4,
        "studerer2": 0,
        "frafalt": 6,
-       "frafalt1": 10,
-       "frafalt2": 11
+       "frafalt1": 11,
+       "frafalt2": 12,
+       "inst": {
+        "fullfortNormert": 38,
+        "fullfort1": 45,
+        "fullfort2": 47,
+        "frafalt": 5,
+        "frafalt2": 10
+       },
+       "sektor": {
+        "fullfortNormert": 38,
+        "fullfort1": 45,
+        "fullfort2": 48,
+        "frafalt": 5,
+        "frafalt2": 7
+       }
       },
       {
        "aar": 2022,
@@ -8358,11 +11900,25 @@
        "fullfort1": 39,
        "fullfort2": 0,
        "studerer": 10,
-       "studerer1": 3,
+       "studerer1": 5,
        "studerer2": 0,
-       "frafalt": 5,
-       "frafalt1": 6,
-       "frafalt2": 0
+       "frafalt": 7,
+       "frafalt1": 8,
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 35,
+        "fullfort1": 39,
+        "fullfort2": 0,
+        "frafalt": 7,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 35,
+        "fullfort1": 39,
+        "fullfort2": 0,
+        "frafalt": 4,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2023,
@@ -8377,9 +11933,23 @@
        "studerer": 8,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 3,
+       "frafalt": 4,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 32,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 4,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 32,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 4,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -8515,12 +12085,26 @@
        "fullfortNormertKvinner": 22,
        "fullfort1": 40,
        "fullfort2": 40,
-       "studerer": 0,
+       "studerer": 4,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 38,
+        "fullfort1": 40,
+        "fullfort2": 40,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 38,
+        "fullfort1": 40,
+        "fullfort2": 40,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2015,
@@ -8532,12 +12116,26 @@
        "fullfortNormertKvinner": 25,
        "fullfort1": 39,
        "fullfort2": 40,
-       "studerer": 6,
+       "studerer": 8,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 3
+       "frafalt2": 3,
+       "inst": {
+        "fullfortNormert": 35,
+        "fullfort1": 39,
+        "fullfort2": 40,
+        "frafalt": 0,
+        "frafalt2": 3
+       },
+       "sektor": {
+        "fullfortNormert": 35,
+        "fullfort1": 39,
+        "fullfort2": 40,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2016,
@@ -8549,12 +12147,26 @@
        "fullfortNormertKvinner": 15,
        "fullfort1": 33,
        "fullfort2": 33,
-       "studerer": 4,
+       "studerer": 5,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 29,
+        "fullfort1": 33,
+        "fullfort2": 33,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 29,
+        "fullfort1": 33,
+        "fullfort2": 33,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2017,
@@ -8566,12 +12178,26 @@
        "fullfortNormertKvinner": 15,
        "fullfort1": 35,
        "fullfort2": 36,
-       "studerer": 7,
+       "studerer": 8,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 29,
+        "fullfort1": 35,
+        "fullfort2": 36,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 29,
+        "fullfort1": 35,
+        "fullfort2": 36,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2018,
@@ -8583,12 +12209,26 @@
        "fullfortNormertKvinner": 11,
        "fullfort1": 24,
        "fullfort2": 24,
-       "studerer": 4,
+       "studerer": 5,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 21,
+        "fullfort1": 24,
+        "fullfort2": 24,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 21,
+        "fullfort1": 24,
+        "fullfort2": 24,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2019,
@@ -8605,7 +12245,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 24,
+        "fullfort1": 33,
+        "fullfort2": 33,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 24,
+        "fullfort1": 33,
+        "fullfort2": 33,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2020,
@@ -8621,8 +12275,22 @@
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
-       "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt1": 3,
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 22,
+        "fullfort1": 29,
+        "fullfort2": 30,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 22,
+        "fullfort1": 29,
+        "fullfort2": 30,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2021,
@@ -8639,7 +12307,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 16,
+        "fullfort1": 25,
+        "fullfort2": 26,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 16,
+        "fullfort1": 25,
+        "fullfort2": 26,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2022,
@@ -8651,12 +12333,26 @@
        "fullfortNormertKvinner": 15,
        "fullfort1": 29,
        "fullfort2": 0,
-       "studerer": 4,
+       "studerer": 6,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 26,
+        "fullfort1": 29,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 26,
+        "fullfort1": 29,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2023,
@@ -8668,12 +12364,26 @@
        "fullfortNormertKvinner": 25,
        "fullfort1": 0,
        "fullfort2": 0,
-       "studerer": 6,
+       "studerer": 8,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 42,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 42,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -8828,7 +12538,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 11,
+        "fullfort1": 11,
+        "fullfort2": 11,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 11,
+        "fullfort1": 11,
+        "fullfort2": 11,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2015,
@@ -8843,9 +12567,23 @@
        "studerer": 6,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 3,
-       "frafalt1": 3,
-       "frafalt2": 4
+       "frafalt": 4,
+       "frafalt1": 4,
+       "frafalt2": 5,
+       "inst": {
+        "fullfortNormert": 16,
+        "fullfort1": 21,
+        "fullfort2": 21,
+        "frafalt": 5,
+        "frafalt2": 5
+       },
+       "sektor": {
+        "fullfortNormert": 17,
+        "fullfort1": 22,
+        "fullfort2": 22,
+        "frafalt": 3,
+        "frafalt2": 4
+       }
       },
       {
        "aar": 2016,
@@ -8858,11 +12596,25 @@
        "fullfort1": 17,
        "fullfort2": 18,
        "studerer": 8,
-       "studerer1": 0,
+       "studerer1": 3,
        "studerer2": 0,
        "frafalt": 0,
-       "frafalt1": 0,
-       "frafalt2": 3
+       "frafalt1": 4,
+       "frafalt2": 5,
+       "inst": {
+        "fullfortNormert": 15,
+        "fullfort1": 17,
+        "fullfort2": 18,
+        "frafalt": 3,
+        "frafalt2": 5
+       },
+       "sektor": {
+        "fullfortNormert": 15,
+        "fullfort1": 18,
+        "fullfort2": 19,
+        "frafalt": 0,
+        "frafalt2": 4
+       }
       },
       {
        "aar": 2017,
@@ -8874,12 +12626,26 @@
        "fullfortNormertKvinner": 7,
        "fullfort1": 18,
        "fullfort2": 18,
-       "studerer": 0,
+       "studerer": 3,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 3,
+       "frafalt": 5,
        "frafalt1": 6,
-       "frafalt2": 7
+       "frafalt2": 7,
+       "inst": {
+        "fullfortNormert": 17,
+        "fullfort1": 18,
+        "fullfort2": 18,
+        "frafalt": 5,
+        "frafalt2": 7
+       },
+       "sektor": {
+        "fullfortNormert": 17,
+        "fullfort1": 18,
+        "fullfort2": 18,
+        "frafalt": 4,
+        "frafalt2": 6
+       }
       },
       {
        "aar": 2018,
@@ -8887,16 +12653,30 @@
        "nivaa": "M2",
        "startkull": 18,
        "startkullKvinner": 6,
-       "fullfortNormert": 3,
+       "fullfortNormert": 5,
        "fullfortNormertKvinner": 0,
-       "fullfort1": 5,
+       "fullfort1": 7,
        "fullfort2": 10,
-       "studerer": 6,
-       "studerer1": 0,
+       "studerer": 8,
+       "studerer1": 4,
        "studerer2": 0,
-       "frafalt": 3,
-       "frafalt1": 5,
-       "frafalt2": 5
+       "frafalt": 5,
+       "frafalt1": 7,
+       "frafalt2": 6,
+       "inst": {
+        "fullfortNormert": 5,
+        "fullfort1": 7,
+        "fullfort2": 10,
+        "frafalt": 6,
+        "frafalt2": 7
+       },
+       "sektor": {
+        "fullfortNormert": 5,
+        "fullfort1": 8,
+        "fullfort2": 12,
+        "frafalt": 4,
+        "frafalt2": 4
+       }
       },
       {
        "aar": 2019,
@@ -8908,12 +12688,26 @@
        "fullfortNormertKvinner": 12,
        "fullfort1": 19,
        "fullfort2": 20,
-       "studerer": 3,
-       "studerer1": 0,
+       "studerer": 5,
+       "studerer1": 3,
        "studerer2": 0,
-       "frafalt": 3,
-       "frafalt1": 3,
-       "frafalt2": 6
+       "frafalt": 4,
+       "frafalt1": 5,
+       "frafalt2": 6,
+       "inst": {
+        "fullfortNormert": 18,
+        "fullfort1": 19,
+        "fullfort2": 20,
+        "frafalt": 5,
+        "frafalt2": 6
+       },
+       "sektor": {
+        "fullfortNormert": 19,
+        "fullfort1": 21,
+        "fullfort2": 22,
+        "frafalt": 0,
+        "frafalt2": 3
+       }
       },
       {
        "aar": 2020,
@@ -8926,11 +12720,25 @@
        "fullfort1": 25,
        "fullfort2": 25,
        "studerer": 11,
-       "studerer1": 0,
+       "studerer1": 3,
        "studerer2": 0,
        "frafalt": 0,
-       "frafalt1": 0,
-       "frafalt2": 3
+       "frafalt1": 3,
+       "frafalt2": 5,
+       "inst": {
+        "fullfortNormert": 20,
+        "fullfort1": 25,
+        "fullfort2": 25,
+        "frafalt": 0,
+        "frafalt2": 5
+       },
+       "sektor": {
+        "fullfortNormert": 20,
+        "fullfort1": 25,
+        "fullfort2": 25,
+        "frafalt": 0,
+        "frafalt2": 5
+       }
       },
       {
        "aar": 2021,
@@ -8947,7 +12755,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 11,
+        "fullfort1": 13,
+        "fullfort2": 13,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 11,
+        "fullfort1": 13,
+        "fullfort2": 13,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2022,
@@ -8959,12 +12781,26 @@
        "fullfortNormertKvinner": 12,
        "fullfort1": 23,
        "fullfort2": 0,
-       "studerer": 0,
+       "studerer": 3,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 21,
+        "fullfort1": 23,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 21,
+        "fullfort1": 23,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2023,
@@ -8976,12 +12812,26 @@
        "fullfortNormertKvinner": 10,
        "fullfort1": 0,
        "fullfort2": 0,
-       "studerer": 0,
+       "studerer": 4,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 20,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 20,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -9113,16 +12963,30 @@
        "nivaa": "M2",
        "startkull": 12,
        "startkullKvinner": 4,
-       "fullfortNormert": 5,
+       "fullfortNormert": 7,
        "fullfortNormertKvinner": 0,
        "fullfort1": 8,
        "fullfort2": 8,
-       "studerer": 0,
+       "studerer": 4,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
-       "frafalt1": 3,
-       "frafalt2": 0
+       "frafalt1": 4,
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 7,
+        "fullfort1": 8,
+        "fullfort2": 8,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 7,
+        "fullfort1": 8,
+        "fullfort2": 8,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2020,
@@ -9130,16 +12994,30 @@
        "nivaa": "M2",
        "startkull": 14,
        "startkullKvinner": 3,
-       "fullfortNormert": 7,
+       "fullfortNormert": 9,
        "fullfortNormertKvinner": 0,
-       "fullfort1": 8,
-       "fullfort2": 8,
+       "fullfort1": 10,
+       "fullfort2": 10,
        "studerer": 0,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 3,
-       "frafalt1": 3,
-       "frafalt2": 3
+       "frafalt": 4,
+       "frafalt1": 4,
+       "frafalt2": 4,
+       "inst": {
+        "fullfortNormert": 9,
+        "fullfort1": 10,
+        "fullfort2": 10,
+        "frafalt": 4,
+        "frafalt2": 4
+       },
+       "sektor": {
+        "fullfortNormert": 9,
+        "fullfort1": 10,
+        "fullfort2": 10,
+        "frafalt": 4,
+        "frafalt2": 4
+       }
       },
       {
        "aar": 2021,
@@ -9147,16 +13025,30 @@
        "nivaa": "M2",
        "startkull": 17,
        "startkullKvinner": 4,
-       "fullfortNormert": 4,
+       "fullfortNormert": 5,
        "fullfortNormertKvinner": 0,
-       "fullfort1": 6,
-       "fullfort2": 6,
-       "studerer": 4,
-       "studerer1": 0,
+       "fullfort1": 7,
+       "fullfort2": 7,
+       "studerer": 5,
+       "studerer1": 3,
        "studerer2": 0,
-       "frafalt": 5,
-       "frafalt1": 5,
-       "frafalt2": 6
+       "frafalt": 7,
+       "frafalt1": 7,
+       "frafalt2": 8,
+       "inst": {
+        "fullfortNormert": 6,
+        "fullfort1": 8,
+        "fullfort2": 8,
+        "frafalt": 6,
+        "frafalt2": 7
+       },
+       "sektor": {
+        "fullfortNormert": 7,
+        "fullfort1": 9,
+        "fullfort2": 9,
+        "frafalt": 5,
+        "frafalt2": 6
+       }
       },
       {
        "aar": 2022,
@@ -9168,12 +13060,26 @@
        "fullfortNormertKvinner": 4,
        "fullfort1": 14,
        "fullfort2": 0,
-       "studerer": 4,
+       "studerer": 5,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 3,
-       "frafalt1": 3,
-       "frafalt2": 0
+       "frafalt": 5,
+       "frafalt1": 5,
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 10,
+        "fullfort1": 15,
+        "fullfort2": 0,
+        "frafalt": 4,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 10,
+        "fullfort1": 15,
+        "fullfort2": 0,
+        "frafalt": 4,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2023,
@@ -9190,7 +13096,21 @@
        "studerer2": 0,
        "frafalt": 8,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 11,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 8,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 11,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 8,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -9298,7 +13218,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 9,
+        "fullfort1": 10,
+        "fullfort2": 10,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 9,
+        "fullfort1": 10,
+        "fullfort2": 10,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2015,
@@ -9306,16 +13240,30 @@
        "nivaa": "M2",
        "startkull": 25,
        "startkullKvinner": 3,
-       "fullfortNormert": 18,
+       "fullfortNormert": 20,
        "fullfortNormertKvinner": 0,
-       "fullfort1": 18,
-       "fullfort2": 18,
+       "fullfort1": 20,
+       "fullfort2": 20,
        "studerer": 3,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
-       "frafalt1": 0,
-       "frafalt2": 4
+       "frafalt1": 3,
+       "frafalt2": 5,
+       "inst": {
+        "fullfortNormert": 21,
+        "fullfort1": 21,
+        "fullfort2": 21,
+        "frafalt": 0,
+        "frafalt2": 4
+       },
+       "sektor": {
+        "fullfortNormert": 21,
+        "fullfort1": 21,
+        "fullfort2": 21,
+        "frafalt": 0,
+        "frafalt2": 4
+       }
       },
       {
        "aar": 2016,
@@ -9327,12 +13275,26 @@
        "fullfortNormertKvinner": 4,
        "fullfort1": 24,
        "fullfort2": 25,
-       "studerer": 9,
-       "studerer1": 3,
+       "studerer": 10,
+       "studerer1": 4,
        "studerer2": 0,
-       "frafalt": 7,
-       "frafalt1": 9,
-       "frafalt2": 10
+       "frafalt": 8,
+       "frafalt1": 10,
+       "frafalt2": 11,
+       "inst": {
+        "fullfortNormert": 21,
+        "fullfort1": 26,
+        "fullfort2": 28,
+        "frafalt": 7,
+        "frafalt2": 9
+       },
+       "sektor": {
+        "fullfortNormert": 21,
+        "fullfort1": 26,
+        "fullfort2": 28,
+        "frafalt": 5,
+        "frafalt2": 9
+       }
       },
       {
        "aar": 2017,
@@ -9344,12 +13306,26 @@
        "fullfortNormertKvinner": 5,
        "fullfort1": 23,
        "fullfort2": 23,
-       "studerer": 5,
+       "studerer": 7,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 5,
-       "frafalt1": 6,
-       "frafalt2": 7
+       "frafalt": 7,
+       "frafalt1": 8,
+       "frafalt2": 9,
+       "inst": {
+        "fullfortNormert": 19,
+        "fullfort1": 23,
+        "fullfort2": 23,
+        "frafalt": 7,
+        "frafalt2": 9
+       },
+       "sektor": {
+        "fullfortNormert": 20,
+        "fullfort1": 24,
+        "fullfort2": 24,
+        "frafalt": 4,
+        "frafalt2": 6
+       }
       },
       {
        "aar": 2018,
@@ -9364,9 +13340,23 @@
        "studerer": 14,
        "studerer1": 5,
        "studerer2": 0,
-       "frafalt": 5,
-       "frafalt1": 10,
-       "frafalt2": 14
+       "frafalt": 6,
+       "frafalt1": 11,
+       "frafalt2": 15,
+       "inst": {
+        "fullfortNormert": 11,
+        "fullfort1": 16,
+        "fullfort2": 16,
+        "frafalt": 5,
+        "frafalt2": 12
+       },
+       "sektor": {
+        "fullfortNormert": 11,
+        "fullfort1": 16,
+        "fullfort2": 16,
+        "frafalt": 5,
+        "frafalt2": 11
+       }
       },
       {
        "aar": 2019,
@@ -9374,16 +13364,30 @@
        "nivaa": "M2",
        "startkull": 15,
        "startkullKvinner": 3,
-       "fullfortNormert": 8,
+       "fullfortNormert": 9,
        "fullfortNormertKvinner": 0,
-       "fullfort1": 8,
-       "fullfort2": 9,
-       "studerer": 0,
+       "fullfort1": 10,
+       "fullfort2": 11,
+       "studerer": 3,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 0,
-       "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt": 3,
+       "frafalt1": 3,
+       "frafalt2": 3,
+       "inst": {
+        "fullfortNormert": 9,
+        "fullfort1": 10,
+        "fullfort2": 11,
+        "frafalt": 3,
+        "frafalt2": 4
+       },
+       "sektor": {
+        "fullfortNormert": 9,
+        "fullfort1": 10,
+        "fullfort2": 11,
+        "frafalt": 3,
+        "frafalt2": 3
+       }
       },
       {
        "aar": 2020,
@@ -9395,12 +13399,26 @@
        "fullfortNormertKvinner": 3,
        "fullfort1": 13,
        "fullfort2": 13,
-       "studerer": 8,
+       "studerer": 9,
        "studerer1": 4,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 4,
-       "frafalt2": 7
+       "frafalt2": 7,
+       "inst": {
+        "fullfortNormert": 11,
+        "fullfort1": 14,
+        "fullfort2": 14,
+        "frafalt": 0,
+        "frafalt2": 6
+       },
+       "sektor": {
+        "fullfortNormert": 11,
+        "fullfort1": 14,
+        "fullfort2": 14,
+        "frafalt": 0,
+        "frafalt2": 6
+       }
       },
       {
        "aar": 2021,
@@ -9413,11 +13431,25 @@
        "fullfort1": 16,
        "fullfort2": 17,
        "studerer": 0,
-       "studerer1": 0,
+       "studerer1": 3,
        "studerer2": 0,
-       "frafalt": 4,
-       "frafalt1": 3,
-       "frafalt2": 3
+       "frafalt": 6,
+       "frafalt1": 5,
+       "frafalt2": 5,
+       "inst": {
+        "fullfortNormert": 16,
+        "fullfort1": 16,
+        "fullfort2": 17,
+        "frafalt": 6,
+        "frafalt2": 5
+       },
+       "sektor": {
+        "fullfortNormert": 16,
+        "fullfort1": 16,
+        "fullfort2": 17,
+        "frafalt": 5,
+        "frafalt2": 4
+       }
       },
       {
        "aar": 2022,
@@ -9434,15 +13466,29 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 14,
+        "fullfort1": 14,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 14,
+        "fullfort1": 14,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2023,
        "normertAar": 2025,
        "nivaa": "M2",
-       "startkull": 17,
+       "startkull": 19,
        "startkullKvinner": 0,
-       "fullfortNormert": 6,
+       "fullfortNormert": 8,
        "fullfortNormertKvinner": 0,
        "fullfort1": 0,
        "fullfort2": 0,
@@ -9451,7 +13497,21 @@
        "studerer2": 0,
        "frafalt": 4,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 8,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 4,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 8,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 3,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -9581,18 +13641,32 @@
        "aar": 2015,
        "normertAar": 2017,
        "nivaa": "M2",
-       "startkull": 6,
+       "startkull": 7,
        "startkullKvinner": 0,
-       "fullfortNormert": 5,
+       "fullfortNormert": 6,
        "fullfortNormertKvinner": 0,
-       "fullfort1": 5,
-       "fullfort2": 5,
+       "fullfort1": 6,
+       "fullfort2": 6,
        "studerer": 0,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 6,
+        "fullfort1": 6,
+        "fullfort2": 6,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 6,
+        "fullfort1": 6,
+        "fullfort2": 6,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2017,
@@ -9609,30 +13683,46 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": null,
+       "sektor": null
       },
       {
        "aar": 2018,
        "normertAar": 2020,
        "nivaa": "M2",
-       "startkull": 8,
+       "startkull": 10,
        "startkullKvinner": 0,
        "fullfortNormert": 4,
        "fullfortNormertKvinner": 0,
        "fullfort1": 6,
        "fullfort2": 8,
-       "studerer": 3,
-       "studerer1": 0,
+       "studerer": 4,
+       "studerer1": 3,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 4,
+        "fullfort1": 6,
+        "fullfort2": 8,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 4,
+        "fullfort1": 6,
+        "fullfort2": 8,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2019,
        "normertAar": 2021,
        "nivaa": "M2",
-       "startkull": 12,
+       "startkull": 13,
        "startkullKvinner": 0,
        "fullfortNormert": 4,
        "fullfortNormertKvinner": 0,
@@ -9641,9 +13731,23 @@
        "studerer": 5,
        "studerer1": 6,
        "studerer2": 0,
-       "frafalt": 3,
+       "frafalt": 4,
        "frafalt1": 0,
-       "frafalt2": 3
+       "frafalt2": 4,
+       "inst": {
+        "fullfortNormert": 4,
+        "fullfort1": 6,
+        "fullfort2": 9,
+        "frafalt": 4,
+        "frafalt2": 3
+       },
+       "sektor": {
+        "fullfortNormert": 4,
+        "fullfort1": 6,
+        "fullfort2": 9,
+        "frafalt": 4,
+        "frafalt2": 3
+       }
       },
       {
        "aar": 2020,
@@ -9651,16 +13755,30 @@
        "nivaa": "M2",
        "startkull": 10,
        "startkullKvinner": 5,
-       "fullfortNormert": 0,
+       "fullfortNormert": 3,
        "fullfortNormertKvinner": 0,
-       "fullfort1": 5,
-       "fullfort2": 5,
+       "fullfort1": 7,
+       "fullfort2": 7,
        "studerer": 7,
        "studerer1": 0,
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 3,
+        "fullfort1": 7,
+        "fullfort2": 7,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 3,
+        "fullfort1": 7,
+        "fullfort2": 7,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2021,
@@ -9672,12 +13790,26 @@
        "fullfortNormertKvinner": 6,
        "fullfort1": 22,
        "fullfort2": 22,
-       "studerer": 6,
-       "studerer1": 0,
+       "studerer": 8,
+       "studerer1": 3,
        "studerer2": 0,
        "frafalt": 3,
        "frafalt1": 0,
-       "frafalt2": 3
+       "frafalt2": 5,
+       "inst": {
+        "fullfortNormert": 16,
+        "fullfort1": 22,
+        "fullfort2": 22,
+        "frafalt": 3,
+        "frafalt2": 5
+       },
+       "sektor": {
+        "fullfortNormert": 16,
+        "fullfort1": 22,
+        "fullfort2": 23,
+        "frafalt": 3,
+        "frafalt2": 4
+       }
       },
       {
        "aar": 2022,
@@ -9694,15 +13826,29 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 10,
+        "fullfort1": 12,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 10,
+        "fullfort1": 12,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       },
       {
        "aar": 2023,
        "normertAar": 2025,
        "nivaa": "M2",
-       "startkull": 6,
+       "startkull": 8,
        "startkullKvinner": 6,
-       "fullfortNormert": 0,
+       "fullfortNormert": 4,
        "fullfortNormertKvinner": 0,
        "fullfort1": 0,
        "fullfort2": 0,
@@ -9711,7 +13857,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 4,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 4,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
@@ -9852,7 +14012,21 @@
        "studerer2": 0,
        "frafalt": 0,
        "frafalt1": 0,
-       "frafalt2": 0
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 13,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 13,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
       }
      ],
      "aar": [
