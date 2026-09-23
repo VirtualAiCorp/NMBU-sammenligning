@@ -29,8 +29,8 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
   {
     id: 'oa', label: 'Økonomi og administrasjon', level: 'bachelor',
     desc: 'Sammenligner NMBUs bachelor i økonomi og administrasjon med de samme programmene som i den opprinnelige HH-analysen.',
-    note: 'Samme konkurrentliste som i den opprinnelige HH-opptaksanalysen. De femårige siviløkonomløpene er tatt med som svakere sammenligning (default false). BI tar ikke opp gjennom Samordna opptak og er derfor ikke med her.',
-    nmbuIds: ['nmbu_oa'], defaultIds: ['nmbu_oa', 'nhh_oa', 'ntnu_oa', 'oslomet_oa', 'uia_oa', 'uis_oa', 'usn_oa', 'inn_oa', 'nord_oa', 'hvl_bergen_oa', 'hiof_oa'],
+    note: 'Samme konkurrentliste som i den opprinnelige HH-opptaksanalysen. De femårige siviløkonomløpene er tatt med som svakere sammenligning (default false). BI og Kristiania tar opp lokalt, ikke gjennom Samordna: søkere, tilbud og møtt er fra DBH 379, de har ingen poenggrense, og BIs tall gjelder alle campuser samlet.',
+    nmbuIds: ['nmbu_oa'], defaultIds: ['nmbu_oa', 'nhh_oa', 'ntnu_oa', 'oslomet_oa', 'uia_oa', 'uis_oa', 'usn_oa', 'inn_oa', 'nord_oa', 'hvl_bergen_oa', 'hiof_oa', 'bi_oa', 'kristiania_oa'],
     entries: [
       {
         id: 'nmbu_oa', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet',
@@ -360,6 +360,33 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         },
       },
       {
+        id: 'bi_oa', shortName: 'BI', institusjon: 'Handelshøyskolen BI',
+        studiekode: '', studiested: 'Oslo', type: 'bachelor',
+        url: 'https://www.bi.no/studier-og-kurs/bachelorstudier/okonomi-og-administrasjon/',
+        lokaltOpptak: true,
+        poengLokalt: true,
+        years: {
+          '2021': { ...Y(2431, 2241, null, 33.6, 2270, 2250, null, null, 1758, 1524), kp_mott: 39.0, n_mott: 1518 },
+          '2022': { ...Y(2187, 2087, null, 34.8, 2037, 2023, null, null, 1544, 1340), kp_mott: 39.9, n_mott: 1340 },
+          '2023': { ...Y(2333, 2179, null, 33.1, 2161, 2154, null, null, 1685, 1444), kp_mott: 40.9, n_mott: 1444 },
+          '2024': { ...Y(2702, 2528, null, 32.1, 2499, 2496, null, null, 1943, 1603), kp_mott: 40.3, n_mott: 1603 },
+          '2025': { ...Y(3343, 3139, null, 33.2, 2906, 2906, null, null, 2287, 1866), kp_mott: 41.0, n_mott: 1866 },
+        },
+      },
+      {
+        id: 'kristiania_oa', shortName: 'Kristiania', institusjon: 'Høyskolen Kristiania',
+        studiekode: '', studiested: 'Oslo', type: 'bachelor',
+        url: 'https://www.kristiania.no/studier/bachelor/okonomi-og-administrasjon/',
+        lokaltOpptak: true,
+        years: {
+          '2021': Y(332, 332, null, 39.2, 313, 312, null, null, 153, 110),
+          '2022': Y(303, 303, null, 42.6, 282, 282, null, null, 132, 81),
+          '2023': Y(339, 339, null, 49.0, 327, 327, null, null, 160, 94),
+          '2024': Y(489, 362, null, 39.5, 460, 460, null, null, 165, 100),
+          '2025': Y(639, 492, null, 40.2, 602, 602, null, null, 256, 159),
+        },
+      },
+      {
         id: 'ntnu_siv', shortName: 'NTNU siviløkonom', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
         studiekode: '194345', studiested: 'Trondheim', type: 'master5',
         years: {
@@ -492,7 +519,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
   {
     id: 'olit', label: 'Økonomi, ledelse og IT', level: 'bachelor',
     desc: 'Sammenligner NMBUs bachelor i økonomi, ledelse og IT med program som kombinerer økonomi/ledelse og IT eller informasjonssystemer.',
-    note: 'Nærmeste tilsvarende program funnet i Samordnas programliste. IT og informasjonssystemer (UiA, USN, HiØ) er mer IT-tunge; Informatikk-matematikk-økonomi (UiB) og Digital serviceledelse (UiS) er svakere sammenligninger (default false).',
+    note: 'Nærmeste tilsvarende program funnet i Samordnas programliste. IT og informasjonssystemer (UiA, USN, HiØ) er mer IT-tunge; Informatikk-matematikk-økonomi (UiB) og Digital serviceledelse (UiS) er svakere sammenligninger (default false), det samme er BIs Digital Business og Data Science for Business og Kristianias Digitalisering og økonomi (lokale opptak, DBH 379).',
     nmbuIds: ['nmbu_olit'], defaultIds: ['nmbu_olit', 'hvl_dol', 'ntnu_dfu', 'uio_inl', 'uia_itis', 'usn_itled', 'hiof_is'],
     entries: [
       {
@@ -628,6 +655,43 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
           '2025': { ...Y(80, 13, 15, 61.5, 72, 19, 0, 0), op_mott: 44.4, kp_mott: 37.0, op_fv: 42.3, op_alle: 45.9, n_mott: 9 },
         },
       },
+      {
+        id: 'bi_dbh', shortName: 'BI Digital Business', institusjon: 'Handelshøyskolen BI',
+        studiekode: '', studiested: 'Oslo', type: 'bachelor',
+        url: 'https://www.bi.no/studier-og-kurs/bachelorstudier/digital-business/',
+        lokaltOpptak: true,
+        years: {
+          '2022': Y(61, 56, null, 57.1, 44, 44, null, null, 35, 23),
+          '2023': Y(94, 88, null, 47.7, 67, 67, null, null, 58, 45),
+          '2024': Y(119, 115, null, 46.1, 74, 73, null, null, 61, 46),
+          '2025': Y(203, 192, null, 38.0, 97, 97, null, null, 82, 63),
+        },
+      },
+      {
+        id: 'bi_dsb', shortName: 'BI Data Science', institusjon: 'Handelshøyskolen BI',
+        studiekode: '', studiested: 'Oslo', type: 'bachelor',
+        url: 'https://www.bi.no/studier-og-kurs/bachelorstudier/data-science-for-business/',
+        lokaltOpptak: true,
+        years: {
+          '2021': Y(149, 143, null, 35.0, 101, 99, null, null, 79, 63),
+          '2022': Y(165, 160, null, 35.0, 99, 99, null, null, 85, 60),
+          '2023': Y(201, 196, null, 36.7, 135, 134, null, null, 106, 76),
+          '2024': Y(200, 197, null, 38.1, 138, 138, null, null, 100, 75),
+          '2025': Y(285, 284, null, 33.5, 129, 129, null, null, 101, 56),
+        },
+      },
+      {
+        id: 'kristiania_bod', shortName: 'Kristiania', institusjon: 'Høyskolen Kristiania',
+        studiekode: '', studiested: 'Oslo', type: 'bachelor',
+        lokaltOpptak: true,
+        years: {
+          '2021': Y(65, 65, null, 23.1, 61, 61, null, null, 34, 25),
+          '2022': Y(63, 63, null, 42.9, 60, 60, null, null, 33, 24),
+          '2023': Y(66, 66, null, 43.9, 61, 61, null, null, 25, 17),
+          '2024': Y(131, 66, null, 42.4, 128, 128, null, null, 37, 20),
+          '2025': Y(151, 77, null, 35.1, 143, 143, null, null, 43, 27),
+        },
+      },
     ],
   },
   {
@@ -640,6 +704,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         id: 'nmbu_moa', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet',
         studiekode: '', studiested: 'Ås', type: 'master2',
         url: 'https://www.nmbu.no/studier/master-2-aar/okonomi-og-administrasjon',
+        lokaltOpptak: true,
         years: {
           '2021': Y(832, 436, null, 42.7, 629, 249, null, null, 105, 85),
           '2022': Y(543, 300, null, 44.3, 395, 193, null, null, 82, 63),
@@ -651,6 +716,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'nhh_moa', shortName: 'NHH', institusjon: 'Norges Handelshøyskole',
         studiekode: '', studiested: 'Bergen', type: 'master2',
+        lokaltOpptak: true,
         years: {
           '2021': Y(1257, 1200, null, 38.5, 1074, 730, null, null, 628, 579),
           '2022': Y(6533, 1594, null, 37.0, 5734, 1078, null, null, 872, 782),
@@ -662,6 +728,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'bi_moa', shortName: 'BI', institusjon: 'Handelshøyskolen BI',
         studiekode: '', studiested: 'Oslo', type: 'master2',
+        lokaltOpptak: true,
         years: {
           '2021': Y(738, 665, null, 42.1, 403, 401, null, null, 351, 235),
           '2022': Y(609, 586, null, 36.5, 347, 346, null, null, 309, 164),
@@ -673,6 +740,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'ntnu_moa', shortName: 'NTNU', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
         studiekode: '', studiested: 'Trondheim', type: 'master2',
+        lokaltOpptak: true,
         years: {
           '2021': Y(920, 628, null, 42.2, 667, 282, null, null, 113, 104),
           '2022': Y(764, 523, null, 40.2, 462, 254, null, null, 119, 111),
@@ -684,6 +752,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'oslomet_moa', shortName: 'OsloMet', institusjon: 'OsloMet – storbyuniversitetet',
         studiekode: '', studiested: 'Oslo', type: 'master2',
+        lokaltOpptak: true,
         years: {
           '2021': Y(994, 889, null, 48.3, 605, 372, null, null, 129, 110),
           '2022': Y(816, 705, null, 50.2, 489, 299, null, null, 128, 110),
@@ -695,6 +764,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'uia_moa', shortName: 'UiA', institusjon: 'Universitetet i Agder',
         studiekode: '', studiested: 'Kristiansand', type: 'master2',
+        lokaltOpptak: true,
         years: {
           '2021': Y(595, 410, null, 42.0, 339, 160, null, null, 52, 43),
           '2022': Y(408, 283, null, 40.6, 243, 127, null, null, 45, 30),
@@ -706,6 +776,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'uis_moa', shortName: 'UiS', institusjon: 'Universitetet i Stavanger',
         studiekode: '', studiested: 'Stavanger', type: 'master2',
+        lokaltOpptak: true,
         years: {
           '2021': Y(3080, 1144, null, 41.3, 1389, 447, null, null, 222, 179),
           '2022': Y(2787, 1640, null, 41.1, 1087, 392, null, null, 212, 166),
@@ -717,6 +788,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'usn_moa', shortName: 'USN', institusjon: 'Universitetet i Sørøst-Norge',
         studiekode: '', studiested: 'Ringerike', type: 'master2',
+        lokaltOpptak: true,
         years: {
           '2021': Y(703, 299, null, 45.2, 485, 221, null, null, 109, 75),
           '2022': Y(518, 210, null, 47.6, 362, 156, null, null, 80, 49),
@@ -728,6 +800,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'nord_moa', shortName: 'Nord', institusjon: 'Nord universitet',
         studiekode: '', studiested: 'Bodø', type: 'master2',
+        lokaltOpptak: true,
         years: {
           '2021': Y(1147, 852, null, 34.7, 226, 183, null, null, 105, 59),
           '2022': Y(1645, 1218, null, 35.1, 187, 168, null, null, 91, 56),
@@ -739,6 +812,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'inn_moa', shortName: 'INN', institusjon: 'Universitetet i Innlandet',
         studiekode: '', studiested: 'Lillehammer', type: 'master2',
+        lokaltOpptak: true,
         years: {
           '2021': Y(1087, 390, null, 49.5, 699, 230, null, null, 99, 93),
           '2022': Y(695, 303, null, 49.2, 467, 224, null, null, 87, 81),
@@ -750,6 +824,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'uit_moa', shortName: 'UiT', institusjon: 'UiT Norges arktiske universitet',
         studiekode: '', studiested: 'Tromsø', type: 'master2',
+        lokaltOpptak: true,
         years: {
           '2021': Y(430, 276, null, 39.5, 252, 199, null, null, 100, 84),
           '2022': Y(303, 203, null, 41.9, 192, 147, null, null, 60, 50),
@@ -761,6 +836,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'hvl_moa', shortName: 'HVL', institusjon: 'Høgskulen på Vestlandet',
         studiekode: '', studiested: 'Bergen', type: 'master2',
+        lokaltOpptak: true,
         years: {
           '2021': Y(157, 103, null, 59.2, 122, 86, null, null, 47, 42),
           '2022': Y(413, 236, null, 50.8, 232, 117, null, null, 50, 41),
@@ -775,12 +851,13 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
     id: 'mecon', label: 'Samfunnsøkonomi (master)', level: 'master2',
     desc: 'Sammenligner NMBUs master i samfunnsøkonomi og bærekraft med masterprogrammene i samfunnsøkonomi.',
     note: 'Lokale opptak; tall fra DBH 379. NMBUs nye master i samfunnsøkonomi og miljøforvaltning (M-EEG, fra 2024) er ikke med ennå.',
-    nmbuIds: ['nmbu_mecon'], defaultIds: ['nmbu_mecon', 'uio_mecon', 'uib_mecon', 'ntnu_mecon', 'uit_mecon'],
+    nmbuIds: ['nmbu_mecon'], defaultIds: ['nmbu_mecon', 'uio_mecon', 'uib_mecon', 'ntnu_mecon', 'uit_mecon', 'bi_mecon'],
     entries: [
       {
         id: 'nmbu_mecon', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet',
         studiekode: '', studiested: 'Ås', type: 'master2',
         url: 'https://www.nmbu.no/studier/master-2-aar/samfunnsokonomi-og-baerekraft',
+        lokaltOpptak: true,
         years: {
           '2021': Y(547, 242, null, 39.3, 106, 78, null, null, 33, 26),
           '2022': Y(638, 312, null, 36.9, 88, 63, null, null, 27, 23),
@@ -792,6 +869,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'uio_mecon', shortName: 'UiO', institusjon: 'Universitetet i Oslo',
         studiekode: '', studiested: 'Oslo', type: 'master2',
+        lokaltOpptak: true,
         years: {
           '2021': Y(660, 494, null, 41.5, 192, 158, null, null, 89, 76),
           '2022': Y(573, 425, null, 38.1, 174, 135, null, null, 76, 69),
@@ -803,6 +881,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'uib_mecon', shortName: 'UiB', institusjon: 'Universitetet i Bergen',
         studiekode: '', studiested: 'Bergen', type: 'master2',
+        lokaltOpptak: true,
         years: {
           '2021': Y(185, 163, null, 44.8, 74, 60, null, null, 34, 33),
           '2022': Y(168, 145, null, 38.6, 81, 57, null, null, 28, 25),
@@ -814,6 +893,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'ntnu_mecon', shortName: 'NTNU', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
         studiekode: '', studiested: 'Trondheim', type: 'master2',
+        lokaltOpptak: true,
         years: {
           '2021': Y(312, 87, null, 52.9, 106, 67, null, null, 32, 29),
           '2022': Y(284, 72, null, 41.7, 89, 50, null, null, 27, 23),
@@ -825,11 +905,22 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'uit_mecon', shortName: 'UiT', institusjon: 'UiT Norges arktiske universitet',
         studiekode: '', studiested: 'Tromsø', type: 'master2',
+        lokaltOpptak: true,
         years: {
           '2021': Y(85, 41, null, 48.8, 35, 32, null, null, 6, 5),
           '2022': Y(67, 29, null, 31.0, 19, 18, null, null, 3, 0),
           '2024': Y(69, 38, null, 18.4, 25, 25, null, null, 15, 14),
           '2025': Y(54, 24, null, 25.0, 19, 18, null, null, 12, 12),
+        },
+      },
+      {
+        id: 'bi_mecon', shortName: 'BI', institusjon: 'Handelshøyskolen BI',
+        studiekode: '', studiested: 'Oslo', type: 'master2',
+        lokaltOpptak: true,
+        years: {
+          '2021': Y(64, 59, null, 35.6, 28, 27, null, null, 20, 10),
+          '2022': Y(66, 61, null, 42.6, 35, 35, null, null, 27, 8),
+          '2023': Y(32, 31, null, 41.9, 10, 8, null, null, 0, 0),
         },
       },
     ],
@@ -838,12 +929,13 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
     id: 'mei', label: 'Entreprenørskap og innovasjon (master)', level: 'master2',
     desc: 'Sammenligner NMBUs master i entreprenørskap og innovasjon med entreprenørskapsmasterne ved andre institusjoner.',
     note: 'Lokale opptak; tall fra DBH 379.',
-    nmbuIds: ['nmbu_mei'], defaultIds: ['nmbu_mei', 'ntnu_mei', 'nord_mei', 'bi_mei', 'uio_mei', 'oslomet_mei'],
+    nmbuIds: ['nmbu_mei'], defaultIds: ['nmbu_mei', 'ntnu_mei', 'nord_mei', 'bi_mei', 'uio_mei', 'oslomet_mei', 'kristiania_mei'],
     entries: [
       {
         id: 'nmbu_mei', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet',
         studiekode: '', studiested: 'Ås', type: 'master2',
         url: 'https://www.nmbu.no/studier/master-2-aar/entreprenorskap-og-innovasjon',
+        lokaltOpptak: true,
         years: {
           '2021': Y(206, 115, null, 44.3, 99, 68, null, null, 42, 39),
           '2022': Y(156, 87, null, 59.8, 77, 51, null, null, 32, 27),
@@ -855,6 +947,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'ntnu_mei', shortName: 'NTNU Entreprenørskolen', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
         studiekode: '', studiested: 'Trondheim', type: 'master2',
+        lokaltOpptak: true,
         years: {
           '2021': Y(134, 62, null, 29.0, 18, 16, null, null, 13, 13),
           '2022': Y(104, 50, null, 34.0, 17, 17, null, null, 17, 17),
@@ -866,6 +959,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'ntnu_ment', shortName: 'NTNU Entreprenørskap', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
         studiekode: '', studiested: 'Trondheim', type: 'master2',
+        lokaltOpptak: true,
         years: {
           '2021': Y(158, 78, null, 38.5, 28, 28, null, null, 26, 26),
           '2022': Y(200, 90, null, 40.0, 32, 31, null, null, 25, 23),
@@ -877,6 +971,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'nord_mei', shortName: 'Nord', institusjon: 'Nord universitet',
         studiekode: '', studiested: 'Bodø', type: 'master2',
+        lokaltOpptak: true,
         years: {
           '2022': Y(373, 175, null, 44.6, 62, 57, null, null, 31, 31),
           '2023': Y(317, 156, null, 47.4, 61, 57, null, null, 37, 37),
@@ -887,6 +982,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'bi_mei', shortName: 'BI', institusjon: 'Handelshøyskolen BI',
         studiekode: '', studiested: 'Oslo', type: 'master2',
+        lokaltOpptak: true,
         years: {
           '2021': Y(120, 103, null, 39.8, 50, 50, null, null, 33, 15),
           '2022': Y(113, 108, null, 36.1, 43, 43, null, null, 34, 18),
@@ -898,6 +994,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'uio_mei', shortName: 'UiO', institusjon: 'Universitetet i Oslo',
         studiekode: '', studiested: 'Oslo', type: 'master2',
+        lokaltOpptak: true,
         years: {
           '2021': Y(405, 229, null, 42.4, 140, 93, null, null, 43, 33),
           '2022': Y(820, 563, null, 33.9, 171, 79, null, null, 45, 34),
@@ -909,6 +1006,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'oslomet_mei', shortName: 'OsloMet', institusjon: 'OsloMet – storbyuniversitetet',
         studiekode: '', studiested: 'Oslo', type: 'master2',
+        lokaltOpptak: true,
         years: {
           '2022': Y(373, 175, null, 44.6, 62, 57, null, null, 31, 31),
           '2023': Y(317, 156, null, 47.4, 61, 57, null, null, 37, 37),
@@ -919,9 +1017,23 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
       {
         id: 'uia_mei', shortName: 'UiA', institusjon: 'Universitetet i Agder',
         studiekode: '', studiested: 'Kristiansand', type: 'master2',
+        lokaltOpptak: true,
         years: {
           '2021': Y(74, 74, null, 62.2, 51, 24, null, null, 16, 13),
           '2022': Y(57, 57, null, 54.4, 36, 21, null, null, 13, 12),
+        },
+      },
+      {
+        id: 'kristiania_mei', shortName: 'Kristiania', institusjon: 'Høyskolen Kristiania',
+        studiekode: '', studiested: 'Oslo', type: 'master2',
+        url: 'https://www.kristiania.no/studier/master/innovasjonsledelse/',
+        lokaltOpptak: true,
+        years: {
+          '2021': Y(66, 66, null, 54.5, 59, 59, null, null, 28, 18),
+          '2022': Y(78, 78, null, 64.1, 63, 63, null, null, 33, 23),
+          '2023': Y(79, 79, null, 57.0, 67, 67, null, null, 31, 19),
+          '2024': Y(142, 94, null, 51.1, 123, 123, null, null, 40, 28),
+          '2025': Y(161, 98, null, 65.3, 144, 144, null, null, 50, 34),
         },
       },
     ],

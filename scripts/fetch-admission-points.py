@@ -15,6 +15,11 @@ hos Samordna (B-ØA 2025: 398 i DBH mot 1 417 hos SO). Snittet for dem som møtt
 
 Rådata caches i data/nmbu/kilder/dbh571/<inst>.json (felles for alle fakulteter).
 
+Lokalt opptak (opptakstype L): bare BI (8241) og bare de norskspråklige bachelorprogrammene i LOKAL_POENG.
+BI bruker samme poengskala (karakterpoeng ×10), men engelskspråklige program blander inn internasjonale søkere
+med null poeng, og Kristiania rapporterer på en annen skala (2–4). Tallene merkes «opptakstype»: «L» og vises
+som lokalt opptak. Bare karakterpoeng for dem som møtte (kp_mott) brukes. Cache: data/nmbu/kilder/dbh571/<inst>_L.json.
+
 Bruk:
   python3 scripts/fetch-admission-points.py [fakultet ...] [--refresh]
   (uten fakultet: alle med dbh-programkart.json)
@@ -34,6 +39,7 @@ CACHE = os.path.join(ROOT, "data", "nmbu", "kilder", "dbh571")
 KILDE = ("DBH/HKDIR tabell 571 «Gjennomsnittlige opptakspoeng for søkere», opptakstype N (Samordna opptak), "
          "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData")
 FAKULTETER = ["landsam", "realtek", "kbm", "mina", "biovit", "vet", "hh"]
+LOKAL_POENG = {"8241": {"DIPØAH", "SØ"}}
 
 
 def ctx():
@@ -43,14 +49,14 @@ def ctx():
         return ssl.create_default_context()
 
 
-def fetch(inst, group_by, extra_filter=None):
+def fetch(inst, group_by, extra_filter=None, opptakstype="N"):
     body = {
         "tabell_id": 571, "api_versjon": 1, "statuslinje": "N", "kodetekst": "N", "desimal_separator": ".",
         "groupBy": ["Årstall", "Studieprogramkode"] + group_by, "sortBy": ["Årstall"],
         "filter": [
             {"variabel": "Institusjonskode", "selection": {"filter": "item", "values": [inst]}},
             {"variabel": "Årstall", "selection": {"filter": "item", "values": YEARS}},
-            {"variabel": "Opptakstype", "selection": {"filter": "item", "values": ["N"]}},
+            {"variabel": "Opptakstype", "selection": {"filter": "item", "values": [opptakstype]}},
         ] + (extra_filter or []),
     }
     req = urllib.request.Request(API, data=json.dumps(body, ensure_ascii=False).encode("utf-8"),
@@ -60,12 +66,12 @@ def fetch(inst, group_by, extra_filter=None):
     return json.loads(raw) if raw else []
 
 
-def load_inst(inst, refresh):
-    path = os.path.join(CACHE, f"{inst}.json")
+def load_inst(inst, refresh, opptakstype="N"):
+    path = os.path.join(CACHE, f"{inst}.json" if opptakstype == "N" else f"{inst}_{opptakstype}.json")
     if os.path.exists(path) and not refresh:
         return json.load(open(path, encoding="utf-8"))
-    a = fetch(inst, ["Møtt til studiestart"])
-    b = fetch(inst, ["Prioritet"], [{"variabel": "Prioritet", "selection": {"filter": "item", "values": ["1"]}}])
+    a = fetch(inst, ["Møtt til studiestart"], opptakstype=opptakstype)
+    b = fetch(inst, ["Prioritet"], [{"variabel": "Prioritet", "selection": {"filter": "item", "values": ["1"]}}], opptakstype)
     data = {"hentet": date.today().isoformat(), "institusjonskode": inst, "kilde": KILDE, "motte": a, "forstevalg": b}
     os.makedirs(CACHE, exist_ok=True)
     json.dump(data, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
@@ -125,11 +131,14 @@ def main():
         src = {p["id"]: p.get("source", "SO") for g in pk["groups"] for p in g["programs"]}
         dk = json.load(open(os.path.join(ROOT, "data", fak, "dbh-programkart.json"), encoding="utf-8"))
         progs = [p for p in dk["programs"] if src.get(p["entryId"]) == "SO" and p.get("studieprogramkoder")]
-        plan[fak] = progs
+        lok = [p for p in dk["programs"] if src.get(p["entryId"]) == "local" and p.get("studieprogramkoder")
+               and set(p["studieprogramkoder"]) <= LOKAL_POENG.get(p["institusjonskode"], set())]
+        plan[fak] = progs + [dict(p, _lokal=True) for p in lok]
 
-    insts = sorted({c for progs in plan.values() for p in progs
+    insts = sorted({c for progs in plan.values() for p in progs if not p.get("_lokal")
                     for c in (p.get("institusjonskoder") or [p["institusjonskode"]])})
     raw = {i: load_inst(i, refresh) for i in insts}
+    raw_l = {i: load_inst(i, refresh, "L") for i in sorted({p["institusjonskode"] for progs in plan.values() for p in progs if p.get("_lokal")})}
 
     for fak, progs in plan.items():
         shared = defaultdict(list)
@@ -141,14 +150,21 @@ def main():
         for p in progs:
             codes = set(p["studieprogramkoder"])
             icodes = p.get("institusjonskoder") or [p["institusjonskode"]]
-            ra = [r for i in icodes for r in raw[i]["motte"] if r["Studieprogramkode"] in codes]
-            rb = [r for i in icodes for r in raw[i]["forstevalg"] if r["Studieprogramkode"] in codes]
+            kilde = raw_l if p.get("_lokal") else raw
+            ra = [r for i in icodes for r in kilde[i]["motte"] if r["Studieprogramkode"] in codes]
+            rb = [r for i in icodes for r in kilde[i]["forstevalg"] if r["Studieprogramkode"] in codes]
             years = compute(ra, rb)
             if not years:
                 tom.append(p["entryId"])
                 continue
             key = (tuple(sorted(icodes)), tuple(sorted(codes)))
             entry = {"studieprogramkoder": sorted(codes), "years": years}
+            if p.get("_lokal"):
+                # Bare karakterpoeng for møtte: BIs «opptakspoeng» lå på en annen skala før 2023 og har ingen
+                # tilleggspoeng etterpå, så op_* kan ikke sammenlignes med Samordna. Løpende år (bare våropptak) droppes.
+                entry["years"] = {y: {"kp_mott": v["kp_mott"], "n_mott": v["n_mott"]} for y, v in years.items()
+                                  if v.get("kp_mott") is not None and y < max(YEARS)}
+                entry["opptakstype"] = "L"
             others = [e for e in shared[key] if e != p["entryId"]]
             if others:
                 entry["delerDbhProgramMed"] = others
@@ -159,6 +175,8 @@ def main():
                                  "op_fv = snitt opptakspoeng for førstevalgssøkere; op_alle = snitt for alle søkere i DBH-utvalget; "
                                  "n_* = antall personer bak snittet (skjermede celler er utelatt).",
                    "programs": out}, open(dest, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+        if not out and not progs:
+            continue
         s25 = sum(1 for e in out.values() if (e["years"].get("2025") or {}).get("op_mott") is not None)
         print(f"{fak}: {len(out)} av {len(progs)} SO-program med poeng ({s25} med snitt for møtte 2025)"
               + (f"; uten rader: {', '.join(tom)}" if tom else ""))

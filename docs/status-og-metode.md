@@ -389,3 +389,33 @@ halve poeng under grensen, og trakt fra søker til møtt.
   Kvotene behandles hver for seg (samspillet der FV-søkere som ikke når opp, konkurrerer i ordinær kvote, er ikke modellert).
 - **Test uten passord:** `?internDemo` på utviklingsserveren viser fiktive tall (fjernes i produksjonsbygget).
 - **Oppdatering:** kjør skriptet med ny arbeidsbok (samme arknavn), bygg og push.
+
+## 23. BI og Kristiania i HH-sammenligningene (23.09.2026)
+
+Grunnlaget er kartleggingen i `docs/bi-kristiania-datakilder.md`.
+- **Emnelenker:** `emneUrl.ts` har egne lenkebyggere for BI og Kristiania.
+  - **BI:** kursbeskrivelsene har fast mønster. DBH-koden er bokstaver + 4 siffer + versjonssiffer, så GRA65553 blir `subjectCode=GRA&courseNumber=6555`.
+  - **Kristiania:** emnesidene ligger under fakultet og nivå. `scripts/build-emne-url-oppslag.py` lager `kilde/public/emner/url-8253.json` (22 kB) fra sidekartet, og bare for kodene i det nasjonale emneregisteret: 1 696 av 1 714. Filen lastes i bakgrunnen ved oppstart (`lastEmneUrlOppslag` i main.tsx). Til den er lastet, har Kristiania-emner ingen lenke. Kjør med `--refresh` for å hente sidekartet på nytt.
+- **HH-gruppene** (`make-hh-programkart.py`): alle nye oppføringer har lokalt opptak (DBH 379, `fill-local-admissions.py hh`).
+  - Økonomi og administrasjon: BI DIPØAH og Kristiania BOL.
+  - Økonomi, ledelse og IT (svakere sammenligning, ikke valgt som standard): BI DIPDBH og DIPBTH, Kristiania BOD.
+  - Samfunnsøkonomi (master): BI MSCMSAEH. Siste opptak i 379 var 2023.
+  - Entreprenørskap og innovasjon (master): Kristiania MIN.
+  - BIs tall gjelder alle campuser og nett samlet.
+  - Kristiania: BOL heter «Økonomi og administrasjon» fra høsten 2026, og programsiden for BOD videresender dit. Følg med på nye DBH-koder i 347.
+- **Opptaksvisningen:** `lokaltOpptak` på oppføringen gir merkelappen «Lokalt opptak (DBH 379)» i tabell og velger. Møtt og oppmøteandel vises i Samordna-grupper som har lokale oppføringer.
+- **Tilbudsandel** er et nytt mål for alle program: tilbud / kvalifiserte søkere. For 2025 er den 100 % hos både BI og Kristiania, mot 14,6 % hos NMBU B-ØA og 19,4 % hos NHH. Også i CSV-eksporten, sammen med en kolonne for opptakstype.
+- **Opptakspoeng for BI** (`fetch-admission-points.py`, `LOKAL_POENG`): DBH 571 opptakstype L, bare BI DIPØAH/SØ.
+  - Bare karakterpoeng for dem som møtte (`kp_mott`) brukes, merket `poengLokalt`. BIs «opptakspoeng» lå på en annen skala før 2023 og har ingen tilleggspoeng etterpå.
+  - Løpende år (bare våropptak) droppes. Cache: `data/nmbu/kilder/dbh571/8241_L.json`.
+  - BI DIPØAH: 41,0 i 2025, mot 46,8 for NMBU B-ØA.
+  - Kristianias 571-tall ligger på en annen skala og brukes ikke.
+- **Studiebarometeret:** `sbId` og `sbMerknad` i dbh-programkart går foran automatisk oppslag. BI ØA bruker BI Bergen (Oslo har for få svar); merknaden vises som advarsel.
+- **Inntekt per program:** BI og Kristiania (`PRIVATE` i build-revenue.py) er holdt utenfor. De finansieres i hovedsak med skolepenger, ikke etter de statlige satsene.
+- **Fagmiljø og økonomi:** Kristiania kommer med automatisk, fordi institusjonslisten bygges fra programkartene.
+  - BI og NHH (`HELINST` i build-staff.py) er rene handelshøyskoler uten fakultet som eier programmene. Fakultetsenheten er derfor hele institusjonen («Hele BI», «Hele NHH»). NHH sto før som «Sentraladministrasjonen».
+  - Økonomikortet har tre nye mål fra 902:
+    - skolepenger («Eksamensavgift private høyskoler»)
+    - skolepenger per studentårsverk (2025: Kristiania ≈ 106 tkr, BI ≈ 102 tkr)
+    - statstilskudd per studentårsverk
+

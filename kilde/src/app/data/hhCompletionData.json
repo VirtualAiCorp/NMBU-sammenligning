@@ -19,7 +19,9 @@
     "inn_oa",
     "nord_oa",
     "hvl_bergen_oa",
-    "hiof_oa"
+    "hiof_oa",
+    "bi_oa",
+    "kristiania_oa"
    ],
    "programs": [
     {
@@ -7652,6 +7654,562 @@
      ]
     },
     {
+     "entryId": "bi_oa",
+     "shortName": "BI",
+     "institusjon": "Handelshøyskolen BI",
+     "isNmbu": false,
+     "programnavn": "Økonomi og administrasjon (bachelor)",
+     "dbhKoder": [
+      "DIPØAH"
+     ],
+     "kull": [
+      {
+       "aar": 2017,
+       "normertAar": 2020,
+       "nivaa": "B3",
+       "startkull": 1414,
+       "startkullKvinner": 458,
+       "fullfortNormert": 592,
+       "fullfortNormertKvinner": 219,
+       "fullfort1": 737,
+       "fullfort2": 773,
+       "studerer": 455,
+       "studerer1": 203,
+       "studerer2": 110,
+       "frafalt": 367,
+       "frafalt1": 474,
+       "frafalt2": 531,
+       "inst": {
+        "fullfortNormert": 630,
+        "fullfort1": 815,
+        "fullfort2": 875,
+        "frafalt": 332,
+        "frafalt2": 434
+       },
+       "sektor": {
+        "fullfortNormert": 633,
+        "fullfort1": 837,
+        "fullfort2": 913,
+        "frafalt": 253,
+        "frafalt2": 313
+       }
+      },
+      {
+       "aar": 2018,
+       "normertAar": 2021,
+       "nivaa": "B3",
+       "startkull": 1375,
+       "startkullKvinner": 478,
+       "fullfortNormert": 592,
+       "fullfortNormertKvinner": 199,
+       "fullfort1": 667,
+       "fullfort2": 708,
+       "studerer": 422,
+       "studerer1": 215,
+       "studerer2": 107,
+       "frafalt": 361,
+       "frafalt1": 493,
+       "frafalt2": 560,
+       "inst": {
+        "fullfortNormert": 665,
+        "fullfort1": 777,
+        "fullfort2": 840,
+        "frafalt": 329,
+        "frafalt2": 435
+       },
+       "sektor": {
+        "fullfortNormert": 667,
+        "fullfort1": 804,
+        "fullfort2": 885,
+        "frafalt": 239,
+        "frafalt2": 330
+       }
+      },
+      {
+       "aar": 2019,
+       "normertAar": 2022,
+       "nivaa": "B3",
+       "startkull": 1227,
+       "startkullKvinner": 417,
+       "fullfortNormert": 544,
+       "fullfortNormertKvinner": 195,
+       "fullfort1": 640,
+       "fullfort2": 691,
+       "studerer": 405,
+       "studerer1": 196,
+       "studerer2": 107,
+       "frafalt": 278,
+       "frafalt1": 391,
+       "frafalt2": 429,
+       "inst": {
+        "fullfortNormert": 593,
+        "fullfort1": 710,
+        "fullfort2": 781,
+        "frafalt": 256,
+        "frafalt2": 349
+       },
+       "sektor": {
+        "fullfortNormert": 594,
+        "fullfort1": 720,
+        "fullfort2": 802,
+        "frafalt": 204,
+        "frafalt2": 284
+       }
+      },
+      {
+       "aar": 2020,
+       "normertAar": 2023,
+       "nivaa": "B3",
+       "startkull": 1449,
+       "startkullKvinner": 439,
+       "fullfortNormert": 546,
+       "fullfortNormertKvinner": 174,
+       "fullfort1": 708,
+       "fullfort2": 778,
+       "studerer": 566,
+       "studerer1": 299,
+       "studerer2": 155,
+       "frafalt": 337,
+       "frafalt1": 442,
+       "frafalt2": 516,
+       "inst": {
+        "fullfortNormert": 600,
+        "fullfort1": 790,
+        "fullfort2": 884,
+        "frafalt": 303,
+        "frafalt2": 423
+       },
+       "sektor": {
+        "fullfortNormert": 604,
+        "fullfort1": 809,
+        "fullfort2": 919,
+        "frafalt": 227,
+        "frafalt2": 330
+       }
+      },
+      {
+       "aar": 2021,
+       "normertAar": 2024,
+       "nivaa": "B3",
+       "startkull": 1476,
+       "startkullKvinner": 449,
+       "fullfortNormert": 556,
+       "fullfortNormertKvinner": 177,
+       "fullfort1": 678,
+       "fullfort2": 0,
+       "studerer": 511,
+       "studerer1": 279,
+       "studerer2": 0,
+       "frafalt": 409,
+       "frafalt1": 519,
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 622,
+        "fullfort1": 793,
+        "fullfort2": 0,
+        "frafalt": 369,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 623,
+        "fullfort1": 817,
+        "fullfort2": 0,
+        "frafalt": 283,
+        "frafalt2": 0
+       }
+      },
+      {
+       "aar": 2022,
+       "normertAar": 2025,
+       "nivaa": "B3",
+       "startkull": 1262,
+       "startkullKvinner": 392,
+       "fullfortNormert": 549,
+       "fullfortNormertKvinner": 159,
+       "fullfort1": 0,
+       "fullfort2": 0,
+       "studerer": 410,
+       "studerer1": 0,
+       "studerer2": 0,
+       "frafalt": 303,
+       "frafalt1": 0,
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 610,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 268,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 611,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 213,
+        "frafalt2": 0
+       }
+      }
+     ],
+     "aar": [
+      {
+       "aar": 2017,
+       "registrerte": 3940,
+       "registrerteKvinner": 1466,
+       "nye": 967,
+       "nyeKvinner": 285,
+       "kandidater": 97,
+       "kandidaterKvinner": 50,
+       "spPlanlagt": null,
+       "spGjennomfort": null
+      },
+      {
+       "aar": 2018,
+       "registrerte": 3765,
+       "registrerteKvinner": 1352,
+       "nye": 924,
+       "nyeKvinner": 299,
+       "kandidater": 823,
+       "kandidaterKvinner": 362,
+       "spPlanlagt": null,
+       "spGjennomfort": null
+      },
+      {
+       "aar": 2019,
+       "registrerte": 3496,
+       "registrerteKvinner": 1204,
+       "nye": 835,
+       "nyeKvinner": 253,
+       "kandidater": 755,
+       "kandidaterKvinner": 292,
+       "spPlanlagt": null,
+       "spGjennomfort": null
+      },
+      {
+       "aar": 2020,
+       "registrerte": 3598,
+       "registrerteKvinner": 1160,
+       "nye": 1040,
+       "nyeKvinner": 293,
+       "kandidater": 838,
+       "kandidaterKvinner": 319,
+       "spPlanlagt": null,
+       "spGjennomfort": null
+      },
+      {
+       "aar": 2021,
+       "registrerte": 3610,
+       "registrerteKvinner": 1106,
+       "nye": 1024,
+       "nyeKvinner": 271,
+       "kandidater": 815,
+       "kandidaterKvinner": 282,
+       "spPlanlagt": null,
+       "spGjennomfort": null
+      },
+      {
+       "aar": 2022,
+       "registrerte": 3261,
+       "registrerteKvinner": 999,
+       "nye": 894,
+       "nyeKvinner": 265,
+       "kandidater": 665,
+       "kandidaterKvinner": 223,
+       "spPlanlagt": null,
+       "spGjennomfort": null
+      },
+      {
+       "aar": 2023,
+       "registrerte": 3345,
+       "registrerteKvinner": 1001,
+       "nye": 970,
+       "nyeKvinner": 303,
+       "kandidater": 691,
+       "kandidaterKvinner": 219,
+       "spPlanlagt": null,
+       "spGjennomfort": null
+      },
+      {
+       "aar": 2024,
+       "registrerte": 3543,
+       "registrerteKvinner": 1058,
+       "nye": 1108,
+       "nyeKvinner": 324,
+       "kandidater": 738,
+       "kandidaterKvinner": 186,
+       "spPlanlagt": null,
+       "spGjennomfort": null
+      },
+      {
+       "aar": 2025,
+       "registrerte": 3978,
+       "registrerteKvinner": 1254,
+       "nye": 1340,
+       "nyeKvinner": 432,
+       "kandidater": 715,
+       "kandidaterKvinner": 209,
+       "spPlanlagt": null,
+       "spGjennomfort": null
+      }
+     ]
+    },
+    {
+     "entryId": "kristiania_oa",
+     "shortName": "Kristiania",
+     "institusjon": "Høyskolen Kristiania",
+     "isNmbu": false,
+     "programnavn": "Økonomi og ledelse (bachelor)",
+     "dbhKoder": [
+      "BOL"
+     ],
+     "kull": [
+      {
+       "aar": 2018,
+       "normertAar": 2021,
+       "nivaa": "B3",
+       "startkull": 46,
+       "startkullKvinner": 17,
+       "fullfortNormert": 16,
+       "fullfortNormertKvinner": 8,
+       "fullfort1": 16,
+       "fullfort2": 16,
+       "studerer": 11,
+       "studerer1": 6,
+       "studerer2": 5,
+       "frafalt": 19,
+       "frafalt1": 24,
+       "frafalt2": 25,
+       "inst": {
+        "fullfortNormert": 16,
+        "fullfort1": 17,
+        "fullfort2": 18,
+        "frafalt": 21,
+        "frafalt2": 27
+       },
+       "sektor": {
+        "fullfortNormert": 16,
+        "fullfort1": 19,
+        "fullfort2": 21,
+        "frafalt": 14,
+        "frafalt2": 19
+       }
+      },
+      {
+       "aar": 2019,
+       "normertAar": 2022,
+       "nivaa": "B3",
+       "startkull": 61,
+       "startkullKvinner": 28,
+       "fullfortNormert": 22,
+       "fullfortNormertKvinner": 11,
+       "fullfort1": 24,
+       "fullfort2": 28,
+       "studerer": 18,
+       "studerer1": 5,
+       "studerer2": 4,
+       "frafalt": 21,
+       "frafalt1": 32,
+       "frafalt2": 29,
+       "inst": {
+        "fullfortNormert": 25,
+        "fullfort1": 27,
+        "fullfort2": 31,
+        "frafalt": 22,
+        "frafalt2": 28
+       },
+       "sektor": {
+        "fullfortNormert": 26,
+        "fullfort1": 28,
+        "fullfort2": 34,
+        "frafalt": 16,
+        "frafalt2": 20
+       }
+      },
+      {
+       "aar": 2020,
+       "normertAar": 2023,
+       "nivaa": "B3",
+       "startkull": 94,
+       "startkullKvinner": 36,
+       "fullfortNormert": 28,
+       "fullfortNormertKvinner": 14,
+       "fullfort1": 34,
+       "fullfort2": 36,
+       "studerer": 25,
+       "studerer1": 9,
+       "studerer2": 9,
+       "frafalt": 41,
+       "frafalt1": 51,
+       "frafalt2": 49,
+       "inst": {
+        "fullfortNormert": 30,
+        "fullfort1": 36,
+        "fullfort2": 38,
+        "frafalt": 43,
+        "frafalt2": 55
+       },
+       "sektor": {
+        "fullfortNormert": 33,
+        "fullfort1": 41,
+        "fullfort2": 46,
+        "frafalt": 31,
+        "frafalt2": 31
+       }
+      },
+      {
+       "aar": 2021,
+       "normertAar": 2024,
+       "nivaa": "B3",
+       "startkull": 110,
+       "startkullKvinner": 44,
+       "fullfortNormert": 47,
+       "fullfortNormertKvinner": 22,
+       "fullfort1": 51,
+       "fullfort2": 0,
+       "studerer": 27,
+       "studerer1": 10,
+       "studerer2": 0,
+       "frafalt": 36,
+       "frafalt1": 49,
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 47,
+        "fullfort1": 51,
+        "fullfort2": 0,
+        "frafalt": 39,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 47,
+        "fullfort1": 55,
+        "fullfort2": 0,
+        "frafalt": 26,
+        "frafalt2": 0
+       }
+      },
+      {
+       "aar": 2022,
+       "normertAar": 2025,
+       "nivaa": "B3",
+       "startkull": 81,
+       "startkullKvinner": 30,
+       "fullfortNormert": 25,
+       "fullfortNormertKvinner": 12,
+       "fullfort1": 0,
+       "fullfort2": 0,
+       "studerer": 28,
+       "studerer1": 0,
+       "studerer2": 0,
+       "frafalt": 28,
+       "frafalt1": 0,
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 25,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 31,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 25,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 23,
+        "frafalt2": 0
+       }
+      }
+     ],
+     "aar": [
+      {
+       "aar": 2018,
+       "registrerte": 79,
+       "registrerteKvinner": 35,
+       "nye": 43,
+       "nyeKvinner": 16,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 3772.5,
+       "spGjennomfort": 2392.5
+      },
+      {
+       "aar": 2019,
+       "registrerte": 119,
+       "registrerteKvinner": 57,
+       "nye": 59,
+       "nyeKvinner": 29,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 5655.0,
+       "spGjennomfort": 4312.5
+      },
+      {
+       "aar": 2020,
+       "registrerte": 158,
+       "registrerteKvinner": 66,
+       "nye": 95,
+       "nyeKvinner": 36,
+       "kandidater": 24,
+       "kandidaterKvinner": 10,
+       "spPlanlagt": 7980.0,
+       "spGjennomfort": 6772.5
+      },
+      {
+       "aar": 2021,
+       "registrerte": 208,
+       "registrerteKvinner": 86,
+       "nye": 104,
+       "nyeKvinner": 41,
+       "kandidater": 20,
+       "kandidaterKvinner": 11,
+       "spPlanlagt": 10372.5,
+       "spGjennomfort": 8670.0
+      },
+      {
+       "aar": 2022,
+       "registrerte": 207,
+       "registrerteKvinner": 85,
+       "nye": 75,
+       "nyeKvinner": 26,
+       "kandidater": 23,
+       "kandidaterKvinner": 11,
+       "spPlanlagt": 11820.0,
+       "spGjennomfort": 9742.5
+      },
+      {
+       "aar": 2023,
+       "registrerte": 217,
+       "registrerteKvinner": 99,
+       "nye": 90,
+       "nyeKvinner": 42,
+       "kandidater": 30,
+       "kandidaterKvinner": 14,
+       "spPlanlagt": 12030.0,
+       "spGjennomfort": 10327.5
+      },
+      {
+       "aar": 2024,
+       "registrerte": 211,
+       "registrerteKvinner": 83,
+       "nye": 96,
+       "nyeKvinner": 30,
+       "kandidater": 57,
+       "kandidaterKvinner": 26,
+       "spPlanlagt": 12360.0,
+       "spGjennomfort": 9922.5
+      },
+      {
+       "aar": 2025,
+       "registrerte": 286,
+       "registrerteKvinner": 115,
+       "nye": 149,
+       "nyeKvinner": 56,
+       "kandidater": 32,
+       "kandidaterKvinner": 14,
+       "spPlanlagt": 14632.5,
+       "spGjennomfort": 11407.5
+      }
+     ]
+    },
+    {
      "entryId": "ntnu_siv",
      "shortName": "NTNU siviløkonom",
      "institusjon": "Norges teknisk-naturvitenskapelige universitet",
@@ -12856,6 +13414,567 @@
        "spGjennomfort": 1560.0
       }
      ]
+    },
+    {
+     "entryId": "bi_dbh",
+     "shortName": "BI Digital Business",
+     "institusjon": "Handelshøyskolen BI",
+     "isNmbu": false,
+     "programnavn": "Bachelor of Digital Business",
+     "dbhKoder": [
+      "DIPDBH"
+     ],
+     "kull": [
+      {
+       "aar": 2022,
+       "normertAar": 2025,
+       "nivaa": "B3",
+       "startkull": 23,
+       "startkullKvinner": 14,
+       "fullfortNormert": 10,
+       "fullfortNormertKvinner": 5,
+       "fullfort1": 0,
+       "fullfort2": 0,
+       "studerer": 0,
+       "studerer1": 0,
+       "studerer2": 0,
+       "frafalt": 11,
+       "frafalt1": 0,
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 10,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 11,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 10,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 11,
+        "frafalt2": 0
+       }
+      }
+     ],
+     "aar": [
+      {
+       "aar": 2022,
+       "registrerte": 19,
+       "registrerteKvinner": 11,
+       "nye": 16,
+       "nyeKvinner": 8,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": null,
+       "spGjennomfort": null
+      },
+      {
+       "aar": 2023,
+       "registrerte": 53,
+       "registrerteKvinner": 29,
+       "nye": 33,
+       "nyeKvinner": 17,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": null,
+       "spGjennomfort": null
+      },
+      {
+       "aar": 2024,
+       "registrerte": 89,
+       "registrerteKvinner": 47,
+       "nye": 34,
+       "nyeKvinner": 15,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": null,
+       "spGjennomfort": null
+      },
+      {
+       "aar": 2025,
+       "registrerte": 134,
+       "registrerteKvinner": 69,
+       "nye": 55,
+       "nyeKvinner": 24,
+       "kandidater": 10,
+       "kandidaterKvinner": 5,
+       "spPlanlagt": null,
+       "spGjennomfort": null
+      }
+     ]
+    },
+    {
+     "entryId": "bi_dsb",
+     "shortName": "BI Data Science",
+     "institusjon": "Handelshøyskolen BI",
+     "isNmbu": false,
+     "programnavn": "Bachelor of Data Science for Business",
+     "dbhKoder": [
+      "DIPBTH"
+     ],
+     "kull": [
+      {
+       "aar": 2019,
+       "normertAar": 2022,
+       "nivaa": "B3",
+       "startkull": 50,
+       "startkullKvinner": 26,
+       "fullfortNormert": 26,
+       "fullfortNormertKvinner": 17,
+       "fullfort1": 30,
+       "fullfort2": 32,
+       "studerer": 15,
+       "studerer1": 7,
+       "studerer2": 4,
+       "frafalt": 9,
+       "frafalt1": 13,
+       "frafalt2": 14,
+       "inst": {
+        "fullfortNormert": 26,
+        "fullfort1": 31,
+        "fullfort2": 34,
+        "frafalt": 9,
+        "frafalt2": 13
+       },
+       "sektor": {
+        "fullfortNormert": 26,
+        "fullfort1": 32,
+        "fullfort2": 35,
+        "frafalt": 8,
+        "frafalt2": 9
+       }
+      },
+      {
+       "aar": 2020,
+       "normertAar": 2023,
+       "nivaa": "B3",
+       "startkull": 43,
+       "startkullKvinner": 14,
+       "fullfortNormert": 17,
+       "fullfortNormertKvinner": 5,
+       "fullfort1": 21,
+       "fullfort2": 21,
+       "studerer": 18,
+       "studerer1": 4,
+       "studerer2": 3,
+       "frafalt": 8,
+       "frafalt1": 18,
+       "frafalt2": 19,
+       "inst": {
+        "fullfortNormert": 21,
+        "fullfort1": 28,
+        "fullfort2": 29,
+        "frafalt": 7,
+        "frafalt2": 12
+       },
+       "sektor": {
+        "fullfortNormert": 21,
+        "fullfort1": 28,
+        "fullfort2": 29,
+        "frafalt": 5,
+        "frafalt2": 12
+       }
+      },
+      {
+       "aar": 2021,
+       "normertAar": 2024,
+       "nivaa": "B3",
+       "startkull": 61,
+       "startkullKvinner": 19,
+       "fullfortNormert": 21,
+       "fullfortNormertKvinner": 8,
+       "fullfort1": 29,
+       "fullfort2": 0,
+       "studerer": 17,
+       "studerer1": 10,
+       "studerer2": 0,
+       "frafalt": 23,
+       "frafalt1": 22,
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 22,
+        "fullfort1": 31,
+        "fullfort2": 0,
+        "frafalt": 23,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 22,
+        "fullfort1": 33,
+        "fullfort2": 0,
+        "frafalt": 19,
+        "frafalt2": 0
+       }
+      },
+      {
+       "aar": 2022,
+       "normertAar": 2025,
+       "nivaa": "B3",
+       "startkull": 58,
+       "startkullKvinner": 23,
+       "fullfortNormert": 20,
+       "fullfortNormertKvinner": 8,
+       "fullfort1": 0,
+       "fullfort2": 0,
+       "studerer": 16,
+       "studerer1": 0,
+       "studerer2": 0,
+       "frafalt": 22,
+       "frafalt1": 0,
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 21,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 22,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 21,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 16,
+        "frafalt2": 0
+       }
+      }
+     ],
+     "aar": [
+      {
+       "aar": 2019,
+       "registrerte": 49,
+       "registrerteKvinner": 25,
+       "nye": 37,
+       "nyeKvinner": 19,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": null,
+       "spGjennomfort": null
+      },
+      {
+       "aar": 2020,
+       "registrerte": 88,
+       "registrerteKvinner": 38,
+       "nye": 39,
+       "nyeKvinner": 12,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": null,
+       "spGjennomfort": null
+      },
+      {
+       "aar": 2021,
+       "registrerte": 119,
+       "registrerteKvinner": 48,
+       "nye": 49,
+       "nyeKvinner": 17,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": null,
+       "spGjennomfort": null
+      },
+      {
+       "aar": 2022,
+       "registrerte": 135,
+       "registrerteKvinner": 49,
+       "nye": 44,
+       "nyeKvinner": 15,
+       "kandidater": 27,
+       "kandidaterKvinner": 18,
+       "spPlanlagt": null,
+       "spGjennomfort": null
+      },
+      {
+       "aar": 2023,
+       "registrerte": 147,
+       "registrerteKvinner": 57,
+       "nye": 60,
+       "nyeKvinner": 26,
+       "kandidater": 22,
+       "kandidaterKvinner": 8,
+       "spPlanlagt": null,
+       "spGjennomfort": null
+      },
+      {
+       "aar": 2024,
+       "registrerte": 172,
+       "registrerteKvinner": 72,
+       "nye": 64,
+       "nyeKvinner": 29,
+       "kandidater": 27,
+       "kandidaterKvinner": 12,
+       "spPlanlagt": null,
+       "spGjennomfort": null
+      },
+      {
+       "aar": 2025,
+       "registrerte": 186,
+       "registrerteKvinner": 77,
+       "nye": 48,
+       "nyeKvinner": 17,
+       "kandidater": 29,
+       "kandidaterKvinner": 8,
+       "spPlanlagt": null,
+       "spGjennomfort": null
+      }
+     ]
+    },
+    {
+     "entryId": "kristiania_bod",
+     "shortName": "Kristiania",
+     "institusjon": "Høyskolen Kristiania",
+     "isNmbu": false,
+     "programnavn": "Digitalisering og økonomi (bachelor)",
+     "dbhKoder": [
+      "BOD"
+     ],
+     "kull": [
+      {
+       "aar": 2018,
+       "normertAar": 2021,
+       "nivaa": "B3",
+       "startkull": 60,
+       "startkullKvinner": 24,
+       "fullfortNormert": 22,
+       "fullfortNormertKvinner": 11,
+       "fullfort1": 26,
+       "fullfort2": 27,
+       "studerer": 16,
+       "studerer1": 4,
+       "studerer2": 4,
+       "frafalt": 22,
+       "frafalt1": 30,
+       "frafalt2": 29,
+       "inst": {
+        "fullfortNormert": 22,
+        "fullfort1": 26,
+        "fullfort2": 28,
+        "frafalt": 23,
+        "frafalt2": 30
+       },
+       "sektor": {
+        "fullfortNormert": 22,
+        "fullfort1": 27,
+        "fullfort2": 30,
+        "frafalt": 16,
+        "frafalt2": 18
+       }
+      },
+      {
+       "aar": 2019,
+       "normertAar": 2022,
+       "nivaa": "B3",
+       "startkull": 54,
+       "startkullKvinner": 16,
+       "fullfortNormert": 27,
+       "fullfortNormertKvinner": 7,
+       "fullfort1": 27,
+       "fullfort2": 28,
+       "studerer": 15,
+       "studerer1": 6,
+       "studerer2": 3,
+       "frafalt": 12,
+       "frafalt1": 21,
+       "frafalt2": 23,
+       "inst": {
+        "fullfortNormert": 27,
+        "fullfort1": 29,
+        "fullfort2": 30,
+        "frafalt": 15,
+        "frafalt2": 22
+       },
+       "sektor": {
+        "fullfortNormert": 27,
+        "fullfort1": 30,
+        "fullfort2": 34,
+        "frafalt": 9,
+        "frafalt2": 16
+       }
+      },
+      {
+       "aar": 2020,
+       "normertAar": 2023,
+       "nivaa": "B3",
+       "startkull": 30,
+       "startkullKvinner": 10,
+       "fullfortNormert": 13,
+       "fullfortNormertKvinner": 7,
+       "fullfort1": 14,
+       "fullfort2": 14,
+       "studerer": 12,
+       "studerer1": 3,
+       "studerer2": 3,
+       "frafalt": 5,
+       "frafalt1": 13,
+       "frafalt2": 13,
+       "inst": {
+        "fullfortNormert": 13,
+        "fullfort1": 14,
+        "fullfort2": 14,
+        "frafalt": 6,
+        "frafalt2": 14
+       },
+       "sektor": {
+        "fullfortNormert": 13,
+        "fullfort1": 15,
+        "fullfort2": 15,
+        "frafalt": 5,
+        "frafalt2": 12
+       }
+      },
+      {
+       "aar": 2021,
+       "normertAar": 2024,
+       "nivaa": "B3",
+       "startkull": 25,
+       "startkullKvinner": 4,
+       "fullfortNormert": 12,
+       "fullfortNormertKvinner": 3,
+       "fullfort1": 12,
+       "fullfort2": 0,
+       "studerer": 3,
+       "studerer1": 0,
+       "studerer2": 0,
+       "frafalt": 10,
+       "frafalt1": 12,
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 12,
+        "fullfort1": 12,
+        "fullfort2": 0,
+        "frafalt": 10,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 12,
+        "fullfort1": 12,
+        "fullfort2": 0,
+        "frafalt": 6,
+        "frafalt2": 0
+       }
+      },
+      {
+       "aar": 2022,
+       "normertAar": 2025,
+       "nivaa": "B3",
+       "startkull": 24,
+       "startkullKvinner": 10,
+       "fullfortNormert": 13,
+       "fullfortNormertKvinner": 5,
+       "fullfort1": 0,
+       "fullfort2": 0,
+       "studerer": 5,
+       "studerer1": 0,
+       "studerer2": 0,
+       "frafalt": 6,
+       "frafalt1": 0,
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 13,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 7,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 13,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 4,
+        "frafalt2": 0
+       }
+      }
+     ],
+     "aar": [
+      {
+       "aar": 2018,
+       "registrerte": 60,
+       "registrerteKvinner": 24,
+       "nye": 57,
+       "nyeKvinner": 24,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 1800.0,
+       "spGjennomfort": 1035.0
+      },
+      {
+       "aar": 2019,
+       "registrerte": 89,
+       "registrerteKvinner": 32,
+       "nye": 52,
+       "nyeKvinner": 16,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 4050.0,
+       "spGjennomfort": 3247.5
+      },
+      {
+       "aar": 2020,
+       "registrerte": 112,
+       "registrerteKvinner": 40,
+       "nye": 31,
+       "nyeKvinner": 11,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 5857.5,
+       "spGjennomfort": 5332.5
+      },
+      {
+       "aar": 2021,
+       "registrerte": 92,
+       "registrerteKvinner": 26,
+       "nye": 21,
+       "nyeKvinner": 3,
+       "kandidater": 21,
+       "kandidaterKvinner": 11,
+       "spPlanlagt": 5850.0,
+       "spGjennomfort": 5437.5
+      },
+      {
+       "aar": 2022,
+       "registrerte": 64,
+       "registrerteKvinner": 23,
+       "nye": 23,
+       "nyeKvinner": 10,
+       "kandidater": 34,
+       "kandidaterKvinner": 11,
+       "spPlanlagt": 4305.0,
+       "spGjennomfort": 3877.5
+      },
+      {
+       "aar": 2023,
+       "registrerte": 51,
+       "registrerteKvinner": 17,
+       "nye": 15,
+       "nyeKvinner": 4,
+       "kandidater": 15,
+       "kandidaterKvinner": 7,
+       "spPlanlagt": 3375.0,
+       "spGjennomfort": 2955.0
+      },
+      {
+       "aar": 2024,
+       "registrerte": 50,
+       "registrerteKvinner": 18,
+       "nye": 19,
+       "nyeKvinner": 7,
+       "kandidater": 13,
+       "kandidaterKvinner": 3,
+       "spPlanlagt": 2812.5,
+       "spGjennomfort": 2572.5
+      },
+      {
+       "aar": 2025,
+       "registrerte": 55,
+       "registrerteKvinner": 18,
+       "nye": 25,
+       "nyeKvinner": 10,
+       "kandidater": 18,
+       "kandidaterKvinner": 5,
+       "spPlanlagt": 3060.0,
+       "spGjennomfort": 2557.5
+      }
+     ]
     }
    ]
   },
@@ -17160,7 +18279,8 @@
     "uio_mecon",
     "uib_mecon",
     "ntnu_mecon",
-    "uit_mecon"
+    "uit_mecon",
+    "bi_mecon"
    ],
    "programs": [
     {
@@ -19270,6 +20390,210 @@
        "spGjennomfort": 1205.0
       }
      ]
+    },
+    {
+     "entryId": "bi_mecon",
+     "shortName": "BI",
+     "institusjon": "Handelshøyskolen BI",
+     "isNmbu": false,
+     "programnavn": "Master of Science in Applied Economics",
+     "dbhKoder": [
+      "MSCMSAEH"
+     ],
+     "kull": [
+      {
+       "aar": 2019,
+       "normertAar": 2021,
+       "nivaa": "M2",
+       "startkull": 6,
+       "startkullKvinner": 0,
+       "fullfortNormert": 4,
+       "fullfortNormertKvinner": 0,
+       "fullfort1": 4,
+       "fullfort2": 4,
+       "studerer": 0,
+       "studerer1": 0,
+       "studerer2": 0,
+       "frafalt": 0,
+       "frafalt1": 0,
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 4,
+        "fullfort1": 4,
+        "fullfort2": 4,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 4,
+        "fullfort1": 4,
+        "fullfort2": 4,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
+      },
+      {
+       "aar": 2020,
+       "normertAar": 2022,
+       "nivaa": "M2",
+       "startkull": 8,
+       "startkullKvinner": 0,
+       "fullfortNormert": 8,
+       "fullfortNormertKvinner": 0,
+       "fullfort1": 8,
+       "fullfort2": 8,
+       "studerer": 0,
+       "studerer1": 0,
+       "studerer2": 0,
+       "frafalt": 0,
+       "frafalt1": 0,
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 8,
+        "fullfort1": 8,
+        "fullfort2": 8,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 8,
+        "fullfort1": 8,
+        "fullfort2": 8,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
+      },
+      {
+       "aar": 2021,
+       "normertAar": 2023,
+       "nivaa": "M2",
+       "startkull": 10,
+       "startkullKvinner": 3,
+       "fullfortNormert": 8,
+       "fullfortNormertKvinner": 0,
+       "fullfort1": 8,
+       "fullfort2": 9,
+       "studerer": 0,
+       "studerer1": 0,
+       "studerer2": 0,
+       "frafalt": 0,
+       "frafalt1": 0,
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 8,
+        "fullfort1": 8,
+        "fullfort2": 9,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 8,
+        "fullfort1": 8,
+        "fullfort2": 9,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
+      },
+      {
+       "aar": 2022,
+       "normertAar": 2024,
+       "nivaa": "M2",
+       "startkull": 8,
+       "startkullKvinner": 5,
+       "fullfortNormert": 3,
+       "fullfortNormertKvinner": 0,
+       "fullfort1": 5,
+       "fullfort2": 0,
+       "studerer": 0,
+       "studerer1": 0,
+       "studerer2": 0,
+       "frafalt": 3,
+       "frafalt1": 3,
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 4,
+        "fullfort1": 6,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 4,
+        "fullfort1": 6,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
+      }
+     ],
+     "aar": [
+      {
+       "aar": 2019,
+       "registrerte": 6,
+       "registrerteKvinner": 0,
+       "nye": 5,
+       "nyeKvinner": 0,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": null,
+       "spGjennomfort": null
+      },
+      {
+       "aar": 2020,
+       "registrerte": 14,
+       "registrerteKvinner": 3,
+       "nye": 0,
+       "nyeKvinner": 0,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": null,
+       "spGjennomfort": null
+      },
+      {
+       "aar": 2021,
+       "registrerte": 19,
+       "registrerteKvinner": 5,
+       "nye": 7,
+       "nyeKvinner": 0,
+       "kandidater": 5,
+       "kandidaterKvinner": 0,
+       "spPlanlagt": null,
+       "spGjennomfort": null
+      },
+      {
+       "aar": 2022,
+       "registrerte": 15,
+       "registrerteKvinner": 5,
+       "nye": 4,
+       "nyeKvinner": 0,
+       "kandidater": 8,
+       "kandidaterKvinner": 0,
+       "spPlanlagt": null,
+       "spGjennomfort": null
+      },
+      {
+       "aar": 2023,
+       "registrerte": 6,
+       "registrerteKvinner": 0,
+       "nye": null,
+       "nyeKvinner": null,
+       "kandidater": 8,
+       "kandidaterKvinner": 0,
+       "spPlanlagt": null,
+       "spGjennomfort": null
+      },
+      {
+       "aar": 2024,
+       "registrerte": 3,
+       "registrerteKvinner": 0,
+       "nye": null,
+       "nyeKvinner": null,
+       "kandidater": 3,
+       "kandidaterKvinner": 0,
+       "spPlanlagt": null,
+       "spGjennomfort": null
+      }
+     ]
     }
    ]
   },
@@ -19286,7 +20610,8 @@
     "nord_mei",
     "bi_mei",
     "uio_mei",
-    "oslomet_mei"
+    "oslomet_mei",
+    "kristiania_mei"
    ],
    "programs": [
     {
@@ -21681,6 +23006,210 @@
        "kandidaterKvinner": null,
        "spPlanlagt": 0.0,
        "spGjennomfort": 0.0
+      }
+     ]
+    },
+    {
+     "entryId": "kristiania_mei",
+     "shortName": "Kristiania",
+     "institusjon": "Høyskolen Kristiania",
+     "isNmbu": false,
+     "programnavn": "Innovasjonsledelse (master 2 år)",
+     "dbhKoder": [
+      "MIN"
+     ],
+     "kull": [
+      {
+       "aar": 2020,
+       "normertAar": 2022,
+       "nivaa": "M2",
+       "startkull": 19,
+       "startkullKvinner": 14,
+       "fullfortNormert": 16,
+       "fullfortNormertKvinner": 12,
+       "fullfort1": 17,
+       "fullfort2": 17,
+       "studerer": 0,
+       "studerer1": 0,
+       "studerer2": 0,
+       "frafalt": 0,
+       "frafalt1": 0,
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 16,
+        "fullfort1": 17,
+        "fullfort2": 17,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 16,
+        "fullfort1": 17,
+        "fullfort2": 17,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
+      },
+      {
+       "aar": 2021,
+       "normertAar": 2023,
+       "nivaa": "M2",
+       "startkull": 18,
+       "startkullKvinner": 9,
+       "fullfortNormert": 14,
+       "fullfortNormertKvinner": 6,
+       "fullfort1": 15,
+       "fullfort2": 15,
+       "studerer": 3,
+       "studerer1": 0,
+       "studerer2": 0,
+       "frafalt": 0,
+       "frafalt1": 3,
+       "frafalt2": 3,
+       "inst": {
+        "fullfortNormert": 14,
+        "fullfort1": 15,
+        "fullfort2": 15,
+        "frafalt": 0,
+        "frafalt2": 3
+       },
+       "sektor": {
+        "fullfortNormert": 14,
+        "fullfort1": 15,
+        "fullfort2": 15,
+        "frafalt": 0,
+        "frafalt2": 3
+       }
+      },
+      {
+       "aar": 2022,
+       "normertAar": 2024,
+       "nivaa": "M2",
+       "startkull": 23,
+       "startkullKvinner": 15,
+       "fullfortNormert": 16,
+       "fullfortNormertKvinner": 10,
+       "fullfort1": 22,
+       "fullfort2": 0,
+       "studerer": 7,
+       "studerer1": 0,
+       "studerer2": 0,
+       "frafalt": 0,
+       "frafalt1": 0,
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 16,
+        "fullfort1": 22,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 16,
+        "fullfort1": 22,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
+      },
+      {
+       "aar": 2023,
+       "normertAar": 2025,
+       "nivaa": "M2",
+       "startkull": 19,
+       "startkullKvinner": 9,
+       "fullfortNormert": 15,
+       "fullfortNormertKvinner": 7,
+       "fullfort1": 0,
+       "fullfort2": 0,
+       "studerer": 0,
+       "studerer1": 0,
+       "studerer2": 0,
+       "frafalt": 0,
+       "frafalt1": 0,
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 15,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 15,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 0,
+        "frafalt2": 0
+       }
+      }
+     ],
+     "aar": [
+      {
+       "aar": 2020,
+       "registrerte": 19,
+       "registrerteKvinner": 14,
+       "nye": 10,
+       "nyeKvinner": 7,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 660.0,
+       "spGjennomfort": 607.5
+      },
+      {
+       "aar": 2021,
+       "registrerte": 34,
+       "registrerteKvinner": 21,
+       "nye": 15,
+       "nyeKvinner": 7,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 1455.0,
+       "spGjennomfort": 1395.0
+      },
+      {
+       "aar": 2022,
+       "registrerte": 33,
+       "registrerteKvinner": 17,
+       "nye": 11,
+       "nyeKvinner": 4,
+       "kandidater": 16,
+       "kandidaterKvinner": 12,
+       "spPlanlagt": 1980.0,
+       "spGjennomfort": 1980.0
+      },
+      {
+       "aar": 2023,
+       "registrerte": 38,
+       "registrerteKvinner": 22,
+       "nye": 8,
+       "nyeKvinner": 4,
+       "kandidater": 15,
+       "kandidaterKvinner": 7,
+       "spPlanlagt": 2317.5,
+       "spGjennomfort": 2190.0
+      },
+      {
+       "aar": 2024,
+       "registrerte": 44,
+       "registrerteKvinner": 21,
+       "nye": 14,
+       "nyeKvinner": 4,
+       "kandidater": 22,
+       "kandidaterKvinner": 11,
+       "spPlanlagt": 2505.0,
+       "spGjennomfort": 2437.5
+      },
+      {
+       "aar": 2025,
+       "registrerte": 57,
+       "registrerteKvinner": 37,
+       "nye": 15,
+       "nyeKvinner": 12,
+       "kandidater": 16,
+       "kandidaterKvinner": 8,
+       "spPlanlagt": 2902.5,
+       "spGjennomfort": 2865.0
       }
      ]
     }

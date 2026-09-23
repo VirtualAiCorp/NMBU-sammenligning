@@ -4,7 +4,8 @@
 Kilder (cache i data/nmbu/kilder/dbh-okonomi/):
   902  Økonomiske nøkkeltall per institusjon og år, i 1 000 kr: driftsinntekter og -kostnader, statstilskudd,
        Forskningsrådet (NFR), regionale forskningsfond (RFF), EU, bidrags- og oppdragsinntekter, lønnskostnad,
-       avsetninger, balanse. Regnskapspakkene (700–703) er rå kontodata og brukes ikke.
+       avsetninger, balanse, og for private høyskoler «Eksamensavgift private høyskoler» (= skolepengeinntekter).
+       Regnskapspakkene (700–703) er rå kontodata og brukes ikke.
   750  Kunnskapsdepartementets styringsindikatorer (verdi, teller, nevner per parameter). NB: KDs «faglig
        årsverk» i nevneren inkluderer rekrutteringsstillinger; fagmiljøkortet bruker faglige årsverk uten dem.
   Studentårsverk (DBH 900) hentes fra staffData.json (build-staff.py) for inntekter per studentårsverk.
@@ -26,7 +27,8 @@ CACHE = ROOT / "data" / "nmbu" / "kilder" / "dbh-okonomi"
 Y0, Y1 = "2019", "2025"
 FELT = {"Driftsinntekter": "driftsinntekter", "Driftskostnader": "driftskostnader", "Statstilskudd": "statstilskudd",
         "NFR": "nfr", "RFF": "rff", "EU": "eu", "Bidragsinntekter": "bidrag", "Oppdragsinntekter": "oppdrag",
-        "Lønnskostnad": "lonn", "Avsetning": "avsetning", "Totalkapital": "totalkapital"}
+        "Lønnskostnad": "lonn", "Avsetning": "avsetning", "Totalkapital": "totalkapital",
+        "Eksamensavgift private høyskoler": "skolepenger"}
 SAMME = {"0264": "1177"}
 
 

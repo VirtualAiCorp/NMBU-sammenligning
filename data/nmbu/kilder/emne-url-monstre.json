@@ -261,25 +261,25 @@
   },
   "8241": {
    "kort": "BI",
-   "monster": null,
+   "monster": "https://www.bi.no/studier-og-kurs/kursbeskrivelser/?subjectCode={bokstaver}&courseNumber={4 siffer}",
    "kodeform": null,
    "strip": null,
-   "type": null,
-   "testet": 5,
-   "treff": 0,
+   "type": "direkte",
+   "testet": 40,
+   "treff": 39,
    "eksempler": [],
-   "merknad": "Offisiell kursportal (portal.bi.no/kurs) krever innlogging (redirigerer til bilogin.b2clogin.com). Eldre offentlige kursbeskrivelser (web.bi.no/info/kurs*.nsf) er nedlagt. Fant ingen fungerende offentlig søk eller direkte URL-mønster på bi.no."
+   "merknad": "Rettet 23.09.2026 (tidligere «uten lenke»). DBH-koden er bokstaver + 4 siffer + versjonssiffer (GRA65553 → GRA 6555); emneUrl.ts gjør omformingen. Utgåtte emner gir 404, og to versjoner kan dele nummer. Se docs/bi-kristiania-datakilder.md."
   },
   "8253": {
    "kort": "Kristiania",
-   "monster": null,
+   "monster": "https://www.kristiania.no/studieportal/{fakultet}/{nivå}/{kode}/",
    "kodeform": null,
    "strip": null,
-   "type": null,
-   "testet": 5,
-   "treff": 0,
+   "type": "direkte",
+   "testet": 35,
+   "treff": 35,
    "eksempler": [],
-   "merknad": "Emnesider har titteldrevne URL-er under /emner/ eller /en/syllabus/{skole}/{niva}/{kode-liten}/{tittel-slug}/. Nettstedet er en tungt obfuskert JS-app (Next.js-lignende med hashede klassenavn); søkesiden (/sok/) returnerer ingen treff i server-rendret HTML."
+   "merknad": "Rettet 23.09.2026 (tidligere «uten lenke»). Fakultet og nivå slås opp fra sidekartet: scripts/build-emne-url-oppslag.py → kilde/public/emner/url-8253.json (1 696 av 1 714 koder). Siden videresender til full adresse med tittel."
   },
   "0232": {
    "kort": "HiMolde",

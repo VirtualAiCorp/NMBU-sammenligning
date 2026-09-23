@@ -15,6 +15,8 @@ interface InstitusjonsMønster {
   strip?: string[];
   /** 'direkte' = monster resolves straight to the course page. 'sok' = monster is a search URL. */
   type?: 'direkte' | 'sok';
+  /** Egen funksjon for institusjoner uten enkelt mønster (BI, Kristiania). */
+  lag?: (dbhKode: string) => string | null;
 }
 
 const INSTITUSJONER: Record<string, InstitusjonsMønster> = {
@@ -141,13 +143,35 @@ const INSTITUSJONER: Record<string, InstitusjonsMønster> = {
     strip: ['-\\d+$'],
     type: 'direkte',
   },
-  '8241': { // BI
-    monster: undefined,
+  '8241': { // BI — kursbeskrivelser; DBH-koden er bokstaver + 4 siffer + versjonssiffer (GRA65553 → GRA 6555)
+    lag: (kode) => {
+      const m = kode.replace(/-\d+$/, '').match(/^([A-ZÆØÅ]+)(\d{4})\d?$/);
+      return m ? `https://www.bi.no/studier-og-kurs/kursbeskrivelser/?subjectCode=${encodeURIComponent(m[1])}&courseNumber=${m[2]}` : null;
+    },
   },
-  '8253': { // Kristiania
-    monster: undefined,
+  '8253': { // Kristiania — emnesiden ligger under fakultet/nivå; slås opp i public/emner/url-8253.json (lastes i bakgrunnen)
+    lag: (kode) => {
+      const o = kristianiaOppslag;
+      const v = o?.k[kode];
+      if (!o || v === undefined) return null;
+      const [i, seg] = Array.isArray(v) ? v : [v, kode.replace(/-\d+$/, '').toLowerCase().replace(/ /g, '-')];
+      return `${o.base}${o.p[i]}/${encodeURIComponent(seg)}/`;
+    },
   },
 };
+
+interface KristianiaOppslag { base: string; p: string[]; k: Record<string, number | [number, string]> }
+let kristianiaOppslag: KristianiaOppslag | null = null;
+let lasting: Promise<void> | null = null;
+
+/** Laster oppslagsfilen for Kristianias emnesider (kalles én gang ved oppstart). Til den er lastet, gir emneUrl null for 8253. */
+export function lastEmneUrlOppslag(): Promise<void> {
+  lasting ??= fetch(`${import.meta.env.BASE_URL}emner/url-8253.json`)
+    .then((r) => (r.ok ? r.json() : null))
+    .then((j) => { kristianiaOppslag = j; })
+    .catch(() => { /* lenkene mangler bare */ });
+  return lasting;
+}
 
 /**
  * Process a DBH course code by stripping version and format suffixes
@@ -186,6 +210,7 @@ function stripCode(code: string, stripPatterns?: string[]): string {
 export function emneUrl(institusjonskode: string, dbhKode: string): string | null {
   const mønster = INSTITUSJONER[institusjonskode];
 
+  if (mønster?.lag) return mønster.lag(dbhKode);
   if (!mønster || !mønster.monster) {
     return null;
   }

@@ -17,6 +17,9 @@ const OKONOMI: MetricDef[] = [
   { id: 'nfr', label: 'Forskningsrådet', unit: 'mill', decimals: 0, gruppe: 'okonomi', desc: 'Inntekter fra Norges forskningsråd (mill. kr).' },
   { id: 'eu', label: 'EU', unit: 'mill', decimals: 1, gruppe: 'okonomi', desc: 'Inntekter fra EU (mill. kr).' },
   { id: 'perSarv', label: 'Driftsinntekter per studentårsverk', unit: 'tkr', decimals: 0, gruppe: 'okonomi', desc: 'Driftsinntekter (1 000 kr) delt på studentårsverk (studiepoeng / 60, DBH 900). Påvirkes sterkt av forskningsandel og dyre utdanninger (f.eks. veterinær, medisin).' },
+  { id: 'statPerSarv', label: 'Statstilskudd per studentårsverk', unit: 'tkr', decimals: 0, gruppe: 'okonomi', desc: 'Statstilskudd (1 000 kr) delt på studentårsverk (DBH 900). Viser forskjellen mellom statlig finansierte institusjoner og private høyskoler som BI og Kristiania.' },
+  { id: 'skolepenger', label: 'Skolepenger', unit: 'mill', decimals: 0, gruppe: 'okonomi', desc: 'Skolepengeinntekter for private høyskoler (DBH 902 «Eksamensavgift private høyskoler», mill. kr). Statlige institusjoner tar ikke skolepenger for ordinære studier.' },
+  { id: 'skolepengerPerSarv', label: 'Skolepenger per studentårsverk', unit: 'tkr', decimals: 0, gruppe: 'okonomi', desc: 'Skolepengeinntekter (1 000 kr) delt på studentårsverk (studiepoeng / 60, DBH 900). Omtrent hva en fulltidsstudent betaler i året i snitt, inkludert deltid og etter- og videreutdanning.' },
   { id: 'lonnsandel', label: 'Lønnsandel', unit: '%', decimals: 1, gruppe: 'okonomi', desc: 'Lønnskostnad i prosent av driftskostnadene.' },
   { id: 'resultat', label: 'Driftsresultat', unit: '%', decimals: 1, gruppe: 'okonomi', desc: 'Driftsinntekter minus driftskostnader, i prosent av driftsinntektene.' },
   { id: 'avsetning', label: 'Avsetninger', unit: '%', decimals: 1, gruppe: 'okonomi', desc: 'Avsetninger (ubrukte midler) i prosent av driftskostnadene.' },
@@ -57,6 +60,9 @@ function val(u: EconUnit, id: string, aar: number): number | null {
     case 'nfr': return MILL(y.nfr);
     case 'eu': return MILL(y.eu);
     case 'perSarv': return y.driftsinntekter != null && y.studentarsverk ? y.driftsinntekter / y.studentarsverk : null;
+    case 'statPerSarv': return y.statstilskudd != null && y.studentarsverk ? y.statstilskudd / y.studentarsverk : null;
+    case 'skolepenger': return MILL(y.skolepenger);
+    case 'skolepengerPerSarv': return y.skolepenger != null && y.studentarsverk ? y.skolepenger / y.studentarsverk : null;
     case 'lonnsandel': return pct(y.lonn, y.driftskostnader);
     case 'resultat': return y.driftsinntekter != null && y.driftskostnader != null ? pct(y.driftsinntekter - y.driftskostnader, y.driftsinntekter) : null;
     case 'avsetning': return pct(y.avsetning, y.driftskostnader);
@@ -230,7 +236,7 @@ export function EconomyComparison({ units, hovedInst }: { units: EconUnit[]; hov
         <Info className="w-3.5 h-3.5 shrink-0 mt-0.5" />
         <span>
           Kilde: DBH/HK-dir tabell 902 (økonomiske nøkkeltall fra institusjonenes regnskap, i 1 000 kr) og 750 (Kunnskapsdepartementets styringsindikatorer),
-          studentårsverk fra tabell 900, hentet {ECON_HENTET}. BI er privat og rapporterer etter et annet regnskapsregime; statstilskuddet er derfor lite.
+          studentårsverk fra tabell 900, hentet {ECON_HENTET}. BI og Kristiania er private og rapporterer etter et annet regnskapsregime: statstilskuddet er lite, og hovedinntekten er skolepenger (902 «Eksamensavgift private høyskoler»).
           INN er slått sammen over institusjonskodene 0264 (til og med 2024) og 1177 (fra 2025).
         </span>
         <a href="https://dbh.hkdir.no" target="_blank" rel="noreferrer" className="ml-auto flex items-center gap-1 shrink-0" style={{ color: 'var(--nmbu-green-dark)' }}><ExternalLink className="w-3.5 h-3.5" /> DBH</a>

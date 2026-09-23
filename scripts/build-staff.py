@@ -38,6 +38,9 @@ FAKULTETER = {"landsam": "420", "realtek": "460", "kbm": "440", "mina": "430", "
 KORT = {"1173": "NMBU", "1150": "NTNU", "1110": "UiO", "1120": "UiB", "1130": "UiT", "1160": "UiS", "1171": "UiA",
         "1174": "Nord", "1175": "OsloMet", "1176": "USN", "1177": "INN", "0264": "INN", "0238": "HVL", "0256": "HiØ",
         "0236": "HVO", "1220": "AHO", "1240": "NHH", "8241": "BI", "8223": "NLA", "0232": "HiMolde", "8253": "Kristiania"}
+# Rene handelshøyskoler: programmene eies av avdeling 000000 (BI) eller sentraladministrasjonen (NHH), så
+# «fakultetet» er hele institusjonen. Institusjonstotalen brukes som fakultetsenhet.
+HELINST = {"8241": "Hele BI (egen handelshøyskole)", "1240": "Hele NHH (egen handelshøyskole)"}
 # INN byttet kode 0264 → 1177 i 2025: slås sammen til én enhet.
 SAMME = {"0264": "1177"}
 FORSTE = re.compile(r"professor|førsteamanuensis|dosent|førstelektor", re.I)
@@ -212,7 +215,7 @@ def main():
                 if not avds:
                     continue
                 avd = collections.Counter(avds).most_common(1)[0][0]
-                fk, _ = fak_of(inst, avd)
+                fk = "000000" if inst in HELINST else fak_of(inst, avd)[0]
                 if fk:
                     key2 = (SAMME.get(inst, inst), fk)
                     owners.setdefault(key2, set()).add(inst)
@@ -224,11 +227,11 @@ def main():
                   "programmer": [], "hoved": True}]
         for (key, fk), codes in owners.items():
             # INN: fakultetskoden kan være ulik under gammel og ny institusjonskode; bruk den som finnes per kode
-            yrs = unit_years(sorted(codes), fk)
+            yrs = unit_years(sorted(codes), None if fk == "000000" else fk)
             if not any(y["faglige"] for y in yrs):
                 continue
             units.append({"id": f"{key}_{fk}", "inst": key, "kort": KORT.get(key, key), "fakultetskode": fk, "isNmbu": False,
-                          "navn": fak_names.get((sorted(codes)[-1], fk), fak_names.get((sorted(codes)[0], fk), ("",)))[0], "years": yrs,
+                          "navn": HELINST[key] if fk == "000000" else fak_names.get((sorted(codes)[-1], fk), fak_names.get((sorted(codes)[0], fk), ("",)))[0], "years": yrs,
                           "programmer": sorted(prog_of[(key, fk)]), "hoved": default_of[(key, fk)]})
         # hovedsammenligninger først, deretter flest konkurrentprogram
         FAK[fak] = units[:1] + sorted(units[1:], key=lambda u: (not u["hoved"], -len(u["programmer"]), u["kort"]))

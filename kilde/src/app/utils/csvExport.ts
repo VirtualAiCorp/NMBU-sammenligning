@@ -130,10 +130,10 @@ export function exportAarsstudierCsv() {
 export function exportFacultyAdmissionCsv(faculty: FacultyData) {
   const header = row(
     'Programgruppe', 'Nivå',
-    'Institusjon', 'Kortname', 'Studiekode', 'Studiested', 'Type',
+    'Institusjon', 'Kortname', 'Studiekode', 'Studiested', 'Type', 'Opptak',
     'År',
     'Alle søkere', 'Førstevalgssøkere', 'Studieplasser', 'Søkerpress (fv/pl, lokale opptak: fv/tilbud)',
-    'Kvinner % (1.valg)', 'Kvalifiserte', 'Tilbud', 'Ja-svar', 'Møtt', 'Oppmøteandel % (møtt/tilbud)',
+    'Kvinner % (1.valg)', 'Kvalifiserte', 'Tilbud', 'Tilbudsandel % (tilbud/kvalifiserte)', 'Ja-svar', 'Møtt', 'Oppmøteandel % (møtt/tilbud)',
     'Poenggrense FV', 'Poenggrense Ord.',
     'Snitt opptakspoeng møtt (DBH 571)', 'Snitt karakterpoeng møtt (DBH 571)', 'Antall møtt (DBH 571)',
     'Snitt opptakspoeng førstevalg (DBH 571)', 'Snitt opptakspoeng alle søkere (DBH 571)'
@@ -150,12 +150,14 @@ export function exportFacultyAdmissionCsv(faculty: FacultyData) {
           ? +(d.fvS / d.plasser).toFixed(2)
           : d.fvS !== null && d.tilbud !== null && d.tilbud > 0 ? +(d.fvS / d.tilbud).toFixed(2) : null;
         const opp = d.mott != null && d.tilbud != null && d.tilbud > 0 ? +((d.mott / d.tilbud) * 100).toFixed(1) : null;
+        const tba = d.tilbud != null && d.kvalifiserte != null && d.kvalifiserte > 0 ? +((d.tilbud / d.kvalifiserte) * 100).toFixed(1) : null;
         lines.push(row(
           g.label, g.level,
           e.institusjon, e.shortName, e.studiekode, e.studiested, e.type,
+          g.level === 'master2' || e.lokaltOpptak ? (e.poengLokalt ? 'Lokalt (poeng: DBH 571 type L)' : 'Lokalt (DBH 379)') : 'Samordna',
           year,
           d.alleS, d.fvS, d.plasser, sp,
-          d.kvinner, d.kvalifiserte, d.tilbud, d.akseptert ?? null, d.mott ?? null, opp,
+          d.kvinner, d.kvalifiserte, d.tilbud, tba, d.akseptert ?? null, d.mott ?? null, opp,
           d.pg_fv, d.pg_ord,
           d.op_mott ?? null, d.kp_mott ?? null, d.n_mott ?? null, d.op_fv ?? null, d.op_alle ?? null
         ));

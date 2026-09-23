@@ -19,7 +19,7 @@ function nf(v: number, dec: number): string {
 
 // ─── Metrics ─────────────────────────────────────────────────────────────────
 
-type MetricKey = 'alleS' | 'fvS' | 'sokerpress' | 'plasser' | 'kvinner' | 'kvalifiserte' | 'tilbud' | 'mott' | 'oppmote' | 'pg_ord' | 'pg_fv' | 'pg_snitt'
+type MetricKey = 'alleS' | 'fvS' | 'sokerpress' | 'plasser' | 'kvinner' | 'kvalifiserte' | 'tilbud' | 'tilbudsandel' | 'mott' | 'oppmote' | 'pg_ord' | 'pg_fv' | 'pg_snitt'
   | 'op_mott' | 'kp_mott' | 'op_fv' | 'op_alle';
 
 interface MetricDef {
@@ -40,6 +40,7 @@ const METRICS: MetricDef[] = [
   { id: 'kvinner',      label: 'Kvinner %',           unit: '%', decimals: 1, description: 'Andel kvinner blant 1. valg-søkere' },
   { id: 'kvalifiserte', label: 'Kvalifiserte',        unit: '',  decimals: 0, description: 'Antall kvalifiserte søkere' },
   { id: 'tilbud',       label: 'Tilbud',              unit: '',  decimals: 0, description: 'Søkere med tilbud om opptak' },
+  { id: 'tilbudsandel', label: 'Tilbudsandel',        unit: '%', decimals: 1, description: 'Tilbud om opptak i prosent av kvalifiserte søkere. Nær 100 % betyr at nesten alle kvalifiserte fikk tilbud (i praksis åpent opptak). Tilbud i flere runder kan gi over 100 %.' },
   { id: 'mott',         label: 'Møtt',                unit: '',  decimals: 0, description: 'Møtt til studiestart (DBH, lokale opptak)' },
   { id: 'oppmote',      label: 'Oppmøteandel',        unit: '%', decimals: 1, description: 'Møtt til studiestart i prosent av tilbud om opptak' },
   { id: 'pg_ord',       label: 'Poenggrense ordinær', unit: '',  decimals: 1, description: 'Opptaksgrense ordinær kvote' },
@@ -53,9 +54,15 @@ const METRICS: MetricDef[] = [
 
 const isPointMetric = (m: MetricKey) => METRICS.find((d) => d.id === m)?.kilde === 'dbh571';
 
-/** Møtt og oppmøteandel finnes bare for lokale opptak (DBH 379); snittpoeng (DBH 571) bare for Samordna-program. */
-function metricsFor(local: boolean): MetricDef[] {
-  return METRICS.filter((m) => local ? m.kilde !== 'dbh571' : (m.id !== 'mott' && m.id !== 'oppmote'));
+/** Gruppen har program med lokalt opptak (DBH 379) ved siden av Samordna-program, f.eks. BI og Kristiania blant bachelorene. */
+const harLokale = (g: LandsamGroup) => g.level !== 'master2' && g.entries.some((e) => e.lokaltOpptak);
+
+/** Møtt og oppmøteandel finnes bare for lokale opptak (DBH 379); snittpoeng (DBH 571) for Samordna-program og BIs lokale opptak. */
+function metricsFor(g: LandsamGroup): MetricDef[] {
+  const local = g.level === 'master2';
+  const visMott = local || harLokale(g);
+  const visPoeng = !local || g.entries.some((e) => e.poengLokalt);
+  return METRICS.filter((m) => (m.kilde === 'dbh571' ? visPoeng : (m.id === 'mott' || m.id === 'oppmote') ? visMott : true));
 }
 
 /** Siste år (≤ ønsket år) der oppføringen har verdi for målet. */
@@ -68,6 +75,10 @@ function latestYearWith(e: FullAdmissionEntry, metric: MetricKey, years: readonl
 }
 
 function getVal(data: FullYearData, metric: MetricKey): number | null {
+  if (metric === 'tilbudsandel') {
+    if (data.tilbud == null || data.kvalifiserte == null || data.kvalifiserte === 0) return null;
+    return (data.tilbud / data.kvalifiserte) * 100;
+  }
   if (metric === 'oppmote') {
     if (data.mott == null || data.tilbud == null || data.tilbud === 0) return null;
     return (data.mott / data.tilbud) * 100;
@@ -157,7 +168,7 @@ function InstitutionPicker({
               <div className="flex-1 min-w-0">
                 <div>{e.shortName}{isNmbu ? ' ★' : ''}</div>
                 <div style={{ fontSize: 10, opacity: 0.75, fontWeight: 400 }}>
-                  {e.studiekode ? `${e.studiekode} · ` : ''}{e.studiested}
+                  {e.studiekode ? `${e.studiekode} · ` : ''}{e.studiested}{e.lokaltOpptak && group.level !== 'master2' ? ' · lokalt opptak' : ''}
                 </div>
               </div>
               {e.url && (
@@ -341,7 +352,7 @@ function DataTable({
         <thead>
           <tr style={{ backgroundColor: 'var(--nmbu-beige-light)', borderBottom: '2px solid var(--nmbu-neutral-3)' }}>
             <th className="px-3 py-2.5 text-left" style={{ color: 'var(--nmbu-neutral)', fontWeight: 600 }}>Program</th>
-            {metricsFor(group.level === 'master2').map((m) => (
+            {metricsFor(group).map((m) => (
               <th key={m.id}
                 className="px-3 py-2.5 text-center cursor-pointer select-none hover:opacity-70 whitespace-nowrap"
                 style={{ color: sortKey === m.id ? 'var(--nmbu-green-dark)' : 'var(--nmbu-neutral-2)', fontWeight: 600 }}
@@ -372,6 +383,12 @@ function DataTable({
                   )}
                 </div>
                 <div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)', marginTop: 1 }}>{e.studiekode} · {e.studiested}</div>
+                {e.lokaltOpptak && group.level !== 'master2' && (
+                  <div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)', marginTop: 1, fontStyle: 'italic' }}
+                    title="Tar opp lokalt, ikke gjennom Samordna. Søkere, tilbud og møtt er fra DBH 379; ingen poenggrense.">
+                    Lokalt opptak (DBH 379){e.poengLokalt ? ' · karakterpoeng fra lokalt opptak' : ''}
+                  </div>
+                )}
                 {e.poengFellesMed && (
                   <div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)', marginTop: 1, fontStyle: 'italic' }}
                     title="DBH registrerer opptaket på ett studieprogram som dekker flere studiesteder eller varianter. Snittpoengene er derfor like for disse oppføringene.">
@@ -379,13 +396,13 @@ function DataTable({
                   </div>
                 )}
               </td>
-              {metricsFor(group.level === 'master2').map((m) => {
+              {metricsFor(group).map((m) => {
                 const v = cur ? getVal(cur, m.id) : null;
                 const vPrev = prev ? getVal(prev, m.id) : null;
                 const isZeroPg = v === 0 && (m.id === 'pg_ord' || m.id === 'pg_fv' || m.id === 'pg_snitt');
                 return (
                   <td key={m.id} className="px-3 py-2.5 text-center"
-                    title={(m.id === 'op_mott' || m.id === 'kp_mott') && cur?.n_mott ? `Snitt av ${cur.n_mott} som møtte til studiestart` : undefined}>
+                    title={(m.id === 'op_mott' || m.id === 'kp_mott') && cur?.n_mott ? `Snitt av ${cur.n_mott} som møtte til studiestart${e.poengLokalt ? ' (lokalt opptak, DBH 571 opptakstype L – ikke Samordna)' : ''}` : undefined}>
                     <div style={{ fontWeight: 600, color: v === null ? 'var(--nmbu-neutral-3)' : isZeroPg ? 'var(--nmbu-green-6)' : 'var(--nmbu-neutral)' }}>
                       {v === null ? '–' : isZeroPg ? 'Alle inn' : `${nf(v, m.decimals)}${m.unit ? ' ' + m.unit : ''}`}
                     </div>
@@ -567,10 +584,10 @@ export function LandsamAdmissionAnalysis({ faculty, initialGroup }: { faculty: F
     if (!group) return;
     if (group.level !== 'master2') {
       // Møtt/oppmøteandel finnes bare for lokale opptak; gå tilbake til poenggrense.
-      if (metric === 'mott' || metric === 'oppmote') setMetric('pg_ord');
+      if ((metric === 'mott' || metric === 'oppmote') && !harLokale(group)) setMetric('pg_ord');
       return;
     }
-    if (isPointMetric(metric)) setMetric('alleS');
+    if (isPointMetric(metric) && !group.entries.some((e) => e.poengLokalt)) setMetric('alleS');
     const nmbu = group.entries.filter((e) => group.nmbuIds.includes(e.id));
     const hasYear = (y: string) => nmbu.some((e) => e.years[y]?.alleS != null);
     if (!hasYear(year)) {
@@ -689,7 +706,7 @@ export function LandsamAdmissionAnalysis({ faculty, initialGroup }: { faculty: F
         <div className="rounded-xl overflow-hidden" style={{ border: '1px solid var(--nmbu-neutral-3)', backgroundColor: '#fff' }}>
           <div className="px-5 py-4 flex items-center justify-between gap-3 flex-wrap" style={{ borderBottom: '1px solid var(--nmbu-neutral-3)' }}>
             <div className="flex flex-wrap gap-1.5">
-              {metricsFor(isLocal).map((m, i, arr) => (
+              {metricsFor(group).map((m, i, arr) => (
                 <Fragment key={m.id}>
                 {m.kilde === 'dbh571' && arr[i - 1]?.kilde !== 'dbh571' && (
                   <span className="flex items-center gap-1.5 pl-2 ml-1 text-xs" title="Snittpoeng fra DBH tabell 571, til og med 2025"
@@ -792,6 +809,8 @@ export function LandsamAdmissionAnalysis({ faculty, initialGroup }: { faculty: F
           {isLocal
             ? 'Kilde: DBH/HKDIR tabell 379 (lokale opptak) for søkere, førstevalgssøkere, kvinneandel, kvalifiserte og tilbud; studieplasser og poenggrenser fra institusjonenes egne sider der de finnes. Lokale masteropptak er ikke med i Samordna opptak. Søkerpress = førstevalgssøkere / studieplasser, eller / tilbud om opptak der studieplasser ikke er publisert.'
             : 'Kilde: Samordna opptak / HKDIR. Søkerpress = førstevalgssøkere / studieplasser. Snittpoeng: DBH/HKDIR tabell 571, gjennomsnittlige opptakspoeng og karakterpoeng for dem som møtte til studiestart, for førstevalgssøkerne og for alle søkerne i institusjonens opptak (til og med 2025). Små grupper er skjermet av DBH og utelatt. Der flere oppføringer deler DBH-program, er snittet felles (merket med * i tabellen).'}
+          {harLokale(group) && ' BI og Kristiania tar opp lokalt og er ikke i Samordna: søkere, kvalifiserte, tilbud og møtt er fra DBH/HKDIR tabell 379, og de har ingen poenggrense. BIs tall gjelder alle campuser og nett samlet. For BI vises karakterpoeng for dem som møtte (DBH 571, lokalt opptak); BIs totale opptakspoeng er på en annen skala og vises ikke. Kristianias poeng er ikke sammenlignbare og vises ikke.'}
+          {' '}Tilbudsandel = tilbud / kvalifiserte søkere.
           {' '}Poenggrense 0 = åpent opptak (alle kvalifiserte kom inn), «–» = tall ikke lagt inn ennå.
         </span>
       </div>

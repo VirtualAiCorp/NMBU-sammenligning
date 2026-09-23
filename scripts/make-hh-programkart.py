@@ -17,8 +17,10 @@ NAVN = {
     "1175": "OsloMet – storbyuniversitetet", "1171": "Universitetet i Agder", "1130": "UiT Norges arktiske universitet", "1160": "Universitetet i Stavanger",
     "1176": "Universitetet i Sørøst-Norge", "1177": "Universitetet i Innlandet", "1174": "Nord universitet", "0238": "Høgskulen på Vestlandet",
     "8223": "NLA Høgskolen", "0256": "Høgskolen i Østfold", "0232": "Høgskolen i Molde", "1110": "Universitetet i Oslo", "1120": "Universitetet i Bergen",
-    "8241": "Handelshøyskolen BI",
+    "8241": "Handelshøyskolen BI", "8253": "Høyskolen Kristiania",
 }
+BI_LOKALT = "Lokalt opptak hos BI (ikke Samordna); tall fra DBH 379. Opptakstallene gjelder alle BIs campuser (Oslo, Bergen, Trondheim, Stavanger) og nett samlet."
+K_LOKALT = "Lokalt opptak hos Kristiania (ikke Samordna); tall fra DBH 379."
 INN = ["0264", "1177"]
 
 # (id, kort, inst, studiested, programnavn, SO-kode|None, type, default, dbh-koder, merknad)
@@ -50,6 +52,9 @@ OA = [
     ("nla_krs_oa", "NLA Kristiansand", "8223", "Kristiansand", "Økonomi og administrasjon (bachelor)", "254035", "bachelor", False, ["3ØKADM"], None),
     ("hiof_oa", "HiØ", "0256", "Halden", "Økonomi og administrasjon (bachelor)", "224035", "bachelor", True, ["BOKAD"], None),
     ("himolde_oa", "HiMolde", "0232", "Molde", "Økonomi og administrasjon (bachelor)", "211369", "bachelor", False, ["07"], None),
+    ("bi_oa", "BI", "8241", "Oslo", "Økonomi og administrasjon (bachelor)", None, "bachelor", True, ["DIPØAH"], BI_LOKALT),
+    ("kristiania_oa", "Kristiania", "8253", "Oslo", "Økonomi og ledelse (bachelor)", None, "bachelor", True, ["BOL"],
+     K_LOKALT + " Programmet heter «Økonomi og administrasjon» fra høsten 2026; DBH-koden kan endre seg."),
     ("ntnu_siv", "NTNU siviløkonom", "1150", "Trondheim", "Økonomi og administrasjon, siviløkonom (5 år)", "194345", "master5", False, ["MSIVØK5"], "Femårig løp; svakere sammenligning."),
     ("oslomet_siv", "OsloMet siviløkonom", "1175", "Oslo", "Økonomi og administrasjon, siviløkonom (5 år)", "215345", "master5", False, ["OKADSIV"], "Femårig løp; svakere sammenligning."),
     ("uia_siv", "UiA siviløkonom", "1171", "Kristiansand", "Økonomi og administrasjon, siviløkonom (5 år)", "201345", "master5", False, ["MASTØKAD5"], "Femårig løp; svakere sammenligning."),
@@ -75,6 +80,9 @@ OLIT = [
     ("uib_imo", "UiB", "1120", "Bergen", "Informatikk-matematikk-økonomi (bachelor)", "184306", "bachelor", False, ["BATF-IMØ"], None),
     ("uis_digserv", "UiS", "1160", "Stavanger", "Digital serviceledelse (bachelor)", "217470", "bachelor", False, ["B-DIGSERV"], "UiS har to Samordna-koder (dataanalyse og tjenesteinnovasjon) på samme DBH-program."),
     ("nord_edf", "Nord", "1174", "Mo i Rana", "Økonomi, digitalisering og forretningsutvikling (bachelor)", "204453", "bachelor", False, ["INSBA"], None),
+    ("bi_dbh", "BI Digital Business", "8241", "Oslo", "Bachelor of Digital Business", None, "bachelor", False, ["DIPDBH"], BI_LOKALT + " Engelskspråklig; svakere sammenligning."),
+    ("bi_dsb", "BI Data Science", "8241", "Oslo", "Bachelor of Data Science for Business", None, "bachelor", False, ["DIPBTH"], BI_LOKALT + " Engelskspråklig; svakere sammenligning."),
+    ("kristiania_bod", "Kristiania", "8253", "Oslo", "Digitalisering og økonomi (bachelor)", None, "bachelor", False, ["BOD"], K_LOKALT + " Svakere sammenligning. Programsiden videresender nå til økonomi og administrasjon (høsten 2026)."),
 ]
 NHH_MA = ["MASTER04", "MASTER15", "MASTER21", "MASTER22", "MASTER24", "MASTER25", "M25", "MSC23", "MSC24", "MSC25"]
 INN_MA = ["MØLDBH", "MØLDBD", "MØLØH", "MØLØD", "MØLMH", "MØLMD", "MØLBAH", "MØLBAD"]
@@ -98,6 +106,7 @@ MECON = [
     ("uib_mecon", "UiB", "1120", "Bergen", "Samfunnsøkonomi (master 2 år)", None, "master2", True, ["MASV-SØK"], None),
     ("ntnu_mecon", "NTNU", "1150", "Trondheim", "Samfunnsøkonomi (master 2 år)", None, "master2", True, ["MSØK"], None),
     ("uit_mecon", "UiT", "1130", "Tromsø", "Samfunnsøkonomi (master 2 år)", None, "master2", True, ["M-SAMFOK"], None),
+    ("bi_mecon", "BI", "8241", "Oslo", "Master of Science in Applied Economics", None, "master2", True, ["MSCMSAEH"], "Engelskspråklig master i anvendt økonomi. Siste opptak i DBH 379 er 2023; programmet har fortsatt studenter i 2025 (DBH 347)."),
 ]
 MEI = [
     ("nmbu_mei", "NMBU", "1173", "Ås", "Entreprenørskap og innovasjon (master 2 år)", None, "master2", True, ["M-EI"], None),
@@ -108,17 +117,18 @@ MEI = [
     ("uio_mei", "UiO", "1110", "Oslo", "Entreprenørskap og innovasjonsledelse (master 2 år)", None, "master2", True, ["MNM2-ENT"], None),
     ("oslomet_mei", "OsloMet", "1175", "Oslo", "Entreprenørskap (master 2 år)", None, "master2", True, ["MAENT"], None),
     ("uia_mei", "UiA", "1171", "Kristiansand", "Shift entreprenørskap og innovasjon (master 2 år)", None, "master2", False, ["M-SHIFTINN"], None),
+    ("kristiania_mei", "Kristiania", "8253", "Oslo", "Innovasjonsledelse (master 2 år)", None, "master2", True, ["MIN"], None),
 ]
 GRUPPER = [
     ("oa", "Økonomi og administrasjon", "bachelor", OA,
      "Sammenligner NMBUs bachelor i økonomi og administrasjon med de samme programmene som i den opprinnelige HH-analysen.",
-     "Samme konkurrentliste som i den opprinnelige HH-opptaksanalysen. De femårige siviløkonomløpene er tatt med som svakere sammenligning (default false). BI tar ikke opp gjennom Samordna opptak og er derfor ikke med her."),
+     "Samme konkurrentliste som i den opprinnelige HH-opptaksanalysen. De femårige siviløkonomløpene er tatt med som svakere sammenligning (default false). BI og Kristiania tar opp lokalt, ikke gjennom Samordna: søkere, tilbud og møtt er fra DBH 379, de har ingen poenggrense, og BIs tall gjelder alle campuser samlet."),
     ("samf", "Samfunnsøkonomi", "bachelor", SAMF,
      "Sammenligner NMBUs bachelor i samfunnsøkonomi med de breie samfunnsøkonomiprogrammene ved universitetene.",
      "Samme konkurrenter som i den opprinnelige HH-analysen (samfData)."),
     ("olit", "Økonomi, ledelse og IT", "bachelor", OLIT,
      "Sammenligner NMBUs bachelor i økonomi, ledelse og IT med program som kombinerer økonomi/ledelse og IT eller informasjonssystemer.",
-     "Nærmeste tilsvarende program funnet i Samordnas programliste. IT og informasjonssystemer (UiA, USN, HiØ) er mer IT-tunge; Informatikk-matematikk-økonomi (UiB) og Digital serviceledelse (UiS) er svakere sammenligninger (default false)."),
+     "Nærmeste tilsvarende program funnet i Samordnas programliste. IT og informasjonssystemer (UiA, USN, HiØ) er mer IT-tunge; Informatikk-matematikk-økonomi (UiB) og Digital serviceledelse (UiS) er svakere sammenligninger (default false), det samme er BIs Digital Business og Data Science for Business og Kristianias Digitalisering og økonomi (lokale opptak, DBH 379)."),
     ("moa", "Økonomi og administrasjon (master)", "master2", MOA,
      "Sammenligner NMBUs toårige master i økonomi og administrasjon (siviløkonom) med siviløkonomstudiene ved de andre handelshøyskolene.",
      "Lokale opptak (ikke Samordna); søkertall, tilbud og møtt fra DBH 379. Samme institusjoner som i den opprinnelige masteroppgaveanalysen."),
@@ -136,6 +146,18 @@ URL = {
     "nmbu_moa": "https://www.nmbu.no/studier/master-2-aar/okonomi-og-administrasjon",
     "nmbu_mecon": "https://www.nmbu.no/studier/master-2-aar/samfunnsokonomi-og-baerekraft",
     "nmbu_mei": "https://www.nmbu.no/studier/master-2-aar/entreprenorskap-og-innovasjon",
+    "bi_oa": "https://www.bi.no/studier-og-kurs/bachelorstudier/okonomi-og-administrasjon/",
+    "bi_dbh": "https://www.bi.no/studier-og-kurs/bachelorstudier/digital-business/",
+    "bi_dsb": "https://www.bi.no/studier-og-kurs/bachelorstudier/data-science-for-business/",
+    "kristiania_oa": "https://www.kristiania.no/studier/bachelor/okonomi-og-administrasjon/",
+    "kristiania_mei": "https://www.kristiania.no/studier/master/innovasjonsledelse/",
+}
+
+# Studiebarometeret per campus for BI (sbId-suffiks -o/-b/-t/-s/-n). BI Oslo har for få svar på økonomi og administrasjon.
+SBID = {
+    "bi_oa": ("8241_dipøah-b", "Studiebarometeret: BI Bergen (Oslo har for få svar). Opptakstallene gjelder hele BI."),
+    "bi_dbh": ("8241_dipdbh-o", None),
+    "bi_dsb": ("8241_dipbth-o", None),
 }
 
 
@@ -156,6 +178,10 @@ def main():
                     d["institusjonskoder"] = INN
                 if merknad:
                     d["merknad"] = merknad
+                if pid in SBID:
+                    d["sbId"], sbm = SBID[pid]
+                    if sbm:
+                        d["sbMerknad"] = sbm
                 dk["programs"].append(d)
         pk["groups"].append({"id": gid, "label": label, "level": level, "desc": desc, "note": note, "programs": progs})
     d = ROOT / "data" / "hh"

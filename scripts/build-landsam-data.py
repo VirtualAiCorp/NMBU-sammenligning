@@ -326,6 +326,8 @@ def process_programkart(programkart, sokertall_index, poenggrenser_index, points
             if source == "local":
                 local_data = prog.get("localData") or {}
                 years = build_years_for_local_entry(local_data)
+                # Lokalt opptak kan ha DBH 571-poeng (opptakstype L, bare BIs norskspråklige bachelorer)
+                merge_points(years, (points_index or {}).get(pid))
                 studiekode = normalise_code(prog.get("studiekode")) or ""
                 years_present = sorted(years.keys())
                 summary_lines.append(
@@ -376,6 +378,8 @@ def process_programkart(programkart, sokertall_index, poenggrenser_index, points
                     "type": prog.get("type", "master"),
                     "url": prog.get("url") or None,
                     "years": years,
+                    **({"lokaltOpptak": True} if source == "local" else {}),
+                    **({"poengLokalt": True} if ((points_index or {}).get(pid) or {}).get("opptakstype") == "L" else {}),
                     **({"poengFellesMed": (points_index or {})[pid]["delerDbhProgramMed"]}
                        if source != "local" and ((points_index or {}).get(pid) or {}).get("delerDbhProgramMed") else {}),
                 }
@@ -499,6 +503,10 @@ def render_ts(groups_out, generated_date: str) -> str:
             )
             if entry.get("url"):
                 lines.append(f"        url: {ts_string(entry['url'])},")
+            if entry.get("lokaltOpptak"):
+                lines.append("        lokaltOpptak: true,")
+            if entry.get("poengLokalt"):
+                lines.append("        poengLokalt: true,")
             if entry.get("poengFellesMed"):
                 lines.append(f"        poengFellesMed: [{', '.join(ts_string(i) for i in entry['poengFellesMed'])}],")
             lines.append("        years: {")

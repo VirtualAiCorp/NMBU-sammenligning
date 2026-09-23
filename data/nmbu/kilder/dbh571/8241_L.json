@@ -1,0 +1,5441 @@
+{
+ "hentet": "2026-09-23",
+ "institusjonskode": "8241",
+ "kilde": "DBH/HKDIR tabell 571 «Gjennomsnittlige opptakspoeng for søkere», opptakstype N (Samordna opptak), https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData",
+ "motte": [
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "BINT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "387.50",
+   "Karakterpoeng": "321.60",
+   "Søkere totalt": "8"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "BINT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "680.50",
+   "Karakterpoeng": "337.80",
+   "Søkere totalt": "8"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIP",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "144.20",
+   "Karakterpoeng": "32.20",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPBBH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2379.80",
+   "Karakterpoeng": "2113.80",
+   "Søkere totalt": "47"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPBBH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2947.10",
+   "Karakterpoeng": "2166.60",
+   "Søkere totalt": "52"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPBFH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "11860.90",
+   "Karakterpoeng": "10147.50",
+   "Søkere totalt": "246"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPBFH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "19938.70",
+   "Karakterpoeng": "12476.30",
+   "Søkere totalt": "298"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPBTH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "769.30",
+   "Karakterpoeng": "588.30",
+   "Søkere totalt": "13"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPBTH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1577.10",
+   "Karakterpoeng": "1200.50",
+   "Søkere totalt": "30"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPDKH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "11822.10",
+   "Karakterpoeng": "9260.10",
+   "Søkere totalt": "236"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPDKH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "17051.60",
+   "Karakterpoeng": "10469.10",
+   "Søkere totalt": "268"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPEMH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "26939.50",
+   "Karakterpoeng": "21103.90",
+   "Søkere totalt": "550"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPEMH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "35734.50",
+   "Karakterpoeng": "20203.10",
+   "Søkere totalt": "507"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPETH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "7076.40",
+   "Karakterpoeng": "6126.90",
+   "Søkere totalt": "157"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPETH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "11457.90",
+   "Karakterpoeng": "7904.90",
+   "Søkere totalt": "203"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPFJH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "11839.00",
+   "Karakterpoeng": "9510.00",
+   "Søkere totalt": "230"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPFJH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "22293.70",
+   "Karakterpoeng": "13452.70",
+   "Søkere totalt": "338"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPHRH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "23484.60",
+   "Karakterpoeng": "19469.20",
+   "Søkere totalt": "487"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPHRH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "43631.20",
+   "Karakterpoeng": "25477.10",
+   "Søkere totalt": "642"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPIMH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "8412.70",
+   "Karakterpoeng": "7147.20",
+   "Søkere totalt": "174"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPIMH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "16080.60",
+   "Karakterpoeng": "12269.50",
+   "Søkere totalt": "304"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPKLH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3325.40",
+   "Karakterpoeng": "2664.80",
+   "Søkere totalt": "68"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPKLH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "4313.80",
+   "Karakterpoeng": "2911.80",
+   "Søkere totalt": "75"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPMID",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "97.60",
+   "Karakterpoeng": "84.60",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPMID",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "497.10",
+   "Karakterpoeng": "110.10",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPMIH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "16893.60",
+   "Karakterpoeng": "12009.80",
+   "Søkere totalt": "311"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPMIH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "42927.00",
+   "Karakterpoeng": "20365.40",
+   "Søkere totalt": "528"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPRFD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "223.30",
+   "Karakterpoeng": "75.30",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPRFD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2060.10",
+   "Karakterpoeng": "475.70",
+   "Søkere totalt": "13"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPRFH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1620.50",
+   "Karakterpoeng": "559.50",
+   "Søkere totalt": "16"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPRFH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "8817.10",
+   "Karakterpoeng": "1999.90",
+   "Søkere totalt": "53"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPVHH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1310.70",
+   "Karakterpoeng": "299.70",
+   "Søkere totalt": "8"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPØAD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "812.40",
+   "Karakterpoeng": "183.40",
+   "Søkere totalt": "5"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPØAD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1645.90",
+   "Karakterpoeng": "414.90",
+   "Søkere totalt": "10"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPØAH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "44876.30",
+   "Karakterpoeng": "34197.60",
+   "Søkere totalt": "852"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPØAH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "111496.80",
+   "Karakterpoeng": "59128.80",
+   "Søkere totalt": "1518"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "GFBØD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3488.10",
+   "Karakterpoeng": "2825.60",
+   "Søkere totalt": "72"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "GFBØD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "4171.40",
+   "Karakterpoeng": "3526.80",
+   "Søkere totalt": "88"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "GFBØH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9715.90",
+   "Karakterpoeng": "8140.40",
+   "Søkere totalt": "212"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "GFBØH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "15315.80",
+   "Karakterpoeng": "13297.20",
+   "Søkere totalt": "364"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "GFMØD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1118.50",
+   "Karakterpoeng": "950.50",
+   "Søkere totalt": "24"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "GFMØD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1072.50",
+   "Karakterpoeng": "888.50",
+   "Søkere totalt": "24"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "GFMØH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6832.00",
+   "Karakterpoeng": "6003.40",
+   "Søkere totalt": "159"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "GFMØH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "8047.10",
+   "Karakterpoeng": "7048.20",
+   "Søkere totalt": "197"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "KAMI",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "622.30",
+   "Karakterpoeng": "160.30",
+   "Søkere totalt": "4"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "KAMI",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "8464.60",
+   "Karakterpoeng": "2020.60",
+   "Søkere totalt": "55"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "KAØA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1125.60",
+   "Karakterpoeng": "352.40",
+   "Søkere totalt": "9"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "KAØA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "6544.30",
+   "Karakterpoeng": "1581.50",
+   "Søkere totalt": "42"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MBA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "220.50",
+   "Karakterpoeng": "84.50",
+   "Søkere totalt": "20"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MBA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "169.60",
+   "Karakterpoeng": "140.10",
+   "Søkere totalt": "37"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MM",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "308.90",
+   "Karakterpoeng": "180.40",
+   "Søkere totalt": "30"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MM",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "6625.40",
+   "Karakterpoeng": "3330.90",
+   "Søkere totalt": "174"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MP",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4990.50",
+   "Karakterpoeng": "2517.40",
+   "Søkere totalt": "103"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MP",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "22150.80",
+   "Karakterpoeng": "12076.60",
+   "Søkere totalt": "637"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSAEH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "224.70",
+   "Karakterpoeng": "105.20",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSAEH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "410.80",
+   "Karakterpoeng": "163.80",
+   "Søkere totalt": "4"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSANH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2214.80",
+   "Karakterpoeng": "1486.80",
+   "Søkere totalt": "37"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSANH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1487.50",
+   "Karakterpoeng": "824.00",
+   "Søkere totalt": "21"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSBUH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "13081.70",
+   "Karakterpoeng": "7562.90",
+   "Søkere totalt": "186"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSBUH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "11834.40",
+   "Karakterpoeng": "6503.60",
+   "Søkere totalt": "160"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSEIH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1796.90",
+   "Karakterpoeng": "996.40",
+   "Søkere totalt": "25"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSEIH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "424.50",
+   "Karakterpoeng": "261.50",
+   "Søkere totalt": "6"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSFEH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3081.80",
+   "Karakterpoeng": "1659.30",
+   "Søkere totalt": "43"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSFEH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3338.60",
+   "Karakterpoeng": "1950.60",
+   "Søkere totalt": "48"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSFJH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2243.20",
+   "Karakterpoeng": "998.10",
+   "Søkere totalt": "26"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSFJH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1208.00",
+   "Karakterpoeng": "627.00",
+   "Søkere totalt": "15"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSLOH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2253.80",
+   "Karakterpoeng": "1550.80",
+   "Søkere totalt": "40"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSLOH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1132.80",
+   "Karakterpoeng": "719.30",
+   "Søkere totalt": "17"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSMAH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3653.90",
+   "Karakterpoeng": "1889.90",
+   "Søkere totalt": "48"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSMAH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2271.30",
+   "Karakterpoeng": "1503.80",
+   "Søkere totalt": "36"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSMLH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "787.50",
+   "Karakterpoeng": "524.50",
+   "Søkere totalt": "13"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSMLH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "610.00",
+   "Karakterpoeng": "448.00",
+   "Søkere totalt": "11"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSQFH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "812.60",
+   "Karakterpoeng": "278.60",
+   "Søkere totalt": "7"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSQFH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "622.10",
+   "Karakterpoeng": "434.60",
+   "Søkere totalt": "11"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSRRH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4776.70",
+   "Karakterpoeng": "2597.50",
+   "Søkere totalt": "63"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSRRH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2422.20",
+   "Karakterpoeng": "1560.80",
+   "Søkere totalt": "38"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSSFH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "760.40",
+   "Karakterpoeng": "401.90",
+   "Søkere totalt": "10"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSSFH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "785.50",
+   "Karakterpoeng": "402.20",
+   "Søkere totalt": "10"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "SØ",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "11675.70",
+   "Karakterpoeng": "10538.20",
+   "Søkere totalt": "226"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "SØ",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "9928.50",
+   "Karakterpoeng": "8550.00",
+   "Søkere totalt": "186"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "BINT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "391.40",
+   "Karakterpoeng": "325.40",
+   "Søkere totalt": "205"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "BINT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1230.90",
+   "Karakterpoeng": "820.70",
+   "Søkere totalt": "285"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPBBH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "5407.20",
+   "Karakterpoeng": "4507.30",
+   "Søkere totalt": "343"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPBBH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "7501.30",
+   "Karakterpoeng": "6229.50",
+   "Søkere totalt": "182"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPBFH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "13190.90",
+   "Karakterpoeng": "11661.00",
+   "Søkere totalt": "302"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPBFH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "24333.40",
+   "Karakterpoeng": "16796.10",
+   "Søkere totalt": "422"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPBTH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1853.90",
+   "Karakterpoeng": "1635.90",
+   "Søkere totalt": "105"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPBTH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2609.70",
+   "Karakterpoeng": "2206.20",
+   "Søkere totalt": "60"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPDBH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "760.10",
+   "Karakterpoeng": "685.60",
+   "Søkere totalt": "38"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPDBH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1116.10",
+   "Karakterpoeng": "886.10",
+   "Søkere totalt": "23"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPDKH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "11274.00",
+   "Karakterpoeng": "9685.00",
+   "Søkere totalt": "259"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPDKH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "17673.40",
+   "Karakterpoeng": "11382.60",
+   "Søkere totalt": "280"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPEMH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "35801.30",
+   "Karakterpoeng": "28341.20",
+   "Søkere totalt": "769"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPEMH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "48064.80",
+   "Karakterpoeng": "32314.40",
+   "Søkere totalt": "823"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPETH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6836.10",
+   "Karakterpoeng": "5577.60",
+   "Søkere totalt": "154"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPETH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "8322.00",
+   "Karakterpoeng": "5929.50",
+   "Søkere totalt": "151"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPFJH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "14095.70",
+   "Karakterpoeng": "11515.90",
+   "Søkere totalt": "276"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPFJH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "17662.00",
+   "Karakterpoeng": "12588.50",
+   "Søkere totalt": "305"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPHRH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "26060.30",
+   "Karakterpoeng": "21287.10",
+   "Søkere totalt": "560"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPHRH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "44782.40",
+   "Karakterpoeng": "28406.20",
+   "Søkere totalt": "711"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPIMH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9626.80",
+   "Karakterpoeng": "8450.70",
+   "Søkere totalt": "220"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPIMH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "13738.00",
+   "Karakterpoeng": "10462.10",
+   "Søkere totalt": "259"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPKLH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "5244.70",
+   "Karakterpoeng": "4312.20",
+   "Søkere totalt": "114"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPKLH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3755.10",
+   "Karakterpoeng": "3046.10",
+   "Søkere totalt": "75"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPMID",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "0.00",
+   "Karakterpoeng": "0.00",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPMID",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "636.70",
+   "Karakterpoeng": "136.20",
+   "Søkere totalt": "6"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPMIH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "12436.40",
+   "Karakterpoeng": "9799.40",
+   "Søkere totalt": "254"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPMIH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "36416.00",
+   "Karakterpoeng": "16490.60",
+   "Søkere totalt": "430"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPRFD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1076.00",
+   "Karakterpoeng": "384.70",
+   "Søkere totalt": "19"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPRFD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1331.50",
+   "Karakterpoeng": "302.00",
+   "Søkere totalt": "12"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPRFH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2825.40",
+   "Karakterpoeng": "783.40",
+   "Søkere totalt": "34"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPRFH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "9636.80",
+   "Karakterpoeng": "2242.10",
+   "Søkere totalt": "64"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPØAD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "424.20",
+   "Karakterpoeng": "205.00",
+   "Søkere totalt": "8"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPØAD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2228.70",
+   "Karakterpoeng": "525.20",
+   "Søkere totalt": "15"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPØAH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "44439.80",
+   "Karakterpoeng": "32933.30",
+   "Søkere totalt": "847"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPØAH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "93142.30",
+   "Karakterpoeng": "53442.10",
+   "Søkere totalt": "1340"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "GFBØD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2182.40",
+   "Karakterpoeng": "1791.50",
+   "Søkere totalt": "69"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "GFBØD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "4249.30",
+   "Karakterpoeng": "3515.30",
+   "Søkere totalt": "92"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "GFBØH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "7448.40",
+   "Karakterpoeng": "6430.40",
+   "Søkere totalt": "182"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "GFBØH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "12409.00",
+   "Karakterpoeng": "10973.80",
+   "Søkere totalt": "297"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "GFMØD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "985.20",
+   "Karakterpoeng": "852.70",
+   "Søkere totalt": "24"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "GFMØD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "900.10",
+   "Karakterpoeng": "655.60",
+   "Søkere totalt": "19"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "GFMØH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "5142.30",
+   "Karakterpoeng": "4427.30",
+   "Søkere totalt": "126"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "GFMØH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "6657.50",
+   "Karakterpoeng": "5709.00",
+   "Søkere totalt": "156"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "KAMI",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "783.00",
+   "Karakterpoeng": "309.50",
+   "Søkere totalt": "8"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "KAMI",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "6112.60",
+   "Karakterpoeng": "1478.60",
+   "Søkere totalt": "44"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "KAØA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1043.50",
+   "Karakterpoeng": "412.40",
+   "Søkere totalt": "12"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "KAØA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "4683.50",
+   "Karakterpoeng": "1161.60",
+   "Søkere totalt": "33"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MBA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "221.80",
+   "Karakterpoeng": "79.80",
+   "Søkere totalt": "21"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MBA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "348.00",
+   "Karakterpoeng": "196.40",
+   "Søkere totalt": "32"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MM",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "185.60",
+   "Karakterpoeng": "140.10",
+   "Søkere totalt": "74"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MM",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "4230.90",
+   "Karakterpoeng": "2208.50",
+   "Søkere totalt": "301"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MP",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4812.60",
+   "Karakterpoeng": "2630.80",
+   "Søkere totalt": "372"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MP",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "23927.60",
+   "Karakterpoeng": "13031.00",
+   "Søkere totalt": "1836"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSAEH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "816.10",
+   "Karakterpoeng": "401.10",
+   "Søkere totalt": "58"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSAEH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "148.60",
+   "Karakterpoeng": "29.10",
+   "Søkere totalt": "8"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSANH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1752.30",
+   "Karakterpoeng": "802.80",
+   "Søkere totalt": "167"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSANH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1077.90",
+   "Karakterpoeng": "594.90",
+   "Søkere totalt": "46"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSBUH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "10757.70",
+   "Karakterpoeng": "6027.00",
+   "Søkere totalt": "445"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSBUH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "7456.80",
+   "Karakterpoeng": "4868.30",
+   "Søkere totalt": "164"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSCMH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1079.40",
+   "Karakterpoeng": "585.90",
+   "Søkere totalt": "53"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSCMH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "381.90",
+   "Karakterpoeng": "352.90",
+   "Søkere totalt": "15"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSDSH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "339.20",
+   "Karakterpoeng": "209.20",
+   "Søkere totalt": "65"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSDSH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "0.00",
+   "Karakterpoeng": "0.00",
+   "Søkere totalt": "11"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSEIH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "722.40",
+   "Karakterpoeng": "476.40",
+   "Søkere totalt": "95"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSEIH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "231.60",
+   "Karakterpoeng": "206.60",
+   "Søkere totalt": "18"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSFEH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3616.90",
+   "Karakterpoeng": "2100.00",
+   "Søkere totalt": "188"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSFEH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3582.30",
+   "Karakterpoeng": "2136.30",
+   "Søkere totalt": "95"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSFJH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2309.00",
+   "Karakterpoeng": "1277.00",
+   "Søkere totalt": "44"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSFJH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1698.40",
+   "Karakterpoeng": "1021.90",
+   "Søkere totalt": "29"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSLOH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6502.60",
+   "Karakterpoeng": "3910.80",
+   "Søkere totalt": "212"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSLOH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2971.00",
+   "Karakterpoeng": "1839.00",
+   "Søkere totalt": "96"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSMAH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2925.10",
+   "Karakterpoeng": "1632.10",
+   "Søkere totalt": "120"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSMAH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1933.50",
+   "Karakterpoeng": "1494.50",
+   "Søkere totalt": "52"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSMLH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1139.20",
+   "Karakterpoeng": "845.70",
+   "Søkere totalt": "67"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSMLH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "856.30",
+   "Karakterpoeng": "488.80",
+   "Søkere totalt": "24"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSQFH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "270.80",
+   "Karakterpoeng": "236.30",
+   "Søkere totalt": "23"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSQFH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "417.00",
+   "Karakterpoeng": "187.00",
+   "Søkere totalt": "8"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSRRH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3420.70",
+   "Karakterpoeng": "1991.40",
+   "Søkere totalt": "110"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSRRH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3036.00",
+   "Karakterpoeng": "2362.50",
+   "Søkere totalt": "95"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSSFH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "461.50",
+   "Karakterpoeng": "319.00",
+   "Søkere totalt": "43"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSSFH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "442.50",
+   "Karakterpoeng": "402.50",
+   "Søkere totalt": "20"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "SØ",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9383.10",
+   "Karakterpoeng": "8509.00",
+   "Søkere totalt": "185"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "SØ",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "10357.80",
+   "Karakterpoeng": "8735.60",
+   "Søkere totalt": "189"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "BINT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "405.90",
+   "Karakterpoeng": "405.90",
+   "Søkere totalt": "194"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "BINT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "722.40",
+   "Karakterpoeng": "722.40",
+   "Søkere totalt": "273"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPBBH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2480.40",
+   "Karakterpoeng": "2222.40",
+   "Søkere totalt": "307"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPBBH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3938.30",
+   "Karakterpoeng": "3556.30",
+   "Søkere totalt": "187"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPBFH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "11892.10",
+   "Karakterpoeng": "11892.10",
+   "Søkere totalt": "305"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPBFH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "15060.00",
+   "Karakterpoeng": "14945.50",
+   "Søkere totalt": "370"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPBTH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1054.80",
+   "Karakterpoeng": "1054.80",
+   "Søkere totalt": "125"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPBTH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1747.90",
+   "Karakterpoeng": "1729.40",
+   "Søkere totalt": "76"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPDBH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "276.10",
+   "Karakterpoeng": "276.10",
+   "Søkere totalt": "49"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPDBH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "910.10",
+   "Karakterpoeng": "910.10",
+   "Søkere totalt": "45"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPDKH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "10738.30",
+   "Karakterpoeng": "10509.30",
+   "Søkere totalt": "273"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPDKH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "12779.30",
+   "Karakterpoeng": "12014.30",
+   "Søkere totalt": "297"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPEMH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "30958.50",
+   "Karakterpoeng": "30954.50",
+   "Søkere totalt": "833"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPEMH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "35840.20",
+   "Karakterpoeng": "35613.70",
+   "Søkere totalt": "890"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPETH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6091.60",
+   "Karakterpoeng": "6091.60",
+   "Søkere totalt": "163"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPETH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "7621.60",
+   "Karakterpoeng": "7262.10",
+   "Søkere totalt": "181"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPFJH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "15101.60",
+   "Karakterpoeng": "15093.60",
+   "Søkere totalt": "359"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPFJH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "16222.00",
+   "Karakterpoeng": "15727.50",
+   "Søkere totalt": "373"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPHRH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "23107.60",
+   "Karakterpoeng": "22644.60",
+   "Søkere totalt": "571"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPHRH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "27766.70",
+   "Karakterpoeng": "26888.70",
+   "Søkere totalt": "663"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPIMH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9311.50",
+   "Karakterpoeng": "9311.50",
+   "Søkere totalt": "242"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPIMH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "12066.40",
+   "Karakterpoeng": "11462.90",
+   "Søkere totalt": "276"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPKLH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3834.90",
+   "Karakterpoeng": "3834.90",
+   "Søkere totalt": "96"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPKLH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2563.30",
+   "Karakterpoeng": "2563.30",
+   "Søkere totalt": "62"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPMID",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "61.10",
+   "Karakterpoeng": "61.10",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPMID",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "160.20",
+   "Karakterpoeng": "160.20",
+   "Søkere totalt": "4"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPMIH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "12622.80",
+   "Karakterpoeng": "12614.80",
+   "Søkere totalt": "325"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPMIH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "20166.90",
+   "Karakterpoeng": "18700.40",
+   "Søkere totalt": "470"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPRFD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "331.90",
+   "Karakterpoeng": "331.90",
+   "Søkere totalt": "14"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPRFD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "274.40",
+   "Karakterpoeng": "274.40",
+   "Søkere totalt": "11"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPRFH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "637.70",
+   "Karakterpoeng": "503.20",
+   "Søkere totalt": "18"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPRFH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2996.20",
+   "Karakterpoeng": "2166.70",
+   "Søkere totalt": "56"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPRVH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "30843.60",
+   "Karakterpoeng": "30843.60",
+   "Søkere totalt": "716"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPRVH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "7948.90",
+   "Karakterpoeng": "7948.90",
+   "Søkere totalt": "155"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPØAD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "284.50",
+   "Karakterpoeng": "284.50",
+   "Søkere totalt": "10"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPØAD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "645.40",
+   "Karakterpoeng": "530.90",
+   "Søkere totalt": "16"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPØAH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "34773.80",
+   "Karakterpoeng": "34760.80",
+   "Søkere totalt": "889"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPØAH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "64034.20",
+   "Karakterpoeng": "59016.20",
+   "Søkere totalt": "1444"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "GFBØD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2199.20",
+   "Karakterpoeng": "2199.20",
+   "Søkere totalt": "74"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "GFBØD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2638.60",
+   "Karakterpoeng": "2638.60",
+   "Søkere totalt": "68"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "GFBØH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6241.80",
+   "Karakterpoeng": "6241.80",
+   "Søkere totalt": "168"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "GFBØH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "9544.60",
+   "Karakterpoeng": "9510.60",
+   "Søkere totalt": "251"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "GFMØD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "741.80",
+   "Karakterpoeng": "741.80",
+   "Søkere totalt": "22"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "GFMØD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "577.40",
+   "Karakterpoeng": "559.40",
+   "Søkere totalt": "15"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "GFMØH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4003.20",
+   "Karakterpoeng": "4000.20",
+   "Søkere totalt": "109"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "GFMØH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "5464.20",
+   "Karakterpoeng": "5324.20",
+   "Søkere totalt": "142"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "KAMI",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "358.50",
+   "Karakterpoeng": "358.50",
+   "Søkere totalt": "11"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "KAMI",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1577.60",
+   "Karakterpoeng": "1104.60",
+   "Søkere totalt": "29"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "KAØA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "530.70",
+   "Karakterpoeng": "414.70",
+   "Søkere totalt": "12"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "KAØA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2488.90",
+   "Karakterpoeng": "2148.90",
+   "Søkere totalt": "58"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MBA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "84.60",
+   "Karakterpoeng": "82.20",
+   "Søkere totalt": "39"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MBA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "61.00",
+   "Karakterpoeng": "45.00",
+   "Søkere totalt": "28"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MM",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "0.00",
+   "Karakterpoeng": "0.00",
+   "Søkere totalt": "42"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MM",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "722.10",
+   "Karakterpoeng": "351.60",
+   "Søkere totalt": "99"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MP",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4479.70",
+   "Karakterpoeng": "3725.30",
+   "Søkere totalt": "450"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MP",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "18094.30",
+   "Karakterpoeng": "15270.00",
+   "Søkere totalt": "2039"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSAEH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "0.00",
+   "Karakterpoeng": "0.00",
+   "Søkere totalt": "32"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSANH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "490.80",
+   "Karakterpoeng": "490.80",
+   "Søkere totalt": "119"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSANH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "568.50",
+   "Karakterpoeng": "568.50",
+   "Søkere totalt": "30"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSBUH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6686.80",
+   "Karakterpoeng": "6686.80",
+   "Søkere totalt": "401"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSBUH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "4817.10",
+   "Karakterpoeng": "4817.10",
+   "Søkere totalt": "169"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSCMH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "987.60",
+   "Karakterpoeng": "987.60",
+   "Søkere totalt": "56"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSCMH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "548.70",
+   "Karakterpoeng": "548.70",
+   "Søkere totalt": "21"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSDSH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "242.30",
+   "Karakterpoeng": "242.30",
+   "Søkere totalt": "58"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSDSH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "124.90",
+   "Karakterpoeng": "124.90",
+   "Søkere totalt": "11"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSEIH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "362.40",
+   "Karakterpoeng": "362.40",
+   "Søkere totalt": "66"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSEIH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "332.00",
+   "Karakterpoeng": "332.00",
+   "Søkere totalt": "19"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSFEH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2910.70",
+   "Karakterpoeng": "2910.70",
+   "Søkere totalt": "218"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSFEH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2877.20",
+   "Karakterpoeng": "2877.20",
+   "Søkere totalt": "116"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSFJH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2300.00",
+   "Karakterpoeng": "2300.00",
+   "Søkere totalt": "57"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSFJH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1769.10",
+   "Karakterpoeng": "1769.10",
+   "Søkere totalt": "45"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSLOH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3512.90",
+   "Karakterpoeng": "3512.90",
+   "Søkere totalt": "193"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSLOH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2284.40",
+   "Karakterpoeng": "2284.40",
+   "Søkere totalt": "103"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSMAH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1472.60",
+   "Karakterpoeng": "1472.60",
+   "Søkere totalt": "98"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSMAH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1558.50",
+   "Karakterpoeng": "1558.50",
+   "Søkere totalt": "52"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSMLH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "796.80",
+   "Karakterpoeng": "796.80",
+   "Søkere totalt": "54"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSMLH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "317.50",
+   "Karakterpoeng": "317.50",
+   "Søkere totalt": "20"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSQFH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "439.80",
+   "Karakterpoeng": "439.80",
+   "Søkere totalt": "35"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSQFH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "193.20",
+   "Karakterpoeng": "193.20",
+   "Søkere totalt": "12"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSRRH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2587.50",
+   "Karakterpoeng": "2587.50",
+   "Søkere totalt": "139"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSRRH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2847.70",
+   "Karakterpoeng": "2847.70",
+   "Søkere totalt": "134"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSSFH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "882.20",
+   "Karakterpoeng": "882.20",
+   "Søkere totalt": "60"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSSFH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "162.40",
+   "Karakterpoeng": "162.40",
+   "Søkere totalt": "12"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "SØ",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "10874.20",
+   "Karakterpoeng": "10864.70",
+   "Søkere totalt": "236"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "SØ",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "8039.80",
+   "Karakterpoeng": "8016.80",
+   "Søkere totalt": "171"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "BINT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "276.50",
+   "Karakterpoeng": "276.50",
+   "Søkere totalt": "156"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "BINT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "359.60",
+   "Karakterpoeng": "359.60",
+   "Søkere totalt": "295"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPBBH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1956.20",
+   "Karakterpoeng": "1956.20",
+   "Søkere totalt": "320"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPBBH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "4428.70",
+   "Karakterpoeng": "4428.70",
+   "Søkere totalt": "238"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPBFH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "15428.20",
+   "Karakterpoeng": "15428.20",
+   "Søkere totalt": "397"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPBFH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "20461.50",
+   "Karakterpoeng": "20461.50",
+   "Søkere totalt": "509"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPBTH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1095.70",
+   "Karakterpoeng": "1095.70",
+   "Søkere totalt": "125"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPBTH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "985.30",
+   "Karakterpoeng": "985.30",
+   "Søkere totalt": "75"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPDBH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "113.20",
+   "Karakterpoeng": "113.20",
+   "Søkere totalt": "73"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPDBH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "333.10",
+   "Karakterpoeng": "333.10",
+   "Søkere totalt": "46"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPDKH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "12556.90",
+   "Karakterpoeng": "12556.90",
+   "Søkere totalt": "322"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPDKH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "10697.30",
+   "Karakterpoeng": "10697.30",
+   "Søkere totalt": "264"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPEMH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "32375.20",
+   "Karakterpoeng": "32375.20",
+   "Søkere totalt": "886"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPEMH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "30515.00",
+   "Karakterpoeng": "30515.00",
+   "Søkere totalt": "769"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPETH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "7354.20",
+   "Karakterpoeng": "7354.20",
+   "Søkere totalt": "189"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPETH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "9126.20",
+   "Karakterpoeng": "9126.20",
+   "Søkere totalt": "231"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPFJH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "18810.60",
+   "Karakterpoeng": "18810.60",
+   "Søkere totalt": "440"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPFJH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "15987.40",
+   "Karakterpoeng": "15987.40",
+   "Søkere totalt": "381"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPHRH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "28027.20",
+   "Karakterpoeng": "28027.20",
+   "Søkere totalt": "693"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPHRH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "27855.10",
+   "Karakterpoeng": "27855.10",
+   "Søkere totalt": "679"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPIMH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "11890.50",
+   "Karakterpoeng": "11890.50",
+   "Søkere totalt": "297"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPIMH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "13093.80",
+   "Karakterpoeng": "13093.80",
+   "Søkere totalt": "316"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPKLH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4043.20",
+   "Karakterpoeng": "4043.20",
+   "Søkere totalt": "99"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPKLH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1662.30",
+   "Karakterpoeng": "1662.30",
+   "Søkere totalt": "42"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPMIH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "13392.20",
+   "Karakterpoeng": "13392.20",
+   "Søkere totalt": "358"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPMIH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "18386.30",
+   "Karakterpoeng": "18386.30",
+   "Søkere totalt": "466"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPRFD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "35.80",
+   "Karakterpoeng": "35.80",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPRFH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "712.80",
+   "Karakterpoeng": "712.80",
+   "Søkere totalt": "30"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPRFH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2719.60",
+   "Karakterpoeng": "2719.60",
+   "Søkere totalt": "75"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPRVH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "29088.60",
+   "Karakterpoeng": "29088.60",
+   "Søkere totalt": "648"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPRVH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "8093.60",
+   "Karakterpoeng": "8093.60",
+   "Søkere totalt": "158"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPØAD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "238.30",
+   "Karakterpoeng": "238.30",
+   "Søkere totalt": "7"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPØAD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "730.10",
+   "Karakterpoeng": "730.10",
+   "Søkere totalt": "19"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPØAH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "43033.50",
+   "Karakterpoeng": "43033.50",
+   "Søkere totalt": "1099"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPØAH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "64602.50",
+   "Karakterpoeng": "64602.50",
+   "Søkere totalt": "1603"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "GFBØD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2167.80",
+   "Karakterpoeng": "2167.80",
+   "Søkere totalt": "65"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "GFBØD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2451.40",
+   "Karakterpoeng": "2451.40",
+   "Søkere totalt": "65"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "GFBØH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "7334.40",
+   "Karakterpoeng": "7334.40",
+   "Søkere totalt": "190"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "GFBØH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "8771.60",
+   "Karakterpoeng": "8771.60",
+   "Søkere totalt": "229"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "GFMØD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "816.40",
+   "Karakterpoeng": "816.40",
+   "Søkere totalt": "24"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "GFMØD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "764.10",
+   "Karakterpoeng": "764.10",
+   "Søkere totalt": "21"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "GFMØH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3691.90",
+   "Karakterpoeng": "3691.90",
+   "Søkere totalt": "98"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "GFMØH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3320.40",
+   "Karakterpoeng": "3320.40",
+   "Søkere totalt": "90"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "KAMI",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "356.20",
+   "Karakterpoeng": "356.20",
+   "Søkere totalt": "10"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "KAMI",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1374.60",
+   "Karakterpoeng": "1374.60",
+   "Søkere totalt": "34"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "KAØA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "585.50",
+   "Karakterpoeng": "585.50",
+   "Søkere totalt": "19"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "KAØA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1042.70",
+   "Karakterpoeng": "1042.70",
+   "Søkere totalt": "30"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MBA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "32.70",
+   "Karakterpoeng": "32.70",
+   "Søkere totalt": "23"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MBA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "81.00",
+   "Karakterpoeng": "81.00",
+   "Søkere totalt": "27"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MM",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "36.70",
+   "Karakterpoeng": "36.70",
+   "Søkere totalt": "31"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MM",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "169.00",
+   "Karakterpoeng": "169.00",
+   "Søkere totalt": "90"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MP",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2844.80",
+   "Karakterpoeng": "2844.80",
+   "Søkere totalt": "420"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MP",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "14585.70",
+   "Karakterpoeng": "14585.70",
+   "Søkere totalt": "2072"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSANH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "856.30",
+   "Karakterpoeng": "856.30",
+   "Søkere totalt": "133"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSANH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "591.40",
+   "Karakterpoeng": "591.40",
+   "Søkere totalt": "35"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSBUH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9121.40",
+   "Karakterpoeng": "9121.40",
+   "Søkere totalt": "491"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSBUH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "6216.50",
+   "Karakterpoeng": "6216.50",
+   "Søkere totalt": "216"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSCMH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "961.70",
+   "Karakterpoeng": "961.70",
+   "Søkere totalt": "53"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSCMH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "311.70",
+   "Karakterpoeng": "311.70",
+   "Søkere totalt": "20"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSDSH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "504.30",
+   "Karakterpoeng": "504.30",
+   "Søkere totalt": "72"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSDSH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "129.90",
+   "Karakterpoeng": "129.90",
+   "Søkere totalt": "12"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSEIH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "773.80",
+   "Karakterpoeng": "773.80",
+   "Søkere totalt": "64"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSEIH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "209.40",
+   "Karakterpoeng": "209.40",
+   "Søkere totalt": "19"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSFEH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3241.30",
+   "Karakterpoeng": "3241.30",
+   "Søkere totalt": "192"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSFEH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2799.10",
+   "Karakterpoeng": "2799.10",
+   "Søkere totalt": "97"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSFJH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1386.30",
+   "Karakterpoeng": "1386.30",
+   "Søkere totalt": "46"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSFJH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "950.70",
+   "Karakterpoeng": "950.70",
+   "Søkere totalt": "28"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSLOH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3639.30",
+   "Karakterpoeng": "3639.30",
+   "Søkere totalt": "204"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSLOH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2610.30",
+   "Karakterpoeng": "2610.30",
+   "Søkere totalt": "111"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSMAH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1852.90",
+   "Karakterpoeng": "1852.90",
+   "Søkere totalt": "148"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSMAH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1109.30",
+   "Karakterpoeng": "1109.30",
+   "Søkere totalt": "42"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSMLH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "424.70",
+   "Karakterpoeng": "424.70",
+   "Søkere totalt": "50"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSMLH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "491.30",
+   "Karakterpoeng": "491.30",
+   "Søkere totalt": "19"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSQFH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "594.10",
+   "Karakterpoeng": "594.10",
+   "Søkere totalt": "37"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSQFH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "488.80",
+   "Karakterpoeng": "488.80",
+   "Søkere totalt": "18"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSRRH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2855.40",
+   "Karakterpoeng": "2855.40",
+   "Søkere totalt": "131"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSRRH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3798.10",
+   "Karakterpoeng": "3798.10",
+   "Søkere totalt": "157"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSSFH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "388.50",
+   "Karakterpoeng": "388.50",
+   "Søkere totalt": "35"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSSFH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "426.80",
+   "Karakterpoeng": "426.80",
+   "Søkere totalt": "16"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "SØ",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "11125.50",
+   "Karakterpoeng": "11125.50",
+   "Søkere totalt": "249"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "SØ",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "11020.70",
+   "Karakterpoeng": "11020.70",
+   "Søkere totalt": "241"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "BINT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "0.00",
+   "Karakterpoeng": "0.00",
+   "Søkere totalt": "36"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "BINT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "309.40",
+   "Karakterpoeng": "309.40",
+   "Søkere totalt": "274"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPBBH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3288.50",
+   "Karakterpoeng": "3288.50",
+   "Søkere totalt": "471"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPBBH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3921.60",
+   "Karakterpoeng": "3921.60",
+   "Søkere totalt": "237"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPBFH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "14826.43",
+   "Karakterpoeng": "14826.43",
+   "Søkere totalt": "440"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPBFH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "20452.50",
+   "Karakterpoeng": "20452.50",
+   "Søkere totalt": "495"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPBTH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "771.00",
+   "Karakterpoeng": "771.00",
+   "Søkere totalt": "229"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPBTH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "455.90",
+   "Karakterpoeng": "455.90",
+   "Søkere totalt": "56"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPDBH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "261.30",
+   "Karakterpoeng": "261.30",
+   "Søkere totalt": "140"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPDBH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "615.70",
+   "Karakterpoeng": "615.70",
+   "Søkere totalt": "63"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPDKH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "11680.94",
+   "Karakterpoeng": "11680.94",
+   "Søkere totalt": "340"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPDKH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "7679.20",
+   "Karakterpoeng": "7679.20",
+   "Søkere totalt": "186"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPEMH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "38947.44",
+   "Karakterpoeng": "38947.44",
+   "Søkere totalt": "1192"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPEMH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "29849.90",
+   "Karakterpoeng": "29849.90",
+   "Søkere totalt": "754"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPETH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "9048.40",
+   "Karakterpoeng": "9048.40",
+   "Søkere totalt": "260"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPETH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "7273.60",
+   "Karakterpoeng": "7273.60",
+   "Søkere totalt": "186"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPFJH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "13903.30",
+   "Karakterpoeng": "13903.30",
+   "Søkere totalt": "354"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPFJH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "15756.30",
+   "Karakterpoeng": "15756.30",
+   "Søkere totalt": "382"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPHRH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "29964.70",
+   "Karakterpoeng": "29964.70",
+   "Søkere totalt": "813"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPHRH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "26302.90",
+   "Karakterpoeng": "26302.90",
+   "Søkere totalt": "639"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPIMH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "12827.90",
+   "Karakterpoeng": "12827.90",
+   "Søkere totalt": "356"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPIMH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "11536.30",
+   "Karakterpoeng": "11536.30",
+   "Søkere totalt": "278"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPKLH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3049.20",
+   "Karakterpoeng": "3049.20",
+   "Søkere totalt": "81"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPKLH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1573.20",
+   "Karakterpoeng": "1573.20",
+   "Søkere totalt": "38"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPMID",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "250.80",
+   "Karakterpoeng": "250.80",
+   "Søkere totalt": "8"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPMID",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "123.40",
+   "Karakterpoeng": "123.40",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPMIH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "12361.80",
+   "Karakterpoeng": "12361.80",
+   "Søkere totalt": "362"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPMIH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "14855.00",
+   "Karakterpoeng": "14855.00",
+   "Søkere totalt": "371"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPRFH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "49.50",
+   "Karakterpoeng": "49.50",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPRVH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "38665.60",
+   "Karakterpoeng": "38665.60",
+   "Søkere totalt": "929"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPRVH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "7894.10",
+   "Karakterpoeng": "7894.10",
+   "Søkere totalt": "155"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPØAD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "418.50",
+   "Karakterpoeng": "418.50",
+   "Søkere totalt": "13"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPØAD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "905.60",
+   "Karakterpoeng": "905.60",
+   "Søkere totalt": "22"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPØAH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "52889.50",
+   "Karakterpoeng": "52889.50",
+   "Søkere totalt": "1477"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPØAH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "76501.45",
+   "Karakterpoeng": "76501.45",
+   "Søkere totalt": "1866"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "GFBØD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2642.30",
+   "Karakterpoeng": "2642.30",
+   "Søkere totalt": "88"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "GFBØD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2968.40",
+   "Karakterpoeng": "2968.40",
+   "Søkere totalt": "77"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "GFBØH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4458.80",
+   "Karakterpoeng": "4458.80",
+   "Søkere totalt": "136"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "GFBØH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "5831.30",
+   "Karakterpoeng": "5831.30",
+   "Søkere totalt": "160"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "GFMØD",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "836.40",
+   "Karakterpoeng": "836.40",
+   "Søkere totalt": "25"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "GFMØD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "390.90",
+   "Karakterpoeng": "390.90",
+   "Søkere totalt": "11"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "GFMØH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2129.50",
+   "Karakterpoeng": "2129.50",
+   "Søkere totalt": "72"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "GFMØH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2438.00",
+   "Karakterpoeng": "2438.00",
+   "Søkere totalt": "65"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "KAMI",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "263.70",
+   "Karakterpoeng": "263.70",
+   "Søkere totalt": "7"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "KAMI",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "860.60",
+   "Karakterpoeng": "860.60",
+   "Søkere totalt": "21"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "KAØA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "662.20",
+   "Karakterpoeng": "662.20",
+   "Søkere totalt": "18"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "KAØA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1597.70",
+   "Karakterpoeng": "1597.70",
+   "Søkere totalt": "41"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MBA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "39.70",
+   "Karakterpoeng": "39.70",
+   "Søkere totalt": "22"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MBA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "290.10",
+   "Karakterpoeng": "290.10",
+   "Søkere totalt": "28"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MM",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "0.00",
+   "Karakterpoeng": "0.00",
+   "Søkere totalt": "20"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MM",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "442.60",
+   "Karakterpoeng": "442.60",
+   "Søkere totalt": "62"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MP",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "3441.40",
+   "Karakterpoeng": "3441.40",
+   "Søkere totalt": "450"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MP",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "14982.50",
+   "Karakterpoeng": "14982.50",
+   "Søkere totalt": "1968"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSANH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1385.80",
+   "Karakterpoeng": "1385.80",
+   "Søkere totalt": "237"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSANH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "895.80",
+   "Karakterpoeng": "895.80",
+   "Søkere totalt": "41"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSBUH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "13787.40",
+   "Karakterpoeng": "13787.40",
+   "Søkere totalt": "749"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSBUH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "6981.50",
+   "Karakterpoeng": "6981.50",
+   "Søkere totalt": "223"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSCMH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "375.30",
+   "Karakterpoeng": "375.30",
+   "Søkere totalt": "45"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSDSH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "568.70",
+   "Karakterpoeng": "568.70",
+   "Søkere totalt": "233"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSDSH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "189.30",
+   "Karakterpoeng": "189.30",
+   "Søkere totalt": "18"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSEIH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1157.30",
+   "Karakterpoeng": "1157.30",
+   "Søkere totalt": "151"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSEIH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "140.40",
+   "Karakterpoeng": "140.40",
+   "Søkere totalt": "17"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSFEH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6521.20",
+   "Karakterpoeng": "6521.20",
+   "Søkere totalt": "387"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSFEH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3442.60",
+   "Karakterpoeng": "3442.60",
+   "Søkere totalt": "126"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSFJH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "2542.70",
+   "Karakterpoeng": "2542.70",
+   "Søkere totalt": "88"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSFJH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "631.80",
+   "Karakterpoeng": "631.80",
+   "Søkere totalt": "20"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSLOH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "6756.80",
+   "Karakterpoeng": "6756.80",
+   "Søkere totalt": "375"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSLOH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "2478.90",
+   "Karakterpoeng": "2478.90",
+   "Søkere totalt": "93"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSMAH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4016.60",
+   "Karakterpoeng": "4016.60",
+   "Søkere totalt": "219"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSMAH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1519.10",
+   "Karakterpoeng": "1519.10",
+   "Søkere totalt": "51"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSMLH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "802.60",
+   "Karakterpoeng": "802.60",
+   "Søkere totalt": "65"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSMLH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "508.60",
+   "Karakterpoeng": "508.60",
+   "Søkere totalt": "23"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSQFH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "1243.20",
+   "Karakterpoeng": "1243.20",
+   "Søkere totalt": "83"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSQFH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1041.40",
+   "Karakterpoeng": "1041.40",
+   "Søkere totalt": "37"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSRRH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "4281.70",
+   "Karakterpoeng": "4281.70",
+   "Søkere totalt": "222"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSRRH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "4799.80",
+   "Karakterpoeng": "4799.80",
+   "Søkere totalt": "205"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSSFH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "552.70",
+   "Karakterpoeng": "552.70",
+   "Søkere totalt": "76"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSSFH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "132.20",
+   "Karakterpoeng": "132.20",
+   "Søkere totalt": "11"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "SØ",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "12946.80",
+   "Karakterpoeng": "12946.80",
+   "Søkere totalt": "334"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "SØ",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "8220.73",
+   "Karakterpoeng": "8220.73",
+   "Søkere totalt": "177"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "BINT",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "0.00",
+   "Karakterpoeng": "0.00",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "BINT",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "317.90",
+   "Karakterpoeng": "317.90",
+   "Søkere totalt": "30"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "DIPBBH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "80.20",
+   "Karakterpoeng": "80.20",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "DIPBBH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "217.50",
+   "Karakterpoeng": "217.50",
+   "Søkere totalt": "10"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "DIPBFH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "35.90",
+   "Karakterpoeng": "35.90",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "DIPBFH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "667.30",
+   "Karakterpoeng": "667.30",
+   "Søkere totalt": "16"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "DIPBTH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "0.00",
+   "Karakterpoeng": "0.00",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "DIPDKH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "44.60",
+   "Karakterpoeng": "44.60",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "DIPEMH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "140.70",
+   "Karakterpoeng": "140.70",
+   "Søkere totalt": "4"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "DIPEMH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "837.90",
+   "Karakterpoeng": "837.90",
+   "Søkere totalt": "21"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "DIPETH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "237.60",
+   "Karakterpoeng": "237.60",
+   "Søkere totalt": "6"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "DIPFJH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "34.10",
+   "Karakterpoeng": "34.10",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "DIPFJH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "478.50",
+   "Karakterpoeng": "478.50",
+   "Søkere totalt": "11"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "DIPHRH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "119.40",
+   "Karakterpoeng": "119.40",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "DIPHRH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "542.30",
+   "Karakterpoeng": "542.30",
+   "Søkere totalt": "13"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "DIPIMH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "132.50",
+   "Karakterpoeng": "132.50",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "DIPKLH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "31.10",
+   "Karakterpoeng": "31.10",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "DIPMIH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "37.60",
+   "Karakterpoeng": "37.60",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "DIPMIH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "622.30",
+   "Karakterpoeng": "622.30",
+   "Søkere totalt": "15"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "DIPØAH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "248.70",
+   "Karakterpoeng": "248.70",
+   "Søkere totalt": "6"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "DIPØAH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3932.30",
+   "Karakterpoeng": "3932.30",
+   "Søkere totalt": "97"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "GFBØD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "118.30",
+   "Karakterpoeng": "118.30",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "GFBØH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "45.60",
+   "Karakterpoeng": "45.60",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "GFBØH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "63.60",
+   "Karakterpoeng": "63.60",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "GFMØD",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "39.10",
+   "Karakterpoeng": "39.10",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "GFMØH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "36.40",
+   "Karakterpoeng": "36.40",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "KAMI",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "188.70",
+   "Karakterpoeng": "188.70",
+   "Søkere totalt": "5"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "KAØA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "35.20",
+   "Karakterpoeng": "35.20",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "MBA",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "0.00",
+   "Karakterpoeng": "0.00",
+   "Søkere totalt": "10"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "MBA",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "129.70",
+   "Karakterpoeng": "129.70",
+   "Søkere totalt": "23"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "MM",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "0.00",
+   "Karakterpoeng": "0.00",
+   "Søkere totalt": "11"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "MM",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "221.50",
+   "Karakterpoeng": "221.50",
+   "Søkere totalt": "33"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "MP",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "690.30",
+   "Karakterpoeng": "690.30",
+   "Søkere totalt": "73"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "MP",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "3418.70",
+   "Karakterpoeng": "3418.70",
+   "Søkere totalt": "346"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "MSCMSBUH",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "0.00",
+   "Karakterpoeng": "0.00",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "MSCMSBUH",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "39.60",
+   "Karakterpoeng": "39.60",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "SØ",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "95.70",
+   "Karakterpoeng": "95.70",
+   "Søkere totalt": "0"
+  }
+ ],
+ "forstevalg": [
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "BINT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1068.00",
+   "Karakterpoeng": "659.40",
+   "Søkere totalt": "16"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIP",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "144.20",
+   "Karakterpoeng": "32.20",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPBBH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "5279.80",
+   "Karakterpoeng": "4233.30",
+   "Søkere totalt": "98"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPBFH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "30305.40",
+   "Karakterpoeng": "21256.50",
+   "Søkere totalt": "511"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPBTH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2346.40",
+   "Karakterpoeng": "1788.80",
+   "Søkere totalt": "42"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPDKH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "27965.30",
+   "Karakterpoeng": "18874.80",
+   "Søkere totalt": "481"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPEMH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "60250.80",
+   "Karakterpoeng": "40011.80",
+   "Søkere totalt": "1022"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPETH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "16589.40",
+   "Karakterpoeng": "12415.40",
+   "Søkere totalt": "316"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPFJH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "30999.50",
+   "Karakterpoeng": "20230.90",
+   "Søkere totalt": "494"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPHRH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "64831.50",
+   "Karakterpoeng": "43309.00",
+   "Søkere totalt": "1084"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPIMH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "23218.70",
+   "Karakterpoeng": "18233.10",
+   "Søkere totalt": "447"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPKLH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "7212.60",
+   "Karakterpoeng": "5283.50",
+   "Søkere totalt": "135"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPMID",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "594.70",
+   "Karakterpoeng": "194.70",
+   "Søkere totalt": "5"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPMIH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "57520.60",
+   "Karakterpoeng": "30593.20",
+   "Søkere totalt": "790"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPRFD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2283.40",
+   "Karakterpoeng": "551.00",
+   "Søkere totalt": "15"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPRFH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "10437.60",
+   "Karakterpoeng": "2559.40",
+   "Søkere totalt": "69"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPVHH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1310.70",
+   "Karakterpoeng": "299.70",
+   "Søkere totalt": "8"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPØAD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2458.30",
+   "Karakterpoeng": "598.30",
+   "Søkere totalt": "15"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "DIPØAH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "147772.90",
+   "Karakterpoeng": "86219.20",
+   "Søkere totalt": "2181"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "GFBØD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "7480.70",
+   "Karakterpoeng": "6197.10",
+   "Søkere totalt": "156"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "GFBØH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "22667.70",
+   "Karakterpoeng": "19305.60",
+   "Søkere totalt": "510"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "GFMØD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2155.60",
+   "Karakterpoeng": "1807.60",
+   "Søkere totalt": "47"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "GFMØH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "13470.90",
+   "Karakterpoeng": "11758.90",
+   "Søkere totalt": "316"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "KAMI",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "9086.90",
+   "Karakterpoeng": "2180.90",
+   "Søkere totalt": "59"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "KAØA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "7470.30",
+   "Karakterpoeng": "1866.30",
+   "Søkere totalt": "49"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MBA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "390.10",
+   "Karakterpoeng": "224.60",
+   "Søkere totalt": "55"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MM",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6782.60",
+   "Karakterpoeng": "3375.60",
+   "Søkere totalt": "200"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MP",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "25532.00",
+   "Karakterpoeng": "13634.90",
+   "Søkere totalt": "702"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSAEH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "596.70",
+   "Karakterpoeng": "230.20",
+   "Søkere totalt": "6"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSANH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3138.60",
+   "Karakterpoeng": "1923.60",
+   "Søkere totalt": "48"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSBUH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "22710.20",
+   "Karakterpoeng": "12475.00",
+   "Søkere totalt": "307"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSEIH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1697.60",
+   "Karakterpoeng": "1005.10",
+   "Søkere totalt": "25"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSFEH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "5895.00",
+   "Karakterpoeng": "3138.50",
+   "Søkere totalt": "79"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSFJH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3173.70",
+   "Karakterpoeng": "1484.10",
+   "Søkere totalt": "37"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSLOH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2935.90",
+   "Karakterpoeng": "1952.90",
+   "Søkere totalt": "49"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSMAH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "5309.60",
+   "Karakterpoeng": "3131.60",
+   "Søkere totalt": "77"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSMLH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1314.90",
+   "Karakterpoeng": "897.90",
+   "Søkere totalt": "22"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSQFH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1251.10",
+   "Karakterpoeng": "671.10",
+   "Søkere totalt": "17"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSRRH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6799.20",
+   "Karakterpoeng": "3887.60",
+   "Søkere totalt": "94"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "MSCMSSFH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1501.40",
+   "Karakterpoeng": "764.60",
+   "Søkere totalt": "19"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "SØ",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "21485.30",
+   "Karakterpoeng": "18986.30",
+   "Søkere totalt": "410"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "BINT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1622.30",
+   "Karakterpoeng": "1146.10",
+   "Søkere totalt": "489"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPBBH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "12517.80",
+   "Karakterpoeng": "10526.10",
+   "Søkere totalt": "517"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPBFH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "35682.90",
+   "Karakterpoeng": "26792.60",
+   "Søkere totalt": "680"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPBTH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4371.50",
+   "Karakterpoeng": "3768.00",
+   "Søkere totalt": "160"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPDBH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1771.40",
+   "Karakterpoeng": "1474.90",
+   "Søkere totalt": "56"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPDKH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "28548.50",
+   "Karakterpoeng": "20796.70",
+   "Søkere totalt": "531"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPEMH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "81612.50",
+   "Karakterpoeng": "59155.40",
+   "Søkere totalt": "1549"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPETH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "14479.90",
+   "Karakterpoeng": "11201.40",
+   "Søkere totalt": "297"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPFJH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "30502.20",
+   "Karakterpoeng": "23074.90",
+   "Søkere totalt": "554"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPHRH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "69563.90",
+   "Karakterpoeng": "48974.50",
+   "Søkere totalt": "1249"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPIMH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "23115.90",
+   "Karakterpoeng": "18677.50",
+   "Søkere totalt": "470"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPKLH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "8866.00",
+   "Karakterpoeng": "7240.50",
+   "Søkere totalt": "185"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPMID",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "636.70",
+   "Karakterpoeng": "136.20",
+   "Søkere totalt": "7"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPMIH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "46553.60",
+   "Karakterpoeng": "25216.70",
+   "Søkere totalt": "654"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPRFD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2407.50",
+   "Karakterpoeng": "686.70",
+   "Søkere totalt": "31"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPRFH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "12420.70",
+   "Karakterpoeng": "2987.50",
+   "Søkere totalt": "97"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPØAD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2652.90",
+   "Karakterpoeng": "730.20",
+   "Søkere totalt": "23"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "DIPØAH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "132356.00",
+   "Karakterpoeng": "82685.10",
+   "Søkere totalt": "2087"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "GFBØD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6431.70",
+   "Karakterpoeng": "5306.80",
+   "Søkere totalt": "161"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "GFBØH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "18594.60",
+   "Karakterpoeng": "16282.90",
+   "Søkere totalt": "441"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "GFMØD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1835.30",
+   "Karakterpoeng": "1468.30",
+   "Søkere totalt": "42"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "GFMØH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "10927.50",
+   "Karakterpoeng": "9365.50",
+   "Søkere totalt": "257"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "KAMI",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6895.60",
+   "Karakterpoeng": "1788.10",
+   "Søkere totalt": "52"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "KAØA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "5727.00",
+   "Karakterpoeng": "1574.00",
+   "Søkere totalt": "45"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MBA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "569.80",
+   "Karakterpoeng": "276.20",
+   "Søkere totalt": "52"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MM",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4276.10",
+   "Karakterpoeng": "2318.20",
+   "Søkere totalt": "371"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MP",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "27729.60",
+   "Karakterpoeng": "14895.90",
+   "Søkere totalt": "2119"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSAEH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "916.50",
+   "Karakterpoeng": "391.00",
+   "Søkere totalt": "61"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSANH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2705.30",
+   "Karakterpoeng": "1280.30",
+   "Søkere totalt": "202"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSBUH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "17496.70",
+   "Karakterpoeng": "10442.00",
+   "Søkere totalt": "586"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSCMH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1421.40",
+   "Karakterpoeng": "902.90",
+   "Søkere totalt": "65"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSDSH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "339.20",
+   "Karakterpoeng": "209.20",
+   "Søkere totalt": "76"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSEIH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "954.00",
+   "Karakterpoeng": "683.00",
+   "Søkere totalt": "108"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSFEH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6706.50",
+   "Karakterpoeng": "3989.60",
+   "Søkere totalt": "265"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSFJH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4007.40",
+   "Karakterpoeng": "2298.90",
+   "Søkere totalt": "72"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSLOH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "9336.00",
+   "Karakterpoeng": "5624.20",
+   "Søkere totalt": "299"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSMAH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4696.10",
+   "Karakterpoeng": "2977.60",
+   "Søkere totalt": "164"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSMLH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1861.50",
+   "Karakterpoeng": "1216.00",
+   "Søkere totalt": "86"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSQFH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "687.80",
+   "Karakterpoeng": "423.30",
+   "Søkere totalt": "29"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSRRH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6421.10",
+   "Karakterpoeng": "4319.30",
+   "Søkere totalt": "200"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "MSCMSSFH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "904.00",
+   "Karakterpoeng": "721.50",
+   "Søkere totalt": "63"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "SØ",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "19679.80",
+   "Karakterpoeng": "17190.50",
+   "Søkere totalt": "373"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "BINT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1128.30",
+   "Karakterpoeng": "1128.30",
+   "Søkere totalt": "456"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPBBH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6215.80",
+   "Karakterpoeng": "5575.80",
+   "Søkere totalt": "481"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPBFH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "23679.00",
+   "Karakterpoeng": "23564.50",
+   "Søkere totalt": "595"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPBTH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2802.70",
+   "Karakterpoeng": "2784.20",
+   "Søkere totalt": "196"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPDBH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1036.90",
+   "Karakterpoeng": "1036.90",
+   "Søkere totalt": "88"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPDKH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "22762.30",
+   "Karakterpoeng": "21768.30",
+   "Søkere totalt": "550"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPEMH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "60913.60",
+   "Karakterpoeng": "60683.10",
+   "Søkere totalt": "1580"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPETH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "12941.40",
+   "Karakterpoeng": "12581.90",
+   "Søkere totalt": "325"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPFJH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "21930.80",
+   "Karakterpoeng": "21428.30",
+   "Søkere totalt": "516"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPHRH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "47121.60",
+   "Karakterpoeng": "45917.60",
+   "Søkere totalt": "1145"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPIMH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "19873.00",
+   "Karakterpoeng": "19269.50",
+   "Søkere totalt": "480"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPKLH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6046.50",
+   "Karakterpoeng": "6046.50",
+   "Søkere totalt": "150"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPMID",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "221.30",
+   "Karakterpoeng": "221.30",
+   "Søkere totalt": "7"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPMIH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "30890.50",
+   "Karakterpoeng": "29416.00",
+   "Søkere totalt": "744"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPRFD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "606.30",
+   "Karakterpoeng": "606.30",
+   "Søkere totalt": "25"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPRFH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3633.90",
+   "Karakterpoeng": "2669.90",
+   "Søkere totalt": "74"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPRVH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "38612.40",
+   "Karakterpoeng": "38612.40",
+   "Søkere totalt": "866"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPØAD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "892.90",
+   "Karakterpoeng": "778.40",
+   "Søkere totalt": "25"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "DIPØAH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "92687.10",
+   "Karakterpoeng": "87656.10",
+   "Søkere totalt": "2179"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "GFBØD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4837.80",
+   "Karakterpoeng": "4837.80",
+   "Søkere totalt": "142"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "GFBØH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "14717.70",
+   "Karakterpoeng": "14683.70",
+   "Søkere totalt": "388"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "GFMØD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1292.20",
+   "Karakterpoeng": "1274.20",
+   "Søkere totalt": "36"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "GFMØH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "8749.90",
+   "Karakterpoeng": "8606.90",
+   "Søkere totalt": "227"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "KAMI",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1654.60",
+   "Karakterpoeng": "1297.60",
+   "Søkere totalt": "36"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "KAØA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3019.60",
+   "Karakterpoeng": "2563.60",
+   "Søkere totalt": "70"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MBA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "145.60",
+   "Karakterpoeng": "127.20",
+   "Søkere totalt": "67"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MM",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "722.10",
+   "Karakterpoeng": "351.60",
+   "Søkere totalt": "140"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MP",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "21162.60",
+   "Karakterpoeng": "18190.80",
+   "Søkere totalt": "2406"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSAEH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "0.00",
+   "Karakterpoeng": "0.00",
+   "Søkere totalt": "31"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSANH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "982.60",
+   "Karakterpoeng": "982.60",
+   "Søkere totalt": "141"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSBUH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "10902.60",
+   "Karakterpoeng": "10902.60",
+   "Søkere totalt": "539"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSCMH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1297.00",
+   "Karakterpoeng": "1297.00",
+   "Søkere totalt": "66"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSDSH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "323.10",
+   "Karakterpoeng": "323.10",
+   "Søkere totalt": "68"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSEIH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "517.60",
+   "Karakterpoeng": "517.60",
+   "Søkere totalt": "67"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSFEH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "5369.70",
+   "Karakterpoeng": "5369.70",
+   "Søkere totalt": "311"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSFJH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3868.70",
+   "Karakterpoeng": "3868.70",
+   "Søkere totalt": "97"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSLOH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "5594.50",
+   "Karakterpoeng": "5594.50",
+   "Søkere totalt": "283"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSMAH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2867.70",
+   "Karakterpoeng": "2867.70",
+   "Søkere totalt": "136"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSMLH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "993.90",
+   "Karakterpoeng": "993.90",
+   "Søkere totalt": "70"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSQFH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "605.60",
+   "Karakterpoeng": "605.60",
+   "Søkere totalt": "44"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSRRH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "5320.60",
+   "Karakterpoeng": "5320.60",
+   "Søkere totalt": "269"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "MSCMSSFH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "915.70",
+   "Karakterpoeng": "915.70",
+   "Søkere totalt": "68"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "SØ",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "17393.00",
+   "Karakterpoeng": "17360.50",
+   "Søkere totalt": "374"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "BINT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "636.10",
+   "Karakterpoeng": "636.10",
+   "Søkere totalt": "447"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPBBH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6066.90",
+   "Karakterpoeng": "6066.90",
+   "Søkere totalt": "543"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPBFH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "32336.50",
+   "Karakterpoeng": "32336.50",
+   "Søkere totalt": "819"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPBTH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2008.00",
+   "Karakterpoeng": "2008.00",
+   "Søkere totalt": "197"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPDBH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "446.30",
+   "Karakterpoeng": "446.30",
+   "Søkere totalt": "115"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPDKH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "22550.30",
+   "Karakterpoeng": "22550.30",
+   "Søkere totalt": "568"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPEMH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "57386.50",
+   "Karakterpoeng": "57386.50",
+   "Søkere totalt": "1519"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPETH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "15296.60",
+   "Karakterpoeng": "15296.60",
+   "Søkere totalt": "389"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPFJH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "25349.10",
+   "Karakterpoeng": "25349.10",
+   "Søkere totalt": "609"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPHRH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "52164.00",
+   "Karakterpoeng": "52164.00",
+   "Søkere totalt": "1284"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPIMH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "23270.40",
+   "Karakterpoeng": "23270.40",
+   "Søkere totalt": "570"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPKLH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "5566.70",
+   "Karakterpoeng": "5566.70",
+   "Søkere totalt": "138"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPMIH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "30029.50",
+   "Karakterpoeng": "30029.50",
+   "Søkere totalt": "778"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPRFD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "35.80",
+   "Karakterpoeng": "35.80",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPRFH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3399.20",
+   "Karakterpoeng": "3399.20",
+   "Søkere totalt": "104"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPRVH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "36824.00",
+   "Karakterpoeng": "36824.00",
+   "Søkere totalt": "798"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPØAD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "968.40",
+   "Karakterpoeng": "968.40",
+   "Søkere totalt": "26"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "DIPØAH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "100936.40",
+   "Karakterpoeng": "100936.40",
+   "Søkere totalt": "2528"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "GFBØD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4532.00",
+   "Karakterpoeng": "4532.00",
+   "Søkere totalt": "128"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "GFBØH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "14758.40",
+   "Karakterpoeng": "14758.40",
+   "Søkere totalt": "380"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "GFMØD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1535.10",
+   "Karakterpoeng": "1535.10",
+   "Søkere totalt": "44"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "GFMØH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6671.60",
+   "Karakterpoeng": "6671.60",
+   "Søkere totalt": "180"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "KAMI",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1632.60",
+   "Karakterpoeng": "1632.60",
+   "Søkere totalt": "41"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "KAØA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1628.20",
+   "Karakterpoeng": "1628.20",
+   "Søkere totalt": "49"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MBA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "113.70",
+   "Karakterpoeng": "113.70",
+   "Søkere totalt": "50"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MM",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "205.70",
+   "Karakterpoeng": "205.70",
+   "Søkere totalt": "120"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MP",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "16770.90",
+   "Karakterpoeng": "16770.90",
+   "Søkere totalt": "2410"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSANH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1149.20",
+   "Karakterpoeng": "1149.20",
+   "Søkere totalt": "146"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSBUH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "14547.60",
+   "Karakterpoeng": "14547.60",
+   "Søkere totalt": "674"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSCMH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "989.80",
+   "Karakterpoeng": "989.80",
+   "Søkere totalt": "62"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSDSH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "395.90",
+   "Karakterpoeng": "395.90",
+   "Søkere totalt": "74"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSEIH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "616.20",
+   "Karakterpoeng": "616.20",
+   "Søkere totalt": "65"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSFEH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "5769.50",
+   "Karakterpoeng": "5769.50",
+   "Søkere totalt": "272"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSFJH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2214.30",
+   "Karakterpoeng": "2214.30",
+   "Søkere totalt": "70"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSLOH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6094.10",
+   "Karakterpoeng": "6094.10",
+   "Søkere totalt": "303"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSMAH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2793.70",
+   "Karakterpoeng": "2793.70",
+   "Søkere totalt": "181"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSMLH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "916.00",
+   "Karakterpoeng": "916.00",
+   "Søkere totalt": "69"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSQFH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1082.90",
+   "Karakterpoeng": "1082.90",
+   "Søkere totalt": "55"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSRRH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6537.00",
+   "Karakterpoeng": "6537.00",
+   "Søkere totalt": "280"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "MSCMSSFH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "694.20",
+   "Karakterpoeng": "694.20",
+   "Søkere totalt": "47"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "SØ",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "21007.00",
+   "Karakterpoeng": "21007.00",
+   "Søkere totalt": "465"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "BINT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "309.40",
+   "Karakterpoeng": "309.40",
+   "Søkere totalt": "308"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPBBH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "6570.20",
+   "Karakterpoeng": "6570.20",
+   "Søkere totalt": "681"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPBFH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "32168.30",
+   "Karakterpoeng": "32168.30",
+   "Søkere totalt": "861"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPBTH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1226.90",
+   "Karakterpoeng": "1226.90",
+   "Søkere totalt": "284"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPDBH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "752.60",
+   "Karakterpoeng": "752.60",
+   "Søkere totalt": "192"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPDKH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "18303.34",
+   "Karakterpoeng": "18303.34",
+   "Søkere totalt": "499"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPEMH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "62477.94",
+   "Karakterpoeng": "62477.94",
+   "Søkere totalt": "1794"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPETH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "14831.30",
+   "Karakterpoeng": "14831.30",
+   "Søkere totalt": "406"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPFJH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "20931.00",
+   "Karakterpoeng": "20931.00",
+   "Søkere totalt": "526"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPHRH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "52494.70",
+   "Karakterpoeng": "52494.70",
+   "Søkere totalt": "1361"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPIMH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "21373.10",
+   "Karakterpoeng": "21373.10",
+   "Søkere totalt": "558"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPKLH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4508.00",
+   "Karakterpoeng": "4508.00",
+   "Søkere totalt": "116"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPMID",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "374.20",
+   "Karakterpoeng": "374.20",
+   "Søkere totalt": "11"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPMIH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "25134.00",
+   "Karakterpoeng": "25134.00",
+   "Søkere totalt": "677"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPRFH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "49.50",
+   "Karakterpoeng": "49.50",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPRVH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "46354.80",
+   "Karakterpoeng": "46354.80",
+   "Søkere totalt": "1080"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPØAD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1324.10",
+   "Karakterpoeng": "1324.10",
+   "Søkere totalt": "35"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "DIPØAH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "121231.75",
+   "Karakterpoeng": "121231.75",
+   "Søkere totalt": "3139"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "GFBØD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "5428.50",
+   "Karakterpoeng": "5428.50",
+   "Søkere totalt": "159"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "GFBØH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "9293.80",
+   "Karakterpoeng": "9293.80",
+   "Søkere totalt": "265"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "GFMØD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1227.30",
+   "Karakterpoeng": "1227.30",
+   "Søkere totalt": "36"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "GFMØH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4327.90",
+   "Karakterpoeng": "4327.90",
+   "Søkere totalt": "129"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "KAMI",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1089.30",
+   "Karakterpoeng": "1089.30",
+   "Søkere totalt": "27"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "KAØA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2259.90",
+   "Karakterpoeng": "2259.90",
+   "Søkere totalt": "59"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MBA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "329.80",
+   "Karakterpoeng": "329.80",
+   "Søkere totalt": "50"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MM",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "442.60",
+   "Karakterpoeng": "442.60",
+   "Søkere totalt": "82"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MP",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "17751.60",
+   "Karakterpoeng": "17751.60",
+   "Søkere totalt": "2361"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSANH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2244.20",
+   "Karakterpoeng": "2244.20",
+   "Søkere totalt": "271"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSBUH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "20410.60",
+   "Karakterpoeng": "20410.60",
+   "Søkere totalt": "956"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSCMH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "375.30",
+   "Karakterpoeng": "375.30",
+   "Søkere totalt": "44"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSDSH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "758.00",
+   "Karakterpoeng": "758.00",
+   "Søkere totalt": "250"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSEIH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1170.10",
+   "Karakterpoeng": "1170.10",
+   "Søkere totalt": "156"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSFEH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "9443.70",
+   "Karakterpoeng": "9443.70",
+   "Søkere totalt": "494"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSFJH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3086.90",
+   "Karakterpoeng": "3086.90",
+   "Søkere totalt": "106"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSLOH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "8924.90",
+   "Karakterpoeng": "8924.90",
+   "Søkere totalt": "453"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSMAH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4777.10",
+   "Karakterpoeng": "4777.10",
+   "Søkere totalt": "250"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSMLH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "1221.70",
+   "Karakterpoeng": "1221.70",
+   "Søkere totalt": "85"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSQFH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "2237.80",
+   "Karakterpoeng": "2237.80",
+   "Søkere totalt": "118"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSRRH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "8803.70",
+   "Karakterpoeng": "8803.70",
+   "Søkere totalt": "418"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "MSCMSSFH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "644.50",
+   "Karakterpoeng": "644.50",
+   "Søkere totalt": "85"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "SØ",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "19366.93",
+   "Karakterpoeng": "19366.93",
+   "Søkere totalt": "472"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "BINT",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "317.90",
+   "Karakterpoeng": "317.90",
+   "Søkere totalt": "31"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "DIPBBH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "297.70",
+   "Karakterpoeng": "297.70",
+   "Søkere totalt": "12"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "DIPBFH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "703.20",
+   "Karakterpoeng": "703.20",
+   "Søkere totalt": "17"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "DIPBTH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "0.00",
+   "Karakterpoeng": "0.00",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "DIPDKH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "44.60",
+   "Karakterpoeng": "44.60",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "DIPEMH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "978.60",
+   "Karakterpoeng": "978.60",
+   "Søkere totalt": "25"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "DIPETH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "237.60",
+   "Karakterpoeng": "237.60",
+   "Søkere totalt": "6"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "DIPFJH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "512.60",
+   "Karakterpoeng": "512.60",
+   "Søkere totalt": "12"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "DIPHRH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "619.20",
+   "Karakterpoeng": "619.20",
+   "Søkere totalt": "15"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "DIPIMH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "132.50",
+   "Karakterpoeng": "132.50",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "DIPKLH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "31.10",
+   "Karakterpoeng": "31.10",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "DIPMIH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "659.90",
+   "Karakterpoeng": "659.90",
+   "Søkere totalt": "16"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "DIPØAH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "4181.00",
+   "Karakterpoeng": "4181.00",
+   "Søkere totalt": "103"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "GFBØD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "118.30",
+   "Karakterpoeng": "118.30",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "GFBØH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "109.20",
+   "Karakterpoeng": "109.20",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "GFMØD",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "39.10",
+   "Karakterpoeng": "39.10",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "GFMØH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "36.40",
+   "Karakterpoeng": "36.40",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "KAMI",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "188.70",
+   "Karakterpoeng": "188.70",
+   "Søkere totalt": "5"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "KAØA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "35.20",
+   "Karakterpoeng": "35.20",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "MBA",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "129.70",
+   "Karakterpoeng": "129.70",
+   "Søkere totalt": "33"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "MM",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "221.50",
+   "Karakterpoeng": "221.50",
+   "Søkere totalt": "43"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "MP",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "3990.50",
+   "Karakterpoeng": "3990.50",
+   "Søkere totalt": "412"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "MSCMSBUH",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "39.60",
+   "Karakterpoeng": "39.60",
+   "Søkere totalt": "0"
+  },
+  {
+   "Årstall": "2026",
+   "Studieprogramkode": "SØ",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "95.70",
+   "Karakterpoeng": "95.70",
+   "Søkere totalt": "0"
+  }
+ ]
+}

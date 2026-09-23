@@ -14,7 +14,8 @@ Kilder:
   104  Ferdige kandidater per program (fra <fakultet>CompletionData.json) som tilnærming for fullførte gradsprogram;
        DBH har ingen egen tabell for G3-indikatoren ennå (907 slutter med den gamle kandidatindikatoren i 2022).
 Avgrensninger: studiepoengene tilskrives programmet studenten går på, uansett hvilket fakultet som eier emnet.
-Doktorgrader, EU, NFR og basisbevilgning er ikke med. Tallene er anslag, ikke NMBUs faktiske fordeling internt.
+Doktorgrader, EU, NFR og basisbevilgning er ikke med.
+BI og Kristiania (PRIVATE) er holdt utenfor: de finansieres i hovedsak med skolepenger (se økonomikortet), ikke med disse satsene. Tallene er anslag, ikke NMBUs faktiske fordeling internt.
 
 Bruk:
   python3 scripts/build-revenue.py [--refresh]
@@ -26,6 +27,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+PRIVATE = {"8241", "8253"}  # BI og Kristiania: skolepengefinansiert, ikke med i det statlige finansieringssystemet
 spec = importlib.util.spec_from_file_location("blc", ROOT / "scripts" / "build-landsam-courses.py")
 blc = importlib.util.module_from_spec(spec); spec.loader.exec_module(blc)
 CACHE = ROOT / "data" / "nmbu" / "kilder" / "dbh-finansiering"
@@ -102,7 +104,7 @@ def main():
             progs = []
             for p in g["programs"]:
                 m = dk.get(p["id"])
-                if not m or not m.get("studieprogramkoder"):
+                if not m or not m.get("studieprogramkoder") or m["institusjonskode"] in PRIVATE:
                     continue
                 icodes = m.get("institusjonskoder") or [m["institusjonskode"]]
                 years = []
@@ -132,7 +134,7 @@ def main():
                                   "programnavn": p.get("programnavn", ""), "years": years})
                     n_prog += 1
             groups.append({"id": g["id"], "label": g["label"], "level": g["level"], "nmbuIds": [p["id"] for p in g["programs"] if p.get("isNmbu")],
-                           "defaultIds": [p["id"] for p in g["programs"] if p.get("default")], "programs": progs})
+                           "defaultIds": [p["id"] for p in g["programs"] if p.get("default") and any(x["entryId"] == p["id"] for x in progs)], "programs": progs})
         out[fak] = groups
 
     today = dt.date.today().isoformat()

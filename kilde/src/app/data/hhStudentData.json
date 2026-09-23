@@ -19,7 +19,9 @@
     "inn_oa",
     "nord_oa",
     "hvl_bergen_oa",
-    "hiof_oa"
+    "hiof_oa",
+    "bi_oa",
+    "kristiania_oa"
    ],
    "programs": [
     {
@@ -1943,6 +1945,166 @@
      ]
     },
     {
+     "entryId": "bi_oa",
+     "shortName": "BI",
+     "institusjon": "Handelshøyskolen BI",
+     "isNmbu": false,
+     "programnavn": "Økonomi og administrasjon (bachelor)",
+     "nivaa": "B3",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 3496,
+       "a21": 1365,
+       "a24": 1520,
+       "a29": 454,
+       "a30": 157,
+       "utenlandske": 185,
+       "utveksling": 100
+      },
+      {
+       "aar": 2020,
+       "total": 3598,
+       "a21": 1538,
+       "a24": 1410,
+       "a29": 492,
+       "a30": 158,
+       "utenlandske": 209,
+       "utveksling": null
+      },
+      {
+       "aar": 2021,
+       "total": 3610,
+       "a21": 1659,
+       "a24": 1294,
+       "a29": 479,
+       "a30": 178,
+       "utenlandske": 185,
+       "utveksling": 64
+      },
+      {
+       "aar": 2022,
+       "total": 3261,
+       "a21": 1418,
+       "a24": 1294,
+       "a29": 402,
+       "a30": 147,
+       "utenlandske": 127,
+       "utveksling": 157
+      },
+      {
+       "aar": 2023,
+       "total": 3345,
+       "a21": 1472,
+       "a24": 1347,
+       "a29": 375,
+       "a30": 151,
+       "utenlandske": 123,
+       "utveksling": 77
+      },
+      {
+       "aar": 2024,
+       "total": 3543,
+       "a21": 1716,
+       "a24": 1321,
+       "a29": 386,
+       "a30": 120,
+       "utenlandske": 134,
+       "utveksling": 94
+      },
+      {
+       "aar": 2025,
+       "total": 3978,
+       "a21": 2086,
+       "a24": 1362,
+       "a29": 369,
+       "a30": 161,
+       "utenlandske": 123,
+       "utveksling": 75
+      }
+     ]
+    },
+    {
+     "entryId": "kristiania_oa",
+     "shortName": "Kristiania",
+     "institusjon": "Høyskolen Kristiania",
+     "isNmbu": false,
+     "programnavn": "Økonomi og ledelse (bachelor)",
+     "nivaa": "B3",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 119,
+       "a21": 59,
+       "a24": 40,
+       "a29": 17,
+       "a30": 3,
+       "utenlandske": null,
+       "utveksling": 0
+      },
+      {
+       "aar": 2020,
+       "total": 158,
+       "a21": 84,
+       "a24": 46,
+       "a29": 23,
+       "a30": 5,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2021,
+       "total": 208,
+       "a21": 116,
+       "a24": 63,
+       "a29": 22,
+       "a30": 7,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2022,
+       "total": 207,
+       "a21": 106,
+       "a24": 68,
+       "a29": 26,
+       "a30": 7,
+       "utenlandske": null,
+       "utveksling": 0
+      },
+      {
+       "aar": 2023,
+       "total": 217,
+       "a21": 108,
+       "a24": 72,
+       "a29": 27,
+       "a30": 10,
+       "utenlandske": null,
+       "utveksling": 0
+      },
+      {
+       "aar": 2024,
+       "total": 211,
+       "a21": 113,
+       "a24": 66,
+       "a29": 19,
+       "a30": 13,
+       "utenlandske": null,
+       "utveksling": 3
+      },
+      {
+       "aar": 2025,
+       "total": 286,
+       "a21": 172,
+       "a24": 85,
+       "a29": 18,
+       "a30": 11,
+       "utenlandske": null,
+       "utveksling": 0
+      }
+     ]
+    },
+    {
      "entryId": "ntnu_siv",
      "shortName": "NTNU siviløkonom",
      "institusjon": "Norges teknisk-naturvitenskapelige universitet",
@@ -3287,6 +3449,216 @@
        "utveksling": 0
       }
      ]
+    },
+    {
+     "entryId": "bi_dbh",
+     "shortName": "BI Digital Business",
+     "institusjon": "Handelshøyskolen BI",
+     "isNmbu": false,
+     "programnavn": "Bachelor of Digital Business",
+     "nivaa": "B3",
+     "aar": [
+      {
+       "aar": 2022,
+       "total": 19,
+       "a21": 9,
+       "a24": 5,
+       "a29": 4,
+       "a30": 0,
+       "utenlandske": 12,
+       "utveksling": null
+      },
+      {
+       "aar": 2023,
+       "total": 53,
+       "a21": 33,
+       "a24": 10,
+       "a29": 7,
+       "a30": 3,
+       "utenlandske": 30,
+       "utveksling": null
+      },
+      {
+       "aar": 2024,
+       "total": 89,
+       "a21": 34,
+       "a24": 26,
+       "a29": 17,
+       "a30": 12,
+       "utenlandske": 61,
+       "utveksling": 3
+      },
+      {
+       "aar": 2025,
+       "total": 134,
+       "a21": 59,
+       "a24": 27,
+       "a29": 27,
+       "a30": 21,
+       "utenlandske": 89,
+       "utveksling": 5
+      }
+     ]
+    },
+    {
+     "entryId": "bi_dsb",
+     "shortName": "BI Data Science",
+     "institusjon": "Handelshøyskolen BI",
+     "isNmbu": false,
+     "programnavn": "Bachelor of Data Science for Business",
+     "nivaa": "B3",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 49,
+       "a21": 25,
+       "a24": 4,
+       "a29": 14,
+       "a30": 6,
+       "utenlandske": 28,
+       "utveksling": null
+      },
+      {
+       "aar": 2020,
+       "total": 88,
+       "a21": 44,
+       "a24": 12,
+       "a29": 17,
+       "a30": 15,
+       "utenlandske": 49,
+       "utveksling": null
+      },
+      {
+       "aar": 2021,
+       "total": 119,
+       "a21": 51,
+       "a24": 32,
+       "a29": 16,
+       "a30": 20,
+       "utenlandske": 77,
+       "utveksling": null
+      },
+      {
+       "aar": 2022,
+       "total": 135,
+       "a21": 53,
+       "a24": 41,
+       "a29": 20,
+       "a30": 21,
+       "utenlandske": 86,
+       "utveksling": 5
+      },
+      {
+       "aar": 2023,
+       "total": 147,
+       "a21": 64,
+       "a24": 40,
+       "a29": 27,
+       "a30": 16,
+       "utenlandske": 95,
+       "utveksling": 0
+      },
+      {
+       "aar": 2024,
+       "total": 172,
+       "a21": 86,
+       "a24": 39,
+       "a29": 23,
+       "a30": 24,
+       "utenlandske": 108,
+       "utveksling": 3
+      },
+      {
+       "aar": 2025,
+       "total": 186,
+       "a21": 77,
+       "a24": 53,
+       "a29": 24,
+       "a30": 32,
+       "utenlandske": 114,
+       "utveksling": 13
+      }
+     ]
+    },
+    {
+     "entryId": "kristiania_bod",
+     "shortName": "Kristiania",
+     "institusjon": "Høyskolen Kristiania",
+     "isNmbu": false,
+     "programnavn": "Digitalisering og økonomi (bachelor)",
+     "nivaa": "B3",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 89,
+       "a21": 44,
+       "a24": 30,
+       "a29": 13,
+       "a30": 0,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2020,
+       "total": 112,
+       "a21": 43,
+       "a24": 38,
+       "a29": 28,
+       "a30": 3,
+       "utenlandske": null,
+       "utveksling": 0
+      },
+      {
+       "aar": 2021,
+       "total": 92,
+       "a21": 27,
+       "a24": 42,
+       "a29": 18,
+       "a30": 5,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2022,
+       "total": 64,
+       "a21": 25,
+       "a24": 22,
+       "a29": 15,
+       "a30": 0,
+       "utenlandske": null,
+       "utveksling": 3
+      },
+      {
+       "aar": 2023,
+       "total": 51,
+       "a21": 21,
+       "a24": 16,
+       "a29": 13,
+       "a30": 0,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2024,
+       "total": 50,
+       "a21": 18,
+       "a24": 18,
+       "a29": 12,
+       "a30": 0,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2025,
+       "total": 55,
+       "a21": 21,
+       "a24": 18,
+       "a29": 13,
+       "a30": 3,
+       "utenlandske": null,
+       "utveksling": null
+      }
+     ]
     }
    ]
   },
@@ -4274,7 +4646,8 @@
     "uio_mecon",
     "uib_mecon",
     "ntnu_mecon",
-    "uit_mecon"
+    "uit_mecon",
+    "bi_mecon"
    ],
    "programs": [
     {
@@ -4676,6 +5049,76 @@
        "utveksling": null
       }
      ]
+    },
+    {
+     "entryId": "bi_mecon",
+     "shortName": "BI",
+     "institusjon": "Handelshøyskolen BI",
+     "isNmbu": false,
+     "programnavn": "Master of Science in Applied Economics",
+     "nivaa": "M2",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 6,
+       "a21": 0,
+       "a24": 5,
+       "a29": 0,
+       "a30": 0,
+       "utenlandske": 3,
+       "utveksling": null
+      },
+      {
+       "aar": 2020,
+       "total": 14,
+       "a21": 0,
+       "a24": 6,
+       "a29": 6,
+       "a30": 0,
+       "utenlandske": 9,
+       "utveksling": null
+      },
+      {
+       "aar": 2021,
+       "total": 19,
+       "a21": 0,
+       "a24": 7,
+       "a29": 9,
+       "a30": 3,
+       "utenlandske": 8,
+       "utveksling": null
+      },
+      {
+       "aar": 2022,
+       "total": 15,
+       "a21": 0,
+       "a24": 5,
+       "a29": 9,
+       "a30": 0,
+       "utenlandske": 6,
+       "utveksling": 0
+      },
+      {
+       "aar": 2023,
+       "total": 6,
+       "a21": 0,
+       "a24": 0,
+       "a29": 4,
+       "a30": 0,
+       "utenlandske": 3,
+       "utveksling": null
+      },
+      {
+       "aar": 2024,
+       "total": 3,
+       "a21": 0,
+       "a24": 0,
+       "a29": 3,
+       "a30": 0,
+       "utenlandske": 0,
+       "utveksling": null
+      }
+     ]
     }
    ]
   },
@@ -4692,7 +5135,8 @@
     "nord_mei",
     "bi_mei",
     "uio_mei",
-    "oslomet_mei"
+    "oslomet_mei",
+    "kristiania_mei"
    ],
    "programs": [
     {
@@ -5242,6 +5686,76 @@
        "a30": 0,
        "utenlandske": null,
        "utveksling": null
+      }
+     ]
+    },
+    {
+     "entryId": "kristiania_mei",
+     "shortName": "Kristiania",
+     "institusjon": "Høyskolen Kristiania",
+     "isNmbu": false,
+     "programnavn": "Innovasjonsledelse (master 2 år)",
+     "nivaa": "M2",
+     "aar": [
+      {
+       "aar": 2020,
+       "total": 19,
+       "a21": 0,
+       "a24": 10,
+       "a29": 6,
+       "a30": 0,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2021,
+       "total": 34,
+       "a21": 0,
+       "a24": 17,
+       "a29": 13,
+       "a30": 0,
+       "utenlandske": null,
+       "utveksling": 4
+      },
+      {
+       "aar": 2022,
+       "total": 33,
+       "a21": 0,
+       "a24": 17,
+       "a29": 12,
+       "a30": 0,
+       "utenlandske": null,
+       "utveksling": 8
+      },
+      {
+       "aar": 2023,
+       "total": 38,
+       "a21": 0,
+       "a24": 10,
+       "a29": 20,
+       "a30": 6,
+       "utenlandske": null,
+       "utveksling": 3
+      },
+      {
+       "aar": 2024,
+       "total": 44,
+       "a21": 0,
+       "a24": 27,
+       "a29": 13,
+       "a30": 3,
+       "utenlandske": 0,
+       "utveksling": 3
+      },
+      {
+       "aar": 2025,
+       "total": 57,
+       "a21": 0,
+       "a24": 31,
+       "a29": 22,
+       "a30": 4,
+       "utenlandske": 0,
+       "utveksling": 6
       }
      ]
     }

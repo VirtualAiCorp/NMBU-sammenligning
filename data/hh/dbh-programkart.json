@@ -18,6 +18,7 @@
     "1110": "Universitetet i Oslo",
     "1120": "Universitetet i Bergen",
     "8241": "Handelshøyskolen BI",
+    "8253": "Høyskolen Kristiania",
     "0264": "Høgskolen i Innlandet (institusjonskode før 2025)"
   },
   "programs": [
@@ -277,6 +278,28 @@
       "nivaakode": "B3"
     },
     {
+      "entryId": "bi_oa",
+      "institusjonskode": "8241",
+      "studieprogramkoder": [
+        "DIPØAH"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon (bachelor)",
+      "nivaakode": "B3",
+      "merknad": "Lokalt opptak hos BI (ikke Samordna); tall fra DBH 379. Opptakstallene gjelder alle BIs campuser (Oslo, Bergen, Trondheim, Stavanger) og nett samlet.",
+      "sbId": "8241_dipøah-b",
+      "sbMerknad": "Studiebarometeret: BI Bergen (Oslo har for få svar). Opptakstallene gjelder hele BI."
+    },
+    {
+      "entryId": "kristiania_oa",
+      "institusjonskode": "8253",
+      "studieprogramkoder": [
+        "BOL"
+      ],
+      "studieprogramnavn": "Økonomi og ledelse (bachelor)",
+      "nivaakode": "B3",
+      "merknad": "Lokalt opptak hos Kristiania (ikke Samordna); tall fra DBH 379. Programmet heter «Økonomi og administrasjon» fra høsten 2026; DBH-koden kan endre seg."
+    },
+    {
       "entryId": "ntnu_siv",
       "institusjonskode": "1150",
       "studieprogramkoder": [
@@ -451,6 +474,38 @@
       ],
       "studieprogramnavn": "Økonomi, digitalisering og forretningsutvikling (bachelor)",
       "nivaakode": "B3"
+    },
+    {
+      "entryId": "bi_dbh",
+      "institusjonskode": "8241",
+      "studieprogramkoder": [
+        "DIPDBH"
+      ],
+      "studieprogramnavn": "Bachelor of Digital Business",
+      "nivaakode": "B3",
+      "merknad": "Lokalt opptak hos BI (ikke Samordna); tall fra DBH 379. Opptakstallene gjelder alle BIs campuser (Oslo, Bergen, Trondheim, Stavanger) og nett samlet. Engelskspråklig; svakere sammenligning.",
+      "sbId": "8241_dipdbh-o"
+    },
+    {
+      "entryId": "bi_dsb",
+      "institusjonskode": "8241",
+      "studieprogramkoder": [
+        "DIPBTH"
+      ],
+      "studieprogramnavn": "Bachelor of Data Science for Business",
+      "nivaakode": "B3",
+      "merknad": "Lokalt opptak hos BI (ikke Samordna); tall fra DBH 379. Opptakstallene gjelder alle BIs campuser (Oslo, Bergen, Trondheim, Stavanger) og nett samlet. Engelskspråklig; svakere sammenligning.",
+      "sbId": "8241_dipbth-o"
+    },
+    {
+      "entryId": "kristiania_bod",
+      "institusjonskode": "8253",
+      "studieprogramkoder": [
+        "BOD"
+      ],
+      "studieprogramnavn": "Digitalisering og økonomi (bachelor)",
+      "nivaakode": "B3",
+      "merknad": "Lokalt opptak hos Kristiania (ikke Samordna); tall fra DBH 379. Svakere sammenligning. Programsiden videresender nå til økonomi og administrasjon (høsten 2026)."
     },
     {
       "entryId": "nmbu_moa",
@@ -629,6 +684,16 @@
       "nivaakode": "M2"
     },
     {
+      "entryId": "bi_mecon",
+      "institusjonskode": "8241",
+      "studieprogramkoder": [
+        "MSCMSAEH"
+      ],
+      "studieprogramnavn": "Master of Science in Applied Economics",
+      "nivaakode": "M2",
+      "merknad": "Engelskspråklig master i anvendt økonomi. Siste opptak i DBH 379 er 2023; programmet har fortsatt studenter i 2025 (DBH 347)."
+    },
+    {
       "entryId": "nmbu_mei",
       "institusjonskode": "1173",
       "studieprogramkoder": [
@@ -698,6 +763,15 @@
         "M-SHIFTINN"
       ],
       "studieprogramnavn": "Shift entreprenørskap og innovasjon (master 2 år)",
+      "nivaakode": "M2"
+    },
+    {
+      "entryId": "kristiania_mei",
+      "institusjonskode": "8253",
+      "studieprogramkoder": [
+        "MIN"
+      ],
+      "studieprogramnavn": "Innovasjonsledelse (master 2 år)",
       "nivaakode": "M2"
     }
   ]

@@ -470,6 +470,12 @@ def find_sb_id(prog: dict, studiested: str | None = None,
     insts = prog.get("institusjonskoder") or [prog["institusjonskode"]]
     koder = prog.get("studieprogramkoder") or []
     tried: list[str] = []
+    # Fast sbId i dbh-programkart (f.eks. BI per campus: «8241_dipøah-b») går foran gjetting og søk.
+    if prog.get("sbId"):
+        tried.append(prog["sbId"])
+        got = try_fetch_main_by_id(prog["sbId"])
+        if got:
+            return prog["sbId"], got[0], got[1], tried
     for inst in insts:
         for kode in koder:
             sb_id_guess = f"{inst}_{kode.lower()}"
@@ -767,7 +773,7 @@ def process_program(fakultet: str, prog: dict, group_info: dict[str, dict], refr
         "fieldLabel": parsed["fieldLabel"],
         "history": history,
         "subquestions": subquestions,
-        "warning": parsed["warning"],
+        "warning": " ".join(x for x in (prog.get("sbMerknad"), parsed["warning"]) if x) or None,
         "_status": status,
     }
     return entry

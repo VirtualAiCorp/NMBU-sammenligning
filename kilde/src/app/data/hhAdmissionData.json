@@ -16,7 +16,7 @@
       "label": "Økonomi og administrasjon",
       "level": "bachelor",
       "desc": "Sammenligner NMBUs bachelor i økonomi og administrasjon med de samme programmene som i den opprinnelige HH-analysen.",
-      "note": "Samme konkurrentliste som i den opprinnelige HH-opptaksanalysen. De femårige siviløkonomløpene er tatt med som svakere sammenligning (default false). BI tar ikke opp gjennom Samordna opptak og er derfor ikke med her.",
+      "note": "Samme konkurrentliste som i den opprinnelige HH-opptaksanalysen. De femårige siviløkonomløpene er tatt med som svakere sammenligning (default false). BI og Kristiania tar opp lokalt, ikke gjennom Samordna: søkere, tilbud og møtt er fra DBH 379, de har ingen poenggrense, og BIs tall gjelder alle campuser samlet.",
       "nmbuIds": [
         "nmbu_oa"
       ],
@@ -31,7 +31,9 @@
         "inn_oa",
         "nord_oa",
         "hvl_bergen_oa",
-        "hiof_oa"
+        "hiof_oa",
+        "bi_oa",
+        "kristiania_oa"
       ],
       "entries": [
         {
@@ -2478,6 +2480,176 @@
           }
         },
         {
+          "id": "bi_oa",
+          "shortName": "BI",
+          "institusjon": "Handelshøyskolen BI",
+          "studiekode": "",
+          "studiested": "Oslo",
+          "type": "bachelor",
+          "url": "https://www.bi.no/studier-og-kurs/bachelorstudier/okonomi-og-administrasjon/",
+          "years": {
+            "2021": {
+              "alleS": 2431,
+              "fvS": 2241,
+              "plasser": null,
+              "kvinner": 33.6,
+              "kvalifiserte": 2270,
+              "tilbud": 2250,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 1758,
+              "mott": 1524,
+              "op_mott": null,
+              "kp_mott": 39.0,
+              "op_fv": null,
+              "op_alle": null,
+              "n_mott": 1518
+            },
+            "2022": {
+              "alleS": 2187,
+              "fvS": 2087,
+              "plasser": null,
+              "kvinner": 34.8,
+              "kvalifiserte": 2037,
+              "tilbud": 2023,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 1544,
+              "mott": 1340,
+              "op_mott": null,
+              "kp_mott": 39.9,
+              "op_fv": null,
+              "op_alle": null,
+              "n_mott": 1340
+            },
+            "2023": {
+              "alleS": 2333,
+              "fvS": 2179,
+              "plasser": null,
+              "kvinner": 33.1,
+              "kvalifiserte": 2161,
+              "tilbud": 2154,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 1685,
+              "mott": 1444,
+              "op_mott": null,
+              "kp_mott": 40.9,
+              "op_fv": null,
+              "op_alle": null,
+              "n_mott": 1444
+            },
+            "2024": {
+              "alleS": 2702,
+              "fvS": 2528,
+              "plasser": null,
+              "kvinner": 32.1,
+              "kvalifiserte": 2499,
+              "tilbud": 2496,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 1943,
+              "mott": 1603,
+              "op_mott": null,
+              "kp_mott": 40.3,
+              "op_fv": null,
+              "op_alle": null,
+              "n_mott": 1603
+            },
+            "2025": {
+              "alleS": 3343,
+              "fvS": 3139,
+              "plasser": null,
+              "kvinner": 33.2,
+              "kvalifiserte": 2906,
+              "tilbud": 2906,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 2287,
+              "mott": 1866,
+              "op_mott": null,
+              "kp_mott": 41.0,
+              "op_fv": null,
+              "op_alle": null,
+              "n_mott": 1866
+            }
+          },
+          "lokaltOpptak": true,
+          "poengLokalt": true
+        },
+        {
+          "id": "kristiania_oa",
+          "shortName": "Kristiania",
+          "institusjon": "Høyskolen Kristiania",
+          "studiekode": "",
+          "studiested": "Oslo",
+          "type": "bachelor",
+          "url": "https://www.kristiania.no/studier/bachelor/okonomi-og-administrasjon/",
+          "years": {
+            "2021": {
+              "alleS": 332,
+              "fvS": 332,
+              "plasser": null,
+              "kvinner": 39.2,
+              "kvalifiserte": 313,
+              "tilbud": 312,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 153,
+              "mott": 110
+            },
+            "2022": {
+              "alleS": 303,
+              "fvS": 303,
+              "plasser": null,
+              "kvinner": 42.6,
+              "kvalifiserte": 282,
+              "tilbud": 282,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 132,
+              "mott": 81
+            },
+            "2023": {
+              "alleS": 339,
+              "fvS": 339,
+              "plasser": null,
+              "kvinner": 49.0,
+              "kvalifiserte": 327,
+              "tilbud": 327,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 160,
+              "mott": 94
+            },
+            "2024": {
+              "alleS": 489,
+              "fvS": 362,
+              "plasser": null,
+              "kvinner": 39.5,
+              "kvalifiserte": 460,
+              "tilbud": 460,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 165,
+              "mott": 100
+            },
+            "2025": {
+              "alleS": 639,
+              "fvS": 492,
+              "plasser": null,
+              "kvinner": 40.2,
+              "kvalifiserte": 602,
+              "tilbud": 602,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 256,
+              "mott": 159
+            }
+          },
+          "lokaltOpptak": true
+        },
+        {
           "id": "ntnu_siv",
           "shortName": "NTNU siviløkonom",
           "institusjon": "Norges teknisk-naturvitenskapelige universitet",
@@ -3388,7 +3560,7 @@
       "label": "Økonomi, ledelse og IT",
       "level": "bachelor",
       "desc": "Sammenligner NMBUs bachelor i økonomi, ledelse og IT med program som kombinerer økonomi/ledelse og IT eller informasjonssystemer.",
-      "note": "Nærmeste tilsvarende program funnet i Samordnas programliste. IT og informasjonssystemer (UiA, USN, HiØ) er mer IT-tunge; Informatikk-matematikk-økonomi (UiB) og Digital serviceledelse (UiS) er svakere sammenligninger (default false).",
+      "note": "Nærmeste tilsvarende program funnet i Samordnas programliste. IT og informasjonssystemer (UiA, USN, HiØ) er mer IT-tunge; Informatikk-matematikk-økonomi (UiB) og Digital serviceledelse (UiS) er svakere sammenligninger (default false), det samme er BIs Digital Business og Data Science for Business og Kristianias Digitalisering og økonomi (lokale opptak, DBH 379).",
       "nmbuIds": [
         "nmbu_olit"
       ],
@@ -4412,6 +4584,210 @@
               "n_mott": 9
             }
           }
+        },
+        {
+          "id": "bi_dbh",
+          "shortName": "BI Digital Business",
+          "institusjon": "Handelshøyskolen BI",
+          "studiekode": "",
+          "studiested": "Oslo",
+          "type": "bachelor",
+          "url": "https://www.bi.no/studier-og-kurs/bachelorstudier/digital-business/",
+          "years": {
+            "2022": {
+              "alleS": 61,
+              "fvS": 56,
+              "plasser": null,
+              "kvinner": 57.1,
+              "kvalifiserte": 44,
+              "tilbud": 44,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 35,
+              "mott": 23
+            },
+            "2023": {
+              "alleS": 94,
+              "fvS": 88,
+              "plasser": null,
+              "kvinner": 47.7,
+              "kvalifiserte": 67,
+              "tilbud": 67,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 58,
+              "mott": 45
+            },
+            "2024": {
+              "alleS": 119,
+              "fvS": 115,
+              "plasser": null,
+              "kvinner": 46.1,
+              "kvalifiserte": 74,
+              "tilbud": 73,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 61,
+              "mott": 46
+            },
+            "2025": {
+              "alleS": 203,
+              "fvS": 192,
+              "plasser": null,
+              "kvinner": 38.0,
+              "kvalifiserte": 97,
+              "tilbud": 97,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 82,
+              "mott": 63
+            }
+          },
+          "lokaltOpptak": true
+        },
+        {
+          "id": "bi_dsb",
+          "shortName": "BI Data Science",
+          "institusjon": "Handelshøyskolen BI",
+          "studiekode": "",
+          "studiested": "Oslo",
+          "type": "bachelor",
+          "url": "https://www.bi.no/studier-og-kurs/bachelorstudier/data-science-for-business/",
+          "years": {
+            "2021": {
+              "alleS": 149,
+              "fvS": 143,
+              "plasser": null,
+              "kvinner": 35.0,
+              "kvalifiserte": 101,
+              "tilbud": 99,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 79,
+              "mott": 63
+            },
+            "2022": {
+              "alleS": 165,
+              "fvS": 160,
+              "plasser": null,
+              "kvinner": 35.0,
+              "kvalifiserte": 99,
+              "tilbud": 99,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 85,
+              "mott": 60
+            },
+            "2023": {
+              "alleS": 201,
+              "fvS": 196,
+              "plasser": null,
+              "kvinner": 36.7,
+              "kvalifiserte": 135,
+              "tilbud": 134,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 106,
+              "mott": 76
+            },
+            "2024": {
+              "alleS": 200,
+              "fvS": 197,
+              "plasser": null,
+              "kvinner": 38.1,
+              "kvalifiserte": 138,
+              "tilbud": 138,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 100,
+              "mott": 75
+            },
+            "2025": {
+              "alleS": 285,
+              "fvS": 284,
+              "plasser": null,
+              "kvinner": 33.5,
+              "kvalifiserte": 129,
+              "tilbud": 129,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 101,
+              "mott": 56
+            }
+          },
+          "lokaltOpptak": true
+        },
+        {
+          "id": "kristiania_bod",
+          "shortName": "Kristiania",
+          "institusjon": "Høyskolen Kristiania",
+          "studiekode": "",
+          "studiested": "Oslo",
+          "type": "bachelor",
+          "url": null,
+          "years": {
+            "2021": {
+              "alleS": 65,
+              "fvS": 65,
+              "plasser": null,
+              "kvinner": 23.1,
+              "kvalifiserte": 61,
+              "tilbud": 61,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 34,
+              "mott": 25
+            },
+            "2022": {
+              "alleS": 63,
+              "fvS": 63,
+              "plasser": null,
+              "kvinner": 42.9,
+              "kvalifiserte": 60,
+              "tilbud": 60,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 33,
+              "mott": 24
+            },
+            "2023": {
+              "alleS": 66,
+              "fvS": 66,
+              "plasser": null,
+              "kvinner": 43.9,
+              "kvalifiserte": 61,
+              "tilbud": 61,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 25,
+              "mott": 17
+            },
+            "2024": {
+              "alleS": 131,
+              "fvS": 66,
+              "plasser": null,
+              "kvinner": 42.4,
+              "kvalifiserte": 128,
+              "tilbud": 128,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 37,
+              "mott": 20
+            },
+            "2025": {
+              "alleS": 151,
+              "fvS": 77,
+              "plasser": null,
+              "kvinner": 35.1,
+              "kvalifiserte": 143,
+              "tilbud": 143,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 43,
+              "mott": 27
+            }
+          },
+          "lokaltOpptak": true
         }
       ]
     },
@@ -4506,7 +4882,8 @@
               "akseptert": 129,
               "mott": 102
             }
-          }
+          },
+          "lokaltOpptak": true
         },
         {
           "id": "nhh_moa",
@@ -4577,7 +4954,8 @@
               "akseptert": 921,
               "mott": 827
             }
-          }
+          },
+          "lokaltOpptak": true
         },
         {
           "id": "bi_moa",
@@ -4648,7 +5026,8 @@
               "akseptert": 319,
               "mott": 223
             }
-          }
+          },
+          "lokaltOpptak": true
         },
         {
           "id": "ntnu_moa",
@@ -4719,7 +5098,8 @@
               "akseptert": 78,
               "mott": 75
             }
-          }
+          },
+          "lokaltOpptak": true
         },
         {
           "id": "oslomet_moa",
@@ -4790,7 +5170,8 @@
               "akseptert": 157,
               "mott": 139
             }
-          }
+          },
+          "lokaltOpptak": true
         },
         {
           "id": "uia_moa",
@@ -4861,7 +5242,8 @@
               "akseptert": 163,
               "mott": 131
             }
-          }
+          },
+          "lokaltOpptak": true
         },
         {
           "id": "uis_moa",
@@ -4932,7 +5314,8 @@
               "akseptert": 173,
               "mott": 138
             }
-          }
+          },
+          "lokaltOpptak": true
         },
         {
           "id": "usn_moa",
@@ -5003,7 +5386,8 @@
               "akseptert": 157,
               "mott": 93
             }
-          }
+          },
+          "lokaltOpptak": true
         },
         {
           "id": "nord_moa",
@@ -5074,7 +5458,8 @@
               "akseptert": 40,
               "mott": 29
             }
-          }
+          },
+          "lokaltOpptak": true
         },
         {
           "id": "inn_moa",
@@ -5145,7 +5530,8 @@
               "akseptert": 244,
               "mott": 122
             }
-          }
+          },
+          "lokaltOpptak": true
         },
         {
           "id": "uit_moa",
@@ -5216,7 +5602,8 @@
               "akseptert": 41,
               "mott": 39
             }
-          }
+          },
+          "lokaltOpptak": true
         },
         {
           "id": "hvl_moa",
@@ -5287,7 +5674,8 @@
               "akseptert": 77,
               "mott": 61
             }
-          }
+          },
+          "lokaltOpptak": true
         }
       ]
     },
@@ -5305,7 +5693,8 @@
         "uio_mecon",
         "uib_mecon",
         "ntnu_mecon",
-        "uit_mecon"
+        "uit_mecon",
+        "bi_mecon"
       ],
       "entries": [
         {
@@ -5377,7 +5766,8 @@
               "akseptert": 13,
               "mott": 11
             }
-          }
+          },
+          "lokaltOpptak": true
         },
         {
           "id": "uio_mecon",
@@ -5448,7 +5838,8 @@
               "akseptert": 93,
               "mott": 88
             }
-          }
+          },
+          "lokaltOpptak": true
         },
         {
           "id": "uib_mecon",
@@ -5519,7 +5910,8 @@
               "akseptert": 43,
               "mott": 38
             }
-          }
+          },
+          "lokaltOpptak": true
         },
         {
           "id": "ntnu_mecon",
@@ -5590,7 +5982,8 @@
               "akseptert": 35,
               "mott": 34
             }
-          }
+          },
+          "lokaltOpptak": true
         },
         {
           "id": "uit_mecon",
@@ -5649,7 +6042,56 @@
               "akseptert": 12,
               "mott": 12
             }
-          }
+          },
+          "lokaltOpptak": true
+        },
+        {
+          "id": "bi_mecon",
+          "shortName": "BI",
+          "institusjon": "Handelshøyskolen BI",
+          "studiekode": "",
+          "studiested": "Oslo",
+          "type": "master2",
+          "url": null,
+          "years": {
+            "2021": {
+              "alleS": 64,
+              "fvS": 59,
+              "plasser": null,
+              "kvinner": 35.6,
+              "kvalifiserte": 28,
+              "tilbud": 27,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 20,
+              "mott": 10
+            },
+            "2022": {
+              "alleS": 66,
+              "fvS": 61,
+              "plasser": null,
+              "kvinner": 42.6,
+              "kvalifiserte": 35,
+              "tilbud": 35,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 27,
+              "mott": 8
+            },
+            "2023": {
+              "alleS": 32,
+              "fvS": 31,
+              "plasser": null,
+              "kvinner": 41.9,
+              "kvalifiserte": 10,
+              "tilbud": 8,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 0,
+              "mott": 0
+            }
+          },
+          "lokaltOpptak": true
         }
       ]
     },
@@ -5668,7 +6110,8 @@
         "nord_mei",
         "bi_mei",
         "uio_mei",
-        "oslomet_mei"
+        "oslomet_mei",
+        "kristiania_mei"
       ],
       "entries": [
         {
@@ -5740,7 +6183,8 @@
               "akseptert": 39,
               "mott": 30
             }
-          }
+          },
+          "lokaltOpptak": true
         },
         {
           "id": "ntnu_mei",
@@ -5811,7 +6255,8 @@
               "akseptert": 21,
               "mott": 21
             }
-          }
+          },
+          "lokaltOpptak": true
         },
         {
           "id": "ntnu_ment",
@@ -5882,7 +6327,8 @@
               "akseptert": 24,
               "mott": 24
             }
-          }
+          },
+          "lokaltOpptak": true
         },
         {
           "id": "nord_mei",
@@ -5941,7 +6387,8 @@
               "akseptert": 22,
               "mott": 17
             }
-          }
+          },
+          "lokaltOpptak": true
         },
         {
           "id": "bi_mei",
@@ -6012,7 +6459,8 @@
               "akseptert": 36,
               "mott": 17
             }
-          }
+          },
+          "lokaltOpptak": true
         },
         {
           "id": "uio_mei",
@@ -6083,7 +6531,8 @@
               "akseptert": 40,
               "mott": 32
             }
-          }
+          },
+          "lokaltOpptak": true
         },
         {
           "id": "oslomet_mei",
@@ -6142,7 +6591,8 @@
               "akseptert": 22,
               "mott": 17
             }
-          }
+          },
+          "lokaltOpptak": true
         },
         {
           "id": "uia_mei",
@@ -6177,7 +6627,80 @@
               "akseptert": 13,
               "mott": 12
             }
-          }
+          },
+          "lokaltOpptak": true
+        },
+        {
+          "id": "kristiania_mei",
+          "shortName": "Kristiania",
+          "institusjon": "Høyskolen Kristiania",
+          "studiekode": "",
+          "studiested": "Oslo",
+          "type": "master2",
+          "url": "https://www.kristiania.no/studier/master/innovasjonsledelse/",
+          "years": {
+            "2021": {
+              "alleS": 66,
+              "fvS": 66,
+              "plasser": null,
+              "kvinner": 54.5,
+              "kvalifiserte": 59,
+              "tilbud": 59,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 28,
+              "mott": 18
+            },
+            "2022": {
+              "alleS": 78,
+              "fvS": 78,
+              "plasser": null,
+              "kvinner": 64.1,
+              "kvalifiserte": 63,
+              "tilbud": 63,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 33,
+              "mott": 23
+            },
+            "2023": {
+              "alleS": 79,
+              "fvS": 79,
+              "plasser": null,
+              "kvinner": 57.0,
+              "kvalifiserte": 67,
+              "tilbud": 67,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 31,
+              "mott": 19
+            },
+            "2024": {
+              "alleS": 142,
+              "fvS": 94,
+              "plasser": null,
+              "kvinner": 51.1,
+              "kvalifiserte": 123,
+              "tilbud": 123,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 40,
+              "mott": 28
+            },
+            "2025": {
+              "alleS": 161,
+              "fvS": 98,
+              "plasser": null,
+              "kvinner": 65.3,
+              "kvalifiserte": 144,
+              "tilbud": 144,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 50,
+              "mott": 34
+            }
+          },
+          "lokaltOpptak": true
         }
       ]
     }

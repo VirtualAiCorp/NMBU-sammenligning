@@ -1984,6 +1984,34 @@
      "n_alle": 33
     }
    }
+  },
+  "bi_oa": {
+   "studieprogramkoder": [
+    "DIPØAH"
+   ],
+   "years": {
+    "2021": {
+     "kp_mott": 39.0,
+     "n_mott": 1518
+    },
+    "2022": {
+     "kp_mott": 39.9,
+     "n_mott": 1340
+    },
+    "2023": {
+     "kp_mott": 40.9,
+     "n_mott": 1444
+    },
+    "2024": {
+     "kp_mott": 40.3,
+     "n_mott": 1603
+    },
+    "2025": {
+     "kp_mott": 41.0,
+     "n_mott": 1866
+    }
+   },
+   "opptakstype": "L"
   }
  }
 }

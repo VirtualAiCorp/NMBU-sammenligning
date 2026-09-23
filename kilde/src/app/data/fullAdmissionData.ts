@@ -46,6 +46,8 @@ export interface FullAdmissionEntry {
   url?: string; // lenke til programsiden hos institusjonen
   stipulatedSokerpress?: number;
   poengFellesMed?: string[]; // andre oppføringer med samme DBH-program (felles opptakspoeng)
+  lokaltOpptak?: boolean; // lokalt opptak (DBH 379), ikke Samordna – f.eks. BI og Kristiania i bachelorgruppene
+  poengLokalt?: boolean; // karakterpoeng fra DBH 571 opptakstype L (lokalt opptak), ikke Samordna
 }
 
 const Y = (
