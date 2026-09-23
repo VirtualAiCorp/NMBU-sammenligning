@@ -1,8 +1,8 @@
 import type { ReactNode } from 'react';
-import { BookOpen, Building2, Trees, Atom, Leaf, FlaskConical, TreePine, Lock, PawPrint, Users } from 'lucide-react';
+import { BookOpen, Building2, Trees, Atom, Leaf, FlaskConical, TreePine, Lock, PawPrint, Users, Home } from 'lucide-react';
 import { FACULTIES, FACULTY_IDS, type FacultyId } from '../data/faculties';
 
-export type Faculty = 'hh' | FacultyId | 'nmbu-emner' | 'nmbu-fagmiljo';
+export type Faculty = 'hh' | FacultyId | 'nmbu-emner' | 'nmbu-fagmiljo' | 'nmbu-bolig';
 
 interface Props {
   onSelect: (faculty: Faculty) => void;
@@ -104,6 +104,25 @@ export function FacultyLanding({ onSelect }: Props) {
             <div style={{ fontFamily: "'Lora', serif", fontWeight: 500, fontSize: '20px', color: 'var(--nmbu-green-dark)', marginBottom: 4 }}>Alle emner ved NMBU</div>
             <p style={{ fontSize: '13px', color: 'var(--nmbu-neutral-2)', lineHeight: 1.5 }}>
               Karakterfordeling for hvert emne, for hele emnet og per studieprogram som har studenter på emnet. Alle fakulteter, DBH 2021–2025.
+            </p>
+          </div>
+        </button>
+
+        {/* Bolig og studentboliger */}
+        <button
+          onClick={() => onSelect('nmbu-bolig')}
+          className="w-full rounded-2xl p-6 text-left transition-all mb-8 flex items-center gap-5"
+          style={{ backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)', boxShadow: '0 2px 8px rgba(2,92,79,0.08)' }}
+          onMouseEnter={(e) => { (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 4px 16px rgba(2,92,79,0.16)'; (e.currentTarget as HTMLButtonElement).style.transform = 'translateY(-2px)'; }}
+          onMouseLeave={(e) => { (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 2px 8px rgba(2,92,79,0.08)'; (e.currentTarget as HTMLButtonElement).style.transform = 'translateY(0)'; }}
+        >
+          <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: 'var(--nmbu-green-4)' }}>
+            <Home className="w-5 h-5" style={{ color: 'var(--nmbu-green-dark)' }} />
+          </div>
+          <div>
+            <div style={{ fontFamily: "'Lora', serif", fontWeight: 500, fontSize: '20px', color: 'var(--nmbu-green-dark)', marginBottom: 4 }}>Bolig og studentboliger</div>
+            <p style={{ fontSize: '13px', color: 'var(--nmbu-neutral-2)', lineHeight: 1.5 }}>
+              Dekningsgrad for studentboliger, kvadratmeterpriser og leiepriser i Ås og ved konkurrentenes studiesteder, med nabokommuner rundt studiestedet. NSO 2026 og SSB.
             </p>
           </div>
         </button>

@@ -262,3 +262,22 @@ førstestillinger, kvinneandel faglige, faglige årsverk, rekrutteringsårsverk,
 - **Publisering:** avdeling 000000 i 373 er institusjonstotalen (lik summen av avdelingene); den brukes bare
   på institusjonsnivå. AHO rapporterer 0 poeng og 0 publikasjoner og vises som ikke rapportert.
 - **Tabell 225** er en aggregert tabell som gir serverfeil med kodetekst; hent med `kodetekst: N`.
+
+## 15. Bolig og studentboliger (NSO + SSB 06035/09895)
+
+Etter oppskriften «Boligmarked + Studentboliger per studiested» fra sammenligningsportalen
+(claude.ai/artifact/K9T1fej8P9u3hr8X9rz6Uj), tilpasset appen og utvidet til alle studiestedene i
+fakultetenes programkart (NMBU og konkurrentene). Kort på forsiden (alle 25 studiesteder) og på hver
+fakultetsside (studiestedene i fakultetets sammenligninger).
+- **Skript:** `scripts/build-bolig.py [--refresh]` → `kilde/public/bolig/bolig.json` (137 kB, lastes først når
+  visningen åpnes). Kilder i `data/nmbu/kilder/`: `ssb_06035_kommuner.json`, `ssb_09895_leie.json` (SSB-API),
+  og `portalen/` (NSO 2026 transkribert i portalen, nabolister, studiested → kommune).
+- **Kjøpspriser (06035):** alle 357 kommuner, 2016–2024. Kommuner som fikk nytt nummer 1.1.2024 har 2020–2023
+  under forgjengerkoden «(2020-2023)»; 113 er skjøtet (portalen manglet disse årene). 0 salg = ingen tall.
+- **Leie (09895):** brede prissoner. Raden markeres bare der sonen per definisjon er kommunen eller fylket
+  (Oslo og Bærum, Akershus utenom Bærum = Ås, Bergen, Trondheim, Stavanger). Ellers generell referanse.
+- **Nabolister:** Ås kuratert her (~30 min: Ås, Nordre Follo, Vestby, Frogn, Nesodden, Enebakk, Oslo; ~2 timer:
+  resten av Oslo-området, nordre Østfold, Drammen). 15 andre steder fra portalen. Hamar, Lillehammer, Kongsberg,
+  Bø, Sogndal, Steinkjer, Evenstad, Volda og Rena har bare egen kommune (radius slått av), etter oppskriftens
+  regel om ikke å gjette.
+- **NSO-alias:** Oslo → «Oslo og Lillestrøm», Midt-Telemark → Bø, Stor-Elvdal → Evenstad, Åmot → Rena.

@@ -1,0 +1,629 @@
+{
+ "kilde": "NSO Studentboligundersøkelsen 2026, transkribert fra PDF i Sammenligningsportalen (claude.ai/artifact/K9T1fej8P9u3hr8X9rz6Uj), hentet 2026-09-23",
+ "data": {
+  "nasjonal_historikk": [
+   {
+    "aar": 1991,
+    "he": 11960,
+    "studenter": 62200,
+    "dekningsgrad": 19.23
+   },
+   {
+    "aar": 2010,
+    "he": 28687,
+    "studenter": 207455,
+    "dekningsgrad": 13.82
+   },
+   {
+    "aar": 2017,
+    "he": 37437,
+    "studenter": 258012,
+    "dekningsgrad": 14.51
+   },
+   {
+    "aar": 2018,
+    "he": 38480,
+    "studenter": 264208,
+    "dekningsgrad": 14.56
+   },
+   {
+    "aar": 2019,
+    "he": 38055,
+    "studenter": 262032,
+    "dekningsgrad": 14.52
+   },
+   {
+    "aar": 2020,
+    "he": 38830,
+    "studenter": 261093,
+    "dekningsgrad": 14.87
+   },
+   {
+    "aar": 2021,
+    "he": 40294,
+    "studenter": 273179,
+    "dekningsgrad": 14.75
+   },
+   {
+    "aar": 2022,
+    "he": 40622,
+    "studenter": 278295,
+    "dekningsgrad": 14.6
+   },
+   {
+    "aar": 2023,
+    "he": 40941,
+    "studenter": 277847,
+    "dekningsgrad": 14.73
+   },
+   {
+    "aar": 2024,
+    "he": 40967,
+    "studenter": 275467,
+    "dekningsgrad": 14.87
+   },
+   {
+    "aar": 2025,
+    "he": 42738,
+    "studenter": 282872,
+    "dekningsgrad": 15.11
+   },
+   {
+    "aar": 2026,
+    "he": 44416,
+    "studenter": 290707,
+    "dekningsgrad": 15.28
+   }
+  ],
+  "nasjonal_2026": {
+   "aar": 2026,
+   "he": 44416,
+   "studenter": 290707,
+   "dekningsgrad": 15.28
+  },
+  "nasjonal_2025": {
+   "aar": 2025,
+   "he": 42738,
+   "studenter": 282872,
+   "dekningsgrad": 15.11
+  },
+  "samskipnad": [
+   {
+    "samskipnad": "Studentsamskipnaden i Indre Finnmark",
+    "he": 60,
+    "studenter": 175,
+    "dekningsgrad": 34.29
+   },
+   {
+    "samskipnad": "Norges Arktiske Studentsamskipnad",
+    "he": 4267,
+    "studenter": 16240,
+    "dekningsgrad": 26.27
+   },
+   {
+    "samskipnad": "Studentsamskipnaden i Ås",
+    "he": 2255,
+    "studenter": 8615,
+    "dekningsgrad": 26.18
+   },
+   {
+    "samskipnad": "Nord Studentsamskipnad",
+    "he": 2036,
+    "studenter": 11050,
+    "dekningsgrad": 18.43
+   },
+   {
+    "samskipnad": "Studentsamskipnaden i Volda",
+    "he": 675,
+    "studenter": 4078,
+    "dekningsgrad": 16.56
+   },
+   {
+    "samskipnad": "Studentsamskipnaden i Østfold",
+    "he": 1116,
+    "studenter": 6817,
+    "dekningsgrad": 16.37
+   },
+   {
+    "samskipnad": "Studentsamskipnaden i Gjøvik, Ålesund og Trondheim",
+    "he": 6866,
+    "studenter": 46211,
+    "dekningsgrad": 14.86
+   },
+   {
+    "samskipnad": "Studentsamskipnaden i Agder",
+    "he": 2288,
+    "studenter": 15721,
+    "dekningsgrad": 14.55
+   },
+   {
+    "samskipnad": "Studentsamskipnaden i Innlandet",
+    "he": 2058,
+    "studenter": 14473,
+    "dekningsgrad": 14.22
+   },
+   {
+    "samskipnad": "Studentsamskipnaden SiO",
+    "he": 11429,
+    "studenter": 80777,
+    "dekningsgrad": 14.15
+   },
+   {
+    "samskipnad": "Studentsamskipnaden i Molde",
+    "he": 478,
+    "studenter": 3554,
+    "dekningsgrad": 13.44
+   },
+   {
+    "samskipnad": "Studentsamskipnaden i Sørøst-Norge",
+    "he": 2732,
+    "studenter": 20696,
+    "dekningsgrad": 13.2
+   },
+   {
+    "samskipnad": "Studentsamskipnaden i Stavanger",
+    "he": 2076,
+    "studenter": 15807,
+    "dekningsgrad": 13.13
+   },
+   {
+    "samskipnad": "Studentsamskipnaden på Vestlandet",
+    "he": 6081,
+    "studenter": 46495,
+    "dekningsgrad": 13.08
+   }
+  ],
+  "studiested": {
+   "Bodø": {
+    "samskipnad": "Nord Studentsamskipnad",
+    "hybler": 1002,
+    "leiligheter": 136,
+    "he": 1240,
+    "studenter": 4458,
+    "dekningsgrad": 27.82,
+    "merknad": null
+   },
+   "Levanger": {
+    "samskipnad": "Nord Studentsamskipnad",
+    "hybler": 323,
+    "leiligheter": 48,
+    "he": 407,
+    "studenter": 2255,
+    "dekningsgrad": 18.05,
+    "merknad": null
+   },
+   "Mo i Rana": {
+    "samskipnad": "Nord Studentsamskipnad",
+    "hybler": 60,
+    "leiligheter": 0,
+    "he": 60,
+    "studenter": 323,
+    "dekningsgrad": 18.6,
+    "merknad": null
+   },
+   "Namsos": {
+    "samskipnad": "Nord Studentsamskipnad",
+    "hybler": 99,
+    "leiligheter": 5,
+    "he": 108,
+    "studenter": 460,
+    "dekningsgrad": 23.42,
+    "merknad": null
+   },
+   "Nesna": {
+    "samskipnad": "Nord Studentsamskipnad",
+    "hybler": 74,
+    "leiligheter": 12,
+    "he": 95,
+    "studenter": 228,
+    "dekningsgrad": 41.76,
+    "merknad": null
+   },
+   "Steinkjer": {
+    "samskipnad": "Nord Studentsamskipnad",
+    "hybler": 50,
+    "leiligheter": 15,
+    "he": 76,
+    "studenter": 398,
+    "dekningsgrad": 19.18,
+    "merknad": null
+   },
+   "Stjørdal": {
+    "samskipnad": "Nord Studentsamskipnad",
+    "hybler": 50,
+    "leiligheter": 0,
+    "he": 50,
+    "studenter": 918,
+    "dekningsgrad": 5.45,
+    "merknad": null
+   },
+   "Vesterålen": {
+    "samskipnad": "Nord Studentsamskipnad",
+    "hybler": 0,
+    "leiligheter": 0,
+    "he": 0,
+    "studenter": 113,
+    "dekningsgrad": 0,
+    "merknad": null
+   },
+   "Andre (nettstudenter)": {
+    "samskipnad": "Nord Studentsamskipnad",
+    "hybler": 0,
+    "leiligheter": 0,
+    "he": 0,
+    "studenter": 1900,
+    "dekningsgrad": 0,
+    "merknad": "Nettstudenter uten bestemt studiested."
+   },
+   "Alta": {
+    "samskipnad": "Norges Arktiske Studentsamskipnad",
+    "hybler": 275,
+    "leiligheter": 62,
+    "he": 384,
+    "studenter": 2228,
+    "dekningsgrad": 17.22,
+    "merknad": null
+   },
+   "Harstad": {
+    "samskipnad": "Norges Arktiske Studentsamskipnad",
+    "hybler": 91,
+    "leiligheter": 41,
+    "he": 163,
+    "studenter": 1090,
+    "dekningsgrad": 14.93,
+    "merknad": null
+   },
+   "Narvik": {
+    "samskipnad": "Norges Arktiske Studentsamskipnad",
+    "hybler": 186,
+    "leiligheter": 70,
+    "he": 308,
+    "studenter": 858,
+    "dekningsgrad": 35.98,
+    "merknad": null
+   },
+   "Tromsø": {
+    "samskipnad": "Norges Arktiske Studentsamskipnad",
+    "hybler": 1664,
+    "leiligheter": 716,
+    "he": 2917,
+    "studenter": 11300,
+    "dekningsgrad": 25.81,
+    "merknad": null
+   },
+   "Svalbard": {
+    "samskipnad": "Norges Arktiske Studentsamskipnad",
+    "hybler": 171,
+    "leiligheter": 48,
+    "he": 255,
+    "studenter": 83,
+    "dekningsgrad": 309.09,
+    "merknad": null
+   },
+   "Tjelsund": {
+    "samskipnad": "Norges Arktiske Studentsamskipnad",
+    "hybler": 240,
+    "leiligheter": 0,
+    "he": 240,
+    "studenter": 320,
+    "dekningsgrad": 75,
+    "merknad": null
+   },
+   "Andre (Bardufoss/Bodø/Hammerfest/Kabelvåg/Kirkenes/Mo i Rana)": {
+    "samskipnad": "Norges Arktiske Studentsamskipnad",
+    "hybler": 0,
+    "leiligheter": 0,
+    "he": 0,
+    "studenter": 363,
+    "dekningsgrad": 0,
+    "merknad": "Samlekategori for studenter ved Bardufoss, Bodø, Hammerfest, Kabelvåg, Kirkenes og Mo i Rana under denne samskipnaden – ingen av disse stedene har egne studentboliger her (NB: egne, atskilte studentboliger finnes i Bodø og Mo i Rana under Nord Studentsamskipnad)."
+   },
+   "Grimstad": {
+    "samskipnad": "Studentsamskipnaden i Agder",
+    "hybler": 386,
+    "leiligheter": 110,
+    "he": 579,
+    "studenter": 4154,
+    "dekningsgrad": 13.93,
+    "merknad": null
+   },
+   "Kristiansand": {
+    "samskipnad": "Studentsamskipnaden i Agder",
+    "hybler": 974,
+    "leiligheter": 420,
+    "he": 1709,
+    "studenter": 11567,
+    "dekningsgrad": 14.77,
+    "merknad": null
+   },
+   "Gjøvik": {
+    "samskipnad": "Studentsamskipnaden i Gjøvik, Ålesund og Trondheim",
+    "hybler": 791,
+    "leiligheter": 71,
+    "he": 915,
+    "studenter": 4144,
+    "dekningsgrad": 22.09,
+    "merknad": null
+   },
+   "Trondheim": {
+    "samskipnad": "Studentsamskipnaden i Gjøvik, Ålesund og Trondheim",
+    "hybler": 4228,
+    "leiligheter": 743,
+    "he": 5528,
+    "studenter": 39223,
+    "dekningsgrad": 14.09,
+    "merknad": null
+   },
+   "Ålesund": {
+    "samskipnad": "Studentsamskipnaden i Gjøvik, Ålesund og Trondheim",
+    "hybler": 347,
+    "leiligheter": 43,
+    "he": 422,
+    "studenter": 2845,
+    "dekningsgrad": 14.84,
+    "merknad": null
+   },
+   "Kautokeino": {
+    "samskipnad": "Studentsamskipnaden i Indre Finnmark",
+    "hybler": 18,
+    "leiligheter": 24,
+    "he": 60,
+    "studenter": 175,
+    "dekningsgrad": 34.29,
+    "merknad": null
+   },
+   "Blæstad": {
+    "samskipnad": "Studentsamskipnaden i Innlandet",
+    "hybler": 7,
+    "leiligheter": 0,
+    "he": 7,
+    "studenter": 510,
+    "dekningsgrad": 1.37,
+    "merknad": null
+   },
+   "Elverum": {
+    "samskipnad": "Studentsamskipnaden i Innlandet",
+    "hybler": 242,
+    "leiligheter": 23,
+    "he": 282,
+    "studenter": 2800,
+    "dekningsgrad": 10.08,
+    "merknad": null
+   },
+   "Evenstad": {
+    "samskipnad": "Studentsamskipnaden i Innlandet",
+    "hybler": 117,
+    "leiligheter": 0,
+    "he": 117,
+    "studenter": 235,
+    "dekningsgrad": 49.79,
+    "merknad": null
+   },
+   "Hamar": {
+    "samskipnad": "Studentsamskipnaden i Innlandet",
+    "hybler": 302,
+    "leiligheter": 106,
+    "he": 488,
+    "studenter": 2535,
+    "dekningsgrad": 19.23,
+    "merknad": null
+   },
+   "Lillehammer": {
+    "samskipnad": "Studentsamskipnaden i Innlandet",
+    "hybler": 920,
+    "leiligheter": 105,
+    "he": 1104,
+    "studenter": 5053,
+    "dekningsgrad": 21.85,
+    "merknad": null
+   },
+   "Rena": {
+    "samskipnad": "Studentsamskipnaden i Innlandet",
+    "hybler": 60,
+    "leiligheter": 0,
+    "he": 60,
+    "studenter": 3340,
+    "dekningsgrad": 1.8,
+    "merknad": null
+   },
+   "Kristiansund": {
+    "samskipnad": "Studentsamskipnaden i Molde",
+    "hybler": 41,
+    "leiligheter": 0,
+    "he": 41,
+    "studenter": 585,
+    "dekningsgrad": 7.01,
+    "merknad": null
+   },
+   "Molde": {
+    "samskipnad": "Studentsamskipnaden i Molde",
+    "hybler": 393,
+    "leiligheter": 25,
+    "he": 437,
+    "studenter": 2969,
+    "dekningsgrad": 14.71,
+    "merknad": null
+   },
+   "Stavanger": {
+    "samskipnad": "Studentsamskipnaden i Stavanger",
+    "hybler": 1551,
+    "leiligheter": 300,
+    "he": 2076,
+    "studenter": 15807,
+    "dekningsgrad": 13.13,
+    "merknad": null
+   },
+   "Bø": {
+    "samskipnad": "Studentsamskipnaden i Sørøst-Norge",
+    "hybler": 510,
+    "leiligheter": 35,
+    "he": 571,
+    "studenter": 2578,
+    "dekningsgrad": 22.16,
+    "merknad": null
+   },
+   "Drammen": {
+    "samskipnad": "Studentsamskipnaden i Sørøst-Norge",
+    "hybler": 352,
+    "leiligheter": 23,
+    "he": 392,
+    "studenter": 3589,
+    "dekningsgrad": 10.93,
+    "merknad": null
+   },
+   "Hønefoss": {
+    "samskipnad": "Studentsamskipnaden i Sørøst-Norge",
+    "hybler": 146,
+    "leiligheter": 4,
+    "he": 153,
+    "studenter": 1439,
+    "dekningsgrad": 10.63,
+    "merknad": null
+   },
+   "Kongsberg": {
+    "samskipnad": "Studentsamskipnaden i Sørøst-Norge",
+    "hybler": 222,
+    "leiligheter": 14,
+    "he": 246,
+    "studenter": 2524,
+    "dekningsgrad": 9.77,
+    "merknad": null
+   },
+   "Notodden": {
+    "samskipnad": "Studentsamskipnaden i Sørøst-Norge",
+    "hybler": 180,
+    "leiligheter": 12,
+    "he": 201,
+    "studenter": 1392,
+    "dekningsgrad": 14.44,
+    "merknad": null
+   },
+   "Porsgrunn": {
+    "samskipnad": "Studentsamskipnaden i Sørøst-Norge",
+    "hybler": 338,
+    "leiligheter": 37,
+    "he": 403,
+    "studenter": 3825,
+    "dekningsgrad": 10.53,
+    "merknad": null
+   },
+   "Rauland": {
+    "samskipnad": "Studentsamskipnaden i Sørøst-Norge",
+    "hybler": 32,
+    "leiligheter": 10,
+    "he": 50,
+    "studenter": 153,
+    "dekningsgrad": 32.46,
+    "merknad": null
+   },
+   "Stavern": {
+    "samskipnad": "Studentsamskipnaden i Sørøst-Norge",
+    "hybler": 0,
+    "leiligheter": 0,
+    "he": 0,
+    "studenter": 344,
+    "dekningsgrad": 0,
+    "merknad": null
+   },
+   "Vestfold": {
+    "samskipnad": "Studentsamskipnaden i Sørøst-Norge",
+    "hybler": 586,
+    "leiligheter": 74,
+    "he": 716,
+    "studenter": 4854,
+    "dekningsgrad": 14.74,
+    "merknad": null
+   },
+   "Volda": {
+    "samskipnad": "Studentsamskipnaden i Volda",
+    "hybler": 551,
+    "leiligheter": 71,
+    "he": 675,
+    "studenter": 4078,
+    "dekningsgrad": 16.56,
+    "merknad": null
+   },
+   "Fredrikstad": {
+    "samskipnad": "Studentsamskipnaden i Østfold",
+    "hybler": 455,
+    "leiligheter": 28,
+    "he": 504,
+    "studenter": 2573,
+    "dekningsgrad": 19.59,
+    "merknad": null
+   },
+   "Halden": {
+    "samskipnad": "Studentsamskipnaden i Østfold",
+    "hybler": 565,
+    "leiligheter": 27,
+    "he": 612,
+    "studenter": 4245,
+    "dekningsgrad": 14.42,
+    "merknad": null
+   },
+   "Ås": {
+    "samskipnad": "Studentsamskipnaden i Ås",
+    "hybler": 1963,
+    "leiligheter": 167,
+    "he": 2255,
+    "studenter": 8615,
+    "dekningsgrad": 26.18,
+    "merknad": null
+   },
+   "Bergen": {
+    "samskipnad": "Studentsamskipnaden på Vestlandet",
+    "hybler": 3930,
+    "leiligheter": 603,
+    "he": 4985,
+    "studenter": 40415,
+    "dekningsgrad": 12.34,
+    "merknad": null
+   },
+   "Førde": {
+    "samskipnad": "Studentsamskipnaden på Vestlandet",
+    "hybler": 137,
+    "leiligheter": 9,
+    "he": 153,
+    "studenter": 1209,
+    "dekningsgrad": 12.63,
+    "merknad": null
+   },
+   "Haugesund": {
+    "samskipnad": "Studentsamskipnaden på Vestlandet",
+    "hybler": 189,
+    "leiligheter": 50,
+    "he": 277,
+    "studenter": 1890,
+    "dekningsgrad": 14.63,
+    "merknad": null
+   },
+   "Sogndal": {
+    "samskipnad": "Studentsamskipnaden på Vestlandet",
+    "hybler": 444,
+    "leiligheter": 31,
+    "he": 498,
+    "studenter": 2134,
+    "dekningsgrad": 23.35,
+    "merknad": null
+   },
+   "Stord": {
+    "samskipnad": "Studentsamskipnaden på Vestlandet",
+    "hybler": 138,
+    "leiligheter": 17,
+    "he": 168,
+    "studenter": 848,
+    "dekningsgrad": 19.79,
+    "merknad": null
+   },
+   "Oslo og Lillestrøm": {
+    "samskipnad": "Studentsamskipnaden SiO",
+    "hybler": 8918,
+    "leiligheter": 1435,
+    "he": 11429,
+    "studenter": 80777,
+    "dekningsgrad": 14.15,
+    "merknad": null
+   }
+  }
+ }
+}

@@ -1,0 +1,360 @@
+{
+ "kilde": "Studiested → kommunenummer og institusjoner fra Sammenligningsportalen (claude.ai/artifact/K9T1fej8P9u3hr8X9rz6Uj), hentet 2026-09-23",
+ "data": {
+  "Kristiansand": {
+   "kommune": 4204,
+   "institusjoner": [
+    "Ansgar høyskole",
+    "NLA Høgskolen",
+    "Universitetet i Agder"
+   ]
+  },
+  "Oslo": {
+   "kommune": 301,
+   "institusjoner": [
+    "Arkitektur- og designhøgskolen i Oslo",
+    "Fjellhaug Internasjonale Høgskole",
+    "Lovisenberg diakonale høgskole",
+    "MF vitenskapelig høyskole",
+    "NLA Høgskolen",
+    "Norges idrettshøgskole",
+    "OsloMet - storbyuniversitetet",
+    "Politihøgskolen",
+    "Universitetet i Oslo",
+    "VID vitenskapelige høgskole"
+   ]
+  },
+  "Trondheim": {
+   "kommune": 5001,
+   "institusjoner": [
+    "Dronning Mauds Minne Høgskole",
+    "NLA Høgskolen",
+    "Norges teknisk-naturvitenskapelige universitet"
+   ]
+  },
+  "Kristiansund": {
+   "kommune": 1505,
+   "institusjoner": [
+    "Dronning Mauds Minne Høgskole",
+    "Høgskolen i Molde, Vitenskaplig høgskole i logistikk"
+   ]
+  },
+  "Molde": {
+   "kommune": 1506,
+   "institusjoner": [
+    "Høgskolen i Molde, Vitenskaplig høgskole i logistikk"
+   ]
+  },
+  "Fredrikstad": {
+   "kommune": 3107,
+   "institusjoner": [
+    "Høgskolen i Østfold"
+   ]
+  },
+  "Halden": {
+   "kommune": 3101,
+   "institusjoner": [
+    "Høgskolen i Østfold"
+   ]
+  },
+  "Indre Østfold": {
+   "kommune": 3118,
+   "institusjoner": [
+    "Høgskolen i Østfold"
+   ]
+  },
+  "Volda": {
+   "kommune": 1577,
+   "institusjoner": [
+    "Høgskulen i Volda"
+   ]
+  },
+  "Haugesund": {
+   "kommune": 1106,
+   "institusjoner": [
+    "Høgskulen på Vestlandet"
+   ]
+  },
+  "Bergen": {
+   "kommune": 4601,
+   "institusjoner": [
+    "Høgskulen på Vestlandet",
+    "NLA Høgskolen",
+    "Norges Handelshøyskole",
+    "Universitetet i Bergen",
+    "VID vitenskapelige høgskole"
+   ]
+  },
+  "Sunnfjord": {
+   "kommune": 4647,
+   "institusjoner": [
+    "Høgskulen på Vestlandet"
+   ]
+  },
+  "Stord": {
+   "kommune": 4614,
+   "institusjoner": [
+    "Høgskulen på Vestlandet"
+   ]
+  },
+  "Sogndal": {
+   "kommune": 4640,
+   "institusjoner": [
+    "Høgskulen på Vestlandet"
+   ]
+  },
+  "Stavanger": {
+   "kommune": 1103,
+   "institusjoner": [
+    "NLA Høgskolen",
+    "Universitetet i Stavanger",
+    "VID vitenskapelige høgskole"
+   ]
+  },
+  "Bodø": {
+   "kommune": 1804,
+   "institusjoner": [
+    "Nord universitet",
+    "Politihøgskolen",
+    "UiT Norges arktiske universitet"
+   ]
+  },
+  "Mo i Rana": {
+   "kommune": 1833,
+   "institusjoner": [
+    "Nord universitet"
+   ]
+  },
+  "Levanger": {
+   "kommune": 5037,
+   "institusjoner": [
+    "Nord universitet",
+    "Norges teknisk-naturvitenskapelige universitet"
+   ]
+  },
+  "Namsos": {
+   "kommune": 5007,
+   "institusjoner": [
+    "Nord universitet"
+   ]
+  },
+  "Nesna": {
+   "kommune": 1828,
+   "institusjoner": [
+    "Nord universitet"
+   ]
+  },
+  "Steinkjer": {
+   "kommune": 5006,
+   "institusjoner": [
+    "Nord universitet"
+   ]
+  },
+  "Stjørdal": {
+   "kommune": 5035,
+   "institusjoner": [
+    "Nord universitet"
+   ]
+  },
+  "Vesterålen": {
+   "kommune": 1870,
+   "institusjoner": [
+    "Nord universitet"
+   ]
+  },
+  "Narvik": {
+   "kommune": 1806,
+   "institusjoner": [
+    "Nord universitet",
+    "UiT Norges arktiske universitet"
+   ]
+  },
+  "Meråker": {
+   "kommune": 5034,
+   "institusjoner": [
+    "Nord universitet"
+   ]
+  },
+  "Ås": {
+   "kommune": 3218,
+   "institusjoner": [
+    "Norges miljø- og biovitenskapelige universitet"
+   ]
+  },
+  "Gjøvik": {
+   "kommune": 3407,
+   "institusjoner": [
+    "Norges teknisk-naturvitenskapelige universitet"
+   ]
+  },
+  "Ålesund": {
+   "kommune": 1508,
+   "institusjoner": [
+    "Norges teknisk-naturvitenskapelige universitet"
+   ]
+  },
+  "Lillestrøm": {
+   "kommune": 3205,
+   "institusjoner": [
+    "OsloMet - storbyuniversitetet"
+   ]
+  },
+  "Larvik": {
+   "kommune": 3909,
+   "institusjoner": [
+    "Politihøgskolen"
+   ]
+  },
+  "Alta": {
+   "kommune": 5601,
+   "institusjoner": [
+    "Politihøgskolen",
+    "UiT Norges arktiske universitet"
+   ]
+  },
+  "Guovdageaidnu Kautokeino": {
+   "kommune": 5612,
+   "institusjoner": [
+    "Sámi allaskuvla / Sámi University of Applied Sciences"
+   ]
+  },
+  "Tromsø": {
+   "kommune": 5501,
+   "institusjoner": [
+    "UiT Norges arktiske universitet"
+   ]
+  },
+  "Harstad": {
+   "kommune": 5503,
+   "institusjoner": [
+    "UiT Norges arktiske universitet"
+   ]
+  },
+  "Hammerfest": {
+   "kommune": 5603,
+   "institusjoner": [
+    "UiT Norges arktiske universitet"
+   ]
+  },
+  "Sør-Varanger": {
+   "kommune": 5605,
+   "institusjoner": [
+    "UiT Norges arktiske universitet"
+   ]
+  },
+  "Grimstad": {
+   "kommune": 4202,
+   "institusjoner": [
+    "Universitetet i Agder"
+   ]
+  },
+  "Lillehammer": {
+   "kommune": 3405,
+   "institusjoner": [
+    "Universitetet i Innlandet"
+   ]
+  },
+  "Elverum": {
+   "kommune": 3420,
+   "institusjoner": [
+    "Universitetet i Innlandet"
+   ]
+  },
+  "Tynset": {
+   "kommune": 3427,
+   "institusjoner": [
+    "Universitetet i Innlandet"
+   ]
+  },
+  "Kongsvinger": {
+   "kommune": 3401,
+   "institusjoner": [
+    "Universitetet i Innlandet"
+   ]
+  },
+  "Hamar": {
+   "kommune": 3403,
+   "institusjoner": [
+    "Universitetet i Innlandet"
+   ]
+  },
+  "Åmot": {
+   "kommune": 3422,
+   "institusjoner": [
+    "Universitetet i Innlandet"
+   ]
+  },
+  "Stor-Elvdal": {
+   "kommune": 3423,
+   "institusjoner": [
+    "Universitetet i Innlandet"
+   ]
+  },
+  "Porsgrunn": {
+   "kommune": 4001,
+   "institusjoner": [
+    "Universitetet i Sørøst-Norge"
+   ]
+  },
+  "Horten": {
+   "kommune": 3901,
+   "institusjoner": [
+    "Universitetet i Sørøst-Norge"
+   ]
+  },
+  "Drammen": {
+   "kommune": 3301,
+   "institusjoner": [
+    "Universitetet i Sørøst-Norge"
+   ]
+  },
+  "Kongsberg": {
+   "kommune": 3303,
+   "institusjoner": [
+    "Universitetet i Sørøst-Norge"
+   ]
+  },
+  "Notodden": {
+   "kommune": 4005,
+   "institusjoner": [
+    "Universitetet i Sørøst-Norge"
+   ]
+  },
+  "Midt-Telemark": {
+   "kommune": 4020,
+   "institusjoner": [
+    "Universitetet i Sørøst-Norge"
+   ]
+  },
+  "Ringerike": {
+   "kommune": 3305,
+   "institusjoner": [
+    "Universitetet i Sørøst-Norge"
+   ]
+  },
+  "Vinje": {
+   "kommune": 4036,
+   "institusjoner": [
+    "Universitetet i Sørøst-Norge"
+   ]
+  },
+  "Gol": {
+   "kommune": 3324,
+   "institusjoner": [
+    "Universitetet i Sørøst-Norge"
+   ]
+  },
+  "Bærum": {
+   "kommune": 3201,
+   "institusjoner": [
+    "VID vitenskapelige høgskole"
+   ]
+  },
+  "Herøy (Nordland)": {
+   "kommune": 1833,
+   "institusjoner": [
+    "UiT Norges arktiske universitet"
+   ]
+  }
+ }
+}
