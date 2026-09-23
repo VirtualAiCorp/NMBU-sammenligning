@@ -1,0 +1,14 @@
+{
+  "kode": "TMP160-1",
+  "navn": "Teknisk design",
+  "hentet": "2026-09-23",
+  "kuratertAv": "agent-sonnet",
+  "merknad": "Grunnkurs i teknisk design/CAD-basert konstruksjonstegning for maskiningeniørstudenter. Sammenlignet mot tilsvarende kurs i teknisk tegning, CAD og 3D-modellering.",
+  "sammenlignbare": [
+    {"inst": "1171", "kode": "BYG127-G", "navn": "Teknisk design", "sikkerhet": "høy", "merknad": "UiAs kurs har identisk navn"},
+    {"inst": "1150", "kode": "MASG2101-1", "navn": "Data Assistert Design / CAD", "sikkerhet": "høy", "merknad": "NTNUs CAD-kurs for maskiningeniør"},
+    {"inst": "0238", "kode": "MAS147-1", "navn": "Maskintegning", "sikkerhet": "høy", "merknad": "HVLs kurs i maskintegning/teknisk tegning"},
+    {"inst": "0238", "kode": "ING128-1", "navn": "3D-modellering og teknisk tegning", "sikkerhet": "middels", "merknad": "HVLs kurs kombinerer 3D-modellering og teknisk tegning"},
+    {"inst": "0238", "kode": "MAS105-1", "navn": "3D-modellering og tegning", "sikkerhet": "middels", "merknad": "HVLs kurs i 3D-modellering og tegning"}
+  ]
+}

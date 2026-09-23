@@ -1,0 +1,12 @@
+{
+  "kode": "TBA331-1",
+  "navn": "Bygningsfysisk simulering",
+  "hentet": "2026-09-23",
+  "kuratertAv": "agent-sonnet",
+  "merknad": "Masterkurs (HN) i simulering av bygningsfysikk/energibruk i bygninger. Få institusjoner har et eget simuleringsfokusert emne på dette nivået; sammenlignet mot masterkurs i energidesign/bygningsfysikk og et bachelor-simuleringskurs som ligger nærmest i innhold.",
+  "sammenlignbare": [
+    {"inst": "1175", "kode": "MAEN5200-1", "navn": "Energidesign og bygningsfysikk", "sikkerhet": "middels", "merknad": "OsloMets masterkurs (HN) i energidesign og bygningsfysikk, samme nivå"},
+    {"inst": "1130", "kode": "BYG-3803-1", "navn": "Bygningsfysikk", "sikkerhet": "middels", "merknad": "UiTs masterkurs (HN) i bygningsfysikk, mindre omfang (5 stp)"},
+    {"inst": "1175", "kode": "ENBYO6100-1", "navn": "Energisimulering av Bygninger", "sikkerhet": "lav", "merknad": "OsloMets kurs er rent simuleringsfokusert som NMBU-emnet, men på bachelornivå (LN) mot NMBUs masternivå"}
+  ]
+}

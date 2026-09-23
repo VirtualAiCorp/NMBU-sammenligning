@@ -1,0 +1,13 @@
+{
+  "kode": "TBM250-1",
+  "navn": "Elementmetoden",
+  "hentet": "2026-09-23",
+  "kuratertAv": "agent-sonnet",
+  "merknad": "Bachelorkurs i elementmetoden (FEM) for konstruksjonsberegning, 10 stp. Sammenlignet mot tilsvarende grunnkurs i elementmetoden ved andre bygg-/maskiningeniørutdanninger.",
+  "sammenlignbare": [
+    {"inst": "1176", "kode": "VE3130-1", "navn": "Elementmetoden FEM", "sikkerhet": "høy", "merknad": "USNs elementmetodekurs, samme omfang (10 stp) og nivå"},
+    {"inst": "1150", "kode": "MASG2102-1", "navn": "Elementmetoden", "sikkerhet": "høy", "merknad": "NTNUs bachelorkurs i elementmetoden for maskiningeniør"},
+    {"inst": "1150", "kode": "TMM4135-1", "navn": "Dimensjonering basert på elementmetoden, grunnkurs", "sikkerhet": "høy", "merknad": "NTNUs grunnkurs i elementmetoden for dimensjonering"},
+    {"inst": "1150", "kode": "MEPA2314-1", "navn": "Elementmetoden", "sikkerhet": "middels", "merknad": "NTNUs elementmetodekurs ved maskinteknikk-retning"}
+  ]
+}

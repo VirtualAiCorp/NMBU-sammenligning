@@ -1,0 +1,12 @@
+{
+  "kode": "THT200-1",
+  "navn": "Vannteknikk for landskapsplanleggere",
+  "hentet": "2026-09-23",
+  "kuratertAv": "agent-sonnet",
+  "merknad": "Vannteknikk-kurs rettet mot landskapsplanleggingsstudenter (ikke rendyrket bygg-/miljøingeniørfag). Ingen andre institusjoner ser ut til å tilby et tilsvarende vannteknikk-kurs spesifikt for landskapsarkitekt-/planleggerstudenter; nærmeste sammenlignbare er ordinære vann- og avløpsteknikk-kurs for ingeniørstudenter, som dekker deler av samme fagstoff men med annen målgruppe.",
+  "sammenlignbare": [
+    {"inst": "1150", "kode": "BYGT2205-1", "navn": "Vann- og avløpsteknikk 1", "sikkerhet": "middels", "merknad": "NTNUs grunnkurs i VA-teknikk, men for byggingeniørstudenter"},
+    {"inst": "1171", "kode": "BYG226-G", "navn": "Vann- og avløpsteknikk", "sikkerhet": "middels", "merknad": "UiAs grunnkurs i VA-teknikk, for byggingeniørstudenter"},
+    {"inst": "1176", "kode": "TSB3030-1", "navn": "Vann- og avløpsteknikk", "sikkerhet": "lav", "merknad": "USNs VA-teknikk-kurs, bredere ingeniørfaglig fokus enn NMBU-emnet"}
+  ]
+}

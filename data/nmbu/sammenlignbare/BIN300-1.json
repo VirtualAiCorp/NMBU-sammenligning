@@ -1,0 +1,9 @@
+{
+ "kode": "BIN300-1", "navn": "Statistisk genomforskning", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Master-emne i statistisk genomikk/kvantitativ genetikk. Sammenlignet med statistikk-fokuserte genomikkemner og bioinformatikkemner ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "1110", "kode": "MED3007-1", "navn": "Statistical Principles in Genomics: an Introduction with Rstudio", "sikkerhet": "høy", "merknad": "UiO, 2 stp, bachelor medisin, samme fagtema (statistisk genomikk) men mindre omfang"},
+  {"inst": "1174", "kode": "BIO9001-1", "navn": "Population Genomics", "sikkerhet": "middels", "merknad": "Nord, 5 stp, ph.d.-emne, populasjonsgenomikk med statistisk tilnærming"},
+  {"inst": "1150", "kode": "MOL3007-1", "navn": "Funksjonell genomforskning", "sikkerhet": "lav", "merknad": "NTNU, 7,5 stp, master, genomforskning uten spesifikt statistisk fokus"}
+ ]
+}

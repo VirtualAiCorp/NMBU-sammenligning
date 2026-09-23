@@ -1,0 +1,12 @@
+{
+  "kode": "M60-KJEMI-1",
+  "navn": "Masteroppgave",
+  "hentet": "2026-09-23",
+  "kuratertAv": "agent-sonnet",
+  "merknad": "60-studiepoengs masteroppgave i kjemi (emnekoden angir kjemi-spesialisering eksplisitt). Sammenlignet mot tilsvarende 60-stp masteroppgaver i kjemi ved andre institusjoner.",
+  "sammenlignbare": [
+    {"inst": "1110", "kode": "KJM5960-2", "navn": "Kjemi. Masteroppgave", "sikkerhet": "høy", "merknad": "UiOs 60-stp masteroppgave i kjemi, samme omfang og fagfelt"},
+    {"inst": "1120", "kode": "KJEM399-0", "navn": "Masteroppgave i kjemi", "sikkerhet": "høy", "merknad": "UiBs 60-stp masteroppgave i kjemi"},
+    {"inst": "1150", "kode": "KJ3900-1", "navn": "Masteroppgave i kjemi", "sikkerhet": "høy", "merknad": "NTNUs 60-stp masteroppgave i kjemi"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "kode": "M30-KB-1",
+  "navn": "Masteroppgave",
+  "hentet": "2026-09-23",
+  "kuratertAv": "agent-sonnet",
+  "merknad": "30-studiepoengs masteroppgave (NUS 759999, generisk/uspesifisert kategori) ved KBM, trolig kjemi-/bioteknologi-retning. Emnekoden gir ikke entydig spesialisering; sammenlignet mot generiske 30-stp masteroppgaver i bioteknologi/kjemi ved andre institusjoner.",
+  "sammenlignbare": [
+    {"inst": "1150", "kode": "TBT4900-1", "navn": "Bioteknologi, masteroppgave", "sikkerhet": "lav", "merknad": "NTNU, 30 stp masteroppgave i bioteknologi - usikkert om samme spesialisering som NMBUs M30-KB"},
+    {"inst": "1150", "kode": "KJ3950-2", "navn": "Masteroppgave i kjemi", "sikkerhet": "lav", "merknad": "NTNU, 30 stp masteroppgave i kjemi - usikkert om samme spesialisering som NMBUs M30-KB"}
+  ]
+}

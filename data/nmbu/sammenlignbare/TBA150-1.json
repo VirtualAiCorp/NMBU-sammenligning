@@ -1,0 +1,14 @@
+{
+  "kode": "TBA150-1",
+  "navn": "Bygningsanalyse",
+  "hentet": "2026-09-23",
+  "kuratertAv": "agent-sonnet",
+  "merknad": "Bachelorkurs i statikk/konstruksjonsanalyse for bygg (5 stp). Sammenlignet mot tilsvarende innføringskurs i statikk og konstruksjonsmekanikk ved andre bygg-/ingeniørutdanninger.",
+  "sammenlignbare": [
+    {"inst": "1175", "kode": "BYVE3300-1", "navn": "Statikk", "sikkerhet": "høy", "merknad": "OsloMets grunnkurs i statikk for bygg, samme nivå"},
+    {"inst": "1160", "kode": "BYG140-1", "navn": "Konstruksjonsmekanikk 1", "sikkerhet": "høy", "merknad": "UiS' grunnkurs i konstruksjonsmekanikk"},
+    {"inst": "1150", "kode": "BYGT2318-1", "navn": "Statikk", "sikkerhet": "høy", "merknad": "NTNUs grunnkurs i statikk for bygg"},
+    {"inst": "0238", "kode": "BYG300-1", "navn": "Trekonstruksjoner og Statikk", "sikkerhet": "middels", "merknad": "HVLs kurs kombinerer statikk med trekonstruksjoner"},
+    {"inst": "1150", "kode": "BYGG2250-1", "navn": "Statikk og fasthetslære", "sikkerhet": "middels", "merknad": "NTNUs kurs i statikk og fasthetslære"}
+  ]
+}

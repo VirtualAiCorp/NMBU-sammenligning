@@ -1,0 +1,11 @@
+{
+  "kode": "BIO330-1",
+  "navn": "Mikrobiell økologi og fysiologi",
+  "hentet": "2026-09-23",
+  "kuratertAv": "agent-sonnet",
+  "merknad": "Masterkurs i mikrobiell økologi og fysiologi, 10 stp. Sammenlignet mot tilsvarende masterkurs i mikrobiell økologi ved andre institusjoner.",
+  "sammenlignbare": [
+    {"inst": "1120", "kode": "BIO217-0", "navn": "Mikrobiell økologi", "sikkerhet": "høy", "merknad": "UiBs kurs har samme nivå (HN) og omfang (10 stp)"},
+    {"inst": "1150", "kode": "BTA2002-1", "navn": "Mikrobiell økologi", "sikkerhet": "middels", "merknad": "NTNUs kurs i mikrobiell økologi, men bachelornivå (LN)"}
+  ]
+}

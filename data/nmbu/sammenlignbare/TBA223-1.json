@@ -1,0 +1,14 @@
+{
+  "kode": "TBA223-1",
+  "navn": "Konstruksjonsteknikk betong",
+  "hentet": "2026-09-23",
+  "kuratertAv": "agent-sonnet",
+  "merknad": "Bachelorkurs i dimensjonering av betongkonstruksjoner. Sammenlignet mot tilsvarende grunnkurs i betongkonstruksjoner ved andre bygg-/ingeniørutdanninger.",
+  "sammenlignbare": [
+    {"inst": "1171", "kode": "BYG308-G", "navn": "Konstruksjonsteknikk l - Betong", "sikkerhet": "høy", "merknad": "UiAs kurs har identisk navn og tema, 7,5 stp"},
+    {"inst": "1150", "kode": "TKT4175-1", "navn": "Betongkonstruksjoner 1", "sikkerhet": "høy", "merknad": "NTNUs grunnkurs i betongdimensjonering"},
+    {"inst": "0238", "kode": "BYG106-1", "navn": "Betongkonstruksjoner", "sikkerhet": "høy", "merknad": "HVLs kurs i betongkonstruksjoner, 10 stp"},
+    {"inst": "1175", "kode": "BYTS2500-1", "navn": "Betongkonstruksjoner", "sikkerhet": "høy", "merknad": "OsloMets kurs i betongkonstruksjoner, 10 stp"},
+    {"inst": "1160", "kode": "BYG220-1", "navn": "Betongkonstruksjoner", "sikkerhet": "middels", "merknad": "UiS' kurs i betongkonstruksjoner, 10 stp"}
+  ]
+}

@@ -1,0 +1,8 @@
+{
+ "kode": "AQQ253-1", "navn": "Produktkvalitet Akvakultur", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Produktkvalitet i akvakultur/sjømat. Sammenlignet med Nords emne om fiskeernæring og produktkvalitet (svært likt tema) og NTNUs sjømatforedlingsemne.",
+ "sammenlignbare": [
+  {"inst": "1174", "kode": "HAV2002-1", "navn": "Fiskeernæring og produktkvalitet", "sikkerhet": "høy", "merknad": "Nord, 12,5 stp, bachelor, samme tema (produktkvalitet i fiskeoppdrett)"},
+  {"inst": "1150", "kode": "BIA2004-1", "navn": "Sjømatforedling", "sikkerhet": "middels", "merknad": "NTNU, 7,5 stp, bachelor, samme NUS-kode (651507), beslektet tema (foredling/kvalitet)"}
+ ]
+}

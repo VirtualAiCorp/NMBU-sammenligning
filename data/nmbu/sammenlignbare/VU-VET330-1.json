@@ -1,0 +1,12 @@
+{
+ "kode": "VU-VET330-1", "navn": "Fiskehelse og fiskevelferd", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Videreutdanningsemne i fiskehelse og fiskevelferd. Godt etablert fagfelt ved flere institusjoner med akvakulturmiljø; sammenlignet med innførings-/fiskehelseemner på bachelor-/masternivå.",
+ "sammenlignbare": [
+  {"inst": "1120", "kode": "BIF100-0", "navn": "Innføring i fiskehelse og havbruk", "sikkerhet": "høy", "merknad": "UiB, 10 stp, bachelor, samme fagtema"},
+  {"inst": "1150", "kode": "BI1009-1", "navn": "Fiskehelse og velferd", "sikkerhet": "høy", "merknad": "NTNU, 7,5 stp, bachelor, identisk tematikk"},
+  {"inst": "1174", "kode": "HAV2004-1", "navn": "Fiskevelferd", "sikkerhet": "høy", "merknad": "Nord, 10 stp, bachelor, samme tema"},
+  {"inst": "1174", "kode": "AK107F-1", "navn": "Fiskehelse og velferd", "sikkerhet": "høy", "merknad": "Nord, 10 stp, bachelor, identisk tematikk"},
+  {"inst": "1130", "kode": "BIO-3613-1", "navn": "Fiskevelferd i havbruk", "sikkerhet": "middels", "merknad": "UiT, 5 stp, master, fiskevelferd med havbruksfokus"},
+  {"inst": "1150", "kode": "BI3069-1", "navn": "Fiskehelse og velferd", "sikkerhet": "middels", "merknad": "NTNU, 7,5 stp, master, samme tema på høyere nivå"}
+ ]
+}

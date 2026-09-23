@@ -1,0 +1,8 @@
+{
+ "kode": "VET303-1", "navn": "Populasjonsmedisin", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Veterinær populasjonsmedisin (dyrehelse på besetnings-/populasjonsnivå) har ingen direkte motpart. Nærmeste tematiske slektning er epidemiologi-emner innen humanmedisin/helsevitenskap ved andre institusjoner, men disse dekker ikke dyrehelseperspektivet. Lav sikkerhet, tatt med for metodisk nærhet (epidemiologiske metoder).",
+ "sammenlignbare": [
+  {"inst": "1150", "kode": "MH3002-1", "navn": "Epidemiologi I", "sikkerhet": "lav", "merknad": "NTNU, 7,5 stp, master, humanmedisinsk epidemiologi"},
+  {"inst": "1110", "kode": "MED3001-1", "navn": "Praktisk epidemiologi", "sikkerhet": "lav", "merknad": "UiO, 2 stp, bachelor medisin, humanmedisinsk"}
+ ]
+}

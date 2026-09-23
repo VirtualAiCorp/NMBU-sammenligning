@@ -1,0 +1,15 @@
+{
+  "kode": "MATH123-1",
+  "navn": "Lineær algebra og vektoranalyse",
+  "hentet": "2026-09-23",
+  "kuratertAv": "agent-sonnet",
+  "merknad": "Kombinerer lineær algebra og vektoranalyse/flervariabel analyse for realfags-/ingeniørstudenter. Sammenlignet mot rene lineær algebra-kurs og mot kurs som dekker vektoranalyse.",
+  "sammenlignbare": [
+    {"inst": "1120", "kode": "MAT121-0", "navn": "Lineær algebra", "sikkerhet": "høy", "merknad": "UiBs standard lineær algebra-kurs, 10 stp"},
+    {"inst": "1110", "kode": "MAT1120-1", "navn": "Lineær algebra", "sikkerhet": "høy", "merknad": "UiOs lineær algebra-kurs, 10 stp"},
+    {"inst": "1150", "kode": "MA1201-1", "navn": "Lineær algebra og geometri", "sikkerhet": "høy", "merknad": "NTNUs lineær algebra-kurs for realfag/ingeniør"},
+    {"inst": "1130", "kode": "MAT-1004-1", "navn": "Lineær algebra", "sikkerhet": "høy", "merknad": "UiTs standard lineær algebra-kurs, 10 stp"},
+    {"inst": "1150", "kode": "MA1103-1", "navn": "Flervariabel analyse og vektoranalyse", "sikkerhet": "middels", "merknad": "NTNUs kurs dekker vektoranalyse-delen av NMBU-emnet, men ikke lineær algebra"},
+    {"inst": "1160", "kode": "MAT300-1", "navn": "Vektoranalyse", "sikkerhet": "middels", "merknad": "UiS' rene vektoranalyse-kurs, dekker kun deler av NMBU-emnet"}
+  ]
+}

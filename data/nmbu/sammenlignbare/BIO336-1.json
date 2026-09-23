@@ -1,0 +1,11 @@
+{
+  "kode": "BIO336-1",
+  "navn": "Mykologi",
+  "hentet": "2026-09-23",
+  "kuratertAv": "agent-sonnet",
+  "merknad": "Masterkurs i mykologi (sopplære). Sammenlignet mot tilsvarende mykologi-/sopplærekurs på master-/avansert nivå ved UiO.",
+  "sammenlignbare": [
+    {"inst": "1110", "kode": "BIOS4250-1", "navn": "Soppenes biologi", "sikkerhet": "høy", "merknad": "UiOs masterkurs i sopplære, samme nivå (HN)"},
+    {"inst": "1110", "kode": "BIOS5217-1", "navn": "Avanserte emner i mykologi", "sikkerhet": "høy", "merknad": "UiOs videregående mykologikurs på masternivå"}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+ "kode": "VET304-1", "navn": "Anatomi og fysiologi", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Dyrs anatomi og fysiologi, basalfag i veterinærstudiet. Sammenlignet med tilsvarende emner for dyrepleiere/husdyrfag ved Nord (nærmeste norske fagmiljø for dyreanatomi utenom NMBU) og bredere biomedisinske basalfagemner. Humanmedisinsk anatomi/fysiologi (sykepleie) er utelatt som for lite treffsikkert.",
+ "sammenlignbare": [
+  {"inst": "1174", "kode": "DYR1004-1", "navn": "Anatomi, fysiologi og generell patologi", "sikkerhet": "middels", "merknad": "Nord, 15 stp, bachelor dyrepleie, dyreanatomi"},
+  {"inst": "1174", "kode": "BI145F-1", "navn": "Anatomi og fysiologi for dyrepleiere", "sikkerhet": "middels", "merknad": "Nord, 10 stp, bachelor dyrepleie"},
+  {"inst": "1174", "kode": "HUS1005-1", "navn": "Husdyrenes anatomi og fysiologi", "sikkerhet": "middels", "merknad": "Nord, 7,5 stp, bachelor husdyrfag"},
+  {"inst": "1130", "kode": "TPL-1004-1", "navn": "Biomedisinske basalfag", "sikkerhet": "lav", "merknad": "UiT, 10 stp, bachelor, humanbiologisk basalfag, ikke dyr"}
+ ]
+}

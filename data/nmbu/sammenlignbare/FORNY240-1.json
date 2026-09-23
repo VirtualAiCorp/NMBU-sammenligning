@@ -1,0 +1,10 @@
+{
+ "kode": "FORNY240-1", "navn": "Energidistribusjon og -lagringssystemer", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Bachelor-emne om distribusjon og lagring av energi. Ingen institusjon har funnet med nøyaktig samme kombinasjon; sammenlignet med beslektede emner i energisystemer og energilagring.",
+ "sammenlignbare": [
+  {"inst": "0238", "kode": "FE411-1", "navn": "Energisystemer", "sikkerhet": "middels", "merknad": "HVL, 10 stp, bachelor, samme NUS-kode 651423, energisystemer inkl. distribusjon"},
+  {"inst": "1150", "kode": "FENG2001-1", "navn": "Elektriske energisystemer og fjernvarme", "sikkerhet": "middels", "merknad": "NTNU, 7,5 stp, bachelor, samme NUS-kode 651423, distribusjonsdelen"},
+  {"inst": "0238", "kode": "KJE204-1", "navn": "Energilagring", "sikkerhet": "middels", "merknad": "HVL, 10 stp, bachelor, lagringsdelen av emnet"},
+  {"inst": "1150", "kode": "FENG2011-1", "navn": "Energilagring 1", "sikkerhet": "middels", "merknad": "NTNU, 7,5 stp, bachelor, samme NUS-kode 651423, lagringsdelen"}
+ ]
+}

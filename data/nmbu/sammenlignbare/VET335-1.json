@@ -1,0 +1,9 @@
+{
+ "kode": "VET335-1", "navn": "Forsøksdyrlære", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Lovpålagt kurs i forsøksdyrlære (FELASA-kategori), veterinærstudiet. Sammenlignet med tilsvarende forsøksdyrkurs ved andre institusjoner - disse er ofte kortere spesialistkurs, men samme faglige kjerne (lovverk, dyrevelferd, forsøksdyrbruk).",
+ "sammenlignbare": [
+  {"inst": "1120", "kode": "LAS301-0", "navn": "Kurs i forsøksdyrlære", "sikkerhet": "høy", "merknad": "UiB, 6 stp, videreutdanning, samme fagkjerne (FELASA-kurs)"},
+  {"inst": "1174", "kode": "BI243F-1", "navn": "Forsøksdyr og eksotiske dyr", "sikkerhet": "middels", "merknad": "Nord, 5 stp, bachelor dyrepleie"},
+  {"inst": "1150", "kode": "NEVR8014-1", "navn": "Forsøksdyrlære akvatiske dyr", "sikkerhet": "middels", "merknad": "NTNU, 7,5 stp, ph.d.-emne, spesialisert på akvatiske forsøksdyr"}
+ ]
+}

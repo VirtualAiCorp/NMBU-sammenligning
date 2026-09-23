@@ -1,0 +1,13 @@
+{
+  "kode": "MATH270-1",
+  "navn": "Kompleks analyse og transformasjonsmetoder",
+  "hentet": "2026-09-23",
+  "kuratertAv": "agent-sonnet",
+  "merknad": "Bachelorkurs i kompleks analyse med transformasjonsmetoder (Laplace/Fourier) for realfags-/ingeniørstudenter, 10 stp. Sammenlignet mot tilsvarende kompleks analyse-kurs ved andre institusjoner.",
+  "sammenlignbare": [
+    {"inst": "1130", "kode": "MAT-2100-1", "navn": "Kompleks analyse", "sikkerhet": "høy", "merknad": "UiTs kurs i kompleks analyse, samme nivå og omfang (10 stp)"},
+    {"inst": "1160", "kode": "MAT310-1", "navn": "Kompleks analyse", "sikkerhet": "høy", "merknad": "UiS' kurs i kompleks analyse, samme nivå og omfang (10 stp)"},
+    {"inst": "1110", "kode": "MAT2410-1", "navn": "Innføring i kompleks analyse", "sikkerhet": "høy", "merknad": "UiOs innføringskurs i kompleks analyse, 10 stp"},
+    {"inst": "1150", "kode": "TMA4175-1", "navn": "Kompleks analyse", "sikkerhet": "middels", "merknad": "NTNUs kurs i kompleks analyse, men på masternivå (HN)"}
+  ]
+}

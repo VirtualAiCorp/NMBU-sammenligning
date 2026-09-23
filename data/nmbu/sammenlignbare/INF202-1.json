@@ -1,0 +1,13 @@
+{
+  "kode": "INF202-1",
+  "navn": "Prosjektoppgave i videregående programmering",
+  "hentet": "2026-09-23",
+  "kuratertAv": "agent-sonnet",
+  "merknad": "Prosjektbasert bachelorkurs i videregående programmering. Sammenlignet mot tilsvarende videregående programmeringskurs og programmeringsprosjekt-emner ved andre institusjoner.",
+  "sammenlignbare": [
+    {"inst": "1171", "kode": "IS-202-1", "navn": "Programmeringsprosjekt", "sikkerhet": "høy", "merknad": "UiAs kurs har samme prosjektbaserte form"},
+    {"inst": "1150", "kode": "TDT4113-1", "navn": "Datateknologi, programmeringsprosjekt", "sikkerhet": "høy", "merknad": "NTNUs programmeringsprosjekt-kurs"},
+    {"inst": "1120", "kode": "INF101-0", "navn": "Videregående programmering", "sikkerhet": "middels", "merknad": "UiBs videregående programmeringskurs, stort omfang"},
+    {"inst": "0238", "kode": "ELE205-1", "navn": "Videregående programmering", "sikkerhet": "middels", "merknad": "HVLs kurs i videregående programmering"}
+  ]
+}

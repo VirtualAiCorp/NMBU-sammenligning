@@ -1,0 +1,9 @@
+{
+ "kode": "FORNY220-1", "navn": "Livsløpsvurdering - miljøeffekter av energi- og avfallssystemer", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Bachelor-emne i livsløpsvurdering (LCA) med fokus på energi- og avfallssystemer.",
+ "sammenlignbare": [
+  {"inst": "1150", "kode": "FENG2023-1", "navn": "Livsløpsvurderinger av energisystem", "sikkerhet": "høy", "merknad": "NTNU, 7,5 stp, bachelor, direkte tilsvarende tema og nivå"},
+  {"inst": "1150", "kode": "TEP4223-1", "navn": "Livsløpsvurdering", "sikkerhet": "middels", "merknad": "NTNU, 7,5 stp, masternivå mot NMBUs bachelor-emne, generell LCA-metodikk"},
+  {"inst": "1175", "kode": "MABY4700-1", "navn": "Life Cycle Assessment for Built Environment", "sikkerhet": "lav", "merknad": "OsloMet, 5 stp, master, LCA men rettet mot bygg fremfor energi/avfall"}
+ ]
+}

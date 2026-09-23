@@ -1,0 +1,12 @@
+{
+  "kode": "MVI230-1",
+  "navn": "Matvaretrygghet og -hygiene",
+  "hentet": "2026-09-23",
+  "kuratertAv": "agent-sonnet",
+  "merknad": "Bachelorkurs i matvaretrygghet og -hygiene, 5 stp. Sammenlignet mot tilsvarende kurs i matvarekunnskap/mattrygghet ved andre institusjoner.",
+  "sammenlignbare": [
+    {"inst": "1130", "kode": "ERN-1001-1", "navn": "Matvarekunnskap og matvaretrygghet", "sikkerhet": "høy", "merknad": "UiTs kurs kombinerer matvarekunnskap og matvaretrygghet, samme nivå"},
+    {"inst": "1130", "kode": "ERN-2005-1", "navn": "Matvarekunnskap og matvaretrygghet", "sikkerhet": "høy", "merknad": "UiTs videregående kurs i matvarekunnskap og matvaretrygghet"},
+    {"inst": "1150", "kode": "MATV1008-1", "navn": "Mikrobiologi og mattrygghet", "sikkerhet": "middels", "merknad": "NTNUs kurs dekker mattrygghet med mikrobiologisk vinkling"}
+  ]
+}

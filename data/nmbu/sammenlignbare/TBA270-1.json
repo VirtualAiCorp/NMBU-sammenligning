@@ -1,0 +1,13 @@
+{
+  "kode": "TBA270-1",
+  "navn": "Bygningsadministrasjon og prosjektledelse",
+  "hentet": "2026-09-23",
+  "kuratertAv": "agent-sonnet",
+  "merknad": "Bachelorkurs i byggadministrasjon og prosjektledelse for byggeprosjekter. Sammenlignet mot tilsvarende kurs i byggadministrasjon/prosjektledelse ved andre bygg-/ingeniørutdanninger.",
+  "sammenlignbare": [
+    {"inst": "1130", "kode": "BYG-2610-1", "navn": "Byggadministrasjon og prosjektstyring", "sikkerhet": "høy", "merknad": "UiTs kurs har nesten identisk navn og tema, 10 stp"},
+    {"inst": "1175", "kode": "BYPE2700-1", "navn": "Prosjektledelse og økonomi", "sikkerhet": "høy", "merknad": "OsloMets kurs i prosjektledelse og økonomi for bygg, 10 stp"},
+    {"inst": "1160", "kode": "BYG230-1", "navn": "Byggadministrasjon med BIM", "sikkerhet": "høy", "merknad": "UiS' kurs i byggadministrasjon, 10 stp"},
+    {"inst": "1171", "kode": "BYG225-G", "navn": "Prosjektledelse med Lean Construction", "sikkerhet": "middels", "merknad": "UiAs kurs i prosjektledelse for bygg"}
+  ]
+}

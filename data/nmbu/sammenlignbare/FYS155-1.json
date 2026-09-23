@@ -1,0 +1,12 @@
+{
+  "kode": "FYS155-1",
+  "navn": "Laboratoriekurs i fysikk",
+  "hentet": "2026-09-23",
+  "kuratertAv": "agent-sonnet",
+  "merknad": "Praktisk laboratoriekurs i fysikk for realfags-/ingeniørstudenter. Sammenlignet mot eksperimentalfysikk-/laboratoriekurs ved andre institusjoner.",
+  "sammenlignbare": [
+    {"inst": "1160", "kode": "FYS210-1", "navn": "Fysikklaboratorium", "sikkerhet": "høy", "merknad": "UiS' kurs har identisk navn og tema, 10 stp"},
+    {"inst": "1110", "kode": "FYS2150-1", "navn": "Eksperimentalfysikk", "sikkerhet": "høy", "merknad": "UiOs praktiske laboratoriekurs i eksperimentalfysikk"},
+    {"inst": "1120", "kode": "PHYS114-0", "navn": "Grunnleggende målevitenskap og eksperimentalfysikk", "sikkerhet": "middels", "merknad": "UiBs kurs kombinerer målevitenskap og laboratoriearbeid i fysikk"}
+  ]
+}

@@ -1,0 +1,9 @@
+{
+ "kode": "DYR202-2", "navn": "Forsøksdyrlære", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Samme tema som VET335-1 (forsøksdyrlære), men i dyrepleierutdanningen ved NMBU. Sammenlignet med tilsvarende forsøksdyrkurs ved andre institusjoner.",
+ "sammenlignbare": [
+  {"inst": "1174", "kode": "BI243F-1", "navn": "Forsøksdyr og eksotiske dyr", "sikkerhet": "høy", "merknad": "Nord, 5 stp, bachelor dyrepleie, samme studieretning og nivå"},
+  {"inst": "1120", "kode": "LAS301-0", "navn": "Kurs i forsøksdyrlære", "sikkerhet": "middels", "merknad": "UiB, 6 stp, videreutdanning, samme fagkjerne"},
+  {"inst": "1150", "kode": "NEVR8014-1", "navn": "Forsøksdyrlære akvatiske dyr", "sikkerhet": "lav", "merknad": "NTNU, 7,5 stp, ph.d.-emne, mye smalere fokus"}
+ ]
+}

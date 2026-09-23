@@ -1,0 +1,12 @@
+{
+  "kode": "MVI291-1",
+  "navn": "Kosthold og helse",
+  "hentet": "2026-09-23",
+  "kuratertAv": "agent-sonnet",
+  "merknad": "Bachelorkurs om sammenhengen mellom kosthold og helse, 5 stp. Sammenlignet mot tilsvarende kurs i kostholdskunnskap/ernæring og helse ved andre institusjoner.",
+  "sammenlignbare": [
+    {"inst": "1260", "kode": "FIT834-2", "navn": "Kostholdskunnskap", "sikkerhet": "høy", "merknad": "NIHs kurs har samme omfang (5 stp) og tema"},
+    {"inst": "1171", "kode": "ERN138-1", "navn": "Mat, næringsstoffer og kostholdsanbefalinger", "sikkerhet": "middels", "merknad": "UiAs kurs i kosthold/næringsstoffer, noe større omfang (10 stp)"},
+    {"inst": "0238", "kode": "ID3-321-1", "navn": "Kosthold og ernæring", "sikkerhet": "middels", "merknad": "HVLs kurs i kosthold og ernæring, noe større omfang (15 stp)"}
+  ]
+}

@@ -1,0 +1,9 @@
+{
+ "kode": "DYR208-1", "navn": "Profesjonsetikk", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Profesjonsetikk i dyrepleierutdanningen. Sammenlignet med Nords tilsvarende emne i veterinærmedisinsk regelverk/yrkesetikk (samme studieretning) og generelle profesjonsetikk-/yrkesetikk-emner ved andre helse-/dyrefaglige utdanninger.",
+ "sammenlignbare": [
+  {"inst": "1174", "kode": "BIO1028-1", "navn": "Introduksjon til veterinærmedisinsk regelverk og yrkesetikk", "sikkerhet": "høy", "merknad": "Nord, 5 stp, bachelor dyrepleie, samme fagfelt"},
+  {"inst": "1174", "kode": "BI248F-1", "navn": "Regelverk og yrkesetikk", "sikkerhet": "høy", "merknad": "Nord, 5 stp, bachelor dyrepleie"},
+  {"inst": "0238", "kode": "BIO305-1", "navn": "Profesjonsetikk og kommunikasjon", "sikkerhet": "lav", "merknad": "HVL, 5 stp, bioingeniørutdanning, generell profesjonsetikk uten dyrefokus"}
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "kode": "EIE105-1", "navn": "Kart- og landmålingslære", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Bachelor-emne i kart- og landmålingslære for eiendomsfag. HVLs eiendomsfaglige LEI-serie er direkte nasjonal motpart.",
+ "sammenlignbare": [
+  {"inst": "0238", "kode": "LEI105-1", "navn": "Eiendomslandmåling", "sikkerhet": "høy", "merknad": "HVL, 10 stp, bachelor, samme omfang og direkte tilsvarende fagfelt eiendomslandmåling"},
+  {"inst": "0238", "kode": "GE413-1", "navn": "Kartlære og GIS", "sikkerhet": "middels", "merknad": "HVL, 10 stp, bachelor, samme omfang, kartlære-delen"},
+  {"inst": "1174", "kode": "GEO1010-1", "navn": "Kartlære og datafangst", "sikkerhet": "middels", "merknad": "Nord universitet, 7,5 stp, bachelor, kartlære-delen"},
+  {"inst": "1150", "kode": "GEOM1120-1", "navn": "Introduksjon til landmåling", "sikkerhet": "middels", "merknad": "NTNU, 7,5 stp, bachelor, landmålings-delen"}
+ ]
+}

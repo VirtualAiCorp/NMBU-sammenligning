@@ -1,0 +1,11 @@
+{
+ "kode": "VET302-1", "navn": "Cellebiologi", "hentet": "2026-09-23", "kuratertAv": "agent-sonnet",
+ "merknad": "Basalfag i veterinærstudiet. Sammenlignet med cellebiologi-emner i medisin/biologi ved andre institusjoner (samme nivå: tidlig i profesjons-/masterløp). Ingen er veterinærspesifikke, derfor middels sikkerhet.",
+ "sammenlignbare": [
+  {"inst": "1120", "kode": "BIO103-0", "navn": "Cellebiologi og genetikk", "sikkerhet": "middels", "merknad": "UiB, 10 stp, bachelor, generell cellebiologi"},
+  {"inst": "1150", "kode": "BI2012-1", "navn": "Cellebiologi", "sikkerhet": "middels", "merknad": "NTNU, 7,5 stp, bachelor, generell cellebiologi"},
+  {"inst": "0238", "kode": "BIO174-1", "navn": "Cellebiologi", "sikkerhet": "middels", "merknad": "HVL, 7,5 stp, bachelor"},
+  {"inst": "1174", "kode": "BIO1002-1", "navn": "Cellebiologi", "sikkerhet": "middels", "merknad": "Nord, 5 stp, bachelor"},
+  {"inst": "1110", "kode": "FARM1110-1", "navn": "Farmakologi, fysiologi og cellebiologi 1", "sikkerhet": "lav", "merknad": "UiO, 10 stp, bachelor farmasi, bredere emne som inkluderer cellebiologi"}
+ ]
+}
