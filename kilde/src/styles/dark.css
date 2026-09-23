@@ -1,0 +1,120 @@
+/* Mørk modus. Settes med data-theme="dark" (og klassen .dark for shadcn/Tailwind sin dark:-variant) på <html>.
+   Uten lagret valg følger siden systeminnstillingen; bryteren (ThemeToggle.tsx) lagrer et eksplisitt valg i
+   localStorage («theme»). Et blokkerende skript i index.html setter attributtet før første tegning.
+   Faste inline-farger i komponentene overstyres i dark-overrides.css (generert). */
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --dm-surface: #1a211e;       /* kort og paneler (erstatter hvit) */
+  --dm-surface-2: #222b27;     /* hevet flate, verktøytips */
+  --dm-accent-text: #7fd4bd;   /* NMBU-grønn som tekst på mørk flate */
+
+  --nmbu-green-dark:  #025c4f; /* beholdes som flate (overskriftskort, aktive knapper med hvit tekst) */
+  --nmbu-green:       #009a81; /* flate og tekst: holder kontrast begge veier */
+  --nmbu-green-2:     #46b4a0;
+  --nmbu-green-3:     #2d6a5c;
+  --nmbu-green-4:     #1d3a32;
+  --nmbu-green-6:     #247761; /* beholdes som flate med hvit tekst; som tekst lysnes den under */
+  --nmbu-green-light: #16302a;
+  --nmbu-beige:       #232b27;
+  --nmbu-beige-light: #121816;
+  --nmbu-neutral:     #e6ebe8;
+  --nmbu-neutral-1:   #c3ccc7;
+  --nmbu-neutral-2:   #8f9c96;
+  --nmbu-neutral-3:   #2f3a35;
+
+  --background: var(--nmbu-beige-light);
+  --foreground: var(--nmbu-neutral);
+  --card: var(--dm-surface);
+  --card-foreground: var(--nmbu-neutral);
+  --popover: var(--dm-surface-2);
+  --popover-foreground: var(--nmbu-neutral);
+  --primary: var(--nmbu-green);
+  --primary-foreground: #0d1411;
+  --secondary: var(--nmbu-green-4);
+  --secondary-foreground: var(--dm-accent-text);
+  --muted: #232b27;
+  --muted-foreground: var(--nmbu-neutral-2);
+  --accent: #232b27;
+  --accent-foreground: var(--nmbu-neutral);
+  --border: rgba(255, 255, 255, 0.1);
+  --input-background: #1f2724;
+}
+
+:root[data-theme="dark"] body {
+  background-color: var(--nmbu-beige-light);
+  color: var(--nmbu-neutral);
+}
+
+/* NMBU-grønt brukt som TEKSTfarge (ikke flate): lysnes for kontrast. " color:" med mellomrom treffer ikke background-color. */
+:root[data-theme="dark"] [style^="color: var(--nmbu-green-dark)"],
+:root[data-theme="dark"] [style*=" color: var(--nmbu-green-dark)"],
+:root[data-theme="dark"] [style^="color: rgb(2, 92, 79)"],
+:root[data-theme="dark"] [style*=" color: rgb(2, 92, 79)"] {
+  color: var(--dm-accent-text) !important;
+}
+:root[data-theme="dark"] [style^="color: var(--nmbu-green-6)"],
+:root[data-theme="dark"] [style*=" color: var(--nmbu-green-6)"],
+:root[data-theme="dark"] [style^="color: var(--nmbu-green)"],
+:root[data-theme="dark"] [style*=" color: var(--nmbu-green)"],
+:root[data-theme="dark"] [style^="color: var(--nmbu-purple)"],
+:root[data-theme="dark"] [style*=" color: var(--nmbu-purple)"] {
+  color: var(--dm-accent-text) !important;
+}
+/* Men hvit tekst på grønn flate og grønn tekst på hvit-knapp inne i grønne kort skal stå */
+:root[data-theme="dark"] [style*="background-color: var(--nmbu-green-dark)"] [style*="color: rgb(255, 255, 255)"] { color: #fff !important; }
+
+/* Tailwind-klasser */
+:root[data-theme="dark"] .bg-white { background-color: var(--dm-surface) !important; }
+:root[data-theme="dark"] .bg-gray-100 { background-color: var(--dm-surface-2) !important; }
+
+/* Skjemaelementer */
+:root[data-theme="dark"] select,
+:root[data-theme="dark"] input[type="text"],
+:root[data-theme="dark"] input[type="search"],
+:root[data-theme="dark"] input[type="password"],
+:root[data-theme="dark"] textarea {
+  background-color: var(--dm-surface-2);
+  color: var(--nmbu-neutral);
+  border-color: var(--nmbu-neutral-3);
+}
+
+/* Recharts: rutenett, akser, verktøytips, etiketter */
+:root[data-theme="dark"] .recharts-cartesian-grid line { stroke: #2f3a35 !important; }
+:root[data-theme="dark"] .recharts-cartesian-axis-line,
+:root[data-theme="dark"] .recharts-cartesian-axis-tick-line { stroke: #4a5752 !important; }
+:root[data-theme="dark"] .recharts-cartesian-axis-tick-value,
+:root[data-theme="dark"] .recharts-cartesian-axis-tick-value tspan { fill: var(--nmbu-neutral-1) !important; }
+:root[data-theme="dark"] .recharts-default-tooltip {
+  background-color: var(--dm-surface-2) !important;
+  border-color: var(--nmbu-neutral-3) !important;
+  color: var(--nmbu-neutral) !important;
+}
+:root[data-theme="dark"] .recharts-default-tooltip .recharts-tooltip-label { color: var(--nmbu-neutral) !important; }
+:root[data-theme="dark"] .recharts-legend-item-text { color: var(--nmbu-neutral-1) !important; }
+:root[data-theme="dark"] .recharts-label,
+:root[data-theme="dark"] .recharts-reference-line text { fill: var(--nmbu-neutral-1) !important; }
+:root[data-theme="dark"] .recharts-label-list text[fill="#333"],
+:root[data-theme="dark"] .recharts-label-list text[fill="#555"],
+:root[data-theme="dark"] .recharts-label-list text[fill="#666"],
+:root[data-theme="dark"] .recharts-label-list text[fill="#888"] { fill: var(--nmbu-neutral-1) !important; }
+:root[data-theme="dark"] .recharts-reference-line line[stroke="#888"],
+:root[data-theme="dark"] .recharts-reference-line line[stroke="#6b7280"] { stroke: #8f9c96 !important; }
+/* NMBU-linjen/-søylen (mørk petrol) lysnes så den synes mot mørk bakgrunn */
+:root[data-theme="dark"] .recharts-line-curve[stroke="#025C4F" i],
+:root[data-theme="dark"] .recharts-line-curve[stroke="var(--nmbu-green-dark)"] { stroke: #3fbf9f !important; }
+:root[data-theme="dark"] .recharts-line-dot[stroke="#025C4F" i] { stroke: #3fbf9f !important; fill: var(--dm-surface) !important; }
+:root[data-theme="dark"] .recharts-bar-rectangle path[fill="#025C4F" i],
+:root[data-theme="dark"] .recharts-rectangle[fill="#025C4F" i] { fill: #2f9e84 !important; }
+:root[data-theme="dark"] .recharts-dot[fill="#fff"], :root[data-theme="dark"] .recharts-dot[fill="#ffffff"] { fill: var(--dm-surface) !important; }
+
+/* Leaflet-kart: dempet flis og mørk tooltip */
+:root[data-theme="dark"] .leaflet-tile { filter: brightness(0.7) contrast(1.1) saturate(0.8); }
+:root[data-theme="dark"] .leaflet-tooltip.map-tooltip { background: var(--dm-surface-2); border-color: var(--nmbu-neutral-3); color: var(--nmbu-neutral); }
+
+/* Bilder og logoer: ingen invertering, men litt dempet */
+:root[data-theme="dark"] img { opacity: 0.92; }
+
+/* Recharts sin markering ved pekerhold (standard lysegrå) */
+:root[data-theme="dark"] .recharts-tooltip-cursor { fill: rgba(255, 255, 255, 0.06) !important; stroke: rgba(255, 255, 255, 0.25) !important; }
+:root[data-theme="dark"] .recharts-rectangle.recharts-tooltip-cursor { stroke: none !important; }

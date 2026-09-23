@@ -281,3 +281,18 @@ fakultetsside (studiestedene i fakultetets sammenligninger).
   Bø, Sogndal, Steinkjer, Evenstad, Volda og Rena har bare egen kommune (radius slått av), etter oppskriftens
   regel om ikke å gjette.
 - **NSO-alias:** Oslo → «Oslo og Lillestrøm», Midt-Telemark → Bø, Stor-Elvdal → Evenstad, Åmot → Rena.
+
+## 16. Mørk modus
+
+Lys/mørk-bryter øverst til høyre på alle sider (`ThemeToggle.tsx`, lucide Sun/Moon), samme mønster som
+sammenligningsportalens theme-toggle: uten lagret valg følger siden systeminnstillingen (også live), et klikk
+lagrer valget i localStorage («theme»). Et skript i `index.html` setter `data-theme` og klassen `dark` før første
+tegning, så siden ikke blinker.
+- `kilde/src/styles/dark.css`: mørke verdier for NMBU-variablene, Tailwind/shadcn-tokens, skjemaelementer,
+  Recharts (rutenett, akser, verktøytips, markering) og Leaflet. De grønne flatene (green-dark, green, green-6)
+  beholder sine mørke verdier fordi de bærer hvit tekst; der de brukes som tekstfarge lysnes de med
+  attributtselektorer (`[style*=" color: var(--nmbu-green-dark)"]`).
+- `kilde/src/styles/dark-overrides.css` er GENERERT av `scripts/build-dark-css.py`: skanner komponentene for faste
+  inline-farger (React skriver dem som `rgb(...)`) og lager overstyringer etter luminans. Slik får også de
+  originale HH-komponentene mørk modus uten å endres. Kjør skriptet på nytt etter nye komponenter med faste farger.
+- Utviklingsserveren må startes på nytt etter nye `@import` i `index.css` (Tailwind-pluginen cacher importgrafen).
