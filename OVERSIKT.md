@@ -192,7 +192,7 @@ Samme kjede som LANDSAM og REALTEK: `data/<fakultet>/` med programkart, dbh-prog
 | MINA | 10 grupper, 45 program | 1657 emner | 91 emnetyper | 35 av 45 program |
 
 Forbehold:
-- DBH tabell 379 (lokale opptak) svarte med serverfeil 22.09; søkertall for de toårige masterne ved BIOVIT og KBM mangler derfor inntil videre (MINA fikk tallene). Kjør `python3 scripts/build-landsam-data.py` på nytt etter at programkartene er oppdatert med tall.
+- Søkertall for de toårige masterne (lokalt opptak) kommer fra DBH tabell 379 (søknadsalternativer, kvalifiserte, tilbud), hentet 23.09. Førstevalg, plasser, kjønn og poenggrenser publiseres ikke der; 2026 er ikke rapportert ennå. To koder lot seg ikke følge bakover (NMBU EM-ABG og M-MAT før 2025).
 - «Natur og miljø» (MINA) er et årsstudium og er holdt utenfor. NMBU Matvitenskap og ernæring og Mat, teknologi og helse er samme DBH-kode (B-MAT), altså en videreføring under nytt navn.
 - NTNU avvikler toårige mastere i kjemi (siste opptak 2025) og bioteknologi/matvitenskap (2026). UiT Akvamedisin er et femårig profesjonsstudium, ikke toårig master.
 - Mange NMBU-program her er små; emnekoblingene bygger derfor ofte på summen 2021–2025 og er merket.
