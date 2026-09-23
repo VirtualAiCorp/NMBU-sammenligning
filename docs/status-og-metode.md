@@ -325,8 +325,9 @@ bryter ved siden av lys/mørk og husket i nettleseren. Venter på Mathias' valg 
 
 Knappen «Oppsett» øverst til høyre (ved siden av lys/mørk, `TopRightControls.tsx`) velger mellom:
 1. **Oversikt** (standard): dagens oppsett med kort, landingssider og egne sider per modul.
-2. **Fullskjerm-dashboard**: fast grønn sidemeny (Hele NMBU, HH, fakultetene med moduler under), brødsmuler og full
-   innholdsbredde; startsiden er sammenligningsmatrisen. På smal skjerm blir sidemenyen en uttrekksmeny.
+2. **Fullskjerm-dashboard**: fast grønn sidemeny med fakultetene øverst (HH i samme liste, fakultetene med moduler under)
+   og «Hele NMBU» under, brødsmuler og full innholdsbredde; startsiden er sammenligningsmatrisen. På smal skjerm blir
+   sidemenyen en smal uttrekksmeny (maks 232 px / 72 % av bredden).
 3. **Toppmeny**: enhetene (Hele NMBU, HH, fakultetene) som faner øverst og modulene i en rad under; valgt modul beholdes
    når man bytter fakultet. Samme startside.
 - Valget lagres i localStorage («layout») og kan settes i en lenke med `?oppsett=dashboard` / `?oppsett=toppmeny` / `?oppsett=oversikt`

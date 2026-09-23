@@ -1,6 +1,6 @@
 import { useState, type ReactNode } from 'react';
 import {
-  LayoutDashboard, BookOpen, Microscope, Home, Landmark, Briefcase, TrendingUp, GraduationCap, Users, Star, Globe2,
+  LayoutDashboard, BookOpen, Microscope, Home, Landmark, TrendingUp, GraduationCap, Users, Star, Globe2,
   LayoutGrid, Menu, X,
 } from 'lucide-react';
 import { FACULTIES, FACULTY_IDS, type FacultyId } from '../data/faculties';
@@ -74,24 +74,19 @@ export function DashboardShell({ faculty, view, onNavigate, children }: { facult
   const [mobilMeny, setMobilMeny] = useState(false);
   const gaa: Nav = (f, v, g) => { setMobilMeny(false); onNavigate(f, v, g); };
   const itemStyle = (aktiv: boolean) => ({ backgroundColor: aktiv ? 'rgba(255,255,255,0.16)' : 'transparent', opacity: aktiv ? 1 : 0.82, fontWeight: aktiv ? 700 : 400 });
+  const seksjon = (t: string) => (
+    <div className="px-2 pt-3 pb-1" style={{ fontSize: 10, letterSpacing: '0.08em', textTransform: 'uppercase', opacity: 0.6 }}>{t}</div>
+  );
   const meny = (
     <nav className="flex flex-col gap-0.5 text-sm" aria-label="Hovedmeny">
-      <button onClick={() => gaa(null)} className="text-left px-2 pb-3" style={{ fontFamily: "'Lora', serif", fontSize: 17, whiteSpace: 'nowrap' }}>NMBU-sammenligning</button>
-      <div className="px-2 pt-2 pb-1" style={{ fontSize: 10, letterSpacing: '0.08em', textTransform: 'uppercase', opacity: 0.6 }}>Hele NMBU</div>
-      {NMBU_SIDER.map((s) => (
-        <button key={s.label} onClick={() => gaa(s.f)} className="flex items-center gap-2 px-2 py-1.5 rounded-md text-left" style={itemStyle(faculty === s.f)}>
-          <s.icon className="w-4 h-4 shrink-0" /> {s.label}
-        </button>
-      ))}
+      <button onClick={() => gaa(null)} className="text-left px-2 pb-2" style={{ fontFamily: "'Lora', serif", fontSize: 17, whiteSpace: 'nowrap' }}>NMBU-sammenligning</button>
+      {seksjon('Fakultetene')}
       {import.meta.env.VITE_UTEN_HH !== '1' && (
-        <>
-          <div className="px-2 pt-4 pb-1" style={{ fontSize: 10, letterSpacing: '0.08em', textTransform: 'uppercase', opacity: 0.6 }}>Handelshøyskolen</div>
-          <button onClick={() => gaa('hh')} className="flex items-center gap-2 px-2 py-1.5 rounded-md text-left" style={itemStyle(faculty === 'hh')}>
-            <Briefcase className="w-4 h-4 shrink-0" /> HH
-          </button>
-        </>
+        <button onClick={() => gaa('hh')} className="w-full flex items-center justify-between px-2 py-1.5 rounded-md text-left" style={itemStyle(faculty === 'hh')}
+          title="Handelshøyskolen">
+          <span>HH</span>
+        </button>
       )}
-      <div className="px-2 pt-4 pb-1" style={{ fontSize: 10, letterSpacing: '0.08em', textTransform: 'uppercase', opacity: 0.6 }}>Fakultetene</div>
       {FACULTY_IDS.map((id) => {
         const aapen = faculty === id;
         return (
@@ -108,6 +103,12 @@ export function DashboardShell({ faculty, view, onNavigate, children }: { facult
           </div>
         );
       })}
+      {seksjon('Hele NMBU')}
+      {NMBU_SIDER.map((s) => (
+        <button key={s.label} onClick={() => gaa(s.f)} className="flex items-center gap-2 px-2 py-1.5 rounded-md text-left" style={itemStyle(faculty === s.f)}>
+          <s.icon className="w-4 h-4 shrink-0" /> {s.label}
+        </button>
+      ))}
     </nav>
   );
   return (
@@ -115,7 +116,7 @@ export function DashboardShell({ faculty, view, onNavigate, children }: { facult
       <aside className="hidden lg:block shrink-0 sticky top-0 h-screen overflow-y-auto p-4" style={{ width: 256, backgroundColor: 'var(--nmbu-green-dark)', color: '#fff' }}>{meny}</aside>
       {mobilMeny && (
         <div className="lg:hidden fixed inset-0 z-40 flex" onClick={() => setMobilMeny(false)} style={{ backgroundColor: 'rgba(0,0,0,0.4)' }}>
-          <aside className="h-full overflow-y-auto p-4" onClick={(e) => e.stopPropagation()} style={{ width: 280, backgroundColor: 'var(--nmbu-green-dark)', color: '#fff' }}>
+          <aside className="h-full overflow-y-auto px-2.5 py-3 text-sm" onClick={(e) => e.stopPropagation()} style={{ width: 'min(232px, 72vw)', backgroundColor: 'var(--nmbu-green-dark)', color: '#fff' }}>
             <button onClick={() => setMobilMeny(false)} className="mb-2 flex items-center gap-1 text-xs" style={{ opacity: 0.8 }}><X className="w-4 h-4" /> Lukk</button>
             {meny}
           </aside>
