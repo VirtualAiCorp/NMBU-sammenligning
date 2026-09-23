@@ -179,3 +179,25 @@ Forbehold:
 - NMBU har bare to rene toårige mastere ved REALTEK (Datavitenskap og Intelligent Water Technology); de andre «M-»-kodene i DBH er de femårige løpene.
 - Små NMBU-program (Geoinformatikk, Energi- og miljøfysikk, IWT) ligger ofte under terskelen på 10 kandidater; koblingene der bygger på summen 2021–2025 og er merket.
 - NMBU mangler motstykke til fag som alle konkurrentene har: statistikk i maskin, mikroøkonomi og markedsføring i indøk, diskret matematikk og programvareutvikling i datavitenskap, vegbygging og BIM i bygg. Det står i gruppenotatene og er i seg selv et funn.
+
+## BIOVIT, KBM og MINA (lagt til 23.09.2026)
+
+Samme kjede som LANDSAM og REALTEK: `data/<fakultet>/` med programkart, dbh-programkart, kilder, emnekobling, studieplaner og markedsstatus;
+`scripts/build-faculty.sh <fakultet>` genererer alt. Veterinærhøgskolen er bevisst utelatt (ingen innenlandsk konkurrent).
+
+| Fakultet | Opptak | Karakterer (DBH) | Emnekobling | Studieplaner |
+|---|---|---|---|---|
+| BIOVIT | 8 grupper, 38 program | 1475 emner | 71 emnetyper | 38 av 38 program |
+| KBM | 7 grupper, 31 program | 927 emner | 60 emnetyper | 30 av 31 program |
+| MINA | 10 grupper, 45 program | 1657 emner | 91 emnetyper | 35 av 45 program |
+
+Forbehold:
+- DBH tabell 379 (lokale opptak) svarte med serverfeil 22.09; søkertall for de toårige masterne ved BIOVIT og KBM mangler derfor inntil videre (MINA fikk tallene). Kjør `python3 scripts/build-landsam-data.py` på nytt etter at programkartene er oppdatert med tall.
+- «Natur og miljø» (MINA) er et årsstudium og er holdt utenfor. NMBU Matvitenskap og ernæring og Mat, teknologi og helse er samme DBH-kode (B-MAT), altså en videreføring under nytt navn.
+- NTNU avvikler toårige mastere i kjemi (siste opptak 2025) og bioteknologi/matvitenskap (2026). UiT Akvamedisin er et femårig profesjonsstudium, ikke toårig master.
+- Mange NMBU-program her er små; emnekoblingene bygger derfor ofte på summen 2021–2025 og er merket.
+
+## Studiebarometeret og markedsstatus for fakultetene (23.09.2026)
+
+- `scripts/build-studiebarometer.py <fakultet>` henter studiebarometeret.no per program (programside, tidsserie og delspørsmål; id = institusjonskode_programkode fra DBH-koblingen) til `data/<fakultet>/studiebarometer.json` og `kilde/src/app/data/<fakultet>StudiebarometerData.ts`. Program med for få svar får `warning` og tomme verdier.
+- `scripts/build-markedsstatus.py <fakultet>` legger styrepapir-oppsummeringene fra `data/<fakultet>/markedsstatus.json` inn i appen og kopierer PDF-ene til `kilde/public/markedsstatus/<fakultet>/`. Styrepapirer bak innlogging (NTNU-fakultetene, UiT sin e-innsynsportal, OsloMet sine vedlegg) er lenket til siden, ikke lastet ned.
