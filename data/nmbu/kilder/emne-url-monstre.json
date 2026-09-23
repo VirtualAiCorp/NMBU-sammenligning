@@ -3,14 +3,19 @@
   "institusjoner": {
     "1110": {
       "kort": "UiO",
-      "monster": null,
-      "kodeform": null,
-      "strip": null,
-      "type": null,
-      "testet": 0,
-      "treff": 0,
-      "eksempler": [],
-      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+      "monster": "https://www.uio.no/?vrtx=searchuio&query={kode}",
+      "kodeform": "upper",
+      "strip": [
+        "-\\d+$"
+      ],
+      "type": "sok",
+      "testet": 5,
+      "treff": 5,
+      "eksempler": [
+        "https://www.uio.no/?vrtx=searchuio&query=IN1000",
+        "https://www.uio.no/?vrtx=searchuio&query=EXPHIL03"
+      ],
+      "merknad": "Ingen flatt direkte-mønster (emnesider ligger under fakultet/institutt, f.eks. /studier/emner/matnat/ifi/IN1000/). UiOs globale søk (?vrtx=searchuio&query=) gir korrekt emneside som første treff for alle 5 testede koder."
     },
     "1120": {
       "kort": "UiB",
@@ -31,14 +36,19 @@
     },
     "1130": {
       "kort": "UiT",
-      "monster": null,
-      "kodeform": null,
-      "strip": null,
-      "type": null,
-      "testet": 0,
-      "treff": 0,
-      "eksempler": [],
-      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+      "monster": "https://uit.no/utdanning/aktivt/emne/{kode}",
+      "kodeform": "upper",
+      "strip": [
+        "-\\d+$"
+      ],
+      "type": "direkte",
+      "testet": 5,
+      "treff": 5,
+      "eksempler": [
+        "https://uit.no/utdanning/aktivt/emne/FIL-0700",
+        "https://uit.no/utdanning/aktivt/emne/HMS-0501"
+      ],
+      "merknad": ""
     },
     "1150": {
       "kort": "NTNU",
@@ -74,14 +84,19 @@
     },
     "1171": {
       "kort": "UiA",
-      "monster": null,
-      "kodeform": null,
-      "strip": null,
-      "type": null,
-      "testet": 0,
-      "treff": 0,
-      "eksempler": [],
-      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+      "monster": "https://www.uia.no/studier/emner/2026/host/{kode}.html",
+      "kodeform": "lower",
+      "strip": [
+        "-\\d+$"
+      ],
+      "type": "direkte",
+      "testet": 5,
+      "treff": 4,
+      "eksempler": [
+        "https://www.uia.no/studier/emner/2026/host/org001.html",
+        "https://www.uia.no/studier/emner/2026/host/ex-100.html"
+      ],
+      "merknad": "URL-en inneholder år/semester (2026/host) og må oppdateres jevnlig - fungerer ikke for rene våremner (MF-102 traff 404 for host 2026, men samme mønster med /var/ i stedet for /host/ bør prøves for vårspesifikke emner). 4/5 treff."
     },
     "1173": {
       "kort": "NMBU",
@@ -101,14 +116,19 @@
     },
     "1175": {
       "kort": "OsloMet",
-      "monster": null,
-      "kodeform": null,
-      "strip": null,
-      "type": null,
-      "testet": 0,
-      "treff": 0,
-      "eksempler": [],
-      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+      "monster": "https://student.oslomet.no/studier/-/studieinfo/emne/{kode}/",
+      "kodeform": "upper",
+      "strip": [
+        "-\\d+$"
+      ],
+      "type": "direkte",
+      "testet": 5,
+      "treff": 5,
+      "eksempler": [
+        "https://student.oslomet.no/studier/-/studieinfo/emne/INTER1100/",
+        "https://student.oslomet.no/studier/-/studieinfo/emne/MGVM4100/"
+      ],
+      "merknad": ""
     },
     "1176": {
       "kort": "USN",
@@ -116,65 +136,90 @@
       "kodeform": null,
       "strip": null,
       "type": null,
-      "testet": 0,
+      "testet": 5,
       "treff": 0,
       "eksempler": [],
-      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+      "merknad": "Emneplaner ligger bak en klientsiderendret enkeltside (studie-og-emneplaner/#/emne/{kode}) - emnekoden vises aldri i server-HTML, så URL-en er ikke testbar med curl. Fant ingen fungerende søk eller API-endepunkt på usn.no. PDF-emneplaner (getfile.php) har ikke-forutsigbare filnavn/hash-er."
     },
     "1177": {
       "kort": "INN",
-      "monster": null,
-      "kodeform": null,
-      "strip": null,
-      "type": null,
-      "testet": 0,
-      "treff": 0,
-      "eksempler": [],
-      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+      "monster": "https://studiekatalog.edutorium.no/inn/emne/{kode}",
+      "kodeform": "upper",
+      "strip": [
+        "-\\d+$"
+      ],
+      "type": "direkte",
+      "testet": 5,
+      "treff": 5,
+      "eksempler": [
+        "https://studiekatalog.edutorium.no/inn/emne/SYK1001",
+        "https://studiekatalog.edutorium.no/inn/emne/SORG100"
+      ],
+      "merknad": "Edutorium-plattform (samme som deles av flere høgskoler, men kun /inn/ funnet aktiv for INN)."
     },
     "1220": {
       "kort": "AHO",
-      "monster": null,
-      "kodeform": null,
-      "strip": null,
-      "type": null,
-      "testet": 0,
-      "treff": 0,
-      "eksempler": [],
-      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+      "monster": "https://aho.no/?vrtx=search&query={kode}",
+      "kodeform": "upper",
+      "strip": [
+        "-\\d+$"
+      ],
+      "type": "sok",
+      "testet": 5,
+      "treff": 4,
+      "eksempler": [
+        "https://aho.no/?vrtx=search&query=40%20120",
+        "https://aho.no/?vrtx=search&query=60%20160"
+      ],
+      "merknad": "Emnekoder inneholder mellomrom (f.eks. «40 120»); URL-koding av mellomrommet er nødvendig (%20). Direkte emnesider finnes på formen /studier/emner/{år}/{semester}/{kode-med-bindestrek}.html, men år/semester er ikke forutsigbart per kode. Søket ga riktig emneside øverst for 4/5 (kode «80 112» traff ikke egen side, bare andre emner som nevner den)."
     },
     "1240": {
       "kort": "NHH",
-      "monster": null,
-      "kodeform": null,
-      "strip": null,
-      "type": null,
-      "testet": 0,
-      "treff": 0,
-      "eksempler": [],
-      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+      "monster": "https://www.nhh.no/en/search/?q={kode}",
+      "kodeform": "upper",
+      "strip": [
+        "-\\d+$"
+      ],
+      "type": "sok",
+      "testet": 5,
+      "treff": 5,
+      "eksempler": [
+        "https://www.nhh.no/en/search/?q=BED1",
+        "https://www.nhh.no/en/search/?q=MET4"
+      ],
+      "merknad": "Emnesider har titteldrevne URL-er (f.eks. /en/courses/introduction-to-business-economics-and-management-accounting/) uten kode i URL-en. Søket (/en/search/?q=) traff riktig emneside blant resultatene for alle 5 testede koder."
     },
     "1260": {
       "kort": "NIH",
-      "monster": null,
-      "kodeform": null,
-      "strip": null,
-      "type": null,
-      "testet": 0,
-      "treff": 0,
-      "eksempler": [],
-      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+      "monster": "https://www.nih.no/?vrtx=search&query={kode}",
+      "kodeform": "upper",
+      "strip": [
+        "-\\d+$"
+      ],
+      "type": "sok",
+      "testet": 5,
+      "treff": 5,
+      "eksempler": [
+        "https://www.nih.no/?vrtx=search&query=SPM102",
+        "https://www.nih.no/?vrtx=search&query=MET200"
+      ],
+      "merknad": "Samme Vortex-søk som UiO/HiØ/HiMolde/AHO."
     },
     "1407": {
       "kort": "Oslo Nye",
-      "monster": null,
-      "kodeform": null,
-      "strip": null,
-      "type": null,
-      "testet": 0,
-      "treff": 0,
-      "eksempler": [],
-      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+      "monster": "https://oslonyehoyskole.no/search/node?keys={kode}",
+      "kodeform": "upper",
+      "strip": [
+        "-\\d+$"
+      ],
+      "type": "sok",
+      "testet": 5,
+      "treff": 5,
+      "eksempler": [
+        "https://oslonyehoyskole.no/search/node?keys=PSY1120",
+        "https://oslonyehoyskole.no/search/node?keys=PSY1230"
+      ],
+      "merknad": "Emnesider har titteldrevne URL-er (/Emner/{Tittel}-{KODE}-{sp}-sp). Drupal-søket (/search/node?keys=) traff riktig emneside for alle 5 testede koder."
     },
     "8202": {
       "kort": "LDH",
@@ -182,10 +227,10 @@
       "kodeform": null,
       "strip": null,
       "type": null,
-      "testet": 0,
+      "testet": 5,
       "treff": 0,
       "eksempler": [],
-      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+      "merknad": "Emnesider har titteldrevne URL-er under /studietilbud/{program}/emner/{kode-evt-med-tittel} (programsti varierer, f.eks. bachelor-i-sykepleie). Fant ingen søkefunksjon eller API på ldh.no som kan slå opp emnekode direkte."
     },
     "8208": {
       "kort": "VID",
@@ -193,21 +238,26 @@
       "kodeform": null,
       "strip": null,
       "type": null,
-      "testet": 0,
+      "testet": 5,
       "treff": 0,
       "eksempler": [],
-      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+      "merknad": "Emnesider har titteldrevne URL-er (/studier/emner/{tittel-slug}-{kode-i-smaa-bokstaver}). Søkefunksjonen på vid.no er klientsiderendret (ingen treff i server-HTML), og ingen API-endepunkt ble funnet."
     },
     "8223": {
       "kort": "NLA",
-      "monster": null,
-      "kodeform": null,
-      "strip": null,
-      "type": null,
-      "testet": 0,
-      "treff": 0,
-      "eksempler": [],
-      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+      "monster": "https://www.nla.no/emneplan/{kode}/",
+      "kodeform": "upper",
+      "strip": [
+        "-\\d+$"
+      ],
+      "type": "direkte",
+      "testet": 5,
+      "treff": 5,
+      "eksempler": [
+        "https://www.nla.no/emneplan/REL170/",
+        "https://www.nla.no/emneplan/HSM122/"
+      ],
+      "merknad": ""
     },
     "8241": {
       "kort": "BI",
@@ -215,10 +265,10 @@
       "kodeform": null,
       "strip": null,
       "type": null,
-      "testet": 0,
+      "testet": 5,
       "treff": 0,
       "eksempler": [],
-      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+      "merknad": "Offisiell kursportal (portal.bi.no/kurs) krever innlogging (redirigerer til bilogin.b2clogin.com). Eldre offentlige kursbeskrivelser (web.bi.no/info/kurs*.nsf) er nedlagt. Fant ingen fungerende offentlig søk eller direkte URL-mønster på bi.no."
     },
     "8253": {
       "kort": "Kristiania",
@@ -226,21 +276,26 @@
       "kodeform": null,
       "strip": null,
       "type": null,
-      "testet": 0,
+      "testet": 5,
       "treff": 0,
       "eksempler": [],
-      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+      "merknad": "Emnesider har titteldrevne URL-er under /emner/ eller /en/syllabus/{skole}/{niva}/{kode-liten}/{tittel-slug}/. Nettstedet er en tungt obfuskert JS-app (Next.js-lignende med hashede klassenavn); søkesiden (/sok/) returnerer ingen treff i server-rendret HTML."
     },
     "0232": {
       "kort": "HiMolde",
-      "monster": null,
-      "kodeform": null,
-      "strip": null,
-      "type": null,
-      "testet": 0,
-      "treff": 0,
-      "eksempler": [],
-      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+      "monster": "https://www.himolde.no/?vrtx=search&query={kode}",
+      "kodeform": "upper",
+      "strip": [
+        "-\\d+$"
+      ],
+      "type": "sok",
+      "testet": 5,
+      "treff": 5,
+      "eksempler": [
+        "https://www.himolde.no/?vrtx=search&query=IBE430",
+        "https://www.himolde.no/?vrtx=search&query=MAT100"
+      ],
+      "merknad": "Samme Vortex-søk som UiO/HiØ/NIH/AHO. Husk URL-koding av spesialtegn (f.eks. Ø -> %C3%98)."
     },
     "0236": {
       "kort": "HVO",
@@ -260,25 +315,51 @@
     },
     "0238": {
       "kort": "HVL",
-      "monster": null,
-      "kodeform": null,
-      "strip": null,
-      "type": null,
-      "testet": 0,
-      "treff": 0,
-      "eksempler": [],
-      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+      "monster": "https://www.hvl.no/studier/studieprogram/emne/{kode}",
+      "kodeform": "upper",
+      "strip": [
+        "-\\d+$"
+      ],
+      "type": "direkte",
+      "testet": 5,
+      "treff": 5,
+      "eksempler": [
+        "https://www.hvl.no/studier/studieprogram/emne/MAT110",
+        "https://www.hvl.no/studier/studieprogram/emne/ING303"
+      ],
+      "merknad": ""
     },
     "0256": {
       "kort": "HiØ",
-      "monster": null,
-      "kodeform": null,
-      "strip": null,
-      "type": null,
-      "testet": 0,
-      "treff": 0,
-      "eksempler": [],
-      "merknad": "Ingen direkte URL-mønster funnet. Institusjonens emner har ikke en statisk lenkestruktur, eller de krever søk/innlogging."
+      "monster": "https://www.hiof.no/?vrtx=search&query={kode}",
+      "kodeform": "upper",
+      "strip": [
+        "-\\d+$"
+      ],
+      "type": "sok",
+      "testet": 5,
+      "treff": 5,
+      "eksempler": [
+        "https://www.hiof.no/?vrtx=search&query=ITF10511",
+        "https://www.hiof.no/?vrtx=search&query=HOVSPL10220"
+      ],
+      "merknad": "Emnesider har fakultet/avdeling + år/semester i URL-en (ikke forutsigbart fra kode alene). Samme Vortex-søk som UiO/NIH/HiMolde/AHO traff riktig emneside for alle 5 testede koder."
+    },
+    "1174": {
+      "kort": "Nord",
+      "monster": "https://www.nord.no/studier/emner/{kode}",
+      "kodeform": "upper",
+      "strip": [
+        "-\\d+$"
+      ],
+      "type": "direkte",
+      "testet": 5,
+      "treff": 5,
+      "eksempler": [
+        "https://www.nord.no/studier/emner/SYK2000",
+        "https://www.nord.no/studier/emner/HEL1000"
+      ],
+      "merknad": ""
     }
   }
 }
