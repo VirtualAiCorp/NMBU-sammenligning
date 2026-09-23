@@ -32,6 +32,8 @@ interface Props {
   onBackToFaculties: () => void;
   /** Bare for Handelshøyskolen: åpner den opprinnelige, manuelt kuraterte HH-analysen (fra Figma). */
   onOpenOriginalHH?: () => void;
+  /** Bare for Handelshøyskolen: intern opptaksanalyse høsten 2026 (passordbeskyttet og kryptert). */
+  onOpenIntern?: () => void;
 }
 
 const LEVEL_LABEL: Record<string, string> = {
@@ -40,7 +42,7 @@ const LEVEL_LABEL: Record<string, string> = {
   master2:  'Toårig master',
 };
 
-export function LandsamLanding({ faculty, onOpenAnalysis, onOpenCourses, onOpenMarketStatus, onOpenStudiebarometer, onOpenCompletion, onOpenStudents, onOpenStaff, onOpenHousing, onOpenEconomy, onOpenRevenue, onBackToFaculties, onOpenOriginalHH }: Props) {
+export function LandsamLanding({ faculty, onOpenAnalysis, onOpenCourses, onOpenMarketStatus, onOpenStudiebarometer, onOpenCompletion, onOpenStudents, onOpenStaff, onOpenHousing, onOpenEconomy, onOpenRevenue, onBackToFaculties, onOpenOriginalHH, onOpenIntern }: Props) {
   const admissionGroups = faculty.admissionGroups;
   const courseGroups = faculty.courseGroups;
   const markedsstatus = faculty.marketStatus;
@@ -95,6 +97,14 @@ export function LandsamLanding({ faculty, onOpenAnalysis, onOpenCourses, onOpenM
               <div style={{ fontFamily: "'Lora', serif", fontSize: 17, marginTop: 2, color: 'var(--nmbu-green-dark)' }}>Opprinnelig HH-analyse →</div>
               <div style={{ fontSize: 12, color: 'var(--nmbu-neutral-2)', marginTop: 4, lineHeight: 1.5 }}>Den manuelt kuraterte analysen fra Figma: emnekartlegging (UHR-emner), karakterindeks, masteroppgaver og opptak 2026.</div>
             </button>
+            {onOpenIntern && (
+              <button onClick={onOpenIntern} className="rounded-xl p-4 text-left transition-all"
+                style={{ backgroundColor: '#FFF7E6', border: '1px solid #F0C040' }}>
+                <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.07em', textTransform: 'uppercase', color: '#6B4E00' }}>Intern · passord</div>
+                <div style={{ fontFamily: "'Lora', serif", fontSize: 17, marginTop: 2, color: 'var(--nmbu-green-dark)' }}>Opptak høsten 2026 →</div>
+                <div style={{ fontSize: 12, color: 'var(--nmbu-neutral-2)', marginTop: 4, lineHeight: 1.5 }}>Søkermassen rundt grensen og hva større eller mindre opptaksrammer gjør med grenser og snitt.</div>
+              </button>
+            )}
           </div>
         )}
 

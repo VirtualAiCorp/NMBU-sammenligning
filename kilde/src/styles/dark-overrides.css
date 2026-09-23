@@ -6,6 +6,7 @@
 :root[data-theme="dark"] [style*="background-color: rgb(249, 250, 251)"], :root[data-theme="dark"] [style*="background: rgb(249, 250, 251)"] { background-color: #1a211e !important; }
 :root[data-theme="dark"] [style*="background-color: rgb(236, 253, 245)"], :root[data-theme="dark"] [style*="background: rgb(236, 253, 245)"] { background-color: #1a211e !important; }
 :root[data-theme="dark"] [style*="background-color: rgb(240, 249, 255)"], :root[data-theme="dark"] [style*="background: rgb(240, 249, 255)"] { background-color: #1a211e !important; }
+:root[data-theme="dark"] [style*="background-color: rgb(255, 247, 230)"], :root[data-theme="dark"] [style*="background: rgb(255, 247, 230)"] { background-color: #3c311b !important; }
 :root[data-theme="dark"] [style*="background-color: rgb(239, 246, 255)"], :root[data-theme="dark"] [style*="background: rgb(239, 246, 255)"] { background-color: #141916 !important; }
 :root[data-theme="dark"] [style*="background-color: rgb(254, 244, 224)"], :root[data-theme="dark"] [style*="background: rgb(254, 244, 224)"] { background-color: #3c311b !important; }
 :root[data-theme="dark"] [style*="background-color: rgb(253, 244, 224)"], :root[data-theme="dark"] [style*="background: rgb(253, 244, 224)"] { background-color: #3c321b !important; }
@@ -37,6 +38,7 @@
 :root[data-theme="dark"] [style^="color: rgb(124, 45, 45)"], :root[data-theme="dark"] [style*=" color: rgb(124, 45, 45)"] { color: #b08181 !important; }
 :root[data-theme="dark"] [style^="color: rgb(92, 74, 30)"], :root[data-theme="dark"] [style*=" color: rgb(92, 74, 30)"] { color: #95896d !important; }
 :root[data-theme="dark"] [style^="color: rgb(2, 92, 79)"], :root[data-theme="dark"] [style*=" color: rgb(2, 92, 79)"] { color: #5b958d !important; }
+:root[data-theme="dark"] [style^="color: rgb(107, 78, 0)"], :root[data-theme="dark"] [style*=" color: rgb(107, 78, 0)"] { color: #9f8c59 !important; }
 :root[data-theme="dark"] [style^="color: rgb(75, 85, 99)"], :root[data-theme="dark"] [style*=" color: rgb(75, 85, 99)"] { color: #818892 !important; }
 :root[data-theme="dark"] [style^="color: rgb(124, 74, 10)"], :root[data-theme="dark"] [style*=" color: rgb(124, 74, 10)"] { color: #a38054 !important; }
 :root[data-theme="dark"] [style^="color: rgb(109, 40, 217)"], :root[data-theme="dark"] [style*=" color: rgb(109, 40, 217)"] { color: #a073e6 !important; }

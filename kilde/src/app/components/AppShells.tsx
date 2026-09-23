@@ -1,7 +1,7 @@
 import { useState, type ReactNode } from 'react';
 import {
   LayoutDashboard, BookOpen, Microscope, Home, Landmark, TrendingUp, GraduationCap, Users, Star, Globe2,
-  LayoutGrid, Menu, X, Coins, Archive,
+  LayoutGrid, Menu, X, Coins, Archive, Lock,
 } from 'lucide-react';
 import { FACULTIES, ALL_FACULTY_IDS as FACULTY_IDS, type FacultyId } from '../data/faculties';
 import type { Faculty } from './FacultyLanding';
@@ -12,10 +12,10 @@ import { Matrise, lagRader } from './LayoutLab';
  * som i «oversikt»; App.tsx leverer dem som children. Navigasjonen går via onNavigate(fakultet, visning).
  */
 
-export type ShellView = 'landing' | 'analyse' | 'emner' | 'markedsstatus' | 'studiebarometer' | 'gjennomforing' | 'studentene' | 'fagmiljo' | 'bolig' | 'okonomi' | 'inntekt';
+export type ShellView = 'landing' | 'analyse' | 'emner' | 'markedsstatus' | 'studiebarometer' | 'gjennomforing' | 'studentene' | 'fagmiljo' | 'bolig' | 'okonomi' | 'inntekt' | 'intern';
 type Nav = (f: Faculty | null, view?: ShellView, gruppe?: string) => void;
 
-export const FAKULTETSMODULER: { view: ShellView; label: string; icon: typeof BookOpen }[] = [
+export const FAKULTETSMODULER: { view: ShellView; label: string; icon: typeof BookOpen; kunFor?: FacultyId }[] = [
   { view: 'landing', label: 'Oversikt', icon: LayoutGrid },
   { view: 'analyse', label: 'Opptak', icon: TrendingUp },
   { view: 'emner', label: 'Emner og karakterer', icon: BookOpen },
@@ -24,6 +24,7 @@ export const FAKULTETSMODULER: { view: ShellView; label: string; icon: typeof Bo
   { view: 'studiebarometer', label: 'Studiebarometeret', icon: Star },
   { view: 'markedsstatus', label: 'Markedsstatus', icon: Globe2 },
   { view: 'inntekt', label: 'Inntekt', icon: Coins },
+  { view: 'intern', label: 'Opptak H26 (intern)', icon: Lock, kunFor: 'hh' },
   { view: 'fagmiljo', label: 'Fagmiljøet', icon: Microscope },
   { view: 'bolig', label: 'Bolig', icon: Home },
   { view: 'okonomi', label: 'Økonomi', icon: Landmark },
@@ -90,7 +91,7 @@ export function DashboardShell({ faculty, view, onNavigate, children }: { facult
               title={FACULTIES[id].label}>
               <span>{FACULTIES[id].shortLabel}</span><span style={{ opacity: 0.5, fontSize: 10 }}>{aapen ? '▾' : '▸'}</span>
             </button>
-            {aapen && FAKULTETSMODULER.filter((m) => m.view !== 'landing').map((m) => (
+            {aapen && FAKULTETSMODULER.filter((m) => m.view !== 'landing' && (!m.kunFor || m.kunFor === id)).map((m) => (
               <button key={m.view} onClick={() => gaa(id, m.view)} className="w-full flex items-center gap-2 pl-5 pr-2 py-1 rounded-md text-left text-xs" style={itemStyle(view === m.view)}>
                 <m.icon className="w-3.5 h-3.5 shrink-0" /> {m.label}
               </button>
@@ -185,7 +186,7 @@ export function TopbarShell({ faculty, view, onNavigate, children }: { faculty: 
         {(erNmbu(faculty) || erFakultet(faculty) || faculty === 'hh-figma') && (
           <nav className="flex gap-1 px-4 sm:px-6 overflow-x-auto" aria-label="Moduler" style={{ borderTop: '1px solid var(--nmbu-neutral-3)' }}>
             {erFakultet(faculty) || faculty === 'hh-figma'
-              ? [...FAKULTETSMODULER.map((m) => (
+              ? [...FAKULTETSMODULER.filter((m) => !m.kunFor || m.kunFor === (faculty === 'hh-figma' ? 'hh' : faculty)).map((m) => (
                   <button key={m.view} onClick={() => onNavigate(faculty === 'hh-figma' ? 'hh' : faculty, m.view)} className="flex items-center gap-1.5 px-3 py-2.5 text-xs shrink-0" style={fane(faculty !== 'hh-figma' && view === m.view)}>
                     <m.icon className="w-3.5 h-3.5" /> {m.label}
                   </button>

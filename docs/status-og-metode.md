@@ -367,3 +367,25 @@ fakultetene). Øverst på HH-siden velger man mellom dem; i dashboard/toppmeny l
   `build-studiebarometer.py hh`, samt build-staff/economy/revenue/bolig med `hh` = avdeling 470).
 - Mangler foreløpig: emnekobling, studieplaner og markedsstatus på standardformatet (originalen har egne versjoner), og
   M-BIOEC, M-GEP og M-EEG. BI er ikke med i bachelorgruppene (ikke i Samordna), men er med i masterne via DBH 379.
+
+## 22. Intern opptaksanalyse for HHs bachelorprogram (høsten 2026)
+
+Modulen «Opptak H26 (intern)» under HH (standardformat), med kort øverst på HH-siden. For B-ØA, B-ECON og B-ØLIT:
+nøkkeltall, simulator for større/mindre opptaksramme (antall tilbud eller ønsket kull, og kvotefordeling SP/KP; regelen er 50/50),
+kurve for grenser og snitt over alle opptaksrammer, søkermassen rundt grensen etter prioritet, tabell over tilgjengelige søkere per
+halve poeng under grensen, og trakt fra søker til møtt.
+- **Kilde:** Excel-arbeidsbok fra opptakskontoret (FS-uttrekk, «Arbeid opptak H26-BØA.xlsx»). Filen legges ALDRI i repoet.
+  `scripts/build-opptak-intern.py <xlsx>` leser bare studieprogramkode, prioritet, kvalifisert, kvote, poeng og tilbudsstatus
+  (ikke navn, fødselsnummer, e-post, telefon, ID-er) og aggregerer til antall per poeng (én desimal), kvote og prioritetsgruppe.
+- **Kryptering:** resultatet krypteres (AES-256-GCM, PBKDF2-SHA256 310 000 iterasjoner) til `kilde/public/intern/opptak-h26.json`.
+  Passordet står i `kilde/.env.local` som `INTERN_PASSORD` (gitignored, ikke `VITE_`-variabel, så det er ikke i bunten).
+  Siden dekrypterer i nettleseren; uten passord er filen uleselig. Passordet huskes i fanen (sessionStorage).
+- **Koder:** SP = førstegangsvitnemål (skolepoeng), KP = ordinær kvote (konkurransepoeng); søkere med førstegangsvitnemål har
+  både SP- og KP-rad. Tilbudsstatus i søkermassen (bare B-ØA): S = tilbud her, B = tilbud på høyere prioritert studium,
+  T = tilbud på lavere prioritet, U = ikke tilbud, tom = venteliste.
+- **Modell:** hver kvote fylles ovenfra med tilgjengelige søkere. Tilgjengelighet per kvote × prioritetsgruppe er kalibrert slik at
+  faktisk antall tilbud gir faktisk grense (laveste poeng med tilbud, alle runder), og justert under grensen med forholdet målt i
+  B-ØA (søkere under grensen har sjeldnere tilbud på høyere prioritet). Ja-svar- og oppmøteandeler er faktiske per kvote × prioritet.
+  Kvotene behandles hver for seg (samspillet der FV-søkere som ikke når opp, konkurrerer i ordinær kvote, er ikke modellert).
+- **Test uten passord:** `?internDemo` på utviklingsserveren viser fiktive tall (fjernes i produksjonsbygget).
+- **Oppdatering:** kjør skriptet med ny arbeidsbok (samme arknavn), bygg og push.
