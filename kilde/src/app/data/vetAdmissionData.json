@@ -1,0 +1,613 @@
+{
+  "generert": "2026-09-23",
+  "programkartHentet": "2026-09-23",
+  "years": [
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+  ],
+  "groups": [
+    {
+      "id": "veterinaer",
+      "label": "Veterinærmedisin",
+      "level": "master5",
+      "desc": "NMBUs seksårige profesjonsstudium i veterinærmedisin har ingen annen norsk veterinærutdanning å sammenligne seg med. Medisinstudiene ved UiO, UiB, NTNU og UiT er tatt med som referanse for søkertrykk og poenggrense på tilsvarende lange, konkurranseutsatte helsefagprofesjonsstudier.",
+      "note": "NMBU er eneste tilbyder av veterinærmedisin i Norge, så programmet har ingen reell konkurrent i utdanningstilbudet. De fire medisinstudiene er lagt inn med default false og skal vises som referansepunkt for søkertrykk/poenggrense, ikke som konkurrenter – de er et annet fag med egne opptakskrav. Der en institusjon har flere studiesteder for medisin (f.eks. UiB Bergen/Stavanger, UiO Oslo/Innlandet, NTNU Trondheim/Levanger), er bare hovedstudiestedets studiekode tatt med.",
+      "nmbuIds": [
+        "nmbu_veterinaermedisin"
+      ],
+      "defaultIds": [
+        "nmbu_veterinaermedisin"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_veterinaermedisin",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "192772",
+          "studiested": "Ås",
+          "type": "master",
+          "url": "https://www.nmbu.no/studier/veterinaermedisin-profesjonsstudium",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 57.2,
+              "pg_ord": 64.0
+            },
+            "2021": {
+              "alleS": 1265,
+              "fvS": 600,
+              "plasser": 90,
+              "kvinner": 90.3,
+              "kvalifiserte": 1035,
+              "tilbud": 126,
+              "pg_fv": 57.3,
+              "pg_ord": 64.8
+            },
+            "2022": {
+              "alleS": 1105,
+              "fvS": 514,
+              "plasser": 90,
+              "kvinner": 91.4,
+              "kvalifiserte": 907,
+              "tilbud": 144,
+              "pg_fv": 57.7,
+              "pg_ord": 64.4
+            },
+            "2023": {
+              "alleS": 1005,
+              "fvS": 496,
+              "plasser": 90,
+              "kvinner": 90.1,
+              "kvalifiserte": 784,
+              "tilbud": 172,
+              "pg_fv": 56.3,
+              "pg_ord": 63.6
+            },
+            "2024": {
+              "alleS": 973,
+              "fvS": 457,
+              "plasser": 80,
+              "kvinner": 87.1,
+              "kvalifiserte": 793,
+              "tilbud": 136,
+              "pg_fv": 55.7,
+              "pg_ord": 63.6
+            },
+            "2025": {
+              "alleS": 897,
+              "fvS": 441,
+              "plasser": 90,
+              "kvinner": 90.2,
+              "kvalifiserte": 729,
+              "tilbud": 176,
+              "pg_fv": 53.5,
+              "pg_ord": 62.1
+            },
+            "2026": {
+              "alleS": 1040,
+              "fvS": 460,
+              "plasser": 90,
+              "kvinner": 87.6,
+              "kvalifiserte": 833,
+              "tilbud": 165,
+              "pg_fv": 54.0,
+              "pg_ord": 63.0
+            }
+          }
+        },
+        {
+          "id": "uio_medisin",
+          "shortName": "UiO Medisin",
+          "institusjon": "Universitetet i Oslo",
+          "studiekode": "185740",
+          "studiested": "Oslo",
+          "type": "master",
+          "url": "https://www.uio.no/studier/program/medisin/",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 61.6,
+              "pg_ord": 69.0
+            },
+            "2021": {
+              "alleS": 3023,
+              "fvS": 1121,
+              "plasser": 120,
+              "kvinner": 71.5,
+              "kvalifiserte": 2518,
+              "tilbud": 135,
+              "pg_fv": 62.0,
+              "pg_ord": 69.5
+            },
+            "2022": {
+              "alleS": 2697,
+              "fvS": 988,
+              "plasser": 120,
+              "kvinner": 69.6,
+              "kvalifiserte": 2282,
+              "tilbud": 135,
+              "pg_fv": 62.4,
+              "pg_ord": 69.6
+            },
+            "2023": {
+              "alleS": 2512,
+              "fvS": 930,
+              "plasser": 120,
+              "kvinner": 67.5,
+              "kvalifiserte": 2069,
+              "tilbud": 135,
+              "pg_fv": 61.2,
+              "pg_ord": 70.2
+            },
+            "2024": {
+              "alleS": 2111,
+              "fvS": 766,
+              "plasser": 115,
+              "kvinner": 66.7,
+              "kvalifiserte": 1735,
+              "tilbud": 145,
+              "pg_fv": 60.7,
+              "pg_ord": 69.7
+            },
+            "2025": {
+              "alleS": 1800,
+              "fvS": 710,
+              "plasser": 110,
+              "kvinner": 71.5,
+              "kvalifiserte": 1447,
+              "tilbud": 150,
+              "pg_fv": 60.5,
+              "pg_ord": 69.6
+            },
+            "2026": {
+              "alleS": 1733,
+              "fvS": 672,
+              "plasser": 117,
+              "kvinner": 71.6,
+              "kvalifiserte": 1415,
+              "tilbud": 170,
+              "pg_fv": 60.0,
+              "pg_ord": 69.0
+            }
+          }
+        },
+        {
+          "id": "uib_medisin",
+          "shortName": "UiB Medisin",
+          "institusjon": "Universitetet i Bergen",
+          "studiekode": "184740",
+          "studiested": "Bergen",
+          "type": "master",
+          "url": "https://www.uib.no/med",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 60.1,
+              "pg_ord": 67.7
+            },
+            "2021": {
+              "alleS": 3325,
+              "fvS": 838,
+              "plasser": 185,
+              "kvinner": 74.1,
+              "kvalifiserte": 2848,
+              "tilbud": 275,
+              "pg_fv": 60.5,
+              "pg_ord": 68.1
+            },
+            "2022": {
+              "alleS": 3035,
+              "fvS": 749,
+              "plasser": 185,
+              "kvinner": 76.0,
+              "kvalifiserte": 2662,
+              "tilbud": 280,
+              "pg_fv": 60.8,
+              "pg_ord": 68.3
+            },
+            "2023": {
+              "alleS": 2905,
+              "fvS": 705,
+              "plasser": 185,
+              "kvinner": 73.5,
+              "kvalifiserte": 2510,
+              "tilbud": 260,
+              "pg_fv": 60.1,
+              "pg_ord": 68.6
+            },
+            "2024": {
+              "alleS": 2584,
+              "fvS": 629,
+              "plasser": 165,
+              "kvinner": 75.2,
+              "kvalifiserte": 2240,
+              "tilbud": 260,
+              "pg_fv": 59.4,
+              "pg_ord": 67.8
+            },
+            "2025": {
+              "alleS": 2059,
+              "fvS": 493,
+              "plasser": 165,
+              "kvinner": 77.3,
+              "kvalifiserte": 1761,
+              "tilbud": 260,
+              "pg_fv": 58.5,
+              "pg_ord": 67.2
+            },
+            "2026": {
+              "alleS": 2200,
+              "fvS": 567,
+              "plasser": 165,
+              "kvinner": 72.7,
+              "kvalifiserte": 1926,
+              "tilbud": 260,
+              "pg_fv": 59.0,
+              "pg_ord": 67.2
+            }
+          }
+        },
+        {
+          "id": "ntnu_medisin",
+          "shortName": "NTNU Medisin",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "194740",
+          "studiested": "Trondheim",
+          "type": "master",
+          "url": "https://www.ntnu.no/studier/cmed",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 62.0,
+              "pg_ord": 67.9
+            },
+            "2021": {
+              "alleS": 3161,
+              "fvS": 1027,
+              "plasser": 155,
+              "kvinner": 71.1,
+              "kvalifiserte": 2692,
+              "tilbud": 190,
+              "pg_fv": 62.0,
+              "pg_ord": 68.6
+            },
+            "2022": {
+              "alleS": 2782,
+              "fvS": 802,
+              "plasser": 119,
+              "kvinner": 73.3,
+              "kvalifiserte": 2442,
+              "tilbud": 150,
+              "pg_fv": 62.5,
+              "pg_ord": 69.2
+            },
+            "2023": {
+              "alleS": 2515,
+              "fvS": 777,
+              "plasser": 119,
+              "kvinner": 71.4,
+              "kvalifiserte": 2144,
+              "tilbud": 160,
+              "pg_fv": 62.2,
+              "pg_ord": 69.6
+            },
+            "2024": {
+              "alleS": 1897,
+              "fvS": 574,
+              "plasser": 119,
+              "kvinner": 75.8,
+              "kvalifiserte": 1660,
+              "tilbud": 160,
+              "pg_fv": 61.7,
+              "pg_ord": 69.4
+            },
+            "2025": {
+              "alleS": 1663,
+              "fvS": 571,
+              "plasser": 119,
+              "kvinner": 73.6,
+              "kvalifiserte": 1416,
+              "tilbud": 194,
+              "pg_fv": 61.0,
+              "pg_ord": 68.5
+            },
+            "2026": {
+              "alleS": 1899,
+              "fvS": 671,
+              "plasser": 119,
+              "kvinner": 75.9,
+              "kvalifiserte": 1640,
+              "tilbud": 210,
+              "pg_fv": 60.8,
+              "pg_ord": 68.2
+            }
+          }
+        },
+        {
+          "id": "uit_medisin",
+          "shortName": "UiT Medisin",
+          "institusjon": "UiT Norges arktiske universitet",
+          "studiekode": "186740",
+          "studiested": "Tromsø",
+          "type": "master",
+          "url": "https://uit.no/helsefak",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 60.0,
+              "pg_ord": 67.6
+            },
+            "2021": {
+              "alleS": 2965,
+              "fvS": 521,
+              "plasser": 136,
+              "kvinner": 68.3,
+              "kvalifiserte": 2586,
+              "tilbud": 180,
+              "pg_fv": 60.3,
+              "pg_ord": 68.0
+            },
+            "2022": {
+              "alleS": 2684,
+              "fvS": 453,
+              "plasser": 151,
+              "kvinner": 70.2,
+              "kvalifiserte": 2389,
+              "tilbud": 220,
+              "pg_fv": 60.4,
+              "pg_ord": 68.2
+            },
+            "2023": {
+              "alleS": 2590,
+              "fvS": 507,
+              "plasser": 181,
+              "kvinner": 67.3,
+              "kvalifiserte": 2245,
+              "tilbud": 240,
+              "pg_fv": 59.8,
+              "pg_ord": 68.2
+            },
+            "2024": {
+              "alleS": 2047,
+              "fvS": 415,
+              "plasser": 181,
+              "kvinner": 64.8,
+              "kvalifiserte": 1741,
+              "tilbud": 260,
+              "pg_fv": 57.8,
+              "pg_ord": 66.8
+            },
+            "2025": {
+              "alleS": 2167,
+              "fvS": 508,
+              "plasser": 181,
+              "kvinner": 67.1,
+              "kvalifiserte": 1868,
+              "tilbud": 260,
+              "pg_fv": 57.1,
+              "pg_ord": 66.0
+            },
+            "2026": {
+              "alleS": 2158,
+              "fvS": 419,
+              "plasser": 151,
+              "kvinner": 62.5,
+              "kvalifiserte": 1857,
+              "tilbud": 250,
+              "pg_fv": 56.5,
+              "pg_ord": 65.8
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "dyrepleie",
+      "label": "Dyrepleie",
+      "level": "bachelor",
+      "desc": "Sammenligner NMBUs bachelor i dyrepleie med Nord universitets bachelor i dyrepleie – de eneste to dyrepleieutdanningene i Norge.",
+      "note": "Kontrollert mot SO-tabellen (utdanningstype «Helsefag - veterinær»): bare NMBU og Nord universitet tilbyr dyrepleie i Norge. Nord sitt program ligger i Bodø under Fakultet for biovitenskap og akvakultur (FBA), DBH-programkode BADYR.",
+      "nmbuIds": [
+        "nmbu_dyrepleie"
+      ],
+      "defaultIds": [
+        "nmbu_dyrepleie",
+        "nord_dyrepleie"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_dyrepleie",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "192504",
+          "studiested": "Ås",
+          "type": "bachelor",
+          "url": "https://www.nmbu.no/studier/bachelor/dyrepleie",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 46.4,
+              "pg_ord": 51.3
+            },
+            "2021": {
+              "alleS": 682,
+              "fvS": 117,
+              "plasser": 30,
+              "kvinner": 88.9,
+              "kvalifiserte": 390,
+              "tilbud": 46,
+              "pg_fv": 48.9,
+              "pg_ord": 56.1
+            },
+            "2022": {
+              "alleS": 550,
+              "fvS": 99,
+              "plasser": 30,
+              "kvinner": 96.0,
+              "kvalifiserte": 313,
+              "tilbud": 48,
+              "pg_fv": 48.5,
+              "pg_ord": 54.3
+            },
+            "2023": {
+              "alleS": 509,
+              "fvS": 78,
+              "plasser": 30,
+              "kvinner": 93.6,
+              "kvalifiserte": 286,
+              "tilbud": 58,
+              "pg_fv": 45.1,
+              "pg_ord": 54.1
+            },
+            "2024": {
+              "alleS": 522,
+              "fvS": 77,
+              "plasser": 30,
+              "kvinner": 94.8,
+              "kvalifiserte": 263,
+              "tilbud": 64,
+              "pg_fv": 40.5,
+              "pg_ord": 50.4
+            },
+            "2025": {
+              "alleS": 456,
+              "fvS": 80,
+              "plasser": 34,
+              "kvinner": 93.8,
+              "kvalifiserte": 236,
+              "tilbud": 79,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 453,
+              "fvS": 75,
+              "plasser": 30,
+              "kvinner": 97.3,
+              "kvalifiserte": 215,
+              "tilbud": 68,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        },
+        {
+          "id": "nord_dyrepleie",
+          "shortName": "Nord",
+          "institusjon": "Nord universitet",
+          "studiekode": "204504",
+          "studiested": "Bodø",
+          "type": "bachelor",
+          "url": "https://www.nord.no/studier/dyrepleie-bachelor",
+          "years": {
+            "2020": {
+              "alleS": null,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": null,
+              "tilbud": null,
+              "pg_fv": 45.9,
+              "pg_ord": 51.8
+            },
+            "2021": {
+              "alleS": 977,
+              "fvS": 228,
+              "plasser": 47,
+              "kvinner": 94.7,
+              "kvalifiserte": 930,
+              "tilbud": 114,
+              "pg_fv": 45.3,
+              "pg_ord": 50.8
+            },
+            "2022": {
+              "alleS": 769,
+              "fvS": 181,
+              "plasser": 47,
+              "kvinner": 96.1,
+              "kvalifiserte": 727,
+              "tilbud": 150,
+              "pg_fv": 42.7,
+              "pg_ord": 46.3
+            },
+            "2023": {
+              "alleS": 786,
+              "fvS": 173,
+              "plasser": 47,
+              "kvinner": 95.4,
+              "kvalifiserte": 724,
+              "tilbud": 170,
+              "pg_fv": 40.0,
+              "pg_ord": 45.7
+            },
+            "2024": {
+              "alleS": 693,
+              "fvS": 138,
+              "plasser": 47,
+              "kvinner": 95.7,
+              "kvalifiserte": 641,
+              "tilbud": 170,
+              "pg_fv": 36.2,
+              "pg_ord": 43.1
+            },
+            "2025": {
+              "alleS": 580,
+              "fvS": 119,
+              "plasser": 50,
+              "kvinner": 94.1,
+              "kvalifiserte": 537,
+              "tilbud": 187,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            },
+            "2026": {
+              "alleS": 572,
+              "fvS": 125,
+              "plasser": 50,
+              "kvinner": 95.2,
+              "kvalifiserte": 517,
+              "tilbud": 187,
+              "pg_fv": 0.0,
+              "pg_ord": 0.0
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

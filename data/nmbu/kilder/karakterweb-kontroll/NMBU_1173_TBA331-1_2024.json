@@ -1,0 +1,51 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/nmbu/TBA331?include=grades&semester=both&year_item=2024",
+  "slug": "nmbu",
+  "code": "TBA331",
+  "year": 2024,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "nmbu",
+      "courseCode": "tba331",
+      "name": "Bygningsfysisk simulering",
+      "candidates": 89,
+      "mainSemester": "autumn"
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:51:14.101Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2024
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2024,
+          "semester": "autumn",
+          "scale": "G-H",
+          "candidates": 49,
+          "distribution": {
+            "Bestått": 49,
+            "Ikke bestått": 0
+          },
+          "averageGrade": null,
+          "averageGradeNumeric": null,
+          "failRate": 0
+        }
+      ]
+    }
+  }
+}

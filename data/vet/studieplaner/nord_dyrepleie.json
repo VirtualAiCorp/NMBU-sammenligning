@@ -1,0 +1,162 @@
+{
+  "entryId": "nord_dyrepleie",
+  "programnavn": "Dyrepleie (bachelor)",
+  "institusjon": "Nord universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nord.no/studier/dyrepleie-bachelor",
+    "https://www.nord.no/studier/studieplaner/dyrepleie-badyr-bachelor-host-2026",
+    "https://www.nord.no/studier/studieplaner/dyrepleie-badyr-bachelor-host-2024"
+  ],
+  "hentet": "2026-09-23",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 180,
+  "obligatoriske": [
+    {
+      "emnekode": "KJE1001",
+      "emnenavn": "Laboratoriesikkerhet",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": ["KJE1001-1"],
+      "merknad": "Gir ikke egne studiepoeng."
+    },
+    {
+      "emnekode": "KJE1000",
+      "emnenavn": "Grunnleggende kjemi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": ["KJE1000-1"],
+      "merknad": null
+    },
+    {
+      "emnekode": "DYR1006",
+      "emnenavn": "Atferd og dyrehold",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": ["DYR1006-1"],
+      "merknad": null
+    },
+    {
+      "emnekode": "DYR1004",
+      "emnenavn": "Anatomi, fysiologi og generell patologi",
+      "studiepoeng": 15,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": ["DYR1004-1"],
+      "merknad": "Deles i to like deler (0 sp i 1. semester, 15 sp i 2. semester/vår) ifølge nord.no sitt rutenett; ført samlet her med full sp-verdi for å unngå dobbelttelling."
+    },
+    {
+      "emnekode": "DYR1005",
+      "emnenavn": "Introduksjon til dyrepleie og dyrehelse",
+      "studiepoeng": 15,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": ["DYR1005-1"],
+      "merknad": "Deles i to like deler (0 sp i 1. semester, 15 sp i 2. semester/vår); ført samlet her."
+    },
+    {
+      "emnekode": "BIO1009",
+      "emnenavn": "Cellebiologi",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": ["BIO1009-1"],
+      "merknad": null
+    },
+    {
+      "emnekode": "BIO1008",
+      "emnenavn": "Bærekraft, klima og etikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": ["BIO1008-1"],
+      "merknad": null
+    },
+    {
+      "emnekode": "DYR2005",
+      "emnenavn": "Sykdomslære og ernæring",
+      "studiepoeng": 15,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": ["DYR2005-1"],
+      "merknad": null
+    },
+    {
+      "emnekode": "DYR2004",
+      "emnenavn": "Prosedyrer og laboratoriearbeid i dyrepleie",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": ["DYR2004-1"],
+      "merknad": null
+    },
+    {
+      "emnekode": "MET1005",
+      "emnenavn": "Akademisk skriving og metode",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": ["MET1005-1"],
+      "merknad": null
+    },
+    {
+      "emnekode": "PRA2057",
+      "emnenavn": "Praktiske studier 2",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "4 uker praksis. Ingen karakterdata i DBH ennå: kull 2024 (første kull i gjeldende plan) når dette semesteret våren 2026, rett etter siste årgang i denne kjeden (2025)."
+    },
+    {
+      "emnekode": "DYR2006",
+      "emnenavn": "Klinisk dyrepleie og farmakologi",
+      "studiepoeng": 22.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Ingen karakterdata i DBH ennå, se merknad på PRA2057."
+    },
+    {
+      "emnekode": "PRA2058",
+      "emnenavn": "Praktiske studier 3",
+      "studiepoeng": 30,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "19 uker praksis. Ingen karakterdata i DBH ennå – kull 2024 begynner dette semesteret høsten 2026."
+    },
+    {
+      "emnekode": "DYR2008",
+      "emnenavn": "Regelverk, yrkesetikk og psykisk helse",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Ingen karakterdata i DBH ennå."
+    },
+    {
+      "emnekode": "DYR2007",
+      "emnenavn": "Forsøksdyr og komparativ dyrehelse",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Ingen karakterdata i DBH ennå."
+    },
+    {
+      "emnekode": "DYR2009",
+      "emnenavn": "Bacheloroppgave i dyrepleie",
+      "studiepoeng": 15,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Oppført under «Valgemner» på nord.no sammen med det alternative løpet MAT1014 (Matematikk og statistikk, 7,5 sp) + BIO1013 (Evolusjon og genetikk, 7,5 sp) – studenten velger enten bacheloroppgave eller de to emnene. Bacheloroppgaven er satt som hovedalternativet her siden den er vanlig for en bachelorgrad; se merknad på programnivå. Ingen karakterdata i DBH ennå."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er nord.no sine offentlige studieplansider, sammenlignet for kullene «Høst 2026» og «Høst 2024» (identisk emneinnhold og studiepoeng – kull 2024 er første kull i gjeldende plan og har rukket lengst). Programmet har byttet emnekodesystem flere ganger: kull 2023 og eldre brukte en annen kodeserie (bl.a. BI145F, KJ100F, FIL1001, MAT1011, PRA1000, DYR1001–DYR2003, BIO1002, BI247F, MET2000, BI242F, PRA2004, PRA2024, BI248F, BI243F, MA116F, DYR2000, PRA2000 – se nord.no/studier/studieplaner/dyrepleie-badyr-bachelor-host-2023), og enda eldre kull (2021/2022) har karakterdata i DBH på en tredje kodeserie (BI122F, BI144F, BI216F, MAR2034, RE105S) som ikke lenger vises på nord.no sine studieplansider (eldste tilgjengelige kull der er 2019). Alle disse eldre kodene finnes i karakterdataene for entryId nord_dyrepleie, men er ikke koblet i denne studieplanfilen siden de tilhører tidligere studieplanversjoner, ikke gjeldende plan. «Valgemner»-blokken i 6. semester er reelt et valg mellom bacheloroppgave og to teoriemner, ikke frie valgemner. Studiet har for øvrig ingen egne spesialiseringsretninger."
+}

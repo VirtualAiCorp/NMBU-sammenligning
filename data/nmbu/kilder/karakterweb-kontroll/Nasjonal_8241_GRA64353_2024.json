@@ -1,0 +1,55 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/bi/GRA64353?include=grades&semester=both&year_item=2024",
+  "slug": "bi",
+  "code": "GRA64353",
+  "year": 2024,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "bi",
+      "courseCode": "gra64353",
+      "name": "Customer Value Analytics",
+      "candidates": 158,
+      "mainSemester": "spring"
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:51:40.031Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2024
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2024,
+          "semester": "spring",
+          "scale": "A-F",
+          "candidates": 79,
+          "distribution": {
+            "A": 3,
+            "B": 9,
+            "C": 24,
+            "D": 24,
+            "E": 13,
+            "F": 6
+          },
+          "averageGrade": "C",
+          "averageGradeNumeric": 2.52,
+          "failRate": 0.0759
+        }
+      ]
+    }
+  }
+}

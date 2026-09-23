@@ -1,0 +1,12 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/oslomet/BYPE2200?include=grades&semester=both&year_item=2022",
+  "slug": "oslomet",
+  "code": "BYPE2200",
+  "year": 2022,
+  "status": 404,
+  "json": {
+    "error": {
+      "message": "Unknown course"
+    }
+  }
+}

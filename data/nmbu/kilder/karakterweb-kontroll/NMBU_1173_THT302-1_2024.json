@@ -1,0 +1,55 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/nmbu/THT302?include=grades&semester=both&year_item=2024",
+  "slug": "nmbu",
+  "code": "THT302",
+  "year": 2024,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "nmbu",
+      "courseCode": "tht302",
+      "name": "Analyse og design av drikkevannsnett",
+      "candidates": 65,
+      "mainSemester": "autumn"
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:51:14.872Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2024
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2024,
+          "semester": "autumn",
+          "scale": "A-F",
+          "candidates": 36,
+          "distribution": {
+            "A": 0,
+            "B": 16,
+            "C": 6,
+            "D": 8,
+            "E": 0,
+            "F": 6
+          },
+          "averageGrade": "C",
+          "averageGradeNumeric": 3.27,
+          "failRate": 0.1667
+        }
+      ]
+    }
+  }
+}

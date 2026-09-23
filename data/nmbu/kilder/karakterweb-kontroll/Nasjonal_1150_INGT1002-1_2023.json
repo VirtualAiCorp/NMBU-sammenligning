@@ -1,0 +1,51 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/ntnu/INGT1002?include=grades&semester=both&year_item=2023",
+  "slug": "ntnu",
+  "code": "INGT1002",
+  "year": 2023,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "ntnu",
+      "courseCode": "ingt1002",
+      "name": "Programmering, numerikk og sikkerhet",
+      "candidates": 1685,
+      "mainSemester": "autumn"
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:51:26.644Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2023
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2023,
+          "semester": "autumn",
+          "scale": "G-H",
+          "candidates": 626,
+          "distribution": {
+            "Bestått": 553,
+            "Ikke bestått": 73
+          },
+          "averageGrade": null,
+          "averageGradeNumeric": null,
+          "failRate": 0.1166
+        }
+      ]
+    }
+  }
+}

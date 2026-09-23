@@ -1,0 +1,55 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/nhh/MBM401B?include=grades&semester=both&year_item=2024",
+  "slug": "nhh",
+  "code": "MBM401B",
+  "year": 2024,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "nhh",
+      "courseCode": "mbm401b",
+      "name": "Consumer Behaviour",
+      "candidates": 157,
+      "mainSemester": "autumn"
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:51:28.021Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2024
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2024,
+          "semester": "autumn",
+          "scale": "A-F",
+          "candidates": 95,
+          "distribution": {
+            "A": 18,
+            "B": 53,
+            "C": 13,
+            "D": 11,
+            "E": 0,
+            "F": 0
+          },
+          "averageGrade": "B",
+          "averageGradeNumeric": 3.82,
+          "failRate": 0
+        }
+      ]
+    }
+  }
+}

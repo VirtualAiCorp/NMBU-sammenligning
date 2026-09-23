@@ -1,0 +1,72 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/uio/IN3050?include=grades&semester=both&year_item=2025",
+  "slug": "uio",
+  "code": "IN3050",
+  "year": 2025,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "uio",
+      "courseCode": "in3050",
+      "name": "Introduksjon til kunstig intelligens og maskinlæring",
+      "candidates": 638,
+      "mainSemester": null
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:53:53.686Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2025
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2025,
+          "semester": "spring",
+          "scale": "A-F",
+          "candidates": 192,
+          "distribution": {
+            "A": 25,
+            "B": 44,
+            "C": 62,
+            "D": 22,
+            "E": 22,
+            "F": 17
+          },
+          "averageGrade": "C",
+          "averageGradeNumeric": 3.16,
+          "failRate": 0.0885
+        },
+        {
+          "year": 2025,
+          "semester": "autumn",
+          "scale": "A-F",
+          "candidates": 189,
+          "distribution": {
+            "A": 25,
+            "B": 44,
+            "C": 70,
+            "D": 33,
+            "E": 13,
+            "F": 4
+          },
+          "averageGrade": "C",
+          "averageGradeNumeric": 3.19,
+          "failRate": 0.0212
+        }
+      ]
+    }
+  }
+}

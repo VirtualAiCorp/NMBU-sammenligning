@@ -1,0 +1,72 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/oslomet/MATS1500?include=grades&semester=both&year_item=2023",
+  "slug": "oslomet",
+  "code": "MATS1500",
+  "year": 2023,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "oslomet",
+      "courseCode": "mats1500",
+      "name": "Materialteknologi",
+      "candidates": 241,
+      "mainSemester": "autumn"
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:51:36.689Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2023
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2023,
+          "semester": "spring",
+          "scale": "A-F",
+          "candidates": 10,
+          "distribution": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 7,
+            "E": 3,
+            "F": 0
+          },
+          "averageGrade": "D",
+          "averageGradeNumeric": 1.7,
+          "failRate": 0
+        },
+        {
+          "year": 2023,
+          "semester": "autumn",
+          "scale": "A-F",
+          "candidates": 69,
+          "distribution": {
+            "A": 3,
+            "B": 6,
+            "C": 12,
+            "D": 8,
+            "E": 11,
+            "F": 29
+          },
+          "averageGrade": "C",
+          "averageGradeNumeric": 2.55,
+          "failRate": 0.4203
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/oslomet/MAPSY4400?include=grades&semester=both&year_item=2024",
+  "slug": "oslomet",
+  "code": "MAPSY4400",
+  "year": 2024,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "oslomet",
+      "courseCode": "mapsy4400",
+      "name": "Psykisk helse for migranter og minoriteter",
+      "candidates": 406,
+      "mainSemester": "autumn"
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:51:40.678Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2024
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2024,
+          "semester": "spring",
+          "scale": "A-F",
+          "candidates": 0,
+          "distribution": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "E": 0,
+            "F": 0
+          },
+          "averageGrade": null,
+          "averageGradeNumeric": null,
+          "failRate": null
+        },
+        {
+          "year": 2024,
+          "semester": "autumn",
+          "scale": "A-F",
+          "candidates": 169,
+          "distribution": {
+            "A": 16,
+            "B": 47,
+            "C": 59,
+            "D": 33,
+            "E": 11,
+            "F": 3
+          },
+          "averageGrade": "C",
+          "averageGradeNumeric": 3.14,
+          "failRate": 0.0178
+        }
+      ]
+    }
+  }
+}

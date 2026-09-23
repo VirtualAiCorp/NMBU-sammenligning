@@ -1,0 +1,55 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/nhh/BAN402?include=grades&semester=both&year_item=2024",
+  "slug": "nhh",
+  "code": "BAN402",
+  "year": 2024,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "nhh",
+      "courseCode": "ban402",
+      "name": "Decision Modelling in Business",
+      "candidates": 264,
+      "mainSemester": "autumn"
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:51:25.000Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2024
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2024,
+          "semester": "autumn",
+          "scale": "A-F",
+          "candidates": 90,
+          "distribution": {
+            "A": 34,
+            "B": 27,
+            "C": 19,
+            "D": 5,
+            "E": 5,
+            "F": 0
+          },
+          "averageGrade": "B",
+          "averageGradeNumeric": 3.89,
+          "failRate": 0
+        }
+      ]
+    }
+  }
+}

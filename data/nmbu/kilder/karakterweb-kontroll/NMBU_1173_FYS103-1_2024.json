@@ -1,0 +1,51 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/nmbu/FYS103?include=grades&semester=both&year_item=2024",
+  "slug": "nmbu",
+  "code": "FYS103",
+  "year": 2024,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "nmbu",
+      "courseCode": "fys103",
+      "name": "Måleteknikk og dataanalyse",
+      "candidates": 125,
+      "mainSemester": "spring"
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:51:10.032Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2024
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2024,
+          "semester": "spring",
+          "scale": "G-H",
+          "candidates": 61,
+          "distribution": {
+            "Bestått": 58,
+            "Ikke bestått": 3
+          },
+          "averageGrade": null,
+          "averageGradeNumeric": null,
+          "failRate": 0.0492
+        }
+      ]
+    }
+  }
+}

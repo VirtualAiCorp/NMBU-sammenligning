@@ -1,0 +1,72 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/hvl/BYG102?include=grades&semester=both&year_item=2024",
+  "slug": "hvl",
+  "code": "BYG102",
+  "year": 2024,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "hvl",
+      "courseCode": "byg102",
+      "name": "Statistikk og landmåling",
+      "candidates": 283,
+      "mainSemester": "spring"
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:51:23.637Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2024
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2024,
+          "semester": "spring",
+          "scale": "A-F",
+          "candidates": 112,
+          "distribution": {
+            "A": 9,
+            "B": 41,
+            "C": 37,
+            "D": 15,
+            "E": 7,
+            "F": 3
+          },
+          "averageGrade": "C",
+          "averageGradeNumeric": 3.28,
+          "failRate": 0.0268
+        },
+        {
+          "year": 2024,
+          "semester": "autumn",
+          "scale": "A-F",
+          "candidates": 0,
+          "distribution": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "E": 0,
+            "F": 0
+          },
+          "averageGrade": null,
+          "averageGradeNumeric": null,
+          "failRate": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/nhh/FOR11?include=grades&semester=both&year_item=2023",
+  "slug": "nhh",
+  "code": "FOR11",
+  "year": 2023,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "nhh",
+      "courseCode": "for11",
+      "name": "Business Taxation",
+      "candidates": 59,
+      "mainSemester": "spring"
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:51:41.315Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2023
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2023,
+          "semester": "spring",
+          "scale": "A-F",
+          "candidates": 28,
+          "distribution": {
+            "A": 4,
+            "B": 7,
+            "C": 7,
+            "D": 0,
+            "E": 0,
+            "F": 10
+          },
+          "averageGrade": "B",
+          "averageGradeNumeric": 3.83,
+          "failRate": 0.3571
+        }
+      ]
+    }
+  }
+}

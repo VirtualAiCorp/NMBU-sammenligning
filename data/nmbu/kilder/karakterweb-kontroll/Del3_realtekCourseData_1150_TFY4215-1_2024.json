@@ -1,0 +1,55 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/ntnu/TFY4215?include=grades&semester=both&year_item=2024",
+  "slug": "ntnu",
+  "code": "TFY4215",
+  "year": 2024,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "ntnu",
+      "courseCode": "tfy4215",
+      "name": "Innføring i kvantefysikk",
+      "candidates": 431,
+      "mainSemester": "autumn"
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:53:54.370Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2024
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2024,
+          "semester": "autumn",
+          "scale": "A-F",
+          "candidates": 215,
+          "distribution": {
+            "A": 118,
+            "B": 37,
+            "C": 27,
+            "D": 10,
+            "E": 13,
+            "F": 10
+          },
+          "averageGrade": "B",
+          "averageGradeNumeric": 4.16,
+          "failRate": 0.0465
+        }
+      ]
+    }
+  }
+}

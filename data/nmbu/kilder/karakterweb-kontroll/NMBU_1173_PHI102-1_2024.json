@@ -1,0 +1,51 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/nmbu/PHI102?include=grades&semester=both&year_item=2024",
+  "slug": "nmbu",
+  "code": "PHI102",
+  "year": 2024,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "nmbu",
+      "courseCode": "phi102",
+      "name": "Examen philosophicum - Engelsk versjon",
+      "candidates": 294,
+      "mainSemester": "spring"
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:51:17.485Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2024
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2024,
+          "semester": "spring",
+          "scale": "G-H",
+          "candidates": 131,
+          "distribution": {
+            "Bestått": 127,
+            "Ikke bestått": 4
+          },
+          "averageGrade": null,
+          "averageGradeNumeric": null,
+          "failRate": 0.0305
+        }
+      ]
+    }
+  }
+}

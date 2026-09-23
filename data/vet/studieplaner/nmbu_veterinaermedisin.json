@@ -1,0 +1,332 @@
+{
+  "entryId": "nmbu_veterinaermedisin",
+  "programnavn": "Veterinærmedisin (profesjonsstudium)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/veterinaermedisin-profesjonsstudium",
+    "https://www.nmbu.no/sites/default/files/2026-08/Studieplan%20av%202021%20VET%20h26v27%20vedtat%20UU%20%2822.05.26%29%20%282%29.docx"
+  ],
+  "hentet": "2026-09-23",
+  "totaltStudiepoeng": 330,
+  "obligatoriskeStudiepoeng": 321,
+  "obligatoriske": [
+    {
+      "emnekode": "VET350",
+      "emnenavn": "Husdyrets grunnleggende behov og miljø",
+      "studiepoeng": 4,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": ["VET350-1"],
+      "merknad": "2,5 uker undervisning, inkludert 4 uker husdyrpraksis (se VET350B) og 1 morgenvakt på produksjonsdyrklinikken."
+    },
+    {
+      "emnekode": "VET350B",
+      "emnenavn": "Husdyrpraksis",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": ["VET350B-1"],
+      "merknad": "4 uker, gir ikke egne studiepoeng – inngår i VET350."
+    },
+    {
+      "emnekode": "VET351",
+      "emnenavn": "Virveldyrets oppbygging og funksjon",
+      "studiepoeng": 20,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": ["VET351-1"],
+      "merknad": "13,5 uker."
+    },
+    {
+      "emnekode": "VET352A",
+      "emnenavn": "Profesjonslære A",
+      "studiepoeng": 3,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": ["VET352-1-1"],
+      "merknad": "Profesjonslæretråden går gjennom hele studiet (VET352A i år 1–2, VET352 i år 3–6). År 1: 2 uker/3 sp totalt, fordelt med 1 uke i høstsemesteret og 1 uke i vårsemesteret (samme oppføring i begge semestre i kildedokumentet, ført her kun i høst for å unngå dobbelttelling)."
+    },
+    {
+      "emnekode": "VET353A",
+      "emnenavn": "Dyrevelferd A",
+      "studiepoeng": 3,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": ["VET353-1-1"],
+      "merknad": "Dyrevelferdstråden går gjennom hele studiet. År 1: 2 uker/3 sp totalt, fordelt med 1 uke i høstsemesteret og 1 uke i vårsemesteret (ført her kun i høst for å unngå dobbelttelling)."
+    },
+    {
+      "emnekode": "VET354A",
+      "emnenavn": "Organsystemer 1",
+      "studiepoeng": 21,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": ["VET354A-1"],
+      "merknad": "14 uker. Dekker bevegelsesapparat, sirkulasjon, respirasjon, urinorganer og fordøyelsesapparat."
+    },
+    {
+      "emnekode": "VET354B",
+      "emnenavn": "Ernæring og metabolisme",
+      "studiepoeng": 9,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": ["VET354B-1"],
+      "merknad": "6 uker."
+    },
+    {
+      "emnekode": "VET353A-2",
+      "emnenavn": "Dyrevelferd 2. året",
+      "studiepoeng": 3,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": ["VET353A-2-1", "VET353-2-2", "VET353-2-1"],
+      "merknad": "Økt fra 1 til 2 uker fra og med kull 2024 (3 sp); eldre kull har en kortere/billigere variant (VET353-2-1, 1,5 sp). Kildedokumentet skriver koden inkonsekvent som «Vet352A-2» ett sted."
+    },
+    {
+      "emnekode": "VET355",
+      "emnenavn": "Organsystemer 2",
+      "studiepoeng": 16.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": ["VET355-1"],
+      "merknad": "11 uker. Dekker nervesystem/endokrinologi, reproduksjon/obstetrikk og hud/blod/immunsystem."
+    },
+    {
+      "emnekode": "VET356",
+      "emnenavn": "Grunnleggende sykdomslære",
+      "studiepoeng": 13.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": ["VET356-1"],
+      "merknad": "9 uker totalt: 5 uker i høstsemesteret, fortsetter med 4 uker i vårsemesteret (2. semester)."
+    },
+    {
+      "emnekode": "VET357",
+      "emnenavn": "Veterinær mikrobiologi",
+      "studiepoeng": 16.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": ["VET357-1"],
+      "merknad": "11 uker."
+    },
+    {
+      "emnekode": "VET358",
+      "emnenavn": "Farmakologi og toksikologi",
+      "studiepoeng": 10.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": ["VET358-1"],
+      "merknad": "7 uker."
+    },
+    {
+      "emnekode": "VET359",
+      "emnenavn": "Sykdommer i organsystemer 1",
+      "studiepoeng": 24,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": ["VET359-1"],
+      "merknad": "16 uker. Onkologi og sykdommer i hud/blod/immunsystem, bevegelsesapparat og fordøyelsesapparat."
+    },
+    {
+      "emnekode": "VET353A-3",
+      "emnenavn": "Dyrevelferd 3. året",
+      "studiepoeng": 1.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": ["VET353-3-2", "VET353-3-1"],
+      "merknad": "Fra og med studieåret 25/26 og kull 2023. Credittallet varierer noe mellom kull (1,5 sp for nyeste, 3 sp for eldre variant VET353-3-1)."
+    },
+    {
+      "emnekode": "VET380-STAT",
+      "emnenavn": "Statistikk og epidemiologi",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "1 uke/1,5 sp i høstsemesteret, fortsetter med 2,5 uker/3,5 sp i vårsemesteret (samlet 5 sp). Fra og med studieåret 26/27 og kull 2024 – første gjennomføring, ingen karakterdata i DBH ennå. Koden VET380 er samme kode som brukes for litteraturstudie-delen i år 4; det er trolig én løpende «tråd»-kode for flere ulike profesjonslæreelementer."
+    },
+    {
+      "emnekode": "VET352A-3",
+      "emnenavn": "Profesjonslære A (3. året)",
+      "studiepoeng": 2.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Fra og med 26/27 og kull 2024, redusert med 1,5 sp sammenlignet med tidligere kull – ingen karakterdata i DBH ennå for denne varianten."
+    },
+    {
+      "emnekode": "VET360",
+      "emnenavn": "Sykdommer i organsystemer 2",
+      "studiepoeng": 27,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": ["VET360-1"],
+      "merknad": "18 uker. Sykdommer i sirkulasjon/respirasjon/urinorganer, nervesystem/endokrinologi, og obstetrikk/reproduksjon. Økt med 1,5 sp fra og med kull 2024 (DBH-tallet for VET360-1, 25,5 sp, gjelder eldre kull)."
+    },
+    {
+      "emnekode": "VET361",
+      "emnenavn": "Systemiske og alvorlig smittsomme sykdommer",
+      "studiepoeng": 7.5,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": ["VET361-1"],
+      "merknad": "5 uker."
+    },
+    {
+      "emnekode": "VET362",
+      "emnenavn": "Besetningsmedisin og ernæring",
+      "studiepoeng": 15,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": ["VET362-1"],
+      "merknad": "10 uker."
+    },
+    {
+      "emnekode": "VET380-LITT",
+      "emnenavn": "Litteraturstudie",
+      "studiepoeng": 12,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "1 uke/1,5 sp i høstsemesteret, fortsetter med 7 uker/10,5 sp i vårsemesteret (samlet 12 sp). Fra og med kull 2023 – bruker trolig samme DBH-kode VET380 som statistikk/epidemiologi-delen i år 3, ingen karakterdata i DBH ennå."
+    },
+    {
+      "emnekode": "VET364",
+      "emnenavn": "Mattrygghet",
+      "studiepoeng": 10.5,
+      "aar": 4,
+      "semester": "høst",
+      "dbhEmnekoder": ["VET364-1"],
+      "merknad": "2 uker/3 sp i høstsemesteret, fortsetter med 5 uker/7,5 sp i vårsemesteret (totalt 10,5 sp, matcher VET364-1 i DBH). Fra og med kull 2022."
+    },
+    {
+      "emnekode": "VET363",
+      "emnenavn": "Vilt og eksotiske dyr",
+      "studiepoeng": 2,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": ["VET363-1"],
+      "merknad": "1,5 uke."
+    },
+    {
+      "emnekode": "VET353-4",
+      "emnenavn": "Dyrevelferd – forsøksdyrlære",
+      "studiepoeng": 1.5,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": ["VET353-4-1"],
+      "merknad": "1 uke. Gjaldt kull 2021 og kull 2022 i kildedokumentet – nyere kull kan ha emnet plassert annerledes eller under en annen kode."
+    },
+    {
+      "emnekode": "VET365",
+      "emnenavn": "Innledende klinikk og diagnostikk",
+      "studiepoeng": 11.5,
+      "aar": 4,
+      "semester": "vår",
+      "dbhEmnekoder": ["VET365-1"],
+      "merknad": "7,5 uker. DBH-tallet for VET365-1 er 10,5 sp; fra og med kull 2023 inkluderer emnet også klinisk kommunikasjon, som trolig forklarer økningen til 11,5 sp i gjeldende plan."
+    },
+    {
+      "emnekode": "VET366A",
+      "emnenavn": "Smådyrmedisin 1",
+      "studiepoeng": 21,
+      "aar": 5,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "14 uker (1 leseuke). Gjelder kull 2022, første kull i 5. studieår under 2021-planen nådde dette i 2026/27 – ingen karakterdata i DBH ennå (data i denne kjeden dekker 2021–2025)."
+    },
+    {
+      "emnekode": "VET367A",
+      "emnenavn": "Hestemedisin 1",
+      "studiepoeng": 9,
+      "aar": 5,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "6 uker (1 leseuke). Ingen karakterdata i DBH ennå, se merknad på VET366A."
+    },
+    {
+      "emnekode": "VET368A",
+      "emnenavn": "Produksjonsdyrmedisin og akvamedisin",
+      "studiepoeng": 22.5,
+      "aar": 5,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "15 uker (1 leseuke). Ingen karakterdata i DBH ennå, se merknad på VET366A."
+    },
+    {
+      "emnekode": "VET369A",
+      "emnenavn": "Patologi 1",
+      "studiepoeng": 6,
+      "aar": 5,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "4 uker (1 leseuke). Ingen karakterdata i DBH ennå, se merknad på VET366A."
+    },
+    {
+      "emnekode": "VET352-6",
+      "emnenavn": "Profesjonslære – kjøttkontroll",
+      "studiepoeng": 1.5,
+      "aar": 5,
+      "semester": "høst",
+      "dbhEmnekoder": ["VET352-6-1"],
+      "merknad": "1 uke. Eneste 5.-årsemne med karakterdata i DBH per 2025 – de kliniske emnene (VET366A–VET369A) er nye under 2021-planen og har ikke fått karakterer ennå."
+    },
+    {
+      "emnekode": "VET-VALGFRI",
+      "emnenavn": "Valgfri del",
+      "studiepoeng": 9,
+      "aar": 6,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "6 uker. Valgfritt element i 6. studieår, ikke en enkelt DBH-emnekode – studenten velger selv innhold. Ingen karakterdata i DBH ennå."
+    },
+    {
+      "emnekode": "VET352-7",
+      "emnenavn": "Profesjonslære – offentlig veterinærmedisin",
+      "studiepoeng": 6,
+      "aar": 6,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "4 uker. Ingen karakterdata i DBH ennå."
+    },
+    {
+      "emnekode": "VET369B",
+      "emnenavn": "Patologi 2",
+      "studiepoeng": 3,
+      "aar": 6,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "2 uker. Del av det avsluttende kliniske blokk (sum 10 uker/15 sp sammen med VET366B–VET368B). Ingen karakterdata i DBH ennå."
+    },
+    {
+      "emnekode": "VET366B",
+      "emnenavn": "Smådyrmedisin 2",
+      "studiepoeng": 4.5,
+      "aar": 6,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "3 uker. Ingen karakterdata i DBH ennå."
+    },
+    {
+      "emnekode": "VET367B",
+      "emnenavn": "Hestemedisin 2",
+      "studiepoeng": 3,
+      "aar": 6,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "2 uker. Ingen karakterdata i DBH ennå."
+    },
+    {
+      "emnekode": "VET368B",
+      "emnenavn": "Produksjonsdyrmedisin",
+      "studiepoeng": 4.5,
+      "aar": 6,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "3 uker. Ingen karakterdata i DBH ennå."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er NMBUs «Studieplan av 2021 for veterinærstudiet», vedtatt UU-vet 22.5.2026 (.docx, konvertert til tekst for uthenting), lastet ned fra programsiden nmbu.no/studier/veterinaermedisin-profesjonsstudium. Studiet er et sammenhengende 11-semesters (5½–6 år, 330 sp) profesjonsstudium der samme emne ofte strekker seg over to semestre; slike emner er ført på det semesteret de starter, med sp-fordelingen forklart i merknad, for å unngå dobbelttelling i totalsummen. To lange «tråder» (VET352 Profesjonslære og VET353 Dyrevelferd) løper gjennom hele studiet med egen delkode per år. DBH-karakterdataene (2021–2025) i denne kjeden dekker bare år 1–4 av 2021-planen fullt ut, pluss ett enkeltemne i år 5 (VET352-6, kjøttkontroll): kull 2021 er første kull under den nye planen og når først 5.–6. studieår i 2025/26–2026/27, så emnene VET366A–VET369B, VET-SLUTTEKSAMEN, VET-VALGFRI og VET352-7 har ingen karakterer i DBH ennå. DBH har i tillegg en helt annen serie eldre emnekoder (VET302–VET341) fra 2013-studieplanen, brukt av kull før 2021 – disse er utenfor denne studieplanens 2021-pensum og er derfor ikke koblet her. Studiepoengtallet «obligatoriskeStudiepoeng» (321) er summen av alle emner i listen unntatt «Valgfri del» (9 sp); studiet har ellers ingen formelle spesialiseringsretninger i gjeldende plan (2021-planen fjernet «differensiering»-valgene fra 2013-planen, som fortsatt finnes som gamle DBH-koder VET328–VET332)."
+}

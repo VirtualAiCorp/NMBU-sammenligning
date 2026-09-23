@@ -1,0 +1,152 @@
+{
+  "entryId": "nmbu_dyrepleie",
+  "programnavn": "Dyrepleie (bachelor)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/bachelor/dyrepleie",
+    "https://www.nmbu.no/sites/default/files/2026-06/Studieplan%20for%20dyrepleierstudiet%20h26v27.pdf"
+  ],
+  "hentet": "2026-09-23",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 180,
+  "obligatoriske": [
+    {
+      "emnekode": "PHI100",
+      "emnenavn": "Examen Philosophicum",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": ["PHI100-1", "PHI101-1"],
+      "merknad": "Arrangeres av NMBU Handelshøgskolen, valgfritt mellom vanlig undervisning (PHI100) og seminarversjon (PHI101); studenten melder seg opp selv i Studentweb."
+    },
+    {
+      "emnekode": "DYR201",
+      "emnenavn": "Atferd og stell",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": ["DYR201-1"],
+      "merknad": null
+    },
+    {
+      "emnekode": "DYR202",
+      "emnenavn": "Forsøksdyrlære",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": ["DYR202-1", "DYR202-2"],
+      "merknad": "3 uker i 1. semester og 2 uker i 2. semester (vår)."
+    },
+    {
+      "emnekode": "DYR203",
+      "emnenavn": "Anatomi og fysiologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": ["DYR203-1"],
+      "merknad": null
+    },
+    {
+      "emnekode": "DYR204",
+      "emnenavn": "Infeksjonsbiologi og legemiddellære",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": ["DYR204-1"],
+      "merknad": null
+    },
+    {
+      "emnekode": "DYR205",
+      "emnenavn": "Intern klinisk praksis",
+      "studiepoeng": 20,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": ["DYR205-1"],
+      "merknad": "Klinikkrotasjoner ved NMBU Veterinærhøgskolen."
+    },
+    {
+      "emnekode": "DYR206",
+      "emnenavn": "Sykdomslære og dyrepleie",
+      "studiepoeng": 25,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": ["DYR206-1"],
+      "merknad": "Delt i 2 moduler."
+    },
+    {
+      "emnekode": "DYR216",
+      "emnenavn": "Klinisk kommunikasjon og forberedelser til yrkeslivet",
+      "studiepoeng": 1.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": ["VET342-1"],
+      "merknad": "Nytt emne fra våren 2027, overlapper det tidligere emnet VET342 Klinisk kommunikasjon, psykisk helse og klinikkdrift. DBH-karakterer 2021–2025 ligger på VET342, som historisk lå i 6. semester (se egen oppføring under år 3) – fra og med kull 2025 flyttes emnet til 4. semester. Koblet mot VET342-1 fordi DYR216 ennå ikke har karakterdata."
+    },
+    {
+      "emnekode": "DYR207",
+      "emnenavn": "Ekstern klinisk praksis + OSCE DPL",
+      "studiepoeng": 33.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": ["DYR207-1"],
+      "merknad": "Praksis år 2. Inntil 8 uker kan tas ved en godkjent praksisklinikk i utlandet."
+    },
+    {
+      "emnekode": "DYR210",
+      "emnenavn": "Forskningsmetodikk, statistikk, oppgaveskriving",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": ["DYR210-1"],
+      "merknad": null
+    },
+    {
+      "emnekode": "DYR209",
+      "emnenavn": "Bacheloroppgave",
+      "studiepoeng": 15,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": ["DYR209-1"],
+      "merknad": "10 uker i undervisningsfrie perioder høst- og vårsemester."
+    },
+    {
+      "emnekode": "DYR211",
+      "emnenavn": "Avsluttende klinisk praksis",
+      "studiepoeng": 16.5,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": ["DYR211-1"],
+      "merknad": "10 uker (9 uker praksis og 1 uke rehabiliteringskurs)."
+    },
+    {
+      "emnekode": "DYR216",
+      "emnenavn": "Klinisk kommunikasjon og forberedelser til yrkeslivet",
+      "studiepoeng": 1.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": ["VET342-1"],
+      "merknad": "Historisk plassering (6. semester, erstatter VET342 – se merknad på år 2-oppføringen). NMBUs offisielle emneoversikt for overgangsåret 2026/27 lister emnet begge steder fordi kull 2024 (3. år) tar det sammen med kull 2025 (2. år) våren 2027; fra og med neste kull ligger emnet bare i 4. semester (år 2)."
+    },
+    {
+      "emnekode": "DYR214",
+      "emnenavn": "Laboratoriediagnostikk",
+      "studiepoeng": 5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": ["DYR214-1"],
+      "merknad": "OSCE-eksamen."
+    },
+    {
+      "emnekode": "DYR208",
+      "emnenavn": "Dyrevelferd og profesjonsetikk",
+      "studiepoeng": 7,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": ["DYR208-1", "DYR208-2"],
+      "merknad": "DYR208-1 (2 sp, Profesjonsetikk) er den eldre, smalere versjonen av emnet; DYR208-2 (7 sp, Dyrevelferd og profesjonsetikk) er gjeldende versjon."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er NMBUs offisielle studieplandokument for dyrepleierstudiet, studieåret høst 2026/vår 2027 (vedtatt av Programrådet 5.3.2026 og UU-VET 22.5.2026), lastet ned fra programsiden nmbu.no/studier/bachelor/dyrepleie. Emnet VET327 Dyrevelferd (5 sp, karakterdata 2021–2023 i DBH) finnes i karakterdataene men er ikke lenger i gjeldende studieplan – det er trolig forgjengeren til DYR215 Dyrevelferd (5 sp, innført senere) eller DYR208. PHI100/PHI101 telles som étt obligatorisk element (alternative gjennomføringer av samme Ex.phil.-krav)."
+}

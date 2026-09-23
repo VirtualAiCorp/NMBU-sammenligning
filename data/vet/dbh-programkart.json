@@ -1,0 +1,139 @@
+{
+  "hentet": "2026-09-23",
+  "institusjoner": {
+    "1173": "Norges miljø- og biovitenskapelige universitet",
+    "1174": "Nord universitet",
+    "1110": "Universitetet i Oslo",
+    "1120": "Universitetet i Bergen",
+    "1150": "Norges teknisk-naturvitenskapelige universitet",
+    "1130": "UiT Norges arktiske universitet"
+  },
+  "programs": [
+    {
+      "entryId": "nmbu_veterinaermedisin",
+      "institusjonskode": "1173",
+      "studieprogramkoder": [
+        "VET"
+      ],
+      "studieprogramnavn": "Veterinærmedisin - Profesjonsstudium",
+      "nivaakode": "PR",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 2757
+    },
+    {
+      "entryId": "uio_medisin",
+      "institusjonskode": "1110",
+      "studieprogramkoder": [
+        "MEDISIN"
+      ],
+      "studieprogramnavn": "Medisin",
+      "nivaakode": "PR",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 4691
+    },
+    {
+      "entryId": "uib_medisin",
+      "institusjonskode": "1120",
+      "studieprogramkoder": [
+        "PRMEDISIN"
+      ],
+      "studieprogramnavn": "Medisinstudiet",
+      "nivaakode": "PR",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 4553
+    },
+    {
+      "entryId": "ntnu_medisin",
+      "institusjonskode": "1150",
+      "studieprogramkoder": [
+        "CMED"
+      ],
+      "studieprogramnavn": "Medisinstudiet",
+      "nivaakode": "PR",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 1617
+    },
+    {
+      "entryId": "uit_medisin",
+      "institusjonskode": "1130",
+      "studieprogramkoder": [
+        "MEDISIN"
+      ],
+      "studieprogramnavn": "Medisin profesjonsstudium",
+      "nivaakode": "PR",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 1831
+    },
+    {
+      "entryId": "nmbu_dyrepleie",
+      "institusjonskode": "1173",
+      "studieprogramkoder": [
+        "B-DYR"
+      ],
+      "studieprogramnavn": "Dyrepleie",
+      "nivaakode": "B3",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 432
+    },
+    {
+      "entryId": "nord_dyrepleie",
+      "institusjonskode": "1174",
+      "studieprogramkoder": [
+        "BADYR"
+      ],
+      "studieprogramnavn": "Bachelor i dyrepleie",
+      "nivaakode": "B3",
+      "aarMedKarakterer": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "kandidaterSiste": 755
+    }
+  ]
+}

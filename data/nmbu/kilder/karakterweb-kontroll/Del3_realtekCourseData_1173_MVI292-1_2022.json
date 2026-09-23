@@ -1,0 +1,12 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/nmbu/MVI292?include=grades&semester=both&year_item=2022",
+  "slug": "nmbu",
+  "code": "MVI292",
+  "year": 2022,
+  "status": 404,
+  "json": {
+    "error": {
+      "message": "Unknown course"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/nhh/BAN432?include=grades&semester=both&year_item=2022",
+  "slug": "nhh",
+  "code": "BAN432",
+  "year": 2022,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "nhh",
+      "courseCode": "ban432",
+      "name": "Applied Textual Data Analysis for Business and Finance",
+      "candidates": 37,
+      "mainSemester": "autumn"
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:51:45.338Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2022
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2022,
+          "semester": "autumn",
+          "scale": "A-F",
+          "candidates": 68,
+          "distribution": {
+            "A": 30,
+            "B": 35,
+            "C": 3,
+            "D": 0,
+            "E": 0,
+            "F": 0
+          },
+          "averageGrade": "B",
+          "averageGradeNumeric": 4.4,
+          "failRate": 0
+        }
+      ]
+    }
+  }
+}

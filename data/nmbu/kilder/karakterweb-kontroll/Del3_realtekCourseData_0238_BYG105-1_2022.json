@@ -1,0 +1,72 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/hvl/BYG105?include=grades&semester=both&year_item=2022",
+  "slug": "hvl",
+  "code": "BYG105",
+  "year": 2022,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "hvl",
+      "courseCode": "byg105",
+      "name": "Bygningskonstruksjoner",
+      "candidates": 189,
+      "mainSemester": "autumn"
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:53:57.067Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2022
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2022,
+          "semester": "spring",
+          "scale": "A-F",
+          "candidates": 3,
+          "distribution": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "E": 0,
+            "F": 3
+          },
+          "averageGrade": null,
+          "averageGradeNumeric": null,
+          "failRate": 1
+        },
+        {
+          "year": 2022,
+          "semester": "autumn",
+          "scale": "A-F",
+          "candidates": 91,
+          "distribution": {
+            "A": 16,
+            "B": 15,
+            "C": 14,
+            "D": 15,
+            "E": 8,
+            "F": 23
+          },
+          "averageGrade": "C",
+          "averageGradeNumeric": 3.24,
+          "failRate": 0.2527
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/hvl/DAT250?include=grades&semester=both&year_item=2023",
+  "slug": "hvl",
+  "code": "DAT250",
+  "year": 2023,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "hvl",
+      "courseCode": "dat250",
+      "name": "Avanserte programvareteknologier",
+      "candidates": 125,
+      "mainSemester": "autumn"
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:51:37.366Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2023
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2023,
+          "semester": "autumn",
+          "scale": "A-F",
+          "candidates": 34,
+          "distribution": {
+            "A": 3,
+            "B": 13,
+            "C": 10,
+            "D": 8,
+            "E": 0,
+            "F": 0
+          },
+          "averageGrade": "C",
+          "averageGradeNumeric": 3.32,
+          "failRate": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "hentet": "2026-09-23",
+  "groups": [
+    {
+      "id": "veterinaer",
+      "label": "Veterinærmedisin",
+      "level": "master5",
+      "desc": "NMBUs seksårige profesjonsstudium i veterinærmedisin har ingen annen norsk veterinærutdanning å sammenligne seg med. Medisinstudiene ved UiO, UiB, NTNU og UiT er tatt med som referanse for søkertrykk og poenggrense på tilsvarende lange, konkurranseutsatte helsefagprofesjonsstudier.",
+      "note": "NMBU er eneste tilbyder av veterinærmedisin i Norge, så programmet har ingen reell konkurrent i utdanningstilbudet. De fire medisinstudiene er lagt inn med default false og skal vises som referansepunkt for søkertrykk/poenggrense, ikke som konkurrenter – de er et annet fag med egne opptakskrav. Der en institusjon har flere studiesteder for medisin (f.eks. UiB Bergen/Stavanger, UiO Oslo/Innlandet, NTNU Trondheim/Levanger), er bare hovedstudiestedets studiekode tatt med.",
+      "programs": [
+        {
+          "id": "nmbu_veterinaermedisin",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Veterinærmedisin (profesjonsstudium)",
+          "studiekode": "192772",
+          "type": "master",
+          "isNmbu": true,
+          "default": true,
+          "source": "SO",
+          "url": "https://www.nmbu.no/studier/veterinaermedisin-profesjonsstudium",
+          "localData": null
+        },
+        {
+          "id": "uio_medisin",
+          "shortName": "UiO Medisin",
+          "institusjon": "Universitetet i Oslo",
+          "studiested": "Oslo",
+          "programnavn": "Medisin (profesjonsstudium)",
+          "studiekode": "185740",
+          "type": "master",
+          "isNmbu": false,
+          "default": false,
+          "source": "SO",
+          "url": "https://www.uio.no/studier/program/medisin/",
+          "localData": null
+        },
+        {
+          "id": "uib_medisin",
+          "shortName": "UiB Medisin",
+          "institusjon": "Universitetet i Bergen",
+          "studiested": "Bergen",
+          "programnavn": "Medisin (profesjonsstudium)",
+          "studiekode": "184740",
+          "type": "master",
+          "isNmbu": false,
+          "default": false,
+          "source": "SO",
+          "url": "https://www.uib.no/med",
+          "localData": null
+        },
+        {
+          "id": "ntnu_medisin",
+          "shortName": "NTNU Medisin",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiested": "Trondheim",
+          "programnavn": "Medisin (profesjonsstudium)",
+          "studiekode": "194740",
+          "type": "master",
+          "isNmbu": false,
+          "default": false,
+          "source": "SO",
+          "url": "https://www.ntnu.no/studier/cmed",
+          "localData": null
+        },
+        {
+          "id": "uit_medisin",
+          "shortName": "UiT Medisin",
+          "institusjon": "UiT Norges arktiske universitet",
+          "studiested": "Tromsø",
+          "programnavn": "Medisin (profesjonsstudium)",
+          "studiekode": "186740",
+          "type": "master",
+          "isNmbu": false,
+          "default": false,
+          "source": "SO",
+          "url": "https://uit.no/helsefak",
+          "localData": null
+        }
+      ]
+    },
+    {
+      "id": "dyrepleie",
+      "label": "Dyrepleie",
+      "level": "bachelor",
+      "desc": "Sammenligner NMBUs bachelor i dyrepleie med Nord universitets bachelor i dyrepleie – de eneste to dyrepleieutdanningene i Norge.",
+      "note": "Kontrollert mot SO-tabellen (utdanningstype «Helsefag - veterinær»): bare NMBU og Nord universitet tilbyr dyrepleie i Norge. Nord sitt program ligger i Bodø under Fakultet for biovitenskap og akvakultur (FBA), DBH-programkode BADYR.",
+      "programs": [
+        {
+          "id": "nmbu_dyrepleie",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Dyrepleie (bachelor)",
+          "studiekode": "192504",
+          "type": "bachelor",
+          "isNmbu": true,
+          "default": true,
+          "source": "SO",
+          "url": "https://www.nmbu.no/studier/bachelor/dyrepleie",
+          "localData": null
+        },
+        {
+          "id": "nord_dyrepleie",
+          "shortName": "Nord",
+          "institusjon": "Nord universitet",
+          "studiested": "Bodø",
+          "programnavn": "Dyrepleie (bachelor)",
+          "studiekode": "204504",
+          "type": "bachelor",
+          "isNmbu": false,
+          "default": true,
+          "source": "SO",
+          "url": "https://www.nord.no/studier/dyrepleie-bachelor",
+          "localData": null
+        }
+      ]
+    }
+  ]
+}

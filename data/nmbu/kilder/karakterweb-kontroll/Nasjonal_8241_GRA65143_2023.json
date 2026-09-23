@@ -1,0 +1,55 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/bi/GRA65143?include=grades&semester=both&year_item=2023",
+  "slug": "bi",
+  "code": "GRA65143",
+  "year": 2023,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "bi",
+      "courseCode": "gra65143",
+      "name": "Corporate Finance",
+      "candidates": 397,
+      "mainSemester": "autumn"
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:51:27.358Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2023
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2023,
+          "semester": "autumn",
+          "scale": "A-F",
+          "candidates": 169,
+          "distribution": {
+            "A": 11,
+            "B": 13,
+            "C": 25,
+            "D": 36,
+            "E": 52,
+            "F": 32
+          },
+          "averageGrade": "D",
+          "averageGradeNumeric": 2.23,
+          "failRate": 0.1893
+        }
+      ]
+    }
+  }
+}

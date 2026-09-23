@@ -1,0 +1,55 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/nmbu/ECOL330?include=grades&semester=both&year_item=2024",
+  "slug": "nmbu",
+  "code": "ECOL330",
+  "year": 2024,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "nmbu",
+      "courseCode": "ecol330",
+      "name": "Økologi og bevaring av tropisk regnskog",
+      "candidates": 98,
+      "mainSemester": "autumn"
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:51:13.380Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2024
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2024,
+          "semester": "autumn",
+          "scale": "A-F",
+          "candidates": 47,
+          "distribution": {
+            "A": 4,
+            "B": 10,
+            "C": 13,
+            "D": 14,
+            "E": 6,
+            "F": 0
+          },
+          "averageGrade": "C",
+          "averageGradeNumeric": 2.83,
+          "failRate": 0
+        }
+      ]
+    }
+  }
+}

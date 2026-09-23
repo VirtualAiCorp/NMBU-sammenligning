@@ -1,0 +1,72 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/uib/MAT101?include=grades&semester=both&year_item=2023",
+  "slug": "uib",
+  "code": "MAT101",
+  "year": 2023,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "uib",
+      "courseCode": "mat101",
+      "name": "Brukerkurs i matematikk I",
+      "candidates": 970,
+      "mainSemester": "autumn"
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:51:20.935Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2023
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2023,
+          "semester": "spring",
+          "scale": "A-F",
+          "candidates": 46,
+          "distribution": {
+            "A": 6,
+            "B": 9,
+            "C": 9,
+            "D": 7,
+            "E": 12,
+            "F": 3
+          },
+          "averageGrade": "C",
+          "averageGradeNumeric": 2.77,
+          "failRate": 0.0652
+        },
+        {
+          "year": 2023,
+          "semester": "autumn",
+          "scale": "A-F",
+          "candidates": 389,
+          "distribution": {
+            "A": 29,
+            "B": 61,
+            "C": 85,
+            "D": 80,
+            "E": 84,
+            "F": 50
+          },
+          "averageGrade": "C",
+          "averageGradeNumeric": 2.62,
+          "failRate": 0.1285
+        }
+      ]
+    }
+  }
+}

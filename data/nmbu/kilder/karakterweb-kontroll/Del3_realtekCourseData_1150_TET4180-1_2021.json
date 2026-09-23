@@ -1,0 +1,72 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/ntnu/TET4180?include=grades&semester=both&year_item=2021",
+  "slug": "ntnu",
+  "code": "TET4180",
+  "year": 2021,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "ntnu",
+      "courseCode": "tet4180",
+      "name": "Dynamikk og regulering i elkraftsystemer",
+      "candidates": 124,
+      "mainSemester": "spring"
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:53:57.761Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2021
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2021,
+          "semester": "spring",
+          "scale": "A-F",
+          "candidates": 58,
+          "distribution": {
+            "A": 12,
+            "B": 15,
+            "C": 21,
+            "D": 10,
+            "E": 0,
+            "F": 0
+          },
+          "averageGrade": "B",
+          "averageGradeNumeric": 3.5,
+          "failRate": 0
+        },
+        {
+          "year": 2021,
+          "semester": "autumn",
+          "scale": "A-F",
+          "candidates": 0,
+          "distribution": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "E": 0,
+            "F": 0
+          },
+          "averageGrade": null,
+          "averageGradeNumeric": null,
+          "failRate": null
+        }
+      ]
+    }
+  }
+}

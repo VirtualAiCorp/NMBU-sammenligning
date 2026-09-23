@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { BookOpen, Building2, Trees, Atom, Leaf, FlaskConical, TreePine, Lock } from 'lucide-react';
+import { BookOpen, Building2, Trees, Atom, Leaf, FlaskConical, TreePine, Lock, PawPrint } from 'lucide-react';
 import { FACULTIES, FACULTY_IDS, type FacultyId } from '../data/faculties';
 
 export type Faculty = 'hh' | FacultyId | 'nmbu-emner';
@@ -24,6 +24,7 @@ const FACULTY_ICONS: Record<FacultyId, ReactNode> = {
   biovit: <Leaf className="w-5 h-5" style={{ color: 'var(--nmbu-green-dark)' }} />,
   kbm: <FlaskConical className="w-5 h-5" style={{ color: 'var(--nmbu-green-dark)' }} />,
   mina: <TreePine className="w-5 h-5" style={{ color: 'var(--nmbu-green-dark)' }} />,
+  vet: <PawPrint className="w-5 h-5" style={{ color: 'var(--nmbu-green-dark)' }} />,
 };
 
 const ACTIVE_FACULTIES: FacultyCard[] = [
@@ -45,9 +46,7 @@ const ACTIVE_FACULTIES: FacultyCard[] = [
   })),
 ];
 
-const COMING_FACULTIES: { id: string; label: string; sub: string }[] = [
-  { id: 'vet', label: 'VET', sub: 'Veterinærmedisin' },
-];
+const COMING_FACULTIES: { id: string; label: string; sub: string }[] = [];
 
 export function FacultyLanding({ onSelect }: Props) {
   return (
@@ -109,6 +108,7 @@ export function FacultyLanding({ onSelect }: Props) {
           </div>
         </button>
 
+        {COMING_FACULTIES.length > 0 && (<>
         {/* Skillelinje */}
         <div className="flex items-center gap-4 mb-5">
           <div className="h-px flex-1" style={{ backgroundColor: 'var(--nmbu-neutral-3)' }} />
@@ -137,6 +137,7 @@ export function FacultyLanding({ onSelect }: Props) {
             </div>
           ))}
         </div>
+        </>)}
 
         {/* Footer notice */}
         <div className="mt-10 text-center" style={{ fontSize: 12, color: 'var(--nmbu-neutral-2)' }}>

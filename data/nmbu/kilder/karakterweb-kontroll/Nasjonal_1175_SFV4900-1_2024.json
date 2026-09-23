@@ -1,0 +1,72 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/oslomet/SFV4900?include=grades&semester=both&year_item=2024",
+  "slug": "oslomet",
+  "code": "SFV4900",
+  "year": 2024,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "oslomet",
+      "courseCode": "sfv4900",
+      "name": "Dømmekraft, makt og etikk i sosialfaglig praksis",
+      "candidates": 66,
+      "mainSemester": "autumn"
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:51:19.642Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2024
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2024,
+          "semester": "spring",
+          "scale": "A-F",
+          "candidates": 0,
+          "distribution": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "E": 0,
+            "F": 0
+          },
+          "averageGrade": null,
+          "averageGradeNumeric": null,
+          "failRate": null
+        },
+        {
+          "year": 2024,
+          "semester": "autumn",
+          "scale": "A-F",
+          "candidates": 29,
+          "distribution": {
+            "A": 0,
+            "B": 9,
+            "C": 12,
+            "D": 8,
+            "E": 0,
+            "F": 0
+          },
+          "averageGrade": "C",
+          "averageGradeNumeric": 3.03,
+          "failRate": 0
+        }
+      ]
+    }
+  }
+}

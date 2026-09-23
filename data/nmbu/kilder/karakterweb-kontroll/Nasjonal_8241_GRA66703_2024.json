@@ -1,0 +1,55 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/bi/GRA66703?include=grades&semester=both&year_item=2024",
+  "slug": "bi",
+  "code": "GRA66703",
+  "year": 2024,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "bi",
+      "courseCode": "gra66703",
+      "name": "Numerical Methods in Python",
+      "candidates": 164,
+      "mainSemester": "autumn"
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:51:43.369Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2024
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2024,
+          "semester": "autumn",
+          "scale": "A-F",
+          "candidates": 78,
+          "distribution": {
+            "A": 64,
+            "B": 9,
+            "C": 5,
+            "D": 0,
+            "E": 0,
+            "F": 0
+          },
+          "averageGrade": "A",
+          "averageGradeNumeric": 4.76,
+          "failRate": 0
+        }
+      ]
+    }
+  }
+}

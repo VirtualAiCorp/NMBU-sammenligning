@@ -1,0 +1,55 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/uio/GEO2130?include=grades&semester=both&year_item=2024",
+  "slug": "uio",
+  "code": "GEO2130",
+  "year": 2024,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "uio",
+      "courseCode": "geo2130",
+      "name": "Strukturgeologi",
+      "candidates": 56,
+      "mainSemester": "spring"
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:51:32.027Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2024
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2024,
+          "semester": "spring",
+          "scale": "A-F",
+          "candidates": 37,
+          "distribution": {
+            "A": 6,
+            "B": 14,
+            "C": 14,
+            "D": 3,
+            "E": 0,
+            "F": 0
+          },
+          "averageGrade": "B",
+          "averageGradeNumeric": 3.62,
+          "failRate": 0
+        }
+      ]
+    }
+  }
+}

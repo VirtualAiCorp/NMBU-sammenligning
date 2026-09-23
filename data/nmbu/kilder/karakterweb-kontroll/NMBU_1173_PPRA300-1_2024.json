@@ -1,0 +1,64 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/nmbu/PPRA300?include=grades&semester=both&year_item=2024",
+  "slug": "nmbu",
+  "code": "PPRA300",
+  "year": 2024,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "nmbu",
+      "courseCode": "ppra300",
+      "name": "Praksisopplæring",
+      "candidates": 76,
+      "mainSemester": "spring"
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:51:15.539Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2024
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2024,
+          "semester": "spring",
+          "scale": "G-H",
+          "candidates": 39,
+          "distribution": {
+            "Bestått": 39,
+            "Ikke bestått": 0
+          },
+          "averageGrade": null,
+          "averageGradeNumeric": null,
+          "failRate": 0
+        },
+        {
+          "year": 2024,
+          "semester": "autumn",
+          "scale": "G-H",
+          "candidates": 0,
+          "distribution": {
+            "Bestått": 0,
+            "Ikke bestått": 0
+          },
+          "averageGrade": null,
+          "averageGradeNumeric": null,
+          "failRate": null
+        }
+      ]
+    }
+  }
+}

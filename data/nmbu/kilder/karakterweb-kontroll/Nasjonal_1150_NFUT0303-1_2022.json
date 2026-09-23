@@ -1,0 +1,72 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/ntnu/NFUT0303?include=grades&semester=both&year_item=2022",
+  "slug": "ntnu",
+  "code": "NFUT0303",
+  "year": 2022,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "ntnu",
+      "courseCode": "nfut0303",
+      "name": "Norsk for utlendinger, trinn 3",
+      "candidates": 44,
+      "mainSemester": null
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:51:31.305Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2022
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2022,
+          "semester": "spring",
+          "scale": "A-F",
+          "candidates": 12,
+          "distribution": {
+            "A": 0,
+            "B": 3,
+            "C": 6,
+            "D": 0,
+            "E": 0,
+            "F": 3
+          },
+          "averageGrade": "C",
+          "averageGradeNumeric": 3.33,
+          "failRate": 0.25
+        },
+        {
+          "year": 2022,
+          "semester": "autumn",
+          "scale": "A-F",
+          "candidates": 15,
+          "distribution": {
+            "A": 0,
+            "B": 4,
+            "C": 6,
+            "D": 5,
+            "E": 0,
+            "F": 0
+          },
+          "averageGrade": "C",
+          "averageGradeNumeric": 2.93,
+          "failRate": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/uia/TFL400?include=grades&semester=both&year_item=2023",
+  "slug": "uia",
+  "code": "TFL400",
+  "year": 2023,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "uia",
+      "courseCode": "tfl400",
+      "name": "Sustainable Capitalism",
+      "candidates": 369,
+      "mainSemester": "spring"
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:51:41.953Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2023
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2023,
+          "semester": "spring",
+          "scale": "A-F",
+          "candidates": 87,
+          "distribution": {
+            "A": 10,
+            "B": 38,
+            "C": 28,
+            "D": 6,
+            "E": 0,
+            "F": 5
+          },
+          "averageGrade": "B",
+          "averageGradeNumeric": 3.63,
+          "failRate": 0.0575
+        },
+        {
+          "year": 2023,
+          "semester": "autumn",
+          "scale": "A-F",
+          "candidates": 0,
+          "distribution": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "E": 0,
+            "F": 0
+          },
+          "averageGrade": null,
+          "averageGradeNumeric": null,
+          "failRate": null
+        }
+      ]
+    }
+  }
+}

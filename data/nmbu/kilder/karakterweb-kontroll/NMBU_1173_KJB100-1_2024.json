@@ -1,0 +1,55 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/nmbu/KJB100?include=grades&semester=both&year_item=2024",
+  "slug": "nmbu",
+  "code": "KJB100",
+  "year": 2024,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "nmbu",
+      "courseCode": "kjb100",
+      "name": "Introduksjon til biokjemi",
+      "candidates": 151,
+      "mainSemester": "autumn"
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:51:16.190Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2024
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2024,
+          "semester": "autumn",
+          "scale": "A-F",
+          "candidates": 66,
+          "distribution": {
+            "A": 0,
+            "B": 5,
+            "C": 31,
+            "D": 14,
+            "E": 0,
+            "F": 16
+          },
+          "averageGrade": "C",
+          "averageGradeNumeric": 2.82,
+          "failRate": 0.2424
+        }
+      ]
+    }
+  }
+}

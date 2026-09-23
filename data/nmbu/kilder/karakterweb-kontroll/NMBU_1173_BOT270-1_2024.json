@@ -1,0 +1,55 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/nmbu/BOT270?include=grades&semester=both&year_item=2024",
+  "slug": "nmbu",
+  "code": "BOT270",
+  "year": 2024,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "nmbu",
+      "courseCode": "bot270",
+      "name": "Kartlegging av natur",
+      "candidates": 73,
+      "mainSemester": "autumn"
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:51:12.684Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2024
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2024,
+          "semester": "autumn",
+          "scale": "A-F",
+          "candidates": 36,
+          "distribution": {
+            "A": 3,
+            "B": 9,
+            "C": 24,
+            "D": 0,
+            "E": 0,
+            "F": 0
+          },
+          "averageGrade": "C",
+          "averageGradeNumeric": 3.42,
+          "failRate": 0
+        }
+      ]
+    }
+  }
+}

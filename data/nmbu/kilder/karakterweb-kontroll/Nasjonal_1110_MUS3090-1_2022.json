@@ -1,0 +1,55 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/uio/MUS3090?include=grades&semester=both&year_item=2022",
+  "slug": "uio",
+  "code": "MUS3090",
+  "year": 2022,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "uio",
+      "courseCode": "mus3090",
+      "name": "Bacheloroppgave i musikkvitenskap",
+      "candidates": 57,
+      "mainSemester": "spring"
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:51:39.345Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2022
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2022,
+          "semester": "spring",
+          "scale": "A-F",
+          "candidates": 28,
+          "distribution": {
+            "A": 13,
+            "B": 7,
+            "C": 8,
+            "D": 0,
+            "E": 0,
+            "F": 0
+          },
+          "averageGrade": "B",
+          "averageGradeNumeric": 4.18,
+          "failRate": 0
+        }
+      ]
+    }
+  }
+}

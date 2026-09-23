@@ -1,0 +1,72 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/nhh/SOL4?include=grades&semester=both&year_item=2023",
+  "slug": "nhh",
+  "code": "SOL4",
+  "year": 2023,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "nhh",
+      "courseCode": "sol4",
+      "name": "Strategisk ledelse",
+      "candidates": 895,
+      "mainSemester": "spring"
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:51:29.984Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2023
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2023,
+          "semester": "spring",
+          "scale": "A-F",
+          "candidates": 361,
+          "distribution": {
+            "A": 106,
+            "B": 175,
+            "C": 63,
+            "D": 12,
+            "E": 0,
+            "F": 5
+          },
+          "averageGrade": "B",
+          "averageGradeNumeric": 4.05,
+          "failRate": 0.0139
+        },
+        {
+          "year": 2023,
+          "semester": "autumn",
+          "scale": "A-F",
+          "candidates": 24,
+          "distribution": {
+            "A": 6,
+            "B": 11,
+            "C": 7,
+            "D": 0,
+            "E": 0,
+            "F": 0
+          },
+          "averageGrade": "B",
+          "averageGradeNumeric": 3.96,
+          "failRate": 0
+        }
+      ]
+    }
+  }
+}

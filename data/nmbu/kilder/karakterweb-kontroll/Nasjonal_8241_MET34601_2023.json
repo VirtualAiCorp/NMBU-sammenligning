@@ -1,0 +1,55 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/bi/MET34601?include=grades&semester=both&year_item=2023",
+  "slug": "bi",
+  "code": "MET34601",
+  "year": 2023,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "bi",
+      "courseCode": "met34601",
+      "name": "Vitenskapelig tenkning",
+      "candidates": 1724,
+      "mainSemester": "autumn"
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:51:32.691Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2023
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2023,
+          "semester": "autumn",
+          "scale": "A-F",
+          "candidates": 743,
+          "distribution": {
+            "A": 50,
+            "B": 198,
+            "C": 223,
+            "D": 147,
+            "E": 103,
+            "F": 22
+          },
+          "averageGrade": "C",
+          "averageGradeNumeric": 2.92,
+          "failRate": 0.0296
+        }
+      ]
+    }
+  }
+}

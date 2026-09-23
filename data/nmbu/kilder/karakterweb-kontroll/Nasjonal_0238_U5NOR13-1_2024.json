@@ -1,0 +1,64 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/hvl/U5NOR13?include=grades&semester=both&year_item=2024",
+  "slug": "hvl",
+  "code": "U5NOR13",
+  "year": 2024,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "hvl",
+      "courseCode": "u5nor13",
+      "name": "Norsk for utenlandske studenter. Begynnerkurs",
+      "candidates": 77,
+      "mainSemester": null
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:51:44.688Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2024
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2024,
+          "semester": "spring",
+          "scale": "G-H",
+          "candidates": 21,
+          "distribution": {
+            "Bestått": 21,
+            "Ikke bestått": 0
+          },
+          "averageGrade": null,
+          "averageGradeNumeric": null,
+          "failRate": 0
+        },
+        {
+          "year": 2024,
+          "semester": "autumn",
+          "scale": "G-H",
+          "candidates": 10,
+          "distribution": {
+            "Bestått": 10,
+            "Ikke bestått": 0
+          },
+          "averageGrade": null,
+          "averageGradeNumeric": null,
+          "failRate": 0
+        }
+      ]
+    }
+  }
+}

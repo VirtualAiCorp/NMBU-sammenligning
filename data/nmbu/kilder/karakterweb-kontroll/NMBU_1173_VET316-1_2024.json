@@ -1,0 +1,72 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/nmbu/VET316?include=grades&semester=both&year_item=2024",
+  "slug": "nmbu",
+  "code": "VET316",
+  "year": 2024,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "nmbu",
+      "courseCode": "vet316",
+      "name": "Produksjonsdyrmedisin",
+      "candidates": 128,
+      "mainSemester": null
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:51:12.004Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2024
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2024,
+          "semester": "spring",
+          "scale": "A-F",
+          "candidates": 35,
+          "distribution": {
+            "A": 0,
+            "B": 10,
+            "C": 15,
+            "D": 7,
+            "E": 3,
+            "F": 0
+          },
+          "averageGrade": "C",
+          "averageGradeNumeric": 2.91,
+          "failRate": 0
+        },
+        {
+          "year": 2024,
+          "semester": "autumn",
+          "scale": "A-F",
+          "candidates": 33,
+          "distribution": {
+            "A": 0,
+            "B": 12,
+            "C": 18,
+            "D": 3,
+            "E": 0,
+            "F": 0
+          },
+          "averageGrade": "C",
+          "averageGradeNumeric": 3.27,
+          "failRate": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/nhh/ECO441?include=grades&semester=both&year_item=2022",
+  "slug": "nhh",
+  "code": "ECO441",
+  "year": 2022,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "nhh",
+      "courseCode": "eco441",
+      "name": "Skatt og økonomisk politikk",
+      "candidates": 47,
+      "mainSemester": "spring"
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:51:21.595Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2022
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2022,
+          "semester": "spring",
+          "scale": "A-F",
+          "candidates": 28,
+          "distribution": {
+            "A": 7,
+            "B": 9,
+            "C": 9,
+            "D": 3,
+            "E": 0,
+            "F": 0
+          },
+          "averageGrade": "B",
+          "averageGradeNumeric": 3.71,
+          "failRate": 0
+        }
+      ]
+    }
+  }
+}

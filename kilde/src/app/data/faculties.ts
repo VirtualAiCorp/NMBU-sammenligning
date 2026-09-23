@@ -85,10 +85,35 @@ import {
 } from './minaMarketStatusData';
 import { STUDIEBAROMETER_ENTRIES as MINA_STUDIEBAROMETER } from './minaStudiebarometerData';
 
+import {
+  LANDSAM_GROUPS as VET_GROUPS,
+  LANDSAM_YEARS as VET_YEARS,
+} from './vetAdmissionData';
+import {
+  LANDSAM_COURSE_GROUPS as VET_COURSE_GROUPS,
+  LANDSAM_COURSE_YEARS as VET_COURSE_YEARS,
+} from './vetCourseData';
+import { LANDSAM_COURSE_MAPPING as VET_COURSE_MAPPING } from './vetCourseMapping';
+import { LANDSAM_STUDYPLAN_GROUPS as VET_STUDYPLAN_GROUPS } from './vetStudyPlanData';
+import {
+  MARKET_STATUS as VET_MARKET_STATUS,
+  MARKET_STATUS_HENTET as VET_MARKET_STATUS_HENTET,
+} from './vetMarketStatusData';
+import { STUDIEBAROMETER_ENTRIES as VET_STUDIEBAROMETER } from './vetStudiebarometerData';
+
+import type { CompletionGroup } from './landsamCompletionData';
+import { COMPLETION_GROUPS as LANDSAM_COMPLETION, COMPLETION_HENTET as LANDSAM_COMPLETION_HENTET } from './landsamCompletionData';
+import { COMPLETION_GROUPS as REALTEK_COMPLETION, COMPLETION_HENTET as REALTEK_COMPLETION_HENTET } from './realtekCompletionData';
+import { COMPLETION_GROUPS as BIOVIT_COMPLETION, COMPLETION_HENTET as BIOVIT_COMPLETION_HENTET } from './biovitCompletionData';
+import { COMPLETION_GROUPS as KBM_COMPLETION, COMPLETION_HENTET as KBM_COMPLETION_HENTET } from './kbmCompletionData';
+import { COMPLETION_GROUPS as MINA_COMPLETION, COMPLETION_HENTET as MINA_COMPLETION_HENTET } from './minaCompletionData';
+import { COMPLETION_GROUPS as VET_COMPLETION, COMPLETION_HENTET as VET_COMPLETION_HENTET } from './vetCompletionData';
+
 export type { MarketInstitution, MarketDoc };
+export type { CompletionGroup };
 export type { SbEntry };
 
-export type FacultyId = 'landsam' | 'realtek' | 'biovit' | 'kbm' | 'mina';
+export type FacultyId = 'landsam' | 'realtek' | 'biovit' | 'kbm' | 'mina' | 'vet';
 
 export interface FacultyData {
   id: FacultyId;
@@ -113,6 +138,9 @@ export interface FacultyData {
   marketStatusHentet: string | null;
   /** Studiebarometeret: ett innslag per studieprogram i opptaksgruppene. */
   studiebarometer: SbEntry[];
+  /** Gjennomføring, frafall, registrerte, nye og kandidater per program (DBH 707/123/110/104/335). */
+  completionGroups: CompletionGroup[];
+  completionHentet: string | null;
 }
 
 export const FACULTIES: Record<FacultyId, FacultyData> = {
@@ -131,6 +159,8 @@ export const FACULTIES: Record<FacultyId, FacultyData> = {
     marketStatus: LANDSAM_MARKET_STATUS,
     marketStatusHentet: LANDSAM_MARKET_STATUS_HENTET,
     studiebarometer: LANDSAM_STUDIEBAROMETER,
+    completionGroups: LANDSAM_COMPLETION,
+    completionHentet: LANDSAM_COMPLETION_HENTET,
   },
   realtek: {
     id: 'realtek',
@@ -147,6 +177,8 @@ export const FACULTIES: Record<FacultyId, FacultyData> = {
     marketStatus: REALTEK_MARKET_STATUS,
     marketStatusHentet: REALTEK_MARKET_STATUS_HENTET,
     studiebarometer: REALTEK_STUDIEBAROMETER,
+    completionGroups: REALTEK_COMPLETION,
+    completionHentet: REALTEK_COMPLETION_HENTET,
   },
   biovit: {
     id: 'biovit',
@@ -163,6 +195,8 @@ export const FACULTIES: Record<FacultyId, FacultyData> = {
     marketStatus: BIOVIT_MARKET_STATUS,
     marketStatusHentet: BIOVIT_MARKET_STATUS_HENTET,
     studiebarometer: BIOVIT_STUDIEBAROMETER,
+    completionGroups: BIOVIT_COMPLETION,
+    completionHentet: BIOVIT_COMPLETION_HENTET,
   },
   kbm: {
     id: 'kbm',
@@ -179,6 +213,8 @@ export const FACULTIES: Record<FacultyId, FacultyData> = {
     marketStatus: KBM_MARKET_STATUS,
     marketStatusHentet: KBM_MARKET_STATUS_HENTET,
     studiebarometer: KBM_STUDIEBAROMETER,
+    completionGroups: KBM_COMPLETION,
+    completionHentet: KBM_COMPLETION_HENTET,
   },
   mina: {
     id: 'mina',
@@ -195,10 +231,30 @@ export const FACULTIES: Record<FacultyId, FacultyData> = {
     marketStatus: MINA_MARKET_STATUS,
     marketStatusHentet: MINA_MARKET_STATUS_HENTET,
     studiebarometer: MINA_STUDIEBAROMETER,
+    completionGroups: MINA_COMPLETION,
+    completionHentet: MINA_COMPLETION_HENTET,
+  },
+  vet: {
+    id: 'vet',
+    label: 'Veterinærhøgskolen',
+    shortLabel: 'VET',
+    subtitle: 'Veterinærmedisin og dyrepleie',
+    desc: 'Opptakstall, poenggrenser, emnekarakterer, studieplaner, Studiebarometeret og markedsstatus for veterinærmedisin og dyrepleie. Veterinærmedisin er eneste norske tilbud og vises med medisinstudiene som referanse; dyrepleie sammenlignes med Nord universitet.',
+    admissionGroups: VET_GROUPS,
+    admissionYears: VET_YEARS,
+    courseGroups: VET_COURSE_GROUPS,
+    courseYears: VET_COURSE_YEARS,
+    courseMapping: VET_COURSE_MAPPING,
+    studyPlanGroups: VET_STUDYPLAN_GROUPS,
+    marketStatus: VET_MARKET_STATUS,
+    marketStatusHentet: VET_MARKET_STATUS_HENTET,
+    studiebarometer: VET_STUDIEBAROMETER,
+    completionGroups: VET_COMPLETION,
+    completionHentet: VET_COMPLETION_HENTET,
   },
 };
 
-export const FACULTY_IDS: FacultyId[] = ['landsam', 'realtek', 'biovit', 'kbm', 'mina'];
+export const FACULTY_IDS: FacultyId[] = ['landsam', 'realtek', 'biovit', 'kbm', 'mina', 'vet'];
 
 /** Vises når et fakultet ennå ikke har noen data i de genererte modulene. */
 export const INGEN_DATA_TEKST = 'Ingen data lagt inn ennå for dette fakultetet';

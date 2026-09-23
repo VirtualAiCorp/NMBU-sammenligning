@@ -1,0 +1,12 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/ntnu/HELT6021?include=grades&semester=both&year_item=2022",
+  "slug": "ntnu",
+  "code": "HELT6021",
+  "year": 2022,
+  "status": 404,
+  "json": {
+    "error": {
+      "message": "Unknown course"
+    }
+  }
+}

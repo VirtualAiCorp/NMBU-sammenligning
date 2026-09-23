@@ -1,0 +1,2397 @@
+[
+  {
+    "kilde": "NMBU",
+    "inst": "NMBU",
+    "inst_kode": "1173",
+    "kode": "BUS133F-1",
+    "kw_code": "BUS133F",
+    "navn": "Excel – fra data til informasjon – Nettversjon",
+    "year": 2024,
+    "dbh": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      81,
+      56,
+      137,
+      0
+    ],
+    "kw_sum": {
+      "total": 135,
+      "dist": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "E": 0,
+        "F": 0,
+        "G": 81,
+        "H": 54
+      },
+      "n_semesters": 2,
+      "scales": [
+        "G-H"
+      ]
+    },
+    "verdikt": "små avvik",
+    "diff": 2,
+    "pct": 1.5,
+    "note": null,
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/NMBU_1173_BUS133F-1_2024.json",
+    "extra": null
+  },
+  {
+    "kilde": "NMBU",
+    "inst": "NMBU",
+    "inst_kode": "1173",
+    "kode": "FYS103-1",
+    "kw_code": "FYS103",
+    "navn": "Måleteknikk og dataanalyse",
+    "year": 2024,
+    "dbh": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      58,
+      3,
+      61,
+      0
+    ],
+    "kw_sum": {
+      "total": 61,
+      "dist": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "E": 0,
+        "F": 0,
+        "G": 58,
+        "H": 3
+      },
+      "n_semesters": 1,
+      "scales": [
+        "G-H"
+      ]
+    },
+    "verdikt": "stemmer",
+    "diff": 0,
+    "pct": 0.0,
+    "note": null,
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/NMBU_1173_FYS103-1_2024.json",
+    "extra": null
+  },
+  {
+    "kilde": "NMBU",
+    "inst": "NMBU",
+    "inst_kode": "1173",
+    "kode": "MATH112-1",
+    "kw_code": "MATH112",
+    "navn": "Kalkulus 2",
+    "year": 2024,
+    "dbh": [
+      49,
+      33,
+      69,
+      30,
+      22,
+      57,
+      0,
+      0,
+      260,
+      0
+    ],
+    "kw_sum": {
+      "total": 258,
+      "dist": {
+        "A": 47,
+        "B": 33,
+        "C": 69,
+        "D": 30,
+        "E": 22,
+        "F": 57,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 2,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "små avvik",
+    "diff": 2,
+    "pct": 0.8,
+    "note": null,
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/NMBU_1173_MATH112-1_2024.json",
+    "extra": null
+  },
+  {
+    "kilde": "NMBU",
+    "inst": "NMBU",
+    "inst_kode": "1173",
+    "kode": "MILJØ200-1",
+    "kw_code": "MILJØ200",
+    "navn": "Forurensning og miljø",
+    "year": 2024,
+    "dbh": [
+      9,
+      13,
+      8,
+      0,
+      0,
+      0,
+      0,
+      0,
+      32,
+      2
+    ],
+    "kw_sum": {
+      "total": 30,
+      "dist": {
+        "A": 9,
+        "B": 13,
+        "C": 8,
+        "D": 0,
+        "E": 0,
+        "F": 0,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 1,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "skjermet i DBH / små avvik",
+    "diff": 2,
+    "pct": 6.2,
+    "note": "skjermet i DBH (skjult=2), forklarer avviket",
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/NMBU_1173_MILJ_200-1_2024.json",
+    "extra": null
+  },
+  {
+    "kilde": "NMBU",
+    "inst": "NMBU",
+    "inst_kode": "1173",
+    "kode": "VET316-1",
+    "kw_code": "VET316",
+    "navn": "Produksjonsdyrmedisin",
+    "year": 2024,
+    "dbh": [
+      3,
+      22,
+      33,
+      10,
+      5,
+      0,
+      0,
+      0,
+      74,
+      1
+    ],
+    "kw_sum": {
+      "total": 68,
+      "dist": {
+        "A": 0,
+        "B": 22,
+        "C": 33,
+        "D": 10,
+        "E": 3,
+        "F": 0,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 2,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "skjermet i DBH / avvik",
+    "diff": 6,
+    "pct": 8.1,
+    "note": "skjermet i DBH (skjult=1), men avvik (6) er større enn skjjulingen alene skulle tilsi",
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/NMBU_1173_VET316-1_2024.json",
+    "extra": null
+  },
+  {
+    "kilde": "NMBU",
+    "inst": "NMBU",
+    "inst_kode": "1173",
+    "kode": "BOT270-1",
+    "kw_code": "BOT270",
+    "navn": "Kartlegging av natur",
+    "year": 2024,
+    "dbh": [
+      3,
+      9,
+      24,
+      0,
+      0,
+      0,
+      0,
+      0,
+      39,
+      3
+    ],
+    "kw_sum": {
+      "total": 36,
+      "dist": {
+        "A": 3,
+        "B": 9,
+        "C": 24,
+        "D": 0,
+        "E": 0,
+        "F": 0,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 1,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "skjermet i DBH / små avvik",
+    "diff": 3,
+    "pct": 7.7,
+    "note": "skjermet i DBH (skjult=3), forklarer avviket",
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/NMBU_1173_BOT270-1_2024.json",
+    "extra": null
+  },
+  {
+    "kilde": "NMBU",
+    "inst": "NMBU",
+    "inst_kode": "1173",
+    "kode": "ECOL330-1",
+    "kw_code": "ECOL330",
+    "navn": "Økologi og bevaring av tropisk regnskog",
+    "year": 2024,
+    "dbh": [
+      4,
+      10,
+      13,
+      14,
+      6,
+      0,
+      0,
+      0,
+      49,
+      2
+    ],
+    "kw_sum": {
+      "total": 47,
+      "dist": {
+        "A": 4,
+        "B": 10,
+        "C": 13,
+        "D": 14,
+        "E": 6,
+        "F": 0,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 1,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "skjermet i DBH / små avvik",
+    "diff": 2,
+    "pct": 4.1,
+    "note": "skjermet i DBH (skjult=2), forklarer avviket",
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/NMBU_1173_ECOL330-1_2024.json",
+    "extra": null
+  },
+  {
+    "kilde": "NMBU",
+    "inst": "NMBU",
+    "inst_kode": "1173",
+    "kode": "TBA331-1",
+    "kw_code": "TBA331",
+    "navn": "Bygningsfysisk simulering",
+    "year": 2024,
+    "dbh": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      49,
+      0,
+      51,
+      2
+    ],
+    "kw_sum": {
+      "total": 49,
+      "dist": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "E": 0,
+        "F": 0,
+        "G": 49,
+        "H": 0
+      },
+      "n_semesters": 1,
+      "scales": [
+        "G-H"
+      ]
+    },
+    "verdikt": "skjermet i DBH / små avvik",
+    "diff": 2,
+    "pct": 3.9,
+    "note": "skjermet i DBH (skjult=2), forklarer avviket",
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/NMBU_1173_TBA331-1_2024.json",
+    "extra": null
+  },
+  {
+    "kilde": "NMBU",
+    "inst": "NMBU",
+    "inst_kode": "1173",
+    "kode": "THT302-1",
+    "kw_code": "THT302",
+    "navn": "Analyse og design av drikkevannsnett",
+    "year": 2024,
+    "dbh": [
+      0,
+      16,
+      6,
+      8,
+      0,
+      6,
+      0,
+      0,
+      37,
+      1
+    ],
+    "kw_sum": {
+      "total": 36,
+      "dist": {
+        "A": 0,
+        "B": 16,
+        "C": 6,
+        "D": 8,
+        "E": 0,
+        "F": 6,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 1,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "skjermet i DBH / små avvik",
+    "diff": 1,
+    "pct": 2.7,
+    "note": "skjermet i DBH (skjult=1), forklarer avviket",
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/NMBU_1173_THT302-1_2024.json",
+    "extra": null
+  },
+  {
+    "kilde": "NMBU",
+    "inst": "NMBU",
+    "inst_kode": "1173",
+    "kode": "PPRA300-1",
+    "kw_code": "PPRA300",
+    "navn": "Praksisopplæring",
+    "year": 2024,
+    "dbh": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      40,
+      0,
+      40,
+      0
+    ],
+    "kw_sum": {
+      "total": 39,
+      "dist": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "E": 0,
+        "F": 0,
+        "G": 39,
+        "H": 0
+      },
+      "n_semesters": 2,
+      "scales": [
+        "G-H"
+      ]
+    },
+    "verdikt": "små avvik",
+    "diff": 1,
+    "pct": 2.5,
+    "note": null,
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/NMBU_1173_PPRA300-1_2024.json",
+    "extra": null
+  },
+  {
+    "kilde": "NMBU",
+    "inst": "NMBU",
+    "inst_kode": "1173",
+    "kode": "KJB100-1",
+    "kw_code": "KJB100",
+    "navn": "Introduksjon til biokjemi",
+    "year": 2024,
+    "dbh": [
+      0,
+      5,
+      31,
+      14,
+      0,
+      16,
+      0,
+      0,
+      68,
+      2
+    ],
+    "kw_sum": {
+      "total": 66,
+      "dist": {
+        "A": 0,
+        "B": 5,
+        "C": 31,
+        "D": 14,
+        "E": 0,
+        "F": 16,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 1,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "skjermet i DBH / små avvik",
+    "diff": 2,
+    "pct": 2.9,
+    "note": "skjermet i DBH (skjult=2), forklarer avviket",
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/NMBU_1173_KJB100-1_2024.json",
+    "extra": null
+  },
+  {
+    "kilde": "NMBU",
+    "inst": "NMBU",
+    "inst_kode": "1173",
+    "kode": "STAT351-1",
+    "kw_code": "STAT351",
+    "navn": "Statistisk teori",
+    "year": 2024,
+    "dbh": [
+      0,
+      3,
+      12,
+      10,
+      6,
+      4,
+      0,
+      0,
+      35,
+      0
+    ],
+    "kw_sum": {
+      "total": 33,
+      "dist": {
+        "A": 0,
+        "B": 3,
+        "C": 11,
+        "D": 10,
+        "E": 6,
+        "F": 3,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 2,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "små avvik",
+    "diff": 2,
+    "pct": 5.7,
+    "note": null,
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/NMBU_1173_STAT351-1_2024.json",
+    "extra": null
+  },
+  {
+    "kilde": "NMBU",
+    "inst": "NMBU",
+    "inst_kode": "1173",
+    "kode": "PHI102-1",
+    "kw_code": "PHI102",
+    "navn": "Examen philosophicum - Engelsk versjon",
+    "year": 2024,
+    "dbh": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      127,
+      4,
+      131,
+      0
+    ],
+    "kw_sum": {
+      "total": 131,
+      "dist": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "E": 0,
+        "F": 0,
+        "G": 127,
+        "H": 4
+      },
+      "n_semesters": 1,
+      "scales": [
+        "G-H"
+      ]
+    },
+    "verdikt": "stemmer",
+    "diff": 0,
+    "pct": 0.0,
+    "note": null,
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/NMBU_1173_PHI102-1_2024.json",
+    "extra": null
+  },
+  {
+    "kilde": "NMBU",
+    "inst": "NMBU",
+    "inst_kode": "1173",
+    "kode": "M60-ECOL-1",
+    "kw_code": "M60-ECOL",
+    "navn": "Masteroppgave",
+    "year": 2024,
+    "dbh": [
+      7,
+      15,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      33,
+      1
+    ],
+    "kw_sum": {
+      "total": 29,
+      "dist": {
+        "A": 7,
+        "B": 13,
+        "C": 9,
+        "D": 0,
+        "E": 0,
+        "F": 0,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 2,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "skjermet i DBH / avvik",
+    "diff": 4,
+    "pct": 12.1,
+    "note": "skjermet i DBH (skjult=1), men avvik (4) er større enn skjjulingen alene skulle tilsi",
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/NMBU_1173_M60-ECOL-1_2024.json",
+    "extra": null
+  },
+  {
+    "kilde": "NMBU",
+    "inst": "NMBU",
+    "inst_kode": "1173",
+    "kode": "TBA201-1",
+    "kw_code": "TBA201",
+    "navn": "Geoteknikk",
+    "year": 2024,
+    "dbh": [
+      0,
+      3,
+      4,
+      10,
+      6,
+      8,
+      0,
+      0,
+      32,
+      1
+    ],
+    "kw_sum": {
+      "total": 25,
+      "dist": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 9,
+        "E": 6,
+        "F": 7,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 2,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "skjermet i DBH / avvik",
+    "diff": 7,
+    "pct": 21.9,
+    "note": "skjermet i DBH (skjult=1), men avvik (7) er større enn skjjulingen alene skulle tilsi",
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/NMBU_1173_TBA201-1_2024.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "OsloMet",
+    "inst_kode": "1175",
+    "kode": "SFV4900-1",
+    "kw_code": "SFV4900",
+    "navn": "Dømmekraft, makt og etikk i sosialfaglig praksis",
+    "year": 2024,
+    "dbh": [
+      0,
+      9,
+      13,
+      8,
+      0,
+      0,
+      0,
+      0,
+      33,
+      3
+    ],
+    "kw_sum": {
+      "total": 29,
+      "dist": {
+        "A": 0,
+        "B": 9,
+        "C": 12,
+        "D": 8,
+        "E": 0,
+        "F": 0,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 2,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "skjermet i DBH / avvik",
+    "diff": 4,
+    "pct": 12.1,
+    "note": "skjermet i DBH (skjult=3), forklarer avviket",
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_1175_SFV4900-1_2024.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "HVL",
+    "inst_kode": "0238",
+    "kode": "MGUKRV101-1",
+    "kw_code": "MGUKRV101",
+    "navn": "KRLE 1, emne 1 - Religioner, livssyn og fagdidaktikk",
+    "year": 2022,
+    "dbh": [
+      5,
+      10,
+      13,
+      4,
+      0,
+      0,
+      0,
+      0,
+      32,
+      0
+    ],
+    "kw_sum": null,
+    "verdikt": "ikke funnet i Karakterweb",
+    "diff": null,
+    "pct": null,
+    "note": null,
+    "http_status": 404,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_0238_MGUKRV101-1_2022.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "UiB",
+    "inst_kode": "1120",
+    "kode": "MAT101-0",
+    "kw_code": "MAT101",
+    "navn": "Brukerkurs i matematikk I",
+    "year": 2023,
+    "dbh": [
+      35,
+      70,
+      94,
+      87,
+      96,
+      53,
+      0,
+      0,
+      435,
+      0
+    ],
+    "kw_sum": {
+      "total": 435,
+      "dist": {
+        "A": 35,
+        "B": 70,
+        "C": 94,
+        "D": 87,
+        "E": 96,
+        "F": 53,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 2,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "stemmer",
+    "diff": 0,
+    "pct": 0.0,
+    "note": null,
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_1120_MAT101-0_2023.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "NHH",
+    "inst_kode": "1240",
+    "kode": "ECO441-1",
+    "kw_code": "ECO441",
+    "navn": "Skatt og økonomisk politikk (N)",
+    "year": 2022,
+    "dbh": [
+      7,
+      9,
+      9,
+      3,
+      0,
+      0,
+      0,
+      0,
+      30,
+      2
+    ],
+    "kw_sum": {
+      "total": 28,
+      "dist": {
+        "A": 7,
+        "B": 9,
+        "C": 9,
+        "D": 3,
+        "E": 0,
+        "F": 0,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 1,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "skjermet i DBH / små avvik",
+    "diff": 2,
+    "pct": 6.7,
+    "note": "skjermet i DBH (skjult=2), forklarer avviket",
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_1240_ECO441-1_2022.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "UiA",
+    "inst_kode": "1171",
+    "kode": "TFL119-1",
+    "kw_code": "TFL119",
+    "navn": "IT og samfunnsendringer",
+    "year": 2023,
+    "dbh": [
+      4,
+      6,
+      14,
+      5,
+      0,
+      0,
+      0,
+      0,
+      30,
+      1
+    ],
+    "kw_sum": {
+      "total": 29,
+      "dist": {
+        "A": 4,
+        "B": 6,
+        "C": 14,
+        "D": 5,
+        "E": 0,
+        "F": 0,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 1,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "skjermet i DBH / små avvik",
+    "diff": 1,
+    "pct": 3.3,
+    "note": "skjermet i DBH (skjult=1), forklarer avviket",
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_1171_TFL119-1_2023.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "BI",
+    "inst_kode": "8241",
+    "kode": "DIG36301",
+    "kw_code": "DIG36301",
+    "navn": "E-handel",
+    "year": 2023,
+    "dbh": [
+      29,
+      67,
+      82,
+      25,
+      0,
+      0,
+      0,
+      0,
+      205,
+      2
+    ],
+    "kw_sum": {
+      "total": 201,
+      "dist": {
+        "A": 28,
+        "B": 66,
+        "C": 82,
+        "D": 25,
+        "E": 0,
+        "F": 0,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 2,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "skjermet i DBH / små avvik",
+    "diff": 4,
+    "pct": 2.0,
+    "note": "skjermet i DBH (skjult=2), forklarer avviket",
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_8241_DIG36301_2023.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "HVL",
+    "inst_kode": "0238",
+    "kode": "BYG102-1",
+    "kw_code": "BYG102",
+    "navn": "Statistikk og landmåling",
+    "year": 2024,
+    "dbh": [
+      9,
+      41,
+      38,
+      15,
+      8,
+      3,
+      0,
+      0,
+      114,
+      0
+    ],
+    "kw_sum": {
+      "total": 112,
+      "dist": {
+        "A": 9,
+        "B": 41,
+        "C": 37,
+        "D": 15,
+        "E": 7,
+        "F": 3,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 2,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "små avvik",
+    "diff": 2,
+    "pct": 1.8,
+    "note": null,
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_0238_BYG102-1_2024.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "UiB",
+    "inst_kode": "1120",
+    "kode": "ECON340-0",
+    "kw_code": "ECON340",
+    "navn": "Økonometri I",
+    "year": 2024,
+    "dbh": [
+      8,
+      15,
+      14,
+      7,
+      3,
+      4,
+      0,
+      0,
+      51,
+      0
+    ],
+    "kw_sum": {
+      "total": 47,
+      "dist": {
+        "A": 8,
+        "B": 15,
+        "C": 14,
+        "D": 6,
+        "E": 0,
+        "F": 4,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 2,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "avvik",
+    "diff": 4,
+    "pct": 7.8,
+    "note": null,
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_1120_ECON340-0_2024.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "NHH",
+    "inst_kode": "1240",
+    "kode": "BAN402-1",
+    "kw_code": "BAN402",
+    "navn": "Decision Modelling in Business",
+    "year": 2024,
+    "dbh": [
+      34,
+      27,
+      19,
+      5,
+      5,
+      0,
+      0,
+      0,
+      92,
+      2
+    ],
+    "kw_sum": {
+      "total": 90,
+      "dist": {
+        "A": 34,
+        "B": 27,
+        "C": 19,
+        "D": 5,
+        "E": 5,
+        "F": 0,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 1,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "skjermet i DBH / små avvik",
+    "diff": 2,
+    "pct": 2.2,
+    "note": "skjermet i DBH (skjult=2), forklarer avviket",
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_1240_BAN402-1_2024.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "UiA",
+    "inst_kode": "1171",
+    "kode": "PED159-1",
+    "kw_code": "PED159",
+    "navn": "Elevens faglige, sosiale og personlige utvikling og læring i et mangfoldig klasserom",
+    "year": 2023,
+    "dbh": [
+      9,
+      21,
+      42,
+      9,
+      0,
+      0,
+      0,
+      0,
+      83,
+      2
+    ],
+    "kw_sum": {
+      "total": 81,
+      "dist": {
+        "A": 9,
+        "B": 21,
+        "C": 42,
+        "D": 9,
+        "E": 0,
+        "F": 0,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 2,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "skjermet i DBH / små avvik",
+    "diff": 2,
+    "pct": 2.4,
+    "note": "skjermet i DBH (skjult=2), forklarer avviket",
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_1171_PED159-1_2023.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "NTNU",
+    "inst_kode": "1150",
+    "kode": "INGT1002-1",
+    "kw_code": "INGT1002",
+    "navn": "Programmering, numerikk og sikkerhet",
+    "year": 2023,
+    "dbh": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      553,
+      73,
+      626,
+      0
+    ],
+    "kw_sum": {
+      "total": 626,
+      "dist": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "E": 0,
+        "F": 0,
+        "G": 553,
+        "H": 73
+      },
+      "n_semesters": 1,
+      "scales": [
+        "G-H"
+      ]
+    },
+    "verdikt": "stemmer",
+    "diff": 0,
+    "pct": 0.0,
+    "note": null,
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_1150_INGT1002-1_2023.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "BI",
+    "inst_kode": "8241",
+    "kode": "GRA65143",
+    "kw_code": "GRA65143",
+    "navn": "Corporate Finance",
+    "year": 2023,
+    "dbh": [
+      11,
+      13,
+      25,
+      36,
+      52,
+      32,
+      0,
+      0,
+      169,
+      0
+    ],
+    "kw_sum": {
+      "total": 169,
+      "dist": {
+        "A": 11,
+        "B": 13,
+        "C": 25,
+        "D": 36,
+        "E": 52,
+        "F": 32,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 1,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "stemmer",
+    "diff": 0,
+    "pct": 0.0,
+    "note": null,
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_8241_GRA65143_2023.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "NHH",
+    "inst_kode": "1240",
+    "kode": "MBM401B-1",
+    "kw_code": "MBM401B",
+    "navn": "Consumer Behaviour",
+    "year": 2024,
+    "dbh": [
+      18,
+      53,
+      13,
+      11,
+      0,
+      0,
+      0,
+      0,
+      95,
+      0
+    ],
+    "kw_sum": {
+      "total": 95,
+      "dist": {
+        "A": 18,
+        "B": 53,
+        "C": 13,
+        "D": 11,
+        "E": 0,
+        "F": 0,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 1,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "stemmer",
+    "diff": 0,
+    "pct": 0.0,
+    "note": null,
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_1240_MBM401B-1_2024.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "NTNU",
+    "inst_kode": "1150",
+    "kode": "HELT6021-1",
+    "kw_code": "HELT6021",
+    "navn": "Fordypning i praksisveiledning",
+    "year": 2022,
+    "dbh": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      73,
+      0,
+      75,
+      2
+    ],
+    "kw_sum": null,
+    "verdikt": "ikke funnet i Karakterweb",
+    "diff": null,
+    "pct": null,
+    "note": null,
+    "http_status": 404,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_1150_HELT6021-1_2022.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "UiB",
+    "inst_kode": "1120",
+    "kode": "RELDI112-0",
+    "kw_code": "RELDI112",
+    "navn": "Fagdidaktikk i religionsvitenskap 2 (for grunnskolen) lektorutdanning",
+    "year": 2023,
+    "dbh": [
+      3,
+      7,
+      12,
+      8,
+      0,
+      0,
+      0,
+      0,
+      33,
+      3
+    ],
+    "kw_sum": {
+      "total": 26,
+      "dist": {
+        "A": 0,
+        "B": 6,
+        "C": 12,
+        "D": 8,
+        "E": 0,
+        "F": 0,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 2,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "skjermet i DBH / avvik",
+    "diff": 7,
+    "pct": 21.2,
+    "note": "skjermet i DBH (skjult=3), men avvik (7) er større enn skjjulingen alene skulle tilsi",
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_1120_RELDI112-0_2023.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "NHH",
+    "inst_kode": "1240",
+    "kode": "SOL4-1",
+    "kw_code": "SOL4",
+    "navn": "Strategisk ledelse",
+    "year": 2023,
+    "dbh": [
+      112,
+      186,
+      70,
+      13,
+      0,
+      5,
+      0,
+      0,
+      388,
+      2
+    ],
+    "kw_sum": {
+      "total": 385,
+      "dist": {
+        "A": 112,
+        "B": 186,
+        "C": 70,
+        "D": 12,
+        "E": 0,
+        "F": 5,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 2,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "skjermet i DBH / små avvik",
+    "diff": 3,
+    "pct": 0.8,
+    "note": "skjermet i DBH (skjult=2), forklarer avviket",
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_1240_SOL4-1_2023.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "UiA",
+    "inst_kode": "1171",
+    "kode": "NO-158-1",
+    "kw_code": "NO-158",
+    "navn": "Norsk for mellomtrinnet",
+    "year": 2023,
+    "dbh": [
+      0,
+      5,
+      16,
+      5,
+      0,
+      5,
+      0,
+      0,
+      33,
+      2
+    ],
+    "kw_sum": {
+      "total": 27,
+      "dist": {
+        "A": 0,
+        "B": 5,
+        "C": 14,
+        "D": 4,
+        "E": 0,
+        "F": 4,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 2,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "skjermet i DBH / avvik",
+    "diff": 6,
+    "pct": 18.2,
+    "note": "skjermet i DBH (skjult=2), men avvik (6) er større enn skjjulingen alene skulle tilsi",
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_1171_NO-158-1_2023.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "NTNU",
+    "inst_kode": "1150",
+    "kode": "NFUT0303-1",
+    "kw_code": "NFUT0303",
+    "navn": "Norsk for utlendinger, trinn 3",
+    "year": 2022,
+    "dbh": [
+      0,
+      7,
+      12,
+      7,
+      0,
+      5,
+      0,
+      0,
+      33,
+      2
+    ],
+    "kw_sum": {
+      "total": 27,
+      "dist": {
+        "A": 0,
+        "B": 7,
+        "C": 12,
+        "D": 5,
+        "E": 0,
+        "F": 3,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 2,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "skjermet i DBH / avvik",
+    "diff": 6,
+    "pct": 18.2,
+    "note": "skjermet i DBH (skjult=2), men avvik (6) er større enn skjjulingen alene skulle tilsi",
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_1150_NFUT0303-1_2022.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "UiO",
+    "inst_kode": "1110",
+    "kode": "GEO2130-1",
+    "kw_code": "GEO2130",
+    "navn": "Strukturgeologi",
+    "year": 2024,
+    "dbh": [
+      6,
+      14,
+      14,
+      3,
+      0,
+      0,
+      0,
+      0,
+      37,
+      0
+    ],
+    "kw_sum": {
+      "total": 37,
+      "dist": {
+        "A": 6,
+        "B": 14,
+        "C": 14,
+        "D": 3,
+        "E": 0,
+        "F": 0,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 1,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "stemmer",
+    "diff": 0,
+    "pct": 0.0,
+    "note": null,
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_1110_GEO2130-1_2024.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "BI",
+    "inst_kode": "8241",
+    "kode": "MET34601",
+    "kw_code": "MET34601",
+    "navn": "Vitenskapelig tenkning",
+    "year": 2023,
+    "dbh": [
+      50,
+      198,
+      223,
+      147,
+      103,
+      22,
+      0,
+      0,
+      743,
+      0
+    ],
+    "kw_sum": {
+      "total": 743,
+      "dist": {
+        "A": 50,
+        "B": 198,
+        "C": 223,
+        "D": 147,
+        "E": 103,
+        "F": 22,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 1,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "stemmer",
+    "diff": 0,
+    "pct": 0.0,
+    "note": null,
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_8241_MET34601_2023.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "OsloMet",
+    "inst_kode": "1175",
+    "kode": "BYPE2200-1",
+    "kw_code": "BYPE2200",
+    "navn": "Landmåling og statistikk",
+    "year": 2022,
+    "dbh": [
+      51,
+      23,
+      34,
+      7,
+      4,
+      14,
+      0,
+      0,
+      133,
+      0
+    ],
+    "kw_sum": null,
+    "verdikt": "ikke funnet i Karakterweb",
+    "diff": null,
+    "pct": null,
+    "note": null,
+    "http_status": 404,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_1175_BYPE2200-1_2022.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "UiB",
+    "inst_kode": "1120",
+    "kode": "JUS277-2-A-0",
+    "kw_code": "JUS277-2-A",
+    "navn": "Introduction to Copyright Law",
+    "year": 2022,
+    "dbh": [
+      0,
+      7,
+      13,
+      10,
+      7,
+      0,
+      0,
+      0,
+      39,
+      2
+    ],
+    "kw_sum": null,
+    "verdikt": "ikke funnet i Karakterweb",
+    "diff": null,
+    "pct": null,
+    "note": null,
+    "http_status": 404,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_1120_JUS277-2-A-0_2022.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "UiA",
+    "inst_kode": "1171",
+    "kode": "ORG231-G",
+    "kw_code": "ORG231 (korrigert: -G er DBH-versjonskode og strippes, ikke bare rene tall)",
+    "navn": "Praksis i HR",
+    "year": 2024,
+    "dbh": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      39,
+      0,
+      39,
+      0
+    ],
+    "kw_sum": {
+      "total": 39,
+      "dist": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "E": 0,
+        "F": 0,
+        "G": 39,
+        "H": 0
+      },
+      "n_semesters": 1,
+      "scales": [
+        "G-H"
+      ]
+    },
+    "verdikt": "stemmer",
+    "diff": 0,
+    "pct": 0.0,
+    "note": null,
+    "http_status": 404,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_1171_ORG231-G_2024.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "NTNU",
+    "inst_kode": "1150",
+    "kode": "INFT1003-1",
+    "kw_code": "INFT1003",
+    "navn": "Webteknologi og teamarbeid",
+    "year": 2022,
+    "dbh": [
+      3,
+      15,
+      23,
+      0,
+      0,
+      0,
+      0,
+      0,
+      41,
+      0
+    ],
+    "kw_sum": {
+      "total": 41,
+      "dist": {
+        "A": 3,
+        "B": 15,
+        "C": 23,
+        "D": 0,
+        "E": 0,
+        "F": 0,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 1,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "stemmer",
+    "diff": 0,
+    "pct": 0.0,
+    "note": null,
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_1150_INFT1003-1_2022.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "UiO",
+    "inst_kode": "1110",
+    "kode": "ECON4915-1",
+    "kw_code": "ECON4915",
+    "navn": "Development Economics",
+    "year": 2023,
+    "dbh": [
+      9,
+      11,
+      11,
+      7,
+      0,
+      0,
+      0,
+      0,
+      39,
+      1
+    ],
+    "kw_sum": {
+      "total": 38,
+      "dist": {
+        "A": 9,
+        "B": 11,
+        "C": 11,
+        "D": 7,
+        "E": 0,
+        "F": 0,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 1,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "skjermet i DBH / små avvik",
+    "diff": 1,
+    "pct": 2.6,
+    "note": "skjermet i DBH (skjult=1), forklarer avviket",
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_1110_ECON4915-1_2023.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "OsloMet",
+    "inst_kode": "1175",
+    "kode": "MATS1500-1",
+    "kw_code": "MATS1500",
+    "navn": "Materialteknologi",
+    "year": 2023,
+    "dbh": [
+      3,
+      6,
+      14,
+      15,
+      14,
+      29,
+      0,
+      0,
+      81,
+      0
+    ],
+    "kw_sum": {
+      "total": 79,
+      "dist": {
+        "A": 3,
+        "B": 6,
+        "C": 12,
+        "D": 15,
+        "E": 14,
+        "F": 29,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 2,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "små avvik",
+    "diff": 2,
+    "pct": 2.5,
+    "note": null,
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_1175_MATS1500-1_2023.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "HVL",
+    "inst_kode": "0238",
+    "kode": "DAT250-1",
+    "kw_code": "DAT250",
+    "navn": "Avanserte programvareteknologier",
+    "year": 2023,
+    "dbh": [
+      3,
+      13,
+      10,
+      8,
+      0,
+      0,
+      0,
+      0,
+      34,
+      0
+    ],
+    "kw_sum": {
+      "total": 34,
+      "dist": {
+        "A": 3,
+        "B": 13,
+        "C": 10,
+        "D": 8,
+        "E": 0,
+        "F": 0,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 1,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "stemmer",
+    "diff": 0,
+    "pct": 0.0,
+    "note": null,
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_0238_DAT250-1_2023.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "UiB",
+    "inst_kode": "1120",
+    "kode": "PROPSY307-0",
+    "kw_code": "PROPSY307",
+    "navn": "Skole- og opplæringspsykologi",
+    "year": 2023,
+    "dbh": [
+      19,
+      45,
+      35,
+      4,
+      0,
+      0,
+      0,
+      0,
+      103,
+      0
+    ],
+    "kw_sum": {
+      "total": 103,
+      "dist": {
+        "A": 19,
+        "B": 45,
+        "C": 35,
+        "D": 4,
+        "E": 0,
+        "F": 0,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 2,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "stemmer",
+    "diff": 0,
+    "pct": 0.0,
+    "note": null,
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_1120_PROPSY307-0_2023.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "UiA",
+    "inst_kode": "1171",
+    "kode": "MAS414-G",
+    "kw_code": "MAS414 (korrigert)",
+    "navn": "Flerlegemedynamikk for mekatroniske systemer",
+    "year": 2022,
+    "dbh": [
+      3,
+      6,
+      6,
+      8,
+      3,
+      15,
+      0,
+      0,
+      41,
+      0
+    ],
+    "kw_sum": {
+      "total": 36,
+      "dist": {
+        "A": 3,
+        "B": 6,
+        "C": 5,
+        "D": 7,
+        "E": 0,
+        "F": 15,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 2,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "avvik",
+    "diff": 5,
+    "pct": 12.2,
+    "note": null,
+    "http_status": 404,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_1171_MAS414-G_2022.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "UiO",
+    "inst_kode": "1110",
+    "kode": "MUS3090-1",
+    "kw_code": "MUS3090",
+    "navn": "Bacheloroppgave i musikkvitenskap",
+    "year": 2022,
+    "dbh": [
+      13,
+      7,
+      8,
+      0,
+      0,
+      0,
+      0,
+      0,
+      30,
+      2
+    ],
+    "kw_sum": {
+      "total": 28,
+      "dist": {
+        "A": 13,
+        "B": 7,
+        "C": 8,
+        "D": 0,
+        "E": 0,
+        "F": 0,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 1,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "skjermet i DBH / små avvik",
+    "diff": 2,
+    "pct": 6.7,
+    "note": "skjermet i DBH (skjult=2), forklarer avviket",
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_1110_MUS3090-1_2022.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "BI",
+    "inst_kode": "8241",
+    "kode": "GRA64353",
+    "kw_code": "GRA64353",
+    "navn": "Customer Value Analytics",
+    "year": 2024,
+    "dbh": [
+      3,
+      9,
+      24,
+      24,
+      13,
+      6,
+      0,
+      0,
+      79,
+      0
+    ],
+    "kw_sum": {
+      "total": 79,
+      "dist": {
+        "A": 3,
+        "B": 9,
+        "C": 24,
+        "D": 24,
+        "E": 13,
+        "F": 6,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 1,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "stemmer",
+    "diff": 0,
+    "pct": 0.0,
+    "note": null,
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_8241_GRA64353_2024.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "OsloMet",
+    "inst_kode": "1175",
+    "kode": "MAPSY4400-1",
+    "kw_code": "MAPSY4400",
+    "navn": "Psykisk helse for migranter og minoriteter",
+    "year": 2024,
+    "dbh": [
+      16,
+      48,
+      59,
+      34,
+      11,
+      3,
+      0,
+      0,
+      171,
+      0
+    ],
+    "kw_sum": {
+      "total": 169,
+      "dist": {
+        "A": 16,
+        "B": 47,
+        "C": 59,
+        "D": 33,
+        "E": 11,
+        "F": 3,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 2,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "små avvik",
+    "diff": 2,
+    "pct": 1.2,
+    "note": null,
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_1175_MAPSY4400-1_2024.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "NHH",
+    "inst_kode": "1240",
+    "kode": "FOR11-1",
+    "kw_code": "FOR11",
+    "navn": "Business Taxation",
+    "year": 2023,
+    "dbh": [
+      4,
+      7,
+      7,
+      0,
+      0,
+      10,
+      0,
+      0,
+      31,
+      3
+    ],
+    "kw_sum": {
+      "total": 28,
+      "dist": {
+        "A": 4,
+        "B": 7,
+        "C": 7,
+        "D": 0,
+        "E": 0,
+        "F": 10,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 1,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "skjermet i DBH / små avvik",
+    "diff": 3,
+    "pct": 9.7,
+    "note": "skjermet i DBH (skjult=3), forklarer avviket",
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_1240_FOR11-1_2023.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "UiA",
+    "inst_kode": "1171",
+    "kode": "TFL400-1",
+    "kw_code": "TFL400",
+    "navn": "Sustainable Capitalism",
+    "year": 2023,
+    "dbh": [
+      10,
+      39,
+      28,
+      6,
+      0,
+      5,
+      0,
+      0,
+      88,
+      0
+    ],
+    "kw_sum": {
+      "total": 87,
+      "dist": {
+        "A": 10,
+        "B": 38,
+        "C": 28,
+        "D": 6,
+        "E": 0,
+        "F": 5,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 2,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "små avvik",
+    "diff": 1,
+    "pct": 1.1,
+    "note": null,
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_1171_TFL400-1_2023.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "UiO",
+    "inst_kode": "1110",
+    "kode": "PSYC1203-1",
+    "kw_code": "PSYC1203",
+    "navn": "Psykologi og vitenskap",
+    "year": 2022,
+    "dbh": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      143,
+      0,
+      143,
+      0
+    ],
+    "kw_sum": {
+      "total": 143,
+      "dist": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "E": 0,
+        "F": 0,
+        "G": 143,
+        "H": 0
+      },
+      "n_semesters": 1,
+      "scales": [
+        "G-H"
+      ]
+    },
+    "verdikt": "stemmer",
+    "diff": 0,
+    "pct": 0.0,
+    "note": null,
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_1110_PSYC1203-1_2022.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "BI",
+    "inst_kode": "8241",
+    "kode": "GRA66703",
+    "kw_code": "GRA66703",
+    "navn": "Numerical Methods in Python",
+    "year": 2024,
+    "dbh": [
+      64,
+      9,
+      5,
+      0,
+      0,
+      0,
+      0,
+      0,
+      78,
+      0
+    ],
+    "kw_sum": {
+      "total": 78,
+      "dist": {
+        "A": 64,
+        "B": 9,
+        "C": 5,
+        "D": 0,
+        "E": 0,
+        "F": 0,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 1,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "stemmer",
+    "diff": 0,
+    "pct": 0.0,
+    "note": null,
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_8241_GRA66703_2024.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "OsloMet",
+    "inst_kode": "1175",
+    "kode": "ØAMET2200-1",
+    "kw_code": "ØAMET2200",
+    "navn": "Business Decision-Making Using Data",
+    "year": 2024,
+    "dbh": [
+      14,
+      28,
+      50,
+      39,
+      25,
+      35,
+      0,
+      0,
+      191,
+      0
+    ],
+    "kw_sum": {
+      "total": 190,
+      "dist": {
+        "A": 14,
+        "B": 28,
+        "C": 50,
+        "D": 39,
+        "E": 24,
+        "F": 35,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 2,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "små avvik",
+    "diff": 1,
+    "pct": 0.5,
+    "note": null,
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_1175__AMET2200-1_2024.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "HVL",
+    "inst_kode": "0238",
+    "kode": "U5NOR13-1",
+    "kw_code": "U5NOR13",
+    "navn": "Norsk for utenlandske studenter. Begynnerkurs",
+    "year": 2024,
+    "dbh": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      31,
+      0,
+      31,
+      0
+    ],
+    "kw_sum": {
+      "total": 31,
+      "dist": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "E": 0,
+        "F": 0,
+        "G": 31,
+        "H": 0
+      },
+      "n_semesters": 2,
+      "scales": [
+        "G-H"
+      ]
+    },
+    "verdikt": "stemmer",
+    "diff": 0,
+    "pct": 0.0,
+    "note": null,
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_0238_U5NOR13-1_2024.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "NHH",
+    "inst_kode": "1240",
+    "kode": "BAN432-1",
+    "kw_code": "BAN432",
+    "navn": "Applied Textual Data Analysis for Business and Finance",
+    "year": 2022,
+    "dbh": [
+      30,
+      35,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      68,
+      0
+    ],
+    "kw_sum": {
+      "total": 68,
+      "dist": {
+        "A": 30,
+        "B": 35,
+        "C": 3,
+        "D": 0,
+        "E": 0,
+        "F": 0,
+        "G": 0,
+        "H": 0
+      },
+      "n_semesters": 1,
+      "scales": [
+        "A-F"
+      ]
+    },
+    "verdikt": "stemmer",
+    "diff": 0,
+    "pct": 0.0,
+    "note": null,
+    "http_status": 200,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_1240_BAN432-1_2022.json",
+    "extra": null
+  },
+  {
+    "kilde": "Nasjonal",
+    "inst": "BI",
+    "inst_kode": "8241",
+    "kode": "GRA41431",
+    "kw_code": "GRA41431",
+    "navn": "Visualisations & Netw. Theory",
+    "year": 2023,
+    "dbh": [
+      15,
+      22,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      37,
+      0
+    ],
+    "kw_sum": null,
+    "verdikt": "ikke funnet i Karakterweb",
+    "diff": null,
+    "pct": null,
+    "note": null,
+    "http_status": 404,
+    "file": "/Users/mathiassmogeli/Desktop/BOA-sammenligning/data/nmbu/kilder/karakterweb-kontroll/Nasjonal_8241_GRA41431_2023.json",
+    "extra": null
+  }
+]

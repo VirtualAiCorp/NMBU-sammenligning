@@ -1,0 +1,55 @@
+{
+  "url": "https://api.karakterweb.no/v1/courses/uio/ECON4915?include=grades&semester=both&year_item=2023",
+  "slug": "uio",
+  "code": "ECON4915",
+  "year": 2023,
+  "status": 200,
+  "json": {
+    "course": {
+      "institute": "uio",
+      "courseCode": "econ4915",
+      "name": "Development Economics",
+      "candidates": 101,
+      "mainSemester": "spring"
+    },
+    "meta": {
+      "apiVersion": "v1",
+      "generatedAt": "2026-09-23T16:51:36.026Z",
+      "filters": {
+        "include": [
+          "grades"
+        ],
+        "year": {
+          "items": [
+            2023
+          ],
+          "greaterThan": null,
+          "lessThan": null,
+          "top": null
+        },
+        "semester": "both"
+      }
+    },
+    "grades": {
+      "semesters": [
+        {
+          "year": 2023,
+          "semester": "spring",
+          "scale": "A-F",
+          "candidates": 38,
+          "distribution": {
+            "A": 9,
+            "B": 11,
+            "C": 11,
+            "D": 7,
+            "E": 0,
+            "F": 0
+          },
+          "averageGrade": "B",
+          "averageGradeNumeric": 3.58,
+          "failRate": 0
+        }
+      ]
+    }
+  }
+}
