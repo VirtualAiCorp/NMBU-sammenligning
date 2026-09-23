@@ -19,7 +19,7 @@ function nf(v: number, dec: number): string {
 
 // ─── Metrics ─────────────────────────────────────────────────────────────────
 
-type MetricKey = 'alleS' | 'fvS' | 'sokerpress' | 'plasser' | 'kvinner' | 'kvalifiserte' | 'pg_ord' | 'pg_fv' | 'pg_snitt';
+type MetricKey = 'alleS' | 'fvS' | 'sokerpress' | 'plasser' | 'kvinner' | 'kvalifiserte' | 'tilbud' | 'mott' | 'oppmote' | 'pg_ord' | 'pg_fv' | 'pg_snitt';
 
 interface MetricDef {
   id: MetricKey;
@@ -36,12 +36,24 @@ const METRICS: MetricDef[] = [
   { id: 'plasser',      label: 'Studieplasser',       unit: '',  decimals: 0, description: 'Antall studieplasser' },
   { id: 'kvinner',      label: 'Kvinner %',           unit: '%', decimals: 1, description: 'Andel kvinner blant 1. valg-søkere' },
   { id: 'kvalifiserte', label: 'Kvalifiserte',        unit: '',  decimals: 0, description: 'Antall kvalifiserte søkere' },
+  { id: 'tilbud',       label: 'Tilbud',              unit: '',  decimals: 0, description: 'Søkere med tilbud om opptak' },
+  { id: 'mott',         label: 'Møtt',                unit: '',  decimals: 0, description: 'Møtt til studiestart (DBH, lokale opptak)' },
+  { id: 'oppmote',      label: 'Oppmøteandel',        unit: '%', decimals: 1, description: 'Møtt til studiestart i prosent av tilbud om opptak' },
   { id: 'pg_ord',       label: 'Poenggrense ordinær', unit: '',  decimals: 1, description: 'Opptaksgrense ordinær kvote' },
   { id: 'pg_fv',        label: 'Poenggrense FV',      unit: '',  decimals: 1, description: 'Opptaksgrense førstegangsvitnemål' },
   { id: 'pg_snitt',     label: 'Snitt poenggrense',   unit: '',  decimals: 1, description: 'Gjennomsnitt av ordinær og førstegangsvitnemål poenggrense' },
 ];
 
+/** Møtt og oppmøteandel finnes bare for lokale opptak (DBH 379). */
+function metricsFor(local: boolean): MetricDef[] {
+  return METRICS.filter((m) => local || (m.id !== 'mott' && m.id !== 'oppmote'));
+}
+
 function getVal(data: FullYearData, metric: MetricKey): number | null {
+  if (metric === 'oppmote') {
+    if (data.mott == null || data.tilbud == null || data.tilbud === 0) return null;
+    return (data.mott / data.tilbud) * 100;
+  }
   if (metric === 'sokerpress') {
     if (data.fvS === null) return null;
     if (data.plasser !== null && data.plasser > 0) return data.fvS / data.plasser;
@@ -306,7 +318,7 @@ function DataTable({
         <thead>
           <tr style={{ backgroundColor: 'var(--nmbu-beige-light)', borderBottom: '2px solid var(--nmbu-neutral-3)' }}>
             <th className="px-3 py-2.5 text-left" style={{ color: 'var(--nmbu-neutral)', fontWeight: 600 }}>Program</th>
-            {METRICS.map((m) => (
+            {metricsFor(group.level === 'master2').map((m) => (
               <th key={m.id}
                 className="px-3 py-2.5 text-center cursor-pointer select-none hover:opacity-70 whitespace-nowrap"
                 style={{ color: sortKey === m.id ? 'var(--nmbu-green-dark)' : 'var(--nmbu-neutral-2)', fontWeight: 600 }}
@@ -338,7 +350,7 @@ function DataTable({
                 </div>
                 <div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)', marginTop: 1 }}>{e.studiekode} · {e.studiested}</div>
               </td>
-              {METRICS.map((m) => {
+              {metricsFor(group.level === 'master2').map((m) => {
                 const v = cur ? getVal(cur, m.id) : null;
                 const vPrev = prev ? getVal(prev, m.id) : null;
                 const isZeroPg = v === 0 && (m.id === 'pg_ord' || m.id === 'pg_fv' || m.id === 'pg_snitt');
@@ -391,7 +403,37 @@ function NmbuKeyFigures({ group, year: requestedYear }: { group: LandsamGroup; y
         const sp = cur ? getVal(cur, 'sokerpress') : null;
         const spPrev = prev ? getVal(prev, 'sokerpress') : null;
 
-        const highlights: { label: string; value: string; sub?: string; delta: string | null }[] = [
+        const local = group.level === 'master2';
+        const opp = cur ? getVal(cur, 'oppmote') : null;
+        const oppPrev = prev ? getVal(prev, 'oppmote') : null;
+        const highlights: { label: string; value: string; sub?: string; delta: string | null }[] = local ? [
+          {
+            label: 'Alle søkere',
+            value: cur?.alleS?.toLocaleString('nb-NO') ?? '–',
+            delta: cur?.alleS != null && prev?.alleS != null ? `${fmt(cur.alleS - prev.alleS)} vs. ${prevYear}` : null,
+          },
+          {
+            label: 'Førstevalgssøkere',
+            value: cur?.fvS?.toLocaleString('nb-NO') ?? '–',
+            delta: cur?.fvS != null && prev?.fvS != null ? `${fmt(cur.fvS - prev.fvS)} vs. ${prevYear}` : null,
+          },
+          {
+            label: 'Tilbud om opptak',
+            value: cur?.tilbud?.toLocaleString('nb-NO') ?? '–',
+            delta: cur?.tilbud != null && prev?.tilbud != null ? `${fmt(cur.tilbud - prev.tilbud)} vs. ${prevYear}` : null,
+          },
+          {
+            label: 'Møtt til studiestart',
+            value: cur?.mott != null ? cur.mott.toLocaleString('nb-NO') : '–',
+            sub: opp != null ? `${nf(opp, 0)} % av tilbudene` : undefined,
+            delta: opp != null && oppPrev != null ? `${fmt(opp - oppPrev, 1)} pp vs. ${prevYear}` : null,
+          },
+          {
+            label: 'Søkerpress (fv. / tilbud)',
+            value: sp != null ? `${nf(sp, 2)}×` : '–',
+            delta: sp != null && spPrev != null ? `${fmt(sp - spPrev, 2)}× vs. ${prevYear}` : null,
+          },
+        ] : [
           {
             label: 'Alle søkere',
             value: cur?.alleS?.toLocaleString('nb-NO') ?? '–',
@@ -480,7 +522,12 @@ export function LandsamAdmissionAnalysis({ faculty, initialGroup }: { faculty: F
   // Lokale opptak (toårig master): DBH rapporterer senere enn Samordna opptak, og poenggrenser finnes sjelden.
   // Ved gruppebytte: hopp til siste år med NMBU-tall, og bytt fra poenggrense til «Alle søkere» hvis gruppen mangler poenggrenser.
   useEffect(() => {
-    if (!group || group.level !== 'master2') return;
+    if (!group) return;
+    if (group.level !== 'master2') {
+      // Møtt/oppmøteandel finnes bare for lokale opptak; gå tilbake til poenggrense.
+      if (metric === 'mott' || metric === 'oppmote') setMetric('pg_ord');
+      return;
+    }
     const nmbu = group.entries.filter((e) => group.nmbuIds.includes(e.id));
     const hasYear = (y: string) => nmbu.some((e) => e.years[y]?.alleS != null);
     if (!hasYear(year)) {
@@ -588,7 +635,7 @@ export function LandsamAdmissionAnalysis({ faculty, initialGroup }: { faculty: F
         <div className="rounded-xl overflow-hidden" style={{ border: '1px solid var(--nmbu-neutral-3)', backgroundColor: '#fff' }}>
           <div className="px-5 py-4 flex items-center justify-between gap-3 flex-wrap" style={{ borderBottom: '1px solid var(--nmbu-neutral-3)' }}>
             <div className="flex flex-wrap gap-1.5">
-              {METRICS.map((m) => (
+              {metricsFor(isLocal).map((m) => (
                 <button key={m.id} onClick={() => setMetric(m.id)}
                   className="px-3 py-1 rounded-full text-xs transition-all"
                   title={m.description}

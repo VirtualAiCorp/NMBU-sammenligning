@@ -51,6 +51,8 @@ NK_TILBUD = "Antall tilbud"
 
 # Rekkefølgen feltene skal ha i Y(...)-kallene / FullYearData.
 FIELD_ORDER = ["alleS", "fvS", "plasser", "kvinner", "kvalifiserte", "tilbud", "pg_fv", "pg_ord"]
+# Bare for lokale opptak (DBH 379): ja-svar og møtt til studiestart. Skrives som valgfrie felt.
+EXTRA_FIELDS = ["akseptert", "mott"]
 
 MISSING_TOKENS = {"", "-", "–", "NA"}
 
@@ -273,6 +275,9 @@ def build_years_for_local_entry(local_data: dict):
                 values[field] = round(float(raw), 1)
             else:
                 values[field] = int(round(float(raw)))
+        for field in EXTRA_FIELDS:
+            raw = row.get(field)
+            values[field] = None if raw is None else int(round(float(raw)))
         if any(v is not None for v in values.values()):
             years_out[y] = values
     return years_out
@@ -412,6 +417,8 @@ def render_year_call(values: dict) -> str:
         fmt_pg_or_null(values["pg_fv"]),
         fmt_pg_or_null(values["pg_ord"]),
     ]
+    if any(values.get(f) is not None for f in EXTRA_FIELDS):
+        parts += [fmt_int_or_null(values.get(f)) for f in EXTRA_FIELDS]
     return "Y(" + ", ".join(parts) + ")"
 
 
@@ -440,8 +447,9 @@ def render_ts(groups_out, generated_date: str) -> str:
     lines.append("const Y = (")
     lines.append("  alleS: number | null, fvS: number | null, plasser: number | null,")
     lines.append("  kvinner: number | null, kvalifiserte: number | null, tilbud: number | null,")
-    lines.append("  pg_fv: number | null = null, pg_ord: number | null = null")
-    lines.append("): FullYearData => ({ alleS, fvS, plasser, kvinner, kvalifiserte, tilbud, pg_fv, pg_ord });")
+    lines.append("  pg_fv: number | null = null, pg_ord: number | null = null,")
+    lines.append("  akseptert: number | null = null, mott: number | null = null")
+    lines.append("): FullYearData => ({ alleS, fvS, plasser, kvinner, kvalifiserte, tilbud, pg_fv, pg_ord, akseptert, mott });")
     lines.append("")
     lines.append("export const LANDSAM_YEARS = ['2020', '2021', '2022', '2023', '2024', '2025', '2026'] as const;")
     lines.append("")

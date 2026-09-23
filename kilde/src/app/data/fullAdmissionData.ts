@@ -13,6 +13,8 @@ export interface FullYearData {
   tilbud:       number | null; // antall tilbud gitt
   pg_fv:        number | null; // poenggrense førstegangsvitnemål
   pg_ord:       number | null; // poenggrense ordinær kvote
+  akseptert?:   number | null; // ja-svar på tilbud (DBH 379, lokale opptak)
+  mott?:        number | null; // møtt til studiestart (DBH 379, lokale opptak)
 }
 
 // 'master2' = toårig master med lokalt opptak (ikke via Samordna opptak)

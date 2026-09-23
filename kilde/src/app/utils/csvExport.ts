@@ -132,8 +132,8 @@ export function exportFacultyAdmissionCsv(faculty: FacultyData) {
     'Programgruppe', 'Nivå',
     'Institusjon', 'Kortname', 'Studiekode', 'Studiested', 'Type',
     'År',
-    'Alle søkere', 'Førstevalgssøkere', 'Studieplasser', 'Søkerpress (fv/pl)',
-    'Kvinner % (1.valg)', 'Kvalifiserte', 'Tilbud',
+    'Alle søkere', 'Førstevalgssøkere', 'Studieplasser', 'Søkerpress (fv/pl, lokale opptak: fv/tilbud)',
+    'Kvinner % (1.valg)', 'Kvalifiserte', 'Tilbud', 'Ja-svar', 'Møtt', 'Oppmøteandel % (møtt/tilbud)',
     'Poenggrense FV', 'Poenggrense Ord.'
   );
 
@@ -145,13 +145,15 @@ export function exportFacultyAdmissionCsv(faculty: FacultyData) {
         const d = e.years[year];
         if (!d) continue;
         const sp = d.fvS !== null && d.plasser !== null && d.plasser > 0
-          ? +(d.fvS / d.plasser).toFixed(2) : null;
+          ? +(d.fvS / d.plasser).toFixed(2)
+          : d.fvS !== null && d.tilbud !== null && d.tilbud > 0 ? +(d.fvS / d.tilbud).toFixed(2) : null;
+        const opp = d.mott != null && d.tilbud != null && d.tilbud > 0 ? +((d.mott / d.tilbud) * 100).toFixed(1) : null;
         lines.push(row(
           g.label, g.level,
           e.institusjon, e.shortName, e.studiekode, e.studiested, e.type,
           year,
           d.alleS, d.fvS, d.plasser, sp,
-          d.kvinner, d.kvalifiserte, d.tilbud,
+          d.kvinner, d.kvalifiserte, d.tilbud, d.akseptert ?? null, d.mott ?? null, opp,
           d.pg_fv, d.pg_ord
         ));
       }
