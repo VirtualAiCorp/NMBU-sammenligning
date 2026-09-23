@@ -1,0 +1,134 @@
+[
+ {
+  "status": {
+   "tabell_id": 750,
+   "api_versjon": 1,
+   "leveransenr": 8626542,
+   "leveringstid": "2026-09-23 22:38:41",
+   "antall": 11,
+   "returkode": 0,
+   "melding": "Data levert."
+  }
+ },
+ {
+  "Institusjonskode": "8253",
+  "Institusjonsnavn": "Høyskolen Kristiania",
+  "Styringsparam": "1",
+  "Styringparam tekst": "Andelen studenter på bachelorutdanning som gjennomfører på normert tid",
+  "Årstall": "2024",
+  "Teller": "1831.000000",
+  "Nevner": "3103.000000",
+  "Verdi": "             59.01",
+  "Utregning": "(100 * 1831.00) / 3103.00"
+ },
+ {
+  "Institusjonskode": "8253",
+  "Institusjonsnavn": "Høyskolen Kristiania",
+  "Styringsparam": "2",
+  "Styringparam tekst": "Andelen studenter på masterutdanning som gjennomfører på normert tid",
+  "Årstall": "2024",
+  "Teller": "260.000000",
+  "Nevner": "297.000000",
+  "Verdi": "             87.54",
+  "Utregning": "(100 * 260.00) / 297.00"
+ },
+ {
+  "Institusjonskode": "8253",
+  "Institusjonsnavn": "Høyskolen Kristiania",
+  "Styringsparam": "4",
+  "Styringparam tekst": "Skår på hvordan studentene oppfatter studiekvaliteten",
+  "Årstall": "2024",
+  "Teller": "5610.954727",
+  "Nevner": "1379.000000",
+  "Verdi": "              4.07",
+  "Utregning": "4.07"
+ },
+ {
+  "Institusjonskode": "8253",
+  "Institusjonsnavn": "Høyskolen Kristiania",
+  "Styringsparam": "5",
+  "Styringparam tekst": "Faglig tidsbruk (timer) per uke blant heltidsstudenter",
+  "Årstall": "2024",
+  "Teller": "39320.587606",
+  "Nevner": "1379.000000",
+  "Verdi": "             28.51",
+  "Utregning": "28.51"
+ },
+ {
+  "Institusjonskode": "8253",
+  "Institusjonsnavn": "Høyskolen Kristiania",
+  "Styringsparam": "6",
+  "Styringparam tekst": "Antall publiseringspoeng per faglig årsverk",
+  "Årstall": "2024",
+  "Teller": "251.094530",
+  "Nevner": "327.470000",
+  "Verdi": "              0.77",
+  "Utregning": "251.09 / 327.47"
+ },
+ {
+  "Institusjonskode": "8253",
+  "Institusjonsnavn": "Høyskolen Kristiania",
+  "Styringsparam": "8",
+  "Styringparam tekst": "Andel utreisende utvekslingsstudenter på Erasmus+ av totalt antall studenter",
+  "Årstall": "2024",
+  "Teller": "42.000000",
+  "Nevner": "14594.000000",
+  "Verdi": "              0.29",
+  "Utregning": "(100 * 42.00) / 14594.00"
+ },
+ {
+  "Institusjonskode": "8253",
+  "Institusjonsnavn": "Høyskolen Kristiania",
+  "Styringsparam": "10",
+  "Styringparam tekst": "Bidragsinntekter fra Forskningsrådet per faglig årsverk",
+  "Årstall": "2024",
+  "Teller": "9842.000000",
+  "Nevner": "327.470000",
+  "Verdi": "             30.05",
+  "Utregning": "9842.00 / 327.47"
+ },
+ {
+  "Institusjonskode": "8253",
+  "Institusjonsnavn": "Høyskolen Kristiania",
+  "Styringsparam": "11",
+  "Styringparam tekst": "Andre bidrags- og oppdragsinntekter per faglig årsverk",
+  "Årstall": "2024",
+  "Teller": "11436.000000",
+  "Nevner": "327.470000",
+  "Verdi": "             34.92",
+  "Utregning": "11436.00 / 327.47"
+ },
+ {
+  "Institusjonskode": "8253",
+  "Institusjonsnavn": "Høyskolen Kristiania",
+  "Styringsparam": "13",
+  "Styringparam tekst": "Kandidattall på helse- og lærerutdanningene",
+  "Årstall": "2024",
+  "Teller": "45.000000",
+  "Nevner": null,
+  "Verdi": "             45.00",
+  "Utregning": "45"
+ },
+ {
+  "Institusjonskode": "8253",
+  "Institusjonsnavn": "Høyskolen Kristiania",
+  "Styringsparam": "14",
+  "Styringparam tekst": "Antall studiepoeng per faglig årsverk",
+  "Årstall": "2024",
+  "Teller": "578587.500000",
+  "Nevner": "327.470000",
+  "Verdi": "           1766.84",
+  "Utregning": "578587.50 / 327.47"
+ },
+ {
+  "Institusjonskode": "8253",
+  "Institusjonsnavn": "Høyskolen Kristiania",
+  "Styringsparam": "15",
+  "Styringparam tekst": "Andel kvinner i dosent- og professorstillinger",
+  "Årstall": "2024",
+  "Teller": "11.690000",
+  "Nevner": "50.890000",
+  "Verdi": "             22.97",
+  "Utregning": "(100 * 11.69) / 50.89"
+ }
+]
