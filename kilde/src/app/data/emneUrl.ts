@@ -48,11 +48,11 @@ const INSTITUSJONER: Record<string, InstitusjonsMønster> = {
     strip: ['-\\d+$'],
     type: 'direkte',
   },
-  '1171': { // UiA — URL inneholder hardkodet inneværende semester (2026/host), bør oppdateres jevnlig
-    monster: 'https://www.uia.no/studier/emner/2026/host/{kode}.html',
-    kodeform: 'lower',
+  '1171': { // UiA — emnesidene ligger under år/semester (2026/host eller /var), så søk i emnekatalogen er robust
+    monster: 'https://www.uia.no/studier/emner/?q={kode}',
+    kodeform: 'upper',
     strip: ['-\\d+$'],
-    type: 'direkte',
+    type: 'sok',
   },
   '1173': { // NMBU
     monster: 'https://www.nmbu.no/emne/{kode}',
