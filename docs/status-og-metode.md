@@ -242,3 +242,23 @@ med landssnitt for NMBU-programmets gradsnivå.
 - **DBH-grense:** tabell 60 tillater høyst seks verdier i et filter; årene hentes derfor som intervall.
 - **Utveksling:** 142 Type NORSK = programmets studenter ut. Innreisende (UTENL) ligger på programmet UTVEKSLING
   og kan ikke fordeles på studieprogram.
+
+## 14. Fagmiljøet: tilsatte og publisering (DBH 225/220/123/900/373/374/210/347)
+
+Nytt kort på fakultetssiden (fakultet mot fakultet, eller institusjon mot institusjon) og på forsiden
+(institusjonene, eller NMBUs sju fakulteter mot hverandre). Mål: studentårsverk per faglig årsverk (hovedmål),
+registrerte studenter per faglig årsverk, publiseringspoeng per faglig årsverk, andel nivå 2, andel
+førstestillinger, kvinneandel faglige, faglige årsverk, rekrutteringsårsverk, alle årsverk, studenter og poeng.
+- **Skript:** `scripts/build-staff.py [--refresh]` → `kilde/src/app/data/staffData.ts/.json`
+  (`STAFF_INSTITUTIONS`, `STAFF_NMBU_FACULTIES`, `STAFF_FACULTIES[fakultet]`). Cache `data/nmbu/kilder/dbh-fagmiljo/`.
+- **Faglige årsverk** = stillingskategori UN1 + UN3 + UN4 fra tabell 220 (undervisnings-, forsknings- og
+  formidlingsstillinger), uten rekruttering (UN2: stipendiat, postdoktor), som vises for seg.
+- **Studentårsverk** = «Ny produksjon totalt» i tabell 900 per avdeling som eier emnet (allerede i 60-sp-enheter).
+  Registrerte studenter blåser opp enheter med mange enkeltemnestudenter: NMBU HH har 64,8 registrerte per
+  faglig årsverk, men langt lavere i studentårsverk.
+- **Konkurrentfakultetene** er avledet, ikke valgt: fakultetet som eier hvert konkurrentprogram (DBH 347
+  Avdelingskode → 210 Fakultetskode). Fakulteter som bare eier svakere sammenligninger (default false) er
+  ikke valgt fra start, men ligger i listen.
+- **Publisering:** avdeling 000000 i 373 er institusjonstotalen (lik summen av avdelingene); den brukes bare
+  på institusjonsnivå. AHO rapporterer 0 poeng og 0 publikasjoner og vises som ikke rapportert.
+- **Tabell 225** er en aggregert tabell som gir serverfeil med kodetekst; hent med `kodetekst: N`.
