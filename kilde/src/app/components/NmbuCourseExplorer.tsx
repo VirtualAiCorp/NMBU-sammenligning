@@ -2,6 +2,7 @@ import { Fragment, useEffect, useMemo, useState } from 'react';
 import { Search, Info, ExternalLink } from 'lucide-react';
 import { NmbuNationalCompare } from './NmbuNationalCompare';
 import { emneUrl } from '../data/emneUrl';
+import { useInnebygd } from '../innebygd';
 
 /**
  * Alle emner ved NMBU: karakterfordeling for hele emnet og per studieprogram
@@ -159,14 +160,15 @@ export function NmbuCourseExplorer({ onBack }: { onBack: () => void }) {
     return rows;
   }, [course, data, year]);
 
+  const innebygd = useInnebygd();
   const whole = course ? sumPacked(course.years, year) : null;
   const fordelt = programRows.reduce((s, r) => s + r.s.total, 0);
   const rest = whole ? Math.max(0, whole.total - fordelt) : 0;
 
   return (
-    <div className="min-h-screen p-6" style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
+    <div className={innebygd ? '' : 'min-h-screen p-6'} style={innebygd ? undefined : { backgroundColor: 'var(--nmbu-beige-light)' }}>
       <div className="max-w-7xl mx-auto">
-        <div className="flex items-center gap-2 mb-5">
+        <div className="flex items-center gap-2 mb-5" style={innebygd ? { display: 'none' } : undefined}>
           <button onClick={onBack} className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs transition-all"
             style={{ backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)' }}>← Fakulteter</button>
         </div>

@@ -3,10 +3,11 @@
 // Toppkomponentene (LandsamLanding, LandsamAdmissionAnalysis, LandsamCourseAnalysis)
 // tar fortsatt imot `faculty` som prop og legger det ut her.
 import { createContext, useContext } from 'react';
-import { FACULTIES, type FacultyData } from './faculties';
+import type { FacultyData } from './faculties';
 import { landsamColorForGroups } from './landsamPalette';
 
-export const FacultyContext = createContext<FacultyData>(FACULTIES.landsam);
+// Ingen standardverdi: fakultetsskjermene legger alltid ut et lastet fakultet (se faculties.ts).
+export const FacultyContext = createContext<FacultyData>(null as unknown as FacultyData);
 
 export function useFaculty(): FacultyData {
   return useContext(FacultyContext);

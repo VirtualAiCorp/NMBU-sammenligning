@@ -108,18 +108,18 @@ const LEVEL_LABEL: Record<LandsamLevel, string> = {
 
 // ─── Trend chip ───────────────────────────────────────────────────────────────
 
-function TrendChip({ val, prev }: { val: number | null; prev: number | null }) {
+function TrendChip({ val, prev, dec = 1 }: { val: number | null; prev: number | null; dec?: number }) {
   if (val === null || prev === null) return null;
   const diff = val - prev;
   if (Math.abs(diff) < 0.05) return <Minus className="w-3.5 h-3.5 inline" style={{ color: '#888' }} />;
   if (diff > 0) return (
     <span className="inline-flex items-center gap-0.5 text-xs" style={{ color: '#2a7a55' }}>
-      <TrendingUp className="w-3 h-3" />+{nf(Math.abs(diff), 1)}
+      <TrendingUp className="w-3 h-3" />+{nf(Math.abs(diff), dec)}
     </span>
   );
   return (
     <span className="inline-flex items-center gap-0.5 text-xs" style={{ color: '#9b3a3a' }}>
-      <TrendingDown className="w-3 h-3" />−{nf(Math.abs(diff), 1)}
+      <TrendingDown className="w-3 h-3" />−{nf(Math.abs(diff), dec)}
     </span>
   );
 }
@@ -406,7 +406,7 @@ function DataTable({
                     <div style={{ fontWeight: 600, color: v === null ? 'var(--nmbu-neutral-3)' : isZeroPg ? 'var(--nmbu-green-6)' : 'var(--nmbu-neutral)' }}>
                       {v === null ? '–' : isZeroPg ? 'Alle inn' : `${nf(v, m.decimals)}${m.unit ? ' ' + m.unit : ''}`}
                     </div>
-                    {v !== null && !isZeroPg && <div className="mt-0.5"><TrendChip val={v} prev={vPrev} /></div>}
+                    {v !== null && !isZeroPg && <div className="mt-0.5"><TrendChip val={v} prev={vPrev} dec={m.decimals} /></div>}
                   </td>
                 );
               })}

@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState, type ReactNode } from 'react';
 import { BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend, ReferenceLine } from 'recharts';
 import { Lock, Info, Users, SlidersHorizontal, TrendingDown, Filter } from 'lucide-react';
-import { FACULTIES } from '../data/faculties';
+import { LANDSAM_GROUPS as HH_GROUPS } from '../data/hhAdmissionData';
 
 /**
  * Intern opptaksanalyse for HHs bachelorprogram (høsten 2026), fra opptakskontorets FS-uttrekk.
@@ -163,7 +163,7 @@ function Analyse({ data }: { data: Data }) {
   const faktiskTilbud = sum(prog.trinn.tilbud.hist, 'SP') + sum(prog.trinn.tilbud.hist, 'KP');
   const faktiskFv = sum(prog.trinn.tilbud.hist, 'SP') / faktiskTilbud;
   const plasser = useMemo(() => {
-    for (const g of FACULTIES.hh.admissionGroups) for (const e of g.entries) if (e.studiekode === prog.soKode) return e.years['2026']?.plasser ?? null;
+    for (const g of HH_GROUPS) for (const e of g.entries) if (e.studiekode === prog.soKode) return e.years['2026']?.plasser ?? null;
     return null;
   }, [prog.soKode]);
 
@@ -314,9 +314,9 @@ function Analyse({ data }: { data: Data }) {
                   ['Tilbud', nf(sim.tilbud, 0), nf(faktisk.tilbud, 0), diff(sim.tilbud, faktisk.tilbud, 0)],
                   ['Forventet ja-svar', nf(sim.ja, 0), nf(faktisk.ja, 0), diff(sim.ja, faktisk.ja, 0)],
                   ['Forventet møtt', nf(sim.moett, 0), nf(faktisk.moett, 0), diff(sim.moett, faktisk.moett, 0)],
-                  ['Snitt tilbud SP', nf(sim.SP.snittTilbud), nf(faktisk.SP.snittTilbud), diff(sim.SP.snittTilbud, faktisk.SP.snittTilbud, 2)],
-                  ['Snitt tilbud KP', nf(sim.KP.snittTilbud), nf(faktisk.KP.snittTilbud), diff(sim.KP.snittTilbud, faktisk.KP.snittTilbud, 2)],
-                  ['Snitt forventet møtt', nf(sim.snittMoett), nf(faktisk.snittMoett), diff(sim.snittMoett, faktisk.snittMoett, 2)],
+                  ['Snitt tilbud SP', nf(sim.SP.snittTilbud), nf(faktisk.SP.snittTilbud), diff(sim.SP.snittTilbud, faktisk.SP.snittTilbud)],
+                  ['Snitt tilbud KP', nf(sim.KP.snittTilbud), nf(faktisk.KP.snittTilbud), diff(sim.KP.snittTilbud, faktisk.KP.snittTilbud)],
+                  ['Snitt forventet møtt', nf(sim.snittMoett), nf(faktisk.snittMoett), diff(sim.snittMoett, faktisk.snittMoett)],
                   ['Andel 1.-prioritet (tilbud)', `${nf(((sim.SP.andel1 * sim.SP.tilbud + sim.KP.andel1 * sim.KP.tilbud) / sim.tilbud) * 100, 0)} %`, `${nf(((faktisk.SP.andel1 * faktisk.SP.tilbud + faktisk.KP.andel1 * faktisk.KP.tilbud) / faktisk.tilbud) * 100, 0)} %`, ''],
                 ].map(([l, a, b, c]) => (
                   <tr key={l} style={{ borderBottom: '1px solid var(--nmbu-beige-light)' }}>

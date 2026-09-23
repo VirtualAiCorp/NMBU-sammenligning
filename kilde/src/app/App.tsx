@@ -1,42 +1,47 @@
-import { useState, type ReactNode } from 'react';
-import { CourseSelector } from './components/CourseSelector';
-import { CourseComparison } from './components/CourseComparison';
-import { UniversityFilter } from './components/UniversityFilter';
-import { CourseMappingTable } from './components/CourseMappingTable';
-import { AdmissionStats } from './components/AdmissionStats';
-import { StudiebarometerStats } from './components/StudiebarometerStats';
-import { GradingHarshnessSummary } from './components/GradingHarshnessSummary';
-import { GradeInflationDashboard } from './components/GradeInflationDashboard';
-import { MapView } from './components/MapView';
-import { FirstYearComparison } from './components/FirstYearComparison';
-import { OnlineBachelorView } from './components/OnlineBachelorView';
-import { MasterView } from './components/MasterView';
-import { MasterComparisonChart } from './components/MasterComparisonChart';
-import { NMBUMasterAnalysis } from './components/NMBUMasterAnalysis';
-import { AdmissionAnalysis2026 } from './components/AdmissionAnalysis2026';
-import { MarkedsstatusView } from './components/MarkedsstatusView';
+import { lazy, Suspense, useState, type ComponentType, type ReactNode } from 'react';
 import { FacultyLanding, type Faculty } from './components/FacultyLanding';
-import { PasswordGate } from './components/PasswordGate';
-import { NmbuCourseExplorer } from './components/NmbuCourseExplorer';
 import { LandsamLanding } from './components/LandsamLanding';
-import { LandsamAdmissionAnalysis } from './components/LandsamAdmissionAnalysis';
-import { LandsamCourseAnalysis } from './components/LandsamCourseAnalysis';
-import { FacultyMarketStatus } from './components/FacultyMarketStatus';
-import { FacultyStudiebarometer } from './components/FacultyStudiebarometer';
-import { FacultyCompletion } from './components/FacultyCompletion';
-import { FacultyStudents } from './components/FacultyStudents';
-import { StaffComparison } from './components/StaffComparison';
-import { StudiestedBolig } from './components/StudiestedBolig';
-import { EconomyComparison } from './components/EconomyComparison';
-import { LayoutLab } from './components/LayoutLab';
-import { FacultyRevenue } from './components/FacultyRevenue';
-import { InternOpptak } from './components/InternOpptak';
-import { ECON_UNITS } from './data/economyData';
-import { STAFF_INSTITUTIONS, STAFF_FACULTIES, STAFF_NMBU_FACULTIES } from './data/staffData';
-import { FACULTIES, type FacultyData, type FacultyId } from './data/faculties';
+import { FACULTY_META, useFacultyData, type FacultyData, type FacultyId } from './data/faculties';
 import { useLayout } from './layoutStore';
 import { DashboardShell, TopbarShell, ShellHome, ShellHeader } from './components/AppShells';
 import { BookOpen, Table2, BarChart2, Star, Scale, Map, GraduationCap, GalleryVerticalEnd, Award, ScatterChart, TrendingUp, ArrowUpRight, Wifi, Globe2 } from 'lucide-react';
+
+// Sidene lastes først når de åpnes (egne JavaScript-biter), slik at forsiden laster raskt.
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const lazyNamed = <T extends ComponentType<any>>(last: () => Promise<Record<string, unknown>>, navn: string) =>
+  lazy(() => last().then((m) => ({ default: m[navn] as T })));
+const CourseSelector = lazyNamed<typeof import('./components/CourseSelector')['CourseSelector']>(() => import('./components/CourseSelector'), 'CourseSelector');
+const CourseComparison = lazyNamed<typeof import('./components/CourseComparison')['CourseComparison']>(() => import('./components/CourseComparison'), 'CourseComparison');
+const UniversityFilter = lazyNamed<typeof import('./components/UniversityFilter')['UniversityFilter']>(() => import('./components/UniversityFilter'), 'UniversityFilter');
+const CourseMappingTable = lazyNamed<typeof import('./components/CourseMappingTable')['CourseMappingTable']>(() => import('./components/CourseMappingTable'), 'CourseMappingTable');
+const AdmissionStats = lazyNamed<typeof import('./components/AdmissionStats')['AdmissionStats']>(() => import('./components/AdmissionStats'), 'AdmissionStats');
+const StudiebarometerStats = lazyNamed<typeof import('./components/StudiebarometerStats')['StudiebarometerStats']>(() => import('./components/StudiebarometerStats'), 'StudiebarometerStats');
+const GradingHarshnessSummary = lazyNamed<typeof import('./components/GradingHarshnessSummary')['GradingHarshnessSummary']>(() => import('./components/GradingHarshnessSummary'), 'GradingHarshnessSummary');
+const GradeInflationDashboard = lazyNamed<typeof import('./components/GradeInflationDashboard')['GradeInflationDashboard']>(() => import('./components/GradeInflationDashboard'), 'GradeInflationDashboard');
+const MapView = lazyNamed<typeof import('./components/MapView')['MapView']>(() => import('./components/MapView'), 'MapView');
+const FirstYearComparison = lazyNamed<typeof import('./components/FirstYearComparison')['FirstYearComparison']>(() => import('./components/FirstYearComparison'), 'FirstYearComparison');
+const OnlineBachelorView = lazyNamed<typeof import('./components/OnlineBachelorView')['OnlineBachelorView']>(() => import('./components/OnlineBachelorView'), 'OnlineBachelorView');
+const MasterView = lazyNamed<typeof import('./components/MasterView')['MasterView']>(() => import('./components/MasterView'), 'MasterView');
+const MasterComparisonChart = lazyNamed<typeof import('./components/MasterComparisonChart')['MasterComparisonChart']>(() => import('./components/MasterComparisonChart'), 'MasterComparisonChart');
+const NMBUMasterAnalysis = lazyNamed<typeof import('./components/NMBUMasterAnalysis')['NMBUMasterAnalysis']>(() => import('./components/NMBUMasterAnalysis'), 'NMBUMasterAnalysis');
+const AdmissionAnalysis2026 = lazyNamed<typeof import('./components/AdmissionAnalysis2026')['AdmissionAnalysis2026']>(() => import('./components/AdmissionAnalysis2026'), 'AdmissionAnalysis2026');
+const MarkedsstatusView = lazyNamed<typeof import('./components/MarkedsstatusView')['MarkedsstatusView']>(() => import('./components/MarkedsstatusView'), 'MarkedsstatusView');
+const PasswordGate = lazyNamed<typeof import('./components/PasswordGate')['PasswordGate']>(() => import('./components/PasswordGate'), 'PasswordGate');
+const NmbuCourseExplorer = lazyNamed<typeof import('./components/NmbuCourseExplorer')['NmbuCourseExplorer']>(() => import('./components/NmbuCourseExplorer'), 'NmbuCourseExplorer');
+const LandsamAdmissionAnalysis = lazyNamed<typeof import('./components/LandsamAdmissionAnalysis')['LandsamAdmissionAnalysis']>(() => import('./components/LandsamAdmissionAnalysis'), 'LandsamAdmissionAnalysis');
+const LandsamCourseAnalysis = lazyNamed<typeof import('./components/LandsamCourseAnalysis')['LandsamCourseAnalysis']>(() => import('./components/LandsamCourseAnalysis'), 'LandsamCourseAnalysis');
+const FacultyMarketStatus = lazyNamed<typeof import('./components/FacultyMarketStatus')['FacultyMarketStatus']>(() => import('./components/FacultyMarketStatus'), 'FacultyMarketStatus');
+const FacultyStudiebarometer = lazyNamed<typeof import('./components/FacultyStudiebarometer')['FacultyStudiebarometer']>(() => import('./components/FacultyStudiebarometer'), 'FacultyStudiebarometer');
+const FacultyCompletion = lazyNamed<typeof import('./components/FacultyCompletion')['FacultyCompletion']>(() => import('./components/FacultyCompletion'), 'FacultyCompletion');
+const FacultyStudents = lazyNamed<typeof import('./components/FacultyStudents')['FacultyStudents']>(() => import('./components/FacultyStudents'), 'FacultyStudents');
+const StudiestedBolig = lazyNamed<typeof import('./components/StudiestedBolig')['StudiestedBolig']>(() => import('./components/StudiestedBolig'), 'StudiestedBolig');
+const LayoutLab = lazyNamed<typeof import('./components/LayoutLab')['LayoutLab']>(() => import('./components/LayoutLab'), 'LayoutLab');
+const FacultyRevenue = lazyNamed<typeof import('./components/FacultyRevenue')['FacultyRevenue']>(() => import('./components/FacultyRevenue'), 'FacultyRevenue');
+const InternOpptak = lazyNamed<typeof import('./components/InternOpptak')['InternOpptak']>(() => import('./components/InternOpptak'), 'InternOpptak');
+const FacultyEconomyPage = lazyNamed<typeof import('./components/InstitusjonsSider')['FacultyEconomyPage']>(() => import('./components/InstitusjonsSider'), 'FacultyEconomyPage');
+const FacultyStaffPage = lazyNamed<typeof import('./components/InstitusjonsSider')['FacultyStaffPage']>(() => import('./components/InstitusjonsSider'), 'FacultyStaffPage');
+const NmbuEconomyPage = lazyNamed<typeof import('./components/InstitusjonsSider')['NmbuEconomyPage']>(() => import('./components/InstitusjonsSider'), 'NmbuEconomyPage');
+const NmbuStaffPage = lazyNamed<typeof import('./components/InstitusjonsSider')['NmbuStaffPage']>(() => import('./components/InstitusjonsSider'), 'NmbuStaffPage');
 
 type ProgramLevel = 'bachelor' | 'master' | 'opptak2026' | 'markedsstatus';
 type ViewMode = 'course' | 'mapping' | 'admission' | 'karakterindeks' | 'studiebarometer' | 'map' | 'firstyear' | 'online';
@@ -94,6 +99,10 @@ export default function App() {
 
   // ── Oppsett og navigasjon ─────────────────────────────────────────────────
   const layout = useLayout();
+  // Fakultetsdataene lastes når fakultetet åpnes. Emnedataene (den store delen) kreves bare på emnesiden;
+  // på fakultetets forside lastes de i bakgrunnen, så hurtigvalgene for emner dukker opp når de er klare.
+  const fakId = faculty && isFacultyIdAny(faculty) ? faculty : null;
+  const fakData = useFacultyData(fakId, facultyView === 'emner' ? 'kreves' : facultyView === 'landing' ? 'bakgrunn' : 'nei');
   const goHome = () => { setFaculty(null); setFacultyView('landing'); };
   const navigate = (f: Faculty | null, view: FacultyView = 'landing', gruppe?: string) => {
     setFaculty(f);
@@ -129,24 +138,8 @@ export default function App() {
       case 'studiebarometer': return <FacultyStudiebarometer key={fac.id} faculty={fac} />;
       case 'markedsstatus': return <FacultyMarketStatus key={fac.id} faculty={fac} />;
       case 'bolig': return <StudiestedBolig key={fac.id} steder={[...new Set(fac.admissionGroups.flatMap((g) => g.entries.map((e) => e.studiested)).filter(Boolean))]} />;
-      case 'okonomi': {
-        const fakUnits = STAFF_FACULTIES[fac.id] ?? [];
-        const insts = new Set(fakUnits.map((u) => u.inst));
-        return <EconomyComparison key={fac.id} units={ECON_UNITS.filter((u) => u.isNmbu || insts.has(u.inst))} hovedInst={fakUnits.filter((u) => u.hoved).map((u) => u.inst)} />;
-      }
-      case 'fagmiljo': {
-        const fakUnits = STAFF_FACULTIES[fac.id] ?? [];
-        const instCodes = new Set(fakUnits.map((u) => u.inst));
-        const hovedInst = new Set(fakUnits.filter((u) => u.hoved).map((u) => u.inst));
-        return (
-          <StaffComparison key={fac.id} views={[
-            { id: 'fakultet', label: 'Fakultet mot fakultet', units: fakUnits, unitLabel: (u) => `${u.kort} · ${u.navn}`,
-              note: `${fac.label} mot fakultetene som eier konkurrentprogrammene i fakultetets sammenligninger (DBH 347). Fakulteter som bare eier svakere sammenligninger er ikke valgt fra start.` },
-            { id: 'institusjon', label: 'Institusjon mot institusjon', unitLabel: (u) => u.kort,
-              units: STAFF_INSTITUTIONS.filter((u) => instCodes.has(u.inst)).map((u) => ({ ...u, hoved: u.isNmbu || hovedInst.has(u.inst) })) },
-          ]} />
-        );
-      }
+      case 'okonomi': return <FacultyEconomyPage key={fac.id} fac={fac} />;
+      case 'fagmiljo': return <FacultyStaffPage key={fac.id} fac={fac} />;
     }
   };
 
@@ -159,14 +152,8 @@ export default function App() {
   };
   const nmbuPageBody = (page: NmbuPage): ReactNode => {
     if (page === 'nmbu-bolig') return <StudiestedBolig />;
-    if (page === 'nmbu-okonomi') return <EconomyComparison units={ECON_UNITS} />;
-    return (
-      <StaffComparison views={[
-        { id: 'institusjon', label: 'Institusjonene', units: STAFF_INSTITUTIONS, unitLabel: (u) => u.kort,
-          note: 'Alle institusjonene som har minst ett konkurrentprogram i fakultetenes sammenligninger.' },
-        { id: 'nmbu', label: 'NMBUs fakulteter', units: STAFF_NMBU_FACULTIES, unitLabel: (u) => u.navn },
-      ]} />
-    );
+    if (page === 'nmbu-okonomi') return <NmbuEconomyPage />;
+    return <NmbuStaffPage />;
   };
   const isNmbuPage = (f: Faculty | null): f is NmbuPage => f === 'nmbu-bolig' || f === 'nmbu-okonomi' || f === 'nmbu-fagmiljo';
   const isFacultyId = (f: Faculty | null): f is FacultyId => f === 'hh' || f === 'landsam' || f === 'realtek' || f === 'biovit' || f === 'kbm' || f === 'mina' || f === 'vet';
@@ -228,10 +215,10 @@ export default function App() {
       return classicPage({ ...m, backLabel: '← Fakulteter', onBack: goHome }, nmbuPageBody(faculty));
     }
     if (isFacultyId(faculty)) {
-      const fac = FACULTIES[faculty];
-      if (facultyView === 'landing') return facultyLanding(fac);
+      if (facultyView === 'landing') return fakData ? facultyLanding(fakData) : <Laster tekst={`Laster ${FACULTY_META[faculty].label} …`} fullside />;
       const m = FACULTY_MODULE_META[facultyView];
-      return classicPage({ ...m, backLabel: '← Tilbake', onBack: () => setFacultyView('landing'), chip: fac.label }, facultyModuleBody(fac, facultyView));
+      return classicPage({ ...m, backLabel: '← Tilbake', onBack: () => setFacultyView('landing'), chip: FACULTY_META[faculty].label },
+        fakData ? facultyModuleBody(fakData, facultyView) : <Laster />);
     }
     return renderHH();
   };
@@ -246,10 +233,9 @@ export default function App() {
       return <><ShellHeader title={m.title} subtitle={m.subtitle} eyebrow="Hele NMBU" />{nmbuPageBody(faculty)}</>;
     }
     if (isFacultyId(faculty)) {
-      const fac = FACULTIES[faculty];
-      if (facultyView === 'landing') return facultyLanding(fac);
+      if (facultyView === 'landing') return fakData ? facultyLanding(fakData) : <Laster tekst={`Laster ${FACULTY_META[faculty].label} …`} />;
       const m = FACULTY_MODULE_META[facultyView];
-      return <><ShellHeader title={m.title} subtitle={m.subtitle} eyebrow={fac.label} />{facultyModuleBody(fac, facultyView)}</>;
+      return <><ShellHeader title={m.title} subtitle={m.subtitle} eyebrow={FACULTY_META[faculty].label} />{fakData ? facultyModuleBody(fakData, facultyView) : <Laster />}</>;
     }
     return renderHH();
   };
@@ -259,13 +245,15 @@ export default function App() {
   // død kode og fjernes av bundleren, sammen med HH-komponentene og HH-dataene.
   const renderHH = (): ReactNode => {
   if (import.meta.env.VITE_UTEN_HH === '1') return null;
+  // I dashboard/toppmeny ligger siden inne i en ramme med egen navigasjon: full bredde, ingen «← Fakulteter».
+  const innebygd = layout === 'dashboard' || layout === 'toppmeny';
 
   // Landing / program picker
   if (programLevel === null) {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center p-6" style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
-        <div className="max-w-3xl w-full">
-          <div className="flex items-center gap-2 mb-6">
+      <div className={innebygd ? '' : 'min-h-screen flex flex-col items-center justify-center p-6'} style={innebygd ? undefined : { backgroundColor: 'var(--nmbu-beige-light)' }}>
+        <div className={innebygd ? 'max-w-5xl w-full mx-auto' : 'max-w-3xl w-full'}>
+          <div className="flex items-center gap-2 mb-6" style={innebygd ? { display: 'none' } : undefined}>
             <button
               onClick={() => setFaculty(null)}
               className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs transition-all"
@@ -454,7 +442,7 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen p-6" style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
+    <div className={innebygd ? '' : 'min-h-screen p-6'} style={innebygd ? undefined : { backgroundColor: 'var(--nmbu-beige-light)' }}>
       <div className="max-w-7xl mx-auto">
 
         {/* Top-level switcher */}
@@ -604,10 +592,25 @@ export default function App() {
   };
 
   if (layout === 'dashboard') {
-    return <DashboardShell faculty={faculty} view={facultyView} onNavigate={navigate}>{renderShellContent()}</DashboardShell>;
+    return <DashboardShell faculty={faculty} view={facultyView} onNavigate={navigate}><Suspense fallback={<Laster />}>{renderShellContent()}</Suspense></DashboardShell>;
   }
   if (layout === 'toppmeny') {
-    return <TopbarShell faculty={faculty} view={facultyView} onNavigate={navigate}>{renderShellContent()}</TopbarShell>;
+    return <TopbarShell faculty={faculty} view={facultyView} onNavigate={navigate}><Suspense fallback={<Laster />}>{renderShellContent()}</Suspense></TopbarShell>;
   }
-  return <>{renderClassic()}</>;
+  return <Suspense fallback={<Laster fullside />}>{renderClassic()}</Suspense>;
+}
+
+const FAKULTET_IDER = new Set<string>(['hh', 'landsam', 'realtek', 'biovit', 'kbm', 'mina', 'vet']);
+function isFacultyIdAny(f: string): f is FacultyId { return FAKULTET_IDER.has(f); }
+
+/** Vises mens en side eller fakultetsdataene lastes. */
+function Laster({ tekst = 'Laster …', fullside }: { tekst?: string; fullside?: boolean }) {
+  return (
+    <div className={fullside ? 'min-h-screen p-8' : 'py-16'} style={{ backgroundColor: fullside ? 'var(--nmbu-beige-light)' : undefined }}>
+      <div className="flex items-center justify-center gap-3 text-sm" style={{ color: 'var(--nmbu-neutral-2)' }}>
+        <span className="inline-block w-4 h-4 rounded-full animate-spin" style={{ border: '2px solid var(--nmbu-green-3)', borderTopColor: 'var(--nmbu-green-dark)' }} />
+        {tekst}
+      </div>
+    </div>
+  );
 }

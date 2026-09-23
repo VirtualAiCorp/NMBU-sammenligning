@@ -1,5 +1,6 @@
 import { TrendingUp, BookOpen, Globe2, Star, GraduationCap, Users, Microscope, Home, Landmark, Coins } from 'lucide-react';
 import { INGEN_DATA_TEKST, type FacultyData } from '../data/faculties';
+import { useInnebygd } from '../innebygd';
 import {
   landsamHasComparison, landsamProgramsWithData,
   landsamCourseHasComparison, landsamCourseProgramsWithData,
@@ -43,6 +44,7 @@ const LEVEL_LABEL: Record<string, string> = {
 };
 
 export function LandsamLanding({ faculty, onOpenAnalysis, onOpenCourses, onOpenMarketStatus, onOpenStudiebarometer, onOpenCompletion, onOpenStudents, onOpenStaff, onOpenHousing, onOpenEconomy, onOpenRevenue, onBackToFaculties, onOpenOriginalHH, onOpenIntern }: Props) {
+  const innebygd = useInnebygd();
   const admissionGroups = faculty.admissionGroups;
   const courseGroups = faculty.courseGroups;
   const markedsstatus = faculty.marketStatus;
@@ -58,11 +60,11 @@ export function LandsamLanding({ faculty, onOpenAnalysis, onOpenCourses, onOpenM
     : ` ${sbMedTall} av ${sbEntries.length} program har publiserte tall.`;
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-6" style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
-      <div className="max-w-3xl w-full">
+    <div className={innebygd ? '' : 'min-h-screen flex flex-col items-center justify-center p-6'} style={innebygd ? undefined : { backgroundColor: 'var(--nmbu-beige-light)' }}>
+      <div className={innebygd ? 'max-w-6xl w-full mx-auto' : 'max-w-3xl w-full'}>
 
-        {/* Tilbake til fakulteter */}
-        <div className="flex items-center gap-2 mb-6">
+        {/* Tilbake til fakulteter (rammen i dashboard/toppmeny har egen navigasjon) */}
+        <div className="flex items-center gap-2 mb-6" style={innebygd ? { display: 'none' } : undefined}>
           <button
             onClick={onBackToFaculties}
             className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs transition-all"
@@ -237,7 +239,7 @@ export function LandsamLanding({ faculty, onOpenAnalysis, onOpenCourses, onOpenM
           {/* Hurtigvalg per emnegruppe */}
           <div className="px-8 pb-6 flex items-center gap-3 flex-wrap" style={{ borderTop: '1px solid var(--nmbu-green-3)' }}>
             {courseGroups.length === 0 && (
-              <span style={{ fontSize: 12, color: 'var(--nmbu-neutral-2)', paddingTop: 12 }}>{INGEN_DATA_TEKST}</span>
+              <span style={{ fontSize: 12, color: 'var(--nmbu-neutral-2)', paddingTop: 12 }}>{faculty.emnerLastet === false ? 'Laster emnetallene …' : INGEN_DATA_TEKST}</span>
             )}
             {courseGroups.length > 0 && (
               <span style={{ fontSize: 11, color: 'var(--nmbu-green-dark)', fontWeight: 600, opacity: 0.7, whiteSpace: 'nowrap', paddingTop: 12 }}>Gå direkte til:</span>

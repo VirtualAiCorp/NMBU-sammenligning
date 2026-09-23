@@ -419,3 +419,19 @@ Grunnlaget er kartleggingen i `docs/bi-kristiania-datakilder.md`.
     - skolepenger per studentårsverk (2025: Kristiania ≈ 106 tkr, BI ≈ 102 tkr)
     - statstilskudd per studentårsverk
 
+## 24. Oppdelt lasting og opprydding (23.09.2026)
+
+- **Oppdelt lasting:** før lå hele appen i én JavaScript-fil på 21 MB (3 MB komprimert). Nå laster forsiden 245 kB (68 kB komprimert).
+  - `data/facultyMeta.ts` har navn og beskrivelser. Forsiden og menyene bruker bare den.
+  - `data/fakultet/<id>.ts` har grunndataene: opptak, gjennomføring, studentene, Studiebarometeret og markedsstatus (0,2–0,6 MB).
+  - `data/fakultet/<id>Emner.ts` har emnekarakterer, emnekobling og studieplaner (0,3–5,7 MB).
+  - `useFacultyData(id, emner)` i `faculties.ts` laster dataene når fakultetet åpnes. Emnedataene kreves på emnesiden. På fakultetets forside lastes de i bakgrunnen, og hurtigvalgene for emner viser «Laster emnetallene …» til de er klare.
+  - Matrisen på forsiden i dashboard- og toppmenyoppsettet (`components/Matrise.tsx`) laster grunndataene for alle fakultetene i bakgrunnen.
+  - Sidene er `lazy`-komponenter i App.tsx: den opprinnelige HH-analysen, emneutforskeren, oppsettlaben, bolig, økonomi og fagmiljø (`components/InstitusjonsSider.tsx`) og den interne opptakssiden.
+  - Bygget uten HH (`VITE_UTEN_HH=1`) er kontrollert: aliasene i vite.config.ts virker også på dynamiske importer, og ingen HH-markører finnes i bunten.
+  - **Nytt fakultet:** legg til linjer i `facultyMeta.ts`, `data/fakultet/<id>.ts`, `data/fakultet/<id>Emner.ts` og i GRUNN/EMNER i `faculties.ts`.
+- **Innebygde sider** (`innebygd.ts`): i dashboard- og toppmenyoppsettet vises fakultetets forside, den opprinnelige HH-analysen, emneutforskeren og oppsettlaben uten egen «← Fakulteter»-knapp og i full bredde. Rammen har navigasjonen.
+- **Trendpilene** i opptakstabellen bruker målets antall desimaler (+641, ikke +641,0). HH-komponentene fra Figma er ikke rørt.
+- **Bolig:** alle 33 studiesteder har nabolister. 13 nye er kuratert i `STUDIESTED_TIERS_EGNE` (build-bolig.py): Alta, Halden, Hamar, Horten, Kongsberg, Lillehammer, Midt-Telemark (Bø), Ringerike, Sogndal, Steinkjer, Stor-Elvdal (Evenstad), Volda og Åmot (Rena). Listene er anslag ut fra vei, tog og ferje, ikke målte reisetider.
+- **Mørk modus:** `build-dark-css.py` er kjørt på nytt. Den interne opptakssiden, opptakstabellen med lokalt opptak og tilbudsandel, og økonomikortet er sjekket visuelt.
+

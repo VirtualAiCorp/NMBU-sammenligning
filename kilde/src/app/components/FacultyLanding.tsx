@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { BookOpen, Building2, Trees, Atom, Leaf, FlaskConical, TreePine, Lock, PawPrint, Users, Home, Landmark, LayoutGrid } from 'lucide-react';
-import { FACULTIES, FACULTY_IDS, type FacultyId } from '../data/faculties';
+import { FACULTY_META as FACULTIES, FACULTY_IDS, type FacultyId } from '../data/facultyMeta';
 
 export type Faculty = 'hh-figma' | FacultyId | 'nmbu-emner' | 'nmbu-fagmiljo' | 'nmbu-bolig' | 'nmbu-okonomi' | 'nmbu-oppsett';
 

@@ -1,11 +1,12 @@
-import { useState, type ReactNode } from 'react';
+import { useMemo, useState, type ReactNode } from 'react';
 import {
   LayoutDashboard, BookOpen, Microscope, Home, Landmark, TrendingUp, GraduationCap, Users, Star, Globe2,
   LayoutGrid, Menu, X, Coins, Archive, Lock,
 } from 'lucide-react';
-import { FACULTIES, ALL_FACULTY_IDS as FACULTY_IDS, type FacultyId } from '../data/faculties';
+import { FACULTY_META as FACULTIES, ALL_FACULTY_IDS as FACULTY_IDS, useAllFacultyBases, type FacultyId } from '../data/faculties';
 import type { Faculty } from './FacultyLanding';
-import { Matrise, lagRader } from './LayoutLab';
+import { Matrise, lagRader } from './Matrise';
+import { InnebygdContext } from '../innebygd';
 
 /**
  * Rammene for oppsettene «dashboard» (fast sidemeny) og «toppmeny» (faner øverst). Innholdet er de samme modulene
@@ -41,11 +42,15 @@ const erNmbu = (f: Faculty | null) => f === null || (typeof f === 'string' && f.
 
 /** Startsiden i dashboard- og toppmenyoppsettet: porteføljematrisen. */
 export function ShellHome({ onNavigate }: { onNavigate: Nav }) {
-  const [rader] = useState(lagRader);
+  // Matrisen trenger grunndataene (opptak og gjennomføring) for alle fakultetene; de lastes i bakgrunnen.
+  const alle = useAllFacultyBases(FACULTY_IDS);
+  const rader = useMemo(() => (alle ? lagRader(alle) : null), [alle]);
   return (
     <div>
       <ShellHeader title="NMBU-sammenligning" subtitle="Alle NMBU-programgrupper mot konkurrentene. Klikk på en rad for detaljer, og åpne analysen derfra." />
-      <Matrise rader={rader} embedded onOpen={(fak, g) => onNavigate(fak, 'analyse', g)} />
+      {rader
+        ? <Matrise rader={rader} embedded onOpen={(fak, g) => onNavigate(fak, 'analyse', g)} />
+        : <div className="rounded-xl p-6 text-sm" style={{ backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-2)' }}>Laster tallene for fakultetene …</div>}
       <div className="grid gap-3 mt-6" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))' }}>
         {FACULTY_IDS.map((id) => (
           <button key={id} onClick={() => onNavigate(id, 'landing')} className="rounded-xl p-4 text-left" style={{ backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)' }}>
@@ -128,7 +133,7 @@ export function DashboardShell({ faculty, view, onNavigate, children }: { facult
           <button className="lg:hidden p-2 rounded-lg" onClick={() => setMobilMeny(true)} aria-label="Åpne meny" style={{ border: '1px solid var(--nmbu-neutral-3)', backgroundColor: '#fff' }}><Menu className="w-4 h-4" /></button>
           <Brodsmuler faculty={faculty} view={view} onNavigate={onNavigate} />
         </div>
-        {children}
+        <InnebygdContext.Provider value={true}>{children}</InnebygdContext.Provider>
       </main>
     </div>
   );
@@ -203,7 +208,7 @@ export function TopbarShell({ faculty, view, onNavigate, children }: { faculty: 
           </nav>
         )}
       </header>
-      <main className="px-4 sm:px-6 py-6">{children}</main>
+      <main className="px-4 sm:px-6 py-6"><InnebygdContext.Provider value={true}>{children}</InnebygdContext.Provider></main>
     </div>
   );
 }
