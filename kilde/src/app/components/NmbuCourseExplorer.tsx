@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { Fragment, useEffect, useMemo, useState } from 'react';
 import { Search, Info, ExternalLink } from 'lucide-react';
 import { NmbuNationalCompare } from './NmbuNationalCompare';
 
@@ -8,7 +8,7 @@ import { NmbuNationalCompare } from './NmbuNationalCompare';
  * (scripts/build-nmbu-courses.py, DBH tabell 308/208/347).
  */
 
-export type Packed = number[]; // [A,B,C,D,E,F,G,H,total,skjult]
+export type Packed = number[]; // [A,B,C,D,E,F,G,H,total,skjult, A_kvinner…H_kvinner]
 interface CourseRow {
   kode: string; navn: string; studiepoeng: number | null; nivaa: string | null; nus?: string | null; fakultet: string | null;
   years: Record<string, Packed>;
@@ -47,6 +47,28 @@ export function sumPacked(byYear: Record<string, Packed> | undefined, year: stri
   const snitt = letters ? LETTERS.reduce((s, g) => s + POINTS[g] * counts[g], 0) / letters : null;
   const stryk = letters ? (counts.F / letters) * 100 : null;
   return { counts, letters, G: counts.G, H: counts.H, total, skjult, snitt, stryk };
+}
+
+/** Deler karakterene på kjønn (indeks 10–17 = kvinner; menn = totalt − kvinner). Null hvis kjønnstall mangler. */
+export function sumPackedKjonn(byYear: Record<string, Packed> | undefined, year: string): { kvinner: Stats; menn: Stats } | null {
+  const kv: Record<string, number> = { A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0 };
+  const mn: Record<string, number> = { A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0 };
+  let any = false;
+  if (byYear) {
+    for (const [y, p] of Object.entries(byYear)) {
+      if (year !== ALLE && y !== year) continue;
+      if (p.length < 18) continue;
+      any = true;
+      ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'].forEach((g, i) => { kv[g] += p[10 + i] ?? 0; mn[g] += Math.max(0, (p[i] ?? 0) - (p[10 + i] ?? 0)); });
+    }
+  }
+  if (!any) return null;
+  const mk = (c: Record<string, number>): Stats => {
+    const letters = LETTERS.reduce((s, g) => s + c[g], 0);
+    return { counts: c, letters, G: c.G, H: c.H, total: letters + c.G + c.H, skjult: 0,
+      snitt: letters ? LETTERS.reduce((s, g) => s + POINTS[g] * c[g], 0) / letters : null, stryk: letters ? (c.F / letters) * 100 : null };
+  };
+  return { kvinner: mk(kv), menn: mk(mn) };
 }
 
 export function StackedBar({ s, height = 10 }: { s: Stats; height?: number }) {
@@ -96,6 +118,7 @@ export function NmbuCourseExplorer({ onBack }: { onBack: () => void }) {
   const [selected, setSelected] = useState<string | null>(null);
   const [visAntall, setVisAntall] = useState(false);
   const [visning, setVisning] = useState<'program' | 'nasjonalt'>('program');
+  const [delKjonn, setDelKjonn] = useState(false);
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}nmbu-emner.json`)
@@ -275,6 +298,12 @@ export function NmbuCourseExplorer({ onBack }: { onBack: () => void }) {
                       <input type="checkbox" checked={visAntall} onChange={(e) => setVisAntall(e.target.checked)} style={{ accentColor: 'var(--nmbu-green-dark)' }} />
                       Vis antall og prosent per karakter
                     </label>
+                    {visning === 'program' && (
+                      <label className="flex items-center gap-1.5 cursor-pointer select-none" style={{ fontSize: 12, color: 'var(--nmbu-neutral-1)' }}>
+                        <input type="checkbox" checked={delKjonn} onChange={(e) => setDelKjonn(e.target.checked)} style={{ accentColor: 'var(--nmbu-green-dark)' }} />
+                        Del på kjønn
+                      </label>
+                    )}
                     {visning === 'program' && <span style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)' }}>{programRows.length} program med studenter på emnet</span>}
                   </div>
                 </div>
@@ -307,8 +336,19 @@ export function NmbuCourseExplorer({ onBack }: { onBack: () => void }) {
                         {visAntall ? <GradeCells s={whole} bold /> : <td className="px-3 py-2" style={{ minWidth: 180 }}><StackedBar s={whole} height={9} /></td>}
                         <td className="px-3 py-2 text-right" style={{ color: 'var(--nmbu-neutral-2)' }}>{whole.skjult || '–'}</td>
                       </tr>
-                      {programRows.map((r) => (
-                        <tr key={r.pk} style={{ borderBottom: '1px solid var(--nmbu-beige-light)' }}>
+                      {delKjonn && (() => { const kj = sumPackedKjonn(course.years, year); return kj ? (['kvinner', 'menn'] as const).map((k) => (
+                        <tr key={`hele-${k}`} style={{ borderBottom: '1px solid var(--nmbu-beige-light)', backgroundColor: 'rgba(2,92,79,0.04)' }}>
+                          <td className="px-3 py-1.5 pl-6" style={{ color: 'var(--nmbu-neutral-2)' }}>↳ {k === 'kvinner' ? 'Kvinner' : 'Menn'}</td>
+                          <td className="px-3 py-1.5" style={{ color: 'var(--nmbu-neutral-2)' }}>–</td>
+                          <td className="px-3 py-1.5 text-right">{kj[k].total.toLocaleString('nb-NO')}</td>
+                          <td className="px-3 py-1.5 text-right">{kj[k].snitt != null ? nf(kj[k].snitt, 2) : '–'}</td>
+                          <td className="px-3 py-1.5 text-right" style={{ whiteSpace: 'nowrap' }}>{kj[k].stryk != null ? `${nf(kj[k].stryk, 1)} %` : '–'}</td>
+                          {visAntall ? <GradeCells s={kj[k]} /> : <td className="px-3 py-1.5" style={{ minWidth: 180 }}><StackedBar s={kj[k]} height={7} /></td>}
+                          <td className="px-3 py-1.5 text-right" style={{ color: 'var(--nmbu-neutral-2)' }}>–</td>
+                        </tr>
+                      )) : null; })()}
+                      {programRows.map((r) => (<Fragment key={r.pk}>
+                        <tr style={{ borderBottom: delKjonn ? 'none' : '1px solid var(--nmbu-beige-light)' }}>
                           <td className="px-3 py-2">
                             <div style={{ fontWeight: 600, color: 'var(--nmbu-neutral-1)' }}>{r.navn}</div>
                             <div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)' }}>{r.pk}{r.fakultet ? ` · ${r.fakultet}` : ''}</div>
@@ -320,7 +360,18 @@ export function NmbuCourseExplorer({ onBack }: { onBack: () => void }) {
                           {visAntall ? <GradeCells s={r.s} /> : <td className="px-3 py-2" style={{ minWidth: 180 }}><StackedBar s={r.s} height={9} /></td>}
                           <td className="px-3 py-2 text-right" style={{ color: 'var(--nmbu-neutral-2)' }}>{r.s.skjult || '–'}</td>
                         </tr>
-                      ))}
+                        {delKjonn && (() => { const kj = sumPackedKjonn(course.programs[r.pk], year); return kj ? (['kvinner', 'menn'] as const).map((k) => (
+                          <tr key={`${r.pk}-${k}`} style={{ borderBottom: k === 'menn' ? '1px solid var(--nmbu-beige-light)' : 'none', backgroundColor: 'rgba(2,92,79,0.03)' }}>
+                            <td className="px-3 py-1 pl-6" style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)' }}>↳ {k === 'kvinner' ? 'Kvinner' : 'Menn'}</td>
+                            <td className="px-3 py-1" style={{ color: 'var(--nmbu-neutral-2)' }}>–</td>
+                            <td className="px-3 py-1 text-right" style={{ fontSize: 11 }}>{kj[k].total.toLocaleString('nb-NO')}</td>
+                            <td className="px-3 py-1 text-right" style={{ fontSize: 11 }}>{kj[k].snitt != null ? nf(kj[k].snitt, 2) : '–'}</td>
+                            <td className="px-3 py-1 text-right" style={{ fontSize: 11, whiteSpace: 'nowrap' }}>{kj[k].stryk != null ? `${nf(kj[k].stryk, 1)} %` : '–'}</td>
+                            {visAntall ? <GradeCells s={kj[k]} /> : <td className="px-3 py-1" style={{ minWidth: 180 }}><StackedBar s={kj[k]} height={6} /></td>}
+                            <td className="px-3 py-1 text-right" style={{ color: 'var(--nmbu-neutral-2)' }}>–</td>
+                          </tr>
+                        )) : null; })()}
+                      </Fragment>))}
                       {rest > 0 && (
                         <tr>
                           <td className="px-3 py-2" colSpan={2} style={{ color: 'var(--nmbu-neutral-2)', fontStyle: 'italic' }}>Ikke fordelt på program (enkeltemnestudenter, utveksling, skjerming)</td>
@@ -339,7 +390,7 @@ export function NmbuCourseExplorer({ onBack }: { onBack: () => void }) {
                   <span>
                     Kilde: DBH/HKDIR tabell 308, hentet {data!.generert}. Studieprogram er studentens program ved eksamen, ikke emnets eier.
                     DBH skjermer celler med 1–2 kandidater på programnivå; «skjermet» er antall kandidater uten synlig karakter, og stryk vises da som et minimum (≥).
-                    Snitt regnes over bokstavkarakterene A=5 … F=0; bestått/ikke bestått holdes utenfor.
+                    Snitt regnes over bokstavkarakterene A=5 … F=0; bestått/ikke bestått holdes utenfor. Kjønnsdelingen bruker DBHs kvinne-/manntall per karakter; menn = totalt minus kvinner. Skjermede celler på programnivå kan gjøre kjønnstallene lavere enn totalen.
                   </span>
                 </div>
               </>

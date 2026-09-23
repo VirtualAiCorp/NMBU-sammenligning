@@ -10,7 +10,7 @@ Kilder (DBH-cache fra build-landsam-courses.py, institusjon 1173, 5 år):
   208_1173_5y.json   emnenavn, studiepoeng, nivå
   data/nmbu/kilder/347_1173_*.json  studieprogram: navn, nivå, fakultet
 
-Format (kompakt): tall per år = [A,B,C,D,E,F,G,H,total,skjult].
+Format (kompakt): tall per år = [A,B,C,D,E,F,G,H,total,skjult, A_kvinner…H_kvinner] (indeks 10–17 = kvinner per karakter).
 
 Bruk:
   python3 scripts/build-nmbu-courses.py [--cache data/landsam/kilder/dbh-cache]
@@ -38,11 +38,12 @@ def n(r, k="Antall kandidater totalt"):
         return 0
 
 
-def pack(counts, true_total):
+def pack(counts, true_total, kvinner=None):
     arr = [counts.get(g, 0) for g in GRADES]
     vis = sum(arr)
     skjult = max(0, (true_total or 0) - vis)
-    return arr + [vis + skjult, skjult]
+    kv = [(kvinner or {}).get(g, 0) for g in GRADES]
+    return arr + [vis + skjult, skjult] + kv
 
 
 def main():
@@ -54,19 +55,23 @@ def main():
 
     # Emnenivå
     course = collections.defaultdict(lambda: collections.defaultdict(collections.Counter))  # kode -> år -> Counter
+    course_kv = collections.defaultdict(lambda: collections.defaultdict(collections.Counter))
     for r in rows(C("308e")):
         if r.get("Karakter") in GRADES:
             course[r["Emnekode"]][r["Årstall"]][r["Karakter"]] += n(r)
+            course_kv[r["Emnekode"]][r["Årstall"]][r["Karakter"]] += n(r, "Antall kandidater kvinner")
     course_tot = collections.defaultdict(dict)
     for r in rows(C("308et")):
         course_tot[r["Emnekode"]][r["Årstall"]] = course_tot[r["Emnekode"]].get(r["Årstall"], 0) + n(r)
 
     # Programnivå
     prog = collections.defaultdict(lambda: collections.defaultdict(lambda: collections.defaultdict(collections.Counter)))
+    prog_kv = collections.defaultdict(lambda: collections.defaultdict(lambda: collections.defaultdict(collections.Counter)))
     prog_names, prog_fac = {}, {}
     for r in rows(C("308")):
         if r.get("Karakter") in GRADES:
             prog[r["Emnekode"]][r["Studieprogramkode"]][r["Årstall"]][r["Karakter"]] += n(r)
+            prog_kv[r["Emnekode"]][r["Studieprogramkode"]][r["Årstall"]][r["Karakter"]] += n(r, "Antall kandidater kvinner")
         prog_names.setdefault(r["Studieprogramkode"], r.get("Studieprogramnavn"))
         if r.get("Avdelingsnavn") and "uspesifisert" not in r["Avdelingsnavn"]:
             prog_fac.setdefault(r["Studieprogramkode"], r["Avdelingsnavn"])
@@ -115,7 +120,7 @@ def main():
             cnt = course.get(k, {}).get(y, collections.Counter())
             if tot == 0 and not sum(cnt.values()):
                 continue
-            yrs[y] = pack(cnt, tot)
+            yrs[y] = pack(cnt, tot, course_kv.get(k, {}).get(y))
         if not yrs:
             continue
         progs = {}
@@ -126,7 +131,7 @@ def main():
                 cnt = prog.get(k, {}).get(pk, {}).get(y, collections.Counter())
                 if tot == 0 and not sum(cnt.values()):
                     continue
-                py[y] = pack(cnt, tot)
+                py[y] = pack(cnt, tot, prog_kv.get(k, {}).get(pk, {}).get(y))
             if py:
                 progs[pk] = py
         fac = course_fac[k].most_common(1)[0][0] if course_fac.get(k) else None
