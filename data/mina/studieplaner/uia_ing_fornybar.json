@@ -62,7 +62,9 @@
       "studiepoeng": 0,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "ORG001-1"
+      ],
       "merknad": "Obligatorisk HMS-kurs uten studiepoeng, jf. «Andre opplysninger» i studieplanen."
     },
     {
@@ -116,7 +118,9 @@
       "studiepoeng": 30,
       "aar": 3,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "ENE306-1"
+      ],
       "merknad": "Identisk obligatorisk emne (6. semester) for alle tre studieretninger."
     }
   ],

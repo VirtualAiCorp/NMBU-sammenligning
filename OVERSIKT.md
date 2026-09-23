@@ -188,8 +188,8 @@ Samme kjede som LANDSAM og REALTEK: `data/<fakultet>/` med programkart, dbh-prog
 | Fakultet | Opptak | Karakterer (DBH) | Emnekobling | Studieplaner |
 |---|---|---|---|---|
 | BIOVIT | 8 grupper, 38 program | 1475 emner | 71 emnetyper | 38 av 38 program |
-| KBM | 7 grupper, 31 program | 927 emner | 60 emnetyper | 30 av 31 program |
-| MINA | 10 grupper, 45 program | 1657 emner | 91 emnetyper | 35 av 45 program |
+| KBM | 7 grupper, 31 program | 927 emner | 60 emnetyper | 31 av 31 program (UiT kjemi og UiB ernæring med tomme lister, kilden var utilgjengelig) |
+| MINA | 10 grupper, 45 program | 1657 emner | 91 emnetyper | 45 av 45 program |
 
 Forbehold:
 - Søkertall for de toårige masterne (lokalt opptak) kommer fra DBH tabell 379 (søknadsalternativer, kvalifiserte, tilbud), hentet 23.09. Førstevalg, plasser, kjønn og poenggrenser publiseres ikke der; 2026 er ikke rapportert ennå. To koder lot seg ikke følge bakover (NMBU EM-ABG og M-MAT før 2025).

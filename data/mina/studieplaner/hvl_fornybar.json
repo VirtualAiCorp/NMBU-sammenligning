@@ -18,7 +18,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "FE401-1"
+      ],
       "merknad": null
     },
     {
@@ -27,7 +29,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "FE405-1"
+      ],
       "merknad": null
     },
     {
@@ -36,7 +40,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "MA415-1"
+      ],
       "merknad": null
     },
     {
@@ -45,7 +51,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "BI445-3"
+      ],
       "merknad": null
     },
     {
@@ -54,7 +62,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "FE410-1"
+      ],
       "merknad": null
     },
     {
@@ -63,7 +73,9 @@
       "studiepoeng": 10,
       "aar": 1,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "FE404-1"
+      ],
       "merknad": "Utdanningsplanen fører FE404 og GE483 (Climate Change) som «Valgfrie emne» i samme obligatoriske-emne-blokk (samlet krav 160 sp for blokken); ett av de to må velges for å fylle opp semester 2 til 30 sp. Ført som én linje (FE404) med merknad om alternativet GE483, tilsvarende praksis for REAL101/MATH-INF100 i nmbu_skogfag.json."
     },
     {
@@ -72,7 +84,9 @@
       "studiepoeng": 10,
       "aar": 2,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "FE406-1"
+      ],
       "merknad": null
     },
     {
@@ -81,7 +95,9 @@
       "studiepoeng": 10,
       "aar": 2,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "FE407-1"
+      ],
       "merknad": null
     },
     {
@@ -90,7 +106,9 @@
       "studiepoeng": 10,
       "aar": 2,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "GE413-1"
+      ],
       "merknad": null
     },
     {
@@ -99,7 +117,9 @@
       "studiepoeng": 10,
       "aar": 2,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "FE409-1"
+      ],
       "merknad": null
     },
     {
@@ -108,7 +128,9 @@
       "studiepoeng": 10,
       "aar": 2,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "FE411-1"
+      ],
       "merknad": null
     },
     {
@@ -117,7 +139,9 @@
       "studiepoeng": 10,
       "aar": 2,
       "semester": "vår",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "PL412-2"
+      ],
       "merknad": null
     },
     {
@@ -126,7 +150,9 @@
       "studiepoeng": 10,
       "aar": 3,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "FE402-1"
+      ],
       "merknad": null
     },
     {
@@ -135,7 +161,9 @@
       "studiepoeng": 20,
       "aar": 3,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "FE403-1"
+      ],
       "merknad": null
     },
     {
@@ -144,7 +172,9 @@
       "studiepoeng": 10,
       "aar": 3,
       "semester": "høst",
-      "dbhEmnekoder": [],
+      "dbhEmnekoder": [
+        "FE408-1"
+      ],
       "merknad": null
     }
   ],
@@ -158,7 +188,9 @@
           "studiepoeng": 10,
           "aar": 3,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "PL417-1"
+          ],
           "merknad": null
         },
         {
@@ -167,7 +199,9 @@
           "studiepoeng": 10,
           "aar": 3,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "PL418-1"
+          ],
           "merknad": null
         }
       ]
@@ -181,7 +215,9 @@
           "studiepoeng": 10,
           "aar": 3,
           "semester": "høst",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "PL433-1"
+          ],
           "merknad": null
         },
         {
@@ -190,7 +226,9 @@
           "studiepoeng": 10,
           "aar": 3,
           "semester": "vår",
-          "dbhEmnekoder": [],
+          "dbhEmnekoder": [
+            "FY400-1"
+          ],
           "merknad": "Utdanningsplanen fører FY400 og ING303 (Systemtenking og innovasjon for ingeniørar) som «Valgfrie emne» innanfor denne valretninga (samlet krav 20 sp for retninga); ett av de to må velges for å fylle opp retningskravet. Ført som én linje (FY400) med merknad om alternativet ING303."
         }
       ]

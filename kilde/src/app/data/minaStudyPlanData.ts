@@ -2030,22 +2030,401 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
       },
       {
         entryId: 'uib_geovitenskap', shortName: 'UiB', institusjon: 'Universitetet i Bergen', isNmbu: false, programnavn: 'Geovitenskap, retning geologi (bachelor)',
-        studieplanAar: null, kilder: [],
-        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
-        merknad: 'Studieplan ikke hentet ennå.',
+        studieplanAar: '2026/2027', kilder: ['https://www.uib.no/studieprogram/BAMN-GEOV', 'https://www4.uib.no/studier/program/geovitskap-bachelor/plan-1', 'https://www4.uib.no/studier/emner/GEOV101', 'https://www4.uib.no/studier/emner/GEOV102', 'https://www4.uib.no/studier/emner/GEOV103', 'https://www4.uib.no/studier/emner/GEOV104', 'https://www4.uib.no/studier/emner/GEOV107', 'https://www4.uib.no/studier/emner/GEOV109', 'https://www4.uib.no/studier/emner/GEOV110', 'https://www4.uib.no/studier/emner/GEOV111', 'https://www4.uib.no/studier/emner/GEOV114', 'https://www4.uib.no/studier/emner/MAT101', 'https://www4.uib.no/studier/emner/MAT111', 'https://www4.uib.no/studier/emner/INF100', 'https://www4.uib.no/studier/emner/EXPHIL-MNEKS', 'https://www4.uib.no/studier/emner/EXPHIL-MNSEM'],
+        totaltStudiepoeng: 180, obligatoriskeStudiepoeng: 120,
+        merknad: 'Kilde er UiBs studieplan for BAMN-GEOV, studieretning geologi (www4.uib.no/studier/program/geovitskap-bachelor/plan-1), publisert for studieplan høst 2026, kryssjekket mot programsida www.uib.no/studieprogram/BAMN-GEOV og mot dei enkelte emnesidene (www4.uib.no/studier/emner/<KODE>) for studiepoeng og emnenamn. Studieplanen sitt eige avsnitt «Obligatoriske emne» lister nøyaktig desse 11 emnekodane (der MAT101/MAT111 og EXPHIL-MNEKS/EXPHIL-MNSEM er oppgitt som par): MAT101/MAT111, EXPHIL-MNEKS/EXPHIL-MNSEM, INF100, GEOV101, GEOV102, GEOV103, GEOV104, GEOV107, GEOV109, GEOV110, GEOV111 og GEOV114 - til saman 120 sp av 180 sp totalt. Dei resterande 60 sp er frie/tilrådde valemne (m.a. kjemi-, matematikk-, statistikk- og fysikkemne som KJEM109/110/120/130/131, MAT102, MAT121, STAT101/110, PHYS101/111), fordelt med typisk 10 sp i 2. semester, 20 sp i 5. semester og 30 sp i 6. semester (der 30 sp av dei frie studiepoenga kan takast som utveksling i 6. semester). MAT101/MAT111 er eit reelt val avhengig av matematikkbakgrunn frå vidaregåande og er ført som éin linje (MAT101) med merknad, tilsvarende praksis for REAL101/MATH-INF100 i nmbu_skogfag.json. EXPHIL-MNEKS/EXPHIL-MNSEM er to jamstilte eksamensformer for same exphil-krav og handsama på same måte. INF100 er sett til 1. semester (haust, år 1) i denne fila i tråd med studieplanen sitt tilrådde løp, sjølv om studieplanteksten opnar for at INF100 kan takast i 2. semester i staden, med tilsvarande byte av eit valemne mellom semestera; dette endrar ikkje at INF100 sjølv er obligatorisk uansett plassering. Bachelorprogrammet i geovitskap har òg ei retning i geofysikk (plan-0) med delvis andre obligatoriske emne frå og med 3. semester; denne fila dekker berre retninga geologi (plan-1), som er den etterspurde samanlikninga med NMBUs miljø og naturressurser-bachelor.',
         obligatoriske: [
+          {
+            emnekode: 'GEOV101', emnenavn: 'Innføring i geovitskap', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['GEOV101-0'],
+            years: [
+              { year: 2021, A: 0, B: 11, C: 27, D: 20, E: 4, F: 11, G: 0, H: 0, total: 73, snitt: 2.32, strykprosent: 15.1, bestattprosent: null, skjult: 4 },
+              { year: 2022, A: 3, B: 8, C: 48, D: 17, E: 11, F: 20, G: 0, H: 0, total: 107, snitt: 2.21, strykprosent: 18.7, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 3, B: 6, C: 60, D: 38, E: 8, F: 10, G: 0, H: 0, total: 125, snitt: 2.42, strykprosent: 8, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 0, B: 20, C: 40, D: 16, E: 4, F: 0, G: 0, H: 0, total: 80, snitt: 2.95, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2025, A: 7, B: 28, C: 44, D: 3, E: 0, F: 0, G: 0, H: 0, total: 82, snitt: 3.48, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: 'MAT101', emnenavn: 'Brukarkurs i matematikk I', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['MAT101-0'], merknad: 'Studieplanen gir valget mellom MAT101 og MAT111 (Grunnkurs i matematikk I), avhengig av forkunnskapar frå vidaregåande skole.',
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 46, H: 8, total: 54, snitt: null, strykprosent: null, bestattprosent: 85.2, skjult: 1 },
+              { year: 2022, A: 0, B: 5, C: 16, D: 8, E: 15, F: 10, G: 5, H: 0, total: 59, snitt: 1.83, strykprosent: 18.5, bestattprosent: 100, skjult: 4 },
+              { year: 2023, A: 0, B: 5, C: 10, D: 11, E: 14, F: 6, G: 0, H: 0, total: 46, snitt: 1.87, strykprosent: 13, bestattprosent: null, skjult: 9 },
+              { year: 2024, A: 3, B: 12, C: 16, D: 4, E: 11, F: 0, G: 0, H: 0, total: 46, snitt: 2.83, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2025, A: 8, B: 7, C: 12, D: 12, E: 6, F: 5, G: 0, H: 0, total: 50, snitt: 2.68, strykprosent: 10, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: 'INF100', emnenavn: 'Programmering 1', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['INF100-0'], merknad: 'Studieplanen sitt tilrådde løp set INF100 i 1. semester og eit valemne (t.d. KJEM109/KJEM110) i 2. semester; INF100 kan òg takast i 2. semester med eit valemne i staden i 1. semester. Uansett rekkjefølgje er INF100 sjølv obligatorisk, jf. den offisielle lista over obligatoriske emne på programsida.',
+            years: [
+              { year: 2021, A: 0, B: 8, C: 13, D: 32, E: 21, F: 19, G: 0, H: 0, total: 93, snitt: 1.68, strykprosent: 20.4, bestattprosent: null, skjult: 5 },
+              { year: 2022, A: 3, B: 9, C: 34, D: 40, E: 26, F: 17, G: 0, H: 0, total: 129, snitt: 2.01, strykprosent: 13.2, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 0, B: 6, C: 19, D: 20, E: 28, F: 18, G: 0, H: 0, total: 91, snitt: 1.64, strykprosent: 19.8, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 0, B: 6, C: 17, D: 13, E: 29, F: 12, G: 0, H: 0, total: 77, snitt: 1.69, strykprosent: 15.6, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 0, B: 9, C: 15, D: 13, E: 25, F: 0, G: 0, H: 0, total: 62, snitt: 2.13, strykprosent: 0, bestattprosent: null, skjult: 5 },
+            ],
+          },
+          {
+            emnekode: 'GEOV102', emnenavn: 'Geologi i praksis', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['GEOV102-0'],
+            years: [
+              { year: 2021, A: 3, B: 20, C: 43, D: 11, E: 0, F: 0, G: 0, H: 0, total: 77, snitt: 3.19, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2022, A: 0, B: 6, C: 27, D: 11, E: 0, F: 3, G: 0, H: 0, total: 47, snitt: 2.7, strykprosent: 6.4, bestattprosent: null, skjult: 5 },
+              { year: 2023, A: 0, B: 13, C: 46, D: 14, E: 7, F: 0, G: 0, H: 0, total: 80, snitt: 2.81, strykprosent: 0, bestattprosent: null, skjult: 9 },
+              { year: 2024, A: 5, B: 11, C: 36, D: 8, E: 4, F: 0, G: 0, H: 0, total: 64, snitt: 3.08, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2025, A: 5, B: 31, C: 27, D: 6, E: 0, F: 0, G: 0, H: 0, total: 69, snitt: 3.51, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: 'GEOV111', emnenavn: 'Geofysiske metodar', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['GEOV111-0'],
+            years: [
+              { year: 2021, A: 10, B: 38, C: 41, D: 10, E: 6, F: 0, G: 0, H: 0, total: 105, snitt: 3.34, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 0, B: 11, C: 21, D: 15, E: 8, F: 4, G: 0, H: 0, total: 59, snitt: 2.46, strykprosent: 6.8, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 9, B: 21, C: 28, D: 14, E: 9, F: 4, G: 0, H: 0, total: 85, snitt: 2.94, strykprosent: 4.7, bestattprosent: null, skjult: 5 },
+              { year: 2024, A: 13, B: 25, C: 25, D: 14, E: 5, F: 0, G: 0, H: 0, total: 82, snitt: 3.33, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 16, B: 27, C: 17, D: 3, E: 0, F: 3, G: 0, H: 0, total: 66, snitt: 3.71, strykprosent: 4.5, bestattprosent: null, skjult: 5 },
+            ],
+          },
+          {
+            emnekode: 'GEOV103', emnenavn: 'Jorda og livet sine byggjesteinar', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['GEOV103-0'],
+            years: [
+              { year: 2021, A: 5, B: 20, C: 30, D: 8, E: 0, F: 0, G: 0, H: 0, total: 63, snitt: 3.35, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2022, A: 13, B: 12, C: 15, D: 11, E: 3, F: 0, G: 0, H: 0, total: 54, snitt: 3.39, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2023, A: 11, B: 16, C: 33, D: 15, E: 4, F: 7, G: 0, H: 0, total: 86, snitt: 2.93, strykprosent: 8.1, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 8, B: 45, C: 6, D: 7, E: 3, F: 0, G: 0, H: 0, total: 69, snitt: 3.7, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2025, A: 20, B: 30, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 50, snitt: 4.4, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: 'GEOV107', emnenavn: 'Innføring i sedimentologi', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['GEOV107-0'],
+            years: [
+              { year: 2021, A: 0, B: 25, C: 24, D: 13, E: 0, F: 0, G: 0, H: 0, total: 62, snitt: 3.19, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2022, A: 0, B: 7, C: 23, D: 18, E: 8, F: 0, G: 0, H: 0, total: 56, snitt: 2.52, strykprosent: 0, bestattprosent: null, skjult: 7 },
+              { year: 2023, A: 5, B: 18, C: 26, D: 21, E: 7, F: 0, G: 0, H: 0, total: 77, snitt: 2.91, strykprosent: 0, bestattprosent: null, skjult: 8 },
+              { year: 2024, A: 5, B: 25, C: 34, D: 14, E: 0, F: 0, G: 0, H: 0, total: 78, snitt: 3.27, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2025, A: 0, B: 20, C: 28, D: 10, E: 0, F: 0, G: 0, H: 0, total: 58, snitt: 3.17, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
+          },
+          {
+            emnekode: 'GEOV110', emnenavn: 'Innføring i eksogene prosessar og paleoklima', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['GEOV110-0'],
+            years: [
+              { year: 2021, A: 3, B: 8, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3.74, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2022, A: 0, B: 15, C: 27, D: 11, E: 3, F: 3, G: 0, H: 0, total: 59, snitt: 2.81, strykprosent: 5.1, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 5, B: 35, C: 10, D: 0, E: 0, F: 0, G: 0, H: 0, total: 50, snitt: 3.9, strykprosent: 0, bestattprosent: null, skjult: 7 },
+              { year: 2024, A: 20, B: 67, C: 16, D: 0, E: 0, F: 0, G: 0, H: 0, total: 103, snitt: 4.04, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 11, B: 25, C: 15, D: 0, E: 0, F: 0, G: 0, H: 0, total: 51, snitt: 3.92, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: 'GEOV104', emnenavn: 'Innføring i strukturgeologi og tektonikk', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['GEOV104-0'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 20, H: 0, total: 20, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2022, A: 9, B: 23, C: 25, D: 8, E: 4, F: 5, G: 0, H: 0, total: 74, snitt: 3.14, strykprosent: 6.8, bestattprosent: null, skjult: 4 },
+              { year: 2023, A: 3, B: 12, C: 30, D: 14, E: 6, F: 7, G: 0, H: 0, total: 72, snitt: 2.6, strykprosent: 9.7, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 6, B: 30, C: 23, D: 11, E: 9, F: 4, G: 0, H: 0, total: 83, snitt: 3.01, strykprosent: 4.8, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 8, B: 34, C: 20, D: 7, E: 0, F: 0, G: 0, H: 0, total: 69, snitt: 3.62, strykprosent: 0, bestattprosent: null, skjult: 6 },
+            ],
+          },
+          {
+            emnekode: 'GEOV109', emnenavn: 'Samspel mellom Jorda og Livet', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['GEOV109-0'],
+            years: [
+              { year: 2021, A: 3, B: 6, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 3.86, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2022, A: 4, B: 17, C: 28, D: 17, E: 7, F: 0, G: 0, H: 0, total: 73, snitt: 2.92, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 6, B: 22, C: 15, D: 12, E: 3, F: 0, G: 0, H: 0, total: 58, snitt: 3.28, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 0, B: 25, C: 33, D: 0, E: 0, F: 0, G: 0, H: 0, total: 58, snitt: 3.43, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 3, B: 35, C: 12, D: 0, E: 0, F: 0, G: 0, H: 0, total: 50, snitt: 3.82, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: 'EXPHIL-MNEKS', emnenavn: 'Examen philosophicum - skuleeksamen', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['EXPHIL-MNEKS-0'], merknad: 'Studieplanen gir valget mellom EXPHIL-MNEKS (skuleeksamen) og EXPHIL-MNSEM (seminarmodell); begge er 10 sp og reelt likeverdige alternativ for det obligatoriske exphil-kravet.',
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 5 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 9, G: 0, H: 0, total: 9, snitt: 0, strykprosent: 100, bestattprosent: null, skjult: 4 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 3, F: 0, G: 0, H: 0, total: 3, snitt: 1, strykprosent: 0, bestattprosent: null, skjult: 7 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 4 },
+            ],
+          },
+          {
+            emnekode: 'GEOV114', emnenavn: 'Jorda og livet si felles historie', studiepoeng: 10, aar: 3, semester: 'høst',
+            dbhEmnekoder: ['GEOV114-0'],
+            years: [
+              { year: 2021, A: 10, B: 9, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 4.53, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 4, B: 47, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 59, snitt: 3.93, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 9, B: 32, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 50, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 17, B: 45, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 62, snitt: 4.27, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 15, B: 33, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 48, snitt: 4.31, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
         ],
         spesialiseringer: [
         ],
       },
       {
         entryId: 'ntnu_geologi', shortName: 'NTNU', institusjon: 'Norges teknisk-naturvitenskapelige universitet', isNmbu: false, programnavn: 'Geologi (bachelor)',
-        studieplanAar: null, kilder: [],
-        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
-        merknad: 'Studieplan ikke hentet ennå.',
+        studieplanAar: '2026/2027', kilder: ['https://www.ntnu.no/studier/bgeol', 'https://www.ntnu.no/studier/bgeol/studiets-oppbygning', 'https://www.ntnu.no/studier/studieplan#programmeCode=BGEOL&year=2026', 'https://www.ntnu.no/studier/studieplan#programmeCode=BGEOL&year=2025', 'https://www.ntnu.no/studier/studieplan#programmeCode=BGEOL&year=2024', 'https://www.unis.no/studies/arctic-geology-courses/', 'https://www.unis.no/courses/ag-214-the-geological-evolution-of-svalbard-15-ects/', 'https://www.unis.no/courses/ag-211-arctic-marine-geology/', 'https://www.unis.no/courses/ag-223-arctic-climate-change-past-to-future/'],
+        totaltStudiepoeng: 180, obligatoriskeStudiepoeng: 112.5,
+        merknad: 'Kilde er NTNUs studieplanverktøy (www.ntnu.no/studier/studieplan#programmeCode=BGEOL), hentet direkte fra JSON-endepunktet bak knappen «Gå til studieplan» (p_p_resource_id=studyplan) via nettleser. NTNUs studieplaner er organisert per kull (opptaksår), og siden kull 2026 (dette studieårets nye studenter) foreløpig kun har publisert 1. studieår, er filen satt sammen av tre ulike kull for å vise emnene som faktisk undervises i studieåret 2026/2027: 1. år er hentet fra kull 2026 (periodeNumber 1-2), 2. år fra kull 2025 (periodeNumber 3-4, siden dette kullet er i sitt andre studieår i 2026/2027), og 3. år/studieretningene fra kull 2024 (periodeNumber 5-6, siden dette kullet er i sitt tredje og siste studieår i 2026/2027). 1. år for kull 2025 og kull 2026 er kryss-sjekket og avviker noe: kull 2025 tilbyr flere matematikk/fysikk-alternativer (MA1101/MA1102, FY0001) enn kull 2026, som denne filen følger siden det er det nyeste og gjeldende opptakskullet. Programmet er 180 sp/3 år. Alle emner merket status «O» (Obligatorisk emne) i NTNUs studieplandata er ført som obligatoriske; grupper merket «Minst 1 emne fra A/B/C-gruppe» (matematikk/fysikk-alternativ avhengig av bakgrunn) er ført som én linje med merknad om alternativet, mens genuine valgfrie emnegrupper (VA/VB, «Minst en av» for områdeemne, og de brede valgbare emnelistene i 3. år) er holdt utenfor obligatoriske-lista og bare beskrevet i merknad, i tråd med regelen om at reelle valg mellom alternativer føres i merknad. Fra og med 2. år vår («Valg av studieretning», frist normalt 1. februar i 2. år) deler programmet seg i tre studieretninger: Arktisk geologi (undervises ved UNIS på Svalbard hele 3. år, 60 sp obligatorisk, ingen valgfri del), Grunnleggende og anvendt geologi (22,5 sp obligatorisk + 37,5 sp valgfritt i 3. år) og Miljø- og anleggsgeologi (30 sp obligatorisk + 30 sp valgfritt i 3. år); disse er ført under spesialiseringer. obligatoriskeStudiepoeng (112,5 sp) dekker kun de emnene som er felles for alle studenter uansett studieretning (1. og 2. år); hver studieretning legger i tillegg til egne obligatoriske emner (22,5-60 sp, se spesialiseringer) samt valgfrie emner, slik at summen blir 180 sp for alle tre retningene (112,5 + 22,5 + 37,5 + valgfritt gir avvik på ±7,5 sp mellom retningene pga. ulik fordeling mellom obligatorisk og valgfritt i 3. år, men totalt er alle 180 sp).',
         obligatoriske: [
+          {
+            emnekode: 'HMS0001', emnenavn: 'HMS-kurs for 1. årsstudenter', studiepoeng: 0, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['HMS0001-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 35, H: 0, total: 35, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 24, H: 0, total: 24, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 31, H: 0, total: 31, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 32, H: 0, total: 32, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: 'KJ1004', emnenavn: 'Generell kjemi', studiepoeng: 7.5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['KJ1004-1'],
+            years: [
+              { year: 2025, A: 11, B: 13, C: 9, D: 4, E: 3, F: 5, G: 0, H: 0, total: 45, snitt: 3.22, strykprosent: 11.1, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: 'TDT4110', emnenavn: 'Informasjonsteknologi, grunnkurs', studiepoeng: 7.5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['TDT4110-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 24, H: 4, total: 28, snitt: null, strykprosent: null, bestattprosent: 85.7, skjult: 0 },
+              { year: 2022, A: 0, B: 4, C: 7, D: 6, E: 7, F: 3, G: 0, H: 0, total: 27, snitt: 2.07, strykprosent: 11.1, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 6, E: 11, F: 4, G: 0, H: 0, total: 21, snitt: 1.1, strykprosent: 19, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 0, B: 7, C: 13, D: 27, E: 29, F: 9, G: 0, H: 0, total: 85, snitt: 1.76, strykprosent: 10.6, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 0, B: 6, C: 14, D: 11, E: 10, F: 11, G: 0, H: 0, total: 52, snitt: 1.88, strykprosent: 21.2, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: 'TGB4100', emnenavn: 'Geologi, innføring', studiepoeng: 7.5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['TGB4100-1'],
+            years: [
+              { year: 2021, A: 5, B: 13, C: 12, D: 5, E: 0, F: 0, G: 0, H: 0, total: 35, snitt: 3.51, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 5, B: 8, C: 15, D: 0, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 3.64, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 4, B: 10, C: 16, D: 11, E: 4, F: 0, G: 0, H: 0, total: 45, snitt: 2.98, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 17, B: 11, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 34, snitt: 4.32, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 27, B: 20, C: 3, D: 3, E: 0, F: 0, G: 0, H: 0, total: 53, snitt: 4.34, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: 'MA0001', emnenavn: 'Brukerkurs i matematikk A', studiepoeng: 7.5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['MA0001-1'], merknad: 'Studieplanen (kull 2026) gir valget mellom MA0001 og TMA4400 (Matematikk 1: Kalkulus og lineær algebra), avhengig av matematikkbakgrunn fra videregående skole.',
+            years: [
+              { year: 2021, A: 7, B: 8, C: 9, D: 0, E: 0, F: 3, G: 0, H: 0, total: 27, snitt: 3.48, strykprosent: 11.1, bestattprosent: null, skjult: 6 },
+              { year: 2022, A: 0, B: 0, C: 10, D: 8, E: 4, F: 0, G: 0, H: 0, total: 22, snitt: 2.27, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2023, A: 0, B: 4, C: 13, D: 5, E: 9, F: 3, G: 0, H: 0, total: 34, snitt: 2.18, strykprosent: 8.8, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 0, B: 3, C: 8, D: 4, E: 3, F: 6, G: 0, H: 0, total: 24, snitt: 1.96, strykprosent: 25, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 21, B: 9, C: 11, D: 4, E: 0, F: 0, G: 0, H: 0, total: 45, snitt: 4.04, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: 'EXPH0300', emnenavn: 'Examen philosophicum for naturvitenskap og teknologi', studiepoeng: 7.5, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['EXPH0300-1'],
+            years: [
+              { year: 2021, A: 0, B: 5, C: 16, D: 3, E: 0, F: 0, G: 0, H: 0, total: 24, snitt: 3.08, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2022, A: 4, B: 9, C: 13, D: 7, E: 0, F: 0, G: 0, H: 0, total: 33, snitt: 3.3, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 0, B: 4, C: 11, D: 5, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 2.95, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 5, B: 8, C: 11, D: 6, E: 0, F: 0, G: 0, H: 0, total: 30, snitt: 3.4, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 0, B: 4, C: 13, D: 5, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 2.95, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
+          },
+          {
+            emnekode: 'TGB4112', emnenavn: 'Norges geologi og georessurser', studiepoeng: 7.5, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['TGB4112-1'],
+            years: [
+              { year: 2021, A: 4, B: 16, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 3.96, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2022, A: 6, B: 13, C: 14, D: 0, E: 0, F: 0, G: 0, H: 0, total: 33, snitt: 3.76, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 3, B: 4, C: 8, D: 6, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3.19, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 5, B: 7, C: 13, D: 7, E: 3, F: 3, G: 0, H: 0, total: 38, snitt: 2.87, strykprosent: 7.9, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 3, B: 11, C: 10, D: 9, E: 0, F: 0, G: 0, H: 0, total: 33, snitt: 3.24, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: 'MA0002', emnenavn: 'Brukerkurs i matematikk B', studiepoeng: 7.5, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['MA0002-1'], merknad: 'Studieplanen (kull 2026) gir valget mellom MA0002 og TMA4411 (Matematikk 2B), avhengig av matematikkbakgrunn fra videregående skole.',
+            years: [
+              { year: 2021, A: 8, B: 11, C: 4, D: 8, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 3.61, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 0, B: 6, C: 12, D: 6, E: 0, F: 0, G: 0, H: 0, total: 24, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2023, A: 7, B: 8, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 4.16, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2024, A: 10, B: 13, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 4.18, strykprosent: 0, bestattprosent: null, skjult: 8 },
+              { year: 2025, A: 4, B: 6, C: 5, D: 3, E: 0, F: 6, G: 0, H: 0, total: 24, snitt: 2.71, strykprosent: 25, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: 'TKT4126', emnenavn: 'Mekanikk', studiepoeng: 7.5, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['TKT4126-1'],
+            years: [
+              { year: 2021, A: 3, B: 3, C: 0, D: 3, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 3.67, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 0, B: 6, C: 8, D: 0, E: 3, F: 0, G: 0, H: 0, total: 17, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 8 },
+              { year: 2023, A: 6, B: 5, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 4.21, strykprosent: 0, bestattprosent: null, skjult: 7 },
+              { year: 2024, A: 6, B: 7, C: 9, D: 3, E: 4, F: 0, G: 0, H: 0, total: 29, snitt: 3.28, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 3, B: 4, C: 4, D: 0, E: 3, F: 3, G: 0, H: 0, total: 17, snitt: 2.71, strykprosent: 17.6, bestattprosent: null, skjult: 4 },
+            ],
+          },
+          {
+            emnekode: 'ST0103', emnenavn: 'Brukerkurs i statistikk', studiepoeng: 7.5, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['ST0103-1'],
+            years: [
+              { year: 2021, A: 0, B: 3, C: 6, D: 4, E: 5, F: 0, G: 0, H: 0, total: 18, snitt: 2.39, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2022, A: 4, B: 5, C: 11, D: 11, E: 0, F: 3, G: 0, H: 0, total: 34, snitt: 2.79, strykprosent: 8.8, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 0, B: 6, C: 5, D: 5, E: 3, F: 0, G: 0, H: 0, total: 19, snitt: 2.74, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2024, A: 12, B: 6, C: 0, D: 7, E: 4, F: 4, G: 0, H: 0, total: 33, snitt: 3.09, strykprosent: 12.1, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 13, B: 3, C: 8, D: 0, E: 0, F: 3, G: 0, H: 0, total: 27, snitt: 3.74, strykprosent: 11.1, bestattprosent: null, skjult: 4 },
+            ],
+          },
+          {
+            emnekode: 'TBA4240', emnenavn: 'Geografiske informasjonssystemer, grunnkurs', studiepoeng: 7.5, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['TBA4240-1'],
+            years: [
+              { year: 2021, A: 0, B: 11, C: 15, D: 0, E: 0, F: 0, G: 0, H: 0, total: 26, snitt: 3.42, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 0, B: 9, C: 22, D: 0, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 3.29, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 0, B: 6, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 3.43, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 0, B: 18, C: 14, D: 0, E: 0, F: 0, G: 0, H: 0, total: 32, snitt: 3.56, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 3, B: 6, C: 11, D: 6, E: 0, F: 0, G: 0, H: 0, total: 26, snitt: 3.23, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: 'TGB4126', emnenavn: 'Mineralogi, grunnkurs', studiepoeng: 7.5, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['TGB4126-1'], merknad: 'I tillegg skal studenten 2. år høst velge ett «områdeemne» (7,5 sp) blant BI2081 Natur, miljø og bærekraft, ITO1000 Digitalisering, IØ2000 Hvordan bli en endringsagent? og ØKO1001 Ledelse. Dette er et reelt valg mellom fire ulike emner utenfor geologifaget og er derfor holdt utenfor obligatoriske-lista og obligatoriskeStudiepoeng.',
+            years: [
+              { year: 2021, A: 14, B: 4, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 4.39, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 18, B: 7, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 30, snitt: 4.43, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 17, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 4.77, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 20, B: 10, C: 0, D: 3, E: 0, F: 0, G: 0, H: 0, total: 33, snitt: 4.42, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 19, B: 4, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 4.56, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: 'GEOL1001', emnenavn: 'Historisk geologi og paleontologi', studiepoeng: 7.5, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['GEOL1001-1'],
+            years: [
+              { year: 2021, A: 7, B: 10, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 24, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2022, A: 7, B: 8, C: 7, D: 3, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 3.76, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 11, B: 7, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 4.07, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2024, A: 6, B: 10, C: 5, D: 3, E: 0, F: 0, G: 0, H: 0, total: 24, snitt: 3.79, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 12, B: 12, C: 4, D: 5, E: 0, F: 0, G: 0, H: 0, total: 33, snitt: 3.94, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: 'GEOL1009', emnenavn: 'Sedimentologi, innføring', studiepoeng: 7.5, aar: 2, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'TGB4130', emnenavn: 'Petrologi', studiepoeng: 7.5, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['TGB4130-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 3, B: 8, C: 0, D: 3, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 3.79, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2023, A: 3, B: 0, C: 4, D: 0, E: 0, F: 3, G: 0, H: 0, total: 10, snitt: 2.7, strykprosent: 30, bestattprosent: null, skjult: 8 },
+              { year: 2024, A: 0, B: 5, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 3.36, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 0, B: 4, C: 6, D: 0, E: 0, F: 3, G: 0, H: 0, total: 13, snitt: 2.62, strykprosent: 23.1, bestattprosent: null, skjult: 3 },
+            ],
+          },
+          {
+            emnekode: 'TGB4150', emnenavn: 'Strukturgeologi, grunnkurs', studiepoeng: 7.5, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['TGB4150-1'], merknad: 'Fra og med 2. år vår («Valg av studieretning») deler programmet seg i tre studieretninger (Arktisk geologi, Grunnleggende og anvendt geologi, Miljø- og anleggsgeologi); disse fire emnene (GEOL1001, GEOL1009, TGB4130, TGB4150) er obligatoriske og identiske for alle tre studieretningene dette semesteret. Studieretningsspesifikke obligatoriske emner i 3. år er ført under spesialiseringer.',
+            years: [
+              { year: 2021, A: 0, B: 5, C: 12, D: 8, E: 4, F: 0, G: 0, H: 0, total: 29, snitt: 2.62, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 4, B: 11, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 3.86, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2023, A: 0, B: 6, C: 13, D: 5, E: 3, F: 0, G: 0, H: 0, total: 27, snitt: 2.81, strykprosent: 0, bestattprosent: null, skjult: 7 },
+              { year: 2024, A: 3, B: 0, C: 0, D: 4, E: 3, F: 0, G: 0, H: 0, total: 10, snitt: 2.6, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2025, A: 5, B: 16, C: 15, D: 3, E: 0, F: 0, G: 0, H: 0, total: 39, snitt: 3.59, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+          },
         ],
         spesialiseringer: [
+          { navn: 'Arktisk geologi', obligatoriske: [
+            {
+              emnekode: 'AG214', emnenavn: 'The geological evolution of Svalbard', studiepoeng: 15, aar: 3, semester: 'høst',
+              dbhEmnekoder: [], merknad: 'Undervises ved UNIS (Universitetssenteret på Svalbard); NTNUs studieplan angir kun at «Følgende emner skal tas ved UNIS: AG214 og AG215 (høst) og AG211 og AG223 (vår)» uten egne norske studiepoengtall i studieplanverktøyet, så studiepoeng (15 sp, standard UNIS-bachelorkurs) og emnenavn er hentet fra UNIS\' egne emnesider.',
+              years: [],
+            },
+            {
+              emnekode: 'AG215', emnenavn: 'Arctic Landforms and Processes', studiepoeng: 15, aar: 3, semester: 'høst',
+              dbhEmnekoder: [], merknad: 'Undervises ved UNIS, se merknad på AG214.',
+              years: [],
+            },
+            {
+              emnekode: 'AG211', emnenavn: 'Arctic Marine Geology', studiepoeng: 15, aar: 3, semester: 'vår',
+              dbhEmnekoder: [], merknad: 'Undervises ved UNIS, se merknad på AG214.',
+              years: [],
+            },
+            {
+              emnekode: 'AG223', emnenavn: 'Arctic Climate Change: Past to Future', studiepoeng: 15, aar: 3, semester: 'vår',
+              dbhEmnekoder: [], merknad: 'Undervises ved UNIS, se merknad på AG214.',
+              years: [],
+            },
+          ] },
+          { navn: 'Grunnleggende og anvendt geologi', obligatoriske: [
+            {
+              emnekode: 'GEOL1008', emnenavn: 'Vitenskapelig og teknisk kommunikasjon', studiepoeng: 7.5, aar: 3, semester: 'høst',
+              dbhEmnekoder: ['GEOL1008-1'],
+              years: [
+                { year: 2025, A: 18, B: 4, C: 0, D: 0, E: 0, F: 4, G: 0, H: 0, total: 26, snitt: 4.08, strykprosent: 15.4, bestattprosent: null, skjult: 0 },
+              ],
+            },
+            {
+              emnekode: 'TGB4266', emnenavn: 'Tektonikk', studiepoeng: 7.5, aar: 3, semester: 'høst',
+              dbhEmnekoder: ['TGB4266-1'], merknad: 'I tillegg velges 15 sp valgbare emner 3. år høst (bl.a. TGB4242, TGB4301, TGB4115, TGB4185, TPG4175, TBA4150), ikke tatt med her da dette er fritt valg og ikke navngitt obligatorisk emne.',
+              years: [
+                { year: 2022, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 4 },
+                { year: 2023, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 5 },
+                { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 3 },
+                { year: 2025, A: 4, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 4.5, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              ],
+            },
+            {
+              emnekode: 'TPG4101', emnenavn: 'Generell og anvendt geofysikk', studiepoeng: 7.5, aar: 3, semester: 'vår',
+              dbhEmnekoder: [], merknad: 'I tillegg velges 22,5 sp valgbare emner 3. år vår (bl.a. TPG4127, TGB4205, TGB4270, TGB4276, TGB4240), ikke tatt med her da dette er fritt valg.',
+              years: [],
+            },
+          ] },
+          { navn: 'Miljø- og anleggsgeologi', obligatoriske: [
+            {
+              emnekode: 'GEOL1008', emnenavn: 'Vitenskapelig og teknisk kommunikasjon', studiepoeng: 7.5, aar: 3, semester: 'høst',
+              dbhEmnekoder: ['GEOL1008-1'],
+              years: [
+                { year: 2025, A: 18, B: 4, C: 0, D: 0, E: 0, F: 4, G: 0, H: 0, total: 26, snitt: 4.08, strykprosent: 15.4, bestattprosent: null, skjult: 0 },
+              ],
+            },
+            {
+              emnekode: 'TGB4185', emnenavn: 'Ingeniørgeologi, grunnkurs', studiepoeng: 7.5, aar: 3, semester: 'høst',
+              dbhEmnekoder: ['TGB4185-1'], merknad: 'I tillegg velges 15 sp valgbare emner 3. år høst (bl.a. TPG4175, TVM4105, TBA4150), ikke tatt med her da dette er fritt valg.',
+              years: [
+                { year: 2021, A: 3, B: 9, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 3.88, strykprosent: 0, bestattprosent: null, skjult: 1 },
+                { year: 2022, A: 0, B: 5, C: 3, D: 5, E: 3, F: 0, G: 0, H: 0, total: 16, snitt: 2.62, strykprosent: 0, bestattprosent: null, skjult: 0 },
+                { year: 2023, A: 0, B: 6, C: 9, D: 6, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 2 },
+                { year: 2024, A: 0, B: 3, C: 3, D: 3, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 2 },
+                { year: 2025, A: 3, B: 7, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 4.3, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              ],
+            },
+            {
+              emnekode: 'TGB4205', emnenavn: 'Hydrogeologi', studiepoeng: 7.5, aar: 3, semester: 'vår',
+              dbhEmnekoder: ['TGB4205-1'],
+              years: [
+                { year: 2021, A: 0, B: 4, C: 0, D: 3, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 3.14, strykprosent: 0, bestattprosent: null, skjult: 2 },
+                { year: 2022, A: 0, B: 0, C: 4, D: 4, E: 3, F: 0, G: 0, H: 0, total: 11, snitt: 2.09, strykprosent: 0, bestattprosent: null, skjult: 1 },
+                { year: 2023, A: 0, B: 0, C: 0, D: 3, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 2, strykprosent: 0, bestattprosent: null, skjult: 6 },
+                { year: 2024, A: 0, B: 8, C: 0, D: 6, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 3.14, strykprosent: 0, bestattprosent: null, skjult: 3 },
+                { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 7 },
+              ],
+            },
+            {
+              emnekode: 'TPG4101', emnenavn: 'Generell og anvendt geofysikk', studiepoeng: 7.5, aar: 3, semester: 'vår',
+              dbhEmnekoder: [], merknad: 'I tillegg velges 15 sp valgbare emner 3. år vår (bl.a. TGB4270, TGB4276, TPG4127, TEP4100), ikke tatt med her da dette er fritt valg.',
+              years: [],
+            },
+          ] },
         ],
       },
       {
@@ -2236,70 +2615,1341 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
     programs: [
       {
         entryId: 'nmbu_fornybar', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Fornybar energi (bachelor)',
-        studieplanAar: null, kilder: [],
-        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
-        merknad: 'Studieplan ikke hentet ennå.',
+        studieplanAar: '2026/2027', kilder: ['https://www.nmbu.no/studier/bachelor/fornybar-energi', 'https://static02.nmbu.no/mina/studier/B-FORNY.php?sprx=n&aarx=2026'],
+        totaltStudiepoeng: 180, obligatoriskeStudiepoeng: 140,
+        merknad: 'Kilde er NMBUs fargekodede rutenett-studieplan for kull 2026 (static02.nmbu.no/mina/studier/B-FORNY.php?sprx=n&aarx=2026), linket fra programsiden nmbu.no/studier/bachelor/fornybar-energi. Rutenettets kolonner er 5 sp brede, og hvert emnes reelle studiepoeng er lest ut fra cellens colspan-verdi (colspan × 5 sp), kryssjekket mot studiepoengtallet på nmbu.no/emne/<kode> for samtlige emner (Augustblokk/Januarblokk/Juniblokk-cellene bruker alltid full radbredde av rene formateringshensyn og er derfor IKKE brukt til å lese av studiepoeng med mindre kilden selv oppgir tallet, f.eks. «FORNY260 - 5 stp» og «ECN180 - 5 stp»; FORNY100 og MINA250 er delt mellom to blokker og er kryss-sjekket til å være 10 sp hver totalt via nmbu.no/emne). De 18 navngitte obligatoriske emnene summerer til 140 sp av totalt 180 sp. De resterende 40 sp er valgfrie: studieplanen lister to ikke-obligatoriske eksempelplaner (Miljøanalyser, Energisystemanalyse) uten faste obligatoriske emnelister, samt en liste over «anbefalte valgfrie emner» (bl.a. BUS210, BUS211, BUS240, ECN204/210/211/271/275, ECOL200, EDS260, FORNY370, FYS140/141, GMGI102, GEO100/220, IND200, INF100/120/201/205/230, JUS102/103/201/220, KJM100, LAD103, LNG250, MATH131/280, MILJØ200, NATF200, SKOG100/205/220/230, STAT200/210, STIN100, THT291, VANN200/210/211/220). REAL101 (Matematikk for naturvitere, 10 sp) har en fotnote om at MATH-INF100 (Beregningsbasert matematikk i praksis, også 10 sp) kan velges i stedet; dette er ført som én linje (REAL101) med merknad, tilsvarende praksis for REAL101/MATH-INF100 i nmbu_skogfag.json. PHI100 (Examen philosophicum) har tilsvarende en fotnote om at PHI101 (seminarversjon) eller PHI102 (engelsk versjon) kan velges i stedet; ført som én linje (PHI100) med merknad. FYS100 har en fritaksregel (karakter 4+ i Fysikk 2 fra vgs gir fritak), som ikke endrer at emnet er obligatorisk for studenter uten slikt fritak, og er derfor beholdt i obligatoriske-lista med merknad. Emnenavn er hentet fra NMBUs emnesøk (nmbu.no/emne/<kode>).',
         obligatoriske: [
+          {
+            emnekode: 'FORNY100', emnenavn: 'Energi, miljø og samfunn', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['FORNY100-1'], merknad: '10 sp totalt, fordelt med 5 sp i augustblokk (før høstsemesteret) og 5 sp i høstparallell, jf. rutenettets kolonnebredder og NMBUs emnesøk.',
+            years: [
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 25, H: 0, total: 25, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 22, H: 3, total: 25, snitt: null, strykprosent: null, bestattprosent: 88, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 28, H: 0, total: 28, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 20, H: 3, total: 23, snitt: null, strykprosent: null, bestattprosent: 87, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: 'JUS100', emnenavn: 'Juridisk metode og norsk rettssystem', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['JUS100-1'],
+            years: [
+              { year: 2021, A: 0, B: 3, C: 8, D: 0, E: 4, F: 0, G: 0, H: 0, total: 15, snitt: 2.67, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2022, A: 4, B: 4, C: 9, D: 3, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 3.45, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 0, B: 6, C: 12, D: 0, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 3.33, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2024, A: 0, B: 7, C: 9, D: 6, E: 5, F: 0, G: 0, H: 0, total: 27, snitt: 2.67, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 5, E: 6, F: 9, G: 0, H: 0, total: 20, snitt: 0.8, strykprosent: 45, bestattprosent: null, skjult: 3 },
+            ],
+          },
+          {
+            emnekode: 'REAL101', emnenavn: 'Matematikk for naturvitere', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: [], merknad: 'Studieplanen gir valget mellom REAL101 og MATH-INF100 (Beregningsbasert matematikk i praksis).',
+            years: [],
+          },
+          {
+            emnekode: 'BUS133', emnenavn: 'Excel - fra data til informasjon', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['BUS133-1'],
+            years: [
+              { year: 2021, A: 5, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 4.56, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2022, A: 5, B: 3, C: 0, D: 0, E: 0, F: 7, G: 0, H: 0, total: 15, snitt: 2.47, strykprosent: 46.7, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 4, B: 6, C: 6, D: 3, E: 0, F: 20, G: 0, H: 0, total: 39, snitt: 1.74, strykprosent: 51.3, bestattprosent: null, skjult: 5 },
+              { year: 2024, A: 17, B: 9, C: 0, D: 0, E: 4, F: 6, G: 0, H: 0, total: 36, snitt: 3.47, strykprosent: 16.7, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 4, B: 0, C: 3, D: 0, E: 0, F: 11, G: 0, H: 0, total: 18, snitt: 1.61, strykprosent: 61.1, bestattprosent: null, skjult: 7 },
+            ],
+          },
+          {
+            emnekode: 'ECOL100', emnenavn: 'Grunnleggende økologi', studiepoeng: 5, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['ECOL100-1'],
+            years: [
+              { year: 2021, A: 0, B: 5, C: 8, D: 7, E: 5, F: 0, G: 0, H: 0, total: 25, snitt: 2.52, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2022, A: 0, B: 3, C: 7, D: 6, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 2.81, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2023, A: 3, B: 5, C: 8, D: 3, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3.42, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 0, B: 12, C: 3, D: 4, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3.42, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 4, B: 8, C: 4, D: 4, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 3.6, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: 'FORNY150', emnenavn: 'Investeringsanalyse av energiprosjekter', studiepoeng: 5, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['FORNY150-1'],
+            years: [
+              { year: 2023, A: 7, B: 7, C: 5, D: 0, E: 0, F: 3, G: 0, H: 0, total: 22, snitt: 3.55, strykprosent: 13.6, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 0, B: 4, C: 11, D: 0, E: 0, F: 3, G: 0, H: 0, total: 18, snitt: 2.72, strykprosent: 16.7, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 3, B: 6, C: 10, D: 0, E: 3, F: 3, G: 0, H: 0, total: 25, snitt: 2.88, strykprosent: 12, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: 'FYS100', emnenavn: 'Fysikk og natur', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['FYS100-1'], merknad: 'Studenter med gjennomsnittskarakteren 4 eller bedre i Fysikk 2 fra videregående skole får fritak fra FYS100.',
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 22, H: 0, total: 22, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2022, A: 0, B: 4, C: 0, D: 3, E: 0, F: 6, G: 0, H: 0, total: 13, snitt: 1.69, strykprosent: 46.2, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 0, B: 4, C: 0, D: 5, E: 0, F: 5, G: 0, H: 0, total: 14, snitt: 1.86, strykprosent: 35.7, bestattprosent: null, skjult: 5 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 9, E: 7, F: 0, G: 0, H: 0, total: 16, snitt: 1.56, strykprosent: 0, bestattprosent: null, skjult: 9 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 6, E: 3, F: 6, G: 0, H: 0, total: 15, snitt: 1, strykprosent: 40, bestattprosent: null, skjult: 8 },
+            ],
+          },
+          {
+            emnekode: 'ECN101', emnenavn: 'Samfunnsøkonomi for miljø og utvikling', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['ECN101-1'],
+            years: [
+              { year: 2021, A: 0, B: 8, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2022, A: 3, B: 5, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 3.92, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 0, B: 4, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 3.4, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2024, A: 0, B: 0, C: 9, D: 4, E: 0, F: 3, G: 0, H: 0, total: 16, snitt: 2.19, strykprosent: 18.8, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 0, B: 6, C: 7, D: 3, E: 0, F: 3, G: 0, H: 0, total: 19, snitt: 2.68, strykprosent: 15.8, bestattprosent: null, skjult: 5 },
+            ],
+          },
+          {
+            emnekode: 'ECN180', emnenavn: 'Globale utfordringer I. Økonomi og bærekraft', studiepoeng: 5, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['ECN180-1'], merknad: 'Augustblokk før høstsemesteret.',
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 5, H: 0, total: 5, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 15, H: 0, total: 15, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 20, H: 0, total: 20, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 20, H: 0, total: 20, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: 'FORNY200', emnenavn: 'Fornybare energikilder og -teknologier', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['FORNY200-1'],
+            years: [
+              { year: 2022, A: 3, B: 5, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 3.79, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 4, B: 9, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 4.31, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 0, B: 10, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 3.59, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 5, B: 10, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 4.05, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: 'PHI100', emnenavn: 'Examen philosophicum', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['PHI100-1'], merknad: 'Studieplanen gir valget mellom PHI100, PHI101 (Examen philosophicum - seminarversjon) og PHI102 (Examen philosophicum - Engelsk versjon).',
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 4 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 0, B: 0, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2025, A: 0, B: 3, C: 0, D: 0, E: 0, F: 4, G: 0, H: 0, total: 7, snitt: 1.71, strykprosent: 57.1, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: 'LAD102', emnenavn: 'GIS - praktisk introduksjon', studiepoeng: 5, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['LAD102-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 28, H: 8, total: 36, snitt: null, strykprosent: null, bestattprosent: 77.8, skjult: 0 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 28, H: 4, total: 32, snitt: null, strykprosent: null, bestattprosent: 87.5, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 3, H: 0, total: 3, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 5 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 12, H: 5, total: 17, snitt: null, strykprosent: null, bestattprosent: 70.6, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 18, H: 8, total: 26, snitt: null, strykprosent: null, bestattprosent: 69.2, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: 'STAT100', emnenavn: 'Statistikk', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['STAT100-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 4, D: 9, E: 5, F: 6, G: 0, H: 0, total: 24, snitt: 1.46, strykprosent: 25, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 0, B: 5, C: 4, D: 0, E: 0, F: 4, G: 0, H: 0, total: 13, snitt: 2.46, strykprosent: 30.8, bestattprosent: null, skjult: 9 },
+              { year: 2023, A: 0, B: 7, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 10 },
+              { year: 2024, A: 0, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 9 },
+              { year: 2025, A: 0, B: 3, C: 0, D: 3, E: 5, F: 0, G: 0, H: 0, total: 11, snitt: 2.09, strykprosent: 0, bestattprosent: null, skjult: 6 },
+            ],
+          },
+          {
+            emnekode: 'FORNY210', emnenavn: 'Bioenergi - teknologi og verdikjeder', studiepoeng: 5, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['FORNY210-1'],
+            years: [
+              { year: 2023, A: 4, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 4.5, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2024, A: 4, B: 8, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 3.94, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 0, B: 5, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 3.42, strykprosent: 0, bestattprosent: null, skjult: 5 },
+            ],
+          },
+          {
+            emnekode: 'FORNY240', emnenavn: 'Energidistribusjon og -lagringssystemer', studiepoeng: 5, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['FORNY240-1'],
+            years: [
+              { year: 2022, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2023, A: 3, B: 5, C: 4, D: 0, E: 4, F: 0, G: 0, H: 0, total: 16, snitt: 3.19, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 10, B: 0, C: 8, D: 3, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3.81, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 8, B: 0, C: 11, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3.84, strykprosent: 0, bestattprosent: null, skjult: 5 },
+            ],
+          },
+          {
+            emnekode: 'FORNY260', emnenavn: 'Energibruk og energisystemanalyse', studiepoeng: 5, aar: 3, semester: 'juniblokk',
+            dbhEmnekoder: ['FORNY260-1'],
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 4, H: 0, total: 4, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 8, H: 0, total: 8, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 14, H: 0, total: 14, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: 'FORNY220', emnenavn: 'Livsløpsvurdering - miljøeffekter av energi- og avfallssystemer', studiepoeng: 10, aar: 3, semester: 'vår',
+            dbhEmnekoder: ['FORNY220-1'],
+            years: [
+              { year: 2023, A: 0, B: 7, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 3.64, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2024, A: 0, B: 4, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 3.31, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 4, B: 9, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: 'FORNY230', emnenavn: 'Energimarkeder og virkemidler', studiepoeng: 5, aar: 3, semester: 'vår',
+            dbhEmnekoder: ['FORNY230-1'],
+            years: [
+              { year: 2023, A: 0, B: 4, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2024, A: 0, B: 4, C: 4, D: 4, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 3, B: 5, C: 5, D: 3, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: 'MINA250', emnenavn: 'Tverrfaglig konsekvensanalyse', studiepoeng: 10, aar: 3, semester: 'vår',
+            dbhEmnekoder: ['MINA250-1'], merknad: '10 sp totalt, fordelt med 5 sp i januarblokk (før vårsemesteret) og 5 sp i vårparallell, jf. rutenettets kolonnebredder og NMBUs emnesøk.',
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 0, B: 7, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 4, B: 8, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 4.33, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
         ],
         spesialiseringer: [
         ],
       },
       {
         entryId: 'hvl_fornybar', shortName: 'HVL', institusjon: 'Høgskulen på Vestlandet', isNmbu: false, programnavn: 'Fornybar energi (bachelor)',
-        studieplanAar: null, kilder: [],
-        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
-        merknad: 'Studieplan ikke hentet ennå.',
+        studieplanAar: '2024/2025', kilder: ['https://www.hvl.no/studier/studieprogram/fornybar-energi/', 'https://www.hvl.no/studier/studieprogram/energiomstilling/2024h/studieplan/', 'https://www.hvl.no/studier/studieprogram/energiomstilling/2024h/utdanningsplan/'],
+        totaltStudiepoeng: 180, obligatoriskeStudiepoeng: 160,
+        merknad: 'Kilde er HVLs utdanningsplan-verktøy (www.hvl.no/studier/studieprogram/energiomstilling/2024h/utdanningsplan/), for kullet med studiestart høst 2024. Programmet het tidligere «Fornybar energi» og heter nå «Energiomstilling» (samme studiekode FEN); programsiden nmbu.no-ekvivalenten hos HVL (hvl.no/studier/studieprogram/fornybar-energi/) viser at «Denne utdanninga hadde siste opptak av studentar i 2024», så det finnes ingen nyere kull enn 2024 (kullet med studiestart 2025 er ikke reelt, HVL har fortsatt en «Studiestart 2025h»-lenke i utdanningsplanverktøyet, men programsiden bekrefter at opptaket ble avsluttet i 2024). Kull 2024 er derfor både det siste og det eneste aktuelle kullet, og er nå i sitt 3. og siste studieår (2026/2027). Utdanningsplanen deler emnene i to nivå: en hovedblokk «Obligatoriske emne» med samlet krav 160 studiepoeng (14 navngitte obligatoriske emner à 150 sp, pluss et reelt valg i 2. semester mellom FE404 og GE483 à 10 sp for å fylle opp til 160 sp), og en valretning «Krav: 20 studiepoeng» i 3. år der studenten velger mellom to spor: «Fordjuping i planlegging» (PL417+PL418, begge obligatoriske, 20 sp) og «Innføring i planlegging» (PL433 obligatorisk 10 sp, pluss et reelt valg mellom FY400 og ING303 for de resterende 10 sp). 160 + 20 = 180 sp totalt, dvs. hele programmet består av obligatoriske emner og reelle 1-av-2-valg mellom nær-likeverdige alternativer; det finnes ingen fri valgfagpool utover dette. Emnenavn og studiepoeng er hentet direkte fra utdanningsplanverktøyet.',
         obligatoriske: [
+          {
+            emnekode: 'FE401', emnenavn: 'Miljø- og energipolitikk', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['FE401-1'],
+            years: [
+              { year: 2021, A: 9, B: 7, C: 15, D: 0, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 3.81, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 4, B: 18, C: 0, D: 5, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 3.78, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 0, B: 10, C: 21, D: 0, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 3.32, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 0, B: 0, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
+          },
+          {
+            emnekode: 'FE405', emnenavn: 'Grunnleggjande energikonsept', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['FE405-1'],
+            years: [
+              { year: 2021, A: 0, B: 6, C: 8, D: 10, E: 5, F: 0, G: 0, H: 0, total: 29, snitt: 2.52, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2022, A: 0, B: 12, C: 6, D: 4, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 3.36, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 4, B: 7, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 0, B: 6, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: 'MA415', emnenavn: 'Matematikk brukaremne', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['MA415-1'],
+            years: [
+              { year: 2021, A: 5, B: 8, C: 10, D: 5, E: 4, F: 3, G: 0, H: 0, total: 35, snitt: 2.89, strykprosent: 8.6, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 0, B: 8, C: 0, D: 5, E: 0, F: 8, G: 0, H: 0, total: 21, snitt: 2, strykprosent: 38.1, bestattprosent: null, skjult: 5 },
+              { year: 2023, A: 0, B: 0, C: 6, D: 4, E: 0, F: 6, G: 0, H: 0, total: 16, snitt: 1.62, strykprosent: 37.5, bestattprosent: null, skjult: 6 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 3, E: 0, F: 5, G: 0, H: 0, total: 8, snitt: 0.75, strykprosent: 62.5, bestattprosent: null, skjult: 7 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 3, G: 0, H: 0, total: 3, snitt: 0, strykprosent: 100, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: 'BI445', emnenavn: 'Økologi grunnkurs', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['BI445-3'],
+            years: [
+              { year: 2021, A: 0, B: 3, C: 6, D: 9, E: 12, F: 4, G: 0, H: 0, total: 34, snitt: 1.76, strykprosent: 11.8, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 0, B: 9, C: 11, D: 10, E: 3, F: 0, G: 0, H: 0, total: 33, snitt: 2.79, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2023, A: 0, B: 8, C: 11, D: 6, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 3.08, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 0, B: 5, C: 8, D: 4, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 3.06, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 3, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 7 },
+            ],
+          },
+          {
+            emnekode: 'FE410', emnenavn: 'Teknologi, innovasjon og samfunn', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['FE410-1'],
+            years: [
+              { year: 2022, A: 4, B: 10, C: 16, D: 15, E: 0, F: 0, G: 0, H: 0, total: 45, snitt: 3.07, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 3, B: 7, C: 14, D: 7, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 3.19, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 4, B: 7, C: 4, D: 3, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 3.67, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 4 },
+            ],
+          },
+          {
+            emnekode: 'FE404', emnenavn: 'Matematikk for fornybar energi', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['FE404-1'], merknad: 'Utdanningsplanen fører FE404 og GE483 (Climate Change) som «Valgfrie emne» i samme obligatoriske-emne-blokk (samlet krav 160 sp for blokken); ett av de to må velges for å fylle opp semester 2 til 30 sp. Ført som én linje (FE404) med merknad om alternativet GE483, tilsvarende praksis for REAL101/MATH-INF100 i nmbu_skogfag.json.',
+            years: [
+              { year: 2021, A: 0, B: 7, C: 7, D: 4, E: 4, F: 0, G: 0, H: 0, total: 22, snitt: 2.77, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2022, A: 3, B: 3, C: 11, D: 0, E: 7, F: 7, G: 0, H: 0, total: 31, snitt: 2.16, strykprosent: 22.6, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 0, B: 7, C: 0, D: 4, E: 0, F: 9, G: 0, H: 0, total: 20, snitt: 1.8, strykprosent: 45, bestattprosent: null, skjult: 8 },
+              { year: 2024, A: 0, B: 0, C: 4, D: 3, E: 5, F: 6, G: 0, H: 0, total: 18, snitt: 1.28, strykprosent: 33.3, bestattprosent: null, skjult: 5 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 3, G: 0, H: 0, total: 3, snitt: 0, strykprosent: 100, bestattprosent: null, skjult: 3 },
+            ],
+          },
+          {
+            emnekode: 'FE406', emnenavn: 'Energiøkonomi', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['FE406-1'],
+            years: [
+              { year: 2021, A: 11, B: 0, C: 5, D: 7, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 3.65, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 5, B: 9, C: 5, D: 4, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 3.65, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 5, B: 7, C: 4, D: 0, E: 0, F: 3, G: 0, H: 0, total: 19, snitt: 3.42, strykprosent: 15.8, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 0, B: 13, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 0, B: 0, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: 'FE407', emnenavn: 'Fornybar energiteknologi og ressursvurdering', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['FE407-1'],
+            years: [
+              { year: 2021, A: 4, B: 0, C: 8, D: 0, E: 4, F: 7, G: 0, H: 0, total: 23, snitt: 2.09, strykprosent: 30.4, bestattprosent: null, skjult: 4 },
+              { year: 2022, A: 5, B: 3, C: 5, D: 3, E: 7, F: 0, G: 0, H: 0, total: 23, snitt: 2.83, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 0, B: 3, C: 0, D: 5, E: 7, F: 3, G: 0, H: 0, total: 18, snitt: 1.61, strykprosent: 16.7, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 0, B: 4, C: 0, D: 3, E: 7, F: 0, G: 0, H: 0, total: 14, snitt: 2.07, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 3, E: 5, F: 0, G: 0, H: 0, total: 8, snitt: 1.38, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: 'GE413', emnenavn: 'Kartlære og GIS', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['GE413-1'],
+            years: [
+              { year: 2021, A: 0, B: 0, C: 3, D: 18, E: 3, F: 3, G: 0, H: 0, total: 27, snitt: 1.78, strykprosent: 11.1, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 0, B: 4, C: 6, D: 11, E: 0, F: 3, G: 0, H: 0, total: 24, snitt: 2.33, strykprosent: 12.5, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 0, B: 3, C: 11, D: 5, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 2.89, strykprosent: 0, bestattprosent: null, skjult: 7 },
+              { year: 2024, A: 0, B: 0, C: 5, D: 9, E: 3, F: 0, G: 0, H: 0, total: 17, snitt: 2.12, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 0, B: 0, C: 4, D: 7, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 2.36, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
+          },
+          {
+            emnekode: 'FE409', emnenavn: 'Metodekurs for fornybar energi', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['FE409-1'],
+            years: [
+              { year: 2021, A: 0, B: 8, C: 8, D: 8, E: 0, F: 0, G: 0, H: 0, total: 24, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2022, A: 0, B: 4, C: 10, D: 5, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 2.95, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2023, A: 0, B: 3, C: 4, D: 4, E: 6, F: 0, G: 0, H: 0, total: 17, snitt: 2.24, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2024, A: 0, B: 3, C: 9, D: 7, E: 3, F: 0, G: 0, H: 0, total: 22, snitt: 2.55, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 9, F: 0, G: 0, H: 0, total: 9, snitt: 1, strykprosent: 0, bestattprosent: null, skjult: 8 },
+            ],
+          },
+          {
+            emnekode: 'FE411', emnenavn: 'Energisystem', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['FE411-1'],
+            years: [
+              { year: 2023, A: 3, B: 6, C: 0, D: 11, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 3.05, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2024, A: 0, B: 6, C: 3, D: 9, E: 3, F: 0, G: 0, H: 0, total: 21, snitt: 2.57, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 0, B: 3, C: 11, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 3.21, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: 'PL412', emnenavn: 'Landskapsinngrep', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['PL412-2'],
+            years: [
+              { year: 2021, A: 0, B: 13, C: 13, D: 5, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 3.26, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 0, B: 4, C: 14, D: 4, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 0, B: 10, C: 10, D: 0, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 0, B: 7, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 0, B: 9, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 3.69, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
+          },
+          {
+            emnekode: 'FE402', emnenavn: 'Anvendte øvingar i energiomstilling', studiepoeng: 10, aar: 3, semester: 'høst',
+            dbhEmnekoder: ['FE402-1'],
+            years: [
+              { year: 2021, A: 3, B: 9, C: 15, D: 0, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 3.56, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 5, B: 5, C: 4, D: 4, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 3.61, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 3, B: 5, C: 9, D: 3, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 3.4, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2024, A: 6, B: 5, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 4.21, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 0, B: 7, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 3.54, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: 'FE403', emnenavn: 'Bacheloroppgåve i fornybar energi', studiepoeng: 20, aar: 3, semester: 'høst',
+            dbhEmnekoder: ['FE403-1'],
+            years: [
+              { year: 2021, A: 8, B: 12, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 4.4, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 12, B: 11, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 26, snitt: 4.35, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 4, B: 5, C: 14, D: 0, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 3.57, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 6, B: 11, C: 4, D: 3, E: 0, F: 0, G: 0, H: 0, total: 24, snitt: 3.83, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 11, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 6 },
+            ],
+          },
+          {
+            emnekode: 'FE408', emnenavn: 'Berekraftig energiomstilling', studiepoeng: 10, aar: 3, semester: 'høst',
+            dbhEmnekoder: ['FE408-1'],
+            years: [
+              { year: 2021, A: 3, B: 8, C: 11, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 3.64, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 3, B: 4, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 3.77, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2023, A: 0, B: 8, C: 8, D: 3, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3.26, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2024, A: 3, B: 5, C: 3, D: 0, E: 3, F: 0, G: 0, H: 0, total: 14, snitt: 3.36, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 0, B: 3, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 3.27, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+          },
         ],
         spesialiseringer: [
+          { navn: 'Fordjuping i planlegging', obligatoriske: [
+            {
+              emnekode: 'PL417', emnenavn: 'Arealplanlegging', studiepoeng: 10, aar: 3, semester: 'høst',
+              dbhEmnekoder: ['PL417-1'],
+              years: [
+                { year: 2021, A: 0, B: 4, C: 3, D: 12, E: 4, F: 0, G: 0, H: 0, total: 23, snitt: 2.3, strykprosent: 0, bestattprosent: null, skjult: 4 },
+                { year: 2022, A: 0, B: 0, C: 0, D: 7, E: 0, F: 7, G: 0, H: 0, total: 14, snitt: 1, strykprosent: 50, bestattprosent: null, skjult: 6 },
+                { year: 2023, A: 0, B: 0, C: 7, D: 3, E: 0, F: 5, G: 0, H: 0, total: 15, snitt: 1.8, strykprosent: 33.3, bestattprosent: null, skjult: 7 },
+                { year: 2024, A: 0, B: 0, C: 6, D: 3, E: 0, F: 3, G: 0, H: 0, total: 12, snitt: 2, strykprosent: 25, bestattprosent: null, skjult: 5 },
+                { year: 2025, A: 0, B: 0, C: 0, D: 3, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 2, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              ],
+            },
+            {
+              emnekode: 'PL418', emnenavn: 'Reguleringsplanlegging', studiepoeng: 10, aar: 3, semester: 'vår',
+              dbhEmnekoder: ['PL418-1'],
+              years: [
+                { year: 2021, A: 4, B: 0, C: 9, D: 7, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 3.05, strykprosent: 0, bestattprosent: null, skjult: 0 },
+                { year: 2022, A: 0, B: 8, C: 9, D: 6, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 3.09, strykprosent: 0, bestattprosent: null, skjult: 2 },
+                { year: 2023, A: 0, B: 0, C: 6, D: 6, E: 10, F: 0, G: 0, H: 0, total: 22, snitt: 1.82, strykprosent: 0, bestattprosent: null, skjult: 0 },
+                { year: 2024, A: 0, B: 5, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 1 },
+                { year: 2025, A: 0, B: 0, C: 3, D: 5, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 2.38, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              ],
+            },
+          ] },
+          { navn: 'Innføring i planlegging', obligatoriske: [
+            {
+              emnekode: 'PL433', emnenavn: 'Innføring i arealplanlegging', studiepoeng: 10, aar: 3, semester: 'høst',
+              dbhEmnekoder: ['PL433-1'],
+              years: [
+                { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+                { year: 2023, A: 0, B: 0, C: 0, D: 3, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 2, strykprosent: 0, bestattprosent: null, skjult: 5 },
+                { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 6 },
+                { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 5 },
+              ],
+            },
+            {
+              emnekode: 'FY400', emnenavn: 'Innføring i fysikk', studiepoeng: 10, aar: 3, semester: 'vår',
+              dbhEmnekoder: ['FY400-1'], merknad: 'Utdanningsplanen fører FY400 og ING303 (Systemtenking og innovasjon for ingeniørar) som «Valgfrie emne» innanfor denne valretninga (samlet krav 20 sp for retninga); ett av de to må velges for å fylle opp retningskravet. Ført som én linje (FY400) med merknad om alternativet ING303.',
+              years: [
+                { year: 2021, A: 0, B: 0, C: 5, D: 3, E: 5, F: 13, G: 0, H: 0, total: 26, snitt: 1, strykprosent: 50, bestattprosent: null, skjult: 2 },
+                { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 3 },
+                { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 4, G: 0, H: 0, total: 4, snitt: 0, strykprosent: 100, bestattprosent: null, skjult: 1 },
+                { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 6 },
+              ],
+            },
+          ] },
         ],
       },
       {
         entryId: 'ntnu_ing_fornybar_trondheim', shortName: 'NTNU Trondheim', institusjon: 'Norges teknisk-naturvitenskapelige universitet', isNmbu: false, programnavn: 'Ingeniør, fornybar energi (bachelor)',
-        studieplanAar: null, kilder: [],
-        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
-        merknad: 'Studieplan ikke hentet ennå.',
+        studieplanAar: '2026/2027', kilder: ['https://www.ntnu.no/studier/biforen', 'https://www.ntnu.no/studier/biforen/studiets-oppbygning', 'https://www.ntnu.no/studier/studieplan#programmeCode=BIFOREN&year=2026'],
+        totaltStudiepoeng: 180, obligatoriskeStudiepoeng: 90,
+        merknad: 'Kilde er NTNUs studieplanverktøy (www.ntnu.no/studier/studieplan#programmeCode=BIFOREN&year=2026), hentet direkte fra JSON-endepunktet (p_p_resource_id=studyplan) via nettleser. Programmet BIFOREN («Fornybar energi - bachelor i ingeniørfag») har felles programkode for alle tre studiesteder, men studiestedet velges som en «Studiested og opptaksveier»-forgrening helt fra 1. semester, med egne emnekoder per studiested (suffiks A=Ålesund, G=Gjøvik, T=Trondheim) og til dels ulikt faglig innhold fra og med 2. år vår. Denne filen dekker kun sporet «Bachelor i ingeniørfag, fornybar energi - Trondheim» (ett samlet opptak, uten TRES/Y-vei-varianter slik Ålesund og Gjøvik har). Til forskjell fra Ålesund og Gjøvik, som hver har én fast faglig profil uten valg, deler Trondheim seg fra og med 2. år vår («Valg av studieretning») i tre studieretninger: VVS - Energieffektive bygninger (2. år vår 100 % obligatorisk, 30 sp), Energilagring (22,5 sp obligatorisk + 7,5 sp valgfritt i 2. år vår) og Vann- og vindenergi (15 sp obligatorisk + 15 sp valgfritt i 2. år vår); disse er ført under spesialiseringer. Alle tre studieretninger har samme obligatoriske struktur i 3. år (bacheloroppgave FENT2910 + INGT2301), men ulik valgfri emnepool i 3. år høst. obligatoriskeStudiepoeng (90 sp) dekker kun de emnene som er felles for alle tre studieretninger (1. år og 2. år høst); hver studieretning legger i tillegg til egne obligatoriske emner (45-60 sp, se spesialiseringer) samt valgfrie emner, slik at summen blir 180 sp for alle tre retningene (VVS: 90+60=150 sp obligatorisk, 30 sp valgfritt; Energilagring: 90+52,5=142,5 sp obligatorisk, 37,5 sp valgfritt; Vann- og vindenergi: 90+45=135 sp obligatorisk, 45 sp valgfritt).',
         obligatoriske: [
+          {
+            emnekode: 'ELET1001', emnenavn: 'Elektriske kretser - introduksjon', studiepoeng: 7.5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['ELET1001-1'],
+            years: [
+              { year: 2023, A: 16, B: 22, C: 17, D: 13, E: 7, F: 0, G: 0, H: 0, total: 75, snitt: 3.36, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 10, B: 18, C: 22, D: 17, E: 7, F: 7, G: 0, H: 0, total: 81, snitt: 2.83, strykprosent: 8.6, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 0, B: 11, C: 17, D: 25, E: 18, F: 15, G: 0, H: 0, total: 86, snitt: 1.9, strykprosent: 17.4, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: 'FENT1101', emnenavn: 'Fornybar energi grunnkurs 1', studiepoeng: 7.5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['FENT1101-1'],
+            years: [
+              { year: 2023, A: 9, B: 25, C: 17, D: 16, E: 5, F: 4, G: 0, H: 0, total: 76, snitt: 3.07, strykprosent: 5.3, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 41, B: 34, C: 7, D: 6, E: 0, F: 0, G: 0, H: 0, total: 88, snitt: 4.25, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 14, B: 31, C: 21, D: 10, E: 5, F: 0, G: 0, H: 0, total: 81, snitt: 3.48, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: 'IMAT1002', emnenavn: 'Matematikk for ingeniørfag 1', studiepoeng: 7.5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['IMAT1002-1'],
+            years: [
+              { year: 2023, A: 18, B: 27, C: 17, D: 5, E: 5, F: 0, G: 0, H: 0, total: 72, snitt: 3.67, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 11, B: 18, C: 20, D: 19, E: 9, F: 3, G: 0, H: 0, total: 80, snitt: 2.92, strykprosent: 3.8, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 11, B: 16, C: 16, D: 17, E: 10, F: 8, G: 0, H: 0, total: 78, snitt: 2.71, strykprosent: 10.3, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: 'INGT1002', emnenavn: 'Programmering, numerikk og sikkerhet', studiepoeng: 7.5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['INGT1002-1'],
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 68, H: 4, total: 72, snitt: null, strykprosent: null, bestattprosent: 94.4, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 77, H: 9, total: 86, snitt: null, strykprosent: null, bestattprosent: 89.5, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 74, H: 0, total: 74, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: 'ELET1002', emnenavn: 'Elektriske kretser - modellering og analyse', studiepoeng: 7.5, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['ELET1002-1'],
+            years: [
+              { year: 2024, A: 8, B: 20, C: 16, D: 14, E: 6, F: 5, G: 0, H: 0, total: 69, snitt: 2.93, strykprosent: 7.2, bestattprosent: null, skjult: 5 },
+              { year: 2025, A: 12, B: 12, C: 7, D: 10, E: 16, F: 28, G: 0, H: 0, total: 85, snitt: 1.94, strykprosent: 32.9, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: 'FENT1102', emnenavn: 'Fornybar energi grunnkurs 2', studiepoeng: 7.5, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['FENT1102-1'],
+            years: [
+              { year: 2024, A: 55, B: 14, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 69, snitt: 4.8, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 29, B: 36, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 73, snitt: 4.29, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: 'IFYT1002', emnenavn: 'Fysikk', studiepoeng: 7.5, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['IFYT1002-1'],
+            years: [
+              { year: 2024, A: 14, B: 21, C: 23, D: 9, E: 3, F: 0, G: 0, H: 0, total: 70, snitt: 3.49, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 14, B: 25, C: 19, D: 13, E: 7, F: 0, G: 0, H: 0, total: 78, snitt: 3.33, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: 'IMAT2022', emnenavn: 'Matematikk for ingeniørfag 2 B', studiepoeng: 7.5, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['IMAT2022-1'],
+            years: [
+              { year: 2024, A: 3, B: 41, C: 18, D: 6, E: 0, F: 0, G: 0, H: 0, total: 68, snitt: 3.6, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2025, A: 9, B: 32, C: 20, D: 13, E: 0, F: 7, G: 0, H: 0, total: 81, snitt: 3.2, strykprosent: 8.6, bestattprosent: null, skjult: 4 },
+            ],
+          },
+          {
+            emnekode: 'EXPH0600', emnenavn: 'Examen philosophicum for ingeniørfag', studiepoeng: 7.5, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['EXPH0600-1'],
+            years: [
+              { year: 2024, A: 3, B: 28, C: 39, D: 21, E: 0, F: 5, G: 0, H: 0, total: 96, snitt: 2.98, strykprosent: 5.2, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 0, B: 27, C: 36, D: 13, E: 7, F: 15, G: 0, H: 0, total: 98, snitt: 2.54, strykprosent: 15.3, bestattprosent: null, skjult: 5 },
+            ],
+          },
+          {
+            emnekode: 'FENT1011', emnenavn: 'Termodynamikk', studiepoeng: 7.5, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['FENT1011-1'],
+            years: [
+              { year: 2021, A: 11, B: 22, C: 25, D: 19, E: 5, F: 0, G: 0, H: 0, total: 82, snitt: 3.18, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 8, B: 11, C: 14, D: 11, E: 4, F: 10, G: 0, H: 0, total: 58, snitt: 2.62, strykprosent: 17.2, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 3, B: 10, C: 18, D: 18, E: 16, F: 16, G: 0, H: 0, total: 81, snitt: 1.99, strykprosent: 19.8, bestattprosent: null, skjult: 6 },
+              { year: 2024, A: 7, B: 31, C: 25, D: 18, E: 8, F: 9, G: 0, H: 0, total: 98, snitt: 2.84, strykprosent: 9.2, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 8, B: 10, C: 22, D: 16, E: 13, F: 10, G: 0, H: 0, total: 79, snitt: 2.42, strykprosent: 12.7, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: 'ISTT1002', emnenavn: 'Statistikk', studiepoeng: 7.5, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['ISTT1002-1'], merknad: 'Fra og med 2. år vår («Valg av studieretning») deler programmet seg i tre studieretninger (VVS - Energieffektive bygninger, Energilagring, Vann- og vindenergi); disse fire emnene i 1. og 2. år høst er felles og obligatoriske for alle tre. Studieretningsspesifikke obligatoriske emner er ført under spesialiseringer.',
+            years: [
+              { year: 2021, A: 22, B: 29, C: 8, D: 0, E: 0, F: 4, G: 0, H: 0, total: 63, snitt: 3.97, strykprosent: 6.3, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 21, B: 26, C: 15, D: 6, E: 0, F: 0, G: 0, H: 0, total: 68, snitt: 3.91, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 16, B: 20, C: 17, D: 10, E: 0, F: 0, G: 0, H: 0, total: 63, snitt: 3.67, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 22, B: 44, C: 12, D: 0, E: 0, F: 0, G: 0, H: 0, total: 78, snitt: 4.13, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 21, B: 25, C: 22, D: 3, E: 0, F: 3, G: 0, H: 0, total: 74, snitt: 3.74, strykprosent: 4.1, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: 'MEKT1101', emnenavn: 'Mekanikk 1', studiepoeng: 7.5, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['MEKT1101-1'],
+            years: [
+              { year: 2023, A: 3, B: 8, C: 14, D: 8, E: 13, F: 12, G: 0, H: 0, total: 58, snitt: 2.03, strykprosent: 20.7, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 33, B: 24, C: 16, D: 8, E: 8, F: 9, G: 0, H: 0, total: 98, snitt: 3.4, strykprosent: 9.2, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 6, B: 15, C: 21, D: 10, E: 15, F: 15, G: 0, H: 0, total: 82, snitt: 2.29, strykprosent: 18.3, bestattprosent: null, skjult: 0 },
+            ],
+          },
         ],
         spesialiseringer: [
+          { navn: 'VVS - Energieffektive bygninger', obligatoriske: [
+            {
+              emnekode: 'FENT2002', emnenavn: 'Fluidmekanikk og hydraulikk', studiepoeng: 7.5, aar: 2, semester: 'vår',
+              dbhEmnekoder: ['FENT2002-1'],
+              years: [
+                { year: 2021, A: 47, B: 6, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 59, snitt: 4.69, strykprosent: 0, bestattprosent: null, skjult: 4 },
+                { year: 2022, A: 29, B: 27, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 65, snitt: 4.31, strykprosent: 0, bestattprosent: null, skjult: 3 },
+                { year: 2023, A: 21, B: 21, C: 9, D: 8, E: 8, F: 6, G: 0, H: 0, total: 73, snitt: 3.29, strykprosent: 8.2, bestattprosent: null, skjult: 3 },
+                { year: 2024, A: 22, B: 12, C: 9, D: 8, E: 9, F: 6, G: 0, H: 0, total: 66, snitt: 3.18, strykprosent: 9.1, bestattprosent: null, skjult: 2 },
+                { year: 2025, A: 0, B: 21, C: 18, D: 18, E: 8, F: 5, G: 0, H: 0, total: 70, snitt: 2.6, strykprosent: 7.1, bestattprosent: null, skjult: 4 },
+              ],
+            },
+            {
+              emnekode: 'FENT2031', emnenavn: 'Ventilasjonsteknikk', studiepoeng: 7.5, aar: 2, semester: 'vår',
+              dbhEmnekoder: [],
+              years: [],
+            },
+            {
+              emnekode: 'FENT2032', emnenavn: 'Varme- og kjøleteknikk', studiepoeng: 7.5, aar: 2, semester: 'vår',
+              dbhEmnekoder: [],
+              years: [],
+            },
+            {
+              emnekode: 'FENT2033', emnenavn: 'Sanitærteknikk og praktisk VVS-teknikk', studiepoeng: 7.5, aar: 2, semester: 'vår',
+              dbhEmnekoder: [],
+              years: [],
+            },
+            {
+              emnekode: 'FENT2910', emnenavn: 'Bacheloroppgave, fornybar energi', studiepoeng: 22.5, aar: 3, semester: 'vår',
+              dbhEmnekoder: [], merknad: 'Oppgaven starter som «del 1 av 2» i 3. år høst (forprosjekt, uten eget studiepoengtall i NTNUs studieplandata) og fullføres som «del 2 av 2» i 3. år vår med 22,5 sp, som er studiepoengtallet ført her.',
+              years: [],
+            },
+            {
+              emnekode: 'INGT2301', emnenavn: 'Ingeniørfaglig systemtenkning', studiepoeng: 7.5, aar: 3, semester: 'vår',
+              dbhEmnekoder: [],
+              years: [],
+            },
+          ] },
+          { navn: 'Energilagring', obligatoriske: [
+            {
+              emnekode: 'FENT2002', emnenavn: 'Fluidmekanikk og hydraulikk', studiepoeng: 7.5, aar: 2, semester: 'vår',
+              dbhEmnekoder: ['FENT2002-1'],
+              years: [
+                { year: 2021, A: 47, B: 6, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 59, snitt: 4.69, strykprosent: 0, bestattprosent: null, skjult: 4 },
+                { year: 2022, A: 29, B: 27, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 65, snitt: 4.31, strykprosent: 0, bestattprosent: null, skjult: 3 },
+                { year: 2023, A: 21, B: 21, C: 9, D: 8, E: 8, F: 6, G: 0, H: 0, total: 73, snitt: 3.29, strykprosent: 8.2, bestattprosent: null, skjult: 3 },
+                { year: 2024, A: 22, B: 12, C: 9, D: 8, E: 9, F: 6, G: 0, H: 0, total: 66, snitt: 3.18, strykprosent: 9.1, bestattprosent: null, skjult: 2 },
+                { year: 2025, A: 0, B: 21, C: 18, D: 18, E: 8, F: 5, G: 0, H: 0, total: 70, snitt: 2.6, strykprosent: 7.1, bestattprosent: null, skjult: 4 },
+              ],
+            },
+            {
+              emnekode: 'FENT2010', emnenavn: 'Varme og massetransport', studiepoeng: 7.5, aar: 2, semester: 'vår',
+              dbhEmnekoder: ['FENT2010-1'],
+              years: [
+                { year: 2021, A: 9, B: 14, C: 12, D: 4, E: 0, F: 0, G: 0, H: 0, total: 39, snitt: 3.72, strykprosent: 0, bestattprosent: null, skjult: 7 },
+                { year: 2022, A: 4, B: 5, C: 22, D: 19, E: 3, F: 0, G: 0, H: 0, total: 53, snitt: 2.77, strykprosent: 0, bestattprosent: null, skjult: 6 },
+                { year: 2023, A: 5, B: 13, C: 11, D: 10, E: 0, F: 6, G: 0, H: 0, total: 45, snitt: 2.89, strykprosent: 13.3, bestattprosent: null, skjult: 10 },
+                { year: 2024, A: 0, B: 8, C: 23, D: 6, E: 4, F: 4, G: 0, H: 0, total: 45, snitt: 2.6, strykprosent: 8.9, bestattprosent: null, skjult: 6 },
+                { year: 2025, A: 0, B: 0, C: 10, D: 7, E: 15, F: 24, G: 0, H: 0, total: 56, snitt: 1.05, strykprosent: 42.9, bestattprosent: null, skjult: 3 },
+              ],
+            },
+            {
+              emnekode: 'FENT2011', emnenavn: 'Energilagring 1', studiepoeng: 7.5, aar: 2, semester: 'vår',
+              dbhEmnekoder: ['FENT2011-1'], merknad: 'I tillegg velges 7,5 sp valgbare emner 2. år vår (FENT2023, FENT2031, FENT2032, FENT2033, IELET2120), ikke tatt med her da dette er fritt valg.',
+              years: [
+                { year: 2021, A: 32, B: 14, C: 4, D: 5, E: 0, F: 0, G: 0, H: 0, total: 55, snitt: 4.33, strykprosent: 0, bestattprosent: null, skjult: 3 },
+                { year: 2022, A: 8, B: 18, C: 14, D: 9, E: 10, F: 4, G: 0, H: 0, total: 63, snitt: 2.89, strykprosent: 6.3, bestattprosent: null, skjult: 3 },
+                { year: 2023, A: 7, B: 24, C: 16, D: 8, E: 8, F: 4, G: 0, H: 0, total: 67, snitt: 3.03, strykprosent: 6, bestattprosent: null, skjult: 3 },
+                { year: 2024, A: 18, B: 19, C: 14, D: 6, E: 0, F: 11, G: 0, H: 0, total: 68, snitt: 3.24, strykprosent: 16.2, bestattprosent: null, skjult: 7 },
+                { year: 2025, A: 48, B: 21, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 74, snitt: 4.58, strykprosent: 0, bestattprosent: null, skjult: 7 },
+              ],
+            },
+            {
+              emnekode: 'FENT2910', emnenavn: 'Bacheloroppgave, fornybar energi', studiepoeng: 22.5, aar: 3, semester: 'vår',
+              dbhEmnekoder: [], merknad: 'Oppgaven starter som «del 1 av 2» i 3. år høst (forprosjekt, uten eget studiepoengtall i NTNUs studieplandata) og fullføres som «del 2 av 2» i 3. år vår med 22,5 sp, som er studiepoengtallet ført her.',
+              years: [],
+            },
+            {
+              emnekode: 'INGT2301', emnenavn: 'Ingeniørfaglig systemtenkning', studiepoeng: 7.5, aar: 3, semester: 'vår',
+              dbhEmnekoder: [],
+              years: [],
+            },
+          ] },
+          { navn: 'Vann- og vindenergi', obligatoriske: [
+            {
+              emnekode: 'FENT2002', emnenavn: 'Fluidmekanikk og hydraulikk', studiepoeng: 7.5, aar: 2, semester: 'vår',
+              dbhEmnekoder: ['FENT2002-1'],
+              years: [
+                { year: 2021, A: 47, B: 6, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 59, snitt: 4.69, strykprosent: 0, bestattprosent: null, skjult: 4 },
+                { year: 2022, A: 29, B: 27, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 65, snitt: 4.31, strykprosent: 0, bestattprosent: null, skjult: 3 },
+                { year: 2023, A: 21, B: 21, C: 9, D: 8, E: 8, F: 6, G: 0, H: 0, total: 73, snitt: 3.29, strykprosent: 8.2, bestattprosent: null, skjult: 3 },
+                { year: 2024, A: 22, B: 12, C: 9, D: 8, E: 9, F: 6, G: 0, H: 0, total: 66, snitt: 3.18, strykprosent: 9.1, bestattprosent: null, skjult: 2 },
+                { year: 2025, A: 0, B: 21, C: 18, D: 18, E: 8, F: 5, G: 0, H: 0, total: 70, snitt: 2.6, strykprosent: 7.1, bestattprosent: null, skjult: 4 },
+              ],
+            },
+            {
+              emnekode: 'IELET2120', emnenavn: 'Elektriske Maskiner og Elektromagnetisk Energiomforming', studiepoeng: 7.5, aar: 2, semester: 'vår',
+              dbhEmnekoder: ['IELET2120-1'], merknad: 'I tillegg velges 15 sp valgbare emner 2. år vår (FENT2010, FENT2011, FENT2023, FENT2031, FENT2032, FENT2033), ikke tatt med her da dette er fritt valg.',
+              years: [
+                { year: 2021, A: 0, B: 7, C: 3, D: 6, E: 3, F: 0, G: 0, H: 0, total: 19, snitt: 2.74, strykprosent: 0, bestattprosent: null, skjult: 3 },
+                { year: 2022, A: 0, B: 0, C: 12, D: 7, E: 0, F: 6, G: 0, H: 0, total: 25, snitt: 2, strykprosent: 24, bestattprosent: null, skjult: 3 },
+                { year: 2023, A: 0, B: 3, C: 7, D: 6, E: 6, F: 7, G: 0, H: 0, total: 29, snitt: 1.76, strykprosent: 24.1, bestattprosent: null, skjult: 4 },
+                { year: 2024, A: 0, B: 0, C: 0, D: 9, E: 0, F: 8, G: 0, H: 0, total: 17, snitt: 1.06, strykprosent: 47.1, bestattprosent: null, skjult: 13 },
+                { year: 2025, A: 4, B: 7, C: 11, D: 3, E: 9, F: 5, G: 0, H: 0, total: 39, snitt: 2.46, strykprosent: 12.8, bestattprosent: null, skjult: 3 },
+              ],
+            },
+            {
+              emnekode: 'FENT2910', emnenavn: 'Bacheloroppgave, fornybar energi', studiepoeng: 22.5, aar: 3, semester: 'vår',
+              dbhEmnekoder: [], merknad: 'Oppgaven starter som «del 1 av 2» i 3. år høst (forprosjekt, uten eget studiepoengtall i NTNUs studieplandata) og fullføres som «del 2 av 2» i 3. år vår med 22,5 sp, som er studiepoengtallet ført her.',
+              years: [],
+            },
+            {
+              emnekode: 'INGT2301', emnenavn: 'Ingeniørfaglig systemtenkning', studiepoeng: 7.5, aar: 3, semester: 'vår',
+              dbhEmnekoder: [],
+              years: [],
+            },
+          ] },
         ],
       },
       {
         entryId: 'ntnu_ing_fornybar_gjovik', shortName: 'NTNU Gjøvik', institusjon: 'Norges teknisk-naturvitenskapelige universitet', isNmbu: false, programnavn: 'Ingeniør, fornybar energi (bachelor)',
-        studieplanAar: null, kilder: [],
-        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
-        merknad: 'Studieplan ikke hentet ennå.',
+        studieplanAar: '2026/2027', kilder: ['https://www.ntnu.no/studier/biforen', 'https://www.ntnu.no/studier/biforen/studiets-oppbygning', 'https://www.ntnu.no/studier/studieplan#programmeCode=BIFOREN&year=2026'],
+        totaltStudiepoeng: 180, obligatoriskeStudiepoeng: 150,
+        merknad: 'Kilde er NTNUs studieplanverktøy (www.ntnu.no/studier/studieplan#programmeCode=BIFOREN&year=2026), hentet direkte fra JSON-endepunktet (p_p_resource_id=studyplan) via nettleser. Programmet BIFOREN («Fornybar energi - bachelor i ingeniørfag») har felles programkode for alle tre studiesteder, men studiestedet velges som en «Studiested og opptaksveier»-forgrening helt fra 1. semester, med egne emnekoder per studiested (suffiks A=Ålesund, G=Gjøvik, T=Trondheim) og til dels ulikt faglig innhold fra og med 2. år vår. Denne filen dekker kun sporet «Gjøvik - Ordinært opptak» (de øvrige opptaksveiene TRES og Y-vei ved Gjøvik har i tillegg 0-poengs oppgraderingsemner i matematikk/fysikk/norsk, men ellers samme obligatoriske emner). Gjøvik har - i likhet med Ålesund, men ulikt Trondheim - kun én fast faglig profil («Anvendt solenergi», uten valgbar studieretning), og er derfor ikke ført med spesialiseringer; 2. år vår er her 100 % obligatorisk (ingen valgfritt), til forskjell fra Ålesund. 3. år høst har en valgbar emnepool (FENG2020, FENG2101, FENG2314, IELEG2118, IMAG3011, IMAG3012) som fyller opp semesteret sammen med bacheloroppgavens forprosjekt; disse er ikke tatt med i obligatoriske-lista siden det er fritt valg. De 17 navngitte obligatoriske emnene/elementene summerer til 150 sp av totalt 180 sp; resterende 30 sp er valgfrie, i sin helhet i 3. år høst.',
         obligatoriske: [
+          {
+            emnekode: 'ELEG1001', emnenavn: 'Elektriske kretser - introduksjon', studiepoeng: 7.5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['ELEG1001-1'],
+            years: [
+              { year: 2023, A: 0, B: 0, C: 4, D: 0, E: 0, F: 6, G: 0, H: 0, total: 10, snitt: 1.2, strykprosent: 60, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 0, B: 0, C: 5, D: 3, E: 3, F: 13, G: 0, H: 0, total: 24, snitt: 1, strykprosent: 54.2, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 3, E: 5, F: 12, G: 0, H: 0, total: 20, snitt: 0.55, strykprosent: 60, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: 'FENG1101', emnenavn: 'Fornybar energi grunnkurs 1', studiepoeng: 7.5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['FENG1101-1'],
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 6, G: 0, H: 0, total: 6, snitt: 0, strykprosent: 100, bestattprosent: null, skjult: 5 },
+              { year: 2024, A: 0, B: 0, C: 4, D: 6, E: 3, F: 7, G: 0, H: 0, total: 20, snitt: 1.35, strykprosent: 35, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 3, B: 0, C: 0, D: 0, E: 4, F: 0, G: 0, H: 0, total: 7, snitt: 2.71, strykprosent: 0, bestattprosent: null, skjult: 6 },
+            ],
+          },
+          {
+            emnekode: 'IMAG1002', emnenavn: 'Matematikk for ingeniørfag 1', studiepoeng: 7.5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['IMAG1002-1'],
+            years: [
+              { year: 2023, A: 0, B: 0, C: 3, D: 0, E: 4, F: 3, G: 0, H: 0, total: 10, snitt: 1.3, strykprosent: 30, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 0, B: 0, C: 4, D: 0, E: 8, F: 5, G: 0, H: 0, total: 17, snitt: 1.18, strykprosent: 29.4, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 0, B: 0, C: 3, D: 0, E: 0, F: 8, G: 0, H: 0, total: 11, snitt: 0.82, strykprosent: 72.7, bestattprosent: null, skjult: 3 },
+            ],
+          },
+          {
+            emnekode: 'INGG1002', emnenavn: 'Programmering, numerikk og sikkerhet', studiepoeng: 7.5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['INGG1002-1'],
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 9, H: 4, total: 13, snitt: null, strykprosent: null, bestattprosent: 69.2, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 14, H: 6, total: 20, snitt: null, strykprosent: null, bestattprosent: 70, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 10, H: 5, total: 15, snitt: null, strykprosent: null, bestattprosent: 66.7, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: 'ELEG1002', emnenavn: 'Elektriske kretser - modellering og analyse', studiepoeng: 7.5, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['ELEG1002-1'],
+            years: [
+              { year: 2024, A: 0, B: 3, C: 0, D: 0, E: 0, F: 3, G: 0, H: 0, total: 6, snitt: 2, strykprosent: 50, bestattprosent: null, skjult: 6 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 3, E: 6, F: 7, G: 0, H: 0, total: 16, snitt: 0.75, strykprosent: 43.8, bestattprosent: null, skjult: 7 },
+            ],
+          },
+          {
+            emnekode: 'FENG1102', emnenavn: 'Fornybar energi grunnkurs 2', studiepoeng: 7.5, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['FENG1102-1'],
+            years: [
+              { year: 2024, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 7 },
+              { year: 2025, A: 0, B: 4, C: 3, D: 5, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 2.92, strykprosent: 0, bestattprosent: null, skjult: 4 },
+            ],
+          },
+          {
+            emnekode: 'IFYG1002', emnenavn: 'Fysikk', studiepoeng: 7.5, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['IFYG1002-1'],
+            years: [
+              { year: 2024, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 9 },
+              { year: 2025, A: 0, B: 0, C: 3, D: 4, E: 7, F: 0, G: 0, H: 0, total: 14, snitt: 1.71, strykprosent: 0, bestattprosent: null, skjult: 4 },
+            ],
+          },
+          {
+            emnekode: 'IMAG2022', emnenavn: 'Matematikk for ingeniørfag 2 B', studiepoeng: 7.5, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['IMAG2022-1'],
+            years: [
+              { year: 2024, A: 0, B: 4, C: 0, D: 0, E: 0, F: 4, G: 0, H: 0, total: 8, snitt: 2, strykprosent: 50, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 0, B: 0, C: 4, D: 9, E: 0, F: 10, G: 0, H: 0, total: 23, snitt: 1.3, strykprosent: 43.5, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: 'EXPH0600', emnenavn: 'Examen philosophicum for ingeniørfag', studiepoeng: 7.5, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['EXPH0600-1'],
+            years: [
+              { year: 2024, A: 3, B: 28, C: 39, D: 21, E: 0, F: 5, G: 0, H: 0, total: 96, snitt: 2.98, strykprosent: 5.2, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 0, B: 27, C: 36, D: 13, E: 7, F: 15, G: 0, H: 0, total: 98, snitt: 2.54, strykprosent: 15.3, bestattprosent: null, skjult: 5 },
+            ],
+          },
+          {
+            emnekode: 'FENG1011', emnenavn: 'Termodynamikk', studiepoeng: 7.5, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['FENG1011-1'],
+            years: [
+              { year: 2021, A: 3, B: 7, C: 7, D: 5, E: 0, F: 5, G: 0, H: 0, total: 27, snitt: 2.74, strykprosent: 18.5, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 6, E: 4, F: 3, G: 0, H: 0, total: 13, snitt: 1.23, strykprosent: 23.1, bestattprosent: null, skjult: 4 },
+              { year: 2023, A: 0, B: 3, C: 0, D: 4, E: 4, F: 0, G: 0, H: 0, total: 11, snitt: 2.18, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 6, F: 0, G: 0, H: 0, total: 6, snitt: 1, strykprosent: 0, bestattprosent: null, skjult: 7 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 9, G: 0, H: 0, total: 9, snitt: 0, strykprosent: 100, bestattprosent: null, skjult: 3 },
+            ],
+          },
+          {
+            emnekode: 'ISTG1002', emnenavn: 'Statistikk', studiepoeng: 7.5, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['ISTG1002-1'],
+            years: [
+              { year: 2021, A: 6, B: 12, C: 0, D: 5, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 3.83, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2022, A: 0, B: 4, C: 6, D: 7, E: 0, F: 3, G: 0, H: 0, total: 20, snitt: 2.4, strykprosent: 15, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 6, D: 0, E: 0, F: 4, G: 0, H: 0, total: 10, snitt: 1.8, strykprosent: 40, bestattprosent: null, skjult: 7 },
+              { year: 2024, A: 0, B: 3, C: 0, D: 3, E: 0, F: 4, G: 0, H: 0, total: 10, snitt: 1.8, strykprosent: 40, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 0, B: 7, C: 3, D: 3, E: 0, F: 4, G: 0, H: 0, total: 17, snitt: 2.53, strykprosent: 23.5, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: 'MEKG1101', emnenavn: 'Mekanikk 1', studiepoeng: 7.5, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['MEKG1101-1'],
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 4, E: 0, F: 4, G: 0, H: 0, total: 8, snitt: 1, strykprosent: 50, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 0, B: 3, C: 5, D: 0, E: 0, F: 6, G: 0, H: 0, total: 14, snitt: 1.93, strykprosent: 42.9, bestattprosent: null, skjult: 5 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 5, F: 8, G: 0, H: 0, total: 13, snitt: 0.38, strykprosent: 61.5, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: 'FENG2002', emnenavn: 'Fluidmekanikk og hydraulikk', studiepoeng: 7.5, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['FENG2002-1'],
+            years: [
+              { year: 2021, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 7 },
+              { year: 2022, A: 7, B: 8, C: 6, D: 3, E: 0, F: 0, G: 0, H: 0, total: 24, snitt: 3.79, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 0, B: 5, C: 3, D: 3, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 3.18, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2024, A: 4, B: 3, C: 0, D: 0, E: 0, F: 4, G: 0, H: 0, total: 11, snitt: 2.91, strykprosent: 36.4, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 6, G: 0, H: 0, total: 6, snitt: 0, strykprosent: 100, bestattprosent: null, skjult: 6 },
+            ],
+          },
+          {
+            emnekode: 'FENG2023', emnenavn: 'Livsløpsvurderinger av energisystem', studiepoeng: 7.5, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['FENG2023-1'],
+            years: [
+              { year: 2021, A: 0, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 15, B: 8, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 4.65, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 6, B: 6, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 4.5, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2024, A: 7, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 11, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 4.69, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: 'FENG2100', emnenavn: 'Anvendt solenergi', studiepoeng: 7.5, aar: 2, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'MASG2200', emnenavn: 'Materialteknikk', studiepoeng: 7.5, aar: 2, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'FENG2910', emnenavn: 'Bacheloroppgave, fornybar energi', studiepoeng: 22.5, aar: 3, semester: 'vår',
+            dbhEmnekoder: [], merknad: 'Oppgaven starter som «del 1 av 2» i 3. år høst (forprosjekt, uten eget studiepoengtall i NTNUs studieplandata) og fullføres som «del 2 av 2» i 3. år vår med 22,5 sp, som er studiepoengtallet ført her.',
+            years: [],
+          },
+          {
+            emnekode: 'INGG2301', emnenavn: 'Ingeniørfaglig systemtenkning', studiepoeng: 7.5, aar: 3, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
         ],
         spesialiseringer: [
         ],
       },
       {
         entryId: 'ntnu_ing_fornybar_alesund', shortName: 'NTNU Ålesund', institusjon: 'Norges teknisk-naturvitenskapelige universitet', isNmbu: false, programnavn: 'Ingeniør, fornybar energi (bachelor)',
-        studieplanAar: null, kilder: [],
-        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
-        merknad: 'Studieplan ikke hentet ennå.',
+        studieplanAar: '2026/2027', kilder: ['https://www.ntnu.no/studier/biforen', 'https://www.ntnu.no/studier/biforen/studiets-oppbygning', 'https://www.ntnu.no/studier/studieplan#programmeCode=BIFOREN&year=2026'],
+        totaltStudiepoeng: 180, obligatoriskeStudiepoeng: 142.5,
+        merknad: 'Kilde er NTNUs studieplanverktøy (www.ntnu.no/studier/studieplan#programmeCode=BIFOREN&year=2026), hentet direkte fra JSON-endepunktet (p_p_resource_id=studyplan) via nettleser. Programmet BIFOREN («Fornybar energi - bachelor i ingeniørfag») har felles programkode for alle tre studiesteder, men studiestedet velges som en «Studiested og opptaksveier»-forgrening helt fra 1. semester, med egne emnekoder per studiested (suffiks A=Ålesund, G=Gjøvik, T=Trondheim) og til dels ulikt faglig innhold fra og med 2. år vår. Denne filen dekker kun sporet «Ålesund - Ordinært opptak» (de øvrige opptaksveiene TRES og Y-vei ved Ålesund har i tillegg 0-poengs oppgraderingsemner i matematikk/fysikk/norsk, men ellers samme obligatoriske emner). I motsetning til Trondheim, som deler seg i tre valgbare studieretninger fra 2. år vår (se ntnu_ing_fornybar_trondheim.json), har Ålesund kun én fast faglig profil («Maritime og landbaserte energisystemer», uten valgbar studieretning), og er derfor ikke ført med spesialiseringer. 3. år høst har i tillegg en valgbar emnepool (VA: BYGA2352, FENA2320, FENA2330, IMAA3011, IMAA3012, MEPA2200, MEPA2315; VB: SKID2303 studiepoenggivende praksis) som fyller opp semesteret sammen med bacheloroppgavens forprosjekt; disse er ikke tatt med i obligatoriske-lista siden det er fritt valg. De 17 navngitte obligatoriske emnene/elementene summerer til 142,5 sp av totalt 180 sp; resterende 37,5 sp er valgfrie (7,5 sp valg i 2. år vår mellom MEPA2002/MEPA2202, og ca. 30 sp valgfritt/praksis i 3. år høst).',
         obligatoriske: [
+          {
+            emnekode: 'FENA1101', emnenavn: 'Fornybar energi grunnkurs 1', studiepoeng: 7.5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['FENA1101-1'],
+            years: [
+              { year: 2023, A: 0, B: 4, C: 6, D: 0, E: 5, F: 0, G: 0, H: 0, total: 15, snitt: 2.6, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 7, B: 5, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 4.19, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 0, B: 4, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 3.44, strykprosent: 0, bestattprosent: null, skjult: 6 },
+            ],
+          },
+          {
+            emnekode: 'HMSA1001', emnenavn: 'HMS og laboratoriekurs', studiepoeng: 0, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'IMAA1002', emnenavn: 'Matematikk for ingeniørfag 1', studiepoeng: 7.5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['IMAA1002-1'],
+            years: [
+              { year: 2023, A: 0, B: 4, C: 4, D: 4, E: 4, F: 0, G: 0, H: 0, total: 16, snitt: 2.5, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 0, B: 0, C: 4, D: 5, E: 3, F: 0, G: 0, H: 0, total: 12, snitt: 2.08, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 6, E: 3, F: 0, G: 0, H: 0, total: 9, snitt: 1.67, strykprosent: 0, bestattprosent: null, skjult: 4 },
+            ],
+          },
+          {
+            emnekode: 'INGA1002', emnenavn: 'Programmering, numerikk og sikkerhet', studiepoeng: 7.5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['INGA1002-1'],
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 12, H: 5, total: 17, snitt: null, strykprosent: null, bestattprosent: 70.6, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 22, H: 0, total: 22, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 11, H: 0, total: 11, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: 'MEKA1101', emnenavn: 'Mekanikk 1', studiepoeng: 7.5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['MEKA1101-1'],
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 4, E: 5, F: 0, G: 0, H: 0, total: 9, snitt: 1.44, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2024, A: 10, B: 5, C: 11, D: 4, E: 5, F: 0, G: 0, H: 0, total: 35, snitt: 3.31, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 3, E: 3, F: 0, G: 0, H: 0, total: 6, snitt: 1.5, strykprosent: 0, bestattprosent: null, skjult: 6 },
+            ],
+          },
+          {
+            emnekode: 'FENA1102', emnenavn: 'Fornybar energi grunnkurs 2', studiepoeng: 7.5, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['FENA1102-1'],
+            years: [
+              { year: 2024, A: 8, B: 7, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 4.53, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 6, B: 9, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 4.4, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: 'FENA1201', emnenavn: 'Elektroteknikk', studiepoeng: 7.5, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['FENA1201-1'],
+            years: [
+              { year: 2025, A: 0, B: 3, C: 3, D: 4, E: 4, F: 3, G: 0, H: 0, total: 17, snitt: 1.94, strykprosent: 17.6, bestattprosent: null, skjult: 5 },
+            ],
+          },
+          {
+            emnekode: 'IFYA1002', emnenavn: 'Fysikk', studiepoeng: 7.5, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['IFYA1002-1'],
+            years: [
+              { year: 2024, A: 0, B: 3, C: 0, D: 6, E: 0, F: 3, G: 0, H: 0, total: 12, snitt: 2, strykprosent: 25, bestattprosent: null, skjult: 6 },
+              { year: 2025, A: 0, B: 4, C: 5, D: 5, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 2.93, strykprosent: 0, bestattprosent: null, skjult: 5 },
+            ],
+          },
+          {
+            emnekode: 'IMAA2022', emnenavn: 'Matematikk for ingeniørfag 2 B', studiepoeng: 7.5, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['IMAA2022-1'],
+            years: [
+              { year: 2024, A: 0, B: 6, C: 0, D: 7, E: 0, F: 3, G: 0, H: 0, total: 16, snitt: 2.38, strykprosent: 18.8, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 0, B: 5, C: 5, D: 8, E: 0, F: 12, G: 0, H: 0, total: 30, snitt: 1.7, strykprosent: 40, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: 'EXPH0600', emnenavn: 'Examen philosophicum for ingeniørfag', studiepoeng: 7.5, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['EXPH0600-1'],
+            years: [
+              { year: 2024, A: 3, B: 28, C: 39, D: 21, E: 0, F: 5, G: 0, H: 0, total: 96, snitt: 2.98, strykprosent: 5.2, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 0, B: 27, C: 36, D: 13, E: 7, F: 15, G: 0, H: 0, total: 98, snitt: 2.54, strykprosent: 15.3, bestattprosent: null, skjult: 5 },
+            ],
+          },
+          {
+            emnekode: 'FENA1011', emnenavn: 'Termodynamikk', studiepoeng: 7.5, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['FENA1011-1'],
+            years: [
+              { year: 2021, A: 0, B: 3, C: 9, D: 6, E: 3, F: 0, G: 0, H: 0, total: 21, snitt: 2.57, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 6, F: 9, G: 0, H: 0, total: 15, snitt: 0.4, strykprosent: 60, bestattprosent: null, skjult: 5 },
+              { year: 2023, A: 0, B: 0, C: 3, D: 5, E: 6, F: 7, G: 0, H: 0, total: 21, snitt: 1.19, strykprosent: 33.3, bestattprosent: null, skjult: 6 },
+              { year: 2024, A: 3, B: 3, C: 6, D: 0, E: 6, F: 5, G: 0, H: 0, total: 23, snitt: 2.22, strykprosent: 21.7, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 0, B: 3, C: 0, D: 0, E: 7, F: 5, G: 0, H: 0, total: 15, snitt: 1.27, strykprosent: 33.3, bestattprosent: null, skjult: 5 },
+            ],
+          },
+          {
+            emnekode: 'FENA2101', emnenavn: 'Elektriske energisystemer og mikrogrid', studiepoeng: 7.5, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['FENA2101-1'],
+            years: [
+              { year: 2025, A: 0, B: 0, C: 4, D: 4, E: 3, F: 4, G: 0, H: 0, total: 15, snitt: 1.53, strykprosent: 26.7, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: 'ISTA1002', emnenavn: 'Statistikk', studiepoeng: 7.5, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['ISTA1002-1'],
+            years: [
+              { year: 2021, A: 3, B: 14, C: 0, D: 4, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3.76, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 0, B: 4, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 3.31, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2023, A: 0, B: 7, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 3, B: 8, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 3.78, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 0, B: 6, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 3.55, strykprosent: 0, bestattprosent: null, skjult: 6 },
+            ],
+          },
+          {
+            emnekode: 'FENA2002', emnenavn: 'Fluidmekanikk og hydraulikk', studiepoeng: 7.5, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['FENA2002-1'],
+            years: [
+              { year: 2021, A: 0, B: 6, C: 0, D: 0, E: 0, F: 3, G: 0, H: 0, total: 9, snitt: 2.67, strykprosent: 33.3, bestattprosent: null, skjult: 6 },
+              { year: 2022, A: 6, B: 6, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 4.5, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2023, A: 0, B: 3, C: 0, D: 5, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 2.75, strykprosent: 0, bestattprosent: null, skjult: 10 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 3, E: 0, F: 5, G: 0, H: 0, total: 8, snitt: 0.75, strykprosent: 62.5, bestattprosent: null, skjult: 9 },
+              { year: 2025, A: 0, B: 3, C: 0, D: 0, E: 5, F: 7, G: 0, H: 0, total: 15, snitt: 1.13, strykprosent: 46.7, bestattprosent: null, skjult: 6 },
+            ],
+          },
+          {
+            emnekode: 'MASA2042', emnenavn: 'Energioverføring og styring av maskinerisystemer', studiepoeng: 7.5, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['MASA2042-1'],
+            years: [
+              { year: 2021, A: 0, B: 6, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2022, A: 0, B: 8, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 3.62, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 3, B: 3, C: 4, D: 0, E: 4, F: 3, G: 0, H: 0, total: 17, snitt: 2.53, strykprosent: 17.6, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 3, B: 0, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 3.67, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 5, B: 8, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 4.12, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: 'SKID2210', emnenavn: 'Havromskonstruksjoner og energiproduksjon', studiepoeng: 7.5, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['SKID2210-1'], merknad: 'I tillegg velges 7,5 sp fra en valggruppe 2. år vår: MEPA2002 Mekatronikk 4 - Systemintegrasjon og design ELLER MEPA2202 Dynamiske systemer. Dette er et reelt valg mellom to emner og er derfor holdt utenfor obligatoriske-lista.',
+            years: [
+              { year: 2021, A: 0, B: 3, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 0, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 3, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 2, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2024, A: 0, B: 4, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 0, B: 7, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 3.44, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: 'FENA2910', emnenavn: 'Bacheloroppgave, fornybar energi', studiepoeng: 22.5, aar: 3, semester: 'vår',
+            dbhEmnekoder: [], merknad: 'Oppgaven starter som «del 1 av 2» i 3. år høst (forprosjekt, uten eget studiepoengtall i NTNUs studieplandata) og fullføres som «del 2 av 2» i 3. år vår med 22,5 sp, som er studiepoengtallet ført her.',
+            years: [],
+          },
+          {
+            emnekode: 'INGA2301', emnenavn: 'Ingeniørfaglig systemtenkning', studiepoeng: 7.5, aar: 3, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
         ],
         spesialiseringer: [
         ],
       },
       {
         entryId: 'uia_ing_fornybar', shortName: 'UiA', institusjon: 'Universitetet i Agder', isNmbu: false, programnavn: 'Ingeniør, fornybar energi (bachelor)',
-        studieplanAar: null, kilder: [],
-        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
-        merknad: 'Studieplan ikke hentet ennå.',
+        studieplanAar: '2026/2027', kilder: ['https://www.uia.no/studier/program/fornybar-energi-bachelor/', 'https://www.uia.no/studier/program/fornybar-energi-bachelor/studieplaner/2026h.html'],
+        totaltStudiepoeng: 180, obligatoriskeStudiepoeng: 90,
+        merknad: 'Kilde er UiAs studieplan for Ingeniørfag - fornybar energi, bachelorprogram (2026-2029), Samordna opptak-sporet (www.uia.no, hentet via nettleser med studieretningsvelgeren satt til hver av de tre studieretningene). Programmet deler seg i tre studieretninger fra og med 3. semester (2. år høst): Batteriteknologi, Elkraftteknikk og Energiteknikk; disse er ført under spesialiseringer. 5. semester (3. år høst) er i alle tre studieretninger et fritt valgfag-/utvekslingssemester («I 5. semester velger studenten relevante valgfag på Universitetet i Agder eller drar på et utvekslingsopphold»); studieplanen lister riktignok en anbefalt emnepakke for hver studieretning i dette semesteret (Elkraft: ELE303, ENE231, ENE239, ENE240, ENE243, MA-307, MAS239, PRA204, TFL300; Energiteknikk: BYG225, ENE240, ENE243, MA-307, MAS239, PRA204, TFL300; Batteriteknologi: ELE303, ENE231, ENE235, ENE236, ENE239, ENE240, ENE243, MA-307, MAS239, PRA204, TFL300), men dette er en fri valgfagpool og ikke reelle obligatoriske emnelister, og er derfor ikke tatt med i obligatoriske-lista, tilsvarende praksis for 5. semester i uia_ing_mekatronikk.json. I 3. semester (2. år høst) er det i tillegg et reelt valg mellom fire emner (ENE239/240/241/243, 5 sp) for studieretningene Elkraftteknikk og Batteriteknologi (Energiteknikk har i stedet ENE239 Bioenergi som fast obligatorisk emne); dette valget er ført i merknad, ikke i obligatoriske-lista. ENE306 Bacheloroppgave, fornybar energi (30 sp, 6. semester) er identisk for alle tre studieretninger og er derfor ført på toppnivå i obligatoriske sammen med de ti felles emnene i 1. år (60 sp), som gir toppnivåets obligatoriskeStudiepoeng på 90 sp. Hver studieretning legger i tillegg til egne obligatoriske emner i 2. år (55-60 sp, se spesialiseringer) samt valgfrie emner i 3. semester og 5. semester, slik at summen blir 180 sp for alle tre studieretningene (Elkraftteknikk: 90+55=145 sp obligatorisk, 35 sp valgfritt; Energiteknikk: 90+60=150 sp obligatorisk, 30 sp valgfritt; Batteriteknologi: 90+55=145 sp obligatorisk, 35 sp valgfritt). Studenter tatt opp på TRES eller Y-vei har i tillegg 0-poengs oppgraderingskurs i matematikk/fysikk (og NO-007 norsk for Y-vei) i 1. år, men ellers samme obligatoriske emner; kun ordinært Samordna opptak-løp er hentet ut her.',
         obligatoriske: [
+          {
+            emnekode: 'ELE113', emnenavn: 'Kretsteknikk', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'ENE109', emnenavn: 'Energilab', studiepoeng: 7.5, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'ING100', emnenavn: 'Programmering og IKT-sikkerhet', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'ING101', emnenavn: 'Teknologi, miljø og bærekraft', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'MA-178', emnenavn: 'Matematikk 1', studiepoeng: 7.5, aar: 1, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'ORG001', emnenavn: 'HMS-kurs', studiepoeng: 0, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['ORG001-1'], merknad: 'Obligatorisk HMS-kurs uten studiepoeng, jf. «Andre opplysninger» i studieplanen.',
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 44, H: 4, total: 48, snitt: null, strykprosent: null, bestattprosent: 91.7, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 27, H: 0, total: 27, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 33, H: 0, total: 33, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: 'ELE114', emnenavn: 'Elektroniske kretser', studiepoeng: 5, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'ENE111', emnenavn: 'Fornybar energi', studiepoeng: 5, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'ENE113', emnenavn: 'Termodynamikk', studiepoeng: 5, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'FYS128', emnenavn: 'Fysikk', studiepoeng: 7.5, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'MA-179', emnenavn: 'Matematikk 2', studiepoeng: 7.5, aar: 1, semester: 'vår',
+            dbhEmnekoder: [], merknad: 'Fra og med 3. semester (2. år høst) velger studenten studieretning (Batteriteknologi, Elkraftteknikk eller Energiteknikk). Studieretningsspesifikke obligatoriske emner i 2. og deler av 3. år er ført under spesialiseringer.',
+            years: [],
+          },
+          {
+            emnekode: 'ENE306', emnenavn: 'Bacheloroppgave, fornybar energi', studiepoeng: 30, aar: 3, semester: 'vår',
+            dbhEmnekoder: ['ENE306-1'], merknad: 'Identisk obligatorisk emne (6. semester) for alle tre studieretninger.',
+            years: [
+              { year: 2025, A: 8, B: 10, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 3.96, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+          },
         ],
         spesialiseringer: [
+          { navn: 'Elkraftteknikk', obligatoriske: [
+            {
+              emnekode: 'ENE235', emnenavn: 'Elektromagnetisme', studiepoeng: 5, aar: 2, semester: 'høst',
+              dbhEmnekoder: [],
+              years: [],
+            },
+            {
+              emnekode: 'ENE236', emnenavn: 'Elektriske maskiner', studiepoeng: 7.5, aar: 2, semester: 'høst',
+              dbhEmnekoder: [],
+              years: [],
+            },
+            {
+              emnekode: 'MA-222', emnenavn: 'Matematikk 3', studiepoeng: 5, aar: 2, semester: 'høst',
+              dbhEmnekoder: [],
+              years: [],
+            },
+            {
+              emnekode: 'MA-223', emnenavn: 'Statistikk', studiepoeng: 7.5, aar: 2, semester: 'høst',
+              dbhEmnekoder: [], merknad: 'I tillegg velges 5 sp valgemne 3. semester blant ENE239 Bioenergi, ENE240 Vannkraft, ENE241 Solenergisystemer og ENE243 Vindkraft, ikke tatt med her da dette er fritt valg mellom fire emner.',
+              years: [],
+            },
+            {
+              emnekode: 'ENE114', emnenavn: 'Teknisk tegning', studiepoeng: 5, aar: 2, semester: 'vår',
+              dbhEmnekoder: [],
+              years: [],
+            },
+            {
+              emnekode: 'ENE229', emnenavn: 'Fornybar energi i kraftnettet', studiepoeng: 10, aar: 2, semester: 'vår',
+              dbhEmnekoder: [],
+              years: [],
+            },
+            {
+              emnekode: 'ENE237', emnenavn: 'Materialer og korrosjon', studiepoeng: 7.5, aar: 2, semester: 'vår',
+              dbhEmnekoder: [],
+              years: [],
+            },
+            {
+              emnekode: 'ENE238', emnenavn: 'Moderne instrumenteringssystemer', studiepoeng: 7.5, aar: 2, semester: 'vår',
+              dbhEmnekoder: [],
+              years: [],
+            },
+          ] },
+          { navn: 'Energiteknikk', obligatoriske: [
+            {
+              emnekode: 'BYG229', emnenavn: 'Bygningsfysikk', studiepoeng: 5, aar: 2, semester: 'høst',
+              dbhEmnekoder: [],
+              years: [],
+            },
+            {
+              emnekode: 'ENE234', emnenavn: 'Varmesystemer og energieffektive bygninger', studiepoeng: 7.5, aar: 2, semester: 'høst',
+              dbhEmnekoder: [],
+              years: [],
+            },
+            {
+              emnekode: 'ENE239', emnenavn: 'Bioenergi', studiepoeng: 5, aar: 2, semester: 'høst',
+              dbhEmnekoder: [],
+              years: [],
+            },
+            {
+              emnekode: 'MA-222', emnenavn: 'Matematikk 3', studiepoeng: 5, aar: 2, semester: 'høst',
+              dbhEmnekoder: [],
+              years: [],
+            },
+            {
+              emnekode: 'MA-223', emnenavn: 'Statistikk', studiepoeng: 7.5, aar: 2, semester: 'høst',
+              dbhEmnekoder: [],
+              years: [],
+            },
+            {
+              emnekode: 'ENE114', emnenavn: 'Teknisk tegning', studiepoeng: 5, aar: 2, semester: 'vår',
+              dbhEmnekoder: [],
+              years: [],
+            },
+            {
+              emnekode: 'ENE230', emnenavn: 'VVS og strømningsprosesser for energisystemer', studiepoeng: 10, aar: 2, semester: 'vår',
+              dbhEmnekoder: [],
+              years: [],
+            },
+            {
+              emnekode: 'ENE237', emnenavn: 'Materialer og korrosjon', studiepoeng: 7.5, aar: 2, semester: 'vår',
+              dbhEmnekoder: [],
+              years: [],
+            },
+            {
+              emnekode: 'ENE238', emnenavn: 'Moderne instrumenteringssystemer', studiepoeng: 7.5, aar: 2, semester: 'vår',
+              dbhEmnekoder: [],
+              years: [],
+            },
+          ] },
+          { navn: 'Batteriteknologi', obligatoriske: [
+            {
+              emnekode: 'ENE245', emnenavn: 'Innsikt i batteriindustrien', studiepoeng: 5, aar: 2, semester: 'høst',
+              dbhEmnekoder: [],
+              years: [],
+            },
+            {
+              emnekode: 'ENE246', emnenavn: 'Batterier', studiepoeng: 7.5, aar: 2, semester: 'høst',
+              dbhEmnekoder: [],
+              years: [],
+            },
+            {
+              emnekode: 'MA-222', emnenavn: 'Matematikk 3', studiepoeng: 5, aar: 2, semester: 'høst',
+              dbhEmnekoder: [],
+              years: [],
+            },
+            {
+              emnekode: 'MA-223', emnenavn: 'Statistikk', studiepoeng: 7.5, aar: 2, semester: 'høst',
+              dbhEmnekoder: [], merknad: 'I tillegg velges 5 sp valgemne 3. semester blant ENE239 Bioenergi, ENE240 Vannkraft, ENE241 Solenergisystemer og ENE243 Vindkraft, ikke tatt med her da dette er fritt valg mellom fire emner.',
+              years: [],
+            },
+            {
+              emnekode: 'ENE114', emnenavn: 'Teknisk tegning', studiepoeng: 5, aar: 2, semester: 'vår',
+              dbhEmnekoder: [],
+              years: [],
+            },
+            {
+              emnekode: 'ENE237', emnenavn: 'Materialer og korrosjon', studiepoeng: 7.5, aar: 2, semester: 'vår',
+              dbhEmnekoder: [],
+              years: [],
+            },
+            {
+              emnekode: 'ENE238', emnenavn: 'Moderne instrumenteringssystemer', studiepoeng: 7.5, aar: 2, semester: 'vår',
+              dbhEmnekoder: [],
+              years: [],
+            },
+            {
+              emnekode: 'ENE244', emnenavn: 'Batterilaboratorium', studiepoeng: 10, aar: 2, semester: 'vår',
+              dbhEmnekoder: [],
+              years: [],
+            },
+          ] },
         ],
       },
       {
         entryId: 'uit_fornybar', shortName: 'UiT', institusjon: 'UiT Norges arktiske universitet', isNmbu: false, programnavn: 'Fornybar energi (master 5 år)',
-        studieplanAar: null, kilder: [],
-        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
-        merknad: 'Studieplan ikke hentet ennå.',
+        studieplanAar: '2025/2026', kilder: ['https://uit.no/utdanning/program/798891/fornybar_energi_sivilingenior_-_master', 'https://uit.no/utdanning/program/oppbygging?studkode=IMAT-FOREN&p_document_id=798891', 'https://uit.no/Content/927738/cache=20263108124440/Studieplan%20Fornybar%20energi%2C%20gjeldende%20fra%20h%C3%B8sten%202025.pdf'],
+        totaltStudiepoeng: 300, obligatoriskeStudiepoeng: 230,
+        merknad: 'Kilde er UiTs «Oppbygging»-verktøy for det femårige, integrerte sivilingeniørprogrammet i fornybar energi (uit.no/utdanning/program/oppbygging?studkode=IMAT-FOREN&p_document_id=798891), hentet via nettleser, kryssjekket mot studieplan-PDF-en «gjeldende fra høsten 2025». Dette er IKKE en bachelorgrad, men et 5-årig løp på 300 studiepoeng (60 sp/år); programkart.json fører det med type «master», og denne filen dekker derfor hele det 5-årige løpet, ikke bare en 3-årig bachelordel. 1.-3. år (semester 1-5) er 100 % obligatorisk (30 sp/semester). Fra og med 6. semester (3. år vår) åpner programmet for valgfrie emner ved siden av de obligatoriske (10 sp valgfritt), og 7. semester (4. år høst) har kun ett obligatorisk emne (TVR-3000, 10 sp) pluss 20 sp valgfritt. 8. semester (4. år vår) er et rent valg-/utvekslingssemester («Du kan velge én av de anbefalte emnepakkene eller utveksling», bl.a. emnepakken Miljøkjemi eller utveksling), uten noen fast obligatorisk emneliste, og er derfor holdt helt utenfor obligatoriske-lista. 9. semester (5. år høst) har to obligatoriske emner (INF-3010, FYS-3760) pluss 10 sp valgfritt, og 10. semester (5. år vår) er masteroppgaven (FYS-3961, 30 sp, obligatorisk). Til sammen er 230 av 300 sp obligatoriske; resterende 70 sp er valgfrie (10+20+30+10 sp i hhv. 6., 7., 8. og 9. semester). Emnekoder er hentet fra lenkene til de enkelte emnesidene (uit.no/utdanning/aktivt/emne/<KODE>) i oppbyggingsverktøyet.',
         obligatoriske: [
+          {
+            emnekode: 'MAT-1507', emnenavn: 'Matematikk 1 for ingeniører', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['MAT-1507-1'],
+            years: [
+              { year: 2025, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 5 },
+            ],
+          },
+          {
+            emnekode: 'FYS-1008', emnenavn: 'Fornybar energi, bærekraft og samfunn', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['FYS-1008-1'],
+            years: [
+              { year: 2023, A: 0, B: 0, C: 3, D: 3, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 2.5, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 0, B: 0, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 0, B: 0, C: 4, D: 0, E: 0, F: 3, G: 0, H: 0, total: 7, snitt: 1.71, strykprosent: 42.9, bestattprosent: null, skjult: 5 },
+            ],
+          },
+          {
+            emnekode: 'INF-0101', emnenavn: 'Innføring i programmering', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['INF-0101-1'],
+            years: [
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 8, H: 0, total: 8, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: 'INF-0102', emnenavn: 'Beregningsorientert programmering', studiepoeng: 5, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['INF-0102-1'],
+            years: [
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 4, H: 3, total: 7, snitt: null, strykprosent: null, bestattprosent: 57.1, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: 'MAT-1516', emnenavn: 'Matematikk 2 for ingeniører', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'FYS-1010', emnenavn: 'Mekanikk og modellering', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'AUT-2503', emnenavn: 'Elektrisitetslære', studiepoeng: 5, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['AUT-2503-1'],
+            years: [
+              { year: 2024, A: 0, B: 0, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 0, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 7 },
+            ],
+          },
+          {
+            emnekode: 'FYS-2023', emnenavn: 'Introduksjon til vannkraft', studiepoeng: 5, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['FYS-2023-1'],
+            years: [
+              { year: 2024, A: 0, B: 3, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 4, F: 0, G: 0, H: 0, total: 4, snitt: 1, strykprosent: 0, bestattprosent: null, skjult: 7 },
+            ],
+          },
+          {
+            emnekode: 'KJE-1001', emnenavn: 'Introduksjon til kjemi og kjemisk biologi', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['KJE-1001-1'],
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 0, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2025, A: 0, B: 0, C: 3, D: 3, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 2.5, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
+          },
+          {
+            emnekode: 'FYS-1003', emnenavn: 'Eksperimentell fysikk', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'FYS-2024', emnenavn: 'Solar and wind energy systems', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['FYS-2024-1'],
+            years: [
+              { year: 2025, A: 0, B: 4, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 5 },
+            ],
+          },
+          {
+            emnekode: 'FIL-0700', emnenavn: 'Examen philosophicum, Tromsøvarianten', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'INF-1400', emnenavn: 'Objektorientert programmering', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['INF-1400-1'],
+            years: [
+              { year: 2025, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 11 },
+            ],
+          },
+          {
+            emnekode: 'KJE-2006', emnenavn: 'Introduction to modern bioenergy', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: ['KJE-2006-1'],
+            years: [
+              { year: 2025, A: 0, B: 3, C: 4, D: 4, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 2.91, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: 'TEK-2007', emnenavn: 'Sustainable Design and Life Cycle Assessments', studiepoeng: 10, aar: 3, semester: 'høst',
+            dbhEmnekoder: ['TEK-2007-1'],
+            years: [
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 4, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 4.57, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: 'FYS-2025', emnenavn: 'General meteorology and oceanography', studiepoeng: 10, aar: 3, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'TEK-2800', emnenavn: 'Matematikk 3 for ingeniører', studiepoeng: 5, aar: 3, semester: 'høst',
+            dbhEmnekoder: ['TEK-2800-1'],
+            years: [
+              { year: 2024, A: 4, B: 0, C: 0, D: 3, E: 0, F: 3, G: 0, H: 0, total: 10, snitt: 2.6, strykprosent: 30, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 0, B: 0, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 7 },
+            ],
+          },
+          {
+            emnekode: 'STA-1501', emnenavn: 'Introduksjon til sannsynlighetsregning og statistikk for ingeniører', studiepoeng: 5, aar: 3, semester: 'høst',
+            dbhEmnekoder: ['STA-1501-1'],
+            years: [
+              { year: 2025, A: 0, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 4 },
+            ],
+          },
+          {
+            emnekode: 'ELE-3600', emnenavn: 'Power System Fundamentals', studiepoeng: 10, aar: 3, semester: 'vår',
+            dbhEmnekoder: [], merknad: '10 sp valgfrie emner i tillegg 3. år vår, ikke tatt med her da dette er fritt valg.',
+            years: [],
+          },
+          {
+            emnekode: 'FYS-3034', emnenavn: 'Wind Modelling', studiepoeng: 10, aar: 3, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'TVR-3000', emnenavn: 'Activating Transformations for Sustainability', studiepoeng: 10, aar: 4, semester: 'høst',
+            dbhEmnekoder: [], merknad: '20 sp valgfrie emner i tillegg 4. år høst, ikke tatt med her da dette er fritt valg.',
+            years: [],
+          },
+          {
+            emnekode: 'INF-3010', emnenavn: 'Energy Informatics - Smart Energy and Power Systems Modelling', studiepoeng: 10, aar: 5, semester: 'høst',
+            dbhEmnekoder: [], merknad: '10 sp valgfrie emner i tillegg 5. år høst, ikke tatt med her da dette er fritt valg.',
+            years: [],
+          },
+          {
+            emnekode: 'FYS-3760', emnenavn: 'Prosjektoppgave i Fornybar energi', studiepoeng: 10, aar: 5, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'FYS-3961', emnenavn: 'Master\'s Thesis in Renewable Energy', studiepoeng: 30, aar: 5, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
         ],
         spesialiseringer: [
         ],
@@ -2311,10 +3961,98 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
     programs: [
       {
         entryId: 'nmbu_radioaktivitet', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Radioaktivitet og miljø (bachelor)',
-        studieplanAar: null, kilder: [],
-        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
-        merknad: 'Studieplan ikke hentet ennå.',
+        studieplanAar: '2026/2027', kilder: ['https://www.nmbu.no/studier/bachelor/radioaktivitet-og-miljo', 'https://static02.nmbu.no/mina/studier/B-RAMI.php'],
+        totaltStudiepoeng: 180, obligatoriskeStudiepoeng: 130,
+        merknad: 'Kilde er NMBUs fargekodede rutenett-studieplan for kull 2026 (static02.nmbu.no/mina/studier/B-RAMI.php), linket fra programsiden nmbu.no/studier/bachelor/radioaktivitet-og-miljo. Rutenettets kolonner er 5 sp brede, og hvert emnes reelle studiepoeng er lest ut fra cellens colspan-verdi (colspan × 5 sp), kryssjekket mot studiepoengtallet på nmbu.no/emne/<kode> for samtlige emner (Augustblokk/Januarblokk/Juniblokk-cellene bruker alltid full radbredde av rene formateringshensyn og er derfor IKKE brukt til å lese av studiepoeng med mindre kilden selv oppgir tallet, f.eks. «MILJØ100 - 5 stp» og «RAD205 - 5 stp»; MILJØ100 og MINA250 er delt mellom to blokker og er kryss-sjekket til å være 10 sp hver totalt via nmbu.no/emne). De 14 navngitte obligatoriske emnene summerer til 130 sp av totalt 180 sp. De resterende 50 sp er valgfrie: studieplanen lister to ikke-obligatoriske eksempelplaner (Deponering i fjell, Økotoksikologi) uten faste obligatoriske emnelister, samt en liste over «anbefalte valgfrie emner». MATH-INF100/MATH121 (1. år høst) og FYS100/FYS101 (1. år vår) er reelle valg avhengig av matematikk-/fysikkbakgrunn fra videregående, og er hver ført som én linje med merknad, tilsvarende praksis for REAL101/MATH-INF100 i nmbu_skogfag.json. PHI102 (Examen philosophicum - Engelsk versjon) er satt opp som hovedalternativet i rutenettet for vårsemesteret, men kan erstattes av PHI100 eller PHI101 som tas på høsten; ført som én linje (PHI102) med merknad. STAT100 er plassert i høstparallellen 2. år i rutenettet, med fotnote om at emnet kan tas høst eller vår; beholdt som obligatorisk med aar/semester fra rutenettets primærplassering. Emnenavn er hentet fra NMBUs emnesøk (nmbu.no/emne/<kode>). Programmet er nytt (oppstart 2024) og har derfor bare et fåtall kull; studieplanen for kull 2026 er hentet i sin helhet siden alle tre studieår allerede er publisert i rutenettverktøyet.',
         obligatoriske: [
+          {
+            emnekode: 'MILJO100', emnenavn: 'Miljø, naturressurser og radioaktivitet', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: [], merknad: '10 sp totalt, fordelt med 5 sp i augustblokk (før høstsemesteret) og 5 sp i høstparallell, jf. rutenettets kolonnebredder og NMBUs emnesøk.',
+            years: [],
+          },
+          {
+            emnekode: 'MATH-INF100', emnenavn: 'Beregningsbasert matematikk i praksis', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: [], merknad: 'Studieplanen gir valget mellom MATH-INF100 og MATH121 (Kalkulus); MATH121 anbefales for studenter som har matematikk R2 fra videregående skole.',
+            years: [],
+          },
+          {
+            emnekode: 'GEO100', emnenavn: 'Geologi', studiepoeng: 10, aar: 1, semester: 'høst',
+            dbhEmnekoder: ['GEO100-1'],
+            years: [
+              { year: 2024, A: 0, B: 4, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 3, G: 0, H: 0, total: 3, snitt: 0, strykprosent: 100, bestattprosent: null, skjult: 3 },
+            ],
+          },
+          {
+            emnekode: 'FYS100', emnenavn: 'Fysikk og natur', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['FYS100-1'], merknad: 'Studieplanen gir valget mellom FYS100 og FYS101 (Mekanikk); FYS101 anbefales for studenter som har fysikk 1 og matematikk R2 fra videregående skole.',
+            years: [
+              { year: 2025, A: 4, B: 0, C: 0, D: 3, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 3.71, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
+          },
+          {
+            emnekode: 'KJM100', emnenavn: 'Generell kjemi', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['KJM100-1'],
+            years: [
+              { year: 2025, A: 0, B: 0, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 5 },
+            ],
+          },
+          {
+            emnekode: 'PHI102', emnenavn: 'Examen philosophicum - Engelsk versjon', studiepoeng: 10, aar: 1, semester: 'vår',
+            dbhEmnekoder: ['PHI102-1'], merknad: 'Studieplanen angir PHI102 som hovedalternativ i vårsemesteret, men PHI102 kan erstattes av PHI100 (Examen philosophicum) eller PHI101 (Examen philosophicum - seminarversjon), som begge tas på høsten.',
+            years: [
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 8, H: 0, total: 8, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: 'BIO100', emnenavn: 'Cellebiologi', studiepoeng: 5, aar: 2, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'LAD102', emnenavn: 'GIS - praktisk introduksjon', studiepoeng: 5, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['LAD102-1'],
+            years: [
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 8, H: 0, total: 8, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: 'RAD200', emnenavn: 'Nukleær industri, anlegg og aktiviteter', studiepoeng: 5, aar: 2, semester: 'høst',
+            dbhEmnekoder: ['RAD200-1'],
+            years: [
+              { year: 2025, A: 0, B: 7, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 4 },
+            ],
+          },
+          {
+            emnekode: 'STAT100', emnenavn: 'Statistikk', studiepoeng: 10, aar: 2, semester: 'høst',
+            dbhEmnekoder: [], merknad: 'Studieplanens rutenett plasserer STAT100 i høstparallellen 2. år, men en fotnote presiserer at emnet kan tas høst og vår.',
+            years: [],
+          },
+          {
+            emnekode: 'RAD205', emnenavn: 'Atomberedskap', studiepoeng: 5, aar: 2, semester: 'januarblokk',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'KJM120', emnenavn: 'Uorganisk kjemi', studiepoeng: 10, aar: 2, semester: 'vår',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'RAD210', emnenavn: 'Radioaktivitet og strålevern', studiepoeng: 10, aar: 3, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'MILJO200', emnenavn: 'Forurensning og miljø', studiepoeng: 10, aar: 3, semester: 'høst',
+            dbhEmnekoder: [],
+            years: [],
+          },
+          {
+            emnekode: 'MINA250', emnenavn: 'Tverrfaglig konsekvensanalyse', studiepoeng: 10, aar: 3, semester: 'vår',
+            dbhEmnekoder: [], merknad: '10 sp totalt, fordelt med 5 sp i januarblokk (før vårsemesteret) og 5 sp i vårparallell, jf. rutenettets kolonnebredder og NMBUs emnesøk.',
+            years: [],
+          },
         ],
         spesialiseringer: [
         ],
