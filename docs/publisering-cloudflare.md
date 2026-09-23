@@ -1,23 +1,25 @@
-# Publisering på Cloudflare Pages med innlogging
+# Publisering på Cloudflare Pages
 
-Skrevet 23.09.2026. To nettsteder fra samme GitHub-repo, begge bak Cloudflare Access
-(engangskode på e-post, navneliste). Gratis: Pages er gratis, Access er gratis for inntil 50 brukere.
+Skrevet 23.09.2026, oppdatert samme kveld. Repoet ligger privat på GitHub
+(`VirtualAiCorp/NMBU-sammenligning`); Cloudflare Pages bygger automatisk ved hver push til `main`.
 
-| Nettsted | Innhold | Bygg | Hvem |
-|---|---|---|---|
-| **Åpent** (f.eks. `nmbu-sammenligning.pages.dev`) | NMBU-forsiden, fem fakulteter, «Alle emner ved NMBU». Handelshøyskolen er ikke med i bunten i det hele tatt. | `VITE_UTEN_HH=1` | NMBU-kretsen |
-| **HH** (f.eks. `nmbu-hh.pages.dev`) | Alt, inkludert Handelshøyskolen | uten variabel | Liten liste |
+**Besluttet 23.09:** ett åpent nettsted, `nmbu-sammenligning.pages.dev`, uten innlogging, siden alt er
+offentlig statistikk. Handelshøyskolen er med, bak passordsperren i appen (`VITE_HH_PASSORD`).
+Sperren er en visningssperre, ikke sikkerhet: HH-dataene ligger i den bygde JavaScript-en.
+Det alternative oppsettet med to nettsteder og Cloudflare Access står under som reserve.
 
-## 1. Repoet på GitHub (én gang)
+| Variant | Bygg | Bruk |
+|---|---|---|
+| **Full** (dagens) | ingen `VITE_UTEN_HH` | Åpent nettsted med HH bak app-passord |
+| **Uten HH** | `VITE_UTEN_HH=1` | Hvis HH en gang skal skilles ut på egen adresse med innlogging |
 
-1. Opprett et **privat** repo på github.com, f.eks. `BOA-sammenligning`, tomt (ingen README).
-2. Lokalt:
-   ```bash
-   cd ~/Desktop/BOA-sammenligning
-   git remote add origin git@github.com:<konto>/BOA-sammenligning.git
-   git push -u origin main
-   ```
-   Repoet er ca. 70 MB (styrepapir-PDF-ene). DBH-cachen er gitignored og går ikke med.
+## 1. Repoet på GitHub (gjort 23.09)
+
+Privat repo `VirtualAiCorp/NMBU-sammenligning`, remote `origin` via SSH. Claude har tillatelse til
+`git -C ~/Desktop/BOA-sammenligning push` (regel i `~/.claude/settings.json`), så nye utvidelser
+rulles ut ved at Claude committer og pusher til `main`; Cloudflare bygger på 1–3 minutter.
+Merk: «Retry deployment» i Cloudflare bygger med innstillingene slik de var, ikke nødvendigvis med
+nye miljøvariabler; en ny push er tryggere.
 
 ## 2. Pages-prosjekt (gjøres to ganger: åpent og HH)
 
@@ -33,11 +35,11 @@ Byggeinnstillinger:
 | Framework preset | None |
 | Build command | `cd kilde && npm ci --legacy-peer-deps && npm run build` |
 | Build output directory | `kilde/dist` |
-| Environment variables | `NODE_VERSION` = `20` (begge). Åpent: `VITE_UTEN_HH` = `1`. HH: `VITE_HH_PASSORD` = valgfritt ekstra passord (kan sløyfes; Access er selve sperren). |
+| Environment variables | `NODE_VERSION` = `20`. `VITE_HH_PASSORD` = passordet for HH-delen. **Ikke** `VITE_UTEN_HH` på det åpne nettstedet (den bygger HH bort). |
 
 **Save and Deploy**. Første bygg tar 2–4 minutter. Hver `git push` til `main` gir nytt bygg.
 
-## 3. Innlogging (Access) per nettsted
+## 3. Innlogging (Access) per nettsted – reserve, ikke i bruk
 
 I Pages-prosjektet → **Settings** → **General** → **Access policy** → **Enable**.
 Første gang ber Cloudflare deg opprette et Zero Trust-team (velg et teamnavn, gratisplan; det kan
