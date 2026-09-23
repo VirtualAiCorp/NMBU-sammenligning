@@ -1,0 +1,180 @@
+{
+  "entryId": "ntnu_ing_fornybar_alesund",
+  "programnavn": "Ingeniør, fornybar energi (bachelor)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.ntnu.no/studier/biforen",
+    "https://www.ntnu.no/studier/biforen/studiets-oppbygning",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=BIFOREN&year=2026"
+  ],
+  "hentet": "2026-09-23",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 142.5,
+  "obligatoriske": [
+    {
+      "emnekode": "FENA1101",
+      "emnenavn": "Fornybar energi grunnkurs 1",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "HMSA1001",
+      "emnenavn": "HMS og laboratoriekurs",
+      "studiepoeng": 0,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IMAA1002",
+      "emnenavn": "Matematikk for ingeniørfag 1",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INGA1002",
+      "emnenavn": "Programmering, numerikk og sikkerhet",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MEKA1101",
+      "emnenavn": "Mekanikk 1",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FENA1102",
+      "emnenavn": "Fornybar energi grunnkurs 2",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FENA1201",
+      "emnenavn": "Elektroteknikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IFYA1002",
+      "emnenavn": "Fysikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IMAA2022",
+      "emnenavn": "Matematikk for ingeniørfag 2 B",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "EXPH0600",
+      "emnenavn": "Examen philosophicum for ingeniørfag",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FENA1011",
+      "emnenavn": "Termodynamikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FENA2101",
+      "emnenavn": "Elektriske energisystemer og mikrogrid",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ISTA1002",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FENA2002",
+      "emnenavn": "Fluidmekanikk og hydraulikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MASA2042",
+      "emnenavn": "Energioverføring og styring av maskinerisystemer",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "SKID2210",
+      "emnenavn": "Havromskonstruksjoner og energiproduksjon",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "I tillegg velges 7,5 sp fra en valggruppe 2. år vår: MEPA2002 Mekatronikk 4 - Systemintegrasjon og design ELLER MEPA2202 Dynamiske systemer. Dette er et reelt valg mellom to emner og er derfor holdt utenfor obligatoriske-lista."
+    },
+    {
+      "emnekode": "FENA2910",
+      "emnenavn": "Bacheloroppgave, fornybar energi",
+      "studiepoeng": 22.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Oppgaven starter som «del 1 av 2» i 3. år høst (forprosjekt, uten eget studiepoengtall i NTNUs studieplandata) og fullføres som «del 2 av 2» i 3. år vår med 22,5 sp, som er studiepoengtallet ført her."
+    },
+    {
+      "emnekode": "INGA2301",
+      "emnenavn": "Ingeniørfaglig systemtenkning",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er NTNUs studieplanverktøy (www.ntnu.no/studier/studieplan#programmeCode=BIFOREN&year=2026), hentet direkte fra JSON-endepunktet (p_p_resource_id=studyplan) via nettleser. Programmet BIFOREN («Fornybar energi - bachelor i ingeniørfag») har felles programkode for alle tre studiesteder, men studiestedet velges som en «Studiested og opptaksveier»-forgrening helt fra 1. semester, med egne emnekoder per studiested (suffiks A=Ålesund, G=Gjøvik, T=Trondheim) og til dels ulikt faglig innhold fra og med 2. år vår. Denne filen dekker kun sporet «Ålesund - Ordinært opptak» (de øvrige opptaksveiene TRES og Y-vei ved Ålesund har i tillegg 0-poengs oppgraderingsemner i matematikk/fysikk/norsk, men ellers samme obligatoriske emner). I motsetning til Trondheim, som deler seg i tre valgbare studieretninger fra 2. år vår (se ntnu_ing_fornybar_trondheim.json), har Ålesund kun én fast faglig profil («Maritime og landbaserte energisystemer», uten valgbar studieretning), og er derfor ikke ført med spesialiseringer. 3. år høst har i tillegg en valgbar emnepool (VA: BYGA2352, FENA2320, FENA2330, IMAA3011, IMAA3012, MEPA2200, MEPA2315; VB: SKID2303 studiepoenggivende praksis) som fyller opp semesteret sammen med bacheloroppgavens forprosjekt; disse er ikke tatt med i obligatoriske-lista siden det er fritt valg. De 17 navngitte obligatoriske emnene/elementene summerer til 142,5 sp av totalt 180 sp; resterende 37,5 sp er valgfrie (7,5 sp valg i 2. år vår mellom MEPA2002/MEPA2202, og ca. 30 sp valgfritt/praksis i 3. år høst)."
+}

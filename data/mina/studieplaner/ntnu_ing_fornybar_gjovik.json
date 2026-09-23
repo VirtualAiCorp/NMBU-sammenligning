@@ -1,0 +1,180 @@
+{
+  "entryId": "ntnu_ing_fornybar_gjovik",
+  "programnavn": "Ingeniør, fornybar energi (bachelor)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.ntnu.no/studier/biforen",
+    "https://www.ntnu.no/studier/biforen/studiets-oppbygning",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=BIFOREN&year=2026"
+  ],
+  "hentet": "2026-09-23",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 150,
+  "obligatoriske": [
+    {
+      "emnekode": "ELEG1001",
+      "emnenavn": "Elektriske kretser - introduksjon",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FENG1101",
+      "emnenavn": "Fornybar energi grunnkurs 1",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IMAG1002",
+      "emnenavn": "Matematikk for ingeniørfag 1",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INGG1002",
+      "emnenavn": "Programmering, numerikk og sikkerhet",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ELEG1002",
+      "emnenavn": "Elektriske kretser - modellering og analyse",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FENG1102",
+      "emnenavn": "Fornybar energi grunnkurs 2",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IFYG1002",
+      "emnenavn": "Fysikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IMAG2022",
+      "emnenavn": "Matematikk for ingeniørfag 2 B",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "EXPH0600",
+      "emnenavn": "Examen philosophicum for ingeniørfag",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FENG1011",
+      "emnenavn": "Termodynamikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ISTG1002",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MEKG1101",
+      "emnenavn": "Mekanikk 1",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FENG2002",
+      "emnenavn": "Fluidmekanikk og hydraulikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FENG2023",
+      "emnenavn": "Livsløpsvurderinger av energisystem",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FENG2100",
+      "emnenavn": "Anvendt solenergi",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MASG2200",
+      "emnenavn": "Materialteknikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FENG2910",
+      "emnenavn": "Bacheloroppgave, fornybar energi",
+      "studiepoeng": 22.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Oppgaven starter som «del 1 av 2» i 3. år høst (forprosjekt, uten eget studiepoengtall i NTNUs studieplandata) og fullføres som «del 2 av 2» i 3. år vår med 22,5 sp, som er studiepoengtallet ført her."
+    },
+    {
+      "emnekode": "INGG2301",
+      "emnenavn": "Ingeniørfaglig systemtenkning",
+      "studiepoeng": 7.5,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er NTNUs studieplanverktøy (www.ntnu.no/studier/studieplan#programmeCode=BIFOREN&year=2026), hentet direkte fra JSON-endepunktet (p_p_resource_id=studyplan) via nettleser. Programmet BIFOREN («Fornybar energi - bachelor i ingeniørfag») har felles programkode for alle tre studiesteder, men studiestedet velges som en «Studiested og opptaksveier»-forgrening helt fra 1. semester, med egne emnekoder per studiested (suffiks A=Ålesund, G=Gjøvik, T=Trondheim) og til dels ulikt faglig innhold fra og med 2. år vår. Denne filen dekker kun sporet «Gjøvik - Ordinært opptak» (de øvrige opptaksveiene TRES og Y-vei ved Gjøvik har i tillegg 0-poengs oppgraderingsemner i matematikk/fysikk/norsk, men ellers samme obligatoriske emner). Gjøvik har - i likhet med Ålesund, men ulikt Trondheim - kun én fast faglig profil («Anvendt solenergi», uten valgbar studieretning), og er derfor ikke ført med spesialiseringer; 2. år vår er her 100 % obligatorisk (ingen valgfritt), til forskjell fra Ålesund. 3. år høst har en valgbar emnepool (FENG2020, FENG2101, FENG2314, IELEG2118, IMAG3011, IMAG3012) som fyller opp semesteret sammen med bacheloroppgavens forprosjekt; disse er ikke tatt med i obligatoriske-lista siden det er fritt valg. De 17 navngitte obligatoriske emnene/elementene summerer til 150 sp av totalt 180 sp; resterende 30 sp er valgfrie, i sin helhet i 3. år høst."
+}

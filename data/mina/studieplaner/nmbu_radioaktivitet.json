@@ -1,0 +1,152 @@
+{
+  "entryId": "nmbu_radioaktivitet",
+  "programnavn": "Radioaktivitet og miljø (bachelor)",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.nmbu.no/studier/bachelor/radioaktivitet-og-miljo",
+    "https://static02.nmbu.no/mina/studier/B-RAMI.php"
+  ],
+  "hentet": "2026-09-23",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 130,
+  "obligatoriske": [
+    {
+      "emnekode": "MILJO100",
+      "emnenavn": "Miljø, naturressurser og radioaktivitet",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "10 sp totalt, fordelt med 5 sp i augustblokk (før høstsemesteret) og 5 sp i høstparallell, jf. rutenettets kolonnebredder og NMBUs emnesøk."
+    },
+    {
+      "emnekode": "MATH-INF100",
+      "emnenavn": "Beregningsbasert matematikk i praksis",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen gir valget mellom MATH-INF100 og MATH121 (Kalkulus); MATH121 anbefales for studenter som har matematikk R2 fra videregående skole."
+    },
+    {
+      "emnekode": "GEO100",
+      "emnenavn": "Geologi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FYS100",
+      "emnenavn": "Fysikk og natur",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen gir valget mellom FYS100 og FYS101 (Mekanikk); FYS101 anbefales for studenter som har fysikk 1 og matematikk R2 fra videregående skole."
+    },
+    {
+      "emnekode": "KJM100",
+      "emnenavn": "Generell kjemi",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "PHI102",
+      "emnenavn": "Examen philosophicum - Engelsk versjon",
+      "studiepoeng": 10,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanen angir PHI102 som hovedalternativ i vårsemesteret, men PHI102 kan erstattes av PHI100 (Examen philosophicum) eller PHI101 (Examen philosophicum - seminarversjon), som begge tas på høsten."
+    },
+    {
+      "emnekode": "BIO100",
+      "emnenavn": "Cellebiologi",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "LAD102",
+      "emnenavn": "GIS - praktisk introduksjon",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "RAD200",
+      "emnenavn": "Nukleær industri, anlegg og aktiviteter",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "STAT100",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Studieplanens rutenett plasserer STAT100 i høstparallellen 2. år, men en fotnote presiserer at emnet kan tas høst og vår."
+    },
+    {
+      "emnekode": "RAD205",
+      "emnenavn": "Atomberedskap",
+      "studiepoeng": 5,
+      "aar": 2,
+      "semester": "januarblokk",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "KJM120",
+      "emnenavn": "Uorganisk kjemi",
+      "studiepoeng": 10,
+      "aar": 2,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "RAD210",
+      "emnenavn": "Radioaktivitet og strålevern",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MILJO200",
+      "emnenavn": "Forurensning og miljø",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "MINA250",
+      "emnenavn": "Tverrfaglig konsekvensanalyse",
+      "studiepoeng": 10,
+      "aar": 3,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": "10 sp totalt, fordelt med 5 sp i januarblokk (før vårsemesteret) og 5 sp i vårparallell, jf. rutenettets kolonnebredder og NMBUs emnesøk."
+    }
+  ],
+  "spesialiseringer": [],
+  "merknad": "Kilde er NMBUs fargekodede rutenett-studieplan for kull 2026 (static02.nmbu.no/mina/studier/B-RAMI.php), linket fra programsiden nmbu.no/studier/bachelor/radioaktivitet-og-miljo. Rutenettets kolonner er 5 sp brede, og hvert emnes reelle studiepoeng er lest ut fra cellens colspan-verdi (colspan × 5 sp), kryssjekket mot studiepoengtallet på nmbu.no/emne/<kode> for samtlige emner (Augustblokk/Januarblokk/Juniblokk-cellene bruker alltid full radbredde av rene formateringshensyn og er derfor IKKE brukt til å lese av studiepoeng med mindre kilden selv oppgir tallet, f.eks. «MILJØ100 - 5 stp» og «RAD205 - 5 stp»; MILJØ100 og MINA250 er delt mellom to blokker og er kryss-sjekket til å være 10 sp hver totalt via nmbu.no/emne). De 14 navngitte obligatoriske emnene summerer til 130 sp av totalt 180 sp. De resterende 50 sp er valgfrie: studieplanen lister to ikke-obligatoriske eksempelplaner (Deponering i fjell, Økotoksikologi) uten faste obligatoriske emnelister, samt en liste over «anbefalte valgfrie emner». MATH-INF100/MATH121 (1. år høst) og FYS100/FYS101 (1. år vår) er reelle valg avhengig av matematikk-/fysikkbakgrunn fra videregående, og er hver ført som én linje med merknad, tilsvarende praksis for REAL101/MATH-INF100 i nmbu_skogfag.json. PHI102 (Examen philosophicum - Engelsk versjon) er satt opp som hovedalternativet i rutenettet for vårsemesteret, men kan erstattes av PHI100 eller PHI101 som tas på høsten; ført som én linje (PHI102) med merknad. STAT100 er plassert i høstparallellen 2. år i rutenettet, med fotnote om at emnet kan tas høst eller vår; beholdt som obligatorisk med aar/semester fra rutenettets primærplassering. Emnenavn er hentet fra NMBUs emnesøk (nmbu.no/emne/<kode>). Programmet er nytt (oppstart 2024) og har derfor bare et fåtall kull; studieplanen for kull 2026 er hentet i sin helhet siden alle tre studieår allerede er publisert i rutenettverktøyet."
+}

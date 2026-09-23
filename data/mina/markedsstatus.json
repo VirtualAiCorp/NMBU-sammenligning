@@ -31,7 +31,7 @@
         "Ansattorganisasjonen Akademikerne peker i sitt innspill til samme strategiprosess på at utdanningene ved Evenstad og Blæstad er blant «merkevarene» INN allerede er kjent for, men advarer samtidig om synkende søkertall og svak inntakskvalitet ved flere studiesteder i den desentrale strukturen."
       ],
       "oppsummering": "INNs fakultet for anvendt økologi, landbruksfag og bioteknologi (ALB), som huser Evenstad (skogfag/utmark/vilt) og Blæstad (landbruk), går inn i en periode med tilnærmet flatt budsjett og betydelig bemanningsreduksjon (fra 103,6 til 85,3 årsverk 2026-2028), samtidig som instituttet satser strategisk på å bygge opp masterprogrammet i skog med øremerkede «grønn forskning»-midler og har hentet inn en anerkjent skogfagprofessor (Per Angelstam) i en kallelsesstilling. Instituttenes egne strategiinnspill peker i retning nasjonal matberedskap, ressursforvaltning og samfunnssikkerhet som ALBs viktigste profileringsområder fremover, mens organisasjonen selv advarer om synkende søkertall ved flere studiesteder.",
-      "relevanteProgram": ["inn_skogfag", "inn_utmark_skog", "inn_utmarksforvaltning", "inn_anvendt_okologi2", "inn_anvendt_okologi_nf2"]
+      "relevanteProgram": ["inn_skogfag", "inn_utmark_skog", "inn_utmarksforvaltning", "inn_anvendt_okologi2", "inn_anvendt_okologi_nf2", "inn_skogforvaltning2"]
     },
     {
       "id": "nord",
@@ -222,36 +222,106 @@
       "id": "uib",
       "name": "UiB",
       "fullName": "Universitetet i Bergen",
-      "enhet": "Fakultet for naturvitenskap og teknologi / Institutt for geovitenskap",
-      "styresider": [],
-      "status": "pending",
-      "dokumenter": [],
-      "punkter": [],
-      "oppsummering": "",
+      "enhet": "Fakultet for naturvitenskap og teknologi (tidligere Det matematisk-naturvitenskapelige fakultet) / Institutt for geovitenskap",
+      "styresider": ["https://www.uib.no/ledelsen", "https://ekstern.filer.uib.no/ledelse/universitetsstyret/"],
+      "status": "complete",
+      "dokumenter": [
+        {
+          "label": "S 51/24 Endring av navn for Det matematisk-naturvitenskapelige fakultet til Fakultet for naturvitenskap og teknologi (inkl. institutthøring, herunder Institutt for geovitenskap)",
+          "url": "https://ekstern.filer.uib.no/ledelse/universitetsstyret/2024/2024-06-13/S_51-24Endring-av-navn-for-Det-matematisk-naturvitenskapelige-fakultet_til-Fakultet-for-naturvitenskap-og-teknologi.pdf",
+          "filnavn": "UiB_S51-24_Navneendring_MN.pdf",
+          "dato": "2024-06-13",
+          "storrelseMB": 5.69,
+          "lastetNed": true
+        },
+        {
+          "label": "S 103/25 Endringer i UiBs studieportefølje 2026 og opptaksrammer 2026-2027 (inkl. opptakstall Geovitenskap bachelor/master)",
+          "url": "https://ekstern.filer.uib.no/ledelse/universitetsstyret/2025/2025-11-27/S_103-25Endringer-i-UiBs-studieportef%C3%B8lje2026-og-opptaksrammer2026-27.pdf",
+          "filnavn": "UiB_S103-25_Studieportefolje2026.pdf",
+          "dato": "2025-11-27",
+          "storrelseMB": 0.29,
+          "lastetNed": true
+        }
+      ],
+      "punkter": [
+        "I opptaksrammene for 2026/2027 (sak 103/25, vedtatt 27.11.2025) holdes alle geovitenskaps-programmene uendret mens fysikk kuttes kraftig: bachelor Geovitenskap, retning geologi beholder 38 plasser, retning geofysikk beholder 12 plasser, det integrerte masterprogrammet (sivilingeniør) Geofysikk – vær, hav og klima beholder 20 plasser, og det toårige masterprogrammet i Geovitenskap beholder 52 plasser — samtidig som bachelor i fysikk kuttes fra 52 til 26 plasser (-50 prosent) og masteren i fysikk fra 24 til 13 plasser, for å finansiere det nye sivilingeniørprogrammet i kvanteteknologi.",
+        "I høringen om fakultetets navneendring i 2024 (sak 51/24) var Institutt for geovitenskap, sammen med Matematisk institutt, det eneste instituttet som primært ønsket å videreføre det gamle navnet «Det matematisk-naturvitenskapelige fakultet» framfor å ta inn «teknologi» i navnet — i motsetning til Geofysisk institutt, Institutt for biovitenskap, Institutt for fysikk og teknologi og Institutt for informatikk, som alle støttet en teknologiorientert profilering. Geovitenskap markerte dermed en tydeligere naturvitenskapelig/geofaglig identitet enn resten av fakultetet.",
+        "Institutt for geovitenskap støttet subsidiært alternativ C («Fakultet for naturvitenskap og teknologi», det navnet som til slutt ble vedtatt) dersom navneendring uansett skulle skje, men var ikke pådriver for endringen slik flertallet av de andre instituttene var.",
+        "UiBs samlede opptaksramme for grunnstudier ved fakultetet gikk ned fra 849 til 843 plasser fra 2025/26 til 2026/27, mens rammen for integrerte masterprogrammer (sivilingeniør mv.) økte fra 238 til 258 — en økning som i praksis kommer fra det nye kvanteteknologiprogrammet alene og ikke fra geofagene."
+      ],
+      "oppsummering": "UiBs Institutt for geovitenskap kommer uberørt gjennom fakultetets store fysikk-til-kvanteteknologi-omprioritering i 2025/26: både geologi- og geofysikkretningene på bachelor, sivilingeniørprogrammet i geofysikk (vær, hav og klima) og den toårige masteren i geovitenskap beholder uendrede opptaksrammer. Instituttet markerte seg samtidig i 2024 som det tydeligste geofaglige/naturvitenskapelige motstemme til fakultetets teknologi-orienterte navneendring, og var sammen med matematikkinstituttet det eneste instituttet som primært ønsket å beholde det gamle fakultetsnavnet.",
       "relevanteProgram": ["uib_geovitenskap", "uib_geovitenskap2"]
     },
     {
       "id": "ntnu",
       "name": "NTNU",
       "fullName": "Norges teknisk-naturvitenskapelige universitet",
-      "enhet": "Fakultet for naturvitenskap (NV) / Fakultet for ingeniørvitenskap (IV, energi) / Institutt for geovitenskap og petroleum",
-      "styresider": [],
-      "status": "pending",
-      "dokumenter": [],
-      "punkter": [],
-      "oppsummering": "",
-      "relevanteProgram": ["ntnu_geologi", "ntnu_biologi2", "ntnu_naturressurs2", "ntnu_miljotoks2", "ntnu_industriell_okologi2", "ntnu_baerekraftig_energi2"]
+      "enhet": "Fakultet for naturvitenskap (NV) / Institutt for biologi (IBI) — Fakultetsstyret IV og geovitenskap/energi-instituttene publiserer sakspapirer i et lukket e-innsyn-grensesnitt (einnsyn.ntnu.no) som ikke lot seg hente ut",
+      "styresider": ["https://www.ntnu.no/adm/styret/saker", "https://i.ntnu.no/wiki/-/wiki/Norsk/Fakultetsstyret+ved+NV-fakultetet"],
+      "status": "partial",
+      "dokumenter": [
+        {
+          "label": "Fakultetsstyret NV – møteinnkalling med saksvedlegg 05.03.2026 (inkl. orienteringssak om instituttstrategier 2026-2035, herunder ny strategi for Institutt for biologi/IBI)",
+          "url": "https://i.ntnu.no/documents/portlet_file_entry/1305837853/Moteinnkalling+NV-Fakstyret+samlefil+5+mars+2026.pdf/a869055d-0760-a30a-4b4e-28b70bd55fb5",
+          "filnavn": "NTNU_NV_Innkalling_05.03.2026.pdf",
+          "dato": "2026-03-05",
+          "storrelseMB": 1.33,
+          "lastetNed": true
+        },
+        {
+          "label": "NTNU-styret – sakspapirer 10.09.2026 (utviklingsavtale KD 2027-2030, etatsstyring 2026, innovasjonsstrategi)",
+          "url": "https://www.ntnu.no/adm/styret/saker",
+          "filnavn": "NTNU_Styret_Sakspapirer_10.09.2026.pdf",
+          "dato": "2026-09-10",
+          "storrelseMB": 11.42,
+          "lastetNed": true
+        }
+      ],
+      "punkter": [
+        "Institutt for biologi (IBI) ved NV-fakultetet vedtok 28.01.2026 en ny strategi 2026-2035 der instituttet fra august 2025 er omorganisert i tre divisjoner: Biodiversity, Ecology and Evolution; Cell and Organismal Biology; og Marine Sciences. IBI har om lag 140 ansatte og utdanner rundt 500 studenter årlig, og inngår sammen med Institutt for biologiske fag Ålesund (IBA), Institutt for bioteknologi og matvitenskap (IBT) og Institutt for kjemi og bioingeniørfag (IKB) i NVs «biocluster».",
+        "IBIs uttalte visjon for 2035 er at instituttets studieprogrammer skal være «blant de mest attraktive i Norden» og trekke internasjonale studenter, med en eksplisitt ambisjon om å forbli «det naturlige førstevalget for kommende studenter» innen sine fagfelt nasjonalt — en direkte konkurranseerklæring mot andre norske biologi- og naturforvaltningsutdanninger, inkludert NMBUs.",
+        "IBIs strategi definerer bærekraftig forvaltning av biologisk mangfold og økosystemtjenester, samt utdanning av «Norges mest kompetente biologer», som en av tre hovedambisjoner for perioden, med konkrete tiltak som styrket akademisk språk (norsk og engelsk), digital og bærekraftskompetanse i studieporteføljen, og flere tverrfaglige samarbeidsarenaer med andre institutter og fakulteter.",
+        "Instituttet trekker fram sin unike kombinasjon av terrestrisk og akvatisk biologikompetanse og sine langvarige feltstudier (bl.a. på elg, spurv, skarv, hval og plankton i Trøndelag og Arktis) som et konkurransefortrinn, og vil bruke dette til å styrke sin rolle i overgangen til et «naturpositivt» samfunn.",
+        "NV-fakultetets øvrige instituttstrategier (biologiske fag Ålesund, bioteknologi/matvitenskap, fysikk, kjemisk prosessteknologi, materialteknologi) ble vedtatt i samme runde, mens Institutt for kjemi og bioingeniørfag (det nylig sammenslåtte IKB) ennå ikke hadde egen strategi klar per 05.03.2026.",
+        "Fakultetsstyret IV (som eier NTNUs energi- og geovitenskaps-/petroleumsutdanninger, herunder Naturressursforvaltning-masteren, programmene i geologi, miljøtoksikologi/naturmiljøkjemi, industriell økologi, bærekraftig energi-masteren og de tre studiestedene for bachelor i ingeniør, fornybar energi i Trondheim, Gjøvik og Ålesund) publiserer sine sakspapirer i et lukket e-innsyn-grensesnitt (einnsyn.ntnu.no) som ikke lot seg hente ut i dette arbeidet — samme begrensning som gjorde REALTEK-vurderingen av NTNU delvis."
+      ],
+      "oppsummering": "NV-fakultetets Institutt for biologi (IBI) har vedtatt en ambisiøs ny strategi 2026-2035 med en eksplisitt målsetting om å bli Nordens mest attraktive biologiutdanning og «Norges» fremste leverandør av biologer, bygget på en ny divisjonsstruktur fra august 2025 og en klar profil på terrestrisk/akvatisk biologi og naturforvaltning i vid forstand — et direkte konkurrerende signal mot NMBUs økologi- og naturforvaltningsfag. De øvrige MINA-relevante programmene ved NTNU (naturressursforvaltning, geologi, miljøtoksikologi, industriell økologi, bærekraftig energi) ligger under Fakultetsstyret IV og tilhørende institutter, som publiserer sakspapirer i et lukket e-innsynsgrensesnitt som ikke lot seg hente ut, så vurderingen er merket delvis — samme begrensning som i REALTEK-oversikten av NTNU.",
+      "relevanteProgram": ["ntnu_geologi", "ntnu_biologi2", "ntnu_naturressurs2", "ntnu_miljotoks2", "ntnu_industriell_okologi2", "ntnu_baerekraftig_energi2", "ntnu_ing_fornybar_trondheim", "ntnu_ing_fornybar_gjovik", "ntnu_ing_fornybar_alesund"]
     },
     {
       "id": "hvl",
       "name": "HVL",
       "fullName": "Høgskulen på Vestlandet",
-      "enhet": "Fakultet for ingeniør- og naturvitskap (FIN), no del av Fakultet for teknologi, miljø- og samfunnsvitskap (FTMS) frå 1.1.2025",
-      "styresider": [],
-      "status": "pending",
-      "dokumenter": [],
-      "punkter": [],
-      "oppsummering": "",
+      "enhet": "Fakultet for ingeniør- og naturvitskap (FIN), no del av Fakultet for teknologi, miljø- og samfunnsvitskap (FTMS) frå 1.1.2025 — miljø og naturvitskap på campus Sogndal",
+      "styresider": ["https://opengov.360online.com/Meetings/hvl-uninett/Boards/Details/302309"],
+      "status": "complete",
+      "dokumenter": [
+        {
+          "label": "FTMS Fakultetsråd – innkalling 12.02.2026 (Ingeniørløftet, økonomistatus, ph.d.-tilbod, orientering om kronprinsbesøk ved miljø og naturvitskap Sogndal)",
+          "url": "https://opengov.360online.com/Meetings/hvl-uninett/File/Details/1275263.PDF",
+          "filnavn": "HVL_FTMS_Innkalling_12.02.2026.pdf",
+          "dato": "2026-02-12",
+          "storrelseMB": 0.92,
+          "lastetNed": true
+        },
+        {
+          "label": "FTMS Fakultetsråd – innkalling 21.05.2026 (arealprosessar Haugesund/Bergen, søkartal 2026 inkl. Geologi og geofare og Master i bærekraftig energiteknologi, KI-emne, NOKUT-besøk)",
+          "url": "https://opengov.360online.com/Meetings/hvl-uninett/File/Details/1303215.pdf",
+          "filnavn": "HVL_FTMS_Innkalling_21.05.2026.pdf",
+          "dato": "2026-05-21",
+          "storrelseMB": 1.07,
+          "lastetNed": true
+        }
+      ],
+      "punkter": [
+        "I søkartalet for 2026 (sak 10/26, 21.05.2026) faller bachelor i Geologi og geofare i Sogndal i søkertall til tross for flere planlagte studieplasser: 30 plasser i 2026 (opp fra 25 i 2025), men totalt 197 søkere (ned fra 216) og 36 førstevalgssøkere (ned fra 40, -10 prosent). Antall kvalifiserte førstevalgssøkere per studieplass er 0,96 — under 1, altså færre kvalifiserte førstevalgssøkere enn planlagte plasser.",
+        "Master i bærekraftig energiteknologi (sivilingeniør) i Bergen viser samme negative mønster i den foreløpige april-tellingen for 2026: 72 søkere mot 84 i hele 2025-syklusen (endelig tall), en nedgang på 12 førstevalgssøkere. Den engelskspråklige EU-varianten (Sustainable Energy Technology) faller enda brattere, fra 28 til 13 søkere.",
+        "Til sammenligning vokser fakultetets nyere master i klima og miljøforvaltning i Sogndal markert: 51 søkere i den foreløpige 2026-tellingen mot 38 i hele 2025-syklusen, en økning på 13 førstevalgssøkere — programmet har også egne løp for søkere med og uten EU/EØS-bakgrunn.",
+        "Ingeniør, energiteknologi i Bergen (et beslektet, men separat fornybar energi-relatert ingeniørprogram) hadde det svakeste resultatet av alle FTMS-programmene i Bergen i 2026-søkartallet: førstevalgssøkere falt 38 prosent (fra 34 til 21), og kvalifiserte førstevalgssøkere per studieplass endte på bare 0,46.",
+        "Fakultetsrådet ble i møtet 12.02.2026 orientert om at kronprinsen besøkte fagmiljøet og studentene ved miljø og naturvitskap på campus Sogndal, med feltarbeid innen landskapsplanlegging ved Haukåsmyra for å studere myrvegetasjon — en synlig markering av fagmiljøets samfunnsprofil.",
+        "Masterprogrammet Climate Change Management (den engelskspråklige varianten av klima- og miljøforvaltningsmasteren) har i samarbeid med Opera Nordfjord og produksjonsselskapet SAUM i København utviklet operaen «BLÅ» om klimakrisen — et formidlingsprosjekt som kombinerer fagmiljøets klimaforskning med kulturformidling."
+      ],
+      "oppsummering": "HVLs miljø- og naturfaglige programmer i Sogndal viser et delt bilde: bachelor i geologi og geofare og masteren i bærekraftig energiteknologi i Bergen taper begge søkere i 2026, mens den nyere masteren i klima og miljøforvaltning i Sogndal vokser markert og fagmiljøet der får synlig oppmerksomhet gjennom kongelig besøk og et kulturformidlingsprosjekt (operaen «BLÅ»). Samlet tyder tallene på at HVL lykkes bedre med å rekruttere til sine nyere, tverrfaglige klima-/miljøforvaltningstilbud enn til de mer tradisjonelle geologi- og energiteknologiprogrammene, som for øvrig ikke er sammenlignet direkte med NMBU i dette datasettet (default false i programkartet).",
       "relevanteProgram": ["hvl_geologi_geofare", "hvl_fornybar", "hvl_energiteknologi2"]
     }
   ]

@@ -1,0 +1,277 @@
+{
+  "entryId": "ntnu_ing_fornybar_trondheim",
+  "programnavn": "Ingeniør, fornybar energi (bachelor)",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "studieplanAar": "2026/2027",
+  "kilder": [
+    "https://www.ntnu.no/studier/biforen",
+    "https://www.ntnu.no/studier/biforen/studiets-oppbygning",
+    "https://www.ntnu.no/studier/studieplan#programmeCode=BIFOREN&year=2026"
+  ],
+  "hentet": "2026-09-23",
+  "totaltStudiepoeng": 180,
+  "obligatoriskeStudiepoeng": 90,
+  "obligatoriske": [
+    {
+      "emnekode": "ELET1001",
+      "emnenavn": "Elektriske kretser - introduksjon",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FENT1101",
+      "emnenavn": "Fornybar energi grunnkurs 1",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IMAT1002",
+      "emnenavn": "Matematikk for ingeniørfag 1",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "INGT1002",
+      "emnenavn": "Programmering, numerikk og sikkerhet",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ELET1002",
+      "emnenavn": "Elektriske kretser - modellering og analyse",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FENT1102",
+      "emnenavn": "Fornybar energi grunnkurs 2",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IFYT1002",
+      "emnenavn": "Fysikk",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "IMAT2022",
+      "emnenavn": "Matematikk for ingeniørfag 2 B",
+      "studiepoeng": 7.5,
+      "aar": 1,
+      "semester": "vår",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "EXPH0600",
+      "emnenavn": "Examen philosophicum for ingeniørfag",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "FENT1011",
+      "emnenavn": "Termodynamikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    },
+    {
+      "emnekode": "ISTT1002",
+      "emnenavn": "Statistikk",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": "Fra og med 2. år vår («Valg av studieretning») deler programmet seg i tre studieretninger (VVS - Energieffektive bygninger, Energilagring, Vann- og vindenergi); disse fire emnene i 1. og 2. år høst er felles og obligatoriske for alle tre. Studieretningsspesifikke obligatoriske emner er ført under spesialiseringer."
+    },
+    {
+      "emnekode": "MEKT1101",
+      "emnenavn": "Mekanikk 1",
+      "studiepoeng": 7.5,
+      "aar": 2,
+      "semester": "høst",
+      "dbhEmnekoder": [],
+      "merknad": null
+    }
+  ],
+  "spesialiseringer": [
+    {
+      "navn": "VVS - Energieffektive bygninger",
+      "obligatoriske": [
+        {
+          "emnekode": "FENT2002",
+          "emnenavn": "Fluidmekanikk og hydraulikk",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FENT2031",
+          "emnenavn": "Ventilasjonsteknikk",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FENT2032",
+          "emnenavn": "Varme- og kjøleteknikk",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FENT2033",
+          "emnenavn": "Sanitærteknikk og praktisk VVS-teknikk",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FENT2910",
+          "emnenavn": "Bacheloroppgave, fornybar energi",
+          "studiepoeng": 22.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "Oppgaven starter som «del 1 av 2» i 3. år høst (forprosjekt, uten eget studiepoengtall i NTNUs studieplandata) og fullføres som «del 2 av 2» i 3. år vår med 22,5 sp, som er studiepoengtallet ført her."
+        },
+        {
+          "emnekode": "INGT2301",
+          "emnenavn": "Ingeniørfaglig systemtenkning",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Energilagring",
+      "obligatoriske": [
+        {
+          "emnekode": "FENT2002",
+          "emnenavn": "Fluidmekanikk og hydraulikk",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FENT2010",
+          "emnenavn": "Varme og massetransport",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "FENT2011",
+          "emnenavn": "Energilagring 1",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "I tillegg velges 7,5 sp valgbare emner 2. år vår (FENT2023, FENT2031, FENT2032, FENT2033, IELET2120), ikke tatt med her da dette er fritt valg."
+        },
+        {
+          "emnekode": "FENT2910",
+          "emnenavn": "Bacheloroppgave, fornybar energi",
+          "studiepoeng": 22.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "Oppgaven starter som «del 1 av 2» i 3. år høst (forprosjekt, uten eget studiepoengtall i NTNUs studieplandata) og fullføres som «del 2 av 2» i 3. år vår med 22,5 sp, som er studiepoengtallet ført her."
+        },
+        {
+          "emnekode": "INGT2301",
+          "emnenavn": "Ingeniørfaglig systemtenkning",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    },
+    {
+      "navn": "Vann- og vindenergi",
+      "obligatoriske": [
+        {
+          "emnekode": "FENT2002",
+          "emnenavn": "Fluidmekanikk og hydraulikk",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        },
+        {
+          "emnekode": "IELET2120",
+          "emnenavn": "Elektriske Maskiner og Elektromagnetisk Energiomforming",
+          "studiepoeng": 7.5,
+          "aar": 2,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "I tillegg velges 15 sp valgbare emner 2. år vår (FENT2010, FENT2011, FENT2023, FENT2031, FENT2032, FENT2033), ikke tatt med her da dette er fritt valg."
+        },
+        {
+          "emnekode": "FENT2910",
+          "emnenavn": "Bacheloroppgave, fornybar energi",
+          "studiepoeng": 22.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": "Oppgaven starter som «del 1 av 2» i 3. år høst (forprosjekt, uten eget studiepoengtall i NTNUs studieplandata) og fullføres som «del 2 av 2» i 3. år vår med 22,5 sp, som er studiepoengtallet ført her."
+        },
+        {
+          "emnekode": "INGT2301",
+          "emnenavn": "Ingeniørfaglig systemtenkning",
+          "studiepoeng": 7.5,
+          "aar": 3,
+          "semester": "vår",
+          "dbhEmnekoder": [],
+          "merknad": null
+        }
+      ]
+    }
+  ],
+  "merknad": "Kilde er NTNUs studieplanverktøy (www.ntnu.no/studier/studieplan#programmeCode=BIFOREN&year=2026), hentet direkte fra JSON-endepunktet (p_p_resource_id=studyplan) via nettleser. Programmet BIFOREN («Fornybar energi - bachelor i ingeniørfag») har felles programkode for alle tre studiesteder, men studiestedet velges som en «Studiested og opptaksveier»-forgrening helt fra 1. semester, med egne emnekoder per studiested (suffiks A=Ålesund, G=Gjøvik, T=Trondheim) og til dels ulikt faglig innhold fra og med 2. år vår. Denne filen dekker kun sporet «Bachelor i ingeniørfag, fornybar energi - Trondheim» (ett samlet opptak, uten TRES/Y-vei-varianter slik Ålesund og Gjøvik har). Til forskjell fra Ålesund og Gjøvik, som hver har én fast faglig profil uten valg, deler Trondheim seg fra og med 2. år vår («Valg av studieretning») i tre studieretninger: VVS - Energieffektive bygninger (2. år vår 100 % obligatorisk, 30 sp), Energilagring (22,5 sp obligatorisk + 7,5 sp valgfritt i 2. år vår) og Vann- og vindenergi (15 sp obligatorisk + 15 sp valgfritt i 2. år vår); disse er ført under spesialiseringer. Alle tre studieretninger har samme obligatoriske struktur i 3. år (bacheloroppgave FENT2910 + INGT2301), men ulik valgfri emnepool i 3. år høst. obligatoriskeStudiepoeng (90 sp) dekker kun de emnene som er felles for alle tre studieretninger (1. år og 2. år høst); hver studieretning legger i tillegg til egne obligatoriske emner (45-60 sp, se spesialiseringer) samt valgfrie emner, slik at summen blir 180 sp for alle tre retningene (VVS: 90+60=150 sp obligatorisk, 30 sp valgfritt; Energilagring: 90+52,5=142,5 sp obligatorisk, 37,5 sp valgfritt; Vann- og vindenergi: 90+45=135 sp obligatorisk, 45 sp valgfritt)."
+}
