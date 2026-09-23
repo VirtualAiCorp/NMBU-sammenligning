@@ -33,7 +33,7 @@ YEARS = ["2021", "2022", "2023", "2024", "2025", "2026"]
 CACHE = os.path.join(ROOT, "data", "nmbu", "kilder", "dbh571")
 KILDE = ("DBH/HKDIR tabell 571 «Gjennomsnittlige opptakspoeng for søkere», opptakstype N (Samordna opptak), "
          "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData")
-FAKULTETER = ["landsam", "realtek", "kbm", "mina", "biovit", "vet"]
+FAKULTETER = ["landsam", "realtek", "kbm", "mina", "biovit", "vet", "hh"]
 
 
 def ctx():

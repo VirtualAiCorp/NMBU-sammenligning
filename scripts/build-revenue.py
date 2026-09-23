@@ -29,7 +29,7 @@ ROOT = Path(__file__).resolve().parent.parent
 spec = importlib.util.spec_from_file_location("blc", ROOT / "scripts" / "build-landsam-courses.py")
 blc = importlib.util.module_from_spec(spec); spec.loader.exec_module(blc)
 CACHE = ROOT / "data" / "nmbu" / "kilder" / "dbh-finansiering"
-FAKULTETER = ["landsam", "realtek", "kbm", "mina", "biovit", "vet"]
+FAKULTETER = ["landsam", "realtek", "kbm", "mina", "biovit", "vet", "hh"]
 AAR = ["2023", "2024", "2025"]
 
 

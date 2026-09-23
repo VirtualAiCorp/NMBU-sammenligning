@@ -1,0 +1,704 @@
+{
+  "hentet": "2026-09-23",
+  "institusjoner": {
+    "1173": "Norges miljø- og biovitenskapelige universitet",
+    "1240": "Norges Handelshøyskole",
+    "1150": "Norges teknisk-naturvitenskapelige universitet",
+    "1175": "OsloMet – storbyuniversitetet",
+    "1171": "Universitetet i Agder",
+    "1130": "UiT Norges arktiske universitet",
+    "1160": "Universitetet i Stavanger",
+    "1176": "Universitetet i Sørøst-Norge",
+    "1177": "Universitetet i Innlandet",
+    "1174": "Nord universitet",
+    "0238": "Høgskulen på Vestlandet",
+    "8223": "NLA Høgskolen",
+    "0256": "Høgskolen i Østfold",
+    "0232": "Høgskolen i Molde",
+    "1110": "Universitetet i Oslo",
+    "1120": "Universitetet i Bergen",
+    "8241": "Handelshøyskolen BI",
+    "0264": "Høgskolen i Innlandet (institusjonskode før 2025)"
+  },
+  "programs": [
+    {
+      "entryId": "nmbu_oa",
+      "institusjonskode": "1173",
+      "studieprogramkoder": [
+        "B-ØA"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon (bachelor)",
+      "nivaakode": "B3"
+    },
+    {
+      "entryId": "nhh_oa",
+      "institusjonskode": "1240",
+      "studieprogramkoder": [
+        "BACHELOR15",
+        "BACHELOR"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon (bachelor)",
+      "nivaakode": "B3"
+    },
+    {
+      "entryId": "ntnu_oa",
+      "institusjonskode": "1150",
+      "studieprogramkoder": [
+        "ØABACHELOR",
+        "BØA",
+        "BØAT"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon (bachelor)",
+      "nivaakode": "B3"
+    },
+    {
+      "entryId": "ntnu_alesund_oa",
+      "institusjonskode": "1150",
+      "studieprogramkoder": [
+        "ØA369",
+        "BØKADIB"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon (bachelor)",
+      "nivaakode": "B3"
+    },
+    {
+      "entryId": "ntnu_gjovik_oa",
+      "institusjonskode": "1150",
+      "studieprogramkoder": [
+        "BØKLED",
+        "BØKLEDC"
+      ],
+      "studieprogramnavn": "Økonomi, ledelse og bærekraft (bachelor)",
+      "nivaakode": "B3"
+    },
+    {
+      "entryId": "oslomet_oa",
+      "institusjonskode": "1175",
+      "studieprogramkoder": [
+        "OKAD"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon (bachelor)",
+      "nivaakode": "B3"
+    },
+    {
+      "entryId": "uia_oa",
+      "institusjonskode": "1171",
+      "studieprogramkoder": [
+        "BACØKAD"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon (bachelor)",
+      "nivaakode": "B3"
+    },
+    {
+      "entryId": "uit_oa",
+      "institusjonskode": "1130",
+      "studieprogramkoder": [
+        "B-ØKADM",
+        "B-ØA"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon (bachelor)",
+      "nivaakode": "B3",
+      "merknad": "UiT har flere koder for samme program; Tromsø er antatt å være B-ØKADM/B-ØA."
+    },
+    {
+      "entryId": "uit_alta_oa",
+      "institusjonskode": "1130",
+      "studieprogramkoder": [
+        "B-ØKADM-A"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon (bachelor)",
+      "nivaakode": "B3"
+    },
+    {
+      "entryId": "uit_harstad_oa",
+      "institusjonskode": "1130",
+      "studieprogramkoder": [
+        "ØKBA"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon (bachelor)",
+      "nivaakode": "B3",
+      "merknad": "Antatt kode for Harstad."
+    },
+    {
+      "entryId": "uis_oa",
+      "institusjonskode": "1160",
+      "studieprogramkoder": [
+        "B-ØKAD"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon (bachelor)",
+      "nivaakode": "B3"
+    },
+    {
+      "entryId": "usn_oa",
+      "institusjonskode": "1176",
+      "studieprogramkoder": [
+        "OKLED"
+      ],
+      "studieprogramnavn": "Økonomi og ledelse (bachelor)",
+      "nivaakode": "B3",
+      "merknad": "Fra 2025 én felles DBH-kode for alle USN-studiestedene."
+    },
+    {
+      "entryId": "usn_honefoss_oa",
+      "institusjonskode": "1176",
+      "studieprogramkoder": [
+        "ØKLEDR"
+      ],
+      "studieprogramnavn": "Økonomi og ledelse (bachelor)",
+      "nivaakode": "B3"
+    },
+    {
+      "entryId": "usn_kongsberg_oa",
+      "institusjonskode": "1176",
+      "studieprogramkoder": [
+        "BACHØKADK"
+      ],
+      "studieprogramnavn": "Økonomi og ledelse (bachelor)",
+      "nivaakode": "B3"
+    },
+    {
+      "entryId": "inn_oa",
+      "institusjonskode": "1177",
+      "studieprogramkoder": [
+        "ØKBAC"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon (bachelor)",
+      "nivaakode": "B3",
+      "institusjonskoder": [
+        "0264",
+        "1177"
+      ],
+      "merknad": "Antatt kode for Lillehammer."
+    },
+    {
+      "entryId": "inn_rena_oa",
+      "institusjonskode": "1177",
+      "studieprogramkoder": [
+        "BØADM"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon (bachelor)",
+      "nivaakode": "B3",
+      "institusjonskoder": [
+        "0264",
+        "1177"
+      ],
+      "merknad": "Antatt kode for Rena."
+    },
+    {
+      "entryId": "nord_oa",
+      "institusjonskode": "1174",
+      "studieprogramkoder": [
+        "BAØKLED"
+      ],
+      "studieprogramnavn": "Økonomi og ledelse (bachelor)",
+      "nivaakode": "B3",
+      "merknad": "Samme DBH-kode for Bodø og Steinkjer."
+    },
+    {
+      "entryId": "nord_steinkjer_oa",
+      "institusjonskode": "1174",
+      "studieprogramkoder": [
+        "BAØKLED"
+      ],
+      "studieprogramnavn": "Økonomi og ledelse (bachelor)",
+      "nivaakode": "B3",
+      "merknad": "Samme DBH-kode for Bodø og Steinkjer."
+    },
+    {
+      "entryId": "hvl_bergen_oa",
+      "institusjonskode": "0238",
+      "studieprogramkoder": [
+        "ØAU3"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon (bachelor)",
+      "nivaakode": "B3"
+    },
+    {
+      "entryId": "hvl_haugesund_oa",
+      "institusjonskode": "0238",
+      "studieprogramkoder": [
+        "ØKB"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon (bachelor)",
+      "nivaakode": "B3"
+    },
+    {
+      "entryId": "hvl_sogndal_oa",
+      "institusjonskode": "0238",
+      "studieprogramkoder": [
+        "ØKOB"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon (bachelor)",
+      "nivaakode": "B3"
+    },
+    {
+      "entryId": "nla_oslo_oa",
+      "institusjonskode": "8223",
+      "studieprogramkoder": [
+        "4ØKADM"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon (bachelor)",
+      "nivaakode": "B3"
+    },
+    {
+      "entryId": "nla_bergen_oa",
+      "institusjonskode": "8223",
+      "studieprogramkoder": [
+        "ØKADM"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon (bachelor)",
+      "nivaakode": "B3"
+    },
+    {
+      "entryId": "nla_krs_oa",
+      "institusjonskode": "8223",
+      "studieprogramkoder": [
+        "3ØKADM"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon (bachelor)",
+      "nivaakode": "B3"
+    },
+    {
+      "entryId": "hiof_oa",
+      "institusjonskode": "0256",
+      "studieprogramkoder": [
+        "BOKAD"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon (bachelor)",
+      "nivaakode": "B3"
+    },
+    {
+      "entryId": "himolde_oa",
+      "institusjonskode": "0232",
+      "studieprogramkoder": [
+        "07"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon (bachelor)",
+      "nivaakode": "B3"
+    },
+    {
+      "entryId": "ntnu_siv",
+      "institusjonskode": "1150",
+      "studieprogramkoder": [
+        "MSIVØK5"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon, siviløkonom (5 år)",
+      "nivaakode": "M5",
+      "merknad": "Femårig løp; svakere sammenligning."
+    },
+    {
+      "entryId": "oslomet_siv",
+      "institusjonskode": "1175",
+      "studieprogramkoder": [
+        "OKADSIV"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon, siviløkonom (5 år)",
+      "nivaakode": "M5",
+      "merknad": "Femårig løp; svakere sammenligning."
+    },
+    {
+      "entryId": "uia_siv",
+      "institusjonskode": "1171",
+      "studieprogramkoder": [
+        "MASTØKAD5"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon, siviløkonom (5 år)",
+      "nivaakode": "M5",
+      "merknad": "Femårig løp; svakere sammenligning."
+    },
+    {
+      "entryId": "usn_siv",
+      "institusjonskode": "1176",
+      "studieprogramkoder": [
+        "SIVØKLEDR"
+      ],
+      "studieprogramnavn": "Siviløkonom, integrert (5 år)",
+      "nivaakode": "M5",
+      "merknad": "Femårig løp; svakere sammenligning."
+    },
+    {
+      "entryId": "nmbu_samf",
+      "institusjonskode": "1173",
+      "studieprogramkoder": [
+        "B-ECON"
+      ],
+      "studieprogramnavn": "Samfunnsøkonomi (bachelor)",
+      "nivaakode": "B3"
+    },
+    {
+      "entryId": "uio_samf",
+      "institusjonskode": "1110",
+      "studieprogramkoder": [
+        "SVB-ECON"
+      ],
+      "studieprogramnavn": "Samfunnsøkonomi (bachelor)",
+      "nivaakode": "B3"
+    },
+    {
+      "entryId": "uib_samf",
+      "institusjonskode": "1120",
+      "studieprogramkoder": [
+        "BASV-SØK"
+      ],
+      "studieprogramnavn": "Samfunnsøkonomi (bachelor)",
+      "nivaakode": "B3"
+    },
+    {
+      "entryId": "ntnu_samf",
+      "institusjonskode": "1150",
+      "studieprogramkoder": [
+        "BSØK"
+      ],
+      "studieprogramnavn": "Samfunnsøkonomi (bachelor)",
+      "nivaakode": "B3"
+    },
+    {
+      "entryId": "uit_samf",
+      "institusjonskode": "1130",
+      "studieprogramkoder": [
+        "B-SAMFOK"
+      ],
+      "studieprogramnavn": "Samfunnsøkonomi med datavitenskap (bachelor)",
+      "nivaakode": "B3"
+    },
+    {
+      "entryId": "nmbu_olit",
+      "institusjonskode": "1173",
+      "studieprogramkoder": [
+        "B-ØLIT"
+      ],
+      "studieprogramnavn": "Økonomi, ledelse og IT (bachelor)",
+      "nivaakode": "B3"
+    },
+    {
+      "entryId": "ntnu_dfu",
+      "institusjonskode": "1150",
+      "studieprogramkoder": [
+        "ITBAITBEDR"
+      ],
+      "studieprogramnavn": "Digital forretningsutvikling (bachelor)",
+      "nivaakode": "B3"
+    },
+    {
+      "entryId": "uio_inl",
+      "institusjonskode": "1110",
+      "studieprogramkoder": [
+        "MNB-INL"
+      ],
+      "studieprogramnavn": "Informatikk: digital økonomi og ledelse (bachelor)",
+      "nivaakode": "B3"
+    },
+    {
+      "entryId": "uia_itis",
+      "institusjonskode": "1171",
+      "studieprogramkoder": [
+        "BACIT"
+      ],
+      "studieprogramnavn": "IT og informasjonssystemer (bachelor)",
+      "nivaakode": "B3"
+    },
+    {
+      "entryId": "usn_itled",
+      "institusjonskode": "1176",
+      "studieprogramkoder": [
+        "ITLED"
+      ],
+      "studieprogramnavn": "IT og ledelse (bachelor)",
+      "nivaakode": "B3"
+    },
+    {
+      "entryId": "usn_itis",
+      "institusjonskode": "1176",
+      "studieprogramkoder": [
+        "ITIS"
+      ],
+      "studieprogramnavn": "IT og informasjonssystemer (bachelor)",
+      "nivaakode": "B3"
+    },
+    {
+      "entryId": "hiof_is",
+      "institusjonskode": "0256",
+      "studieprogramkoder": [
+        "ITBINF"
+      ],
+      "studieprogramnavn": "Informasjonssystemer (bachelor)",
+      "nivaakode": "B3"
+    },
+    {
+      "entryId": "uib_imo",
+      "institusjonskode": "1120",
+      "studieprogramkoder": [
+        "BATF-IMØ"
+      ],
+      "studieprogramnavn": "Informatikk-matematikk-økonomi (bachelor)",
+      "nivaakode": "B3"
+    },
+    {
+      "entryId": "uis_digserv",
+      "institusjonskode": "1160",
+      "studieprogramkoder": [
+        "B-DIGSERV"
+      ],
+      "studieprogramnavn": "Digital serviceledelse (bachelor)",
+      "nivaakode": "B3",
+      "merknad": "UiS har to Samordna-koder (dataanalyse og tjenesteinnovasjon) på samme DBH-program."
+    },
+    {
+      "entryId": "nord_edf",
+      "institusjonskode": "1174",
+      "studieprogramkoder": [
+        "INSBA"
+      ],
+      "studieprogramnavn": "Økonomi, digitalisering og forretningsutvikling (bachelor)",
+      "nivaakode": "B3"
+    },
+    {
+      "entryId": "nmbu_moa",
+      "institusjonskode": "1173",
+      "studieprogramkoder": [
+        "M-ØA"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon (master 2 år)",
+      "nivaakode": "M2"
+    },
+    {
+      "entryId": "nhh_moa",
+      "institusjonskode": "1240",
+      "studieprogramkoder": [
+        "MASTER04",
+        "MASTER15",
+        "MASTER21",
+        "MASTER22",
+        "MASTER24",
+        "MASTER25",
+        "M25",
+        "MSC23",
+        "MSC24",
+        "MSC25"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon (master 2 år)",
+      "nivaakode": "M2",
+      "merknad": "NHH har mange årskull-koder for masterstudiet; alle er slått sammen (ikke spesialiseringene)."
+    },
+    {
+      "entryId": "bi_moa",
+      "institusjonskode": "8241",
+      "studieprogramkoder": [
+        "MSCMSBUH"
+      ],
+      "studieprogramnavn": "Master of Science in Business",
+      "nivaakode": "M2"
+    },
+    {
+      "entryId": "ntnu_moa",
+      "institusjonskode": "1150",
+      "studieprogramkoder": [
+        "ØAMSC"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon (master 2 år)",
+      "nivaakode": "M2"
+    },
+    {
+      "entryId": "oslomet_moa",
+      "institusjonskode": "1175",
+      "studieprogramkoder": [
+        "MASØA"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon (master 2 år)",
+      "nivaakode": "M2"
+    },
+    {
+      "entryId": "uia_moa",
+      "institusjonskode": "1171",
+      "studieprogramkoder": [
+        "MASTØKAD"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon, siviløkonom (master 2 år)",
+      "nivaakode": "M2"
+    },
+    {
+      "entryId": "uis_moa",
+      "institusjonskode": "1160",
+      "studieprogramkoder": [
+        "M-ØKAD"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon (master 2 år)",
+      "nivaakode": "M2"
+    },
+    {
+      "entryId": "usn_moa",
+      "institusjonskode": "1176",
+      "studieprogramkoder": [
+        "MASIVØKLED"
+      ],
+      "studieprogramnavn": "Økonomi og ledelse, siviløkonom (master 2 år)",
+      "nivaakode": "M2"
+    },
+    {
+      "entryId": "nord_moa",
+      "institusjonskode": "1174",
+      "studieprogramkoder": [
+        "MABED"
+      ],
+      "studieprogramnavn": "Siviløkonom / MSc in Business (master 2 år)",
+      "nivaakode": "M2"
+    },
+    {
+      "entryId": "inn_moa",
+      "institusjonskode": "1177",
+      "studieprogramkoder": [
+        "MØLDBH",
+        "MØLDBD",
+        "MØLØH",
+        "MØLØD",
+        "MØLMH",
+        "MØLMD",
+        "MØLBAH",
+        "MØLBAD"
+      ],
+      "studieprogramnavn": "Økonomi og ledelse (master 2 år)",
+      "nivaakode": "M2",
+      "institusjonskoder": [
+        "0264",
+        "1177"
+      ],
+      "merknad": "Alle fordypninger og heltid/deltid slått sammen."
+    },
+    {
+      "entryId": "uit_moa",
+      "institusjonskode": "1130",
+      "studieprogramkoder": [
+        "M-ØKADM",
+        "M-ØKADM-D"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon, siviløkonom (master 2 år)",
+      "nivaakode": "M2"
+    },
+    {
+      "entryId": "hvl_moa",
+      "institusjonskode": "0238",
+      "studieprogramkoder": [
+        "MSB"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon, siviløkonom (master 2 år)",
+      "nivaakode": "M2"
+    },
+    {
+      "entryId": "nmbu_mecon",
+      "institusjonskode": "1173",
+      "studieprogramkoder": [
+        "M-ECON"
+      ],
+      "studieprogramnavn": "Samfunnsøkonomi og bærekraft (master 2 år)",
+      "nivaakode": "M2"
+    },
+    {
+      "entryId": "uio_mecon",
+      "institusjonskode": "1110",
+      "studieprogramkoder": [
+        "SVM2-ECON"
+      ],
+      "studieprogramnavn": "Economics (master 2 år)",
+      "nivaakode": "M2"
+    },
+    {
+      "entryId": "uib_mecon",
+      "institusjonskode": "1120",
+      "studieprogramkoder": [
+        "MASV-SØK"
+      ],
+      "studieprogramnavn": "Samfunnsøkonomi (master 2 år)",
+      "nivaakode": "M2"
+    },
+    {
+      "entryId": "ntnu_mecon",
+      "institusjonskode": "1150",
+      "studieprogramkoder": [
+        "MSØK"
+      ],
+      "studieprogramnavn": "Samfunnsøkonomi (master 2 år)",
+      "nivaakode": "M2"
+    },
+    {
+      "entryId": "uit_mecon",
+      "institusjonskode": "1130",
+      "studieprogramkoder": [
+        "M-SAMFOK"
+      ],
+      "studieprogramnavn": "Samfunnsøkonomi (master 2 år)",
+      "nivaakode": "M2"
+    },
+    {
+      "entryId": "nmbu_mei",
+      "institusjonskode": "1173",
+      "studieprogramkoder": [
+        "M-EI"
+      ],
+      "studieprogramnavn": "Entreprenørskap og innovasjon (master 2 år)",
+      "nivaakode": "M2"
+    },
+    {
+      "entryId": "ntnu_mei",
+      "institusjonskode": "1150",
+      "studieprogramkoder": [
+        "MIENTRE"
+      ],
+      "studieprogramnavn": "NTNUs Entreprenørskole (master 2 år)",
+      "nivaakode": "M2"
+    },
+    {
+      "entryId": "ntnu_ment",
+      "institusjonskode": "1150",
+      "studieprogramkoder": [
+        "MENTRE"
+      ],
+      "studieprogramnavn": "Entreprenørskap (master 2 år)",
+      "nivaakode": "M2"
+    },
+    {
+      "entryId": "nord_mei",
+      "institusjonskode": "1174",
+      "studieprogramkoder": [
+        "MAENT"
+      ],
+      "studieprogramnavn": "Entreprenørskap og forretningsutvikling (master 2 år)",
+      "nivaakode": "M2"
+    },
+    {
+      "entryId": "bi_mei",
+      "institusjonskode": "8241",
+      "studieprogramkoder": [
+        "MSCMSEIH"
+      ],
+      "studieprogramnavn": "MSc in Entrepreneurship and Innovation",
+      "nivaakode": "M2"
+    },
+    {
+      "entryId": "uio_mei",
+      "institusjonskode": "1110",
+      "studieprogramkoder": [
+        "MNM2-ENT"
+      ],
+      "studieprogramnavn": "Entreprenørskap og innovasjonsledelse (master 2 år)",
+      "nivaakode": "M2"
+    },
+    {
+      "entryId": "oslomet_mei",
+      "institusjonskode": "1175",
+      "studieprogramkoder": [
+        "MAENT"
+      ],
+      "studieprogramnavn": "Entreprenørskap (master 2 år)",
+      "nivaakode": "M2"
+    },
+    {
+      "entryId": "uia_mei",
+      "institusjonskode": "1171",
+      "studieprogramkoder": [
+        "M-SHIFTINN"
+      ],
+      "studieprogramnavn": "Shift entreprenørskap og innovasjon (master 2 år)",
+      "nivaakode": "M2"
+    }
+  ]
+}

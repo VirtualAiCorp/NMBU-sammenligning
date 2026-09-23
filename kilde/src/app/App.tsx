@@ -99,7 +99,7 @@ export default function App() {
     setFacultyView(view);
     setFacultyGroup(view === 'analyse' ? gruppe : undefined);
     setFacultyCourseGroup(view === 'emner' ? gruppe : undefined);
-    if (f === 'hh') setProgramLevel(null);
+    if (f === 'hh-figma') setProgramLevel(null);
     window.scrollTo({ top: 0 });
   };
 
@@ -166,7 +166,7 @@ export default function App() {
     );
   };
   const isNmbuPage = (f: Faculty | null): f is NmbuPage => f === 'nmbu-bolig' || f === 'nmbu-okonomi' || f === 'nmbu-fagmiljo';
-  const isFacultyId = (f: Faculty | null): f is FacultyId => f === 'landsam' || f === 'realtek' || f === 'biovit' || f === 'kbm' || f === 'mina' || f === 'vet';
+  const isFacultyId = (f: Faculty | null): f is FacultyId => f === 'hh' || f === 'landsam' || f === 'realtek' || f === 'biovit' || f === 'kbm' || f === 'mina' || f === 'vet';
 
   const facultyLanding = (fac: FacultyData) => (
     <LandsamLanding
@@ -181,6 +181,7 @@ export default function App() {
       onOpenHousing={() => setFacultyView('bolig')}
       onOpenEconomy={() => setFacultyView('okonomi')}
       onOpenRevenue={() => setFacultyView('inntekt')}
+      onOpenOriginalHH={fac.id === 'hh' ? () => { setFaculty('hh-figma'); setProgramLevel(null); } : undefined}
       onBackToFaculties={goHome}
     />
   );

@@ -30,6 +30,8 @@ interface Props {
   onOpenRevenue: () => void;
   /** Tilbake til fakultetsoversikten. */
   onBackToFaculties: () => void;
+  /** Bare for Handelshøyskolen: åpner den opprinnelige, manuelt kuraterte HH-analysen (fra Figma). */
+  onOpenOriginalHH?: () => void;
 }
 
 const LEVEL_LABEL: Record<string, string> = {
@@ -38,7 +40,7 @@ const LEVEL_LABEL: Record<string, string> = {
   master2:  'Toårig master',
 };
 
-export function LandsamLanding({ faculty, onOpenAnalysis, onOpenCourses, onOpenMarketStatus, onOpenStudiebarometer, onOpenCompletion, onOpenStudents, onOpenStaff, onOpenHousing, onOpenEconomy, onOpenRevenue, onBackToFaculties }: Props) {
+export function LandsamLanding({ faculty, onOpenAnalysis, onOpenCourses, onOpenMarketStatus, onOpenStudiebarometer, onOpenCompletion, onOpenStudents, onOpenStaff, onOpenHousing, onOpenEconomy, onOpenRevenue, onBackToFaculties, onOpenOriginalHH }: Props) {
   const admissionGroups = faculty.admissionGroups;
   const courseGroups = faculty.courseGroups;
   const markedsstatus = faculty.marketStatus;
@@ -79,6 +81,22 @@ export function LandsamLanding({ faculty, onOpenAnalysis, onOpenCourses, onOpenM
         <p className="text-center mb-10" style={{ color: 'var(--nmbu-neutral-2)', fontSize: '14px', maxWidth: 560, margin: '0 auto 2.5rem' }}>
           Opptakstall og poenggrenser for fakultetets studieprogram sammenlignet med konkurrerende program
         </p>
+
+        {onOpenOriginalHH && (
+          <div className="grid gap-3 mb-10" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))' }}>
+            <div className="rounded-xl p-4" style={{ backgroundColor: 'var(--nmbu-green-dark)', color: '#fff' }}>
+              <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.07em', textTransform: 'uppercase', opacity: 0.75 }}>Du er her</div>
+              <div style={{ fontFamily: "'Lora', serif", fontSize: 17, marginTop: 2 }}>Standardformat</div>
+              <div style={{ fontSize: 12, opacity: 0.85, marginTop: 4, lineHeight: 1.5 }}>Samme lag som de andre fakultetene, med data fra DBH, Samordna og SSB.</div>
+            </div>
+            <button onClick={onOpenOriginalHH} className="rounded-xl p-4 text-left transition-all"
+              style={{ backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)' }}>
+              <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.07em', textTransform: 'uppercase', color: 'var(--nmbu-neutral-2)' }}>Åpne</div>
+              <div style={{ fontFamily: "'Lora', serif", fontSize: 17, marginTop: 2, color: 'var(--nmbu-green-dark)' }}>Opprinnelig HH-analyse →</div>
+              <div style={{ fontSize: 12, color: 'var(--nmbu-neutral-2)', marginTop: 4, lineHeight: 1.5 }}>Den manuelt kuraterte analysen fra Figma: emnekartlegging (UHR-emner), karakterindeks, masteroppgaver og opptak 2026.</div>
+            </button>
+          </div>
+        )}
 
         {/* Skillelinje — Analyse opptak */}
         <div className="flex items-center gap-4 mb-6">

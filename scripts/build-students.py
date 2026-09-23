@@ -26,7 +26,7 @@ blc = importlib.util.module_from_spec(spec); spec.loader.exec_module(blc)
 
 YEARS = [str(y) for y in range(2019, 2026)]
 CACHE = ROOT / "data" / "nmbu" / "kilder" / "dbh-studenter"
-FAKULTETER = ["landsam", "realtek", "kbm", "mina", "biovit", "vet"]
+FAKULTETER = ["landsam", "realtek", "kbm", "mina", "biovit", "vet", "hh"]
 NIVAA = ["B3", "M2", "M5", "PR"]
 # (nøkkel, tabell, ekstra filtre)
 SERIES = [

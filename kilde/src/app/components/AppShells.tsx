@@ -1,9 +1,9 @@
 import { useState, type ReactNode } from 'react';
 import {
   LayoutDashboard, BookOpen, Microscope, Home, Landmark, TrendingUp, GraduationCap, Users, Star, Globe2,
-  LayoutGrid, Menu, X, Coins,
+  LayoutGrid, Menu, X, Coins, Archive,
 } from 'lucide-react';
-import { FACULTIES, FACULTY_IDS, type FacultyId } from '../data/faculties';
+import { FACULTIES, ALL_FACULTY_IDS as FACULTY_IDS, type FacultyId } from '../data/faculties';
 import type { Faculty } from './FacultyLanding';
 import { Matrise, lagRader } from './LayoutLab';
 
@@ -82,12 +82,6 @@ export function DashboardShell({ faculty, view, onNavigate, children }: { facult
     <nav className="flex flex-col gap-0.5 text-sm" aria-label="Hovedmeny">
       <button onClick={() => gaa(null)} className="text-left px-2 pb-2" style={{ fontFamily: "'Lora', serif", fontSize: 17, whiteSpace: 'nowrap' }}>NMBU-sammenligning</button>
       {seksjon('Fakultetene')}
-      {import.meta.env.VITE_UTEN_HH !== '1' && (
-        <button onClick={() => gaa('hh')} className="w-full flex items-center justify-between px-2 py-1.5 rounded-md text-left" style={itemStyle(faculty === 'hh')}
-          title="Handelshøyskolen">
-          <span>HH</span>
-        </button>
-      )}
       {FACULTY_IDS.map((id) => {
         const aapen = faculty === id;
         return (
@@ -101,6 +95,11 @@ export function DashboardShell({ faculty, view, onNavigate, children }: { facult
                 <m.icon className="w-3.5 h-3.5 shrink-0" /> {m.label}
               </button>
             ))}
+            {id === 'hh' && (aapen || faculty === 'hh-figma') && (
+              <button onClick={() => gaa('hh-figma')} className="w-full flex items-center gap-2 pl-5 pr-2 py-1 rounded-md text-left text-xs" style={itemStyle(faculty === 'hh-figma')}>
+                <Archive className="w-3.5 h-3.5 shrink-0" /> Opprinnelig HH-analyse
+              </button>
+            )}
           </div>
         );
       })}
@@ -136,7 +135,7 @@ export function DashboardShell({ faculty, view, onNavigate, children }: { facult
 
 function Brodsmuler({ faculty, view, onNavigate }: { faculty: Faculty | null; view: ShellView; onNavigate: Nav }) {
   const deler: { l: string; go?: () => void }[] = [{ l: 'NMBU', go: () => onNavigate(null) }];
-  if (faculty === 'hh') deler.push({ l: 'Handelshøyskolen' });
+  if (faculty === 'hh-figma') { deler.push({ l: 'HH', go: () => onNavigate('hh', 'landing') }); deler.push({ l: 'Opprinnelig HH-analyse' }); }
   else if (erFakultet(faculty)) {
     deler.push({ l: FACULTIES[faculty].shortLabel, go: () => onNavigate(faculty, 'landing') });
     if (view !== 'landing') deler.push({ l: FAKULTETSMODULER.find((m) => m.view === view)?.label ?? view });
@@ -157,10 +156,9 @@ function Brodsmuler({ faculty, view, onNavigate }: { faculty: Faculty | null; vi
 export function TopbarShell({ faculty, view, onNavigate, children }: { faculty: Faculty | null; view: ShellView; onNavigate: Nav; children: ReactNode }) {
   const enheter: { f: Faculty | null; label: string }[] = [
     { f: null, label: 'Hele NMBU' },
-    ...(import.meta.env.VITE_UTEN_HH !== '1' ? [{ f: 'hh' as Faculty, label: 'HH' }] : []),
     ...FACULTY_IDS.map((id) => ({ f: id as Faculty, label: FACULTIES[id].shortLabel })),
   ];
-  const aktivEnhet = erNmbu(faculty) ? null : faculty;
+  const aktivEnhet = erNmbu(faculty) ? null : faculty === 'hh-figma' ? 'hh' : faculty;
   const fane = (aktiv: boolean) => ({
     borderBottom: `2px solid ${aktiv ? 'var(--nmbu-green-dark)' : 'transparent'}`,
     color: aktiv ? 'var(--nmbu-green-dark)' : 'var(--nmbu-neutral-1)', fontWeight: aktiv ? 700 : 500,
@@ -184,14 +182,18 @@ export function TopbarShell({ faculty, view, onNavigate, children }: { faculty: 
             })}
           </nav>
         </div>
-        {(erNmbu(faculty) || erFakultet(faculty)) && (
+        {(erNmbu(faculty) || erFakultet(faculty) || faculty === 'hh-figma') && (
           <nav className="flex gap-1 px-4 sm:px-6 overflow-x-auto" aria-label="Moduler" style={{ borderTop: '1px solid var(--nmbu-neutral-3)' }}>
-            {erFakultet(faculty)
-              ? FAKULTETSMODULER.map((m) => (
-                  <button key={m.view} onClick={() => onNavigate(faculty, m.view)} className="flex items-center gap-1.5 px-3 py-2.5 text-xs shrink-0" style={fane(view === m.view)}>
+            {erFakultet(faculty) || faculty === 'hh-figma'
+              ? [...FAKULTETSMODULER.map((m) => (
+                  <button key={m.view} onClick={() => onNavigate(faculty === 'hh-figma' ? 'hh' : faculty, m.view)} className="flex items-center gap-1.5 px-3 py-2.5 text-xs shrink-0" style={fane(faculty !== 'hh-figma' && view === m.view)}>
                     <m.icon className="w-3.5 h-3.5" /> {m.label}
                   </button>
-                ))
+                )), ...((faculty === 'hh' || faculty === 'hh-figma') ? [
+                  <button key="hh-figma" onClick={() => onNavigate('hh-figma')} className="flex items-center gap-1.5 px-3 py-2.5 text-xs shrink-0" style={fane(faculty === 'hh-figma')}>
+                    <Archive className="w-3.5 h-3.5" /> Opprinnelig HH-analyse
+                  </button>,
+                ] : [])]
               : NMBU_SIDER.map((s) => (
                   <button key={s.label} onClick={() => onNavigate(s.f)} className="flex items-center gap-1.5 px-3 py-2.5 text-xs shrink-0" style={fane(faculty === s.f)}>
                     <s.icon className="w-3.5 h-3.5" /> {s.label}

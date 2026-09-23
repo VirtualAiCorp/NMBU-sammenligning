@@ -353,3 +353,17 @@ fullførte grader og snittsats per 60 sp, NMBU mot konkurrentene med median.
 - **Tilnærminger:** DBH har ingen tabell for G3 ennå (907 slutter med gamle kandidatindikator i 2022), så ferdige kandidater
   brukes. Studiepoeng tilskrives studentens program uansett emneeier. Doktorgrad, EU, NFR og basis er ikke med.
 - Emnets kategori er brukt (ikke studentens); forskjellen i totalene er liten (NMBU 2025: kategori 1 = 2 277 mot 2 216 årsverk).
+
+## 21. Handelshøyskolen på standardformatet
+
+HH er delt i to: **Opprinnelig HH-analyse** (Figma-komponentene, manuelt kuratert: emnekartlegging/UHR-emner, karakterindeks,
+masteroppgaver, opptak 2026 – urørt, rute `hh-figma`) og **HH på standardformat** (FacultyId `hh`, samme moduler som de andre
+fakultetene). Øverst på HH-siden velger man mellom dem; i dashboard/toppmeny ligger originalen som eget menypunkt under HH.
+- **Programkart:** `scripts/make-hh-programkart.py` → `data/hh/programkart.json` og `dbh-programkart.json` (73 program, 6 grupper:
+  økonomi og administrasjon, samfunnsøkonomi, økonomi/ledelse/IT, og masterne i økonomi og administrasjon, samfunnsøkonomi,
+  entreprenørskap og innovasjon). Konkurrentene er de samme som i originalen (fullAdmissionData, samfData, masterThesisData);
+  ØLIT-konkurrenter funnet i Samordnas programliste; DBH-koder fra DBH 347 (`data/hh/kilder/dbh347/`). Antatte koder står i `merknad`.
+- Kjeden er den samme som for fakultetene (`build-faculty.sh hh`, `build-completion.py hh`, `build-students.py hh`,
+  `build-studiebarometer.py hh`, samt build-staff/economy/revenue/bolig med `hh` = avdeling 470).
+- Mangler foreløpig: emnekobling, studieplaner og markedsstatus på standardformatet (originalen har egne versjoner), og
+  M-BIOEC, M-GEP og M-EEG. BI er ikke med i bachelorgruppene (ikke i Samordna), men er med i masterne via DBH 379.

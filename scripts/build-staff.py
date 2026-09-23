@@ -34,10 +34,10 @@ blc = importlib.util.module_from_spec(spec); spec.loader.exec_module(blc)
 
 Y0, Y1 = "2019", "2025"
 CACHE = ROOT / "data" / "nmbu" / "kilder" / "dbh-fagmiljo"
-FAKULTETER = {"landsam": "420", "realtek": "460", "kbm": "440", "mina": "430", "biovit": "450", "vet": "410"}
+FAKULTETER = {"landsam": "420", "realtek": "460", "kbm": "440", "mina": "430", "biovit": "450", "vet": "410", "hh": "470"}
 KORT = {"1173": "NMBU", "1150": "NTNU", "1110": "UiO", "1120": "UiB", "1130": "UiT", "1160": "UiS", "1171": "UiA",
         "1174": "Nord", "1175": "OsloMet", "1176": "USN", "1177": "INN", "0264": "INN", "0238": "HVL", "0256": "HiØ",
-        "0236": "HVO", "1220": "AHO", "1240": "NHH", "8241": "BI"}
+        "0236": "HVO", "1220": "AHO", "1240": "NHH", "8241": "BI", "8223": "NLA", "0232": "HiMolde", "8253": "Kristiania"}
 # INN byttet kode 0264 → 1177 i 2025: slås sammen til én enhet.
 SAMME = {"0264": "1177"}
 FORSTE = re.compile(r"professor|førsteamanuensis|dosent|førstelektor", re.I)

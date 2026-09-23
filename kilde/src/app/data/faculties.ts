@@ -115,12 +115,17 @@ import { STUDENT_GROUPS as BIOVIT_STUDENTS } from './biovitStudentData';
 import { STUDENT_GROUPS as KBM_STUDENTS } from './kbmStudentData';
 import { STUDENT_GROUPS as MINA_STUDENTS } from './minaStudentData';
 import { STUDENT_GROUPS as VET_STUDENTS } from './vetStudentData';
+import { LANDSAM_GROUPS as HH_GROUPS, LANDSAM_YEARS as HH_YEARS } from './hhAdmissionData';
+import { LANDSAM_COURSE_GROUPS as HH_COURSE_GROUPS, LANDSAM_COURSE_YEARS as HH_COURSE_YEARS } from './hhCourseData';
+import { STUDIEBAROMETER_ENTRIES as HH_STUDIEBAROMETER } from './hhStudiebarometerData';
+import { COMPLETION_GROUPS as HH_COMPLETION, COMPLETION_HENTET as HH_COMPLETION_HENTET } from './hhCompletionData';
+import { STUDENT_GROUPS as HH_STUDENTS } from './hhStudentData';
 
 export type { MarketInstitution, MarketDoc };
 export type { CompletionGroup };
 export type { SbEntry };
 
-export type FacultyId = 'landsam' | 'realtek' | 'biovit' | 'kbm' | 'mina' | 'vet';
+export type FacultyId = 'hh' | 'landsam' | 'realtek' | 'biovit' | 'kbm' | 'mina' | 'vet';
 
 export interface FacultyData {
   id: FacultyId;
@@ -153,6 +158,25 @@ export interface FacultyData {
 }
 
 export const FACULTIES: Record<FacultyId, FacultyData> = {
+  hh: {
+    id: 'hh',
+    label: 'Handelshøyskolen',
+    shortLabel: 'HH',
+    subtitle: 'Økonomi og administrasjon, samfunnsøkonomi, økonomi, ledelse og IT',
+    desc: 'Handelshøyskolen på samme format som de andre fakultetene: opptak, emnekarakterer, gjennomføring, studentene, Studiebarometeret, fagmiljø, bolig, økonomi og inntekt, mot de samme konkurrentene som i den opprinnelige HH-analysen.',
+    admissionGroups: HH_GROUPS,
+    admissionYears: HH_YEARS,
+    courseGroups: HH_COURSE_GROUPS,
+    courseYears: HH_COURSE_YEARS,
+    courseMapping: [],
+    studyPlanGroups: [],
+    marketStatus: [],
+    marketStatusHentet: null,
+    studiebarometer: HH_STUDIEBAROMETER,
+    completionGroups: HH_COMPLETION,
+    completionHentet: HH_COMPLETION_HENTET,
+    studentGroups: HH_STUDENTS,
+  },
   landsam: {
     id: 'landsam',
     label: 'Fakultet for landskap og samfunn',
@@ -270,6 +294,8 @@ export const FACULTIES: Record<FacultyId, FacultyData> = {
 };
 
 export const FACULTY_IDS: FacultyId[] = ['landsam', 'realtek', 'biovit', 'kbm', 'mina', 'vet'];
+/** Alle fakulteter med standardformat, inkludert Handelshøyskolen (som har eget kort på forsiden). */
+export const ALL_FACULTY_IDS: FacultyId[] = ['hh', ...FACULTY_IDS];
 
 /** Vises når et fakultet ennå ikke har noen data i de genererte modulene. */
 export const INGEN_DATA_TEKST = 'Ingen data lagt inn ennå for dette fakultetet';

@@ -4,7 +4,7 @@ import {
   LayoutGrid, PanelLeft, PanelTop, Search, Table2, Presentation, Monitor, Tablet, Smartphone,
   ChevronLeft, ChevronRight, TrendingUp, BookOpen, GraduationCap, Users, Microscope, Home, Landmark, Check, X, Wrench,
 } from 'lucide-react';
-import { FACULTIES, FACULTY_IDS, type FacultyData } from '../data/faculties';
+import { FACULTIES, FACULTY_IDS, ALL_FACULTY_IDS, type FacultyData } from '../data/faculties';
 import { ECON_UNITS } from '../data/economyData';
 
 /**
@@ -33,7 +33,7 @@ const nf = (v: number | null | undefined, d = 1) => (v == null ? '–' : v.toLoc
 
 export function lagRader(): Rad[] {
   const out: Rad[] = [];
-  for (const id of FACULTY_IDS) {
+  for (const id of ALL_FACULTY_IDS) {
     const fak = FACULTIES[id];
     for (const g of fak.admissionGroups) {
       if (g.level === 'master2' || !g.nmbuIds.length) continue;

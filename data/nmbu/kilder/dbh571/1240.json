@@ -1,0 +1,177 @@
+{
+ "hentet": "2026-09-23",
+ "institusjonskode": "1240",
+ "kilde": "DBH/HKDIR tabell 571 «Gjennomsnittlige opptakspoeng for søkere», opptakstype N (Samordna opptak), https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData",
+ "motte": [
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "BACHELOR15",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "81840.10",
+   "Karakterpoeng": "73401.10",
+   "Søkere totalt": "1518"
+  },
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "BACHELOR15",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "22136.90",
+   "Karakterpoeng": "19587.40",
+   "Søkere totalt": "375"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "BACHELOR15",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "75762.10",
+   "Karakterpoeng": "68423.10",
+   "Søkere totalt": "1397"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "BACHELOR15",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "24355.90",
+   "Karakterpoeng": "21700.90",
+   "Søkere totalt": "409"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "BACHELOR15",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "80947.80",
+   "Karakterpoeng": "73111.30",
+   "Søkere totalt": "1485"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "BACHELOR15",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "22753.30",
+   "Karakterpoeng": "20217.80",
+   "Søkere totalt": "378"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "BACH-BEDS",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "89187.60",
+   "Karakterpoeng": "79514.60",
+   "Søkere totalt": "1641"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "BACH-BEDS",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1294.40",
+   "Karakterpoeng": "1122.90",
+   "Søkere totalt": "20"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "BACHELOR15",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "86695.40",
+   "Karakterpoeng": "78188.90",
+   "Søkere totalt": "1607"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "BACHELOR15",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "23427.20",
+   "Karakterpoeng": "20758.70",
+   "Søkere totalt": "388"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "BACH-BEDS",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "45923.20",
+   "Karakterpoeng": "41015.70",
+   "Søkere totalt": "826"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "BACH-BEDS",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "1598.50",
+   "Karakterpoeng": "1409.00",
+   "Søkere totalt": "25"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "BACHELOR15",
+   "Møtt til studiestart": "0",
+   "Opptakspoeng totalt": "85012.40",
+   "Karakterpoeng": "77134.90",
+   "Søkere totalt": "1575"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "BACHELOR15",
+   "Møtt til studiestart": "1",
+   "Opptakspoeng totalt": "21964.40",
+   "Karakterpoeng": "19496.90",
+   "Søkere totalt": "365"
+  }
+ ],
+ "forstevalg": [
+  {
+   "Årstall": "2021",
+   "Studieprogramkode": "BACHELOR15",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "92734.20",
+   "Karakterpoeng": "83009.20",
+   "Søkere totalt": "1690"
+  },
+  {
+   "Årstall": "2022",
+   "Studieprogramkode": "BACHELOR15",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "90987.70",
+   "Karakterpoeng": "82106.70",
+   "Søkere totalt": "1643"
+  },
+  {
+   "Årstall": "2023",
+   "Studieprogramkode": "BACHELOR15",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "92807.30",
+   "Karakterpoeng": "83634.80",
+   "Søkere totalt": "1669"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "BACH-BEDS",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "38990.80",
+   "Karakterpoeng": "34484.80",
+   "Søkere totalt": "732"
+  },
+  {
+   "Årstall": "2024",
+   "Studieprogramkode": "BACHELOR15",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "73718.80",
+   "Karakterpoeng": "66660.30",
+   "Søkere totalt": "1334"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "BACH-BEDS",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "20237.70",
+   "Karakterpoeng": "18105.70",
+   "Søkere totalt": "366"
+  },
+  {
+   "Årstall": "2025",
+   "Studieprogramkode": "BACHELOR15",
+   "Prioritet": "1",
+   "Opptakspoeng totalt": "79562.30",
+   "Karakterpoeng": "72101.80",
+   "Søkere totalt": "1447"
+  }
+ ]
+}
