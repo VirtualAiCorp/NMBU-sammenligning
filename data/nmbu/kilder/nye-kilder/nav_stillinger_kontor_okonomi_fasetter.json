@@ -1,0 +1,157 @@
+{
+ "kilde": "GET https://arbeidsplassen.nav.no/stillinger/api/search?occupationFirstLevels[]=Kontor og økonomi&size=0",
+ "hentet": "2026-09-24",
+ "merknad": "Øyeblikksbilde av aktive annonser (fasetter). Ingen historikk; må hentes jevnlig for tidsserie.",
+ "total": {
+  "value": 1825,
+  "relation": "eq"
+ },
+ "yrke_niva2": [
+  [
+   "Ledelse, administrasjon og rådgivning",
+   625
+  ],
+  [
+   "Kontor, forvaltning og saksbehandling",
+   519
+  ],
+  [
+   "Økonomi, statistikk og regnskap",
+   279
+  ],
+  [
+   "Bank finans forsikring",
+   235
+  ],
+  [
+   "Personal, arbeidsmiljø og rekruttering",
+   169
+  ],
+  [
+   "Juridisk arbeid",
+   131
+  ],
+  [
+   "Megling",
+   29
+  ],
+  [
+   "Organisasjonsarbeid og politikk",
+   15
+  ]
+ ],
+ "utdanningskrav": [
+  [
+   "Bachelor",
+   1217
+  ],
+  [
+   "Master",
+   775
+  ],
+  [
+   "Ingen krav",
+   378
+  ],
+  [
+   "Fagskole",
+   344
+  ],
+  [
+   "Videregående",
+   140
+  ],
+  [
+   "Fagbrev",
+   138
+  ],
+  [
+   "Forskningsgrad",
+   18
+  ],
+  [
+   "Ikke oppgitt",
+   8
+  ]
+ ],
+ "fylker": [
+  [
+   "AGDER",
+   89
+  ],
+  [
+   "AKERSHUS",
+   172
+  ],
+  [
+   "BUSKERUD",
+   73
+  ],
+  [
+   "FINNMARK",
+   70
+  ],
+  [
+   "INNLANDET",
+   108
+  ],
+  [
+   "MØRE OG ROMSDAL",
+   92
+  ],
+  [
+   "NORDLAND",
+   99
+  ],
+  [
+   "OSLO",
+   596
+  ],
+  [
+   "ROGALAND",
+   155
+  ],
+  [
+   "SVALBARD",
+   1
+  ],
+  [
+   "TELEMARK",
+   43
+  ],
+  [
+   "TROMS",
+   95
+  ],
+  [
+   "TRØNDELAG",
+   133
+  ],
+  [
+   "VESTFOLD",
+   45
+  ],
+  [
+   "VESTLAND",
+   232
+  ],
+  [
+   "ØSTFOLD",
+   61
+  ]
+ ],
+ "sektor": [
+  [
+   "Privat",
+   1152
+  ],
+  [
+   "Offentlig",
+   649
+  ],
+  [
+   "Ikke oppgitt",
+   1
+  ]
+ ]
+}

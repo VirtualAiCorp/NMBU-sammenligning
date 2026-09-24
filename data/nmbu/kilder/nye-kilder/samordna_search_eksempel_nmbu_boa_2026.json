@@ -1,0 +1,568 @@
+{
+ "id": 21030,
+ "names": {
+  "NB": "Økonomi og administrasjon",
+  "NN": "Økonomi og administrasjon"
+ },
+ "url": "https://www.nmbu.no/studier/studietilbud/bachelorprogrammer/okonomi-og-administrasjon",
+ "teachingLocation": {
+  "id": 3,
+  "name": "Ås",
+  "municipality": {
+   "id": "3218",
+   "name": "Ås",
+   "countyName": "Akershus"
+  }
+ },
+ "isFullTime": true,
+ "isOnline": false,
+ "isBlendedLearning": false,
+ "isCancelled": false,
+ "studyProgrammeType": {
+  "id": 1,
+  "name": "Bachelor"
+ },
+ "institution": {
+  "id": 10,
+  "name": "Norges miljø- og biovitenskapelige universitet",
+  "shortName": "NMBU",
+  "url": "www.nmbu.no",
+  "email": "opptak@nmbu.no",
+  "internalEmail": "so-nmbu@samordnaopptak.no",
+  "phone": "67230000",
+  "addresses": [
+   {
+    "addressType": "POSTAL",
+    "address": "Opptakskontoret, Postboks 5003",
+    "postalCode": "1432",
+    "postalArea": "ÅS",
+    "institutionNumber": 192,
+    "id": 28
+   }
+  ],
+  "institutionCategory": {
+   "id": "UNIVERSITY",
+   "name": "Universitet"
+  },
+  "institutionNumber": 192,
+  "handlesApplications": true,
+  "institutionStatus": "InBusiness",
+  "genealogy": {
+   "ancestors": []
+  },
+  "sector": "PUBLIC"
+ },
+ "admission": {
+  "id": 18,
+  "name": "2026",
+  "status": "Published",
+  "admissionType": "NOM"
+ },
+ "offersEarlyAdmission": true,
+ "hasEarlyDeadline": false,
+ "reqCode": "GENS",
+ "numCredits": 180,
+ "numSemesters": 6,
+ "numStudyPlaces": 95,
+ "startMonth": 8,
+ "genderPoints": null,
+ "isNew": false,
+ "hasTuitionFee": false,
+ "additionalInformation": "",
+ "rankingRule": "RGENS",
+ "assessmentAssignmentRule": null,
+ "id_parents": [
+  18891
+ ],
+ "studyProgrammeNumber": "369",
+ "offerVacanciesSinceLast": false,
+ "offerVacancies": false,
+ "maxVacancies": null,
+ "admissionType": "NOM",
+ "flags": [
+  "fulltid",
+  "høst",
+  "heltid"
+ ],
+ "quotas": [
+  "ORD",
+  "ORDF",
+  "SPEV"
+ ],
+ "mainEducationArea": {
+  "id": "ØKADM",
+  "name": "Økonomi og administrasjon"
+ },
+ "tags": [
+  "Organisasjon",
+  "Bedriftsøkonomi",
+  "Regnskap"
+ ],
+ "quotaPointLimits": {
+  "admissionsSorted": [
+   {
+    "id": 16,
+    "name": "2025",
+    "status": "Archived",
+    "admissionType": "NOM",
+    "admissionEvents": {
+     "EDIT_STUDY_PROGRAMMES_DEADLINE": "2024-12-16T23:59:59+01:00",
+     "EARLY_UPLOAD_DEADLINE": "2025-03-20T23:59:59+01:00",
+     "VACANT_STUDY_PROGRAMMES_DEADLINE": "2025-09-25T23:59:59+02:00",
+     "VACANT_STUDY_PROGRAMMES_PUBLICATION_DATE": "2025-07-19T09:00:59+02:00",
+     "DELETE_PROGRAMMES_DEADLINE": "2025-07-13T00:02:59+02:00",
+     "SPECIAL_ASSESSMENT_DEADLINE": "2025-04-16T00:02:59+02:00",
+     "EDIT_STUDY_PROGRAMMES_OPENS": "2024-11-14T12:00:59+01:00",
+     "ORDINARY_DEADLINE": "2025-04-16T00:02:59+02:00",
+     "EARLY_DEADLINE": "2025-03-02T00:02:59+01:00",
+     "FINAL_UPLOAD_DEADLINE": "2025-07-01T23:59:59+02:00",
+     "DEADLINE_FOR_EARLY_ADMISSION": "2025-03-02T00:02:59+01:00",
+     "REORDER_PROGRAMMES_DEADLINE": "2025-07-02T00:02:59+02:00",
+     "VACANT_STUDY_PROGRAMMES_OPENS": "2025-07-20T09:00:59+02:00",
+     "UPLOAD_DEADLINE": "2025-04-15T23:59:59+02:00",
+     "ADMISSION_OPENS": "2025-02-06T09:00:59+01:00"
+    },
+    "admissionRounds": [
+     {
+      "id": 16006,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2025-08-09T23:59:59+02:00"
+     },
+     {
+      "id": 16008,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2025-08-16T23:59:59+02:00"
+     },
+     {
+      "id": 16003,
+      "admissionRoundType": "MAIN",
+      "dateDeadline": "2025-07-24T23:59:59+02:00"
+     },
+     {
+      "id": 16004,
+      "admissionRoundType": "SUPPLEMENTARY",
+      "dateDeadline": "2025-08-03T23:59:59+02:00"
+     },
+     {
+      "id": 16010,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2025-08-23T23:59:59+02:00"
+     },
+     {
+      "id": 16009,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2025-08-18T23:59:59+02:00"
+     },
+     {
+      "id": 16012,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2025-08-30T23:59:59+02:00"
+     },
+     {
+      "id": 16007,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2025-08-11T23:59:59+02:00"
+     },
+     {
+      "id": 16011,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2025-08-25T23:59:59+02:00"
+     },
+     {
+      "id": 16013,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2025-09-01T23:59:59+02:00"
+     },
+     {
+      "id": 16014,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2025-09-06T23:59:59+02:00"
+     },
+     {
+      "id": 16015,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2025-09-08T23:59:59+02:00"
+     }
+    ]
+   },
+   {
+    "id": 14,
+    "name": "2024",
+    "status": "Archived",
+    "admissionType": "NOM",
+    "admissionEvents": {
+     "EARLY_DEADLINE": "2024-03-02T00:02:00+01:00",
+     "EARLY_UPLOAD_DEADLINE": "2024-03-20T23:59:11+01:00",
+     "DEADLINE_FOR_EARLY_ADMISSION": "2024-03-02T00:02:00+01:00",
+     "VACANT_STUDY_PROGRAMMES_DEADLINE": "2024-09-27T12:00:11+02:00",
+     "FINAL_UPLOAD_DEADLINE": "2024-07-01T23:59:00+02:00",
+     "EDIT_STUDY_PROGRAMMES_DEADLINE": "2023-12-15T23:59:11+01:00",
+     "UPLOAD_DEADLINE": "2024-04-15T23:59:11+02:00",
+     "VACANT_STUDY_PROGRAMMES_PUBLICATION_DATE": "2024-07-19T09:00:11+02:00",
+     "DELETE_PROGRAMMES_DEADLINE": "2024-07-13T00:02:11+02:00",
+     "EDIT_STUDY_PROGRAMMES_OPENS": "2023-11-15T09:01:11+01:00",
+     "ORDINARY_DEADLINE": "2024-04-16T00:02:11+02:00",
+     "SPECIAL_ASSESSMENT_DEADLINE": "2024-04-16T00:02:00+02:00",
+     "ADMISSION_OPENS": "2024-02-01T09:00:11+01:00",
+     "REORDER_PROGRAMMES_DEADLINE": "2024-07-02T00:02:11+02:00",
+     "VACANT_STUDY_PROGRAMMES_OPENS": "2024-07-20T09:00:11+02:00"
+    },
+    "admissionRounds": [
+     {
+      "id": 14004,
+      "admissionRoundType": "SUPPLEMENTARY",
+      "dateDeadline": "2024-07-31T23:59:59+02:00"
+     },
+     {
+      "id": 14013,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2024-08-31T23:59:59+02:00"
+     },
+     {
+      "id": 14007,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2024-08-10T23:59:59+02:00"
+     },
+     {
+      "id": 14008,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2024-08-12T23:59:59+02:00"
+     },
+     {
+      "id": 14009,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2024-08-17T23:59:59+02:00"
+     },
+     {
+      "id": 14014,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2024-09-02T23:59:59+02:00"
+     },
+     {
+      "id": 14011,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2024-08-24T23:59:59+02:00"
+     },
+     {
+      "id": 14012,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2024-08-26T23:59:59+02:00"
+     },
+     {
+      "id": 14006,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2024-08-05T23:59:59+02:00"
+     },
+     {
+      "id": 14010,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2024-08-19T23:59:59+02:00"
+     },
+     {
+      "id": 14003,
+      "admissionRoundType": "MAIN",
+      "dateDeadline": "2024-07-24T23:59:59+02:00"
+     }
+    ]
+   },
+   {
+    "id": 12,
+    "name": "2023",
+    "status": "Archived",
+    "admissionType": "NOM",
+    "admissionEvents": {
+     "ORDINARY_DEADLINE": "2023-04-16T00:02:00+02:00",
+     "EDIT_STUDY_PROGRAMMES_DEADLINE": "2022-12-16T23:59:00+01:00",
+     "ADMISSION_OPENS": "2023-02-01T09:00:11+01:00",
+     "UPLOAD_DEADLINE": "2023-04-15T23:59:00+02:00",
+     "REORDER_PROGRAMMES_DEADLINE": "2023-07-02T00:02:00+02:00",
+     "EDIT_STUDY_PROGRAMMES_OPENS": "2022-11-15T09:00:11+01:00",
+     "VACANT_STUDY_PROGRAMMES_OPENS": "2023-07-20T09:00:11+02:00",
+     "SPECIAL_ASSESSMENT_DEADLINE": "2023-04-16T00:02:00+02:00",
+     "VACANT_STUDY_PROGRAMMES_DEADLINE": "2023-09-26T23:59:11+02:00",
+     "FINAL_UPLOAD_DEADLINE": "2023-07-01T23:59:00+02:00",
+     "DEADLINE_FOR_EARLY_ADMISSION": "2023-03-02T00:02:00+01:00",
+     "VACANT_STUDY_PROGRAMMES_PUBLICATION_DATE": "2023-07-19T09:00:11+02:00",
+     "EARLY_DEADLINE": "2023-03-02T00:02:00+01:00",
+     "DELETE_PROGRAMMES_DEADLINE": "2023-07-13T00:02:00+02:00",
+     "EARLY_UPLOAD_DEADLINE": "2023-03-20T23:59:00+01:00"
+    },
+    "admissionRounds": [
+     {
+      "id": 12013,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2023-08-28T23:59:59+02:00"
+     },
+     {
+      "id": 12008,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2023-08-12T23:59:59+02:00"
+     },
+     {
+      "id": 12006,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2023-08-05T23:59:59+02:00"
+     },
+     {
+      "id": 12007,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2023-08-07T23:59:59+02:00"
+     },
+     {
+      "id": 12010,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2023-08-19T23:59:59+02:00"
+     },
+     {
+      "id": 12003,
+      "admissionRoundType": "MAIN",
+      "dateDeadline": "2023-07-24T23:59:59+02:00"
+     },
+     {
+      "id": 12004,
+      "admissionRoundType": "SUPPLEMENTARY",
+      "dateDeadline": "2023-08-01T23:59:59+02:00"
+     },
+     {
+      "id": 12011,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2023-08-21T23:59:59+02:00"
+     },
+     {
+      "id": 12009,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2023-08-14T23:59:59+02:00"
+     },
+     {
+      "id": 12012,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2023-08-26T23:59:59+02:00"
+     },
+     {
+      "id": 12014,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2023-09-02T23:59:59+02:00"
+     }
+    ]
+   },
+   {
+    "id": 10,
+    "name": "2022",
+    "status": "Archived",
+    "admissionType": "NOM",
+    "admissionEvents": {
+     "ORDINARY_DEADLINE": "2022-04-20T14:02:00+02:00",
+     "EARLY_UPLOAD_DEADLINE": "2022-03-20T23:59:00+01:00",
+     "SPECIAL_ASSESSMENT_DEADLINE": "2022-04-20T14:02:00+02:00",
+     "ADMISSION_OPENS": "2022-02-01T09:00:00+01:00",
+     "VACANT_STUDY_PROGRAMMES_DEADLINE": "2022-09-30T09:00:00+02:00",
+     "UPLOAD_DEADLINE": "2022-04-20T13:30:00+02:00",
+     "EDIT_STUDY_PROGRAMMES_DEADLINE": "2021-12-17T23:59:00+01:00",
+     "REORDER_PROGRAMMES_DEADLINE": "2022-07-02T00:02:00+02:00",
+     "EARLY_DEADLINE": "2022-03-02T00:02:00+01:00",
+     "DEADLINE_FOR_EARLY_ADMISSION": "2022-03-02T00:02:00+01:00",
+     "FINAL_UPLOAD_DEADLINE": "2022-07-01T23:59:00+02:00",
+     "VACANT_STUDY_PROGRAMMES_OPENS": "2022-07-20T09:00:00+02:00",
+     "DELETE_PROGRAMMES_DEADLINE": "2022-07-13T00:02:00+02:00",
+     "VACANT_STUDY_PROGRAMMES_PUBLICATION_DATE": "2022-07-19T09:00:00+02:00",
+     "EDIT_STUDY_PROGRAMMES_OPENS": "2021-11-15T09:00:00+01:00"
+    },
+    "admissionRounds": [
+     {
+      "id": 10003,
+      "admissionRoundType": "MAIN",
+      "dateDeadline": "2022-07-24T23:59:59+02:00"
+     },
+     {
+      "id": 10010,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2022-08-20T23:59:59+02:00"
+     },
+     {
+      "id": 10008,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2022-08-13T23:59:59+02:00"
+     },
+     {
+      "id": 10009,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2022-08-15T23:59:59+02:00"
+     },
+     {
+      "id": 10012,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2022-08-27T23:59:59+02:00"
+     },
+     {
+      "id": 10011,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2022-08-22T23:59:59+02:00"
+     },
+     {
+      "id": 10006,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2022-08-06T23:59:59+02:00"
+     },
+     {
+      "id": 10007,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2022-08-08T23:59:59+02:00"
+     },
+     {
+      "id": 10013,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2022-08-30T23:59:59+02:00"
+     },
+     {
+      "id": 10014,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2022-09-03T23:59:59+02:00"
+     },
+     {
+      "id": 10004,
+      "admissionRoundType": "SUPPLEMENTARY",
+      "dateDeadline": "2022-08-01T23:59:59+02:00"
+     }
+    ]
+   },
+   {
+    "id": 8,
+    "name": "2021",
+    "status": "Archived",
+    "admissionType": "NOM",
+    "admissionEvents": {
+     "SPECIAL_ASSESSMENT_DEADLINE": "2021-04-16T12:00:00+02:00",
+     "EARLY_DEADLINE": "2021-03-02T00:02:00+01:00",
+     "VACANT_STUDY_PROGRAMMES_PUBLICATION_DATE": "2021-07-19T12:00:00+02:00",
+     "EDIT_STUDY_PROGRAMMES_OPENS": "2020-11-13T12:00:00+01:00",
+     "EDIT_STUDY_PROGRAMMES_DEADLINE": "2020-12-18T23:59:00+01:00",
+     "REORDER_PROGRAMMES_DEADLINE": "2021-07-02T00:02:00+02:00",
+     "ORDINARY_DEADLINE": "2021-04-16T12:00:00+02:00",
+     "DELETE_PROGRAMMES_DEADLINE": "2021-07-13T00:02:00+02:00",
+     "EARLY_UPLOAD_DEADLINE": "2021-03-20T23:59:00+01:00",
+     "VACANT_STUDY_PROGRAMMES_DEADLINE": "2021-09-10T23:59:00+02:00",
+     "UPLOAD_DEADLINE": "2021-04-15T23:59:00+02:00",
+     "FINAL_UPLOAD_DEADLINE": "2021-07-01T23:59:00+02:00",
+     "VACANT_STUDY_PROGRAMMES_OPENS": "2021-07-20T09:00:00+02:00",
+     "ADMISSION_OPENS": "2021-02-01T09:00:00+01:00",
+     "DEADLINE_FOR_EARLY_ADMISSION": "2021-03-02T00:02:00+01:00"
+    },
+    "admissionRounds": [
+     {
+      "id": 8014,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2021-09-04T23:59:59+02:00"
+     },
+     {
+      "id": 8006,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2021-08-07T23:59:59+02:00"
+     },
+     {
+      "id": 8010,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2021-08-21T23:59:59+02:00"
+     },
+     {
+      "id": 8007,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2021-08-09T23:59:59+02:00"
+     },
+     {
+      "id": 8008,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2021-08-14T23:59:59+02:00"
+     },
+     {
+      "id": 8009,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2021-08-16T23:59:59+02:00"
+     },
+     {
+      "id": 8011,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2021-08-23T23:59:59+02:00"
+     },
+     {
+      "id": 8012,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2021-08-28T23:59:59+02:00"
+     },
+     {
+      "id": 8003,
+      "admissionRoundType": "MAIN",
+      "dateDeadline": "2021-07-24T23:59:59+02:00"
+     },
+     {
+      "id": 8004,
+      "admissionRoundType": "SUPPLEMENTARY",
+      "dateDeadline": "2021-08-01T23:59:59+02:00"
+     },
+     {
+      "id": 8013,
+      "admissionRoundType": "REFILL",
+      "dateDeadline": "2021-08-30T23:59:59+02:00"
+     }
+    ]
+   }
+  ],
+  "quotas": [
+   {
+    "id_quota": "ORD",
+    "quotaName": "Ordinær kvote",
+    "hidden": false,
+    "admissionsSorted": [
+     {
+      "id_admission": 16,
+      "pointLimit": 49.1
+     },
+     {
+      "id_admission": 14,
+      "pointLimit": 48
+     },
+     {
+      "id_admission": 12,
+      "pointLimit": 47.5
+     },
+     {
+      "id_admission": 10,
+      "pointLimit": 49.3
+     },
+     {
+      "id_admission": 8,
+      "pointLimit": 50.5
+     }
+    ]
+   },
+   {
+    "id_quota": "ORDF",
+    "quotaName": "Ordinær primærvitnemålskvote",
+    "hidden": false,
+    "admissionsSorted": [
+     {
+      "id_admission": 16,
+      "pointLimit": 45.6
+     },
+     {
+      "id_admission": 14,
+      "pointLimit": 45.4
+     },
+     {
+      "id_admission": 12,
+      "pointLimit": 46.3
+     },
+     {
+      "id_admission": 10,
+      "pointLimit": 44.5
+     },
+     {
+      "id_admission": 8,
+      "pointLimit": 43.8
+     }
+    ]
+   }
+  ]
+ },
+ "studyProgrammeInstitutionCode": "192369",
+ "certificates": ""
+}

@@ -1,0 +1,143 @@
+{
+ "kilde": "https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip (organization.csv, filene datert 2026-08-06)",
+ "hentet": "2026-09-24",
+ "merknad": "Horizon Europe 2021–2027, norske deltakere, navnematch (bør matches på vatNumber = NO+orgnr+MVA; NMBU = NO969159570MVA). ec_bidrag = sum ecContribution i mill. euro.",
+ "data": {
+  "NTNU": {
+   "deltakelser": 310,
+   "prosjekter": 309,
+   "koordinator": 103,
+   "ec_bidrag_meur": 182.0,
+   "navn_i_cordis": [
+    "NORGES TEKNISK-NATURVITENSKAPELIGE UNIVERSITET NTNU"
+   ]
+  },
+  "UiA": {
+   "deltakelser": 24,
+   "prosjekter": 24,
+   "koordinator": 6,
+   "ec_bidrag_meur": 11.4,
+   "navn_i_cordis": [
+    "UNIVERSITETET I AGDER"
+   ]
+  },
+  "UiS": {
+   "deltakelser": 34,
+   "prosjekter": 34,
+   "koordinator": 15,
+   "ec_bidrag_meur": 16.6,
+   "navn_i_cordis": [
+    "UNIVERSITETET I STAVANGER"
+   ]
+  },
+  "UiB": {
+   "deltakelser": 122,
+   "prosjekter": 121,
+   "koordinator": 56,
+   "ec_bidrag_meur": 90.4,
+   "navn_i_cordis": [
+    "UNIVERSITETET I BERGEN"
+   ]
+  },
+  "UiO": {
+   "deltakelser": 290,
+   "prosjekter": 289,
+   "koordinator": 145,
+   "ec_bidrag_meur": 189.8,
+   "navn_i_cordis": [
+    "UNIVERSITETET I OSLO",
+    "Universitetet i Oslo"
+   ]
+  },
+  "BI": {
+   "deltakelser": 6,
+   "prosjekter": 6,
+   "koordinator": 4,
+   "ec_bidrag_meur": 5.1,
+   "navn_i_cordis": [
+    "STIFTELSEN HANDELSHOYSKOLEN BI"
+   ]
+  },
+  "OsloMet": {
+   "deltakelser": 34,
+   "prosjekter": 34,
+   "koordinator": 14,
+   "ec_bidrag_meur": 9.4,
+   "navn_i_cordis": [
+    "OSLOMET - STORBYUNIVERSITETET"
+   ]
+  },
+  "UiT": {
+   "deltakelser": 116,
+   "prosjekter": 116,
+   "koordinator": 56,
+   "ec_bidrag_meur": 64.2,
+   "navn_i_cordis": [
+    "UNIVERSITETET I TROMSOE - NORGES ARKTISKE UNIVERSITET"
+   ]
+  },
+  "NMBU": {
+   "deltakelser": 47,
+   "prosjekter": 47,
+   "koordinator": 19,
+   "ec_bidrag_meur": 21.9,
+   "navn_i_cordis": [
+    "NORGES MILJO-OG BIOVITENSKAPELIGE UNIVERSITET"
+   ]
+  },
+  "USN": {
+   "deltakelser": 18,
+   "prosjekter": 18,
+   "koordinator": 5,
+   "ec_bidrag_meur": 6.5,
+   "navn_i_cordis": [
+    "UNIVERSITETET I SOROST-NORGE"
+   ]
+  },
+  "HVL": {
+   "deltakelser": 21,
+   "prosjekter": 21,
+   "koordinator": 11,
+   "ec_bidrag_meur": 9.6,
+   "navn_i_cordis": [
+    "HOGSKULEN PA VESTLANDET"
+   ]
+  },
+  "Nord": {
+   "deltakelser": 29,
+   "prosjekter": 29,
+   "koordinator": 12,
+   "ec_bidrag_meur": 8.2,
+   "navn_i_cordis": [
+    "NORD UNIVERSITET"
+   ]
+  },
+  "NHH": {
+   "deltakelser": 8,
+   "prosjekter": 8,
+   "koordinator": 6,
+   "ec_bidrag_meur": 3.4,
+   "navn_i_cordis": [
+    "NORGES HANDELSHOYSKOLE"
+   ]
+  },
+  "INN": {
+   "deltakelser": 7,
+   "prosjekter": 7,
+   "koordinator": 2,
+   "ec_bidrag_meur": 3.4,
+   "navn_i_cordis": [
+    "UNIVERSITETET I INNLANDET"
+   ]
+  },
+  "Kristiania": {
+   "deltakelser": 1,
+   "prosjekter": 1,
+   "koordinator": 0,
+   "ec_bidrag_meur": 0.3,
+   "navn_i_cordis": [
+    "HOYSKOLEN KRISTIANIA - ERNST G. MORTENSENS STIFTELSE"
+   ]
+  }
+ }
+}

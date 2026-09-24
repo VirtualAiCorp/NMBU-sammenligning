@@ -1,0 +1,50 @@
+Vi har satt en grense på 500000 i retur data for noen spørringer (tabellene: 
+208,347,900,905,906) 
+Tilgang og autentisering 
+• Tilgang: Åpne data kan hentes uten innlogging. Persondata og små tall (mindre 
+enn 3) skjermes etter GDPR. Alle endepunkt ligger tilgjengelig i API klient. 
+• Du kan få tilgang til nøyaktige tall for din egen institusjon med en JSON Web Token 
+(JWT). For å få en slik token må du være registrert i Feide. Du kan kontakte oss på 
+dbh@hkdir.no for mer veiledning om dette. 
+• Et JSON Web token varer i maksimalt 5 min. Deretter må det hentes på nytt. Dette 
+har betydning for store script der bruker henter mange tabeller. 
+ 
+ 
+Bruksvilkår 
+Vilkårene for bruk følger til enhver tid gjeldende Norsk lisens for offentlige data. Legg 
+spesielt merke til følgende: HK-dir/DBH/DBH-HYU tar ikke ansvar for konsekvenser som 
+følge av feil i systemet.  
+DBH/DBH-HYU skal oppgis som kilde ved bruk av data fra tjenesten. Dataene skal ikke 
+presenteres på en måte som fremstår som villedende, og heller ikke fordreies eller 
+fremstilles uriktig.  
+Les grundig alle vilkårene for bruk i den standardiserte lisensen for offentlige data. Alle 
+forespørsler logges av HK-dir av hensyn til bruksmønster og drift. 
+ 
+Tolking av data 
+Egenskaper ved data benyttes til å aggregere og kategorisere data, som fordeling på 
+finansieringskategorier, studienivå, heltid/deltid etc. Datakvaliteten er derfor avgjørende. 
+ Endringer og overgangsperioder for data finnes i dokumentasjonen for hver enkelt tabell 
+funksjonen: ‘Direkte Csv’ . 
+ 
+GDPR og skjerming 
+For tabeller merket for skjerming (001-Innhold) anonymiseres små tall (<3) for brukere 
+uten institusjonstilgang. Når data presenteres videre, vil det fremgå at tall kan være 
+skjermet, for å unngå feiltolkning. Institusjoner må logge på Feide for å få nøkkel(token) 
+slik at de kan se små tall der disse tallene er skjermet. Institusjonene henter token fra 
+Feide som de sender med spørringen. 
+DBH api klient anonymiserer data. Her kan ikke bruker logge på Feide. Brukere må lage 
+script for å hente små tall (som beskrevet over). 
+ 
+ 
+Eksempel på Arbeidsflyt (fra idé til rapport) 
+1. Identifiser tabell(er) og variabler (se 001-innhold/002-metadata/913–916). 
+2. Bygg og test spørring i API-klienten; legg inn nødvendige filter. 
+3. Kjør mot /hentJSONTabellData eller /hentCSVTabellData– verifiser datakvalitet. 
+4. For store uttrekk/produksjon: bruk / /streamCsvData og lagre til fil. Du kan også 
+bruke BULK og kjøre ut en  hel tabell. BULK gjelder for tabeller som ikke er 
+beskyttet av GDPR. Disse er merket med Bulk tabell i tabell 001-innhold. 
+5. Import til Excel: Bruk «Data → Fra tekst», velg UTF‑8 og semikolon som skilletegn. 
+ 
+Vanlige feilsituasjoner 
+• Ingen/feil data: Sjekk filterverdier, datoformat, at sortBy ⊆ groupBy, og at 
+Kilde: https://dbh.hkdir.no/static/files/dokumenter/api/api_dokumentasjon.pdf (HK-dir 03.12.2025), hentet 2026-09-24
