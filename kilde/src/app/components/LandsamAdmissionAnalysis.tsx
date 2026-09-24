@@ -7,6 +7,7 @@ import { TrendingUp, TrendingDown, Minus, Info, ExternalLink, Filter } from 'luc
 import { CsvExportButton } from './CsvExportButton';
 import { exportFacultyAdmissionCsv } from '../utils/csvExport';
 import type { LandsamGroup, LandsamLevel } from '../data/landsamAdmissionData';
+import { PrisOgCampus } from './PrisOgCampus';
 import { INGEN_DATA_TEKST, type FacultyData } from '../data/faculties';
 import { FacultyContext, useFaculty, useFacultyColor } from '../data/facultyContext';
 import { landsamHasComparison } from '../data/landsamUtils';
@@ -802,6 +803,8 @@ export function LandsamAdmissionAnalysis({ faculty, initialGroup }: { faculty: F
         </div>
       </div>
 
+      <PrisOgCampusMedFarge group={group} />
+
       <div className="flex items-start gap-2 text-xs rounded-lg px-4 py-3"
         style={{ backgroundColor: 'var(--nmbu-beige-light)', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-2)' }}>
         <Info className="w-3.5 h-3.5 shrink-0 mt-0.5" />
@@ -818,4 +821,9 @@ export function LandsamAdmissionAnalysis({ faculty, initialGroup }: { faculty: F
     </div>
     </FacultyContext.Provider>
   );
+}
+
+function PrisOgCampusMedFarge({ group }: { group: LandsamGroup }) {
+  const colorFor = useFacultyColor();
+  return <PrisOgCampus group={group} colorFor={colorFor} />;
 }

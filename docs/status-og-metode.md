@@ -460,3 +460,18 @@ Grunnlaget er kartleggingen i `docs/bi-kristiania-alternative-kilder.md`, punkt 
 - **Kilder:** 28 av PDF-ene er kopiert fra den opprinnelige HH-analysen (`kilde/src/imports/`); den og `MarkedsstatusView.tsx` er ikke endret. De øvrige er lastet ned fra offentlige kilder. BI og Kristiania bygger på Brønnøysund, statsbudsjettet og DBH, fordi styrepapirene deres ikke er offentlige.
 - **Bygget uten HH:** PDF-ene ligger i `public/`. Et lite programtillegg i `vite.config.ts` (`fjern-hh-markedsstatus`) sletter derfor `markedsstatus/hh` fra dette bygget. Kontrollert.
 
+## 27. Pris og studiested hos de private (24.09.2026)
+
+`scripts/build-pris-campus.py [--refresh]` → `prisCampusData.ts/.json`, vist som «Pris og studiested hos de private» under grafene i opptaksanalysen (`PrisOgCampus.tsx`), i alle programgrupper som har BI eller Kristiania.
+- **Studieavgift:** føres for hånd i `data/hh/kilder/studieavgift.json`, fra programsidene 24.09.2026, og oppdateres hver vår.
+  - BI økonomi og administrasjon: 86 800 kr i året (deltid 43 400 kr).
+  - BI Digital Business og Data Science for Business: 106 400 kr.
+  - BIs mastere: 128 200 kr for eksterne søkere, 110 700 kr for interne. MSc in Applied Economics er erstattet av MSc in Business, major in Economics.
+  - Kristiania økonomi og administrasjon: 42 000 kr per semester.
+  - Kristiania innovasjonsledelse: 58 900 kr per semester.
+  - NMBU og de statlige: 0 kr, bare semesteravgift.
+  - «Hele løpet» = pris per år × normert tid, uten prisøkning.
+- **Campus:** DBH 124, registrerte studenter høsten (alle årskull) per campus, for programmene til BI og Kristiania i dbh-programkart. Cache: `data/nmbu/kilder/dbh-campus/`.
+  - BI økonomi og administrasjon høsten 2025: Oslo 1 279 (32 %), Bergen 1 222 (31 %), Trondheim 823 (21 %), nett 396 (10 %), Stavanger 258 (6 %).
+  - Kristianias program er i Oslo.
+

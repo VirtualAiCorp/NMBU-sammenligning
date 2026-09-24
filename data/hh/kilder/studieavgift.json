@@ -1,0 +1,15 @@
+{
+ "hentet": "2026-09-24",
+ "forklaring": "Studieavgift for studieåret 2026–2027 fra programsidene, kr per år for heltid. Kristiania oppgir pris per semester (× 2). BI skiller mellom interne søkere (egne bachelorkandidater) og eksterne på master; perAar er prisen for eksterne søkere, som en NMBU-student ville betalt. Statlige institusjoner tar ikke studieavgift for ordinære gradsstudier, bare semesteravgift til studentsamskipnaden. Oppdateres hver vår.",
+ "programmer": {
+  "bi_oa": {"perAar": 86800, "merknad": "Deltid (nett): 43 400 kr per år.", "url": "https://www.bi.no/studier-og-kurs/bachelorstudier/okonomi-og-administrasjon/"},
+  "bi_dbh": {"perAar": 106400, "url": "https://www.bi.no/studier-og-kurs/bachelorstudier/digital-business/"},
+  "bi_dsb": {"perAar": 106400, "url": "https://www.bi.no/studier-og-kurs/bachelorstudier/data-science-for-business/"},
+  "kristiania_oa": {"perAar": 84000, "perSemester": 42000, "url": "https://www.kristiania.no/studier/bachelor/okonomi-og-administrasjon/"},
+  "kristiania_bod": {"perAar": 84000, "perSemester": 42000, "merknad": "Programsiden videresender til økonomi og administrasjon; prisen er derfra.", "url": "https://www.kristiania.no/studier/bachelor/okonomi-og-administrasjon/"},
+  "bi_moa": {"perAar": 128200, "internPerAar": 110700, "merknad": "Eksterne søkere; BIs egne bachelorkandidater betaler 110 700 kr.", "url": "https://www.bi.no/studier-og-kurs/masterstudier/business/"},
+  "bi_mecon": {"perAar": 128200, "internPerAar": 110700, "merknad": "MSc in Applied Economics tar ikke opp nye studenter; prisen gjelder etterfølgeren MSc in Business, major in Economics (eksterne søkere).", "url": "https://www.bi.no/studier-og-kurs/masterstudier/business/major-in-economics/"},
+  "bi_mei": {"perAar": 128200, "internPerAar": 110700, "merknad": "Eksterne søkere; BIs egne bachelorkandidater betaler 110 700 kr.", "url": "https://www.bi.no/studier-og-kurs/masterstudier/innovation-and-entrepreneurship/"},
+  "kristiania_mei": {"perAar": 117800, "perSemester": 58900, "url": "https://www.kristiania.no/studier/master/innovasjonsledelse/"}
+ }
+}
