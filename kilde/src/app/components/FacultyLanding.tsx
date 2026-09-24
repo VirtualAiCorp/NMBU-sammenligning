@@ -1,8 +1,8 @@
 import type { ReactNode } from 'react';
-import { BookOpen, Building2, Trees, Atom, Leaf, FlaskConical, TreePine, Lock, PawPrint, Users, Home, Landmark, LayoutGrid } from 'lucide-react';
+import { BookOpen, Building2, Trees, Atom, Leaf, FlaskConical, TreePine, Lock, PawPrint, Users, Home, Landmark, LayoutGrid, Baby } from 'lucide-react';
 import { FACULTY_META as FACULTIES, FACULTY_IDS, type FacultyId } from '../data/facultyMeta';
 
-export type Faculty = 'hh-figma' | FacultyId | 'nmbu-emner' | 'nmbu-fagmiljo' | 'nmbu-bolig' | 'nmbu-okonomi' | 'nmbu-oppsett';
+export type Faculty = 'hh-figma' | FacultyId | 'nmbu-emner' | 'nmbu-fagmiljo' | 'nmbu-bolig' | 'nmbu-okonomi' | 'nmbu-oppsett' | 'nmbu-sokergrunnlag';
 
 interface Props {
   onSelect: (faculty: Faculty) => void;
@@ -123,6 +123,25 @@ export function FacultyLanding({ onSelect }: Props) {
             <div style={{ fontFamily: "'Lora', serif", fontWeight: 500, fontSize: '20px', color: 'var(--nmbu-green-dark)', marginBottom: 4 }}>Økonomi og styringsindikatorer</div>
             <p style={{ fontSize: '13px', color: 'var(--nmbu-neutral-2)', lineHeight: 1.5 }}>
               Driftsinntekter, statstilskudd, eksterne inntekter og Kunnskapsdepartementets styringsindikatorer for NMBU mot institusjonene vi konkurrerer med. DBH 2019–2025.
+            </p>
+          </div>
+        </button>
+
+        {/* Søkergrunnlaget */}
+        <button
+          onClick={() => onSelect('nmbu-sokergrunnlag')}
+          className="w-full rounded-2xl p-6 text-left transition-all mb-8 flex items-center gap-5"
+          style={{ backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)', boxShadow: '0 2px 8px rgba(2,92,79,0.08)' }}
+          onMouseEnter={(e) => { (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 4px 16px rgba(2,92,79,0.16)'; (e.currentTarget as HTMLButtonElement).style.transform = 'translateY(-2px)'; }}
+          onMouseLeave={(e) => { (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 2px 8px rgba(2,92,79,0.08)'; (e.currentTarget as HTMLButtonElement).style.transform = 'translateY(0)'; }}
+        >
+          <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: 'var(--nmbu-green-4)' }}>
+            <Baby className="w-5 h-5" style={{ color: 'var(--nmbu-green-dark)' }} />
+          </div>
+          <div>
+            <div style={{ fontFamily: "'Lora', serif", fontWeight: 500, fontSize: '20px', color: 'var(--nmbu-green-dark)', marginBottom: 4 }}>Søkergrunnlaget</div>
+            <p style={{ fontSize: '13px', color: 'var(--nmbu-neutral-2)', lineHeight: 1.5 }}>
+              Ungdomskullene per fylke fram mot 2045 (toppen kommer rundt 2029) og matematikk og gjennomføring i videregående. SSB og Udir.
             </p>
           </div>
         </button>

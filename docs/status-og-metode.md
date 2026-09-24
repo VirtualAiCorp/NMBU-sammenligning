@@ -494,3 +494,18 @@ Kilde: Samordna opptak, «Nye regler fra 2027 for opptak til høyere utdanning»
   - Poenggrensene før og etter 2028 blir ikke direkte sammenlignbare.
 - **Simulatoren** har knappene «50 % i dag» og «65 % fra 2028». De viser bare effekten av kvotestørrelsen, med dagens søkere og poeng. For å simulere aldersgrensen på 23 år og bortfallet av tilleggspoeng trengs alder og poengkomponenter (aggregert) fra opptakskontoret.
 
+## 29. Søkergrunnlaget (24.09.2026)
+
+Modulen «Søkergrunnlaget» finnes per fakultet (sidemeny og kort på fakultetets forside) og for hele NMBU (`components/Sokergrunnlag.tsx`, lastes lat).
+- **Ungdomskullene:** `scripts/build-sokergrunnlag.py` → `kilde/public/sokergrunnlag/ssb.json` (23 kB).
+  - Kilder: SSB 07459 (befolkning 2016–2025) og 14746 (befolkningsframskrivingene 2026, hovedalternativet, 2026–2045), for aldrene 16–24 per fylke med 2024-inndelingen.
+  - Siden viser tre aldersgrupper: 19 år, 19–24 år og 16–18 år.
+  - Grafen viser en indeks (2025 = 100) for hele landet og et valgt område (standard: Akershus, Oslo og Østfold) og viser hvert fylke i området for seg. Tabellen har alle fylkene, med konkurrentenes studiesteder koblet til fylke via bolig.json.
+  - 19-åringer i Norge: 66 342 i 2025, toppen er 70 883 i 2029, og tallet er 61 090 i 2040.
+  - Fylkene som ble delt i 2024 har befolkningstall først fra 2024.
+- **Hvor studentene kommer fra, per program eller institusjon:** finnes ikke som åpne data.
+  - DBHs åpne API (111 tabeller) har ingen hjemfylketabell.
+  - SSB 09224 (studenter etter bosted ved 16 år) er for usikker per fylke i 2025: 11 % har ukjent bosted, og mange står på fylkene fra før 2024. Den er derfor ikke brukt.
+  - For NMBUs egne program kan hjemfylke komme fra opptakskontorets FS-uttrekk (postnummer eller bostedskommune). Adressefeltene i uttrekket for H26 er tomme.
+- **Videregående (Udir):** `scripts/fetch-udir.py` → `kilde/public/sokergrunnlag/udir.json` (se neste avsnitt når det er på plass). Kortet vises bare når filen finnes.
+

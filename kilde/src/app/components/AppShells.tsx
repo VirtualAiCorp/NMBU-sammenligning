@@ -1,7 +1,7 @@
 import { useMemo, useState, type ReactNode } from 'react';
 import {
   LayoutDashboard, BookOpen, Microscope, Home, Landmark, TrendingUp, GraduationCap, Users, Star, Globe2,
-  LayoutGrid, Menu, X, Coins, Archive, Lock,
+  LayoutGrid, Menu, X, Coins, Archive, Lock, Baby,
 } from 'lucide-react';
 import { FACULTY_META as FACULTIES, ALL_FACULTY_IDS as FACULTY_IDS, useAllFacultyBases, type FacultyId } from '../data/faculties';
 import type { Faculty } from './FacultyLanding';
@@ -13,7 +13,7 @@ import { InnebygdContext } from '../innebygd';
  * som i «oversikt»; App.tsx leverer dem som children. Navigasjonen går via onNavigate(fakultet, visning).
  */
 
-export type ShellView = 'landing' | 'analyse' | 'emner' | 'markedsstatus' | 'studiebarometer' | 'gjennomforing' | 'studentene' | 'fagmiljo' | 'bolig' | 'okonomi' | 'inntekt' | 'intern';
+export type ShellView = 'landing' | 'analyse' | 'emner' | 'markedsstatus' | 'studiebarometer' | 'gjennomforing' | 'studentene' | 'fagmiljo' | 'bolig' | 'sokergrunnlag' | 'okonomi' | 'inntekt' | 'intern';
 type Nav = (f: Faculty | null, view?: ShellView, gruppe?: string) => void;
 
 export const FAKULTETSMODULER: { view: ShellView; label: string; icon: typeof BookOpen; kunFor?: FacultyId }[] = [
@@ -27,6 +27,7 @@ export const FAKULTETSMODULER: { view: ShellView; label: string; icon: typeof Bo
   { view: 'inntekt', label: 'Inntekt', icon: Coins },
   { view: 'intern', label: 'Opptak H26 (intern)', icon: Lock, kunFor: 'hh' },
   { view: 'fagmiljo', label: 'Fagmiljøet', icon: Microscope },
+  { view: 'sokergrunnlag', label: 'Søkergrunnlaget', icon: Baby },
   { view: 'bolig', label: 'Bolig', icon: Home },
   { view: 'okonomi', label: 'Økonomi', icon: Landmark },
 ];
@@ -34,6 +35,7 @@ const NMBU_SIDER: { f: Faculty | null; label: string; icon: typeof BookOpen }[] 
   { f: null, label: 'Oversikt', icon: LayoutDashboard },
   { f: 'nmbu-emner', label: 'Alle emner ved NMBU', icon: BookOpen },
   { f: 'nmbu-fagmiljo', label: 'Fagmiljøet', icon: Microscope },
+  { f: 'nmbu-sokergrunnlag', label: 'Søkergrunnlaget', icon: Baby },
   { f: 'nmbu-bolig', label: 'Bolig og studentboliger', icon: Home },
   { f: 'nmbu-okonomi', label: 'Økonomi', icon: Landmark },
 ];
