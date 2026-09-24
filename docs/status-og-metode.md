@@ -475,3 +475,22 @@ Grunnlaget er kartleggingen i `docs/bi-kristiania-alternative-kilder.md`, punkt 
   - BI økonomi og administrasjon høsten 2025: Oslo 1 279 (32 %), Bergen 1 222 (31 %), Trondheim 823 (21 %), nett 396 (10 %), Stavanger 258 (6 %).
   - Kristianias program er i Oslo.
 
+## 28. Nye opptaksregler fra 2027/2028 (24.09.2026)
+
+Kilde: Samordna opptak, «Nye regler fra 2027 for opptak til høyere utdanning» (sist endret 24.09.2026). Innholdet ligger i `components/NyeOpptaksregler.tsx`.
+- **Visning:** en sammenfoldet boks i opptaksanalysen for Samordna-grupper (alle fakulteter), og en åpen boks med «Hva betyr det for HHs bachelorprogram?» på den interne opptakssiden.
+- **Opptaket høsten 2026** følger dagens regler.
+- **Fra høsten 2027:**
+  - 23/6-regelen erstatter 23/5-regelen.
+  - Særskilt vurdering fjernes.
+  - Poenglikhet avgjøres ved loddtrekning.
+  - Institusjonene kan fritt bruke rangerende opptaksprøver og kan søke om kjønnskvoter.
+- **Fra opptaket høsten 2028 (de store endringene):**
+  - Førstegangsvitnemålskvoten får aldersgrense 23 år og utgjør 65 % av plassene.
+  - Alderspoeng og tilleggspoeng for høyere utdanning, fagskole og folkehøgskole fjernes.
+  - Språkpoeng, naturbrukspoeng og kjønnspoeng fjernes.
+  - Realfagspoengene halveres, og poeng for militærtjeneste går fra 2 til 1.
+  - Dobbeltrangering fjernes.
+  - Poenggrensene før og etter 2028 blir ikke direkte sammenlignbare.
+- **Simulatoren** har knappene «50 % i dag» og «65 % fra 2028». De viser bare effekten av kvotestørrelsen, med dagens søkere og poeng. For å simulere aldersgrensen på 23 år og bortfallet av tilleggspoeng trengs alder og poengkomponenter (aggregert) fra opptakskontoret.
+

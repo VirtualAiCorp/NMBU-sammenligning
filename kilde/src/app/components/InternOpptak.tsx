@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState, type ReactNode } from 'react';
 import { BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend, ReferenceLine } from 'recharts';
 import { Lock, Info, Users, SlidersHorizontal, TrendingDown, Filter } from 'lucide-react';
 import { LANDSAM_GROUPS as HH_GROUPS } from '../data/hhAdmissionData';
+import { NyeOpptaksregler } from './NyeOpptaksregler';
 
 /**
  * Intern opptaksanalyse for HHs bachelorprogram (høsten 2026), fra opptakskontorets FS-uttrekk.
@@ -266,6 +267,8 @@ function Analyse({ data }: { data: Data }) {
         </div>
       </div>
 
+      <div className="mb-5"><NyeOpptaksregler variant="full" /></div>
+
       <div className="flex flex-wrap gap-2 mb-5">
         {koder.map((k) => (
           <button key={k} onClick={() => bytt(k)} className="px-4 py-2 rounded-full text-sm"
@@ -319,9 +322,22 @@ function Analyse({ data }: { data: Data }) {
               </label>
             )}
             <label className="block text-sm mt-4" style={{ color: 'var(--nmbu-neutral-1)' }}>
-              Andel av tilbudene i førstegangsvitnemålskvoten: <b>{Math.round(fv * 100)} %</b> <span style={{ color: 'var(--nmbu-neutral-2)' }}>(regelen er 50 %)</span>
+              Andel av tilbudene i førstegangsvitnemålskvoten: <b>{Math.round(fv * 100)} %</b> <span style={{ color: 'var(--nmbu-neutral-2)' }}>(regelen er 50 %, 65 % fra opptaket høsten 2028)</span>
               <input type="range" min={30} max={70} value={Math.round(fv * 100)} onChange={(e) => setFv(Number(e.target.value) / 100)} className="w-full mt-2" />
             </label>
+            <div className="flex gap-2 mt-2">
+              {[{ v: 0.5, l: '50 % i dag' }, { v: 0.65, l: '65 % fra 2028' }].map((b) => (
+                <button key={b.l} onClick={() => setFv(b.v)} className="px-3 py-1 rounded-full text-xs"
+                  style={{ backgroundColor: Math.round(fv * 100) === Math.round(b.v * 100) ? 'var(--nmbu-green-dark)' : 'var(--nmbu-beige-light)', color: Math.round(fv * 100) === Math.round(b.v * 100) ? '#fff' : 'var(--nmbu-neutral-1)' }}>
+                  {b.l}
+                </button>
+              ))}
+            </div>
+            {Math.round(fv * 100) === 65 && (
+              <div className="mt-2 text-xs" style={{ color: 'var(--nmbu-neutral-2)' }}>
+                Viser bare effekten av større kvote med dagens søkere og poeng. Høyere aldersgrense (23 år) og færre tilleggspoeng fra 2028 er ikke med; se boksen om nye opptaksregler.
+              </div>
+            )}
           </div>
           <div className="overflow-x-auto">
             <table className="w-full text-sm border-collapse">

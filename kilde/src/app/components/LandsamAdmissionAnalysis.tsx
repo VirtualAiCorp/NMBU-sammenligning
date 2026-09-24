@@ -8,6 +8,7 @@ import { CsvExportButton } from './CsvExportButton';
 import { exportFacultyAdmissionCsv } from '../utils/csvExport';
 import type { LandsamGroup, LandsamLevel } from '../data/landsamAdmissionData';
 import { PrisOgCampus } from './PrisOgCampus';
+import { NyeOpptaksregler } from './NyeOpptaksregler';
 import { INGEN_DATA_TEKST, type FacultyData } from '../data/faculties';
 import { FacultyContext, useFaculty, useFacultyColor } from '../data/facultyContext';
 import { landsamHasComparison } from '../data/landsamUtils';
@@ -698,6 +699,8 @@ export function LandsamAdmissionAnalysis({ faculty, initialGroup }: { faculty: F
           <span>{group.note}</span>
         </div>
       )}
+
+      {!isLocal && <NyeOpptaksregler />}
 
       <div className="grid gap-5" style={{ gridTemplateColumns: '220px 1fr' }}>
 
