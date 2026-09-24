@@ -509,3 +509,21 @@ Modulen «Søkergrunnlaget» finnes per fakultet (sidemeny og kort på fakultete
   - For NMBUs egne program kan hjemfylke komme fra opptakskontorets FS-uttrekk (postnummer eller bostedskommune). Adressefeltene i uttrekket for H26 er tomme.
 - **Videregående (Udir):** `scripts/fetch-udir.py` → `kilde/public/sokergrunnlag/udir.json` (se neste avsnitt når det er på plass). Kortet vises bare når filen finnes.
 
+## 30. Videregående, suppleringsopptak og internasjonalisering (24.09.2026)
+
+- **Videregående (Udir):** `scripts/fetch-udir.py` → `kilde/public/sokergrunnlag/udir.json`, fra Udirs statistikkportal (den samme åpne motoren som statistikkbanken bruker; det formelle API-et har bare Elevundersøkelsen). Vises nederst i Søkergrunnlaget.
+  - Standpunkt i Matematikk R1, R2, S1 og S2 (LK06- og LK20-kodene, se merknadene) for skoleårene 2007-08 til 2025-26: antall elever og snitt per fylke. Fylkene fra 2024 har egne tall fra 2023-24.
+  - Andel av årskullet: elever delt på 17-åringer (R1, S1) eller 18-åringer (R2, S2) fra SSB.
+  - Fullført videregående: kullene 2014–2019 med den gamle fylkesinndelingen. Udir fjernet eldre kull 11.09.2026.
+  - Hele landet 2025-26: R1 10 581 elever (snitt 4,0), R2 5 657 (4,2), S1 1 461 (3,5), S2 1 959 (3,8). Kontrollert mot Udirs egen artikkel.
+- **Suppleringsopptaket (Samordna):** `build-landsam-data.py` leser nå også grensene etter suppleringsopptaket (`pgs_fv`, `pgs_ord`) fra poenggrensefila.
+  - Nye mål i opptaksanalysen for Samordna-grupper: supplering ordinær og FV, fall i supplering, kvalifiserte per plass og tilbud per plass.
+  - Tabellen «Hvem sliter med å fylle opp?» (`Opptaksrunder.tsx`) følger hvert program fra april (førstevalgssøkere per plass) via hovedopptaket (kvalifiserte og tilbud per plass, grense) til suppleringsopptaket. Status er «alle kvalifiserte fikk tilbud» i hovedopptaket eller supplering, eller at grensen falt, pluss antall av de siste tre årene.
+  - Samordnas restplasslister arkiveres ikke.
+  - DBHs «nye studenter» ble prøvd som fyllingsgrad, men forkastet: tallene er ustabile (B-ØA: 71–457 per år), og forholdstallet mot studieplasser spriker for mye.
+- **Internasjonalisering:** `scripts/build-internasjonal.py` → `internasjonalData.ts`, vist som to nye mål i kortet «Studentene».
+  - Engelsk undervisning: andel av studiepoengene programmets studenter tar i emner på engelsk (DBH 208 og 308).
+  - Innreisende i emnene: andel innreisende utvekslingsstudenter blant kandidatene i programmets emner. Innreisende registreres ikke på gradsprogrammene, men på egne utvekslingskoder fra DBH 142. En kode regnes som utvekslingskode når innreisende er minst 30 % av de registrerte, eller når navnet tyder på det.
+  - BI er satt til ikke målbart (innreisende står sammen med enkeltemnestudenter), og NHHs «MSC23» er tatt ut (`UTV_OVERSTYR`).
+  - Eksempel 2025: NMBU B-ØA 4,8 % engelsk og 0,1 % innreisende; NHH 19,3 % og 5,2 %.
+

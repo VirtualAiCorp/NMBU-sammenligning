@@ -200,7 +200,7 @@ export function Sokergrunnlag({ steder }: { steder?: string[] }) {
         </p>
       </Kort>
 
-      {udir && <VideregaendeKort udir={udir} />}
+      {udir && <VideregaendeKort udir={udir} ssb={ssb} />}
 
       <div className="flex items-start gap-2 text-xs rounded-lg px-4 py-3" style={{ backgroundColor: 'var(--nmbu-beige-light)', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-2)' }}>
         <Info className="w-3.5 h-3.5 shrink-0 mt-0.5" />
@@ -213,22 +213,30 @@ export function Sokergrunnlag({ steder }: { steder?: string[] }) {
   );
 }
 
-function VideregaendeKort({ udir }: { udir: Udir }) {
+function VideregaendeKort({ udir, ssb }: { udir: Udir; ssb: Ssb }) {
   const fag = Object.keys(udir.matematikk ?? {});
   const [valgtFag, setValgtFag] = useState(fag.find((f) => f.includes('R2')) ?? fag[0]);
   if (!fag.length && !udir.gjennomforing) return null;
   const m = udir.matematikk?.[valgtFag] ?? {};
-  const aar = [...new Set(Object.values(m).flatMap((x) => Object.keys(x)))].sort();
-  const siste = aar[aar.length - 1]; const tidlig = aar[Math.max(0, aar.length - 4)];
-  const regioner = Object.keys(udir.fylker).filter((r) => m[r]);
-  const grafData = aar.map((a) => { const rad: Record<string, number | string> = { aar: a }; fag.forEach((f) => { const v = udir.matematikk?.[f]?.['0']?.[a]?.elever; if (v != null) rad[f] = v; }); return rad; });
+  const alleAar = [...new Set(Object.values(m).flatMap((x) => Object.keys(x)))].sort();
+  const siste = alleAar[alleAar.length - 1];
+  // Fylkene fra 2024 har egne tall fra 2023-24; sammenlign med det året
+  const nyeFylker = ssb.rekkefolge.filter((r) => m[r]);
+  const start = alleAar.find((a) => nyeFylker.every((r) => r === '0' || m[r]?.[a])) ?? alleAar[0];
+  // Andel av årskullet: R1/S1 tas normalt på Vg2 (17 år), R2/S2 på Vg3 (18 år). Kullstørrelse fra SSB (1. januar i vårhalvåret).
+  const alderKull = /R1|S1/.test(valgtFag) ? '17' : '18';
+  const kull = (r: string, skoleaar: string) => { const y = Number(skoleaar.slice(0, 4)) + 1; const i = ssb.aar.indexOf(y); return i >= 0 ? ssb.alder[r]?.[alderKull]?.[i] ?? null : null; };
+  const andel = (r: string, a: string) => { const e = m[r]?.[a]?.elever; const k = kull(r, a); return e != null && k ? (100 * e) / k : null; };
+  const grafData = alleAar.map((a) => { const rad: Record<string, number | string> = { aar: a }; fag.forEach((f) => { const v = udir.matematikk?.[f]?.['0']?.[a]?.elever; if (v != null) rad[f] = v; }); return rad; });
   const gj = udir.gjennomforing ?? {};
-  const gjSiste = (r: string) => { const k = Object.keys(gj[r] ?? {}).sort(); const y = k[k.length - 1]; return y ? { kull: y, ...gj[r][y] } : null; };
+  const gjKull = [...new Set(Object.values(gj).flatMap((x) => Object.keys(x)))].sort();
+  const gjSiste = gjKull[gjKull.length - 1];
+  const gjRader = Object.keys(gj).filter((r) => gj[r]?.[gjSiste]).sort((a, b) => (a === '0' ? -1 : b === '0' ? 1 : (udir.fylker[a] ?? a).localeCompare(udir.fylker[b] ?? b, 'nb')));
   return (
     <Kort tittel="Videregående: matematikk og gjennomføring" ikon={Calculator}>
       <p className="text-xs mb-3" style={{ color: 'var(--nmbu-neutral-2)', lineHeight: 1.6 }}>
-        Elever med karakter i matematikkfagene som gir grunnlag for mattekrav (R1, eller S1 + S2) og realfagspoeng. Fra opptaket høsten 2028 halveres
-        realfagspoengene (R2 gir 0,5), så valget mellom R- og S-matematikk kan endre seg.
+        Elever med standpunktkarakter i matematikkfagene som gir grunnlag for mattekrav (R1, eller S1 + S2) og realfagspoeng. Fra opptaket høsten 2028
+        halveres realfagspoengene (R2 gir 0,5), så valget mellom R- og S-matematikk kan endre seg.
       </p>
       {fag.length > 0 && (
         <>
@@ -236,7 +244,7 @@ function VideregaendeKort({ udir }: { udir: Udir }) {
           <ResponsiveContainer width="100%" height={260}>
             <LineChart data={grafData} margin={{ top: 10, right: 20, left: 0, bottom: 0 }}>
               <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
-              <XAxis dataKey="aar" tick={{ fontSize: 11 }} />
+              <XAxis dataKey="aar" tick={{ fontSize: 10 }} />
               <YAxis tick={{ fontSize: 11 }} tickFormatter={(v: number) => nf(v)} />
               <Tooltip formatter={(v: number, n: string) => [nf(v), n]} />
               <Legend wrapperStyle={{ fontSize: 11 }} />
@@ -249,38 +257,63 @@ function VideregaendeKort({ udir }: { udir: Udir }) {
                 style={{ backgroundColor: valgtFag === f ? 'var(--nmbu-green-dark)' : 'var(--nmbu-beige-light)', color: valgtFag === f ? '#fff' : 'var(--nmbu-neutral-1)' }}>{f}</button>
             ))}
           </div>
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse text-xs">
+              <thead>
+                <tr style={{ backgroundColor: 'var(--nmbu-beige-light)', borderBottom: '2px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-2)' }}>
+                  <th className="px-3 py-2 text-left">Fylke</th>
+                  <th className="px-3 py-2 text-right">Elever {start}</th>
+                  <th className="px-3 py-2 text-right">Elever {siste}</th>
+                  <th className="px-3 py-2 text-right">Endring</th>
+                  <th className="px-3 py-2 text-right" title={`Elever med karakter delt på antall ${alderKull}-åringer i fylket (SSB)`}>Andel av {alderKull}-åringene {siste}</th>
+                  <th className="px-3 py-2 text-right">Snitt {siste}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {nyeFylker.map((r) => {
+                  const a = m[r]?.[start]?.elever; const b = m[r]?.[siste]?.elever; const an = andel(r, siste);
+                  return (
+                    <tr key={r} style={{ borderBottom: '1px solid var(--nmbu-beige-light)', fontWeight: r === '0' ? 700 : 400, backgroundColor: r === '0' ? 'var(--nmbu-beige-light)' : 'transparent' }}>
+                      <td className="px-3 py-1.5">{ssb.fylker[r] ?? udir.fylker[r]}</td>
+                      <td className="px-3 py-1.5 text-right">{nf(a)}</td>
+                      <td className="px-3 py-1.5 text-right">{nf(b)}</td>
+                      <td className="px-3 py-1.5 text-right" style={{ color: a && b ? (b < a ? '#b91c1c' : '#047857') : undefined }}>{a && b ? pst((100 * (b - a)) / a) : '–'}</td>
+                      <td className="px-3 py-1.5 text-right">{an != null ? `${nf(an, 1)} %` : '–'}</td>
+                      <td className="px-3 py-1.5 text-right">{nf(m[r]?.[siste]?.snitt, 1)}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+            <div style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)', marginTop: 4 }}>
+              Fylkene fra 2024 har egne tall fra {start}; før det står de under de gamle fylkene. Andel av årskullet er et grovt mål (elever som tar faget over flere år, privatister og elever utenfor normert alder er med).
+            </div>
+          </div>
         </>
       )}
-      <div className="overflow-x-auto">
-        <table className="w-full border-collapse text-xs">
-          <thead>
-            <tr style={{ backgroundColor: 'var(--nmbu-beige-light)', borderBottom: '2px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-2)' }}>
-              <th className="px-3 py-2 text-left">Fylke</th>
-              {fag.length > 0 && <><th className="px-3 py-2 text-right">{valgtFag} {tidlig}</th><th className="px-3 py-2 text-right">{valgtFag} {siste}</th><th className="px-3 py-2 text-right">Endring</th><th className="px-3 py-2 text-right">Snitt {siste}</th></>}
-              {udir.gjennomforing && <th className="px-3 py-2 text-right">Fullført videregående</th>}
-            </tr>
-          </thead>
-          <tbody>
-            {Object.keys(udir.fylker).filter((r) => regioner.includes(r) || gj[r]).map((r) => {
-              const a = m[r]?.[tidlig]?.elever; const b = m[r]?.[siste]?.elever; const g = gjSiste(r);
+      {gjRader.length > 0 && (
+        <div className="mt-5">
+          <div style={{ fontSize: 12, fontWeight: 700, color: 'var(--nmbu-green-dark)', marginBottom: 4 }}>Fullført videregående innen 5–6 år, kullene {gjKull[0]}–{gjSiste}</div>
+          <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs">
+            {gjRader.map((r) => {
+              const v = gj[r][gjSiste]; const v0 = gj[r][gjKull[0]];
               return (
-                <tr key={r} style={{ borderBottom: '1px solid var(--nmbu-beige-light)', fontWeight: r === '0' ? 700 : 400, backgroundColor: r === '0' ? 'var(--nmbu-beige-light)' : 'transparent' }}>
-                  <td className="px-3 py-1.5">{udir.fylker[r]}</td>
-                  {fag.length > 0 && <>
-                    <td className="px-3 py-1.5 text-right">{nf(a)}</td>
-                    <td className="px-3 py-1.5 text-right">{nf(b)}</td>
-                    <td className="px-3 py-1.5 text-right" style={{ color: a && b ? (b < a ? '#b91c1c' : '#047857') : undefined }}>{a && b ? pst((100 * (b - a)) / a) : '–'}</td>
-                    <td className="px-3 py-1.5 text-right">{nf(m[r]?.[siste]?.snitt, 1)}</td>
-                  </>}
-                  {udir.gjennomforing && <td className="px-3 py-1.5 text-right" title={g ? `Kull ${g.kull}, innen ${g.aar} år` : undefined}>{g ? `${nf(g.andel, 1)} %` : '–'}</td>}
-                </tr>
+                <span key={r} style={{ fontWeight: r === '0' ? 700 : 400 }}>
+                  {udir.fylker[r] ?? r}: {nf(v.andel, 1)} %{v0 ? <span style={{ color: v.andel >= v0.andel ? '#047857' : '#b91c1c' }}> ({v.andel >= v0.andel ? '+' : '−'}{nf(Math.abs(v.andel - v0.andel), 1)})</span> : null}
+                </span>
               );
             })}
-          </tbody>
-        </table>
-      </div>
+          </div>
+          <div style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)', marginTop: 4 }}>
+            Kullet {gjSiste}, endring i prosentpoeng fra kullet {gjKull[0]}. Fylkesinndelingen er den som gjaldt da kullet begynte (før 2020). Udir fjernet eldre kull i september 2026 på grunn av et brudd i beregningsgrunnlaget.
+          </div>
+        </div>
+      )}
       {udir.merknader && udir.merknader.length > 0 && (
-        <ul className="list-disc pl-4 mt-2" style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)' }}>{udir.merknader.map((t) => <li key={t}>{t}</li>)}</ul>
+        <details className="mt-3" style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)' }}>
+          <summary className="cursor-pointer">Merknader til Udir-tallene</summary>
+          <ul className="list-disc pl-4 mt-1">{udir.merknader.map((t) => <li key={t}>{t}</li>)}</ul>
+        </details>
       )}
     </Kort>
   );

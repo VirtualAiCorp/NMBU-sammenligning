@@ -6,6 +6,7 @@ import type { StudentGroup, StudentProgram } from '../data/landsamStudentData';
 import { STUDENT_NATIONAL, STUDENT_HENTET, type StudentYear } from '../data/studentNationalData';
 import { NIVAA_NAVN } from '../data/completionNationalData';
 import { landsamColorForGroups } from '../data/landsamPalette';
+import { INTERNASJONAL } from '../data/internasjonalData';
 
 /**
  * «Studentene»: alder, utenlandske studenter og utveksling ut per program (DBH 60/135/142),
@@ -21,6 +22,8 @@ const METRICS: MetricDef[] = [
   { id: 'utenl',  label: 'Utenlandske, antall', unit: '', decimals: 0, desc: 'Antall registrerte studenter (høst) med utenlandsk statsborgerskap' },
   { id: 'utvp',   label: 'Utveksling ut per 100', unit: '', decimals: 1, count: 'utveksling', desc: 'Studenter på programmet som var på utveksling i utlandet (vår + høst), per 100 registrerte studenter' },
   { id: 'utv',    label: 'Utveksling ut, antall', unit: '', decimals: 0, desc: 'Studenter på programmet som var på utveksling i utlandet i løpet av året (vår + høst)' },
+  { id: 'engp',   label: 'Engelsk undervisning', unit: '%', decimals: 1, desc: 'Andel av studiepoengene programmets studenter tar i emner som undervises på engelsk (DBH 208 undervisningsspråk og 308 kandidater per emne)' },
+  { id: 'innp',   label: 'Innreisende i emnene', unit: '%', decimals: 1, desc: 'Andel innreisende utvekslingsstudenter blant alle kandidatene i emnene programmets studenter tar (DBH 308, utvekslingsprogrammene fra DBH 142). Ikke målbart der institusjonen registrerer innreisende sammen med andre (f.eks. BI)' },
   { id: 'total',  label: 'Registrerte (høst)', unit: '', decimals: 0, desc: 'Registrerte studenter på programmet i høstsemesteret (DBH 60)' },
 ];
 const BANDS: { key: 'a21' | 'a24' | 'a29' | 'a30'; label: string; color: string }[] = [
@@ -46,6 +49,8 @@ function yearVal(y: StudentYear | undefined, id: string): number | null {
     case 'utvp': return pct(y.utveksling, y.total);
     case 'utv': return y.utveksling;
     case 'total': return y.total;
+    case 'engp': return (y as StudentYear & { eng?: number | null }).eng ?? null;
+    case 'innp': return (y as StudentYear & { inn?: number | null }).inn ?? null;
     default: return null;
   }
 }
@@ -62,7 +67,10 @@ function cellText(y: StudentYear | undefined, m: MetricDef): string {
 }
 
 export function FacultyStudents({ faculty }: { faculty: FacultyData }) {
-  const GROUPS = faculty.studentGroups.filter((g) => g.programs.length > 0);
+  // Internasjonalisering (build-internasjonal.py) flettes inn i årsradene: eng = % studiepoeng på engelsk, inn = % innreisende i emnene
+  const GROUPS = useMemo(() => faculty.studentGroups.filter((g) => g.programs.length > 0).map((g) => ({
+    ...g, programs: g.programs.map((p) => ({ ...p, aar: p.aar.map((y) => ({ ...y, ...(INTERNASJONAL[p.entryId]?.[String(y.aar)] ?? {}) })) })),
+  })), [faculty]);
   const colorFor = useMemo(() => landsamColorForGroups(faculty.admissionGroups), [faculty]);
   const [groupId, setGroupId] = useState<string>(GROUPS[0]?.id ?? '');
   const group: StudentGroup | undefined = GROUPS.find((g) => g.id === groupId) ?? GROUPS[0];

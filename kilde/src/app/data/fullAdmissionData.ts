@@ -21,6 +21,9 @@ export interface FullYearData {
   op_fv?:       number | null; // snitt opptakspoeng, førstevalgssøkere
   op_alle?:     number | null; // snitt opptakspoeng, alle søkere i institusjonens opptak
   n_mott?:      number | null; // antall som møtte (grunnlaget for op_mott/kp_mott)
+  // Suppleringsopptaket (Samordna)
+  pgs_fv?:      number | null; // poenggrense FV-kvote etter suppleringsopptaket (0 = alle kvalifiserte fikk tilbud)
+  pgs_ord?:     number | null; // poenggrense ordinær kvote etter suppleringsopptaket
 }
 
 // 'master2' = toårig master med lokalt opptak (ikke via Samordna opptak)

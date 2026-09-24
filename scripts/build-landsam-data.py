@@ -8,7 +8,7 @@ validering) fra to Samordna opptak-kilder og et programkart:
   1. so_sokertall_programnivaa_2021-2026_hentet_2026-09-22.json
      – søkertall/kvinneandel/plasser/kvalifiserte/tilbud per programkode, 2021-2026.
   2. so_poenggrenser_2020-2026_hentet_2026-09-22.csv
-     – poenggrenser (Tableau-eksport), 2020-2026, kun Hovedopptak.
+     – poenggrenser (Tableau-eksport), 2020-2026: hovedopptaket (pg_*) og suppleringsopptaket (pgs_*).
   3. programkart.json
      – hvilke programmer som skal med, gruppert, med lokale data for
        programmer som ikke går via Samordna opptak.
@@ -55,6 +55,9 @@ FIELD_ORDER = ["alleS", "fvS", "plasser", "kvinner", "kvalifiserte", "tilbud", "
 EXTRA_FIELDS = ["akseptert", "mott"]
 # Opptakspoeng fra DBH 571 (Samordna-program): skrives som valgfrie felt ved siden av Y(...).
 POINT_FIELDS = ["op_mott", "kp_mott", "op_fv", "op_alle", "n_mott"]
+# Poenggrensen etter suppleringsopptaket (SO). DBHs «nye studenter» er for ustabil som mål på fyllingsgrad og brukes ikke.
+SUPP_FIELDS = ["pgs_fv", "pgs_ord"]
+INT_FIELDS = {"n_mott"}
 
 MISSING_TOKENS = {"", "-", "–", "NA"}
 
@@ -169,7 +172,7 @@ def load_sokertall(path: Path):
     return index, names, conflicts
 
 
-def load_poenggrenser(path: Path):
+def load_poenggrenser(path: Path, runde: str = "Hovedopptak"):
     """
     Leser poenggrense-CSV-en (semikolonseparert, UTF-8/BOM).
 
@@ -187,13 +190,14 @@ def load_poenggrenser(path: Path):
     with open(path, encoding="utf-8-sig", newline="") as f:
         reader = csv.DictReader(f, delimiter=";")
         for row in reader:
-            if row.get("Opptaksrunde") != "Hovedopptak":
+            if row.get("Opptaksrunde") != runde:
                 continue
             kvote_raw = row.get("Kvote")
+            pre = "pg" if runde == "Hovedopptak" else "pgs"
             if kvote_raw == "Førstegangsvitnemålskvote":
-                kvote = "pg_fv"
+                kvote = f"{pre}_fv"
             elif kvote_raw == "Ordinær kvote":
-                kvote = "pg_ord"
+                kvote = f"{pre}_ord"
             else:
                 continue
 
@@ -297,7 +301,7 @@ def merge_points(years: dict, points: dict | None) -> None:
             target[f] = row.get(f)
 
 
-def process_programkart(programkart, sokertall_index, poenggrenser_index, points_index=None):
+def process_programkart(programkart, sokertall_index, poenggrenser_index, points_index=None, supp_index=None):
     """
     Returnerer (groups_out, summary_lines, warnings) hvor groups_out er en
     liste av dicts klare til å skrives ut som TS/JSON.
@@ -364,6 +368,12 @@ def process_programkart(programkart, sokertall_index, poenggrenser_index, points
                             f"{pid}: studiekode {studiekode} finnes i søkertall-kilden men ikke i poenggrense-kilden (Hovedopptak)"
                         )
                 merge_points(years, (points_index or {}).get(pid))
+                # Suppleringsopptak: grense etter hovedopptaket (0 = alle kvalifiserte fikk tilbud)
+                sup = (supp_index or {}).get(studiekode, {})
+                for kv in ("pgs_fv", "pgs_ord"):
+                    for y, v in (sup.get(kv) or {}).items():
+                        if y in years and v is not None:
+                            years[y][kv] = round(v, 1)
                 summary_lines.append(
                     f"  - {pid} ({prog.get('shortName', '')}, SO {studiekode or '?'}): år med data = {years_present or '(ingen)'}"
                 )
@@ -441,10 +451,10 @@ def render_year_call(values: dict) -> str:
     if any(values.get(f) is not None for f in EXTRA_FIELDS):
         parts += [fmt_int_or_null(values.get(f)) for f in EXTRA_FIELDS]
     call = "Y(" + ", ".join(parts) + ")"
-    pts = [(f, values.get(f)) for f in POINT_FIELDS if values.get(f) is not None]
+    pts = [(f, values.get(f)) for f in POINT_FIELDS + SUPP_FIELDS if values.get(f) is not None]
     if pts:
         call = "{ ..." + call + ", " + ", ".join(
-            f"{f}: {int(v) if f.startswith('n_') else f'{v:.1f}'}" for f, v in pts) + " }"
+            f"{f}: {int(v) if f in INT_FIELDS else f'{v:.1f}'}" for f, v in pts) + " }"
     return call
 
 
@@ -562,9 +572,10 @@ def main():
 
     sokertall_index, sokertall_names, sokertall_conflicts = load_sokertall(args.sokertall)
     poenggrenser_index, poenggrenser_conflicts = load_poenggrenser(args.poenggrenser)
+    supp_index, _ = load_poenggrenser(args.poenggrenser, "Suppleringsopptak")
 
     groups_out, summary_lines, warnings = process_programkart(
-        programkart, sokertall_index, poenggrenser_index, points_index
+        programkart, sokertall_index, poenggrenser_index, points_index, supp_index
     )
 
     generated_date = date.today().isoformat()

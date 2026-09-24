@@ -8,6 +8,7 @@ import { CsvExportButton } from './CsvExportButton';
 import { exportFacultyAdmissionCsv } from '../utils/csvExport';
 import type { LandsamGroup, LandsamLevel } from '../data/landsamAdmissionData';
 import { PrisOgCampus } from './PrisOgCampus';
+import { Opptaksrunder } from './Opptaksrunder';
 import { NyeOpptaksregler } from './NyeOpptaksregler';
 import { INGEN_DATA_TEKST, type FacultyData } from '../data/faculties';
 import { FacultyContext, useFaculty, useFacultyColor } from '../data/facultyContext';
@@ -22,7 +23,7 @@ function nf(v: number, dec: number): string {
 // ─── Metrics ─────────────────────────────────────────────────────────────────
 
 type MetricKey = 'alleS' | 'fvS' | 'sokerpress' | 'plasser' | 'kvinner' | 'kvalifiserte' | 'tilbud' | 'tilbudsandel' | 'mott' | 'oppmote' | 'pg_ord' | 'pg_fv' | 'pg_snitt'
-  | 'op_mott' | 'kp_mott' | 'op_fv' | 'op_alle';
+  | 'op_mott' | 'kp_mott' | 'op_fv' | 'op_alle' | 'pgs_ord' | 'pgs_fv' | 'pg_fall' | 'kvalPerPlass' | 'tilbudPerPlass';
 
 interface MetricDef {
   id: MetricKey;
@@ -31,7 +32,7 @@ interface MetricDef {
   decimals: number;
   description: string;
   /** 'dbh571' = snittpoeng fra DBH tabell 571 (bare Samordna-program, siste år 2025). */
-  kilde?: 'dbh571';
+  kilde?: 'dbh571' | 'supp';
 }
 
 const METRICS: MetricDef[] = [
@@ -48,6 +49,11 @@ const METRICS: MetricDef[] = [
   { id: 'pg_ord',       label: 'Poenggrense ordinær', unit: '',  decimals: 1, description: 'Opptaksgrense ordinær kvote' },
   { id: 'pg_fv',        label: 'Poenggrense FV',      unit: '',  decimals: 1, description: 'Opptaksgrense førstegangsvitnemål' },
   { id: 'pg_snitt',     label: 'Snitt poenggrense',   unit: '',  decimals: 1, description: 'Gjennomsnitt av ordinær og førstegangsvitnemål poenggrense' },
+  { id: 'pgs_ord',      label: 'Suppl. ordinær',      unit: '',  decimals: 1, kilde: 'supp', description: 'Poenggrense ordinær kvote etter suppleringsopptaket (Samordna). 0 = alle kvalifiserte fikk tilbud' },
+  { id: 'pgs_fv',       label: 'Suppl. FV',           unit: '',  decimals: 1, kilde: 'supp', description: 'Poenggrense førstegangsvitnemål etter suppleringsopptaket (Samordna)' },
+  { id: 'pg_fall',      label: 'Fall i supplering',   unit: '',  decimals: 1, kilde: 'supp', description: 'Hvor mange poeng grensen i ordinær kvote falt fra hovedopptaket til suppleringsopptaket. Høyt fall = programmet måtte gå dypere i søkermassen for å fylle plassene' },
+  { id: 'kvalPerPlass', label: 'Kvalifiserte/plass',  unit: 'x', decimals: 1, kilde: 'supp', description: 'Kvalifiserte søkere per studieplass (hovedopptaket)' },
+  { id: 'tilbudPerPlass', label: 'Tilbud/plass',      unit: 'x', decimals: 2, kilde: 'supp', description: 'Tilbud i hovedopptaket per studieplass. Over 1 = overbooking fordi ikke alle takker ja eller møter' },
   { id: 'op_mott',      label: 'Møtt: opptakspoeng',  unit: '',  decimals: 1, kilde: 'dbh571', description: 'Gjennomsnittlige opptakspoeng (karakterpoeng + alders- og tilleggspoeng) for studentene som møtte til studiestart (DBH 571)' },
   { id: 'kp_mott',      label: 'Møtt: karakterpoeng', unit: '',  decimals: 1, kilde: 'dbh571', description: 'Gjennomsnittlige karakterpoeng (skolepoeng uten alders- og tilleggspoeng) for studentene som møtte til studiestart (DBH 571)' },
   { id: 'op_fv',        label: 'Førstevalg: poeng',   unit: '',  decimals: 1, kilde: 'dbh571', description: 'Gjennomsnittlige opptakspoeng for førstevalgssøkerne (DBH 571)' },
@@ -64,7 +70,7 @@ function metricsFor(g: LandsamGroup): MetricDef[] {
   const local = g.level === 'master2';
   const visMott = local || harLokale(g);
   const visPoeng = !local || g.entries.some((e) => e.poengLokalt);
-  return METRICS.filter((m) => (m.kilde === 'dbh571' ? visPoeng : (m.id === 'mott' || m.id === 'oppmote') ? visMott : true));
+  return METRICS.filter((m) => (m.kilde === 'dbh571' ? visPoeng : m.kilde === 'supp' ? !local : (m.id === 'mott' || m.id === 'oppmote') ? visMott : true));
 }
 
 /** Siste år (≤ ønsket år) der oppføringen har verdi for målet. */
@@ -77,6 +83,12 @@ function latestYearWith(e: FullAdmissionEntry, metric: MetricKey, years: readonl
 }
 
 function getVal(data: FullYearData, metric: MetricKey): number | null {
+  if (metric === 'pg_fall') {
+    if (data.pg_ord == null || data.pgs_ord == null || data.pg_ord === 0 || data.pgs_ord === 0) return null;
+    return data.pg_ord - data.pgs_ord;
+  }
+  if (metric === 'kvalPerPlass') return data.kvalifiserte != null && data.plasser ? data.kvalifiserte / data.plasser : null;
+  if (metric === 'tilbudPerPlass') return data.tilbud != null && data.plasser ? data.tilbud / data.plasser : null;
   if (metric === 'tilbudsandel') {
     if (data.tilbud == null || data.kvalifiserte == null || data.kvalifiserte === 0) return null;
     return (data.tilbud / data.kvalifiserte) * 100;
@@ -401,7 +413,7 @@ function DataTable({
               {metricsFor(group).map((m) => {
                 const v = cur ? getVal(cur, m.id) : null;
                 const vPrev = prev ? getVal(prev, m.id) : null;
-                const isZeroPg = v === 0 && (m.id === 'pg_ord' || m.id === 'pg_fv' || m.id === 'pg_snitt');
+                const isZeroPg = v === 0 && (m.id === 'pg_ord' || m.id === 'pg_fv' || m.id === 'pg_snitt' || m.id === 'pgs_ord' || m.id === 'pgs_fv');
                 return (
                   <td key={m.id} className="px-3 py-2.5 text-center"
                     title={(m.id === 'op_mott' || m.id === 'kp_mott') && cur?.n_mott ? `Snitt av ${cur.n_mott} som møtte til studiestart${e.poengLokalt ? ' (lokalt opptak, DBH 571 opptakstype L – ikke Samordna)' : ''}` : undefined}>
@@ -589,7 +601,7 @@ export function LandsamAdmissionAnalysis({ faculty, initialGroup }: { faculty: F
       if ((metric === 'mott' || metric === 'oppmote') && !harLokale(group)) setMetric('pg_ord');
       return;
     }
-    if (isPointMetric(metric) && !group.entries.some((e) => e.poengLokalt)) setMetric('alleS');
+    if ((isPointMetric(metric) && !group.entries.some((e) => e.poengLokalt)) || METRICS.find((d) => d.id === metric)?.kilde === 'supp') setMetric('alleS');
     const nmbu = group.entries.filter((e) => group.nmbuIds.includes(e.id));
     const hasYear = (y: string) => nmbu.some((e) => e.years[y]?.alleS != null);
     if (!hasYear(year)) {
@@ -712,6 +724,12 @@ export function LandsamAdmissionAnalysis({ faculty, initialGroup }: { faculty: F
             <div className="flex flex-wrap gap-1.5">
               {metricsFor(group).map((m, i, arr) => (
                 <Fragment key={m.id}>
+                {m.kilde === 'supp' && arr[i - 1]?.kilde !== 'supp' && (
+                  <span className="flex items-center gap-1.5 pl-2 ml-1 text-xs" title="Samordna: suppleringsopptaket og tall per studieplass"
+                    style={{ borderLeft: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-2)', fontWeight: 600 }}>
+                    Supplering og plasser:
+                  </span>
+                )}
                 {m.kilde === 'dbh571' && arr[i - 1]?.kilde !== 'dbh571' && (
                   <span className="flex items-center gap-1.5 pl-2 ml-1 text-xs" title="Snittpoeng fra DBH tabell 571, til og med 2025"
                     style={{ borderLeft: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-2)', fontWeight: 600 }}>
@@ -806,6 +824,8 @@ export function LandsamAdmissionAnalysis({ faculty, initialGroup }: { faculty: F
         </div>
       </div>
 
+      {!isLocal && <OpptaksrunderMedFarge group={group} year={year} years={YEARS} />}
+
       <PrisOgCampusMedFarge group={group} />
 
       <div className="flex items-start gap-2 text-xs rounded-lg px-4 py-3"
@@ -829,4 +849,9 @@ export function LandsamAdmissionAnalysis({ faculty, initialGroup }: { faculty: F
 function PrisOgCampusMedFarge({ group }: { group: LandsamGroup }) {
   const colorFor = useFacultyColor();
   return <PrisOgCampus group={group} colorFor={colorFor} />;
+}
+
+function OpptaksrunderMedFarge({ group, year, years }: { group: LandsamGroup; year: string; years: readonly string[] }) {
+  const colorFor = useFacultyColor();
+  return <Opptaksrunder group={group} year={year} years={years} colorFor={colorFor} />;
 }
