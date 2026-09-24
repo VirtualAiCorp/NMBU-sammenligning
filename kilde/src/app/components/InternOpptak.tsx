@@ -245,6 +245,27 @@ function Analyse({ data }: { data: Data }) {
           Ikke del skjermbilder utenfor organisasjonen uten avklaring.</span>
       </div>
 
+      <div className="rounded-lg px-4 py-3 mb-5 text-xs" style={{ backgroundColor: 'var(--nmbu-beige-light)', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-1)', lineHeight: 1.6 }}>
+        <div className="flex items-center gap-1.5 mb-1.5" style={{ fontWeight: 700, color: 'var(--nmbu-green-dark)' }}>
+          <Info className="w-3.5 h-3.5" /> Kvotene og kodene i FS
+        </div>
+        <div className="grid gap-x-6 gap-y-2" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))' }}>
+          <div>
+            <b>SP = skolepoeng → førstegangsvitnemålskvoten.</b> For søkere som er 21 år eller yngre i opptaksåret og har vitnemål fra
+            videregående uten forbedringer eller tillegg. Rangeres på skolepoeng: karakterpoeng (snitt × 10) pluss realfags- og språkpoeng,
+            uten alders- og tilleggspoeng.
+          </div>
+          <div>
+            <b>KP = konkurransepoeng → ordinær kvote.</b> For alle kvalifiserte søkere, også dem i førstegangsvitnemålskvoten som ikke nådde opp der.
+            Rangeres på konkurransepoeng: skolepoeng pluss alderspoeng (fra fylte 20 år) og tilleggspoeng (folkehøgskole, militærtjeneste, høyere utdanning m.m.).
+          </div>
+          <div>
+            <b>Fordelingen hos HH:</b> 50 % av tilbudene går via førstegangsvitnemålskvoten og 50 % via ordinær kvote. Søkere med førstegangsvitnemål
+            står derfor både med en SP-rad og en KP-rad i søkermassen. Simuleringen behandler kvotene hver for seg.
+          </div>
+        </div>
+      </div>
+
       <div className="flex flex-wrap gap-2 mb-5">
         {koder.map((k) => (
           <button key={k} onClick={() => bytt(k)} className="px-4 py-2 rounded-full text-sm"
