@@ -23,7 +23,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 
-FAKULTETER = ['landsam', 'realtek', 'biovit', 'kbm', 'mina']
+FAKULTETER = ['landsam', 'realtek', 'biovit', 'kbm', 'mina', 'vet', 'hh']
 GYLDIG_STATUS = {'complete', 'partial', 'none'}
 
 TS_HEADER = """// GENERERT av scripts/build-markedsstatus.py {dato} – ikke rediger for hånd.

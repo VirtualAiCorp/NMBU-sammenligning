@@ -1,3 +1,4 @@
+import fs from 'node:fs'
 import { defineConfig } from 'vite'
 import path from 'path'
 import tailwindcss from '@tailwindcss/vite'
@@ -33,8 +34,20 @@ const hhAlias = UTEN_HH
     ]
   : []
 
+// Uten HH skal heller ikke HHs styrepapirer (public/markedsstatus/hh) være med i bygget.
+let utMappe = 'dist'
+const fjernHhPdf = {
+  name: 'fjern-hh-markedsstatus',
+  apply: 'build' as const,
+  configResolved(c: { root: string; build: { outDir: string } }) { utMappe = path.resolve(c.root, c.build.outDir) },
+  closeBundle() {
+    if (UTEN_HH) fs.rmSync(path.join(utMappe, 'markedsstatus', 'hh'), { recursive: true, force: true })
+  },
+}
+
 export default defineConfig({
   plugins: [
+    fjernHhPdf,
     figmaAssetResolver(),
     // The React and Tailwind plugins are both required for Make, even if
     // Tailwind is not being actively used – do not remove them

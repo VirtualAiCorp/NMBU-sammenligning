@@ -453,3 +453,10 @@ Grunnlaget er kartleggingen i `docs/bi-kristiania-alternative-kilder.md`, punkt 
   - Datterselskap er kuratert (`DATTER`): Fagskolen Kristiania AS.
 - Organisasjonsnumrene står i `ORGNR`, kontrollert mot navnene i Enhetsregisteret. Cache: `data/nmbu/kilder/brreg/` og `data/nmbu/kilder/statsbudsjett/`.
 
+## 26. Markedsstatus for HH (24.09.2026)
+
+`data/hh/markedsstatus.json` + `data/hh/pdf/` (35 PDF-er, 37 MB) → `build-markedsstatus.py hh` → `hhMarketStatusData.ts`, koblet inn i `data/fakultet/hh.ts`.
+- **Dekning:** 15 institusjoner. 13 har offentlige styrepapirer, årsrapporter eller budsjettdokumenter. NTNU og UiT er «partial», fordi sakspapirene på fakultetsnivå krever innlogging.
+- **Kilder:** 28 av PDF-ene er kopiert fra den opprinnelige HH-analysen (`kilde/src/imports/`); den og `MarkedsstatusView.tsx` er ikke endret. De øvrige er lastet ned fra offentlige kilder. BI og Kristiania bygger på Brønnøysund, statsbudsjettet og DBH, fordi styrepapirene deres ikke er offentlige.
+- **Bygget uten HH:** PDF-ene ligger i `public/`. Et lite programtillegg i `vite.config.ts` (`fjern-hh-markedsstatus`) sletter derfor `markedsstatus/hh` fra dette bygget. Kontrollert.
+
