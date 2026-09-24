@@ -1,0 +1,82 @@
+{
+ "organisasjonsnummer": "971555483",
+ "navn": "HØGSKOLEN I MOLDE",
+ "organisasjonsform": {
+  "kode": "ORGL",
+  "beskrivelse": "Organisasjonsledd",
+  "_links": {
+   "self": {
+    "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/ORGL"
+   }
+  }
+ },
+ "historiskeNavn": [],
+ "hjemmeside": "www.himolde.no/",
+ "postadresse": {
+  "land": "Norge",
+  "landkode": "NO",
+  "postnummer": "6402",
+  "poststed": "MOLDE",
+  "adresse": [
+   "Postboks 2110"
+  ],
+  "kommune": "MOLDE",
+  "kommunenummer": "1506"
+ },
+ "registreringsdatoEnhetsregisteret": "1995-08-09",
+ "registrertIMvaregisteret": true,
+ "naeringskode1": {
+  "kode": "85.402",
+  "beskrivelse": "Undervisning ved vitenskapelige høgskoler"
+ },
+ "naeringskode2": {
+  "kode": "85.403",
+  "beskrivelse": "Undervisning ved andre høgskoler"
+ },
+ "antallAnsatte": 431,
+ "harRegistrertAntallAnsatte": true,
+ "overordnetEnhet": "872417842",
+ "registreringsdatoMerverdiavgiftsregisteret": "2001-11-01",
+ "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2001-11-26",
+ "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-09-14",
+ "registreringsdatoAntallAnsatteNAVAaregisteret": "2026-09-10",
+ "epostadresse": "post@himolde.no",
+ "telefon": "71214000",
+ "forretningsadresse": {
+  "land": "Norge",
+  "landkode": "NO",
+  "postnummer": "6410",
+  "poststed": "MOLDE",
+  "adresse": [
+   "Britvegen 2"
+  ],
+  "kommune": "MOLDE",
+  "kommunenummer": "1506"
+ },
+ "institusjonellSektorkode": {
+  "kode": "6100",
+  "beskrivelse": "Statsforvaltningen"
+ },
+ "registrertIForetaksregisteret": false,
+ "registrertIStiftelsesregisteret": false,
+ "registrertIFrivillighetsregisteret": false,
+ "konkurs": false,
+ "underAvvikling": false,
+ "underTvangsavviklingEllerTvangsopplosning": false,
+ "maalform": "Bokmål",
+ "aktivitet": [
+  "Statlig vitenskapelig høgskole"
+ ],
+ "registrertIPartiregisteret": false,
+ "paategninger": [],
+ "erIKonsern": false,
+ "_links": {
+  "self": {
+   "href": "https://data.brreg.no/enhetsregisteret/api/enheter/971555483"
+  },
+  "overordnetEnhet": {
+   "href": "https://data.brreg.no/enhetsregisteret/api/enheter/872417842"
+  }
+ },
+ "respons_klasse": "Enhet"
+}

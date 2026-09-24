@@ -1,0 +1,98 @@
+{
+ "organisasjonsnummer": "970422528",
+ "navn": "UNIVERSITETET I TROMSØ - NORGES ARKTISKE UNIVERSITET",
+ "organisasjonsform": {
+  "kode": "ORGL",
+  "beskrivelse": "Organisasjonsledd",
+  "_links": {
+   "self": {
+    "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/ORGL"
+   }
+  }
+ },
+ "historiskeNavn": [
+  {
+   "navn": "UNIVERSITETET I TROMSØ SENTRALADM",
+   "fraDato": "1995-03-12 18:05:00",
+   "tilDato": "1997-04-01 18:19:41"
+  },
+  {
+   "navn": "UNIVERSITETET I TROMSØ",
+   "fraDato": "1997-04-01 18:19:41",
+   "tilDato": "2013-11-26 21:20:01"
+  },
+  {
+   "navn": "UNIVERSITETET I TROMSØ - NORGES ARKTISKE UNIVERSITET",
+   "fraDato": "2013-12-17 22:14:45",
+   "tilDato": "2014-01-09 20:27:11"
+  }
+ ],
+ "hjemmeside": "www.uit.no",
+ "postadresse": {
+  "land": "Norge",
+  "landkode": "NO",
+  "postnummer": "9037",
+  "poststed": "TROMSØ",
+  "adresse": [
+   "Postboks 6050 Stakkevollan"
+  ],
+  "kommune": "TROMSØ",
+  "kommunenummer": "5501"
+ },
+ "registreringsdatoEnhetsregisteret": "1995-03-12",
+ "registrertIMvaregisteret": true,
+ "naeringskode1": {
+  "kode": "85.401",
+  "beskrivelse": "Undervisning ved universiteter"
+ },
+ "naeringskode2": {
+  "kode": "72.100",
+  "beskrivelse": "Forskning og eksperimentell utvikling innenfor naturvitenskap og teknikk"
+ },
+ "antallAnsatte": 5004,
+ "harRegistrertAntallAnsatte": true,
+ "overordnetEnhet": "872417842",
+ "registreringsdatoMerverdiavgiftsregisteret": "1990-01-01",
+ "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "1995-03-12",
+ "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-09-14",
+ "registreringsdatoAntallAnsatteNAVAaregisteret": "2026-09-10",
+ "epostadresse": "postmottak@uit.no",
+ "telefon": "77 64 40 00",
+ "forretningsadresse": {
+  "land": "Norge",
+  "landkode": "NO",
+  "postnummer": "9019",
+  "poststed": "TROMSØ",
+  "adresse": [
+   "Hansine Hansens veg 18"
+  ],
+  "kommune": "TROMSØ",
+  "kommunenummer": "5501"
+ },
+ "institusjonellSektorkode": {
+  "kode": "6100",
+  "beskrivelse": "Statsforvaltningen"
+ },
+ "registrertIForetaksregisteret": false,
+ "registrertIStiftelsesregisteret": false,
+ "registrertIFrivillighetsregisteret": false,
+ "konkurs": false,
+ "underAvvikling": false,
+ "underTvangsavviklingEllerTvangsopplosning": false,
+ "maalform": "Bokmål",
+ "aktivitet": [
+  "forskning og undervisning"
+ ],
+ "registrertIPartiregisteret": false,
+ "paategninger": [],
+ "erIKonsern": false,
+ "_links": {
+  "self": {
+   "href": "https://data.brreg.no/enhetsregisteret/api/enheter/970422528"
+  },
+  "overordnetEnhet": {
+   "href": "https://data.brreg.no/enhetsregisteret/api/enheter/872417842"
+  }
+ },
+ "respons_klasse": "Enhet"
+}

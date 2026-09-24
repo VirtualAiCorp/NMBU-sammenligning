@@ -1,0 +1,89 @@
+{
+ "organisasjonsnummer": "911770709",
+ "navn": "UNIVERSITETET I SØRØST-NORGE",
+ "organisasjonsform": {
+  "kode": "ORGL",
+  "beskrivelse": "Organisasjonsledd",
+  "_links": {
+   "self": {
+    "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/ORGL"
+   }
+  }
+ },
+ "historiskeNavn": [
+  {
+   "navn": "HØGSKOLEN I BUSKERUD OG VESTFOLD",
+   "fraDato": "2013-04-04 20:40:09",
+   "tilDato": "2016-01-04 20:13:53"
+  },
+  {
+   "navn": "HØGSKOLEN I SØRØST-NORGE",
+   "fraDato": "2016-01-04 20:13:53",
+   "tilDato": "2018-05-12 14:28:03"
+  }
+ ],
+ "hjemmeside": "www.usn.no",
+ "postadresse": {
+  "land": "Norge",
+  "landkode": "NO",
+  "postnummer": "3199",
+  "poststed": "BORRE",
+  "adresse": [
+   "Postboks 4"
+  ],
+  "kommune": "HORTEN",
+  "kommunenummer": "3901"
+ },
+ "registreringsdatoEnhetsregisteret": "2013-04-04",
+ "registrertIMvaregisteret": true,
+ "naeringskode1": {
+  "kode": "85.401",
+  "beskrivelse": "Undervisning ved universiteter"
+ },
+ "antallAnsatte": 2534,
+ "harRegistrertAntallAnsatte": true,
+ "overordnetEnhet": "872417842",
+ "registreringsdatoMerverdiavgiftsregisteret": "2014-01-01",
+ "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2014-03-17",
+ "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-09-14",
+ "registreringsdatoAntallAnsatteNAVAaregisteret": "2026-09-10",
+ "epostadresse": "postmottak@usn.no",
+ "telefon": "+4731008000",
+ "forretningsadresse": {
+  "land": "Norge",
+  "landkode": "NO",
+  "postnummer": "3184",
+  "poststed": "BORRE",
+  "adresse": [
+   "Raveien 215"
+  ],
+  "kommune": "HORTEN",
+  "kommunenummer": "3901"
+ },
+ "institusjonellSektorkode": {
+  "kode": "6100",
+  "beskrivelse": "Statsforvaltningen"
+ },
+ "registrertIForetaksregisteret": false,
+ "registrertIStiftelsesregisteret": false,
+ "registrertIFrivillighetsregisteret": false,
+ "konkurs": false,
+ "underAvvikling": false,
+ "underTvangsavviklingEllerTvangsopplosning": false,
+ "maalform": "Bokmål",
+ "aktivitet": [
+  "Undervisning og forskning"
+ ],
+ "registrertIPartiregisteret": false,
+ "paategninger": [],
+ "erIKonsern": false,
+ "_links": {
+  "self": {
+   "href": "https://data.brreg.no/enhetsregisteret/api/enheter/911770709"
+  },
+  "overordnetEnhet": {
+   "href": "https://data.brreg.no/enhetsregisteret/api/enheter/872417842"
+  }
+ },
+ "respons_klasse": "Enhet"
+}

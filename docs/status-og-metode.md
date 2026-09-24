@@ -435,3 +435,21 @@ Grunnlaget er kartleggingen i `docs/bi-kristiania-datakilder.md`.
 - **Bolig:** alle 33 studiesteder har nabolister. 13 nye er kuratert i `STUDIESTED_TIERS_EGNE` (build-bolig.py): Alta, Halden, Hamar, Horten, Kongsberg, Lillehammer, Midt-Telemark (Bø), Ringerike, Sogndal, Steinkjer, Stor-Elvdal (Evenstad), Volda og Åmot (Rena). Listene er anslag ut fra vei, tog og ferje, ikke målte reisetider.
 - **Mørk modus:** `build-dark-css.py` er kjørt på nytt. Den interne opptakssiden, opptakstabellen med lokalt opptak og tilbudsandel, og økonomikortet er sjekket visuelt.
 
+## 25. Statsbudsjett, årsregnskap og ledelse (24.09.2026)
+
+Grunnlaget er kartleggingen i `docs/bi-kristiania-alternative-kilder.md`, punkt 1–3. `scripts/build-eierskap.py [--refresh]` → `eierskapData.ts/.json`, vist som tabellen «Statsbudsjett, årsregnskap og ledelse» nederst i økonomikortet (`EierskapOgBudsjett.tsx`) for institusjonene som er valgt.
+- **Statsbudsjettet:** Prop. 1 S (2025–2026), KD, tabell 2.1 «Rammeløyving over kap. 260 per universitet og høgskule i 2026», for alle 20 institusjonene (statlige post 50, private post 70). Den vises også per studentårsverk.
+  - NMBU: 1 695 mill. kr, 295 tkr per studentårsverk.
+  - BI: 446 mill. kr, 30 tkr per studentårsverk.
+  - Kristiania: 410 mill. kr, 42 tkr per studentårsverk.
+  - **Nytt budsjett i oktober:** legg til år, URL og fil i `STATSBUDSJETT` og kjør skriptet. Tabellnavnene er på nynorsk (`SB_NAVN`).
+- **Årsregnskap (Regnskapsregisteret):** bare de private; statlige institusjoner leverer ikke dit. Tallene er for 2025.
+  - BI: driftsinntekter 2 194 mill. kr, driftsresultat +32,7 mill. kr.
+  - Kristiania: driftsinntekter 1 454 mill. kr, driftsresultat −103,6 mill. kr, årsresultat −53,9 mill. kr.
+  - NLA: driftsresultat +14,1 mill. kr.
+- **Enhetsregisteret:** organisasjonsform, ansatte, styreleder og daglig leder. Bare navn på offentlige roller lagres; fødselsdatoer og øvrige styremedlemmer lagres ikke.
+  - «Daglig leder» er rektor hos de private, men ofte direktøren ved de statlige.
+  - Ved flere statlige mangler styreleder i registeret.
+  - Datterselskap er kuratert (`DATTER`): Fagskolen Kristiania AS.
+- Organisasjonsnumrene står i `ORGNR`, kontrollert mot navnene i Enhetsregisteret. Cache: `data/nmbu/kilder/brreg/` og `data/nmbu/kilder/statsbudsjett/`.
+

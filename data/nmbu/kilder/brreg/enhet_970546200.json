@@ -1,0 +1,93 @@
+{
+ "organisasjonsnummer": "970546200",
+ "navn": "UNIVERSITETET I AGDER",
+ "organisasjonsform": {
+  "kode": "ORGL",
+  "beskrivelse": "Organisasjonsledd",
+  "_links": {
+   "self": {
+    "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/ORGL"
+   }
+  }
+ },
+ "historiskeNavn": [
+  {
+   "navn": "AGDER DISTRIKTSHØGSKOLE",
+   "fraDato": "1995-02-20 06:39:00",
+   "tilDato": "1995-06-30 19:55:00"
+  },
+  {
+   "navn": "HØGSKOLEN I AGDER",
+   "fraDato": "1995-06-30 19:55:00",
+   "tilDato": "2007-09-11 20:54:04"
+  }
+ ],
+ "hjemmeside": "www.uia.no",
+ "postadresse": {
+  "land": "Norge",
+  "landkode": "NO",
+  "postnummer": "4604",
+  "poststed": "KRISTIANSAND S",
+  "adresse": [
+   "Postboks 422"
+  ],
+  "kommune": "KRISTIANSAND",
+  "kommunenummer": "4204"
+ },
+ "registreringsdatoEnhetsregisteret": "1995-02-20",
+ "registrertIMvaregisteret": true,
+ "frivilligMvaRegistrertBeskrivelser": [
+  "Utleier av bygg eller anlegg"
+ ],
+ "naeringskode1": {
+  "kode": "85.401",
+  "beskrivelse": "Undervisning ved universiteter"
+ },
+ "antallAnsatte": 2069,
+ "harRegistrertAntallAnsatte": true,
+ "overordnetEnhet": "872417842",
+ "registreringsdatoFrivilligMerverdiavgiftsregisteret": "2014-01-18",
+ "registreringsdatoMerverdiavgiftsregisteret": "1975-09-01",
+ "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "1995-02-20",
+ "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-09-14",
+ "registreringsdatoAntallAnsatteNAVAaregisteret": "2026-09-10",
+ "epostadresse": "post@uia.no",
+ "telefon": "38 14 10 00",
+ "forretningsadresse": {
+  "land": "Norge",
+  "landkode": "NO",
+  "postnummer": "4630",
+  "poststed": "KRISTIANSAND S",
+  "adresse": [
+   "Universitetsveien 25A"
+  ],
+  "kommune": "KRISTIANSAND",
+  "kommunenummer": "4204"
+ },
+ "institusjonellSektorkode": {
+  "kode": "6100",
+  "beskrivelse": "Statsforvaltningen"
+ },
+ "registrertIForetaksregisteret": false,
+ "registrertIStiftelsesregisteret": false,
+ "registrertIFrivillighetsregisteret": false,
+ "konkurs": false,
+ "underAvvikling": false,
+ "underTvangsavviklingEllerTvangsopplosning": false,
+ "maalform": "Bokmål",
+ "aktivitet": [
+  "Undervisning ved universitet"
+ ],
+ "registrertIPartiregisteret": false,
+ "paategninger": [],
+ "erIKonsern": false,
+ "_links": {
+  "self": {
+   "href": "https://data.brreg.no/enhetsregisteret/api/enheter/970546200"
+  },
+  "overordnetEnhet": {
+   "href": "https://data.brreg.no/enhetsregisteret/api/enheter/872417842"
+  }
+ },
+ "respons_klasse": "Enhet"
+}

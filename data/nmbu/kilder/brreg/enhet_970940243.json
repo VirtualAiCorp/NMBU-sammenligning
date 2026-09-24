@@ -1,0 +1,89 @@
+{
+ "organisasjonsnummer": "970940243",
+ "navn": "NORD UNIVERSITET",
+ "organisasjonsform": {
+  "kode": "ORGL",
+  "beskrivelse": "Organisasjonsledd",
+  "_links": {
+   "self": {
+    "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/ORGL"
+   }
+  }
+ },
+ "historiskeNavn": [
+  {
+   "navn": "HØGSKOLEN I BODØ",
+   "fraDato": "1995-03-12 18:05:00",
+   "tilDato": "2011-01-22 16:11:14"
+  },
+  {
+   "navn": "UNIVERSITETET I NORDLAND",
+   "fraDato": "2011-01-22 16:11:14",
+   "tilDato": "2016-01-04 20:35:29"
+  }
+ ],
+ "hjemmeside": "www.nord.no",
+ "postadresse": {
+  "land": "Norge",
+  "landkode": "NO",
+  "postnummer": "8049",
+  "poststed": "BODØ",
+  "adresse": [
+   "Postboks 1490"
+  ],
+  "kommune": "BODØ",
+  "kommunenummer": "1804"
+ },
+ "registreringsdatoEnhetsregisteret": "1995-03-12",
+ "registrertIMvaregisteret": true,
+ "naeringskode1": {
+  "kode": "85.401",
+  "beskrivelse": "Undervisning ved universiteter"
+ },
+ "antallAnsatte": 1871,
+ "harRegistrertAntallAnsatte": true,
+ "overordnetEnhet": "872417842",
+ "registreringsdatoMerverdiavgiftsregisteret": "1977-01-01",
+ "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "1995-03-12",
+ "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-09-14",
+ "registreringsdatoAntallAnsatteNAVAaregisteret": "2026-09-10",
+ "epostadresse": "postmottak@nord.no",
+ "telefon": "75 51 70 00",
+ "forretningsadresse": {
+  "land": "Norge",
+  "landkode": "NO",
+  "postnummer": "8026",
+  "poststed": "BODØ",
+  "adresse": [
+   "Universitetsalléen 11"
+  ],
+  "kommune": "BODØ",
+  "kommunenummer": "1804"
+ },
+ "institusjonellSektorkode": {
+  "kode": "6100",
+  "beskrivelse": "Statsforvaltningen"
+ },
+ "registrertIForetaksregisteret": false,
+ "registrertIStiftelsesregisteret": false,
+ "registrertIFrivillighetsregisteret": false,
+ "konkurs": false,
+ "underAvvikling": false,
+ "underTvangsavviklingEllerTvangsopplosning": false,
+ "maalform": "Bokmål",
+ "aktivitet": [
+  "Undervisning og forskning"
+ ],
+ "registrertIPartiregisteret": false,
+ "paategninger": [],
+ "erIKonsern": false,
+ "_links": {
+  "self": {
+   "href": "https://data.brreg.no/enhetsregisteret/api/enheter/970940243"
+  },
+  "overordnetEnhet": {
+   "href": "https://data.brreg.no/enhetsregisteret/api/enheter/872417842"
+  }
+ },
+ "respons_klasse": "Enhet"
+}

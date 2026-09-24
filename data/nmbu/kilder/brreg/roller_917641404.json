@@ -1,0 +1,442 @@
+{
+ "rollegrupper": [
+  {
+   "type": {
+    "kode": "DAGL",
+    "beskrivelse": "Daglig leder",
+    "_links": {
+     "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/DAGL"
+     }
+    }
+   },
+   "sistEndret": "2026-02-18",
+   "roller": [
+    {
+     "type": {
+      "kode": "DAGL",
+      "beskrivelse": "Daglig leder",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/DAGL"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "1966-10-11",
+      "navn": {
+       "fornavn": "Gunnar",
+       "etternavn": "Yttri"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 0
+    },
+    {
+     "type": {
+      "kode": "DAGL",
+      "beskrivelse": "Daglig leder",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/DAGL"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "1965-05-19",
+      "navn": {
+       "fornavn": "Helge",
+       "etternavn": "Skugstad"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 1
+    }
+   ]
+  },
+  {
+   "type": {
+    "kode": "STYR",
+    "beskrivelse": "Styre",
+    "_links": {
+     "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/STYR"
+     }
+    }
+   },
+   "sistEndret": "2023-12-19",
+   "roller": [
+    {
+     "type": {
+      "kode": "LEDE",
+      "beskrivelse": "Styrets leder",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/LEDE"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "1950-07-03",
+      "navn": {
+       "fornavn": "Arvid",
+       "etternavn": "Hallén"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 0
+    },
+    {
+     "type": {
+      "kode": "MEDL",
+      "beskrivelse": "Styremedlem",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "1962-12-20",
+      "navn": {
+       "fornavn": "Wenche",
+       "etternavn": "Kjølås"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 1
+    },
+    {
+     "type": {
+      "kode": "MEDL",
+      "beskrivelse": "Styremedlem",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "1976-07-24",
+      "navn": {
+       "fornavn": "Erik",
+       "etternavn": "Kyrkjebø"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 2
+    },
+    {
+     "type": {
+      "kode": "MEDL",
+      "beskrivelse": "Styremedlem",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "1968-07-02",
+      "navn": {
+       "fornavn": "Tom Are",
+       "etternavn": "Trippestad"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 3
+    },
+    {
+     "type": {
+      "kode": "MEDL",
+      "beskrivelse": "Styremedlem",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "1972-02-24",
+      "navn": {
+       "fornavn": "Sissel",
+       "etternavn": "Rosland"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 4
+    },
+    {
+     "type": {
+      "kode": "MEDL",
+      "beskrivelse": "Styremedlem",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "1970-02-20",
+      "navn": {
+       "fornavn": "Hege",
+       "etternavn": "Myklebust"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 5
+    },
+    {
+     "type": {
+      "kode": "MEDL",
+      "beskrivelse": "Styremedlem",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "1976-06-09",
+      "navn": {
+       "fornavn": "Solveig",
+       "mellomnavn": "Råheim",
+       "etternavn": "Grønsdal"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 6
+    },
+    {
+     "type": {
+      "kode": "MEDL",
+      "beskrivelse": "Styremedlem",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "1994-10-01",
+      "navn": {
+       "fornavn": "Frida",
+       "mellomnavn": "Lunde",
+       "etternavn": "Høisæther"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 7
+    },
+    {
+     "type": {
+      "kode": "MEDL",
+      "beskrivelse": "Styremedlem",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "1979-08-07",
+      "navn": {
+       "fornavn": "Kristine",
+       "mellomnavn": "Kopperud",
+       "etternavn": "Timberlid"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 8
+    },
+    {
+     "type": {
+      "kode": "MEDL",
+      "beskrivelse": "Styremedlem",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "1984-01-23",
+      "navn": {
+       "fornavn": "Kai",
+       "mellomnavn": "Holdnes",
+       "etternavn": "Jørgensen"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 9
+    }
+   ]
+  },
+  {
+   "type": {
+    "kode": "REVI",
+    "beskrivelse": "Revisor",
+    "_links": {
+     "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REVI"
+     }
+    }
+   },
+   "sistEndret": "2020-02-26",
+   "roller": [
+    {
+     "type": {
+      "kode": "REVI",
+      "beskrivelse": "Revisor",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REVI"
+       }
+      }
+     },
+     "enhet": {
+      "organisasjonsnummer": "974760843",
+      "organisasjonsform": {
+       "kode": "ORGL",
+       "beskrivelse": "Organisasjonsledd",
+       "_links": {
+        "self": {
+         "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/ORGL"
+        }
+       }
+      },
+      "navn": [
+       "RIKSREVISJONEN"
+      ],
+      "godkjenningsstatus": "Godkjent revisjonsforetak",
+      "erSlettet": false,
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/enheter/974760843"
+       }
+      }
+     },
+     "avregistrert": false,
+     "rekkefolge": 0
+    }
+   ]
+  },
+  {
+   "type": {
+    "kode": "REGN",
+    "beskrivelse": "Regnskapsfører",
+    "_links": {
+     "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REGN"
+     }
+    }
+   },
+   "sistEndret": "2017-08-22",
+   "roller": [
+    {
+     "type": {
+      "kode": "REGN",
+      "beskrivelse": "Regnskapsfører",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REGN"
+       }
+      }
+     },
+     "enhet": {
+      "organisasjonsnummer": "986252932",
+      "organisasjonsform": {
+       "kode": "ORGL",
+       "beskrivelse": "Organisasjonsledd",
+       "_links": {
+        "self": {
+         "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/ORGL"
+        }
+       }
+      },
+      "navn": [
+       "DIREKTORATET FOR FORVALTNING OG",
+       "ØKONOMISTYRING"
+      ],
+      "erSlettet": false,
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/enheter/986252932"
+       }
+      }
+     },
+     "avregistrert": false,
+     "rekkefolge": 0
+    }
+   ]
+  },
+  {
+   "type": {
+    "kode": "ORGL",
+    "beskrivelse": "Org.ledd i offentlig sektor",
+    "_links": {
+     "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/ORGL"
+     }
+    }
+   },
+   "sistEndret": "2016-08-31",
+   "roller": [
+    {
+     "type": {
+      "kode": "ORGL",
+      "beskrivelse": "Org.ledd i offentlig sektor",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/ORGL"
+       }
+      }
+     },
+     "enhet": {
+      "organisasjonsnummer": "872417842",
+      "organisasjonsform": {
+       "kode": "STAT",
+       "beskrivelse": "Staten",
+       "_links": {
+        "self": {
+         "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/STAT"
+        }
+       }
+      },
+      "navn": [
+       "KUNNSKAPSDEPARTEMENTET"
+      ],
+      "erSlettet": false,
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/enheter/872417842"
+       }
+      }
+     },
+     "avregistrert": false,
+     "rekkefolge": 0
+    }
+   ]
+  }
+ ],
+ "_links": {
+  "self": {
+   "href": "https://data.brreg.no/enhetsregisteret/api/enheter/917641404/roller"
+  },
+  "enhet": {
+   "href": "https://data.brreg.no/enhetsregisteret/api/enheter/917641404"
+  }
+ }
+}

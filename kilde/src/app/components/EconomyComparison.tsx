@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend, BarChart, Bar, Cell, ReferenceLine } from 'recharts';
 import { Info, ExternalLink, Filter } from 'lucide-react';
 import { ECON_HENTET, ECON_PARAMS, type EconUnit, type EconYear } from '../data/economyData';
+import { EierskapOgBudsjett } from './EierskapOgBudsjett';
 
 /**
  * Økonomi og styringsindikatorer per institusjon (DBH 902 og 750), NMBU mot institusjonene vi konkurrerer med.
@@ -231,6 +232,8 @@ export function EconomyComparison({ units, hovedInst }: { units: EconUnit[]; hov
           )}
         </div>
       </div>
+
+      <EierskapOgBudsjett units={entries} colorFor={colorFor} />
 
       <div className="flex items-start gap-2 text-xs rounded-lg px-4 py-3 mt-5" style={{ backgroundColor: 'var(--nmbu-beige-light)', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-2)' }}>
         <Info className="w-3.5 h-3.5 shrink-0 mt-0.5" />

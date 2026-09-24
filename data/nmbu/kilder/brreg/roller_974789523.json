@@ -1,0 +1,647 @@
+{
+ "rollegrupper": [
+  {
+   "type": {
+    "kode": "DAGL",
+    "beskrivelse": "Daglig leder",
+    "_links": {
+     "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/DAGL"
+     }
+    }
+   },
+   "sistEndret": "2025-09-12",
+   "roller": [
+    {
+     "type": {
+      "kode": "DAGL",
+      "beskrivelse": "Daglig leder",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/DAGL"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "1975-10-25",
+      "navn": {
+       "fornavn": "Helge",
+       "etternavn": "Thorbjørnsen"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 0
+    }
+   ]
+  },
+  {
+   "type": {
+    "kode": "STYR",
+    "beskrivelse": "Styre",
+    "_links": {
+     "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/STYR"
+     }
+    }
+   },
+   "sistEndret": "2026-09-15",
+   "roller": [
+    {
+     "type": {
+      "kode": "LEDE",
+      "beskrivelse": "Styrets leder",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/LEDE"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "1966-04-10",
+      "navn": {
+       "fornavn": "Martin",
+       "etternavn": "Skancke"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 0
+    },
+    {
+     "type": {
+      "kode": "MEDL",
+      "beskrivelse": "Styremedlem",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "1973-12-29",
+      "navn": {
+       "fornavn": "Miao",
+       "mellomnavn": "Chen",
+       "etternavn": "Reinlund"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 1
+    },
+    {
+     "type": {
+      "kode": "MEDL",
+      "beskrivelse": "Styremedlem",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "1981-05-07",
+      "navn": {
+       "fornavn": "Aline",
+       "etternavn": "Bütikofer"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 2
+    },
+    {
+     "type": {
+      "kode": "MEDL",
+      "beskrivelse": "Styremedlem",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "1975-07-23",
+      "navn": {
+       "fornavn": "Daniel",
+       "mellomnavn": "Kjørberg",
+       "etternavn": "Siraj"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 3
+    },
+    {
+     "type": {
+      "kode": "MEDL",
+      "beskrivelse": "Styremedlem",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "1968-02-06",
+      "navn": {
+       "fornavn": "Monica",
+       "etternavn": "Mæland"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 4
+    },
+    {
+     "type": {
+      "kode": "MEDL",
+      "beskrivelse": "Styremedlem",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "1982-08-13",
+      "navn": {
+       "fornavn": "Malin Elisabeth",
+       "etternavn": "Arve"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 5
+    },
+    {
+     "type": {
+      "kode": "MEDL",
+      "beskrivelse": "Styremedlem",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "1964-05-30",
+      "navn": {
+       "fornavn": "Ola",
+       "mellomnavn": "Honningdal",
+       "etternavn": "Grytten"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 6
+    },
+    {
+     "type": {
+      "kode": "MEDL",
+      "beskrivelse": "Styremedlem",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "1992-06-16",
+      "navn": {
+       "fornavn": "Erik",
+       "etternavn": "Enstad"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 7
+    },
+    {
+     "type": {
+      "kode": "MEDL",
+      "beskrivelse": "Styremedlem",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "1971-07-11",
+      "navn": {
+       "fornavn": "James Watt Duncan",
+       "etternavn": "Hosea"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 8
+    },
+    {
+     "type": {
+      "kode": "MEDL",
+      "beskrivelse": "Styremedlem",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "2002-08-04",
+      "navn": {
+       "fornavn": "Stella",
+       "mellomnavn": "Færøy",
+       "etternavn": "Klivnoy"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 9
+    },
+    {
+     "type": {
+      "kode": "MEDL",
+      "beskrivelse": "Styremedlem",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "2002-06-08",
+      "navn": {
+       "fornavn": "Knut",
+       "etternavn": "Visdal"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 10
+    },
+    {
+     "type": {
+      "kode": "VARA",
+      "beskrivelse": "Varamedlem",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/VARA"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "1962-06-03",
+      "navn": {
+       "fornavn": "Tore",
+       "etternavn": "Ellingsen"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 11
+    },
+    {
+     "type": {
+      "kode": "VARA",
+      "beskrivelse": "Varamedlem",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/VARA"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "1959-03-10",
+      "navn": {
+       "fornavn": "Ruth Mari",
+       "etternavn": "Grung"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 12
+    },
+    {
+     "type": {
+      "kode": "VARA",
+      "beskrivelse": "Varamedlem",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/VARA"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "1963-10-06",
+      "navn": {
+       "fornavn": "Katarina Georgsdotter",
+       "etternavn": "Kaarbøe"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 13
+    },
+    {
+     "type": {
+      "kode": "VARA",
+      "beskrivelse": "Varamedlem",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/VARA"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "1989-03-24",
+      "navn": {
+       "fornavn": "Alexander Lars Philip",
+       "etternavn": "Willén"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 14
+    },
+    {
+     "type": {
+      "kode": "VARA",
+      "beskrivelse": "Varamedlem",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/VARA"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "1976-09-15",
+      "navn": {
+       "fornavn": "Øyvind",
+       "etternavn": "Thomassen"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 15
+    },
+    {
+     "type": {
+      "kode": "VARA",
+      "beskrivelse": "Varamedlem",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/VARA"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "1988-05-03",
+      "navn": {
+       "fornavn": "Maximilian",
+       "etternavn": "Rohrer"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 16
+    },
+    {
+     "type": {
+      "kode": "VARA",
+      "beskrivelse": "Varamedlem",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/VARA"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "1997-05-08",
+      "navn": {
+       "fornavn": "Dorotea",
+       "etternavn": "Rossi Kriscak"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 17
+    },
+    {
+     "type": {
+      "kode": "VARA",
+      "beskrivelse": "Varamedlem",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/VARA"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "1992-07-06",
+      "navn": {
+       "fornavn": "Jonas Jasper",
+       "etternavn": "Hammerschmidt"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 18
+    },
+    {
+     "type": {
+      "kode": "VARA",
+      "beskrivelse": "Varamedlem",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/VARA"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "1974-03-15",
+      "navn": {
+       "fornavn": "Stella Kristine",
+       "etternavn": "Angove"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 19
+    },
+    {
+     "type": {
+      "kode": "VARA",
+      "beskrivelse": "Varamedlem",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/VARA"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "1973-04-12",
+      "navn": {
+       "fornavn": "Hallvard",
+       "etternavn": "Lyssand"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 20
+    },
+    {
+     "type": {
+      "kode": "VARA",
+      "beskrivelse": "Varamedlem",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/VARA"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "2003-04-30",
+      "navn": {
+       "fornavn": "Mathilde",
+       "mellomnavn": "Schei",
+       "etternavn": "Eikestad"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 21
+    },
+    {
+     "type": {
+      "kode": "VARA",
+      "beskrivelse": "Varamedlem",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/VARA"
+       }
+      }
+     },
+     "person": {
+      "fodselsdato": "2001-10-05",
+      "navn": {
+       "fornavn": "Andreas",
+       "mellomnavn": "Are",
+       "etternavn": "Madsen"
+      },
+      "erDoed": false
+     },
+     "avregistrert": false,
+     "rekkefolge": 22
+    }
+   ]
+  },
+  {
+   "type": {
+    "kode": "REVI",
+    "beskrivelse": "Revisor",
+    "_links": {
+     "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REVI"
+     }
+    }
+   },
+   "sistEndret": "2020-02-26",
+   "roller": [
+    {
+     "type": {
+      "kode": "REVI",
+      "beskrivelse": "Revisor",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REVI"
+       }
+      }
+     },
+     "enhet": {
+      "organisasjonsnummer": "974760843",
+      "organisasjonsform": {
+       "kode": "ORGL",
+       "beskrivelse": "Organisasjonsledd",
+       "_links": {
+        "self": {
+         "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/ORGL"
+        }
+       }
+      },
+      "navn": [
+       "RIKSREVISJONEN"
+      ],
+      "godkjenningsstatus": "Godkjent revisjonsforetak",
+      "erSlettet": false,
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/enheter/974760843"
+       }
+      }
+     },
+     "avregistrert": false,
+     "rekkefolge": 0
+    }
+   ]
+  },
+  {
+   "type": {
+    "kode": "ORGL",
+    "beskrivelse": "Org.ledd i offentlig sektor",
+    "_links": {
+     "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/ORGL"
+     }
+    }
+   },
+   "sistEndret": "1999-08-09",
+   "roller": [
+    {
+     "type": {
+      "kode": "ORGL",
+      "beskrivelse": "Org.ledd i offentlig sektor",
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/ORGL"
+       }
+      }
+     },
+     "enhet": {
+      "organisasjonsnummer": "872417842",
+      "organisasjonsform": {
+       "kode": "STAT",
+       "beskrivelse": "Staten",
+       "_links": {
+        "self": {
+         "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/STAT"
+        }
+       }
+      },
+      "navn": [
+       "KUNNSKAPSDEPARTEMENTET"
+      ],
+      "erSlettet": false,
+      "_links": {
+       "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/enheter/872417842"
+       }
+      }
+     },
+     "avregistrert": false,
+     "rekkefolge": 0
+    }
+   ]
+  }
+ ],
+ "_links": {
+  "self": {
+   "href": "https://data.brreg.no/enhetsregisteret/api/enheter/974789523/roller"
+  },
+  "enhet": {
+   "href": "https://data.brreg.no/enhetsregisteret/api/enheter/974789523"
+  }
+ }
+}

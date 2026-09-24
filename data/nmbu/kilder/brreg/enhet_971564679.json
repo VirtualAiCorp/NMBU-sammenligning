@@ -1,0 +1,86 @@
+{
+ "organisasjonsnummer": "971564679",
+ "navn": "UNIVERSITETET I STAVANGER",
+ "organisasjonsform": {
+  "kode": "ORGL",
+  "beskrivelse": "Organisasjonsledd",
+  "_links": {
+   "self": {
+    "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/ORGL"
+   }
+  }
+ },
+ "historiskeNavn": [
+  {
+   "navn": "HØGSKOLEN I STAVANGER",
+   "fraDato": "1995-02-20 09:12:00",
+   "tilDato": "2005-01-06 20:47:16"
+  }
+ ],
+ "hjemmeside": "www.uis.no",
+ "postadresse": {
+  "land": "Norge",
+  "landkode": "NO",
+  "postnummer": "4036",
+  "poststed": "STAVANGER",
+  "adresse": [
+   "Postboks 8600"
+  ],
+  "kommune": "STAVANGER",
+  "kommunenummer": "1103"
+ },
+ "registreringsdatoEnhetsregisteret": "1995-02-20",
+ "registrertIMvaregisteret": true,
+ "naeringskode1": {
+  "kode": "85.401",
+  "beskrivelse": "Undervisning ved universiteter"
+ },
+ "antallAnsatte": 2519,
+ "harRegistrertAntallAnsatte": true,
+ "overordnetEnhet": "872417842",
+ "registreringsdatoMerverdiavgiftsregisteret": "2001-07-01",
+ "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2001-08-30",
+ "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-09-14",
+ "registreringsdatoAntallAnsatteNAVAaregisteret": "2026-09-10",
+ "epostadresse": "post@uis.no",
+ "telefon": "51 83 10 00",
+ "forretningsadresse": {
+  "land": "Norge",
+  "landkode": "NO",
+  "postnummer": "4021",
+  "poststed": "STAVANGER",
+  "adresse": [
+   "Arne Retterdals hus",
+   "Kjell Arholms gate 41"
+  ],
+  "kommune": "STAVANGER",
+  "kommunenummer": "1103"
+ },
+ "institusjonellSektorkode": {
+  "kode": "6100",
+  "beskrivelse": "Statsforvaltningen"
+ },
+ "registrertIForetaksregisteret": false,
+ "registrertIStiftelsesregisteret": false,
+ "registrertIFrivillighetsregisteret": false,
+ "konkurs": false,
+ "underAvvikling": false,
+ "underTvangsavviklingEllerTvangsopplosning": false,
+ "maalform": "Bokmål",
+ "aktivitet": [
+  "Hovedaktiviteten til Universitetet i Stavanger er undervisning",
+  "forskning og formidling."
+ ],
+ "registrertIPartiregisteret": false,
+ "paategninger": [],
+ "erIKonsern": false,
+ "_links": {
+  "self": {
+   "href": "https://data.brreg.no/enhetsregisteret/api/enheter/971564679"
+  },
+  "overordnetEnhet": {
+   "href": "https://data.brreg.no/enhetsregisteret/api/enheter/872417842"
+  }
+ },
+ "respons_klasse": "Enhet"
+}

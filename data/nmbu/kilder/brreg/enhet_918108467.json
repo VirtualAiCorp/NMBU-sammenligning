@@ -1,0 +1,81 @@
+{
+ "organisasjonsnummer": "918108467",
+ "navn": "UNIVERSITETET I INNLANDET",
+ "organisasjonsform": {
+  "kode": "ORGL",
+  "beskrivelse": "Organisasjonsledd",
+  "_links": {
+   "self": {
+    "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/ORGL"
+   }
+  }
+ },
+ "historiskeNavn": [
+  {
+   "navn": "HØGSKOLEN I INNLANDET",
+   "fraDato": "2016-11-28 15:55:58",
+   "tilDato": "2024-12-03 13:24:59"
+  }
+ ],
+ "postadresse": {
+  "land": "Norge",
+  "landkode": "NO",
+  "postnummer": "2418",
+  "poststed": "ELVERUM",
+  "adresse": [
+   "Postboks 400 Vestad"
+  ],
+  "kommune": "ELVERUM",
+  "kommunenummer": "3420"
+ },
+ "registreringsdatoEnhetsregisteret": "2016-11-28",
+ "registrertIMvaregisteret": true,
+ "naeringskode1": {
+  "kode": "85.401",
+  "beskrivelse": "Undervisning ved universiteter"
+ },
+ "antallAnsatte": 1687,
+ "harRegistrertAntallAnsatte": true,
+ "overordnetEnhet": "872417842",
+ "registreringsdatoMerverdiavgiftsregisteret": "2018-01-01",
+ "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2017-11-27",
+ "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-09-14",
+ "registreringsdatoAntallAnsatteNAVAaregisteret": "2026-09-10",
+ "forretningsadresse": {
+  "land": "Norge",
+  "landkode": "NO",
+  "postnummer": "2406",
+  "poststed": "ELVERUM",
+  "adresse": [
+   "Hamarvegen 112"
+  ],
+  "kommune": "ELVERUM",
+  "kommunenummer": "3420"
+ },
+ "institusjonellSektorkode": {
+  "kode": "6100",
+  "beskrivelse": "Statsforvaltningen"
+ },
+ "registrertIForetaksregisteret": false,
+ "registrertIStiftelsesregisteret": false,
+ "registrertIFrivillighetsregisteret": false,
+ "konkurs": false,
+ "underAvvikling": false,
+ "underTvangsavviklingEllerTvangsopplosning": false,
+ "maalform": "Bokmål",
+ "aktivitet": [
+  "Høyere utdanning, forskning og utvikling og formidling."
+ ],
+ "registrertIPartiregisteret": false,
+ "paategninger": [],
+ "erIKonsern": false,
+ "_links": {
+  "self": {
+   "href": "https://data.brreg.no/enhetsregisteret/api/enheter/918108467"
+  },
+  "overordnetEnhet": {
+   "href": "https://data.brreg.no/enhetsregisteret/api/enheter/872417842"
+  }
+ },
+ "respons_klasse": "Enhet"
+}

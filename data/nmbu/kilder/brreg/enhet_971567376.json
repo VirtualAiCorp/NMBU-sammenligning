@@ -1,0 +1,82 @@
+{
+ "organisasjonsnummer": "971567376",
+ "navn": "HØGSKOLEN I ØSTFOLD",
+ "organisasjonsform": {
+  "kode": "ORGL",
+  "beskrivelse": "Organisasjonsledd",
+  "_links": {
+   "self": {
+    "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/ORGL"
+   }
+  }
+ },
+ "historiskeNavn": [],
+ "hjemmeside": "www.hiof.no",
+ "postadresse": {
+  "land": "Norge",
+  "landkode": "NO",
+  "postnummer": "1757",
+  "poststed": "HALDEN",
+  "adresse": [
+   "Postboks 700"
+  ],
+  "kommune": "HALDEN",
+  "kommunenummer": "3101"
+ },
+ "registreringsdatoEnhetsregisteret": "1995-02-20",
+ "registrertIMvaregisteret": true,
+ "frivilligMvaRegistrertBeskrivelser": [
+  "Utleier av bygg eller anlegg"
+ ],
+ "naeringskode1": {
+  "kode": "85.403",
+  "beskrivelse": "Undervisning ved andre høgskoler"
+ },
+ "antallAnsatte": 848,
+ "harRegistrertAntallAnsatte": true,
+ "overordnetEnhet": "872417842",
+ "registreringsdatoFrivilligMerverdiavgiftsregisteret": "2014-01-11",
+ "registreringsdatoMerverdiavgiftsregisteret": "1998-05-01",
+ "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "1998-07-16",
+ "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-09-14",
+ "registreringsdatoAntallAnsatteNAVAaregisteret": "2026-09-10",
+ "epostadresse": "postmottak@hiof.no",
+ "telefon": "69 60 80 00",
+ "forretningsadresse": {
+  "land": "Norge",
+  "landkode": "NO",
+  "postnummer": "1783",
+  "poststed": "HALDEN",
+  "adresse": [
+   "B R A veien 4"
+  ],
+  "kommune": "HALDEN",
+  "kommunenummer": "3101"
+ },
+ "institusjonellSektorkode": {
+  "kode": "6100",
+  "beskrivelse": "Statsforvaltningen"
+ },
+ "registrertIForetaksregisteret": false,
+ "registrertIStiftelsesregisteret": false,
+ "registrertIFrivillighetsregisteret": false,
+ "konkurs": false,
+ "underAvvikling": false,
+ "underTvangsavviklingEllerTvangsopplosning": false,
+ "maalform": "Bokmål",
+ "aktivitet": [
+  "Høgskole"
+ ],
+ "registrertIPartiregisteret": false,
+ "paategninger": [],
+ "erIKonsern": false,
+ "_links": {
+  "self": {
+   "href": "https://data.brreg.no/enhetsregisteret/api/enheter/971567376"
+  },
+  "overordnetEnhet": {
+   "href": "https://data.brreg.no/enhetsregisteret/api/enheter/872417842"
+  }
+ },
+ "respons_klasse": "Enhet"
+}

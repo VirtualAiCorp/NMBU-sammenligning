@@ -1,0 +1,93 @@
+{
+ "organisasjonsnummer": "969159570",
+ "navn": "NORGES MILJØ- OG BIOVITENSKAPELIGE UNIVERSITET (NMBU)",
+ "organisasjonsform": {
+  "kode": "ORGL",
+  "beskrivelse": "Organisasjonsledd",
+  "_links": {
+   "self": {
+    "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/ORGL"
+   }
+  }
+ },
+ "historiskeNavn": [
+  {
+   "navn": "NORGES LANDBRUKSHØGSKOLE",
+   "fraDato": "1995-03-12 19:22:00",
+   "tilDato": "2005-01-06 20:47:35"
+  },
+  {
+   "navn": "UNIVERSITETET FOR MILJØ- OG BIOVITENSKAP",
+   "fraDato": "2005-01-06 20:47:35",
+   "tilDato": "2014-01-07 22:35:40"
+  }
+ ],
+ "hjemmeside": "www.nmbu.no",
+ "postadresse": {
+  "land": "Norge",
+  "landkode": "NO",
+  "postnummer": "1432",
+  "poststed": "ÅS",
+  "adresse": [
+   "Postboks 5003"
+  ],
+  "kommune": "ÅS",
+  "kommunenummer": "3218"
+ },
+ "registreringsdatoEnhetsregisteret": "1995-03-12",
+ "registrertIMvaregisteret": true,
+ "naeringskode1": {
+  "kode": "85.401",
+  "beskrivelse": "Undervisning ved universiteter"
+ },
+ "naeringskode2": {
+  "kode": "75.000",
+  "beskrivelse": "Veterinærtjenester"
+ },
+ "antallAnsatte": 2310,
+ "harRegistrertAntallAnsatte": true,
+ "overordnetEnhet": "872417842",
+ "registreringsdatoMerverdiavgiftsregisteret": "2003-01-01",
+ "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2003-11-24",
+ "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-09-14",
+ "registreringsdatoAntallAnsatteNAVAaregisteret": "2026-09-10",
+ "epostadresse": "post@nmbu.no",
+ "telefon": "67 23 00 00",
+ "forretningsadresse": {
+  "land": "Norge",
+  "landkode": "NO",
+  "postnummer": "1433",
+  "poststed": "ÅS",
+  "adresse": [
+   "Universitetstunet 3"
+  ],
+  "kommune": "ÅS",
+  "kommunenummer": "3218"
+ },
+ "institusjonellSektorkode": {
+  "kode": "6100",
+  "beskrivelse": "Statsforvaltningen"
+ },
+ "registrertIForetaksregisteret": false,
+ "registrertIStiftelsesregisteret": false,
+ "registrertIFrivillighetsregisteret": false,
+ "konkurs": false,
+ "underAvvikling": false,
+ "underTvangsavviklingEllerTvangsopplosning": false,
+ "maalform": "Bokmål",
+ "aktivitet": [
+  "Undervisning ved universiteter."
+ ],
+ "registrertIPartiregisteret": false,
+ "paategninger": [],
+ "erIKonsern": false,
+ "_links": {
+  "self": {
+   "href": "https://data.brreg.no/enhetsregisteret/api/enheter/969159570"
+  },
+  "overordnetEnhet": {
+   "href": "https://data.brreg.no/enhetsregisteret/api/enheter/872417842"
+  }
+ },
+ "respons_klasse": "Enhet"
+}

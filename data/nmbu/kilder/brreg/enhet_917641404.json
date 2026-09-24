@@ -1,0 +1,84 @@
+{
+ "organisasjonsnummer": "917641404",
+ "navn": "HØGSKULEN PÅ VESTLANDET",
+ "organisasjonsform": {
+  "kode": "ORGL",
+  "beskrivelse": "Organisasjonsledd",
+  "_links": {
+   "self": {
+    "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/ORGL"
+   }
+  }
+ },
+ "historiskeNavn": [
+  {
+   "navn": "HØGSKULEN PÅ VESTLANDET",
+   "fraDato": "2016-08-31 08:13:11",
+   "tilDato": "2017-08-18 10:58:52"
+  }
+ ],
+ "hjemmeside": "hvl.no",
+ "postadresse": {
+  "land": "Norge",
+  "landkode": "NO",
+  "postnummer": "5020",
+  "poststed": "BERGEN",
+  "adresse": [
+   "Postboks 7030"
+  ],
+  "kommune": "BERGEN",
+  "kommunenummer": "4601"
+ },
+ "registreringsdatoEnhetsregisteret": "2016-08-31",
+ "registrertIMvaregisteret": true,
+ "naeringskode1": {
+  "kode": "85.403",
+  "beskrivelse": "Undervisning ved andre høgskoler"
+ },
+ "antallAnsatte": 2475,
+ "harRegistrertAntallAnsatte": true,
+ "overordnetEnhet": "872417842",
+ "registreringsdatoMerverdiavgiftsregisteret": "2017-01-01",
+ "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2017-05-18",
+ "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-09-14",
+ "registreringsdatoAntallAnsatteNAVAaregisteret": "2026-09-10",
+ "epostadresse": "post@hvl.no",
+ "telefon": "55 58 58 00",
+ "forretningsadresse": {
+  "land": "Norge",
+  "landkode": "NO",
+  "postnummer": "5063",
+  "poststed": "BERGEN",
+  "adresse": [
+   "Inndalsveien 28"
+  ],
+  "kommune": "BERGEN",
+  "kommunenummer": "4601"
+ },
+ "institusjonellSektorkode": {
+  "kode": "6100",
+  "beskrivelse": "Statsforvaltningen"
+ },
+ "registrertIForetaksregisteret": false,
+ "registrertIStiftelsesregisteret": false,
+ "registrertIFrivillighetsregisteret": false,
+ "konkurs": false,
+ "underAvvikling": false,
+ "underTvangsavviklingEllerTvangsopplosning": false,
+ "maalform": "Nynorsk",
+ "aktivitet": [
+  "Høgskule"
+ ],
+ "registrertIPartiregisteret": false,
+ "paategninger": [],
+ "erIKonsern": false,
+ "_links": {
+  "self": {
+   "href": "https://data.brreg.no/enhetsregisteret/api/enheter/917641404"
+  },
+  "overordnetEnhet": {
+   "href": "https://data.brreg.no/enhetsregisteret/api/enheter/872417842"
+  }
+ },
+ "respons_klasse": "Enhet"
+}

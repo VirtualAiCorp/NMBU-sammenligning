@@ -1,0 +1,88 @@
+{
+ "organisasjonsnummer": "971035854",
+ "navn": "UNIVERSITETET I OSLO",
+ "organisasjonsform": {
+  "kode": "ORGL",
+  "beskrivelse": "Organisasjonsledd",
+  "_links": {
+   "self": {
+    "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/ORGL"
+   }
+  }
+ },
+ "historiskeNavn": [
+  {
+   "navn": "UNIVERSITETET-OSLO V/S E SVENDSEN",
+   "fraDato": "1995-03-12 18:05:00",
+   "tilDato": "1997-07-16 18:15:48"
+  }
+ ],
+ "hjemmeside": "www.uio.no/",
+ "postadresse": {
+  "land": "Norge",
+  "landkode": "NO",
+  "postnummer": "0316",
+  "poststed": "OSLO",
+  "adresse": [
+   "Postboks 1072 Blindern"
+  ],
+  "kommune": "OSLO",
+  "kommunenummer": "0301"
+ },
+ "registreringsdatoEnhetsregisteret": "1995-03-12",
+ "registrertIMvaregisteret": true,
+ "frivilligMvaRegistrertBeskrivelser": [
+  "Utleier av bygg eller anlegg"
+ ],
+ "naeringskode1": {
+  "kode": "85.401",
+  "beskrivelse": "Undervisning ved universiteter"
+ },
+ "antallAnsatte": 9039,
+ "harRegistrertAntallAnsatte": true,
+ "overordnetEnhet": "872417842",
+ "registreringsdatoFrivilligMerverdiavgiftsregisteret": "2015-07-29",
+ "registreringsdatoMerverdiavgiftsregisteret": "1970-11-01",
+ "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "1995-03-12",
+ "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-09-14",
+ "registreringsdatoAntallAnsatteNAVAaregisteret": "2026-09-10",
+ "epostadresse": "postmottak@admin.uio.no",
+ "telefon": "22 85 50 50",
+ "forretningsadresse": {
+  "land": "Norge",
+  "landkode": "NO",
+  "postnummer": "0371",
+  "poststed": "OSLO",
+  "adresse": [
+   "Problemveien 7"
+  ],
+  "kommune": "OSLO",
+  "kommunenummer": "0301"
+ },
+ "institusjonellSektorkode": {
+  "kode": "6100",
+  "beskrivelse": "Statsforvaltningen"
+ },
+ "registrertIForetaksregisteret": false,
+ "registrertIStiftelsesregisteret": false,
+ "registrertIFrivillighetsregisteret": false,
+ "konkurs": false,
+ "underAvvikling": false,
+ "underTvangsavviklingEllerTvangsopplosning": false,
+ "maalform": "Bokmål",
+ "aktivitet": [
+  "Undervisning ved universiteter."
+ ],
+ "registrertIPartiregisteret": false,
+ "paategninger": [],
+ "erIKonsern": false,
+ "_links": {
+  "self": {
+   "href": "https://data.brreg.no/enhetsregisteret/api/enheter/971035854"
+  },
+  "overordnetEnhet": {
+   "href": "https://data.brreg.no/enhetsregisteret/api/enheter/872417842"
+  }
+ },
+ "respons_klasse": "Enhet"
+}
