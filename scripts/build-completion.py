@@ -36,8 +36,9 @@ YEARS_TOP = "10"
 
 
 def find_cache(name):
-    for p in glob.glob(str(ROOT / "data" / "*" / "kilder" / "dbh-cache" / name)):
-        return Path(p)
+    # Cachen kan være komprimert (<navn>.json.gz); fetch_dbh leser begge
+    for p in glob.glob(str(ROOT / "data" / "*" / "kilder" / "dbh-cache" / name)) + glob.glob(str(ROOT / "data" / "*" / "kilder" / "dbh-cache" / (name + ".gz"))):
+        return Path(p[:-3] if p.endswith(".gz") else p)
     return None
 
 

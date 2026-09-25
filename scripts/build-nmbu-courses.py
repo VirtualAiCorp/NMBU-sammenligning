@@ -27,7 +27,12 @@ GRADES = ["A", "B", "C", "D", "E", "F", "G", "H"]
 
 
 def rows(path):
-    d = json.load(open(path, encoding="utf-8"))
+    # Cachen kan være komprimert (<navn>.json.gz)
+    if not os.path.exists(path) and os.path.exists(path + ".gz"):
+        import gzip
+        d = json.load(gzip.open(path + ".gz", "rt", encoding="utf-8"))
+    else:
+        d = json.load(open(path, encoding="utf-8"))
     return d[1:] if d and isinstance(d[0], dict) and "status" in d[0] else d
 
 

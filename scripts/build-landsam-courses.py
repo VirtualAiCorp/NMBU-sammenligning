@@ -167,13 +167,39 @@ def dbh_query_208(institusjonskode: str, years: int) -> dict:
     }
 
 
+def cache_finnes(cache_path: Path) -> bool:
+    """Cachen kan ligge som <navn>.json eller komprimert som <navn>.json.gz (DBH-cachen er komprimert for å spare plass)."""
+    return cache_path.exists() or Path(str(cache_path) + ".gz").exists()
+
+
+def les_cache(cache_path: Path) -> str:
+    """Leser <navn>.json, eller <navn>.json.gz hvis bare den komprimerte finnes."""
+    if cache_path.exists():
+        return cache_path.read_text(encoding="utf-8")
+    import gzip
+    with gzip.open(str(cache_path) + ".gz", "rt", encoding="utf-8") as f:
+        return f.read()
+
+
+def skriv_cache(cache_path: Path, tekst: str) -> None:
+    """Filer i en dbh-cache-mappe skrives komprimert (.json.gz); andre cacher skrives som vanlig JSON."""
+    cache_path.parent.mkdir(parents=True, exist_ok=True)
+    if cache_path.parent.name == "dbh-cache":
+        import gzip
+        with gzip.open(str(cache_path) + ".gz", "wt", encoding="utf-8", compresslevel=6) as f:
+            f.write(tekst)
+        if cache_path.exists():
+            cache_path.unlink()
+    else:
+        cache_path.write_text(tekst, encoding="utf-8")
+
+
 def fetch_dbh(query: dict, cache_path: Path, refresh: bool) -> list:
     """POSTer mot DBH-API-et, eller leser fra cache. Returnerer raden-listen
     (uten status-elementet). Cacher alltid det RÅ svaret (inkl. status)."""
-    if cache_path.exists() and not refresh:
-        raw_text = cache_path.read_text(encoding="utf-8")
-        size = cache_path.stat().st_size
-        print(f"  [cache] {cache_path.name} ({size / 1_000_000:.1f} MB)", file=sys.stderr)
+    if cache_finnes(cache_path) and not refresh:
+        raw_text = les_cache(cache_path)
+        print(f"  [cache] {cache_path.name} ({len(raw_text) / 1_000_000:.1f} MB)", file=sys.stderr)
         data = json.loads(raw_text)
     else:
         body = json.dumps(query, ensure_ascii=False).encode("utf-8")
@@ -192,8 +218,7 @@ def fetch_dbh(query: dict, cache_path: Path, refresh: bool) -> list:
         dt = time.time() - t0
         print(f"  [nett]  {len(raw) / 1_000_000:.1f} MB på {dt:.1f}s", file=sys.stderr)
         data = json.loads(raw.decode("utf-8"))
-        cache_path.parent.mkdir(parents=True, exist_ok=True)
-        cache_path.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+        skriv_cache(cache_path, json.dumps(data, ensure_ascii=False))
 
     if isinstance(data, dict):
         print(f"  [FEIL]  uventet svar (dict, ikke liste) for {cache_path.name}: {data}", file=sys.stderr)

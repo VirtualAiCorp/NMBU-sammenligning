@@ -560,3 +560,31 @@ Boksen «Søk og spør i styrepapirene» ligger øverst i markedsstatus for alle
     - Funksjonen kontrollerer etter hvert svar at alle tall (unntatt år) finnes i utdragene eller sammendragene, med eller uten tusenskille. Tall som ikke finnes, returneres som `ubekreftet` og vises med gul advarsel under svaret.
   - Svaret har `versjon` for å se hvilken utgave av funksjonen som svarer.
 
+## 32. KI-chat nede i hjørnet (25.09.2026)
+
+Knappen «Spør KI» ligger nede til høyre på alle sidene og i alle oppsett (`KiChatKnapp.tsx`, 4 kB). Chatvinduet (`KiChatPanel.tsx`) lastes først ved klikk og vises i fullskjerm på mobil.
+- **Kilder**, søkt i nettleseren for hvert spørsmål (BM25 med synonymer). Søket bruker også forrige spørsmål, så oppfølgingsspørsmål finner riktige kilder.
+  - Nøkkeltall per program [D]: `scripts/build-ki-grunnlag.py` → `kilde/public/ki/<fakultet>-data.json`, med én linje per program og de tre siste årene. Linjen har søkere, førstevalgssøkere, plasser, kvalifiserte, tilbud, poenggrenser (hovedopptak og supplering), snittpoeng, kvinneandel, gjennomføring for siste startkull, registrerte, Studiebarometeret og andel engelsk/innreisende.
+  - Når spørsmålet gjelder en programgruppe, sendes NMBUs program først, så hovedkonkurrentene og inntil seks av de øvrige (maks 16 linjer).
+  - På sider for hele NMBU søkes det i alle fakultetene.
+  - Styrepapirer [n] og sammendrag [S]: bare for fakultetet brukeren står på.
+  - Metode [M]: denne dokumentasjonen (`kilde/public/ki/metode.json`), uten tekniske og interne avsnitt. Den interne opptaksanalysen er aldri med.
+- **Serverdelen:** `functions/api/chat.ts` bruker felles kode i `functions/_lib/ki.ts` (Mistral-kall, regelsjekk, tallkontroll og regler).
+  - Instruksen beskriver kildetypene, arbeidsmåten og reglene. Arbeidsmåten er: forstå spørsmålet, svar kort først, samme år og mål ved sammenligning, vedtak/forslag/diskusjon/tall, metode ved spørsmål om utregning, rangering ved å sortere først, NMBU alltid med, og en vurdering som bare bygger på tallene.
+  - Modellen får de siste seks meldingene.
+  - Tall i svaret som ikke finnes i kildene eller tidligere i samtalen, vises med gul advarsel.
+- **Oppdatering:** kjør `python3 scripts/build-ki-grunnlag.py` når opptaks-, gjennomførings- eller Studiebarometer-dataene er bygget på nytt. Metodeteksten hentes også herfra.
+- **Testet ende til ende med Playwright på den publiserte siden** (PC og mobil): poenggrense for B-ØA mot konkurrentene, oppfølgingsspørsmålet «hvem tok opp alle kvalifiserte?» og nye studieprogram (markedsstatus).
+  - Funn i første runde: NMBU manglet i utvalget, og rangeringen var feil. Det er rettet med gruppevalget og rangeringsregelen.
+
+## 33. Lokal opprydding og komprimert DBH-cache (25.09.2026)
+
+Disken på maskinen var full, med 7,2 GB i prosjektmappen og 5,6 GB av det i `data/*/kilder/dbh-cache`.
+- **Duplikater:** 119 like filer i hurtiglageret (samme institusjon under flere fakulteter) ble erstattet med harde lenker. Det sparte 1,5 GB.
+- **Komprimering:** hurtiglageret er komprimert med gzip, fra 4,10 GB til 0,15 GB.
+  - `fetch_dbh` i build-landsam-courses.py leser `<navn>.json` eller `<navn>.json.gz` (`cache_finnes`, `les_cache`) og skriver nye filer i dbh-cache-mapper komprimert (`skriv_cache`).
+  - Skriptene som leter etter cachefiler selv (build-completion, build-national-courses, build-internasjonal, build-nmbu-courses) finner også .gz.
+  - Kontrollert: opptak, emner og gjennomføring for HH, internasjonalisering og NMBU-emnene ble bygget på nytt fra det komprimerte hurtiglageret og ble identiske (bortsett fra datoene).
+- **Slettet:** byggene `kilde/dist` og `kilde/dist-uten-hh` (lages på nytt ved `npm run build`) og midlertidige nedlastinger.
+- Prosjektmappen er nå på om lag 0,65 GB pluss node_modules (0,4 GB). DBH-cachen er fortsatt ikke i git; den kan hentes på nytt med `--refresh`.
+

@@ -33,14 +33,15 @@ UTV_OVERSTYR = {"8241": set(), "1240": {"BACHUTV", "MASTERUTV"}}
 
 
 def rader(fil):
-    d = json.load(open(fil, encoding="utf-8"))
+    d = json.loads(blc.les_cache(Path(fil)))
     return [r for r in (d if isinstance(d, list) else []) if isinstance(r, dict) and "Emnekode" in r]
 
 
 def cache_for(tabell, inst):
     for fak in FAKULTETER:
-        for f in sorted(glob.glob(str(ROOT / "data" / fak / "kilder" / "dbh-cache" / f"{tabell}_{inst}_*.json"))):
-            return f
+        mappe = ROOT / "data" / fak / "kilder" / "dbh-cache"
+        for f in sorted(glob.glob(str(mappe / f"{tabell}_{inst}_*.json")) + glob.glob(str(mappe / f"{tabell}_{inst}_*.json.gz"))):
+            return f[:-3] if f.endswith(".gz") else f
     return None
 
 
