@@ -1,0 +1,51 @@
+/* GENERERT av scripts/build-tema-css.py – ikke rediger for hånd. */
+/* Faste NMBU-farger i komponentene følger valgt fargetema (tema.css). */
+
+:root[data-farge] [style^="color: rgb(0, 154, 129)"], :root[data-farge] [style*=" color: rgb(0, 154, 129)"] { color: var(--nmbu-green) !important; }
+:root[data-farge] [style*="background-color: rgb(0, 154, 129)"], :root[data-farge] [style*="background: rgb(0, 154, 129)"] { background-color: var(--nmbu-green) !important; }
+:root[data-farge] [style*="border: 1px solid rgb(0, 154, 129)"], :root[data-farge] [style*="border-color: rgb(0, 154, 129)"], :root[data-farge] [style*="solid rgb(0, 154, 129)"] { border-color: var(--nmbu-green) !important; }
+:root[data-farge] [fill="#009a81" i] { fill: var(--nmbu-green); } :root[data-farge] [stroke="#009a81" i] { stroke: var(--nmbu-green); }
+:root[data-farge][data-theme="dark"] [style^="color: rgb(0, 154, 129)"], :root[data-farge][data-theme="dark"] [style*=" color: rgb(0, 154, 129)"] { color: var(--dm-accent-text) !important; }
+:root[data-farge][data-theme="dark"] [fill="#009a81" i] { fill: var(--nmbu-green); } :root[data-farge][data-theme="dark"] [stroke="#009a81" i] { stroke: var(--nmbu-green); }
+:root[data-farge] [style^="color: rgb(2, 92, 79)"], :root[data-farge] [style*=" color: rgb(2, 92, 79)"] { color: var(--nmbu-green-dark) !important; }
+:root[data-farge] [style*="background-color: rgb(2, 92, 79)"], :root[data-farge] [style*="background: rgb(2, 92, 79)"] { background-color: var(--nmbu-green-dark) !important; }
+:root[data-farge] [style*="border: 1px solid rgb(2, 92, 79)"], :root[data-farge] [style*="border-color: rgb(2, 92, 79)"], :root[data-farge] [style*="solid rgb(2, 92, 79)"] { border-color: var(--nmbu-green-dark) !important; }
+:root[data-farge] [fill="#025c4f" i] { fill: var(--nmbu-green-dark); } :root[data-farge] [stroke="#025c4f" i] { stroke: var(--nmbu-green-dark); }
+:root[data-farge][data-theme="dark"] [style^="color: rgb(2, 92, 79)"], :root[data-farge][data-theme="dark"] [style*=" color: rgb(2, 92, 79)"] { color: var(--dm-accent-text) !important; }
+:root[data-farge][data-theme="dark"] [fill="#025c4f" i] { fill: var(--nmbu-green); } :root[data-farge][data-theme="dark"] [stroke="#025c4f" i] { stroke: var(--nmbu-green); }
+:root[data-farge] [style^="color: rgb(11, 79, 67)"], :root[data-farge] [style*=" color: rgb(11, 79, 67)"] { color: var(--nmbu-green-dark) !important; }
+:root[data-farge] [style*="background-color: rgb(11, 79, 67)"], :root[data-farge] [style*="background: rgb(11, 79, 67)"] { background-color: var(--nmbu-green-dark) !important; }
+:root[data-farge] [style*="border: 1px solid rgb(11, 79, 67)"], :root[data-farge] [style*="border-color: rgb(11, 79, 67)"], :root[data-farge] [style*="solid rgb(11, 79, 67)"] { border-color: var(--nmbu-green-dark) !important; }
+:root[data-farge] [fill="#0b4f43" i] { fill: var(--nmbu-green-dark); } :root[data-farge] [stroke="#0b4f43" i] { stroke: var(--nmbu-green-dark); }
+:root[data-farge][data-theme="dark"] [style^="color: rgb(11, 79, 67)"], :root[data-farge][data-theme="dark"] [style*=" color: rgb(11, 79, 67)"] { color: var(--dm-accent-text) !important; }
+:root[data-farge][data-theme="dark"] [fill="#0b4f43" i] { fill: var(--nmbu-green); } :root[data-farge][data-theme="dark"] [stroke="#0b4f43" i] { stroke: var(--nmbu-green); }
+:root[data-farge] [style^="color: rgb(36, 119, 97)"], :root[data-farge] [style*=" color: rgb(36, 119, 97)"] { color: var(--nmbu-green-6) !important; }
+:root[data-farge] [style*="background-color: rgb(36, 119, 97)"], :root[data-farge] [style*="background: rgb(36, 119, 97)"] { background-color: var(--nmbu-green-6) !important; }
+:root[data-farge] [style*="border: 1px solid rgb(36, 119, 97)"], :root[data-farge] [style*="border-color: rgb(36, 119, 97)"], :root[data-farge] [style*="solid rgb(36, 119, 97)"] { border-color: var(--nmbu-green-6) !important; }
+:root[data-farge] [fill="#247761" i] { fill: var(--nmbu-green-6); } :root[data-farge] [stroke="#247761" i] { stroke: var(--nmbu-green-6); }
+:root[data-farge][data-theme="dark"] [style^="color: rgb(36, 119, 97)"], :root[data-farge][data-theme="dark"] [style*=" color: rgb(36, 119, 97)"] { color: var(--dm-accent-text) !important; }
+:root[data-farge][data-theme="dark"] [fill="#247761" i] { fill: var(--nmbu-green); } :root[data-farge][data-theme="dark"] [stroke="#247761" i] { stroke: var(--nmbu-green); }
+:root[data-farge] [style^="color: rgb(70, 180, 160)"], :root[data-farge] [style*=" color: rgb(70, 180, 160)"] { color: var(--nmbu-green-2) !important; }
+:root[data-farge] [style*="background-color: rgb(70, 180, 160)"], :root[data-farge] [style*="background: rgb(70, 180, 160)"] { background-color: var(--nmbu-green-2) !important; }
+:root[data-farge] [style*="border: 1px solid rgb(70, 180, 160)"], :root[data-farge] [style*="border-color: rgb(70, 180, 160)"], :root[data-farge] [style*="solid rgb(70, 180, 160)"] { border-color: var(--nmbu-green-2) !important; }
+:root[data-farge] [fill="#46b4a0" i] { fill: var(--nmbu-green-2); } :root[data-farge] [stroke="#46b4a0" i] { stroke: var(--nmbu-green-2); }
+:root[data-farge] [style^="color: rgb(139, 206, 192)"], :root[data-farge] [style*=" color: rgb(139, 206, 192)"] { color: var(--nmbu-green-3) !important; }
+:root[data-farge] [style*="background-color: rgb(139, 206, 192)"], :root[data-farge] [style*="background: rgb(139, 206, 192)"] { background-color: var(--nmbu-green-3) !important; }
+:root[data-farge] [style*="border: 1px solid rgb(139, 206, 192)"], :root[data-farge] [style*="border-color: rgb(139, 206, 192)"], :root[data-farge] [style*="solid rgb(139, 206, 192)"] { border-color: var(--nmbu-green-3) !important; }
+:root[data-farge] [fill="#8bcec0" i] { fill: var(--nmbu-green-3); } :root[data-farge] [stroke="#8bcec0" i] { stroke: var(--nmbu-green-3); }
+:root[data-farge] [style^="color: rgb(184, 216, 207)"], :root[data-farge] [style*=" color: rgb(184, 216, 207)"] { color: var(--nmbu-green-3) !important; }
+:root[data-farge] [style*="background-color: rgb(184, 216, 207)"], :root[data-farge] [style*="background: rgb(184, 216, 207)"] { background-color: var(--nmbu-green-3) !important; }
+:root[data-farge] [style*="border: 1px solid rgb(184, 216, 207)"], :root[data-farge] [style*="border-color: rgb(184, 216, 207)"], :root[data-farge] [style*="solid rgb(184, 216, 207)"] { border-color: var(--nmbu-green-3) !important; }
+:root[data-farge] [fill="#b8d8cf" i] { fill: var(--nmbu-green-3); } :root[data-farge] [stroke="#b8d8cf" i] { stroke: var(--nmbu-green-3); }
+:root[data-farge] [style^="color: rgb(230, 244, 241)"], :root[data-farge] [style*=" color: rgb(230, 244, 241)"] { color: var(--nmbu-green-light) !important; }
+:root[data-farge] [style*="background-color: rgb(230, 244, 241)"], :root[data-farge] [style*="background: rgb(230, 244, 241)"] { background-color: var(--nmbu-green-light) !important; }
+:root[data-farge] [style*="border: 1px solid rgb(230, 244, 241)"], :root[data-farge] [style*="border-color: rgb(230, 244, 241)"], :root[data-farge] [style*="solid rgb(230, 244, 241)"] { border-color: var(--nmbu-green-light) !important; }
+:root[data-farge] [fill="#e6f4f1" i] { fill: var(--nmbu-green-light); } :root[data-farge] [stroke="#e6f4f1" i] { stroke: var(--nmbu-green-light); }
+:root[data-farge] [style^="color: rgb(230, 245, 243)"], :root[data-farge] [style*=" color: rgb(230, 245, 243)"] { color: var(--nmbu-green-light) !important; }
+:root[data-farge] [style*="background-color: rgb(230, 245, 243)"], :root[data-farge] [style*="background: rgb(230, 245, 243)"] { background-color: var(--nmbu-green-light) !important; }
+:root[data-farge] [style*="border: 1px solid rgb(230, 245, 243)"], :root[data-farge] [style*="border-color: rgb(230, 245, 243)"], :root[data-farge] [style*="solid rgb(230, 245, 243)"] { border-color: var(--nmbu-green-light) !important; }
+:root[data-farge] [fill="#e6f5f3" i] { fill: var(--nmbu-green-light); } :root[data-farge] [stroke="#e6f5f3" i] { stroke: var(--nmbu-green-light); }
+:root[data-farge] [style^="color: rgb(240, 247, 245)"], :root[data-farge] [style*=" color: rgb(240, 247, 245)"] { color: var(--nmbu-green-light) !important; }
+:root[data-farge] [style*="background-color: rgb(240, 247, 245)"], :root[data-farge] [style*="background: rgb(240, 247, 245)"] { background-color: var(--nmbu-green-light) !important; }
+:root[data-farge] [style*="border: 1px solid rgb(240, 247, 245)"], :root[data-farge] [style*="border-color: rgb(240, 247, 245)"], :root[data-farge] [style*="solid rgb(240, 247, 245)"] { border-color: var(--nmbu-green-light) !important; }
+:root[data-farge] [fill="#f0f7f5" i] { fill: var(--nmbu-green-light); } :root[data-farge] [stroke="#f0f7f5" i] { stroke: var(--nmbu-green-light); }

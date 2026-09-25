@@ -640,3 +640,12 @@ Egen fane i markedsstatus for Handelshøyskolen («Strategier mot 2030», `Strat
 - **Temaoversikten** viser hvilke tema strategiene omtaler (agentene fordelte satsingene over temaene), ikke vekt. «Går igjen» bygger derfor på konkrete mønstre med navngitte institusjoner.
 - **KI-chatten** har strategiene som STRATEGIER-linjer (`build-ki-grunnlag.py`); spørsmål med «strategi», «handlingsplan», «satsing» eller «visjon» går dit, og «Ta meg til» åpner fanen.
 - **Oppdatering:** USN (strategi 2027–2035), HVL (revisjon), UiS (ny felles strategi) og utviklingsavtalene 2027–2030 vedtas høsten 2026. Kjør agentene/oppdater filene når de er vedtatt.
+
+## 37. Fargetemaer, sammenleggbar sidemeny og animert KI-chat (25.09.2026)
+
+- **Fargetema** (Oppsett-menyen, del «Fargetema»): NMBU (standard), Virtual AI Corp (indigo på kremhvit, Work Sans og Newsreader, fra Virtual AI Corp sin globals.css), Fjord (dyp blå) og Lyng (plomme fra NMBUs lilla). Uavhengig av lys/mørk modus; alle fire har mørk variant.
+  - `fargetemaStore.ts` setter `data-farge` på `<html>` (ingen attributt for NMBU), lagrer i localStorage («fargetema») og kan settes med `?farge=vac|fjord|lyng`. `index.html` setter attributtet før første tegning. Skriftene til Virtual AI Corp lastes først når temaet velges.
+  - `styles/tema.css` redefinerer NMBU-variablene per tema. Faste NMBU-koder i komponentene (også de originale HH-komponentene) overstyres i `styles/tema-overrides.css`, generert av `scripts/build-tema-css.py` (bare NMBU-palettens egne koder; semantiske farger som grønt = bedre står urørt).
+  - `build-dark-css.py` skriver nå nøytrale mørke flater som `var(--dm-surface)`, så mørk modus følger temaet.
+- **Sammenleggbar sidemeny** i dashboard-oppsettet (`AppShells.tsx`): knapp øverst i menyen, 256 → 72 px med overgang (240 ms), huskes i localStorage («nmbu-sidemeny»). Sammenslått viser fakultetsforkortelser og ikoner; `MenyHint.tsx` gir fullt navn (f.eks. «Handelshøyskolen») i verktøytips ved peker eller tastaturfokus (mønster fra verktøyet for emneansvarlige i Virtual AI Corp).
+- **KI-chatten** åpnes og lukkes med animasjon (280 ms, fade og liten forflytning tilpasset oppsettet); respekterer «redusert bevegelse».

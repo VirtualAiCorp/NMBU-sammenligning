@@ -22,6 +22,9 @@
           if (t !== 'light' && t !== 'dark') t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
           document.documentElement.setAttribute('data-theme', t);
           if (t === 'dark') document.documentElement.classList.add('dark');
+          // Fargetema (se fargetemaStore.ts): NMBU er standard og har ingen attributt
+          var f = new URLSearchParams(location.search).get('farge') || localStorage.getItem('fargetema');
+          if (f === 'vac' || f === 'fjord' || f === 'lyng') document.documentElement.setAttribute('data-farge', f);
         } catch (e) {}
       })();
     </script>

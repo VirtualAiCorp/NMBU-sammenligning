@@ -1,8 +1,9 @@
 import { useMemo, useState, type ReactNode } from 'react';
 import {
   LayoutDashboard, BookOpen, Microscope, Home, Landmark, TrendingUp, GraduationCap, Users, Star, Globe2,
-  LayoutGrid, Menu, X, Coins, Archive, Lock, Baby,
+  LayoutGrid, Menu, X, Coins, Archive, Lock, Baby, PanelLeftClose, PanelLeftOpen,
 } from 'lucide-react';
+import { MenyHint } from './MenyHint';
 import { FACULTY_META as FACULTIES, ALL_FACULTY_IDS as FACULTY_IDS, useAllFacultyBases, type FacultyId } from '../data/faculties';
 import type { Faculty } from './FacultyLanding';
 import { Matrise, lagRader } from './Matrise';
@@ -39,6 +40,10 @@ const NMBU_SIDER: { f: Faculty | null; label: string; icon: typeof BookOpen }[] 
   { f: 'nmbu-bolig', label: 'Bolig og studentboliger', icon: Home },
   { f: 'nmbu-okonomi', label: 'Økonomi', icon: Landmark },
 ];
+/** Sammenslått sidemeny: huskes i localStorage; bredden glir mellom 256 og 72 px. */
+const SIDEMENY_NOKKEL = 'nmbu-sidemeny';
+const MENY_MS = 240;
+const MENY_EASE = 'cubic-bezier(0.22, 1, 0.36, 1)';
 const erFakultet = (f: Faculty | null): f is FacultyId => !!f && (FACULTY_IDS as string[]).includes(f);
 const erNmbu = (f: Faculty | null) => f === null || (typeof f === 'string' && f.startsWith('nmbu-'));
 
@@ -81,52 +86,80 @@ export function ShellHeader({ title, subtitle, eyebrow }: { title: string; subti
 // ── Fullskjerm-dashboard ────────────────────────────────────────────────────
 export function DashboardShell({ faculty, view, onNavigate, children }: { faculty: Faculty | null; view: ShellView; onNavigate: Nav; children: ReactNode }) {
   const [mobilMeny, setMobilMeny] = useState(false);
+  const [smal, setSmalState] = useState(() => { try { return localStorage.getItem(SIDEMENY_NOKKEL) === 'smal'; } catch { return false; } });
+  const setSmal = (v: boolean) => { setSmalState(v); try { localStorage.setItem(SIDEMENY_NOKKEL, v ? 'smal' : 'bred'); } catch { /* ikke lagret */ } };
   const gaa: Nav = (f, v, g) => { setMobilMeny(false); onNavigate(f, v, g); };
   const itemStyle = (aktiv: boolean) => ({ backgroundColor: aktiv ? 'rgba(255,255,255,0.16)' : 'transparent', opacity: aktiv ? 1 : 0.82, fontWeight: aktiv ? 700 : 400 });
-  const seksjon = (t: string) => (
-    <div className="px-2 pt-3 pb-1" style={{ fontSize: 10, letterSpacing: '0.08em', textTransform: 'uppercase', opacity: 0.6 }}>{t}</div>
-  );
-  const meny = (
-    <nav className="flex flex-col gap-0.5 text-sm" aria-label="Hovedmeny">
-      <button onClick={() => gaa(null)} className="text-left px-2 pb-2" style={{ fontFamily: "'Lora', serif", fontSize: 17, whiteSpace: 'nowrap' }}>NMBU-sammenligning</button>
-      {seksjon('Fakultetene')}
-      {FACULTY_IDS.map((id) => {
-        const aapen = faculty === id;
-        return (
-          <div key={id}>
-            <button onClick={() => gaa(id, erFakultet(faculty) ? view : 'landing')} className="w-full flex items-center justify-between px-2 py-1.5 rounded-md text-left" style={itemStyle(aapen && view === 'landing')}
-              title={FACULTIES[id].label}>
-              <span>{FACULTIES[id].shortLabel}</span><span style={{ opacity: 0.5, fontSize: 10 }}>{aapen ? '▾' : '▸'}</span>
+  /** Menyen; «s» = sammenslått (bare forkortelser og ikoner, fullt navn i verktøytips). Mobilskuffen er alltid bred. */
+  const meny = (s: boolean) => {
+    const seksjon = (t: string) => s
+      ? <div className="mx-2 my-2" style={{ borderTop: '1px solid rgba(255,255,255,0.18)' }} aria-hidden />
+      : <div className="px-2 pt-3 pb-1" style={{ fontSize: 10, letterSpacing: '0.08em', textTransform: 'uppercase', opacity: 0.6 }}>{t}</div>;
+    return (
+      <nav key={s ? 'smal' : 'bred'} className="flex flex-col gap-0.5 text-sm meny-inn" aria-label="Hovedmeny">
+        {!s && <button onClick={() => gaa(null)} className="text-left px-2 pb-2" style={{ fontFamily: "'Lora', serif", fontSize: 17, whiteSpace: 'nowrap' }}>NMBU-sammenligning</button>}
+        {seksjon('Fakultetene')}
+        {FACULTY_IDS.map((id) => {
+          const aapen = faculty === id;
+          const moduler = FAKULTETSMODULER.filter((m) => m.view !== 'landing' && (!m.kunFor || m.kunFor === id));
+          return (
+            <div key={id}>
+              <MenyHint navn={FACULTIES[id].label} undertekst={aapen ? undefined : 'Åpne fakultetet'} aktiv={s}>
+                <button onClick={() => gaa(id, erFakultet(faculty) ? view : 'landing')}
+                  className={`w-full flex items-center rounded-md text-left ${s ? 'justify-center px-1 py-2' : 'justify-between px-2 py-1.5'}`}
+                  style={{ ...itemStyle(aapen && view === 'landing'), ...(s && aapen ? { backgroundColor: 'rgba(255,255,255,0.12)', opacity: 1 } : {}) }}
+                  title={s ? undefined : FACULTIES[id].label}>
+                  <span style={s ? { fontSize: FACULTIES[id].shortLabel.length > 4 ? 10 : 12, fontWeight: 700, letterSpacing: '0.03em' } : undefined}>{FACULTIES[id].shortLabel}</span>
+                  {!s && <span style={{ opacity: 0.5, fontSize: 10 }}>{aapen ? '▾' : '▸'}</span>}
+                </button>
+              </MenyHint>
+              {aapen && moduler.map((m) => (
+                <MenyHint key={m.view} navn={m.label} undertekst={FACULTIES[id].shortLabel} aktiv={s}>
+                  <button onClick={() => gaa(id, m.view)}
+                    className={`w-full flex items-center rounded-md text-left ${s ? 'justify-center py-1.5' : 'gap-2 pl-5 pr-2 py-1 text-xs'}`} style={itemStyle(view === m.view)}>
+                    <m.icon className={`${s ? 'w-4 h-4' : 'w-3.5 h-3.5'} shrink-0`} />{!s && ` ${m.label}`}
+                  </button>
+                </MenyHint>
+              ))}
+              {id === 'hh' && (aapen || faculty === 'hh-figma') && (
+                <MenyHint navn="Opprinnelig HH-analyse" aktiv={s}>
+                  <button onClick={() => gaa('hh-figma')} className={`w-full flex items-center rounded-md text-left ${s ? 'justify-center py-1.5' : 'gap-2 pl-5 pr-2 py-1 text-xs'}`} style={itemStyle(faculty === 'hh-figma')}>
+                    <Archive className={`${s ? 'w-4 h-4' : 'w-3.5 h-3.5'} shrink-0`} />{!s && ' Opprinnelig HH-analyse'}
+                  </button>
+                </MenyHint>
+              )}
+            </div>
+          );
+        })}
+        {seksjon('Hele NMBU')}
+        {NMBU_SIDER.map((x) => (
+          <MenyHint key={x.label} navn={x.label} aktiv={s}>
+            <button onClick={() => gaa(x.f)} className={`flex items-center rounded-md text-left ${s ? 'justify-center py-2' : 'gap-2 px-2 py-1.5'}`} style={itemStyle(faculty === x.f)}>
+              <x.icon className="w-4 h-4 shrink-0" />{!s && ` ${x.label}`}
             </button>
-            {aapen && FAKULTETSMODULER.filter((m) => m.view !== 'landing' && (!m.kunFor || m.kunFor === id)).map((m) => (
-              <button key={m.view} onClick={() => gaa(id, m.view)} className="w-full flex items-center gap-2 pl-5 pr-2 py-1 rounded-md text-left text-xs" style={itemStyle(view === m.view)}>
-                <m.icon className="w-3.5 h-3.5 shrink-0" /> {m.label}
-              </button>
-            ))}
-            {id === 'hh' && (aapen || faculty === 'hh-figma') && (
-              <button onClick={() => gaa('hh-figma')} className="w-full flex items-center gap-2 pl-5 pr-2 py-1 rounded-md text-left text-xs" style={itemStyle(faculty === 'hh-figma')}>
-                <Archive className="w-3.5 h-3.5 shrink-0" /> Opprinnelig HH-analyse
-              </button>
-            )}
-          </div>
-        );
-      })}
-      {seksjon('Hele NMBU')}
-      {NMBU_SIDER.map((s) => (
-        <button key={s.label} onClick={() => gaa(s.f)} className="flex items-center gap-2 px-2 py-1.5 rounded-md text-left" style={itemStyle(faculty === s.f)}>
-          <s.icon className="w-4 h-4 shrink-0" /> {s.label}
-        </button>
-      ))}
-    </nav>
-  );
+          </MenyHint>
+        ))}
+      </nav>
+    );
+  };
+  const Veksle = smal ? PanelLeftOpen : PanelLeftClose;
   return (
     <div className="min-h-screen flex" style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
-      <aside className="hidden lg:block shrink-0 sticky top-0 h-screen overflow-y-auto p-4" style={{ width: 256, backgroundColor: 'var(--nmbu-green-dark)', color: '#fff' }}>{meny}</aside>
+      <aside className="hidden lg:flex flex-col shrink-0 sticky top-0 h-screen overflow-y-auto overflow-x-hidden"
+        style={{ width: smal ? 72 : 256, padding: smal ? '16px 10px' : 16, backgroundColor: 'var(--nmbu-green-dark)', color: '#fff', transition: `width ${MENY_MS}ms ${MENY_EASE}, padding ${MENY_MS}ms ${MENY_EASE}` }}>
+        <MenyHint navn={smal ? 'Vis hele menyen' : 'Skjul menyen'} aktiv={smal}>
+          <button onClick={() => setSmal(!smal)} aria-pressed={smal} title={smal ? undefined : 'Slå sammen menyen'}
+            className={`mb-2 p-1.5 rounded-md flex items-center gap-2 text-xs ${smal ? 'self-center' : 'self-end'}`} style={{ opacity: 0.75 }}>
+            <Veksle className="w-4 h-4" />
+          </button>
+        </MenyHint>
+        {meny(smal)}
+      </aside>
       {mobilMeny && (
         <div className="lg:hidden fixed inset-0 z-40 flex" onClick={() => setMobilMeny(false)} style={{ backgroundColor: 'rgba(0,0,0,0.4)' }}>
           <aside className="h-full overflow-y-auto px-2.5 py-3 text-sm" onClick={(e) => e.stopPropagation()} style={{ width: 'min(232px, 72vw)', backgroundColor: 'var(--nmbu-green-dark)', color: '#fff' }}>
             <button onClick={() => setMobilMeny(false)} className="mb-2 flex items-center gap-1 text-xs" style={{ opacity: 0.8 }}><X className="w-4 h-4" /> Lukk</button>
-            {meny}
+            {meny(false)}
           </aside>
         </div>
       )}

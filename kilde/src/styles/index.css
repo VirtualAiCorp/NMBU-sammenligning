@@ -3,6 +3,8 @@
 @import './theme.css';
 @import './dark.css';
 @import './dark-overrides.css';
+@import './tema.css';
+@import './tema-overrides.css';
 
 /* Leaflet tooltip override */
 .leaflet-tooltip.map-tooltip {
@@ -19,3 +21,15 @@
 .leaflet-tooltip-top.map-tooltip::before {
   border-top-color: #e6e6e6;
 }
+
+/* KI-chatknappen: ikonet vris lett inn når det byttes (chat ↔ lukk) */
+@keyframes ki-ikon-inn { from { opacity: 0; transform: rotate(-90deg) scale(0.6); } to { opacity: 1; transform: none; } }
+.ki-ikon-inn { animation: ki-ikon-inn 260ms cubic-bezier(0.22, 1, 0.36, 1); }
+@media (prefers-reduced-motion: reduce) { .ki-ikon-inn { animation: none; } }
+
+/* Sidemenyen: innholdet tones inn når menyen slås sammen eller åpnes; verktøytipset glir inn */
+@keyframes meny-inn { from { opacity: 0; } to { opacity: 1; } }
+.meny-inn { animation: meny-inn 220ms ease-out; }
+@keyframes meny-hint-inn { from { opacity: 0; transform: translateX(-4px); } to { opacity: 1; transform: none; } }
+.meny-hint-inn { animation: meny-hint-inn 140ms ease-out; }
+@media (prefers-reduced-motion: reduce) { .meny-inn, .meny-hint-inn { animation: none; } }

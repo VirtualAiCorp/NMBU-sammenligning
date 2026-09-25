@@ -20,6 +20,9 @@ interface Kilder { data: DataLinje[]; dok: Treff[]; sammendrag: string[]; metode
 interface Melding { rolle: 'bruker' | 'assistent'; tekst: string; kilder?: Kilder; ubekreftet?: string[]; feil?: boolean; modell?: string; sporsmal?: string; omfang?: FacultyId[] }
 interface Storrelse { w: number; h: number; sw: number }
 const klem = (v: number, a: number, b: number) => Math.max(a, Math.min(b, v));
+/** Åpne/lukke-animasjonen (ms) og kurven: rask start, myk landing */
+const VARIGHET = 280;
+const EASE = 'cubic-bezier(0.22, 1, 0.36, 1)';
 
 /**
  * Sider i fakultetene og ordene i spørsmålet som peker dit (for «Ta meg til»), og merket på nøkkeltallslinjene for
@@ -235,11 +238,26 @@ export function KiChatPanel({ apen, lukk, fakultet, visning, sted, modus, setMod
   const [str, setStr] = useState<Storrelse>(() => { try { return { w: 440, h: 640, sw: 460, ...JSON.parse(localStorage.getItem('ki-chat-storrelse') ?? '{}') }; } catch { return { w: 440, h: 640, sw: 460 }; } });
   const [liten, setLiten] = useState(() => window.innerWidth < 640);
   useEffect(() => { const f = () => setLiten(window.innerWidth < 640); window.addEventListener('resize', f); return () => window.removeEventListener('resize', f); }, []);
+  // Animasjon: panelet ligger i DOM-en (vist) litt lenger enn det er åpent, så det kan gli ut; «inne» styrer overgangen
+  const [vist, setVist] = useState(apen);
+  const [inne, setInne] = useState(false);
+  useEffect(() => {
+    if (apen) {
+      setVist(true);
+      let r2 = 0;
+      const r1 = requestAnimationFrame(() => { r2 = requestAnimationFrame(() => setInne(true)); });
+      return () => { cancelAnimationFrame(r1); cancelAnimationFrame(r2); };
+    }
+    setInne(false);
+    const t = setTimeout(() => setVist(false), VARIGHET);
+    return () => clearTimeout(t);
+  }, [apen]);
   useEffect(() => { try { localStorage.setItem('ki-chat-storrelse', JSON.stringify(str)); } catch { /* ikke lagret */ } }, [str]);
   // Som sidepanel skyves siden til venstre, så man ser data og chat side om side
   useEffect(() => {
     const rot = document.documentElement;
     const pa = apen && modus === 'side' && !liten;
+    document.body.style.transition = `padding-right ${VARIGHET}ms ${EASE}`;
     document.body.style.paddingRight = pa ? `${str.sw}px` : '';
     if (pa) rot.style.setProperty('--ki-side', `${str.sw}px`); else rot.style.removeProperty('--ki-side');
     return () => { document.body.style.paddingRight = ''; rot.style.removeProperty('--ki-side'); };
@@ -319,11 +337,15 @@ export function KiChatPanel({ apen, lukk, fakultet, visning, sted, modus, setMod
     } finally { setVenter(false); }
   };
 
-  if (!apen) return null;
+  if (!vist) return null;
+  const skjult = liten ? 'translateY(28px)' : modus === 'side' ? 'translateX(36px)' : modus === 'stor' ? 'translateY(12px) scale(0.98)' : 'translateY(16px) scale(0.95)';
+  const rolig = typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches;
   return (
     <div className={`fixed z-[80] flex flex-col overflow-hidden ${liten || modus === 'side' ? '' : 'rounded-2xl'}`}
       style={{
         backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)', boxShadow: '0 12px 40px rgba(0,0,0,0.18)',
+        opacity: inne ? 1 : 0, transform: inne ? 'none' : skjult, transformOrigin: modus === 'flytende' && !liten ? 'bottom right' : 'center',
+        transition: rolig ? 'none' : `opacity ${VARIGHET - 60}ms ease-out, transform ${VARIGHET}ms ${EASE}`, pointerEvents: inne ? undefined : 'none',
         ...(liten ? { inset: 0 }
           : modus === 'side' ? { top: 0, right: 0, bottom: 0, width: str.sw, borderTop: 'none', borderBottom: 'none', borderRight: 'none' }
           : modus === 'stor' ? { top: '4vh', bottom: '4vh', left: 'max(20px, calc(50vw - 600px))', right: 'max(20px, calc(50vw - 600px))' }

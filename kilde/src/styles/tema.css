@@ -1,0 +1,137 @@
+/* Fargetemaer (velges i fargevelgeren oppe til høyre, fargetema.ts). NMBU er standard og har ingen data-farge.
+   Hvert tema redefinerer NMBU-variablene, så alt som bruker var(--nmbu-…) følger med; faste fargekoder i
+   komponentene (#025c4f osv.) overstyres i tema-overrides.css (generert av scripts/build-tema-css.py).
+   Rollene: green-dark = hovedfarge (sidemeny, overskrifter, knapper med hvit tekst), green = middels aksent,
+   green-2/3 = lysere aksenter, green-4 = lys tone (merkelapper), green-light = svakeste tone,
+   beige-light = sidebakgrunn, beige = varm flate, neutral* = tekst og kanter. */
+
+/* ── Virtual AI Corp: indigo på kremhvit (fra Virtual AI Corp sin globals.css) ── */
+:root[data-farge="vac"] {
+  --nmbu-green-dark:  #2a1ea6; /* flater og overskrifter: dypere indigo, så store flater ikke blir for mettet */
+  --nmbu-green:       #3626d9; /* Virtual AI Corp-aksenten */
+  --nmbu-green-2:     #8479f5;
+  --nmbu-green-3:     #b9b2fa;
+  --nmbu-green-4:     #ece9ff;
+  --nmbu-green-6:     #3626d9;
+  --nmbu-green-light: #f3f1ff;
+  --nmbu-beige:       #ebe5d4;
+  --nmbu-beige-light: #f6f2e7;
+  --nmbu-neutral:     #1b1810;
+  --nmbu-neutral-1:   #585349;
+  --nmbu-neutral-2:   #746e60;
+  --nmbu-neutral-3:   #e3ddcc;
+  --card: #fffdf7;
+  --popover: #fffdf7;
+  --primary: var(--nmbu-green-dark);
+  --secondary: var(--nmbu-green-4);
+  --secondary-foreground: var(--nmbu-green-dark);
+}
+:root[data-farge="vac"][data-theme="dark"] {
+  --dm-surface: #1c1826;
+  --dm-surface-2: #251f33;
+  --dm-accent-text: #b3aaff;
+  --nmbu-green-dark:  #2f2688;
+  --nmbu-green:       #9689ff;
+  --nmbu-green-2:     #b0a6ff;
+  --nmbu-green-3:     #3a3170;
+  --nmbu-green-4:     #241f45;
+  --nmbu-green-6:     #5446e0;
+  --nmbu-green-light: #1f1a38;
+  --nmbu-beige:       #221d2e;
+  --nmbu-beige-light: #131019;
+  --nmbu-neutral:     #f3f0e6;
+  --nmbu-neutral-1:   #cfcad9;
+  --nmbu-neutral-2:   #a39fae;
+  --nmbu-neutral-3:   #2e2839;
+  --card: var(--dm-surface);
+  --popover: var(--dm-surface-2);
+  --muted: #221d2e;
+  --accent: #221d2e;
+  --input-background: #211c2c;
+  --primary: var(--nmbu-green);
+  --secondary: var(--nmbu-green-4);
+  --secondary-foreground: var(--dm-accent-text);
+}
+/* Virtual AI Corp-skriftene: Work Sans i brødtekst, Newsreader i overskrifter (lastes først når temaet velges) */
+:root[data-farge="vac"] body { font-family: 'Work Sans', 'Helvetica Neue', Arial, sans-serif; }
+:root[data-farge="vac"] h1, :root[data-farge="vac"] h2, :root[data-farge="vac"] h3,
+:root[data-farge="vac"] [style*="Lora"] { font-family: 'Newsreader', Georgia, serif !important; }
+
+/* ── Fjord: dyp blå ── */
+:root[data-farge="fjord"] {
+  --nmbu-green-dark:  #13406b;
+  --nmbu-green:       #1f6fb2;
+  --nmbu-green-2:     #5b9bd5;
+  --nmbu-green-3:     #a9c9e8;
+  --nmbu-green-4:     #dbe8f5;
+  --nmbu-green-6:     #1a5a8f;
+  --nmbu-green-light: #eaf2fa;
+  --nmbu-beige:       #dfe6ec;
+  --nmbu-beige-light: #f3f6f9;
+  --nmbu-neutral:     #1f2933;
+  --nmbu-neutral-1:   #3e4c59;
+  --nmbu-neutral-2:   #8793a0;
+  --nmbu-neutral-3:   #e1e6eb;
+}
+:root[data-farge="fjord"][data-theme="dark"] {
+  --dm-surface: #17202a;
+  --dm-surface-2: #1f2a36;
+  --dm-accent-text: #8cc4f2;
+  --nmbu-green-dark:  #1b4f80;
+  --nmbu-green:       #3b8fd9;
+  --nmbu-green-2:     #6aaee6;
+  --nmbu-green-3:     #28486a;
+  --nmbu-green-4:     #183049;
+  --nmbu-green-6:     #2a6aa6;
+  --nmbu-green-light: #14253a;
+  --nmbu-beige:       #1c2631;
+  --nmbu-beige-light: #0f141a;
+  --nmbu-neutral:     #e6edf3;
+  --nmbu-neutral-1:   #c1ccd7;
+  --nmbu-neutral-2:   #8c9aa8;
+  --nmbu-neutral-3:   #2a3643;
+  --muted: #1c2631;
+  --accent: #1c2631;
+  --input-background: #1a232d;
+}
+
+/* ── Lyng: plomme (fra NMBUs lilla, #53143a) ── */
+:root[data-farge="lyng"] {
+  --nmbu-green-dark:  #53143a;
+  --nmbu-green:       #8e2f64;
+  --nmbu-green-2:     #b86a93;
+  --nmbu-green-3:     #dcaec6;
+  --nmbu-green-4:     #f3dde8;
+  --nmbu-green-6:     #6e1f4c;
+  --nmbu-green-light: #fbf0f5;
+  --nmbu-beige:       #ece3df;
+  --nmbu-beige-light: #faf6f3;
+  --nmbu-neutral:     #2f2528;
+  --nmbu-neutral-1:   #54474b;
+  --nmbu-neutral-2:   #998c90;
+  --nmbu-neutral-3:   #ebe2e4;
+}
+:root[data-farge="lyng"][data-theme="dark"] {
+  --dm-surface: #21181c;
+  --dm-surface-2: #2a1f24;
+  --dm-accent-text: #e8a6c8;
+  --nmbu-green-dark:  #6e1f4c;
+  --nmbu-green:       #d07aa7;
+  --nmbu-green-2:     #e09bbf;
+  --nmbu-green-3:     #5a2a43;
+  --nmbu-green-4:     #3b1c2c;
+  --nmbu-green-6:     #8a2c60;
+  --nmbu-green-light: #2c1622;
+  --nmbu-beige:       #261c20;
+  --nmbu-beige-light: #171114;
+  --nmbu-neutral:     #f1e8eb;
+  --nmbu-neutral-1:   #d4c6cb;
+  --nmbu-neutral-2:   #a08f95;
+  --nmbu-neutral-3:   #382a30;
+  --muted: #261c20;
+  --accent: #261c20;
+  --input-background: #241a1e;
+}
+
+/* Myk overgang når tema byttes */
+:root.farge-bytter, :root.farge-bytter * { transition: background-color 300ms ease, color 300ms ease, border-color 300ms ease, fill 300ms ease, stroke 300ms ease !important; }

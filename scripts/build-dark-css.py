@@ -114,7 +114,10 @@ def main():
         if lum(rgb) <= 0.55:
             continue
         sel = f'{D} [style*="background-color: {css_rgb(rgb)}"], {D} [style*="background: {css_rgb(rgb)}"]'
-        lines.append(f"{sel} {{ background-color: {hexs(dark_bg(rgb))} !important; }}")
+        # Nøytrale flater følger fargetemaets mørke flate (--dm-surface); fargede toner beholder fargetonen
+        d = dark_bg(rgb)
+        verdi = "var(--dm-surface)" if d == SURFACE else "color-mix(in srgb, var(--dm-surface) 75%, black)" if d == mix(SURFACE, (0, 0, 0), 0.25) else hexs(d)
+        lines.append(f"{sel} {{ background-color: {verdi} !important; }}")
         n += 1
     for rgb in sorted(fg, key=lum):
         if contrast(rgb, SURFACE) >= 4.5:

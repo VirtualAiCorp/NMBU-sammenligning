@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { LayoutGrid, PanelLeft, PanelTop, Check } from 'lucide-react';
 import { ThemeToggle } from './ThemeToggle';
 import { setLayout, useLayout, type Layout } from '../layoutStore';
+import { FARGETEMAER, setFargetema, useFargetema } from '../fargetemaStore';
 
 /** Oppsettvelger og lys/mørk-bryter, fast øverst til høyre på alle sider. */
 const VALG: { id: Layout; label: string; desc: string; icon: typeof LayoutGrid }[] = [
@@ -16,6 +17,7 @@ const knapp: React.CSSProperties = {
 
 function LayoutSwitcher() {
   const layout = useLayout();
+  const farge = useFargetema();
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -33,7 +35,7 @@ function LayoutSwitcher() {
         <Aktiv className="w-4 h-4" /> <span className="hidden sm:inline">Oppsett</span>
       </button>
       {open && (
-        <div role="menu" className="absolute right-0 mt-2 w-72 rounded-xl p-1.5" style={{ backgroundColor: 'var(--card)', border: '1px solid var(--nmbu-neutral-3)', boxShadow: '0 10px 30px rgba(0,0,0,0.18)' }}>
+        <div role="menu" className="absolute right-0 mt-2 w-80 rounded-xl p-1.5 meny-hint-inn" style={{ backgroundColor: 'var(--card)', border: '1px solid var(--nmbu-neutral-3)', boxShadow: '0 10px 30px rgba(0,0,0,0.18)' }}>
           <div className="px-2.5 pt-1.5 pb-1" style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.06em', textTransform: 'uppercase', color: 'var(--nmbu-neutral-2)' }}>Oppsett for nettsiden</div>
           {VALG.map((v) => (
             <button key={v.id} role="menuitemradio" aria-checked={layout === v.id} onClick={() => { setLayout(v.id); setOpen(false); }}
@@ -47,6 +49,19 @@ function LayoutSwitcher() {
               {layout === v.id && <Check className="w-4 h-4 mt-0.5" style={{ color: 'var(--nmbu-green-dark)' }} />}
             </button>
           ))}
+          <div className="px-2.5 pt-3 pb-1 mt-1" style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.06em', textTransform: 'uppercase', color: 'var(--nmbu-neutral-2)', borderTop: '1px solid var(--nmbu-neutral-3)' }}>Fargetema</div>
+          <div className="grid grid-cols-2 gap-1.5 p-1">
+            {FARGETEMAER.map((t) => (
+              <button key={t.id} role="menuitemradio" aria-checked={farge === t.id} onClick={() => setFargetema(t.id)} title={t.beskrivelse}
+                className="flex items-center gap-2 rounded-lg px-2 py-1.5 text-left"
+                style={{ border: `1px solid ${farge === t.id ? 'var(--nmbu-green-dark)' : 'var(--nmbu-neutral-3)'}`, backgroundColor: farge === t.id ? 'var(--nmbu-green-4)' : 'transparent' }}>
+                <span className="flex -space-x-1 shrink-0" aria-hidden>
+                  {t.prøve.map((c, i) => <span key={i} className="w-3.5 h-3.5 rounded-full" style={{ background: c, border: '1.5px solid var(--card)' }} />)}
+                </span>
+                <span className="text-xs truncate" style={{ fontWeight: farge === t.id ? 700 : 500, color: 'var(--nmbu-neutral)' }}>{t.navn}</span>
+              </button>
+            ))}
+          </div>
         </div>
       )}
     </div>
@@ -57,7 +72,7 @@ export function TopRightControls() {
   // På mobil ruller knappene bort med siden i stedet for å ligge over innholdet. Unntak: toppmenyen, der den faste topplinjen har plass til dem.
   const fast = useLayout() === 'toppmeny';
   return (
-    <div className={`${fast ? 'fixed' : 'absolute sm:fixed'} top-3 z-50 flex items-center gap-2`} style={{ right: 'calc(var(--ki-side, 0px) + 12px)' }}>
+    <div className={`${fast ? 'fixed' : 'absolute sm:fixed'} top-3 z-50 flex items-center gap-2`} style={{ right: 'calc(var(--ki-side, 0px) + 12px)', transition: 'right 280ms cubic-bezier(0.22, 1, 0.36, 1)' }}>
       <LayoutSwitcher />
       <ThemeToggle />
     </div>
