@@ -69,8 +69,10 @@ def data_linjer(fak):
                 if d.get("pgs_ord") is not None or d.get("pgs_fv") is not None:
                     ting.append(f"etter suppleringsopptaket ordinær {pg(d.get('pgs_ord'))} / førstegangsvitnemål {pg(d.get('pgs_fv'))}")
                 if d.get("vl_ord") is not None or d.get("vl_fv") is not None:
-                    ting.append(f"søkere på venteliste etter hovedopptaket ordinær {nf(d.get('vl_ord'))} / førstegangsvitnemål {nf(d.get('vl_fv'))}"
-                                + (f", etter suppleringsopptaket {nf(d.get('vls_ord'))} / {nf(d.get('vls_fv'))}" if d.get("vls_ord") is not None or d.get("vls_fv") is not None else ""))
+                    tot = (d.get("vl_ord") or 0) + (d.get("vl_fv") or 0)
+                    tots = (d.get("vls_ord") or 0) + (d.get("vls_fv") or 0)
+                    ting.append(f"søkere på venteliste etter hovedopptaket {nf(tot)} i alt (ordinær {nf(d.get('vl_ord'))} + førstegangsvitnemål {nf(d.get('vl_fv'))})"
+                                + (f", etter suppleringsopptaket {nf(tots)} i alt (ordinær {nf(d.get('vls_ord'))} + førstegangsvitnemål {nf(d.get('vls_fv'))})" if d.get("vls_ord") is not None or d.get("vls_fv") is not None else ""))
                 if d.get("op_mott") is not None: ting.append(f"snitt opptakspoeng for de som møtte {nf(d['op_mott'], 1)}")
                 if d.get("kp_mott") is not None and d.get("op_mott") is None: ting.append(f"snitt karakterpoeng for de som møtte {nf(d['kp_mott'], 1)} (lokalt opptak)")
                 if d.get("kvinner") is not None: ting.append(f"{nf(d['kvinner'], 1)} % kvinner blant førstevalgssøkerne")
