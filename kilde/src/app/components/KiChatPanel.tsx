@@ -125,8 +125,8 @@ export function KiChatPanel({ apen, lukk, fakultet, visning, sted }: { apen: boo
 
   if (!apen) return null;
   return (
-    <div className="fixed z-[70] flex flex-col overflow-hidden max-sm:inset-0 sm:rounded-2xl"
-      style={{ right: 20, bottom: 84, width: 'min(420px, calc(100vw - 40px))', height: 'min(640px, calc(100vh - 110px))', backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)', boxShadow: '0 12px 40px rgba(0,0,0,0.18)' }}
+    <div className="fixed z-[80] flex flex-col overflow-hidden inset-0 sm:inset-auto sm:right-5 sm:bottom-[84px] sm:w-[420px] sm:h-[min(640px,calc(100vh-110px))] sm:rounded-2xl"
+      style={{ backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)', boxShadow: '0 12px 40px rgba(0,0,0,0.18)' }}
       role="dialog" aria-label="KI-chat">
       {/* Topp */}
       <div className="flex items-center gap-2 px-4 py-3" style={{ backgroundColor: 'var(--nmbu-green-dark)', color: '#fff' }}>
