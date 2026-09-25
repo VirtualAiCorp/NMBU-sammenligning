@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, type ReactNode } from 'react';
+import { LineChart, Line, BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import type { FacultyBase, FacultyId } from '../data/faculties';
 
 /**
@@ -12,6 +13,50 @@ export interface Rad {
 }
 export const median = (xs: number[]) => { const s = [...xs].sort((a, b) => a - b); return s.length ? (s.length % 2 ? s[(s.length - 1) / 2] : (s[s.length / 2 - 1] + s[s.length / 2]) / 2) : null; };
 export const nf = (v: number | null | undefined, d = 1) => (v == null ? '–' : v.toLocaleString('nb-NO', { minimumFractionDigits: d, maximumFractionDigits: d }));
+
+// ── Detaljpanelet under en rad (brukes også av oppsettlaben) ──
+export function Panel({ title, children }: { title: string; children: ReactNode }) {
+  return (
+    <div className="rounded-xl p-4" style={{ backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)' }}>
+      <div style={{ fontSize: 12, fontWeight: 600, color: 'var(--nmbu-green-dark)', marginBottom: 8 }}>{title}</div>
+      {children}
+    </div>
+  );
+}
+export function MiniTrend({ fak, gruppe }: { fak: FacultyBase; gruppe: string }) {
+  const g = fak.admissionGroups.find((x) => x.id === gruppe)!;
+  const ents = g.entries.filter((e) => g.defaultIds.includes(e.id)).slice(0, 5);
+  const data = ['2021', '2022', '2023', '2024', '2025', '2026'].map((y) => ({ y, ...Object.fromEntries(ents.map((e) => [e.id, e.years[y]?.pg_ord || null])) }));
+  const col = ['#025C4F', '#2563EB', '#B45309', '#9333EA', '#DC2626'];
+  return (
+    <ResponsiveContainer width="100%" height={150}>
+      <LineChart data={data} margin={{ top: 4, right: 8, left: -20, bottom: 0 }}>
+        <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+        <XAxis dataKey="y" tick={{ fontSize: 9 }} /><YAxis tick={{ fontSize: 9 }} domain={['auto', 'auto']} />
+        <Tooltip />
+        {ents.map((e, i) => <Line key={e.id} dataKey={e.id} name={e.shortName} stroke={g.nmbuIds.includes(e.id) ? col[0] : col[(i % 4) + 1]} strokeWidth={g.nmbuIds.includes(e.id) ? 3 : 1.5} dot={false} connectNulls />)}
+      </LineChart>
+    </ResponsiveContainer>
+  );
+}
+export function MiniBar({ data }: { data: { n: string; v: number; nmbu?: boolean }[] }) {
+  return (
+    <ResponsiveContainer width="100%" height={Math.max(110, data.length * 22 + 20)}>
+      <BarChart data={data} layout="vertical" margin={{ top: 0, right: 30, left: 0, bottom: 0 }}>
+        <XAxis type="number" hide /><YAxis type="category" dataKey="n" width={70} tick={{ fontSize: 9 }} />
+        <Tooltip formatter={(v: number) => nf(v)} />
+        <Bar dataKey="v" radius={[0, 3, 3, 0]} label={{ position: 'right', fontSize: 9, formatter: (v: number) => nf(v) }}>
+          {data.map((d) => <Cell key={d.n} fill={d.nmbu ? '#025C4F' : '#9CA3AF'} />)}
+        </Bar>
+      </BarChart>
+    </ResponsiveContainer>
+  );
+}
+export const opMottData = (fak: FacultyBase, gruppe: string) => {
+  const g = fak.admissionGroups.find((x) => x.id === gruppe)!;
+  return g.entries.filter((e) => g.defaultIds.includes(e.id) && e.years['2025']?.op_mott != null)
+    .map((e) => ({ n: e.shortName, v: e.years['2025']!.op_mott!, nmbu: g.nmbuIds.includes(e.id) })).sort((a, b) => b.v - a.v);
+};
 
 /** Én rad per NMBU-bachelor/femårig program: NMBU mot medianen av standardkonkurrentene (2025). */
 export function lagRader(fakulteter: FacultyBase[]): Rad[] {
