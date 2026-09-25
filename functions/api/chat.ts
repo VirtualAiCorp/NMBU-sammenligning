@@ -35,8 +35,9 @@ Kildene kan være ufullstendige eller handle om noe annet enn spørsmålet. Bruk
 3. Ved tall: gjengi dem nøyaktig med enhet og år. Nyere år går foran eldre. Poenggrenser, snitt og andeler kan bare sammenlignes når de er av samme type.
 4. Ved dokumenter: skill mellom VEDTAK, FORSLAG/PLANER, DISKUSJON og FAKTISKE TALL, og oppgi dato.
 5. Når brukeren spør hvordan noe er regnet ut, eller om forbehold, bruk metodekildene.
-6. Sammenligner du med konkurrentene, ta alltid med NMBUs eget program (merket «(NMBU)») når det finnes i kildene, og plasser NMBU i forhold til dem.
-7. Avslutt eventuelt med en kort, tydelig merket vurdering av hva tallene viser for NMBU. Den skal bygge på tallene i kildene; ikke spå framtidige tall eller gi råd om hva NMBU «bør forvente».
+6. Rangerer du (høyest/lavest, plassering), skriv først opp alle verdiene sortert fra høyest til lavest, og tell plasseringen ut fra den sorterte lista. Differanser mellom tall er beregninger og skal merkes «(beregnet)».
+7. Sammenligner du med konkurrentene, ta alltid med NMBUs eget program (merket «(NMBU)») når det finnes i kildene, og plasser NMBU i forhold til dem.
+8. Avslutt eventuelt med en kort, tydelig merket vurdering av hva tallene viser for NMBU. Den skal bygge på tallene i kildene; ikke spå framtidige tall eller gi råd om hva NMBU «bør forvente».
 
 ${REGLER}
 
@@ -58,7 +59,7 @@ export const onRequestPost: PagesFunction<KiEnv> = async ({ request, env }) => {
   }
   const sted = str(body.sted, 160) || 'forsiden';
   const k = body.kilder ?? {};
-  const data = (k.data ?? []).slice(0, 12).map((d, i) => `[D${i + 1}] ${str(d.tekst, 1400)}`);
+  const data = (k.data ?? []).slice(0, 16).map((d, i) => `[D${i + 1}] ${str(d.tekst, 1300)}`);
   const dok = (k.dok ?? []).slice(0, 8).map((d, i) => `[${i + 1}] ${str(d.inst, 80)} – ${str(d.dok, 200)}${d.dato ? ` (${str(d.dato, 20)})` : ''}, side ${Number(d.side) || 0}:\n${str(d.tekst, 1600)}`);
   const sam = (k.sammendrag ?? []).slice(0, 5).map((s, i) => `[S${i + 1}] ${str(s.inst, 80)}${s.enhet ? ` (${str(s.enhet, 160)})` : ''}:\n${`${s.oppsummering ? str(s.oppsummering, 800) + '\n' : ''}${(Array.isArray(s.punkter) ? s.punkter : []).slice(0, 8).map((p) => `- ${str(p, 400)}`).join('\n')}`.slice(0, 2000)}`);
   const met = (k.metode ?? []).slice(0, 4).map((m, i) => `[M${i + 1}] ${str(m.tittel, 120)}:\n${str(m.tekst, 1600)}`);

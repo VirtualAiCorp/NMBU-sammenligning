@@ -57,9 +57,9 @@ function velgData(di: TekstIndeks<DataLinje>, q: string, sokeTekst: string): Dat
   const valgt = [
     ...iGruppe.filter((l) => l[3] === 'n'),
     ...iGruppe.filter((l) => l[3] === 'h').sort((a, b) => rang(a) - rang(b)),
-    ...iGruppe.filter((l) => !l[3]).sort((a, b) => rang(a) - rang(b)).slice(0, 3),
-  ].slice(0, 11);
-  return [...valgt, ...treff.filter((l) => l[0] !== gruppe).slice(0, 12 - valgt.length)];
+    ...iGruppe.filter((l) => !l[3]).sort((a, b) => rang(a) - rang(b)).slice(0, 6),
+  ].slice(0, 15);
+  return [...valgt, ...treff.filter((l) => l[0] !== gruppe).slice(0, Math.max(1, 16 - valgt.length))];
 }
 
 function forslag(visning: string, fak: FacultyId | null): string[] {

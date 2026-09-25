@@ -4,7 +4,7 @@
  * Cloudflare Pages.
  */
 export interface KiEnv { MISTRAL_API_KEY?: string; MISTRAL_MODEL?: string; MISTRAL_BASE_URL?: string }
-export const VERSJON = '2026-09-25e';
+export const VERSJON = '2026-09-25f';
 
 export const svar = (data: unknown, status = 200) =>
   new Response(JSON.stringify(data), { status, headers: { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' } });
