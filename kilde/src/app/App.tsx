@@ -4,6 +4,7 @@ import { LandsamLanding } from './components/LandsamLanding';
 import { FACULTY_META, useFacultyData, type FacultyData, type FacultyId } from './data/faculties';
 import { useLayout } from './layoutStore';
 import { DashboardShell, TopbarShell, ShellHome, ShellHeader } from './components/AppShells';
+import { KiChatKnapp } from './components/KiChatKnapp';
 import { BookOpen, Table2, BarChart2, Star, Scale, Map, GraduationCap, GalleryVerticalEnd, Award, ScatterChart, TrendingUp, ArrowUpRight, Wifi, Globe2 } from 'lucide-react';
 
 // Sidene lastes først når de åpnes (egne JavaScript-biter), slik at forsiden laster raskt.
@@ -597,13 +598,21 @@ export default function App() {
   );
   };
 
+  // KI-chatten nede i hjørnet vet hvilket fakultet og hvilken side brukeren står på
+  const chatFakultet: FacultyId | null = faculty && isFacultyIdAny(faculty) ? faculty : faculty === 'hh-figma' ? 'hh' : null;
+  const chatSted = faculty === null ? 'forsiden (alle fakulteter)'
+    : isFacultyIdAny(faculty) ? `${FACULTY_META[faculty].label} · ${facultyView === 'landing' ? 'oversikt' : FACULTY_MODULE_META[facultyView].title}`
+    : faculty === 'hh-figma' ? 'Handelshøyskolen · opprinnelig HH-analyse'
+    : isNmbuPage(faculty) ? `Hele NMBU · ${NMBU_PAGE_META[faculty].title}` : faculty === 'nmbu-emner' ? 'Hele NMBU · Alle emner' : 'Hele NMBU';
+  const chat = <KiChatKnapp fakultet={chatFakultet} visning={facultyView} sted={chatSted} />;
+
   if (layout === 'dashboard') {
-    return <DashboardShell faculty={faculty} view={facultyView} onNavigate={navigate}><Suspense fallback={<Laster />}>{renderShellContent()}</Suspense></DashboardShell>;
+    return <><DashboardShell faculty={faculty} view={facultyView} onNavigate={navigate}><Suspense fallback={<Laster />}>{renderShellContent()}</Suspense></DashboardShell>{chat}</>;
   }
   if (layout === 'toppmeny') {
-    return <TopbarShell faculty={faculty} view={facultyView} onNavigate={navigate}><Suspense fallback={<Laster />}>{renderShellContent()}</Suspense></TopbarShell>;
+    return <><TopbarShell faculty={faculty} view={facultyView} onNavigate={navigate}><Suspense fallback={<Laster />}>{renderShellContent()}</Suspense></TopbarShell>{chat}</>;
   }
-  return <Suspense fallback={<Laster fullside />}>{renderClassic()}</Suspense>;
+  return <><Suspense fallback={<Laster fullside />}>{renderClassic()}</Suspense>{chat}</>;
 }
 
 const FAKULTET_IDER = new Set<string>(['hh', 'landsam', 'realtek', 'biovit', 'kbm', 'mina', 'vet']);

@@ -1,7 +1,8 @@
-import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Search, Sparkles, FileText, ExternalLink, Loader2 } from 'lucide-react';
 import { StyrepapirIndeks, marker, type StyrepapirTekst, type Treff } from '../data/styrepapirSok';
 import type { MarketInstitution } from '../data/faculties';
+import { KiSvarTekst } from './KiSvarTekst';
 
 /**
  * «Søk og spør i styrepapirene»: søk i teksten fra PDF-ene i markedsstatus (i nettleseren), med dokument og sidetall og lenke
@@ -113,7 +114,12 @@ export function StyrepapirSok({ fakultet, fakultetNavn, institusjonsdata = [] }:
           {svar && (
             <div className="mb-4 rounded-lg px-4 py-3 text-sm" style={{ backgroundColor: 'var(--nmbu-beige-light)', border: '1px solid var(--nmbu-green-3)', lineHeight: 1.65, color: 'var(--nmbu-neutral)' }}>
               <div className="flex items-center gap-1.5 mb-1 text-xs" style={{ fontWeight: 700, color: 'var(--nmbu-green-dark)' }}><Sparkles className="w-3.5 h-3.5" /> KI-svar ({svar.modell ?? 'Mistral'}), ut fra treffene under og sammendragene i kortene</div>
-              <SvarTekst tekst={svar.tekst} kilder={svar.kilder} sammendrag={svar.sammendrag} lenke={kildeLenke} />
+              <KiSvarTekst tekst={svar.tekst} kilde={(ref) => {
+                const sm = ref.match(/^S(\d+)$/i);
+                if (sm && svar.sammendrag[Number(sm[1]) - 1]) return { tekst: `S${sm[1]}`, tittel: `Sammendraget for ${svar.sammendrag[Number(sm[1]) - 1]} i institusjonskortet` };
+                const t = /^\d+$/.test(ref) ? svar.kilder.find((x) => x.nr === Number(ref)) : undefined;
+                return t ? { tekst: ref, tittel: `${t.dok.inst}: ${t.dok.label}, side ${t.side}`, href: kildeLenke(t) } : null;
+              }} />
               {svar.ubekreftet && svar.ubekreftet.length > 0 && (
                 <div className="text-xs rounded px-2.5 py-1.5 mt-2" style={{ backgroundColor: '#FFFBEB', border: '1px solid #FCD34D', color: '#78350F' }}>
                   Kontroll: disse tallene står ikke i utdragene eller sammendragene, så de kan være beregnet av KI eller feil: <b>{svar.ubekreftet.join(', ')}</b>. Sjekk mot kilden før du bruker dem.
@@ -147,39 +153,3 @@ export function StyrepapirSok({ fakultet, fakultetNavn, institusjonsdata = [] }:
   );
 }
 
-/** Enkel visning av svaret: **fet**, *kursiv*, punktlister og kildehenvisninger [n], [n, m] og [Sn] (sammendrag). */
-function SvarTekst({ tekst, kilder, sammendrag, lenke }: { tekst: string; kilder: Treff[]; sammendrag: string[]; lenke: (t: Treff) => string }) {
-  const kilde = (ref: string, k: string) => {
-    const s = ref.match(/^S(\d+)$/i);
-    if (s && sammendrag[Number(s[1]) - 1]) return <span key={k} title={`Sammendraget for ${sammendrag[Number(s[1]) - 1]} i institusjonskortet`} style={{ color: 'var(--nmbu-green-6)', fontWeight: 700, cursor: 'help' }}>S{s[1]}</span>;
-    const t = /^\d+$/.test(ref) ? kilder.find((x) => x.nr === Number(ref)) : undefined;
-    if (t) return <a key={k} href={lenke(t)} target="_blank" rel="noreferrer" title={`${t.dok.inst}: ${t.dok.label}, side ${t.side}`} style={{ color: 'var(--nmbu-green-dark)', fontWeight: 700 }}>{ref}</a>;
-    return <span key={k}>{ref}</span>;
-  };
-  const inline = (linje: string, k: string): ReactNode[] => linje.split(/(\*\*[^*]+\*\*|\[(?:S?\d+\s*,\s*)*S?\d+\]|\*[^*\s][^*]*\*)/).map((del, j) => {
-    const key = `${k}-${j}`;
-    const fet = del.match(/^\*\*([^*]+)\*\*$/);
-    if (fet) return <b key={key} style={{ color: 'var(--nmbu-green-dark)' }}>{inline(fet[1], key)}</b>;
-    const kursiv = del.match(/^\*([^*]+)\*$/);
-    if (kursiv) return <i key={key}>{kursiv[1]}</i>;
-    const refs = del.match(/^\[((?:S?\d+\s*,\s*)*S?\d+)\]$/);
-    if (refs) {
-      const deler = refs[1].split(/\s*,\s*/);
-      return <span key={key}>[{deler.flatMap((r, n) => (n ? [', ', kilde(r, `${key}-${n}`)] : [kilde(r, `${key}-${n}`)]))}]</span>;
-    }
-    return <span key={key}>{del}</span>;
-  });
-  const linjer = tekst.split(/\n/).filter((l) => l.trim());
-  const ut: ReactNode[] = [];
-  let liste: ReactNode[] = [];
-  const tomListe = (k: number) => { if (liste.length) { ut.push(<ul key={`ul${k}`} className="list-disc pl-5 mb-2">{liste}</ul>); liste = []; } };
-  linjer.forEach((rå, i) => {
-    const innrykk = (rå.match(/^\s*/)?.[0].length ?? 0) >= 2;
-    const l = rå.trim();
-    const m = l.match(/^(?:[-•*]|\d+\.)\s+(.*)$/);
-    if (m) liste.push(<li key={i} className="mb-0.5" style={innrykk ? { marginLeft: 16, listStyleType: 'circle' } : undefined}>{inline(m[1], String(i))}</li>);
-    else { tomListe(i); ut.push(<p key={i} className="mb-1.5">{inline(l.replace(/^#+\s*/, ''), String(i))}</p>); }
-  });
-  tomListe(linjer.length);
-  return <>{ut}</>;
-}

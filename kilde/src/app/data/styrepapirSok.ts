@@ -29,7 +29,7 @@ const SYNONYMER: Record<string, string[]> = {
   studieprogram: ['program', 'studietilbud'], nye: ['ny', 'etablering', 'oppstart'], økonomi: ['økonomisk', 'budsjett'],
   kutt: ['nedbemanning', 'innsparing', 'reduksjon'], strategi: ['strategiplan', 'handlingsplan'], samarbeid: ['avtale', 'partnerskap'],
 };
-const synonymStammer = (q: string) => {
+export const synonymStammer = (q: string) => {
   const ord = q.toLowerCase().replace(/[^a-z0-9æøåäöéü]+/g, ' ').split(' ');
   return [...new Set(ord.flatMap((w) => SYNONYMER[w] ?? []).flatMap((w) => tokens(w)))];
 };
@@ -105,4 +105,37 @@ function utsnitt(t: string, q: string[]): string {
 export function marker(t: string, sporsmal: string): { t: string; m: boolean }[] {
   const q = new Set(tokens(sporsmal));
   return t.split(/(\s+)/).map((w) => ({ t: w, m: q.has(stamme(w.toLowerCase().replace(/[^a-z0-9æøåäöéü]/g, ''))) }));
+}
+
+/** Generell BM25-indeks over vilkårlige tekster (brukes av KI-chatten for nøkkeltall og metode). */
+export class TekstIndeks<T> {
+  private post = new Map<string, [number, number][]>();
+  private len: number[] = [];
+  private snitt = 0;
+  constructor(public elementer: T[], tekstAv: (t: T) => string) {
+    elementer.forEach((e, i) => {
+      const tf = new Map<string, number>();
+      const tk = tokens(tekstAv(e));
+      tk.forEach((w) => tf.set(w, (tf.get(w) ?? 0) + 1));
+      this.len[i] = tk.length;
+      tf.forEach((n, w) => { let l = this.post.get(w); if (!l) this.post.set(w, (l = [])); l.push([i, n]); });
+    });
+    this.snitt = this.len.reduce((a, x) => a + x, 0) / Math.max(1, this.len.length);
+  }
+  sok(sporsmal: string, antall: number): T[] {
+    const q = [...new Set(tokens(sporsmal))];
+    const syn = synonymStammer(sporsmal).filter((w) => !q.includes(w));
+    const N = this.len.length, k1 = 1.4, b = 0.75;
+    const score = new Map<number, number>(); const dekning = new Map<number, number>();
+    for (const w of [...q, ...syn]) {
+      const l = this.post.get(w); if (!l) continue;
+      const idf = Math.log(1 + (N - l.length + 0.5) / (l.length + 0.5)) * (syn.includes(w) ? 0.6 : 1);
+      for (const [i, tf] of l) {
+        score.set(i, (score.get(i) ?? 0) + idf * (tf * (k1 + 1)) / (tf + k1 * (1 - b + (b * this.len[i]) / this.snitt)));
+        dekning.set(i, (dekning.get(i) ?? 0) + 1);
+      }
+    }
+    return [...score.entries()].map(([i, sc]) => [i, sc * (1 + 0.5 * ((dekning.get(i) ?? 1) - 1))] as [number, number])
+      .sort((a, b2) => b2[1] - a[1]).slice(0, antall).map(([i]) => this.elementer[i]);
+  }
 }
