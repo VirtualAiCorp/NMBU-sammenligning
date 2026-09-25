@@ -65,7 +65,9 @@ export const FACULTY_META: Record<FacultyId, FacultyMeta> = {
   },
 };
 
-export const FACULTY_IDS: FacultyId[] = ['landsam', 'realtek', 'biovit', 'kbm', 'mina', 'vet'];
+/** Sortert etter registrerte studenter høsten 2025 (DBH, staffData.json): REALTEK 1 439, LANDSAM 1 321, MINA 628,
+ *  VET 625, BIOVIT 573, KBM 491. HH (2 852, med årsstudiet) står først i ALL_FACULTY_IDS. */
+export const FACULTY_IDS: FacultyId[] = ['realtek', 'landsam', 'mina', 'vet', 'biovit', 'kbm'];
 /** Alle fakulteter med standardformat, inkludert Handelshøyskolen (som har eget kort på forsiden). */
 export const ALL_FACULTY_IDS: FacultyId[] = ['hh', ...FACULTY_IDS];
 

@@ -649,3 +649,8 @@ Egen fane i markedsstatus for Handelshøyskolen («Strategier mot 2030», `Strat
   - `build-dark-css.py` skriver nå nøytrale mørke flater som `var(--dm-surface)`, så mørk modus følger temaet.
 - **Sammenleggbar sidemeny** i dashboard-oppsettet (`AppShells.tsx`): knapp øverst i menyen, 256 → 72 px med overgang (240 ms), huskes i localStorage («nmbu-sidemeny»). Sammenslått viser fakultetsforkortelser og ikoner; `MenyHint.tsx` gir fullt navn (f.eks. «Handelshøyskolen») i verktøytips ved peker eller tastaturfokus (mønster fra verktøyet for emneansvarlige i Virtual AI Corp).
 - **KI-chatten** åpnes og lukkes med animasjon (280 ms, fade og liten forflytning tilpasset oppsettet); respekterer «redusert bevegelse».
+
+**Tillegg 25.09 kveld:**
+- **Fakultetenes rekkefølge** (menyer, faner, kort og oversiktstabellen) følger registrerte studenter høsten 2025 (DBH): HH 2 852 (med årsstudiet), REALTEK 1 439, LANDSAM 1 321, MINA 628, VET 625, BIOVIT 573, KBM 491 (`FACULTY_IDS` i `facultyMeta.ts`).
+- **Sidemenyen:** modulene til alle fakultetene ligger klare, og ved bytte lukkes det forrige mens det neste glir ut (grid-rader 0fr → 1fr, 240 ms). Skjulte menypunkter kan ikke nås med tastaturet.
+- **Notis i HH-kortet på forsiden** (begge oppsett, `LagetAv.tsx`): «Verktøy laget av studierådgiverne ved Handelshøyskolen» med e-post for feil, mangler og forslag til datasett. Forsiden i oversiktsoppsettet har én kolonne på mobil.

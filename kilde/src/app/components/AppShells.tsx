@@ -4,6 +4,7 @@ import {
   LayoutGrid, Menu, X, Coins, Archive, Lock, Baby, PanelLeftClose, PanelLeftOpen,
 } from 'lucide-react';
 import { MenyHint } from './MenyHint';
+import { LagetAv } from './LagetAv';
 import { FACULTY_META as FACULTIES, ALL_FACULTY_IDS as FACULTY_IDS, useAllFacultyBases, type FacultyId } from '../data/faculties';
 import type { Faculty } from './FacultyLanding';
 import { Matrise, lagRader } from './Matrise';
@@ -60,10 +61,13 @@ export function ShellHome({ onNavigate }: { onNavigate: Nav }) {
         : <div className="rounded-xl p-6 text-sm" style={{ backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-2)' }}>Laster tallene for fakultetene …</div>}
       <div className="grid gap-3 mt-6" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))' }}>
         {FACULTY_IDS.map((id) => (
-          <button key={id} onClick={() => onNavigate(id, 'landing')} className="rounded-xl p-4 text-left" style={{ backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)' }}>
-            <div style={{ fontSize: 10, fontWeight: 700, color: 'var(--nmbu-green-dark)', letterSpacing: '0.05em' }}>{FACULTIES[id].shortLabel}</div>
-            <div style={{ fontFamily: "'Lora', serif", fontSize: 15, color: 'var(--nmbu-green-dark)' }}>{FACULTIES[id].label}</div>
-          </button>
+          <div key={id} className="rounded-xl flex flex-col" style={{ backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)' }}>
+            <button onClick={() => onNavigate(id, 'landing')} className="p-4 text-left flex-1 flex flex-col justify-start">
+              <div style={{ fontSize: 10, fontWeight: 700, color: 'var(--nmbu-green-dark)', letterSpacing: '0.05em' }}>{FACULTIES[id].shortLabel}</div>
+              <div style={{ fontFamily: "'Lora', serif", fontSize: 15, color: 'var(--nmbu-green-dark)' }}>{FACULTIES[id].label}</div>
+            </button>
+            {id === 'hh' && <div className="px-4 pb-3 pt-2" style={{ borderTop: '1px solid var(--nmbu-neutral-3)' }}><LagetAv kompakt /></div>}
+          </div>
         ))}
       </div>
     </div>
@@ -101,6 +105,7 @@ export function DashboardShell({ faculty, view, onNavigate, children }: { facult
         {seksjon('Fakultetene')}
         {FACULTY_IDS.map((id) => {
           const aapen = faculty === id;
+          const aapenMeny = aapen || (id === 'hh' && faculty === 'hh-figma');
           const moduler = FAKULTETSMODULER.filter((m) => m.view !== 'landing' && (!m.kunFor || m.kunFor === id));
           return (
             <div key={id}>
@@ -110,24 +115,30 @@ export function DashboardShell({ faculty, view, onNavigate, children }: { facult
                   style={{ ...itemStyle(aapen && view === 'landing'), ...(s && aapen ? { backgroundColor: 'rgba(255,255,255,0.12)', opacity: 1 } : {}) }}
                   title={s ? undefined : FACULTIES[id].label}>
                   <span style={s ? { fontSize: FACULTIES[id].shortLabel.length > 4 ? 10 : 12, fontWeight: 700, letterSpacing: '0.03em' } : undefined}>{FACULTIES[id].shortLabel}</span>
-                  {!s && <span style={{ opacity: 0.5, fontSize: 10 }}>{aapen ? '▾' : '▸'}</span>}
+                  {!s && <span style={{ opacity: 0.5, fontSize: 10, display: 'inline-block', transform: aapenMeny ? 'rotate(90deg)' : 'none', transition: `transform ${MENY_MS}ms ${MENY_EASE}` }}>▸</span>}
                 </button>
               </MenyHint>
-              {aapen && moduler.map((m) => (
-                <MenyHint key={m.view} navn={m.label} undertekst={FACULTIES[id].shortLabel} aktiv={s}>
-                  <button onClick={() => gaa(id, m.view)}
-                    className={`w-full flex items-center rounded-md text-left ${s ? 'justify-center py-1.5' : 'gap-2 pl-5 pr-2 py-1 text-xs'}`} style={itemStyle(view === m.view)}>
-                    <m.icon className={`${s ? 'w-4 h-4' : 'w-3.5 h-3.5'} shrink-0`} />{!s && ` ${m.label}`}
-                  </button>
-                </MenyHint>
-              ))}
-              {id === 'hh' && (aapen || faculty === 'hh-figma') && (
-                <MenyHint navn="Opprinnelig HH-analyse" aktiv={s}>
-                  <button onClick={() => gaa('hh-figma')} className={`w-full flex items-center rounded-md text-left ${s ? 'justify-center py-1.5' : 'gap-2 pl-5 pr-2 py-1 text-xs'}`} style={itemStyle(faculty === 'hh-figma')}>
-                    <Archive className={`${s ? 'w-4 h-4' : 'w-3.5 h-3.5'} shrink-0`} />{!s && ' Opprinnelig HH-analyse'}
-                  </button>
-                </MenyHint>
-              )}
+              {/* Modulene til alle fakultetene ligger klare; det åpne glir ut (grid-rader 0fr → 1fr) mens det forrige lukkes */}
+              <div className="grid" aria-hidden={!aapenMeny}
+                style={{ gridTemplateRows: aapenMeny ? '1fr' : '0fr', opacity: aapenMeny ? 1 : 0, transition: `grid-template-rows ${MENY_MS}ms ${MENY_EASE}, opacity ${MENY_MS}ms ease` }}>
+                <div className="overflow-hidden flex flex-col gap-0.5">
+                  {moduler.map((m) => (
+                    <MenyHint key={m.view} navn={m.label} undertekst={FACULTIES[id].shortLabel} aktiv={s && aapenMeny}>
+                      <button onClick={() => gaa(id, m.view)} tabIndex={aapenMeny ? 0 : -1}
+                        className={`w-full flex items-center rounded-md text-left ${s ? 'justify-center py-1.5' : 'gap-2 pl-5 pr-2 py-1 text-xs'}`} style={itemStyle(aapen && view === m.view)}>
+                        <m.icon className={`${s ? 'w-4 h-4' : 'w-3.5 h-3.5'} shrink-0`} />{!s && ` ${m.label}`}
+                      </button>
+                    </MenyHint>
+                  ))}
+                  {id === 'hh' && (
+                    <MenyHint navn="Opprinnelig HH-analyse" aktiv={s && aapenMeny}>
+                      <button onClick={() => gaa('hh-figma')} tabIndex={aapenMeny ? 0 : -1} className={`w-full flex items-center rounded-md text-left ${s ? 'justify-center py-1.5' : 'gap-2 pl-5 pr-2 py-1 text-xs'}`} style={itemStyle(faculty === 'hh-figma')}>
+                        <Archive className={`${s ? 'w-4 h-4' : 'w-3.5 h-3.5'} shrink-0`} />{!s && ' Opprinnelig HH-analyse'}
+                      </button>
+                    </MenyHint>
+                  )}
+                </div>
+              </div>
             </div>
           );
         })}

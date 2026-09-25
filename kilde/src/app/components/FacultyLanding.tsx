@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import { BookOpen, Building2, Trees, Atom, Leaf, FlaskConical, TreePine, Lock, PawPrint, Users, Home, Landmark, LayoutGrid, Baby } from 'lucide-react';
 import { FACULTY_META as FACULTIES, FACULTY_IDS, type FacultyId } from '../data/facultyMeta';
+import { LagetAv } from './LagetAv';
 
 export type Faculty = 'hh-figma' | FacultyId | 'nmbu-emner' | 'nmbu-fagmiljo' | 'nmbu-bolig' | 'nmbu-okonomi' | 'nmbu-oppsett' | 'nmbu-sokergrunnlag';
 
@@ -65,15 +66,13 @@ export function FacultyLanding({ onSelect }: Props) {
         </p>
 
         {/* Aktive fakulteter */}
-        <div className="grid grid-cols-2 gap-5 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-8">
           {ACTIVE_FACULTIES.filter((card) => card.id !== 'hh' || import.meta.env.VITE_UTEN_HH !== '1').map((card) => (
-            <button key={card.id}
-              onClick={() => onSelect(card.id)}
-              className="rounded-2xl p-8 text-left transition-all"
+            <div key={card.id} className="rounded-2xl flex flex-col transition-all"
               style={{ backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)', boxShadow: '0 2px 8px rgba(2,92,79,0.08)' }}
-              onMouseEnter={(e) => { (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 4px 16px rgba(2,92,79,0.16)'; (e.currentTarget as HTMLButtonElement).style.transform = 'translateY(-2px)'; }}
-              onMouseLeave={(e) => { (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 2px 8px rgba(2,92,79,0.08)'; (e.currentTarget as HTMLButtonElement).style.transform = 'translateY(0)'; }}
-            >
+              onMouseEnter={(e) => { e.currentTarget.style.boxShadow = '0 4px 16px rgba(2,92,79,0.16)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.boxShadow = '0 2px 8px rgba(2,92,79,0.08)'; e.currentTarget.style.transform = 'translateY(0)'; }}>
+            <button onClick={() => onSelect(card.id)} className="p-6 sm:p-8 text-left flex-1 flex flex-col justify-start">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-11 h-11 rounded-xl flex items-center justify-center" style={{ backgroundColor: 'var(--nmbu-green-4)' }}>
                   {card.icon}
@@ -86,6 +85,8 @@ export function FacultyLanding({ onSelect }: Props) {
               <div style={{ fontSize: '15px', color: 'var(--nmbu-neutral-1)', marginBottom: 12 }}>{card.subtitle}</div>
               <p style={{ fontSize: '13px', color: 'var(--nmbu-neutral-2)', lineHeight: 1.5 }}>{card.desc}</p>
             </button>
+            {card.id === 'hh' && <div className="px-6 sm:px-8 pb-6 pt-3" style={{ borderTop: '1px solid var(--nmbu-neutral-3)' }}><LagetAv /></div>}
+            </div>
           ))}
         </div>
 
