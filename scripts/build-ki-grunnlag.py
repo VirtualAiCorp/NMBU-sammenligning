@@ -179,15 +179,15 @@ def oversikt(kilder, omfang):
                prog[0][0], prog[0][1]["id"], [[f, g["id"], pnavn(f, g, e)] for f, g, e, _, _ in prog]])
 
     def linje(tittel, verdier, dec, enhet="", apne=None, lavest=False):
-        verdier = [x for x in verdier if x[1] is not None]
+        verdier = [(x[0], x[1], x[2] if len(x) > 2 else "") for x in verdier if x[1] is not None]
         if not verdier and not apne:
             return
         verdier.sort(key=lambda x: x[1] if lavest else -x[1])
-        liste = "; ".join(f"{i + 1}. {pnavn(*p[:3])} {nf(v, dec)}{enhet}" for i, (p, v) in enumerate(verdier))
+        liste = "; ".join(f"{i + 1}. {pnavn(*p[:3])} {nf(v, dec)}{enhet}{f' ({t})' if t else ''}" for i, (p, v, t) in enumerate(verdier))
         tekst = f"OVERSIKT {omfang} · {tittel}, {'lavest' if lavest else 'høyest'} først: {liste or '(ingen)'}."
         if apne:
             tekst += f" Alle kvalifiserte fikk tilbud (ingen poenggrense): {', '.join(pnavn(*p[:3]) for p in apne)}."
-        rekke = [p for p, _ in verdier] + list(apne or [])
+        rekke = [p for p, _, _ in verdier] + list(apne or [])
         ut.append([f"Oversikt {omfang}", "oversikt", tekst, "o", rekke[0][0], rekke[0][1]["id"], [[p[0], p[1]["id"], pnavn(*p[:3])] for p in rekke]])
 
     aar = lambda felt: max((y for _, _, e, _, _ in prog for y, d in e["years"].items() if d.get(felt) is not None), default=None)
@@ -208,8 +208,10 @@ def oversikt(kilder, omfang):
     for p in prog:
         siste = [x for x in (p[3] or {}).get("kull", []) if x.get("startkull") and x.get("normertAar") and x["normertAar"] <= 2025]
         if siste:
-            gj.append((p, 100 * siste[-1]["fullfortNormert"] / siste[-1]["startkull"]))
-            ff.append((p, 100 * siste[-1]["frafalt"] / siste[-1]["startkull"]))
+            x = siste[-1]
+            t = f"startkull {x['aar']}, {x['startkull']} studenter"
+            gj.append((p, 100 * x["fullfortNormert"] / x["startkull"], t))
+            ff.append((p, 100 * x["frafalt"] / x["startkull"], t))
     linje("fullført på normert tid, siste startkull", gj, 1, " %")
     linje("frafall, siste startkull", ff, 1, " %")
     linje("Studiebarometeret helhetsvurdering, siste år", [(p, ((p[4] or {}).get("scores") or {}).get("helhetsvurdering")) for p in prog], 1)
