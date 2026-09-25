@@ -331,9 +331,9 @@ def modul_linjer(fak, adm, sb):
                 fa = s.get("fieldAverage") or {}
                 if fa:
                     tekst += f" Snitt for sammenligningsgruppen ({s.get('fieldLabel', 'fagfeltet')}): " + ", ".join(f"{SB_NAVN[k]} {nf(v, 1)}" for k, v in fa.items() if v is not None and k in SB_NAVN) + "."
-                hist = [h for h in s.get("history", []) if (h.get("scores") or {}).get("helhetsvurdering") is not None]
+                hist = [h for h in s.get("history", []) if any(v is not None for v in (h.get("scores") or {}).values())]
                 if len(hist) > 1:
-                    tekst += " Helhetsvurdering over tid: " + ", ".join(f"{h['year']} {nf(h['scores']['helhetsvurdering'], 1)}" for h in hist) + "."
+                    tekst += " Over tid (alle indeksene per år): " + "; ".join(f"{h['year']}: " + ", ".join(f"{SB_NAVN[k]} {nf(v, 1)}" for k, v in h["scores"].items() if v is not None and k in SB_NAVN) for h in hist) + "."
                 if s.get("warning"):
                     tekst += f" Merknad: {s['warning']}"
                 ny(tekst)
@@ -483,7 +483,7 @@ def sokergrunnlag():
                    + "; ".join(deler) + "." + (f" Studiesteder i fylket i sammenligningene: {', '.join(sorted(steder[f]))}." if f in steder else ""), "s", "nmbu-sokergrunnlag", ""])
     if endring:
         endring.sort(key=lambda x: -x[1])
-        ut.append(["Søkergrunnlaget", "rangering", f"RANGERING SØKERGRUNNLAGET endring i antall 19-åringer fra {siste_faktisk} til 2035 (SSB, hovedalternativet), høyest først: "
+        ut.append(["Søkergrunnlaget", "rangering", f"RANGERING SØKERGRUNNLAGET endring i antall 19-åringer fra {siste_faktisk} til 2035 (SSB, hovedalternativet), sortert fra størst økning til størst nedgang (negative tall er nedgang): "
                    + "; ".join(f"{i + 1}. {n} {'+' if v >= 0 else ''}{nf(v, 1)} %" for i, (n, v) in enumerate(endring)) + ".", "r", "nmbu-sokergrunnlag", ""])
     u = json.load(open(rot / "udir.json", encoding="utf-8"))
     for f in s["rekkefolge"]:
