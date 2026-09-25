@@ -54,8 +54,10 @@ function LayoutSwitcher() {
 }
 
 export function TopRightControls() {
+  // På mobil ruller knappene bort med siden i stedet for å ligge over innholdet. Unntak: toppmenyen, der den faste topplinjen har plass til dem.
+  const fast = useLayout() === 'toppmeny';
   return (
-    <div className="fixed top-3 z-50 flex items-center gap-2" style={{ right: 'calc(var(--ki-side, 0px) + 12px)' }}>
+    <div className={`${fast ? 'fixed' : 'absolute sm:fixed'} top-3 z-50 flex items-center gap-2`} style={{ right: 'calc(var(--ki-side, 0px) + 12px)' }}>
       <LayoutSwitcher />
       <ThemeToggle />
     </div>
