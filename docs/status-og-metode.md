@@ -539,9 +539,15 @@ Boksen «Søk og spør i styrepapirene» ligger øverst i markedsstatus for alle
 - **KI-svar:** Cloudflare Pages-funksjonen `functions/api/markedsstatus-svar.ts` får spørsmålet og de beste treffene (maks 8 × 1 600 tegn) og ber Mistral svare kort på norsk, bare ut fra utdragene, med kildehenvisninger [n] som blir lenker til sidene.
   - Miljøvariabler i Cloudflare-prosjektet (Settings → Variables and Secrets):
     - `MISTRAL_API_KEY` (Secret, påkrevd)
-    - `MISTRAL_MODEL` (standard `mistral-small-latest`)
+    - `MISTRAL_MODEL` (standard `mistral-large-latest`)
     - `MISTRAL_BASE_URL` (standard `https://api.mistral.ai/v1`; OpenAI-kompatibelt, f.eks. Scaleway Generative APIs i Paris)
   - Uten nøkkel svarer funksjonen 503 med en forklaring. Kall fra andre nettsteder (Origin) avvises.
   - Siden er åpen, så hvem som helst på siden kan bruke knappen. For å begrense bruken kan Cloudflare Access eller rate limiting legges på `/api/*`.
   - Styrepapirene er offentlige dokumenter, og det sendes ingen personopplysninger til Mistral.
+- **Oppdatert 25.09:**
+  - Modellen er Mistral Large. Nøkkelen er lagt inn i Cloudflare som Secret.
+  - Modellen får inntil 12 utdrag (maks 2 per dokument) og de kuraterte sammendragene fra markedsstatus-kortene for institusjonene i treffene (maks 6), kalt [S1] osv.
+  - Instruksen (`instruks()` i funksjonen) beskriver datamaterialet (utdrag = primærkilder, sammendrag = oversikt), arbeidsmåten (relevans, nyeste først, vedtak/forslag/diskusjon/tall, eksakte tall med enhet og år, sammenligning per institusjon, merket vurdering for NMBU) og faste regler (bare materialet, kilde etter hver påstand, si fra om hull).
+  - Svarformatet er Kort svar, Detaljer, Vurdering for NMBU og Hull i grunnlaget.
+  - Søket bruker synonymer (for eksempel opptaksramme ↔ studieplasser, nedleggelse ↔ avvikling, underskudd ↔ negativt resultat), vektet ned til 60 %.
 

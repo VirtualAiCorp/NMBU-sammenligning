@@ -21,6 +21,19 @@ export function tokens(t: string): string[] {
   return t.toLowerCase().replace(/[^a-z0-9æøåäöéü]+/g, ' ').split(' ').filter((w) => w.length > 1 && !STOPP.has(w)).map(stamme);
 }
 
+// Synonymer: spørsmålsord som også skal finne beslektede ord i dokumentene (vektes ned til 60 %).
+const SYNONYMER: Record<string, string[]> = {
+  opptaksramme: ['studieplass', 'opptak'], opptaksrammer: ['studieplasser', 'opptak'], studieplasser: ['opptaksramme', 'plasser'],
+  nedleggelse: ['avvikling', 'nedlegging', 'avvikle'], nedlegging: ['nedleggelse', 'avvikling'], avvikling: ['nedleggelse', 'nedlegging'],
+  underskudd: ['negativt', 'merforbruk', 'resultat'], overskudd: ['mindreforbruk', 'resultat'], søkertall: ['søkere', 'førstevalgssøkere'],
+  studieprogram: ['program', 'studietilbud'], nye: ['ny', 'etablering', 'oppstart'], økonomi: ['økonomisk', 'budsjett'],
+  kutt: ['nedbemanning', 'innsparing', 'reduksjon'], strategi: ['strategiplan', 'handlingsplan'], samarbeid: ['avtale', 'partnerskap'],
+};
+const synonymStammer = (q: string) => {
+  const ord = q.toLowerCase().replace(/[^a-z0-9æøåäöéü]+/g, ' ').split(' ');
+  return [...new Set(ord.flatMap((w) => SYNONYMER[w] ?? []).flatMap((w) => tokens(w)))];
+};
+
 export class StyrepapirIndeks {
   private post = new Map<string, [number, number][]>();
   private len: number[] = [];
@@ -38,13 +51,14 @@ export class StyrepapirIndeks {
 
   sok(sporsmal: string, antall = 8, inst?: string): Treff[] {
     const q = [...new Set(tokens(sporsmal))];
+    const syn = synonymStammer(sporsmal).filter((w) => !q.includes(w));
     const N = this.len.length, k1 = 1.4, b = 0.75;
     const score = new Map<number, number>();
     const treffOrd = new Map<number, number>();
-    for (const w of q) {
+    for (const w of [...q, ...syn]) {
       const l = this.post.get(w);
       if (!l) continue;
-      const idf = Math.log(1 + (N - l.length + 0.5) / (l.length + 0.5));
+      const idf = Math.log(1 + (N - l.length + 0.5) / (l.length + 0.5)) * (syn.includes(w) ? 0.6 : 1);
       for (const [i, tf] of l) {
         if (inst && this.data.docs[this.data.chunks[i][0]].inst !== inst) continue;
         const s = idf * (tf * (k1 + 1)) / (tf + k1 * (1 - b + (b * this.len[i]) / this.snitt));

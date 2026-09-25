@@ -1,6 +1,7 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { Search, Sparkles, FileText, ExternalLink, Loader2 } from 'lucide-react';
 import { StyrepapirIndeks, marker, type StyrepapirTekst, type Treff } from '../data/styrepapirSok';
+import type { MarketInstitution } from '../data/faculties';
 
 /**
  * «Søk og spør i styrepapirene»: søk i teksten fra PDF-ene i markedsstatus (i nettleseren), med dokument og sidetall og lenke
@@ -9,13 +10,13 @@ import { StyrepapirIndeks, marker, type StyrepapirTekst, type Treff } from '../d
  */
 const EKSEMPLER = ['opptaksrammer 2027', 'nye studieprogram økonomi', 'budsjett underskudd', 'nedleggelse av studieprogram', 'studieplasser økonomi og administrasjon'];
 
-export function StyrepapirSok({ fakultet }: { fakultet: string }) {
+export function StyrepapirSok({ fakultet, fakultetNavn, institusjonsdata = [] }: { fakultet: string; fakultetNavn: string; institusjonsdata?: MarketInstitution[] }) {
   const [data, setData] = useState<StyrepapirTekst | null>(null);
   const [feil, setFeil] = useState<string | null>(null);
   const [q, setQ] = useState('');
   const [sokt, setSokt] = useState('');
   const [inst, setInst] = useState('');
-  const [svar, setSvar] = useState<{ tekst: string; kilder: Treff[] } | null>(null);
+  const [svar, setSvar] = useState<{ tekst: string; kilder: Treff[]; sammendrag: string[]; modell?: string } | null>(null);
   const [svarFeil, setSvarFeil] = useState<string | null>(null);
   const [laster, setLaster] = useState(false);
   const aktiv = useRef(false);
@@ -42,21 +43,25 @@ export function StyrepapirSok({ fakultet }: { fakultet: string }) {
     }
     return { tekst: sokt, inst: '' };
   }, [sokt, inst, institusjoner]);
-  const treff = useMemo(() => (indeks && tolket.tekst ? indeks.sok(tolket.tekst, 8, tolket.inst || undefined) : []), [indeks, tolket]);
+  const treff = useMemo(() => (indeks && tolket.tekst ? indeks.sok(tolket.tekst, 12, tolket.inst || undefined) : []), [indeks, tolket]);
 
   const sok = (tekst = q) => { hent(); setSokt(tekst.trim()); setSvar(null); setSvarFeil(null); };
 
   const lagSvar = async () => {
     if (!treff.length) return;
     setLaster(true); setSvar(null); setSvarFeil(null);
+    // Kuraterte sammendrag (markedsstatus-kortene) for institusjonene i treffene, i treffrekkefølge, maks 6
+    const instIRekkefolge = [...new Set(treff.map((t) => t.dok.inst))].slice(0, 6);
+    const sammendrag = instIRekkefolge.map((navn) => institusjonsdata.find((i) => i.name === navn)).filter((i): i is MarketInstitution => !!i)
+      .map((i) => ({ inst: i.name, enhet: i.enhet, oppsummering: i.oppsummering, punkter: i.punkter }));
     try {
       const r = await fetch('/api/markedsstatus-svar', {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ sporsmal: sokt, fakultet, utdrag: treff.map((t) => ({ nr: t.nr, inst: t.dok.inst, dok: t.dok.label, dato: t.dok.dato, side: t.side, tekst: t.tekst })) }),
+        body: JSON.stringify({ sporsmal: sokt, fakultet: fakultetNavn, sammendrag, utdrag: treff.map((t) => ({ nr: t.nr, inst: t.dok.inst, dok: t.dok.label, dato: t.dok.dato, side: t.side, tekst: t.tekst })) }),
       });
       const j = await r.json().catch(() => null);
       if (!r.ok || !j?.svar) throw new Error(j?.feil ?? (r.status === 404 ? 'KI-svar er ikke tilgjengelig her (bare på den publiserte siden).' : `Feil ${r.status}`));
-      setSvar({ tekst: j.svar, kilder: treff });
+      setSvar({ tekst: j.svar, kilder: treff, sammendrag: sammendrag.map((s) => s.inst), modell: j.modell });
     } catch (e) {
       setSvarFeil(e instanceof Error ? e.message : 'Noe gikk galt.');
     } finally { setLaster(false); }
@@ -107,19 +112,9 @@ export function StyrepapirSok({ fakultet }: { fakultet: string }) {
           {svarFeil && <div className="mb-3 text-xs rounded-lg px-3 py-2" style={{ backgroundColor: '#FEF2F2', color: '#991B1B', border: '1px solid #FECACA' }}>{svarFeil}</div>}
           {svar && (
             <div className="mb-4 rounded-lg px-4 py-3 text-sm" style={{ backgroundColor: 'var(--nmbu-beige-light)', border: '1px solid var(--nmbu-green-3)', lineHeight: 1.65, color: 'var(--nmbu-neutral)' }}>
-              <div className="flex items-center gap-1.5 mb-1 text-xs" style={{ fontWeight: 700, color: 'var(--nmbu-green-dark)' }}><Sparkles className="w-3.5 h-3.5" /> KI-svar (Mistral), bare ut fra treffene under</div>
-              {svar.tekst.split(/\n+/).map((avsnitt, i) => (
-                <p key={i} className="mb-1.5">
-                  {avsnitt.split(/(\[\d+\])/).map((del, j) => {
-                    const m = del.match(/^\[(\d+)\]$/);
-                    const k = m ? svar.kilder.find((t) => t.nr === Number(m[1])) : undefined;
-                    return k
-                      ? <a key={j} href={kildeLenke(k)} target="_blank" rel="noreferrer" title={`${k.dok.inst}: ${k.dok.label}, side ${k.side}`} style={{ color: 'var(--nmbu-green-dark)', fontWeight: 700 }}>{del}</a>
-                      : <span key={j}>{del}</span>;
-                  })}
-                </p>
-              ))}
-              <div className="text-xs mt-1" style={{ color: 'var(--nmbu-neutral-2)' }}>KI kan ta feil. Klikk på kildenumrene for å se siden i dokumentet.</div>
+              <div className="flex items-center gap-1.5 mb-1 text-xs" style={{ fontWeight: 700, color: 'var(--nmbu-green-dark)' }}><Sparkles className="w-3.5 h-3.5" /> KI-svar ({svar.modell ?? 'Mistral'}), ut fra treffene under og sammendragene i kortene</div>
+              <SvarTekst tekst={svar.tekst} kilder={svar.kilder} sammendrag={svar.sammendrag} lenke={kildeLenke} />
+              <div className="text-xs mt-1" style={{ color: 'var(--nmbu-neutral-2)' }}>KI kan ta feil. Klikk på kildenumrene for å se siden i dokumentet; [S1] osv. viser til sammendragene i institusjonskortene lenger ned.</div>
             </div>
           )}
 
@@ -145,4 +140,29 @@ export function StyrepapirSok({ fakultet }: { fakultet: string }) {
       )}
     </div>
   );
+}
+
+/** Enkel visning av svaret: **fet**, punktlister og kildehenvisninger [n] (lenke til siden) og [Sn] (sammendrag). */
+function SvarTekst({ tekst, kilder, sammendrag, lenke }: { tekst: string; kilder: Treff[]; sammendrag: string[]; lenke: (t: Treff) => string }) {
+  const inline = (linje: string, k: string) => linje.split(/(\*\*[^*]+\*\*|\[S?\d+\])/).map((del, j) => {
+    const fet = del.match(/^\*\*([^*]+)\*\*$/);
+    if (fet) return <b key={`${k}-${j}`} style={{ color: 'var(--nmbu-green-dark)' }}>{fet[1]}</b>;
+    const kilde = del.match(/^\[(\d+)\]$/);
+    const t = kilde ? kilder.find((x) => x.nr === Number(kilde[1])) : undefined;
+    if (t) return <a key={`${k}-${j}`} href={lenke(t)} target="_blank" rel="noreferrer" title={`${t.dok.inst}: ${t.dok.label}, side ${t.side}`} style={{ color: 'var(--nmbu-green-dark)', fontWeight: 700 }}>{del}</a>;
+    const s = del.match(/^\[S(\d+)\]$/);
+    if (s && sammendrag[Number(s[1]) - 1]) return <span key={`${k}-${j}`} title={`Sammendraget for ${sammendrag[Number(s[1]) - 1]} i institusjonskortet`} style={{ color: 'var(--nmbu-green-6)', fontWeight: 700, cursor: 'help' }}>{del}</span>;
+    return <span key={`${k}-${j}`}>{del}</span>;
+  });
+  const linjer = tekst.split(/\n/).map((l) => l.trim()).filter(Boolean);
+  const ut: ReactNode[] = [];
+  let liste: ReactNode[] = [];
+  const tomListe = (k: number) => { if (liste.length) { ut.push(<ul key={`ul${k}`} className="list-disc pl-5 mb-2">{liste}</ul>); liste = []; } };
+  linjer.forEach((l, i) => {
+    const m = l.match(/^[-•*]\s+(.*)$/);
+    if (m) liste.push(<li key={i} className="mb-0.5">{inline(m[1], String(i))}</li>);
+    else { tomListe(i); ut.push(<p key={i} className="mb-1.5">{inline(l.replace(/^#+\s*/, ''), String(i))}</p>); }
+  });
+  tomListe(linjer.length);
+  return <>{ut}</>;
 }

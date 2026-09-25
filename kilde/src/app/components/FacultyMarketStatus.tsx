@@ -278,7 +278,7 @@ export function FacultyMarketStatus({ faculty }: Props) {
         </div>
       </div>
 
-      {institusjoner.length > 0 && <StyrepapirSok fakultet={faculty.id} />}
+      {institusjoner.length > 0 && <StyrepapirSok fakultet={faculty.id} fakultetNavn={faculty.label} institusjonsdata={institusjoner} />}
 
       {/* Institusjonskort */}
       {institusjoner.length === 0 ? (
