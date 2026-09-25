@@ -77,6 +77,8 @@ def data_linjer(fak):
                     ting.append(f"poenggrense hovedopptak ordinær {pg(d.get('pg_ord'))} / førstegangsvitnemål {pg(d.get('pg_fv'))}")
                 if d.get("pgs_ord") is not None or d.get("pgs_fv") is not None:
                     ting.append(f"etter suppleringsopptaket ordinær {pg(d.get('pgs_ord'))} / førstegangsvitnemål {pg(d.get('pgs_fv'))}")
+                    if max(d.get("pgs_ord") or 0, d.get("pgs_fv") or 0) > 90:
+                        ting.append("(disse grensene etter suppleringsopptaket er på institusjonens egen poengskala med opptaksprøve og kan ikke sammenlignes med vanlige poenggrenser)")
                 if d.get("vl_ord") is not None or d.get("vl_fv") is not None:
                     tot = (d.get("vl_ord") or 0) + (d.get("vl_fv") or 0)
                     tots = (d.get("vls_ord") or 0) + (d.get("vls_fv") or 0)
