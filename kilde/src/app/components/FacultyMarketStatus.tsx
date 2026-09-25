@@ -5,6 +5,7 @@ import {
 } from 'lucide-react';
 import type { FacultyData, MarketInstitution, MarketDoc } from '../data/faculties';
 import { landsamColorForGroups } from '../data/landsamPalette';
+import { StyrepapirSok } from './StyrepapirSok';
 
 interface Props {
   /** Fakultetet som skal vises — markedsstatusen leses herfra. */
@@ -276,6 +277,8 @@ export function FacultyMarketStatus({ faculty }: Props) {
           )}
         </div>
       </div>
+
+      {institusjoner.length > 0 && <StyrepapirSok fakultet={faculty.id} />}
 
       {/* Institusjonskort */}
       {institusjoner.length === 0 ? (

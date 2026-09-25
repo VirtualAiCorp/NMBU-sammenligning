@@ -527,3 +527,21 @@ Modulen «Søkergrunnlaget» finnes per fakultet (sidemeny og kort på fakultete
   - BI er satt til ikke målbart (innreisende står sammen med enkeltemnestudenter), og NHHs «MSC23» er tatt ut (`UTV_OVERSTYR`).
   - Eksempel 2025: NMBU B-ØA 4,8 % engelsk og 0,1 % innreisende; NHH 19,3 % og 5,2 %.
 
+## 31. Søk og KI-svar i styrepapirene (25.09.2026)
+
+Boksen «Søk og spør i styrepapirene» ligger øverst i markedsstatus for alle fakultetene (`StyrepapirSok.tsx`, `data/styrepapirSok.ts`).
+- **Tekst:** `scripts/build-markedsstatus-tekst.py` henter teksten side for side fra PDF-ene i `data/<fakultet>/pdf/` (pypdf) → `kilde/public/markedsstatus/<fakultet>/tekst.json`.
+  - Utdragene er på om lag 1 200 tegn; filen er 0,6–3 MB per fakultet og lastes først ved søk.
+  - Topp- og bunntekster som går igjen på minst 30 % av sidene fjernes, og Calibri-ligaturene (Ɵ/Ʃ) rettes.
+  - I alt 7 106 sider i 130 dokumenter; alle hadde lesbar tekst.
+  - Kjøres på nytt når markedsstatus får nye PDF-er.
+- **Søk:** BM25 i nettleseren med norsk ordstamming. Hver side gir ett treff, og hvert dokument maks to. Treffene viser institusjon, dokument, dato og side, med lenke til `…pdf#page=N`. Nevnes en institusjon i spørsmålet («Hva sier UiA om …»), brukes den som filter. «INN» og «Nord» må da skrives med stor forbokstav.
+- **KI-svar:** Cloudflare Pages-funksjonen `functions/api/markedsstatus-svar.ts` får spørsmålet og de beste treffene (maks 8 × 1 600 tegn) og ber Mistral svare kort på norsk, bare ut fra utdragene, med kildehenvisninger [n] som blir lenker til sidene.
+  - Miljøvariabler i Cloudflare-prosjektet (Settings → Variables and Secrets):
+    - `MISTRAL_API_KEY` (Secret, påkrevd)
+    - `MISTRAL_MODEL` (standard `mistral-small-latest`)
+    - `MISTRAL_BASE_URL` (standard `https://api.mistral.ai/v1`; OpenAI-kompatibelt, f.eks. Scaleway Generative APIs i Paris)
+  - Uten nøkkel svarer funksjonen 503 med en forklaring. Kall fra andre nettsteder (Origin) avvises.
+  - Siden er åpen, så hvem som helst på siden kan bruke knappen. For å begrense bruken kan Cloudflare Access eller rate limiting legges på `/api/*`.
+  - Styrepapirene er offentlige dokumenter, og det sendes ingen personopplysninger til Mistral.
+
