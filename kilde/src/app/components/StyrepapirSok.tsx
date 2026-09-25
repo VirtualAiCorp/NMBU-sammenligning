@@ -16,7 +16,7 @@ export function StyrepapirSok({ fakultet, fakultetNavn, institusjonsdata = [] }:
   const [q, setQ] = useState('');
   const [sokt, setSokt] = useState('');
   const [inst, setInst] = useState('');
-  const [svar, setSvar] = useState<{ tekst: string; kilder: Treff[]; sammendrag: string[]; modell?: string } | null>(null);
+  const [svar, setSvar] = useState<{ tekst: string; kilder: Treff[]; sammendrag: string[]; modell?: string; ubekreftet?: string[] } | null>(null);
   const [svarFeil, setSvarFeil] = useState<string | null>(null);
   const [laster, setLaster] = useState(false);
   const aktiv = useRef(false);
@@ -61,7 +61,7 @@ export function StyrepapirSok({ fakultet, fakultetNavn, institusjonsdata = [] }:
       });
       const j = await r.json().catch(() => null);
       if (!r.ok || !j?.svar) throw new Error(j?.feil ?? (r.status === 404 ? 'KI-svar er ikke tilgjengelig her (bare på den publiserte siden).' : `Feil ${r.status}`));
-      setSvar({ tekst: j.svar, kilder: treff, sammendrag: sammendrag.map((s) => s.inst), modell: j.modell });
+      setSvar({ tekst: j.svar, kilder: treff, sammendrag: sammendrag.map((s) => s.inst), modell: j.modell, ubekreftet: j.ubekreftet });
     } catch (e) {
       setSvarFeil(e instanceof Error ? e.message : 'Noe gikk galt.');
     } finally { setLaster(false); }
@@ -114,6 +114,11 @@ export function StyrepapirSok({ fakultet, fakultetNavn, institusjonsdata = [] }:
             <div className="mb-4 rounded-lg px-4 py-3 text-sm" style={{ backgroundColor: 'var(--nmbu-beige-light)', border: '1px solid var(--nmbu-green-3)', lineHeight: 1.65, color: 'var(--nmbu-neutral)' }}>
               <div className="flex items-center gap-1.5 mb-1 text-xs" style={{ fontWeight: 700, color: 'var(--nmbu-green-dark)' }}><Sparkles className="w-3.5 h-3.5" /> KI-svar ({svar.modell ?? 'Mistral'}), ut fra treffene under og sammendragene i kortene</div>
               <SvarTekst tekst={svar.tekst} kilder={svar.kilder} sammendrag={svar.sammendrag} lenke={kildeLenke} />
+              {svar.ubekreftet && svar.ubekreftet.length > 0 && (
+                <div className="text-xs rounded px-2.5 py-1.5 mt-2" style={{ backgroundColor: '#FFFBEB', border: '1px solid #FCD34D', color: '#78350F' }}>
+                  Kontroll: disse tallene står ikke i utdragene eller sammendragene, så de kan være beregnet av KI eller feil: <b>{svar.ubekreftet.join(', ')}</b>. Sjekk mot kilden før du bruker dem.
+                </div>
+              )}
               <div className="text-xs mt-1" style={{ color: 'var(--nmbu-neutral-2)' }}>KI kan ta feil. Klikk på kildenumrene for å se siden i dokumentet; [S1] osv. viser til sammendragene i institusjonskortene lenger ned.</div>
             </div>
           )}

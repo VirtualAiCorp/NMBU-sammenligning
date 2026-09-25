@@ -19,7 +19,25 @@ interface Env { MISTRAL_API_KEY?: string; MISTRAL_MODEL?: string; MISTRAL_BASE_U
 interface Utdrag { nr: number; inst: string; dok: string; dato?: string | null; side: number; tekst: string }
 interface Sammendrag { inst: string; enhet?: string | null; oppsummering?: string | null; punkter?: string[] }
 
-const VERSJON = '2026-09-25c';
+const VERSJON = '2026-09-25d';
+
+// Kontroll etter svaret: tall i svaret som ikke finnes i utdragene eller sammendragene (år og kildenumre er unntatt).
+// Tallene i svaret leses med tusenskille («1 263 331», «180.000»); i kildene godtas tallet med eller uten tusenskille.
+function ubekreftedeTall(svarTekst: string, kilder: string, sporsmal: string): string[] {
+  const tekst = svarTekst.replace(/\[[^\]]*\]/g, ' ').replace(/\u2212/g, '-');
+  const funnet = tekst.match(/\d{1,3}(?:[ .\u00a0]\d{3})+(?:,\d+)?|\d+(?:,\d+)?/g) ?? [];
+  const ut = new Set<string>();
+  for (const raw of funnet) {
+    const [heltall, des] = raw.replace(/[ .\u00a0]/g, '').split(',');
+    if ((heltall.length < 2 && !des) || /^(19|20)\d\d$/.test(heltall)) continue;
+    // Mønster: sifrene i grupper på tre fra høyre, med valgfritt tusenskille mellom gruppene
+    const grupper: string[] = [];
+    for (let k = heltall.length; k > 0; k -= 3) grupper.unshift(heltall.slice(Math.max(0, k - 3), k));
+    const re = new RegExp(`(^|[^\\d,.])${grupper.join('[ .\\u00a0]?')}${des ? `,${des}` : ''}(?![\\d]|,\\d)`);
+    if (!re.test(kilder) && !re.test(sporsmal)) ut.add(raw.trim());
+  }
+  return [...ut];
+}
 
 const svar = (data: unknown, status = 200) =>
   new Response(JSON.stringify(data), { status, headers: { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' } });
@@ -100,5 +118,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   }
   const j = (await r.json()) as { model?: string; choices?: { message?: { content?: string } }[] };
   const tekst = j.choices?.[0]?.message?.content?.trim();
-  return tekst ? svar({ svar: tekst, modell: j.model ?? env.MISTRAL_MODEL ?? 'mistral-large-latest', versjon: VERSJON }) : svar({ feil: 'Tomt svar fra KI-tjenesten.' }, 502);
+  if (!tekst) return svar({ feil: 'Tomt svar fra KI-tjenesten.' }, 502);
+  const ubekreftet = ubekreftedeTall(tekst, `${delA}\n${delB}`, sporsmal);
+  return svar({ svar: tekst, modell: j.model ?? env.MISTRAL_MODEL ?? 'mistral-large-latest', versjon: VERSJON, ubekreftet })
 };

@@ -550,4 +550,13 @@ Boksen «Søk og spør i styrepapirene» ligger øverst i markedsstatus for alle
   - Instruksen (`instruks()` i funksjonen) beskriver datamaterialet (utdrag = primærkilder, sammendrag = oversikt), arbeidsmåten (relevans, nyeste først, vedtak/forslag/diskusjon/tall, eksakte tall med enhet og år, sammenligning per institusjon, merket vurdering for NMBU) og faste regler (bare materialet, kilde etter hver påstand, si fra om hull).
   - Svarformatet er Kort svar, Detaljer, Vurdering for NMBU og Hull i grunnlaget.
   - Søket bruker synonymer (for eksempel opptaksramme ↔ studieplasser, nedleggelse ↔ avvikling, underskudd ↔ negativt resultat), vektet ned til 60 %.
+- **Testet 25.09:** åtte spørsmål på HH, LANDSAM og REALTEK kjørt ende til ende mot den publiserte funksjonen, med samme søk som nettleseren.
+  - Institusjonsfilteret virker. Spørsmål utenfor materialet (kaffepris) gir et ærlig «ikke i materialet».
+  - Ingen svar viste til kildenumre som ikke finnes. De fleste tallene står i de siterte kildene.
+  - Funnet: ett oppdiktet tall («integrerte mastere fra 238 til 258», UiB), noen tall sitert fra feil utdrag, og egne beregninger (snitt).
+  - Tiltak:
+    - Instruksen krever «(beregnet)» ved egne beregninger.
+    - Åpenbare forsøk på å endre instruksen fanges i koden før modellen kalles.
+    - Funksjonen kontrollerer etter hvert svar at alle tall (unntatt år) finnes i utdragene eller sammendragene, med eller uten tusenskille. Tall som ikke finnes, returneres som `ubekreftet` og vises med gul advarsel under svaret.
+  - Svaret har `versjon` for å se hvilken utgave av funksjonen som svarer.
 
