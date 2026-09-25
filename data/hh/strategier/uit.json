@@ -1,0 +1,185 @@
+{
+ "id": "uit",
+ "navn": "UiT",
+ "enhet": "Handelshøgskolen ved UiT (institutt under Fakultet for biovitenskap, fiskeri og økonomi, BFE)",
+ "type": "fakultet/institutt i universitet",
+ "strategier": [
+  {
+   "tittel": "Eallju – Drivkraft i nord: UiTs strategi mot 2030",
+   "periode": "2022–2030",
+   "nivaa": "institusjon",
+   "vedtatt": "2022-06",
+   "url": "https://uit.no/om/strategi2030",
+   "status": "gjeldende"
+  },
+  {
+   "tittel": "BFE 4-årig strategisk langtidsplan 2023–2026 (vedlegg til universitetsstyresak S 5/23, 02.02.2023)",
+   "periode": "2023–2026",
+   "nivaa": "handelshøyskole/fakultet",
+   "vedtatt": null,
+   "url": "https://mportal-api-ext-v2.uit.no/motekalender/behandlingdok/773096",
+   "status": "gjeldende"
+  },
+  {
+   "tittel": "Overordnet langtidsplan for UiT 2027–2030 – gjennomføring av strategien (juni 2026)",
+   "periode": "2027–2030",
+   "nivaa": "institusjon",
+   "vedtatt": null,
+   "url": "https://uit.no/Content/931368/cache=1781518661000/Overordnet%20langtidsplan%202027-2030.pdf",
+   "status": "gjeldende"
+  },
+  {
+   "tittel": "Mål- og resultatkrav 2026 til fakulteter m.fl. (vedlegg til disponeringsskrivet for 2026)",
+   "periode": "2026",
+   "nivaa": "handlingsplan",
+   "vedtatt": null,
+   "url": "https://uit.no/Content/914329/cache=1762938359000/M%C3%A5l%20og%20resultatkrav%202026.pdf",
+   "status": "gjeldende"
+  },
+  {
+   "tittel": "UiT Norges arktiske universitet – Årsrapport 2025 (supplerende kilde)",
+   "periode": "2025",
+   "nivaa": "institusjon",
+   "vedtatt": null,
+   "url": "https://uit.no/Content/925168/cache=1774622646000/UiT_Norges_arktiske_universitet-a%CC%8Arsrapport_2025.pdf",
+   "status": "gjeldende"
+  },
+  {
+   "tittel": "Handelshøgskolen ved UiT – forside (nettside)",
+   "periode": "2026",
+   "nivaa": "handelshøyskole/fakultet",
+   "vedtatt": null,
+   "url": "https://uit.no/enhet/forsiden?p_dimension_id=88167",
+   "status": "gjeldende"
+  }
+ ],
+ "visjon": "Handelshøgskolen vil være en drivkraft for kunnskapsutvikling, bærekraft og verdiskaping i Arktis. BFE vil at økonomi-, innovasjons- og ledelsesmiljøene skal bære Norges ambisjon om samfunns- og næringsutvikling i nord, innenfor UiTs visjon om å være en drivkraft i nord.",
+ "satsinger": [
+  {
+   "tema": "Akkreditering og rangering",
+   "tekst": "Handelshøgskolen skal forbli et foretrukket studievalg og en attraktiv samarbeidspartner ved å bli AACSB-akkreditert innen 2030.",
+   "kilde": 1,
+   "side": 2
+  },
+  {
+   "tema": "Livslang læring og EVU",
+   "tekst": "BFE vil utvikle flere fleksible og desentraliserte utdanninger og tilbud som kan inngå i livslang læring, og vil øke antall programstudenter på lavere grad kraftig, særlig på nett.",
+   "kilde": 1,
+   "side": 2
+  },
+  {
+   "tema": "Rekruttering og studietilbud",
+   "tekst": "Et resultatkrav for 2026 er å sikre kvalitet og markedsandel for Handelshøgskolens nettutdanninger; nettbasert bachelor i økonomi og administrasjon er hovedårsaken til at UiT passerte 500 økonomikandidater i 2024.",
+   "kilde": 3,
+   "side": 5
+  },
+  {
+   "tema": "Regional rolle",
+   "tekst": "Økonomi, innovasjon og ledelse skal bære utviklingen av samfunns- og næringsliv i nord; fleksible tilbud og godt studiemiljø skal motvirke utenforskap blant unge i Nord-Norge og bidra til bosetting og tilstedeværelse i nord.",
+   "kilde": 1,
+   "side": 1
+  },
+  {
+   "tema": "Bærekraft",
+   "tekst": "Å fremme et bærekraftig, konkurransedyktig og innovativt næringsliv i nord er ett av BFEs tre satsingsområder, og undervisningen i innovasjon og bærekraftig omstilling skal utvides på tvers av institutter og fakulteter.",
+   "kilde": 1,
+   "side": 1
+  },
+  {
+   "tema": "Forskning",
+   "tekst": "BFE vil øke eksternfinansieringen og publiseringen kraftig, få ERC-prosjekter og organisere alle forskere i forskningsgrupper med felles plan; for 2026 er målet 2,0 publikasjoner per førstestilling og 24 % eksternfinansiering.",
+   "kilde": 1,
+   "side": 5
+  },
+  {
+   "tema": "Samspill med arbeidslivet",
+   "tekst": "Næringslivsmentorer og karrieredager skal utvides på alle tre institutter, arbeidet mot næringslivet samordnes med Handelshøgskolens næringslivsprogram, og det skal etableres nærings-ph.d.-er, en felles praksisordning og en næringslivsportal.",
+   "kilde": 1,
+   "side": 5
+  },
+  {
+   "tema": "Digitalisering og KI",
+   "tekst": "BFE vil styrke sitt nasjonalt ledende fagmiljø på digital undervisning og digital pedagogikk tilpasset nordområdene; UiT skal utvikle en KI-ambisjon, etablere Arctic institute for artificial intelligence og et virtuelt campus for nettstudenter.",
+   "kilde": 2,
+   "side": 9
+  },
+  {
+   "tema": "Teknologi og tverrfaglighet",
+   "tekst": "Fakultetet vil utnytte kombinasjonen biologi, fiskeri og økonomi og ha tverrfaglige perspektiver i utdanningene der økonomi møter andre fagområder ved UiT, bl.a. havbruk, karbonfangst og sirkulære løsninger.",
+   "kilde": 1,
+   "side": 3
+  },
+  {
+   "tema": "Internasjonalisering",
+   "tekst": "BFE vil styrke posisjonen mot EU og Horisont Europa og tilby felles engelskspråklige kurspakker for innreisende studenter; UiT prioriterer allianser som EUGLOH, Arctic Six og YERUN.",
+   "kilde": 1,
+   "side": 4
+  },
+  {
+   "tema": "Studiekvalitet og læringsmiljø",
+   "tekst": "BFE læringsakademi skal heve undervisningskvaliteten, med studentaktive læringsformer og et trygt og inkluderende psykososialt miljø; frafallet etter første år skal være under 25 % i 2026.",
+   "kilde": 1,
+   "side": 4
+  },
+  {
+   "tema": "Innovasjon og entreprenørskap",
+   "tekst": "Fakultetet vil øke samskapingen med studenter og næringsliv, kartlegge og utnytte kommersialiseringspotensialet i forskningen og bidra til UiTs tiltaksplan for innovasjon og entreprenørskap 2023–2030.",
+   "kilde": 1,
+   "side": 3
+  },
+  {
+   "tema": "Økonomi og ressurser",
+   "tekst": "BFE skal integrere komplementære fagmiljøer og redusere overlapp i utdanningene på tvers av fakulteter, institutter og campuser, i tråd med UiTs pågående emnereduksjon og porteføljefornyelse.",
+   "kilde": 1,
+   "side": 3
+  },
+  {
+   "tema": "Campus og infrastruktur",
+   "tekst": "UiT skal i 2027 lage en plan for campus og studiesteder utenfor Tromsø (Handelshøgskolen er også i Alta, Harstad og Narvik); BFE har som resultatkrav for 2026 å starte forprosjekt for et flytende grønt arktisk campus.",
+   "kilde": 2,
+   "side": 13
+  },
+  {
+   "tema": "Mangfold og likestilling",
+   "tekst": "Minoritets- og urfolksperspektiver skal inn i forskning, utdanning og formidling, blant annet forskning på samisk næringsvirksomhet, og utdanningene skal være tilgjengelige uansett bosted, livssituasjon og økonomi.",
+   "kilde": 1,
+   "side": 2
+  }
+ ],
+ "maal": [
+  {
+   "tekst": "Handelshøgskolen skal ha AACSB-akkreditering innen 2030.",
+   "kilde": 1
+  },
+  {
+   "tekst": "Programstudenter på lavere grad ved BFE: fra 3 040 (2022) til 3 500, hvorav 2 500 på nett, i 2026 og 4 000, hvorav 3 000 på nett, i 2030.",
+   "kilde": 1
+  },
+  {
+   "tekst": "Eksternfinansiering fra 17 % til 25 % av totaløkonomien innen 2026 og 35 % innen 2030 (BFE).",
+   "kilde": 1
+  },
+  {
+   "tekst": "Publikasjonspoeng per UFF-stilling fra 1,42 til 1,75 innen 2026 og 2,0 innen 2030; 2 ERC-prosjekter innen 2026 og 5 innen 2030 (BFE).",
+   "kilde": 1
+  },
+  {
+   "tekst": "Ph.d.-opptak fra 28 (2022) til 35 innen 2026 og 40 innen 2030, med over 80 % gjennomføring; minst 5 nærings-ph.d.-prosjekter og en næringslivsportal innen 2026 (BFE).",
+   "kilde": 1
+  },
+  {
+   "tekst": "Resultatkrav 2026 for BFE: 2,0 publikasjoner per førstestilling, 24 % eksternfinansiering, oppfyllingsgrad 1,0, frafall etter første år under 25 %, 2 413 studiepoengenheter, 20 nye ph.d.-studenter og 18 avlagte doktorgrader.",
+   "kilde": 3
+  }
+ ],
+ "studieportefolje": "Handelshøgskolen tilbyr årsstudier, bachelor og master i Tromsø, Alta, Harstad og Narvik og er en stor tilbyder av nettstudier; UiT viser særlig til nettbasert bachelor i økonomi og administrasjon som motor for veksten. BFE-planen sikter mot 3 500 programstudenter på lavere grad i 2026 og 4 000 i 2030, hovedsakelig på nett, og vil utvikle flere fleksible og desentraliserte tilbud. UiT er samtidig midt i en fornyelse av porteføljen med færre emner, men vi fant ingen offentlig oversikt over konkrete endringer for Handelshøgskolens program.",
+ "akkreditering": "Ingen internasjonal akkreditering i dag. BFEs langtidsplan har som mål at Handelshøgskolen skal være AACSB-akkreditert innen 2030; vi fant ingen offentlig statusrapport om fremdriften.",
+ "saerpreg": "Handelshøyskolen ved verdens nordligste universitet, organisert som institutt i et fakultet som også rommer biologi og fiskeri, med arktisk verdiskaping og bærekraft som kontekst. Den har fire campuser i nord og tung satsing på nettbaserte økonomistudier, og strategien knytter den tett til regional rekruttering, bosetting og samiske/urfolksperspektiver.",
+ "sitat": {
+  "tekst": "en drivkraft for kunnskapsutvikling, bærekraft og verdiskaping i Arktis",
+  "kilde": 5
+ },
+ "pagaende": "BFEs langtidsplan 2023–2026 går ut i år, og UiTs overordnede langtidsplan 2027–2030 (juni 2026) forutsetter nye fireårige planer på fakultetene. UiT-strategien er publisert i ny PDF (juni 2026) med formuleringer om geopolitikk og KI, og UiT fortsetter å kutte emner og skal i 2027 lage en plan for campus og studiesteder utenfor Tromsø.",
+ "mangler": "Vi fant ingen egen strategi eller handlingsplan for Handelshøgskolen; de tallfestede målene gjelder hele BFE, og de årlige BFE-handlingsplanene er ikke funnet offentlig. Vi har ikke bekreftet vedtaksdato for BFE-planen (lagt fram for universitetsstyret 02.02.2023), for langtidsplanen 2027–2030 eller for en eventuell revisjon av UiT-strategien. Status for AACSB-arbeidet og konkrete programendringer ved Handelshøgskolen er ukjent, og ny BFE-plan for 2027–2030 er ikke funnet.",
+ "hentet": "2026-09-25"
+}

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
   FileText, Download, ExternalLink, ChevronDown, ChevronUp,
   CheckCircle2, Clock, MinusCircle, Globe2, Building2,
@@ -6,6 +6,10 @@ import {
 import type { FacultyData, MarketInstitution, MarketDoc } from '../data/faculties';
 import { landsamColorForGroups } from '../data/landsamPalette';
 import { StyrepapirSok } from './StyrepapirSok';
+import { StrategierMot2030 } from './StrategierMot2030';
+
+/** Fakulteter med strategigjennomgang (public/markedsstatus/<id>/strategier.json, scripts/build-strategier.py). */
+const MED_STRATEGIER = new Set(['hh']);
 
 interface Props {
   /** Fakultetet som skal vises — markedsstatusen leses herfra. */
@@ -227,6 +231,12 @@ function InstitusjonsKort({
 }
 
 export function FacultyMarketStatus({ faculty }: Props) {
+  const [del, setDel] = useState<'status' | 'strategier'>(() => (typeof location !== 'undefined' && location.hash === '#strategier' ? 'strategier' : 'status'));
+  useEffect(() => {
+    const f = () => { if (location.hash === '#strategier') setDel('strategier'); };
+    window.addEventListener('hashchange', f);
+    return () => window.removeEventListener('hashchange', f);
+  }, []);
   const institusjoner = faculty.marketStatus;
   const colorFor = landsamColorForGroups(faculty.admissionGroups);
 
@@ -242,8 +252,21 @@ export function FacultyMarketStatus({ faculty }: Props) {
   const antallDok = institusjoner.reduce((sum, i) => sum + i.dokumenter.length, 0);
   const medRapport = institusjoner.filter((i) => i.status !== 'none').length;
 
+  const velger = MED_STRATEGIER.has(faculty.id) && (
+    <div className="inline-flex rounded-full p-1" role="tablist" style={{ border: '1px solid var(--nmbu-neutral-3)', backgroundColor: 'var(--card)' }}>
+      {([['status', 'Styrepapirer og status'], ['strategier', 'Strategier mot 2030']] as const).map(([id, tekst]) => (
+        <button key={id} role="tab" aria-selected={del === id} onClick={() => setDel(id)} className="px-4 py-1.5 rounded-full text-sm"
+          style={{ backgroundColor: del === id ? 'var(--nmbu-green-dark)' : 'transparent', color: del === id ? '#fff' : 'var(--nmbu-neutral-1)', fontWeight: del === id ? 600 : 500 }}>
+          {tekst}
+        </button>
+      ))}
+    </div>
+  );
+  if (velger && del === 'strategier') return <div className="space-y-4">{velger}<StrategierMot2030 fakultet={faculty.id} /></div>;
+
   return (
     <div className="space-y-6">
+      {velger}
       {/* Overskrift */}
       <div
         className="rounded-xl p-6"

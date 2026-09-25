@@ -1,0 +1,67 @@
+{
+  "ingress": "Hva de 13 handelshøyskolene og økonomimiljøene i HHs markedsstatus sier i strategier, handlingsplaner og utviklingsavtaler fram mot 2030, lest i offentlige dokumenter i september 2026. Flere er midt i nye strategiprosesser (USN, HVL, UiS, UiT) eller har nettopp vedtatt nye (NHH, Kristiania, INN, NTNU). Funnene er parafrasert og har kildelenker per punkt.",
+  "gaarIgjen": [
+    {
+      "tittel": "Kappløp om internasjonal akkreditering",
+      "tema": "Akkreditering og rangering",
+      "tekst": "Bare NHH og BI har Triple Crown, og UiA har AACSB. Nesten alle de andre har akkreditering som uttalt mål før 2030: Nord (AACSB innen 2027), OsloMet og UiT (AACSB innen 2030), UiS (søker EQUIS eligibility i 2026), USN (institusjonsakkreditering rundt 2029–2030) og INN (EFMD-medlem som første steg). UiA jobber mot EQUIS i tillegg. HHs AACSB fra 2025 er i dag et fortrinn som flere vil ha innen strategiperioden.",
+      "inst": ["nhh", "bi", "uia", "nord", "oslomet", "uit", "uis", "usn", "inn"]
+    },
+    {
+      "tittel": "Økonomisk press, kutt og konsolidering",
+      "tema": "Økonomi og ressurser",
+      "tekst": "Strategiene skrives i trange tider. NHH hadde et underskudd på 34,4 mill. kr i 2025, Kristiania rundt 100 mill. kr og HiØ kutter rundt 58 mill. kr og 60 årsverk. Nord skal redusere de administrative kostnadene med 40 mill. kr, og UiS har gevinstkrav etter NHS-sammenslåingen. USN, UiT og UiS kutter emner og legger ned svakt søkte tilbud. USN krever minst 20 studenter i opptak per program.",
+      "inst": ["nhh", "kristiania", "hiof", "nord", "uis", "usn", "uit", "hvl"]
+    },
+    {
+      "tittel": "KI og data inn i porteføljen",
+      "tema": "Digitalisering og KI",
+      "tekst": "KI behandles både som fag og som arbeidsverktøy. NHH bygger videre på BEDS med en ny master (MBEDS) med vekt på teknologi, KI og bærekraft. USN utvikler en master i strategisk datavitenskap og ledelse (Drammen, 2027), og Nord har en nettbachelor i økonomi og teknologiledelse. BI har nye KI-kurs og kobler svakere jobbrate for bachelorer til KI. HiØ utreder en master i digital business, og HVL har innført KI-emner.",
+      "inst": ["nhh", "usn", "nord", "bi", "hiof", "hvl", "ntnu"]
+    },
+    {
+      "tittel": "Juss flytter inn i handelshøyskolene",
+      "tema": "Rekruttering og studietilbud",
+      "tekst": "BI startet master i rettsvitenskap i 2026, og OsloMet får bachelor i rettsvitenskap fra 2027. INN og USN utvikler master i rettsvitenskap, og UiS lager en felles ph.d. i rettsvitenskap med BI og UiA. Økonomi og jus i samme enhet (UiA, UiS, HVL) blir vanligere og gir bredere programtilbud.",
+      "inst": ["bi", "oslomet", "inn", "usn", "uis", "uia", "hvl"]
+    },
+    {
+      "tittel": "Fleksibelt, nett og betalt EVU vokser",
+      "tema": "Livslang læring og EVU",
+      "tekst": "Mye av veksten skjer på nett og i etter- og videreutdanning. UiT sikter mot 3 000 nettstudenter i 2030, Kristiania er største nettilbyder og BI satser på Online Studies 2.0. UiS fikk 929 førstevalgssøkere til 90 plasser på et nytt nettbasert årsstudium. NHH Executive lanserer en modulbasert Executive Master, og USN og HVL satser på betalingsfinansierte bachelorer i ledelse.",
+      "inst": ["uit", "kristiania", "bi", "uis", "nhh", "usn", "hvl", "inn", "nord"]
+    },
+    {
+      "tittel": "Universitetsstatus som mål",
+      "tema": "Akkreditering og rangering",
+      "tekst": "Flere løfter institusjonsnivået. NHH søker om universitetsakkreditering rundt årsskiftet 2026/27, og BI skal være klar innen 2027. Kristiania skal søke innen 2030, og HVL venter på vedtak fra NOKUT i 2026. INN nådde målet i 2024.",
+      "inst": ["nhh", "bi", "kristiania", "hvl", "inn"]
+    },
+    {
+      "tittel": "Geopolitikk og beredskap som nytt fagfelt",
+      "tema": "Annet",
+      "tekst": "NHH løfter geopolitikk, kunnskapsberedskap og forsyningskjeder som nytt område. Nord har en egen beredskapsnisje (Nordlab, master i beredskap og kriseledelse), INN har beredskap som en av fire tverrfaglige satsinger, og USN knytter seg til beredskap i regionen.",
+      "inst": ["nhh", "nord", "inn", "usn", "uit"]
+    }
+  ],
+  "skillerSeg": [
+    { "inst": "oslomet", "tittel": "Flytter til Lillestrøm", "tekst": "Etter styrevedtaket i 2024 skal Handelshøyskolens bachelor- og masterutdanninger, med over 500 studenter, flytte til Campus Romerike i Lillestrøm. Regjeringen ga klarsignal i januar 2026, men tidspunktet er ikke satt. Instituttet har selv pekt på NMBU og USN som konkurrenter om studentene sør og øst for Oslo." },
+    { "inst": "usn", "tittel": "1 500 flere studenter i Drammen innen 2032", "tekst": "USN vil vokse kraftig i Drammen, med om lag 25 % økt faglig kapasitet og en ny master i strategisk datavitenskap og ledelse fra 2027. Handelshøyskolen er den største delen av USNs vekst." },
+    { "inst": "nhh", "tittel": "KI som anvendelse, og fysisk campus som motvekt", "tekst": "NHH vil ikke vokse i studenttall, men satser på KI som beslutningsstøtte, geopolitikk og tilstedeværelse på campus. Ambisjonen er å være nasjonal premissleverandør for verdiskaping og konkurransekraft." },
+    { "inst": "inn", "tittel": "Grønn omstilling, skog og bioøkonomi", "tekst": "Det nye universitetet i Innlandet har grønn omstilling og beredskap blant fire tverrfakultære satsinger. For Handelshøgskolen gir det nisjer i skog- og bioøkonomi, et felt der NMBU tradisjonelt står sterkt." },
+    { "inst": "ntnu", "tittel": "Økonomi, ledelse og teknologi, med «ansvarlig verdiskaping»", "tekst": "NTNU Handelshøyskolens nye strategi for 2026–2035 bygger på koblingen til teknologi og industriell økonomi, entreprenørskap (SFU ENgage) og den nordiske ledelsesmodellen." },
+    { "inst": "uia", "tittel": "Tallfestede 2028-mål og topp tre", "tekst": "UiA vil være blant de tre mest anerkjente handelshøyskolene i Norge i 2028. Målene er konkrete: over 70 % gjennomføring, 80 % i relevant jobb og 30 % flere internasjonale studenter. EQUIS skal komme i tillegg til AACSB." },
+    { "inst": "uis", "tittel": "Hotell og reiseliv inn i handelshøyskolen", "tekst": "Norsk hotellhøgskole ble en del av Handelshøgskolen UiS fra 2026, etter et omstridt styrevedtak. Sammenslåingen skal gi et større fagmiljø som grunnlag for EQUIS, og en ny felles strategi er under arbeid." },
+    { "inst": "kristiania", "tittel": "Anvendt og arbeidslivsrettet, med effektivitet som mål", "tekst": "Kristiania vil være Norges ledende institusjon for arbeidslivsrettet utdanning, uten internasjonale akkrediteringer. Høyskolen kombinerer nettstudier og fagskoler med målet om å bli universitet innen 2030." },
+    { "inst": "uit", "tittel": "Vekst på nett i nord", "tekst": "UiTs fakultet (BFE) sikter mot 4 000 programstudenter på lavere grad i 2030, 3 000 av dem på nett, og mot AACSB for Handelshøgskolen innen samme år." }
+  ],
+  "forHH": [
+    { "tittel": "Hvor lenge varer AACSB-forspranget?", "tekst": "HH fikk AACSB i 2025, men minst seks av konkurrentene sikter mot AACSB eller EQUIS innen 2027–2030, og UiA går for dobbel akkreditering. Hva skal forspranget brukes til, og er EQUIS eller programakkreditering et neste steg?" },
+    { "tittel": "Konkurrentene rykker nærmere Ås", "tekst": "OsloMet flytter over 500 handelshøyskolestudenter til Lillestrøm, og USN vil vokse med 1 500 studenter i Drammen. BI og Kristiania er allerede i Oslo. Hva betyr det for rekrutteringen på Østlandet? (Hvor HHs søkere bor, finnes ikke i åpne data; se FS-rapport 192.002.)" },
+    { "tittel": "Data, KI og teknologi i programmene", "tekst": "NHH (BEDS og MBEDS), USN (strategisk datavitenskap), Nord (teknologiledelse) og NTNU (økonomi og teknologi) bygger program i skjæringen mellom økonomi og data. Hvor vil HH plassere seg?" },
+    { "tittel": "Grønn verdiskaping som profil", "tekst": "Bærekraft står i alle strategiene, men INN (skog og bioøkonomi), NTNU («ansvarlig verdiskaping») og NHH («bærekraftig verdiskaping») spisser den mot omstilling og næringsliv. Hvordan kan HH gjøre koblingen til NMBUs fagområder (natur, mat, energi, eiendom) tydeligere enn konkurrentene?" },
+    { "tittel": "Fleksible tilbud og EVU", "tekst": "Mye av veksten hos konkurrentene er på nett, i deltid og i betalingsfinansiert EVU. Er dette et område HH vil vokse i, eller en bevisst avgrensning?" },
+    { "tittel": "Robust portefølje", "tekst": "Konkurrentene kutter emner, setter minstekrav til opptak og slår sammen fagmiljøer. Hvilke kriterier skal gjelde for HHs program og emner i perioden?" }
+  ],
+  "forbehold": "Gjennomgangen bygger på offentlige dokumenter som agenter leste 25.09.2026, supplert med styrepapirene i markedsstatus. Funnene er parafrasert, og hvert punkt har kildelenke. Flere av dokumentene er utkast (USN 2027–2035, HVL-revisjonen og utviklingsavtalene for 2027–2030) og kan endres. Temaoversikten viser hvilke tema strategiene omtaler, ikke hvor tungt de vektlegges. NTNU, UiT, OsloMet, HVL og HiØ har ingen egen strategi for handelshøyskolen, så der gjelder funnene fakultetet eller institusjonen."
+}

@@ -630,3 +630,13 @@ Disken på maskinen var full, med 7,2 GB i prosjektmappen og 5,6 GB av det i `da
 - **Ikke med:** økonomi, inntekt, bolig, pris og campus, nye opptaksregler (bare metodeteksten) og den interne opptakssimulatoren.
 - **Ordstamming** går i to runder, slik at «karakterindeksen» og «karakterindeks» treffer hverandre (gjelder også søket i styrepapirene).
 
+
+## 36. Strategier mot 2030 i HHs markedsstatus (25.09.2026)
+
+Egen fane i markedsstatus for Handelshøyskolen («Strategier mot 2030», `StrategierMot2030.tsx`; lenke med `#strategier`).
+- **Innhold:** 13 handelshøyskoler og økonomimiljøer (alle i HHs markedsstatus unntatt UiO og UiB, som er økonomiinstitutter). Per institusjon: strategidokumenter med status (gjeldende, utkast, under arbeid), visjon, satsinger per tema, tallfestede mål, studieportefølje, akkreditering, særpreg, pågående prosesser og kilder. På tvers: «Går igjen», «Skiller seg ut» og «Aktuelt for HHs handlingsplan» (spørsmål, ikke anbefalinger), temaoversikt og tallfestede mål.
+- **Research:** fire agenter leste offentlige strategier, handlingsplaner, utviklingsavtaler, årsrapporter og styresaker 25.09.2026, pluss PDF-ene i `data/hh/pdf`. Alt er parafrasert, høyst ett kort sitat per institusjon, og hvert punkt har kildelenke. Ikke lekket materiale og ingen innsynsbegjæringer.
+- **Data:** `data/hh/strategier/<id>.json` (én per institusjon) og `_syntese.json` (skrevet for hånd ut fra funnene). `scripts/build-strategier.py` kontrollerer temaer, kildeindekser og sitatlengde og skriver `kilde/public/markedsstatus/hh/strategier.json` (fjernes i bygget uten HH sammen med resten av mappen).
+- **Temaoversikten** viser hvilke tema strategiene omtaler (agentene fordelte satsingene over temaene), ikke vekt. «Går igjen» bygger derfor på konkrete mønstre med navngitte institusjoner.
+- **KI-chatten** har strategiene som STRATEGIER-linjer (`build-ki-grunnlag.py`); spørsmål med «strategi», «handlingsplan», «satsing» eller «visjon» går dit, og «Ta meg til» åpner fanen.
+- **Oppdatering:** USN (strategi 2027–2035), HVL (revisjon), UiS (ny felles strategi) og utviklingsavtalene 2027–2030 vedtas høsten 2026. Kjør agentene/oppdater filene når de er vedtatt.

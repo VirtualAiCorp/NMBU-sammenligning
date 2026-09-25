@@ -26,6 +26,7 @@ const klem = (v: number, a: number, b: number) => Math.max(a, Math.min(b, v));
  * den modulen (build-ki-grunnlag.py). Opptak er standard for nøkkeltall. Rekkefølgen avgjør ved flere treff.
  */
 const SIDER: [RegExp, string, string, string?][] = [
+  [/strategi|handlingsplan|satsing|satser på|visjon/i, 'markedsstatus', 'Markedsstatus · Strategier mot 2030', 'STRATEGIER'],
   [/gjennomf|frafall|fullf|normert tid|startkull/i, 'gjennomforing', 'Gjennomføring'],
   [/studiebarometer|tilfreds|undervisningen\b|undervisningskvalitet|tilbakemeld|veiledning|læringsmiljø|yrkesrelevans|engasjement|vurderingsform|helhetsvurdering/i, 'studiebarometer', 'Studiebarometeret', 'STUDIEBAROMETERET'],
   [/emne|karakter|stryk|eksamen/i, 'emner', 'Emner og karakterer', 'EMNER OG KARAKTERER'],
@@ -38,12 +39,12 @@ const SIDER: [RegExp, string, string, string?][] = [
 ];
 const finnSide = (q: string) => SIDER.find(([re]) => re.test(q));
 /** Modulen en nøkkeltallslinje hører til (merket først i teksten), ellers opptak (null). */
-const modulAv = (l: DataLinje) => /^(?:RANGERING )?(STUDENTENE|STUDIEBAROMETERET|EMNER OG KARAKTERER|FAGMILJØET|SØKERGRUNNLAGET)\b/.exec(l[2])?.[1] ?? null;
+const modulAv = (l: DataLinje) => /^(?:RANGERING )?(STUDENTENE|STUDIEBAROMETERET|EMNER OG KARAKTERER|FAGMILJØET|SØKERGRUNNLAGET|STRATEGIER)\b/.exec(l[2])?.[1] ?? null;
 /** Moduler som ikke hører til et program, men til fakultet/institusjon (fagmiljøet) eller fylke (søkergrunnlaget). */
-const FELLES_MODUL = new Set(['FAGMILJØET', 'SØKERGRUNNLAGET']);
+const FELLES_MODUL = new Set(['FAGMILJØET', 'SØKERGRUNNLAGET', 'STRATEGIER']);
 /** Sidene for hele NMBU (App: Faculty-verdiene «nmbu-…»). */
 const NMBU_SIDE: Record<string, string> = { 'nmbu-fagmiljo': 'Fagmiljøet', 'nmbu-sokergrunnlag': 'Søkergrunnlaget' };
-interface Maal { fak: string; visning: string; gruppe?: string; tekst: string }
+interface Maal { fak: string; visning: string; gruppe?: string; tekst: string; anker?: string }
 
 /** Programgrupper i kildene: vanlige linjer gir én, oversiktslinjene alle programmene de lister. */
 const grupperI = (linjer: DataLinje[]) => linjer.flatMap((l) => (l[3] === 'o' && l[6] ? l[6] : l[4] ? [[l[4], l[5] ?? '', l[0]] as [string, string, string]] : []));
@@ -92,8 +93,9 @@ function finnMaal(m: Melding, fakultet: FacultyId | null, visning: string, gjeld
       const fak = fk as FacultyId;
       const vis = side ? side[1] : 'analyse';
       const gruppe = (vis === 'analyse' || vis === 'emner') && gid ? gid : undefined;
-      if (!(fak === fakultet && vis === visning && (!gruppe || gruppe === gjeldendeGruppe))) {
-        ut.push({ fak, visning: vis, gruppe, tekst: `${FACULTY_META[fak].shortLabel} · ${side ? side[2] : 'Opptak'}${gruppe ? ` · ${utenFak(navn)}` : ''}` });
+      const anker = side?.[3] === 'STRATEGIER' ? 'strategier' : undefined;
+      if (!(fak === fakultet && vis === visning && !anker && (!gruppe || gruppe === gjeldendeGruppe))) {
+        ut.push({ fak, visning: vis, gruppe, anker, tekst: `${FACULTY_META[fak].shortLabel} · ${side ? side[2] : 'Opptak'}${gruppe ? ` · ${utenFak(navn)}` : ''}` });
       }
     }
   }
@@ -256,7 +258,11 @@ export function KiChatPanel({ apen, lukk, fakultet, visning, sted, modus, setMod
     document.body.style.userSelect = 'none';
     window.addEventListener('pointermove', flytt); window.addEventListener('pointerup', slipp);
   };
-  const gaaTil = (mm: Maal) => { naviger(mm.fak, mm.visning, mm.gruppe); if (liten) lukk(); };
+  const gaaTil = (mm: Maal) => {
+    // Ankeret velger fanen på siden (Strategier mot 2030 i markedsstatus); settes før navigeringen så siden leser det ved oppstart
+    if (mm.anker) location.hash = mm.anker; else if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+    naviger(mm.fak, mm.visning, mm.gruppe); if (liten) lukk();
+  };
   const [meldinger, setMeldinger] = useState<Melding[]>(() => { try { return JSON.parse(sessionStorage.getItem(LAGRING) ?? '[]'); } catch { return []; } });
   const [tekst, setTekst] = useState('');
   const [venter, setVenter] = useState(false);

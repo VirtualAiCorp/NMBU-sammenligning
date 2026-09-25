@@ -1,0 +1,181 @@
+{
+  "id": "bi",
+  "navn": "BI",
+  "enhet": "Handelshøyskolen BI",
+  "type": "privat høyskole",
+  "strategier": [
+    {
+      "tittel": "Strategi 2030 – Kunnskap som forandrer",
+      "periode": "2025–2030",
+      "nivaa": "institusjon",
+      "vedtatt": null,
+      "url": "https://www.bi.no/om-bi/strategi/",
+      "status": "gjeldende"
+    },
+    {
+      "tittel": "Årsrapport 2025 til Kunnskapsdepartementet (kap. 3 om Strategi 2030 og strategiske prioriteringer 2025–2030) (supplerende kilde)",
+      "periode": "2025",
+      "nivaa": "institusjon",
+      "vedtatt": "2026-03",
+      "url": "https://www.bi.no/contentassets/45a92eda31e94d90a9961af49bb6e6b4/kd-arsrapport-2025.pdf",
+      "status": "gjeldende"
+    },
+    {
+      "tittel": "Styrets beretning 2025 (supplerende kilde)",
+      "periode": "2025",
+      "nivaa": "institusjon",
+      "vedtatt": "2026-03",
+      "url": "https://www.bi.no/contentassets/3ed39a5b83a24909a33d823a09544825/styrets-beretning-2025.pdf",
+      "status": "gjeldende"
+    },
+    {
+      "tittel": "BI får fornyet EQUIS-akkreditering i fem nye år (nyhetssak, 27.03.2026)",
+      "periode": "2026–2031",
+      "nivaa": "institusjon",
+      "vedtatt": "2026-03",
+      "url": "https://www.bi.no/om-bi/nyheter/2026/03/bi-far-fornyet-equis-akkreditering-i-fem-nye-ar/",
+      "status": "gjeldende"
+    },
+    {
+      "tittel": "Khrono: «BIs nye rektor er den første i sin familie med høyere utdanning» (intervju med Egil Matsen, 09.08.2026)",
+      "periode": "2026",
+      "nivaa": "institusjon",
+      "vedtatt": null,
+      "url": "https://www.khrono.no/bis-nye-rektor-er-den-forste-i-sin-familie-med-hoyere-utdanning/1075663",
+      "status": "gjeldende"
+    }
+  ],
+  "visjon": "BI vil være handelshøyskolen for innovativ kunnskap og læring som forandrer liv, virksomheter og samfunn, og sikre og videreutvikle posisjonen som en verdensledende internasjonal handelshøyskole med Triple Crown. Samtidig holder BI fast ved bred tilgang til utdanning uansett bakgrunn.",
+  "satsinger": [
+    {
+      "tema": "Samspill med arbeidslivet",
+      "tekst": "«Attraktive og ansvarlige kandidater»: arbeidslivsrelevansen skal økes gjennom tydelige kandidatprofiler, fornyet pensum og riktig sammensetning av fagressurser, og gjennom mer næringslivsrettede læringsaktiviteter som internships.",
+      "kilde": 0,
+      "side": null
+    },
+    {
+      "tema": "Studiekvalitet og læringsmiljø",
+      "tekst": "«Enestående læringsopplevelser»: bedre undervisningsmetoder og mer effektive tilbakemeldinger, differensierte læringsløp særlig på bachelornivå, og teknologi for fleksibilitet; i 2025 startet innføring av ny læringsplattform og nytt evalueringssystem, og tiltaket Studentpuls ble pilotert.",
+      "kilde": 1,
+      "side": 24
+    },
+    {
+      "tema": "Digitalisering og KI",
+      "tekst": "KI er løftet fra enkelttiltak til en samlet satsing: et strategisk «business case» dekker utdanning, forskning og organisasjon, en introduksjonsmodul i KI skal inn i alle heltidsprogram, og styret gjør KI til sentralt satsingsområde i 2026 (nye vurderingsformer, KI-kurs, KI i administrasjonen).",
+      "kilde": 2,
+      "side": 12
+    },
+    {
+      "tema": "Digitalisering og KI",
+      "tekst": "«Digital kapasitet»: evne til systematisk eksperimentering og rask bruk av ny teknologi, modulær digital arkitektur, skyløsninger og bedre datatilgang.",
+      "kilde": 0,
+      "side": null
+    },
+    {
+      "tema": "Forskning",
+      "tekst": "«Fremragende forskning»: flaggskipsentre som publiserer i topptidsskrifter og skal bli selvfinansierende via konkurranseutsatte midler, samt tverrfaglige sentre i samarbeid med virksomheter; antall sentre økte fra åtte til 16 i 2025. BI prioriterer kvalitet framfor volum i publisering.",
+      "kilde": 2,
+      "side": 9
+    },
+    {
+      "tema": "Økonomi og ressurser",
+      "tekst": "Mer ekstern forskningsfinansiering fra EU, Forskningsrådet og private givere/stiftelser, med ambisjon om 15 % årlig vekst; BI er tatt inn i skattefradragsordningen for forskningsgaver.",
+      "kilde": 2,
+      "side": 8
+    },
+    {
+      "tema": "Samspill med arbeidslivet",
+      "tekst": "«Relevans og samfunnspåvirkning»: mer synlig forskning i offentlig debatt og praksiskanaler og tettere samarbeid med næringsliv, alumni og beslutningstakere; i 2025 ble et Societal Impact Board og en handlingsplan for forskning og samfunnspåvirkning etablert.",
+      "kilde": 2,
+      "side": 8
+    },
+    {
+      "tema": "Økonomi og ressurser",
+      "tekst": "«Finansiell bærekraft»: mindre kompleksitet, samordnede prosesser og bedre kostnadseffektivitet, bl.a. sammenslåing av forretningsområdene Heltid og Executive og et tak på 519 administrative årsverk.",
+      "kilde": 2,
+      "side": 6
+    },
+    {
+      "tema": "Akkreditering og rangering",
+      "tekst": "Triple Crown er fundamentet for posisjonen; i tillegg har styret besluttet at BI skal være klar til å søke universitetsakkreditering innen 2027, og den eneste kravmangelen – doktorgradsutdanningen – skal styrkes.",
+      "kilde": 2,
+      "side": 13
+    },
+    {
+      "tema": "Livslang læring og EVU",
+      "tekst": "BI vil fortsatt være en ledende EVU-tilbyder gjennom fleksible, modulbaserte og digitale tilbud og flere bedriftsleveranser; nettstudiene (ca. 3 500 studenter årlig, +25 % fra 2024 til 2025) videreutvikles i «Online Studies 2.0».",
+      "kilde": 1,
+      "side": 35
+    },
+    {
+      "tema": "Rekruttering og studietilbud",
+      "tekst": "I heltidsmarkedet vil BI beholde posisjonen på bachelor (markedsandel 38 % i økonomi/administrasjon) og vokse på master (20 %), med opptak tilpasset campuskapasitet og en masterreform som skal redusere kompleksitet i porteføljen.",
+      "kilde": 1,
+      "side": 35
+    },
+    {
+      "tema": "Innovasjon og entreprenørskap",
+      "tekst": "Ny innovasjons- og entreprenørskapssatsing, The Village (lansert 2025), med ambisjon om å bli en av Europas ledende arenaer for studentdrevne oppstartsselskaper.",
+      "kilde": 2,
+      "side": 4
+    },
+    {
+      "tema": "Bærekraft",
+      "tekst": "Ansvarlige kandidater som tar bærekraftige og etiske beslutninger: emnet Doing Sustainable Business blir obligatorisk i siste bachelorsemester fra 2026 (ca. 3 500 studenter årlig). I drift jobber BI mot halvert utslipp innen 2030.",
+      "kilde": 2,
+      "side": 11
+    },
+    {
+      "tema": "Mangfold og likestilling",
+      "tekst": "Mangfold, likeverd, inkludering og tilhørighet (DEIB) er et eget strategisk område for studenter og ansatte, med mål om kjønnsbalanse innenfor 60–40.",
+      "kilde": 2,
+      "side": 17
+    },
+    {
+      "tema": "Internasjonalisering",
+      "tekst": "Globalt perspektiv gjennom internasjonale læringsopplevelser på campus og mobilitet, engelskspråklige program, målrettet internasjonal rekruttering til utvalgte master- og Executive-program og internasjonal rekruttering av fagstab (andelen internasjonale faglig ansatte er økt til nær 40 %).",
+      "kilde": 1,
+      "side": 26
+    }
+  ],
+  "maal": [
+    {
+      "tekst": "Ekstern forskningsfinansiering: 15 % årlig vekst i strategiperioden fram mot 2030.",
+      "kilde": 2
+    },
+    {
+      "tekst": "Være klar til å søke universitetsakkreditering innen 2027.",
+      "kilde": 2
+    },
+    {
+      "tekst": "Klimagassutslipp: 50 % reduksjon innen 2030 sammenlignet med 2019.",
+      "kilde": 2
+    },
+    {
+      "tekst": "Tak på 519 administrative årsverk (fastsatt av styret i 2025).",
+      "kilde": 2
+    },
+    {
+      "tekst": "Helautomatisk behandlede søknader: fra ca. 6 000 i 2025 til 10 000 i 2026.",
+      "kilde": 2
+    },
+    {
+      "tekst": "Kjønnsfordeling innenfor 60–40-intervallet (løpende).",
+      "kilde": 2
+    },
+    {
+      "tekst": "Heltidsmarkedet: holde bachelormarkedsandelen (38 % i 2025) og øke mastermarkedsandelen (20 % i 2025) – ingen måltall oppgitt.",
+      "kilde": 1
+    }
+  ],
+  "studieportefolje": "BI har rundt 25 400 studenter, 15 bachelor- og 14 masterprogram, ph.d. med åtte spesialiseringer (ny: Data and Decision Science, og revisjon med årlig opptak på flere) samt EMBA/Executive Master-program; MSc tilbys i Oslo og to i Bergen, mens bachelor og EVU tilbys på alle fire campus. Første kull på masterstudiet i rettsvitenskap starter høsten 2026, en masterreform implementeres, og nettstudiene skal vokse gjennom Online Studies 2.0. Nye kurs innen deep learning, KI i finans og KI-etikk er lansert, og EVU skal bli mer modulbasert og digitalt.",
+  "akkreditering": "Triple Crown siden 2014 (første i Norge): AACSB reakkreditert 2024 for seks år, AMBA 2023, EQUIS fornyet for fem år i mars 2026; i tillegg EOCCS for nettkurs. BI er vitenskapelig høyskole (NOKUT) og forbereder søknad om universitetsakkreditering innen 2027.",
+  "saerpreg": "BI er en privat, selveiende stiftelse finansiert hovedsakelig av studieavgifter, som kombinerer Triple Crown og FT-rangering (beste i Norge, nr. 2 i Norden) med svært stort volum, fire byer og nettstudier. Strategien vektlegger bred tilgang til utdanning, nærhet til næringslivet (stort alumninettverk, Societal Impact Board, The Village) og økonomisk disiplin. Jus som nytt fagområde og målet om universitetsstatus utvider profilen utover ren handelshøyskole.",
+  "sitat": {
+    "tekst": "vi bryr oss ikke om hvor du kommer fra, bare hvor du skal",
+    "kilde": 0
+  },
+  "pagaende": "Ingen ny strategiprosess; 2025–2026 handler om å implementere Strategi 2030 med OKR, ny organisering (Heltid og Executive slått sammen, ny enhet for organisasjon og virksomhetsstyring, kollegiet erstattet av ansettelsesutvalg og utdanningsutvalg fra 2026). Egil Matsen tiltrådte som rektor i august 2026 (periode til 2030), og BI forbereder universitetssøknad. Kandidatenes jobbrate seks måneder etter bachelor falt markant fra 2024 til 2025, noe styret knytter til KI og svakere rekruttering i konsulentbransjen.",
+  "mangler": "Strategi 2030 finnes bare som nettside (ingen PDF funnet), og eksakt vedtaksdato er ikke oppgitt; BI sier strategien ble lansert «på tampen av 2024», mens KD-årsrapporten skriver at den ble lansert i 2025. Strategien har få offentlige tallfestede mål; OKR-målene, KI-«business case», handlingsplanen for forskning og samfunnspåvirkning og planen for forskningskommunikasjon er omtalt, men ikke publisert. Det er ikke funnet egne delstrategier for internasjonalisering eller EVU. Sidetall for strategien mangler fordi kilden er en nettside.",
+  "hentet": "2026-09-25"
+}

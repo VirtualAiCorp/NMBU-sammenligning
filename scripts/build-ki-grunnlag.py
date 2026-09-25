@@ -111,7 +111,7 @@ def data_linjer(fak):
                 linjer.append([gnavn(g), e["shortName"], f"{navn}. " + ". ".join(deler) + ".", flagg, fak, g["id"]])
     moduler = modul_linjer(fak, adm, sb)
     return (linjer + moduler + rangeringer(adm, comp, sb, fak) + oversikt([(fak, adm, comp, sb)], f"{KORT[fak]} ({FAKULTETER[fak]})")
-            + emnetype_linjer(fak, adm) + fagmiljo_fakultet(fak))
+            + emnetype_linjer(fak, adm) + fagmiljo_fakultet(fak) + strategi_linjer(fak))
 
 
 def rangeringer(adm, comp, sb, fak):
@@ -503,6 +503,49 @@ def sokergrunnlag():
             deler.append("elever i Vg3 studieforberedende: " + ", ".join(f"{k} {nf(v)}" for k, v in sorted(vg3.items())[-3:]))
         if deler:
             ut.append(["Søkergrunnlaget", navn, f"SØKERGRUNNLAGET · videregående i {navn} (Udir, standpunktkarakterer): " + "; ".join(deler) + ".", "s", "nmbu-sokergrunnlag", ""])
+    return ut
+
+
+def strategi_linjer(fak):
+    """STRATEGIER: konkurrentenes strategier mot 2030 (public/markedsstatus/<fak>/strategier.json, build-strategier.py)."""
+    p = ROOT / "kilde" / "public" / "markedsstatus" / fak / "strategier.json"
+    if not p.exists():
+        return []
+    d = json.load(open(p, encoding="utf-8"))
+    ut = []
+    for i in d["institusjoner"]:
+        dok = "; ".join(f"{s['tittel']}{' (' + s['periode'] + ')' if s.get('periode') else ''}{', ' + s['status'] if s.get('status') and s['status'] != 'gjeldende' else ''}" for s in i["strategier"])
+        hode = f"STRATEGIER · {i['navn']} ({i['enhet']}). Dokumenter: {dok}."
+        tema = {}
+        for x in i["satsinger"]:
+            tema.setdefault(x["tema"], []).append(x["tekst"])
+        deler = [f"{t}: " + " ".join(v) for t, v in tema.items()]
+        ekstra = [f"Visjon: {i['visjon']}" if i.get("visjon") else "", f"Særpreg: {i['saerpreg']}" if i.get("saerpreg") else "",
+                  f"Tallfestede mål: {' '.join(m['tekst'] for m in i['maal'])}" if i.get("maal") else "",
+                  f"Studieporteføljen: {i['studieportefolje']}" if i.get("studieportefolje") else "",
+                  f"Akkreditering: {i['akkreditering']}" if i.get("akkreditering") else "", f"Pågår nå: {i['pagaende']}" if i.get("pagaende") else ""]
+        # To linjer per institusjon (oversikt og satsinger), så de holder seg under tegngrensen
+        # Oversiktslinje og satsinger delt i biter under tegngrensen i chat.ts (2 400)
+        forst = f"{hode} " + " ".join(e for e in ekstra if e)
+        ut.append(["Strategier mot 2030", i["navn"], forst[:2350], "f", fak, ""])
+        bit = f"STRATEGIER · {i['navn']}: satsinger per tema."
+        for d_ in deler:
+            if len(bit) + len(d_) > 2300:
+                ut.append(["Strategier mot 2030", i["navn"], bit, "f", fak, ""])
+                bit = f"STRATEGIER · {i['navn']} (forts.):"
+            bit += " | " + d_[:2200]
+        ut.append(["Strategier mot 2030", i["navn"], bit, "f", fak, ""])
+    sy = d.get("syntese")
+    if sy:
+        for tittel, punkter in (("går igjen", [f"{g['tittel']} ({', '.join(g['inst'])}): {g['tekst']}" for g in sy.get("gaarIgjen", [])]),
+                                ("skiller seg ut", [f"{x['inst']} – {x['tittel']}: {x['tekst']}" for x in sy.get("skillerSeg", [])])):
+            bit = f"STRATEGIER · på tvers av handelshøyskolene, {tittel}:"
+            for pkt in punkter:
+                if len(bit) + len(pkt) > 2300:
+                    ut.append(["Strategier mot 2030", "syntese", bit, "f", fak, ""])
+                    bit = f"STRATEGIER · på tvers av handelshøyskolene, {tittel} (forts.):"
+                bit += " | " + pkt
+            ut.append(["Strategier mot 2030", "syntese", bit, "f", fak, ""])
     return ut
 
 
