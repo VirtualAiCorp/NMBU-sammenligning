@@ -142,25 +142,37 @@ export function StyrepapirSok({ fakultet, fakultetNavn, institusjonsdata = [] }:
   );
 }
 
-/** Enkel visning av svaret: **fet**, punktlister og kildehenvisninger [n] (lenke til siden) og [Sn] (sammendrag). */
+/** Enkel visning av svaret: **fet**, *kursiv*, punktlister og kildehenvisninger [n], [n, m] og [Sn] (sammendrag). */
 function SvarTekst({ tekst, kilder, sammendrag, lenke }: { tekst: string; kilder: Treff[]; sammendrag: string[]; lenke: (t: Treff) => string }) {
-  const inline = (linje: string, k: string) => linje.split(/(\*\*[^*]+\*\*|\[S?\d+\])/).map((del, j) => {
+  const kilde = (ref: string, k: string) => {
+    const s = ref.match(/^S(\d+)$/i);
+    if (s && sammendrag[Number(s[1]) - 1]) return <span key={k} title={`Sammendraget for ${sammendrag[Number(s[1]) - 1]} i institusjonskortet`} style={{ color: 'var(--nmbu-green-6)', fontWeight: 700, cursor: 'help' }}>S{s[1]}</span>;
+    const t = /^\d+$/.test(ref) ? kilder.find((x) => x.nr === Number(ref)) : undefined;
+    if (t) return <a key={k} href={lenke(t)} target="_blank" rel="noreferrer" title={`${t.dok.inst}: ${t.dok.label}, side ${t.side}`} style={{ color: 'var(--nmbu-green-dark)', fontWeight: 700 }}>{ref}</a>;
+    return <span key={k}>{ref}</span>;
+  };
+  const inline = (linje: string, k: string): ReactNode[] => linje.split(/(\*\*[^*]+\*\*|\[(?:S?\d+\s*,\s*)*S?\d+\]|\*[^*\s][^*]*\*)/).map((del, j) => {
+    const key = `${k}-${j}`;
     const fet = del.match(/^\*\*([^*]+)\*\*$/);
-    if (fet) return <b key={`${k}-${j}`} style={{ color: 'var(--nmbu-green-dark)' }}>{fet[1]}</b>;
-    const kilde = del.match(/^\[(\d+)\]$/);
-    const t = kilde ? kilder.find((x) => x.nr === Number(kilde[1])) : undefined;
-    if (t) return <a key={`${k}-${j}`} href={lenke(t)} target="_blank" rel="noreferrer" title={`${t.dok.inst}: ${t.dok.label}, side ${t.side}`} style={{ color: 'var(--nmbu-green-dark)', fontWeight: 700 }}>{del}</a>;
-    const s = del.match(/^\[S(\d+)\]$/);
-    if (s && sammendrag[Number(s[1]) - 1]) return <span key={`${k}-${j}`} title={`Sammendraget for ${sammendrag[Number(s[1]) - 1]} i institusjonskortet`} style={{ color: 'var(--nmbu-green-6)', fontWeight: 700, cursor: 'help' }}>{del}</span>;
-    return <span key={`${k}-${j}`}>{del}</span>;
+    if (fet) return <b key={key} style={{ color: 'var(--nmbu-green-dark)' }}>{inline(fet[1], key)}</b>;
+    const kursiv = del.match(/^\*([^*]+)\*$/);
+    if (kursiv) return <i key={key}>{kursiv[1]}</i>;
+    const refs = del.match(/^\[((?:S?\d+\s*,\s*)*S?\d+)\]$/);
+    if (refs) {
+      const deler = refs[1].split(/\s*,\s*/);
+      return <span key={key}>[{deler.flatMap((r, n) => (n ? [', ', kilde(r, `${key}-${n}`)] : [kilde(r, `${key}-${n}`)]))}]</span>;
+    }
+    return <span key={key}>{del}</span>;
   });
-  const linjer = tekst.split(/\n/).map((l) => l.trim()).filter(Boolean);
+  const linjer = tekst.split(/\n/).filter((l) => l.trim());
   const ut: ReactNode[] = [];
   let liste: ReactNode[] = [];
   const tomListe = (k: number) => { if (liste.length) { ut.push(<ul key={`ul${k}`} className="list-disc pl-5 mb-2">{liste}</ul>); liste = []; } };
-  linjer.forEach((l, i) => {
-    const m = l.match(/^[-•*]\s+(.*)$/);
-    if (m) liste.push(<li key={i} className="mb-0.5">{inline(m[1], String(i))}</li>);
+  linjer.forEach((rå, i) => {
+    const innrykk = (rå.match(/^\s*/)?.[0].length ?? 0) >= 2;
+    const l = rå.trim();
+    const m = l.match(/^(?:[-•*]|\d+\.)\s+(.*)$/);
+    if (m) liste.push(<li key={i} className="mb-0.5" style={innrykk ? { marginLeft: 16, listStyleType: 'circle' } : undefined}>{inline(m[1], String(i))}</li>);
     else { tomListe(i); ut.push(<p key={i} className="mb-1.5">{inline(l.replace(/^#+\s*/, ''), String(i))}</p>); }
   });
   tomListe(linjer.length);

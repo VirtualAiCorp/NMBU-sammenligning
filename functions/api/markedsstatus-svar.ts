@@ -39,7 +39,7 @@ B. SAMMENDRAG [S1], [S2], … : korte sammendrag som analyseteamet har skrevet f
 
 ## Absolutte regler
 - Bruk BARE datamaterialet over. Ingen kunnskap utenfra, ingen gjetting, ingen tall eller navn som ikke står der.
-- Hver påstand skal ha kilde rett etter seg: [n] for utdrag og [Sn] for sammendrag, for eksempel [3] eller [S2]. Bruk bare numre du har fått.
+- Hver påstand skal ha kilde rett etter seg: [n] for utdrag og [Sn] for sammendrag, én hake per kilde, for eksempel [3], [3][5] eller [S2]. Bruk bare numre du har fått, og bare kilder som faktisk inneholder det du skriver.
 - Svarer ikke materialet på spørsmålet, eller bare delvis, si det rett ut og forklar hva som mangler.
 - Nevn ikke personer ved navn med mindre rollen er relevant (for eksempel rektor eller styreleder).
 - Skriv på norsk bokmål, med desimalkomma.
