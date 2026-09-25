@@ -20,6 +20,7 @@ UT = ROOT / "kilde" / "public" / "ki"
 FAKULTETER = {"hh": "Handelshøyskolen", "landsam": "Fakultet for landskap og samfunn", "realtek": "Fakultet for realfag og teknologi",
               "biovit": "Fakultet for biovitenskap", "kbm": "Fakultet for kjemi, bioteknologi og matvitenskap",
               "mina": "Fakultet for miljøvitenskap og naturforvaltning", "vet": "Veterinærhøgskolen"}
+KORT = {"hh": "HH", "landsam": "LANDSAM", "realtek": "REALTEK", "biovit": "BIOVIT", "kbm": "KBM", "mina": "MINA", "vet": "VET"}
 NIVAA = {"bachelor": "bachelor", "master5": "femårig master", "master2": "toårig master"}
 # Metodeavsnitt som er relevante for brukerne (ikke arbeidsform, kommandoer, passord, intern analyse eller teknikk)
 UTELAT = {"3", "4", "5", "6", "8", "9", "10", "16", "18", "19", "22", "24"}
@@ -34,6 +35,13 @@ def nf(v, d=0):
 
 def pg(v):
     return "–" if v is None else ("alle kvalifiserte" if v == 0 else nf(v, 1))
+
+
+def gnavn(g, ekstra=""):
+    """Gruppenavn med nivå, uten dobbelt nivå når etiketten alt har det («Kjemi (2-årig master)»)."""
+    niv = "" if re.search(r"\((?:\d-årig )?(?:master|bachelor)", g["label"], re.I) else NIVAA.get(g["level"], g["level"])
+    deler = ", ".join(x for x in (niv, ekstra) if x)
+    return f"{g['label']} ({deler})" if deler else g["label"]
 
 
 def json_les(navn):
@@ -54,7 +62,7 @@ def data_linjer(fak):
     linjer = []
     for g in (adm or {}).get("groups", []):
         for e in g["entries"]:
-            navn = f"{g['label']} ({NIVAA.get(g['level'], g['level'])}) · {e['shortName']}{' (NMBU)' if e['id'] in g['nmbuIds'] else ''} · {e.get('institusjon', '')}, {e.get('studiested', '')}"
+            navn = f"{gnavn(g)} · {e['shortName']}{' (NMBU)' if e['id'] in g['nmbuIds'] else ''} · {e.get('institusjon', '')}, {e.get('studiested', '')}"
             deler = []
             for y in sorted(e["years"], reverse=True)[:3]:
                 d = e["years"][y]
@@ -98,8 +106,8 @@ def data_linjer(fak):
             if deler:
                 # 4. felt: «n» = NMBUs program, «h» = hovedkonkurrent (valgt som standard i opptaksanalysen), «» = øvrige
                 flagg = "n" if e["id"] in g["nmbuIds"] else ("h" if e["id"] in g["defaultIds"] else "")
-                linjer.append([f"{g['label']} ({NIVAA.get(g['level'], g['level'])})", e["shortName"], f"{navn}. " + ". ".join(deler) + ".", flagg, fak, g["id"]])
-    return linjer + rangeringer(adm, comp, sb, fak)
+                linjer.append([gnavn(g), e["shortName"], f"{navn}. " + ". ".join(deler) + ".", flagg, fak, g["id"]])
+    return linjer + rangeringer(adm, comp, sb, fak) + oversikt([(fak, adm, comp, sb)], f"{KORT[fak]} ({FAKULTETER[fak]})")
 
 
 def rangeringer(adm, comp, sb, fak):
@@ -107,7 +115,7 @@ def rangeringer(adm, comp, sb, fak):
     ut = []
     kull = {p["entryId"]: p for g in (comp or {}).get("groups", []) for p in g["programs"]}
     for g in (adm or {}).get("groups", []):
-        gnavn = f"{g['label']} ({NIVAA.get(g['level'], g['level'])})"
+        gn = gnavn(g)
         navn = lambda e: f"{e['shortName']}{' (NMBU)' if e['id'] in g['nmbuIds'] and 'NMBU' not in e['shortName'] else ''} ({e.get('studiested', '')})"
 
         def ranger(tittel, verdier, dec, enhet="", apne=None):
@@ -117,12 +125,12 @@ def rangeringer(adm, comp, sb, fak):
             verdier.sort(key=lambda x: -x[1])
             liste = "; ".join(f"{i + 1}. {navn(e)} {nf(v, dec)}{enhet}" for i, (e, v) in enumerate(verdier))
             nmbu = [f"NMBU{'' if e['shortName'] == 'NMBU' else ' (' + e['shortName'] + ')'} er nr. {i + 1} av {len(verdier)}" for i, (e, v) in enumerate(verdier) if e["id"] in g["nmbuIds"]]
-            tekst = f"RANGERING {tittel} · {gnavn}, høyest først: {liste}."
+            tekst = f"RANGERING {tittel} · {gn}, høyest først: {liste}."
             if nmbu:
                 tekst += " " + "; ".join(nmbu) + "."
             if apne:
                 tekst += f" Alle kvalifiserte fikk tilbud (ingen poenggrense): {', '.join(navn(e) for e in apne)}."
-            ut.append([gnavn, "rangering", tekst, "r", fak, g["id"]])
+            ut.append([gn, "rangering", tekst, "r", fak, g["id"]])
 
         for y in sorted({y for e in g["entries"] for y in e["years"]}, reverse=True)[:2]:
             d = {e["id"]: e["years"].get(y) or {} for e in g["entries"]}
@@ -141,6 +149,68 @@ def rangeringer(adm, comp, sb, fak):
                 gj.append((e, 100 * siste[-1]["fullfortNormert"] / siste[-1]["startkull"]))
         ranger("fullført på normert tid, siste startkull", gj, 1, " %")
         ranger("Studiebarometeret helhetsvurdering, siste år", [(e, (sb.get(e["id"]) or {}).get("scores", {}).get("helhetsvurdering")) for e in g["entries"]], 1)
+    return ut
+
+
+def oversikt(kilder, omfang):
+    """OVERSIKT-linjer (flagg «o»): NMBUs egne program innen et fakultet (eller hele NMBU) sortert per mål, for spørsmål
+    som «hvilket KBM-program har høyest poenggrense?». 7. felt lister [fakultet, gruppe-id, programnavn] i samme rekkefølge
+    som i teksten, slik at «Ta meg til» kan peke på programmet svaret nevner."""
+    hele = len(kilder) > 1
+    prog = []  # (fak, gruppe, entry, kull, sb)
+    for fak, adm, comp, sb in kilder:
+        kull = {p["entryId"]: p for g in (comp or {}).get("groups", []) for p in g["programs"]}
+        for g in (adm or {}).get("groups", []):
+            for e in g["entries"]:
+                if e["id"] in g["nmbuIds"]:
+                    prog.append((fak, g, e, kull.get(e["id"]), sb.get(e["id"])))
+    if not prog:
+        return []
+    def pnavn(fak, g, e):
+        n = gnavn(g, KORT[fak] if hele else "")
+        if e["shortName"] != "NMBU" and sum(1 for x in prog if x[1] is g) > 1:
+            n += f" – {e['shortName']}"
+        return n
+    ut = []
+    alle = "; ".join(pnavn(f, g, e) for f, g, e, _, _ in prog)
+    ut.append([f"Oversikt {omfang}", "oversikt", f"OVERSIKT {omfang}: NMBUs programgrupper i sammenligningen ({len(prog)}): {alle}.", "o",
+               prog[0][0], prog[0][1]["id"], [[f, g["id"], pnavn(f, g, e)] for f, g, e, _, _ in prog]])
+
+    def linje(tittel, verdier, dec, enhet="", apne=None, lavest=False):
+        verdier = [x for x in verdier if x[1] is not None]
+        if not verdier and not apne:
+            return
+        verdier.sort(key=lambda x: x[1] if lavest else -x[1])
+        liste = "; ".join(f"{i + 1}. {pnavn(*p[:3])} {nf(v, dec)}{enhet}" for i, (p, v) in enumerate(verdier))
+        tekst = f"OVERSIKT {omfang} · {tittel}, {'lavest' if lavest else 'høyest'} først: {liste or '(ingen)'}."
+        if apne:
+            tekst += f" Alle kvalifiserte fikk tilbud (ingen poenggrense): {', '.join(pnavn(*p[:3]) for p in apne)}."
+        rekke = [p for p, _ in verdier] + list(apne or [])
+        ut.append([f"Oversikt {omfang}", "oversikt", tekst, "o", rekke[0][0], rekke[0][1]["id"], [[p[0], p[1]["id"], pnavn(*p[:3])] for p in rekke]])
+
+    aar = lambda felt: max((y for _, _, e, _, _ in prog for y, d in e["years"].items() if d.get(felt) is not None), default=None)
+    for felt, tittel in (("pg_ord", "poenggrense ordinær kvote (hovedopptak)"), ("pg_fv", "poenggrense førstegangsvitnemål (hovedopptak)")):
+        y = aar(felt)
+        if y:
+            d = lambda p: p[2]["years"].get(y) or {}
+            linje(f"{y} {tittel}", [(p, d(p).get(felt)) for p in prog if d(p).get(felt)], 1, apne=[p for p in prog if d(p).get(felt) == 0])
+    y = aar("op_mott")
+    if y:
+        linje(f"{y} snitt opptakspoeng for de som møtte", [(p, (p[2]["years"].get(y) or {}).get("op_mott")) for p in prog], 1)
+    y = aar("fvS")
+    if y:
+        d = lambda p: p[2]["years"].get(y) or {}
+        linje(f"{y} førstevalgssøkere per studieplass", [(p, d(p)["fvS"] / d(p)["plasser"] if d(p).get("fvS") is not None and d(p).get("plasser") else None) for p in prog], 2)
+        linje(f"{y} søkere i alt", [(p, d(p).get("alleS")) for p in prog], 0)
+    gj, ff = [], []
+    for p in prog:
+        siste = [x for x in (p[3] or {}).get("kull", []) if x.get("startkull") and x.get("normertAar") and x["normertAar"] <= 2025]
+        if siste:
+            gj.append((p, 100 * siste[-1]["fullfortNormert"] / siste[-1]["startkull"]))
+            ff.append((p, 100 * siste[-1]["frafalt"] / siste[-1]["startkull"]))
+    linje("fullført på normert tid, siste startkull", gj, 1, " %")
+    linje("frafall, siste startkull", ff, 1, " %")
+    linje("Studiebarometeret helhetsvurdering, siste år", [(p, ((p[4] or {}).get("scores") or {}).get("helhetsvurdering")) for p in prog], 1)
     return ut
 
 
@@ -171,6 +241,14 @@ def main():
         l = data_linjer(fak)
         json.dump({"fakultet": fak, "navn": navn, "linjer": l}, open(UT / f"{fak}-data.json", "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
         print(f"{fak}: {len(l)} programlinjer, {(UT / f'{fak}-data.json').stat().st_size // 1024} kB")
+    grunnlag = []
+    for fak in FAKULTETER:
+        sb_p = ROOT / "data" / fak / "studiebarometer.json"
+        grunnlag.append((fak, json_les(f"{fak}AdmissionData.json"), json_les(f"{fak}CompletionData.json"),
+                         {e["entryId"]: e for e in json.load(open(sb_p, encoding="utf-8"))} if sb_p.exists() else {}))
+    o = oversikt(grunnlag, "hele NMBU")
+    json.dump({"fakultet": None, "navn": "Hele NMBU", "linjer": o}, open(UT / "nmbu-data.json", "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+    print(f"nmbu: {len(o)} oversiktslinjer")
     m = metode()
     json.dump({"avsnitt": m}, open(UT / "metode.json", "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     print(f"metode: {len(m)} biter, {(UT / 'metode.json').stat().st_size // 1024} kB")

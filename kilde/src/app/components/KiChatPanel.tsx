@@ -13,9 +13,11 @@ import { KiSvarTekst } from './KiSvarTekst';
  *   - metodedokumentasjonen (public/ki/metode.json)                                              → [M1..]
  * og sender spørsmålet, de siste meldingene og de beste treffene til /api/chat (Mistral). Samtalen huskes i fanen.
  */
-type DataLinje = [string, string, string, string?, string?, string?]; // gruppe, program, tekst, flagg (n = NMBU, h = hovedkonkurrent, r = rangering), fakultet, gruppe-id
+// gruppe, program, tekst, flagg (n = NMBU, h = hovedkonkurrent, r = rangering, o = oversikt over NMBUs program), fakultet, gruppe-id,
+// og for oversiktslinjene: [fakultet, gruppe-id, programnavn] i samme rekkefølge som i teksten
+type DataLinje = [string, string, string, string?, string?, string?, [string, string, string][]?];
 interface Kilder { data: DataLinje[]; dok: Treff[]; sammendrag: string[]; metode: [string, string][] }
-interface Melding { rolle: 'bruker' | 'assistent'; tekst: string; kilder?: Kilder; ubekreftet?: string[]; feil?: boolean; modell?: string; sporsmal?: string }
+interface Melding { rolle: 'bruker' | 'assistent'; tekst: string; kilder?: Kilder; ubekreftet?: string[]; feil?: boolean; modell?: string; sporsmal?: string; omfang?: FacultyId[] }
 interface Storrelse { w: number; h: number; sw: number }
 const klem = (v: number, a: number, b: number) => Math.max(a, Math.min(b, v));
 
@@ -33,32 +35,86 @@ const SIDER: [RegExp, string, string][] = [
 ];
 interface Maal { fak: FacultyId; visning: string; gruppe?: string; tekst: string }
 
-/** Forslag til hvor på nettsiden svaret hører hjemme, ut fra kildene svaret siterer (ellers alle kildene) og spørsmålet. */
+/** Programgrupper i kildene: vanlige linjer gir én, oversiktslinjene alle programmene de lister. */
+const grupperI = (linjer: DataLinje[]) => linjer.flatMap((l) => (l[3] === 'o' && l[6] ? l[6] : l[4] && l[5] ? [[l[4], l[5], l[0]] as [string, string, string]] : []));
+const utenNivaa = (navn: string) => navn.replace(/\s*\(.*$/, '').trim();
+/** «Kjemi (bachelor, KBM)» → «Kjemi (bachelor)», «Økonomi og administrasjon (master) (HH)» → «… (master)» */
+const utenFak = (navn: string) => navn.replace(/,\s*[A-ZÆØÅ]+\)$/, ')').replace(/\s*\([A-ZÆØÅ]+\)$/, '');
+const esc = (t: string) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+/**
+ * «Ta meg til»: siden som hører til svaret. Fakultetet er det spørsmålet gjelder (omfang), og programmet er det svaret
+ * nevner først blant programmene i kildene det siterer (ellers alle kildene); står ingen nevnt, brukes det mest siterte.
+ */
 function finnMaal(m: Melding, fakultet: FacultyId | null, visning: string, gjeldendeGruppe?: string): Maal[] {
   const k = m.kilder;
   if (!k) return [];
   const refs = [...m.tekst.matchAll(/\[((?:[SDM]?\d+\s*,\s*)*[SDM]?\d+)\]/gi)].flatMap((x) => x[1].split(/\s*,\s*/));
   const dRefs = refs.filter((r) => /^D\d+$/i.test(r)).map((r) => k.data[Number(r.slice(1)) - 1]).filter(Boolean);
   const dokRefs = refs.filter((r) => /^\d+$/.test(r)).length;
-  const linjer = (dRefs.length ? dRefs : k.data).filter((l) => l[4] && l[5]);
+  const iOmfang = (gs: [string, string, string][]) => { const i = gs.filter((g) => m.omfang?.includes(g[0] as FacultyId)); return m.omfang?.length && i.length ? i : gs; };
+  const tekst = m.tekst.toLowerCase();
+  let kand = iOmfang(grupperI(dRefs.length ? dRefs : k.data));
   const ut: Maal[] = [];
-  if (linjer.length) {
-    const teller = new Map<string, { n: number; l: DataLinje }>();
-    linjer.forEach((l) => { const key = `${l[4]}|${l[5]}`; const t = teller.get(key); teller.set(key, { n: (t?.n ?? 0) + 1, l }); });
-    const [, { l }] = [...teller.entries()].sort((a, b) => b[1].n - a[1].n)[0];
-    const fak = l[4] as FacultyId;
+  if (kand.length) {
+    const pos = (navn: string) => {
+      const hel = tekst.indexOf(utenFak(navn).toLowerCase());
+      if (hel >= 0) return hel - 0.5; // fullt navn med nivå slår bare programnavnet
+      const re = new RegExp(`(^|[^a-zæøå])${esc(utenNivaa(navn).toLowerCase())}($|[^a-zæøå])`);
+      const t = re.exec(tekst);
+      return t ? t.index : Infinity;
+    };
+    // Nevner svaret ingen av programmene i kildene det siterer, se i alle kildene
+    if (!kand.some((g) => pos(g[2]) < Infinity)) { const alle = iOmfang(grupperI(k.data)); if (alle.some((g) => pos(g[2]) < Infinity)) kand = alle; }
+    const teller = new Map<string, number>();
+    kand.forEach((g) => teller.set(`${g[0]}|${g[1]}`, (teller.get(`${g[0]}|${g[1]}`) ?? 0) + 1));
+    const unike = [...new Map(kand.map((g) => [`${g[0]}|${g[1]}`, g])).values()];
+    unike.sort((a, b) => pos(a[2]) - pos(b[2]) || (teller.get(`${b[0]}|${b[1]}`)! - teller.get(`${a[0]}|${a[1]}`)!));
+    const [fk, gid, navn] = unike[0];
+    const fak = fk as FacultyId;
     const side = SIDER.find(([re]) => re.test(m.sporsmal ?? ''));
     const vis = side ? side[1] : 'analyse';
-    const gruppe = vis === 'analyse' || vis === 'emner' ? l[5] : undefined;
-    const gnavn = l[0].replace(/ \((bachelor|toårig master|femårig master)\)$/, '');
-    if (!(fak === fakultet && vis === visning && (!gruppe || gruppe === gjeldendeGruppe))) {
-      ut.push({ fak, visning: vis, gruppe, tekst: `${FACULTY_META[fak].shortLabel} · ${side ? side[2] : 'Opptak'}${gruppe ? ` · ${gnavn}` : ''}` });
+    const gruppe = vis === 'analyse' || vis === 'emner' ? gid : undefined;
+    if (FACULTY_META[fak] && !(fak === fakultet && vis === visning && (!gruppe || gruppe === gjeldendeGruppe))) {
+      ut.push({ fak, visning: vis, gruppe, tekst: `${FACULTY_META[fak].shortLabel} · ${side ? side[2] : 'Opptak'}${gruppe ? ` · ${utenFak(navn)}` : ''}` });
     }
   }
-  if (fakultet && (dokRefs > 0 || (!dRefs.length && k.dok.length && !k.data.length)) && visning !== 'markedsstatus') {
-    ut.push({ fak: fakultet, visning: 'markedsstatus', tekst: `${FACULTY_META[fakultet].shortLabel} · Markedsstatus (styrepapirene)` });
+  const dokFak = m.omfang?.length === 1 ? m.omfang[0] : fakultet;
+  if (dokFak && (dokRefs > 0 || (!dRefs.length && k.dok.length && !k.data.length)) && !(visning === 'markedsstatus' && dokFak === fakultet)) {
+    ut.push({ fak: dokFak, visning: 'markedsstatus', tekst: `${FACULTY_META[dokFak].shortLabel} · Markedsstatus (styrepapirene)` });
   }
   return ut.slice(0, 2);
+}
+
+/** Fakultetene spørsmålet handler om: nevnt ved navn, eller via et NMBU-program (fra oversikten over hele NMBU). */
+const FAK_ORD: [FacultyId, RegExp][] = [
+  ['hh', /\bHH\b|handelsh[øo][gy]skolen/i],
+  ['landsam', /\blandsam\b|landskap og samfunn/i],
+  ['realtek', /\brealtek\b|realfag og teknologi/i],
+  ['biovit', /\bbiovit\b|fakultet for biovitenskap/i],
+  ['kbm', /\bkbm\b|kjemi, bioteknologi og mat/i],
+  ['mina', /\bmina\b|miljøvitenskap og naturforvaltning/i],
+  ['vet', /\bvet\b|veterinærh[øo]gskolen/i],
+];
+const HELE_NMBU = /hele nmbu|alle fakultet|hvilke[tn]? fakultet|på tvers av fakultet|(ved|på) nmbu\b.*(høyest|lavest|flest|færrest|best|svakest)|(høyest|lavest|flest|færrest|best|svakest).*(ved|på) nmbu\b/i;
+const OVERSIKTSSPORSMAL = /høyest|lavest|\bbest|svakest|flest|færrest|hvilke[tn]? (av )?(studie|program)|ranger|alle (studie|program)|oversikt|sammenlign(e|ing)? (programm|studi)/i;
+type Omfang = { fak: FacultyId[] | 'alle'; grupper: [string, string, string][]; navngitt: boolean };
+function finnOmfang(q: string, alleGrupper: [string, string, string][], fakultet: FacultyId | null): Omfang | null {
+  if (HELE_NMBU.test(q)) return { fak: 'alle', grupper: [], navngitt: true };
+  const nevnt = FAK_ORD.filter(([, re]) => re.test(q)).map(([f]) => f);
+  if (nevnt.length) return { fak: nevnt, grupper: [], navngitt: true };
+  const ql = q.toLowerCase();
+  // Programnavn i spørsmålet (lengste først, så «Kjemi og bioteknologi» ikke også teller som «Kjemi»)
+  const navn = [...new Set(alleGrupper.map((g) => utenNivaa(g[2])))].filter((n) => n.length >= 5).sort((a, b) => b.length - a.length);
+  let rest = ql; const funnet: string[] = [];
+  for (const n of navn) {
+    const re = new RegExp(`(^|[^a-zæøå])${esc(n.toLowerCase())}($|[^a-zæøå])`);
+    if (re.test(rest)) { funnet.push(n); rest = rest.replace(re, '$1 $2'); }
+  }
+  if (!funnet.length) return null;
+  let grupper = alleGrupper.filter((g) => funnet.includes(utenNivaa(g[2])));
+  if (fakultet && grupper.some((g) => g[0] === fakultet)) grupper = grupper.filter((g) => g[0] === fakultet);
+  return { fak: [...new Set(grupper.map((g) => g[0] as FacultyId))], grupper, navngitt: false };
 }
 
 const LAGRING = 'ki-chat-samtale';
@@ -73,10 +129,16 @@ function engang<T>(nokkel: string, lag: () => Promise<T>): Promise<T> {
   if (!cache.has(nokkel)) cache.set(nokkel, lag());
   return cache.get(nokkel) as Promise<T>;
 }
-const dataIndeks = (fak: FacultyId | null) => engang(`data:${fak ?? 'alle'}`, async () => {
-  const filer = await Promise.all((fak ? [fak] : ALL_FACULTY_IDS).map((f) => hentJson<{ linjer: DataLinje[] }>(`ki/${f}-data.json`)));
-  return new TekstIndeks<DataLinje>(filer.flatMap((f) => f?.linjer ?? []), (l) => l[2]);
-});
+const dataFil = (f: string) => engang(`fil:${f}`, () => hentJson<{ linjer: DataLinje[] }>(`ki/${f}-data.json`));
+/** Nøkkeltallene for fakultetene i omfanget; flere fakulteter (eller hele NMBU) får også oversikten over hele NMBU. */
+const dataIndeks = (fak: FacultyId[] | 'alle') => {
+  const liste = fak === 'alle' ? [...ALL_FACULTY_IDS] : fak;
+  const filer: string[] = [...liste, ...(liste.length > 1 ? ['nmbu'] : [])];
+  return engang(`data:${filer.join(',')}`, async () => {
+    const d = await Promise.all(filer.map(dataFil));
+    return new TekstIndeks<DataLinje>(d.flatMap((f) => f?.linjer ?? []), (l) => l[2]);
+  });
+};
 const metodeIndeks = () => engang('metode', async () => {
   const m = await hentJson<{ avsnitt: [string, string][] }>('ki/metode.json');
   return new TekstIndeks<[string, string]>(m?.avsnitt ?? [], (a) => `${a[0]} ${a[1]}`);
@@ -89,24 +151,34 @@ const dokIndeks = (fak: FacultyId) => engang(`dok:${fak}`, async () => {
 /**
  * Nøkkeltall til modellen: finner programgruppen spørsmålet handler om (flest av de beste treffene) og sender da
  * NMBUs program først, så hovedkonkurrentene og de mest relevante av de andre i gruppen. Treff i andre grupper tas med
- * etterpå hvis det er plass. Uten tydelig gruppe brukes de beste treffene som de er.
+ * etterpå hvis det er plass. Uten tydelig gruppe brukes de beste treffene som de er. Spørsmål om et helt fakultet
+ * (eller hele NMBU) får oversiktslinjene over NMBUs egne program først.
  */
-function velgData(di: TekstIndeks<DataLinje>, q: string, sokeTekst: string): DataLinje[] {
+function velgData(di: TekstIndeks<DataLinje>, q: string, sokeTekst: string, omfang: Omfang | null, heleNmbu: boolean): DataLinje[] {
   const treff = di.sok(q, 30).concat(di.sok(sokeTekst, 15)).filter((l, i, a) => a.indexOf(l) === i);
-  const topp = treff.slice(0, 8);
+  const rang = (l: DataLinje) => { const i = treff.indexOf(l); return i < 0 ? 999 : i; };
+  // Hele NMBU: oversikten på tvers av fakultetene; ellers oversikten per fakultet
+  const oversikt = di.elementer.filter((l) => l[3] === 'o' && (l[0] === 'Oversikt hele NMBU') === heleNmbu);
+  const fokusOversikt = oversikt.length > 0 && !omfang?.grupper.length && (OVERSIKTSSPORSMAL.test(q) || !!omfang?.navngitt);
+  const forst = fokusOversikt ? [...oversikt].sort((a, b) => rang(a) - rang(b)).slice(0, 6) : [];
+  // Er programmet nevnt i spørsmålet, er det gruppen
+  const nevnt = omfang?.grupper.length ? new Set(omfang.grupper.map((g) => `${g[0]}|${g[1]}`)) : null;
+  const topp = treff.filter((l) => l[3] !== 'o').slice(0, 8);
   const teller = new Map<string, number>();
   topp.forEach((l) => teller.set(l[0], (teller.get(l[0]) ?? 0) + 1));
-  const [gruppe, antall] = [...teller.entries()].sort((a, b) => b[1] - a[1])[0] ?? ['', 0];
-  if (!gruppe || antall < 3) return treff.slice(0, 10);
-  const iGruppe = di.elementer.filter((l) => l[0] === gruppe);
-  const rang = (l: DataLinje) => { const i = treff.indexOf(l); return i < 0 ? 999 : i; };
+  let [gruppe, antall] = [...teller.entries()].sort((a, b) => b[1] - a[1])[0] ?? ['', 0];
+  if (nevnt) { const g = di.elementer.find((l) => l[3] !== 'o' && nevnt.has(`${l[4]}|${l[5]}`)); if (g) { gruppe = g[0]; antall = 99; } }
+  const resten = treff.filter((l) => !forst.includes(l));
+  if (!gruppe || antall < 3) return [...forst, ...resten].slice(0, 12);
+  const iGruppe = di.elementer.filter((l) => l[0] === gruppe && l[3] !== 'o');
   const valgt = [
+    ...forst,
     ...iGruppe.filter((l) => l[3] === 'r').sort((a, b) => rang(a) - rang(b)).slice(0, 4),
     ...iGruppe.filter((l) => l[3] === 'n'),
     ...iGruppe.filter((l) => l[3] === 'h').sort((a, b) => rang(a) - rang(b)),
     ...iGruppe.filter((l) => !l[3]).sort((a, b) => rang(a) - rang(b)).slice(0, 6),
   ].slice(0, 18);
-  return [...valgt, ...treff.filter((l) => l[0] !== gruppe).slice(0, Math.max(1, 19 - valgt.length))];
+  return [...valgt, ...resten.filter((l) => l[0] !== gruppe).slice(0, Math.max(1, 19 - valgt.length))];
 }
 
 function forslag(visning: string, fak: FacultyId | null): string[] {
@@ -171,8 +243,16 @@ export function KiChatPanel({ apen, lukk, fakultet, visning, sted, modus, setMod
       // Søket bruker også forrige spørsmål, så følgespørsmål («og for master?») finner riktige kilder
       const forrige = [...meldinger].reverse().find((m) => m.rolle === 'bruker')?.tekst ?? '';
       const sokeTekst = `${q} ${forrige}`;
-      const [di, mi, dk] = await Promise.all([dataIndeks(fakultet), metodeIndeks(), fakultet ? dokIndeks(fakultet) : Promise.resolve(null)]);
-      const data = velgData(di, q, sokeTekst);
+      // Hvilke fakulteter spørsmålet gjelder: nevnt i spørsmålet, ellers i forrige spørsmål, ellers der brukeren står
+      const alleGrupper = grupperI((await dataFil('nmbu'))?.linjer.slice(0, 1) ?? []);
+      const omfang = finnOmfang(q, alleGrupper, fakultet) ?? (forrige ? finnOmfang(forrige, alleGrupper, fakultet) : null);
+      const faks: FacultyId[] | 'alle' = omfang?.fak ?? (fakultet ? [fakultet] : 'alle');
+      const dokFak = faks !== 'alle' && faks.length === 1 ? faks[0] : fakultet;
+      const [di, mi, dk] = await Promise.all([dataIndeks(faks), metodeIndeks(), dokFak ? dokIndeks(dokFak) : Promise.resolve(null)]);
+      const data = velgData(di, q, sokeTekst, omfang, faks === 'alle');
+      const omfangTekst = faks === 'alle' ? 'hele NMBU (alle fakultetene)'
+        : [faks.map((f) => `${FACULTY_META[f].shortLabel} (${FACULTY_META[f].label})`).join(', '),
+          omfang?.grupper.length ? `programmet ${[...new Set(omfang.grupper.map((g) => utenFak(g[2].replace(/\s+–\s+.*$/, ''))))].join(' / ')}` : ''].filter(Boolean).join(', ');
       const metode = mi.sok(q, 3);
       const dok = dk?.indeks ? dk.indeks.sok(sokeTekst, 6) : [];
       const inst = [...new Set(dok.map((t) => t.dok.inst))].slice(0, 4);
@@ -181,7 +261,7 @@ export function KiChatPanel({ apen, lukk, fakultet, visning, sted, modus, setMod
       const r = await fetch('/api/chat', {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          sporsmal: q, historikk, sted,
+          sporsmal: q, historikk, sted, omfang: omfangTekst,
           kilder: {
             data: data.map((l) => ({ tittel: `${l[0]} · ${l[1]}`, tekst: l[2] })),
             dok: dok.map((t) => ({ inst: t.dok.inst, dok: t.dok.label, dato: t.dok.dato, side: t.side, tekst: t.tekst })),
@@ -192,7 +272,7 @@ export function KiChatPanel({ apen, lukk, fakultet, visning, sted, modus, setMod
       });
       const j = await r.json().catch(() => null);
       if (!r.ok || !j?.svar) throw new Error(j?.feil ?? (r.status === 404 ? 'KI-chatten er bare tilgjengelig på den publiserte siden.' : `Feil ${r.status}`));
-      setMeldinger((m) => [...m, { rolle: 'assistent', tekst: j.svar, kilder, ubekreftet: j.ubekreftet, modell: j.modell, sporsmal: q }]);
+      setMeldinger((m) => [...m, { rolle: 'assistent', tekst: j.svar, kilder, ubekreftet: j.ubekreftet, modell: j.modell, sporsmal: q, omfang: faks === 'alle' ? undefined : faks }]);
     } catch (e) {
       setMeldinger((m) => [...m, { rolle: 'assistent', tekst: e instanceof Error ? e.message : 'Noe gikk galt.', feil: true }]);
     } finally { setVenter(false); }

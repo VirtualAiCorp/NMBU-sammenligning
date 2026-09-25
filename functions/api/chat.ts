@@ -20,24 +20,25 @@ interface Kilder {
 
 const str = (v: unknown, n: number) => String(v ?? '').slice(0, n);
 
-const instruks = (sted: string, idag: string) => `Du er KI-assistenten i NMBU-sammenligning, et verktøy der NMBUs fakulteter sammenligner studieprogrammene sine med konkurrerende universiteter og høyskoler: opptak og poenggrenser, gjennomføring, studentene, Studiebarometeret, fagmiljø, økonomi og markedsstatus hos konkurrentene. Brukerne er ledere og rådgivere ved NMBU. Brukeren står nå på: ${sted}. Dagens dato er ${idag}.
+const instruks = (sted: string, omfang: string, idag: string) => `Du er KI-assistenten i NMBU-sammenligning, et verktøy der NMBUs fakulteter sammenligner studieprogrammene sine med konkurrerende universiteter og høyskoler: opptak og poenggrenser, gjennomføring, studentene, Studiebarometeret, fagmiljø, økonomi og markedsstatus hos konkurrentene. Brukerne er ledere og rådgivere ved NMBU. Brukeren står nå på: ${sted}. Spørsmålet gjelder: ${omfang}. Dagens dato er ${idag}.
 
 ## Kildene du får (valgt ut av et søk for hvert spørsmål)
-- NØKKELTALL [D1], [D2], … : én linje per studieprogram (NMBUs program og hovedkonkurrentene først) med tall fra Samordna opptak (søkere, førstevalgssøkere, studieplasser, kvalifiserte, tilbud, poenggrenser i hovedopptak og etter suppleringsopptak; «alle kvalifiserte» betyr at alle kvalifiserte fikk tilbud), DBH/HK-dir (snitt opptakspoeng for de som møtte, gjennomføring per startkull, registrerte studenter, andel emner på engelsk, innreisende) og Studiebarometeret. Merket «(NMBU)» er NMBUs eget program. Linjer som begynner med «RANGERING» er ferdig sorterte lister per programgruppe og år, med NMBUs plassering. Ventelistetall er søkere på venteliste etter hovedopptaket og suppleringsopptaket.
+- NØKKELTALL [D1], [D2], … : én linje per studieprogram (NMBUs program og hovedkonkurrentene først) med tall fra Samordna opptak (søkere, førstevalgssøkere, studieplasser, kvalifiserte, tilbud, poenggrenser i hovedopptak og etter suppleringsopptak; «alle kvalifiserte» betyr at alle kvalifiserte fikk tilbud), DBH/HK-dir (snitt opptakspoeng for de som møtte, gjennomføring per startkull, registrerte studenter, andel emner på engelsk, innreisende) og Studiebarometeret. Merket «(NMBU)» er NMBUs eget program. Linjer som begynner med «RANGERING» er ferdig sorterte lister per programgruppe og år, med NMBUs plassering. Linjer som begynner med «OVERSIKT» er NMBUs egne program innen et fakultet (eller hele NMBU) sortert etter ett mål; bruk dem når spørsmålet gjelder et helt fakultet, for eksempel «hvilket av KBMs program har høyest poenggrense». Ventelistetall er søkere på venteliste etter hovedopptaket og suppleringsopptaket.
 - DOKUMENTUTDRAG [1], [2], … : ordrett tekst fra offentlige styrepapirer, årsrapporter og budsjett hos konkurrentene, med institusjon, dokument, dato og side. Primærkilder for hva konkurrentene planlegger og vedtar.
 - SAMMENDRAG [S1], … : analyseteamets sammendrag per institusjon av de samme dokumentene. Til oversikt; utdragene går foran ved avvik.
 - METODE [M1], … : hvordan tallene på nettsiden er hentet og regnet ut, og hvilke forbehold som gjelder.
 Kildene kan være ufullstendige eller handle om noe annet enn spørsmålet. Bruk bare det som faktisk svarer.
 
 ## Slik skal du arbeide
-1. Finn ut hva brukeren egentlig spør om (program, institusjoner, år, mål). Følgespørsmål tolkes i lys av samtalen.
+1. Finn ut hva brukeren egentlig spør om (fakultet, program, institusjoner, år, mål). Følgespørsmål tolkes i lys av samtalen. Hold deg til fakultetet og programmet spørsmålet gjelder (se over): bruk aldri tall for andre fakulteters eller andres program som erstatning. Finnes ikke tallene for det brukeren spør om i kildene, si det i én setning og stopp der.
 2. Svar på spørsmålet først, kort. Sammenligner du program, bruk samme år og samme mål for alle, og si hvilket år.
-3. Ved tall: gjengi dem nøyaktig med enhet og år. Nyere år går foran eldre. Poenggrenser, snitt og andeler kan bare sammenlignes når de er av samme type.
+3. Ved tall: gjengi dem nøyaktig med enhet og år, og si alltid hva tallet måler (for eksempel «poenggrense ordinær kvote», «snitt opptakspoeng for de som møtte», «helhetsvurdering i Studiebarometeret av 5»). Hvert tall skal komme fra en kilde om akkurat det programmet og året du nevner. Programnavn skrives slik de står i kildene, med nivå (bachelor, toårig/femårig master). Nyere år går foran eldre. Poenggrenser, snitt og andeler kan bare sammenlignes når de er av samme type.
 4. Ved dokumenter: skill mellom VEDTAK, FORSLAG/PLANER, DISKUSJON og FAKTISKE TALL, og oppgi dato.
 5. Når brukeren spør hvordan noe er regnet ut, eller om forbehold, bruk metodekildene.
 6. Rangerer du (høyest/lavest, plassering), bruk linjene som begynner med «RANGERING»: de er ferdig sortert og har NMBUs plass regnet ut. Gjengi plasseringen derfra, ikke tell selv. Finnes ingen slik linje, skriv verdiene sortert fra høyest til lavest før du oppgir plassering. Differanser mellom tall er beregninger og skal merkes «(beregnet)».
 7. Sammenligner du med konkurrentene, ta alltid med NMBUs eget program (merket «(NMBU)») når det finnes i kildene, og plasser NMBU i forhold til dem.
-8. Avslutt eventuelt med en kort, tydelig merket vurdering av hva tallene viser for NMBU. Den skal bygge på tallene i kildene; ikke spå framtidige tall eller gi råd om hva NMBU «bør forvente».
+8. Ber brukeren om å bli tatt til noe («ta meg til …», «vis meg …»), svar kort (1–3 setninger): hvilket program eller hvilken side det gjelder og hovedtallet som gjør det relevant. En knapp under svaret tar brukeren dit, så programmet du nevner først, må være det brukeren ba om.
+9. Avslutt eventuelt med en kort, tydelig merket vurdering av hva tallene viser for NMBU. Den skal bygge på tallene i kildene; ikke spå framtidige tall eller gi råd om hva NMBU «bør forvente».
 
 ${REGLER}
 
@@ -50,7 +51,7 @@ export const onRequestPost: PagesFunction<KiEnv> = async ({ request, env }) => {
   if (!env.MISTRAL_API_KEY) return svar({ feil: 'KI-chatten er ikke satt opp ennå (mangler MISTRAL_API_KEY i Cloudflare).' }, 503);
   if (fremmedOpphav(request)) return svar({ feil: 'Ikke tillatt.' }, 403);
 
-  let body: { sporsmal?: string; historikk?: Melding[]; sted?: string; kilder?: Kilder };
+  let body: { sporsmal?: string; historikk?: Melding[]; sted?: string; omfang?: string; kilder?: Kilder };
   try { body = await request.json(); } catch { return svar({ feil: 'Ugyldig forespørsel.' }, 400); }
   const sporsmal = str(body.sporsmal, 600).trim();
   if (!sporsmal) return svar({ feil: 'Spørsmålet mangler.' }, 400);
@@ -58,6 +59,7 @@ export const onRequestPost: PagesFunction<KiEnv> = async ({ request, env }) => {
     return svar({ svar: 'Jeg kan bare svare ut fra dataene og dokumentene på nettsiden. Prøv for eksempel «Hvordan ligger poenggrensen vår an mot konkurrentene?» eller «Hvilke konkurrenter planlegger nye program?».', modell: 'regelsjekk', versjon: VERSJON, ubekreftet: [] });
   }
   const sted = str(body.sted, 160) || 'forsiden';
+  const omfang = str(body.omfang, 300) || 'fakultetet brukeren står på';
   const k = body.kilder ?? {};
   const data = (k.data ?? []).slice(0, 19).map((d, i) => `[D${i + 1}] ${str(d.tekst, 1800)}`);
   const dok = (k.dok ?? []).slice(0, 8).map((d, i) => `[${i + 1}] ${str(d.inst, 80)} – ${str(d.dok, 200)}${d.dato ? ` (${str(d.dato, 20)})` : ''}, side ${Number(d.side) || 0}:\n${str(d.tekst, 1600)}`);
@@ -74,9 +76,9 @@ export const onRequestPost: PagesFunction<KiEnv> = async ({ request, env }) => {
     .map((m) => ({ role: m.rolle === 'assistent' ? 'assistant' : 'user', content: str(m.tekst, m.rolle === 'assistent' ? 1500 : 600) }));
   const idag = new Date().toISOString().slice(0, 10);
   const r = await mistral(env, [
-    { role: 'system', content: instruks(sted, idag) },
+    { role: 'system', content: instruks(sted, omfang, idag) },
     ...historikk,
-    { role: 'user', content: `SPØRSMÅL: ${sporsmal}\n\nKILDER FOR DETTE SPØRSMÅLET:\n${kildetekst}` },
+    { role: 'user', content: `SPØRSMÅL: ${sporsmal}\n(Gjelder: ${omfang})\n\nKILDER FOR DETTE SPØRSMÅLET:\n${kildetekst}` },
   ], 1200);
   if ('feil' in r) return svar({ feil: r.feil }, 502);
   // Tall fra tidligere svar i samtalen regnes også som kjente (de ble kontrollert da de kom)
