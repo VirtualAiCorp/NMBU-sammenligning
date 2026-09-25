@@ -190,7 +190,8 @@ def load_venteliste(path: Path):
             v = (row.get("Measure Values") or "").strip()
             if not k or not code or not v or v == "-1":
                 continue
-            index.setdefault(code, {}).setdefault(k, {})[(row.get("År") or "").strip()] = int(float(v.replace(",", ".")))
+            # Heltall med komma som tusenskille («1,435») i SO-eksporten
+            index.setdefault(code, {}).setdefault(k, {})[(row.get("År") or "").strip()] = int(v.replace(",", "").replace(" ", "").replace("\u00a0", ""))
     return index
 
 

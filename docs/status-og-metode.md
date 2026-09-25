@@ -604,4 +604,4 @@ Disken på maskinen var full, med 7,2 GB i prosjektmappen og 5,6 GB av det i `da
   - Ventelistetallene står i nøkkeltallslinjene.
   - `build-ki-grunnlag.py` lager nå også ferdig sorterte RANGERING-linjer per programgruppe og år, med NMBUs plassering regnet ut: poenggrense ordinær/FV med liste over «alle kvalifiserte», førstevalgssøkere per plass, venteliste, gjennomføring og Studiebarometeret.
   - Instruksen sier at plassering skal hentes derfra. Mistral Large rangerte feil når den sorterte selv.
-
+- **Rettet 25.09:** SO-eksporten skriver heltall med komma som tusenskille («1,435»). Første innlesing tolket kommaet som desimalskille, så ventelister over 999 ble 1. Oppdaget i chat-testen (NHH stod med 2) og rettet i `load_venteliste`. NHH hadde 3 039 på venteliste etter hovedopptaket i 2026.
