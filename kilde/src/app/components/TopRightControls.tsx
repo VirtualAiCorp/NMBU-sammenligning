@@ -55,7 +55,7 @@ function LayoutSwitcher() {
 
 export function TopRightControls() {
   return (
-    <div className="fixed top-3 right-3 z-50 flex items-center gap-2">
+    <div className="fixed top-3 z-50 flex items-center gap-2" style={{ right: 'calc(var(--ki-side, 0px) + 12px)' }}>
       <LayoutSwitcher />
       <ThemeToggle />
     </div>

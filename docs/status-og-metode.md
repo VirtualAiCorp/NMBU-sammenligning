@@ -605,3 +605,18 @@ Disken på maskinen var full, med 7,2 GB i prosjektmappen og 5,6 GB av det i `da
   - `build-ki-grunnlag.py` lager nå også ferdig sorterte RANGERING-linjer per programgruppe og år, med NMBUs plassering regnet ut: poenggrense ordinær/FV med liste over «alle kvalifiserte», førstevalgssøkere per plass, venteliste, gjennomføring og Studiebarometeret.
   - Instruksen sier at plassering skal hentes derfra. Mistral Large rangerte feil når den sorterte selv.
 - **Rettet 25.09:** SO-eksporten skriver heltall med komma som tusenskille («1,435»). Første innlesing tolket kommaet som desimalskille, så ventelister over 999 ble 1. Oppdaget i chat-testen (NHH stod med 2) og rettet i `load_venteliste`. NHH hadde 3 039 på venteliste etter hovedopptaket i 2026.
+
+## 35. KI-chatten: oppsett og «Ta meg til» (25.09.2026)
+
+- **Tre oppsett** med knapper i toppen av chatten; valget og størrelsen huskes i `localStorage` (`ki-chat-modus`, `ki-chat-storrelse`):
+  - Flytende vindu: størrelsen endres ved å dra i venstre kant, øvre kant eller hjørnet oppe til venstre.
+  - Sidepanel: festet til høyre over hele høyden, med justerbar bredde. Siden skyves til side (`body` får `padding-right`, og CSS-variabelen `--ki-side` flytter knappene oppe til høyre), så data og chat vises side om side.
+  - Stort vindu: sentrert, maks 1 200 px bredt.
+  - På mobil er chatten alltid fullskjerm.
+- **«Ta meg til»:** under hvert svar ligger inntil to knapper til den mest relevante siden (`finnMaal` i KiChatPanel.tsx).
+  - Knappene bygges ut fra nøkkeltallslinjene svaret siterer ([D…]; ellers alle kildene). Fakultet og programgruppe står i linjene (felt 5 og 6 i `ki/<fakultet>-data.json`).
+  - Siden velges ut fra ordene i spørsmålet (gjennomføring, Studiebarometeret, studentene, søkergrunnlaget, fagmiljø, økonomi, inntekt, bolig, emner). Standard er opptak med programgruppen valgt.
+  - Siterer svaret styrepapirer [n], kommer en knapp til markedsstatus.
+  - Knappen vises ikke når brukeren allerede står der. Navigering går via `navigate` i App.tsx, og chatten blir stående åpen (unntatt på mobil).
+- Testet lokalt med Playwright og et falskt svar: størrelsesendring, sidepanel som skyver siden 460 px, stort vindu, og at «Ta meg til» åpner opptak med riktig gruppe.
+

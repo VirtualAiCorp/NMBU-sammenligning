@@ -42,6 +42,7 @@ def json_les(navn):
 
 
 def data_linjer(fak):
+    """Én linje per program: [gruppe, program, tekst, flagg, fakultet, gruppe-id] (de to siste brukes til «Ta meg til»)."""
     adm = json_les(f"{fak}AdmissionData.json")
     comp = json_les(f"{fak}CompletionData.json")
     sb_p = ROOT / "data" / fak / "studiebarometer.json"
@@ -97,11 +98,11 @@ def data_linjer(fak):
             if deler:
                 # 4. felt: «n» = NMBUs program, «h» = hovedkonkurrent (valgt som standard i opptaksanalysen), «» = øvrige
                 flagg = "n" if e["id"] in g["nmbuIds"] else ("h" if e["id"] in g["defaultIds"] else "")
-                linjer.append([f"{g['label']} ({NIVAA.get(g['level'], g['level'])})", e["shortName"], f"{navn}. " + ". ".join(deler) + ".", flagg])
-    return linjer + rangeringer(adm, comp, sb)
+                linjer.append([f"{g['label']} ({NIVAA.get(g['level'], g['level'])})", e["shortName"], f"{navn}. " + ". ".join(deler) + ".", flagg, fak, g["id"]])
+    return linjer + rangeringer(adm, comp, sb, fak)
 
 
-def rangeringer(adm, comp, sb):
+def rangeringer(adm, comp, sb, fak):
     """Ferdig sorterte rangeringer per programgruppe (flagg «r»), slik at modellen slipper å sortere tall selv."""
     ut = []
     kull = {p["entryId"]: p for g in (comp or {}).get("groups", []) for p in g["programs"]}
@@ -121,7 +122,7 @@ def rangeringer(adm, comp, sb):
                 tekst += " " + "; ".join(nmbu) + "."
             if apne:
                 tekst += f" Alle kvalifiserte fikk tilbud (ingen poenggrense): {', '.join(navn(e) for e in apne)}."
-            ut.append([gnavn, "rangering", tekst, "r"])
+            ut.append([gnavn, "rangering", tekst, "r", fak, g["id"]])
 
         for y in sorted({y for e in g["entries"] for y in e["years"]}, reverse=True)[:2]:
             d = {e["id"]: e["years"].get(y) or {} for e in g["entries"]}

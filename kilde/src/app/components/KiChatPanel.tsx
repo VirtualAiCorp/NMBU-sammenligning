@@ -1,5 +1,7 @@
-import { useEffect, useRef, useState } from 'react';
-import { Sparkles, X, Send, Loader2, RotateCcw, ChevronDown, ChevronUp, FileText, BarChart2, BookOpen } from 'lucide-react';
+import { useEffect, useRef, useState, type PointerEvent as RPointerEvent } from 'react';
+import { Sparkles, X, Send, Loader2, RotateCcw, ChevronDown, ChevronUp, FileText, BarChart2, BookOpen, PanelRight, PanelRightClose, Maximize2, Minimize2, ArrowRight } from 'lucide-react';
+import { FACULTY_META } from '../data/facultyMeta';
+import type { KiModus, KiNaviger } from './KiChatKnapp';
 import { StyrepapirIndeks, TekstIndeks, type StyrepapirTekst, type Treff } from '../data/styrepapirSok';
 import { loadFacultyBase, ALL_FACULTY_IDS, type FacultyId, type MarketInstitution } from '../data/faculties';
 import { KiSvarTekst } from './KiSvarTekst';
@@ -11,9 +13,53 @@ import { KiSvarTekst } from './KiSvarTekst';
  *   - metodedokumentasjonen (public/ki/metode.json)                                              → [M1..]
  * og sender spørsmålet, de siste meldingene og de beste treffene til /api/chat (Mistral). Samtalen huskes i fanen.
  */
-type DataLinje = [string, string, string, string?]; // gruppe, program, tekst, flagg (n = NMBU, h = hovedkonkurrent, r = ferdig sortert rangering)
+type DataLinje = [string, string, string, string?, string?, string?]; // gruppe, program, tekst, flagg (n = NMBU, h = hovedkonkurrent, r = rangering), fakultet, gruppe-id
 interface Kilder { data: DataLinje[]; dok: Treff[]; sammendrag: string[]; metode: [string, string][] }
-interface Melding { rolle: 'bruker' | 'assistent'; tekst: string; kilder?: Kilder; ubekreftet?: string[]; feil?: boolean; modell?: string }
+interface Melding { rolle: 'bruker' | 'assistent'; tekst: string; kilder?: Kilder; ubekreftet?: string[]; feil?: boolean; modell?: string; sporsmal?: string }
+interface Storrelse { w: number; h: number; sw: number }
+const klem = (v: number, a: number, b: number) => Math.max(a, Math.min(b, v));
+
+/** Sider i fakultetene og ordene i spørsmålet som peker dit (for «Ta meg til»). Opptak er standard for nøkkeltall. */
+const SIDER: [RegExp, string, string][] = [
+  [/gjennomf|frafall|fullf|normert tid|startkull/i, 'gjennomforing', 'Gjennomføring'],
+  [/studiebarometer|tilfreds|helhetsvurdering/i, 'studiebarometer', 'Studiebarometeret'],
+  [/engelsk|utveksling|innreisende|alder|utenlandsk/i, 'studentene', 'Studentene'],
+  [/ungdomskull|19-åring|søkergrunnlag|befolkning|videregående|matematikk|\bR[12]\b|\bS[12]\b/i, 'sokergrunnlag', 'Søkergrunnlaget'],
+  [/fagmiljø|ansatte|publiser|årsverk/i, 'fagmiljo', 'Fagmiljøet'],
+  [/statsbudsjett|regnskap|driftsresultat|skolepenger|statstilskudd/i, 'okonomi', 'Økonomi'],
+  [/inntekt|finansieringssystem|studiepoengproduksjon/i, 'inntekt', 'Inntekt'],
+  [/bolig|husleie|leiepris/i, 'bolig', 'Bolig'],
+  [/emne|karakter|stryk/i, 'emner', 'Emner og karakterer'],
+];
+interface Maal { fak: FacultyId; visning: string; gruppe?: string; tekst: string }
+
+/** Forslag til hvor på nettsiden svaret hører hjemme, ut fra kildene svaret siterer (ellers alle kildene) og spørsmålet. */
+function finnMaal(m: Melding, fakultet: FacultyId | null, visning: string, gjeldendeGruppe?: string): Maal[] {
+  const k = m.kilder;
+  if (!k) return [];
+  const refs = [...m.tekst.matchAll(/\[((?:[SDM]?\d+\s*,\s*)*[SDM]?\d+)\]/gi)].flatMap((x) => x[1].split(/\s*,\s*/));
+  const dRefs = refs.filter((r) => /^D\d+$/i.test(r)).map((r) => k.data[Number(r.slice(1)) - 1]).filter(Boolean);
+  const dokRefs = refs.filter((r) => /^\d+$/.test(r)).length;
+  const linjer = (dRefs.length ? dRefs : k.data).filter((l) => l[4] && l[5]);
+  const ut: Maal[] = [];
+  if (linjer.length) {
+    const teller = new Map<string, { n: number; l: DataLinje }>();
+    linjer.forEach((l) => { const key = `${l[4]}|${l[5]}`; const t = teller.get(key); teller.set(key, { n: (t?.n ?? 0) + 1, l }); });
+    const [, { l }] = [...teller.entries()].sort((a, b) => b[1].n - a[1].n)[0];
+    const fak = l[4] as FacultyId;
+    const side = SIDER.find(([re]) => re.test(m.sporsmal ?? ''));
+    const vis = side ? side[1] : 'analyse';
+    const gruppe = vis === 'analyse' || vis === 'emner' ? l[5] : undefined;
+    const gnavn = l[0].replace(/ \((bachelor|toårig master|femårig master)\)$/, '');
+    if (!(fak === fakultet && vis === visning && (!gruppe || gruppe === gjeldendeGruppe))) {
+      ut.push({ fak, visning: vis, gruppe, tekst: `${FACULTY_META[fak].shortLabel} · ${side ? side[2] : 'Opptak'}${gruppe ? ` · ${gnavn}` : ''}` });
+    }
+  }
+  if (fakultet && (dokRefs > 0 || (!dRefs.length && k.dok.length && !k.data.length)) && visning !== 'markedsstatus') {
+    ut.push({ fak: fakultet, visning: 'markedsstatus', tekst: `${FACULTY_META[fakultet].shortLabel} · Markedsstatus (styrepapirene)` });
+  }
+  return ut.slice(0, 2);
+}
 
 const LAGRING = 'ki-chat-samtale';
 const base = () => import.meta.env.BASE_URL;
@@ -74,7 +120,36 @@ function forslag(visning: string, fak: FacultyId | null): string[] {
   return f[visning] ?? (fak ? [`Hvordan ligger ${nmbu} an mot konkurrentene?`, 'Hvilke konkurrenter planlegger nye studieprogram?', 'Hvordan er tallene på siden hentet?'] : ['Hvilke fakulteter har program som sliter med å fylle opp?', 'Hvordan er tallene på siden hentet?', 'Hva endres i opptaksreglene fra 2028?']);
 }
 
-export function KiChatPanel({ apen, lukk, fakultet, visning, sted }: { apen: boolean; lukk: () => void; fakultet: FacultyId | null; visning: string; sted: string }) {
+export function KiChatPanel({ apen, lukk, fakultet, visning, sted, modus, setModus, naviger, gruppe }: {
+  apen: boolean; lukk: () => void; fakultet: FacultyId | null; visning: string; sted: string; modus: KiModus; setModus: (m: KiModus) => void; naviger: KiNaviger; gruppe?: string;
+}) {
+  const [str, setStr] = useState<Storrelse>(() => { try { return { w: 440, h: 640, sw: 460, ...JSON.parse(localStorage.getItem('ki-chat-storrelse') ?? '{}') }; } catch { return { w: 440, h: 640, sw: 460 }; } });
+  const [liten, setLiten] = useState(() => window.innerWidth < 640);
+  useEffect(() => { const f = () => setLiten(window.innerWidth < 640); window.addEventListener('resize', f); return () => window.removeEventListener('resize', f); }, []);
+  useEffect(() => { try { localStorage.setItem('ki-chat-storrelse', JSON.stringify(str)); } catch { /* ikke lagret */ } }, [str]);
+  // Som sidepanel skyves siden til venstre, så man ser data og chat side om side
+  useEffect(() => {
+    const rot = document.documentElement;
+    const pa = apen && modus === 'side' && !liten;
+    document.body.style.paddingRight = pa ? `${str.sw}px` : '';
+    if (pa) rot.style.setProperty('--ki-side', `${str.sw}px`); else rot.style.removeProperty('--ki-side');
+    return () => { document.body.style.paddingRight = ''; rot.style.removeProperty('--ki-side'); };
+  }, [apen, modus, str.sw, liten]);
+  // Dra i kanten eller hjørnet for å endre størrelse
+  const dra = (e: RPointerEvent, akse: 'w' | 'h' | 'wh') => {
+    e.preventDefault();
+    const x0 = e.clientX, y0 = e.clientY, s0 = { ...str };
+    const flytt = (ev: PointerEvent) => {
+      const dx = x0 - ev.clientX, dy = y0 - ev.clientY;
+      setStr((s) => modus === 'side'
+        ? { ...s, sw: klem(s0.sw + dx, 320, window.innerWidth * 0.7) }
+        : { ...s, w: akse === 'h' ? s.w : klem(s0.w + dx, 340, window.innerWidth - 40), h: akse === 'w' ? s.h : klem(s0.h + dy, 380, window.innerHeight - 100) });
+    };
+    const slipp = () => { window.removeEventListener('pointermove', flytt); window.removeEventListener('pointerup', slipp); document.body.style.userSelect = ''; };
+    document.body.style.userSelect = 'none';
+    window.addEventListener('pointermove', flytt); window.addEventListener('pointerup', slipp);
+  };
+  const gaaTil = (mm: Maal) => { naviger(mm.fak, mm.visning, mm.gruppe); if (liten) lukk(); };
   const [meldinger, setMeldinger] = useState<Melding[]>(() => { try { return JSON.parse(sessionStorage.getItem(LAGRING) ?? '[]'); } catch { return []; } });
   const [tekst, setTekst] = useState('');
   const [venter, setVenter] = useState(false);
@@ -117,7 +192,7 @@ export function KiChatPanel({ apen, lukk, fakultet, visning, sted }: { apen: boo
       });
       const j = await r.json().catch(() => null);
       if (!r.ok || !j?.svar) throw new Error(j?.feil ?? (r.status === 404 ? 'KI-chatten er bare tilgjengelig på den publiserte siden.' : `Feil ${r.status}`));
-      setMeldinger((m) => [...m, { rolle: 'assistent', tekst: j.svar, kilder, ubekreftet: j.ubekreftet, modell: j.modell }]);
+      setMeldinger((m) => [...m, { rolle: 'assistent', tekst: j.svar, kilder, ubekreftet: j.ubekreftet, modell: j.modell, sporsmal: q }]);
     } catch (e) {
       setMeldinger((m) => [...m, { rolle: 'assistent', tekst: e instanceof Error ? e.message : 'Noe gikk galt.', feil: true }]);
     } finally { setVenter(false); }
@@ -125,9 +200,23 @@ export function KiChatPanel({ apen, lukk, fakultet, visning, sted }: { apen: boo
 
   if (!apen) return null;
   return (
-    <div className="fixed z-[80] flex flex-col overflow-hidden inset-0 sm:inset-auto sm:right-5 sm:bottom-[84px] sm:w-[420px] sm:h-[min(640px,calc(100vh-110px))] sm:rounded-2xl"
-      style={{ backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)', boxShadow: '0 12px 40px rgba(0,0,0,0.18)' }}
+    <div className={`fixed z-[80] flex flex-col overflow-hidden ${liten || modus === 'side' ? '' : 'rounded-2xl'}`}
+      style={{
+        backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)', boxShadow: '0 12px 40px rgba(0,0,0,0.18)',
+        ...(liten ? { inset: 0 }
+          : modus === 'side' ? { top: 0, right: 0, bottom: 0, width: str.sw, borderTop: 'none', borderBottom: 'none', borderRight: 'none' }
+          : modus === 'stor' ? { top: '4vh', bottom: '4vh', left: 'max(20px, calc(50vw - 600px))', right: 'max(20px, calc(50vw - 600px))' }
+          : { right: 20, bottom: 84, width: str.w, height: str.h }),
+      }}
       role="dialog" aria-label="KI-chat">
+      {/* Håndtak for å endre størrelse (ikke på mobil eller i stort vindu) */}
+      {!liten && modus !== 'stor' && (
+        <>
+          <div onPointerDown={(e) => dra(e, 'w')} title="Dra for å endre bredden" className="absolute left-0 top-0 bottom-0 z-10" style={{ width: 6, cursor: 'ew-resize' }} />
+          {modus === 'flytende' && <div onPointerDown={(e) => dra(e, 'h')} className="absolute left-0 right-0 top-0 z-10" style={{ height: 6, cursor: 'ns-resize' }} />}
+          {modus === 'flytende' && <div onPointerDown={(e) => dra(e, 'wh')} title="Dra for å endre størrelsen" className="absolute left-0 top-0 z-20" style={{ width: 14, height: 14, cursor: 'nwse-resize' }} />}
+        </>
+      )}
       {/* Topp */}
       <div className="flex items-center gap-2 px-4 py-3" style={{ backgroundColor: 'var(--nmbu-green-dark)', color: '#fff' }}>
         <Sparkles className="w-4 h-4 shrink-0" />
@@ -135,6 +224,16 @@ export function KiChatPanel({ apen, lukk, fakultet, visning, sted }: { apen: boo
           <div className="text-sm font-semibold">Spør KI om dataene</div>
           <div className="text-xs truncate" style={{ opacity: 0.75 }}>Du står på: {sted}</div>
         </div>
+        {!liten && (
+          <>
+            <button onClick={() => setModus(modus === 'side' ? 'flytende' : 'side')} title={modus === 'side' ? 'Løsne til flytende vindu' : 'Fest som sidepanel (se siden og chatten samtidig)'} className="p-1.5 rounded-lg" style={{ backgroundColor: modus === 'side' ? 'rgba(255,255,255,0.3)' : 'rgba(255,255,255,0.12)' }}>
+              {modus === 'side' ? <PanelRightClose className="w-4 h-4" /> : <PanelRight className="w-4 h-4" />}
+            </button>
+            <button onClick={() => setModus(modus === 'stor' ? 'flytende' : 'stor')} title={modus === 'stor' ? 'Mindre vindu' : 'Stort vindu'} className="p-1.5 rounded-lg" style={{ backgroundColor: modus === 'stor' ? 'rgba(255,255,255,0.3)' : 'rgba(255,255,255,0.12)' }}>
+              {modus === 'stor' ? <Minimize2 className="w-4 h-4" /> : <Maximize2 className="w-4 h-4" />}
+            </button>
+          </>
+        )}
         {meldinger.length > 0 && (
           <button onClick={() => setMeldinger([])} title="Ny samtale" className="p-1.5 rounded-lg" style={{ backgroundColor: 'rgba(255,255,255,0.12)' }}><RotateCcw className="w-4 h-4" /></button>
         )}
@@ -155,7 +254,7 @@ export function KiChatPanel({ apen, lukk, fakultet, visning, sted }: { apen: boo
         )}
         {meldinger.map((m, i) => (m.rolle === 'bruker'
           ? <div key={i} className="ml-8 rounded-2xl rounded-br-sm px-3 py-2 text-sm" style={{ backgroundColor: 'var(--nmbu-green-dark)', color: '#fff' }}>{m.tekst}</div>
-          : <Svar key={i} m={m} />))}
+          : <Svar key={i} m={m} maal={finnMaal(m, fakultet, visning, gruppe)} gaaTil={gaaTil} />))}
         {venter && <div className="flex items-center gap-2 text-xs" style={{ color: 'var(--nmbu-neutral-2)' }}><Loader2 className="w-3.5 h-3.5 animate-spin" /> Søker i kildene og skriver svar …</div>}
         <div ref={bunn} />
       </div>
@@ -175,7 +274,7 @@ export function KiChatPanel({ apen, lukk, fakultet, visning, sted }: { apen: boo
   );
 }
 
-function Svar({ m }: { m: Melding }) {
+function Svar({ m, maal, gaaTil }: { m: Melding; maal: Maal[]; gaaTil: (mm: Maal) => void }) {
   const [visKilder, setVisKilder] = useState(false);
   if (m.feil) return <div className="mr-6 rounded-2xl px-3 py-2 text-xs" style={{ backgroundColor: '#FEF2F2', color: '#991B1B', border: '1px solid #FECACA' }}>{m.tekst}</div>;
   const k = m.kilder;
@@ -194,6 +293,16 @@ function Svar({ m }: { m: Melding }) {
       {m.ubekreftet && m.ubekreftet.length > 0 && (
         <div className="text-xs rounded px-2 py-1 mt-1" style={{ backgroundColor: '#FFFBEB', border: '1px solid #FCD34D', color: '#78350F' }}>
           Kontroll: disse tallene står ikke i kildene og kan være beregnet eller feil: <b>{m.ubekreftet.join(', ')}</b>.
+        </div>
+      )}
+      {maal.length > 0 && (
+        <div className="flex flex-wrap gap-1.5 mt-2">
+          {maal.map((mm) => (
+            <button key={mm.tekst} onClick={() => gaaTil(mm)} className="flex items-center gap-1 px-2.5 py-1 rounded-full text-xs"
+              style={{ backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)', fontWeight: 600 }} title="Åpne siden med tallene bak svaret">
+              Ta meg til: {mm.tekst} <ArrowRight className="w-3 h-3" />
+            </button>
+          ))}
         </div>
       )}
       {k && antall > 0 && (
