@@ -3,7 +3,8 @@ import { MessageCircle, X } from 'lucide-react';
 import type { FacultyId } from '../data/facultyMeta';
 
 export type KiModus = 'flytende' | 'side' | 'stor';
-export type KiNaviger = (fakultet: FacultyId, visning: string, gruppe?: string) => void;
+/** fakultet er et fakultet eller en side for hele NMBU («nmbu-fagmiljo», «nmbu-sokergrunnlag») */
+export type KiNaviger = (fakultet: string, visning: string, gruppe?: string) => void;
 const lesModus = (): KiModus => { try { const m = localStorage.getItem('ki-chat-modus'); return m === 'side' || m === 'stor' ? m : 'flytende'; } catch { return 'flytende'; } };
 
 /**

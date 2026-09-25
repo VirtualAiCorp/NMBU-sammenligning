@@ -24,6 +24,12 @@ const instruks = (sted: string, omfang: string, idag: string) => `Du er KI-assis
 
 ## Kildene du får (valgt ut av et søk for hvert spørsmål)
 - NØKKELTALL [D1], [D2], … : én linje per studieprogram (NMBUs program og hovedkonkurrentene først) med tall fra Samordna opptak (søkere, førstevalgssøkere, studieplasser, kvalifiserte, tilbud, poenggrenser i hovedopptak og etter suppleringsopptak; «alle kvalifiserte» betyr at alle kvalifiserte fikk tilbud), DBH/HK-dir (snitt opptakspoeng for de som møtte, gjennomføring per startkull, registrerte studenter, andel emner på engelsk, innreisende) og Studiebarometeret. Merket «(NMBU)» er NMBUs eget program. Linjer som begynner med «RANGERING» er ferdig sorterte lister per programgruppe og år, med NMBUs plassering. Linjer som begynner med «OVERSIKT» er NMBUs egne program innen et fakultet (eller hele NMBU) sortert etter ett mål; bruk dem når spørsmålet gjelder et helt fakultet, for eksempel «hvilket av KBMs program har høyest poenggrense». Ventelistetall er søkere på venteliste etter hovedopptaket og suppleringsopptaket.
+  Linjer merket med modul først:
+  - «STUDENTENE»: registrerte studenter på programmet om høsten (DBH): alder i fire grupper, utenlandske statsborgere, utveksling ut. Gjelder studentene, ikke søkerne.
+  - «STUDIEBAROMETERET»: alle indeksene (skår av 5), antall svar og svarprosent, snittet for sammenligningsgruppen og helhetsvurdering over tid. Få svar gir usikre tall; si fra når det står en merknad om det.
+  - «EMNER OG KARAKTERER»: karakterindeks (kandidatvektet snitt over emnene programmets studenter tok, A=5 … F=0), strykprosent (minimum, DBH skjermer små grupper) og de største emnene. Linjer med «emnetype» sammenligner tilsvarende emner (for eksempel matematikk) hos NMBU og konkurrentene.
+  - «FAGMILJØET»: fakultet mot fakultet eller institusjon mot institusjon (DBH): årsverk, studentårsverk per faglig årsverk (lavere = færre studenter per faglig ansatt), publiseringspoeng per faglig årsverk, andel nivå 2, førstestillinger og kvinneandel. Gjelder hele enheten, ikke ett program.
+  - «SØKERGRUNNLAGET»: ungdomskullene per fylke fra SSB (faktiske og framskrevne, hovedalternativet) og videregående per fylke fra Udir (matematikk R1/R2/S1/S2 med elevtall og snitt, gjennomføring, elever i Vg3 studieforberedende). Framskrivinger er SSBs, ikke dine.
 - DOKUMENTUTDRAG [1], [2], … : ordrett tekst fra offentlige styrepapirer, årsrapporter og budsjett hos konkurrentene, med institusjon, dokument, dato og side. Primærkilder for hva konkurrentene planlegger og vedtar.
 - SAMMENDRAG [S1], … : analyseteamets sammendrag per institusjon av de samme dokumentene. Til oversikt; utdragene går foran ved avvik.
 - METODE [M1], … : hvordan tallene på nettsiden er hentet og regnet ut, og hvilke forbehold som gjelder.
@@ -62,7 +68,7 @@ export const onRequestPost: PagesFunction<KiEnv> = async ({ request, env }) => {
   const sted = str(body.sted, 160) || 'forsiden';
   const omfang = str(body.omfang, 300) || 'fakultetet brukeren står på';
   const k = body.kilder ?? {};
-  const data = (k.data ?? []).slice(0, 19).map((d, i) => `[D${i + 1}] ${str(d.tekst, 1800)}`);
+  const data = (k.data ?? []).slice(0, 19).map((d, i) => `[D${i + 1}] ${str(d.tekst, 2400)}`);
   const dok = (k.dok ?? []).slice(0, 8).map((d, i) => `[${i + 1}] ${str(d.inst, 80)} – ${str(d.dok, 200)}${d.dato ? ` (${str(d.dato, 20)})` : ''}, side ${Number(d.side) || 0}:\n${str(d.tekst, 1600)}`);
   const sam = (k.sammendrag ?? []).slice(0, 5).map((s, i) => `[S${i + 1}] ${str(s.inst, 80)}${s.enhet ? ` (${str(s.enhet, 160)})` : ''}:\n${`${s.oppsummering ? str(s.oppsummering, 800) + '\n' : ''}${(Array.isArray(s.punkter) ? s.punkter : []).slice(0, 8).map((p) => `- ${str(p, 400)}`).join('\n')}`.slice(0, 2000)}`);
   const met = (k.metode ?? []).slice(0, 4).map((m, i) => `[M${i + 1}] ${str(m.tittel, 120)}:\n${str(m.tekst, 1600)}`);

@@ -620,3 +620,13 @@ Disken på maskinen var full, med 7,2 GB i prosjektmappen og 5,6 GB av det i `da
   - Knappen vises ikke når brukeren allerede står der. Navigering går via `navigate` i App.tsx, og chatten blir stående åpen (unntatt på mobil).
 - Testet lokalt med Playwright og et falskt svar: størrelsesendring, sidepanel som skyver siden 460 px, stort vindu, og at «Ta meg til» åpner opptak med riktig gruppe.
 
+**Hva chatten vet (25.09.2026, `scripts/build-ki-grunnlag.py`):**
+- **Omfang:** chatten finner fakultetet eller programmet spørsmålet gjelder (fakultetsnavn, NMBU-programnavn, «hele NMBU»), også når brukeren står et annet sted. Følgespørsmål arver omfanget. Uten treff brukes fakultetet brukeren står på, på forsiden hele NMBU.
+- **Per program** (`ki/<fakultet>-data.json`): opptak (tre siste år), gjennomføring, og egne linjer merket STUDENTENE (alder, utenlandske, utveksling ut), STUDIEBAROMETERET (alle indekser, fagfeltets snitt, helhetsvurdering over tid) og EMNER OG KARAKTERER (karakterindeks, stryk, største emner). Emnetype-linjer sammenligner tilsvarende emner hos NMBU og konkurrentene.
+- **RANGERING** per programgruppe og **OVERSIKT** over NMBUs program per fakultet og for hele NMBU (`ki/nmbu-data.json`), inkludert karakterindeks og andel studenter 25 år eller eldre.
+- **FAGMILJØET:** fakultet mot fakultet i fakultetsfilene, institusjonene og NMBUs fakulteter i `ki/nmbu-data.json`.
+- **SØKERGRUNNLAGET** (`ki/felles-data.json`, lastes alltid): ungdomskull per fylke (SSB, faktiske og framskrevne) og videregående per fylke (Udir).
+- **Utvalg:** ordene i spørsmålet avgjør modulen (samme liste som for «Ta meg til»), og bare linjene for den modulen sendes for programgruppen. Rangeringer og oversikter velges etter relevans innen sitt eget utvalg.
+- **Ikke med:** økonomi, inntekt, bolig, pris og campus, nye opptaksregler (bare metodeteksten) og den interne opptakssimulatoren.
+- **Ordstamming** går i to runder, slik at «karakterindeksen» og «karakterindeks» treffer hverandre (gjelder også søket i styrepapirene).
+

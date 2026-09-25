@@ -13,9 +13,13 @@ const STOPP = new Set(('og i på til av for som er det at en et med den de om ik
   + 'jeg du vi dere han hun seg oss meg deg sier si sa mye mer mest noe noen alle hver hele the of and to in').split(' '));
 const ENDELSER = ['ene', 'ane', 'ende', 'ert', 'ers', 'ens', 'ets', 'het', 'er', 'en', 'et', 'e', 'a', 's'];
 
-export function stamme(ord: string): string {
+function kutt(ord: string): string {
   for (const e of ENDELSER) if (ord.length - e.length >= 4 && ord.endsWith(e)) return ord.slice(0, -e.length);
   return ord;
+}
+/** To runder, så bøyde former møtes: «karakterindeksen» → «karakterindeks» → «karakterindek», som «karakterindeks». */
+export function stamme(ord: string): string {
+  return kutt(kutt(ord));
 }
 export function tokens(t: string): string[] {
   return t.toLowerCase().replace(/[^a-z0-9æøåäöéü]+/g, ' ').split(' ').filter((w) => w.length > 1 && !STOPP.has(w)).map(stamme);

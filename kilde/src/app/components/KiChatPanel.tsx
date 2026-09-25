@@ -21,22 +21,32 @@ interface Melding { rolle: 'bruker' | 'assistent'; tekst: string; kilder?: Kilde
 interface Storrelse { w: number; h: number; sw: number }
 const klem = (v: number, a: number, b: number) => Math.max(a, Math.min(b, v));
 
-/** Sider i fakultetene og ordene i spørsmålet som peker dit (for «Ta meg til»). Opptak er standard for nøkkeltall. */
-const SIDER: [RegExp, string, string][] = [
+/**
+ * Sider i fakultetene og ordene i spørsmålet som peker dit (for «Ta meg til»), og merket på nøkkeltallslinjene for
+ * den modulen (build-ki-grunnlag.py). Opptak er standard for nøkkeltall. Rekkefølgen avgjør ved flere treff.
+ */
+const SIDER: [RegExp, string, string, string?][] = [
   [/gjennomf|frafall|fullf|normert tid|startkull/i, 'gjennomforing', 'Gjennomføring'],
-  [/studiebarometer|tilfreds|helhetsvurdering/i, 'studiebarometer', 'Studiebarometeret'],
-  [/engelsk|utveksling|innreisende|alder|utenlandsk/i, 'studentene', 'Studentene'],
-  [/ungdomskull|19-åring|søkergrunnlag|befolkning|videregående|matematikk|\bR[12]\b|\bS[12]\b/i, 'sokergrunnlag', 'Søkergrunnlaget'],
-  [/fagmiljø|ansatte|publiser|årsverk/i, 'fagmiljo', 'Fagmiljøet'],
+  [/studiebarometer|tilfreds|undervisningen\b|undervisningskvalitet|tilbakemeld|veiledning|læringsmiljø|yrkesrelevans|engasjement|vurderingsform|helhetsvurdering/i, 'studiebarometer', 'Studiebarometeret', 'STUDIEBAROMETERET'],
+  [/emne|karakter|stryk|eksamen/i, 'emner', 'Emner og karakterer', 'EMNER OG KARAKTERER'],
+  [/ungdomskull|\d+-åring|søkergrunnlag|befolkning|framskriv|videregående|\bvgs\b|matematikk|\bR[12]\b|\bS[12]\b|vg3|årskull/i, 'sokergrunnlag', 'Søkergrunnlaget', 'SØKERGRUNNLAGET'],
+  [/fagmiljø|ansatte|tilsatte|årsverk|publiser|førstestilling|stipendiat|nivå 2/i, 'fagmiljo', 'Fagmiljøet', 'FAGMILJØET'],
+  [/alder|(over|under) \d+ år|\d+ år (eller )?(eldre|yngre)|eldre enn|yngre enn|utenlandsk|statsborger|utveksling|registrerte studenter|innreisende|engelsk/i, 'studentene', 'Studentene', 'STUDENTENE'],
   [/statsbudsjett|regnskap|driftsresultat|skolepenger|statstilskudd/i, 'okonomi', 'Økonomi'],
   [/inntekt|finansieringssystem|studiepoengproduksjon/i, 'inntekt', 'Inntekt'],
   [/bolig|husleie|leiepris/i, 'bolig', 'Bolig'],
-  [/emne|karakter|stryk/i, 'emner', 'Emner og karakterer'],
 ];
-interface Maal { fak: FacultyId; visning: string; gruppe?: string; tekst: string }
+const finnSide = (q: string) => SIDER.find(([re]) => re.test(q));
+/** Modulen en nøkkeltallslinje hører til (merket først i teksten), ellers opptak (null). */
+const modulAv = (l: DataLinje) => /^(?:RANGERING )?(STUDENTENE|STUDIEBAROMETERET|EMNER OG KARAKTERER|FAGMILJØET|SØKERGRUNNLAGET)\b/.exec(l[2])?.[1] ?? null;
+/** Moduler som ikke hører til et program, men til fakultet/institusjon (fagmiljøet) eller fylke (søkergrunnlaget). */
+const FELLES_MODUL = new Set(['FAGMILJØET', 'SØKERGRUNNLAGET']);
+/** Sidene for hele NMBU (App: Faculty-verdiene «nmbu-…»). */
+const NMBU_SIDE: Record<string, string> = { 'nmbu-fagmiljo': 'Fagmiljøet', 'nmbu-sokergrunnlag': 'Søkergrunnlaget' };
+interface Maal { fak: string; visning: string; gruppe?: string; tekst: string }
 
 /** Programgrupper i kildene: vanlige linjer gir én, oversiktslinjene alle programmene de lister. */
-const grupperI = (linjer: DataLinje[]) => linjer.flatMap((l) => (l[3] === 'o' && l[6] ? l[6] : l[4] && l[5] ? [[l[4], l[5], l[0]] as [string, string, string]] : []));
+const grupperI = (linjer: DataLinje[]) => linjer.flatMap((l) => (l[3] === 'o' && l[6] ? l[6] : l[4] ? [[l[4], l[5] ?? '', l[0]] as [string, string, string]] : []));
 const utenNivaa = (navn: string) => navn.replace(/\s*\(.*$/, '').trim();
 /** «Kjemi (bachelor, KBM)» → «Kjemi (bachelor)», «Økonomi og administrasjon (master) (HH)» → «… (master)» */
 const utenFak = (navn: string) => navn.replace(/,\s*[A-ZÆØÅ]+\)$/, ')').replace(/\s*\([A-ZÆØÅ]+\)$/, '');
@@ -71,12 +81,20 @@ function finnMaal(m: Melding, fakultet: FacultyId | null, visning: string, gjeld
     const unike = [...new Map(kand.map((g) => [`${g[0]}|${g[1]}`, g])).values()];
     unike.sort((a, b) => pos(a[2]) - pos(b[2]) || (teller.get(`${b[0]}|${b[1]}`)! - teller.get(`${a[0]}|${a[1]}`)!));
     const [fk, gid, navn] = unike[0];
-    const fak = fk as FacultyId;
-    const side = SIDER.find(([re]) => re.test(m.sporsmal ?? ''));
-    const vis = side ? side[1] : 'analyse';
-    const gruppe = vis === 'analyse' || vis === 'emner' ? gid : undefined;
-    if (FACULTY_META[fak] && !(fak === fakultet && vis === visning && (!gruppe || gruppe === gjeldendeGruppe))) {
-      ut.push({ fak, visning: vis, gruppe, tekst: `${FACULTY_META[fak].shortLabel} · ${side ? side[2] : 'Opptak'}${gruppe ? ` · ${utenFak(navn)}` : ''}` });
+    const side = finnSide(m.sporsmal ?? '');
+    if (NMBU_SIDE[fk]) {
+      // Linjer fra sidene for hele NMBU: står brukeren på et fakultet, vis fakultetets utgave av siden
+      const vis = fk === 'nmbu-sokergrunnlag' ? 'sokergrunnlag' : 'fagmiljo';
+      const fakMaal = fk === 'nmbu-sokergrunnlag' && fakultet ? fakultet : null;
+      if (fakMaal && visning !== vis) ut.push({ fak: fakMaal, visning: vis, tekst: `${FACULTY_META[fakMaal].shortLabel} · ${NMBU_SIDE[fk]}` });
+      else if (!fakMaal) ut.push({ fak: fk, visning: 'landing', tekst: `Hele NMBU · ${NMBU_SIDE[fk]}` });
+    } else if (FACULTY_META[fk as FacultyId]) {
+      const fak = fk as FacultyId;
+      const vis = side ? side[1] : 'analyse';
+      const gruppe = (vis === 'analyse' || vis === 'emner') && gid ? gid : undefined;
+      if (!(fak === fakultet && vis === visning && (!gruppe || gruppe === gjeldendeGruppe))) {
+        ut.push({ fak, visning: vis, gruppe, tekst: `${FACULTY_META[fak].shortLabel} · ${side ? side[2] : 'Opptak'}${gruppe ? ` · ${utenFak(navn)}` : ''}` });
+      }
     }
   }
   const dokFak = m.omfang?.length === 1 ? m.omfang[0] : fakultet;
@@ -133,7 +151,7 @@ const dataFil = (f: string) => engang(`fil:${f}`, () => hentJson<{ linjer: DataL
 /** Nøkkeltallene for fakultetene i omfanget; flere fakulteter (eller hele NMBU) får også oversikten over hele NMBU. */
 const dataIndeks = (fak: FacultyId[] | 'alle') => {
   const liste = fak === 'alle' ? [...ALL_FACULTY_IDS] : fak;
-  const filer: string[] = [...liste, ...(liste.length > 1 ? ['nmbu'] : [])];
+  const filer: string[] = [...liste, ...(liste.length > 1 ? ['nmbu'] : []), 'felles'];
   return engang(`data:${filer.join(',')}`, async () => {
     const d = await Promise.all(filer.map(dataFil));
     return new TekstIndeks<DataLinje>(d.flatMap((f) => f?.linjer ?? []), (l) => l[2]);
@@ -154,28 +172,45 @@ const dokIndeks = (fak: FacultyId) => engang(`dok:${fak}`, async () => {
  * etterpå hvis det er plass. Uten tydelig gruppe brukes de beste treffene som de er. Spørsmål om et helt fakultet
  * (eller hele NMBU) får oversiktslinjene over NMBUs egne program først.
  */
+/** De n mest relevante linjene for spørsmålet innen et utvalg; treffer ingen, de første n. */
+function relevante(linjer: DataLinje[], q: string, n: number): DataLinje[] {
+  if (linjer.length <= n) return linjer;
+  const t = new TekstIndeks<DataLinje>(linjer, (l) => l[2]).sok(q, n);
+  return [...t, ...linjer.filter((l) => !t.includes(l))].slice(0, n);
+}
+
 function velgData(di: TekstIndeks<DataLinje>, q: string, sokeTekst: string, omfang: Omfang | null, heleNmbu: boolean): DataLinje[] {
-  const treff = di.sok(q, 30).concat(di.sok(sokeTekst, 15)).filter((l, i, a) => a.indexOf(l) === i);
+  const treff = di.sok(q, 40).concat(di.sok(sokeTekst, 20)).filter((l, i, a) => a.indexOf(l) === i);
   const rang = (l: DataLinje) => { const i = treff.indexOf(l); return i < 0 ? 999 : i; };
+  const modul = finnSide(q)?.[3] ?? null;
+  // Fagmiljøet og søkergrunnlaget: linjene for modulen, mest relevante først, og så de beste andre treffene
+  if (modul && FELLES_MODUL.has(modul)) {
+    const valgt = di.elementer.filter((l) => modulAv(l) === modul).sort((a, b) => rang(a) - rang(b)).slice(0, 14);
+    return [...valgt, ...treff.filter((l) => !valgt.includes(l)).slice(0, 19 - valgt.length)];
+  }
+  // Programlinjer for modulen spørsmålet gjelder (uten modul: opptakslinjene); rangeringer og oversikter alltid
+  const passer = (l: DataLinje) => l[3] === 'r' || l[3] === 'o' || modulAv(l) === modul;
   // Hele NMBU: oversikten på tvers av fakultetene; ellers oversikten per fakultet
   const oversikt = di.elementer.filter((l) => l[3] === 'o' && (l[0] === 'Oversikt hele NMBU') === heleNmbu);
   const fokusOversikt = oversikt.length > 0 && !omfang?.grupper.length && (OVERSIKTSSPORSMAL.test(q) || !!omfang?.navngitt);
-  const forst = fokusOversikt ? [...oversikt].sort((a, b) => rang(a) - rang(b)).slice(0, 6) : [];
+  // Egen rangering blant oversiktslinjene: i hele indeksen drukner de i programlinjer med de samme ordene
+  const forst = fokusOversikt ? relevante(oversikt, q, 6) : [];
   // Er programmet nevnt i spørsmålet, er det gruppen
   const nevnt = omfang?.grupper.length ? new Set(omfang.grupper.map((g) => `${g[0]}|${g[1]}`)) : null;
-  const topp = treff.filter((l) => l[3] !== 'o').slice(0, 8);
+  const topp = treff.filter((l) => l[3] !== 'o' && !FELLES_MODUL.has(modulAv(l) ?? '')).slice(0, 8);
   const teller = new Map<string, number>();
   topp.forEach((l) => teller.set(l[0], (teller.get(l[0]) ?? 0) + 1));
   let [gruppe, antall] = [...teller.entries()].sort((a, b) => b[1] - a[1])[0] ?? ['', 0];
-  if (nevnt) { const g = di.elementer.find((l) => l[3] !== 'o' && nevnt.has(`${l[4]}|${l[5]}`)); if (g) { gruppe = g[0]; antall = 99; } }
+  if (nevnt) { const g = di.elementer.find((l) => l[3] !== 'o' && l[5] && nevnt.has(`${l[4]}|${l[5]}`)); if (g) { gruppe = g[0]; antall = 99; } }
   const resten = treff.filter((l) => !forst.includes(l));
   if (!gruppe || antall < 3) return [...forst, ...resten].slice(0, 12);
-  const iGruppe = di.elementer.filter((l) => l[0] === gruppe && l[3] !== 'o');
+  const iGruppe = di.elementer.filter((l) => l[0] === gruppe && l[3] !== 'o' && passer(l));
   const valgt = [
     ...forst,
-    ...iGruppe.filter((l) => l[3] === 'r').sort((a, b) => rang(a) - rang(b)).slice(0, 4),
+    ...relevante(iGruppe.filter((l) => l[3] === 'r'), q, 4),
     ...iGruppe.filter((l) => l[3] === 'n'),
     ...iGruppe.filter((l) => l[3] === 'h').sort((a, b) => rang(a) - rang(b)),
+    ...iGruppe.filter((l) => l[3] === 'e').sort((a, b) => rang(a) - rang(b)).slice(0, 5),
     ...iGruppe.filter((l) => !l[3]).sort((a, b) => rang(a) - rang(b)).slice(0, 6),
   ].slice(0, 18);
   return [...valgt, ...resten.filter((l) => l[0] !== gruppe).slice(0, Math.max(1, 19 - valgt.length))];

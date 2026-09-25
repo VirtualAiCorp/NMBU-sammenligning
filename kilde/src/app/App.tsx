@@ -604,7 +604,7 @@ export default function App() {
     : isFacultyIdAny(faculty) ? `${FACULTY_META[faculty].label} · ${facultyView === 'landing' ? 'oversikt' : FACULTY_MODULE_META[facultyView].title}`
     : faculty === 'hh-figma' ? 'Handelshøyskolen · opprinnelig HH-analyse'
     : isNmbuPage(faculty) ? `Hele NMBU · ${NMBU_PAGE_META[faculty].title}` : faculty === 'nmbu-emner' ? 'Hele NMBU · Alle emner' : 'Hele NMBU';
-  const chat = <KiChatKnapp fakultet={chatFakultet} visning={facultyView} sted={chatSted} naviger={(f, v, g) => navigate(f, v as FacultyView, g)} gruppe={facultyView === 'analyse' ? facultyGroup : facultyView === 'emner' ? facultyCourseGroup : undefined} />;
+  const chat = <KiChatKnapp fakultet={chatFakultet} visning={facultyView} sted={chatSted} naviger={(f, v, g) => navigate(f as Faculty, v as FacultyView, g)} gruppe={facultyView === 'analyse' ? facultyGroup : facultyView === 'emner' ? facultyCourseGroup : undefined} />;
 
   if (layout === 'dashboard') {
     return <><DashboardShell faculty={faculty} view={facultyView} onNavigate={navigate}><Suspense fallback={<Laster />}>{renderShellContent()}</Suspense></DashboardShell>{chat}</>;
