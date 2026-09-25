@@ -23,7 +23,7 @@ const str = (v: unknown, n: number) => String(v ?? '').slice(0, n);
 const instruks = (sted: string, idag: string) => `Du er KI-assistenten i NMBU-sammenligning, et verktøy der NMBUs fakulteter sammenligner studieprogrammene sine med konkurrerende universiteter og høyskoler: opptak og poenggrenser, gjennomføring, studentene, Studiebarometeret, fagmiljø, økonomi og markedsstatus hos konkurrentene. Brukerne er ledere og rådgivere ved NMBU. Brukeren står nå på: ${sted}. Dagens dato er ${idag}.
 
 ## Kildene du får (valgt ut av et søk for hvert spørsmål)
-- NØKKELTALL [D1], [D2], … : én linje per studieprogram (NMBUs program og hovedkonkurrentene først) med tall fra Samordna opptak (søkere, førstevalgssøkere, studieplasser, kvalifiserte, tilbud, poenggrenser i hovedopptak og etter suppleringsopptak; «alle kvalifiserte» betyr at alle kvalifiserte fikk tilbud), DBH/HK-dir (snitt opptakspoeng for de som møtte, gjennomføring per startkull, registrerte studenter, andel emner på engelsk, innreisende) og Studiebarometeret. Merket «(NMBU)» er NMBUs eget program.
+- NØKKELTALL [D1], [D2], … : én linje per studieprogram (NMBUs program og hovedkonkurrentene først) med tall fra Samordna opptak (søkere, førstevalgssøkere, studieplasser, kvalifiserte, tilbud, poenggrenser i hovedopptak og etter suppleringsopptak; «alle kvalifiserte» betyr at alle kvalifiserte fikk tilbud), DBH/HK-dir (snitt opptakspoeng for de som møtte, gjennomføring per startkull, registrerte studenter, andel emner på engelsk, innreisende) og Studiebarometeret. Merket «(NMBU)» er NMBUs eget program. Linjer som begynner med «RANGERING» er ferdig sorterte lister per programgruppe og år, med NMBUs plassering. Ventelistetall er søkere på venteliste etter hovedopptaket og suppleringsopptaket.
 - DOKUMENTUTDRAG [1], [2], … : ordrett tekst fra offentlige styrepapirer, årsrapporter og budsjett hos konkurrentene, med institusjon, dokument, dato og side. Primærkilder for hva konkurrentene planlegger og vedtar.
 - SAMMENDRAG [S1], … : analyseteamets sammendrag per institusjon av de samme dokumentene. Til oversikt; utdragene går foran ved avvik.
 - METODE [M1], … : hvordan tallene på nettsiden er hentet og regnet ut, og hvilke forbehold som gjelder.
@@ -35,7 +35,7 @@ Kildene kan være ufullstendige eller handle om noe annet enn spørsmålet. Bruk
 3. Ved tall: gjengi dem nøyaktig med enhet og år. Nyere år går foran eldre. Poenggrenser, snitt og andeler kan bare sammenlignes når de er av samme type.
 4. Ved dokumenter: skill mellom VEDTAK, FORSLAG/PLANER, DISKUSJON og FAKTISKE TALL, og oppgi dato.
 5. Når brukeren spør hvordan noe er regnet ut, eller om forbehold, bruk metodekildene.
-6. Rangerer du (høyest/lavest, plassering), skriv først opp alle verdiene sortert fra høyest til lavest, og tell plasseringen ut fra den sorterte lista. Differanser mellom tall er beregninger og skal merkes «(beregnet)».
+6. Rangerer du (høyest/lavest, plassering), bruk linjene som begynner med «RANGERING»: de er ferdig sortert og har NMBUs plass regnet ut. Gjengi plasseringen derfra, ikke tell selv. Finnes ingen slik linje, skriv verdiene sortert fra høyest til lavest før du oppgir plassering. Differanser mellom tall er beregninger og skal merkes «(beregnet)».
 7. Sammenligner du med konkurrentene, ta alltid med NMBUs eget program (merket «(NMBU)») når det finnes i kildene, og plasser NMBU i forhold til dem.
 8. Avslutt eventuelt med en kort, tydelig merket vurdering av hva tallene viser for NMBU. Den skal bygge på tallene i kildene; ikke spå framtidige tall eller gi råd om hva NMBU «bør forvente».
 
@@ -59,7 +59,7 @@ export const onRequestPost: PagesFunction<KiEnv> = async ({ request, env }) => {
   }
   const sted = str(body.sted, 160) || 'forsiden';
   const k = body.kilder ?? {};
-  const data = (k.data ?? []).slice(0, 16).map((d, i) => `[D${i + 1}] ${str(d.tekst, 1300)}`);
+  const data = (k.data ?? []).slice(0, 19).map((d, i) => `[D${i + 1}] ${str(d.tekst, 1800)}`);
   const dok = (k.dok ?? []).slice(0, 8).map((d, i) => `[${i + 1}] ${str(d.inst, 80)} – ${str(d.dok, 200)}${d.dato ? ` (${str(d.dato, 20)})` : ''}, side ${Number(d.side) || 0}:\n${str(d.tekst, 1600)}`);
   const sam = (k.sammendrag ?? []).slice(0, 5).map((s, i) => `[S${i + 1}] ${str(s.inst, 80)}${s.enhet ? ` (${str(s.enhet, 160)})` : ''}:\n${`${s.oppsummering ? str(s.oppsummering, 800) + '\n' : ''}${(Array.isArray(s.punkter) ? s.punkter : []).slice(0, 8).map((p) => `- ${str(p, 400)}`).join('\n')}`.slice(0, 2000)}`);
   const met = (k.metode ?? []).slice(0, 4).map((m, i) => `[M${i + 1}] ${str(m.tittel, 120)}:\n${str(m.tekst, 1600)}`);

@@ -1,5 +1,5 @@
 {
-  "generert": "2026-09-24",
+  "generert": "2026-09-25",
   "programkartHentet": "2026-09-23",
   "years": [
     "2020",
@@ -43,7 +43,11 @@
               "pg_fv": 57.2,
               "pg_ord": 64.0,
               "pgs_fv": 56.9,
-              "pgs_ord": 64.0
+              "pgs_ord": 64.0,
+              "vl_fv": 344,
+              "vl_ord": 560,
+              "vls_fv": 222,
+              "vls_ord": 346
             },
             "2021": {
               "alleS": 1265,
@@ -60,7 +64,11 @@
               "op_alle": 57.4,
               "n_mott": 77,
               "pgs_fv": 56.9,
-              "pgs_ord": 64.6
+              "pgs_ord": 64.6,
+              "vl_fv": 310,
+              "vl_ord": 551,
+              "vls_fv": 193,
+              "vls_ord": 340
             },
             "2022": {
               "alleS": 1105,
@@ -77,7 +85,11 @@
               "op_alle": 58.0,
               "n_mott": 81,
               "pgs_fv": 57.7,
-              "pgs_ord": 64.4
+              "pgs_ord": 64.4,
+              "vl_fv": 244,
+              "vl_ord": 420,
+              "vls_fv": 167,
+              "vls_ord": 283
             },
             "2023": {
               "alleS": 1005,
@@ -94,7 +106,11 @@
               "op_alle": 57.5,
               "n_mott": 82,
               "pgs_fv": 56.3,
-              "pgs_ord": 63.6
+              "pgs_ord": 63.6,
+              "vl_fv": 184,
+              "vl_ord": 341,
+              "vls_fv": 125,
+              "vls_ord": 236
             },
             "2024": {
               "alleS": 973,
@@ -111,7 +127,11 @@
               "op_alle": 57.2,
               "n_mott": 77,
               "pgs_fv": 55.5,
-              "pgs_ord": 63.6
+              "pgs_ord": 63.6,
+              "vl_fv": 184,
+              "vl_ord": 356,
+              "vls_fv": 101,
+              "vls_ord": 196
             },
             "2025": {
               "alleS": 897,
@@ -128,7 +148,11 @@
               "op_alle": 56.3,
               "n_mott": 82,
               "pgs_fv": 53.4,
-              "pgs_ord": 62.1
+              "pgs_ord": 62.1,
+              "vl_fv": 143,
+              "vl_ord": 284,
+              "vls_fv": 90,
+              "vls_ord": 181
             },
             "2026": {
               "alleS": 1040,
@@ -140,7 +164,11 @@
               "pg_fv": 54.0,
               "pg_ord": 63.0,
               "pgs_fv": 53.5,
-              "pgs_ord": 62.9
+              "pgs_ord": 62.9,
+              "vl_fv": 196,
+              "vl_ord": 350,
+              "vls_fv": 114,
+              "vls_ord": 203
             }
           }
         },
@@ -163,7 +191,11 @@
               "pg_fv": 61.6,
               "pg_ord": 69.0,
               "pgs_fv": 61.6,
-              "pgs_ord": 69.0
+              "pgs_ord": 69.0,
+              "vl_fv": 987,
+              "vl_ord": 1,
+              "vls_fv": 671,
+              "vls_ord": 1
             },
             "2021": {
               "alleS": 3023,
@@ -180,7 +212,11 @@
               "op_alle": 61.6,
               "n_mott": 93,
               "pgs_fv": 62.0,
-              "pgs_ord": 69.5
+              "pgs_ord": 69.5,
+              "vl_fv": 888,
+              "vl_ord": 1,
+              "vls_fv": 579,
+              "vls_ord": 1
             },
             "2022": {
               "alleS": 2697,
@@ -197,7 +233,11 @@
               "op_alle": 61.9,
               "n_mott": 103,
               "pgs_fv": 62.4,
-              "pgs_ord": 69.6
+              "pgs_ord": 69.6,
+              "vl_fv": 793,
+              "vl_ord": 1,
+              "vls_fv": 528,
+              "vls_ord": 1
             },
             "2023": {
               "alleS": 2512,
@@ -214,7 +254,11 @@
               "op_alle": 61.8,
               "n_mott": 97,
               "pgs_fv": 60.8,
-              "pgs_ord": 70.1
+              "pgs_ord": 70.1,
+              "vl_fv": 675,
+              "vl_ord": 1,
+              "vls_fv": 415,
+              "vls_ord": 878
             },
             "2024": {
               "alleS": 2111,
@@ -231,7 +275,11 @@
               "op_alle": 60.6,
               "n_mott": 113,
               "pgs_fv": 60.7,
-              "pgs_ord": 69.7
+              "pgs_ord": 69.7,
+              "vl_fv": 497,
+              "vl_ord": 979,
+              "vls_fv": 324,
+              "vls_ord": 642
             },
             "2025": {
               "alleS": 1800,
@@ -248,7 +296,11 @@
               "op_alle": 60.8,
               "n_mott": 126,
               "pgs_fv": 60.5,
-              "pgs_ord": 69.6
+              "pgs_ord": 69.6,
+              "vl_fv": 346,
+              "vl_ord": 741,
+              "vls_fv": 226,
+              "vls_ord": 497
             },
             "2026": {
               "alleS": 1733,
@@ -260,7 +312,11 @@
               "pg_fv": 60.0,
               "pg_ord": 69.0,
               "pgs_fv": 60.0,
-              "pgs_ord": 69.0
+              "pgs_ord": 69.0,
+              "vl_fv": 304,
+              "vl_ord": 670,
+              "vls_fv": 202,
+              "vls_ord": 441
             }
           }
         },
@@ -283,7 +339,11 @@
               "pg_fv": 60.1,
               "pg_ord": 67.7,
               "pgs_fv": 60.0,
-              "pgs_ord": 67.7
+              "pgs_ord": 67.7,
+              "vl_fv": 1,
+              "vl_ord": 1,
+              "vls_fv": 702,
+              "vls_ord": 1
             },
             "2021": {
               "alleS": 3325,
@@ -300,7 +360,11 @@
               "op_alle": 61.1,
               "n_mott": 127,
               "pgs_fv": 60.4,
-              "pgs_ord": 68.1
+              "pgs_ord": 68.1,
+              "vl_fv": 1,
+              "vl_ord": 1,
+              "vls_fv": 661,
+              "vls_ord": 1
             },
             "2022": {
               "alleS": 3035,
@@ -317,7 +381,11 @@
               "op_alle": 61.5,
               "n_mott": 127,
               "pgs_fv": 60.8,
-              "pgs_ord": 68.3
+              "pgs_ord": 68.3,
+              "vl_fv": 951,
+              "vl_ord": 1,
+              "vls_fv": 631,
+              "vls_ord": 1
             },
             "2023": {
               "alleS": 2905,
@@ -334,7 +402,11 @@
               "op_alle": 61.5,
               "n_mott": 134,
               "pgs_fv": 59.8,
-              "pgs_ord": 68.3
+              "pgs_ord": 68.3,
+              "vl_fv": 823,
+              "vl_ord": 1,
+              "vls_fv": 495,
+              "vls_ord": 905
             },
             "2024": {
               "alleS": 2584,
@@ -351,7 +423,11 @@
               "op_alle": 60.0,
               "n_mott": 161,
               "pgs_fv": 59.4,
-              "pgs_ord": 67.8
+              "pgs_ord": 67.8,
+              "vl_fv": 670,
+              "vl_ord": 1,
+              "vls_fv": 436,
+              "vls_ord": 770
             },
             "2025": {
               "alleS": 2059,
@@ -368,7 +444,11 @@
               "op_alle": 60.6,
               "n_mott": 189,
               "pgs_fv": 58.4,
-              "pgs_ord": 67.2
+              "pgs_ord": 67.2,
+              "vl_fv": 404,
+              "vl_ord": 808,
+              "vls_fv": 280,
+              "vls_ord": 556
             },
             "2026": {
               "alleS": 2200,
@@ -380,7 +460,11 @@
               "pg_fv": 59.0,
               "pg_ord": 67.2,
               "pgs_fv": 58.9,
-              "pgs_ord": 67.2
+              "pgs_ord": 67.2,
+              "vl_fv": 492,
+              "vl_ord": 934,
+              "vls_fv": 328,
+              "vls_ord": 622
             }
           }
         },
@@ -403,7 +487,11 @@
               "pg_fv": 62.0,
               "pg_ord": 67.9,
               "pgs_fv": 61.9,
-              "pgs_ord": 67.9
+              "pgs_ord": 67.9,
+              "vl_fv": 1,
+              "vl_ord": 1,
+              "vls_fv": 687,
+              "vls_ord": 1
             },
             "2021": {
               "alleS": 3161,
@@ -420,7 +508,11 @@
               "op_alle": 62.2,
               "n_mott": 136,
               "pgs_fv": 62.0,
-              "pgs_ord": 68.6
+              "pgs_ord": 68.6,
+              "vl_fv": 928,
+              "vl_ord": 1,
+              "vls_fv": 606,
+              "vls_ord": 1
             },
             "2022": {
               "alleS": 2782,
@@ -437,7 +529,11 @@
               "op_alle": 60.4,
               "n_mott": 134,
               "pgs_fv": 62.5,
-              "pgs_ord": 69.2
+              "pgs_ord": 69.2,
+              "vl_fv": 868,
+              "vl_ord": 1,
+              "vls_fv": 567,
+              "vls_ord": 994
             },
             "2023": {
               "alleS": 2515,
@@ -454,7 +550,11 @@
               "op_alle": 62.3,
               "n_mott": 137,
               "pgs_fv": 61.9,
-              "pgs_ord": 69.2
+              "pgs_ord": 69.2,
+              "vl_fv": 720,
+              "vl_ord": 1,
+              "vls_fv": 426,
+              "vls_ord": 775
             },
             "2024": {
               "alleS": 1897,
@@ -471,7 +571,11 @@
               "op_alle": 62.6,
               "n_mott": 161,
               "pgs_fv": 61.6,
-              "pgs_ord": 69.4
+              "pgs_ord": 69.4,
+              "vl_fv": 453,
+              "vl_ord": 852,
+              "vls_fv": 286,
+              "vls_ord": 548
             },
             "2025": {
               "alleS": 1663,
@@ -488,7 +592,11 @@
               "op_alle": 62.2,
               "n_mott": 210,
               "pgs_fv": 60.7,
-              "pgs_ord": 68.4
+              "pgs_ord": 68.4,
+              "vl_fv": 350,
+              "vl_ord": 638,
+              "vls_fv": 202,
+              "vls_ord": 396
             },
             "2026": {
               "alleS": 1899,
@@ -500,7 +608,11 @@
               "pg_fv": 60.8,
               "pg_ord": 68.2,
               "pgs_fv": 60.8,
-              "pgs_ord": 68.2
+              "pgs_ord": 68.2,
+              "vl_fv": 410,
+              "vl_ord": 757,
+              "vls_fv": 242,
+              "vls_ord": 463
             }
           }
         },
@@ -523,7 +635,11 @@
               "pg_fv": 60.0,
               "pg_ord": 67.6,
               "pgs_fv": 60.0,
-              "pgs_ord": 67.6
+              "pgs_ord": 67.6,
+              "vl_fv": 1,
+              "vl_ord": 1,
+              "vls_fv": 693,
+              "vls_ord": 1
             },
             "2021": {
               "alleS": 2965,
@@ -540,7 +656,11 @@
               "op_alle": 58.6,
               "n_mott": 113,
               "pgs_fv": 60.3,
-              "pgs_ord": 68.0
+              "pgs_ord": 68.0,
+              "vl_fv": 873,
+              "vl_ord": 1,
+              "vls_fv": 590,
+              "vls_ord": 1
             },
             "2022": {
               "alleS": 2684,
@@ -557,7 +677,11 @@
               "op_alle": 59.2,
               "n_mott": 103,
               "pgs_fv": 60.4,
-              "pgs_ord": 68.2
+              "pgs_ord": 68.2,
+              "vl_fv": 766,
+              "vl_ord": 1,
+              "vls_fv": 528,
+              "vls_ord": 933
             },
             "2023": {
               "alleS": 2590,
@@ -574,7 +698,11 @@
               "op_alle": 58.6,
               "n_mott": 124,
               "pgs_fv": 59.8,
-              "pgs_ord": 68.2
+              "pgs_ord": 68.2,
+              "vl_fv": 671,
+              "vl_ord": 1,
+              "vls_fv": 444,
+              "vls_ord": 831
             },
             "2024": {
               "alleS": 2047,
@@ -591,7 +719,11 @@
               "op_alle": 58.4,
               "n_mott": 130,
               "pgs_fv": 57.8,
-              "pgs_ord": 66.8
+              "pgs_ord": 66.8,
+              "vl_fv": 398,
+              "vl_ord": 817,
+              "vls_fv": 280,
+              "vls_ord": 556
             },
             "2025": {
               "alleS": 2167,
@@ -608,7 +740,11 @@
               "op_alle": 56.9,
               "n_mott": 135,
               "pgs_fv": 57.1,
-              "pgs_ord": 66.0
+              "pgs_ord": 66.0,
+              "vl_fv": 472,
+              "vl_ord": 891,
+              "vls_fv": 339,
+              "vls_ord": 625
             },
             "2026": {
               "alleS": 2158,
@@ -620,7 +756,11 @@
               "pg_fv": 56.5,
               "pg_ord": 65.8,
               "pgs_fv": 56.5,
-              "pgs_ord": 65.8
+              "pgs_ord": 65.8,
+              "vl_fv": 443,
+              "vl_ord": 924,
+              "vls_fv": 323,
+              "vls_ord": 640
             }
           }
         }
@@ -659,7 +799,11 @@
               "pg_fv": 46.4,
               "pg_ord": 51.3,
               "pgs_fv": 45.0,
-              "pgs_ord": 50.6
+              "pgs_ord": 50.6,
+              "vl_fv": 39,
+              "vl_ord": 73,
+              "vls_fv": 20,
+              "vls_ord": 40
             },
             "2021": {
               "alleS": 682,
@@ -676,7 +820,11 @@
               "op_alle": 53.7,
               "n_mott": 24,
               "pgs_fv": 47.9,
-              "pgs_ord": 53.0
+              "pgs_ord": 53.0,
+              "vl_fv": 56,
+              "vl_ord": 112,
+              "vls_fv": 25,
+              "vls_ord": 49
             },
             "2022": {
               "alleS": 550,
@@ -693,7 +841,11 @@
               "op_alle": 54.1,
               "n_mott": 28,
               "pgs_fv": 48.5,
-              "pgs_ord": 53.6
+              "pgs_ord": 53.6,
+              "vl_fv": 39,
+              "vl_ord": 61,
+              "vls_fv": 22,
+              "vls_ord": 35
             },
             "2023": {
               "alleS": 509,
@@ -710,7 +862,11 @@
               "op_alle": 53.6,
               "n_mott": 25,
               "pgs_fv": 39.6,
-              "pgs_ord": 51.7
+              "pgs_ord": 51.7,
+              "vl_fv": 14,
+              "vl_ord": 32,
+              "vls_fv": 2,
+              "vls_ord": 8
             },
             "2024": {
               "alleS": 522,
@@ -727,7 +883,11 @@
               "op_alle": 54.4,
               "n_mott": 27,
               "pgs_fv": 0.0,
-              "pgs_ord": 0.0
+              "pgs_ord": 0.0,
+              "vl_fv": 5,
+              "vl_ord": 17,
+              "vls_fv": 0,
+              "vls_ord": 0
             },
             "2025": {
               "alleS": 456,
@@ -744,7 +904,11 @@
               "op_alle": 53.1,
               "n_mott": 38,
               "pgs_fv": 0.0,
-              "pgs_ord": 0.0
+              "pgs_ord": 0.0,
+              "vl_fv": 0,
+              "vl_ord": 0,
+              "vls_fv": 0,
+              "vls_ord": 0
             },
             "2026": {
               "alleS": 453,
@@ -756,7 +920,11 @@
               "pg_fv": 0.0,
               "pg_ord": 0.0,
               "pgs_fv": 0.0,
-              "pgs_ord": 0.0
+              "pgs_ord": 0.0,
+              "vl_fv": 0,
+              "vl_ord": 0,
+              "vls_fv": 0,
+              "vls_ord": 0
             }
           }
         },
@@ -779,7 +947,11 @@
               "pg_fv": 45.9,
               "pg_ord": 51.8,
               "pgs_fv": 44.8,
-              "pgs_ord": 51.3
+              "pgs_ord": 51.3,
+              "vl_fv": 194,
+              "vl_ord": 409,
+              "vls_fv": 93,
+              "vls_ord": 209
             },
             "2021": {
               "alleS": 977,
@@ -796,7 +968,11 @@
               "op_alle": 46.2,
               "n_mott": 32,
               "pgs_fv": 45.0,
-              "pgs_ord": 50.6
+              "pgs_ord": 50.6,
+              "vl_fv": 167,
+              "vl_ord": 361,
+              "vls_fv": 71,
+              "vls_ord": 155
             },
             "2022": {
               "alleS": 769,
@@ -813,7 +989,11 @@
               "op_alle": 46.0,
               "n_mott": 30,
               "pgs_fv": 42.7,
-              "pgs_ord": 46.3
+              "pgs_ord": 46.3,
+              "vl_fv": 77,
+              "vl_ord": 163,
+              "vls_fv": 36,
+              "vls_ord": 83
             },
             "2023": {
               "alleS": 786,
@@ -830,7 +1010,11 @@
               "op_alle": 46.3,
               "n_mott": 39,
               "pgs_fv": 40.0,
-              "pgs_ord": 45.7
+              "pgs_ord": 45.7,
+              "vl_fv": 53,
+              "vl_ord": 116,
+              "vls_fv": 22,
+              "vls_ord": 61
             },
             "2024": {
               "alleS": 693,
@@ -847,7 +1031,11 @@
               "op_alle": 45.5,
               "n_mott": 33,
               "pgs_fv": 36.2,
-              "pgs_ord": 43.1
+              "pgs_ord": 43.1,
+              "vl_fv": 24,
+              "vl_ord": 63,
+              "vls_fv": 6,
+              "vls_ord": 23
             },
             "2025": {
               "alleS": 580,
@@ -864,7 +1052,11 @@
               "op_alle": 45.8,
               "n_mott": 43,
               "pgs_fv": 0.0,
-              "pgs_ord": 0.0
+              "pgs_ord": 0.0,
+              "vl_fv": 0,
+              "vl_ord": 0,
+              "vls_fv": 0,
+              "vls_ord": 0
             },
             "2026": {
               "alleS": 572,
@@ -876,7 +1068,11 @@
               "pg_fv": 0.0,
               "pg_ord": 0.0,
               "pgs_fv": 0.0,
-              "pgs_ord": 0.0
+              "pgs_ord": 0.0,
+              "vl_fv": 0,
+              "vl_ord": 0,
+              "vls_fv": 0,
+              "vls_ord": 0
             }
           }
         }

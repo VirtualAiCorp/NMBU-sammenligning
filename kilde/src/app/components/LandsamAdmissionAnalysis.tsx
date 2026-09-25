@@ -23,7 +23,7 @@ function nf(v: number, dec: number): string {
 // ─── Metrics ─────────────────────────────────────────────────────────────────
 
 type MetricKey = 'alleS' | 'fvS' | 'sokerpress' | 'plasser' | 'kvinner' | 'kvalifiserte' | 'tilbud' | 'tilbudsandel' | 'mott' | 'oppmote' | 'pg_ord' | 'pg_fv' | 'pg_snitt'
-  | 'op_mott' | 'kp_mott' | 'op_fv' | 'op_alle' | 'pgs_ord' | 'pgs_fv' | 'pg_fall' | 'kvalPerPlass' | 'tilbudPerPlass';
+  | 'op_mott' | 'kp_mott' | 'op_fv' | 'op_alle' | 'pgs_ord' | 'pgs_fv' | 'pg_fall' | 'kvalPerPlass' | 'tilbudPerPlass' | 'vl_sum' | 'vl_ord' | 'vl_fv' | 'vlPerPlass' | 'vls_sum';
 
 interface MetricDef {
   id: MetricKey;
@@ -52,6 +52,11 @@ const METRICS: MetricDef[] = [
   { id: 'pgs_ord',      label: 'Suppl. ordinær',      unit: '',  decimals: 1, kilde: 'supp', description: 'Poenggrense ordinær kvote etter suppleringsopptaket (Samordna). 0 = alle kvalifiserte fikk tilbud' },
   { id: 'pgs_fv',       label: 'Suppl. FV',           unit: '',  decimals: 1, kilde: 'supp', description: 'Poenggrense førstegangsvitnemål etter suppleringsopptaket (Samordna)' },
   { id: 'pg_fall',      label: 'Fall i supplering',   unit: '',  decimals: 1, kilde: 'supp', description: 'Hvor mange poeng grensen i ordinær kvote falt fra hovedopptaket til suppleringsopptaket. Høyt fall = programmet måtte gå dypere i søkermassen for å fylle plassene' },
+  { id: 'vl_sum',       label: 'Venteliste',          unit: '',  decimals: 0, kilde: 'supp', description: 'Søkere på venteliste etter hovedopptaket, ordinær kvote + førstegangsvitnemål (Samordna). Kvalifiserte som ikke fikk tilbud her og står på vent' },
+  { id: 'vl_ord',       label: 'Venteliste ordinær',  unit: '',  decimals: 0, kilde: 'supp', description: 'Søkere på venteliste i ordinær kvote etter hovedopptaket' },
+  { id: 'vl_fv',        label: 'Venteliste FV',       unit: '',  decimals: 0, kilde: 'supp', description: 'Søkere på venteliste i førstegangsvitnemålskvoten etter hovedopptaket' },
+  { id: 'vlPerPlass',   label: 'Venteliste/plass',    unit: 'x', decimals: 1, kilde: 'supp', description: 'Søkere på venteliste etter hovedopptaket per studieplass. Høyt tall = mange kvalifiserte som vil inn, men ikke fikk plass' },
+  { id: 'vls_sum',      label: 'Venteliste etter suppl.', unit: '', decimals: 0, kilde: 'supp', description: 'Søkere på venteliste etter suppleringsopptaket (ordinær + førstegangsvitnemål)' },
   { id: 'kvalPerPlass', label: 'Kvalifiserte/plass',  unit: 'x', decimals: 1, kilde: 'supp', description: 'Kvalifiserte søkere per studieplass (hovedopptaket)' },
   { id: 'tilbudPerPlass', label: 'Tilbud/plass',      unit: 'x', decimals: 2, kilde: 'supp', description: 'Tilbud i hovedopptaket per studieplass. Over 1 = overbooking fordi ikke alle takker ja eller møter' },
   { id: 'op_mott',      label: 'Møtt: opptakspoeng',  unit: '',  decimals: 1, kilde: 'dbh571', description: 'Gjennomsnittlige opptakspoeng (karakterpoeng + alders- og tilleggspoeng) for studentene som møtte til studiestart (DBH 571)' },
@@ -87,6 +92,9 @@ function getVal(data: FullYearData, metric: MetricKey): number | null {
     if (data.pg_ord == null || data.pgs_ord == null || data.pg_ord === 0 || data.pgs_ord === 0) return null;
     return data.pg_ord - data.pgs_ord;
   }
+  if (metric === 'vl_sum') return data.vl_ord == null && data.vl_fv == null ? null : (data.vl_ord ?? 0) + (data.vl_fv ?? 0);
+  if (metric === 'vls_sum') return data.vls_ord == null && data.vls_fv == null ? null : (data.vls_ord ?? 0) + (data.vls_fv ?? 0);
+  if (metric === 'vlPerPlass') return (data.vl_ord == null && data.vl_fv == null) || !data.plasser ? null : ((data.vl_ord ?? 0) + (data.vl_fv ?? 0)) / data.plasser;
   if (metric === 'kvalPerPlass') return data.kvalifiserte != null && data.plasser ? data.kvalifiserte / data.plasser : null;
   if (metric === 'tilbudPerPlass') return data.tilbud != null && data.plasser ? data.tilbud / data.plasser : null;
   if (metric === 'tilbudsandel') {

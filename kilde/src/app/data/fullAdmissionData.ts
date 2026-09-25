@@ -24,6 +24,11 @@ export interface FullYearData {
   // Suppleringsopptaket (Samordna)
   pgs_fv?:      number | null; // poenggrense FV-kvote etter suppleringsopptaket (0 = alle kvalifiserte fikk tilbud)
   pgs_ord?:     number | null; // poenggrense ordinær kvote etter suppleringsopptaket
+  // Søkere på venteliste (Samordna): etter hovedopptaket (vl_*) og etter suppleringsopptaket (vls_*)
+  vl_fv?:       number | null;
+  vl_ord?:      number | null;
+  vls_fv?:      number | null;
+  vls_ord?:     number | null;
 }
 
 // 'master2' = toårig master med lokalt opptak (ikke via Samordna opptak)

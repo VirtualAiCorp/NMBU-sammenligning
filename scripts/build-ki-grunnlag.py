@@ -68,6 +68,9 @@ def data_linjer(fak):
                     ting.append(f"poenggrense hovedopptak ordinær {pg(d.get('pg_ord'))} / førstegangsvitnemål {pg(d.get('pg_fv'))}")
                 if d.get("pgs_ord") is not None or d.get("pgs_fv") is not None:
                     ting.append(f"etter suppleringsopptaket ordinær {pg(d.get('pgs_ord'))} / førstegangsvitnemål {pg(d.get('pgs_fv'))}")
+                if d.get("vl_ord") is not None or d.get("vl_fv") is not None:
+                    ting.append(f"søkere på venteliste etter hovedopptaket ordinær {nf(d.get('vl_ord'))} / førstegangsvitnemål {nf(d.get('vl_fv'))}"
+                                + (f", etter suppleringsopptaket {nf(d.get('vls_ord'))} / {nf(d.get('vls_fv'))}" if d.get("vls_ord") is not None or d.get("vls_fv") is not None else ""))
                 if d.get("op_mott") is not None: ting.append(f"snitt opptakspoeng for de som møtte {nf(d['op_mott'], 1)}")
                 if d.get("kp_mott") is not None and d.get("op_mott") is None: ting.append(f"snitt karakterpoeng for de som møtte {nf(d['kp_mott'], 1)} (lokalt opptak)")
                 if d.get("kvinner") is not None: ting.append(f"{nf(d['kvinner'], 1)} % kvinner blant førstevalgssøkerne")
@@ -93,7 +96,49 @@ def data_linjer(fak):
                 # 4. felt: «n» = NMBUs program, «h» = hovedkonkurrent (valgt som standard i opptaksanalysen), «» = øvrige
                 flagg = "n" if e["id"] in g["nmbuIds"] else ("h" if e["id"] in g["defaultIds"] else "")
                 linjer.append([f"{g['label']} ({NIVAA.get(g['level'], g['level'])})", e["shortName"], f"{navn}. " + ". ".join(deler) + ".", flagg])
-    return linjer
+    return linjer + rangeringer(adm, comp, sb)
+
+
+def rangeringer(adm, comp, sb):
+    """Ferdig sorterte rangeringer per programgruppe (flagg «r»), slik at modellen slipper å sortere tall selv."""
+    ut = []
+    kull = {p["entryId"]: p for g in (comp or {}).get("groups", []) for p in g["programs"]}
+    for g in (adm or {}).get("groups", []):
+        gnavn = f"{g['label']} ({NIVAA.get(g['level'], g['level'])})"
+        navn = lambda e: f"{e['shortName']}{' (NMBU)' if e['id'] in g['nmbuIds'] and 'NMBU' not in e['shortName'] else ''} ({e.get('studiested', '')})"
+
+        def ranger(tittel, verdier, dec, enhet="", apne=None):
+            verdier = [(e, v) for e, v in verdier if v is not None]
+            if len(verdier) < 2 and not apne:
+                return
+            verdier.sort(key=lambda x: -x[1])
+            liste = "; ".join(f"{i + 1}. {navn(e)} {nf(v, dec)}{enhet}" for i, (e, v) in enumerate(verdier))
+            nmbu = [f"NMBU{'' if e['shortName'] == 'NMBU' else ' (' + e['shortName'] + ')'} er nr. {i + 1} av {len(verdier)}" for i, (e, v) in enumerate(verdier) if e["id"] in g["nmbuIds"]]
+            tekst = f"RANGERING {tittel} · {gnavn}, høyest først: {liste}."
+            if nmbu:
+                tekst += " " + "; ".join(nmbu) + "."
+            if apne:
+                tekst += f" Alle kvalifiserte fikk tilbud (ingen poenggrense): {', '.join(navn(e) for e in apne)}."
+            ut.append([gnavn, "rangering", tekst, "r"])
+
+        for y in sorted({y for e in g["entries"] for y in e["years"]}, reverse=True)[:2]:
+            d = {e["id"]: e["years"].get(y) or {} for e in g["entries"]}
+            for felt, tittel in (("pg_ord", "poenggrense ordinær kvote"), ("pg_fv", "poenggrense førstegangsvitnemål")):
+                vals = [(e, d[e["id"]].get(felt)) for e in g["entries"] if d[e["id"]].get(felt)]
+                apne = [e for e in g["entries"] if d[e["id"]].get(felt) == 0]
+                if vals or apne:
+                    ranger(f"{y} {tittel} (hovedopptak)", vals, 1, apne=apne)
+            ranger(f"{y} førstevalgssøkere per studieplass", [(e, d[e["id"]]["fvS"] / d[e["id"]]["plasser"] if d[e["id"]].get("fvS") is not None and d[e["id"]].get("plasser") else None) for e in g["entries"]], 2)
+            ranger(f"{y} søkere på venteliste etter hovedopptaket (ordinær + førstegangsvitnemål)",
+                   [(e, (d[e["id"]].get("vl_ord") or 0) + (d[e["id"]].get("vl_fv") or 0) if d[e["id"]].get("vl_ord") is not None or d[e["id"]].get("vl_fv") is not None else None) for e in g["entries"]], 0)
+        gj = []
+        for e in g["entries"]:
+            siste = [x for x in (kull.get(e["id"]) or {}).get("kull", []) if x.get("startkull") and x.get("normertAar") and x["normertAar"] <= 2025]
+            if siste:
+                gj.append((e, 100 * siste[-1]["fullfortNormert"] / siste[-1]["startkull"]))
+        ranger("fullført på normert tid, siste startkull", gj, 1, " %")
+        ranger("Studiebarometeret helhetsvurdering, siste år", [(e, (sb.get(e["id"]) or {}).get("scores", {}).get("helhetsvurdering")) for e in g["entries"]], 1)
+    return ut
 
 
 def metode():

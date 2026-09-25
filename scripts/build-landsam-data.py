@@ -56,8 +56,10 @@ EXTRA_FIELDS = ["akseptert", "mott"]
 # Opptakspoeng fra DBH 571 (Samordna-program): skrives som valgfrie felt ved siden av Y(...).
 POINT_FIELDS = ["op_mott", "kp_mott", "op_fv", "op_alle", "n_mott"]
 # Poenggrensen etter suppleringsopptaket (SO). DBHs «nye studenter» er for ustabil som mål på fyllingsgrad og brukes ikke.
-SUPP_FIELDS = ["pgs_fv", "pgs_ord"]
-INT_FIELDS = {"n_mott"}
+# Ventelister (SO): søkere på venteliste etter hovedopptaket (vl_*) og etter suppleringsopptaket (vls_*)
+SUPP_FIELDS = ["pgs_fv", "pgs_ord", "vl_fv", "vl_ord", "vls_fv", "vls_ord"]
+INT_FIELDS = {"n_mott", "vl_fv", "vl_ord", "vls_fv", "vls_ord"}
+DEFAULT_VENTELISTE = REPO_ROOT / "data/nmbu/kilder/so_poenggrenser_venteliste.csv"
 
 MISSING_TOKENS = {"", "-", "–", "NA"}
 
@@ -170,6 +172,26 @@ def load_sokertall(path: Path):
             by_year[y] = val
 
     return index, names, conflicts
+
+
+def load_venteliste(path: Path):
+    """Ventelistetall fra SO-datavarehuset (fetch-so-venteliste.py): code -> felt -> år -> antall."""
+    index = {}
+    if not path.exists():
+        return index
+    felt = {("Førstegangsvitnemålskvote", "Hovedopptak"): "vl_fv", ("Ordinær kvote", "Hovedopptak"): "vl_ord",
+            ("Førstegangsvitnemålskvote", "Suppleringsopptak"): "vls_fv", ("Ordinær kvote", "Suppleringsopptak"): "vls_ord"}
+    with open(path, encoding="utf-8-sig", newline="") as f:
+        for row in csv.DictReader(f, delimiter=";"):
+            if row.get("Measure Names") != "Søkere på venteliste":
+                continue
+            k = felt.get((row.get("Kvote"), row.get("Opptaksrunde")))
+            code = normalise_code(row.get("Studiekode"))
+            v = (row.get("Measure Values") or "").strip()
+            if not k or not code or not v or v == "-1":
+                continue
+            index.setdefault(code, {}).setdefault(k, {})[(row.get("År") or "").strip()] = int(float(v.replace(",", ".")))
+    return index
 
 
 def load_poenggrenser(path: Path, runde: str = "Hovedopptak"):
@@ -301,7 +323,7 @@ def merge_points(years: dict, points: dict | None) -> None:
             target[f] = row.get(f)
 
 
-def process_programkart(programkart, sokertall_index, poenggrenser_index, points_index=None, supp_index=None):
+def process_programkart(programkart, sokertall_index, poenggrenser_index, points_index=None, supp_index=None, vente_index=None):
     """
     Returnerer (groups_out, summary_lines, warnings) hvor groups_out er en
     liste av dicts klare til å skrives ut som TS/JSON.
@@ -374,6 +396,11 @@ def process_programkart(programkart, sokertall_index, poenggrenser_index, points
                     for y, v in (sup.get(kv) or {}).items():
                         if y in years and v is not None:
                             years[y][kv] = round(v, 1)
+                # Søkere på venteliste etter hovedopptaket og etter suppleringsopptaket (SO)
+                for kv, per_aar in ((vente_index or {}).get(studiekode, {}) or {}).items():
+                    for y, v in per_aar.items():
+                        if y in years:
+                            years[y][kv] = v
                 summary_lines.append(
                     f"  - {pid} ({prog.get('shortName', '')}, SO {studiekode or '?'}): år med data = {years_present or '(ingen)'}"
                 )
@@ -573,9 +600,10 @@ def main():
     sokertall_index, sokertall_names, sokertall_conflicts = load_sokertall(args.sokertall)
     poenggrenser_index, poenggrenser_conflicts = load_poenggrenser(args.poenggrenser)
     supp_index, _ = load_poenggrenser(args.poenggrenser, "Suppleringsopptak")
+    vente_index = load_venteliste(DEFAULT_VENTELISTE)
 
     groups_out, summary_lines, warnings = process_programkart(
-        programkart, sokertall_index, poenggrenser_index, points_index, supp_index
+        programkart, sokertall_index, poenggrenser_index, points_index, supp_index, vente_index
     )
 
     generated_date = date.today().isoformat()

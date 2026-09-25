@@ -588,3 +588,20 @@ Disken på maskinen var full, med 7,2 GB i prosjektmappen og 5,6 GB av det i `da
 - **Slettet:** byggene `kilde/dist` og `kilde/dist-uten-hh` (lages på nytt ved `npm run build`) og midlertidige nedlastinger.
 - Prosjektmappen er nå på om lag 0,65 GB pluss node_modules (0,4 GB). DBH-cachen er fortsatt ikke i git; den kan hentes på nytt med `--refresh`.
 
+## 34. Ventelister fra Samordna (25.09.2026)
+
+- **Kilde:** SO-datavarehuset, Tableau-rapporten «Poenggrenser og ventelistetall hovedopptak/suppleringsopptak» (rapport-dv.educloud.no).
+  - Tableau gir visningen som CSV når man legger `.csv` til adressen, og filtrene `År` og `Opptaksrunde` i adressen henter 2020–2026 og begge rundene.
+  - `scripts/fetch-so-venteliste.py` → `data/nmbu/kilder/so_poenggrenser_venteliste.csv` (73 424 rader).
+  - Poenggrensene er identiske med fila vi brukte fra før (36 712 av 36 712), så dette er samme datasett, med ventelistetallene i tillegg.
+- **Opptaksdataene:** `build-landsam-data.py` legger inn `vl_fv` og `vl_ord` (søkere på venteliste etter hovedopptaket) og `vls_fv` og `vls_ord` (etter suppleringsopptaket) på alle Samordna-program, for alle fakultetene.
+  - Eksempel B-ØA 2026: 518 i ordinær kvote og 400 med førstegangsvitnemål etter hovedopptaket, 271 og 203 etter suppleringsopptaket.
+- **Visning:**
+  - Nye mål i opptaksanalysen: venteliste, venteliste ordinær, venteliste FV, venteliste per plass og venteliste etter supplering.
+  - Ny kolonne «Venteliste: hoved → suppl.» i «Hvem sliter med å fylle opp?».
+  - Fire nye kolonner i CSV-eksporten (pluss poenggrensene etter supplering).
+- **KI-chatten:**
+  - Ventelistetallene står i nøkkeltallslinjene.
+  - `build-ki-grunnlag.py` lager nå også ferdig sorterte RANGERING-linjer per programgruppe og år, med NMBUs plassering regnet ut: poenggrense ordinær/FV med liste over «alle kvalifiserte», førstevalgssøkere per plass, venteliste, gjennomføring og Studiebarometeret.
+  - Instruksen sier at plassering skal hentes derfra. Mistral Large rangerte feil når den sorterte selv.
+

@@ -11,7 +11,7 @@ import { KiSvarTekst } from './KiSvarTekst';
  *   - metodedokumentasjonen (public/ki/metode.json)                                              → [M1..]
  * og sender spørsmålet, de siste meldingene og de beste treffene til /api/chat (Mistral). Samtalen huskes i fanen.
  */
-type DataLinje = [string, string, string, string?]; // gruppe, program, tekst, flagg (n = NMBU, h = hovedkonkurrent)
+type DataLinje = [string, string, string, string?]; // gruppe, program, tekst, flagg (n = NMBU, h = hovedkonkurrent, r = ferdig sortert rangering)
 interface Kilder { data: DataLinje[]; dok: Treff[]; sammendrag: string[]; metode: [string, string][] }
 interface Melding { rolle: 'bruker' | 'assistent'; tekst: string; kilder?: Kilder; ubekreftet?: string[]; feil?: boolean; modell?: string }
 
@@ -55,11 +55,12 @@ function velgData(di: TekstIndeks<DataLinje>, q: string, sokeTekst: string): Dat
   const iGruppe = di.elementer.filter((l) => l[0] === gruppe);
   const rang = (l: DataLinje) => { const i = treff.indexOf(l); return i < 0 ? 999 : i; };
   const valgt = [
+    ...iGruppe.filter((l) => l[3] === 'r').sort((a, b) => rang(a) - rang(b)).slice(0, 4),
     ...iGruppe.filter((l) => l[3] === 'n'),
     ...iGruppe.filter((l) => l[3] === 'h').sort((a, b) => rang(a) - rang(b)),
     ...iGruppe.filter((l) => !l[3]).sort((a, b) => rang(a) - rang(b)).slice(0, 6),
-  ].slice(0, 15);
-  return [...valgt, ...treff.filter((l) => l[0] !== gruppe).slice(0, Math.max(1, 16 - valgt.length))];
+  ].slice(0, 18);
+  return [...valgt, ...treff.filter((l) => l[0] !== gruppe).slice(0, Math.max(1, 19 - valgt.length))];
 }
 
 function forslag(visning: string, fak: FacultyId | null): string[] {

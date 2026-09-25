@@ -134,7 +134,8 @@ export function exportFacultyAdmissionCsv(faculty: FacultyData) {
     'År',
     'Alle søkere', 'Førstevalgssøkere', 'Studieplasser', 'Søkerpress (fv/pl, lokale opptak: fv/tilbud)',
     'Kvinner % (1.valg)', 'Kvalifiserte', 'Tilbud', 'Tilbudsandel % (tilbud/kvalifiserte)', 'Ja-svar', 'Møtt', 'Oppmøteandel % (møtt/tilbud)',
-    'Poenggrense FV', 'Poenggrense Ord.',
+    'Poenggrense FV', 'Poenggrense Ord.', 'Poenggrense FV etter supplering', 'Poenggrense Ord. etter supplering',
+    'Venteliste FV (hovedopptak)', 'Venteliste Ord. (hovedopptak)', 'Venteliste FV (supplering)', 'Venteliste Ord. (supplering)',
     'Snitt opptakspoeng møtt (DBH 571)', 'Snitt karakterpoeng møtt (DBH 571)', 'Antall møtt (DBH 571)',
     'Snitt opptakspoeng førstevalg (DBH 571)', 'Snitt opptakspoeng alle søkere (DBH 571)'
   );
@@ -158,7 +159,8 @@ export function exportFacultyAdmissionCsv(faculty: FacultyData) {
           year,
           d.alleS, d.fvS, d.plasser, sp,
           d.kvinner, d.kvalifiserte, d.tilbud, tba, d.akseptert ?? null, d.mott ?? null, opp,
-          d.pg_fv, d.pg_ord,
+          d.pg_fv, d.pg_ord, d.pgs_fv ?? null, d.pgs_ord ?? null,
+          d.vl_fv ?? null, d.vl_ord ?? null, d.vls_fv ?? null, d.vls_ord ?? null,
           d.op_mott ?? null, d.kp_mott ?? null, d.n_mott ?? null, d.op_fv ?? null, d.op_alle ?? null
         ));
       }

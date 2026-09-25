@@ -20,6 +20,7 @@ export function statusFor(d: FullYearData | undefined): Status | null {
 }
 const nf = (v: number, d = 1) => v.toLocaleString('nb-NO', { minimumFractionDigits: d, maximumFractionDigits: d });
 const perPlass = (a: number | null | undefined, p: number | null | undefined) => (a != null && p ? a / p : null);
+const vl = (a: number | null | undefined, b: number | null | undefined) => (a == null && b == null ? '–' : ((a ?? 0) + (b ?? 0)).toLocaleString('nb-NO'));
 const pg = (v: number | null | undefined) => (v == null ? '–' : v === 0 ? 'Alle' : nf(v));
 
 export function Opptaksrunder({ group, year, years, colorFor }: { group: LandsamGroup; year: string; years: readonly string[]; colorFor: (id: string) => string }) {
@@ -53,6 +54,7 @@ export function Opptaksrunder({ group, year, years, colorFor }: { group: Landsam
               <th className={th} title="Førstevalgssøkere per studieplass ved søknadsfristen 15. april">1. valg / plass (april)</th>
               <th className={th} title="Kvalifiserte søkere per studieplass (hovedopptaket)">Kvalifiserte / plass</th>
               <th className={th} title="Tilbud i hovedopptaket per studieplass. Over 1 = institusjonen overbooker fordi ikke alle takker ja eller møter.">Tilbud / plass (juli)</th>
+              <th className={th} title="Søkere på venteliste (ordinær + førstegangsvitnemål) etter hovedopptaket → etter suppleringsopptaket">Venteliste: hoved → suppl.</th>
               <th className={th} title="Poenggrense ordinær kvote: hovedopptaket → etter suppleringsopptaket">Ordinær: hoved → suppl.</th>
               <th className={th} title="Poenggrense førstegangsvitnemål: hovedopptaket → etter suppleringsopptaket">FV: hoved → suppl.</th>
               <th className="px-3 py-2 text-left">Status {year}</th>
@@ -69,6 +71,7 @@ export function Opptaksrunder({ group, year, years, colorFor }: { group: Landsam
                 <td className={th}>{perPlass(d.fvS, d.plasser) != null ? nf(perPlass(d.fvS, d.plasser)!) : '–'}</td>
                 <td className={th}>{perPlass(d.kvalifiserte, d.plasser) != null ? nf(perPlass(d.kvalifiserte, d.plasser)!) : '–'}</td>
                 <td className={th}>{perPlass(d.tilbud, d.plasser) != null ? nf(perPlass(d.tilbud, d.plasser)!) : '–'}</td>
+                <td className={th}>{vl(d.vl_ord, d.vl_fv)} → {vl(d.vls_ord, d.vls_fv)}</td>
                 <td className={th}>{pg(d.pg_ord)} → {pg(d.pgs_ord)}</td>
                 <td className={th}>{pg(d.pg_fv)} → {pg(d.pgs_fv)}</td>
                 <td className="px-3 py-1.5" style={{ color: st.farge, fontWeight: st.niva <= 1 ? 600 : 400 }}>
@@ -80,7 +83,7 @@ export function Opptaksrunder({ group, year, years, colorFor }: { group: Landsam
         </table>
       </div>
       <div style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)', marginTop: 6 }}>
-        «Alle» = alle kvalifiserte søkere fikk tilbud (poenggrense 0). Samordnas lister over ledige plasser (restplasser) arkiveres ikke, så programmer som
+        «Alle» = alle kvalifiserte søkere fikk tilbud (poenggrense 0). Venteliste = kvalifiserte søkere som står på vent (ordinær kvote + førstegangsvitnemål); mange på venteliste betyr at programmet kunne fylt flere plasser. Samordnas lister over ledige plasser (restplasser) arkiveres ikke, så programmer som
         fortsatt hadde ledige plasser etter suppleringsopptaket kan ikke skilles ut; «alle kvalifiserte fikk tilbud» er det nærmeste sporet. Kilde: Samordna opptak.
       </div>
     </div>
