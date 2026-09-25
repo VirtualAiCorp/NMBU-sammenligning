@@ -11,7 +11,7 @@ import { KiSvarTekst } from './KiSvarTekst';
  *   - metodedokumentasjonen (public/ki/metode.json)                                              → [M1..]
  * og sender spørsmålet, de siste meldingene og de beste treffene til /api/chat (Mistral). Samtalen huskes i fanen.
  */
-type DataLinje = [string, string, string];
+type DataLinje = [string, string, string, string?]; // gruppe, program, tekst, flagg (n = NMBU, h = hovedkonkurrent)
 interface Kilder { data: DataLinje[]; dok: Treff[]; sammendrag: string[]; metode: [string, string][] }
 interface Melding { rolle: 'bruker' | 'assistent'; tekst: string; kilder?: Kilder; ubekreftet?: string[]; feil?: boolean; modell?: string }
 
@@ -39,6 +39,28 @@ const dokIndeks = (fak: FacultyId) => engang(`dok:${fak}`, async () => {
   const [t, b] = await Promise.all([hentJson<StyrepapirTekst>(`markedsstatus/${fak}/tekst.json`), loadFacultyBase(fak)]);
   return { indeks: t ? new StyrepapirIndeks(t) : null, institusjoner: b.marketStatus as MarketInstitution[] };
 });
+
+/**
+ * Nøkkeltall til modellen: finner programgruppen spørsmålet handler om (flest av de beste treffene) og sender da
+ * NMBUs program først, så hovedkonkurrentene og de mest relevante av de andre i gruppen. Treff i andre grupper tas med
+ * etterpå hvis det er plass. Uten tydelig gruppe brukes de beste treffene som de er.
+ */
+function velgData(di: TekstIndeks<DataLinje>, q: string, sokeTekst: string): DataLinje[] {
+  const treff = di.sok(q, 30).concat(di.sok(sokeTekst, 15)).filter((l, i, a) => a.indexOf(l) === i);
+  const topp = treff.slice(0, 8);
+  const teller = new Map<string, number>();
+  topp.forEach((l) => teller.set(l[0], (teller.get(l[0]) ?? 0) + 1));
+  const [gruppe, antall] = [...teller.entries()].sort((a, b) => b[1] - a[1])[0] ?? ['', 0];
+  if (!gruppe || antall < 3) return treff.slice(0, 10);
+  const iGruppe = di.elementer.filter((l) => l[0] === gruppe);
+  const rang = (l: DataLinje) => { const i = treff.indexOf(l); return i < 0 ? 999 : i; };
+  const valgt = [
+    ...iGruppe.filter((l) => l[3] === 'n'),
+    ...iGruppe.filter((l) => l[3] === 'h').sort((a, b) => rang(a) - rang(b)),
+    ...iGruppe.filter((l) => !l[3]).sort((a, b) => rang(a) - rang(b)).slice(0, 3),
+  ].slice(0, 11);
+  return [...valgt, ...treff.filter((l) => l[0] !== gruppe).slice(0, 12 - valgt.length)];
+}
 
 function forslag(visning: string, fak: FacultyId | null): string[] {
   const nmbu = fak === 'hh' ? 'økonomi og administrasjon' : 'programmene våre';
@@ -74,7 +96,7 @@ export function KiChatPanel({ apen, lukk, fakultet, visning, sted }: { apen: boo
       const forrige = [...meldinger].reverse().find((m) => m.rolle === 'bruker')?.tekst ?? '';
       const sokeTekst = `${q} ${forrige}`;
       const [di, mi, dk] = await Promise.all([dataIndeks(fakultet), metodeIndeks(), fakultet ? dokIndeks(fakultet) : Promise.resolve(null)]);
-      const data = di.sok(q, 8).concat(di.sok(sokeTekst, 10)).filter((l, i, a) => a.indexOf(l) === i).slice(0, 10);
+      const data = velgData(di, q, sokeTekst);
       const metode = mi.sok(q, 3);
       const dok = dk?.indeks ? dk.indeks.sok(sokeTekst, 6) : [];
       const inst = [...new Set(dok.map((t) => t.dok.inst))].slice(0, 4);

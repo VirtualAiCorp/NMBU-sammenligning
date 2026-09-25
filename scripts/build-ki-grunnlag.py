@@ -90,7 +90,9 @@ def data_linjer(fak):
             if iy and i[iy].get("eng") is not None:
                 deler.append(f"{iy}: {nf(i[iy]['eng'], 1)} % av studiepoengene i emner på engelsk" + (f", {nf(i[iy]['inn'], 1)} % innreisende utvekslingsstudenter i emnene" if i[iy].get("inn") is not None else ""))
             if deler:
-                linjer.append([g["label"], e["shortName"], f"{navn}. " + ". ".join(deler) + "."])
+                # 4. felt: «n» = NMBUs program, «h» = hovedkonkurrent (valgt som standard i opptaksanalysen), «» = øvrige
+                flagg = "n" if e["id"] in g["nmbuIds"] else ("h" if e["id"] in g["defaultIds"] else "")
+                linjer.append([f"{g['label']} ({NIVAA.get(g['level'], g['level'])})", e["shortName"], f"{navn}. " + ". ".join(deler) + ".", flagg])
     return linjer
 
 
