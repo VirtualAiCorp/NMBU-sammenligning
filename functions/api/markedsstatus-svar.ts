@@ -19,6 +19,8 @@ interface Env { MISTRAL_API_KEY?: string; MISTRAL_MODEL?: string; MISTRAL_BASE_U
 interface Utdrag { nr: number; inst: string; dok: string; dato?: string | null; side: number; tekst: string }
 interface Sammendrag { inst: string; enhet?: string | null; oppsummering?: string | null; punkter?: string[] }
 
+const VERSJON = '2026-09-25c';
+
 const svar = (data: unknown, status = 200) =>
   new Response(JSON.stringify(data), { status, headers: { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' } });
 
@@ -33,7 +35,7 @@ B. SAMMENDRAG [S1], [S2], … : korte sammendrag som analyseteamet har skrevet f
 2. Gå gjennom utdragene og sammendragene og bruk bare det som faktisk svarer på spørsmålet. Se bort fra irrelevante treff.
 3. Nyere dokumenter går foran eldre. Oppgi alltid årstall eller dato for det du refererer.
 4. Skill tydelig mellom VEDTAK (styret har vedtatt), FORSLAG eller PLANER (innstilling, strategi, budsjettforslag), DISKUSJON eller VURDERING, og FAKTISKE TALL (regnskap, søkertall).
-5. Gjengi tall nøyaktig slik de står, med enhet og år (for eksempel «−34,4 mill. kr i 2025»). Unngå egne beregninger. Er en beregning nødvendig (snitt, sum, endring), skriv «(beregnet)» rett etter tallet.
+5. Gjengi tall nøyaktig slik de står, med enhet og år (for eksempel «−34,4 mill. kr i 2025»). Ikke lag egne snitt, summer eller endringer. Gjør du det likevel, skal det stå «(beregnet)» rett etter tallet, for eksempel «3,6 mill. kr per år (beregnet)».
 6. Gjelder spørsmålet flere institusjoner, sammenlign dem punktvis per institusjon.
 7. Hvis det er grunnlag for det, avslutt med en kort og tydelig merket VURDERING av hva dette kan bety for NMBU/${fakultet}. Ikke dikt opp NMBU-tall.
 
@@ -73,6 +75,11 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     });
   if (!sporsmal || !utdrag.length) return svar({ feil: 'Spørsmål og utdrag mangler.' }, 400);
 
+  // Åpenbare forsøk på å endre instruksen besvares uten å kalle modellen
+  if (/\b(ignorer|glem|overse|se bort fra)\b.{0,40}\b(instruks|regler|beskjed|system)|\b(ignore|disregard)\b.{0,40}\b(instruction|rule|prompt)|\bdu er nå\b|\bnew role\b/i.test(sporsmal)) {
+    return svar({ svar: '**Kort svar:** Jeg svarer bare på spørsmål om konkurrentene ut fra dokumentene i markedsstatus.\n\n**Forslag:** Prøv for eksempel «Hvem planlegger nye studieprogram i økonomi?» eller «Hva sier UiA om opptaksrammer?».', modell: 'regelsjekk', versjon: VERSJON });
+  }
+
   const delA = utdrag.map((u) => `[${u.nr}] ${u.inst} – ${u.dok}${u.dato ? ` (${u.dato})` : ''}, side ${u.side}:\n${u.tekst}`).join('\n\n');
   const delB = sammendrag.map((s) => `[S${s.nr}] ${s.inst}${s.enhet ? ` (${s.enhet})` : ''}:\n${s.tekst}`).join('\n\n');
   const bruker = `SPØRSMÅL: ${sporsmal}\n\n=== A. UTDRAG FRA DOKUMENTENE ===\n${delA}\n\n=== B. SAMMENDRAG PER INSTITUSJON ===\n${delB || '(ingen)'}`;
@@ -93,5 +100,5 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   }
   const j = (await r.json()) as { model?: string; choices?: { message?: { content?: string } }[] };
   const tekst = j.choices?.[0]?.message?.content?.trim();
-  return tekst ? svar({ svar: tekst, modell: j.model ?? env.MISTRAL_MODEL ?? 'mistral-large-latest' }) : svar({ feil: 'Tomt svar fra KI-tjenesten.' }, 502);
+  return tekst ? svar({ svar: tekst, modell: j.model ?? env.MISTRAL_MODEL ?? 'mistral-large-latest', versjon: VERSJON }) : svar({ feil: 'Tomt svar fra KI-tjenesten.' }, 502);
 };
