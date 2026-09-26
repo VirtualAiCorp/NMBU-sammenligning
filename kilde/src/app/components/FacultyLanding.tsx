@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 import { BookOpen, Building2, Trees, Atom, Leaf, FlaskConical, TreePine, Lock, PawPrint, Users, Home, Landmark, LayoutGrid, Baby } from 'lucide-react';
 import { FACULTY_META as FACULTIES, FACULTY_IDS, type FacultyId } from '../data/facultyMeta';
 import { LagetAv } from './LagetAv';
+import { Forsidenotis } from './Forsidenotis';
 
 export type Faculty = 'hh-figma' | FacultyId | 'nmbu-emner' | 'nmbu-fagmiljo' | 'nmbu-bolig' | 'nmbu-okonomi' | 'nmbu-oppsett' | 'nmbu-sokergrunnlag';
 
@@ -64,6 +65,8 @@ export function FacultyLanding({ onSelect }: Props) {
         <p className="text-center mb-10" style={{ color: 'var(--nmbu-neutral-2)', fontSize: '14px', maxWidth: 520, margin: '0 auto 2.5rem' }}>
           Sammenligning av opptak, karakterer og studiekvalitet per fakultet
         </p>
+
+        <div className="mb-6"><Forsidenotis /></div>
 
         {/* Aktive fakulteter */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-8">

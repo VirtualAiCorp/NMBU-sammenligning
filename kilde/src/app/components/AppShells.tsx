@@ -5,6 +5,7 @@ import {
 } from 'lucide-react';
 import { MenyHint } from './MenyHint';
 import { LagetAv } from './LagetAv';
+import { Forsidenotis } from './Forsidenotis';
 import { FACULTY_META as FACULTIES, ALL_FACULTY_IDS as FACULTY_IDS, useAllFacultyBases, type FacultyId } from '../data/faculties';
 import type { Faculty } from './FacultyLanding';
 import { Matrise, lagRader } from './Matrise';
@@ -57,6 +58,7 @@ export function ShellHome({ onNavigate }: { onNavigate: Nav }) {
   return (
     <div>
       <ShellHeader title="NMBU-sammenligning" subtitle="Alle NMBU-programgrupper mot konkurrentene. Klikk på en rad for detaljer, og åpne analysen derfra." />
+      <div className="mb-5"><Forsidenotis /></div>
       {rader
         ? <Matrise rader={rader} embedded onOpen={(fak, g) => onNavigate(fak, 'analyse', g)} />
         : <div className="rounded-xl p-6 text-sm" style={{ backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-2)' }}>Laster tallene for fakultetene …</div>}
