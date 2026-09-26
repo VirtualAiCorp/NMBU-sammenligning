@@ -5,6 +5,7 @@
 @import './dark-overrides.css';
 @import './tema.css';
 @import './tema-overrides.css';
+@import './skrift.css';
 
 /* Leaflet tooltip override */
 .leaflet-tooltip.map-tooltip {

@@ -1,0 +1,12 @@
+/* Skrift for hele nettsiden: IBM Plex (se fonts.css). Mange komponenter – også de opprinnelige HH-komponentene som
+   ikke skal endres – har fontFamily: 'Lora' eller ui-monospace skrevet rett inn; de fanges her med attributtselektorer. */
+[style*="Lora"] { font-family: 'IBM Plex Serif', Georgia, 'Times New Roman', serif !important; }
+[style*="monospace"] { font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace !important; }
+
+/* Tall i tabeller står i kolonner; tallcellene (høyre- eller midtstilt) får Plex Mono */
+table { font-variant-numeric: tabular-nums; }
+td.text-right, td.text-center, .tabular-nums { font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace; font-variant-numeric: tabular-nums; }
+
+/* Virtual AI Corp-temaet beholder sine skrifter (tema.css); tall og koder i JetBrains Mono */
+:root[data-farge="vac"] [style*="monospace"],
+:root[data-farge="vac"] td.text-right, :root[data-farge="vac"] td.text-center, :root[data-farge="vac"] .tabular-nums { font-family: 'JetBrains Mono', ui-monospace, monospace !important; }

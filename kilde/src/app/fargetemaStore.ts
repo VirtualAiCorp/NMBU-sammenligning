@@ -17,7 +17,7 @@ const KEY = 'fargetema';
 const IDER = FARGETEMAER.map((t) => t.id);
 const listeners = new Set<() => void>();
 /** Skriftene til Virtual AI Corp-temaet, lastet bare når temaet brukes */
-const VAC_FONTER = 'https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap';
+const VAC_FONTER = 'https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=JetBrains+Mono:wght@400;500&display=swap';
 
 function les(): Fargetema {
   try { const v = localStorage.getItem(KEY); return IDER.includes(v as Fargetema) ? (v as Fargetema) : 'nmbu'; } catch { return 'nmbu'; }
