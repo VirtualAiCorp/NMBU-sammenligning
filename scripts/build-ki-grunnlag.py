@@ -324,6 +324,7 @@ def modul_linjer(fak, adm, sb):
                     t = a["total"]
                     grupper = [("21 år eller yngre", a.get("a21")), ("22–24 år", a.get("a24")), ("25–29 år", a.get("a29")), ("30 år eller eldre", a.get("a30"))]
                     tekst = f"høsten {a['aar']}: {nf(t)} registrerte studenter; alder " + ", ".join(f"{n} {nf(pst(v, t), 1)} % ({nf(v)})" for n, v in grupper)
+                    tekst += f" (25 år eller eldre i alt {nf(pst((a.get('a29') or 0) + (a.get('a30') or 0), t), 1)} %, under 25 år {nf(pst((a.get('a21') or 0) + (a.get('a24') or 0), t), 1)} %)"
                     sum_alder = sum(v or 0 for _, v in grupper)
                     if sum_alder < t:
                         tekst += f" (aldersgruppene summerer til {nf(sum_alder)} fordi DBH skjermer grupper på 1–2 personer)"
@@ -495,6 +496,10 @@ def sokergrunnlag():
         ut.append(["Søkergrunnlaget", navn, f"SØKERGRUNNLAGET · {navn}: befolkning etter alder (SSB 07459 til {siste_faktisk}, SSB 14746 framskrevet fra {s['forsteFramskrevne']}, hovedalternativet). "
                    + "; ".join(deler) + "." + (f" Studiesteder i fylket i sammenligningene: {', '.join(sorted(steder[f]))}." if f in steder else ""), "s", "nmbu-sokergrunnlag", ""])
     if endring:
+        ned = sorted([e for e in endring if e[1] < 0], key=lambda x: x[1])
+        if ned:
+            ut.append(["Søkergrunnlaget", "rangering", f"RANGERING SØKERGRUNNLAGET størst nedgang i antall 19-åringer fra {siste_faktisk} til 2035 (SSB, hovedalternativet), størst nedgang først ({len(ned)} av {len(endring)} fylker går ned): "
+                       + "; ".join(f"{i + 1}. {n} {nf(v, 1)} %" for i, (n, v) in enumerate(ned)) + ".", "r", "nmbu-sokergrunnlag", ""])
         endring.sort(key=lambda x: -x[1])
         ut.append(["Søkergrunnlaget", "rangering", f"RANGERING SØKERGRUNNLAGET endring i antall 19-åringer fra {siste_faktisk} til 2035 (SSB, hovedalternativet), sortert fra størst økning til størst nedgang (negative tall er nedgang): "
                    + "; ".join(f"{i + 1}. {n} {'+' if v >= 0 else ''}{nf(v, 1)} %" for i, (n, v) in enumerate(endring)) + ".", "r", "nmbu-sokergrunnlag", ""])
@@ -548,6 +553,11 @@ def strategi_linjer(fak):
                 bit = f"STRATEGIER · {i['navn']} (forts.):"
             bit += " | " + d_[:2200]
         ut.append(["Strategier mot 2030", i["navn"], bit, "f", fak, ""])
+    # HH selv (fakultetet verktøyet er laget for), så modellen ikke tolker fravær i kildene som «ingen planer»
+    if fak == "hh":
+        ut.append(["Strategier mot 2030", "NMBU HH", "STRATEGIER · NMBU Handelshøyskolen (HH) selv: AACSB-akkreditert fra november 2025 (Khrono 04.11.2025; "
+                   "BI, NHH, UiA og NMBU er de fire norske AACSB-institusjonene). HHs egne strategier og handlingsplan er ikke en del av gjennomgangen av konkurrentene; "
+                   "HH arbeider med sin strategiske handlingsplan.", "f", fak, ""])
     sy = d.get("syntese")
     if sy:
         for tittel, punkter in (("går igjen", [f"{g['tittel']} ({', '.join(g['inst'])}): {g['tekst']}" for g in sy.get("gaarIgjen", [])]),
