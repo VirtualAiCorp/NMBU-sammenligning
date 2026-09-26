@@ -4,6 +4,8 @@ import { Info, ExternalLink, Filter } from 'lucide-react';
 import type { FacultyData } from '../data/faculties';
 import { REVENUE_GROUPS, REVENUE_SATSER, REVENUE_HENTET, type RevenueProgram, type RevenueYear } from '../data/revenueData';
 import { landsamColorForGroups } from '../data/landsamPalette';
+import { NmbuProduksjon } from './NmbuProduksjon';
+import type { FacultyId } from '../data/facultyMeta';
 
 /**
  * Anslått resultatbasert inntekt per program (finansieringssystemet fra 2025): egenfinansierte studiepoeng × sats for
@@ -214,6 +216,8 @@ export function FacultyRevenue({ faculty }: { faculty: FacultyData }) {
           )}
         </div>
       </div>
+
+      <NmbuProduksjon fak={faculty.id as FacultyId} />
 
       <div className="flex items-start gap-2 text-xs rounded-lg px-4 py-3 mt-5" style={{ backgroundColor: 'var(--nmbu-beige-light)', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-2)' }}>
         <Info className="w-3.5 h-3.5 shrink-0 mt-0.5" />

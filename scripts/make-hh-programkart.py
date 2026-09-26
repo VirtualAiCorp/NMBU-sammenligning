@@ -119,6 +119,22 @@ MEI = [
     ("uia_mei", "UiA", "1171", "Kristiansand", "Shift entreprenørskap og innovasjon (master 2 år)", None, "master2", False, ["M-SHIFTINN"], None),
     ("kristiania_mei", "Kristiania", "8253", "Oslo", "Innovasjonsledelse (master 2 år)", None, "master2", True, ["MIN"], None),
 ]
+# Årsstudier og deltidsstudier i økonomi og ledelse: samme utvalg som i den opprinnelige HH-analysen (annualStudiesData.ts).
+# DBH-kodene er funnet i DBH 347 (nivå AR). Der Samordna-programmet kan svare til flere DBH-varianter (INN), eller det ikke
+# finnes noe årsstudium med samme navn (UiS Økonomi og jus), er DBH-kode utelatt: opptakstallene er med, men ikke emner og inntekt.
+ARS = [
+    ("nmbu_bel", "NMBU", "1173", "Ås", "Bærekraftig økonomi og ledelse, deltid (årsstudium)", "192253", "aarsstudium", True, ["KVU-BEDØK"], None),
+    ("uit_ledelse_ar", "UiT Ledelse", "1130", "Alta", "Ledelse, deltid (årsstudium)", "186664", "aarsstudium", True, ["ST-LEDE"], None),
+    ("ntnu_okled_ar", "NTNU", "1150", "Gjøvik", "Økonomi og ledelse, deltid (årsstudium)", "194583", "aarsstudium", True, ["ÅRØKLEDF"], None),
+    ("inn_orgled_ar", "INN Org. og ledelse", "INN", "Åmot", "Organisasjon og ledelse, deltid, nettbasert (årsstudium)", "209583", "aarsstudium", True, None, None),
+    ("nord_hr_ar", "Nord HR", "1174", "Bodø", "HR-ledelse, deltid (årsstudium)", "204158", "aarsstudium", True, ["PK1"], "DBH-koden er antatt: årsstudium i personalledelse og kompetanseutvikling."),
+    ("inn_bedok_ar", "INN Bedriftsøk.", "INN", "Åmot", "Bedriftsøkonomi, deltid (årsstudium)", "209207", "aarsstudium", True, None, None),
+    ("uis_okjus_ar", "UiS Øk. og jus", "1160", "Stavanger", "Økonomi og jus (årsstudium)", "217097", "aarsstudium", True, None, None),
+    ("inn_offstyr_ar", "INN Off. styring", "INN", "Åmot", "Offentlig styring, ledelse og økonomi, deltid (årsstudium)", "209215", "aarsstudium", False, ["OFFSTYRK"], None),
+    ("uit_bedok_ar", "UiT Bedriftsøk.", "1130", "Alta", "Bedriftsøkonomi, deltid (årsstudium)", "186164", "aarsstudium", False, ["ST-BEDØK"], None),
+    ("himolde_log_ar", "HiMolde Logistikk", "0232", "Molde", "Logistikk (årsstudium)", "211627", "aarsstudium", False, ["ALOGNETT"], "DBH-koden er antatt: årsstudium i logistikk, nettbasert."),
+    ("nla_bei_ar", "NLA", "8223", "Oslo", "Bærekraftig entreprenørskap og innovasjon (årsstudium)", "254393", "aarsstudium", False, ["4BEI-N"], None),
+]
 GRUPPER = [
     ("oa", "Økonomi og administrasjon", "bachelor", OA,
      "Sammenligner NMBUs bachelor i økonomi og administrasjon med de samme programmene som i den opprinnelige HH-analysen.",
@@ -135,6 +151,9 @@ GRUPPER = [
     ("mecon", "Samfunnsøkonomi (master)", "master2", MECON,
      "Sammenligner NMBUs master i samfunnsøkonomi og bærekraft med masterprogrammene i samfunnsøkonomi.",
      "Lokale opptak; tall fra DBH 379. NMBUs nye master i samfunnsøkonomi og miljøforvaltning (M-EEG, fra 2024) er ikke med ennå."),
+    ("aarsstudier", "Årsstudier i økonomi og ledelse", "aarsstudium", ARS,
+     "Sammenligner NMBUs årsstudium i bærekraftig økonomi og ledelse (deltid, nett og samlinger) med årsstudier og deltidsstudier i økonomi og ledelse.",
+     "Samme utvalg som årsstudieanalysen i den opprinnelige HH-analysen. Alle tar opp gjennom Samordna, og de fleste tok opp alle kvalifiserte. Årsstudiet er NMBUs største studieprogram målt i studiepoeng (se Inntekt). Årsstudier har ikke gjennomføring på normert tid som gradsprogram, og gir ikke fullføringsuttelling i finansieringssystemet."),
     ("mei", "Entreprenørskap og innovasjon (master)", "master2", MEI,
      "Sammenligner NMBUs master i entreprenørskap og innovasjon med entreprenørskapsmasterne ved andre institusjoner.",
      "Lokale opptak; tall fra DBH 379."),
@@ -173,7 +192,7 @@ def main():
                           "source": "SO" if so else "local", "url": URL.get(pid), "localData": None})
             if koder:
                 d = {"entryId": pid, "institusjonskode": "1177" if inst == "INN" else inst, "studieprogramkoder": koder, "studieprogramnavn": navn,
-                     "nivaakode": "M2" if typ == "master2" else ("M5" if typ == "master5" else "B3")}
+                     "nivaakode": "M2" if typ == "master2" else ("M5" if typ == "master5" else ("AR" if typ == "aarsstudium" else "B3"))}
                 if inst == "INN":
                     d["institusjonskoder"] = INN
                 if merknad:

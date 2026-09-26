@@ -1,4 +1,4 @@
-// GENERERT av scripts/build-completion.py 2026-09-23 – ikke rediger for hånd.
+// GENERERT av scripts/build-completion.py 2026-09-26 – ikke rediger for hånd.
 // Landssnitt: DBH/HKDIR 707 (studieprogramnivå), 706 (studiumnivå), 705 (sektornivå), summert over alle institusjoner per startår og nivåkode.
 export interface NationalRef { startkull: number; fullfortNormert: number; fullfort1: number; fullfort2: number; frafalt: number; frafalt2: number; }
 export interface NationalCohort { aar: number; normertAar: number | null; program?: NationalRef; inst?: NationalRef; sektor?: NationalRef; }

@@ -125,7 +125,8 @@ def main():
                     st = satser[sats_aar]
                     k_ant = kand.get(p["id"], {}).get(y)
                     inn_sp = sum(s[k] * st[k] for k in s)
-                    inn_k = (k_ant or 0) * st["G3"]
+                    # Fullføringsuttelling (G3) gjelder bare gradsprogram, ikke årsstudier
+                    inn_k = 0 if g["level"] == "aarsstudium" else (k_ant or 0) * st["G3"]
                     years.append({"aar": int(y), "budsjettaar": int(budsjett), "satsAar": int(sats_aar), "forelopig": sats_aar != budsjett,
                                   "sp1": round(s["1"], 1), "sp2": round(s["2"], 1), "sp3": round(s["3"], 1),
                                   "kandidater": k_ant, "registrerte": reg.get(p["id"], {}).get(y), "innSp": round(inn_sp), "innFullforing": round(inn_k), "total": round(inn_sp + inn_k)})
@@ -136,6 +137,40 @@ def main():
             groups.append({"id": g["id"], "label": g["label"], "level": g["level"], "nmbuIds": [p["id"] for p in g["programs"] if p.get("isNmbu")],
                            "defaultIds": [p["id"] for p in g["programs"] if p.get("default") and any(x["entryId"] == p["id"] for x in progs)], "programs": progs})
         out[fak] = groups
+
+    # Alle NMBUs programkoder etter studiepoengproduksjon (også årsstudier, enkeltemner og videreutdanning, som ikke
+    # er med i sammenligningene). Nivå og eier fra DBH 347 (data/hh/kilder/dbh347/1173.json).
+    AVD = {"Handelshøyskolen": "hh", "Fakultet for landskap og samfunn": "landsam", "Fakultet for realfag og teknologi": "realtek",
+           "Fakultet for biovitenskap": "biovit", "Fakultet for kjemi, bioteknologi og matvitenskap": "kbm",
+           "Fakultet for miljøvitenskap og naturforvaltning": "mina", "Veterinærhøgskolen": "vet"}
+    p347 = {r["kode"]: r for r in json.load(open(ROOT / "data" / "hh" / "kilder" / "dbh347" / "1173.json", encoding="utf-8")) if isinstance(r, dict) and "kode" in r}
+    i_sammenligning = {c for fak in faks for p in faks[fak][1].values() if p["institusjonskode"] == "1173" for c in p["studieprogramkoder"]}
+
+    def kategori(kode, niva):
+        if kode == "UTVEKSLING":
+            return "Utvekslingsstudenter"
+        if kode.startswith("EE-"):
+            return "Enkeltemner"
+        if niva == "AR":
+            return "Årsstudier og ettårige studier"
+        if niva in ("LN", "HN") or kode.startswith(("KVU-", "VU-")):
+            return "Videreutdanning"
+        return {"B3": "Bachelor", "M2": "Toårig master", "M5": "Femårig master", "ME": "Erfaringsbasert master", "FU": "Forskerutdanning", "PR": "Profesjonsstudium"}.get(niva, "Annet")
+    nmbu_prog = []
+    for (inst, kode), per in sp.items():
+        if inst != "1173" or not kode:
+            continue
+        info = p347.get(kode, {})
+        aar = {}
+        for y, d in sorted(per.items()):
+            budsjett = str(int(y) + 2)
+            st = satser[budsjett if budsjett in satser and budsjett in kjente else kjente[-1]]
+            aar[y] = {"sp": round(sum(d.values()), 1), "inn": round(sum(d[k] * st[k] for k in d))}
+        if not any(v["sp"] for v in aar.values()):
+            continue
+        nmbu_prog.append({"kode": kode, "navn": info.get("navn", kode), "niva": info.get("niva"), "fak": AVD.get(info.get("avd", ""), "nmbu"),
+                          "kategori": kategori(kode, info.get("niva")), "iSammenligning": kode in i_sammenligning, "aar": aar})
+    nmbu_prog.sort(key=lambda x: -max((v["sp"] for v in x["aar"].values()), default=0))
 
     today = dt.date.today().isoformat()
     def yr(y):
@@ -161,10 +196,14 @@ def main():
                          f"programnavn: {ts(p['programnavn'])}, years: [{', '.join(yr(y) for y in p['years'])}] }},")
             L.append("  ] },")
         L.append(" ],")
-    L += ["};", ""]
+    L += ["};",
+          "/** Alle NMBUs programkoder med studiepoengproduksjon (60-sp-enheter = studentårsverk) og anslått studiepoenguttelling per år,",
+          " *  også årsstudier, enkeltemner og videreutdanning. fak = eierfakultet (DBH 347), «nmbu» = uspesifisert underenhet. */",
+          "export interface NmbuProgramProduksjon { kode: string; navn: string; niva: string | null; fak: string; kategori: string; iSammenligning: boolean; aar: Record<string, { sp: number; inn: number }> }",
+          f"export const NMBU_PRODUKSJON: NmbuProgramProduksjon[] = {json.dumps(nmbu_prog, ensure_ascii=False)};", ""]
     dest = ROOT / "kilde" / "src" / "app" / "data" / "revenueData.ts"
     dest.write_text("\n".join(L), encoding="utf-8")
-    json.dump({"generert": today, "satser": {y: satser[y] for y in kjente}, "grupper": out}, open(str(dest)[:-3] + ".json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    json.dump({"generert": today, "satser": {y: satser[y] for y in kjente}, "grupper": out, "nmbuProduksjon": nmbu_prog}, open(str(dest)[:-3] + ".json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(f"{n_prog} program med inntektsanslag. Skrev {dest.name}")
 
 

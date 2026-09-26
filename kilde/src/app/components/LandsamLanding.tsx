@@ -44,6 +44,7 @@ const LEVEL_LABEL: Record<string, string> = {
   bachelor: 'Bachelor',
   master5:  'Femårig master',
   master2:  'Toårig master',
+  aarsstudium: 'Årsstudium',
 };
 
 export function LandsamLanding({ faculty, onOpenAnalysis, onOpenCourses, onOpenMarketStatus, onOpenStudiebarometer, onOpenCompletion, onOpenStudents, onOpenStaff, onOpenHousing, onOpenApplicantBase, onOpenEconomy, onOpenRevenue, onOpenLabourMarket, onBackToFaculties, onOpenOriginalHH, onOpenIntern }: Props) {

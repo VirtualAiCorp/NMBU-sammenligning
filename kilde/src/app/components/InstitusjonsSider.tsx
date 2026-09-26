@@ -5,6 +5,7 @@ import { STAFF_INSTITUTIONS, STAFF_FACULTIES, STAFF_NMBU_FACULTIES } from '../da
 import type { FacultyMeta } from '../data/facultyMeta';
 import { FACULTY_META } from '../data/facultyMeta';
 import { Forskningsfinansiering } from './Forskningsfinansiering';
+import { NmbuProduksjon } from './NmbuProduksjon';
 
 /**
  * Økonomi- og fagmiljøsidene (per fakultet og for hele NMBU). Egen modul, slik at økonomi- og tilsattdataene
@@ -41,7 +42,12 @@ export function FacultyStaffPage({ fac }: { fac: FacultyMeta }) {
 }
 
 export function NmbuEconomyPage() {
-  return <EconomyComparison units={ECON_UNITS} />;
+  return (
+    <>
+      <EconomyComparison units={ECON_UNITS} />
+      <NmbuProduksjon />
+    </>
+  );
 }
 
 export function NmbuStaffPage() {

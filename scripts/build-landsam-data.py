@@ -495,7 +495,7 @@ def render_ts(groups_out, generated_date: str) -> str:
     lines.append("// 0 i poenggrense = alle kvalifiserte kom inn · null = data ikke tilgjengelig")
     lines.append("import type { FullAdmissionEntry, FullYearData } from './fullAdmissionData';")
     lines.append("")
-    lines.append("export type LandsamLevel = 'bachelor' | 'master5' | 'master2';")
+    lines.append("export type LandsamLevel = 'bachelor' | 'master5' | 'master2' | 'aarsstudium';")
     lines.append("")
     lines.append("export interface LandsamGroup {")
     lines.append("  id: string;")

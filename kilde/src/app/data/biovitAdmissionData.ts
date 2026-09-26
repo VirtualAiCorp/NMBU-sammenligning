@@ -3,7 +3,7 @@
 // 0 i poenggrense = alle kvalifiserte kom inn · null = data ikke tilgjengelig
 import type { FullAdmissionEntry, FullYearData } from './fullAdmissionData';
 
-export type LandsamLevel = 'bachelor' | 'master5' | 'master2';
+export type LandsamLevel = 'bachelor' | 'master5' | 'master2' | 'aarsstudium';
 
 export interface LandsamGroup {
   id: string;

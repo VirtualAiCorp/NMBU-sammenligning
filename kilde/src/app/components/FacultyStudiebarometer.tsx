@@ -21,6 +21,7 @@ const LEVEL_LABEL: Record<LandsamLevel, string> = {
   bachelor: 'Bachelor',
   master5:  'Femårig master',
   master2:  'Toårig master',
+  aarsstudium: 'Årsstudium',
 };
 
 /** De sju dimensjonene som vises i radaren (helhetsvurdering står for seg selv). */

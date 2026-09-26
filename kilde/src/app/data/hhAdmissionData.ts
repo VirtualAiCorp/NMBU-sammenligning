@@ -1,9 +1,9 @@
-// GENERERT av scripts/build-landsam-data.py 2026-09-25 – ikke rediger for hånd.
+// GENERERT av scripts/build-landsam-data.py 2026-09-26 – ikke rediger for hånd.
 // Kilder: Samordna opptak programtabell 2026 (søkertall 2021–2026) og SO poenggrenserapport (Tableau) 2020–2026, hovedopptak; opptakspoeng (op_*/kp_*) fra DBH tabell 571.
 // 0 i poenggrense = alle kvalifiserte kom inn · null = data ikke tilgjengelig
 import type { FullAdmissionEntry, FullYearData } from './fullAdmissionData';
 
-export type LandsamLevel = 'bachelor' | 'master5' | 'master2';
+export type LandsamLevel = 'bachelor' | 'master5' | 'master2' | 'aarsstudium';
 
 export interface LandsamGroup {
   id: string;
@@ -921,6 +921,125 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
           '2021': Y(64, 59, null, 35.6, 28, 27, null, null, 20, 10),
           '2022': Y(66, 61, null, 42.6, 35, 35, null, null, 27, 8),
           '2023': Y(32, 31, null, 41.9, 10, 8, null, null, 0, 0),
+        },
+      },
+    ],
+  },
+  {
+    id: 'aarsstudier', label: 'Årsstudier i økonomi og ledelse', level: 'aarsstudium',
+    desc: 'Sammenligner NMBUs årsstudium i bærekraftig økonomi og ledelse (deltid, nett og samlinger) med årsstudier og deltidsstudier i økonomi og ledelse.',
+    note: 'Samme utvalg som årsstudieanalysen i den opprinnelige HH-analysen. Alle tar opp gjennom Samordna, og de fleste tok opp alle kvalifiserte. Årsstudiet er NMBUs største studieprogram målt i studiepoeng (se Inntekt). Årsstudier har ikke gjennomføring på normert tid som gradsprogram, og gir ikke fullføringsuttelling i finansieringssystemet.',
+    nmbuIds: ['nmbu_bel'], defaultIds: ['nmbu_bel', 'uit_ledelse_ar', 'ntnu_okled_ar', 'inn_orgled_ar', 'nord_hr_ar', 'inn_bedok_ar', 'uis_okjus_ar'],
+    entries: [
+      {
+        id: 'nmbu_bel', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet',
+        studiekode: '192253', studiested: 'Ås', type: 'aarsstudium',
+        years: {
+          '2023': { ...Y(3087, 1026, 200, 67.7, 2949, 1478, 0, 0), pgs_fv: 0.0, pgs_ord: 0.0, vl_fv: 0, vl_ord: 0, vls_fv: 0, vls_ord: 0 },
+          '2024': { ...Y(3312, 1134, 950, 63.7, 3159, 1596, 0, 0), pgs_fv: 0.0, pgs_ord: 28.0, vl_fv: 0, vl_ord: 0, vls_fv: 0, vls_ord: 1 },
+          '2025': { ...Y(2958, 1038, 950, 65.2, 2817, 1393, 0, 0), pgs_fv: 0.0, pgs_ord: 0.0, vl_fv: 0, vl_ord: 0, vls_fv: 0, vls_ord: 0 },
+          '2026': { ...Y(3046, 986, 950, 64.6, 2899, 1391, 0, 0), pgs_fv: 0.0, pgs_ord: 0.0, vl_fv: 0, vl_ord: 0, vls_fv: 0, vls_ord: 0 },
+        },
+      },
+      {
+        id: 'uit_ledelse_ar', shortName: 'UiT Ledelse', institusjon: 'UiT Norges arktiske universitet',
+        studiekode: '186664', studiested: 'Alta', type: 'aarsstudium',
+        years: {
+          '2020': { ...Y(null, null, null, null, null, null, 0, 48.7), pgs_fv: 0.0, pgs_ord: 48.6, vl_fv: 0, vl_ord: 489, vls_fv: 0, vls_ord: 280 },
+          '2021': { ...Y(3053, 1228, 800, 62.9, 2907, 1100, 0, 45.6), pgs_fv: 0.0, pgs_ord: 44.5, vl_fv: 0, vl_ord: 385, vls_fv: 0, vls_ord: 205 },
+          '2022': { ...Y(2801, 965, 800, 64.9, 2680, 1200, 0, 40.2), pgs_fv: 0.0, pgs_ord: 40.2, vl_fv: 0, vl_ord: 96, vls_fv: 0, vls_ord: 62 },
+          '2023': { ...Y(3445, 1287, 800, 64.2, 3291, 1100, 0, 46.7), pgs_fv: 0.0, pgs_ord: 46.7, vl_fv: 0, vl_ord: 473, vls_fv: 0, vls_ord: 287 },
+          '2024': { ...Y(3865, 1416, 800, 62.8, 3706, 1200, 0, 47.3), pgs_fv: 0.0, pgs_ord: 47.3, vl_fv: 0, vl_ord: 579, vls_fv: 0, vls_ord: 345 },
+          '2025': { ...Y(3667, 1214, 700, 62.9, 3544, 1200, 0, 46.2), pgs_fv: 0.0, pgs_ord: 46.2, vl_fv: 0, vl_ord: 398, vls_fv: 0, vls_ord: 250 },
+          '2026': { ...Y(3099, 668, 700, 61.8, 2979, 1200, 0, 39.2), pgs_fv: 0.0, pgs_ord: 0.0, vl_fv: 0, vl_ord: 61, vls_fv: 0, vls_ord: 0 },
+        },
+      },
+      {
+        id: 'ntnu_okled_ar', shortName: 'NTNU', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
+        studiekode: '194583', studiested: 'Gjøvik', type: 'aarsstudium',
+        years: {
+          '2025': { ...Y(3567, 846, 50, 55.2, 3409, 200, 0, 61.5), pgs_fv: 0.0, pgs_ord: 61.5, vl_fv: 0, vl_ord: 1038, vls_fv: 0, vls_ord: 562 },
+          '2026': { ...Y(2749, 703, 50, 54.6, 2633, 230, 0, 61.1), pgs_fv: 0.0, pgs_ord: 61.1, vl_fv: 0, vl_ord: 753, vls_fv: 0, vls_ord: 424 },
+        },
+      },
+      {
+        id: 'inn_orgled_ar', shortName: 'INN Org. og ledelse', institusjon: 'Universitetet i Innlandet',
+        studiekode: '209583', studiested: 'Åmot', type: 'aarsstudium',
+        years: {
+          '2022': { ...Y(3299, 1417, 200, 69.3, 3138, 400, 0, 55.2), pgs_fv: 0.0, pgs_ord: 55.2, vl_fv: 0, vl_ord: 1226, vls_fv: 0, vls_ord: 731 },
+          '2023': { ...Y(3253, 1404, 220, 74.6, 3097, 440, 0, 55.2), pgs_fv: 0.0, pgs_ord: 55.2, vl_fv: 0, vl_ord: 1105, vls_fv: 0, vls_ord: 687 },
+          '2024': { ...Y(3479, 1295, 200, 71.2, 3331, 385, 0, 56.1), pgs_fv: 0.0, pgs_ord: 55.6, vl_fv: 0, vl_ord: 1196, vls_fv: 0, vls_ord: 633 },
+          '2025': { ...Y(3255, 1206, 250, 75.2, 3138, 600, 0, 53.5), pgs_fv: 0.0, pgs_ord: 52.6, vl_fv: 0, vl_ord: 846, vls_fv: 0, vls_ord: 500 },
+          '2026': { ...Y(3227, 1007, 350, 71.8, 3078, 620, 0, 52.6), pgs_fv: 0.0, pgs_ord: 52.5, vl_fv: 0, vl_ord: 829, vls_fv: 0, vls_ord: 478 },
+        },
+      },
+      {
+        id: 'nord_hr_ar', shortName: 'Nord HR', institusjon: 'Nord universitet',
+        studiekode: '204158', studiested: 'Bodø', type: 'aarsstudium',
+        years: {
+          '2026': { ...Y(4030, 1396, 40, 83.1, 3838, 70, 37.0, 63.9), pgs_fv: 0.0, pgs_ord: 61.1, vl_fv: 14, vl_ord: 1649, vls_fv: 0, vls_ord: 845 },
+        },
+      },
+      {
+        id: 'inn_bedok_ar', shortName: 'INN Bedriftsøk.', institusjon: 'Universitetet i Innlandet',
+        studiekode: '209207', studiested: 'Åmot', type: 'aarsstudium',
+        years: {
+          '2022': { ...Y(1353, 297, 50, 57.2, 1270, 130, 0, 54.1), pgs_fv: 0.0, pgs_ord: 51.0, vl_fv: 0, vl_ord: 386, vls_fv: 0, vls_ord: 177 },
+          '2023': { ...Y(1243, 234, 65, 54.7, 1174, 140, 0, 52.9), pgs_fv: 0.0, pgs_ord: 52.6, vl_fv: 0, vl_ord: 243, vls_fv: 0, vls_ord: 155 },
+          '2024': { ...Y(1811, 376, 65, 58.0, 1703, 120, 0, 58.6), pgs_fv: 0.0, pgs_ord: 58.5, vl_fv: 0, vl_ord: 479, vls_fv: 0, vls_ord: 233 },
+          '2025': { ...Y(1344, 248, 65, 57.7, 1273, 130, 0, 53.8), pgs_fv: 0.0, pgs_ord: 52.0, vl_fv: 0, vl_ord: 284, vls_fv: 0, vls_ord: 126 },
+          '2026': { ...Y(1586, 294, 65, 58.5, 1482, 135, 0, 57.6), pgs_fv: 0.0, pgs_ord: 57.6, vl_fv: 0, vl_ord: 387, vls_fv: 0, vls_ord: 205 },
+        },
+      },
+      {
+        id: 'uis_okjus_ar', shortName: 'UiS Øk. og jus', institusjon: 'Universitetet i Stavanger',
+        studiekode: '217097', studiested: 'Stavanger', type: 'aarsstudium',
+        years: {
+          '2026': { ...Y(3513, 955, 90, 59.6, 3357, 400, 31.9, 59.2), pgs_fv: 31.3, pgs_ord: 59.0, vl_fv: 15, vl_ord: 1019, vls_fv: 7, vls_ord: 554 },
+        },
+      },
+      {
+        id: 'inn_offstyr_ar', shortName: 'INN Off. styring', institusjon: 'Universitetet i Innlandet',
+        studiekode: '209215', studiested: 'Åmot', type: 'aarsstudium',
+        years: {
+          '2020': { ...Y(null, null, null, null, null, null, 0, 0), pgs_fv: 0.0, pgs_ord: 0.0, vl_fv: 0, vl_ord: 0, vls_fv: 0, vls_ord: 0 },
+          '2021': { ...Y(777, 153, 80, 64.1, 738, 190, 0, 43.9), pgs_fv: 0.0, pgs_ord: 39.9, vl_fv: 0, vl_ord: 97, vls_fv: 0, vls_ord: 13 },
+          '2022': { ...Y(519, 94, 80, 61.7, 491, 178, 0, 0), pgs_fv: 0.0, pgs_ord: 0.0, vl_fv: 0, vl_ord: 0, vls_fv: 0, vls_ord: 0 },
+          '2023': { ...Y(576, 114, 80, 57.0, 546, 202, 0, 0), pgs_fv: 0.0, pgs_ord: 0.0, vl_fv: 0, vl_ord: 0, vls_fv: 0, vls_ord: 0 },
+          '2024': { ...Y(657, 108, 80, 52.8, 627, 160, 0, 44.0), pgs_fv: 0.0, pgs_ord: 43.8, vl_fv: 0, vl_ord: 53, vls_fv: 0, vls_ord: 34 },
+          '2026': { ...Y(2245, 334, 80, 68.6, 2167, 200, 0, 53.2), pgs_fv: 0.0, pgs_ord: 53.1, vl_fv: 0, vl_ord: 500, vls_fv: 0, vls_ord: 301 },
+        },
+      },
+      {
+        id: 'uit_bedok_ar', shortName: 'UiT Bedriftsøk.', institusjon: 'UiT Norges arktiske universitet',
+        studiekode: '186164', studiested: 'Alta', type: 'aarsstudium',
+        years: {
+          '2020': { ...Y(null, null, null, null, null, null, 0, 0), pgs_fv: 0.0, pgs_ord: 0.0, vl_fv: 0, vl_ord: 0, vls_fv: 0, vls_ord: 0 },
+          '2021': { ...Y(1662, 404, 400, 56.2, 1545, 659, 0, 0), pgs_fv: 0.0, pgs_ord: 30.2, vl_fv: 0, vl_ord: 0, vls_fv: 0, vls_ord: 1 },
+          '2022': { ...Y(1339, 298, 400, 48.3, 1253, 448, 0, 0), pgs_fv: 0.0, pgs_ord: 0.0, vl_fv: 0, vl_ord: 0, vls_fv: 0, vls_ord: 0 },
+          '2023': { ...Y(1756, 374, 400, 55.9, 1632, 549, 0, 0), pgs_fv: 0.0, pgs_ord: 0.0, vl_fv: 0, vl_ord: 0, vls_fv: 0, vls_ord: 0 },
+          '2024': { ...Y(2073, 413, 400, 53.5, 1962, 761, 0, 0), pgs_fv: 0.0, pgs_ord: 0.0, vl_fv: 0, vl_ord: 0, vls_fv: 0, vls_ord: 0 },
+          '2025': { ...Y(1729, 272, 400, 50.4, 1633, 564, 0, 0), pgs_fv: 0.0, pgs_ord: 0.0, vl_fv: 0, vl_ord: 0, vls_fv: 0, vls_ord: 0 },
+          '2026': { ...Y(1505, 235, 400, 51.5, 1425, 482, 0, 0), pgs_fv: 0.0, pgs_ord: 0.0, vl_fv: 0, vl_ord: 0, vls_fv: 0, vls_ord: 0 },
+        },
+      },
+      {
+        id: 'himolde_log_ar', shortName: 'HiMolde Logistikk', institusjon: 'Høgskolen i Molde',
+        studiekode: '211627', studiested: 'Molde', type: 'aarsstudium',
+        years: {
+          '2023': { ...Y(1322, 321, 50, 55.8, 1231, 453, 0, 0), pgs_fv: 0.0, pgs_ord: 0.0, vl_fv: 0, vl_ord: 0, vls_fv: 0, vls_ord: 0 },
+          '2024': { ...Y(1440, 404, 400, 55.0, 1355, 574, 0, 0), pgs_fv: 0.0, pgs_ord: 0.0, vl_fv: 0, vl_ord: 0, vls_fv: 0, vls_ord: 0 },
+          '2025': { ...Y(1682, 554, 300, 47.7, 1590, 689, 0, 0), pgs_fv: 0.0, pgs_ord: 0.0, vl_fv: 0, vl_ord: 0, vls_fv: 0, vls_ord: 0 },
+          '2026': { ...Y(1827, 585, 300, 48.0, 1732, 758, 0, 0), pgs_fv: 0.0, pgs_ord: 0.0, vl_fv: 0, vl_ord: 0, vls_fv: 0, vls_ord: 0 },
+        },
+      },
+      {
+        id: 'nla_bei_ar', shortName: 'NLA', institusjon: 'NLA Høgskolen',
+        studiekode: '254393', studiested: 'Oslo', type: 'aarsstudium',
+        years: {
+          '2024': { ...Y(1527, 158, 25, 57.0, 1409, 250, 0, 46.0), pgs_fv: 0.0, pgs_ord: 0.0, vl_fv: 0, vl_ord: 91, vls_fv: 0, vls_ord: 0 },
+          '2025': { ...Y(1342, 153, 25, 58.8, 1266, 277, 0, 0), pgs_fv: 0.0, pgs_ord: 0.0, vl_fv: 0, vl_ord: 0, vls_fv: 0, vls_ord: 0 },
+          '2026': { ...Y(1178, 108, 25, 56.5, 1104, 265, 0, 0), pgs_fv: 0.0, pgs_ord: 0.0, vl_fv: 0, vl_ord: 0, vls_fv: 0, vls_ord: 0 },
         },
       },
     ],

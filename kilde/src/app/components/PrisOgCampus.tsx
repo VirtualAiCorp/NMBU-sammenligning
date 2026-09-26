@@ -45,7 +45,7 @@ export function PrisOgCampus({ group, colorFor }: { group: LandsamGroup; colorFo
               const p = STUDIEAVGIFT[e.id];
               const c = CAMPUS[e.id]?.at(-1);
               const sum = c ? c.campuser.reduce((s, x) => s + x.antall, 0) : 0;
-              const aar = group.level === 'bachelor' ? 3 : 2;
+              const aar = group.level === 'bachelor' ? 3 : group.level === 'aarsstudium' ? 1 : 2;
               return (
                 <tr key={e.id} style={{ borderBottom: '1px solid var(--nmbu-beige-light)' }}>
                   <td className="px-3 py-2" style={{ fontWeight: 600 }}>
@@ -77,7 +77,7 @@ export function PrisOgCampus({ group, colorFor }: { group: LandsamGroup; colorFo
         </table>
       </div>
       <div style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)', marginTop: 6 }}>
-        «Hele løpet» = pris per år × normert tid ({group.level === 'bachelor' ? '3 år' : '2 år'}), uten prisøkning. BI-masterne: pris for eksterne søkere (BIs egne kandidater betaler mindre).
+        «Hele løpet» = pris per år × normert tid ({group.level === 'bachelor' ? '3 år' : group.level === 'aarsstudium' ? '1 år' : '2 år'}), uten prisøkning. BI-masterne: pris for eksterne søkere (BIs egne kandidater betaler mindre).
         Kristiania oppgir pris per semester. Priser hentet {hentet}; oppdateres hver vår.
       </div>
     </div>

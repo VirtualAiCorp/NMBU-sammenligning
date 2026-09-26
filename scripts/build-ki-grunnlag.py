@@ -21,7 +21,7 @@ FAKULTETER = {"hh": "Handelshøyskolen", "landsam": "Fakultet for landskap og sa
               "biovit": "Fakultet for biovitenskap", "kbm": "Fakultet for kjemi, bioteknologi og matvitenskap",
               "mina": "Fakultet for miljøvitenskap og naturforvaltning", "vet": "Veterinærhøgskolen"}
 KORT = {"hh": "HH", "landsam": "LANDSAM", "realtek": "REALTEK", "biovit": "BIOVIT", "kbm": "KBM", "mina": "MINA", "vet": "VET"}
-NIVAA = {"bachelor": "bachelor", "master5": "femårig master", "master2": "toårig master"}
+NIVAA = {"bachelor": "bachelor", "master5": "femårig master", "master2": "toårig master", "aarsstudium": "årsstudium"}
 # Metodeavsnitt som er relevante for brukerne (ikke arbeidsform, kommandoer, passord, intern analyse eller teknikk)
 UTELAT = {"3", "4", "5", "6", "8", "9", "10", "16", "18", "19", "22", "24", "33", "37"}
 
@@ -627,6 +627,27 @@ def forskning_linjer():
     return ut
 
 
+def produksjon_linjer():
+    """INNTEKT · alle NMBUs programkoder etter studiepoeng (også årsstudier, enkeltemner og videreutdanning), fra revenueData.json."""
+    d = json_les("revenueData.json") or {}
+    prod = d.get("nmbuProduksjon") or []
+    if not prod:
+        return []
+    ut = []
+    for aar in ("2025", "2024"):
+        rad = sorted((p for p in prod if (p["aar"].get(aar) or {}).get("sp")), key=lambda p: -p["aar"][aar]["sp"])
+        tot = sum(p["aar"][aar]["sp"] for p in rad) or 1
+        kat = {}
+        for p in rad:
+            kat[p["kategori"]] = kat.get(p["kategori"], 0) + p["aar"][aar]["sp"]
+        topp = "; ".join(f"{i + 1}. {p['navn']} ({p['kode']}, {p['kategori'].lower()}, {p['fak'].upper() if p['fak'] != 'nmbu' else 'NMBU sentralt'}) {nf(p['aar'][aar]['sp'], 1)} studentårsverk ({nf(100 * p['aar'][aar]['sp'] / tot, 1)} %), {nf(p['aar'][aar]['inn'] / 1e6, 1)} mill. kr"
+                         for i, p in enumerate(rad[:12]))
+        ut.append(["Inntekt: NMBUs studieprogram", f"produksjon {aar}", f"INNTEKT · NMBUs studieprogram etter studiepoengproduksjon {aar} (DBH 900; alle programkoder, også årsstudier, enkeltemner og videreutdanning), høyest først: {topp}. "
+                   f"Fordeling på type: " + ", ".join(f"{k.lower()} {nf(100 * v / tot, 1)} %" for k, v in sorted(kat.items(), key=lambda x: -x[1])) + ". "
+                   "Studiepoenguttellingen avhenger av emnenes finansieringskategori (veterinærmedisin høy, økonomi lav), så rekkefølgen etter kroner kan avvike fra rekkefølgen etter studiepoeng; fullføringsuttelling er ikke med.", "", "hh", ""])
+    return ut
+
+
 def strategi_linjer(fak):
     """STRATEGIER: konkurrentenes strategier mot 2030 (public/markedsstatus/<fak>/strategier.json, build-strategier.py)."""
     p = ROOT / "kilde" / "public" / "markedsstatus" / fak / "strategier.json"
@@ -710,7 +731,7 @@ def main():
     o = oversikt(grunnlag, "hele NMBU") + fagmiljo_nmbu()
     json.dump({"fakultet": None, "navn": "Hele NMBU", "linjer": o}, open(UT / "nmbu-data.json", "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     print(f"nmbu: {len(o)} oversikts- og fagmiljølinjer")
-    f = sokergrunnlag() + forskning_linjer()
+    f = sokergrunnlag() + forskning_linjer() + produksjon_linjer()
     json.dump({"fakultet": None, "navn": "Felles", "linjer": f}, open(UT / "felles-data.json", "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     print(f"felles: {len(f)} søkergrunnlagslinjer, {(UT / 'felles-data.json').stat().st_size // 1024} kB")
     m = metode()

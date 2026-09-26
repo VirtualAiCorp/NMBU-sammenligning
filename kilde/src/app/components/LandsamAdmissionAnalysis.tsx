@@ -127,6 +127,7 @@ const LEVEL_LABEL: Record<LandsamLevel, string> = {
   bachelor: 'Bachelor',
   master5:  'Femårig master',
   master2:  'Toårig master',
+  aarsstudium: 'Årsstudium',
 };
 
 // ─── Trend chip ───────────────────────────────────────────────────────────────
@@ -539,7 +540,7 @@ function NmbuKeyFigures({ group, year: requestedYear }: { group: LandsamGroup; y
           {
             label: 'Poenggrense (fv. / ord.)',
             value: cur?.pg_fv != null && cur?.pg_ord != null
-              ? `${nf(cur.pg_fv, 1)} / ${nf(cur.pg_ord, 1)}`
+              ? (cur.pg_fv === 0 && cur.pg_ord === 0 ? 'Alle kvalifiserte' : `${nf(cur.pg_fv, 1)} / ${nf(cur.pg_ord, 1)}`)
               : '–',
             delta: cur?.pg_ord != null && prev?.pg_ord != null
               ? `${fmt(cur.pg_ord - prev.pg_ord, 1)} vs. ${prevYear}` : null,
@@ -605,6 +606,11 @@ export function LandsamAdmissionAnalysis({ faculty, initialGroup }: { faculty: F
   // Ved gruppebytte: hopp til siste år med NMBU-tall, og bytt fra poenggrense til «Alle søkere» hvis gruppen mangler poenggrenser.
   useEffect(() => {
     if (!group) return;
+    // Årsstudier: nesten alle tar opp alle kvalifiserte, så søkertallene sier mer enn poenggrensen
+    if (group.level === 'aarsstudium') {
+      if (isPointMetric(metric) || metric === 'pg_ord' || metric === 'pg_fv') setMetric('alleS');
+      return;
+    }
     if (group.level !== 'master2') {
       // Møtt/oppmøteandel finnes bare for lokale opptak; gå tilbake til poenggrense.
       if ((metric === 'mott' || metric === 'oppmote') && !harLokale(group)) setMetric('pg_ord');

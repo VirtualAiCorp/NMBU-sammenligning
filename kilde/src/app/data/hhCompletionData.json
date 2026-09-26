@@ -1,5 +1,5 @@
 {
- "generert": "2026-09-23",
+ "generert": "2026-09-26",
  "groups": [
   {
    "id": "oa",
@@ -20592,6 +20592,668 @@
        "kandidaterKvinner": 0,
        "spPlanlagt": null,
        "spGjennomfort": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "aarsstudier",
+   "label": "Årsstudier i økonomi og ledelse",
+   "level": "aarsstudium",
+   "nmbuIds": [
+    "nmbu_bel"
+   ],
+   "defaultIds": [
+    "nmbu_bel",
+    "uit_ledelse_ar",
+    "ntnu_okled_ar",
+    "inn_orgled_ar",
+    "nord_hr_ar",
+    "inn_bedok_ar",
+    "uis_okjus_ar"
+   ],
+   "programs": [
+    {
+     "entryId": "nmbu_bel",
+     "shortName": "NMBU",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "isNmbu": true,
+     "programnavn": "Bærekraftig økonomi og ledelse, deltid (årsstudium)",
+     "dbhKoder": [
+      "KVU-BEDØK"
+     ],
+     "kull": [],
+     "aar": [
+      {
+       "aar": 2022,
+       "registrerte": 145,
+       "registrerteKvinner": 100,
+       "nye": 89,
+       "nyeKvinner": 61,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 2732.5,
+       "spGjennomfort": 1815.0
+      },
+      {
+       "aar": 2023,
+       "registrerte": 1044,
+       "registrerteKvinner": 663,
+       "nye": 856,
+       "nyeKvinner": 532,
+       "kandidater": 36,
+       "kandidaterKvinner": 25,
+       "spPlanlagt": 27560.0,
+       "spGjennomfort": 16627.5
+      },
+      {
+       "aar": 2024,
+       "registrerte": 1743,
+       "registrerteKvinner": 1110,
+       "nye": 1239,
+       "nyeKvinner": 793,
+       "kandidater": 221,
+       "kandidaterKvinner": 133,
+       "spPlanlagt": 59880.0,
+       "spGjennomfort": 37657.5
+      },
+      {
+       "aar": 2025,
+       "registrerte": 1980,
+       "registrerteKvinner": 1214,
+       "nye": 1131,
+       "nyeKvinner": 670,
+       "kandidater": 438,
+       "kandidaterKvinner": 259,
+       "spPlanlagt": 63667.5,
+       "spGjennomfort": 41120.0
+      },
+      {
+       "aar": 2026,
+       "registrerte": null,
+       "registrerteKvinner": null,
+       "nye": 315,
+       "nyeKvinner": 204,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": null,
+       "spGjennomfort": null
+      }
+     ]
+    },
+    {
+     "entryId": "uit_ledelse_ar",
+     "shortName": "UiT Ledelse",
+     "institusjon": "UiT Norges arktiske universitet",
+     "isNmbu": false,
+     "programnavn": "Ledelse, deltid (årsstudium)",
+     "dbhKoder": [
+      "ST-LEDE"
+     ],
+     "kull": [],
+     "aar": [
+      {
+       "aar": 2016,
+       "registrerte": null,
+       "registrerteKvinner": null,
+       "nye": null,
+       "nyeKvinner": null,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 13950.0,
+       "spGjennomfort": 7160.0
+      },
+      {
+       "aar": 2017,
+       "registrerte": 265,
+       "registrerteKvinner": 157,
+       "nye": 145,
+       "nyeKvinner": 88,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 14625.0,
+       "spGjennomfort": 7845.0
+      },
+      {
+       "aar": 2018,
+       "registrerte": 487,
+       "registrerteKvinner": 285,
+       "nye": 289,
+       "nyeKvinner": 171,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 19910.0,
+       "spGjennomfort": 10190.0
+      },
+      {
+       "aar": 2019,
+       "registrerte": 551,
+       "registrerteKvinner": 323,
+       "nye": 343,
+       "nyeKvinner": 184,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 24760.0,
+       "spGjennomfort": 13640.0
+      },
+      {
+       "aar": 2020,
+       "registrerte": 659,
+       "registrerteKvinner": 386,
+       "nye": 418,
+       "nyeKvinner": 235,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 30262.0,
+       "spGjennomfort": 19023.0
+      },
+      {
+       "aar": 2021,
+       "registrerte": 668,
+       "registrerteKvinner": 425,
+       "nye": 436,
+       "nyeKvinner": 279,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 32940.0,
+       "spGjennomfort": 20380.0
+      },
+      {
+       "aar": 2022,
+       "registrerte": 752,
+       "registrerteKvinner": 471,
+       "nye": 480,
+       "nyeKvinner": 282,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 33830.0,
+       "spGjennomfort": 18840.0
+      },
+      {
+       "aar": 2023,
+       "registrerte": 723,
+       "registrerteKvinner": 472,
+       "nye": 486,
+       "nyeKvinner": 311,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 34875.0,
+       "spGjennomfort": 21765.0
+      },
+      {
+       "aar": 2024,
+       "registrerte": 721,
+       "registrerteKvinner": 447,
+       "nye": 478,
+       "nyeKvinner": 291,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 35620.0,
+       "spGjennomfort": 22630.0
+      },
+      {
+       "aar": 2025,
+       "registrerte": 753,
+       "registrerteKvinner": 478,
+       "nye": 474,
+       "nyeKvinner": 289,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 30280.0,
+       "spGjennomfort": 17712.5
+      }
+     ]
+    },
+    {
+     "entryId": "ntnu_okled_ar",
+     "shortName": "NTNU",
+     "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+     "isNmbu": false,
+     "programnavn": "Økonomi og ledelse, deltid (årsstudium)",
+     "dbhKoder": [
+      "ÅRØKLEDF"
+     ],
+     "kull": [],
+     "aar": [
+      {
+       "aar": 2025,
+       "registrerte": 111,
+       "registrerteKvinner": 69,
+       "nye": 77,
+       "nyeKvinner": 47,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 2340.0,
+       "spGjennomfort": 960.0
+      }
+     ]
+    },
+    {
+     "entryId": "nord_hr_ar",
+     "shortName": "Nord HR",
+     "institusjon": "Nord universitet",
+     "isNmbu": false,
+     "programnavn": "HR-ledelse, deltid (årsstudium)",
+     "dbhKoder": [
+      "PK1"
+     ],
+     "kull": [],
+     "aar": [
+      {
+       "aar": 2016,
+       "registrerte": null,
+       "registrerteKvinner": null,
+       "nye": null,
+       "nyeKvinner": null,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 4530.0,
+       "spGjennomfort": 2740.0
+      },
+      {
+       "aar": 2017,
+       "registrerte": 84,
+       "registrerteKvinner": 69,
+       "nye": 35,
+       "nyeKvinner": 28,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 4190.0,
+       "spGjennomfort": 2410.0
+      },
+      {
+       "aar": 2018,
+       "registrerte": 70,
+       "registrerteKvinner": 49,
+       "nye": 28,
+       "nyeKvinner": 18,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 3730.0,
+       "spGjennomfort": 2330.0
+      },
+      {
+       "aar": 2019,
+       "registrerte": 147,
+       "registrerteKvinner": 110,
+       "nye": 63,
+       "nyeKvinner": 45,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 5680.0,
+       "spGjennomfort": 3790.0
+      },
+      {
+       "aar": 2020,
+       "registrerte": 195,
+       "registrerteKvinner": 143,
+       "nye": 95,
+       "nyeKvinner": 65,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 9420.0,
+       "spGjennomfort": 6770.0
+      },
+      {
+       "aar": 2021,
+       "registrerte": 136,
+       "registrerteKvinner": 105,
+       "nye": 57,
+       "nyeKvinner": 44,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 8380.0,
+       "spGjennomfort": 5320.0
+      },
+      {
+       "aar": 2022,
+       "registrerte": 157,
+       "registrerteKvinner": 110,
+       "nye": 70,
+       "nyeKvinner": 46,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 6880.0,
+       "spGjennomfort": 4520.0
+      },
+      {
+       "aar": 2023,
+       "registrerte": 156,
+       "registrerteKvinner": 112,
+       "nye": 75,
+       "nyeKvinner": 49,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 7250.0,
+       "spGjennomfort": 5120.0
+      },
+      {
+       "aar": 2024,
+       "registrerte": 135,
+       "registrerteKvinner": 84,
+       "nye": 55,
+       "nyeKvinner": 34,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 6670.0,
+       "spGjennomfort": 4350.0
+      },
+      {
+       "aar": 2025,
+       "registrerte": 109,
+       "registrerteKvinner": 75,
+       "nye": 48,
+       "nyeKvinner": 31,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 5360.0,
+       "spGjennomfort": 3430.0
+      }
+     ]
+    },
+    {
+     "entryId": "inn_offstyr_ar",
+     "shortName": "INN Off. styring",
+     "institusjon": "Universitetet i Innlandet",
+     "isNmbu": false,
+     "programnavn": "Offentlig styring, ledelse og økonomi, deltid (årsstudium)",
+     "dbhKoder": [
+      "OFFSTYRK"
+     ],
+     "kull": [],
+     "aar": [
+      {
+       "aar": 2018,
+       "registrerte": 113,
+       "registrerteKvinner": 71,
+       "nye": 50,
+       "nyeKvinner": 31,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 1687.5,
+       "spGjennomfort": 1477.5
+      },
+      {
+       "aar": 2019,
+       "registrerte": 149,
+       "registrerteKvinner": 91,
+       "nye": 63,
+       "nyeKvinner": 34,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 3060.0,
+       "spGjennomfort": 2422.5
+      },
+      {
+       "aar": 2020,
+       "registrerte": 160,
+       "registrerteKvinner": 110,
+       "nye": 73,
+       "nyeKvinner": 54,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 3675.0,
+       "spGjennomfort": 3150.0
+      },
+      {
+       "aar": 2021,
+       "registrerte": 153,
+       "registrerteKvinner": 101,
+       "nye": 53,
+       "nyeKvinner": 27,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 3960.0,
+       "spGjennomfort": 3337.5
+      },
+      {
+       "aar": 2022,
+       "registrerte": 130,
+       "registrerteKvinner": 87,
+       "nye": 35,
+       "nyeKvinner": 24,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 3015.0,
+       "spGjennomfort": 2437.5
+      },
+      {
+       "aar": 2023,
+       "registrerte": 160,
+       "registrerteKvinner": 91,
+       "nye": 62,
+       "nyeKvinner": 28,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 2812.5,
+       "spGjennomfort": 2272.5
+      },
+      {
+       "aar": 2024,
+       "registrerte": 118,
+       "registrerteKvinner": 62,
+       "nye": 30,
+       "nyeKvinner": 14,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 3337.5,
+       "spGjennomfort": 2857.5
+      },
+      {
+       "aar": 2025,
+       "registrerte": 45,
+       "registrerteKvinner": 25,
+       "nye": null,
+       "nyeKvinner": null,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 2527.5,
+       "spGjennomfort": 1897.5
+      }
+     ]
+    },
+    {
+     "entryId": "uit_bedok_ar",
+     "shortName": "UiT Bedriftsøk.",
+     "institusjon": "UiT Norges arktiske universitet",
+     "isNmbu": false,
+     "programnavn": "Bedriftsøkonomi, deltid (årsstudium)",
+     "dbhKoder": [
+      "ST-BEDØK"
+     ],
+     "kull": [],
+     "aar": [
+      {
+       "aar": 2016,
+       "registrerte": null,
+       "registrerteKvinner": null,
+       "nye": null,
+       "nyeKvinner": null,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 7380.0,
+       "spGjennomfort": 2710.0
+      },
+      {
+       "aar": 2017,
+       "registrerte": 151,
+       "registrerteKvinner": 80,
+       "nye": 78,
+       "nyeKvinner": 39,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 7590.0,
+       "spGjennomfort": 2710.0
+      },
+      {
+       "aar": 2018,
+       "registrerte": 230,
+       "registrerteKvinner": 141,
+       "nye": 138,
+       "nyeKvinner": 87,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 9430.0,
+       "spGjennomfort": 3470.0
+      },
+      {
+       "aar": 2019,
+       "registrerte": 272,
+       "registrerteKvinner": 160,
+       "nye": 156,
+       "nyeKvinner": 90,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 11490.0,
+       "spGjennomfort": 4270.0
+      },
+      {
+       "aar": 2020,
+       "registrerte": 421,
+       "registrerteKvinner": 223,
+       "nye": 257,
+       "nyeKvinner": 124,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 17330.0,
+       "spGjennomfort": 7210.0
+      },
+      {
+       "aar": 2021,
+       "registrerte": 360,
+       "registrerteKvinner": 193,
+       "nye": 221,
+       "nyeKvinner": 118,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 17750.0,
+       "spGjennomfort": 8260.0
+      },
+      {
+       "aar": 2022,
+       "registrerte": 385,
+       "registrerteKvinner": 185,
+       "nye": 260,
+       "nyeKvinner": 121,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 17430.0,
+       "spGjennomfort": 6460.0
+      },
+      {
+       "aar": 2023,
+       "registrerte": 318,
+       "registrerteKvinner": 157,
+       "nye": 168,
+       "nyeKvinner": 77,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 15260.0,
+       "spGjennomfort": 5690.0
+      },
+      {
+       "aar": 2024,
+       "registrerte": 384,
+       "registrerteKvinner": 190,
+       "nye": 233,
+       "nyeKvinner": 117,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 16580.0,
+       "spGjennomfort": 5840.0
+      },
+      {
+       "aar": 2025,
+       "registrerte": 352,
+       "registrerteKvinner": 156,
+       "nye": 212,
+       "nyeKvinner": 91,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 13697.5,
+       "spGjennomfort": 4555.0
+      }
+     ]
+    },
+    {
+     "entryId": "himolde_log_ar",
+     "shortName": "HiMolde Logistikk",
+     "institusjon": "Høgskolen i Molde",
+     "isNmbu": false,
+     "programnavn": "Logistikk (årsstudium)",
+     "dbhKoder": [
+      "ALOGNETT"
+     ],
+     "kull": [],
+     "aar": [
+      {
+       "aar": 2023,
+       "registrerte": 413,
+       "registrerteKvinner": 192,
+       "nye": 383,
+       "nyeKvinner": 181,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 11767.5,
+       "spGjennomfort": 4425.0
+      },
+      {
+       "aar": 2024,
+       "registrerte": 449,
+       "registrerteKvinner": 215,
+       "nye": 344,
+       "nyeKvinner": 165,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 17782.5,
+       "spGjennomfort": 8115.0
+      },
+      {
+       "aar": 2025,
+       "registrerte": 485,
+       "registrerteKvinner": 220,
+       "nye": 356,
+       "nyeKvinner": 158,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 17370.0,
+       "spGjennomfort": 7072.5
+      }
+     ]
+    },
+    {
+     "entryId": "nla_bei_ar",
+     "shortName": "NLA",
+     "institusjon": "NLA Høgskolen",
+     "isNmbu": false,
+     "programnavn": "Bærekraftig entreprenørskap og innovasjon (årsstudium)",
+     "dbhKoder": [
+      "4BEI-N"
+     ],
+     "kull": [],
+     "aar": [
+      {
+       "aar": 2024,
+       "registrerte": 19,
+       "registrerteKvinner": 8,
+       "nye": 18,
+       "nyeKvinner": 7,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 990.0,
+       "spGjennomfort": 420.0
+      },
+      {
+       "aar": 2025,
+       "registrerte": 51,
+       "registrerteKvinner": 25,
+       "nye": 50,
+       "nyeKvinner": 25,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 1910.0,
+       "spGjennomfort": 1430.0
       }
      ]
     }

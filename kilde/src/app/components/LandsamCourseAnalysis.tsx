@@ -29,6 +29,7 @@ const LEVEL_LABEL: Record<LandsamLevel, string> = {
   bachelor: 'Bachelor',
   master5:  'Femårig master',
   master2:  'Toårig master',
+  aarsstudium: 'Årsstudium',
 };
 
 const GRADES = ['A', 'B', 'C', 'D', 'E', 'F'] as const;
