@@ -38,15 +38,15 @@ const SIDER: [RegExp, string, string, string?][] = [
   [/fagmiljø|ansatte|tilsatte|årsverk|publiser|førstestilling|stipendiat|nivå 2|forskningsråd|forskningsmidler|forskningsfinansiering|eu-prosjekt|horizon|suksessrate/i, 'fagmiljo', 'Fagmiljøet', 'FAGMILJØET'],
   [/alder|(over|under) \d+ år|\d+ år (eller )?(eldre|yngre)|eldre enn|yngre enn|registrerte studenter/i, 'studentene', 'Studentene', 'STUDENTENE'],
   [/statsbudsjett|regnskap|driftsresultat|skolepenger|statstilskudd/i, 'okonomi', 'Økonomi'],
-  [/inntekt|finansieringssystem|studiepoengproduksjon/i, 'inntekt', 'Inntekt'],
+  [/inntekt|finansieringssystem|studiepoengproduksjon|uttelling|innbringende|studentårsverk|størst(e)? (studie)?program/i, 'inntekt', 'Inntekt', 'INNTEKT'],
   [/arbeidsmarked|lønn|ledighet|yrke|jobb etter|nyutdannede/i, 'arbeidsmarked', 'Arbeidsmarkedet', 'ARBEIDSMARKEDET'],
   [/bolig|husleie|leiepris/i, 'bolig', 'Bolig'],
 ];
 const finnSide = (q: string) => SIDER.find(([re]) => re.test(q));
 /** Modulen en nøkkeltallslinje hører til (merket først i teksten), ellers opptak (null). */
-const modulAv = (l: DataLinje) => /^(?:RANGERING )?(STUDENTENE|STUDIEBAROMETERET|EMNER OG KARAKTERER|FAGMILJØET|SØKERGRUNNLAGET|STRATEGIER|ARBEIDSMARKEDET)\b/.exec(l[2])?.[1] ?? null;
+const modulAv = (l: DataLinje) => /^(?:RANGERING )?(STUDENTENE|STUDIEBAROMETERET|EMNER OG KARAKTERER|FAGMILJØET|SØKERGRUNNLAGET|STRATEGIER|ARBEIDSMARKEDET|INNTEKT)\b/.exec(l[2])?.[1] ?? null;
 /** Moduler som ikke hører til et program, men til fakultet/institusjon (fagmiljøet) eller fylke (søkergrunnlaget). */
-const FELLES_MODUL = new Set(['FAGMILJØET', 'SØKERGRUNNLAGET', 'STRATEGIER']);
+const FELLES_MODUL = new Set(['FAGMILJØET', 'SØKERGRUNNLAGET', 'STRATEGIER', 'INNTEKT']);
 /** Sidene for hele NMBU (App: Faculty-verdiene «nmbu-…»). */
 /** Fakulteter med «Strategier mot 2030» i markedsstatus (som MED_STRATEGIER i FacultyMarketStatus.tsx) */
 const MED_STRATEGIER = new Set<FacultyId>(['hh']);
