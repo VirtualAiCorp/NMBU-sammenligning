@@ -200,7 +200,10 @@ function velgData(di: TekstIndeks<DataLinje>, q: string, sokeTekst: string, omfa
   const modul = finnSide(q)?.[3] ?? null;
   // Fagmiljøet og søkergrunnlaget: linjene for modulen, mest relevante først, og så de beste andre treffene
   if (modul && FELLES_MODUL.has(modul)) {
-    const valgt = di.elementer.filter((l) => modulAv(l) === modul).sort((a, b) => rang(a) - rang(b)).slice(0, 14);
+    // Spør brukeren om «NMBU» uten å nevne et fakultet, kommer linjen for hele NMBU først (ikke fakultetet brukeren står på)
+    const helNmbu = /\bNMBU\b/.test(q) && !omfang?.navngitt;
+    const valgt = di.elementer.filter((l) => modulAv(l) === modul)
+      .sort((a, b) => (helNmbu ? Number(b[1] === 'NMBU') - Number(a[1] === 'NMBU') : 0) || rang(a) - rang(b)).slice(0, 14);
     // Uten linjer for modulen her (f.eks. strategier for andre fakulteter enn HH) brukes vanlig utvalg
     if (valgt.length) return [...valgt, ...treff.filter((l) => !valgt.includes(l)).slice(0, 19 - valgt.length)];
     if (modul === 'STRATEGIER') return []; // bare styrepapirene har noe å si om strategier her
