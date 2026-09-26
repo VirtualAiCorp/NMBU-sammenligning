@@ -88,7 +88,6 @@ export function FacultyLanding({ onSelect }: Props) {
               <div style={{ fontSize: '15px', color: 'var(--nmbu-neutral-1)', marginBottom: 12 }}>{card.subtitle}</div>
               <p style={{ fontSize: '13px', color: 'var(--nmbu-neutral-2)', lineHeight: 1.5 }}>{card.desc}</p>
             </button>
-            {card.id === 'hh' && <div className="px-6 sm:px-8 pb-6 pt-3" style={{ borderTop: '1px solid var(--nmbu-neutral-3)' }}><LagetAv /></div>}
             </div>
           ))}
         </div>
@@ -227,17 +226,8 @@ export function FacultyLanding({ onSelect }: Props) {
         </div>
         </>)}
 
-        {/* Footer notice */}
-        <div className="mt-10 text-center" style={{ fontSize: 12, color: 'var(--nmbu-neutral-2)' }}>
-          Feil, forslag til endringer eller utvidelse av datasett?{' '}
-          Kontakt:{' '}
-          <a
-            href="mailto:mathias.sydtangen.smogeli@nmbu.no"
-            style={{ color: 'var(--nmbu-green-dark)', fontWeight: 500, textDecoration: 'none' }}
-          >
-            mathias.sydtangen.smogeli@nmbu.no
-          </a>
-        </div>
+        {/* Bunntekst: hvem som står bak og hvor feil og forslag meldes */}
+        <footer className="mt-10 pt-4 text-center" style={{ borderTop: '1px solid var(--nmbu-neutral-3)' }}><LagetAv /></footer>
       </div>
     </div>
   );

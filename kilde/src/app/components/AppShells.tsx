@@ -69,10 +69,10 @@ export function ShellHome({ onNavigate }: { onNavigate: Nav }) {
               <div style={{ fontSize: 10, fontWeight: 700, color: 'var(--nmbu-green-dark)', letterSpacing: '0.05em' }}>{FACULTIES[id].shortLabel}</div>
               <div style={{ fontFamily: "'Lora', serif", fontSize: 15, color: 'var(--nmbu-green-dark)' }}>{FACULTIES[id].label}</div>
             </button>
-            {id === 'hh' && <div className="px-4 pb-3 pt-2" style={{ borderTop: '1px solid var(--nmbu-neutral-3)' }}><LagetAv kompakt /></div>}
           </div>
         ))}
       </div>
+      <footer className="mt-10 pt-4 text-center" style={{ borderTop: '1px solid var(--nmbu-neutral-3)' }}><LagetAv /></footer>
     </div>
   );
 }
