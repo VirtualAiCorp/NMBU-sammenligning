@@ -10,6 +10,7 @@ import type { LandsamGroup, LandsamLevel } from '../data/landsamAdmissionData';
 import { PrisOgCampus } from './PrisOgCampus';
 import { Opptaksrunder } from './Opptaksrunder';
 import { NyeOpptaksregler } from './NyeOpptaksregler';
+import { Studieplasser } from './Studieplasser';
 import { INGEN_DATA_TEKST, type FacultyData } from '../data/faculties';
 import { FacultyContext, useFaculty, useFacultyColor } from '../data/facultyContext';
 import { landsamHasComparison } from '../data/landsamUtils';
@@ -834,6 +835,8 @@ export function LandsamAdmissionAnalysis({ faculty, initialGroup }: { faculty: F
 
       {!isLocal && <OpptaksrunderMedFarge group={group} year={year} years={YEARS} />}
 
+      {!isLocal && <StudieplasserMedFarge group={group} />}
+
       <PrisOgCampusMedFarge group={group} />
 
       <div className="flex items-start gap-2 text-xs rounded-lg px-4 py-3"
@@ -857,6 +860,11 @@ export function LandsamAdmissionAnalysis({ faculty, initialGroup }: { faculty: F
 function PrisOgCampusMedFarge({ group }: { group: LandsamGroup }) {
   const colorFor = useFacultyColor();
   return <PrisOgCampus group={group} colorFor={colorFor} />;
+}
+
+function StudieplasserMedFarge({ group }: { group: LandsamGroup }) {
+  const colorFor = useFacultyColor();
+  return <Studieplasser group={group} colorFor={colorFor} />;
 }
 
 function OpptaksrunderMedFarge({ group, year, years }: { group: LandsamGroup; year: string; years: readonly string[] }) {

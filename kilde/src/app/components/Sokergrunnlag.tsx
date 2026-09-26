@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend, ReferenceLine } from 'recharts';
-import { Info, ExternalLink, Users, Calculator, MapPin } from 'lucide-react';
+import { Info, ExternalLink, Users, Calculator, MapPin, GraduationCap } from 'lucide-react';
 
 /**
  * Søkergrunnlaget: ungdomskullene per fylke (SSB, historisk og framskrevet)
@@ -51,6 +51,7 @@ function Kort({ tittel, ikon: Ikon, children }: { tittel: string; ikon: typeof I
 export function Sokergrunnlag({ steder }: { steder?: string[] }) {
   const [ssb, setSsb] = useState<Ssb | null>(null);
   const [udir, setUdir] = useState<Udir | null>(null);
+  const [overgang, setOvergang] = useState<Overgang | null>(null);
   const [feil, setFeil] = useState(false);
   const [aldersvalg, setAldersvalg] = useState<Aldersvalg>('19');
   const [omrade, setOmrade] = useState<string[]>(STANDARD_OMRADE);
@@ -58,6 +59,7 @@ export function Sokergrunnlag({ steder }: { steder?: string[] }) {
   useEffect(() => {
     hentJson<Ssb>('ssb.json').then((d) => (d ? setSsb(d) : setFeil(true)));
     hentJson<Udir>('udir.json').then(setUdir);
+    hentJson<Overgang>('overgang.json').then(setOvergang);
   }, []);
 
   const serie = useMemo(() => {
@@ -202,16 +204,80 @@ export function Sokergrunnlag({ steder }: { steder?: string[] }) {
 
       {udir && <VideregaendeKort udir={udir} ssb={ssb} />}
 
+      {overgang && <OvergangKort data={overgang} ssb={ssb} uthev={new Set([nmbuFylke, ...omrade])} steder={stederPerFylke} nmbuFylke={nmbuFylke} />}
+
       <div className="flex items-start gap-2 text-xs rounded-lg px-4 py-3" style={{ backgroundColor: 'var(--nmbu-beige-light)', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-2)' }}>
         <Info className="w-3.5 h-3.5 shrink-0 mt-0.5" />
         <span className="flex flex-wrap gap-x-3">
           Kilder, hentet {ssb.hentet}:
-          {[...ssb.kilder, ...(udir?.kilder ?? [])].map((k) => <a key={k.url + k.navn} href={k.url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1" style={{ color: 'var(--nmbu-green-dark)' }}><ExternalLink className="w-3 h-3" /> {k.navn}</a>)}
+          {[...ssb.kilder, ...(udir?.kilder ?? []), ...(overgang?.kilder ?? [])].map((k) => <a key={k.url + k.navn} href={k.url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1" style={{ color: 'var(--nmbu-green-dark)' }}><ExternalLink className="w-3 h-3" /> {k.navn}</a>)}
         </span>
       </div>
     </div>
   );
 }
+
+/** Andel av avgangselevene med studiekompetanse som går rett videre til høyere utdanning samme høst (SSB 11964, build-overgang.py) */
+interface Overgang { hentet: string; kilder: { navn: string; url: string }[]; aar: number[]; overgang: Record<string, Record<string, number | null>> }
+
+function OvergangKort({ data, ssb, uthev, steder, nmbuFylke }: { data: Overgang; ssb: Ssb; uthev: Set<string>; steder: Record<string, string[]>; nmbuFylke: string }) {
+  const aar = data.aar.map(String);
+  const siste = [...aar].reverse().find((a) => data.overgang['0']?.[a] != null) ?? aar[aar.length - 1];
+  const forste = aar.find((a) => data.overgang['0']?.[a] != null) ?? aar[0];
+  const land = data.overgang['0'] ?? {};
+  const rader = Object.keys(data.overgang).filter((r) => r !== '0' && data.overgang[r][siste] != null && ssb.fylker[r])
+    .sort((a, b) => (data.overgang[b][siste] ?? 0) - (data.overgang[a][siste] ?? 0));
+  const maks = Math.max(...rader.map((r) => data.overgang[r][siste] ?? 0), land[siste] ?? 0);
+  const fra = (r: string) => aar.find((a) => data.overgang[r][a] != null);
+  return (
+    <Kort tittel="Hvor mange går rett videre til høyere utdanning?" ikon={GraduationCap}>
+      <p className="text-xs mb-3" style={{ color: 'var(--nmbu-neutral-1)', lineHeight: 1.6 }}>
+        Andelen av avgangselevene med studiekompetanse som begynner i høyere utdanning samme høst, etter bostedsfylke. For hele landet
+        var andelen <b>{nf1(land[siste])} %</b> i {siste}, mot {nf1(land[forste])} % i {forste}. Ungdomskullet sier hvor mange som kan søke;
+        denne andelen sier hvor mange av dem som faktisk går rett videre (flere tar et friår og søker senere).
+      </p>
+      <div className="overflow-x-auto">
+        <table className="w-full border-collapse text-xs">
+          <thead>
+            <tr style={{ backgroundColor: 'var(--nmbu-beige-light)', borderBottom: '2px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-2)' }}>
+              <th className="px-3 py-2 text-left">Fylke</th>
+              <th className="px-3 py-2 text-left" style={{ minWidth: 160 }}>Andel direkte videre {siste}</th>
+              <th className="px-3 py-2 text-right">{siste}</th>
+              <th className="px-3 py-2 text-right" title="Endring i prosentpoeng fra første år med tall for fylket">Endring (pp)</th>
+              <th className="px-3 py-2 text-left">Studiesteder i sammenligningene</th>
+            </tr>
+          </thead>
+          <tbody>
+            {['0', ...rader].map((r) => {
+              const v = data.overgang[r][siste] ?? null;
+              const f = fra(r);
+              const e = f && f !== siste && v != null ? v - (data.overgang[r][f] as number) : null;
+              const u = uthev.has(r);
+              return (
+                <tr key={r} style={{ borderTop: '1px solid var(--nmbu-neutral-3)', fontWeight: r === '0' || u ? 700 : 400, backgroundColor: r === nmbuFylke ? 'var(--nmbu-green-light)' : undefined }}>
+                  <td className="px-3 py-1.5 whitespace-nowrap">{r === '0' ? 'Hele landet' : ssb.fylker[r]}{r === nmbuFylke ? ' (NMBU)' : ''}</td>
+                  <td className="px-3 py-1.5">
+                    <div className="h-2 rounded-full" style={{ width: `${(100 * (v ?? 0)) / maks}%`, backgroundColor: r === '0' ? 'var(--nmbu-neutral-2)' : u ? 'var(--nmbu-green-dark)' : 'var(--nmbu-green-3)' }} />
+                  </td>
+                  <td className="px-3 py-1.5 text-right">{nf1(v)} %</td>
+                  <td className="px-3 py-1.5 text-right" style={{ color: e == null ? 'var(--nmbu-neutral-2)' : e >= 0 ? '#047857' : '#b91c1c' }} title={f ? `Fra ${f}` : undefined}>
+                    {e == null ? '–' : `${e >= 0 ? '+' : '−'}${nf1(Math.abs(e))}`}{e != null && f !== forste ? <span style={{ color: 'var(--nmbu-neutral-2)', fontWeight: 400 }}> (fra {f})</span> : null}
+                  </td>
+                  <td className="px-3 py-1.5" style={{ color: 'var(--nmbu-neutral-2)', fontWeight: 400 }}>{(steder[r] ?? []).join(', ')}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+      <div style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)', marginTop: 6 }}>
+        Kilde: SSB tabell 11964, hentet {data.hentet}. Fylkene som ble delt i 2024 har egne tall først fra 2024, så endringen for dem gjelder bare fra 2024.
+        Uthevet: NMBUs fylke og fylkene i området du har valgt over.
+      </div>
+    </Kort>
+  );
+}
+const nf1 = (v: number | null | undefined) => (v == null ? '–' : v.toLocaleString('nb-NO', { minimumFractionDigits: 1, maximumFractionDigits: 1 }));
 
 function VideregaendeKort({ udir, ssb }: { udir: Udir; ssb: Ssb }) {
   const fag = Object.keys(udir.matematikk ?? {});

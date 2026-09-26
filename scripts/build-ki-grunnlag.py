@@ -44,6 +44,12 @@ def gnavn(g, ekstra=""):
     return f"{g['label']} ({deler})" if deler else g["label"]
 
 
+def public_json(sti):
+    """Genererte datafiler under kilde/public (studieplasser, landssnitt, oppmøte, arbeidsmarked, forskning, overgang)."""
+    p = ROOT / "kilde" / "public" / sti
+    return json.load(open(p, encoding="utf-8")) if p.exists() else None
+
+
 def json_les(navn):
     p = DATA / navn
     return json.load(open(p, encoding="utf-8")) if p.exists() else None
@@ -59,6 +65,8 @@ def data_linjer(fak):
     m = re.search(r"INTERNASJONAL: Record<string, Record<string, InternasjonalAar>> = (\{.*\});", intl_ts, re.S)
     intl = json.loads(m.group(1)) if m else {}
     kull = {p["entryId"]: p for g in (comp or {}).get("groups", []) for p in g["programs"]}
+    plasser = (public_json("studieplasser/data.json") or {}).get("program", {})
+    landssnitt = (public_json("gjennomforing/landssnitt.json") or {}).get("fakulteter", {})
     linjer = []
     for g in (adm or {}).get("groups", []):
         for e in g["entries"]:
@@ -98,6 +106,16 @@ def data_linjer(fak):
                 reg = [a for a in k.get("aar", []) if a.get("registrerte")]
                 if reg:
                     deler.append(f"registrerte studenter {reg[-1]['aar']}: {nf(reg[-1]['registrerte'])}")
+            ls = (landssnitt.get(fak) or {}).get(g["id"])
+            if e["id"] in g["nmbuIds"] and ls and ls.get("andelNormert") is not None and ls.get("koblingKvalitet") != "ikke dekket":
+                deler.append(f"landssnitt (SSB, {ls['ssbStudiumLabel']}, kull {ls['kull']}{', grov kobling' if ls.get('koblingKvalitet') == 'grov' else ''}): {nf(ls['andelNormert'], 1)} % fullført på normert tid"
+                             + (f", {nf(ls['andelNormertPluss'], 1)} % innen normert tid + 2 år" if ls.get("andelNormertPluss") is not None else ""))
+            sp = plasser.get(e.get("studiekode") or "")
+            if sp and sp.get("plasser"):
+                pa = sp["plasser"]
+                utvalg = [a for a in ("2016", "2020", "2024", "2025", "2026") if a in pa]
+                deler.append("studieplasser i Samordna " + ", ".join(f"{a}: {nf(pa[a])}" for a in utvalg)
+                             + ("; på Samordnas liste over ledige studieplasser i 2026" if sp.get("ledig2026") else "; ikke på lista over ledige studieplasser i 2026"))
             s = sb.get(e["id"])
             if s and s.get("scores", {}).get("helhetsvurdering") is not None:
                 deler.append(f"Studiebarometeret {s.get('latestYear') or max((h['year'] for h in s.get('history', [])), default='(siste år)')}: helhetsvurdering {nf(s['scores']['helhetsvurdering'], 1)} av 5 ({s.get('respondents')} svar)")
@@ -111,7 +129,7 @@ def data_linjer(fak):
                 linjer.append([gnavn(g), e["shortName"], f"{navn}. " + ". ".join(deler) + ".", flagg, fak, g["id"]])
     moduler = modul_linjer(fak, adm, sb)
     return (linjer + moduler + rangeringer(adm, comp, sb, fak) + oversikt([(fak, adm, comp, sb)], f"{KORT[fak]} ({FAKULTETER[fak]})")
-            + emnetype_linjer(fak, adm) + fagmiljo_fakultet(fak) + strategi_linjer(fak))
+            + emnetype_linjer(fak, adm) + fagmiljo_fakultet(fak) + strategi_linjer(fak) + arbeidsmarked_linjer(fak, adm))
 
 
 def rangeringer(adm, comp, sb, fak):
@@ -309,6 +327,8 @@ def bokstav(snitt):
 def modul_linjer(fak, adm, sb):
     """Én linje per program og modul (STUDENTENE, STUDIEBAROMETERET, EMNER OG KARAKTERER), samme gruppe og flagg som opptakslinjen."""
     stud, kurs = student_data(fak), kurs_data(fak)
+    oppmote = public_json(f"emner/oppmote/{fak}.json")
+    opp_ikke = {k for k, v in ((public_json("emner/oppmote/institusjoner.json") or {}).get("institusjoner", {})).items() if v and v.get("oppmoteRapportert") is False}
     ut = []
     for g in (adm or {}).get("groups", []):
         for e in g["entries"]:
@@ -366,6 +386,17 @@ def modul_linjer(fak, adm, sb):
                     if a["bestatt"] is not None:
                         t += f", bestått i emner med bestått/ikke bestått {nf(a['bestatt'], 1)} %"
                     deler.append(t)
+                opp = (oppmote or {}).get("emner", {})
+                inst = k.get("dbhInstitusjonskode") or ""
+                if inst in opp_ikke:
+                    deler.append("oppmøte rapporteres ikke til DBH for denne institusjonen")
+                else:
+                    for aar in alle_aar[:1]:
+                        rader = [opp.get(f"{inst}|{c['emnekode']}", {}).get(str(aar)) for c in k["courses"]]
+                        rader = [r for r in rader if r and r.get("oppmeldt")]
+                        om, mo, st = sum(r["oppmeldt"] for r in rader), sum(r.get("mott") or 0 for r in rader), sum(r.get("stryk") or 0 for r in rader)
+                        if om:
+                            deler.append(f"DBH 905 {aar} (alle studenter på programmets {len(rader)} emner): {nf(100 * mo / om, 1)} % av de oppmeldte møtte til eksamen, stryk av oppmeldte {nf(100 * st / om, 1)} %")
                 if deler:
                     siste = alle_aar[0]
                     store = sorted(((c, next((y for y in c["years"] if y["year"] == siste), None)) for c in k["courses"]), key=lambda x: -(x[1] or {}).get("total", 0))
@@ -481,6 +512,7 @@ def sokergrunnlag():
     sum_alder = lambda f, alder, y: sum((s["alder"][f].get(str(a)) or [0] * len(aar))[idx(y)] or 0 for a in alder) if idx(y) is not None else None
     siste_faktisk = s["forsteFramskrevne"] - 1
     punkter = [2016, siste_faktisk, 2030, 2035, 2040, 2045]
+    overgang = (public_json("sokergrunnlag/overgang.json") or {}).get("overgang")
     steder = {}
     for sted, f in s.get("stedFylke", {}).items():
         steder.setdefault(f, []).append(sted)
@@ -493,6 +525,10 @@ def sokergrunnlag():
         a0, a1 = sum_alder(f, [19], siste_faktisk), sum_alder(f, [19], 2035)
         if a0 and a1 and f != "0":
             endring.append((navn, 100 * (a1 - a0) / a0))
+        ov = (overgang or {}).get(f) or {}
+        ova = [a for a in sorted(ov) if ov[a] is not None]
+        if ova:
+            deler.append(f"andel av avgangselevene med studiekompetanse som gikk direkte til høyere utdanning (SSB 11964): {ova[-1]} {nf(ov[ova[-1]], 1)} %" + (f", {ova[0]} {nf(ov[ova[0]], 1)} %" if len(ova) > 1 else ""))
         ut.append(["Søkergrunnlaget", navn, f"SØKERGRUNNLAGET · {navn}: befolkning etter alder (SSB 07459 til {siste_faktisk}, SSB 14746 framskrevet fra {s['forsteFramskrevne']}, hovedalternativet). "
                    + "; ".join(deler) + "." + (f" Studiesteder i fylket i sammenligningene: {', '.join(sorted(steder[f]))}." if f in steder else ""), "s", "nmbu-sokergrunnlag", ""])
     if endring:
@@ -521,6 +557,73 @@ def sokergrunnlag():
             deler.append("elever i Vg3 studieforberedende: " + ", ".join(f"{k} {nf(v)}" for k, v in sorted(vg3.items())[-3:]))
         if deler:
             ut.append(["Søkergrunnlaget", navn, f"SØKERGRUNNLAGET · videregående i {navn} (Udir, standpunktkarakterer): " + "; ".join(deler) + ".", "s", "nmbu-sokergrunnlag", ""])
+    return ut
+
+
+def arbeidsmarked_linjer(fak, adm):
+    """ARBEIDSMARKEDET: lønn, ledighet, sysselsetting og yrker for fagfeltet hver programgruppe utdanner til (nasjonalt)."""
+    d = public_json("arbeidsmarked/data.json")
+    grupper = {g["id"]: g for g in (adm or {}).get("groups", [])}
+    ut = []
+    for gid, a in ((d or {}).get("fakulteter", {}).get(fak) or {}).items():
+        g = grupper.get(gid)
+        if not g or not a.get("koblet"):
+            continue
+        deler = []
+        l = a.get("lonn") or {}
+        for per in ("0-2", "3-4"):
+            x = l.get(per)
+            if x and x.get("median") is not None:
+                trend = ", ".join(f"{k} {nf(v)}" for k, v in sorted((x.get("trend") or {}).items()) if v is not None)
+                deler.append(f"median månedslønn heltid {per.replace('-', '–')} år etter fullført grad {l.get('aar')}: {nf(x['median'])} kr (SSB-gruppe {x['nusNavn']}; {trend})")
+        le = a.get("ledighet")
+        if le and le.get("prosent") is not None:
+            deler.append(f"registrert ledige {nf(le['prosent'], 1)} % av alle med utdanningen" + (f", {nf(le['prosentNyutdannet'], 1)} % blant nyutdannede (1–3 år)" if le.get("prosentNyutdannet") is not None else "") + f" (utdanning.no {le.get('maaletidspunkt', '')[:7]})")
+        sy = a.get("sysselsetting")
+        if sy and sy.get("prosent") is not None:
+            deler.append(f"sysselsatt 25–29 år i fagfeltet {sy['fagfeltNavn'].lower()}: {nf(sy['prosent'], 1)} %")
+        if a.get("yrker"):
+            deler.append("vanligste yrker: " + ", ".join(f"{y['navn']} {nf(y['andel'], 1)} %" for y in a["yrker"][:5]))
+        if deler:
+            ut.append([gnavn(g), "arbeidsmarked", f"ARBEIDSMARKEDET · {gnavn(g)} (nasjonale tall for fagfeltet, ikke per institusjon; kobling {a.get('koblingsKvalitet', '')}): "
+                       + "; ".join(deler) + ".", "", fak, gid])
+    return ut
+
+
+def forskning_linjer():
+    """FAGMILJØET · forskningsfinansiering per institusjon og NMBU-fakultet (Forskningsrådet og EU Horizon Europe)."""
+    d = public_json("fagmiljo/forskning.json")
+    if not d:
+        return []
+    ut = []
+    aar = [str(a) for a in range(d["periode"][0], d["periode"][1] + 1)]
+    merk = "Forskningsrådets åpne data mangler søknader fra Tibi fra 2023, så søknadstallene er for lave fra 2023; bare prosjektansvarlig institusjon telles"
+
+    def tekst(navn, e):
+        n = [(e.get("nfr") or {}).get(a) for a in aar]
+        n = [x for x in n if x]
+        inn, avs = sum(x["innvilget"] for x in n), sum(x["avslag"] for x in n)
+        deler = [f"Forskningsrådet {aar[0]}–{aar[-1]}: {nf(sum(x['soknader'] for x in n))} søknader, {nf(inn)} innvilget"
+                 + (f", suksessrate {nf(100 * inn / (inn + avs), 1)} %" if inn + avs else "")
+                 + f", bevilget {nf(sum(x['innvilgetBelop'] for x in n), 1)} mill. kr"]
+        he = [((e.get("eu") or {}).get("horizonEurope") or {}).get(a) for a in aar]
+        he = [x for x in he if x]
+        if he:
+            deler.append(f"EU Horizon Europe {aar[0]}–{aar[-1]}: {nf(sum(x['deltakelser'] for x in he))} deltakelser, EU-bidrag {nf(sum(x['bidragMillEuro'] for x in he), 2)} mill. euro")
+        return f"FAGMILJØET · forskningsfinansiering {navn}: " + "; ".join(deler) + f" ({merk})."
+    for k, e in d["institusjoner"].items():
+        ut.append(["Fagmiljøet: forskningsfinansiering", e.get("kort", k), tekst(e.get("kort", k), e), "f", "nmbu-fagmiljo", ""])
+    navn_fak = {"410": "VET", "420": "LANDSAM", "430": "MINA", "440": "KBM", "450": "BIOVIT", "460": "REALTEK", "470": "HH"}
+    for k, e in (d.get("fakulteter") or {}).items():
+        kode = k.split("_")[-1]
+        ut.append(["Fagmiljøet: forskningsfinansiering", k, tekst(f"NMBU {navn_fak.get(kode, 'ikke fordelt (sentralt)')}", e) + " Fakultetstallene er minimumstall; nesten halvparten av NMBUs søknader er registrert sentralt.", "f", "nmbu-fagmiljo", ""])
+    ok = (d.get("fagomrade") or {}).get("okonomi")
+    if ok:
+        for k, e in ok["institusjoner"].items():
+            if not e:
+                continue
+            kort = (d["institusjoner"].get(k) or {}).get("kort", k)
+            ut.append(["Fagmiljøet: forskningsfinansiering", f"{kort} økonomi", tekst(f"{kort}, bare Forskningsrådets fagområde økonomi (relevant for HH)", e), "f", "nmbu-fagmiljo", ""])
     return ut
 
 
@@ -607,7 +710,7 @@ def main():
     o = oversikt(grunnlag, "hele NMBU") + fagmiljo_nmbu()
     json.dump({"fakultet": None, "navn": "Hele NMBU", "linjer": o}, open(UT / "nmbu-data.json", "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     print(f"nmbu: {len(o)} oversikts- og fagmiljølinjer")
-    f = sokergrunnlag()
+    f = sokergrunnlag() + forskning_linjer()
     json.dump({"fakultet": None, "navn": "Felles", "linjer": f}, open(UT / "felles-data.json", "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     print(f"felles: {len(f)} søkergrunnlagslinjer, {(UT / 'felles-data.json').stat().st_size // 1024} kB")
     m = metode()

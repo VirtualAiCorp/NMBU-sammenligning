@@ -5,3 +5,10 @@ data/*/kilder/dbh-cache/
 kilde/.env.local
 kilde/dist-uten-hh/
 __pycache__/
+# Rådata-cache for de nye datasettene (hentes på nytt med skriptene; øyeblikksbildene i samordna-ledige beholdes)
+data/nmbu/kilder/samordna-katalog/
+data/nmbu/kilder/dbh905/
+data/nmbu/kilder/arbeidsmarked/
+data/nmbu/kilder/forskning/
+data/nmbu/kilder/ssb-overgang/
+data/nmbu/kilder/ssb-gjennomforing/

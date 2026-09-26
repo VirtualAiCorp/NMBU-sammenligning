@@ -29,6 +29,7 @@ const AdmissionAnalysis2026 = lazyNamed<typeof import('./components/AdmissionAna
 const MarkedsstatusView = lazyNamed<typeof import('./components/MarkedsstatusView')['MarkedsstatusView']>(() => import('./components/MarkedsstatusView'), 'MarkedsstatusView');
 const PasswordGate = lazyNamed<typeof import('./components/PasswordGate')['PasswordGate']>(() => import('./components/PasswordGate'), 'PasswordGate');
 const NmbuCourseExplorer = lazyNamed<typeof import('./components/NmbuCourseExplorer')['NmbuCourseExplorer']>(() => import('./components/NmbuCourseExplorer'), 'NmbuCourseExplorer');
+const FacultyArbeidsmarked = lazyNamed<typeof import('./components/FacultyArbeidsmarked')['FacultyArbeidsmarked']>(() => import('./components/FacultyArbeidsmarked'), 'FacultyArbeidsmarked');
 const LandsamAdmissionAnalysis = lazyNamed<typeof import('./components/LandsamAdmissionAnalysis')['LandsamAdmissionAnalysis']>(() => import('./components/LandsamAdmissionAnalysis'), 'LandsamAdmissionAnalysis');
 const LandsamCourseAnalysis = lazyNamed<typeof import('./components/LandsamCourseAnalysis')['LandsamCourseAnalysis']>(() => import('./components/LandsamCourseAnalysis'), 'LandsamCourseAnalysis');
 const FacultyMarketStatus = lazyNamed<typeof import('./components/FacultyMarketStatus')['FacultyMarketStatus']>(() => import('./components/FacultyMarketStatus'), 'FacultyMarketStatus');
@@ -48,7 +49,7 @@ const NmbuStaffPage = lazyNamed<typeof import('./components/InstitusjonsSider')[
 type ProgramLevel = 'bachelor' | 'master' | 'opptak2026' | 'markedsstatus';
 type ViewMode = 'course' | 'mapping' | 'admission' | 'karakterindeks' | 'studiebarometer' | 'map' | 'firstyear' | 'online';
 type MasterViewMode = 'masteroppgave' | 'sammenligning' | 'nmbu-emner';
-type FacultyView = 'landing' | 'analyse' | 'emner' | 'markedsstatus' | 'studiebarometer' | 'gjennomforing' | 'studentene' | 'fagmiljo' | 'bolig' | 'sokergrunnlag' | 'okonomi' | 'inntekt' | 'intern';
+type FacultyView = 'landing' | 'analyse' | 'emner' | 'markedsstatus' | 'studiebarometer' | 'gjennomforing' | 'studentene' | 'fagmiljo' | 'bolig' | 'sokergrunnlag' | 'okonomi' | 'inntekt' | 'arbeidsmarked' | 'intern';
 
 export default function App() {
   const [faculty, setFaculty] = useState<Faculty | null>(null);
@@ -128,6 +129,7 @@ export default function App() {
     bolig: { title: 'Bolig og studentboliger', subtitle: 'Studentboliger, kjøpspriser og leiepriser ved NMBU og konkurrentenes studiesteder · Kilde: NSO og SSB' },
     intern: { title: 'Opptak høsten 2026 (intern)', subtitle: 'Søkermassen rundt opptaksgrensen og simulering av større eller mindre opptaksrammer for bachelorprogrammene · Kilde: opptakskontoret (FS), aggregert og kryptert' },
     inntekt: { title: 'Inntekt per program', subtitle: 'Anslått resultatbasert finansiering fra studiepoeng og fullførte grader, NMBU mot konkurrentene · Kilde: DBH/HK-dir tabell 900, 908 og 104' },
+    arbeidsmarked: { title: 'Arbeidsmarkedet etter utdanning', subtitle: 'Lønn, ledighet og vanligste yrker for nyutdannede i fagfeltene programmene utdanner til · Kilde: SSB og utdanning.no' },
     okonomi: { title: 'Økonomi og styringsindikatorer', subtitle: 'NMBU mot institusjonene i fakultetets sammenligninger · Kilde: DBH/HK-dir tabell 902 og 750' },
   };
   const facultyModuleBody = (fac: FacultyData, view: Exclude<FacultyView, 'landing'>): ReactNode => {
@@ -137,6 +139,7 @@ export default function App() {
       case 'gjennomforing': return <FacultyCompletion key={fac.id} faculty={fac} />;
       case 'studentene': return <FacultyStudents key={fac.id} faculty={fac} />;
       case 'inntekt': return <FacultyRevenue key={fac.id} faculty={fac} />;
+      case 'arbeidsmarked': return <FacultyArbeidsmarked key={fac.id} faculty={fac} />;
       case 'intern': return <InternOpptak />;
       case 'studiebarometer': return <FacultyStudiebarometer key={fac.id} faculty={fac} />;
       case 'markedsstatus': return <FacultyMarketStatus key={fac.id} faculty={fac} />;
@@ -178,6 +181,7 @@ export default function App() {
       onOpenApplicantBase={() => setFacultyView('sokergrunnlag')}
       onOpenEconomy={() => setFacultyView('okonomi')}
       onOpenRevenue={() => setFacultyView('inntekt')}
+      onOpenLabourMarket={() => setFacultyView('arbeidsmarked')}
       onOpenIntern={fac.id === 'hh' ? () => setFacultyView('intern') : undefined}
       onOpenOriginalHH={fac.id === 'hh' ? () => { setFaculty('hh-figma'); setProgramLevel(null); } : undefined}
       onBackToFaculties={goHome}

@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 import { Info, ExternalLink, Filter } from 'lucide-react';
 import type { FacultyData } from '../data/faculties';
@@ -12,6 +12,12 @@ import { COMPLETION_NATIONAL, NIVAA_NAVN, type NationalCohort } from '../data/co
  */
 
 const NÅ = 2026;
+
+/** Landssnitt per studium fra SSB 14957/14958 (build-gjennomforing-landssnitt.py → public/gjennomforing/landssnitt.json) */
+interface SsbSnitt { ssbStudiumLabel: string; nivaa: string; andelNormert: number | null; andelNormertPluss: number | null; kull: string; koblingKvalitet: string }
+let ssbLast: Promise<Record<string, Record<string, SsbSnitt>> | null> | null = null;
+const hentSsbSnitt = () => (ssbLast ??= fetch(`${import.meta.env.BASE_URL}gjennomforing/landssnitt.json`)
+  .then((r) => (r.ok ? r.json() : null)).then((d) => d?.fakulteter ?? null).catch(() => { ssbLast = null; return null; }));
 type Kind = 'kull' | 'aar';
 interface MetricDef { id: string; label: string; kind: Kind; unit: '%' | ''; decimals: number; desc: string; }
 const METRICS: MetricDef[] = [
@@ -103,6 +109,8 @@ export function FacultyCompletion({ faculty }: { faculty: FacultyData }) {
   const GROUPS = faculty.completionGroups.filter((g) => g.programs.length > 0);
   const colorFor = useMemo(() => landsamColorForGroups(faculty.admissionGroups), [faculty]);
   const [groupId, setGroupId] = useState<string>(GROUPS[0]?.id ?? '');
+  const [ssbSnitt, setSsbSnitt] = useState<Record<string, SsbSnitt> | null>(null);
+  useEffect(() => { let aktiv = true; hentSsbSnitt().then((d) => { if (aktiv) setSsbSnitt(d?.[faculty.id] ?? null); }); return () => { aktiv = false; }; }, [faculty.id]);
   const group: CompletionGroup | undefined = GROUPS.find((g) => g.id === groupId) ?? GROUPS[0];
   const [selectedByGroup, setSelectedByGroup] = useState<Record<string, string[]>>(() => Object.fromEntries(GROUPS.map((g) => [g.id, g.defaultIds])));
   const [metricId, setMetricId] = useState('normert');
@@ -195,6 +203,17 @@ export function FacultyCompletion({ faculty }: { faculty: FacultyData }) {
                 </div>
               ))}
             </div>
+            {(() => {
+              const ssb = ssbSnitt?.[group.id];
+              if (!ssb || ssb.koblingKvalitet === 'ikke dekket' || ssb.andelNormert == null) return null;
+              return (
+                <div className="mt-4 pt-3" style={{ borderTop: '1px solid rgba(255,255,255,0.18)', fontSize: 11, opacity: 0.85 }}>
+                  Landssnitt for {ssb.ssbStudiumLabel.charAt(0).toLowerCase() + ssb.ssbStudiumLabel.slice(1)} (SSB, kull {ssb.kull}):{' '}
+                  <b>{nf(ssb.andelNormert, 1)} %</b> fullført på normert tid{ssb.andelNormertPluss != null && <>, <b>{nf(ssb.andelNormertPluss, 1)} %</b> innen normert tid + 2 år</>}
+                  {ssb.koblingKvalitet === 'grov' && <span style={{ opacity: 0.75 }}> · nærmeste fagfelt i SSB, grov sammenligning</span>}
+                </div>
+              );
+            })()}
           </div>
         );
       })}

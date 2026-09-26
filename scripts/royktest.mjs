@@ -8,7 +8,7 @@ import fs from 'fs';
 const BASE = process.argv[2] ?? 'http://localhost:5173';
 const KONFIG = (process.argv[3] ?? 'nmbu:light').split(',').map((k) => k.split(':'));
 const FAK = ['HH', 'REALTEK', 'LANDSAM', 'MINA', 'VET', 'BIOVIT', 'KBM'];
-const MOD = ['Opptak', 'Emner og karakterer', 'Gjennomføring', 'Studentene', 'Studiebarometeret', 'Markedsstatus', 'Inntekt', 'Fagmiljøet', 'Søkergrunnlaget', 'Bolig', 'Økonomi'];
+const MOD = ['Opptak', 'Emner og karakterer', 'Gjennomføring', 'Studentene', 'Studiebarometeret', 'Markedsstatus', 'Inntekt', 'Arbeidsmarkedet', 'Fagmiljøet', 'Søkergrunnlaget', 'Bolig', 'Økonomi'];
 const NMBU = ['Oversikt', 'Alle emner ved NMBU', 'Fagmiljøet', 'Søkergrunnlaget', 'Bolig og studentboliger', 'Økonomi'];
 const b = await chromium.launch({ channel: 'chrome', headless: true });
 const rapport = []; let besokt = 0;

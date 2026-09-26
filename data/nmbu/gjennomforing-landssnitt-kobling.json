@@ -1,0 +1,95 @@
+{
+  "_om": "Kuratert kobling fra NMBUs programgrupper (kilde/src/app/data/<fak>AdmissionData.json, groups[].id) til studium/fagfelt i SSB 14957 (bachelor, nasjonalt) og 14958 (5-årig master, nasjonalt). Bare bachelor- og master5-nivå er dekket: SSB 14957/14958 har ingen tilsvarende tabell for 2-årige masterprogrammer (det finnes en egen SSB-tabell, 14955, for toårig master, men den er ikke hentet i denne oppgaven). 2-årige masterprogrammer står derfor med ssbStudium=null og kvalitet=ikke dekket. kvalitet er 'sikker' når NMBU-programmet tydelig hører til SSBs fagfeltkategori, og 'grov' når programmet er tverrfaglig eller SSBs kategori er bred/upresis for programmet.",
+  "ssbStudiumLabel": {
+    "004b": "Bachelor, førskole-/barnehagelærerutdanning",
+    "005b": "Bachelor, fag- og yrkesfaglærer",
+    "006b": "Bachelor, ingeniørfag",
+    "007b": "Bachelor, sykepleie",
+    "008b": "Bachelor, helsefagutdanninger, ikke sykepleie",
+    "009b": "Bachelor, helse-, sosial- og idrettsfag",
+    "010b": "Bachelor, humanistiske og estetiske fag",
+    "011b": "Bachelor, samfunnsfag og juridiske fag",
+    "012b": "Bachelor, økonomiske og administrative fag",
+    "013b": "Bachelor, naturvitenskapelige fag, håndverksfag og tekniske fag, ikke ingeniørutdanning",
+    "014b": "Bachelor, primærnæringsfag",
+    "015b": "Bachelor, samferdsels- og sikkerhetsfag og andre servicefag",
+    "54M": "Siviløkonom-/Master-utdanning (5-årig)",
+    "55M": "Master, teknologifag (5-årig)",
+    "78M": "Master, primærnæringsfag (5-årig)"
+  },
+  "fakulteter": {
+    "hh": {
+      "oa": {"ssbStudium": "012b", "ssbTabell": "14957", "kvalitet": "sikker", "begrunnelse": "Bachelor i økonomi og administrasjon er kjerneeksemplet på SSBs fagfelt økonomisk-administrative fag."},
+      "samf": {"ssbStudium": "012b", "ssbTabell": "14957", "kvalitet": "grov", "begrunnelse": "Samfunnsøkonomi klassifiseres i NUS under økonomiske fag; 14957 har ingen egen kategori for samfunnsøkonomi, bare den brede økonomisk-administrative kategorien."},
+      "olit": {"ssbStudium": "012b", "ssbTabell": "14957", "kvalitet": "grov", "begrunnelse": "Kombinasjonsprogram økonomi/ledelse/IT. Nærmeste SSB-fagfelt er økonomisk-administrative fag, men IT-innholdet fanges ikke opp."},
+      "moa": {"ssbStudium": null, "ssbTabell": null, "kvalitet": "ikke dekket", "begrunnelse": "2-årig master; ingen tilsvarende SSB-tabell hentet i denne oppgaven (14957/14958 dekker bare bachelor og 5-årig master)."},
+      "mecon": {"ssbStudium": null, "ssbTabell": null, "kvalitet": "ikke dekket", "begrunnelse": "2-årig master; ikke dekket, se moa."},
+      "mei": {"ssbStudium": null, "ssbTabell": null, "kvalitet": "ikke dekket", "begrunnelse": "2-årig master; ikke dekket, se moa."}
+    },
+    "landsam": {
+      "eiendom": {"ssbStudium": "54M", "ssbTabell": "14958", "kvalitet": "grov", "begrunnelse": "5-årig eiendomsprogram har tungt økonomi- og jussinnhold, nærmest 14958s «Siviløkonom-/Master-utdanning»-kategori, men programmet er ikke en siviløkonomutdanning."},
+      "landskapsarkitektur": {"ssbStudium": "55M", "ssbTabell": "14958", "kvalitet": "grov", "begrunnelse": "Landskapsarkitektur klassifiseres i NUS normalt sammen med arkitektur under teknologifag; 14958 har ingen egen kategori for arkitektur."},
+      "byregion": {"ssbStudium": "55M", "ssbTabell": "14958", "kvalitet": "grov", "begrunnelse": "By- og regionplanlegging (5-årig) har en teknisk/plan­faglig kjerne nærmest teknologifag, selv om programmet også har samfunnsfaglig innhold."},
+      "landskapsingenior": {"ssbStudium": "006b", "ssbTabell": "14957", "kvalitet": "grov", "begrunnelse": "Landskapsingeniør er ikke en akkreditert sivilingeniør-/ingeniørutdanning, men nærmeste SSB-kategori er bachelor ingeniørfag."},
+      "miljoutvikling": {"ssbStudium": "011b", "ssbTabell": "14957", "kvalitet": "grov", "begrunnelse": "Internasjonale miljø- og utviklingsstudier er tverrfaglig samfunnsvitenskap; nærmeste kategori er samfunnsfag og juridiske fag."},
+      "eiendomsutvikling": {"ssbStudium": null, "ssbTabell": null, "kvalitet": "ikke dekket", "begrunnelse": "2-årig master; ikke dekket, se hh.moa."},
+      "folkehelse": {"ssbStudium": null, "ssbTabell": null, "kvalitet": "ikke dekket", "begrunnelse": "2-årig master; ikke dekket, se hh.moa."},
+      "globalokonomi": {"ssbStudium": null, "ssbTabell": null, "kvalitet": "ikke dekket", "begrunnelse": "2-årig master; ikke dekket, se hh.moa."},
+      "globaleutvikling": {"ssbStudium": null, "ssbTabell": null, "kvalitet": "ikke dekket", "begrunnelse": "2-årig master; ikke dekket, se hh.moa."},
+      "intmiljo": {"ssbStudium": null, "ssbTabell": null, "kvalitet": "ikke dekket", "begrunnelse": "2-årig master; ikke dekket, se hh.moa."},
+      "intrelasjoner": {"ssbStudium": null, "ssbTabell": null, "kvalitet": "ikke dekket", "begrunnelse": "2-årig master; ikke dekket, se hh.moa."},
+      "landskapglobal": {"ssbStudium": null, "ssbTabell": null, "kvalitet": "ikke dekket", "begrunnelse": "2-årig master; ikke dekket, se hh.moa."},
+      "samfok_miljo": {"ssbStudium": null, "ssbTabell": null, "kvalitet": "ikke dekket", "begrunnelse": "2-årig master; ikke dekket, se hh.moa."}
+    },
+    "realtek": {
+      "bygg": {"ssbStudium": "55M", "ssbTabell": "14958", "kvalitet": "sikker", "begrunnelse": "Sivilingeniør bygg/arkitektur er kjerneeksemplet på 14958s teknologifag-kategori."},
+      "maskin": {"ssbStudium": "55M", "ssbTabell": "14958", "kvalitet": "sikker", "begrunnelse": "Sivilingeniør teknologi/produktutvikling er teknologifag."},
+      "indok": {"ssbStudium": "55M", "ssbTabell": "14958", "kvalitet": "sikker", "begrunnelse": "Industriell økonomi er en sivilingeniør-linje og klassifiseres som teknologifag i NUS til tross for økonomiinnholdet."},
+      "kjemibio": {"ssbStudium": "55M", "ssbTabell": "14958", "kvalitet": "sikker", "begrunnelse": "Sivilingeniør kjemi og bioteknologi er teknologifag."},
+      "miljofysikk": {"ssbStudium": "55M", "ssbTabell": "14958", "kvalitet": "sikker", "begrunnelse": "Sivilingeniør miljøfysikk og fornybar energi er teknologifag."},
+      "datavitenskap": {"ssbStudium": "55M", "ssbTabell": "14958", "kvalitet": "sikker", "begrunnelse": "Sivilingeniør datavitenskap er teknologifag."},
+      "vannmiljo": {"ssbStudium": "55M", "ssbTabell": "14958", "kvalitet": "sikker", "begrunnelse": "Sivilingeniør vann- og miljøteknikk er teknologifag."},
+      "robotikk": {"ssbStudium": "55M", "ssbTabell": "14958", "kvalitet": "sikker", "begrunnelse": "Sivilingeniør anvendt robotikk er teknologifag."},
+      "geoinformatikk": {"ssbStudium": "55M", "ssbTabell": "14958", "kvalitet": "sikker", "begrunnelse": "Sivilingeniør geoinformatikk er teknologifag."},
+      "geomatikk": {"ssbStudium": "006b", "ssbTabell": "14957", "kvalitet": "grov", "begrunnelse": "Geomatikk (landmåling/kart) er teknisk fagretning; nærmeste kategori er bachelor ingeniørfag, selv om det ikke er en akkreditert ingeniørtittel."},
+      "energifysikk": {"ssbStudium": "013b", "ssbTabell": "14957", "kvalitet": "sikker", "begrunnelse": "Fysikkbasert bachelor faller naturlig under naturvitenskapelige fag."},
+      "datavitenskap2": {"ssbStudium": null, "ssbTabell": null, "kvalitet": "ikke dekket", "begrunnelse": "2-årig master; ikke dekket, se hh.moa."},
+      "vannmiljo2": {"ssbStudium": null, "ssbTabell": null, "kvalitet": "ikke dekket", "begrunnelse": "2-årig master; ikke dekket, se hh.moa."}
+    },
+    "biovit": {
+      "biologi": {"ssbStudium": "013b", "ssbTabell": "14957", "kvalitet": "sikker", "begrunnelse": "Biologi er naturvitenskapelig fag."},
+      "husdyr": {"ssbStudium": "014b", "ssbTabell": "14957", "kvalitet": "sikker", "begrunnelse": "Husdyrvitenskap er landbruksfag/primærnæring."},
+      "plante": {"ssbStudium": "014b", "ssbTabell": "14957", "kvalitet": "sikker", "begrunnelse": "Plantevitenskap er landbruksfag/primærnæring."},
+      "akvakultur": {"ssbStudium": "014b", "ssbTabell": "14957", "kvalitet": "grov", "begrunnelse": "Akvakultur regnes i NUS dels som fiskerifag under primærnæring, dels naturvitenskapelig; her lagt til primærnæringsfag."},
+      "biologi2": {"ssbStudium": null, "ssbTabell": null, "kvalitet": "ikke dekket", "begrunnelse": "2-årig master; ikke dekket, se hh.moa."},
+      "husdyr2": {"ssbStudium": null, "ssbTabell": null, "kvalitet": "ikke dekket", "begrunnelse": "2-årig master; ikke dekket, se hh.moa."},
+      "plante2": {"ssbStudium": null, "ssbTabell": null, "kvalitet": "ikke dekket", "begrunnelse": "2-årig master; ikke dekket, se hh.moa."},
+      "akvakultur2": {"ssbStudium": null, "ssbTabell": null, "kvalitet": "ikke dekket", "begrunnelse": "2-årig master; ikke dekket, se hh.moa."}
+    },
+    "kbm": {
+      "bioteknologi": {"ssbStudium": "013b", "ssbTabell": "14957", "kvalitet": "sikker", "begrunnelse": "Bioteknologi er naturvitenskapelig fag."},
+      "kjemi": {"ssbStudium": "013b", "ssbTabell": "14957", "kvalitet": "sikker", "begrunnelse": "Kjemi er naturvitenskapelig fag."},
+      "matvitenskap": {"ssbStudium": "013b", "ssbTabell": "14957", "kvalitet": "grov", "begrunnelse": "Matvitenskap og ernæring har innslag av helsefag, men hovedtyngden er naturvitenskapelig/teknologisk."},
+      "matteknologi": {"ssbStudium": "013b", "ssbTabell": "14957", "kvalitet": "grov", "begrunnelse": "Mat, teknologi og helse er tverrfaglig; helsedelen fanges ikke opp av SSBs naturvitenskap-kategori."},
+      "bioteknologi2": {"ssbStudium": null, "ssbTabell": null, "kvalitet": "ikke dekket", "begrunnelse": "2-årig master; ikke dekket, se hh.moa."},
+      "kjemi2": {"ssbStudium": null, "ssbTabell": null, "kvalitet": "ikke dekket", "begrunnelse": "2-årig master; ikke dekket, se hh.moa."},
+      "matteknologi2": {"ssbStudium": null, "ssbTabell": null, "kvalitet": "ikke dekket", "begrunnelse": "2-årig master; ikke dekket, se hh.moa."}
+    },
+    "mina": {
+      "skogfag": {"ssbStudium": "014b", "ssbTabell": "14957", "kvalitet": "sikker", "begrunnelse": "Skogfag er primærnæring (skogbruk)."},
+      "okologi": {"ssbStudium": "013b", "ssbTabell": "14957", "kvalitet": "sikker", "begrunnelse": "Økologi og naturforvaltning er naturvitenskapelig fag."},
+      "miljonatur": {"ssbStudium": "013b", "ssbTabell": "14957", "kvalitet": "sikker", "begrunnelse": "Miljø og naturressurser er naturvitenskapelig fag."},
+      "fornybar": {"ssbStudium": "013b", "ssbTabell": "14957", "kvalitet": "grov", "begrunnelse": "Fornybar energi (bachelor) kunne også vært ingeniørfag; lagt til naturvitenskapelige fag siden programmet ikke er en akkreditert ingeniørutdanning."},
+      "radioaktivitet": {"ssbStudium": "013b", "ssbTabell": "14957", "kvalitet": "sikker", "begrunnelse": "Radioaktivitet og miljø er naturvitenskapelig fag."},
+      "skogfag2": {"ssbStudium": null, "ssbTabell": null, "kvalitet": "ikke dekket", "begrunnelse": "2-årig master; ikke dekket, se hh.moa."},
+      "okologi2": {"ssbStudium": null, "ssbTabell": null, "kvalitet": "ikke dekket", "begrunnelse": "2-årig master; ikke dekket, se hh.moa."},
+      "naturforvaltning2": {"ssbStudium": null, "ssbTabell": null, "kvalitet": "ikke dekket", "begrunnelse": "2-årig master; ikke dekket, se hh.moa."},
+      "miljonatur2": {"ssbStudium": null, "ssbTabell": null, "kvalitet": "ikke dekket", "begrunnelse": "2-årig master; ikke dekket, se hh.moa."},
+      "fornybar2": {"ssbStudium": null, "ssbTabell": null, "kvalitet": "ikke dekket", "begrunnelse": "2-årig master; ikke dekket, se hh.moa."}
+    },
+    "vet": {
+      "veterinaer": {"ssbStudium": "78M", "ssbTabell": "14958", "kvalitet": "grov", "begrunnelse": "Veterinærmedisin (5-årig) er ikke identisk med «primærnæringsfag», men landbruks-, husdyr- og veterinærfag samles i samme NUS-hovedområde, og 78M er nærmeste kategori i 14958."},
+      "dyrepleie": {"ssbStudium": "014b", "ssbTabell": "14957", "kvalitet": "grov", "begrunnelse": "Dyrepleie kunne også vært klassifisert som helsefag; lagt til primærnæringsfag siden utdanningen hører til det veterinærfaglige hovedområdet i NUS."}
+    }
+  }
+}

@@ -35,15 +35,16 @@ const SIDER: [RegExp, string, string, string?][] = [
   [/studiebarometer|tilfreds|undervisningen\b|undervisningskvalitet|tilbakemeld|veiledning|læringsmiljø|yrkesrelevans|engasjement|vurderingsform|helhetsvurdering/i, 'studiebarometer', 'Studiebarometeret', 'STUDIEBAROMETERET'],
   [/emne|karakter|stryk|eksamen/i, 'emner', 'Emner og karakterer', 'EMNER OG KARAKTERER'],
   [/ungdomskull|\d+-åring|søkergrunnlag|befolkning|framskriv|videregående|\bvgs\b|matematikk|\bR[12]\b|\bS[12]\b|vg3|årskull/i, 'sokergrunnlag', 'Søkergrunnlaget', 'SØKERGRUNNLAGET'],
-  [/fagmiljø|ansatte|tilsatte|årsverk|publiser|førstestilling|stipendiat|nivå 2/i, 'fagmiljo', 'Fagmiljøet', 'FAGMILJØET'],
+  [/fagmiljø|ansatte|tilsatte|årsverk|publiser|førstestilling|stipendiat|nivå 2|forskningsråd|forskningsmidler|forskningsfinansiering|eu-prosjekt|horizon|suksessrate/i, 'fagmiljo', 'Fagmiljøet', 'FAGMILJØET'],
   [/alder|(over|under) \d+ år|\d+ år (eller )?(eldre|yngre)|eldre enn|yngre enn|registrerte studenter/i, 'studentene', 'Studentene', 'STUDENTENE'],
   [/statsbudsjett|regnskap|driftsresultat|skolepenger|statstilskudd/i, 'okonomi', 'Økonomi'],
   [/inntekt|finansieringssystem|studiepoengproduksjon/i, 'inntekt', 'Inntekt'],
+  [/arbeidsmarked|lønn|ledighet|yrke|jobb etter|nyutdannede/i, 'arbeidsmarked', 'Arbeidsmarkedet', 'ARBEIDSMARKEDET'],
   [/bolig|husleie|leiepris/i, 'bolig', 'Bolig'],
 ];
 const finnSide = (q: string) => SIDER.find(([re]) => re.test(q));
 /** Modulen en nøkkeltallslinje hører til (merket først i teksten), ellers opptak (null). */
-const modulAv = (l: DataLinje) => /^(?:RANGERING )?(STUDENTENE|STUDIEBAROMETERET|EMNER OG KARAKTERER|FAGMILJØET|SØKERGRUNNLAGET|STRATEGIER)\b/.exec(l[2])?.[1] ?? null;
+const modulAv = (l: DataLinje) => /^(?:RANGERING )?(STUDENTENE|STUDIEBAROMETERET|EMNER OG KARAKTERER|FAGMILJØET|SØKERGRUNNLAGET|STRATEGIER|ARBEIDSMARKEDET)\b/.exec(l[2])?.[1] ?? null;
 /** Moduler som ikke hører til et program, men til fakultet/institusjon (fagmiljøet) eller fylke (søkergrunnlaget). */
 const FELLES_MODUL = new Set(['FAGMILJØET', 'SØKERGRUNNLAGET', 'STRATEGIER']);
 /** Sidene for hele NMBU (App: Faculty-verdiene «nmbu-…»). */

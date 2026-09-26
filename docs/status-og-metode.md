@@ -663,3 +663,17 @@ Egen fane i markedsstatus for Handelshøyskolen («Strategier mot 2030», `Strat
 - **Markedsstatus HH:** kildelenkene for UiS (pekte til USN) og HVL (samme sak for alle) er rettet og kontrollert byte-identiske med de lokale PDF-ene. `UiS_Studieportefolje_2025_vedlegg2.pdf` er identisk med `UiS_Studieportefolje_2025.pdf`.
 
 **Skrift (26.09.2026):** IBM Plex er valgt (alternativ 2 i skriftvalget, https://claude.ai/artifact/JTuSAKUmp8kbifNmSrmhcA): Plex Serif i overskrifter, Plex Sans i tekst og Plex Mono i tallkolonner (høyre- eller midtstilte tabellceller og `.tabular-nums`) og der komponentene bruker monospace (emnekoder). `fonts.css` laster Plex; `skrift.css` fanger `fontFamily: 'Lora'` og `ui-monospace` som står direkte i komponentene (også de opprinnelige HH-komponentene). Fargetemaet Virtual AI Corp beholder Newsreader/Work Sans og bruker JetBrains Mono for tall.
+
+## 39. Fem nye datasett (26.09.2026)
+
+Hentet av agenter fra åpne kilder (plan A1, A3–A7 i `docs/nye-datakilder-utvidelse.md`); hvert skript har kilder og «Bruk:» øverst. Rådata-cache ligger i `data/nmbu/kilder/<navn>/` (gitignored, unntatt øyeblikksbildene i `samordna-ledige/`).
+
+| Datasett | Skript → fil | Hvor på siden |
+|---|---|---|
+| **Studieplasser 2016–2026 og ledig-lista 2026** (Samordna-katalogen) | `fetch-samordna-katalog.py` → `public/studieplasser/data.json`; `fetch-samordna-ledige.py` tar datert øyeblikksbilde (planlegges 19.7–30.9 fra 2027) | Opptaksanalysen: kortet «Studieplasser 2016–2026» (`Studieplasser.tsx`) |
+| **Oppmøte og stryk av oppmeldte** (DBH 905) | `build-oppmote.py` → `public/emner/oppmote/<fak>.json` og `institusjoner.json` | Emner og karakterer → Emner: kolonnene «Oppmøte %» og «Stryk av oppmeldte». BI rapporterer ikke oppmøte |
+| **Arbeidsmarkedet etter utdanning** (SSB 14378 og 11930, utdanning.no) | `build-arbeidsmarked.py` → `public/arbeidsmarked/data.json`; kobling i `data/nmbu/arbeidsmarked-kobling.json` | Ny modul «Arbeidsmarkedet» per fakultet (`FacultyArbeidsmarked.tsx`). Nasjonale tall per fagfelt, ikke per institusjon |
+| **Forskningsfinansiering** (Forskningsrådet, CORDIS, NVA) | `build-forskning.py` → `public/fagmiljo/forskning.json` | Fagmiljøet (fakultet og hele NMBU): kortet «Forskningsfinansiering» (`Forskningsfinansiering.tsx`); HH kan velge Forskningsrådets fagområde økonomi. Søknadstall fra 2023 er for lave (Tibi mangler i åpne data) |
+| **Overgang fra videregående** (SSB 11964) og **landssnitt for gjennomføring** (SSB 14957/14958) | `build-overgang.py` → `public/sokergrunnlag/overgang.json`; `build-gjennomforing-landssnitt.py` → `public/gjennomforing/landssnitt.json` (kobling i `data/nmbu/gjennomforing-landssnitt-kobling.json`) | Søkergrunnlaget: «Hvor mange går rett videre?»; Gjennomføring: SSB-landssnitt i nøkkeltallskortet. Toårige mastere har ikke SSB-landssnitt |
+
+KI-chatten har alle fem (`build-ki-grunnlag.py`): ARBEIDSMARKEDET-linjer per programgruppe, studieplasser og landssnitt i opptakslinjene, DBH 905 i emnelinjene, forskningsfinansiering og overgang i `felles-data.json`. Røyktesten dekker den nye modulen (198 sidevisninger, ingen funn).

@@ -1,4 +1,4 @@
-import { TrendingUp, BookOpen, Globe2, Star, GraduationCap, Users, Microscope, Home, Landmark, Coins, Baby } from 'lucide-react';
+import { TrendingUp, BookOpen, Globe2, Star, GraduationCap, Users, Microscope, Home, Landmark, Coins, Baby, Briefcase } from 'lucide-react';
 import { INGEN_DATA_TEKST, type FacultyData } from '../data/faculties';
 import { useInnebygd } from '../innebygd';
 import {
@@ -31,6 +31,7 @@ interface Props {
   onOpenEconomy: () => void;
   /** Åpner «Inntekt per program» (anslått resultatbasert finansiering). */
   onOpenRevenue: () => void;
+  onOpenLabourMarket: () => void;
   /** Tilbake til fakultetsoversikten. */
   onBackToFaculties: () => void;
   /** Bare for Handelshøyskolen: åpner den opprinnelige, manuelt kuraterte HH-analysen (fra Figma). */
@@ -45,7 +46,7 @@ const LEVEL_LABEL: Record<string, string> = {
   master2:  'Toårig master',
 };
 
-export function LandsamLanding({ faculty, onOpenAnalysis, onOpenCourses, onOpenMarketStatus, onOpenStudiebarometer, onOpenCompletion, onOpenStudents, onOpenStaff, onOpenHousing, onOpenApplicantBase, onOpenEconomy, onOpenRevenue, onBackToFaculties, onOpenOriginalHH, onOpenIntern }: Props) {
+export function LandsamLanding({ faculty, onOpenAnalysis, onOpenCourses, onOpenMarketStatus, onOpenStudiebarometer, onOpenCompletion, onOpenStudents, onOpenStaff, onOpenHousing, onOpenApplicantBase, onOpenEconomy, onOpenRevenue, onOpenLabourMarket, onBackToFaculties, onOpenOriginalHH, onOpenIntern }: Props) {
   const innebygd = useInnebygd();
   const admissionGroups = faculty.admissionGroups;
   const courseGroups = faculty.courseGroups;
@@ -567,6 +568,33 @@ export function LandsamLanding({ faculty, onOpenAnalysis, onOpenCourses, onOpenM
                 <p style={{ fontSize: '13px', color: 'var(--nmbu-neutral-2)', lineHeight: 1.6, maxWidth: 580 }}>
                   Anslått resultatbasert finansiering fra studiepoeng og fullførte grader, per program og per student,
                   for NMBU og de konkurrerende programmene (finansieringssystemet fra 2025).
+                </p>
+              </div>
+            </div>
+          </button>
+          <button
+            onClick={onOpenLabourMarket}
+            className="w-full rounded-2xl p-7 text-left transition-all mt-5"
+            style={{ backgroundColor: '#fff', border: '2px solid #6EE7B7', boxShadow: '0 2px 8px rgba(4,120,87,0.08)' }}
+            onMouseEnter={(e) => { (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 4px 16px rgba(4,120,87,0.14)'; (e.currentTarget as HTMLButtonElement).style.transform = 'translateY(-2px)'; }}
+            onMouseLeave={(e) => { (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 2px 8px rgba(4,120,87,0.08)'; (e.currentTarget as HTMLButtonElement).style.transform = 'translateY(0)'; }}
+          >
+            <div className="flex items-start gap-5">
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: '#D1FAE5' }}>
+                <Briefcase className="w-6 h-6" style={{ color: '#047857' }} />
+              </div>
+              <div>
+                <div className="flex items-center gap-3 mb-1">
+                  <div style={{ fontFamily: "'Lora', serif", fontWeight: 500, fontSize: '20px', color: 'var(--nmbu-green-dark)' }}>
+                    Arbeidsmarkedet etter utdanning
+                  </div>
+                  <div className="text-xs px-2 py-0.5 rounded-full font-medium" style={{ backgroundColor: '#D1FAE5', color: '#047857' }}>
+                    SSB og utdanning.no
+                  </div>
+                </div>
+                <p style={{ fontSize: '13px', color: 'var(--nmbu-neutral-2)', lineHeight: 1.6, maxWidth: 580 }}>
+                  Lønn 0–2 og 3–4 år etter fullført grad, ledighet og de vanligste yrkene for fagfeltene programmene
+                  utdanner til. Tallene er nasjonale per fagfelt, ikke per institusjon.
                 </p>
               </div>
             </div>

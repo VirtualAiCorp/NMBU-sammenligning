@@ -1,4 +1,4 @@
-import { Fragment, useState, useMemo } from 'react';
+import { Fragment, useEffect, useState, useMemo } from 'react';
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
   ScatterChart, Scatter, ZAxis,
@@ -1159,7 +1159,28 @@ function EmneDetaljer({ c, d, year }: { c: CourseStatsX; d: CourseGradeYearX; ye
 
 // ─── Fane 3: Emner ────────────────────────────────────────────────────────────
 
-type CourseSortKey = 'emnekode' | 'emnenavn' | 'studiepoeng' | 'kandidater' | 'snitt' | 'stryk';
+type CourseSortKey = 'emnekode' | 'emnenavn' | 'studiepoeng' | 'kandidater' | 'snitt' | 'stryk' | 'oppmote' | 'strykOppm';
+
+/** Oppmøte og stryk av oppmeldte per emne fra DBH 905 (scripts/build-oppmote.py → public/emner/oppmote/) */
+interface OppmoteAar { oppmeldt: number; mott: number; oppmoteandel: number | null; strykAvOppmeldte: number | null }
+interface OppmoteData { emner: Record<string, Record<string, OppmoteAar>>; ikkeRapportert: Set<string> }
+const oppmoteLast = new Map<string, Promise<OppmoteData | null>>();
+const hentOppmote = (fak: string) => {
+  if (!oppmoteLast.has(fak)) {
+    const base = `${import.meta.env.BASE_URL}emner/oppmote/`;
+    const j = (f: string) => fetch(base + f).then((r) => (r.ok ? r.json() : null));
+    oppmoteLast.set(fak, Promise.all([j(`${fak}.json`), j('institusjoner.json')]).then(([e, i]) => (e ? {
+      emner: e.emner ?? {},
+      ikkeRapportert: new Set(Object.entries((i?.institusjoner ?? i ?? {}) as Record<string, { oppmoteRapportert?: boolean }>).filter(([, v]) => v && v.oppmoteRapportert === false).map(([k]) => k)),
+    } : null)).catch(() => { oppmoteLast.delete(fak); return null; }));
+  }
+  return oppmoteLast.get(fak)!;
+};
+function useOppmote(fak: string) {
+  const [d, setD] = useState<OppmoteData | null>(null);
+  useEffect(() => { let aktiv = true; hentOppmote(fak).then((x) => { if (aktiv) setD(x); }); return () => { aktiv = false; }; }, [fak]);
+  return d;
+}
 
 function EmneTable({
   program, year, minKandidater,
@@ -1170,6 +1191,9 @@ function EmneTable({
 }) {
   const [sortKey, setSortKey] = useState<CourseSortKey>('kandidater');
   const [sortAsc, setSortAsc] = useState(false);
+  const oppmote = useOppmote(useFaculty().id);
+  const ikkeRapportert = oppmote?.ikkeRapportert.has(program.dbhInstitusjonskode) ?? false;
+  const opp = (kode: string) => (ikkeRapportert ? undefined : oppmote?.emner[`${program.dbhInstitusjonskode}|${kode}`]?.[String(year)]);
   /** Emnekoden til raden som er åpen – bare én om gangen. */
   const [openKode, setOpenKode] = useState<string | null>(null);
 
@@ -1201,6 +1225,14 @@ function EmneTable({
         if (bv === null) return -1;
         return dir * (av - bv);
       }
+      case 'oppmote': case 'strykOppm': {
+        const felt = sortKey === 'oppmote' ? 'oppmoteandel' : 'strykAvOppmeldte';
+        const av = opp(a.c.emnekode)?.[felt] ?? null, bv = opp(b.c.emnekode)?.[felt] ?? null;
+        if (av === null && bv === null) return 0;
+        if (av === null) return 1;
+        if (bv === null) return -1;
+        return dir * (av - bv);
+      }
       case 'stryk': {
         const av = a.d.strykprosent, bv = b.d.strykprosent;
         if (av === null && bv === null) return 0;
@@ -1223,6 +1255,10 @@ function EmneTable({
     { id: 'kandidater',  label: 'Kandidater',  align: 'center' },
     { id: 'snitt',       label: 'Snitt',       align: 'center' },
     { id: 'stryk',       label: 'Stryk %',     align: 'center' },
+    ...(oppmote ? [
+      { id: 'oppmote' as const,   label: 'Oppmøte %',          align: 'center' as const },
+      { id: 'strykOppm' as const, label: 'Stryk av oppmeldte', align: 'center' as const },
+    ] : []),
     { id: 'fordeling',   label: 'Fordeling',   align: 'left' },
   ];
 
@@ -1309,6 +1345,20 @@ function EmneTable({
                     </span>
                   ) : <StrykVerdi d={d} />}
                 </td>
+                {oppmote && (() => {
+                  const o = opp(c.emnekode);
+                  const tittel = ikkeRapportert ? 'Institusjonen rapporterer ikke oppmøte til DBH' : o ? `${nf(o.mott)} av ${nf(o.oppmeldt)} oppmeldte møtte (alle studenter på emnet, DBH 905)` : 'Ingen tall i DBH 905';
+                  return (
+                    <>
+                      <td className="px-3 py-2.5 text-center" title={tittel} style={{ color: o?.oppmoteandel == null ? 'var(--nmbu-neutral-2)' : o.oppmoteandel < 80 ? '#b45309' : 'var(--nmbu-neutral-1)' }}>
+                        {o?.oppmoteandel != null ? `${nf(o.oppmoteandel, 1)} %` : '–'}
+                      </td>
+                      <td className="px-3 py-2.5 text-center" title={tittel} style={{ color: o?.strykAvOppmeldte == null ? 'var(--nmbu-neutral-2)' : 'var(--nmbu-neutral-1)' }}>
+                        {o?.strykAvOppmeldte != null ? `${nf(o.strykAvOppmeldte, 1)} %` : '–'}
+                      </td>
+                    </>
+                  );
+                })()}
                 <td className="px-3 py-2.5"><MiniDistBar d={d} /></td>
               </tr>
               {apen && (
