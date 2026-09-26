@@ -634,13 +634,13 @@ def produksjon_linjer():
     if not prod:
         return []
     ut = []
-    for aar in ("2025", "2024"):
+    for aar in ("2025",):  # én linje med siste år (forrige år i parentes), så modellen ikke velger et eldre år
         rad = sorted((p for p in prod if (p["aar"].get(aar) or {}).get("sp")), key=lambda p: -p["aar"][aar]["sp"])
         tot = sum(p["aar"][aar]["sp"] for p in rad) or 1
         kat = {}
         for p in rad:
             kat[p["kategori"]] = kat.get(p["kategori"], 0) + p["aar"][aar]["sp"]
-        topp = "; ".join(f"{i + 1}. {p['navn']} ({p['kode']}, {p['kategori'].lower()}, {p['fak'].upper() if p['fak'] != 'nmbu' else 'NMBU sentralt'}) {nf(p['aar'][aar]['sp'], 1)} studentårsverk ({nf(100 * p['aar'][aar]['sp'] / tot, 1)} %), {nf(p['aar'][aar]['inn'] / 1e6, 1)} mill. kr"
+        topp = "; ".join(f"{i + 1}. {p['navn']} ({p['kode']}, {p['kategori'].lower()}, {p['fak'].upper() if p['fak'] != 'nmbu' else 'NMBU sentralt'}) {nf(p['aar'][aar]['sp'], 1)} studentårsverk ({nf(100 * p['aar'][aar]['sp'] / tot, 1)} %), {nf(p['aar'][aar]['inn'] / 1e6, 1)} mill. kr" + (f" (2024: {nf(p['aar']['2024']['sp'], 1)})" if (p['aar'].get('2024') or {}).get('sp') else "")
                          for i, p in enumerate(rad[:12]))
         ut.append(["Inntekt: NMBUs studieprogram", f"produksjon {aar}", f"INNTEKT · NMBUs studieprogram etter studiepoengproduksjon {aar} (DBH 900; alle programkoder, også årsstudier, enkeltemner og videreutdanning), høyest først: {topp}. "
                    f"Fordeling på type: " + ", ".join(f"{k.lower()} {nf(100 * v / tot, 1)} %" for k, v in sorted(kat.items(), key=lambda x: -x[1])) + ". "
