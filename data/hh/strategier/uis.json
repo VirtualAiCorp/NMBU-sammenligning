@@ -1,207 +1,207 @@
 {
- "id": "uis",
- "navn": "UiS",
- "enhet": "Handelshøgskolen UiS (UiS Business School; inkl. NHS – Norsk hotellhøgskole fra 1.1.2026)",
- "type": "fakultet/institutt i universitet",
- "strategier": [
-  {
-   "tittel": "Drivkraft 2030 – strategi for Universitetet i Stavanger (revidert utgave av Strategi 2030)",
-   "periode": "2024–2030",
-   "nivaa": "institusjon",
-   "vedtatt": "2024-06",
-   "url": "https://www.uis.no/nb/om-uis/strategi-for-universitetet-i-stavanger-drivkraft-2030",
-   "status": "gjeldende"
+  "id": "uis",
+  "navn": "UiS",
+  "enhet": "Handelshøgskolen UiS (UiS Business School; inkl. NHS – Norsk hotellhøgskole fra 1.1.2026)",
+  "type": "fakultet/institutt i universitet",
+  "strategier": [
+    {
+      "tittel": "Drivkraft 2030 – strategi for Universitetet i Stavanger (revidert utgave av Strategi 2030)",
+      "periode": "2024–2030",
+      "nivaa": "institusjon",
+      "vedtatt": "2024-06",
+      "url": "https://www.uis.no/nb/om-uis/strategi-for-universitetet-i-stavanger-drivkraft-2030",
+      "status": "gjeldende"
+    },
+    {
+      "tittel": "Strategy 2030 for the UiS School of Business and Law (Strategi 2030 for Handelshøgskolen UiS)",
+      "periode": "2021–2030",
+      "nivaa": "handelshøyskole/fakultet",
+      "vedtatt": null,
+      "url": "https://www.uis.no/en/about-uis/strategy-2030-for-the-uis-school-of-business-and-law",
+      "status": "gjeldende"
+    },
+    {
+      "tittel": "UiS Business School Action Plan 2026",
+      "periode": "2026",
+      "nivaa": "handlingsplan",
+      "vedtatt": null,
+      "url": "https://opengov.360online.com/Meetings/uis/Meetings/Details/1000123?agendaItemId=518479",
+      "status": "gjeldende"
+    },
+    {
+      "tittel": "Kvalitet i fakultetets studieportefølje 2026 – Handelshøgskolen UiS (behandlet i fakultetsstyret 18.06.2026)",
+      "periode": "2026",
+      "nivaa": "handelshøyskole/fakultet",
+      "vedtatt": "2026-06",
+      "url": "https://opengov.360online.com/Meetings/uis/Meetings/Details/1046926?agendaItemId=520150",
+      "status": "gjeldende"
+    },
+    {
+      "tittel": "O-sak US 63/25 Overflytting av NHS-ILT til Handelshøgskolen UiS – statusoppdatering (UiS-styret 14.10.2025)",
+      "periode": "2025–2028",
+      "nivaa": "institusjon",
+      "vedtatt": "2025-10",
+      "url": "https://opengov.360online.com/Meetings/uis/Meetings/Details/958123?agendaItemId=518325",
+      "status": "gjeldende"
+    },
+    {
+      "tittel": "Ny strategi for den sammenslåtte handelshøgskolen (strategiprosess varslet i handlingsplan 2026)",
+      "periode": "fra ca. 2027 (ikke fastsatt)",
+      "nivaa": "handelshøyskole/fakultet",
+      "vedtatt": null,
+      "url": "https://opengov.360online.com/Meetings/usn/Boards/Details/341390",
+      "status": "under arbeid"
+    },
+    {
+      "tittel": "Utviklingsavtale for Universitetet i Stavanger 2023–2026 (Kunnskapsdepartementet)",
+      "periode": "2023–2026",
+      "nivaa": "institusjon",
+      "vedtatt": "2023-03",
+      "url": "https://www.regjeringen.no/contentassets/301634466b3d4ec69aab881cfca60d30/utviklingsavtale-uis-kd-2023-2026-2106127.pdf",
+      "status": "gjeldende"
+    },
+    {
+      "tittel": "Nyhetssak UiS: «NHS blir del av Handelshøgskolen UiS» (januar 2026)",
+      "periode": "2026",
+      "nivaa": "institusjon",
+      "vedtatt": null,
+      "url": "https://www.uis.no/nb/om-uis/nhs-blir-del-av-handelshogskolen-uis",
+      "status": "gjeldende"
+    },
+    {
+      "tittel": "Khrono 12.06.2025: «Flytter hotellhøgskolen. Trosser intern motstand» (nyhetssak)",
+      "periode": "2025",
+      "nivaa": "institusjon",
+      "vedtatt": null,
+      "url": "https://www.khrono.no/flytter-hotellhogskolen-trosser-intern-motstand/976438",
+      "status": "gjeldende"
+    },
+    {
+      "tittel": "NHS – Kompetansesenter for hotell, reiseliv og serviceledelse ved UiS (nettside)",
+      "periode": "2026",
+      "nivaa": "handelshøyskole/fakultet",
+      "vedtatt": null,
+      "url": "https://www.uis.no/nb/om-uis/nhs-kompetansesenter-for-hotell-reiseliv-og-serviceledelse-ved-uis",
+      "status": "gjeldende"
+    }
+  ],
+  "visjon": "Handelshøgskolen vil bli en høyt anerkjent og akkreditert internasjonal handelshøyskole med regional forankring i energiregionen, som gjør studenter og ansatte i stand til ansvarlige beslutninger og bærekraftig verdiskaping. Institusjonen UiS vil være et åpent og innovativt universitet og en drivkraft for grønn omstilling.",
+  "satsinger": [
+    {
+      "tema": "Akkreditering og rangering",
+      "tekst": "Målet for 2030 er å være en akkreditert og anerkjent internasjonal handelshøyskole; i 2026 skal fakultetet forberede og sende søknad om EQUIS eligibility til EFMD og involvere fagstab og administrasjon i akkrediteringsarbeidet.",
+      "kilde": 2,
+      "side": 3
+    },
+    {
+      "tema": "Økonomi og ressurser",
+      "tekst": "Integreringen av NHS-ILT skal gi gevinster på anslagsvis 10–13 mill. kr i året, blant annet ved å kutte 12–15 overlappende emner (6–9 vitenskapelige årsverk) og 1–2 administrative årsverk, uten oppsigelser; valgemner med under 15 påmeldte kan settes på vent.",
+      "kilde": 4,
+      "side": 2
+    },
+    {
+      "tema": "Studiekvalitet og læringsmiljø",
+      "tekst": "Første studieår på alle bachelorprogram skal styrkes med flere undervisningsassistenter og forelesere i krevende emner, seminargrupper, mentorordning og faglig-sosiale møteplasser; tiltaket er grovt anslått til 2–3 mill. kr og er førsteprioritet i handlingsplanen for 2026.",
+      "kilde": 4,
+      "side": 3
+    },
+    {
+      "tema": "Digitalisering og KI",
+      "tekst": "Faglærernes KI-kompetanse skal heves gjennom seminarer og en delingsplattform, slik at studentene lærer ansvarlig og effektiv KI-bruk; fakultetets KI-strategi skal revideres i tråd med UiS' KI-strategi.",
+      "kilde": 2,
+      "side": 2
+    },
+    {
+      "tema": "Internasjonalisering",
+      "tekst": "Handelshøgskolen vil revitalisere utvekslingsavtaler, utvikle internasjonale praksisavtaler og flere dobbeltgrader; målrettet markedsføring (bl.a. messer i Tyskland og Østerrike) og redusert studieavgift ga 147 % flere internasjonale førstevalgssøkere i 2026.",
+      "kilde": 3,
+      "side": 1
+    },
+    {
+      "tema": "Samspill med arbeidslivet",
+      "tekst": "Praksis/internship skal bygges ut i alle program, med mentorordninger og gjesteforelesere; Sparebankstiftelsen har gitt 3 mill. kr til et internshipprogram for finansstudenter og Ellen & Aksel Lunds stiftelse 1,6 mill. kr til tilsvarende for master i serviceledelse.",
+      "kilde": 3,
+      "side": 8
+    },
+    {
+      "tema": "Regional rolle",
+      "tekst": "Service-, hotell- og reiselivsprofilen fra NHS skal styrkes med en egen senterleder og posisjonering av handelshøgskolen som nasjonal møteplass for servicenæringen; NHS videreføres som kompetansesenter.",
+      "kilde": 2,
+      "side": 3
+    },
+    {
+      "tema": "Forskning",
+      "tekst": "Driftsmidlene per vitenskapelig ansatt og interne midler til prosjektutvikling skal økes, og ph.d.-utdanningen (veiledning, opplæring og organisering) skal styrkes og evalueres.",
+      "kilde": 2,
+      "side": 2
+    },
+    {
+      "tema": "Rekruttering og studietilbud",
+      "tekst": "Rettsvitenskap, som er i vekst men sårbart, skal konsolideres med nye stillinger og tydeligere programledelse for å sikre reakkreditering; totalt planlegges fem nye ansettelser i rett og regnskap.",
+      "kilde": 3,
+      "side": 12
+    },
+    {
+      "tema": "Livslang læring og EVU",
+      "tekst": "Etter- og videreutdanning (EMBA og ny erfaringsbasert master i transformasjon og nyskaping fra NHS) og alumninettverket skal evalueres og videreutvikles; EMBA gir om lag 3,5 mill. kr i årlig overskudd.",
+      "kilde": 3,
+      "side": 4
+    },
+    {
+      "tema": "Bærekraft",
+      "tekst": "Etikk, ansvar og bærekraft (ERS) skal gjennomsyre alle program, og strategien bruker regionens grønne omstilling i energinæringen som et naturlig fortrinn.",
+      "kilde": 1,
+      "side": null
+    },
+    {
+      "tema": "Studiekvalitet og læringsmiljø",
+      "tekst": "«Soft skills» er en egen strategisk retningslinje: alle program skal trene teamarbeid, forhandling og presentasjon, og fra høsten 2026 får masterstudentene et seksdagers kurs som også dekker KI, CV og intervjuteknikk.",
+      "kilde": 3,
+      "side": 11
+    },
+    {
+      "tema": "Mangfold og likestilling",
+      "tekst": "Handlingsplanen følger opp integrering og onboarding av internasjonalt ansatte (44 % internasjonal fagstab i 2024); kvinneandelen i professorstillinger falt fra 30,4 % (2022) til 25 % (2024).",
+      "kilde": 2,
+      "side": 5
+    },
+    {
+      "tema": "Campus og infrastruktur",
+      "tekst": "Fakultetet mangler egne grupperom, lesesal og kantine for studentene, og ønsker rask samlokalisering av fagstaben etter NHS-sammenslåingen innenfor UiS' pågående arealutviklingsprosjekt.",
+      "kilde": 3,
+      "side": 10
+    }
+  ],
+  "maal": [
+    {
+      "tekst": "Bli akkreditert, anerkjent internasjonal handelshøyskole innen 2030 (Strategi 2030).",
+      "kilde": 1
+    },
+    {
+      "tekst": "Søke EQUIS eligibility hos EFMD i 2026 (handlingsplan 2026; fikserte tallmål for KPI-ene settes ikke for 2026).",
+      "kilde": 2
+    },
+    {
+      "tekst": "Gevinstrealisering av NHS-integreringen: 10–13 mill. kr per år over minst tre år (2026–2028); ca. 3,5 mill. kr av gevinsten omfordeles til SV-fakultetets psykologisatsing.",
+      "kilde": 4
+    },
+    {
+      "tekst": "Redusere emneporteføljen med 12–15 emner (tilsvarer 6–9 vitenskapelige årsverk og 7–10 mill. kr) etter sammenslåingen fra 2026.",
+      "kilde": 4
+    },
+    {
+      "tekst": "Mulig oppstart av ny bachelor i organisasjon og ledelse tidligst høsten 2028 (utredningstillatelse gitt våren 2026).",
+      "kilde": 3
+    }
+  ],
+  "studieportefolje": "Etter sammenslåingen med NHS 1.1.2026 har fakultetet om lag 2 235 studenter, to årsstudier, fem bachelorprogram, fire masterprogram og to erfaringsbaserte master, pluss ph.d. sammen med SV. Fra høsten 2026 kom et nettbasert årsstudium i økonomi og jus (929 førstevalgssøkere til 90 plasser) og en master i økonomisk omstilling og innovasjon; en felles ph.d. i rettsvitenskap med BI og UiA er under utvikling (NOKUT-søknad), og bachelor i organisasjon og ledelse utredes. Planen om egen master i strategi og ledelse er droppet til fordel for å justere masteren i serviceledelse mot generell ledelse, og bachelor i reiselivsledelse hadde nullopptak i 2025 og 2026.",
+  "akkreditering": "Ingen internasjonal akkreditering i dag. Strategi 2030 sikter mot akkreditering innen 2030, og handlingsplanen for 2026 innebærer søknad om EQUIS eligibility; ledelsen begrunner også NHS-sammenslåingen med at et større fagmiljø gir bedre grunnlag for EFMD-akkreditering.",
+  "saerpreg": "En internasjonalt orientert handelshøyskole med regional identitet i energiregionen, som kombinerer økonomi, ledelse og rettsvitenskap i samme fakultet. Med NHS har den fått Norges eldste hotell- og reiselivsmiljø (fra 1912) og en nasjonal serviceprofil. Strategien vektlegger myke ferdigheter og løsningsorientert forskning, og nesten halve fagstaben er internasjonal.",
+  "sitat": {
+    "tekst": "to enable responsible decision-making and sustainable value creation",
+    "kilde": 1
   },
-  {
-   "tittel": "Strategy 2030 for the UiS School of Business and Law (Strategi 2030 for Handelshøgskolen UiS)",
-   "periode": "2021–2030",
-   "nivaa": "handelshøyskole/fakultet",
-   "vedtatt": null,
-   "url": "https://www.uis.no/en/about-uis/strategy-2030-for-the-uis-school-of-business-and-law",
-   "status": "gjeldende"
-  },
-  {
-   "tittel": "UiS Business School Action Plan 2026",
-   "periode": "2026",
-   "nivaa": "handlingsplan",
-   "vedtatt": null,
-   "url": "https://opengov.360online.com/Meetings/usn/Boards/Details/341390",
-   "status": "gjeldende"
-  },
-  {
-   "tittel": "Kvalitet i fakultetets studieportefølje 2026 – Handelshøgskolen UiS (behandlet i fakultetsstyret 18.06.2026)",
-   "periode": "2026",
-   "nivaa": "handelshøyskole/fakultet",
-   "vedtatt": "2026-06",
-   "url": "https://opengov.360online.com/Meetings/usn/Boards/Details/341390",
-   "status": "gjeldende"
-  },
-  {
-   "tittel": "O-sak US 63/25 Overflytting av NHS-ILT til Handelshøgskolen UiS – statusoppdatering (UiS-styret 14.10.2025)",
-   "periode": "2025–2028",
-   "nivaa": "institusjon",
-   "vedtatt": "2025-10",
-   "url": "https://opengov.360online.com/Meetings/usn/Boards/Details/341390",
-   "status": "gjeldende"
-  },
-  {
-   "tittel": "Ny strategi for den sammenslåtte handelshøgskolen (strategiprosess varslet i handlingsplan 2026)",
-   "periode": "fra ca. 2027 (ikke fastsatt)",
-   "nivaa": "handelshøyskole/fakultet",
-   "vedtatt": null,
-   "url": "https://opengov.360online.com/Meetings/usn/Boards/Details/341390",
-   "status": "under arbeid"
-  },
-  {
-   "tittel": "Utviklingsavtale for Universitetet i Stavanger 2023–2026 (Kunnskapsdepartementet)",
-   "periode": "2023–2026",
-   "nivaa": "institusjon",
-   "vedtatt": "2023-03",
-   "url": "https://www.regjeringen.no/contentassets/301634466b3d4ec69aab881cfca60d30/utviklingsavtale-uis-kd-2023-2026-2106127.pdf",
-   "status": "gjeldende"
-  },
-  {
-   "tittel": "Nyhetssak UiS: «NHS blir del av Handelshøgskolen UiS» (januar 2026)",
-   "periode": "2026",
-   "nivaa": "institusjon",
-   "vedtatt": null,
-   "url": "https://www.uis.no/nb/om-uis/nhs-blir-del-av-handelshogskolen-uis",
-   "status": "gjeldende"
-  },
-  {
-   "tittel": "Khrono 12.06.2025: «Flytter hotellhøgskolen. Trosser intern motstand» (nyhetssak)",
-   "periode": "2025",
-   "nivaa": "institusjon",
-   "vedtatt": null,
-   "url": "https://www.khrono.no/flytter-hotellhogskolen-trosser-intern-motstand/976438",
-   "status": "gjeldende"
-  },
-  {
-   "tittel": "NHS – Kompetansesenter for hotell, reiseliv og serviceledelse ved UiS (nettside)",
-   "periode": "2026",
-   "nivaa": "handelshøyskole/fakultet",
-   "vedtatt": null,
-   "url": "https://www.uis.no/nb/om-uis/nhs-kompetansesenter-for-hotell-reiseliv-og-serviceledelse-ved-uis",
-   "status": "gjeldende"
-  }
- ],
- "visjon": "Handelshøgskolen vil bli en høyt anerkjent og akkreditert internasjonal handelshøyskole med regional forankring i energiregionen, som gjør studenter og ansatte i stand til ansvarlige beslutninger og bærekraftig verdiskaping. Institusjonen UiS vil være et åpent og innovativt universitet og en drivkraft for grønn omstilling.",
- "satsinger": [
-  {
-   "tema": "Akkreditering og rangering",
-   "tekst": "Målet for 2030 er å være en akkreditert og anerkjent internasjonal handelshøyskole; i 2026 skal fakultetet forberede og sende søknad om EQUIS eligibility til EFMD og involvere fagstab og administrasjon i akkrediteringsarbeidet.",
-   "kilde": 2,
-   "side": 3
-  },
-  {
-   "tema": "Økonomi og ressurser",
-   "tekst": "Integreringen av NHS-ILT skal gi gevinster på anslagsvis 10–13 mill. kr i året, blant annet ved å kutte 12–15 overlappende emner (6–9 vitenskapelige årsverk) og 1–2 administrative årsverk, uten oppsigelser; valgemner med under 15 påmeldte kan settes på vent.",
-   "kilde": 4,
-   "side": 2
-  },
-  {
-   "tema": "Studiekvalitet og læringsmiljø",
-   "tekst": "Første studieår på alle bachelorprogram skal styrkes med flere undervisningsassistenter og forelesere i krevende emner, seminargrupper, mentorordning og faglig-sosiale møteplasser; tiltaket er grovt anslått til 2–3 mill. kr og er førsteprioritet i handlingsplanen for 2026.",
-   "kilde": 4,
-   "side": 3
-  },
-  {
-   "tema": "Digitalisering og KI",
-   "tekst": "Faglærernes KI-kompetanse skal heves gjennom seminarer og en delingsplattform, slik at studentene lærer ansvarlig og effektiv KI-bruk; fakultetets KI-strategi skal revideres i tråd med UiS' KI-strategi.",
-   "kilde": 2,
-   "side": 2
-  },
-  {
-   "tema": "Internasjonalisering",
-   "tekst": "Handelshøgskolen vil revitalisere utvekslingsavtaler, utvikle internasjonale praksisavtaler og flere dobbeltgrader; målrettet markedsføring (bl.a. messer i Tyskland og Østerrike) og redusert studieavgift ga 147 % flere internasjonale førstevalgssøkere i 2026.",
-   "kilde": 3,
-   "side": 1
-  },
-  {
-   "tema": "Samspill med arbeidslivet",
-   "tekst": "Praksis/internship skal bygges ut i alle program, med mentorordninger og gjesteforelesere; Sparebankstiftelsen har gitt 3 mill. kr til et internshipprogram for finansstudenter og Ellen & Aksel Lunds stiftelse 1,6 mill. kr til tilsvarende for master i serviceledelse.",
-   "kilde": 3,
-   "side": 8
-  },
-  {
-   "tema": "Regional rolle",
-   "tekst": "Service-, hotell- og reiselivsprofilen fra NHS skal styrkes med en egen senterleder og posisjonering av handelshøgskolen som nasjonal møteplass for servicenæringen; NHS videreføres som kompetansesenter.",
-   "kilde": 2,
-   "side": 3
-  },
-  {
-   "tema": "Forskning",
-   "tekst": "Driftsmidlene per vitenskapelig ansatt og interne midler til prosjektutvikling skal økes, og ph.d.-utdanningen (veiledning, opplæring og organisering) skal styrkes og evalueres.",
-   "kilde": 2,
-   "side": 2
-  },
-  {
-   "tema": "Rekruttering og studietilbud",
-   "tekst": "Rettsvitenskap, som er i vekst men sårbart, skal konsolideres med nye stillinger og tydeligere programledelse for å sikre reakkreditering; totalt planlegges fem nye ansettelser i rett og regnskap.",
-   "kilde": 3,
-   "side": 12
-  },
-  {
-   "tema": "Livslang læring og EVU",
-   "tekst": "Etter- og videreutdanning (EMBA og ny erfaringsbasert master i transformasjon og nyskaping fra NHS) og alumninettverket skal evalueres og videreutvikles; EMBA gir om lag 3,5 mill. kr i årlig overskudd.",
-   "kilde": 3,
-   "side": 4
-  },
-  {
-   "tema": "Bærekraft",
-   "tekst": "Etikk, ansvar og bærekraft (ERS) skal gjennomsyre alle program, og strategien bruker regionens grønne omstilling i energinæringen som et naturlig fortrinn.",
-   "kilde": 1,
-   "side": null
-  },
-  {
-   "tema": "Studiekvalitet og læringsmiljø",
-   "tekst": "«Soft skills» er en egen strategisk retningslinje: alle program skal trene teamarbeid, forhandling og presentasjon, og fra høsten 2026 får masterstudentene et seksdagers kurs som også dekker KI, CV og intervjuteknikk.",
-   "kilde": 3,
-   "side": 11
-  },
-  {
-   "tema": "Mangfold og likestilling",
-   "tekst": "Handlingsplanen følger opp integrering og onboarding av internasjonalt ansatte (44 % internasjonal fagstab i 2024); kvinneandelen i professorstillinger falt fra 30,4 % (2022) til 25 % (2024).",
-   "kilde": 2,
-   "side": 5
-  },
-  {
-   "tema": "Campus og infrastruktur",
-   "tekst": "Fakultetet mangler egne grupperom, lesesal og kantine for studentene, og ønsker rask samlokalisering av fagstaben etter NHS-sammenslåingen innenfor UiS' pågående arealutviklingsprosjekt.",
-   "kilde": 3,
-   "side": 10
-  }
- ],
- "maal": [
-  {
-   "tekst": "Bli akkreditert, anerkjent internasjonal handelshøyskole innen 2030 (Strategi 2030).",
-   "kilde": 1
-  },
-  {
-   "tekst": "Søke EQUIS eligibility hos EFMD i 2026 (handlingsplan 2026; fikserte tallmål for KPI-ene settes ikke for 2026).",
-   "kilde": 2
-  },
-  {
-   "tekst": "Gevinstrealisering av NHS-integreringen: 10–13 mill. kr per år over minst tre år (2026–2028); ca. 3,5 mill. kr av gevinsten omfordeles til SV-fakultetets psykologisatsing.",
-   "kilde": 4
-  },
-  {
-   "tekst": "Redusere emneporteføljen med 12–15 emner (tilsvarer 6–9 vitenskapelige årsverk og 7–10 mill. kr) etter sammenslåingen fra 2026.",
-   "kilde": 4
-  },
-  {
-   "tekst": "Mulig oppstart av ny bachelor i organisasjon og ledelse tidligst høsten 2028 (utredningstillatelse gitt våren 2026).",
-   "kilde": 3
-  }
- ],
- "studieportefolje": "Etter sammenslåingen med NHS 1.1.2026 har fakultetet om lag 2 235 studenter, to årsstudier, fem bachelorprogram, fire masterprogram og to erfaringsbaserte master, pluss ph.d. sammen med SV. Fra høsten 2026 kom et nettbasert årsstudium i økonomi og jus (929 førstevalgssøkere til 90 plasser) og en master i økonomisk omstilling og innovasjon; en felles ph.d. i rettsvitenskap med BI og UiA er under utvikling (NOKUT-søknad), og bachelor i organisasjon og ledelse utredes. Planen om egen master i strategi og ledelse er droppet til fordel for å justere masteren i serviceledelse mot generell ledelse, og bachelor i reiselivsledelse hadde nullopptak i 2025 og 2026.",
- "akkreditering": "Ingen internasjonal akkreditering i dag. Strategi 2030 sikter mot akkreditering innen 2030, og handlingsplanen for 2026 innebærer søknad om EQUIS eligibility; ledelsen begrunner også NHS-sammenslåingen med at et større fagmiljø gir bedre grunnlag for EFMD-akkreditering.",
- "saerpreg": "En internasjonalt orientert handelshøyskole med regional identitet i energiregionen, som kombinerer økonomi, ledelse og rettsvitenskap i samme fakultet. Med NHS har den fått Norges eldste hotell- og reiselivsmiljø (fra 1912) og en nasjonal serviceprofil. Strategien vektlegger myke ferdigheter og løsningsorientert forskning, og nesten halve fagstaben er internasjonal.",
- "sitat": {
-  "tekst": "to enable responsible decision-making and sustainable value creation",
-  "kilde": 1
- },
- "pagaende": "NHS – Institutt for ledelse og tjenesteutvikling ble flyttet inn i Handelshøgskolen fra 1.1.2026 etter et omstridt styrevedtak (6–5) 12.06.2025, med gevinstkrav og emnekutt. I 2026 skal fakultetet lage en ny strategi for den sammenslåtte handelshøgskolen, integrere NHS kulturelt og organisatorisk og søke EQUIS eligibility.",
- "mangler": "Handlingsplanen for 2026 er udatert, og vi fant ikke når den ble vedtatt; KPI-ene har ingen tallfestede mål. Strategi 2030 for fakultetet har ingen oppgitt vedtaksdato (publisert 2021, oppdatert 2024). Vi fant ingen offentlig status for EQUIS-søknaden eller tidsplan for den nye fakultetsstrategien. URL-en markedsstatus.json oppgir for de lokale styredokumentene, peker til en generell opengov-styreside (under «usn»), ikke direkte til dokumentene, og bør kontrolleres. Rapporten oppgir 18,9 førstevalgssøkere per plass, men dette stemmer ikke med tallene (4 053 søkere / 767 plasser ≈ 5,3), så tallet er utelatt.",
- "hentet": "2026-09-25"
+  "pagaende": "NHS – Institutt for ledelse og tjenesteutvikling ble flyttet inn i Handelshøgskolen fra 1.1.2026 etter et omstridt styrevedtak (6–5) 12.06.2025, med gevinstkrav og emnekutt. I 2026 skal fakultetet lage en ny strategi for den sammenslåtte handelshøgskolen, integrere NHS kulturelt og organisatorisk og søke EQUIS eligibility.",
+  "mangler": "Handlingsplanen for 2026 er udatert, og vi fant ikke når den ble vedtatt; KPI-ene har ingen tallfestede mål. Strategi 2030 for fakultetet har ingen oppgitt vedtaksdato (publisert 2021, oppdatert 2024). Vi fant ingen offentlig status for EQUIS-søknaden eller tidsplan for den nye fakultetsstrategien. URL-en markedsstatus.json oppgir for de lokale styredokumentene, peker til en generell opengov-styreside (under «usn»), ikke direkte til dokumentene, og bør kontrolleres. Rapporten oppgir 18,9 førstevalgssøkere per plass, men dette stemmer ikke med tallene (4 053 søkere / 767 plasser ≈ 5,3), så tallet er utelatt.",
+  "hentet": "2026-09-25"
 }

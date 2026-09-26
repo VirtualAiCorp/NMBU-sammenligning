@@ -308,62 +308,63 @@ export const MARKET_STATUS: MarketInstitution[] = [
     "fullName": "Universitetet i Stavanger",
     "enhet": "Handelshøgskolen ved UiS",
     "styresider": [
-      "https://opengov.360online.com/Meetings/usn/Boards/Details/341390"
+      "https://opengov.360online.com/Meetings/uis/Boards/Details/599539",
+      "https://opengov.360online.com/Meetings/uis/Boards/Details/580870"
     ],
     "status": "complete",
     "dokumenter": [
       {
         "label": "NHS-ILT overføring til HH UiS – UiS-styresak 12.6.25",
-        "url": "https://opengov.360online.com/Meetings/usn/Boards/Details/341390",
+        "url": "https://opengov.360online.com/Meetings/uis/Meetings/Details/928823?agendaItemId=517607",
         "localPath": "/markedsstatus/hh/UiS_NHS_Flytting_styresak_12.06.2025.pdf",
         "dato": "12.06.2025",
         "storrelseMB": 0.15
       },
       {
         "label": "NHS-ILT overflytting – statusoppdatering",
-        "url": "https://opengov.360online.com/Meetings/usn/Boards/Details/341390",
+        "url": "https://opengov.360online.com/Meetings/uis/Meetings/Details/958123?agendaItemId=518325",
         "localPath": "/markedsstatus/hh/UiS_NHS_Statusoppdatering.pdf",
         "dato": "2025",
         "storrelseMB": 0.14
       },
       {
         "label": "Integrering av NHS – prosessbeskrivelse",
-        "url": "https://opengov.360online.com/Meetings/usn/Boards/Details/341390",
+        "url": "https://opengov.360online.com/Meetings/uis/Meetings/Details/1000123?agendaItemId=518477",
         "localPath": "/markedsstatus/hh/UiS_NHS_Integrering_prosessbeskrivelse.pdf",
         "dato": "2025",
         "storrelseMB": 0.03
       },
       {
         "label": "Nytt årsstudium i økonomi og jus",
-        "url": "https://opengov.360online.com/Meetings/usn/Boards/Details/341390",
+        "url": "https://opengov.360online.com/Meetings/uis/Meetings/Details/1000123?agendaItemId=518478",
         "localPath": "/markedsstatus/hh/UiS_Aarsstudium_okonomi_jus.pdf",
         "dato": "2026",
         "storrelseMB": 0.11
       },
       {
         "label": "Studieporteføljerapport 2025",
-        "url": "https://opengov.360online.com/Meetings/usn/Boards/Details/341390",
+        "url": "https://opengov.360online.com/Meetings/uis/Meetings/Details/953018?agendaItemId=517417",
         "localPath": "/markedsstatus/hh/UiS_Studieportefolje_2025.pdf",
         "dato": "2025",
         "storrelseMB": 0.32
       },
       {
         "label": "Studieporteføljerapport 2025 (vedlegg 2)",
-        "url": "https://opengov.360online.com/Meetings/usn/Boards/Details/341390",
+        "url": "https://opengov.360online.com/Meetings/uis/Meetings/Details/1000123?agendaItemId=518478",
         "localPath": "/markedsstatus/hh/UiS_Studieportefolje_2025_vedlegg2.pdf",
         "dato": "2025",
         "storrelseMB": 0.32
       },
       {
         "label": "UiS Business School Action Plan 2026",
-        "url": "https://opengov.360online.com/Meetings/usn/Boards/Details/341390",
+        "url": "https://opengov.360online.com/Meetings/uis/Meetings/Details/1000123?agendaItemId=518479",
         "localPath": "/markedsstatus/hh/UiS_Business_School_Action_Plan_2026.pdf",
         "dato": "2026",
         "storrelseMB": 0.16
       },
       {
         "label": "Studieporteføljerapport HH-UiS 2026",
-        "url": "https://opengov.360online.com/Meetings/usn/Boards/Details/341390",
+        "url": "https://opengov.360online.com/Meetings/uis/Meetings/Details/1046926?agendaItemId=520150",
         "localPath": "/markedsstatus/hh/UiS_Studieportefolje_2026.pdf",
         "dato": "2026",
         "storrelseMB": 0.3
@@ -435,34 +436,34 @@ export const MARKET_STATUS: MarketInstitution[] = [
     "fullName": "Høgskulen på Vestlandet",
     "enhet": "Handelshøgskulen HVL – Fakultet for teknologi, miljø- og samfunnsvitskap (FTMS)",
     "styresider": [
-      "https://opengov.360online.com/Meetings/hvl-uninett/Meetings/Details/936766?agendaItemId=216387"
+      "https://opengov.360online.com/Meetings/hvl-uninett/Boards/Details/302309"
     ],
     "status": "complete",
     "dokumenter": [
       {
         "label": "Tilbakemelding rekneskap per 31.12.2025",
-        "url": "https://opengov.360online.com/Meetings/hvl-uninett/Meetings/Details/936766?agendaItemId=216387",
+        "url": "https://opengov.360online.com/Meetings/hvl-uninett/Meetings/Details/936766?agendaItemId=216390",
         "localPath": "/markedsstatus/hh/HVL_FTMS_Rekneskap_2025.pdf",
         "dato": "2025",
         "storrelseMB": 0.19
       },
       {
         "label": "Rektors oppdragsbrev 2026 – FTMS",
-        "url": "https://opengov.360online.com/Meetings/hvl-uninett/Meetings/Details/936766?agendaItemId=216387",
+        "url": "https://opengov.360online.com/Meetings/hvl-uninett/Meetings/Details/936766?agendaItemId=216386",
         "localPath": "/markedsstatus/hh/HVL_Oppdragsbrev_2026_FTMS.pdf",
         "dato": "2026",
         "storrelseMB": 0.7
       },
       {
         "label": "NOKUT sitt institusjonsbesøk til HVL",
-        "url": "https://opengov.360online.com/Meetings/hvl-uninett/Meetings/Details/936766?agendaItemId=216387",
+        "url": "https://opengov.360online.com/Meetings/hvl-uninett/Meetings/Details/946603?agendaItemId=216956",
         "localPath": "/markedsstatus/hh/HVL_NOKUT_Institusjonsbesok.pdf",
         "dato": "2026",
         "storrelseMB": 0.11
       },
       {
         "label": "KI-emne ved FTMS",
-        "url": "https://opengov.360online.com/Meetings/hvl-uninett/Meetings/Details/936766?agendaItemId=216387",
+        "url": "https://opengov.360online.com/Meetings/hvl-uninett/Meetings/Details/946603?agendaItemId=216959",
         "localPath": "/markedsstatus/hh/HVL_KI-emne_FTMS.pdf",
         "dato": "2026",
         "storrelseMB": 0.12
