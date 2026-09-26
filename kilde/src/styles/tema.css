@@ -27,6 +27,8 @@
   --secondary-foreground: var(--nmbu-green-dark);
 }
 :root[data-farge="vac"][data-theme="dark"] {
+  --dm-graf-linje: #9689ff;
+  --dm-graf-soyle: #7a6ef0;
   --dm-surface: #1c1826;
   --dm-surface-2: #251f33;
   --dm-accent-text: #b3aaff;
@@ -74,6 +76,8 @@
   --nmbu-neutral-3:   #e1e6eb;
 }
 :root[data-farge="fjord"][data-theme="dark"] {
+  --dm-graf-linje: #6aaee6;
+  --dm-graf-soyle: #3b8fd9;
   --dm-surface: #17202a;
   --dm-surface-2: #1f2a36;
   --dm-accent-text: #8cc4f2;
@@ -112,6 +116,8 @@
   --nmbu-neutral-3:   #ebe2e4;
 }
 :root[data-farge="lyng"][data-theme="dark"] {
+  --dm-graf-linje: #e09bbf;
+  --dm-graf-soyle: #c46a99;
   --dm-surface: #21181c;
   --dm-surface-2: #2a1f24;
   --dm-accent-text: #e8a6c8;

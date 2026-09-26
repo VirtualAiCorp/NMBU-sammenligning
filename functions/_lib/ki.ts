@@ -4,15 +4,43 @@
  * Cloudflare Pages.
  */
 export interface KiEnv { MISTRAL_API_KEY?: string; MISTRAL_MODEL?: string; MISTRAL_BASE_URL?: string }
-export const VERSJON = '2026-09-25n';
+export const VERSJON = '2026-09-26a';
 
 export const svar = (data: unknown, status = 200) =>
   new Response(JSON.stringify(data), { status, headers: { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' } });
 
-/** Bare kall fra nettstedet selv (Origin samme vert) */
+/**
+ * Bare kall fra nettstedet selv: nettlesere sender alltid Origin ved POST, så kall uten Origin (curl, skript) avvises.
+ * Origin kan forfalskes utenfor nettleseren; hastighetsgrensen under begrenser da skaden.
+ */
 export const fremmedOpphav = (request: Request) => {
   const origin = request.headers.get('Origin');
-  return !!origin && new URL(origin).host !== new URL(request.url).host;
+  if (!origin) return true;
+  try { return new URL(origin).host !== new URL(request.url).host; } catch { return true; }
+};
+
+/**
+ * Enkel hastighetsgrense per IP-adresse og tidsvindu, lagret i Cloudflares cache (per datasenter, omtrentlig).
+ * Returnerer true når grensen er nådd. Feil i cachen slipper kallet gjennom i stedet for å stoppe tjenesten.
+ */
+export async function forMange(request: Request, navn: string, maks: number, vinduSek = 600): Promise<boolean> {
+  try {
+    const ip = request.headers.get('CF-Connecting-IP') ?? 'ukjent';
+    const vindu = Math.floor(Date.now() / (vinduSek * 1000));
+    const nokkel = new Request(`https://ki-grense.invalid/${navn}/${encodeURIComponent(ip)}/${vindu}`);
+    const cache = (caches as unknown as { default: Cache }).default;
+    const treff = await cache.match(nokkel);
+    const antall = treff ? Number(await treff.text()) || 0 : 0;
+    if (antall >= maks) return true;
+    await cache.put(nokkel, new Response(String(antall + 1), { headers: { 'Cache-Control': `max-age=${vinduSek}` } }));
+    return false;
+  } catch { return false; }
+}
+
+/** Tekst fra klienten som havner i instruksen: bare vanlige tegn, kort, og ingen forsøk på å endre instruksen */
+export const renTekst = (v: unknown, n: number, reserve: string) => {
+  const t = String(v ?? '').replace(/[^\p{L}\p{N} ·,.()/:–-]/gu, ' ').replace(/\s+/g, ' ').trim().slice(0, n);
+  return !t || erInjeksjon(t) ? reserve : t;
 };
 
 /** Åpenbare forsøk på å endre instruksen besvares uten å kalle modellen */

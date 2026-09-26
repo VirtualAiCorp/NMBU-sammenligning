@@ -23,7 +23,7 @@ FAKULTETER = {"hh": "Handelshøyskolen", "landsam": "Fakultet for landskap og sa
 KORT = {"hh": "HH", "landsam": "LANDSAM", "realtek": "REALTEK", "biovit": "BIOVIT", "kbm": "KBM", "mina": "MINA", "vet": "VET"}
 NIVAA = {"bachelor": "bachelor", "master5": "femårig master", "master2": "toårig master"}
 # Metodeavsnitt som er relevante for brukerne (ikke arbeidsform, kommandoer, passord, intern analyse eller teknikk)
-UTELAT = {"3", "4", "5", "6", "8", "9", "10", "16", "18", "19", "22", "24"}
+UTELAT = {"3", "4", "5", "6", "8", "9", "10", "16", "18", "19", "22", "24", "33", "37"}
 
 
 def nf(v, d=0):
@@ -189,21 +189,34 @@ def oversikt(kilder, omfang):
             n += f" – {e['shortName']}"
         return n
     ut = []
-    alle = "; ".join(pnavn(f, g, e) for f, g, e, _, _ in prog)
-    ut.append([f"Oversikt {omfang}", "oversikt", f"OVERSIKT {omfang}: NMBUs programgrupper i sammenligningen ({len(prog)}): {alle}.", "o",
-               prog[0][0], prog[0][1]["id"], [[f, g["id"], pnavn(f, g, e)] for f, g, e, _, _ in prog]])
+    for n in range(0, len(prog), 30):
+        del_ = prog[n:n + 30]
+        alle = "; ".join(pnavn(f, g, e) for f, g, e, _, _ in del_)
+        ut.append([f"Oversikt {omfang}", "oversikt", f"OVERSIKT {omfang}: NMBUs programgrupper i sammenligningen ({len(prog)}){f', {n + 1}–{n + len(del_)}' if len(prog) > 30 else ''}: {alle}.", "o",
+                   del_[0][0], del_[0][1]["id"], [[f, g["id"], pnavn(f, g, e)] for f, g, e, _, _ in del_]])
 
     def linje(tittel, verdier, dec, enhet="", apne=None, lavest=False):
         verdier = [(x[0], x[1], x[2] if len(x) > 2 else "") for x in verdier if x[1] is not None]
         if not verdier and not apne:
             return
         verdier.sort(key=lambda x: x[1] if lavest else -x[1])
-        liste = "; ".join(f"{i + 1}. {pnavn(*p[:3])} {nf(v, dec)}{enhet}{f' ({t})' if t else ''}" for i, (p, v, t) in enumerate(verdier))
-        tekst = f"OVERSIKT {omfang} · {tittel}, {'lavest' if lavest else 'høyest'} først: {liste or '(ingen)'}."
-        if apne:
-            tekst += f" Alle kvalifiserte fikk tilbud (ingen poenggrense): {', '.join(pnavn(*p[:3]) for p in apne)}."
-        rekke = [p for p, _, _ in verdier] + list(apne or [])
-        ut.append([f"Oversikt {omfang}", "oversikt", tekst, "o", rekke[0][0], rekke[0][1]["id"], [[p[0], p[1]["id"], pnavn(*p[:3])] for p in rekke]])
+        # Lange lister (hele NMBU) deles i biter under tegngrensen i chat.ts, med plassnummer bevart i hver bit
+        punkter = [(p, f"{i + 1}. {pnavn(*p[:3])} {nf(v, dec)}{enhet}{f' ({t})' if t else ''}") for i, (p, v, t) in enumerate(verdier)]
+        hode = f"OVERSIKT {omfang} · {tittel}, {'lavest' if lavest else 'høyest'} først ({len(verdier)} program)"
+        biter, bit = [], []
+        for p, pkt in punkter:
+            if bit and len(hode) + sum(len(x) + 2 for _, x in bit) + len(pkt) > 2250:
+                biter.append(bit); bit = []
+            bit.append((p, pkt))
+        biter.append(bit)
+        for n, bit in enumerate(biter):
+            tekst = f"{hode}{f', del {n + 1} av {len(biter)}' if len(biter) > 1 else ''}: {'; '.join(x for _, x in bit) or '(ingen)'}."
+            rekke = [p for p, _ in bit]
+            if apne and n == len(biter) - 1:
+                tekst += f" Alle kvalifiserte fikk tilbud (ingen poenggrense): {', '.join(pnavn(*p[:3]) for p in apne)}."
+                rekke += list(apne)
+            if rekke:
+                ut.append([f"Oversikt {omfang}", "oversikt", tekst, "o", rekke[0][0], rekke[0][1]["id"], [[p[0], p[1]["id"], pnavn(*p[:3])] for p in rekke]])
 
     aar = lambda felt: max((y for _, _, e, _, _ in prog for y, d in e["years"].items() if d.get(felt) is not None), default=None)
     for felt, tittel in (("pg_ord", "poenggrense ordinær kvote (hovedopptak)"), ("pg_fv", "poenggrense førstegangsvitnemål (hovedopptak)")):

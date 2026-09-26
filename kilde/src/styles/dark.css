@@ -8,6 +8,8 @@
   --dm-surface: #1a211e;       /* kort og paneler (erstatter hvit) */
   --dm-surface-2: #222b27;     /* hevet flate, verktøytips */
   --dm-accent-text: #7fd4bd;   /* NMBU-grønn som tekst på mørk flate */
+  --dm-graf-linje: #3fbf9f;    /* NMBU-linjen i grafene (fargetemaene setter egen) */
+  --dm-graf-soyle: #2f9e84;    /* NMBU-søylen i grafene */
 
   --nmbu-green-dark:  #025c4f; /* beholdes som flate (overskriftskort, aktive knapper med hvit tekst) */
   --nmbu-green:       #009a81; /* flate og tekst: holder kontrast begge veier */
@@ -102,10 +104,10 @@
 :root[data-theme="dark"] .recharts-reference-line line[stroke="#6b7280"] { stroke: #8f9c96 !important; }
 /* NMBU-linjen/-søylen (mørk petrol) lysnes så den synes mot mørk bakgrunn */
 :root[data-theme="dark"] .recharts-line-curve[stroke="#025C4F" i],
-:root[data-theme="dark"] .recharts-line-curve[stroke="var(--nmbu-green-dark)"] { stroke: #3fbf9f !important; }
-:root[data-theme="dark"] .recharts-line-dot[stroke="#025C4F" i] { stroke: #3fbf9f !important; fill: var(--dm-surface) !important; }
+:root[data-theme="dark"] .recharts-line-curve[stroke="var(--nmbu-green-dark)"] { stroke: var(--dm-graf-linje) !important; }
+:root[data-theme="dark"] .recharts-line-dot[stroke="#025C4F" i] { stroke: var(--dm-graf-linje) !important; fill: var(--dm-surface) !important; }
 :root[data-theme="dark"] .recharts-bar-rectangle path[fill="#025C4F" i],
-:root[data-theme="dark"] .recharts-rectangle[fill="#025C4F" i] { fill: #2f9e84 !important; }
+:root[data-theme="dark"] .recharts-rectangle[fill="#025C4F" i] { fill: var(--dm-graf-soyle) !important; }
 :root[data-theme="dark"] .recharts-dot[fill="#fff"], :root[data-theme="dark"] .recharts-dot[fill="#ffffff"] { fill: var(--dm-surface) !important; }
 
 /* Leaflet-kart: dempet flis og mørk tooltip */

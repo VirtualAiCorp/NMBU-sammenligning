@@ -31,11 +31,12 @@ const EASE = 'cubic-bezier(0.22, 1, 0.36, 1)';
 const SIDER: [RegExp, string, string, string?][] = [
   [/strategi|handlingsplan|satsing|satser på|visjon/i, 'markedsstatus', 'Markedsstatus · Strategier mot 2030', 'STRATEGIER'],
   [/gjennomf|frafall|fullf|normert tid|startkull/i, 'gjennomforing', 'Gjennomføring'],
+  [/engelsk|innreisende|utveksling|utenlandsk|statsborger/i, 'studentene', 'Studentene', 'STUDENTENE'],
   [/studiebarometer|tilfreds|undervisningen\b|undervisningskvalitet|tilbakemeld|veiledning|læringsmiljø|yrkesrelevans|engasjement|vurderingsform|helhetsvurdering/i, 'studiebarometer', 'Studiebarometeret', 'STUDIEBAROMETERET'],
   [/emne|karakter|stryk|eksamen/i, 'emner', 'Emner og karakterer', 'EMNER OG KARAKTERER'],
   [/ungdomskull|\d+-åring|søkergrunnlag|befolkning|framskriv|videregående|\bvgs\b|matematikk|\bR[12]\b|\bS[12]\b|vg3|årskull/i, 'sokergrunnlag', 'Søkergrunnlaget', 'SØKERGRUNNLAGET'],
   [/fagmiljø|ansatte|tilsatte|årsverk|publiser|førstestilling|stipendiat|nivå 2/i, 'fagmiljo', 'Fagmiljøet', 'FAGMILJØET'],
-  [/alder|(over|under) \d+ år|\d+ år (eller )?(eldre|yngre)|eldre enn|yngre enn|utenlandsk|statsborger|utveksling|registrerte studenter|innreisende|engelsk/i, 'studentene', 'Studentene', 'STUDENTENE'],
+  [/alder|(over|under) \d+ år|\d+ år (eller )?(eldre|yngre)|eldre enn|yngre enn|registrerte studenter/i, 'studentene', 'Studentene', 'STUDENTENE'],
   [/statsbudsjett|regnskap|driftsresultat|skolepenger|statstilskudd/i, 'okonomi', 'Økonomi'],
   [/inntekt|finansieringssystem|studiepoengproduksjon/i, 'inntekt', 'Inntekt'],
   [/bolig|husleie|leiepris/i, 'bolig', 'Bolig'],
@@ -46,6 +47,8 @@ const modulAv = (l: DataLinje) => /^(?:RANGERING )?(STUDENTENE|STUDIEBAROMETERET
 /** Moduler som ikke hører til et program, men til fakultet/institusjon (fagmiljøet) eller fylke (søkergrunnlaget). */
 const FELLES_MODUL = new Set(['FAGMILJØET', 'SØKERGRUNNLAGET', 'STRATEGIER']);
 /** Sidene for hele NMBU (App: Faculty-verdiene «nmbu-…»). */
+/** Fakulteter med «Strategier mot 2030» i markedsstatus (som MED_STRATEGIER i FacultyMarketStatus.tsx) */
+const MED_STRATEGIER = new Set<FacultyId>(['hh']);
 const NMBU_SIDE: Record<string, string> = { 'nmbu-fagmiljo': 'Fagmiljøet', 'nmbu-sokergrunnlag': 'Søkergrunnlaget' };
 interface Maal { fak: string; visning: string; gruppe?: string; tekst: string; anker?: string }
 
@@ -96,9 +99,10 @@ function finnMaal(m: Melding, fakultet: FacultyId | null, visning: string, gjeld
       const fak = fk as FacultyId;
       const vis = side ? side[1] : 'analyse';
       const gruppe = (vis === 'analyse' || vis === 'emner') && gid ? gid : undefined;
-      const anker = side?.[3] === 'STRATEGIER' ? 'strategier' : undefined;
+      const anker = side?.[3] === 'STRATEGIER' && MED_STRATEGIER.has(fak) ? 'strategier' : undefined;
+      const sidenavn = side?.[3] === 'STRATEGIER' && !anker ? 'Markedsstatus' : side ? side[2] : 'Opptak';
       if (!(fak === fakultet && vis === visning && !anker && (!gruppe || gruppe === gjeldendeGruppe))) {
-        ut.push({ fak, visning: vis, gruppe, anker, tekst: `${FACULTY_META[fak].shortLabel} · ${side ? side[2] : 'Opptak'}${gruppe ? ` · ${utenFak(navn)}` : ''}` });
+        ut.push({ fak, visning: vis, gruppe, anker, tekst: `${FACULTY_META[fak].shortLabel} · ${sidenavn}${gruppe ? ` · ${utenFak(navn)}` : ''}` });
       }
     }
   }
@@ -110,6 +114,7 @@ function finnMaal(m: Melding, fakultet: FacultyId | null, visning: string, gjeld
 }
 
 /** Fakultetene spørsmålet handler om: nevnt ved navn, eller via et NMBU-program (fra oversikten over hele NMBU). */
+// Forkortelser som også er vanlige ord (VET = «vet») krever store bokstaver
 const FAK_ORD: [FacultyId, RegExp][] = [
   ['hh', /\bHH\b|handelsh[øo][gy]skolen/i],
   ['landsam', /\blandsam\b|landskap og samfunn/i],
@@ -117,7 +122,7 @@ const FAK_ORD: [FacultyId, RegExp][] = [
   ['biovit', /\bbiovit\b|fakultet for biovitenskap/i],
   ['kbm', /\bkbm\b|kjemi, bioteknologi og mat/i],
   ['mina', /\bmina\b|miljøvitenskap og naturforvaltning/i],
-  ['vet', /\bvet\b|veterinærh[øo]gskolen/i],
+  ['vet', /\bVET\b|[Vv]eterinærh[øo]gskolen/],
 ];
 const HELE_NMBU = /hele nmbu|alle fakultet|hvilke[tn]? fakultet|på tvers av fakultet|(ved|på) nmbu\b.*(høyest|lavest|flest|færrest|best|svakest)|(høyest|lavest|flest|færrest|best|svakest).*(ved|på) nmbu\b/i;
 const OVERSIKTSSPORSMAL = /høyest|lavest|\bbest|svakest|flest|færrest|hvilke[tn]? (av )?(studie|program)|ranger|alle (studie|program)|oversikt|sammenlign(e|ing)? (programm|studi)/i;
@@ -149,7 +154,11 @@ const hentJson = async <T,>(fil: string): Promise<T | null> => {
 // Indeksene bygges én gang per fane og gjenbrukes
 const cache = new Map<string, Promise<unknown>>();
 function engang<T>(nokkel: string, lag: () => Promise<T>): Promise<T> {
-  if (!cache.has(nokkel)) cache.set(nokkel, lag());
+  if (!cache.has(nokkel)) {
+    // Mislykkede hentinger (null eller feil) glemmes, så neste spørsmål prøver igjen
+    const p = lag().then((v) => { if (v == null) cache.delete(nokkel); return v; }, (e) => { cache.delete(nokkel); throw e; });
+    cache.set(nokkel, p);
+  }
   return cache.get(nokkel) as Promise<T>;
 }
 const dataFil = (f: string) => engang(`fil:${f}`, () => hentJson<{ linjer: DataLinje[] }>(`ki/${f}-data.json`));
@@ -191,24 +200,34 @@ function velgData(di: TekstIndeks<DataLinje>, q: string, sokeTekst: string, omfa
   // Fagmiljøet og søkergrunnlaget: linjene for modulen, mest relevante først, og så de beste andre treffene
   if (modul && FELLES_MODUL.has(modul)) {
     const valgt = di.elementer.filter((l) => modulAv(l) === modul).sort((a, b) => rang(a) - rang(b)).slice(0, 14);
-    return [...valgt, ...treff.filter((l) => !valgt.includes(l)).slice(0, 19 - valgt.length)];
+    // Uten linjer for modulen her (f.eks. strategier for andre fakulteter enn HH) brukes vanlig utvalg
+    if (valgt.length) return [...valgt, ...treff.filter((l) => !valgt.includes(l)).slice(0, 19 - valgt.length)];
+    if (modul === 'STRATEGIER') return []; // bare styrepapirene har noe å si om strategier her
   }
   // Programlinjer for modulen spørsmålet gjelder (uten modul: opptakslinjene); rangeringer og oversikter alltid
-  const passer = (l: DataLinje) => l[3] === 'r' || l[3] === 'o' || modulAv(l) === modul;
+  // Studentene: engelskandel og innreisende står i opptakslinjene, så de tas med der
+  const passer = (l: DataLinje) => l[3] === 'r' || l[3] === 'o' || modulAv(l) === modul || (modul === 'STUDENTENE' && modulAv(l) === null);
   // Hele NMBU: oversikten på tvers av fakultetene; ellers oversikten per fakultet
   const oversikt = di.elementer.filter((l) => l[3] === 'o' && (l[0] === 'Oversikt hele NMBU') === heleNmbu);
   const fokusOversikt = oversikt.length > 0 && !omfang?.grupper.length && (OVERSIKTSSPORSMAL.test(q) || !!omfang?.navngitt);
   // Egen rangering blant oversiktslinjene: i hele indeksen drukner de i programlinjer med de samme ordene
-  const forst = fokusOversikt ? relevante(oversikt, q, 6) : [];
+  const forst = fokusOversikt ? relevante(oversikt, q, 8) : [];
   // Er programmet nevnt i spørsmålet, er det gruppen
   const nevnt = omfang?.grupper.length ? new Set(omfang.grupper.map((g) => `${g[0]}|${g[1]}`)) : null;
-  const topp = treff.filter((l) => l[3] !== 'o' && !FELLES_MODUL.has(modulAv(l) ?? '')).slice(0, 8);
+  const topp = treff.filter((l) => l[3] !== 'o' && passer(l) && !FELLES_MODUL.has(modulAv(l) ?? '')).slice(0, 8);
   const teller = new Map<string, number>();
   topp.forEach((l) => teller.set(l[0], (teller.get(l[0]) ?? 0) + 1));
   let [gruppe, antall] = [...teller.entries()].sort((a, b) => b[1] - a[1])[0] ?? ['', 0];
   if (nevnt) { const g = di.elementer.find((l) => l[3] !== 'o' && l[5] && nevnt.has(`${l[4]}|${l[5]}`)); if (g) { gruppe = g[0]; antall = 99; } }
   const resten = treff.filter((l) => !forst.includes(l));
-  if (!gruppe || antall < 3) return [...forst, ...resten].slice(0, 12);
+  if (!gruppe || antall < 3) {
+    // Ingen tydelig programgruppe: linjer for modulen først (NMBUs egne øverst), så de andre treffene. Er det få
+    // modultreff i søket, fylles det på med NMBUs linjer for modulen i hele fakultetet.
+    const rP = resten.filter(passer);
+    const ekstra = rP.length < 6 ? di.elementer.filter((l) => l[3] === 'n' && passer(l) && !rP.includes(l)).sort((a, b) => rang(a) - rang(b)).slice(0, 8) : [];
+    const ut = [...forst, ...rP.filter((l) => l[3] === 'n'), ...ekstra, ...rP.filter((l) => l[3] !== 'n'), ...resten.filter((l) => !passer(l))];
+    return ut.filter((l, i) => ut.indexOf(l) === i).slice(0, 12);
+  }
   const iGruppe = di.elementer.filter((l) => l[0] === gruppe && l[3] !== 'o' && passer(l));
   const valgt = [
     ...forst,
@@ -272,9 +291,9 @@ export function KiChatPanel({ apen, lukk, fakultet, visning, sted, modus, setMod
         ? { ...s, sw: klem(s0.sw + dx, 320, window.innerWidth * 0.7) }
         : { ...s, w: akse === 'h' ? s.w : klem(s0.w + dx, 340, window.innerWidth - 40), h: akse === 'w' ? s.h : klem(s0.h + dy, 380, window.innerHeight - 100) });
     };
-    const slipp = () => { window.removeEventListener('pointermove', flytt); window.removeEventListener('pointerup', slipp); document.body.style.userSelect = ''; };
+    const slipp = () => { window.removeEventListener('pointermove', flytt); window.removeEventListener('pointerup', slipp); window.removeEventListener('pointercancel', slipp); document.body.style.userSelect = ''; };
     document.body.style.userSelect = 'none';
-    window.addEventListener('pointermove', flytt); window.addEventListener('pointerup', slipp);
+    window.addEventListener('pointermove', flytt); window.addEventListener('pointerup', slipp); window.addEventListener('pointercancel', slipp);
   };
   const gaaTil = (mm: Maal) => {
     // Ankeret velger fanen på siden (Strategier mot 2030 i markedsstatus); settes før navigeringen så siden leser det ved oppstart
@@ -289,7 +308,14 @@ export function KiChatPanel({ apen, lukk, fakultet, visning, sted, modus, setMod
 
   useEffect(() => { try { sessionStorage.setItem(LAGRING, JSON.stringify(meldinger.slice(-20))); } catch { /* ikke lagret */ } }, [meldinger]);
   useEffect(() => { bunn.current?.scrollIntoView({ block: 'end' }); }, [meldinger, venter, apen]);
-  useEffect(() => { if (apen) setTimeout(() => felt.current?.focus(), 50); }, [apen]);
+  useEffect(() => {
+    if (!apen) return;
+    const t = setTimeout(() => felt.current?.focus(), 50);
+    // Escape lukker chatten (fokus går tilbake til knappen, se KiChatKnapp)
+    const esc = (e: KeyboardEvent) => { if (e.key === 'Escape' && !e.defaultPrevented) lukk(); };
+    window.addEventListener('keydown', esc);
+    return () => { clearTimeout(t); window.removeEventListener('keydown', esc); };
+  }, [apen]);
 
   const send = async (sporsmal: string) => {
     const q = sporsmal.trim();

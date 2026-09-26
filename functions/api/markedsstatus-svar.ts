@@ -15,7 +15,7 @@
  *   MISTRAL_BASE_URL (valgfri, standard «https://api.mistral.ai/v1»; OpenAI-kompatibelt endepunkt, f.eks. Scaleway
  *                     Generative APIs i Paris, kan brukes i stedet)
  */
-import { VERSJON, svar, fremmedOpphav, erInjeksjon, mistral, ubekreftedeTall, REGLER, type KiEnv } from '../_lib/ki';
+import { VERSJON, svar, fremmedOpphav, forMange, renTekst, erInjeksjon, mistral, ubekreftedeTall, REGLER, type KiEnv } from '../_lib/ki';
 
 type Env = KiEnv;
 interface Utdrag { nr: number; inst: string; dok: string; dato?: string | null; side: number; tekst: string }
@@ -48,15 +48,17 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   if (!env.MISTRAL_API_KEY) return svar({ feil: 'KI-svar er ikke satt opp ennå (mangler MISTRAL_API_KEY i Cloudflare).' }, 503);
 
   if (fremmedOpphav(request)) return svar({ feil: 'Ikke tillatt.' }, 403);
+  if (await forMange(request, 'markedsstatus', 30)) return svar({ feil: 'Mange spørsmål på kort tid. Vent noen minutter og prøv igjen.' }, 429);
 
   let body: { sporsmal?: string; fakultet?: string; utdrag?: Utdrag[]; sammendrag?: Sammendrag[] };
   try { body = await request.json(); } catch { return svar({ feil: 'Ugyldig forespørsel.' }, 400); }
+  if (!body || typeof body !== 'object') return svar({ feil: 'Ugyldig forespørsel.' }, 400);
   const sporsmal = String(body.sporsmal ?? '').trim().slice(0, 500);
-  const fakultet = String(body.fakultet ?? 'fakultetet').slice(0, 80);
-  const utdrag = (Array.isArray(body.utdrag) ? body.utdrag : []).slice(0, 12)
+  const fakultet = renTekst(body.fakultet, 80, 'fakultetet');
+  const utdrag = (Array.isArray(body.utdrag) ? body.utdrag : []).filter((u) => u && typeof u === 'object').slice(0, 12)
     .map((u, i) => ({ nr: i + 1, inst: String(u.inst ?? '').slice(0, 80), dok: String(u.dok ?? '').slice(0, 200), dato: u.dato ? String(u.dato).slice(0, 20) : '',
       side: Number(u.side) || 0, tekst: String(u.tekst ?? '').slice(0, 1600) }));
-  const sammendrag = (Array.isArray(body.sammendrag) ? body.sammendrag : []).slice(0, 6)
+  const sammendrag = (Array.isArray(body.sammendrag) ? body.sammendrag : []).filter((x) => x && typeof x === 'object').slice(0, 6)
     .map((s, i) => {
       const punkter = (Array.isArray(s.punkter) ? s.punkter : []).slice(0, 8).map((p) => `- ${String(p).slice(0, 400)}`).join('\n');
       const tekst = `${s.oppsummering ? String(s.oppsummering).slice(0, 800) + '\n' : ''}${punkter}`.slice(0, 2000);

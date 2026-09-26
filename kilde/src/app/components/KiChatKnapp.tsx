@@ -1,4 +1,4 @@
-import { lazy, Suspense, useState } from 'react';
+import { lazy, Suspense, useEffect, useRef, useState } from 'react';
 import { MessageCircle, X } from 'lucide-react';
 import type { FacultyId } from '../data/facultyMeta';
 
@@ -17,6 +17,10 @@ export function KiChatKnapp({ fakultet, visning, sted, naviger, gruppe }: { faku
   const [modus, setModusState] = useState<KiModus>(lesModus);
   const setModus = (m: KiModus) => { setModusState(m); try { localStorage.setItem('ki-chat-modus', m); } catch { /* ikke lagret */ } };
   const [lastet, setLastet] = useState(false);
+  // Når chatten lukkes, får knappen fokus igjen (tastatur og skjermleser mister ikke plassen)
+  const knapp = useRef<HTMLButtonElement>(null);
+  const varApen = useRef(false);
+  useEffect(() => { if (varApen.current && !apen) setTimeout(() => knapp.current?.focus(), 0); varApen.current = apen; }, [apen]);
   return (
     <>
       {lastet && (
@@ -25,6 +29,7 @@ export function KiChatKnapp({ fakultet, visning, sted, naviger, gruppe }: { faku
         </Suspense>
       )}
       <button
+        ref={knapp}
         onClick={() => { setLastet(true); setApen((a) => !a); }}
         aria-label={apen ? 'Lukk KI-chatten' : 'Åpne KI-chatten'}
         className={`fixed z-[60] flex items-center gap-2 rounded-full shadow-lg transition-all duration-300 ${apen ? 'max-sm:hidden' : ''} ${apen && modus !== 'flytende' ? 'sm:hidden' : ''}`}

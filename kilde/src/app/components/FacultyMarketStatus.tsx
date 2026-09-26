@@ -232,11 +232,19 @@ function InstitusjonsKort({
 
 export function FacultyMarketStatus({ faculty }: Props) {
   const [del, setDel] = useState<'status' | 'strategier'>(() => (typeof location !== 'undefined' && location.hash === '#strategier' ? 'strategier' : 'status'));
+  // #strategier i adressen følger fanen begge veier, og fjernes når siden forlates (ellers åpner neste besøk feil fane)
   useEffect(() => {
-    const f = () => { if (location.hash === '#strategier') setDel('strategier'); };
+    const f = () => setDel(location.hash === '#strategier' ? 'strategier' : 'status');
     window.addEventListener('hashchange', f);
-    return () => window.removeEventListener('hashchange', f);
+    return () => {
+      window.removeEventListener('hashchange', f);
+      if (location.hash === '#strategier') history.replaceState(null, '', location.pathname + location.search);
+    };
   }, []);
+  const velgDel = (d: 'status' | 'strategier') => {
+    setDel(d);
+    history.replaceState(null, '', d === 'strategier' ? '#strategier' : location.pathname + location.search);
+  };
   const institusjoner = faculty.marketStatus;
   const colorFor = landsamColorForGroups(faculty.admissionGroups);
 
@@ -255,7 +263,7 @@ export function FacultyMarketStatus({ faculty }: Props) {
   const velger = MED_STRATEGIER.has(faculty.id) && (
     <div className="inline-flex rounded-full p-1" role="tablist" style={{ border: '1px solid var(--nmbu-neutral-3)', backgroundColor: 'var(--card)' }}>
       {([['status', 'Styrepapirer og status'], ['strategier', 'Strategier mot 2030']] as const).map(([id, tekst]) => (
-        <button key={id} role="tab" aria-selected={del === id} onClick={() => setDel(id)} className="px-4 py-1.5 rounded-full text-sm"
+        <button key={id} role="tab" aria-selected={del === id} onClick={() => velgDel(id)} className="px-4 py-1.5 rounded-full text-sm"
           style={{ backgroundColor: del === id ? 'var(--nmbu-green-dark)' : 'transparent', color: del === id ? '#fff' : 'var(--nmbu-neutral-1)', fontWeight: del === id ? 600 : 500 }}>
           {tekst}
         </button>

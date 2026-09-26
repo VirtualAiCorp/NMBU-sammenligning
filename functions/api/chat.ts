@@ -8,7 +8,7 @@
  * Funksjonen legger på instruksen, kaller Mistral og kontrollerer at tallene i svaret finnes i kildene.
  * Miljøvariabler som for markedsstatus-svar (MISTRAL_API_KEY, valgfritt MISTRAL_MODEL og MISTRAL_BASE_URL).
  */
-import { VERSJON, svar, fremmedOpphav, erInjeksjon, mistral, ubekreftedeTall, REGLER, type KiEnv } from '../_lib/ki';
+import { VERSJON, svar, fremmedOpphav, forMange, renTekst, erInjeksjon, mistral, ubekreftedeTall, REGLER, type KiEnv } from '../_lib/ki';
 
 interface Melding { rolle: 'bruker' | 'assistent'; tekst: string }
 interface Kilder {
@@ -58,21 +58,24 @@ ${REGLER}
 export const onRequestPost: PagesFunction<KiEnv> = async ({ request, env }) => {
   if (!env.MISTRAL_API_KEY) return svar({ feil: 'KI-chatten er ikke satt opp ennå (mangler MISTRAL_API_KEY i Cloudflare).' }, 503);
   if (fremmedOpphav(request)) return svar({ feil: 'Ikke tillatt.' }, 403);
+  if (await forMange(request, 'chat', 40)) return svar({ feil: 'Mange spørsmål på kort tid. Vent noen minutter og prøv igjen.' }, 429);
 
   let body: { sporsmal?: string; historikk?: Melding[]; sted?: string; omfang?: string; kilder?: Kilder };
   try { body = await request.json(); } catch { return svar({ feil: 'Ugyldig forespørsel.' }, 400); }
+  if (!body || typeof body !== 'object') return svar({ feil: 'Ugyldig forespørsel.' }, 400);
   const sporsmal = str(body.sporsmal, 600).trim();
   if (!sporsmal) return svar({ feil: 'Spørsmålet mangler.' }, 400);
   if (erInjeksjon(sporsmal)) {
     return svar({ svar: 'Jeg kan bare svare ut fra dataene og dokumentene på nettsiden. Prøv for eksempel «Hvordan ligger poenggrensen vår an mot konkurrentene?» eller «Hvilke konkurrenter planlegger nye program?».', modell: 'regelsjekk', versjon: VERSJON, ubekreftet: [] });
   }
-  const sted = str(body.sted, 160) || 'forsiden';
-  const omfang = str(body.omfang, 300) || 'fakultetet brukeren står på';
-  const k = body.kilder ?? {};
-  const data = (k.data ?? []).slice(0, 19).map((d, i) => `[D${i + 1}] ${str(d.tekst, 2400)}`);
-  const dok = (k.dok ?? []).slice(0, 8).map((d, i) => `[${i + 1}] ${str(d.inst, 80)} – ${str(d.dok, 200)}${d.dato ? ` (${str(d.dato, 20)})` : ''}, side ${Number(d.side) || 0}:\n${str(d.tekst, 1600)}`);
-  const sam = (k.sammendrag ?? []).slice(0, 5).map((s, i) => `[S${i + 1}] ${str(s.inst, 80)}${s.enhet ? ` (${str(s.enhet, 160)})` : ''}:\n${`${s.oppsummering ? str(s.oppsummering, 800) + '\n' : ''}${(Array.isArray(s.punkter) ? s.punkter : []).slice(0, 8).map((p) => `- ${str(p, 400)}`).join('\n')}`.slice(0, 2000)}`);
-  const met = (k.metode ?? []).slice(0, 4).map((m, i) => `[M${i + 1}] ${str(m.tittel, 120)}:\n${str(m.tekst, 1600)}`);
+  const sted = renTekst(body.sted, 160, 'forsiden');
+  const omfang = renTekst(body.omfang, 300, 'fakultetet brukeren står på');
+  const k: Kilder = body.kilder && typeof body.kilder === 'object' ? body.kilder : {};
+  const liste = <T,>(v: unknown): T[] => (Array.isArray(v) ? (v as T[]).filter((x) => x && typeof x === 'object') : []);
+  const data = liste<{ tittel: string; tekst: string }>(k.data).slice(0, 19).map((d, i) => `[D${i + 1}] ${str(d.tekst, 2400)}`);
+  const dok = liste<NonNullable<Kilder['dok']>[number]>(k.dok).slice(0, 8).map((d, i) => `[${i + 1}] ${str(d.inst, 80)} – ${str(d.dok, 200)}${d.dato ? ` (${str(d.dato, 20)})` : ''}, side ${Number(d.side) || 0}:\n${str(d.tekst, 1600)}`);
+  const sam = liste<NonNullable<Kilder['sammendrag']>[number]>(k.sammendrag).slice(0, 5).map((s, i) => `[S${i + 1}] ${str(s.inst, 80)}${s.enhet ? ` (${str(s.enhet, 160)})` : ''}:\n${`${s.oppsummering ? str(s.oppsummering, 800) + '\n' : ''}${(Array.isArray(s.punkter) ? s.punkter : []).slice(0, 8).map((p) => `- ${str(p, 400)}`).join('\n')}`.slice(0, 2000)}`);
+  const met = liste<{ tittel: string; tekst: string }>(k.metode).slice(0, 4).map((m, i) => `[M${i + 1}] ${str(m.tittel, 120)}:\n${str(m.tekst, 1600)}`);
   const kildetekst = [
     `=== NØKKELTALL ===\n${data.join('\n\n') || '(ingen)'}`,
     `=== DOKUMENTUTDRAG ===\n${dok.join('\n\n') || '(ingen)'}`,
@@ -80,7 +83,9 @@ export const onRequestPost: PagesFunction<KiEnv> = async ({ request, env }) => {
     `=== METODE ===\n${met.join('\n\n') || '(ingen)'}`,
   ].join('\n\n');
 
-  const historikk = (Array.isArray(body.historikk) ? body.historikk : []).slice(-6)
+  // Brukermeldinger i historikken med forsøk på å endre instruksen tas ut
+  const historikk = liste<Melding>(body.historikk).slice(-6)
+    .filter((m) => m.rolle === 'assistent' || !erInjeksjon(str(m.tekst, 600)))
     .map((m) => ({ role: m.rolle === 'assistent' ? 'assistant' : 'user', content: str(m.tekst, m.rolle === 'assistent' ? 1500 : 600) }));
   const idag = new Date().toISOString().slice(0, 10);
   const r = await mistral(env, [
