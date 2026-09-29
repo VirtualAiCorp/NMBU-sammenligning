@@ -1,27 +1,25 @@
 /**
- * Cloudflare Pages-funksjon: KI-svar på spørsmål om styrepapirene i markedsstatus, med Mistral (EU).
+ * Cloudflare Pages-funksjon: KI-svar på spørsmål om styrepapirene i markedsstatus (Claude Opus 5.5, Mistral som reserve).
  *
  * Nettleseren søker selv i teksten (BM25) og sender hit:
  *   - spørsmålet
  *   - de beste utdragene fra PDF-ene (maks 12 × 1 600 tegn), med institusjon, dokument, dato og side
  *   - de kuraterte sammendragene fra markedsstatus-kortene for institusjonene i treffene (maks 6 × 2 000 tegn)
  *   - hvilket fakultet brukeren ser på
- * Funksjonen legger på instruksen og sender det til Mistrals chat-API. API-nøkkelen ligger som hemmelig
- * miljøvariabel i Cloudflare og havner aldri i nettleseren.
- *
- * Miljøvariabler (Cloudflare → Pages-prosjektet → Settings → Variables and Secrets):
- *   MISTRAL_API_KEY  (påkrevd, type Secret)
- *   MISTRAL_MODEL    (valgfri, standard «mistral-large-latest»)
- *   MISTRAL_BASE_URL (valgfri, standard «https://api.mistral.ai/v1»; OpenAI-kompatibelt endepunkt, f.eks. Scaleway
- *                     Generative APIs i Paris, kan brukes i stedet)
+ * Funksjonen slipper bare gjennom utdrag og sammendrag som er publisert tekst (kildevakten), legger på instruksen og
+ * spør modellen. API-nøklene ligger som hemmelige miljøvariabler i Cloudflare og havner aldri i nettleseren (se _lib/ki.ts).
  */
-import { VERSJON, svar, fremmedOpphav, forMange, renTekst, erInjeksjon, mistral, ubekreftedeTall, REGLER, type KiEnv } from '../_lib/ki';
+import { VERSJON, svar, fremmedOpphav, forMange, renTekst, erInjeksjon, spor, miljoFeil, ubekreftedeTall, REGLER, type KiEnv } from '../_lib/ki';
+import { bareTillatte } from '../_lib/kildevakt';
 
 type Env = KiEnv;
 interface Utdrag { nr: number; inst: string; dok: string; dato?: string | null; side: number; tekst: string }
 interface Sammendrag { inst: string; enhet?: string | null; oppsummering?: string | null; punkter?: string[] }
 
-const instruks = (fakultet: string, idag: string) => `Du er analytiker for NMBU-sammenligning, et internt verktøy der NMBUs fakulteter sammenligner seg med konkurrerende universiteter og høyskoler. Brukeren ser nå på markedsstatus for ${fakultet} og vil vite hva konkurrentene gjør. Dagens dato er ${idag}.
+const plassering = (fakultet: string, idag: string) => `## Denne samtalen
+Brukeren ser nå på markedsstatus for ${fakultet}. Dagens dato er ${idag}.`;
+
+const INSTRUKS = `Du er analytiker for NMBU-sammenligning, et internt verktøy der NMBUs fakulteter sammenligner seg med konkurrerende universiteter og høyskoler. Brukeren ser på markedsstatus for et fakultet (se «Denne samtalen») og vil vite hva konkurrentene gjør.
 
 ## Datamaterialet du får
 A. UTDRAG [1], [2], … : ordrett tekst fra offentlige dokumenter hos konkurrentene (styrepapirer, protokoller, årsrapporter, budsjett, kvalitets- og porteføljerapporter). Hvert utdrag har institusjon, dokument, dato og sidetall. Dette er PRIMÆRKILDENE. Utdragene er valgt ut av et søk, så de kan være ufullstendige, revet ut av sammenheng eller ikke handle om spørsmålet.
@@ -34,7 +32,7 @@ B. SAMMENDRAG [S1], [S2], … : korte sammendrag som analyseteamet har skrevet f
 4. Skill tydelig mellom VEDTAK (styret har vedtatt), FORSLAG eller PLANER (innstilling, strategi, budsjettforslag), DISKUSJON eller VURDERING, og FAKTISKE TALL (regnskap, søkertall).
 5. Gjengi tall nøyaktig slik de står, med enhet og år (for eksempel «−34,4 mill. kr i 2025»). Ikke lag egne snitt, summer eller endringer. Gjør du det likevel, skal det stå «(beregnet)» rett etter tallet, for eksempel «3,6 mill. kr per år (beregnet)».
 6. Gjelder spørsmålet flere institusjoner, sammenlign dem punktvis per institusjon.
-7. Hvis det er grunnlag for det, avslutt med en kort og tydelig merket VURDERING av hva dette kan bety for NMBU/${fakultet}. Ikke dikt opp NMBU-tall.
+7. Hvis det er grunnlag for det, avslutt med en kort og tydelig merket VURDERING av hva dette kan bety for NMBU og fakultetet. Ikke dikt opp NMBU-tall.
 
 ${REGLER}
 
@@ -45,7 +43,8 @@ ${REGLER}
 **Hull i grunnlaget:** hva som mangler eller er usikkert, og 1–3 forslag til søkeord som kan gi bedre treff.`;
 
 export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
-  if (!env.MISTRAL_API_KEY) return svar({ feil: 'KI-svar er ikke satt opp ennå (mangler MISTRAL_API_KEY i Cloudflare).' }, 503);
+  const oppsett = miljoFeil(env);
+  if (oppsett) return svar({ feil: oppsett }, 503);
 
   if (fremmedOpphav(request)) return svar({ feil: 'Ikke tillatt.' }, 403);
   if (await forMange(request, 'markedsstatus', 30)) return svar({ feil: 'Mange spørsmål på kort tid. Vent noen minutter og prøv igjen.' }, 429);
@@ -55,10 +54,14 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   if (!body || typeof body !== 'object') return svar({ feil: 'Ugyldig forespørsel.' }, 400);
   const sporsmal = String(body.sporsmal ?? '').trim().slice(0, 500);
   const fakultet = renTekst(body.fakultet, 80, 'fakultetet');
-  const utdrag = (Array.isArray(body.utdrag) ? body.utdrag : []).filter((u) => u && typeof u === 'object').slice(0, 12)
+  // Kildevakten: bare publisert tekst går videre til modellen (functions/_lib/kildevakt.ts)
+  const vU = await bareTillatte((Array.isArray(body.utdrag) ? body.utdrag : []).filter((u) => u && typeof u === 'object').slice(0, 12), ['inst', 'dok', 'dato', 'tekst']);
+  const vS = await bareTillatte((Array.isArray(body.sammendrag) ? body.sammendrag : []).filter((x) => x && typeof x === 'object').slice(0, 6), ['inst', 'enhet', 'oppsummering', 'punkter']);
+  if (vU.forkastet + vS.forkastet) console.warn(`kildevakt: forkastet ${vU.forkastet + vS.forkastet} kilde(r) som ikke er publisert tekst`);
+  const utdrag = vU.ok
     .map((u, i) => ({ nr: i + 1, inst: String(u.inst ?? '').slice(0, 80), dok: String(u.dok ?? '').slice(0, 200), dato: u.dato ? String(u.dato).slice(0, 20) : '',
       side: Number(u.side) || 0, tekst: String(u.tekst ?? '').slice(0, 1600) }));
-  const sammendrag = (Array.isArray(body.sammendrag) ? body.sammendrag : []).filter((x) => x && typeof x === 'object').slice(0, 6)
+  const sammendrag = vS.ok
     .map((s, i) => {
       const punkter = (Array.isArray(s.punkter) ? s.punkter : []).slice(0, 8).map((p) => `- ${String(p).slice(0, 400)}`).join('\n');
       const tekst = `${s.oppsummering ? String(s.oppsummering).slice(0, 800) + '\n' : ''}${punkter}`.slice(0, 2000);
@@ -75,7 +78,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   const bruker = `SPØRSMÅL: ${sporsmal}\n\n=== A. UTDRAG FRA DOKUMENTENE ===\n${delA}\n\n=== B. SAMMENDRAG PER INSTITUSJON ===\n${delB || '(ingen)'}`;
   const idag = new Date().toISOString().slice(0, 10);
 
-  const r = await mistral(env, [{ role: 'system', content: instruks(fakultet, idag) }, { role: 'user', content: bruker }]);
+  const r = await spor(env, INSTRUKS, plassering(fakultet, idag), [{ role: 'user', content: bruker }]);
   if ('feil' in r) return svar({ feil: r.feil }, 502);
-  return svar({ svar: r.tekst, modell: r.modell, versjon: VERSJON, ubekreftet: ubekreftedeTall(r.tekst, `${delA}\n${delB}`, sporsmal) });
+  return svar({ svar: r.tekst, modell: r.modell, versjon: VERSJON, forkastet: vU.forkastet + vS.forkastet, ubekreftet: ubekreftedeTall(r.tekst, `${delA}\n${delB}`, sporsmal) });
 };

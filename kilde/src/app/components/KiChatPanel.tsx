@@ -11,13 +11,13 @@ import { KiSvarTekst } from './KiSvarTekst';
  *   - nøkkeltall per program (public/ki/<fakultet>-data.json, build-ki-grunnlag.py)            → [D1..]
  *   - styrepapirene for fakultetet brukeren står på (public/markedsstatus/<fakultet>/tekst.json) → [1..] og sammendrag [S1..]
  *   - metodedokumentasjonen (public/ki/metode.json)                                              → [M1..]
- * og sender spørsmålet, de siste meldingene og de beste treffene til /api/chat (Mistral). Samtalen huskes i fanen.
+ * og sender spørsmålet, de siste meldingene og de beste treffene til /api/chat (Claude Opus 5.5, Mistral som reserve). Samtalen huskes i fanen.
  */
 // gruppe, program, tekst, flagg (n = NMBU, h = hovedkonkurrent, r = rangering, o = oversikt over NMBUs program), fakultet, gruppe-id,
 // og for oversiktslinjene: [fakultet, gruppe-id, programnavn] i samme rekkefølge som i teksten
 type DataLinje = [string, string, string, string?, string?, string?, [string, string, string][]?];
 interface Kilder { data: DataLinje[]; dok: Treff[]; sammendrag: string[]; metode: [string, string][] }
-interface Melding { rolle: 'bruker' | 'assistent'; tekst: string; kilder?: Kilder; ubekreftet?: string[]; feil?: boolean; modell?: string; sporsmal?: string; omfang?: FacultyId[] }
+interface Melding { rolle: 'bruker' | 'assistent'; tekst: string; kilder?: Kilder; ubekreftet?: string[]; feil?: boolean; modell?: string; sporsmal?: string; omfang?: FacultyId[]; sig?: string }
 interface Storrelse { w: number; h: number; sw: number }
 const klem = (v: number, a: number, b: number) => Math.max(a, Math.min(b, v));
 /** Åpne/lukke-animasjonen (ms) og kurven: rask start, myk landing */
@@ -148,7 +148,13 @@ function finnOmfang(q: string, alleGrupper: [string, string, string][], fakultet
 
 const LAGRING = 'ki-chat-samtale';
 const base = () => import.meta.env.BASE_URL;
+/**
+ * Chatten henter bare det åpne KI-grunnlaget og styrepapirtekstene. Interne filer kan ikke hentes herfra, og
+ * serveren slipper uansett bare gjennom publisert tekst (functions/_lib/kildevakt.ts, scripts/build-ki-tillatte.mjs).
+ */
+const TILLATTE_FILER = /^(ki\/[a-z]+(-data)?\.json|markedsstatus\/[a-z]+\/tekst\.json)$/;
 const hentJson = async <T,>(fil: string): Promise<T | null> => {
+  if (!TILLATTE_FILER.test(fil)) return null;
   try { const r = await fetch(`${base()}${fil}`); return r.ok && (r.headers.get('content-type') ?? '').includes('json') ? ((await r.json()) as T) : null; } catch { return null; }
 };
 
@@ -325,7 +331,8 @@ export function KiChatPanel({ apen, lukk, fakultet, visning, sted, modus, setMod
     const q = sporsmal.trim();
     if (!q || venter) return;
     setTekst('');
-    const historikk = meldinger.filter((m) => !m.feil).slice(-6).map((m) => ({ rolle: m.rolle, tekst: m.tekst }));
+    // Serveren godtar bare egne, signerte svar i historikken
+    const historikk = meldinger.filter((m) => !m.feil).slice(-6).map((m) => ({ rolle: m.rolle, tekst: m.tekst, sig: m.sig }));
     setMeldinger((m) => [...m, { rolle: 'bruker', tekst: q }]);
     setVenter(true);
     try {
@@ -361,7 +368,7 @@ export function KiChatPanel({ apen, lukk, fakultet, visning, sted, modus, setMod
       });
       const j = await r.json().catch(() => null);
       if (!r.ok || !j?.svar) throw new Error(j?.feil ?? (r.status === 404 ? 'KI-chatten er bare tilgjengelig på den publiserte siden.' : `Feil ${r.status}`));
-      setMeldinger((m) => [...m, { rolle: 'assistent', tekst: j.svar, kilder, ubekreftet: j.ubekreftet, modell: j.modell, sporsmal: q, omfang: faks === 'alle' ? undefined : faks }]);
+      setMeldinger((m) => [...m, { rolle: 'assistent', tekst: j.svar, kilder, ubekreftet: j.ubekreftet, modell: j.modell, sporsmal: q, omfang: faks === 'alle' ? undefined : faks, sig: typeof j.sig === 'string' ? j.sig : undefined }]);
     } catch (e) {
       setMeldinger((m) => [...m, { rolle: 'assistent', tekst: e instanceof Error ? e.message : 'Noe gikk galt.', feil: true }]);
     } finally { setVenter(false); }
@@ -442,7 +449,7 @@ export function KiChatPanel({ apen, lukk, fakultet, visning, sted, modus, setMod
           <Send className="w-4 h-4" />
         </button>
       </form>
-      <div className="px-4 pb-2 text-[10px]" style={{ color: 'var(--nmbu-neutral-2)', backgroundColor: '#fff' }}>Mistral (EU). KI kan ta feil; sjekk kildene. Ikke skriv personopplysninger.</div>
+      <div className="px-4 pb-2 text-[10px]" style={{ color: 'var(--nmbu-neutral-2)', backgroundColor: '#fff' }}>Claude Opus 5.5 (Anthropic) svarer bare ut fra åpne data på nettsiden, aldri interne. KI kan ta feil; sjekk kildene. Ikke skriv personopplysninger eller interne tall.</div>
     </div>
   );
 }

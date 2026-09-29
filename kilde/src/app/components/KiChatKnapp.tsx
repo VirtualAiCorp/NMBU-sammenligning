@@ -21,6 +21,10 @@ export function KiChatKnapp({ fakultet, visning, sted, naviger, gruppe }: { faku
   const knapp = useRef<HTMLButtonElement>(null);
   const varApen = useRef(false);
   useEffect(() => { if (varApen.current && !apen) setTimeout(() => knapp.current?.focus(), 0); varApen.current = apen; }, [apen]);
+  // Den interne siden (kryptert opptaksanalyse) har ingen KI-chat: ingenting derfra skal kunne limes inn eller følge med
+  const intern = visning === 'intern';
+  useEffect(() => { if (intern) setApen(false); }, [intern]);
+  if (intern) return null;
   return (
     <>
       {lastet && (

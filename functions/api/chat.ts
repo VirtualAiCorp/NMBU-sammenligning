@@ -1,16 +1,17 @@
 /**
- * Cloudflare Pages-funksjon: KI-chatten nede i hjørnet (Mistral, EU).
+ * Cloudflare Pages-funksjon: KI-chatten nede i hjørnet (Claude Opus 5.5, Mistral som reserve; se _lib/ki.ts).
  *
  * Nettleseren finner selv de mest relevante kildene for spørsmålet (BM25 i nettleseren) og sender hit:
  *   - spørsmålet og de siste meldingene i samtalen (maks 6)
  *   - hvor brukeren er: fakultet og side (visning)
  *   - kildene: nøkkeltall per program [D1..], utdrag fra styrepapirer [1..] med sammendrag [S1..], og metodetekst [M1..]
- * Funksjonen legger på instruksen, kaller Mistral og kontrollerer at tallene i svaret finnes i kildene.
- * Miljøvariabler som for markedsstatus-svar (MISTRAL_API_KEY, valgfritt MISTRAL_MODEL og MISTRAL_BASE_URL).
+ * Funksjonen slipper bare gjennom kilder som er publisert tekst (kildevakten), legger på instruksen, kaller modellen
+ * og kontrollerer at tallene i svaret finnes i kildene. Svaret signeres, så bare serverens egne svar godtas i historikken.
  */
-import { VERSJON, svar, fremmedOpphav, forMange, renTekst, erInjeksjon, mistral, ubekreftedeTall, REGLER, type KiEnv } from '../_lib/ki';
+import { VERSJON, svar, fremmedOpphav, forMange, renTekst, erInjeksjon, spor, miljoFeil, signaturHemmelighet, ubekreftedeTall, REGLER, type KiEnv, type KiMelding } from '../_lib/ki';
+import { bareTillatte, signer, gyldigSignatur } from '../_lib/kildevakt';
 
-interface Melding { rolle: 'bruker' | 'assistent'; tekst: string }
+interface Melding { rolle: 'bruker' | 'assistent'; tekst: string; sig?: string }
 interface Kilder {
   data?: { tittel: string; tekst: string }[];
   dok?: { inst: string; dok: string; dato?: string | null; side: number; tekst: string }[];
@@ -20,7 +21,10 @@ interface Kilder {
 
 const str = (v: unknown, n: number) => String(v ?? '').slice(0, n);
 
-const instruks = (sted: string, omfang: string, idag: string) => `Du er KI-assistenten i NMBU-sammenligning, et verktøy der NMBUs fakulteter sammenligner studieprogrammene sine med konkurrerende universiteter og høyskoler: opptak og poenggrenser, gjennomføring, studentene, Studiebarometeret, fagmiljø, økonomi og markedsstatus hos konkurrentene. Brukerne er ledere og rådgivere ved NMBU. Brukeren står nå på: ${sted}. Spørsmålet gjelder: ${omfang}. Dagens dato er ${idag}.
+const plassering = (sted: string, omfang: string, idag: string) => `## Denne samtalen
+Brukeren står nå på: ${sted}. Spørsmålet gjelder: ${omfang}. Dagens dato er ${idag}.`;
+
+const INSTRUKS = `Du er KI-assistenten i NMBU-sammenligning, et verktøy der NMBUs fakulteter sammenligner studieprogrammene sine med konkurrerende universiteter og høyskoler: opptak og poenggrenser, gjennomføring, studentene, Studiebarometeret, fagmiljø, økonomi og markedsstatus hos konkurrentene. Brukerne er ledere og rådgivere ved NMBU. Hvor brukeren står og hva spørsmålet gjelder, står under «Denne samtalen».
 
 ## Kildene du får (valgt ut av et søk for hvert spørsmål)
 - NØKKELTALL [D1], [D2], … : én linje per studieprogram (NMBUs program og hovedkonkurrentene først) med tall fra Samordna opptak (søkere, førstevalgssøkere, studieplasser, kvalifiserte, tilbud, poenggrenser i hovedopptak og etter suppleringsopptak; «alle kvalifiserte» betyr at alle kvalifiserte fikk tilbud), DBH/HK-dir (snitt opptakspoeng for de som møtte, gjennomføring per startkull, registrerte studenter, andel emner på engelsk, innreisende) og Studiebarometeret. Merket «(NMBU)» er NMBUs eget program. Linjer som begynner med «RANGERING» er ferdig sorterte lister per programgruppe og år, med NMBUs plassering. Linjer som begynner med «OVERSIKT» er NMBUs egne program innen et fakultet (eller hele NMBU) sortert etter ett mål; bruk dem når spørsmålet gjelder et helt fakultet, for eksempel «hvilket av KBMs program har høyest poenggrense». Ventelistetall er søkere på venteliste etter hovedopptaket og suppleringsopptaket.
@@ -40,7 +44,7 @@ const instruks = (sted: string, omfang: string, idag: string) => `Du er KI-assis
 Kildene kan være ufullstendige eller handle om noe annet enn spørsmålet. Bruk bare det som faktisk svarer.
 
 ## Slik skal du arbeide
-1. Finn ut hva brukeren egentlig spør om (fakultet, program, institusjoner, år, mål). Følgespørsmål tolkes i lys av samtalen. Hold deg til fakultetet og programmet spørsmålet gjelder (se over): bruk aldri tall for andre fakulteters eller andres program som erstatning. Finnes ikke tallene for det brukeren spør om i kildene, si det i én setning og stopp der.
+1. Finn ut hva brukeren egentlig spør om (fakultet, program, institusjoner, år, mål). Følgespørsmål tolkes i lys av samtalen. Hold deg til fakultetet og programmet spørsmålet gjelder (se «Denne samtalen»): bruk aldri tall for andre fakulteters eller andres program som erstatning. Finnes ikke tallene for det brukeren spør om i kildene, si det i én setning og stopp der.
 2. Svar på spørsmålet først, kort. Sammenligner du program, bruk samme år og samme mål for alle, og si hvilket år.
 3. Ved tall: gjengi dem nøyaktig med enhet og år, og si alltid hva tallet måler (for eksempel «poenggrense ordinær kvote», «snitt opptakspoeng for de som møtte», «helhetsvurdering i Studiebarometeret av 5»). Hvert tall skal komme fra en kilde om akkurat det programmet og året du nevner. Programnavn skrives slik de står i kildene, med nivå (bachelor, toårig/femårig master). Nyere år går foran eldre. Poenggrenser, snitt og andeler kan bare sammenlignes når de er av samme type.
 4. Ved dokumenter: skill mellom VEDTAK, FORSLAG/PLANER, DISKUSJON og FAKTISKE TALL, og oppgi dato.
@@ -59,7 +63,8 @@ ${REGLER}
 - Mangler kildene noe viktig, avslutt med én linje «Mangler i grunnlaget: …», gjerne med forslag til hvor på nettsiden brukeren kan se mer (for eksempel Opptak, Gjennomføring, Studentene, Markedsstatus, Søkergrunnlaget).`;
 
 export const onRequestPost: PagesFunction<KiEnv> = async ({ request, env }) => {
-  if (!env.MISTRAL_API_KEY) return svar({ feil: 'KI-chatten er ikke satt opp ennå (mangler MISTRAL_API_KEY i Cloudflare).' }, 503);
+  const oppsett = miljoFeil(env);
+  if (oppsett) return svar({ feil: oppsett }, 503);
   if (fremmedOpphav(request)) return svar({ feil: 'Ikke tillatt.' }, 403);
   if (await forMange(request, 'chat', 40)) return svar({ feil: 'Mange spørsmål på kort tid. Vent noen minutter og prøv igjen.' }, 429);
 
@@ -75,10 +80,17 @@ export const onRequestPost: PagesFunction<KiEnv> = async ({ request, env }) => {
   const omfang = renTekst(body.omfang, 300, 'fakultetet brukeren står på');
   const k: Kilder = body.kilder && typeof body.kilder === 'object' ? body.kilder : {};
   const liste = <T,>(v: unknown): T[] => (Array.isArray(v) ? (v as T[]).filter((x) => x && typeof x === 'object') : []);
-  const data = liste<{ tittel: string; tekst: string }>(k.data).slice(0, 19).map((d, i) => `[D${i + 1}] ${str(d.tekst, 2400)}`);
-  const dok = liste<NonNullable<Kilder['dok']>[number]>(k.dok).slice(0, 8).map((d, i) => `[${i + 1}] ${str(d.inst, 80)} – ${str(d.dok, 200)}${d.dato ? ` (${str(d.dato, 20)})` : ''}, side ${Number(d.side) || 0}:\n${str(d.tekst, 1600)}`);
-  const sam = liste<NonNullable<Kilder['sammendrag']>[number]>(k.sammendrag).slice(0, 5).map((s, i) => `[S${i + 1}] ${str(s.inst, 80)}${s.enhet ? ` (${str(s.enhet, 160)})` : ''}:\n${`${s.oppsummering ? str(s.oppsummering, 800) + '\n' : ''}${(Array.isArray(s.punkter) ? s.punkter : []).slice(0, 8).map((p) => `- ${str(p, 400)}`).join('\n')}`.slice(0, 2000)}`);
-  const met = liste<{ tittel: string; tekst: string }>(k.metode).slice(0, 4).map((m, i) => `[M${i + 1}] ${str(m.tittel, 120)}:\n${str(m.tekst, 1600)}`);
+  // Kildevakten: bare publisert tekst går videre til modellen (functions/_lib/kildevakt.ts)
+  const vD = await bareTillatte(liste<{ tittel: string; tekst: string }>(k.data).slice(0, 19), ['tekst']);
+  const vK = await bareTillatte(liste<NonNullable<Kilder['dok']>[number]>(k.dok).slice(0, 8), ['inst', 'dok', 'dato', 'tekst']);
+  const vS = await bareTillatte(liste<NonNullable<Kilder['sammendrag']>[number]>(k.sammendrag).slice(0, 5), ['inst', 'enhet', 'oppsummering', 'punkter']);
+  const vM = await bareTillatte(liste<{ tittel: string; tekst: string }>(k.metode).slice(0, 4), ['tittel', 'tekst']);
+  const forkastet = vD.forkastet + vK.forkastet + vS.forkastet + vM.forkastet;
+  if (forkastet) console.warn(`kildevakt: forkastet ${forkastet} kilde(r) som ikke er publisert tekst`);
+  const data = vD.ok.map((d, i) => `[D${i + 1}] ${str(d.tekst, 2400)}`);
+  const dok = vK.ok.map((d, i) => `[${i + 1}] ${str(d.inst, 80)} – ${str(d.dok, 200)}${d.dato ? ` (${str(d.dato, 20)})` : ''}, side ${Number(d.side) || 0}:\n${str(d.tekst, 1600)}`);
+  const sam = vS.ok.map((s, i) => `[S${i + 1}] ${str(s.inst, 80)}${s.enhet ? ` (${str(s.enhet, 160)})` : ''}:\n${`${s.oppsummering ? str(s.oppsummering, 800) + '\n' : ''}${(Array.isArray(s.punkter) ? s.punkter : []).slice(0, 8).map((p) => `- ${str(p, 400)}`).join('\n')}`.slice(0, 2000)}`);
+  const met = vM.ok.map((m, i) => `[M${i + 1}] ${str(m.tittel, 120)}:\n${str(m.tekst, 1600)}`);
   const kildetekst = [
     `=== NØKKELTALL ===\n${data.join('\n\n') || '(ingen)'}`,
     `=== DOKUMENTUTDRAG ===\n${dok.join('\n\n') || '(ingen)'}`,
@@ -86,17 +98,24 @@ export const onRequestPost: PagesFunction<KiEnv> = async ({ request, env }) => {
     `=== METODE ===\n${met.join('\n\n') || '(ingen)'}`,
   ].join('\n\n');
 
-  // Brukermeldinger i historikken med forsøk på å endre instruksen tas ut
-  const historikk = liste<Melding>(body.historikk).slice(-6)
-    .filter((m) => m.rolle === 'assistent' || !erInjeksjon(str(m.tekst, 600)))
-    .map((m) => ({ role: m.rolle === 'assistent' ? 'assistant' : 'user', content: str(m.tekst, m.rolle === 'assistent' ? 1500 : 600) }));
+  // Historikken: brukermeldinger med forsøk på å endre instruksen tas ut, og assistentsvar må være signert av serveren
+  const hemmelig = signaturHemmelighet(env);
+  const historikk: KiMelding[] = [];
+  for (const m of liste<Melding>(body.historikk).slice(-6)) {
+    const tekst = String(m.tekst ?? '');
+    if (m.rolle === 'assistent') {
+      if (await gyldigSignatur(tekst, m.sig, hemmelig)) historikk.push({ role: 'assistant', content: str(tekst, 1500) });
+    } else if (!erInjeksjon(str(tekst, 600))) historikk.push({ role: 'user', content: str(tekst, 600) });
+  }
   const idag = new Date().toISOString().slice(0, 10);
-  const r = await mistral(env, [
-    { role: 'system', content: instruks(sted, omfang, idag) },
+  const r = await spor(env, INSTRUKS, plassering(sted, omfang, idag), [
     ...historikk,
     { role: 'user', content: `SPØRSMÅL: ${sporsmal}\n(Gjelder: ${omfang})\n\nKILDER FOR DETTE SPØRSMÅLET:\n${kildetekst}` },
-  ], 1200);
+  ], 1500);
   if ('feil' in r) return svar({ feil: r.feil }, 502);
   // Tall fra tidligere svar i samtalen regnes også som kjente (de ble kontrollert da de kom)
-  return svar({ svar: r.tekst, modell: r.modell, versjon: VERSJON, ubekreftet: ubekreftedeTall(r.tekst, `${kildetekst}\n${historikk.map((m) => m.content).join('\n')}`, sporsmal) });
+  return svar({
+    svar: r.tekst, modell: r.modell, versjon: VERSJON, sig: await signer(r.tekst, hemmelig), forkastet,
+    ubekreftet: ubekreftedeTall(r.tekst, `${kildetekst}\n${historikk.map((m) => m.content).join('\n')}`, sporsmal),
+  });
 };

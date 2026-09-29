@@ -6,7 +6,7 @@ import { KiSvarTekst } from './KiSvarTekst';
 
 /**
  * «Søk og spør i styrepapirene»: søk i teksten fra PDF-ene i markedsstatus (i nettleseren), med dokument og sidetall og lenke
- * rett til siden. «Lag svar med KI» sender spørsmålet og de beste utdragene (ikke hele dokumentene) til Mistral via
+ * rett til siden. «Lag svar med KI» sender spørsmålet og de beste utdragene (ikke hele dokumentene) til KI-modellen (Claude Opus 5.5, Mistral som reserve) via
  * Cloudflare-funksjonen /api/markedsstatus-svar, og svaret viser kildene som [1], [2] … .
  */
 const EKSEMPLER = ['opptaksrammer 2027', 'nye studieprogram økonomi', 'budsjett underskudd', 'nedleggelse av studieprogram', 'studieplasser økonomi og administrasjon'];
@@ -77,7 +77,7 @@ export function StyrepapirSok({ fakultet, fakultetNavn, institusjonsdata = [] }:
       </div>
       <p className="text-xs mb-3" style={{ color: 'var(--nmbu-neutral-2)', lineHeight: 1.6 }}>
         Søk i teksten fra alle dokumentene under (side for side). Treffene viser institusjon, dokument og sidetall, med lenke rett til siden.
-        «Lag svar med KI» lar Mistral (EU) oppsummere svaret ut fra de beste treffene, med kildehenvisninger. Sjekk alltid kilden.
+        «Lag svar med KI» lar Claude Opus 5.5 oppsummere svaret ut fra de beste treffene, med kildehenvisninger. Sjekk alltid kilden.
       </p>
       <form onSubmit={(e) => { e.preventDefault(); sok(); }} className="flex flex-wrap gap-2">
         <input value={q} onChange={(e) => setQ(e.target.value)} onFocus={hent} placeholder="F.eks. «Hva sier UiA om opptaksrammer for 2027?»"
@@ -106,14 +106,14 @@ export function StyrepapirSok({ fakultet, fakultetNavn, institusjonsdata = [] }:
             <div className="text-xs" style={{ color: 'var(--nmbu-neutral-2)' }}>{treff.length} beste treff for «{sokt}»{tolket.inst ? ` i dokumentene fra ${tolket.inst}` : ''}</div>
             <button onClick={lagSvar} disabled={laster} className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs"
               style={{ backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)', fontWeight: 600, opacity: laster ? 0.6 : 1 }}>
-              {laster ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Sparkles className="w-3.5 h-3.5" />} Lag svar med KI (Mistral)
+              {laster ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Sparkles className="w-3.5 h-3.5" />} Lag svar med KI
             </button>
           </div>
 
           {svarFeil && <div className="mb-3 text-xs rounded-lg px-3 py-2" style={{ backgroundColor: '#FEF2F2', color: '#991B1B', border: '1px solid #FECACA' }}>{svarFeil}</div>}
           {svar && (
             <div className="mb-4 rounded-lg px-4 py-3 text-sm" style={{ backgroundColor: 'var(--nmbu-beige-light)', border: '1px solid var(--nmbu-green-3)', lineHeight: 1.65, color: 'var(--nmbu-neutral)' }}>
-              <div className="flex items-center gap-1.5 mb-1 text-xs" style={{ fontWeight: 700, color: 'var(--nmbu-green-dark)' }}><Sparkles className="w-3.5 h-3.5" /> KI-svar ({svar.modell ?? 'Mistral'}), ut fra treffene under og sammendragene i kortene</div>
+              <div className="flex items-center gap-1.5 mb-1 text-xs" style={{ fontWeight: 700, color: 'var(--nmbu-green-dark)' }}><Sparkles className="w-3.5 h-3.5" /> KI-svar ({svar.modell ?? 'KI'}), ut fra treffene under og sammendragene i kortene</div>
               <KiSvarTekst tekst={svar.tekst} kilde={(ref) => {
                 const sm = ref.match(/^S(\d+)$/i);
                 if (sm && svar.sammendrag[Number(sm[1]) - 1]) return { tekst: `S${sm[1]}`, tittel: `Sammendraget for ${svar.sammendrag[Number(sm[1]) - 1]} i institusjonskortet` };

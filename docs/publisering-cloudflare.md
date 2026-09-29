@@ -76,3 +76,17 @@ Nye HH-komponenter som importeres i `App.tsx` må legges til i listen `HH_KOMPON
 
 - Anonymisering av NMBU-data på studentnivå i HH (`nmbuMasterData.ts`) er ikke gjort. Hold HH-listen kort.
 - Styrepapir-PDF-ene under `kilde/public/markedsstatus/` er offentlige dokumenter og kan ligge åpent bak innloggingen.
+
+
+## KI-nøkler (oppdatert 29.09.2026)
+
+Settes under Workers & Pages → `nmbu-sammenligning` → Settings → Variables and Secrets, som type **Secret**, for Production:
+
+| Navn | Bruk |
+|---|---|
+| `ANTHROPIC_API_KEY` | Claude Opus 5.5 i KI-chatten og markedsstatus (hovedmodell) |
+| `MISTRAL_API_KEY` | Reserve når Anthropic er nede eller nøkkelen mangler |
+| `ANTHROPIC_MODEL` | Valgfri, overstyrer `claude-opus-5-5` |
+
+`INTERN_PASSORD` skal **aldri** legges inn i Cloudflare; da nekter KI-funksjonene å kjøre (se status-og-metode §41).
+Nye secrets gjelder først etter en ny utrulling (Deployments → siste → Retry deployment, eller en ny push).

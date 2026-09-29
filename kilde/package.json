@@ -4,7 +4,9 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
+    "prebuild": "node ../scripts/build-ki-tillatte.mjs",
     "build": "vite build",
+    "postbuild": "node ../scripts/build-ki-tillatte.mjs --etter-bygg",
     "dev": "vite"
   },
   "dependencies": {
