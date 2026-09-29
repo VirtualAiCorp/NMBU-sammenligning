@@ -384,9 +384,10 @@ export function KiChatPanel({ apen, lukk, fakultet, visning, sted, modus, setMod
         opacity: inne ? 1 : 0, transform: inne ? 'none' : skjult, transformOrigin: modus === 'flytende' && !liten ? 'bottom right' : 'center',
         transition: rolig ? 'none' : `opacity ${VARIGHET - 60}ms ease-out, transform ${VARIGHET}ms ${EASE}`, pointerEvents: inne ? undefined : 'none',
         ...(liten ? { inset: 0 }
-          : modus === 'side' ? { top: 0, right: 0, bottom: 0, width: str.sw, borderTop: 'none', borderBottom: 'none', borderRight: 'none' }
+          : modus === 'side' ? { top: 0, right: 0, bottom: 0, width: str.sw, maxWidth: 'calc(100vw - 40px)', borderTop: 'none', borderBottom: 'none', borderRight: 'none' }
           : modus === 'stor' ? { top: '4vh', bottom: '4vh', left: 'max(20px, calc(50vw - 600px))', right: 'max(20px, calc(50vw - 600px))' }
-          : { right: 20, bottom: 84, width: str.w, height: str.h }),
+          // Høyden og bredden begrenses til vinduet, så toppen med lukkeknappen alltid er synlig (også når siden er zoomet inn)
+          : { right: 20, bottom: 84, width: str.w, height: str.h, maxWidth: 'calc(100vw - 40px)', maxHeight: 'calc(100dvh - 104px)' }),
       }}
       role="dialog" aria-label="KI-chat">
       {/* Håndtak for å endre størrelse (ikke på mobil eller i stort vindu) */}
