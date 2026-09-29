@@ -14,7 +14,7 @@ const b = await chromium.launch({ channel: 'chrome', headless: true });
 const rapport = []; let besokt = 0;
 for (const [farge, modus] of KONFIG) {
   const ctx = await b.newContext({ viewport: { width: 1440, height: 900 }, locale: 'nb-NO' });
-  await ctx.addInitScript(([f, m]) => { localStorage.setItem('fargetema', f); localStorage.setItem('theme', m); localStorage.setItem('layout', 'dashboard'); localStorage.setItem('nmbu-sidemeny', 'bred'); }, [farge, modus]);
+  await ctx.addInitScript(([f, m]) => { localStorage.setItem('fargetema', f); localStorage.setItem('theme', m); localStorage.setItem('layout', 'dashboard'); localStorage.setItem('layout-standard', '2026-09-29'); localStorage.setItem('nmbu-sidemeny', 'bred'); }, [farge, modus]);
   const p = await ctx.newPage();
   let feil = [];
   p.on('pageerror', (e) => feil.push('SIDEFEIL ' + e.message.slice(0, 200)));

@@ -2,7 +2,7 @@ import { useSyncExternalStore } from 'react';
 
 /**
  * Valgt oppsett for hele nettsiden: «oversikt» (dagens kortbaserte), «dashboard» (fast sidemeny, full bredde),
- * «toppmeny» (moduler som faner øverst) eller «arbeidsflate» (valgfri, rolig visning med lys sidemeny, nøkkeltall og
+ * «toppmeny» (moduler som faner øverst) eller «arbeidsflate» (standard fra 29.09.2026, rolig visning med lys sidemeny, nøkkeltall og
  * detaljkort, se components/arbeidsflate). Lagres i localStorage («layout») og kan settes med ?oppsett=… i lenken.
  *
  * Arbeidsflaten merkes med data-oppsett="arbeidsflate" på <html>; all styling for den ligger i styles/arbeidsflate.css
@@ -17,13 +17,28 @@ const listeners = new Set<() => void>();
 /** Skriften i arbeidsflaten (Geist, med IBM Plex Sans som reserve), lastet bare når visningen brukes */
 const ARBEIDSFLATE_FONTER = 'https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400..600&display=swap';
 
+/**
+ * Arbeidsflaten er standard fra 29.09.2026. Alle som ikke har valgt oppsett etter byttet, lander i arbeidsflaten én
+ * gang (merket med STANDARD_KEY); oppsettet de hadde, huskes som «forrige», så knappen tar dem tilbake dit.
+ * Valg gjort etter byttet respekteres. index.html gjør det samme før første tegning.
+ */
+const STANDARD: Layout = 'arbeidsflate';
+const STANDARD_KEY = 'layout-standard';
+const STANDARD_VERSJON = '2026-09-29';
+
 function les(): Layout {
   try {
     const v = localStorage.getItem(KEY);
-    return LAYOUTS.includes(v as Layout) ? (v as Layout) : 'oversikt';
-  } catch { return 'oversikt'; }
+    if (localStorage.getItem(STANDARD_KEY) !== STANDARD_VERSJON) {
+      localStorage.setItem(STANDARD_KEY, STANDARD_VERSJON);
+      if (v && v !== STANDARD && LAYOUTS.includes(v as Layout)) localStorage.setItem(FORRIGE_KEY, v);
+      localStorage.setItem(KEY, STANDARD);
+      return STANDARD;
+    }
+    return LAYOUTS.includes(v as Layout) ? (v as Layout) : STANDARD;
+  } catch { return STANDARD; }
 }
-let current: Layout = typeof window === 'undefined' ? 'oversikt' : les();
+let current: Layout = typeof window === 'undefined' ? STANDARD : les();
 
 /** Setter (eller fjerner) data-oppsett på <html> og laster skriften for arbeidsflaten. */
 function bruk(l: Layout) {

@@ -25,8 +25,9 @@
           // Fargetema (se fargetemaStore.ts): NMBU er standard og har ingen attributt
           var f = new URLSearchParams(location.search).get('farge') || localStorage.getItem('fargetema');
           if (f === 'vac' || f === 'fjord' || f === 'lyng') document.documentElement.setAttribute('data-farge', f);
-          // Valgfri arbeidsflate (se layoutStore.ts): all styling ligger under data-oppsett="arbeidsflate"
-          var o = new URLSearchParams(location.search).get('oppsett') || localStorage.getItem('layout');
+          // Arbeidsflaten (se layoutStore.ts): all styling ligger under data-oppsett="arbeidsflate"
+          // Standard fra 29.09.2026: uten valg etter byttet (layout-standard) blir det arbeidsflaten
+          var o = new URLSearchParams(location.search).get('oppsett') || (localStorage.getItem('layout-standard') === '2026-09-29' ? localStorage.getItem('layout') || 'arbeidsflate' : 'arbeidsflate');
           if (o === 'arbeidsflate') document.documentElement.setAttribute('data-oppsett', 'arbeidsflate');
         } catch (e) {}
       })();
