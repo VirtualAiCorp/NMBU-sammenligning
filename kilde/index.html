@@ -25,6 +25,9 @@
           // Fargetema (se fargetemaStore.ts): NMBU er standard og har ingen attributt
           var f = new URLSearchParams(location.search).get('farge') || localStorage.getItem('fargetema');
           if (f === 'vac' || f === 'fjord' || f === 'lyng') document.documentElement.setAttribute('data-farge', f);
+          // Valgfri arbeidsflate (se layoutStore.ts): all styling ligger under data-oppsett="arbeidsflate"
+          var o = new URLSearchParams(location.search).get('oppsett') || localStorage.getItem('layout');
+          if (o === 'arbeidsflate') document.documentElement.setAttribute('data-oppsett', 'arbeidsflate');
         } catch (e) {}
       })();
     </script>

@@ -5,6 +5,9 @@ import { FACULTY_META, useFacultyData, type FacultyData, type FacultyId } from '
 import { useLayout } from './layoutStore';
 import { DashboardShell, TopbarShell, ShellHome, ShellHeader } from './components/AppShells';
 import { KiChatKnapp } from './components/KiChatKnapp';
+import { ArbeidsflateShell } from './components/arbeidsflate/ArbeidsflateShell';
+import { AfForside, AfFakultet, AfModulSide, AfInnebygd } from './components/arbeidsflate/ArbeidsflateSider';
+import { RuteLaster } from './components/arbeidsflate/Byggeklosser';
 import { BookOpen, Table2, BarChart2, Star, Scale, Map, GraduationCap, GalleryVerticalEnd, Award, ScatterChart, TrendingUp, ArrowUpRight, Wifi, Globe2 } from 'lucide-react';
 
 // Sidene lastes først når de åpnes (egne JavaScript-biter), slik at forsiden laster raskt.
@@ -251,13 +254,34 @@ export default function App() {
     return renderHH();
   };
 
+  // ── Oppsett «arbeidsflate» (valgfri, Newbuilds-inspirert): egne forsider, samme moduler i en rolig ramme ──
+  const renderArbeidsflate = (): ReactNode => {
+    if (faculty === null) return <AfForside onNavigate={navigate} />;
+    if (faculty === 'nmbu-emner') return <AfInnebygd><NmbuCourseExplorer onBack={goHome} /></AfInnebygd>;
+    if (faculty === 'nmbu-oppsett') return <AfInnebygd><LayoutLab onBack={goHome} /></AfInnebygd>;
+    if (isNmbuPage(faculty)) {
+      const m = NMBU_PAGE_META[faculty];
+      return <AfModulSide eyebrow="Hele NMBU" tittel={m.title} undertittel={m.subtitle}>{nmbuPageBody(faculty)}</AfModulSide>;
+    }
+    if (isFacultyId(faculty)) {
+      if (facultyView === 'landing') return fakData ? <AfFakultet fac={fakData} onNavigate={navigate} /> : <RuteLaster tekst={`Laster ${FACULTY_META[faculty].label} …`} />;
+      const m = FACULTY_MODULE_META[facultyView];
+      return (
+        <AfModulSide eyebrow={FACULTY_META[faculty].label} tittel={m.title} undertittel={m.subtitle} tilbake={{ label: 'Oversikt', onClick: () => navigate(faculty, 'landing') }}>
+          {fakData ? facultyModuleBody(fakData, facultyView) : <RuteLaster />}
+        </AfModulSide>
+      );
+    }
+    return <AfInnebygd>{renderHH()}</AfInnebygd>;
+  };
+
   // ── Handelshøyskolen ──────────────────────────────────────────────────────
   // Bygget uten Handelshøyskolen (VITE_UTEN_HH=1, det åpne nettstedet): alt nedenfor er
   // død kode og fjernes av bundleren, sammen med HH-komponentene og HH-dataene.
   const renderHH = (): ReactNode => {
   if (import.meta.env.VITE_UTEN_HH === '1') return null;
   // I dashboard/toppmeny ligger siden inne i en ramme med egen navigasjon: full bredde, ingen «← Fakulteter».
-  const innebygd = layout === 'dashboard' || layout === 'toppmeny';
+  const innebygd = layout === 'dashboard' || layout === 'toppmeny' || layout === 'arbeidsflate';
 
   // Landing / program picker
   if (programLevel === null) {
@@ -612,6 +636,9 @@ export default function App() {
 
   if (layout === 'dashboard') {
     return <><DashboardShell faculty={faculty} view={facultyView} onNavigate={navigate}><Suspense fallback={<Laster />}>{renderShellContent()}</Suspense></DashboardShell>{chat}</>;
+  }
+  if (layout === 'arbeidsflate') {
+    return <><ArbeidsflateShell faculty={faculty} view={facultyView} onNavigate={navigate} sideNokkel={`${faculty ?? 'forside'}|${facultyView}`}><Suspense fallback={<RuteLaster />}>{renderArbeidsflate()}</Suspense></ArbeidsflateShell>{chat}</>;
   }
   if (layout === 'toppmeny') {
     return <><TopbarShell faculty={faculty} view={facultyView} onNavigate={navigate}><Suspense fallback={<Laster />}>{renderShellContent()}</Suspense></TopbarShell>{chat}</>;

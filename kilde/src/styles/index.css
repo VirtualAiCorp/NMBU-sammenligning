@@ -6,6 +6,7 @@
 @import './tema.css';
 @import './tema-overrides.css';
 @import './skrift.css';
+@import './arbeidsflate.css';
 
 /* Leaflet tooltip override */
 .leaflet-tooltip.map-tooltip {

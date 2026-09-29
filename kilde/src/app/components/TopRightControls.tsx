@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
-import { LayoutGrid, PanelLeft, PanelTop, Check } from 'lucide-react';
+import { LayoutGrid, PanelLeft, PanelTop, Check, PanelsTopLeft } from 'lucide-react';
 import { ThemeToggle } from './ThemeToggle';
-import { setLayout, useLayout, type Layout } from '../layoutStore';
+import { setLayout, useLayout, vekslArbeidsflate, type Layout } from '../layoutStore';
 import { FARGETEMAER, setFargetema, useFargetema } from '../fargetemaStore';
 
 /** Oppsettvelger og lys/mørk-bryter, fast øverst til høyre på alle sider. */
@@ -9,6 +9,7 @@ const VALG: { id: Layout; label: string; desc: string; icon: typeof LayoutGrid }
   { id: 'oversikt', label: 'Oversikt', desc: 'Dagens oppsett: kort og egne sider per modul', icon: LayoutGrid },
   { id: 'dashboard', label: 'Fullskjerm-dashboard', desc: 'Fast sidemeny med fakulteter og moduler, full bredde', icon: PanelLeft },
   { id: 'toppmeny', label: 'Toppmeny', desc: 'Fakulteter og moduler som faner øverst, full bredde', icon: PanelTop },
+  { id: 'arbeidsflate', label: 'Arbeidsflate', desc: 'Rolig visning med lys sidemeny, nøkkeltall og detaljkort, i lys og mørk', icon: PanelsTopLeft },
 ];
 
 const knapp: React.CSSProperties = {
@@ -68,12 +69,30 @@ function LayoutSwitcher() {
   );
 }
 
+/**
+ * Slår den valgfrie arbeidsflaten av og på (layoutStore husker oppsettet fra før). I de andre oppsettene er den et
+ * rundt ikon (teksten vises først på brede skjermer), så den ikke tar plassen rammene har satt av til knappene.
+ */
+function ArbeidsflateKnapp({ aktiv }: { aktiv: boolean }) {
+  return (
+    <button type="button" onClick={vekslArbeidsflate} aria-pressed={aktiv}
+      title={aktiv ? 'Slå av arbeidsflaten (tilbake til forrige oppsett)' : 'Slå på arbeidsflaten'}
+      aria-label={aktiv ? 'Slå av arbeidsflaten' : 'Slå på arbeidsflaten'}
+      className={`af-veksle h-9 rounded-full flex items-center justify-center gap-1.5 text-xs font-medium ${aktiv ? 'px-3' : 'w-9 xl:w-auto xl:px-3'}`} style={knapp}>
+      <PanelsTopLeft className="w-4 h-4 shrink-0" />
+      <span className={aktiv ? 'hidden sm:inline' : 'hidden xl:inline'}>Arbeidsflate</span>
+    </button>
+  );
+}
+
 export function TopRightControls() {
   // På mobil ruller knappene bort med siden i stedet for å ligge over innholdet. Unntak: toppmenyen, der den faste topplinjen har plass til dem.
-  const fast = useLayout() === 'toppmeny';
+  const layout = useLayout();
+  const fast = layout === 'toppmeny';
   return (
-    <div className={`${fast ? 'fixed' : 'absolute sm:fixed'} top-3 z-50 flex items-center gap-2`} style={{ right: 'calc(var(--ki-side, 0px) + 12px)', transition: 'right 280ms cubic-bezier(0.22, 1, 0.36, 1)' }}>
+    <div className={`${fast ? 'fixed' : 'absolute sm:fixed'} top-3 z-50 flex items-center gap-2 af-kontroller`} style={{ right: 'calc(var(--ki-side, 0px) + 12px)', transition: 'right 280ms cubic-bezier(0.22, 1, 0.36, 1)' }}>
       <LayoutSwitcher />
+      <ArbeidsflateKnapp aktiv={layout === 'arbeidsflate'} />
       <ThemeToggle />
     </div>
   );
