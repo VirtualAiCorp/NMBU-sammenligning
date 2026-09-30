@@ -1,7 +1,7 @@
 import { useMemo, useState, type ReactNode } from 'react';
 import {
   LayoutDashboard, BookOpen, Microscope, Home, Landmark, TrendingUp, GraduationCap, Users, Star, Globe2,
-  LayoutGrid, Menu, X, Coins, Archive, Lock, Baby, Briefcase, PanelLeftClose, PanelLeftOpen,
+  LayoutGrid, Menu, X, Coins, Archive, Lock, Baby, Briefcase, PanelLeftClose, PanelLeftOpen, Wallet,
 } from 'lucide-react';
 import { MenyHint } from './MenyHint';
 import { LagetAv } from './LagetAv';
@@ -43,6 +43,11 @@ const NMBU_SIDER: { f: Faculty | null; label: string; icon: typeof BookOpen }[] 
   { f: 'nmbu-bolig', label: 'Bolig og studentboliger', icon: Home },
   { f: 'nmbu-okonomi', label: 'Økonomi', icon: Landmark },
 ];
+/** Styringsinformasjon for hele NMBU (egen gruppe øverst i menyene). Samme sider som NMBU_STYRING i arbeidsflate/navigasjon.ts. */
+const STYRING_SIDER: { f: Faculty; label: string; icon: typeof BookOpen; tekst: string }[] = [
+  { f: 'nmbu-okonomi-drift', label: 'Økonomi og drift', icon: Wallet, tekst: 'Regnskap, finansiering, eksterne midler og bemanning per fakultet' },
+  { f: 'nmbu-utdanning', label: 'Utdanning', icon: GraduationCap, tekst: 'Studiepoeng, gjennomføring, søkere og studieplasser per fakultet' },
+];
 /** Sammenslått sidemeny: huskes i localStorage; bredden glir mellom 256 og 72 px. */
 const SIDEMENY_NOKKEL = 'nmbu-sidemeny';
 const MENY_MS = 240;
@@ -59,6 +64,18 @@ export function ShellHome({ onNavigate }: { onNavigate: Nav }) {
     <div>
       <ShellHeader title="NMBU-sammenligning" subtitle="Alle NMBU-programgrupper mot konkurrentene. Klikk på en rad for detaljer, og åpne analysen derfra." />
       <div className="mb-5"><Forsidenotis /></div>
+      <div className="grid gap-3 mb-5" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))' }}>
+        {STYRING_SIDER.map((s) => (
+          <button key={s.f} onClick={() => onNavigate(s.f)} className="rounded-xl p-4 text-left flex items-start gap-3" style={{ backgroundColor: 'var(--card)', border: '1px solid var(--nmbu-neutral-3)' }}>
+            <span className="w-9 h-9 rounded-lg flex items-center justify-center shrink-0" style={{ backgroundColor: 'var(--nmbu-green-4)' }}><s.icon className="w-4 h-4" style={{ color: 'var(--nmbu-green-dark)' }} /></span>
+            <span className="min-w-0">
+              <span className="block" style={{ fontSize: 10, fontWeight: 700, color: 'var(--nmbu-neutral-2)', letterSpacing: '0.05em', textTransform: 'uppercase' }}>Styringsinformasjon</span>
+              <span className="block" style={{ fontFamily: "'Lora', serif", fontSize: 16, color: 'var(--nmbu-green-dark)' }}>{s.label}</span>
+              <span className="block" style={{ fontSize: 12, color: 'var(--nmbu-neutral-1)' }}>{s.tekst}</span>
+            </span>
+          </button>
+        ))}
+      </div>
       {rader
         ? <Matrise rader={rader} embedded onOpen={(fak, g) => onNavigate(fak, 'analyse', g)} />
         : <div className="rounded-xl p-6 text-sm" style={{ backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-2)' }}>Laster tallene for fakultetene …</div>}
@@ -105,6 +122,14 @@ export function DashboardShell({ faculty, view, onNavigate, children }: { facult
     return (
       <nav key={s ? 'smal' : 'bred'} className="flex flex-col gap-0.5 text-sm meny-inn" aria-label="Hovedmeny">
         {!s && <button onClick={() => gaa(null)} className="text-left px-2 pb-2" style={{ fontFamily: "'Lora', serif", fontSize: 17, whiteSpace: 'nowrap' }}>NMBU-sammenligning</button>}
+        {seksjon('Styringsinformasjon')}
+        {STYRING_SIDER.map((x) => (
+          <MenyHint key={x.label} navn={x.label} undertekst="Hele NMBU" aktiv={s}>
+            <button onClick={() => gaa(x.f)} className={`flex items-center rounded-md text-left ${s ? 'justify-center py-2' : 'gap-2 px-2 py-1.5'}`} style={itemStyle(faculty === x.f)}>
+              <x.icon className="w-4 h-4 shrink-0" />{!s && ` ${x.label}`}
+            </button>
+          </MenyHint>
+        ))}
         {seksjon('Fakultetene')}
         {FACULTY_IDS.map((id) => {
           const aapen = faculty === id;
@@ -194,7 +219,7 @@ function Brodsmuler({ faculty, view, onNavigate }: { faculty: Faculty | null; vi
   else if (erFakultet(faculty)) {
     deler.push({ l: FACULTIES[faculty].shortLabel, go: () => onNavigate(faculty, 'landing') });
     if (view !== 'landing') deler.push({ l: FAKULTETSMODULER.find((m) => m.view === view)?.label ?? view });
-  } else if (faculty) deler.push({ l: NMBU_SIDER.find((s) => s.f === faculty)?.label ?? 'Alternative oppsett' });
+  } else if (faculty) deler.push({ l: [...STYRING_SIDER, ...NMBU_SIDER].find((s) => s.f === faculty)?.label ?? 'Alternative oppsett' });
   return (
     <div className="flex items-center gap-1.5 text-xs min-w-0 truncate" style={{ color: 'var(--nmbu-neutral-2)' }}>
       {deler.map((d, i) => (
@@ -249,7 +274,7 @@ export function TopbarShell({ faculty, view, onNavigate, children }: { faculty: 
                     <Archive className="w-3.5 h-3.5" /> Opprinnelig HH-analyse
                   </button>,
                 ] : [])]
-              : NMBU_SIDER.map((s) => (
+              : [NMBU_SIDER[0], ...STYRING_SIDER, ...NMBU_SIDER.slice(1)].map((s) => (
                   <button key={s.label} onClick={() => onNavigate(s.f)} className="flex items-center gap-1.5 px-3 py-2.5 text-xs shrink-0" style={fane(faculty === s.f)}>
                     <s.icon className="w-3.5 h-3.5" /> {s.label}
                   </button>

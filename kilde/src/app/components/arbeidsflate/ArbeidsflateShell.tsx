@@ -16,7 +16,7 @@ import type { ShellView } from '../AppShells';
 import type { Faculty } from '../FacultyLanding';
 import { Sok } from './Sok';
 import {
-  FAKULTETER, FAKULTET_IKON, MODULGRUPPER, NMBU_OVERSIKT, NMBU_SIDER, OPPRINNELIG_HH, UTEN_HH, apneKiChat, kortNavn, modulerFor, type AfNav,
+  FAKULTETER, FAKULTET_IKON, MODULGRUPPER, NMBU_OVERSIKT, NMBU_SIDER, NMBU_STYRING, OPPRINNELIG_HH, UTEN_HH, apneKiChat, kortNavn, modulerFor, type AfNav,
 } from './navigasjon';
 
 const SIDEMENY_NOKKEL = 'af-sidemeny';
@@ -146,6 +146,10 @@ function Sidemeny({ s, iSkuff, faculty, view, gaa, onSok, onChat, onVeksle }: {
             <div className="af-meny-gruppe">
               {overskrift('Oversikt')}
               {punkt('forside', NMBU_OVERSIKT.icon, NMBU_OVERSIKT.label, paaForsiden, () => gaa(null))}
+            </div>
+            <div className="af-meny-gruppe">
+              {overskrift('Styringsinformasjon')}
+              {NMBU_STYRING.map((x) => punkt(x.f, x.icon, x.label, faculty === x.f, () => gaa(x.f), 'Hele NMBU'))}
             </div>
             <div className="af-meny-gruppe">
               {overskrift('Fakultetene')}

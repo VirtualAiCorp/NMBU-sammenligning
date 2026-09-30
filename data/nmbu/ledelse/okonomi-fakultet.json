@@ -1,0 +1,2861 @@
+{
+ "_merknad": "Hentet ut 30.09.2026 fra tabellene «Budsjettsituasjonen for enhetene» / «Internregnskapet» i tertialrapportene, «Fordeling av tildeling» i årsplanene og salderingstabellen i sak 23/26. Tall i 1000 kr er gjort om til mill. kr. «raa» er teksten slik den står på siden; «bilde» betyr at tabellen er et bilde og er lest visuelt.",
+ "serier": [
+  {
+   "id": "fak-resultat",
+   "navn": "Årsresultat for tildelte midler (internregnskapet)",
+   "enhet": "mill. kr",
+   "nivaa": "vet",
+   "punkter": [
+    {
+     "periode": "2022",
+     "type": "år",
+     "verdi": -27.932,
+     "kilde": "tertial-2022-t3",
+     "side": 7,
+     "raa": "-27 932"
+    },
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": -20.507,
+     "kilde": "tertial-2023-t3",
+     "side": 2,
+     "raa": "-20 507"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": -15.94,
+     "kilde": "tertial-2024-t3",
+     "side": 2,
+     "raa": "-15 940"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 1.677,
+     "kilde": "tertial-2025-t3",
+     "side": 7,
+     "raa": "1 677"
+    },
+    {
+     "periode": "2023-T1",
+     "type": "prognose",
+     "verdi": -29.481,
+     "kilde": "tertial-2023-t1",
+     "side": 6,
+     "raa": "-29 481"
+    },
+    {
+     "periode": "2023-T2",
+     "type": "prognose",
+     "verdi": -29.705,
+     "kilde": "tertial-2023-t2",
+     "side": 6,
+     "raa": "-29 705"
+    },
+    {
+     "periode": "2024-T1",
+     "type": "prognose",
+     "verdi": -24.915,
+     "kilde": "tertial-2024-t1",
+     "side": 7,
+     "raa": "-24 915"
+    },
+    {
+     "periode": "2024-T2",
+     "type": "prognose",
+     "verdi": -16.0,
+     "kilde": "tertial-2024-t2",
+     "side": 4,
+     "raa": "-16 000"
+    },
+    {
+     "periode": "2025-T1",
+     "type": "prognose",
+     "verdi": -2.646,
+     "kilde": "tertial-2025-t1",
+     "side": 5,
+     "raa": "-2 646"
+    },
+    {
+     "periode": "2025-T2",
+     "type": "prognose",
+     "verdi": 0.0,
+     "kilde": "tertial-2025-t2",
+     "side": 5,
+     "raa": "0"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "prognose",
+     "verdi": -12.131,
+     "kilde": "tertial-2026-t1",
+     "side": 5,
+     "bilde": true
+    },
+    {
+     "periode": "2026",
+     "type": "budsjett",
+     "verdi": 0,
+     "kilde": "tertial-2026-t1-sak",
+     "side": 2,
+     "raa": "0"
+    },
+    {
+     "periode": "2027",
+     "type": "budsjett",
+     "verdi": 4,
+     "kilde": "tertial-2026-t1-sak",
+     "side": 2,
+     "raa": "4"
+    },
+    {
+     "periode": "2028",
+     "type": "budsjett",
+     "verdi": 10,
+     "kilde": "tertial-2026-t1-sak",
+     "side": 2,
+     "raa": "10"
+    },
+    {
+     "periode": "2029",
+     "type": "budsjett",
+     "verdi": 17,
+     "kilde": "tertial-2026-t1-sak",
+     "side": 2,
+     "raa": "17"
+    },
+    {
+     "periode": "2030",
+     "type": "budsjett",
+     "verdi": 21,
+     "kilde": "tertial-2026-t1-sak",
+     "side": 2,
+     "raa": "21"
+    }
+   ]
+  },
+  {
+   "id": "fak-balanse",
+   "navn": "Akkumulert balanse ved årsslutt: overførte midler (+) eller merforbruk (−)",
+   "enhet": "mill. kr",
+   "nivaa": "vet",
+   "punkter": [
+    {
+     "periode": "2022",
+     "type": "år",
+     "verdi": -74.893,
+     "kilde": "tertial-2022-t3",
+     "side": 7,
+     "raa": "-74 893"
+    },
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": -93.25,
+     "kilde": "tertial-2023-t3",
+     "side": 2,
+     "raa": "-93 250"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": -82.757,
+     "kilde": "tertial-2024-t3",
+     "side": 2,
+     "raa": "-82 757"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": -80.601,
+     "kilde": "tertial-2025-t3",
+     "side": 7,
+     "raa": "-80 601"
+    },
+    {
+     "periode": "2023-T1",
+     "type": "prognose",
+     "verdi": -102.224,
+     "kilde": "tertial-2023-t1",
+     "side": 6,
+     "raa": "-102 224"
+    },
+    {
+     "periode": "2023-T2",
+     "type": "prognose",
+     "verdi": -102.448,
+     "kilde": "tertial-2023-t2",
+     "side": 6,
+     "raa": "-102 448"
+    },
+    {
+     "periode": "2024-T1",
+     "type": "prognose",
+     "verdi": -91.732,
+     "kilde": "tertial-2024-t1",
+     "side": 7,
+     "raa": "-91 732"
+    },
+    {
+     "periode": "2024-T2",
+     "type": "prognose",
+     "verdi": -82.817,
+     "kilde": "tertial-2024-t2",
+     "side": 4,
+     "raa": "-82 817"
+    },
+    {
+     "periode": "2025-T1",
+     "type": "prognose",
+     "verdi": -84.924,
+     "kilde": "tertial-2025-t1",
+     "side": 5,
+     "raa": "-84 924"
+    },
+    {
+     "periode": "2025-T2",
+     "type": "prognose",
+     "verdi": -82.277,
+     "kilde": "tertial-2025-t2",
+     "side": 5,
+     "raa": "-82 277"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "prognose",
+     "verdi": -93.557,
+     "kilde": "tertial-2026-t1",
+     "side": 5,
+     "bilde": true
+    }
+   ]
+  },
+  {
+   "id": "fak-resultat",
+   "navn": "Årsresultat for tildelte midler (internregnskapet)",
+   "enhet": "mill. kr",
+   "nivaa": "kbm",
+   "punkter": [
+    {
+     "periode": "2022",
+     "type": "år",
+     "verdi": -8.89,
+     "kilde": "tertial-2022-t3",
+     "side": 7,
+     "raa": "-8 890"
+    },
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": -9.217,
+     "kilde": "tertial-2023-t3",
+     "side": 2,
+     "raa": "-9 217"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": -10.138,
+     "kilde": "tertial-2024-t3",
+     "side": 2,
+     "raa": "-10 138"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 3.891,
+     "kilde": "tertial-2025-t3",
+     "side": 7,
+     "raa": "3 891"
+    },
+    {
+     "periode": "2023-T1",
+     "type": "prognose",
+     "verdi": -4.938,
+     "kilde": "tertial-2023-t1",
+     "side": 6,
+     "raa": "-4 938"
+    },
+    {
+     "periode": "2023-T2",
+     "type": "prognose",
+     "verdi": -4.587,
+     "kilde": "tertial-2023-t2",
+     "side": 6,
+     "raa": "-4 587"
+    },
+    {
+     "periode": "2024-T1",
+     "type": "prognose",
+     "verdi": -9.76,
+     "kilde": "tertial-2024-t1",
+     "side": 7,
+     "raa": "-9 760"
+    },
+    {
+     "periode": "2024-T2",
+     "type": "prognose",
+     "verdi": -9.76,
+     "kilde": "tertial-2024-t2",
+     "side": 4,
+     "raa": "-9 760"
+    },
+    {
+     "periode": "2025-T1",
+     "type": "prognose",
+     "verdi": -4.702,
+     "kilde": "tertial-2025-t1",
+     "side": 5,
+     "raa": "-4 702"
+    },
+    {
+     "periode": "2025-T2",
+     "type": "prognose",
+     "verdi": -3.35,
+     "kilde": "tertial-2025-t2",
+     "side": 5,
+     "raa": "-3 350"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "prognose",
+     "verdi": 0.73,
+     "kilde": "tertial-2026-t1",
+     "side": 5,
+     "bilde": true
+    }
+   ]
+  },
+  {
+   "id": "fak-balanse",
+   "navn": "Akkumulert balanse ved årsslutt: overførte midler (+) eller merforbruk (−)",
+   "enhet": "mill. kr",
+   "nivaa": "kbm",
+   "punkter": [
+    {
+     "periode": "2022",
+     "type": "år",
+     "verdi": 11.64,
+     "kilde": "tertial-2022-t3",
+     "side": 7,
+     "raa": "11 640"
+    },
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 1.307,
+     "kilde": "tertial-2023-t3",
+     "side": 2,
+     "raa": "1 307"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": -6.815,
+     "kilde": "tertial-2024-t3",
+     "side": 2,
+     "raa": "-6 815"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": -0.907,
+     "kilde": "tertial-2025-t3",
+     "side": 7,
+     "raa": "-907"
+    },
+    {
+     "periode": "2023-T1",
+     "type": "prognose",
+     "verdi": 5.586,
+     "kilde": "tertial-2023-t1",
+     "side": 6,
+     "raa": "5 586"
+    },
+    {
+     "periode": "2023-T2",
+     "type": "prognose",
+     "verdi": 5.937,
+     "kilde": "tertial-2023-t2",
+     "side": 6,
+     "raa": "5 937"
+    },
+    {
+     "periode": "2024-T1",
+     "type": "prognose",
+     "verdi": -6.437,
+     "kilde": "tertial-2024-t1",
+     "side": 7,
+     "raa": "-6 437"
+    },
+    {
+     "periode": "2024-T2",
+     "type": "prognose",
+     "verdi": -6.437,
+     "kilde": "tertial-2024-t2",
+     "side": 4,
+     "raa": "-6 437"
+    },
+    {
+     "periode": "2025-T1",
+     "type": "prognose",
+     "verdi": -9.5,
+     "kilde": "tertial-2025-t1",
+     "side": 5,
+     "raa": "-9 500"
+    },
+    {
+     "periode": "2025-T2",
+     "type": "prognose",
+     "verdi": -8.148,
+     "kilde": "tertial-2025-t2",
+     "side": 5,
+     "raa": "-8 148"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "prognose",
+     "verdi": 2.04,
+     "kilde": "tertial-2026-t1",
+     "side": 5,
+     "bilde": true
+    }
+   ]
+  },
+  {
+   "id": "fak-resultat",
+   "navn": "Årsresultat for tildelte midler (internregnskapet)",
+   "enhet": "mill. kr",
+   "nivaa": "biovit",
+   "punkter": [
+    {
+     "periode": "2022",
+     "type": "år",
+     "verdi": -6.833,
+     "kilde": "tertial-2022-t3",
+     "side": 7,
+     "raa": "-6 833"
+    },
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": -11.006,
+     "kilde": "tertial-2023-t3",
+     "side": 2,
+     "raa": "-11 006"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": -8.982,
+     "kilde": "tertial-2024-t3",
+     "side": 2,
+     "raa": "-8 982"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 7.97,
+     "kilde": "tertial-2025-t3",
+     "side": 7,
+     "raa": "7 970"
+    },
+    {
+     "periode": "2023-T1",
+     "type": "prognose",
+     "verdi": -2.248,
+     "kilde": "tertial-2023-t1",
+     "side": 6,
+     "raa": "-2 248"
+    },
+    {
+     "periode": "2023-T2",
+     "type": "prognose",
+     "verdi": -7.487,
+     "kilde": "tertial-2023-t2",
+     "side": 6,
+     "raa": "-7 487"
+    },
+    {
+     "periode": "2024-T1",
+     "type": "prognose",
+     "verdi": -7.152,
+     "kilde": "tertial-2024-t1",
+     "side": 7,
+     "raa": "-7 152"
+    },
+    {
+     "periode": "2024-T2",
+     "type": "prognose",
+     "verdi": -8.399,
+     "kilde": "tertial-2024-t2",
+     "side": 4,
+     "raa": "-8 399"
+    },
+    {
+     "periode": "2025-T1",
+     "type": "prognose",
+     "verdi": 0.694,
+     "kilde": "tertial-2025-t1",
+     "side": 5,
+     "raa": "694"
+    },
+    {
+     "periode": "2025-T2",
+     "type": "prognose",
+     "verdi": 0.694,
+     "kilde": "tertial-2025-t2",
+     "side": 5,
+     "raa": "694"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "prognose",
+     "verdi": 0.004,
+     "kilde": "tertial-2026-t1",
+     "side": 5,
+     "bilde": true
+    }
+   ]
+  },
+  {
+   "id": "fak-balanse",
+   "navn": "Akkumulert balanse ved årsslutt: overførte midler (+) eller merforbruk (−)",
+   "enhet": "mill. kr",
+   "nivaa": "biovit",
+   "punkter": [
+    {
+     "periode": "2022",
+     "type": "år",
+     "verdi": 12.332,
+     "kilde": "tertial-2022-t3",
+     "side": 7,
+     "raa": "12 332"
+    },
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 1.042,
+     "kilde": "tertial-2023-t3",
+     "side": 2,
+     "raa": "1 042"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": -4.021,
+     "kilde": "tertial-2024-t3",
+     "side": 2,
+     "raa": "-4 021"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 9.503,
+     "kilde": "tertial-2025-t3",
+     "side": 7,
+     "raa": "9 503"
+    },
+    {
+     "periode": "2023-T1",
+     "type": "prognose",
+     "verdi": 9.8,
+     "kilde": "tertial-2023-t1",
+     "side": 6,
+     "raa": "9 800"
+    },
+    {
+     "periode": "2023-T2",
+     "type": "prognose",
+     "verdi": 4.561,
+     "kilde": "tertial-2023-t2",
+     "side": 6,
+     "raa": "4 561"
+    },
+    {
+     "periode": "2024-T1",
+     "type": "prognose",
+     "verdi": -2.191,
+     "kilde": "tertial-2024-t1",
+     "side": 7,
+     "raa": "-2 191"
+    },
+    {
+     "periode": "2024-T2",
+     "type": "prognose",
+     "verdi": -3.438,
+     "kilde": "tertial-2024-t2",
+     "side": 4,
+     "raa": "-3 438"
+    },
+    {
+     "periode": "2025-T1",
+     "type": "prognose",
+     "verdi": 2.226,
+     "kilde": "tertial-2025-t1",
+     "side": 5,
+     "raa": "2 226"
+    },
+    {
+     "periode": "2025-T2",
+     "type": "prognose",
+     "verdi": 2.227,
+     "kilde": "tertial-2025-t2",
+     "side": 5,
+     "raa": "2 227"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "prognose",
+     "verdi": 13.87,
+     "kilde": "tertial-2026-t1",
+     "side": 5,
+     "bilde": true
+    }
+   ]
+  },
+  {
+   "id": "fak-resultat",
+   "navn": "Årsresultat for tildelte midler (internregnskapet)",
+   "enhet": "mill. kr",
+   "nivaa": "realtek",
+   "punkter": [
+    {
+     "periode": "2022",
+     "type": "år",
+     "verdi": -15.722,
+     "kilde": "tertial-2022-t3",
+     "side": 7,
+     "raa": "-15 722"
+    },
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": -10.445,
+     "kilde": "tertial-2023-t3",
+     "side": 2,
+     "raa": "-10 445"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": -2.924,
+     "kilde": "tertial-2024-t3",
+     "side": 2,
+     "raa": "-2 924"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 4.888,
+     "kilde": "tertial-2025-t3",
+     "side": 7,
+     "raa": "4 888"
+    },
+    {
+     "periode": "2023-T1",
+     "type": "prognose",
+     "verdi": -19.0,
+     "kilde": "tertial-2023-t1",
+     "side": 6,
+     "raa": "-19 000"
+    },
+    {
+     "periode": "2023-T2",
+     "type": "prognose",
+     "verdi": -12.0,
+     "kilde": "tertial-2023-t2",
+     "side": 6,
+     "raa": "-12 000"
+    },
+    {
+     "periode": "2024-T1",
+     "type": "prognose",
+     "verdi": -9.0,
+     "kilde": "tertial-2024-t1",
+     "side": 7,
+     "raa": "-9 000"
+    },
+    {
+     "periode": "2024-T2",
+     "type": "prognose",
+     "verdi": -10.0,
+     "kilde": "tertial-2024-t2",
+     "side": 4,
+     "raa": "-10 000"
+    },
+    {
+     "periode": "2025-T1",
+     "type": "prognose",
+     "verdi": -3.802,
+     "kilde": "tertial-2025-t1",
+     "side": 5,
+     "raa": "-3 802"
+    },
+    {
+     "periode": "2025-T2",
+     "type": "prognose",
+     "verdi": 0.0,
+     "kilde": "tertial-2025-t2",
+     "side": 5,
+     "raa": "-"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "prognose",
+     "verdi": 5.0,
+     "kilde": "tertial-2026-t1",
+     "side": 5,
+     "bilde": true
+    }
+   ]
+  },
+  {
+   "id": "fak-balanse",
+   "navn": "Akkumulert balanse ved årsslutt: overførte midler (+) eller merforbruk (−)",
+   "enhet": "mill. kr",
+   "nivaa": "realtek",
+   "punkter": [
+    {
+     "periode": "2022",
+     "type": "år",
+     "verdi": 39.133,
+     "kilde": "tertial-2022-t3",
+     "side": 7,
+     "raa": "39 133"
+    },
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 23.296,
+     "kilde": "tertial-2023-t3",
+     "side": 2,
+     "raa": "23 296"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 22.457,
+     "kilde": "tertial-2024-t3",
+     "side": 2,
+     "raa": "22 457"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 29.894,
+     "kilde": "tertial-2025-t3",
+     "side": 7,
+     "raa": "29 894"
+    },
+    {
+     "periode": "2023-T1",
+     "type": "prognose",
+     "verdi": 14.741,
+     "kilde": "tertial-2023-t1",
+     "side": 6,
+     "raa": "14 741"
+    },
+    {
+     "periode": "2023-T2",
+     "type": "prognose",
+     "verdi": 21.741,
+     "kilde": "tertial-2023-t2",
+     "side": 6,
+     "raa": "21 741"
+    },
+    {
+     "periode": "2024-T1",
+     "type": "prognose",
+     "verdi": 16.381,
+     "kilde": "tertial-2024-t1",
+     "side": 7,
+     "raa": "16 381"
+    },
+    {
+     "periode": "2024-T2",
+     "type": "prognose",
+     "verdi": 15.381,
+     "kilde": "tertial-2024-t2",
+     "side": 4,
+     "raa": "15 381"
+    },
+    {
+     "periode": "2025-T1",
+     "type": "prognose",
+     "verdi": 21.205,
+     "kilde": "tertial-2025-t1",
+     "side": 5,
+     "raa": "21 205"
+    },
+    {
+     "periode": "2025-T2",
+     "type": "prognose",
+     "verdi": 25.007,
+     "kilde": "tertial-2025-t2",
+     "side": 5,
+     "raa": "25 007"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "prognose",
+     "verdi": 37.099,
+     "kilde": "tertial-2026-t1",
+     "side": 5,
+     "bilde": true
+    }
+   ]
+  },
+  {
+   "id": "fak-resultat",
+   "navn": "Årsresultat for tildelte midler (internregnskapet)",
+   "enhet": "mill. kr",
+   "nivaa": "mina",
+   "punkter": [
+    {
+     "periode": "2022",
+     "type": "år",
+     "verdi": 4.247,
+     "kilde": "tertial-2022-t3",
+     "side": 7,
+     "raa": "4 247"
+    },
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 4.244,
+     "kilde": "tertial-2023-t3",
+     "side": 2,
+     "raa": "4 244"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 2.142,
+     "kilde": "tertial-2024-t3",
+     "side": 2,
+     "raa": "2 142"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 4.941,
+     "kilde": "tertial-2025-t3",
+     "side": 7,
+     "raa": "4 941"
+    },
+    {
+     "periode": "2023-T1",
+     "type": "prognose",
+     "verdi": -1.048,
+     "kilde": "tertial-2023-t1",
+     "side": 6,
+     "raa": "-1 048"
+    },
+    {
+     "periode": "2023-T2",
+     "type": "prognose",
+     "verdi": 4.222,
+     "kilde": "tertial-2023-t2",
+     "side": 6,
+     "raa": "4 222"
+    },
+    {
+     "periode": "2024-T1",
+     "type": "prognose",
+     "verdi": -4.553,
+     "kilde": "tertial-2024-t1",
+     "side": 7,
+     "raa": "-4 553"
+    },
+    {
+     "periode": "2024-T2",
+     "type": "prognose",
+     "verdi": 3.771,
+     "kilde": "tertial-2024-t2",
+     "side": 4,
+     "raa": "3 771"
+    },
+    {
+     "periode": "2025-T1",
+     "type": "prognose",
+     "verdi": 2.04,
+     "kilde": "tertial-2025-t1",
+     "side": 5,
+     "raa": "2 040"
+    },
+    {
+     "periode": "2025-T2",
+     "type": "prognose",
+     "verdi": 3.286,
+     "kilde": "tertial-2025-t2",
+     "side": 5,
+     "raa": "3 286"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "prognose",
+     "verdi": 4.014,
+     "kilde": "tertial-2026-t1",
+     "side": 5,
+     "bilde": true
+    }
+   ]
+  },
+  {
+   "id": "fak-balanse",
+   "navn": "Akkumulert balanse ved årsslutt: overførte midler (+) eller merforbruk (−)",
+   "enhet": "mill. kr",
+   "nivaa": "mina",
+   "punkter": [
+    {
+     "periode": "2022",
+     "type": "år",
+     "verdi": 20.57,
+     "kilde": "tertial-2022-t3",
+     "side": 7,
+     "raa": "20 570"
+    },
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 21.907,
+     "kilde": "tertial-2023-t3",
+     "side": 2,
+     "raa": "21 907"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 26.174,
+     "kilde": "tertial-2024-t3",
+     "side": 2,
+     "raa": "26 174"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 33.476,
+     "kilde": "tertial-2025-t3",
+     "side": 7,
+     "raa": "33 476"
+    },
+    {
+     "periode": "2023-T1",
+     "type": "prognose",
+     "verdi": 16.615,
+     "kilde": "tertial-2023-t1",
+     "side": 6,
+     "raa": "16 615"
+    },
+    {
+     "periode": "2023-T2",
+     "type": "prognose",
+     "verdi": 21.885,
+     "kilde": "tertial-2023-t2",
+     "side": 6,
+     "raa": "21 885"
+    },
+    {
+     "periode": "2024-T1",
+     "type": "prognose",
+     "verdi": 19.479,
+     "kilde": "tertial-2024-t1",
+     "side": 7,
+     "raa": "19 479"
+    },
+    {
+     "periode": "2024-T2",
+     "type": "prognose",
+     "verdi": 27.803,
+     "kilde": "tertial-2024-t2",
+     "side": 4,
+     "raa": "27 803"
+    },
+    {
+     "periode": "2025-T1",
+     "type": "prognose",
+     "verdi": 30.575,
+     "kilde": "tertial-2025-t1",
+     "side": 5,
+     "raa": "30 575"
+    },
+    {
+     "periode": "2025-T2",
+     "type": "prognose",
+     "verdi": 31.821,
+     "kilde": "tertial-2025-t2",
+     "side": 5,
+     "raa": "31 821"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "prognose",
+     "verdi": 39.48,
+     "kilde": "tertial-2026-t1",
+     "side": 5,
+     "bilde": true
+    }
+   ]
+  },
+  {
+   "id": "fak-resultat",
+   "navn": "Årsresultat for tildelte midler (internregnskapet)",
+   "enhet": "mill. kr",
+   "nivaa": "landsam",
+   "punkter": [
+    {
+     "periode": "2022",
+     "type": "år",
+     "verdi": -6.0,
+     "kilde": "tertial-2022-t3",
+     "side": 7,
+     "raa": "-6 000"
+    },
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": -7.672,
+     "kilde": "tertial-2023-t3",
+     "side": 2,
+     "raa": "-7 672"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": -4.325,
+     "kilde": "tertial-2024-t3",
+     "side": 2,
+     "raa": "-4 325"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": -0.736,
+     "kilde": "tertial-2025-t3",
+     "side": 7,
+     "raa": "-736"
+    },
+    {
+     "periode": "2023-T1",
+     "type": "prognose",
+     "verdi": -8.407,
+     "kilde": "tertial-2023-t1",
+     "side": 6,
+     "raa": "-8 407"
+    },
+    {
+     "periode": "2023-T2",
+     "type": "prognose",
+     "verdi": -6.805,
+     "kilde": "tertial-2023-t2",
+     "side": 6,
+     "raa": "-6 805"
+    },
+    {
+     "periode": "2024-T1",
+     "type": "prognose",
+     "verdi": -4.849,
+     "kilde": "tertial-2024-t1",
+     "side": 7,
+     "raa": "-4 849"
+    },
+    {
+     "periode": "2024-T2",
+     "type": "prognose",
+     "verdi": -0.4,
+     "kilde": "tertial-2024-t2",
+     "side": 4,
+     "raa": "-400"
+    },
+    {
+     "periode": "2025-T1",
+     "type": "prognose",
+     "verdi": -5.424,
+     "kilde": "tertial-2025-t1",
+     "side": 5,
+     "raa": "-5 424"
+    },
+    {
+     "periode": "2025-T2",
+     "type": "prognose",
+     "verdi": -0.863,
+     "kilde": "tertial-2025-t2",
+     "side": 5,
+     "raa": "-863"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "prognose",
+     "verdi": 0.871,
+     "kilde": "tertial-2026-t1",
+     "side": 5,
+     "bilde": true
+    }
+   ]
+  },
+  {
+   "id": "fak-balanse",
+   "navn": "Akkumulert balanse ved årsslutt: overførte midler (+) eller merforbruk (−)",
+   "enhet": "mill. kr",
+   "nivaa": "landsam",
+   "punkter": [
+    {
+     "periode": "2022",
+     "type": "år",
+     "verdi": 8.281,
+     "kilde": "tertial-2022-t3",
+     "side": 7,
+     "raa": "8 281"
+    },
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 0.08,
+     "kilde": "tertial-2023-t3",
+     "side": 2,
+     "raa": "80"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": -2.328,
+     "kilde": "tertial-2024-t3",
+     "side": 2,
+     "raa": "-2 328"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 2.508,
+     "kilde": "tertial-2025-t3",
+     "side": 7,
+     "raa": "2 508"
+    },
+    {
+     "periode": "2023-T1",
+     "type": "prognose",
+     "verdi": -0.655,
+     "kilde": "tertial-2023-t1",
+     "side": 6,
+     "raa": "-655"
+    },
+    {
+     "periode": "2023-T2",
+     "type": "prognose",
+     "verdi": 0.947,
+     "kilde": "tertial-2023-t2",
+     "side": 6,
+     "raa": "947"
+    },
+    {
+     "periode": "2024-T1",
+     "type": "prognose",
+     "verdi": -2.852,
+     "kilde": "tertial-2024-t1",
+     "side": 7,
+     "raa": "-2 852"
+    },
+    {
+     "periode": "2024-T2",
+     "type": "prognose",
+     "verdi": 1.597,
+     "kilde": "tertial-2024-t2",
+     "side": 4,
+     "raa": "1 597"
+    },
+    {
+     "periode": "2025-T1",
+     "type": "prognose",
+     "verdi": -2.18,
+     "kilde": "tertial-2025-t1",
+     "side": 5,
+     "raa": "-2 180"
+    },
+    {
+     "periode": "2025-T2",
+     "type": "prognose",
+     "verdi": 2.381,
+     "kilde": "tertial-2025-t2",
+     "side": 5,
+     "raa": "2 381"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "prognose",
+     "verdi": 5.562,
+     "kilde": "tertial-2026-t1",
+     "side": 5,
+     "bilde": true
+    }
+   ]
+  },
+  {
+   "id": "fak-resultat",
+   "navn": "Årsresultat for tildelte midler (internregnskapet)",
+   "enhet": "mill. kr",
+   "nivaa": "hh",
+   "punkter": [
+    {
+     "periode": "2022",
+     "type": "år",
+     "verdi": 0.532,
+     "kilde": "tertial-2022-t3",
+     "side": 7,
+     "raa": "532"
+    },
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 1.268,
+     "kilde": "tertial-2023-t3",
+     "side": 2,
+     "raa": "1 268"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": -8.357,
+     "kilde": "tertial-2024-t3",
+     "side": 2,
+     "raa": "-8 357"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": -0.665,
+     "kilde": "tertial-2025-t3",
+     "side": 7,
+     "raa": "-665"
+    },
+    {
+     "periode": "2023-T1",
+     "type": "prognose",
+     "verdi": 3.616,
+     "kilde": "tertial-2023-t1",
+     "side": 6,
+     "raa": "3 616"
+    },
+    {
+     "periode": "2023-T2",
+     "type": "prognose",
+     "verdi": 1.304,
+     "kilde": "tertial-2023-t2",
+     "side": 6,
+     "raa": "1 304"
+    },
+    {
+     "periode": "2024-T1",
+     "type": "prognose",
+     "verdi": -4.409,
+     "kilde": "tertial-2024-t1",
+     "side": 7,
+     "raa": "-4 409"
+    },
+    {
+     "periode": "2024-T2",
+     "type": "prognose",
+     "verdi": -4.409,
+     "kilde": "tertial-2024-t2",
+     "side": 4,
+     "raa": "-4 409"
+    },
+    {
+     "periode": "2025-T1",
+     "type": "prognose",
+     "verdi": 2.234,
+     "kilde": "tertial-2025-t1",
+     "side": 5,
+     "raa": "2 234"
+    },
+    {
+     "periode": "2025-T2",
+     "type": "prognose",
+     "verdi": 2.058,
+     "kilde": "tertial-2025-t2",
+     "side": 5,
+     "raa": "2 058"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "prognose",
+     "verdi": 9.311,
+     "kilde": "tertial-2026-t1",
+     "side": 5,
+     "bilde": true
+    },
+    {
+     "periode": "2026-T2",
+     "type": "prognose",
+     "verdi": 12.487,
+     "kilde": "hh-tertial-2026-t2",
+     "side": 1,
+     "raa": "12 487"
+    },
+    {
+     "periode": "2026",
+     "type": "budsjett",
+     "verdi": 9.344,
+     "kilde": "hh-tertial-2026-t2",
+     "side": 1,
+     "raa": "Driftsresultat 12 202 11 169 1 032 9 344"
+    },
+    {
+     "periode": "2027",
+     "type": "budsjett",
+     "verdi": 14.389,
+     "kilde": "hh-langtidsbudsjett-2026-2030",
+     "side": 3,
+     "bilde": true
+    },
+    {
+     "periode": "2028",
+     "type": "budsjett",
+     "verdi": 10.23,
+     "kilde": "hh-langtidsbudsjett-2026-2030",
+     "side": 3,
+     "bilde": true
+    },
+    {
+     "periode": "2029",
+     "type": "budsjett",
+     "verdi": 10.467,
+     "kilde": "hh-langtidsbudsjett-2026-2030",
+     "side": 3,
+     "bilde": true
+    },
+    {
+     "periode": "2030",
+     "type": "budsjett",
+     "verdi": 9.653,
+     "kilde": "hh-langtidsbudsjett-2026-2030",
+     "side": 3,
+     "bilde": true
+    }
+   ]
+  },
+  {
+   "id": "fak-balanse",
+   "navn": "Akkumulert balanse ved årsslutt: overførte midler (+) eller merforbruk (−)",
+   "enhet": "mill. kr",
+   "nivaa": "hh",
+   "punkter": [
+    {
+     "periode": "2022",
+     "type": "år",
+     "verdi": 3.57,
+     "kilde": "tertial-2022-t3",
+     "side": 7,
+     "raa": "3 570"
+    },
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 4.68,
+     "kilde": "tertial-2023-t3",
+     "side": 2,
+     "raa": "4 680"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": -2.975,
+     "kilde": "tertial-2024-t3",
+     "side": 2,
+     "raa": "-2 975"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": -2.371,
+     "kilde": "tertial-2025-t3",
+     "side": 7,
+     "raa": "-2 371"
+    },
+    {
+     "periode": "2023-T1",
+     "type": "prognose",
+     "verdi": 7.029,
+     "kilde": "tertial-2023-t1",
+     "side": 6,
+     "raa": "7 029"
+    },
+    {
+     "periode": "2023-T2",
+     "type": "prognose",
+     "verdi": 4.717,
+     "kilde": "tertial-2023-t2",
+     "side": 6,
+     "raa": "4 717"
+    },
+    {
+     "periode": "2024-T1",
+     "type": "prognose",
+     "verdi": 0.973,
+     "kilde": "tertial-2024-t1",
+     "side": 7,
+     "raa": "973"
+    },
+    {
+     "periode": "2024-T2",
+     "type": "prognose",
+     "verdi": 0.973,
+     "kilde": "tertial-2024-t2",
+     "side": 4,
+     "raa": "973"
+    },
+    {
+     "periode": "2025-T1",
+     "type": "prognose",
+     "verdi": 0.527,
+     "kilde": "tertial-2025-t1",
+     "side": 5,
+     "raa": "527"
+    },
+    {
+     "periode": "2025-T2",
+     "type": "prognose",
+     "verdi": 0.351,
+     "kilde": "tertial-2025-t2",
+     "side": 5,
+     "raa": "351"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "prognose",
+     "verdi": 7.851,
+     "kilde": "tertial-2026-t1",
+     "side": 5,
+     "bilde": true
+    },
+    {
+     "periode": "2026-T2",
+     "type": "prognose",
+     "verdi": 11.027,
+     "kilde": "hh-tertial-2026-t2",
+     "side": 1,
+     "raa": "11 027"
+    }
+   ]
+  },
+  {
+   "id": "fakultetene-resultat",
+   "navn": "Årsresultat for tildelte midler (internregnskapet) – fakultetene samlet",
+   "enhet": "mill. kr",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2022",
+     "type": "år",
+     "verdi": -60.597,
+     "kilde": "tertial-2022-t3",
+     "side": 7,
+     "raa": "-60 597"
+    },
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": -53.336,
+     "kilde": "tertial-2023-t3",
+     "side": 2,
+     "raa": "-53 336"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": -48.524,
+     "kilde": "tertial-2024-t3",
+     "side": 2,
+     "raa": "-48 524"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 21.967,
+     "kilde": "tertial-2025-t3",
+     "side": 7,
+     "raa": "21 967"
+    },
+    {
+     "periode": "2023-T1",
+     "type": "prognose",
+     "verdi": -61.506,
+     "kilde": "tertial-2023-t1",
+     "side": 6,
+     "raa": "-61 506"
+    },
+    {
+     "periode": "2023-T2",
+     "type": "prognose",
+     "verdi": -55.057,
+     "kilde": "tertial-2023-t2",
+     "side": 6,
+     "raa": "-55 057"
+    },
+    {
+     "periode": "2024-T1",
+     "type": "prognose",
+     "verdi": -64.638,
+     "kilde": "tertial-2024-t1",
+     "side": 7,
+     "raa": "-64 638"
+    },
+    {
+     "periode": "2024-T2",
+     "type": "prognose",
+     "verdi": -45.197,
+     "kilde": "tertial-2024-t2",
+     "side": 4,
+     "raa": "-45 197"
+    },
+    {
+     "periode": "2025-T1",
+     "type": "prognose",
+     "verdi": -11.606,
+     "kilde": "tertial-2025-t1",
+     "side": 5,
+     "raa": "-11 606"
+    },
+    {
+     "periode": "2025-T2",
+     "type": "prognose",
+     "verdi": 1.825,
+     "kilde": "tertial-2025-t2",
+     "side": 5,
+     "raa": "1 825"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "prognose",
+     "verdi": 7.799,
+     "kilde": "tertial-2026-t1",
+     "side": 5,
+     "bilde": true
+    }
+   ]
+  },
+  {
+   "id": "fakultetene-balanse",
+   "navn": "Akkumulert balanse ved årsslutt: overførte midler (+) eller merforbruk (−) – fakultetene samlet",
+   "enhet": "mill. kr",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2022",
+     "type": "år",
+     "verdi": 20.634,
+     "kilde": "tertial-2022-t3",
+     "side": 7,
+     "raa": "20 634"
+    },
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": -40.94,
+     "kilde": "tertial-2023-t3",
+     "side": 2,
+     "raa": "-40 940"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": -50.265,
+     "kilde": "tertial-2024-t3",
+     "side": 2,
+     "raa": "-50 265"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": -8.498,
+     "kilde": "tertial-2025-t3",
+     "side": 7,
+     "raa": "-8 498"
+    },
+    {
+     "periode": "2023-T1",
+     "type": "prognose",
+     "verdi": -49.11,
+     "kilde": "tertial-2023-t1",
+     "side": 6,
+     "raa": "-49 110"
+    },
+    {
+     "periode": "2023-T2",
+     "type": "prognose",
+     "verdi": -42.661,
+     "kilde": "tertial-2023-t2",
+     "side": 6,
+     "raa": "-42 661"
+    },
+    {
+     "periode": "2024-T1",
+     "type": "prognose",
+     "verdi": -66.378,
+     "kilde": "tertial-2024-t1",
+     "side": 7,
+     "raa": "-66 378"
+    },
+    {
+     "periode": "2024-T2",
+     "type": "prognose",
+     "verdi": -46.937,
+     "kilde": "tertial-2024-t2",
+     "side": 4,
+     "raa": "-46 937"
+    },
+    {
+     "periode": "2025-T1",
+     "type": "prognose",
+     "verdi": -42.071,
+     "kilde": "tertial-2025-t1",
+     "side": 5,
+     "raa": "-42 071"
+    },
+    {
+     "periode": "2025-T2",
+     "type": "prognose",
+     "verdi": -28.64,
+     "kilde": "tertial-2025-t2",
+     "side": 5,
+     "raa": "-28 640"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "prognose",
+     "verdi": 12.345,
+     "kilde": "tertial-2026-t1",
+     "side": 5,
+     "bilde": true
+    }
+   ]
+  },
+  {
+   "id": "fak-resultat-hittil",
+   "navn": "Resultat hittil i året ved tertialet (internregnskapet)",
+   "enhet": "mill. kr",
+   "nivaa": "vet",
+   "punkter": [
+    {
+     "periode": "2023-T1",
+     "type": "tertial",
+     "verdi": -22.359,
+     "kilde": "tertial-2023-t1",
+     "side": 6,
+     "raa": "-22 359"
+    },
+    {
+     "periode": "2023-T2",
+     "type": "tertial",
+     "verdi": -12.851,
+     "kilde": "tertial-2023-t2",
+     "side": 6,
+     "raa": "-12 851"
+    },
+    {
+     "periode": "2024-T1",
+     "type": "tertial",
+     "verdi": -13.403,
+     "kilde": "tertial-2024-t1",
+     "side": 7,
+     "raa": "-13 403"
+    },
+    {
+     "periode": "2024-T2",
+     "type": "tertial",
+     "verdi": 2.806,
+     "kilde": "tertial-2024-t2",
+     "side": 4,
+     "raa": "2 806"
+    },
+    {
+     "periode": "2025-T1",
+     "type": "tertial",
+     "verdi": -7.963,
+     "kilde": "tertial-2025-t1",
+     "side": 5,
+     "raa": "-7 963"
+    },
+    {
+     "periode": "2025-T2",
+     "type": "tertial",
+     "verdi": 15.977,
+     "kilde": "tertial-2025-t2",
+     "side": 5,
+     "raa": "15 977"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "tertial",
+     "verdi": -22.122,
+     "kilde": "tertial-2026-t1",
+     "side": 5,
+     "bilde": true
+    }
+   ]
+  },
+  {
+   "id": "fak-balanse-andel",
+   "navn": "Prognostisert balanse ved årsslutt i prosent av årets tildeling",
+   "enhet": "%",
+   "nivaa": "vet",
+   "punkter": [
+    {
+     "periode": "2023-T1",
+     "type": "prognose",
+     "verdi": -38,
+     "kilde": "tertial-2023-t1",
+     "side": 6,
+     "raa": "-38 %"
+    },
+    {
+     "periode": "2023-T2",
+     "type": "prognose",
+     "verdi": -37,
+     "kilde": "tertial-2023-t2",
+     "side": 6,
+     "raa": "-37 %"
+    },
+    {
+     "periode": "2024-T1",
+     "type": "prognose",
+     "verdi": -32,
+     "kilde": "tertial-2024-t1",
+     "side": 7,
+     "raa": "-32 %"
+    },
+    {
+     "periode": "2024-T2",
+     "type": "prognose",
+     "verdi": -29,
+     "kilde": "tertial-2024-t2",
+     "side": 4,
+     "raa": "-29 %"
+    },
+    {
+     "periode": "2025-T1",
+     "type": "prognose",
+     "verdi": -27,
+     "kilde": "tertial-2025-t1",
+     "side": 5,
+     "raa": "-27 %"
+    },
+    {
+     "periode": "2025-T2",
+     "type": "prognose",
+     "verdi": -26,
+     "kilde": "tertial-2025-t2",
+     "side": 5,
+     "raa": "-26 %"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "prognose",
+     "verdi": -25,
+     "kilde": "tertial-2026-t1",
+     "side": 5,
+     "bilde": true
+    }
+   ]
+  },
+  {
+   "id": "fak-resultat-hittil",
+   "navn": "Resultat hittil i året ved tertialet (internregnskapet)",
+   "enhet": "mill. kr",
+   "nivaa": "kbm",
+   "punkter": [
+    {
+     "periode": "2023-T1",
+     "type": "tertial",
+     "verdi": -4.856,
+     "kilde": "tertial-2023-t1",
+     "side": 6,
+     "raa": "-4 856"
+    },
+    {
+     "periode": "2023-T2",
+     "type": "tertial",
+     "verdi": -3.653,
+     "kilde": "tertial-2023-t2",
+     "side": 6,
+     "raa": "-3 653"
+    },
+    {
+     "periode": "2024-T1",
+     "type": "tertial",
+     "verdi": -7.054,
+     "kilde": "tertial-2024-t1",
+     "side": 7,
+     "raa": "-7 054"
+    },
+    {
+     "periode": "2024-T2",
+     "type": "tertial",
+     "verdi": -6.529,
+     "kilde": "tertial-2024-t2",
+     "side": 4,
+     "raa": "-6 529"
+    },
+    {
+     "periode": "2025-T1",
+     "type": "tertial",
+     "verdi": -6.113,
+     "kilde": "tertial-2025-t1",
+     "side": 5,
+     "raa": "-6 113"
+    },
+    {
+     "periode": "2025-T2",
+     "type": "tertial",
+     "verdi": 0.901,
+     "kilde": "tertial-2025-t2",
+     "side": 5,
+     "raa": "901"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "tertial",
+     "verdi": -2.942,
+     "kilde": "tertial-2026-t1",
+     "side": 5,
+     "bilde": true
+    }
+   ]
+  },
+  {
+   "id": "fak-balanse-andel",
+   "navn": "Prognostisert balanse ved årsslutt i prosent av årets tildeling",
+   "enhet": "%",
+   "nivaa": "kbm",
+   "punkter": [
+    {
+     "periode": "2023-T1",
+     "type": "prognose",
+     "verdi": 5,
+     "kilde": "tertial-2023-t1",
+     "side": 6,
+     "raa": "5 %"
+    },
+    {
+     "periode": "2023-T2",
+     "type": "prognose",
+     "verdi": 5,
+     "kilde": "tertial-2023-t2",
+     "side": 6,
+     "raa": "5 %"
+    },
+    {
+     "periode": "2024-T1",
+     "type": "prognose",
+     "verdi": -6,
+     "kilde": "tertial-2024-t1",
+     "side": 7,
+     "raa": "-6 %"
+    },
+    {
+     "periode": "2024-T2",
+     "type": "prognose",
+     "verdi": -6,
+     "kilde": "tertial-2024-t2",
+     "side": 4,
+     "raa": "-6 %"
+    },
+    {
+     "periode": "2025-T1",
+     "type": "prognose",
+     "verdi": -8,
+     "kilde": "tertial-2025-t1",
+     "side": 5,
+     "raa": "-8 %"
+    },
+    {
+     "periode": "2025-T2",
+     "type": "prognose",
+     "verdi": -7,
+     "kilde": "tertial-2025-t2",
+     "side": 5,
+     "raa": "-7 %"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "prognose",
+     "verdi": 2,
+     "kilde": "tertial-2026-t1",
+     "side": 5,
+     "bilde": true
+    }
+   ]
+  },
+  {
+   "id": "fak-resultat-hittil",
+   "navn": "Resultat hittil i året ved tertialet (internregnskapet)",
+   "enhet": "mill. kr",
+   "nivaa": "biovit",
+   "punkter": [
+    {
+     "periode": "2023-T1",
+     "type": "tertial",
+     "verdi": -11.357,
+     "kilde": "tertial-2023-t1",
+     "side": 6,
+     "raa": "-11 357"
+    },
+    {
+     "periode": "2023-T2",
+     "type": "tertial",
+     "verdi": -8.005,
+     "kilde": "tertial-2023-t2",
+     "side": 6,
+     "raa": "-8 005"
+    },
+    {
+     "periode": "2024-T1",
+     "type": "tertial",
+     "verdi": -12.161,
+     "kilde": "tertial-2024-t1",
+     "side": 7,
+     "raa": "-12 161"
+    },
+    {
+     "periode": "2024-T2",
+     "type": "tertial",
+     "verdi": -1.434,
+     "kilde": "tertial-2024-t2",
+     "side": 4,
+     "raa": "-1 434"
+    },
+    {
+     "periode": "2025-T1",
+     "type": "tertial",
+     "verdi": -4.373,
+     "kilde": "tertial-2025-t1",
+     "side": 5,
+     "raa": "-4 373"
+    },
+    {
+     "periode": "2025-T2",
+     "type": "tertial",
+     "verdi": 7.362,
+     "kilde": "tertial-2025-t2",
+     "side": 5,
+     "raa": "7 362"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "tertial",
+     "verdi": -6.975,
+     "kilde": "tertial-2026-t1",
+     "side": 5,
+     "bilde": true
+    }
+   ]
+  },
+  {
+   "id": "fak-balanse-andel",
+   "navn": "Prognostisert balanse ved årsslutt i prosent av årets tildeling",
+   "enhet": "%",
+   "nivaa": "biovit",
+   "punkter": [
+    {
+     "periode": "2023-T1",
+     "type": "prognose",
+     "verdi": 8,
+     "kilde": "tertial-2023-t1",
+     "side": 6,
+     "raa": "8 %"
+    },
+    {
+     "periode": "2023-T2",
+     "type": "prognose",
+     "verdi": 4,
+     "kilde": "tertial-2023-t2",
+     "side": 6,
+     "raa": "4 %"
+    },
+    {
+     "periode": "2024-T1",
+     "type": "prognose",
+     "verdi": -2,
+     "kilde": "tertial-2024-t1",
+     "side": 7,
+     "raa": "-2 %"
+    },
+    {
+     "periode": "2024-T2",
+     "type": "prognose",
+     "verdi": -3,
+     "kilde": "tertial-2024-t2",
+     "side": 4,
+     "raa": "-3 %"
+    },
+    {
+     "periode": "2025-T1",
+     "type": "prognose",
+     "verdi": 2,
+     "kilde": "tertial-2025-t1",
+     "side": 5,
+     "raa": "2 %"
+    },
+    {
+     "periode": "2025-T2",
+     "type": "prognose",
+     "verdi": 2,
+     "kilde": "tertial-2025-t2",
+     "side": 5,
+     "raa": "2 %"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "prognose",
+     "verdi": 12,
+     "kilde": "tertial-2026-t1",
+     "side": 5,
+     "bilde": true
+    }
+   ]
+  },
+  {
+   "id": "fak-resultat-hittil",
+   "navn": "Resultat hittil i året ved tertialet (internregnskapet)",
+   "enhet": "mill. kr",
+   "nivaa": "realtek",
+   "punkter": [
+    {
+     "periode": "2023-T1",
+     "type": "tertial",
+     "verdi": -11.182,
+     "kilde": "tertial-2023-t1",
+     "side": 6,
+     "raa": "-11 182"
+    },
+    {
+     "periode": "2023-T2",
+     "type": "tertial",
+     "verdi": 3.14,
+     "kilde": "tertial-2023-t2",
+     "side": 6,
+     "raa": "3 140"
+    },
+    {
+     "periode": "2024-T1",
+     "type": "tertial",
+     "verdi": -3.887,
+     "kilde": "tertial-2024-t1",
+     "side": 7,
+     "raa": "-3 887"
+    },
+    {
+     "periode": "2024-T2",
+     "type": "tertial",
+     "verdi": 4.304,
+     "kilde": "tertial-2024-t2",
+     "side": 4,
+     "raa": "4 304"
+    },
+    {
+     "periode": "2025-T1",
+     "type": "tertial",
+     "verdi": -5.027,
+     "kilde": "tertial-2025-t1",
+     "side": 5,
+     "raa": "-5 027"
+    },
+    {
+     "periode": "2025-T2",
+     "type": "tertial",
+     "verdi": 8.038,
+     "kilde": "tertial-2025-t2",
+     "side": 5,
+     "raa": "8 038"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "tertial",
+     "verdi": -0.285,
+     "kilde": "tertial-2026-t1",
+     "side": 5,
+     "bilde": true
+    }
+   ]
+  },
+  {
+   "id": "fak-balanse-andel",
+   "navn": "Prognostisert balanse ved årsslutt i prosent av årets tildeling",
+   "enhet": "%",
+   "nivaa": "realtek",
+   "punkter": [
+    {
+     "periode": "2023-T1",
+     "type": "prognose",
+     "verdi": 8,
+     "kilde": "tertial-2023-t1",
+     "side": 6,
+     "raa": "8 %"
+    },
+    {
+     "periode": "2023-T2",
+     "type": "prognose",
+     "verdi": 12,
+     "kilde": "tertial-2023-t2",
+     "side": 6,
+     "raa": "12 %"
+    },
+    {
+     "periode": "2024-T1",
+     "type": "prognose",
+     "verdi": 9,
+     "kilde": "tertial-2024-t1",
+     "side": 7,
+     "raa": "9 %"
+    },
+    {
+     "periode": "2024-T2",
+     "type": "prognose",
+     "verdi": 9,
+     "kilde": "tertial-2024-t2",
+     "side": 4,
+     "raa": "9 %"
+    },
+    {
+     "periode": "2025-T1",
+     "type": "prognose",
+     "verdi": 12,
+     "kilde": "tertial-2025-t1",
+     "side": 5,
+     "raa": "12 %"
+    },
+    {
+     "periode": "2025-T2",
+     "type": "prognose",
+     "verdi": 14,
+     "kilde": "tertial-2025-t2",
+     "side": 5,
+     "raa": "14 %"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "prognose",
+     "verdi": 20,
+     "kilde": "tertial-2026-t1",
+     "side": 5,
+     "bilde": true
+    }
+   ]
+  },
+  {
+   "id": "fak-resultat-hittil",
+   "navn": "Resultat hittil i året ved tertialet (internregnskapet)",
+   "enhet": "mill. kr",
+   "nivaa": "mina",
+   "punkter": [
+    {
+     "periode": "2023-T1",
+     "type": "tertial",
+     "verdi": -1.952,
+     "kilde": "tertial-2023-t1",
+     "side": 6,
+     "raa": "-1 952"
+    },
+    {
+     "periode": "2023-T2",
+     "type": "tertial",
+     "verdi": 6.764,
+     "kilde": "tertial-2023-t2",
+     "side": 6,
+     "raa": "6 764"
+    },
+    {
+     "periode": "2024-T1",
+     "type": "tertial",
+     "verdi": -2.413,
+     "kilde": "tertial-2024-t1",
+     "side": 7,
+     "raa": "-2 413"
+    },
+    {
+     "periode": "2024-T2",
+     "type": "tertial",
+     "verdi": 4.337,
+     "kilde": "tertial-2024-t2",
+     "side": 4,
+     "raa": "4 337"
+    },
+    {
+     "periode": "2025-T1",
+     "type": "tertial",
+     "verdi": -1.575,
+     "kilde": "tertial-2025-t1",
+     "side": 5,
+     "raa": "-1 575"
+    },
+    {
+     "periode": "2025-T2",
+     "type": "tertial",
+     "verdi": 6.356,
+     "kilde": "tertial-2025-t2",
+     "side": 5,
+     "raa": "6 356"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "tertial",
+     "verdi": 0.82,
+     "kilde": "tertial-2026-t1",
+     "side": 5,
+     "bilde": true
+    }
+   ]
+  },
+  {
+   "id": "fak-balanse-andel",
+   "navn": "Prognostisert balanse ved årsslutt i prosent av årets tildeling",
+   "enhet": "%",
+   "nivaa": "mina",
+   "punkter": [
+    {
+     "periode": "2023-T1",
+     "type": "prognose",
+     "verdi": 13,
+     "kilde": "tertial-2023-t1",
+     "side": 6,
+     "raa": "13 %"
+    },
+    {
+     "periode": "2023-T2",
+     "type": "prognose",
+     "verdi": 17,
+     "kilde": "tertial-2023-t2",
+     "side": 6,
+     "raa": "17 %"
+    },
+    {
+     "periode": "2024-T1",
+     "type": "prognose",
+     "verdi": 14,
+     "kilde": "tertial-2024-t1",
+     "side": 7,
+     "raa": "14 %"
+    },
+    {
+     "periode": "2024-T2",
+     "type": "prognose",
+     "verdi": 21,
+     "kilde": "tertial-2024-t2",
+     "side": 4,
+     "raa": "21 %"
+    },
+    {
+     "periode": "2025-T1",
+     "type": "prognose",
+     "verdi": 22,
+     "kilde": "tertial-2025-t1",
+     "side": 5,
+     "raa": "22 %"
+    },
+    {
+     "periode": "2025-T2",
+     "type": "prognose",
+     "verdi": 23,
+     "kilde": "tertial-2025-t2",
+     "side": 5,
+     "raa": "23 %"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "prognose",
+     "verdi": 27,
+     "kilde": "tertial-2026-t1",
+     "side": 5,
+     "bilde": true
+    }
+   ]
+  },
+  {
+   "id": "fak-resultat-hittil",
+   "navn": "Resultat hittil i året ved tertialet (internregnskapet)",
+   "enhet": "mill. kr",
+   "nivaa": "landsam",
+   "punkter": [
+    {
+     "periode": "2023-T1",
+     "type": "tertial",
+     "verdi": -4.661,
+     "kilde": "tertial-2023-t1",
+     "side": 6,
+     "raa": "-4 661"
+    },
+    {
+     "periode": "2023-T2",
+     "type": "tertial",
+     "verdi": -0.542,
+     "kilde": "tertial-2023-t2",
+     "side": 6,
+     "raa": "-542"
+    },
+    {
+     "periode": "2024-T1",
+     "type": "tertial",
+     "verdi": -7.087,
+     "kilde": "tertial-2024-t1",
+     "side": 7,
+     "raa": "-7 087"
+    },
+    {
+     "periode": "2024-T2",
+     "type": "tertial",
+     "verdi": 2.027,
+     "kilde": "tertial-2024-t2",
+     "side": 4,
+     "raa": "2 027"
+    },
+    {
+     "periode": "2025-T1",
+     "type": "tertial",
+     "verdi": -4.811,
+     "kilde": "tertial-2025-t1",
+     "side": 5,
+     "raa": "-4 811"
+    },
+    {
+     "periode": "2025-T2",
+     "type": "tertial",
+     "verdi": 5.761,
+     "kilde": "tertial-2025-t2",
+     "side": 5,
+     "raa": "5 761"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "tertial",
+     "verdi": -5.341,
+     "kilde": "tertial-2026-t1",
+     "side": 5,
+     "bilde": true
+    }
+   ]
+  },
+  {
+   "id": "fak-balanse-andel",
+   "navn": "Prognostisert balanse ved årsslutt i prosent av årets tildeling",
+   "enhet": "%",
+   "nivaa": "landsam",
+   "punkter": [
+    {
+     "periode": "2023-T1",
+     "type": "prognose",
+     "verdi": -1,
+     "kilde": "tertial-2023-t1",
+     "side": 6,
+     "raa": "-1 %"
+    },
+    {
+     "periode": "2023-T2",
+     "type": "prognose",
+     "verdi": 1,
+     "kilde": "tertial-2023-t2",
+     "side": 6,
+     "raa": "1 %"
+    },
+    {
+     "periode": "2024-T1",
+     "type": "prognose",
+     "verdi": -2,
+     "kilde": "tertial-2024-t1",
+     "side": 7,
+     "raa": "-2 %"
+    },
+    {
+     "periode": "2024-T2",
+     "type": "prognose",
+     "verdi": 1,
+     "kilde": "tertial-2024-t2",
+     "side": 4,
+     "raa": "1 %"
+    },
+    {
+     "periode": "2025-T1",
+     "type": "prognose",
+     "verdi": -2,
+     "kilde": "tertial-2025-t1",
+     "side": 5,
+     "raa": "-2 %"
+    },
+    {
+     "periode": "2025-T2",
+     "type": "prognose",
+     "verdi": 2,
+     "kilde": "tertial-2025-t2",
+     "side": 5,
+     "raa": "2 %"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "prognose",
+     "verdi": 4,
+     "kilde": "tertial-2026-t1",
+     "side": 5,
+     "bilde": true
+    }
+   ]
+  },
+  {
+   "id": "fak-resultat-hittil",
+   "navn": "Resultat hittil i året ved tertialet (internregnskapet)",
+   "enhet": "mill. kr",
+   "nivaa": "hh",
+   "punkter": [
+    {
+     "periode": "2023-T1",
+     "type": "tertial",
+     "verdi": 0.453,
+     "kilde": "tertial-2023-t1",
+     "side": 6,
+     "raa": "453"
+    },
+    {
+     "periode": "2023-T2",
+     "type": "tertial",
+     "verdi": 2.958,
+     "kilde": "tertial-2023-t2",
+     "side": 6,
+     "raa": "2 958"
+    },
+    {
+     "periode": "2024-T1",
+     "type": "tertial",
+     "verdi": -3.362,
+     "kilde": "tertial-2024-t1",
+     "side": 7,
+     "raa": "-3 362"
+    },
+    {
+     "periode": "2024-T2",
+     "type": "tertial",
+     "verdi": 0.165,
+     "kilde": "tertial-2024-t2",
+     "side": 4,
+     "raa": "165"
+    },
+    {
+     "periode": "2025-T1",
+     "type": "tertial",
+     "verdi": -4.427,
+     "kilde": "tertial-2025-t1",
+     "side": 5,
+     "raa": "-4 427"
+    },
+    {
+     "periode": "2025-T2",
+     "type": "tertial",
+     "verdi": 1.253,
+     "kilde": "tertial-2025-t2",
+     "side": 5,
+     "raa": "1 253"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "tertial",
+     "verdi": 0.55,
+     "kilde": "tertial-2026-t1",
+     "side": 5,
+     "bilde": true
+    },
+    {
+     "periode": "2026-T2",
+     "type": "tertial",
+     "verdi": 12.202,
+     "kilde": "hh-tertial-2026-t2",
+     "side": 1,
+     "raa": "Driftsresultat 12 202"
+    }
+   ]
+  },
+  {
+   "id": "fak-balanse-andel",
+   "navn": "Prognostisert balanse ved årsslutt i prosent av årets tildeling",
+   "enhet": "%",
+   "nivaa": "hh",
+   "punkter": [
+    {
+     "periode": "2023-T1",
+     "type": "prognose",
+     "verdi": 10,
+     "kilde": "tertial-2023-t1",
+     "side": 6,
+     "raa": "10 %"
+    },
+    {
+     "periode": "2023-T2",
+     "type": "prognose",
+     "verdi": 7,
+     "kilde": "tertial-2023-t2",
+     "side": 6,
+     "raa": "7 %"
+    },
+    {
+     "periode": "2024-T1",
+     "type": "prognose",
+     "verdi": 1,
+     "kilde": "tertial-2024-t1",
+     "side": 7,
+     "raa": "1 %"
+    },
+    {
+     "periode": "2024-T2",
+     "type": "prognose",
+     "verdi": 1,
+     "kilde": "tertial-2024-t2",
+     "side": 4,
+     "raa": "1 %"
+    },
+    {
+     "periode": "2025-T1",
+     "type": "prognose",
+     "verdi": 1,
+     "kilde": "tertial-2025-t1",
+     "side": 5,
+     "raa": "1 %"
+    },
+    {
+     "periode": "2025-T2",
+     "type": "prognose",
+     "verdi": 0,
+     "kilde": "tertial-2025-t2",
+     "side": 5,
+     "raa": "0 %"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "prognose",
+     "verdi": 8,
+     "kilde": "tertial-2026-t1",
+     "side": 5,
+     "bilde": true
+    }
+   ]
+  },
+  {
+   "id": "fakultetene-resultat-hittil",
+   "navn": "Resultat hittil i året ved tertialet (internregnskapet) – fakultetene samlet",
+   "enhet": "mill. kr",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2023-T1",
+     "type": "tertial",
+     "verdi": -55.914,
+     "kilde": "tertial-2023-t1",
+     "side": 6,
+     "raa": "-55 914"
+    },
+    {
+     "periode": "2023-T2",
+     "type": "tertial",
+     "verdi": -12.187,
+     "kilde": "tertial-2023-t2",
+     "side": 6,
+     "raa": "-12 187"
+    },
+    {
+     "periode": "2024-T1",
+     "type": "tertial",
+     "verdi": -49.367,
+     "kilde": "tertial-2024-t1",
+     "side": 7,
+     "raa": "-49 367"
+    },
+    {
+     "periode": "2024-T2",
+     "type": "tertial",
+     "verdi": 5.676,
+     "kilde": "tertial-2024-t2",
+     "side": 4,
+     "raa": "5 676"
+    },
+    {
+     "periode": "2025-T1",
+     "type": "tertial",
+     "verdi": -34.288,
+     "kilde": "tertial-2025-t1",
+     "side": 5,
+     "raa": "-34 288"
+    },
+    {
+     "periode": "2025-T2",
+     "type": "tertial",
+     "verdi": 45.648,
+     "kilde": "tertial-2025-t2",
+     "side": 5,
+     "raa": "45 648"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "tertial",
+     "verdi": -36.293,
+     "kilde": "tertial-2026-t1",
+     "side": 5,
+     "bilde": true
+    }
+   ]
+  },
+  {
+   "id": "fak-ramme",
+   "navn": "Nettoramme fra universitetsstyret (budsjettfordeling)",
+   "enhet": "mill. kr",
+   "nivaa": "mina",
+   "punkter": [
+    {
+     "periode": "2025",
+     "type": "budsjett",
+     "verdi": 110.7,
+     "kilde": "arsplan-2026",
+     "side": 13,
+     "raa": "110,7"
+    },
+    {
+     "periode": "2026",
+     "type": "budsjett",
+     "verdi": 115.2,
+     "kilde": "arsplan-2026",
+     "side": 13,
+     "raa": "115,2"
+    },
+    {
+     "periode": "2027",
+     "type": "prognose",
+     "verdi": 117.7,
+     "kilde": "arsplan-2027",
+     "side": 10,
+     "raa": "117,7"
+    }
+   ]
+  },
+  {
+   "id": "fak-ramme",
+   "navn": "Nettoramme fra universitetsstyret (budsjettfordeling)",
+   "enhet": "mill. kr",
+   "nivaa": "biovit",
+   "punkter": [
+    {
+     "periode": "2025",
+     "type": "budsjett",
+     "verdi": 99.2,
+     "kilde": "arsplan-2026",
+     "side": 13,
+     "raa": "99,2"
+    },
+    {
+     "periode": "2026",
+     "type": "budsjett",
+     "verdi": 99.5,
+     "kilde": "arsplan-2026",
+     "side": 13,
+     "raa": "99,5"
+    },
+    {
+     "periode": "2027",
+     "type": "prognose",
+     "verdi": 102.3,
+     "kilde": "arsplan-2027",
+     "side": 10,
+     "raa": "102,3"
+    }
+   ]
+  },
+  {
+   "id": "fak-ramme",
+   "navn": "Nettoramme fra universitetsstyret (budsjettfordeling)",
+   "enhet": "mill. kr",
+   "nivaa": "landsam",
+   "punkter": [
+    {
+     "periode": "2025",
+     "type": "budsjett",
+     "verdi": 117.3,
+     "kilde": "arsplan-2026",
+     "side": 13,
+     "raa": "117,3"
+    },
+    {
+     "periode": "2026",
+     "type": "budsjett",
+     "verdi": 125.2,
+     "kilde": "arsplan-2026",
+     "side": 13,
+     "raa": "125,2"
+    },
+    {
+     "periode": "2027",
+     "type": "prognose",
+     "verdi": 126.0,
+     "kilde": "arsplan-2027",
+     "side": 10,
+     "raa": "126,0"
+    }
+   ]
+  },
+  {
+   "id": "fak-ramme",
+   "navn": "Nettoramme fra universitetsstyret (budsjettfordeling)",
+   "enhet": "mill. kr",
+   "nivaa": "vet",
+   "punkter": [
+    {
+     "periode": "2025",
+     "type": "budsjett",
+     "verdi": 284.6,
+     "kilde": "arsplan-2026",
+     "side": 13,
+     "raa": "284,6"
+    },
+    {
+     "periode": "2026",
+     "type": "budsjett",
+     "verdi": 350.5,
+     "kilde": "arsplan-2026",
+     "side": 13,
+     "raa": "350,5"
+    },
+    {
+     "periode": "2027",
+     "type": "prognose",
+     "verdi": 346.9,
+     "kilde": "arsplan-2027",
+     "side": 10,
+     "raa": "346,9"
+    }
+   ]
+  },
+  {
+   "id": "fak-ramme",
+   "navn": "Nettoramme fra universitetsstyret (budsjettfordeling)",
+   "enhet": "mill. kr",
+   "nivaa": "kbm",
+   "punkter": [
+    {
+     "periode": "2025",
+     "type": "budsjett",
+     "verdi": 97.8,
+     "kilde": "arsplan-2026",
+     "side": 13,
+     "raa": "97,8"
+    },
+    {
+     "periode": "2026",
+     "type": "budsjett",
+     "verdi": 98.3,
+     "kilde": "arsplan-2026",
+     "side": 13,
+     "raa": "98,3"
+    },
+    {
+     "periode": "2027",
+     "type": "prognose",
+     "verdi": 97.8,
+     "kilde": "arsplan-2027",
+     "side": 10,
+     "raa": "97,8"
+    }
+   ]
+  },
+  {
+   "id": "fak-ramme",
+   "navn": "Nettoramme fra universitetsstyret (budsjettfordeling)",
+   "enhet": "mill. kr",
+   "nivaa": "hh",
+   "punkter": [
+    {
+     "periode": "2025",
+     "type": "budsjett",
+     "verdi": 70.7,
+     "kilde": "arsplan-2026",
+     "side": 13,
+     "raa": "70,7"
+    },
+    {
+     "periode": "2026",
+     "type": "budsjett",
+     "verdi": 85.9,
+     "kilde": "arsplan-2026",
+     "side": 13,
+     "raa": "85,9"
+    },
+    {
+     "periode": "2027",
+     "type": "prognose",
+     "verdi": 91.6,
+     "kilde": "arsplan-2027",
+     "side": 10,
+     "raa": "91,6"
+    }
+   ]
+  },
+  {
+   "id": "fak-ramme",
+   "navn": "Nettoramme fra universitetsstyret (budsjettfordeling)",
+   "enhet": "mill. kr",
+   "nivaa": "realtek",
+   "punkter": [
+    {
+     "periode": "2025",
+     "type": "budsjett",
+     "verdi": 160.2,
+     "kilde": "arsplan-2026",
+     "side": 13,
+     "raa": "160,2"
+    },
+    {
+     "periode": "2026",
+     "type": "budsjett",
+     "verdi": 162.1,
+     "kilde": "arsplan-2026",
+     "side": 13,
+     "raa": "162,1"
+    },
+    {
+     "periode": "2027",
+     "type": "prognose",
+     "verdi": 155.6,
+     "kilde": "arsplan-2027",
+     "side": 10,
+     "raa": "155,6"
+    }
+   ]
+  },
+  {
+   "id": "fakultetene-ramme",
+   "navn": "Nettoramme fra universitetsstyret (budsjettfordeling) – fakultetene samlet",
+   "enhet": "mill. kr",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2025",
+     "type": "budsjett",
+     "verdi": 940.5,
+     "kilde": "arsplan-2026",
+     "side": 13,
+     "raa": "940,5"
+    },
+    {
+     "periode": "2026",
+     "type": "budsjett",
+     "verdi": 1036.6,
+     "kilde": "arsplan-2026",
+     "side": 13,
+     "raa": "1 036,6"
+    },
+    {
+     "periode": "2027",
+     "type": "prognose",
+     "verdi": 1037.8,
+     "kilde": "arsplan-2027",
+     "side": 10,
+     "raa": "1 037,8"
+    }
+   ]
+  }
+ ]
+}

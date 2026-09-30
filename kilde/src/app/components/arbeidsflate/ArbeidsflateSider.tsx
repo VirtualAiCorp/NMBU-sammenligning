@@ -17,7 +17,7 @@ import { Matrise, lagRader } from '../Matrise';
 import {
   AfHeader, Badge, Detaljkort, FaseKort, IkonRutenett, KpiStripe, Listerad, Pille, Segment, Seksjon, Statuslinje, stig, type Kpi,
 } from './Byggeklosser';
-import { FAKULTETER, FAKULTET_IKON, MODULGRUPPER, MODUL_TEKST, NMBU_SIDER, OPPRINNELIG_HH, UTEN_HH, apneKiChat, modulerFor, type AfNav } from './navigasjon';
+import { FAKULTETER, FAKULTET_IKON, MODULGRUPPER, MODUL_TEKST, NMBU_SIDER, NMBU_STYRING, OPPRINNELIG_HH, UTEN_HH, apneKiChat, modulerFor, type AfNav } from './navigasjon';
 import { NIVAA, gjennomforing, institusjoner, konkurrentProgram, nf, nmbuProgram, poenggrense, serie, sisteAar, sumMedEndring } from './tall';
 
 const datoTekst = (iso: string | null | undefined) => {
@@ -106,6 +106,12 @@ export function AfForside({ onNavigate }: { onNavigate: AfNav }) {
 
       <div className="af-to-kolonner">
         <div className="af-hovedkolonne">
+          <Seksjon i={4} tittel="Styringsinformasjon">
+            <div className="af-liste">
+              {NMBU_STYRING.map((s) => <Listerad key={s.f} ikon={s.icon} tittel={s.label} meta={s.tekst} kategori="Hele NMBU" onClick={() => onNavigate(s.f)} />)}
+            </div>
+          </Seksjon>
+
           <Seksjon i={4} tittel={fane === 'fakulteter' ? 'Fakultetene' : 'Alle NMBU-program mot konkurrentene'}
             hoyre={<Segment etikett="Visning" verdi={fane} onChange={setFane} valg={[{ id: 'fakulteter', label: 'Fakulteter' }, { id: 'matrise', label: 'Programmatrise' }]} />}>
             {fane === 'fakulteter' ? (

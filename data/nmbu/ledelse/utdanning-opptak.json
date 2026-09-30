@@ -1,0 +1,1285 @@
+{
+ "_merknad": "Hentet ut 30.09.2026 fra universitetsstyrets orienteringer om opptak (møtt per 18. september, fra FS) og tabellen over opptaksrammer for 2026/27. Hvert år er tatt fra årets egen rapport; tidligere års tall i senere rapporter kan avvike litt. Toårige master: møtt omfatter både Norden/EU og internasjonalt opptak; erfaringsbaserte master med opptak via SEVU inngår i plassene, men ikke i møtt.",
+ "serier": [
+  {
+   "id": "mott-ba",
+   "navn": "Møtt til studiestart, treårige bachelorprogram",
+   "enhet": "antall",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 570,
+     "kilde": "opptak-2024",
+     "side": 2,
+     "raa": "570"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 631,
+     "kilde": "opptak-2024",
+     "side": 2,
+     "raa": "631"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 638,
+     "kilde": "opptak-2025",
+     "side": 1,
+     "raa": "638"
+    }
+   ]
+  },
+  {
+   "id": "mott-ba",
+   "navn": "Møtt til studiestart, treårige bachelorprogram",
+   "enhet": "antall",
+   "nivaa": "biovit",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 90,
+     "kilde": "opptak-2024",
+     "side": 1,
+     "raa": "90"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 112,
+     "kilde": "opptak-2024",
+     "side": 1,
+     "raa": "112"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 113,
+     "kilde": "opptak-2025",
+     "side": 1,
+     "raa": "113"
+    }
+   ]
+  },
+  {
+   "id": "mott-ba",
+   "navn": "Møtt til studiestart, treårige bachelorprogram",
+   "enhet": "antall",
+   "nivaa": "hh",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 165,
+     "kilde": "opptak-2024",
+     "side": 2,
+     "raa": "165"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 188,
+     "kilde": "opptak-2024",
+     "side": 2,
+     "raa": "188"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 179,
+     "kilde": "opptak-2025",
+     "side": 1,
+     "raa": "179"
+    }
+   ]
+  },
+  {
+   "id": "mott-ba",
+   "navn": "Møtt til studiestart, treårige bachelorprogram",
+   "enhet": "antall",
+   "nivaa": "kbm",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 64,
+     "kilde": "opptak-2024",
+     "side": 2,
+     "raa": "64"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 53,
+     "kilde": "opptak-2024",
+     "side": 2,
+     "raa": "53"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 81,
+     "kilde": "opptak-2025",
+     "side": 1,
+     "raa": "81"
+    }
+   ]
+  },
+  {
+   "id": "mott-ba",
+   "navn": "Møtt til studiestart, treårige bachelorprogram",
+   "enhet": "antall",
+   "nivaa": "landsam",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 84,
+     "kilde": "opptak-2024",
+     "side": 2,
+     "raa": "84"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 77,
+     "kilde": "opptak-2024",
+     "side": 2,
+     "raa": "77"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 63,
+     "kilde": "opptak-2025",
+     "side": 1,
+     "raa": "63"
+    }
+   ]
+  },
+  {
+   "id": "mott-ba",
+   "navn": "Møtt til studiestart, treårige bachelorprogram",
+   "enhet": "antall",
+   "nivaa": "mina",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 112,
+     "kilde": "opptak-2024",
+     "side": 2,
+     "raa": "112"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 126,
+     "kilde": "opptak-2024",
+     "side": 2,
+     "raa": "126"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 120,
+     "kilde": "opptak-2025",
+     "side": 1,
+     "raa": "120"
+    }
+   ]
+  },
+  {
+   "id": "mott-ba",
+   "navn": "Møtt til studiestart, treårige bachelorprogram",
+   "enhet": "antall",
+   "nivaa": "realtek",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 25,
+     "kilde": "opptak-2024",
+     "side": 2,
+     "raa": "25"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 42,
+     "kilde": "opptak-2024",
+     "side": 2,
+     "raa": "42"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 39,
+     "kilde": "opptak-2025",
+     "side": 1,
+     "raa": "39"
+    }
+   ]
+  },
+  {
+   "id": "mott-ba",
+   "navn": "Møtt til studiestart, treårige bachelorprogram",
+   "enhet": "antall",
+   "nivaa": "vet",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 30,
+     "kilde": "opptak-2024",
+     "side": 2,
+     "raa": "30"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 33,
+     "kilde": "opptak-2024",
+     "side": 2,
+     "raa": "33"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 43,
+     "kilde": "opptak-2025",
+     "side": 1,
+     "raa": "43"
+    }
+   ]
+  },
+  {
+   "id": "mott-ma2",
+   "navn": "Møtt til studiestart, toårige masterprogram",
+   "enhet": "antall",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 595,
+     "kilde": "opptak-2024",
+     "side": 6,
+     "raa": "595"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 610,
+     "kilde": "opptak-2024",
+     "side": 6,
+     "raa": "610"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 751,
+     "kilde": "opptak-2025",
+     "side": 3,
+     "raa": "751"
+    }
+   ]
+  },
+  {
+   "id": "mott-ma2",
+   "navn": "Møtt til studiestart, toårige masterprogram",
+   "enhet": "antall",
+   "nivaa": "biovit",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 111,
+     "kilde": "opptak-2024",
+     "side": 4,
+     "raa": "111"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 97,
+     "kilde": "opptak-2024",
+     "side": 4,
+     "raa": "97"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 132,
+     "kilde": "opptak-2025",
+     "side": 2,
+     "raa": "132"
+    }
+   ]
+  },
+  {
+   "id": "mott-ma2",
+   "navn": "Møtt til studiestart, toårige masterprogram",
+   "enhet": "antall",
+   "nivaa": "hh",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 120,
+     "kilde": "opptak-2024",
+     "side": 4,
+     "raa": "120"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 165,
+     "kilde": "opptak-2024",
+     "side": 4,
+     "raa": "165"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 192,
+     "kilde": "opptak-2025",
+     "side": 2,
+     "raa": "192"
+    }
+   ]
+  },
+  {
+   "id": "mott-ma2",
+   "navn": "Møtt til studiestart, toårige masterprogram",
+   "enhet": "antall",
+   "nivaa": "kbm",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 56,
+     "kilde": "opptak-2024",
+     "side": 5,
+     "raa": "56"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 40,
+     "kilde": "opptak-2024",
+     "side": 5,
+     "raa": "40"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 51,
+     "kilde": "opptak-2025",
+     "side": 3,
+     "raa": "51"
+    }
+   ]
+  },
+  {
+   "id": "mott-ma2",
+   "navn": "Møtt til studiestart, toårige masterprogram",
+   "enhet": "antall",
+   "nivaa": "landsam",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 182,
+     "kilde": "opptak-2024",
+     "side": 5,
+     "raa": "182"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 188,
+     "kilde": "opptak-2024",
+     "side": 5,
+     "raa": "188"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 217,
+     "kilde": "opptak-2025",
+     "side": 3,
+     "raa": "217"
+    }
+   ]
+  },
+  {
+   "id": "mott-ma2",
+   "navn": "Møtt til studiestart, toårige masterprogram",
+   "enhet": "antall",
+   "nivaa": "mina",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 111,
+     "kilde": "opptak-2024",
+     "side": 5,
+     "raa": "111"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 106,
+     "kilde": "opptak-2024",
+     "side": 5,
+     "raa": "106"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 114,
+     "kilde": "opptak-2025",
+     "side": 3,
+     "raa": "114"
+    }
+   ]
+  },
+  {
+   "id": "mott-ma2",
+   "navn": "Møtt til studiestart, toårige masterprogram",
+   "enhet": "antall",
+   "nivaa": "realtek",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 15,
+     "kilde": "opptak-2024",
+     "side": 6,
+     "raa": "15"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 14,
+     "kilde": "opptak-2024",
+     "side": 6,
+     "raa": "14"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 45,
+     "kilde": "opptak-2025",
+     "side": 3,
+     "raa": "45"
+    }
+   ]
+  },
+  {
+   "id": "mott-ma5",
+   "navn": "Møtt til studiestart, femårige master og veterinærutdanning",
+   "enhet": "antall",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 475,
+     "kilde": "opptak-2024",
+     "side": 3,
+     "raa": "475"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 491,
+     "kilde": "opptak-2024",
+     "side": 3,
+     "raa": "491"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 525,
+     "kilde": "opptak-2025",
+     "side": 2,
+     "raa": "525"
+    }
+   ]
+  },
+  {
+   "id": "mott-ma5",
+   "navn": "Møtt til studiestart, femårige master og veterinærutdanning",
+   "enhet": "antall",
+   "nivaa": "kbm",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 39,
+     "kilde": "opptak-2024",
+     "side": 3,
+     "raa": "39"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 41,
+     "kilde": "opptak-2024",
+     "side": 3,
+     "raa": "41"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 23,
+     "kilde": "opptak-2025",
+     "side": 2,
+     "raa": "23"
+    }
+   ]
+  },
+  {
+   "id": "mott-ma5",
+   "navn": "Møtt til studiestart, femårige master og veterinærutdanning",
+   "enhet": "antall",
+   "nivaa": "landsam",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 107,
+     "kilde": "opptak-2024",
+     "side": 3,
+     "raa": "107"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 148,
+     "kilde": "opptak-2024",
+     "side": 3,
+     "raa": "148"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 157,
+     "kilde": "opptak-2025",
+     "side": 2,
+     "raa": "157"
+    }
+   ]
+  },
+  {
+   "id": "mott-ma5",
+   "navn": "Møtt til studiestart, femårige master og veterinærutdanning",
+   "enhet": "antall",
+   "nivaa": "realtek",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 229,
+     "kilde": "opptak-2024",
+     "side": 3,
+     "raa": "229"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 217,
+     "kilde": "opptak-2024",
+     "side": 3,
+     "raa": "217"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 246,
+     "kilde": "opptak-2025",
+     "side": 2,
+     "raa": "246"
+    }
+   ]
+  },
+  {
+   "id": "mott-ma5",
+   "navn": "Møtt til studiestart, femårige master og veterinærutdanning",
+   "enhet": "antall",
+   "nivaa": "vet",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 100,
+     "kilde": "opptak-2024",
+     "side": 3,
+     "raa": "100"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 85,
+     "kilde": "opptak-2024",
+     "side": 3,
+     "raa": "85"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 99,
+     "kilde": "opptak-2025",
+     "side": 2,
+     "raa": "99"
+    }
+   ]
+  },
+  {
+   "id": "plasser-ba",
+   "navn": "Studieplasser (opptaksramme), treårige bachelorprogram",
+   "enhet": "antall",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 619,
+     "kilde": "opptak-2024",
+     "side": 2,
+     "raa": "619"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 678,
+     "kilde": "opptak-2025",
+     "side": 1,
+     "raa": "678"
+    },
+    {
+     "periode": "2026",
+     "type": "år",
+     "verdi": 664,
+     "kilde": "opptaksrammer-2026",
+     "side": 2,
+     "raa": "TOTALT alle bachelorgrader 678 664"
+    }
+   ]
+  },
+  {
+   "id": "plasser-ba",
+   "navn": "Studieplasser (opptaksramme), treårige bachelorprogram",
+   "enhet": "antall",
+   "nivaa": "biovit",
+   "punkter": [
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 140,
+     "kilde": "opptak-2024",
+     "side": 1,
+     "raa": "140"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 140,
+     "kilde": "opptak-2025",
+     "side": 1,
+     "raa": "140"
+    },
+    {
+     "periode": "2026",
+     "type": "år",
+     "verdi": 140,
+     "kilde": "opptaksrammer-2026",
+     "side": 1,
+     "raa": "Totalt 140 140"
+    }
+   ]
+  },
+  {
+   "id": "plasser-ba",
+   "navn": "Studieplasser (opptaksramme), treårige bachelorprogram",
+   "enhet": "antall",
+   "nivaa": "hh",
+   "punkter": [
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 165,
+     "kilde": "opptak-2024",
+     "side": 2,
+     "raa": "165"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 165,
+     "kilde": "opptak-2025",
+     "side": 1,
+     "raa": "165"
+    },
+    {
+     "periode": "2026",
+     "type": "år",
+     "verdi": 165,
+     "kilde": "opptaksrammer-2026",
+     "side": 1,
+     "raa": "Totalt 165 165"
+    }
+   ]
+  },
+  {
+   "id": "plasser-ba",
+   "navn": "Studieplasser (opptaksramme), treårige bachelorprogram",
+   "enhet": "antall",
+   "nivaa": "kbm",
+   "punkter": [
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 60,
+     "kilde": "opptak-2024",
+     "side": 2,
+     "raa": "60"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 80,
+     "kilde": "opptak-2025",
+     "side": 1,
+     "raa": "80"
+    },
+    {
+     "periode": "2026",
+     "type": "år",
+     "verdi": 80,
+     "kilde": "opptaksrammer-2026",
+     "side": 1,
+     "raa": "Totalt 80 80"
+    }
+   ]
+  },
+  {
+   "id": "plasser-ba",
+   "navn": "Studieplasser (opptaksramme), treårige bachelorprogram",
+   "enhet": "antall",
+   "nivaa": "landsam",
+   "punkter": [
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 69,
+     "kilde": "opptak-2024",
+     "side": 2,
+     "raa": "69"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 69,
+     "kilde": "opptak-2025",
+     "side": 1,
+     "raa": "69"
+    },
+    {
+     "periode": "2026",
+     "type": "år",
+     "verdi": 69,
+     "kilde": "opptaksrammer-2026",
+     "side": 1,
+     "raa": "Totalt 69 69"
+    }
+   ]
+  },
+  {
+   "id": "plasser-ba",
+   "navn": "Studieplasser (opptaksramme), treårige bachelorprogram",
+   "enhet": "antall",
+   "nivaa": "mina",
+   "punkter": [
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 140,
+     "kilde": "opptak-2024",
+     "side": 2,
+     "raa": "140"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 140,
+     "kilde": "opptak-2025",
+     "side": 1,
+     "raa": "140"
+    },
+    {
+     "periode": "2026",
+     "type": "år",
+     "verdi": 140,
+     "kilde": "opptaksrammer-2026",
+     "side": 1,
+     "raa": "Totalt 140 140"
+    }
+   ]
+  },
+  {
+   "id": "plasser-ba",
+   "navn": "Studieplasser (opptaksramme), treårige bachelorprogram",
+   "enhet": "antall",
+   "nivaa": "realtek",
+   "punkter": [
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 45,
+     "kilde": "opptak-2024",
+     "side": 2,
+     "raa": "45"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 50,
+     "kilde": "opptak-2025",
+     "side": 1,
+     "raa": "50"
+    },
+    {
+     "periode": "2026",
+     "type": "år",
+     "verdi": 40,
+     "kilde": "opptaksrammer-2026",
+     "side": 2,
+     "raa": "Totalt 50 40"
+    }
+   ]
+  },
+  {
+   "id": "plasser-ba",
+   "navn": "Studieplasser (opptaksramme), treårige bachelorprogram",
+   "enhet": "antall",
+   "nivaa": "vet",
+   "punkter": [
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 30,
+     "kilde": "opptak-2024",
+     "side": 2,
+     "raa": "30"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 34,
+     "kilde": "opptak-2025",
+     "side": 1,
+     "raa": "34"
+    },
+    {
+     "periode": "2026",
+     "type": "år",
+     "verdi": 30,
+     "kilde": "opptaksrammer-2026",
+     "side": 2,
+     "raa": "Totalt 34 30"
+    }
+   ]
+  },
+  {
+   "id": "plasser-ma2",
+   "navn": "Studieplasser (opptaksramme), toårige masterprogram",
+   "enhet": "antall",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 933,
+     "kilde": "opptak-2024",
+     "side": 6,
+     "raa": "933"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 973,
+     "kilde": "opptak-2025",
+     "side": 3,
+     "raa": "973"
+    },
+    {
+     "periode": "2026",
+     "type": "år",
+     "verdi": 995,
+     "kilde": "opptaksrammer-2026",
+     "side": 4,
+     "raa": "TOTALT 2-årig master 997 995"
+    }
+   ]
+  },
+  {
+   "id": "plasser-ma2",
+   "navn": "Studieplasser (opptaksramme), toårige masterprogram",
+   "enhet": "antall",
+   "nivaa": "biovit",
+   "punkter": [
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 180,
+     "kilde": "opptak-2024",
+     "side": 4,
+     "raa": "180"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 180,
+     "kilde": "opptak-2025",
+     "side": 2,
+     "raa": "180"
+    },
+    {
+     "periode": "2026",
+     "type": "år",
+     "verdi": 180,
+     "kilde": "opptaksrammer-2026",
+     "side": 3,
+     "raa": "Totalt 180 180"
+    }
+   ]
+  },
+  {
+   "id": "plasser-ma2",
+   "navn": "Studieplasser (opptaksramme), toårige masterprogram",
+   "enhet": "antall",
+   "nivaa": "hh",
+   "punkter": [
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 235,
+     "kilde": "opptak-2024",
+     "side": 4,
+     "raa": "235"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 270,
+     "kilde": "opptak-2025",
+     "side": 2,
+     "raa": "270"
+    },
+    {
+     "periode": "2026",
+     "type": "år",
+     "verdi": 285,
+     "kilde": "opptaksrammer-2026",
+     "side": 3,
+     "raa": "Totalt 265 285"
+    }
+   ]
+  },
+  {
+   "id": "plasser-ma2",
+   "navn": "Studieplasser (opptaksramme), toårige masterprogram",
+   "enhet": "antall",
+   "nivaa": "kbm",
+   "punkter": [
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 75,
+     "kilde": "opptak-2024",
+     "side": 5,
+     "raa": "75"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 75,
+     "kilde": "opptak-2025",
+     "side": 3,
+     "raa": "75"
+    },
+    {
+     "periode": "2026",
+     "type": "år",
+     "verdi": 95,
+     "kilde": "opptaksrammer-2026",
+     "side": 3,
+     "raa": "Totalt 95 95"
+    }
+   ]
+  },
+  {
+   "id": "plasser-ma2",
+   "navn": "Studieplasser (opptaksramme), toårige masterprogram",
+   "enhet": "antall",
+   "nivaa": "landsam",
+   "punkter": [
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 208,
+     "kilde": "opptak-2024",
+     "side": 5,
+     "raa": "208"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 208,
+     "kilde": "opptak-2025",
+     "side": 3,
+     "raa": "208"
+    },
+    {
+     "periode": "2026",
+     "type": "år",
+     "verdi": 220,
+     "kilde": "opptaksrammer-2026",
+     "side": 3,
+     "raa": "Totalt 215 220"
+    }
+   ]
+  },
+  {
+   "id": "plasser-ma2",
+   "navn": "Studieplasser (opptaksramme), toårige masterprogram",
+   "enhet": "antall",
+   "nivaa": "mina",
+   "punkter": [
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 155,
+     "kilde": "opptak-2024",
+     "side": 5,
+     "raa": "155"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 155,
+     "kilde": "opptak-2025",
+     "side": 3,
+     "raa": "155"
+    },
+    {
+     "periode": "2026",
+     "type": "år",
+     "verdi": 150,
+     "kilde": "opptaksrammer-2026",
+     "side": 4,
+     "raa": "Totalt 160 150"
+    }
+   ]
+  },
+  {
+   "id": "plasser-ma2",
+   "navn": "Studieplasser (opptaksramme), toårige masterprogram",
+   "enhet": "antall",
+   "nivaa": "realtek",
+   "punkter": [
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 80,
+     "kilde": "opptak-2024",
+     "side": 6,
+     "raa": "80"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 85,
+     "kilde": "opptak-2025",
+     "side": 3,
+     "raa": "85"
+    },
+    {
+     "periode": "2026",
+     "type": "år",
+     "verdi": 65,
+     "kilde": "opptaksrammer-2026",
+     "side": 4,
+     "raa": "Totalt 82 65"
+    }
+   ]
+  },
+  {
+   "id": "plasser-ma5",
+   "navn": "Studieplasser (opptaksramme), femårige master og veterinærutdanning",
+   "enhet": "antall",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 528,
+     "kilde": "opptak-2024",
+     "side": 3,
+     "raa": "528"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 518,
+     "kilde": "opptak-2025",
+     "side": 2,
+     "raa": "518"
+    },
+    {
+     "periode": "2026",
+     "type": "år",
+     "verdi": 465,
+     "kilde": "opptaksrammer-2026",
+     "side": 2,
+     "raa": "TOTALT 5-årig master og veterinærutdanning 527 465"
+    }
+   ]
+  },
+  {
+   "id": "plasser-ma5",
+   "navn": "Studieplasser (opptaksramme), femårige master og veterinærutdanning",
+   "enhet": "antall",
+   "nivaa": "kbm",
+   "punkter": [
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 45,
+     "kilde": "opptak-2024",
+     "side": 3,
+     "raa": "45"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 25,
+     "kilde": "opptak-2025",
+     "side": 2,
+     "raa": "25"
+    },
+    {
+     "periode": "2026",
+     "type": "år",
+     "verdi": 25,
+     "kilde": "opptaksrammer-2026",
+     "side": 2,
+     "raa": "Totalt 25 25"
+    }
+   ]
+  },
+  {
+   "id": "plasser-ma5",
+   "navn": "Studieplasser (opptaksramme), femårige master og veterinærutdanning",
+   "enhet": "antall",
+   "nivaa": "landsam",
+   "punkter": [
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 123,
+     "kilde": "opptak-2024",
+     "side": 3,
+     "raa": "123"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 123,
+     "kilde": "opptak-2025",
+     "side": 2,
+     "raa": "123"
+    },
+    {
+     "periode": "2026",
+     "type": "år",
+     "verdi": 125,
+     "kilde": "opptaksrammer-2026",
+     "side": 2,
+     "raa": "Totalt 123 125"
+    }
+   ]
+  },
+  {
+   "id": "plasser-ma5",
+   "navn": "Studieplasser (opptaksramme), femårige master og veterinærutdanning",
+   "enhet": "antall",
+   "nivaa": "realtek",
+   "punkter": [
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 280,
+     "kilde": "opptak-2024",
+     "side": 3,
+     "raa": "280"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 280,
+     "kilde": "opptak-2025",
+     "side": 2,
+     "raa": "280"
+    },
+    {
+     "periode": "2026",
+     "type": "år",
+     "verdi": 225,
+     "kilde": "opptaksrammer-2026",
+     "side": 2,
+     "raa": "Totalt 280 225"
+    }
+   ]
+  },
+  {
+   "id": "plasser-ma5",
+   "navn": "Studieplasser (opptaksramme), femårige master og veterinærutdanning",
+   "enhet": "antall",
+   "nivaa": "vet",
+   "punkter": [
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 80,
+     "kilde": "opptak-2024",
+     "side": 3,
+     "raa": "80"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 90,
+     "kilde": "opptak-2025",
+     "side": 2,
+     "raa": "90"
+    },
+    {
+     "periode": "2026",
+     "type": "år",
+     "verdi": 90,
+     "kilde": "opptaksrammer-2026",
+     "side": 2,
+     "raa": "Totalt 99 90"
+    }
+   ]
+  }
+ ]
+}

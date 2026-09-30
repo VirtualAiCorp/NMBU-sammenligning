@@ -48,6 +48,8 @@ const FacultyEconomyPage = lazyNamed<typeof import('./components/InstitusjonsSid
 const FacultyStaffPage = lazyNamed<typeof import('./components/InstitusjonsSider')['FacultyStaffPage']>(() => import('./components/InstitusjonsSider'), 'FacultyStaffPage');
 const NmbuEconomyPage = lazyNamed<typeof import('./components/InstitusjonsSider')['NmbuEconomyPage']>(() => import('./components/InstitusjonsSider'), 'NmbuEconomyPage');
 const NmbuStaffPage = lazyNamed<typeof import('./components/InstitusjonsSider')['NmbuStaffPage']>(() => import('./components/InstitusjonsSider'), 'NmbuStaffPage');
+const OkonomiOgDrift = lazyNamed<typeof import('./components/styringsinformasjon/OkonomiOgDrift')['OkonomiOgDrift']>(() => import('./components/styringsinformasjon/OkonomiOgDrift'), 'OkonomiOgDrift');
+const Utdanning = lazyNamed<typeof import('./components/styringsinformasjon/Utdanning')['Utdanning']>(() => import('./components/styringsinformasjon/Utdanning'), 'Utdanning');
 
 type ProgramLevel = 'bachelor' | 'master' | 'opptak2026' | 'markedsstatus';
 type ViewMode = 'course' | 'mapping' | 'admission' | 'karakterindeks' | 'studiebarometer' | 'map' | 'firstyear' | 'online';
@@ -154,8 +156,10 @@ export default function App() {
   };
 
   // Sider for hele NMBU
-  type NmbuPage = 'nmbu-bolig' | 'nmbu-okonomi' | 'nmbu-fagmiljo' | 'nmbu-sokergrunnlag';
+  type NmbuPage = 'nmbu-bolig' | 'nmbu-okonomi' | 'nmbu-fagmiljo' | 'nmbu-sokergrunnlag' | 'nmbu-okonomi-drift' | 'nmbu-utdanning';
   const NMBU_PAGE_META: Record<NmbuPage, { title: string; subtitle: string }> = {
+    'nmbu-okonomi-drift': { title: 'Økonomi og drift', subtitle: 'Hele NMBU med fakultetene side om side og konkurrentene som sammenligning · Kilde: DBH/HK-dir, Forskningsrådet, CORDIS og NMBUs egne dokumenter' },
+    'nmbu-utdanning': { title: 'Utdanning', subtitle: 'Hele NMBU med fakultetene side om side og konkurrentene som sammenligning · Kilde: DBH/HK-dir, Samordna opptak, Studiebarometeret og NMBUs egne dokumenter' },
     'nmbu-sokergrunnlag': { title: 'Søkergrunnlaget', subtitle: 'Ungdomskullene per fylke fram mot 2045 og matematikk og gjennomføring i videregående · Kilde: SSB og Utdanningsdirektoratet' },
     'nmbu-bolig': { title: 'Bolig og studentboliger', subtitle: 'Ås mot studiestedene til institusjonene vi konkurrerer med · Kilde: NSO Studentboligundersøkelsen og SSB' },
     'nmbu-okonomi': { title: 'Økonomi og styringsindikatorer', subtitle: 'NMBU mot institusjonene vi konkurrerer med · Kilde: DBH/HK-dir tabell 902 og 750' },
@@ -165,9 +169,13 @@ export default function App() {
     if (page === 'nmbu-bolig') return <StudiestedBolig />;
     if (page === 'nmbu-sokergrunnlag') return <Sokergrunnlag />;
     if (page === 'nmbu-okonomi') return <NmbuEconomyPage />;
+    if (page === 'nmbu-okonomi-drift') return <OkonomiOgDrift />;
+    if (page === 'nmbu-utdanning') return <Utdanning />;
     return <NmbuStaffPage />;
   };
-  const isNmbuPage = (f: Faculty | null): f is NmbuPage => f === 'nmbu-bolig' || f === 'nmbu-okonomi' || f === 'nmbu-fagmiljo' || f === 'nmbu-sokergrunnlag';
+  const isNmbuPage = (f: Faculty | null): f is NmbuPage => f === 'nmbu-bolig' || f === 'nmbu-okonomi' || f === 'nmbu-fagmiljo' || f === 'nmbu-sokergrunnlag' || f === 'nmbu-okonomi-drift' || f === 'nmbu-utdanning';
+  /** Styringsinformasjonen har eget sidehode i arbeidsflaten (byggeklossene), ellers samme ramme som de andre NMBU-sidene. */
+  const erStyringsside = (f: Faculty | null) => f === 'nmbu-okonomi-drift' || f === 'nmbu-utdanning';
   const isFacultyId = (f: Faculty | null): f is FacultyId => f === 'hh' || f === 'landsam' || f === 'realtek' || f === 'biovit' || f === 'kbm' || f === 'mina' || f === 'vet';
 
   const facultyLanding = (fac: FacultyData) => (
@@ -259,6 +267,7 @@ export default function App() {
     if (faculty === null) return <AfForside onNavigate={navigate} />;
     if (faculty === 'nmbu-emner') return <AfInnebygd><NmbuCourseExplorer onBack={goHome} /></AfInnebygd>;
     if (faculty === 'nmbu-oppsett') return <AfInnebygd><LayoutLab onBack={goHome} /></AfInnebygd>;
+    if (erStyringsside(faculty) && isNmbuPage(faculty)) return nmbuPageBody(faculty);
     if (isNmbuPage(faculty)) {
       const m = NMBU_PAGE_META[faculty];
       return <AfModulSide eyebrow="Hele NMBU" tittel={m.title} undertittel={m.subtitle}>{nmbuPageBody(faculty)}</AfModulSide>;

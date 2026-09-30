@@ -4,7 +4,7 @@
  */
 import {
   Atom, Building2, FlaskConical, Leaf, PawPrint, Trees, TreePine, Archive, LayoutDashboard, BookOpen, Microscope, Baby,
-  Home, Landmark, type LucideIcon,
+  Home, Landmark, Wallet, GraduationCap, type LucideIcon,
 } from 'lucide-react';
 import { FAKULTETSMODULER, type ShellView } from '../AppShells';
 import { ALL_FACULTY_IDS, FACULTY_META, type FacultyId } from '../../data/facultyMeta';
@@ -73,5 +73,10 @@ export const NMBU_SIDER: { f: Faculty; label: string; icon: LucideIcon; tekst: s
   { f: 'nmbu-sokergrunnlag', label: 'Søkergrunnlaget', icon: Baby, tekst: 'Ungdomskullene per fylke fram mot 2045' },
   { f: 'nmbu-bolig', label: 'Bolig og studentboliger', icon: Home, tekst: 'Ås mot konkurrentenes studiesteder' },
   { f: 'nmbu-okonomi', label: 'Økonomi', icon: Landmark, tekst: 'Styringsindikatorer mot konkurrentene' },
+];
+/** Styringsinformasjon for hele NMBU: egne samlesider med fakultetene side om side (egen gruppe øverst i menyen). */
+export const NMBU_STYRING: { f: Faculty; label: string; icon: LucideIcon; tekst: string }[] = [
+  { f: 'nmbu-okonomi-drift', label: 'Økonomi og drift', icon: Wallet, tekst: 'Regnskap, finansiering, eksterne midler og bemanning per fakultet' },
+  { f: 'nmbu-utdanning', label: 'Utdanning', icon: GraduationCap, tekst: 'Studiepoeng, gjennomføring, søkere og studieplasser per fakultet' },
 ];
 export const NMBU_OVERSIKT = { label: 'Forside', icon: LayoutDashboard };

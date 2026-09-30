@@ -1,0 +1,757 @@
+{
+ "_merknad": "Håndregistrert 30.09.2026 fra offentlige PDF-er. «side» er fysisk side i PDF-en. «raa» er teksten slik den står på siden og brukes av build-ledelse.py --kontroller. NMBUs måleparametere er hentet fra rapporten for 3. tertial 2025 (samme tall er gjentatt i rapporten for 1. tertial 2026).",
+ "serier": [
+  {
+   "id": "studiepoengproduksjon",
+   "navn": "Studiepoengproduksjon (60-studiepoengsenheter, NMBUs måleparameter)",
+   "enhet": "60-sp-enheter",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 4912,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "4912"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 5431,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "5431"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 5675,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "5675"
+    }
+   ]
+  },
+  {
+   "id": "studiepoeng-per-faglig-arsverk",
+   "navn": "Studiepoeng per faglig årsverk",
+   "enhet": "studiepoeng",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 326,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "326"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 357,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "357"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 390,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "390"
+    }
+   ]
+  },
+  {
+   "id": "normert-tid-bachelor",
+   "navn": "Andel bachelorstudenter som fullfører på normert tid",
+   "enhet": "%",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 50.4,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "50,4%"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 50.5,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "50,5%"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 51.0,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "51,0%"
+    }
+   ]
+  },
+  {
+   "id": "normert-tid-master5",
+   "navn": "Andel på femårig master som fullfører på normert tid",
+   "enhet": "%",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 58.8,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "58,8%"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 56.3,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "56,3%"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 54.8,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "54,8%"
+    }
+   ]
+  },
+  {
+   "id": "normert-tid-master2",
+   "navn": "Andel på toårig master som fullfører på normert tid",
+   "enhet": "%",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 59.9,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "59,9%"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 59.1,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "59,1%"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 67.0,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "67,0%"
+    }
+   ]
+  },
+  {
+   "id": "normert-tid-profesjon",
+   "navn": "Andel på profesjonsutdanning (veterinær) som fullfører på normert tid",
+   "enhet": "%",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 61.6,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "61,6 %"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 66.2,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "66,2 %"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 74.0,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "74,0 %"
+    }
+   ]
+  },
+  {
+   "id": "fullforingsgrad-kd",
+   "navn": "Fullføringsgrad i KDs finansieringssystem (kull normert til å fullføre)",
+   "enhet": "%",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 58.7,
+     "kilde": "orientering-2025",
+     "side": 26,
+     "raa": "58,7"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 58.5,
+     "kilde": "orientering-2026",
+     "side": 24,
+     "raa": "58,5"
+    }
+   ]
+  },
+  {
+   "id": "studiekvalitet",
+   "navn": "Studentenes samlede tilfredshet med studiekvaliteten (Studiebarometeret, skala 1–5)",
+   "enhet": "skår",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 4.2,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "4,2"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 4.1,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "4,1"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 4.3,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "4,3"
+    }
+   ]
+  },
+  {
+   "id": "sokere-samordna",
+   "navn": "Kvalifiserte førsteprioritetssøkere, Samordna opptak",
+   "enhet": "antall",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 3245,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "3 245"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 3778,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "3 778"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 3374,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "3 374"
+    }
+   ]
+  },
+  {
+   "id": "sokere-lokalt",
+   "navn": "Kvalifiserte førsteprioritetssøkere, lokalt opptak",
+   "enhet": "antall",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 3405,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "3 405"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 4376,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "4 376"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 4860,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "4 860"
+    }
+   ]
+  },
+  {
+   "id": "mott-totalt",
+   "navn": "Nye studenter møtt til studiestart, alle opptak",
+   "enhet": "antall",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 3510,
+     "kilde": "opptak-2024",
+     "side": 1,
+     "raa": "3716 3510"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 3716,
+     "kilde": "opptak-2024",
+     "side": 1,
+     "raa": "3716"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 3969,
+     "kilde": "opptak-2025",
+     "side": 1,
+     "raa": "3969"
+    }
+   ]
+  },
+  {
+   "id": "registrerte-studenter",
+   "navn": "Registrerte studenter (årsrapportens hovedtall)",
+   "enhet": "antall",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 7687,
+     "kilde": "arsrapport-2023",
+     "side": 8,
+     "raa": "7687"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 8527,
+     "kilde": "arsrapport-2024",
+     "side": 9,
+     "raa": "8527"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 8397,
+     "kilde": "arsrapport-2025",
+     "side": 9,
+     "raa": "8397"
+    }
+   ]
+  },
+  {
+   "id": "fullforte-grader",
+   "navn": "Fullførte grader (bachelor, master og profesjon)",
+   "enhet": "antall",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 1411,
+     "kilde": "arsrapport-2023",
+     "side": 12,
+     "raa": "1 411"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 1572,
+     "kilde": "arsrapport-2024",
+     "side": 9,
+     "raa": "1572"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 1850,
+     "kilde": "arsrapport-2025",
+     "side": 9,
+     "raa": "1850"
+    }
+   ]
+  },
+  {
+   "id": "doktorgrader",
+   "navn": "Avlagte doktorgrader",
+   "enhet": "antall",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 84,
+     "kilde": "tertial-2026-t1",
+     "side": 14,
+     "raa": "84 73 101 26"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 73,
+     "kilde": "tertial-2026-t1",
+     "side": 14,
+     "raa": "84 73 101 26"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 101,
+     "kilde": "tertial-2026-t1",
+     "side": 14,
+     "raa": "84 73 101 26"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "tertial",
+     "verdi": 26,
+     "kilde": "tertial-2026-t1",
+     "side": 14,
+     "raa": "84 73 101 26"
+    }
+   ]
+  },
+  {
+   "id": "nye-studieplasser-kd",
+   "navn": "Nye studieplasser tildelt NMBU i statsbudsjettet",
+   "enhet": "studieplasser",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 20,
+     "kilde": "orientering-2026",
+     "side": 19,
+     "raa": "NMBU 20 10 10"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 10,
+     "kilde": "orientering-2026",
+     "side": 19,
+     "raa": "NMBU 20 10 10"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 10,
+     "kilde": "orientering-2026",
+     "side": 19,
+     "raa": "NMBU 20 10 10"
+    }
+   ]
+  },
+  {
+   "id": "evu-deltakere-etterutdanning",
+   "navn": "Deltakere i etterutdanningskurs",
+   "enhet": "antall",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 1284,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "1 284"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 1382,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "1382"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 1614,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "1 614"
+    }
+   ]
+  },
+  {
+   "id": "evu-deltakere-videreutdanning",
+   "navn": "Deltakere i videreutdanningskurs",
+   "enhet": "antall",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 747,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "747"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 935,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "935"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 888,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "888"
+    }
+   ]
+  },
+  {
+   "id": "innvekslingsstudenter",
+   "navn": "Innvekslingsstudenter",
+   "enhet": "antall",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 334,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "334"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 306,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "306"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 326,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "326"
+    }
+   ]
+  },
+  {
+   "id": "utvekslingsstudenter",
+   "navn": "Utvekslingsstudenter (NMBU-studenter ute)",
+   "enhet": "antall",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 263,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "263"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 280,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "280"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 332,
+     "kilde": "tertial-2025-t3",
+     "side": 17,
+     "raa": "332"
+    }
+   ]
+  },
+  {
+   "id": "lektor-realfag-kandidater",
+   "navn": "Uteksaminerte fra lektorutdanning i realfag, mot kandidatmåltallet",
+   "enhet": "antall",
+   "nivaa": "realtek",
+   "punkter": [
+    {
+     "periode": "2022",
+     "type": "år",
+     "verdi": 15,
+     "kilde": "arsrapport-2023",
+     "side": 13,
+     "raa": "15 LUR-studenter fullførte i 2022"
+    },
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 24,
+     "kilde": "arsrapport-2023",
+     "side": 13,
+     "raa": "og 24 i 2023"
+    },
+    {
+     "periode": "2023",
+     "type": "mål",
+     "verdi": 20,
+     "kilde": "arsrapport-2023",
+     "side": 13,
+     "raa": "kandidatmåltalet på 20 studenter per år"
+    }
+   ]
+  }
+ ],
+ "tekst": [
+  {
+   "tittel": "Utviklingen i NMBUs måleparametere for utdanning",
+   "tekst": "Studiepoengproduksjonen økte med om lag 4 prosent fra 2024 til 2025. Andelen som fullfører toårig master på normert tid gikk tydelig opp, og økningen gjelder alle fakulteter som har slike program. Gjennomføringen på bachelor er stabil. Tallet på kvalifiserte søkere i Samordna opptak er stabilt, mens søkningen i lokalt opptak øker. Likevel fyller NMBU samlet sett ikke rammen for de toårige masterprogrammene, med store forskjeller mellom programmene.",
+   "kilder": [
+    {
+     "kilde": "tertial-2025-t3",
+     "side": 17
+    },
+    {
+     "kilde": "tertial-2025-t3",
+     "side": 18
+    }
+   ]
+  },
+  {
+   "tittel": "Opptaket høsten 2025",
+   "tekst": "I 2025 møtte 3 969 nye studenter, mot 3 716 i 2024. I Samordna opptak møtte 2 224, selv om tallet på førsteprioritetssøknader falt fra 4 375 til 3 995. 19 av 37 studier hadde ledige plasser etter hovedopptaket. Saksframlegget oppgir 703 møtt til 973 plasser på toårig master, der 40 plasser gjelder erfaringsbasert master med eget opptak. Fakultetstabellen i vedlegget summerer til 751 møtt; forskjellen er ikke forklart i saken.",
+   "kilder": [
+    {
+     "kilde": "opptak-2025-sak",
+     "side": 2
+    },
+    {
+     "kilde": "opptak-2025-sak",
+     "side": 3
+    },
+    {
+     "kilde": "opptak-2025",
+     "side": 3
+    }
+   ]
+  },
+  {
+   "tittel": "Studieplasser fra KD",
+   "tekst": "NMBU fikk 20 nye studieplasser i nukleære fag i 2023 og 10 nye plasser i veterinærmedisin både i revidert budsjett 2024 og i 2025. Fordi søkningen til nukleære fag har vært lav, foreslår regjeringen at resten av opptrappingen går til UiO fra 2027, slik at NMBU fra 2026 er finansiert for 14 slike plasser. I 2026 fikk NMBU ingen nye plasser, men KD ønsker dialog om kapasiteten i veterinærutdanningen. Midlene til studieplassene fra 2020 fases gradvis ut.",
+   "kilder": [
+    {
+     "kilde": "orientering-2026",
+     "side": 19
+    },
+    {
+     "kilde": "tildelingsbrev-2026",
+     "side": 5
+    },
+    {
+     "kilde": "tildelingsbrev-2026",
+     "side": 6
+    },
+    {
+     "kilde": "tildelingsbrev-2025",
+     "side": 8
+    }
+   ]
+  },
+  {
+   "tittel": "Styringsparametere fra KD er kvalitative",
+   "tekst": "Utviklingsavtalen for 2023–2026 har to mål og ni styringsparametere, blant annet at alle studenter skal kjenne bærekraftsutfordringene i eget fag og at etter- og videreutdanning skal økes. Ingen av parameterne har tallfestede mål. Utkastet til ny avtale for 2027–2030, vedtatt sendt til KD i september 2026, har tre mål og ti styringsparametere. Der skal rapporteringen bygge på indikatorer for søkertall, gjennomføring, kandidatproduksjon og fleksible tilbud, supplert med vurderinger, men fortsatt uten tallfestede mål.",
+   "kilder": [
+    {
+     "kilde": "utviklingsavtale-2023-2026",
+     "side": 1
+    },
+    {
+     "kilde": "utviklingsavtale-2027-2030-utkast",
+     "side": 5
+    },
+    {
+     "kilde": "utviklingsavtale-2027-2030-utkast",
+     "side": 6
+    }
+   ]
+  },
+  {
+   "tittel": "KD om rekruttering og realfag",
+   "tekst": "I etatsstyringsmøtet i 2026 viste KD til at antall kvalifiserte søkere per studieplass ved NMBU har gått ned de siste tre årene. KD ventet større utfordringer med å rekruttere til realfagene når kullene blir mindre. KD vurderte samtidig at NMBU har gode resultater på utdanning, med økende studieproduksjon og gjennomføring på alle nivåer.",
+   "kilder": [
+    {
+     "kilde": "etatsstyring-2026",
+     "side": 2
+    }
+   ]
+  },
+  {
+   "tittel": "Kandidatmåltall",
+   "tekst": "Tildelingsbrevene for 2025 og 2026 omtaler ikke kandidatmåltall for NMBU. I årsrapporten for 2023 er måltallet for lektorutdanning i realfag oppgitt til 20 kandidater per år. For praktisk-pedagogisk utdanning skriver NMBU at måltallet ikke nås, uten å oppgi tallet.",
+   "kilder": [
+    {
+     "kilde": "arsrapport-2023",
+     "side": 13
+    },
+    {
+     "kilde": "tildelingsbrev-2025",
+     "side": 6
+    },
+    {
+     "kilde": "tildelingsbrev-2026",
+     "side": 5
+    }
+   ]
+  },
+  {
+   "tittel": "Studiebarometeret annethvert år",
+   "tekst": "HK-dir har vedtatt at Studiebarometeret bare skal gjennomføres annethvert år. Neste måling av studentenes tilfredshet kommer derfor høsten 2027.",
+   "kilder": [
+    {
+     "kilde": "tertial-2026-t1",
+     "side": 13
+    }
+   ]
+  }
+ ]
+}

@@ -1,10 +1,10 @@
 import type { ReactNode } from 'react';
-import { BookOpen, Building2, Trees, Atom, Leaf, FlaskConical, TreePine, Lock, PawPrint, Users, Home, Landmark, LayoutGrid, Baby } from 'lucide-react';
+import { BookOpen, Building2, Trees, Atom, Leaf, FlaskConical, TreePine, Lock, PawPrint, Users, Home, Landmark, LayoutGrid, Baby, Wallet, GraduationCap } from 'lucide-react';
 import { FACULTY_META as FACULTIES, FACULTY_IDS, type FacultyId } from '../data/facultyMeta';
 import { LagetAv } from './LagetAv';
 import { Forsidenotis } from './Forsidenotis';
 
-export type Faculty = 'hh-figma' | FacultyId | 'nmbu-emner' | 'nmbu-fagmiljo' | 'nmbu-bolig' | 'nmbu-okonomi' | 'nmbu-oppsett' | 'nmbu-sokergrunnlag';
+export type Faculty = 'hh-figma' | FacultyId | 'nmbu-emner' | 'nmbu-fagmiljo' | 'nmbu-bolig' | 'nmbu-okonomi' | 'nmbu-oppsett' | 'nmbu-sokergrunnlag' | 'nmbu-okonomi-drift' | 'nmbu-utdanning';
 
 interface Props {
   onSelect: (faculty: Faculty) => void;
@@ -89,6 +89,28 @@ export function FacultyLanding({ onSelect }: Props) {
               <p style={{ fontSize: '13px', color: 'var(--nmbu-neutral-2)', lineHeight: 1.5 }}>{card.desc}</p>
             </button>
             </div>
+          ))}
+        </div>
+
+        {/* Styringsinformasjon for hele NMBU */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-8">
+          {([
+            { f: 'nmbu-okonomi-drift', ikon: Wallet, tittel: 'Økonomi og drift', tekst: 'Regnskap, resultatbasert finansiering, eksterne forskningsmidler og bemanning, med fakultetene side om side og konkurrentene som sammenligning.' },
+            { f: 'nmbu-utdanning', ikon: GraduationCap, tittel: 'Utdanning', tekst: 'Studiepoeng, gjennomføring, søkere og studieplasser per fakultet, program å følge med på og årsstudier, enkeltemner og videreutdanning.' },
+          ] as const).map((k) => (
+            <button key={k.f} onClick={() => onSelect(k.f)} className="rounded-2xl p-6 text-left transition-all flex items-start gap-4"
+              style={{ backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)', boxShadow: '0 2px 8px rgba(2,92,79,0.08)' }}
+              onMouseEnter={(e) => { e.currentTarget.style.boxShadow = '0 4px 16px rgba(2,92,79,0.16)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.boxShadow = '0 2px 8px rgba(2,92,79,0.08)'; e.currentTarget.style.transform = 'translateY(0)'; }}>
+              <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: 'var(--nmbu-green-4)' }}>
+                <k.ikon className="w-5 h-5" style={{ color: 'var(--nmbu-green-dark)' }} />
+              </div>
+              <div>
+                <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.06em', textTransform: 'uppercase', color: 'var(--nmbu-neutral-2)', marginBottom: 2 }}>Styringsinformasjon</div>
+                <div style={{ fontFamily: "'Lora', serif", fontWeight: 500, fontSize: '20px', color: 'var(--nmbu-green-dark)', marginBottom: 4 }}>{k.tittel}</div>
+                <p style={{ fontSize: '13px', color: 'var(--nmbu-neutral-2)', lineHeight: 1.5 }}>{k.tekst}</p>
+              </div>
+            </button>
           ))}
         </div>
 

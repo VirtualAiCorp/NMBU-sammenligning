@@ -1,0 +1,941 @@
+{
+ "_merknad": "Håndregistrert 30.09.2026 fra offentlige PDF-er. «side» er fysisk side i PDF-en (det #page=N åpner). «raa» er teksten slik den står på siden og brukes av build-ledelse.py --kontroller. Tall i 1000 kr er gjort om til mill. kr.",
+ "serier": [
+  {
+   "id": "driftsinntekter",
+   "navn": "Driftsinntekter (årsregnskapet)",
+   "enhet": "mill. kr",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2022",
+     "type": "år",
+     "verdi": 2425.038,
+     "kilde": "arsrapport-2023",
+     "side": 58,
+     "raa": "2 425 038"
+    },
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 2639.217,
+     "kilde": "arsrapport-2023",
+     "side": 58,
+     "raa": "2 639 217"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 2655.271,
+     "kilde": "arsrapport-2024",
+     "side": 76,
+     "raa": "2 655 271"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 2726.768,
+     "kilde": "arsrapport-2025",
+     "side": 56,
+     "raa": "2 726 768"
+    }
+   ]
+  },
+  {
+   "id": "driftskostnader",
+   "navn": "Driftskostnader (årsregnskapet)",
+   "enhet": "mill. kr",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2022",
+     "type": "år",
+     "verdi": 2529.495,
+     "kilde": "arsrapport-2023",
+     "side": 58,
+     "raa": "2 529 495"
+    },
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 2626.227,
+     "kilde": "arsrapport-2023",
+     "side": 58,
+     "raa": "2 626 227"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 2668.996,
+     "kilde": "arsrapport-2024",
+     "side": 76,
+     "raa": "2 668 996"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 2627.189,
+     "kilde": "arsrapport-2025",
+     "side": 56,
+     "raa": "2 627 189"
+    }
+   ]
+  },
+  {
+   "id": "driftsresultat",
+   "navn": "Driftsresultat (årsregnskapet)",
+   "enhet": "mill. kr",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2022",
+     "type": "år",
+     "verdi": -104.457,
+     "kilde": "arsrapport-2023",
+     "side": 58,
+     "raa": "-104 457"
+    },
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 12.99,
+     "kilde": "arsrapport-2023",
+     "side": 58,
+     "raa": "12 990"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": -13.724,
+     "kilde": "arsrapport-2024",
+     "side": 76,
+     "raa": "-13 724"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 99.579,
+     "kilde": "arsrapport-2025",
+     "side": 56,
+     "raa": "99 579"
+    }
+   ]
+  },
+  {
+   "id": "inntekt-bevilgning",
+   "navn": "Inntekt fra bevilgninger (årsregnskapet)",
+   "enhet": "mill. kr",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2022",
+     "type": "år",
+     "verdi": 1700.428,
+     "kilde": "arsrapport-2023",
+     "side": 58,
+     "raa": "1 700 428"
+    },
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 1850.353,
+     "kilde": "arsrapport-2023",
+     "side": 58,
+     "raa": "1 850 353"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 1847.585,
+     "kilde": "arsrapport-2024",
+     "side": 76,
+     "raa": "1 847 585"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 1905.759,
+     "kilde": "arsrapport-2025",
+     "side": 56,
+     "raa": "1 905 759"
+    }
+   ]
+  },
+  {
+   "id": "bidragsinntekter",
+   "navn": "Bidragsfinansiert aktivitet: inntekt fra tilskudd og overføringer (årsregnskapet)",
+   "enhet": "mill. kr",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2022",
+     "type": "år",
+     "verdi": 479.91,
+     "kilde": "arsrapport-2023",
+     "side": 58,
+     "raa": "479 910"
+    },
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 506.251,
+     "kilde": "arsrapport-2023",
+     "side": 58,
+     "raa": "506 251"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 546.472,
+     "kilde": "arsrapport-2024",
+     "side": 76,
+     "raa": "546 472"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 534.18,
+     "kilde": "arsrapport-2025",
+     "side": 56,
+     "raa": "534 180"
+    }
+   ]
+  },
+  {
+   "id": "oppdragsinntekter",
+   "navn": "Oppdragsfinansiert aktivitet: inntekt",
+   "enhet": "mill. kr",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2021",
+     "type": "år",
+     "verdi": 62.6,
+     "kilde": "arsrapport-2025",
+     "side": 50,
+     "raa": "62,6"
+    },
+    {
+     "periode": "2022",
+     "type": "år",
+     "verdi": 79.0,
+     "kilde": "arsrapport-2025",
+     "side": 50,
+     "raa": "79,0"
+    },
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 77.2,
+     "kilde": "arsrapport-2025",
+     "side": 50,
+     "raa": "77,2"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 65.0,
+     "kilde": "arsrapport-2025",
+     "side": 50,
+     "raa": "65,0"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 52.9,
+     "kilde": "arsrapport-2025",
+     "side": 50,
+     "raa": "52,9"
+    }
+   ]
+  },
+  {
+   "id": "oppdrag-resultatgrad",
+   "navn": "Oppdragsfinansiert aktivitet: resultatgrad (mål: minst 5 %)",
+   "enhet": "%",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2021",
+     "type": "år",
+     "verdi": 2.1,
+     "kilde": "arsrapport-2025",
+     "side": 50,
+     "raa": "2,1 %"
+    },
+    {
+     "periode": "2022",
+     "type": "år",
+     "verdi": 5.4,
+     "kilde": "arsrapport-2025",
+     "side": 50,
+     "raa": "5,4 %"
+    },
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 5.2,
+     "kilde": "arsrapport-2025",
+     "side": 50,
+     "raa": "5,2 %"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 7.4,
+     "kilde": "arsrapport-2025",
+     "side": 50,
+     "raa": "7,4 %"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 7.8,
+     "kilde": "arsrapport-2025",
+     "side": 50,
+     "raa": "7,8 %"
+    },
+    {
+     "periode": "2025",
+     "type": "mål",
+     "verdi": 5,
+     "kilde": "arsrapport-2025",
+     "side": 50,
+     "raa": "minst 5 prosent"
+    }
+   ]
+  },
+  {
+   "id": "boa-nettoinndekning",
+   "navn": "Nettoinndekning fra bidrags- og oppdragsfinansiert aktivitet (omstillingsparameter)",
+   "enhet": "mill. kr",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 281.9,
+     "kilde": "tertial-2026-t1",
+     "side": 11,
+     "raa": "281,9"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 304.5,
+     "kilde": "tertial-2026-t1",
+     "side": 11,
+     "raa": "304,5"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 295.7,
+     "kilde": "tertial-2026-t1",
+     "side": 11,
+     "raa": "295,7"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "tertial",
+     "verdi": 100.6,
+     "kilde": "tertial-2026-t1",
+     "side": 11,
+     "raa": "100,6"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "prognose",
+     "verdi": 291.6,
+     "kilde": "tertial-2026-t1",
+     "side": 11,
+     "raa": "291,6"
+    }
+   ]
+  },
+  {
+   "id": "rammebevilgning",
+   "navn": "Rammebevilgning fra Kunnskapsdepartementet (kap. 260, post 50)",
+   "enhet": "mill. kr",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 1533.426,
+     "kilde": "orientering-2024",
+     "side": 16,
+     "raa": "1 533 426"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 1576.922,
+     "kilde": "orientering-2024",
+     "side": 16,
+     "raa": "1 576 922"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 1644.543,
+     "kilde": "orientering-2025",
+     "side": 13,
+     "raa": "1 644 543"
+    },
+    {
+     "periode": "2026",
+     "type": "år",
+     "verdi": 1695.344,
+     "kilde": "orientering-2026",
+     "side": 12,
+     "raa": "1 695 344"
+    },
+    {
+     "periode": "2027",
+     "type": "prognose",
+     "verdi": 1696.2,
+     "kilde": "arsplan-2027",
+     "side": 9,
+     "raa": "1 696,2"
+    },
+    {
+     "periode": "2028",
+     "type": "prognose",
+     "verdi": 1672.0,
+     "kilde": "arsplan-2027",
+     "side": 9,
+     "raa": "1 672,0"
+    },
+    {
+     "periode": "2029",
+     "type": "prognose",
+     "verdi": 1655.1,
+     "kilde": "arsplan-2027",
+     "side": 9,
+     "raa": "1 655,1"
+    },
+    {
+     "periode": "2030",
+     "type": "prognose",
+     "verdi": 1638.2,
+     "kilde": "arsplan-2027",
+     "side": 9,
+     "raa": "1 638,2"
+    },
+    {
+     "periode": "2031",
+     "type": "prognose",
+     "verdi": 1621.3,
+     "kilde": "arsplan-2027",
+     "side": 9,
+     "raa": "1 621,3"
+    }
+   ]
+  },
+  {
+   "id": "resultatbasert-uttelling",
+   "navn": "Endring i rammen fra resultatbasert uttelling i KDs finansieringssystem",
+   "enhet": "mill. kr",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 31.299,
+     "kilde": "orientering-2025",
+     "side": 25,
+     "raa": "31 299"
+    },
+    {
+     "periode": "2026",
+     "type": "år",
+     "verdi": 24.973,
+     "kilde": "orientering-2026",
+     "side": 23,
+     "raa": "24 973"
+    },
+    {
+     "periode": "2027",
+     "type": "prognose",
+     "verdi": 29.7,
+     "kilde": "arsplan-2027",
+     "side": 8,
+     "raa": "29,7"
+    }
+   ]
+  },
+  {
+   "id": "avsetninger",
+   "navn": "Avsetninger av bevilgningen fra KD ved årsslutt (ubrukte midler, note 15 del IV)",
+   "enhet": "mill. kr",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 52.196,
+     "kilde": "arsrapport-2023",
+     "side": 76,
+     "raa": "52 196"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 26.806,
+     "kilde": "arsrapport-2024",
+     "side": 98,
+     "raa": "26 806"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 178.076,
+     "kilde": "arsrapport-2025",
+     "side": 76,
+     "raa": "178 076"
+    }
+   ]
+  },
+  {
+   "id": "avsetninger-andel",
+   "navn": "Avsetninger i prosent av årets bevilgning fra KD",
+   "enhet": "%",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 3.3,
+     "kilde": "arsrapport-2023",
+     "side": 52,
+     "raa": "3,3 prosent"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 1.7,
+     "kilde": "arsrapport-2024",
+     "side": 70,
+     "raa": "1,7 %"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 10.8,
+     "kilde": "arsrapport-2025",
+     "side": 76,
+     "raa": "10,8 %"
+    }
+   ]
+  },
+  {
+   "id": "avsetninger-andre-formal",
+   "navn": "Avsetninger til andre formål enn investeringer (bufferen)",
+   "enhet": "mill. kr",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 30.824,
+     "kilde": "arsrapport-2023",
+     "side": 76,
+     "raa": "30 824"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 0,
+     "kilde": "arsrapport-2024",
+     "side": 98,
+     "raa": "1 578 379 0 0 %"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 41.138,
+     "kilde": "arsrapport-2025",
+     "side": 76,
+     "raa": "41 138"
+    }
+   ]
+  },
+  {
+   "id": "driftsresultat-internt",
+   "navn": "Driftsresultat i internregnskapet (omstillingsparameter)",
+   "enhet": "mill. kr",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": -11.0,
+     "kilde": "tertial-2026-t1",
+     "side": 11,
+     "raa": "-11,0"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": -8.9,
+     "kilde": "tertial-2026-t1",
+     "side": 11,
+     "raa": "-8,9"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 7.9,
+     "kilde": "tertial-2026-t1",
+     "side": 11,
+     "raa": "7,9"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "tertial",
+     "verdi": -58.9,
+     "kilde": "tertial-2026-t1",
+     "side": 11,
+     "raa": "-58,9"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "prognose",
+     "verdi": -0.3,
+     "kilde": "tertial-2026-t1",
+     "side": 11,
+     "raa": "-0,3"
+    }
+   ]
+  },
+  {
+   "id": "arsverk",
+   "navn": "Årsverk totalt (omstillingsparameter)",
+   "enhet": "årsverk",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 1769,
+     "kilde": "tertial-2026-t1",
+     "side": 11,
+     "raa": "1 769"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 1770,
+     "kilde": "tertial-2026-t1",
+     "side": 11,
+     "raa": "1 770"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 1689,
+     "kilde": "tertial-2026-t1",
+     "side": 11,
+     "raa": "1 689"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "tertial",
+     "verdi": 1626,
+     "kilde": "tertial-2026-t1",
+     "side": 11,
+     "raa": "1626"
+    }
+   ]
+  },
+  {
+   "id": "arsverk-bfv",
+   "navn": "Årsverk finansiert av bevilgningen (BFV)",
+   "enhet": "årsverk",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 1595,
+     "kilde": "tertial-2026-t1",
+     "side": 11,
+     "raa": "1 595"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 1607,
+     "kilde": "tertial-2026-t1",
+     "side": 11,
+     "raa": "1 607"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 1519,
+     "kilde": "tertial-2026-t1",
+     "side": 11,
+     "raa": "1 519"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "tertial",
+     "verdi": 1477,
+     "kilde": "tertial-2026-t1",
+     "side": 11,
+     "raa": "1477"
+    }
+   ]
+  },
+  {
+   "id": "arsverk-boa",
+   "navn": "Årsverk finansiert av bidrags- og oppdragsaktivitet (BOA)",
+   "enhet": "årsverk",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2023",
+     "type": "år",
+     "verdi": 174,
+     "kilde": "tertial-2026-t1",
+     "side": 11,
+     "raa": "174"
+    },
+    {
+     "periode": "2024",
+     "type": "år",
+     "verdi": 163,
+     "kilde": "tertial-2026-t1",
+     "side": 11,
+     "raa": "163"
+    },
+    {
+     "periode": "2025",
+     "type": "år",
+     "verdi": 170,
+     "kilde": "tertial-2026-t1",
+     "side": 11,
+     "raa": "170"
+    },
+    {
+     "periode": "2026-T1",
+     "type": "tertial",
+     "verdi": 149,
+     "kilde": "tertial-2026-t1",
+     "side": 11,
+     "raa": "149"
+    }
+   ]
+  },
+  {
+   "id": "disponible-midler",
+   "navn": "Disponible midler i NMBUs budsjett (vedtatt ramme)",
+   "enhet": "mill. kr",
+   "nivaa": "NMBU",
+   "punkter": [
+    {
+     "periode": "2025",
+     "type": "budsjett",
+     "verdi": 1644.5,
+     "kilde": "arsplan-2026",
+     "side": 13,
+     "raa": "1 644,5"
+    },
+    {
+     "periode": "2026",
+     "type": "budsjett",
+     "verdi": 1695.3,
+     "kilde": "arsplan-2026",
+     "side": 13,
+     "raa": "1 695,3"
+    },
+    {
+     "periode": "2027",
+     "type": "prognose",
+     "verdi": 1696.1,
+     "kilde": "arsplan-2027",
+     "side": 10,
+     "raa": "1 696,1"
+    }
+   ]
+  }
+ ],
+ "tekst": [
+  {
+   "tittel": "Hovedpunkter fra siste tertialrapport (1. tertial 2026)",
+   "tekst": "Tertialrapporten per 30. april 2026 beskriver utviklingen som positiv, men sier at økonomien fortsatt må følges tett. Enhetenes prognoser tilsier drift i balanse for 2026 (driftsresultat anslått til −0,3 mill. kr), og fakultetene samlet venter mindreforbruk. Unntaket er Veterinærhøgskolen, som nå melder et merforbruk på 12,1 mill. kr for året etter et lite pluss i 2025. Stillingskontrollen har gitt færre årsverk siden årsskiftet. Prognosene tilsier fortsatt ubrukte midler overfor KD ved årets slutt.",
+   "kilder": [
+    {
+     "kilde": "tertial-2026-t1",
+     "side": 3
+    },
+    {
+     "kilde": "tertial-2026-t1",
+     "side": 4
+    },
+    {
+     "kilde": "tertial-2026-t1",
+     "side": 5
+    },
+    {
+     "kilde": "tertial-2026-t1",
+     "side": 10
+    }
+   ]
+  },
+  {
+   "tittel": "Nedgang i eksternt finansiert aktivitet",
+   "tekst": "Bidragsinntektene ved første tertial 2026 var om lag 7,1 mill. kr lavere enn på samme tid i fjor, og prognosen er nær 10 prosent lavere bidragsinntekter enn i 2025. Størst nedgang ventes fra Forskningsrådet. Oppdragsinntektene kan bli mer enn halvert i 2026. Allerede i 2025 falt inntektene fra Forskningsrådet med nesten 11 prosent, mens EU-inntektene økte med litt over 8 prosent.",
+   "kilder": [
+    {
+     "kilde": "tertial-2026-t1",
+     "side": 8
+    },
+    {
+     "kilde": "tertial-2026-t1",
+     "side": 9
+    },
+    {
+     "kilde": "tertial-2025-t3",
+     "side": 14
+    }
+   ]
+  },
+  {
+   "tittel": "Veterinærhøgskolen: akkumulert merforbruk og nedbetalingsplan",
+   "tekst": "Veterinærhøgskolen gikk inn i 2026 med et akkumulert merforbruk på 80,4 mill. kr, bygd opp i 2019–2024 og delvis knyttet til flyttingen fra Adamstuen til Ås. Styret fikk i juni 2026 forslag om en salderingsordning fram til 2030: for hver million fakultetet betaler ned, strykes en halv million. Fakultetets plan budsjetterer med overskudd på 4–21 mill. kr per år i 2027–2030.",
+   "kilder": [
+    {
+     "kilde": "tertial-2026-t1-sak",
+     "side": 2
+    }
+   ]
+  },
+  {
+   "tittel": "Vurderingen i årsregnskapet for 2025",
+   "tekst": "Ledelseskommentarene i årsregnskapet for 2025 vurderer den økonomiske situasjonen som bedre enn ved utgangen av 2024, men universitetet regnes ikke som «friskmeldt». Omstilling og kostnadsreduksjoner må fortsette. Avsetningene er samlet sett på et fornuftig nivå etter at midler til rehabiliteringen av Aud Max ble overført til 2026 og to eiendommer ble solgt, men avsetningene til andre formål er fortsatt lavere enn ønsket på lang sikt.",
+   "kilder": [
+    {
+     "kilde": "arsrapport-2025",
+     "side": 48
+    },
+    {
+     "kilde": "arsrapport-2025",
+     "side": 50
+    }
+   ]
+  },
+  {
+   "tittel": "Avsetningene: hva tallene betyr",
+   "tekst": "Avsetninger er bevilgning fra KD som ikke er brukt ved årsslutt og som overføres til neste år. Serien her er summen fra note 15 del IV i årsregnskapet, inkludert bevilgning som ikke er inntektsført. Avsetningene falt til 1,7 prosent av bevilgningen i 2024 og steg til 10,8 prosent i 2025. Økningen gjelder i hovedsak investeringer og bygg; bufferen til andre formål var 0 i 2024 og 41,1 mill. kr i 2025. Teksten i årsrapporten for 2023 og 2024 oppgir et lavere beløp fordi ikke-inntektsført bevilgning er holdt utenfor der.",
+   "kilder": [
+    {
+     "kilde": "arsrapport-2025",
+     "side": 76
+    },
+    {
+     "kilde": "arsrapport-2024",
+     "side": 70
+    },
+    {
+     "kilde": "arsrapport-2023",
+     "side": 52
+    }
+   ]
+  },
+  {
+   "tittel": "Langtidsprognosen: strammere rammer framover",
+   "tekst": "Årsplanen for 2027 legger til grunn at kuttene i statsbudsjettet fortsetter med om lag 1 prosent av tildelingen per år, og at midlene til studieplassene fra 2020 fases ut. Samlet ramme fra KD ventes å falle fra 1 696 mill. kr i 2027 til 1 621 mill. kr i 2031. Budsjettet forutsetter at studieproduksjonen holdes på dagens nivå, og det kalles en betydelig risiko. Resultatbasert uttelling for flere studiepoeng og doktorgrader gir et anslått tillegg på 29,7 mill. kr i 2027.",
+   "kilder": [
+    {
+     "kilde": "arsplan-2027",
+     "side": 8
+    },
+    {
+     "kilde": "arsplan-2027",
+     "side": 9
+    }
+   ]
+  },
+  {
+   "tittel": "Årsstudiet i bærekraftig økonomi og ledelse i budsjettet",
+   "tekst": "Ifølge årsplanen for 2027 har det ettårige studiet i bærekraftig økonomi og ledelse bidratt til å øke NMBUs samlede tildeling med litt over 40 mill. kr fra 2025 til 2027. Handelshøyskolen står for 9,2 mill. kr av den forventede økningen i resultatbasert uttelling i 2027.",
+   "kilder": [
+    {
+     "kilde": "arsplan-2027",
+     "side": 8
+    },
+    {
+     "kilde": "arsplan-2027",
+     "side": 9
+    }
+   ]
+  },
+  {
+   "tittel": "Budsjettfordelingen til fakultetene for 2026",
+   "tekst": "Fakultetene fikk samlet 1 036,6 mill. kr i nettoramme for 2026, mot 940,5 mill. kr i 2025. Mye av økningen skyldes ny internhusleie. Korrigert for lønns- og prisvekst og internhusleie tilsvarer rammene en liten realnedgang. Rammene fastsettes etter budsjettmodellen. Ved Veterinærhøgskolen og Handelshøyskolen er økningen over 20 prosent uten korrigering, og ved Handelshøyskolen også etter korrigering for internhusleie.",
+   "kilder": [
+    {
+     "kilde": "arsplan-2026",
+     "side": 13
+    }
+   ]
+  },
+  {
+   "tittel": "Handelshøyskolen: resultat 2025 og prognose 2026",
+   "tekst": "Handelshøyskolen endte 2025 med et lite merforbruk på 0,7 mill. kr, svakere enn prognosen, hovedsakelig fordi aktivitet i flere eksternt finansierte prosjekter ble utsatt. Fakultetet fikk tilslag på prosjekter for om lag 50 mill. kr i 2025, de fleste med oppstart i 2026. I fakultetets egen rapport per 2. tertial 2026 er prognosen et driftsresultat på 12,5 mill. kr for året, 1,2 mill. kr over revidert budsjett. Avviket skyldes særlig at fire vitenskapelige stillinger først ventes besatt i 2027. Langtidsbudsjettet fra desember 2025 har overskudd hvert år fram til 2030.",
+   "kilder": [
+    {
+     "kilde": "tertial-2025-t3",
+     "side": 10
+    },
+    {
+     "kilde": "tertial-2025-t3",
+     "side": 11
+    },
+    {
+     "kilde": "hh-tertial-2026-t2",
+     "side": 1
+    },
+    {
+     "kilde": "hh-tertial-2026-t2",
+     "side": 2
+    },
+    {
+     "kilde": "hh-langtidsbudsjett-2026-2030",
+     "side": 3
+    }
+   ]
+  },
+  {
+   "tittel": "Etatsstyringsmøtet med KD i 2026",
+   "tekst": "I etatsstyringsmøtet 22. mai 2026 vurderte KD at NMBU har god samlet måloppnåelse og at økonomien er blitt bedre. KD pekte samtidig på et betydelig vedlikeholds- og investeringsbehov i bygningsmassen og behovet for økonomisk handlingsrom. KD ba også om mer analyse i årsrapporten. Tertialrapporten viser til et oppgraderingsbehov i bygningsmassen på 5 milliarder kr.",
+   "kilder": [
+    {
+     "kilde": "etatsstyring-2026",
+     "side": 1
+    },
+    {
+     "kilde": "etatsstyring-2026",
+     "side": 2
+    },
+    {
+     "kilde": "tertial-2026-t1",
+     "side": 10
+    }
+   ]
+  },
+  {
+   "tittel": "Hva NMBU har bedt om utenfor rammen",
+   "tekst": "I budsjettforslagene til KD for 2024, 2025 og 2026 har flere studieplasser på veterinærstudiet stått øverst, sammen med gjennomføring av campusutviklingsplanen og modernisering av infrastruktur og utstyr.",
+   "kilder": [
+    {
+     "kilde": "budsjettforslag-oversikt",
+     "side": 1
+    }
+   ]
+  }
+ ]
+}
