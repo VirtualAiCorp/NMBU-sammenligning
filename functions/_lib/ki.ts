@@ -14,7 +14,7 @@ export interface KiEnv {
   MISTRAL_API_KEY?: string; MISTRAL_MODEL?: string; MISTRAL_BASE_URL?: string;
   INTERN_PASSORD?: string;
 }
-export const VERSJON = '2026-09-29a';
+export const VERSJON = '2026-09-30a';
 export const CLAUDE_MODELL = 'claude-opus-5-5';
 
 /** Hvorfor KI-funksjonene ikke kan svare nå, eller null. Nøkkelen til de interne dataene skal aldri ligge ved siden av modellen. */

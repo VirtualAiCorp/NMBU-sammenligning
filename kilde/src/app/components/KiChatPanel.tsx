@@ -30,6 +30,7 @@ const EASE = 'cubic-bezier(0.22, 1, 0.36, 1)';
  */
 const SIDER: [RegExp, string, string, string?][] = [
   [/strategi|handlingsplan|satsing|satser på|visjon/i, 'markedsstatus', 'Markedsstatus · Strategier mot 2030', 'STRATEGIER'],
+  [/tertial|prognose|merforbruk|mindreforbruk|avsetning|ubrukte|akkumulert|balanse|nettoramme|rammebevilgning|internregnskap|årsresultat|budsjett|tildelingsbrev|utviklingsavtale|måltall|styringsparamet|nye studieplasser|driftsresultat|driftsinntekt|driftskostnad|bidragsinntekt|oppdragsinntekt|nedbetaling|resultatgrad|økonomien (til|ved|på)/i, 'styring', 'Styringsinformasjon', 'STYRINGSINFORMASJON'],
   [/gjennomf|frafall|fullf|normert tid|startkull/i, 'gjennomforing', 'Gjennomføring'],
   [/engelsk|innreisende|utveksling|utenlandsk|statsborger/i, 'studentene', 'Studentene', 'STUDENTENE'],
   [/studiebarometer|tilfreds|undervisningen\b|undervisningskvalitet|tilbakemeld|veiledning|læringsmiljø|yrkesrelevans|engasjement|vurderingsform|helhetsvurdering/i, 'studiebarometer', 'Studiebarometeret', 'STUDIEBAROMETERET'],
@@ -44,13 +45,13 @@ const SIDER: [RegExp, string, string, string?][] = [
 ];
 const finnSide = (q: string) => SIDER.find(([re]) => re.test(q));
 /** Modulen en nøkkeltallslinje hører til (merket først i teksten), ellers opptak (null). */
-const modulAv = (l: DataLinje) => /^(?:RANGERING )?(STUDENTENE|STUDIEBAROMETERET|EMNER OG KARAKTERER|FAGMILJØET|SØKERGRUNNLAGET|STRATEGIER|ARBEIDSMARKEDET|INNTEKT)\b/.exec(l[2])?.[1] ?? null;
+const modulAv = (l: DataLinje) => /^(?:RANGERING )?(STUDENTENE|STUDIEBAROMETERET|EMNER OG KARAKTERER|FAGMILJØET|SØKERGRUNNLAGET|STRATEGIER|ARBEIDSMARKEDET|INNTEKT|STYRINGSINFORMASJON)\b/.exec(l[2])?.[1] ?? null;
 /** Moduler som ikke hører til et program, men til fakultet/institusjon (fagmiljøet) eller fylke (søkergrunnlaget). */
-const FELLES_MODUL = new Set(['FAGMILJØET', 'SØKERGRUNNLAGET', 'STRATEGIER', 'INNTEKT']);
+const FELLES_MODUL = new Set(['FAGMILJØET', 'SØKERGRUNNLAGET', 'STRATEGIER', 'INNTEKT', 'STYRINGSINFORMASJON']);
 /** Sidene for hele NMBU (App: Faculty-verdiene «nmbu-…»). */
 /** Fakulteter med «Strategier mot 2030» i markedsstatus (som MED_STRATEGIER i FacultyMarketStatus.tsx) */
 const MED_STRATEGIER = new Set<FacultyId>(['hh']);
-const NMBU_SIDE: Record<string, string> = { 'nmbu-fagmiljo': 'Fagmiljøet', 'nmbu-sokergrunnlag': 'Søkergrunnlaget' };
+const NMBU_SIDE: Record<string, string> = { 'nmbu-fagmiljo': 'Fagmiljøet', 'nmbu-sokergrunnlag': 'Søkergrunnlaget', 'nmbu-okonomi-drift': 'Økonomi og drift', 'nmbu-utdanning': 'Utdanning' };
 interface Maal { fak: string; visning: string; gruppe?: string; tekst: string; anker?: string }
 
 /** Programgrupper i kildene: vanlige linjer gir én, oversiktslinjene alle programmene de lister. */

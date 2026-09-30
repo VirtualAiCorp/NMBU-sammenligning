@@ -648,6 +648,71 @@ def produksjon_linjer():
     return ut
 
 
+NIVAANAVN = {"NMBU": "Hele NMBU", "hh": "HH", "realtek": "REALTEK", "landsam": "LANDSAM", "mina": "MINA", "vet": "VET", "biovit": "BIOVIT", "kbm": "KBM"}
+LEDELSE_DEL = {"okonomi": ("Økonomi og drift", "nmbu-okonomi-drift"), "utdanning": ("Utdanning", "nmbu-utdanning")}
+
+
+def ledelse_tall(v, enhet):
+    """Verdi med desimalkomma: hele tall for antall, ellers én desimal (to under 10)."""
+    if v is None:
+        return "–"
+    if "antall" in (enhet or "") and float(v).is_integer():
+        return nf(v, 0)
+    return nf(v, 1 if abs(v) >= 10 else 2).replace(",00", "")
+
+
+def ledelse_linjer():
+    """STYRINGSINFORMASJON: NMBUs egne åpne tall (tertialrapporter, årsrapporter, tildelingsbrev), public/ledelse/nmbu.json
+    (scripts/build-ledelse.py). Én linje per serie med alle nivåene (hele NMBU og fakultetene side om side), og én per
+    tekstpunkt. Kildene står med dokument, dato og side."""
+    d = public_json("ledelse/nmbu.json")
+    if not d:
+        return []
+    kilder = {k["id"]: k for k in d.get("kilder", [])}
+
+    def kildetekst(refs):
+        sett = {}
+        for kid, side in refs:
+            k = kilder.get(kid)
+            if not k:
+                continue
+            e = sett.setdefault(kid, [f"{k['tittel']}{' (' + k['dato'] + ')' if k.get('dato') else ''}", []])
+            if side and side not in e[1]:
+                e[1].append(side)
+        return "; ".join(f"{t}{', s. ' + ', '.join(str(x) for x in sorted(sider, key=lambda x: int(str(x).split('–')[0])))  if sider else ''}" for t, sider in sett.values())
+
+    ut = []
+    for del_, (delnavn, side) in LEDELSE_DEL.items():
+        blokk = d.get(del_) or {}
+        grupper = {}
+        for serie in blokk.get("serier", []):
+            grupper.setdefault(serie["id"], []).append(serie)
+        for sid, serier in grupper.items():
+            forste = serier[0]
+            hode = f"STYRINGSINFORMASJON · {delnavn} · {forste['navn']} ({forste['enhet']}), NMBUs egne tall:"
+            deler, refs = [], []
+            for serie in sorted(serier, key=lambda x: list(NIVAANAVN).index(x["nivaa"]) if x["nivaa"] in NIVAANAVN else 99):
+                pk = sorted(serie["punkter"], key=lambda x: x["periode"])
+                if not pk:
+                    continue
+                verdier = ", ".join(f"{x['periode']}{' ' + x['type'] if x['type'] not in ('år',) else ''}: {ledelse_tall(x['verdi'], serie['enhet'])}" for x in pk)
+                deler.append(f"{NIVAANAVN.get(serie['nivaa'], serie['nivaa'])}: {verdier}")
+                refs += [(x.get("kilde"), x.get("side")) for x in pk]
+            tekst = f"{hode} " + "; ".join(deler) + f". Kilder: {kildetekst(refs)}."
+            if len(tekst) <= 2300:
+                ut.append([f"Styringsinformasjon: {delnavn}", forste["navn"], tekst, "l", side, ""])
+            else:  # for lang: én linje per nivå
+                for serie, del_tekst in zip(sorted(serier, key=lambda x: list(NIVAANAVN).index(x["nivaa"]) if x["nivaa"] in NIVAANAVN else 99), deler):
+                    t = f"{hode} {del_tekst}. Kilder: {kildetekst([(x.get('kilde'), x.get('side')) for x in serie['punkter']])}."
+                    ut.append([f"Styringsinformasjon: {delnavn}", f"{forste['navn']} · {NIVAANAVN.get(serie['nivaa'], serie['nivaa'])}", t[:2390], "l", side, ""])
+        for x in blokk.get("tekst", []):
+            ut.append([f"Styringsinformasjon: {delnavn}", x["tittel"], f"STYRINGSINFORMASJON · {delnavn} · {x['tittel']}: {x['tekst']} Kilder: {kildetekst([(k.get('kilde'), k.get('side')) for k in x.get('kilder', [])])}."[:2390], "l", side, ""])
+    ut.append(["Styringsinformasjon", "forklaring", "STYRINGSINFORMASJON · slik leses tallene: periode «2026-T1» er 1. tertial 2026; «prognose» er anslaget for hele året gitt ved det tertialet; "
+               "«budsjett» og «mål» er planer; tall uten merke er faktiske årstall. Årsresultat og balanse for fakultetene er internregnskapet for tildelte midler (mill. kr, negativt tall er merforbruk). "
+               f"Kildene er NMBUs offentlige styresaker, årsrapporter og Kunnskapsdepartementets tildelingsbrev, hentet {d.get('hentet', '')}.", "l", "nmbu-okonomi-drift", ""])
+    return ut
+
+
 def strategi_linjer(fak):
     """STRATEGIER: konkurrentenes strategier mot 2030 (public/markedsstatus/<fak>/strategier.json, build-strategier.py)."""
     p = ROOT / "kilde" / "public" / "markedsstatus" / fak / "strategier.json"
@@ -731,7 +796,7 @@ def main():
     o = oversikt(grunnlag, "hele NMBU") + fagmiljo_nmbu()
     json.dump({"fakultet": None, "navn": "Hele NMBU", "linjer": o}, open(UT / "nmbu-data.json", "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     print(f"nmbu: {len(o)} oversikts- og fagmiljølinjer")
-    f = sokergrunnlag() + forskning_linjer() + produksjon_linjer()
+    f = sokergrunnlag() + forskning_linjer() + produksjon_linjer() + ledelse_linjer()
     json.dump({"fakultet": None, "navn": "Felles", "linjer": f}, open(UT / "felles-data.json", "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     print(f"felles: {len(f)} søkergrunnlagslinjer, {(UT / 'felles-data.json').stat().st_size // 1024} kB")
     m = metode()
