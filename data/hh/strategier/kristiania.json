@@ -10,7 +10,8 @@
       "nivaa": "institusjon",
       "vedtatt": "2026-06",
       "url": "https://www.kristiania.no/contentassets/ab297570b439490f8f69eea879890ef4/hoyskolen-kristiania-strategi-2026-2030.pdf",
-      "status": "gjeldende"
+      "status": "gjeldende",
+      "pdf": "strategier/kristiania-strategi-2026-2030.pdf"
     },
     {
       "tittel": "Strategi for utdanning, Høyskolen Kristiania 2020–2025 (delstrategi)",
@@ -18,7 +19,8 @@
       "nivaa": "institusjon",
       "vedtatt": null,
       "url": "https://www.kristiania.no/contentassets/82aa4991e5f1442ebfa29741663cb5e3/deltrsategi---utdanning.pdf",
-      "status": "utløpt"
+      "status": "utløpt",
+      "pdf": "strategier/kristiania-delstrategi-utdanning-2020-2025.pdf"
     },
     {
       "tittel": "Årsrapport 2025, Høyskolen Kristiania (supplerende kilde)",
@@ -34,7 +36,8 @@
       "nivaa": "institusjon",
       "vedtatt": null,
       "url": "https://www.kristiania.no/contentassets/dbfb8dd58cd141feb0d341768aa116b0/kvalitetsrapporten-2025.pdf",
-      "status": "gjeldende"
+      "status": "gjeldende",
+      "pdf": "strategier/kristiania-kvalitetsrapport-2025.pdf"
     },
     {
       "tittel": "Kristiania innfører ny organisasjonsmodell (nyhetssak, styrevedtak 12.12.2025)",
@@ -153,23 +156,28 @@
   "maal": [
     {
       "tekst": "Bli Norges ledende UH-institusjon innen anvendt og arbeidslivsrettet utdanning og forskning innen 2030.",
-      "kilde": 0
+      "kilde": 0,
+      "side": 6
     },
     {
       "tekst": "Levere søknad om akkreditering som universitet innen utgangen av 2030.",
-      "kilde": 0
+      "kilde": 0,
+      "side": 8
     },
     {
       "tekst": "Bli den mest effektive, smidige og konkurransedyktige UH-institusjonen i Norge i løpet av strategiperioden (2026–2030).",
-      "kilde": 0
+      "kilde": 0,
+      "side": 7
     },
     {
       "tekst": "Seks av ti bachelorstudenter skal fullføre på normert tid (like under 60 % i 2025).",
-      "kilde": 2
+      "kilde": 2,
+      "side": 17
     },
     {
       "tekst": "Minst 75 % av masterstudentene skal fullføre på normert tid (83 % i 2025).",
-      "kilde": 2
+      "kilde": 2,
+      "side": 17
     }
   ],
   "studieportefolje": "Høyskolen hadde 15 035 studenter i 2025 (10 765 på bachelor, 1 190 på master), med stedlige studier i Oslo og Bergen, stor nettportefølje og to ph.d.-program (kommunikasjon og ledelse; anvendt informasjonsteknologi). Økonomi-, ledelse-, innovasjons- og markedsføringsfag samles fra august 2026 i Fakultet for ledelse og økonomi, med institutter for kommunikasjon, ledelse og innovasjon og markedsføring og økonomi, mens teknologi flyttes til Fakultet for helse og teknologi. Kristiania er Norges største tilbyder av høyskolestudier på nett. Strategien legger opp til robust porteføljestyring og raskere utvikling av nye tilbud; opptaket til tre kunstbachelorer er satt på pause fra høsten 2026 (erstattes av en samlet Performing Arts-bachelor planlagt fra 2027), og fagskoledelen utvides gjennom oppkjøpet av NKI Fagskoler og MedLearn.",

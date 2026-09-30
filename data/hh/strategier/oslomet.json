@@ -50,7 +50,8 @@
       "nivaa": "institusjon",
       "vedtatt": null,
       "url": "https://www.regjeringen.no/contentassets/c9a57239d06c47ef9141b771db1d6353/utviklingsavtale-for-oslomet-20232026.pdf",
-      "status": "gjeldende"
+      "status": "gjeldende",
+      "pdf": "strategier/oslomet-utviklingsavtale-2023-2026.pdf"
     },
     {
       "tittel": "Utkast til ny utviklingsavtale 2027–2030 (styresak 12.02.2026; nyhetssak i Khrono, innholdet ikke funnet offentlig)",
@@ -66,7 +67,8 @@
       "nivaa": "institusjon",
       "vedtatt": "2025-12",
       "url": "https://ansatt.oslomet.no/documents/d/tilsatt/tildelingsbrev-2026-oslomet-storbyuniversitetet-pdf",
-      "status": "gjeldende"
+      "status": "gjeldende",
+      "pdf": "strategier/oslomet-tildelingsbrev-2026.pdf"
     },
     {
       "tittel": "Regnskapsrapport for 2025 – Fakultet for samfunnsvitenskap (fakultetsstyresak 28.01.2026; supplerende kilde, ikke strategi)",
@@ -74,7 +76,8 @@
       "nivaa": "handelshøyskole/fakultet",
       "vedtatt": "2026-01",
       "url": null,
-      "status": "gjeldende"
+      "status": "gjeldende",
+      "pdf": "OsloMet_Regnskapsrapport_Fakultet_samfunnsvitenskap_2025.pdf"
     },
     {
       "tittel": "Høringsinnspill fra Handelshøyskolen om faglig profil for Campus Romerike, 27.09.2024 (innspill, ikke vedtatt strategi)",
@@ -82,7 +85,8 @@
       "nivaa": "handelshøyskole/fakultet",
       "vedtatt": null,
       "url": "https://ansatt.oslomet.no/documents/585743/158945280/HHS_H%C3%B8ringsinnspill+fra+Handelsh%C3%B8yskolen+Campus+Lillestr%C3%B8m+270924+1187907_1_1.pdf/01963f40-8d95-3f22-8088-78bd48626c4d?t=1727769416257",
-      "status": "utløpt"
+      "status": "utløpt",
+      "pdf": "strategier/oslomet-hhs-horingsinnspill-campus-romerike.pdf"
     },
     {
       "tittel": "Khrono 23.10.2024: «OsloMet-rektor har valgt løsning for Lillestrøm. Vil splitte opp to institutter» (nyhetssak)",
@@ -233,15 +237,18 @@
     },
     {
       "tekst": "Økt opptak på bachelor i økonomi og administrasjon med 100 studenter per år, fullt innfaset for tre kull i 2025.",
-      "kilde": 8
+      "kilde": 8,
+      "side": 1
     },
     {
       "tekst": "SAM-mål for 2025: inntekter fra Forskningsrådet på 37 per faglig årsverk (resultat 51; enhet ikke oppgitt, trolig tusen kr).",
-      "kilde": 8
+      "kilde": 8,
+      "side": 4
     },
     {
       "tekst": "SAM-mål for 2025: EU-inntekter på 14 per faglig årsverk (resultat 12) og annen BOA på 117 per faglig årsverk (resultat 128).",
-      "kilde": 8
+      "kilde": 8,
+      "side": "4–5"
     },
     {
       "tekst": "Internasjonal akkreditering av Handelshøyskolen (AACSB) innen 2030, som er slutten av handlingsplanperioden.",

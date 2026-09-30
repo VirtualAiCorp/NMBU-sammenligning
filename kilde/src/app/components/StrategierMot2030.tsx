@@ -1,24 +1,28 @@
-import { useEffect, useMemo, useState } from 'react';
-import { Compass, ChevronDown, ChevronUp, ExternalLink, Target, Sparkles, Repeat, Lightbulb, AlertTriangle, Loader2 } from 'lucide-react';
+import { createContext, useContext, useEffect, useMemo, useState } from 'react';
+import { Compass, ChevronDown, ChevronUp, ExternalLink, Target, Sparkles, Repeat, Lightbulb, AlertTriangle, Loader2, Download, FileText, BookMarked } from 'lucide-react';
 
 /**
  * «Strategier mot 2030» under markedsstatus: hva handelshøyskolene sier i strategiene sine, samlet per institusjon og
  * på tvers (går igjen, skiller seg ut, tallfestede mål). Data: public/markedsstatus/<fakultet>/strategier.json,
  * bygd av scripts/build-strategier.py fra data/<fakultet>/strategier/*.json (research 25.09.2026).
+ * Kildeføring: hvert hovedpunkt har en kildeboks med dokumentene og sidene det bygger på. Sidetallene er fysiske
+ * PDF-sider og lenker rett til siden; PDF-ene ligger også lokalt (markedsstatus/<fakultet>/strategier/) for nedlasting.
  */
-interface Strategi { tittel: string; periode?: string | null; nivaa?: string; vedtatt?: string | null; url?: string | null; status?: string }
-interface Satsing { tema: string; tekst: string; kilde?: number | null; side?: number | string | null }
+interface Strategi { tittel: string; periode?: string | null; nivaa?: string; vedtatt?: string | null; url?: string | null; status?: string; pdf?: string | null }
+type Side = number | string;
+interface Satsing { tema: string; tekst: string; kilde?: number | null; side?: Side | null }
+interface KildeRef { inst: string; kilde: number; sider?: Side[] | null }
 interface Institusjon {
   id: string; navn: string; enhet: string; type?: string;
-  strategier: Strategi[]; visjon?: string | null; satsinger: Satsing[]; maal: { tekst: string; kilde?: number | null }[];
+  strategier: Strategi[]; visjon?: string | null; satsinger: Satsing[]; maal: { tekst: string; kilde?: number | null; side?: Side | null }[];
   studieportefolje?: string | null; akkreditering?: string | null; saerpreg?: string | null;
   sitat?: { tekst: string; kilde?: number | null } | null; pagaende?: string | null; mangler?: string | null; hentet?: string;
 }
 interface Syntese {
   ingress: string;
-  gaarIgjen: { tittel: string; tekst: string; inst: string[]; tema?: string }[];
-  skillerSeg: { inst: string; tittel: string; tekst: string }[];
-  forHH: { tittel: string; tekst: string }[];
+  gaarIgjen: { tittel: string; tekst: string; inst: string[]; tema?: string; kilder?: KildeRef[] }[];
+  skillerSeg: { inst: string; tittel: string; tekst: string; kilder?: KildeRef[] }[];
+  forHH: { tittel: string; tekst: string; kilder?: KildeRef[] }[];
   forbehold: string;
 }
 interface Data { hentet: string; temaer: string[]; institusjoner: Institusjon[]; syntese: Syntese | null }
@@ -39,13 +43,95 @@ function Overskrift({ ikon: Ikon, tekst, under }: { ikon: typeof Compass; tekst:
   );
 }
 
-function Kildelenke({ inst, i }: { inst: Institusjon; i?: number | null }) {
+/** Hvor de lokale PDF-ene ligger (markedsstatus/<fakultet>/) */
+const Mappe = createContext('');
+const erPdfUrl = (u?: string | null) => !!u && /\.pdf($|[?#])/i.test(u);
+const forsteSide = (side?: Side | null) => { const n = parseInt(String(side ?? ''), 10); return Number.isFinite(n) && n > 0 ? n : null; };
+/** Lenke til dokumentet, til riktig side når det er en PDF: lokal kopi først, ellers originalen */
+function dokLenke(s: Strategi, mappe: string, side?: Side | null) {
+  const n = forsteSide(side);
+  if (s.pdf) return `${mappe}${s.pdf}${n ? `#page=${n}` : ''}`;
+  if (!s.url) return null;
+  return erPdfUrl(s.url) && n ? `${s.url.split('#')[0]}#page=${n}` : s.url;
+}
+const dokNavn = (s: Strategi) => `${s.tittel}${s.periode && !s.tittel.includes(s.periode) ? ` (${s.periode})` : ''}`;
+
+function Kildelenke({ inst, i, side }: { inst: Institusjon; i?: number | null; side?: Side | null }) {
+  const mappe = useContext(Mappe);
   const s = i != null ? inst.strategier[i] : undefined;
   if (!s) return null;
-  const tekst = `${s.tittel}${s.periode ? ` (${s.periode})` : ''}`;
-  return s.url
-    ? <a href={s.url} target="_blank" rel="noreferrer" title={tekst} className="inline-flex items-center gap-0.5 ml-1 align-baseline" style={{ ...liten, color: 'var(--nmbu-green-dark)' }}>[{i! + 1}]</a>
-    : <span title={tekst} className="ml-1" style={liten}>[{i! + 1}]</span>;
+  const href = dokLenke(s, mappe, side);
+  const tekst = `${dokNavn(s)}${side ? `, s. ${side}` : ''}`;
+  const merke = `[${i! + 1}${side ? `, s. ${side}` : ''}]`;
+  return href
+    ? <a href={href} target="_blank" rel="noreferrer" title={`${tekst} (åpnes i ny fane)`} className="ml-1 align-baseline whitespace-nowrap hover:underline" style={{ ...liten, color: 'var(--nmbu-green-dark)' }}>{merke}</a>
+    : <span title={tekst} className="ml-1 whitespace-nowrap" style={liten}>{merke}</span>;
+}
+
+/**
+ * Kildeboksen under et hovedpunkt: dokumentene punktet bygger på, gruppert per dokument, med sidelenker,
+ * lenke til originalen og nedlasting av PDF-en når den finnes lokalt.
+ */
+function Kildeboks({ refs, inst }: { refs?: KildeRef[]; inst: Institusjon[] }) {
+  const mappe = useContext(Mappe);
+  const [alle, setAlle] = useState(false);
+  const dok = useMemo(() => {
+    const m = new Map<string, { i: Institusjon; s: Strategi; sider: Side[] }>();
+    for (const r of refs ?? []) {
+      const i = inst.find((x) => x.id === r.inst);
+      const s = i?.strategier[r.kilde];
+      if (!i || !s) continue;
+      const k = `${r.inst}|${r.kilde}`;
+      const e = m.get(k) ?? { i, s, sider: [] };
+      for (const sd of r.sider ?? []) if (!e.sider.includes(sd)) e.sider.push(sd);
+      m.set(k, e);
+    }
+    return [...m.values()].map((e) => ({ ...e, sider: e.sider.sort((a, b) => (forsteSide(a) ?? 0) - (forsteSide(b) ?? 0)) }));
+  }, [refs, inst]);
+  if (!dok.length) return null;
+  const vis = alle ? dok : dok.slice(0, 3);
+  return (
+    <div className="mt-2 rounded-lg px-2.5 py-2 strategi-kildeboks" style={{ backgroundColor: 'var(--nmbu-beige-light)', border: '1px solid var(--nmbu-neutral-3)' }}>
+      <div className="flex items-center gap-1.5 mb-1" style={{ ...liten, fontWeight: 700, color: 'var(--nmbu-neutral-1)' }}>
+        <BookMarked className="w-3 h-3" /> Kilder ({dok.length})
+      </div>
+      <ul className="space-y-1">
+        {vis.map(({ i, s, sider }) => {
+          const hovedlenke = dokLenke(s, mappe, sider[0]);
+          return (
+            <li key={`${i.id}-${s.tittel}`} className="flex items-start gap-1.5" style={{ fontSize: 11, lineHeight: 1.45, color: 'var(--nmbu-neutral-1)' }}>
+              <FileText className="w-3 h-3 mt-0.5 shrink-0" style={{ color: 'var(--nmbu-neutral-2)' }} />
+              <span className="min-w-0 flex-1">
+                <b style={{ color: 'var(--nmbu-neutral)' }}>{i.navn}</b>
+                {' · '}
+                {hovedlenke
+                  ? <a href={hovedlenke} target="_blank" rel="noreferrer" className="hover:underline" style={{ color: 'var(--nmbu-green-dark)' }}>{dokNavn(s)}</a>
+                  : <span>{dokNavn(s)}</span>}
+                {sider.length > 0 && (
+                  <span className="whitespace-nowrap">
+                    {' · s. '}
+                    {sider.map((sd, k) => {
+                      const href = dokLenke(s, mappe, sd);
+                      return <span key={k}>{k > 0 && ', '}{href ? <a href={href} target="_blank" rel="noreferrer" title={`Åpne side ${sd}`} className="hover:underline" style={{ color: 'var(--nmbu-green-dark)', fontWeight: 600 }}>{sd}</a> : sd}</span>;
+                    })}
+                  </span>
+                )}
+                <span className="inline-flex items-center gap-2 ml-2 align-middle">
+                  {s.url && <a href={s.url} target="_blank" rel="noreferrer" title="Åpne originalen hos institusjonen" aria-label={`Originalen: ${dokNavn(s)}`} style={{ color: 'var(--nmbu-neutral-2)' }}><ExternalLink className="w-3 h-3" /></a>}
+                  {s.pdf && <a href={`${mappe}${s.pdf}`} download title="Last ned PDF" aria-label={`Last ned PDF: ${dokNavn(s)}`} style={{ color: 'var(--nmbu-neutral-2)' }}><Download className="w-3 h-3" /></a>}
+                </span>
+              </span>
+            </li>
+          );
+        })}
+      </ul>
+      {dok.length > 3 && (
+        <button onClick={() => setAlle((a) => !a)} className="mt-1" style={{ ...liten, color: 'var(--nmbu-green-dark)', fontWeight: 600 }}>
+          {alle ? 'Vis færre' : `Vis alle ${dok.length} kilder`}
+        </button>
+      )}
+    </div>
+  );
 }
 
 export function StrategierMot2030({ fakultet }: { fakultet: string }) {
@@ -81,6 +167,7 @@ export function StrategierMot2030({ fakultet }: { fakultet: string }) {
   const veksle = (id: string) => setApne((a) => { const n = new Set(a); if (n.has(id)) n.delete(id); else n.add(id); return n; });
 
   return (
+    <Mappe.Provider value={`${import.meta.env.BASE_URL}markedsstatus/${fakultet}/`}>
     <div className="space-y-6">
       {/* Innledning */}
       <div className="rounded-xl p-6" style={kort}>
@@ -117,6 +204,7 @@ export function StrategierMot2030({ fakultet }: { fakultet: string }) {
                   <div className="flex flex-wrap gap-1 mt-1">
                     {g.inst.map((id) => <span key={id} className="text-[10px] px-1.5 py-0.5 rounded" style={{ backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)', fontWeight: 600 }}>{navnAv(id)}</span>)}
                   </div>
+                  <Kildeboks refs={g.kilder} inst={inst} />
                 </li>
               ))}
             </ul>
@@ -130,6 +218,7 @@ export function StrategierMot2030({ fakultet }: { fakultet: string }) {
                     <span className="px-1.5 py-0.5 rounded mr-1.5 text-[10px]" style={{ backgroundColor: 'var(--nmbu-green-4)', color: 'var(--nmbu-green-dark)', fontWeight: 700 }}>{navnAv(x.inst)}</span>{x.tittel}
                   </div>
                   <p className="mt-0.5">{x.tekst}</p>
+                  <Kildeboks refs={x.kilder} inst={inst} />
                 </li>
               ))}
             </ul>
@@ -141,6 +230,7 @@ export function StrategierMot2030({ fakultet }: { fakultet: string }) {
                 <li key={x.tittel} className="text-xs" style={{ color: 'var(--nmbu-neutral-1)', lineHeight: 1.5 }}>
                   <div className="text-sm" style={{ fontWeight: 600, color: 'var(--nmbu-neutral)' }}>{x.tittel}</div>
                   <p className="mt-0.5">{x.tekst}</p>
+                  <Kildeboks refs={x.kilder} inst={inst} />
                 </li>
               ))}
             </ul>
@@ -190,7 +280,7 @@ export function StrategierMot2030({ fakultet }: { fakultet: string }) {
               <div key={i.id}>
                 <div className="text-sm mb-1" style={{ fontWeight: 600, color: 'var(--nmbu-green-dark)' }}>{i.navn}</div>
                 <ul className="space-y-1 text-xs list-disc pl-4" style={{ color: 'var(--nmbu-neutral-1)' }}>
-                  {i.maal.map((m, k) => <li key={k}>{m.tekst}<Kildelenke inst={i} i={m.kilde} /></li>)}
+                  {i.maal.map((m, k) => <li key={k}>{m.tekst}<Kildelenke inst={i} i={m.kilde} side={m.side} /></li>)}
                 </ul>
               </div>
             ))}
@@ -246,7 +336,7 @@ export function StrategierMot2030({ fakultet }: { fakultet: string }) {
                           <div key={t}>
                             {!tema && <div className="text-[10px] uppercase mb-0.5" style={{ letterSpacing: '0.05em', fontWeight: 700, color: 'var(--nmbu-green-dark)' }}>{t}</div>}
                             <ul className="space-y-1 list-disc pl-4">
-                              {satsinger.filter((x) => x.tema === t).map((x, k) => <li key={k}>{x.tekst}<Kildelenke inst={i} i={x.kilde} />{x.side ? <span style={liten}> s. {x.side}</span> : null}</li>)}
+                              {satsinger.filter((x) => x.tema === t).map((x, k) => <li key={k}>{x.tekst}<Kildelenke inst={i} i={x.kilde} side={x.side} /></li>)}
                             </ul>
                           </div>
                         ))}
@@ -267,6 +357,7 @@ export function StrategierMot2030({ fakultet }: { fakultet: string }) {
                             <li key={k}>
                               {x.url ? <a href={x.url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1" style={{ color: 'var(--nmbu-green-dark)' }}>{x.tittel} <ExternalLink className="w-3 h-3" /></a> : x.tittel}
                               <span style={liten}>{[x.periode, x.nivaa, x.vedtatt ? `vedtatt ${x.vedtatt}` : null, x.status].filter(Boolean).map((v) => ` · ${v}`).join('')}</span>
+                              {x.pdf && <a href={`${import.meta.env.BASE_URL}markedsstatus/${fakultet}/${x.pdf}`} download className="inline-flex items-center gap-0.5 ml-2" style={{ ...liten, color: 'var(--nmbu-green-dark)', fontWeight: 600 }}><Download className="w-3 h-3" /> PDF</a>}
                             </li>
                           ))}
                         </ol>
@@ -283,5 +374,6 @@ export function StrategierMot2030({ fakultet }: { fakultet: string }) {
 
       {s?.forbehold && <p className="text-xs flex gap-1.5" style={liten}><AlertTriangle className="w-3.5 h-3.5 shrink-0" /> {s.forbehold}</p>}
     </div>
+    </Mappe.Provider>
   );
 }

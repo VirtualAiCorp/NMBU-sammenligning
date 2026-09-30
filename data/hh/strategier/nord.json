@@ -10,7 +10,8 @@
       "nivaa": "institusjon",
       "vedtatt": "2020-12",
       "url": "https://www.nord.no/sites/default/files/2023-05/Strategi2030_engelsk.pdf",
-      "status": "gjeldende"
+      "status": "gjeldende",
+      "pdf": "strategier/nord-strategi-2030-engelsk.pdf"
     },
     {
       "tittel": "Strategy for Internationalization (delstrategi for internasjonalisering, Nord universitet)",
@@ -18,7 +19,8 @@
       "nivaa": "institusjon",
       "vedtatt": "2025-12",
       "url": "https://www.nord.no/sites/default/files/2025-12/Internasjonalisering-strategi-Nord.pdf",
-      "status": "gjeldende"
+      "status": "gjeldende",
+      "pdf": "strategier/nord-internasjonaliseringsstrategi.pdf"
     },
     {
       "tittel": "Action Plan for Internationalisation 2026 (handlingsplan med 22 tiltak)",
@@ -26,7 +28,8 @@
       "nivaa": "handlingsplan",
       "vedtatt": null,
       "url": "https://www.nord.no/sites/default/files/2026-03/Action-Plan-Internazionalisation-2026.pdf",
-      "status": "gjeldende"
+      "status": "gjeldende",
+      "pdf": "strategier/nord-handlingsplan-internasjonalisering-2026.pdf"
     },
     {
       "tittel": "Komplett innkalling, styret for Nord universitet 05.03.2026: Årsrapport 2025 med virksomhetsplan 2026, årsregnskap for fakulteter, første utkast til utviklingsavtale, valg av femte ph.d.-program",
@@ -34,7 +37,8 @@
       "nivaa": "institusjon",
       "vedtatt": "2026-03",
       "url": "https://www.nord.no/sites/default/files/2026-02/Komplett-innkalling-Styret-for-Nord-universitet-05-03-2026.pdf",
-      "status": "gjeldende"
+      "status": "gjeldende",
+      "pdf": "Nord_Universitetsstyret_Arsrapport_2025_moteinnkalling_05.03.2026.pdf"
     },
     {
       "tittel": "Ny utviklingsavtale mellom Nord universitet og KD 2027–2030 – siste utkast (styresak 54/26, 17.09.2026)",
@@ -42,7 +46,8 @@
       "nivaa": "utkast",
       "vedtatt": null,
       "url": "https://www.nord.no/sites/default/files/2026-09/Komplett-innkalling-Styret-for-Nord-universitet-17-09-2026.pdf",
-      "status": "utkast"
+      "status": "utkast",
+      "pdf": "strategier/nord-styret-2026-09-17.pdf"
     },
     {
       "tittel": "Studieportefølje 2027/2028 inkl. endelig portefølje for HHN (styresak 39/26, 18.06.2026)",
@@ -50,7 +55,8 @@
       "nivaa": "institusjon",
       "vedtatt": "2026-06",
       "url": "https://www.nord.no/sites/default/files/2026-06/Komplett-innkalling-Styret-for-Nord-universitet-18-06-2026.pdf",
-      "status": "gjeldende"
+      "status": "gjeldende",
+      "pdf": "strategier/nord-styret-2026-06-18.pdf"
     },
     {
       "tittel": "Møteprotokoll styret for Nord universitet 05.03.2026 (bl.a. vedtak om femte ph.d.-program)",
@@ -58,7 +64,8 @@
       "nivaa": "institusjon",
       "vedtatt": "2026-03",
       "url": "https://www.nord.no/sites/default/files/2026-03/Nord-protokoll-05-03-2026.pdf",
-      "status": "gjeldende"
+      "status": "gjeldende",
+      "pdf": "strategier/nord-protokoll-2026-03-05.pdf"
     },
     {
       "tittel": "Møteprotokoll styret for Nord universitet 18.06.2026 (studieportefølje, felles RSA, langtidsorden)",
@@ -66,7 +73,8 @@
       "nivaa": "institusjon",
       "vedtatt": "2026-06",
       "url": "https://www.nord.no/sites/default/files/2026-06/Nord-protokoll-18-06-2026.pdf",
-      "status": "gjeldende"
+      "status": "gjeldende",
+      "pdf": "strategier/nord-protokoll-2026-06-18.pdf"
     },
     {
       "tittel": "Fakultetets rapport om utdanningskvalitet – Handelshøgskolen 2023–2024 (UU-HHN sak 3-25)",
@@ -74,7 +82,8 @@
       "nivaa": "handelshøyskole/fakultet",
       "vedtatt": "2025-03",
       "url": "https://www.nord.no/sites/default/files/2025-03/Rapport-om-utdanningskvalitet-HHN-2023-2024.PDF",
-      "status": "gjeldende"
+      "status": "gjeldende",
+      "pdf": "strategier/nord-hhn-utdanningskvalitet-2023-2024.pdf"
     },
     {
       "tittel": "About the Business School – Nord University Business School (fakultetets nettside, nøkkeltall og sentre)",
@@ -91,7 +100,7 @@
       "tema": "Regional rolle",
       "tekst": "Første mål i den nye utviklingsavtalen er å være kunnskapsaktør for nordområdene og kystnære samfunn, gjennom SEA-EU, Arctic Six og UArctic og ved å dimensjonere porteføljen etter regionens behov. Ved HHN er dette forankret i Nordområdesenteret (med High North News), Center for High North Logistics og Business Index North.",
       "kilde": 4,
-      "side": 37
+      "side": 38
     },
     {
       "tema": "Innovasjon og entreprenørskap",
@@ -127,7 +136,7 @@
       "tema": "Akkreditering og rangering",
       "tekst": "HHN er vurdert som kvalifisert til å søke AACSB-akkreditering og har som mål å få den innen 2027. Fakultetet har innført AACSBs Assurance of Learning med åtte kjernekompetanser («The Arctic Eight»).",
       "kilde": 8,
-      "side": 3
+      "side": 5
     },
     {
       "tema": "Studiekvalitet og læringsmiljø",
@@ -181,31 +190,38 @@
   "maal": [
     {
       "tekst": "Administrative kostnader skal reduseres med 40 mill. kr innen utgangen av 2027 (virksomhetsplan 2026).",
-      "kilde": 3
+      "kilde": 3,
+      "side": 75
     },
     {
       "tekst": "AACSB-akkreditering av HHN innen 2027.",
-      "kilde": 8
+      "kilde": 8,
+      "side": 5
     },
     {
       "tekst": "20 % av alle gradsstudenter i fysisk mobilitet (årstall ikke oppgitt i strategien).",
-      "kilde": 1
+      "kilde": 1,
+      "side": 4
     },
     {
       "tekst": "Femte ph.d.-program (helsevitenskap) med oppstart rundt 2027, regnet med om lag 20 internfinansierte kandidater i 2031; styret ba samtidig om å vurdere bachelor/master som grunnlag for en senere ph.d. i samfunnssikkerhet.",
-      "kilde": 6
+      "kilde": 6,
+      "side": 8
     },
     {
       "tekst": "Ny utviklingsavtale 2027–2030 ferdigstilles innen 1.10.2026 med tre mål og ni styringsparametere.",
-      "kilde": 4
+      "kilde": 4,
+      "side": 36
     },
     {
       "tekst": "Sluttrapporterte måltall for 2025 fra strukturreformen: 1,0 publikasjonspoeng per faglig årsverk (0,82 i 2024), 70 % i førstestilling (63,7 %), studiekvalitet 4,1 (4,0), 35 doktorgrader (37) og 2 000 studenter på fleksible utdanninger (2 645).",
-      "kilde": 3
+      "kilde": 3,
+      "side": 60
     },
     {
       "tekst": "Fagområdevurderinger og justert studieportefølje 2027/28 legges fram for styret 22.10.2026.",
-      "kilde": 7
+      "kilde": 7,
+      "side": 7
     }
   ],
   "studieportefolje": "HHN har om lag 2 600 studenter og 220 ansatte (egen nettside) med hovedsete på Mørkved i Bodø og tilbud i Stjørdal, Steinkjer og Mo i Rana. Kjernen er siviløkonom (5-årig og 2-årig), bachelor i økonomi og administrasjon, eiendomsmegling og markedsføring, trafikklærerutdanningen i Stjørdal og store samlingsbaserte MBA- og masterprogram. Nettbasert bachelor i økonomi og teknologiledelse startet i 2025 (263 førsteprioritetssøkere til 100 plasser i 2026) og kommer i samlingsbasert variant i Mo fra høsten 2026. For 2027/28 er det bare små endringer, med nullopptak på master i helseledelse; Nord vil samtidig trekke svakt søkte tilbud og har godkjent et nettbasert årsstudium i HR-ledelse.",

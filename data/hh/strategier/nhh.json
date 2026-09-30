@@ -10,7 +10,8 @@
       "nivaa": "institusjon",
       "vedtatt": "2026-03",
       "url": "https://www.nhh.no/globalassets/om-nhh/strategi/nhh_strategi_2026-29_no.pdf",
-      "status": "gjeldende"
+      "status": "gjeldende",
+      "pdf": "strategier/nhh-strategi-2026-2029.pdf"
     },
     {
       "tittel": "Førsteutkast til utviklingsavtale med Kunnskapsdepartementet 2027–2030 (styresak 21/26, vedlegg 2 i offentlig innkalling 05.03.2026)",
@@ -18,7 +19,8 @@
       "nivaa": "utkast",
       "vedtatt": null,
       "url": "https://www.nhh.no/globalassets/om-nhh/organisasjon/styret-ved-nhh/saksdokument/moteinkallingar/2026/offentlig-innkalling-styret-ved-norges-handelshoyskole-05.03.2026.pdf",
-      "status": "under arbeid"
+      "status": "under arbeid",
+      "pdf": "strategier/nhh-styret-2026-03-05-innkalling.pdf"
     },
     {
       "tittel": "Styreprotokoll 05.03.2026 – vedtak av strategien (sak 20/26), universitetsstatus, økonomi (supplerende kilde)",
@@ -26,7 +28,8 @@
       "nivaa": "institusjon",
       "vedtatt": "2026-03",
       "url": "https://www.nhh.no/globalassets/om-nhh/organisasjon/styret-ved-nhh/saksdokument/moteprotokollar/2026/protokoll-styret-ved-norges-handelshoyskole-05.03.2026.pdf",
-      "status": "gjeldende"
+      "status": "gjeldende",
+      "pdf": "NHH_Protokoll_05.03.2026.pdf"
     },
     {
       "tittel": "Styreprotokoll 23.04.2026 – EQUIS-reakkreditering, lokale handlingsplaner, KD-dialog (supplerende kilde)",
@@ -34,7 +37,8 @@
       "nivaa": "institusjon",
       "vedtatt": "2026-04",
       "url": "https://www.nhh.no/globalassets/om-nhh/organisasjon/styret-ved-nhh/saksdokument/moteprotokollar/2026/protokoll-styret-ved-norges-handelshoyskole-23.04.2026.pdf",
-      "status": "gjeldende"
+      "status": "gjeldende",
+      "pdf": "NHH_Protokoll_23.04.2026.pdf"
     },
     {
       "tittel": "Styreprotokoll 05.02.2026 – strategiutkast, arealutvikling, NHH Executive (supplerende kilde)",
@@ -42,7 +46,8 @@
       "nivaa": "institusjon",
       "vedtatt": "2026-02",
       "url": "https://www.nhh.no/globalassets/om-nhh/organisasjon/styret-ved-nhh/saksdokument/moteprotokollar/2026/offentlig-protokoll-styret-ved-norges-handelshoyskole-05.02.2026.pdf",
-      "status": "gjeldende"
+      "status": "gjeldende",
+      "pdf": "NHH_Protokoll_05.02.2026.pdf"
     },
     {
       "tittel": "Årsrapport for NHH 2025 (til KD; inkl. utviklingsavtale 2023–2026 og framtidsutsikter) (supplerende kilde)",
@@ -50,7 +55,8 @@
       "nivaa": "institusjon",
       "vedtatt": "2026-03",
       "url": "https://www.nhh.no/globalassets/om-nhh/arsrapport-for-nhh-2025.pdf",
-      "status": "gjeldende"
+      "status": "gjeldende",
+      "pdf": "strategier/nhh-arsrapport-2025.pdf"
     },
     {
       "tittel": "Strategi for NHH 2022–2025 (erstattet; omtalt i årsrapport 2025, s. 50)",
@@ -58,7 +64,8 @@
       "nivaa": "institusjon",
       "vedtatt": null,
       "url": "https://www.nhh.no/globalassets/om-nhh/arsrapport-for-nhh-2025.pdf",
-      "status": "utløpt"
+      "status": "utløpt",
+      "pdf": "strategier/nhh-arsrapport-2025.pdf"
     },
     {
       "tittel": "Khrono: «Handelshøgskolen kan bli universitet» (nyhetssak, april 2025)",
@@ -165,27 +172,33 @@
   "maal": [
     {
       "tekst": "Søke universitetsstatus: søknad planlagt sendt mot slutten av 2026 / begynnelsen av 2027 (behandles først etter NOKUTs periodiske tilsyn av kvalitetssystemet).",
-      "kilde": 2
+      "kilde": 2,
+      "side": 5
     },
     {
       "tekst": "Utviklingsavtale 2027–2030: tre mål og ti styringsparametere i førsteutkastet; endelig forslag til KD innen 1. oktober 2026. Indikatorer/måltall ikke publisert ennå.",
-      "kilde": 1
+      "kilde": 1,
+      "side": 145
     },
     {
       "tekst": "Kjønnsbalanse: minst 40 % av hvert kjønn i alle vitenskapelige stillingskategorier (langsiktig; 36 % kvinner i 2025) og minst 50 % kvinner blant nyansatte.",
-      "kilde": 5
+      "kilde": 5,
+      "side": 29
     },
     {
       "tekst": "Studentene: minst 40 % av hvert kjønn i studentmassen (løpende målsetting).",
-      "kilde": 5
+      "kilde": 5,
+      "side": 20
     },
     {
       "tekst": "Klimanøytralitet innen 2040.",
-      "kilde": 5
+      "kilde": 5,
+      "side": 43
     },
     {
       "tekst": "EQUIS: reakkreditert for fem år i mars 2026; tre nye utviklingsmål for femårsperioden skulle foreslås innen utgangen av mai 2026.",
-      "kilde": 3
+      "kilde": 3,
+      "side": 7
     }
   ],
   "studieportefolje": "Fulltidsporteføljen består av BØA, Bachelor in Business, Economics and Data Science (BEDS, oppstart 2024), MØA, MRR og CEMS MIM; NHH er i praksis på full kapasitet og planlegger ikke å øke det samlede studenttallet, bare fordele plasser mellom program. MØA får ny programstruktur, og det utvikles et nytt masterprogram (MBEDS) for BEDS-kandidatene med vekt på teknologi, KI og bærekraft. NHH Executive lanserer en modulbasert Executive Master of Management fra 2026 (med nytt emne om KI og teknologistrategi), slår sammen EMBA-program og evaluerer Seafood-EMBA, og bruker lokalene i Oslo (Drammensveien 44, NHH Connect) mer. Undervisning i geopolitikk, beredskap og forsyningskjeder skal styrkes.",

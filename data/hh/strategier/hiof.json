@@ -18,7 +18,8 @@
       "nivaa": "handlingsplan",
       "vedtatt": "2026-03",
       "url": "https://opengov.360online.com/Meetings/hiof/Boards/Details/261077",
-      "status": "gjeldende"
+      "status": "gjeldende",
+      "pdf": "HiOF_IIO_Handlingsplan_mot_2030.pdf"
     },
     {
       "tittel": "Aktivitetsplan 2026 for IIØ (fakultetsstyret 05.03.2026, sak 10/26; side = side i komplett innkalling)",
@@ -26,7 +27,8 @@
       "nivaa": "handlingsplan",
       "vedtatt": "2026-03",
       "url": "https://opengov.360online.com/Meetings/hiof/Meetings/Details/549538",
-      "status": "gjeldende"
+      "status": "gjeldende",
+      "pdf": "strategier/hiof-iio-fakultetsstyret-2026-03-05.pdf"
     },
     {
       "tittel": "Aktivitetsplan 2026 – Høgskolen i Østfold (vedtatt 15.12.2025)",
@@ -34,7 +36,8 @@
       "nivaa": "handlingsplan",
       "vedtatt": "2025-12",
       "url": "https://www.hiof.no/om/styringsdokumenter-rapporter/aktivitetsplaner/aktivitetsplan-for-hogskolen-i-ostfold-2026---vedtatt-15.12.25.pdf",
-      "status": "gjeldende"
+      "status": "gjeldende",
+      "pdf": "strategier/hiof-aktivitetsplan-2026.pdf"
     },
     {
       "tittel": "Utviklingsavtale HiØ 2023–2026 (gjengitt i tildelingsbrev 2026, høgskolestyret 29.01.2026, sak 3/26)",
@@ -42,7 +45,8 @@
       "nivaa": "institusjon",
       "vedtatt": null,
       "url": "https://opengov.360online.com/Meetings/hiof/Meetings/Details/539130",
-      "status": "gjeldende"
+      "status": "gjeldende",
+      "pdf": "strategier/hiof-hogskolestyret-2026-01-29.pdf"
     },
     {
       "tittel": "Utkast til utviklingsavtale 2027–2030 (høgskolestyret 15.09.2026, sak 35/26, godkjent som utkast; sak 36/26 referat fra etatsstyringsmøte med KD; side = side i komplett innkalling)",
@@ -50,7 +54,8 @@
       "nivaa": "utkast",
       "vedtatt": null,
       "url": "https://opengov.360online.com/Meetings/hiof/Meetings/Details/543876",
-      "status": "utkast"
+      "status": "utkast",
+      "pdf": "strategier/hiof-hogskolestyret-2026-09-15.pdf"
     },
     {
       "tittel": "Høgskolestyret 11.06.2026: sak 20/26 tertialrapport T1 2026, sak 22/26 studieportefølje 2027–2028, sak 26/26 strategirevisjon, samt protokoll (side = side i komplett innkalling)",
@@ -58,7 +63,8 @@
       "nivaa": "institusjon",
       "vedtatt": "2026-06",
       "url": "https://opengov.360online.com/Meetings/hiof/Meetings/Details/539132",
-      "status": "gjeldende"
+      "status": "gjeldende",
+      "pdf": "strategier/hiof-hogskolestyret-2026-06-11.pdf"
     },
     {
       "tittel": "Årsrapport 2025 – Høgskolen i Østfold (høgskolestyret 10.03.2026)",
@@ -74,7 +80,8 @@
       "nivaa": "handelshøyskole/fakultet",
       "vedtatt": null,
       "url": "https://opengov.360online.com/Meetings/hiof/Boards/Details/261077",
-      "status": "gjeldende"
+      "status": "gjeldende",
+      "pdf": "HiOF_Tertialrapport_T3_2025.pdf"
     },
     {
       "tittel": "Khrono 20.06.2025: «43 ansatte i Østfold blir tilbudt sluttpakke eller må over i ny stilling» (nyhetssak)",
@@ -181,43 +188,53 @@
   "maal": [
     {
       "tekst": "Innen 2030: 50 % av IIØs forskningstid finansiert av eksterne prosjektmidler.",
-      "kilde": 1
+      "kilde": 1,
+      "side": 5
     },
     {
       "tekst": "Innen 2030: 30 % av IIØs publisering som nivå 2-artikler, og 30 aktive stipendiater ved fakultetet.",
-      "kilde": 1
+      "kilde": 1,
+      "side": 5
     },
     {
       "tekst": "I planperioden mot 2030: 50 % flere søknader til NFR/EU, minst 70 % av fagmiljøene i eksternfinansierte prosjekter eller forpliktende samarbeid, og minst 25 % av forskningsprosjektene i samarbeid med arbeids- eller samfunnsliv.",
-      "kilde": 1
+      "kilde": 1,
+      "side": 5
     },
     {
       "tekst": "Mot 2030: minst 75 % av FoU-ansatte med førstekompetanse, og minst 80 % av forskningsgruppene ledet av ansatte med toppkompetanse.",
-      "kilde": 1
+      "kilde": 1,
+      "side": 5
     },
     {
       "tekst": "Mot 2030: FWCI på minst 1,0 samlet og 1,2 i prioriterte fagområder, og minst 15 % av artiklene blant de 10 % mest siterte.",
-      "kilde": 1
+      "kilde": 1,
+      "side": 5
     },
     {
       "tekst": "Årlig i planperioden: minst 5 forskningsbaserte initiativ vurdert i innovasjonsprosesser, og minst 2 videre til utviklings- eller implementeringsfase med eksterne partnere.",
-      "kilde": 1
+      "kilde": 1,
+      "side": 5
     },
     {
       "tekst": "Studieprogrammene ved IIØ skal ha gjennomstrømming over 60 %, fyllingsgrad over 95 %, mer enn 20 bachelor- og 15 masterkandidater årlig og minst 4 i Studiebarometeret (mål i handlingsplanen mot 2030).",
-      "kilde": 1
+      "kilde": 1,
+      "side": 3
     },
     {
       "tekst": "Minst ett arbeidslivsinnslag planfestet i hvert emne fra studieåret 2026–2027.",
-      "kilde": 2
+      "kilde": 2,
+      "side": 39
     },
     {
       "tekst": "Ny forskningsgruppestruktur ved IIØ fra januar 2027.",
-      "kilde": 6
+      "kilde": 6,
+      "side": 13
     },
     {
-      "tekst": "14 nye stipendiater tilsatt i 2026, slik at ph.d.-programmet i digitalisering og samfunn får ca. 60 kandidater.",
-      "kilde": 6
+      "tekst": "14 nye stipendiater planlagt tilsatt våren 2026, slik at ph.d.-programmet i digitalisering og samfunn får ca. 60 kandidater.",
+      "kilde": 6,
+      "side": 15
     },
     {
       "tekst": "Omstilling 2025–2027: ca. 58 mill. kr i årlige innsparinger og ca. 60 færre årsverk.",

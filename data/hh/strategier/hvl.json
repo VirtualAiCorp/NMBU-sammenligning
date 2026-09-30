@@ -10,7 +10,8 @@
       "nivaa": "institusjon",
       "vedtatt": "2022-11",
       "url": "https://www.hvl.no/contentassets/fcb7b0b9236247389baa6a5faf3b2e76/hvl-strategi-2023-30-med-kap-5.pdf",
-      "status": "gjeldende"
+      "status": "gjeldende",
+      "pdf": "strategier/hvl-strategi-2023-2030.pdf"
     },
     {
       "tittel": "Strategi 2030 – høyringsversjon 4. juni 2026 (midtvegsrevisjon av strategien)",
@@ -18,7 +19,8 @@
       "nivaa": "utkast",
       "vedtatt": null,
       "url": "https://opengov.360online.com/Meetings/hvl-uninett/File/Details/1312099.pdf",
-      "status": "under arbeid"
+      "status": "under arbeid",
+      "pdf": "strategier/hvl-strategi-2030-hoyringsversjon.pdf"
     },
     {
       "tittel": "Status for arbeidet med revisjon av strategi 2030 (O-24/26, høgskulestyret 11.06.2026) og sak 4/26-B Utviklingsavtale 2027–2030. Revisjon av strategi (05.02.2026)",
@@ -26,7 +28,8 @@
       "nivaa": "institusjon",
       "vedtatt": null,
       "url": "https://opengov.360online.com/Meetings/hvl-uninett/File/Details/1305176.pdf",
-      "status": "under arbeid"
+      "status": "under arbeid",
+      "pdf": "strategier/hvl-revisjon-strategi-status.pdf"
     },
     {
       "tittel": "Forslag til avtaletekst i ny utviklingsavtale 2027–2030 (sak 34/26-B, høgskulestyret 10.09.2026)",
@@ -34,7 +37,8 @@
       "nivaa": "utkast",
       "vedtatt": null,
       "url": "https://opengov.360online.com/Meetings/hvl-uninett/File/Details/1338065.pdf",
-      "status": "utkast"
+      "status": "utkast",
+      "pdf": "strategier/hvl-utviklingsavtale-2027-2030-forslag.pdf"
     },
     {
       "tittel": "Rektors oppdragsbrev for 2026 til Fakultet for teknologi, miljø- og samfunnsvitskap (FTMS), datert 12.01.2026",
@@ -42,7 +46,8 @@
       "nivaa": "handlingsplan",
       "vedtatt": "2026-01",
       "url": "https://opengov.360online.com/Meetings/hvl-uninett/Meetings/Details/936766?agendaItemId=216386",
-      "status": "gjeldende"
+      "status": "gjeldende",
+      "pdf": "HVL_Oppdragsbrev_2026_FTMS.pdf"
     },
     {
       "tittel": "FTMS fakultetsplan 2026–2028 (ikke funnet offentlig; omtalt i sak om KI-emne ved FTMS, fakultetsrådet 21.05.2026)",
@@ -58,7 +63,8 @@
       "nivaa": "institusjon",
       "vedtatt": null,
       "url": "https://opengov.360online.com/Meetings/hvl-uninett/File/Details/1335547.pdf",
-      "status": "under arbeid"
+      "status": "under arbeid",
+      "pdf": "strategier/hvl-dimensjonering-studieportefolje.pdf"
     },
     {
       "tittel": "Vedlegg 1c: FTMS sine førebelse planar for studieporteføljen 2027/28 og 3–5 år (sak 25/26-B, høgskulestyret 11.06.2026)",
@@ -66,7 +72,8 @@
       "nivaa": "handelshøyskole/fakultet",
       "vedtatt": null,
       "url": "https://opengov.360online.com/Meetings/hvl-uninett/File/Details/1305405.pdf",
-      "status": "under arbeid"
+      "status": "under arbeid",
+      "pdf": "strategier/hvl-ftms-studieportefolje-planar.pdf"
     },
     {
       "tittel": "Universitetsprosjektet – status våren 2026 (O-6/26, høgskulestyret 04.03.2026)",
@@ -74,7 +81,8 @@
       "nivaa": "institusjon",
       "vedtatt": null,
       "url": "https://opengov.360online.com/Meetings/hvl-uninett/File/Details/1283212.pdf",
-      "status": "under arbeid"
+      "status": "under arbeid",
+      "pdf": "strategier/hvl-universitetsprosjektet-status-2026.pdf"
     },
     {
       "tittel": "Årsrapport 2025 – styrets fråsegn (utkast, sak 2/26-B, høgskulestyret 05.02.2026)",
@@ -82,7 +90,8 @@
       "nivaa": "institusjon",
       "vedtatt": "2026-02",
       "url": "https://opengov.360online.com/Meetings/hvl-uninett/File/Details/1271898.PDF",
-      "status": "gjeldende"
+      "status": "gjeldende",
+      "pdf": "strategier/hvl-arsrapport-2025-styrets-fraasegn.pdf"
     },
     {
       "tittel": "KI-emne ved FTMS (orienteringssak, FTMS fakultetsråd 21.05.2026)",
@@ -90,7 +99,8 @@
       "nivaa": "handelshøyskole/fakultet",
       "vedtatt": null,
       "url": "https://opengov.360online.com/Meetings/hvl-uninett/Meetings/Details/946603?agendaItemId=216959",
-      "status": "gjeldende"
+      "status": "gjeldende",
+      "pdf": "HVL_KI-emne_FTMS.pdf"
     },
     {
       "tittel": "Handelshøgskulen HVL – institusjonens nettside (fagmiljø, leiing, nøkkeltal)",
@@ -167,7 +177,7 @@
       "tema": "Økonomi og ressurser",
       "tekst": "Aktiviteten må tilpasses strammere rammer. FTMS skal slå sammen emner, redusere kompleksitet og bruke ressursene bedre, og rammefordelingsmodellen mellom fakultetene skal evalueres i forbindelse med omfordelingen av studieplasser.",
       "kilde": 4,
-      "side": 1
+      "side": 2
     },
     {
       "tema": "Samspill med arbeidslivet",
@@ -197,19 +207,23 @@
   "maal": [
     {
       "tekst": "Kutte klimagassutslippene med 40 % fra 2019 til 2027 (ikke i rute per 2025).",
-      "kilde": 9
+      "kilde": 9,
+      "side": 2
     },
     {
       "tekst": "NOKUT-vedtak om universitetsakkreditering innen utgangen av 2026, deretter endelig vedtak i statsråd.",
-      "kilde": 8
+      "kilde": 8,
+      "side": 3
     },
     {
       "tekst": "Revidert Strategi 2030 skal vedtas 21.–22. oktober (eventuelt 19. november) 2026.",
-      "kilde": 2
+      "kilde": 2,
+      "side": 3
     },
     {
       "tekst": "Omfordele finansierte studieplasser mellom fakultetene (alternativer på 180, 360 og 540 plasser; styret ønsker de to høyeste), innfaset over 2027–2030; vedtak i oktober 2026.",
-      "kilde": 6
+      "kilde": 6,
+      "side": 3
     },
     {
       "tekst": "Utviklingsavtale 2027–2030 sendes KD innen 1.10.2026 og inngår i tildelingsbrevet for 2027.",
@@ -217,7 +231,8 @@
     },
     {
       "tekst": "KI-mikroemne (2,5 stp.) fra våren 2026 og et nytt emne i digitalisering/KI fra høsten 2026 ved FTMS.",
-      "kilde": 10
+      "kilde": 10,
+      "side": 2
     }
   ],
   "studieportefolje": "Handelshøgskulen HVL har om lag 2 000 studenter og 100 årsverk i Bergen, Haugesund, Sogndal og Førde, med økonomi og administrasjon, økonomi og jus, eiendomsmegling, reiseliv, organisasjon og ledelse, samfunnsfag og historie, flere master (blant annet økonomi og ledelse, ansvarleg innovasjon og entreprenørskap, innovasjon og leiing) og ph.d. i ansvarleg innovasjon og regional utvikling. FTMS vurderer å legge ned deltidsmasteren i ansvarleg innovasjon og entreprenørskap og deltidsbacheloren i økonomi og administrasjon i Haugesund. Masteren Entreprenørskule i Bergen skal etableres, og masterporteføljen i økonomi og ledelse gjennomgås etter periodiske evalueringer. Den betalingsfinansierte bachelor i ledelse vurderes utvidet, og fleksible EVU-tilbud skal videreføres.",
