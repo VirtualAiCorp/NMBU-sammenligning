@@ -6,10 +6,10 @@ import { FARGETEMAER, setFargetema, useFargetema } from '../fargetemaStore';
 
 /** Oppsettvelger og lys/mørk-bryter, fast øverst til høyre på alle sider. */
 const VALG: { id: Layout; label: string; desc: string; icon: typeof LayoutGrid }[] = [
-  { id: 'oversikt', label: 'Oversikt', desc: 'Dagens oppsett: kort og egne sider per modul', icon: LayoutGrid },
+  { id: 'arbeidsflate', label: 'Arbeidsflate', desc: 'Standard: rolig visning med sidemeny, nøkkeltall og detaljkort, i lys og mørk', icon: PanelsTopLeft },
+  { id: 'oversikt', label: 'Oversikt', desc: 'Kort og egne sider per modul', icon: LayoutGrid },
   { id: 'dashboard', label: 'Fullskjerm-dashboard', desc: 'Fast sidemeny med fakulteter og moduler, full bredde', icon: PanelLeft },
   { id: 'toppmeny', label: 'Toppmeny', desc: 'Fakulteter og moduler som faner øverst, full bredde', icon: PanelTop },
-  { id: 'arbeidsflate', label: 'Arbeidsflate', desc: 'Rolig visning med lys sidemeny, nøkkeltall og detaljkort, i lys og mørk', icon: PanelsTopLeft },
 ];
 
 const knapp: React.CSSProperties = {

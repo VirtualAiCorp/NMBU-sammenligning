@@ -1,7 +1,7 @@
 import { useSyncExternalStore } from 'react';
 
 /**
- * Valgt oppsett for hele nettsiden: «oversikt» (dagens kortbaserte), «dashboard» (fast sidemeny, full bredde),
+ * Valgt oppsett for hele nettsiden: «oversikt» (kort og egne sider per modul), «dashboard» (fast sidemeny, full bredde),
  * «toppmeny» (moduler som faner øverst) eller «arbeidsflate» (standard fra 29.09.2026, rolig visning med lys sidemeny, nøkkeltall og
  * detaljkort, se components/arbeidsflate). Lagres i localStorage («layout») og kan settes med ?oppsett=… i lenken.
  *
