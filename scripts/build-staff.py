@@ -13,6 +13,8 @@ Kilder (per institusjon, cache i data/nmbu/kilder/dbh-fagmiljo/):
   374  Publiseringspoeng per kvalitetsnivå (nivå 2-andel).
   900  Studiepoengproduksjon per avdeling som eier emnet («Ny produksjon totalt», i 60-studiepoengsenheter =
        studentårsverk). Mindre sårbart enn registrerte studenter for mange enkeltemne- og deltidsstudenter.
+       «Ny produksjon» er uten gjentak. studentarsverk = egen- og eksternfinansiert; studentarsverkEgen = bare
+       egenfinansiert (den delen som gir uttelling i finansieringssystemet; brukes som hovedtall på «Utdanning»).
   210  Avdeling → fakultet (fakultetskode og -navn).
   347  Studieprogram → eierens avdelingskode. Konkurrentfakultetet for et NMBU-fakultet er fakultetet som eier
        konkurrentprogrammene i fakultetets dbh-programkart (ingen skjønn).
@@ -154,6 +156,7 @@ def main():
             for row in r["900"]:
                 if inside(row.get("Avdkode emne")):
                     y = acc[int(row["Årstall"])]; y["studentarsverk"] += fl(row.get("Ny produksjon totalt")); y["_900"] = 1
+                    y["studentarsverkEgen"] += fl(row.get("Ny produksjon egentfin"))
             har_total = any(x.get("Avdelingskode") == "000000" for x in r["373"])
             for row in r["373"]:
                 avd = row.get("Avdelingskode")
@@ -181,6 +184,7 @@ def main():
                         "forste": round(v["forste"], 1) if v["_225"] else None,
                         "studenter": int(v["studenter"]) if v["_123"] else None,
                         "studentarsverk": round(v["studentarsverk"], 1) if v["_900"] else None,
+                        "studentarsverkEgen": round(v["studentarsverkEgen"], 1) if v["_900"] else None,
                         "publPoeng": round(v["publPoeng"], 1) if v["_373"] else None,
                         "publikasjoner": int(v["publikasjoner"]) if v["_373"] else None,
                         "niva2Andel": round(100 * v["niva2"] / v["_p374"], 1) if v["_p374"] else None})
@@ -249,7 +253,7 @@ def main():
     L = [f"// GENERERT av scripts/build-staff.py {today} – ikke rediger for hånd.",
          "// Kilde: DBH/HKDIR 225 (årsverk), 220 (stillingskategorier), 123 (registrerte studenter, høst), 373/374 (publisering), 210 (avdelinger), 347 (programeier).",
          "export interface StaffYear { aar: number; arsverk: number | null; faglige: number | null; fagligeKvinner: number | null; rekruttering: number | null; forste: number | null;",
-         "  studenter: number | null; studentarsverk: number | null; publPoeng: number | null; publikasjoner: number | null; niva2Andel: number | null; }",
+         "  studenter: number | null; studentarsverk: number | null; studentarsverkEgen: number | null; publPoeng: number | null; publikasjoner: number | null; niva2Andel: number | null; }",
          "export interface StaffUnit { id: string; inst: string; kort: string; navn: string; fakultetskode: string | null; isNmbu: boolean;",
          "  /** Eier minst ett av konkurrentprogrammene som er valgt som hovedsammenligning (default). */ hoved: boolean;",
          "  /** Konkurrentprogrammene fra fakultetets programkart som denne enheten eier (DBH 347). */ programmer: string[]; years: StaffYear[]; }",

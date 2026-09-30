@@ -29,7 +29,16 @@ const GJ_AAR = [2019, 2020, 2021, 2022, 2023, 2024, 2025];
 const SISTE_OPPTAK = OPPTAKSAAR[OPPTAKSAAR.length - 1];
 const fakNavn = (id: FacultyId) => FACULTY_META[id].shortLabel;
 const staffFor = (id: FacultyId) => STAFF_NMBU_FACULTIES.find((u) => u.fakultetskode === FAK_KODE[id]);
-const spPerStudent = (u: StaffUnit | undefined, aar: number) => { const y = u?.years.find((x) => x.aar === aar); return y?.studentarsverk != null && y.studenter ? (60 * y.studentarsverk) / y.studenter : null; };
+/**
+ * Studentårsverk på denne siden er de egenfinansierte (DBH 900 «Ny produksjon egentfin»): det er dem som gir uttelling i
+ * finansieringssystemet. Totalen med eksternfinansiert produksjon (videreutdanning på oppdrag) vises ved siden av.
+ * Gjentak av eksamen er ikke med i noen av dem.
+ */
+type StaffAar = StaffUnit['years'][number];
+const sarvEgen = (y: StaffAar | undefined) => y?.studentarsverkEgen ?? y?.studentarsverk ?? null;
+const spPerStudent = (u: StaffUnit | undefined, aar: number) => { const y = u?.years.find((x) => x.aar === aar); const e = sarvEgen(y); return e != null && y?.studenter ? (60 * e) / y.studenter : null; };
+/** HH 2025: videreutdanningskoden KVU-HH (500 studenter i 2024) er ikke med, og enkeltemnekodene EE-GSK og EE-REAL (887) er nye sentralt (DBH 123) */
+const HH_MERKNAD_2025 = 'Videreutdanningskoden KVU-HH (500 studenter høsten 2024) er ikke med i 2025, mens enkeltemnekodene EE-GSK og EE-REAL (887 studenter) er nye på sentralt nivå. HHs studenttall for 2025 kan derfor ikke sammenlignes direkte med 2024, og studiepoeng per student blir høyere fordi poengene fortsatt telles på HHs emner.';
 const NIVAA: Record<string, string> = { bachelor: 'Bachelor', master5: 'Master 5 år', master2: 'Master 2 år', aarsstudium: 'Årsstudium' };
 
 export function Utdanning() {
@@ -73,14 +82,14 @@ function Nokkeltallene({ program }: { program: NmbuProgram[] | null }) {
   const fv = ps ? sumOgEndring(ps, 'fvS', SISTE_OPPTAK) : null;
   const pl = ps ? sumOgEndring(ps, 'plasser', SISTE_OPPTAK) : null;
   const kpier: Kpi[] = [
-    { ikon: BookOpen, etikett: 'Studiepoeng per student', verdi: nf(spPerStudent(NMBU_STAFF, sy.aar), 1), endring: endringPst(spPerStudent(NMBU_STAFF, sf.aar), spPerStudent(NMBU_STAFF, sy.aar)), hjelp: `${sy.aar}, per registrert student`, tittel: 'Studentårsverk × 60 (DBH 900) delt på registrerte studenter høsten (DBH 123)' },
-    { ikon: Layers, etikett: `Studentårsverk ${sy.aar}`, verdi: nf(sy.studentarsverk, 0), endring: endringPst(sf.studentarsverk, sy.studentarsverk), hjelp: `${nf(sy.studenter)} registrerte studenter` },
+    { ikon: BookOpen, etikett: 'Studiepoeng per student', verdi: nf(spPerStudent(NMBU_STAFF, sy.aar), 1), endring: endringPst(spPerStudent(NMBU_STAFF, sf.aar), spPerStudent(NMBU_STAFF, sy.aar)), hjelp: `${sy.aar}, per registrert student`, tittel: 'Egenfinansierte studentårsverk × 60 (DBH 900) delt på registrerte studenter høsten (DBH 123)' },
+    { ikon: Layers, etikett: `Studentårsverk ${sy.aar}`, verdi: nf(sarvEgen(sy), 0), endring: endringPst(sarvEgen(sf), sarvEgen(sy)), hjelp: `egenfinansiert · ${nf(sy.studentarsverk, 0)} med eksternfinansiert`, tittel: `Egenfinansierte studiepoeng delt på 60 (gir uttelling i finansieringssystemet). Med eksternfinansiert produksjon: ${nf(sy.studentarsverk, 0)}. Gjentak av eksamen er ikke med. ${nf(sy.studenter)} registrerte studenter.` },
     { ikon: GraduationCap, etikett: `Normert tid ${ba?.aar ?? ''}`.trim(), verdi: ba ? pst(ba.v) : '–', hjelp: ma ? `bachelor · master ${pst(ma.v)}` : 'bachelor', tittel: 'Andelen som fullfører på normert tid, KDs styringsindikator 1 og 2 (DBH 750)' },
     { ikon: Users, etikett: `Førstevalg ${SISTE_OPPTAK}`, verdi: fv?.sum != null ? nf(fv.sum) : '…', endring: fv?.endring ?? null, hjelp: 'til NMBU-programmene', tittel: 'Førstevalgssøkere i hovedopptaket. Endringen er regnet på programmene som har tall begge årene.' },
     { ikon: Armchair, etikett: `Studieplasser ${SISTE_OPPTAK}`, verdi: pl?.sum != null ? nf(pl.sum) : '…', endring: pl?.endring ?? null, hjelp: fv?.sum && pl?.sum ? `${nf(fv.sum / pl.sum, 2)} førstevalg per plass` : 'i Samordna opptak' },
   ];
   return <Nokkeltall kpier={kpier} kilder={[dbh(900, 'studiepoeng'), dbh(123, 'registrerte studenter'), dbh(750, 'styringsindikator 1 og 2'), KILDER.samordna]}
-    merknad={`Endring fra året før. Søkere og studieplasser gjelder NMBU-programmene i fakultetenes sammenligninger, hovedopptaket ${SISTE_OPPTAK}.`} />;
+    merknad={`Endring fra året før. Studentårsverk og studiepoeng per student gjelder egenfinansiert produksjon (den som gir uttelling); eksternfinansiert videreutdanning kommer i tillegg. Søkere og studieplasser gjelder NMBU-programmene i fakultetenes sammenligninger, hovedopptaket ${SISTE_OPPTAK}.`} />;
 }
 
 // ── Per fakultet ────────────────────────────────────────────────────────────
@@ -103,8 +112,9 @@ function PerFakultet({ alle, program }: { alle: FacultyBase[] | null; program: N
       const sbN = sb.reduce((s, x) => s + x.n, 0);
       const y = staff?.years.find((x) => x.aar === sisteStaff);
       return {
-        navn, tittel, uthev, studenter: y?.studenter ?? null, sarv: y?.studentarsverk ?? null,
-        sarvSerie: staffAar.map((a) => staff?.years.find((x) => x.aar === a)?.studentarsverk ?? null),
+        navn, tittel, uthev, studenter: y?.studenter ?? null, sarv: sarvEgen(y), sarvTotal: y?.studentarsverk ?? null,
+        sarvSerie: staffAar.map((a) => sarvEgen(staff?.years.find((x) => x.aar === a))),
+        merknad: staff?.fakultetskode === FAK_KODE.hh && sisteStaff === 2025 ? HH_MERKNAD_2025 : undefined,
         spPerStudent: spPerStudent(staff, sisteStaff),
         fv, pl, fvSerie: fvS.verdier, plSerie: plS.verdier, gj,
         sb: sbN ? { snitt: sb.reduce((s, x) => s + x.snitt * x.n, 0) / sbN, n: sbN } : null,
@@ -120,14 +130,14 @@ function PerFakultet({ alle, program }: { alle: FacultyBase[] | null; program: N
     <Del i={2} ikon={Users} tittel="Fakultetene side om side"
       ingress={<>Studenter og studiepoeng (DBH, etter hvilket fakultet som eier emnene), søkere og studieplasser til NMBU-programmene i hovedopptaket, fullført på normert tid for kullene som skulle vært ferdige i {gjSiste}, og snittet av helhetsvurderingen i Studiebarometeret. Trendlinjene viser utviklingen; hold pekeren over for tallene.</>}
       kilder={[dbh(123, 'registrerte studenter'), dbh(900, 'studentårsverk'), dbh(707, 'gjennomføring per startkull'), KILDER.samordna, KILDER.studiebarometeret]}
-      merknad={`Søker- og plasstrendene ${OPPTAKSAAR[0]}–${SISTE_OPPTAK} bruker bare programmene som har tall alle årene. Gjennomføringen slår sammen bachelor og master for NMBU-programmene i sammenligningene. Helhetsvurderingen er et enkelt snitt av programmene (skala 1–5).`}>
+      merknad={`Studentårsverk er egenfinansiert produksjon uten gjentak (totalen med eksternfinansiert videreutdanning vises når du holder pekeren over tallet). * HH: ${HH_MERKNAD_2025} Søker- og plasstrendene ${OPPTAKSAAR[0]}–${SISTE_OPPTAK} bruker bare programmene som har tall alle årene. Gjennomføringen slår sammen bachelor og master for NMBU-programmene i sammenligningene. Helhetsvurderingen er et enkelt snitt av programmene (skala 1–5).`}>
       {!rader ? <Stille>Laster tallene for fakultetene …</Stille> : (
         <Tabell minBredde={820}>
           <Hoderad>
             <th style={THV}>Fakultet</th>
             <th style={TH}>Studenter<br /><span style={{ fontWeight: 400 }}>{sisteStaff}</span></th>
-            <th style={TH} title={`Studentårsverk ${sisteStaff} og utviklingen ${staffAar[0]}–${sisteStaff}`}>Studentårsverk<br /><span style={{ fontWeight: 400 }}>{sisteStaff} · {staffAar[0]}–</span></th>
-            <th style={TH} title="Studentårsverk × 60 / registrerte studenter">Studiepoeng<br /><span style={{ fontWeight: 400 }}>per student</span></th>
+            <th style={TH} title={`Egenfinansierte studentårsverk ${sisteStaff} (gir uttelling i finansieringssystemet) og utviklingen ${staffAar[0]}–${sisteStaff}. Hold pekeren over tallet for totalen med eksternfinansiert produksjon.`}>Studentårsverk<br /><span style={{ fontWeight: 400 }}>egenfinansiert {sisteStaff} · {staffAar[0]}–</span></th>
+            <th style={TH} title="Egenfinansierte studentårsverk × 60 / registrerte studenter">Studiepoeng<br /><span style={{ fontWeight: 400 }}>per student</span></th>
             <th style={TH} title={`Førstevalg ${SISTE_OPPTAK}, endring fra året før og utviklingen ${OPPTAKSAAR[0]}–${SISTE_OPPTAK}`}>Førstevalg<br /><span style={{ fontWeight: 400 }}>{SISTE_OPPTAK} · {OPPTAKSAAR[0]}–</span></th>
             <th style={TH}>Studieplasser<br /><span style={{ fontWeight: 400 }}>{SISTE_OPPTAK}</span></th>
             <th style={TH}>Førstevalg<br /><span style={{ fontWeight: 400 }}>per plass</span></th>
@@ -138,9 +148,9 @@ function PerFakultet({ alle, program }: { alle: FacultyBase[] | null; program: N
             {rader.map((r) => (
               <Rad key={r.navn} uthev={r.uthev} sum={r.uthev}>
                 <td style={TDV} title={r.tittel}>{r.navn}</td>
-                <td style={TD}>{nf(r.studenter)}</td>
-                <td style={TD}>{nf(r.sarv, 0)} <SparkMedTekst aar={staffAar} verdier={r.sarvSerie} fmt={(v) => nf(v, 0)} /></td>
-                <td style={TD}>{nf(r.spPerStudent, 1)}</td>
+                <td style={TD} title={r.merknad}>{nf(r.studenter)}{r.merknad && <sup style={{ marginLeft: 1 }}>*</sup>}</td>
+                <td style={TD}><span title={r.sarvTotal != null ? `Med eksternfinansiert produksjon: ${nf(r.sarvTotal, 1)}` : undefined}>{nf(r.sarv, 0)}</span> <SparkMedTekst aar={staffAar} verdier={r.sarvSerie} fmt={(v) => nf(v, 0)} /></td>
+                <td style={TD} title={r.merknad}>{nf(r.spPerStudent, 1)}{r.merknad && <sup style={{ marginLeft: 1 }}>*</sup>}</td>
                 <td style={TD}>{nf(r.fv.sum)} {r.fv.endring != null && <Endring v={r.fv.endring} d={0} />} <SparkMedTekst aar={OPPTAKSAAR} verdier={r.fvSerie} /></td>
                 <td style={TD}>{nf(r.pl.sum)}</td>
                 <td style={TD}>{r.fv.sum && r.pl.sum ? nf(r.fv.sum / r.pl.sum, 2) : '–'}</td>
