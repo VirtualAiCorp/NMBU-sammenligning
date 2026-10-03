@@ -58,8 +58,10 @@ type MasterViewMode = 'masteroppgave' | 'sammenligning' | 'nmbu-emner';
 type FacultyView = 'landing' | 'analyse' | 'emner' | 'markedsstatus' | 'studiebarometer' | 'gjennomforing' | 'studentene' | 'fagmiljo' | 'bolig' | 'sokergrunnlag' | 'okonomi' | 'inntekt' | 'arbeidsmarked' | 'intern' | 'rangering';
 
 export default function App() {
-  const [faculty, setFaculty] = useState<Faculty | null>(null);
-  const [facultyView, setFacultyView] = useState<FacultyView>('landing');
+  // Delbar lenke til rangeringen (?rangering&…): åpne HH → Rangering direkte; resten av tilstanden leses av komponenten.
+  const fraLenke = typeof window !== 'undefined' && new URLSearchParams(window.location.search).has('rangering');
+  const [faculty, setFaculty] = useState<Faculty | null>(fraLenke ? 'hh' : null);
+  const [facultyView, setFacultyView] = useState<FacultyView>(fraLenke ? 'rangering' : 'landing');
   const [facultyGroup, setFacultyGroup] = useState<string | undefined>(undefined);
   const [facultyCourseGroup, setFacultyCourseGroup] = useState<string | undefined>(undefined);
   const [programLevel, setProgramLevel] = useState<ProgramLevel | null>(null);

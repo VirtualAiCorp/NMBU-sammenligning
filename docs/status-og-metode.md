@@ -747,3 +747,20 @@ KI-chat og uten «Spør KI» (`utenKi` på `AfModulSide`). Grunnen er at metoden
 
 
 - **Inspirasjon (03.10):** `data/rangering/inspirasjon/` har fire notater fra Sonnet-agenter: kommersielle rangeringer (FT, QS, THE, Bloomberg, P&Q, Economist), forskningsrangeringer (UTD, Tilburg, RePEc, GRAS, Leiden, Handelsblatt/WiWo, nordiske nivåsystemer), interaktive verktøy (Multirank, CHE, Guardian, Discover Uni, NYT) og medier/partnerskap (CHE+ZEIT, WiWo, Guardian, DN-opplegg, Vær Varsom). Designkonsepter for forsiden: https://claude.ai/artifact/WQre63j67fhnaz9euf35Vq (privat).
+- **03.10 kveld – lagdelt forskningsmål, intervall, grupper, lenke og sammenligning:**
+  - *Lagdelt mål* (fanen Forskningslab, målet «Lagdelt forskning per årsverk», vekt 25): hver NVA-artikkel får høyeste trinn
+    av norsk nivå, ABDC, FT50/UTD24 og AJG (Basis = nivå 1/ABDC B–C/AJG 1–2, Høy = nivå 2/ABDC A/AJG 3, Topp = FT50/UTD24/
+    ABDC A*/AJG 4–4*), telles én gang med enhetens forfatterandel (1/n) eller helt, vektes 1 : 3 : 5 og deles på årsverk
+    (velg HK-dirs nevner UN1+UN2 eller NHHs UN1+postdoktorer; nye felt `uff` og `utenStip` i DBH-årsdata). Byggeskriptet lagrer
+    `komb` per skole og år: «niva|abdc|ft|ajg» → [antall, sum forfatterandel]; alt annet regnes i nettleseren. Dekningsgrad
+    (andel artikler på ABDC/FT/AJG) og «løftet» (andel der en internasjonal liste ga høyere trinn enn norsk nivå) vises.
+    ABDC A/A* fikk vekt 0 og nivå 2 vekt 5 som standard for å unngå dobbelttelling (de inngår i det lagdelte målet).
+  - *Plassintervall og grupper:* plass ved alle trinn 50–85 % for forskning (relative vekter fast) → spenn og strek;
+    Topp/Midt/Nedre = tredjedeler med valgte vekter; «~» når skolen bytter gruppe i vektområdet (CHE-inspirert).
+  - *Delbar lenke:* `?rangering&fane=…&forsk=…&vekt=id:v,…&ref=1&periode=2021-2025&telling=hel&nevner=utenstip&lagvekt=1-3-5&
+    lister=abdc,ft&skoler=a,b,c&profil=…` (bare avvik fra standard skrives). App.tsx åpner HH → Rangering når `rangering` finnes;
+    komponenten fjerner parameterne når man går ut. Mottakeren må ha passordet.
+  - *Sammenlign:* 2–3 skoler side om side (plass, poeng, spenn, gruppe, alle mål med plass «nr. x av n», poeng per årsverk over
+    tid, lagdelt forskning per trinn).
+  - Med standardvekter 03.10: NTNU 75, NHH 73, UiA 71, BI 71, UiS 70 (alle Topp, spenn 1–5), HH NMBU 44 (plass 6, spenn 6–7).
+

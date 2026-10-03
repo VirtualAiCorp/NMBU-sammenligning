@@ -1,6 +1,6 @@
-import { useEffect, useMemo, useState, type ReactNode } from 'react';
+import { Fragment, useEffect, useMemo, useState, type ReactNode } from 'react';
 import { LineChart, Line, BarChart, Bar, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
-import { Lock, Info, Trophy, BookOpen, Building2, FileText, RotateCcw, ShieldCheck, ExternalLink } from 'lucide-react';
+import { Lock, Info, Trophy, BookOpen, Building2, FileText, RotateCcw, ShieldCheck, ExternalLink, Columns3, FlaskConical, Link2, Check } from 'lucide-react';
 
 /**
  * Utkast til «Norwegian Business School Ranking» (intern, utforskende). Data fra scripts/build-rangering.py:
@@ -11,8 +11,8 @@ import { Lock, Info, Trophy, BookOpen, Building2, FileText, RotateCcw, ShieldChe
  */
 
 // ── Datatyper (speiler build-rangering.py) ───────────────────────────────────
-interface DbhAar { arsverk: number | null; faglige: number | null; rekruttering: number | null; forsteAndel: number | null; studenter: number | null; publPoeng: number | null; publikasjoner: number | null; poengPerUff: number | null; poengPerFaglig: number | null; niva2Andel: number | null; studenterPerFaglig: number | null; }
-interface ArtAar { n: number; nvi: number; intlAndel: number | null; forfatterandel: number | null; niva: Record<'0' | '1' | '2' | 'u', number>; ajg: Record<string, number> | null; abdc: Record<string, number>; ft50: number; utd24: number; }
+interface DbhAar { arsverk: number | null; faglige: number | null; rekruttering: number | null; forsteAndel: number | null; studenter: number | null; publPoeng: number | null; publikasjoner: number | null; uff: number | null; utenStip?: number | null; poengPerUff: number | null; poengPerFaglig: number | null; niva2Andel: number | null; studenterPerFaglig: number | null; }
+interface ArtAar { n: number; nvi: number; intlAndel: number | null; forfatterandel: number | null; niva: Record<'0' | '1' | '2' | 'u', number>; ajg: Record<string, number> | null; abdc: Record<string, number>; ft50: number; utd24: number; /** «niva|abdc|ft|ajg» → [antall, sum forfatterandel] */ komb?: Record<string, [number, number]>; }
 interface Topp { aar: number; tittel: string | null; tidsskrift: string | null; ajg: string | null; abdc: string | null; ft50: boolean; utd24: boolean; niva: string; }
 interface Utd { aar: number; program: number; plasser: number | null; forstevalg: number | null; fvPerPlass: number | null; poenggrenseMaks: number | null; poenggrenseMin: number | null; studiebarometer: number | null; normertTid: number | null; normertKull: number | null; }
 interface Akk { navn?: string; type?: string; aar?: number | string | null; url?: string | null; [k: string]: unknown }
@@ -64,6 +64,58 @@ function artSum(s: Skole, aar: string[]) {
   return { n, ft, utd, intl, ajg34, ajgN, abdcA };
 }
 
+// ── Lagdelt forskningsmål («høyeste nivå teller») ───────────────────────────
+// Hver artikkel får ett trinn: det høyeste av norsk nivå, ABDC, FT50/UTD24 og AJG (når lista finnes). Trinnene vektes,
+// og artikkelen telles med enhetens forfatterandel (1/n per forfatter) eller helt. Ingenting telles dobbelt.
+type Trinn = 'null' | 'basis' | 'hoy' | 'topp';
+const TRINN: Trinn[] = ['basis', 'hoy', 'topp'];
+const TRINN_NAVN: Record<Trinn, string> = { null: 'Ikke vitenskapelig', basis: 'Basis', hoy: 'Høy', topp: 'Topp' };
+const TRINN_FORKLARING: Record<Exclude<Trinn, 'null'>, string> = {
+  basis: 'Norsk nivå 1, ABDC B/C, AJG 1–2',
+  hoy: 'Norsk nivå 2, ABDC A, AJG 3',
+  topp: 'FT50/UTD24, ABDC A*, AJG 4/4*',
+};
+const TRINN_FARGE: Record<Exclude<Trinn, 'null'>, string> = { basis: '#9FCFC2', hoy: '#3F8E7B', topp: '#014238' };
+const RANG: Record<Trinn, number> = { null: 0, basis: 1, hoy: 2, topp: 3 };
+interface Lag { fra: number; til: number; brok: boolean; /** uff = UN1 + UN2 (HK-dir); utenStip = UN1 + postdoktorer (NHH) */ nevner: 'uff' | 'utenStip'; vekter: Record<'basis' | 'hoy' | 'topp', number>; abdc: boolean; ft: boolean; ajg: boolean; }
+const lagStandard = (y1: number): Lag => ({ fra: y1 - 4, til: y1, brok: true, nevner: 'uff', vekter: { basis: 1, hoy: 3, topp: 5 }, abdc: true, ft: true, ajg: true });
+
+function trinnFor(nokkel: string, lag: Lag): { t: Trinn; loftet: boolean } {
+  const [niva, abdc, ft, ajg] = nokkel.split('|');
+  const norsk: Trinn = niva === '2' ? 'hoy' : niva === '1' ? 'basis' : 'null';
+  let t = norsk;
+  const opp = (x: Trinn) => { if (RANG[x] > RANG[t]) t = x; };
+  if (lag.abdc && abdc && abdc !== '-') opp(abdc === 'A*' ? 'topp' : abdc === 'A' ? 'hoy' : 'basis');
+  if (lag.ft && ft && ft !== '-') opp('topp');
+  if (lag.ajg && ajg && ajg !== '-' && ajg !== '?') opp(ajg === '4' || ajg === '4*' ? 'topp' : ajg === '3' ? 'hoy' : 'basis');
+  return { t, loftet: RANG[t] > RANG[norsk] };
+}
+interface LagRes {
+  artikler: number; andeler: number; per: Record<Trinn, number>; vektet: number; uff: number | null; perArsverk: number | null;
+  dekning: { abdc: number; ft: number; ajg: number | null; noen: number }; loftet: number;
+}
+function lagResultat(s: Skole, lag: Lag, harAjg: boolean): LagRes {
+  const per: Record<Trinn, number> = { null: 0, basis: 0, hoy: 0, topp: 0 };
+  let artikler = 0, andeler = 0, abdc = 0, ft = 0, ajg = 0, noen = 0, loftet = 0;
+  const aar = aarRekke(lag.fra, lag.til);
+  for (const y of aar) {
+    for (const [nk, [n, frac]] of Object.entries(s.artikler[y]?.komb ?? {})) {
+      const { t, loftet: l } = trinnFor(nk, lag);
+      const tell = lag.brok ? frac : n;
+      per[t] += tell; artikler += n; andeler += frac;
+      const [, a, f, j] = nk.split('|');
+      const paA = a !== '-', paF = f !== '-', paJ = j !== '-' && j !== '?';
+      if (paA) abdc += n; if (paF) ft += n; if (paJ) ajg += n; if (paA || paF || paJ) noen += n;
+      if (l) loftet += n;
+    }
+  }
+  const vektet = TRINN.reduce((a, t) => a + per[t] * lag.vekter[t as 'basis'], 0);
+  const uff = snitt(aar.map((y) => lag.nevner === 'utenStip' ? s.dbh[y]?.utenStip : s.dbh[y]?.uff));
+  const pst = (x: number) => artikler ? 100 * x / artikler : 0;
+  return { artikler, andeler, per, vektet, uff, perArsverk: uff ? vektet / uff : null,
+    dekning: { abdc: pst(abdc), ft: pst(ft), ajg: harAjg ? pst(ajg) : null, noen: pst(noen) }, loftet: pst(loftet) };
+}
+
 type Dim = 'Forskning' | 'Utdanning' | 'Fagmiljø' | 'Anerkjennelse';
 const DIMS: Dim[] = ['Forskning', 'Utdanning', 'Fagmiljø', 'Anerkjennelse'];
 /** Standardandeler per dimensjon (prosent). Forskningen velges i trinn; de andre deler resten i dette forholdet. */
@@ -71,25 +123,28 @@ const DIM_STANDARD: Record<Dim, number> = { Forskning: 75, Utdanning: 20, Fagmil
 const FORSK_STANDARD = 75;
 const FORSK_TRINN = [50, 55, 60, 65, 70, 75, 80, 85];
 interface Ind { id: string; label: string; dim: Dim; vekt: number; desc: string; fmt: (v: number | null) => string; verdi: (s: Skole) => number | null; }
-function lagIndikatorer(d: Data): Ind[] {
+function lagIndikatorer(d: Data, lag: Lag): Ind[] {
   const y1 = sisteDbhAar(d);
   const tre = aarRekke(y1 - 2, y1);
   const fem = aarRekke(y1 - 4, y1);
   const harAjg = d.lister.ajg;
+  const vindu = lag.fra === lag.til ? String(lag.fra) : `${lag.fra}–${lag.til}`;
   return [
-    { id: 'poeng', label: 'Poeng per faglig årsverk', dim: 'Forskning', vekt: 30, desc: `Publiseringspoeng per faglig årsverk inkl. rekrutteringsstillinger (UN1 + stipendiater og postdoktorer), snitt ${tre[0]}–${y1}. DBH 373/225. Samme definisjon som HK-dirs tilstandsrapport og HHs infografikk.`,
+    { id: 'poeng', label: 'Poeng per faglig årsverk', dim: 'Forskning', vekt: 25, desc: `Publiseringspoeng per faglig årsverk inkl. rekrutteringsstillinger (UN1 + stipendiater og postdoktorer), snitt ${tre[0]}–${y1}. DBH 373/225. Samme definisjon som HK-dirs tilstandsrapport og HHs infografikk.`,
       fmt: (v) => nf(v, 2), verdi: (s) => snitt(tre.map((y) => s.dbh[y]?.poengPerUff)) },
-    { id: 'niva2', label: 'Andel nivå 2', dim: 'Forskning', vekt: 10, desc: `Andel av publiseringspoengene på nivå 2, snitt ${tre[0]}–${y1}. DBH 374.`,
+    { id: 'lag', label: 'Lagdelt forskning per årsverk', dim: 'Forskning', vekt: 25, desc: `Artikler ${vindu} vektet etter høyeste nivå (norsk nivå, ABDC, FT50/UTD24${harAjg ? ', AJG' : ''}), ${lag.brok ? 'brøkdelt per forfatter (1/n)' : 'hel telling'}, per årsverk (${lag.nevner === 'uff' ? 'UN1 + stipendiater og postdoktorer, som HK-dir' : 'UN1 + postdoktorer, uten stipendiater, som NHH'}; snitt over perioden). Vekter basis ${lag.vekter.basis}, høy ${lag.vekter.hoy}, topp ${lag.vekter.topp}. Innstillingene endres i Forskningslab. NVA × lister.`,
+      fmt: (v) => nf(v, 2), verdi: (s) => lagResultat(s, lag, harAjg).perArsverk },
+    { id: 'niva2', label: 'Andel nivå 2', dim: 'Forskning', vekt: 5, desc: `Andel av publiseringspoengene på nivå 2, snitt ${tre[0]}–${y1}. DBH 374. Inngår også i det lagdelte målet.`,
       fmt: (v) => nf(v, 0) + ' %', verdi: (s) => snitt(tre.map((y) => s.dbh[y]?.niva2Andel)) },
     harAjg
-      ? { id: 'ajg34', label: 'Andel AJG 3–4*', dim: 'Forskning', vekt: 20, desc: `Andel av artiklene ${fem[0]}–${y1} i tidsskrift på AJG 2024 nivå 3, 4 eller 4*. NVA × AJG.`,
+      ? { id: 'ajg34', label: 'Andel AJG 3–4*', dim: 'Forskning', vekt: 0, desc: `Andel av artiklene ${fem[0]}–${y1} i tidsskrift på AJG 2024 nivå 3, 4 eller 4*. NVA × AJG. Inngår i det lagdelte målet, derfor vekt 0 som standard.`,
           fmt: (v) => nf(v, 0) + ' %', verdi: (s) => { const a = artSum(s, fem); return a.ajgN ? 100 * a.ajg34 / a.ajgN : null; } }
-      : { id: 'abdcA', label: 'Andel ABDC A/A*', dim: 'Forskning', vekt: 10, desc: `Andel av artiklene ${fem[0]}–${y1} i tidsskrift med ABDC A eller A* (AJG brukes når lista er lagt inn). NVA × ABDC.`,
+      : { id: 'abdcA', label: 'Andel ABDC A/A*', dim: 'Forskning', vekt: 0, desc: `Andel av artiklene ${fem[0]}–${y1} i tidsskrift med ABDC A eller A*. NVA × ABDC. Inngår i det lagdelte målet, derfor vekt 0 som standard.`,
           fmt: (v) => nf(v, 0) + ' %', verdi: (s) => { const a = artSum(s, fem); return a.n ? 100 * a.abdcA / a.n : null; } },
     { id: 'ajgNhh', label: 'AJG 4/4* per årsverk', dim: 'Forskning', vekt: 10, desc: 'Artikler på AJG 2024 nivå 4 og 4* per årsverk (uten stipendiater), snitt 2022–2024. NHH Research Report 2024, tabell 4 og 5: bare åtte skoler (NHH, BI, NMBU, Nord, NTNU, UiA, UiS, UiT); for de andre fordeles vekten på de andre målene.',
       fmt: (v) => nf(v, 2), verdi: (s) => s.ajgNhh ? snitt(['2022', '2023', '2024'].map((y) => { const a = s.ajgNhh?.[y]; return a ? (a['4*']?.perFte ?? 0) + (a['4']?.perFte ?? 0) : null; })) : null },
-    { id: 'ft50', label: 'FT50/UTD24 per 100 årsverk', dim: 'Forskning', vekt: 10, desc: `Artikler ${fem[0]}–${y1} i FT50 eller UTD24 per 100 UFF-årsverk (snitt). Én artikkel i begge lister telles én gang i FT50.`,
-      fmt: (v) => nf(v, 1), verdi: (s) => { const a = artSum(s, fem); const uff = snitt(fem.map((y) => { const x = s.dbh[y]; return x?.faglige != null ? x.faglige + (x.rekruttering ?? 0) : null; })); return uff ? 100 * Math.max(a.ft, a.utd) / uff : null; } },
+    { id: 'ft50', label: 'FT50/UTD24 per 100 årsverk', dim: 'Forskning', vekt: 5, desc: `Artikler ${fem[0]}–${y1} i FT50 eller UTD24 per 100 UFF-årsverk (snitt). Én artikkel i begge lister telles én gang i FT50.`,
+      fmt: (v) => nf(v, 1), verdi: (s) => { const a = artSum(s, fem); const uff = snitt(fem.map((y) => s.dbh[y]?.uff)); return uff ? 100 * Math.max(a.ft, a.utd) / uff : null; } },
     { id: 'intl', label: 'Internasjonal sampublisering', dim: 'Forskning', vekt: 5, desc: `Andel artikler ${fem[0]}–${y1} med minst én utenlandsk medforfatter. NVA.`,
       fmt: (v) => nf(v, 0) + ' %', verdi: (s) => { const a = artSum(s, fem); return a.n ? 100 * a.intl / a.n : null; } },
     { id: 'pg', label: 'Poenggrense ØA', dim: 'Utdanning', vekt: 7, desc: 'Høyeste poenggrense (ordinær kvote) blant skolens bachelor i økonomi og administrasjon, siste opptak. Samordna opptak.',
@@ -108,6 +163,107 @@ function lagIndikatorer(d: Data): Ind[] {
 }
 function akkNavn(s: Skole): string[] {
   return (s.akkreditering ?? []).map((a) => typeof a === 'string' ? a : String(a.navn ?? a.type ?? a.akkreditering ?? '')).filter(Boolean);
+}
+
+// ── Beregning: vekter, poengsum, plassintervall og grupper ───────────────────
+function effektiveVekter(ind: Ind[], vekt: Record<string, number>, forsk: number) {
+  const andel: Record<Dim, number> = { Forskning: forsk, Utdanning: 0, Fagmiljø: 0, Anerkjennelse: 0 };
+  const rest = DIMS.filter((d) => d !== 'Forskning');
+  const std = rest.reduce((a, d) => a + DIM_STANDARD[d], 0);
+  rest.forEach((d) => { andel[d] = (100 - forsk) * DIM_STANDARD[d] / std; });
+  const ut: Record<string, number> = {};
+  for (const d of DIMS) {
+    const mine = ind.filter((i) => i.dim === d); const sum = mine.reduce((a, i) => a + (vekt[i.id] ?? 0), 0);
+    mine.forEach((i) => { ut[i.id] = sum ? andel[d] * (vekt[i.id] ?? 0) / sum : 0; });
+  }
+  return { ut, andel };
+}
+type Gruppe = 'Topp' | 'Midt' | 'Nedre';
+interface Rad { s: Skole; score: number | null; plass: number | null; delt: Record<string, { v: number | null; n: number | null; plass: number | null }>; mangler: number; min: number | null; max: number | null; gruppe: Gruppe | null; grense: boolean; }
+function beregn(skoler: Skole[], ind: Ind[], vekt: Record<string, number>, forsk: number): Rad[] {
+  // Min–maks-normalisering til 0–100 blant skolene som vises; manglende verdi → vekten fordeles på resten.
+  const verdier = Object.fromEntries(ind.map((i) => [i.id, skoler.map((s) => i.verdi(s))]));
+  const norm = (id: string, v: number | null) => {
+    const xs = verdier[id].filter((x): x is number => x != null);
+    if (v == null || xs.length < 2) return null;
+    const lo = Math.min(...xs), hi = Math.max(...xs);
+    return hi === lo ? 50 : 100 * (v - lo) / (hi - lo);
+  };
+  const plassI = (id: string, v: number | null) => v == null ? null : 1 + verdier[id].filter((x) => x != null && (x as number) > v).length;
+  const score = (eut: Record<string, number>) => skoler.map((s, k) => {
+    let sum = 0, w = 0, mangler = 0;
+    for (const i of ind) {
+      const n = norm(i.id, verdier[i.id][k]);
+      if (n == null) { if (eut[i.id] > 0) mangler++; continue; }
+      sum += n * eut[i.id]; w += eut[i.id];
+    }
+    return { sc: w ? sum / w : null, mangler };
+  });
+  const plasser = (sc: (number | null)[]) => sc.map((x) => x == null ? null : 1 + sc.filter((y) => y != null && y > x + 1e-9).length);
+  const naa = score(effektiveVekter(ind, vekt, forsk).ut);
+  const plassNaa = plasser(naa.map((x) => x.sc));
+  // Plassintervall: plassen ved hvert trinn for forskningens andel (50–85 %) med de samme relative vektene.
+  const alle = FORSK_TRINN.map((f) => plasser(score(effektiveVekter(ind, vekt, f).ut).map((x) => x.sc)));
+  const n = plassNaa.filter((x) => x != null).length;
+  const gr = (p: number): Gruppe => p <= Math.ceil(n / 3) ? 'Topp' : p <= Math.ceil(2 * n / 3) ? 'Midt' : 'Nedre';
+  return skoler.map((s, k) => {
+    const ps = alle.map((a) => a[k]).filter((x): x is number => x != null);
+    const p = plassNaa[k];
+    const min = ps.length ? Math.min(...ps) : null, max = ps.length ? Math.max(...ps) : null;
+    const delt = Object.fromEntries(ind.map((i) => { const v = verdier[i.id][k]; return [i.id, { v, n: norm(i.id, v), plass: plassI(i.id, v) }]; }));
+    return { s, score: naa[k].sc, plass: p, delt, mangler: naa[k].mangler, min, max,
+      gruppe: p == null ? null : gr(p), grense: p != null && min != null && max != null && gr(min) !== gr(max) };
+  }).sort((a, b) => (a.plass ?? 99) - (b.plass ?? 99));
+}
+
+// ── Tilstand i lenken (?rangering&…) ────────────────────────────────────────
+type Fane = 'rangering' | 'sammenlign' | 'lab' | 'publisering' | 'profil' | 'kontroll' | 'metode';
+const FANER: Fane[] = ['rangering', 'sammenlign', 'lab', 'publisering', 'profil', 'kontroll', 'metode'];
+interface Tilstand { fane: Fane; forsk: number; vekt: Record<string, number>; medRef: boolean; lag: Lag; valgt: string[]; profil: string; }
+const PARAM = ['rangering', 'fane', 'forsk', 'vekt', 'ref', 'periode', 'telling', 'nevner', 'lagvekt', 'lister', 'skoler', 'profil'];
+function lesTilstand(d: Data, ind: Ind[], std: Tilstand): Tilstand {
+  const q = new URLSearchParams(window.location.search);
+  if (!q.has('rangering')) return std;
+  const t: Tilstand = { ...std, vekt: { ...std.vekt }, lag: { ...std.lag, vekter: { ...std.lag.vekter } } };
+  const fane = q.get('fane') as Fane | null; if (fane && FANER.includes(fane)) t.fane = fane;
+  const f = Number(q.get('forsk')); if (FORSK_TRINN.includes(f)) t.forsk = f;
+  for (const del of (q.get('vekt') ?? '').split(',')) { const [id, v] = del.split(':'); if (ind.some((i) => i.id === id) && Number.isFinite(Number(v))) t.vekt[id] = Math.max(0, Math.min(40, Number(v))); }
+  t.medRef = q.get('ref') === '1';
+  const per = (q.get('periode') ?? '').split('-').map(Number); if (per.length === 2 && per.every((x) => x >= d.aar[0] && x <= d.aar[1]) && per[0] <= per[1]) { t.lag.fra = per[0]; t.lag.til = per[1]; }
+  if (q.get('telling') === 'hel') t.lag.brok = false;
+  if (q.get('nevner') === 'utenstip') t.lag.nevner = 'utenStip';
+  const lv = (q.get('lagvekt') ?? '').split('-').map(Number); if (lv.length === 3 && lv.every((x) => Number.isFinite(x) && x >= 0 && x <= 10)) t.lag.vekter = { basis: lv[0], hoy: lv[1], topp: lv[2] };
+  if (q.has('lister')) { const l = (q.get('lister') ?? '').split(','); t.lag.abdc = l.includes('abdc'); t.lag.ft = l.includes('ft'); t.lag.ajg = l.includes('ajg'); }
+  const sk = (q.get('skoler') ?? '').split(',').filter((id) => d.skoler.some((s) => s.id === id)); if (sk.length) t.valgt = sk.slice(0, 3);
+  const pr = q.get('profil'); if (pr && d.skoler.some((s) => s.id === pr)) t.profil = pr;
+  return t;
+}
+function skrivTilstand(t: Tilstand, std: Tilstand) {
+  const q = new URLSearchParams(window.location.search);
+  PARAM.forEach((p) => q.delete(p));
+  q.set('rangering', '');
+  if (t.fane !== 'rangering') q.set('fane', t.fane);
+  if (t.forsk !== std.forsk) q.set('forsk', String(t.forsk));
+  const endret = Object.entries(t.vekt).filter(([id, v]) => std.vekt[id] !== v).map(([id, v]) => `${id}:${v}`);
+  if (endret.length) q.set('vekt', endret.join(','));
+  if (t.medRef) q.set('ref', '1');
+  if (t.lag.fra !== std.lag.fra || t.lag.til !== std.lag.til) q.set('periode', `${t.lag.fra}-${t.lag.til}`);
+  if (!t.lag.brok) q.set('telling', 'hel');
+  if (t.lag.nevner === 'utenStip') q.set('nevner', 'utenstip');
+  const lv = t.lag.vekter, sv = std.lag.vekter;
+  if (lv.basis !== sv.basis || lv.hoy !== sv.hoy || lv.topp !== sv.topp) q.set('lagvekt', `${lv.basis}-${lv.hoy}-${lv.topp}`);
+  if (!t.lag.abdc || !t.lag.ft || !t.lag.ajg) q.set('lister', [t.lag.abdc && 'abdc', t.lag.ft && 'ft', t.lag.ajg && 'ajg'].filter(Boolean).join(','));
+  if (t.fane === 'sammenlign' || t.valgt.join(',') !== std.valgt.join(',')) q.set('skoler', t.valgt.join(','));
+  if (t.fane === 'profil') q.set('profil', t.profil);
+  const s = q.toString().replace(/%2C/gi, ',').replace(/%3A/gi, ':').replace(/^rangering=(&|$)/, 'rangering$1').replace(/&rangering=(&|$)/, '&rangering$1');
+  window.history.replaceState(window.history.state, '', `${window.location.pathname}?${s}${window.location.hash}`);
+}
+function fjernTilstand() {
+  const q = new URLSearchParams(window.location.search);
+  if (!q.has('rangering')) return;
+  PARAM.forEach((p) => q.delete(p));
+  const s = q.toString();
+  window.history.replaceState(window.history.state, '', `${window.location.pathname}${s ? `?${s}` : ''}${window.location.hash}`);
 }
 
 // ── Komponent ────────────────────────────────────────────────────────────────
@@ -149,12 +305,34 @@ export function Handelshoyskolerangering() {
   return <Rangering data={data} />;
 }
 
-type Fane = 'rangering' | 'publisering' | 'profil' | 'kontroll' | 'metode';
 function Rangering({ data }: { data: Data }) {
-  const [fane, setFane] = useState<Fane>('rangering');
-  const [profil, setProfil] = useState<string>(() => data.skoler.find((s) => s.isNmbu)?.id ?? data.skoler[0]?.id);
+  const y1 = sisteDbhAar(data);
+  const harAjg = data.lister.ajg;
+  const std = useMemo<Tilstand>(() => {
+    const lag = lagStandard(y1);
+    const ind0 = lagIndikatorer(data, lag);
+    const hh = data.skoler.find((s) => s.isNmbu)?.id ?? data.skoler[0].id;
+    return { fane: 'rangering', forsk: FORSK_STANDARD, vekt: Object.fromEntries(ind0.map((i) => [i.id, i.vekt])), medRef: false, lag,
+      valgt: [hh, ...['nhh', 'bi'].filter((id) => id !== hh && data.skoler.some((s) => s.id === id))].slice(0, 3), profil: hh };
+  }, [data, y1]);
+  const [t, setT] = useState<Tilstand>(() => lesTilstand(data, lagIndikatorer(data, std.lag), std));
+  const sett = (p: Partial<Tilstand>) => setT((x) => ({ ...x, ...p }));
+  useEffect(() => { skrivTilstand(t, std); }, [t, std]);
+  useEffect(() => () => fjernTilstand(), []);
+  const [kopiert, setKopiert] = useState(false);
+  const kopier = async () => {
+    try { await navigator.clipboard.writeText(window.location.href); setKopiert(true); setTimeout(() => setKopiert(false), 2000); } catch { /* utilgjengelig */ }
+  };
+
+  const ind = useMemo(() => lagIndikatorer(data, t.lag), [data, t.lag]);
+  const skoler = useMemo(() => data.skoler.filter((s) => t.medRef || !s.referanse), [data, t.medRef]);
+  const rader = useMemo(() => beregn(skoler, ind, t.vekt, t.forsk), [skoler, ind, t.vekt, t.forsk]);
+  const eff = useMemo(() => effektiveVekter(ind, t.vekt, t.forsk), [ind, t.vekt, t.forsk]);
+
   const faner: { id: Fane; label: string; icon: ReactNode }[] = [
     { id: 'rangering', label: 'Rangering', icon: <Trophy className="w-4 h-4" /> },
+    { id: 'sammenlign', label: 'Sammenlign', icon: <Columns3 className="w-4 h-4" /> },
+    { id: 'lab', label: 'Forskningslab', icon: <FlaskConical className="w-4 h-4" /> },
     { id: 'publisering', label: 'Publisering', icon: <BookOpen className="w-4 h-4" /> },
     { id: 'profil', label: 'Skoleprofil', icon: <Building2 className="w-4 h-4" /> },
     { id: 'kontroll', label: 'Kvalitetssikring', icon: <ShieldCheck className="w-4 h-4" /> },
@@ -164,86 +342,80 @@ function Rangering({ data }: { data: Data }) {
     <div>
       <div className="flex items-start gap-2 text-xs rounded-lg px-4 py-3 mb-5" style={{ backgroundColor: 'var(--nmbu-beige-light)', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-2)' }}>
         <Info className="w-4 h-4 flex-shrink-0 mt-0.5" />
-        <span>Utkast {data.generert}. Rangeringen er et forslag til metode, ikke et ferdig resultat. Vektene kan endres fritt.
-          {!data.lister.ajg && <> AJG 2024 (ABS-lista) vises foreløpig med NHHs publiserte tall for åtte skoler (nivå 3, 4 og 4*); egen kobling av alle artikler mot AJG kommer når tillatelsen fra Chartered ABS er på plass. ABDC brukes for alle skoler i mellomtiden.</>}</span>
+        <span>Utkast {data.generert}. Rangeringen er et forslag til metode, ikke et ferdig resultat. Vektene kan endres fritt, og lenken husker valgene.
+          {!harAjg && <> AJG 2024 (ABS-lista) vises foreløpig med NHHs publiserte tall for åtte skoler (nivå 3, 4 og 4*); egen kobling av alle artikler mot AJG kommer når tillatelsen fra Chartered ABS er på plass. ABDC brukes for alle skoler i mellomtiden.</>}</span>
       </div>
-      <div className="flex flex-wrap gap-2 mb-5">
+      <div className="flex flex-wrap items-center gap-2 mb-5">
         {faner.map((f) => (
-          <button key={f.id} onClick={() => setFane(f.id)} className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm transition-all"
-            style={fane === f.id ? { backgroundColor: GRONN, color: '#fff' } : { backgroundColor: 'var(--nmbu-beige-light)', color: 'var(--nmbu-neutral-1)' }}>
+          <button key={f.id} onClick={() => sett({ fane: f.id })} className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm transition-all"
+            style={t.fane === f.id ? { backgroundColor: GRONN, color: '#fff' } : { backgroundColor: 'var(--nmbu-beige-light)', color: 'var(--nmbu-neutral-1)' }}>
             {f.icon}{f.label}
           </button>
         ))}
+        <button onClick={kopier} className="ml-auto flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs" title="Lenken husker fane, vekter, forskningsinnstillinger og valgte skoler. Mottakeren må ha passordet."
+          style={{ border: '1px solid var(--nmbu-neutral-3)', color: GRONN, fontWeight: 600, backgroundColor: '#fff' }}>
+          {kopiert ? <Check className="w-3.5 h-3.5" /> : <Link2 className="w-3.5 h-3.5" />}{kopiert ? 'Lenke kopiert' : 'Kopier lenke'}
+        </button>
       </div>
-      {fane === 'rangering' && <Samlet data={data} apneProfil={(id) => { setProfil(id); setFane('profil'); }} />}
-      {fane === 'publisering' && <Publisering data={data} />}
-      {fane === 'profil' && <Profil data={data} id={profil} setId={setProfil} />}
-      {fane === 'kontroll' && <KontrollFane data={data} />}
-      {fane === 'metode' && <Metode data={data} />}
+      {t.fane === 'rangering' && <Samlet ind={ind} rader={rader} eff={eff} t={t} sett={sett} std={std}
+        apneProfil={(id) => sett({ profil: id, fane: 'profil' })}
+        sammenlign={(id) => sett({ fane: 'sammenlign', valgt: t.valgt.includes(id) ? t.valgt : [...t.valgt, id].slice(-3) })} />}
+      {t.fane === 'sammenlign' && <Sammenlign data={data} ind={ind} rader={rader} eff={eff} t={t} sett={sett} />}
+      {t.fane === 'lab' && <Forskningslab data={data} skoler={skoler} lag={t.lag} std={std.lag} setLag={(lag) => sett({ lag })} />}
+      {t.fane === 'publisering' && <Publisering data={data} />}
+      {t.fane === 'profil' && <Profil data={data} id={t.profil} setId={(id) => sett({ profil: id })} />}
+      {t.fane === 'kontroll' && <KontrollFane data={data} />}
+      {t.fane === 'metode' && <Metode data={data} ind={ind} />}
     </div>
   );
 }
 
+// ── Små byggesteiner ─────────────────────────────────────────────────────────
+const GRUPPE_FARGE: Record<Gruppe, { bg: string; fg: string }> = {
+  Topp: { bg: 'var(--nmbu-green-dark)', fg: '#fff' },
+  Midt: { bg: 'var(--nmbu-green-4)', fg: 'var(--nmbu-green-dark)' },
+  Nedre: { bg: 'var(--nmbu-beige-light)', fg: 'var(--nmbu-neutral-1)' },
+};
+function GruppeMerke({ r }: { r: Rad }) {
+  if (!r.gruppe) return null;
+  const f = GRUPPE_FARGE[r.gruppe];
+  return <span className="px-1.5 py-0.5 rounded text-[10px]" title={r.grense ? 'Grensetilfelle: gruppen endres innenfor vektområdet 50–85 %' : 'Samme gruppe i hele vektområdet 50–85 %'}
+    style={{ backgroundColor: f.bg, color: f.fg, fontWeight: 600, border: r.grense ? '1px dashed var(--nmbu-neutral-2)' : '1px solid transparent' }}>{r.gruppe}{r.grense ? ' ~' : ''}</span>;
+}
+/** Plassintervallet over vektområdet som en liten skala 1…n med markør for nåværende plass. */
+function Intervall({ r, n }: { r: Rad; n: number }) {
+  if (r.min == null || r.max == null || r.plass == null || n < 2) return null;
+  const x = (p: number) => 100 * (p - 1) / (n - 1);
+  return (
+    <div className="relative mt-1" style={{ height: 8, width: 72 }} title={`Plass ${r.min}–${r.max} når forskningen teller 50–85 %`}>
+      <div className="absolute rounded" style={{ top: 3.5, height: 1, left: 0, right: 0, backgroundColor: 'var(--nmbu-neutral-3)' }} />
+      <div className="absolute rounded" style={{ top: 2, height: 4, left: `${x(r.min)}%`, width: `${Math.max(3, x(r.max) - x(r.min))}%`, backgroundColor: 'var(--nmbu-green-3, #46B4A0)' }} />
+      <div className="absolute rounded-full" style={{ top: 0.5, width: 7, height: 7, left: `calc(${x(r.plass)}% - 3.5px)`, backgroundColor: GRONN, border: '1.5px solid #fff' }} />
+    </div>
+  );
+}
+const knappStil = (on: boolean) => on ? { backgroundColor: GRONN, color: '#fff' } : { backgroundColor: 'var(--nmbu-beige-light)', color: 'var(--nmbu-neutral-1)' };
+
 // ── Fane 1: sammensatt rangering ─────────────────────────────────────────────
-function Samlet({ data, apneProfil }: { data: Data; apneProfil: (id: string) => void }) {
-  const ind = useMemo(() => lagIndikatorer(data), [data]);
-  const [vekt, setVekt] = useState<Record<string, number>>(() => Object.fromEntries(ind.map((i) => [i.id, i.vekt])));
-  const [forsk, setForsk] = useState(FORSK_STANDARD);
-  const [medRef, setMedRef] = useState(false);
-  // Effektiv vekt (prosent) per mål: forskningsandelen velges i trinn på 5; resten deles mellom de andre
-  // dimensjonene i standardforholdet. Innen en dimensjon er glidebryterne relative vekter.
-  const eff = useMemo(() => {
-    const andel: Record<Dim, number> = { Forskning: forsk, Utdanning: 0, Fagmiljø: 0, Anerkjennelse: 0 };
-    const rest = DIMS.filter((d) => d !== 'Forskning');
-    const std = rest.reduce((a, d) => a + DIM_STANDARD[d], 0);
-    rest.forEach((d) => { andel[d] = (100 - forsk) * DIM_STANDARD[d] / std; });
-    const ut: Record<string, number> = {};
-    for (const d of DIMS) {
-      const mine = ind.filter((i) => i.dim === d); const sum = mine.reduce((a, i) => a + vekt[i.id], 0);
-      mine.forEach((i) => { ut[i.id] = sum ? andel[d] * vekt[i.id] / sum : 0; });
-    }
-    return { ut, andel };
-  }, [ind, vekt, forsk]);
-  const skoler = data.skoler.filter((s) => medRef || !s.referanse);
-
-  const rader = useMemo(() => {
-    // Min–maks-normalisering til 0–100 blant skolene som vises; manglende verdi → vekten fordeles på resten.
-    const verdier = Object.fromEntries(ind.map((i) => [i.id, skoler.map((s) => i.verdi(s))]));
-    const norm = (id: string, v: number | null) => {
-      const xs = verdier[id].filter((x): x is number => x != null);
-      if (v == null || xs.length < 2) return null;
-      const lo = Math.min(...xs), hi = Math.max(...xs);
-      return hi === lo ? 50 : 100 * (v - lo) / (hi - lo);
-    };
-    return skoler.map((s, k) => {
-      let sum = 0, w = 0, mangler = 0;
-      const delt: Record<string, { v: number | null; n: number | null }> = {};
-      for (const i of ind) {
-        const v = verdier[i.id][k]; const n = norm(i.id, v);
-        delt[i.id] = { v, n };
-        if (n == null) { if (eff.ut[i.id] > 0) mangler++; continue; }
-        sum += n * eff.ut[i.id]; w += eff.ut[i.id];
-      }
-      return { s, score: w ? sum / w : null, delt, mangler };
-    }).sort((a, b) => (b.score ?? -1) - (a.score ?? -1));
-  }, [skoler, ind, eff]);
-
+interface SamletProps { ind: Ind[]; rader: Rad[]; eff: ReturnType<typeof effektiveVekter>; t: Tilstand; sett: (p: Partial<Tilstand>) => void; std: Tilstand; apneProfil: (id: string) => void; sammenlign: (id: string) => void; }
+function Samlet({ ind, rader, eff, t, sett, std, apneProfil, sammenlign }: SamletProps) {
+  const n = rader.filter((r) => r.plass != null).length;
   return (
     <div className="grid gap-5" style={{ gridTemplateColumns: 'minmax(0, 1fr)' }}>
       <div className="rounded-2xl p-5" style={kort}>
         <div className="flex items-center justify-between mb-3 flex-wrap gap-2">
           <div style={{ fontSize: 14, fontWeight: 600, color: GRONN }}>Vekter</div>
           <div className="flex items-center gap-4 text-xs" style={{ color: 'var(--nmbu-neutral-2)' }}>
-            <label className="flex items-center gap-1"><input type="checkbox" checked={medRef} onChange={(e) => setMedRef(e.target.checked)} /> Ta med referanseenheter</label>
-            <button onClick={() => { setVekt(Object.fromEntries(ind.map((i) => [i.id, i.vekt]))); setForsk(FORSK_STANDARD); }} className="flex items-center gap-1" style={{ color: GRONN, fontWeight: 600 }}><RotateCcw className="w-3 h-3" /> Standardvekter</button>
+            <label className="flex items-center gap-1"><input type="checkbox" checked={t.medRef} onChange={(e) => sett({ medRef: e.target.checked })} /> Ta med referanseenheter</label>
+            <button onClick={() => sett({ vekt: { ...std.vekt }, forsk: std.forsk })} className="flex items-center gap-1" style={{ color: GRONN, fontWeight: 600 }}><RotateCcw className="w-3 h-3" /> Standardvekter</button>
           </div>
         </div>
         <div className="flex flex-wrap items-center gap-2 mb-4">
           <span className="text-xs" style={{ color: 'var(--nmbu-neutral-2)', fontWeight: 600 }}>Forskningens andel (%):</span>
           <div className="flex rounded-lg overflow-hidden" style={{ border: '1px solid var(--nmbu-neutral-3)' }}>
             {FORSK_TRINN.map((f, k) => (
-              <button key={f} onClick={() => setForsk(f)} className="px-2.5 py-1 text-xs"
-                style={{ backgroundColor: forsk === f ? GRONN : '#fff', color: forsk === f ? '#fff' : 'var(--nmbu-neutral-1)', fontWeight: forsk === f ? 700 : 400, fontFamily: 'var(--font-mono, monospace)', borderRight: k < FORSK_TRINN.length - 1 ? '1px solid var(--nmbu-neutral-3)' : 'none' }}>{f}</button>
+              <button key={f} onClick={() => sett({ forsk: f })} className="px-2.5 py-1 text-xs"
+                style={{ backgroundColor: t.forsk === f ? GRONN : '#fff', color: t.forsk === f ? '#fff' : 'var(--nmbu-neutral-1)', fontWeight: t.forsk === f ? 700 : 400, fontFamily: 'var(--font-mono, monospace)', borderRight: k < FORSK_TRINN.length - 1 ? '1px solid var(--nmbu-neutral-3)' : 'none' }}>{f}</button>
             ))}
           </div>
           <span className="text-xs" style={{ color: 'var(--nmbu-neutral-2)' }}>
@@ -259,7 +431,7 @@ function Samlet({ data, apneProfil }: { data: Data; apneProfil: (id: string) => 
               {ind.filter((i) => i.dim === d).map((i) => (
                 <label key={i.id} className="flex items-center gap-2 text-xs py-0.5" title={i.desc} style={{ color: 'var(--nmbu-neutral-1)' }}>
                   <span style={{ width: 150, flexShrink: 0 }}>{i.label}</span>
-                  <input type="range" min={0} max={40} value={vekt[i.id]} onChange={(e) => setVekt((p) => ({ ...p, [i.id]: Number(e.target.value) }))} style={{ flex: 1, accentColor: 'var(--nmbu-green-dark)' }} />
+                  <input type="range" min={0} max={40} value={t.vekt[i.id] ?? 0} onChange={(e) => sett({ vekt: { ...t.vekt, [i.id]: Number(e.target.value) } })} style={{ flex: 1, accentColor: 'var(--nmbu-green-dark)' }} />
                   <span style={{ width: 52, flexShrink: 0, whiteSpace: 'nowrap', textAlign: 'right', fontFamily: 'var(--font-mono, monospace)' }} title="Effektiv vekt i poengsummen">{nf(eff.ut[i.id], 1)} %</span>
                 </label>
               ))}
@@ -269,39 +441,281 @@ function Samlet({ data, apneProfil }: { data: Data; apneProfil: (id: string) => 
       </div>
 
       <div className="rounded-2xl p-5 overflow-x-auto" style={kort}>
-        <table className="w-full text-sm" style={{ borderCollapse: 'collapse', minWidth: 900 }}>
+        <table className="w-full text-sm" style={{ borderCollapse: 'collapse', minWidth: 980 }}>
           <thead>
             <tr style={{ backgroundColor: 'var(--nmbu-beige-light)', borderBottom: '2px solid var(--nmbu-neutral-3)' }}>
-              <th className="px-2 py-2 text-left" style={{ color: 'var(--nmbu-neutral-2)', fontWeight: 600 }}>#</th>
+              <th className="px-2 py-2 text-left" style={{ color: 'var(--nmbu-neutral-2)', fontWeight: 600 }} title="Plass med valgte vekter, og spennet når forskningen teller 50–85 %">Plass</th>
               <th className="px-2 py-2 text-left" style={{ color: 'var(--nmbu-neutral-2)', fontWeight: 600 }}>Handelshøyskole</th>
               <th className="px-2 py-2 text-right" style={{ color: GRONN, fontWeight: 700 }}>Poeng</th>
               {ind.map((i) => <th key={i.id} className="px-2 py-2 text-right" title={i.desc} style={{ color: 'var(--nmbu-neutral-2)', fontWeight: 600, fontSize: 11, maxWidth: 90, opacity: eff.ut[i.id] ? 1 : 0.45 }}>{i.label}</th>)}
             </tr>
           </thead>
           <tbody>
-            {rader.map((r, k) => (
-              <tr key={r.s.id} style={{ borderBottom: '1px solid var(--nmbu-beige-light)', backgroundColor: r.s.isNmbu ? 'var(--nmbu-green-4)' : 'transparent' }}>
-                <td className="px-2 py-2" style={{ color: 'var(--nmbu-neutral-2)' }}>{r.score == null ? '–' : k + 1}</td>
-                <td className="px-2 py-2">
-                  <button onClick={() => apneProfil(r.s.id)} className="text-left hover:underline" style={{ color: 'var(--nmbu-neutral-1)', fontWeight: r.s.isNmbu ? 700 : 500 }}>{r.s.kort}</button>
-                  <div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)' }}>{r.s.navn}{r.s.referanse ? ' · referanse' : ''}{r.mangler ? ` · mangler ${r.mangler} mål` : ''}</div>
+            {rader.map((r, k) => {
+              const nyGruppe = k > 0 && r.gruppe !== rader[k - 1].gruppe;
+              return (
+                <tr key={r.s.id} style={{ borderTop: nyGruppe ? '2px solid var(--nmbu-neutral-3)' : undefined, borderBottom: '1px solid var(--nmbu-beige-light)', backgroundColor: r.s.isNmbu ? 'var(--nmbu-green-4)' : 'transparent' }}>
+                  <td className="px-2 py-2" style={{ verticalAlign: 'top' }}>
+                    <div className="flex items-baseline gap-1.5">
+                      <span style={{ fontWeight: 700, fontFamily: 'var(--font-mono, monospace)', color: 'var(--nmbu-neutral-1)' }}>{r.plass ?? '–'}</span>
+                      {r.min != null && r.max != null && <span style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)', fontFamily: 'var(--font-mono, monospace)' }}>{r.min === r.max ? 'fast' : `${r.min}–${r.max}`}</span>}
+                    </div>
+                    <Intervall r={r} n={n} />
+                  </td>
+                  <td className="px-2 py-2" style={{ verticalAlign: 'top' }}>
+                    <div className="flex items-center gap-2">
+                      <button onClick={() => apneProfil(r.s.id)} className="text-left hover:underline" style={{ color: 'var(--nmbu-neutral-1)', fontWeight: r.s.isNmbu ? 700 : 500 }}>{r.s.kort}</button>
+                      <GruppeMerke r={r} />
+                      <button onClick={() => sammenlign(r.s.id)} title="Sammenlign" className="opacity-60 hover:opacity-100"><Columns3 className="w-3.5 h-3.5" style={{ color: GRONN }} /></button>
+                    </div>
+                    <div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)' }}>{r.s.navn}{r.s.referanse ? ' · referanse' : ''}{r.mangler ? ` · mangler ${r.mangler} mål` : ''}</div>
+                  </td>
+                  <td className="px-2 py-2 text-right" style={{ fontWeight: 700, color: GRONN, fontFamily: 'var(--font-mono, monospace)', verticalAlign: 'top' }}>{nf(r.score, 0)}</td>
+                  {ind.map((i) => {
+                    const c = r.delt[i.id];
+                    return (
+                      <td key={i.id} className="px-2 py-2 text-right" style={{ fontFamily: 'var(--font-mono, monospace)', fontSize: 12, opacity: eff.ut[i.id] ? 1 : 0.45, verticalAlign: 'top' }} title={c.n == null ? 'Mangler' : `Normalisert: ${nf(c.n, 0)} av 100 · nr. ${c.plass} på dette målet`}>
+                        <div style={{ color: 'var(--nmbu-neutral-1)' }}>{i.fmt(c.v)}</div>
+                        {c.n != null && <div className="ml-auto mt-0.5 rounded" style={{ height: 3, width: `${Math.max(4, c.n * 0.6)}%`, minWidth: 2, backgroundColor: 'var(--nmbu-green-3, #46B4A0)' }} />}
+                      </td>
+                    );
+                  })}
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+        <p className="text-xs mt-3" style={{ color: 'var(--nmbu-neutral-2)' }}>
+          <b>Plass og intervall:</b> tallet er plassen med valgte vekter; spennet og streken viser laveste og høyeste plass når forskningens andel varieres fra 50 til 85 % (de relative vektene innen hver dimensjon holdes fast). «Fast» betyr samme plass i hele området.
+          {' '}<b>Grupper:</b> Topp, Midt og Nedre er tredjedeler av lista med valgte vekter, slik CHE-rangeringen grupperer i stedet for å legge vekt på små forskjeller i plass. ~ og stiplet ramme betyr at skolen bytter gruppe innenfor vektområdet.
+          {' '}<b>Poeng:</b> hvert mål skaleres til 0–100 (laveste til høyeste blant skolene som vises), og poengsummen er det vektede snittet. Mangler en skole et mål, fordeles vekten på de andre målene for den skolen.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+// ── Fane 2: sammenlign to eller tre skoler ───────────────────────────────────
+const SML_FARGE = ['#025C4F', '#2F6FB0', '#C2671E'];
+function Sammenlign({ data, ind, rader, eff, t, sett }: { data: Data; ind: Ind[]; rader: Rad[]; eff: ReturnType<typeof effektiveVekter>; t: Tilstand; sett: (p: Partial<Tilstand>) => void }) {
+  const y1 = sisteDbhAar(data);
+  const valgt = t.valgt.map((id) => rader.find((r) => r.s.id === id) ?? null).filter((r): r is Rad => !!r);
+  const n = rader.filter((r) => r.plass != null).length;
+  const veksle = (id: string) => sett({ valgt: t.valgt.includes(id) ? t.valgt.filter((x) => x !== id) : [...t.valgt, id].slice(-3) });
+  const aar = aarRekke(data.aar[0], y1);
+  const linje = aar.map((y) => ({ aar: y, ...Object.fromEntries(valgt.map((r) => [r.s.id, r.s.dbh[y]?.poengPerUff ?? null])) }));
+  const lagR = valgt.map((r) => ({ r, l: lagResultat(r.s, t.lag, data.lister.ajg) }));
+  return (
+    <div className="grid gap-5">
+      <div className="rounded-2xl p-4" style={kort}>
+        <div className="text-xs mb-2" style={{ color: 'var(--nmbu-neutral-2)' }}>Velg to eller tre skoler (den eldste valgte faller ut når du velger en fjerde).</div>
+        <div className="flex flex-wrap gap-1.5">
+          {rader.map((r) => {
+            const k = t.valgt.indexOf(r.s.id);
+            return <button key={r.s.id} onClick={() => veksle(r.s.id)} className="px-2.5 py-1 rounded-lg text-xs"
+              style={k >= 0 ? { backgroundColor: SML_FARGE[k], color: '#fff', border: `1px solid ${SML_FARGE[k]}` } : { backgroundColor: '#fff', color: 'var(--nmbu-neutral-1)', border: '1px solid var(--nmbu-neutral-3)' }}>{r.s.kort}</button>;
+          })}
+        </div>
+      </div>
+      {valgt.length < 2 ? <div className="rounded-2xl p-6 text-sm" style={{ ...kort, color: 'var(--nmbu-neutral-2)' }}>Velg minst to skoler.</div> : (
+        <>
+          <div className="grid gap-4" style={{ gridTemplateColumns: `repeat(${valgt.length}, minmax(0, 1fr))` }}>
+            {valgt.map((r, k) => (
+              <div key={r.s.id} className="rounded-2xl p-5" style={{ ...kort, borderTop: `4px solid ${SML_FARGE[k]}` }}>
+                <div className="flex items-center gap-2"><span style={{ fontSize: 18, fontWeight: 700, color: 'var(--nmbu-neutral-1)' }}>{r.s.kort}</span><GruppeMerke r={r} /></div>
+                <div style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)' }}>{r.s.navn}</div>
+                <div className="flex items-end gap-5 mt-3">
+                  <div><div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)' }}>Plass</div><div style={{ fontSize: 28, fontWeight: 700, fontFamily: 'var(--font-mono, monospace)', color: SML_FARGE[k] }}>{r.plass ?? '–'}</div></div>
+                  <div><div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)' }}>Poeng</div><div style={{ fontSize: 28, fontWeight: 700, fontFamily: 'var(--font-mono, monospace)', color: 'var(--nmbu-neutral-1)' }}>{nf(r.score, 0)}</div></div>
+                  <div><div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)' }}>Spenn 50–85 %</div><div style={{ fontSize: 15, fontFamily: 'var(--font-mono, monospace)' }}>{r.min}–{r.max}</div><Intervall r={r} n={n} /></div>
+                </div>
+                <div className="text-xs mt-3" style={{ color: 'var(--nmbu-neutral-2)' }}>{akkNavn(r.s).join(' · ') || 'Ingen internasjonal akkreditering'}</div>
+              </div>
+            ))}
+          </div>
+
+          <div className="rounded-2xl p-5 overflow-x-auto" style={kort}>
+            <table className="w-full text-sm" style={{ borderCollapse: 'collapse', minWidth: 640 }}>
+              <thead>
+                <tr style={{ backgroundColor: 'var(--nmbu-beige-light)', borderBottom: '2px solid var(--nmbu-neutral-3)' }}>
+                  <th className="px-2 py-2 text-left" style={{ color: 'var(--nmbu-neutral-2)', fontWeight: 600 }}>Mål</th>
+                  <th className="px-2 py-2 text-right" style={{ color: 'var(--nmbu-neutral-2)', fontWeight: 600, fontSize: 11 }}>Vekt</th>
+                  {valgt.map((r, k) => <th key={r.s.id} className="px-2 py-2 text-right" style={{ color: SML_FARGE[k], fontWeight: 700 }}>{r.s.kort}</th>)}
+                </tr>
+              </thead>
+              <tbody>
+                {DIMS.map((d) => (
+                  <Fragment key={d}>
+                    <tr><td colSpan={2 + valgt.length} className="px-2 pt-3 pb-1" style={{ fontSize: 11, fontWeight: 700, color: 'var(--nmbu-neutral-2)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>{d}</td></tr>
+                    {ind.filter((i) => i.dim === d).map((i) => {
+                      const best = Math.max(...valgt.map((r) => r.delt[i.id].n ?? -1));
+                      return (
+                        <tr key={i.id} style={{ borderBottom: '1px solid var(--nmbu-beige-light)', opacity: eff.ut[i.id] ? 1 : 0.5 }}>
+                          <td className="px-2 py-1.5" title={i.desc} style={{ color: 'var(--nmbu-neutral-1)' }}>{i.label}</td>
+                          <td className="px-2 py-1.5 text-right" style={{ fontFamily: 'var(--font-mono, monospace)', fontSize: 11, color: 'var(--nmbu-neutral-2)' }}>{nf(eff.ut[i.id], 1)} %</td>
+                          {valgt.map((r, k) => {
+                            const c = r.delt[i.id];
+                            const er = c.n != null && c.n === best && valgt.length > 1;
+                            return (
+                              <td key={r.s.id} className="px-2 py-1.5 text-right" style={{ fontFamily: 'var(--font-mono, monospace)', fontSize: 12 }}>
+                                <div style={{ fontWeight: er ? 700 : 400, color: er ? SML_FARGE[k] : 'var(--nmbu-neutral-1)' }}>{i.fmt(c.v)}</div>
+                                {c.plass != null && <div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)' }}>nr. {c.plass} av {n}</div>}
+                              </td>
+                            );
+                          })}
+                        </tr>
+                      );
+                    })}
+                  </Fragment>
+                ))}
+              </tbody>
+            </table>
+            <p className="text-xs mt-2" style={{ color: 'var(--nmbu-neutral-2)' }}>Uthevet = best av de valgte. «nr. x av n» er plassen på målet blant alle skolene i rangeringen.</p>
+          </div>
+
+          <div className="grid gap-5" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))' }}>
+            <div className="rounded-2xl p-5" style={kort}>
+              <div style={{ fontSize: 14, fontWeight: 600, color: GRONN, marginBottom: 8 }}>Poeng per faglig årsverk, {data.aar[0]}–{y1}</div>
+              <ResponsiveContainer width="100%" height={240}>
+                <LineChart data={linje} margin={{ top: 10, right: 16, left: -10, bottom: 0 }}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="var(--nmbu-beige-light)" vertical={false} />
+                  <XAxis dataKey="aar" tick={{ fontSize: 11 }} /><YAxis tick={{ fontSize: 11 }} tickFormatter={(v) => nf(v, 1)} />
+                  <Tooltip formatter={(v: number, k: string) => [nf(v, 2), data.skoler.find((s) => s.id === k)?.kort ?? k]} />
+                  <Legend formatter={(k: string) => data.skoler.find((s) => s.id === k)?.kort ?? k} wrapperStyle={{ fontSize: 11 }} />
+                  {valgt.map((r, k) => <Line key={r.s.id} type="monotone" dataKey={r.s.id} stroke={SML_FARGE[k]} strokeWidth={2.5} dot={{ r: 3 }} connectNulls />)}
+                </LineChart>
+              </ResponsiveContainer>
+            </div>
+            <div className="rounded-2xl p-5" style={kort}>
+              <div style={{ fontSize: 14, fontWeight: 600, color: GRONN, marginBottom: 8 }}>Lagdelt forskning per årsverk, {t.lag.fra}–{t.lag.til}</div>
+              <ResponsiveContainer width="100%" height={240}>
+                <BarChart data={lagR.map(({ r, l }) => ({ navn: r.s.kort, ...Object.fromEntries(TRINN.map((tr) => [tr, l.uff ? l.per[tr] * t.lag.vekter[tr as 'basis'] / l.uff : 0])) }))} margin={{ top: 10, right: 10, left: -10, bottom: 0 }}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="var(--nmbu-beige-light)" vertical={false} />
+                  <XAxis dataKey="navn" tick={{ fontSize: 11 }} /><YAxis tick={{ fontSize: 11 }} tickFormatter={(v) => nf(v, 1)} />
+                  <Tooltip formatter={(v: number, k: string) => [nf(v, 2), TRINN_NAVN[k as Trinn]]} />
+                  <Legend formatter={(k: string) => TRINN_NAVN[k as Trinn]} wrapperStyle={{ fontSize: 11 }} />
+                  {TRINN.map((tr) => <Bar key={tr} dataKey={tr} stackId="a" fill={TRINN_FARGE[tr as 'basis']} stroke="#fff" strokeWidth={1} />)}
+                </BarChart>
+              </ResponsiveContainer>
+              <p className="text-xs" style={{ color: 'var(--nmbu-neutral-2)' }}>Vektede artikler per årsverk, delt på trinn. Innstillingene (periode, telling, vekter, lister) styres i Forskningslab.</p>
+            </div>
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
+
+// ── Fane 3: forskningslab (Tilburg-lignende sandkasse) ───────────────────────
+function Forskningslab({ data, skoler, lag, std, setLag }: { data: Data; skoler: Skole[]; lag: Lag; std: Lag; setLag: (l: Lag) => void }) {
+  const harAjg = data.lister.ajg;
+  const [sorter, setSorter] = useState<'perArsverk' | 'vektet' | 'artikler' | 'noen'>('perArsverk');
+  const rader = skoler.map((s) => ({ s, l: lagResultat(s, lag, harAjg) }))
+    .sort((a, b) => sorter === 'noen' ? b.l.dekning.noen - a.l.dekning.noen : ((b.l[sorter] as number | null) ?? -1) - ((a.l[sorter] as number | null) ?? -1));
+  const maks = Math.max(...rader.map((r) => r.l.perArsverk ?? 0), 0.01);
+  const aarValg = aarRekke(data.aar[0], data.aar[1]).map(Number);
+  const sel = { border: '1px solid var(--nmbu-neutral-3)', borderRadius: 8, padding: '3px 6px', fontSize: 12, backgroundColor: '#fff' } as const;
+  const th = (id: typeof sorter | null, label: string, title?: string) => (
+    <th className="px-2 py-2 text-right" title={title} style={{ color: id === sorter ? GRONN : 'var(--nmbu-neutral-2)', fontWeight: 600, fontSize: 11, cursor: id ? 'pointer' : undefined, whiteSpace: 'nowrap' }} onClick={() => id && setSorter(id)}>{label}{id === sorter ? ' ↓' : ''}</th>
+  );
+  return (
+    <div className="grid gap-5">
+      <div className="rounded-2xl p-5" style={kort}>
+        <div className="flex items-center justify-between flex-wrap gap-2 mb-3">
+          <div style={{ fontSize: 14, fontWeight: 600, color: GRONN }}>Forskningslab: bygg forskningsmålet selv</div>
+          <button onClick={() => setLag({ ...std, vekter: { ...std.vekter } })} className="flex items-center gap-1 text-xs" style={{ color: GRONN, fontWeight: 600 }}><RotateCcw className="w-3 h-3" /> Standard</button>
+        </div>
+        <div className="grid gap-x-8 gap-y-4" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))' }}>
+          <div className="text-xs" style={{ color: 'var(--nmbu-neutral-1)' }}>
+            <div style={{ fontWeight: 700, color: 'var(--nmbu-neutral-2)', marginBottom: 6 }}>PERIODE</div>
+            <div className="flex items-center gap-2">
+              <select value={lag.fra} onChange={(e) => setLag({ ...lag, fra: Math.min(Number(e.target.value), lag.til) })} style={sel}>{aarValg.map((y) => <option key={y} value={y}>{y}</option>)}</select>
+              <span>–</span>
+              <select value={lag.til} onChange={(e) => setLag({ ...lag, til: Math.max(Number(e.target.value), lag.fra) })} style={sel}>{aarValg.map((y) => <option key={y} value={y}>{y}</option>)}</select>
+            </div>
+            <div style={{ fontWeight: 700, color: 'var(--nmbu-neutral-2)', margin: '12px 0 6px' }}>PER ÅRSVERK, NEVNER</div>
+            <div className="flex gap-1">
+              <button onClick={() => setLag({ ...lag, nevner: 'uff' })} className="px-3 py-1 rounded-md" style={knappStil(lag.nevner === 'uff')} title="UN1 + stipendiater og postdoktorer (HK-dirs tilstandsrapport, HHs infografikk)">Med stipendiater</button>
+              <button onClick={() => setLag({ ...lag, nevner: 'utenStip' })} className="px-3 py-1 rounded-md" style={knappStil(lag.nevner === 'utenStip')} title="UN1 + postdoktorer (NHHs forskningsrapport)">Uten stipendiater</button>
+            </div>
+            <div style={{ fontWeight: 700, color: 'var(--nmbu-neutral-2)', margin: '12px 0 6px' }}>TELLING</div>
+            <div className="flex gap-1">
+              <button onClick={() => setLag({ ...lag, brok: true })} className="px-3 py-1 rounded-md" style={knappStil(lag.brok)} title="Hver artikkel teller med enhetens andel av forfatterne (1/n per forfatter)">Brøk (1/n)</button>
+              <button onClick={() => setLag({ ...lag, brok: false })} className="px-3 py-1 rounded-md" style={knappStil(!lag.brok)} title="Hver artikkel teller 1 for hver enhet med minst én forfatter">Hel</button>
+            </div>
+          </div>
+          <div className="text-xs" style={{ color: 'var(--nmbu-neutral-1)' }}>
+            <div style={{ fontWeight: 700, color: 'var(--nmbu-neutral-2)', marginBottom: 6 }}>VEKT PER TRINN</div>
+            {(['basis', 'hoy', 'topp'] as const).map((tr) => (
+              <label key={tr} className="flex items-center gap-2 py-0.5" title={TRINN_FORKLARING[tr]}>
+                <span className="inline-block rounded" style={{ width: 10, height: 10, backgroundColor: TRINN_FARGE[tr] }} />
+                <span style={{ width: 44 }}>{TRINN_NAVN[tr]}</span>
+                <input type="range" min={0} max={10} step={0.5} value={lag.vekter[tr]} onChange={(e) => setLag({ ...lag, vekter: { ...lag.vekter, [tr]: Number(e.target.value) } })} style={{ flex: 1, accentColor: 'var(--nmbu-green-dark)' }} />
+                <span style={{ width: 28, textAlign: 'right', fontFamily: 'var(--font-mono, monospace)' }}>{nf(lag.vekter[tr], lag.vekter[tr] % 1 ? 1 : 0)}</span>
+              </label>
+            ))}
+            <div style={{ color: 'var(--nmbu-neutral-2)', marginTop: 4 }}>Standard 1 : 3 : 5 (som norsk nivå 1 og 2 for artikler, pluss et topptrinn).</div>
+          </div>
+          <div className="text-xs" style={{ color: 'var(--nmbu-neutral-1)' }}>
+            <div style={{ fontWeight: 700, color: 'var(--nmbu-neutral-2)', marginBottom: 6 }}>LISTER SOM KAN LØFTE TRINNET</div>
+            <div style={{ color: 'var(--nmbu-neutral-2)', marginBottom: 4 }}>Norsk nivå er alltid grunnlaget.</div>
+            {([['abdc', 'ABDC 2025 (C–A*)', true], ['ft', 'FT50 og UTD24', true], ['ajg', harAjg ? 'AJG 2024 (1–4*)' : 'AJG 2024 (venter på tillatelse)', harAjg]] as const).map(([k, label, ok]) => (
+              <label key={k} className="flex items-center gap-2 py-0.5" style={{ opacity: ok ? 1 : 0.5 }}>
+                <input type="checkbox" disabled={!ok} checked={lag[k] && ok} onChange={(e) => setLag({ ...lag, [k]: e.target.checked })} /> {label}
+              </label>
+            ))}
+          </div>
+        </div>
+        <div className="text-xs mt-4 rounded-lg px-3 py-2" style={{ backgroundColor: 'var(--nmbu-beige-light)', color: 'var(--nmbu-neutral-2)' }}>
+          <b>Høyeste nivå teller:</b> hver artikkel plasseres på det høyeste trinnet den oppnår i ett av systemene: {TRINN.map((tr) => `${TRINN_NAVN[tr]} = ${TRINN_FORKLARING[tr as 'basis']}`).join(' · ')}. Artikkelen telles bare én gang. Innstillingene her brukes også i målet «Lagdelt forskning per årsverk» i rangeringen.
+        </div>
+      </div>
+
+      <div className="rounded-2xl p-5 overflow-x-auto" style={kort}>
+        <table className="w-full text-sm" style={{ borderCollapse: 'collapse', minWidth: 980 }}>
+          <thead>
+            <tr style={{ backgroundColor: 'var(--nmbu-beige-light)', borderBottom: '2px solid var(--nmbu-neutral-3)' }}>
+              <th className="px-2 py-2 text-left" style={{ color: 'var(--nmbu-neutral-2)', fontWeight: 600 }}>Handelshøyskole</th>
+              {th('perArsverk', 'Per årsverk', 'Vektede artikler delt på snittet av årsverk i perioden (valgt nevner)')}
+              <th className="px-2 py-2 text-left" style={{ color: 'var(--nmbu-neutral-2)', fontWeight: 600, fontSize: 11, width: 200 }}>Bidrag per trinn</th>
+              {th('vektet', 'Sum vektet')}
+              {th('artikler', 'Artikler', 'Antall artikler (hel telling) i perioden')}
+              {th(null, lag.brok ? 'Forfatterandeler' : 'Telte', 'Summen av enhetens forfatterandeler (brøk) eller antall artikler (hel)')}
+              {TRINN.map((tr) => th(null, TRINN_NAVN[tr], TRINN_FORKLARING[tr as 'basis']))}
+              {th(null, 'Årsverk', lag.nevner === 'uff' ? 'Snitt UN1 + UN2 (inkl. stipendiater) i perioden, DBH' : 'Snitt UN1 + postdoktorer (uten stipendiater) i perioden, DBH')}
+              {th('noen', 'Dekning', 'Andel artikler i tidsskrift på minst én internasjonal liste (ABDC, FT50/UTD24, AJG)')}
+              {th(null, 'ABDC')}
+              {th(null, 'FT50/UTD24')}
+              {harAjg && th(null, 'AJG')}
+              {th(null, 'Løftet', 'Andel artikler der en internasjonal liste ga høyere trinn enn norsk nivå')}
+            </tr>
+          </thead>
+          <tbody>
+            {rader.map(({ s, l }) => (
+              <tr key={s.id} style={{ borderBottom: '1px solid var(--nmbu-beige-light)', backgroundColor: s.isNmbu ? 'var(--nmbu-green-4)' : 'transparent' }}>
+                <td className="px-2 py-1.5"><span style={{ fontWeight: s.isNmbu ? 700 : 500 }}>{s.kort}</span>{s.referanse && <span style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)' }}> · ref.</span>}</td>
+                <td className="px-2 py-1.5 text-right" style={{ fontFamily: 'var(--font-mono, monospace)', fontWeight: 700, color: GRONN }}>{nf(l.perArsverk, 2)}</td>
+                <td className="px-2 py-1.5">
+                  <div className="flex rounded overflow-hidden" style={{ height: 10, width: `${100 * (l.perArsverk ?? 0) / maks}%`, minWidth: 2 }}>
+                    {TRINN.map((tr) => { const v = l.per[tr] * lag.vekter[tr as 'basis']; return v > 0 ? <div key={tr} title={`${TRINN_NAVN[tr]}: ${nf(v, 1)}`} style={{ flex: v, backgroundColor: TRINN_FARGE[tr as 'basis'], borderRight: '1px solid #fff' }} /> : null; })}
+                  </div>
                 </td>
-                <td className="px-2 py-2 text-right" style={{ fontWeight: 700, color: GRONN, fontFamily: 'var(--font-mono, monospace)' }}>{nf(r.score, 0)}</td>
-                {ind.map((i) => {
-                  const c = r.delt[i.id];
-                  return (
-                    <td key={i.id} className="px-2 py-2 text-right" style={{ fontFamily: 'var(--font-mono, monospace)', fontSize: 12, opacity: eff.ut[i.id] ? 1 : 0.45 }} title={c.n == null ? 'Mangler' : `Normalisert: ${nf(c.n, 0)} av 100`}>
-                      <div style={{ color: 'var(--nmbu-neutral-1)' }}>{i.fmt(c.v)}</div>
-                      {c.n != null && <div className="ml-auto mt-0.5 rounded" style={{ height: 3, width: `${Math.max(4, c.n * 0.6)}%`, minWidth: 2, backgroundColor: 'var(--nmbu-green-3, #46B4A0)' }} />}
-                    </td>
-                  );
-                })}
+                <td className="px-2 py-1.5 text-right" style={{ fontFamily: 'var(--font-mono, monospace)' }}>{nf(l.vektet, 0)}</td>
+                <td className="px-2 py-1.5 text-right" style={{ fontFamily: 'var(--font-mono, monospace)' }}>{l.artikler}</td>
+                <td className="px-2 py-1.5 text-right" style={{ fontFamily: 'var(--font-mono, monospace)' }}>{nf(lag.brok ? l.andeler : l.artikler, lag.brok ? 1 : 0)}</td>
+                {TRINN.map((tr) => <td key={tr} className="px-2 py-1.5 text-right" style={{ fontFamily: 'var(--font-mono, monospace)', fontSize: 12 }}>{nf(l.per[tr], lag.brok ? 1 : 0)}</td>)}
+                <td className="px-2 py-1.5 text-right" style={{ fontFamily: 'var(--font-mono, monospace)', fontSize: 12 }}>{nf(l.uff, 0)}</td>
+                <td className="px-2 py-1.5 text-right" style={{ fontFamily: 'var(--font-mono, monospace)', fontSize: 12, fontWeight: 600 }}>{nf(l.dekning.noen, 0)} %</td>
+                <td className="px-2 py-1.5 text-right" style={{ fontFamily: 'var(--font-mono, monospace)', fontSize: 12 }}>{nf(l.dekning.abdc, 0)} %</td>
+                <td className="px-2 py-1.5 text-right" style={{ fontFamily: 'var(--font-mono, monospace)', fontSize: 12 }}>{nf(l.dekning.ft, 1)} %</td>
+                {harAjg && <td className="px-2 py-1.5 text-right" style={{ fontFamily: 'var(--font-mono, monospace)', fontSize: 12 }}>{nf(l.dekning.ajg, 0)} %</td>}
+                <td className="px-2 py-1.5 text-right" style={{ fontFamily: 'var(--font-mono, monospace)', fontSize: 12 }}>{nf(l.loftet, 0)} %</td>
               </tr>
             ))}
           </tbody>
         </table>
         <p className="text-xs mt-3" style={{ color: 'var(--nmbu-neutral-2)' }}>
-          Velg forskningens andel i trinn på 5 %; de andre dimensjonene deler resten i standardforholdet (20 : 3 : 2), og glidebryterne fordeler vekten innen hver dimensjon (prosenten er målets effektive vekt). Hvert mål skaleres til 0–100 (laveste til høyeste blant skolene som vises), og poengsummen er det vektede snittet. Mangler en skole et mål, fordeles vekten på de andre målene for den skolen. Hold musepekeren over en kolonne for definisjon og kilde.
+          Vitenskapelige artikler (NVA) der minst én forfatter er ved enheten, {lag.fra}–{lag.til}. <b>Dekning</b> viser hvor stor del av artiklene de internasjonale listene i det hele tatt vurderer; lav dekning betyr at skolen publiserer mye utenfor de klassiske økonomi- og ledelsestidsskriftene (f.eks. norske eller tverrfaglige tidsskrift), og at det norske nivået da avgjør. <b>Løftet</b> er andelen artikler der en internasjonal liste ga høyere trinn enn norsk nivå. Klikk på en kolonne med pil for å sortere.
         </p>
       </div>
     </div>
@@ -642,8 +1056,7 @@ function KontrollFane({ data }: { data: Data }) {
 }
 
 // ── Fane 5: metode ───────────────────────────────────────────────────────────
-function Metode({ data }: { data: Data }) {
-  const ind = lagIndikatorer(data);
+function Metode({ data, ind }: { data: Data; ind: Ind[] }) {
   return (
     <div className="rounded-2xl p-6 text-sm space-y-4" style={{ ...kort, color: 'var(--nmbu-neutral-1)', lineHeight: 1.6 }}>
       <div>
@@ -659,6 +1072,14 @@ function Metode({ data }: { data: Data }) {
       <div>
         <div style={{ fontWeight: 600, color: GRONN }}>Publisering i to systemer</div>
         Det norske systemet (publiseringspoeng, nivå 1 og 2) hentes fra DBH og er institusjonenes egne innrapporterte tall. Internasjonale nivåer hentes ved å koble hver artikkel i NVA (tidligere Cristin) på ISSN mot tidsskriftlister: AJG 2024 fra Chartered ABS (1–4*, samme som HHs infografikk), ABDC (C–A*), FT50 og UTD24. {data.lister.ajg ? 'AJG-lista er lagt inn.' : 'AJG-lista er lisensbelagt og ikke lagt inn ennå; den legges i data/rangering/tidsskrift/ajg2024.csv (mal: ajg-mal.csv).'}
+      </div>
+      <div>
+        <div style={{ fontWeight: 600, color: GRONN }}>Lagdelt forskningsmål: høyeste nivå teller</div>
+        Hver artikkel i NVA plasseres på ett trinn: det høyeste den oppnår i det norske nivåsystemet, ABDC, FT50/UTD24 eller AJG (når lista er lagt inn). Basis = norsk nivå 1, ABDC B/C, AJG 1–2; Høy = norsk nivå 2, ABDC A, AJG 3; Topp = FT50/UTD24, ABDC A*, AJG 4/4*. Artikkelen telles én gang, med enhetens andel av forfatterne (1/n per forfatter) som standard, og vektes 1 : 3 : 5. Summen deles på snittet av årsverk (UN1 + UN2) i perioden. Dekningsgraden viser hvor stor del av artiklene de internasjonale listene vurderer. Alt kan endres i Forskningslab, og målet i rangeringen følger innstillingene der.
+      </div>
+      <div>
+        <div style={{ fontWeight: 600, color: GRONN }}>Plassintervall og grupper</div>
+        Med 15 skoler er små forskjeller i poeng lite å bygge på. Ved siden av plassen vises derfor spennet i plass når forskningens andel går fra 50 til 85 % (de relative vektene innen hver dimensjon holdes fast), og skolene deles i tredjedeler (Topp, Midt, Nedre), slik CHE-rangeringen gjør. Skoler som bytter gruppe innenfor vektområdet, er merket som grensetilfeller.
       </div>
       <div>
         <div style={{ fontWeight: 600, color: GRONN }}>Kontroll mot HHs infografikk</div>

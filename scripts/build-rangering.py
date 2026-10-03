@@ -302,6 +302,8 @@ def main():
                 "studenter": int(v["studenter"]) if v["_123"] else None,
                 "publPoeng": r1(v["publPoeng"]) if v["_373"] else None,
                 "publikasjoner": int(v["publikasjoner"]) if v["_373"] else None,
+                "uff": r1(uff) if v["_225"] else None,  # UN1 + UN2, HK-dirs nevner
+                "utenStip": r1(v["un1"] + v["postdok"]) if v["_225"] else None,  # UN1 + postdoktorer, NHHs nevner
                 "poengPerUff": r1(v["publPoeng"] / uff, 2) if v["_373"] and uff else None,
                 # NHHs nevner i Research Report (åtte handelshøyskoler): UN1 + postdoktorer, uten stipendiater.
                 # Treffer 50 av 53 tall ±2 %.
@@ -321,6 +323,10 @@ def main():
             d = json.loads(f.read_text(encoding="utf-8"))
             aar = str(d["aar"])
             s = collections.Counter(); ajg = collections.Counter(); abdc = collections.Counter()
+            # Lagdelt forskningsmål: per kombinasjon av norsk nivå, ABDC, FT50/UTD24 og AJG lagres antall artikler
+            # og sum forfatterandel (enhetens forfattere / alle forfattere, dvs. 1/n per forfatter). Nettleseren
+            # regner «høyeste nivå teller» med valgfrie vekter, tidsvindu og hel/brøk telling ut fra dette.
+            komb = collections.defaultdict(lambda: [0, 0.0])
             for x in d["artikler"]:
                 s["n"] += 1
                 s["nvi"] += x.get("nvi", False)
@@ -339,6 +345,8 @@ def main():
                 abdc[tb[0] if tb else "ikke"] += 1
                 ft = bool(treff(lister["ft50"])); ut = bool(treff(lister["utd24"]))
                 s["ft50"] += ft; s["utd24"] += ut
+                nokkel = "|".join([niva, tb[0] if tb else "-", "f" if ft else "u" if ut else "-", (tj[0] if tj else "-") if lister["ajg"] else "?"])
+                k = komb[nokkel]; k[0] += 1; k[1] += (x.get("egne") or 0) / max(x.get("forfattere") or 1, 1)
                 if ft or ut or (tj and tj[0] in ("4", "4*")) or (tb and tb[0] == "A*"):
                     topp.append({"aar": int(aar), "tittel": x.get("tittel"), "tidsskrift": x.get("tidsskrift"),
                                  "ajg": tj[0] if tj else None, "abdc": tb[0] if tb else None, "ft50": ft, "utd24": ut,
@@ -347,7 +355,8 @@ def main():
                             "forfatterandel": r1(s["andel"]),
                             "niva": {k: s["niva" + k] for k in ("0", "1", "2", "u")},
                             "ajg": dict(ajg) if lister["ajg"] else None, "abdc": dict(abdc),
-                            "ft50": s["ft50"], "utd24": s["utd24"]}
+                            "ft50": s["ft50"], "utd24": s["utd24"],
+                            "komb": {kk: [v[0], round(v[1], 4)] for kk, v in sorted(komb.items())}}
         topp.sort(key=lambda t: (-t["aar"], t["tidsskrift"] or ""))
         return per_aar, topp, dict(fag)
 
