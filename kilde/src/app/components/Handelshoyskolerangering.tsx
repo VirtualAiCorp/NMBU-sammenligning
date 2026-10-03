@@ -1,5 +1,6 @@
 import { Fragment, useEffect, useMemo, useState, type ReactNode } from 'react';
-import { LineChart, Line, BarChart, Bar, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
+import '../../styles/skoleportrett.css';
+import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 import { Lock, Info, Trophy, BookOpen, Building2, FileText, RotateCcw, ShieldCheck, ExternalLink, Columns3, FlaskConical, Link2, Check } from 'lucide-react';
 
 /**
@@ -219,8 +220,8 @@ function beregn(skoler: Skole[], ind: Ind[], vekt: Record<string, number>, forsk
 // ── Tilstand i lenken (?rangering&…) ────────────────────────────────────────
 type Fane = 'rangering' | 'sammenlign' | 'lab' | 'publisering' | 'profil' | 'kontroll' | 'metode';
 const FANER: Fane[] = ['rangering', 'sammenlign', 'lab', 'publisering', 'profil', 'kontroll', 'metode'];
-interface Tilstand { fane: Fane; forsk: number; vekt: Record<string, number>; medRef: boolean; lag: Lag; valgt: string[]; profil: string; }
-const PARAM = ['rangering', 'fane', 'forsk', 'vekt', 'ref', 'periode', 'telling', 'nevner', 'lagvekt', 'lister', 'skoler', 'profil'];
+interface Tilstand { fane: Fane; forsk: number; vekt: Record<string, number>; medRef: boolean; lag: Lag; valgt: string[]; profil: string; /** sammenligning i skoleportrettet */ mot: string | null; }
+const PARAM = ['rangering', 'fane', 'forsk', 'vekt', 'ref', 'periode', 'telling', 'nevner', 'lagvekt', 'lister', 'skoler', 'profil', 'mot'];
 function lesTilstand(d: Data, ind: Ind[], std: Tilstand): Tilstand {
   const q = new URLSearchParams(window.location.search);
   if (!q.has('rangering')) return std;
@@ -236,6 +237,7 @@ function lesTilstand(d: Data, ind: Ind[], std: Tilstand): Tilstand {
   if (q.has('lister')) { const l = (q.get('lister') ?? '').split(','); t.lag.abdc = l.includes('abdc'); t.lag.ft = l.includes('ft'); t.lag.ajg = l.includes('ajg'); }
   const sk = (q.get('skoler') ?? '').split(',').filter((id) => d.skoler.some((s) => s.id === id)); if (sk.length) t.valgt = sk.slice(0, 3);
   const pr = q.get('profil'); if (pr && d.skoler.some((s) => s.id === pr)) t.profil = pr;
+  const mo = q.get('mot'); if (mo && d.skoler.some((s) => s.id === mo)) t.mot = mo;
   return t;
 }
 function skrivTilstand(t: Tilstand, std: Tilstand) {
@@ -254,7 +256,7 @@ function skrivTilstand(t: Tilstand, std: Tilstand) {
   if (lv.basis !== sv.basis || lv.hoy !== sv.hoy || lv.topp !== sv.topp) q.set('lagvekt', `${lv.basis}-${lv.hoy}-${lv.topp}`);
   if (!t.lag.abdc || !t.lag.ft || !t.lag.ajg) q.set('lister', [t.lag.abdc && 'abdc', t.lag.ft && 'ft', t.lag.ajg && 'ajg'].filter(Boolean).join(','));
   if (t.fane === 'sammenlign' || t.valgt.join(',') !== std.valgt.join(',')) q.set('skoler', t.valgt.join(','));
-  if (t.fane === 'profil') q.set('profil', t.profil);
+  if (t.fane === 'profil') { q.set('profil', t.profil); if (t.mot) q.set('mot', t.mot); }
   const s = q.toString().replace(/%2C/gi, ',').replace(/%3A/gi, ':').replace(/^rangering=(&|$)/, 'rangering$1').replace(/&rangering=(&|$)/, '&rangering$1');
   window.history.replaceState(window.history.state, '', `${window.location.pathname}?${s}${window.location.hash}`);
 }
@@ -313,7 +315,7 @@ function Rangering({ data }: { data: Data }) {
     const ind0 = lagIndikatorer(data, lag);
     const hh = data.skoler.find((s) => s.isNmbu)?.id ?? data.skoler[0].id;
     return { fane: 'rangering', forsk: FORSK_STANDARD, vekt: Object.fromEntries(ind0.map((i) => [i.id, i.vekt])), medRef: false, lag,
-      valgt: [hh, ...['nhh', 'bi'].filter((id) => id !== hh && data.skoler.some((s) => s.id === id))].slice(0, 3), profil: hh };
+      valgt: [hh, ...['nhh', 'bi'].filter((id) => id !== hh && data.skoler.some((s) => s.id === id))].slice(0, 3), profil: hh, mot: null };
   }, [data, y1]);
   const [t, setT] = useState<Tilstand>(() => lesTilstand(data, lagIndikatorer(data, std.lag), std));
   const sett = (p: Partial<Tilstand>) => setT((x) => ({ ...x, ...p }));
@@ -334,7 +336,7 @@ function Rangering({ data }: { data: Data }) {
     { id: 'sammenlign', label: 'Sammenlign', icon: <Columns3 className="w-4 h-4" /> },
     { id: 'lab', label: 'Forskningslab', icon: <FlaskConical className="w-4 h-4" /> },
     { id: 'publisering', label: 'Publisering', icon: <BookOpen className="w-4 h-4" /> },
-    { id: 'profil', label: 'Skoleprofil', icon: <Building2 className="w-4 h-4" /> },
+    { id: 'profil', label: 'Skoleportrett', icon: <Building2 className="w-4 h-4" /> },
     { id: 'kontroll', label: 'Kvalitetssikring', icon: <ShieldCheck className="w-4 h-4" /> },
     { id: 'metode', label: 'Metode og kilder', icon: <FileText className="w-4 h-4" /> },
   ];
@@ -363,7 +365,7 @@ function Rangering({ data }: { data: Data }) {
       {t.fane === 'sammenlign' && <Sammenlign data={data} ind={ind} rader={rader} eff={eff} t={t} sett={sett} />}
       {t.fane === 'lab' && <Forskningslab data={data} skoler={skoler} lag={t.lag} std={std.lag} setLag={(lag) => sett({ lag })} />}
       {t.fane === 'publisering' && <Publisering data={data} />}
-      {t.fane === 'profil' && <Profil data={data} id={t.profil} setId={(id) => sett({ profil: id })} />}
+      {t.fane === 'profil' && <Skoleportrett data={data} rader={rader} ind={ind} eff={eff} id={t.profil} setId={(id) => sett({ profil: id, mot: t.mot === id ? null : t.mot })} mot={t.mot} setMot={(id) => sett({ mot: id })} />}
       {t.fane === 'kontroll' && <KontrollFane data={data} />}
       {t.fane === 'metode' && <Metode data={data} ind={ind} />}
     </div>
@@ -849,135 +851,308 @@ function AjgKort({ data }: { data: Data }) {
   );
 }
 
-// ── Fane 3: skoleprofil (som HHs infografikk) ────────────────────────────────
-function Profil({ data, id, setId }: { data: Data; id: string; setId: (id: string) => void }) {
-  const s = data.skoler.find((x) => x.id === id) ?? data.skoler[0];
+// ── Fane: skoleportrett (designretning «forslag 4», kursark per skole) ───────
+// Plass, spenn, gruppe og «nr. x av n» kommer fra rangeringsmodellen (beregn), slik at portrettet alltid følger
+// vektene brukeren har valgt. Stil i styles/skoleportrett.css, avgrenset til .skp.
+const GRUPPE_GC: Record<Gruppe, string> = { Topp: 'var(--g1)', Midt: 'var(--g2)', Nedre: 'var(--g3)' };
+const TERTIL = ['Lav', 'Middels', 'Høy'];
+const medianAv = (xs: (number | null | undefined)[]) => { const v = xs.filter((x): x is number => x != null && Number.isFinite(x)).sort((a, b) => a - b); if (!v.length) return null; const m = v.length >> 1; return v.length % 2 ? v[m] : (v[m - 1] + v[m]) / 2; };
+const kortNavn = (n: string) => n.replace(/\s*[–(].*$/, '');
+
+/** Prikkestripe: alle skolers verdi som grå prikker, valgt skole og sammenligning i farge. */
+function Prikker({ verdier, sel, mot }: { verdier: { id: string; v: number | null }[]; sel: string; mot: string | null }) {
+  const vs = verdier.filter((x): x is { id: string; v: number } => x.v != null && Number.isFinite(x.v));
+  if (!vs.length) return null;
+  const lo = Math.min(...vs.map((x) => x.v)), hi = Math.max(...vs.map((x) => x.v)), sp = hi - lo || 1;
+  const pos = (v: number) => `${((v - lo) / sp * 100).toFixed(1)}%`;
+  const rekke = [...vs.filter((x) => x.id !== sel && x.id !== mot), ...vs.filter((x) => x.id === mot), ...vs.filter((x) => x.id === sel)];
+  return <div className="strip" aria-hidden="true">{rekke.map((x) => <u key={x.id} className={x.id === sel ? 'sel' : x.id === mot ? 'cmp' : ''} style={{ left: pos(x.v) }} />)}</div>;
+}
+
+/** Linjediagram i portrettstil: andre skoler grå, median stiplet, valgt og sammenlignet skole i farge. */
+function PortrettGraf({ aar, serier, hoyde = 260, mini = false, label }: { aar: string[]; serier: { id: string; v: (number | null)[]; c: 'o' | 'm' | 's' | 'c'; lab?: string }[]; hoyde?: number; mini?: boolean; label: string }) {
+  const W = mini ? 240 : 720, H = mini ? 64 : hoyde, mg = mini ? { l: 4, r: 6, t: 6, b: 4 } : { l: 36, r: 86, t: 10, b: 24 };
+  const iw = W - mg.l - mg.r, ih = H - mg.t - mg.b, n = aar.length;
+  const alle = serier.flatMap((s) => s.v).filter((v): v is number => v != null);
+  const steg = (m: number) => m <= 2.6 ? 0.5 : m <= 6 ? 1 : m <= 30 ? 5 : m <= 60 ? 10 : 20;
+  const maks0 = Math.max(0.01, ...alle) * (mini ? 1.12 : 1.04);
+  const st = steg(maks0), ymax = mini ? maks0 : Math.ceil(maks0 / st) * st;
+  const x = (i: number) => mg.l + (n > 1 ? i * iw / (n - 1) : iw / 2), y = (v: number) => mg.t + ih - v / ymax * ih;
+  const sti = (v: (number | null)[]) => { let d = '', pen = false; v.forEach((a, i) => { if (a == null) { pen = false; return; } d += `${pen ? 'L' : 'M'}${x(i).toFixed(1)} ${y(a).toFixed(1)}`; pen = true; }); return d; };
+  const siste = (v: (number | null)[]) => { for (let i = v.length - 1; i >= 0; i--) if (v[i] != null) return i; return -1; };
+  const etiketter = mini ? [] : serier.filter((s) => s.lab).map((s) => { const i = siste(s.v); return i < 0 ? null : { y: y(s.v[i] as number), t: s.lab as string, c: s.c }; }).filter((e): e is { y: number; t: string; c: 'o' | 'm' | 's' | 'c' } => !!e).sort((a, b) => a.y - b.y);
+  for (let i = 1; i < etiketter.length; i++) if (etiketter[i].y - etiketter[i - 1].y < 13) etiketter[i].y = etiketter[i - 1].y + 13;
+  const ticks: number[] = []; if (!mini) for (let t = 0; t <= ymax + 1e-9; t += st) ticks.push(t);
+  return (
+    <svg className="ch" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={label}>
+      {mini ? <line className="gl" x1={0} x2={W} y1={y(0)} y2={y(0)} /> : ticks.map((t) => (
+        <g key={t}><line className="gl" x1={mg.l} x2={W - mg.r} y1={y(t)} y2={y(t)} /><text className="ax" x={mg.l - 6} y={y(t) + 4} textAnchor="end">{nf(t, st < 1 ? 1 : 0)}</text></g>
+      ))}
+      {!mini && aar.map((a, i) => (i % 2 === 0 || i === n - 1) && <text key={a} className="ax" x={x(i)} y={H - 4} textAnchor="middle">{a}</text>)}
+      {serier.map((s, k) => {
+        const i = siste(s.v);
+        return (
+          <g key={s.id + k}>
+            <path className={`ln ${s.c}`} d={sti(s.v)} />
+            {s.c !== 'o' && i >= 0 && !(mini && s.c === 'm') && <circle className={`pt ${s.c}`} cx={x(i)} cy={y(s.v[i] as number)} r={s.c === 's' ? 4 : 3} />}
+          </g>
+        );
+      })}
+      {etiketter.map((e) => <text key={e.t} className={`el ${e.c}`} x={W - mg.r + 7} y={e.y + 4}>{e.t}</text>)}
+    </svg>
+  );
+}
+
+interface PortrettProps { data: Data; rader: Rad[]; ind: Ind[]; eff: ReturnType<typeof effektiveVekter>; id: string; setId: (id: string) => void; mot: string | null; setMot: (id: string | null) => void; }
+function Skoleportrett({ data, rader, ind, eff, id, setId, mot, setMot }: PortrettProps) {
+  const r = rader.find((x) => x.s.id === id) ?? rader[0];
+  const s = r.s;
+  const c = mot && mot !== s.id ? rader.find((x) => x.s.id === mot) ?? null : null;
+  const n = rader.filter((x) => x.plass != null).length;
   const y1 = sisteDbhAar(data);
   const aar = aarRekke(data.aar[0], y1);
-  const sist = s.dbh[String(y1)];
-  const harAjg = data.lister.ajg;
-  const art = s.artikler[String(y1)];
-  const L = harAjg ? art?.ajg : art?.abdc;
-  const nivaer = harAjg ? ['ikke', '1', '2', '3', '4', '4*'] : ['ikke', 'C', 'B', 'A', 'A*'];
-  const sekv = harAjg ? ['#C9C4BC', '#CFE6DF', '#9FCFC2', '#5FA996', '#2E7D6B', '#014238'] : ['#C9C4BC', '#CFE6DF', '#8CC4B5', '#3F8E7B', '#014238'];
-  const stolper = nivaer.map((k, i) => ({ k: k === 'ikke' ? `Ikke ${harAjg ? 'AJG' : 'ABDC'}` : k, n: L?.[k] ?? 0, f: sekv[i] }));
-  const n12 = art ? art.niva['1'] + art.niva['2'] : 0;
-  const pai = art && n12 ? [{ k: 'Nivå 1', v: art.niva['1'], f: '#C9C4BC' }, { k: 'Nivå 2', v: art.niva['2'], f: '#025C4F' }] : [];
-  const fag = Object.entries(s.ajgFagfelt ?? {}).sort((a, b) => b[1] - a[1]);
-  const akk = akkNavn(s);
+  const gtxt = r.gruppe ?? '–';
+
+  // Delindekser per dimensjon: vektet snitt av de normaliserte målene (0–100) i dimensjonen, som i poengsummen.
+  const delindeks = (x: Rad, d: Dim) => {
+    let sum = 0, w = 0;
+    for (const i of ind) if (i.dim === d && x.delt[i.id].n != null && eff.ut[i.id] > 0) { sum += (x.delt[i.id].n as number) * eff.ut[i.id]; w += eff.ut[i.id]; }
+    return w ? sum / w : null;
+  };
+  const tertil = (d: Dim, x: Rad) => {
+    const v = delindeks(x, d); if (v == null) return null;
+    const alle = rader.map((z) => delindeks(z, d)).filter((z): z is number => z != null);
+    const p = 1 + alle.filter((z) => z > v + 1e-9).length;
+    return p <= Math.ceil(alle.length / 3) ? 2 : p <= Math.ceil(2 * alle.length / 3) ? 1 : 0;
+  };
+  const tf = tertil('Forskning', r), tu = tertil('Utdanning', r);
+  const boks = [2, 1, 0].flatMap((rad) => [0, 1, 2].map((kol) => {
+    const antall = rader.filter((x) => tertil('Forskning', x) === kol && tertil('Utdanning', x) === rad).length;
+    const meg = tf === kol && tu === rad, cm = c && tertil('Forskning', c) === kol && tertil('Utdanning', c) === rad;
+    return <div key={`${rad}${kol}`} className={`${meg ? 'me' : ''} ${cm ? 'cm' : ''}`} title={`${antall} skoler`}>{meg ? s.kort : antall || ''}</div>;
+  }));
+  const fix = r.min != null && r.min === r.max;
+  const spn = r.min == null ? '' : fix ? `Fast plass ${r.plass}, uavhengig av vektene.` : `Plass ${r.min}–${r.max} når forskningens andel går fra 50 til 85 %.`;
+  const naboer = rader.filter((x) => x.s.id !== s.id && x.plass != null && r.plass != null && Math.abs(x.plass - r.plass) <= 2);
+
+  // Tidsserier
+  const median = (f: (x: Skole) => (number | null)[]) => aar.map((_, i) => medianAv(rader.map((x) => f(x.s)[i])));
+  const ppa = (x: Skole) => aar.map((a) => x.dbh[a]?.poengPerUff ?? null);
+  const mPpa = median(ppa);
+  const own25 = ppa(s)[aar.length - 1], m25 = mPpa[aar.length - 1];
+  const sparkDefs: { l: string; u: string; d: number; f: (x: Skole) => (number | null)[] }[] = [
+    { l: 'Andel nivå 2 (av poengene)', u: ' %', d: 1, f: (x) => aar.map((a) => x.dbh[a]?.niva2Andel ?? null) },
+    { l: 'ABDC A/A*, andel av artikler', u: ' %', d: 0, f: (x) => aar.map((a) => { const t = x.artikler[a]; return t?.n ? 100 * ((t.abdc['A*'] ?? 0) + (t.abdc['A'] ?? 0)) / t.n : null; }) },
+    { l: 'FT50/UTD24-artikler per år', u: '', d: 0, f: (x) => aar.map((a) => { const t = x.artikler[a]; return t ? Math.max(t.ft50, t.utd24) : null; }) },
+    { l: 'Internasjonal sampublisering', u: ' %', d: 0, f: (x) => aar.map((a) => x.artikler[a]?.intlAndel ?? null) },
+  ];
+  const plassPaa = (f: (x: Skole) => number | null, x: Skole) => { const v = f(x); if (v == null) return null; const alle = rader.map((z) => f(z.s)).filter((z): z is number => z != null); return { p: 1 + alle.filter((z) => z > v + 1e-9).length, n: alle.length }; };
+
+  // Utdanning
   const oa = s.utdanning.oa;
+  const pg = rader.filter((x) => x.s.utdanning.oa?.poenggrenseMaks != null).sort((a, b) => (b.s.utdanning.oa!.poenggrenseMaks as number) - (a.s.utdanning.oa!.poenggrenseMaks as number));
+  const pgLo = 25, pgHi = 65, pgX = (v: number) => Math.max(0, Math.min(100, (v - pgLo) / (pgHi - pgLo) * 100));
+  const utenPg = rader.filter((x) => x.s.utdanning.oa?.poenggrenseMaks == null).map((x) => x.s.kort).join(', ');
+
+  // Akkreditering og rangeringer
+  const akk = akkNavn(s);
+  const har = (k: string) => akk.some((a) => a.toUpperCase().startsWith(k));
+  const antallMed = (k: string) => rader.filter((x) => akkNavn(x.s).some((a) => a.toUpperCase().startsWith(k))).length;
+  const andre = akk.filter((a) => !/^(AACSB|EQUIS|AMBA)/i.test(a));
+  const rang = (s.rangeringer ?? []).filter((x): x is Record<string, unknown> => typeof x === 'object' && x != null && x.plassering != null);
+
+  let gruppe = '';
   return (
-    <div className="grid gap-5">
-      <div className="flex flex-wrap gap-1.5">
-        {data.skoler.map((x) => <button key={x.id} onClick={() => setId(x.id)} className="px-2.5 py-1 rounded-lg text-xs"
-          style={x.id === s.id ? { backgroundColor: GRONN, color: '#fff' } : { backgroundColor: '#fff', color: 'var(--nmbu-neutral-1)', border: '1px solid var(--nmbu-neutral-3)' }}>{x.kort}</button>)}
-      </div>
-      <div className="rounded-2xl px-6 py-5" style={{ backgroundColor: GRONN, color: '#fff' }}>
-        <div style={{ fontFamily: "'Lora', serif", fontSize: 22 }}>{s.navn}</div>
-        <div style={{ fontSize: 13, opacity: 0.85 }}>{[s.navnEn, s.institusjon].filter(Boolean).join(' · ')}</div>
-        <div className="flex flex-wrap gap-2 mt-3">
-          {akk.length ? akk.map((a) => <span key={a} className="px-2 py-0.5 rounded text-xs" style={{ backgroundColor: 'rgba(255,255,255,0.18)' }}>{a}</span>) : <span className="text-xs" style={{ opacity: 0.8 }}>Ingen internasjonal akkreditering registrert</span>}
+    <div className="skp">
+      <section className="sec" aria-label="Velg skole">
+        <div className="pickrow">
+          <label className="lab" htmlFor="skp-skole">Velg skole</label>
+          <select id="skp-skole" value={s.id} onChange={(e) => setId(e.target.value)}>
+            {rader.map((x) => <option key={x.s.id} value={x.s.id}>{x.plass ?? '–'}. {x.s.kort} ({kortNavn(x.s.navn)})</option>)}
+          </select>
         </div>
-        <div className="grid gap-4 mt-4" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(130px, 1fr))' }}>
-          {[
-            ['Poeng per faglig årsverk', nf(sist?.poengPerUff, 2), String(y1)],
-            ['Publiseringspoeng', nf(sist?.publPoeng, 1), String(y1)],
-            ['Faglige årsverk', nf(sist?.faglige, 1), `+ ${nf(sist?.rekruttering, 1)} stip./postdok`],
-            ['Andel nivå 2', sist?.niva2Andel != null ? nf(sist.niva2Andel, 0) + ' %' : '–', 'av poengene'],
-            ['Artikler', art ? String(art.n) : '–', `NVA ${y1}`],
-            ['Poenggrense ØA', nf(oa?.poenggrenseMaks, 1), oa ? `opptak ${oa.aar}` : 'ingen ØA i sammenligningen'],
-          ].map(([l, v, u]) => (
-            <div key={l}><div style={{ fontSize: 11, opacity: 0.8 }}>{l}</div><div style={{ fontSize: 22, fontWeight: 700, fontFamily: 'var(--font-mono, monospace)' }}>{v}</div><div style={{ fontSize: 10, opacity: 0.7 }}>{u}</div></div>
+        <div className="ladder" role="group" aria-label="Alle skolene i rekkefølge etter sammenlagt plass">
+          {rader.map((x) => (
+            <button key={x.s.id} type="button" aria-current={x.s.id === s.id} onClick={() => setId(x.s.id)} style={{ ['--gc' as string]: x.gruppe ? GRUPPE_GC[x.gruppe] : 'var(--line)' }}>
+              <span>{x.plass ?? '–'}</span><b>{x.s.kort}</b>
+            </button>
           ))}
         </div>
-      </div>
+      </section>
 
-      <div className="grid gap-5" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))' }}>
-        <div className="rounded-2xl p-5" style={kort}>
-          <div style={{ fontSize: 14, fontWeight: 600, color: GRONN, marginBottom: 8 }}>Publiseringspoeng per faglig årsverk</div>
-          <ResponsiveContainer width="100%" height={240}>
-            <LineChart data={aar.map((y) => ({ aar: y, v: s.dbh[y]?.poengPerUff ?? null }))} margin={{ top: 16, right: 16, left: -10, bottom: 0 }}>
-              <CartesianGrid strokeDasharray="3 3" stroke="var(--nmbu-beige-light)" vertical={false} />
-              <XAxis dataKey="aar" tick={{ fontSize: 11 }} /><YAxis tick={{ fontSize: 11 }} tickFormatter={(v) => nf(v, 1)} />
-              <Tooltip formatter={(v: number) => [nf(v, 2), 'Poeng per årsverk']} />
-              <Line type="monotone" dataKey="v" stroke="#025C4F" strokeWidth={2.5} dot={{ r: 3 }} connectNulls label={{ position: 'top', fontSize: 10, formatter: (v: number) => nf(v, 2) }} />
-            </LineChart>
-          </ResponsiveContainer>
-        </div>
-        <div className="rounded-2xl p-5" style={kort}>
-          <div style={{ fontSize: 14, fontWeight: 600, color: GRONN, marginBottom: 8 }}>Nivå {y1}: {harAjg ? 'AJG' : 'ABDC'} og norsk nivå 1/2</div>
-          <div className="grid gap-2" style={{ gridTemplateColumns: '3fr 2fr' }}>
-            <ResponsiveContainer width="100%" height={220}>
-              <BarChart data={stolper} margin={{ top: 10, right: 0, left: -20, bottom: 0 }}>
-                <CartesianGrid strokeDasharray="3 3" stroke="var(--nmbu-beige-light)" vertical={false} />
-                <XAxis dataKey="k" tick={{ fontSize: 10 }} interval={0} /><YAxis tick={{ fontSize: 11 }} allowDecimals={false} />
-                <Tooltip formatter={(v: number) => [v, 'Artikler']} />
-                <Bar dataKey="n" radius={[4, 4, 0, 0]}>{stolper.map((x) => <Cell key={x.k} fill={x.f} />)}</Bar>
-              </BarChart>
-            </ResponsiveContainer>
-            <ResponsiveContainer width="100%" height={220}>
-              <PieChart>
-                <Pie data={pai} dataKey="v" nameKey="k" innerRadius={40} outerRadius={75} stroke="#fff" strokeWidth={2}
-                  label={({ v }: { v: number }) => `${nf(100 * v / (n12 || 1), 0)} %`} labelLine={false}>
-                  {pai.map((x) => <Cell key={x.k} fill={x.f} />)}
-                </Pie>
-                <Tooltip formatter={(v: number, k: string) => [`${v} artikler`, k]} />
-                <Legend wrapperStyle={{ fontSize: 11 }} />
-              </PieChart>
-            </ResponsiveContainer>
+      <section className="sheet" aria-live="polite">
+        <div>
+          <div className="grp" style={{ ['--gc' as string]: r.gruppe ? GRUPPE_GC[r.gruppe] : 'var(--line)' }}><i />{gtxt}gruppen{r.grense ? ' (grensetilfelle)' : ''}</div>
+          <div><h1>{s.navn}</h1>{s.institusjon && <p className="muted" style={{ fontSize: '.88rem' }}>{s.institusjon}</p>}</div>
+          <div className="place" role="group" aria-label={`Plass ${r.plass} av ${n}, ${nf(r.score, 0)} poeng`}>
+            <span className="lab" style={{ alignSelf: 'center', width: '100%' }}>Sammenlagt plass</span>
+            <span className="nr">{r.plass ?? '–'}</span><span className="of">av {n}</span>
+            <span className="sc"><b>{nf(r.score, 0)}</b>poeng med valgte vekter</span>
           </div>
-          <p className="text-xs" style={{ color: 'var(--nmbu-neutral-2)' }}>Andel nivå 1/2 her er av artikler (NVA). Andelen av publiseringspoeng (DBH 374) er {sist?.niva2Andel != null ? nf(sist.niva2Andel, 0) + ' %' : 'ikke tilgjengelig'}.</p>
-        </div>
-      </div>
-
-      {s.ajgNhh && (
-        <div className="rounded-2xl p-5" style={kort}>
-          <div style={{ fontSize: 14, fontWeight: 600, color: GRONN, marginBottom: 8 }}>AJG 2024 (ABS): artikler på nivå 3, 4 og 4*, 2020–2024</div>
-          <ResponsiveContainer width="100%" height={220}>
-            <BarChart data={['2020', '2021', '2022', '2023', '2024'].map((y) => ({ aar: y, '3': s.ajgNhh?.[y]?.['3']?.n ?? 0, '4': s.ajgNhh?.[y]?.['4']?.n ?? 0, '4*': s.ajgNhh?.[y]?.['4*']?.n ?? 0 }))} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
-              <CartesianGrid strokeDasharray="3 3" stroke="var(--nmbu-beige-light)" vertical={false} />
-              <XAxis dataKey="aar" tick={{ fontSize: 11 }} /><YAxis tick={{ fontSize: 11 }} allowDecimals={false} />
-              <Tooltip formatter={(v: number, k: string) => [v, `AJG ${k}`]} />
-              <Legend formatter={(k: string) => `AJG ${k}`} wrapperStyle={{ fontSize: 11 }} />
-              {(['3', '4', '4*'] as const).map((k) => <Bar key={k} dataKey={k} fill={AJG_FARGE[k]} radius={[4, 4, 0, 0]} />)}
-            </BarChart>
-          </ResponsiveContainer>
-          <p className="text-xs" style={{ color: 'var(--nmbu-neutral-2)' }}>Kilde: NHH Research Report 2024, tabell 4, 5 og 31. Antallet på nivå 3 i 2022 er usikkert (se Publisering).</p>
-        </div>
-      )}
-
-      <div className="grid gap-5" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))' }}>
-        <div className="rounded-2xl p-5" style={kort}>
-          <div style={{ fontSize: 14, fontWeight: 600, color: GRONN, marginBottom: 8 }}>Toppartikler {y1 - 4}–{y1} (FT50, UTD24, {harAjg ? 'AJG 4/4*' : 'ABDC A*'})</div>
-          {s.topp.length === 0 ? <div className="text-sm" style={{ color: 'var(--nmbu-neutral-2)' }}>Ingen artikler på disse listene.</div> : (
-            <ul className="text-xs space-y-1.5" style={{ maxHeight: 320, overflowY: 'auto' }}>
-              {s.topp.filter((t) => t.aar >= y1 - 4).map((t, i) => (
-                <li key={i} style={{ color: 'var(--nmbu-neutral-1)' }}>
-                  <span style={{ fontFamily: 'var(--font-mono, monospace)', color: 'var(--nmbu-neutral-2)' }}>{t.aar}</span> <i>{t.tidsskrift}</i>
-                  {' '}{[t.ft50 && 'FT50', t.utd24 && 'UTD24', t.ajg && `AJG ${t.ajg}`, t.abdc && `ABDC ${t.abdc}`].filter(Boolean).map((b) => <span key={String(b)} className="px-1 rounded ml-1" style={{ backgroundColor: 'var(--nmbu-green-4)', color: GRONN, fontSize: 10 }}>{b}</span>)}
-                  <div style={{ color: 'var(--nmbu-neutral-2)' }}>{t.tittel}</div>
-                </li>
-              ))}
-            </ul>
+          {r.min != null && (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
+              <div className="cells" style={{ ['--n' as string]: n }} aria-hidden="true">
+                {Array.from({ length: n }, (_, i) => i + 1).map((p) => <i key={p} className={p === r.plass ? 'me' : p >= (r.min as number) && p <= (r.max as number) ? 'in' : ''} title={`Plass ${p}`} />)}
+              </div>
+              <p className="cap"><strong style={{ color: 'var(--ink)', fontWeight: 600 }}>Spenn:</strong> {spn}</p>
+            </div>
           )}
+          <p style={{ maxWidth: '62ch' }}>{kortNavn(s.navn)} er nr. {r.plass} av {n} med {nf(r.score, 0)} poeng. {spn} Skolen er i {gtxt.toLowerCase()}gruppen.{r.grense ? ' Gruppen kan endre seg når vektene endres.' : ''}</p>
+          {s.enhetNotat && <p className="cap">Om avgrensningen av enheten: {s.enhetNotat}</p>}
+          <div className="cmprow">
+            <span className="lab">Sammenlign med</span>
+            {naboer.map((x) => <button key={x.s.id} type="button" aria-pressed={mot === x.s.id} onClick={() => setMot(mot === x.s.id ? null : x.s.id)}>{x.s.kort} (nr. {x.plass})</button>)}
+            {c && <button type="button" className="clr" onClick={() => setMot(null)}>Fjern sammenligning</button>}
+          </div>
         </div>
-        <div className="rounded-2xl p-5" style={kort}>
-          <div style={{ fontSize: 14, fontWeight: 600, color: GRONN, marginBottom: 8 }}>Utdanning og enhet</div>
-          <table className="w-full text-xs"><tbody>
-            {([
-              ['Bachelor ØA: førstevalg per plass', nf(oa?.fvPerPlass, 2)],
-              ['Bachelor ØA: poenggrense (laveste–høyeste)', oa ? `${nf(oa.poenggrenseMin, 1)}–${nf(oa.poenggrenseMaks, 1)}` : '–'],
-              ['Bachelor ØA: Studiebarometeret, helhet', nf(oa?.studiebarometer, 1)],
-              ['Bachelor ØA: fullført på normert tid', oa?.normertTid != null ? `${nf(oa.normertTid, 0)} % (kull ${oa.normertKull})` : '–'],
-              ['Master ØA: førstevalg per plass', nf(s.utdanning.moa?.fvPerPlass, 2)],
-              ['Andel førstestillinger', sist?.forsteAndel != null ? nf(sist.forsteAndel, 0) + ' %' : '–'],
-              ['Registrerte studenter per faglig årsverk', nf(sist?.studenterPerFaglig, 1)],
-            ] as [string, string][]).map(([l, v]) => <tr key={l} style={{ borderBottom: '1px solid var(--nmbu-beige-light)' }}><td className="py-1.5" style={{ color: 'var(--nmbu-neutral-2)' }}>{l}</td><td className="py-1.5 text-right" style={{ fontFamily: 'var(--font-mono, monospace)' }}>{v}</td></tr>)}
-          </tbody></table>
-          {fag.length > 0 && <div className="text-xs mt-3" style={{ color: 'var(--nmbu-neutral-2)' }}>AJG-fagfelt med artikler fra 2020: {fag.length} – {fag.slice(0, 6).map(([f, n]) => `${f} (${n})`).join(', ')}{fag.length > 6 ? ' …' : ''}</div>}
-          {s.enhetNotat && <div className="text-xs mt-3 rounded-lg px-3 py-2" style={{ backgroundColor: 'var(--nmbu-beige-light)', color: 'var(--nmbu-neutral-2)' }}>Avgrensning: {s.enhetNotat}</div>}
+        <div>
+          <span className="lab">Profil blant de {n}</span>
+          <div className="sb">
+            <div className="yl">Utdanning</div>
+            <div className="box" role="img" aria-label={`Forskning ${tf == null ? 'ukjent' : TERTIL[tf].toLowerCase()}, utdanning ${tu == null ? 'ukjent' : TERTIL[tu].toLowerCase()}`}>{boks}</div>
+            <div className="xl">Forskning</div>
+          </div>
+          <p className="cap">Tredjedeler av delindeksen i rangeringen (vektet snitt av målene i dimensjonen, 0–100). Tallet i ruten er antall skoler.</p>
+          <div className="meters">
+            {DIMS.map((d) => {
+              const v = delindeks(r, d);
+              return (
+                <div key={d} className="meter">
+                  <span>{d}</span>
+                  <Prikker verdier={rader.map((x) => ({ id: x.s.id, v: delindeks(x, d) }))} sel={s.id} mot={c?.s.id ?? null} />
+                  <b>{v == null ? '–' : nf(v, 0)}</b>
+                </div>
+              );
+            })}
+          </div>
         </div>
-      </div>
+      </section>
+
+      <section className="sec">
+        <header>
+          <span className="lab">Nøkkeltall</span>
+          <h2>{s.kort} er nr. {r.delt[ind[0].id]?.plass ?? '–'} av {n} på {ind[0].label.toLowerCase()}</h2>
+          <p className="muted">Hver rad viser hvor skolen ligger blant alle som har tall. Prikkene går fra laveste til høyeste verdi. Vekten er målets andel av poengsummen.</p>
+        </header>
+        <div className="scroll">
+          <table>
+            <thead><tr><th>Mål</th><th>Vekt</th><th>{s.kort}</th><th>Plass</th><th>Alle skolene</th>{c && <><th style={{ color: 'var(--cmp)' }}>{c.s.kort}</th><th style={{ color: 'var(--cmp)' }}>Plass</th></>}</tr></thead>
+            <tbody>
+              {ind.map((i) => {
+                const head = i.dim !== gruppe ? (gruppe = i.dim, <tr key={`h${i.dim}`} className="gh"><td colSpan={c ? 7 : 5}>{i.dim}</td></tr>) : null;
+                const antall = rader.filter((x) => x.delt[i.id].v != null).length;
+                const pl = (x: Rad, cls = '') => x.delt[i.id].plass == null ? <td className={`pl ${cls}`}>–</td> : <td className={`pl ${cls} ${(x.delt[i.id].plass as number) <= 3 ? 'top' : ''}`}><b>nr. {x.delt[i.id].plass}</b> av {antall}</td>;
+                return [head, (
+                  <tr key={i.id} style={{ opacity: eff.ut[i.id] ? 1 : 0.55 }}>
+                    <td title={i.desc}>{i.label}</td>
+                    <td className="muted">{nf(eff.ut[i.id], 1)} %</td>
+                    <td>{i.fmt(r.delt[i.id].v)}</td>
+                    {pl(r)}
+                    <td className="fo"><Prikker verdier={rader.map((x) => ({ id: x.s.id, v: x.delt[i.id].v }))} sel={s.id} mot={c?.s.id ?? null} /></td>
+                    {c && <><td className="cm">{i.fmt(c.delt[i.id].v)}</td>{pl(c, 'cm')}</>}
+                  </tr>
+                )];
+              })}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section className="sec">
+        <header>
+          <span className="lab">Poeng per faglig årsverk, {aar[0]}–{y1}</span>
+          <h2>{own25 == null ? `Poeng per årsverk mangler for ${s.kort}` : `${s.kort}: ${nf(own25, 2)} poeng per årsverk i ${y1}, ${nf(Math.abs(own25 - (m25 ?? 0)), 2)} ${own25 >= (m25 ?? 0) ? 'over' : 'under'} medianen`}</h2>
+        </header>
+        <div className="legend"><span><i />{s.kort}</span>{c && <span><i className="c" />{c.s.kort}</span>}<span><i className="m" />Median for skolene med tall</span><span><i className="o" />De andre skolene</span></div>
+        <PortrettGraf aar={aar} label={`Poeng per årsverk ${aar[0]} til ${y1} for ${s.kort} mot median`} serier={[
+          ...rader.filter((x) => x.s.id !== s.id && x.s.id !== c?.s.id).map((x) => ({ id: x.s.id, v: ppa(x.s), c: 'o' as const })),
+          { id: 'median', v: mPpa, c: 'm', lab: 'Median' },
+          ...(c ? [{ id: c.s.id, v: ppa(c.s), c: 'c' as const, lab: c.s.kort }] : []),
+          { id: s.id, v: ppa(s), c: 's', lab: s.kort },
+        ]} />
+        <details><summary>Vis som tabell</summary>
+          <div className="scroll"><table><thead><tr><th>År</th><th>{s.kort}</th>{c && <th>{c.s.kort}</th>}<th>Median</th></tr></thead>
+            <tbody>{aar.map((a, i) => <tr key={a}><td>{a}</td><td>{nf(ppa(s)[i], 2)}</td>{c && <td>{nf(ppa(c.s)[i], 2)}</td>}<td>{nf(mPpa[i], 2)}</td></tr>)}</tbody></table></div>
+        </details>
+        <p className="cap">Publiseringspoeng delt på årsverk i faglige stillinger pluss stipendiater og postdoktorer (DBH, som HK-dirs tilstandsrapport).</p>
+      </section>
+
+      <section className="sec">
+        <header>
+          <span className="lab">Publiseringsprofil, {aar[0]}–{y1}</span>
+          <h2>{s.kort}: {s.artikler[String(y1)] ? `${s.artikler[String(y1)].n} artikler i ${y1}, ${(s.artikler[String(y1)].abdc['A*'] ?? 0) + (s.artikler[String(y1)].abdc['A'] ?? 0)} i ABDC A/A* og ${Math.max(s.artikler[String(y1)].ft50, s.artikler[String(y1)].utd24)} i FT50/UTD24` : 'ingen artikkeltall'}</h2>
+          <p className="muted">Heltrukket linje er {s.kort}{c ? `, lilla er ${c.s.kort}` : ''}, stiplet er medianen for skolene som har tall det året.</p>
+        </header>
+        <div className="sparks">
+          {sparkDefs.map((df) => {
+            const own = df.f(s), med = median(df.f), sist = own[own.length - 1];
+            const pp = plassPaa((x) => df.f(x)[aar.length - 1], s);
+            return (
+              <div key={df.l} className="spark">
+                <span className="lab">{df.l}</span>
+                <div className="v"><b>{sist == null ? '–' : nf(sist, df.d) + df.u}</b><span>{pp ? `nr. ${pp.p} av ${pp.n}` : 'ingen tall'} · median {nf(med[med.length - 1], df.d)}{df.u}</span></div>
+                <PortrettGraf mini aar={aar} label={`${df.l} for ${s.kort} mot median`} serier={[{ id: 'm', v: med, c: 'm' }, ...(c ? [{ id: 'c', v: df.f(c.s), c: 'c' as const }] : []), { id: 's', v: own, c: 's' }]} />
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      <section className="sec">
+        <header>
+          <span className="lab">Utdanning, bachelor i økonomi og administrasjon{oa ? `, opptak ${oa.aar}` : ''}</span>
+          <h2>{s.kort}: {oa?.poenggrenseMaks != null ? `poenggrense ${oa.poenggrenseMin === oa.poenggrenseMaks ? nf(oa.poenggrenseMaks, 1) : `${nf(oa.poenggrenseMin, 1)}–${nf(oa.poenggrenseMaks, 1)}`}` : 'ingen poenggrense i Samordna'}, {oa?.fvPerPlass != null ? `${nf(oa.fvPerPlass, 2)} førstevalg per plass` : 'førstevalg per plass ikke oppgitt'}</h2>
+        </header>
+        <div className="facts">
+          <div><b>{oa?.plasser != null ? nf(oa.plasser, 0) : '–'}</b><span>studieplasser</span></div>
+          <div><b>{oa?.forstevalg != null ? nf(oa.forstevalg, 0) : '–'}</b><span>førstevalg</span></div>
+          <div><b>{oa ? nf(oa.program, 0) : '–'}</b><span>{oa?.program === 1 ? 'program' : 'programmer'} i utvalget</span></div>
+          <div><b>{nf(oa?.studiebarometer, 1)}</b><span>Studiebarometeret, skala 1–5</span></div>
+          <div><b>{oa?.normertTid != null ? `${nf(oa.normertTid, 0)} %` : '–'}</b><span>fullført på normert tid{oa?.normertKull ? `, kull ${oa.normertKull}` : ''}</span></div>
+        </div>
+        <div>
+          <p className="lab" style={{ marginBottom: 6 }}>Poenggrense, laveste til høyeste studiested</p>
+          <div className="rg">
+            {pg.map((x) => {
+              const a = x.s.utdanning.oa!.poenggrenseMin ?? x.s.utdanning.oa!.poenggrenseMaks as number, b = x.s.utdanning.oa!.poenggrenseMaks as number;
+              return (
+                <div key={x.s.id} className={`rgr ${x.s.id === s.id ? 'sel' : x.s.id === c?.s.id ? 'cm' : ''}`}>
+                  <span>{x.s.kort}</span>
+                  <div className="tr"><i style={{ left: `${pgX(a)}%`, width: `${Math.max(0, pgX(b) - pgX(a))}%` }} /></div>
+                  <span className="rv">{a === b ? nf(b, 1) : `${nf(a, 1)}–${nf(b, 1)}`}</span>
+                </div>
+              );
+            })}
+          </div>
+          {utenPg && <p className="cap" style={{ marginTop: 4 }}>Uten poenggrense i Samordna: {utenPg}.</p>}
+        </div>
+      </section>
+
+      <section className="sec">
+        <header>
+          <span className="lab">Akkrediteringer og rangeringer</span>
+          <h2>{s.kort}: {akk.length ? `${akk.length} ${akk.length === 1 ? 'akkreditering' : 'akkrediteringer'}` : 'ingen internasjonale akkrediteringer'}</h2>
+        </header>
+        <div className="akk">
+          {['AACSB', 'EQUIS', 'AMBA'].map((k) => <div key={k} className={har(k) ? 'on' : ''}><b>{k}</b><span>{har(k) ? 'Akkreditert' : 'Ikke akkreditert'} · {antallMed(k)} av {n} skoler</span></div>)}
+          <div className={andre.length ? 'on' : ''}><b>Annet</b><span>{andre.length ? andre.join(', ') : 'Ingen'}</span></div>
+        </div>
+        <div className="two">
+          <div>
+            <p className="lab" style={{ marginBottom: 4 }}>Internasjonale rangeringer</p>
+            <div className="rk">
+              {rang.length ? rang.map((x, k) => <div key={k}><span>{String(x.rangering ?? '')}, {String(x.aar ?? '')}</span><b>{typeof x.plassering === 'number' ? `nr. ${x.plassering}` : String(x.plassering)}</b></div>) : <div><span className="muted">Ikke oppført i rangeringene vi har registrert.</span></div>}
+            </div>
+          </div>
+          <div>
+            <p className="lab" style={{ marginBottom: 4 }}>Sammenlign med</p>
+            <div className="cmprow">{rader.filter((x) => x.s.id !== s.id).map((x) => <button key={x.s.id} type="button" aria-pressed={mot === x.s.id} onClick={() => setMot(mot === x.s.id ? null : x.s.id)}>{x.s.kort}</button>)}</div>
+            <p className="cap" style={{ marginTop: 8 }}>Skolen du velger, vises i lilla i tabellen, grafene og profilboksen.</p>
+          </div>
+        </div>
+      </section>
+
+      <p className="src">Kilder: DBH/HK-dir (årsverk, publiseringspoeng, nivå 2, gjennomføring), NVA (artikler) koblet mot ABDC, FT50 og UTD24, Samordna opptak, Studiebarometeret og akkrediteringsorganenes lister. Plass, spenn, grupper og vekter følger innstillingene i Rangering og Forskningslab. Utkast {data.generert}.</p>
     </div>
   );
 }
