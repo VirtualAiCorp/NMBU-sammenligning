@@ -472,7 +472,7 @@
     },
     "merknad": "Tall for NHS alene – legg til ved behov."
    },
-   "merknad": "Hele fakultet 230. NHS (avdeling 210245, fakultet 210) er gyldig t.o.m. 2025 og er IKKE med i tallene; ennå ingen ny NHS-kode under 230 i tabell 210."
+   "merknad": "Hele fakultet 230. NHS (avdeling 210245, fakultet 210) er gyldig t.o.m. 2025 og er IKKE med i tallene; ennå ingen ny NHS-kode under 230 i tabell 210. Uten Norsk hotellhøgskole (avgjort 03.10.2026)."
   },
   "akkrediteringer": [
    {
@@ -796,6 +796,85 @@
   "usikkerhet": "Høy for avgrensning: «NTNU Business School» er formelt bare instituttet 230210, mens AACSB-medlemskapet og HHs fagmiljøsammenligning gjelder hele Fakultet for økonomi. Velg avgrensning før rangering. GRAS Management 76-100 skyldes trolig IØT og gjelder hele NTNU."
  },
  {
+  "id": "ntnu_ok",
+  "navn": "NTNU Fakultet for økonomi (hele fakultetet)",
+  "navnEn": "NTNU Business School",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "ren_handelshoyskole": false,
+  "type": "institutt",
+  "referanse": true,
+  "iHHKonkurrentsett": true,
+  "nva": {
+   "enheter": [
+    {
+     "id": "194.60.0.0",
+     "url": "https://api.nva.unit.no/cristin/organization/194.60.0.0",
+     "navn": "Fakultet for økonomi"
+    }
+   ],
+   "merknad": "Hele fakultetet"
+  },
+  "dbh": {
+   "institusjonskode": "1150",
+   "avdelingskoder": [
+    "230000",
+    "230100",
+    "230210",
+    "230220",
+    "230230",
+    "230240",
+    "230250"
+   ],
+   "fakultetskode": "230",
+   "merknad": "Hele Fakultet for økonomi"
+  },
+  "akkrediteringer": [
+   {
+    "type": "AACSB",
+    "status": "medlem, ikke akkreditert",
+    "aar": null,
+    "kilde": "https://www.bi.no/en/about-bi/news/2025/03/joint-statement-from-nordic-business-schools-on-aacsbs-recent-guideline-changes/",
+    "merknad": "Fakultet for økonomi signerte den nordiske AACSB-uttalelsen 2025 som medlem; ikke akkreditert."
+   }
+  ],
+  "rangeringer": [
+   {
+    "rangering": "ShanghaiRanking GRAS – Economics",
+    "aar": 2026,
+    "plassering": "201-300",
+    "forrige": {
+     "aar": 2025,
+     "plassering": "201-300"
+    },
+    "url": "https://www.shanghairanking.com/rankings/gras/2026/AS0501",
+    "niva": "hele institusjonen (GRAS rangerer universiteter, ikke fakulteter)"
+   },
+   {
+    "rangering": "ShanghaiRanking GRAS – Business Administration",
+    "aar": 2026,
+    "plassering": "301-400",
+    "forrige": {
+     "aar": 2025,
+     "plassering": "201-300"
+    },
+    "url": "https://www.shanghairanking.com/rankings/gras/2026/AS0509",
+    "niva": "hele institusjonen (GRAS rangerer universiteter, ikke fakulteter)"
+   },
+   {
+    "rangering": "ShanghaiRanking GRAS – Management",
+    "aar": 2026,
+    "plassering": "76-100",
+    "forrige": {
+     "aar": 2025,
+     "plassering": "76-100"
+    },
+    "url": "https://www.shanghairanking.com/rankings/gras/2026/AS0511",
+    "niva": "hele institusjonen (GRAS rangerer universiteter, ikke fakulteter)"
+   }
+  ],
+  "usikkerhet": "Referanse: hele fakultetet = NTNU Handelshøyskolen (230210) + Inst. for internasjonal business, Ålesund (230220) + Inst. for samfunnsøkonomi (230230) + Inst. for industriell økonomi og teknologiledelse (230240). AACSB-medlemskapet gjelder fakultetet."
+ },
+ {
   "id": "uit",
   "navn": "Handelshøgskolen ved UiT",
   "navnEn": "School of Business and Economics, UiT The Arctic University of Norway",
@@ -941,7 +1020,7 @@
  },
  {
   "id": "inn",
-  "navn": "Handelshøgskolen Innlandet – Fakultet for økonomi og samfunnsvitenskap",
+  "navn": "Handelshøgskolen Innlandet (økonomifag og organisasjon/ledelse)",
   "navnEn": "Inland School of Business and Social Sciences",
   "institusjon": "Universitetet i Innlandet (tidl. Høgskolen i Innlandet)",
   "ren_handelshoyskole": false,
@@ -951,9 +1030,14 @@
   "nva": {
    "enheter": [
     {
-     "id": "209.6.0.0",
-     "url": "https://api.nva.unit.no/cristin/organization/209.6.0.0",
-     "navn": "Handelshøgskolen Innlandet – Fakultet for økonomi og samfunnsvitenskap"
+     "id": "209.6.5.0",
+     "url": "https://api.nva.unit.no/cristin/organization/209.6.5.0",
+     "navn": "Institutt for økonomifag"
+    },
+    {
+     "id": "209.6.4.0",
+     "url": "https://api.nva.unit.no/cristin/organization/209.6.4.0",
+     "navn": "Institutt for organisasjon, ledelse, styring"
     }
    ],
    "kontroll2024": {
@@ -961,20 +1045,13 @@
     "alleKategorier": 800,
     "sporring": "search/resources?unit=<enhets-URL>&publicationYear=2024&instanceType=AcademicArticle"
    },
-   "merknad": "Hele fakultetet inkluderer psykologi (209.6.2.0), jus/filosofi/internasjonale studier (209.6.8.0) og Østlandsforskning (209.6.7.0). Kjerne: 209.6.4.0 Org., ledelse, styring (85 artikler 2024) + 209.6.5.0 Økonomifag (84)."
+   "merknad": "Avgrenset 03.10.2026 (Mathias): uten psykologi, jus/filosofi, Østlandsforskning og sentrene."
   },
   "dbh": {
    "institusjonskode": "0264→1177",
    "avdelingskoder": [
-    "440000",
-    "440010",
-    "440020",
-    "440030",
-    "440300",
     "440400",
-    "440500",
-    "440700",
-    "440800"
+    "440500"
    ],
    "fakultetskode": "440",
    "tall": {
@@ -1009,7 +1086,7 @@
     },
     "merknad": "Uten psykologi, jus/filosofi og Østlandsforskning."
    },
-   "merknad": "Institusjonskoden byttet fra 0264 (HINN, t.o.m. 2024) til 1177 (Universitetet i Innlandet, fra 2025). 2024-tall ligger under 0264, 2025-tall under 1177."
+   "merknad": "Avgrenset 03.10.2026 (Mathias): kjernen 440400 Økonomifag + 440500 Organisasjon, ledelse og styring, under både 0264 (t.o.m. 2024) og 1177 (fra 2025). Uten psykologi, jus/filosofi og Østlandsforskning."
   },
   "akkrediteringer": [],
   "rangeringer": [

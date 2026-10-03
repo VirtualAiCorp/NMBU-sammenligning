@@ -21,9 +21,12 @@ interface Skole {
   akkreditering: (Akk | string)[]; rangeringer: (Record<string, unknown> | string)[]; enhetNotat?: string | null;
   dbh: Record<string, DbhAar>; artikler: Record<string, ArtAar>; topp: Topp[]; ajgFagfelt: Record<string, number>;
   utdanning: Partial<Record<'oa' | 'moa', Utd>>;
+  /** ABS/AJG 4*, 4 og 3 per år fra NHHs forskningsrapport (åtte skoler), antall og per årsverk. */
+  ajgNhh?: Record<string, Partial<Record<'4*' | '4' | '3', { n: number; perFte: number }>>> | null;
 }
+interface AjgNhhMeta { kilde: string; url: string; liste: string; nevner: string; usikker: Record<string, number[]>; sider: Record<string, number>; }
 interface Kontroll { skole: string; enhet?: string | null; enhetNavn?: string | null; aar: number | null; maal: string; verdi: number | string | null; nevner?: string | null; kilde?: string | null; url?: string | null; side?: number | string | null; merknad?: string | null; vaar?: number | null; vaarAlt?: number | null; vaarNivaa?: string; avvikProsent?: number | null; traff?: 'hoved' | 'alt'; }
-interface Data { versjon: number; generert: string; aar: [number, number]; lister: Record<'ajg' | 'abdc' | 'ft50' | 'utd24', boolean>; skoler: Skole[]; kontroll?: Kontroll[]; }
+interface Data { versjon: number; generert: string; aar: [number, number]; lister: Record<'ajg' | 'abdc' | 'ft50' | 'utd24', boolean>; skoler: Skole[]; kontroll?: Kontroll[]; ajgNhh?: AjgNhhMeta | null; }
 
 const PW_KEY = 'intern-opptak-pw'; // samme passord som den interne opptakssiden
 const GRONN = 'var(--nmbu-green-dark)';
@@ -61,7 +64,13 @@ function artSum(s: Skole, aar: string[]) {
   return { n, ft, utd, intl, ajg34, ajgN, abdcA };
 }
 
-interface Ind { id: string; label: string; dim: 'Forskning' | 'Utdanning' | 'Fagmiljø' | 'Anerkjennelse'; vekt: number; desc: string; fmt: (v: number | null) => string; verdi: (s: Skole) => number | null; }
+type Dim = 'Forskning' | 'Utdanning' | 'Fagmiljø' | 'Anerkjennelse';
+const DIMS: Dim[] = ['Forskning', 'Utdanning', 'Fagmiljø', 'Anerkjennelse'];
+/** Standardandeler per dimensjon (prosent). Forskningen velges i trinn; de andre deler resten i dette forholdet. */
+const DIM_STANDARD: Record<Dim, number> = { Forskning: 75, Utdanning: 20, Fagmiljø: 3, Anerkjennelse: 2 };
+const FORSK_STANDARD = 75;
+const FORSK_TRINN = [50, 55, 60, 65, 70, 75, 80, 85];
+interface Ind { id: string; label: string; dim: Dim; vekt: number; desc: string; fmt: (v: number | null) => string; verdi: (s: Skole) => number | null; }
 function lagIndikatorer(d: Data): Ind[] {
   const y1 = sisteDbhAar(d);
   const tre = aarRekke(y1 - 2, y1);
@@ -75,8 +84,10 @@ function lagIndikatorer(d: Data): Ind[] {
     harAjg
       ? { id: 'ajg34', label: 'Andel AJG 3–4*', dim: 'Forskning', vekt: 20, desc: `Andel av artiklene ${fem[0]}–${y1} i tidsskrift på AJG 2024 nivå 3, 4 eller 4*. NVA × AJG.`,
           fmt: (v) => nf(v, 0) + ' %', verdi: (s) => { const a = artSum(s, fem); return a.ajgN ? 100 * a.ajg34 / a.ajgN : null; } }
-      : { id: 'abdcA', label: 'Andel ABDC A/A*', dim: 'Forskning', vekt: 20, desc: `Andel av artiklene ${fem[0]}–${y1} i tidsskrift med ABDC A eller A* (AJG brukes når lista er lagt inn). NVA × ABDC.`,
+      : { id: 'abdcA', label: 'Andel ABDC A/A*', dim: 'Forskning', vekt: 10, desc: `Andel av artiklene ${fem[0]}–${y1} i tidsskrift med ABDC A eller A* (AJG brukes når lista er lagt inn). NVA × ABDC.`,
           fmt: (v) => nf(v, 0) + ' %', verdi: (s) => { const a = artSum(s, fem); return a.n ? 100 * a.abdcA / a.n : null; } },
+    { id: 'ajgNhh', label: 'AJG 4/4* per årsverk', dim: 'Forskning', vekt: 10, desc: 'Artikler på AJG 2024 nivå 4 og 4* per årsverk (uten stipendiater), snitt 2022–2024. NHH Research Report 2024, tabell 4 og 5: bare åtte skoler (NHH, BI, NMBU, Nord, NTNU, UiA, UiS, UiT); for de andre fordeles vekten på de andre målene.',
+      fmt: (v) => nf(v, 2), verdi: (s) => s.ajgNhh ? snitt(['2022', '2023', '2024'].map((y) => { const a = s.ajgNhh?.[y]; return a ? (a['4*']?.perFte ?? 0) + (a['4']?.perFte ?? 0) : null; })) : null },
     { id: 'ft50', label: 'FT50/UTD24 per 100 årsverk', dim: 'Forskning', vekt: 10, desc: `Artikler ${fem[0]}–${y1} i FT50 eller UTD24 per 100 UFF-årsverk (snitt). Én artikkel i begge lister telles én gang i FT50.`,
       fmt: (v) => nf(v, 1), verdi: (s) => { const a = artSum(s, fem); const uff = snitt(fem.map((y) => { const x = s.dbh[y]; return x?.faglige != null ? x.faglige + (x.rekruttering ?? 0) : null; })); return uff ? 100 * Math.max(a.ft, a.utd) / uff : null; } },
     { id: 'intl', label: 'Internasjonal sampublisering', dim: 'Forskning', vekt: 5, desc: `Andel artikler ${fem[0]}–${y1} med minst én utenlandsk medforfatter. NVA.`,
@@ -154,7 +165,7 @@ function Rangering({ data }: { data: Data }) {
       <div className="flex items-start gap-2 text-xs rounded-lg px-4 py-3 mb-5" style={{ backgroundColor: 'var(--nmbu-beige-light)', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-2)' }}>
         <Info className="w-4 h-4 flex-shrink-0 mt-0.5" />
         <span>Utkast {data.generert}. Rangeringen er et forslag til metode, ikke et ferdig resultat. Vektene kan endres fritt.
-          {!data.lister.ajg && <> AJG 2024 (ABS-lista, 1–4*) er ikke lagt inn ennå; ABDC brukes i mellomtiden.</>}</span>
+          {!data.lister.ajg && <> AJG 2024 (ABS-lista) vises foreløpig med NHHs publiserte tall for åtte skoler (nivå 3, 4 og 4*); egen kobling av alle artikler mot AJG kommer når tillatelsen fra Chartered ABS er på plass. ABDC brukes for alle skoler i mellomtiden.</>}</span>
       </div>
       <div className="flex flex-wrap gap-2 mb-5">
         {faner.map((f) => (
@@ -177,7 +188,22 @@ function Rangering({ data }: { data: Data }) {
 function Samlet({ data, apneProfil }: { data: Data; apneProfil: (id: string) => void }) {
   const ind = useMemo(() => lagIndikatorer(data), [data]);
   const [vekt, setVekt] = useState<Record<string, number>>(() => Object.fromEntries(ind.map((i) => [i.id, i.vekt])));
+  const [forsk, setForsk] = useState(FORSK_STANDARD);
   const [medRef, setMedRef] = useState(false);
+  // Effektiv vekt (prosent) per mål: forskningsandelen velges i trinn på 5; resten deles mellom de andre
+  // dimensjonene i standardforholdet. Innen en dimensjon er glidebryterne relative vekter.
+  const eff = useMemo(() => {
+    const andel: Record<Dim, number> = { Forskning: forsk, Utdanning: 0, Fagmiljø: 0, Anerkjennelse: 0 };
+    const rest = DIMS.filter((d) => d !== 'Forskning');
+    const std = rest.reduce((a, d) => a + DIM_STANDARD[d], 0);
+    rest.forEach((d) => { andel[d] = (100 - forsk) * DIM_STANDARD[d] / std; });
+    const ut: Record<string, number> = {};
+    for (const d of DIMS) {
+      const mine = ind.filter((i) => i.dim === d); const sum = mine.reduce((a, i) => a + vekt[i.id], 0);
+      mine.forEach((i) => { ut[i.id] = sum ? andel[d] * vekt[i.id] / sum : 0; });
+    }
+    return { ut, andel };
+  }, [ind, vekt, forsk]);
   const skoler = data.skoler.filter((s) => medRef || !s.referanse);
 
   const rader = useMemo(() => {
@@ -195,15 +221,13 @@ function Samlet({ data, apneProfil }: { data: Data; apneProfil: (id: string) => 
       for (const i of ind) {
         const v = verdier[i.id][k]; const n = norm(i.id, v);
         delt[i.id] = { v, n };
-        if (n == null) { if (vekt[i.id] > 0) mangler++; continue; }
-        sum += n * vekt[i.id]; w += vekt[i.id];
+        if (n == null) { if (eff.ut[i.id] > 0) mangler++; continue; }
+        sum += n * eff.ut[i.id]; w += eff.ut[i.id];
       }
       return { s, score: w ? sum / w : null, delt, mangler };
     }).sort((a, b) => (b.score ?? -1) - (a.score ?? -1));
-  }, [skoler, ind, vekt]);
+  }, [skoler, ind, eff]);
 
-  const dims = ['Forskning', 'Utdanning', 'Fagmiljø', 'Anerkjennelse'] as const;
-  const totalVekt = Object.values(vekt).reduce((a, b) => a + b, 0) || 1;
   return (
     <div className="grid gap-5" style={{ gridTemplateColumns: 'minmax(0, 1fr)' }}>
       <div className="rounded-2xl p-5" style={kort}>
@@ -211,20 +235,32 @@ function Samlet({ data, apneProfil }: { data: Data; apneProfil: (id: string) => 
           <div style={{ fontSize: 14, fontWeight: 600, color: GRONN }}>Vekter</div>
           <div className="flex items-center gap-4 text-xs" style={{ color: 'var(--nmbu-neutral-2)' }}>
             <label className="flex items-center gap-1"><input type="checkbox" checked={medRef} onChange={(e) => setMedRef(e.target.checked)} /> Ta med referanseenheter</label>
-            <button onClick={() => setVekt(Object.fromEntries(ind.map((i) => [i.id, i.vekt])))} className="flex items-center gap-1" style={{ color: GRONN, fontWeight: 600 }}><RotateCcw className="w-3 h-3" /> Standardvekter</button>
+            <button onClick={() => { setVekt(Object.fromEntries(ind.map((i) => [i.id, i.vekt]))); setForsk(FORSK_STANDARD); }} className="flex items-center gap-1" style={{ color: GRONN, fontWeight: 600 }}><RotateCcw className="w-3 h-3" /> Standardvekter</button>
           </div>
         </div>
-        <div className="grid gap-x-6 gap-y-2" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))' }}>
-          {dims.map((d) => (
+        <div className="flex flex-wrap items-center gap-2 mb-4">
+          <span className="text-xs" style={{ color: 'var(--nmbu-neutral-2)', fontWeight: 600 }}>Forskningens andel (%):</span>
+          <div className="flex rounded-lg overflow-hidden" style={{ border: '1px solid var(--nmbu-neutral-3)' }}>
+            {FORSK_TRINN.map((f, k) => (
+              <button key={f} onClick={() => setForsk(f)} className="px-2.5 py-1 text-xs"
+                style={{ backgroundColor: forsk === f ? GRONN : '#fff', color: forsk === f ? '#fff' : 'var(--nmbu-neutral-1)', fontWeight: forsk === f ? 700 : 400, fontFamily: 'var(--font-mono, monospace)', borderRight: k < FORSK_TRINN.length - 1 ? '1px solid var(--nmbu-neutral-3)' : 'none' }}>{f}</button>
+            ))}
+          </div>
+          <span className="text-xs" style={{ color: 'var(--nmbu-neutral-2)' }}>
+            Resten: {DIMS.filter((d) => d !== 'Forskning').map((d) => `${d} ${nf(eff.andel[d], 0)} %`).join(' · ')}
+          </span>
+        </div>
+        <div className="grid gap-x-10 gap-y-2" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))' }}>
+          {DIMS.map((d) => (
             <div key={d}>
               <div style={{ fontSize: 11, fontWeight: 700, color: 'var(--nmbu-neutral-2)', textTransform: 'uppercase', letterSpacing: '0.05em', margin: '6px 0 4px' }}>
-                {d} · {nf(100 * ind.filter((i) => i.dim === d).reduce((a, i) => a + vekt[i.id], 0) / totalVekt, 0)} %
+                {d} · {nf(eff.andel[d], 0)} %
               </div>
               {ind.filter((i) => i.dim === d).map((i) => (
                 <label key={i.id} className="flex items-center gap-2 text-xs py-0.5" title={i.desc} style={{ color: 'var(--nmbu-neutral-1)' }}>
                   <span style={{ width: 150, flexShrink: 0 }}>{i.label}</span>
                   <input type="range" min={0} max={40} value={vekt[i.id]} onChange={(e) => setVekt((p) => ({ ...p, [i.id]: Number(e.target.value) }))} style={{ flex: 1, accentColor: 'var(--nmbu-green-dark)' }} />
-                  <span style={{ width: 22, textAlign: 'right', fontFamily: 'var(--font-mono, monospace)' }}>{vekt[i.id]}</span>
+                  <span style={{ width: 52, flexShrink: 0, whiteSpace: 'nowrap', textAlign: 'right', fontFamily: 'var(--font-mono, monospace)' }} title="Effektiv vekt i poengsummen">{nf(eff.ut[i.id], 1)} %</span>
                 </label>
               ))}
             </div>
@@ -239,7 +275,7 @@ function Samlet({ data, apneProfil }: { data: Data; apneProfil: (id: string) => 
               <th className="px-2 py-2 text-left" style={{ color: 'var(--nmbu-neutral-2)', fontWeight: 600 }}>#</th>
               <th className="px-2 py-2 text-left" style={{ color: 'var(--nmbu-neutral-2)', fontWeight: 600 }}>Handelshøyskole</th>
               <th className="px-2 py-2 text-right" style={{ color: GRONN, fontWeight: 700 }}>Poeng</th>
-              {ind.map((i) => <th key={i.id} className="px-2 py-2 text-right" title={i.desc} style={{ color: 'var(--nmbu-neutral-2)', fontWeight: 600, fontSize: 11, maxWidth: 90, opacity: vekt[i.id] ? 1 : 0.45 }}>{i.label}</th>)}
+              {ind.map((i) => <th key={i.id} className="px-2 py-2 text-right" title={i.desc} style={{ color: 'var(--nmbu-neutral-2)', fontWeight: 600, fontSize: 11, maxWidth: 90, opacity: eff.ut[i.id] ? 1 : 0.45 }}>{i.label}</th>)}
             </tr>
           </thead>
           <tbody>
@@ -254,7 +290,7 @@ function Samlet({ data, apneProfil }: { data: Data; apneProfil: (id: string) => 
                 {ind.map((i) => {
                   const c = r.delt[i.id];
                   return (
-                    <td key={i.id} className="px-2 py-2 text-right" style={{ fontFamily: 'var(--font-mono, monospace)', fontSize: 12, opacity: vekt[i.id] ? 1 : 0.45 }} title={c.n == null ? 'Mangler' : `Normalisert: ${nf(c.n, 0)} av 100`}>
+                    <td key={i.id} className="px-2 py-2 text-right" style={{ fontFamily: 'var(--font-mono, monospace)', fontSize: 12, opacity: eff.ut[i.id] ? 1 : 0.45 }} title={c.n == null ? 'Mangler' : `Normalisert: ${nf(c.n, 0)} av 100`}>
                       <div style={{ color: 'var(--nmbu-neutral-1)' }}>{i.fmt(c.v)}</div>
                       {c.n != null && <div className="ml-auto mt-0.5 rounded" style={{ height: 3, width: `${Math.max(4, c.n * 0.6)}%`, minWidth: 2, backgroundColor: 'var(--nmbu-green-3, #46B4A0)' }} />}
                     </td>
@@ -265,7 +301,7 @@ function Samlet({ data, apneProfil }: { data: Data; apneProfil: (id: string) => 
           </tbody>
         </table>
         <p className="text-xs mt-3" style={{ color: 'var(--nmbu-neutral-2)' }}>
-          Hvert mål skaleres til 0–100 (laveste til høyeste blant skolene som vises), og poengsummen er det vektede snittet. Mangler en skole et mål, fordeles vekten på de andre målene for den skolen. Hold musepekeren over en kolonne for definisjon og kilde.
+          Velg forskningens andel i trinn på 5 %; de andre dimensjonene deler resten i standardforholdet (20 : 3 : 2), og glidebryterne fordeler vekten innen hver dimensjon (prosenten er målets effektive vekt). Hvert mål skaleres til 0–100 (laveste til høyeste blant skolene som vises), og poengsummen er det vektede snittet. Mangler en skole et mål, fordeles vekten på de andre målene for den skolen. Hold musepekeren over en kolonne for definisjon og kilde.
         </p>
       </div>
     </div>
@@ -297,6 +333,7 @@ function Publisering({ data }: { data: Data }) {
   const MAAL = { poengPerUff: 'Poeng per faglig årsverk (UFF)', niva2Andel: 'Andel nivå 2 (%)', publPoeng: 'Publiseringspoeng' } as const;
   return (
     <div className="grid gap-5">
+      <AjgKort data={data} />
       <div className="rounded-2xl p-5" style={kort}>
         <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
           <div style={{ fontSize: 14, fontWeight: 600, color: GRONN }}>{MAAL[maal]}, {data.aar[0]}–{y1}</div>
@@ -347,6 +384,53 @@ function Publisering({ data }: { data: Data }) {
           Alle vitenskapelige artikler i NVA der minst én forfatter er tilknyttet enheten, koblet på ISSN. Sortert etter andel på de to høyeste nivåene.
         </p>
       </div>
+    </div>
+  );
+}
+
+// ── AJG 2024 (ABS) fra NHHs forskningsrapport ────────────────────────────────
+const AJG_FARGE: Record<'3' | '4' | '4*', string> = { '3': '#9FCFC2', '4': '#2E7D6B', '4*': '#014238' };
+function AjgKort({ data }: { data: Data }) {
+  const meta = data.ajgNhh;
+  const [aar, setAar] = useState<'2024' | 'sum'>('sum');
+  const [perFte, setPerFte] = useState(true);
+  const AAR = ['2020', '2021', '2022', '2023', '2024'];
+  const rader = data.skoler.filter((s) => s.ajgNhh).map((s) => {
+    const v = (niva: '3' | '4' | '4*') => {
+      const ys = aar === 'sum' ? AAR : [aar];
+      const xs = ys.map((y) => s.ajgNhh?.[y]?.[niva]).filter(Boolean) as { n: number; perFte: number }[];
+      if (!xs.length) return 0;
+      return perFte ? xs.reduce((a, x) => a + x.perFte, 0) / xs.length : xs.reduce((a, x) => a + x.n, 0);
+    };
+    return { navn: s.kort, isNmbu: s.isNmbu, '4*': v('4*'), '4': v('4'), '3': v('3') };
+  }).sort((a, b) => (b['4*'] + b['4']) - (a['4*'] + a['4']));
+  if (!meta || !rader.length) return null;
+  const knapp = (on: boolean) => on ? { backgroundColor: GRONN, color: '#fff' } : { backgroundColor: 'var(--nmbu-beige-light)', color: 'var(--nmbu-neutral-1)' };
+  return (
+    <div className="rounded-2xl p-5" style={kort}>
+      <div className="flex flex-wrap items-center justify-between gap-2 mb-1">
+        <div style={{ fontSize: 14, fontWeight: 600, color: GRONN }}>AJG 2024 (ABS): artikler på nivå 3, 4 og 4*{perFte ? ' per årsverk' : ''}, {aar === 'sum' ? '2020–2024' : aar}</div>
+        <div className="flex gap-1">
+          <button onClick={() => setPerFte(true)} className="px-3 py-1 rounded-md text-xs" style={knapp(perFte)}>Per årsverk</button>
+          <button onClick={() => setPerFte(false)} className="px-3 py-1 rounded-md text-xs" style={knapp(!perFte)}>Antall</button>
+          <button onClick={() => setAar('sum')} className="px-3 py-1 rounded-md text-xs" style={knapp(aar === 'sum')}>{perFte ? 'Snitt' : 'Sum'} 2020–2024</button>
+          <button onClick={() => setAar('2024')} className="px-3 py-1 rounded-md text-xs" style={knapp(aar === '2024')}>2024</button>
+        </div>
+      </div>
+      <p className="text-xs mb-3" style={{ color: 'var(--nmbu-neutral-2)' }}>Sortert etter nivå 4 og 4*. Åtte skoler som NHH sammenligner seg med; de andre er ikke med i kilden.</p>
+      <ResponsiveContainer width="100%" height={rader.length * 30 + 50}>
+        <BarChart data={rader} layout="vertical" margin={{ top: 0, right: 20, left: 10, bottom: 0 }} barCategoryGap={5}>
+          <CartesianGrid strokeDasharray="3 3" stroke="var(--nmbu-beige-light)" horizontal={false} />
+          <XAxis type="number" tick={{ fontSize: 11 }} tickFormatter={(v) => nf(v, perFte ? 2 : 0)} />
+          <YAxis type="category" dataKey="navn" width={90} tick={{ fontSize: 11 }} />
+          <Tooltip formatter={(v: number, k: string) => [nf(v, perFte ? 2 : 0), `AJG ${k}`]} />
+          <Legend formatter={(k: string) => `AJG ${k}`} wrapperStyle={{ fontSize: 11 }} />
+          {(['4*', '4', '3'] as const).map((k) => <Bar key={k} dataKey={k} stackId="a" fill={AJG_FARGE[k]} stroke="#fff" strokeWidth={1} />)}
+        </BarChart>
+      </ResponsiveContainer>
+      <p className="text-xs mt-2" style={{ color: 'var(--nmbu-neutral-2)' }}>
+        Kilde: <a href={meta.url} target="_blank" rel="noreferrer" className="hover:underline" style={{ color: GRONN }}>{meta.kilde}</a> (s. {Object.entries(meta.sider).map(([k, s]) => `${s}: ${k}`).join(', ')}). Årsverk = {meta.nevner}. NHHs tabell for nivå 3 har samme antall i 2022 som i 2020 for nesten alle skolene, mens tallene per årsverk er ulike; 2022-antallet for nivå 3 er derfor usikkert. Egen kobling av alle artikler mot AJG kommer når tillatelsen fra Chartered ABS er på plass.
+      </p>
     </div>
   );
 }
@@ -431,6 +515,22 @@ function Profil({ data, id, setId }: { data: Data; id: string; setId: (id: strin
           <p className="text-xs" style={{ color: 'var(--nmbu-neutral-2)' }}>Andel nivå 1/2 her er av artikler (NVA). Andelen av publiseringspoeng (DBH 374) er {sist?.niva2Andel != null ? nf(sist.niva2Andel, 0) + ' %' : 'ikke tilgjengelig'}.</p>
         </div>
       </div>
+
+      {s.ajgNhh && (
+        <div className="rounded-2xl p-5" style={kort}>
+          <div style={{ fontSize: 14, fontWeight: 600, color: GRONN, marginBottom: 8 }}>AJG 2024 (ABS): artikler på nivå 3, 4 og 4*, 2020–2024</div>
+          <ResponsiveContainer width="100%" height={220}>
+            <BarChart data={['2020', '2021', '2022', '2023', '2024'].map((y) => ({ aar: y, '3': s.ajgNhh?.[y]?.['3']?.n ?? 0, '4': s.ajgNhh?.[y]?.['4']?.n ?? 0, '4*': s.ajgNhh?.[y]?.['4*']?.n ?? 0 }))} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
+              <CartesianGrid strokeDasharray="3 3" stroke="var(--nmbu-beige-light)" vertical={false} />
+              <XAxis dataKey="aar" tick={{ fontSize: 11 }} /><YAxis tick={{ fontSize: 11 }} allowDecimals={false} />
+              <Tooltip formatter={(v: number, k: string) => [v, `AJG ${k}`]} />
+              <Legend formatter={(k: string) => `AJG ${k}`} wrapperStyle={{ fontSize: 11 }} />
+              {(['3', '4', '4*'] as const).map((k) => <Bar key={k} dataKey={k} fill={AJG_FARGE[k]} radius={[4, 4, 0, 0]} />)}
+            </BarChart>
+          </ResponsiveContainer>
+          <p className="text-xs" style={{ color: 'var(--nmbu-neutral-2)' }}>Kilde: NHH Research Report 2024, tabell 4, 5 og 31. Antallet på nivå 3 i 2022 er usikkert (se Publisering).</p>
+        </div>
+      )}
 
       <div className="grid gap-5" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))' }}>
         <div className="rounded-2xl p-5" style={kort}>

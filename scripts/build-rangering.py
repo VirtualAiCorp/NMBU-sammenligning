@@ -15,6 +15,8 @@ Kilder:
   DBH/HK-dir 373, 374                   Publiseringspoeng og antall publikasjoner per avdeling; poeng per nivå.
   DBH/HK-dir 123, 210                   Registrerte studenter; avdeling → fakultet.
   NVA (scripts/fetch-nva-artikler.py)   Vitenskapelige artikler per enhet og år med tidsskrift og ISSN.
+  data/rangering/ajg-nhh-rapport.json   ABS/AJG 4*/4/3 per skole 2020–2024 fra NHH Research Report 2024
+                                        (scripts/rangering/nhh_abs_tabeller.py).
   data/rangering/tidsskrift/            ABDC (A*/A/B/C), FT50, UTD24, og AJG 2024 (1–4*) hvis ajg2024.csv finnes
                                         (lisensbelagt, gitignored; mal i ajg-mal.csv).
   kilde/src/app/data/hh*Data            Opptak (Samordna), Studiebarometeret og gjennomføring for ØA-bachelor/-master,
@@ -130,7 +132,7 @@ def les_liste(navn, verdi_kol, fag_kol=None, krav=None):
 
 KORT = {"nhh": "NHH", "bi": "BI", "nmbu": "HH NMBU", "uis": "UiS", "uia": "UiA", "nord": "Nord", "ntnu": "NTNU",
         "uit": "UiT", "usn": "USN", "inn": "INN", "oslomet": "OsloMet", "himolde": "HiMolde", "hvl": "HVL",
-        "kristiania": "Kristiania", "hiof": "HiØ", "uib_okon": "UiB økonomi", "uio_okon": "UiO økonomi"}
+        "kristiania": "Kristiania", "hiof": "HiØ", "ntnu_ok": "NTNU ØK (hele)", "uib_okon": "UiB økonomi", "uio_okon": "UiO økonomi"}
 AJG_NIVAER = ["1", "2", "3", "4", "4*"]
 ABDC_NIVAER = ["C", "B", "A", "A*"]
 
@@ -388,6 +390,9 @@ def main():
             }
         return ut
 
+    f = RANG / "ajg-nhh-rapport.json"  # scripts/rangering/nhh_abs_tabeller.py
+    ajg_nhh = json.loads(f.read_text(encoding="utf-8")) if f.exists() else None
+
     # ── Sett sammen ──
     ut_skoler = []
     for s in skoler:
@@ -411,13 +416,16 @@ def main():
             "rangeringer": s.get("rangeringer") or s.get("internasjonale_rangeringer") or [],
             "enhetNotat": s.get("usikkerhet"), "dbhEnhet": spec_, "nva": s.get("nva"),
             "dbh": aar, "dbhInst": inst_aar, "artikler": per_aar, "topp": [x for x in topp if x["aar"] >= Y1 - 5][:150], "ajgFagfelt": fag,
-            "utdanning": utdanning(s.get("programprefiks") or [sid]),
+            "utdanning": utdanning(s.get("programprefiks") or [sid.split("_")[0] if sid == "ntnu_ok" else sid]),
+            # ABS/AJG 4*, 4 og 3 fra NHHs forskningsrapport (åtte skoler, 2020–2024), til vi har lov å koble mot lista
+            "ajgNhh": (ajg_nhh or {}).get("skoler", {}).get(sid),
         })
         sist = aar.get("2024") or {}
         print(f"  {sid:12s} poeng/UFF 2024 {sist.get('poengPerUff')}  artikler 2024 {per_aar.get('2024', {}).get('n')}  utd {list(ut_skoler[-1]['utdanning'])}")
 
     kontroll = lag_kontroll(ut_skoler)
     data = {"versjon": 1, "generert": dt.date.today().isoformat(), "aar": [Y0, Y1], "kontroll": kontroll,
+            "ajgNhh": {k: v for k, v in (ajg_nhh or {}).items() if k != "skoler"} or None,
             "lister": {k: bool(v) for k, v in lister.items()}, "skoler": ut_skoler}
     if a.klartekst:
         KLAR.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")

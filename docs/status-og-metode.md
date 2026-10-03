@@ -731,3 +731,13 @@ KI-chat og uten «Spør KI» (`utenKi` på `AfModulSide`). Grunnen er at metoden
   for noen institusjoner, så avdelingene summeres. `docs/bi-kristiania-datakilder.md` sine 502 poeng for Kristiania 2024 er
   dobbelttelling (riktig: 251,1).
 - **Neste steg:** AJG-avklaring, alternativ normalisering (rangsum/z-skår), brøkdelt artikkeltelling, egen nettside.
+- **03.10 ettermiddag (Mathias' valg):** INN avgrenset til 440400 Økonomifag + 440500 Organisasjon, ledelse og styring (NVA
+  209.6.5.0 + 209.6.4.0), uten psykologi, jus/filosofi og Østlandsforskning. UiS uten Norsk hotellhøgskole. NTNU:
+  instituttet NTNU Handelshøyskolen rangeres; hele Fakultet for økonomi ligger som referanse `ntnu_ok`.
+  **AJG synlig:** NHH Research Report 2024 tabell 4/5/31 (ABS 4*/4/3, antall og per årsverk uten stipendiater, åtte skoler
+  2020–2024) leses av `scripts/rangering/nhh_abs_tabeller.py` → `data/rangering/ajg-nhh-rapport.json` og vises i Publisering,
+  Skoleprofil og som målet «AJG 4/4* per årsverk» (snitt 2022–2024; vekt 10, ABDC ned til 10). Kjent kildefeil: ABS 3-antallet
+  for 2022 er likt 2020 i NHHs tabell. Mathias innhenter tillatelse fra Chartered ABS for egen artikkelkobling.
+  **Vekter i trinn:** forskningens andel velges 50–85 % i trinn på 5; resten deles 20 : 3 : 2 (utdanning, fagmiljø,
+  anerkjennelse); glidebryterne er relative vekter innen dimensjonen og viser effektiv vekt.
+
