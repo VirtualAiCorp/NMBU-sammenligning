@@ -785,4 +785,10 @@ KI-chat og uten «Spør KI» (`utenKi` på `AfModulSide`). Grunnen er at metoden
   legges inn: `/usr/local/bin/python3 scripts/rangering/ajg_til_csv.py <fil>` → `data/rangering/tidsskrift/ajg2024.csv`
   (gitignored), bygg på nytt. Da erstattes «AJG 4/4* per årsverk» (NHH-rapporten, 8 skoler) av eget mål for alle 15, og AJG
   løfter trinn i det lagdelte målet. Etter tillatelsens utløp: slett ajg2024.csv og bygg på nytt.
+- **03.10 kveld – AJG-anslag:** AJG-sida (charteredabs.org, innlogget) har ingen eksport, og vilkårene forbyr skraping, så
+  lista ble ikke hentet. I stedet et kalibrert anslag fra åpne kilder (data/rangering/tidsskrift/anslag/kalibrering.md):
+  topp ≈ AJG 4/4* = FT50/UTD24 eller ABDC A* med OpenAlex-sitering ≥ 5; nivå 3 = ABDC A*/A med JUFO ≥ 2. Kalibrert mot
+  NHH-rapporten (r 0,98, 1,09 × fasit, Spearman 0,93), men overvurderer mindre skoler per årsverk. Nytt mål «AJG 4/4*-anslag
+  per 100 årsverk» (vekt 5) for alle 15; «AJG 4/4* (NHH-rapporten)» beholdes med vekt 0. Ny standardrangering: UiA 81,
+  UiS 77, NHH 75, BI 72, NTNU 69, HH NMBU 51.
 

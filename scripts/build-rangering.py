@@ -212,6 +212,8 @@ def main():
         "abdc": les_liste("abdc.csv", "rating", "fagfelt"),
         "ft50": les_liste("ft50.csv", None, krav="ft50_2026"),  # gjeldende FT50 (kolonnen ft50_2016 = gammel liste)
         "utd24": les_liste("utd24.csv", None),
+        # Kalibrert AJG-anslag fra åpne kilder (scripts/rangering/ajg_anslag.py), ikke AJG
+        "ajgA": les_liste("ajg-anslag.csv", "anslag"),
     }
     print("Tidsskriftlister:", {k: (len(v) if v else "mangler") for k, v in lister.items()})
 
@@ -327,6 +329,7 @@ def main():
             # og sum forfatterandel (enhetens forfattere / alle forfattere, dvs. 1/n per forfatter). Nettleseren
             # regner «høyeste nivå teller» med valgfrie vekter, tidsvindu og hel/brøk telling ut fra dette.
             komb = collections.defaultdict(lambda: [0, 0.0])
+            ajgA = collections.Counter()  # AJG-anslag, bare NVI-rapporterte artikler (som kalibreringen)
             for x in d["artikler"]:
                 s["n"] += 1
                 s["nvi"] += x.get("nvi", False)
@@ -343,6 +346,11 @@ def main():
                         fag[tj[1]] += 1
                 tb = treff(lister["abdc"])
                 abdc[tb[0] if tb else "ikke"] += 1
+                ta = treff(lister["ajgA"])
+                if x.get("nvi"):
+                    ajgA["n"] += 1
+                    if ta and ta[0] in ("topp", "3"):
+                        ajgA[ta[0]] += 1
                 ft = bool(treff(lister["ft50"])); ut = bool(treff(lister["utd24"]))
                 s["ft50"] += ft; s["utd24"] += ut
                 nokkel = "|".join([niva, tb[0] if tb else "-", "f" if ft else "u" if ut else "-", (tj[0] if tj else "-") if lister["ajg"] else "?"])
@@ -356,7 +364,8 @@ def main():
                             "niva": {k: s["niva" + k] for k in ("0", "1", "2", "u")},
                             "ajg": dict(ajg) if lister["ajg"] else None, "abdc": dict(abdc),
                             "ft50": s["ft50"], "utd24": s["utd24"],
-                            "komb": {kk: [v[0], round(v[1], 4)] for kk, v in sorted(komb.items())}}
+                            "komb": {kk: [v[0], round(v[1], 4)] for kk, v in sorted(komb.items())},
+                            "ajgA": {"topp": ajgA["topp"], "3": ajgA["3"], "nvi": ajgA["n"]}}
         topp.sort(key=lambda t: (-t["aar"], t["tidsskrift"] or ""))
         return per_aar, topp, dict(fag)
 
