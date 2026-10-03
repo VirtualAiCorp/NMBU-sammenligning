@@ -687,7 +687,7 @@
  },
  {
   "id": "ntnu",
-  "navn": "NTNU Handelshøyskolen",
+  "navn": "NTNU Handelshøyskolen og Institutt for samfunnsøkonomi",
   "navnEn": "NTNU Business School",
   "institusjon": "Norges teknisk-naturvitenskapelige universitet",
   "ren_handelshoyskole": false,
@@ -700,6 +700,11 @@
      "id": "194.60.10.0",
      "url": "https://api.nva.unit.no/cristin/organization/194.60.10.0",
      "navn": "NTNU Handelshøyskolen"
+    },
+    {
+     "id": "194.60.20.0",
+     "url": "https://api.nva.unit.no/cristin/organization/194.60.20.0",
+     "navn": "Institutt for samfunnsøkonomi"
     }
    ],
    "kontroll2024": {
@@ -707,12 +712,13 @@
     "alleKategorier": 400,
     "sporring": "search/resources?unit=<enhets-URL>&publicationYear=2024&instanceType=AcademicArticle"
    },
-   "merknad": "Hele Fakultet for økonomi (194.60.0.0) gir 228 artikler; IØT (194.60.25.0) alene 132, Inst. for samfunnsøkonomi (194.60.20.0) 20, Inst. for internasjonal business, Ålesund (194.60.15.0) 16."
+   "merknad": "Avgrenset 03.10.2026 (Mathias): NTNU Handelshøyskolen + Institutt for samfunnsøkonomi, uten IØT og Ålesund."
   },
   "dbh": {
    "institusjonskode": "1150",
    "avdelingskoder": [
-    "230210"
+    "230210",
+    "230230"
    ],
    "fakultetskode": "230",
    "tall": {
@@ -747,7 +753,7 @@
     },
     "merknad": "Brukes i HHs fagmiljøsammenligning (staffData: 1150_230). IØT er sivilingeniørmiljø og utgjør ~2/3 av publiseringen."
    },
-   "merknad": "NTNU Handelshøyskolen er et institutt (230210) under Fakultet for økonomi (230), sammen med Inst. for internasjonal forretningsdrift (230220, Ålesund), Inst. for samfunnsøkonomi (230230) og Inst. for industriell økonomi og teknologiledelse (230240, IØT)."
+   "merknad": "Avgrenset 03.10.2026 (Mathias): 230210 NTNU Handelshøyskolen + 230230 Institutt for samfunnsøkonomi. Uten 230240 IØT og 230220 Internasjonal business (Ålesund)."
   },
   "akkrediteringer": [
    {
@@ -793,7 +799,8 @@
     "niva": "hele institusjonen (GRAS rangerer universiteter, ikke fakulteter)"
    }
   ],
-  "usikkerhet": "Høy for avgrensning: «NTNU Business School» er formelt bare instituttet 230210, mens AACSB-medlemskapet og HHs fagmiljøsammenligning gjelder hele Fakultet for økonomi. Velg avgrensning før rangering. GRAS Management 76-100 skyldes trolig IØT og gjelder hele NTNU."
+  "usikkerhet": "Høy for avgrensning: «NTNU Business School» er formelt bare instituttet 230210, mens AACSB-medlemskapet og HHs fagmiljøsammenligning gjelder hele Fakultet for økonomi. Velg avgrensning før rangering. GRAS Management 76-100 skyldes trolig IØT og gjelder hele NTNU.",
+  "kontrollUlikAvgrensning": "Vår enhet er avgrenset annerledes enn i eksterne kilder (NTNU: Handelshøyskolen + samfunnsøkonomi; INN: økonomifag + organisasjon og ledelse), så tall på enhetsnivå sammenlignes ikke."
  },
  {
   "id": "ntnu_ok",
@@ -1097,7 +1104,8 @@
     "url": "https://www.eduniversal-ranking.com/business-school-university-ranking-in-norway.html"
    }
   ],
-  "usikkerhet": "Høy for avgrensning: fakultetet heter handelshøgskole, men rundt 40 % av publiseringspoengene kommer fra psykologi, jus/filosofi og Østlandsforskning. Velg hel eller kjerne."
+  "usikkerhet": "Høy for avgrensning: fakultetet heter handelshøgskole, men rundt 40 % av publiseringspoengene kommer fra psykologi, jus/filosofi og Østlandsforskning. Velg hel eller kjerne.",
+  "kontrollUlikAvgrensning": "Vår enhet er avgrenset annerledes enn i eksterne kilder (NTNU: Handelshøyskolen + samfunnsøkonomi; INN: økonomifag + organisasjon og ledelse), så tall på enhetsnivå sammenlignes ikke."
  },
  {
   "id": "oslomet",

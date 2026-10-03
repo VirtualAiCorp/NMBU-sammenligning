@@ -162,7 +162,10 @@ def lag_kontroll(skoler):
             felt = "niva2AndelFa" if "forfatterandel" in nev else "niva2AndelPubl" if "publikasjon" in nev else "niva2Andel"
         rad = {k: e.get(k) for k in ("skole", "enhet", "enhetNavn", "aar", "maal", "verdi", "nevner", "kilde", "url", "side", "merknad")}
         rad["skole"] = ALIAS.get(rad["skole"], rad["skole"])
-        if s and felt and e.get("aar") is not None:
+        ulik = s and s.get("kontrollUlikAvgrensning") and (e.get("enhet") or "") != "institusjon"
+        if ulik:
+            rad["merknad"] = " ".join(x for x in (rad.get("merknad"), "Ikke sammenlignet: " + s["kontrollUlikAvgrensning"]) if x)
+        if s and felt and e.get("aar") is not None and not ulik:
             inst = (e.get("enhet") or "") == "institusjon" and not s.get("ren")
             kilde = s["dbhInst"] if inst else s["dbh"]
             y = kilde.get(str(e["aar"])) or {}
@@ -414,7 +417,7 @@ def main():
             "akkreditering": [x for x in (s.get("akkreditering") or s.get("akkrediteringer") or [])
                               if isinstance(x, str) or "ikke" not in str(x.get("status", "")).lower()],
             "rangeringer": s.get("rangeringer") or s.get("internasjonale_rangeringer") or [],
-            "enhetNotat": s.get("usikkerhet"), "dbhEnhet": spec_, "nva": s.get("nva"),
+            "enhetNotat": s.get("usikkerhet"), "kontrollUlikAvgrensning": s.get("kontrollUlikAvgrensning"), "dbhEnhet": spec_, "nva": s.get("nva"),
             "dbh": aar, "dbhInst": inst_aar, "artikler": per_aar, "topp": [x for x in topp if x["aar"] >= Y1 - 5][:150], "ajgFagfelt": fag,
             "utdanning": utdanning(s.get("programprefiks") or [sid.split("_")[0] if sid == "ntnu_ok" else sid]),
             # ABS/AJG 4*, 4 og 3 fra NHHs forskningsrapport (åtte skoler, 2020–2024), til vi har lov å koble mot lista

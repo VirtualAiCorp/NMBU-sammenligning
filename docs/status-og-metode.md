@@ -740,4 +740,8 @@ KI-chat og uten «Spør KI» (`utenKi` på `AfModulSide`). Grunnen er at metoden
   for 2022 er likt 2020 i NHHs tabell. Mathias innhenter tillatelse fra Chartered ABS for egen artikkelkobling.
   **Vekter i trinn:** forskningens andel velges 50–85 % i trinn på 5; resten deles 20 : 3 : 2 (utdanning, fagmiljø,
   anerkjennelse); glidebryterne er relative vekter innen dimensjonen og viser effektiv vekt.
+- **03.10 (Mathias):** NTNU = 230210 NTNU Handelshøyskolen + 230230 Institutt for samfunnsøkonomi (NVA 194.60.10.0 +
+  194.60.20.0), uten IØT og Ålesund: 1,19 poeng per årsverk i 2024. AJG-tallene fra NHH-rapporten for «NTNU» gjelder bare
+  Handelshøyskolen. NTNU og INN har `kontrollUlikAvgrensning` i skoler.json, så eksterne tall på enhetsnivå for dem
+  sammenlignes ikke (kontroll: 619 av 681 innen ±2 %).
 
