@@ -764,3 +764,4 @@ KI-chat og uten «Spør KI» (`utenKi` på `AfModulSide`). Grunnen er at metoden
     tid, lagdelt forskning per trinn).
   - Med standardvekter 03.10: NTNU 75, NHH 73, UiA 71, BI 71, UiS 70 (alle Topp, spenn 1–5), HH NMBU 44 (plass 6, spenn 6–7).
 
+- **Design runde 2 (03.10):** `data/rangering/inspirasjon/design-finans-og-sammenligning.md` (DNs målte CSS-palett: marine #13264A, flate #EDF1F8, markering #EDFEB2, tekst #232528, datafarger #004C77 #45B7C1 #ECC48D #5049A1; Ivar + Sharp Grotesk). Tre forslag (DN-palett, finansterminal, spennkart): https://claude.ai/artifact/1a631xBf6GdWLGsiyd7Dyv (privat). Runde 1 (A–E) falt ikke i smak.
