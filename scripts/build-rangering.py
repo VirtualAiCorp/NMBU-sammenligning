@@ -369,34 +369,54 @@ def main():
         sb[m.group(1)] = {"respondenter": None if m.group(3) == "null" else int(m.group(3)),
                           "helhet": None if m.group(4) == "null" else float(m.group(4))}
 
+    # Opptaksgrense til toårig master i økonomi og administrasjon (siviløkonom): karaktersnitt fra bachelor, lokalt
+    # opptak, fra HH-oversikten (MASTER_ADMISSION i masterThesisData.ts). Siste år per skole.
+    ms_txt = (APPDATA / "masterThesisData.ts").read_text(encoding="utf-8")
+    ms_blokk = ms_txt[ms_txt.index("MASTER_ADMISSION"):ms_txt.index("};", ms_txt.index("MASTER_ADMISSION"))]
+    siv = {}
+    for m in re.finditer(r"^\s{2}(\w+): \[\s*\{([^}]*)\}", ms_blokk, re.M):
+        felt = m.group(2)
+        g = re.search(r"grade: ([\d.]+)", felt); y = re.search(r"year: '(\d{4})'", felt)
+        n = re.search(r"note: '([^']*)'", felt); u = re.search(r"url: '([^']*)'", felt)
+        siv[m.group(1)] = {"aar": int(y.group(1)) if y else None, "grense": float(g.group(1)) if g else None,
+                           "estimert": "estimated: true" in felt, "merknad": n.group(1) if n else None, "url": u.group(1) if u else None}
+    print("Siviløkonom-grenser:", {k: v["grense"] for k, v in siv.items()})
+
     def utdanning(prefikser):
         def mine(eid):
             return any(eid == p or eid.startswith(p + "_") for p in prefikser)
+        NORMERT_KULL = 2022  # samme startkull for alle, så andelene kan sammenlignes
         ut = {}
         for gid in ("oa", "moa"):
             g = next((x for x in adm["groups"] if x["id"] == gid), None)
             if not g:
                 continue
-            ent = [e for e in g["entries"] if mine(e["id"])]
+            # Bare riktig nivå: ØA-gruppen inneholder også femårige siviløkonomprogram (type master5), som skal ut.
+            niva = "bachelor" if gid == "oa" else "master2"
+            ent = [e for e in g["entries"] if mine(e["id"]) and (e.get("type") or g.get("level")) == niva]
             if not ent:
                 continue
             aar = "2026" if any(e["years"].get("2026") for e in ent) else "2025"
             ys = [e["years"].get(aar) or {} for e in ent]
             plasser = sum((y.get("plasser") or 0) for y in ys); fv = sum((y.get("fvS") or 0) for y in ys)
             pg = [y.get("pg_ord") for y in ys if y.get("pg_ord")]
-            sbv = [sb[e["id"]]["helhet"] for e in ent if e["id"] in sb and sb[e["id"]]["helhet"] is not None]
+            # Studiebarometeret vektet med antall respondenter (programmer uten nok svar er ikke med)
+            sbv = [(sb[e["id"]]["helhet"], sb[e["id"]]["respondenter"] or 1) for e in ent if e["id"] in sb and sb[e["id"]]["helhet"] is not None]
+            ider = {e["id"] for e in ent}
             cg = next((x for x in comp["groups"] if x["id"] == gid), None)
             norm = []
             for p in (cg or {}).get("programs", []):
-                if mine(p["entryId"]):
-                    k = [k for k in p.get("kull", []) if k.get("startkull") and k.get("fullfortNormert") is not None]
+                if p["entryId"] in ider:
+                    k = [k for k in p.get("kull", []) if k.get("aar") == NORMERT_KULL and k.get("startkull") and k.get("fullfortNormert") is not None]
                     if k:
-                        sist = k[-1]; norm.append((sist["fullfortNormert"], sist["startkull"], sist["aar"]))
+                        norm.append((k[0]["fullfortNormert"], k[0]["startkull"], k[0]["aar"]))
             ut[gid] = {
                 "aar": int(aar), "program": len(ent), "plasser": plasser or None, "forstevalg": fv or None,
                 "fvPerPlass": r1(fv / plasser, 2) if plasser else None,
                 "poenggrenseMaks": max(pg) if pg else None, "poenggrenseMin": min(pg) if pg else None,
-                "studiebarometer": r1(sum(sbv) / len(sbv), 2) if sbv else None,
+                "studiebarometer": r1(sum(v * w for v, w in sbv) / sum(w for _, w in sbv), 2) if sbv else None,
+                "studiebarometerResp": sum(w for _, w in sbv) if sbv else None,
+                "entryIds": sorted(ider),
                 "normertTid": r1(100 * sum(n for n, _, _ in norm) / sum(s for _, s, _ in norm)) if norm else None,
                 "normertKull": max(a_ for _, _, a_ in norm) if norm else None,
             }
@@ -428,7 +448,8 @@ def main():
             "rangeringer": s.get("rangeringer") or s.get("internasjonale_rangeringer") or [],
             "enhetNotat": s.get("usikkerhet"), "kontrollUlikAvgrensning": s.get("kontrollUlikAvgrensning"), "dbhEnhet": spec_, "nva": s.get("nva"),
             "dbh": aar, "dbhInst": inst_aar, "artikler": per_aar, "topp": [x for x in topp if x["aar"] >= Y1 - 5][:150], "ajgFagfelt": fag,
-            "utdanning": utdanning(s.get("programprefiks") or [sid.split("_")[0] if sid == "ntnu_ok" else sid]),
+            "utdanning": {**utdanning(s.get("programprefiks") or [sid.split("_")[0] if sid == "ntnu_ok" else sid]),
+                          "siv": siv.get(sid.split("_")[0] if sid == "ntnu_ok" else sid)},
             # ABS/AJG 4*, 4 og 3 fra NHHs forskningsrapport (åtte skoler, 2020–2024), til vi har lov å koble mot lista
             "ajgNhh": (ajg_nhh or {}).get("skoler", {}).get(sid),
         })

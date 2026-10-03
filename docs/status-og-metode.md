@@ -772,4 +772,17 @@ KI-chat og uten «Spør KI» (`utenKi` på `AfModulSide`). Grunnen er at metoden
   poeng per årsverk mot median og andre skoler, publiseringsprofil (nivå 2, ABDC A/A*, FT50/UTD24, sampublisering),
   utdanning (fakta + poenggrensestige), akkrediteringer og rangeringer, sammenligning i lilla. Lenke: `?rangering&fane=profil&
   profil=uis&mot=nhh`. Forsideforslag i samme stil: designartefakten for runde 3 (forside.html).
+- **03.10 kveld – rettelser etter etterprøvingen** (`data/rangering/kontroll/etterproving/1–5`): DBH, NVA/lister, AJG-tabellene
+  og modellen stemte. Rettet: (1) utdanning tok med femårige siviløkonomprogram (`type: master5`) i bachelor ØA; nå bare
+  `type == "bachelor"` (gruppe oa) og `master2` (moa). NTNU poenggrense 60,5 → 58,2, UiA FV/plass 2,82 → 3,38 og normert tid
+  46,7 → 61,3 %, OsloMet Studiebarometer 4,3 → mangler. (2) Normert tid bare startkull 2022 for alle. (3) Studiebarometeret
+  vektet med respondenter. (4) BI EQUIS 1999 (ikke 2008); NHHs AACSB-kilde byttet til nhh.no. (5) Mathias: utdanningsmålet
+  «Poenggrense ØA» erstattet av **«Opptaksgrense siviløkonom»** (toårig M-ØA, karaktersnitt fra bachelor, siste lokale opptak,
+  fra `MASTER_ADMISSION` i masterThesisData.ts; HVL, HiMolde og HiØ mangler; Kristiania anslått). NTNU Ålesund og Gjøvik
+  beholdes i utdanningstallene (som USN, UiT og Nord med flere studiesteder). Ny standardrangering: UiA 75, NHH 73, NTNU 73,
+  UiS 71, BI 71, HH NMBU 46.
+- **AJG:** Mathias har tillatelse fra Chartered ABS til å bruke AJG 2024 i én uke fra 03.10.2026 (til ca. 10.10). Når eksporten
+  legges inn: `/usr/local/bin/python3 scripts/rangering/ajg_til_csv.py <fil>` → `data/rangering/tidsskrift/ajg2024.csv`
+  (gitignored), bygg på nytt. Da erstattes «AJG 4/4* per årsverk» (NHH-rapporten, 8 skoler) av eget mål for alle 15, og AJG
+  løfter trinn i det lagdelte målet. Etter tillatelsens utløp: slett ajg2024.csv og bygg på nytt.
 

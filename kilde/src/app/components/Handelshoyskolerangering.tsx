@@ -15,13 +15,14 @@ import { Lock, Info, Trophy, BookOpen, Building2, FileText, RotateCcw, ShieldChe
 interface DbhAar { arsverk: number | null; faglige: number | null; rekruttering: number | null; forsteAndel: number | null; studenter: number | null; publPoeng: number | null; publikasjoner: number | null; uff: number | null; utenStip?: number | null; poengPerUff: number | null; poengPerFaglig: number | null; niva2Andel: number | null; studenterPerFaglig: number | null; }
 interface ArtAar { n: number; nvi: number; intlAndel: number | null; forfatterandel: number | null; niva: Record<'0' | '1' | '2' | 'u', number>; ajg: Record<string, number> | null; abdc: Record<string, number>; ft50: number; utd24: number; /** «niva|abdc|ft|ajg» → [antall, sum forfatterandel] */ komb?: Record<string, [number, number]>; }
 interface Topp { aar: number; tittel: string | null; tidsskrift: string | null; ajg: string | null; abdc: string | null; ft50: boolean; utd24: boolean; niva: string; }
-interface Utd { aar: number; program: number; plasser: number | null; forstevalg: number | null; fvPerPlass: number | null; poenggrenseMaks: number | null; poenggrenseMin: number | null; studiebarometer: number | null; normertTid: number | null; normertKull: number | null; }
+interface Siv { aar: number | null; grense: number | null; estimert: boolean; merknad: string | null; url: string | null; }
+interface Utd { studiebarometerResp?: number | null; entryIds?: string[]; aar: number; program: number; plasser: number | null; forstevalg: number | null; fvPerPlass: number | null; poenggrenseMaks: number | null; poenggrenseMin: number | null; studiebarometer: number | null; normertTid: number | null; normertKull: number | null; }
 interface Akk { navn?: string; type?: string; aar?: number | string | null; url?: string | null; [k: string]: unknown }
 interface Skole {
   id: string; navn: string; navnEn?: string | null; kort: string; institusjon?: string | null; isNmbu: boolean; ren: boolean; referanse: boolean;
   akkreditering: (Akk | string)[]; rangeringer: (Record<string, unknown> | string)[]; enhetNotat?: string | null;
   dbh: Record<string, DbhAar>; artikler: Record<string, ArtAar>; topp: Topp[]; ajgFagfelt: Record<string, number>;
-  utdanning: Partial<Record<'oa' | 'moa', Utd>>;
+  utdanning: Partial<Record<'oa' | 'moa', Utd>> & { siv?: Siv | null };
   /** ABS/AJG 4*, 4 og 3 per år fra NHHs forskningsrapport (åtte skoler), antall og per årsverk. */
   ajgNhh?: Record<string, Partial<Record<'4*' | '4' | '3', { n: number; perFte: number }>>> | null;
 }
@@ -142,19 +143,22 @@ function lagIndikatorer(d: Data, lag: Lag): Ind[] {
           fmt: (v) => nf(v, 0) + ' %', verdi: (s) => { const a = artSum(s, fem); return a.ajgN ? 100 * a.ajg34 / a.ajgN : null; } }
       : { id: 'abdcA', label: 'Andel ABDC A/A*', dim: 'Forskning', vekt: 0, desc: `Andel av artiklene ${fem[0]}–${y1} i tidsskrift med ABDC A eller A*. NVA × ABDC. Inngår i det lagdelte målet, derfor vekt 0 som standard.`,
           fmt: (v) => nf(v, 0) + ' %', verdi: (s) => { const a = artSum(s, fem); return a.n ? 100 * a.abdcA / a.n : null; } },
-    { id: 'ajgNhh', label: 'AJG 4/4* per årsverk', dim: 'Forskning', vekt: 10, desc: 'Artikler på AJG 2024 nivå 4 og 4* per årsverk (uten stipendiater), snitt 2022–2024. NHH Research Report 2024, tabell 4 og 5: bare åtte skoler (NHH, BI, NMBU, Nord, NTNU, UiA, UiS, UiT); for de andre fordeles vekten på de andre målene.',
-      fmt: (v) => nf(v, 2), verdi: (s) => s.ajgNhh ? snitt(['2022', '2023', '2024'].map((y) => { const a = s.ajgNhh?.[y]; return a ? (a['4*']?.perFte ?? 0) + (a['4']?.perFte ?? 0) : null; })) : null },
+    harAjg
+      ? { id: 'ajg4', label: 'AJG 4/4* per 100 årsverk', dim: 'Forskning', vekt: 10, desc: `Artikler ${fem[0]}–${y1} i tidsskrift på AJG 2024 nivå 4 eller 4* per 100 årsverk (UN1 + UN2, snitt). NVA × AJG, alle skoler.`,
+          fmt: (v) => nf(v, 1), verdi: (s) => { const n = fem.reduce((a, y) => a + ((s.artikler[y]?.ajg?.['4'] ?? 0) + (s.artikler[y]?.ajg?.['4*'] ?? 0)), 0); const uff = snitt(fem.map((y) => s.dbh[y]?.uff)); return uff ? 100 * n / uff : null; } }
+      : { id: 'ajgNhh', label: 'AJG 4/4* per årsverk', dim: 'Forskning', vekt: 10, desc: 'Artikler på AJG 2024 nivå 4 og 4* per årsverk (uten stipendiater), snitt 2022–2024. NHH Research Report 2024, tabell 4 og 5: bare åtte skoler (NHH, BI, NMBU, Nord, NTNU, UiA, UiS, UiT); for de andre fordeles vekten på de andre målene.',
+          fmt: (v) => nf(v, 2), verdi: (s) => s.ajgNhh ? snitt(['2022', '2023', '2024'].map((y) => { const a = s.ajgNhh?.[y]; return a ? (a['4*']?.perFte ?? 0) + (a['4']?.perFte ?? 0) : null; })) : null },
     { id: 'ft50', label: 'FT50/UTD24 per 100 årsverk', dim: 'Forskning', vekt: 5, desc: `Artikler ${fem[0]}–${y1} i FT50 eller UTD24 per 100 UFF-årsverk (snitt). Én artikkel i begge lister telles én gang i FT50.`,
       fmt: (v) => nf(v, 1), verdi: (s) => { const a = artSum(s, fem); const uff = snitt(fem.map((y) => s.dbh[y]?.uff)); return uff ? 100 * Math.max(a.ft, a.utd) / uff : null; } },
     { id: 'intl', label: 'Internasjonal sampublisering', dim: 'Forskning', vekt: 5, desc: `Andel artikler ${fem[0]}–${y1} med minst én utenlandsk medforfatter. NVA.`,
       fmt: (v) => nf(v, 0) + ' %', verdi: (s) => { const a = artSum(s, fem); return a.n ? 100 * a.intl / a.n : null; } },
-    { id: 'pg', label: 'Poenggrense ØA', dim: 'Utdanning', vekt: 7, desc: 'Høyeste poenggrense (ordinær kvote) blant skolens bachelor i økonomi og administrasjon, siste opptak. Samordna opptak.',
-      fmt: (v) => nf(v, 1), verdi: (s) => s.utdanning.oa?.poenggrenseMaks ?? null },
-    { id: 'fv', label: 'Førstevalg per plass ØA', dim: 'Utdanning', vekt: 5, desc: 'Førstevalgsøkere per studieplass, bachelor ØA, alle studiesteder samlet. Samordna opptak. (Private BI og Kristiania har eget opptak og mangler.)',
+    { id: 'siv', label: 'Opptaksgrense siviløkonom', dim: 'Utdanning', vekt: 7, desc: 'Inntaksgrense til toårig master i økonomi og administrasjon (siviløkonom), karaktersnitt fra bachelor (A = 5 … E = 1), siste lokale opptak. Fra HH-oversikten (MASTER_ADMISSION); Kristiania er anslått. HVL, HiMolde og HiØ mangler, og da fordeles vekten på de andre målene.',
+      fmt: (v) => nf(v, 2), verdi: (s) => s.utdanning.siv?.grense ?? null },
+    { id: 'fv', label: 'Førstevalg per plass ØA', dim: 'Utdanning', vekt: 5, desc: 'Førstevalgsøkere per studieplass, bachelor i økonomi og administrasjon (bare bachelor, ikke femårig siviløkonom), alle studiesteder samlet. Samordna opptak. (Private BI og Kristiania har eget opptak og mangler.)',
       fmt: (v) => nf(v, 2), verdi: (s) => s.utdanning.oa?.fvPerPlass ?? null },
-    { id: 'sb', label: 'Studiebarometeret ØA', dim: 'Utdanning', vekt: 5, desc: 'Helhetsvurdering (1–5), snitt over skolens ØA-bachelorprogram, siste år. studiebarometeret.no.',
+    { id: 'sb', label: 'Studiebarometeret ØA', dim: 'Utdanning', vekt: 5, desc: 'Helhetsvurdering (1–5) for skolens bachelorprogram i økonomi og administrasjon, siste år, vektet med antall respondenter. Programmer uten nok svar er ikke med. studiebarometeret.no.',
       fmt: (v) => nf(v, 1), verdi: (s) => s.utdanning.oa?.studiebarometer ?? null },
-    { id: 'normert', label: 'Fullført på normert tid ØA', dim: 'Utdanning', vekt: 3, desc: 'Andel av siste startkull i bachelor ØA som fullførte på normert tid. DBH.',
+    { id: 'normert', label: 'Fullført på normert tid ØA', dim: 'Utdanning', vekt: 3, desc: 'Andel av startkullet 2022 i bachelor i økonomi og administrasjon som fullførte på normert tid (alle studiesteder samlet). DBH.',
       fmt: (v) => nf(v, 0) + ' %', verdi: (s) => s.utdanning.oa?.normertTid ?? null },
     { id: 'forste', label: 'Andel førstestillinger', dim: 'Fagmiljø', vekt: 3, desc: `Professor, dosent, førsteamanuensis og førstelektor som andel av faglige årsverk, ${y1}. DBH 225.`,
       fmt: (v) => nf(v, 0) + ' %', verdi: (s) => s.dbh[String(y1)]?.forsteAndel ?? null },
@@ -950,9 +954,10 @@ function Skoleportrett({ data, rader, ind, eff, id, setId, mot, setMot }: Portre
 
   // Utdanning
   const oa = s.utdanning.oa;
-  const pg = rader.filter((x) => x.s.utdanning.oa?.poenggrenseMaks != null).sort((a, b) => (b.s.utdanning.oa!.poenggrenseMaks as number) - (a.s.utdanning.oa!.poenggrenseMaks as number));
-  const pgLo = 25, pgHi = 65, pgX = (v: number) => Math.max(0, Math.min(100, (v - pgLo) / (pgHi - pgLo) * 100));
-  const utenPg = rader.filter((x) => x.s.utdanning.oa?.poenggrenseMaks == null).map((x) => x.s.kort).join(', ');
+  const siv = s.utdanning.siv;
+  const sivRader = rader.filter((x) => x.s.utdanning.siv?.grense != null).sort((a, b) => (b.s.utdanning.siv!.grense as number) - (a.s.utdanning.siv!.grense as number));
+  const sivX = (v: number) => Math.max(0, Math.min(100, (v - 1) / 4 * 100));
+  const utenSiv = rader.filter((x) => x.s.utdanning.siv?.grense == null).map((x) => x.s.kort).join(', ');
 
   // Akkreditering og rangeringer
   const akk = akkNavn(s);
@@ -1100,31 +1105,33 @@ function Skoleportrett({ data, rader, ind, eff, id, setId, mot, setMot }: Portre
 
       <section className="sec">
         <header>
-          <span className="lab">Utdanning, bachelor i økonomi og administrasjon{oa ? `, opptak ${oa.aar}` : ''}</span>
-          <h2>{s.kort}: {oa?.poenggrenseMaks != null ? `poenggrense ${oa.poenggrenseMin === oa.poenggrenseMaks ? nf(oa.poenggrenseMaks, 1) : `${nf(oa.poenggrenseMin, 1)}–${nf(oa.poenggrenseMaks, 1)}`}` : 'ingen poenggrense i Samordna'}, {oa?.fvPerPlass != null ? `${nf(oa.fvPerPlass, 2)} førstevalg per plass` : 'førstevalg per plass ikke oppgitt'}</h2>
+          <span className="lab">Utdanning: siviløkonom (master) og bachelor i økonomi og administrasjon</span>
+          <h2>{s.kort}: {siv?.grense != null ? `inntaksgrense siviløkonom ${nf(siv.grense, 2)}${siv.estimert ? ' (anslått)' : ''}` : 'ingen registrert inntaksgrense til siviløkonom'}, {oa?.fvPerPlass != null ? `${nf(oa.fvPerPlass, 2)} førstevalg per plass på bachelor` : 'førstevalg per plass på bachelor ikke oppgitt'}</h2>
         </header>
         <div className="facts">
-          <div><b>{oa?.plasser != null ? nf(oa.plasser, 0) : '–'}</b><span>studieplasser</span></div>
+          <div><b>{siv?.grense != null ? nf(siv.grense, 2) : '–'}</b><span>inntaksgrense siviløkonom{siv?.aar ? `, ${siv.aar}` : ''}</span></div>
+          <div><b>{oa?.poenggrenseMaks != null ? nf(oa.poenggrenseMaks, 1) : '–'}</b><span>poenggrense bachelor, høyeste studiested</span></div>
+          <div><b>{oa?.plasser != null ? nf(oa.plasser, 0) : '–'}</b><span>studieplasser bachelor</span></div>
           <div><b>{oa?.forstevalg != null ? nf(oa.forstevalg, 0) : '–'}</b><span>førstevalg</span></div>
           <div><b>{oa ? nf(oa.program, 0) : '–'}</b><span>{oa?.program === 1 ? 'program' : 'programmer'} i utvalget</span></div>
           <div><b>{nf(oa?.studiebarometer, 1)}</b><span>Studiebarometeret, skala 1–5</span></div>
           <div><b>{oa?.normertTid != null ? `${nf(oa.normertTid, 0)} %` : '–'}</b><span>fullført på normert tid{oa?.normertKull ? `, kull ${oa.normertKull}` : ''}</span></div>
         </div>
         <div>
-          <p className="lab" style={{ marginBottom: 6 }}>Poenggrense, laveste til høyeste studiested</p>
+          <p className="lab" style={{ marginBottom: 6 }}>Inntaksgrense til siviløkonom (karaktersnitt fra bachelor, A = 5)</p>
           <div className="rg">
-            {pg.map((x) => {
-              const a = x.s.utdanning.oa!.poenggrenseMin ?? x.s.utdanning.oa!.poenggrenseMaks as number, b = x.s.utdanning.oa!.poenggrenseMaks as number;
+            {sivRader.map((x) => {
+              const g = x.s.utdanning.siv!.grense as number;
               return (
                 <div key={x.s.id} className={`rgr ${x.s.id === s.id ? 'sel' : x.s.id === c?.s.id ? 'cm' : ''}`}>
                   <span>{x.s.kort}</span>
-                  <div className="tr"><i style={{ left: `${pgX(a)}%`, width: `${Math.max(0, pgX(b) - pgX(a))}%` }} /></div>
-                  <span className="rv">{a === b ? nf(b, 1) : `${nf(a, 1)}–${nf(b, 1)}`}</span>
+                  <div className="tr"><i style={{ left: 0, width: `${sivX(g)}%` }} /></div>
+                  <span className="rv">{nf(g, 2)}{x.s.utdanning.siv!.estimert ? '*' : ''}</span>
                 </div>
               );
             })}
           </div>
-          {utenPg && <p className="cap" style={{ marginTop: 4 }}>Uten poenggrense i Samordna: {utenPg}.</p>}
+          <p className="cap" style={{ marginTop: 4 }}>Siste lokale opptak. * anslått.{utenSiv ? ` Mangler: ${utenSiv}.` : ''}{siv?.merknad ? ` ${s.kort}: ${siv.merknad}` : ''}</p>
         </div>
       </section>
 
