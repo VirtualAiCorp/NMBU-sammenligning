@@ -48,6 +48,7 @@ LISTER = RANG / "tidsskrift"
 CACHE = RANG / "dbh"
 APPDATA = ROOT / "kilde" / "src" / "app" / "data"
 OUT = ROOT / "kilde" / "public" / "intern" / "rangering.json"
+OUT_DELT = ROOT / "kilde" / "public" / "rangering-data.json"  # hh-rangering.pages.dev, RANGERING_PASSORD
 KLAR = RANG / "rangering-klartekst.json"
 ENV = ROOT / "kilde" / ".env.local"
 ITER = 310_000
@@ -95,10 +96,19 @@ def dbh(name, body, refresh):
         return []
 
 
-def passord():
+def passord(navn="INTERN_PASSORD"):
     for line in ENV.read_text(encoding="utf-8").splitlines() if ENV.exists() else []:
-        if line.startswith("INTERN_PASSORD="):
+        if line.startswith(navn + "="):
             return line.split("=", 1)[1].strip()
+    if navn == "RANGERING_PASSORD":
+        # Eget passord for nettstedet med bare rangeringen, så kolleger ikke får det interne passordet.
+        # Lages første gang og legges i kilde/.env.local (gitignored). Bytt ved å endre linja og bygge på nytt.
+        import secrets
+        pw = "hh-" + secrets.token_urlsafe(12)
+        with open(ENV, "a", encoding="utf-8") as fh:
+            fh.write(f"\n# Passord for hh-rangering.pages.dev (bare rangeringen), laget av build-rangering.py\n{navn}={pw}\n")
+        print(f"Laget nytt {navn} i {ENV.relative_to(ROOT)}.")
+        return pw
     raise SystemExit("Mangler INTERN_PASSORD i kilde/.env.local (lages av scripts/build-opptak-intern.py).")
 
 
@@ -499,6 +509,9 @@ def main():
         print(f"Skrev {KLAR.relative_to(ROOT)} (klartekst, gitignored).")
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(krypter(data, a.testpassord or passord())), encoding="utf-8")
+    # Samme data til nettstedet med bare rangeringen (VITE_KUN_RANGERING=1), med eget passord
+    OUT_DELT.write_text(json.dumps(krypter(data, a.testpassord or passord("RANGERING_PASSORD"))), encoding="utf-8")
+    print(f"Skrev {OUT_DELT.relative_to(ROOT)} (kryptert med {'TESTPASSORD' if a.testpassord else 'RANGERING_PASSORD'}).")
     print(f"Skrev {OUT.relative_to(ROOT)} ({OUT.stat().st_size // 1024} kB, kryptert{', MED TESTPASSORD: bygg på nytt uten --testpassord før commit' if a.testpassord else ''}).")
 
 

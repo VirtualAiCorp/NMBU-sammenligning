@@ -90,3 +90,28 @@ Settes under Workers & Pages → `nmbu-sammenligning` → Settings → Variables
 
 `INTERN_PASSORD` skal **aldri** legges inn i Cloudflare; da nekter KI-funksjonene å kjøre (se status-og-metode §41).
 Nye secrets gjelder først etter en ny utrulling (Deployments → siste → Retry deployment, eller en ny push).
+
+## 5. Eget nettsted med bare rangeringen: `hh-rangering` (04.10.2026)
+
+Til å vise «Norwegian Business School Ranking» til kolleger uten å gi dem det interne passordet.
+Byggevarianten `VITE_KUN_RANGERING=1` bruker egen inngang (`kilde/src/rangering-main.tsx`), tar ikke med
+resten av nettstedet eller `public/` (bare `rangering-data.json` kopieres), og skriver til `kilde/dist-rangering`
+(2,9 MB). Dataene er kryptert med **eget passord**, `RANGERING_PASSORD` i `kilde/.env.local` (laget av
+`scripts/build-rangering.py` første gang). Det interne passordet åpner ikke denne siden, og omvendt.
+
+Cloudflare-panelet → **Workers & Pages** → **Create** → **Pages** → **Import an existing Git repository** →
+`VirtualAiCorp/NMBU-sammenligning`:
+
+| Felt | Verdi |
+|---|---|
+| Project name | `hh-rangering` (gir `hh-rangering.pages.dev`) |
+| Production branch | `main` |
+| Framework preset | None |
+| Build command | `cd kilde && npm ci --legacy-peer-deps && npm run build` |
+| Build output directory | `kilde/dist-rangering` |
+| Environment variables | `NODE_VERSION` = `20`, `VITE_KUN_RANGERING` = `1` (ingen `VITE_HH_PASSORD`, ingen API-nøkler) |
+
+Begge prosjektene bygger ved hver push til `main`. `functions/` (KI-chatten) blir også lagt ut, men uten
+`ANTHROPIC_API_KEY` svarer den ikke; siden bruker den ikke. Lokal test: launch-config `boa-rangering-delt`
+(port 4183, `vite preview` av `dist-rangering`). Bytte passord: endre `RANGERING_PASSORD`, kjør
+`/usr/local/bin/python3 scripts/build-rangering.py`, commit og push. Eget domene kan legges på senere (punkt 4).

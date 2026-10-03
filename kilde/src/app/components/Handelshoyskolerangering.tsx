@@ -32,7 +32,10 @@ interface AjgNhhMeta { kilde: string; url: string; liste: string; nevner: string
 interface Kontroll { skole: string; enhet?: string | null; enhetNavn?: string | null; aar: number | null; maal: string; verdi: number | string | null; nevner?: string | null; kilde?: string | null; url?: string | null; side?: number | string | null; merknad?: string | null; vaar?: number | null; vaarAlt?: number | null; vaarNivaa?: string; avvikProsent?: number | null; traff?: 'hoved' | 'alt'; }
 interface Data { versjon: number; generert: string; aar: [number, number]; lister: Record<'ajg' | 'abdc' | 'ft50' | 'utd24', boolean> & { ajgA?: boolean }; skoler: Skole[]; kontroll?: Kontroll[]; ajgNhh?: AjgNhhMeta | null; }
 
-const PW_KEY = 'intern-opptak-pw'; // samme passord som den interne opptakssiden
+/** Eget nettsted med bare rangeringen (VITE_KUN_RANGERING=1) har egen datafil og eget passord (RANGERING_PASSORD). */
+const KUN_RANGERING = import.meta.env.VITE_KUN_RANGERING === '1';
+const PW_KEY = KUN_RANGERING ? 'rangering-pw' : 'intern-opptak-pw'; // ellers samme passord som den interne opptakssiden
+const DATAFIL = KUN_RANGERING ? 'rangering-data.json' : 'intern/rangering.json';
 const GRONN = 'var(--nmbu-green-dark)';
 const nf = (v: number | null | undefined, d = 1) => v == null || !Number.isFinite(v) ? '–' : v.toLocaleString('nb-NO', { minimumFractionDigits: d, maximumFractionDigits: d });
 const kort = { backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)' } as const;
@@ -40,7 +43,7 @@ const kort = { backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)
 // ── Dekryptering (WebCrypto), som i InternOpptak ─────────────────────────────
 const b64 = (s: string) => Uint8Array.from(atob(s), (c) => c.charCodeAt(0));
 async function dekrypter(pw: string): Promise<Data> {
-  const r = await fetch(`${import.meta.env.BASE_URL}intern/rangering.json`, { cache: 'no-store' });
+  const r = await fetch(`${import.meta.env.BASE_URL}${DATAFIL}`, { cache: 'no-store' });
   if (!r.ok || !(r.headers.get('content-type') ?? '').includes('json')) throw new Error('Fant ikke datafilen');
   const e = await r.json();
   const base = await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);

@@ -818,3 +818,6 @@ KI-chat og uten «Spør KI» (`utenKi` på `AfModulSide`). Grunnen er at metoden
   lenke `grunnlag=alle`). Byggeskriptet: komb-nøkkelen har femte felt v/x (NVI) og ft-feltet «fu» når begge lister;
   nye felt `rapport` og `toppKomb` per år, `topp` har `nvi` og opptil 600 artikler; ny liste `ft50gml` (2016).
   Standardrangering etter endringen: UiA 81, UiS 76, NHH 75, BI 72, NTNU 68, HH NMBU 51.
+- **04.10 – eget nettsted for rangeringen:** byggevariant `VITE_KUN_RANGERING=1` (`src/rangering-main.tsx`, ingen
+  public-mappe, utmappe `dist-rangering`, 2,9 MB) og egen kryptert datafil `public/rangering-data.json` med
+  `RANGERING_PASSORD`. Cloudflare-prosjekt `hh-rangering` settes opp av Mathias etter docs/publisering-cloudflare.md §5.

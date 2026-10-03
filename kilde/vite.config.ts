@@ -45,8 +45,36 @@ const fjernHhPdf = {
   },
 }
 
+// Bygg med bare rangeringen (VITE_KUN_RANGERING=1, Cloudflare-prosjektet «hh-rangering»): egen inngang
+// (src/rangering-main.tsx), egen tittel, ingen public-mappe (416 MB med alt annet) bortsett fra den krypterte
+// rangeringsfila, og egen utmappe (dist-rangering).
+const KUN_RANGERING = process.env.VITE_KUN_RANGERING === '1'
+let rangeringUt = 'dist-rangering'
+const kunRangering = {
+  name: 'kun-rangering',
+  configResolved(c: { root: string; build: { outDir: string } }) { rangeringUt = path.resolve(c.root, c.build.outDir) },
+  // order 'pre': inngangen må byttes før Vite leser skriptene i index.html
+  transformIndexHtml: { order: 'pre' as const, handler(html: string) {
+    if (!KUN_RANGERING) return html
+    return html
+      .replace('/src/main.tsx', '/src/rangering-main.tsx')
+      .replace(/<title>[^<]*<\/title>/, '<title>Norwegian Business School Ranking (utkast)</title>')
+      .replace(/(<meta name="description" content=")[^"]*/, '$1Utkast til rangering av norske handelshøyskoler: forskning, utdanning og anerkjennelse. Låst med passord.')
+      .replace(/(<meta property="og:title" content=")[^"]*/, '$1Norwegian Business School Ranking (utkast)')
+      .replace(/(<meta property="og:description" content=")[^"]*/, '$1Utkast til rangering av norske handelshøyskoler. Låst med passord.')
+  } },
+  closeBundle() {
+    if (!KUN_RANGERING) return
+    const kilde = path.resolve(__dirname, 'public', 'rangering-data.json')
+    if (fs.existsSync(rangeringUt) && fs.existsSync(kilde)) fs.copyFileSync(kilde, path.join(rangeringUt, 'rangering-data.json'))
+  },
+}
+
 export default defineConfig({
+  publicDir: KUN_RANGERING ? false : 'public',
+  build: KUN_RANGERING ? { outDir: 'dist-rangering' } : undefined,
   plugins: [
+    kunRangering,
     fjernHhPdf,
     figmaAssetResolver(),
     // The React and Tailwind plugins are both required for Make, even if
