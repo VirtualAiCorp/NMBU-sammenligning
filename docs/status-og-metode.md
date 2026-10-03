@@ -745,3 +745,5 @@ KI-chat og uten «Spør KI» (`utenKi` på `AfModulSide`). Grunnen er at metoden
   Handelshøyskolen. NTNU og INN har `kontrollUlikAvgrensning` i skoler.json, så eksterne tall på enhetsnivå for dem
   sammenlignes ikke (kontroll: 619 av 681 innen ±2 %).
 
+
+- **Inspirasjon (03.10):** `data/rangering/inspirasjon/` har fire notater fra Sonnet-agenter: kommersielle rangeringer (FT, QS, THE, Bloomberg, P&Q, Economist), forskningsrangeringer (UTD, Tilburg, RePEc, GRAS, Leiden, Handelsblatt/WiWo, nordiske nivåsystemer), interaktive verktøy (Multirank, CHE, Guardian, Discover Uni, NYT) og medier/partnerskap (CHE+ZEIT, WiWo, Guardian, DN-opplegg, Vær Varsom). Designkonsepter for forsiden: https://claude.ai/artifact/WQre63j67fhnaz9euf35Vq (privat).
