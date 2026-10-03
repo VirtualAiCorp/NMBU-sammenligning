@@ -1,7 +1,7 @@
 import { Fragment, useEffect, useMemo, useState, type ReactNode } from 'react';
 import '../../styles/skoleportrett.css';
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
-import { Lock, Info, Trophy, BookOpen, Building2, FileText, RotateCcw, ShieldCheck, ExternalLink, Columns3, FlaskConical, Link2, Check, Newspaper } from 'lucide-react';
+import { Lock, Info, Trophy, BookOpen, Building2, FileText, RotateCcw, ShieldCheck, ExternalLink, Columns3, FlaskConical, Link2, Check, Newspaper, ClipboardList } from 'lucide-react';
 
 /**
  * Utkast til «Norwegian Business School Ranking» (intern, utforskende). Data fra scripts/build-rangering.py:
@@ -12,9 +12,11 @@ import { Lock, Info, Trophy, BookOpen, Building2, FileText, RotateCcw, ShieldChe
  */
 
 // ── Datatyper (speiler build-rangering.py) ───────────────────────────────────
-interface DbhAar { arsverk: number | null; faglige: number | null; rekruttering: number | null; forsteAndel: number | null; studenter: number | null; publPoeng: number | null; publikasjoner: number | null; uff: number | null; utenStip?: number | null; poengPerUff: number | null; poengPerFaglig: number | null; niva2Andel: number | null; studenterPerFaglig: number | null; }
-interface ArtAar { n: number; nvi: number; intlAndel: number | null; forfatterandel: number | null; niva: Record<'0' | '1' | '2' | 'u', number>; ajg: Record<string, number> | null; abdc: Record<string, number>; ft50: number; utd24: number; /** «niva|abdc|ft|ajg» → [antall, sum forfatterandel] */ komb?: Record<string, [number, number]>; /** kalibrert AJG-anslag, NVI-artikler */ ajgA?: { topp: number; '3': number; nvi: number }; }
-interface Topp { aar: number; tittel: string | null; tidsskrift: string | null; ajg: string | null; abdc: string | null; ft50: boolean; utd24: boolean; niva: string; }
+interface DbhAar { arsverk: number | null; faglige: number | null; rekruttering: number | null; forsteAndel: number | null; studenter: number | null; publPoeng: number | null; publikasjoner: number | null; uff: number | null; utenStip?: number | null; poengPerUff: number | null; poengPerFaglig: number | null; niva2Andel: number | null; /** nivå 2 som andel av forfatterandelene (HK-dir, Tilstandsrapporten V15.3) */ niva2AndelFa?: number | null; /** nivå 2 som andel av publikasjonene (BIs variant) */ niva2AndelPubl?: number | null; studenterPerFaglig: number | null; }
+interface ArtAar { n: number; nvi: number; intlAndel: number | null; forfatterandel: number | null; niva: Record<'0' | '1' | '2' | 'u', number>; ajg: Record<string, number> | null; abdc: Record<string, number>; ft50: number; utd24: number; /** «niva|abdc|ft|ajg» → [antall, sum forfatterandel] */ komb?: Record<string, [number, number]>; /** kalibrert AJG-anslag, NVI-artikler */ ajgA?: { topp: number; '3': number; nvi: number };
+  /** «FUAJ|nivå|v/x» → [antall, sum forfatterandel]: hvilke lister som gir Topp (FT50, UTD24, ABDC A*, AJG 4/4*) */ toppKomb?: Record<string, [number, number]>;
+  /** Slik skolene rapporterer: hel telling, bare NVI-rapporterte artikler (samme grunnlag som HK-dir/DBH) */ rapport?: Record<string, number | boolean>; }
+interface Topp { aar: number; tittel: string | null; tidsskrift: string | null; ajg: string | null; abdc: string | null; ft50: boolean; utd24: boolean; niva: string; nvi?: boolean; }
 interface Siv { aar: number | null; grense: number | null; estimert: boolean; merknad: string | null; url: string | null; }
 interface Utd { studiebarometerResp?: number | null; entryIds?: string[]; aar: number; program: number; plasser: number | null; forstevalg: number | null; fvPerPlass: number | null; poenggrenseMaks: number | null; poenggrenseMin: number | null; studiebarometer: number | null; normertTid: number | null; normertKull: number | null; }
 interface Akk { navn?: string; type?: string; aar?: number | string | null; url?: string | null; [k: string]: unknown }
@@ -56,14 +58,23 @@ function sisteDbhAar(d: Data): number {
   return d.aar[1];
 }
 function artSum(s: Skole, aar: string[]) {
-  let n = 0, ft = 0, utd = 0, intl = 0, ajg34 = 0, ajgN = 0, abdcA = 0;
+  // Grunnlaget er NVI-rapporterte artikler (det HK-dir/DBH teller), hel telling, når byggeskriptet har levert det.
+  let n = 0, ft = 0, utd = 0, ftUtd = 0, intl = 0, ajg34 = 0, ajg4 = 0, ajgN = 0, abdcA = 0;
   for (const y of aar) {
     const a = s.artikler[y]; if (!a) continue;
-    n += a.n; ft += a.ft50; utd += a.utd24; intl += (a.intlAndel ?? 0) * a.n / 100;
-    if (a.ajg) { ajgN += a.n; ajg34 += (a.ajg['3'] ?? 0) + (a.ajg['4'] ?? 0) + (a.ajg['4*'] ?? 0); }
+    const r = a.rapport;
+    if (r) {
+      const g = (k: string) => Number(r[k] ?? 0);
+      n += g('nvi'); ft += g('ft50'); utd += g('utd24'); ftUtd += g('ftUtd'); intl += g('intl');
+      abdcA += g('abdcA*') + g('abdcA');
+      if (r.harAjg) { ajgN += g('nvi'); ajg34 += g('ajg3') + g('ajg4') + g('ajg4*'); ajg4 += g('ajg4') + g('ajg4*'); }
+      continue;
+    }
+    n += a.n; ft += a.ft50; utd += a.utd24; ftUtd += Math.max(a.ft50, a.utd24); intl += (a.intlAndel ?? 0) * a.n / 100;
+    if (a.ajg) { ajgN += a.n; ajg34 += (a.ajg['3'] ?? 0) + (a.ajg['4'] ?? 0) + (a.ajg['4*'] ?? 0); ajg4 += (a.ajg['4'] ?? 0) + (a.ajg['4*'] ?? 0); }
     abdcA += (a.abdc['A*'] ?? 0) + (a.abdc['A'] ?? 0);
   }
-  return { n, ft, utd, intl, ajg34, ajgN, abdcA };
+  return { n, ft, utd, ftUtd, intl, ajg34, ajg4, ajgN, abdcA };
 }
 
 // ── Lagdelt forskningsmål («høyeste nivå teller») ───────────────────────────
@@ -79,8 +90,8 @@ const TRINN_FORKLARING: Record<Exclude<Trinn, 'null'>, string> = {
 };
 const TRINN_FARGE: Record<Exclude<Trinn, 'null'>, string> = { basis: '#9FCFC2', hoy: '#3F8E7B', topp: '#014238' };
 const RANG: Record<Trinn, number> = { null: 0, basis: 1, hoy: 2, topp: 3 };
-interface Lag { fra: number; til: number; brok: boolean; /** uff = UN1 + UN2 (HK-dir); utenStip = UN1 + postdoktorer (NHH) */ nevner: 'uff' | 'utenStip'; vekter: Record<'basis' | 'hoy' | 'topp', number>; abdc: boolean; ft: boolean; ajg: boolean; }
-const lagStandard = (y1: number): Lag => ({ fra: y1 - 4, til: y1, brok: true, nevner: 'uff', vekter: { basis: 1, hoy: 3, topp: 5 }, abdc: true, ft: true, ajg: true });
+interface Lag { fra: number; til: number; brok: boolean; /** uff = UN1 + UN2 (HK-dir); utenStip = UN1 + postdoktorer (NHH) */ nevner: 'uff' | 'utenStip'; vekter: Record<'basis' | 'hoy' | 'topp', number>; abdc: boolean; ft: boolean; ajg: boolean; /** bare NVI-rapporterte artikler (HK-dirs grunnlag) */ kunNvi: boolean; }
+const lagStandard = (y1: number): Lag => ({ fra: y1 - 4, til: y1, brok: true, nevner: 'uff', vekter: { basis: 1, hoy: 3, topp: 5 }, abdc: true, ft: true, ajg: true, kunNvi: true });
 
 function trinnFor(nokkel: string, lag: Lag): { t: Trinn; loftet: boolean } {
   const [niva, abdc, ft, ajg] = nokkel.split('|');
@@ -102,6 +113,7 @@ function lagResultat(s: Skole, lag: Lag, harAjg: boolean): LagRes {
   const aar = aarRekke(lag.fra, lag.til);
   for (const y of aar) {
     for (const [nk, [n, frac]] of Object.entries(s.artikler[y]?.komb ?? {})) {
+      if (lag.kunNvi && nk.split('|')[4] === 'x') continue;
       const { t, loftet: l } = trinnFor(nk, lag);
       const tell = lag.brok ? frac : n;
       per[t] += tell; artikler += n; andeler += frac;
@@ -136,8 +148,8 @@ function lagIndikatorer(d: Data, lag: Lag): Ind[] {
       fmt: (v) => nf(v, 2), verdi: (s) => snitt(tre.map((y) => s.dbh[y]?.poengPerUff)) },
     { id: 'lag', label: 'Lagdelt forskning per årsverk', dim: 'Forskning', vekt: 25, desc: `Artikler ${vindu} vektet etter høyeste nivå (norsk nivå, ABDC, FT50/UTD24${harAjg ? ', AJG' : ''}), ${lag.brok ? 'brøkdelt per forfatter (1/n)' : 'hel telling'}, per årsverk (${lag.nevner === 'uff' ? 'UN1 + stipendiater og postdoktorer, som HK-dir' : 'UN1 + postdoktorer, uten stipendiater, som NHH'}; snitt over perioden). Vekter basis ${lag.vekter.basis}, høy ${lag.vekter.hoy}, topp ${lag.vekter.topp}. Innstillingene endres i Forskningslab. NVA × lister.`,
       fmt: (v) => nf(v, 2), verdi: (s) => lagResultat(s, lag, harAjg).perArsverk },
-    { id: 'niva2', label: 'Andel nivå 2', dim: 'Forskning', vekt: 5, desc: `Andel av publiseringspoengene på nivå 2, snitt ${tre[0]}–${y1}. DBH 374. Inngår også i det lagdelte målet.`,
-      fmt: (v) => nf(v, 0) + ' %', verdi: (s) => snitt(tre.map((y) => s.dbh[y]?.niva2Andel)) },
+    { id: 'niva2', label: 'Andel nivå 2 (HK-dir)', dim: 'Forskning', vekt: 5, desc: `Andel av forfatterandelene på nivå 2, slik HK-dir regner i Tilstandsrapporten (V15.3), snitt ${tre[0]}–${y1}. DBH 374. NHH oppgir andel av poengene og BI andel av publikasjonene; begge vises i «Slik rapporterer skolene». Inngår også i det lagdelte målet.`,
+      fmt: (v) => nf(v, 0) + ' %', verdi: (s) => snitt(tre.map((y) => s.dbh[y]?.niva2AndelFa ?? null)) },
     harAjg
       ? { id: 'ajg34', label: 'Andel AJG 3–4*', dim: 'Forskning', vekt: 0, desc: `Andel av artiklene ${fem[0]}–${y1} i tidsskrift på AJG 2024 nivå 3, 4 eller 4*. NVA × AJG. Inngår i det lagdelte målet, derfor vekt 0 som standard.`,
           fmt: (v) => nf(v, 0) + ' %', verdi: (s) => { const a = artSum(s, fem); return a.ajgN ? 100 * a.ajg34 / a.ajgN : null; } }
@@ -145,16 +157,16 @@ function lagIndikatorer(d: Data, lag: Lag): Ind[] {
           fmt: (v) => nf(v, 0) + ' %', verdi: (s) => { const a = artSum(s, fem); return a.n ? 100 * a.abdcA / a.n : null; } },
     harAjg
       ? { id: 'ajg4', label: 'AJG 4/4* per 100 årsverk', dim: 'Forskning', vekt: 10, desc: `Artikler ${fem[0]}–${y1} i tidsskrift på AJG 2024 nivå 4 eller 4* per 100 årsverk (UN1 + UN2, snitt). NVA × AJG, alle skoler.`,
-          fmt: (v) => nf(v, 1), verdi: (s) => { const n = fem.reduce((a, y) => a + ((s.artikler[y]?.ajg?.['4'] ?? 0) + (s.artikler[y]?.ajg?.['4*'] ?? 0)), 0); const uff = snitt(fem.map((y) => s.dbh[y]?.uff)); return uff ? 100 * n / uff : null; } }
+          fmt: (v) => nf(v, 1), verdi: (s) => { const n = artSum(s, fem).ajg4; const uff = snitt(fem.map((y) => s.dbh[y]?.uff)); return uff ? 100 * n / uff : null; } }
       : d.lister.ajgA
       ? { id: 'ajgA', label: 'AJG 4/4*-anslag per 100 årsverk', dim: 'Forskning', vekt: 5, desc: `Anslått antall artikler ${fem[0]}–${y1} på AJG-nivå 4/4* per 100 årsverk (UN1 + UN2, snitt), alle 15 skoler. Anslaget bygger bare på åpne lister (FT50/UTD24, eller ABDC A* med OpenAlex-sitering ≥ 5) og er kalibrert mot NHH-rapportens AJG-tall (r = 0,98 per skole og år). Det er ikke AJG-nivåer.`,
           fmt: (v) => nf(v, 1), verdi: (s) => { const n = fem.reduce((a, y) => a + (s.artikler[y]?.ajgA?.topp ?? 0), 0); const uff = snitt(fem.map((y) => s.dbh[y]?.uff)); return uff ? 100 * n / uff : null; } }
       : null,
     { id: 'ajgNhh', label: 'AJG 4/4* per årsverk (NHH-rapporten)', dim: 'Forskning', vekt: d.lister.ajgA ? 0 : 10, desc: 'Artikler på AJG 2024 nivå 4 og 4* per årsverk (uten stipendiater), snitt 2022–2024. NHH Research Report 2024, tabell 4 og 5: bare åtte skoler (NHH, BI, NMBU, Nord, NTNU, UiA, UiS, UiT); for de andre fordeles vekten på de andre målene.',
           fmt: (v) => nf(v, 2), verdi: (s) => s.ajgNhh ? snitt(['2022', '2023', '2024'].map((y) => { const a = s.ajgNhh?.[y]; return a ? (a['4*']?.perFte ?? 0) + (a['4']?.perFte ?? 0) : null; })) : null },
-    { id: 'ft50', label: 'FT50/UTD24 per 100 årsverk', dim: 'Forskning', vekt: 5, desc: `Artikler ${fem[0]}–${y1} i FT50 eller UTD24 per 100 UFF-årsverk (snitt). Én artikkel i begge lister telles én gang i FT50.`,
-      fmt: (v) => nf(v, 1), verdi: (s) => { const a = artSum(s, fem); const uff = snitt(fem.map((y) => s.dbh[y]?.uff)); return uff ? 100 * Math.max(a.ft, a.utd) / uff : null; } },
-    { id: 'intl', label: 'Internasjonal sampublisering', dim: 'Forskning', vekt: 5, desc: `Andel artikler ${fem[0]}–${y1} med minst én utenlandsk medforfatter. NVA.`,
+    { id: 'ft50', label: 'FT50/UTD24 per 100 årsverk', dim: 'Forskning', vekt: 5, desc: `Artikler ${fem[0]}–${y1} i FT50 eller UTD24 per 100 UFF-årsverk (snitt). Én artikkel i begge lister telles én gang. Bare NVI-rapporterte artikler, hel telling.`,
+      fmt: (v) => nf(v, 1), verdi: (s) => { const a = artSum(s, fem); const uff = snitt(fem.map((y) => s.dbh[y]?.uff)); return uff ? 100 * a.ftUtd / uff : null; } },
+    { id: 'intl', label: 'Internasjonal sampublisering', dim: 'Forskning', vekt: 5, desc: `Andel NVI-rapporterte artikler ${fem[0]}–${y1} med minst én utenlandsk medforfatter. NVA.`,
       fmt: (v) => nf(v, 0) + ' %', verdi: (s) => { const a = artSum(s, fem); return a.n ? 100 * a.intl / a.n : null; } },
     { id: 'siv', label: 'Opptaksgrense siviløkonom', dim: 'Utdanning', vekt: 7, desc: 'Inntaksgrense til toårig master i økonomi og administrasjon (siviløkonom), karaktersnitt fra bachelor (A = 5 … E = 1), siste lokale opptak. Fra HH-oversikten (MASTER_ADMISSION); Kristiania er anslått. HVL, HiMolde og HiØ mangler, og da fordeles vekten på de andre målene.',
       fmt: (v) => nf(v, 2), verdi: (s) => s.utdanning.siv?.grense ?? null },
@@ -226,10 +238,10 @@ function beregn(skoler: Skole[], ind: Ind[], vekt: Record<string, number>, forsk
 }
 
 // ── Tilstand i lenken (?rangering&…) ────────────────────────────────────────
-type Fane = 'forside' | 'rangering' | 'sammenlign' | 'lab' | 'publisering' | 'profil' | 'kontroll' | 'metode';
-const FANER: Fane[] = ['forside', 'rangering', 'sammenlign', 'lab', 'publisering', 'profil', 'kontroll', 'metode'];
+type Fane = 'forside' | 'rangering' | 'sammenlign' | 'lab' | 'publisering' | 'rapport' | 'profil' | 'kontroll' | 'metode';
+const FANER: Fane[] = ['forside', 'rangering', 'sammenlign', 'lab', 'publisering', 'rapport', 'profil', 'kontroll', 'metode'];
 interface Tilstand { fane: Fane; forsk: number; vekt: Record<string, number>; medRef: boolean; lag: Lag; valgt: string[]; profil: string; /** sammenligning i skoleportrettet */ mot: string | null; }
-const PARAM = ['rangering', 'fane', 'forsk', 'vekt', 'ref', 'periode', 'telling', 'nevner', 'lagvekt', 'lister', 'skoler', 'profil', 'mot'];
+const PARAM = ['rangering', 'fane', 'forsk', 'vekt', 'ref', 'periode', 'telling', 'nevner', 'lagvekt', 'lister', 'grunnlag', 'skoler', 'profil', 'mot'];
 function lesTilstand(d: Data, ind: Ind[], std: Tilstand): Tilstand {
   const q = new URLSearchParams(window.location.search);
   if (!q.has('rangering')) return std;
@@ -241,6 +253,7 @@ function lesTilstand(d: Data, ind: Ind[], std: Tilstand): Tilstand {
   const per = (q.get('periode') ?? '').split('-').map(Number); if (per.length === 2 && per.every((x) => x >= d.aar[0] && x <= d.aar[1]) && per[0] <= per[1]) { t.lag.fra = per[0]; t.lag.til = per[1]; }
   if (q.get('telling') === 'hel') t.lag.brok = false;
   if (q.get('nevner') === 'utenstip') t.lag.nevner = 'utenStip';
+  if (q.get('grunnlag') === 'alle') t.lag.kunNvi = false;
   const lv = (q.get('lagvekt') ?? '').split('-').map(Number); if (lv.length === 3 && lv.every((x) => Number.isFinite(x) && x >= 0 && x <= 10)) t.lag.vekter = { basis: lv[0], hoy: lv[1], topp: lv[2] };
   if (q.has('lister')) { const l = (q.get('lister') ?? '').split(','); t.lag.abdc = l.includes('abdc'); t.lag.ft = l.includes('ft'); t.lag.ajg = l.includes('ajg'); }
   const sk = (q.get('skoler') ?? '').split(',').filter((id) => d.skoler.some((s) => s.id === id)); if (sk.length) t.valgt = sk.slice(0, 3);
@@ -260,6 +273,7 @@ function skrivTilstand(t: Tilstand, std: Tilstand) {
   if (t.lag.fra !== std.lag.fra || t.lag.til !== std.lag.til) q.set('periode', `${t.lag.fra}-${t.lag.til}`);
   if (!t.lag.brok) q.set('telling', 'hel');
   if (t.lag.nevner === 'utenStip') q.set('nevner', 'utenstip');
+  if (!t.lag.kunNvi) q.set('grunnlag', 'alle');
   const lv = t.lag.vekter, sv = std.lag.vekter;
   if (lv.basis !== sv.basis || lv.hoy !== sv.hoy || lv.topp !== sv.topp) q.set('lagvekt', `${lv.basis}-${lv.hoy}-${lv.topp}`);
   if (!t.lag.abdc || !t.lag.ft || !t.lag.ajg) q.set('lister', [t.lag.abdc && 'abdc', t.lag.ft && 'ft', t.lag.ajg && 'ajg'].filter(Boolean).join(','));
@@ -345,6 +359,7 @@ function Rangering({ data }: { data: Data }) {
     { id: 'sammenlign', label: 'Sammenlign', icon: <Columns3 className="w-4 h-4" /> },
     { id: 'lab', label: 'Forskningslab', icon: <FlaskConical className="w-4 h-4" /> },
     { id: 'publisering', label: 'Publisering', icon: <BookOpen className="w-4 h-4" /> },
+    { id: 'rapport', label: 'Slik rapporterer skolene', icon: <ClipboardList className="w-4 h-4" /> },
     { id: 'profil', label: 'Skoleportrett', icon: <Building2 className="w-4 h-4" /> },
     { id: 'kontroll', label: 'Kvalitetssikring', icon: <ShieldCheck className="w-4 h-4" /> },
     { id: 'metode', label: 'Metode og kilder', icon: <FileText className="w-4 h-4" /> },
@@ -375,6 +390,7 @@ function Rangering({ data }: { data: Data }) {
       {t.fane === 'sammenlign' && <Sammenlign data={data} ind={ind} rader={rader} eff={eff} t={t} sett={sett} />}
       {t.fane === 'lab' && <Forskningslab data={data} skoler={skoler} lag={t.lag} std={std.lag} setLag={(lag) => sett({ lag })} />}
       {t.fane === 'publisering' && <Publisering data={data} />}
+      {t.fane === 'rapport' && <SlikRapporterer data={data} lag={t.lag} />}
       {t.fane === 'profil' && <Skoleportrett data={data} rader={rader} ind={ind} eff={eff} id={t.profil} setId={(id) => sett({ profil: id, mot: t.mot === id ? null : t.mot })} mot={t.mot} setMot={(id) => sett({ mot: id })} />}
       {t.fane === 'kontroll' && <KontrollFane data={data} />}
       {t.fane === 'metode' && <Metode data={data} ind={ind} />}
@@ -655,6 +671,11 @@ function Forskningslab({ data, skoler, lag, std, setLag }: { data: Data; skoler:
               <button onClick={() => setLag({ ...lag, brok: true })} className="px-3 py-1 rounded-md" style={knappStil(lag.brok)} title="Hver artikkel teller med enhetens andel av forfatterne (1/n per forfatter)">Brøk (1/n)</button>
               <button onClick={() => setLag({ ...lag, brok: false })} className="px-3 py-1 rounded-md" style={knappStil(!lag.brok)} title="Hver artikkel teller 1 for hver enhet med minst én forfatter">Hel</button>
             </div>
+            <div style={{ fontWeight: 700, color: 'var(--nmbu-neutral-2)', margin: '12px 0 6px' }}>ARTIKLER</div>
+            <div className="flex gap-1">
+              <button onClick={() => setLag({ ...lag, kunNvi: true })} className="px-3 py-1 rounded-md" style={knappStil(lag.kunNvi)} title="Bare artikler rapportert til NVI, det samme grunnlaget som HK-dir og DBH teller (standard)">NVI-rapportert (HK-dir)</button>
+              <button onClick={() => setLag({ ...lag, kunNvi: false })} className="px-3 py-1 rounded-md" style={knappStil(!lag.kunNvi)} title="Alle vitenskapelige artikler i NVA, også de som ikke er rapportert til NVI">Alle i NVA</button>
+            </div>
           </div>
           <div className="text-xs" style={{ color: 'var(--nmbu-neutral-1)' }}>
             <div style={{ fontWeight: 700, color: 'var(--nmbu-neutral-2)', marginBottom: 6 }}>VEKT PER TRINN</div>
@@ -742,7 +763,7 @@ function Publisering({ data }: { data: Data }) {
     const hh = data.skoler.find((s) => s.isNmbu)?.id; const pref = ['nhh', 'bi', 'uia', 'uis'];
     return [hh, ...data.skoler.filter((s) => pref.includes(s.id)).map((s) => s.id)].filter((x): x is string => !!x).slice(0, 6);
   });
-  const [maal, setMaal] = useState<'poengPerUff' | 'niva2Andel' | 'publPoeng'>('poengPerUff');
+  const [maal, setMaal] = useState<'poengPerUff' | 'niva2AndelFa' | 'publPoeng'>('poengPerUff');
   const [liste, setListe] = useState<'ajg' | 'abdc'>(data.lister.ajg ? 'ajg' : 'abdc');
   const [periode, setPeriode] = useState<'1' | '5'>('5');
   const aar = aarRekke(data.aar[0], y1);
@@ -756,7 +777,7 @@ function Publisering({ data }: { data: Data }) {
     for (const y of perAar) { const a = s.artikler[y]; const L = a?.[liste]; if (!L) continue; for (const [k, v] of Object.entries(L)) { t[k] = (t[k] ?? 0) + v; n += v; } }
     return { navn: s.kort, isNmbu: s.isNmbu, n, ...Object.fromEntries(nivaer.map((k) => [k, n ? 100 * (t[k] ?? 0) / n : 0])) };
   }).filter((r) => r.n > 0).sort((a, b) => (b as Record<string, number>)[nivaer[nivaer.length - 1]] + (b as Record<string, number>)[nivaer[nivaer.length - 2]] - ((a as Record<string, number>)[nivaer[nivaer.length - 1]] + (a as Record<string, number>)[nivaer[nivaer.length - 2]]));
-  const MAAL = { poengPerUff: 'Poeng per faglig årsverk (UFF)', niva2Andel: 'Andel nivå 2 (%)', publPoeng: 'Publiseringspoeng' } as const;
+  const MAAL = { poengPerUff: 'Poeng per faglig årsverk (UFF)', niva2AndelFa: 'Andel nivå 2, HK-dir (% av forfatterandelene)', publPoeng: 'Publiseringspoeng' } as const;
   return (
     <div className="grid gap-5">
       <AjgKort data={data} />
@@ -809,6 +830,313 @@ function Publisering({ data }: { data: Data }) {
         <p className="text-xs mt-2" style={{ color: 'var(--nmbu-neutral-2)' }}>
           Alle vitenskapelige artikler i NVA der minst én forfatter er tilknyttet enheten, koblet på ISSN. Sortert etter andel på de to høyeste nivåene.
         </p>
+      </div>
+    </div>
+  );
+}
+
+// ── Fane: slik rapporterer skolene ───────────────────────────────────────────
+// Felles grunnlag er HK-dir: DBH 373/374/225 og bare artikler rapportert til NVI (de samme publikasjonene som ligger bak
+// HK-dirs tall). Artiklene telles hele, slik skolene gjør i årsrapporter og nyhetssaker. Skolenes egne varianter
+// (nevner uten stipendiater, nivå 2 som andel av poeng eller publikasjoner, FT50 2016) vises ved siden av og er merket.
+const LISTE_NAVN: Record<string, string> = { F: 'FT50', U: 'UTD24', A: 'ABDC A*', J: 'AJG 4/4*' };
+const KOMBO_FARGER = ['#014238', '#2E7D6B', '#5FA996', '#9FCFC2', '#C2671E', '#E3A869', '#7A4FA0', '#B9A3CF'];
+const komboNavn = (k: string) => k.split('').filter((c) => c !== '-').map((c) => LISTE_NAVN[c]).join(' + ');
+function SlikRapporterer({ data, lag }: { data: Data; lag: Lag }) {
+  const y1 = sisteDbhAar(data);
+  const harAjg = data.lister.ajg;
+  const [aar, setAar] = useState<string>(String(y1));
+  const [nevner, setNevner] = useState<'uff' | 'utenStip'>('uff');
+  const [per100, setPer100] = useState(false);
+  const [ftVer, setFtVer] = useState<'2026' | '2016'>('2026');
+  const [medRef, setMedRef] = useState(false);
+  const [skoleId, setSkoleId] = useState<string>(() => data.skoler.find((s) => s.isNmbu)?.id ?? data.skoler[0].id);
+  const aarListe = aar === 'fem' ? aarRekke(y1 - 4, y1) : [aar];
+  const periodeTekst = aar === 'fem' ? `${y1 - 4}–${y1}` : aar;
+  const skoler = data.skoler.filter((s) => medRef || !s.referanse);
+  const sel = { border: '1px solid var(--nmbu-neutral-3)', borderRadius: 8, padding: '3px 6px', fontSize: 12, backgroundColor: '#fff' } as const;
+  const thS = { color: 'var(--nmbu-neutral-2)', fontWeight: 600, fontSize: 11 } as const;
+  const hk = { backgroundColor: 'rgba(2,92,79,0.07)' } as const; // markerer HK-dirs definisjon
+  const sum = (xs: (number | null | undefined)[]) => { const v = xs.filter((x): x is number => x != null); return v.length ? v.reduce((a, b) => a + b, 0) : null; };
+
+  // ── Tabell 1: DBH/HK-dir ──
+  const t1 = skoler.map((s) => {
+    const d = aarListe.map((y) => s.dbh[y]);
+    const poeng = sum(d.map((x) => x?.publPoeng)), publ = sum(d.map((x) => x?.publikasjoner));
+    const arsv = sum(d.map((x) => nevner === 'uff' ? x?.uff : x?.utenStip));
+    return { s, poeng, publ, arsvSnitt: arsv != null ? arsv / aarListe.length : null, perArsverk: poeng != null && arsv ? poeng / arsv : null,
+      fa: snitt(d.map((x) => x?.niva2AndelFa)), poengAndel: snitt(d.map((x) => x?.niva2Andel)), publAndel: snitt(d.map((x) => x?.niva2AndelPubl)) };
+  }).sort((a, b) => (b.perArsverk ?? -1) - (a.perArsverk ?? -1));
+
+  // ── Tabell 2: artikler i listetidsskrift, hel telling, NVI ──
+  const t2 = skoler.map((s) => {
+    const g = (k: string) => aarListe.reduce((a, y) => a + Number(s.artikler[y]?.rapport?.[k] ?? 0), 0);
+    const arsv = sum(aarListe.map((y) => nevner === 'uff' ? s.dbh[y]?.uff : s.dbh[y]?.utenStip));
+    const nhh = (niva: '4*' | '4' | '3') => { const xs = aarListe.map((y) => s.ajgNhh?.[y]?.[niva]?.n); return xs.every((x) => x != null) ? xs.reduce((a, b) => (a ?? 0) + (b ?? 0), 0) : null; };
+    const ft = ftVer === '2026' ? g('ft50') : g('ft50gml');
+    return { s, arsv, nvi: g('nvi'), ft, utd: g('utd24'), ftUtd: g('ftUtd'), aS: g('abdcA*'), a: g('abdcA'),
+      j4s: g('ajg4*'), j4: g('ajg4'), j3: g('ajg3'), anT: g('ajgAtopp'), an3: g('ajgA3'), intl: g('intl'),
+      nhh4s: nhh('4*'), nhh4: nhh('4'), nhh3: nhh('3') };
+  }).sort((a, b) => (b.ftUtd + b.aS) - (a.ftUtd + a.aS));
+  const vis = (n: number | null, arsv: number | null) => n == null ? '–' : per100 ? (arsv ? nf(100 * n / arsv, 1) : '–') : nf(n, 0);
+
+  // ── Topp-trinnet: hvilke lister gir det? ──
+  const kombo = skoler.map((s) => {
+    const k: Record<string, number> = {}; let niva2 = 0, niva1 = 0, ellers = 0;
+    for (const y of aarListe) for (const [nk, [n]] of Object.entries(s.artikler[y]?.toppKomb ?? {})) {
+      const [fl, niva, v] = nk.split('|'); if (v !== 'v') continue;
+      k[fl] = (k[fl] ?? 0) + n;
+      if (niva === '2') niva2 += n; else if (niva === '1') niva1 += n; else ellers += n;
+    }
+    const total = Object.values(k).reduce((a, b) => a + b, 0);
+    const nvi = aarListe.reduce((a, y) => a + Number(s.artikler[y]?.rapport?.nvi ?? 0), 0);
+    return { s, k, total, niva2, niva1, ellers, nvi };
+  }).sort((a, b) => b.total - a.total);
+  const alleKombo = Object.entries(kombo.reduce((acc, r) => { for (const [k, v] of Object.entries(r.k)) acc[k] = (acc[k] ?? 0) + v; return acc; }, {} as Record<string, number>)).sort((a, b) => b[1] - a[1]);
+  const farge = (k: string) => KOMBO_FARGER[alleKombo.findIndex(([x]) => x === k) % KOMBO_FARGER.length];
+  const iAlt = { total: kombo.reduce((a, r) => a + r.total, 0), niva2: kombo.reduce((a, r) => a + r.niva2, 0), niva1: kombo.reduce((a, r) => a + r.niva1, 0) };
+  const perListe = (['F', 'U', 'A', 'J'] as const).map((c) => ({ c, n: alleKombo.filter(([k]) => k.includes(c)).reduce((a, [, v]) => a + v, 0), alene: alleKombo.filter(([k]) => k.replace(/-/g, '') === c).reduce((a, [, v]) => a + v, 0) }));
+  const aktiv = (c: string) => (c === 'A' ? lag.abdc : c === 'J' ? lag.ajg && harAjg : lag.ft);
+
+  // ── Tidsskriftene bak Topp for én skole ──
+  const valgt = data.skoler.find((s) => s.id === skoleId);
+  const tidsskrift = (() => {
+    const m = new Map<string, { n: number; ft50: boolean; utd24: boolean; abdc: string | null; ajg: string | null; niva: Set<string> }>();
+    for (const t of valgt?.topp ?? []) {
+      if (!aarListe.includes(String(t.aar)) || t.nvi === false) continue;
+      const key = t.tidsskrift ?? '(ukjent)';
+      const x = m.get(key) ?? { n: 0, ft50: t.ft50, utd24: t.utd24, abdc: t.abdc, ajg: t.ajg, niva: new Set<string>() };
+      x.n++; x.niva.add(t.niva); m.set(key, x);
+    }
+    return [...m.entries()].sort((a, b) => b[1].n - a[1].n);
+  })();
+  const ja = (b: boolean) => b ? <span style={{ color: GRONN, fontWeight: 700 }}>●</span> : <span style={{ color: 'var(--nmbu-neutral-3)' }}>·</span>;
+
+  return (
+    <div className="grid gap-5">
+      <div className="rounded-2xl p-5" style={kort}>
+        <div style={{ fontSize: 14, fontWeight: 600, color: GRONN }}>Slik rapporterer skolene, på HK-dirs felles grunnlag</div>
+        <p className="text-xs mt-2" style={{ color: 'var(--nmbu-neutral-1)', maxWidth: '80ch', lineHeight: 1.55 }}>
+          Alle tall i denne fanen bygger på det HK-dir publiserer: publiseringspoeng og publikasjoner (DBH 373), nivå 2 (DBH 374) og årsverk (DBH 225).
+          Artikkeltellingene bruker bare artikler som er rapportert til NVI, altså de samme publikasjonene som ligger bak HK-dirs tall, og hver artikkel telles hel,
+          slik skolene gjør i årsrapporter og nyhetssaker. Der skolene bruker en annen definisjon, vises den ved siden av og er merket med hvem som bruker den.
+          Kolonnene med grønn bakgrunn følger HK-dir og er de som brukes i rangeringen.
+        </p>
+        <div className="flex flex-wrap items-center gap-x-6 gap-y-3 mt-4 text-xs" style={{ color: 'var(--nmbu-neutral-1)' }}>
+          <label className="flex items-center gap-2"><span style={{ fontWeight: 700, color: 'var(--nmbu-neutral-2)' }}>ÅR</span>
+            <select value={aar} onChange={(e) => setAar(e.target.value)} style={sel}>
+              <option value="fem">Fem år, {y1 - 4}–{y1}</option>
+              {aarRekke(data.aar[0], y1).reverse().map((y) => <option key={y} value={y}>{y}</option>)}
+            </select>
+          </label>
+          <div className="flex items-center gap-1"><span style={{ fontWeight: 700, color: 'var(--nmbu-neutral-2)', marginRight: 4 }}>ÅRSVERK</span>
+            <button onClick={() => setNevner('uff')} className="px-3 py-1 rounded-md" style={knappStil(nevner === 'uff')} title="UN1 + stipendiater og postdoktorer (UN2), som HK-dirs tilstandsrapport">HK-dir (med stipendiater)</button>
+            <button onClick={() => setNevner('utenStip')} className="px-3 py-1 rounded-md" style={knappStil(nevner === 'utenStip')} title="UN1 + postdoktorer, uten stipendiater, som NHHs forskningsrapport">NHH (uten stipendiater)</button>
+          </div>
+          <div className="flex items-center gap-1"><span style={{ fontWeight: 700, color: 'var(--nmbu-neutral-2)', marginRight: 4 }}>ARTIKLER</span>
+            <button onClick={() => setPer100(false)} className="px-3 py-1 rounded-md" style={knappStil(!per100)}>Antall</button>
+            <button onClick={() => setPer100(true)} className="px-3 py-1 rounded-md" style={knappStil(per100)}>Per 100 årsverk</button>
+          </div>
+          <div className="flex items-center gap-1"><span style={{ fontWeight: 700, color: 'var(--nmbu-neutral-2)', marginRight: 4 }}>FT50</span>
+            <button onClick={() => setFtVer('2026')} className="px-3 py-1 rounded-md" style={knappStil(ftVer === '2026')} title="Gjeldende liste, revidert april 2026">2026-lista</button>
+            <button onClick={() => setFtVer('2016')} className="px-3 py-1 rounded-md" style={knappStil(ftVer === '2016')} title="Lista fra 2016, som BI og FT-rangeringene har brukt for publikasjoner til og med 2025">2016-lista (BI)</button>
+          </div>
+          <label className="flex items-center gap-1.5"><input type="checkbox" checked={medRef} onChange={(e) => setMedRef(e.target.checked)} /> Vis UiB og UiO (referanse)</label>
+        </div>
+      </div>
+
+      <div className="rounded-2xl p-5 overflow-x-auto" style={kort}>
+        <div style={{ fontSize: 14, fontWeight: 600, color: GRONN }}>Publiseringspoeng og nivå 2, {periodeTekst}</div>
+        <p className="text-xs mb-3" style={{ color: 'var(--nmbu-neutral-2)' }}>DBH/HK-dir. {aar === 'fem' ? 'Poeng og publikasjoner er summert, årsverk er snitt, poeng per årsverk er sum poeng delt på sum årsverk, og nivå 2-andelene er snitt av årene.' : ''} Sortert etter poeng per årsverk.</p>
+        <table className="w-full text-sm" style={{ borderCollapse: 'collapse', minWidth: 900 }}>
+          <thead>
+            <tr style={{ borderBottom: '1px solid var(--nmbu-neutral-3)' }}>
+              <th colSpan={5} />
+              <th colSpan={3} className="px-2 pt-2 text-center" style={thS}>Andel nivå 2: samme tall, tre definisjoner</th>
+            </tr>
+            <tr style={{ backgroundColor: 'var(--nmbu-beige-light)', borderBottom: '2px solid var(--nmbu-neutral-3)' }}>
+              <th className="px-2 py-2 text-left" style={thS}>Skole</th>
+              <th className="px-2 py-2 text-right" style={thS}>Poeng</th>
+              <th className="px-2 py-2 text-right" style={thS}>Publikasjoner</th>
+              <th className="px-2 py-2 text-right" style={thS} title={nevner === 'uff' ? 'UN1 + UN2' : 'UN1 + postdoktorer'}>Årsverk ({nevner === 'uff' ? 'HK-dir' : 'NHH'})</th>
+              <th className="px-2 py-2 text-right" style={{ ...thS, ...(nevner === 'uff' ? hk : {}) }}>Poeng per årsverk</th>
+              <th className="px-2 py-2 text-right" style={{ ...thS, ...hk }} title="Tilstandsrapporten V15.3. Brukes i rangeringen.">Av forfatterandelene<div style={{ fontWeight: 400 }}>HK-dir · brukes</div></th>
+              <th className="px-2 py-2 text-right" style={thS} title="NHH Research Report">Av poengene<div style={{ fontWeight: 400 }}>NHH</div></th>
+              <th className="px-2 py-2 text-right" style={thS} title="BIs nyhetssaker og årsrapport, UiA, NMBU, Kristiania">Av publikasjonene<div style={{ fontWeight: 400 }}>BI m.fl.</div></th>
+            </tr>
+          </thead>
+          <tbody>
+            {t1.map((r) => (
+              <tr key={r.s.id} style={{ borderBottom: '1px solid var(--nmbu-beige-light)', fontWeight: r.s.isNmbu ? 600 : 400 }}>
+                <td className="px-2 py-1.5">{r.s.kort}{r.s.referanse && <span className="text-xs" style={{ color: 'var(--nmbu-neutral-2)' }}> (ref.)</span>}</td>
+                <td className="px-2 py-1.5 text-right tabular-nums">{nf(r.poeng, 1)}</td>
+                <td className="px-2 py-1.5 text-right tabular-nums">{nf(r.publ, 0)}</td>
+                <td className="px-2 py-1.5 text-right tabular-nums">{nf(r.arsvSnitt, 1)}</td>
+                <td className="px-2 py-1.5 text-right tabular-nums" style={nevner === 'uff' ? hk : undefined}>{nf(r.perArsverk, 2)}</td>
+                <td className="px-2 py-1.5 text-right tabular-nums" style={hk}>{r.fa == null ? '–' : nf(r.fa, 1) + ' %'}</td>
+                <td className="px-2 py-1.5 text-right tabular-nums">{r.poengAndel == null ? '–' : nf(r.poengAndel, 1) + ' %'}</td>
+                <td className="px-2 py-1.5 text-right tabular-nums">{r.publAndel == null ? '–' : nf(r.publAndel, 1) + ' %'}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <p className="text-xs mt-2" style={{ color: 'var(--nmbu-neutral-2)', maxWidth: '90ch' }}>
+          Andelen nivå 2 blir høyest målt på poeng, fordi en nivå 2-artikkel gir tre ganger så mange poeng. Eksempel: BI hadde i 2024 omtrent 41 % av forfatterandelene, 44 % av publikasjonene og 68 % av poengene på nivå 2.
+          Sammenlign derfor bare tall med samme definisjon. Poeng per årsverk med NHHs nevner blir 20–40 % høyere enn med HK-dirs.
+        </p>
+      </div>
+
+      <div className="rounded-2xl p-5 overflow-x-auto" style={kort}>
+        <div style={{ fontSize: 14, fontWeight: 600, color: GRONN }}>Artikler i listetidsskrift, {periodeTekst}{per100 ? ', per 100 årsverk' : ''}</div>
+        <p className="text-xs mb-3" style={{ color: 'var(--nmbu-neutral-2)' }}>NVI-rapporterte artikler, hel telling: én artikkel teller 1 for skolen uansett antall forfattere. En artikkel kan stå på flere lister og telles da i hver kolonne. Sortert etter FT50/UTD24 + ABDC A*.</p>
+        <table className="w-full text-sm" style={{ borderCollapse: 'collapse', minWidth: 1080 }}>
+          <thead>
+            <tr style={{ borderBottom: '1px solid var(--nmbu-neutral-3)' }}>
+              <th colSpan={2} />
+              <th colSpan={3} className="px-2 pt-2 text-center" style={thS}>FT og UT Dallas</th>
+              <th colSpan={2} className="px-2 pt-2 text-center" style={thS}>ABDC 2025</th>
+              <th colSpan={3} className="px-2 pt-2 text-center" style={thS}>{harAjg ? 'AJG 2024 (egen kobling)' : 'AJG 2024'}</th>
+              <th colSpan={3} className="px-2 pt-2 text-center" style={thS}>AJG i NHHs forskningsrapport</th>
+              <th />
+            </tr>
+            <tr style={{ backgroundColor: 'var(--nmbu-beige-light)', borderBottom: '2px solid var(--nmbu-neutral-3)' }}>
+              <th className="px-2 py-2 text-left" style={thS}>Skole</th>
+              <th className="px-2 py-2 text-right" style={thS}>NVI-artikler</th>
+              <th className="px-2 py-2 text-right" style={thS}>FT50 {ftVer}</th>
+              <th className="px-2 py-2 text-right" style={thS}>UTD24</th>
+              <th className="px-2 py-2 text-right" style={thS} title="Artikler på minst én av listene, telt én gang">FT50 ∪ UTD24</th>
+              <th className="px-2 py-2 text-right" style={thS}>A*</th>
+              <th className="px-2 py-2 text-right" style={thS}>A</th>
+              {harAjg ? <>
+                <th className="px-2 py-2 text-right" style={thS}>4*</th><th className="px-2 py-2 text-right" style={thS}>4</th><th className="px-2 py-2 text-right" style={thS}>3</th>
+              </> : <>
+                <th className="px-2 py-2 text-right" style={{ ...thS, fontStyle: 'italic' }} title="Kalibrert anslag fra åpne lister, ikke AJG">≈ 4/4*</th>
+                <th className="px-2 py-2 text-right" style={{ ...thS, fontStyle: 'italic' }} title="Kalibrert anslag fra åpne lister, ikke AJG">≈ 3</th>
+                <th className="px-2 py-2 text-right" style={thS}></th>
+              </>}
+              <th className="px-2 py-2 text-right" style={thS}>4*</th><th className="px-2 py-2 text-right" style={thS}>4</th><th className="px-2 py-2 text-right" style={thS}>3</th>
+              <th className="px-2 py-2 text-right" style={thS}>Int. sampubl.</th>
+            </tr>
+          </thead>
+          <tbody>
+            {t2.map((r) => (
+              <tr key={r.s.id} style={{ borderBottom: '1px solid var(--nmbu-beige-light)', fontWeight: r.s.isNmbu ? 600 : 400 }}>
+                <td className="px-2 py-1.5">{r.s.kort}</td>
+                <td className="px-2 py-1.5 text-right tabular-nums">{nf(r.nvi, 0)}</td>
+                <td className="px-2 py-1.5 text-right tabular-nums">{vis(r.ft, r.arsv)}</td>
+                <td className="px-2 py-1.5 text-right tabular-nums">{vis(r.utd, r.arsv)}</td>
+                <td className="px-2 py-1.5 text-right tabular-nums">{vis(r.ftUtd, r.arsv)}</td>
+                <td className="px-2 py-1.5 text-right tabular-nums">{vis(r.aS, r.arsv)}</td>
+                <td className="px-2 py-1.5 text-right tabular-nums">{vis(r.a, r.arsv)}</td>
+                {harAjg ? <>
+                  <td className="px-2 py-1.5 text-right tabular-nums">{vis(r.j4s, r.arsv)}</td><td className="px-2 py-1.5 text-right tabular-nums">{vis(r.j4, r.arsv)}</td><td className="px-2 py-1.5 text-right tabular-nums">{vis(r.j3, r.arsv)}</td>
+                </> : <>
+                  <td className="px-2 py-1.5 text-right tabular-nums" style={{ fontStyle: 'italic', color: 'var(--nmbu-neutral-2)' }}>{vis(r.anT, r.arsv)}</td>
+                  <td className="px-2 py-1.5 text-right tabular-nums" style={{ fontStyle: 'italic', color: 'var(--nmbu-neutral-2)' }}>{vis(r.an3, r.arsv)}</td>
+                  <td />
+                </>}
+                <td className="px-2 py-1.5 text-right tabular-nums">{vis(r.nhh4s, r.arsv)}</td>
+                <td className="px-2 py-1.5 text-right tabular-nums">{vis(r.nhh4, r.arsv)}</td>
+                <td className="px-2 py-1.5 text-right tabular-nums">{vis(r.nhh3, r.arsv)}</td>
+                <td className="px-2 py-1.5 text-right tabular-nums">{r.nvi ? nf(100 * r.intl / r.nvi, 0) + ' %' : '–'}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <div className="text-xs mt-3 grid gap-1" style={{ color: 'var(--nmbu-neutral-2)', maxWidth: '95ch' }}>
+          <p><b>FT50:</b> lista ble revidert i april 2026 (inn: Academy of Management Annals, American Sociological Review, Psychological Science; ut: Human Relations, Journal of Business Ethics, Organization Studies). BI og FT-rangeringene har brukt 2016-lista for publikasjoner til og med 2025. Med den treffer vi BIs egne tall nesten eksakt (2024: 35 mot 34, 2023: 26 mot 26). UTD24 er nesten helt en del av FT50, så de fleste UTD24-artikler telles også i FT50.</p>
+          <p><b>AJG:</b> {harAjg ? 'Egen kobling mot AJG 2024 på ISSN.' : <>AJG 2024 er ikke lagt inn. Kolonnene i kursiv er et kalibrert anslag fra åpne lister (FT50/UTD24, eller ABDC A* med OpenAlex-sitering ≥ 5 for ≈ 4/4*), ikke AJG. Det treffer NHH og BI godt, men gir 2–5 ganger for mange for mindre skoler.</>} Tallene fra NHHs forskningsrapport er NHHs egen klassifisering av DBH-registreringer for åtte skoler 2020–2024. De er tomme for andre skoler og år, og spriker også med skolenes egne tall (BI oppgir 17 artikler i 4* i 2020, NHH-rapporten 12).</p>
+          <p><b>Per 100 årsverk</b> bruker valgt nevner{aar === 'fem' ? ' summert over årene' : ''}.</p>
+        </div>
+      </div>
+
+      <div className="rounded-2xl p-5 overflow-x-auto" style={kort}>
+        <div style={{ fontSize: 14, fontWeight: 600, color: GRONN }}>Hva ligger i Topp-trinnet? {periodeTekst}</div>
+        <p className="text-xs mb-3" style={{ color: 'var(--nmbu-neutral-2)', maxWidth: '95ch' }}>
+          I det lagdelte forskningsmålet havner en artikkel på Topp hvis tidsskriftet står på FT50, UTD24, ABDC A* eller AJG 4/4*. Her vises hvilke lister som faktisk gir Topp,
+          som eksklusive kombinasjoner, så ingen artikkel telles to ganger. NVI-rapporterte artikler, hel telling, FT50 2026-lista.
+          {!harAjg && ' AJG 4/4* er ikke med fordi AJG-lista ikke er lagt inn.'} Lister som er slått av i Forskningslab, gir ikke Topp i rangeringen og er merket «av».
+        </p>
+        <div className="grid gap-2 mb-4" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(180px, 1fr))' }}>
+          {perListe.filter((x) => x.c !== 'J' || harAjg).map((x) => (
+            <div key={x.c} className="rounded-lg px-3 py-2 text-xs" style={{ border: '1px solid var(--nmbu-neutral-3)', opacity: aktiv(x.c) ? 1 : 0.55 }}>
+              <div style={{ fontWeight: 700, color: GRONN }}>{LISTE_NAVN[x.c]}{!aktiv(x.c) && ' (av)'}</div>
+              <div className="tabular-nums" style={{ fontSize: 18, fontWeight: 600 }}>{nf(x.n, 0)}</div>
+              <div style={{ color: 'var(--nmbu-neutral-2)' }}>{iAlt.total ? nf(100 * x.n / iAlt.total, 0) : '–'} % av Topp · {nf(x.alene, 0)} bare her</div>
+            </div>
+          ))}
+          <div className="rounded-lg px-3 py-2 text-xs" style={{ backgroundColor: 'var(--nmbu-beige-light)' }}>
+            <div style={{ fontWeight: 700, color: GRONN }}>Topp i alt, alle skoler</div>
+            <div className="tabular-nums" style={{ fontSize: 18, fontWeight: 600 }}>{nf(iAlt.total, 0)}</div>
+            <div style={{ color: 'var(--nmbu-neutral-2)' }}>{nf(iAlt.niva2, 0)} på nivå 2 · {nf(iAlt.niva1, 0)} på nivå 1</div>
+          </div>
+        </div>
+        <table className="w-full text-sm" style={{ borderCollapse: 'collapse', minWidth: 760 + 90 * alleKombo.length }}>
+          <thead>
+            <tr style={{ backgroundColor: 'var(--nmbu-beige-light)', borderBottom: '2px solid var(--nmbu-neutral-3)' }}>
+              <th className="px-2 py-2 text-left" style={thS}>Skole</th>
+              <th className="px-2 py-2 text-right" style={thS}>Topp</th>
+              <th className="px-2 py-2 text-left" style={{ ...thS, width: 220 }}>Fordeling</th>
+              {alleKombo.map(([k]) => <th key={k} className="px-2 py-2 text-right" style={thS}><span className="inline-block rounded-sm mr-1" style={{ width: 8, height: 8, backgroundColor: farge(k) }} />{komboNavn(k)}</th>)}
+              <th className="px-2 py-2 text-right" style={thS} title="Tidsskriftet er også på norsk nivå 2">Herav nivå 2</th>
+              <th className="px-2 py-2 text-right" style={thS} title="Norsk nivå 1, men Topp etter en internasjonal liste">Herav nivå 1</th>
+              <th className="px-2 py-2 text-right" style={thS}>Andel av NVI-artiklene</th>
+            </tr>
+          </thead>
+          <tbody>
+            {kombo.map((r) => (
+              <tr key={r.s.id} style={{ borderBottom: '1px solid var(--nmbu-beige-light)', fontWeight: r.s.isNmbu ? 600 : 400 }}>
+                <td className="px-2 py-1.5">{r.s.kort}</td>
+                <td className="px-2 py-1.5 text-right tabular-nums">{nf(r.total, 0)}</td>
+                <td className="px-2 py-1.5">
+                  <div className="flex rounded overflow-hidden" style={{ height: 10, backgroundColor: 'var(--nmbu-beige-light)' }} title={alleKombo.map(([k]) => `${komboNavn(k)}: ${r.k[k] ?? 0}`).join('\n')}>
+                    {r.total > 0 && alleKombo.map(([k]) => r.k[k] ? <div key={k} style={{ width: `${100 * r.k[k] / r.total}%`, backgroundColor: farge(k) }} /> : null)}
+                  </div>
+                </td>
+                {alleKombo.map(([k]) => <td key={k} className="px-2 py-1.5 text-right tabular-nums">{r.k[k] ? nf(r.k[k], 0) : '–'}</td>)}
+                <td className="px-2 py-1.5 text-right tabular-nums">{nf(r.niva2, 0)}</td>
+                <td className="px-2 py-1.5 text-right tabular-nums">{nf(r.niva1, 0)}</td>
+                <td className="px-2 py-1.5 text-right tabular-nums">{r.nvi ? nf(100 * r.total / r.nvi, 1) + ' %' : '–'}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <div className="rounded-2xl p-5 overflow-x-auto" style={kort}>
+        <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
+          <div style={{ fontSize: 14, fontWeight: 600, color: GRONN }}>Tidsskriftene bak Topp: {valgt?.kort}, {periodeTekst}</div>
+          <select value={skoleId} onChange={(e) => setSkoleId(e.target.value)} style={sel}>{skoler.map((s) => <option key={s.id} value={s.id}>{s.kort}</option>)}</select>
+        </div>
+        <p className="text-xs mb-3" style={{ color: 'var(--nmbu-neutral-2)' }}>NVI-rapporterte artikler fra {data.aar[1] - 5} og senere. ● = tidsskriftet står på lista.</p>
+        {tidsskrift.length === 0 ? <p className="text-sm" style={{ color: 'var(--nmbu-neutral-2)' }}>Ingen Topp-artikler i perioden.</p> : (
+          <table className="w-full text-sm" style={{ borderCollapse: 'collapse', minWidth: 640 }}>
+            <thead>
+              <tr style={{ backgroundColor: 'var(--nmbu-beige-light)', borderBottom: '2px solid var(--nmbu-neutral-3)' }}>
+                <th className="px-2 py-2 text-left" style={thS}>Tidsskrift</th>
+                <th className="px-2 py-2 text-right" style={thS}>Artikler</th>
+                <th className="px-2 py-2 text-center" style={thS}>FT50</th>
+                <th className="px-2 py-2 text-center" style={thS}>UTD24</th>
+                <th className="px-2 py-2 text-center" style={thS}>ABDC</th>
+                {harAjg && <th className="px-2 py-2 text-center" style={thS}>AJG</th>}
+                <th className="px-2 py-2 text-center" style={thS}>Norsk nivå</th>
+              </tr>
+            </thead>
+            <tbody>
+              {tidsskrift.map(([navn, x]) => (
+                <tr key={navn} style={{ borderBottom: '1px solid var(--nmbu-beige-light)' }}>
+                  <td className="px-2 py-1.5">{navn}</td>
+                  <td className="px-2 py-1.5 text-right tabular-nums">{x.n}</td>
+                  <td className="px-2 py-1.5 text-center">{ja(x.ft50)}</td>
+                  <td className="px-2 py-1.5 text-center">{ja(x.utd24)}</td>
+                  <td className="px-2 py-1.5 text-center tabular-nums" style={{ fontWeight: x.abdc === 'A*' ? 700 : 400 }}>{x.abdc ?? '–'}</td>
+                  {harAjg && <td className="px-2 py-1.5 text-center tabular-nums">{x.ajg ?? '–'}</td>}
+                  <td className="px-2 py-1.5 text-center tabular-nums">{[...x.niva].sort().join(', ')}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        )}
       </div>
     </div>
   );
@@ -1132,9 +1460,9 @@ function Skoleportrett({ data, rader, ind, eff, id, setId, mot, setMot }: Portre
   const mPpa = median(ppa);
   const own25 = ppa(s)[aar.length - 1], m25 = mPpa[aar.length - 1];
   const sparkDefs: { l: string; u: string; d: number; f: (x: Skole) => (number | null)[] }[] = [
-    { l: 'Andel nivå 2 (av poengene)', u: ' %', d: 1, f: (x) => aar.map((a) => x.dbh[a]?.niva2Andel ?? null) },
+    { l: 'Andel nivå 2 (HK-dir, av forfatterandelene)', u: ' %', d: 1, f: (x) => aar.map((a) => x.dbh[a]?.niva2AndelFa ?? null) },
     { l: 'ABDC A/A*, andel av artikler', u: ' %', d: 0, f: (x) => aar.map((a) => { const t = x.artikler[a]; return t?.n ? 100 * ((t.abdc['A*'] ?? 0) + (t.abdc['A'] ?? 0)) / t.n : null; }) },
-    { l: 'FT50/UTD24-artikler per år', u: '', d: 0, f: (x) => aar.map((a) => { const t = x.artikler[a]; return t ? Math.max(t.ft50, t.utd24) : null; }) },
+    { l: 'FT50/UTD24-artikler per år', u: '', d: 0, f: (x) => aar.map((a) => x.artikler[a] ? artSum(x, [a]).ftUtd : null) },
     { l: 'Internasjonal sampublisering', u: ' %', d: 0, f: (x) => aar.map((a) => x.artikler[a]?.intlAndel ?? null) },
   ];
   const plassPaa = (f: (x: Skole) => number | null, x: Skole) => { const v = f(x); if (v == null) return null; const alle = rader.map((z) => f(z.s)).filter((z): z is number => z != null); return { p: 1 + alle.filter((z) => z > v + 1e-9).length, n: alle.length }; };
@@ -1272,7 +1600,7 @@ function Skoleportrett({ data, rader, ind, eff, id, setId, mot, setMot }: Portre
       <section className="sec">
         <header>
           <span className="lab">Publiseringsprofil, {aar[0]}–{y1}</span>
-          <h2>{s.kort}: {s.artikler[String(y1)] ? `${s.artikler[String(y1)].n} artikler i ${y1}, ${(s.artikler[String(y1)].abdc['A*'] ?? 0) + (s.artikler[String(y1)].abdc['A'] ?? 0)} i ABDC A/A* og ${Math.max(s.artikler[String(y1)].ft50, s.artikler[String(y1)].utd24)} i FT50/UTD24` : 'ingen artikkeltall'}</h2>
+          <h2>{s.kort}: {s.artikler[String(y1)] ? (() => { const a = artSum(s, [String(y1)]); return `${a.n} NVI-rapporterte artikler i ${y1}, ${a.abdcA} i ABDC A/A* og ${a.ftUtd} i FT50/UTD24`; })() : 'ingen artikkeltall'}</h2>
           <p className="muted">Heltrukket linje er {s.kort}{c ? `, lilla er ${c.s.kort}` : ''}, stiplet er medianen for skolene som har tall det året.</p>
         </header>
         <div className="sparks">
@@ -1440,11 +1768,11 @@ function Metode({ data, ind }: { data: Data; ind: Ind[] }) {
       </div>
       <div>
         <div style={{ fontWeight: 600, color: GRONN }}>Publisering i to systemer</div>
-        Det norske systemet (publiseringspoeng, nivå 1 og 2) hentes fra DBH og er institusjonenes egne innrapporterte tall. Internasjonale nivåer hentes ved å koble hver artikkel i NVA (tidligere Cristin) på ISSN mot tidsskriftlister: AJG 2024 fra Chartered ABS (1–4*, samme som HHs infografikk), ABDC (C–A*), FT50 og UTD24. {data.lister.ajg ? 'AJG-lista er lagt inn.' : 'AJG-lista er lisensbelagt og ikke lagt inn ennå; den legges i data/rangering/tidsskrift/ajg2024.csv (mal: ajg-mal.csv).'}
+        HK-dir er felles grunnlag: publiseringspoeng, publikasjoner, nivå 2 og årsverk hentes fra DBH og defineres som i HK-dirs tilstandsrapport (poeng per årsverk med UN1 + UN2, nivå 2 som andel av forfatterandelene, V15.3). Artikkelmålene bruker bare artikler som er rapportert til NVI, altså de samme publikasjonene som ligger bak HK-dirs tall. Skolenes egne varianter (NHHs nevner uten stipendiater, nivå 2 som andel av poeng eller publikasjoner, FT50 2016-lista) vises i fanen «Slik rapporterer skolene». Internasjonale nivåer hentes ved å koble hver artikkel i NVA (tidligere Cristin) på ISSN mot tidsskriftlister: AJG 2024 fra Chartered ABS (1–4*, samme som HHs infografikk), ABDC (C–A*), FT50 og UTD24. {data.lister.ajg ? 'AJG-lista er lagt inn.' : 'AJG-lista er lisensbelagt og ikke lagt inn ennå; den legges i data/rangering/tidsskrift/ajg2024.csv (mal: ajg-mal.csv).'}
       </div>
       <div>
         <div style={{ fontWeight: 600, color: GRONN }}>Lagdelt forskningsmål: høyeste nivå teller</div>
-        Hver artikkel i NVA plasseres på ett trinn: det høyeste den oppnår i det norske nivåsystemet, ABDC, FT50/UTD24 eller AJG (når lista er lagt inn). Basis = norsk nivå 1, ABDC B/C, AJG 1–2; Høy = norsk nivå 2, ABDC A, AJG 3; Topp = FT50/UTD24, ABDC A*, AJG 4/4*. Artikkelen telles én gang, med enhetens andel av forfatterne (1/n per forfatter) som standard, og vektes 1 : 3 : 5. Summen deles på snittet av årsverk (UN1 + UN2) i perioden. Dekningsgraden viser hvor stor del av artiklene de internasjonale listene vurderer. Alt kan endres i Forskningslab, og målet i rangeringen følger innstillingene der.
+        Hver NVI-rapporterte artikkel i NVA plasseres på ett trinn: det høyeste den oppnår i det norske nivåsystemet, ABDC, FT50/UTD24 eller AJG (når lista er lagt inn). Basis = norsk nivå 1, ABDC B/C, AJG 1–2; Høy = norsk nivå 2, ABDC A, AJG 3; Topp = FT50/UTD24, ABDC A*, AJG 4/4*. Artikkelen telles én gang, med enhetens andel av forfatterne (1/n per forfatter) som standard, og vektes 1 : 3 : 5. Summen deles på snittet av årsverk (UN1 + UN2) i perioden. Dekningsgraden viser hvor stor del av artiklene de internasjonale listene vurderer. Hvilke lister som faktisk gir Topp (i praksis nesten bare ABDC A*), vises i «Slik rapporterer skolene». Alt kan endres i Forskningslab, og målet i rangeringen følger innstillingene der.
       </div>
       <div>
         <div style={{ fontWeight: 600, color: GRONN }}>AJG-anslag</div>
@@ -1461,7 +1789,7 @@ function Metode({ data, ind }: { data: Data; ind: Ind[] }) {
       <div>
         <div style={{ fontWeight: 600, color: GRONN }}>Kjente svakheter</div>
         <ul className="list-disc pl-5">
-          <li>Artikler telles helt for hver enhet med minst én forfatter (ikke brøkdelt). Publiseringspoengene i DBH er brøkdelt.</li>
+          <li>Artikkeltellingene i «Slik rapporterer skolene» og målene for FT50/UTD24, ABDC og internasjonal sampublisering teller artiklene hele for hver enhet med minst én forfatter, slik skolene gjør. Det lagdelte målet bruker 1/n som standard. Publiseringspoengene i DBH bruker kvadratroten av forfatterandelen.</li>
           <li>Private skoler (BI, Kristiania) har eget opptak og mangler førstevalg per plass i Samordna-tallene.</li>
           <li>Små enheter svinger mye fra år til år; derfor brukes snitt over tre og fem år.</li>
           <li>Min–maks-skalering gjør rangeringen følsom for ytterpunkter. Alternativ (rangsum eller z-skår) kan legges inn.</li>

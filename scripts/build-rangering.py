@@ -211,6 +211,7 @@ def main():
         "ajg": les_liste("ajg2024.csv", "ajg2024", "fagfelt"),
         "abdc": les_liste("abdc.csv", "rating", "fagfelt"),
         "ft50": les_liste("ft50.csv", None, krav="ft50_2026"),  # gjeldende FT50 (kolonnen ft50_2016 = gammel liste)
+        "ft50gml": les_liste("ft50.csv", None, krav="ft50_2016"),  # FT50 før revisjonen i april 2026 (brukt av BI m.fl. t.o.m. 2025)
         "utd24": les_liste("utd24.csv", None),
         # Kalibrert AJG-anslag fra åpne kilder (scripts/rangering/ajg_anslag.py), ikke AJG
         "ajgA": les_liste("ajg-anslag.csv", "anslag"),
@@ -329,6 +330,8 @@ def main():
             # og sum forfatterandel (enhetens forfattere / alle forfattere, dvs. 1/n per forfatter). Nettleseren
             # regner «høyeste nivå teller» med valgfrie vekter, tidsvindu og hel/brøk telling ut fra dette.
             komb = collections.defaultdict(lambda: [0, 0.0])
+            toppKomb = collections.defaultdict(lambda: [0, 0.0])
+            rap = collections.Counter()
             ajgA = collections.Counter()  # AJG-anslag, bare NVI-rapporterte artikler (som kalibreringen)
             for x in d["artikler"]:
                 s["n"] += 1
@@ -353,19 +356,41 @@ def main():
                         ajgA[ta[0]] += 1
                 ft = bool(treff(lister["ft50"])); ut = bool(treff(lister["utd24"]))
                 s["ft50"] += ft; s["utd24"] += ut
-                nokkel = "|".join([niva, tb[0] if tb else "-", "f" if ft else "u" if ut else "-", (tj[0] if tj else "-") if lister["ajg"] else "?"])
-                k = komb[nokkel]; k[0] += 1; k[1] += (x.get("egne") or 0) / max(x.get("forfattere") or 1, 1)
+                nvi = bool(x.get("nvi"))
+                andel = (x.get("egne") or 0) / max(x.get("forfattere") or 1, 1)
+                # Femte felt: «v» = rapportert til NVI (samme grunnlag som HK-dir/DBH teller), «x» = ikke rapportert
+                nokkel = "|".join([niva, tb[0] if tb else "-", ("fu" if ft and ut else "f" if ft else "u" if ut else "-"),
+                                   (tj[0] if tj else "-") if lister["ajg"] else "?", "v" if nvi else "x"])
+                k = komb[nokkel]; k[0] += 1; k[1] += andel
+                # Slik skolene rapporterer: hel telling, bare NVI-rapporterte artikler
+                if nvi:
+                    rap["nvi"] += 1; rap["intl"] += x.get("intl", False)
+                    rap["ft50"] += ft; rap["utd24"] += ut; rap["ftUtd"] += ft or ut
+                    rap["ft50gml"] += bool(treff(lister["ft50gml"]))
+                    if tb:
+                        rap["abdc" + tb[0]] += 1
+                    if tj:
+                        rap["ajg" + tj[0]] += 1
+                    if ta and ta[0] in ("topp", "3"):
+                        rap["ajgA" + ta[0]] += 1
+                    rap["niva" + niva] += 1
+                # Hva som gir Topp-trinnet: FT50 (F), UTD24 (U), ABDC A* (A), AJG 4/4* (J); norsk nivå etter «|»
+                fl_ = ("F" if ft else "-") + ("U" if ut else "-") + ("A" if tb and tb[0] == "A*" else "-") + ("J" if tj and tj[0] in ("4", "4*") else "-")
+                if fl_ != "----":
+                    tk = toppKomb[fl_ + "|" + niva + "|" + ("v" if nvi else "x")]; tk[0] += 1; tk[1] += andel
                 if ft or ut or (tj and tj[0] in ("4", "4*")) or (tb and tb[0] == "A*"):
                     topp.append({"aar": int(aar), "tittel": x.get("tittel"), "tidsskrift": x.get("tidsskrift"),
                                  "ajg": tj[0] if tj else None, "abdc": tb[0] if tb else None, "ft50": ft, "utd24": ut,
-                                 "niva": niva})
+                                 "niva": niva, "nvi": bool(x.get("nvi"))})
             per_aar[aar] = {"n": s["n"], "nvi": s["nvi"], "intlAndel": r1(100 * s["intl"] / s["n"]) if s["n"] else None,
                             "forfatterandel": r1(s["andel"]),
                             "niva": {k: s["niva" + k] for k in ("0", "1", "2", "u")},
                             "ajg": dict(ajg) if lister["ajg"] else None, "abdc": dict(abdc),
                             "ft50": s["ft50"], "utd24": s["utd24"],
                             "komb": {kk: [v[0], round(v[1], 4)] for kk, v in sorted(komb.items())},
-                            "ajgA": {"topp": ajgA["topp"], "3": ajgA["3"], "nvi": ajgA["n"]}}
+                            "ajgA": {"topp": ajgA["topp"], "3": ajgA["3"], "nvi": ajgA["n"]},
+                            "toppKomb": {kk: [v[0], round(v[1], 4)] for kk, v in sorted(toppKomb.items())},
+                            "rapport": {k: v for k, v in sorted(rap.items())} | {"harAjg": bool(lister["ajg"])}}
         topp.sort(key=lambda t: (-t["aar"], t["tidsskrift"] or ""))
         return per_aar, topp, dict(fag)
 
@@ -456,7 +481,7 @@ def main():
                               if isinstance(x, str) or "ikke" not in str(x.get("status", "")).lower()],
             "rangeringer": s.get("rangeringer") or s.get("internasjonale_rangeringer") or [],
             "enhetNotat": s.get("usikkerhet"), "kontrollUlikAvgrensning": s.get("kontrollUlikAvgrensning"), "dbhEnhet": spec_, "nva": s.get("nva"),
-            "dbh": aar, "dbhInst": inst_aar, "artikler": per_aar, "topp": [x for x in topp if x["aar"] >= Y1 - 5][:150], "ajgFagfelt": fag,
+            "dbh": aar, "dbhInst": inst_aar, "artikler": per_aar, "topp": [x for x in topp if x["aar"] >= Y1 - 5][:600], "ajgFagfelt": fag,
             "utdanning": {**utdanning(s.get("programprefiks") or [sid.split("_")[0] if sid == "ntnu_ok" else sid]),
                           "siv": siv.get(sid.split("_")[0] if sid == "ntnu_ok" else sid)},
             # ABS/AJG 4*, 4 og 3 fra NHHs forskningsrapport (åtte skoler, 2020–2024), til vi har lov å koble mot lista

@@ -804,3 +804,17 @@ KI-chat og uten «Spør KI» (`utenKi` på `AfModulSide`). Grunnen er at metoden
   (WoS+OpenAlex) gir rom for flere ØA-kanaler fra desember 2026 (mulig brudd i nivå 2-andel); ny ØA-komité (Olaussen,
   NTNU); AACSB Global Standards 2027–28 uten lister; AJG 2027 i arbeid; Harzing JQL avsluttet; OpenAlex-API krever nøkkel;
   NHH, BI, HVL og Kristiania ikke i CoARA. Oversiktsside (privat): https://claude.ai/artifact/FZbFBzVnZwv9QVEKwYqZcr
+- **03.10 natt – «Slik rapporterer skolene» og HK-dir som felles grunnlag (Mathias):** ny fane (`SlikRapporterer`,
+  `?rangering&fane=rapport`). (1) DBH/HK-dir per år eller fem år: poeng, publikasjoner, årsverk, poeng per årsverk (HK-dir
+  UN1+UN2 eller NHH uten stipendiater) og nivå 2-andel i alle tre definisjonene side om side, med HK-dirs (forfatterandeler,
+  V15.3) markert som den som brukes. (2) Artikler i listetidsskrift, hel telling, bare NVI-rapporterte: FT50 (2026- eller
+  2016-lista; 2016 treffer BIs egne tall, 2024: 35 mot 34), UTD24, union, ABDC A*/A, AJG (eller kursivt anslag), NHH-
+  rapportens AJG 4*/4/3, internasjonal sampublisering; antall eller per 100 årsverk. (3) «Hva ligger i Topp-trinnet»:
+  eksklusive kombinasjoner av FT50/UTD24/ABDC A*/AJG 4/4* per skole, herav nivå 1/2. 2025: 253 av 255 Topp-artikler er
+  ABDC A*, bare 2 er FT50 uten A*. (4) Tidsskriftene bak Topp for én skole.
+  **HK-dir som felles grunnlag i rangeringen:** målet «Andel nivå 2 (HK-dir)» bruker nå `niva2AndelFa` (andel av
+  forfatterandelene) i stedet for andel av poeng; skoleportrett og Publisering likeså. Lagdelt mål, FT50/UTD24, ABDC og
+  internasjonal sampublisering bruker bare NVI-rapporterte artikler (Lag.kunNvi = true; «Alle i NVA» i Forskningslab,
+  lenke `grunnlag=alle`). Byggeskriptet: komb-nøkkelen har femte felt v/x (NVI) og ft-feltet «fu» når begge lister;
+  nye felt `rapport` og `toppKomb` per år, `topp` har `nvi` og opptil 600 artikler; ny liste `ft50gml` (2016).
+  Standardrangering etter endringen: UiA 81, UiS 76, NHH 75, BI 72, NTNU 68, HH NMBU 51.
