@@ -44,6 +44,7 @@ const StudiestedBolig = lazyNamed<typeof import('./components/StudiestedBolig')[
 const LayoutLab = lazyNamed<typeof import('./components/LayoutLab')['LayoutLab']>(() => import('./components/LayoutLab'), 'LayoutLab');
 const FacultyRevenue = lazyNamed<typeof import('./components/FacultyRevenue')['FacultyRevenue']>(() => import('./components/FacultyRevenue'), 'FacultyRevenue');
 const InternOpptak = lazyNamed<typeof import('./components/InternOpptak')['InternOpptak']>(() => import('./components/InternOpptak'), 'InternOpptak');
+const Handelshoyskolerangering = lazyNamed<typeof import('./components/Handelshoyskolerangering')['Handelshoyskolerangering']>(() => import('./components/Handelshoyskolerangering'), 'Handelshoyskolerangering');
 const FacultyEconomyPage = lazyNamed<typeof import('./components/InstitusjonsSider')['FacultyEconomyPage']>(() => import('./components/InstitusjonsSider'), 'FacultyEconomyPage');
 const FacultyStaffPage = lazyNamed<typeof import('./components/InstitusjonsSider')['FacultyStaffPage']>(() => import('./components/InstitusjonsSider'), 'FacultyStaffPage');
 const NmbuEconomyPage = lazyNamed<typeof import('./components/InstitusjonsSider')['NmbuEconomyPage']>(() => import('./components/InstitusjonsSider'), 'NmbuEconomyPage');
@@ -54,7 +55,7 @@ const Utdanning = lazyNamed<typeof import('./components/styringsinformasjon/Utda
 type ProgramLevel = 'bachelor' | 'master' | 'opptak2026' | 'markedsstatus';
 type ViewMode = 'course' | 'mapping' | 'admission' | 'karakterindeks' | 'studiebarometer' | 'map' | 'firstyear' | 'online';
 type MasterViewMode = 'masteroppgave' | 'sammenligning' | 'nmbu-emner';
-type FacultyView = 'landing' | 'analyse' | 'emner' | 'markedsstatus' | 'studiebarometer' | 'gjennomforing' | 'studentene' | 'fagmiljo' | 'bolig' | 'sokergrunnlag' | 'okonomi' | 'inntekt' | 'arbeidsmarked' | 'intern';
+type FacultyView = 'landing' | 'analyse' | 'emner' | 'markedsstatus' | 'studiebarometer' | 'gjennomforing' | 'studentene' | 'fagmiljo' | 'bolig' | 'sokergrunnlag' | 'okonomi' | 'inntekt' | 'arbeidsmarked' | 'intern' | 'rangering';
 
 export default function App() {
   const [faculty, setFaculty] = useState<Faculty | null>(null);
@@ -133,6 +134,7 @@ export default function App() {
     sokergrunnlag: { title: 'Søkergrunnlaget', subtitle: 'Ungdomskullene per fylke fram mot 2045 og matematikk og gjennomføring i videregående · Kilde: SSB og Utdanningsdirektoratet' },
     bolig: { title: 'Bolig og studentboliger', subtitle: 'Studentboliger, kjøpspriser og leiepriser ved NMBU og konkurrentenes studiesteder · Kilde: NSO og SSB' },
     intern: { title: 'Opptak høsten 2026 (intern)', subtitle: 'Søkermassen rundt opptaksgrensen og simulering av større eller mindre opptaksrammer for bachelorprogrammene · Kilde: opptakskontoret (FS), aggregert og kryptert' },
+    rangering: { title: 'Rangering av handelshøyskolene (utkast, intern)', subtitle: 'Forskning, utdanning og anerkjennelse ved norske handelshøyskoler · Kilde: DBH/HK-dir, NVA, ABDC/FT50/UTD24/AJG, Samordna opptak, Studiebarometeret' },
     inntekt: { title: 'Inntekt per program', subtitle: 'Anslått resultatbasert finansiering fra studiepoeng og fullførte grader, NMBU mot konkurrentene · Kilde: DBH/HK-dir tabell 900, 908 og 104' },
     arbeidsmarked: { title: 'Arbeidsmarkedet etter utdanning', subtitle: 'Lønn, ledighet og vanligste yrker for nyutdannede i fagfeltene programmene utdanner til · Kilde: SSB og utdanning.no' },
     okonomi: { title: 'Økonomi og styringsindikatorer', subtitle: 'NMBU mot institusjonene i fakultetets sammenligninger · Kilde: DBH/HK-dir tabell 902 og 750' },
@@ -146,6 +148,7 @@ export default function App() {
       case 'inntekt': return <FacultyRevenue key={fac.id} faculty={fac} />;
       case 'arbeidsmarked': return <FacultyArbeidsmarked key={fac.id} faculty={fac} />;
       case 'intern': return <InternOpptak />;
+      case 'rangering': return <Handelshoyskolerangering />;
       case 'studiebarometer': return <FacultyStudiebarometer key={fac.id} faculty={fac} />;
       case 'markedsstatus': return <FacultyMarketStatus key={fac.id} faculty={fac} />;
       case 'sokergrunnlag': return <Sokergrunnlag key={fac.id} steder={[...new Set(fac.admissionGroups.flatMap((g) => g.entries.map((e) => e.studiested)).filter(Boolean))]} />;
@@ -276,7 +279,7 @@ export default function App() {
       if (facultyView === 'landing') return fakData ? <AfFakultet fac={fakData} onNavigate={navigate} /> : <RuteLaster tekst={`Laster ${FACULTY_META[faculty].label} …`} />;
       const m = FACULTY_MODULE_META[facultyView];
       return (
-        <AfModulSide eyebrow={FACULTY_META[faculty].label} tittel={m.title} undertittel={m.subtitle} tilbake={{ label: 'Oversikt', onClick: () => navigate(faculty, 'landing') }}>
+        <AfModulSide eyebrow={FACULTY_META[faculty].label} tittel={m.title} undertittel={m.subtitle} tilbake={{ label: 'Oversikt', onClick: () => navigate(faculty, 'landing') }} utenKi={facultyView === 'intern' || facultyView === 'rangering'}>
           {fakData ? facultyModuleBody(fakData, facultyView) : <RuteLaster />}
         </AfModulSide>
       );

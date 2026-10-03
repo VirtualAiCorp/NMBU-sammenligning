@@ -260,11 +260,11 @@ export function AfFakultet({ fac, onNavigate }: { fac: FacultyData; onNavigate: 
 }
 
 // ── Rammen rundt modulene og NMBU-sidene ─────────────────────────────────────
-export function AfModulSide({ tittel, undertittel, eyebrow, tilbake, children }: { tittel: string; undertittel?: string; eyebrow?: string; tilbake?: { label: string; onClick: () => void }; children: ReactNode }) {
+export function AfModulSide({ tittel, undertittel, eyebrow, tilbake, utenKi, children }: { tittel: string; undertittel?: string; eyebrow?: string; tilbake?: { label: string; onClick: () => void }; /** Interne sider har ingen KI-chat. */ utenKi?: boolean; children: ReactNode }) {
   return (
     <div className="af-side af-side-bred">
       <AfHeader eyebrow={eyebrow} tittel={tittel} undertittel={undertittel}
-        handlinger={<>{tilbake && <Pille ikon={ArrowLeft} onClick={tilbake.onClick}>{tilbake.label}</Pille>}<Pille ikon={Sparkles} onClick={apneKiChat}>Spør KI</Pille></>} />
+        handlinger={<>{tilbake && <Pille ikon={ArrowLeft} onClick={tilbake.onClick}>{tilbake.label}</Pille>}{!utenKi && <Pille ikon={Sparkles} onClick={apneKiChat}>Spør KI</Pille>}</>} />
       <div className="af-innhold af-stig" style={stig(1)}>{children}</div>
     </div>
   );

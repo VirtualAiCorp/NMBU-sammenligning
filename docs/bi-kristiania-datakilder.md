@@ -43,7 +43,7 @@ Merket **[V]** = hentet og kontrollert i denne økten. **[A]** = antatt eller ba
 | DBH 335 sp iht. plan | Studiepoeng planlagt og gjennomført | API | K har data, BI mangler **[V]** | Lav–middels | Lav |
 | DBH 902 økonomi | Inkl. eksamensavgift, egenkapital, salg/leie (private) | API | BI 2019–25, K 2018–25 **[V]** | **Høy** (Kristiania mangler) | Lav |
 | DBH 750 styringsindikatorer | KD-indikatorer | API | K 2024 har 11 indikatorer **[V]** | Middels | Lav |
-| DBH 225/220/373/374 | Årsverk, publisering | API | K 2024: 650 årsverk, 502 publiseringspoeng **[V]** | Middels | Lav |
+| DBH 225/220/373/374 | Årsverk, publisering | API | K 2024: 650 årsverk, 253 publiseringspoeng **[V]** (rettet 03.10.2026: 502 var dobbelttelling av totalraden 000000 + avdelingene) | Middels | Lav |
 | DBH 703 regnskap private | Full regnskapspakke med noter | API | BI og K 2024, 843 rader **[V]** | Lav: 902 dekker hovedtallene | Middels |
 | DBH 132/112 søknader/opptak (eldre) | Søknader/opptatte per år | API | BI fra 2001, K fra 2018 **[V]** | Lav–middels (lange serier) | Lav |
 | DBH 370 studieplasser | – | API | Tomt for BI og K **[V]** | Ingen | – |

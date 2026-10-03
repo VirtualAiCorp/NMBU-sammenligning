@@ -193,7 +193,7 @@ function Prosjektvelger({ s, aktivFak, faculty, view, gaa }: { s: boolean; aktiv
   const velg = (f: FacultyId | null) => {
     setApen(false);
     if (f === null) gaa(null);
-    else gaa(f, faculty && erFakultet(faculty) && view !== 'intern' ? view : 'landing');
+    else gaa(f, faculty && erFakultet(faculty) && view !== 'intern' && view !== 'rangering' ? view : 'landing');
   };
   return (
     <>

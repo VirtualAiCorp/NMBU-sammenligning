@@ -694,3 +694,40 @@ KI-chatten har alle fem (`build-ki-grunnlag.py`): ARBEIDSMARKEDET-linjer per pro
   4. *Nettleser og miljø:* chatten er skjult på den interne siden (`KiChatKnapp`), `KiChatPanel` henter bare `ki/*.json` og `markedsstatus/<fak>/tekst.json`, og serverfunksjonene nekter å kjøre (503) hvis `INTERN_PASSORD` noen gang legges inn i Cloudflare. Nøkkelen til de interne dataene skal bare ligge lokalt. Instruksen (`REGLER`) sier at modellen ikke har interne data og ikke skal gjette på dem.
 - **Det eneste frie feltet** er brukerens eget spørsmål (maks 600 tegn). Fotnoten i chatten ber brukerne ikke skrive personopplysninger eller interne tall.
 - **Test:** `functions/` buntet med esbuild og kjørt mot simulert Anthropic/Mistral (19 kontroller: riktig modell og hoder, publiserte kilder med, interne/forfalskede forkastet, signert historikk, reserve ved 529, sperre ved `INTERN_PASSORD`, 403 uten Origin). Negativ test: en klartekstfil i `public/intern/` stopper bygget.
+
+## 42. Rangering av handelshøyskolene, utkast (03.10.2026)
+
+Utforskende «Norwegian Business School Ranking» under HH → Intern → «Rangering (intern)» (`Handelshoyskolerangering.tsx`,
+visning `'rangering'`). Kryptert som den interne opptakssiden (samme `INTERN_PASSORD`, samme sessionStorage-nøkkel), uten
+KI-chat og uten «Spør KI» (`utenKi` på `AfModulSide`). Grunnen er at metoden er et utkast og at AJG-nivåer er lisensbelagt.
+- **Enhetene:** `data/rangering/skoler.json` (17: 15 handelshøyskoler/fagmiljøer + UiB og UiO økonomi som `referanse`), med
+  NVA-enheter, DBH-institusjon og -avdelingskoder, akkrediteringer (AACSB, EQUIS, AMBA, EFMD-program) og internasjonale
+  rangeringer. Avgrensningsvalgene står i `skoler-notat.md` (NTNU = instituttet NTNU Handelshøyskolen, ikke hele Fakultet for
+  økonomi; OsloMet = seks søskenenheter i NVA; Kristiania 310+330 → 380; INN 0264→1177; UiS uten Norsk hotellhøgskole).
+  NB: rangeringen bruker instituttnivå der HHs fagmiljøside (`staffData`) bruker hele fakultetet, så tallene skiller seg.
+- **Artikler:** `scripts/fetch-nva-artikler.py` → `data/rangering/nva/<skole>/<år>.json` (gitignored), 2016–2025, alle
+  AcademicArticle/LiteratureReview der minst én forfatter er ved enheten. Lagrer tidsskrift, ISSN, norsk nivå, NVI-status,
+  forfatterandel og utenlandsk medforfatter. Cristin stengte 19.08.2025; NVA har hele historikken.
+- **Tidsskriftlister** (`data/rangering/tidsskrift/`, se `kilder.md`): ABDC 2025 (fritt nedlastbar), FT50 (revidert april 2026,
+  kolonne `ft50_2026`), UTD24. **AJG 2024** krever registrering per person og vilkårene tillater bare personlig bruk; ikke lagt
+  inn. Legges som `ajg2024.csv` (kolonner som `ajg-mal.csv`, gitignored) bare etter skriftlig ja fra Chartered ABS.
+- **Bygg:** `/usr/local/bin/python3 scripts/build-rangering.py [--klartekst]` (trenger `cryptography`, som Homebrew-pythonen
+  mangler) → `kilde/public/intern/rangering.json`. DBH-cache i `data/rangering/dbh/` (tabell 225, 123, 373, 374, 210, 2016–2025).
+  `--testpassord <kast>` krypterer med et kastepassord for test i nettleseren (det ekte passordet skrives aldri i nettleseren);
+  bygg alltid på nytt uten før commit.
+- **Hovedmål:** publiseringspoeng per faglig årsverk med HK-dirs nevner (Tilstandsrapporten V15.1): UN1 + UN2
+  (stipendiater og postdoktorer), uten UN3 (faglige ledere) og UN4. Funnet ved å teste alle kombinasjoner mot 39 HK-dir-tall
+  (36 innen ±2 %). Gir HHs infografikk eksakt: HH 0,95, UiA 1,49, BI 1,27 (2024). `poengPerFaglig` = UN1 + postdoktorer
+  (NHHs Research Report, åtte handelshøyskoler; 50 av 53 innen ±2 %). DBH har allerede 2025-tall.
+- **Rangering:** 11 mål i fire dimensjoner (Forskning 75 %, Utdanning 20 %, Fagmiljø 3 %, Anerkjennelse 2 % som standard),
+  min–maks-skalert 0–100 blant skolene som vises, vektet snitt; manglende mål → vekten fordeles på resten. Vektene kan
+  endres i siden. Utdanningsmålene gjenbruker HH-sammenligningene (gruppe `oa`/`moa`; entryId-prefiks = skole-id).
+- **Kvalitetssikring:** `data/rangering/kontroll/eksterne-tall.json` (1 004 publiserte tall: HK-dir Tilstandsrapport 2026
+  V15.1–3, NHH Research Report 2024/2025 og årsrapport, UiA HH kvalitetsrapport 2025, BI-nyheter, USN, INN, Nord,
+  Kristiania, HHs infografikk; notat i `kontroll/notat.md`) sammenlignes automatisk med våre DBH-tall på samme nivå og med
+  kildens definisjon (nevneren styrer valget). 03.10: 643 av 710 sammenlignbare innen ±2 %, 10 over ±10 % (foreløpige
+  2025-tall, INN 2022 rundt kodebyttet, HH-infografikkens nivå 2-andel fra Cristin). Fanen «Kvalitetssikring».
+  NB: nivå 2-andel finnes i tre varianter (andel av poeng, forfatterandeler, publikasjoner); 374 sin totalrad er ufullstendig
+  for noen institusjoner, så avdelingene summeres. `docs/bi-kristiania-datakilder.md` sine 502 poeng for Kristiania 2024 er
+  dobbelttelling (riktig: 251,1).
+- **Neste steg:** AJG-avklaring, alternativ normalisering (rangsum/z-skår), brøkdelt artikkeltelling, egen nettside.

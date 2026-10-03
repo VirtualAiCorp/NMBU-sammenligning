@@ -1,0 +1,1518 @@
+[
+ {
+  "id": "nhh",
+  "navn": "Norges Handelshøyskole (NHH)",
+  "navnEn": "NHH Norwegian School of Economics",
+  "institusjon": "Norges Handelshøyskole",
+  "ren_handelshoyskole": true,
+  "type": "handelshøyskole",
+  "referanse": false,
+  "iHHKonkurrentsett": true,
+  "nva": {
+   "enheter": [
+    {
+     "id": "191.0.0.0",
+     "url": "https://api.nva.unit.no/cristin/organization/191.0.0.0",
+     "navn": "Norges Handelshøyskole"
+    }
+   ],
+   "kontroll2024": {
+    "akademiskeArtikler": 202,
+    "alleKategorier": 833,
+    "sporring": "search/resources?unit=<enhets-URL>&publicationYear=2024&instanceType=AcademicArticle"
+   },
+   "merknad": null
+  },
+  "dbh": {
+   "institusjonskode": "1240",
+   "avdelingskoder": [
+    "alle (institusjonstotal)"
+   ],
+   "fakultetskode": null,
+   "tall": {
+    "2024": {
+     "publiseringspoeng": 303.0,
+     "publikasjoner": 225,
+     "arsverk": 483.8,
+     "fagligeArsverk": 171.7
+    },
+    "2025": {
+     "publiseringspoeng": 335.0,
+     "publikasjoner": 244,
+     "arsverk": 473.0,
+     "fagligeArsverk": 169.4
+    }
+   },
+   "alternativ": null,
+   "merknad": "Publiseringspoeng fra tabell 373 avdeling 000000 (= institusjonstotalen, lik summen av instituttene 140000–180000). Årsverk = sum alle avdelinger i 225 (inkl. administrasjon)."
+  },
+  "akkrediteringer": [
+   {
+    "type": "EQUIS",
+    "status": "akkreditert",
+    "aar": 2001,
+    "kilde": "https://www.nhh.no/en/about-nhh/accreditations/",
+    "merknad": "Fornyet 2026 for fem år; står på EFMDs EQUIS-liste (https://www.efmdglobal.org/accreditations-assessments/business-schools/equis/equis-accredited-schools/)"
+   },
+   {
+    "type": "AACSB",
+    "status": "akkreditert",
+    "aar": 2022,
+    "kilde": "https://www.aacsb.edu/members/non-accredited-educational/n/nhh-norwegian-school-of-economics",
+    "merknad": "Første gang mai 2022 (nhh.no). AACSB-søket for Norge viser NHH med «Accreditation: Business»."
+   },
+   {
+    "type": "AMBA",
+    "status": "akkreditert",
+    "aar": 2020,
+    "kilde": "https://www.amba-bga.com/schools/nhh-norwegian-school-of-economics",
+    "merknad": "Gjelder Executive MBA-programmene (Strategic Management, Management Control, Seafood Management)."
+   }
+  ],
+  "rangeringer": [
+   {
+    "rangering": "FT European Business Schools",
+    "aar": 2025,
+    "plassering": 51,
+    "forrige": {
+     "aar": 2024,
+     "plassering": 53
+    },
+    "url": "https://rankings.ft.com/rankings/3042/european-business-school-rankings-2025"
+   },
+   {
+    "rangering": "FT Masters in Management",
+    "aar": 2026,
+    "plassering": 88,
+    "forrige": {
+     "aar": 2025,
+     "plassering": 83
+    },
+    "url": "https://rankings.ft.com/rankings/3047/masters-in-management-2026",
+    "kilde": "https://www.nhh.no/en/nhh-bulletin/article-archive/2026/september/financial-times-studenter-storfornoyde-med-nhhs-master/"
+   },
+   {
+    "rangering": "QS Business Masters",
+    "aar": 2026,
+    "plassering": null,
+    "url": "https://www.bi.no/en/about-bi/news/2025/09/bis-msc-programmes-maintain-strong-global-standing-on-qs-business-masters-rankings-2026/",
+    "merknad": "Ikke med (BI oppgir å være eneste norske skole i QS 2026)."
+   },
+   {
+    "rangering": "Eduniversal",
+    "aar": "2025/2026",
+    "plassering": "4 Palmes of Excellence (nr. 1 i Norge i sin kategori)",
+    "url": "https://www.eduniversal-ranking.com/business-school-university-ranking-in-norway.html"
+   },
+   {
+    "rangering": "ShanghaiRanking GRAS – Economics",
+    "aar": 2026,
+    "plassering": "101-150",
+    "forrige": {
+     "aar": 2025,
+     "plassering": "101-150"
+    },
+    "url": "https://www.shanghairanking.com/rankings/gras/2026/AS0501",
+    "niva": "hele institusjonen (GRAS rangerer universiteter, ikke fakulteter)"
+   },
+   {
+    "rangering": "ShanghaiRanking GRAS – Business Administration",
+    "aar": 2026,
+    "plassering": "301-400",
+    "forrige": {
+     "aar": 2025,
+     "plassering": null
+    },
+    "url": "https://www.shanghairanking.com/rankings/gras/2026/AS0509",
+    "niva": "hele institusjonen (GRAS rangerer universiteter, ikke fakulteter)"
+   },
+   {
+    "rangering": "ShanghaiRanking GRAS – Finance",
+    "aar": 2026,
+    "plassering": "151-200",
+    "forrige": {
+     "aar": 2025,
+     "plassering": "151-200"
+    },
+    "url": "https://www.shanghairanking.com/rankings/gras/2026/AS0510",
+    "niva": "hele institusjonen (GRAS rangerer universiteter, ikke fakulteter)"
+   },
+   {
+    "rangering": "ShanghaiRanking GRAS – Management",
+    "aar": 2026,
+    "plassering": "301-400",
+    "forrige": {
+     "aar": 2025,
+     "plassering": "301-400"
+    },
+    "url": "https://www.shanghairanking.com/rankings/gras/2026/AS0511",
+    "niva": "hele institusjonen (GRAS rangerer universiteter, ikke fakulteter)"
+   }
+  ],
+  "usikkerhet": "Lav. Ren handelshøyskole, samme avgrensning i NVA og DBH. GRAS 2025 Business Administration: NHH ikke på listen."
+ },
+ {
+  "id": "bi",
+  "navn": "Handelshøyskolen BI",
+  "navnEn": "BI Norwegian Business School",
+  "institusjon": "Handelshøyskolen BI (privat stiftelse)",
+  "ren_handelshoyskole": true,
+  "type": "handelshøyskole",
+  "referanse": false,
+  "iHHKonkurrentsett": true,
+  "nva": {
+   "enheter": [
+    {
+     "id": "158.0.0.0",
+     "url": "https://api.nva.unit.no/cristin/organization/158.0.0.0",
+     "navn": "Handelshøyskolen BI"
+    }
+   ],
+   "kontroll2024": {
+    "akademiskeArtikler": 311,
+    "alleKategorier": 1282,
+    "sporring": "search/resources?unit=<enhets-URL>&publicationYear=2024&instanceType=AcademicArticle"
+   },
+   "merknad": null
+  },
+  "dbh": {
+   "institusjonskode": "8241",
+   "avdelingskoder": [
+    "alle (institusjonstotal)"
+   ],
+   "fakultetskode": null,
+   "tall": {
+    "2024": {
+     "publiseringspoeng": 523.8,
+     "publikasjoner": 372,
+     "arsverk": 926.4,
+     "fagligeArsverk": 315.1
+    },
+    "2025": {
+     "publiseringspoeng": 516.9,
+     "publikasjoner": 397,
+     "arsverk": 940.3,
+     "fagligeArsverk": 320.1
+    }
+   },
+   "alternativ": null,
+   "merknad": "Publiseringspoeng fra 373 avdeling 000000 (= sum av instituttene 310000–430000). Årsverk i 225 er ført på campusavdelinger (210000 Oslo osv.), ikke instituttene, så instituttnivå kan ikke brukes for årsverk."
+  },
+  "akkrediteringer": [
+   {
+    "type": "EQUIS",
+    "status": "akkreditert",
+    "aar": 2008,
+    "kilde": "https://www.bi.no/en/about-bi/accreditation-and-ranking/",
+    "merknad": "Reakkreditert 2026 for fem år; står på EFMDs EQUIS-liste."
+   },
+   {
+    "type": "AACSB",
+    "status": "akkreditert",
+    "aar": 2014,
+    "kilde": "https://www.aacsb.edu/accredited/b/bi-norwegian-business-school",
+    "merknad": "BI oppgir både «januar 2014» (felles nordisk uttalelse 2025) og «mai 2014» (akkrediteringssiden)."
+   },
+   {
+    "type": "AMBA",
+    "status": "akkreditert",
+    "aar": 2013,
+    "kilde": "https://www.amba-bga.com/schools/bi-norwegian-business-school",
+    "merknad": "November 2013 (bi.no)."
+   },
+   {
+    "type": "EOCCS",
+    "status": "sertifisert",
+    "aar": 2016,
+    "kilde": "https://www.bi.no/en/about-bi/accreditation-and-ranking/",
+    "merknad": "EFMDs sertifisering av nettkurs."
+   }
+  ],
+  "rangeringer": [
+   {
+    "rangering": "FT European Business Schools",
+    "aar": 2025,
+    "plassering": 40,
+    "forrige": {
+     "aar": 2024,
+     "plassering": 42
+    },
+    "url": "https://rankings.ft.com/rankings/3042/european-business-school-rankings-2025",
+    "kilde": "https://www.bi.no/en/about-bi/news/2025/12/bi-ranked-best-business-school-in-norway/"
+   },
+   {
+    "rangering": "FT Masters in Management",
+    "aar": 2026,
+    "plassering": 81,
+    "forrige": {
+     "aar": 2025,
+     "plassering": 88
+    },
+    "url": "https://rankings.ft.com/rankings/3047/masters-in-management-2026",
+    "kilde": "https://www.bi.no/en/about-bi/news/2026/09/top-employability-score-for-bi-in-global-ft-masters-ranking/"
+   },
+   {
+    "rangering": "FT Masters in Finance (pre-experience)",
+    "aar": 2026,
+    "plassering": 61,
+    "url": "https://rankings.ft.com/rankings/3045/masters-in-finance-pre-experience-2026",
+    "kilde": "https://www.bi.no/en/about-bi/news/2026/06/bis-masters-in-finance-among-the-worlds-best-in-ft-ranking/"
+   },
+   {
+    "rangering": "QS Business Masters",
+    "aar": 2026,
+    "plassering": "Management 45, Marketing 32, Finance 56, Business Analytics 61-70",
+    "url": "https://www.bi.no/en/about-bi/news/2025/09/bis-msc-programmes-maintain-strong-global-standing-on-qs-business-masters-rankings-2026/"
+   },
+   {
+    "rangering": "Eduniversal",
+    "aar": "2025/2026",
+    "plassering": "5 Palmes Emeritus",
+    "url": "https://www.eduniversal-ranking.com/business-school-university-ranking-in-norway.html"
+   },
+   {
+    "rangering": "ShanghaiRanking GRAS – Economics",
+    "aar": 2026,
+    "plassering": "201-300",
+    "forrige": {
+     "aar": 2025,
+     "plassering": "201-300"
+    },
+    "url": "https://www.shanghairanking.com/rankings/gras/2026/AS0501",
+    "niva": "hele institusjonen (GRAS rangerer universiteter, ikke fakulteter)"
+   },
+   {
+    "rangering": "ShanghaiRanking GRAS – Business Administration",
+    "aar": 2026,
+    "plassering": "50",
+    "forrige": {
+     "aar": 2025,
+     "plassering": "30"
+    },
+    "url": "https://www.shanghairanking.com/rankings/gras/2026/AS0509",
+    "niva": "hele institusjonen (GRAS rangerer universiteter, ikke fakulteter)"
+   },
+   {
+    "rangering": "ShanghaiRanking GRAS – Finance",
+    "aar": 2026,
+    "plassering": "101-150",
+    "forrige": {
+     "aar": 2025,
+     "plassering": "151-200"
+    },
+    "url": "https://www.shanghairanking.com/rankings/gras/2026/AS0510",
+    "niva": "hele institusjonen (GRAS rangerer universiteter, ikke fakulteter)"
+   },
+   {
+    "rangering": "ShanghaiRanking GRAS – Management",
+    "aar": 2026,
+    "plassering": "151-200",
+    "forrige": {
+     "aar": 2025,
+     "plassering": "101-150"
+    },
+    "url": "https://www.shanghairanking.com/rankings/gras/2026/AS0511",
+    "niva": "hele institusjonen (GRAS rangerer universiteter, ikke fakulteter)"
+   }
+  ],
+  "usikkerhet": "Lav. BIs akkrediteringsside viser eldre QS-tall (#38 MSc in Business, #50 Finance, #49 Business Analytics, #29 Strategic Marketing – trolig QS 2025-utgaven) og «Top 50» i FT EBS 2025; tabellen i nyhetssaken 01.12.2025 (nr. 40) er lagt til grunn."
+ },
+ {
+  "id": "nmbu",
+  "navn": "Handelshøyskolen ved NMBU",
+  "navnEn": "NMBU School of Economics and Business",
+  "institusjon": "Norges miljø- og biovitenskapelige universitet",
+  "ren_handelshoyskole": false,
+  "type": "fakultet",
+  "referanse": false,
+  "iHHKonkurrentsett": null,
+  "nva": {
+   "enheter": [
+    {
+     "id": "192.11.0.0",
+     "url": "https://api.nva.unit.no/cristin/organization/192.11.0.0",
+     "navn": "Handelshøgskolen"
+    }
+   ],
+   "kontroll2024": {
+    "akademiskeArtikler": 67,
+    "alleKategorier": 367,
+    "sporring": "search/resources?unit=<enhets-URL>&publicationYear=2024&instanceType=AcademicArticle"
+   },
+   "merknad": "Inkluderer underenheten 192.11.1.0 Skatteforsk."
+  },
+  "dbh": {
+   "institusjonskode": "1173",
+   "avdelingskoder": [
+    "470000",
+    "470100",
+    "470200",
+    "470210",
+    "470220"
+   ],
+   "fakultetskode": "470",
+   "tall": {
+    "2024": {
+     "publiseringspoeng": 60.6,
+     "publikasjoner": 71,
+     "arsverk": 82.8,
+     "fagligeArsverk": 41.5
+    },
+    "2025": {
+     "publiseringspoeng": 68.8,
+     "publikasjoner": 74,
+     "arsverk": 85.2,
+     "fagligeArsverk": 44.0
+    }
+   },
+   "alternativ": null,
+   "merknad": "Hele fakultet 470. Publiseringspoeng føres på 470000."
+  },
+  "akkrediteringer": [
+   {
+    "type": "AACSB",
+    "status": "akkreditert",
+    "aar": 2025,
+    "kilde": "https://www.aacsb.edu/media-center/news/2025/11/8-institutions-earn-aacsb-initial-business-accreditation",
+    "merknad": "Første gangs akkreditering november 2025 (NMBU-sak https://www.nmbu.no/en/node/57607). Står i AACSB-søket for Norge."
+   }
+  ],
+  "rangeringer": [
+   {
+    "rangering": "FT European Business Schools",
+    "aar": 2025,
+    "plassering": null,
+    "url": "https://rankings.ft.com/rankings/3042/european-business-school-rankings-2025",
+    "merknad": "Ikke med."
+   },
+   {
+    "rangering": "Eduniversal",
+    "aar": "2025/2026",
+    "plassering": null,
+    "url": "https://www.eduniversal-ranking.com/business-school-university-ranking-in-norway.html",
+    "merknad": "Ikke oppført."
+   },
+   {
+    "rangering": "ShanghaiRanking GRAS – Economics",
+    "aar": 2026,
+    "plassering": "401-500",
+    "forrige": {
+     "aar": 2025,
+     "plassering": null
+    },
+    "url": "https://www.shanghairanking.com/rankings/gras/2026/AS0501",
+    "niva": "hele institusjonen (GRAS rangerer universiteter, ikke fakulteter)"
+   }
+  ],
+  "usikkerhet": "Lav for avgrensning. Dette er HHs egen enhet (hovedenhet i rangeringen)."
+ },
+ {
+  "id": "uis",
+  "navn": "Handelshøgskolen ved UiS",
+  "navnEn": "UiS School of Business and Law",
+  "institusjon": "Universitetet i Stavanger",
+  "ren_handelshoyskole": false,
+  "type": "fakultet",
+  "referanse": false,
+  "iHHKonkurrentsett": true,
+  "nva": {
+   "enheter": [
+    {
+     "id": "217.14.0.0",
+     "url": "https://api.nva.unit.no/cristin/organization/217.14.0.0",
+     "navn": "Handelshøgskolen UiS"
+    }
+   ],
+   "kontroll2024": {
+    "akademiskeArtikler": 89,
+    "alleKategorier": 494,
+    "sporring": "search/resources?unit=<enhets-URL>&publicationYear=2024&instanceType=AcademicArticle"
+   },
+   "merknad": "Norsk hotellhøgskole (NHS) ligger fortsatt i NVA under Det samfunnsvitenskapelige fakultet: 217.7.6.0 «NHS – Institutt for ledelse og tjenesteutvikling» (21 artikler 2024). Ta med hvis NHS skal regnes inn (overført til Handelshøgskolen 1.1.2026 ifølge strategikartleggingen)."
+  },
+  "dbh": {
+   "institusjonskode": "1160",
+   "avdelingskoder": [
+    "230000",
+    "230100",
+    "230220",
+    "230230",
+    "230240"
+   ],
+   "fakultetskode": "230",
+   "tall": {
+    "2024": {
+     "publiseringspoeng": 94.4,
+     "publikasjoner": 98,
+     "arsverk": 96.2,
+     "fagligeArsverk": 49.3
+    },
+    "2025": {
+     "publiseringspoeng": 119.4,
+     "publikasjoner": 114,
+     "arsverk": 84.5,
+     "fagligeArsverk": 47.7
+    }
+   },
+   "alternativ": {
+    "navn": "Med NHS (210245)",
+    "tall": {
+     "2024": {
+      "publiseringspoeng": 21.4,
+      "publikasjoner": 31,
+      "arsverk": 28.1,
+      "fagligeArsverk": 21.9
+     },
+     "2025": {
+      "publiseringspoeng": 16.4,
+      "publikasjoner": 25,
+      "arsverk": 21.8,
+      "fagligeArsverk": 18.3
+     }
+    },
+    "merknad": "Tall for NHS alene – legg til ved behov."
+   },
+   "merknad": "Hele fakultet 230. NHS (avdeling 210245, fakultet 210) er gyldig t.o.m. 2025 og er IKKE med i tallene; ennå ingen ny NHS-kode under 230 i tabell 210."
+  },
+  "akkrediteringer": [
+   {
+    "type": "EFMD Programme Accreditation",
+    "status": "akkreditert program",
+    "aar": 2021,
+    "kilde": "https://www.efmdglobal.org/accreditations-assessments/business-schools/efmd-accredited/efmd-accredited-programmes/",
+    "merknad": "Master in Economics and Business Administration (5 år på EFMD-listen). UiS-sak publisert 21.04.2021: https://www.uis.no/en/about-uis/msc-business-administration-receives-efmd-accreditation"
+   },
+   {
+    "type": "AACSB",
+    "status": "medlem, ikke akkreditert",
+    "aar": null,
+    "kilde": "https://www.bi.no/en/about-bi/news/2025/03/joint-statement-from-nordic-business-schools-on-aacsbs-recent-guideline-changes/",
+    "merknad": "Signerte den nordiske AACSB-uttalelsen 2025, men står ikke i AACSBs liste over akkrediterte skoler i Norge."
+   }
+  ],
+  "rangeringer": [
+   {
+    "rangering": "Eduniversal",
+    "aar": "2025/2026",
+    "plassering": "Selected school (uten palmer)",
+    "url": "https://www.eduniversal-ranking.com/business-school-university-ranking-in-norway.html"
+   },
+   {
+    "rangering": "ShanghaiRanking GRAS – Economics",
+    "aar": 2026,
+    "plassering": "301-400",
+    "forrige": {
+     "aar": 2025,
+     "plassering": "301-400"
+    },
+    "url": "https://www.shanghairanking.com/rankings/gras/2026/AS0501",
+    "niva": "hele institusjonen (GRAS rangerer universiteter, ikke fakulteter)"
+   },
+   {
+    "rangering": "ShanghaiRanking GRAS – Business Administration",
+    "aar": 2026,
+    "plassering": "201-300",
+    "forrige": {
+     "aar": 2025,
+     "plassering": "201-300"
+    },
+    "url": "https://www.shanghairanking.com/rankings/gras/2026/AS0509",
+    "niva": "hele institusjonen (GRAS rangerer universiteter, ikke fakulteter)"
+   },
+   {
+    "rangering": "ShanghaiRanking GRAS – Management",
+    "aar": 2026,
+    "plassering": "151-200",
+    "forrige": {
+     "aar": 2025,
+     "plassering": "151-200"
+    },
+    "url": "https://www.shanghairanking.com/rankings/gras/2026/AS0511",
+    "niva": "hele institusjonen (GRAS rangerer universiteter, ikke fakulteter)"
+   }
+  ],
+  "usikkerhet": "Middels: NHS-flyttingen 2026 gjør at enheten blir større fra 2026 enn i 2024-tallene. GRAS gjelder hele UiS."
+ },
+ {
+  "id": "uia",
+  "navn": "Handelshøyskolen ved UiA",
+  "navnEn": "School of Business and Law, University of Agder",
+  "institusjon": "Universitetet i Agder",
+  "ren_handelshoyskole": false,
+  "type": "fakultet",
+  "referanse": false,
+  "iHHKonkurrentsett": true,
+  "nva": {
+   "enheter": [
+    {
+     "id": "201.20.0.0",
+     "url": "https://api.nva.unit.no/cristin/organization/201.20.0.0",
+     "navn": "Handelshøyskolen ved UiA"
+    }
+   ],
+   "kontroll2024": {
+    "akademiskeArtikler": 117,
+    "alleKategorier": 443,
+    "sporring": "search/resources?unit=<enhets-URL>&publicationYear=2024&instanceType=AcademicArticle"
+   },
+   "merknad": "Inkluderer Institutt for rettsvitenskap (201.20.2.0)."
+  },
+  "dbh": {
+   "institusjonskode": "1171",
+   "avdelingskoder": [
+    "415000",
+    "415210",
+    "415220",
+    "415230",
+    "415240",
+    "415250"
+   ],
+   "fakultetskode": "415",
+   "tall": {
+    "2024": {
+     "publiseringspoeng": 118.9,
+     "publikasjoner": 142,
+     "arsverk": 108.4,
+     "fagligeArsverk": 69.2
+    },
+    "2025": {
+     "publiseringspoeng": 134.3,
+     "publikasjoner": 148,
+     "arsverk": 111.7,
+     "fagligeArsverk": 69.3
+    }
+   },
+   "alternativ": null,
+   "merknad": "Hele fakultet 415, inkl. Institutt for rettsvitenskap (415220). Omorganisert 2024: 415210 og 415230 (gyldig t.o.m. 2024) slått sammen til 415250 Institutt for ledelse og innovasjon – publiseringspoeng 2024 står på de gamle kodene, årsverk på den nye. Bruk fakultetssum."
+  },
+  "akkrediteringer": [
+   {
+    "type": "AACSB",
+    "status": "akkreditert",
+    "aar": 2019,
+    "kilde": "https://www.aacsb.edu/accredited/u/university-of-agder",
+    "merknad": "Første gang 21.02.2019 (https://uia.no/en/news/the-school-of-business-and-law-at-the-university-of-agder-has-joined-the-elite-club-of-aacsb-accredited-business-schools), reakkreditert 2023/2024."
+   }
+  ],
+  "rangeringer": [
+   {
+    "rangering": "Eduniversal",
+    "aar": "2025/2026",
+    "plassering": "1 Palme of Excellence",
+    "url": "https://www.eduniversal-ranking.com/business-school-university-ranking-in-norway.html"
+   },
+   {
+    "rangering": "ShanghaiRanking GRAS – Business Administration",
+    "aar": 2026,
+    "plassering": "201-300",
+    "forrige": {
+     "aar": 2025,
+     "plassering": "101-150"
+    },
+    "url": "https://www.shanghairanking.com/rankings/gras/2026/AS0509",
+    "niva": "hele institusjonen (GRAS rangerer universiteter, ikke fakulteter)"
+   },
+   {
+    "rangering": "ShanghaiRanking GRAS – Management",
+    "aar": 2026,
+    "plassering": null,
+    "forrige": {
+     "aar": 2025,
+     "plassering": "401-500"
+    },
+    "url": "https://www.shanghairanking.com/rankings/gras/2026/AS0511",
+    "niva": "hele institusjonen (GRAS rangerer universiteter, ikke fakulteter)"
+   }
+  ],
+  "usikkerhet": "Lav–middels: juss er med i både NVA og DBH. GRAS gjelder hele UiA."
+ },
+ {
+  "id": "nord",
+  "navn": "Handelshøgskolen ved Nord universitet",
+  "navnEn": "Nord University Business School",
+  "institusjon": "Nord universitet",
+  "ren_handelshoyskole": false,
+  "type": "fakultet",
+  "referanse": false,
+  "iHHKonkurrentsett": true,
+  "nva": {
+   "enheter": [
+    {
+     "id": "204.50.0.0",
+     "url": "https://api.nva.unit.no/cristin/organization/204.50.0.0",
+     "navn": "Handelshøgskolen"
+    }
+   ],
+   "kontroll2024": {
+    "akademiskeArtikler": 90,
+    "alleKategorier": 577,
+    "sporring": "search/resources?unit=<enhets-URL>&publicationYear=2024&instanceType=AcademicArticle"
+   },
+   "merknad": "Ingen underenheter registrert i NVA."
+  },
+  "dbh": {
+   "institusjonskode": "1174",
+   "avdelingskoder": [
+    "510000"
+   ],
+   "fakultetskode": "510",
+   "tall": {
+    "2024": {
+     "publiseringspoeng": 110.9,
+     "publikasjoner": 112,
+     "arsverk": 231.1,
+     "fagligeArsverk": 139.7
+    },
+    "2025": {
+     "publiseringspoeng": 108.6,
+     "publikasjoner": 130,
+     "arsverk": 217.0,
+     "fagligeArsverk": 133.4
+    }
+   },
+   "alternativ": null,
+   "merknad": "Én avdelingskode for hele fakultetet."
+  },
+  "akkrediteringer": [
+   {
+    "type": "AACSB",
+    "status": "medlem, ikke akkreditert",
+    "aar": null,
+    "kilde": "https://www.bi.no/en/about-bi/news/2025/03/joint-statement-from-nordic-business-schools-on-aacsbs-recent-guideline-changes/",
+    "merknad": "Signerte den nordiske AACSB-uttalelsen 2025; ikke i AACSBs liste over akkrediterte skoler i Norge (https://www.aacsb.edu/accredited?countries=norway, 03.10.2026)."
+   }
+  ],
+  "rangeringer": [],
+  "usikkerhet": "Lav for avgrensning. Mange årsverk (231) i forhold til publisering – stor undervisningsportefølje over flere campus."
+ },
+ {
+  "id": "ntnu",
+  "navn": "NTNU Handelshøyskolen",
+  "navnEn": "NTNU Business School",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "ren_handelshoyskole": false,
+  "type": "institutt",
+  "referanse": false,
+  "iHHKonkurrentsett": true,
+  "nva": {
+   "enheter": [
+    {
+     "id": "194.60.10.0",
+     "url": "https://api.nva.unit.no/cristin/organization/194.60.10.0",
+     "navn": "NTNU Handelshøyskolen"
+    }
+   ],
+   "kontroll2024": {
+    "akademiskeArtikler": 68,
+    "alleKategorier": 400,
+    "sporring": "search/resources?unit=<enhets-URL>&publicationYear=2024&instanceType=AcademicArticle"
+   },
+   "merknad": "Hele Fakultet for økonomi (194.60.0.0) gir 228 artikler; IØT (194.60.25.0) alene 132, Inst. for samfunnsøkonomi (194.60.20.0) 20, Inst. for internasjonal business, Ålesund (194.60.15.0) 16."
+  },
+  "dbh": {
+   "institusjonskode": "1150",
+   "avdelingskoder": [
+    "230210"
+   ],
+   "fakultetskode": "230",
+   "tall": {
+    "2024": {
+     "publiseringspoeng": 57.2,
+     "publikasjoner": 72,
+     "arsverk": 59.5,
+     "fagligeArsverk": 42.0
+    },
+    "2025": {
+     "publiseringspoeng": 49.6,
+     "publikasjoner": 59,
+     "arsverk": 59.9,
+     "fagligeArsverk": 40.4
+    }
+   },
+   "alternativ": {
+    "navn": "Hele Fakultet for økonomi (230)",
+    "tall": {
+     "2024": {
+      "publiseringspoeng": 264.6,
+      "publikasjoner": 270,
+      "arsverk": 337.0,
+      "fagligeArsverk": 181.9
+     },
+     "2025": {
+      "publiseringspoeng": 298.6,
+      "publikasjoner": 302,
+      "arsverk": 312.2,
+      "fagligeArsverk": 175.9
+     }
+    },
+    "merknad": "Brukes i HHs fagmiljøsammenligning (staffData: 1150_230). IØT er sivilingeniørmiljø og utgjør ~2/3 av publiseringen."
+   },
+   "merknad": "NTNU Handelshøyskolen er et institutt (230210) under Fakultet for økonomi (230), sammen med Inst. for internasjonal forretningsdrift (230220, Ålesund), Inst. for samfunnsøkonomi (230230) og Inst. for industriell økonomi og teknologiledelse (230240, IØT)."
+  },
+  "akkrediteringer": [
+   {
+    "type": "AACSB",
+    "status": "medlem, ikke akkreditert",
+    "aar": null,
+    "kilde": "https://www.bi.no/en/about-bi/news/2025/03/joint-statement-from-nordic-business-schools-on-aacsbs-recent-guideline-changes/",
+    "merknad": "Fakultet for økonomi signerte den nordiske AACSB-uttalelsen 2025 som medlem; ikke akkreditert."
+   }
+  ],
+  "rangeringer": [
+   {
+    "rangering": "ShanghaiRanking GRAS – Economics",
+    "aar": 2026,
+    "plassering": "201-300",
+    "forrige": {
+     "aar": 2025,
+     "plassering": "201-300"
+    },
+    "url": "https://www.shanghairanking.com/rankings/gras/2026/AS0501",
+    "niva": "hele institusjonen (GRAS rangerer universiteter, ikke fakulteter)"
+   },
+   {
+    "rangering": "ShanghaiRanking GRAS – Business Administration",
+    "aar": 2026,
+    "plassering": "301-400",
+    "forrige": {
+     "aar": 2025,
+     "plassering": "201-300"
+    },
+    "url": "https://www.shanghairanking.com/rankings/gras/2026/AS0509",
+    "niva": "hele institusjonen (GRAS rangerer universiteter, ikke fakulteter)"
+   },
+   {
+    "rangering": "ShanghaiRanking GRAS – Management",
+    "aar": 2026,
+    "plassering": "76-100",
+    "forrige": {
+     "aar": 2025,
+     "plassering": "76-100"
+    },
+    "url": "https://www.shanghairanking.com/rankings/gras/2026/AS0511",
+    "niva": "hele institusjonen (GRAS rangerer universiteter, ikke fakulteter)"
+   }
+  ],
+  "usikkerhet": "Høy for avgrensning: «NTNU Business School» er formelt bare instituttet 230210, mens AACSB-medlemskapet og HHs fagmiljøsammenligning gjelder hele Fakultet for økonomi. Velg avgrensning før rangering. GRAS Management 76-100 skyldes trolig IØT og gjelder hele NTNU."
+ },
+ {
+  "id": "uit",
+  "navn": "Handelshøgskolen ved UiT",
+  "navnEn": "School of Business and Economics, UiT The Arctic University of Norway",
+  "institusjon": "UiT Norges arktiske universitet",
+  "ren_handelshoyskole": false,
+  "type": "institutt",
+  "referanse": false,
+  "iHHKonkurrentsett": true,
+  "nva": {
+   "enheter": [
+    {
+     "id": "186.34.13.0",
+     "url": "https://api.nva.unit.no/cristin/organization/186.34.13.0",
+     "navn": "Handelshøgskolen ved UiT"
+    }
+   ],
+   "kontroll2024": {
+    "akademiskeArtikler": 56,
+    "alleKategorier": 241,
+    "sporring": "search/resources?unit=<enhets-URL>&publicationYear=2024&instanceType=AcademicArticle"
+   },
+   "merknad": "Underenheter per campus: Tromsø 186.34.13.20, Narvik .21, Harstad .22 (+ .23 Sikkerhet, beredskap og miljø), Alta .24, og .91 Sannhets- og forsoningskommisjonen."
+  },
+  "dbh": {
+   "institusjonskode": "1130",
+   "avdelingskoder": [
+    "540230"
+   ],
+   "fakultetskode": "540",
+   "tall": {
+    "2024": {
+     "publiseringspoeng": 62.2,
+     "publikasjoner": 83,
+     "arsverk": 119.4,
+     "fagligeArsverk": 87.8
+    },
+    "2025": {
+     "publiseringspoeng": 72.5,
+     "publikasjoner": 78,
+     "arsverk": 109.2,
+     "fagligeArsverk": 87.2
+    }
+   },
+   "alternativ": null,
+   "merknad": "Institutt under Fakultet for biovitenskap, fiskeri og økonomi (BFE, 540). HHs fagmiljøside bruker hele BFE (1130_540)."
+  },
+  "akkrediteringer": [],
+  "rangeringer": [
+   {
+    "rangering": "ShanghaiRanking GRAS – Hospitality & Tourism Management",
+    "aar": 2026,
+    "plassering": "76-100",
+    "forrige": {
+     "aar": 2025,
+     "plassering": "76-100"
+    },
+    "url": "https://www.shanghairanking.com/rankings/gras/2026/AS0513",
+    "niva": "hele UiT – trolig reiselivsmiljøet i Alta/Harstad, ikke nødvendigvis Handelshøgskolen"
+   }
+  ],
+  "usikkerhet": "Middels: enheten er et institutt med flere campus; reiseliv og sikkerhet/beredskap ligger delvis inne."
+ },
+ {
+  "id": "usn",
+  "navn": "USN Handelshøyskolen",
+  "navnEn": "USN School of Business",
+  "institusjon": "Universitetet i Sørøst-Norge",
+  "ren_handelshoyskole": false,
+  "type": "fakultet",
+  "referanse": false,
+  "iHHKonkurrentsett": true,
+  "nva": {
+   "enheter": [
+    {
+     "id": "222.57.0.0",
+     "url": "https://api.nva.unit.no/cristin/organization/222.57.0.0",
+     "navn": "USN Handelshøyskolen"
+    }
+   ],
+   "kontroll2024": {
+    "akademiskeArtikler": 142,
+    "alleKategorier": 711,
+    "sporring": "search/resources?unit=<enhets-URL>&publicationYear=2024&instanceType=AcademicArticle"
+   },
+   "merknad": "Fire institutter 222.57.1.0–222.57.4.0 + administrasjon 222.57.10.0. Inkluderer statsvitenskap, historie og jus."
+  },
+  "dbh": {
+   "institusjonskode": "1176",
+   "avdelingskoder": [
+    "620000",
+    "620100",
+    "620200",
+    "620300",
+    "620400",
+    "620500",
+    "620900",
+    "620910",
+    "620920",
+    "620930",
+    "620940"
+   ],
+   "fakultetskode": "620",
+   "tall": {
+    "2024": {
+     "publiseringspoeng": 180.8,
+     "publikasjoner": 218,
+     "arsverk": 233.3,
+     "fagligeArsverk": 179.6
+    },
+    "2025": {
+     "publiseringspoeng": 196.5,
+     "publikasjoner": 228,
+     "arsverk": 227.0,
+     "fagligeArsverk": 180.8
+    }
+   },
+   "alternativ": null,
+   "merknad": "Hele fakultet 620 (inkl. EVU-avdelinger uten tall)."
+  },
+  "akkrediteringer": [
+   {
+    "type": "EFMD Programme Accreditation",
+    "status": "akkreditert program",
+    "aar": 2022,
+    "kilde": "https://www.efmdglobal.org/accreditations-assessments/business-schools/efmd-accredited/efmd-accredited-programmes/",
+    "merknad": "Bachelor i økonomi og ledelse, 3 år (desember 2022: https://blog.efmdglobal.org/2022/12/20/initial-efmd-programme-accreditation-for-university-of-south-eastern-norway-school-of-business/). Fortsatt på EFMD-listen 03.10.2026, men treårsperioden tilsier fornyelse i 2025 – ikke bekreftet."
+   }
+  ],
+  "rangeringer": [
+   {
+    "rangering": "ShanghaiRanking GRAS – Business Administration",
+    "aar": 2026,
+    "plassering": "301-400",
+    "forrige": {
+     "aar": 2025,
+     "plassering": "301-400"
+    },
+    "url": "https://www.shanghairanking.com/rankings/gras/2026/AS0509",
+    "niva": "hele institusjonen (GRAS rangerer universiteter, ikke fakulteter)"
+   }
+  ],
+  "usikkerhet": "Middels: fakultetet inkluderer statsvitenskap, historie og IT-fag. GRAS gjelder hele USN."
+ },
+ {
+  "id": "inn",
+  "navn": "Handelshøgskolen Innlandet – Fakultet for økonomi og samfunnsvitenskap",
+  "navnEn": "Inland School of Business and Social Sciences",
+  "institusjon": "Universitetet i Innlandet (tidl. Høgskolen i Innlandet)",
+  "ren_handelshoyskole": false,
+  "type": "fakultet",
+  "referanse": false,
+  "iHHKonkurrentsett": true,
+  "nva": {
+   "enheter": [
+    {
+     "id": "209.6.0.0",
+     "url": "https://api.nva.unit.no/cristin/organization/209.6.0.0",
+     "navn": "Handelshøgskolen Innlandet – Fakultet for økonomi og samfunnsvitenskap"
+    }
+   ],
+   "kontroll2024": {
+    "akademiskeArtikler": 250,
+    "alleKategorier": 800,
+    "sporring": "search/resources?unit=<enhets-URL>&publicationYear=2024&instanceType=AcademicArticle"
+   },
+   "merknad": "Hele fakultetet inkluderer psykologi (209.6.2.0), jus/filosofi/internasjonale studier (209.6.8.0) og Østlandsforskning (209.6.7.0). Kjerne: 209.6.4.0 Org., ledelse, styring (85 artikler 2024) + 209.6.5.0 Økonomifag (84)."
+  },
+  "dbh": {
+   "institusjonskode": "0264→1177",
+   "avdelingskoder": [
+    "440000",
+    "440010",
+    "440020",
+    "440030",
+    "440300",
+    "440400",
+    "440500",
+    "440700",
+    "440800"
+   ],
+   "fakultetskode": "440",
+   "tall": {
+    "2024": {
+     "publiseringspoeng": 279.0,
+     "publikasjoner": 322,
+     "arsverk": 253.4,
+     "fagligeArsverk": 175.7
+    },
+    "2025": {
+     "publiseringspoeng": 256.7,
+     "publikasjoner": 274,
+     "arsverk": 236.4,
+     "fagligeArsverk": 167.1
+    }
+   },
+   "alternativ": {
+    "navn": "Kjerne: 440400 Økonomifag + 440500 Organisasjon, ledelse og styring",
+    "tall": {
+     "2024": {
+      "publiseringspoeng": 166.7,
+      "publikasjoner": 203,
+      "arsverk": 137.1,
+      "fagligeArsverk": 112.4
+     },
+     "2025": {
+      "publiseringspoeng": 155.7,
+      "publikasjoner": 179,
+      "arsverk": 126.9,
+      "fagligeArsverk": 107.5
+     }
+    },
+    "merknad": "Uten psykologi, jus/filosofi og Østlandsforskning."
+   },
+   "merknad": "Institusjonskoden byttet fra 0264 (HINN, t.o.m. 2024) til 1177 (Universitetet i Innlandet, fra 2025). 2024-tall ligger under 0264, 2025-tall under 1177."
+  },
+  "akkrediteringer": [],
+  "rangeringer": [
+   {
+    "rangering": "Eduniversal",
+    "aar": "2025/2026",
+    "plassering": "Selected school (uten palmer)",
+    "url": "https://www.eduniversal-ranking.com/business-school-university-ranking-in-norway.html"
+   }
+  ],
+  "usikkerhet": "Høy for avgrensning: fakultetet heter handelshøgskole, men rundt 40 % av publiseringspoengene kommer fra psykologi, jus/filosofi og Østlandsforskning. Velg hel eller kjerne."
+ },
+ {
+  "id": "oslomet",
+  "navn": "Handelshøyskolen ved OsloMet",
+  "navnEn": "Oslo Business School",
+  "institusjon": "OsloMet – storbyuniversitetet",
+  "ren_handelshoyskole": false,
+  "type": "institutt",
+  "referanse": false,
+  "iHHKonkurrentsett": true,
+  "nva": {
+   "enheter": [
+    {
+     "id": "215.5.6.0",
+     "url": "https://api.nva.unit.no/cristin/organization/215.5.6.0",
+     "navn": "Handelshøyskolen"
+    },
+    {
+     "id": "215.5.6.1",
+     "url": "https://api.nva.unit.no/cristin/organization/215.5.6.1",
+     "navn": "Finans og regnskap"
+    },
+    {
+     "id": "215.5.6.2",
+     "url": "https://api.nva.unit.no/cristin/organization/215.5.6.2",
+     "navn": "Offentlig administrasjon og styring"
+    },
+    {
+     "id": "215.5.6.3",
+     "url": "https://api.nva.unit.no/cristin/organization/215.5.6.3",
+     "navn": "Organisasjon og ledelse"
+    },
+    {
+     "id": "215.5.6.4",
+     "url": "https://api.nva.unit.no/cristin/organization/215.5.6.4",
+     "navn": "Samfunnsøkonomi og metode"
+    },
+    {
+     "id": "215.5.6.5",
+     "url": "https://api.nva.unit.no/cristin/organization/215.5.6.5",
+     "navn": "Strategi, innovasjon og markedsføring"
+    }
+   ],
+   "kontroll2024": {
+    "akademiskeArtikler": 49,
+    "alleKategorier": null,
+    "sporring": "search/resources?unit=<enhets-URL>&publicationYear=2024&instanceType=AcademicArticle"
+   },
+   "merknad": "FALLGRUVE: faggruppene 215.5.6.1–.5 ligger i NVA som søsken av 215.5.6.0 (direkte under SAM-fakultetet 215.5.0.0), ikke som barn. unit=215.5.6.0 alene gir bare 19 artikler (188 alle kategorier). 49 er unionen av artikler med minst én 215.5.6.*-tilknytning blant SAMs 200 artikler i 2024 (talt fra søkeresultatet)."
+  },
+  "dbh": {
+   "institusjonskode": "1175",
+   "avdelingskoder": [
+    "530350"
+   ],
+   "fakultetskode": "530",
+   "tall": {
+    "2024": {
+     "publiseringspoeng": 71.3,
+     "publikasjoner": 71,
+     "arsverk": 79.4,
+     "fagligeArsverk": 68.9
+    },
+    "2025": {
+     "publiseringspoeng": 47.5,
+     "publikasjoner": 60,
+     "arsverk": 82.2,
+     "fagligeArsverk": 72.8
+    }
+   },
+   "alternativ": null,
+   "merknad": "Institutt under Fakultet for samfunnsvitenskap (SAM, 530). HHs fagmiljøside bruker hele SAM (1175_530)."
+  },
+  "akkrediteringer": [
+   {
+    "type": "AACSB",
+    "status": "medlem, ikke akkreditert",
+    "aar": null,
+    "kilde": "https://www.bi.no/en/about-bi/news/2025/03/joint-statement-from-nordic-business-schools-on-aacsbs-recent-guideline-changes/",
+    "merknad": "Signerte den nordiske AACSB-uttalelsen 2025 som medlem."
+   }
+  ],
+  "rangeringer": [
+   {
+    "rangering": "Eduniversal",
+    "aar": "2025/2026",
+    "plassering": "Selected school (uten palmer)",
+    "url": "https://www.eduniversal-ranking.com/business-school-university-ranking-in-norway.html"
+   }
+  ],
+  "usikkerhet": "Middels: NVA-strukturen krever seks enhets-id-er. Offentlig administrasjon og styring er med."
+ },
+ {
+  "id": "himolde",
+  "navn": "Høgskolen i Molde – Avdeling for logistikk og Avdeling for økonomi og samfunnsvitenskap",
+  "navnEn": "Molde University College – Specialized University in Logistics",
+  "institusjon": "Høgskolen i Molde – vitenskapelig høgskole i logistikk",
+  "ren_handelshoyskole": false,
+  "type": "sammensatt",
+  "referanse": false,
+  "iHHKonkurrentsett": false,
+  "nva": {
+   "enheter": [
+    {
+     "id": "211.4.0.0",
+     "url": "https://api.nva.unit.no/cristin/organization/211.4.0.0",
+     "navn": "Avdeling for logistikk"
+    },
+    {
+     "id": "211.5.0.0",
+     "url": "https://api.nva.unit.no/cristin/organization/211.5.0.0",
+     "navn": "Avdeling for økonomi og samfunnsvitenskap"
+    }
+   ],
+   "kontroll2024": {
+    "akademiskeArtikler": 69,
+    "alleKategorier": null,
+    "sporring": "search/resources?unit=<enhets-URL>&publicationYear=2024&instanceType=AcademicArticle"
+   },
+   "merknad": "Logistikk 44 + økonomi/samfunnsvitenskap 27 artikler 2024; union 69. Hele institusjonen (211.0.0.0) gir 113 (568 alle kategorier), inkl. helse- og sosialfag (211.2.0.0)."
+  },
+  "dbh": {
+   "institusjonskode": "0232",
+   "avdelingskoder": [
+    "461000",
+    "462000"
+   ],
+   "fakultetskode": "461+462",
+   "tall": {
+    "2024": {
+     "publiseringspoeng": 92.9,
+     "publikasjoner": 97,
+     "arsverk": 122.3,
+     "fagligeArsverk": 86.5
+    },
+    "2025": {
+     "publiseringspoeng": 146.1,
+     "publikasjoner": 129,
+     "arsverk": 124.8,
+     "fagligeArsverk": 90.5
+    }
+   },
+   "alternativ": {
+    "navn": "Hele institusjonen",
+    "tall": {
+     "2024": {
+      "publiseringspoeng": 130.9,
+      "publikasjoner": 146,
+      "arsverk": 280.9,
+      "fagligeArsverk": 164.3
+     },
+     "2025": {
+      "publiseringspoeng": 189.6,
+      "publikasjoner": 190,
+      "arsverk": 285.8,
+      "fagligeArsverk": 166.0
+     }
+    },
+    "merknad": "Inkl. helse- og sosialfag."
+   },
+   "merknad": "To avdelinger: 461 Avdeling for logistikk og 462 Avdeling for økonomi og samfunnsvitenskap. Avdeling for helse- og sosialfag (440) holdes utenfor."
+  },
+  "akkrediteringer": [],
+  "rangeringer": [],
+  "usikkerhet": "Middels–høy: ingen enhet heter handelshøyskole. Logistikk (eget doktorgradsfelt) er tatt med som økonomisk-administrativt fag; samfunnsvitenskap i 462 er også med. Ikke med i HHs 13 konkurrenter, bare som programkonkurrent i staffData."
+ },
+ {
+  "id": "hvl",
+  "navn": "Handelshøgskulen HVL",
+  "navnEn": "HVL Business School (Western Norway University of Applied Sciences)",
+  "institusjon": "Høgskulen på Vestlandet",
+  "ren_handelshoyskole": false,
+  "type": "institutt",
+  "referanse": false,
+  "iHHKonkurrentsett": true,
+  "nva": {
+   "enheter": [
+    {
+     "id": "203.14.5.0",
+     "url": "https://api.nva.unit.no/cristin/organization/203.14.5.0",
+     "navn": "Handelshøgskulen HVL"
+    }
+   ],
+   "kontroll2024": {
+    "akademiskeArtikler": 63,
+    "alleKategorier": 226,
+    "sporring": "search/resources?unit=<enhets-URL>&publicationYear=2024&instanceType=AcademicArticle"
+   },
+   "merknad": "Institutt under Fakultet for teknologi, miljø- og samfunnsvitskap (203.14.0.0). Ingen underenheter."
+  },
+  "dbh": {
+   "institusjonskode": "0238",
+   "avdelingskoder": [
+    "250350"
+   ],
+   "fakultetskode": "250",
+   "tall": {
+    "2024": {
+     "publiseringspoeng": 55.5,
+     "publikasjoner": 64,
+     "arsverk": 120.0,
+     "fagligeArsverk": 103.5
+    },
+    "2025": {
+     "publiseringspoeng": 53.2,
+     "publikasjoner": 55,
+     "arsverk": 115.9,
+     "fagligeArsverk": 98.2
+    }
+   },
+   "alternativ": null,
+   "merknad": "Institutt under fakultet 250 (FTMS, fra 2024). HHs fagmiljøside bruker hele FTMS (0238_250)."
+  },
+  "akkrediteringer": [],
+  "rangeringer": [],
+  "usikkerhet": "Lav for avgrensning, men 250-fakultetet ble opprettet 2024 – eldre år ligger under annen fakultetskode (sjekk 210 før tidsserier)."
+ },
+ {
+  "id": "kristiania",
+  "navn": "Høyskolen Kristiania – Fakultet for ledelse og økonomi",
+  "navnEn": "Kristiania University of Applied Sciences – Faculty of Management and Economics",
+  "institusjon": "Høyskolen Kristiania (privat)",
+  "ren_handelshoyskole": false,
+  "type": "sammensatt",
+  "referanse": false,
+  "iHHKonkurrentsett": true,
+  "nva": {
+   "enheter": [
+    {
+     "id": "1615.30.0.0",
+     "url": "https://api.nva.unit.no/cristin/organization/1615.30.0.0",
+     "navn": "Fakultet for ledelse og økonomi"
+    },
+    {
+     "id": "1615.10.0.0",
+     "url": "https://api.nva.unit.no/cristin/organization/1615.10.0.0",
+     "navn": "School of Economics, Innovation, and Technology (nedlagt)"
+    }
+   ],
+   "kontroll2024": {
+    "akademiskeArtikler": 120,
+    "alleKategorier": null,
+    "sporring": "search/resources?unit=<enhets-URL>&publicationYear=2024&instanceType=AcademicArticle"
+   },
+   "merknad": "Ny struktur fra 1.8.2026: 1615.30.0.0 med Inst. for markedsføring og økonomi (.10), ledelse og innovasjon (.20), kommunikasjon (.30) – 57 artikler 2024. Gamle SEIT (1615.10.0.0, 63 artikler 2024) har ingen kobling til ny struktur i NVA og må tas med separat for 2024–2025. 120 = 63 + 57 (overlapp antatt liten; unionstelling kunne ikke fullføres pga. NVA-paginering)."
+  },
+  "dbh": {
+   "institusjonskode": "8253",
+   "avdelingskoder": [
+    "310000",
+    "310100",
+    "310200",
+    "330000",
+    "330100",
+    "330200",
+    "330300",
+    "380000",
+    "380100",
+    "380200",
+    "380300"
+   ],
+   "fakultetskode": "310+330 (t.o.m. 2025) → 380 (fra 2026)",
+   "tall": {
+    "2024": {
+     "publiseringspoeng": 192.8,
+     "publikasjoner": 183,
+     "arsverk": 190.3,
+     "fagligeArsverk": 140.9
+    },
+    "2025": {
+     "publiseringspoeng": 215.0,
+     "publikasjoner": 199,
+     "arsverk": 195.4,
+     "fagligeArsverk": 145.1
+    }
+   },
+   "alternativ": null,
+   "merknad": "2024–2025: School of Economics, Innovation, and Technology (310) + School of Communication, Leadership, and Marketing (330). Fra 2026: Fakultet for ledelse og økonomi (380). SEIT omfattet også teknologi (nå i 360 Fakultet for helse og teknologi), og 330 omfatter kommunikasjon."
+  },
+  "akkrediteringer": [],
+  "rangeringer": [],
+  "usikkerhet": "Høy: omorganisering 2026, ulik avgrensning før/etter. 2024-tallene inkluderer teknologi (SEIT) og kommunikasjon (SCLM). Bør vurderes om kommunikasjon skal ut."
+ },
+ {
+  "id": "hiof",
+  "navn": "Høgskolen i Østfold – Institutt for økonomi, innovasjon og samfunn",
+  "navnEn": "Østfold University College – Department of Economics, Innovation and Society",
+  "institusjon": "Høgskolen i Østfold",
+  "ren_handelshoyskole": false,
+  "type": "institutt",
+  "referanse": false,
+  "iHHKonkurrentsett": true,
+  "nva": {
+   "enheter": [
+    {
+     "id": "224.65.30.0",
+     "url": "https://api.nva.unit.no/cristin/organization/224.65.30.0",
+     "navn": "Institutt for økonomi, innovasjon og samfunn"
+    }
+   ],
+   "kontroll2024": {
+    "akademiskeArtikler": 6,
+    "alleKategorier": 106,
+    "sporring": "search/resources?unit=<enhets-URL>&publicationYear=2024&instanceType=AcademicArticle"
+   },
+   "merknad": "Under Fakultet for informasjonsteknologi, ingeniørfag og økonomi (224.65.0.0)."
+  },
+  "dbh": {
+   "institusjonskode": "0256",
+   "avdelingskoder": [
+    "370300"
+   ],
+   "fakultetskode": "370",
+   "tall": {
+    "2024": {
+     "publiseringspoeng": 7.3,
+     "publikasjoner": 9,
+     "arsverk": 20.7,
+     "fagligeArsverk": 20.7
+    },
+    "2025": {
+     "publiseringspoeng": 3.7,
+     "publikasjoner": 5,
+     "arsverk": 19.8,
+     "fagligeArsverk": 18.8
+    }
+   },
+   "alternativ": null,
+   "merknad": "Institutt under fakultet 370 (IIØ). HHs fagmiljøside bruker hele IIØ (0256_370)."
+  },
+  "akkrediteringer": [],
+  "rangeringer": [],
+  "usikkerhet": "Middels: svært lite forskningsmiljø (7,3 publiseringspoeng 2024, ~21 årsverk). Vurder om enheten oppfyller kravet «med forskning» – kan tas med som nedre grense eller utelates."
+ },
+ {
+  "id": "uib_okon",
+  "navn": "Institutt for økonomi, Universitetet i Bergen (referanse)",
+  "navnEn": "Department of Economics, University of Bergen",
+  "institusjon": "Universitetet i Bergen",
+  "ren_handelshoyskole": false,
+  "type": "referanse",
+  "referanse": true,
+  "iHHKonkurrentsett": false,
+  "nva": {
+   "enheter": [
+    {
+     "id": "184.15.15.0",
+     "url": "https://api.nva.unit.no/cristin/organization/184.15.15.0",
+     "navn": "Institutt for økonomi"
+    }
+   ],
+   "kontroll2024": {
+    "akademiskeArtikler": 20,
+    "alleKategorier": 76,
+    "sporring": "search/resources?unit=<enhets-URL>&publicationYear=2024&instanceType=AcademicArticle"
+   },
+   "merknad": null
+  },
+  "dbh": {
+   "institusjonskode": "1120",
+   "avdelingskoder": [
+    "210620"
+   ],
+   "fakultetskode": "210",
+   "tall": {
+    "2024": {
+     "publiseringspoeng": 22.9,
+     "publikasjoner": 18,
+     "arsverk": 28.8,
+     "fagligeArsverk": 22.6
+    },
+    "2025": {
+     "publiseringspoeng": 16.2,
+     "publikasjoner": 11,
+     "arsverk": 25.7,
+     "fagligeArsverk": 21.5
+    }
+   },
+   "alternativ": null,
+   "merknad": "Institutt under Det samfunnsvitenskapelige fakultet."
+  },
+  "akkrediteringer": [],
+  "rangeringer": [
+   {
+    "rangering": "Eduniversal",
+    "aar": "2025/2026",
+    "plassering": "Selected school (uten palmer)",
+    "url": "https://www.eduniversal-ranking.com/business-school-university-ranking-in-norway.html"
+   },
+   {
+    "rangering": "ShanghaiRanking GRAS – Economics",
+    "aar": 2026,
+    "plassering": "401-500",
+    "forrige": {
+     "aar": 2025,
+     "plassering": "401-500"
+    },
+    "url": "https://www.shanghairanking.com/rankings/gras/2026/AS0501",
+    "niva": "hele institusjonen (GRAS rangerer universiteter, ikke fakulteter)"
+   },
+   {
+    "rangering": "ShanghaiRanking GRAS – Management",
+    "aar": 2026,
+    "plassering": "301-400",
+    "forrige": {
+     "aar": 2025,
+     "plassering": "401-500"
+    },
+    "url": "https://www.shanghairanking.com/rankings/gras/2026/AS0511",
+    "niva": "hele institusjonen (GRAS rangerer universiteter, ikke fakulteter)"
+   },
+   {
+    "rangering": "ShanghaiRanking GRAS – Business Administration",
+    "aar": 2026,
+    "plassering": null,
+    "forrige": {
+     "aar": 2025,
+     "plassering": "301-400"
+    },
+    "url": "https://www.shanghairanking.com/rankings/gras/2026/AS0509",
+    "niva": "hele institusjonen (GRAS rangerer universiteter, ikke fakulteter)"
+   }
+  ],
+  "usikkerhet": "VALGFRI REFERANSE – samfunnsøkonomisk institutt, ikke handelshøyskole. Bør ikke rangeres sammen med handelshøyskolene uten tydelig merking. GRAS gjelder hele UiB."
+ },
+ {
+  "id": "uio_okon",
+  "navn": "Økonomisk institutt, Universitetet i Oslo (referanse)",
+  "navnEn": "Department of Economics, University of Oslo",
+  "institusjon": "Universitetet i Oslo",
+  "ren_handelshoyskole": false,
+  "type": "referanse",
+  "referanse": true,
+  "iHHKonkurrentsett": false,
+  "nva": {
+   "enheter": [
+    {
+     "id": "185.17.6.0",
+     "url": "https://api.nva.unit.no/cristin/organization/185.17.6.0",
+     "navn": "Økonomisk institutt"
+    }
+   ],
+   "kontroll2024": {
+    "akademiskeArtikler": 40,
+    "alleKategorier": 253,
+    "sporring": "search/resources?unit=<enhets-URL>&publicationYear=2024&instanceType=AcademicArticle"
+   },
+   "merknad": "Inkluderer ESOP-senteret (185.17.6.10)."
+  },
+  "dbh": {
+   "institusjonskode": "1110",
+   "avdelingskoder": [
+    "210620"
+   ],
+   "fakultetskode": "210",
+   "tall": {
+    "2024": {
+     "publiseringspoeng": 45.0,
+     "publikasjoner": 34,
+     "arsverk": 74.4,
+     "fagligeArsverk": 31.7
+    },
+    "2025": {
+     "publiseringspoeng": 67.2,
+     "publikasjoner": 44,
+     "arsverk": 71.8,
+     "fagligeArsverk": 25.3
+    }
+   },
+   "alternativ": null,
+   "merknad": "Institutt under Det samfunnsvitenskapelige fakultet."
+  },
+  "akkrediteringer": [],
+  "rangeringer": [
+   {
+    "rangering": "Eduniversal",
+    "aar": "2025/2026",
+    "plassering": "Selected school (uten palmer)",
+    "url": "https://www.eduniversal-ranking.com/business-school-university-ranking-in-norway.html"
+   },
+   {
+    "rangering": "ShanghaiRanking GRAS – Economics",
+    "aar": 2026,
+    "plassering": "201-300",
+    "forrige": {
+     "aar": 2025,
+     "plassering": "201-300"
+    },
+    "url": "https://www.shanghairanking.com/rankings/gras/2026/AS0501",
+    "niva": "hele institusjonen (GRAS rangerer universiteter, ikke fakulteter)"
+   }
+  ],
+  "usikkerhet": "VALGFRI REFERANSE – samfunnsøkonomisk institutt. GRAS gjelder hele UiO."
+ }
+]

@@ -12,3 +12,15 @@ data/nmbu/kilder/arbeidsmarked/
 data/nmbu/kilder/forskning/
 data/nmbu/kilder/ssb-overgang/
 data/nmbu/kilder/ssb-gjennomforing/
+
+# Rangering: rå NVA-cache og lisensbelagte tidsskriftlister (AJG)
+data/rangering/nva/
+data/rangering/tidsskrift/ajg*.csv
+!data/rangering/tidsskrift/ajg-mal.csv
+data/rangering/dbh/
+data/rangering/rangering-klartekst.json
+# Excel-filer skal aldri inn i repoet
+*.xlsx
+*.xls
+data/rangering/tidsskrift/abdc_page.html
+data/rangering/tidsskrift/kilde/
