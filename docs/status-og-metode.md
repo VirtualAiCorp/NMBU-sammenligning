@@ -799,3 +799,8 @@ KI-chat og uten «Spør KI» (`utenKi` på `AfModulSide`). Grunnen er at metoden
   portrettet. Gamle «Rangering» heter nå «Rangering og vekter». Uten `fane` i lenken åpnes forsiden.
 
 - **03.10 kveld – mobil og lys modus på forsiden:** under 640 px vises tabellen som kortliste (`.fs-kort`: plass, poeng, spenn og de fire nøkkelmålene i 2×2 med prikkestriper), vektvelgeren som 4×2-rutenett og profilkartet med smalere celler. Testet 375 px i lys og mørk modus uten sidelengs rulling.
+- **03.10 kveld – publiseringslandskapet:** `data/rangering/inspirasjon/publiseringslandskapet.md` (faktasjekket 3.10.2026):
+  publiseringspoeng ute av UH-finansieringen fra 2025-budsjettet, men formel/nivåer/DBH uendret; nytt nivå 2-tallgrunnlag
+  (WoS+OpenAlex) gir rom for flere ØA-kanaler fra desember 2026 (mulig brudd i nivå 2-andel); ny ØA-komité (Olaussen,
+  NTNU); AACSB Global Standards 2027–28 uten lister; AJG 2027 i arbeid; Harzing JQL avsluttet; OpenAlex-API krever nøkkel;
+  NHH, BI, HVL og Kristiania ikke i CoARA. Oversiktsside (privat): https://claude.ai/artifact/FZbFBzVnZwv9QVEKwYqZcr
