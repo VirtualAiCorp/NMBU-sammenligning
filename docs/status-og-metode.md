@@ -791,4 +791,10 @@ KI-chat og uten «Spør KI» (`utenKi` på `AfModulSide`). Grunnen er at metoden
   NHH-rapporten (r 0,98, 1,09 × fasit, Spearman 0,93), men overvurderer mindre skoler per årsverk. Nytt mål «AJG 4/4*-anslag
   per 100 årsverk» (vekt 5) for alle 15; «AJG 4/4* (NHH-rapporten)» beholdes med vekt 0. Ny standardrangering: UiA 81,
   UiS 77, NHH 75, BI 72, NTNU 69, HH NMBU 51.
+- **03.10 kveld – Forside (Mathias valgte «forside i portrettstil»):** ny standardfane «Forside» (komponent `Forside`,
+  samme .skp-stil som skoleportrettet). Ingress regnes fra modellen (toppgruppen, hoppet til nr. 6, hvem som leder ved
+  50/75/85 %), vektvelger 50–85 % med endring mot standard, kurstabell gruppert Topp/Midt/Nedre med 15-ruters spenn og fire
+  nøkkelmål med prikkestriper (poeng per årsverk, lagdelt forskning, opptaksgrense siviløkonom, Studiebarometeret),
+  profilkart (tredjedeler av delindeksene, `delindeksAv`/`tertilAv` felles med portrettet) og metodeboks. Skolene åpner
+  portrettet. Gamle «Rangering» heter nå «Rangering og vekter». Uten `fane` i lenken åpnes forsiden.
 

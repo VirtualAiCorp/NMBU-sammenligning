@@ -1,7 +1,7 @@
 import { Fragment, useEffect, useMemo, useState, type ReactNode } from 'react';
 import '../../styles/skoleportrett.css';
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
-import { Lock, Info, Trophy, BookOpen, Building2, FileText, RotateCcw, ShieldCheck, ExternalLink, Columns3, FlaskConical, Link2, Check } from 'lucide-react';
+import { Lock, Info, Trophy, BookOpen, Building2, FileText, RotateCcw, ShieldCheck, ExternalLink, Columns3, FlaskConical, Link2, Check, Newspaper } from 'lucide-react';
 
 /**
  * Utkast til «Norwegian Business School Ranking» (intern, utforskende). Data fra scripts/build-rangering.py:
@@ -226,8 +226,8 @@ function beregn(skoler: Skole[], ind: Ind[], vekt: Record<string, number>, forsk
 }
 
 // ── Tilstand i lenken (?rangering&…) ────────────────────────────────────────
-type Fane = 'rangering' | 'sammenlign' | 'lab' | 'publisering' | 'profil' | 'kontroll' | 'metode';
-const FANER: Fane[] = ['rangering', 'sammenlign', 'lab', 'publisering', 'profil', 'kontroll', 'metode'];
+type Fane = 'forside' | 'rangering' | 'sammenlign' | 'lab' | 'publisering' | 'profil' | 'kontroll' | 'metode';
+const FANER: Fane[] = ['forside', 'rangering', 'sammenlign', 'lab', 'publisering', 'profil', 'kontroll', 'metode'];
 interface Tilstand { fane: Fane; forsk: number; vekt: Record<string, number>; medRef: boolean; lag: Lag; valgt: string[]; profil: string; /** sammenligning i skoleportrettet */ mot: string | null; }
 const PARAM = ['rangering', 'fane', 'forsk', 'vekt', 'ref', 'periode', 'telling', 'nevner', 'lagvekt', 'lister', 'skoler', 'profil', 'mot'];
 function lesTilstand(d: Data, ind: Ind[], std: Tilstand): Tilstand {
@@ -252,7 +252,7 @@ function skrivTilstand(t: Tilstand, std: Tilstand) {
   const q = new URLSearchParams(window.location.search);
   PARAM.forEach((p) => q.delete(p));
   q.set('rangering', '');
-  if (t.fane !== 'rangering') q.set('fane', t.fane);
+  if (t.fane !== std.fane) q.set('fane', t.fane);
   if (t.forsk !== std.forsk) q.set('forsk', String(t.forsk));
   const endret = Object.entries(t.vekt).filter(([id, v]) => std.vekt[id] !== v).map(([id, v]) => `${id}:${v}`);
   if (endret.length) q.set('vekt', endret.join(','));
@@ -322,7 +322,7 @@ function Rangering({ data }: { data: Data }) {
     const lag = lagStandard(y1);
     const ind0 = lagIndikatorer(data, lag);
     const hh = data.skoler.find((s) => s.isNmbu)?.id ?? data.skoler[0].id;
-    return { fane: 'rangering', forsk: FORSK_STANDARD, vekt: Object.fromEntries(ind0.map((i) => [i.id, i.vekt])), medRef: false, lag,
+    return { fane: 'forside', forsk: FORSK_STANDARD, vekt: Object.fromEntries(ind0.map((i) => [i.id, i.vekt])), medRef: false, lag,
       valgt: [hh, ...['nhh', 'bi'].filter((id) => id !== hh && data.skoler.some((s) => s.id === id))].slice(0, 3), profil: hh, mot: null };
   }, [data, y1]);
   const [t, setT] = useState<Tilstand>(() => lesTilstand(data, lagIndikatorer(data, std.lag), std));
@@ -340,7 +340,8 @@ function Rangering({ data }: { data: Data }) {
   const eff = useMemo(() => effektiveVekter(ind, t.vekt, t.forsk), [ind, t.vekt, t.forsk]);
 
   const faner: { id: Fane; label: string; icon: ReactNode }[] = [
-    { id: 'rangering', label: 'Rangering', icon: <Trophy className="w-4 h-4" /> },
+    { id: 'forside', label: 'Forside', icon: <Newspaper className="w-4 h-4" /> },
+    { id: 'rangering', label: 'Rangering og vekter', icon: <Trophy className="w-4 h-4" /> },
     { id: 'sammenlign', label: 'Sammenlign', icon: <Columns3 className="w-4 h-4" /> },
     { id: 'lab', label: 'Forskningslab', icon: <FlaskConical className="w-4 h-4" /> },
     { id: 'publisering', label: 'Publisering', icon: <BookOpen className="w-4 h-4" /> },
@@ -353,7 +354,7 @@ function Rangering({ data }: { data: Data }) {
       <div className="flex items-start gap-2 text-xs rounded-lg px-4 py-3 mb-5" style={{ backgroundColor: 'var(--nmbu-beige-light)', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-2)' }}>
         <Info className="w-4 h-4 flex-shrink-0 mt-0.5" />
         <span>Utkast {data.generert}. Rangeringen er et forslag til metode, ikke et ferdig resultat. Vektene kan endres fritt, og lenken husker valgene.
-          {!harAjg && <> AJG 2024 (ABS-lista) vises foreløpig med NHHs publiserte tall for åtte skoler (nivå 3, 4 og 4*); egen kobling av alle artikler mot AJG kommer når tillatelsen fra Chartered ABS er på plass. ABDC brukes for alle skoler i mellomtiden.</>}</span>
+          {!harAjg && <> AJG 2024 (ABS-lista) er ikke lagt inn. I stedet brukes et kalibrert AJG-anslag fra åpne lister (ABDC, FT50/UTD24, JUFO og OpenAlex-sitering), testet mot NHH-rapportens AJG-tall; se Metode og kilder.</>}</span>
       </div>
       <div className="flex flex-wrap items-center gap-2 mb-5">
         {faner.map((f) => (
@@ -367,6 +368,7 @@ function Rangering({ data }: { data: Data }) {
           {kopiert ? <Check className="w-3.5 h-3.5" /> : <Link2 className="w-3.5 h-3.5" />}{kopiert ? 'Lenke kopiert' : 'Kopier lenke'}
         </button>
       </div>
+      {t.fane === 'forside' && <Forside data={data} rader={rader} ind={ind} eff={eff} t={t} sett={sett} apne={(id) => sett({ fane: 'profil', profil: id })} />}
       {t.fane === 'rangering' && <Samlet ind={ind} rader={rader} eff={eff} t={t} sett={sett} std={std}
         apneProfil={(id) => sett({ profil: id, fane: 'profil' })}
         sammenlign={(id) => sett({ fane: 'sammenlign', valgt: t.valgt.includes(id) ? t.valgt : [...t.valgt, id].slice(-3) })} />}
@@ -859,10 +861,166 @@ function AjgKort({ data }: { data: Data }) {
   );
 }
 
+// ── Delindekser (felles for forside og skoleportrett) ────────────────────────
+/** Vektet snitt av de normaliserte målene (0–100) i dimensjonen, som i poengsummen. */
+function delindeksAv(x: Rad, d: Dim, ind: Ind[], eff: ReturnType<typeof effektiveVekter>): number | null {
+  let sum = 0, w = 0;
+  for (const i of ind) if (i.dim === d && x.delt[i.id].n != null && eff.ut[i.id] > 0) { sum += (x.delt[i.id].n as number) * eff.ut[i.id]; w += eff.ut[i.id]; }
+  return w ? sum / w : null;
+}
+/** Tredjedel (0 = lav, 1 = middels, 2 = høy) av delindeksen blant skolene som vises. */
+function tertilAv(rader: Rad[], d: Dim, x: Rad, ind: Ind[], eff: ReturnType<typeof effektiveVekter>): number | null {
+  const v = delindeksAv(x, d, ind, eff); if (v == null) return null;
+  const alle = rader.map((z) => delindeksAv(z, d, ind, eff)).filter((z): z is number => z != null);
+  const p = 1 + alle.filter((z) => z > v + 1e-9).length;
+  return p <= Math.ceil(alle.length / 3) ? 2 : p <= Math.ceil(2 * alle.length / 3) ? 1 : 0;
+}
+
+// ── Fane: forside (designretning «forside i portrettstil», 03.10.2026) ────────
+// Kurstabell for alle skolene med plass, spenn og gruppe fra modellen, nøkkelmål med prikkestriper, vektvelger og
+// profilkart. Samme stil som skoleportrettet (.skp). Hver skole åpner portrettet.
+const FORSIDE_MAAL = ['poeng', 'lag', 'siv', 'sb'];
+interface ForsideProps { data: Data; rader: Rad[]; ind: Ind[]; eff: ReturnType<typeof effektiveVekter>; t: Tilstand; sett: (p: Partial<Tilstand>) => void; apne: (id: string) => void; }
+function Forside({ data, rader, ind, eff, t, sett, apne }: ForsideProps) {
+  const n = rader.filter((x) => x.plass != null).length;
+  // Plass med standardvekter (75 %), for å vise endring når leseren velger en annen vekt.
+  const std = useMemo(() => beregn(rader.map((r) => r.s), ind, t.vekt, FORSK_STANDARD), [rader, ind, t.vekt]);
+  const stdPlass = (id: string) => std.find((r) => r.s.id === id)?.plass ?? null;
+  // Hvem leder ved 50, 75 og 85 % forskning
+  const leder = (f: number) => beregn(rader.map((r) => r.s), ind, t.vekt, f).find((r) => r.plass === 1)?.s.kort ?? '–';
+  const ved = { 50: leder(50), 75: leder(FORSK_STANDARD), 85: leder(85) };
+  const topp = rader.filter((r) => r.gruppe === 'Topp');
+  const sjette = rader.find((r) => r.plass === topp.length + 1);
+  const gap = topp.length && sjette && topp[topp.length - 1].score != null && sjette.score != null ? topp[topp.length - 1].score! - sjette.score! : null;
+  const maal = FORSIDE_MAAL.map((id) => ind.find((i) => i.id === id)).filter((i): i is Ind => !!i);
+  const tf = (x: Rad) => tertilAv(rader, 'Forskning', x, ind, eff), tu = (x: Rad) => tertilAv(rader, 'Utdanning', x, ind, eff);
+  const TN = ['Lav', 'Middels', 'Høy'];
+  let gruppe: Gruppe | null | undefined;
+
+  return (
+    <div className="skp">
+      <section className="sheet" aria-label="Oppsummering">
+        <div>
+          <span className="lab">Rangering av {n} norske handelshøyskoler</span>
+          <h1>Handelshøyskolerangeringen</h1>
+          <p style={{ maxWidth: '62ch' }}>
+            {topp.length} skoler ligger i toppgruppen: {topp.map((r, k) => <Fragment key={r.s.id}>{k ? (k === topp.length - 1 ? ' og ' : ', ') : ''}<b>{r.s.kort}</b> ({nf(r.score, 0)})</Fragment>)}.
+            {gap != null && sjette && <> Så følger et hopp på {nf(gap, 0)} poeng ned til {sjette.s.kort}.</>}
+            {' '}Hvem som står øverst, avhenger av hvor mye forskning teller: med 50 % forskning er {ved[50]} nr. 1, med 75 % {ved[75]} og med 85 % {ved[85]}.
+          </p>
+          <button type="button" style={{ alignSelf: 'flex-start', background: 'var(--accent)', color: 'var(--on-accent)', border: 0, padding: '8px 14px', cursor: 'pointer', fontWeight: 500 }} onClick={() => apne(rader[0].s.id)}>Les skoleportrettene →</button>
+        </div>
+        <div>
+          <span className="lab">Slik leses tabellen</span>
+          <div style={{ display: 'grid', gap: 12 }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
+              <div className="cells" aria-hidden="true">{Array.from({ length: 15 }, (_, i) => <i key={i} className={i === 3 ? 'me' : i >= 2 && i <= 5 ? 'in' : ''} />)}</div>
+              <p className="cap"><strong style={{ color: 'var(--ink)', fontWeight: 600 }}>Spenn.</strong> Rutene er plassene. Mørk rute er plassen med valgt vekt, lysere ruter er plassene skolen kan få når forskningens andel går fra 50 til 85 %.</p>
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
+              <div className="strip" aria-hidden="true" style={{ maxWidth: 220 }}>{[6, 18, 31, 44, 52, 79, 97].map((l) => <u key={l} style={{ left: `${l}%` }} />)}<u className="sel" style={{ left: '67%' }} /></div>
+              <p className="cap"><strong style={{ color: 'var(--ink)', fontWeight: 600 }}>Nøkkelmål.</strong> Hver prikk er en skole, fra laveste til høyeste verdi. Skolen i raden er i farge.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="sec" aria-label="Rangering">
+        <header>
+          <span className="lab">Hovedtabell</span>
+          <h2>Med {t.forsk} % forskning er {rader.find((r) => r.plass === 1)?.s.kort ?? '–'} nr. 1</h2>
+        </header>
+        <div className="cmprow" role="group" aria-label="Forskningens andel av poengsummen">
+          <span className="lab" style={{ marginRight: 6 }}>Forskningens andel</span>
+          {FORSK_TRINN.map((f) => <button key={f} type="button" aria-pressed={t.forsk === f} onClick={() => sett({ forsk: f })} style={t.forsk === f ? { background: 'var(--accent)', borderColor: 'var(--accent)', color: 'var(--on-accent)', fontWeight: 600 } : undefined}>{f}{f === FORSK_STANDARD ? ' (standard)' : ''}</button>)}
+        </div>
+        <p className="cap">{t.forsk === FORSK_STANDARD ? 'Standardvekter. Resten av vekten fordeles på utdanning, fagmiljø og akkrediteringer.' : `Pilene viser endring i plass fra standardvekten (${FORSK_STANDARD} %).`} Vektene for hvert mål kan endres i fanen «Rangering og vekter».</p>
+        <div className="scroll">
+          <table>
+            <thead><tr><th>Plass og skole</th><th>Poeng</th><th style={{ textAlign: 'left' }}>Spenn 50–85 %</th>{maal.map((m) => <th key={m.id} style={{ textAlign: 'left' }} title={m.desc}>{m.label}</th>)}</tr></thead>
+            <tbody>
+              {rader.map((r) => {
+                const hode = r.gruppe !== gruppe ? (gruppe = r.gruppe, <tr key={`g${r.gruppe}`} className="gh"><td colSpan={3 + maal.length} style={{ textAlign: 'left' }}><span style={{ display: 'inline-block', width: 10, height: 10, background: r.gruppe ? GRUPPE_GC[r.gruppe] : 'var(--line)', marginRight: 7 }} />{r.gruppe ? GRUPPE_NAVN[r.gruppe] : 'Uten plass'}</td></tr>) : null;
+                const sp = stdPlass(r.s.id), d = sp != null && r.plass != null && t.forsk !== FORSK_STANDARD ? sp - r.plass : 0;
+                return [hode, (
+                  <tr key={r.s.id}>
+                    <td style={{ minWidth: 200 }}>
+                      <div style={{ display: 'flex', gap: 12, alignItems: 'baseline' }}>
+                        <span style={{ fontFamily: 'var(--serif)', fontSize: '1.6rem', lineHeight: 1, fontWeight: 500, color: 'var(--accent)', minWidth: '1.4em', textAlign: 'right', ...(r.plass != null && r.plass <= 3 ? { background: 'var(--mark)', color: 'var(--mark-ink)', padding: '0 4px' } : {}) }}>{r.plass ?? '–'}</span>
+                        <span>
+                          <button type="button" onClick={() => apne(r.s.id)} style={{ background: 'none', border: 0, padding: 0, cursor: 'pointer', fontWeight: 600, borderBottom: '1px solid var(--line2)' }}>{r.s.kort}</button>
+                          {d !== 0 && <span style={{ fontSize: '.7rem', marginLeft: 5, color: d > 0 ? 'var(--up)' : 'var(--down)' }} title={`${d > 0 ? 'opp' : 'ned'} ${Math.abs(d)} fra standardvekten`}>{d > 0 ? '▲' : '▼'}{Math.abs(d)}</span>}
+                          <small style={{ display: 'block', fontSize: '.76rem', color: 'var(--muted)', lineHeight: 1.25 }}>{kortNavn(r.s.navn)}</small>
+                        </span>
+                      </div>
+                    </td>
+                    <td style={{ fontFamily: 'var(--serif)', fontSize: '1.15rem' }}>{nf(r.score, 0)}</td>
+                    <td style={{ width: 140, textAlign: 'left' }}>
+                      {r.min != null && <div className="cells" style={{ ['--n' as string]: n }} aria-label={`Plass ${r.plass}, spenn ${r.min} til ${r.max}`}>{Array.from({ length: n }, (_, i) => i + 1).map((p) => <i key={p} style={{ height: 12 }} className={p === r.plass ? 'me' : p >= (r.min as number) && p <= (r.max as number) ? 'in' : ''} />)}</div>}
+                    </td>
+                    {maal.map((m) => (
+                      <td key={m.id} style={{ textAlign: 'left', minWidth: 112 }}>
+                        <b style={{ display: 'block', fontWeight: 500, fontSize: '.84rem', lineHeight: 1.2, marginBottom: 2, color: r.delt[m.id].v == null ? 'var(--muted)' : undefined }}>{r.delt[m.id].v == null ? 'ikke oppgitt' : m.fmt(r.delt[m.id].v)}</b>
+                        <Prikker verdier={rader.map((x) => ({ id: x.s.id, v: x.delt[m.id].v }))} sel={r.s.id} mot={null} />
+                      </td>
+                    ))}
+                  </tr>
+                )];
+              })}
+            </tbody>
+          </table>
+        </div>
+        <p className="cap">Plass, spenn og grupper (tredjedeler) følger modellen og vektene i fanen «Rangering og vekter». Klikk på en skole for portrettet.</p>
+      </section>
+
+      <section className="sec" aria-label="Profilkart">
+        <header><span className="lab">Profilkart</span><h2>Forskning mot utdanning</h2></header>
+        <div className="two">
+          <div>
+            <div style={{ display: 'grid', gridTemplateColumns: '1.4em 4em repeat(3, minmax(0, 1fr))', gap: 3, maxWidth: 640 }}>
+              <div style={{ gridRow: '1 / 4', writingMode: 'vertical-rl', transform: 'rotate(180deg)', textAlign: 'center', fontSize: '.72rem', letterSpacing: '.05em', textTransform: 'uppercase', color: 'var(--muted)' }}>Utdanning</div>
+              {[2, 1, 0].map((rad) => (
+                <Fragment key={rad}>
+                  <div style={{ fontSize: '.7rem', color: 'var(--muted)', display: 'flex', alignItems: 'center', justifyContent: 'flex-end', paddingRight: 4 }}>{TN[rad]}</div>
+                  {[0, 1, 2].map((kol) => {
+                    const liste = rader.filter((x) => tf(x) === kol && tu(x) === rad);
+                    const hoy = kol === 2 && rad === 2;
+                    return (
+                      <div key={kol} style={{ minHeight: 84, background: hoy ? 'var(--mark)' : 'var(--flate)', color: hoy ? 'var(--mark-ink)' : undefined, padding: 8, display: 'flex', flexWrap: 'wrap', alignContent: 'center', justifyContent: 'center', gap: '2px 10px', fontSize: '.84rem', textAlign: 'center' }}>
+                        {liste.length ? liste.map((x) => <button key={x.s.id} type="button" onClick={() => apne(x.s.id)} style={{ background: 'none', border: 0, padding: 0, cursor: 'pointer', fontWeight: 600, color: 'inherit', borderBottom: '1px solid var(--line2)' }}>{x.s.kort}</button>) : <span className="muted">ingen</span>}
+                      </div>
+                    );
+                  })}
+                </Fragment>
+              ))}
+              <div /><div />{TN.map((x) => <div key={x} style={{ fontSize: '.7rem', color: 'var(--muted)', textAlign: 'center', paddingTop: 2 }}>{x}</div>)}
+              <div /><div /><div style={{ gridColumn: '3 / 6', textAlign: 'center', fontSize: '.72rem', letterSpacing: '.05em', textTransform: 'uppercase', color: 'var(--muted)' }}>Forskning</div>
+            </div>
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+            <p>Skolene er plassert i tredjedeler etter delindeksen for forskning og for utdanning i rangeringen, altså det vektede snittet av målene i hver dimensjon. Øverst til høyre er skolene som er sterke på begge.</p>
+            <p className="cap">Plasseringen følger vektene i fanen «Rangering og vekter». Hver skole åpner portrettet.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="sec" style={{ background: 'var(--flate)', padding: '12px 16px' }} aria-label="Metode og kilder">
+        <span className="lab">Metode og kilder</span>
+        <ul style={{ margin: 0, paddingLeft: '1.1em', display: 'grid', gap: 3, fontSize: '.86rem' }}>
+          <li><b>Poeng.</b> {ind.filter((i) => eff.ut[i.id] > 0).length} mål i fire dimensjoner, skalert 0–100 og vektet. Forskning teller {t.forsk} %. Mangler en skole et mål, fordeles vekten på de andre.</li>
+          <li><b>Spenn og grupper.</b> Spennet er plassen når forskningens andel varierer fra 50 til 85 %. Topp, Midt og Nedre er tredjedeler av lista med valgte vekter.</li>
+          <li><b>Kilder.</b> DBH/HK-dir, NVA koblet mot ABDC, FT50 og UTD24, et kalibrert AJG-anslag, Samordna opptak, lokale opptaksgrenser til siviløkonom og Studiebarometeret. Utkast {data.generert}.</li>
+        </ul>
+      </section>
+    </div>
+  );
+}
+
 // ── Fane: skoleportrett (designretning «forslag 4», kursark per skole) ───────
 // Plass, spenn, gruppe og «nr. x av n» kommer fra rangeringsmodellen (beregn), slik at portrettet alltid følger
 // vektene brukeren har valgt. Stil i styles/skoleportrett.css, avgrenset til .skp.
 const GRUPPE_GC: Record<Gruppe, string> = { Topp: 'var(--g1)', Midt: 'var(--g2)', Nedre: 'var(--g3)' };
+const GRUPPE_NAVN: Record<Gruppe, string> = { Topp: 'Toppgruppen', Midt: 'Midtgruppen', Nedre: 'Nedre gruppe' };
 const TERTIL = ['Lav', 'Middels', 'Høy'];
 const medianAv = (xs: (number | null | undefined)[]) => { const v = xs.filter((x): x is number => x != null && Number.isFinite(x)).sort((a, b) => a - b); if (!v.length) return null; const m = v.length >> 1; return v.length % 2 ? v[m] : (v[m - 1] + v[m]) / 2; };
 const kortNavn = (n: string) => n.replace(/\s*[–(].*$/, '');
@@ -919,20 +1077,10 @@ function Skoleportrett({ data, rader, ind, eff, id, setId, mot, setMot }: Portre
   const n = rader.filter((x) => x.plass != null).length;
   const y1 = sisteDbhAar(data);
   const aar = aarRekke(data.aar[0], y1);
-  const gtxt = r.gruppe ?? '–';
 
   // Delindekser per dimensjon: vektet snitt av de normaliserte målene (0–100) i dimensjonen, som i poengsummen.
-  const delindeks = (x: Rad, d: Dim) => {
-    let sum = 0, w = 0;
-    for (const i of ind) if (i.dim === d && x.delt[i.id].n != null && eff.ut[i.id] > 0) { sum += (x.delt[i.id].n as number) * eff.ut[i.id]; w += eff.ut[i.id]; }
-    return w ? sum / w : null;
-  };
-  const tertil = (d: Dim, x: Rad) => {
-    const v = delindeks(x, d); if (v == null) return null;
-    const alle = rader.map((z) => delindeks(z, d)).filter((z): z is number => z != null);
-    const p = 1 + alle.filter((z) => z > v + 1e-9).length;
-    return p <= Math.ceil(alle.length / 3) ? 2 : p <= Math.ceil(2 * alle.length / 3) ? 1 : 0;
-  };
+  const delindeks = (x: Rad, d: Dim) => delindeksAv(x, d, ind, eff);
+  const tertil = (d: Dim, x: Rad) => tertilAv(rader, d, x, ind, eff);
   const tf = tertil('Forskning', r), tu = tertil('Utdanning', r);
   const boks = [2, 1, 0].flatMap((rad) => [0, 1, 2].map((kol) => {
     const antall = rader.filter((x) => tertil('Forskning', x) === kol && tertil('Utdanning', x) === rad).length;
@@ -991,7 +1139,7 @@ function Skoleportrett({ data, rader, ind, eff, id, setId, mot, setMot }: Portre
 
       <section className="sheet" aria-live="polite">
         <div>
-          <div className="grp" style={{ ['--gc' as string]: r.gruppe ? GRUPPE_GC[r.gruppe] : 'var(--line)' }}><i />{gtxt}gruppen{r.grense ? ' (grensetilfelle)' : ''}</div>
+          <div className="grp" style={{ ['--gc' as string]: r.gruppe ? GRUPPE_GC[r.gruppe] : 'var(--line)' }}><i />{r.gruppe ? GRUPPE_NAVN[r.gruppe] : '–'}{r.grense ? ' (grensetilfelle)' : ''}</div>
           <div><h1>{s.navn}</h1>{s.institusjon && <p className="muted" style={{ fontSize: '.88rem' }}>{s.institusjon}</p>}</div>
           <div className="place" role="group" aria-label={`Plass ${r.plass} av ${n}, ${nf(r.score, 0)} poeng`}>
             <span className="lab" style={{ alignSelf: 'center', width: '100%' }}>Sammenlagt plass</span>
@@ -1006,7 +1154,7 @@ function Skoleportrett({ data, rader, ind, eff, id, setId, mot, setMot }: Portre
               <p className="cap"><strong style={{ color: 'var(--ink)', fontWeight: 600 }}>Spenn:</strong> {spn}</p>
             </div>
           )}
-          <p style={{ maxWidth: '62ch' }}>{kortNavn(s.navn)} er nr. {r.plass} av {n} med {nf(r.score, 0)} poeng. {spn} Skolen er i {gtxt.toLowerCase()}gruppen.{r.grense ? ' Gruppen kan endre seg når vektene endres.' : ''}</p>
+          <p style={{ maxWidth: '62ch' }}>{kortNavn(s.navn)} er nr. {r.plass} av {n} med {nf(r.score, 0)} poeng. {spn} Skolen er i {r.gruppe ? GRUPPE_NAVN[r.gruppe].toLowerCase() : 'ingen gruppe'}.{r.grense ? ' Gruppen kan endre seg når vektene endres.' : ''}</p>
           {s.enhetNotat && <p className="cap">Om avgrensningen av enheten: {s.enhetNotat}</p>}
           <div className="cmprow">
             <span className="lab">Sammenlign med</span>
