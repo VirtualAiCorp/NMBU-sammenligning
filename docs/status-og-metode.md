@@ -798,3 +798,4 @@ KI-chat og uten «Spør KI» (`utenKi` på `AfModulSide`). Grunnen er at metoden
   profilkart (tredjedeler av delindeksene, `delindeksAv`/`tertilAv` felles med portrettet) og metodeboks. Skolene åpner
   portrettet. Gamle «Rangering» heter nå «Rangering og vekter». Uten `fane` i lenken åpnes forsiden.
 
+- **03.10 kveld – mobil og lys modus på forsiden:** under 640 px vises tabellen som kortliste (`.fs-kort`: plass, poeng, spenn og de fire nøkkelmålene i 2×2 med prikkestriper), vektvelgeren som 4×2-rutenett og profilkartet med smalere celler. Testet 375 px i lys og mørk modus uten sidelengs rulling.

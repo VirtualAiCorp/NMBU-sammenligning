@@ -930,12 +930,47 @@ function Forside({ data, rader, ind, eff, t, sett, apne }: ForsideProps) {
           <span className="lab">Hovedtabell</span>
           <h2>Med {t.forsk} % forskning er {rader.find((r) => r.plass === 1)?.s.kort ?? '–'} nr. 1</h2>
         </header>
-        <div className="cmprow" role="group" aria-label="Forskningens andel av poengsummen">
+        <div className="cmprow fs-vekt" role="group" aria-label="Forskningens andel av poengsummen">
           <span className="lab" style={{ marginRight: 6 }}>Forskningens andel</span>
-          {FORSK_TRINN.map((f) => <button key={f} type="button" aria-pressed={t.forsk === f} onClick={() => sett({ forsk: f })} style={t.forsk === f ? { background: 'var(--accent)', borderColor: 'var(--accent)', color: 'var(--on-accent)', fontWeight: 600 } : undefined}>{f}{f === FORSK_STANDARD ? ' (standard)' : ''}</button>)}
+          {FORSK_TRINN.map((f) => <button key={f} type="button" aria-pressed={t.forsk === f} onClick={() => sett({ forsk: f })} style={t.forsk === f ? { background: 'var(--accent)', borderColor: 'var(--accent)', color: 'var(--on-accent)', fontWeight: 600 } : undefined}>{f}{f === FORSK_STANDARD ? <span className="fs-std"> (standard)</span> : ''}</button>)}
         </div>
         <p className="cap">{t.forsk === FORSK_STANDARD ? 'Standardvekter. Resten av vekten fordeles på utdanning, fagmiljø og akkrediteringer.' : `Pilene viser endring i plass fra standardvekten (${FORSK_STANDARD} %).`} Vektene for hvert mål kan endres i fanen «Rangering og vekter».</p>
-        <div className="scroll">
+        <ol className="fs-kort" aria-label="Rangering, kortvisning">
+          {rader.map((r, k) => {
+            const ny = k === 0 || r.gruppe !== rader[k - 1].gruppe;
+            const sp = stdPlass(r.s.id), d = sp != null && r.plass != null && t.forsk !== FORSK_STANDARD ? sp - r.plass : 0;
+            return (
+              <Fragment key={r.s.id}>
+                {ny && <li className="gh" style={{ ['--gc' as string]: r.gruppe ? GRUPPE_GC[r.gruppe] : 'var(--line)' }}><i />{r.gruppe ? GRUPPE_NAVN[r.gruppe] : 'Uten plass'}</li>}
+                <li className="rad">
+                  <span className={`pl ${r.plass != null && r.plass <= 3 ? 'top' : ''}`}>{r.plass ?? '–'}</span>
+                  <span className="nm">
+                    <button type="button" onClick={() => apne(r.s.id)}>{r.s.kort}</button>
+                    {d !== 0 && <span style={{ fontSize: '.72rem', marginLeft: 6, color: d > 0 ? 'var(--up)' : 'var(--down)' }}>{d > 0 ? '▲' : '▼'}{Math.abs(d)}</span>}
+                    <small>{kortNavn(r.s.navn)}</small>
+                  </span>
+                  <span className="sc">{nf(r.score, 0)}<small>poeng</small></span>
+                  {r.min != null && (
+                    <span className="spn">
+                      <span className="cells" style={{ ['--n' as string]: n }} aria-label={`Plass ${r.plass}, spenn ${r.min} til ${r.max}`}>{Array.from({ length: n }, (_, i) => i + 1).map((p) => <i key={p} style={{ height: 10 }} className={p === r.plass ? 'me' : p >= (r.min as number) && p <= (r.max as number) ? 'in' : ''} />)}</span>
+                      <span className="cap" style={{ fontSize: '.7rem' }}>Spenn {r.min === r.max ? 'fast plass' : `${r.min}–${r.max}`}</span>
+                    </span>
+                  )}
+                  <span className="maal">
+                    {maal.map((m) => (
+                      <div key={m.id}>
+                        <span>{m.label}</span>
+                        <b style={{ color: r.delt[m.id].v == null ? 'var(--muted)' : undefined }}>{r.delt[m.id].v == null ? 'ikke oppgitt' : m.fmt(r.delt[m.id].v)}</b>
+                        <Prikker verdier={rader.map((x) => ({ id: x.s.id, v: x.delt[m.id].v }))} sel={r.s.id} mot={null} />
+                      </div>
+                    ))}
+                  </span>
+                </li>
+              </Fragment>
+            );
+          })}
+        </ol>
+        <div className="scroll fs-tabell">
           <table>
             <thead><tr><th>Plass og skole</th><th>Poeng</th><th style={{ textAlign: 'left' }}>Spenn 50–85 %</th>{maal.map((m) => <th key={m.id} style={{ textAlign: 'left' }} title={m.desc}>{m.label}</th>)}</tr></thead>
             <tbody>
@@ -977,7 +1012,7 @@ function Forside({ data, rader, ind, eff, t, sett, apne }: ForsideProps) {
         <header><span className="lab">Profilkart</span><h2>Forskning mot utdanning</h2></header>
         <div className="two">
           <div>
-            <div style={{ display: 'grid', gridTemplateColumns: '1.4em 4em repeat(3, minmax(0, 1fr))', gap: 3, maxWidth: 640 }}>
+            <div className="fs-profil" style={{ display: 'grid', gridTemplateColumns: '1.4em 4em repeat(3, minmax(0, 1fr))', gap: 3, maxWidth: 640 }}>
               <div style={{ gridRow: '1 / 4', writingMode: 'vertical-rl', transform: 'rotate(180deg)', textAlign: 'center', fontSize: '.72rem', letterSpacing: '.05em', textTransform: 'uppercase', color: 'var(--muted)' }}>Utdanning</div>
               {[2, 1, 0].map((rad) => (
                 <Fragment key={rad}>
@@ -986,7 +1021,7 @@ function Forside({ data, rader, ind, eff, t, sett, apne }: ForsideProps) {
                     const liste = rader.filter((x) => tf(x) === kol && tu(x) === rad);
                     const hoy = kol === 2 && rad === 2;
                     return (
-                      <div key={kol} style={{ minHeight: 84, background: hoy ? 'var(--mark)' : 'var(--flate)', color: hoy ? 'var(--mark-ink)' : undefined, padding: 8, display: 'flex', flexWrap: 'wrap', alignContent: 'center', justifyContent: 'center', gap: '2px 10px', fontSize: '.84rem', textAlign: 'center' }}>
+                      <div key={kol} className="celle" style={{ minHeight: 84, background: hoy ? 'var(--mark)' : 'var(--flate)', color: hoy ? 'var(--mark-ink)' : undefined, padding: 8, display: 'flex', flexWrap: 'wrap', alignContent: 'center', justifyContent: 'center', gap: '2px 10px', fontSize: '.84rem', textAlign: 'center' }}>
                         {liste.length ? liste.map((x) => <button key={x.s.id} type="button" onClick={() => apne(x.s.id)} style={{ background: 'none', border: 0, padding: 0, cursor: 'pointer', fontWeight: 600, color: 'inherit', borderBottom: '1px solid var(--line2)' }}>{x.s.kort}</button>) : <span className="muted">ingen</span>}
                       </div>
                     );

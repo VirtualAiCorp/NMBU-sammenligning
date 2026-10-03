@@ -143,3 +143,33 @@
 .skp .rk b{font-weight:600;text-align:right}
 .skp .src{font-size:.76rem;color:var(--muted);border-top:1px solid var(--line);padding-top:10px;max-width:84ch}
 @media (prefers-reduced-motion:reduce){.skp *{transition:none!important}}
+
+/* Forside: kortvisning på smal skjerm i stedet for bred tabell */
+.skp .fs-kort{display:none;list-style:none;margin:0;padding:0}
+@media(max-width:640px){
+  .skp{padding:14px 12px;gap:22px}
+  .skp .fs-tabell{display:none}
+  .skp .fs-kort{display:flex;flex-direction:column}
+  .skp .fs-kort .gh{font-size:.72rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:500;padding:14px 0 6px;border-bottom:1px solid var(--line2);display:flex;align-items:center;gap:7px}
+  .skp .fs-kort .gh i{display:inline-block;width:10px;height:10px;background:var(--gc)}
+  .skp .fs-kort li.rad{border-bottom:1px solid var(--line);padding:10px 0 12px;display:grid;grid-template-columns:2.4rem minmax(0,1fr) auto;gap:4px 10px;align-items:baseline}
+  .skp .fs-kort .pl{font-family:var(--serif);font-size:1.7rem;line-height:1;font-weight:500;color:var(--accent);text-align:right}
+  .skp .fs-kort .pl.top{background:var(--mark);color:var(--mark-ink);padding:0 3px}
+  .skp .fs-kort .nm button{background:none;border:0;padding:0;cursor:pointer;font-weight:600;font-size:1rem;color:var(--ink);border-bottom:1px solid var(--line2);text-align:left}
+  .skp .fs-kort .nm small{display:block;font-size:.74rem;color:var(--muted);line-height:1.25}
+  .skp .fs-kort .sc{font-family:var(--serif);font-size:1.35rem;text-align:right}
+  .skp .fs-kort .sc small{display:block;font-family:var(--sans);font-size:.66rem;color:var(--muted)}
+  .skp .fs-kort .spn{grid-column:2 / 4;display:flex;flex-direction:column;gap:3px}
+  .skp .fs-kort .maal{grid-column:2 / 4;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 14px;margin-top:4px}
+  .skp .fs-kort .maal div{min-width:0}
+  .skp .fs-kort .maal span{display:block;font-size:.68rem;color:var(--muted);line-height:1.2}
+  .skp .fs-kort .maal b{display:block;font-weight:500;font-size:.88rem}
+  .skp .fs-kort .strip{min-width:0}
+  .skp .fs-vekt{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+  .skp .fs-vekt .lab{grid-column:1 / -1}
+  .skp .fs-vekt button{min-height:40px;padding:4px 0}
+  .skp .fs-profil{grid-template-columns:1.2em 3.4em repeat(3,minmax(0,1fr)) !important}
+  .skp .fs-profil .celle{min-height:70px !important;padding:6px !important;font-size:.78rem !important;gap:2px 6px !important}
+  .skp .place .nr{font-size:3.4rem}
+}
+@media(max-width:640px){.skp .fs-std{display:none}}
