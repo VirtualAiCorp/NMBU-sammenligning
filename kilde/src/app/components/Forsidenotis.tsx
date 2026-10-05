@@ -16,7 +16,7 @@ export function Forsidenotis() {
         <span style={{ lineHeight: 1.55 }}>
           <b style={{ color: 'var(--nmbu-green-dark)' }}>Kvalitetssikring:</b> tallene for Handelshøyskolen er kontrollert manuelt.
           Tallene for de andre fakultetene og for NMBU som helhet er hentet og beregnet på samme måte fra de samme kildene, men er
-          ennå ikke gjennomgått. Bruk dem med forsiktighet, og gi gjerne beskjed til studierådgiverne ved Handelshøyskolen hvis noe ser feil ut.
+          ennå ikke gjennomgått. Bruk dem med forsiktighet, og gi gjerne beskjed til Mathias Smogeli ved Handelshøyskolen hvis noe ser feil ut.
         </span>
       </div>
       <div role="note" className="flex items-start gap-3 rounded-xl px-4 py-3 text-sm" style={boks}>
