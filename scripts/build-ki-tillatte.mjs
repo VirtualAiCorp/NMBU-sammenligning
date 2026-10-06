@@ -35,7 +35,7 @@ const UT = join(ROT, 'functions', '_lib', 'tillatte-kilder.ts');
 const FAKULTETER = ['hh', 'landsam', 'realtek', 'biovit', 'kbm', 'mina', 'vet'];
 const KONVOLUTT = ['alg', 'data', 'iter', 'iv', 'salt', 'v'];
 // Ord som aldri skal stå i KI-grunnlaget eller i koden som bygger kildene til modellen
-const SPERRET_I_GRUNNLAG = [/\bintern\/[\w-]+\.json/i, /opptak-h26/i, /INTERN_PASSORD/];
+const SPERRET_I_GRUNNLAG = [/\bintern\/[\w-]+\.json/i, /opptak-h26/i, /INTERN_PASSORD/, /Handelshoyskolerangering|Rangering \(intern\)/i];
 const SPERRET_I_KODE = [/InternOpptak/, /PasswordGate/, /['"`/]intern\//, /opptak-h26/, /INTERN_PASSORD/, /dekrypter/i, /crypto\.subtle\.decrypt/];
 // Det eneste lovlige: serverfunksjonene nekter å kjøre hvis passordet ligger i Cloudflare (miljoFeil i functions/_lib/ki.ts)
 const UNNTAK_I_KODE = [/INTERN_PASSORD\?: string;/g, /if \(env\.INTERN_PASSORD\) return 'KI-funksjonene er stengt: INTERN_PASSORD er lagt inn i Cloudflare\./g];

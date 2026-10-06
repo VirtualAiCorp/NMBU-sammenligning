@@ -1,4 +1,4 @@
-// GENERERT av scripts/build-landsam-data.py 2026-09-26 – ikke rediger for hånd.
+// GENERERT av scripts/build-landsam-data.py 2026-10-06 – ikke rediger for hånd.
 // Kilder: Samordna opptak programtabell 2026 (søkertall 2021–2026) og SO poenggrenserapport (Tableau) 2020–2026, hovedopptak; opptakspoeng (op_*/kp_*) fra DBH tabell 571.
 // 0 i poenggrense = alle kvalifiserte kom inn · null = data ikke tilgjengelig
 import type { FullAdmissionEntry, FullYearData } from './fullAdmissionData';
@@ -1153,6 +1153,34 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
           '2023': Y(79, 79, null, 57.0, 67, 67, null, null, 31, 19),
           '2024': Y(142, 94, null, 51.1, 123, 123, null, null, 40, 28),
           '2025': Y(161, 98, null, 65.3, 144, 144, null, null, 50, 34),
+        },
+      },
+    ],
+  },
+  {
+    id: 'bioec', label: 'Bioøkonomi (master)', level: 'master2',
+    desc: 'Viser NMBUs master i bioøkonomi (biobasert verdiskaping og forretningsutvikling). Ingen andre institusjoner i sammenligningene har en tilsvarende master; NTNUs master i sirkulær økonomi kan velges som svakere sammenligning.',
+    note: 'Lokale opptak; tall fra DBH 379. NTNU Circular Economy er ikke valgt som standard.',
+    nmbuIds: ['nmbu_bioec'], defaultIds: ['nmbu_bioec'],
+    entries: [
+      {
+        id: 'nmbu_bioec', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet',
+        studiekode: '', studiested: 'Ås', type: 'master2',
+        url: 'https://www.nmbu.no/studier/master-2-aar/biookonomi-biobasert-verdiskaping-og-forretningsutvikling',
+        lokaltOpptak: true,
+        years: {
+          '2021': Y(121, 55, null, 61.8, 43, 30, null, null, 28, 25),
+          '2022': Y(81, 35, null, 77.1, 35, 24, null, null, 20, 19),
+          '2023': Y(114, 52, null, 57.7, 36, 34, null, null, 31, 30),
+          '2024': Y(94, 51, null, 64.7, 41, 33, null, null, 29, 29),
+          '2025': Y(119, 51, null, 68.6, 39, 29, null, null, 24, 24),
+        },
+      },
+      {
+        id: 'ntnu_circ', shortName: 'NTNU', institusjon: 'Norges teknisk-naturvitenskapelige universitet',
+        studiekode: '', studiested: 'Trondheim', type: 'master2',
+        lokaltOpptak: true,
+        years: {
         },
       },
     ],

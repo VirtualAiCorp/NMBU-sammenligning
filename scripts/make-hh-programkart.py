@@ -119,6 +119,14 @@ MEI = [
     ("uia_mei", "UiA", "1171", "Kristiansand", "Shift entreprenørskap og innovasjon (master 2 år)", None, "master2", False, ["M-SHIFTINN"], None),
     ("kristiania_mei", "Kristiania", "8253", "Oslo", "Innovasjonsledelse (master 2 år)", None, "master2", True, ["MIN"], None),
 ]
+# Bioøkonomi (master): NMBU-programmet finnes i den opprinnelige analysen bare blant NMBUs egne mastere (masteroppgaver), uten
+# konkurrenter. Ingen andre institusjoner i HH-sammenligningene har en master i bioøkonomi (søk i DBH 347 06.10.2026);
+# nærmest er NTNUs master i sirkulær økonomi, tatt med som svakere sammenligning (default false).
+BIOEC = [
+    ("nmbu_bioec", "NMBU", "1173", "Ås", "Bioøkonomi – biobasert verdiskaping og forretningsutvikling (master 2 år)", None, "master2", True, ["M-BIOEC"], None),
+    ("ntnu_circ", "NTNU", "1150", "Trondheim", "Master of Science in Circular Economy (master 2 år)", None, "master2", False, ["MSCE"],
+     "Svakere sammenligning: sirkulær økonomi ved Fakultet for ingeniørvitenskap, engelskspråklig. Ingen andre institusjoner i HH-sammenligningene har en master i bioøkonomi."),
+]
 # Årsstudier og deltidsstudier i økonomi og ledelse: samme utvalg som i den opprinnelige HH-analysen (annualStudiesData.ts).
 # DBH-kodene er funnet i DBH 347 (nivå AR). Der Samordna-programmet kan svare til flere DBH-varianter (INN), eller det ikke
 # finnes noe årsstudium med samme navn (UiS Økonomi og jus), er DBH-kode utelatt: opptakstallene er med, men ikke emner og inntekt.
@@ -157,6 +165,9 @@ GRUPPER = [
     ("mei", "Entreprenørskap og innovasjon (master)", "master2", MEI,
      "Sammenligner NMBUs master i entreprenørskap og innovasjon med entreprenørskapsmasterne ved andre institusjoner.",
      "Lokale opptak; tall fra DBH 379."),
+    ("bioec", "Bioøkonomi (master)", "master2", BIOEC,
+     "Viser NMBUs master i bioøkonomi (biobasert verdiskaping og forretningsutvikling). Ingen andre institusjoner i sammenligningene har en tilsvarende master; NTNUs master i sirkulær økonomi kan velges som svakere sammenligning.",
+     "Lokale opptak; tall fra DBH 379. NTNU Circular Economy er ikke valgt som standard."),
 ]
 URL = {
     "nmbu_oa": "https://www.nmbu.no/studier/bachelor/okonomi-og-administrasjon",
@@ -165,6 +176,7 @@ URL = {
     "nmbu_moa": "https://www.nmbu.no/studier/master-2-aar/okonomi-og-administrasjon",
     "nmbu_mecon": "https://www.nmbu.no/studier/master-2-aar/samfunnsokonomi-og-baerekraft",
     "nmbu_mei": "https://www.nmbu.no/studier/master-2-aar/entreprenorskap-og-innovasjon",
+    "nmbu_bioec": "https://www.nmbu.no/studier/master-2-aar/biookonomi-biobasert-verdiskaping-og-forretningsutvikling",
     "bi_oa": "https://www.bi.no/studier-og-kurs/bachelorstudier/okonomi-og-administrasjon/",
     "bi_dbh": "https://www.bi.no/studier-og-kurs/bachelorstudier/digital-business/",
     "bi_dsb": "https://www.bi.no/studier-og-kurs/bachelorstudier/data-science-for-business/",

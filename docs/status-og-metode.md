@@ -366,7 +366,7 @@ fakultetene). Øverst på HH-siden velger man mellom dem; i dashboard/toppmeny l
 - Kjeden er den samme som for fakultetene (`build-faculty.sh hh`, `build-completion.py hh`, `build-students.py hh`,
   `build-studiebarometer.py hh`, samt build-staff/economy/revenue/bolig med `hh` = avdeling 470).
 - Mangler foreløpig: emnekobling, studieplaner og markedsstatus på standardformatet (originalen har egne versjoner), og
-  M-BIOEC, M-GEP og M-EEG. BI er ikke med i bachelorgruppene (ikke i Samordna), men er med i masterne via DBH 379.
+  M-GEP og M-EEG. (M-BIOEC er lagt til 06.10.2026 som egen gruppe, se §43.) BI er ikke med i bachelorgruppene (ikke i Samordna), men er med i masterne via DBH 379.
 
 ## 22. Intern opptaksanalyse for HHs bachelorprogram (høsten 2026)
 
@@ -821,3 +821,10 @@ KI-chat og uten «Spør KI» (`utenKi` på `AfModulSide`). Grunnen er at metoden
 - **04.10 – eget nettsted for rangeringen:** byggevariant `VITE_KUN_RANGERING=1` (`src/rangering-main.tsx`, ingen
   public-mappe, utmappe `dist-rangering`, 2,9 MB) og egen kryptert datafil `public/rangering-data.json` med
   `RANGERING_PASSORD`. Cloudflare-prosjekt `hh-rangering` settes opp av Mathias etter docs/publisering-cloudflare.md §5.
+
+## 43. Bioøkonomi (master) i HH-sammenligningene (06.10.2026)
+
+- **Ny HH-gruppe «Bioøkonomi (master)»** (`bioec`, `make-hh-programkart.py`, liste `BIOEC`): NMBUs M-BIOEC (Bioøkonomi – biobasert verdiskaping og forretningsutvikling). Programmet sto i den opprinnelige HH-analysen bare blant NMBUs egne mastere (masteroppgaver) uten konkurrenter, og falt derfor ut da HH ble bygd på standardformatet.
+- **Sammenligning:** ingen andre institusjoner i HH-sammenligningene har en master i bioøkonomi (søk i DBH 347). NTNUs Master of Science in Circular Economy (MSCE, Fakultet for ingeniørvitenskap) er tatt med som svakere sammenligning (default false); den har ingen rader i DBH 379 (lokalt opptak) og få kandidater i emnene.
+- **Kjøring:** `make-hh-programkart.py`, `fill-local-admissions.py hh`, `build-faculty.sh hh`, `build-completion.py hh`, `build-students.py hh`, `build-studiebarometer.py hh`, `build-oppmote.py --fak hh`, `build-revenue.py`, `build-staff.py`, `build-economy.py`, `build-ki-grunnlag.py`. Arbeidsmarkeds- og landssnittkoblingen har ingen oppføring for gruppen.
+- **KI-grunnlaget:** §42 (den interne rangeringen) holdes utenfor (`UTELAT`), og kildevakten stopper bygget hvis rangeringen nevnes i grunnlaget.

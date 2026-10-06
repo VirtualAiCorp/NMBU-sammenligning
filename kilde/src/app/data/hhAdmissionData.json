@@ -1,5 +1,5 @@
 {
-  "generert": "2026-09-26",
+  "generert": "2026-10-06",
   "programkartHentet": "2026-09-23",
   "years": [
     "2020",
@@ -9280,6 +9280,104 @@
               "mott": 34
             }
           },
+          "lokaltOpptak": true
+        }
+      ]
+    },
+    {
+      "id": "bioec",
+      "label": "Bioøkonomi (master)",
+      "level": "master2",
+      "desc": "Viser NMBUs master i bioøkonomi (biobasert verdiskaping og forretningsutvikling). Ingen andre institusjoner i sammenligningene har en tilsvarende master; NTNUs master i sirkulær økonomi kan velges som svakere sammenligning.",
+      "note": "Lokale opptak; tall fra DBH 379. NTNU Circular Economy er ikke valgt som standard.",
+      "nmbuIds": [
+        "nmbu_bioec"
+      ],
+      "defaultIds": [
+        "nmbu_bioec"
+      ],
+      "entries": [
+        {
+          "id": "nmbu_bioec",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiekode": "",
+          "studiested": "Ås",
+          "type": "master2",
+          "url": "https://www.nmbu.no/studier/master-2-aar/biookonomi-biobasert-verdiskaping-og-forretningsutvikling",
+          "years": {
+            "2021": {
+              "alleS": 121,
+              "fvS": 55,
+              "plasser": null,
+              "kvinner": 61.8,
+              "kvalifiserte": 43,
+              "tilbud": 30,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 28,
+              "mott": 25
+            },
+            "2022": {
+              "alleS": 81,
+              "fvS": 35,
+              "plasser": null,
+              "kvinner": 77.1,
+              "kvalifiserte": 35,
+              "tilbud": 24,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 20,
+              "mott": 19
+            },
+            "2023": {
+              "alleS": 114,
+              "fvS": 52,
+              "plasser": null,
+              "kvinner": 57.7,
+              "kvalifiserte": 36,
+              "tilbud": 34,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 31,
+              "mott": 30
+            },
+            "2024": {
+              "alleS": 94,
+              "fvS": 51,
+              "plasser": null,
+              "kvinner": 64.7,
+              "kvalifiserte": 41,
+              "tilbud": 33,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 29,
+              "mott": 29
+            },
+            "2025": {
+              "alleS": 119,
+              "fvS": 51,
+              "plasser": null,
+              "kvinner": 68.6,
+              "kvalifiserte": 39,
+              "tilbud": 29,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 24,
+              "mott": 24
+            }
+          },
+          "lokaltOpptak": true
+        },
+        {
+          "id": "ntnu_circ",
+          "shortName": "NTNU",
+          "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+          "studiekode": "",
+          "studiested": "Trondheim",
+          "type": "master2",
+          "url": null,
+          "years": {},
           "lokaltOpptak": true
         }
       ]

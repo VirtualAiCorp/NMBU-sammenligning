@@ -1,5 +1,5 @@
 {
- "generert": "2026-09-26",
+ "generert": "2026-10-06",
  "satser": {
   "2025": {
    "1": 56600.0,
@@ -16472,6 +16472,121 @@
       ]
      }
     ]
+   },
+   {
+    "id": "bioec",
+    "label": "Bioøkonomi (master)",
+    "level": "master2",
+    "nmbuIds": [
+     "nmbu_bioec"
+    ],
+    "defaultIds": [
+     "nmbu_bioec"
+    ],
+    "programs": [
+     {
+      "entryId": "nmbu_bioec",
+      "shortName": "NMBU",
+      "institusjon": "Norges miljø- og biovitenskapelige universitet",
+      "isNmbu": true,
+      "programnavn": "Bioøkonomi – biobasert verdiskaping og forretningsutvikling (master 2 år)",
+      "years": [
+       {
+        "aar": 2023,
+        "budsjettaar": 2025,
+        "satsAar": 2025,
+        "forelopig": false,
+        "sp1": 32.4,
+        "sp2": 11.1,
+        "sp3": 0.0,
+        "kandidater": 20,
+        "registrerte": 49,
+        "innSp": 2776936,
+        "innFullforing": 1038000,
+        "total": 3814936
+       },
+       {
+        "aar": 2024,
+        "budsjettaar": 2026,
+        "satsAar": 2026,
+        "forelopig": false,
+        "sp1": 36.1,
+        "sp2": 10.7,
+        "sp3": 0.0,
+        "kandidater": 11,
+        "registrerte": 62,
+        "innSp": 3054419,
+        "innFullforing": 591250,
+        "total": 3645669
+       },
+       {
+        "aar": 2025,
+        "budsjettaar": 2027,
+        "satsAar": 2026,
+        "forelopig": true,
+        "sp1": 44.0,
+        "sp2": 15.3,
+        "sp3": 0.0,
+        "kandidater": 31,
+        "registrerte": 54,
+        "innSp": 3929165,
+        "innFullforing": 1666250,
+        "total": 5595415
+       }
+      ]
+     },
+     {
+      "entryId": "ntnu_circ",
+      "shortName": "NTNU",
+      "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+      "isNmbu": false,
+      "programnavn": "Master of Science in Circular Economy (master 2 år)",
+      "years": [
+       {
+        "aar": 2023,
+        "budsjettaar": 2025,
+        "satsAar": 2025,
+        "forelopig": false,
+        "sp1": 0.2,
+        "sp2": 4.4,
+        "sp3": 0.0,
+        "kandidater": 4,
+        "registrerte": 6,
+        "innSp": 385588,
+        "innFullforing": 207600,
+        "total": 593188
+       },
+       {
+        "aar": 2024,
+        "budsjettaar": 2026,
+        "satsAar": 2026,
+        "forelopig": false,
+        "sp1": 0.0,
+        "sp2": 2.1,
+        "sp3": 0.0,
+        "kandidater": 5,
+        "registrerte": 0,
+        "innSp": 186894,
+        "innFullforing": 268750,
+        "total": 455644
+       },
+       {
+        "aar": 2025,
+        "budsjettaar": 2027,
+        "satsAar": 2026,
+        "forelopig": true,
+        "sp1": 0.0,
+        "sp2": 0.5,
+        "sp3": 0.0,
+        "kandidater": 0,
+        "registrerte": null,
+        "innSp": 43975,
+        "innFullforing": 0,
+        "total": 43975
+       }
+      ]
+     }
+    ]
    }
   ]
  },
@@ -17164,7 +17279,7 @@
    "niva": "M2",
    "fak": "hh",
    "kategori": "Toårig master",
-   "iSammenligning": false,
+   "iSammenligning": true,
    "aar": {
     "2023": {
      "sp": 43.5,

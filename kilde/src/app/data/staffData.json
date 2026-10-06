@@ -1,5 +1,5 @@
 {
- "generert": "2026-09-30",
+ "generert": "2026-10-06",
  "institusjoner": [
   {
    "id": "1173",
@@ -12872,6 +12872,118 @@
     ],
     "programmer": [
      "Logistikk (årsstudium)"
+    ],
+    "hoved": false
+   },
+   {
+    "id": "1150_271",
+    "inst": "1150",
+    "kort": "NTNU",
+    "fakultetskode": "271",
+    "isNmbu": false,
+    "navn": "Fakultet for ingeniørvitenskap",
+    "years": [
+     {
+      "aar": 2019,
+      "arsverk": 1216.8,
+      "faglige": 415.1,
+      "fagligeKvinner": 67.6,
+      "rekruttering": 539.3,
+      "forste": 285.6,
+      "studenter": 6485,
+      "studentarsverk": 4165.3,
+      "studentarsverkEgen": 4040.0,
+      "publPoeng": 1764.0,
+      "publikasjoner": 1614,
+      "niva2Andel": 48.9
+     },
+     {
+      "aar": 2020,
+      "arsverk": 1223.8,
+      "faglige": 409.8,
+      "fagligeKvinner": 71.1,
+      "rekruttering": 550.3,
+      "forste": 294.6,
+      "studenter": 6044,
+      "studentarsverk": 4179.1,
+      "studentarsverkEgen": 4061.0,
+      "publPoeng": 1716.9,
+      "publikasjoner": 1609,
+      "niva2Andel": 48.7
+     },
+     {
+      "aar": 2021,
+      "arsverk": 1226.7,
+      "faglige": 395.9,
+      "fagligeKvinner": 69.1,
+      "rekruttering": 572.2,
+      "forste": 299.0,
+      "studenter": 6571,
+      "studentarsverk": 4333.7,
+      "studentarsverkEgen": 4230.3,
+      "publPoeng": 2209.7,
+      "publikasjoner": 1927,
+      "niva2Andel": 56.0
+     },
+     {
+      "aar": 2022,
+      "arsverk": 1214.2,
+      "faglige": 404.9,
+      "fagligeKvinner": 67.4,
+      "rekruttering": 544.2,
+      "forste": 300.6,
+      "studenter": 6610,
+      "studentarsverk": 4353.9,
+      "studentarsverkEgen": 4220.9,
+      "publPoeng": 1852.9,
+      "publikasjoner": 1789,
+      "niva2Andel": 51.0
+     },
+     {
+      "aar": 2023,
+      "arsverk": 1140.0,
+      "faglige": 389.5,
+      "fagligeKvinner": 71.9,
+      "rekruttering": 486.6,
+      "forste": 290.6,
+      "studenter": 6487,
+      "studentarsverk": 4326.6,
+      "studentarsverkEgen": 4181.1,
+      "publPoeng": 1498.2,
+      "publikasjoner": 1471,
+      "niva2Andel": 47.4
+     },
+     {
+      "aar": 2024,
+      "arsverk": 1090.5,
+      "faglige": 379.7,
+      "fagligeKvinner": 73.5,
+      "rekruttering": 458.1,
+      "forste": 282.2,
+      "studenter": 6543,
+      "studentarsverk": 4266.9,
+      "studentarsverkEgen": 4174.1,
+      "publPoeng": 1475.0,
+      "publikasjoner": 1436,
+      "niva2Andel": 46.8
+     },
+     {
+      "aar": 2025,
+      "arsverk": 1109.4,
+      "faglige": 377.8,
+      "fagligeKvinner": 68.0,
+      "rekruttering": 477.3,
+      "forste": 283.0,
+      "studenter": 6684,
+      "studentarsverk": 4386.7,
+      "studentarsverkEgen": 4248.5,
+      "publPoeng": 1390.5,
+      "publikasjoner": 1376,
+      "niva2Andel": 46.8
+     }
+    ],
+    "programmer": [
+     "Master of Science in Circular Economy (master 2 år)"
     ],
     "hoved": false
    },

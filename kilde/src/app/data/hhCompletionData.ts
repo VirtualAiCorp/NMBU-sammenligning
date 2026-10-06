@@ -1,4 +1,4 @@
-// GENERERT av scripts/build-completion.py 2026-09-26 – ikke rediger for hånd.
+// GENERERT av scripts/build-completion.py 2026-10-06 – ikke rediger for hånd.
 // Kilde: DBH/HKDIR tabell 707 (gjennomføring og frafall per startkull), 123 (registrerte, høst), 110 (nye), 104 (kandidater), 335 (studiepoeng iht. plan).
 import type { LandsamLevel } from './landsamAdmissionData';
 
@@ -20,7 +20,7 @@ export interface CompletionProgram {
 }
 export interface CompletionGroup { id: string; label: string; level: LandsamLevel; nmbuIds: string[]; defaultIds: string[]; programs: CompletionProgram[]; }
 
-export const COMPLETION_HENTET = '2026-09-26';
+export const COMPLETION_HENTET = '2026-10-06';
 
 export const COMPLETION_GROUPS: CompletionGroup[] = [
   {
@@ -1827,6 +1827,40 @@ export const COMPLETION_GROUPS: CompletionGroup[] = [
           { aar: 2023, registrerte: 38, registrerteKvinner: 22, nye: 8, nyeKvinner: 4, kandidater: 15, kandidaterKvinner: 7, spPlanlagt: 2317.5, spGjennomfort: 2190 },
           { aar: 2024, registrerte: 44, registrerteKvinner: 21, nye: 14, nyeKvinner: 4, kandidater: 22, kandidaterKvinner: 11, spPlanlagt: 2505, spGjennomfort: 2437.5 },
           { aar: 2025, registrerte: 57, registrerteKvinner: 37, nye: 15, nyeKvinner: 12, kandidater: 16, kandidaterKvinner: 8, spPlanlagt: 2902.5, spGjennomfort: 2865 },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'bioec', label: 'Bioøkonomi (master)', level: 'master2', nmbuIds: ['nmbu_bioec'], defaultIds: ['nmbu_bioec'],
+    programs: [
+      {
+        entryId: 'nmbu_bioec', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Bioøkonomi – biobasert verdiskaping og forretningsutvikling (master 2 år)', dbhKoder: ['M-BIOEC'],
+        kull: [
+          { aar: 2021, normertAar: 2023, nivaa: 'M2', startkull: 25, startkullKvinner: 18, fullfortNormert: 22, fullfortNormertKvinner: 16, fullfort1: 22, fullfort2: 22, studerer: 3, studerer1: 0, studerer2: 0, frafalt: 0, frafalt1: 0, frafalt2: 0, inst: { fullfortNormert: 22, fullfort1: 22, fullfort2: 22, frafalt: 0, frafalt2: 3 }, sektor: { fullfortNormert: 22, fullfort1: 22, fullfort2: 22, frafalt: 0, frafalt2: 0 } },
+          { aar: 2022, normertAar: 2024, nivaa: 'M2', startkull: 19, startkullKvinner: 14, fullfortNormert: 13, fullfortNormertKvinner: 10, fullfort1: 17, fullfort2: 0, studerer: 6, studerer1: 0, studerer2: 0, frafalt: 0, frafalt1: 0, frafalt2: 0, inst: { fullfortNormert: 13, fullfort1: 17, fullfort2: 0, frafalt: 0, frafalt2: 0 }, sektor: { fullfortNormert: 13, fullfort1: 18, fullfort2: 0, frafalt: 0, frafalt2: 0 } },
+          { aar: 2023, normertAar: 2025, nivaa: 'M2', startkull: 30, startkullKvinner: 14, fullfortNormert: 25, fullfortNormertKvinner: 11, fullfort1: 0, fullfort2: 0, studerer: 4, studerer1: 0, studerer2: 0, frafalt: 0, frafalt1: 0, frafalt2: 0, inst: { fullfortNormert: 25, fullfort1: 0, fullfort2: 0, frafalt: 0, frafalt2: 0 }, sektor: { fullfortNormert: 25, fullfort1: 0, fullfort2: 0, frafalt: 0, frafalt2: 0 } },
+        ],
+        aar: [
+          { aar: 2021, registrerte: 27, registrerteKvinner: 20, nye: 13, nyeKvinner: 10, kandidater: null, kandidaterKvinner: null, spPlanlagt: 907.5, spGjennomfort: 742.5 },
+          { aar: 2022, registrerte: 42, registrerteKvinner: 31, nye: 12, nyeKvinner: 8, kandidater: null, kandidaterKvinner: null, spPlanlagt: 2551, spGjennomfort: 1932.5 },
+          { aar: 2023, registrerte: 49, registrerteKvinner: 28, nye: 25, nyeKvinner: 12, kandidater: 20, kandidaterKvinner: 14, spPlanlagt: 3010, spGjennomfort: 2520 },
+          { aar: 2024, registrerte: 62, registrerteKvinner: 35, nye: 21, nyeKvinner: 11, kandidater: 11, kandidaterKvinner: 8, spPlanlagt: 3507.5, spGjennomfort: 2860 },
+          { aar: 2025, registrerte: 54, registrerteKvinner: 36, nye: 10, nyeKvinner: 0, kandidater: 31, kandidaterKvinner: 14, spPlanlagt: 3785, spGjennomfort: 3460 },
+        ],
+      },
+      {
+        entryId: 'ntnu_circ', shortName: 'NTNU', institusjon: 'Norges teknisk-naturvitenskapelige universitet', isNmbu: false, programnavn: 'Master of Science in Circular Economy (master 2 år)', dbhKoder: ['MSCE'],
+        kull: [
+        ],
+        aar: [
+          { aar: 2019, registrerte: 5, registrerteKvinner: 0, nye: 5, nyeKvinner: 0, kandidater: null, kandidaterKvinner: null, spPlanlagt: 0, spGjennomfort: 0 },
+          { aar: 2020, registrerte: 8, registrerteKvinner: 0, nye: 8, nyeKvinner: 0, kandidater: null, kandidaterKvinner: null, spPlanlagt: 397.5, spGjennomfort: 397.5 },
+          { aar: 2021, registrerte: 9, registrerteKvinner: 6, nye: 8, nyeKvinner: 5, kandidater: 3, kandidaterKvinner: 0, spPlanlagt: 517.5, spGjennomfort: 360 },
+          { aar: 2022, registrerte: 8, registrerteKvinner: 5, nye: 7, nyeKvinner: 0, kandidater: 8, kandidaterKvinner: 4, spPlanlagt: 450, spGjennomfort: 427.5 },
+          { aar: 2023, registrerte: 6, registrerteKvinner: 0, nye: 4, nyeKvinner: 0, kandidater: 4, kandidaterKvinner: 0, spPlanlagt: 307.5, spGjennomfort: 285 },
+          { aar: 2024, registrerte: 0, registrerteKvinner: 0, nye: 0, nyeKvinner: 0, kandidater: 5, kandidaterKvinner: 0, spPlanlagt: 120, spGjennomfort: 127.5 },
+          { aar: 2025, registrerte: null, registrerteKvinner: null, nye: null, nyeKvinner: null, kandidater: 0, kandidaterKvinner: 0, spPlanlagt: 37.5, spGjennomfort: 30 },
         ],
       },
     ],

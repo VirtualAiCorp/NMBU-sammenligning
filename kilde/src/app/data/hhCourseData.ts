@@ -1,4 +1,4 @@
-// GENERERT av scripts/build-landsam-courses.py 2026-09-26 – ikke rediger for hånd.
+// GENERERT av scripts/build-landsam-courses.py 2026-10-06 – ikke rediger for hånd.
 // Kilde: DBH/HKDIR tabell 308 (karakterer, aggregert) og 208 (emner). Snitt: A=5…F=0, kun bokstavkarakterer.
 // DBH skjuler (setter til 0) celler med 1-2 kandidater i karakterfordelingen; dette rammer særlig
 // programnivå (mindre celler) og kan gi kunstig lav strykprosent. «skjult» er antall kandidater DBH
@@ -65119,6 +65119,772 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2023, A: 26, B: 16, C: 9, D: 13, E: 11, F: 5, G: 0, H: 0, total: 80, snitt: 3.23, strykprosent: 6.2, bestattprosent: null, skjult: 0 },
               { year: 2024, A: 9, B: 0, C: 5, D: 0, E: 3, F: 0, G: 0, H: 0, total: 17, snitt: 3.71, strykprosent: 0, bestattprosent: null, skjult: 5 },
               { year: 2025, A: 10, B: 10, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 4.5, strykprosent: 0, bestattprosent: null, skjult: 6 },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "bioec",
+    label: "Bioøkonomi (master)",
+    level: "master2",
+    note: "Lokale opptak; tall fra DBH 379. NTNU Circular Economy er ikke valgt som standard.",
+    programs: [
+      {
+        entryId: "nmbu_bioec",
+        shortName: "NMBU",
+        institusjon: "Norges miljø- og biovitenskapelige universitet",
+        isNmbu: true,
+        dbhInstitusjonskode: "1173",
+        dbhProgramkoder: ["M-BIOEC"],
+        dbhProgramnavn: "Bioøkonomi – biobasert verdiskaping og forretningsutvikling (master 2 år)",
+        courses: [
+          {
+            emnekode: "AOS235F-2",
+            emnenavn: "Praktisk endringsledelse - Nettversjon",
+            studiepoeng: 5,
+            years: [
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 5, H: 0, total: 5, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+            ],
+            emnenivaa: [
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 125, H: 49, total: 174, snitt: null, strykprosent: null, bestattprosent: 71.8, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 198, H: 38, total: 236, snitt: null, strykprosent: null, bestattprosent: 83.9, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "AOS237-1",
+            emnenavn: "Foretaksstrategi",
+            studiepoeng: 10,
+            years: [
+              { year: 2021, A: 0, B: 3, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 5 },
+              { year: 2023, A: 0, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2024, A: 0, B: 4, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 3.36, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 0, B: 5, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 3.45, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 11, B: 34, C: 22, D: 3, E: 0, F: 0, G: 0, H: 0, total: 70, snitt: 3.76, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 11, B: 27, C: 35, D: 7, E: 0, F: 0, G: 0, H: 0, total: 80, snitt: 3.52, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2023, A: 9, B: 21, C: 27, D: 12, E: 4, F: 4, G: 0, H: 0, total: 77, snitt: 3.09, strykprosent: 5.2, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 12, B: 29, C: 38, D: 15, E: 6, F: 0, G: 0, H: 0, total: 100, snitt: 3.26, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 9, B: 46, C: 62, D: 12, E: 0, F: 3, G: 0, H: 0, total: 132, snitt: 3.33, strykprosent: 2.3, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "AOS240-1",
+            emnenavn: "Samfunnsvitenskapelig metode",
+            studiepoeng: 5,
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 4, H: 0, total: 4, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 124, H: 6, total: 130, snitt: null, strykprosent: null, bestattprosent: 95.4, skjult: 0 },
+              { year: 2022, A: 7, B: 36, C: 75, D: 35, E: 0, F: 5, G: 0, H: 0, total: 158, snitt: 3, strykprosent: 3.2, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 30, B: 79, C: 32, D: 0, E: 0, F: 0, G: 0, H: 0, total: 141, snitt: 3.99, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 14, B: 76, C: 56, D: 4, E: 0, F: 0, G: 0, H: 0, total: 150, snitt: 3.67, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 21, B: 119, C: 75, D: 10, E: 0, F: 0, G: 0, H: 0, total: 225, snitt: 3.67, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: "AOS300-1",
+            emnenavn: "Mitt lederskap",
+            studiepoeng: 5,
+            years: [
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 3, H: 0, total: 3, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 3, H: 0, total: 3, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 3, H: 0, total: 3, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 72, H: 0, total: 72, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 73, H: 0, total: 73, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 91, H: 0, total: 91, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 65, H: 0, total: 65, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 54, H: 0, total: 54, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "AOS340-1",
+            emnenavn: "Kvalitativ metode",
+            studiepoeng: 5,
+            years: [
+              { year: 2022, A: 4, B: 4, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 3.86, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 0, B: 0, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2024, A: 0, B: 6, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 8, B: 12, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 4.4, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 22, B: 41, C: 32, D: 3, E: 0, F: 3, G: 0, H: 0, total: 101, snitt: 3.72, strykprosent: 3, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 24, B: 34, C: 26, D: 9, E: 0, F: 11, G: 0, H: 0, total: 104, snitt: 3.38, strykprosent: 10.6, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 9, B: 46, C: 29, D: 4, E: 0, F: 0, G: 0, H: 0, total: 88, snitt: 3.68, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 13, B: 49, C: 36, D: 7, E: 0, F: 0, G: 0, H: 0, total: 105, snitt: 3.65, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 42, B: 61, C: 21, D: 0, E: 0, F: 0, G: 0, H: 0, total: 124, snitt: 4.17, strykprosent: 0, bestattprosent: null, skjult: 4 },
+            ],
+          },
+          {
+            emnekode: "AOS341-1",
+            emnenavn: "Kvantitative metoder",
+            studiepoeng: 5,
+            years: [
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 8, H: 0, total: 8, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 2 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 9, H: 0, total: 9, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 13, H: 3, total: 16, snitt: null, strykprosent: null, bestattprosent: 81.2, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 12, H: 0, total: 12, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 54, H: 6, total: 60, snitt: null, strykprosent: null, bestattprosent: 90, skjult: 0 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 55, H: 13, total: 68, snitt: null, strykprosent: null, bestattprosent: 80.9, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 85, H: 0, total: 85, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 40, H: 11, total: 51, snitt: null, strykprosent: null, bestattprosent: 78.4, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 71, H: 13, total: 84, snitt: null, strykprosent: null, bestattprosent: 84.5, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "AQX252-1",
+            emnenavn: "Produksjonsstyring i Akvakultur",
+            studiepoeng: 5,
+            years: [
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 3, H: 0, total: 3, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 23, H: 0, total: 23, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "AQX300-1",
+            emnenavn: "Anvendt Akvakultur",
+            studiepoeng: 10,
+            years: [
+              { year: 2023, A: 0, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 3, B: 6, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 4.33, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2022, A: 10, B: 9, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 4.32, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 11, B: 14, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 4.29, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 11, B: 8, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 4.58, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 10, B: 18, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 4.36, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "BIO100-1",
+            emnenavn: "Cellebiologi",
+            studiepoeng: 5,
+            years: [
+              { year: 2023, A: 0, B: 8, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2024, A: 0, B: 9, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 3.56, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 3, B: 8, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 4.27, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 47, B: 109, C: 28, D: 18, E: 3, F: 0, G: 0, H: 0, total: 205, snitt: 3.87, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 34, B: 80, C: 47, D: 0, E: 0, F: 7, G: 0, H: 0, total: 168, snitt: 3.76, strykprosent: 4.2, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 39, B: 104, C: 41, D: 0, E: 0, F: 20, G: 0, H: 0, total: 204, snitt: 3.6, strykprosent: 9.8, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 30, B: 116, C: 46, D: 0, E: 0, F: 9, G: 0, H: 0, total: 201, snitt: 3.74, strykprosent: 4.5, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 78, B: 97, C: 33, D: 0, E: 0, F: 8, G: 0, H: 0, total: 216, snitt: 4.06, strykprosent: 3.7, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: "BIO235-1",
+            emnenavn: "Bioteknologi og kjemi i næringslivet",
+            studiepoeng: 5,
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 12, H: 0, total: 12, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 23, H: 0, total: 23, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 18, H: 0, total: 18, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 29, H: 0, total: 29, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 33, H: 0, total: 33, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 33, H: 0, total: 33, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "BIO337-1",
+            emnenavn: "Biogassteknologi",
+            studiepoeng: 5,
+            years: [
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 3, H: 0, total: 3, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 4, H: 0, total: 4, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 8, H: 0, total: 8, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 7, H: 0, total: 7, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 3, H: 0, total: 3, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "BIOEC300-1",
+            emnenavn: "Introduksjon til bioøkonomi og biobasert verdiskapning",
+            studiepoeng: 10,
+            years: [
+              { year: 2021, A: 13, B: 6, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 4.28, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 19, H: 0, total: 19, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 30, H: 0, total: 30, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 29, H: 0, total: 29, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 24, H: 0, total: 24, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 13, B: 6, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 4.28, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 19, H: 0, total: 19, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 30, H: 0, total: 30, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 29, H: 0, total: 29, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 24, H: 0, total: 24, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "BIOEC310-1",
+            emnenavn: "Innovasjon i biobaserte næringer",
+            studiepoeng: 5,
+            years: [
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 25, H: 0, total: 25, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 19, H: 0, total: 19, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 28, H: 0, total: 28, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 28, H: 0, total: 28, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 25, H: 0, total: 25, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 19, H: 0, total: 19, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 28, H: 0, total: 28, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 28, H: 0, total: 28, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "BIOEC320-1",
+            emnenavn: "Internship",
+            studiepoeng: 10,
+            years: [
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 22, H: 0, total: 22, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 15, H: 0, total: 15, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 2 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 24, H: 5, total: 29, snitt: null, strykprosent: null, bestattprosent: 82.8, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 27, H: 0, total: 27, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 22, H: 0, total: 22, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 15, H: 0, total: 15, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 2 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 24, H: 5, total: 29, snitt: null, strykprosent: null, bestattprosent: 82.8, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 27, H: 0, total: 27, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "BIOEC350-1",
+            emnenavn: "Biologisk produksjon, industrielle prosesser og markeder",
+            studiepoeng: 10,
+            years: [
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 24, H: 0, total: 24, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 11, B: 7, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 4.61, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 13, B: 8, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 29, snitt: 4.17, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 8, B: 15, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 4.15, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 24, H: 0, total: 24, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 11, B: 7, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 4.61, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 13, B: 8, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 29, snitt: 4.17, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 8, B: 15, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 4.15, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "BIOEC360-1",
+            emnenavn: "Sirkulærøkonomi i biobaserte virksomheter",
+            studiepoeng: 10,
+            years: [
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 19, H: 0, total: 19, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 19, H: 0, total: 19, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "BUS211-1",
+            emnenavn: "Bærekraftsrapportering",
+            studiepoeng: 5,
+            years: [
+              { year: 2023, A: 4, B: 13, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 4, B: 8, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 4.33, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2023, A: 19, B: 44, C: 26, D: 11, E: 0, F: 3, G: 0, H: 0, total: 103, snitt: 3.6, strykprosent: 2.9, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 19, B: 31, C: 19, D: 8, E: 5, F: 0, G: 0, H: 0, total: 82, snitt: 3.62, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "BUS211-2",
+            emnenavn: "Bærekraftsrapportering",
+            studiepoeng: 5,
+            years: [
+              { year: 2025, A: 4, B: 4, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 3.92, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2025, A: 23, B: 37, C: 24, D: 11, E: 3, F: 6, G: 0, H: 0, total: 104, snitt: 3.46, strykprosent: 5.8, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "BUS211F-1",
+            emnenavn: "Bærekraftsrapportering - Nettversjon",
+            studiepoeng: 5,
+            years: [
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 8, H: 0, total: 8, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 2 },
+            ],
+            emnenivaa: [
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 205, H: 37, total: 242, snitt: null, strykprosent: null, bestattprosent: 84.7, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "BUS311-1",
+            emnenavn: "Miljøledelse og bærekraftrapportering",
+            studiepoeng: 5,
+            years: [
+              { year: 2022, A: 4, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 6, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 4.6, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 31, B: 21, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 55, snitt: 4.51, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 39, B: 17, C: 18, D: 5, E: 4, F: 0, G: 0, H: 0, total: 83, snitt: 3.99, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 41, B: 48, C: 7, D: 7, E: 0, F: 0, G: 0, H: 0, total: 103, snitt: 4.19, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 48, B: 56, C: 16, D: 0, E: 3, F: 0, G: 0, H: 0, total: 123, snitt: 4.19, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 56, B: 33, C: 11, D: 0, E: 0, F: 0, G: 0, H: 0, total: 100, snitt: 4.45, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: "ECN263-1",
+            emnenavn: "Matvaremarkeder og politikk",
+            studiepoeng: 5,
+            years: [
+              { year: 2022, A: 0, B: 6, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 3.67, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 0, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 0, B: 4, C: 4, D: 3, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 3.09, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 0, B: 0, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 0, B: 4, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 3.44, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 4, B: 9, C: 6, D: 0, E: 0, F: 4, G: 0, H: 0, total: 23, snitt: 3.22, strykprosent: 17.4, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 0, B: 8, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 3.73, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2024, A: 7, B: 7, C: 9, D: 9, E: 0, F: 0, G: 0, H: 0, total: 32, snitt: 3.38, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 5, B: 10, C: 13, D: 3, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 3.55, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
+          },
+          {
+            emnekode: "ECN306-1",
+            emnenavn: "Økonomi og bærekraft",
+            studiepoeng: 5,
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 3, H: 0, total: 3, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 3, H: 0, total: 3, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 34, H: 0, total: 37, snitt: 4, strykprosent: 0, bestattprosent: 100, skjult: 2 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 45, H: 3, total: 48, snitt: null, strykprosent: null, bestattprosent: 93.8, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 61, H: 0, total: 61, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 40, H: 0, total: 40, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 35, H: 0, total: 35, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: "EDS260-1",
+            emnenavn: "Globale miljøforandringer",
+            studiepoeng: 5,
+            years: [
+              { year: 2022, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 42, B: 27, C: 4, D: 0, E: 0, F: 6, G: 0, H: 0, total: 79, snitt: 4.18, strykprosent: 7.6, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 43, B: 38, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 85, snitt: 4.46, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 62, B: 61, C: 17, D: 0, E: 0, F: 0, G: 0, H: 0, total: 140, snitt: 4.32, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 54, B: 33, C: 10, D: 0, E: 0, F: 0, G: 0, H: 0, total: 97, snitt: 4.45, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 50, B: 38, C: 7, D: 0, E: 0, F: 4, G: 0, H: 0, total: 99, snitt: 4.27, strykprosent: 4, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: "FORN200-1",
+            emnenavn: "Energisystemer og produksjonsteknologier",
+            studiepoeng: 10,
+            years: [
+              { year: 2021, A: 0, B: 7, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 3.64, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 0, B: 17, C: 19, D: 0, E: 0, F: 0, G: 0, H: 0, total: 36, snitt: 3.47, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
+          },
+          {
+            emnekode: "FORN220-1",
+            emnenavn: "Livsløpsvurdering - miljøeffekter av energi- og avfallssystemer",
+            studiepoeng: 10,
+            years: [
+              { year: 2022, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 7, B: 14, C: 9, D: 0, E: 0, F: 3, G: 0, H: 0, total: 33, snitt: 3.58, strykprosent: 9.1, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 13, B: 15, C: 11, D: 0, E: 0, F: 0, G: 0, H: 0, total: 39, snitt: 4.05, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: "FORN350-1",
+            emnenavn: "Ressurser i kretsløp - bærekraftig forvaltning av avfallsressurser",
+            studiepoeng: 5,
+            years: [
+              { year: 2021, A: 0, B: 3, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 3, B: 7, C: 6, D: 3, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3.53, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: "FORNY200-1",
+            emnenavn: "Fornybare energikilder og -teknologier",
+            studiepoeng: 10,
+            years: [
+              { year: 2022, A: 0, B: 4, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 3.57, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 5, B: 8, C: 5, D: 3, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3.71, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 3, B: 9, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 3.94, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 3, B: 4, C: 3, D: 3, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 3.54, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+            emnenivaa: [
+              { year: 2022, A: 3, B: 13, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 3.76, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2023, A: 11, B: 21, C: 9, D: 3, E: 0, F: 3, G: 0, H: 0, total: 47, snitt: 3.66, strykprosent: 6.4, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 3, B: 23, C: 12, D: 0, E: 0, F: 0, G: 0, H: 0, total: 38, snitt: 3.76, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 9, B: 16, C: 8, D: 3, E: 0, F: 3, G: 0, H: 0, total: 39, snitt: 3.56, strykprosent: 7.7, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "FORNY220-1",
+            emnenavn: "Livsløpsvurdering - miljøeffekter av energi- og avfallssystemer",
+            studiepoeng: 10,
+            years: [
+              { year: 2023, A: 0, B: 0, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 0, B: 0, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2025, A: 3, B: 5, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 3.85, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+            emnenivaa: [
+              { year: 2023, A: 6, B: 9, C: 15, D: 0, E: 0, F: 3, G: 0, H: 0, total: 33, snitt: 3.36, strykprosent: 9.1, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 4, B: 7, C: 18, D: 3, E: 0, F: 0, G: 0, H: 0, total: 32, snitt: 3.38, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 8, B: 15, C: 10, D: 0, E: 0, F: 0, G: 0, H: 0, total: 33, snitt: 3.94, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: "FORNY320-1",
+            emnenavn: "Ressurser i kretsløp - bærekraftig forvaltning av avfallsressurser",
+            studiepoeng: 5,
+            years: [
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 5 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 0, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+            emnenivaa: [
+              { year: 2022, A: 0, B: 4, C: 3, D: 5, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 2.92, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 4, B: 5, C: 3, D: 3, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 3.67, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 9, B: 3, C: 0, D: 5, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 3.94, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 0, B: 8, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 5 },
+            ],
+          },
+          {
+            emnekode: "INN200-1",
+            emnenavn: "Økonomistyring",
+            studiepoeng: 5,
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 7, H: 0, total: 7, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 3, H: 0, total: 3, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 8, H: 0, total: 8, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 2 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 12, H: 0, total: 12, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2025, A: 0, B: 0, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 5, B: 3, C: 0, D: 3, E: 0, F: 0, G: 89, H: 10, total: 110, snitt: 3.91, strykprosent: 0, bestattprosent: 89.9, skjult: 5 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 123, H: 15, total: 138, snitt: null, strykprosent: null, bestattprosent: 89.1, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 115, H: 20, total: 135, snitt: null, strykprosent: null, bestattprosent: 85.2, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 133, H: 21, total: 154, snitt: null, strykprosent: null, bestattprosent: 86.4, skjult: 0 },
+              { year: 2025, A: 6, B: 9, C: 25, D: 10, E: 8, F: 0, G: 8, H: 0, total: 66, snitt: 2.91, strykprosent: 0, bestattprosent: 100, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: "INN334-1",
+            emnenavn: "Sommerskole i utlandet",
+            studiepoeng: 5,
+            years: [
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 7, H: 0, total: 7, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 7, H: 0, total: 7, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "KJB100-1",
+            emnenavn: "Introduksjon til biokjemi",
+            studiepoeng: 5,
+            years: [
+              { year: 2025, A: 0, B: 3, C: 3, D: 4, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 2.9, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 5, B: 8, C: 13, D: 9, E: 9, F: 10, G: 0, H: 0, total: 54, snitt: 2.28, strykprosent: 18.5, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 0, B: 7, C: 29, D: 11, E: 0, F: 20, G: 0, H: 0, total: 67, snitt: 2.04, strykprosent: 29.9, bestattprosent: null, skjult: 4 },
+              { year: 2023, A: 4, B: 5, C: 27, D: 16, E: 0, F: 18, G: 0, H: 0, total: 70, snitt: 2.19, strykprosent: 25.7, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 0, B: 5, C: 31, D: 14, E: 0, F: 16, G: 0, H: 0, total: 66, snitt: 2.14, strykprosent: 24.2, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 7, B: 9, C: 14, D: 26, E: 0, F: 14, G: 0, H: 0, total: 70, snitt: 2.36, strykprosent: 20, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: "M0-BIOEC-1",
+            emnenavn: "Planlegging av masteroppgave",
+            studiepoeng: 0,
+            years: [
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 23, H: 0, total: 23, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 17, H: 0, total: 17, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 28, H: 0, total: 28, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 27, H: 0, total: 27, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+            ],
+            emnenivaa: [
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 23, H: 0, total: 23, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 17, H: 0, total: 17, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 28, H: 0, total: 28, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 28, H: 0, total: 28, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "M30-BIOEC-1",
+            emnenavn: "Masteroppgave",
+            studiepoeng: 30,
+            years: [
+              { year: 2023, A: 12, B: 9, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 4.57, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 0, B: 7, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 3.58, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 12, B: 7, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 26, snitt: 4.19, strykprosent: 0, bestattprosent: null, skjult: 5 },
+            ],
+            emnenivaa: [
+              { year: 2023, A: 12, B: 9, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 4.57, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 0, B: 7, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 3.58, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 13, B: 7, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 4.18, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
+          },
+          {
+            emnekode: "MVI280-1",
+            emnenavn: "Prosessteknologi I",
+            studiepoeng: 5,
+            years: [
+              { year: 2022, A: 0, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 4 },
+            ],
+            emnenivaa: [
+              { year: 2022, A: 8, B: 12, C: 9, D: 10, E: 0, F: 4, G: 0, H: 0, total: 43, snitt: 3.14, strykprosent: 9.3, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 3, B: 0, C: 5, D: 3, E: 0, F: 4, G: 0, H: 0, total: 15, snitt: 2.4, strykprosent: 26.7, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: "MVI303-1",
+            emnenavn: "Alternative proteiner: En tverrfaglig introduksjon",
+            studiepoeng: 5,
+            years: [
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 5, H: 0, total: 5, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 6, H: 0, total: 6, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 18, H: 0, total: 18, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 17, H: 0, total: 17, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "MVI385-1",
+            emnenavn: "Produktutvikling av mat",
+            studiepoeng: 10,
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 5, H: 0, total: 5, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 10, H: 0, total: 10, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 19, H: 0, total: 19, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 42, H: 0, total: 42, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 30, H: 0, total: 30, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 28, H: 0, total: 28, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 28, H: 0, total: 28, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "SDG200-1",
+            emnenavn: "Bærekraftige matproduksjonssystemer",
+            studiepoeng: 5,
+            years: [
+              { year: 2022, A: 4, B: 4, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 3.86, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 0, B: 10, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 9, B: 0, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 4.38, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 7, B: 6, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 4.54, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 4, B: 16, C: 26, D: 3, E: 3, F: 0, G: 0, H: 0, total: 52, snitt: 3.29, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 15, B: 27, C: 29, D: 12, E: 6, F: 3, G: 0, H: 0, total: 92, snitt: 3.26, strykprosent: 3.3, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 20, B: 23, C: 36, D: 0, E: 0, F: 0, G: 0, H: 0, total: 79, snitt: 3.8, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 15, B: 16, C: 32, D: 4, E: 0, F: 0, G: 0, H: 0, total: 67, snitt: 3.63, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 26, B: 23, C: 17, D: 0, E: 0, F: 0, G: 0, H: 0, total: 66, snitt: 4.14, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: "SKOG200-1",
+            emnenavn: "Skogens biologi, økologi og produksjon",
+            studiepoeng: 5,
+            years: [
+              { year: 2022, A: 0, B: 0, C: 3, D: 3, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 2.5, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 0, B: 4, C: 13, D: 6, E: 4, F: 0, G: 0, H: 0, total: 27, snitt: 2.63, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 0, B: 7, C: 11, D: 10, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 2.89, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 0, B: 11, C: 8, D: 8, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 3.11, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 0, B: 3, C: 7, D: 11, E: 3, F: 4, G: 0, H: 0, total: 28, snitt: 2.07, strykprosent: 14.3, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 11, D: 16, E: 7, F: 0, G: 0, H: 0, total: 34, snitt: 2.12, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
+          },
+          {
+            emnekode: "SKOG210-1",
+            emnenavn: "Skogprodukter og materialteknologi",
+            studiepoeng: 5,
+            years: [
+              { year: 2022, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 3 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 3, B: 6, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2022, A: 0, B: 8, C: 10, D: 3, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3.24, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 0, B: 5, C: 9, D: 4, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 3.06, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 3, B: 8, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 3.93, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 0, B: 13, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 3.65, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: "SPE-M-BIOEC-1",
+            emnenavn: "Spesialpensum",
+            studiepoeng: 0,
+            years: [
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 22, H: 0, total: 22, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 22, H: 0, total: 22, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "THT320-1",
+            emnenavn: "Miljøanalyser",
+            studiepoeng: 5,
+            years: [
+              { year: 2022, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 7, B: 9, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 4.21, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 4, B: 10, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3.95, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+        ],
+      },
+      {
+        entryId: "ntnu_circ",
+        shortName: "NTNU",
+        institusjon: "Norges teknisk-naturvitenskapelige universitet",
+        isNmbu: false,
+        dbhInstitusjonskode: "1150",
+        dbhProgramkoder: ["MSCE"],
+        dbhProgramnavn: "Master of Science in Circular Economy (master 2 år)",
+        courses: [
+          {
+            emnekode: "SØK1101-1",
+            emnenavn: "Miljø- og ressursøkonomi",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2021, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 3 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 20, B: 53, C: 10, D: 6, E: 5, F: 0, G: 0, H: 0, total: 94, snitt: 3.82, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 8, B: 13, C: 22, D: 8, E: 5, F: 0, G: 0, H: 0, total: 56, snitt: 3.2, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 14, B: 29, C: 13, D: 4, E: 0, F: 0, G: 0, H: 0, total: 60, snitt: 3.88, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 11, B: 15, C: 11, D: 4, E: 3, F: 0, G: 0, H: 0, total: 44, snitt: 3.61, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 7, B: 16, C: 15, D: 17, E: 9, F: 0, G: 0, H: 0, total: 64, snitt: 2.92, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: "TEP4221-1",
+            emnenavn: "Python for bærekraftsanalyse",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 6, H: 0, total: 6, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 3, H: 0, total: 3, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 56, H: 4, total: 60, snitt: null, strykprosent: null, bestattprosent: 93.3, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 46, H: 0, total: 46, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 48, H: 0, total: 48, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 31, H: 0, total: 31, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "TEP4222-1",
+            emnenavn: "Kryssløpsanalyse, handel og miljø",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2021, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 4, H: 0, total: 4, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 17, B: 18, C: 0, D: 0, E: 0, F: 4, G: 0, H: 0, total: 39, snitt: 4.03, strykprosent: 10.3, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 15, B: 30, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 53, snitt: 4.13, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 37, H: 0, total: 37, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 12, B: 12, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 29, snitt: 4.24, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 5, B: 16, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 3.96, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: "TEP4223-1",
+            emnenavn: "Livsløpsvurdering",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 3 },
+              { year: 2022, A: 4, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 10, B: 47, C: 68, D: 37, E: 5, F: 10, G: 0, H: 0, total: 177, snitt: 2.94, strykprosent: 5.6, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 35, B: 62, C: 42, D: 15, E: 13, F: 10, G: 0, H: 0, total: 177, snitt: 3.34, strykprosent: 5.6, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 18, B: 42, C: 43, D: 29, E: 22, F: 15, G: 0, H: 0, total: 169, snitt: 2.76, strykprosent: 8.9, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 8, B: 38, C: 39, D: 18, E: 21, F: 6, G: 0, H: 0, total: 130, snitt: 2.82, strykprosent: 4.6, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 12, B: 42, C: 36, D: 31, E: 5, F: 0, G: 0, H: 0, total: 126, snitt: 3.2, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: "TEP4285-1",
+            emnenavn: "Materialstrømanalyse (MFA1)",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2021, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 5 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 4, B: 21, C: 20, D: 4, E: 5, F: 0, G: 0, H: 0, total: 54, snitt: 3.28, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 7, B: 12, C: 18, D: 10, E: 4, F: 5, G: 0, H: 0, total: 56, snitt: 2.88, strykprosent: 8.9, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 7, B: 14, C: 12, D: 4, E: 0, F: 0, G: 0, H: 0, total: 37, snitt: 3.65, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 0, B: 14, C: 14, D: 0, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2025, A: 6, B: 9, C: 10, D: 0, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 3.84, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
+          },
+          {
+            emnekode: "TEP4298-1",
+            emnenavn: "Entreprenørskap for sirkulær økonomi",
+            studiepoeng: 3,
+            years: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 5, H: 0, total: 5, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 5, H: 0, total: 5, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
             ],
           },
         ],

@@ -1,5 +1,5 @@
 {
- "generert": "2026-09-26",
+ "generert": "2026-10-06",
  "groups": [
   {
    "id": "oa",
@@ -6235,6 +6235,139 @@
        "a30": 4,
        "utenlandske": 0,
        "utveksling": 6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bioec",
+   "label": "Bioøkonomi (master)",
+   "level": "master2",
+   "nmbuIds": [
+    "nmbu_bioec"
+   ],
+   "defaultIds": [
+    "nmbu_bioec"
+   ],
+   "programs": [
+    {
+     "entryId": "nmbu_bioec",
+     "shortName": "NMBU",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "isNmbu": true,
+     "programnavn": "Bioøkonomi – biobasert verdiskaping og forretningsutvikling (master 2 år)",
+     "nivaa": "M2",
+     "aar": [
+      {
+       "aar": 2021,
+       "total": 27,
+       "a21": 0,
+       "a24": 14,
+       "a29": 8,
+       "a30": 5,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2022,
+       "total": 42,
+       "a21": 0,
+       "a24": 17,
+       "a29": 18,
+       "a30": 5,
+       "utenlandske": 0,
+       "utveksling": 3
+      },
+      {
+       "aar": 2023,
+       "total": 49,
+       "a21": 0,
+       "a24": 25,
+       "a29": 18,
+       "a30": 5,
+       "utenlandske": 0,
+       "utveksling": 0
+      },
+      {
+       "aar": 2024,
+       "total": 62,
+       "a21": 0,
+       "a24": 37,
+       "a29": 16,
+       "a30": 8,
+       "utenlandske": 0,
+       "utveksling": 4
+      },
+      {
+       "aar": 2025,
+       "total": 54,
+       "a21": 0,
+       "a24": 29,
+       "a29": 19,
+       "a30": 6,
+       "utenlandske": 3,
+       "utveksling": 6
+      }
+     ]
+    },
+    {
+     "entryId": "ntnu_circ",
+     "shortName": "NTNU",
+     "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+     "isNmbu": false,
+     "programnavn": "Master of Science in Circular Economy (master 2 år)",
+     "nivaa": "M2",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 5,
+       "a21": 0,
+       "a24": 0,
+       "a29": 3,
+       "a30": 0,
+       "utenlandske": 5,
+       "utveksling": null
+      },
+      {
+       "aar": 2020,
+       "total": 8,
+       "a21": 0,
+       "a24": 0,
+       "a29": 4,
+       "a30": 0,
+       "utenlandske": 8,
+       "utveksling": null
+      },
+      {
+       "aar": 2021,
+       "total": 9,
+       "a21": 0,
+       "a24": 0,
+       "a29": 8,
+       "a30": 0,
+       "utenlandske": 9,
+       "utveksling": null
+      },
+      {
+       "aar": 2022,
+       "total": 8,
+       "a21": 0,
+       "a24": 0,
+       "a29": 5,
+       "a30": 0,
+       "utenlandske": 8,
+       "utveksling": null
+      },
+      {
+       "aar": 2023,
+       "total": 6,
+       "a21": 0,
+       "a24": 0,
+       "a29": 3,
+       "a30": 0,
+       "utenlandske": 6,
+       "utveksling": null
       }
      ]
     }
