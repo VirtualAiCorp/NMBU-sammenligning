@@ -2,7 +2,7 @@ import { TrendingUp, BookOpen, Globe2, Star, GraduationCap, Users, Microscope, H
 import { INGEN_DATA_TEKST, type FacultyData } from '../data/faculties';
 import { useInnebygd } from '../innebygd';
 import {
-  landsamHasComparison, landsamProgramsWithData,
+  landsamHasComparison, landsamKanVises, landsamProgramsWithData,
   landsamCourseHasComparison, landsamCourseProgramsWithData,
 } from '../data/landsamUtils';
 
@@ -164,7 +164,7 @@ export function LandsamLanding({ faculty, onOpenAnalysis, onOpenCourses, onOpenM
               <span style={{ fontSize: 11, color: '#856404', fontWeight: 600, opacity: 0.7, whiteSpace: 'nowrap', paddingTop: 12 }}>Gå direkte til:</span>
             )}
             {admissionGroups.map((g) => {
-              const ok = landsamHasComparison(g);
+              const ok = landsamKanVises(g);
               if (!ok) return (
                 <div key={g.id} title="Ikke nok data til sammenligning ennå"
                   className="flex flex-col items-start rounded-xl px-4 py-2.5 text-left"
@@ -191,7 +191,7 @@ export function LandsamLanding({ faculty, onOpenAnalysis, onOpenCourses, onOpenM
               >
                 <span style={{ fontSize: 13, fontWeight: 600, color: '#5a3d00' }}>{g.label}</span>
                 <span style={{ fontSize: 10, color: '#856404', marginTop: 1 }}>
-                  {LEVEL_LABEL[g.level] ?? g.level} · {g.entries.length} program
+                  {LEVEL_LABEL[g.level] ?? g.level} · {landsamHasComparison(g) ? `${g.entries.length} program` : 'bare NMBU har tall'}
                 </span>
               </button>
               );

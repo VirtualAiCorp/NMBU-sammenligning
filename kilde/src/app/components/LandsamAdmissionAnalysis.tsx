@@ -13,7 +13,7 @@ import { NyeOpptaksregler } from './NyeOpptaksregler';
 import { Studieplasser } from './Studieplasser';
 import { INGEN_DATA_TEKST, type FacultyData } from '../data/faculties';
 import { FacultyContext, useFaculty, useFacultyColor } from '../data/facultyContext';
-import { landsamHasComparison } from '../data/landsamUtils';
+import { landsamHasComparison, landsamKanVises, BARE_NMBU_TEKST } from '../data/landsamUtils';
 import type { FullAdmissionEntry, FullYearData } from '../data/fullAdmissionData';
 
 // Norsk tallformat (desimalkomma, mellomrom som tusenskille)
@@ -670,7 +670,7 @@ export function LandsamAdmissionAnalysis({ faculty, initialGroup }: { faculty: F
       {/* Programgruppe-faner — hentet fra data */}
       <div className="flex items-center gap-1 rounded-xl p-1.5 flex-wrap" style={{ backgroundColor: 'var(--nmbu-beige-light)', border: '1px solid var(--nmbu-neutral-3)', width: 'fit-content' }}>
         {GROUPS.map((g) => {
-          const ok = landsamHasComparison(g);
+          const ok = landsamKanVises(g);
           return (
             <button key={g.id} onClick={() => ok && setGroupId(g.id)} disabled={!ok}
               title={ok ? undefined : 'Ikke nok data til sammenligning ennå'}
@@ -689,6 +689,12 @@ export function LandsamAdmissionAnalysis({ faculty, initialGroup }: { faculty: F
           );
         })}
       </div>
+
+      {!landsamHasComparison(group) && (
+        <div role="note" className="flex items-start gap-2 rounded-xl px-4 py-3 text-sm" style={{ backgroundColor: 'var(--nmbu-beige-light)', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-1)' }}>
+          <Info className="w-4 h-4 shrink-0 mt-0.5" style={{ color: 'var(--nmbu-green-dark)' }} /> <span>{BARE_NMBU_TEKST}</span>
+        </div>
+      )}
 
       {/* Header */}
       <div className="rounded-xl overflow-hidden" style={{ backgroundColor: 'var(--nmbu-green-dark)', color: '#fff' }}>

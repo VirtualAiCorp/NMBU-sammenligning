@@ -4,6 +4,7 @@ import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
 } from 'recharts';
 import { Star, ExternalLink, Filter, Info, AlertTriangle } from 'lucide-react';
+import { BARE_NMBU_TEKST } from '../data/landsamUtils';
 import { CsvExportButton } from './CsvExportButton';
 import { exportFacultyStudiebarometerCsv } from '../utils/csvExport';
 import { INGEN_DATA_TEKST, type FacultyData } from '../data/faculties';
@@ -500,6 +501,9 @@ export function FacultyStudiebarometer({ faculty }: { faculty: FacultyData }) {
 
   const kanSammenlignes = (id: string): boolean =>
     (grupper.find((g) => g.id === id)?.entries.filter(harTall).length ?? 0) >= 2;
+  // Gruppen kan åpnes også når bare NMBU-programmet har tall (vises med merknad om at det ikke finnes et sammenlignbart program)
+  const kanVises = (id: string): boolean =>
+    kanSammenlignes(id) || !!grupper.find((g) => g.id === id)?.entries.some((e) => e.isNmbu && harTall(e));
 
   const forsteOk = grupper.find((g) => kanSammenlignes(g.id))?.id ?? grupper[0]?.id ?? '';
   const [groupId, setGroupId] = useState<string>(forsteOk);
@@ -537,13 +541,13 @@ export function FacultyStudiebarometer({ faculty }: { faculty: FacultyData }) {
       {/* Programgruppe-faner — hentet fra data */}
       <div className="flex items-center gap-1 rounded-xl p-1.5 flex-wrap" style={{ backgroundColor: 'var(--nmbu-beige-light)', border: '1px solid var(--nmbu-neutral-3)', width: 'fit-content' }}>
         {grupper.map((g) => {
-          const ok = kanSammenlignes(g.id);
+          const ok = kanVises(g.id);
           return (
             <button
               key={g.id}
               onClick={() => ok && setGroupId(g.id)}
               disabled={!ok}
-              title={ok ? undefined : 'Færre enn to program med tall i Studiebarometeret ennå'}
+              title={ok ? undefined : 'Ingen program med tall i Studiebarometeret ennå'}
               className="px-5 py-2 rounded-lg text-sm transition-all"
               style={{
                 backgroundColor: groupId === g.id ? 'var(--nmbu-green-dark)' : 'transparent',
@@ -559,6 +563,12 @@ export function FacultyStudiebarometer({ faculty }: { faculty: FacultyData }) {
           );
         })}
       </div>
+
+      {!kanSammenlignes(gruppe.id) && medTall.length > 0 && (
+        <div role="note" className="flex items-start gap-2 rounded-xl px-4 py-3 text-sm" style={{ backgroundColor: 'var(--nmbu-beige-light)', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-1)' }}>
+          <Info className="w-4 h-4 shrink-0 mt-0.5" style={{ color: 'var(--nmbu-green-dark)' }} /> <span>{BARE_NMBU_TEKST}</span>
+        </div>
+      )}
 
       {/* Overskriftskort */}
       <div className="rounded-xl overflow-hidden" style={{ backgroundColor: 'var(--nmbu-green-dark)', color: '#fff' }}>
