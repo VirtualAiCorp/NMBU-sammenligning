@@ -12,8 +12,9 @@ import { Download, ExternalLink } from 'lucide-react';
 // ── Datatyper (speiler hh_liste i build-rangering.py) ───────────────────────
 /** [navn, AJG-nivå («4*»–«1», null = ikke på AJG, «?» = usjekket), AJG-fagfelt, ISSN] */
 export type HhTidsskrift = [string, string | null, string | null, string | null];
-/** [NVA-id, år, tittel, tidsskriftindeks, norsk nivå («2», «1», «0», «»), NVI (0/1), HH-forfattere, alle forfattere, internasjonal (0/1)] */
-export type HhArtikkel = [string, number, string, number, string, number, number, number, number];
+/** [NVA-id, år, tittel, tidsskriftindeks, norsk nivå («2», «1», «0», «»), NVI (0/1), HH-forfattere, alle forfattere, internasjonal (0/1),
+ *  FWCI fra OpenAlex (null = ikke funnet/ingen verdi), blant de 10 % mest siterte i felt og år (0/1, null = ukjent)] */
+export type HhArtikkel = [string, number, string, number, string, number, number, number, number, (number | null)?, (number | null)?];
 export interface HhAjgData { skole: string; felt: string[]; tidsskrift: HhTidsskrift[]; artikler: HhArtikkel[]; ajgDelvis: boolean; nvaUrl: string; merknad: string; }
 type NhhTall = Record<string, Partial<Record<'4*' | '4' | '3', { n: number; perFte: number }>>>;
 
@@ -155,6 +156,8 @@ export function HhAjgFane({ hh, aar: [y0, yN], v, std, sett, nhh, usikker, fagNa
   const andelAv = (a: HhArtikkel) => a[7] > 0 ? Math.min(1, a[6] / a[7]) : 1;
   const vekt = (a: HhArtikkel, brok = v.brok) => brok ? andelAv(a) : 1;
   const iGrunnlag = (a: HhArtikkel) => v.alle || a[5] === 1;
+  // FWCI og topp 10 % fra OpenAlex (siteringsmålet) finnes når rangeringen er bygd med OpenAlex-cachen
+  const harFwci = hh.artikler.some((a) => a[9] != null);
   const harUsjekket = hh.ajgDelvis && hh.artikler.some((a) => nivaAv(T[a[3]]) === '?');
   const nivaer = NIVAER.filter((k) => k !== '?' || harUsjekket);
   const alleAar = aarRekke(y0, yN);
@@ -234,11 +237,11 @@ export function HhAjgFane({ hh, aar: [y0, yN], v, std, sett, nhh, usikker, fagNa
 
   // 5. CSV
   const lastNedListe = () => {
-    const hode = ['NVA-id', 'Lenke', 'År', 'AJG 2024', 'AJG-fagfelt', 'AJG-fagfelt (engelsk)', 'Tittel', 'Tidsskrift', 'ISSN', 'Norsk nivå', 'NVI-rapportert', 'HH-forfattere', 'Alle forfattere', 'HHs forfatterandel', 'Internasjonal sampublisering'];
+    const hode = ['NVA-id', 'Lenke', 'År', 'AJG 2024', 'AJG-fagfelt', 'AJG-fagfelt (engelsk)', 'Tittel', 'Tidsskrift', 'ISSN', 'Norsk nivå', 'NVI-rapportert', 'HH-forfattere', 'Alle forfattere', 'HHs forfatterandel', 'Internasjonal sampublisering', 'FWCI (OpenAlex)', 'Topp 10 % i felt og år (OpenAlex)'];
     const linjer = [hode.join(';'), ...liste.map((a) => {
       const t = T[a[3]]; const n = nivaAv(t);
       return [a[0], hh.nvaUrl + a[0], String(a[1]), n === 'ikke' ? 'ikke på AJG' : n === '?' ? 'ikke sjekket' : n, t?.[2] ? (fagNavn[t[2]] ?? t[2]) : '', t?.[2] ? (fagNavnEn[t[2]] ?? t[2]) : '', esc(a[2]), esc(t?.[0] ?? ''), t?.[3] ?? '',
-        a[4] || '', a[5] ? 'ja' : 'nei', String(a[6]), String(a[7]), tallCsv(andelAv(a), 4), a[8] ? 'ja' : 'nei'].join(';');
+        a[4] || '', a[5] ? 'ja' : 'nei', String(a[6]), String(a[7]), tallCsv(andelAv(a), 4), a[8] ? 'ja' : 'nei', tallCsv(a[9] ?? null, 2), a[10] == null ? '' : a[10] ? 'ja' : 'nei'].join(';');
     })];
     const filt = [v.niva.length ? 'niva-' + v.niva.map((n) => NIVA_URL[n]).join('-') : '', v.sok.trim() ? 'sok' : ''].filter(Boolean).join('-');
     lastNedCsv(`hh-nmbu-artikler-ajg-${periodeTekst.replace('–', '-')}-${v.alle ? 'alle' : 'nvi'}${filt ? '-' + filt : ''}.csv`, linjer);
@@ -364,7 +367,7 @@ export function HhAjgFane({ hh, aar: [y0, yN], v, std, sett, nhh, usikker, fagNa
           <>
             <table className="hh-art">
               <thead>
-                <tr><th>År</th><th>AJG</th><th>Tittel</th><th>Tidsskrift</th><th title="Norsk nivå (publiseringsindikatoren)">Norsk nivå</th><th title="Forfattere med HH-tilknytning av alle forfatterne">HH / alle</th><th title="Internasjonal sampublisering: minst én medforfatter med utenlandsk tilknytning">Intl.</th></tr>
+                <tr><th>År</th><th>AJG</th><th>Tittel</th><th>Tidsskrift</th><th title="Norsk nivå (publiseringsindikatoren)">Norsk nivå</th><th title="Forfattere med HH-tilknytning av alle forfatterne">HH / alle</th><th title="Internasjonal sampublisering: minst én medforfatter med utenlandsk tilknytning">Intl.</th>{harFwci && <th title="Field-Weighted Citation Impact fra OpenAlex (1,0 = verdenssnittet for fagfelt og år). ★ = blant de 10 % mest siterte i felt og år. – = ikke funnet i OpenAlex. Ferske år er foreløpige.">FWCI</th>}</tr>
               </thead>
               <tbody>
                 {liste.slice(0, vis).map((a) => {
@@ -384,6 +387,7 @@ export function HhAjgFane({ hh, aar: [y0, yN], v, std, sett, nhh, usikker, fagNa
                       <td className="nn" data-l="Norsk nivå">{a[4] ? a[4] : '–'}</td>
                       <td className="ha" data-l="HH / alle">{a[6]} / {a[7]}</td>
                       <td className="in" data-l="Intl.">{a[8] ? 'Ja' : '–'}</td>
+                      {harFwci && <td className="fw" data-l="FWCI" title={a[10] ? 'Blant de 10 % mest siterte i fagfelt og år (OpenAlex)' : undefined}>{a[9] == null ? '–' : nf(a[9], 2)}{a[10] ? ' ★' : ''}</td>}
                     </tr>
                   );
                 })}
@@ -392,7 +396,7 @@ export function HhAjgFane({ hh, aar: [y0, yN], v, std, sett, nhh, usikker, fagNa
             {liste.length > vis && <div><button type="button" className="seg" onClick={() => setVis(vis + 100)}>Vis flere ({liste.length - vis} til)</button> <button type="button" className="seg" onClick={() => setVis(liste.length)}>Vis alle</button></div>}
           </>
         )}
-        <p className="cap">Kolonnene: år, AJG 2024-nivå (– = ikke på AJG), tittel med lenke til NVA, tidsskrift og AJG-fagfelt, norsk nivå, HH-forfattere av alle forfattere og internasjonal sampublisering (minst én utenlandsk medforfatter). Klikk på et tidsskrift for å se alle HH-artiklene der.</p>
+        <p className="cap">Kolonnene: år, AJG 2024-nivå (– = ikke på AJG), tittel med lenke til NVA, tidsskrift og AJG-fagfelt, norsk nivå, HH-forfattere av alle forfattere og internasjonal sampublisering (minst én utenlandsk medforfatter){harFwci ? ', og FWCI fra OpenAlex (★ = blant de 10 % mest siterte i fagfelt og år; se fanen «Siteringer»)' : ''}. Klikk på et tidsskrift for å se alle HH-artiklene der.</p>
       </section>
 
       <section className="sec" aria-label="Tidsskriftene">

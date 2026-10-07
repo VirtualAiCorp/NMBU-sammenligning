@@ -17,6 +17,9 @@ Kilder:
   NVA (scripts/fetch-nva-artikler.py)   Vitenskapelige artikler per enhet og år med tidsskrift og ISSN.
   data/rangering/norden/                Kartpunkt for de norske enhetene og foreløpige tall for Danmark, Sverige og
                                         Finland (fanen «Kart»; ikke del av rangeringen).
+  data/rangering/openalex/              Siteringsmål fra OpenAlex (CC0): FWCI, topp 10 %/1 % og siteringer per enhet og år
+                                        (scripts/rangering/hent_nva_doi.py, hent_openalex.py, sitering.py; cache gitignored).
+                                        Bare aggregater ut. Uavhengig av tidsskriftlistene.
   data/rangering/ajg-nhh-rapport.json   ABS/AJG 4*/4/3 per skole 2020–2024 fra NHH Research Report 2024
                                         (scripts/rangering/nhh_abs_tabeller.py).
   data/rangering/tidsskrift/            ABDC (A*/A/B/C), FT50, UTD24, og AJG 2024 (1–4*) hvis ajg2024.csv finnes
@@ -58,6 +61,9 @@ Y0, Y1 = 2016, 2025
 
 spec = importlib.util.spec_from_file_location("blc", ROOT / "scripts" / "build-landsam-courses.py")
 blc = importlib.util.module_from_spec(spec); spec.loader.exec_module(blc)
+# Siteringsmål fra OpenAlex (scripts/rangering/sitering.py): bare aggregater per enhet og år
+spec = importlib.util.spec_from_file_location("sitering", ROOT / "scripts" / "rangering" / "sitering.py")
+sitering_mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(sitering_mod)
 FORSTE = re.compile(r"professor|førsteamanuensis|dosent|førstelektor", re.I)
 
 
@@ -475,7 +481,18 @@ def main():
     # Bare HH NMBU, bare når AJG-lista finnes (avtalen med Chartered ABS). Kompakt: tidsskriftene én gang
     # (navn, AJG-nivå, AJG-fagfelt, ISSN), artiklene som rader med indeks til tidsskriftet. Ingen forfatternavn (lagres ikke).
     # Forsvinner når ajg2024.csv slettes og det bygges på nytt, og fanen skjules da.
-    HH_FELT = ["id", "aar", "tittel", "tidsskrift", "niva", "nvi", "egne", "forfattere", "intl"]
+    HH_FELT = ["id", "aar", "tittel", "tidsskrift", "niva", "nvi", "egne", "forfattere", "intl", "fwci", "topp10"]
+
+    # Siteringsmål (OpenAlex) for alle enheter: aggregater per år; for HH NMBU også FWCI og topp 10 % per NVA-id (til HH-lista)
+    sitering, sit_art = sitering_mod.lag([s["id"] for s in skoler], "nmbu")
+    if sitering:
+        t = collections.Counter()
+        for x in sitering["treff"].values():
+            t.update(x)
+        print(f"Siteringer (OpenAlex): {t['m']} av {t['n']} NVA-artikler funnet ({100 * t['m'] / max(t['n'], 1):.1f} %, "
+              f"{t['mT']} på tittel), NVI {100 * t['nviM'] / max(t['nvi'], 1):.1f} %; {len(sitering['norden'])} nordiske enheter")
+    else:
+        print("Siteringer (OpenAlex): cache mangler, feltet `sitering` blir null (kjør scripts/rangering/hent_openalex.py).")
 
     def hh_liste(sid):
         if not lister["ajg"]:
@@ -497,8 +514,9 @@ def main():
                     tix[nok] = len(tids)
                     tids.append([navn, nivaa, fagf, x.get("issn") or x.get("eissn") or None])
                 niva = {"LevelTwo": "2", "LevelOne": "1", "LevelZero": "0"}.get(x.get("niva"), "")
+                fw, t10 = sit_art.get(x.get("id"), (None, None))  # OpenAlex: FWCI og topp 10 % (None = ikke funnet/ingen verdi)
                 rader.append([x.get("id"), int(d["aar"]), x.get("tittel") or "", tix[nok], niva, int(bool(x.get("nvi"))),
-                              int(x.get("egne") or 0), int(x.get("forfattere") or 0), int(bool(x.get("intl")))])
+                              int(x.get("egne") or 0), int(x.get("forfattere") or 0), int(bool(x.get("intl"))), fw, t10])
         rader.sort(key=lambda r: (-r[1], r[2]))
         print(f"HH-liste ({sid}): {len(rader)} artikler, {len(tids)} tidsskrift, "
               f"{sum(1 for t in tids if t[1] in AJG_NIVAER)} på AJG 2024")
@@ -610,7 +628,9 @@ def main():
             "ajgNhh": {k: v for k, v in (ajg_nhh or {}).items() if k != "skoler"} or None,
             "lister": {**{k: bool(v) for k, v in lister.items()}, "ajgDelvis": ajg_delvis}, "skoler": ut_skoler,
             # HH NMBUs egne artikler med AJG-nivå (bare når AJG-lista finnes; kryptert som resten)
-            "hhAjg": hh_liste("nmbu")}
+            "hhAjg": hh_liste("nmbu"),
+            # Siteringsmål fra OpenAlex (fanen «Siteringer» og kartet): bare aggregater per enhet og år
+            "sitering": sitering}
     if a.klartekst:
         KLAR.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
         print(f"Skrev {KLAR.relative_to(ROOT)} (klartekst, gitignored).")

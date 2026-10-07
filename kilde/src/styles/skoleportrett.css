@@ -374,14 +374,15 @@
   .skp .hh-tall b{font-size:1.45rem}
   .skp table.hh-art,.skp table.hh-art tbody{display:block}
   .skp table.hh-art thead{display:none}
-  .skp table.hh-art tr{display:grid;grid-template-columns:3.4em repeat(3,minmax(0,1fr));grid-template-areas:"niv tit tit tit" "aar tids tids tids" ". nn ha in";gap:2px 8px;padding:9px 0;border-bottom:1px solid var(--line)}
+  .skp table.hh-art tr{display:grid;grid-template-columns:3.4em repeat(4,minmax(0,1fr));grid-template-areas:"niv tit tit tit tit" "aar tids tids tids tids" ". nn ha in fw";gap:2px 8px;padding:9px 0;border-bottom:1px solid var(--line)}
   .skp table.hh-art td{display:block;border:0;padding:0;text-align:left;width:auto;min-width:0;max-width:none}
   .skp table.hh-art td.aar{grid-area:aar;color:var(--muted);font-size:.78rem;width:auto}
   .skp table.hh-art td.niv{grid-area:niv;width:auto}
   .skp table.hh-art td.tit{grid-area:tit;min-width:0}
   .skp table.hh-art td.tids{grid-area:tids;font-size:.8rem;color:var(--muted)}
   .skp table.hh-art td.nn{grid-area:nn}.skp table.hh-art td.ha{grid-area:ha}.skp table.hh-art td.in{grid-area:in}
-  .skp table.hh-art td.nn,.skp table.hh-art td.ha,.skp table.hh-art td.in{font-size:.78rem}
+  .skp table.hh-art td.fw{grid-area:fw}
+  .skp table.hh-art td.nn,.skp table.hh-art td.ha,.skp table.hh-art td.in,.skp table.hh-art td.fw{font-size:.78rem}
   .skp table.hh-art tr.hoy td{background:none}
   .skp table.hh-art tr.hoy{box-shadow:inset 3px 0 0 var(--a3);padding-left:6px}
   .skp table.hh-art td[data-l]::before{content:attr(data-l) " ";color:var(--muted);font-size:.7rem}
@@ -389,3 +390,17 @@
   .skp.hh table.ajg-val{font-size:.76rem}
   .skp.hh table.ajg-val th,.skp.hh table.ajg-val td{padding:6px 2px;letter-spacing:0}
 }
+
+/* Siteringer (07.10.2026): fanen bruker AJG-sammenligningens klasser (.skp.ajg) og paletten der; her bare tilleggene. */
+.skp.sit .sit-varsel{font-size:.84rem;background:var(--mark);color:var(--mark-ink);padding:6px 10px;max-width:66ch}
+.skp .sit-forelopig{fill:var(--flate)}
+.skp .sit-forelopig-t{fill:var(--muted);font:500 10.5px var(--sans);letter-spacing:.06em;text-transform:uppercase}
+.skp .sit-ref{stroke:var(--line2);stroke-width:1.2;stroke-dasharray:6 4}
+.skp .sit-ref-t{fill:var(--muted);font:11px var(--sans)}
+.skp .sit-tab tr.nordisk td:first-child b{font-style:italic;font-weight:500}
+.skp .fs-kort li.nordisk .nmt{font-style:italic;font-weight:500}
+.skp table.sit-dek td{vertical-align:top}
+.skp table.sit-dek tr.meg td{background:var(--flate)}
+.skp table.sit-dek tr.meg td:first-child{box-shadow:inset 3px 0 0 var(--accent);padding-left:8px}
+.skp table.sit-dek tr.sit-fl td{color:var(--muted)}
+.skp table.hh-art td.fw{white-space:nowrap}

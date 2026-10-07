@@ -1009,3 +1009,57 @@ Fast henteskript for danske artikler i samme format som NVA-filene, som forarbei
 - **Før Danmark kan kobles inn i rangeringen:** utvide `skoler.json` med `land` og `pure` (etter planen i §5 i notatet), la
   `build-rangering.py` lese `data/rangering/pure/<enhet>/<år>.json` i stedet for NVA for disse enhetene (merk at `intl` kan være
   `null`, så summeringen må tåle det), og legge inn VIP-årsverk per år og enhet som nevner.
+
+## 50. Siteringer fra OpenAlex: ny fane og siteringsmål i kartet (07.10.2026)
+
+Nytt mål som ikke bygger på noen tidsskriftliste (virker uten `ajg2024.csv`): siteringer fra OpenAlex (data under CC0).
+Fanen «Siteringer» (`?rangering&fane=sitering`, `components/rangering/Siteringer.tsx`) og to nye fargemål i kartet. Ikke med
+i den samlede rangeringen; foreløpig. Oppskrift for å hente på nytt: `data/rangering/openalex/README.md`.
+- **Skript:** `scripts/rangering/hent_nva_doi.py` kjører det samme NVA-søket som `fetch-nva-artikler.py` og lagrer bare
+  NVA-id → DOI (`data/rangering/openalex/nva-doi/`, gitignored; NVA-cachen og artikkeltallene er uendret).
+  `scripts/rangering/hent_openalex.py norge|tittel|norden` henter fra OpenAlex uten nøkkel og uten e-postadresse, med
+  `select=`, cursor og 1,1 s pause, og stopper før kvoten er brukt opp (1 000 kreditter per døgn uten nøkkel; listekall 1,
+  søk 10, enkeltoppslag 0). DOI-ene slås opp i bunter på 100 (`filter=doi:a|b|…`). Artikler uten DOI matches på normalisert
+  tittel + tidsskrift (ISSN → OpenAlex-kilde) + år ±1, bare når treffet er entydig (tidsskrift med minst to slike artikler og
+  høyst 1 500 verk). `scripts/rangering/sitering.py` lager aggregatene; `build-rangering.py` legger dem i feltet `sitering`
+  (kryptert). Per enhet, grunnlag og år: artikler, med DOI, funnet, funnet på tittel, med FWCI, sum FWCI, med persentil, topp
+  10 %, topp 1 %, sum siteringer, og et FWCI-histogram (for medianen). Ingen artikkel-id-er, titler eller navn i dataene.
+  HH-lista (`hhAjg`) har fått FWCI og topp 10 %-flagg per artikkel (ny kolonne «FWCI» i «HH NMBU etter AJG», ★ = topp 10 %).
+  Forbruk 07.10: 148 kreditter (DOI), 62 (tittel), 613 (Norden 2016–2025).
+- **Treffrate Norge (2016–2025):** 19 926 NVA-artikler, 89,9 % med DOI, 90,4 % funnet (216 på tittel), NVI-artikler 93,2 %.
+  Per enhet 82–94 % (alle) og 87–95 % (NVI); HH NMBU 94,1 % / 95,2 %, lavest HiØ, OsloMet og INN. Artiklene som ikke finnes, er
+  mest Magma, Samfunnsøkonomen, konferanseserier (NIKT, NOKOBIT, CEUR) og avisinnlegg registrert som artikler.
+- **Danmark, Sverige og Finland** (`data/rangering/openalex/enheter-norden.json`): ingen fakulteter eller institutter finnes som
+  egne enheter i ROR eller OpenAlex (ROR har ingen barn for handelshøyskolene; sjekket 7.10). Valg per enhet: hele institusjonen
+  for CBS, SSE og Hanken; tilknytningstekst (regulære uttrykk på forfatternes rå tilknytning, bare for forfattere ved
+  universitetet, innen OpenAlex-fagfelt 14/18/20/33, Aarhus også 32, JIBS alle felt, LiU bare 14/20) for de danske og svenske
+  enhetene; fagfelt 14 + 18 + 20 uten underfelt 1804 (statistikk) for de finske (som den finske rapportens 511 + 512, og med
+  samme nevner; Helsingfors bare 20). Dekning mot rapportenes antall (OpenAlex / rapport): CBS 100 %, SSE 87 %, Hanken 121 %,
+  Finland 88–123 % (UEF 156 %), AAU 86 %, LiU 87 %, JIBS 66 %, SU/UU 61–62 %, Aarhus BSS 59 %, RUC 46 %, SDU 39 %, LUSEM 34 %,
+  GU 35 %, LNU 36 %, Karlstad 38 %, Umeå og Örebro 27 %, KU økonomi 21 %. Tilknytningsteksten mangler ofte institutt (som i
+  norden-danmark.md §2.2). Per 100 årsverk vises derfor bare når dekningen er 75–130 %; FWCI og andeler vises for alle, merket.
+- **Mål** (bare article/review; Norge hel telling av NVA-artiklene, NVI-rapporterte som standard, «alle i NVA» som valg):
+  snitt og median FWCI, andel og antall topp 10 % og 1 % (`citation_normalized_percentile`), siteringer per artikkel, dekning, og
+  topp 10/1 % per 100 årsverk og år med samme nevnere som AJG-sammenligningen (HK-dir, NHH, alle årsverk). Andre land: nevnerne
+  i norden-filene med ‡-reserve som i kartet; årsverk per år fra perioden som passer best, antatt likt i hele perioden (*).
+- **Standardperiode 2021–2023**, 2024–2025 merket foreløpige (graf skravert, periodevalg merket, varsel i ingressen). FWCI og
+  persentil er normalisert på år og endrer seg lite i snitt for 2024, men bygger på svært få siteringer (2025: 4,6 siteringer
+  per artikkel mot 18,8 i 2023) og hopper for små enheter.
+- **Viktig funn: nivået er høyt for alle.** OpenAlex normaliserer mot alle verk i databasen, også mange lite siterte, ikke mot
+  Scopus/WoS-tidsskrift. Norske NVI-artikler har median FWCI 2–2,5 og 40–60 % i «topp 10 %». 1,0 og 10 % er derfor ikke
+  verdenssnittet, og tallene kan ikke sammenlignes med SciVal-FWCI; de egner seg til å sammenligne enhetene. Snittet styres av
+  enkeltartikler (FWCI opptil 288), så medianen er mer robust.
+- **Resultat 2021–2023 (NVI, standardvalg):** snitt FWCI UiA 10,26, UiS 7,73, Kristiania 7,54, Nord 6,79, BI 6,16 … NHH 4,36,
+  HH NMBU 3,41 (nr. 13 av 15; median 2,23, 43,3 % topp 10 %). Topp 10 % per 100 faglige årsverk og år: UiA 107,6, UiS 66,9,
+  **HH NMBU 48,9 (nr. 3)**, BI 37,1, Kristiania 35,5 … NHH 25,7. HH NMBU har mange NVI-artikler per årsverk, så volumet løfter
+  per 100-målet. Andre land: CBS 5,02 / 49,7*, SSE 6,85 / 37,3*, Hanken 7,66 / 64,7*, Aalto 4,16 / 25,4*.
+- **Kartet:** nye mål «Snitt FWCI (OpenAlex)» og «Topp 10 % mest siterte per 100 faglige årsverk og år» (`kartmaal=fwci|t10`;
+  klassegrenser 3/4/5/6,5 og 20/30/45/65). For andre land brukes OpenAlex-artiklene i den valgte perioden (sirkelstørrelse
+  og tall), nevneren fra norden-filene med ‡ og *; detaljpanelet viser FWCI, topp 10 % og dekning, og har knapp til fanen.
+- **Lenke:** `?rangering&fane=sitering&sitperiode=2021-2023&sitmaal=fwci|median|t10a|t10|t1a|t1|sit|n|dekning&sitvis=antall&
+  sitnevner=utenstip|alle&sitgrunnlag=alle&sitref=1&sitnorden=0&sitskoler=nmbu,nhh,,dk_cbs` (bare avvik fra standard skrives).
+- **Testet:** bygg med `--testpassord`, `npm run build` (kildevakten ok), fanen og kartet i lys/mørk og 375 px uten sidelengs
+  rulling, og hele løpet med `ajg2024.csv` flyttet bort (fanen og kartmålene virker; AJG-fanene skjules som før).
+- **Åpent:** (1) Bør standardmålet være median i stedet for snitt (snittet er svært følsomt for enkeltartikler)? (2) Svenske og
+  danske institutter har lav dekning; bedre avgrensning krever SwePub/Pure-DOI-er koblet mot OpenAlex (som for Norge).
+  (3) OpenAlex-tallene endrer seg ved hver oppdatering; hent på nytt før tall brukes utad.

@@ -16,6 +16,10 @@ data/nmbu/kilder/ssb-gjennomforing/
 
 # Rangering: rå NVA-cache og lisensbelagte tidsskriftlister (AJG)
 data/rangering/nva/
+# Siteringsmålet (OpenAlex): rå cache for NVA-DOI og OpenAlex-svar hentes på nytt med skriptene; README og enhetsoppsett beholdes
+data/rangering/openalex/*
+!data/rangering/openalex/README.md
+!data/rangering/openalex/enheter-norden.json
 # Danske Pure-data (OAI-PMH): råsvar med personnavn og avledede artikkelfiler, hentes på nytt med skriptet
 data/rangering/pure/
 data/rangering/tidsskrift/ajg*.csv

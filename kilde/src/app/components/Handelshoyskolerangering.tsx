@@ -1,9 +1,10 @@
 import { Fragment, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import '../../styles/skoleportrett.css';
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
-import { Lock, Info, Trophy, BookOpen, Building2, FileText, RotateCcw, ShieldCheck, ExternalLink, Columns3, FlaskConical, Link2, Check, Newspaper, ClipboardList, Layers, Download, MapPin, ListOrdered } from 'lucide-react';
+import { Lock, Info, Trophy, BookOpen, Building2, FileText, RotateCcw, ShieldCheck, ExternalLink, Columns3, FlaskConical, Link2, Check, Newspaper, ClipboardList, Layers, Download, MapPin, ListOrdered, Quote } from 'lucide-react';
 import { NordenKart, KART_MAAL_IDER, KART_VIS_IDER, type KartValg, type KartEnhet, type KartMaal, type KartVis } from './rangering/NordenKart';
 import { HhAjgFane, HH_PARAM, hhStandard, lesHh, skrivHh, type HhAjgData, type HhValg } from './rangering/HhAjg';
+import { SiteringFane, SIT_PARAM, sitStandard, lesSit, skrivSit, sitSum, sitArsverkNorge, sitArsverkNorden, sitMotRapport, sitDekningOk, type SiteringData, type SitValg, type SitNordisk } from './rangering/Siteringer';
 
 /**
  * Utkast til «Norwegian Business School Ranking» (intern, utforskende). Data fra scripts/build-rangering.py:
@@ -39,7 +40,8 @@ interface NordenEnhet { id: string; navn: string; kort: string; by: string; lat:
 interface NordenLand { land: 'DK' | 'SE' | 'FI'; landNavn: string; status: string; rapport?: string; lest?: string | null; metode: Record<string, string | null>; forbehold: string[]; enheter: NordenEnhet[]; }
 interface Norden { merknad: string; steder: Record<string, { by: string; lat: number; lon: number; merknad?: string }>; land: NordenLand[]; }
 interface Data { versjon: number; generert: string; aar: [number, number]; norden?: Norden | null; lister: Record<'ajg' | 'abdc' | 'ft50' | 'utd24', boolean> & { ajgA?: boolean; /** AJG fylt inn for hånd: tidsskrift uten oppslag er «usjekket», ikke «ikke på AJG» */ ajgDelvis?: boolean }; skoler: Skole[]; kontroll?: Kontroll[]; ajgNhh?: AjgNhhMeta | null;
-  /** HH NMBUs egne artikler med AJG-nivå (bare når AJG-lista er lagt inn; fanen «HH NMBU etter AJG») */ hhAjg?: HhAjgData | null; }
+  /** HH NMBUs egne artikler med AJG-nivå (bare når AJG-lista er lagt inn; fanen «HH NMBU etter AJG») */ hhAjg?: HhAjgData | null;
+  /** Siteringsmål fra OpenAlex per enhet og år (fanen «Siteringer» og kartet); uavhengig av tidsskriftlistene */ sitering?: SiteringData | null; }
 
 /** Eget nettsted med bare rangeringen (VITE_KUN_RANGERING=1) har egen datafil og eget passord (RANGERING_PASSORD). */
 const KUN_RANGERING = import.meta.env.VITE_KUN_RANGERING === '1';
@@ -250,15 +252,19 @@ function beregn(skoler: Skole[], ind: Ind[], vekt: Record<string, number>, forsk
 }
 
 // ── Tilstand i lenken (?rangering&…) ────────────────────────────────────────
-type Fane = 'forside' | 'rangering' | 'sammenlign' | 'lab' | 'publisering' | 'rapport' | 'ajg' | 'hh' | 'kart' | 'profil' | 'kontroll' | 'metode';
-const FANER: Fane[] = ['forside', 'rangering', 'sammenlign', 'lab', 'publisering', 'rapport', 'ajg', 'hh', 'kart', 'profil', 'kontroll', 'metode'];
-interface Tilstand { fane: Fane; forsk: number; vekt: Record<string, number>; medRef: boolean; lag: Lag; valgt: string[]; profil: string; /** sammenligning i skoleportrettet */ mot: string | null; /** fanen AJG-sammenligning */ ajg: AjgValg; /** fanen Kart */ kart: KartValg; /** fanen HH NMBU etter AJG */ hh: HhValg; }
+type Fane = 'forside' | 'rangering' | 'sammenlign' | 'lab' | 'publisering' | 'rapport' | 'sitering' | 'ajg' | 'hh' | 'kart' | 'profil' | 'kontroll' | 'metode';
+const FANER: Fane[] = ['forside', 'rangering', 'sammenlign', 'lab', 'publisering', 'rapport', 'sitering', 'ajg', 'hh', 'kart', 'profil', 'kontroll', 'metode'];
+interface Tilstand { fane: Fane; forsk: number; vekt: Record<string, number>; medRef: boolean; lag: Lag; valgt: string[]; profil: string; /** sammenligning i skoleportrettet */ mot: string | null; /** fanen AJG-sammenligning */ ajg: AjgValg; /** fanen Kart */ kart: KartValg; /** fanen HH NMBU etter AJG */ hh: HhValg; /** fanen Siteringer */ sit: SitValg; }
 const PARAM = ['rangering', 'fane', 'forsk', 'vekt', 'ref', 'periode', 'telling', 'nevner', 'lagvekt', 'lister', 'grunnlag', 'skoler', 'profil', 'mot',
-  'ajgperiode', 'ajgtelling', 'ajgnevner', 'ajgvis', 'ajgsort', 'ajgref', 'ajgskoler', 'kartmaal', 'kartperiode', 'kartnevner', 'kartanslag', 'kartref', 'kartvis', 'kartvalgt', ...HH_PARAM];
+  'ajgperiode', 'ajgtelling', 'ajgnevner', 'ajgvis', 'ajgsort', 'ajgref', 'ajgskoler', 'kartmaal', 'kartperiode', 'kartnevner', 'kartanslag', 'kartref', 'kartvis', 'kartvalgt', ...HH_PARAM, ...SIT_PARAM];
+/** Finnes enheten (norsk skole eller nordisk enhet med siteringstall)? Brukes for skolene i siteringsgrafen. */
+const sitFinnes = (d: Data) => (id: string) => d.skoler.some((s) => s.id === id) || !!d.sitering?.norden?.[id];
+/** De nordiske enhetene med nevnere fra norden-filene, i formen fanen «Siteringer» trenger */
+const nordiskeAv = (d: Data): SitNordisk[] => (d.norden?.land ?? []).flatMap((l) => l.enheter.map((e) => ({ id: e.id, kort: e.kort, navn: e.navn, land: l.land, landNavn: l.landNavn, referanse: !!e.referanse, perioder: e.perioder ?? [] })));
 function lesTilstand(d: Data, ind: Ind[], std: Tilstand): Tilstand {
   const q = new URLSearchParams(window.location.search);
   if (!q.has('rangering')) return std;
-  const t: Tilstand = { ...std, vekt: { ...std.vekt }, lag: { ...std.lag, vekter: { ...std.lag.vekter } }, ajg: { ...std.ajg, skoler: [...std.ajg.skoler] }, kart: { ...std.kart }, hh: lesHh(q, std.hh, d.aar) };
+  const t: Tilstand = { ...std, vekt: { ...std.vekt }, lag: { ...std.lag, vekter: { ...std.lag.vekter } }, ajg: { ...std.ajg, skoler: [...std.ajg.skoler] }, kart: { ...std.kart }, hh: lesHh(q, std.hh, d.aar), sit: lesSit(q, std.sit, d.aar, sitFinnes(d)) };
   const fane = q.get('fane') as Fane | null; if (fane && FANER.includes(fane)) t.fane = fane;
   const f = Number(q.get('forsk')); if (FORSK_TRINN.includes(f)) t.forsk = f;
   for (const del of (q.get('vekt') ?? '').split(',')) { const [id, v] = del.split(':'); if (ind.some((i) => i.id === id) && Number.isFinite(Number(v))) t.vekt[id] = Math.max(0, Math.min(40, Number(v))); }
@@ -328,6 +334,7 @@ function skrivTilstand(t: Tilstand, std: Tilstand) {
   if (k.vis !== sk.vis) q.set('kartvis', k.vis);
   if (k.valgt && t.fane === 'kart') q.set('kartvalgt', k.valgt);
   skrivHh(q, t.hh, std.hh);
+  skrivSit(q, t.sit, std.sit);
   const s = q.toString().replace(/%2C/gi, ',').replace(/%3A/gi, ':').replace(/^rangering=(&|$)/, 'rangering$1').replace(/&rangering=(&|$)/, '&rangering$1');
   window.history.replaceState(window.history.state, '', `${window.location.pathname}?${s}${window.location.hash}`);
 }
@@ -387,7 +394,8 @@ function Rangering({ data }: { data: Data }) {
     const hh = data.skoler.find((s) => s.isNmbu)?.id ?? data.skoler[0].id;
     return { fane: 'forside', forsk: FORSK_STANDARD, vekt: Object.fromEntries(ind0.map((i) => [i.id, i.vekt])), medRef: false, lag,
       valgt: [hh, ...['nhh', 'bi'].filter((id) => id !== hh && data.skoler.some((s) => s.id === id))].slice(0, 3), profil: hh, mot: null,
-      ajg: ajgStandard(data, y1, hh), kart: { maal: 'p4', fra: y1 - 2, til: y1, anslag: true, ref: false, vis: 'norden', valgt: null, nevner: 'uff' }, hh: hhStandard(data.aar) };
+      ajg: ajgStandard(data, y1, hh), kart: { maal: 'p4', fra: y1 - 2, til: y1, anslag: true, ref: false, vis: 'norden', valgt: null, nevner: 'uff' }, hh: hhStandard(data.aar),
+      sit: sitStandard(data.sitering, data.aar, hh, sitFinnes(data)) };
   }, [data, y1]);
   const [t, setT] = useState<Tilstand>(() => lesTilstand(data, lagIndikatorer(data, std.lag), std));
   const sett = (p: Partial<Tilstand>) => setT((x) => ({ ...x, ...p }));
@@ -402,6 +410,7 @@ function Rangering({ data }: { data: Data }) {
   const skoler = useMemo(() => data.skoler.filter((s) => t.medRef || !s.referanse), [data, t.medRef]);
   const rader = useMemo(() => beregn(skoler, ind, t.vekt, t.forsk), [skoler, ind, t.vekt, t.forsk]);
   const eff = useMemo(() => effektiveVekter(ind, t.vekt, t.forsk), [ind, t.vekt, t.forsk]);
+  const nordiske = useMemo(() => nordiskeAv(data), [data]);
 
   const faner: { id: Fane; label: string; icon: ReactNode }[] = [
     { id: 'forside', label: 'Forside', icon: <Newspaper className="w-4 h-4" /> },
@@ -410,6 +419,7 @@ function Rangering({ data }: { data: Data }) {
     { id: 'lab', label: 'Forskningslab', icon: <FlaskConical className="w-4 h-4" /> },
     { id: 'publisering', label: 'Publisering', icon: <BookOpen className="w-4 h-4" /> },
     { id: 'rapport', label: 'Slik rapporterer skolene', icon: <ClipboardList className="w-4 h-4" /> },
+    ...(data.sitering ? [{ id: 'sitering' as Fane, label: 'Siteringer', icon: <Quote className="w-4 h-4" /> }] : []),
     ...(harAjg ? [{ id: 'ajg' as Fane, label: 'AJG-sammenligning', icon: <Layers className="w-4 h-4" /> }] : []),
     ...(harAjg && data.hhAjg ? [{ id: 'hh' as Fane, label: 'HH NMBU etter AJG', icon: <ListOrdered className="w-4 h-4" /> }] : []),
     { id: 'kart', label: 'Kart', icon: <MapPin className="w-4 h-4" /> },
@@ -444,6 +454,9 @@ function Rangering({ data }: { data: Data }) {
       {t.fane === 'lab' && <Forskningslab data={data} skoler={skoler} lag={t.lag} std={std.lag} setLag={(lag) => sett({ lag })} />}
       {t.fane === 'publisering' && <Publisering data={data} />}
       {t.fane === 'rapport' && <SlikRapporterer data={data} lag={t.lag} />}
+      {t.fane === 'sitering' && (data.sitering
+        ? <SiteringFane sit={data.sitering} skoler={data.skoler} nordiske={nordiske} v={t.sit} std={std.sit} sett={(sit) => sett({ sit })} generert={data.generert} />
+        : <div className="skp"><p className="muted">Siteringsdataene mangler. Kjør scripts/rangering/hent_nva_doi.py og hent_openalex.py og bygg rangeringen på nytt (se data/rangering/openalex/README.md).</p></div>)}
       {t.fane === 'ajg' && harAjg && <AjgSammenligning data={data} v={t.ajg} std={std.ajg} sett={(ajg) => sett({ ajg })} />}
       {t.fane === 'hh' && (harAjg && data.hhAjg
         ? <HhAjgFane hh={data.hhAjg} aar={data.aar} v={t.hh} std={std.hh} sett={(hh) => sett({ hh })} nhh={data.skoler.find((s) => s.id === data.hhAjg?.skole)?.ajgNhh}
@@ -451,7 +464,9 @@ function Rangering({ data }: { data: Data }) {
         : <div className="skp"><p className="muted">AJG ikke lagt inn. Fanen «HH NMBU etter AJG» vises bare når AJG 2024-lista er lagt inn og rangeringen er bygd på nytt.</p></div>)}
       {t.fane === 'kart' && <KartFane data={data} rader={rader} v={t.kart} std={std.kart} sett={(kart) => sett({ kart })}
         apneProfil={(id) => sett({ fane: 'profil', profil: id })}
-        apneAjg={(id) => sett({ fane: 'ajg', ajg: t.ajg.skoler.includes(id) || t.ajg.skoler.filter(Boolean).length >= AJG_MAKS_SKOLER ? t.ajg : { ...t.ajg, skoler: [...t.ajg.skoler.filter(Boolean), id] } })} />}
+        apneAjg={(id) => sett({ fane: 'ajg', ajg: t.ajg.skoler.includes(id) || t.ajg.skoler.filter(Boolean).length >= AJG_MAKS_SKOLER ? t.ajg : { ...t.ajg, skoler: [...t.ajg.skoler.filter(Boolean), id] } })}
+        apneSit={(id) => sett({ fane: 'sitering', sit: { ...t.sit, ref: t.sit.ref || !!data.skoler.find((s) => s.id === id)?.referanse || !!nordiske.find((e) => e.id === id)?.referanse, norden: t.sit.norden || /^(dk|se|fi)_/.test(id),
+          skoler: t.sit.skoler.includes(id) || t.sit.skoler.filter(Boolean).length >= 6 ? t.sit.skoler : [...t.sit.skoler.filter(Boolean), id] } })} />}
       {t.fane === 'profil' && <Skoleportrett data={data} rader={rader} ind={ind} eff={eff} id={t.profil} setId={(id) => sett({ profil: id, mot: t.mot === id ? null : t.mot })} mot={t.mot} setMot={(id) => sett({ mot: id })} />}
       {t.fane === 'kontroll' && <KontrollFane data={data} />}
       {t.fane === 'metode' && <Metode data={data} ind={ind} />}
@@ -2339,12 +2354,17 @@ function velgPeriode(ps: NordenPeriode[], fra: number, til: number): NordenPerio
   const overlapp = (p: NordenPeriode) => Math.max(0, Math.min(til, p.til) - Math.max(fra, p.fra) + 1);
   return [...ps].sort((a, b) => (overlapp(b) - overlapp(a)) || (b.til - a.til) || ((b.til - b.fra) - (a.til - a.fra)))[0];
 }
-interface KartFaneProps { data: Data; rader: Rad[]; v: KartValg; std: KartValg; sett: (v: KartValg) => void; apneProfil: (id: string) => void; apneAjg: (id: string) => void; }
-function KartFane({ data, rader, v, std, sett, apneProfil, apneAjg }: KartFaneProps) {
+interface KartFaneProps { data: Data; rader: Rad[]; v: KartValg; std: KartValg; sett: (v: KartValg) => void; apneProfil: (id: string) => void; apneAjg: (id: string) => void; apneSit: (id: string) => void; }
+function KartFane({ data, rader, v, std, sett, apneProfil, apneAjg, apneSit }: KartFaneProps) {
   const harAjg = data.lister.ajg;
+  const sit = data.sitering;
   const enheter = useMemo<KartEnhet[]>(() => {
     const ut: KartEnhet[] = [];
     const aar = aarRekke(v.fra, v.til);
+    const sitMaal = v.maal === 'fwci' || v.maal === 't10';
+    // Siteringsmål fra OpenAlex (som fanen «Siteringer»): snitt FWCI og topp 10 % per 100 årsverk og år; Norge NVI-artikler
+    const sitTall = (s: { v: number[]; aar: number }, arsv: number | null) => ({
+      fwci: s.v[4] ? s.v[5] / s.v[4] : null, t10: s.v[6] && arsv ? 100 * s.v[7] / arsv : null, t10n: s.v[6] ? s.v[7] : null, sitArtikler: s.aar ? s.v[0] : null });
     const steder = data.norden?.steder ?? {};
     const plassAv = rader.filter((r) => r.plass != null).length;
     for (const s of data.skoler) {
@@ -2363,6 +2383,7 @@ function KartFane({ data, rader, v, std, sett, apneProfil, apneAjg }: KartFanePr
         nevner: v.nevner === 'uff' ? 'faglige årsverk UN1 + UN2 (DBH 225, som HK-dir).' : 'faglige årsverk UN1 + postdoktorer, uten stipendiater (DBH 225, som NHH).',
         kilde: 'NVA (NVI-rapporterte artikler) koblet mot AJG 2024 på ISSN; DBH 225 og 373. Samme beregning som fanen AJG-sammenligning.',
         forbehold: [s.enhetNotat ? `Usikkerhet i enhetsbeskrivelsen: ${s.enhetNotat}` : null, st.merknad ? `Kartpunkt: ${st.merknad}` : null].filter((x): x is string => !!x), akk: akkNavn(s), ekstra: [],
+        ...(sit?.skoler[s.id] ? sitTall(sitSum(sit.skoler[s.id].nvi, aar), sitArsverkNorge(s, aar, v.nevner)) : {}),
       });
     }
     for (const l of data.norden?.land ?? []) for (const e of l.enheter) {
@@ -2382,6 +2403,15 @@ function KartFane({ data, rader, v, std, sett, apneProfil, apneAjg }: KartFanePr
       const ber = (p.beregnet ?? []).filter((k) => k === 'artiklerPer100' || k === 'ajg4sPer100' || k.endsWith('Per100' + hale));
       const beregnet = ber.length ? [`Regnet av oss fra rapportens antall og nevner: ${ber.map((k) => BER[k] ?? k).join(', ')}.`] : [];
       const arsv = num(hale === '' ? 'arsverk' : 'arsverkUtenStip');
+      // Siteringsmål: OpenAlex-artiklene i den valgte perioden; nevneren fra perioden i norden-fila som passer best
+      const sg = sit?.norden?.[e.id];
+      const ss = sg ? sitSum(sg.aar, aar) : null;
+      const en: SitNordisk = { id: e.id, kort: e.kort, navn: e.navn, land: l.land, landNavn: l.landNavn, referanse: !!e.referanse, perioder: e.perioder };
+      // Per 100 årsverk bare når OpenAlex-avgrensningen gir omtrent like mange artikler som rapporten nevneren hører til
+      const mr = sg ? sitMotRapport(en, sg) : { pst: null, tekst: null };
+      const sn = ss?.aar && sitDekningOk(mr.pst) ? sitArsverkNorden(en, v.fra, v.til, ss.aar, v.nevner) : null;
+      const sitEnhet = ss && ss.aar ? { ...sitTall(ss, sn?.arsv ?? null), sitNevnerAnnen: !!sn?.annen, sitReserve: !!sn?.reserve } : {};
+      const sitForb = sitMaal && sg ? [`Siteringer: OpenAlex, avgrenset på ${sg.metode === 'institusjon' ? 'hele institusjonen' : sg.metode === 'fag' ? 'fagfelt' : 'tilknytningstekst'} (${sg.usikkerhet ?? ''}) ${mr.tekst ? `Dekning: ${mr.tekst}${mr.pst != null ? ` = ${nf(mr.pst, 0)} %` : ''}.` : ''}${!sitDekningOk(mr.pst) ? ' Topp 10 % per 100 årsverk vises ikke, fordi telleren da ikke passer til nevneren.' : ''}${sn?.annen ? ` Nevneren for topp 10 % er fra ${sn.periode} (*), antatt lik per år.` : ''}${ss && ss.aar < aar.length ? ` OpenAlex-tall for ${ss.aar} av ${aar.length} år.` : ''}`] : [];
       ut.push({
         id: e.id, navn: e.navn, kort: e.kort, land: l.land, landNavn: l.landNavn, by: e.by, lat: e.lat, lon: e.lon, referanse: !!e.referanse, meg: false, anslag: p.anslag !== false,
         fra: p.fra, til: p.til, annenPeriode: p.fra !== v.fra || p.til !== v.til, artikler: num('artikler'),
@@ -2394,13 +2424,16 @@ function KartFane({ data, rader, v, std, sett, apneProfil, apneAjg }: KartFanePr
         kilde: `${p.kilde ? p.kilde + '. ' : ''}Utforskningsrapport ${l.lest ?? ''} (${l.rapport ?? ''}). ${l.metode.telling ?? ''}`.trim(),
         forbehold: [...(reserve ? ['‡ Nevneren er uten stipendiater/doktorander fordi tallet med ikke finnes. Uten stipendiater gir høyere tall per 100 enn med, så enheten ser noe sterkere ut enn den ville gjort med samme nevner som Norge.'] : []), ...(e.forbehold ?? []), ...beregnet, ...l.forbehold],
         akk: (e.akkrediteringer ?? []).filter((a) => !/ikke/i.test(a.status ?? '')).map((a) => a.type + (a.aar ? ` (${a.aar})` : '')), ekstra,
+        ...sitEnhet,
+        // Med siteringsmål gjelder tallene den valgte perioden og OpenAlex-artiklene (sirkelstørrelsen følger dem)
+        ...(sitMaal && ss?.aar ? { fra: v.fra, til: v.til, annenPeriode: ss.aar < aar.length, artikler: ss.v[0], forbehold: [...sitForb, ...(e.forbehold ?? []), ...l.forbehold] } : {}),
       });
     }
     return ut;
-  }, [data, rader, v.fra, v.til, v.nevner, harAjg]);
+  }, [data, rader, v.fra, v.til, v.nevner, v.maal, harAjg, sit]);
   const uten = (data.norden?.land ?? []).map((l) => ({ land: l.landNavn, n: l.enheter.filter((e) => !e.perioder?.length).length, status: l.status })).filter((x) => x.n > 0);
   if (!data.norden) return <div className="skp"><p>Kartdataene mangler i rangeringsfila. Bygg på nytt med scripts/build-rangering.py.</p></div>;
-  return <NordenKart enheter={enheter} uten={uten} v={v} std={std} sett={sett} aar={data.aar} apneProfil={apneProfil} apneAjg={apneAjg} harAjg={harAjg} />;
+  return <NordenKart enheter={enheter} uten={uten} v={v} std={std} sett={sett} aar={data.aar} apneProfil={apneProfil} apneAjg={apneAjg} harAjg={harAjg} harSit={!!sit} apneSit={apneSit} />;
 }
 
 function Metode({ data, ind }: { data: Data; ind: Ind[] }) {
@@ -2429,6 +2462,10 @@ function Metode({ data, ind }: { data: Data; ind: Ind[] }) {
         {data.lister.ajg && <>Artiklene er koblet på ISSN mot AJG 2024, hentet ut manuelt etter avtale med Chartered ABS (lista ligger ikke i nettleserdataene; bare tellinger). Samme liste brukes for alle år. Anslaget under er beholdt som reserve og sammenligning, og brukes i stedet for AJG hvis lista fjernes.{' '}</>}
         AJG 2024 kan ikke hentes maskinelt (Chartered ABS forbyr skraping, og lista har ingen eksport). Uten lista brukes derfor et kalibrert anslag fra åpne kilder: en artikkel regnes som «AJG 4/4*-nivå» hvis tidsskriftet står på FT50 eller UTD24, eller har ABDC A* og OpenAlex-sitering (2-års snitt) på minst 5. Regelen er valgt ved å teste mot NHH Research Reports AJG-tall for sju skoler 2020–2024: korrelasjon 0,98 per skole og år, totalt 9 % flere enn fasit, og nesten samme rekkefølge mellom skolene. Anslaget gir flere toppartikler enn NHH-tabellen for UiS, UiT, UiA og NMBU, blant annet innen reiseliv og energi- og miljøøkonomi, dels fordi NHH avgrenser enhetene annerledes. Det sier ingenting om AJG-nivået til enkelttidsskrift.
       </div>
+      {data.sitering && <div>
+        <div style={{ fontWeight: 600, color: GRONN }}>Siteringer (OpenAlex)</div>
+        Fanen «Siteringer» og kartet viser siteringsmål fra OpenAlex (CC0) som ikke bygger på noen tidsskriftliste: snitt og median FWCI (siteringer normalisert for fagfelt, år og type; 1,0 = verdenssnittet), andel og antall artikler blant de 10 % og 1 % mest siterte i felt og år, og topp 10 % per 100 faglige årsverk. NVA-artiklene er koblet til OpenAlex på DOI (ellers tittel, tidsskrift og år). Danmark, Sverige og Finland hentes direkte fra OpenAlex. Målene er foreløpige og ikke med i den samlede rangeringen; {data.sitering.forelopigFra}–{data.aar[1]} har få siteringer ennå.
+      </div>}
       <div>
         <div style={{ fontWeight: 600, color: GRONN }}>Plassintervall og grupper</div>
         Med 15 skoler er små forskjeller i poeng lite å bygge på. Ved siden av plassen vises derfor spennet i plass når forskningens andel går fra 50 til 85 % (de relative vektene innen hver dimensjon holdes fast), og skolene deles i tredjedeler (Topp, Midt, Nedre), slik CHE-rangeringen gjør. Skoler som bytter gruppe innenfor vektområdet, er merket som grensetilfeller.

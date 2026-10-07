@@ -9,7 +9,7 @@ import geo from './norden-kart.json';
  * Finland er foreløpige anslag fra data/rangering/norden/*.json (krypterte rangeringsdata).
  */
 
-export type KartMaal = 'p4' | 'p3' | 'poeng' | 'plass';
+export type KartMaal = 'p4' | 'p3' | 'fwci' | 't10' | 'poeng' | 'plass';
 export type KartVis = 'norden' | 'sor' | 'oslo' | 'oresund' | 'ost';
 /** uff = med stipendiater/doktorander (HK-dir UN1 + UN2, standard); utenStip = uten (NHHs nevner, svensk «forskande och undervisande») */
 export type KartNevner = 'uff' | 'utenStip';
@@ -19,6 +19,9 @@ export interface KartEnhet {
   referanse: boolean; meg: boolean; /** foreløpig tall fra en utforskningsrapport (ikke NVA/DBH) */ anslag: boolean;
   fra: number; til: number; /** perioden avviker fra den valgte (andre land har bare enkelte perioder) */ annenPeriode: boolean;
   artikler: number | null; n4: number | null; n3: number | null; p4: number | null; p3: number | null;
+  /** Siteringer (OpenAlex): snitt FWCI, topp 10 %-artikler per 100 årsverk og år, antall topp 10 %, artikler i OpenAlex,
+   *  og om nevneren for topp 10 % er fra en annen periode (andre land) */
+  fwci?: number | null; t10?: number | null; t10n?: number | null; sitArtikler?: number | null; sitNevnerAnnen?: boolean; sitReserve?: boolean;
   /** nevner per år i perioden (årsverk) */ arsverk: number | null; poeng: number | null; plass: number | null; plassAv: number | null;
   avgrensning: string; nevner: string; kilde: string; forbehold: string[]; akk: string[]; ekstra: [string, string][];
   /** nevneren med stipendiater/doktorander mangler, så tallene er regnet uten (vises med «‡») */ reserveNevner?: boolean;
@@ -27,11 +30,16 @@ export interface KartEnhet {
 const nf = (v: number | null | undefined, d = 1) => v == null || !Number.isFinite(v) ? '–' : v.toLocaleString('nb-NO', { minimumFractionDigits: d, maximumFractionDigits: d });
 
 // ── Mål og fargeskala (fem klasser, faste grenser så fargene ikke flytter seg med utvalget) ───────────────────
-export const KART_MAAL: Record<KartMaal, { navn: string; kort: string; grenser: number[]; d: number; lavBest?: boolean; bareNorge?: boolean; title: string; setning: string }> = {
+export const KART_MAAL: Record<KartMaal, { navn: string; kort: string; grenser: number[]; d: number; lavBest?: boolean; bareNorge?: boolean; /** siteringsmål (OpenAlex) */ sit?: boolean; title: string; setning: string }> = {
   p4: { navn: 'AJG 4/4* per 100 faglige årsverk og år', kort: 'AJG 4+ per 100 årsverk', grenser: [3, 6, 10, 15], d: 1, setning: 'AJG 4/4* per 100 faglige årsverk og år',
     title: 'Artikler i tidsskrift på AJG 2024 nivå 4 eller 4* per 100 faglige årsverk og år (Norge: HK-dirs nevner UN1 + UN2)' },
   p3: { navn: 'AJG 3+ per 100 faglige årsverk og år', kort: 'AJG 3+ per 100 årsverk', grenser: [15, 25, 35, 45], d: 1, setning: 'AJG 3+ per 100 faglige årsverk og år',
     title: 'Artikler i tidsskrift på AJG 2024 nivå 3, 4 eller 4* per 100 faglige årsverk og år' },
+  // Siteringsmål fra OpenAlex (fanen «Siteringer»): samme kilde for alle land, uavhengig av tidsskriftlister
+  fwci: { navn: 'Snitt FWCI (OpenAlex)', kort: 'Snitt FWCI', grenser: [3, 4, 5, 6.5], d: 2, setning: 'snitt FWCI (siteringer normalisert for fagfelt og år i OpenAlex)', sit: true,
+    title: 'Field-Weighted Citation Impact fra OpenAlex: siteringer delt på forventet antall for verk i samme fagfelt, år og type. 1,0 = snittet for alle verk i OpenAlex, så nivået er høyt for alle enhetene. Snitt over artiklene i perioden.' },
+  t10: { navn: 'Topp 10 % mest siterte per 100 faglige årsverk og år (OpenAlex)', kort: 'Topp 10 % per 100 årsverk', grenser: [20, 30, 45, 65], d: 1, setning: 'artikler blant de 10 % mest siterte i fagfelt og år per 100 faglige årsverk og år', sit: true,
+    title: 'Artikler blant de 10 % mest siterte i sitt fagfelt og år (OpenAlex) per 100 faglige årsverk og år' },
   poeng: { navn: 'Publiseringspoeng per faglig årsverk (bare Norge)', kort: 'Poeng per årsverk', grenser: [0.5, 0.8, 1.1, 1.4], d: 2, bareNorge: true, setning: 'publiseringspoeng per faglig årsverk (bare Norge)',
     title: 'Publiseringspoeng (DBH 373) per faglig årsverk (UN1 + UN2, DBH 225), snitt i perioden. Finnes bare for Norge.' },
   plass: { navn: 'Plass i den norske rangeringen', kort: 'Plass i rangeringen', grenser: [3.5, 6.5, 9.5, 12.5], d: 0, lavBest: true, bareNorge: true, setning: 'plassen i den norske rangeringen (mørkest = best)',
@@ -62,7 +70,7 @@ function klasseTekst(m: KartMaal, k: number) {
   if (k === 4) return `${nf(g[3], d)} eller mer`;
   return `${nf(g[k - 1], d)}–${nf(g[k], d)}`;
 }
-export const verdiAv = (e: KartEnhet, m: KartMaal) => m === 'p4' ? e.p4 : m === 'p3' ? e.p3 : m === 'poeng' ? e.poeng : e.plass;
+export const verdiAv = (e: KartEnhet, m: KartMaal) => m === 'p4' ? e.p4 : m === 'p3' ? e.p3 : m === 'fwci' ? e.fwci ?? null : m === 't10' ? e.t10 ?? null : m === 'poeng' ? e.poeng : e.plass;
 export function fmtMaal(m: KartMaal, v: number | null) { return v == null ? '–' : m === 'plass' ? `nr. ${v}` : nf(v, KART_MAAL[m].d); }
 
 // ── Projeksjon: Lamberts flatriktige asimutale, sentrert i Norden ────────────────────────────────────────────
@@ -192,7 +200,9 @@ function Kart({ enheter, v, sett, maksPerAar }: { enheter: KartEnhet[]; v: KartV
           <span className="muted">{h.e.by}, {h.e.landNavn}{h.e.anslag ? ' · anslag' : ''}{h.e.referanse ? ' · referanse' : ''}</span>
           <div><span>{KART_MAAL[v.maal].kort}</span><b>{fmtMaal(v.maal, verdiAv(h.e, v.maal))}</b></div>
           <div><span>Artikler {h.e.fra === h.e.til ? h.e.fra : `${h.e.fra}–${h.e.til}`}</span><b>{nf(h.e.artikler, 0)}</b></div>
-          {v.maal !== 'p4' && <div><span>AJG 4+ per 100 årsverk</span><b>{nf(h.e.p4, 1)}</b></div>}
+          {v.maal !== 'p4' && !KART_MAAL[v.maal].sit && <div><span>AJG 4+ per 100 årsverk</span><b>{nf(h.e.p4, 1)}</b></div>}
+          {KART_MAAL[v.maal].sit && <div><span>{v.maal === 'fwci' ? 'Topp 10 % per 100 årsverk' : 'Snitt FWCI'}</span><b>{v.maal === 'fwci' ? nf(h.e.t10, 1) : nf(h.e.fwci, 2)}</b></div>}
+          {KART_MAAL[v.maal].sit && h.e.sitNevnerAnnen && v.maal === 't10' && <span className="muted">* Nevner fra en annen periode</span>}
           {h.e.annenPeriode && <span className="muted">Annen periode enn valgt</span>}
           {h.e.reserveNevner && <span className="muted">‡ Regnet uten stipendiater (tallet med finnes ikke)</span>}
           <span className="muted">Klikk for detaljer, kilde og forbehold</span>
@@ -206,8 +216,9 @@ function Kart({ enheter, v, sett, maksPerAar }: { enheter: KartEnhet[]; v: KartV
 interface Props {
   enheter: KartEnhet[]; uten: { land: string; n: number; status: string }[]; v: KartValg; std: KartValg; sett: (v: KartValg) => void;
   aar: [number, number]; apneProfil: (id: string) => void; apneAjg: (id: string) => void; harAjg: boolean;
+  /** siteringsdata fra OpenAlex finnes (målene «Snitt FWCI» og «Topp 10 %») */ harSit?: boolean; apneSit?: (id: string) => void;
 }
-export function NordenKart({ enheter, uten, v, std, sett, aar, apneProfil, apneAjg, harAjg }: Props) {
+export function NordenKart({ enheter, uten, v, std, sett, aar, apneProfil, apneAjg, harAjg, harSit, apneSit }: Props) {
   const set = (p: Partial<KartValg>) => sett({ ...v, ...p });
   const m = KART_MAAL[v.maal];
   const [y0, yN] = aar;
@@ -235,9 +246,13 @@ export function NordenKart({ enheter, uten, v, std, sett, aar, apneProfil, apneA
   const KOL: { id: KartMaal | 'art' | 'per'; label: string; title: string; vis: (e: KartEnhet) => string }[] = [
     { id: 'p4', label: 'AJG 4+ /100', title: KART_MAAL.p4.title, vis: (e) => nf(e.p4, 1) + (e.reserveNevner && e.p4 != null ? ' ‡' : '') },
     { id: 'p3', label: 'AJG 3+ /100', title: KART_MAAL.p3.title, vis: (e) => nf(e.p3, 1) + (e.reserveNevner && e.p3 != null ? ' ‡' : '') },
+    ...(harSit ? [
+      { id: 'fwci' as const, label: 'FWCI', title: KART_MAAL.fwci.title, vis: (e: KartEnhet) => nf(e.fwci, 2) },
+      { id: 't10' as const, label: 'Topp 10 % /100', title: KART_MAAL.t10.title, vis: (e: KartEnhet) => nf(e.t10, 1) + (e.t10 != null ? `${e.sitReserve ? ' ‡' : ''}${e.sitNevnerAnnen ? '*' : ''}` : '') },
+    ] : []),
     { id: 'poeng', label: 'Poeng/årsv.', title: KART_MAAL.poeng.title, vis: (e) => nf(e.poeng, 2) },
     { id: 'plass', label: 'Plass', title: KART_MAAL.plass.title, vis: (e) => e.plass != null ? String(e.plass) : '–' },
-    { id: 'art', label: 'Artikler', title: 'Vitenskapelige artikler i perioden (Norge: NVI-rapporterte)', vis: (e) => nf(e.artikler, 0) },
+    { id: 'art', label: 'Artikler', title: 'Vitenskapelige artikler i perioden (Norge: NVI-rapporterte; andre land med siteringsmål: i OpenAlex)', vis: (e) => nf(e.artikler, 0) },
     { id: 'per', label: 'Periode', title: 'Perioden tallene gjelder; * = avviker fra den valgte', vis: (e) => `${e.fra === e.til ? e.fra : `${e.fra}–${String(e.til).slice(2)}`}${e.annenPeriode ? '*' : ''}` },
   ];
   const kolonner = [...KOL.filter((k) => k.id === v.maal), ...KOL.filter((k) => k.id !== v.maal)];
@@ -247,13 +262,16 @@ export function NordenKart({ enheter, uten, v, std, sett, aar, apneProfil, apneA
       <section className="sheet" aria-label="Kart">
         <div>
           <span className="lab">Kart · {m.bareNorge ? 'Norge' : 'Norden'} · {periodeTekst} · hel telling · {v.nevner === 'uff' ? 'faglige årsverk med stipendiater' : 'faglige årsverk uten stipendiater'}</span>
-          <h1>{v.maal === 'plass' ? 'Den norske rangeringen på kartet' : m.bareNorge ? 'Publiseringspoeng per årsverk i Norge' : 'Toppublisering i nordiske handelshøyskoler'}</h1>
+          <h1>{v.maal === 'plass' ? 'Den norske rangeringen på kartet' : m.bareNorge ? 'Publiseringspoeng per årsverk i Norge' : m.sit ? 'Siteringer i nordiske handelshøyskoler' : 'Toppublisering i nordiske handelshøyskoler'}</h1>
           <p style={{ maxWidth: '64ch' }}>
             Sirklene viser hvor mye hver enhet publiserer (vitenskapelige artikler per år), og fargen viser {m.setning}.
             {topNorsk && <> Høyest i Norge er <b>{topNorsk.kort}</b> ({fmtMaal(v.maal, verdiAv(topNorsk, v.maal))}).</>}
             {!m.bareNorge && v.anslag && toppAlle && toppAlle.land !== 'NO' && <> Med de foreløpige anslagene for andre land ligger <b>{toppAlle.kort}</b> ({toppAlle.landNavn}, {fmtMaal(v.maal, verdiAv(toppAlle, v.maal))}) øverst.</>}
             {hh && verdiAv(hh, v.maal) != null && <> {hh.kort} har {fmtMaal(v.maal, verdiAv(hh, v.maal))}.</>}
-            {' '}Norge bruker de ekte tallene fra rangeringsdataene; Danmark, Sverige og Finland er foreløpige anslag fra utforskningsrapporter og er ikke del av den norske rangeringen.
+            {m.sit
+              ? <>{' '}Siteringene er fra OpenAlex for alle land (Norge: NVA-artiklene koblet på DOI; andre land: artiklene OpenAlex knytter til enheten). Nevnerne for andre land er fra utforskningsrapportene og gjelder bare enkelte år (*). Ikke del av den norske rangeringen.
+                {v.til >= yN - 1 && <> <b>Perioden har med {yN - 1}–{yN}, som har få siteringer ennå (foreløpig); velg {yN - 4}–{yN - 2} for stabile tall.</b></>}</>
+              : <>{' '}Norge bruker de ekte tallene fra rangeringsdataene; Danmark, Sverige og Finland er foreløpige anslag fra utforskningsrapporter og er ikke del av den norske rangeringen.</>}
           </p>
         </div>
         <div>
@@ -261,7 +279,7 @@ export function NordenKart({ enheter, uten, v, std, sett, aar, apneProfil, apneA
           <div className="ajg-valg">
             <label className="ajg-g"><span className="lab">Farge</span>
               <select value={v.maal} onChange={(e) => set({ maal: e.target.value as KartMaal })} style={sel} title={m.title}>
-                {KART_MAAL_IDER.map((id) => <option key={id} value={id}>{KART_MAAL[id].navn}</option>)}
+                {KART_MAAL_IDER.filter((id) => harSit || !KART_MAAL[id].sit || id === v.maal).map((id) => <option key={id} value={id}>{KART_MAAL[id].navn}</option>)}
               </select>
             </label>
             <label className="ajg-g"><span className="lab">Periode (Norge)</span>
@@ -275,7 +293,7 @@ export function NordenKart({ enheter, uten, v, std, sett, aar, apneProfil, apneA
               <button type="button" className="seg" aria-pressed={v.nevner === 'utenStip'} onClick={() => set({ nevner: 'utenStip' })} title="Faglige årsverk uten stipendiater (NHH: UN1 + postdoktorer). Andre land: Finland trinn II–IV, Sverige «forskande och undervisande personal». Danmark har ikke tallet.">uten</button>
             </div>}
             <div className="ajg-g" role="group" aria-label="Utvalg">
-              <button type="button" className="seg" aria-pressed={v.anslag} onClick={() => set({ anslag: !v.anslag })} title="Danmark, Sverige og Finland: foreløpige tall fra utforskningsrapportene">Andre land (anslag)</button>
+              <button type="button" className="seg" aria-pressed={v.anslag} onClick={() => set({ anslag: !v.anslag })} title="Danmark, Sverige og Finland: foreløpige tall fra utforskningsrapportene (siteringsmålene: OpenAlex med foreløpig avgrensning)">Andre land (anslag)</button>
               <button type="button" className="seg" aria-pressed={v.ref} onClick={() => set({ ref: !v.ref })} title="Rene samfunnsøkonomimiljøer og hele fakulteter (UiB, UiO, NTNU ØK, Helsingfors, KU)">Referanser</button>
             </div>
           </div>
@@ -293,7 +311,7 @@ export function NordenKart({ enheter, uten, v, std, sett, aar, apneProfil, apneA
             <span className="lab">Farge: {m.kort}</span>
             <div className="kart-skala">
               {[0, 1, 2, 3, 4].map((k) => { const kk = m.lavBest ? 4 - k : k; return <span key={k}><i className={`c${kk}`} />{klasseTekst(v.maal, kk)}</span>; })}
-              <span><i className="tom" />{m.bareNorge ? 'finnes ikke (andre land)' : 'mangler nevner'}</span>
+              <span><i className="tom" />{m.bareNorge ? 'finnes ikke (andre land)' : v.maal === 'fwci' ? 'ingen OpenAlex-tall' : 'mangler nevner'}</span>
             </div>
           </div>
           <div>
@@ -314,7 +332,7 @@ export function NordenKart({ enheter, uten, v, std, sett, aar, apneProfil, apneA
         {uten.length > 0 && <p className="cap">{uten.map((u) => `${u.land}: ${u.status === 'mal' ? `${u.n} enheter uten tall ennå (rapporten er ikke lagt inn)` : `${u.n} enheter uten tall`}`).join(' · ')}.</p>}
       </section>
 
-      {valgt && <Detalj e={valgt} v={v} apneProfil={apneProfil} apneAjg={apneAjg} harAjg={harAjg} lukk={() => set({ valgt: null })} />}
+      {valgt && <Detalj e={valgt} v={v} apneProfil={apneProfil} apneAjg={apneAjg} harAjg={harAjg} harSit={!!harSit} apneSit={apneSit} lukk={() => set({ valgt: null })} />}
 
       <section className="sec" aria-label="Tabell">
         <header><span className="lab">Tabell</span><h2>Alle enhetene på kartet</h2>
@@ -343,6 +361,7 @@ export function NordenKart({ enheter, uten, v, std, sett, aar, apneProfil, apneA
         <ul>
           <li><b>Norge:</b> samme beregning som AJG-sammenligningen: NVI-rapporterte artikler i NVA koblet mot AJG 2024 på ISSN, hel telling, sum artikler / sum faglige årsverk (DBH 225, UN1 + UN2, eller UN1 + postdoktorer med «uten») × 100 for perioden. Poeng per årsverk = sum publiseringspoeng / sum faglige årsverk med samme nevner. Plass følger vektene i «Rangering og vekter».</li>
           <li><b>Danmark, Sverige og Finland</b> er foreløpige anslag fra utforskningsrapportene 7.10.2026 (data/rangering/inspirasjon/norden-*.md): Danmark er enhetsavgrenset i Pure (2024; CBS også 2023–2025), Sverige enhetsavgrenset i SwePub (2023–2025), Finland fagfeltavgrenset (511 + 512, Vipunen/Research.fi). Nevneren finnes ikke for alle: danske institutter har ingen åpen nevner, og i Sverige finnes nevner med doktorander bare for SSE, LUSEM og GU. De andre svenske vises med nevneren uten doktorander som reserve, merket ‡ (gir noe høyere tall per 100 enn med). Tallene er ikke kontrollert mot skolenes egne og er ikke del av rangeringen.</li>
+          {harSit && <li><b>Siteringsmålene</b> (snitt FWCI og topp 10 % per 100 årsverk) er fra OpenAlex for alle land, se fanen «Siteringer». Norge: NVA-artiklene (NVI-rapporterte) koblet til OpenAlex på DOI eller tittel. Andre land: artiklene OpenAlex knytter til enheten (hel institusjon, tilknytningstekst eller fagfelt), i den valgte perioden; nevneren er fra utforskningsrapportene og gjelder bare enkelte år (* = annen periode, ‡ = uten stipendiater). Ferske år ({aar[1] - 1}–{aar[1]}) har få siteringer og er foreløpige.</li>}
           <li><b>Kartgrunnlag:</b> Natural Earth 1:50m (offentlig eiendom) via world-atlas (ISC-lisens), forenklet og tegnet som innebygd SVG. Kartet henter ingenting fra eksterne tjenester. Sirklene står ved hovedcampus; skoler med flere studiesteder har ett punkt.</li>
         </ul>
       </section>
@@ -350,7 +369,7 @@ export function NordenKart({ enheter, uten, v, std, sett, aar, apneProfil, apneA
   );
 }
 
-function Detalj({ e, v, apneProfil, apneAjg, harAjg, lukk }: { e: KartEnhet; v: KartValg; apneProfil: (id: string) => void; apneAjg: (id: string) => void; harAjg: boolean; lukk: () => void }) {
+function Detalj({ e, v, apneProfil, apneAjg, harAjg, harSit, apneSit, lukk }: { e: KartEnhet; v: KartValg; apneProfil: (id: string) => void; apneAjg: (id: string) => void; harAjg: boolean; harSit: boolean; apneSit?: (id: string) => void; lukk: () => void }) {
   const per = e.fra === e.til ? String(e.fra) : `${e.fra}–${e.til}`;
   const n = e.til - e.fra + 1;
   return (
@@ -363,6 +382,8 @@ function Detalj({ e, v, apneProfil, apneAjg, harAjg, lukk }: { e: KartEnhet; v: 
         <div><b>{nf(e.artikler, 0)}</b><span>artikler {per}{n > 1 && e.artikler != null ? ` (${nf(e.artikler / n, 0)} per år)` : ''}</span></div>
         <div><b>{nf(e.p4, 1)}</b><span>AJG 4/4* per 100 årsverk og år{e.n4 != null ? ` (${nf(e.n4, 0)} artikler)` : ''}</span></div>
         <div><b>{nf(e.p3, 1)}</b><span>AJG 3+ per 100 årsverk og år{e.n3 != null ? ` (${nf(e.n3, 0)} artikler)` : ''}</span></div>
+        {harSit && <div><b>{nf(e.fwci, 2)}</b><span>snitt FWCI (OpenAlex){e.sitArtikler != null ? `, ${nf(e.sitArtikler, 0)} artikler` : ''}</span></div>}
+        {harSit && <div><b>{nf(e.t10, 1)}{e.t10 != null && e.sitNevnerAnnen ? '*' : ''}</b><span>topp 10 % mest siterte per 100 årsverk og år{e.t10n != null ? ` (${nf(e.t10n, 0)} artikler)` : ''}</span></div>}
         <div><b>{nf(e.arsverk, 0)}</b><span>faglige årsverk per år (nevner)</span></div>
         {e.land === 'NO' && <div><b>{nf(e.poeng, 2)}</b><span>publiseringspoeng per faglig årsverk</span></div>}
         {e.land === 'NO' && <div><b>{e.plass != null ? `nr. ${e.plass}` : '–'}</b><span>{e.plass != null ? `av ${e.plassAv} i rangeringen` : 'ikke rangert (referanse)'}</span></div>}
@@ -374,6 +395,7 @@ function Detalj({ e, v, apneProfil, apneAjg, harAjg, lukk }: { e: KartEnhet; v: 
       <div className="cmprow">
         {e.land === 'NO' && <button type="button" onClick={() => apneProfil(e.id)}>Skoleportrett</button>}
         {e.land === 'NO' && harAjg && <button type="button" onClick={() => apneAjg(e.id)}>AJG-sammenligning</button>}
+        {harSit && apneSit && (e.fwci != null || e.t10 != null) && <button type="button" onClick={() => apneSit(e.id)}>Siteringer</button>}
         <button type="button" className="clr" onClick={lukk}>Lukk</button>
       </div>
     </section>
