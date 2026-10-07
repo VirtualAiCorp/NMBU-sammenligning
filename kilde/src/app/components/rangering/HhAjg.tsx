@@ -144,11 +144,12 @@ function Stolper({ aar, rader, nivaer, andel, brok }: { aar: number[]; rader: Te
 interface Props {
   hh: HhAjgData; aar: [number, number]; v: HhValg; std: HhValg; sett: (v: HhValg) => void;
   /** HH NMBUs ABS/AJG 4*, 4 og 3 fra NHH Research Report 2024 (2020–2024) */ nhh: NhhTall | null | undefined;
-  /** år der NHHs tabell er usikker, per nivå */ usikker: Record<string, number[]>; fagNavn: Record<string, string>; generert: string;
+  /** år der NHHs tabell er usikker, per nivå */ usikker: Record<string, number[]>; fagNavn: Record<string, string>;
+  /** AJGs offisielle engelske navn på fagfeltene */ fagNavnEn: Record<string, string>; generert: string;
 }
 const SIDE = 50;
 
-export function HhAjgFane({ hh, aar: [y0, yN], v, std, sett, nhh, usikker, fagNavn, generert }: Props) {
+export function HhAjgFane({ hh, aar: [y0, yN], v, std, sett, nhh, usikker, fagNavn, fagNavnEn, generert }: Props) {
   const set = (p: Partial<HhValg>) => sett({ ...v, ...p });
   const T = hh.tidsskrift;
   const andelAv = (a: HhArtikkel) => a[7] > 0 ? Math.min(1, a[6] / a[7]) : 1;
@@ -233,10 +234,10 @@ export function HhAjgFane({ hh, aar: [y0, yN], v, std, sett, nhh, usikker, fagNa
 
   // 5. CSV
   const lastNedListe = () => {
-    const hode = ['NVA-id', 'Lenke', 'År', 'AJG 2024', 'AJG-fagfelt', 'Tittel', 'Tidsskrift', 'ISSN', 'Norsk nivå', 'NVI-rapportert', 'HH-forfattere', 'Alle forfattere', 'HHs forfatterandel', 'Internasjonal sampublisering'];
+    const hode = ['NVA-id', 'Lenke', 'År', 'AJG 2024', 'AJG-fagfelt', 'AJG-fagfelt (engelsk)', 'Tittel', 'Tidsskrift', 'ISSN', 'Norsk nivå', 'NVI-rapportert', 'HH-forfattere', 'Alle forfattere', 'HHs forfatterandel', 'Internasjonal sampublisering'];
     const linjer = [hode.join(';'), ...liste.map((a) => {
       const t = T[a[3]]; const n = nivaAv(t);
-      return [a[0], hh.nvaUrl + a[0], String(a[1]), n === 'ikke' ? 'ikke på AJG' : n === '?' ? 'ikke sjekket' : n, t?.[2] ? (fagNavn[t[2]] ?? t[2]) : '', esc(a[2]), esc(t?.[0] ?? ''), t?.[3] ?? '',
+      return [a[0], hh.nvaUrl + a[0], String(a[1]), n === 'ikke' ? 'ikke på AJG' : n === '?' ? 'ikke sjekket' : n, t?.[2] ? (fagNavn[t[2]] ?? t[2]) : '', t?.[2] ? (fagNavnEn[t[2]] ?? t[2]) : '', esc(a[2]), esc(t?.[0] ?? ''), t?.[3] ?? '',
         a[4] || '', a[5] ? 'ja' : 'nei', String(a[6]), String(a[7]), tallCsv(andelAv(a), 4), a[8] ? 'ja' : 'nei'].join(';');
     })];
     const filt = [v.niva.length ? 'niva-' + v.niva.map((n) => NIVA_URL[n]).join('-') : '', v.sok.trim() ? 'sok' : ''].filter(Boolean).join('-');
@@ -371,14 +372,14 @@ export function HhAjgFane({ hh, aar: [y0, yN], v, std, sett, nhh, usikker, fagNa
                   return (
                     <tr key={a[0]} className={tre(n) ? 'hoy' : undefined}>
                       <td className="aar">{a[1]}</td>
-                      <td className="niv" title={t?.[2] ? `${NIVA_NAVN[n]} · ${fagNavn[t[2]] ?? t[2]}` : NIVA_NAVN[n]}><i className={`hh-sw ${NIVA_KLASSE[n]}`} />{n === 'ikke' ? '–' : n === '?' ? '?' : n}</td>
+                      <td className="niv" title={t?.[2] ? `${NIVA_NAVN[n]} · ${fagNavn[t[2]] ?? t[2]}${fagNavnEn[t[2]] ? ` (${fagNavnEn[t[2]]})` : ''}` : NIVA_NAVN[n]}><i className={`hh-sw ${NIVA_KLASSE[n]}`} />{n === 'ikke' ? '–' : n === '?' ? '?' : n}</td>
                       <td className="tit">
                         <a href={hh.nvaUrl + encodeURIComponent(a[0])} target="_blank" rel="noopener noreferrer">{a[2] || '(uten tittel)'}<ExternalLink className="w-3 h-3" style={{ display: 'inline', verticalAlign: -1, marginLeft: 4, opacity: .6 }} /></a>
                         {!a[5] && <span className="ikkenvi" title="Ikke rapportert til NVI">ikke NVI</span>}
                       </td>
                       <td className="tids">
                         <button type="button" className="tids" onClick={() => visTidsskrift(t?.[0] ?? '')} title="Vis alle HH-artiklene i dette tidsskriftet">{t?.[0] ?? '(uten tidsskrift)'}</button>
-                        {t?.[2] ? <small>{fagNavn[t[2]] ?? t[2]}</small> : null}
+                        {t?.[2] ? <small title={fagNavnEn[t[2]]}>{fagNavn[t[2]] ?? t[2]}</small> : null}
                       </td>
                       <td className="nn" data-l="Norsk nivå">{a[4] ? a[4] : '–'}</td>
                       <td className="ha" data-l="HH / alle">{a[6]} / {a[7]}</td>
@@ -414,7 +415,7 @@ export function HhAjgFane({ hh, aar: [y0, yN], v, std, sett, nhh, usikker, fagNa
                         <tr key={r.navn}><td><button type="button" className="tids" onClick={() => visTidsskrift(r.navn)}>{r.navn}</button></td><td>{nf(r.w, r.w > 0 && r.w < 0.05 ? 2 : d)}</td></tr>
                       )) : g.fagListe.map((f) => (
                         <Fragment key={f.f}>
-                          <tr className="gh"><td>{f.f ? (fagNavn[f.f] ?? f.f) : 'Uten fagfelt'}</td><td>{nf(f.w, d)}</td></tr>
+                          <tr className="gh"><td>{f.f ? (fagNavn[f.f] ?? f.f) : 'Uten fagfelt'}{f.f && fagNavnEn[f.f] ? <span className="en" lang="en"> · {fagNavnEn[f.f]}</span> : null}</td><td>{nf(f.w, d)}</td></tr>
                           {f.rr.map((r) => <tr key={r.navn}><td><button type="button" className="tids" onClick={() => visTidsskrift(r.navn)}>{r.navn}</button></td><td>{nf(r.w, r.w > 0 && r.w < 0.05 ? 2 : d)}</td></tr>)}
                         </Fragment>
                       ))}

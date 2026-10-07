@@ -447,7 +447,7 @@ function Rangering({ data }: { data: Data }) {
       {t.fane === 'ajg' && harAjg && <AjgSammenligning data={data} v={t.ajg} std={std.ajg} sett={(ajg) => sett({ ajg })} />}
       {t.fane === 'hh' && (harAjg && data.hhAjg
         ? <HhAjgFane hh={data.hhAjg} aar={data.aar} v={t.hh} std={std.hh} sett={(hh) => sett({ hh })} nhh={data.skoler.find((s) => s.id === data.hhAjg?.skole)?.ajgNhh}
-          usikker={data.ajgNhh?.usikker ?? {}} fagNavn={AJG_FAG} generert={data.generert} />
+          usikker={data.ajgNhh?.usikker ?? {}} fagNavn={AJG_FAG} fagNavnEn={AJG_FAG_EN} generert={data.generert} />
         : <div className="skp"><p className="muted">AJG ikke lagt inn. Fanen «HH NMBU etter AJG» vises bare når AJG 2024-lista er lagt inn og rangeringen er bygd på nytt.</p></div>)}
       {t.fane === 'kart' && <KartFane data={data} rader={rader} v={t.kart} std={std.kart} sett={(kart) => sett({ kart })}
         apneProfil={(id) => sett({ fane: 'profil', profil: id })}
@@ -1885,14 +1885,35 @@ const AJG_KOL: AjgKol[] = [
   { id: 'a4', label: '4+ av AJG', navn: 'andel 4+ av AJG-artiklene', title: 'Andel av artiklene i AJG-tidsskrift som er på nivå 4 eller 4*', type: 'pst' },
   { id: 'snitt', label: 'AJG-snitt*', navn: 'AJG-snitt (tilleggsmål)', title: 'Tilleggsmål: gjennomsnittlig AJG-nivå blant artiklene i AJG-tidsskrift, med 4* = 5, 4 = 4, 3 = 3, 2 = 2 og 1 = 1. Sier ingenting om artiklene utenfor AJG.', type: 'snitt', stripe: true },
 ];
-const AJG_FAG: Record<string, string> = {
-  ACCOUNT: 'Regnskap', 'BUS HIST & ECON HIST': 'Bedrifts- og økonomisk historie', ECON: 'Samfunnsøkonomi', 'ENT-SBM': 'Entreprenørskap og småbedrifter',
-  'ETHICS-CSR-MAN': 'Etikk, samfunnsansvar og ledelse', FINANCE: 'Finans', 'HRM&EMP': 'HR og arbeidsliv', 'IB&AREA': 'Internasjonal forretningsdrift og områdestudier',
-  'INFO MAN': 'Informasjonssystemer og -ledelse', INNOV: 'Innovasjon', 'MDEV&EDU': 'Lederutvikling og utdanning', MKT: 'Markedsføring',
-  'OPS&TECH': 'Drift og teknologiledelse', 'OR&MANSCI': 'Operasjonsanalyse og ledelsesvitenskap', 'ORG STUD': 'Organisasjonsstudier',
-  'PSYCH (GENERAL)': 'Psykologi (generell)', 'PSYCH (WOP-OB)': 'Arbeids- og organisasjonspsykologi', 'PUB SEC': 'Offentlig sektor',
-  'REGIONAL STUDIES, PLANNING AND ENVIRONMENT': 'Regionalstudier, planlegging og miljø', SECTOR: 'Sektorstudier (bransjer)', 'SOC SCI': 'Samfunnsvitenskap', STRAT: 'Strategi',
+// AJG 2024s 22 fagfelt: kode i lista → [norsk navn, AJGs offisielle engelske navn (metodedokumentet, tabell 3)].
+// Feltene som samler flere temaer (for eksempel Operations Research and Management Science), er AJGs egne; hvert
+// tidsskrift står i ett felt, så de kan ikke deles opp uten en egen klassifisering.
+const AJG_FAG_NAVN: Record<string, [string, string]> = {
+  ACCOUNT: ['Regnskap', 'Accounting'],
+  'BUS HIST & ECON HIST': ['Bedrifts- og økonomisk historie', 'Business and Economic History'],
+  ECON: ['Samfunnsøkonomi, økonometri og statistikk', 'Economics, Econometrics and Statistics'],
+  'ENT-SBM': ['Entreprenørskap og småbedriftsledelse', 'Entrepreneurship and Small Business Management'],
+  'ETHICS-CSR-MAN': ['Generell ledelse, etikk, kjønn og samfunnsansvar', 'General Management, Ethics, Gender and Social Responsibility'],
+  FINANCE: ['Finans', 'Finance'],
+  'HRM&EMP': ['HR-ledelse og arbeidslivsstudier', 'Human Resource Management and Employment Studies'],
+  'IB&AREA': ['Internasjonal forretningsdrift og områdestudier', 'International Business and Area Studies'],
+  'INFO MAN': ['Informasjonssystemer', 'Information Systems'],
+  INNOV: ['Innovasjon', 'Innovation'],
+  'MDEV&EDU': ['Lederutvikling og utdanning', 'Management Development and Education'],
+  MKT: ['Markedsføring', 'Marketing'],
+  'OPS&TECH': ['Drifts- og teknologiledelse', 'Operations and Technology Management'],
+  'OR&MANSCI': ['Operasjonsanalyse og management science', 'Operations Research and Management Science'],
+  'ORG STUD': ['Organisasjonsstudier', 'Organisational Studies'],
+  'PSYCH (GENERAL)': ['Psykologi (generell)', 'Psychology (General)'],
+  'PSYCH (WOP-OB)': ['Arbeids- og organisasjonspsykologi', 'Psychology (Organisational)'],
+  'PUB SEC': ['Offentlig sektor og helse', 'Public Sector and Health Care'],
+  'REGIONAL STUDIES, PLANNING AND ENVIRONMENT': ['Regionalstudier, planlegging og miljø', 'Regional Studies, Planning and Environment'],
+  SECTOR: ['Sport, fritid, turisme og bransjestudier', 'Sports, Leisure, Tourism and Sector Studies'],
+  'SOC SCI': ['Samfunnsvitenskap', 'Social Sciences'],
+  STRAT: ['Strategi', 'Strategy'],
 };
+const AJG_FAG: Record<string, string> = Object.fromEntries(Object.entries(AJG_FAG_NAVN).map(([k, [no]]) => [k, no]));
+const AJG_FAG_EN: Record<string, string> = Object.fromEntries(Object.entries(AJG_FAG_NAVN).map(([k, [, en]]) => [k, en]));
 const AJG_NIV_NAVN: Record<AjgNiva | 'ikke', string> = { '4*': '4*', '4': '4', '3': '3', '2': '2', '1': '1', ikke: 'Ikke på AJG' };
 
 /** Bredden til et element (for grafer som tegnes i piksler, så teksten ikke krymper på mobil). */
@@ -2240,12 +2261,12 @@ function AjgSammenligning({ data, v, std, sett }: { data: Data; v: AjgValg; std:
               <tbody>
                 {fagKol.map((fag) => (
                   <tr key={fag}>
-                    <td title={fag}>{AJG_FAG[fag] ?? fag}</td>
+                    <td className="fag" title={`AJG-kode ${fag}`}>{AJG_FAG[fag] ?? fag}{AJG_FAG_EN[fag] ? <small lang="en">{AJG_FAG_EN[fag]}</small> : null}</td>
                     {fagPer.map((p) => {
                       const x = celle(p, fag); const g = x == null ? 0 : Math.round(100 * Math.sqrt(x / fagMaks) * 0.92);
                       const ant = p.f[fag] ?? 0;
                       return <td key={p.r.s.id} className={`c${p.r.s.isNmbu ? ' meg' : ''}`} style={{ background: ant ? `color-mix(in srgb, var(--hm) ${g}%, var(--bg))` : undefined, color: g > 52 ? '#fff' : undefined }}
-                        title={`${p.r.s.kort} · ${AJG_FAG[fag] ?? fag}: ${nf(ant, v.brok ? 1 : 0)} artikler på nivå ${fagNiva}+${p.sum ? ` (${nf(100 * ant / p.sum, 0)} % av skolens)` : ''}`}>
+                        title={`${p.r.s.kort} · ${AJG_FAG[fag] ?? fag}${AJG_FAG_EN[fag] ? ` (${AJG_FAG_EN[fag]})` : ''}: ${nf(ant, v.brok ? 1 : 0)} artikler på nivå ${fagNiva}+${p.sum ? ` (${nf(100 * ant / p.sum, 0)} % av skolens)` : ''}`}>
                         {ant ? (fagAndel ? ((x ?? 0) < 0.5 ? '<1' : nf(x, 0)) : nf(x, v.brok ? 1 : 0)) : <span className="muted">·</span>}</td>;
                     })}
                   </tr>
@@ -2255,7 +2276,7 @@ function AjgSammenligning({ data, v, std, sett }: { data: Data; v: AjgValg; std:
             </table>
           </div>
         )}
-        <p className="cap">Fagfeltene er AJGs egen inndeling av tidsskriftene (22 felt). Kolonnene følger rekkefølgen i tabellen over. Fargen øker med kvadratroten av verdien, så små felt også synes.</p>
+        <p className="cap">Fagfeltene er AJGs egen inndeling av tidsskriftene (22 felt), med AJGs engelske navn under det norske. Felt som samler flere temaer, for eksempel Operations Research and Management Science, er slått sammen av AJG; hvert tidsskrift står i bare ett felt, så de kan ikke deles opp uten en egen klassifisering. Kolonnene følger rekkefølgen i tabellen over. Fargen øker med kvadratroten av verdien, så små felt også synes.</p>
       </section>
 
       <section className="sec" aria-label="Validering mot NHH-rapporten">

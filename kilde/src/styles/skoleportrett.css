@@ -245,6 +245,8 @@
 .skp table.ajg-hm td{border-bottom:0;padding:5px 4px;font-size:.78rem}
 .skp table.ajg-hm td:first-child{white-space:nowrap;padding-right:10px;font-size:.8rem;position:sticky;left:0;background:var(--bg);z-index:1}
 .skp table.ajg-hm th:first-child{position:sticky;left:0;background:var(--bg);z-index:1}
+.skp table.ajg-hm td.fag{white-space:normal;min-width:15em;max-width:21em;line-height:1.25}
+.skp table.ajg-hm td.fag small{display:block;font-size:.68rem;color:var(--muted);margin-top:1px}
 .skp table.ajg-hm td.c{text-align:center;min-width:42px;background:var(--flate)}
 .skp table.ajg-hm td.c.meg{outline:1px solid var(--accent);outline-offset:-1px}
 .skp table.ajg-hm tr.sum td{border-top:1px solid var(--line2);color:var(--muted);text-align:center}
@@ -365,6 +367,7 @@
 .skp table.hh-tt td:first-child{padding-left:12px}
 .skp table.hh-tt tr.gh td:first-child{padding-left:0}
 .skp table.hh-tt tr.gh td{padding-top:10px}
+.skp table.hh-tt tr.gh .en{text-transform:none;letter-spacing:0;font-size:.72rem}
 .skp .hh-forkl{margin:0;padding-left:1.1em;display:grid;gap:5px;font-size:.86rem;max-width:100ch}
 @media(max-width:640px){
   .skp .hh-tall{grid-template-columns:repeat(2,minmax(0,1fr))}
