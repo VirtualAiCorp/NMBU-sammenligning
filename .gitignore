@@ -16,6 +16,8 @@ data/nmbu/kilder/ssb-gjennomforing/
 
 # Rangering: rå NVA-cache og lisensbelagte tidsskriftlister (AJG)
 data/rangering/nva/
+# Danske Pure-data (OAI-PMH): råsvar med personnavn og avledede artikkelfiler, hentes på nytt med skriptet
+data/rangering/pure/
 data/rangering/tidsskrift/ajg*.csv
 !data/rangering/tidsskrift/ajg-mal.csv
 data/rangering/dbh/

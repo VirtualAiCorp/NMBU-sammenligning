@@ -15,6 +15,8 @@ Kilder:
   DBH/HK-dir 373, 374                   Publiseringspoeng og antall publikasjoner per avdeling; poeng per nivå.
   DBH/HK-dir 123, 210                   Registrerte studenter; avdeling → fakultet.
   NVA (scripts/fetch-nva-artikler.py)   Vitenskapelige artikler per enhet og år med tidsskrift og ISSN.
+  data/rangering/norden/                Kartpunkt for de norske enhetene og foreløpige tall for Danmark, Sverige og
+                                        Finland (fanen «Kart»; ikke del av rangeringen).
   data/rangering/ajg-nhh-rapport.json   ABS/AJG 4*/4/3 per skole 2020–2024 fra NHH Research Report 2024
                                         (scripts/rangering/nhh_abs_tabeller.py).
   data/rangering/tidsskrift/            ABDC (A*/A/B/C), FT50, UTD24, og AJG 2024 (1–4*) hvis ajg2024.csv finnes
@@ -206,6 +208,51 @@ def lag_kontroll(skoler):
     print(f"Kontroll: {len(ut)} eksterne tall, {len(n)} sammenlignbare, "
           f"{sum(abs(r['avvikProsent']) <= 2 for r in n)} innen ±2 %, {sum(abs(r['avvikProsent']) > 10 for r in n)} over ±10 %.")
     return ut
+
+
+# Foreløpige tall for nordiske enheter (fanen «Kart»): data/rangering/norden/*.json, fylt fra rapportene i
+# inspirasjon/norden-<land>.md (scripts/rangering/norden_til_json.py). Ikke del av den norske rangeringen.
+NORDEN = RANG / "norden"
+NORDEN_LAND = ["danmark", "sverige", "finland"]
+NORDEN_TALL = {"artikler", "arsverk", "artiklerPer100", "ajg4", "ajg4Per100", "ajg4Per100UtenStip", "ajg3", "ajg3Per100",
+               "ajgDekning", "niva2", "niva2Per100", "abdc", "abdcPer100", "ftUtd", "ftUtdPer100", "ajg4s", "ajg4sPer100",
+               "abdcAs", "abdcAsPer100", "ft50", "ft50Per100", "arsverkUtenStip", "ajg3Per100UtenStip"}
+
+
+def les_norden(norske_ider):
+    f = NORDEN / "norge.json"
+    steder = json.loads(f.read_text(encoding="utf-8"))["steder"] if f.exists() else {}
+    mangler = sorted(norske_ider - set(steder))
+    if mangler:
+        print(f"Kart: mangler koordinater for {mangler} i {f.relative_to(ROOT)}")
+    land = []
+    for navn in NORDEN_LAND:
+        f = NORDEN / f"{navn}.json"
+        if not f.exists():
+            continue
+        d = json.loads(f.read_text(encoding="utf-8"))
+        for x in d.get("enheter", []):
+            x.pop("alias", None)
+            for p in x.get("perioder", []):
+                # Bare aggregerte tall per enhet; ukjente felt (f.eks. lister per tidsskrift) slippes ikke gjennom
+                for k in [k for k in p if k not in NORDEN_TALL | {"fra", "til", "anslag", "telling", "kilde", "merknad"}]:
+                    p.pop(k)
+                beregnet = []
+                # Per 100 årsverk og år = sum i perioden / sum årsverk i perioden × 100 (som i AJG-sammenligningen)
+                for nev, hale in (("arsverk", ""), ("arsverkUtenStip", "UtenStip")):
+                    for tell in (("artikler", "ajg4", "ajg3", "ajg4s") if not hale else ("ajg4", "ajg3")):
+                        k100 = f"{tell}Per100{hale}"
+                        if p.get(k100) is None and p.get(tell) is not None and p.get(nev):
+                            p[k100] = round(100 * p[tell] / p[nev], 1)
+                            beregnet.append(k100)
+                if beregnet:
+                    p["beregnet"] = beregnet
+            if isinstance(x.get("enhetskontroll"), dict):
+                x["enhetskontroll"] = {k: v for k, v in x["enhetskontroll"].items() if k in NORDEN_TALL | {"fra", "til"}}
+        land.append(d)
+        print(f"Kart: {d.get('landNavn')} {len(d.get('enheter', []))} enheter, {sum(1 for x in d.get('enheter', []) if x.get('perioder'))} med tall ({d.get('status')})")
+    return {"merknad": "Foreløpige tall for enheter utenfor Norge fra utforskningsrapportene (data/rangering/inspirasjon/norden-*.md). "
+                       "Ikke del av den norske rangeringen.", "steder": steder, "land": land}
 
 
 def main():
@@ -521,7 +568,8 @@ def main():
         print(f"  {sid:12s} poeng/UFF 2024 {sist.get('poengPerUff')}  artikler 2024 {per_aar.get('2024', {}).get('n')}  utd {list(ut_skoler[-1]['utdanning'])}")
 
     kontroll = lag_kontroll(ut_skoler)
-    data = {"versjon": 1, "generert": dt.date.today().isoformat(), "aar": [Y0, Y1], "kontroll": kontroll,
+    norden = les_norden({s["id"] for s in ut_skoler})
+    data = {"versjon": 1, "generert": dt.date.today().isoformat(), "aar": [Y0, Y1], "kontroll": kontroll, "norden": norden,
             "ajgNhh": {k: v for k, v in (ajg_nhh or {}).items() if k != "skoler"} or None,
             "lister": {**{k: bool(v) for k, v in lister.items()}, "ajgDelvis": ajg_delvis}, "skoler": ut_skoler}
     if a.klartekst:

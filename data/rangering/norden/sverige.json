@@ -1,0 +1,470 @@
+{
+ "land": "SE",
+ "landNavn": "Sverige",
+ "status": "foreløpig",
+ "rapport": "data/rangering/inspirasjon/norden-sverige.md",
+ "lest": "2026-10-07",
+ "metode": {
+  "avgrensningKort": "enhetsavgrenset (SwePub-tilknytning)",
+  "niva2Navn": null,
+  "avgrensning": "Fagfellevurderte tidsskriftartikler i SwePub (KB) per lærosete; handelshøyskolen eller instituttene plukket ut med tekstmønstre på forfatternes tilknytning. Duplikater fjernet på DOI.",
+  "telling": "Hel telling: en artikkel teller én gang for enheten uansett antall medforfattere.",
+  "nevner": "Med doktorander (nær HK-dirs UN1 + UN2) finnes bare for SSE, LUSEM og GU. Uten doktorander: «forskande och undervisande personal» (UKÄ eller skolenes egne tall), nær NHHs nevner. Velg nevner i kartet.",
+  "lister": "Koblet på ISSN/eISSN mot ABDC 2025, FT50 (2026), UTD24 og AJG 2024 (lokal fil). Bare aggregerte tall.",
+  "periode": "2023–2025 (snitt per år; lagret som sum for tre år)."
+ },
+ "forbehold": [
+  "Foreløpig anslag fra én utforskning (7.10.2026), ikke kontrollert mot skolenes egne forskningsrapporter.",
+  "«Fagfellevurdert» i SwePub settes av lærestedet og er ikke det samme som NVI-godkjent kanal.",
+  "Nevnerne er av ulik kvalitet (UKÄ har bare lærosete × faggruppe); svenske doktorander er ofte på stipend og ikke ansatt.",
+  "Rapportens egne norske sammenligningstall er regnet med en annen nevner og brukes ikke; Norge vises med tallene fra rangeringsdataene.",
+  "AJG 2024 og ABDC 2025 er brukt for alle år. Publiseringspoeng og nivå 2-andel finnes ikke for Sverige."
+ ],
+ "enheter": [
+  {
+   "id": "se_sse",
+   "navn": "Handelshögskolan i Stockholm (SSE)",
+   "kort": "SSE",
+   "alias": [
+    "SSE"
+   ],
+   "by": "Stockholm",
+   "lat": 59.342,
+   "lon": 18.057,
+   "referanse": false,
+   "akkrediteringer": [
+    {
+     "type": "EQUIS",
+     "status": "akkreditert"
+    }
+   ],
+   "forbehold": [
+    "Hele institusjonen (som NHH og BI). Ikke AACSB-akkreditert.",
+    "Nevner med doktorander: UKÄ forskande och undervisande 137,1 + doktorander 121,3 (snitt 2023–2025); de fleste doktorandene er på stipend og ikke ansatt."
+   ],
+   "perioder": [
+    {
+     "fra": 2023,
+     "til": 2025,
+     "artikler": 654,
+     "ajg4": 123,
+     "ajg3": 317.1,
+     "ftUtd": 72,
+     "abdcAs": 174,
+     "abdc": 350.1,
+     "ajgDekning": 65,
+     "ajg4Per100": 15.9,
+     "ajg4Per100UtenStip": 29.9,
+     "arsverkUtenStip": 411.3,
+     "arsverk": 775.2,
+     "anslag": true,
+     "telling": "hel",
+     "kilde": "SwePub (fagfellevurderte tidsskriftartikler, enhet plukket ut på tilknytningstekst), snitt per år × 3; nevner god (UKÄ, hele institusjonen)"
+    }
+   ]
+  },
+  {
+   "id": "se_jibs",
+   "navn": "Jönköping International Business School (JIBS)",
+   "kort": "JIBS",
+   "alias": [
+    "JIBS"
+   ],
+   "by": "Jönköping",
+   "lat": 57.778,
+   "lon": 14.163,
+   "referanse": false,
+   "akkrediteringer": [
+    {
+     "type": "AACSB",
+     "status": "akkreditert"
+    },
+    {
+     "type": "EQUIS",
+     "status": "akkreditert"
+    },
+    {
+     "type": "AMBA",
+     "status": "akkreditert",
+     "aar": 2025
+    }
+   ],
+   "forbehold": [
+    "Nevneren er UKÄ-faggruppen «Ekonomi och näringsliv» for Jönköping University (76 årsverk); skolen oppgir 113 akademisk ansatte, som gir 16,2 i stedet for 24,1. Raten kan være 30–50 % for høy."
+   ],
+   "perioder": [
+    {
+     "fra": 2023,
+     "til": 2025,
+     "artikler": 477,
+     "ajg4": 54.9,
+     "ajg3": 183.9,
+     "ftUtd": 33,
+     "abdcAs": 68.1,
+     "abdc": 212.1,
+     "ajgDekning": 64,
+     "ajg4Per100UtenStip": 24.1,
+     "arsverkUtenStip": 228.3,
+     "anslag": true,
+     "telling": "hel",
+     "kilde": "SwePub (fagfellevurderte tidsskriftartikler, enhet plukket ut på tilknytningstekst), snitt per år × 3; nevner svak (UKÄ-faggruppe)"
+    }
+   ]
+  },
+  {
+   "id": "se_lund",
+   "navn": "Ekonomihögskolan vid Lunds universitet (LUSEM)",
+   "kort": "LUSEM",
+   "alias": [
+    "LUSEM"
+   ],
+   "by": "Lund",
+   "lat": 55.711,
+   "lon": 13.205,
+   "referanse": false,
+   "akkrediteringer": [
+    {
+     "type": "AACSB",
+     "status": "akkreditert"
+    },
+    {
+     "type": "EQUIS",
+     "status": "akkreditert"
+    },
+    {
+     "type": "AMBA",
+     "status": "akkreditert"
+    }
+   ],
+   "forbehold": [
+    "Seks institutter (også økonomisk historie, handelsrett, informatikk og statistikk); kjernen (företagsekonomi + nationalekonomi) har 154 artikler og 17,3 AJG 4/4* per år.",
+    "Lund registrerer ofte forskergrupper og ikke institutter i Pure, så avgrensningen kan bomme.",
+    "Nevneren er LUSEMs årsverk 2025/26 (171,8 + 58,3 doktorander) brukt for hele perioden."
+   ],
+   "perioder": [
+    {
+     "fra": 2023,
+     "til": 2025,
+     "artikler": 888,
+     "ajg4": 68.1,
+     "ajg3": 198,
+     "ftUtd": 20.1,
+     "abdcAs": 95.1,
+     "abdc": 257.1,
+     "ajgDekning": 36,
+     "ajg4Per100": 9.9,
+     "ajg4Per100UtenStip": 13.2,
+     "arsverkUtenStip": 515.4,
+     "arsverk": 690.3,
+     "anslag": true,
+     "telling": "hel",
+     "kilde": "SwePub (fagfellevurderte tidsskriftartikler, enhet plukket ut på tilknytningstekst), snitt per år × 3; nevner god (LUSEM selv, 2025/26)"
+    }
+   ]
+  },
+  {
+   "id": "se_gu",
+   "navn": "Handelshögskolan vid Göteborgs universitet",
+   "kort": "GU",
+   "alias": [
+    "GU HH (med jus)",
+    "GU"
+   ],
+   "by": "Göteborg",
+   "lat": 57.697,
+   "lon": 11.961,
+   "referanse": false,
+   "akkrediteringer": [
+    {
+     "type": "AACSB",
+     "status": "akkreditert"
+    },
+    {
+     "type": "EQUIS",
+     "status": "akkreditert"
+    },
+    {
+     "type": "AMBA",
+     "status": "akkreditert"
+    }
+   ],
+   "forbehold": [
+    "Fakultetet med jus. Uten jus: 236 artikler og 14,0 AJG 4/4* per år, 7,2 per 100 (nevner ca. 194 uten doktorander).",
+    "Nevneren er personer (snitt 2025) fra fakultetets faktaside, ikke årsverk."
+   ],
+   "perioder": [
+    {
+     "fra": 2023,
+     "til": 2025,
+     "artikler": 882,
+     "ajg4": 42,
+     "ajg3": 201.9,
+     "ftUtd": 9,
+     "abdcAs": 90.9,
+     "abdc": 252.9,
+     "ajgDekning": 41,
+     "ajg4Per100": 4.3,
+     "ajg4Per100UtenStip": 5.5,
+     "arsverkUtenStip": 759,
+     "arsverk": 978,
+     "anslag": true,
+     "telling": "hel",
+     "kilde": "SwePub (fagfellevurderte tidsskriftartikler, enhet plukket ut på tilknytningstekst), snitt per år × 3; nevner middels (personer, ikke årsverk)"
+    }
+   ]
+  },
+  {
+   "id": "se_umea",
+   "navn": "Handelshögskolan vid Umeå universitet (USBE)",
+   "kort": "Umeå",
+   "alias": [
+    "USBE"
+   ],
+   "by": "Umeå",
+   "lat": 63.82,
+   "lon": 20.307,
+   "referanse": false,
+   "akkrediteringer": [
+    {
+     "type": "AACSB",
+     "status": "akkreditert"
+    }
+   ],
+   "forbehold": [
+    "Nevneren (UKÄ-faggruppe) tar ikke med statistikk, som er med i telleren."
+   ],
+   "perioder": [
+    {
+     "fra": 2023,
+     "til": 2025,
+     "artikler": 429,
+     "ajg4": 6.9,
+     "ajg3": 93,
+     "ftUtd": 5.1,
+     "abdcAs": 32.1,
+     "abdc": 140.1,
+     "ajgDekning": 42,
+     "ajg4Per100UtenStip": 2.6,
+     "arsverkUtenStip": 264.6,
+     "anslag": true,
+     "telling": "hel",
+     "kilde": "SwePub (fagfellevurderte tidsskriftartikler, enhet plukket ut på tilknytningstekst), snitt per år × 3; nevner svak (UKÄ-faggruppe, statistikk ikke med)"
+    }
+   ]
+  },
+  {
+   "id": "se_orebro",
+   "navn": "Handelshögskolan vid Örebro universitet",
+   "kort": "Örebro",
+   "alias": [
+    "Örebro HH"
+   ],
+   "by": "Örebro",
+   "lat": 59.254,
+   "lon": 15.247,
+   "referanse": false,
+   "akkrediteringer": [
+    {
+     "type": "AACSB",
+     "status": "akkreditert"
+    }
+   ],
+   "forbehold": [
+    "Små tall og svak nevner (UKÄ-faggruppe); raten kan være 30–50 % for høy."
+   ],
+   "perioder": [
+    {
+     "fra": 2023,
+     "til": 2025,
+     "artikler": 339,
+     "ajg4": 12.9,
+     "ajg3": 54,
+     "ftUtd": 3,
+     "abdcAs": 21.9,
+     "abdc": 87.9,
+     "ajgDekning": 38,
+     "ajg4Per100UtenStip": 9.5,
+     "arsverkUtenStip": 137.4,
+     "anslag": true,
+     "telling": "hel",
+     "kilde": "SwePub (fagfellevurderte tidsskriftartikler, enhet plukket ut på tilknytningstekst), snitt per år × 3; nevner svak (UKÄ-faggruppe, små tall)"
+    }
+   ]
+  },
+  {
+   "id": "se_lnu",
+   "navn": "Ekonomihögskolan, Linnéuniversitetet",
+   "kort": "LNU",
+   "alias": [
+    "LNU"
+   ],
+   "by": "Växjö",
+   "lat": 56.855,
+   "lon": 14.828,
+   "referanse": false,
+   "akkrediteringer": [
+    {
+     "type": "AACSB",
+     "status": "akkreditert"
+    }
+   ],
+   "forbehold": [
+    "Instituttene byttet navn i 2023; informatikk og rettsvitenskap er holdt utenfor. Også Kalmar."
+   ],
+   "perioder": [
+    {
+     "fra": 2023,
+     "til": 2025,
+     "artikler": 498,
+     "ajg4": 21.9,
+     "ajg3": 96,
+     "ftUtd": 3,
+     "abdcAs": 48.9,
+     "abdc": 171.9,
+     "ajgDekning": 47,
+     "ajg4Per100UtenStip": 7.7,
+     "arsverkUtenStip": 285.6,
+     "anslag": true,
+     "telling": "hel",
+     "kilde": "SwePub (fagfellevurderte tidsskriftartikler, enhet plukket ut på tilknytningstekst), snitt per år × 3; nevner svak (UKÄ-faggruppe)"
+    }
+   ]
+  },
+  {
+   "id": "se_karlstad",
+   "navn": "Handelshögskolan vid Karlstads universitet",
+   "kort": "Karlstad",
+   "alias": [
+    "Karlstad HH"
+   ],
+   "by": "Karlstad",
+   "lat": 59.405,
+   "lon": 13.581,
+   "referanse": false,
+   "akkrediteringer": [],
+   "forbehold": [
+    "AACSB-medlem, ikke akkreditert. Små tall og svak nevner; raten kan være 30–50 % for høy."
+   ],
+   "perioder": [
+    {
+     "fra": 2023,
+     "til": 2025,
+     "artikler": 222,
+     "ajg4": 12.9,
+     "ajg3": 30.9,
+     "ftUtd": 0,
+     "abdcAs": 9,
+     "abdc": 42.9,
+     "ajgDekning": 30,
+     "ajg4Per100UtenStip": 9.5,
+     "arsverkUtenStip": 136.5,
+     "anslag": true,
+     "telling": "hel",
+     "kilde": "SwePub (fagfellevurderte tidsskriftartikler, enhet plukket ut på tilknytningstekst), snitt per år × 3; nevner svak (UKÄ-faggruppe, små tall)"
+    }
+   ]
+  },
+  {
+   "id": "se_su",
+   "navn": "Stockholms universitet: Stockholm Business School + Nationalekonomiska institutionen og IIES (referanse)",
+   "kort": "SU (ref.)",
+   "alias": [
+    "SU"
+   ],
+   "by": "Stockholm",
+   "lat": 59.365,
+   "lon": 18.058,
+   "referanse": true,
+   "akkrediteringer": [],
+   "forbehold": [
+    "Referanse. Summen av to delmengder (overlapp ikke trukket fra). SU-økonomene ser underregistrert ut i SwePub."
+   ],
+   "perioder": [
+    {
+     "fra": 2023,
+     "til": 2025,
+     "artikler": 213,
+     "ajg4": 39.9,
+     "ajg3": 105.9,
+     "ftUtd": 18.9,
+     "abdcAs": 68.1,
+     "abdc": 117.9,
+     "ajgDekning": 68,
+     "ajg4Per100UtenStip": 10.0,
+     "arsverkUtenStip": 399,
+     "anslag": true,
+     "telling": "hel",
+     "kilde": "SwePub (fagfellevurderte tidsskriftartikler, enhet plukket ut på tilknytningstekst), snitt per år × 3; nevner svak (UKÄ-faggruppe)"
+    }
+   ]
+  },
+  {
+   "id": "se_uu",
+   "navn": "Uppsala universitet: företagsekonomi + nationalekonomi (referanse)",
+   "kort": "Uppsala (ref.)",
+   "alias": [
+    "UU"
+   ],
+   "by": "Uppsala",
+   "lat": 59.858,
+   "lon": 17.618,
+   "referanse": true,
+   "akkrediteringer": [],
+   "forbehold": [
+    "Referanse: ingen handelshøyskole; statistikk holdt utenfor."
+   ],
+   "perioder": [
+    {
+     "fra": 2023,
+     "til": 2025,
+     "artikler": 243,
+     "ajg4": 17.1,
+     "ajg3": 87,
+     "ftUtd": 6,
+     "abdcAs": 39.9,
+     "abdc": 99,
+     "ajgDekning": 53,
+     "ajg4Per100UtenStip": 5.8,
+     "arsverkUtenStip": 293.4,
+     "anslag": true,
+     "telling": "hel",
+     "kilde": "SwePub (fagfellevurderte tidsskriftartikler, enhet plukket ut på tilknytningstekst), snitt per år × 3; nevner svak (UKÄ-faggruppe)"
+    }
+   ]
+  },
+  {
+   "id": "se_liu",
+   "navn": "Linköpings universitet: företagsekonomi + nationalekonomi, IEI (referanse)",
+   "kort": "Linköping (ref.)",
+   "alias": [
+    "LiU"
+   ],
+   "by": "Linköping",
+   "lat": 58.398,
+   "lon": 15.576,
+   "referanse": true,
+   "akkrediteringer": [],
+   "forbehold": [
+    "Referanse og svak kandidat: uten industriell økonomi og logistikk (NTNU IØT er nærmere)."
+   ],
+   "perioder": [
+    {
+     "fra": 2023,
+     "til": 2025,
+     "artikler": 255,
+     "ajg4": 6.9,
+     "ajg3": 72,
+     "ftUtd": 0,
+     "abdcAs": 24,
+     "abdc": 99.9,
+     "ajgDekning": 57,
+     "ajg4Per100UtenStip": 4.1,
+     "arsverkUtenStip": 169.8,
+     "anslag": true,
+     "telling": "hel",
+     "kilde": "SwePub (fagfellevurderte tidsskriftartikler, enhet plukket ut på tilknytningstekst), snitt per år × 3; nevner svak (UKÄ-faggruppe)"
+    }
+   ]
+  }
+ ]
+}

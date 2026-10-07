@@ -1,7 +1,8 @@
 import { Fragment, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import '../../styles/skoleportrett.css';
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
-import { Lock, Info, Trophy, BookOpen, Building2, FileText, RotateCcw, ShieldCheck, ExternalLink, Columns3, FlaskConical, Link2, Check, Newspaper, ClipboardList, Layers, Download } from 'lucide-react';
+import { Lock, Info, Trophy, BookOpen, Building2, FileText, RotateCcw, ShieldCheck, ExternalLink, Columns3, FlaskConical, Link2, Check, Newspaper, ClipboardList, Layers, Download, MapPin } from 'lucide-react';
+import { NordenKart, KART_MAAL_IDER, KART_VIS_IDER, type KartValg, type KartEnhet, type KartMaal, type KartVis } from './rangering/NordenKart';
 
 /**
  * Utkast til «Norwegian Business School Ranking» (intern, utforskende). Data fra scripts/build-rangering.py:
@@ -31,7 +32,12 @@ interface Skole {
 }
 interface AjgNhhMeta { kilde: string; url: string; liste: string; nevner: string; usikker: Record<string, number[]>; sider: Record<string, number>; }
 interface Kontroll { skole: string; enhet?: string | null; enhetNavn?: string | null; aar: number | null; maal: string; verdi: number | string | null; nevner?: string | null; kilde?: string | null; url?: string | null; side?: number | string | null; merknad?: string | null; vaar?: number | null; vaarAlt?: number | null; vaarNivaa?: string; avvikProsent?: number | null; traff?: 'hoved' | 'alt'; }
-interface Data { versjon: number; generert: string; aar: [number, number]; lister: Record<'ajg' | 'abdc' | 'ft50' | 'utd24', boolean> & { ajgA?: boolean; /** AJG fylt inn for hånd: tidsskrift uten oppslag er «usjekket», ikke «ikke på AJG» */ ajgDelvis?: boolean }; skoler: Skole[]; kontroll?: Kontroll[]; ajgNhh?: AjgNhhMeta | null; }
+/** Foreløpige tall for nordiske enheter utenfor Norge (data/rangering/norden/*.json), bare til fanen «Kart» */
+interface NordenPeriode { fra: number; til: number; anslag?: boolean; telling?: string; kilde?: string; merknad?: string; beregnet?: string[]; [k: string]: unknown }
+interface NordenEnhet { id: string; navn: string; kort: string; by: string; lat: number; lon: number; referanse?: boolean; akkrediteringer?: { type: string; status?: string; aar?: number }[] | null; forbehold?: string[]; perioder: NordenPeriode[]; enhetskontroll?: Record<string, number> | null; }
+interface NordenLand { land: 'DK' | 'SE' | 'FI'; landNavn: string; status: string; rapport?: string; lest?: string | null; metode: Record<string, string | null>; forbehold: string[]; enheter: NordenEnhet[]; }
+interface Norden { merknad: string; steder: Record<string, { by: string; lat: number; lon: number; merknad?: string }>; land: NordenLand[]; }
+interface Data { versjon: number; generert: string; aar: [number, number]; norden?: Norden | null; lister: Record<'ajg' | 'abdc' | 'ft50' | 'utd24', boolean> & { ajgA?: boolean; /** AJG fylt inn for hånd: tidsskrift uten oppslag er «usjekket», ikke «ikke på AJG» */ ajgDelvis?: boolean }; skoler: Skole[]; kontroll?: Kontroll[]; ajgNhh?: AjgNhhMeta | null; }
 
 /** Eget nettsted med bare rangeringen (VITE_KUN_RANGERING=1) har egen datafil og eget passord (RANGERING_PASSORD). */
 const KUN_RANGERING = import.meta.env.VITE_KUN_RANGERING === '1';
@@ -242,15 +248,15 @@ function beregn(skoler: Skole[], ind: Ind[], vekt: Record<string, number>, forsk
 }
 
 // ── Tilstand i lenken (?rangering&…) ────────────────────────────────────────
-type Fane = 'forside' | 'rangering' | 'sammenlign' | 'lab' | 'publisering' | 'rapport' | 'ajg' | 'profil' | 'kontroll' | 'metode';
-const FANER: Fane[] = ['forside', 'rangering', 'sammenlign', 'lab', 'publisering', 'rapport', 'ajg', 'profil', 'kontroll', 'metode'];
-interface Tilstand { fane: Fane; forsk: number; vekt: Record<string, number>; medRef: boolean; lag: Lag; valgt: string[]; profil: string; /** sammenligning i skoleportrettet */ mot: string | null; /** fanen AJG-sammenligning */ ajg: AjgValg; }
+type Fane = 'forside' | 'rangering' | 'sammenlign' | 'lab' | 'publisering' | 'rapport' | 'ajg' | 'kart' | 'profil' | 'kontroll' | 'metode';
+const FANER: Fane[] = ['forside', 'rangering', 'sammenlign', 'lab', 'publisering', 'rapport', 'ajg', 'kart', 'profil', 'kontroll', 'metode'];
+interface Tilstand { fane: Fane; forsk: number; vekt: Record<string, number>; medRef: boolean; lag: Lag; valgt: string[]; profil: string; /** sammenligning i skoleportrettet */ mot: string | null; /** fanen AJG-sammenligning */ ajg: AjgValg; /** fanen Kart */ kart: KartValg; }
 const PARAM = ['rangering', 'fane', 'forsk', 'vekt', 'ref', 'periode', 'telling', 'nevner', 'lagvekt', 'lister', 'grunnlag', 'skoler', 'profil', 'mot',
-  'ajgperiode', 'ajgtelling', 'ajgnevner', 'ajgvis', 'ajgsort', 'ajgref', 'ajgskoler'];
+  'ajgperiode', 'ajgtelling', 'ajgnevner', 'ajgvis', 'ajgsort', 'ajgref', 'ajgskoler', 'kartmaal', 'kartperiode', 'kartnevner', 'kartanslag', 'kartref', 'kartvis', 'kartvalgt'];
 function lesTilstand(d: Data, ind: Ind[], std: Tilstand): Tilstand {
   const q = new URLSearchParams(window.location.search);
   if (!q.has('rangering')) return std;
-  const t: Tilstand = { ...std, vekt: { ...std.vekt }, lag: { ...std.lag, vekter: { ...std.lag.vekter } }, ajg: { ...std.ajg, skoler: [...std.ajg.skoler] } };
+  const t: Tilstand = { ...std, vekt: { ...std.vekt }, lag: { ...std.lag, vekter: { ...std.lag.vekter } }, ajg: { ...std.ajg, skoler: [...std.ajg.skoler] }, kart: { ...std.kart } };
   const fane = q.get('fane') as Fane | null; if (fane && FANER.includes(fane)) t.fane = fane;
   const f = Number(q.get('forsk')); if (FORSK_TRINN.includes(f)) t.forsk = f;
   for (const del of (q.get('vekt') ?? '').split(',')) { const [id, v] = del.split(':'); if (ind.some((i) => i.id === id) && Number.isFinite(Number(v))) t.vekt[id] = Math.max(0, Math.min(40, Number(v))); }
@@ -274,6 +280,15 @@ function lesTilstand(d: Data, ind: Ind[], std: Tilstand): Tilstand {
   const as = q.get('ajgsort') as AjgSort | null; if (as && AJG_SORT.includes(as)) t.ajg.sort = as;
   if (q.get('ajgref') === '1') t.ajg.ref = true;
   if (q.has('ajgskoler')) t.ajg.skoler = (q.get('ajgskoler') ?? '').split(',').map((id) => d.skoler.some((s) => s.id === id) ? id : '').slice(0, AJG_MAKS_SKOLER);
+  // Kart: mål, periode for Norge (treårsvindu eller ett år), anslag av/på, referanser, utsnitt og valgt enhet
+  const km = q.get('kartmaal') as KartMaal | null; if (km && KART_MAAL_IDER.includes(km)) t.kart.maal = km;
+  const kp = (q.get('kartperiode') ?? '').split('-').map(Number);
+  if (q.has('kartperiode') && kp.length <= 2 && kp.every((x) => x >= d.aar[0] && x <= d.aar[1]) && kp[0] <= kp[kp.length - 1]) { t.kart.fra = kp[0]; t.kart.til = kp[kp.length - 1]; }
+  if (q.get('kartnevner') === 'utenstip') t.kart.nevner = 'utenStip';
+  if (q.get('kartanslag') === '0') t.kart.anslag = false;
+  if (q.get('kartref') === '1') t.kart.ref = true;
+  const kv = q.get('kartvis') as KartVis | null; if (kv && KART_VIS_IDER.includes(kv)) t.kart.vis = kv;
+  const kvalgt = q.get('kartvalgt'); if (kvalgt && /^[a-z0-9_]+$/.test(kvalgt)) t.kart.valgt = kvalgt;
   return t;
 }
 function skrivTilstand(t: Tilstand, std: Tilstand) {
@@ -302,6 +317,14 @@ function skrivTilstand(t: Tilstand, std: Tilstand) {
   if (a.sort !== sa.sort) q.set('ajgsort', a.sort);
   if (a.ref) q.set('ajgref', '1');
   if (a.skoler.join(',') !== sa.skoler.join(',')) q.set('ajgskoler', a.skoler.join(','));
+  const k = t.kart, sk = std.kart;
+  if (k.maal !== sk.maal) q.set('kartmaal', k.maal);
+  if (k.fra !== sk.fra || k.til !== sk.til) q.set('kartperiode', k.fra === k.til ? String(k.fra) : `${k.fra}-${k.til}`);
+  if (k.nevner === 'utenStip') q.set('kartnevner', 'utenstip');
+  if (!k.anslag) q.set('kartanslag', '0');
+  if (k.ref) q.set('kartref', '1');
+  if (k.vis !== sk.vis) q.set('kartvis', k.vis);
+  if (k.valgt && t.fane === 'kart') q.set('kartvalgt', k.valgt);
   const s = q.toString().replace(/%2C/gi, ',').replace(/%3A/gi, ':').replace(/^rangering=(&|$)/, 'rangering$1').replace(/&rangering=(&|$)/, '&rangering$1');
   window.history.replaceState(window.history.state, '', `${window.location.pathname}?${s}${window.location.hash}`);
 }
@@ -361,7 +384,7 @@ function Rangering({ data }: { data: Data }) {
     const hh = data.skoler.find((s) => s.isNmbu)?.id ?? data.skoler[0].id;
     return { fane: 'forside', forsk: FORSK_STANDARD, vekt: Object.fromEntries(ind0.map((i) => [i.id, i.vekt])), medRef: false, lag,
       valgt: [hh, ...['nhh', 'bi'].filter((id) => id !== hh && data.skoler.some((s) => s.id === id))].slice(0, 3), profil: hh, mot: null,
-      ajg: ajgStandard(data, y1, hh) };
+      ajg: ajgStandard(data, y1, hh), kart: { maal: 'p4', fra: y1 - 2, til: y1, anslag: true, ref: false, vis: 'norden', valgt: null, nevner: 'uff' } };
   }, [data, y1]);
   const [t, setT] = useState<Tilstand>(() => lesTilstand(data, lagIndikatorer(data, std.lag), std));
   const sett = (p: Partial<Tilstand>) => setT((x) => ({ ...x, ...p }));
@@ -385,6 +408,7 @@ function Rangering({ data }: { data: Data }) {
     { id: 'publisering', label: 'Publisering', icon: <BookOpen className="w-4 h-4" /> },
     { id: 'rapport', label: 'Slik rapporterer skolene', icon: <ClipboardList className="w-4 h-4" /> },
     ...(harAjg ? [{ id: 'ajg' as Fane, label: 'AJG-sammenligning', icon: <Layers className="w-4 h-4" /> }] : []),
+    { id: 'kart', label: 'Kart', icon: <MapPin className="w-4 h-4" /> },
     { id: 'profil', label: 'Skoleportrett', icon: <Building2 className="w-4 h-4" /> },
     { id: 'kontroll', label: 'Kvalitetssikring', icon: <ShieldCheck className="w-4 h-4" /> },
     { id: 'metode', label: 'Metode og kilder', icon: <FileText className="w-4 h-4" /> },
@@ -417,6 +441,9 @@ function Rangering({ data }: { data: Data }) {
       {t.fane === 'publisering' && <Publisering data={data} />}
       {t.fane === 'rapport' && <SlikRapporterer data={data} lag={t.lag} />}
       {t.fane === 'ajg' && harAjg && <AjgSammenligning data={data} v={t.ajg} std={std.ajg} sett={(ajg) => sett({ ajg })} />}
+      {t.fane === 'kart' && <KartFane data={data} rader={rader} v={t.kart} std={std.kart} sett={(kart) => sett({ kart })}
+        apneProfil={(id) => sett({ fane: 'profil', profil: id })}
+        apneAjg={(id) => sett({ fane: 'ajg', ajg: t.ajg.skoler.includes(id) || t.ajg.skoler.filter(Boolean).length >= AJG_MAKS_SKOLER ? t.ajg : { ...t.ajg, skoler: [...t.ajg.skoler.filter(Boolean), id] } })} />}
       {t.fane === 'profil' && <Skoleportrett data={data} rader={rader} ind={ind} eff={eff} id={t.profil} setId={(id) => sett({ profil: id, mot: t.mot === id ? null : t.mot })} mot={t.mot} setMot={(id) => sett({ mot: id })} />}
       {t.fane === 'kontroll' && <KontrollFane data={data} />}
       {t.fane === 'metode' && <Metode data={data} ind={ind} />}
@@ -2269,6 +2296,80 @@ function AjgSammenligning({ data, v, std, sett }: { data: Data; v: AjgValg; std:
 }
 
 // ── Fane 5: metode ───────────────────────────────────────────────────────────
+// ── Kart (07.10.2026): norske tall fra rangeringsdataene + foreløpige nordiske anslag ─────────────────────────
+const NORDEN_EKSTRA: [string, string, 'n' | 'p' | 'pst'][] = [
+  ['artiklerPer100', 'Artikler per 100 årsverk og år (med stipendiater/doktorander)', 'p'], ['ajg4s', 'AJG 4* (antall)', 'n'], ['ajg4sPer100', 'AJG 4* per 100 årsverk og år', 'p'],
+  ['ajg4Per100UtenStip', 'AJG 4/4* per 100 årsverk uten doktorander/stipendiater', 'p'], ['ajgDekning', 'Andel i AJG-tidsskrift', 'pst'],
+  ['niva2', 'Nivå 2 (antall)', 'n'], ['niva2Per100', 'Nivå 2 per 100 årsverk og år', 'p'], ['abdcAs', 'ABDC A* (antall)', 'n'], ['abdcAsPer100', 'ABDC A* per 100 årsverk og år', 'p'],
+  ['abdc', 'ABDC A*/A (antall)', 'n'], ['abdcPer100', 'ABDC A*/A per 100 årsverk og år', 'p'], ['ft50', 'FT50 (antall)', 'n'], ['ft50Per100', 'FT50 per 100 årsverk og år', 'p'],
+  ['ftUtd', 'FT50 ∪ UTD24 (antall)', 'n'], ['ftUtdPer100', 'FT50 ∪ UTD24 per 100 årsverk og år', 'p'],
+];
+function velgPeriode(ps: NordenPeriode[], fra: number, til: number): NordenPeriode {
+  const eksakt = ps.find((p) => p.fra === fra && p.til === til);
+  if (eksakt) return eksakt;
+  const overlapp = (p: NordenPeriode) => Math.max(0, Math.min(til, p.til) - Math.max(fra, p.fra) + 1);
+  return [...ps].sort((a, b) => (overlapp(b) - overlapp(a)) || (b.til - a.til) || ((b.til - b.fra) - (a.til - a.fra)))[0];
+}
+interface KartFaneProps { data: Data; rader: Rad[]; v: KartValg; std: KartValg; sett: (v: KartValg) => void; apneProfil: (id: string) => void; apneAjg: (id: string) => void; }
+function KartFane({ data, rader, v, std, sett, apneProfil, apneAjg }: KartFaneProps) {
+  const harAjg = data.lister.ajg;
+  const enheter = useMemo<KartEnhet[]>(() => {
+    const ut: KartEnhet[] = [];
+    const aar = aarRekke(v.fra, v.til);
+    const steder = data.norden?.steder ?? {};
+    const plassAv = rader.filter((r) => r.plass != null).length;
+    for (const s of data.skoler) {
+      const st = steder[s.id]; if (!st) continue;
+      const t = ajgTall(s, aar, false, v.nevner); const m = ajgMaal(t, true);
+      const pp = aar.map((y) => s.dbh[y]).filter((d): d is DbhAar => d?.publPoeng != null && !!ajgNevnerVerdi(d, v.nevner));
+      const r = rader.find((x) => x.s.id === s.id);
+      ut.push({
+        id: s.id, navn: s.navn, kort: s.kort, land: 'NO', landNavn: 'Norge', by: st.by, lat: st.lat, lon: st.lon, referanse: s.referanse, meg: s.isNmbu, anslag: false,
+        fra: v.fra, til: v.til, annenPeriode: false, artikler: t.nvi,
+        n4: harAjg ? t.per['4*'] + t.per['4'] : null, n3: harAjg ? t.per['4*'] + t.per['4'] + t.per['3'] : null, p4: harAjg ? m.p4 : null, p3: harAjg ? m.p3 : null,
+        arsverk: t.arsv != null ? t.arsv / aar.length : null,
+        poeng: pp.length ? pp.reduce((a, d) => a + (d.publPoeng ?? 0), 0) / pp.reduce((a, d) => a + (ajgNevnerVerdi(d, v.nevner) ?? 0), 0) : null,
+        plass: r?.plass ?? null, plassAv,
+        avgrensning: 'enheten slik den er avgrenset i rangeringen (NVA-enheter og DBH-avdelinger, se Metode og kilder).',
+        nevner: v.nevner === 'uff' ? 'faglige årsverk UN1 + UN2 (DBH 225, som HK-dir).' : 'faglige årsverk UN1 + postdoktorer, uten stipendiater (DBH 225, som NHH).',
+        kilde: 'NVA (NVI-rapporterte artikler) koblet mot AJG 2024 på ISSN; DBH 225 og 373. Samme beregning som fanen AJG-sammenligning.',
+        forbehold: [s.enhetNotat ? `Usikkerhet i enhetsbeskrivelsen: ${s.enhetNotat}` : null, st.merknad ? `Kartpunkt: ${st.merknad}` : null].filter((x): x is string => !!x), akk: akkNavn(s), ekstra: [],
+      });
+    }
+    for (const l of data.norden?.land ?? []) for (const e of l.enheter) {
+      if (!e.perioder?.length) continue;
+      const p = velgPeriode(e.perioder, v.fra, v.til);
+      const num = (k: string) => typeof p[k] === 'number' ? p[k] as number : null;
+      const ar = p.til - p.fra + 1;
+      const ekstra: [string, string][] = NORDEN_EKSTRA.filter(([k]) => num(k) != null && !(v.nevner === 'utenStip' && k === 'ajg4Per100UtenStip')).map(([k, lab, typ]) => [
+        k.startsWith('niva2') && l.metode.niva2Navn ? lab.replace('Nivå 2', l.metode.niva2Navn) : lab,
+        typ === 'pst' ? `${nf(num(k), 0)} %` : typ === 'n' ? nf(num(k), 0) : nf(num(k), k.startsWith('ft') ? 2 : 1)]);
+      const ek = e.enhetskontroll;
+      if (ek && ek.artikler != null) ekstra.push([`Kontroll med enhetsavgrensning ${ek.fra}–${ek.til}`, `${nf(ek.artikler, 0)} artikler, ${nf(ek.ajg4, 0)} AJG 4/4*, ${nf(ek.ajg3, 0)} AJG 3+`]);
+      const hale = v.nevner === 'uff' ? '' : 'UtenStip';
+      const BER: Record<string, string> = { ajg3Per100: 'AJG 3+ per 100', ajg4Per100: 'AJG 4/4* per 100', artiklerPer100: 'artikler per 100', ajg4sPer100: 'AJG 4* per 100', ajg3Per100UtenStip: 'AJG 3+ per 100 uten stipendiater', ajg4Per100UtenStip: 'AJG 4/4* per 100 uten stipendiater' };
+      const ber = (p.beregnet ?? []).filter((k) => k === 'artiklerPer100' || k === 'ajg4sPer100' || k.endsWith('Per100' + hale));
+      const beregnet = ber.length ? [`Regnet av oss fra rapportens antall og nevner: ${ber.map((k) => BER[k] ?? k).join(', ')}.`] : [];
+      const arsv = num(v.nevner === 'uff' ? 'arsverk' : 'arsverkUtenStip');
+      ut.push({
+        id: e.id, navn: e.navn, kort: e.kort, land: l.land, landNavn: l.landNavn, by: e.by, lat: e.lat, lon: e.lon, referanse: !!e.referanse, meg: false, anslag: p.anslag !== false,
+        fra: p.fra, til: p.til, annenPeriode: p.fra !== v.fra || p.til !== v.til, artikler: num('artikler'),
+        n4: num('ajg4'), n3: num('ajg3'), p4: num('ajg4Per100' + hale), p3: num('ajg3Per100' + hale), arsverk: arsv != null ? arsv / ar : null,
+        poeng: null, plass: null, plassAv: null,
+        avgrensning: `${l.metode.avgrensningKort ? l.metode.avgrensningKort + '. ' : ''}${l.metode.avgrensning ?? ''}`,
+        nevner: num('ajg4Per100' + hale) != null ? `${v.nevner === 'uff' ? 'med' : 'uten'} stipendiater/doktorander. ${l.metode.nevner ?? ''}` : `ingen nevner ${v.nevner === 'uff' ? 'med' : 'uten'} doktorander for enheten, så bare antall vises${v.nevner === 'uff' && num('ajg4Per100UtenStip') != null ? ' (velg «uten» under «Per 100»)' : ''}. ${l.metode.nevner ?? ''}`,
+        kilde: `${p.kilde ? p.kilde + '. ' : ''}Utforskningsrapport ${l.lest ?? ''} (${l.rapport ?? ''}). ${l.metode.telling ?? ''}`.trim(),
+        forbehold: [...(e.forbehold ?? []), ...beregnet, ...l.forbehold],
+        akk: (e.akkrediteringer ?? []).filter((a) => !/ikke/i.test(a.status ?? '')).map((a) => a.type + (a.aar ? ` (${a.aar})` : '')), ekstra,
+      });
+    }
+    return ut;
+  }, [data, rader, v.fra, v.til, v.nevner, harAjg]);
+  const uten = (data.norden?.land ?? []).map((l) => ({ land: l.landNavn, n: l.enheter.filter((e) => !e.perioder?.length).length, status: l.status })).filter((x) => x.n > 0);
+  if (!data.norden) return <div className="skp"><p>Kartdataene mangler i rangeringsfila. Bygg på nytt med scripts/build-rangering.py.</p></div>;
+  return <NordenKart enheter={enheter} uten={uten} v={v} std={std} sett={sett} aar={data.aar} apneProfil={apneProfil} apneAjg={apneAjg} harAjg={harAjg} />;
+}
+
 function Metode({ data, ind }: { data: Data; ind: Ind[] }) {
   return (
     <div className="rounded-2xl p-6 text-sm space-y-4" style={{ ...kort, color: 'var(--nmbu-neutral-1)', lineHeight: 1.6 }}>

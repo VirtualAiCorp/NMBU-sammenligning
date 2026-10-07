@@ -260,3 +260,64 @@
   .skp .ajg-verktoy{justify-content:flex-start;margin-top:0}
   .skp table.ajg-hm td:first-child{white-space:normal;min-width:8.5em;max-width:9.5em;font-size:.74rem;line-height:1.2}
 }
+
+/* Kart (07.10.2026): nordisk kart med innebygd SVG (Natural Earth). Fargeskalaen er én blå tone i fem klasser
+   (ordinal, validert mot flaten i lys og mørk modus: lyseste klasse ≥ 2:1 mot bakgrunnen); anslag får skravur og stiplet kant. */
+.skp.kart{
+  --c0:#86b6ef; --c1:#3987e5; --c2:#256abf; --c3:#184f95; --c4:#0d366b;
+  --hav:#F7F9FC; --land:#E3E9F2; --nabo:#EEF1F5; --grense:#A6B8D8; --nabogrense:#D8E2F2; --ring:#232528;
+}
+:root[data-theme="dark"] .skp.kart{
+  --c0:#184f95; --c1:#256abf; --c2:#3987e5; --c3:#86b6ef; --c4:#cde2fb;
+  --hav:#08111E; --land:#1A2B48; --nabo:#111D31; --grense:#5B729B; --nabogrense:#24324F; --ring:#F2F2F2;
+}
+.skp .kart-vis{margin-top:4px}
+.skp .kart-hoved{gap:10px}
+.skp .kart-flate{position:relative;width:100%;min-width:0;border:1px solid var(--line);overflow:hidden}
+.skp .kart-flate svg{display:block;touch-action:manipulation}
+.skp .kart-hav{fill:var(--hav)}
+.skp .kart-land.fokus{fill:var(--land);stroke:var(--grense);stroke-width:.8;stroke-linejoin:round}
+.skp .kart-land.nabo{fill:var(--nabo);stroke:var(--nabogrense);stroke-width:.6;stroke-linejoin:round}
+.skp .kart-landnavn{fill:var(--muted);font:500 11px var(--sans);letter-spacing:.14em;text-transform:uppercase;pointer-events:none;opacity:.8}
+.skp .kart-leder line{stroke:var(--muted);stroke-width:1;opacity:.7}
+.skp .kart-leder circle{fill:var(--muted)}
+.skp .kart-enhet{cursor:pointer;outline:none}
+.skp .kart-treff{fill:transparent}
+.skp .kart-sirkel{stroke:var(--ring);stroke-width:1;stroke-opacity:.55}
+.skp .kart-sirkel.c0{fill:var(--c0)}.skp .kart-sirkel.c1{fill:var(--c1)}.skp .kart-sirkel.c2{fill:var(--c2)}.skp .kart-sirkel.c3{fill:var(--c3)}.skp .kart-sirkel.c4{fill:var(--c4)}
+.skp .kart-sirkel.tom{fill:var(--bg);fill-opacity:.85;stroke:var(--muted);stroke-dasharray:2 2;stroke-opacity:1}
+.skp .kart-enhet.anslag .kart-sirkel,.skp .kart-sirkel.anslag{stroke-dasharray:3 2;stroke-opacity:1;stroke-width:1.3}
+.skp .kart-skr{stroke:var(--bg);stroke-width:1.4;opacity:.75}
+.skp .kart-skr-flate{pointer-events:none}
+.skp .kart-enhet.meg .kart-sirkel{stroke:var(--ink);stroke-width:2.4;stroke-opacity:1}
+.skp .kart-enhet:hover .kart-sirkel,.skp .kart-enhet:focus-visible .kart-sirkel{stroke:var(--ink);stroke-width:2.4;stroke-opacity:1}
+.skp .kart-enhet.valgt .kart-sirkel{stroke:var(--cmp);stroke-width:3;stroke-opacity:1;stroke-dasharray:none}
+.skp .kart-etikett{fill:var(--ink);font:600 11px var(--sans);paint-order:stroke;stroke:var(--hav);stroke-width:3px;stroke-linejoin:round;pointer-events:none}
+.skp .kart-tip{position:absolute;width:230px;background:var(--bg);border:1px solid var(--line2);box-shadow:0 2px 8px rgba(0,0,0,.14);padding:8px 10px;font-size:.78rem;pointer-events:none;display:grid;gap:3px;z-index:2}
+.skp .kart-tip div{display:flex;gap:8px}
+.skp .kart-tip div b{margin-left:auto}
+.skp .kart-leg{display:flex;flex-wrap:wrap;gap:14px 28px;align-items:flex-start}
+.skp .kart-leg>div{display:flex;flex-direction:column;gap:6px;min-width:0}
+.skp .kart-skala{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:.8rem;color:var(--muted)}
+.skp .kart-skala span{display:inline-flex;align-items:center;gap:5px}
+.skp .kart-skala i{display:inline-block;width:14px;height:14px;border-radius:50%;border:1px solid var(--line2)}
+.skp .kart-skala i.c0{background:var(--c0)}.skp .kart-skala i.c1{background:var(--c1)}.skp .kart-skala i.c2{background:var(--c2)}.skp .kart-skala i.c3{background:var(--c3)}.skp .kart-skala i.c4{background:var(--c4)}
+.skp .kart-skala i.tom{background:var(--bg);border:1px dashed var(--muted)}
+.skp .kart-str circle{fill:none;stroke:var(--muted);stroke-width:1}
+.skp .kart-str line{stroke:var(--line2);stroke-width:1}
+.skp .kart-str text{fill:var(--muted);font:11px var(--sans)}
+.skp .kart-detalj{border-top:3px solid var(--cmp);padding-top:12px}
+.skp .kart-forb{margin:0;padding-left:1.1em;font-size:.82rem;color:var(--muted);display:grid;gap:3px}
+.skp .kart-tab td{vertical-align:middle}
+.skp .kart-tab tbody tr{cursor:pointer}
+.skp .kart-tab tbody tr:hover td{background:var(--flate)}
+.skp .kart-tab tr.anslag td:not(:first-child){font-style:italic}
+.skp .kart-tab tr.valgt td{background:var(--flate)}
+.skp .kart-tab tr.valgt td:first-child{box-shadow:inset 3px 0 0 var(--cmp)}
+.skp .kart-tab .kart-navn{background:none;border:0;padding:0;font:inherit;font-weight:600;color:var(--ink);cursor:pointer;text-align:left}
+.skp .kart-tab small{display:block;font-size:.72rem;color:var(--muted);line-height:1.2}
+@media(max-width:640px){
+  .skp .kart-tab th,.skp .kart-tab td{padding:6px 6px}
+  .skp .kart-tab td:first-child,.skp .kart-tab th:first-child{position:sticky;left:0;background:var(--bg);z-index:1;min-width:7.5em}
+  .skp .kart-tip{width:200px}
+}

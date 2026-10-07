@@ -1,0 +1,564 @@
+{
+ "land": "FI",
+ "landNavn": "Finland",
+ "status": "foreløpig",
+ "rapport": "data/rangering/inspirasjon/norden-finland.md",
+ "lest": "2026-10-07",
+ "metode": {
+  "avgrensningKort": "fagfeltavgrenset (511 + 512)",
+  "niva2Navn": "JUFO 2–3",
+  "avgrensning": "Fagfelt: artikler (A1 + A2) som universitetet har klassifisert i 511 samfunnsøkonomi eller 512 bedriftsøkonomi (Vipunen), ikke organisasjonsenhet som i Norge.",
+  "telling": "Hel telling per universitet.",
+  "nevner": "Årsverk i fagfelt 511 + 512, karrieretrinn I–IV (Vipunen henkilosto), nærmest HK-dirs UN1 + UN2.",
+  "lister": "Koblet på ISSN (via JUFO-ID) mot ABDC 2025, FT50 (2026), UTD24 og AJG 2024 (lokal fil). Bare aggregerte tall.",
+  "periode": "2023–2025, per 100 årsverk = sum artikler / sum årsverk × 100."
+ },
+ "forbehold": [
+  "Foreløpig anslag fra én utforskning (7.10.2026), ikke kontrollert mot skolenes egne tall.",
+  "Fagfeltavgrenset: en handelshøyskoleforsker som publiserer i informatikk eller miljøfag faller ut, mens økonomer på andre fakulteter kommer med.",
+  "Finske doktorander er ofte stipendfinansiert og ikke ansatt, så trinn I er trolig mindre dekket enn norske stipendiater; tall per årsverk blir noe høyere.",
+  "Publiseringspoeng og nivå 2-andel finnes ikke for Finland (JUFO har andre kvoter og vekter)."
+ ],
+ "enheter": [
+  {
+   "id": "fi_aalto",
+   "navn": "Aalto University School of Business (BIZ)",
+   "kort": "Aalto",
+   "alias": [
+    "Aalto"
+   ],
+   "by": "Espoo",
+   "lat": 60.186,
+   "lon": 24.826,
+   "referanse": false,
+   "akkrediteringer": [
+    {
+     "type": "AACSB",
+     "status": "akkreditert"
+    },
+    {
+     "type": "EQUIS",
+     "status": "akkreditert",
+     "aar": 1998
+    },
+    {
+     "type": "AMBA",
+     "status": "akkreditert"
+    }
+   ],
+   "forbehold": [
+    "Industriell økonomi (IEM) i ingeniørskolen kan være med i telleren der fagfeltet er satt til 512."
+   ],
+   "perioder": [
+    {
+     "fra": 2023,
+     "til": 2025,
+     "artikler": 547,
+     "arsverk": 871,
+     "artiklerPer100": 62.8,
+     "niva2Per100": 37.2,
+     "abdcPer100": 36.6,
+     "ftUtdPer100": 8.04,
+     "ajg3Per100": 31.8,
+     "ajg4Per100": 16.6,
+     "ajg4Per100UtenStip": 24.7,
+     "ajgDekning": 73,
+     "anslag": true,
+     "telling": "hel"
+    }
+   ],
+   "enhetskontroll": {
+    "fra": 2023,
+    "til": 2025,
+    "artikler": 480,
+    "ajg4": 137,
+    "ajg3": 264,
+    "ftUtd": 62,
+    "abdc": 305,
+    "niva2": 306
+   }
+  },
+  {
+   "id": "fi_hanken",
+   "navn": "Hanken School of Economics",
+   "kort": "Hanken",
+   "alias": [
+    "Hanken"
+   ],
+   "by": "Helsingfors",
+   "lat": 60.172,
+   "lon": 24.927,
+   "referanse": false,
+   "akkrediteringer": [
+    {
+     "type": "AACSB",
+     "status": "akkreditert"
+    },
+    {
+     "type": "EQUIS",
+     "status": "akkreditert"
+    },
+    {
+     "type": "AMBA",
+     "status": "akkreditert"
+    }
+   ],
+   "forbehold": [
+    "Egen høyskole (som NHH); også campus i Vasa."
+   ],
+   "perioder": [
+    {
+     "fra": 2023,
+     "til": 2025,
+     "artikler": 365,
+     "arsverk": 482,
+     "artiklerPer100": 75.7,
+     "niva2Per100": 43.7,
+     "abdcPer100": 52.9,
+     "ftUtdPer100": 4.98,
+     "ajg3Per100": 44.4,
+     "ajg4Per100": 11.4,
+     "ajg4Per100UtenStip": 15.1,
+     "ajgDekning": 87,
+     "anslag": true,
+     "telling": "hel"
+    }
+   ],
+   "enhetskontroll": {
+    "fra": 2023,
+    "til": 2025,
+    "artikler": 439,
+    "ajg4": 58,
+    "ajg3": 220,
+    "ftUtd": 24,
+    "abdc": 271,
+    "niva2": 256
+   }
+  },
+  {
+   "id": "fi_vaasa",
+   "navn": "Vasa universitet, handelsfagene",
+   "kort": "Vaasa",
+   "alias": [
+    "Vaasa"
+   ],
+   "by": "Vasa",
+   "lat": 63.104,
+   "lon": 21.593,
+   "referanse": false,
+   "akkrediteringer": [
+    {
+     "type": "AACSB",
+     "status": "akkreditert"
+    },
+    {
+     "type": "EQUIS",
+     "status": "akkreditert",
+     "aar": 2026
+    }
+   ],
+   "forbehold": [
+    "Årsverkene for 2022 har et rapporteringsbrudd (77 mot 143 i 2021); periode 2023–2025 berøres ikke."
+   ],
+   "perioder": [
+    {
+     "fra": 2023,
+     "til": 2025,
+     "artikler": 526,
+     "arsverk": 500,
+     "artiklerPer100": 105.3,
+     "niva2Per100": 49.2,
+     "abdcPer100": 61,
+     "ftUtdPer100": 2.6,
+     "ajg3Per100": 51.8,
+     "ajg4Per100": 8.4,
+     "ajg4Per100UtenStip": 12.7,
+     "ajgDekning": 81,
+     "anslag": true,
+     "telling": "hel"
+    }
+   ],
+   "enhetskontroll": {
+    "fra": 2023,
+    "til": 2025,
+    "artikler": 696,
+    "ajg4": 43,
+    "ajg3": 205,
+    "ftUtd": 10,
+    "abdc": 257,
+    "niva2": 310
+   }
+  },
+  {
+   "id": "fi_uef",
+   "navn": "UEF Business School (Itä-Suomen yliopisto)",
+   "kort": "UEF",
+   "alias": [
+    "UEF"
+   ],
+   "by": "Kuopio",
+   "lat": 62.893,
+   "lon": 27.631,
+   "referanse": false,
+   "akkrediteringer": [
+    {
+     "type": "AACSB",
+     "status": "akkreditert"
+    }
+   ],
+   "forbehold": [
+    "Liten enhet: AJG 4/4* per år svinger mye (14,4 i 2023, 3,6 i 2025). Også Joensuu."
+   ],
+   "perioder": [
+    {
+     "fra": 2023,
+     "til": 2025,
+     "artikler": 179,
+     "arsverk": 241,
+     "artiklerPer100": 74.3,
+     "niva2Per100": 29.1,
+     "abdcPer100": 32.4,
+     "ftUtdPer100": 2.49,
+     "ajg3Per100": 22.8,
+     "ajg4Per100": 8.3,
+     "ajg4Per100UtenStip": 11.4,
+     "ajgDekning": 65,
+     "anslag": true,
+     "telling": "hel"
+    }
+   ],
+   "enhetskontroll": {
+    "fra": 2023,
+    "til": 2025,
+    "artikler": 215,
+    "ajg4": 26,
+    "ajg3": 61,
+    "ftUtd": 7,
+    "abdc": 87,
+    "niva2": 91
+   }
+  },
+  {
+   "id": "fi_helsinki",
+   "navn": "Helsingfors universitet, samfunnsøkonomi (referanse)",
+   "kort": "Helsingfors (ref.)",
+   "alias": [
+    "Helsingfors"
+   ],
+   "by": "Helsingfors",
+   "lat": 60.172,
+   "lon": 24.933,
+   "referanse": true,
+   "akkrediteringer": [],
+   "forbehold": [
+    "Referanse, som UiB og UiO hos oss. Helsinki GSE-forskere teller hos flere universiteter."
+   ],
+   "perioder": [
+    {
+     "fra": 2023,
+     "til": 2025,
+     "artikler": 261,
+     "arsverk": 236,
+     "artiklerPer100": 110.7,
+     "niva2Per100": 50.1,
+     "abdcPer100": 43.3,
+     "ftUtdPer100": 1.7,
+     "ajg3Per100": 31.4,
+     "ajg4Per100": 7.6,
+     "ajg4Per100UtenStip": 11.2,
+     "ajgDekning": 60,
+     "anslag": true,
+     "telling": "hel"
+    }
+   ]
+  },
+  {
+   "id": "fi_lut",
+   "navn": "LUT Business School",
+   "kort": "LUT",
+   "alias": [
+    "LUT"
+   ],
+   "by": "Villmanstrand",
+   "lat": 61.065,
+   "lon": 28.094,
+   "referanse": false,
+   "akkrediteringer": [
+    {
+     "type": "AACSB",
+     "status": "akkreditert"
+    }
+   ],
+   "forbehold": [
+    "Mange artikler per årsverk (120): industriell økonomi kan være med i telleren der fagfeltet er satt til 512."
+   ],
+   "perioder": [
+    {
+     "fra": 2023,
+     "til": 2025,
+     "artikler": 446,
+     "arsverk": 372,
+     "artiklerPer100": 120,
+     "niva2Per100": 51.7,
+     "abdcPer100": 44.1,
+     "ftUtdPer100": 2.96,
+     "ajg3Per100": 35.2,
+     "ajg4Per100": 6.5,
+     "ajg4Per100UtenStip": 10,
+     "ajgDekning": 68,
+     "anslag": true,
+     "telling": "hel"
+    }
+   ],
+   "enhetskontroll": {
+    "fra": 2023,
+    "til": 2025,
+    "artikler": 346,
+    "ajg4": 21,
+    "ajg3": 106,
+    "ftUtd": 10,
+    "abdc": 138,
+    "niva2": 150
+   }
+  },
+  {
+   "id": "fi_turku",
+   "navn": "Turku School of Economics (TSE)",
+   "kort": "Turku",
+   "alias": [
+    "Turku"
+   ],
+   "by": "Åbo",
+   "lat": 60.455,
+   "lon": 22.285,
+   "referanse": false,
+   "akkrediteringer": [
+    {
+     "type": "AACSB",
+     "status": "akkreditert",
+     "aar": 2019
+    }
+   ],
+   "forbehold": [
+    "Også Pori; enheten publiserer også i andre fagfelt (framtidsstudier)."
+   ],
+   "perioder": [
+    {
+     "fra": 2023,
+     "til": 2025,
+     "artikler": 330,
+     "arsverk": 434,
+     "artiklerPer100": 76,
+     "niva2Per100": 29.7,
+     "abdcPer100": 34.1,
+     "ftUtdPer100": 1.61,
+     "ajg3Per100": 24,
+     "ajg4Per100": 6.5,
+     "ajg4Per100UtenStip": 8.6,
+     "ajgDekning": 74,
+     "anslag": true,
+     "telling": "hel"
+    }
+   ],
+   "enhetskontroll": {
+    "fra": 2023,
+    "til": 2025,
+    "artikler": 518,
+    "ajg4": 32,
+    "ajg3": 131,
+    "ftUtd": 5,
+    "abdc": 189,
+    "niva2": 214
+   }
+  },
+  {
+   "id": "fi_oulu",
+   "navn": "Oulu Business School (OBS)",
+   "kort": "Oulu",
+   "alias": [
+    "Oulu",
+    "OBS"
+   ],
+   "by": "Uleåborg",
+   "lat": 65.059,
+   "lon": 25.466,
+   "referanse": false,
+   "akkrediteringer": [
+    {
+     "type": "AACSB",
+     "status": "akkreditert"
+    }
+   ],
+   "forbehold": [],
+   "perioder": [
+    {
+     "fra": 2023,
+     "til": 2025,
+     "artikler": 255,
+     "arsverk": 263,
+     "artiklerPer100": 97.1,
+     "niva2Per100": 29.3,
+     "abdcPer100": 43,
+     "ftUtdPer100": 2.67,
+     "ajg3Per100": 28.2,
+     "ajg4Per100": 6.1,
+     "ajg4Per100UtenStip": 8.7,
+     "ajgDekning": 80,
+     "anslag": true,
+     "telling": "hel"
+    }
+   ],
+   "enhetskontroll": {
+    "fra": 2023,
+    "til": 2025,
+    "artikler": 304,
+    "ajg4": 16,
+    "ajg3": 69,
+    "ftUtd": 7,
+    "abdc": 108,
+    "niva2": 123
+   }
+  },
+  {
+   "id": "fi_jyvaskyla",
+   "navn": "Jyväskylä School of Business and Economics (JSBE)",
+   "kort": "Jyväskylä",
+   "alias": [
+    "Jyväskylä",
+    "JSBE"
+   ],
+   "by": "Jyväskylä",
+   "lat": 62.238,
+   "lon": 25.747,
+   "referanse": false,
+   "akkrediteringer": [
+    {
+     "type": "AACSB",
+     "status": "akkreditert"
+    }
+   ],
+   "forbehold": [],
+   "perioder": [
+    {
+     "fra": 2023,
+     "til": 2025,
+     "artikler": 232,
+     "arsverk": 300,
+     "artiklerPer100": 77.4,
+     "niva2Per100": 30.7,
+     "abdcPer100": 36.7,
+     "ftUtdPer100": 1,
+     "ajg3Per100": 22,
+     "ajg4Per100": 5,
+     "ajg4Per100UtenStip": 6.3,
+     "ajgDekning": 74,
+     "anslag": true,
+     "telling": "hel"
+    }
+   ],
+   "enhetskontroll": {
+    "fra": 2023,
+    "til": 2025,
+    "artikler": 333,
+    "ajg4": 17,
+    "ajg3": 75,
+    "ftUtd": 4,
+    "abdc": 126,
+    "niva2": 135
+   }
+  },
+  {
+   "id": "fi_tampere",
+   "navn": "Tampere universitet, Fakultet for ledelse og økonomi",
+   "kort": "Tampere",
+   "alias": [
+    "Tampere"
+   ],
+   "by": "Tammerfors",
+   "lat": 61.494,
+   "lon": 23.779,
+   "referanse": false,
+   "akkrediteringer": [],
+   "forbehold": [
+    "Ikke akkreditert. Fakultetet omfatter også forvaltningsvitenskap (som INN før vi avgrenset)."
+   ],
+   "perioder": [
+    {
+     "fra": 2023,
+     "til": 2025,
+     "artikler": 280,
+     "arsverk": 378,
+     "artiklerPer100": 74.1,
+     "niva2Per100": 36.5,
+     "abdcPer100": 28.6,
+     "ftUtdPer100": 0.26,
+     "ajg3Per100": 18.5,
+     "ajg4Per100": 3.7,
+     "ajg4Per100UtenStip": 5.9,
+     "ajgDekning": 75,
+     "anslag": true,
+     "telling": "hel"
+    }
+   ],
+   "enhetskontroll": {
+    "fra": 2023,
+    "til": 2025,
+    "artikler": 633,
+    "ajg4": 24,
+    "ajg3": 103,
+    "ftUtd": 1,
+    "abdc": 147,
+    "niva2": 306
+   }
+  },
+  {
+   "id": "fi_abo",
+   "navn": "Åbo Akademi, Handelshögskolan",
+   "kort": "Åbo Akademi",
+   "alias": [
+    "Åbo Akademi"
+   ],
+   "by": "Åbo",
+   "lat": 60.452,
+   "lon": 22.279,
+   "referanse": false,
+   "akkrediteringer": [
+    {
+     "type": "AACSB",
+     "status": "akkreditert"
+    }
+   ],
+   "forbehold": [
+    "Liten enhet (ca. 39 årsverk i 2024)."
+   ],
+   "perioder": [
+    {
+     "fra": 2023,
+     "til": 2025,
+     "artikler": 98,
+     "arsverk": 108,
+     "artiklerPer100": 90.6,
+     "niva2Per100": 32.4,
+     "abdcPer100": 35.1,
+     "ftUtdPer100": 0.92,
+     "ajg3Per100": 21.3,
+     "ajg4Per100": 1.9,
+     "ajg4Per100UtenStip": 2.2,
+     "ajgDekning": 76,
+     "anslag": true,
+     "telling": "hel"
+    }
+   ],
+   "enhetskontroll": {
+    "fra": 2023,
+    "til": 2025,
+    "artikler": 121,
+    "ajg4": 2,
+    "ajg3": 23,
+    "ftUtd": 1,
+    "abdc": 33,
+    "niva2": 43
+   }
+  }
+ ]
+}

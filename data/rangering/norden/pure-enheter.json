@@ -1,0 +1,124 @@
+{
+  "beskrivelse": "Danske handelshøyskoler og økonomimiljøer i universitetenes Pure-systemer (OAI-PMH, formatet ddf-mxd). Brukes av scripts/rangering/fetch-pure-oai.py. En artikkel teller for en enhet hvis minst én forfatter har en tilknytning som treffer enheten (hel telling). Treff avgjøres på enhetsnavn i Pure (dansk eller engelsk, uten forskjell på store og små bokstaver) på et bestemt nivå i organisasjonshierarkiet; nivå 1 må være universitetet selv. Pure gir bare lokal org-ID (loc_org) for det dypeste nivået hos noen universiteter, så navn er det eneste som virker likt overalt. ID-ene som faktisk traff, skrives i utdatafilene (locOrg).",
+  "kilde": "data/rangering/inspirasjon/norden-danmark.md (§1 og §2.1), lest 7.10.2026",
+  "universiteter": {
+    "cbs": {
+      "navn": "Copenhagen Business School",
+      "oai": "https://research-api.cbs.dk/ws/oai",
+      "egneNavn": ["Copenhagen Business School", "Handelshøjskolen i København"],
+      "instituttNiva": 2
+    },
+    "au": {
+      "navn": "Aarhus Universitet",
+      "oai": "https://pure.au.dk/ws/oai",
+      "egneNavn": ["Aarhus Universitet", "Aarhus University"],
+      "instituttNiva": 3
+    },
+    "sdu": {
+      "navn": "Syddansk Universitet",
+      "oai": "https://findresearcher.sdu.dk/ws/oai",
+      "egneNavn": ["SDU", "Syddansk Universitet", "University of Southern Denmark"],
+      "instituttNiva": 3
+    },
+    "aau": {
+      "navn": "Aalborg Universitet",
+      "oai": "https://vbn.aau.dk/ws/oai",
+      "egneNavn": ["Aalborg Universitet", "Aalborg University"],
+      "instituttNiva": 3
+    },
+    "ruc": {
+      "navn": "Roskilde Universitet",
+      "oai": "https://rucforsk.ruc.dk/ws/oai",
+      "egneNavn": ["Roskilde Universitet", "Roskilde University"],
+      "instituttNiva": 2
+    },
+    "ku": {
+      "navn": "Københavns Universitet",
+      "oai": "https://curis.ku.dk/ws/oai",
+      "egneNavn": ["Københavns Universitet", "University of Copenhagen"],
+      "instituttNiva": 3
+    }
+  },
+  "enheter": [
+    {
+      "id": "dk_cbs",
+      "univ": "cbs",
+      "navn": "Copenhagen Business School (CBS), hele institusjonen",
+      "referanse": false,
+      "treff": [{"niva": 1, "navn": ["Copenhagen Business School", "Handelshøjskolen i København"]}],
+      "merknad": "Hele institusjonen, som NHH og BI. Instituttene ligger på nivå 2 (11 institutter)."
+    },
+    {
+      "id": "dk_aarhus",
+      "univ": "au",
+      "navn": "Aarhus BSS, hele fakultetet (Aarhus Universitet)",
+      "referanse": false,
+      "treff": [{"niva": 2, "navn": ["Aarhus BSS", "School of Business and Social Sciences"]}],
+      "merknad": "Hele fakultetet: økonomi og business (ECON, MGMT, BTECH) og i tillegg statskundskab, psykologi og jus. Tilsvarer fakultetsnivå (som NTNU Fakultet for økonomi)."
+    },
+    {
+      "id": "dk_aarhus_oeb",
+      "univ": "au",
+      "navn": "Aarhus BSS, økonomi og business (ECON + MGMT + BTECH)",
+      "referanse": false,
+      "delAv": "dk_aarhus",
+      "treff": [
+        {"niva": 3, "forelder": ["Aarhus BSS"], "navn": [
+          "Department of Economics and Business Economics", "Institut for Økonomi",
+          "Department of Management", "Institut for Virksomhedsledelse",
+          "Department of Business Development and Technology", "Institut for Forretningsudvikling og Teknologi"
+        ]}
+      ],
+      "merknad": "Alternativ avgrensning: de tre økonomi- og business-instituttene, uten statskundskab, psykologi og jus. BTECH ligger i Herning."
+    },
+    {
+      "id": "dk_aarhus_econ",
+      "univ": "au",
+      "navn": "Aarhus BSS, Department of Economics and Business Economics (ECON)",
+      "referanse": false,
+      "delAv": "dk_aarhus_oeb",
+      "treff": [{"niva": 3, "forelder": ["Aarhus BSS"], "navn": ["Department of Economics and Business Economics", "Institut for Økonomi"]}],
+      "merknad": "Bare ECON, for sammenligning med rene økonomimiljøer."
+    },
+    {
+      "id": "dk_sdu",
+      "univ": "sdu",
+      "navn": "SDU Business School (Syddansk Universitet)",
+      "referanse": false,
+      "treff": [
+        {"niva": 3, "forelder": ["Faculty of Social Sciences", "Det Samfundsvidenskabelige Fakultet"], "navn": [
+          "Department of Business & Management (DBM)", "Department of Business and Management", "Institut for Virksomhedsledelse og Økonomi",
+          "Department of Business and Sustainability", "Institut for Erhverv og Bæredygtighed",
+          "Department of Economics", "Økonomisk Institut",
+          "Department of Sociology, Environmental and Business Economics", "Institut for Sociologi, Miljø- og Erhvervsøkonomi"
+        ]}
+      ],
+      "merknad": "Business-delen av Det Samfundsvidenskabelige Fakultet, avgrenset av oss. SDU har omorganisert flere ganger; se omorganiseringer."
+    },
+    {
+      "id": "dk_aau",
+      "univ": "aau",
+      "navn": "AAU Business School (Aalborg Universitet)",
+      "referanse": false,
+      "treff": [{"niva": 3, "navn": ["Aalborg University Business School", "Aalborg Universitet Business School", "AAU Business School"]}],
+      "merknad": "Ett institutt under Det Samfundsvidenskabelige og Humanistiske Fakultet."
+    },
+    {
+      "id": "dk_ruc",
+      "univ": "ruc",
+      "navn": "Roskilde Universitet, Institut for Samfundsvidenskab og Erhverv (ISE)",
+      "referanse": false,
+      "treff": [{"niva": 2, "navn": ["Department of Social Sciences and Business", "Institut for Samfundsvidenskab og Erhverv"]}],
+      "merknad": "Hele instituttet, også offentlig forvaltning, politikk og Roskilde School of Governance, ikke bare business."
+    },
+    {
+      "id": "dk_ku",
+      "univ": "ku",
+      "navn": "Københavns Universitet, Økonomisk Institut (referanse)",
+      "referanse": true,
+      "treff": [{"niva": 3, "forelder": ["Faculty of Social Sciences", "Det Samfundsvidenskabelige Fakultet"], "navn": ["Department of Economics", "Økonomisk Institut"]}],
+      "merknad": "Referanse, slik UiO og UiB økonomi er det i Norge. Institutt for fødevare- og ressourceøkonomi (SCIENCE) er ikke med."
+    }
+  ],
+  "omorganiseringer": []
+}

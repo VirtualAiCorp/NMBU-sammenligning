@@ -1,0 +1,90 @@
+{
+ "land": "DK",
+ "landNavn": "Danmark",
+ "status": "foreløpig",
+ "rapport": "data/rangering/inspirasjon/norden-danmark.md",
+ "lest": "2026-10-07",
+ "metode": {
+  "avgrensningKort": "enhetsavgrenset (Pure-institutter)",
+  "niva2Navn": null,
+  "avgrensning": "Enhet i universitetenes Pure-systemer (OAI-PMH, DDF-MXD): CBS og Aarhus BSS som hele institusjon/fakultet, ellers institutter valgt av oss.",
+  "telling": "Hel telling: en artikkel teller én gang per enhet hvis minst én forfatter er ved enheten.",
+  "nevner": "VIP-årsverk (Danske Universiteters nøgletal C: professor, lektor, adjunkt, postdoc, ph.d.-stipendiat m.fl., uten dekan og instituttleder), nær HK-dirs UN1 + UN2. Finnes bare for CBS (institusjon) og Aarhus BSS (fakultet, 2023).",
+  "lister": "Koblet på ISSN mot ABDC 2025, FT50 (2026), UTD24 og AJG 2024 (lokal fil). Bare aggregerte tall.",
+  "periode": "2024 (ett år, Pure). CBS også 2023–2025 fra OpenAlex (hele institusjonen)."
+ },
+ "forbehold": [
+  "Foreløpig anslag fra én utforskning (7.10.2026). Bare 2024 er høstet fra Pure, så det er ett år.",
+  "Pure er selvregistrert, og fagfellevurderingsflagget (pr) er ikke kontrollert nasjonalt som NVI; den danske indikatoren (BFI) ble nedlagt i 2021.",
+  "Nevner per institutt finnes ikke åpent; enheter uten nevner vises bare med antall («uten nevner»).",
+  "AJG 2024 er brukt også bakover. Publiseringspoeng og nivå 2-andel finnes ikke for Danmark."
+ ],
+ "enheter": [
+  {
+   "id": "dk_cbs", "navn": "Copenhagen Business School (CBS)", "kort": "CBS", "alias": ["CBS"],
+   "by": "Frederiksberg", "lat": 55.681, "lon": 12.530, "referanse": false,
+   "akkrediteringer": [{"type": "AACSB", "status": "akkreditert", "aar": 2011}, {"type": "EQUIS", "status": "akkreditert", "aar": 2000}, {"type": "AMBA", "status": "akkreditert", "aar": 2007}],
+   "forbehold": ["Hele institusjonen (som NHH og BI). CBS teller selv FT50 etter 2016-lista."],
+   "perioder": [
+    {"fra": 2024, "til": 2024, "artikler": 601, "ajg4s": 47, "ajg4": 126, "ajg3": 294, "abdcAs": 149, "ft50": 52, "arsverk": 660, "ajg4Per100": 19.1,
+     "anslag": true, "telling": "hel", "kilde": "Pure (OAI-PMH), hele institusjonen; nevner VIP-årsverk fra CBS' årsrapport 2025"},
+    {"fra": 2023, "til": 2025, "artikler": 1987, "ajg4": 359, "ajg3": 846, "ft50": 140, "arsverk": 2028, "ajg4Per100": 17.7,
+     "anslag": true, "telling": "hel", "kilde": "OpenAlex, hele institusjonen; nevner VIP-årsverk 2023–2025 fra CBS' årsrapport 2025"}
+   ]
+  },
+  {
+   "id": "dk_aarhus", "navn": "Aarhus BSS (hele fakultetet, Aarhus Universitet)", "kort": "Aarhus BSS", "alias": ["Aarhus BSS"],
+   "by": "Aarhus", "lat": 56.167, "lon": 10.199, "referanse": false,
+   "akkrediteringer": [{"type": "AACSB", "status": "akkreditert"}, {"type": "EQUIS", "status": "akkreditert"}, {"type": "AMBA", "status": "akkreditert", "aar": 2014}],
+   "forbehold": [
+    "Hele fakultetet med seks institutter, også statskundskab, psykologi og jus; per årsverk blir derfor lavere enn for økonomi og business alene.",
+    "Nevneren er VIP-årsverk for 2023 (AU i tal), brukt mot 2024-artiklene (vårt anslag).",
+    "De tre økonomi- og business-instituttene (ECON, MGMT, BTECH) hadde 354 artikler, 50 på AJG 4/4* og 149 på AJG 3+ i 2024 (uten nevner)."
+   ],
+   "perioder": [
+    {"fra": 2024, "til": 2024, "artikler": 745, "ajg4s": 17, "ajg4": 79, "ajg3": 203, "abdcAs": 96, "ft50": 13, "arsverk": 778, "ajg4Per100": 10.2,
+     "anslag": true, "telling": "hel", "kilde": "Pure (OAI-PMH), fakultetet; nevner VIP-årsverk 2023 fra AU i tal 2023, tabell F1A"}
+   ]
+  },
+  {
+   "id": "dk_ruc", "navn": "Roskilde Universitet, Institut for Samfundsvidenskab og Erhverv (ISE)", "kort": "RUC ISE", "alias": ["RUC ISE", "RUC"],
+   "by": "Roskilde", "lat": 55.652, "lon": 12.140, "referanse": false,
+   "akkrediteringer": [],
+   "forbehold": ["Blandet profil med offentlig forvaltning og politikk: 14 av 21 AJG 4/4* er i offentlig sektor (PUB SEC). Ingen åpen nevner."],
+   "perioder": [
+    {"fra": 2024, "til": 2024, "artikler": 174, "ajg4s": 5, "ajg4": 21, "ajg3": 47, "abdcAs": 7, "ft50": 1,
+     "anslag": true, "telling": "hel", "kilde": "Pure (OAI-PMH), instituttet"}
+   ]
+  },
+  {
+   "id": "dk_ku", "navn": "Københavns Universitet, Økonomisk Institut (referanse)", "kort": "KU økonomi (ref.)", "alias": ["KU Økonomisk Institut", "KU økonomi"],
+   "by": "København", "lat": 55.686, "lon": 12.562, "referanse": true,
+   "akkrediteringer": [],
+   "forbehold": ["Referanse, som UiB og UiO økonomi. Samfunnsøkonomisk profil, så AJG og FT50 treffer dårligere enn ABDC. Ingen åpen nevner."],
+   "perioder": [
+    {"fra": 2024, "til": 2024, "artikler": 81, "ajg4s": 2, "ajg4": 17, "ajg3": 48, "abdcAs": 42, "ft50": 2,
+     "anslag": true, "telling": "hel", "kilde": "Pure (OAI-PMH), instituttet"}
+   ]
+  },
+  {
+   "id": "dk_sdu", "navn": "SDU Business School (Syddansk Universitet)", "kort": "SDU", "alias": ["SDU Business School", "SDU"],
+   "by": "Odense", "lat": 55.369, "lon": 10.428, "referanse": false,
+   "akkrediteringer": [{"type": "AACSB", "status": "akkreditert", "aar": 2025}],
+   "forbehold": ["Avgrensningen på fire institutter er vår egen (navnene i Pure har endret seg). Også Esbjerg, Kolding og Sønderborg. Ingen åpen nevner."],
+   "perioder": [
+    {"fra": 2024, "til": 2024, "artikler": 161, "ajg4s": 7, "ajg4": 13, "ajg3": 51, "abdcAs": 21, "ft50": 8,
+     "anslag": true, "telling": "hel", "kilde": "Pure (OAI-PMH), fire institutter"}
+   ]
+  },
+  {
+   "id": "dk_aau", "navn": "AAU Business School (Aalborg Universitet)", "kort": "AAU", "alias": ["AAU Business School", "AAU"],
+   "by": "Aalborg", "lat": 57.015, "lon": 9.987, "referanse": false,
+   "akkrediteringer": [],
+   "forbehold": ["Ingen internasjonal akkreditering funnet. Ingen åpen nevner."],
+   "perioder": [
+    {"fra": 2024, "til": 2024, "artikler": 84, "ajg4s": 0, "ajg4": 5, "ajg3": 22, "abdcAs": 6, "ft50": 0,
+     "anslag": true, "telling": "hel", "kilde": "Pure (OAI-PMH), instituttet"}
+   ]
+  }
+ ]
+}

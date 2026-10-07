@@ -897,3 +897,39 @@ Ny fane «AJG-sammenligning» i den interne rangeringen (`AjgSammenligning` i `H
 
 - **NTNU i rangeringen** omfatter nå også Institutt for industriell økonomi og teknologiledelse (IØT; NVA 194.60.25.0, DBH 230240), etter ønske fra kollega. Ålesund (Institutt for internasjonal business) er fortsatt utenfor. NTNUs artikler er hentet på nytt fra NVA for 2016–2025. Effekt med standardvekter: NTNU 60 poeng (plass 5, fortsatt i toppgruppen); poeng per årsverk 2024 1,08 (før 1,19); AJG 4+ per 100 faglige årsverk 2023–2025 5,1 (før 8,1), fordi IØT gir mange årsverk og relativt få AJG 4/4*-artikler. Referansen `ntnu_ok` (hele fakultetet) er nå nesten den samme enheten.
 - **AJG-sammenligningen, «Per 100»:** faglige årsverk (HK-dir, UN1 + UN2; standard), faglige årsverk (NHH, UN1 + postdoktorer) eller alle årsverk (også teknisk-administrative). Overskrifter, tabell, graf og CSV følger valget; lenke `ajgnevner=utenstip|alle`. Antall personer uavhengig av stillingsprosent finnes ikke i DBHs åpne tabeller (DBH 225 oppgir også kvinner og menn i årsverk), så det er ikke med.
+
+## 47. Kart over nordiske handelshøyskoler (07.10.2026)
+
+Ny fane «Kart» i den interne rangeringen (`?rangering&fane=kart`; komponent `components/rangering/NordenKart.tsx`, tallene
+for Norge i `KartFane` i `Handelshoyskolerangering.tsx`, stil under `.skp.kart` i `styles/skoleportrett.css`, lys/mørk og mobil).
+- **Kartgrunnlag:** Natural Earth 1:50m (offentlig eiendom) via world-atlas 2.0.2 (ISC), klippet til Norden, forenklet og
+  avrundet av `scripts/rangering/lag_nordenkart.py` → `components/rangering/norden-kart.json` (39 kB). Tegnes som innebygd SVG
+  (Lamberts flatriktige asimutale projeksjon, sentrert 15° Ø, 62° N): ingen kartfliser, ingen tredjepartskall, virker bak
+  passord. Leaflet (MapView) er ikke brukt; MapView har uansett bare en håndtegnet norsk kontur.
+- **Data:** `data/rangering/norden/` (README der): `norge.json` (by og koordinater for de 18 norske enhetene) og én fil per
+  land (`danmark.json`, `sverige.json`, `finland.json`) med enheter, koordinater, akkrediteringer og aggregerte tall per
+  periode fra utforskningsrapportene `inspirasjon/norden-*.md`. `scripts/rangering/norden_til_json.py` leser rapportenes
+  tabeller (`les … --skriv`), sjekker filene (`sjekk`) og lager mal (`mal`). Byggeskriptet tar filene med i de krypterte
+  rangeringsdataene (feltet `norden`, merket foreløpig og «ikke del av den norske rangeringen»), slipper bare kjente tallfelt
+  gjennom og regner manglende rater fra antall og nevner (merket `beregnet`). Ingen AJG-nivå per tidsskrift.
+- **Innhold:** én sirkel per enhet ved hovedcampus. Størrelse = vitenskapelige artikler per år i perioden (flateproporsjonal;
+  per år fordi Danmark bare har 2024). Farge = valgt mål i fem faste klasser, én blå tone (ordinal skala validert for
+  fargesvake og mot flaten i lys og mørk modus): AJG 4/4* per 100 faglige årsverk og år (standard), AJG 3+ per 100,
+  publiseringspoeng per årsverk (bare Norge) eller plass i den norske rangeringen. «Per 100» med stipendiater (HK-dir UN1 + UN2;
+  standard) eller uten (NHH). Andre land har skravur og stiplet kant og kan slås av; enheter uten nevner vises som tom sirkel
+  («mangler nevner»). Enheter i samme by skyves fra hverandre med en strek til byen; utsnitt for Norden, Sør-Norge,
+  Oslofjorden, Danmark og Skåne og Stockholm–Helsingfors. Verktøytips ved pekeren, detaljpanel ved klikk (tall, avgrensning,
+  nevner, kilde, akkreditering og forbehold; for norske skoler knapper til Skoleportrett og AJG-sammenligning), tabell under
+  kartet sortert på valgt mål (valgt mål som første kolonne, så den synes på mobil), og metodeboks.
+- **Norge** regnes som AJG-sammenligningen (§45–46): NVI-artikler, hel telling, sum artikler / sum årsverk × 100, standard
+  2023–2025. **Danmark** (Pure 2024; CBS også 2023–2025 fra OpenAlex): bare CBS og Aarhus BSS har nevner. **Sverige** (SwePub
+  2023–2025): nevner med doktorander bare for SSE, LUSEM og GU; de andre har bare «forskande och undervisande personal», så de
+  får farge først med «uten». Rapportens norske sammenligningstall (annen nevner) er ikke brukt. **Finland** (Vipunen/
+  Research.fi 2023–2025) er fagfeltavgrenset (511 + 512), ikke enhetsavgrenset.
+- **Lenke:** `?rangering&fane=kart&kartmaal=p3|poeng|plass&kartperiode=2024&kartnevner=utenstip&kartanslag=0&kartref=1&
+  kartvis=sor|oslo|oresund|ost&kartvalgt=<id>` (bare avvik fra standard skrives; `kartvalgt` bare i kartfanen).
+- **Bilde 07.10 (standard, AJG 4/4* per 100 faglige årsverk og år):** CBS 17,7 (anslag), Aalto 16,6 (anslag), BI 16,1,
+  SSE 15,9 (anslag), NHH 15,5, UiS 12,0, Hanken 11,4 (anslag), Aarhus BSS 10,2 (2024, hele fakultetet, anslag) … HH NMBU 3,1.
+- **Svakheter:** ulike avgrensninger (fagfelt i Finland, enhet ellers), ulike nevnere og kilder (Pure og SwePub er
+  selvregistrert, ikke NVI), Danmark bare ett år, AJG 2024 brukt bakover, 1:50m-kysten er grov i Oslofjord-utsnittet, og
+  skoler med flere studiesteder har ett punkt. Kartet er en oversikt, ikke en nordisk rangering.
