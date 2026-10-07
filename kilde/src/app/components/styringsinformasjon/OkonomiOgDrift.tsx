@@ -2,7 +2,7 @@
  * «Økonomi og drift»: samleside for hele NMBU med fakultetene side om side og konkurrentene som sammenligning.
  * Data: DBH 902 og 750 (economyData), DBH 225/900 (staffData), resultatbasert finansiering (revenueData,
  * NMBU_PRODUKSJON og REVENUE_GROUPS), Forskningsrådet og CORDIS (public/fagmiljo/forskning.json) og NMBUs egne
- * åpne tall fra styresaker og rapporter (public/ledelse/nmbu.json, valgfri).
+ * åpne tall fra styresaker og rapporter (public/ledelse/nmbu.json, valgfri), med statsbudsjettet øverst (Statsbudsjett.tsx).
  */
 import { useMemo } from 'react';
 import { Banknote, Building2, Coins, FileText, FlaskConical, Landmark, PiggyBank, Scale, TrendingUp, Users, Wallet } from 'lucide-react';
@@ -19,6 +19,7 @@ import {
 } from './felles';
 import { FAK_KODE, hentForskning, useJson } from './data';
 import { LedelseSerier, LedelseTekstpunkter, datoTekst, useLedelse } from './ledelse';
+import { Statsbudsjett } from './Statsbudsjett';
 
 const NMBU = ECON_UNITS.find((u) => u.isNmbu)!;
 const NMBU_STAFF = STAFF_INSTITUTIONS.find((u) => u.isNmbu)!;
@@ -39,6 +40,7 @@ function Innhold() {
   return (
     <>
       <Nokkeltallene />
+      {ledelse && <Statsbudsjett data={ledelse} i={2} />}
       {ledelse?.okonomi && (
         <Del i={2} ikon={FileText} tittel="NMBUs egne tall: perioder, prognose og budsjett"
           ingress={<>Tall NMBU selv har publisert i styresaker, årsrapport og tildelingsbrev{ledelse.hentet ? `, hentet ${datoTekst(ledelse.hentet)}` : ''}. Hele NMBU og fakultetene står side om side der dokumentene har tall per fakultet.</>}>

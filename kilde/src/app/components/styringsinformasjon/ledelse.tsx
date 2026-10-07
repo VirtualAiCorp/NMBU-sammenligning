@@ -16,7 +16,8 @@ export interface LedelsePunkt { periode: string; type: PunktType; verdi: number;
 export interface LedelseSerie { id: string; navn: string; enhet: string; nivaa: string; punkter: LedelsePunkt[] }
 export interface LedelseTekst { tittel: string; tekst: string; kilder: { kilde: string; side?: number }[] }
 export interface LedelseDel { serier: LedelseSerie[]; tekst: LedelseTekst[] }
-export interface LedelseData { hentet: string; kilder: LedelseKilde[]; okonomi?: LedelseDel; utdanning?: LedelseDel }
+export interface LedelseData { hentet: string; kilder: LedelseKilde[]; okonomi?: LedelseDel; utdanning?: LedelseDel;
+  /** Statsbudsjettet (data/nmbu/ledelse/statsbudsjett-<år>.json); formatet sjekkes i Statsbudsjett.tsx. */ statsbudsjett?: Record<string, unknown> }
 
 const TYPER: PunktType[] = ['år', 'tertial', 'kvartal', 'prognose', 'budsjett', 'mål'];
 const FAKTISK = new Set<PunktType>(['år', 'tertial', 'kvartal']);
@@ -48,7 +49,8 @@ function rens(d: unknown): LedelseData | null {
   };
   const okonomi = del(o.okonomi), utdanning = del(o.utdanning);
   if (!okonomi && !utdanning) return null;
-  return { hentet: str(o.hentet), kilder, okonomi, utdanning };
+  const sb = o.statsbudsjett && typeof o.statsbudsjett === 'object' && typeof (o.statsbudsjett as Record<string, unknown>).aar === 'number' ? o.statsbudsjett as Record<string, unknown> : undefined;
+  return { hentet: str(o.hentet), kilder, okonomi, utdanning, statsbudsjett: sb };
 }
 
 let last: Promise<LedelseData | null> | null = null;
@@ -81,7 +83,7 @@ function verdiTekst(v: number, enhet: string, avvik = false) {
 }
 
 /** Kildene brukt i en mengde punkter/tekstpunkter, klare for Kildeboks. */
-function kilderFor(data: LedelseData, refs: { kilde: string; side?: number }[]): Kilde[] {
+export function kilderFor(data: LedelseData, refs: { kilde: string; side?: number }[]): Kilde[] {
   const ut: Kilde[] = [];
   for (const r of refs) {
     const k = data.kilder.find((x) => x.id === r.kilde);

@@ -2,6 +2,20 @@
  "hentet": "2026-09-30",
  "kilder": [
   {
+   "id": "prop1s-2027",
+   "tittel": "Prop. 1 S (2026–2027) Kunnskapsdepartementet, med kompetansebudsjettet (del III kap. 5)",
+   "dato": "2026-10-07",
+   "url": "https://www.regjeringen.no/contentassets/d9817e9a47914cbd991fee12f2161e5e/nn-no/pdfs/prp202620270001_kddddpdfs.pdf",
+   "pdf": "ledelse/kilder/kd-prop-1-s-2026-2027.pdf"
+  },
+  {
+   "id": "orientering-forslag-2027",
+   "tittel": "Orientering om forslag til statsbudsjettet 2027 for universitet og høgskular (KD, førebels tildelingsbrev)",
+   "dato": "2026-10-07",
+   "url": "https://www.regjeringen.no/contentassets/31af8e2c3a224ac2829e48cc91d89083/orientering-om-forslag-til-statsbudsjettet-2027-for-universitet-og-hogskular.pdf",
+   "pdf": "ledelse/kilder/kd-orientering-forslag-statsbudsjettet-2027.pdf"
+  },
+  {
    "id": "arsrapport-2025",
    "tittel": "NMBUs årsrapport 2025 med årsregnskap (publisert på nmbu.no)",
    "dato": "2026-03-04",
@@ -3124,6 +3138,13 @@
       "side": 9
      },
      {
+      "periode": "2027",
+      "type": "budsjett",
+      "verdi": 1760.964,
+      "kilde": "orientering-forslag-2027",
+      "side": 11
+     },
+     {
       "periode": "2028",
       "type": "prognose",
       "verdi": 1672.0,
@@ -3179,6 +3200,13 @@
       "verdi": 29.7,
       "kilde": "arsplan-2027",
       "side": 8
+     },
+     {
+      "periode": "2027",
+      "type": "budsjett",
+      "verdi": 34.098,
+      "kilde": "orientering-forslag-2027",
+      "side": 21
      }
     ]
    },
@@ -5478,6 +5506,533 @@
      {
       "kilde": "tertial-2026-t1",
       "side": 13
+     }
+    ]
+   }
+  ]
+ },
+ "statsbudsjett": {
+  "aar": 2027,
+  "status": "forslag",
+  "fremlagt": "2026-10-07",
+  "nmbu": {
+   "ramme2026": {
+    "verdi": 1695.344,
+    "kilde": "orientering-forslag-2027",
+    "side": 11
+   },
+   "forslag2027": {
+    "verdi": 1760.964,
+    "kilde": "orientering-forslag-2027",
+    "side": 11
+   },
+   "poster": [
+    {
+     "id": "pris",
+     "navn": "Prisjustering (3,7 %)",
+     "verdi": 62.728,
+     "kilde": "orientering-forslag-2027",
+     "side": 11,
+     "forklaring": "Lønns- og priskompensasjon på 3,7 % av rammen for 2026, som for andre 50-poster. Ikke med i NMBUs foreløpige rammer fra juni."
+    },
+    {
+     "id": "resultat",
+     "navn": "Resultatbasert uttelling",
+     "verdi": 34.098,
+     "kilde": "orientering-forslag-2027",
+     "side": 21,
+     "forklaring": "Endringen fra 2024 til 2025 i studiepoeng (15,8), doktorgrader (14,5) og fullføring på normert tid (3,8)."
+    },
+    {
+     "id": "studieplasser",
+     "navn": "Studieplasser tildelt 2020–2026 (netto)",
+     "verdi": -14.239,
+     "kilde": "orientering-forslag-2027",
+     "side": 11,
+     "forklaring": "Utfasing av de midlertidige koronaplassene fra 2020 (HHs koronaplasser fases helt ut i 2027), de siste fem Ukraina-plassene og at resten av opptrappingen for nukleære fag går til UiO, så NMBU blir stående med finansiering for 14 femårige plasser."
+    },
+    {
+     "id": "kutt",
+     "navn": "Kutt for å frigjøre midler til omprioriteringer",
+     "verdi": -16.795,
+     "kilde": "orientering-forslag-2027",
+     "side": 11,
+     "forklaring": "Generelt kutt i sektoren på 477,7 mill. kr, fordelt etter størrelse (om lag 1 % av rammen)."
+    },
+    {
+     "id": "so",
+     "navn": "Gevinst av nytt IT-system i Samordna opptak",
+     "verdi": -0.172,
+     "kilde": "orientering-forslag-2027",
+     "side": 11,
+     "forklaring": "Del av gevinsten av det nye opptakssystemet hentes ut som et lite trekk i rammen."
+    }
+   ]
+  },
+  "resultat": {
+   "studiepoeng": [
+    {
+     "kat": 1,
+     "navn": "Humaniora, samfunnsfag og økonomisk-administrative fag",
+     "enheter2025": 2215,
+     "endring": 200,
+     "sats": 60850,
+     "kilde": "orientering-forslag-2027",
+     "side": 22
+    },
+    {
+     "kat": 2,
+     "navn": "Realfag, teknologi, helse-, sosial- og idrettsfag, lærerutdanning, utøvende kunst og medier",
+     "enheter2025": 3001,
+     "endring": 38,
+     "sats": 91200,
+     "kilde": "orientering-forslag-2027",
+     "side": 22
+    },
+    {
+     "kat": 3,
+     "navn": "Medisin, odontologi og veterinærmedisin",
+     "enheter2025": 435,
+     "endring": 1,
+     "sats": 212900,
+     "kilde": "orientering-forslag-2027",
+     "side": 22
+    }
+   ],
+   "satserKilde": {
+    "kilde": "orientering-forslag-2027",
+    "side": 19
+   },
+   "indikatorer": [
+    {
+     "id": "studiepoeng",
+     "navn": "Studiepoeng",
+     "verdi": 15.779,
+     "grunnlag": "5 651 studiepoengenheter i 2025, +239 fra 2024",
+     "kilde": "orientering-forslag-2027",
+     "side": 21
+    },
+    {
+     "id": "doktorgrader",
+     "navn": "Doktorgrader",
+     "verdi": 14.536,
+     "grunnlag": "101 ordinære doktorgrader i 2025, +28 fra 2024 (519 150 kr per grad)",
+     "kilde": "orientering-forslag-2027",
+     "side": 21
+    },
+    {
+     "id": "fullforing",
+     "navn": "Fullføring på normert tid",
+     "verdi": 3.783,
+     "grunnlag": "62,0 % i 2025, +3,5 prosentpoeng og 7,6 over snittet i sektoren (kull på 1 615)",
+     "kilde": "orientering-forslag-2027",
+     "side": 21
+    }
+   ],
+   "grunnlagKilde": {
+    "kilde": "orientering-forslag-2027",
+    "side": 22
+   }
+  },
+  "prognose": {
+   "kilde": "arsplan-2027",
+   "side": 8,
+   "rader": [
+    {
+     "navn": "Resultatuttelling, studiepoeng",
+     "prognose": 15.7,
+     "forslag": 15.779
+    },
+    {
+     "navn": "Resultatuttelling, doktorgrader",
+     "prognose": 14.0,
+     "forslag": 14.536
+    },
+    {
+     "navn": "Resultatuttelling, fullføring",
+     "prognose": 0,
+     "forslag": 3.783
+    },
+    {
+     "navn": "Studieplasser (endret basis)",
+     "prognose": -12.0,
+     "forslag": -14.239
+    },
+    {
+     "navn": "Kutt i statsbudsjettet",
+     "prognose": -16.9,
+     "forslag": -16.967
+    },
+    {
+     "navn": "Sum utenom lønns- og priskompensasjon",
+     "prognose": 0.8,
+     "forslag": 2.892,
+     "sum": true
+    }
+   ]
+  },
+  "fakulteter": {
+   "kilde": "arsplan-2027",
+   "side": 10,
+   "kilde2025": "arsplan-2026",
+   "side2025": 13,
+   "rader": [
+    {
+     "nivaa": "hh",
+     "r2025": 70.7,
+     "r2026": 85.9,
+     "r2027": 91.6
+    },
+    {
+     "nivaa": "mina",
+     "r2025": 110.7,
+     "r2026": 115.2,
+     "r2027": 117.7
+    },
+    {
+     "nivaa": "biovit",
+     "r2025": 99.2,
+     "r2026": 99.5,
+     "r2027": 102.3
+    },
+    {
+     "nivaa": "landsam",
+     "r2025": 117.3,
+     "r2026": 125.2,
+     "r2027": 126.0
+    },
+    {
+     "nivaa": "kbm",
+     "r2025": 97.8,
+     "r2026": 98.3,
+     "r2027": 97.8
+    },
+    {
+     "nivaa": "vet",
+     "r2025": 284.6,
+     "r2026": 350.5,
+     "r2027": 346.9
+    },
+    {
+     "nivaa": "realtek",
+     "r2025": 160.2,
+     "r2026": 162.1,
+     "r2027": 155.6
+    }
+   ]
+  },
+  "hh": {
+   "studiepoeng": {
+    "2023": null,
+    "2024": 1523.1,
+    "2025": 1680.4,
+    "nmbu2024": 5460.4,
+    "nmbu2025": 5687.0,
+    "dbh": 900
+   },
+   "fakta": [
+    {
+     "id": "uttelling",
+     "tekst": "Handelshøyskolen står for 9,2 mill. kr av den forventede økningen i resultatbasert uttelling i 2027.",
+     "verdi": 9.2,
+     "kilde": "arsplan-2027",
+     "side": 8
+    },
+    {
+     "id": "arsstudium",
+     "tekst": "Årsstudiet i bærekraftig økonomi og ledelse har økt NMBUs samlede tildeling med litt over 40 mill. kr fra 2025 til 2027.",
+     "verdi": 40,
+     "kilde": "arsplan-2027",
+     "side": 9
+    },
+    {
+     "id": "rammekutt",
+     "tekst": "Alle enheter har fått et rammekutt på 1,15 % for å dekke det ventede generelle kuttet fra KD.",
+     "verdi": 1.15,
+     "kilde": "arsplan-2027",
+     "side": 11
+    },
+    {
+     "id": "ltb-uttelling",
+     "tekst": "HHs langtidsbudsjett (desember 2025) regnet med 5,6 mill. kr mer fra studiepoengproduksjonen i 2027 og et kutt på 1,7 mill. kr.",
+     "verdi": 5.6,
+     "kilde": "hh-langtidsbudsjett-2026-2030",
+     "side": 1
+    },
+    {
+     "id": "korona",
+     "tekst": "Koronaplassene skulle gi HH 5 mill. kr i basis, innfasingen nådde 3,6 mill. kr, og de fases ut 2024–2027.",
+     "verdi": 3.6,
+     "kilde": "hh-langtidsbudsjett-2026-2030",
+     "side": 1
+    },
+    {
+     "id": "t2",
+     "tekst": "I 2. tertial 2026 er tildelingen fra KD til HH tatt ned 1,6 mill. kr fordi en stipendiat sluttet; ny tildeling kommer når stillingen er besatt.",
+     "verdi": -1.6,
+     "kilde": "hh-tertial-2026-t2",
+     "side": 1
+    }
+   ]
+  },
+  "sektor": {
+   "kilde": "orientering-forslag-2027",
+   "side": 11,
+   "resultatSide": 21,
+   "rader": [
+    {
+     "inst": "AHO",
+     "saldert2026": 273.704,
+     "forslag2027": 275.323,
+     "resultat": -2.846
+    },
+    {
+     "inst": "HiM",
+     "saldert2026": 357.036,
+     "forslag2027": 367.181,
+     "resultat": 6.05
+    },
+    {
+     "inst": "HiØ",
+     "saldert2026": 896.629,
+     "forslag2027": 915.169,
+     "resultat": -6.56
+    },
+    {
+     "inst": "HVL",
+     "saldert2026": 2539.26,
+     "forslag2027": 2675.432,
+     "resultat": 37.784
+    },
+    {
+     "inst": "HVO",
+     "saldert2026": 450.55,
+     "forslag2027": 459.18,
+     "resultat": -0.308
+    },
+    {
+     "inst": "INN",
+     "saldert2026": 1531.613,
+     "forslag2027": 1586.006,
+     "resultat": 15.594
+    },
+    {
+     "inst": "KHiO",
+     "saldert2026": 442.807,
+     "forslag2027": 455.363,
+     "resultat": 1.456
+    },
+    {
+     "inst": "NHH",
+     "saldert2026": 669.219,
+     "forslag2027": 692.921,
+     "resultat": 9.754
+    },
+    {
+     "inst": "NIH",
+     "saldert2026": 322.538,
+     "forslag2027": 332.091,
+     "resultat": 0.878
+    },
+    {
+     "inst": "NMBU",
+     "saldert2026": 1695.344,
+     "forslag2027": 1760.964,
+     "resultat": 34.098
+    },
+    {
+     "inst": "NMH",
+     "saldert2026": 345.228,
+     "forslag2027": 353.319,
+     "resultat": 0.604
+    },
+    {
+     "inst": "NTNU",
+     "saldert2026": 8583.369,
+     "forslag2027": 8960.875,
+     "resultat": 3.173
+    },
+    {
+     "inst": "Nord",
+     "saldert2026": 1851.729,
+     "forslag2027": 1894.226,
+     "resultat": -2.651
+    },
+    {
+     "inst": "OsloMet",
+     "saldert2026": 3229.635,
+     "forslag2027": 3397.618,
+     "resultat": 69.357
+    },
+    {
+     "inst": "Samisk",
+     "saldert2026": 132.389,
+     "forslag2027": 133.663,
+     "resultat": -0.543
+    },
+    {
+     "inst": "UiA",
+     "saldert2026": 1990.904,
+     "forslag2027": 2052.318,
+     "resultat": -2.709
+    },
+    {
+     "inst": "UiB",
+     "saldert2026": 4589.045,
+     "forslag2027": 4853.496,
+     "resultat": 15.413
+    },
+    {
+     "inst": "UiO",
+     "saldert2026": 7302.468,
+     "forslag2027": 7703.208,
+     "resultat": 21.045
+    },
+    {
+     "inst": "UiS",
+     "saldert2026": 2054.484,
+     "forslag2027": 2158.516,
+     "resultat": 39.854
+    },
+    {
+     "inst": "UiT",
+     "saldert2026": 4281.564,
+     "forslag2027": 4374.306,
+     "resultat": 0.339
+    },
+    {
+     "inst": "USN",
+     "saldert2026": 2353.196,
+     "forslag2027": 2460.883,
+     "resultat": 16.373
+    }
+   ],
+   "privat": [
+    {
+     "inst": "BI",
+     "studiepoeng": 16.734,
+     "endring": 917,
+     "merknad": "30 % av satsen"
+    }
+   ],
+   "privatKilde": {
+    "kilde": "orientering-forslag-2027",
+    "side": 21
+   }
+  },
+  "kompetansebudsjett": [
+   {
+    "tittel": "Institusjonene bør vurdere å redusere kapasiteten",
+    "sitat": "Innanfor til dømes økonomiske og administrative fag og samfunnsfag og juridiske fag meiner regjeringa at institusjonane må vurdere om dei bør redusere studiekapasiteten for å prioritere andre utdanningar som samfunnet treng meir, gitt mangel på arbeidskraft framover.",
+    "kilde": "prop1s-2027",
+    "side": 230,
+    "trykt": 228
+   },
+   {
+    "tittel": "Begrunnelsen",
+    "sitat": "Kandidatane innanfor desse faga får som regel relevante jobbar, og det er god søkning til tilgjengelege studieplassar. […] Samstundes er det ingen tydeleg mangel på arbeidskraft innanfor desse fagområda.",
+    "kilde": "prop1s-2027",
+    "side": 225,
+    "trykt": 223
+   },
+   {
+    "tittel": "Virkemiddelet: utviklingsavtalene",
+    "sitat": "Utviklingsavtalane skal synleggjere koplinga til kompetansebudsjettet og korleis avtalane kan nyttast for å understøtte arbeidet med omprioriteringar og samarbeid og arbeidsdeling.",
+    "kilde": "prop1s-2027",
+    "side": 218,
+    "trykt": 216
+   },
+   {
+    "tittel": "I NMBUs utkast til utviklingsavtale 2027–2030",
+    "sitat": "8. Prioritere ressursene og utvikle studieporteføljen i tråd med samfunnets kompetansebehov og NMBUs nasjonale ansvar.",
+    "kilde": "utviklingsavtale-2027-2030-utkast",
+    "side": 6
+   }
+  ],
+  "tekst": [
+   {
+    "tittel": "HH bærer en stor del av veksten",
+    "tekst": "HH økte fra 1 523 til 1 680 egenfinansierte studiepoengenheter fra 2024 til 2025 (DBH), om lag to tredjedeler av NMBUs økning. NMBU anslår selv at HH står for 9,2 av de 15,8 mill. kr i studiepoenguttelling. I de foreløpige rammene for 2027 får HH 91,6 mill. kr, 5,7 mill. kr (6,6 %) mer enn i 2026 og den største økningen blant fakultetene. Kuttet i forslaget ble som NMBU antok, så rammen ser ut til å holde, og lønns- og priskompensasjonen kommer i tillegg.",
+    "kilder": [
+     {
+      "kilde": "arsplan-2027",
+      "side": 8
+     },
+     {
+      "kilde": "arsplan-2027",
+      "side": 10
+     },
+     {
+      "kilde": "orientering-forslag-2027",
+      "side": 11
+     }
+    ]
+   },
+   {
+    "tittel": "Lav sats, men også lav kostnad",
+    "tekst": "HHs studiepoeng ligger i kategori 1, som gir 60 850 kr per studiepoengenhet, mot 91 200 kr i kategori 2. NMBUs kategori 1 utgjør 2 215 enheter, og HH står for om lag tre firedeler av dem. Til gjengjeld produserer HH om lag 38 studiepoengenheter per faglig årsverk, mot under 10 for NMBU samlet (DBH 900 og 225). Uttellingen per faglig årsverk er derfor høy selv med lav sats.",
+    "kilder": [
+     {
+      "kilde": "orientering-forslag-2027",
+      "side": 19
+     },
+     {
+      "kilde": "orientering-forslag-2027",
+      "side": 22
+     }
+    ]
+   },
+   {
+    "tittel": "Kompetansebudsjettet peker mot økonomifagene",
+    "tekst": "For første gang ber regjeringen institusjonene vurdere å redusere studiekapasiteten i blant annet økonomisk-administrative fag. Det koster ikke penger i 2027, men skal følges opp gjennom utviklingsavtalene for 2027–2030. NMBUs utkast har allerede et styringsparameter om å prioritere ressursene og studieporteføljen etter samfunnets kompetansebehov. HH er NMBUs økonomimiljø, så det er her signalet treffer. Samtidig sier NMBUs årsplan for 2027 at studiepoengproduksjonen må opp for å kompensere for kutt, og der er HH motoren.",
+    "kilder": [
+     {
+      "kilde": "prop1s-2027",
+      "side": 230
+     },
+     {
+      "kilde": "prop1s-2027",
+      "side": 218
+     },
+     {
+      "kilde": "utviklingsavtale-2027-2030-utkast",
+      "side": 6
+     },
+     {
+      "kilde": "arsplan-2027",
+      "side": 6
+     }
+    ]
+   },
+   {
+    "tittel": "Risikoen fra 2028",
+    "tekst": "Uttellingen bygger på endringen fra ett år til det neste. Budsjettet for 2028 regnes ut fra endringen fra 2025 til 2026, så faller HHs studiepoeng, gir det trekk. NMBU har lagt inn −7,3 mill. kr i resultatuttelling for 2028 og et årlig kutt på 16,9 mill. kr i hele perioden. HHs langtidsbudsjett peker selv på at fysisk eksamen fra 2026 kan gi noe færre studenter.",
+    "kilder": [
+     {
+      "kilde": "orientering-forslag-2027",
+      "side": 24
+     },
+     {
+      "kilde": "arsplan-2027",
+      "side": 9
+     },
+     {
+      "kilde": "hh-langtidsbudsjett-2026-2030",
+      "side": 1
+     }
+    ]
+   },
+   {
+    "tittel": "Veien videre",
+    "tekst": "Universitetsstyret behandler de endelige rammene for 2027 i oktober. Stortinget vedtar budsjettet i desember, og deretter kommer orienteringen etter vedtak og tildelingsbrevet for 2027 med den nye utviklingsavtalen.",
+    "kilder": [
+     {
+      "kilde": "arsplan-2027",
+      "side": 2
+     },
+     {
+      "kilde": "orientering-forslag-2027",
+      "side": 7
      }
     ]
    }

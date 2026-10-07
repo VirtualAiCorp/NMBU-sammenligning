@@ -158,7 +158,7 @@ Universitetsstyrets møteplan etter 10.09.2026 var ikke publisert 30.09.2026. Da
 
 | Når | Hva | Påvirker |
 |---|---|---|
-| Tidlig i oktober 2026 | Prop. 1 S 2027 (statsbudsjettforslaget) og KDs «Orientering om forslag til statsbudsjettet 2027» | Rammebevilgning 2027, nye studieplasser |
+| ~~Tidlig i oktober 2026~~ 7.10.2026, lagt inn | Prop. 1 S 2027 (statsbudsjettforslaget) og KDs «Orientering om forslag til statsbudsjettet 2027» | `statsbudsjett-2027.json`, rammebevilgning og resultatuttelling 2027 (budsjett) |
 | Oktober 2026 | Fakultetsstyrenes regnskap per 2. tertial for BIOVIT, KBM, LANDSAM, MINA, REALTEK og VET | Fakultetsprognoser 2026-T2 |
 | November 2026 (2025: 10.11, 2024: 13.11) | Universitetsstyret: rapport for 2. tertial 2026, årsplan og rammer 2027, opptaksrammer 2027/28, orientering om opptak 2026 | Alle fakultetsserier 2026-T2, nettoramme 2027, plasser og møtt |
 | Desember 2026 | Orientering om statsbudsjettet 2027 etter vedtak, tildelingsbrev 2027 | Rammebevilgning 2027, resultatbasert uttelling, fullføringsgrad 2025 |
@@ -202,3 +202,22 @@ Neste Studiebarometer gjennomføres høsten 2027. HK-dir har gått over til mål
    - Status 30.09.2026: 575 punkter. 540 er funnet i PDF-teksten, og 35 er lest fra bildetabeller.
 6. **Tekstene** (`tekst` i kildefilene) skal være parafrasert, uten personnavn og med sitater under 15 ord. Hver tekst
    har kilder med side. Ved ny tertialrapport bør «Hovedpunkter fra siste tertialrapport» skrives om.
+
+## Statsbudsjettet (lagt inn 7.10.2026)
+
+`data/nmbu/ledelse/statsbudsjett-<år>.json` beskriver hvordan statsbudsjettet treffer NMBU og HH. `build-ledelse.py` skriver
+nyeste år som blokken `statsbudsjett` i `public/ledelse/nmbu.json` og sjekker alle `kilde`/`side`-par mot kildelista og
+sidetallet i PDF-ene. Visningen er `styringsinformasjon/Statsbudsjett.tsx` øverst på «Økonomi og drift» (fire deler: NMBU
+fra 2026 til 2027 med NMBUs egen prognose, Handelshøyskolen, kompetansebudsjettet med våre vurderinger, og sektoren).
+KI-chatten får linjene fra `statsbudsjett_linjer()` i `build-ki-grunnlag.py`.
+
+- **Kilder:** KDs orientering om forslaget (foreløpig tildelingsbrev, `kd-orientering-forslag-statsbudsjettet-2027.pdf`) og hele
+  Prop. 1 S (2026–2027) KD (`kd-prop-1-s-2026-2027.pdf`, 5,9 MB). I Prop. 1 S er den trykte siden 2 lavere enn PDF-siden; dataene
+  bruker PDF-siden, og sitatene har `trykt` i tillegg. Kompetansebudsjettet er del III kap. 5 (PDF-s. 217–235).
+- **Kontroll:** summene i KDs tabell 3 (45 892 711 / 47 862 058 / 256 155 i 1 000 kr) er gjenskapt fra radene; prisjusteringen er
+  3,7 % av rammen for hver institusjon.
+- **HH-tall:** HHs studiepoeng er DBH-tabell 900 (ny produksjon, egenfinansiert), ikke KDs indikator. HHs andel av uttellingen
+  (9,2 mill. kr) er NMBUs eget anslag i sak 24/26 s. 8.
+- **Vurderingene** (`tekst`) er studierådgivernes, merket slik i visningen og i KI-linjene.
+- **Neste:** etter budsjettvedtaket i desember: legg inn orienteringen etter vedtak og tildelingsbrevet 2027, sett `status` til
+  «vedtatt», og oppdater fakultetsrammene når universitetsstyret har vedtatt endelige rammer for 2027.

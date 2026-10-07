@@ -214,6 +214,24 @@ def main():
                 ut[inngang]["tekst"].append({"tittel": t["tittel"], "tekst": t["tekst"],
                                              "kilder": [{"kilde": k["kilde"], "side": k.get("side")} for k in t["kilder"]]})
 
+    # Statsbudsjettet (data/nmbu/ledelse/statsbudsjett-<år>.json): nyeste år skrives som «statsbudsjett». Alle objekter
+    # med «kilde» (og «kilde2025» o.l.) sjekkes mot kildelista og sidetallet i PDF-en, som for seriene.
+    def gaa(x, hvor):
+        if isinstance(x, dict):
+            for k, v in x.items():
+                if k.startswith("kilde") and k != "kilder" and isinstance(v, str):
+                    sjekk_side(v, x.get("side" + k[len("kilde"):]), hvor)
+                gaa(v, f"{hvor}/{k}")
+        elif isinstance(x, list):
+            for i, v in enumerate(x):
+                gaa(v, f"{hvor}[{i}]")
+    sb = sorted(DATA.glob("statsbudsjett-*.json"))
+    if sb:
+        d = les(sb[-1])
+        d.pop("_merknad", None)
+        gaa(d, sb[-1].name)
+        ut["statsbudsjett"] = d
+
     total = 0
     for kid in sorted(brukt, key=lambda x: list(kilder).index(x)):
         k = kilder[kid]

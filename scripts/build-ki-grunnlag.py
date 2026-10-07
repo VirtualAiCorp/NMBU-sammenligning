@@ -23,7 +23,9 @@ FAKULTETER = {"hh": "Handelshøyskolen", "landsam": "Fakultet for landskap og sa
 KORT = {"hh": "HH", "landsam": "LANDSAM", "realtek": "REALTEK", "biovit": "BIOVIT", "kbm": "KBM", "mina": "MINA", "vet": "VET"}
 NIVAA = {"bachelor": "bachelor", "master5": "femårig master", "master2": "toårig master", "aarsstudium": "årsstudium"}
 # Metodeavsnitt som er relevante for brukerne (ikke arbeidsform, kommandoer, passord, intern analyse eller teknikk)
-UTELAT = {"3", "4", "5", "6", "8", "9", "10", "16", "18", "19", "22", "24", "33", "37", "41", "42"}
+UTELAT = {"3", "4", "5", "6", "8", "9", "10", "16", "18", "19", "22", "24", "33", "37", "41", "42", "45", "46", "47", "48", "49", "50"}
+# Avsnitt om den interne rangeringen (AJG, kart, Pure, OpenAlex) holdes alltid utenfor, også nye som ikke står i UTELAT
+INTERN_RANGERING = re.compile(r"Handelshoyskolerangering|Rangering \(intern\)|\?rangering|AJG|ajg2024|OpenAlex|Pure \(OAI", re.I)
 
 
 def nf(v, d=0):
@@ -710,6 +712,63 @@ def ledelse_linjer():
     ut.append(["Styringsinformasjon", "forklaring", "STYRINGSINFORMASJON · slik leses tallene: periode «2026-T1» er 1. tertial 2026; «prognose» er anslaget for hele året gitt ved det tertialet; "
                "«budsjett» og «mål» er planer; tall uten merke er faktiske årstall. Årsresultat og balanse for fakultetene er internregnskapet for tildelte midler (mill. kr, negativt tall er merforbruk). "
                f"Kildene er NMBUs offentlige styresaker, årsrapporter og Kunnskapsdepartementets tildelingsbrev, hentet {d.get('hentet', '')}.", "l", "nmbu-okonomi-drift", ""])
+    ut += statsbudsjett_linjer(d.get("statsbudsjett"), kildetekst)
+    return ut
+
+
+def statsbudsjett_linjer(sb, kildetekst):
+    """STATSBUDSJETT: regjeringens forslag (eller vedtatt budsjett) for NMBU og HH (blokken «statsbudsjett» i
+    public/ledelse/nmbu.json, fra data/nmbu/ledelse/statsbudsjett-<år>.json). Sidetall er PDF-sider; i Prop. 1 S er
+    trykt side 2 lavere."""
+    if not sb:
+        return []
+    aar, side = sb["aar"], "nmbu-okonomi-drift"
+    status = "regjeringens forslag lagt fram " + sb.get("fremlagt", "") if sb.get("status") == "forslag" else "vedtatt budsjett"
+    hode = f"STATSBUDSJETTET {aar} ({status})"
+    m = lambda v: nf(v, 1)  # noqa: E731
+    fortegn = lambda v: ("+" if v > 0 else "−" if v < 0 else "±") + nf(abs(v), 1)  # noqa: E731
+    ref = lambda x: (x.get("kilde"), x.get("side"))  # noqa: E731
+    ut = []
+    n = sb["nmbu"]
+    pris = next((p["verdi"] for p in n["poster"] if p["id"] == "pris"), 0)
+    reell = n["forslag2027"]["verdi"] - n["ramme2026"]["verdi"] - pris
+    poster = "; ".join(f"{p['navn']} {fortegn(p['verdi'])} ({p.get('forklaring', '')})" for p in n["poster"])
+    sek = sb["sektor"]["rader"]
+    a = sum(r["saldert2026"] for r in sek); b = sum(r["forslag2027"] for r in sek)
+    ut.append(["Statsbudsjettet", f"NMBU {aar}", f"{hode} · NMBUs ramme (KD kap. 260 post 50) fra {m(n['ramme2026']['verdi'])} mill. kr i {aar - 1} til {m(n['forslag2027']['verdi'])} mill. kr i {aar}. "
+               f"Endringene i mill. kr: {poster}. Utover prisjusteringen er endringen {fortegn(reell)} mill. kr ({nf(100 * reell / n['ramme2026']['verdi'], 2)} % reelt); "
+               f"for de statlige institusjonene samlet {nf(100 * (b - a * 1.037) / a, 1)} %. Uten resultatuttellingen ville NMBU fått en reell nedgang. "
+               f"Kilder: {kildetekst([ref(n['ramme2026'])] + [ref(p) for p in n['poster']])}.", "l", side, ""])
+    r = sb["resultat"]
+    ind = "; ".join(f"{x['navn']} {fortegn(x['verdi'])} mill. kr ({x.get('grunnlag', '')})" for x in r["indikatorer"])
+    kat = "; ".join(f"kategori {k['kat']} ({k['navn']}): {nf(k['enheter2025'], 0)} enheter i 2025, {('+' if k['endring'] >= 0 else '−') + nf(abs(k['endring']), 0)} fra 2024, sats {nf(k['sats'], 0)} kr per 60-studiepoengenhet" for k in r["studiepoeng"])
+    hh = sb["hh"]["studiepoeng"]
+    ut.append(["Statsbudsjettet", f"resultatbasert uttelling {aar}", f"{hode} · NMBUs resultatbaserte uttelling: {ind}. Studiepoeng per kategori: {kat}. "
+               f"HH (Handelshøyskolen) hører til kategori 1 og økte fra {nf(hh['2024'], 0)} til {nf(hh['2025'], 0)} egenfinansierte studiepoengenheter fra 2024 til 2025 (DBH-tabell 900), "
+               f"mens NMBU samlet økte med {nf(hh['nmbu2025'] - hh['nmbu2024'], 0)} (DBH-tallene avviker litt fra KDs indikator). "
+               f"Kilder: {kildetekst([ref(x) for x in r['indikatorer']] + [ref(k) for k in r['studiepoeng']] + [ref(r.get('satserKilde') or {})])}.", "l", side, ""])
+    p = sb["prognose"]
+    ut.append(["Statsbudsjettet", "NMBUs prognose mot forslaget", f"{hode} · NMBUs anslag i juni (universitetsstyret sak 24/26) mot forslaget, mill. kr: "
+               + "; ".join(f"{x['navn']}: anslag {fortegn(x['prognose']) if x['prognose'] else 'ikke med'}, forslag {fortegn(x['forslag'])}" for x in p["rader"])
+               + f". Kilder: {kildetekst([ref(p), ref(n['ramme2026'])])}.", "l", side, ""])
+    f = sb["fakulteter"]
+    fak = "; ".join(f"{NIVAANAVN.get(x['nivaa'], x['nivaa'])}: {m(x['r2025'])} (2025), {m(x['r2026'])} (2026), {m(x['r2027'])} (2027 foreløpig)" for x in f["rader"])
+    fakta = " ".join(x["tekst"] for x in sb["hh"]["fakta"])
+    ut.append(["Statsbudsjettet", f"HH og fakultetsrammene {aar}", f"{hode} · Fakultetenes nettorammer fra universitetsstyret i mill. kr (foreløpige for {aar}, før lønns- og priskompensasjon; endelig behandling i oktober): {fak}. "
+               f"HH får den største økningen. Fra NMBUs og HHs dokumenter: {fakta} "
+               f"Kilder: {kildetekst([ref(f), (f.get('kilde2025'), f.get('side2025'))] + [ref(x) for x in sb['hh']['fakta']])}.", "l", side, ""])
+    rader = sorted(sek, key=lambda x: -x["resultat"] / x["saldert2026"])
+    ut.append(["Statsbudsjettet", f"sektoren {aar}", f"{hode} · Statlige universiteter og høyskoler, resultatbasert uttelling i prosent av rammen for {aar - 1} (og reell endring utover prisjustering): "
+               + "; ".join(f"{x['inst']} {nf(100 * x['resultat'] / x['saldert2026'], 2)} % ({nf(100 * (x['forslag2027'] - x['saldert2026'] * 1.037) / x['saldert2026'], 2)} %)" for x in rader)
+               + f". Den reelle endringen tar med særskilte tildelinger som bygg. "
+               + " ".join(f"{x['inst']} (privat, {x.get('merknad', '')}) får {fortegn(x['studiepoeng'])} mill. kr for studiepoeng." for x in sb["sektor"].get("privat", []))
+               + f" Kilder: {kildetekst([ref(sb['sektor']), (sb['sektor']['kilde'], sb['sektor'].get('resultatSide'))])}.", "l", side, ""])
+    sitater = " ".join(f"{q['tittel']}: «{q['sitat']}»{' (trykt s. ' + str(q['trykt']) + ')' if q.get('trykt') else ''}." for q in sb["kompetansebudsjett"])
+    ut.append(["Statsbudsjettet", "kompetansebudsjettet", f"{hode} · Kompetansebudsjettet i Prop. 1 S (del III kap. 5), første gang. Det gir føringer, ikke detaljstyring, og koster ikke penger i {aar}, men skal følges opp i utviklingsavtalene {aar}–{aar + 3}. "
+               f"{sitater} Kilder: {kildetekst([ref(q) for q in sb['kompetansebudsjett']])}.", "l", side, ""])
+    for t in sb.get("tekst", []):
+        ut.append(["Statsbudsjettet", t["tittel"], f"{hode} · Vurdering fra studierådgiverne ved Handelshøyskolen (ikke NMBUs eller KDs): {t['tittel']}. {t['tekst']} "
+                   f"Kilder: {kildetekst([ref(k) for k in t.get('kilder', [])])}."[:2390], "l", side, ""])
     return ut
 
 
@@ -766,7 +825,7 @@ def metode():
     ut = []
     for blokk in re.split(r"\n(?=## )", tekst):
         m = re.match(r"## (\d+)\. (.+)", blokk)
-        if not m or m.group(1) in UTELAT:
+        if not m or m.group(1) in UTELAT or INTERN_RANGERING.search(blokk):
             continue
         tittel = f"§{m.group(1)} {m.group(2).strip()}"
         kropp = blokk.split("\n", 1)[1] if "\n" in blokk else ""

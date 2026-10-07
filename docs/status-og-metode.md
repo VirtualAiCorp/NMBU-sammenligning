@@ -821,12 +821,6 @@ KI-chat og uten «Spør KI» (`utenKi` på `AfModulSide`). Grunnen er at metoden
 - **04.10 – eget nettsted for rangeringen:** byggevariant `VITE_KUN_RANGERING=1` (`src/rangering-main.tsx`, ingen
   public-mappe, utmappe `dist-rangering`, 2,9 MB) og egen kryptert datafil `public/rangering-data.json` med
   `RANGERING_PASSORD`. Cloudflare-prosjekt `hh-rangering` settes opp av Mathias etter docs/publisering-cloudflare.md §5.
-
-## 43. Bioøkonomi (master) i HH-sammenligningene (06.10.2026)
-
-- **Ny HH-gruppe «Bioøkonomi (master)»** (`bioec`, `make-hh-programkart.py`, liste `BIOEC`): NMBUs M-BIOEC (Bioøkonomi – biobasert verdiskaping og forretningsutvikling). Programmet sto i den opprinnelige HH-analysen bare blant NMBUs egne mastere (masteroppgaver) uten konkurrenter, og falt derfor ut da HH ble bygd på standardformatet.
-- **Sammenligning:** ingen andre institusjoner i HH-sammenligningene har en master i bioøkonomi (søk i DBH 347). NTNUs Master of Science in Circular Economy (MSCE, Fakultet for ingeniørvitenskap) er tatt med som svakere sammenligning (default false); den har ingen rader i DBH 379 (lokalt opptak) og få kandidater i emnene.
-- **Kjøring:** `make-hh-programkart.py`, `fill-local-admissions.py hh`, `build-faculty.sh hh`, `build-completion.py hh`, `build-students.py hh`, `build-studiebarometer.py hh`, `build-oppmote.py --fak hh`, `build-revenue.py`, `build-staff.py`, `build-economy.py`, `build-ki-grunnlag.py`. Arbeidsmarkeds- og landssnittkoblingen har ingen oppføring for gruppen.
 - **KI-grunnlaget:** §42 (den interne rangeringen) holdes utenfor (`UTELAT`), og kildevakten stopper bygget hvis rangeringen nevnes i grunnlaget.
 - **07.10 – AJG 2024 for alle år (Mathias), oppslag for hånd som reserve:** `scripts/rangering/lag_ajg_oppslag.py` →
   `data/rangering/tidsskrift/ajg-oppslag.xlsx` (gitignored): de 2 594 tidsskriftene de 15 skolene publiserte NVI-artikler i
@@ -854,6 +848,12 @@ KI-chat og uten «Spør KI» (`utenKi` på `AfModulSide`). Grunnen er at metoden
   (ingen), andre publikasjonstyper i AJG-kanaler (ingen), AJG 2021 i stedet for 2024 (gir også 12), ISSN-avvik (ingen AJG-
   tidsskrift uten treff). Grunnlaget er det samme som DBH (71 publikasjoner = 66 artikler + 5 kapitler). Trolig ulikt
   uttrekk/tidspunkt hos NHH; avklares best ved å be NHH om artikkellista. 2025: 1 / 4 / 18 (ny topp for HH).
+
+## 43. Bioøkonomi (master) i HH-sammenligningene (06.10.2026)
+
+- **Ny HH-gruppe «Bioøkonomi (master)»** (`bioec`, `make-hh-programkart.py`, liste `BIOEC`): NMBUs M-BIOEC (Bioøkonomi – biobasert verdiskaping og forretningsutvikling). Programmet sto i den opprinnelige HH-analysen bare blant NMBUs egne mastere (masteroppgaver) uten konkurrenter, og falt derfor ut da HH ble bygd på standardformatet.
+- **Sammenligning:** ingen andre institusjoner i HH-sammenligningene har en master i bioøkonomi (søk i DBH 347). NTNUs Master of Science in Circular Economy (MSCE, Fakultet for ingeniørvitenskap) er tatt med som svakere sammenligning (default false); den har ingen rader i DBH 379 (lokalt opptak) og få kandidater i emnene.
+- **Kjøring:** `make-hh-programkart.py`, `fill-local-admissions.py hh`, `build-faculty.sh hh`, `build-completion.py hh`, `build-students.py hh`, `build-studiebarometer.py hh`, `build-oppmote.py --fak hh`, `build-revenue.py`, `build-staff.py`, `build-economy.py`, `build-ki-grunnlag.py`. Arbeidsmarkeds- og landssnittkoblingen har ingen oppføring for gruppen.
 
 ## 44. NHHs masteropptak: søknadsalternativer og internasjonal MSc (07.10.2026)
 
