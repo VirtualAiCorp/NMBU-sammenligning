@@ -1211,7 +1211,7 @@ function AjgKort({ data }: { data: Data }) {
         </BarChart>
       </ResponsiveContainer>
       <p className="text-xs mt-2" style={{ color: 'var(--nmbu-neutral-2)' }}>
-        Kilde: <a href={meta.url} target="_blank" rel="noreferrer" className="hover:underline" style={{ color: GRONN }}>{meta.kilde}</a> (s. {Object.entries(meta.sider).map(([k, s]) => `${s}: ${k}`).join(', ')}). Årsverk = {meta.nevner}. NHHs tabell for nivå 3 har samme antall i 2022 som i 2020 for nesten alle skolene, mens tallene per årsverk er ulike; 2022-antallet for nivå 3 er derfor usikkert. Egen kobling av alle artikler mot AJG kommer når tillatelsen fra Chartered ABS er på plass.
+        Kilde: <a href={meta.url} target="_blank" rel="noreferrer" className="hover:underline" style={{ color: GRONN }}>{meta.kilde}</a> (s. {Object.entries(meta.sider).map(([k, s]) => `${s}: ${k}`).join(', ')}). Årsverk = {meta.nevner}. NHHs tabell for nivå 3 har samme antall i 2022 som i 2020 for nesten alle skolene, mens tallene per årsverk er ulike; 2022-antallet for nivå 3 er derfor usikkert. {data.lister.ajg ? 'Alle artiklene er i tillegg koblet mot AJG 2024 (brukt etter avtale med Chartered ABS); se fanen «AJG-sammenligning» for alle 15 skoler.' : 'Egen kobling av alle artiklene mot AJG brukes bare når AJG-lista er lagt inn etter avtale med Chartered ABS.'}
       </p>
     </div>
   );
@@ -1400,7 +1400,7 @@ function Forside({ data, rader, ind, eff, t, sett, apne }: ForsideProps) {
         <ul style={{ margin: 0, paddingLeft: '1.1em', display: 'grid', gap: 3, fontSize: '.86rem' }}>
           <li><b>Poeng.</b> {ind.filter((i) => eff.ut[i.id] > 0).length} mål i fire dimensjoner, skalert 0–100 og vektet. Forskning teller {t.forsk} %. Mangler en skole et mål, fordeles vekten på de andre.</li>
           <li><b>Spenn og grupper.</b> Spennet er plassen når forskningens andel varierer fra 50 til 85 %. Topp, Midt og Nedre er tredjedeler av lista med valgte vekter.</li>
-          <li><b>Kilder.</b> DBH/HK-dir, NVA koblet mot ABDC, FT50 og UTD24, et kalibrert AJG-anslag, Samordna opptak, lokale opptaksgrenser til siviløkonom og Studiebarometeret. Utkast {data.generert}.</li>
+          <li><b>Kilder.</b> DBH/HK-dir, NVA koblet mot ABDC, FT50, UTD24 og {data.lister.ajg ? 'AJG 2024 (Chartered ABS, brukt etter avtale)' : 'et kalibrert AJG-anslag'}, Samordna opptak, lokale opptaksgrenser til siviløkonom og Studiebarometeret. Utkast {data.generert}.</li>
         </ul>
       </section>
     </div>
@@ -2291,8 +2291,9 @@ function Metode({ data, ind }: { data: Data; ind: Ind[] }) {
         Hver NVI-rapporterte artikkel i NVA plasseres på ett trinn: det høyeste den oppnår i det norske nivåsystemet, ABDC, FT50/UTD24 eller AJG (når lista er lagt inn). Basis = norsk nivå 1, ABDC B/C, AJG 1–2; Høy = norsk nivå 2, ABDC A, AJG 3; Topp = FT50/UTD24, ABDC A*, AJG 4/4*. Artikkelen telles én gang, med enhetens andel av forfatterne (1/n per forfatter) som standard, og vektes 1 : 3 : 5. Summen deles på snittet av årsverk (UN1 + UN2) i perioden. Dekningsgraden viser hvor stor del av artiklene de internasjonale listene vurderer. Hvilke lister som faktisk gir Topp (i praksis nesten bare ABDC A*), vises i «Slik rapporterer skolene». Alt kan endres i Forskningslab, og målet i rangeringen følger innstillingene der.
       </div>
       <div>
-        <div style={{ fontWeight: 600, color: GRONN }}>AJG-anslag</div>
-        AJG 2024 kan ikke hentes maskinelt (Chartered ABS forbyr skraping, og lista har ingen eksport). Vi bruker derfor et kalibrert anslag fra åpne kilder: en artikkel regnes som «AJG 4/4*-nivå» hvis tidsskriftet står på FT50 eller UTD24, eller har ABDC A* og OpenAlex-sitering (2-års snitt) på minst 5. Regelen er valgt ved å teste mot NHH Research Reports AJG-tall for sju skoler 2020–2024: korrelasjon 0,98 per skole og år, totalt 9 % flere enn fasit, og nesten samme rekkefølge mellom skolene. Anslaget gir flere toppartikler enn NHH-tabellen for UiS, UiT, UiA og NMBU, blant annet innen reiseliv og energi- og miljøøkonomi, dels fordi NHH avgrenser enhetene annerledes. Det sier ingenting om AJG-nivået til enkelttidsskrift.
+        <div style={{ fontWeight: 600, color: GRONN }}>{data.lister.ajg ? 'AJG 2024 og AJG-anslaget' : 'AJG-anslag'}</div>
+        {data.lister.ajg && <>Artiklene er koblet på ISSN mot AJG 2024, hentet ut manuelt etter avtale med Chartered ABS (lista ligger ikke i nettleserdataene; bare tellinger). Samme liste brukes for alle år. Anslaget under er beholdt som reserve og sammenligning, og brukes i stedet for AJG hvis lista fjernes.{' '}</>}
+        AJG 2024 kan ikke hentes maskinelt (Chartered ABS forbyr skraping, og lista har ingen eksport). Uten lista brukes derfor et kalibrert anslag fra åpne kilder: en artikkel regnes som «AJG 4/4*-nivå» hvis tidsskriftet står på FT50 eller UTD24, eller har ABDC A* og OpenAlex-sitering (2-års snitt) på minst 5. Regelen er valgt ved å teste mot NHH Research Reports AJG-tall for sju skoler 2020–2024: korrelasjon 0,98 per skole og år, totalt 9 % flere enn fasit, og nesten samme rekkefølge mellom skolene. Anslaget gir flere toppartikler enn NHH-tabellen for UiS, UiT, UiA og NMBU, blant annet innen reiseliv og energi- og miljøøkonomi, dels fordi NHH avgrenser enhetene annerledes. Det sier ingenting om AJG-nivået til enkelttidsskrift.
       </div>
       <div>
         <div style={{ fontWeight: 600, color: GRONN }}>Plassintervall og grupper</div>
