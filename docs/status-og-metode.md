@@ -846,3 +846,11 @@ KI-chat og uten «Spør KI» (`utenKi` på `AfModulSide`). Grunnen er at metoden
   brukte AJG-versjonen som gjaldt da, mens vi bruker AJG 2024 for alle år (Mathias' valg). BI 2025 4+4*: 64 mot BIs 63.
   Ny standardrangering: UiA 76, NHH 76, UiS 76, BI 75, NTNU 67, HH NMBU 48. NB: «Tidsskriftene bak Topp» viser AJG-nivå per
   tidsskrift for de listede tidsskriftene (internt, passordbeskyttet).
+- **07.10 – AJG-pilot HH NMBU:** `scripts/rangering/ajg_gjennomgang.py <skole> [--aar]` skriver
+  `data/rangering/kontroll/ajg-gjennomgang/<skole>.md` (gitignored; tall per år mot DBH og NHH-rapporten + artikkelliste).
+  NMBU: 2020, 2021 og 2023 er identiske med NHH-rapporten (0/1/9, 0/1/13, 0/1/8). 2022 (17 mot 9) er NHH-tabellens kjente
+  feil: nivå 3 for 2022 gjentar 2020-tallet (samme for UiA 14, Nord 3, UiS 8). 2024: 12 mot 16 på nivå 3 lar seg ikke
+  gjenskape. Sjekket og utelukket: NVI-periode ≠ publiseringsår (alle like), artikler ved andre NMBU-enheter med HH-forfattere
+  (ingen), andre publikasjonstyper i AJG-kanaler (ingen), AJG 2021 i stedet for 2024 (gir også 12), ISSN-avvik (ingen AJG-
+  tidsskrift uten treff). Grunnlaget er det samme som DBH (71 publikasjoner = 66 artikler + 5 kapitler). Trolig ulikt
+  uttrekk/tidspunkt hos NHH; avklares best ved å be NHH om artikkellista. 2025: 1 / 4 / 18 (ny topp for HH).
