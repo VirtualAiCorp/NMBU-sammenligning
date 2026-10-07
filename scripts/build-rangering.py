@@ -471,6 +471,43 @@ def main():
         topp.sort(key=lambda t: (-t["aar"], t["tidsskrift"] or ""))
         return per_aar, topp, dict(fag)
 
+    # ── HH NMBUs egne artikler med AJG-nivå (fanen «HH NMBU etter AJG») ──
+    # Bare HH NMBU, bare når AJG-lista finnes (avtalen med Chartered ABS). Kompakt: tidsskriftene én gang
+    # (navn, AJG-nivå, AJG-fagfelt, ISSN), artiklene som rader med indeks til tidsskriftet. Ingen forfatternavn (lagres ikke).
+    # Forsvinner når ajg2024.csv slettes og det bygges på nytt, og fanen skjules da.
+    HH_FELT = ["id", "aar", "tittel", "tidsskrift", "niva", "nvi", "egne", "forfattere", "intl"]
+
+    def hh_liste(sid):
+        if not lister["ajg"]:
+            return None
+        tids, tix, rader = [], {}, []
+        for f in sorted((RANG / "nva" / sid).glob("*.json")):
+            d = json.loads(f.read_text(encoding="utf-8"))
+            if not (Y0 <= int(d["aar"]) <= Y1):
+                continue
+            for x in d["artikler"]:
+                iss = [i for i in (issn(x.get("issn")), issn(x.get("eissn"))) if i]
+                tj = next((lister["ajg"][i] for i in iss if i in lister["ajg"]), None)
+                # «4*»–«1», None = ikke på AJG 2024, «?» = usjekket (delvis liste fylt inn for hånd)
+                nivaa = tj[0] if tj and tj[0] in AJG_NIVAER else None if (tj or not ajg_delvis) else "?"
+                fagf = tj[1] if tj and nivaa in AJG_NIVAER else None
+                navn = (x.get("tidsskrift") or "").strip() or "(uten tidsskrift)"
+                nok = (x.get("kanal") or navn.lower(), nivaa, fagf)
+                if nok not in tix:
+                    tix[nok] = len(tids)
+                    tids.append([navn, nivaa, fagf, x.get("issn") or x.get("eissn") or None])
+                niva = {"LevelTwo": "2", "LevelOne": "1", "LevelZero": "0"}.get(x.get("niva"), "")
+                rader.append([x.get("id"), int(d["aar"]), x.get("tittel") or "", tix[nok], niva, int(bool(x.get("nvi"))),
+                              int(x.get("egne") or 0), int(x.get("forfattere") or 0), int(bool(x.get("intl")))])
+        rader.sort(key=lambda r: (-r[1], r[2]))
+        print(f"HH-liste ({sid}): {len(rader)} artikler, {len(tids)} tidsskrift, "
+              f"{sum(1 for t in tids if t[1] in AJG_NIVAER)} på AJG 2024")
+        return {"skole": sid, "felt": HH_FELT, "tidsskrift": tids, "artikler": rader, "ajgDelvis": ajg_delvis,
+                "nvaUrl": "https://nva.sikt.no/registration/",
+                "merknad": "Artikler (AcademicArticle og AcademicLiteratureReview) med minst én forfatter tilknyttet NVA-enhet "
+                           "192.11.0.0 Handelshøyskolen ved NMBU (inkludert underenheten 192.11.1.0 Skatteforsk), "
+                           f"{Y0}–{Y1}, koblet på ISSN/eISSN mot AJG 2024 for alle år."}
+
     # ── Utdanning (gjenbruk av HH-sammenligningene) ──
     adm = json.loads((APPDATA / "hhAdmissionData.json").read_text(encoding="utf-8"))
     comp = json.loads((APPDATA / "hhCompletionData.json").read_text(encoding="utf-8"))
@@ -571,7 +608,9 @@ def main():
     norden = les_norden({s["id"] for s in ut_skoler})
     data = {"versjon": 1, "generert": dt.date.today().isoformat(), "aar": [Y0, Y1], "kontroll": kontroll, "norden": norden,
             "ajgNhh": {k: v for k, v in (ajg_nhh or {}).items() if k != "skoler"} or None,
-            "lister": {**{k: bool(v) for k, v in lister.items()}, "ajgDelvis": ajg_delvis}, "skoler": ut_skoler}
+            "lister": {**{k: bool(v) for k, v in lister.items()}, "ajgDelvis": ajg_delvis}, "skoler": ut_skoler,
+            # HH NMBUs egne artikler med AJG-nivå (bare når AJG-lista finnes; kryptert som resten)
+            "hhAjg": hh_liste("nmbu")}
     if a.klartekst:
         KLAR.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
         print(f"Skrev {KLAR.relative_to(ROOT)} (klartekst, gitignored).")

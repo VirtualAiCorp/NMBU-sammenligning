@@ -933,3 +933,27 @@ for Norge i `KartFane` i `Handelshoyskolerangering.tsx`, stil under `.skp.kart` 
 - **Svakheter:** ulike avgrensninger (fagfelt i Finland, enhet ellers), ulike nevnere og kilder (Pure og SwePub er
   selvregistrert, ikke NVI), Danmark bare ett år, AJG 2024 brukt bakover, 1:50m-kysten er grov i Oslofjord-utsnittet, og
   skoler med flere studiesteder har ett punkt. Kartet er en oversikt, ikke en nordisk rangering.
+
+## 48. HH NMBU etter AJG: HHs egne artikler per AJG-nivå (07.10.2026)
+
+Ny fane «HH NMBU etter AJG» i den interne rangeringen (`?rangering&fane=hh`; komponent `components/rangering/HhAjg.tsx`,
+koblet inn i `Handelshoyskolerangering.tsx`, stil under `.skp.hh` i `styles/skoleportrett.css`, lys/mørk og mobil 375 px).
+- **Data:** byggeskriptet legger feltet `hhAjg` i de krypterte rangeringsdataene (`hh_liste("nmbu")`), bare for HH NMBU og
+  bare når `ajg2024.csv` finnes: tidsskriftene én gang (navn, AJG-nivå, AJG-fagfelt, ISSN) og artiklene som rader (NVA-id, år,
+  tittel, tidsskriftindeks, norsk nivå, NVI, HH-forfattere, alle forfattere, internasjonal). 750 artikler 2016–2025 (689 NVI),
+  384 tidsskrift (138 på AJG), ca. 110 kB før kryptering. Ingen forfatternavn. Tellingene fra lista er kontrollert mot `rapport`
+  per år (likt). Uten AJG-lista blir `hhAjg` null, fanen skjules, og en direkte lenke viser «AJG ikke lagt inn».
+- **Innhold:** (1) tellinger per år og nivå (4*, 4, 3, 2, 1, ikke på AJG) som stablet stolpe (antall eller andel) og tabell
+  med andel i AJG-tidsskrift, 3+ av alle og 3+ av AJG; hel telling og NVI-rapporterte som standard, brøk (HH-forfattere / alle)
+  og «alle i NVA» som valg. (2) Artikkelliste sortert fra 4* og nedover, så nyeste først, med filter på nivå, periode og
+  fritekst; tittelen lenker til `https://nva.sikt.no/registration/<id>` (sjekket at den åpner artikkelen). (3) Tidsskriftene i
+  perioden gruppert etter AJG-nivå og -fagfelt; klikk filtrerer lista. (4) Kontroll mot NHH Research Report 2024 (2020–2024,
+  alltid hel telling av NVI-artikler) med forklaring av avvikene. (5) CSV av artikkellista (med filtrene, AJG-nivå og fagfelt)
+  og av tellingene (semikolon, desimalkomma). (6) Merknad om grunnlag (NVA 192.11.0.0 inkl. Skatteforsk), AJG 2024 for alle år
+  og at fanen fjernes med AJG-lista når avtalen med Chartered ABS går ut.
+- **Lenke:** `?rangering&fane=hh&hhtelling=brok&hhgrunnlag=alle&hhperiode=2020-2025&hhniva=4s,4,3&hhsok=…&hhvis=andel` (bare avvik
+  fra standard skrives).
+- **Tall 07.10 (NVI, hel telling), 4* / 4 / 3 / 2 / 1 / ikke:** 2023 0/1/8/9/5/32 (55), 2024 0/0/12/7/6/41 (66), 2025
+  1/4/18/15/6/26 (70). 2023–2025: 191 artikler, 92 i AJG-tidsskrift (48 %), 44 på 3+, 6 på 4/4*. 2016–2025: 2/11/132/94/66/384 (689).
+- **Kontroll mot NHH-rapporten:** 2020, 2021 og 2023 identiske; 2022 nivå 3 17 mot 9 (NHH-tabellens kjente feil), 2024 nivå 3
+  12 mot 16 (ikke gjenskapt, se §43). Sum 2020–2024: 0/4/59 mot 0/4/55.

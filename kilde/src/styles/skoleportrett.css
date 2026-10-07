@@ -321,3 +321,68 @@
   .skp .kart-tab td:first-child,.skp .kart-tab th:first-child{position:sticky;left:0;background:var(--bg);z-index:1;min-width:7.5em}
   .skp .kart-tip{width:200px}
 }
+
+/* HH NMBU etter AJG (07.10.2026): HHs egne artikler per AJG-nivå. Bruker AJG-fargene fra .skp.ajg (sekvensiell blå,
+   grått = ikke på AJG); nivået vises som fargeprikk + tekst, så teksten alltid har full kontrast i lys og mørk modus. */
+.skp.hh .aq{background:var(--flate);outline:1px dashed var(--muted);outline-offset:-1px}
+.skp .hh-stolper rect.a5{fill:var(--a5)}.skp .hh-stolper rect.a4{fill:var(--a4)}.skp .hh-stolper rect.a3{fill:var(--a3)}
+.skp .hh-stolper rect.a2{fill:var(--a2)}.skp .hh-stolper rect.a1{fill:var(--a1)}.skp .hh-stolper rect.a0{fill:var(--a0)}
+.skp .hh-stolper rect.aq{fill:var(--flate);stroke:var(--muted);stroke-dasharray:2 2;outline:0}
+.skp .hh-stolper g.hov rect{opacity:.82}
+.skp .hh-stolper .ax.sum{fill:var(--ink);font-weight:600}
+.skp .hh-tall{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px 16px}
+.skp .hh-tall div{border-top:1px solid var(--accent);padding-top:6px;display:flex;flex-direction:column;gap:1px;min-width:0}
+.skp .hh-tall b{font-family:var(--serif);font-size:1.7rem;font-weight:500;line-height:1.05}
+.skp .hh-tall span{font-size:.76rem;color:var(--muted);line-height:1.25}
+.skp .hh-tab td.hoy{font-weight:600}
+.skp .hh-tab tr.sum td{border-top:1px solid var(--accent);font-weight:600}
+.skp i.hh-sw{display:inline-block;width:10px;height:10px;margin-right:6px;vertical-align:0}
+.skp .hh-filter{display:flex;flex-wrap:wrap;gap:10px 20px;align-items:flex-end}
+.skp .hh-sok{display:flex;flex-direction:column;gap:3px;flex:1 1 240px;min-width:0;max-width:420px}
+.skp .hh-sok input{font:inherit;font-size:.88rem;padding:6px 10px;background:var(--bg);color:var(--ink);border:1px solid var(--line2);border-radius:2px;min-height:34px;width:100%}
+.skp .hh-verktoy{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:space-between;font-size:.84rem}
+.skp .seg:disabled{opacity:.45;cursor:not-allowed}
+.skp button.tids{background:none;border:0;padding:0;font:inherit;color:inherit;cursor:pointer;text-align:left;border-bottom:1px dotted var(--line2)}
+.skp button.tids:hover{border-bottom-color:var(--accent)}
+.skp table.hh-art{font-size:.84rem}
+.skp table.hh-art td{vertical-align:top}
+.skp table.hh-art td.aar,.skp table.hh-art th:first-child{padding-left:0;width:3.4em}
+.skp table.hh-art td.niv{text-align:left;font-weight:600;width:4.2em}
+.skp table.hh-art th:nth-child(2){text-align:left}
+.skp table.hh-art td.tit{white-space:normal;text-align:left;min-width:16em;line-height:1.35}
+.skp table.hh-art td.tit a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line2)}
+.skp table.hh-art td.tit a:hover{border-bottom-color:var(--accent)}
+.skp table.hh-art td.tids{white-space:normal;text-align:left;min-width:10em;max-width:18em;line-height:1.3}
+.skp table.hh-art th:nth-child(3),.skp table.hh-art th:nth-child(4){text-align:left}
+.skp table.hh-art td.tids small{display:block;font-size:.72rem;color:var(--muted)}
+.skp table.hh-art tr.hoy td.aar,.skp table.hh-art tr.hoy td.niv{box-shadow:none}
+.skp table.hh-art tr.hoy td{background:color-mix(in srgb,var(--flate) 70%,transparent)}
+.skp .ikkenvi{display:inline-block;margin-left:6px;font-size:.68rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line2);padding:0 4px;border-radius:2px;vertical-align:1px}
+.skp .hh-tids{display:grid;gap:10px}
+.skp details.hh-gr{border-top:1px solid var(--line2);padding-top:8px;font-size:.88rem}
+.skp details.hh-gr summary{color:var(--ink);font-size:.95rem}
+.skp table.hh-tt{max-width:640px;font-size:.84rem;margin-top:4px}
+.skp table.hh-tt td:first-child{padding-left:12px}
+.skp table.hh-tt tr.gh td:first-child{padding-left:0}
+.skp table.hh-tt tr.gh td{padding-top:10px}
+.skp .hh-forkl{margin:0;padding-left:1.1em;display:grid;gap:5px;font-size:.86rem;max-width:100ch}
+@media(max-width:640px){
+  .skp .hh-tall{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .skp .hh-tall b{font-size:1.45rem}
+  .skp table.hh-art,.skp table.hh-art tbody{display:block}
+  .skp table.hh-art thead{display:none}
+  .skp table.hh-art tr{display:grid;grid-template-columns:3.4em repeat(3,minmax(0,1fr));grid-template-areas:"niv tit tit tit" "aar tids tids tids" ". nn ha in";gap:2px 8px;padding:9px 0;border-bottom:1px solid var(--line)}
+  .skp table.hh-art td{display:block;border:0;padding:0;text-align:left;width:auto;min-width:0;max-width:none}
+  .skp table.hh-art td.aar{grid-area:aar;color:var(--muted);font-size:.78rem;width:auto}
+  .skp table.hh-art td.niv{grid-area:niv;width:auto}
+  .skp table.hh-art td.tit{grid-area:tit;min-width:0}
+  .skp table.hh-art td.tids{grid-area:tids;font-size:.8rem;color:var(--muted)}
+  .skp table.hh-art td.nn{grid-area:nn}.skp table.hh-art td.ha{grid-area:ha}.skp table.hh-art td.in{grid-area:in}
+  .skp table.hh-art td.nn,.skp table.hh-art td.ha,.skp table.hh-art td.in{font-size:.78rem}
+  .skp table.hh-art tr.hoy td{background:none}
+  .skp table.hh-art tr.hoy{box-shadow:inset 3px 0 0 var(--a3);padding-left:6px}
+  .skp table.hh-art td[data-l]::before{content:attr(data-l) " ";color:var(--muted);font-size:.7rem}
+  .skp table.hh-tt td:first-child{white-space:normal}
+  .skp.hh table.ajg-val{font-size:.76rem}
+  .skp.hh table.ajg-val th,.skp.hh table.ajg-val td{padding:6px 2px;letter-spacing:0}
+}
