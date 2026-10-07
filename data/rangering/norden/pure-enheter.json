@@ -5,37 +5,56 @@
     "cbs": {
       "navn": "Copenhagen Business School",
       "oai": "https://research-api.cbs.dk/ws/oai",
-      "egneNavn": ["Copenhagen Business School", "Handelshøjskolen i København"],
+      "egneNavn": [
+        "Copenhagen Business School",
+        "Handelshøjskolen i København"
+      ],
       "instituttNiva": 2
     },
     "au": {
       "navn": "Aarhus Universitet",
       "oai": "https://pure.au.dk/ws/oai",
-      "egneNavn": ["Aarhus Universitet", "Aarhus University"],
+      "egneNavn": [
+        "Aarhus Universitet",
+        "Aarhus University"
+      ],
       "instituttNiva": 3
     },
     "sdu": {
       "navn": "Syddansk Universitet",
       "oai": "https://findresearcher.sdu.dk/ws/oai",
-      "egneNavn": ["SDU", "Syddansk Universitet", "University of Southern Denmark"],
+      "egneNavn": [
+        "SDU",
+        "Syddansk Universitet",
+        "University of Southern Denmark"
+      ],
       "instituttNiva": 3
     },
     "aau": {
       "navn": "Aalborg Universitet",
       "oai": "https://vbn.aau.dk/ws/oai",
-      "egneNavn": ["Aalborg Universitet", "Aalborg University"],
+      "egneNavn": [
+        "Aalborg Universitet",
+        "Aalborg University"
+      ],
       "instituttNiva": 3
     },
     "ruc": {
       "navn": "Roskilde Universitet",
       "oai": "https://rucforsk.ruc.dk/ws/oai",
-      "egneNavn": ["Roskilde Universitet", "Roskilde University"],
+      "egneNavn": [
+        "Roskilde Universitet",
+        "Roskilde University"
+      ],
       "instituttNiva": 2
     },
     "ku": {
       "navn": "Københavns Universitet",
       "oai": "https://curis.ku.dk/ws/oai",
-      "egneNavn": ["Københavns Universitet", "University of Copenhagen"],
+      "egneNavn": [
+        "Københavns Universitet",
+        "University of Copenhagen"
+      ],
       "instituttNiva": 3
     }
   },
@@ -45,7 +64,15 @@
       "univ": "cbs",
       "navn": "Copenhagen Business School (CBS), hele institusjonen",
       "referanse": false,
-      "treff": [{"niva": 1, "navn": ["Copenhagen Business School", "Handelshøjskolen i København"]}],
+      "treff": [
+        {
+          "niva": 1,
+          "navn": [
+            "Copenhagen Business School",
+            "Handelshøjskolen i København"
+          ]
+        }
+      ],
       "merknad": "Hele institusjonen, som NHH og BI. Instituttene ligger på nivå 2 (11 institutter)."
     },
     {
@@ -53,7 +80,15 @@
       "univ": "au",
       "navn": "Aarhus BSS, hele fakultetet (Aarhus Universitet)",
       "referanse": false,
-      "treff": [{"niva": 2, "navn": ["Aarhus BSS", "School of Business and Social Sciences"]}],
+      "treff": [
+        {
+          "niva": 2,
+          "navn": [
+            "Aarhus BSS",
+            "School of Business and Social Sciences"
+          ]
+        }
+      ],
       "merknad": "Hele fakultetet: økonomi og business (ECON, MGMT, BTECH) og i tillegg statskundskab, psykologi og jus. Tilsvarer fakultetsnivå (som NTNU Fakultet for økonomi)."
     },
     {
@@ -63,11 +98,20 @@
       "referanse": false,
       "delAv": "dk_aarhus",
       "treff": [
-        {"niva": 3, "forelder": ["Aarhus BSS"], "navn": [
-          "Department of Economics and Business Economics", "Institut for Økonomi",
-          "Department of Management", "Institut for Virksomhedsledelse",
-          "Department of Business Development and Technology", "Institut for Forretningsudvikling og Teknologi"
-        ]}
+        {
+          "niva": 3,
+          "forelder": [
+            "Aarhus BSS"
+          ],
+          "navn": [
+            "Department of Economics and Business Economics",
+            "Institut for Økonomi",
+            "Department of Management",
+            "Institut for Virksomhedsledelse",
+            "Department of Business Development and Technology",
+            "Institut for Forretningsudvikling og Teknologi"
+          ]
+        }
       ],
       "merknad": "Alternativ avgrensning: de tre økonomi- og business-instituttene, uten statskundskab, psykologi og jus. BTECH ligger i Herning."
     },
@@ -77,7 +121,18 @@
       "navn": "Aarhus BSS, Department of Economics and Business Economics (ECON)",
       "referanse": false,
       "delAv": "dk_aarhus_oeb",
-      "treff": [{"niva": 3, "forelder": ["Aarhus BSS"], "navn": ["Department of Economics and Business Economics", "Institut for Økonomi"]}],
+      "treff": [
+        {
+          "niva": 3,
+          "forelder": [
+            "Aarhus BSS"
+          ],
+          "navn": [
+            "Department of Economics and Business Economics",
+            "Institut for Økonomi"
+          ]
+        }
+      ],
       "merknad": "Bare ECON, for sammenligning med rene økonomimiljøer."
     },
     {
@@ -86,21 +141,42 @@
       "navn": "SDU Business School (Syddansk Universitet)",
       "referanse": false,
       "treff": [
-        {"niva": 3, "forelder": ["Faculty of Social Sciences", "Det Samfundsvidenskabelige Fakultet"], "navn": [
-          "Department of Business & Management (DBM)", "Department of Business and Management", "Institut for Virksomhedsledelse og Økonomi",
-          "Department of Business and Sustainability", "Institut for Erhverv og Bæredygtighed",
-          "Department of Economics", "Økonomisk Institut",
-          "Department of Sociology, Environmental and Business Economics", "Institut for Sociologi, Miljø- og Erhvervsøkonomi"
-        ]}
+        {
+          "niva": 3,
+          "forelder": [
+            "Faculty of Social Sciences",
+            "Det Samfundsvidenskabelige Fakultet"
+          ],
+          "navn": [
+            "Department of Business & Management (DBM)",
+            "Department of Business and Management",
+            "Institut for Virksomhedsledelse og Økonomi",
+            "Department of Business and Sustainability",
+            "Institut for Erhverv og Bæredygtighed",
+            "Department of Economics",
+            "Økonomisk Institut",
+            "Department of Sociology, Environmental and Business Economics",
+            "Institut for Sociologi, Miljø- og Erhvervsøkonomi"
+          ]
+        }
       ],
-      "merknad": "Business-delen av Det Samfundsvidenskabelige Fakultet, avgrenset av oss. SDU har omorganisert flere ganger; se omorganiseringer."
+      "merknad": "Business-delen av Det Samfundsvidenskabelige Fakultet, avgrenset av oss: DBM, Business and Sustainability, Economics og Sociology, Environmental and Business Economics. Statskundskab, jus, CPop og Digital Democracy Centre er ikke med. SDU har omorganisert; se omorganiseringer."
     },
     {
       "id": "dk_aau",
       "univ": "aau",
       "navn": "AAU Business School (Aalborg Universitet)",
       "referanse": false,
-      "treff": [{"niva": 3, "navn": ["Aalborg University Business School", "Aalborg Universitet Business School", "AAU Business School"]}],
+      "treff": [
+        {
+          "niva": 3,
+          "navn": [
+            "Aalborg University Business School",
+            "Aalborg Universitet Business School",
+            "AAU Business School"
+          ]
+        }
+      ],
       "merknad": "Ett institutt under Det Samfundsvidenskabelige og Humanistiske Fakultet."
     },
     {
@@ -108,7 +184,15 @@
       "univ": "ruc",
       "navn": "Roskilde Universitet, Institut for Samfundsvidenskab og Erhverv (ISE)",
       "referanse": false,
-      "treff": [{"niva": 2, "navn": ["Department of Social Sciences and Business", "Institut for Samfundsvidenskab og Erhverv"]}],
+      "treff": [
+        {
+          "niva": 2,
+          "navn": [
+            "Department of Social Sciences and Business",
+            "Institut for Samfundsvidenskab og Erhverv"
+          ]
+        }
+      ],
       "merknad": "Hele instituttet, også offentlig forvaltning, politikk og Roskilde School of Governance, ikke bare business."
     },
     {
@@ -116,9 +200,52 @@
       "univ": "ku",
       "navn": "Københavns Universitet, Økonomisk Institut (referanse)",
       "referanse": true,
-      "treff": [{"niva": 3, "forelder": ["Faculty of Social Sciences", "Det Samfundsvidenskabelige Fakultet"], "navn": ["Department of Economics", "Økonomisk Institut"]}],
+      "treff": [
+        {
+          "niva": 3,
+          "forelder": [
+            "Faculty of Social Sciences",
+            "Det Samfundsvidenskabelige Fakultet"
+          ],
+          "navn": [
+            "Department of Economics",
+            "Økonomisk Institut"
+          ]
+        }
+      ],
       "merknad": "Referanse, slik UiO og UiB økonomi er det i Norge. Institutt for fødevare- og ressourceøkonomi (SCIENCE) er ikke med."
     }
   ],
-  "omorganiseringer": []
+  "omorganiseringer": [
+    {
+      "univ": "cbs",
+      "observert": "2026-10-07",
+      "merknad": "Department of Management, Politics and Philosophy (MPP) finnes i Pure for 2021–2023 og forsvinner deretter; forskerne ser ut til å ha gått til Department of Business Humanities and Law (BHL), som vokser fra 2023. Påvirker ikke CBS som hel institusjon."
+    },
+    {
+      "univ": "sdu",
+      "observert": "2026-10-07",
+      "merknad": "Department of Sociology, Environmental and Business Economics (Esbjerg) går fra 38 artikler i 2021 til 13 i 2024 og 1 i 2025, mens Department of Business and Sustainability vokser fra 35 til 81, og Department of Economics faller fra 70 til 27. Alle fire er med i dk_sdu, så summen er robust, men instituttet i Esbjerg rommer også sosiologi (ikke business) før omleggingen. I 2025 finnes også én artikkel på en ny enhet «Business and Social Sciences» som ikke er tatt med."
+    },
+    {
+      "univ": "au",
+      "observert": "2026-10-07",
+      "merknad": "Navnene på de seks instituttene i Aarhus BSS er uendret 2021–2025. BTECH (Herning) faller fra 161 artikler i 2021 til 98 i 2025."
+    },
+    {
+      "univ": "aau",
+      "observert": "2026-10-07",
+      "merknad": "«Aalborg University Business School» er brukt for alle år 2021–2025 (Pure viser også eldre poster under dagens navn)."
+    },
+    {
+      "univ": "ruc",
+      "observert": "2026-10-07",
+      "merknad": "Uendret 2021–2025."
+    },
+    {
+      "univ": "ku",
+      "observert": "2026-10-07",
+      "merknad": "Uendret 2021–2025. 2025 er lavere (51 mot 72–88) og kan være ufullstendig registrert."
+    }
+  ]
 }

@@ -957,3 +957,55 @@ koblet inn i `Handelshoyskolerangering.tsx`, stil under `.skp.hh` i `styles/skol
   1/4/18/15/6/26 (70). 2023–2025: 191 artikler, 92 i AJG-tidsskrift (48 %), 44 på 3+, 6 på 4/4*. 2016–2025: 2/11/132/94/66/384 (689).
 - **Kontroll mot NHH-rapporten:** 2020, 2021 og 2023 identiske; 2022 nivå 3 17 mot 9 (NHH-tabellens kjente feil), 2024 nivå 3
   12 mot 16 (ikke gjenskapt, se §43). Sum 2020–2024: 0/4/59 mot 0/4/55.
+
+## 49. Danske handelshøyskoler fra Pure (OAI-PMH), henteskript (07.10.2026)
+
+Fast henteskript for danske artikler i samme format som NVA-filene, som forarbeid til å ta Danmark inn i rangeringen (planen i
+`data/rangering/inspirasjon/norden-danmark.md` §5). Danske data er **ikke** koblet inn i `build-rangering.py` eller appen ennå.
+- **Skript:** `scripts/rangering/fetch-pure-oai.py` høster `ListRecords&metadataPrefix=ddf-mxd&set=publications:year<år>` fra
+  universitetenes åpne Pure-endepunkt (uten nøkkel), med resumptionToken, ett kall om gangen per server, 1 s pause, User-Agent
+  «NMBU-sammenligning (studierådgiverne HH)» og gjentak med økende ventetid. Råsvarene lagres komprimert i
+  `data/rangering/pure/raa/<univ>/<år>/` med `tilstand.json`, så et avbrutt år fortsetter der det slapp. Deretter skrives
+  `data/rangering/pure/<enhet>/<år>.json` med feltene fra NVA-filene (id, tittel, type, tidsskrift, kanal, issn, eissn, niva, nvi,
+  forfattere, egne, intl) pluss doi, `aarPure` og `nivaaDk`. Ingen personnavn i enhetsfilene; hele `data/rangering/pure/` er
+  gitignored (råsvarene har navn). Valg: `--aar 2021-2025`, `--univ cbs,au`, `--refresh`, `--bare-bygg`, `--vis-enheter`
+  (enhetsnavn per år, for å oppdage omorganiseringer) og `--tell` (aggregerte AJG-tall mot lokal `ajg2024.csv`).
+- **Utvalg:** `dja`/`djr` (tidsskrift- og oversiktsartikler) med `doc_review = pr`, etter Pures publiseringsår (settet). Hel telling:
+  en artikkel teller hvis minst én forfatter har en tilknytning som treffer enheten. `egne` = forfattere ved enheten,
+  `forfattere` = `total_authors`. `intl` = minst én tilknyttet organisasjon med land ≠ DK; `null` når det ikke kan avgjøres
+  (ekstern organisasjon uten land, forfatter uten tilknytning; mest ved KU, opptil 26 per år). `nvi` er alltid false, fordi `pr` er
+  selvregistrert. `niva` er norsk kanalnivå slått opp på ISSN i de lokale NVA-filene (samme år, ellers nærmeste); det dekker
+  47–94 % av artiklene (lavest for RUC), resten er `null`.
+- **Enheter:** `data/rangering/norden/pure-enheter.json` (OAI-adresser, enhetsnavn på dansk og engelsk per nivå i Pure, merknader
+  om omorganiseringer). `dk_cbs` (hele), `dk_aarhus` (hele Aarhus BSS), `dk_aarhus_oeb` (ECON + MGMT + BTECH), `dk_aarhus_econ`,
+  `dk_sdu` (DBM, Business and Sustainability, Economics, Sociology/Environmental/Business Economics), `dk_aau` (AAU Business
+  School), `dk_ruc` (ISE) og `dk_ku` (Økonomisk Institut, referanse). Treff går på navn, fordi Pure bare gir lokal org-ID for
+  det dypeste nivået hos noen; ID-ene som traff, står i `locOrg` i utdatafilene, og `treffNavn` viser artikler per institutt.
+- **Kjøring 07.10:** 2021–2025 for alle seks universitetene, 241 686 poster på 2 431 sider, 33 minutter med universitetene i
+  parallell (AU og KU 5–9 min per år, CBS og RUC under 1 min). Råsvar 312 MB. To forbigående nettverksfeil ble tatt av gjentaket.
+- **Kontroll mot 2024-tallene i `norden-danmark.md` §4:** artikler og AJG 4*, 4/4* og 3+ er identiske for CBS, Aarhus BSS,
+  ECON + MGMT + BTECH, ECON, KU, SDU og AAU. RUC har 172 artikler mot 174, med samme AJG-tall; de to er registrert med bare
+  redaktører (ingen forfattere ved instituttet) og telles ikke.
+- **Tall (hel telling; artikler / AJG 4/4* / AJG 3+, AJG 2024 brukt for alle år):**
+
+  | Enhet | 2021 | 2022 | 2023 | 2024 | 2025 |
+  |---|---|---|---|---|---|
+  | CBS (hele) | 630 / 131 / 274 | 659 / 138 / 302 | 620 / 126 / 293 | 601 / 126 / 294 | 686 / 137 / 329 |
+  | Aarhus BSS (hele) | 888 / 82 / 211 | 849 / 65 / 195 | 792 / 69 / 189 | 745 / 79 / 203 | 795 / 86 / 210 |
+  | – ECON + MGMT + BTECH | 490 / 49 / 147 | 440 / 47 / 143 | 401 / 46 / 142 | 354 / 50 / 149 | 366 / 54 / 154 |
+  | – ECON alene | 168 / 30 / 84 | 154 / 30 / 79 | 138 / 26 / 66 | 125 / 29 / 77 | 132 / 28 / 69 |
+  | SDU Business School | 198 / 21 / 64 | 180 / 19 / 59 | 175 / 15 / 67 | 161 / 13 / 51 | 180 / 11 / 54 |
+  | RUC ISE | 131 / 9 / 32 | 163 / 12 / 31 | 159 / 13 / 38 | 172 / 21 / 47 | 205 / 7 / 32 |
+  | AAU Business School | 93 / 4 / 20 | 81 / 8 / 28 | 77 / 3 / 24 | 84 / 5 / 22 | 79 / 6 / 25 |
+  | KU Økonomisk Institut (ref.) | 88 / 20 / 60 | 81 / 21 / 52 | 72 / 21 / 43 | 81 / 17 / 48 | 51 / 11 / 35 |
+
+  Over fem år ligger CBS stabilt på 126–138 AJG 4/4* i året, Aarhus BSS på 65–86. RUCs 21 i 2024 er en topp (7–13 de andre
+  årene), så rekkefølgen RUC foran KU og SDU i notatets §4 holder ikke over tid: 2021–2025 summert er KU 90, SDU 79, RUC 62 og AAU 26.
+- **Forbehold:** Pure er selvregistrert, og `pr` er ikke kontrollert nasjonalt. Pure viser eldre poster under dagens
+  enhetsnavn, men SDU har flyttet folk mellom instituttene (se `omorganiseringer` i konfigurasjonen); instituttutvalget hos AU og
+  SDU er vårt eget. CBS registrerer ofte første nettpublisering som `doc_year` (1 093 av 3 196 artikler har annet år enn settet);
+  vi bruker settets år. KU 2025 (51) kan være ufullstendig registrert. Nevner (VIP-årsverk) mangler for alle unntatt CBS og
+  Aarhus BSS (fakultet).
+- **Før Danmark kan kobles inn i rangeringen:** utvide `skoler.json` med `land` og `pure` (etter planen i §5 i notatet), la
+  `build-rangering.py` lese `data/rangering/pure/<enhet>/<år>.json` i stedet for NVA for disse enhetene (merk at `intl` kan være
+  `null`, så summeringen må tåle det), og legge inn VIP-årsverk per år og enhet som nevner.
