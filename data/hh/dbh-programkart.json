@@ -526,14 +526,27 @@
         "MASTER22",
         "MASTER24",
         "MASTER25",
-        "M25",
+        "M25"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon (master 2 år)",
+      "nivaakode": "M2",
+      "merknad": "NHH har mange årskull-koder for masterstudiet; alle er slått sammen (ikke spesialiseringene). Den internasjonale MSc-en (MSC23–25) er egen oppføring. I 2022–2023 er «Alle søkere» satt lik førsteprioritet (se gruppens merknad).",
+      "alleSForsteprioritet": [
+        "2022",
+        "2023"
+      ]
+    },
+    {
+      "entryId": "nhh_msc",
+      "institusjonskode": "1240",
+      "studieprogramkoder": [
         "MSC23",
         "MSC24",
         "MSC25"
       ],
-      "studieprogramnavn": "Økonomi og administrasjon (master 2 år)",
+      "studieprogramnavn": "MSc in Economics and Business Administration, internasjonalt opptak (master 2 år)",
       "nivaakode": "M2",
-      "merknad": "NHH har mange årskull-koder for masterstudiet; alle er slått sammen (ikke spesialiseringene)."
+      "merknad": "Eget opptak for internasjonale søkere fra 2023; de fleste søkerne er ikke kvalifisert (157–176 kvalifiserte førsteprioritetssøkere per år). Svakere sammenligning."
     },
     {
       "entryId": "bi_moa",

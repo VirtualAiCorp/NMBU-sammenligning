@@ -1,9 +1,9 @@
-// GENERERT av scripts/build-economy.py 2026-10-06 – ikke rediger for hånd.
+// GENERERT av scripts/build-economy.py 2026-10-07 – ikke rediger for hånd.
 // Kilde: DBH/HKDIR 902 (økonomiske nøkkeltall, 1 000 kr), 750 (KDs styringsindikatorer), 900 via staffData (studentårsverk).
 export interface EconYear { aar: number; driftsinntekter: number | null; driftskostnader: number | null; statstilskudd: number | null; nfr: number | null; rff: number | null; eu: number | null; bidrag: number | null; oppdrag: number | null; lonn: number | null; avsetning: number | null; totalkapital: number | null; skolepenger: number | null; studentarsverk: number | null; }
 /** [verdi, teller, nevner] per år */
 export interface EconUnit { id: string; inst: string; kort: string; isNmbu: boolean; years: EconYear[]; ind: Record<string, Record<string, [number, number | null, number | null]>>; }
-export const ECON_HENTET = '2026-10-06';
+export const ECON_HENTET = '2026-10-07';
 export const ECON_PARAMS: { id: string; tekst: string }[] = [
   { id: '1', tekst: 'Andelen studenter på bachelorutdanning som gjennomfører på normert tid' },
   { id: '2', tekst: 'Andelen studenter på masterutdanning som gjennomfører på normert tid' },

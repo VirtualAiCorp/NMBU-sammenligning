@@ -8,7 +8,9 @@ Derfor tre spørringer med ulik grovhet, og hvert tall hentes fra den groveste s
   B  Årstall × Studieprogramkode × Prioritet            -> fvS (Prioritet = 1)
   C  Årstall × Studieprogramkode × Prioritet × Kjønn    -> kvinner = andel Kjønn=1 blant førstevalg (prosent)
 Alle semestre summeres (årstotal). Studieplasser og poenggrenser finnes ikke i DBH for lokale
-opptak og røres ikke. DBH-koden per program hentes fra data/<fakultet>/dbh-programkart.json.
+opptak og røres ikke. DBH-koden per program hentes fra data/<fakultet>/dbh-programkart.json. Har oppføringen «alleSForsteprioritet» (liste
+over år), settes alleS lik førsteprioritet og kvalifiserte tømmes for de årene (institusjonen registrerte flere
+søknadsalternativer per søker under samme kode, se make-hh-programkart.py).
 
 Bruk:
   python3 scripts/fill-local-admissions.py <fakultet> [--dry-run]
@@ -117,6 +119,10 @@ def main():
             continue
         pc = m["studieprogramkoder"]
         data = aggregate(*[[r for c in pc for r in rows[k].get(c, [])] for k in "abc"])
+        # Flere søknadsalternativer per søker under samme kode (f.eks. NHH 2022–2023): bruk førsteprioritet som «Alle søkere»
+        for y in m.get("alleSForsteprioritet") or []:
+            if y in data and data[y].get("fvS"):
+                data[y]["alleS"], data[y]["kvalifiserte"] = data[y]["fvS"], None
         if not data:
             print(f"  {g['id']}/{p['id']}: ingen rader i DBH 379")
             continue

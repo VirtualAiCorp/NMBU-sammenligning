@@ -1,4 +1,4 @@
-// GENERERT av scripts/build-studiebarometer.py 2026-10-06 – ikke rediger for hånd. Kilde: studiebarometeret.no
+// GENERERT av scripts/build-studiebarometer.py 2026-10-07 – ikke rediger for hånd. Kilde: studiebarometeret.no
 export type SbDimension = 'undervisning' | 'tilbakemeldinger' | 'vurderingsformer' | 'laeringsmiljo' | 'organisering' | 'yrkesrelevans' | 'engasjement' | 'helhetsvurdering';
 export interface SbScores { undervisning: number | null; tilbakemeldinger: number | null; vurderingsformer: number | null; laeringsmiljo: number | null; organisering: number | null; yrkesrelevans: number | null; engasjement: number | null; helhetsvurdering: number | null; }
 export interface SbSubquestion { text: string; value: number | null; }
@@ -1590,6 +1590,25 @@ export const STUDIEBAROMETER_ENTRIES: SbEntry[] = [
     helhetsvurdering: [{ text: "Jeg er, alt i alt, tilfreds med studieprogrammet jeg går på", value: 4.2 }],
   },
     warning: null,
+  },
+  {
+    entryId: "nhh_msc",
+    groupId: "moa",
+    shortName: "NHH int. MSc",
+    institusjon: "Norges Handelshøyskole",
+    programnavn: "MSc in Economics and Business Administration, internasjonalt opptak (master 2 år)",
+    isNmbu: false,
+    sbId: null,
+    url: null,
+    latestYear: null,
+    respondents: null,
+    responseRate: null,
+    scores: { undervisning: null, tilbakemeldinger: null, vurderingsformer: null, laeringsmiljo: null, organisering: null, yrkesrelevans: null, engasjement: null, helhetsvurdering: null },
+    fieldAverage: { undervisning: null, tilbakemeldinger: null, vurderingsformer: null, laeringsmiljo: null, organisering: null, yrkesrelevans: null, engasjement: null, helhetsvurdering: null },
+    fieldLabel: null,
+    history: [],
+    subquestions: {},
+    warning: "Ikke funnet i Studiebarometeret (prøvde: 1240_msc23, 1240_msc24, 1240_msc25, katalog:i=1240 (4 programmer), navnematch:'MSc in Economics and Business Administration, internasjonalt opptak (master 2 år)'~='BSc in Business, Economics and Data Science' (score 0.30, margin 0.30, godtatt=False)).",
   },
   {
     entryId: "bi_moa",

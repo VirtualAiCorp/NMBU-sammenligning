@@ -1,4 +1,4 @@
-// GENERERT av scripts/build-completion.py 2026-10-06 – ikke rediger for hånd.
+// GENERERT av scripts/build-completion.py 2026-10-07 – ikke rediger for hånd.
 // Kilde: DBH/HKDIR tabell 707 (gjennomføring og frafall per startkull), 123 (registrerte, høst), 110 (nye), 104 (kandidater), 335 (studiepoeng iht. plan).
 import type { LandsamLevel } from './landsamAdmissionData';
 
@@ -20,7 +20,7 @@ export interface CompletionProgram {
 }
 export interface CompletionGroup { id: string; label: string; level: LandsamLevel; nmbuIds: string[]; defaultIds: string[]; programs: CompletionProgram[]; }
 
-export const COMPLETION_HENTET = '2026-10-06';
+export const COMPLETION_HENTET = '2026-10-07';
 
 export const COMPLETION_GROUPS: CompletionGroup[] = [
   {
@@ -1115,7 +1115,7 @@ export const COMPLETION_GROUPS: CompletionGroup[] = [
         ],
       },
       {
-        entryId: 'nhh_moa', shortName: 'NHH', institusjon: 'Norges Handelshøyskole', isNmbu: false, programnavn: 'Økonomi og administrasjon (master 2 år)', dbhKoder: ['M25', 'MASTER04', 'MASTER15', 'MASTER21', 'MASTER22', 'MASTER24', 'MASTER25', 'MSC23', 'MSC24', 'MSC25'],
+        entryId: 'nhh_moa', shortName: 'NHH', institusjon: 'Norges Handelshøyskole', isNmbu: false, programnavn: 'Økonomi og administrasjon (master 2 år)', dbhKoder: ['M25', 'MASTER04', 'MASTER15', 'MASTER21', 'MASTER22', 'MASTER24', 'MASTER25'],
         kull: [
           { aar: 2014, normertAar: 2016, nivaa: 'M2', startkull: 506, startkullKvinner: 194, fullfortNormert: 411, fullfortNormertKvinner: 159, fullfort1: 467, fullfort2: 473, studerer: 79, studerer1: 15, studerer2: 4, frafalt: 16, frafalt1: 24, frafalt2: 29, inst: { fullfortNormert: 413, fullfort1: 470, fullfort2: 476, frafalt: 14, frafalt2: 25 }, sektor: { fullfortNormert: 413, fullfort1: 471, fullfort2: 478, frafalt: 9, frafalt2: 19 } },
           { aar: 2015, normertAar: 2017, nivaa: 'M2', startkull: 509, startkullKvinner: 232, fullfortNormert: 418, fullfortNormertKvinner: 192, fullfort1: 481, fullfort2: 486, studerer: 78, studerer1: 13, studerer2: 3, frafalt: 13, frafalt1: 15, frafalt2: 20, inst: { fullfortNormert: 419, fullfort1: 481, fullfort2: 487, frafalt: 13, frafalt2: 20 }, sektor: { fullfortNormert: 420, fullfort1: 481, fullfort2: 487, frafalt: 9, frafalt2: 14 } },
@@ -1126,7 +1126,7 @@ export const COMPLETION_GROUPS: CompletionGroup[] = [
           { aar: 2020, normertAar: 2022, nivaa: 'M2', startkull: 571, startkullKvinner: 204, fullfortNormert: 503, fullfortNormertKvinner: 183, fullfort1: 552, fullfort2: 556, studerer: 61, studerer1: 5, studerer2: 0, frafalt: 7, frafalt1: 14, frafalt2: 13, inst: { fullfortNormert: 503, fullfort1: 554, fullfort2: 559, frafalt: 4, frafalt2: 10 }, sektor: { fullfortNormert: 503, fullfort1: 554, fullfort2: 559, frafalt: 4, frafalt2: 9 } },
           { aar: 2021, normertAar: 2023, nivaa: 'M2', startkull: 543, startkullKvinner: 192, fullfortNormert: 467, fullfortNormertKvinner: 176, fullfort1: 511, fullfort2: 517, studerer: 59, studerer1: 8, studerer2: 3, frafalt: 17, frafalt1: 24, frafalt2: 23, inst: { fullfortNormert: 468, fullfort1: 512, fullfort2: 519, frafalt: 17, frafalt2: 21 }, sektor: { fullfortNormert: 470, fullfort1: 515, fullfort2: 522, frafalt: 12, frafalt2: 13 } },
           { aar: 2022, normertAar: 2024, nivaa: 'M2', startkull: 730, startkullKvinner: 246, fullfortNormert: 653, fullfortNormertKvinner: 224, fullfort1: 706, fullfort2: 0, studerer: 65, studerer1: 8, studerer2: 0, frafalt: 11, frafalt1: 16, frafalt2: 0, inst: { fullfortNormert: 660, fullfort1: 712, fullfort2: 0, frafalt: 5, frafalt2: 0 }, sektor: { fullfortNormert: 660, fullfort1: 712, fullfort2: 0, frafalt: 5, frafalt2: 0 } },
-          { aar: 2023, normertAar: 2025, nivaa: 'M2', startkull: 618, startkullKvinner: 227, fullfortNormert: 547, fullfortNormertKvinner: 205, fullfort1: 0, fullfort2: 0, studerer: 56, studerer1: 0, studerer2: 0, frafalt: 15, frafalt1: 0, frafalt2: 0, inst: { fullfortNormert: 551, fullfort1: 0, fullfort2: 0, frafalt: 13, frafalt2: 0 }, sektor: { fullfortNormert: 552, fullfort1: 0, fullfort2: 0, frafalt: 9, frafalt2: 0 } },
+          { aar: 2023, normertAar: 2025, nivaa: 'M2', startkull: 547, startkullKvinner: 197, fullfortNormert: 492, fullfortNormertKvinner: 182, fullfort1: 0, fullfort2: 0, studerer: 51, studerer1: 0, studerer2: 0, frafalt: 4, frafalt1: 0, frafalt2: 0, inst: { fullfortNormert: 495, fullfort1: 0, fullfort2: 0, frafalt: 3, frafalt2: 0 }, sektor: { fullfortNormert: 496, fullfort1: 0, fullfort2: 0, frafalt: 0, frafalt2: 0 } },
         ],
         aar: [
           { aar: 2016, registrerte: null, registrerteKvinner: null, nye: null, nyeKvinner: null, kandidater: 607, kandidaterKvinner: 234, spPlanlagt: 71571.8, spGjennomfort: 58852.4 },
@@ -1136,9 +1136,20 @@ export const COMPLETION_GROUPS: CompletionGroup[] = [
           { aar: 2020, registrerte: 1304, registrerteKvinner: 464, nye: 261, nyeKvinner: 84, kandidater: 531, kandidaterKvinner: 226, spPlanlagt: 74045, spGjennomfort: 65725 },
           { aar: 2021, registrerte: 1297, registrerteKvinner: 468, nye: 259, nyeKvinner: 86, kandidater: 608, kandidaterKvinner: 221, spPlanlagt: 75936, spGjennomfort: 71143.5 },
           { aar: 2022, registrerte: 1250, registrerteKvinner: 438, nye: 279, nyeKvinner: 87, kandidater: 608, kandidaterKvinner: 222, spPlanlagt: 70515, spGjennomfort: 64920 },
-          { aar: 2023, registrerte: 1299, registrerteKvinner: 456, nye: 335, nyeKvinner: 114, kandidater: 579, kandidaterKvinner: 211, spPlanlagt: 71055, spGjennomfort: 63512 },
-          { aar: 2024, registrerte: 1436, registrerteKvinner: 522, nye: 376, nyeKvinner: 121, kandidater: 550, kandidaterKvinner: 188, spPlanlagt: 74560, spGjennomfort: 68427.5 },
-          { aar: 2025, registrerte: 1581, registrerteKvinner: 588, nye: 400, nyeKvinner: 129, kandidater: 623, kandidaterKvinner: 236, spPlanlagt: 83783, spGjennomfort: 77918 },
+          { aar: 2023, registrerte: 1225, registrerteKvinner: 425, nye: 265, nyeKvinner: 85, kandidater: 579, kandidaterKvinner: 211, spPlanlagt: 68255, spGjennomfort: 61319.5 },
+          { aar: 2024, registrerte: 1307, registrerteKvinner: 469, nye: 302, nyeKvinner: 88, kandidater: 534, kandidaterKvinner: 180, spPlanlagt: 68227.5, spGjennomfort: 62895 },
+          { aar: 2025, registrerte: 1423, registrerteKvinner: 520, nye: 313, nyeKvinner: 89, kandidater: 578, kandidaterKvinner: 218, spPlanlagt: 75895.5, spGjennomfort: 70795.5 },
+        ],
+      },
+      {
+        entryId: 'nhh_msc', shortName: 'NHH int. MSc', institusjon: 'Norges Handelshøyskole', isNmbu: false, programnavn: 'MSc in Economics and Business Administration, internasjonalt opptak (master 2 år)', dbhKoder: ['MSC23', 'MSC24', 'MSC25'],
+        kull: [
+          { aar: 2023, normertAar: 2025, nivaa: 'M2', startkull: 71, startkullKvinner: 30, fullfortNormert: 55, fullfortNormertKvinner: 23, fullfort1: 0, fullfort2: 0, studerer: 5, studerer1: 0, studerer2: 0, frafalt: 11, frafalt1: 0, frafalt2: 0, inst: { fullfortNormert: 56, fullfort1: 0, fullfort2: 0, frafalt: 10, frafalt2: 0 }, sektor: { fullfortNormert: 56, fullfort1: 0, fullfort2: 0, frafalt: 9, frafalt2: 0 } },
+        ],
+        aar: [
+          { aar: 2023, registrerte: 74, registrerteKvinner: 31, nye: 70, nyeKvinner: 29, kandidater: null, kandidaterKvinner: null, spPlanlagt: 2800, spGjennomfort: 2192.5 },
+          { aar: 2024, registrerte: 129, registrerteKvinner: 53, nye: 74, nyeKvinner: 33, kandidater: 16, kandidaterKvinner: 8, spPlanlagt: 6332.5, spGjennomfort: 5532.5 },
+          { aar: 2025, registrerte: 158, registrerteKvinner: 68, nye: 87, nyeKvinner: 40, kandidater: 45, kandidaterKvinner: 18, spPlanlagt: 7887.5, spGjennomfort: 7122.5 },
           { aar: 2026, registrerte: null, registrerteKvinner: null, nye: 0, nyeKvinner: 0, kandidater: null, kandidaterKvinner: null, spPlanlagt: null, spGjennomfort: null },
         ],
       },

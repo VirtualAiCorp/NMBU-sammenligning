@@ -854,3 +854,10 @@ KI-chat og uten «Spør KI» (`utenKi` på `AfModulSide`). Grunnen er at metoden
   (ingen), andre publikasjonstyper i AJG-kanaler (ingen), AJG 2021 i stedet for 2024 (gir også 12), ISSN-avvik (ingen AJG-
   tidsskrift uten treff). Grunnlaget er det samme som DBH (71 publikasjoner = 66 artikler + 5 kapitler). Trolig ulikt
   uttrekk/tidspunkt hos NHH; avklares best ved å be NHH om artikkellista. 2025: 1 / 4 / 18 (ny topp for HH).
+
+## 44. NHHs masteropptak: søknadsalternativer og internasjonal MSc (07.10.2026)
+
+- **Funn:** DBH 379 teller søknadsalternativer, ikke personer. I 2022 og 2023 registrerte NHH flere alternativer per søker under samme programkode (MASTER21/22): 6 533 og 7 774 alternativer, mot 1 594 og 1 674 på førsteprioritet. Fra 2024 er det i praksis ett alternativ per søker (andreprioritet 56). Tilbud og møtt er ikke påvirket.
+- **Retting:** `make-hh-programkart.py` setter `alleSForsteprioritet: ["2022", "2023"]` for `nhh_moa`, og `fill-local-admissions.py` bruker da førsteprioritet som «Alle søkere» og tømmer kvalifiserte for de årene. Merknad i gruppenoten for «Økonomi og administrasjon (master)».
+- **NHHs internasjonale MSc** (MSC23–25, eget opptak fra 2023, 157–176 kvalifiserte førsteprioritetssøkere per år) er skilt ut som egen oppføring `nhh_msc` (svakere sammenligning, ikke valgt som standard). NHH-oppføringen gjelder nå bare de norske masterkodene; dette endrer også NHH-tallene i emner, gjennomføring og studentene.
+- **Kryssjekk:** NHHs årsrapport 2023 og nettsider oppgir søkertall bare for bacheloren (Samordna), ikke for masteren. DBH er eneste offentlige kilde for mastersøkerne; tallene kunne derfor ikke kontrolleres mot NHHs egne.

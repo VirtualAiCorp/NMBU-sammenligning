@@ -1,5 +1,5 @@
 {
- "generert": "2026-10-06",
+ "generert": "2026-10-07",
  "groups": [
   {
    "id": "oa",
@@ -3812,33 +3812,73 @@
       },
       {
        "aar": 2023,
-       "total": 1299,
-       "a21": 22,
-       "a24": 777,
-       "a29": 459,
-       "a30": 41,
-       "utenlandske": 79,
+       "total": 1225,
+       "a21": 19,
+       "a24": 726,
+       "a29": 445,
+       "a30": 35,
+       "utenlandske": 13,
        "utveksling": 302
       },
       {
        "aar": 2024,
-       "total": 1436,
+       "total": 1307,
        "a21": 23,
-       "a24": 866,
-       "a29": 486,
-       "a30": 56,
-       "utenlandske": 114,
-       "utveksling": 336
+       "a24": 791,
+       "a29": 445,
+       "a30": 46,
+       "utenlandske": 10,
+       "utveksling": 324
       },
       {
        "aar": 2025,
-       "total": 1581,
-       "a21": 31,
-       "a24": 962,
-       "a29": 528,
-       "a30": 55,
-       "utenlandske": 133,
-       "utveksling": 316
+       "total": 1423,
+       "a21": 25,
+       "a24": 871,
+       "a29": 484,
+       "a30": 42,
+       "utenlandske": 5,
+       "utveksling": 292
+      }
+     ]
+    },
+    {
+     "entryId": "nhh_msc",
+     "shortName": "NHH int. MSc",
+     "institusjon": "Norges Handelshøyskole",
+     "isNmbu": false,
+     "programnavn": "MSc in Economics and Business Administration, internasjonalt opptak (master 2 år)",
+     "nivaa": "M2",
+     "aar": [
+      {
+       "aar": 2023,
+       "total": 74,
+       "a21": 3,
+       "a24": 51,
+       "a29": 14,
+       "a30": 6,
+       "utenlandske": 66,
+       "utveksling": null
+      },
+      {
+       "aar": 2024,
+       "total": 129,
+       "a21": 0,
+       "a24": 75,
+       "a29": 41,
+       "a30": 10,
+       "utenlandske": 104,
+       "utveksling": 12
+      },
+      {
+       "aar": 2025,
+       "total": 158,
+       "a21": 6,
+       "a24": 91,
+       "a29": 44,
+       "a30": 13,
+       "utenlandske": 128,
+       "utveksling": 24
       }
      ]
     },

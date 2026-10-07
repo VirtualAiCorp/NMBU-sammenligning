@@ -1,5 +1,5 @@
 {
- "generert": "2026-10-06",
+ "generert": "2026-10-07",
  "groups": [
   {
    "id": "oa",
@@ -14445,10 +14445,7 @@
       "MASTER21",
       "MASTER22",
       "MASTER24",
-      "MASTER25",
-      "MSC23",
-      "MSC24",
-      "MSC25"
+      "MASTER25"
      ],
      "kull": [
       {
@@ -14734,30 +14731,30 @@
        "aar": 2023,
        "normertAar": 2025,
        "nivaa": "M2",
-       "startkull": 618,
-       "startkullKvinner": 227,
-       "fullfortNormert": 547,
-       "fullfortNormertKvinner": 205,
+       "startkull": 547,
+       "startkullKvinner": 197,
+       "fullfortNormert": 492,
+       "fullfortNormertKvinner": 182,
        "fullfort1": 0,
        "fullfort2": 0,
-       "studerer": 56,
+       "studerer": 51,
        "studerer1": 0,
        "studerer2": 0,
-       "frafalt": 15,
+       "frafalt": 4,
        "frafalt1": 0,
        "frafalt2": 0,
        "inst": {
-        "fullfortNormert": 551,
+        "fullfortNormert": 495,
         "fullfort1": 0,
         "fullfort2": 0,
-        "frafalt": 13,
+        "frafalt": 3,
         "frafalt2": 0
        },
        "sektor": {
-        "fullfortNormert": 552,
+        "fullfortNormert": 496,
         "fullfort1": 0,
         "fullfort2": 0,
-        "frafalt": 9,
+        "frafalt": 0,
         "frafalt2": 0
        }
       }
@@ -14842,36 +14839,116 @@
       },
       {
        "aar": 2023,
-       "registrerte": 1299,
-       "registrerteKvinner": 456,
-       "nye": 335,
-       "nyeKvinner": 114,
+       "registrerte": 1225,
+       "registrerteKvinner": 425,
+       "nye": 265,
+       "nyeKvinner": 85,
        "kandidater": 579,
        "kandidaterKvinner": 211,
-       "spPlanlagt": 71055.0,
-       "spGjennomfort": 63512.0
+       "spPlanlagt": 68255.0,
+       "spGjennomfort": 61319.5
       },
       {
        "aar": 2024,
-       "registrerte": 1436,
-       "registrerteKvinner": 522,
-       "nye": 376,
-       "nyeKvinner": 121,
-       "kandidater": 550,
-       "kandidaterKvinner": 188,
-       "spPlanlagt": 74560.0,
-       "spGjennomfort": 68427.5
+       "registrerte": 1307,
+       "registrerteKvinner": 469,
+       "nye": 302,
+       "nyeKvinner": 88,
+       "kandidater": 534,
+       "kandidaterKvinner": 180,
+       "spPlanlagt": 68227.5,
+       "spGjennomfort": 62895.0
       },
       {
        "aar": 2025,
-       "registrerte": 1581,
-       "registrerteKvinner": 588,
-       "nye": 400,
-       "nyeKvinner": 129,
-       "kandidater": 623,
-       "kandidaterKvinner": 236,
-       "spPlanlagt": 83783.0,
-       "spGjennomfort": 77918.0
+       "registrerte": 1423,
+       "registrerteKvinner": 520,
+       "nye": 313,
+       "nyeKvinner": 89,
+       "kandidater": 578,
+       "kandidaterKvinner": 218,
+       "spPlanlagt": 75895.5,
+       "spGjennomfort": 70795.5
+      }
+     ]
+    },
+    {
+     "entryId": "nhh_msc",
+     "shortName": "NHH int. MSc",
+     "institusjon": "Norges Handelshøyskole",
+     "isNmbu": false,
+     "programnavn": "MSc in Economics and Business Administration, internasjonalt opptak (master 2 år)",
+     "dbhKoder": [
+      "MSC23",
+      "MSC24",
+      "MSC25"
+     ],
+     "kull": [
+      {
+       "aar": 2023,
+       "normertAar": 2025,
+       "nivaa": "M2",
+       "startkull": 71,
+       "startkullKvinner": 30,
+       "fullfortNormert": 55,
+       "fullfortNormertKvinner": 23,
+       "fullfort1": 0,
+       "fullfort2": 0,
+       "studerer": 5,
+       "studerer1": 0,
+       "studerer2": 0,
+       "frafalt": 11,
+       "frafalt1": 0,
+       "frafalt2": 0,
+       "inst": {
+        "fullfortNormert": 56,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 10,
+        "frafalt2": 0
+       },
+       "sektor": {
+        "fullfortNormert": 56,
+        "fullfort1": 0,
+        "fullfort2": 0,
+        "frafalt": 9,
+        "frafalt2": 0
+       }
+      }
+     ],
+     "aar": [
+      {
+       "aar": 2023,
+       "registrerte": 74,
+       "registrerteKvinner": 31,
+       "nye": 70,
+       "nyeKvinner": 29,
+       "kandidater": null,
+       "kandidaterKvinner": null,
+       "spPlanlagt": 2800.0,
+       "spGjennomfort": 2192.5
+      },
+      {
+       "aar": 2024,
+       "registrerte": 129,
+       "registrerteKvinner": 53,
+       "nye": 74,
+       "nyeKvinner": 33,
+       "kandidater": 16,
+       "kandidaterKvinner": 8,
+       "spPlanlagt": 6332.5,
+       "spGjennomfort": 5532.5
+      },
+      {
+       "aar": 2025,
+       "registrerte": 158,
+       "registrerteKvinner": 68,
+       "nye": 87,
+       "nyeKvinner": 40,
+       "kandidater": 45,
+       "kandidaterKvinner": 18,
+       "spPlanlagt": 7887.5,
+       "spGjennomfort": 7122.5
       },
       {
        "aar": 2026,

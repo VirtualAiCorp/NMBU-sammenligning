@@ -1,5 +1,5 @@
 {
- "generert": "2026-10-06",
+ "generert": "2026-10-07",
  "satser": {
   "2025": {
    "1": 56600.0,
@@ -14945,42 +14945,93 @@
         "budsjettaar": 2025,
         "satsAar": 2025,
         "forelopig": false,
-        "sp1": 1098.7,
+        "sp1": 1063.8,
         "sp2": 0.0,
         "sp3": 0.0,
         "kandidater": 579,
-        "registrerte": 1299,
-        "innSp": 62188777,
+        "registrerte": 1225,
+        "innSp": 60210136,
         "innFullforing": 30050100,
-        "total": 92238877
+        "total": 90260236
        },
        {
         "aar": 2024,
         "budsjettaar": 2026,
         "satsAar": 2026,
         "forelopig": false,
-        "sp1": 1206.7,
+        "sp1": 1113.7,
         "sp2": 0.0,
         "sp3": 0.0,
-        "kandidater": 550,
-        "registrerte": 1436,
-        "innSp": 70774908,
-        "innFullforing": 29562500,
-        "total": 100337408
+        "kandidater": 534,
+        "registrerte": 1307,
+        "innSp": 65318015,
+        "innFullforing": 28702500,
+        "total": 94020515
        },
        {
         "aar": 2025,
         "budsjettaar": 2027,
         "satsAar": 2026,
         "forelopig": true,
-        "sp1": 1370.0,
+        "sp1": 1254.5,
         "sp2": 0.0,
         "sp3": 0.0,
-        "kandidater": 623,
-        "registrerte": 1581,
-        "innSp": 80350009,
-        "innFullforing": 33486250,
-        "total": 113836259
+        "kandidater": 578,
+        "registrerte": 1423,
+        "innSp": 73578378,
+        "innFullforing": 31067500,
+        "total": 104645878
+       }
+      ]
+     },
+     {
+      "entryId": "nhh_msc",
+      "shortName": "NHH int. MSc",
+      "institusjon": "Norges Handelshøyskole",
+      "isNmbu": false,
+      "programnavn": "MSc in Economics and Business Administration, internasjonalt opptak (master 2 år)",
+      "years": [
+       {
+        "aar": 2023,
+        "budsjettaar": 2025,
+        "satsAar": 2025,
+        "forelopig": false,
+        "sp1": 35.0,
+        "sp2": 0.0,
+        "sp3": 0.0,
+        "kandidater": null,
+        "registrerte": 74,
+        "innSp": 1978642,
+        "innFullforing": 0,
+        "total": 1978642
+       },
+       {
+        "aar": 2024,
+        "budsjettaar": 2026,
+        "satsAar": 2026,
+        "forelopig": false,
+        "sp1": 93.0,
+        "sp2": 0.0,
+        "sp3": 0.0,
+        "kandidater": 16,
+        "registrerte": 129,
+        "innSp": 5456893,
+        "innFullforing": 860000,
+        "total": 6316893
+       },
+       {
+        "aar": 2025,
+        "budsjettaar": 2027,
+        "satsAar": 2026,
+        "forelopig": true,
+        "sp1": 115.5,
+        "sp2": 0.0,
+        "sp3": 0.0,
+        "kandidater": 45,
+        "registrerte": 158,
+        "innSp": 6771630,
+        "innFullforing": 2418750,
+        "total": 9190380
        }
       ]
      },

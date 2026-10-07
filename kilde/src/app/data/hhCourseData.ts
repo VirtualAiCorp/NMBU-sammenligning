@@ -1,4 +1,4 @@
-// GENERERT av scripts/build-landsam-courses.py 2026-10-06 – ikke rediger for hånd.
+// GENERERT av scripts/build-landsam-courses.py 2026-10-07 – ikke rediger for hånd.
 // Kilde: DBH/HKDIR tabell 308 (karakterer, aggregert) og 208 (emner). Snitt: A=5…F=0, kun bokstavkarakterer.
 // DBH skjuler (setter til 0) celler med 1-2 kandidater i karakterfordelingen; dette rammer særlig
 // programnivå (mindre celler) og kan gi kunstig lav strykprosent. «skjult» er antall kandidater DBH
@@ -41839,7 +41839,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
     id: "moa",
     label: "Økonomi og administrasjon (master)",
     level: "master2",
-    note: "Lokale opptak (ikke Samordna); søkertall, tilbud og møtt fra DBH 379. Samme institusjoner som i den opprinnelige masteroppgaveanalysen.",
+    note: "Lokale opptak (ikke Samordna); søkertall, tilbud og møtt fra DBH 379. Samme institusjoner som i den opprinnelige masteroppgaveanalysen. NHH: i 2022 og 2023 registrerte NHH flere søknadsalternativer per søker i DBH (6 533 og 7 774 alternativer, mot 1 594 og 1 674 på førsteprioritet), så «Alle søkere» er satt lik førsteprioritet disse årene og kvalifiserte er tomt. NHHs internasjonale MSc (eget opptak fra 2023) er egen oppføring og ikke valgt som standard.",
     programs: [
       {
         entryId: "nmbu_moa",
@@ -43218,7 +43218,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
         institusjon: "Norges Handelshøyskole",
         isNmbu: false,
         dbhInstitusjonskode: "1240",
-        dbhProgramkoder: ["MASTER04", "MASTER15", "MASTER21", "MASTER22", "MASTER24", "MASTER25", "M25", "MSC23", "MSC24", "MSC25"],
+        dbhProgramkoder: ["MASTER04", "MASTER15", "MASTER21", "MASTER22", "MASTER24", "MASTER25", "M25"],
         dbhProgramnavn: "Økonomi og administrasjon (master 2 år)",
         courses: [
           {
@@ -43277,7 +43277,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             years: [
               { year: 2022, A: 9, B: 14, C: 14, D: 3, E: 0, F: 0, G: 0, H: 0, total: 40, snitt: 3.73, strykprosent: 0, bestattprosent: null, skjult: 5 },
               { year: 2024, A: 5, B: 16, C: 5, D: 5, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 3.68, strykprosent: 0, bestattprosent: null, skjult: 1 },
-              { year: 2025, A: 4, B: 13, C: 10, D: 0, E: 3, F: 0, G: 0, H: 0, total: 30, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 8 },
+              { year: 2025, A: 4, B: 13, C: 10, D: 0, E: 3, F: 0, G: 0, H: 0, total: 30, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 5 },
             ],
             emnenivaa: [
               { year: 2022, A: 20, B: 28, C: 22, D: 9, E: 0, F: 0, G: 0, H: 0, total: 79, snitt: 3.75, strykprosent: 0, bestattprosent: null, skjult: 3 },
@@ -43294,7 +43294,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2022, A: 3, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 4.5, strykprosent: 0, bestattprosent: null, skjult: 6 },
               { year: 2023, A: 0, B: 3, C: 0, D: 3, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 4 },
               { year: 2024, A: 3, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 4.5, strykprosent: 0, bestattprosent: null, skjult: 7 },
-              { year: 2025, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 8 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 4 },
             ],
             emnenivaa: [
               { year: 2022, A: 10, B: 14, C: 14, D: 4, E: 0, F: 0, G: 0, H: 0, total: 42, snitt: 3.71, strykprosent: 0, bestattprosent: null, skjult: 0 },
@@ -43357,7 +43357,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             years: [
               { year: 2023, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 0 },
               { year: 2024, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 2 },
-              { year: 2025, A: 0, B: 18, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 3.72, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 0, B: 15, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3.79, strykprosent: 0, bestattprosent: null, skjult: 4 },
             ],
             emnenivaa: [
               { year: 2023, A: 7, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 0 },
@@ -43406,8 +43406,8 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             years: [
               { year: 2021, A: 24, B: 26, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 58, snitt: 4.28, strykprosent: 0, bestattprosent: null, skjult: 4 },
               { year: 2022, A: 24, B: 26, C: 14, D: 7, E: 0, F: 3, G: 0, H: 0, total: 74, snitt: 3.78, strykprosent: 4.1, bestattprosent: null, skjult: 10 },
-              { year: 2023, A: 10, B: 29, C: 22, D: 7, E: 0, F: 0, G: 0, H: 0, total: 68, snitt: 3.62, strykprosent: 0, bestattprosent: null, skjult: 8 },
-              { year: 2024, A: 6, B: 9, C: 13, D: 3, E: 3, F: 0, G: 0, H: 0, total: 34, snitt: 3.35, strykprosent: 0, bestattprosent: null, skjult: 10 },
+              { year: 2023, A: 10, B: 29, C: 22, D: 7, E: 0, F: 0, G: 0, H: 0, total: 68, snitt: 3.62, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 6, B: 9, C: 10, D: 3, E: 3, F: 0, G: 0, H: 0, total: 31, snitt: 3.39, strykprosent: 0, bestattprosent: null, skjult: 9 },
             ],
             emnenivaa: [
               { year: 2021, A: 31, B: 30, C: 10, D: 3, E: 0, F: 4, G: 0, H: 0, total: 78, snitt: 3.99, strykprosent: 5.1, bestattprosent: null, skjult: 0 },
@@ -43422,9 +43422,9 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             studiepoeng: 7.5,
             years: [
               { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 234, H: 0, total: 234, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
-              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 255, H: 0, total: 255, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
-              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 369, H: 0, total: 369, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
-              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 653, H: 0, total: 653, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 241, H: 0, total: 241, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 342, H: 0, total: 342, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 628, H: 0, total: 628, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
             ],
             emnenivaa: [
               { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 324, H: 0, total: 324, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
@@ -43440,9 +43440,9 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             years: [
               { year: 2021, A: 14, B: 57, C: 11, D: 0, E: 0, F: 0, G: 0, H: 0, total: 82, snitt: 4.04, strykprosent: 0, bestattprosent: null, skjult: 4 },
               { year: 2022, A: 24, B: 35, C: 13, D: 0, E: 3, F: 0, G: 0, H: 0, total: 75, snitt: 4.03, strykprosent: 0, bestattprosent: null, skjult: 10 },
-              { year: 2023, A: 35, B: 41, C: 13, D: 0, E: 0, F: 0, G: 0, H: 0, total: 89, snitt: 4.25, strykprosent: 0, bestattprosent: null, skjult: 16 },
-              { year: 2024, A: 26, B: 22, C: 15, D: 0, E: 3, F: 0, G: 0, H: 0, total: 66, snitt: 4.03, strykprosent: 0, bestattprosent: null, skjult: 9 },
-              { year: 2025, A: 54, B: 36, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 97, snitt: 4.48, strykprosent: 0, bestattprosent: null, skjult: 7 },
+              { year: 2023, A: 35, B: 41, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 82, snitt: 4.35, strykprosent: 0, bestattprosent: null, skjult: 10 },
+              { year: 2024, A: 26, B: 17, C: 15, D: 0, E: 3, F: 0, G: 0, H: 0, total: 61, snitt: 4.03, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2025, A: 47, B: 27, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 81, snitt: 4.49, strykprosent: 0, bestattprosent: null, skjult: 3 },
             ],
             emnenivaa: [
               { year: 2021, A: 17, B: 66, C: 23, D: 3, E: 3, F: 0, G: 0, H: 0, total: 112, snitt: 3.81, strykprosent: 0, bestattprosent: null, skjult: 2 },
@@ -43460,8 +43460,8 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 31, B: 45, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 82, snitt: 4.3, strykprosent: 0, bestattprosent: null, skjult: 1 },
               { year: 2022, A: 44, B: 25, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 75, snitt: 4.51, strykprosent: 0, bestattprosent: null, skjult: 2 },
               { year: 2023, A: 21, B: 27, C: 13, D: 4, E: 0, F: 0, G: 0, H: 0, total: 65, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 5 },
-              { year: 2024, A: 21, B: 48, C: 13, D: 5, E: 0, F: 0, G: 0, H: 0, total: 87, snitt: 3.98, strykprosent: 0, bestattprosent: null, skjult: 5 },
-              { year: 2025, A: 10, B: 48, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 62, snitt: 4.1, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2024, A: 21, B: 44, C: 13, D: 5, E: 0, F: 0, G: 0, H: 0, total: 83, snitt: 3.98, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 10, B: 41, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 55, snitt: 4.11, strykprosent: 0, bestattprosent: null, skjult: 6 },
             ],
             emnenivaa: [
               { year: 2021, A: 35, B: 60, C: 16, D: 0, E: 0, F: 0, G: 0, H: 0, total: 111, snitt: 4.17, strykprosent: 0, bestattprosent: null, skjult: 1 },
@@ -43479,8 +43479,8 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 17, B: 29, C: 22, D: 0, E: 4, F: 5, G: 0, H: 0, total: 77, snitt: 3.52, strykprosent: 6.5, bestattprosent: null, skjult: 2 },
               { year: 2022, A: 15, B: 31, C: 32, D: 10, E: 0, F: 0, G: 0, H: 0, total: 88, snitt: 3.58, strykprosent: 0, bestattprosent: null, skjult: 3 },
               { year: 2023, A: 15, B: 30, C: 15, D: 0, E: 0, F: 0, G: 0, H: 0, total: 60, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 12 },
-              { year: 2024, A: 13, B: 21, C: 26, D: 8, E: 0, F: 5, G: 0, H: 0, total: 73, snitt: 3.33, strykprosent: 6.8, bestattprosent: null, skjult: 5 },
-              { year: 2025, A: 12, B: 12, C: 23, D: 0, E: 3, F: 6, G: 0, H: 0, total: 56, snitt: 3.21, strykprosent: 10.7, bestattprosent: null, skjult: 12 },
+              { year: 2024, A: 13, B: 21, C: 23, D: 8, E: 0, F: 5, G: 0, H: 0, total: 70, snitt: 3.34, strykprosent: 7.1, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 12, B: 12, C: 19, D: 0, E: 3, F: 6, G: 0, H: 0, total: 52, snitt: 3.23, strykprosent: 11.5, bestattprosent: null, skjult: 8 },
             ],
             emnenivaa: [
               { year: 2021, A: 19, B: 32, C: 28, D: 10, E: 4, F: 5, G: 0, H: 0, total: 98, snitt: 3.38, strykprosent: 5.1, bestattprosent: null, skjult: 0 },
@@ -43495,7 +43495,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             emnenavn: "Python Programming for Data Science",
             studiepoeng: 7.5,
             years: [
-              { year: 2025, A: 8, B: 27, C: 12, D: 8, E: 7, F: 0, G: 0, H: 0, total: 62, snitt: 3.34, strykprosent: 0, bestattprosent: null, skjult: 12 },
+              { year: 2025, A: 8, B: 22, C: 12, D: 8, E: 4, F: 0, G: 0, H: 0, total: 54, snitt: 3.41, strykprosent: 0, bestattprosent: null, skjult: 8 },
             ],
             emnenivaa: [
               { year: 2025, A: 15, B: 30, C: 16, D: 9, E: 9, F: 5, G: 0, H: 0, total: 84, snitt: 3.21, strykprosent: 6, bestattprosent: null, skjult: 0 },
@@ -43574,7 +43574,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 6, H: 0, total: 6, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
               { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 4, H: 0, total: 4, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
               { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 8, H: 0, total: 8, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
-              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 60, H: 0, total: 60, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 57, H: 0, total: 57, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
             ],
             emnenivaa: [
               { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 34, H: 0, total: 34, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
@@ -43592,7 +43592,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 15, B: 29, C: 15, D: 9, E: 0, F: 3, G: 0, H: 0, total: 71, snitt: 3.58, strykprosent: 4.2, bestattprosent: null, skjult: 2 },
               { year: 2022, A: 0, B: 16, C: 9, D: 8, E: 0, F: 0, G: 0, H: 0, total: 33, snitt: 3.24, strykprosent: 0, bestattprosent: null, skjult: 7 },
               { year: 2023, A: 7, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 4.4, strykprosent: 0, bestattprosent: null, skjult: 5 },
-              { year: 2024, A: 3, B: 7, C: 4, D: 0, E: 3, F: 0, G: 0, H: 0, total: 17, snitt: 3.41, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2024, A: 3, B: 7, C: 4, D: 0, E: 3, F: 0, G: 0, H: 0, total: 17, snitt: 3.41, strykprosent: 0, bestattprosent: null, skjult: 2 },
             ],
             emnenivaa: [
               { year: 2021, A: 19, B: 35, C: 19, D: 16, E: 4, F: 7, G: 0, H: 0, total: 100, snitt: 3.28, strykprosent: 7, bestattprosent: null, skjult: 0 },
@@ -43608,8 +43608,8 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             years: [
               { year: 2021, A: 9, B: 15, C: 16, D: 0, E: 0, F: 0, G: 0, H: 0, total: 40, snitt: 3.83, strykprosent: 0, bestattprosent: null, skjult: 0 },
               { year: 2022, A: 19, B: 23, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 42, snitt: 4.45, strykprosent: 0, bestattprosent: null, skjult: 0 },
-              { year: 2023, A: 7, B: 9, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 4.21, strykprosent: 0, bestattprosent: null, skjult: 6 },
-              { year: 2024, A: 7, B: 8, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 4.22, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2023, A: 7, B: 9, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 4.21, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 4, B: 8, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 4.07, strykprosent: 0, bestattprosent: null, skjult: 3 },
             ],
             emnenivaa: [
               { year: 2021, A: 17, B: 25, C: 27, D: 0, E: 0, F: 0, G: 0, H: 0, total: 69, snitt: 3.86, strykprosent: 0, bestattprosent: null, skjult: 0 },
@@ -43662,8 +43662,8 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 41, H: 0, total: 41, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
               { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 119, H: 0, total: 119, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
               { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 118, H: 0, total: 118, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
-              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 91, H: 0, total: 91, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
-              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 98, H: 0, total: 98, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 88, H: 0, total: 88, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 92, H: 0, total: 92, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
             ],
             emnenivaa: [
               { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 64, H: 0, total: 64, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
@@ -43773,7 +43773,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             studiepoeng: 7.5,
             years: [
               { year: 2024, A: 0, B: 21, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 0 },
-              { year: 2025, A: 7, B: 10, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 4.2, strykprosent: 0, bestattprosent: null, skjult: 8 },
+              { year: 2025, A: 7, B: 7, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 4.24, strykprosent: 0, bestattprosent: null, skjult: 2 },
             ],
             emnenivaa: [
               { year: 2024, A: 4, B: 26, C: 3, D: 3, E: 0, F: 0, G: 0, H: 0, total: 36, snitt: 3.86, strykprosent: 0, bestattprosent: null, skjult: 0 },
@@ -43799,8 +43799,8 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 39, B: 14, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 53, snitt: 4.74, strykprosent: 0, bestattprosent: null, skjult: 5 },
               { year: 2022, A: 30, B: 27, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 62, snitt: 4.4, strykprosent: 0, bestattprosent: null, skjult: 5 },
               { year: 2023, A: 43, B: 21, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 64, snitt: 4.67, strykprosent: 0, bestattprosent: null, skjult: 5 },
-              { year: 2024, A: 43, B: 19, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 62, snitt: 4.69, strykprosent: 0, bestattprosent: null, skjult: 9 },
-              { year: 2025, A: 29, B: 24, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 53, snitt: 4.55, strykprosent: 0, bestattprosent: null, skjult: 7 },
+              { year: 2024, A: 43, B: 19, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 62, snitt: 4.69, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2025, A: 29, B: 24, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 53, snitt: 4.55, strykprosent: 0, bestattprosent: null, skjult: 2 },
             ],
             emnenivaa: [
               { year: 2021, A: 53, B: 24, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 83, snitt: 4.57, strykprosent: 0, bestattprosent: null, skjult: 1 },
@@ -43818,7 +43818,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2022, A: 4, B: 8, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 4.33, strykprosent: 0, bestattprosent: null, skjult: 7 },
               { year: 2023, A: 0, B: 0, C: 0, D: 4, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 2, strykprosent: 0, bestattprosent: null, skjult: 7 },
               { year: 2024, A: 0, B: 9, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 3.64, strykprosent: 0, bestattprosent: null, skjult: 3 },
-              { year: 2025, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 10 },
+              { year: 2025, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 6 },
             ],
             emnenivaa: [
               { year: 2022, A: 6, B: 12, C: 6, D: 3, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 3.78, strykprosent: 0, bestattprosent: null, skjult: 1 },
@@ -43854,8 +43854,8 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 13, B: 41, C: 29, D: 8, E: 3, F: 0, G: 0, H: 0, total: 94, snitt: 3.56, strykprosent: 0, bestattprosent: null, skjult: 4 },
               { year: 2022, A: 6, B: 15, C: 18, D: 0, E: 0, F: 0, G: 0, H: 0, total: 39, snitt: 3.69, strykprosent: 0, bestattprosent: null, skjult: 8 },
               { year: 2023, A: 7, B: 18, C: 8, D: 3, E: 0, F: 0, G: 0, H: 0, total: 36, snitt: 3.81, strykprosent: 0, bestattprosent: null, skjult: 0 },
-              { year: 2024, A: 6, B: 13, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 4.14, strykprosent: 0, bestattprosent: null, skjult: 9 },
-              { year: 2025, A: 5, B: 18, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 32, snitt: 3.88, strykprosent: 0, bestattprosent: null, skjult: 10 },
+              { year: 2024, A: 6, B: 13, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 4.14, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2025, A: 5, B: 15, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 29, snitt: 3.86, strykprosent: 0, bestattprosent: null, skjult: 2 },
             ],
             emnenivaa: [
               { year: 2021, A: 14, B: 44, C: 35, D: 12, E: 10, F: 0, G: 0, H: 0, total: 115, snitt: 3.35, strykprosent: 0, bestattprosent: null, skjult: 2 },
@@ -43946,7 +43946,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 26, B: 32, C: 19, D: 18, E: 13, F: 6, G: 0, H: 0, total: 114, snitt: 3.19, strykprosent: 5.3, bestattprosent: null, skjult: 0 },
               { year: 2022, A: 15, B: 19, C: 27, D: 9, E: 0, F: 0, G: 0, H: 0, total: 70, snitt: 3.57, strykprosent: 0, bestattprosent: null, skjult: 7 },
               { year: 2023, A: 23, B: 14, C: 0, D: 4, E: 3, F: 3, G: 0, H: 0, total: 47, snitt: 3.87, strykprosent: 6.4, bestattprosent: null, skjult: 8 },
-              { year: 2024, A: 12, B: 19, C: 6, D: 10, E: 6, F: 0, G: 0, H: 0, total: 53, snitt: 3.4, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2024, A: 12, B: 19, C: 6, D: 10, E: 6, F: 0, G: 0, H: 0, total: 53, snitt: 3.4, strykprosent: 0, bestattprosent: null, skjult: 2 },
               { year: 2025, A: 24, B: 15, C: 13, D: 4, E: 8, F: 5, G: 0, H: 0, total: 69, snitt: 3.41, strykprosent: 7.2, bestattprosent: null, skjult: 6 },
             ],
             emnenivaa: [
@@ -44163,9 +44163,9 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             years: [
               { year: 2021, A: 36, B: 128, C: 99, D: 14, E: 0, F: 0, G: 0, H: 0, total: 277, snitt: 3.67, strykprosent: 0, bestattprosent: null, skjult: 2 },
               { year: 2022, A: 27, B: 88, C: 101, D: 16, E: 0, F: 0, G: 0, H: 0, total: 232, snitt: 3.54, strykprosent: 0, bestattprosent: null, skjult: 8 },
-              { year: 2023, A: 28, B: 84, C: 91, D: 13, E: 0, F: 3, G: 0, H: 0, total: 219, snitt: 3.54, strykprosent: 1.4, bestattprosent: null, skjult: 17 },
-              { year: 2024, A: 21, B: 48, C: 35, D: 5, E: 0, F: 0, G: 0, H: 0, total: 109, snitt: 3.78, strykprosent: 0, bestattprosent: null, skjult: 10 },
-              { year: 2025, A: 25, B: 71, C: 46, D: 3, E: 0, F: 0, G: 0, H: 0, total: 145, snitt: 3.81, strykprosent: 0, bestattprosent: null, skjult: 13 },
+              { year: 2023, A: 28, B: 80, C: 83, D: 13, E: 0, F: 3, G: 0, H: 0, total: 207, snitt: 3.55, strykprosent: 1.4, bestattprosent: null, skjult: 12 },
+              { year: 2024, A: 21, B: 43, C: 24, D: 5, E: 0, F: 0, G: 0, H: 0, total: 93, snitt: 3.86, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 22, B: 68, C: 43, D: 0, E: 0, F: 0, G: 0, H: 0, total: 133, snitt: 3.84, strykprosent: 0, bestattprosent: null, skjult: 10 },
             ],
             emnenivaa: [
               { year: 2021, A: 44, B: 177, C: 162, D: 26, E: 5, F: 0, G: 0, H: 0, total: 414, snitt: 3.55, strykprosent: 0, bestattprosent: null, skjult: 2 },
@@ -44230,7 +44230,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 25, B: 37, C: 15, D: 4, E: 0, F: 0, G: 0, H: 0, total: 81, snitt: 4.02, strykprosent: 0, bestattprosent: null, skjult: 0 },
               { year: 2022, A: 17, B: 21, C: 24, D: 0, E: 0, F: 0, G: 0, H: 0, total: 62, snitt: 3.89, strykprosent: 0, bestattprosent: null, skjult: 4 },
               { year: 2023, A: 6, B: 18, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 33, snitt: 3.91, strykprosent: 0, bestattprosent: null, skjult: 5 },
-              { year: 2024, A: 7, B: 25, C: 0, D: 3, E: 0, F: 0, G: 0, H: 0, total: 35, snitt: 4.03, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2024, A: 3, B: 22, C: 0, D: 3, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 3.89, strykprosent: 0, bestattprosent: null, skjult: 6 },
             ],
             emnenivaa: [
               { year: 2021, A: 27, B: 51, C: 34, D: 17, E: 5, F: 0, G: 0, H: 0, total: 134, snitt: 3.58, strykprosent: 0, bestattprosent: null, skjult: 0 },
@@ -44247,7 +44247,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 19, B: 15, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 37, snitt: 4.43, strykprosent: 0, bestattprosent: null, skjult: 0 },
               { year: 2022, A: 17, B: 29, C: 16, D: 3, E: 0, F: 3, G: 0, H: 0, total: 68, snitt: 3.75, strykprosent: 4.4, bestattprosent: null, skjult: 2 },
               { year: 2023, A: 22, B: 16, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 38, snitt: 4.58, strykprosent: 0, bestattprosent: null, skjult: 0 },
-              { year: 2024, A: 15, B: 42, C: 11, D: 4, E: 0, F: 0, G: 0, H: 0, total: 72, snitt: 3.94, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 15, B: 36, C: 11, D: 4, E: 0, F: 0, G: 0, H: 0, total: 66, snitt: 3.94, strykprosent: 0, bestattprosent: null, skjult: 0 },
             ],
             emnenivaa: [
               { year: 2021, A: 28, B: 18, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 49, snitt: 4.51, strykprosent: 0, bestattprosent: null, skjult: 0 },
@@ -44343,7 +44343,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             studiepoeng: 7.5,
             years: [
               { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
-              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 7 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 3 },
               { year: 2025, A: 0, B: 7, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 3.64, strykprosent: 0, bestattprosent: null, skjult: 1 },
             ],
             emnenivaa: [
@@ -44405,8 +44405,8 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 14, B: 10, C: 9, D: 4, E: 0, F: 0, G: 0, H: 0, total: 37, snitt: 3.92, strykprosent: 0, bestattprosent: null, skjult: 2 },
               { year: 2022, A: 0, B: 12, C: 12, D: 0, E: 0, F: 0, G: 0, H: 0, total: 24, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 8 },
               { year: 2023, A: 8, B: 11, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 4.42, strykprosent: 0, bestattprosent: null, skjult: 3 },
-              { year: 2024, A: 0, B: 15, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 3.68, strykprosent: 0, bestattprosent: null, skjult: 7 },
-              { year: 2025, A: 14, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 4.78, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 0, B: 12, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3.63, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2025, A: 10, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 4.71, strykprosent: 0, bestattprosent: null, skjult: 3 },
             ],
             emnenivaa: [
               { year: 2021, A: 22, B: 17, C: 14, D: 7, E: 0, F: 0, G: 0, H: 0, total: 60, snitt: 3.9, strykprosent: 0, bestattprosent: null, skjult: 2 },
@@ -44480,9 +44480,9 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             years: [
               { year: 2021, A: 7, B: 6, C: 7, D: 3, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 3.74, strykprosent: 0, bestattprosent: null, skjult: 6 },
               { year: 2022, A: 0, B: 6, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 8 },
-              { year: 2023, A: 3, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 4.38, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2023, A: 3, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 4.38, strykprosent: 0, bestattprosent: null, skjult: 3 },
               { year: 2024, A: 8, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 4.45, strykprosent: 0, bestattprosent: null, skjult: 11 },
-              { year: 2025, A: 8, B: 8, C: 7, D: 8, E: 0, F: 3, G: 0, H: 0, total: 34, snitt: 3.21, strykprosent: 8.8, bestattprosent: null, skjult: 11 },
+              { year: 2025, A: 8, B: 5, C: 4, D: 8, E: 0, F: 3, G: 0, H: 0, total: 28, snitt: 3.14, strykprosent: 10.7, bestattprosent: null, skjult: 10 },
             ],
             emnenivaa: [
               { year: 2021, A: 11, B: 11, C: 11, D: 5, E: 3, F: 0, G: 0, H: 0, total: 41, snitt: 3.54, strykprosent: 0, bestattprosent: null, skjult: 2 },
@@ -44501,7 +44501,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2022, A: 22, B: 8, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 30, snitt: 4.73, strykprosent: 0, bestattprosent: null, skjult: 6 },
               { year: 2023, A: 3, B: 14, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 4.18, strykprosent: 0, bestattprosent: null, skjult: 2 },
               { year: 2024, A: 0, B: 7, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 3 },
-              { year: 2025, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 12 },
+              { year: 2025, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 9 },
             ],
             emnenivaa: [
               { year: 2021, A: 20, B: 14, C: 14, D: 0, E: 0, F: 0, G: 0, H: 0, total: 48, snitt: 4.12, strykprosent: 0, bestattprosent: null, skjult: 3 },
@@ -44518,9 +44518,9 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             years: [
               { year: 2021, A: 47, B: 92, C: 77, D: 45, E: 24, F: 23, G: 0, H: 0, total: 308, snitt: 3.08, strykprosent: 7.5, bestattprosent: null, skjult: 0 },
               { year: 2022, A: 37, B: 87, C: 72, D: 36, E: 16, F: 12, G: 0, H: 0, total: 260, snitt: 3.22, strykprosent: 4.6, bestattprosent: null, skjult: 9 },
-              { year: 2023, A: 35, B: 68, C: 44, D: 18, E: 12, F: 3, G: 0, H: 0, total: 180, snitt: 3.48, strykprosent: 1.7, bestattprosent: null, skjult: 19 },
-              { year: 2024, A: 44, B: 93, C: 21, D: 11, E: 0, F: 3, G: 0, H: 0, total: 172, snitt: 3.94, strykprosent: 1.7, bestattprosent: null, skjult: 16 },
-              { year: 2025, A: 37, B: 158, C: 37, D: 24, E: 0, F: 5, G: 0, H: 0, total: 261, snitt: 3.74, strykprosent: 1.9, bestattprosent: null, skjult: 16 },
+              { year: 2023, A: 35, B: 65, C: 44, D: 18, E: 12, F: 3, G: 0, H: 0, total: 177, snitt: 3.47, strykprosent: 1.7, bestattprosent: null, skjult: 17 },
+              { year: 2024, A: 44, B: 93, C: 21, D: 11, E: 0, F: 3, G: 0, H: 0, total: 172, snitt: 3.94, strykprosent: 1.7, bestattprosent: null, skjult: 12 },
+              { year: 2025, A: 37, B: 158, C: 33, D: 24, E: 0, F: 5, G: 0, H: 0, total: 257, snitt: 3.75, strykprosent: 1.9, bestattprosent: null, skjult: 8 },
             ],
             emnenivaa: [
               { year: 2021, A: 52, B: 103, C: 96, D: 52, E: 27, F: 24, G: 0, H: 0, total: 354, snitt: 3.08, strykprosent: 6.8, bestattprosent: null, skjult: 0 },
@@ -44551,8 +44551,8 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 41, B: 28, C: 11, D: 0, E: 0, F: 0, G: 0, H: 0, total: 80, snitt: 4.38, strykprosent: 0, bestattprosent: null, skjult: 3 },
               { year: 2022, A: 22, B: 50, C: 21, D: 0, E: 0, F: 0, G: 0, H: 0, total: 93, snitt: 4.01, strykprosent: 0, bestattprosent: null, skjult: 4 },
               { year: 2023, A: 33, B: 33, C: 14, D: 0, E: 0, F: 0, G: 0, H: 0, total: 80, snitt: 4.24, strykprosent: 0, bestattprosent: null, skjult: 3 },
-              { year: 2024, A: 36, B: 68, C: 35, D: 6, E: 0, F: 0, G: 0, H: 0, total: 145, snitt: 3.92, strykprosent: 0, bestattprosent: null, skjult: 11 },
-              { year: 2025, A: 99, B: 228, C: 73, D: 9, E: 0, F: 0, G: 0, H: 0, total: 409, snitt: 4.02, strykprosent: 0, bestattprosent: null, skjult: 14 },
+              { year: 2024, A: 36, B: 62, C: 35, D: 6, E: 0, F: 0, G: 0, H: 0, total: 139, snitt: 3.92, strykprosent: 0, bestattprosent: null, skjult: 7 },
+              { year: 2025, A: 96, B: 211, C: 70, D: 9, E: 0, F: 0, G: 0, H: 0, total: 386, snitt: 4.02, strykprosent: 0, bestattprosent: null, skjult: 7 },
             ],
             emnenivaa: [
               { year: 2021, A: 54, B: 39, C: 18, D: 0, E: 0, F: 0, G: 0, H: 0, total: 111, snitt: 4.32, strykprosent: 0, bestattprosent: null, skjult: 4 },
@@ -44570,7 +44570,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 7, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 0 },
               { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
               { year: 2023, A: 5, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 0 },
-              { year: 2024, A: 16, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 4.84, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 11, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 4.79, strykprosent: 0, bestattprosent: null, skjult: 2 },
               { year: 2025, A: 13, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 3 },
             ],
             emnenivaa: [
@@ -44672,7 +44672,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             years: [
               { year: 2022, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 4 },
               { year: 2023, A: 6, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 1 },
-              { year: 2024, A: 4, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 4.44, strykprosent: 0, bestattprosent: null, skjult: 9 },
+              { year: 2024, A: 4, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 4.44, strykprosent: 0, bestattprosent: null, skjult: 3 },
               { year: 2025, A: 6, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 4.67, strykprosent: 0, bestattprosent: null, skjult: 4 },
             ],
             emnenivaa: [
@@ -44688,8 +44688,8 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             studiepoeng: 7.5,
             years: [
               { year: 2022, A: 4, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 0 },
-              { year: 2023, A: 11, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 2 },
-              { year: 2024, A: 8, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 4.73, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2023, A: 8, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 8, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 4.73, strykprosent: 0, bestattprosent: null, skjult: 1 },
             ],
             emnenivaa: [
               { year: 2022, A: 10, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 3 },
@@ -44801,7 +44801,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2022, A: 0, B: 7, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 4 },
               { year: 2023, A: 3, B: 3, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 0 },
               { year: 2024, A: 4, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 7 },
-              { year: 2025, A: 10, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 7 },
+              { year: 2025, A: 7, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 7 },
             ],
             emnenivaa: [
               { year: 2021, A: 10, B: 7, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 4.08, strykprosent: 0, bestattprosent: null, skjult: 3 },
@@ -44939,23 +44939,6 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             ],
           },
           {
-            emnekode: "ELE426-1",
-            emnenavn: "Norwegian Language III  Norsk samfunns- og næringsliv",
-            studiepoeng: 7.5,
-            years: [
-              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 3 },
-              { year: 2024, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 4 },
-              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 11 },
-            ],
-            emnenivaa: [
-              { year: 2021, A: 0, B: 7, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 3.7, strykprosent: 0, bestattprosent: null, skjult: 2 },
-              { year: 2022, A: 3, B: 6, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 4.33, strykprosent: 0, bestattprosent: null, skjult: 1 },
-              { year: 2023, A: 4, B: 6, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 4.4, strykprosent: 0, bestattprosent: null, skjult: 2 },
-              { year: 2024, A: 9, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 4.64, strykprosent: 0, bestattprosent: null, skjult: 0 },
-              { year: 2025, A: 7, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 4.58, strykprosent: 0, bestattprosent: null, skjult: 2 },
-            ],
-          },
-          {
             emnekode: "ELE429-1",
             emnenavn: "Norwegian economy, history and politics",
             studiepoeng: 7.5,
@@ -44975,9 +44958,9 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             years: [
               { year: 2021, A: 12, B: 16, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 32, snitt: 4.25, strykprosent: 0, bestattprosent: null, skjult: 2 },
               { year: 2022, A: 17, B: 22, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 46, snitt: 4.22, strykprosent: 0, bestattprosent: null, skjult: 1 },
-              { year: 2023, A: 18, B: 26, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 50, snitt: 4.24, strykprosent: 0, bestattprosent: null, skjult: 7 },
-              { year: 2024, A: 26, B: 20, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 49, snitt: 4.47, strykprosent: 0, bestattprosent: null, skjult: 6 },
-              { year: 2025, A: 9, B: 26, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 38, snitt: 4.16, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2023, A: 18, B: 20, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 41, snitt: 4.37, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2024, A: 20, B: 20, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 43, snitt: 4.4, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 9, B: 16, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 4.21, strykprosent: 0, bestattprosent: null, skjult: 1 },
             ],
             emnenivaa: [
               { year: 2021, A: 24, B: 41, C: 15, D: 3, E: 0, F: 0, G: 0, H: 0, total: 83, snitt: 4.04, strykprosent: 0, bestattprosent: null, skjult: 0 },
@@ -44994,9 +44977,9 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             years: [
               { year: 2021, A: 11, B: 20, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 36, snitt: 4.17, strykprosent: 0, bestattprosent: null, skjult: 1 },
               { year: 2022, A: 28, B: 26, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 58, snitt: 4.41, strykprosent: 0, bestattprosent: null, skjult: 3 },
-              { year: 2023, A: 34, B: 32, C: 13, D: 0, E: 0, F: 0, G: 0, H: 0, total: 79, snitt: 4.27, strykprosent: 0, bestattprosent: null, skjult: 12 },
-              { year: 2024, A: 46, B: 78, C: 33, D: 4, E: 0, F: 0, G: 0, H: 0, total: 161, snitt: 4.03, strykprosent: 0, bestattprosent: null, skjult: 7 },
-              { year: 2025, A: 52, B: 75, C: 17, D: 4, E: 0, F: 0, G: 0, H: 0, total: 148, snitt: 4.18, strykprosent: 0, bestattprosent: null, skjult: 10 },
+              { year: 2023, A: 26, B: 23, C: 13, D: 0, E: 0, F: 0, G: 0, H: 0, total: 62, snitt: 4.21, strykprosent: 0, bestattprosent: null, skjult: 9 },
+              { year: 2024, A: 41, B: 65, C: 23, D: 4, E: 0, F: 0, G: 0, H: 0, total: 133, snitt: 4.08, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2025, A: 47, B: 64, C: 14, D: 4, E: 0, F: 0, G: 0, H: 0, total: 129, snitt: 4.19, strykprosent: 0, bestattprosent: null, skjult: 6 },
             ],
             emnenivaa: [
               { year: 2021, A: 20, B: 34, C: 17, D: 0, E: 0, F: 0, G: 0, H: 0, total: 71, snitt: 4.04, strykprosent: 0, bestattprosent: null, skjult: 2 },
@@ -45013,9 +44996,9 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             years: [
               { year: 2021, A: 3, B: 6, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 4.33, strykprosent: 0, bestattprosent: null, skjult: 4 },
               { year: 2022, A: 0, B: 12, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 3 },
-              { year: 2023, A: 0, B: 12, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 3.75, strykprosent: 0, bestattprosent: null, skjult: 5 },
-              { year: 2024, A: 4, B: 3, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 4.1, strykprosent: 0, bestattprosent: null, skjult: 4 },
-              { year: 2025, A: 6, B: 13, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 4.32, strykprosent: 0, bestattprosent: null, skjult: 7 },
+              { year: 2023, A: 0, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 4, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 3, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 4.43, strykprosent: 0, bestattprosent: null, skjult: 5 },
             ],
             emnenivaa: [
               { year: 2021, A: 11, B: 14, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 4.44, strykprosent: 0, bestattprosent: null, skjult: 0 },
@@ -45033,8 +45016,8 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 8, B: 17, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 4.32, strykprosent: 0, bestattprosent: null, skjult: 0 },
               { year: 2022, A: 0, B: 8, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 3.62, strykprosent: 0, bestattprosent: null, skjult: 2 },
               { year: 2023, A: 4, B: 7, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 4.36, strykprosent: 0, bestattprosent: null, skjult: 3 },
-              { year: 2024, A: 0, B: 8, C: 13, D: 3, E: 0, F: 0, G: 0, H: 0, total: 24, snitt: 3.21, strykprosent: 0, bestattprosent: null, skjult: 10 },
-              { year: 2025, A: 5, B: 19, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 4.04, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2024, A: 0, B: 8, C: 13, D: 3, E: 0, F: 0, G: 0, H: 0, total: 24, snitt: 3.21, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 5, B: 16, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 4.04, strykprosent: 0, bestattprosent: null, skjult: 3 },
             ],
             emnenivaa: [
               { year: 2021, A: 15, B: 29, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 44, snitt: 4.34, strykprosent: 0, bestattprosent: null, skjult: 0 },
@@ -45052,8 +45035,8 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 12, B: 12, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 33, snitt: 4.09, strykprosent: 0, bestattprosent: null, skjult: 0 },
               { year: 2022, A: 29, B: 14, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 51, snitt: 4.41, strykprosent: 0, bestattprosent: null, skjult: 4 },
               { year: 2023, A: 21, B: 17, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 38, snitt: 4.55, strykprosent: 0, bestattprosent: null, skjult: 2 },
-              { year: 2024, A: 23, B: 39, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 62, snitt: 4.37, strykprosent: 0, bestattprosent: null, skjult: 6 },
-              { year: 2025, A: 26, B: 39, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 69, snitt: 4.32, strykprosent: 0, bestattprosent: null, skjult: 12 },
+              { year: 2024, A: 18, B: 30, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 48, snitt: 4.38, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2025, A: 26, B: 39, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 69, snitt: 4.32, strykprosent: 0, bestattprosent: null, skjult: 5 },
             ],
             emnenivaa: [
               { year: 2021, A: 12, B: 24, C: 12, D: 0, E: 0, F: 0, G: 0, H: 0, total: 48, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 0 },
@@ -45070,9 +45053,9 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             years: [
               { year: 2021, A: 0, B: 4, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 3 },
               { year: 2022, A: 6, B: 11, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 4.35, strykprosent: 0, bestattprosent: null, skjult: 4 },
-              { year: 2023, A: 14, B: 21, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 35, snitt: 4.4, strykprosent: 0, bestattprosent: null, skjult: 4 },
-              { year: 2024, A: 11, B: 21, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 39, snitt: 4.1, strykprosent: 0, bestattprosent: null, skjult: 6 },
-              { year: 2025, A: 17, B: 7, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 24, snitt: 4.71, strykprosent: 0, bestattprosent: null, skjult: 10 },
+              { year: 2023, A: 14, B: 17, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 4.45, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 11, B: 18, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 36, snitt: 4.11, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 14, B: 7, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 4.67, strykprosent: 0, bestattprosent: null, skjult: 5 },
             ],
             emnenivaa: [
               { year: 2021, A: 0, B: 7, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 2 },
@@ -45090,8 +45073,8 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 6, B: 13, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 24, snitt: 4.04, strykprosent: 0, bestattprosent: null, skjult: 2 },
               { year: 2022, A: 5, B: 15, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 4.09, strykprosent: 0, bestattprosent: null, skjult: 7 },
               { year: 2023, A: 5, B: 6, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 4.14, strykprosent: 0, bestattprosent: null, skjult: 6 },
-              { year: 2024, A: 4, B: 38, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 42, snitt: 4.1, strykprosent: 0, bestattprosent: null, skjult: 1 },
-              { year: 2025, A: 3, B: 52, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 55, snitt: 4.05, strykprosent: 0, bestattprosent: null, skjult: 11 },
+              { year: 2024, A: 4, B: 28, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 32, snitt: 4.12, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 3, B: 44, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 47, snitt: 4.06, strykprosent: 0, bestattprosent: null, skjult: 10 },
             ],
             emnenivaa: [
               { year: 2021, A: 8, B: 25, C: 8, D: 4, E: 0, F: 0, G: 0, H: 0, total: 45, snitt: 3.82, strykprosent: 0, bestattprosent: null, skjult: 0 },
@@ -45121,8 +45104,8 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             years: [
               { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 202, H: 0, total: 202, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 2 },
               { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 154, H: 0, total: 154, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
-              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 204, H: 0, total: 204, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 2 },
-              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 127, H: 0, total: 127, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 193, H: 0, total: 193, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 119, H: 0, total: 119, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
               { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 14, H: 0, total: 14, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
             ],
             emnenivaa: [
@@ -45141,7 +45124,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 13, H: 0, total: 13, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
               { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 29, H: 0, total: 29, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
               { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 10, H: 0, total: 10, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
-              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 14, H: 0, total: 14, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 10, H: 0, total: 10, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
               { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
             ],
             emnenivaa: [
@@ -45180,7 +45163,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2022, A: 3, B: 6, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 0 },
               { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
               { year: 2024, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 0 },
-              { year: 2025, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
             ],
             emnenivaa: [
               { year: 2021, A: 8, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 4.62, strykprosent: 0, bestattprosent: null, skjult: 0 },
@@ -45309,8 +45292,8 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             studiepoeng: 7.5,
             years: [
               { year: 2023, A: 3, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 4.38, strykprosent: 0, bestattprosent: null, skjult: 1 },
-              { year: 2024, A: 6, B: 14, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 4.3, strykprosent: 0, bestattprosent: null, skjult: 10 },
-              { year: 2025, A: 21, B: 17, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 38, snitt: 4.55, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2024, A: 6, B: 11, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 4.35, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2025, A: 18, B: 17, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 35, snitt: 4.51, strykprosent: 0, bestattprosent: null, skjult: 2 },
             ],
             emnenivaa: [
               { year: 2023, A: 8, B: 18, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 4.1, strykprosent: 0, bestattprosent: null, skjult: 0 },
@@ -45366,7 +45349,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 78, H: 0, total: 78, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 4 },
               { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 82, H: 3, total: 85, snitt: null, strykprosent: null, bestattprosent: 96.5, skjult: 2 },
               { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 61, H: 0, total: 61, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
-              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 69, H: 0, total: 69, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 66, H: 0, total: 66, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
             ],
             emnenivaa: [
               { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 63, H: 0, total: 63, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 2 },
@@ -45384,8 +45367,8 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 10, B: 8, C: 0, D: 3, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 4.19, strykprosent: 0, bestattprosent: null, skjult: 1 },
               { year: 2022, A: 13, B: 11, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 4.37, strykprosent: 0, bestattprosent: null, skjult: 1 },
               { year: 2023, A: 12, B: 10, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 4.55, strykprosent: 0, bestattprosent: null, skjult: 7 },
-              { year: 2024, A: 22, B: 7, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 36, snitt: 4.42, strykprosent: 0, bestattprosent: null, skjult: 5 },
-              { year: 2025, A: 23, B: 20, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 43, snitt: 4.53, strykprosent: 0, bestattprosent: null, skjult: 8 },
+              { year: 2024, A: 17, B: 7, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 4.52, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 17, B: 13, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 30, snitt: 4.57, strykprosent: 0, bestattprosent: null, skjult: 4 },
             ],
             emnenivaa: [
               { year: 2021, A: 14, B: 11, C: 3, D: 4, E: 0, F: 0, G: 0, H: 0, total: 32, snitt: 4.09, strykprosent: 0, bestattprosent: null, skjult: 0 },
@@ -45403,8 +45386,8 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 24, B: 35, C: 27, D: 5, E: 0, F: 0, G: 0, H: 0, total: 91, snitt: 3.86, strykprosent: 0, bestattprosent: null, skjult: 1 },
               { year: 2022, A: 9, B: 18, C: 4, D: 10, E: 0, F: 0, G: 0, H: 0, total: 41, snitt: 3.63, strykprosent: 0, bestattprosent: null, skjult: 8 },
               { year: 2023, A: 7, B: 11, C: 19, D: 12, E: 6, F: 4, G: 0, H: 0, total: 59, snitt: 2.81, strykprosent: 6.8, bestattprosent: null, skjult: 1 },
-              { year: 2024, A: 16, B: 19, C: 11, D: 9, E: 3, F: 0, G: 0, H: 0, total: 58, snitt: 3.62, strykprosent: 0, bestattprosent: null, skjult: 7 },
-              { year: 2025, A: 3, B: 6, C: 16, D: 0, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 3.48, strykprosent: 0, bestattprosent: null, skjult: 10 },
+              { year: 2024, A: 13, B: 19, C: 11, D: 9, E: 3, F: 0, G: 0, H: 0, total: 55, snitt: 3.55, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 3, B: 3, C: 13, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 3.47, strykprosent: 0, bestattprosent: null, skjult: 7 },
             ],
             emnenivaa: [
               { year: 2021, A: 36, B: 46, C: 37, D: 9, E: 0, F: 3, G: 0, H: 0, total: 131, snitt: 3.76, strykprosent: 2.3, bestattprosent: null, skjult: 2 },
@@ -45421,7 +45404,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             years: [
               { year: 2021, A: 8, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 1 },
               { year: 2022, A: 0, B: 10, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 3.71, strykprosent: 0, bestattprosent: null, skjult: 2 },
-              { year: 2024, A: 0, B: 12, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 3.75, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 0, B: 9, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 3.69, strykprosent: 0, bestattprosent: null, skjult: 2 },
             ],
             emnenivaa: [
               { year: 2021, A: 9, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 4.75, strykprosent: 0, bestattprosent: null, skjult: 2 },
@@ -45436,9 +45419,9 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             years: [
               { year: 2021, A: 95, B: 124, C: 95, D: 63, E: 29, F: 11, G: 0, H: 0, total: 417, snitt: 3.38, strykprosent: 2.6, bestattprosent: null, skjult: 0 },
               { year: 2022, A: 73, B: 96, C: 110, D: 53, E: 26, F: 12, G: 0, H: 0, total: 370, snitt: 3.27, strykprosent: 3.2, bestattprosent: null, skjult: 3 },
-              { year: 2023, A: 75, B: 66, C: 80, D: 52, E: 25, F: 11, G: 0, H: 0, total: 309, snitt: 3.26, strykprosent: 3.6, bestattprosent: null, skjult: 16 },
-              { year: 2024, A: 110, B: 126, C: 121, D: 57, E: 39, F: 24, G: 0, H: 0, total: 477, snitt: 3.29, strykprosent: 5, bestattprosent: null, skjult: 11 },
-              { year: 2025, A: 120, B: 138, C: 123, D: 49, E: 36, F: 18, G: 0, H: 0, total: 484, snitt: 3.42, strykprosent: 3.7, bestattprosent: null, skjult: 22 },
+              { year: 2023, A: 72, B: 63, C: 77, D: 52, E: 25, F: 11, G: 0, H: 0, total: 300, snitt: 3.24, strykprosent: 3.7, bestattprosent: null, skjult: 14 },
+              { year: 2024, A: 104, B: 122, C: 116, D: 54, E: 36, F: 24, G: 0, H: 0, total: 456, snitt: 3.29, strykprosent: 5.3, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 116, B: 128, C: 110, D: 49, E: 31, F: 15, G: 0, H: 0, total: 449, snitt: 3.45, strykprosent: 3.3, bestattprosent: null, skjult: 12 },
             ],
             emnenivaa: [
               { year: 2021, A: 108, B: 137, C: 110, D: 71, E: 34, F: 16, G: 0, H: 0, total: 476, snitt: 3.35, strykprosent: 3.4, bestattprosent: null, skjult: 0 },
@@ -45474,9 +45457,9 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             years: [
               { year: 2021, A: 49, B: 70, C: 29, D: 0, E: 0, F: 0, G: 0, H: 0, total: 148, snitt: 4.14, strykprosent: 0, bestattprosent: null, skjult: 5 },
               { year: 2022, A: 37, B: 39, C: 16, D: 0, E: 0, F: 0, G: 0, H: 0, total: 92, snitt: 4.23, strykprosent: 0, bestattprosent: null, skjult: 10 },
-              { year: 2023, A: 70, B: 46, C: 10, D: 0, E: 0, F: 0, G: 0, H: 0, total: 126, snitt: 4.48, strykprosent: 0, bestattprosent: null, skjult: 7 },
-              { year: 2024, A: 84, B: 110, C: 15, D: 0, E: 0, F: 0, G: 0, H: 0, total: 209, snitt: 4.33, strykprosent: 0, bestattprosent: null, skjult: 6 },
-              { year: 2025, A: 137, B: 136, C: 21, D: 0, E: 0, F: 0, G: 0, H: 0, total: 294, snitt: 4.39, strykprosent: 0, bestattprosent: null, skjult: 7 },
+              { year: 2023, A: 61, B: 46, C: 10, D: 0, E: 0, F: 0, G: 0, H: 0, total: 117, snitt: 4.44, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2024, A: 75, B: 101, C: 15, D: 0, E: 0, F: 0, G: 0, H: 0, total: 191, snitt: 4.31, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 128, B: 123, C: 16, D: 0, E: 0, F: 0, G: 0, H: 0, total: 267, snitt: 4.42, strykprosent: 0, bestattprosent: null, skjult: 4 },
             ],
             emnenivaa: [
               { year: 2021, A: 53, B: 83, C: 32, D: 6, E: 0, F: 0, G: 0, H: 0, total: 174, snitt: 4.05, strykprosent: 0, bestattprosent: null, skjult: 0 },
@@ -45493,9 +45476,9 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             years: [
               { year: 2021, A: 102, B: 149, C: 114, D: 52, E: 27, F: 5, G: 0, H: 0, total: 449, snitt: 3.52, strykprosent: 1.1, bestattprosent: null, skjult: 2 },
               { year: 2022, A: 98, B: 100, C: 97, D: 24, E: 4, F: 0, G: 0, H: 0, total: 323, snitt: 3.82, strykprosent: 0, bestattprosent: null, skjult: 13 },
-              { year: 2023, A: 84, B: 100, C: 99, D: 14, E: 17, F: 9, G: 0, H: 0, total: 323, snitt: 3.6, strykprosent: 2.8, bestattprosent: null, skjult: 10 },
-              { year: 2024, A: 66, B: 135, C: 144, D: 51, E: 15, F: 6, G: 0, H: 0, total: 417, snitt: 3.4, strykprosent: 1.4, bestattprosent: null, skjult: 15 },
-              { year: 2025, A: 79, B: 177, C: 184, D: 80, E: 57, F: 21, G: 0, H: 0, total: 598, snitt: 3.13, strykprosent: 3.5, bestattprosent: null, skjult: 20 },
+              { year: 2023, A: 79, B: 100, C: 94, D: 14, E: 17, F: 9, G: 0, H: 0, total: 313, snitt: 3.58, strykprosent: 2.9, bestattprosent: null, skjult: 10 },
+              { year: 2024, A: 63, B: 128, C: 131, D: 48, E: 15, F: 6, G: 0, H: 0, total: 391, snitt: 3.4, strykprosent: 1.5, bestattprosent: null, skjult: 8 },
+              { year: 2025, A: 79, B: 168, C: 166, D: 73, E: 54, F: 21, G: 0, H: 0, total: 561, snitt: 3.15, strykprosent: 3.7, bestattprosent: null, skjult: 10 },
             ],
             emnenivaa: [
               { year: 2021, A: 109, B: 163, C: 131, D: 65, E: 39, F: 9, G: 0, H: 0, total: 516, snitt: 3.41, strykprosent: 1.7, bestattprosent: null, skjult: 0 },
@@ -45514,7 +45497,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2022, A: 12, B: 9, C: 4, D: 6, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 3.87, strykprosent: 0, bestattprosent: null, skjult: 11 },
               { year: 2023, A: 11, B: 5, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 4.23, strykprosent: 0, bestattprosent: null, skjult: 19 },
               { year: 2024, A: 6, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 4.55, strykprosent: 0, bestattprosent: null, skjult: 11 },
-              { year: 2025, A: 23, B: 22, C: 11, D: 0, E: 0, F: 0, G: 0, H: 0, total: 56, snitt: 4.21, strykprosent: 0, bestattprosent: null, skjult: 10 },
+              { year: 2025, A: 23, B: 22, C: 11, D: 0, E: 0, F: 0, G: 0, H: 0, total: 56, snitt: 4.21, strykprosent: 0, bestattprosent: null, skjult: 7 },
             ],
             emnenivaa: [
               { year: 2021, A: 18, B: 46, C: 43, D: 8, E: 9, F: 0, G: 0, H: 0, total: 124, snitt: 3.45, strykprosent: 0, bestattprosent: null, skjult: 0 },
@@ -45571,7 +45554,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2022, A: 0, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 12 },
               { year: 2023, A: 11, B: 16, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 34, snitt: 4.12, strykprosent: 0, bestattprosent: null, skjult: 8 },
               { year: 2024, A: 9, B: 10, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 4.12, strykprosent: 0, bestattprosent: null, skjult: 7 },
-              { year: 2025, A: 21, B: 40, C: 17, D: 7, E: 0, F: 0, G: 0, H: 0, total: 85, snitt: 3.88, strykprosent: 0, bestattprosent: null, skjult: 9 },
+              { year: 2025, A: 21, B: 40, C: 17, D: 7, E: 0, F: 0, G: 0, H: 0, total: 85, snitt: 3.88, strykprosent: 0, bestattprosent: null, skjult: 6 },
             ],
             emnenivaa: [
               { year: 2021, A: 8, B: 10, C: 18, D: 7, E: 0, F: 0, G: 0, H: 0, total: 43, snitt: 3.44, strykprosent: 0, bestattprosent: null, skjult: 1 },
@@ -45665,7 +45648,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 20, B: 66, C: 19, D: 4, E: 0, F: 0, G: 0, H: 0, total: 109, snitt: 3.94, strykprosent: 0, bestattprosent: null, skjult: 0 },
               { year: 2022, A: 10, B: 42, C: 19, D: 3, E: 0, F: 0, G: 0, H: 0, total: 74, snitt: 3.8, strykprosent: 0, bestattprosent: null, skjult: 4 },
               { year: 2023, A: 13, B: 54, C: 34, D: 3, E: 0, F: 0, G: 0, H: 0, total: 104, snitt: 3.74, strykprosent: 0, bestattprosent: null, skjult: 2 },
-              { year: 2024, A: 5, B: 13, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 9 },
+              { year: 2024, A: 5, B: 13, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 6 },
             ],
             emnenivaa: [
               { year: 2021, A: 22, B: 71, C: 21, D: 4, E: 0, F: 0, G: 0, H: 0, total: 118, snitt: 3.94, strykprosent: 0, bestattprosent: null, skjult: 0 },
@@ -45682,7 +45665,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 76, B: 51, C: 40, D: 11, E: 4, F: 0, G: 0, H: 0, total: 182, snitt: 4.01, strykprosent: 0, bestattprosent: null, skjult: 2 },
               { year: 2022, A: 68, B: 55, C: 14, D: 0, E: 0, F: 0, G: 0, H: 0, total: 137, snitt: 4.39, strykprosent: 0, bestattprosent: null, skjult: 6 },
               { year: 2023, A: 48, B: 31, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 87, snitt: 4.46, strykprosent: 0, bestattprosent: null, skjult: 7 },
-              { year: 2024, A: 58, B: 100, C: 13, D: 0, E: 0, F: 0, G: 0, H: 0, total: 171, snitt: 4.26, strykprosent: 0, bestattprosent: null, skjult: 19 },
+              { year: 2024, A: 58, B: 97, C: 13, D: 0, E: 0, F: 0, G: 0, H: 0, total: 168, snitt: 4.27, strykprosent: 0, bestattprosent: null, skjult: 15 },
               { year: 2025, A: 0, B: 10, C: 0, D: 3, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 3.54, strykprosent: 0, bestattprosent: null, skjult: 8 },
             ],
             emnenivaa: [
@@ -45701,7 +45684,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2022, A: 5, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 0 },
               { year: 2023, A: 0, B: 7, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 2 },
               { year: 2024, A: 15, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 4.79, strykprosent: 0, bestattprosent: null, skjult: 4 },
-              { year: 2025, A: 27, B: 37, C: 10, D: 0, E: 0, F: 0, G: 0, H: 0, total: 74, snitt: 4.23, strykprosent: 0, bestattprosent: null, skjult: 13 },
+              { year: 2025, A: 27, B: 37, C: 10, D: 0, E: 0, F: 0, G: 0, H: 0, total: 74, snitt: 4.23, strykprosent: 0, bestattprosent: null, skjult: 9 },
             ],
             emnenivaa: [
               { year: 2022, A: 8, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 0 },
@@ -45718,8 +45701,8 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 34, B: 61, C: 48, D: 3, E: 0, F: 5, G: 0, H: 0, total: 151, snitt: 3.74, strykprosent: 3.3, bestattprosent: null, skjult: 0 },
               { year: 2022, A: 8, B: 38, C: 23, D: 12, E: 0, F: 0, G: 0, H: 0, total: 81, snitt: 3.52, strykprosent: 0, bestattprosent: null, skjult: 1 },
               { year: 2023, A: 8, B: 22, C: 17, D: 5, E: 0, F: 0, G: 0, H: 0, total: 52, snitt: 3.63, strykprosent: 0, bestattprosent: null, skjult: 8 },
-              { year: 2024, A: 10, B: 12, C: 4, D: 3, E: 0, F: 0, G: 0, H: 0, total: 29, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 6 },
-              { year: 2025, A: 14, B: 15, C: 11, D: 3, E: 0, F: 0, G: 0, H: 0, total: 43, snitt: 3.93, strykprosent: 0, bestattprosent: null, skjult: 14 },
+              { year: 2024, A: 6, B: 12, C: 4, D: 3, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 3.84, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 14, B: 15, C: 8, D: 3, E: 0, F: 0, G: 0, H: 0, total: 40, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 12 },
             ],
             emnenivaa: [
               { year: 2021, A: 37, B: 66, C: 54, D: 3, E: 0, F: 5, G: 0, H: 0, total: 165, snitt: 3.74, strykprosent: 3, bestattprosent: null, skjult: 0 },
@@ -45737,8 +45720,8 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 20, B: 20, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 40, snitt: 4.5, strykprosent: 0, bestattprosent: null, skjult: 0 },
               { year: 2022, A: 8, B: 29, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 37, snitt: 4.22, strykprosent: 0, bestattprosent: null, skjult: 1 },
               { year: 2023, A: 5, B: 14, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 4.26, strykprosent: 0, bestattprosent: null, skjult: 0 },
-              { year: 2024, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 4 },
-              { year: 2025, A: 11, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2024, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 8, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 4 },
             ],
             emnenivaa: [
               { year: 2021, A: 22, B: 33, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 55, snitt: 4.4, strykprosent: 0, bestattprosent: null, skjult: 0 },
@@ -45755,9 +45738,9 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             years: [
               { year: 2021, A: 10, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 4.67, strykprosent: 0, bestattprosent: null, skjult: 0 },
               { year: 2022, A: 4, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 2 },
-              { year: 2023, A: 18, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 0 },
-              { year: 2024, A: 33, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 33, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 0 },
-              { year: 2025, A: 38, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 38, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 12, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 30, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 30, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 32, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 32, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 0 },
             ],
             emnenivaa: [
               { year: 2021, A: 24, B: 10, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 34, snitt: 4.71, strykprosent: 0, bestattprosent: null, skjult: 1 },
@@ -45775,8 +45758,8 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 5, B: 3, C: 10, D: 9, E: 5, F: 0, G: 0, H: 0, total: 32, snitt: 2.81, strykprosent: 0, bestattprosent: null, skjult: 1 },
               { year: 2022, A: 29, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 29, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 3 },
               { year: 2023, A: 22, B: 13, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 38, snitt: 4.5, strykprosent: 0, bestattprosent: null, skjult: 3 },
-              { year: 2024, A: 42, B: 31, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 73, snitt: 4.58, strykprosent: 0, bestattprosent: null, skjult: 5 },
-              { year: 2025, A: 148, B: 78, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 226, snitt: 4.65, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2024, A: 39, B: 31, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 70, snitt: 4.56, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 143, B: 74, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 217, snitt: 4.66, strykprosent: 0, bestattprosent: null, skjult: 1 },
             ],
             emnenivaa: [
               { year: 2021, A: 5, B: 6, C: 12, D: 10, E: 6, F: 0, G: 0, H: 0, total: 39, snitt: 2.85, strykprosent: 0, bestattprosent: null, skjult: 1 },
@@ -45795,7 +45778,6 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
               { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
               { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
-              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
             ],
             emnenivaa: [
               { year: 2021, A: 0, B: 5, C: 0, D: 3, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 3.25, strykprosent: 0, bestattprosent: null, skjult: 6 },
@@ -45812,8 +45794,8 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             years: [
               { year: 2021, A: 31, B: 28, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 59, snitt: 4.53, strykprosent: 0, bestattprosent: null, skjult: 0 },
               { year: 2022, A: 20, B: 16, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 36, snitt: 4.56, strykprosent: 0, bestattprosent: null, skjult: 2 },
-              { year: 2024, A: 19, B: 14, C: 0, D: 0, E: 0, F: 8, G: 0, H: 0, total: 41, snitt: 3.68, strykprosent: 19.5, bestattprosent: null, skjult: 3 },
-              { year: 2025, A: 25, B: 19, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 44, snitt: 4.57, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 16, B: 14, C: 0, D: 0, E: 0, F: 8, G: 0, H: 0, total: 38, snitt: 3.58, strykprosent: 21.1, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 25, B: 13, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 38, snitt: 4.66, strykprosent: 0, bestattprosent: null, skjult: 0 },
             ],
             emnenivaa: [
               { year: 2021, A: 34, B: 36, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 70, snitt: 4.49, strykprosent: 0, bestattprosent: null, skjult: 0 },
@@ -45827,7 +45809,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             emnenavn: "Infrastructure and Project Finance",
             studiepoeng: 7.5,
             years: [
-              { year: 2025, A: 20, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2025, A: 17, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 5 },
             ],
             emnenivaa: [
               { year: 2025, A: 29, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 32, snitt: 4.91, strykprosent: 0, bestattprosent: null, skjult: 0 },
@@ -45901,7 +45883,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 26, B: 10, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 36, snitt: 4.72, strykprosent: 0, bestattprosent: null, skjult: 2 },
               { year: 2022, A: 28, B: 18, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 46, snitt: 4.61, strykprosent: 0, bestattprosent: null, skjult: 1 },
               { year: 2023, A: 10, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 4.71, strykprosent: 0, bestattprosent: null, skjult: 1 },
-              { year: 2024, A: 17, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 14, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 1 },
             ],
             emnenivaa: [
               { year: 2021, A: 40, B: 27, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 71, snitt: 4.51, strykprosent: 0, bestattprosent: null, skjult: 0 },
@@ -45917,8 +45899,8 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             years: [
               { year: 2021, A: 0, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 3 },
               { year: 2022, A: 4, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 0 },
-              { year: 2023, A: 7, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 4.7, strykprosent: 0, bestattprosent: null, skjult: 0 },
-              { year: 2024, A: 0, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
             ],
             emnenivaa: [
               { year: 2021, A: 12, B: 4, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 4.47, strykprosent: 0, bestattprosent: null, skjult: 1 },
@@ -45949,9 +45931,9 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             years: [
               { year: 2021, A: 16, B: 81, C: 59, D: 0, E: 0, F: 12, G: 0, H: 0, total: 168, snitt: 3.46, strykprosent: 7.1, bestattprosent: null, skjult: 2 },
               { year: 2022, A: 17, B: 69, C: 33, D: 4, E: 0, F: 3, G: 0, H: 0, total: 126, snitt: 3.71, strykprosent: 2.4, bestattprosent: null, skjult: 9 },
-              { year: 2023, A: 59, B: 42, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 106, snitt: 4.51, strykprosent: 0, bestattprosent: null, skjult: 10 },
-              { year: 2024, A: 95, B: 167, C: 34, D: 0, E: 0, F: 4, G: 0, H: 0, total: 300, snitt: 4.15, strykprosent: 1.3, bestattprosent: null, skjult: 1 },
-              { year: 2025, A: 107, B: 222, C: 53, D: 0, E: 0, F: 0, G: 0, H: 0, total: 382, snitt: 4.14, strykprosent: 0, bestattprosent: null, skjult: 10 },
+              { year: 2023, A: 54, B: 38, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 97, snitt: 4.51, strykprosent: 0, bestattprosent: null, skjult: 9 },
+              { year: 2024, A: 85, B: 156, C: 31, D: 0, E: 0, F: 4, G: 0, H: 0, total: 276, snitt: 4.14, strykprosent: 1.4, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 99, B: 205, C: 50, D: 0, E: 0, F: 0, G: 0, H: 0, total: 354, snitt: 4.14, strykprosent: 0, bestattprosent: null, skjult: 6 },
             ],
             emnenivaa: [
               { year: 2021, A: 28, B: 107, C: 71, D: 0, E: 0, F: 20, G: 0, H: 0, total: 226, snitt: 3.46, strykprosent: 8.8, bestattprosent: null, skjult: 1 },
@@ -45969,7 +45951,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 14, B: 30, C: 24, D: 0, E: 0, F: 0, G: 0, H: 0, total: 68, snitt: 3.85, strykprosent: 0, bestattprosent: null, skjult: 0 },
               { year: 2023, A: 0, B: 9, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 3.64, strykprosent: 0, bestattprosent: null, skjult: 0 },
               { year: 2024, A: 8, B: 10, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 4.44, strykprosent: 0, bestattprosent: null, skjult: 4 },
-              { year: 2025, A: 3, B: 13, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 4.19, strykprosent: 0, bestattprosent: null, skjult: 10 },
+              { year: 2025, A: 3, B: 13, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 4.19, strykprosent: 0, bestattprosent: null, skjult: 7 },
             ],
             emnenivaa: [
               { year: 2021, A: 15, B: 31, C: 28, D: 0, E: 0, F: 0, G: 0, H: 0, total: 74, snitt: 3.82, strykprosent: 0, bestattprosent: null, skjult: 0 },
@@ -46031,8 +46013,8 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 153, B: 85, C: 18, D: 0, E: 0, F: 0, G: 0, H: 0, total: 256, snitt: 4.53, strykprosent: 0, bestattprosent: null, skjult: 1 },
               { year: 2022, A: 172, B: 111, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 292, snitt: 4.56, strykprosent: 0, bestattprosent: null, skjult: 4 },
               { year: 2023, A: 131, B: 104, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 242, snitt: 4.51, strykprosent: 0, bestattprosent: null, skjult: 8 },
-              { year: 2024, A: 134, B: 103, C: 14, D: 0, E: 0, F: 0, G: 0, H: 0, total: 251, snitt: 4.48, strykprosent: 0, bestattprosent: null, skjult: 6 },
-              { year: 2025, A: 250, B: 98, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 351, snitt: 4.7, strykprosent: 0, bestattprosent: null, skjult: 9 },
+              { year: 2024, A: 134, B: 100, C: 14, D: 0, E: 0, F: 0, G: 0, H: 0, total: 248, snitt: 4.48, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2025, A: 238, B: 98, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 339, snitt: 4.69, strykprosent: 0, bestattprosent: null, skjult: 4 },
             ],
             emnenivaa: [
               { year: 2021, A: 166, B: 94, C: 18, D: 0, E: 0, F: 0, G: 0, H: 0, total: 278, snitt: 4.53, strykprosent: 0, bestattprosent: null, skjult: 2 },
@@ -46123,8 +46105,8 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             years: [
               { year: 2021, A: 14, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 0 },
               { year: 2023, A: 5, B: 11, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 4.31, strykprosent: 0, bestattprosent: null, skjult: 3 },
-              { year: 2024, A: 7, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 6 },
-              { year: 2025, A: 4, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 4.57, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 4, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 4, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 0 },
             ],
             emnenivaa: [
               { year: 2021, A: 35, B: 10, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 51, snitt: 4.57, strykprosent: 0, bestattprosent: null, skjult: 0 },
@@ -46140,9 +46122,9 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             years: [
               { year: 2021, A: 0, B: 3, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 3.3, strykprosent: 0, bestattprosent: null, skjult: 2 },
               { year: 2022, A: 5, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 2 },
-              { year: 2023, A: 10, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 4.71, strykprosent: 0, bestattprosent: null, skjult: 1 },
-              { year: 2024, A: 13, B: 10, C: 0, D: 3, E: 0, F: 0, G: 0, H: 0, total: 26, snitt: 4.27, strykprosent: 0, bestattprosent: null, skjult: 4 },
-              { year: 2025, A: 0, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 10 },
+              { year: 2023, A: 4, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 4.5, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 13, B: 7, C: 0, D: 3, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 4.3, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 0, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 6 },
             ],
             emnenivaa: [
               { year: 2021, A: 12, B: 18, C: 24, D: 3, E: 0, F: 0, G: 0, H: 0, total: 57, snitt: 3.68, strykprosent: 0, bestattprosent: null, skjult: 2 },
@@ -46159,8 +46141,8 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             years: [
               { year: 2021, A: 9, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 4.69, strykprosent: 0, bestattprosent: null, skjult: 1 },
               { year: 2022, A: 4, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 4.5, strykprosent: 0, bestattprosent: null, skjult: 4 },
-              { year: 2024, A: 8, B: 0, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 3.94, strykprosent: 0, bestattprosent: null, skjult: 2 },
-              { year: 2025, A: 3, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 4.5, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 4, B: 0, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 3, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 4.5, strykprosent: 0, bestattprosent: null, skjult: 0 },
             ],
             emnenivaa: [
               { year: 2021, A: 28, B: 16, C: 14, D: 3, E: 0, F: 0, G: 0, H: 0, total: 61, snitt: 4.13, strykprosent: 0, bestattprosent: null, skjult: 0 },
@@ -46177,7 +46159,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 9, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 2 },
               { year: 2022, A: 6, B: 11, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 4.35, strykprosent: 0, bestattprosent: null, skjult: 4 },
               { year: 2023, A: 6, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 0 },
-              { year: 2024, A: 6, B: 6, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 4.5, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 6, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 2 },
             ],
             emnenivaa: [
               { year: 2021, A: 28, B: 23, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 51, snitt: 4.55, strykprosent: 0, bestattprosent: null, skjult: 2 },
@@ -46193,7 +46175,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             years: [
               { year: 2021, A: 3, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 4.38, strykprosent: 0, bestattprosent: null, skjult: 0 },
               { year: 2023, A: 8, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 1 },
-              { year: 2024, A: 11, B: 8, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 24, snitt: 4.25, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 11, B: 8, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 4.58, strykprosent: 0, bestattprosent: null, skjult: 3 },
               { year: 2025, A: 6, B: 8, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 4.43, strykprosent: 0, bestattprosent: null, skjult: 4 },
             ],
             emnenivaa: [
@@ -46210,8 +46192,8 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             years: [
               { year: 2021, A: 11, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 4.69, strykprosent: 0, bestattprosent: null, skjult: 1 },
               { year: 2022, A: 15, B: 9, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 24, snitt: 4.62, strykprosent: 0, bestattprosent: null, skjult: 2 },
-              { year: 2023, A: 17, B: 9, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 26, snitt: 4.65, strykprosent: 0, bestattprosent: null, skjult: 2 },
-              { year: 2024, A: 10, B: 8, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 4.56, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2023, A: 8, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 4.62, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 10, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 4.77, strykprosent: 0, bestattprosent: null, skjult: 2 },
             ],
             emnenivaa: [
               { year: 2021, A: 34, B: 19, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 53, snitt: 4.64, strykprosent: 0, bestattprosent: null, skjult: 1 },
@@ -46229,7 +46211,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2022, A: 0, B: 32, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 32, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 2 },
               { year: 2023, A: 8, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 3 },
               { year: 2024, A: 5, B: 11, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 4.31, strykprosent: 0, bestattprosent: null, skjult: 1 },
-              { year: 2025, A: 0, B: 12, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2025, A: 0, B: 9, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 6 },
             ],
             emnenivaa: [
               { year: 2021, A: 16, B: 31, C: 11, D: 0, E: 0, F: 0, G: 0, H: 0, total: 58, snitt: 4.09, strykprosent: 0, bestattprosent: null, skjult: 0 },
@@ -46248,7 +46230,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2022, A: 3, B: 20, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 4.13, strykprosent: 0, bestattprosent: null, skjult: 7 },
               { year: 2023, A: 5, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 4.56, strykprosent: 0, bestattprosent: null, skjult: 3 },
               { year: 2024, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 4 },
-              { year: 2025, A: 4, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 4.57, strykprosent: 0, bestattprosent: null, skjult: 12 },
+              { year: 2025, A: 4, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 4.57, strykprosent: 0, bestattprosent: null, skjult: 8 },
             ],
             emnenivaa: [
               { year: 2021, A: 16, B: 20, C: 4, D: 0, E: 4, F: 0, G: 0, H: 0, total: 44, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 0 },
@@ -46265,9 +46247,9 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             years: [
               { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
               { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 4 },
-              { year: 2023, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2023, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 2 },
               { year: 2024, A: 0, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 0 },
-              { year: 2025, A: 5, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 3 },
             ],
             emnenivaa: [
               { year: 2021, A: 13, B: 18, C: 11, D: 0, E: 0, F: 0, G: 0, H: 0, total: 42, snitt: 4.05, strykprosent: 0, bestattprosent: null, skjult: 1 },
@@ -46300,8 +46282,8 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 7 },
               { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 3 },
               { year: 2023, A: 4, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 0 },
-              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 6 },
-              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 7 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
             ],
             emnenivaa: [
               { year: 2021, A: 6, B: 6, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 4.5, strykprosent: 0, bestattprosent: null, skjult: 2 },
@@ -46348,8 +46330,8 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 5, B: 11, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 4.31, strykprosent: 0, bestattprosent: null, skjult: 2 },
               { year: 2022, A: 5, B: 5, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 3.94, strykprosent: 0, bestattprosent: null, skjult: 3 },
               { year: 2023, A: 8, B: 4, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 4.33, strykprosent: 0, bestattprosent: null, skjult: 9 },
-              { year: 2024, A: 14, B: 6, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 4.21, strykprosent: 0, bestattprosent: null, skjult: 6 },
-              { year: 2025, A: 3, B: 22, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 4.12, strykprosent: 0, bestattprosent: null, skjult: 8 },
+              { year: 2024, A: 14, B: 6, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 4.21, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 0, B: 22, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 4 },
             ],
             emnenivaa: [
               { year: 2021, A: 9, B: 16, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 4.36, strykprosent: 0, bestattprosent: null, skjult: 2 },
@@ -46366,7 +46348,6 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             years: [
               { year: 2021, A: 3, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 4.5, strykprosent: 0, bestattprosent: null, skjult: 3 },
               { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 3 },
-              { year: 2024, A: 4, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 4.57, strykprosent: 0, bestattprosent: null, skjult: 0 },
             ],
             emnenivaa: [
               { year: 2021, A: 7, B: 12, C: 6, D: 0, E: 0, F: 3, G: 0, H: 0, total: 28, snitt: 3.61, strykprosent: 10.7, bestattprosent: null, skjult: 1 },
@@ -46412,45 +46393,15 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             ],
           },
           {
-            emnekode: "NOR10-1",
-            emnenavn: "Norwegian Language for Foreign Students level I (A1)",
-            studiepoeng: 7.5,
-            years: [
-              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 17, H: 0, total: 17, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
-            ],
-            emnenivaa: [
-              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 167, H: 18, total: 185, snitt: null, strykprosent: null, bestattprosent: 90.3, skjult: 0 },
-              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 161, H: 0, total: 161, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 2 },
-              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 171, H: 0, total: 171, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
-              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 154, H: 6, total: 160, snitt: null, strykprosent: null, bestattprosent: 96.2, skjult: 0 },
-              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 135, H: 3, total: 138, snitt: null, strykprosent: null, bestattprosent: 97.8, skjult: 0 },
-            ],
-          },
-          {
-            emnekode: "NOR11-1",
-            emnenavn: "Norwegian Language for Foreign Students level II (A2)",
-            studiepoeng: 7.5,
-            years: [
-              { year: 2024, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 3 },
-            ],
-            emnenivaa: [
-              { year: 2021, A: 8, B: 7, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 4.15, strykprosent: 0, bestattprosent: null, skjult: 2 },
-              { year: 2022, A: 7, B: 13, C: 5, D: 0, E: 0, F: 3, G: 0, H: 0, total: 28, snitt: 3.64, strykprosent: 10.7, bestattprosent: null, skjult: 1 },
-              { year: 2023, A: 3, B: 10, C: 4, D: 0, E: 0, F: 3, G: 0, H: 0, total: 20, snitt: 3.35, strykprosent: 15, bestattprosent: null, skjult: 0 },
-              { year: 2024, A: 14, B: 3, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 4.35, strykprosent: 0, bestattprosent: null, skjult: 2 },
-              { year: 2025, A: 0, B: 3, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 3.43, strykprosent: 0, bestattprosent: null, skjult: 1 },
-            ],
-          },
-          {
             emnekode: "STR402A-1",
             emnenavn: "Metode for masterutredningen",
             studiepoeng: 7.5,
             years: [
               { year: 2021, A: 8, B: 98, C: 62, D: 3, E: 0, F: 0, G: 0, H: 0, total: 171, snitt: 3.65, strykprosent: 0, bestattprosent: null, skjult: 3 },
               { year: 2022, A: 24, B: 81, C: 28, D: 0, E: 0, F: 0, G: 0, H: 0, total: 133, snitt: 3.97, strykprosent: 0, bestattprosent: null, skjult: 10 },
-              { year: 2023, A: 10, B: 63, C: 64, D: 9, E: 0, F: 0, G: 0, H: 0, total: 146, snitt: 3.51, strykprosent: 0, bestattprosent: null, skjult: 9 },
-              { year: 2024, A: 16, B: 88, C: 44, D: 0, E: 0, F: 0, G: 0, H: 0, total: 148, snitt: 3.81, strykprosent: 0, bestattprosent: null, skjult: 8 },
-              { year: 2025, A: 24, B: 72, C: 18, D: 0, E: 0, F: 0, G: 0, H: 0, total: 114, snitt: 4.05, strykprosent: 0, bestattprosent: null, skjult: 10 },
+              { year: 2023, A: 10, B: 53, C: 60, D: 9, E: 0, F: 0, G: 0, H: 0, total: 132, snitt: 3.48, strykprosent: 0, bestattprosent: null, skjult: 7 },
+              { year: 2024, A: 16, B: 72, C: 44, D: 0, E: 0, F: 0, G: 0, H: 0, total: 132, snitt: 3.79, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2025, A: 21, B: 69, C: 15, D: 0, E: 0, F: 0, G: 0, H: 0, total: 105, snitt: 4.06, strykprosent: 0, bestattprosent: null, skjult: 7 },
             ],
             emnenivaa: [
               { year: 2021, A: 13, B: 116, C: 68, D: 3, E: 0, F: 3, G: 0, H: 0, total: 203, snitt: 3.64, strykprosent: 1.5, bestattprosent: null, skjult: 0 },
@@ -46467,9 +46418,9 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             years: [
               { year: 2021, A: 17, B: 37, C: 21, D: 0, E: 0, F: 0, G: 0, H: 0, total: 75, snitt: 3.95, strykprosent: 0, bestattprosent: null, skjult: 0 },
               { year: 2022, A: 7, B: 57, C: 22, D: 0, E: 0, F: 0, G: 0, H: 0, total: 86, snitt: 3.83, strykprosent: 0, bestattprosent: null, skjult: 7 },
-              { year: 2023, A: 16, B: 65, C: 13, D: 0, E: 0, F: 0, G: 0, H: 0, total: 94, snitt: 4.03, strykprosent: 0, bestattprosent: null, skjult: 3 },
-              { year: 2024, A: 13, B: 58, C: 25, D: 0, E: 0, F: 0, G: 0, H: 0, total: 96, snitt: 3.88, strykprosent: 0, bestattprosent: null, skjult: 7 },
-              { year: 2025, A: 18, B: 31, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 55, snitt: 4.22, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2023, A: 16, B: 56, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 79, snitt: 4.11, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 13, B: 46, C: 25, D: 0, E: 0, F: 0, G: 0, H: 0, total: 84, snitt: 3.86, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 11, B: 24, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 41, snitt: 4.12, strykprosent: 0, bestattprosent: null, skjult: 2 },
             ],
             emnenivaa: [
               { year: 2021, A: 21, B: 49, C: 28, D: 0, E: 0, F: 0, G: 0, H: 0, total: 98, snitt: 3.93, strykprosent: 0, bestattprosent: null, skjult: 1 },
@@ -46487,7 +46438,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 5, B: 16, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 4.24, strykprosent: 0, bestattprosent: null, skjult: 2 },
               { year: 2022, A: 3, B: 11, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 4.21, strykprosent: 0, bestattprosent: null, skjult: 2 },
               { year: 2023, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 4 },
-              { year: 2024, A: 6, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 4.6, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2024, A: 6, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 4.6, strykprosent: 0, bestattprosent: null, skjult: 1 },
               { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 4 },
             ],
             emnenivaa: [
@@ -46584,8 +46535,8 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             years: [
               { year: 2021, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 3 },
               { year: 2022, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 7 },
-              { year: 2023, A: 0, B: 0, C: 0, D: 5, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 2, strykprosent: 0, bestattprosent: null, skjult: 12 },
-              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 7 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 5, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 2, strykprosent: 0, bestattprosent: null, skjult: 8 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 4 },
               { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 3 },
             ],
             emnenivaa: [
@@ -46642,7 +46593,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 9, B: 29, C: 12, D: 4, E: 0, F: 0, G: 0, H: 0, total: 54, snitt: 3.8, strykprosent: 0, bestattprosent: null, skjult: 2 },
               { year: 2022, A: 22, B: 27, C: 12, D: 0, E: 0, F: 0, G: 0, H: 0, total: 61, snitt: 4.16, strykprosent: 0, bestattprosent: null, skjult: 5 },
               { year: 2023, A: 8, B: 15, C: 14, D: 0, E: 0, F: 0, G: 0, H: 0, total: 37, snitt: 3.84, strykprosent: 0, bestattprosent: null, skjult: 2 },
-              { year: 2024, A: 3, B: 10, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 3.73, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 3, B: 10, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 3.89, strykprosent: 0, bestattprosent: null, skjult: 0 },
             ],
             emnenivaa: [
               { year: 2021, A: 13, B: 38, C: 16, D: 4, E: 0, F: 0, G: 0, H: 0, total: 71, snitt: 3.85, strykprosent: 0, bestattprosent: null, skjult: 4 },
@@ -46692,7 +46643,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2022, A: 4, B: 19, C: 15, D: 0, E: 0, F: 0, G: 0, H: 0, total: 38, snitt: 3.71, strykprosent: 0, bestattprosent: null, skjult: 2 },
               { year: 2023, A: 0, B: 26, C: 16, D: 0, E: 0, F: 0, G: 0, H: 0, total: 42, snitt: 3.62, strykprosent: 0, bestattprosent: null, skjult: 8 },
               { year: 2024, A: 3, B: 20, C: 24, D: 0, E: 0, F: 0, G: 0, H: 0, total: 47, snitt: 3.55, strykprosent: 0, bestattprosent: null, skjult: 2 },
-              { year: 2025, A: 7, B: 27, C: 13, D: 0, E: 0, F: 0, G: 0, H: 0, total: 47, snitt: 3.87, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2025, A: 4, B: 21, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 32, snitt: 3.91, strykprosent: 0, bestattprosent: null, skjult: 4 },
             ],
             emnenivaa: [
               { year: 2021, A: 7, B: 28, C: 15, D: 0, E: 0, F: 0, G: 0, H: 0, total: 50, snitt: 3.84, strykprosent: 0, bestattprosent: null, skjult: 1 },
@@ -46709,7 +46660,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             years: [
               { year: 2022, A: 9, B: 8, C: 0, D: 0, E: 0, F: 4, G: 0, H: 0, total: 21, snitt: 3.67, strykprosent: 19, bestattprosent: null, skjult: 0 },
               { year: 2023, A: 21, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 26, snitt: 4.81, strykprosent: 0, bestattprosent: null, skjult: 3 },
-              { year: 2024, A: 37, B: 12, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 56, snitt: 4.54, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2024, A: 34, B: 12, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 53, snitt: 4.51, strykprosent: 0, bestattprosent: null, skjult: 2 },
               { year: 2025, A: 40, B: 8, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 48, snitt: 4.83, strykprosent: 0, bestattprosent: null, skjult: 0 },
             ],
             emnenivaa: [
@@ -46727,8 +46678,8 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 10, B: 12, C: 10, D: 0, E: 0, F: 0, G: 0, H: 0, total: 32, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 3 },
               { year: 2022, A: 4, B: 20, C: 9, D: 3, E: 0, F: 0, G: 0, H: 0, total: 36, snitt: 3.69, strykprosent: 0, bestattprosent: null, skjult: 0 },
               { year: 2023, A: 11, B: 14, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 32, snitt: 4.12, strykprosent: 0, bestattprosent: null, skjult: 3 },
-              { year: 2024, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 9 },
-              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 13 },
+              { year: 2024, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 9 },
             ],
             emnenivaa: [
               { year: 2021, A: 16, B: 29, C: 20, D: 4, E: 0, F: 0, G: 0, H: 0, total: 69, snitt: 3.83, strykprosent: 0, bestattprosent: null, skjult: 2 },
@@ -46746,8 +46697,8 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 6, B: 16, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 4.27, strykprosent: 0, bestattprosent: null, skjult: 1 },
               { year: 2022, A: 0, B: 8, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 4 },
               { year: 2023, A: 6, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 3 },
-              { year: 2024, A: 3, B: 6, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 4.33, strykprosent: 0, bestattprosent: null, skjult: 3 },
-              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 7 },
+              { year: 2024, A: 3, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 4.5, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 4 },
             ],
             emnenivaa: [
               { year: 2021, A: 7, B: 23, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 30, snitt: 4.23, strykprosent: 0, bestattprosent: null, skjult: 3 },
@@ -46778,8 +46729,8 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             studiepoeng: 7.5,
             years: [
               { year: 2023, A: 3, B: 13, C: 3, D: 3, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 3.73, strykprosent: 0, bestattprosent: null, skjult: 5 },
-              { year: 2024, A: 3, B: 22, C: 16, D: 0, E: 4, F: 0, G: 0, H: 0, total: 45, snitt: 3.44, strykprosent: 0, bestattprosent: null, skjult: 2 },
-              { year: 2025, A: 6, B: 22, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 36, snitt: 3.94, strykprosent: 0, bestattprosent: null, skjult: 7 },
+              { year: 2024, A: 3, B: 17, C: 16, D: 0, E: 4, F: 0, G: 0, H: 0, total: 40, snitt: 3.38, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 6, B: 22, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 36, snitt: 3.94, strykprosent: 0, bestattprosent: null, skjult: 4 },
             ],
             emnenivaa: [
               { year: 2023, A: 7, B: 20, C: 13, D: 7, E: 0, F: 0, G: 0, H: 0, total: 47, snitt: 3.57, strykprosent: 0, bestattprosent: null, skjult: 2 },
@@ -46792,7 +46743,7 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
             emnenavn: "Cases in Strategy",
             studiepoeng: 7.5,
             years: [
-              { year: 2025, A: 0, B: 0, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2025, A: 0, B: 0, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 2 },
             ],
             emnenivaa: [
               { year: 2025, A: 4, B: 3, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 3.85, strykprosent: 0, bestattprosent: null, skjult: 1 },
@@ -46817,8 +46768,1163 @@ export const LANDSAM_COURSE_GROUPS: LandsamCourseGroup[] = [
               { year: 2021, A: 35, B: 25, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 63, snitt: 4.51, strykprosent: 0, bestattprosent: null, skjult: 2 },
               { year: 2022, A: 27, B: 22, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 52, snitt: 4.46, strykprosent: 0, bestattprosent: null, skjult: 2 },
               { year: 2023, A: 35, B: 20, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 60, snitt: 4.5, strykprosent: 0, bestattprosent: null, skjult: 3 },
-              { year: 2024, A: 36, B: 31, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 67, snitt: 4.54, strykprosent: 0, bestattprosent: null, skjult: 6 },
-              { year: 2025, A: 38, B: 23, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 64, snitt: 4.55, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 33, B: 31, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 64, snitt: 4.52, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 34, B: 20, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 54, snitt: 4.63, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 47, B: 33, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 86, snitt: 4.48, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 29, B: 29, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 63, snitt: 4.38, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 41, B: 25, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 75, snitt: 4.43, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 41, B: 33, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 74, snitt: 4.55, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 40, B: 25, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 70, snitt: 4.5, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+        ],
+      },
+      {
+        entryId: "nhh_msc",
+        shortName: "NHH int. MSc",
+        institusjon: "Norges Handelshøyskole",
+        isNmbu: false,
+        dbhInstitusjonskode: "1240",
+        dbhProgramkoder: ["MSC23", "MSC24", "MSC25"],
+        dbhProgramnavn: "MSc in Economics and Business Administration, internasjonalt opptak (master 2 år)",
+        courses: [
+          {
+            emnekode: "ACC420E-1",
+            emnenavn: "Strategic Financial Statement Analysis",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 4 },
+            ],
+            emnenivaa: [
+              { year: 2022, A: 10, B: 14, C: 14, D: 4, E: 0, F: 0, G: 0, H: 0, total: 42, snitt: 3.71, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 5, B: 11, C: 11, D: 5, E: 0, F: 0, G: 0, H: 0, total: 32, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 10, B: 10, C: 11, D: 5, E: 0, F: 0, G: 0, H: 0, total: 36, snitt: 3.69, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 10, B: 10, C: 15, D: 7, E: 0, F: 0, G: 0, H: 0, total: 42, snitt: 3.55, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: "ACC421E-1",
+            emnenavn: "Valuation with financial statement analysis",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 0, B: 3, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2023, A: 7, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 0, B: 8, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 3.73, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 6, B: 21, C: 11, D: 0, E: 0, F: 0, G: 0, H: 0, total: 38, snitt: 3.87, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: "BAN400-1",
+            emnenavn: "R Programming for Data Science",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 6 },
+              { year: 2024, A: 0, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 31, B: 30, C: 10, D: 3, E: 0, F: 4, G: 0, H: 0, total: 78, snitt: 3.99, strykprosent: 5.1, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 41, B: 37, C: 19, D: 20, E: 5, F: 5, G: 0, H: 0, total: 127, snitt: 3.58, strykprosent: 3.9, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 11, B: 40, C: 32, D: 10, E: 0, F: 0, G: 0, H: 0, total: 93, snitt: 3.56, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 14, B: 12, C: 17, D: 5, E: 5, F: 0, G: 0, H: 0, total: 53, snitt: 3.47, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: "BAN401-1",
+            emnenavn: "Applied Programming and Data Analysis for Business",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 14, H: 0, total: 14, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 27, H: 0, total: 27, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 25, H: 0, total: 25, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 324, H: 0, total: 324, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 303, H: 0, total: 303, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 426, H: 0, total: 426, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 720, H: 0, total: 720, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "BAN402-1",
+            emnenavn: "Decision Modelling in Business",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2023, A: 0, B: 0, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2024, A: 0, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 7, B: 9, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 4.44, strykprosent: 0, bestattprosent: null, skjult: 4 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 17, B: 66, C: 23, D: 3, E: 3, F: 0, G: 0, H: 0, total: 112, snitt: 3.81, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 27, B: 59, C: 23, D: 6, E: 8, F: 3, G: 0, H: 0, total: 126, snitt: 3.65, strykprosent: 2.4, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 41, B: 48, C: 21, D: 6, E: 6, F: 3, G: 0, H: 0, total: 125, snitt: 3.82, strykprosent: 2.4, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 34, B: 27, C: 19, D: 5, E: 5, F: 0, G: 0, H: 0, total: 90, snitt: 3.89, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 60, B: 37, C: 18, D: 3, E: 5, F: 0, G: 0, H: 0, total: 123, snitt: 4.17, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: "BAN403-1",
+            emnenavn: "Simulation of Business Processes",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2024, A: 0, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 0, B: 7, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 35, B: 60, C: 16, D: 0, E: 0, F: 0, G: 0, H: 0, total: 111, snitt: 4.17, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 52, B: 40, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 100, snitt: 4.44, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 31, B: 36, C: 16, D: 6, E: 0, F: 5, G: 0, H: 0, total: 94, snitt: 3.82, strykprosent: 5.3, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 22, B: 52, C: 16, D: 6, E: 0, F: 3, G: 0, H: 0, total: 99, snitt: 3.82, strykprosent: 3, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 12, B: 51, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 72, snitt: 4.04, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
+          },
+          {
+            emnekode: "BAN404-1",
+            emnenavn: "Statistical Learning",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2024, A: 0, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 0, B: 0, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 4 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 19, B: 32, C: 28, D: 10, E: 4, F: 5, G: 0, H: 0, total: 98, snitt: 3.38, strykprosent: 5.1, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 21, B: 46, C: 44, D: 10, E: 0, F: 4, G: 0, H: 0, total: 125, snitt: 3.53, strykprosent: 3.2, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 21, B: 42, C: 29, D: 5, E: 0, F: 3, G: 0, H: 0, total: 100, snitt: 3.7, strykprosent: 3, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 16, B: 24, C: 27, D: 11, E: 4, F: 6, G: 0, H: 0, total: 88, snitt: 3.22, strykprosent: 6.8, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 15, B: 15, C: 26, D: 3, E: 7, F: 8, G: 0, H: 0, total: 74, snitt: 3.05, strykprosent: 10.8, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "BAN405-1",
+            emnenavn: "Python Programming for Data Science",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2025, A: 0, B: 5, C: 0, D: 0, E: 3, F: 0, G: 0, H: 0, total: 8, snitt: 2.88, strykprosent: 0, bestattprosent: null, skjult: 4 },
+            ],
+            emnenivaa: [
+              { year: 2025, A: 15, B: 30, C: 16, D: 9, E: 9, F: 5, G: 0, H: 0, total: 84, snitt: 3.21, strykprosent: 6, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "BAN427-1",
+            emnenavn: "Insurance Analytics",
+            studiepoeng: 2.5,
+            years: [
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 3, H: 0, total: 3, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 34, H: 0, total: 34, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 15, H: 0, total: 15, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 13, H: 0, total: 13, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 15, H: 0, total: 15, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 61, H: 0, total: 61, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "BAN432-1",
+            emnenavn: "Applied Textual Data Analysis for Business and Finance",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 17, B: 25, C: 27, D: 0, E: 0, F: 0, G: 0, H: 0, total: 69, snitt: 3.86, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 30, B: 35, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 68, snitt: 4.4, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 14, B: 16, C: 12, D: 0, E: 0, F: 0, G: 0, H: 0, total: 42, snitt: 4.05, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 15, B: 14, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 36, snitt: 4.22, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: "BAN436-1",
+            emnenavn: "Introduction to Python",
+            studiepoeng: 2.5,
+            years: [
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 3, H: 0, total: 3, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 6, H: 0, total: 6, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 64, H: 0, total: 64, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 156, H: 0, total: 156, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 165, H: 0, total: 165, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 106, H: 0, total: 106, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 103, H: 0, total: 103, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "BAN443-1",
+            emnenavn: "Transforming Business with AI: The Power of Large Language Models",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 6 },
+            ],
+            emnenivaa: [
+              { year: 2024, A: 4, B: 26, C: 3, D: 3, E: 0, F: 0, G: 0, H: 0, total: 36, snitt: 3.86, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 10, B: 23, C: 15, D: 0, E: 0, F: 0, G: 0, H: 0, total: 48, snitt: 3.9, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "BUS401E-1",
+            emnenavn: "Strategic Profitability Analysis",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 8 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 14, B: 44, C: 35, D: 12, E: 10, F: 0, G: 0, H: 0, total: 115, snitt: 3.35, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 11, B: 22, C: 34, D: 7, E: 3, F: 0, G: 0, H: 0, total: 77, snitt: 3.4, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 8, B: 22, C: 13, D: 7, E: 0, F: 0, G: 0, H: 0, total: 50, snitt: 3.62, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 11, B: 17, C: 10, D: 3, E: 0, F: 0, G: 0, H: 0, total: 41, snitt: 3.88, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 8, B: 22, C: 14, D: 4, E: 0, F: 0, G: 0, H: 0, total: 48, snitt: 3.71, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "BUS446-1",
+            emnenavn: "Sustainable Business Models",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2023, A: 0, B: 4, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 3.33, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2024, A: 0, B: 5, C: 11, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 3.31, strykprosent: 0, bestattprosent: null, skjult: 6 },
+              { year: 2025, A: 3, B: 3, C: 3, D: 3, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 44, B: 177, C: 162, D: 26, E: 5, F: 0, G: 0, H: 0, total: 414, snitt: 3.55, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 40, B: 121, C: 159, D: 38, E: 10, F: 6, G: 0, H: 0, total: 374, snitt: 3.33, strykprosent: 1.6, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 38, B: 104, C: 129, D: 33, E: 6, F: 6, G: 0, H: 0, total: 316, snitt: 3.37, strykprosent: 1.9, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 25, B: 65, C: 53, D: 10, E: 3, F: 0, G: 0, H: 0, total: 156, snitt: 3.63, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 29, B: 78, C: 68, D: 10, E: 3, F: 0, G: 0, H: 0, total: 188, snitt: 3.64, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "BUS456-1",
+            emnenavn: "Behavioral Business Strategy",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2024, A: 4, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 4.57, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 27, B: 51, C: 34, D: 17, E: 5, F: 0, G: 0, H: 0, total: 134, snitt: 3.58, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 17, B: 40, C: 39, D: 0, E: 0, F: 0, G: 0, H: 0, total: 96, snitt: 3.77, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 11, B: 28, C: 11, D: 0, E: 0, F: 0, G: 0, H: 0, total: 50, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 13, B: 31, C: 20, D: 5, E: 0, F: 0, G: 0, H: 0, total: 69, snitt: 3.75, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "BUS465-1",
+            emnenavn: "Detecting Corporate Crime",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2024, A: 0, B: 6, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 28, B: 18, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 49, snitt: 4.51, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 17, B: 33, C: 22, D: 3, E: 0, F: 7, G: 0, H: 0, total: 82, snitt: 3.52, strykprosent: 8.5, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 25, B: 25, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 53, snitt: 4.42, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 18, B: 43, C: 17, D: 11, E: 0, F: 0, G: 0, H: 0, total: 89, snitt: 3.76, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "CEMS401-1",
+            emnenavn: "Global Strategy",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2024, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 4, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 22, B: 17, C: 14, D: 7, E: 0, F: 0, G: 0, H: 0, total: 60, snitt: 3.9, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 7, B: 18, C: 16, D: 0, E: 0, F: 0, G: 0, H: 0, total: 41, snitt: 3.78, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 14, B: 26, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 47, snitt: 4.15, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 4, B: 24, C: 21, D: 0, E: 0, F: 4, G: 0, H: 0, total: 53, snitt: 3.38, strykprosent: 7.5, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 23, B: 13, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 39, snitt: 4.51, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "ECN400-1",
+            emnenavn: "Macroeconomic Theory and Policy",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 0, B: 3, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 11, B: 11, C: 11, D: 5, E: 3, F: 0, G: 0, H: 0, total: 41, snitt: 3.54, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 9, B: 13, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 4.15, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 10, B: 10, C: 7, D: 8, E: 0, F: 0, G: 0, H: 0, total: 35, snitt: 3.63, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2024, A: 10, B: 8, C: 14, D: 8, E: 0, F: 0, G: 0, H: 0, total: 40, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 26, B: 19, C: 15, D: 12, E: 4, F: 5, G: 0, H: 0, total: 81, snitt: 3.44, strykprosent: 6.2, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "ECN402-1",
+            emnenavn: "Econometrics",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2023, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 0, B: 0, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 8 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 52, B: 103, C: 96, D: 52, E: 27, F: 24, G: 0, H: 0, total: 354, snitt: 3.08, strykprosent: 6.8, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 46, B: 97, C: 89, D: 45, E: 25, F: 16, G: 0, H: 0, total: 318, snitt: 3.14, strykprosent: 5, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 41, B: 85, C: 53, D: 26, E: 17, F: 11, G: 0, H: 0, total: 233, snitt: 3.32, strykprosent: 4.7, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 51, B: 109, C: 29, D: 18, E: 0, F: 10, G: 0, H: 0, total: 217, snitt: 3.75, strykprosent: 4.6, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 43, B: 173, C: 47, D: 30, E: 0, F: 22, G: 0, H: 0, total: 315, snitt: 3.52, strykprosent: 7, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "ECN421-1",
+            emnenavn: "Behavioral Economics",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 0, B: 6, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 3, B: 17, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 7 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 54, B: 39, C: 18, D: 0, E: 0, F: 0, G: 0, H: 0, total: 111, snitt: 4.32, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2022, A: 35, B: 80, C: 31, D: 6, E: 0, F: 0, G: 0, H: 0, total: 152, snitt: 3.95, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 42, B: 60, C: 22, D: 3, E: 0, F: 0, G: 0, H: 0, total: 127, snitt: 4.11, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 52, B: 83, C: 51, D: 15, E: 4, F: 0, G: 0, H: 0, total: 205, snitt: 3.8, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 121, B: 254, C: 97, D: 14, E: 0, F: 0, G: 0, H: 0, total: 486, snitt: 3.99, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: "ECN423-1",
+            emnenavn: "Development Economics",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2024, A: 5, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 25, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 4.89, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 8, B: 14, C: 3, D: 3, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 3.96, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 9, B: 6, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 4.6, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 24, B: 8, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 32, snitt: 4.75, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 18, B: 10, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 4.48, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "ECN435-1",
+            emnenavn: "Data-Driven Public Policy",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2023, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 3 },
+            ],
+            emnenivaa: [
+              { year: 2022, A: 10, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 15, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 4.67, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 14, B: 9, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 4.61, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: "ECO422-1",
+            emnenavn: "Advanced Corporate Finance",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 10, B: 7, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 4.08, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2022, A: 5, B: 9, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3.9, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 4, B: 4, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 6, B: 4, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 4.07, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 14, B: 6, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 4.48, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "ELE426-1",
+            emnenavn: "Norwegian Language III  Norsk samfunns- og næringsliv",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 6 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 0, B: 7, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 3.7, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 3, B: 6, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 4.33, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 4, B: 6, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 4.4, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 9, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 4.64, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 7, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 4.58, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: "ENE421-1",
+            emnenavn: "Energy and Resource Industries",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2023, A: 0, B: 6, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 3.67, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 6, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 0, B: 10, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 5 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 24, B: 41, C: 15, D: 3, E: 0, F: 0, G: 0, H: 0, total: 83, snitt: 4.04, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 36, B: 50, C: 29, D: 4, E: 0, F: 0, G: 0, H: 0, total: 119, snitt: 3.99, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 32, B: 60, C: 11, D: 0, E: 0, F: 0, G: 0, H: 0, total: 103, snitt: 4.2, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 36, B: 35, C: 14, D: 0, E: 0, F: 0, G: 0, H: 0, total: 85, snitt: 4.26, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 26, B: 46, C: 10, D: 3, E: 0, F: 0, G: 0, H: 0, total: 85, snitt: 4.12, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: "ENE423-1",
+            emnenavn: "Economics of the Environment and Climate",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2023, A: 8, B: 9, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 4.47, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 5, B: 13, C: 10, D: 0, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 3.82, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 5, B: 11, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 4.11, strykprosent: 0, bestattprosent: null, skjult: 4 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 20, B: 34, C: 17, D: 0, E: 0, F: 0, G: 0, H: 0, total: 71, snitt: 4.04, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 42, B: 55, C: 23, D: 0, E: 0, F: 0, G: 0, H: 0, total: 120, snitt: 4.16, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 46, B: 53, C: 32, D: 0, E: 0, F: 0, G: 0, H: 0, total: 131, snitt: 4.11, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2024, A: 54, B: 94, C: 44, D: 16, E: 0, F: 0, G: 0, H: 0, total: 208, snitt: 3.89, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 74, B: 96, C: 24, D: 8, E: 0, F: 0, G: 0, H: 0, total: 202, snitt: 4.17, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "ENE424-1",
+            emnenavn: "Elektrisitetsmarkeder",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2023, A: 0, B: 7, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 3.64, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 0, B: 3, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 3, B: 9, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 4.25, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 11, B: 14, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 4.44, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 4, B: 29, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 36, snitt: 4.03, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 5, B: 15, C: 14, D: 0, E: 0, F: 0, G: 0, H: 0, total: 34, snitt: 3.74, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 9, B: 15, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 4.22, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 9, B: 19, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 4.19, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: "ENE425-1",
+            emnenavn: "Sustainable Energy",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 6 },
+              { year: 2025, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 15, B: 29, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 44, snitt: 4.34, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 0, B: 30, C: 10, D: 0, E: 0, F: 0, G: 0, H: 0, total: 40, snitt: 3.75, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 7, B: 12, C: 9, D: 3, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 3.74, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 5, B: 11, C: 18, D: 5, E: 0, F: 0, G: 0, H: 0, total: 39, snitt: 3.41, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 9, B: 20, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 38, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: "ENE430-1",
+            emnenavn: "Commodity Trading and Transport",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2024, A: 5, B: 9, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 4.36, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 7 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 12, B: 24, C: 12, D: 0, E: 0, F: 0, G: 0, H: 0, total: 48, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 31, B: 18, C: 13, D: 4, E: 0, F: 0, G: 0, H: 0, total: 66, snitt: 4.15, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 23, B: 28, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 55, snitt: 4.35, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 27, B: 45, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 76, snitt: 4.3, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 32, B: 45, C: 8, D: 3, E: 0, F: 0, G: 0, H: 0, total: 88, snitt: 4.2, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "ENE431-1",
+            emnenavn: "Shipping Economics and Analytics",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2023, A: 0, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 5 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 0, B: 7, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 12, B: 25, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 37, snitt: 4.32, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2023, A: 19, B: 27, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 51, snitt: 4.27, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 18, B: 26, C: 10, D: 0, E: 0, F: 0, G: 0, H: 0, total: 54, snitt: 4.15, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 23, B: 15, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 38, snitt: 4.61, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
+          },
+          {
+            emnekode: "ENE434-1",
+            emnenavn: "Energy Industry Analytics",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2024, A: 0, B: 10, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 0, B: 8, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 8, B: 25, C: 8, D: 4, E: 0, F: 0, G: 0, H: 0, total: 45, snitt: 3.82, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 10, B: 23, C: 10, D: 0, E: 0, F: 0, G: 0, H: 0, total: 43, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 5, B: 13, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 3.92, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2024, A: 8, B: 42, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 50, snitt: 4.16, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 6, B: 54, C: 12, D: 0, E: 0, F: 0, G: 0, H: 0, total: 72, snitt: 3.92, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: "ENE452-1",
+            emnenavn: "Seminar: Sustainability and Ethical Challenges",
+            studiepoeng: 2.5,
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 11, H: 0, total: 11, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 8, H: 0, total: 8, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 237, H: 0, total: 237, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 2 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 180, H: 0, total: 180, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 230, H: 0, total: 230, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 2 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 142, H: 0, total: 142, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 20, H: 0, total: 20, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "ENE456-1",
+            emnenavn: "Corporate and Private Environmental Responsibility",
+            studiepoeng: 2.5,
+            years: [
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 4, H: 0, total: 4, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 25, H: 0, total: 25, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 47, H: 0, total: 47, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 18, H: 0, total: 18, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 2 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 19, H: 0, total: 19, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 8, H: 0, total: 8, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "ENE470-1",
+            emnenavn: "Climate Change: Strategies and Role Play (Model UNFCCC)",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 8, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 4.62, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 4, B: 8, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 4.07, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 3, B: 5, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 11, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 5, B: 10, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 4.33, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 6, B: 10, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 4.38, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: "ENE478-1",
+            emnenavn: "The Economics of Petroleum and the Energy Transition",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2025, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+            emnenivaa: [
+              { year: 2023, A: 8, B: 18, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 31, snitt: 4.1, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 17, B: 23, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 47, snitt: 4.21, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 21, B: 24, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 53, snitt: 4.25, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "ENEINT-1",
+            emnenavn: "Internship",
+            studiepoeng: 2.5,
+            years: [
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 3, H: 0, total: 3, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 63, H: 0, total: 63, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 2 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 80, H: 4, total: 84, snitt: null, strykprosent: null, bestattprosent: 95.2, skjult: 0 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 86, H: 5, total: 91, snitt: null, strykprosent: null, bestattprosent: 94.5, skjult: 0 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 65, H: 0, total: 65, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 72, H: 0, total: 72, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: "ENETHE-1",
+            emnenavn: "Independent work/thesis ENE",
+            studiepoeng: 30,
+            years: [
+              { year: 2024, A: 5, B: 0, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 4.11, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 6, B: 7, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 4.46, strykprosent: 0, bestattprosent: null, skjult: 4 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 14, B: 11, C: 3, D: 4, E: 0, F: 0, G: 0, H: 0, total: 32, snitt: 4.09, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 22, B: 14, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 45, snitt: 4.29, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 24, B: 17, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 41, snitt: 4.59, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 25, B: 13, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 45, snitt: 4.4, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 25, B: 24, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 52, snitt: 4.42, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "ETI450-1",
+            emnenavn: "Corporate Social Responsibility",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2024, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2025, A: 0, B: 3, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 3.5, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 36, B: 46, C: 37, D: 9, E: 0, F: 3, G: 0, H: 0, total: 131, snitt: 3.76, strykprosent: 2.3, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 15, B: 25, C: 10, D: 11, E: 7, F: 5, G: 0, H: 0, total: 73, snitt: 3.21, strykprosent: 6.8, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 16, B: 20, C: 21, D: 16, E: 8, F: 10, G: 0, H: 0, total: 91, snitt: 2.89, strykprosent: 11, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 18, B: 25, C: 14, D: 11, E: 6, F: 3, G: 0, H: 0, total: 77, snitt: 3.38, strykprosent: 3.9, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 5, B: 11, C: 26, D: 13, E: 0, F: 0, G: 0, H: 0, total: 55, snitt: 3.15, strykprosent: 0, bestattprosent: null, skjult: 4 },
+            ],
+          },
+          {
+            emnekode: "ETI451-1",
+            emnenavn: "Diversity in Firm and Ethics",
+            studiepoeng: 2.5,
+            years: [
+              { year: 2024, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 9, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 4.75, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 5, B: 18, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 4.04, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 3, B: 13, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 3.9, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "FIE400E-1",
+            emnenavn: "Investments",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2023, A: 3, B: 3, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 6, B: 4, C: 5, D: 3, E: 3, F: 0, G: 0, H: 0, total: 21, snitt: 3.33, strykprosent: 0, bestattprosent: null, skjult: 7 },
+              { year: 2025, A: 4, B: 10, C: 13, D: 0, E: 5, F: 3, G: 0, H: 0, total: 35, snitt: 2.97, strykprosent: 8.6, bestattprosent: null, skjult: 10 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 108, B: 137, C: 110, D: 71, E: 34, F: 16, G: 0, H: 0, total: 476, snitt: 3.35, strykprosent: 3.4, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 94, B: 120, C: 139, D: 63, E: 30, F: 17, G: 0, H: 0, total: 463, snitt: 3.29, strykprosent: 3.7, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 84, B: 79, C: 97, D: 60, E: 38, F: 18, G: 0, H: 0, total: 376, snitt: 3.15, strykprosent: 4.8, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 131, B: 136, C: 132, D: 68, E: 46, F: 27, G: 0, H: 0, total: 540, snitt: 3.29, strykprosent: 5, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 128, B: 149, C: 139, D: 65, E: 43, F: 27, G: 0, H: 0, total: 551, snitt: 3.31, strykprosent: 4.9, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "FIE401-1",
+            emnenavn: "Financial Econometrics",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2023, A: 9, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 9, B: 9, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 4.5, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 9, B: 13, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 4.15, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 53, B: 83, C: 32, D: 6, E: 0, F: 0, G: 0, H: 0, total: 174, snitt: 4.05, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 47, B: 55, C: 25, D: 0, E: 0, F: 0, G: 0, H: 0, total: 127, snitt: 4.17, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 77, B: 55, C: 17, D: 4, E: 0, F: 0, G: 0, H: 0, total: 153, snitt: 4.34, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 90, B: 113, C: 17, D: 3, E: 0, F: 0, G: 0, H: 0, total: 223, snitt: 4.3, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 140, B: 147, C: 23, D: 0, E: 0, F: 0, G: 0, H: 0, total: 310, snitt: 4.38, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "FIE402-1",
+            emnenavn: "Corporate Finance",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2023, A: 5, B: 0, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 3, B: 7, C: 13, D: 3, E: 0, F: 0, G: 0, H: 0, total: 26, snitt: 3.38, strykprosent: 0, bestattprosent: null, skjult: 7 },
+              { year: 2025, A: 0, B: 9, C: 18, D: 7, E: 3, F: 0, G: 0, H: 0, total: 37, snitt: 2.89, strykprosent: 0, bestattprosent: null, skjult: 10 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 109, B: 163, C: 131, D: 65, E: 39, F: 9, G: 0, H: 0, total: 516, snitt: 3.41, strykprosent: 1.7, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 110, B: 140, C: 131, D: 38, E: 10, F: 7, G: 0, H: 0, total: 436, snitt: 3.64, strykprosent: 1.6, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 88, B: 124, C: 120, D: 25, E: 25, F: 13, G: 0, H: 0, total: 395, snitt: 3.47, strykprosent: 3.3, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 75, B: 155, C: 169, D: 64, E: 23, F: 15, G: 0, H: 0, total: 501, snitt: 3.3, strykprosent: 3, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 88, B: 189, C: 195, D: 98, E: 67, F: 31, G: 0, H: 0, total: 668, snitt: 3.06, strykprosent: 4.6, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "FIE433-1",
+            emnenavn: "International Finance",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2024, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 83, B: 56, C: 45, D: 12, E: 7, F: 3, G: 0, H: 0, total: 206, snitt: 3.91, strykprosent: 1.5, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 73, B: 66, C: 17, D: 4, E: 0, F: 0, G: 0, H: 0, total: 160, snitt: 4.3, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 53, B: 37, C: 11, D: 4, E: 3, F: 0, G: 0, H: 0, total: 108, snitt: 4.23, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 64, B: 115, C: 19, D: 10, E: 4, F: 0, G: 0, H: 0, total: 212, snitt: 4.06, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 6, B: 10, C: 5, D: 6, E: 3, F: 0, G: 0, H: 0, total: 30, snitt: 3.33, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "FIE435-1",
+            emnenavn: "Financial Modelling with Excel",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2024, A: 4, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 0, B: 0, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 37, B: 66, C: 54, D: 3, E: 0, F: 5, G: 0, H: 0, total: 165, snitt: 3.74, strykprosent: 3, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 10, B: 46, C: 35, D: 19, E: 0, F: 0, G: 0, H: 0, total: 110, snitt: 3.43, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 10, B: 23, C: 21, D: 9, E: 5, F: 6, G: 0, H: 0, total: 74, snitt: 3.08, strykprosent: 8.1, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 11, B: 18, C: 7, D: 5, E: 0, F: 4, G: 0, H: 0, total: 45, snitt: 3.51, strykprosent: 8.9, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 20, B: 20, C: 14, D: 4, E: 0, F: 0, G: 0, H: 0, total: 58, snitt: 3.97, strykprosent: 0, bestattprosent: null, skjult: 4 },
+            ],
+          },
+          {
+            emnekode: "FIE436-1",
+            emnenavn: "Venture Capital, Private Equity and IPO's",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 22, B: 33, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 55, snitt: 4.4, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 10, B: 39, C: 15, D: 0, E: 0, F: 0, G: 0, H: 0, total: 64, snitt: 3.92, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 12, B: 22, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 38, snitt: 4.21, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 7, B: 8, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 4.47, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 15, B: 4, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 4.26, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: "FIE437-1",
+            emnenavn: "Valuation",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2023, A: 6, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 6, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 24, B: 10, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 34, snitt: 4.71, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 12, B: 6, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 4.67, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 30, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 33, snitt: 4.91, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 39, B: 9, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 48, snitt: 4.81, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 51, B: 7, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 58, snitt: 4.88, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "FIE441-1",
+            emnenavn: "Taxes and Business Strategy",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2024, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 5, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 4.56, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 5, B: 6, C: 12, D: 10, E: 6, F: 0, G: 0, H: 0, total: 39, snitt: 2.85, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 33, B: 14, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 47, snitt: 4.7, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 27, B: 21, C: 12, D: 0, E: 0, F: 0, G: 0, H: 0, total: 60, snitt: 4.25, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 44, B: 35, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 86, snitt: 4.43, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 158, B: 84, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 242, snitt: 4.65, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: "FIE443-1",
+            emnenavn: "Mergers and Acquisitions",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2024, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 0, B: 6, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 34, B: 36, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 70, snitt: 4.49, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 25, B: 28, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 57, snitt: 4.37, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 19, B: 21, C: 0, D: 0, E: 0, F: 11, G: 0, H: 0, total: 51, snitt: 3.51, strykprosent: 21.6, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 29, B: 24, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 53, snitt: 4.55, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "FIE445-1",
+            emnenavn: "Infrastructure and Project Finance",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2025, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2025, A: 29, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 32, snitt: 4.91, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "FIE453-1",
+            emnenavn: "Big Data with Applications to Finance",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 40, B: 27, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 71, snitt: 4.51, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 34, B: 35, C: 11, D: 0, E: 0, F: 3, G: 0, H: 0, total: 83, snitt: 4.13, strykprosent: 3.6, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 25, B: 14, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 43, snitt: 4.49, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 19, B: 19, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 43, snitt: 4.33, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "FIE457-1",
+            emnenavn: "Entrepreneurial Finance",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2023, A: 4, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 4.57, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 0, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 12, B: 4, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 19, snitt: 4.47, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 17, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 4.81, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 12, B: 13, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 4.48, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 6, B: 11, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 4.35, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: "FIE459-1",
+            emnenavn: "Sustainable Finance",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2023, A: 5, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 4.56, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 10, B: 11, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 24, snitt: 4.29, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 8, B: 17, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 28, snitt: 4.18, strykprosent: 0, bestattprosent: null, skjult: 4 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 28, B: 107, C: 71, D: 0, E: 0, F: 20, G: 0, H: 0, total: 226, snitt: 3.46, strykprosent: 8.8, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 30, B: 89, C: 55, D: 19, E: 0, F: 13, G: 0, H: 0, total: 206, snitt: 3.44, strykprosent: 6.3, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 72, B: 81, C: 12, D: 0, E: 0, F: 0, G: 0, H: 0, total: 165, snitt: 4.36, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 105, B: 189, C: 50, D: 0, E: 0, F: 4, G: 0, H: 0, total: 348, snitt: 4.11, strykprosent: 1.1, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 116, B: 263, C: 69, D: 0, E: 0, F: 0, G: 0, H: 0, total: 448, snitt: 4.1, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
+          },
+          {
+            emnekode: "FIETHE-1",
+            emnenavn: "Selvstendig arbeid i hovedprofilen finansiell økonomi",
+            studiepoeng: 30,
+            years: [
+              { year: 2024, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 12, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 5 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 166, B: 94, C: 18, D: 0, E: 0, F: 0, G: 0, H: 0, total: 278, snitt: 4.53, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 182, B: 117, C: 10, D: 0, E: 0, F: 0, G: 0, H: 0, total: 309, snitt: 4.56, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 149, B: 118, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 275, snitt: 4.51, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 140, B: 114, C: 15, D: 3, E: 0, F: 0, G: 0, H: 0, total: 272, snitt: 4.44, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 252, B: 105, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 363, snitt: 4.68, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: "MBM400A-1",
+            emnenavn: "Research for Business Decisions",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2024, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 35, B: 10, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 51, snitt: 4.57, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 13, B: 32, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 45, snitt: 4.29, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2024, A: 17, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 4.85, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 17, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 4.77, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: "MBM401B-1",
+            emnenavn: "Consumer Behaviour",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2023, A: 6, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 4 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 12, B: 18, C: 24, D: 3, E: 0, F: 0, G: 0, H: 0, total: 57, snitt: 3.68, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 22, B: 20, C: 15, D: 0, E: 0, F: 0, G: 0, H: 0, total: 57, snitt: 4.12, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 10, B: 48, C: 28, D: 0, E: 0, F: 0, G: 0, H: 0, total: 86, snitt: 3.79, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 18, B: 53, C: 13, D: 11, E: 0, F: 0, G: 0, H: 0, total: 95, snitt: 3.82, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 15, B: 25, C: 22, D: 0, E: 0, F: 0, G: 0, H: 0, total: 62, snitt: 3.89, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "MBM402B-1",
+            emnenavn: "Brand Management",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2024, A: 4, B: 0, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 3.89, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 3 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 28, B: 16, C: 14, D: 3, E: 0, F: 0, G: 0, H: 0, total: 61, snitt: 4.13, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 11, B: 21, C: 47, D: 0, E: 0, F: 0, G: 0, H: 0, total: 79, snitt: 3.54, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 13, B: 13, C: 17, D: 0, E: 0, F: 0, G: 0, H: 0, total: 43, snitt: 3.91, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 10, B: 11, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 21, snitt: 4.48, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "MBM424-1",
+            emnenavn: "Market Communication Effectiveness",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2024, A: 0, B: 6, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 6, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 28, B: 23, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 51, snitt: 4.55, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 10, B: 27, C: 23, D: 5, E: 0, F: 0, G: 0, H: 0, total: 65, snitt: 3.65, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 24, B: 10, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 34, snitt: 4.71, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 10, B: 10, C: 0, D: 5, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "MBM428-1",
+            emnenavn: "Product Development and Design",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2024, A: 0, B: 0, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 6, B: 19, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 4.24, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 14, B: 12, C: 6, D: 3, E: 0, F: 0, G: 0, H: 0, total: 35, snitt: 4.06, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 11, B: 18, C: 11, D: 0, E: 0, F: 5, G: 0, H: 0, total: 45, snitt: 3.56, strykprosent: 11.1, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 12, B: 21, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 38, snitt: 4.18, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "MBM431-1",
+            emnenavn: "Commercialization of Innovations",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2023, A: 9, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 13, snitt: 4.69, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 0, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 34, B: 19, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 53, snitt: 4.64, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 28, B: 31, C: 10, D: 0, E: 0, F: 0, G: 0, H: 0, total: 69, snitt: 4.26, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 39, B: 27, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 69, snitt: 4.52, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 19, B: 52, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 76, snitt: 4.18, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "MBM432-1",
+            emnenavn: "Sustainable Marketing",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 16, B: 31, C: 11, D: 0, E: 0, F: 0, G: 0, H: 0, total: 58, snitt: 4.09, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 10, B: 60, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 70, snitt: 4.14, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 23, B: 20, C: 28, D: 0, E: 0, F: 0, G: 0, H: 0, total: 71, snitt: 3.93, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 6, B: 35, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 41, snitt: 4.15, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 10, B: 32, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 47, snitt: 4.11, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "MBM435-1",
+            emnenavn: "International Marketing",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 3 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 5, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 13, B: 18, C: 11, D: 0, E: 0, F: 0, G: 0, H: 0, total: 42, snitt: 4.05, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 10, B: 27, C: 17, D: 0, E: 0, F: 0, G: 0, H: 0, total: 54, snitt: 3.87, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 16, B: 26, C: 10, D: 0, E: 0, F: 0, G: 0, H: 0, total: 52, snitt: 4.12, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 16, B: 39, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 60, snitt: 4.18, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 20, B: 20, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 40, snitt: 4.5, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "NBD405-1",
+            emnenavn: "Entrepreneurship and business model design",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 4 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 9, B: 16, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 25, snitt: 4.36, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 9, B: 12, C: 8, D: 0, E: 0, F: 0, G: 0, H: 0, total: 29, snitt: 4.03, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 16, B: 10, C: 7, D: 8, E: 0, F: 0, G: 0, H: 0, total: 41, snitt: 3.83, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 20, B: 9, C: 12, D: 3, E: 0, F: 0, G: 0, H: 0, total: 44, snitt: 4.05, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 11, B: 26, C: 9, D: 0, E: 0, F: 0, G: 0, H: 0, total: 46, snitt: 4.04, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "NBD406-1",
+            emnenavn: "Strategic Entrepreneurship",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 4, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 4.57, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 7, B: 12, C: 6, D: 0, E: 0, F: 3, G: 0, H: 0, total: 28, snitt: 3.61, strykprosent: 10.7, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 9, B: 9, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 22, snitt: 4.23, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 4, B: 16, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 4.2, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "NOR10-1",
+            emnenavn: "Norwegian Language for Foreign Students level I (A1)",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 17, H: 0, total: 17, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 167, H: 18, total: 185, snitt: null, strykprosent: null, bestattprosent: 90.3, skjult: 0 },
+              { year: 2022, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 161, H: 0, total: 161, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 2 },
+              { year: 2023, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 171, H: 0, total: 171, snitt: null, strykprosent: null, bestattprosent: 100, skjult: 1 },
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 154, H: 6, total: 160, snitt: null, strykprosent: null, bestattprosent: 96.2, skjult: 0 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 135, H: 3, total: 138, snitt: null, strykprosent: null, bestattprosent: 97.8, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "NOR11-1",
+            emnenavn: "Norwegian Language for Foreign Students level II (A2)",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2024, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 8, B: 7, C: 5, D: 0, E: 0, F: 0, G: 0, H: 0, total: 20, snitt: 4.15, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2022, A: 7, B: 13, C: 5, D: 0, E: 0, F: 3, G: 0, H: 0, total: 28, snitt: 3.64, strykprosent: 10.7, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 3, B: 10, C: 4, D: 0, E: 0, F: 3, G: 0, H: 0, total: 20, snitt: 3.35, strykprosent: 15, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 14, B: 3, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 23, snitt: 4.35, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 0, B: 3, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 7, snitt: 3.43, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: "STR402A-1",
+            emnenavn: "Metode for masterutredningen",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2023, A: 0, B: 10, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 3.71, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 0, B: 16, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 16, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2025, A: 3, B: 3, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 9, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 3 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 13, B: 116, C: 68, D: 3, E: 0, F: 3, G: 0, H: 0, total: 203, snitt: 3.64, strykprosent: 1.5, bestattprosent: null, skjult: 0 },
+              { year: 2022, A: 28, B: 95, C: 44, D: 6, E: 0, F: 0, G: 0, H: 0, total: 173, snitt: 3.84, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2023, A: 15, B: 75, C: 86, D: 14, E: 0, F: 0, G: 0, H: 0, total: 190, snitt: 3.48, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 19, B: 104, C: 66, D: 0, E: 0, F: 0, G: 0, H: 0, total: 189, snitt: 3.75, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 30, B: 100, C: 31, D: 0, E: 0, F: 0, G: 0, H: 0, total: 161, snitt: 3.99, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: "STR404-1",
+            emnenavn: "Strategic Analysis",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2023, A: 0, B: 9, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 3.6, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 0, B: 12, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 12, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2025, A: 7, B: 7, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 14, snitt: 4.5, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 21, B: 49, C: 28, D: 0, E: 0, F: 0, G: 0, H: 0, total: 98, snitt: 3.93, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 10, B: 78, C: 32, D: 7, E: 0, F: 0, G: 0, H: 0, total: 127, snitt: 3.72, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2023, A: 18, B: 70, C: 26, D: 0, E: 0, F: 0, G: 0, H: 0, total: 114, snitt: 3.93, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 13, B: 66, C: 38, D: 4, E: 0, F: 0, G: 0, H: 0, total: 121, snitt: 3.73, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 22, B: 37, C: 11, D: 0, E: 0, F: 0, G: 0, H: 0, total: 70, snitt: 4.16, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: "STR452-1",
+            emnenavn: "Strategy with Finance",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2024, A: 0, B: 0, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 4, snitt: 3, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 13, B: 38, C: 16, D: 4, E: 0, F: 0, G: 0, H: 0, total: 71, snitt: 3.85, strykprosent: 0, bestattprosent: null, skjult: 4 },
+              { year: 2022, A: 26, B: 37, C: 15, D: 4, E: 0, F: 0, G: 0, H: 0, total: 82, snitt: 4.04, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2023, A: 8, B: 19, C: 18, D: 0, E: 0, F: 0, G: 0, H: 0, total: 45, snitt: 3.78, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 3, B: 12, C: 12, D: 0, E: 0, F: 0, G: 0, H: 0, total: 27, snitt: 3.67, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: "STR456-1",
+            emnenavn: "Ledelse og lederpsykologi",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2024, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 3, B: 6, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 15, snitt: 3.8, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 7, B: 28, C: 15, D: 0, E: 0, F: 0, G: 0, H: 0, total: 50, snitt: 3.84, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2022, A: 5, B: 19, C: 15, D: 0, E: 0, F: 0, G: 0, H: 0, total: 39, snitt: 3.74, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2023, A: 4, B: 28, C: 18, D: 0, E: 0, F: 0, G: 0, H: 0, total: 50, snitt: 3.72, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2024, A: 3, B: 25, C: 26, D: 0, E: 0, F: 0, G: 0, H: 0, total: 54, snitt: 3.57, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 13, B: 39, C: 17, D: 0, E: 0, F: 0, G: 0, H: 0, total: 69, snitt: 3.94, strykprosent: 0, bestattprosent: null, skjult: 2 },
+            ],
+          },
+          {
+            emnekode: "STR459-1",
+            emnenavn: "Artificial Intelligence and Robotics",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2024, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 0 },
+            ],
+            emnenivaa: [
+              { year: 2022, A: 10, B: 8, C: 0, D: 0, E: 0, F: 4, G: 0, H: 0, total: 22, snitt: 3.73, strykprosent: 18.2, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 26, B: 11, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 37, snitt: 4.7, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 45, B: 16, C: 7, D: 0, E: 0, F: 0, G: 0, H: 0, total: 68, snitt: 4.56, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 43, B: 8, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 51, snitt: 4.84, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "STR461-1",
+            emnenavn: "Strategic and Political Communication",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2024, A: 0, B: 3, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 3 },
+            ],
+            emnenivaa: [
+              { year: 2021, A: 7, B: 23, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 30, snitt: 4.23, strykprosent: 0, bestattprosent: null, skjult: 3 },
+              { year: 2022, A: 10, B: 12, C: 4, D: 0, E: 0, F: 0, G: 0, H: 0, total: 26, snitt: 4.23, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2023, A: 10, B: 8, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 18, snitt: 4.56, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2024, A: 6, B: 8, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 4.18, strykprosent: 0, bestattprosent: null, skjult: 0 },
+              { year: 2025, A: 5, B: 12, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 17, snitt: 4.29, strykprosent: 0, bestattprosent: null, skjult: 1 },
+            ],
+          },
+          {
+            emnekode: "STR463-1",
+            emnenavn: "Strategy and Technology",
+            studiepoeng: 7.5,
+            years: [
+              { year: 2024, A: 0, B: 5, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 5, snitt: 4, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2025, A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 0, snitt: null, strykprosent: null, bestattprosent: null, skjult: 3 },
+            ],
+            emnenivaa: [
+              { year: 2023, A: 7, B: 20, C: 13, D: 7, E: 0, F: 0, G: 0, H: 0, total: 47, snitt: 3.57, strykprosent: 0, bestattprosent: null, skjult: 2 },
+              { year: 2024, A: 5, B: 24, C: 24, D: 0, E: 4, F: 0, G: 0, H: 0, total: 57, snitt: 3.46, strykprosent: 0, bestattprosent: null, skjult: 1 },
+              { year: 2025, A: 12, B: 34, C: 14, D: 0, E: 0, F: 0, G: 0, H: 0, total: 60, snitt: 3.97, strykprosent: 0, bestattprosent: null, skjult: 0 },
+            ],
+          },
+          {
+            emnekode: "STRTHE-1",
+            emnenavn: "Selvstendig arbeid i hovedprofilen strategi og ledelse",
+            studiepoeng: 30,
+            years: [
+              { year: 2024, A: 3, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 3, snitt: 5, strykprosent: 0, bestattprosent: null, skjult: 5 },
+              { year: 2025, A: 4, B: 3, C: 3, D: 0, E: 0, F: 0, G: 0, H: 0, total: 10, snitt: 4.1, strykprosent: 0, bestattprosent: null, skjult: 0 },
             ],
             emnenivaa: [
               { year: 2021, A: 47, B: 33, C: 6, D: 0, E: 0, F: 0, G: 0, H: 0, total: 86, snitt: 4.48, strykprosent: 0, bestattprosent: null, skjult: 1 },

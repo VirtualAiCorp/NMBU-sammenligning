@@ -84,11 +84,17 @@ OLIT = [
     ("bi_dsb", "BI Data Science", "8241", "Oslo", "Bachelor of Data Science for Business", None, "bachelor", False, ["DIPBTH"], BI_LOKALT + " Engelskspråklig; svakere sammenligning."),
     ("kristiania_bod", "Kristiania", "8253", "Oslo", "Digitalisering og økonomi (bachelor)", None, "bachelor", False, ["BOD"], K_LOKALT + " Svakere sammenligning. Programsiden videresender nå til økonomi og administrasjon (høsten 2026)."),
 ]
-NHH_MA = ["MASTER04", "MASTER15", "MASTER21", "MASTER22", "MASTER24", "MASTER25", "M25", "MSC23", "MSC24", "MSC25"]
+NHH_MA = ["MASTER04", "MASTER15", "MASTER21", "MASTER22", "MASTER24", "MASTER25", "M25"]
+# NHHs internasjonale MSc (eget opptak fra 2023, flest ikke-kvalifiserte søkere) er egen oppføring, ikke en del av NHH-masteren
+NHH_MSC = ["MSC23", "MSC24", "MSC25"]
+# Lokale opptak der DBH 379 teller flere søknadsalternativer per søker under samme programkode: «Alle søkere» settes lik
+# førsteprioritet (nærmest antall personer) og kvalifiserte tømmes for disse årene (fill-local-admissions.py).
+ALLE_SOM_FORSTEPRIORITET = {"nhh_moa": ["2022", "2023"]}
 INN_MA = ["MØLDBH", "MØLDBD", "MØLØH", "MØLØD", "MØLMH", "MØLMD", "MØLBAH", "MØLBAD"]
 MOA = [
     ("nmbu_moa", "NMBU", "1173", "Ås", "Økonomi og administrasjon (master 2 år)", None, "master2", True, ["M-ØA"], None),
-    ("nhh_moa", "NHH", "1240", "Bergen", "Økonomi og administrasjon (master 2 år)", None, "master2", True, NHH_MA, "NHH har mange årskull-koder for masterstudiet; alle er slått sammen (ikke spesialiseringene)."),
+    ("nhh_moa", "NHH", "1240", "Bergen", "Økonomi og administrasjon (master 2 år)", None, "master2", True, NHH_MA, "NHH har mange årskull-koder for masterstudiet; alle er slått sammen (ikke spesialiseringene). Den internasjonale MSc-en (MSC23–25) er egen oppføring. I 2022–2023 er «Alle søkere» satt lik førsteprioritet (se gruppens merknad)."),
+    ("nhh_msc", "NHH int. MSc", "1240", "Bergen", "MSc in Economics and Business Administration, internasjonalt opptak (master 2 år)", None, "master2", False, NHH_MSC, "Eget opptak for internasjonale søkere fra 2023; de fleste søkerne er ikke kvalifisert (157–176 kvalifiserte førsteprioritetssøkere per år). Svakere sammenligning."),
     ("bi_moa", "BI", "8241", "Oslo", "Master of Science in Business", None, "master2", True, ["MSCMSBUH"], None),
     ("ntnu_moa", "NTNU", "1150", "Trondheim", "Økonomi og administrasjon (master 2 år)", None, "master2", True, ["ØAMSC"], None),
     ("oslomet_moa", "OsloMet", "1175", "Oslo", "Økonomi og administrasjon (master 2 år)", None, "master2", True, ["MASØA"], None),
@@ -155,7 +161,9 @@ GRUPPER = [
      "Nærmeste tilsvarende program funnet i Samordnas programliste. IT og informasjonssystemer (UiA, USN, HiØ) er mer IT-tunge; Informatikk-matematikk-økonomi (UiB) og Digital serviceledelse (UiS) er svakere sammenligninger (default false), det samme er BIs Digital Business og Data Science for Business og Kristianias Digitalisering og økonomi (lokale opptak, DBH 379)."),
     ("moa", "Økonomi og administrasjon (master)", "master2", MOA,
      "Sammenligner NMBUs toårige master i økonomi og administrasjon (siviløkonom) med siviløkonomstudiene ved de andre handelshøyskolene.",
-     "Lokale opptak (ikke Samordna); søkertall, tilbud og møtt fra DBH 379. Samme institusjoner som i den opprinnelige masteroppgaveanalysen."),
+     "Lokale opptak (ikke Samordna); søkertall, tilbud og møtt fra DBH 379. Samme institusjoner som i den opprinnelige masteroppgaveanalysen. "
+     "NHH: i 2022 og 2023 registrerte NHH flere søknadsalternativer per søker i DBH (6 533 og 7 774 alternativer, mot 1 594 og 1 674 på førsteprioritet), så «Alle søkere» er satt lik førsteprioritet disse årene og kvalifiserte er tomt. "
+     "NHHs internasjonale MSc (eget opptak fra 2023) er egen oppføring og ikke valgt som standard."),
     ("mecon", "Samfunnsøkonomi (master)", "master2", MECON,
      "Sammenligner NMBUs master i samfunnsøkonomi og bærekraft med masterprogrammene i samfunnsøkonomi.",
      "Lokale opptak; tall fra DBH 379. NMBUs nye master i samfunnsøkonomi og miljøforvaltning (M-EEG, fra 2024) er ikke med ennå."),
@@ -209,6 +217,8 @@ def main():
                     d["institusjonskoder"] = INN
                 if merknad:
                     d["merknad"] = merknad
+                if pid in ALLE_SOM_FORSTEPRIORITET:
+                    d["alleSForsteprioritet"] = ALLE_SOM_FORSTEPRIORITET[pid]
                 if pid in SBID:
                     d["sbId"], sbm = SBID[pid]
                     if sbm:

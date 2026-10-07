@@ -1,5 +1,5 @@
 {
- "generert": "2026-10-06",
+ "generert": "2026-10-07",
  "institusjoner": [
   {
    "id": "1173",
@@ -11623,6 +11623,120 @@
     "hoved": true
    },
    {
+    "id": "1240_000000",
+    "inst": "1240",
+    "kort": "NHH",
+    "fakultetskode": "000000",
+    "isNmbu": false,
+    "navn": "Hele NHH (egen handelshøyskole)",
+    "years": [
+     {
+      "aar": 2019,
+      "arsverk": 399.5,
+      "faglige": 153.7,
+      "fagligeKvinner": 39.7,
+      "rekruttering": 107.5,
+      "forste": 137.8,
+      "studenter": 3667,
+      "studentarsverk": 2912.2,
+      "studentarsverkEgen": 2716.5,
+      "publPoeng": 241.0,
+      "publikasjoner": 208,
+      "niva2Andel": 50.1
+     },
+     {
+      "aar": 2020,
+      "arsverk": 434.7,
+      "faglige": 161.7,
+      "fagligeKvinner": 38.6,
+      "rekruttering": 122.1,
+      "forste": 147.0,
+      "studenter": 3582,
+      "studentarsverk": 2960.5,
+      "studentarsverkEgen": 2788.9,
+      "publPoeng": 294.4,
+      "publikasjoner": 230,
+      "niva2Andel": 63.0
+     },
+     {
+      "aar": 2021,
+      "arsverk": 460.2,
+      "faglige": 158.9,
+      "fagligeKvinner": 40.1,
+      "rekruttering": 137.1,
+      "forste": 139.3,
+      "studenter": 4043,
+      "studentarsverk": 3301.3,
+      "studentarsverkEgen": 3103.3,
+      "publPoeng": 289.5,
+      "publikasjoner": 229,
+      "niva2Andel": 58.2
+     },
+     {
+      "aar": 2022,
+      "arsverk": 454.8,
+      "faglige": 165.2,
+      "fagligeKvinner": 40.1,
+      "rekruttering": 125.6,
+      "forste": 141.9,
+      "studenter": 4156,
+      "studentarsverk": 3150.8,
+      "studentarsverkEgen": 2930.9,
+      "publPoeng": 253.6,
+      "publikasjoner": 210,
+      "niva2Andel": 56.4
+     },
+     {
+      "aar": 2023,
+      "arsverk": 473.1,
+      "faglige": 169.5,
+      "fagligeKvinner": 44.3,
+      "rekruttering": 129.8,
+      "forste": 147.7,
+      "studenter": 4173,
+      "studentarsverk": 3113.6,
+      "studentarsverkEgen": 2856.2,
+      "publPoeng": 249.1,
+      "publikasjoner": 200,
+      "niva2Andel": 54.8
+     },
+     {
+      "aar": 2024,
+      "arsverk": 483.8,
+      "faglige": 171.7,
+      "fagligeKvinner": 48.0,
+      "rekruttering": 129.6,
+      "forste": 146.1,
+      "studenter": 4323,
+      "studentarsverk": 3261.6,
+      "studentarsverkEgen": 2952.0,
+      "publPoeng": 303.0,
+      "publikasjoner": 225,
+      "niva2Andel": 68.4
+     },
+     {
+      "aar": 2025,
+      "arsverk": 473.0,
+      "faglige": 169.4,
+      "fagligeKvinner": 51.0,
+      "rekruttering": 121.1,
+      "forste": 147.1,
+      "studenter": 4500,
+      "studentarsverk": 3309.6,
+      "studentarsverkEgen": 3043.3,
+      "publPoeng": 335.0,
+      "publikasjoner": 244,
+      "niva2Andel": 69.9
+     }
+    ],
+    "programmer": [
+     "MSc in Economics and Business Administration, internasjonalt opptak (master 2 år)",
+     "Økonomi og administrasjon (bachelor)",
+     "Økonomi og administrasjon (master 2 år)"
+    ],
+    "hoved": true
+   },
+   {
     "id": "0238_250",
     "inst": "0238",
     "kort": "HVL",
@@ -11747,119 +11861,6 @@
     "programmer": [
      "Informasjonssystemer (bachelor)",
      "Økonomi og administrasjon (bachelor)"
-    ],
-    "hoved": true
-   },
-   {
-    "id": "1240_000000",
-    "inst": "1240",
-    "kort": "NHH",
-    "fakultetskode": "000000",
-    "isNmbu": false,
-    "navn": "Hele NHH (egen handelshøyskole)",
-    "years": [
-     {
-      "aar": 2019,
-      "arsverk": 399.5,
-      "faglige": 153.7,
-      "fagligeKvinner": 39.7,
-      "rekruttering": 107.5,
-      "forste": 137.8,
-      "studenter": 3667,
-      "studentarsverk": 2912.2,
-      "studentarsverkEgen": 2716.5,
-      "publPoeng": 241.0,
-      "publikasjoner": 208,
-      "niva2Andel": 50.1
-     },
-     {
-      "aar": 2020,
-      "arsverk": 434.7,
-      "faglige": 161.7,
-      "fagligeKvinner": 38.6,
-      "rekruttering": 122.1,
-      "forste": 147.0,
-      "studenter": 3582,
-      "studentarsverk": 2960.5,
-      "studentarsverkEgen": 2788.9,
-      "publPoeng": 294.4,
-      "publikasjoner": 230,
-      "niva2Andel": 63.0
-     },
-     {
-      "aar": 2021,
-      "arsverk": 460.2,
-      "faglige": 158.9,
-      "fagligeKvinner": 40.1,
-      "rekruttering": 137.1,
-      "forste": 139.3,
-      "studenter": 4043,
-      "studentarsverk": 3301.3,
-      "studentarsverkEgen": 3103.3,
-      "publPoeng": 289.5,
-      "publikasjoner": 229,
-      "niva2Andel": 58.2
-     },
-     {
-      "aar": 2022,
-      "arsverk": 454.8,
-      "faglige": 165.2,
-      "fagligeKvinner": 40.1,
-      "rekruttering": 125.6,
-      "forste": 141.9,
-      "studenter": 4156,
-      "studentarsverk": 3150.8,
-      "studentarsverkEgen": 2930.9,
-      "publPoeng": 253.6,
-      "publikasjoner": 210,
-      "niva2Andel": 56.4
-     },
-     {
-      "aar": 2023,
-      "arsverk": 473.1,
-      "faglige": 169.5,
-      "fagligeKvinner": 44.3,
-      "rekruttering": 129.8,
-      "forste": 147.7,
-      "studenter": 4173,
-      "studentarsverk": 3113.6,
-      "studentarsverkEgen": 2856.2,
-      "publPoeng": 249.1,
-      "publikasjoner": 200,
-      "niva2Andel": 54.8
-     },
-     {
-      "aar": 2024,
-      "arsverk": 483.8,
-      "faglige": 171.7,
-      "fagligeKvinner": 48.0,
-      "rekruttering": 129.6,
-      "forste": 146.1,
-      "studenter": 4323,
-      "studentarsverk": 3261.6,
-      "studentarsverkEgen": 2952.0,
-      "publPoeng": 303.0,
-      "publikasjoner": 225,
-      "niva2Andel": 68.4
-     },
-     {
-      "aar": 2025,
-      "arsverk": 473.0,
-      "faglige": 169.4,
-      "fagligeKvinner": 51.0,
-      "rekruttering": 121.1,
-      "forste": 147.1,
-      "studenter": 4500,
-      "studentarsverk": 3309.6,
-      "studentarsverkEgen": 3043.3,
-      "publPoeng": 335.0,
-      "publikasjoner": 244,
-      "niva2Andel": 69.9
-     }
-    ],
-    "programmer": [
-     "Økonomi og administrasjon (bachelor)",
-     "Økonomi og administrasjon (master 2 år)"
     ],
     "hoved": true
    },

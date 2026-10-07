@@ -1,4 +1,4 @@
-// GENERERT av scripts/build-landsam-data.py 2026-10-06 – ikke rediger for hånd.
+// GENERERT av scripts/build-landsam-data.py 2026-10-07 – ikke rediger for hånd.
 // Kilder: Samordna opptak programtabell 2026 (søkertall 2021–2026) og SO poenggrenserapport (Tableau) 2020–2026, hovedopptak; opptakspoeng (op_*/kp_*) fra DBH tabell 571.
 // 0 i poenggrense = alle kvalifiserte kom inn · null = data ikke tilgjengelig
 import type { FullAdmissionEntry, FullYearData } from './fullAdmissionData';
@@ -697,7 +697,7 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
   {
     id: 'moa', label: 'Økonomi og administrasjon (master)', level: 'master2',
     desc: 'Sammenligner NMBUs toårige master i økonomi og administrasjon (siviløkonom) med siviløkonomstudiene ved de andre handelshøyskolene.',
-    note: 'Lokale opptak (ikke Samordna); søkertall, tilbud og møtt fra DBH 379. Samme institusjoner som i den opprinnelige masteroppgaveanalysen.',
+    note: 'Lokale opptak (ikke Samordna); søkertall, tilbud og møtt fra DBH 379. Samme institusjoner som i den opprinnelige masteroppgaveanalysen. NHH: i 2022 og 2023 registrerte NHH flere søknadsalternativer per søker i DBH (6 533 og 7 774 alternativer, mot 1 594 og 1 674 på førsteprioritet), så «Alle søkere» er satt lik førsteprioritet disse årene og kvalifiserte er tomt. NHHs internasjonale MSc (eget opptak fra 2023) er egen oppføring og ikke valgt som standard.',
     nmbuIds: ['nmbu_moa'], defaultIds: ['nmbu_moa', 'nhh_moa', 'bi_moa', 'ntnu_moa', 'oslomet_moa', 'uia_moa', 'uis_moa', 'usn_moa', 'nord_moa', 'inn_moa'],
     entries: [
       {
@@ -719,10 +719,20 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         lokaltOpptak: true,
         years: {
           '2021': Y(1257, 1200, null, 38.5, 1074, 730, null, null, 628, 579),
-          '2022': Y(6533, 1594, null, 37.0, 5734, 1078, null, null, 872, 782),
-          '2023': Y(8978, 2878, null, 37.4, 7475, 1414, null, null, 1098, 660),
-          '2024': Y(1805, 1739, null, 36.1, 1268, 998, null, null, 814, 739),
-          '2025': Y(2194, 1942, null, 36.3, 1597, 1104, null, null, 921, 827),
+          '2022': Y(1594, 1594, null, 37.0, null, 1078, null, null, 872, 782),
+          '2023': Y(1674, 1674, null, 38.0, null, 1235, null, null, 1002, 589),
+          '2024': Y(1295, 1229, null, 36.0, 1111, 836, null, null, 716, 657),
+          '2025': Y(1645, 1393, null, 37.5, 1421, 921, null, null, 813, 736),
+        },
+      },
+      {
+        id: 'nhh_msc', shortName: 'NHH int. MSc', institusjon: 'Norges Handelshøyskole',
+        studiekode: '', studiested: 'Bergen', type: 'master2',
+        lokaltOpptak: true,
+        years: {
+          '2023': Y(1204, 1204, null, 36.6, 168, 179, null, null, 96, 71),
+          '2024': Y(510, 510, null, 36.5, 157, 162, null, null, 98, 82),
+          '2025': Y(549, 549, null, 33.3, 176, 183, null, null, 108, 91),
         },
       },
       {

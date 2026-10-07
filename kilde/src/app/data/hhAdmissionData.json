@@ -1,5 +1,5 @@
 {
-  "generert": "2026-10-06",
+  "generert": "2026-10-07",
   "programkartHentet": "2026-09-23",
   "years": [
     "2020",
@@ -6514,7 +6514,7 @@
       "label": "Økonomi og administrasjon (master)",
       "level": "master2",
       "desc": "Sammenligner NMBUs toårige master i økonomi og administrasjon (siviløkonom) med siviløkonomstudiene ved de andre handelshøyskolene.",
-      "note": "Lokale opptak (ikke Samordna); søkertall, tilbud og møtt fra DBH 379. Samme institusjoner som i den opprinnelige masteroppgaveanalysen.",
+      "note": "Lokale opptak (ikke Samordna); søkertall, tilbud og møtt fra DBH 379. Samme institusjoner som i den opprinnelige masteroppgaveanalysen. NHH: i 2022 og 2023 registrerte NHH flere søknadsalternativer per søker i DBH (6 533 og 7 774 alternativer, mot 1 594 og 1 674 på førsteprioritet), så «Alle søkere» er satt lik førsteprioritet disse årene og kvalifiserte er tomt. NHHs internasjonale MSc (eget opptak fra 2023) er egen oppføring og ikke valgt som standard.",
       "nmbuIds": [
         "nmbu_moa"
       ],
@@ -6625,11 +6625,11 @@
               "mott": 579
             },
             "2022": {
-              "alleS": 6533,
+              "alleS": 1594,
               "fvS": 1594,
               "plasser": null,
               "kvinner": 37.0,
-              "kvalifiserte": 5734,
+              "kvalifiserte": null,
               "tilbud": 1078,
               "pg_fv": null,
               "pg_ord": null,
@@ -6637,40 +6637,88 @@
               "mott": 782
             },
             "2023": {
-              "alleS": 8978,
-              "fvS": 2878,
+              "alleS": 1674,
+              "fvS": 1674,
               "plasser": null,
-              "kvinner": 37.4,
-              "kvalifiserte": 7475,
-              "tilbud": 1414,
+              "kvinner": 38.0,
+              "kvalifiserte": null,
+              "tilbud": 1235,
               "pg_fv": null,
               "pg_ord": null,
-              "akseptert": 1098,
-              "mott": 660
+              "akseptert": 1002,
+              "mott": 589
             },
             "2024": {
-              "alleS": 1805,
-              "fvS": 1739,
+              "alleS": 1295,
+              "fvS": 1229,
               "plasser": null,
-              "kvinner": 36.1,
-              "kvalifiserte": 1268,
-              "tilbud": 998,
+              "kvinner": 36.0,
+              "kvalifiserte": 1111,
+              "tilbud": 836,
               "pg_fv": null,
               "pg_ord": null,
-              "akseptert": 814,
-              "mott": 739
+              "akseptert": 716,
+              "mott": 657
             },
             "2025": {
-              "alleS": 2194,
-              "fvS": 1942,
+              "alleS": 1645,
+              "fvS": 1393,
               "plasser": null,
-              "kvinner": 36.3,
-              "kvalifiserte": 1597,
-              "tilbud": 1104,
+              "kvinner": 37.5,
+              "kvalifiserte": 1421,
+              "tilbud": 921,
               "pg_fv": null,
               "pg_ord": null,
-              "akseptert": 921,
-              "mott": 827
+              "akseptert": 813,
+              "mott": 736
+            }
+          },
+          "lokaltOpptak": true
+        },
+        {
+          "id": "nhh_msc",
+          "shortName": "NHH int. MSc",
+          "institusjon": "Norges Handelshøyskole",
+          "studiekode": "",
+          "studiested": "Bergen",
+          "type": "master2",
+          "url": null,
+          "years": {
+            "2023": {
+              "alleS": 1204,
+              "fvS": 1204,
+              "plasser": null,
+              "kvinner": 36.6,
+              "kvalifiserte": 168,
+              "tilbud": 179,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 96,
+              "mott": 71
+            },
+            "2024": {
+              "alleS": 510,
+              "fvS": 510,
+              "plasser": null,
+              "kvinner": 36.5,
+              "kvalifiserte": 157,
+              "tilbud": 162,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 98,
+              "mott": 82
+            },
+            "2025": {
+              "alleS": 549,
+              "fvS": 549,
+              "plasser": null,
+              "kvinner": 33.3,
+              "kvalifiserte": 176,
+              "tilbud": 183,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 108,
+              "mott": 91
             }
           },
           "lokaltOpptak": true
