@@ -23,6 +23,14 @@ interface Fakta extends Ref { id: string; tekst: string; verdi?: number }
 interface SektorRad { inst: string; saldert2026: number; forslag2027: number; resultat: number }
 interface Sitat extends Ref { tittel: string; sitat: string; trykt?: number }
 interface Tekst { tittel: string; tekst: string; kilder: Ref[] }
+interface BehovRad { navn: string; bachelor: number; master: number; uthev?: boolean }
+interface Nokkel extends Ref { navn: string; verdi: string; sammenlign?: string; kilde2?: string; side2?: number; merknad2?: string }
+interface Behov {
+  ingress?: string;
+  akershus?: Ref & { tittel: string; merknad?: string; rader: BehovRad[]; fakta: (Ref & { tekst: string })[] };
+  nokkeltall: Nokkel[]; nyanserer: { tekst: string; kilder: Ref[] }[]; stotter: { tekst: string; kilder: Ref[] }[];
+  vurdering: { tittel: string; tekst: string }[];
+}
 interface Sb {
   aar: number; status: string; fremlagt?: string;
   nmbu: { ramme2026: Ref & { verdi: number }; forslag2027: Ref & { verdi: number }; poster: Post[] };
@@ -33,6 +41,7 @@ interface Sb {
   sektor: Ref & { resultatSide?: number; rader: SektorRad[]; privat?: { inst: string; studiepoeng: number; endring: number; merknad?: string }[]; privatKilde?: Ref };
   kompetansebudsjett: Sitat[];
   tekst: Tekst[];
+  behov?: Behov;
 }
 const erSb = (x: unknown): x is Sb => {
   const o = x as Sb | undefined;
@@ -89,6 +98,30 @@ function Kort({ children, tone }: { children: ReactNode; tone?: 'hh' | 'sitat' }
   );
 }
 
+/** Kort navn på et dokument i lister med mange kilder. */
+function kortNavn(d: LedelseData, id: string) {
+  const fast: Record<string, string> = {
+    'prop1s-2027': 'Prop. 1 S', 'orientering-forslag-2027': 'KDs orientering', 'arsplan-2027': 'Sak 24/26', 'hkdir-2-2026': 'HK-dir 2/2026',
+    'nav-bu-2026': 'Nav 2026', 'nav-bu-2026-akershus': 'Nav 2026 Akershus', 'nav-bu-2025': 'Nav 2025', 'ssb-2024-48': 'SSB 2024/48',
+    'ssb-not-2025-15': 'SSB-notat 2025/15', 'nifu-ku-2025': 'NIFU 2026:8', 'nho-kb-2025': 'NHO kompetansebarometer', 'ks-agm-2025': 'KS arbeidsgivermonitor',
+    'regnskap-norge-2024': 'Regnskap Norge', 'revisorforeningen-2026': 'Revisorforeningen', 'regjeringen-baerekraft-2026': 'Regjeringen 19.06.2026',
+  };
+  if (fast[id]) return fast[id];
+  if (id.startsWith('utviklingsavtale')) return 'Utkast til utviklingsavtale';
+  if (id.startsWith('hh-')) return 'HH-styret';
+  return d.kilder.find((x) => x.id === id)?.tittel ?? id;
+}
+/** «HK-dir 2/2026 s. 41 · Nav 2025 s. 24»; Prop. 1 S vises med trykt side. */
+function RefListe({ d, refs }: { d: LedelseData; refs: Ref[] }) {
+  return (
+    <div className="mt-1 flex flex-wrap gap-x-2" style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)' }}>
+      {refs.map((r, j) => (
+        <span key={j}>{kortNavn(d, r.kilde)}{' '}<S d={d} r={r} trykt={r.kilde === 'prop1s-2027' && r.side ? r.side - 2 : undefined}>{r.side ? undefined : r.kilde === 'nav-bu-2026' ? 'Excel' : 'lenke'}</S></span>
+      ))}
+    </div>
+  );
+}
+
 const P = ({ children }: { children: ReactNode }) => <p style={{ fontSize: 13, lineHeight: 1.6, color: 'var(--nmbu-neutral-1)' }}>{children}</p>;
 
 // ── Siden ────────────────────────────────────────────────────────────────────
@@ -100,7 +133,8 @@ export function Statsbudsjett({ data, i = 2 }: { data: LedelseData; i?: number }
       <Oversikt d={data} sb={sb} i={i} />
       <Handelshoyskolen d={data} sb={sb} i={i + 1} />
       <Kompetansebudsjettet d={data} sb={sb} i={i + 2} />
-      <Sektoren d={data} sb={sb} i={i + 3} />
+      {sb.behov && <BehovForOkonomi d={data} sb={sb} b={sb.behov} i={i + 3} />}
+      <Sektoren d={data} sb={sb} i={i + 4} />
     </>
   );
 }
@@ -340,13 +374,7 @@ function Kompetansebudsjettet({ d, sb, i }: { d: LedelseData; sb: Sb; i: number 
           <li key={t.tittel}><Kort>
             <div className="flex items-center gap-1.5"><Merke tone="dempet">Vurdering</Merke><span style={{ fontSize: 13, fontWeight: 600, color: 'var(--nmbu-neutral)' }}>{t.tittel}</span></div>
             <div className="mt-1"><P>{t.tekst}</P></div>
-            <div className="mt-1 flex flex-wrap gap-x-2" style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)' }}>
-              {t.kilder.map((r, j) => {
-                const k = d.kilder.find((x) => x.id === r.kilde);
-                const kort = r.kilde === 'prop1s-2027' ? 'Prop. 1 S' : r.kilde === 'orientering-forslag-2027' ? 'KDs orientering' : r.kilde === 'arsplan-2027' ? 'Sak 24/26' : r.kilde.startsWith('utviklingsavtale') ? 'Utkast til utviklingsavtale' : r.kilde.startsWith('hh-') ? 'HH-styret' : k?.tittel ?? r.kilde;
-                return <span key={j}>{kort} <S d={d} r={r} trykt={r.kilde === 'prop1s-2027' && r.side ? r.side - 2 : undefined} /></span>;
-              })}
-            </div>
+            <RefListe d={d} refs={t.kilder} />
           </Kort></li>
         ))}
       </ul>
@@ -355,7 +383,114 @@ function Kompetansebudsjettet({ d, sb, i }: { d: LedelseData; sb: Sb; i: number 
   );
 }
 
-// ── 4. Sektoren ──────────────────────────────────────────────────────────────
+// ── 4. Behovet for økonomi og administrasjon ─────────────────────────────────
+const BACHELOR = 'var(--nmbu-green-dark)';
+const MASTER = 'color-mix(in srgb, var(--nmbu-green) 45%, transparent)';
+
+function Spalte({ d, tittel, tone, punkter }: { d: LedelseData; tittel: string; tone: 'opp' | 'ned'; punkter: { tekst: string; kilder: Ref[] }[] }) {
+  return (
+    <div className="rounded-lg p-3 min-w-0" style={{ border: '1px solid var(--nmbu-neutral-3)', borderTop: `3px solid ${tone === 'opp' ? OPP : NED}`, backgroundColor: 'var(--card)' }}>
+      <div style={{ fontSize: 13, fontWeight: 600, color: 'var(--nmbu-neutral)' }}>{tittel}</div>
+      <ul className="mt-1 grid gap-2.5">
+        {punkter.map((x, j) => (
+          <li key={j} className="min-w-0">
+            <div style={{ fontSize: 12.5, lineHeight: 1.55, color: 'var(--nmbu-neutral-1)' }}>{x.tekst}</div>
+            <RefListe d={d} refs={x.kilder} />
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+function BehovForOkonomi({ d, sb, b, i }: { d: LedelseData; sb: Sb; b: Behov; i: number }) {
+  const ak = b.akershus;
+  const maks = ak ? Math.max(...ak.rader.map((r) => r.bachelor + r.master)) : 0;
+  const sumB = ak ? ak.rader.reduce((s, r) => s + r.bachelor, 0) : 0, sumM = ak ? ak.rader.reduce((s, r) => s + r.master, 0) : 0;
+  const alleRefs: Ref[] = [
+    ...(ak ? [ak, ...ak.fakta] : []),
+    ...b.nokkeltall.flatMap((n) => [n, ...(n.kilde2 ? [{ kilde: n.kilde2, side: n.side2 }] : [])]),
+    ...b.nyanserer.flatMap((x) => x.kilder), ...b.stotter.flatMap((x) => x.kilder),
+  ];
+  return (
+    <Del i={i} id="behov-okonomi" ikon={Scale} tittel="Trengs økonomer? Hva kildene sier"
+      ingress={b.ingress}
+      kilder={kilderFor(d, alleRefs)}
+      merknad="Bransjeorganisasjonene (Regnskap Norge, Revisorforeningen), NHO og KS er interesseparter; tallene deres er tatt med fordi de sier noe om arbeidsgivernes behov. Vurderingene nederst er våre.">
+      {ak && (
+        <>
+          <Undertittel>{ak.tittel}</Undertittel>
+          <div className="grid gap-x-6 gap-y-3 min-w-0" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))' }}>
+            <div className="min-w-0">
+              <div className="flex gap-3 mb-1.5" style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)' }}>
+                <span className="inline-flex items-center gap-1"><i className="inline-block w-2.5 h-2.5 rounded-sm" style={{ backgroundColor: BACHELOR }} />Bachelor ({nf(sumB)})</span>
+                <span className="inline-flex items-center gap-1"><i className="inline-block w-2.5 h-2.5 rounded-sm" style={{ backgroundColor: MASTER }} />Master ({nf(sumM)})</span>
+              </div>
+              <ul className="grid gap-1" aria-label={ak.tittel}>
+                {ak.rader.map((r) => (
+                  <li key={r.navn} className="grid items-center gap-2 rounded px-1" style={{ gridTemplateColumns: 'minmax(0, 13em) minmax(0, 1fr) 2.6em', backgroundColor: r.uthev ? 'color-mix(in srgb, var(--nmbu-green) 12%, transparent)' : undefined }}
+                    title={`${r.navn}: ${r.bachelor} bachelor, ${r.master} master`}>
+                    <span style={{ fontSize: 11.5, lineHeight: 1.25, fontWeight: r.uthev ? 700 : 400, color: 'var(--nmbu-neutral)' }}>{r.navn}</span>
+                    <span className="flex h-3 rounded-sm overflow-hidden" aria-hidden>
+                      <span style={{ width: `${(100 * r.bachelor) / maks}%`, backgroundColor: BACHELOR }} />
+                      <span style={{ width: `${(100 * r.master) / maks}%`, backgroundColor: MASTER }} />
+                    </span>
+                    <span style={{ fontSize: 11.5, textAlign: 'right', fontVariantNumeric: 'tabular-nums', fontWeight: r.uthev ? 700 : 400 }}>{nf(r.bachelor + r.master)}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-1.5" style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)', lineHeight: 1.5 }}>{ak.merknad} <S d={d} r={ak}>HK-dir 2/2026, figur 3.6, s. {ak.side}</S></div>
+            </div>
+            <ul className="grid gap-2 content-start min-w-0">
+              {ak.fakta.map((x, j) => (
+                <li key={j}><Kort>
+                  <div style={{ fontSize: 12.5, lineHeight: 1.55, color: 'var(--nmbu-neutral-1)' }}>{x.tekst}</div>
+                  <RefListe d={d} refs={[x]} />
+                </Kort></li>
+              ))}
+            </ul>
+          </div>
+        </>
+      )}
+
+      <Undertittel>Nøkkeltall om økonomi og administrasjon</Undertittel>
+      <Tabell minBredde={560}>
+        <Hoderad><th style={THV}>Mål</th><th style={THV}>Tall</th><th style={THV}>Til sammenligning</th><th style={TH}>Kilde</th></Hoderad>
+        <tbody>
+          {b.nokkeltall.map((n) => (
+            <Rad key={n.navn}>
+              <td style={{ ...TDV, maxWidth: 260 }}>{n.navn}</td>
+              <td style={{ ...TDV, fontWeight: 600, color: 'var(--nmbu-neutral)' }}>{n.verdi}</td>
+              <td style={{ ...TDV, fontSize: 11.5, color: 'var(--nmbu-neutral-1)' }}>{n.sammenlign}</td>
+              <td style={{ ...TD, whiteSpace: 'normal' }}>
+                <span className="whitespace-nowrap">{kortNavn(d, n.kilde)} <S d={d} r={n} /></span>
+                {n.kilde2 && <span className="block whitespace-nowrap" title={n.merknad2}>{n.kilde2 === n.kilde ? '' : `${kortNavn(d, n.kilde2)} `}<S d={d} r={{ kilde: n.kilde2, side: n.side2 }}>{n.side2 ? undefined : 'Excel'}</S></span>}
+              </td>
+            </Rad>
+          ))}
+        </tbody>
+      </Tabell>
+
+      <div className="grid gap-3 mt-4 min-w-0" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))' }}>
+        <Spalte d={d} tittel="Det som nyanserer signalet" tone="opp" punkter={b.nyanserer} />
+        <Spalte d={d} tittel="Det som støtter signalet" tone="ned" punkter={b.stotter} />
+      </div>
+
+      <Undertittel>Vår vurdering for HH</Undertittel>
+      <ul className="grid gap-2 min-w-0" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 300px), 1fr))' }}>
+        {b.vurdering.map((v) => (
+          <li key={v.tittel}><Kort tone="hh">
+            <div className="flex items-center gap-1.5"><Merke tone="dempet">Vurdering</Merke><span style={{ fontSize: 13, fontWeight: 600, color: 'var(--nmbu-neutral)' }}>{v.tittel}</span></div>
+            <div className="mt-1"><P>{v.tekst}</P></div>
+          </Kort></li>
+        ))}
+      </ul>
+      <div className="mt-2" style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)' }}>Henger sammen med kompetansebudsjettet i statsbudsjettet for {sb.aar} (delen over).</div>
+    </Del>
+  );
+}
+
+// ── 5. Sektoren ──────────────────────────────────────────────────────────────
 function Sektoren({ d, sb, i }: { d: LedelseData; sb: Sb; i: number }) {
   const [sort, setSort] = useState<'res' | 'reell'>('res');
   const rader = sb.sektor.rader.map((r) => {

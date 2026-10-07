@@ -766,6 +766,20 @@ def statsbudsjett_linjer(sb, kildetekst):
     sitater = " ".join(f"{q['tittel']}: «{q['sitat']}»{' (trykt s. ' + str(q['trykt']) + ')' if q.get('trykt') else ''}." for q in sb["kompetansebudsjett"])
     ut.append(["Statsbudsjettet", "kompetansebudsjettet", f"{hode} · Kompetansebudsjettet i Prop. 1 S (del III kap. 5), første gang. Det gir føringer, ikke detaljstyring, og koster ikke penger i {aar}, men skal følges opp i utviklingsavtalene {aar}–{aar + 3}. "
                f"{sitater} Kilder: {kildetekst([ref(q) for q in sb['kompetansebudsjett']])}.", "l", side, ""])
+    b = sb.get("behov")
+    if b:
+        hb = "BEHOVET FOR ØKONOMI OG ADMINISTRASJON (kunnskapsgrunnlag mot kompetansebudsjettet)"
+        ak = b.get("akershus")
+        if ak:
+            rader = "; ".join(f"{r['navn']} {r['bachelor']} bachelor og {r['master']} master" for r in ak["rader"])
+            ut.append(["Behovet for økonomer", "Akershus", (f"{hb} · {ak['tittel']}: {rader}. {ak.get('merknad', '')} " + " ".join(x["tekst"] for x in ak["fakta"])
+                       + f" Kilder: {kildetekst([ref(ak)] + [ref(x) for x in ak['fakta']])}.")[:2390], "l", side, ""])
+        ut.append(["Behovet for økonomer", "nøkkeltall", (f"{hb} · " + "; ".join(f"{n['navn']}: {n['verdi']} ({n.get('sammenlign', '')})" for n in b["nokkeltall"])
+                   + f". Kilder: {kildetekst([ref(n) for n in b['nokkeltall']])}.")[:2390], "l", side, ""])
+        for navn, liste in (("nyanserer kompetansebudsjettets signal", b["nyanserer"]), ("støtter kompetansebudsjettets signal", b["stotter"])):
+            ut.append(["Behovet for økonomer", navn, (f"{hb} · Kilder som {navn}: " + " ".join(x["tekst"] for x in liste)
+                       + f" Kilder: {kildetekst([ref(k) for x in liste for k in x['kilder']])}. Regnskap Norge, Revisorforeningen, NHO og KS er interesseparter.")[:2390], "l", side, ""])
+        ut.append(["Behovet for økonomer", "vurdering", (f"{hb} · Vurdering fra studierådgiverne ved Handelshøyskolen (ikke NMBUs eller KDs): " + " ".join(f"{v['tittel']}: {v['tekst']}" for v in b["vurdering"]))[:2390], "l", side, ""])
     for t in sb.get("tekst", []):
         ut.append(["Statsbudsjettet", t["tittel"], f"{hode} · Vurdering fra studierådgiverne ved Handelshøyskolen (ikke NMBUs eller KDs): {t['tittel']}. {t['tekst']} "
                    f"Kilder: {kildetekst([ref(k) for k in t.get('kilder', [])])}."[:2390], "l", side, ""])
