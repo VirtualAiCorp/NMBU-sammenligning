@@ -21,6 +21,7 @@ export interface KartEnhet {
   artikler: number | null; n4: number | null; n3: number | null; p4: number | null; p3: number | null;
   /** nevner per år i perioden (årsverk) */ arsverk: number | null; poeng: number | null; plass: number | null; plassAv: number | null;
   avgrensning: string; nevner: string; kilde: string; forbehold: string[]; akk: string[]; ekstra: [string, string][];
+  /** nevneren med stipendiater/doktorander mangler, så tallene er regnet uten (vises med «‡») */ reserveNevner?: boolean;
 }
 
 const nf = (v: number | null | undefined, d = 1) => v == null || !Number.isFinite(v) ? '–' : v.toLocaleString('nb-NO', { minimumFractionDigits: d, maximumFractionDigits: d });
@@ -193,6 +194,7 @@ function Kart({ enheter, v, sett, maksPerAar }: { enheter: KartEnhet[]; v: KartV
           <div><span>Artikler {h.e.fra === h.e.til ? h.e.fra : `${h.e.fra}–${h.e.til}`}</span><b>{nf(h.e.artikler, 0)}</b></div>
           {v.maal !== 'p4' && <div><span>AJG 4+ per 100 årsverk</span><b>{nf(h.e.p4, 1)}</b></div>}
           {h.e.annenPeriode && <span className="muted">Annen periode enn valgt</span>}
+          {h.e.reserveNevner && <span className="muted">‡ Regnet uten stipendiater (tallet med finnes ikke)</span>}
           <span className="muted">Klikk for detaljer, kilde og forbehold</span>
         </div>
       )}
@@ -221,7 +223,8 @@ export function NordenKart({ enheter, uten, v, std, sett, aar, apneProfil, apneA
   const valgt = enheter.find((e) => e.id === v.valgt) ?? null;
   const norske = vist.filter((e) => e.land === 'NO' && !e.referanse && verdiAv(e, v.maal) != null);
   const topNorsk = [...norske].sort((a, b) => m.lavBest ? (verdiAv(a, v.maal)! - verdiAv(b, v.maal)!) : (verdiAv(b, v.maal)! - verdiAv(a, v.maal)!))[0];
-  const toppAlle = sortert.find((e) => !e.referanse && verdiAv(e, v.maal) != null);
+  // Ingressen trekker ikke fram enheter regnet med reservenevner (‡), som er mindre sammenlignbare
+  const toppAlle = sortert.find((e) => !e.referanse && !e.reserveNevner && verdiAv(e, v.maal) != null);
   const hh = enheter.find((e) => e.meg);
   const tre = Array.from({ length: yN - y0 - 1 }, (_, i) => yN - i);
   const sel = { padding: '5px 8px', minWidth: 0 } as const;
@@ -230,8 +233,8 @@ export function NordenKart({ enheter, uten, v, std, sett, aar, apneProfil, apneA
   const rLeg = (n: number) => Math.max(4, 24 * Math.sqrt(n / maksPerAar));
   // Tabellkolonner: valgt mål først, så den synes på mobil uten sidelengs rulling
   const KOL: { id: KartMaal | 'art' | 'per'; label: string; title: string; vis: (e: KartEnhet) => string }[] = [
-    { id: 'p4', label: 'AJG 4+ /100', title: KART_MAAL.p4.title, vis: (e) => nf(e.p4, 1) },
-    { id: 'p3', label: 'AJG 3+ /100', title: KART_MAAL.p3.title, vis: (e) => nf(e.p3, 1) },
+    { id: 'p4', label: 'AJG 4+ /100', title: KART_MAAL.p4.title, vis: (e) => nf(e.p4, 1) + (e.reserveNevner && e.p4 != null ? ' ‡' : '') },
+    { id: 'p3', label: 'AJG 3+ /100', title: KART_MAAL.p3.title, vis: (e) => nf(e.p3, 1) + (e.reserveNevner && e.p3 != null ? ' ‡' : '') },
     { id: 'poeng', label: 'Poeng/årsv.', title: KART_MAAL.poeng.title, vis: (e) => nf(e.poeng, 2) },
     { id: 'plass', label: 'Plass', title: KART_MAAL.plass.title, vis: (e) => e.plass != null ? String(e.plass) : '–' },
     { id: 'art', label: 'Artikler', title: 'Vitenskapelige artikler i perioden (Norge: NVI-rapporterte)', vis: (e) => nf(e.artikler, 0) },
@@ -304,6 +307,7 @@ export function NordenKart({ enheter, uten, v, std, sett, aar, apneProfil, apneA
             <div className="kart-skala">
               <span><svg width="16" height="16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" className="kart-sirkel c3" /></svg>Norge: NVA og DBH</span>
               <span><svg width="16" height="16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" className="kart-sirkel c3 anslag" /><circle cx="8" cy="8" r="6.5" fill="url(#kart-skravur)" className="kart-skr-flate" /></svg>Anslag (andre land)</span>
+              {v.nevner === 'uff' && <span title="Nevneren med stipendiater/doktorander finnes ikke for enheten (de fleste svenske), så tallet er regnet uten. Det gir noe høyere tall per 100.">‡ regnet uten stipendiater (reserve)</span>}
             </div>
           </div>
         </div>
@@ -338,7 +342,7 @@ export function NordenKart({ enheter, uten, v, std, sett, aar, apneProfil, apneA
         <span className="lab">Om kartet</span>
         <ul>
           <li><b>Norge:</b> samme beregning som AJG-sammenligningen: NVI-rapporterte artikler i NVA koblet mot AJG 2024 på ISSN, hel telling, sum artikler / sum faglige årsverk (DBH 225, UN1 + UN2, eller UN1 + postdoktorer med «uten») × 100 for perioden. Poeng per årsverk = sum publiseringspoeng / sum faglige årsverk med samme nevner. Plass følger vektene i «Rangering og vekter».</li>
-          <li><b>Danmark, Sverige og Finland</b> er foreløpige anslag fra utforskningsrapportene 7.10.2026 (data/rangering/inspirasjon/norden-*.md): Danmark er enhetsavgrenset i Pure (2024; CBS også 2023–2025), Sverige enhetsavgrenset i SwePub (2023–2025), Finland fagfeltavgrenset (511 + 512, Vipunen/Research.fi). Nevneren finnes ikke for alle: danske institutter har ingen åpen nevner, og i Sverige finnes nevner med doktorander bare for SSE, LUSEM og GU (velg «uten» under «Per 100» for de andre). Tallene er ikke kontrollert mot skolenes egne og er ikke del av rangeringen.</li>
+          <li><b>Danmark, Sverige og Finland</b> er foreløpige anslag fra utforskningsrapportene 7.10.2026 (data/rangering/inspirasjon/norden-*.md): Danmark er enhetsavgrenset i Pure (2024; CBS også 2023–2025), Sverige enhetsavgrenset i SwePub (2023–2025), Finland fagfeltavgrenset (511 + 512, Vipunen/Research.fi). Nevneren finnes ikke for alle: danske institutter har ingen åpen nevner, og i Sverige finnes nevner med doktorander bare for SSE, LUSEM og GU. De andre svenske vises med nevneren uten doktorander som reserve, merket ‡ (gir noe høyere tall per 100 enn med). Tallene er ikke kontrollert mot skolenes egne og er ikke del av rangeringen.</li>
           <li><b>Kartgrunnlag:</b> Natural Earth 1:50m (offentlig eiendom) via world-atlas (ISC-lisens), forenklet og tegnet som innebygd SVG. Kartet henter ingenting fra eksterne tjenester. Sirklene står ved hovedcampus; skoler med flere studiesteder har ett punkt.</li>
         </ul>
       </section>

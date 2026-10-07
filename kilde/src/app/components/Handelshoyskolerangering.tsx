@@ -2354,20 +2354,24 @@ function KartFane({ data, rader, v, std, sett, apneProfil, apneAjg }: KartFanePr
         typ === 'pst' ? `${nf(num(k), 0)} %` : typ === 'n' ? nf(num(k), 0) : nf(num(k), k.startsWith('ft') ? 2 : 1)]);
       const ek = e.enhetskontroll;
       if (ek && ek.artikler != null) ekstra.push([`Kontroll med enhetsavgrensning ${ek.fra}–${ek.til}`, `${nf(ek.artikler, 0)} artikler, ${nf(ek.ajg4, 0)} AJG 4/4*, ${nf(ek.ajg3, 0)} AJG 3+`]);
-      const hale = v.nevner === 'uff' ? '' : 'UtenStip';
+      // Mangler nevneren med stipendiater/doktorander (de fleste svenske), brukes nevneren uten som reserve, merket ‡
+      const reserve = v.nevner === 'uff' && num('ajg4Per100') == null && num('ajg4Per100UtenStip') != null;
+      const hale = v.nevner === 'uff' && !reserve ? '' : 'UtenStip';
       const BER: Record<string, string> = { ajg3Per100: 'AJG 3+ per 100', ajg4Per100: 'AJG 4/4* per 100', artiklerPer100: 'artikler per 100', ajg4sPer100: 'AJG 4* per 100', ajg3Per100UtenStip: 'AJG 3+ per 100 uten stipendiater', ajg4Per100UtenStip: 'AJG 4/4* per 100 uten stipendiater' };
       const ber = (p.beregnet ?? []).filter((k) => k === 'artiklerPer100' || k === 'ajg4sPer100' || k.endsWith('Per100' + hale));
       const beregnet = ber.length ? [`Regnet av oss fra rapportens antall og nevner: ${ber.map((k) => BER[k] ?? k).join(', ')}.`] : [];
-      const arsv = num(v.nevner === 'uff' ? 'arsverk' : 'arsverkUtenStip');
+      const arsv = num(hale === '' ? 'arsverk' : 'arsverkUtenStip');
       ut.push({
         id: e.id, navn: e.navn, kort: e.kort, land: l.land, landNavn: l.landNavn, by: e.by, lat: e.lat, lon: e.lon, referanse: !!e.referanse, meg: false, anslag: p.anslag !== false,
         fra: p.fra, til: p.til, annenPeriode: p.fra !== v.fra || p.til !== v.til, artikler: num('artikler'),
         n4: num('ajg4'), n3: num('ajg3'), p4: num('ajg4Per100' + hale), p3: num('ajg3Per100' + hale), arsverk: arsv != null ? arsv / ar : null,
         poeng: null, plass: null, plassAv: null,
         avgrensning: `${l.metode.avgrensningKort ? l.metode.avgrensningKort + '. ' : ''}${l.metode.avgrensning ?? ''}`,
-        nevner: num('ajg4Per100' + hale) != null ? `${v.nevner === 'uff' ? 'med' : 'uten'} stipendiater/doktorander. ${l.metode.nevner ?? ''}` : `ingen nevner ${v.nevner === 'uff' ? 'med' : 'uten'} doktorander for enheten, så bare antall vises${v.nevner === 'uff' && num('ajg4Per100UtenStip') != null ? ' (velg «uten» under «Per 100»)' : ''}. ${l.metode.nevner ?? ''}`,
+        reserveNevner: reserve,
+        nevner: reserve ? `uten stipendiater/doktorander (‡): nevneren med doktorander finnes ikke for enheten, så tallet uten brukes som reserve og er ikke helt sammenlignbart med de norske. ${l.metode.nevner ?? ''}`
+          : num('ajg4Per100' + hale) != null ? `${v.nevner === 'uff' ? 'med' : 'uten'} stipendiater/doktorander. ${l.metode.nevner ?? ''}` : `ingen nevner ${v.nevner === 'uff' ? 'med' : 'uten'} doktorander for enheten, så bare antall vises${v.nevner === 'uff' && num('ajg4Per100UtenStip') != null ? ' (velg «uten» under «Per 100»)' : ''}. ${l.metode.nevner ?? ''}`,
         kilde: `${p.kilde ? p.kilde + '. ' : ''}Utforskningsrapport ${l.lest ?? ''} (${l.rapport ?? ''}). ${l.metode.telling ?? ''}`.trim(),
-        forbehold: [...(e.forbehold ?? []), ...beregnet, ...l.forbehold],
+        forbehold: [...(reserve ? ['‡ Nevneren er uten stipendiater/doktorander fordi tallet med ikke finnes. Uten stipendiater gir høyere tall per 100 enn med, så enheten ser noe sterkere ut enn den ville gjort med samme nevner som Norge.'] : []), ...(e.forbehold ?? []), ...beregnet, ...l.forbehold],
         akk: (e.akkrediteringer ?? []).filter((a) => !/ikke/i.test(a.status ?? '')).map((a) => a.type + (a.aar ? ` (${a.aar})` : '')), ekstra,
       });
     }
