@@ -113,6 +113,18 @@ Excel-filer eller PDF-er fra ResearchGate, Scribd eller lignende.
   - **Merk:** Chartered ABS skriver selv at guiden ikke skal brukes til å vurdere enkeltpersoners forskning. En
     skolerangering på aggregert nivå er nærmere tiltenkt bruk, men bør sitere forbeholdet.
 
+### 4b. Avtalt uthenting av AJG 2024 (07.10.2026)
+
+Chartered ABS svarte Mathias (gjengitt av ham 07.10.2026):
+
+> «We are able to let you pick out the information from our 2024 list if that is done in a normal "human" fashion.
+> If you use 70+ seconds for each change of page, that would be ok for us.»
+
+Uthentingen ble gjort fra Mathias' innloggede økt på charteredabs.org (Academic Journal Guide 2024, tabellvisning,
+50 rader per side, 1 823 tidsskrift), side for side med minst 70 sekunder mellom hvert sideskifte, og lagret i
+`ajg2024.csv` (gitignored). Tillatelsen til å bruke lista i verktøyet gjaldt i utgangspunktet én uke fra 03.10.2026.
+Slett fila når bruken ikke lenger er avtalt.
+
 ## 5. Det norske systemet: endringer for publikasjoner fra 2024 og 2025
 
 - **Publiseringspoeng er tatt ut av UH-finansieringen fra 2025.** Pengene følger ikke lenger poengene i UH-sektoren,

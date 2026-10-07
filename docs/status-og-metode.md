@@ -836,3 +836,13 @@ KI-chat og uten «Spør KI» (`utenKi` på `AfModulSide`). Grunnen er at metoden
   `rapport.ajgUsjekket`) og telles verken som AJG eller «ikke på AJG»; «Slik rapporterer skolene» viser kolonnen «Sjekket».
   Testet ende til ende med syntetiske verdier (slettet). Skraping av AJG er ikke gjort (vilkårene forbyr det).
   Rekkefølge: HH NMBU (pilot) → NHH og BI (kontroll mot NHH-rapporten og BIs tall) → resten.
+- **07.10 – AJG 2024 hentet ut (avtalt med Chartered ABS):** Chartered ABS tillot «human»-uthenting med 70+ sekunder per
+  sideskifte (ordlyd i `data/rangering/tidsskrift/kilder.md` §4b). Alle 37 sider (1 823 tidsskrift) lest fra Mathias'
+  innloggede økt med ~72 s mellom sideskiftene; felt (ISSN, eISSN, fagfelt, tittel, AJG 2024, AJG 2021) i
+  `tidsskrift/ajg-uthenting/side-NN.tsv` og `tidsskrift/ajg2024.csv` (begge gitignored). Kontroll: 4/4* = 145, 3 = 324
+  (metodedokumentet 323; tabellen har 1 823 mot 1 822), 2 = 565, 1 = 789; alle ISSN gyldige. AJG 2021-kolonnen er usikker der
+  bare én karakter står (tom), og brukes ikke. **Validering mot NHH Research Report:** 2024 treffer nesten eksakt for alle
+  åtte skolene (NHH 18/28/60 mot 18/27/60, BI 26/50/60 mot 26/47/60, UiS/UiA/UiT likt); 2020–2023 avviker fordi NHH trolig
+  brukte AJG-versjonen som gjaldt da, mens vi bruker AJG 2024 for alle år (Mathias' valg). BI 2025 4+4*: 64 mot BIs 63.
+  Ny standardrangering: UiA 76, NHH 76, UiS 76, BI 75, NTNU 67, HH NMBU 48. NB: «Tidsskriftene bak Topp» viser AJG-nivå per
+  tidsskrift for de listede tidsskriftene (internt, passordbeskyttet).
