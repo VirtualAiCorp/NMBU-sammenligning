@@ -828,3 +828,11 @@ KI-chat og uten «Spør KI» (`utenKi` på `AfModulSide`). Grunnen er at metoden
 - **Sammenligning:** ingen andre institusjoner i HH-sammenligningene har en master i bioøkonomi (søk i DBH 347). NTNUs Master of Science in Circular Economy (MSCE, Fakultet for ingeniørvitenskap) er tatt med som svakere sammenligning (default false); den har ingen rader i DBH 379 (lokalt opptak) og få kandidater i emnene.
 - **Kjøring:** `make-hh-programkart.py`, `fill-local-admissions.py hh`, `build-faculty.sh hh`, `build-completion.py hh`, `build-students.py hh`, `build-studiebarometer.py hh`, `build-oppmote.py --fak hh`, `build-revenue.py`, `build-staff.py`, `build-economy.py`, `build-ki-grunnlag.py`. Arbeidsmarkeds- og landssnittkoblingen har ingen oppføring for gruppen.
 - **KI-grunnlaget:** §42 (den interne rangeringen) holdes utenfor (`UTELAT`), og kildevakten stopper bygget hvis rangeringen nevnes i grunnlaget.
+- **07.10 – AJG 2024 for alle år (Mathias), oppslag for hånd som reserve:** `scripts/rangering/lag_ajg_oppslag.py` →
+  `data/rangering/tidsskrift/ajg-oppslag.xlsx` (gitignored): de 2 594 tidsskriftene de 15 skolene publiserte NVI-artikler i
+  2020–25, prioritet 1 = på ABDC eller FT50/UTD24 (1 046 tidsskrift, 54 % av artiklene; de 400 første dekker 79 % av dem),
+  kolonne «HH NMBU» for piloten, gul kolonne «AJG 2024» med valg 1/2/3/4/4*/ikke. `ajg_til_csv.py` leser arket («ikke»
+  beholdes). Delvis liste (`lister.ajgDelvis`): tidsskrift som ikke er slått opp er «usjekket» (komb-felt «?»,
+  `rapport.ajgUsjekket`) og telles verken som AJG eller «ikke på AJG»; «Slik rapporterer skolene» viser kolonnen «Sjekket».
+  Testet ende til ende med syntetiske verdier (slettet). Skraping av AJG er ikke gjort (vilkårene forbyr det).
+  Rekkefølge: HH NMBU (pilot) → NHH og BI (kontroll mot NHH-rapporten og BIs tall) → resten.

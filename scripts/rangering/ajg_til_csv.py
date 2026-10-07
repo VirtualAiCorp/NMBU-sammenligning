@@ -18,6 +18,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 UT = ROOT / "data" / "rangering" / "tidsskrift" / "ajg2024.csv"
 NIVAER = {"1", "2", "3", "4", "4*"}
+# Fra oppslagsarket (lag_ajg_oppslag.py): «ikke» = sjekket, står ikke på AJG 2024. Tomme celler = ikke sjekket.
+IKKE = {"ikke", "nei", "-", "–"}
 
 
 def issn(v):
@@ -57,18 +59,20 @@ def main():
         sys.exit(__doc__)
     alle = list(rader(Path(sys.argv[1])))
     kol = list(alle[0].keys())
-    k_t = finn(kol, r"journal.?title", r"^title$", r"tittel")
+    k_t = finn(kol, r"journal.?title", r"^title$", r"tittel", r"tidsskrift")
     k_e = finn(kol, r"e.?issn", r"online.?issn", r"eissn")
     k_p = finn(kol, r"^issn$", r"print.?issn", r"issn", unntak=r"e.?issn|online")
     k_f = finn(kol, r"^field$", r"subject", r"fagfelt", r"field")
-    k_n = finn(kol, r"ajg.?2024", r"^ajg", r"rating")
+    k_n = finn(kol, r"ajg.?2024", r"^ajg", r"rating", unntak=r"artikler")
     if not (k_p and k_n):
         sys.exit(f"Fant ikke ISSN- eller nivåkolonne i {kol}")
     print("Kolonner:", {"tittel": k_t, "issn": k_p, "eissn": k_e, "fagfelt": k_f, "nivå": k_n})
     ut, sett = [], set()
     for r in alle:
         niva = str(r.get(k_n, "")).strip().replace(" ", "")
-        if niva not in NIVAER:
+        if niva.lower() in IKKE:
+            niva = "ikke"
+        elif niva not in NIVAER:
             continue
         p, e = issn(r.get(k_p)), issn(r.get(k_e)) if k_e else ""
         if not (p or e) or (p, e) in sett:

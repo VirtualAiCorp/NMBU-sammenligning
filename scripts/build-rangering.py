@@ -227,6 +227,12 @@ def main():
         "ajgA": les_liste("ajg-anslag.csv", "anslag"),
     }
     print("Tidsskriftlister:", {k: (len(v) if v else "mangler") for k, v in lister.items()})
+    # Delvis AJG-liste: fylt inn for hånd (lag_ajg_oppslag.py) med «ikke» for sjekkede tidsskrift som ikke står på AJG.
+    # Da betyr «ikke i fila» at tidsskriftet ikke er sjekket ennå, og det skal ikke telles som «ikke på AJG».
+    ajg_delvis = bool(lister["ajg"]) and any(v[0] == "ikke" for v in lister["ajg"].values())
+    if lister["ajg"]:
+        print(f"AJG 2024: {sum(v[0] in AJG_NIVAER for v in lister['ajg'].values())} ISSN med nivå"
+              + (f", {sum(v[0] == 'ikke' for v in lister['ajg'].values())} sjekket uten nivå (delvis liste)" if ajg_delvis else " (hel liste)"))
 
     # ── DBH ──
     st = blc.fetch_dbh({"tabell_id": 220, "api_versjon": 1, "statuslinje": "J", "kodetekst": "J", "desimal_separator": ".",
@@ -353,9 +359,12 @@ def main():
                 iss = [i for i in (issn(x.get("issn")), issn(x.get("eissn"))) if i]
                 treff = lambda L: next((L[i] for i in iss if L and i in L), None)  # noqa: E731
                 tj = treff(lister["ajg"])
+                # AJG-nivå: «1»–«4*», «ikke» (ikke på AJG 2024) eller «usjekket» (manuelt oppslag ikke kommet hit ennå)
+                ajgv = None
                 if lister["ajg"]:
-                    ajg[tj[0] if tj else "ikke"] += 1
-                    if tj and tj[1] and int(aar) >= 2020:
+                    ajgv = tj[0] if tj and tj[0] in AJG_NIVAER else "ikke" if tj or not ajg_delvis else "usjekket"
+                    ajg[ajgv] += 1
+                    if ajgv in AJG_NIVAER and tj[1] and int(aar) >= 2020:
                         fag[tj[1]] += 1
                 tb = treff(lister["abdc"])
                 abdc[tb[0] if tb else "ikke"] += 1
@@ -370,7 +379,7 @@ def main():
                 andel = (x.get("egne") or 0) / max(x.get("forfattere") or 1, 1)
                 # Femte felt: «v» = rapportert til NVI (samme grunnlag som HK-dir/DBH teller), «x» = ikke rapportert
                 nokkel = "|".join([niva, tb[0] if tb else "-", ("fu" if ft and ut else "f" if ft else "u" if ut else "-"),
-                                   (tj[0] if tj else "-") if lister["ajg"] else "?", "v" if nvi else "x"])
+                                   ((ajgv if ajgv in AJG_NIVAER else "?" if ajgv == "usjekket" else "-") if lister["ajg"] else "?"), "v" if nvi else "x"])
                 k = komb[nokkel]; k[0] += 1; k[1] += andel
                 # Slik skolene rapporterer: hel telling, bare NVI-rapporterte artikler
                 if nvi:
@@ -379,18 +388,20 @@ def main():
                     rap["ft50gml"] += bool(treff(lister["ft50gml"]))
                     if tb:
                         rap["abdc" + tb[0]] += 1
-                    if tj:
-                        rap["ajg" + tj[0]] += 1
+                    if ajgv in AJG_NIVAER:
+                        rap["ajg" + ajgv] += 1
+                    elif ajgv == "usjekket":
+                        rap["ajgUsjekket"] += 1
                     if ta and ta[0] in ("topp", "3"):
                         rap["ajgA" + ta[0]] += 1
                     rap["niva" + niva] += 1
                 # Hva som gir Topp-trinnet: FT50 (F), UTD24 (U), ABDC A* (A), AJG 4/4* (J); norsk nivå etter «|»
-                fl_ = ("F" if ft else "-") + ("U" if ut else "-") + ("A" if tb and tb[0] == "A*" else "-") + ("J" if tj and tj[0] in ("4", "4*") else "-")
+                fl_ = ("F" if ft else "-") + ("U" if ut else "-") + ("A" if tb and tb[0] == "A*" else "-") + ("J" if ajgv in ("4", "4*") else "-")
                 if fl_ != "----":
                     tk = toppKomb[fl_ + "|" + niva + "|" + ("v" if nvi else "x")]; tk[0] += 1; tk[1] += andel
-                if ft or ut or (tj and tj[0] in ("4", "4*")) or (tb and tb[0] == "A*"):
+                if ft or ut or ajgv in ("4", "4*") or (tb and tb[0] == "A*"):
                     topp.append({"aar": int(aar), "tittel": x.get("tittel"), "tidsskrift": x.get("tidsskrift"),
-                                 "ajg": tj[0] if tj else None, "abdc": tb[0] if tb else None, "ft50": ft, "utd24": ut,
+                                 "ajg": ajgv if ajgv in AJG_NIVAER else None, "abdc": tb[0] if tb else None, "ft50": ft, "utd24": ut,
                                  "niva": niva, "nvi": bool(x.get("nvi"))})
             per_aar[aar] = {"n": s["n"], "nvi": s["nvi"], "intlAndel": r1(100 * s["intl"] / s["n"]) if s["n"] else None,
                             "forfatterandel": r1(s["andel"]),
@@ -503,7 +514,7 @@ def main():
     kontroll = lag_kontroll(ut_skoler)
     data = {"versjon": 1, "generert": dt.date.today().isoformat(), "aar": [Y0, Y1], "kontroll": kontroll,
             "ajgNhh": {k: v for k, v in (ajg_nhh or {}).items() if k != "skoler"} or None,
-            "lister": {k: bool(v) for k, v in lister.items()}, "skoler": ut_skoler}
+            "lister": {**{k: bool(v) for k, v in lister.items()}, "ajgDelvis": ajg_delvis}, "skoler": ut_skoler}
     if a.klartekst:
         KLAR.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
         print(f"Skrev {KLAR.relative_to(ROOT)} (klartekst, gitignored).")

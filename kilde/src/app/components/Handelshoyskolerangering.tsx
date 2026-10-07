@@ -30,7 +30,7 @@ interface Skole {
 }
 interface AjgNhhMeta { kilde: string; url: string; liste: string; nevner: string; usikker: Record<string, number[]>; sider: Record<string, number>; }
 interface Kontroll { skole: string; enhet?: string | null; enhetNavn?: string | null; aar: number | null; maal: string; verdi: number | string | null; nevner?: string | null; kilde?: string | null; url?: string | null; side?: number | string | null; merknad?: string | null; vaar?: number | null; vaarAlt?: number | null; vaarNivaa?: string; avvikProsent?: number | null; traff?: 'hoved' | 'alt'; }
-interface Data { versjon: number; generert: string; aar: [number, number]; lister: Record<'ajg' | 'abdc' | 'ft50' | 'utd24', boolean> & { ajgA?: boolean }; skoler: Skole[]; kontroll?: Kontroll[]; ajgNhh?: AjgNhhMeta | null; }
+interface Data { versjon: number; generert: string; aar: [number, number]; lister: Record<'ajg' | 'abdc' | 'ft50' | 'utd24', boolean> & { ajgA?: boolean; /** AJG fylt inn for hånd: tidsskrift uten oppslag er «usjekket», ikke «ikke på AJG» */ ajgDelvis?: boolean }; skoler: Skole[]; kontroll?: Kontroll[]; ajgNhh?: AjgNhhMeta | null; }
 
 /** Eget nettsted med bare rangeringen (VITE_KUN_RANGERING=1) har egen datafil og eget passord (RANGERING_PASSORD). */
 const KUN_RANGERING = import.meta.env.VITE_KUN_RANGERING === '1';
@@ -777,7 +777,7 @@ function Publisering({ data }: { data: Data }) {
   const sekv = liste === 'ajg' ? ['#C9C4BC', '#CFE6DF', '#9FCFC2', '#5FA996', '#2E7D6B', '#014238'] : ['#C9C4BC', '#CFE6DF', '#8CC4B5', '#3F8E7B', '#014238'];
   const fordeling = data.skoler.filter((s) => !s.referanse).map((s) => {
     const t: Record<string, number> = {}; let n = 0;
-    for (const y of perAar) { const a = s.artikler[y]; const L = a?.[liste]; if (!L) continue; for (const [k, v] of Object.entries(L)) { t[k] = (t[k] ?? 0) + v; n += v; } }
+    for (const y of perAar) { const a = s.artikler[y]; const L = a?.[liste]; if (!L) continue; for (const [k, v] of Object.entries(L)) { if (k === 'usjekket') continue; t[k] = (t[k] ?? 0) + v; n += v; } }
     return { navn: s.kort, isNmbu: s.isNmbu, n, ...Object.fromEntries(nivaer.map((k) => [k, n ? 100 * (t[k] ?? 0) / n : 0])) };
   }).filter((r) => r.n > 0).sort((a, b) => (b as Record<string, number>)[nivaer[nivaer.length - 1]] + (b as Record<string, number>)[nivaer[nivaer.length - 2]] - ((a as Record<string, number>)[nivaer[nivaer.length - 1]] + (a as Record<string, number>)[nivaer[nivaer.length - 2]]));
   const MAAL = { poengPerUff: 'Poeng per faglig årsverk (UFF)', niva2AndelFa: 'Andel nivå 2, HK-dir (% av forfatterandelene)', publPoeng: 'Publiseringspoeng' } as const;
@@ -879,7 +879,7 @@ function SlikRapporterer({ data, lag }: { data: Data; lag: Lag }) {
     const ft = ftVer === '2026' ? g('ft50') : g('ft50gml');
     return { s, arsv, nvi: g('nvi'), ft, utd: g('utd24'), ftUtd: g('ftUtd'), aS: g('abdcA*'), a: g('abdcA'),
       j4s: g('ajg4*'), j4: g('ajg4'), j3: g('ajg3'), anT: g('ajgAtopp'), an3: g('ajgA3'), intl: g('intl'),
-      nhh4s: nhh('4*'), nhh4: nhh('4'), nhh3: nhh('3') };
+      nhh4s: nhh('4*'), nhh4: nhh('4'), nhh3: nhh('3'), ajgSjekket: harAjg && g('nvi') ? 100 * (1 - g('ajgUsjekket') / g('nvi')) : null };
   }).sort((a, b) => (b.ftUtd + b.aS) - (a.ftUtd + a.aS));
   const vis = (n: number | null, arsv: number | null) => n == null ? '–' : per100 ? (arsv ? nf(100 * n / arsv, 1) : '–') : nf(n, 0);
 
@@ -998,7 +998,7 @@ function SlikRapporterer({ data, lag }: { data: Data; lag: Lag }) {
               <th colSpan={2} />
               <th colSpan={3} className="px-2 pt-2 text-center" style={thS}>FT og UT Dallas</th>
               <th colSpan={2} className="px-2 pt-2 text-center" style={thS}>ABDC 2025</th>
-              <th colSpan={3} className="px-2 pt-2 text-center" style={thS}>{harAjg ? 'AJG 2024 (egen kobling)' : 'AJG 2024'}</th>
+              <th colSpan={data.lister.ajgDelvis ? 4 : 3} className="px-2 pt-2 text-center" style={thS}>{harAjg ? (data.lister.ajgDelvis ? 'AJG 2024 (slått opp for hånd, delvis)' : 'AJG 2024 (egen kobling)') : 'AJG 2024'}</th>
               <th colSpan={3} className="px-2 pt-2 text-center" style={thS}>AJG i NHHs forskningsrapport</th>
               <th />
             </tr>
@@ -1012,6 +1012,7 @@ function SlikRapporterer({ data, lag }: { data: Data; lag: Lag }) {
               <th className="px-2 py-2 text-right" style={thS}>A</th>
               {harAjg ? <>
                 <th className="px-2 py-2 text-right" style={thS}>4*</th><th className="px-2 py-2 text-right" style={thS}>4</th><th className="px-2 py-2 text-right" style={thS}>3</th>
+                {data.lister.ajgDelvis && <th className="px-2 py-2 text-right" style={thS} title="Andel av skolens NVI-artikler der tidsskriftet er slått opp i AJG 2024">Sjekket</th>}
               </> : <>
                 <th className="px-2 py-2 text-right" style={{ ...thS, fontStyle: 'italic' }} title="Kalibrert anslag fra åpne lister, ikke AJG">≈ 4/4*</th>
                 <th className="px-2 py-2 text-right" style={{ ...thS, fontStyle: 'italic' }} title="Kalibrert anslag fra åpne lister, ikke AJG">≈ 3</th>
@@ -1033,6 +1034,7 @@ function SlikRapporterer({ data, lag }: { data: Data; lag: Lag }) {
                 <td className="px-2 py-1.5 text-right tabular-nums">{vis(r.a, r.arsv)}</td>
                 {harAjg ? <>
                   <td className="px-2 py-1.5 text-right tabular-nums">{vis(r.j4s, r.arsv)}</td><td className="px-2 py-1.5 text-right tabular-nums">{vis(r.j4, r.arsv)}</td><td className="px-2 py-1.5 text-right tabular-nums">{vis(r.j3, r.arsv)}</td>
+                  {data.lister.ajgDelvis && <td className="px-2 py-1.5 text-right tabular-nums" style={{ color: 'var(--nmbu-neutral-2)' }}>{r.ajgSjekket == null ? '–' : nf(r.ajgSjekket, 0) + ' %'}</td>}
                 </> : <>
                   <td className="px-2 py-1.5 text-right tabular-nums" style={{ fontStyle: 'italic', color: 'var(--nmbu-neutral-2)' }}>{vis(r.anT, r.arsv)}</td>
                   <td className="px-2 py-1.5 text-right tabular-nums" style={{ fontStyle: 'italic', color: 'var(--nmbu-neutral-2)' }}>{vis(r.an3, r.arsv)}</td>
@@ -1048,7 +1050,7 @@ function SlikRapporterer({ data, lag }: { data: Data; lag: Lag }) {
         </table>
         <div className="text-xs mt-3 grid gap-1" style={{ color: 'var(--nmbu-neutral-2)', maxWidth: '95ch' }}>
           <p><b>FT50:</b> lista ble revidert i april 2026 (inn: Academy of Management Annals, American Sociological Review, Psychological Science; ut: Human Relations, Journal of Business Ethics, Organization Studies). BI og FT-rangeringene har brukt 2016-lista for publikasjoner til og med 2025. Med den treffer vi BIs egne tall nesten eksakt (2024: 35 mot 34, 2023: 26 mot 26). UTD24 er nesten helt en del av FT50, så de fleste UTD24-artikler telles også i FT50.</p>
-          <p><b>AJG:</b> {harAjg ? 'Egen kobling mot AJG 2024 på ISSN.' : <>AJG 2024 er ikke lagt inn. Kolonnene i kursiv er et kalibrert anslag fra åpne lister (FT50/UTD24, eller ABDC A* med OpenAlex-sitering ≥ 5 for ≈ 4/4*), ikke AJG. Det treffer NHH og BI godt, men gir 2–5 ganger for mange for mindre skoler.</>} Tallene fra NHHs forskningsrapport er NHHs egen klassifisering av DBH-registreringer for åtte skoler 2020–2024. De er tomme for andre skoler og år, og spriker også med skolenes egne tall (BI oppgir 17 artikler i 4* i 2020, NHH-rapporten 12).</p>
+          <p><b>AJG:</b> {harAjg ? (data.lister.ajgDelvis ? 'AJG 2024 slått opp for hånd per tidsskrift og koblet på ISSN. Tidsskrift som ikke er slått opp ennå, telles verken som AJG eller som «ikke på AJG»; kolonnen «Sjekket» viser hvor stor del av artiklene som er dekket. AJG 2024 brukes for alle år.' : 'Egen kobling mot AJG 2024 på ISSN, brukt for alle år.') : <>AJG 2024 er ikke lagt inn. Kolonnene i kursiv er et kalibrert anslag fra åpne lister (FT50/UTD24, eller ABDC A* med OpenAlex-sitering ≥ 5 for ≈ 4/4*), ikke AJG. Det treffer NHH og BI godt, men gir 2–5 ganger for mange for mindre skoler.</>} Tallene fra NHHs forskningsrapport er NHHs egen klassifisering av DBH-registreringer for åtte skoler 2020–2024. De er tomme for andre skoler og år, og spriker også med skolenes egne tall (BI oppgir 17 artikler i 4* i 2020, NHH-rapporten 12).</p>
           <p><b>Per 100 årsverk</b> bruker valgt nevner{aar === 'fem' ? ' summert over årene' : ''}.</p>
         </div>
       </div>
