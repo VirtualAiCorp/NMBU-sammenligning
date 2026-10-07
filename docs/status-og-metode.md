@@ -892,3 +892,8 @@ Ny fane «AJG-sammenligning» i den interne rangeringen (`AjgSammenligning` i `H
 - **Rangeringen:** målet «AJG 4/4* per 100 årsverk» (ekte AJG, vekt 10) fantes allerede; vekter og standardrangering er uendret.
 - **Svakheter:** AJG 2024 brukt bakover; tidsskrift utenfor AJG telles ikke (dekning 26–72 %); ulike avgrensninger (NTNU, INN);
   HVL mangler årsverk i DBH før 2024 og HiØ før 2021, så vinduer med manglende år bruker snittet av årene som finnes.
+
+## 46. NTNU med IØT, og nevnervalg i AJG-sammenligningen (07.10.2026)
+
+- **NTNU i rangeringen** omfatter nå også Institutt for industriell økonomi og teknologiledelse (IØT; NVA 194.60.25.0, DBH 230240), etter ønske fra kollega. Ålesund (Institutt for internasjonal business) er fortsatt utenfor. NTNUs artikler er hentet på nytt fra NVA for 2016–2025. Effekt med standardvekter: NTNU 60 poeng (plass 5, fortsatt i toppgruppen); poeng per årsverk 2024 1,08 (før 1,19); AJG 4+ per 100 faglige årsverk 2023–2025 5,1 (før 8,1), fordi IØT gir mange årsverk og relativt få AJG 4/4*-artikler. Referansen `ntnu_ok` (hele fakultetet) er nå nesten den samme enheten.
+- **AJG-sammenligningen, «Per 100»:** faglige årsverk (HK-dir, UN1 + UN2; standard), faglige årsverk (NHH, UN1 + postdoktorer) eller alle årsverk (også teknisk-administrative). Overskrifter, tabell, graf og CSV følger valget; lenke `ajgnevner=utenstip|alle`. Antall personer uavhengig av stillingsprosent finnes ikke i DBHs åpne tabeller (DBH 225 oppgir også kvinner og menn i årsverk), så det er ikke med.
