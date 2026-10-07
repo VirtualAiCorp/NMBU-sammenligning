@@ -1,7 +1,7 @@
-import { Fragment, useEffect, useMemo, useState, type ReactNode } from 'react';
+import { Fragment, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import '../../styles/skoleportrett.css';
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
-import { Lock, Info, Trophy, BookOpen, Building2, FileText, RotateCcw, ShieldCheck, ExternalLink, Columns3, FlaskConical, Link2, Check, Newspaper, ClipboardList } from 'lucide-react';
+import { Lock, Info, Trophy, BookOpen, Building2, FileText, RotateCcw, ShieldCheck, ExternalLink, Columns3, FlaskConical, Link2, Check, Newspaper, ClipboardList, Layers, Download } from 'lucide-react';
 
 /**
  * Utkast til «Norwegian Business School Ranking» (intern, utforskende). Data fra scripts/build-rangering.py:
@@ -15,7 +15,8 @@ import { Lock, Info, Trophy, BookOpen, Building2, FileText, RotateCcw, ShieldChe
 interface DbhAar { arsverk: number | null; faglige: number | null; rekruttering: number | null; forsteAndel: number | null; studenter: number | null; publPoeng: number | null; publikasjoner: number | null; uff: number | null; utenStip?: number | null; poengPerUff: number | null; poengPerFaglig: number | null; niva2Andel: number | null; /** nivå 2 som andel av forfatterandelene (HK-dir, Tilstandsrapporten V15.3) */ niva2AndelFa?: number | null; /** nivå 2 som andel av publikasjonene (BIs variant) */ niva2AndelPubl?: number | null; studenterPerFaglig: number | null; }
 interface ArtAar { n: number; nvi: number; intlAndel: number | null; forfatterandel: number | null; niva: Record<'0' | '1' | '2' | 'u', number>; ajg: Record<string, number> | null; abdc: Record<string, number>; ft50: number; utd24: number; /** «niva|abdc|ft|ajg» → [antall, sum forfatterandel] */ komb?: Record<string, [number, number]>; /** kalibrert AJG-anslag, NVI-artikler */ ajgA?: { topp: number; '3': number; nvi: number };
   /** «FUAJ|nivå|v/x» → [antall, sum forfatterandel]: hvilke lister som gir Topp (FT50, UTD24, ABDC A*, AJG 4/4*) */ toppKomb?: Record<string, [number, number]>;
-  /** Slik skolene rapporterer: hel telling, bare NVI-rapporterte artikler (samme grunnlag som HK-dir/DBH) */ rapport?: Record<string, number | boolean>; }
+  /** Slik skolene rapporterer: hel telling, bare NVI-rapporterte artikler (samme grunnlag som HK-dir/DBH) */ rapport?: Record<string, number | boolean>;
+  /** AJG-fagfelt → [antall, antall 3+, antall 4/4*, forfatterandel, forfatterandel 3+, forfatterandel 4/4*], NVI-artikler i AJG-tidsskrift */ ajgFag?: Record<string, [number, number, number, number, number, number]> | null; }
 interface Topp { aar: number; tittel: string | null; tidsskrift: string | null; ajg: string | null; abdc: string | null; ft50: boolean; utd24: boolean; niva: string; nvi?: boolean; }
 interface Siv { aar: number | null; grense: number | null; estimert: boolean; merknad: string | null; url: string | null; }
 interface Utd { studiebarometerResp?: number | null; entryIds?: string[]; aar: number; program: number; plasser: number | null; forstevalg: number | null; fvPerPlass: number | null; poenggrenseMaks: number | null; poenggrenseMin: number | null; studiebarometer: number | null; normertTid: number | null; normertKull: number | null; }
@@ -241,14 +242,15 @@ function beregn(skoler: Skole[], ind: Ind[], vekt: Record<string, number>, forsk
 }
 
 // ── Tilstand i lenken (?rangering&…) ────────────────────────────────────────
-type Fane = 'forside' | 'rangering' | 'sammenlign' | 'lab' | 'publisering' | 'rapport' | 'profil' | 'kontroll' | 'metode';
-const FANER: Fane[] = ['forside', 'rangering', 'sammenlign', 'lab', 'publisering', 'rapport', 'profil', 'kontroll', 'metode'];
-interface Tilstand { fane: Fane; forsk: number; vekt: Record<string, number>; medRef: boolean; lag: Lag; valgt: string[]; profil: string; /** sammenligning i skoleportrettet */ mot: string | null; }
-const PARAM = ['rangering', 'fane', 'forsk', 'vekt', 'ref', 'periode', 'telling', 'nevner', 'lagvekt', 'lister', 'grunnlag', 'skoler', 'profil', 'mot'];
+type Fane = 'forside' | 'rangering' | 'sammenlign' | 'lab' | 'publisering' | 'rapport' | 'ajg' | 'profil' | 'kontroll' | 'metode';
+const FANER: Fane[] = ['forside', 'rangering', 'sammenlign', 'lab', 'publisering', 'rapport', 'ajg', 'profil', 'kontroll', 'metode'];
+interface Tilstand { fane: Fane; forsk: number; vekt: Record<string, number>; medRef: boolean; lag: Lag; valgt: string[]; profil: string; /** sammenligning i skoleportrettet */ mot: string | null; /** fanen AJG-sammenligning */ ajg: AjgValg; }
+const PARAM = ['rangering', 'fane', 'forsk', 'vekt', 'ref', 'periode', 'telling', 'nevner', 'lagvekt', 'lister', 'grunnlag', 'skoler', 'profil', 'mot',
+  'ajgperiode', 'ajgtelling', 'ajgnevner', 'ajgvis', 'ajgsort', 'ajgref', 'ajgskoler'];
 function lesTilstand(d: Data, ind: Ind[], std: Tilstand): Tilstand {
   const q = new URLSearchParams(window.location.search);
   if (!q.has('rangering')) return std;
-  const t: Tilstand = { ...std, vekt: { ...std.vekt }, lag: { ...std.lag, vekter: { ...std.lag.vekter } } };
+  const t: Tilstand = { ...std, vekt: { ...std.vekt }, lag: { ...std.lag, vekter: { ...std.lag.vekter } }, ajg: { ...std.ajg, skoler: [...std.ajg.skoler] } };
   const fane = q.get('fane') as Fane | null; if (fane && FANER.includes(fane)) t.fane = fane;
   const f = Number(q.get('forsk')); if (FORSK_TRINN.includes(f)) t.forsk = f;
   for (const del of (q.get('vekt') ?? '').split(',')) { const [id, v] = del.split(':'); if (ind.some((i) => i.id === id) && Number.isFinite(Number(v))) t.vekt[id] = Math.max(0, Math.min(40, Number(v))); }
@@ -262,6 +264,15 @@ function lesTilstand(d: Data, ind: Ind[], std: Tilstand): Tilstand {
   const sk = (q.get('skoler') ?? '').split(',').filter((id) => d.skoler.some((s) => s.id === id)); if (sk.length) t.valgt = sk.slice(0, 3);
   const pr = q.get('profil'); if (pr && d.skoler.some((s) => s.id === pr)) t.profil = pr;
   const mo = q.get('mot'); if (mo && d.skoler.some((s) => s.id === mo)) t.mot = mo;
+  // AJG-sammenligning: periode «2023-2025» eller ett år «2024»
+  const ap = (q.get('ajgperiode') ?? '').split('-').map(Number);
+  if (ap.length <= 2 && ap.every((x) => x >= d.aar[0] && x <= d.aar[1])) { t.ajg.fra = ap[0]; t.ajg.til = ap[ap.length - 1]; if (t.ajg.fra > t.ajg.til) t.ajg = { ...t.ajg, fra: std.ajg.fra, til: std.ajg.til }; }
+  if (q.get('ajgtelling') === 'brok') t.ajg.brok = true;
+  if (q.get('ajgnevner') === 'utenstip') t.ajg.nevner = 'utenStip';
+  if (q.get('ajgvis') === 'antall') t.ajg.per100 = false;
+  const as = q.get('ajgsort') as AjgSort | null; if (as && AJG_SORT.includes(as)) t.ajg.sort = as;
+  if (q.get('ajgref') === '1') t.ajg.ref = true;
+  if (q.has('ajgskoler')) t.ajg.skoler = (q.get('ajgskoler') ?? '').split(',').map((id) => d.skoler.some((s) => s.id === id) ? id : '').slice(0, AJG_MAKS_SKOLER);
   return t;
 }
 function skrivTilstand(t: Tilstand, std: Tilstand) {
@@ -282,6 +293,14 @@ function skrivTilstand(t: Tilstand, std: Tilstand) {
   if (!t.lag.abdc || !t.lag.ft || !t.lag.ajg) q.set('lister', [t.lag.abdc && 'abdc', t.lag.ft && 'ft', t.lag.ajg && 'ajg'].filter(Boolean).join(','));
   if (t.fane === 'sammenlign' || t.valgt.join(',') !== std.valgt.join(',')) q.set('skoler', t.valgt.join(','));
   if (t.fane === 'profil') { q.set('profil', t.profil); if (t.mot) q.set('mot', t.mot); }
+  const a = t.ajg, sa = std.ajg;
+  if (a.fra !== sa.fra || a.til !== sa.til) q.set('ajgperiode', a.fra === a.til ? String(a.fra) : `${a.fra}-${a.til}`);
+  if (a.brok) q.set('ajgtelling', 'brok');
+  if (a.nevner === 'utenStip') q.set('ajgnevner', 'utenstip');
+  if (!a.per100) q.set('ajgvis', 'antall');
+  if (a.sort !== sa.sort) q.set('ajgsort', a.sort);
+  if (a.ref) q.set('ajgref', '1');
+  if (a.skoler.join(',') !== sa.skoler.join(',')) q.set('ajgskoler', a.skoler.join(','));
   const s = q.toString().replace(/%2C/gi, ',').replace(/%3A/gi, ':').replace(/^rangering=(&|$)/, 'rangering$1').replace(/&rangering=(&|$)/, '&rangering$1');
   window.history.replaceState(window.history.state, '', `${window.location.pathname}?${s}${window.location.hash}`);
 }
@@ -340,7 +359,8 @@ function Rangering({ data }: { data: Data }) {
     const ind0 = lagIndikatorer(data, lag);
     const hh = data.skoler.find((s) => s.isNmbu)?.id ?? data.skoler[0].id;
     return { fane: 'forside', forsk: FORSK_STANDARD, vekt: Object.fromEntries(ind0.map((i) => [i.id, i.vekt])), medRef: false, lag,
-      valgt: [hh, ...['nhh', 'bi'].filter((id) => id !== hh && data.skoler.some((s) => s.id === id))].slice(0, 3), profil: hh, mot: null };
+      valgt: [hh, ...['nhh', 'bi'].filter((id) => id !== hh && data.skoler.some((s) => s.id === id))].slice(0, 3), profil: hh, mot: null,
+      ajg: ajgStandard(data, y1, hh) };
   }, [data, y1]);
   const [t, setT] = useState<Tilstand>(() => lesTilstand(data, lagIndikatorer(data, std.lag), std));
   const sett = (p: Partial<Tilstand>) => setT((x) => ({ ...x, ...p }));
@@ -363,6 +383,7 @@ function Rangering({ data }: { data: Data }) {
     { id: 'lab', label: 'Forskningslab', icon: <FlaskConical className="w-4 h-4" /> },
     { id: 'publisering', label: 'Publisering', icon: <BookOpen className="w-4 h-4" /> },
     { id: 'rapport', label: 'Slik rapporterer skolene', icon: <ClipboardList className="w-4 h-4" /> },
+    ...(harAjg ? [{ id: 'ajg' as Fane, label: 'AJG-sammenligning', icon: <Layers className="w-4 h-4" /> }] : []),
     { id: 'profil', label: 'Skoleportrett', icon: <Building2 className="w-4 h-4" /> },
     { id: 'kontroll', label: 'Kvalitetssikring', icon: <ShieldCheck className="w-4 h-4" /> },
     { id: 'metode', label: 'Metode og kilder', icon: <FileText className="w-4 h-4" /> },
@@ -394,6 +415,7 @@ function Rangering({ data }: { data: Data }) {
       {t.fane === 'lab' && <Forskningslab data={data} skoler={skoler} lag={t.lag} std={std.lag} setLag={(lag) => sett({ lag })} />}
       {t.fane === 'publisering' && <Publisering data={data} />}
       {t.fane === 'rapport' && <SlikRapporterer data={data} lag={t.lag} />}
+      {t.fane === 'ajg' && harAjg && <AjgSammenligning data={data} v={t.ajg} std={std.ajg} sett={(ajg) => sett({ ajg })} />}
       {t.fane === 'profil' && <Skoleportrett data={data} rader={rader} ind={ind} eff={eff} id={t.profil} setId={(id) => sett({ profil: id, mot: t.mot === id ? null : t.mot })} mot={t.mot} setMot={(id) => sett({ mot: id })} />}
       {t.fane === 'kontroll' && <KontrollFane data={data} />}
       {t.fane === 'metode' && <Metode data={data} ind={ind} />}
@@ -1753,6 +1775,481 @@ function KontrollFane({ data }: { data: Data }) {
           «Vårt» er regnet fra DBH på samme nivå som kilden (hele institusjonen eller handelshøyskolen), med kildens definisjon: poeng per årsverk inkl. stipendiater = UN1 + UN2 (HK-dir), ekskl. stipendiater = UN1 + postdoktorer (NHH); nivå 2-andel av poeng, forfatterandeler eller publikasjoner etter hva kilden oppgir. Er definisjonen uklar, vises begge variantene, og avviket regnes mot den nærmeste (✓ = den alternative). Foreløpige 2025-tall og institusjonssammenslåinger (INN) gir de største avvikene.
         </p>
       </div>
+    </div>
+  );
+}
+
+// ── Fane: AJG-sammenligning (07.10.2026) ─────────────────────────────────────
+// AJG 2024 (Chartered ABS) brukt for alle år, koblet på ISSN/eISSN mot NVI-rapporterte artikler i NVA. Alt regnes her fra
+// aggregatene byggeskriptet lager per skole og år (komb: nivåkombinasjon → [antall, forfatterandel]; ajgFag: per AJG-fagfelt).
+// Fanen viser bare aggregerte tall, ikke AJG-nivå per tidsskrift.
+type AjgNiva = '4*' | '4' | '3' | '2' | '1';
+const AJG_NIV: AjgNiva[] = ['4*', '4', '3', '2', '1'];
+const AJG_VERDI: Record<AjgNiva, number> = { '4*': 5, '4': 4, '3': 3, '2': 2, '1': 1 };
+type AjgSort = 'nvi' | 'n4s' | 'n4' | 'n3' | 'p4' | 'p3' | 'dekning' | 'a3' | 'a4' | 'snitt';
+const AJG_SORT: AjgSort[] = ['nvi', 'n4s', 'n4', 'n3', 'p4', 'p3', 'dekning', 'a3', 'a4', 'snitt'];
+const AJG_MAKS_SKOLER = 6;
+interface AjgValg {
+  fra: number; til: number; /** brøkdelt telling (enhetens andel av forfatterne) i stedet for hel */ brok: boolean;
+  /** uff = UN1 + UN2 (HK-dir), utenStip = UN1 + postdoktorer (NHH) */ nevner: 'uff' | 'utenStip';
+  /** per 100 årsverk og år i stedet for antall */ per100: boolean; sort: AjgSort; ref: boolean;
+  /** skolene i utviklingsgrafen; plassen i lista er fargen, og '' er en ledig plass (fargen følger skolen) */ skoler: string[];
+}
+function ajgStandard(d: Data, y1: number, hh: string): AjgValg {
+  return { fra: y1 - 2, til: y1, brok: false, nevner: 'uff', per100: true, sort: 'p4', ref: false,
+    skoler: [hh, 'nhh', 'bi', 'uia', 'uis'].filter((id, k, a) => a.indexOf(id) === k && d.skoler.some((s) => s.id === id)) };
+}
+interface AjgTall { nvi: number; per: Record<AjgNiva | 'ikke' | 'usjekket', number>; /** sum årsverk i perioden (valgt nevner) */ arsv: number | null; }
+function ajgTall(s: Skole, aar: string[], brok: boolean, nevner: 'uff' | 'utenStip'): AjgTall {
+  const per: AjgTall['per'] = { '4*': 0, '4': 0, '3': 0, '2': 0, '1': 0, ikke: 0, usjekket: 0 };
+  let nvi = 0;
+  for (const y of aar) {
+    for (const [nk, [n, frac]] of Object.entries(s.artikler[y]?.komb ?? {})) {
+      const del = nk.split('|');
+      if (del[4] !== 'v') continue; // bare NVI-rapporterte artikler (HK-dirs grunnlag)
+      const tell = brok ? frac : n;
+      nvi += tell;
+      const j = del[3];
+      if ((AJG_NIV as string[]).includes(j)) per[j as AjgNiva] += tell; else if (j === '?') per.usjekket += tell; else per.ikke += tell;
+    }
+  }
+  const xs = aar.map((y) => nevner === 'uff' ? s.dbh[y]?.uff : s.dbh[y]?.utenStip).filter((x): x is number => x != null);
+  return { nvi, per, arsv: xs.length ? xs.reduce((a, b) => a + b, 0) * aar.length / xs.length : null };
+}
+type AjgMaal = Record<AjgSort, number | null>;
+function ajgMaal(t: AjgTall, per100: boolean): AjgMaal {
+  // Per 100 årsverk og år: sum artikler i perioden delt på sum årsverk, ganger 100 (samme tall for ett år og et vindu)
+  const c = (x: number) => per100 ? (t.arsv ? 100 * x / t.arsv : null) : x;
+  const n4 = t.per['4*'] + t.per['4'], n3 = n4 + t.per['3'];
+  const ajg = AJG_NIV.reduce((a, k) => a + t.per[k], 0);
+  const vurdert = t.nvi - t.per.usjekket;
+  return { nvi: t.nvi, n4s: c(t.per['4*']), n4: c(t.per['4']), n3: c(t.per['3']), p4: c(n4), p3: c(n3),
+    dekning: vurdert > 0 ? 100 * ajg / vurdert : null, a3: ajg > 0 ? 100 * n3 / ajg : null, a4: ajg > 0 ? 100 * n4 / ajg : null,
+    snitt: ajg > 0 ? AJG_NIV.reduce((a, k) => a + AJG_VERDI[k] * t.per[k], 0) / ajg : null };
+}
+interface AjgKol { id: AjgSort; label: string; navn: string; title: string; type: 'nvi' | 'tell' | 'pst' | 'snitt'; stripe?: boolean; }
+const AJG_KOL: AjgKol[] = [
+  { id: 'nvi', label: 'NVI-artikler', navn: 'NVI-artikler', title: 'Vitenskapelige artikler rapportert til NVI (hel telling: antall; brøk: sum forfatterandeler)', type: 'nvi' },
+  { id: 'n4s', label: '4*', navn: 'AJG 4*', title: 'Artikler i tidsskrift på AJG 2024 nivå 4* (World Elite)', type: 'tell' },
+  { id: 'n4', label: '4', navn: 'AJG 4', title: 'Artikler i tidsskrift på AJG 2024 nivå 4', type: 'tell' },
+  { id: 'n3', label: '3', navn: 'AJG 3', title: 'Artikler i tidsskrift på AJG 2024 nivå 3', type: 'tell' },
+  { id: 'p4', label: '4+', navn: 'AJG 4+ (4 og 4*)', title: 'Artikler på AJG 2024 nivå 4 eller 4*', type: 'tell', stripe: true },
+  { id: 'p3', label: '3+', navn: 'AJG 3+ (3, 4 og 4*)', title: 'Artikler på AJG 2024 nivå 3, 4 eller 4*', type: 'tell', stripe: true },
+  { id: 'dekning', label: 'I AJG', navn: 'andel i AJG-tidsskrift', title: 'Dekning: andel av NVI-artiklene som står i et tidsskrift på AJG 2024', type: 'pst', stripe: true },
+  { id: 'a3', label: '3+ av AJG', navn: 'andel 3+ av AJG-artiklene', title: 'Andel av artiklene i AJG-tidsskrift som er på nivå 3 eller høyere', type: 'pst', stripe: true },
+  { id: 'a4', label: '4+ av AJG', navn: 'andel 4+ av AJG-artiklene', title: 'Andel av artiklene i AJG-tidsskrift som er på nivå 4 eller 4*', type: 'pst' },
+  { id: 'snitt', label: 'AJG-snitt*', navn: 'AJG-snitt (tilleggsmål)', title: 'Tilleggsmål: gjennomsnittlig AJG-nivå blant artiklene i AJG-tidsskrift, med 4* = 5, 4 = 4, 3 = 3, 2 = 2 og 1 = 1. Sier ingenting om artiklene utenfor AJG.', type: 'snitt', stripe: true },
+];
+const AJG_FAG: Record<string, string> = {
+  ACCOUNT: 'Regnskap', 'BUS HIST & ECON HIST': 'Bedrifts- og økonomisk historie', ECON: 'Samfunnsøkonomi', 'ENT-SBM': 'Entreprenørskap og småbedrifter',
+  'ETHICS-CSR-MAN': 'Etikk, samfunnsansvar og ledelse', FINANCE: 'Finans', 'HRM&EMP': 'HR og arbeidsliv', 'IB&AREA': 'Internasjonal forretningsdrift og områdestudier',
+  'INFO MAN': 'Informasjonssystemer og -ledelse', INNOV: 'Innovasjon', 'MDEV&EDU': 'Lederutvikling og utdanning', MKT: 'Markedsføring',
+  'OPS&TECH': 'Drift og teknologiledelse', 'OR&MANSCI': 'Operasjonsanalyse og ledelsesvitenskap', 'ORG STUD': 'Organisasjonsstudier',
+  'PSYCH (GENERAL)': 'Psykologi (generell)', 'PSYCH (WOP-OB)': 'Arbeids- og organisasjonspsykologi', 'PUB SEC': 'Offentlig sektor',
+  'REGIONAL STUDIES, PLANNING AND ENVIRONMENT': 'Regionalstudier, planlegging og miljø', SECTOR: 'Sektorstudier (bransjer)', 'SOC SCI': 'Samfunnsvitenskap', STRAT: 'Strategi',
+};
+const AJG_NIV_NAVN: Record<AjgNiva | 'ikke', string> = { '4*': '4*', '4': '4', '3': '3', '2': '2', '1': '1', ikke: 'Ikke på AJG' };
+
+/** Bredden til et element (for grafer som tegnes i piksler, så teksten ikke krymper på mobil). */
+function useBredde<T extends HTMLElement>(start = 720) {
+  const ref = useRef<T>(null);
+  const [w, setW] = useState(start);
+  useEffect(() => {
+    const el = ref.current; if (!el || typeof ResizeObserver === 'undefined') return;
+    const ro = new ResizeObserver(([e]) => setW(Math.max(260, Math.round(e.contentRect.width))));
+    ro.observe(el); return () => ro.disconnect();
+  }, []);
+  return [ref, w] as const;
+}
+
+/** Linjediagram med én farge per skole (fast plass i paletten), stiplet median, kryssmarkør og verktøytips. */
+function AjgLinjer({ aar, serier, median, label }: { aar: string[]; serier: { id: string; lab: string; v: (number | null)[]; k: number; meg: boolean }[]; median: (number | null)[]; label: string }) {
+  const [ref, W] = useBredde<HTMLDivElement>();
+  const [hov, setHov] = useState<number | null>(null);
+  const smal = W < 520;
+  const direkte = serier.length <= 4;
+  const H = smal ? 230 : 280, mg = { l: 34, r: direkte ? (smal ? 70 : 96) : 14, t: 12, b: 24 };
+  const iw = W - mg.l - mg.r, ih = H - mg.t - mg.b, n = aar.length;
+  const alle = [...serier.flatMap((s) => s.v), ...median].filter((v): v is number => v != null);
+  const maks0 = Math.max(0.5, ...alle) * 1.05;
+  const st = maks0 <= 2.5 ? 0.5 : maks0 <= 6 ? 1 : maks0 <= 15 ? 2 : maks0 <= 30 ? 5 : 10;
+  const ymax = Math.ceil(maks0 / st) * st;
+  const x = (i: number) => mg.l + (n > 1 ? i * iw / (n - 1) : iw / 2), y = (v: number) => mg.t + ih - v / ymax * ih;
+  const sti = (v: (number | null)[]) => { let d = '', pen = false; v.forEach((a, i) => { if (a == null) { pen = false; return; } d += `${pen ? 'L' : 'M'}${x(i).toFixed(1)} ${y(a).toFixed(1)}`; pen = true; }); return d; };
+  const siste = (v: (number | null)[]) => { for (let i = v.length - 1; i >= 0; i--) if (v[i] != null) return i; return -1; };
+  const etiketter = direkte ? serier.map((s) => { const i = siste(s.v); return i < 0 ? null : { y: y(s.v[i] as number), t: s.lab, k: s.k }; }).filter((e): e is { y: number; t: string; k: number } => !!e).sort((a, b) => a.y - b.y) : [];
+  for (let i = 1; i < etiketter.length; i++) if (etiketter[i].y - etiketter[i - 1].y < 14) etiketter[i].y = etiketter[i - 1].y + 14;
+  const ticks: number[] = []; for (let t = 0; t <= ymax + 1e-9; t += st) ticks.push(t);
+  const flytt = (e: { currentTarget: SVGSVGElement; clientX: number }) => {
+    const r = e.currentTarget.getBoundingClientRect();
+    const i = Math.round((e.clientX - r.left - mg.l) / (n > 1 ? iw / (n - 1) : 1));
+    setHov(Math.max(0, Math.min(n - 1, i)));
+  };
+  const tipVenstre = hov == null ? 0 : x(hov) + 14 + 190 > W ? Math.max(0, x(hov) - 204) : x(hov) + 14;
+  return (
+    <div ref={ref} className="ajg-graf">
+      <svg className="ch" width={W} height={H} role="img" aria-label={label} onPointerMove={flytt} onPointerLeave={() => setHov(null)}>
+        {ticks.map((t) => <g key={t}><line className="gl" x1={mg.l} x2={W - mg.r} y1={y(t)} y2={y(t)} /><text className="ax" x={mg.l - 6} y={y(t) + 4} textAnchor="end">{nf(t, st < 1 ? 1 : 0)}</text></g>)}
+        {aar.map((a, i) => (!smal || i % 3 === 0 || i === n - 1) && (smal || i % 2 === 0 || i === n - 1) && <text key={a} className="ax" x={x(i)} y={H - 6} textAnchor="middle">{a}</text>)}
+        {hov != null && <line className="ajg-kryss" x1={x(hov)} x2={x(hov)} y1={mg.t} y2={mg.t + ih} />}
+        <path className="ln m" d={sti(median)} />
+        {serier.map((s) => <path key={s.id} className={`ajg-ln k${s.k}${s.meg ? ' meg' : ''}`} d={sti(s.v)} />)}
+        {serier.map((s) => { const i = hov ?? siste(s.v); const v = i >= 0 ? s.v[i] : null; return v == null ? null : <circle key={s.id} className={`ajg-pt k${s.k}`} cx={x(i)} cy={y(v)} r={4.5} />; })}
+        {etiketter.map((e) => <g key={e.t}><line className={`ajg-ln k${e.k}`} x1={W - mg.r + 6} x2={W - mg.r + 16} y1={e.y} y2={e.y} /><text className="ajg-el" x={W - mg.r + 20} y={e.y + 4}>{e.t}</text></g>)}
+      </svg>
+      {hov != null && (
+        <div className="ajg-tip" style={{ left: tipVenstre }}>
+          <b>{aar[hov]}</b>
+          {[...serier].sort((a, b) => (b.v[hov] ?? -1) - (a.v[hov] ?? -1)).map((s) => <div key={s.id}><i className={`k${s.k}`} />{s.lab}<span>{nf(s.v[hov], 1)}</span></div>)}
+          <div className="m"><i className="m" />Median<span>{nf(median[hov], 1)}</span></div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function AjgSammenligning({ data, v, std, sett }: { data: Data; v: AjgValg; std: AjgValg; sett: (a: AjgValg) => void }) {
+  const set = (p: Partial<AjgValg>) => sett({ ...v, ...p });
+  const [y0, yN] = data.aar;
+  const aar = aarRekke(v.fra, v.til);
+  const periodeTekst = v.fra === v.til ? String(v.fra) : `${v.fra}–${v.til}`;
+  const skoler = data.skoler.filter((s) => v.ref || !s.referanse);
+  const rader = skoler.map((s) => { const t = ajgTall(s, aar, v.brok, v.nevner); return { s, t, m: ajgMaal(t, v.per100) }; });
+  const kol = AJG_KOL.find((k) => k.id === v.sort) ?? AJG_KOL[4];
+  const verdi = (r: (typeof rader)[number], id: AjgSort) => r.m[id];
+  const sortert = [...rader].sort((a, b) => (verdi(b, v.sort) ?? -Infinity) - (verdi(a, v.sort) ?? -Infinity));
+  const plassPaa = (r: (typeof rader)[number], id: AjgSort) => { const x = verdi(r, id); return x == null ? null : 1 + rader.filter((z) => { const y = verdi(z, id); return y != null && y > x + 1e-9; }).length; };
+  const nMed = (id: AjgSort) => rader.filter((r) => verdi(r, id) != null).length;
+  const enhet = v.per100 ? ' per 100 årsverk og år' : '';
+  const fmt = (k: AjgKol, x: number | null) => x == null ? '–' : k.type === 'pst' ? nf(x, 0) + ' %' : k.type === 'snitt' ? nf(x, 2) : k.type === 'nvi' ? nf(x, v.brok ? 1 : 0) : v.per100 ? nf(x, 1) : nf(x, v.brok ? 1 : 0);
+  const fmtP4 = (x: number | null) => fmt(AJG_KOL[4], x);
+  const hh = rader.find((r) => r.s.isNmbu);
+  const sel = { padding: '5px 8px', minWidth: 0 } as const;
+
+  // Periodevalg: treårsvinduer (standard), enkeltår, femårsvinduer og hele perioden
+  const tre = aarRekke(y0 + 2, yN).map(Number).reverse();
+  const fem = aarRekke(y0 + 4, yN).map(Number).reverse();
+  const verdiP = `${v.fra}-${v.til}`;
+  const kjente = new Set([...tre.map((y) => `${y - 2}-${y}`), ...aarRekke(y0, yN).map((y) => `${y}-${y}`), ...fem.map((y) => `${y - 4}-${y}`), `${y0}-${yN}`]);
+
+  // Utviklingsgrafen: 4+ per 100 årsverk per år (eller glidende treårssnitt)
+  const [glatt, setGlatt] = useState(false);
+  const alleAar = aarRekke(y0, yN);
+  const p4Aar = (s: Skole) => alleAar.map((y) => {
+    const vindu = glatt ? aarRekke(Math.max(y0, Number(y) - 2), Number(y)) : [y];
+    if (glatt && vindu.length < 3) return null;
+    return ajgMaal(ajgTall(s, vindu, v.brok, v.nevner), true).p4;
+  });
+  const valgte = v.skoler.map((id, k) => ({ id, k })).filter((x) => x.id && skoler.some((s) => s.id === x.id));
+  const serier = valgte.map(({ id, k }) => { const s = data.skoler.find((z) => z.id === id) as Skole; return { id, lab: s.kort, v: p4Aar(s), k, meg: s.isNmbu }; });
+  const medianLinje = useMemo(() => { const alle = skoler.map(p4Aar); return alleAar.map((_, i) => medianAv(alle.map((a) => a[i]))); }, [skoler, glatt, v.brok, v.nevner]); // eslint-disable-line react-hooks/exhaustive-deps
+  const veksle = (id: string) => {
+    const k = v.skoler.indexOf(id);
+    if (k >= 0) { const ny = [...v.skoler]; ny[k] = ''; while (ny.length && !ny[ny.length - 1]) ny.pop(); set({ skoler: ny }); return; }
+    const ledig = v.skoler.indexOf('');
+    if (ledig >= 0) { const ny = [...v.skoler]; ny[ledig] = id; set({ skoler: ny }); } else if (v.skoler.length < AJG_MAKS_SKOLER) set({ skoler: [...v.skoler, id] });
+  };
+  const fulle = valgte.length >= AJG_MAKS_SKOLER;
+
+  // Fordeling per nivå
+  const andel4 = (t: AjgTall) => (t.per['4*'] + t.per['4']) / t.nvi;
+  const fordeling = [...rader].filter((r) => r.t.nvi > 0).sort((a, b) => (andel4(b.t) - andel4(a.t)) || (b.t.per['3'] / b.t.nvi - a.t.per['3'] / a.t.nvi));
+  const FD: (AjgNiva | 'ikke')[] = ['4*', '4', '3', '2', '1', 'ikke'];
+  const fdKlasse: Record<AjgNiva | 'ikke', string> = { '4*': 'a5', '4': 'a4', '3': 'a3', '2': 'a2', '1': 'a1', ikke: 'a0' };
+
+  // Fagfeltprofil
+  const [fagNiva, setFagNiva] = useState<'3' | '4'>('3');
+  const [fagAndel, setFagAndel] = useState(true);
+  const fagPer = sortert.map((r) => {
+    const f: Record<string, number> = {}; const ix = (v.brok ? 3 : 0) + (fagNiva === '3' ? 1 : 2);
+    for (const y of aar) for (const [fag, a] of Object.entries(r.s.artikler[y]?.ajgFag ?? {})) f[fag] = (f[fag] ?? 0) + a[ix];
+    const sum = Object.values(f).reduce((a, b) => a + b, 0);
+    return { r, f, sum };
+  });
+  const fagTotal: Record<string, number> = {};
+  fagPer.forEach(({ f }) => Object.entries(f).forEach(([k, x]) => { fagTotal[k] = (fagTotal[k] ?? 0) + x; }));
+  const fagKol = Object.entries(fagTotal).filter(([, x]) => x > 0).sort((a, b) => b[1] - a[1]).map(([k]) => k);
+  const celle = (p: (typeof fagPer)[number], fag: string) => fagAndel ? (p.sum ? 100 * (p.f[fag] ?? 0) / p.sum : null) : (p.f[fag] ?? 0);
+  const fagMaks = Math.max(1e-9, ...fagPer.flatMap((p) => fagKol.map((k) => celle(p, k) ?? 0)));
+
+  // Validering mot NHH Research Report 2024 (hel telling, som NHH)
+  const [valAar, setValAar] = useState<string>('sum');
+  const NHH_AAR = ['2020', '2021', '2022', '2023', '2024'];
+  const vAar = valAar === 'sum' ? NHH_AAR : [valAar];
+  const usikker = data.ajgNhh?.usikker ?? {};
+  const val = data.skoler.filter((s) => s.ajgNhh).map((s) => {
+    const t = ajgTall(s, vAar, false, 'utenStip');
+    const niv = (['4*', '4', '3'] as const).map((k) => {
+      const xs = vAar.map((y) => s.ajgNhh?.[y]?.[k]?.n);
+      const nhh = xs.every((x) => x != null) ? (xs as number[]).reduce((a, b) => a + b, 0) : null;
+      return { k, vaar: t.per[k], nhh, avvik: nhh ? 100 * (t.per[k] - nhh) / nhh : null, usikker: vAar.some((y) => (usikker[k] ?? []).includes(Number(y))) };
+    });
+    return { s, niv };
+  });
+  const valSum = (['4*', '4', '3'] as const).map((k, i) => { const vaar = val.reduce((a, r) => a + r.niv[i].vaar, 0), nhh = val.reduce((a, r) => a + (r.niv[i].nhh ?? 0), 0); return { k, vaar, nhh, avvik: nhh ? 100 * (vaar - nhh) / nhh : null }; });
+  const avvikTekst = (a: number | null, vaar: number, nhh: number | null) => nhh == null ? '–' : a == null ? (vaar ? `+${nf(vaar, 0)}` : '0') : `${a > 0 ? '+' : ''}${nf(a, 0)} %`;
+  const innen10 = val.flatMap((r) => r.niv).filter((x) => x.nhh != null && Math.abs(x.vaar - x.nhh) <= Math.max(1, 0.1 * x.nhh)).length;
+  const antVal = val.flatMap((r) => r.niv).filter((x) => x.nhh != null).length;
+
+  // CSV-nedlasting av den aggregerte tabellen (skoler × mål), med valgene i fanen
+  const lastNed = () => {
+    const tall = (x: number | null | undefined, d: number) => x == null || !Number.isFinite(x) ? '' : x.toFixed(d).replace('.', ',');
+    const esc = (x: string) => /[;"\n]/.test(x) ? `"${x.replace(/"/g, '""')}"` : x;
+    const m100 = (r: (typeof rader)[number]) => ajgMaal(r.t, true);
+    const hode = ['Skole', 'Enhet', 'Periode', 'Telling', 'Nevner (årsverk)', 'NVI-artikler', 'Årsverk per år (snitt)', 'AJG 4*', 'AJG 4', 'AJG 3', 'AJG 2', 'AJG 1', 'Ikke på AJG',
+      'AJG 4+', 'AJG 3+', '4* per 100 årsverk og år', '4 per 100 årsverk og år', '3 per 100 årsverk og år', '4+ per 100 årsverk og år', '3+ per 100 årsverk og år',
+      'Andel i AJG-tidsskrift (%)', 'Andel 3+ av AJG-artiklene (%)', 'Andel 4+ av AJG-artiklene (%)', 'AJG-snitt (4* = 5)', 'Plass på 4+ per 100 årsverk'];
+    const d = v.brok ? 4 : 0;
+    const linjer = [hode.join(';'), ...sortert.map((r) => {
+      const p = m100(r), t = r.t;
+      const pl = 1 + rader.filter((z) => (m100(z).p4 ?? -1) > (p.p4 ?? -1) + 1e-9).length;
+      return [esc(r.s.kort), esc(r.s.navn), periodeTekst.replace('–', '-'), v.brok ? 'brøk (1/n)' : 'hel', v.nevner === 'uff' ? 'UN1+UN2 (HK-dir)' : 'UN1+postdoktorer (NHH)',
+        tall(t.nvi, d), tall(t.arsv != null ? t.arsv / aar.length : null, 1), ...AJG_NIV.map((k) => tall(t.per[k], d)), tall(t.per.ikke, d),
+        tall(t.per['4*'] + t.per['4'], d), tall(t.per['4*'] + t.per['4'] + t.per['3'], d),
+        tall(p.n4s, 2), tall(p.n4, 2), tall(p.n3, 2), tall(p.p4, 2), tall(p.p3, 2), tall(p.dekning, 1), tall(p.a3, 1), tall(p.a4, 1), tall(p.snitt, 2), p.p4 == null ? '' : String(pl)].join(';');
+    })];
+    const blob = new Blob(['﻿' + linjer.join('\r\n') + '\r\n'], { type: 'text/csv;charset=utf-8' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = `ajg-sammenligning-${periodeTekst.replace('–', '-')}-${v.brok ? 'brok' : 'hel'}-${v.nevner === 'uff' ? 'hkdir' : 'nhh'}.csv`;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  };
+
+  const topp5 = sortert.filter((r) => verdi(r, v.sort) != null).slice(0, 5);
+  const hhPlass = hh ? plassPaa(hh, v.sort) : null;
+  const stripeKol = AJG_KOL.filter((k) => k.stripe || k.id === v.sort);
+  const kortMaal: AjgSort[] = ['p4', 'p3', 'dekning', 'snitt'];
+
+  return (
+    <div className="skp ajg">
+      <section className="sheet" aria-label="AJG-sammenligning">
+        <div>
+          <span className="lab">AJG 2024 · NVI-artikler {periodeTekst} · {v.brok ? 'brøkdelt telling' : 'hel telling'}</span>
+          <h1>{topp5[0] ? `${topp5[0].s.kort} er nr. 1 på ${kol.navn}${kol.type === 'tell' ? enhet : ''}` : 'AJG-sammenligning'}</h1>
+          <p style={{ maxWidth: '64ch' }}>
+            Topp fem: {topp5.map((r, k) => <Fragment key={r.s.id}>{k ? (k === topp5.length - 1 ? ' og ' : ', ') : ''}<b>{r.s.kort}</b> ({fmt(kol, verdi(r, v.sort))})</Fragment>)}.
+            {hh && hhPlass != null && <> {hh.s.kort} er nr. {hhPlass} av {nMed(v.sort)} med {fmt(kol, verdi(hh, v.sort))}.</>}
+            {' '}Alle artikler er koblet mot Chartered ABS Academic Journal Guide 2024 på ISSN, og samme liste er brukt for alle år.
+          </p>
+        </div>
+        <div>
+          <span className="lab">Valg</span>
+          <div className="ajg-valg">
+            <label className="ajg-g"><span className="lab">Periode</span>
+              <select value={verdiP} onChange={(e) => { const [f, t] = e.target.value.split('-').map(Number); set({ fra: f, til: t }); }} style={sel}>
+                <optgroup label="Treårsvindu">{tre.map((y) => <option key={y} value={`${y - 2}-${y}`}>{y - 2}–{y}</option>)}</optgroup>
+                <optgroup label="Enkeltår">{aarRekke(y0, yN).reverse().map((y) => <option key={y} value={`${y}-${y}`}>{y}</option>)}</optgroup>
+                <optgroup label="Femårsvindu">{fem.map((y) => <option key={y} value={`${y - 4}-${y}`}>{y - 4}–{y}</option>)}</optgroup>
+                <optgroup label="Alt"><option value={`${y0}-${yN}`}>{y0}–{yN}</option>{!kjente.has(verdiP) && <option value={verdiP}>{periodeTekst}</option>}</optgroup>
+              </select>
+            </label>
+            <div className="ajg-g" role="group" aria-label="Telling"><span className="lab">Telling</span>
+              <button type="button" className="seg" aria-pressed={!v.brok} onClick={() => set({ brok: false })} title="Hver artikkel teller 1 for skolen uansett antall forfattere (som NHH-rapporten)">Hel</button>
+              <button type="button" className="seg" aria-pressed={v.brok} onClick={() => set({ brok: true })} title="Hver artikkel teller med skolens andel av forfatterne (1/n per forfatter)">Brøk (1/n)</button>
+            </div>
+            <div className="ajg-g" role="group" aria-label="Visning"><span className="lab">Vis</span>
+              <button type="button" className="seg" aria-pressed={v.per100} onClick={() => set({ per100: true })}>Per 100 årsverk</button>
+              <button type="button" className="seg" aria-pressed={!v.per100} onClick={() => set({ per100: false })}>Antall</button>
+            </div>
+            <div className="ajg-g" role="group" aria-label="Nevner"><span className="lab">Årsverk</span>
+              <button type="button" className="seg" aria-pressed={v.nevner === 'uff'} onClick={() => set({ nevner: 'uff' })} title="UN1 + stipendiater og postdoktorer (UN2), som HK-dirs tilstandsrapport">HK-dir</button>
+              <button type="button" className="seg" aria-pressed={v.nevner === 'utenStip'} onClick={() => set({ nevner: 'utenStip' })} title="UN1 + postdoktorer, uten stipendiater, som NHHs forskningsrapport">NHH (uten stip.)</button>
+            </div>
+            <label className="ajg-g"><input type="checkbox" checked={v.ref} onChange={(e) => set({ ref: e.target.checked })} /> Ta med referanseenhetene</label>
+            {JSON.stringify(v) !== JSON.stringify(std) && <button type="button" className="seg" onClick={() => sett({ ...std, skoler: [...std.skoler] })}>Standardvalg</button>}
+          </div>
+          <p className="cap">Standard: siste treårsvindu, hel telling (som NHH-rapporten), per 100 årsverk med HK-dirs nevner (UN1 + UN2). Per 100 årsverk og år = artikler i perioden delt på sum årsverk i perioden, ganger 100. Lenken husker valgene.</p>
+        </div>
+      </section>
+
+      <section className="sec" aria-label="Tabell">
+        <header>
+          <span className="lab">Alle skolene</span>
+          <h2>Sortert etter {kol.navn}{kol.type === 'tell' ? enhet : ''}, {periodeTekst}</h2>
+          <p className="muted">Klikk på en kolonne for å sortere. Plassen gjelder kolonnen det er sortert etter. Prikkene viser alle skolene fra laveste til høyeste verdi; skolen i raden er mørk. {v.per100 ? 'Nivåkolonnene er per 100 årsverk og år.' : `Nivåkolonnene er antall artikler${v.brok ? ' (sum forfatterandeler)' : ''}.`}</p>
+        </header>
+        <div className="ajg-verktoy">
+          <button type="button" className="seg" onClick={lastNed} title="Last ned tabellen (skoler × mål) som CSV med valgene over. Inneholder ikke AJG-lista."><Download className="w-3.5 h-3.5" style={{ display: 'inline', verticalAlign: -2, marginRight: 5 }} />Last ned CSV</button>
+        </div>
+        <ol className="fs-kort" aria-label="AJG-sammenligning, kortvisning">
+          {sortert.map((r) => (
+            <li key={r.s.id} className={`rad${r.s.isNmbu ? ' meg' : ''}`}>
+              <span className={`pl ${(plassPaa(r, v.sort) ?? 99) <= 3 ? 'top' : ''}`}>{plassPaa(r, v.sort) ?? '–'}</span>
+              <span className="nm"><b className="nmt">{r.s.kort}</b><small>{kortNavn(r.s.navn)} · {fmt(AJG_KOL[0], r.m.nvi)} NVI-artikler</small></span>
+              <span className="sc">{fmt(kol, verdi(r, v.sort))}<small>{kol.label}</small></span>
+              <span className="maal">
+                {kortMaal.map((id) => { const k = AJG_KOL.find((z) => z.id === id) as AjgKol; return (
+                  <div key={id}><span>{k.navn.charAt(0).toUpperCase() + k.navn.slice(1)}{k.type === 'tell' && v.per100 ? ' per 100 årsverk' : ''}</span><b>{fmt(k, verdi(r, id))}</b>
+                    <Prikker verdier={rader.map((z) => ({ id: z.s.id, v: verdi(z, id) }))} sel={r.s.id} mot={null} /></div>
+                ); })}
+              </span>
+            </li>
+          ))}
+        </ol>
+        <div className="scroll fs-tabell">
+          <table className="ajg-tab">
+            <thead>
+              <tr>
+                <th>Plass og skole</th>
+                {AJG_KOL.map((k) => (
+                  <th key={k.id} aria-sort={v.sort === k.id ? 'descending' : undefined} title={k.title}>
+                    <button type="button" onClick={() => set({ sort: k.id })}>{k.label}{v.sort === k.id ? ' ↓' : ''}</button>
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {sortert.map((r) => {
+                const p = plassPaa(r, v.sort);
+                return (
+                  <tr key={r.s.id} className={r.s.isNmbu ? 'meg' : undefined}>
+                    <td style={{ minWidth: 170 }}>
+                      <div style={{ display: 'flex', gap: 10, alignItems: 'baseline' }}>
+                        <span className={`ajg-pl${p != null && p <= 3 ? ' top' : ''}`}>{p ?? '–'}</span>
+                        <span><b style={{ fontWeight: 600 }}>{r.s.kort}</b>{r.s.referanse && <span className="muted" style={{ fontSize: '.72rem' }}> · ref.</span>}
+                          <small style={{ display: 'block', fontSize: '.72rem', color: 'var(--muted)' }}>nr. {p ?? '–'} av {nMed(v.sort)}</small></span>
+                      </div>
+                    </td>
+                    {AJG_KOL.map((k) => (
+                      <td key={k.id} className={v.sort === k.id ? 'sortert' : undefined}>
+                        {fmt(k, verdi(r, k.id))}
+                        {stripeKol.includes(k) && <Prikker verdier={rader.map((z) => ({ id: z.s.id, v: verdi(z, k.id) }))} sel={r.s.id} mot={null} />}
+                      </td>
+                    ))}
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+        <p className="cap">* AJG-snitt er et tilleggsmål: gjennomsnittlig nivå blant artiklene i AJG-tidsskrift (4* = 5, 4 = 4, 3 = 3, 2 = 2, 1 = 1). Det sier ingenting om artiklene utenfor AJG, så les det sammen med «I AJG» (dekningen). {v.brok ? 'Brøkdelt telling: hver artikkel teller med skolens andel av forfatterne.' : 'Hel telling: hver artikkel teller 1 for hver skole med minst én forfatter.'}</p>
+      </section>
+
+      <section className="sec" aria-label="Utvikling over tid">
+        <header>
+          <span className="lab">Utvikling {y0}–{yN}</span>
+          <h2>AJG 4+ per 100 årsverk{glatt ? ', glidende treårssnitt' : ' per år'}</h2>
+          <p className="muted">Velg opptil {AJG_MAKS_SKOLER} skoler. Fargen følger skolen. Stiplet linje er medianen for alle skolene som vises. {v.brok ? 'Brøkdelt' : 'Hel'} telling, {v.nevner === 'uff' ? 'HK-dirs' : 'NHHs'} nevner.</p>
+        </header>
+        <div className="cmprow ajg-chips" role="group" aria-label="Skoler i grafen">
+          {sortert.map((r) => { const k = v.skoler.indexOf(r.s.id); return (
+            <button key={r.s.id} type="button" aria-pressed={k >= 0} disabled={k < 0 && fulle} onClick={() => veksle(r.s.id)}>{k >= 0 && <i className={`k${k}`} />}{r.s.kort}</button>
+          ); })}
+          <span style={{ marginLeft: 'auto' }} />
+          <button type="button" className="seg" aria-pressed={glatt} onClick={() => setGlatt(!glatt)} title="Snitt av tre år (året og de to foregående), jevner ut små skoler">Glidende treårssnitt</button>
+        </div>
+        <div className="legend">{serier.map((s) => <span key={s.id}><i className={`ajg-sw k${s.k}`} />{s.lab}</span>)}<span><i className="m" />Median</span></div>
+        <AjgLinjer aar={alleAar} serier={serier} median={medianLinje} label={`AJG 4+ per 100 årsverk ${y0} til ${yN} for ${serier.map((s) => s.lab).join(', ')}`} />
+        <details><summary>Vis som tabell</summary>
+          <div className="scroll"><table><thead><tr><th>År</th>{serier.map((s) => <th key={s.id}>{s.lab}</th>)}<th>Median</th></tr></thead>
+            <tbody>{alleAar.map((y, i) => <tr key={y}><td>{y}</td>{serier.map((s) => <td key={s.id}>{nf(s.v[i], 1)}</td>)}<td>{nf(medianLinje[i], 1)}</td></tr>)}</tbody></table></div>
+        </details>
+      </section>
+
+      <section className="sec" aria-label="Fordeling per nivå">
+        <header>
+          <span className="lab">Fordeling per nivå, {periodeTekst}</span>
+          <h2>Hvor havner skolenes NVI-artikler på AJG-skalaen?</h2>
+          <p className="muted">Andel av skolens NVI-artikler{v.brok ? ' (forfatterandeler)' : ''} per AJG 2024-nivå. Grått er tidsskrift som ikke står på AJG. Sortert etter andel på nivå 4 og 4*, så nivå 3. Pek på et felt for tallene.</p>
+        </header>
+        <div className="ajg-leg">{FD.map((k) => <span key={k}><i className={fdKlasse[k]} />{k === 'ikke' ? AJG_NIV_NAVN[k] : `AJG ${k}`}</span>)}</div>
+        <div className="ajg-fd">
+          {fordeling.map((r) => (
+            <div key={r.s.id} className={`r${r.s.isNmbu ? ' meg' : ''}`}>
+              <span>{r.s.kort}</span>
+              <div className="bar" role="img" aria-label={`${r.s.kort}: ${FD.map((k) => `${AJG_NIV_NAVN[k]} ${nf(100 * r.t.per[k] / r.t.nvi, 0)} %`).join(', ')}`}>
+                {FD.map((k) => r.t.per[k] > 0 ? <i key={k} className={fdKlasse[k]} style={{ width: `${100 * r.t.per[k] / r.t.nvi}%` }} title={`${r.s.kort}, ${k === 'ikke' ? 'ikke på AJG' : `AJG ${k}`}: ${nf(r.t.per[k], v.brok ? 1 : 0)} artikler (${nf(100 * r.t.per[k] / r.t.nvi, 1)} %)`} /> : null)}
+              </div>
+              <span className="n">{nf(r.t.nvi, v.brok ? 1 : 0)}</span>
+            </div>
+          ))}
+        </div>
+        <details><summary>Vis som tabell</summary>
+          <div className="scroll"><table><thead><tr><th>Skole</th>{FD.map((k) => <th key={k}>{AJG_NIV_NAVN[k]}</th>)}<th>NVI-artikler</th></tr></thead>
+            <tbody>{fordeling.map((r) => <tr key={r.s.id}><td>{r.s.kort}</td>{FD.map((k) => <td key={k}>{nf(r.t.per[k], v.brok ? 1 : 0)} <span className="muted">({nf(100 * r.t.per[k] / r.t.nvi, 0)} %)</span></td>)}<td>{nf(r.t.nvi, v.brok ? 1 : 0)}</td></tr>)}</tbody></table></div>
+        </details>
+      </section>
+
+      <section className="sec" aria-label="Fagfeltprofil">
+        <header>
+          <span className="lab">Fagfeltprofil, {periodeTekst}</span>
+          <h2>Der publiserer skolene sine beste artikler</h2>
+          <p className="muted">Artikler på AJG {fagNiva === '3' ? 'nivå 3 eller høyere' : 'nivå 4 eller 4*'} etter AJG-fagfeltet til tidsskriftet. {fagAndel ? 'Tallet er andelen av skolens egne slike artikler, så hver kolonne summerer til 100 %.' : `Tallet er antall artikler${v.brok ? ' (forfatterandeler)' : ''}.`} Mørkere = mer.</p>
+        </header>
+        <div className="cmprow" role="group" aria-label="Valg for fagfeltprofilen">
+          <button type="button" className="seg" aria-pressed={fagNiva === '3'} onClick={() => setFagNiva('3')}>Nivå 3+</button>
+          <button type="button" className="seg" aria-pressed={fagNiva === '4'} onClick={() => setFagNiva('4')}>Nivå 4+</button>
+          <span style={{ width: 10 }} />
+          <button type="button" className="seg" aria-pressed={fagAndel} onClick={() => setFagAndel(true)}>Andel av skolens</button>
+          <button type="button" className="seg" aria-pressed={!fagAndel} onClick={() => setFagAndel(false)}>Antall</button>
+        </div>
+        {fagKol.length === 0 ? <p className="muted">Ingen artikler på dette nivået i perioden.</p> : (
+          <div className="scroll">
+            <table className="ajg-hm">
+              <thead><tr><th>AJG-fagfelt</th>{fagPer.map((p) => <th key={p.r.s.id} className={p.r.s.isNmbu ? 'meg' : undefined}>{p.r.s.kort}</th>)}</tr></thead>
+              <tbody>
+                {fagKol.map((fag) => (
+                  <tr key={fag}>
+                    <td title={fag}>{AJG_FAG[fag] ?? fag}</td>
+                    {fagPer.map((p) => {
+                      const x = celle(p, fag); const g = x == null ? 0 : Math.round(100 * Math.sqrt(x / fagMaks) * 0.92);
+                      const ant = p.f[fag] ?? 0;
+                      return <td key={p.r.s.id} className={`c${p.r.s.isNmbu ? ' meg' : ''}`} style={{ background: ant ? `color-mix(in srgb, var(--hm) ${g}%, var(--bg))` : undefined, color: g > 52 ? '#fff' : undefined }}
+                        title={`${p.r.s.kort} · ${AJG_FAG[fag] ?? fag}: ${nf(ant, v.brok ? 1 : 0)} artikler på nivå ${fagNiva}+${p.sum ? ` (${nf(100 * ant / p.sum, 0)} % av skolens)` : ''}`}>
+                        {ant ? (fagAndel ? ((x ?? 0) < 0.5 ? '<1' : nf(x, 0)) : nf(x, v.brok ? 1 : 0)) : <span className="muted">·</span>}</td>;
+                    })}
+                  </tr>
+                ))}
+                <tr className="sum"><td>Sum</td>{fagPer.map((p) => <td key={p.r.s.id}>{nf(p.sum, v.brok ? 1 : 0)}</td>)}</tr>
+              </tbody>
+            </table>
+          </div>
+        )}
+        <p className="cap">Fagfeltene er AJGs egen inndeling av tidsskriftene (22 felt). Kolonnene følger rekkefølgen i tabellen over. Fargen øker med kvadratroten av verdien, så små felt også synes.</p>
+      </section>
+
+      <section className="sec" aria-label="Validering mot NHH-rapporten">
+        <header>
+          <span className="lab">Validering</span>
+          <h2>Våre tall mot NHH Research Report 2024</h2>
+          <p className="muted">NHHs forskningsrapport oppgir antall artikler på ABS/AJG 4*, 4 og 3 for åtte skoler 2020–2024. Våre tall er hel telling av NVI-artikler med AJG 2024 for alle år, uansett valgene over. {antVal ? `${innen10} av ${antVal} tall er innen ±10 % (eller ±1 artikkel).` : ''}</p>
+        </header>
+        <div className="cmprow" role="group" aria-label="År">
+          <button type="button" className="seg" aria-pressed={valAar === 'sum'} onClick={() => setValAar('sum')}>Sum 2020–2024</button>
+          {NHH_AAR.map((y) => <button key={y} type="button" className="seg" aria-pressed={valAar === y} onClick={() => setValAar(y)}>{y}</button>)}
+        </div>
+        <div className="scroll">
+          <table className="ajg-val">
+            <thead>
+              <tr><th rowSpan={2}>Skole</th>{(['4*', '4', '3'] as const).map((k) => <th key={k} colSpan={3} className="gr">AJG {k}</th>)}</tr>
+              <tr>{(['4*', '4', '3'] as const).map((k) => <Fragment key={k}><th>Vår</th><th>NHH</th><th>Avvik</th></Fragment>)}</tr>
+            </thead>
+            <tbody>
+              {val.map((r) => (
+                <tr key={r.s.id} className={r.s.isNmbu ? 'meg' : undefined}>
+                  <td>{r.s.kort}</td>
+                  {r.niv.map((x) => <Fragment key={x.k}><td>{nf(x.vaar, 0)}</td><td>{x.nhh == null ? '–' : nf(x.nhh, 0)}{x.usikker ? '†' : ''}</td><td className={x.avvik != null && Math.abs(x.avvik) > 20 && x.nhh != null && Math.abs(x.vaar - x.nhh) > 1 ? 'stor' : 'muted'}>{avvikTekst(x.avvik, x.vaar, x.nhh)}</td></Fragment>)}
+                </tr>
+              ))}
+              <tr className="sum"><td>Sum åtte skoler</td>{valSum.map((x) => <Fragment key={x.k}><td>{nf(x.vaar, 0)}</td><td>{nf(x.nhh, 0)}</td><td>{avvikTekst(x.avvik, x.vaar, x.nhh)}</td></Fragment>)}</tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="cap">Avvik = (vår − NHH) / NHH. Uthevet når avviket er over 20 % og mer enn én artikkel. † NHHs tabell for nivå 3 har samme antall i 2022 som i 2020 for nesten alle skolene, så 2022-tallet er usikkert. 2024 treffer nesten eksakt; 2020–2023 avviker mer fordi NHH trolig brukte AJG-versjonen som gjaldt da (AJG 2021), mens vi bruker AJG 2024 for alle år. «NTNU» er i NHH-rapporten bare NTNU Handelshøyskolen, mens vi også har med Institutt for samfunnsøkonomi.</p>
+      </section>
+
+      <section className="sec ajg-metode" aria-label="Metode">
+        <span className="lab">Metode og forbehold</span>
+        <ul>
+          <li><b>Kilde.</b> Chartered ABS Academic Journal Guide (AJG) 2024: 1 823 tidsskrift i 22 fagfelt, nivå 1, 2, 3, 4 og 4*. Brukt etter avtale med Chartered ABS (oktober 2026). Bare aggregerte tall per skole vises; AJG-nivå per tidsskrift vises ikke i denne fanen. Chartered ABS ber om at guiden ikke brukes til å vurdere enkeltpersoner.</li>
+          <li><b>Grunnlag.</b> Vitenskapelige artikler og oversiktsartikler rapportert til NVI (samme grunnlag som HK-dir og DBH), hentet fra NVA etter forfatternes tilknytning til enheten (avgrensningene i skolelista), koblet mot AJG på ISSN og eISSN. AJG 2024 er brukt for alle år {y0}–{yN}.</li>
+          <li><b>Telling.</b> Hel telling (standard, som NHH-rapporten): artikkelen teller 1 for hver skole med minst én forfatter. Brøkdelt: artikkelen teller med skolens andel av forfatterne (1/n per forfatter), så sampublisering ikke telles dobbelt.</li>
+          <li><b>Nevner.</b> HK-dirs årsverk (UN1 + UN2, faglige stillinger pluss stipendiater og postdoktorer) som standard, NHHs variant (UN1 + postdoktorer) som valg. Per 100 årsverk og år = artikler i perioden / sum årsverk i perioden × 100.</li>
+          <li><b>Mål.</b> Antall og per 100 årsverk på nivå 4*, 4 og 3 og samlet 4+ og 3+; andel av NVI-artiklene i AJG-tidsskrift (dekning); andel 3+ og 4+ av AJG-artiklene; AJG-snitt (4* = 5) som tilleggsmål. Rangeringens mål «AJG 4/4* per 100 årsverk» bruker samme kobling, men summen over fem år delt på snittet av årsverk.</li>
+          <li><b>Kjente svakheter.</b> (1) AJG 2024 brukt bakover: tidsskrift som har gått opp eller ned siden tidligere utgaver, får 2024-nivået også for eldre artikler. (2) Tidsskrift utenfor AJG telles ikke; dekningen varierer mye, særlig for fagmiljøer med mye publisering i naturressurs-, miljø-, reiselivs- eller norske tidsskrift. (3) Ulike avgrensninger: NTNU er NTNU Handelshøyskolen + Institutt for samfunnsøkonomi, INN er Økonomifag + Organisasjon, ledelse og styring; tallene kan derfor ikke sammenlignes direkte med skolenes egne. (4) Små enheter svinger mye fra år til år; derfor er treårsvindu standard. (5) NVA-data for siste år kan bli supplert.</li>
+        </ul>
+      </section>
     </div>
   );
 }

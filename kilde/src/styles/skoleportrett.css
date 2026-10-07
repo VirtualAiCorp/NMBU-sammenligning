@@ -173,3 +173,90 @@
   .skp .place .nr{font-size:3.4rem}
 }
 @media(max-width:640px){.skp .fs-std{display:none}}
+
+/* AJG-sammenligning (07.10.2026): kategorisk palett for skolene i utviklingsgrafen (validert for fargesvake, lys og mørk),
+   sekvensiell blå skala for AJG-nivåene og varmekart. */
+.skp.ajg{
+  --k0:#2a78d6; --k1:#eb6834; --k2:#1baf7a; --k3:#eda100; --k4:#e87ba4; --k5:#008300;
+  --a5:#0d366b; --a4:#1c5cab; --a3:#3987e5; --a2:#86b6ef; --a1:#cde2fb; --a0:#C4C1BA; --hm:#2a78d6;
+}
+:root[data-theme="dark"] .skp.ajg{
+  --k0:#3987e5; --k1:#d95926; --k2:#199e70; --k3:#c98500; --k4:#d55181; --k5:#008300;
+  --a5:#cde2fb; --a4:#86b6ef; --a3:#3987e5; --a2:#1c5cab; --a1:#104281; --a0:#4A5262; --hm:#3987e5;
+}
+.skp .ajg-valg{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
+.skp .ajg-g{display:flex;gap:4px;align-items:center;flex-wrap:wrap;font-size:.85rem}
+.skp .ajg-g .lab{margin-right:4px}
+.skp .seg{background:none;border:1px solid var(--line2);padding:4px 10px;cursor:pointer;border-radius:2px;font-size:.84rem;min-height:32px}
+.skp .seg:hover{background:var(--flate)}
+.skp .seg[aria-pressed="true"],.skp .cmprow .seg[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--on-accent);font-weight:600}
+.skp .ajg-verktoy{display:flex;justify-content:flex-end;margin-top:-6px}
+.skp .ajg-tab th button{background:none;border:0;padding:0;font:inherit;letter-spacing:inherit;text-transform:inherit;color:inherit;cursor:pointer}
+.skp .ajg-tab th[aria-sort]{color:var(--ink);font-weight:600}
+.skp .ajg-tab td{vertical-align:top}
+.skp .ajg-tab td:first-child,.skp .ajg-tab th:first-child{padding-left:8px}
+.skp .ajg-tab td.sortert{font-weight:600}
+.skp .ajg-tab td .strip{min-width:84px;margin-top:3px}
+.skp .ajg-tab tr.meg td,.skp .ajg-val tr.meg td{background:var(--flate)}
+.skp .ajg-tab tr.meg td:first-child,.skp .ajg-val tr.meg td:first-child{box-shadow:inset 3px 0 0 var(--accent)}
+.skp .ajg-pl{font-family:var(--serif);font-size:1.45rem;line-height:1;font-weight:500;color:var(--accent);min-width:1.4em;text-align:right}
+.skp .ajg-pl.top{background:var(--mark);color:var(--mark-ink);padding:0 4px}
+.skp .fs-kort li.rad.meg{background:var(--flate);box-shadow:inset 3px 0 0 var(--accent);padding-left:4px}
+.skp .fs-kort .nm .nmt{font-weight:600;font-size:1rem}
+/* utviklingsgraf */
+.skp .ajg-graf{position:relative;width:100%;min-width:0}
+.skp .ajg-graf svg{display:block;touch-action:pan-y}
+.skp .ajg-ln{fill:none;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.skp .ajg-ln.meg{stroke-width:3}
+.skp .ajg-ln.k0{stroke:var(--k0)}.skp .ajg-ln.k1{stroke:var(--k1)}.skp .ajg-ln.k2{stroke:var(--k2)}.skp .ajg-ln.k3{stroke:var(--k3)}.skp .ajg-ln.k4{stroke:var(--k4)}.skp .ajg-ln.k5{stroke:var(--k5)}
+.skp .ajg-pt{stroke:var(--bg);stroke-width:2}
+.skp .ajg-pt.k0,.skp i.k0{fill:var(--k0);background:var(--k0)}.skp .ajg-pt.k1,.skp i.k1{fill:var(--k1);background:var(--k1)}.skp .ajg-pt.k2,.skp i.k2{fill:var(--k2);background:var(--k2)}
+.skp .ajg-pt.k3,.skp i.k3{fill:var(--k3);background:var(--k3)}.skp .ajg-pt.k4,.skp i.k4{fill:var(--k4);background:var(--k4)}.skp .ajg-pt.k5,.skp i.k5{fill:var(--k5);background:var(--k5)}
+.skp .ajg-el{fill:var(--ink);font:600 11.5px var(--sans)}
+.skp .ajg-kryss{stroke:var(--line2);stroke-width:1}
+.skp .legend i.ajg-sw{border-top:0;height:3px;width:18px}
+.skp .ajg-chips button i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+.skp .ajg-chips button[aria-pressed="true"]{background:var(--flate);border-color:var(--accent);color:var(--ink);font-weight:600}
+.skp .ajg-chips button:disabled{opacity:.45;cursor:not-allowed}
+.skp .ajg-tip{position:absolute;top:6px;width:190px;background:var(--bg);border:1px solid var(--line2);box-shadow:0 2px 8px rgba(0,0,0,.12);padding:7px 9px;font-size:.78rem;pointer-events:none;display:grid;gap:2px}
+.skp .ajg-tip div{display:flex;align-items:center;gap:6px}
+.skp .ajg-tip div span{margin-left:auto;font-weight:600}
+.skp .ajg-tip i{display:inline-block;width:9px;height:9px;border-radius:50%}
+.skp .ajg-tip i.m{background:none;border-top:1.6px dashed var(--muted);border-radius:0;height:0;width:12px}
+.skp .ajg-tip .m{color:var(--muted)}
+/* fordeling per nivå */
+.skp .ajg-leg{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.8rem;color:var(--muted)}
+.skp .ajg-leg i{display:inline-block;width:12px;height:12px;margin-right:5px;vertical-align:-1px}
+.skp .a5{background:var(--a5)}.skp .a4{background:var(--a4)}.skp .a3{background:var(--a3)}.skp .a2{background:var(--a2)}.skp .a1{background:var(--a1)}.skp .a0{background:var(--a0)}
+.skp .ajg-fd{display:grid;gap:4px}
+.skp .ajg-fd .r{display:grid;grid-template-columns:6.4em minmax(0,1fr) 3.4em;gap:8px;align-items:center;font-size:.82rem}
+.skp .ajg-fd .r>span:first-child{text-align:right}
+.skp .ajg-fd .r.meg{font-weight:600}
+.skp .ajg-fd .r .n{color:var(--muted);font-size:.76rem}
+.skp .ajg-fd .bar{display:flex;height:16px;background:var(--flate)}
+.skp .ajg-fd .bar i{display:block;height:100%;border-right:2px solid var(--bg)}
+.skp .ajg-fd .bar i:last-child{border-right:0}
+.skp .ajg-fd .bar i:hover{opacity:.8}
+/* varmekart */
+.skp table.ajg-hm{border-collapse:separate;border-spacing:2px;font-size:.8rem}
+.skp table.ajg-hm th{font-size:.68rem;letter-spacing:.03em;padding:4px 4px;text-align:center;white-space:nowrap}
+.skp table.ajg-hm th:first-child{text-align:left}
+.skp table.ajg-hm th.meg{color:var(--ink);font-weight:700}
+.skp table.ajg-hm td{border-bottom:0;padding:5px 4px;font-size:.78rem}
+.skp table.ajg-hm td:first-child{white-space:nowrap;padding-right:10px;font-size:.8rem;position:sticky;left:0;background:var(--bg);z-index:1}
+.skp table.ajg-hm th:first-child{position:sticky;left:0;background:var(--bg);z-index:1}
+.skp table.ajg-hm td.c{text-align:center;min-width:42px;background:var(--flate)}
+.skp table.ajg-hm td.c.meg{outline:1px solid var(--accent);outline-offset:-1px}
+.skp table.ajg-hm tr.sum td{border-top:1px solid var(--line2);color:var(--muted);text-align:center}
+.skp table.ajg-hm tr.sum td:first-child{text-align:left}
+/* validering */
+.skp table.ajg-val th.gr{text-align:center;border-bottom:1px solid var(--line2)}
+.skp table.ajg-val td.stor{font-weight:700;color:var(--ink)}
+.skp table.ajg-val tr.sum td{font-weight:600;border-top:1px solid var(--accent)}
+.skp .ajg-metode{background:var(--flate);padding:12px 16px}
+.skp .ajg-metode ul{margin:0;padding-left:1.1em;display:grid;gap:5px;font-size:.86rem;max-width:100ch}
+@media(max-width:640px){
+  .skp .ajg-fd .r{grid-template-columns:5.2em minmax(0,1fr) 2.8em;gap:6px}
+  .skp .ajg-verktoy{justify-content:flex-start;margin-top:0}
+  .skp table.ajg-hm td:first-child{white-space:normal;min-width:8.5em;max-width:9.5em;font-size:.74rem;line-height:1.2}
+}

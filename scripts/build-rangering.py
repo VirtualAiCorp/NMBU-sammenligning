@@ -349,6 +349,10 @@ def main():
             toppKomb = collections.defaultdict(lambda: [0, 0.0])
             rap = collections.Counter()
             ajgA = collections.Counter()  # AJG-anslag, bare NVI-rapporterte artikler (som kalibreringen)
+            # AJG-sammenligningen: per AJG-fagfelt, bare NVI-rapporterte artikler i AJG-tidsskrift:
+            # [antall, antall nivå 3+, antall nivå 4/4*, forfatterandel, forfatterandel 3+, forfatterandel 4/4*].
+            # Bare aggregater per skole og år; AJG-nivå per tidsskrift går ikke ut.
+            ajgFag = collections.defaultdict(lambda: [0, 0, 0, 0.0, 0.0, 0.0])
             for x in d["artikler"]:
                 s["n"] += 1
                 s["nvi"] += x.get("nvi", False)
@@ -390,6 +394,10 @@ def main():
                         rap["abdc" + tb[0]] += 1
                     if ajgv in AJG_NIVAER:
                         rap["ajg" + ajgv] += 1
+                        if tj[1]:
+                            fg = ajgFag[tj[1]]; hoy = ajgv in ("3", "4", "4*"); topp4 = ajgv in ("4", "4*")
+                            fg[0] += 1; fg[1] += hoy; fg[2] += topp4
+                            fg[3] += andel; fg[4] += andel * hoy; fg[5] += andel * topp4
                     elif ajgv == "usjekket":
                         rap["ajgUsjekket"] += 1
                     if ta and ta[0] in ("topp", "3"):
@@ -411,6 +419,7 @@ def main():
                             "komb": {kk: [v[0], round(v[1], 4)] for kk, v in sorted(komb.items())},
                             "ajgA": {"topp": ajgA["topp"], "3": ajgA["3"], "nvi": ajgA["n"]},
                             "toppKomb": {kk: [v[0], round(v[1], 4)] for kk, v in sorted(toppKomb.items())},
+                            "ajgFag": {kk: v[:3] + [round(z, 4) for z in v[3:]] for kk, v in sorted(ajgFag.items())} if lister["ajg"] else None,
                             "rapport": {k: v for k, v in sorted(rap.items())} | {"harAjg": bool(lister["ajg"])}}
         topp.sort(key=lambda t: (-t["aar"], t["tidsskrift"] or ""))
         return per_aar, topp, dict(fag)

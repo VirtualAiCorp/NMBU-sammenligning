@@ -861,3 +861,34 @@ KI-chat og uten «Spør KI» (`utenKi` på `AfModulSide`). Grunnen er at metoden
 - **Retting:** `make-hh-programkart.py` setter `alleSForsteprioritet: ["2022", "2023"]` for `nhh_moa`, og `fill-local-admissions.py` bruker da førsteprioritet som «Alle søkere» og tømmer kvalifiserte for de årene. Merknad i gruppenoten for «Økonomi og administrasjon (master)».
 - **NHHs internasjonale MSc** (MSC23–25, eget opptak fra 2023, 157–176 kvalifiserte førsteprioritetssøkere per år) er skilt ut som egen oppføring `nhh_msc` (svakere sammenligning, ikke valgt som standard). NHH-oppføringen gjelder nå bare de norske masterkodene; dette endrer også NHH-tallene i emner, gjennomføring og studentene.
 - **Kryssjekk:** NHHs årsrapport 2023 og nettsider oppgir søkertall bare for bacheloren (Samordna), ikke for masteren. DBH er eneste offentlige kilde for mastersøkerne; tallene kunne derfor ikke kontrolleres mot NHHs egne.
+
+## 45. AJG-sammenligning av handelshøyskolene (07.10.2026)
+
+Ny fane «AJG-sammenligning» i den interne rangeringen (`AjgSammenligning` i `Handelshoyskolerangering.tsx`, stil i
+`styles/skoleportrett.css` under `.skp.ajg`, lys/mørk og mobil). Vises bare når AJG-lista er lagt inn (`lister.ajg`).
+- **Kilde og grunnlag:** AJG 2024 (`ajg2024.csv`, 1 823 tidsskrift, gitignored) for alle år 2016–2025, koblet på ISSN/eISSN
+  mot NVI-rapporterte artikler i NVA etter tilknytning (avgrensningene i `skoler.json`). Brukt etter avtale med Chartered ABS (§43).
+- **Data:** nivåfordelingen (4*, 4, 3, 2, 1, ikke på AJG) med hel og brøkdelt telling regnes i nettleseren fra den eksisterende
+  `komb` per skole og år (fjerde felt = AJG-nivå, femte = NVI). Nytt felt `ajgFag` per skole og år: AJG-fagfelt →
+  [antall, antall 3+, antall 4/4*, forfatterandel, forfatterandel 3+, forfatterandel 4/4*], bare NVI-artikler i AJG-tidsskrift.
+  Ingen AJG-nivå per tidsskrift er lagt til i nettleserdataene (det som fantes fra før, er «Tidsskriftene bak Topp»).
+- **Mål:** antall og per 100 årsverk og år (sum artikler / sum årsverk i perioden × 100) for 4*, 4, 3, 4+ og 3+; dekning (andel
+  av NVI-artiklene i AJG-tidsskrift); andel 3+ og 4+ av AJG-artiklene; AJG-snitt (4* = 5 … 1 = 1) som merket tilleggsmål.
+  Standard: siste treårsvindu (2023–2025), hel telling (som NHH-rapporten), HK-dirs nevner (UN1 + UN2). Valg: enkeltår, fem år,
+  hele perioden, brøk (1/n), NHHs nevner (UN1 + postdoktorer), antall, referanseenheter.
+- **Innhold:** sorterbar tabell (plass «nr. x av n» på sortert kolonne, prikkestriper, HH NMBU uthevet; kortliste under 640 px),
+  utvikling 2016–2025 for opptil seks skoler (4+ per 100 årsverk per år eller glidende treårssnitt, median stiplet, palett validert
+  for fargesvake i lys og mørk), fordeling per nivå (stablet stolpe), fagfeltprofil (varmekart AJG-fagfelt × skole, 3+ eller 4+,
+  andel av skolens eller antall), validering mot NHH Research Report 2024 (åtte skoler 2020–2024, avvik i prosent), metodeboks
+  og CSV-nedlasting av tabellen (semikolon, desimalkomma; ikke AJG-lista).
+- **Lenke:** `?rangering&fane=ajg&ajgperiode=2024&ajgtelling=brok&ajgnevner=utenstip&ajgvis=antall&ajgsort=a3&ajgref=1&
+  ajgskoler=nmbu,nhh,,uia` (bare avvik fra standard skrives; tom plass i `ajgskoler` holder fargen til de andre skolene).
+- **Resultat 07.10 (standardvalg, 4+ per 100 årsverk og år, 2023–2025):** BI 16,1, NHH 15,5, UiS 12,0, NTNU 8,1, UiA 8,0 …
+  HH NMBU 3,1 (nr. 9 av 15; 6 artikler på 4/4*, 23,0 på 3+ per 100 årsverk, dekning 48 %).
+- **Validering mot NHH-rapporten:** 2024 treffer nesten eksakt (sum åtte skoler 4* 54 mot 54, 4 105 mot 99, 3 242 mot 240;
+  avvik: HH NMBU nivå 3 12 mot 16, NTNU 4/3 høyere fordi vi også har med samfunnsøkonomi). 2020–2023 avviker mer (sum 2020–2024:
+  4* +15 %, 4 +17 %, 3 +12 %), trolig fordi NHH brukte AJG-versjonen som gjaldt da; UiS og UiT ligger klart over, NTNU klart
+  under NHH-tallene i 2020–2022 (bør avklares: avgrensning eller NVA-tilknytning for eldre NTNU-artikler).
+- **Rangeringen:** målet «AJG 4/4* per 100 årsverk» (ekte AJG, vekt 10) fantes allerede; vekter og standardrangering er uendret.
+- **Svakheter:** AJG 2024 brukt bakover; tidsskrift utenfor AJG telles ikke (dekning 26–72 %); ulike avgrensninger (NTNU, INN);
+  HVL mangler årsverk i DBH før 2024 og HiØ før 2021, så vinduer med manglende år bruker snittet av årene som finnes.
