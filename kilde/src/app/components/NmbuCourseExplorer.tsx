@@ -2,6 +2,7 @@ import { Fragment, useEffect, useMemo, useState } from 'react';
 import { Search, Info, ExternalLink } from 'lucide-react';
 import { NmbuNationalCompare } from './NmbuNationalCompare';
 import { NmbuOpptakTab } from './NmbuOpptakTab';
+import { NmbuFsIntern } from './NmbuFsIntern';
 import { emneUrl } from '../data/emneUrl';
 import { useInnebygd } from '../innebygd';
 
@@ -292,6 +293,9 @@ export function NmbuCourseExplorer({ onBack }: { onBack: () => void }) {
                     })}
                   </div>
                 </div>
+
+                <NmbuFsIntern kode={course.kode} programmer={course.programs} sisteDbhAar={data!.years[data!.years.length - 1]}
+                  programNavn={(pk) => data!.programs[pk]?.navn ?? pk} />
 
                 {/* Visningsvalg: per studieprogram / andre studiesteder */}
                 <div className="mt-7 flex items-center justify-between gap-3 flex-wrap">

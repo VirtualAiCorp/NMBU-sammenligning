@@ -1081,3 +1081,20 @@ Ny fane «Opptak per studieprogram» ved siden av «Per studieprogram» (`compon
   kravkoden for siste kull i perioden; endringer vises under koden (B-ØLIT GENS → MATRS fra 2025, B-ECON GENS → MATTE4 fra 2026).
 - **Årsvalg (rettet 15.10):** ett valg i fanen styrer både karakterene på emnet og opptakskullet (starter på årsvalget øverst). «Alle» = summen av karakterene 2021–2025 og opptakstall vektet over de samme kullene. Først styrte valget bare opptakskolonnene, så «Kand.» sto fast på 2025.
 - **Forbehold:** studentene på emnet ble ofte tatt opp året før; tallene beskriver programmets opptak.
+
+## 52. Interne FS-tall per emne før DBH (STAT100 våren 2026) (15.10.2026)
+
+Mathias limte inn FS-rapporten FS754.001 «Gjennomføringsfakta – emne» for STAT100, 2026 vår (DBH har ikke vår 2026 ennå).
+- **Data:** tallene er ført inn for hånd i `data/nmbu/kilder/fs-lokalt/stat100-2026-var.json` (gitignored; ny regel i `.gitignore`).
+  Bare aggregater: per studieprogram eksamensmeldt, bestått, stryk, ikke møtt og snittkarakter (bokstav), og karakterfordelingen
+  A–F for hele emnet. Navn på emneansvarlig er ikke tatt med. Skjermbildet var side 1 av 3; programmene på side 2–3 er regnet
+  som rest (hele emnet minus innførte program: 42 bestått, 12 stryk).
+- **Bygg:** `scripts/build-emner-fs-intern.py` → kryptert `kilde/public/intern/emner-fs.json` (samme INTERN_PASSORD og format som
+  «Opptak H26 (intern)»; kildevakten krever ren konvolutt i `intern/`, så emnekodene (ikke tallene) står ukryptert i
+  `kilde/public/emner-fs-indeks.json`). Program med under 3 studenter med resultat slås inn i
+  «Øvrige program». Ny termin: legg en ny fil i `fs-lokalt/` og kjør skriptet.
+- **Visning:** `components/NmbuFsIntern.tsx`, en låst boks under karakterfordelingen i «Alle emner ved NMBU» for emner med FS-tall.
+  Etter opplåsing: nøkkeltall og A–F for hele emnet, og sorterbar tabell per program med stryk i terminen ved siden av stryk i
+  siste DBH-år. Husker passordet i økten (`intern-opptak-pw`, samme som de andre interne sidene).
+- **STAT100 vår 2026:** 465 med resultat, stryk 37,0 %, snitt 1,83 (A=5 … F=0), 71 ikke møtt. B-ØA 48,4 %, B-ECON 44,7 %,
+  B-ØLIT 36,8 %. Erstattes av DBH-tallene når DBH publiserer 2026.
