@@ -1151,3 +1151,20 @@ karakterer|program|oa|pensum|laeringsmal|andre|fordeling`). Eget passord `STAT10
   emnet står i kategori 2. Den første versjonen brukte emnets kategori, som var feil. Merk: modulen «Inntekt» (§20) bruker emnets kategori.
 - **Pensum:** pensumlistene ligger stort sett bak innlogging (Leganto/Canvas); bøker fra uoffisielle kilder er merket «usikker kilde».
 - Kildevakten sjekker nå INTERN_PASSORD, STAT100_PASSORD og RANGERING_PASSORD etter bygget.
+
+## 54. INN Lillehammer og Rena byttet tilbake i HH-dataene (15.10.2026)
+
+Programkartet for HH hadde byttet om DBH-kodene for ØA-bachelor ved INN (rettet i c3559b7: `inn_oa` Lillehammer = BØADM,
+`inn_rena_oa` Rena/Åmot = ØKBAC, etter INNs studiekatalog). Alt som var bygd fra `data/hh/dbh-programkart.json` før det, hadde
+Lillehammer og Rena byttet om. Bygd på nytt fra cachen (uten `--refresh`), i denne rekkefølgen:
+`fetch-admission-points.py hh` → `build-faculty.sh hh` → `build-completion.py hh` → `build-students.py hh` →
+`build-studiebarometer.py hh` → `build-internasjonal.py`; `build-revenue.py` ble kjørt etter `build-completion.py` (943f1ad).
+- **Rent bytte:** emner/karakterer, gjennomføring, studentene, studiebarometeret og snittpoeng (DBH 571) for de to oppføringene;
+  ingen andre program endret seg. `build-staff.py` ga ingen endring (begge programmene hører til samme eierfakultet).
+- **Studiebarometer-cachen** (`data/hh/kilder/studiebarometer/<entryId>.json`) ligger per oppføring, så de to filene ble byttet om
+  for hånd før kjøringen; ellers ville den gamle koblingen blitt lest fra cachen.
+- **Kontroll:** tallene henger nå sammen med Samordna-opptaket. Lillehammer (80 plasser, 786 søkere i 2025): startkull 2022 = 95,
+  61 møtte i 2025, 218 registrerte og 42 kandidater i 2025. Rena (40 plasser, 210 søkere): startkull 2022 = 31, 26 møtte,
+  84 registrerte og 8 kandidater.
+- **Etterslep tatt igjen:** DBH 571 var ikke hentet etter at årsstudiene og `nmbu_bel` kom inn i HH-kartet; de fikk snittpoeng nå.
+- Uberørt: `prisCampusData` (bare private), markedsstatus og rangeringen (bare medlemskap i listen).

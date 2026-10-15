@@ -2535,6 +2535,43 @@
     "institusjon": "Universitetet i Innlandet",
     "programnavn": "Økonomi og administrasjon (bachelor)",
     "isNmbu": false,
+    "sbId": "1177_bøadm",
+    "url": "https://www.studiebarometeret.no/no/student/studieprogram/1177_b%C3%B8adm",
+    "latestYear": 2025,
+    "respondents": 11,
+    "responseRate": 18.6,
+    "scores": {
+      "undervisning": null,
+      "tilbakemeldinger": null,
+      "vurderingsformer": null,
+      "laeringsmiljo": null,
+      "organisering": null,
+      "yrkesrelevans": null,
+      "engasjement": null,
+      "helhetsvurdering": null
+    },
+    "fieldAverage": {
+      "undervisning": 3.5,
+      "tilbakemeldinger": 3.0,
+      "vurderingsformer": 4.0,
+      "laeringsmiljo": 3.6,
+      "organisering": 3.7,
+      "yrkesrelevans": 3.0,
+      "engasjement": 3.5,
+      "helhetsvurdering": 3.9
+    },
+    "fieldLabel": "Av alle Økonomisk-administrative fag",
+    "history": [],
+    "subquestions": {},
+    "warning": "For få svar til å vise resultat i én eller flere kategorier."
+  },
+  {
+    "entryId": "inn_rena_oa",
+    "groupId": "oa",
+    "shortName": "INN Rena",
+    "institusjon": "Universitetet i Innlandet",
+    "programnavn": "Økonomi og administrasjon (bachelor)",
+    "isNmbu": false,
     "sbId": "1177_økbac",
     "url": "https://www.studiebarometeret.no/no/student/studieprogram/1177_%C3%B8kbac",
     "latestYear": 2025,
@@ -2615,43 +2652,6 @@
         }
       }
     ],
-    "subquestions": {},
-    "warning": "For få svar til å vise resultat i én eller flere kategorier."
-  },
-  {
-    "entryId": "inn_rena_oa",
-    "groupId": "oa",
-    "shortName": "INN Rena",
-    "institusjon": "Universitetet i Innlandet",
-    "programnavn": "Økonomi og administrasjon (bachelor)",
-    "isNmbu": false,
-    "sbId": "1177_bøadm",
-    "url": "https://www.studiebarometeret.no/no/student/studieprogram/1177_b%C3%B8adm",
-    "latestYear": 2025,
-    "respondents": 11,
-    "responseRate": 18.6,
-    "scores": {
-      "undervisning": null,
-      "tilbakemeldinger": null,
-      "vurderingsformer": null,
-      "laeringsmiljo": null,
-      "organisering": null,
-      "yrkesrelevans": null,
-      "engasjement": null,
-      "helhetsvurdering": null
-    },
-    "fieldAverage": {
-      "undervisning": 3.5,
-      "tilbakemeldinger": 3.0,
-      "vurderingsformer": 4.0,
-      "laeringsmiljo": 3.6,
-      "organisering": 3.7,
-      "yrkesrelevans": 3.0,
-      "engasjement": 3.5,
-      "helhetsvurdering": 3.9
-    },
-    "fieldLabel": "Av alle Økonomisk-administrative fag",
-    "history": [],
     "subquestions": {},
     "warning": "For få svar til å vise resultat i én eller flere kategorier."
   },

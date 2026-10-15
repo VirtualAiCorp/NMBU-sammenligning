@@ -1,4 +1,4 @@
-// GENERERT av scripts/build-completion.py 2026-10-07 – ikke rediger for hånd.
+// GENERERT av scripts/build-completion.py 2026-10-15 – ikke rediger for hånd.
 // Kilde: DBH/HKDIR tabell 707 (gjennomføring og frafall per startkull), 123 (registrerte, høst), 110 (nye), 104 (kandidater), 335 (studiepoeng iht. plan).
 import type { LandsamLevel } from './landsamAdmissionData';
 
@@ -20,7 +20,7 @@ export interface CompletionProgram {
 }
 export interface CompletionGroup { id: string; label: string; level: LandsamLevel; nmbuIds: string[]; defaultIds: string[]; programs: CompletionProgram[]; }
 
-export const COMPLETION_HENTET = '2026-10-07';
+export const COMPLETION_HENTET = '2026-10-15';
 
 export const COMPLETION_GROUPS: CompletionGroup[] = [
   {
@@ -340,27 +340,7 @@ export const COMPLETION_GROUPS: CompletionGroup[] = [
         ],
       },
       {
-        entryId: 'inn_oa', shortName: 'INN Lillehammer', institusjon: 'Universitetet i Innlandet', isNmbu: false, programnavn: 'Økonomi og administrasjon (bachelor)', dbhKoder: ['ØKBAC'],
-        kull: [
-          { aar: 2018, normertAar: 2021, nivaa: 'B3', startkull: 48, startkullKvinner: 14, fullfortNormert: 7, fullfortNormertKvinner: 0, fullfort1: 12, fullfort2: 13, studerer: 23, studerer1: 11, studerer2: 7, frafalt: 18, frafalt1: 25, frafalt2: 28, inst: { fullfortNormert: 10, fullfort1: 16, fullfort2: 17, frafalt: 17, frafalt2: 23 }, sektor: { fullfortNormert: 10, fullfort1: 18, fullfort2: 19, frafalt: 10, frafalt2: 17 } },
-          { aar: 2019, normertAar: 2022, nivaa: 'B3', startkull: 56, startkullKvinner: 21, fullfortNormert: 17, fullfortNormertKvinner: 8, fullfort1: 22, fullfort2: 24, studerer: 19, studerer1: 13, studerer2: 6, frafalt: 20, frafalt1: 21, frafalt2: 26, inst: { fullfortNormert: 18, fullfort1: 23, fullfort2: 25, frafalt: 25, frafalt2: 25 }, sektor: { fullfortNormert: 19, fullfort1: 25, fullfort2: 27, frafalt: 17, frafalt2: 18 } },
-          { aar: 2020, normertAar: 2023, nivaa: 'B3', startkull: 57, startkullKvinner: 27, fullfortNormert: 13, fullfortNormertKvinner: 6, fullfort1: 16, fullfort2: 16, studerer: 22, studerer1: 12, studerer2: 10, frafalt: 22, frafalt1: 29, frafalt2: 31, inst: { fullfortNormert: 16, fullfort1: 21, fullfort2: 22, frafalt: 21, frafalt2: 27 }, sektor: { fullfortNormert: 16, fullfort1: 21, fullfort2: 22, frafalt: 19, frafalt2: 22 } },
-          { aar: 2021, normertAar: 2024, nivaa: 'B3', startkull: 59, startkullKvinner: 29, fullfortNormert: 11, fullfortNormertKvinner: 7, fullfort1: 14, fullfort2: 0, studerer: 20, studerer1: 13, studerer2: 0, frafalt: 28, frafalt1: 32, frafalt2: 0, inst: { fullfortNormert: 14, fullfort1: 20, fullfort2: 0, frafalt: 24, frafalt2: 0 }, sektor: { fullfortNormert: 15, fullfort1: 22, fullfort2: 0, frafalt: 14, frafalt2: 0 } },
-          { aar: 2022, normertAar: 2025, nivaa: 'B3', startkull: 31, startkullKvinner: 12, fullfortNormert: 9, fullfortNormertKvinner: 5, fullfort1: 0, fullfort2: 0, studerer: 8, studerer1: 0, studerer2: 0, frafalt: 14, frafalt1: 0, frafalt2: 0, inst: { fullfortNormert: 11, fullfort1: 0, fullfort2: 0, frafalt: 12, frafalt2: 0 }, sektor: { fullfortNormert: 11, fullfort1: 0, fullfort2: 0, frafalt: 12, frafalt2: 0 } },
-        ],
-        aar: [
-          { aar: 2018, registrerte: 105, registrerteKvinner: 38, nye: 32, nyeKvinner: 8, kandidater: 25, kandidaterKvinner: 6, spPlanlagt: 5212.5, spGjennomfort: 3960 },
-          { aar: 2019, registrerte: 114, registrerteKvinner: 46, nye: 42, nyeKvinner: 14, kandidater: 15, kandidaterKvinner: 6, spPlanlagt: 4995, spGjennomfort: 3847.5 },
-          { aar: 2020, registrerte: 117, registrerteKvinner: 47, nye: 40, nyeKvinner: 20, kandidater: 17, kandidaterKvinner: 6, spPlanlagt: 5572.5, spGjennomfort: 4072.5 },
-          { aar: 2021, registrerte: 127, registrerteKvinner: 56, nye: 41, nyeKvinner: 16, kandidater: 18, kandidaterKvinner: 6, spPlanlagt: 6015, spGjennomfort: 4042.5 },
-          { aar: 2022, registrerte: 87, registrerteKvinner: 36, nye: 18, nyeKvinner: 6, kandidater: 18, kandidaterKvinner: 5, spPlanlagt: 5437.5, spGjennomfort: 3727.5 },
-          { aar: 2023, registrerte: 87, registrerteKvinner: 29, nye: 29, nyeKvinner: 7, kandidater: 17, kandidaterKvinner: 9, spPlanlagt: 4642.5, spGjennomfort: 2842.5 },
-          { aar: 2024, registrerte: 85, registrerteKvinner: 31, nye: 25, nyeKvinner: 8, kandidater: 17, kandidaterKvinner: 7, spPlanlagt: 4365, spGjennomfort: 2977.5 },
-          { aar: 2025, registrerte: 84, registrerteKvinner: 30, nye: 15, nyeKvinner: 6, kandidater: 8, kandidaterKvinner: 0, spPlanlagt: 4462.5, spGjennomfort: 3030 },
-        ],
-      },
-      {
-        entryId: 'inn_rena_oa', shortName: 'INN Rena', institusjon: 'Universitetet i Innlandet', isNmbu: false, programnavn: 'Økonomi og administrasjon (bachelor)', dbhKoder: ['BØADM'],
+        entryId: 'inn_oa', shortName: 'INN Lillehammer', institusjon: 'Universitetet i Innlandet', isNmbu: false, programnavn: 'Økonomi og administrasjon (bachelor)', dbhKoder: ['BØADM'],
         kull: [
           { aar: 2018, normertAar: 2021, nivaa: 'B3', startkull: 109, startkullKvinner: 36, fullfortNormert: 64, fullfortNormertKvinner: 22, fullfort1: 68, fullfort2: 69, studerer: 15, studerer1: 8, studerer2: 5, frafalt: 30, frafalt1: 33, frafalt2: 35, inst: { fullfortNormert: 68, fullfort1: 74, fullfort2: 77, frafalt: 26, frafalt2: 28 }, sektor: { fullfortNormert: 68, fullfort1: 76, fullfort2: 80, frafalt: 18, frafalt2: 18 } },
           { aar: 2019, normertAar: 2022, nivaa: 'B3', startkull: 89, startkullKvinner: 32, fullfortNormert: 35, fullfortNormertKvinner: 11, fullfort1: 42, fullfort2: 45, studerer: 26, studerer1: 16, studerer2: 10, frafalt: 28, frafalt1: 31, frafalt2: 34, inst: { fullfortNormert: 38, fullfort1: 47, fullfort2: 52, frafalt: 29, frafalt2: 32 }, sektor: { fullfortNormert: 39, fullfort1: 50, fullfort2: 56, frafalt: 20, frafalt2: 21 } },
@@ -377,6 +357,26 @@ export const COMPLETION_GROUPS: CompletionGroup[] = [
           { aar: 2023, registrerte: 198, registrerteKvinner: 73, nye: 60, nyeKvinner: 25, kandidater: 49, kandidaterKvinner: 13, spPlanlagt: 10812.5, spGjennomfort: 8232.5 },
           { aar: 2024, registrerte: 204, registrerteKvinner: 75, nye: 59, nyeKvinner: 20, kandidater: 37, kandidaterKvinner: 9, spPlanlagt: 10597.5, spGjennomfort: 8100 },
           { aar: 2025, registrerte: 218, registrerteKvinner: 83, nye: 66, nyeKvinner: 22, kandidater: 42, kandidaterKvinner: 11, spPlanlagt: 11025, spGjennomfort: 9030 },
+        ],
+      },
+      {
+        entryId: 'inn_rena_oa', shortName: 'INN Rena', institusjon: 'Universitetet i Innlandet', isNmbu: false, programnavn: 'Økonomi og administrasjon (bachelor)', dbhKoder: ['ØKBAC'],
+        kull: [
+          { aar: 2018, normertAar: 2021, nivaa: 'B3', startkull: 48, startkullKvinner: 14, fullfortNormert: 7, fullfortNormertKvinner: 0, fullfort1: 12, fullfort2: 13, studerer: 23, studerer1: 11, studerer2: 7, frafalt: 18, frafalt1: 25, frafalt2: 28, inst: { fullfortNormert: 10, fullfort1: 16, fullfort2: 17, frafalt: 17, frafalt2: 23 }, sektor: { fullfortNormert: 10, fullfort1: 18, fullfort2: 19, frafalt: 10, frafalt2: 17 } },
+          { aar: 2019, normertAar: 2022, nivaa: 'B3', startkull: 56, startkullKvinner: 21, fullfortNormert: 17, fullfortNormertKvinner: 8, fullfort1: 22, fullfort2: 24, studerer: 19, studerer1: 13, studerer2: 6, frafalt: 20, frafalt1: 21, frafalt2: 26, inst: { fullfortNormert: 18, fullfort1: 23, fullfort2: 25, frafalt: 25, frafalt2: 25 }, sektor: { fullfortNormert: 19, fullfort1: 25, fullfort2: 27, frafalt: 17, frafalt2: 18 } },
+          { aar: 2020, normertAar: 2023, nivaa: 'B3', startkull: 57, startkullKvinner: 27, fullfortNormert: 13, fullfortNormertKvinner: 6, fullfort1: 16, fullfort2: 16, studerer: 22, studerer1: 12, studerer2: 10, frafalt: 22, frafalt1: 29, frafalt2: 31, inst: { fullfortNormert: 16, fullfort1: 21, fullfort2: 22, frafalt: 21, frafalt2: 27 }, sektor: { fullfortNormert: 16, fullfort1: 21, fullfort2: 22, frafalt: 19, frafalt2: 22 } },
+          { aar: 2021, normertAar: 2024, nivaa: 'B3', startkull: 59, startkullKvinner: 29, fullfortNormert: 11, fullfortNormertKvinner: 7, fullfort1: 14, fullfort2: 0, studerer: 20, studerer1: 13, studerer2: 0, frafalt: 28, frafalt1: 32, frafalt2: 0, inst: { fullfortNormert: 14, fullfort1: 20, fullfort2: 0, frafalt: 24, frafalt2: 0 }, sektor: { fullfortNormert: 15, fullfort1: 22, fullfort2: 0, frafalt: 14, frafalt2: 0 } },
+          { aar: 2022, normertAar: 2025, nivaa: 'B3', startkull: 31, startkullKvinner: 12, fullfortNormert: 9, fullfortNormertKvinner: 5, fullfort1: 0, fullfort2: 0, studerer: 8, studerer1: 0, studerer2: 0, frafalt: 14, frafalt1: 0, frafalt2: 0, inst: { fullfortNormert: 11, fullfort1: 0, fullfort2: 0, frafalt: 12, frafalt2: 0 }, sektor: { fullfortNormert: 11, fullfort1: 0, fullfort2: 0, frafalt: 12, frafalt2: 0 } },
+        ],
+        aar: [
+          { aar: 2018, registrerte: 105, registrerteKvinner: 38, nye: 32, nyeKvinner: 8, kandidater: 25, kandidaterKvinner: 6, spPlanlagt: 5212.5, spGjennomfort: 3960 },
+          { aar: 2019, registrerte: 114, registrerteKvinner: 46, nye: 42, nyeKvinner: 14, kandidater: 15, kandidaterKvinner: 6, spPlanlagt: 4995, spGjennomfort: 3847.5 },
+          { aar: 2020, registrerte: 117, registrerteKvinner: 47, nye: 40, nyeKvinner: 20, kandidater: 17, kandidaterKvinner: 6, spPlanlagt: 5572.5, spGjennomfort: 4072.5 },
+          { aar: 2021, registrerte: 127, registrerteKvinner: 56, nye: 41, nyeKvinner: 16, kandidater: 18, kandidaterKvinner: 6, spPlanlagt: 6015, spGjennomfort: 4042.5 },
+          { aar: 2022, registrerte: 87, registrerteKvinner: 36, nye: 18, nyeKvinner: 6, kandidater: 18, kandidaterKvinner: 5, spPlanlagt: 5437.5, spGjennomfort: 3727.5 },
+          { aar: 2023, registrerte: 87, registrerteKvinner: 29, nye: 29, nyeKvinner: 7, kandidater: 17, kandidaterKvinner: 9, spPlanlagt: 4642.5, spGjennomfort: 2842.5 },
+          { aar: 2024, registrerte: 85, registrerteKvinner: 31, nye: 25, nyeKvinner: 8, kandidater: 17, kandidaterKvinner: 7, spPlanlagt: 4365, spGjennomfort: 2977.5 },
+          { aar: 2025, registrerte: 84, registrerteKvinner: 30, nye: 15, nyeKvinner: 6, kandidater: 8, kandidaterKvinner: 0, spPlanlagt: 4462.5, spGjennomfort: 3030 },
         ],
       },
       {

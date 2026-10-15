@@ -1,5 +1,5 @@
 {
- "generert": "2026-10-07",
+ "generert": "2026-10-15",
  "groups": [
   {
    "id": "oa",
@@ -1064,86 +1064,6 @@
      "aar": [
       {
        "aar": 2019,
-       "total": 114,
-       "a21": 33,
-       "a24": 39,
-       "a29": 23,
-       "a30": 19,
-       "utenlandske": 4,
-       "utveksling": null
-      },
-      {
-       "aar": 2020,
-       "total": 117,
-       "a21": 33,
-       "a24": 38,
-       "a29": 29,
-       "a30": 17,
-       "utenlandske": 3,
-       "utveksling": null
-      },
-      {
-       "aar": 2021,
-       "total": 127,
-       "a21": 27,
-       "a24": 43,
-       "a29": 37,
-       "a30": 20,
-       "utenlandske": 0,
-       "utveksling": null
-      },
-      {
-       "aar": 2022,
-       "total": 87,
-       "a21": 14,
-       "a24": 28,
-       "a29": 31,
-       "a30": 14,
-       "utenlandske": null,
-       "utveksling": 0
-      },
-      {
-       "aar": 2023,
-       "total": 87,
-       "a21": 22,
-       "a24": 22,
-       "a29": 20,
-       "a30": 23,
-       "utenlandske": null,
-       "utveksling": 0
-      },
-      {
-       "aar": 2024,
-       "total": 85,
-       "a21": 25,
-       "a24": 23,
-       "a29": 14,
-       "a30": 23,
-       "utenlandske": null,
-       "utveksling": 0
-      },
-      {
-       "aar": 2025,
-       "total": 84,
-       "a21": 19,
-       "a24": 27,
-       "a29": 18,
-       "a30": 20,
-       "utenlandske": null,
-       "utveksling": 0
-      }
-     ]
-    },
-    {
-     "entryId": "inn_rena_oa",
-     "shortName": "INN Rena",
-     "institusjon": "Universitetet i Innlandet",
-     "isNmbu": false,
-     "programnavn": "Økonomi og administrasjon (bachelor)",
-     "nivaa": "B3",
-     "aar": [
-      {
-       "aar": 2019,
        "total": 246,
        "a21": 106,
        "a24": 91,
@@ -1211,6 +1131,86 @@
        "a30": 8,
        "utenlandske": 3,
        "utveksling": 4
+      }
+     ]
+    },
+    {
+     "entryId": "inn_rena_oa",
+     "shortName": "INN Rena",
+     "institusjon": "Universitetet i Innlandet",
+     "isNmbu": false,
+     "programnavn": "Økonomi og administrasjon (bachelor)",
+     "nivaa": "B3",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 114,
+       "a21": 33,
+       "a24": 39,
+       "a29": 23,
+       "a30": 19,
+       "utenlandske": 4,
+       "utveksling": null
+      },
+      {
+       "aar": 2020,
+       "total": 117,
+       "a21": 33,
+       "a24": 38,
+       "a29": 29,
+       "a30": 17,
+       "utenlandske": 3,
+       "utveksling": null
+      },
+      {
+       "aar": 2021,
+       "total": 127,
+       "a21": 27,
+       "a24": 43,
+       "a29": 37,
+       "a30": 20,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2022,
+       "total": 87,
+       "a21": 14,
+       "a24": 28,
+       "a29": 31,
+       "a30": 14,
+       "utenlandske": null,
+       "utveksling": 0
+      },
+      {
+       "aar": 2023,
+       "total": 87,
+       "a21": 22,
+       "a24": 22,
+       "a29": 20,
+       "a30": 23,
+       "utenlandske": null,
+       "utveksling": 0
+      },
+      {
+       "aar": 2024,
+       "total": 85,
+       "a21": 25,
+       "a24": 23,
+       "a29": 14,
+       "a30": 23,
+       "utenlandske": null,
+       "utveksling": 0
+      },
+      {
+       "aar": 2025,
+       "total": 84,
+       "a21": 19,
+       "a24": 27,
+       "a29": 18,
+       "a30": 20,
+       "utenlandske": null,
+       "utveksling": 0
       }
      ]
     },
