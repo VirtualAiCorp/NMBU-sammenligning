@@ -1,6 +1,7 @@
 import { Fragment, useEffect, useMemo, useState } from 'react';
 import { Search, Info, ExternalLink } from 'lucide-react';
 import { NmbuNationalCompare } from './NmbuNationalCompare';
+import { NmbuOpptakTab } from './NmbuOpptakTab';
 import { emneUrl } from '../data/emneUrl';
 import { useInnebygd } from '../innebygd';
 
@@ -119,7 +120,7 @@ export function NmbuCourseExplorer({ onBack }: { onBack: () => void }) {
   const [year, setYear] = useState<string>(ALLE);
   const [selected, setSelected] = useState<string | null>(null);
   const [visAntall, setVisAntall] = useState(false);
-  const [visning, setVisning] = useState<'program' | 'nasjonalt'>('program');
+  const [visning, setVisning] = useState<'program' | 'opptak' | 'nasjonalt'>('program');
   const [delKjonn, setDelKjonn] = useState(false);
 
   useEffect(() => {
@@ -295,7 +296,7 @@ export function NmbuCourseExplorer({ onBack }: { onBack: () => void }) {
                 {/* Visningsvalg: per studieprogram / andre studiesteder */}
                 <div className="mt-7 flex items-center justify-between gap-3 flex-wrap">
                   <div className="flex rounded-lg overflow-hidden" style={{ border: '1px solid var(--nmbu-neutral-3)' }}>
-                    {([['program', 'Per studieprogram'], ['nasjonalt', 'Sammenlignbare emner ved andre studiesteder']] as const).map(([id, label]) => (
+                    {([['program', 'Per studieprogram'], ['opptak', 'Opptak per studieprogram'], ['nasjonalt', 'Sammenlignbare emner ved andre studiesteder']] as const).map(([id, label]) => (
                       <button key={id} onClick={() => setVisning(id)} className="px-3 py-1.5 text-xs font-medium transition-all"
                         style={{ backgroundColor: visning === id ? 'var(--nmbu-green-dark)' : '#fff', color: visning === id ? '#fff' : 'var(--nmbu-neutral-1)' }}>
                         {label}
@@ -303,22 +304,23 @@ export function NmbuCourseExplorer({ onBack }: { onBack: () => void }) {
                     ))}
                   </div>
                   <div className="flex items-center gap-4">
-                    <label className="flex items-center gap-1.5 cursor-pointer select-none" style={{ fontSize: 12, color: 'var(--nmbu-neutral-1)' }}>
+                    {visning !== 'opptak' && <label className="flex items-center gap-1.5 cursor-pointer select-none" style={{ fontSize: 12, color: 'var(--nmbu-neutral-1)' }}>
                       <input type="checkbox" checked={visAntall} onChange={(e) => setVisAntall(e.target.checked)} style={{ accentColor: 'var(--nmbu-green-dark)' }} />
                       Vis antall og prosent per karakter
-                    </label>
+                    </label>}
                     {visning === 'program' && (
                       <label className="flex items-center gap-1.5 cursor-pointer select-none" style={{ fontSize: 12, color: 'var(--nmbu-neutral-1)' }}>
                         <input type="checkbox" checked={delKjonn} onChange={(e) => setDelKjonn(e.target.checked)} style={{ accentColor: 'var(--nmbu-green-dark)' }} />
                         Del på kjønn
                       </label>
                     )}
-                    {visning === 'program' && <span style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)' }}>{programRows.length} program med studenter på emnet</span>}
+                    {visning !== 'nasjonalt' && <span style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)' }}>{programRows.length} program med studenter på emnet</span>}
                   </div>
                 </div>
                 {visning === 'nasjonalt' && (
                   <NmbuNationalCompare course={{ kode: course.kode, navn: course.navn, nus: course.nus ?? null, sp: course.studiepoeng }} year={year} visAntall={visAntall} whole={whole} />
                 )}
+                {visning === 'opptak' && <NmbuOpptakTab rader={programRows} whole={whole} />}
                 {visning === 'program' && (<>
                 <div className="overflow-x-auto mt-2">
                   <table className="w-full border-collapse text-xs">

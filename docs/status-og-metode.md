@@ -1063,3 +1063,20 @@ i den samlede rangeringen; foreløpig. Oppskrift for å hente på nytt: `data/ra
 - **Åpent:** (1) Bør standardmålet være median i stedet for snitt (snittet er svært følsomt for enkeltartikler)? (2) Svenske og
   danske institutter har lav dekning; bedre avgrensning krever SwePub/Pure-DOI-er koblet mot OpenAlex (som for Norge).
   (3) OpenAlex-tallene endrer seg ved hver oppdatering; hent på nytt før tall brukes utad.
+
+## 51. Opptak per studieprogram i «Alle emner ved NMBU» (15.10.2026)
+
+Ny fane «Opptak per studieprogram» ved siden av «Per studieprogram» (`components/NmbuOpptakTab.tsx`, data
+`kilde/public/nmbu-opptak.json` fra `scripts/build-nmbu-opptak.py`, cache i `data/nmbu/kilder/opptak-cache/`).
+- **Opptakskvalitet:** DBH tabell 571 «Gjennomsnittlige opptakspoeng for søkere» (1173, høst, opptakstype N). Tabellen gir summer;
+  snitt = sum / antall. Viser snitt opptakspoeng (konkurransepoeng) og karakterpoeng for dem som møtte til studiestart, per
+  opptakskull 2020–2025 eller samlet (vektet). Lokalt opptak (toårige master) har ikke poeng i DBH og vises som «Lokalt».
+- **Kravkode og poenggrense:** Samordna opptaks søkerportal, åpent søke-API `POST https://sok.samordnaopptak.no/api/v1/search`
+  med `{"filter":[{"term":{"admission.id":<id>}},{"term":{"institution.institutionNumber":192}}]}` (opptak 6/8/10/12/14/16/18 =
+  2020–2026). Feltet `reqCode` = kravkode; `quotaPointLimits` = poenggrenser ORD/ORDF. Forklaringen på kodene fra
+  `/api/v1/translations/kompetanseregelverk/<kode>/nb-NO`. SO-studiekode kobles til DBH-programkode på navn og nivå, med faste
+  koblinger i `KOBLING_MANUELL` (M-LUN, M-GEOM, M-MPP, REALFAG, B-MAT, VET). B-MILJØ (avviklet) er ikke koblet.
+- **Visning:** sorterbar tabell per program (kand., snitt, stryk, kravkode med endring over tid, opptakspoeng, karakterpoeng,
+  poenggrense, møtt) og «Samlet per kravkode» (karakterene summert per kravkode, opptakspoeng vektet med møtt). Ved «Alle» brukes
+  kravkoden for siste kull i perioden; endringer vises under koden (B-ØLIT GENS → MATRS fra 2025, B-ECON GENS → MATTE4 fra 2026).
+- **Forbehold:** studentene på emnet kan komme fra andre kull enn det valgte; tallene beskriver programmets opptak.
