@@ -143,7 +143,7 @@ function Karakterer({ d }: { d: Data }) {
   const fsS = fsH ? st({ ...fsH, G: 0, H: 0, total: fsH.A + fsH.B + fsH.C + fsH.D + fsH.E + fsH.F }) : null;
   const graf = [...rader.map((r) => ({ navn: r.y, s: sem === 'samlet' ? r.samlet : sem === '1' ? r.var : r.host, fs: false })),
     ...(fsS && sem !== '3' ? [{ navn: 'V2026*', s: fsS, fs: true }] : [])]
-    .map(({ navn, s, fs }) => ({ navn, fs, ...Object.fromEntries(L6.map((g) => [g, s.bokstav ? (s.counts[g] / s.bokstav) * 100 : 0])), stryk: s.stryk != null ? s.stryk * 100 : null, n: s.bokstav }));
+    .map(({ navn, s, fs }) => ({ navn, fs, ...Object.fromEntries(L6.map((g) => [g, s.bokstav ? (s.counts[g] / s.bokstav) * 100 : 0])), ...Object.fromEntries(L6.map((g) => [`${g}_n`, s.counts[g]])), stryk: s.stryk != null ? s.stryk * 100 : null, n: s.bokstav }));
   return (
     <div>
       <H2 under="Alle studenter på emnet, fordelt på vårsemesteret (ordinær eksamen) og høstsemesteret (i hovedsak kontinuasjon). Strykprosent = F / (A–F). Snitt = A=5 … E=1 for beståtte.">Karakterfordeling i STAT100, 2021–2025</H2>
@@ -155,12 +155,21 @@ function Karakterer({ d }: { d: Data }) {
           <BarChart data={graf} margin={{ top: 18, right: 10, left: -10, bottom: 0 }}>
             <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="var(--nmbu-neutral-3)" />
             <XAxis dataKey="navn" tick={{ fontSize: 11 }} /><YAxis tick={{ fontSize: 11 }} domain={[0, 100]} ticks={[0, 25, 50, 75, 100]} allowDataOverflow tickFormatter={(v: number) => `${v} %`} />
-            <Tooltip formatter={(v: number, k: string) => [`${nf(v, 1)} %`, k]} />
+            <Tooltip formatter={(v: number, k: string, it: { payload?: Record<string, number> }) => [`${nf(v, 1)} % (${it.payload?.[`${k}_n`] ?? '–'})`, k]} />
             <Legend wrapperStyle={{ fontSize: 11 }} />
-            {L6.map((g) => <Bar key={g} dataKey={g} stackId="k" fill={GRADE_COLORS[g]}>{g === 'F' && <LabelList dataKey="stryk" position="top" formatter={(v: number) => (v != null ? `${nf(v, 0)} %` : '')} style={{ fontSize: 10, fill: 'var(--nmbu-neutral-1)' }} />}</Bar>)}
+            {L6.map((g) => (
+              <Bar key={g} dataKey={g} stackId="k" fill={GRADE_COLORS[g]}>
+                <LabelList dataKey={`${g}_n`} content={(p: { x?: number | string; y?: number | string; width?: number | string; height?: number | string; value?: number | string }) => {
+                  const x = Number(p.x), y = Number(p.y), w = Number(p.width), h = Number(p.height);
+                  if (!(h >= 15) || p.value == null) return null;
+                  return <text x={x + w / 2} y={y + h / 2} textAnchor="middle" dominantBaseline="central" style={{ fontSize: 11, fontWeight: 700, fill: g === 'C' || g === 'D' ? '#1f1f1f' : '#fff' }}>{g} {p.value}</text>;
+                }} />
+                {g === 'F' && <LabelList dataKey="stryk" position="top" formatter={(v: number) => (v != null ? `${nf(v, 0)} %` : '')} style={{ fontSize: 10, fill: 'var(--nmbu-neutral-1)' }} />}
+              </Bar>
+            ))}
           </BarChart>
         </ResponsiveContainer>
-        <div style={{ fontSize: 10.5, color: 'var(--nmbu-neutral-2)', marginLeft: 8 }}>Tallet over stolpen er strykprosenten. {fsS ? '* V2026 = foreløpige tall fra FS for våren 2026 (ordinær eksamen).' : ''}</div>
+        <div style={{ fontSize: 10.5, color: 'var(--nmbu-neutral-2)', marginLeft: 8 }}>Tallet over stolpen er strykprosenten; tallene i feltene er antall kandidater med hver karakter. {fsS ? '* V2026 = foreløpige tall fra FS for våren 2026 (ordinær eksamen).' : ''}</div>
       </div>
       <div className="overflow-x-auto mt-4" style={kort}>
         <table className="w-full text-xs border-collapse">
@@ -340,6 +349,9 @@ function PerProgram({ d }: { d: Data }) {
 function OaStudentene({ d }: { d: Data }) {
   const [maal, setMaal] = useState<'stryk' | 'snitt'>('stryk');
   const [type, setType] = useState<'bachelor' | 'alle'>('bachelor');
+  const [periode, setPeriode] = useState<string>('2023-2025');
+  const perAar = periode.includes('-') ? (() => { const [f, t] = periode.split('-').map(Number); return Array.from({ length: t - f + 1 }, (_, i) => String(f + i)); })() : [periode];
+  const minN = perAar.length > 1 ? 20 : 10;
   const aarene = ['2021', '2022', '2023', '2024', '2025'];
   // Én rad per institusjon, program (med studiested) og emne
   const grupper = useMemo(() => {
@@ -363,9 +375,9 @@ function OaStudentene({ d }: { d: Data }) {
   };
   // Graf: stryk/snitt 2023–25 per rad, sortert
   const graf = grupper.map((g) => {
-    const s = st(g.sum3); const nav = g.r0.kort === 'NMBU' ? `NMBU STAT100 · ${NMBU_PROG[g.r0.type] ?? g.r0.type}` : `${g.r0.kort} ${g.r0.visningskode}${g.r0.studiested && ['UiT', 'NTNU', 'USN', 'INN'].includes(g.r0.kort) ? ` (${g.r0.studiested})` : ''}${g.r0.type !== 'Bachelor ØA' ? ` · ${g.r0.type.replace('Bachelor ', '')}` : ''}`;
+    const s = st(pluss(...perAar.map((y) => g.aar[y] ? { ...g.aar[y].karakterer, total: g.aar[y].total } : undefined))); const nav = g.r0.kort === 'NMBU' ? `NMBU STAT100 · ${NMBU_PROG[g.r0.type] ?? g.r0.type}` : `${g.r0.kort} ${g.r0.visningskode}${g.r0.studiested && ['UiT', 'NTNU', 'USN', 'INN'].includes(g.r0.kort) ? ` (${g.r0.studiested})` : ''}${g.r0.type !== 'Bachelor ØA' ? ` · ${g.r0.type.replace('Bachelor ', '')}` : ''}`;
     return { nav, v: verdi(s) != null ? (maal === 'stryk' ? s.stryk! * 100 : s.snitt!) : null, nmbu: g.r0.kort === 'NMBU', n: s.bokstav };
-  }).filter((x) => x.v != null && x.n >= 20).sort((a, b) => (b.v! - a.v!) * (maal === 'stryk' ? 1 : -1));
+  }).filter((x) => x.v != null && x.n >= minN).sort((a, b) => (b.v! - a.v!) * (maal === 'stryk' ? 1 : -1));
   const sortert = [...grupper].sort((a, b) => (verdi(st(b.sum3)) ?? -1) - (verdi(st(a.sum3)) ?? -1) * 1);
   return (
     <div>
@@ -373,9 +385,10 @@ function OaStudentene({ d }: { d: Data }) {
       <div className="flex gap-4 flex-wrap mb-3">
         <Chips etikett="Vis:" valgt={maal} sett={setMaal} verdier={[{ id: 'stryk', label: 'Strykprosent' }, { id: 'snitt', label: 'Snitt' }]} />
         <Chips etikett="Program:" valgt={type} sett={setType} verdier={[{ id: 'bachelor', label: 'Bachelor' }, { id: 'alle', label: 'Med siviløkonom 5 år' }]} />
+        <Chips etikett="Grafen:" valgt={periode} sett={setPeriode} verdier={[{ id: '2023-2025', label: '2023–25' }, { id: '2021-2025', label: '2021–25' }, ...aarene.map((y) => ({ id: y, label: y }))]} />
       </div>
       <div style={{ ...kort, padding: 12 }}>
-        <div style={{ fontSize: 12, fontWeight: 700, color: 'var(--nmbu-neutral-1)', margin: '0 0 6px 6px' }}>{maal === 'stryk' ? 'Strykprosent' : 'Snitt (A=5 … E=1)'} 2023–2025 samlet · minst 20 med bokstavkarakter</div>
+        <div style={{ fontSize: 12, fontWeight: 700, color: 'var(--nmbu-neutral-1)', margin: '0 0 6px 6px' }}>{maal === 'stryk' ? 'Strykprosent' : 'Snitt (A=5 … E=1)'} {perAar.length > 1 ? `${perAar[0]}–${perAar[perAar.length - 1]} samlet` : perAar[0]} · minst {minN} med bokstavkarakter</div>
         <ResponsiveContainer width="100%" height={Math.max(220, graf.length * 24 + 30)}>
           <BarChart data={graf} layout="vertical" margin={{ top: 0, right: 40, left: 10, bottom: 0 }}>
             <CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="var(--nmbu-neutral-3)" />
@@ -463,6 +476,87 @@ function Pensum({ d }: { d: Data }) {
     </div>
   );
 }
+/** Temaene sammenlignes med søkeord i emnenavn, temaliste, læringsmål og programvare (oppsummert fra emnesidene). Grovt, men likt for alle. */
+const TEMA: [string, RegExp][] = [
+  ['Deskriptiv statistikk', /deskriptiv|beskrivende/i],
+  ['Sannsynlighetsregning', /sannsynlighet|probabilit/i],
+  ['Kombinatorikk', /kombinatorikk|combinator/i],
+  ['Betinget sannsynlighet / Bayes', /betinget|bayes|conditional/i],
+  ['Diskrete fordelinger (binomisk, Poisson …)', /binomisk|binomial|poisson|hypergeometrisk|diskret/i],
+  ['Normalfordelingen', /normalfordel|normal distrib|(?<![\p{L}])normal(?![\p{L}])/iu],
+  ['Forventning og varians', /forventning|varians\b|expect/i],
+  ['Kovarians og korrelasjon', /kovarians|korrelasjon|correlat|covarian/i],
+  ['Simultanfordelinger', /simultan|joint/i],
+  ['Estimering og konfidensintervall', /estimer|konfidensintervall|intervallestim|confidence/i],
+  ['Hypotesetesting', /hypotese|hypothes|t-test|z-test|p-verdi/i],
+  ['Kjikvadrattest', /kjikvadrat|khikvadrat|chi/i],
+  ['Variansanalyse (ANOVA)', /variansanalyse|anova/i],
+  ['Enkel lineær regresjon', /regresjon|regression/i],
+  ['Multippel regresjon', /multippel|multiple regres/i],
+  ['Utvalgsstørrelse og teststyrke', /utvalgsstørrelse|styrke|sample size|power/i],
+  // Stor R som eget ord (ikke R1/R2); \b i JavaScript ser æøå som skilletegn, så «lineær» ville ellers gitt treff
+  ['R / RStudio', /RStudio|(?<![\p{L}\d])R(?![\p{L}\d])/u],
+  ['Excel', /excel/i],
+  ['Statistisk læring / maskinlæring', /maskinlæring|statistisk læring|machine learning/i],
+];
+const emneTekst = (e: EmneInfo) => {
+  const lm = e.laeringsmal ?? {};
+  return [e.navn, ...(e.tema ?? []), ...(lm.kunnskap ?? []), ...(lm.ferdigheter ?? []), ...(lm.generell_kompetanse ?? []), e.programvare ?? ''].join(' ');
+};
+function TemaOversikt({ emner, nmbu }: { emner: EmneInfo[]; nmbu: EmneInfo }) {
+  // Bare emner der vi har læringsmål (USN-emneplanen kunne ikke hentes)
+  const andre = emner.filter((e) => e !== nmbu && Object.values(e.laeringsmal ?? {}).some((v) => (v ?? []).length));
+  const rader = TEMA.map(([navn, rx]) => {
+    const har = andre.filter((e) => rx.test(emneTekst(e)));
+    return { navn, stat: rx.test(emneTekst(nmbu)), n: har.length, har };
+  });
+  const N = andre.length;
+  const bareOss = rader.filter((r) => r.stat && r.n <= Math.max(2, Math.round(N * 0.25)));
+  const manglerHosOss = rader.filter((r) => !r.stat && r.n >= Math.round(N * 0.4));
+  const kort2 = (e: EmneInfo) => `${e.inst.replace(/ \(.*\)/, '')} ${e.kode}`;
+  return (
+    <div className="mb-5">
+      <H2 under={`Hvilke tema læringsmålene og emnebeskrivelsene tar opp, i STAT100 og i de ${N} andre emnene vi har læringsmål for. Søkeordbasert og grovt: et tema kan undervises selv om det ikke står i emnebeskrivelsen.`}>Hva har STAT100 som de andre ikke har?</H2>
+      <div className="grid gap-3 mb-3" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
+        <div style={{ ...kort, padding: 14, borderColor: '#1a9850' }}>
+          <div style={{ fontSize: 13, fontWeight: 700, color: '#1a9850' }}>I STAT100, men hos få av de andre</div>
+          <ul style={{ fontSize: 12.5, paddingLeft: 16, listStyle: 'disc', marginTop: 6 }}>
+            {bareOss.map((r) => <li key={r.navn}><b>{r.navn}</b> – {r.n === 0 ? 'ingen av de andre' : `bare ${r.n} av ${N} (${r.har.map(kort2).join(', ')})`}</li>)}
+            {nmbu.studiepoeng != null && <li><b>Omfang: {nf(nmbu.studiepoeng, 0)} studiepoeng</b> – {andre.filter((e) => (e.studiepoeng ?? 0) >= 10).length} av {N} andre har 10 sp, resten 7,5 sp</li>}
+          </ul>
+        </div>
+        <div style={{ ...kort, padding: 14, borderColor: '#d73027' }}>
+          <div style={{ fontSize: 13, fontWeight: 700, color: '#d73027' }}>Hos mange av de andre, men ikke beskrevet i STAT100</div>
+          <ul style={{ fontSize: 12.5, paddingLeft: 16, listStyle: 'disc', marginTop: 6 }}>
+            {manglerHosOss.map((r) => <li key={r.navn}><b>{r.navn}</b> – {r.n} av {N}</li>)}
+            {!manglerHosOss.length && <li>Ingen tydelige</li>}
+          </ul>
+        </div>
+      </div>
+      <div className="overflow-x-auto" style={kort}>
+        <table className="w-full text-xs border-collapse">
+          <thead><tr style={{ borderBottom: '2px solid var(--nmbu-neutral-3)' }}>
+            <th className="px-3 py-2 text-left" style={thStil}>Tema</th>
+            <th className="px-2 py-2 text-center" style={{ ...thStil, color: '#c13a5a' }}>STAT100</th>
+            <th className="px-2 py-2 text-center" style={thStil}>Andre (av {N})</th>
+            {andre.map((e) => <th key={e.kode + e.inst} className="px-1 py-2 text-center" style={{ ...thStil, fontSize: 9.5, writingMode: 'vertical-rl', transform: 'rotate(180deg)', height: 96 }}>{kort2(e)}</th>)}
+          </tr></thead>
+          <tbody>
+            {rader.map((r) => (
+              <tr key={r.navn} style={{ ...radStil, backgroundColor: bareOss.includes(r) ? 'rgba(26,152,80,0.08)' : manglerHosOss.includes(r) ? 'rgba(215,48,39,0.07)' : undefined }}>
+                <td className="px-3 py-1.5" style={{ fontWeight: 600 }}>{r.navn}</td>
+                <td className="px-2 py-1.5 text-center" style={{ fontWeight: 700, color: r.stat ? '#1a9850' : 'var(--nmbu-neutral-3)' }}>{r.stat ? '✓' : '–'}</td>
+                <td className="px-2 py-1.5 text-center" style={{ fontWeight: 600 }}>{r.n}</td>
+                {andre.map((e) => <td key={e.kode + e.inst} className="px-1 py-1.5 text-center" style={{ color: r.har.includes(e) ? 'var(--nmbu-neutral-1)' : 'var(--nmbu-neutral-3)' }}>{r.har.includes(e) ? '✓' : '·'}</td>)}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
 function Laeringsmal({ d }: { d: Data }) {
   const emner = d.emneinfo.emner;
   const nmbu = emner.find((e) => e.inst.startsWith('NMBU'));
@@ -487,6 +581,7 @@ function Laeringsmal({ d }: { d: Data }) {
   return (
     <div>
       <H2 under="Læringsmålene slik emnesidene beskriver dem (oppsummert), med studiepoeng, semester og vurderingsform. NMBU til venstre; velg emnet du vil sammenligne med.">Læringsmål og studiepoeng</H2>
+      {nmbu && <TemaOversikt emner={emner} nmbu={nmbu} />}
       <div className="overflow-x-auto mb-4" style={kort}>
         <table className="w-full text-xs border-collapse">
           <thead><tr style={{ borderBottom: '2px solid var(--nmbu-neutral-3)' }}>
