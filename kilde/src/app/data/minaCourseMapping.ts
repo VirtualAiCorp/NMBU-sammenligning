@@ -1,4 +1,4 @@
-// GENERERT av scripts/build-landsam-course-mapping.py 2026-09-23 – ikke rediger for hånd.
+// GENERERT av scripts/build-landsam-course-mapping.py 2026-10-15 – ikke rediger for hånd.
 // Kilde: data/landsam/emnekobling/*.json (manuelt kartlagt mot studieplanene).
 export interface CourseTypeLink { entryId: string; emnekoder: string[]; merknad?: string; }
 export interface CourseType { id: string; label: string; kategori?: string; desc?: string; note?: string; links: CourseTypeLink[]; }

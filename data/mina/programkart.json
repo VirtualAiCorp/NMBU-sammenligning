@@ -567,17 +567,17 @@
     },
     {
       "id": "okologi2",
-      "label": "Økologi (2-årig master)",
+      "label": "Økologi / Ecology (2-årig master)",
       "level": "master2",
       "desc": "Sammenligner de toårige masterne i økologi med lokalt opptak.",
-      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere» (søknadsalternativer), kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (alle søknadsalternativer uansett prioritet; kvalifiserte = søknadsalternativer merket kvalifisert). Studieplasser, førstevalgssøkere, kvinneandel og poenggrenser publiseres ikke per program i denne tabellen og står derfor som null. DBH har ikke rapportert høstopptaket 2026 ennå, så 2026 er tomt for alle programmene. NMBUs master i økologi er engelskspråklig, og fallet i søkertall fra 2023 til 2024 henger sammen med innføringen av studieavgift for søkere utenfor EØS. Universitetet i Innlandets «Anvendt økologi» på Evenstad er den nærmeste norske parallellen; INN rapporterte til og med 2024 under Høgskolen i Innlandet og fra 2025 under Universitetet i Innlandet, og de to seriene er slått sammen. Biologimasterne ved NTNU og UiT dekker økologi som én av flere retninger og er tatt med som svakere sammenligninger (default false). UiBs «Global endringsøkologi» er utelatt fordi den er så ny at DBH bare har to årganger med svært få søkere.",
+      "note": "Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere» (søknadsalternativer), kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (alle søknadsalternativer uansett prioritet; kvalifiserte = søknadsalternativer merket kvalifisert). Studieplasser, førstevalgssøkere, kvinneandel og poenggrenser publiseres ikke per program i denne tabellen og står derfor som null. DBH har ikke rapportert høstopptaket 2026 ennå, så 2026 er tomt for alle programmene. NMBUs master i økologi er engelskspråklig og heter «Ecology» i DBH og på nmbu.no, og fallet i søkertall fra 2023 til 2024 henger sammen med innføringen av studieavgift for søkere utenfor EØS. Universitetet i Innlandets «Anvendt økologi» på Evenstad er den nærmeste norske parallellen; INN rapporterte til og med 2024 under Høgskolen i Innlandet og fra 2025 under Universitetet i Innlandet, og de to seriene er slått sammen. Biologimasterne ved NTNU og UiT dekker økologi som én av flere retninger og er tatt med som svakere sammenligninger (default false). UiBs «Global endringsøkologi» er utelatt fordi den er så ny at DBH bare har to årganger med svært få søkere.",
       "programs": [
         {
           "id": "nmbu_okologi2",
           "shortName": "NMBU",
           "institusjon": "Norges miljø- og biovitenskapelige universitet",
           "studiested": "Ås",
-          "programnavn": "Økologi (master 2 år)",
+          "programnavn": "Økologi / Ecology (master 2 år)",
           "studiekode": null,
           "type": "master2",
           "isNmbu": true,
@@ -2294,6 +2294,110 @@
               "https://www.hvl.no/studier/studieprogram/berekraftig-energiteknologi/"
             ]
           }
+        }
+      ]
+    },
+    {
+      "id": "nukleaer2",
+      "label": "Nukleær- og miljøvitenskap (2-årig master)",
+      "level": "master2",
+      "desc": "Viser opptakstallene for NMBUs toårige master i nukleær- og miljøvitenskap (tidligere Radioecology), som ikke har noen tilsvarende utdanning i Norge.",
+      "note": "Gruppen har bare NMBU. Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak; søkere, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379. Programmet «Nukleær- og miljøvitenskap» (DBH M-RAMI, undervisning på norsk) tok over etter den engelskspråklige masteren «Radioecology» (DBH M-RAD, Radioøkologi) fra opptaket 2024. Forgjengeren er tatt med med default false slik at årene før 2024 kan følges. Ingen andre norske institusjoner har en egen master i radioøkologi, strålevern eller nukleær miljøvitenskap i DBH tabell 347; kjernekjemi ved UiO er en studieretning i kjemimasteren og ikke et eget program. Tallene bør derfor leses som en tidsserie for NMBU alene. DBH har ikke rapportert høstopptaket 2026 ennå.",
+      "programs": [
+        {
+          "id": "nmbu_nukleaer2",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Nukleær- og miljøvitenskap (master 2 år)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": true,
+          "default": true,
+          "source": "local",
+          "url": "https://www.nmbu.no/studier/master-2-aar/nukleaer-og-miljovitenskap",
+          "localData": {
+            "2024": {
+              "alleS": 36,
+              "fvS": 7,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 10,
+              "tilbud": 7,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 4,
+              "mott": 0
+            },
+            "2025": {
+              "alleS": 62,
+              "fvS": 19,
+              "plasser": null,
+              "kvinner": 52.6,
+              "kvalifiserte": 17,
+              "tilbud": 13,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 5,
+              "mott": 4
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram: søkere, kvalifiserte, tilbud; førstevalg = prioritet 1; kvinneandel blant førstevalgssøkere)"
+            ]
+          }
+        },
+        {
+          "id": "nmbu_radiookologi2_forgjenger",
+          "shortName": "NMBU Radioecology",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Radioecology (master 2 år, forgjenger)",
+          "studiekode": null,
+          "type": "master2",
+          "isNmbu": true,
+          "default": false,
+          "source": "local",
+          "url": null,
+          "localData": {
+            "2021": {
+              "alleS": 3,
+              "fvS": null,
+              "plasser": null,
+              "kvinner": null,
+              "kvalifiserte": 0,
+              "tilbud": 0,
+              "pg_fv": null,
+              "pg_ord": null,
+              "akseptert": 0,
+              "mott": 0
+            },
+            "localSource": [
+              "https://dbh.hkdir.no/api/Tabeller/hentJSONTabellData (tabell 379, lokalt opptak per studieprogram: søkere, kvalifiserte, tilbud; førstevalg = prioritet 1; kvinneandel blant førstevalgssøkere)"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "grunnstudium",
+      "label": "Ettårig grunnstudium",
+      "level": "aarsstudium",
+      "desc": "Viser opptakstallene for NMBUs ettårige grunnstudium, som gir søkere med generell studiekompetanse realfagene de trenger for å søke studier med realfagskrav.",
+      "note": "Gruppen har bare NMBU. Ettårig grunnstudium (SO 192199, DBH GRUNN) eies av MINA og tar opp gjennom Samordna opptak med generell studiekompetanse (kravkode GENS). Studentene tar realfag (blant annet MATH100, som dekker kravet REALFA) og kan deretter søke studier med realfagskrav; bestått årsstudium gir garantert plass på enkelte av NMBUs bachelorprogram. Ingen andre universiteter eller høgskoler har et tilsvarende ettårig realfagsløp i Samordna opptak 2026 (søk på grunnstudium, ettårig, forkurs og realfagskurs). Realfagskurs tilbys ellers i hovedsak av private skoler utenfor Samordna opptak. Tallene bør derfor leses som en tidsserie for NMBU alene. Årsstudier har ikke gjennomføring på normert tid som gradsprogram, og gir ikke fullføringsuttelling i finansieringssystemet.",
+      "programs": [
+        {
+          "id": "nmbu_grunnstudium",
+          "shortName": "NMBU",
+          "institusjon": "Norges miljø- og biovitenskapelige universitet",
+          "studiested": "Ås",
+          "programnavn": "Ettårig grunnstudium (årsstudium)",
+          "studiekode": "192199",
+          "type": "aarsstudium",
+          "isNmbu": true,
+          "default": true,
+          "source": "SO",
+          "url": "https://www.nmbu.no/studier/arsstudium/ettarig-grunnstudium",
+          "localData": null
         }
       ]
     }

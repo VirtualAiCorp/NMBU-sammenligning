@@ -1,5 +1,5 @@
 {
- "generert": "2026-09-23",
+ "generert": "2026-10-15",
  "groups": [
   {
    "id": "skogfag",
@@ -1910,7 +1910,7 @@
   },
   {
    "id": "okologi2",
-   "label": "Økologi (2-årig master)",
+   "label": "Økologi / Ecology (2-årig master)",
    "level": "master2",
    "nmbuIds": [
     "nmbu_okologi2"
@@ -1925,7 +1925,7 @@
      "shortName": "NMBU",
      "institusjon": "Norges miljø- og biovitenskapelige universitet",
      "isNmbu": true,
-     "programnavn": "Økologi (master 2 år)",
+     "programnavn": "Økologi / Ecology (master 2 år)",
      "nivaa": "M2",
      "aar": [
       {
@@ -3381,6 +3381,173 @@
        "a29": 12,
        "a30": 6,
        "utenlandske": null,
+       "utveksling": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nukleaer2",
+   "label": "Nukleær- og miljøvitenskap (2-årig master)",
+   "level": "master2",
+   "nmbuIds": [
+    "nmbu_nukleaer2",
+    "nmbu_radiookologi2_forgjenger"
+   ],
+   "defaultIds": [
+    "nmbu_nukleaer2"
+   ],
+   "programs": [
+    {
+     "entryId": "nmbu_nukleaer2",
+     "shortName": "NMBU",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "isNmbu": true,
+     "programnavn": "Nukleær- og miljøvitenskap (master 2 år)",
+     "nivaa": "M2",
+     "aar": [
+      {
+       "aar": 2024,
+       "total": 3,
+       "a21": 0,
+       "a24": 3,
+       "a29": 0,
+       "a30": 0,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2025,
+       "total": 6,
+       "a21": 0,
+       "a24": 0,
+       "a29": 4,
+       "a30": 0,
+       "utenlandske": null,
+       "utveksling": null
+      }
+     ]
+    },
+    {
+     "entryId": "nmbu_radiookologi2_forgjenger",
+     "shortName": "NMBU Radioecology",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "isNmbu": true,
+     "programnavn": "Radioecology (master 2 år, forgjenger)",
+     "nivaa": "M2",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 4,
+       "a21": 0,
+       "a24": 0,
+       "a29": 0,
+       "a30": 0,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2020,
+       "total": 3,
+       "a21": 0,
+       "a24": 0,
+       "a29": 0,
+       "a30": 0,
+       "utenlandske": 0,
+       "utveksling": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "grunnstudium",
+   "label": "Ettårig grunnstudium",
+   "level": "aarsstudium",
+   "nmbuIds": [
+    "nmbu_grunnstudium"
+   ],
+   "defaultIds": [
+    "nmbu_grunnstudium"
+   ],
+   "programs": [
+    {
+     "entryId": "nmbu_grunnstudium",
+     "shortName": "NMBU",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "isNmbu": true,
+     "programnavn": "Ettårig grunnstudium (årsstudium)",
+     "nivaa": "AR",
+     "aar": [
+      {
+       "aar": 2019,
+       "total": 45,
+       "a21": 31,
+       "a24": 7,
+       "a29": 5,
+       "a30": 0,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2020,
+       "total": 38,
+       "a21": 27,
+       "a24": 7,
+       "a29": 4,
+       "a30": 0,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2021,
+       "total": 36,
+       "a21": 26,
+       "a24": 5,
+       "a29": 4,
+       "a30": 0,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2022,
+       "total": 39,
+       "a21": 28,
+       "a24": 8,
+       "a29": 3,
+       "a30": 0,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2023,
+       "total": 53,
+       "a21": 33,
+       "a24": 11,
+       "a29": 5,
+       "a30": 4,
+       "utenlandske": null,
+       "utveksling": null
+      },
+      {
+       "aar": 2024,
+       "total": 47,
+       "a21": 34,
+       "a24": 8,
+       "a29": 4,
+       "a30": 0,
+       "utenlandske": 0,
+       "utveksling": null
+      },
+      {
+       "aar": 2025,
+       "total": 78,
+       "a21": 52,
+       "a24": 15,
+       "a29": 7,
+       "a30": 4,
+       "utenlandske": 0,
        "utveksling": null
       }
      ]

@@ -1,5 +1,5 @@
 {
- "generert": "2026-09-23",
+ "generert": "2026-10-15",
  "groups": [
   {
    "id": "skogfag",
@@ -25917,7 +25917,7 @@
   },
   {
    "id": "okologi2",
-   "label": "Økologi (2-årig master)",
+   "label": "Økologi / Ecology (2-årig master)",
    "level": "master2",
    "programs": [
     {
@@ -25925,7 +25925,7 @@
      "shortName": "NMBU",
      "institusjon": "Norges miljø- og biovitenskapelige universitet",
      "isNmbu": true,
-     "programnavn": "Økologi (master 2 år)",
+     "programnavn": "Økologi / Ecology (master 2 år)",
      "studieplanAar": "2026/2027",
      "kilder": [
       "https://www.nmbu.no/studier/master-2-aar/okologi",
@@ -35720,6 +35720,62 @@
        ]
       }
      ],
+     "spesialiseringer": []
+    }
+   ]
+  },
+  {
+   "id": "nukleaer2",
+   "label": "Nukleær- og miljøvitenskap (2-årig master)",
+   "level": "master2",
+   "programs": [
+    {
+     "entryId": "nmbu_nukleaer2",
+     "shortName": "NMBU",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "isNmbu": true,
+     "programnavn": "Nukleær- og miljøvitenskap (master 2 år)",
+     "studieplanAar": null,
+     "kilder": [],
+     "totaltStudiepoeng": null,
+     "obligatoriskeStudiepoeng": null,
+     "merknad": "Studieplan ikke hentet ennå.",
+     "obligatoriske": [],
+     "spesialiseringer": []
+    },
+    {
+     "entryId": "nmbu_radiookologi2_forgjenger",
+     "shortName": "NMBU Radioecology",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "isNmbu": true,
+     "programnavn": "Radioecology (master 2 år, forgjenger)",
+     "studieplanAar": null,
+     "kilder": [],
+     "totaltStudiepoeng": null,
+     "obligatoriskeStudiepoeng": null,
+     "merknad": "Studieplan ikke hentet ennå.",
+     "obligatoriske": [],
+     "spesialiseringer": []
+    }
+   ]
+  },
+  {
+   "id": "grunnstudium",
+   "label": "Ettårig grunnstudium",
+   "level": "aarsstudium",
+   "programs": [
+    {
+     "entryId": "nmbu_grunnstudium",
+     "shortName": "NMBU",
+     "institusjon": "Norges miljø- og biovitenskapelige universitet",
+     "isNmbu": true,
+     "programnavn": "Ettårig grunnstudium (årsstudium)",
+     "studieplanAar": null,
+     "kilder": [],
+     "totaltStudiepoeng": null,
+     "obligatoriskeStudiepoeng": null,
+     "merknad": "Studieplan ikke hentet ennå.",
+     "obligatoriske": [],
      "spesialiseringer": []
     }
    ]

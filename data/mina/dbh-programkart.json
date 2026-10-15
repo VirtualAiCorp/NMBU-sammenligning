@@ -840,6 +840,55 @@
     2025
    ],
    "kandidaterSiste": 171
+  },
+  {
+   "entryId": "nmbu_nukleaer2",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "M-RAMI"
+   ],
+   "studieprogramnavn": "Nukleær- og miljøvitenskap",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2024,
+    2025
+   ],
+   "kandidaterSiste": null,
+   "merknad": "Nytt program fra opptaket 2024 (DBH 347 fra høsten 2024, norsk undervisningsspråk). Etterfølger M-RAD (se nmbu_radiookologi2_forgjenger)."
+  },
+  {
+   "entryId": "nmbu_radiookologi2_forgjenger",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "M-RAD"
+   ],
+   "studieprogramnavn": "Radioøkologi",
+   "nivaakode": "M2",
+   "aarMedKarakterer": [
+    2021,
+    2022,
+    2023
+   ],
+   "kandidaterSiste": null,
+   "merknad": "Den engelskspråklige masteren Radioecology; forgjengeren til M-RAMI. DBH 347 har programmet til og med høsten 2023."
+  },
+  {
+   "entryId": "nmbu_grunnstudium",
+   "institusjonskode": "1173",
+   "studieprogramkoder": [
+    "GRUNN"
+   ],
+   "studieprogramnavn": "Ettårig grunnstudium",
+   "nivaakode": "AR",
+   "aarMedKarakterer": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "kandidaterSiste": null,
+   "merknad": "Årsstudium (nivå AR) eid av MINA (avdeling 430000)."
   }
  ]
 }

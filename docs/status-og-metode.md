@@ -1100,3 +1100,24 @@ Mathias limte inn FS-rapporten FS754.001 «Gjennomføringsfakta – emne» for S
   siste DBH-år. Husker passordet i økten (`intern-opptak-pw`, samme som de andre interne sidene).
 - **STAT100 vår 2026:** 465 med resultat, stryk 37,0 %, snitt 1,83 (A=5 … F=0), 71 ikke møtt. B-ØA 48,4 %, B-ECON 44,7 %,
   B-ØLIT 36,8 %. Erstattes av DBH-tallene når DBH publiserer 2026.
+
+## 53. MINA: Nukleær- og miljøvitenskap, Ettårig grunnstudium og Ecology (15.10.2026)
+
+Brukere meldte at Nukleær- og miljøvitenskap og Ecology manglet i MINA-oversikten, og ba om Ettårig grunnstudium.
+- **Ecology** var med hele tiden, men het «Økologi (2-årig master)» (DBH M-ECOL heter både «Økologi» og «Ecology»). Gruppen
+  heter nå «Økologi / Ecology (2-årig master)», slik at den finnes på det engelske navnet.
+- **Ny gruppe `nukleaer2` «Nukleær- og miljøvitenskap (2-årig master)»:** NMBUs M-RAMI (norskspråklig, fra opptaket 2024) med
+  forgjengeren M-RAD (Radioøkologi/Radioecology, engelskspråklig, til og med 2023) som default false. Lokalt opptak fra DBH 379.
+  Ingen konkurrenter: ingen andre norske institusjoner har en egen master i radioøkologi eller nukleær miljøvitenskap i DBH 347
+  (samme vurdering som bacheloren Radioaktivitet og miljø).
+- **Ny gruppe `grunnstudium` «Ettårig grunnstudium»** (nivå `aarsstudium`): SO 192199, DBH GRUNN (nivå AR, eid av MINA 430000),
+  kravkode GENS. Realfagsløp for søkere med generell studiekompetanse. Ingen tilsvarende løp i Samordna opptak 2026 (søk på
+  grunnstudium, ettårig, forkurs, realfagskurs i katalogen), så gruppen har bare NMBU. Førstevalg 2026: 328, som løfter MINAs
+  førstevalgstall på forsiden fra 162 til 490.
+- **Kjøring:** `fill-local-admissions.py mina`, `fetch-admission-points.py mina`, `build-faculty.sh mina`, `build-completion.py mina`,
+  `build-students.py mina`, `build-studiebarometer.py mina`, `build-oppmote.py --fak mina`, `build-revenue.py`, `build-staff.py`,
+  `build-economy.py`, `build-ki-grunnlag.py`. Eksisterende grupper er uendret (kontrollert mot forrige commit).
+- **Programkortene på fakultetssiden** (`gjennomforing()` i `arbeidsflate/tall.ts`) teller ikke lenger program med «forgjenger»
+  i navnet: et nytt program uten kull viser «Ingen gjennomføringstall» i stedet for forgjengerens siste kull (M-RAD kull 2019, 3
+  studenter). Miljøvitenskap gir samme tall som før. KPI-en «Programgrupper» teller nå også årsstudier.
+- **KI-grunnlaget:** §52 (interne FS-tall) er lagt i `UTELAT` i `build-ki-grunnlag.py`; kildevakten stoppet bygget på den.

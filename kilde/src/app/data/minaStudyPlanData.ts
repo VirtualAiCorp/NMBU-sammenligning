@@ -1,4 +1,4 @@
-// GENERERT av scripts/build-landsam-studyplans.py 2026-09-23 – ikke rediger for hånd.
+// GENERERT av scripts/build-landsam-studyplans.py 2026-10-15 – ikke rediger for hånd.
 // Kilde: data/landsam/studieplaner/*.json (obligatoriske emner fra studieplanene) koblet til DBH tabell 308/208.
 // Karakterer er summert over dbhEmnekoder per år; snitt A=5…F=0 over bokstavkarakterer.
 import type { LandsamLevel } from './landsamAdmissionData';
@@ -4190,10 +4190,10 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
     ],
   },
   {
-    id: 'okologi2', label: 'Økologi (2-årig master)', level: 'master2',
+    id: 'okologi2', label: 'Økologi / Ecology (2-årig master)', level: 'master2',
     programs: [
       {
-        entryId: 'nmbu_okologi2', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Økologi (master 2 år)',
+        entryId: 'nmbu_okologi2', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Økologi / Ecology (master 2 år)',
         studieplanAar: '2026/2027', kilder: ['https://www.nmbu.no/studier/master-2-aar/okologi', 'https://static02.nmbu.no/mina/studier/M-ECOL.php?sprx=n&aarx=2026'],
         totaltStudiepoeng: 120, obligatoriskeStudiepoeng: 90,
         merknad: 'Kilde er MINA-fakultetets studieplan-verktøy for kullet med studiestart høsten 2026. Utover de sju emnene over (90 sp obligatorisk kjerne, inkl. masteroppgaven på 60 sp) stiller programmet krav om at minst ett 300-nivå spesialiseringsemne innen økologi må inngå for å oppnå mastergraden i økologi - dette er et obligatorisk valg mellom alternativer (bl.a. BIO328 Miljø-DNA, BOT300 Planteøkologi, ECOL330 Tropisk regnskogsøkologi, ECOL380 Elve- og innsjøøkologi, FMI310 Miljøgifter og økotoksikologi, LAA370 Landskapsøkologi, NATF320 Tropisk økologi og naturforvaltning, NATF350 Menneske-vilt-interaksjoner, SKOG304 Skogøkologi, ZOOL300 Insektøkologi m.fl., 5-15 sp hver) og er derfor ikke ført opp som enkeltemne. De resterende ca. 30 sp av graden fylles med dette spesialiseringsemnet pluss frie valgemner. dbhEmnekoder er ikke fylt ut siden DBH-rapportering for dette programmet ikke er slått opp i dette arbeidet.',
@@ -5837,6 +5837,46 @@ export const LANDSAM_STUDYPLAN_GROUPS: LandsamStudyPlanGroup[] = [
               { year: 2025, A: 4, B: 4, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, total: 8, snitt: 4.5, strykprosent: 0, bestattprosent: null, skjult: 3 },
             ],
           },
+        ],
+        spesialiseringer: [
+        ],
+      },
+    ],
+  },
+  {
+    id: 'nukleaer2', label: 'Nukleær- og miljøvitenskap (2-årig master)', level: 'master2',
+    programs: [
+      {
+        entryId: 'nmbu_nukleaer2', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Nukleær- og miljøvitenskap (master 2 år)',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+      {
+        entryId: 'nmbu_radiookologi2_forgjenger', shortName: 'NMBU Radioecology', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Radioecology (master 2 år, forgjenger)',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
+        ],
+        spesialiseringer: [
+        ],
+      },
+    ],
+  },
+  {
+    id: 'grunnstudium', label: 'Ettårig grunnstudium', level: 'aarsstudium',
+    programs: [
+      {
+        entryId: 'nmbu_grunnstudium', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Ettårig grunnstudium (årsstudium)',
+        studieplanAar: null, kilder: [],
+        totaltStudiepoeng: null, obligatoriskeStudiepoeng: null,
+        merknad: 'Studieplan ikke hentet ennå.',
+        obligatoriske: [
         ],
         spesialiseringer: [
         ],

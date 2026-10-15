@@ -1,5 +1,5 @@
 {
- "generert": "2026-10-07",
+ "generert": "2026-10-15",
  "satser": {
   "2025": {
    "1": 56600.0,
@@ -9137,7 +9137,7 @@
    },
    {
     "id": "okologi2",
-    "label": "Økologi (2-årig master)",
+    "label": "Økologi / Ecology (2-årig master)",
     "level": "master2",
     "nmbuIds": [
      "nmbu_okologi2"
@@ -9152,7 +9152,7 @@
       "shortName": "NMBU",
       "institusjon": "Norges miljø- og biovitenskapelige universitet",
       "isNmbu": true,
-      "programnavn": "Økologi (master 2 år)",
+      "programnavn": "Økologi / Ecology (master 2 år)",
       "years": [
        {
         "aar": 2023,
@@ -10144,6 +10144,121 @@
         "innSp": 2645850,
         "innFullforing": 698750,
         "total": 3344600
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "nukleaer2",
+    "label": "Nukleær- og miljøvitenskap (2-årig master)",
+    "level": "master2",
+    "nmbuIds": [
+     "nmbu_nukleaer2",
+     "nmbu_radiookologi2_forgjenger"
+    ],
+    "defaultIds": [
+     "nmbu_nukleaer2"
+    ],
+    "programs": [
+     {
+      "entryId": "nmbu_nukleaer2",
+      "shortName": "NMBU",
+      "institusjon": "Norges miljø- og biovitenskapelige universitet",
+      "isNmbu": true,
+      "programnavn": "Nukleær- og miljøvitenskap (master 2 år)",
+      "years": [
+       {
+        "aar": 2024,
+        "budsjettaar": 2026,
+        "satsAar": 2026,
+        "forelopig": false,
+        "sp1": 0.0,
+        "sp2": 0.8,
+        "sp3": 0.0,
+        "kandidater": null,
+        "registrerte": 3,
+        "innSp": 73291,
+        "innFullforing": 0,
+        "total": 73291
+       },
+       {
+        "aar": 2025,
+        "budsjettaar": 2027,
+        "satsAar": 2026,
+        "forelopig": true,
+        "sp1": 0.0,
+        "sp2": 2.4,
+        "sp3": 0.0,
+        "kandidater": null,
+        "registrerte": 6,
+        "innSp": 212545,
+        "innFullforing": 0,
+        "total": 212545
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "grunnstudium",
+    "label": "Ettårig grunnstudium",
+    "level": "aarsstudium",
+    "nmbuIds": [
+     "nmbu_grunnstudium"
+    ],
+    "defaultIds": [
+     "nmbu_grunnstudium"
+    ],
+    "programs": [
+     {
+      "entryId": "nmbu_grunnstudium",
+      "shortName": "NMBU",
+      "institusjon": "Norges miljø- og biovitenskapelige universitet",
+      "isNmbu": true,
+      "programnavn": "Ettårig grunnstudium (årsstudium)",
+      "years": [
+       {
+        "aar": 2023,
+        "budsjettaar": 2025,
+        "satsAar": 2025,
+        "forelopig": false,
+        "sp1": 9.0,
+        "sp2": 24.3,
+        "sp3": 0.0,
+        "kandidater": null,
+        "registrerte": 53,
+        "innSp": 2575298,
+        "innFullforing": 0,
+        "total": 2575298
+       },
+       {
+        "aar": 2024,
+        "budsjettaar": 2026,
+        "satsAar": 2026,
+        "forelopig": false,
+        "sp1": 6.3,
+        "sp2": 30.2,
+        "sp3": 0.0,
+        "kandidater": null,
+        "registrerte": 47,
+        "innSp": 3031936,
+        "innFullforing": 0,
+        "total": 3031936
+       },
+       {
+        "aar": 2025,
+        "budsjettaar": 2027,
+        "satsAar": 2026,
+        "forelopig": true,
+        "sp1": 12.2,
+        "sp2": 36.1,
+        "sp3": 0.0,
+        "kandidater": null,
+        "registrerte": 78,
+        "innSp": 3891990,
+        "innFullforing": 0,
+        "total": 3891990
        }
       ]
      }
@@ -17462,7 +17577,7 @@
    "niva": "AR",
    "fak": "mina",
    "kategori": "Årsstudier og ettårige studier",
-   "iSammenligning": false,
+   "iSammenligning": true,
    "aar": {
     "2023": {
      "sp": 33.3,
@@ -18684,7 +18799,7 @@
    "niva": "M2",
    "fak": "mina",
    "kategori": "Toårig master",
-   "iSammenligning": false,
+   "iSammenligning": true,
    "aar": {
     "2024": {
      "sp": 0.8,

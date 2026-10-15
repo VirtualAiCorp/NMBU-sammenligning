@@ -1,4 +1,4 @@
-// GENERERT av scripts/build-completion.py 2026-09-23 – ikke rediger for hånd.
+// GENERERT av scripts/build-completion.py 2026-10-15 – ikke rediger for hånd.
 // Kilde: DBH/HKDIR tabell 707 (gjennomføring og frafall per startkull), 123 (registrerte, høst), 110 (nye), 104 (kandidater), 335 (studiepoeng iht. plan).
 import type { LandsamLevel } from './landsamAdmissionData';
 
@@ -20,7 +20,7 @@ export interface CompletionProgram {
 }
 export interface CompletionGroup { id: string; label: string; level: LandsamLevel; nmbuIds: string[]; defaultIds: string[]; programs: CompletionProgram[]; }
 
-export const COMPLETION_HENTET = '2026-09-23';
+export const COMPLETION_HENTET = '2026-10-15';
 
 export const COMPLETION_GROUPS: CompletionGroup[] = [
   {
@@ -582,10 +582,10 @@ export const COMPLETION_GROUPS: CompletionGroup[] = [
     ],
   },
   {
-    id: 'okologi2', label: 'Økologi (2-årig master)', level: 'master2', nmbuIds: ['nmbu_okologi2'], defaultIds: ['nmbu_okologi2', 'inn_anvendt_okologi2'],
+    id: 'okologi2', label: 'Økologi / Ecology (2-årig master)', level: 'master2', nmbuIds: ['nmbu_okologi2'], defaultIds: ['nmbu_okologi2', 'inn_anvendt_okologi2'],
     programs: [
       {
-        entryId: 'nmbu_okologi2', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Økologi (master 2 år)', dbhKoder: ['M-ECOL'],
+        entryId: 'nmbu_okologi2', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Økologi / Ecology (master 2 år)', dbhKoder: ['M-ECOL'],
         kull: [
           { aar: 2014, normertAar: 2016, nivaa: 'M2', startkull: 32, startkullKvinner: 17, fullfortNormert: 18, fullfortNormertKvinner: 9, fullfort1: 26, fullfort2: 27, studerer: 11, studerer1: 0, studerer2: 0, frafalt: 3, frafalt1: 5, frafalt2: 5, inst: { fullfortNormert: 18, fullfort1: 26, fullfort2: 27, frafalt: 3, frafalt2: 5 }, sektor: { fullfortNormert: 18, fullfort1: 27, fullfort2: 28, frafalt: 0, frafalt2: 4 } },
           { aar: 2015, normertAar: 2017, nivaa: 'M2', startkull: 26, startkullKvinner: 17, fullfortNormert: 14, fullfortNormertKvinner: 8, fullfort1: 18, fullfort2: 18, studerer: 7, studerer1: 0, studerer2: 0, frafalt: 5, frafalt1: 7, frafalt2: 7, inst: { fullfortNormert: 16, fullfort1: 20, fullfort2: 20, frafalt: 5, frafalt2: 5 }, sektor: { fullfortNormert: 17, fullfort1: 21, fullfort2: 21, frafalt: 3, frafalt2: 4 } },
@@ -1050,6 +1050,60 @@ export const COMPLETION_GROUPS: CompletionGroup[] = [
           { aar: 2023, registrerte: 17, registrerteKvinner: 7, nye: 0, nyeKvinner: 0, kandidater: null, kandidaterKvinner: null, spPlanlagt: 510, spGjennomfort: 490 },
           { aar: 2024, registrerte: 30, registrerteKvinner: 9, nye: 3, nyeKvinner: 0, kandidater: null, kandidaterKvinner: null, spPlanlagt: 1450, spGjennomfort: 1215 },
           { aar: 2025, registrerte: 32, registrerteKvinner: 8, nye: 0, nyeKvinner: 0, kandidater: 13, kandidaterKvinner: 7, spPlanlagt: 1810, spGjennomfort: 1600 },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'nukleaer2', label: 'Nukleær- og miljøvitenskap (2-årig master)', level: 'master2', nmbuIds: ['nmbu_nukleaer2', 'nmbu_radiookologi2_forgjenger'], defaultIds: ['nmbu_nukleaer2'],
+    programs: [
+      {
+        entryId: 'nmbu_nukleaer2', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Nukleær- og miljøvitenskap (master 2 år)', dbhKoder: ['M-RAMI'],
+        kull: [
+        ],
+        aar: [
+          { aar: 2024, registrerte: 3, registrerteKvinner: 0, nye: null, nyeKvinner: null, kandidater: null, kandidaterKvinner: null, spPlanlagt: 85, spGjennomfort: 60 },
+          { aar: 2025, registrerte: 6, registrerteKvinner: 0, nye: 0, nyeKvinner: 0, kandidater: null, kandidaterKvinner: null, spPlanlagt: 180, spGjennomfort: 160 },
+        ],
+      },
+      {
+        entryId: 'nmbu_radiookologi2_forgjenger', shortName: 'NMBU Radioecology', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Radioecology (master 2 år, forgjenger)', dbhKoder: ['M-RAD'],
+        kull: [
+          { aar: 2014, normertAar: 2016, nivaa: 'M2', startkull: 4, startkullKvinner: 0, fullfortNormert: 0, fullfortNormertKvinner: 0, fullfort1: 0, fullfort2: 0, studerer: 0, studerer1: 0, studerer2: 0, frafalt: 0, frafalt1: 0, frafalt2: 0, inst: null, sektor: null },
+          { aar: 2015, normertAar: 2017, nivaa: 'M2', startkull: 3, startkullKvinner: 0, fullfortNormert: 0, fullfortNormertKvinner: 0, fullfort1: 0, fullfort2: 3, studerer: 0, studerer1: 0, studerer2: 0, frafalt: 0, frafalt1: 0, frafalt2: 0, inst: { fullfortNormert: 0, fullfort1: 0, fullfort2: 3, frafalt: 0, frafalt2: 0 }, sektor: { fullfortNormert: 0, fullfort1: 0, fullfort2: 3, frafalt: 0, frafalt2: 0 } },
+          { aar: 2016, normertAar: 2018, nivaa: 'M2', startkull: 3, startkullKvinner: 0, fullfortNormert: 3, fullfortNormertKvinner: 0, fullfort1: 3, fullfort2: 3, studerer: 0, studerer1: 0, studerer2: 0, frafalt: 0, frafalt1: 0, frafalt2: 0, inst: { fullfortNormert: 3, fullfort1: 3, fullfort2: 3, frafalt: 0, frafalt2: 0 }, sektor: { fullfortNormert: 3, fullfort1: 3, fullfort2: 3, frafalt: 0, frafalt2: 0 } },
+          { aar: 2019, normertAar: 2021, nivaa: 'M2', startkull: 3, startkullKvinner: 0, fullfortNormert: 0, fullfortNormertKvinner: 0, fullfort1: 3, fullfort2: 3, studerer: 0, studerer1: 0, studerer2: 0, frafalt: 0, frafalt1: 0, frafalt2: 0, inst: { fullfortNormert: 0, fullfort1: 3, fullfort2: 3, frafalt: 0, frafalt2: 0 }, sektor: { fullfortNormert: 0, fullfort1: 3, fullfort2: 3, frafalt: 0, frafalt2: 0 } },
+        ],
+        aar: [
+          { aar: 2016, registrerte: null, registrerteKvinner: null, nye: null, nyeKvinner: null, kandidater: null, kandidaterKvinner: null, spPlanlagt: 180, spGjennomfort: 140 },
+          { aar: 2017, registrerte: 6, registrerteKvinner: 3, nye: 0, nyeKvinner: 0, kandidater: 3, kandidaterKvinner: 0, spPlanlagt: 235, spGjennomfort: 220 },
+          { aar: 2018, registrerte: 3, registrerteKvinner: 0, nye: 0, nyeKvinner: 0, kandidater: 0, kandidaterKvinner: 0, spPlanlagt: 315, spGjennomfort: 290 },
+          { aar: 2019, registrerte: 4, registrerteKvinner: 0, nye: 0, nyeKvinner: 0, kandidater: 0, kandidaterKvinner: 0, spPlanlagt: 190, spGjennomfort: 160 },
+          { aar: 2020, registrerte: 3, registrerteKvinner: 0, nye: 6, nyeKvinner: 0, kandidater: null, kandidaterKvinner: null, spPlanlagt: 120, spGjennomfort: 90 },
+          { aar: 2021, registrerte: 0, registrerteKvinner: 0, nye: null, nyeKvinner: null, kandidater: 0, kandidaterKvinner: 0, spPlanlagt: 120, spGjennomfort: 180 },
+          { aar: 2022, registrerte: null, registrerteKvinner: null, nye: 11, nyeKvinner: 0, kandidater: 0, kandidaterKvinner: 0, spPlanlagt: null, spGjennomfort: null },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'grunnstudium', label: 'Ettårig grunnstudium', level: 'aarsstudium', nmbuIds: ['nmbu_grunnstudium'], defaultIds: ['nmbu_grunnstudium'],
+    programs: [
+      {
+        entryId: 'nmbu_grunnstudium', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet', isNmbu: true, programnavn: 'Ettårig grunnstudium (årsstudium)', dbhKoder: ['GRUNN'],
+        kull: [
+        ],
+        aar: [
+          { aar: 2016, registrerte: null, registrerteKvinner: null, nye: null, nyeKvinner: null, kandidater: null, kandidaterKvinner: null, spPlanlagt: 1891, spGjennomfort: 1405 },
+          { aar: 2017, registrerte: 42, registrerteKvinner: 26, nye: 41, nyeKvinner: 25, kandidater: null, kandidaterKvinner: null, spPlanlagt: 2275, spGjennomfort: 1680 },
+          { aar: 2018, registrerte: 42, registrerteKvinner: 29, nye: 40, nyeKvinner: 28, kandidater: null, kandidaterKvinner: null, spPlanlagt: 2290, spGjennomfort: 1530 },
+          { aar: 2019, registrerte: 45, registrerteKvinner: 34, nye: 44, nyeKvinner: 33, kandidater: null, kandidaterKvinner: null, spPlanlagt: 2670, spGjennomfort: 1940 },
+          { aar: 2020, registrerte: 38, registrerteKvinner: 31, nye: 38, nyeKvinner: 31, kandidater: null, kandidaterKvinner: null, spPlanlagt: 2110, spGjennomfort: 1755 },
+          { aar: 2021, registrerte: 36, registrerteKvinner: 30, nye: 34, nyeKvinner: 28, kandidater: null, kandidaterKvinner: null, spPlanlagt: 1970, spGjennomfort: 1405 },
+          { aar: 2022, registrerte: 39, registrerteKvinner: 29, nye: 37, nyeKvinner: 27, kandidater: null, kandidaterKvinner: null, spPlanlagt: 2120, spGjennomfort: 1615 },
+          { aar: 2023, registrerte: 53, registrerteKvinner: 42, nye: 50, nyeKvinner: 39, kandidater: null, kandidaterKvinner: null, spPlanlagt: 2290, spGjennomfort: 1820 },
+          { aar: 2024, registrerte: 47, registrerteKvinner: 40, nye: 44, nyeKvinner: 37, kandidater: null, kandidaterKvinner: null, spPlanlagt: 2525, spGjennomfort: 2055 },
+          { aar: 2025, registrerte: 78, registrerteKvinner: 61, nye: 75, nyeKvinner: 58, kandidater: null, kandidaterKvinner: null, spPlanlagt: 2950, spGjennomfort: 2520 },
         ],
       },
     ],

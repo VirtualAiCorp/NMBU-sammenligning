@@ -87,11 +87,13 @@ export function poenggrense(g: LandsamGroup, aar: string): { v: number | null; a
 /**
  * Fullført på normert tid for NMBU-programmene i gruppen: siste startkull med normert slutt senest `til`.
  * Summerer NMBU-programmene i gruppen for det samme kullet. null når DBH ikke har tall.
+ * Forgjengere («forgjenger» i programnavnet) telles ikke: et nytt program uten kull skal vise «ingen tall»,
+ * ikke det siste kullet til programmet det erstattet.
  */
 export function gjennomforing(fak: FacultyBase, gruppeId: string, til = 2025): { fullfort: number; kull: number; aar: number } | null {
   const cg = fak.completionGroups.find((c) => c.id === gruppeId);
   if (!cg) return null;
-  const nmbu = cg.programs.filter((p) => p.isNmbu || cg.nmbuIds.includes(p.entryId));
+  const nmbu = cg.programs.filter((p) => (p.isNmbu || cg.nmbuIds.includes(p.entryId)) && !/forgjenger/i.test(p.programnavn));
   const aarene = nmbu.flatMap((p) => p.kull.filter((k) => k.startkull > 0 && k.normertAar != null && k.normertAar <= til).map((k) => k.aar));
   if (!aarene.length) return null;
   const aar = Math.max(...aarene);

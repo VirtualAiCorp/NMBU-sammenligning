@@ -1106,6 +1106,58 @@
      "n_alle": 51
     }
    }
+  },
+  "nmbu_grunnstudium": {
+   "studieprogramkoder": [
+    "GRUNN"
+   ],
+   "years": {
+    "2021": {
+     "op_mott": 59.0,
+     "kp_mott": 53.1,
+     "n_mott": 22,
+     "op_fv": 51.9,
+     "n_fv": 119,
+     "op_alle": 52.4,
+     "n_alle": 215
+    },
+    "2022": {
+     "op_mott": 58.8,
+     "kp_mott": 53.1,
+     "n_mott": 29,
+     "op_fv": 53.5,
+     "n_fv": 120,
+     "op_alle": 54.1,
+     "n_alle": 194
+    },
+    "2023": {
+     "op_mott": 57.7,
+     "kp_mott": 51.9,
+     "n_mott": 36,
+     "op_fv": 52.8,
+     "n_fv": 118,
+     "op_alle": 53.0,
+     "n_alle": 173
+    },
+    "2024": {
+     "op_mott": 60.1,
+     "kp_mott": 54.9,
+     "n_mott": 32,
+     "op_fv": 52.3,
+     "n_fv": 283,
+     "op_alle": 52.2,
+     "n_alle": 397
+    },
+    "2025": {
+     "op_mott": 58.9,
+     "kp_mott": 53.0,
+     "n_mott": 59,
+     "op_fv": 52.9,
+     "n_fv": 226,
+     "op_alle": 52.9,
+     "n_alle": 327
+    }
+   }
   }
  }
 }

@@ -175,13 +175,14 @@ export function AfFakultet({ fac, onNavigate }: { fac: FacultyData; onNavigate: 
       fv: aar ? sumMedEndring(nmbu, 'fvS', aar) : null, pl: aar ? sumMedEndring(nmbu, 'plasser', aar) : null,
       serie: serie(nmbu, 'fvS', aarFra(2021, aar)),
       bachelor: g.filter((x) => x.level === 'bachelor').length, master: g.filter((x) => x.level === 'master5' || x.level === 'master2').length,
+      aarsstudium: g.filter((x) => x.level === 'aarsstudium').length,
     };
   }, [fac]);
   const antallDok = fac.marketStatus.reduce((s, i) => s + i.dokumenter.length, 0);
   const sbMedTall = fac.studiebarometer.filter((e) => e.scores.helhetsvurdering != null).length;
 
   const kpier: Kpi[] = [
-    { ikon: Layers, etikett: 'Programgrupper', verdi: nf(fac.admissionGroups.length), hjelp: [t.bachelor && `${t.bachelor} bachelor`, t.master && `${t.master} master`].filter(Boolean).join(' · ') || undefined },
+    { ikon: Layers, etikett: 'Programgrupper', verdi: nf(fac.admissionGroups.length), hjelp: [t.bachelor && `${t.bachelor} bachelor`, t.master && `${t.master} master`, t.aarsstudium && `${t.aarsstudium} årsstudium`].filter(Boolean).join(' · ') || undefined },
     { ikon: GraduationCap, etikett: 'NMBU-program', verdi: nf(t.nmbu.length), hjelp: 'i sammenligningen' },
     { ikon: School, etikett: 'Konkurrerende program', verdi: nf(t.konk), hjelp: `ved ${nf(t.inst)} institusjoner` },
     { ikon: Users, etikett: `Førstevalg ${t.aar ?? ''}`.trim(), verdi: t.fv?.sum != null ? nf(t.fv.sum) : '–', endring: t.fv?.endring, hjelp: 'til NMBU-programmene', tittel: 'Førstevalgssøkere i hovedopptaket (Samordna). Endringen er regnet på programmene som har tall begge årene.' },

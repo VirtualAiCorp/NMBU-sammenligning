@@ -1,4 +1,4 @@
-// GENERERT av scripts/build-landsam-data.py 2026-09-25 – ikke rediger for hånd.
+// GENERERT av scripts/build-landsam-data.py 2026-10-15 – ikke rediger for hånd.
 // Kilder: Samordna opptak programtabell 2026 (søkertall 2021–2026) og SO poenggrenserapport (Tableau) 2020–2026, hovedopptak; opptakspoeng (op_*/kp_*) fra DBH tabell 571.
 // 0 i poenggrense = alle kvalifiserte kom inn · null = data ikke tilgjengelig
 import type { FullAdmissionEntry, FullYearData } from './fullAdmissionData';
@@ -420,9 +420,9 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
     ],
   },
   {
-    id: 'okologi2', label: 'Økologi (2-årig master)', level: 'master2',
+    id: 'okologi2', label: 'Økologi / Ecology (2-årig master)', level: 'master2',
     desc: 'Sammenligner de toårige masterne i økologi med lokalt opptak.',
-    note: 'Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere» (søknadsalternativer), kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (alle søknadsalternativer uansett prioritet; kvalifiserte = søknadsalternativer merket kvalifisert). Studieplasser, førstevalgssøkere, kvinneandel og poenggrenser publiseres ikke per program i denne tabellen og står derfor som null. DBH har ikke rapportert høstopptaket 2026 ennå, så 2026 er tomt for alle programmene. NMBUs master i økologi er engelskspråklig, og fallet i søkertall fra 2023 til 2024 henger sammen med innføringen av studieavgift for søkere utenfor EØS. Universitetet i Innlandets «Anvendt økologi» på Evenstad er den nærmeste norske parallellen; INN rapporterte til og med 2024 under Høgskolen i Innlandet og fra 2025 under Universitetet i Innlandet, og de to seriene er slått sammen. Biologimasterne ved NTNU og UiT dekker økologi som én av flere retninger og er tatt med som svakere sammenligninger (default false). UiBs «Global endringsøkologi» er utelatt fordi den er så ny at DBH bare har to årganger med svært få søkere.',
+    note: 'Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak. «Alle søkere» (søknadsalternativer), kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379 (alle søknadsalternativer uansett prioritet; kvalifiserte = søknadsalternativer merket kvalifisert). Studieplasser, førstevalgssøkere, kvinneandel og poenggrenser publiseres ikke per program i denne tabellen og står derfor som null. DBH har ikke rapportert høstopptaket 2026 ennå, så 2026 er tomt for alle programmene. NMBUs master i økologi er engelskspråklig og heter «Ecology» i DBH og på nmbu.no, og fallet i søkertall fra 2023 til 2024 henger sammen med innføringen av studieavgift for søkere utenfor EØS. Universitetet i Innlandets «Anvendt økologi» på Evenstad er den nærmeste norske parallellen; INN rapporterte til og med 2024 under Høgskolen i Innlandet og fra 2025 under Universitetet i Innlandet, og de to seriene er slått sammen. Biologimasterne ved NTNU og UiT dekker økologi som én av flere retninger og er tatt med som svakere sammenligninger (default false). UiBs «Global endringsøkologi» er utelatt fordi den er så ny at DBH bare har to årganger med svært få søkere.',
     nmbuIds: ['nmbu_okologi2'], defaultIds: ['nmbu_okologi2', 'inn_anvendt_okologi2'],
     entries: [
       {
@@ -687,6 +687,54 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
           '2023': Y(102, 71, null, 36.6, 49, 40, null, null, 18, 17),
           '2024': Y(109, 70, null, 37.1, 46, 42, null, null, 26, 13),
           '2025': Y(112, 112, null, 28.6, 37, 36, null, null, 19, 16),
+        },
+      },
+    ],
+  },
+  {
+    id: 'nukleaer2', label: 'Nukleær- og miljøvitenskap (2-årig master)', level: 'master2',
+    desc: 'Viser opptakstallene for NMBUs toårige master i nukleær- og miljøvitenskap (tidligere Radioecology), som ikke har noen tilsvarende utdanning i Norge.',
+    note: 'Gruppen har bare NMBU. Toårige mastere har lokalt opptak og finnes ikke i Samordna opptak; søkere, kvalifiserte og tilbud er hentet fra DBH/HKDIR tabell 379. Programmet «Nukleær- og miljøvitenskap» (DBH M-RAMI, undervisning på norsk) tok over etter den engelskspråklige masteren «Radioecology» (DBH M-RAD, Radioøkologi) fra opptaket 2024. Forgjengeren er tatt med med default false slik at årene før 2024 kan følges. Ingen andre norske institusjoner har en egen master i radioøkologi, strålevern eller nukleær miljøvitenskap i DBH tabell 347; kjernekjemi ved UiO er en studieretning i kjemimasteren og ikke et eget program. Tallene bør derfor leses som en tidsserie for NMBU alene. DBH har ikke rapportert høstopptaket 2026 ennå.',
+    nmbuIds: ['nmbu_nukleaer2', 'nmbu_radiookologi2_forgjenger'], defaultIds: ['nmbu_nukleaer2'],
+    entries: [
+      {
+        id: 'nmbu_nukleaer2', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet',
+        studiekode: '', studiested: 'Ås', type: 'master2',
+        url: 'https://www.nmbu.no/studier/master-2-aar/nukleaer-og-miljovitenskap',
+        lokaltOpptak: true,
+        years: {
+          '2024': Y(36, 7, null, null, 10, 7, null, null, 4, 0),
+          '2025': Y(62, 19, null, 52.6, 17, 13, null, null, 5, 4),
+        },
+      },
+      {
+        id: 'nmbu_radiookologi2_forgjenger', shortName: 'NMBU Radioecology', institusjon: 'Norges miljø- og biovitenskapelige universitet',
+        studiekode: '', studiested: 'Ås', type: 'master2',
+        lokaltOpptak: true,
+        years: {
+          '2021': Y(3, null, null, null, 0, 0, null, null, 0, 0),
+        },
+      },
+    ],
+  },
+  {
+    id: 'grunnstudium', label: 'Ettårig grunnstudium', level: 'aarsstudium',
+    desc: 'Viser opptakstallene for NMBUs ettårige grunnstudium, som gir søkere med generell studiekompetanse realfagene de trenger for å søke studier med realfagskrav.',
+    note: 'Gruppen har bare NMBU. Ettårig grunnstudium (SO 192199, DBH GRUNN) eies av MINA og tar opp gjennom Samordna opptak med generell studiekompetanse (kravkode GENS). Studentene tar realfag (blant annet MATH100, som dekker kravet REALFA) og kan deretter søke studier med realfagskrav; bestått årsstudium gir garantert plass på enkelte av NMBUs bachelorprogram. Ingen andre universiteter eller høgskoler har et tilsvarende ettårig realfagsløp i Samordna opptak 2026 (søk på grunnstudium, ettårig, forkurs og realfagskurs). Realfagskurs tilbys ellers i hovedsak av private skoler utenfor Samordna opptak. Tallene bør derfor leses som en tidsserie for NMBU alene. Årsstudier har ikke gjennomføring på normert tid som gradsprogram, og gir ikke fullføringsuttelling i finansieringssystemet.',
+    nmbuIds: ['nmbu_grunnstudium'], defaultIds: ['nmbu_grunnstudium'],
+    entries: [
+      {
+        id: 'nmbu_grunnstudium', shortName: 'NMBU', institusjon: 'Norges miljø- og biovitenskapelige universitet',
+        studiekode: '192199', studiested: 'Ås', type: 'aarsstudium',
+        url: 'https://www.nmbu.no/studier/arsstudium/ettarig-grunnstudium',
+        years: {
+          '2020': { ...Y(null, null, null, null, null, null, 53.4, 55.0), pgs_fv: 53.4, pgs_ord: 55.0, vl_fv: 90, vl_ord: 204, vls_fv: 56, vls_ord: 121 },
+          '2021': { ...Y(506, 174, 40, 70.1, 486, 58, 55.2, 57.4), op_mott: 59.0, kp_mott: 53.1, op_fv: 51.9, op_alle: 52.4, n_mott: 22, pgs_fv: 53.5, pgs_ord: 55.7, vl_fv: 78, vl_ord: 181, vls_fv: 37, vls_ord: 89 },
+          '2022': { ...Y(441, 154, 40, 67.5, 432, 58, 54.5, 57.2), op_mott: 58.8, kp_mott: 53.1, op_fv: 53.5, op_alle: 54.1, n_mott: 29, pgs_fv: 53.5, pgs_ord: 56.5, vl_fv: 75, vl_ord: 142, vls_fv: 38, vls_ord: 73 },
+          '2023': { ...Y(423, 163, 50, 70.6, 405, 98, 51.6, 53.5), op_mott: 57.7, kp_mott: 51.9, op_fv: 52.8, op_alle: 53.0, n_mott: 36, pgs_fv: 51.6, pgs_ord: 53.5, vl_fv: 57, vl_ord: 100, vls_fv: 31, vls_ord: 58 },
+          '2024': { ...Y(1109, 437, 50, 71.6, 1040, 100, 54.5, 59.3), op_mott: 60.1, kp_mott: 54.9, op_fv: 52.3, op_alle: 52.2, n_mott: 32, pgs_fv: 54.4, pgs_ord: 59.2, vl_fv: 250, vl_ord: 439, vls_fv: 116, vls_ord: 210 },
+          '2025': { ...Y(692, 301, 75, 72.8, 662, 152, 52.6, 55.3), op_mott: 58.9, kp_mott: 53.0, op_fv: 52.9, op_alle: 52.9, n_mott: 59, pgs_fv: 52.1, pgs_ord: 54.6, vl_fv: 137, vl_ord: 218, vls_fv: 76, vls_ord: 124 },
+          '2026': { ...Y(795, 328, 100, 72.3, 762, 208, 50.6, 53.6), pgs_fv: 50.6, pgs_ord: 53.6, vl_fv: 145, vl_ord: 209, vls_fv: 74, vls_ord: 114 },
         },
       },
     ],
