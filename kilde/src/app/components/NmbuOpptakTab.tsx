@@ -180,7 +180,7 @@ export function NmbuOpptakTab({ programmer, helt, karakterAar, startAar }: {
               <Sorterbar id="krav" label="Kravkode" sort={sort} setSort={setSort} hoyre={false} title="Opptakskrav hos Samordna opptak (GENS = generell studiekompetanse)" />
               <Sorterbar id="opptak" label="Opptakspoeng" sort={sort} setSort={setSort} title="Snitt konkurransepoeng ved opptak for dem som møtte til studiestart (DBH 571)" />
               <Sorterbar id="karakter" label="Karakterpoeng" sort={sort} setSort={setSort} title="Snitt karakterpoeng (karaktersnitt × 10 + realfags- og språkpoeng) for dem som møtte" />
-              <Sorterbar id="grense" label="Poenggrense" sort={sort} setSort={setSort} title="Poenggrense i ordinær kvote (siste år i perioden). «Alle» = alle kvalifiserte fikk tilbud" />
+              <Sorterbar id="grense" label="Poenggrense" sort={sort} setSort={setSort} title="Poenggrense i ordinær kvote, hovedopptaket (siste år i perioden). «Alle» = alle kvalifiserte fikk tilbud" />
               <Sorterbar id="mott" label="Møtt" sort={sort} setSort={setSort} title="Antall som møtte til studiestart (grunnlaget for snittet)" />
             </tr>
           </thead>
@@ -266,7 +266,7 @@ export function NmbuOpptakTab({ programmer, helt, karakterAar, startAar }: {
         <span>
           Opptakspoeng og karakterpoeng: DBH/HKDIR tabell 571, høstopptak via Samordna opptak, snitt for dem som møtte til studiestart i
           opptakskullet ({periode}). Årsvalget gjelder både karakterene på emnet og opptakskullet; ved «Alle» summeres karakterene for alle årene og opptakstallene vektes over de samme kullene. Opptakspoeng er konkurransepoengene (karakterpoeng + alders- og tilleggspoeng); karakterpoeng er
-          karaktersnitt × 10 + realfags- og språkpoeng. Kravkode og poenggrense: Samordna opptak (søkerportalen), hentet {data.generert}.
+          karaktersnitt × 10 + realfags- og språkpoeng. Kravkode: Samordna opptak (søkerportalen), hentet {data.generert}. Poenggrense: hovedopptaket i Samordna opptak, ordinær kvote.
           Toårige master og andre program med lokalt opptak har ikke poeng i DBH. Studentene på emnet ble ofte tatt opp året før (for eksempel når emnet tas i vårsemesteret i første studieår);
           tallene viser opptakskvaliteten i programmet, ikke for akkurat disse studentene.
         </span>

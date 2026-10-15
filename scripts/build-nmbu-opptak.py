@@ -6,8 +6,9 @@ Kilder:
   DBH tabell 571 «Gjennomsnittlige opptakspoeng for søkere» (institusjon 1173, høstopptak): summer av opptakspoeng
     og karakterpoeng og antall søkere per program, opptakstype (N = Samordna opptak, L = lokalt) og om søkeren
     møtte til studiestart. Snitt = sum / antall. Lokalt opptak (toårige master) har ikke poeng i tabellen.
+  Samordna opptak, poenggrenser i hovedopptaket: data/hh/kilder/so_poenggrenser_2020-2026_*.csv (Tableau-eksport).
   Samordna opptak, søkerportalens åpne søke-API (https://sok.samordnaopptak.no/api/v1/search): kravkode (reqCode),
-    studiekode og poenggrenser per studium og opptaksår, og forklaringen på hver kravkode
+    studiekode og poenggrenser (etter supplering; reserve) per studium og opptaksår, og forklaringen på hver kravkode
     (/api/v1/translations/kompetanseregelverk/<kode>/nb-NO).
 
 SO-studiekoden kobles til DBHs studieprogramkode på navn og studienivå (B- = bachelor, M- = master, ellers
@@ -18,6 +19,7 @@ Bruk:
 """
 import argparse
 import collections
+import csv
 import datetime as dt
 import html
 import importlib.util
@@ -33,6 +35,7 @@ blc = importlib.util.module_from_spec(spec); spec.loader.exec_module(blc)
 
 CACHE = ROOT / "data" / "nmbu" / "kilder" / "opptak-cache"
 OUT = ROOT / "kilde" / "public" / "nmbu-opptak.json"
+PG_CSV = ROOT / "data" / "hh" / "kilder" / "so_poenggrenser_2020-2026_hentet_2026-09-22.csv"
 INST, SO_INST = "1173", 192
 SO_API = "https://sok.samordnaopptak.no/api/v1"
 # Opptak i søkerportalen: id → opptaksår (hovedopptak universitet og høgskole)
@@ -115,6 +118,19 @@ def main():
                     ga = SO_OPPTAK.get(g["id_admission"])
                     if ga and kv["id_quota"] in ("ORD", "ORDF"):
                         e["grenser"].setdefault(ga, {})[kv["id_quota"]] = g.get("pointLimit")
+
+    # Poenggrensene: hovedopptaket fra SOs Tableau-eksport (offisiell grense). Søkerportalens API gir grensen etter
+    # suppleringsopptaket og brukes bare der eksporten mangler året. 0 = alle kvalifiserte, -1 = kvoten ikke brukt.
+    hoved = collections.defaultdict(dict)
+    with open(PG_CSV, encoding="utf-8") as fh:
+        for rad in csv.DictReader(fh, delimiter=";"):
+            if rad["Opptaksrunde"] == "Hovedopptak":
+                v = float(rad["Poenggrense"].replace(",", "."))
+                hoved[(rad["Studiekode"].replace(" ", ""), rad["År"])]["ORD" if rad["Kvote"] == "Ordinær kvote" else "ORDF"] = None if v == -1 else v
+    for k, e in so.items():
+        for (sk, y), g in hoved.items():
+            if sk == k:
+                e["grenser"][y] = g
 
     def niva_ok(pk, sotype):
         if pk.startswith("B-"):
