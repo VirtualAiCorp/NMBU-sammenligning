@@ -7,9 +7,10 @@ Modell (Kunnskapsdepartementets finansieringssystem, gjeldende fra budsjettåret
   - Uttelling kommer to år etter produksjonen: studiepoeng og kandidater i år Y betales i budsjettåret Y + 2.
     Satser for Y + 2 brukes når de finnes (DBH 908); ellers siste kjente satser (merket som foreløpig).
 Kilder:
-  900  Studiepoeng per studentens studieprogram («Progkode student») og emnets finansieringskategori
-       («Finmodekode emne»), «Ny produksjon egentfin» (bare egenfinansiert produksjon gir uttelling).
-       DBH har omkodet produksjonen fra 2023 til de nye kategoriene 1–3.
+  900  Studiepoeng per studentens studieprogram («Progkode student») og studentens finansieringskategori
+       («Finmodkode student»), «Ny produksjon egentfin» (bare egenfinansiert produksjon gir uttelling).
+       Fra 2025 er det studieprogrammet studenten tar emnet i som avgjør kategorien, ikke emnet
+       (UiB Analysegruppa nr. 51; UiB styresak 74/24). DBH har omkodet produksjonen fra 2023 til de nye kategoriene 1–3.
   908  Satser per kategori og budsjettår («Studiepoeng» per 60 sp; G3 «Beløp» per fullført grad).
   104  Ferdige kandidater per program (fra <fakultet>CompletionData.json) som tilnærming for fullførte gradsprogram;
        DBH har ingen egen tabell for G3-indikatoren ennå (907 slutter med den gamle kandidatindikatoren i 2022).
@@ -83,14 +84,14 @@ def main():
         rows = []
         try:
             rows = blc.fetch_dbh({"tabell_id": 900, "api_versjon": 1, "statuslinje": "J", "kodetekst": "N", "desimal_separator": ".",
-                                  "groupBy": ["Årstall", "Progkode student", "Finmodekode emne"],
+                                  "groupBy": ["Årstall", "Progkode student", "Finmodkode student"],
                                   "filter": [{"variabel": "Institusjonskode", "selection": {"filter": "item", "values": [inst]}},
                                              {"variabel": "Årstall", "selection": {"filter": "between", "values": [AAR[0], AAR[-1]]}}]},
                                  CACHE / f"900p_{inst}.json", a.refresh)
         except json.JSONDecodeError:
             pass
         for r in rows:
-            k = r.get("Finmodekode emne")
+            k = r.get("Finmodkode student")
             if k not in ("1", "2", "3"):
                 continue
             d = sp.setdefault((inst, r.get("Progkode student")), {}).setdefault(r["Årstall"], {"1": 0.0, "2": 0.0, "3": 0.0})

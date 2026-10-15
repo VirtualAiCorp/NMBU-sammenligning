@@ -21,7 +21,7 @@ const METRICS: MetricDef[] = [
   { id: 'innFullforing', label: 'Fra fullførte grader', unit: 'mill', decimals: 1, desc: 'Den delen av inntekten som kommer fra fullførte grader (kandidater × sats).' },
   { id: 'studentarsverk', label: 'Studentårsverk', unit: '', decimals: 0, desc: 'Egenfinansierte studiepoeng delt på 60.' },
   { id: 'kandidater', label: 'Fullførte grader', unit: '', decimals: 0, desc: 'Ferdige kandidater fra programmet i året (DBH 104), brukt som tilnærming for fullførte gradsprogram.' },
-  { id: 'snittsats', label: 'Snittsats per 60 sp', unit: 'tkr', decimals: 1, desc: 'Inntekt fra studiepoeng per studentårsverk; viser hvilken kategori emnene ligger i (1, 2 eller 3).' },
+  { id: 'snittsats', label: 'Snittsats per 60 sp', unit: 'tkr', decimals: 1, desc: 'Inntekt fra studiepoeng per studentårsverk; viser hvilken kategori programmet finansieres etter (1, 2 eller 3).' },
 ];
 
 const nf = (v: number, d: number) => v.toLocaleString('nb-NO', { minimumFractionDigits: d, maximumFractionDigits: d });
@@ -222,7 +222,7 @@ export function FacultyRevenue({ faculty }: { faculty: FacultyData }) {
       <div className="flex items-start gap-2 text-xs rounded-lg px-4 py-3 mt-5" style={{ backgroundColor: 'var(--nmbu-beige-light)', border: '1px solid var(--nmbu-neutral-3)', color: 'var(--nmbu-neutral-2)' }}>
         <Info className="w-3.5 h-3.5 shrink-0 mt-0.5" />
         <span>
-          Anslag etter finansieringssystemet fra 2025: egenfinansierte studiepoeng (DBH 900, per studentens program og emnets kategori) ganget med satsen for
+          Anslag etter finansieringssystemet fra 2025: egenfinansierte studiepoeng (DBH 900, per studentens program og programmets kategori – fra 2025 avgjør studentens studieprogram kategorien, ikke emnet) ganget med satsen for
           kategori 1, 2 eller 3{sats ? ` (${nf(sats['1'] / 1000, 2)} / ${nf(sats['2'] / 1000, 2)} / ${nf(sats['3'] / 1000, 2)} tkr per 60 sp i ${yEx?.satsAar})` : ''},
           pluss ferdige kandidater (DBH 104) ganget med satsen for fullført gradsprogram{sats ? ` (${nf(sats.G3 / 1000, 2)} tkr)` : ''}. Satser fra DBH 908, hentet {REVENUE_HENTET}.
           Studiepoengene tilskrives programmet studenten går på, også når emnet eies av et annet fakultet. Doktorgrader, EU, NFR og basisbevilgning er ikke med,

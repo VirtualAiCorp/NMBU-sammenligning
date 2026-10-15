@@ -346,13 +346,24 @@ fullførte grader og snittsats per 60 sp, NMBU mot konkurrentene med median.
 - **Skript:** `scripts/build-revenue.py [--refresh]` → `kilde/src/app/data/revenueData.ts/.json`; kjøres etter `build-completion.py`.
   Cache `data/nmbu/kilder/dbh-finansiering/`.
 - **Modell (finansieringssystemet fra 2025):** egenfinansierte studiepoeng (DBH 900, «Ny produksjon egentfin», per studentens
-  program og emnets kategori) × sats for kategori 1/2/3, pluss kandidater (DBH 104) × sats for fullført gradsprogram (G3).
+  program og studentens kategori, «Finmodkode student») × sats for kategori 1/2/3, pluss kandidater (DBH 104) × sats for fullført gradsprogram (G3).
   Satser fra DBH 908: 2025 = 56 600 / 84 900 / 198 150 per 60 sp og 51 900 per grad; 2026 = 58 650 / 87 950 / 205 300 og 53 750.
   Produksjon i år Y utløses i budsjett Y + 2; for 2025-produksjon brukes 2026-satser (merket foreløpig).
 - DBH har omkodet studiepoengproduksjonen fra 2023 til kategoriene 1–3; 2021–2022 ligger i gamle A–F og er ikke med.
 - **Tilnærminger:** DBH har ingen tabell for G3 ennå (907 slutter med gamle kandidatindikator i 2022), så ferdige kandidater
   brukes. Studiepoeng tilskrives studentens program uansett emneeier. Doktorgrad, EU, NFR og basis er ikke med.
-- Emnets kategori er brukt (ikke studentens); forskjellen i totalene er liten (NMBU 2025: kategori 1 = 2 277 mot 2 216 årsverk).
+- **Kategorien følger studentens studieprogram (rettet 15.10):** fra finansieringssystemet 2025 er det programmet studenten tar
+  emnet i som avgjør kategorien, ikke emnet selv (UiB Analysegruppa nr. 51,
+  https://ekstern.filer.uib.no/ledelse/Analysegruppen%20-%20nyhetsbrev/Analysegruppa%20-%20teier-n%C3%A5r-det-trengs-nr.51.pdf;
+  UiB styresak 74/24, https://www.uib.no/sites/w3.uib.no/files/attachments/74-24_studiefinansiering_fra_2025.pdf).
+  DBH 900 grupperes derfor på «Finmodkode student», ikke «Finmodekode emne». Eksempel: STAT100 er et kategori 2-emne, men gir
+  kategori 1 for studenter på B-ØA, B-ØLIT og B-ECON (§53). Første versjon brukte emnets kategori.
+  Totalene endres lite (alle institusjoner innen ±2 %; NMBU 2025: kategori 1/2/3 = 2 216 / 3 002 / 435 årsverk mot
+  2 277 / 2 938 / 446 med emnets kategori), men programmer som tar emner i andre kategorier flyttes: NMBUs HH-program
+  (B-ØA, B-ØLIT, B-ECON, M-ØA) blir rene kategori 1-program og går ned (2025: Økonomi, ledelse og IT −12 %, Samfunnsøkonomi −3 %,
+  Økonomi og administrasjon −2 %), mens rene kategori 2-program
+  med emner i kategori 1 (f.eks. USN IT og IS, NTNU Biomarin innovasjon) går opp. Studenter i doktorgradsprogram (kode DG)
+  er ikke med. Samtidig fikk INN Lillehammer og Rena riktige tall etter at programkodene ble rettet i programkartet 15.10 (BØADM = Lillehammer, ØKBAC = Rena).
 
 ## 21. Handelshøyskolen på standardformatet
 
