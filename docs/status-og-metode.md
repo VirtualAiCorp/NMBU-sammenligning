@@ -1135,7 +1135,8 @@ karakterer|program|oa|pensum|laeringsmal|andre|fordeling`). Eget passord `STAT10
   egenfinansierte studiepoeng i STAT100 (DBH 900) per studentens program × sats for kategori 2.
 - **Data:** `data/nmbu/kilder/stat100/` (statistikkemner, ØA-studentene, DBH-uttrekk per semester, 900, emneinfo); skriptene som lagde dem i
   `scripts/stat100/`. FS-tallene fra `data/nmbu/kilder/fs-lokalt/` (gitignored).
-- **Funn om kategori:** STAT100 er kategori 2 (91 200 kr per 60 sp i 2027-forslaget); statistikkemnet for ØA-studentene ved alle de andre
-  universitetene og NHH er kategori 1 (DBH 900, 2025), som HHs egne metodeemner.
+- **Kategori (rettet 15.10):** fra finansieringssystemet 2025 følger kategorien studentens studieprogram, ikke emnet (UiB Analysegruppa
+  nr. 51; UiB styresak 74/24). «Fordeling» bruker derfor DBH 900 «Finmodkode student»: HHs programmer gir kategori 1 også i STAT100, selv om
+  emnet står i kategori 2. Den første versjonen brukte emnets kategori, som var feil. Merk: modulen «Inntekt» (§20) bruker emnets kategori.
 - **Pensum:** pensumlistene ligger stort sett bak innlogging (Leganto/Canvas); bøker fra uoffisielle kilder er merket «usikker kilde».
 - Kildevakten sjekker nå INTERN_PASSORD, STAT100_PASSORD og RANGERING_PASSORD etter bygget.

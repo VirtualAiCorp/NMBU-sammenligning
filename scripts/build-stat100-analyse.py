@@ -14,7 +14,7 @@ Innhold og kilder (alle aggregerte tall, ingen personer):
                scripts/stat100/samle_oa_studentene.py) med eierenhet og kategori (statistikkemner.json)
   emneinfo     pensum, læringsmål og studiepoeng per emne (data/nmbu/kilder/stat100/emneinfo.json, samlet fra emnesidene)
   andre        karakterer per studieprogram i statistikkemnene ved de andre institusjonene (DBH 308 programnivå, cache)
-  fordeling    egenfinansierte studiepoeng i STAT100 per studentens program (DBH 900) × sats for emnets kategori (kategori 2)
+  fordeling    egenfinansierte studiepoeng i STAT100 per studentens program (DBH 900) × sats for kategorien til studentens program
 
 Bruk:
   python3 scripts/build-stat100-analyse.py [--testpassord X]
@@ -163,23 +163,22 @@ def main():
                           "emneurl": e.get("emneurl"), "hele": {y: {**g, "total": htot[kode].get(y, 0)} for y, g in hele[kode].items()},
                           "programmer": progs})
 
-    # ── 6. Fordeling: studiepoeng i STAT100 per studentens program × sats ──
-    sp = collections.defaultdict(lambda: collections.defaultdict(float))
-    katt = {}
+    # ── 6. Fordeling: studiepoeng i STAT100 per studentens program × sats for kategorien til studentens program ──
+    # Fra finansieringssystemet 2025 følger kategorien studentens studieprogram, ikke emnet (KD; se UiBs Analysegruppa nr. 51).
+    # DBH 900 har begge: «Finmodkode student» (brukes) og «Finmodekode emne» (STAT100 = 2, vises bare til orientering).
+    sp = collections.defaultdict(lambda: collections.defaultdict(lambda: collections.defaultdict(float)))
+    emnekat = {}
     for x in les(K / "dbh" / "900.json")[1:]:
-        if x["Årstall"] in SATSER and x.get("Finmodekode emne") in ("1", "2", "3"):
-            sp[x["Progkode student"]][x["Årstall"]] += float(x.get("Ny produksjon egentfin") or 0)
-            katt[x["Årstall"]] = x["Finmodekode emne"]
+        kat = x.get("Finmodkode student")
+        if x["Årstall"] in SATSER and kat in ("1", "2", "3"):
+            sp[x["Progkode student"]][x["Årstall"]][kat] += float(x.get("Ny produksjon egentfin") or 0)
+            emnekat[x["Årstall"]] = x.get("Finmodekode emne")
             pn = x.get("Programnavn student")
             if pn and x["Progkode student"] not in programmer:
                 programmer.setdefault(x["Progkode student"], {"navn": pn, "nivaa": None, "fakultet": None, "aar": {}, "sem": {},
                                                               "opptak": None, "krav": {}, "grenser": {}, "poeng": {}})
-    # Finansieringskategorien til statistikkemnet for ØA-studentene ved de andre institusjonene (DBH 900, 2025, emnets kategori)
-    KATEGORI_ANDRE = [("NTNU", "SØK1004", "1"), ("UiA", "ME-111", "1"), ("UiS", "BØK356", "1"), ("UiT", "BED-2065", "1"), ("Nord", "STT1001", "1"),
-                      ("USN", "MET1010", "1"), ("OsloMet", "ØAMET1100", "1"), ("INN", "ØKA1026", "1"), ("NHH", "MET2", "1"),
-                      ("NMBU", "AOS240 (metode, HH)", "1"), ("NMBU", "BUS255 (dataanalyse, HH)", "1")]
-    fordeling = {"satser": SATSER, "kategori": katt, "andre": [{"inst": i, "emne": e, "kategori": k} for i, e, k in KATEGORI_ANDRE],
-                 "programmer": {pk: {y: round(v, 3) for y, v in by.items()} for pk, by in sp.items()}}
+    fordeling = {"satser": SATSER, "emnekategori": emnekat,
+                 "programmer": {pk: {y: {k: round(v, 3) for k, v in kk.items()} for y, kk in by.items()} for pk, by in sp.items()}}
 
     emneinfo = les(K / "emneinfo.json") if (K / "emneinfo.json").exists() else {"emner": []}
 

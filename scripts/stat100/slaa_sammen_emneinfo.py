@@ -8,6 +8,9 @@ import json, re, sys
 from pathlib import Path
 
 UT = Path(__file__).resolve().parents[2] / "data" / "nmbu" / "kilder" / "stat100" / "emneinfo.json"
+ALIAS = [("NMBU", r"^NMBU|miljø- og bio"), ("NTNU", r"^NTNU|teknisk-natur"), ("UiA", r"^UiA|Agder"), ("UiS", r"^UiS|Stavanger"),
+         ("UiT", r"^UiT|arktiske"), ("Nord", r"^Nord"), ("USN", r"USN|Sørøst"), ("OsloMet", r"OsloMet"), ("INN", r"^INN|Innlandet"),
+         ("NHH", r"^NHH|Norges handels"), ("BI", r"^BI\b|Handelshøyskolen BI")]
 REKKE = ["NMBU", "NTNU", "UiA", "UiS", "UiT", "Nord", "USN", "OsloMet", "INN", "NHH", "BI"]
 
 emner = []
@@ -15,7 +18,10 @@ for f in sys.argv[1:]:
     for e in json.load(open(f, encoding="utf-8"))["emner"]:
         for b in e.get("pensum") or []:
             b["usikker"] = bool(re.search(r"uoffisiell|finn|bruktannonse|educatly|ikke bekreftet|usikker", b.get("kilde") or "", re.I))
-        e["inst_kort"] = next((k for k in REKKE if e["inst"].lower().startswith(k.lower())), e["inst"])
+        navn = e["inst"]
+        e["inst_kort"] = next((k for k, mønster in ALIAS if re.search(mønster, navn, re.I)), navn)
+        sted = re.search(r"\((Ålesund|Gjøvik|Rena|Lillehammer)\)", navn)
+        e["inst"] = e["inst_kort"] + (f" ({sted.group(1)})" if sted else "")
         emner.append(e)
 def rens(v):
     """Fjerner personlige hjemmeområder (…/~brukernavn/…) som kan identifisere ansatte."""

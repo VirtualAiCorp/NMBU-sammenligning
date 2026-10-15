@@ -42,7 +42,7 @@
     "enkel lineær regresjon"
    ],
    "pensum": [],
-   "pensum_merknad": "Emnesiden oppgir ikke lærebok; pensum «legges ut på Canvas rundt semesterstart» (Canvas er lukket). Et læringsmåldokument fra emneansvarlig (2021) viser til «læreboka» (kap. 3 sannsynlighet, kap. 4 stokastiske variabler, kap. 5.2 binomisk, 5.7 normalfordeling, tabell E.1 og E.3) uten å navngi boken. Ikke bekreftet hvilken bok det gjelder i dag. Emneansvarlig har selv skrevet «Tall forteller» (Røislien og Frøslie, Gyldendal akademisk, 2013), men det er ikke oppgitt som pensum.",
+   "pensum_merknad": "Emnesiden oppgir ikke lærebok; pensum «legges ut på Canvas rundt semesterstart» (Canvas er lukket). Et læringsmåldokument fra emneansvarlig (2021 viser til «læreboka» (kap. 3 sannsynlighet, kap. 4 stokastiske variabler, kap. 5.2 binomisk, 5.7 normalfordeling, tabell E.1 og E.3) uten å navngi boken. Ikke bekreftet hvilken bok det gjelder i dag. Emneansvarlig har selv skrevet «Tall forteller» (Røislien og Frøslie, Gyldendal akademisk, 2013), men det er ikke oppgitt som pensum.",
    "merknader": "Omvendt klasserom (video + kollokviegrupper), 2–4 t/uke; arbeidsmengde ca. 125 t forelesning/selvstudium, 65 t obligatorisk aktivitet, 60 t regneøvelser (frivillig). Campus Ås. Læringsmålsdokumentet (2021) deler kurset i 7 moduler (deskriptiv, sannsynlighet, estimering, hypotesetesting, bivariate analyser, ANOVA, regresjon).",
    "hentet": "2026-10-15",
    "inst_kort": "NMBU"
@@ -404,6 +404,408 @@
    "merknader": "Emnet er under nedlegging; siden er arkivert (høst 2025). Beslektet emne BED-2066 Statistikk for økonomer (nettstudium, 7,5 sp, samme læringsutbytte) lenker til BED-2065s pensumliste. Kreditreduksjon mot BED-2011, BED-2501, BED-2301, BED-2066.",
    "hentet": "2026-10-15",
    "inst_kort": "UiT"
+  },
+  {
+   "inst": "Nord",
+   "kode": "STT1001",
+   "navn": "Statistikk",
+   "url": "https://www.nord.no/studier/emner/STT1001",
+   "studiepoeng": 7.5,
+   "semester": "vår (oppgitt: vår 2027)",
+   "undervisningsspraak": "norsk",
+   "eier": "Handelshøgskolen (Nord universitet)",
+   "emneansvarlig_rolle": "universitetslektor",
+   "forkunnskaper": "Ingen formelle krav oppgitt. Anbefalt: studenter med minimal fordypning i matematikk fra videregående (f.eks. 1P+2P) må regne med ekstra arbeidsinnsats. Opptakskrav gjelder bachelor i økonomi og ledelse, økonomi/digitalisering/forretningsutvikling og eiendomsmegling.",
+   "vurdering": "Sammensatt vurdering med bokstavkarakter: skriftlig skoleeksamen midtveis (3 t, 25 %) + avsluttende skriftlig skoleeksamen (4 t, 75 %). To arbeidskrav (godkjent/ikke godkjent, 0 % av karakteren).",
+   "hjelpemidler": "Inntil to tospråklige papirordbøker, enkel kalkulator, utskrift av formelsamling for STT1001. Bruk av generativ KI følger Nords retningslinjer.",
+   "programvare": null,
+   "laeringsmal": {
+    "kunnskap": [
+     "Grunnleggende sannsynlighetsregning, kombinatorikk, utvalgsmodeller, betingede sannsynligheter",
+     "Sentrale fordelinger, særlig binomisk fordeling og normalfordeling",
+     "Begrepene estimator, estimat og konfidensintervall",
+     "Nullhypotese/alternativ hypotese, type I- og type II-feil, signifikansnivå, p-verdi og statistisk styrke"
+    ],
+    "ferdigheter": [
+     "Presentere og beskrive data med sentralmål, spredningsmål, frekvensfordelinger og grafer",
+     "Regne med sannsynligheter og bruke tabeller for fordelinger",
+     "Analysere og tolke statistiske undersøkelser med estimering og hypotesetesting",
+     "Estimere en enkel regresjonsmodell og vurdere hvor godt den passer"
+    ],
+    "generell_kompetanse": [
+     "Grunnleggende oversikt over bruk av meningsmålinger og andre statistiske metoder i politikk, økonomi og vitenskap"
+    ]
+   },
+   "tema": [
+    "beskrivende statistikk og grafer",
+    "sannsynlighetsregning, kombinatorikk, betinget sannsynlighet, Bayes lov",
+    "binomisk, hypergeometrisk og Poisson-fordeling",
+    "normalfordeling, normaltilnærming, sentralgrensesetningen",
+    "t-fordeling og kjikvadratfordeling",
+    "stokastiske variabler, simultanfordelinger, kovarians",
+    "punkt- og intervallestimering",
+    "hypotesetesting (binomisk, normal, t, kjikvadrat, sammenligningstester)",
+    "statistisk styrke, type I/II-feil",
+    "enkel regresjon (estimering, test av koeffisient, prediksjonsintervall)"
+   ],
+   "pensum": [],
+   "pensum_merknad": "Siden viser kun en lenke til pensumliste i Leganto (https://bibsys-ud.alma.exlibrisgroup.com/leganto/public/47BIBSYS_UBIN/lists/9624926240002211) som krever SAML-innlogging; forfatter/utgave/forlag/år/ISBN ikke tilgjengelig. Nettsøk ga ingen bekreftet lærebok.",
+   "merknader": [
+    "Overlappende emner med studiepoengreduksjon: MA106E, MET222, 11303, ME106E, 11312, MA116F, STA1005.",
+    "Studenten må disponere bærbar PC (kostnadspunkt på siden), men ingen konkret programvare er oppgitt.",
+    "Undervisning: forelesninger, oppgaveregning og kollokviegrupper.",
+    "Eneste av de seks med midtveiseksamen (25 %)."
+   ],
+   "hentet": "2026-10-15",
+   "inst_kort": "Nord"
+  },
+  {
+   "inst": "USN",
+   "kode": "MET1010",
+   "navn": "Statistikk for økonomer",
+   "url": "https://www.usn.no/studier/studie-og-emneplaner/#/subjectplan/MET1010_1_2026_VÅR",
+   "studiepoeng": null,
+   "semester": null,
+   "undervisningsspraak": null,
+   "eier": null,
+   "emneansvarlig_rolle": null,
+   "forkunnskaper": null,
+   "vurdering": null,
+   "hjelpemidler": null,
+   "programvare": "Ikke bekreftet fra offisiell kilde. Tredjepartsmateriale (studentopplastet Studocu-dokument «Excel formler og statistikk i MET1010») tyder på at Excel brukes.",
+   "laeringsmal": {
+    "kunnskap": [],
+    "ferdigheter": [],
+    "generell_kompetanse": []
+   },
+   "tema": [
+    "beskrivende statistikk",
+    "sannsynlighetsregning",
+    "stokastiske variabler og sannsynlighetsfordelinger",
+    "konfidensintervall",
+    "hypotesetesting",
+    "enkel lineær regresjon"
+   ],
+   "pensum": [],
+   "pensum_merknad": "USNs emneplaner lastes dynamisk (JavaScript/internt API som ikke lar seg hente uten nettleser med innlogget kontekst; direkte spørringer ga 403/404). Pensumlisten ligger i Leganto under emneplanen. Ikke funnet.",
+   "merknader": [
+    "Offisiell emneplan kunne IKKE hentes. Temalisten er fra tredjepartsoppføring (EnkelEksamen, ikke offisiell) og bør verifiseres.",
+    "Emnet har egen ressursside met1010.usn.no (framdrift, oppgaveløsninger, selvtest, tidligere eksamener med løsningsforslag); siden var ikke tilgjengelig fra mitt miljø (tilkobling avvist), kun søketreff-sammendrag.",
+    "Ifølge oppdraget erstatter MET1010 STA1000 «Statistikk» fra 2025; ikke bekreftet på en offisiell side.",
+    "Studiepoeng (trolig 7,5), semester og eksamensform er IKKE bekreftet."
+   ],
+   "hentet": "2026-10-15",
+   "inst_kort": "USN"
+  },
+  {
+   "inst": "OsloMet",
+   "kode": "ØAMET1100",
+   "navn": "Statistikk",
+   "url": "https://student.oslomet.no/studier/-/studieinfo/emne/%C3%98AMET1100/2026/H%C3%98ST",
+   "studiepoeng": 7.5,
+   "semester": "vår (pensum og timeplan oppgitt for vår 2027; studieåret 2026/27, programplan for høstopptak 2026)",
+   "undervisningsspraak": "norsk",
+   "eier": "Ikke oppgitt på emnesiden (inngår i Bachelorstudium i økonomi og administrasjon, programkode OKAD)",
+   "emneansvarlig_rolle": "emneansvarlig (navn oppgitt, utelatt)",
+   "forkunnskaper": "Ingen forkunnskapskrav. Anbefalt forkunnskap tilsvarende Matematikk 1 (videregående). Emnet er grunnleggende verktøyfag for bedriftsøkonomiske fag og bakgrunn for Samfunnsvitenskapelig metode.",
+   "vurdering": "Individuell skoleeksamen, 4 timer, gradert skala A–F. Intern og ekstern sensor; minst 25 % samsensureres. Ingen arbeidskrav eller obligatorisk aktivitet.",
+   "hjelpemidler": "Kalkulator (regler i programplanen). Ingen formelsamling nevnt på emnesiden.",
+   "programvare": "Regneark eller spesialisert statistisk programvare «kan bli benyttet» i undervisningen (ikke spesifisert).",
+   "laeringsmal": {
+    "kunnskap": [
+     "Grunnleggende kunnskap om sannsynlighetsregning og statistikk slik det brukes i økonomisk-administrative fag"
+    ],
+    "ferdigheter": [
+     "Presentere og tolke data med sentral-/spredningsmål, frekvensfordelinger og grafer",
+     "Sannsynlighetsregning: modeller, kombinatorikk, utvalgsmodeller, betinget sannsynlighet, total sannsynlighet, Bayes lov, uavhengighet",
+     "Forventning og varians for stokastiske variabler og lineærkombinasjoner; simultanfordelinger, kovarians",
+     "Velge modell og regne med binomisk, hypergeometrisk, Poisson, normal (normaltilnærming) og t-fordeling",
+     "Punkt- og intervallestimering",
+     "Hypotesetesting i målemodell og binomisk modell; tolke signifikansnivå, p-verdi og teststyrke",
+     "Regresjonsanalyse (estimering, test av koeffisient, prediksjon) og korrelasjonskoeffisient",
+     "Kjikvadrattester (modelltest og uavhengighet); sammenligne to grupper"
+    ],
+    "generell_kompetanse": [
+     "Forholde seg til og operasjonalisere usikkerhet"
+    ]
+   },
+   "tema": [
+    "beskrivende statistikk",
+    "sannsynlighetsregning og kombinatorikk",
+    "stokastiske variabler og lineærkombinasjoner",
+    "simultanfordelinger",
+    "diskrete og kontinuerlige fordelinger (binomisk, hypergeometrisk, Poisson, normal, t)",
+    "estimering",
+    "hypotesetesting",
+    "regresjon og korrelasjon",
+    "kjikvadrattester",
+    "sammenligning av to grupper"
+   ],
+   "pensum": [],
+   "pensum_merknad": "Pensumlisten ligger i Leganto (https://bibsys-xp.alma.exlibrisgroup.com/leganto/public/47BIBSYS_HIOA/lists?courseCode=UE_215_ØAMET1100_1_2027_VÅR_1) som krever SAML-innlogging. Nettsøk ga ikke bekreftet lærebok. Uverifisert antydning: en bruktannonse på FINN er merket «Pensum OsloMet» for Ubøe, Statistikk for økonomifag, men annonsen oppgir verken emnekode, utgave eller år.",
+   "merknader": [
+    "Samme læringsutbytte i 2018/19-versjonen, men 2025/26 og 2026/27 har et ekstra punkt om å vurdere forskjeller mellom to grupper inkl. hypotesetesting.",
+    "2026/27-versjonen legger til: «Undervisningen foregår med fysisk oppmøte på campus».",
+    "Undervisning: 3 timer plenumsforelesning per uke + oppgaveløsing med studentassistenter.",
+    "Emnet ble tidligere også brukt i Facility Management og regnskap/revisjon (2018-planen).",
+    "Hovedsiden (uten årstall) ga 403 for automatisk henting; brukte årsspesifikk side."
+   ],
+   "hentet": "2026-10-15",
+   "inst_kort": "OsloMet"
+  },
+  {
+   "inst": "INN",
+   "kode": "3MET130",
+   "navn": "Statistikk for økonomer",
+   "url": "https://studiekatalog.edutorium.no/inn/emne/3MET130",
+   "studiepoeng": 7.5,
+   "semester": "vår (oppgitt: vår 2027; startsemestre 2024–2027 vår)",
+   "undervisningsspraak": "norsk (undervisning og eksamen)",
+   "eier": "Handelshøgskolen i Innlandet, Fakultet for økonomi og samfunnsvitenskap, Institutt for økonomifag",
+   "emneansvarlig_rolle": "ikke oppgitt på siden",
+   "forkunnskaper": "Anbefalt: 3MET120 Matematikk for økonomer eller tilsvarende.",
+   "vurdering": "Skriftlig eksamen med tilsyn, 4 timer, individuell, A–F, 100 %. Obligatoriske aktiviteter: 50 % oppmøte og 1–3 arbeidskrav (f.eks. flervalgstester, regnearkøvelser, øvelser i statistikkprogram og/eller skriftlig innlevering).",
+   "hjelpemidler": "Formelsamling og godkjent kalkulator (følger HHI sine kalkulatorretningslinjer).",
+   "programvare": "Ikke spesifisert; arbeidskrav kan inkludere regnearkøvelser og øvelser i «statistikkprogram».",
+   "laeringsmal": {
+    "kunnskap": [
+     "Presentere og tolke data med sentral-/spredningsmål, frekvensfordelinger og grafiske metoder",
+     "Utfall, utfallsrom, hendelser og sannsynlighet",
+     "Sannsynlighetsfordelinger inkl. simultane fordelinger; forventning, varians og kovarians",
+     "Forskjellen på deskriptiv statistikk og statistisk inferens; fallgruver ved generalisering"
+    ],
+    "ferdigheter": [
+     "Analysere fordelinger; forventning og varians for stokastiske variabler og lineærkombinasjoner",
+     "Velge og bruke binomisk, hypergeometrisk, Poisson-, normal- og t-fordeling",
+     "Punkt- og intervallestimering",
+     "Hypotesetesting og tolking av signifikansnivå, p-verdi og teststyrke",
+     "Kjikvadrattester (modelltesting og uavhengighet)",
+     "Anvende og tolke regresjonsanalyse og korrelasjonskoeffisient"
+    ],
+    "generell_kompetanse": [
+     "Beherske grunnleggende sannsynlighetsregning (kombinatorikk, utvalgsmodeller, betinget og total sannsynlighet, Bayes lov, uavhengighet)",
+     "Kjenne til statistiske metoder i økonomisk-administrative problemstillinger",
+     "Ha metodegrunnlag for andre emner og problemorienterte oppgaver"
+    ]
+   },
+   "tema": [
+    "presentasjon og tolkning av statistiske data",
+    "sannsynlighetsregning",
+    "sannsynlighetsfordelinger og -modeller",
+    "estimering av parametere",
+    "hypotesetesting",
+    "regresjonsanalyse",
+    "kjikvadrattester"
+   ],
+   "pensum": [],
+   "pensum_merknad": "Katalogen oppgir «Ingen pensumliste tilgjengelig for dette emnet». Ikke funnet via nettsøk.",
+   "merknader": [
+    "Undervisningssted ifølge katalogen: RENA (oppdraget antok Lillehammer; siden sier Rena).",
+    "Overlapper med SMET130, HMET130, KMET130, NMET130 (campusvarianter) og ØKA1026.",
+    "Eneste av INN-variantene som eksplisitt nevner statistikkprogram/regneark og 50 % oppmøte."
+   ],
+   "hentet": "2026-10-15",
+   "inst_kort": "INN"
+  },
+  {
+   "inst": "INN",
+   "kode": "ØKA1026",
+   "navn": "Statistikk for økonomer",
+   "url": "https://studiekatalog.edutorium.no/inn/emne/ØKA1026",
+   "studiepoeng": 7.5,
+   "semester": "vår (oppgitt: vår 2027; oppstart også vår 2024–2026)",
+   "undervisningsspraak": "norsk (undervisning og eksamen)",
+   "eier": "Handelshøgskolen i Innlandet, Fakultet for økonomi og samfunnsvitenskap, Institutt for økonomifag",
+   "emneansvarlig_rolle": "ikke oppgitt på siden",
+   "forkunnskaper": "Anbefalt: ØKA1025 Matematikk for økonomer eller tilsvarende.",
+   "vurdering": "Skriftlig eksamen med tilsyn, 4 timer, individuell, A–F, 100 %. Arbeidskrav (form/omfang fastsettes per semester).",
+   "hjelpemidler": "Formelsamling og godkjent kalkulator (følger HHI sine kalkulatorretningslinjer).",
+   "programvare": null,
+   "laeringsmal": {
+    "kunnskap": [
+     "Presentere og tolke data med sentral-/spredningsmål, frekvensfordelinger og grafiske metoder",
+     "Utfall, utfallsrom, hendelser og sannsynlighet",
+     "Sannsynlighetsfordelinger inkl. simultane fordelinger; forventning, varians og kovarians",
+     "Forskjellen på deskriptiv statistikk og statistisk inferens; fallgruver ved generalisering"
+    ],
+    "ferdigheter": [
+     "Analysere fordelinger; forventning og varians for stokastiske variabler og lineærkombinasjoner",
+     "Velge og bruke binomisk, hypergeometrisk, Poisson-, normal- og t-fordeling",
+     "Punkt- og intervallestimering",
+     "Hypotesetesting og tolking av signifikansnivå, p-verdi og teststyrke",
+     "Kjikvadrattester (modelltesting og uavhengighet)",
+     "Anvende og tolke regresjonsanalyse og korrelasjonskoeffisient"
+    ],
+    "generell_kompetanse": [
+     "Beherske grunnleggende sannsynlighetsregning (kombinatorikk, utvalgsmodeller, betinget og total sannsynlighet, Bayes lov, uavhengighet)",
+     "Kjenne til statistiske metoder i økonomisk-administrative problemstillinger",
+     "Ha metodegrunnlag for andre emner og problemorienterte oppgaver"
+    ]
+   },
+   "tema": [
+    "presentasjon og tolkning av statistiske data",
+    "sannsynlighetsregning",
+    "sannsynlighetsfordelinger og -modeller",
+    "estimering av parametere",
+    "hypotesetesting",
+    "regresjonsanalyse",
+    "kjikvadrattester"
+   ],
+   "pensum": [],
+   "pensum_merknad": "Katalogen oppgir «Ingen pensumliste tilgjengelig for dette emnet». Ikke funnet via nettsøk.",
+   "merknader": [
+    "Undervisningssted ifølge katalogen: LILLEHAMMER (oppdraget antok Rena; siden sier Lillehammer).",
+    "Studieprogram: Bachelor i økonomi og administrasjon, nivå I (100-LN), fagområde økonomisk-administrativ utdanning.",
+    "Overlapper med ØKA1011 Statistikk (5 sp) og 3MET130, HMET130, KMET130, NMET130, SMET130 (7,5 sp hver).",
+    "Samme læringsutbytte som 3MET130 (nesten ordrett) – kun kodeverk/campus og matematikkforkunnskap (ØKA1025 vs 3MET120) skiller."
+   ],
+   "hentet": "2026-10-15",
+   "inst_kort": "INN"
+  },
+  {
+   "inst": "NHH",
+   "kode": "MET2",
+   "navn": "Statistikk for økonomer",
+   "url": "https://nhh.no/emner/statistikk-for-okonomer/",
+   "studiepoeng": 7.5,
+   "semester": "vår (siden er merket «Høst 2026» som katalogperiode; undervisningssemester oppgitt som vår, gjentak i august)",
+   "undervisningsspraak": "norsk",
+   "eier": "Institutt for foretaksøkonomi (engelsk: Department of Business and Management Science)",
+   "emneansvarlig_rolle": "professor ved instituttet",
+   "forkunnskaper": "Ingen oppgitt.",
+   "vurdering": "Individuell skoleeksamen, 4 timer, på papir, A–F. Arbeidskrav: oppmøte på minst 7 av 10 gruppeøvinger (første er obligatorisk) + obligatorisk test i Grasple.",
+   "hjelpemidler": "Alle skriftlige hjelpemidler (kategori 3), kalkulator, én tospråklig ordbok (kategori 1).",
+   "programvare": "R (pensum i dataverktøy dekkes av et lite hefte i Canvas)",
+   "laeringsmal": {
+    "kunnskap": [
+     "Anvende etablerte statistiske metoder til å analysere data og unngå vanlige fallgruver"
+    ],
+    "ferdigheter": [
+     "Presentere og tolke data (sentral-/spredningsmål, frekvensfordelinger, grafer)",
+     "Grunnleggende sannsynlighetsregning inkl. kombinatorikk, betinget sannsynlighet, total sannsynlighet, Bayes lov, uavhengighet",
+     "Forventning og varians, også for lineærkombinasjoner; simultanfordelinger og kovarians",
+     "Velge modell og regne med binomisk, hypergeometrisk, Poisson, normal og t-fordeling",
+     "Estimere ukjente parametere",
+     "Hypotesetesting i de vanligste modellene; tolke signifikansnivå, p-verdi og teststyrke",
+     "Analysere samvariasjon med regresjon og korrelasjonskoeffisient"
+    ],
+    "generell_kompetanse": [
+     "Bruke statistiske modeller til å drøfte økonomiske problemstillinger",
+     "Uttrykke seg presist og resonnere logisk om kvantitative forhold",
+     "Arbeide med statistisk faglitteratur"
+    ]
+   },
+   "tema": [
+    "beskrivende statistikk",
+    "sannsynlighetsregning og kombinatorikk",
+    "betinget sannsynlighet",
+    "tilfeldige variabler, forventning og varians",
+    "simultane fordelinger",
+    "sentrale sannsynlighetsfordelinger",
+    "estimering og estimatorer",
+    "hypotesetesting og spesielle tester",
+    "regresjonsanalyse"
+   ],
+   "pensum": [
+    {
+     "tittel": "Statistikk for økonomifag",
+     "forfattere": "Jan Ubøe",
+     "utgave": "6. utgave",
+     "forlag": "Gyldendal",
+     "aar": 2021,
+     "isbn": null,
+     "kilde": "NHH emneside (Alt 1)",
+     "usikker": false
+    },
+    {
+     "tittel": "Statistics for Management and Economics",
+     "forfattere": "Keller",
+     "utgave": "10th ed. (norsk side) / 8th ed. (engelsk side)",
+     "forlag": "Cengage Learning",
+     "aar": "2014 (norsk side) / 2009 (engelsk side)",
+     "isbn": null,
+     "kilde": "NHH emneside (Alt 2); norsk og engelsk side er uenige om utgave/år",
+     "usikker": false
+    }
+   ],
+   "pensum_merknad": "Ubøe er førstevalg (Alt 1), Keller alternativ. I tillegg et kort kompendium/hefte for datadelen (R) i Canvas.",
+   "merknader": [
+    "Tilsvarer MET040 (overlapp).",
+    "Undervisning: 18 dobbeltforelesninger + 2×2 t repetisjon, 10 dialogbaserte gruppeøvinger (minigrupper à 4), 16 frivillige flervalgstester, orakeltjeneste.",
+    "Intern inkonsekvens: undervisningsopplegget sier obligatorisk oppmøte 6 av 10, arbeidskravet sier minst 7 av 10.",
+    "Gjentak i august for studenter som var oppmeldt og ikke bestod; kun karakterforbedring ved ny undervisning.",
+    "Emneansvarlig er også førsteforfatter av lærebok (navn utelatt som ansvarsrolle)."
+   ],
+   "hentet": "2026-10-15",
+   "inst_kort": "NHH"
+  },
+  {
+   "inst": "BI",
+   "kode": "MET 2920",
+   "navn": "Statistikk for økonomer",
+   "url": "https://programmeinfo.bi.no/nb/course/MET-2920/2026-spring",
+   "studiepoeng": 7.5,
+   "semester": "vår 2026-versjonen (eksamen tilbys hvert semester)",
+   "undervisningsspraak": "norsk",
+   "eier": "Institutt for økonomi (oppgitt som «Economics»)",
+   "emneansvarlig_rolle": "kursansvarlig",
+   "forkunnskaper": "Ingen spesifikke; generell studiekompetanse. Obligatorisk i bachelorprogrammene i økonomisk-administrative fag.",
+   "vurdering": "Skriftlig skoleeksamen med penn og papir, 5 timer, individuell, 100 %, ECTS-skala. 5 obligatoriske arbeidskrav (programvarebruk, innleveres i itslearning, godkjent/ikke godkjent); minst 3 av 5 må være godkjent for å gå opp til eksamen.",
+   "hjelpemidler": "BI-godkjent eksamenskalkulator, enkel kalkulator, og læreboken (notater/kommentarer med penn eller blyant tillatt i boken).",
+   "programvare": "R / RStudio (integrert i undervisningen, gratis)",
+   "laeringsmal": {
+    "kunnskap": [
+     "Sentrale statistiske begreper og prosessen fra datainnsamling via deskriptiv analyse til generalisering til populasjonen",
+     "Grunnleggende sannsynlighetsteori, enkelte fordelinger og sentralgrenseteoremet",
+     "Ulike statistiske metoder for dataanalyse",
+     "Elementær bruk av statistiske dataverktøy og hvorfor de trengs"
+    ],
+    "ferdigheter": [
+     "Planlegge og gjennomføre undersøkelser med de vanligste statistiske metodene",
+     "Tolke analyseresultater fra rapporter eller datautskrifter",
+     "Bruke dataverktøy til å behandle og analysere data"
+    ],
+    "generell_kompetanse": [
+     "Styrket analytisk tenkning og refleksjon over resultater og beregninger",
+     "Forstå at statistiske metoder lett kan misbrukes",
+     "Ta hensyn til anonymitet og personvern ved datainnsamling",
+     "Kjennskap til andre grener som økonometri og maskinlæring"
+    ]
+   },
+   "tema": [
+    "datainnsamling, variabler og målenivå",
+    "beskrivende statistikk (sentralmål, spredning, samvariasjon, grafer)",
+    "kombinatorikk, sannsynlighetsregning, betinget sannsynlighet",
+    "tilfeldige variabler, forventning, varians, kovarians",
+    "Bernoulli-, binomisk, hypergeometrisk, normal- og t-fordeling; simultanfordeling for to diskrete variabler",
+    "estimatorer, utvalgsfordelinger, sentralgrenseteoremet, konfidensintervaller",
+    "hypotesetesting for gjennomsnitt og andel, to-gruppesammenligning",
+    "enkel lineær regresjon med inferens",
+    "etikk i datainnsamling, analyse og formidling (personvern, representativitet)",
+    "aktiv bruk av statistisk programvare"
+   ],
+   "pensum": [
+    {
+     "tittel": "Statistikk og dataanalyse: En moderne innføring",
+     "forfattere": "Njål Foldnes, Steffen Grønneberg, Gudmund Horn Hermansen, Einar Christopher Wellén",
+     "utgave": "2. utgave",
+     "forlag": "Cappelen Damm Akademisk",
+     "aar": 2024,
+     "isbn": "9788202780043 (hentet fra nettsøk/bibliotekpost, ikke bekreftet på BI-siden)",
+     "kilde": "BI kursbeskrivelse 2026 vår (programmeinfo.bi.no); ISBN via bibliotek.nav.no-sammendrag/Cappelen Damm innholdsfortegnelse-filnavn",
+     "usikker": false
+    }
+   ],
+   "pensum_merknad": "Full pensumliste er lenket på BI-siden men innholdet vistes ikke; kun læreboken er oppgitt i teksten.",
+   "merknader": [
+    "Totalt 200 timer arbeidsbelastning: 54 undervisning, 66 forberedelse, 75 gruppe/oppgaver, 5 eksamen.",
+    "Eneste med 5 timers eksamen og lærebok som tillatt hjelpemiddel.",
+    "Eneste med eksplisitt personvern/etikk-tema og kobling til økonometri/maskinlæring i læringsmålene.",
+    "Tidligere kode MET 0920 (2020).",
+    "Nettstudenter: digitale ressurser tilsvarende campusundervisning."
+   ],
+   "hentet": "2026-10-15",
+   "inst_kort": "BI"
   }
  ]
 }

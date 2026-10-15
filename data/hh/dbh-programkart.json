@@ -161,20 +161,6 @@
       "entryId": "inn_oa",
       "institusjonskode": "1177",
       "studieprogramkoder": [
-        "ØKBAC"
-      ],
-      "studieprogramnavn": "Økonomi og administrasjon (bachelor)",
-      "nivaakode": "B3",
-      "institusjonskoder": [
-        "0264",
-        "1177"
-      ],
-      "merknad": "Antatt kode for Lillehammer."
-    },
-    {
-      "entryId": "inn_rena_oa",
-      "institusjonskode": "1177",
-      "studieprogramkoder": [
         "BØADM"
       ],
       "studieprogramnavn": "Økonomi og administrasjon (bachelor)",
@@ -183,7 +169,21 @@
         "0264",
         "1177"
       ],
-      "merknad": "Antatt kode for Rena."
+      "merknad": "BØADM = Lillehammer (INNs studiekatalog, sjekket 15.10.2026)."
+    },
+    {
+      "entryId": "inn_rena_oa",
+      "institusjonskode": "1177",
+      "studieprogramkoder": [
+        "ØKBAC"
+      ],
+      "studieprogramnavn": "Økonomi og administrasjon (bachelor)",
+      "nivaakode": "B3",
+      "institusjonskoder": [
+        "0264",
+        "1177"
+      ],
+      "merknad": "ØKBAC = Rena (INNs studiekatalog, sjekket 15.10.2026)."
     },
     {
       "entryId": "nord_oa",
