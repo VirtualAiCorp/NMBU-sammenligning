@@ -38,6 +38,7 @@ interface Props {
   onOpenOriginalHH?: () => void;
   /** Bare for Handelshøyskolen: intern opptaksanalyse høsten 2026 (passordbeskyttet og kryptert). */
   onOpenIntern?: () => void;
+  onOpenStat100?: () => void;
 }
 
 const LEVEL_LABEL: Record<string, string> = {
@@ -47,7 +48,7 @@ const LEVEL_LABEL: Record<string, string> = {
   aarsstudium: 'Årsstudium',
 };
 
-export function LandsamLanding({ faculty, onOpenAnalysis, onOpenCourses, onOpenMarketStatus, onOpenStudiebarometer, onOpenCompletion, onOpenStudents, onOpenStaff, onOpenHousing, onOpenApplicantBase, onOpenEconomy, onOpenRevenue, onOpenLabourMarket, onBackToFaculties, onOpenOriginalHH, onOpenIntern }: Props) {
+export function LandsamLanding({ faculty, onOpenAnalysis, onOpenCourses, onOpenMarketStatus, onOpenStudiebarometer, onOpenCompletion, onOpenStudents, onOpenStaff, onOpenHousing, onOpenApplicantBase, onOpenEconomy, onOpenRevenue, onOpenLabourMarket, onBackToFaculties, onOpenOriginalHH, onOpenIntern, onOpenStat100 }: Props) {
   const innebygd = useInnebygd();
   const admissionGroups = faculty.admissionGroups;
   const courseGroups = faculty.courseGroups;
@@ -109,6 +110,14 @@ export function LandsamLanding({ faculty, onOpenAnalysis, onOpenCourses, onOpenM
                 <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.07em', textTransform: 'uppercase', color: '#6B4E00' }}>Intern · passord</div>
                 <div style={{ fontFamily: "'Lora', serif", fontSize: 17, marginTop: 2, color: 'var(--nmbu-green-dark)' }}>Opptak høsten 2026 →</div>
                 <div style={{ fontSize: 12, color: 'var(--nmbu-neutral-2)', marginTop: 4, lineHeight: 1.5 }}>Søkermassen rundt grensen og hva større eller mindre opptaksrammer gjør med grenser og snitt.</div>
+              </button>
+            )}
+            {onOpenStat100 && (
+              <button onClick={onOpenStat100} className="rounded-xl p-4 text-left transition-all"
+                style={{ backgroundColor: '#FFF7E6', border: '1px solid #F0C040' }}>
+                <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.07em', textTransform: 'uppercase', color: '#6B4E00' }}>Intern · passord</div>
+                <div style={{ fontFamily: "'Lora', serif", fontSize: 17, marginTop: 2, color: 'var(--nmbu-green-dark)' }}>STAT100 – analyse →</div>
+                <div style={{ fontSize: 12, color: 'var(--nmbu-neutral-2)', marginTop: 4, lineHeight: 1.5 }}>Karakterer, opptak og kravkoder per program, ØA-studentene ved andre universiteter, pensum, læringsmål og fordeling.</div>
               </button>
             )}
           </div>

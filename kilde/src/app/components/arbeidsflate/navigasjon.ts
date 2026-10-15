@@ -49,6 +49,7 @@ export const MODUL_TEKST: Record<Exclude<ShellView, 'landing'>, string> = {
   okonomi: 'Styringsindikatorer',
   intern: 'Passordbeskyttet',
   rangering: 'Utkast: handelshøyskolene rangert, passordbeskyttet',
+  stat100: 'Til møtet om STAT100, passordbeskyttet',
 };
 
 export type Modul = (typeof FAKULTETSMODULER)[number];
@@ -60,7 +61,7 @@ export const MODULGRUPPER: { tittel: string; views: ShellView[] }[] = [
   { tittel: 'Opptak og studenter', views: ['analyse', 'emner', 'gjennomforing', 'studentene', 'studiebarometer'] },
   { tittel: 'Marked og omverden', views: ['markedsstatus', 'arbeidsmarked', 'sokergrunnlag', 'bolig'] },
   { tittel: 'Institusjonen', views: ['inntekt', 'fagmiljo', 'okonomi'] },
-  { tittel: 'Intern', views: ['intern', 'rangering'] },
+  { tittel: 'Intern', views: ['intern', 'rangering', 'stat100'] },
 ];
 
 export const modulerFor = (id: FacultyId, views: ShellView[]) => views.map(modul).filter((m) => !m.kunFor || m.kunFor === id);

@@ -1121,3 +1121,21 @@ Brukere meldte at Nukleær- og miljøvitenskap og Ecology manglet i MINA-oversik
   i navnet: et nytt program uten kull viser «Ingen gjennomføringstall» i stedet for forgjengerens siste kull (M-RAD kull 2019, 3
   studenter). Miljøvitenskap gir samme tall som før. KPI-en «Programgrupper» teller nå også årsstudier.
 - **KI-grunnlaget:** §52 (interne FS-tall) er lagt i `UTELAT` i `build-ki-grunnlag.py`; kildevakten stoppet bygget på den.
+
+## 53. STAT100 – analyse (Handelshøyskolen, intern) (15.10.2026)
+
+Egen side under Handelshøyskolen til møtet med fagmiljøet bak STAT100 (mandag 19.10). Direkte lenke: `?stat100` (fane: `&stat100fane=
+karakterer|program|oa|pensum|laeringsmal|andre|fordeling`). Eget passord `STAT100_PASSORD` i `kilde/.env.local`; dataene er kryptert i
+`kilde/public/intern/stat100.json` av `scripts/build-stat100-analyse.py` (samme format som de andre interne sidene). Komponent
+`components/Stat100Analyse.tsx`; menypunkt under «Intern» og kort på HH-oversikten.
+- **Faner:** (1) karakterer i STAT100 per år og semester 2021–2025 + våren 2026 fra FS, og våreksamen per HH-program 2021–2026;
+  (2) per studieprogram med opptakspoeng/karakterpoeng (DBH 571, kullet året før), kravkode og poenggrense (hovedopptaket);
+  (3) ØA-studentene i statistikkemnet ved universitetene (fra Excel-oversikten, med eier og kategori 1–3); (4) pensum;
+  (5) læringsmål og studiepoeng; (6) andre institusjoners statistikkemner per studieprogram (DBH 308); (7) «Fordeling»:
+  egenfinansierte studiepoeng i STAT100 (DBH 900) per studentens program × sats for kategori 2.
+- **Data:** `data/nmbu/kilder/stat100/` (statistikkemner, ØA-studentene, DBH-uttrekk per semester, 900, emneinfo); skriptene som lagde dem i
+  `scripts/stat100/`. FS-tallene fra `data/nmbu/kilder/fs-lokalt/` (gitignored).
+- **Funn om kategori:** STAT100 er kategori 2 (91 200 kr per 60 sp i 2027-forslaget); statistikkemnet for ØA-studentene ved alle de andre
+  universitetene og NHH er kategori 1 (DBH 900, 2025), som HHs egne metodeemner.
+- **Pensum:** pensumlistene ligger stort sett bak innlogging (Leganto/Canvas); bøker fra uoffisielle kilder er merket «usikker kilde».
+- Kildevakten sjekker nå INTERN_PASSORD, STAT100_PASSORD og RANGERING_PASSORD etter bygget.

@@ -36,7 +36,7 @@ const FAKULTETER = ['hh', 'landsam', 'realtek', 'biovit', 'kbm', 'mina', 'vet'];
 const KONVOLUTT = ['alg', 'data', 'iter', 'iv', 'salt', 'v'];
 // Ord som aldri skal stå i KI-grunnlaget eller i koden som bygger kildene til modellen
 const SPERRET_I_GRUNNLAG = [/\bintern\/[\w-]+\.json/i, /opptak-h26/i, /INTERN_PASSORD/, /Handelshoyskolerangering|Rangering \(intern\)/i];
-const SPERRET_I_KODE = [/InternOpptak/, /PasswordGate/, /['"`/]intern\//, /opptak-h26/, /INTERN_PASSORD/, /dekrypter/i, /crypto\.subtle\.decrypt/];
+const SPERRET_I_KODE = [/InternOpptak/, /Stat100Analyse/, /STAT100_PASSORD/, /PasswordGate/, /['"`/]intern\//, /opptak-h26/, /INTERN_PASSORD/, /dekrypter/i, /crypto\.subtle\.decrypt/];
 // Det eneste lovlige: serverfunksjonene nekter å kjøre hvis passordet ligger i Cloudflare (miljoFeil i functions/_lib/ki.ts)
 const UNNTAK_I_KODE = [/INTERN_PASSORD\?: string;/g, /if \(env\.INTERN_PASSORD\) return 'KI-funksjonene er stengt: INTERN_PASSORD er lagt inn i Cloudflare\./g];
 
@@ -149,11 +149,15 @@ function etterBygg() {
   const env = join(ROT, 'kilde', '.env.local');
   const dist = join(ROT, 'kilde', 'dist');
   if (!existsSync(env) || !existsSync(dist)) return;
-  const m = les(env).match(/^\s*INTERN_PASSORD\s*=\s*["']?([^"'\r\n]+)["']?\s*$/m);
-  if (!m || m[1].length < 6) return;
+  // Alle passordene for krypterte sider: ingen av dem skal finnes i det bygde nettstedet
+  const navn = ['INTERN_PASSORD', 'STAT100_PASSORD', 'RANGERING_PASSORD'];
+  const funnet = navn.map((n) => [n, les(env).match(new RegExp(`^\\s*${n}\\s*=\\s*["']?([^"'\\r\\n]+)["']?\\s*$`, 'm'))?.[1]])
+    .filter(([, v]) => v && v.length >= 6);
+  if (!funnet.length) return;
   for (const p of alleFiler(dist)) {
     if (!/\.(js|html|json|css|txt|map)$/.test(p)) continue;
-    if (readFileSync(p).includes(m[1])) feil.push(`${rel(p)}: inneholder INTERN_PASSORD (verdien skrives ikke ut)`);
+    const innhold = readFileSync(p);
+    for (const [n, v] of funnet) if (innhold.includes(v)) feil.push(`${rel(p)}: inneholder ${n} (verdien skrives ikke ut)`);
   }
-  if (!feil.length) console.log('Kildevakten: INTERN_PASSORD finnes ikke i det bygde nettstedet.');
+  if (!feil.length) console.log(`Kildevakten: ${funnet.map(([n]) => n).join(', ')} finnes ikke i det bygde nettstedet.`);
 }

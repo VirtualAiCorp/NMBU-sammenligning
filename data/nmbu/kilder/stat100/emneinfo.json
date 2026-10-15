@@ -1,0 +1,409 @@
+{
+ "hentet": "2026-10-15",
+ "emner": [
+  {
+   "inst": "NMBU",
+   "kode": "STAT100",
+   "navn": "Statistikk",
+   "url": "https://www.nmbu.no/emne/stat100",
+   "url_en": "https://www.nmbu.no/en/course/stat100",
+   "studiepoeng": 10,
+   "semester": "begge",
+   "undervisningsspraak": "norsk",
+   "eier": "Fakultet for kjemi, bioteknologi og matvitenskap (Ås)",
+   "emneansvarlig_rolle": "Emneansvarlig (faglig ansatt ved fakultetet); 600 plasser",
+   "forkunnskaper": "Opptak: generell studiekompetanse + R1 (eller S1+S2). Forkunnskap: MATH100 (eller ECN102) eller MATH121 (kan tas parallelt). Forutsetter algebra, summetegn, logaritmer, ligninger/ulikheter. 5 sp reduksjon mot DAT110.",
+   "vurdering": "3,5 t skriftlig eksamen, helt eller delvis flervalg, 100 %, A–F. Obligatorisk aktivitet må godkjennes: ukentlige nettbaserte flervalgsoppgaver (minst 50 % riktig) og ukentlige skriftlige innleveringer (gruppe/kollokvieløp eller individuelt løp). KI-kategori K2 (en viss grad av KI-bruk) for obligatoriske arbeider.",
+   "hjelpemidler": "Kode C1: alle typer kalkulatorer, spesifiserte andre hjelpemidler",
+   "programvare": "RStudio / R (enkel statistikkprogramvare)",
+   "laeringsmal": {
+    "kunnskap": [
+     "Grunnleggende ideer i sannsynlighetsregning og statistikk",
+     "Forutsetninger for og bruk av vanlige metoder for å trekke slutninger om populasjoner fra tilfeldige utvalg"
+    ],
+    "ferdigheter": [
+     "Gjennomføre enkle statistiske analyser",
+     "Tolke og formidle resultater og deres begrensninger",
+     "Forstå betydningen av datakvalitet (representativitet, uavhengighet)"
+    ],
+    "generell_kompetanse": [
+     "Bruke metodene på enkle problemer og egne data",
+     "Vurdere statistiske resultater kritisk, også i media og forskning"
+    ]
+   },
+   "tema": [
+    "deskriptiv statistikk",
+    "sannsynlighet (betinget, diskrete/kontinuerlige variabler, forventning, varians)",
+    "kovarians, korrelasjon, uavhengighet",
+    "binomisk og normalfordeling",
+    "estimering og konfidensintervall",
+    "hypotesetesting (z-test, t-test, kjikvadrattest)",
+    "enveis variansanalyse (ANOVA)",
+    "enkel lineær regresjon"
+   ],
+   "pensum": [],
+   "pensum_merknad": "Emnesiden oppgir ikke lærebok; pensum «legges ut på Canvas rundt semesterstart» (Canvas er lukket). Et læringsmåldokument fra emneansvarlig (2021) viser til «læreboka» (kap. 3 sannsynlighet, kap. 4 stokastiske variabler, kap. 5.2 binomisk, 5.7 normalfordeling, tabell E.1 og E.3) uten å navngi boken. Ikke bekreftet hvilken bok det gjelder i dag. Emneansvarlig har selv skrevet «Tall forteller» (Røislien og Frøslie, Gyldendal akademisk, 2013), men det er ikke oppgitt som pensum.",
+   "merknader": "Omvendt klasserom (video + kollokviegrupper), 2–4 t/uke; arbeidsmengde ca. 125 t forelesning/selvstudium, 65 t obligatorisk aktivitet, 60 t regneøvelser (frivillig). Campus Ås. Læringsmålsdokumentet (2021) deler kurset i 7 moduler (deskriptiv, sannsynlighet, estimering, hypotesetesting, bivariate analyser, ANOVA, regresjon).",
+   "hentet": "2026-10-15",
+   "inst_kort": "NMBU"
+  },
+  {
+   "inst": "NTNU (Ålesund)",
+   "kode": "AR100219",
+   "navn": "Statistikk for økonomer",
+   "url": "https://www.ntnu.no/studier/emner/AR100219",
+   "studiepoeng": 7.5,
+   "semester": "vår",
+   "undervisningsspraak": "norsk",
+   "eier": "Institutt for IKT og realfag (Ålesund)",
+   "emneansvarlig_rolle": "Emneansvarlig og foreleser ved instituttet",
+   "forkunnskaper": "Anbefalt: grunnkurs i matematikk. Ingen formelle krav. Opptak til Biomarin innovasjon, Digital forretningsutvikling, Markedsføring innovasjon og ledelse.",
+   "vurdering": "4 t skriftlig skoleeksamen (Inspera), 100 %, bokstavkarakter. Obligatoriske regneøvinger og arbeidskrav må være bestått. Utsatt eksamen august 2027.",
+   "hjelpemidler": "Kode D: ingen trykte/håndskrevne hjelpemidler, enkel kalkulator (Casio FC-100V / TI BA II Plus); digitalt formelark",
+   "programvare": "Ikke navngitt («bruk av dataverktøy»)",
+   "laeringsmal": {
+    "kunnskap": [
+     "Metodisk grunnlag i sannsynlighet og statistikk for øvrige emner i studiet",
+     "Kunne koble statistiske metoder til økonomisk-administrative problemer"
+    ],
+    "ferdigheter": [
+     "Forstå sannsynlighetsbegrepet, regne med sannsynlighet og fordelinger",
+     "Estimere ukjente parametre, finne konfidensintervall",
+     "Velge og bruke hensiktsmessige hypotesetester",
+     "Bruke og tolke lineære regresjonsmodeller"
+    ],
+    "generell_kompetanse": [
+     "Bruke statistikk til å uttrykke, analysere og kommunisere økonomiske sammenhenger",
+     "Statistisk forståelse som grunnlag for videre studier og livslang læring"
+    ]
+   },
+   "tema": [
+    "deskriptiv statistikk",
+    "sannsynlighet og kombinatorikk",
+    "diskrete variabler (binomisk, hypergeometrisk, Poisson)",
+    "kontinuerlige variabler (normal, eksponential, normaltilnærming)",
+    "estimering",
+    "hypotesetesting (z, t, kjikvadrat, p-verdi, styrke)",
+    "korrelasjon og lineær regresjon",
+    "dataverktøy"
+   ],
+   "pensum": [],
+   "pensum_merknad": "Siden lenker til Leganto (Feide-innlogging) uten titler; kursmateriell «oppgis ved semesterstart». Ingen uavhengig kilde funnet.",
+   "merknader": "Innholdet er nesten likt REA1154 (Gjøvik) med regresjon som eksplisitt læringsutbytte. Overlapp med MET1002, SØK1004 m.fl.",
+   "hentet": "2026-10-15",
+   "inst_kort": "NTNU"
+  },
+  {
+   "inst": "NTNU",
+   "kode": "MET1002",
+   "navn": "Statistikk for økonomer",
+   "url": "https://www.ntnu.no/studier/emner/MET1002",
+   "studiepoeng": 7.5,
+   "semester": "vår (ordinær eksamen hvert semester; ingen utsatt eksamen)",
+   "undervisningsspraak": "norsk",
+   "eier": "NTNU Handelshøyskolen (Trondheim)",
+   "emneansvarlig_rolle": "Emneansvarlig ved Handelshøyskolen",
+   "forkunnskaper": "Ingen formelle krav. Anbefalt SØK1001/MET1001 og TDT4111 eller tilsvarende. Opptak til BØAT eller MSIVØK5.",
+   "vurdering": "4 t skriftlig skoleeksamen (Inspera), 100 %, bokstavkarakter. Obligatorisk semesteroppgave/øvinger. 2 t forelesning + 2 t øving per uke.",
+   "hjelpemidler": "Kode D (vår 2027); høst 2026 oppgis kode C (spesifiserte hjelpemidler + enkel kalkulator). Formelsamling utdeles. Kalkulator: Casio FC-100V eller TI BA II Plus. Siden oppgir både «B–D» og «D».",
+   "programvare": "Ikke navngitt («dataverktøy»)",
+   "laeringsmal": {
+    "kunnskap": [
+     "Sannsynlighetsregning, variasjon og usikkerhet",
+     "Beskrivende statistikk",
+     "Diskrete og kontinuerlige stokastiske variabler",
+     "Normal- og binomisk fordeling, normaltilnærming",
+     "Punkt- og intervallestimering, utvalgsstørrelse",
+     "Hypotesetesting, p-verdier",
+     "Statistisk modell og usikkerhet i slutninger"
+    ],
+    "ferdigheter": [
+     "Formulere sannsynlighetsmodell fra verbal problemstilling",
+     "Kjenne igjen aktuelle fordelinger",
+     "Gjennomføre og velge hypotesetester",
+     "Estimere parametre, konfidensintervall",
+     "Koble statistikk til økonomiske problemstillinger",
+     "Vurdere analyser kritisk, bruke dataverktøy"
+    ],
+    "generell_kompetanse": []
+   },
+   "tema": [
+    "sannsynlighet og stokastiske variabler",
+    "vanlige fordelinger og tilnærminger",
+    "beskrivende statistikk",
+    "estimering og utvalgsstørrelse",
+    "hypotesetesting og p-verdier",
+    "statistiske modeller"
+   ],
+   "pensum": [],
+   "pensum_merknad": "Siden sier «opplyses ved semesterstart»; Leganto-liste krever Feide. Innholdet er identisk med SØK1004, så samme bok (Anderson m.fl., se SØK1004) er sannsynlig, men ikke bekreftet. En eldre versjon (vår 2024) navngir kun koordinator/foreleser, ikke bok.",
+   "merknader": "Forgjenger/parallell til SØK1004 (samme tittel, omfang og læringsutbytte; begge står som gjensidig overlappende). Siden sier ikke eksplisitt at MET1002 er erstattet, og begge vises med oppstart vår 2027. Overlapp også med AR100219, REA1154, REA1154F, TMA4240, TMA4245 m.fl. Tilgjengelig år 2017/2018–2026/2027.",
+   "hentet": "2026-10-15",
+   "inst_kort": "NTNU"
+  },
+  {
+   "inst": "NTNU (Gjøvik)",
+   "kode": "REA1154",
+   "navn": "Statistikk for økonomer",
+   "url": "https://www.ntnu.no/studier/emner/REA1154",
+   "studiepoeng": 7.5,
+   "semester": "vår",
+   "undervisningsspraak": "norsk",
+   "eier": "Institutt for matematiske fag (Gjøvik)",
+   "emneansvarlig_rolle": "Emneansvarlig og foreleser ved instituttet",
+   "forkunnskaper": "Anbefalt: grunnkurs i matematikk. Ingen formelle krav. Opptak: Digital forretningsutvikling og Økonomi og ledelse.",
+   "vurdering": "4 t skriftlig skoleeksamen (Inspera), 100 %, bokstavkarakter. Obligatorisk skriftlig innlevering (arbeidskrav) må bestås. Utsatt eksamen august 2027.",
+   "hjelpemidler": "Kode D: ingen trykte/håndskrevne hjelpemidler, enkel kalkulator (Casio FC-100V / TI BA II Plus); formelark utdeles",
+   "programvare": "Ikke navngitt («bruk av dataverktøy»)",
+   "laeringsmal": {
+    "kunnskap": [
+     "Metodisk grunnlag i sannsynlighet og statistikk for øvrige emner i studiet",
+     "Kunne koble statistiske metoder til økonomisk-administrative problemer"
+    ],
+    "ferdigheter": [
+     "Forstå sannsynlighetsbegrepet, regne med sannsynlighet og fordelinger",
+     "Estimere ukjente parametre, finne konfidensintervall",
+     "Velge og bruke hensiktsmessige hypotesetester",
+     "Bruke og tolke lineære regresjonsmodeller"
+    ],
+    "generell_kompetanse": [
+     "Bruke statistikk til å uttrykke, analysere og kommunisere økonomiske sammenhenger",
+     "Statistisk forståelse som grunnlag for videre studier og livslang læring"
+    ]
+   },
+   "tema": [
+    "deskriptiv statistikk",
+    "sannsynlighet og kombinatorikk",
+    "diskrete variabler (binomisk, hypergeometrisk, Poisson)",
+    "kontinuerlige variabler (normal, eksponential)",
+    "estimering",
+    "hypotesetesting (z, t, kjikvadrat, p-verdi, styrke)",
+    "korrelasjon og lineær regresjon",
+    "dataverktøy"
+   ],
+   "pensum": [
+    {
+     "tittel": "Innføring i sannsynlighetsregning og statistikk",
+     "forfattere": "Per Christian Hagen",
+     "utgave": "8. utgave",
+     "forlag": "Cappelen Damm Akademisk",
+     "aar": null,
+     "isbn": null,
+     "kilde": "UOFFISIELL og svak: Educatly-side for REA1154F (nett/fleksibel variant av samme emne). Ikke bekreftet for REA1154 på NTNU/Leganto. Bruktannonse (FINN 445346649) bekrefter bare at en bok «Statistikk for økonomer» ble brukt i REA1154.",
+     "usikker": true
+    }
+   ],
+   "pensum_merknad": "Offisiell liste i Leganto (Feide). Boken over er lavt sikkert belagt.",
+   "merknader": "Nettstudenter får streamet forelesning. REA1154F (nettvariant fra høst 2022) har overlapp. Campus Gjøvik.",
+   "hentet": "2026-10-15",
+   "inst_kort": "NTNU"
+  },
+  {
+   "inst": "NTNU",
+   "kode": "SØK1004",
+   "navn": "Statistikk for økonomer",
+   "url": "https://www.ntnu.no/studier/emner/S%C3%98K1004",
+   "studiepoeng": 7.5,
+   "semester": "vår (ordinær eksamen avholdes også høst 2026)",
+   "undervisningsspraak": "norsk",
+   "eier": "Institutt for samfunnsøkonomi (Trondheim)",
+   "emneansvarlig_rolle": "Emneansvarlig ved instituttet",
+   "forkunnskaper": "Ingen formelle krav. Anbefalt: SØK1001/MET1001 og TDT4111 eller tilsvarende.",
+   "vurdering": "4 t skriftlig skoleeksamen (Inspera), 100 %, bokstavkarakter. Obligatorisk semesteroppgave/øvinger må godkjennes; antall og krav oppgis ved semesterstart. 2 t forelesning i uka.",
+   "hjelpemidler": "Kode D: ingen trykte/håndskrevne hjelpemidler, bestemt enkel kalkulator (Casio FC-100V eller TI BA II Plus)",
+   "programvare": "Ikke navngitt (kun «dataverktøy»/«statistiske verktøy»)",
+   "laeringsmal": {
+    "kunnskap": [
+     "Sannsynlighetsregning, sannsynlighetsbegrepet, variasjon og usikkerhet",
+     "Beskrivende statistikk: sentraltendens og spredning",
+     "Diskrete og kontinuerlige stokastiske variabler",
+     "Vanlige fordelinger (normal, binomisk) og normaltilnærminger",
+     "Punkt- og intervallestimering, utvalgsstørrelse",
+     "Hypoteser, hypotesetesting, p-verdier",
+     "Hva en statistisk modell er og hvordan usikkerhet i slutninger beskrives"
+    ],
+    "ferdigheter": [
+     "Formulere en sannsynlighetsmodell fra en ustrukturert problemstilling",
+     "Velge riktig fordeling i en gitt situasjon",
+     "Gjennomføre og velge passende hypotesetester",
+     "Estimere parametre og finne konfidensintervaller",
+     "Koble statistiske metoder til økonomiske problemstillinger",
+     "Vurdere resultater kritisk, kommunisere økonomiske sammenhenger",
+     "Bruke dataverktøy"
+    ],
+    "generell_kompetanse": []
+   },
+   "tema": [
+    "sannsynlighetsregning",
+    "stokastiske variabler og fordelinger",
+    "beskrivende statistikk",
+    "estimering og utvalgsstørrelse",
+    "hypotesetesting og p-verdier",
+    "statistiske modeller"
+   ],
+   "pensum": [
+    {
+     "tittel": "Statistics for Business and Economics",
+     "forfattere": "Anderson, Sweeney, Williams, Camm, Cochran, Fry, Ohlmann m.fl.",
+     "utgave": "ikke bekreftet (EMEA/«Metric»-utgave)",
+     "forlag": "Cengage",
+     "aar": 2024,
+     "isbn": "9781473791350",
+     "kilde": "UOFFISIELL: FINN-annonse 444693181 (selger, ‘brukes i emnet SØK1004’, publisert 25.01.2024). Offisiell pensumliste ligger i Leganto (krever Feide) og er ikke verifisert.",
+     "usikker": true
+    }
+   ],
+   "pensum_merknad": "Emnesiden sier «kursmateriell oppgis ved semesterstart» og lenker til Leganto (UE_194_SØK1004_1_2027_VÅR_1), som krever innlogging. Boken over er kun belagt via en bruktannonse.",
+   "merknader": "Siden viser undervisningsstart vår 2027, men eksamen høst 2026 (27.10.2026) vises også; for høst 2026 oppgir MET1002-siden hjelpemiddelkode C, for vår 2027 kode D. Overlapper MET1002 (7,5 sp reduksjon fra høst 2025), SVSØ211, ST1101, ST1201, ST0202, SØK2900. Siden oppgir ikke generell kompetanse som eget punkt.",
+   "hentet": "2026-10-15",
+   "inst_kort": "NTNU"
+  },
+  {
+   "inst": "UiA",
+   "kode": "ME-111",
+   "navn": "Innføring i dataanalyse",
+   "url": "https://www.uia.no/studier/emner/2026/host/me-111.html",
+   "studiepoeng": 7.5,
+   "semester": "høst",
+   "undervisningsspraak": "norsk (eksamensspråk engelsk)",
+   "eier": "Handelshøyskolen ved UiA (Institutt: ikke oppgitt)",
+   "emneansvarlig_rolle": "Emneansvarlig (faglig ansatt)",
+   "forkunnskaper": "Ikke oppgitt; bygger på ME-112 Samfunnsvitenskapelig metode.",
+   "vurdering": "5 t individuell skriftlig eksamen, gradert karakter; evalueringsform fastsettes av emneansvarlig i samråd med studentrepresentant og publiseres i Canvas. Obligatoriske innleveringer må godkjennes. Ca. 200 t arbeidsmengde.",
+   "hjelpemidler": null,
+   "programvare": "Excel (introduksjon til dataanalyse i Excel)",
+   "laeringsmal": {
+    "kunnskap": [
+     "Beskrive datasett med mål for sentraltendens og variasjon",
+     "Sentrale begreper i sannsynlighet og statistikk (uavhengighet, betinget sannsynlighet, fordelinger)",
+     "Statistisk metode: estimering, hypotesetesting, intervallestimering, anvendelser i økonomi"
+    ],
+    "ferdigheter": [
+     "Formulere dagligdagse problemer som sannsynlighetsberegninger eller modeller for statistisk analyse",
+     "Gjennomføre enkle statistiske analyser og trekke konklusjoner"
+    ],
+    "generell_kompetanse": []
+   },
+   "tema": [
+    "deskriptiv statistikk (utdypet)",
+    "sannsynlighet og fordelinger",
+    "estimering og intervallestimering",
+    "hypotesetesting",
+    "enkel regresjonsanalyse",
+    "problembasert tilnærming med beslutningssituasjoner",
+    "Excel for dataanalyse"
+   ],
+   "pensum": [
+    {
+     "tittel": "Statistics for Business and Economics",
+     "forfattere": "Paul Newbold (m.fl.; Newbold, Carlson, Thorne)",
+     "utgave": "10. utgave",
+     "forlag": "Pearson",
+     "aar": null,
+     "isbn": null,
+     "kilde": "UOFFISIELL: FINN-annonse 447175021 (selger kjøpte boka ny i UiAs bokhandel og brukte den i ME-111; sist endret 19.02.2026). Offisiell Leganto-liste ikke verifisert.",
+     "usikker": true
+    }
+   ],
+   "pensum_merknad": "Emnesiden henviser til Leganto uten titler.",
+   "merknader": "Tidligere engelsk tittel «Business Analytics 1» (2022–2023). Overlapp med MA-116 Statistikk med anvendelse i økonomi (5 sp reduksjon). Nettsiden oppdatert fra FS 15.10.2026. Ingen egen kunnskap/ferdighet/generell-inndeling i læringsutbyttet.",
+   "hentet": "2026-10-15",
+   "inst_kort": "UiA"
+  },
+  {
+   "inst": "UiS",
+   "kode": "BØK356",
+   "navn": "Statistics for Business and Economics",
+   "url": "https://www.uis.no/course/b%C3%B8k356",
+   "url_en": "https://www.uis.no/en/course/b%C3%B8k356",
+   "studiepoeng": 10,
+   "semester": "vår",
+   "undervisningsspraak": "engelsk",
+   "eier": "Handelshøgskolen ved UiS",
+   "emneansvarlig_rolle": "Emneansvarlig (faglig ansatt) og forelesere; studieleder for programmet",
+   "forkunnskaper": "Ingen. Åpent for bachelor i hotelledelse, bachelor i økonomi og administrasjon og årsstudium i økonomi og ledelse. 7 sp reduksjon mot STA100_1.",
+   "vurdering": "4 t skriftlig skoleeksamen i WISEflow, 100 %, bokstavkarakter. Vilkår: bestå 5 av 7 individuelle quizer.",
+   "hjelpemidler": "Ett A4-ark med håndskrevne notater (begge sider), godkjent enkel kalkulator, ordbok norsk–engelsk/engelsk–norsk",
+   "programvare": "MS Excel og R (grunnleggende programmering)",
+   "laeringsmal": {
+    "kunnskap": [
+     "Bruke grunnleggende statistiske begreper, metoder og data til å få innsikt",
+     "Grunnleggende bruk av MS Excel",
+     "Grunnleggende programmering i R"
+    ],
+    "ferdigheter": [
+     "Beskrive data med oppsummerende mål",
+     "Modellere virkelige hendelser med tilfeldige variabler og fordelinger",
+     "Sannsynlighetsteori, kombinatorikk, utvalgsmodeller, betinget sannsynlighet, Bayes' lov, uavhengighet",
+     "Hypotesetesting i binomiske og multinomiske modeller",
+     "Analysere sammenhenger med korrelasjon og regresjon",
+     "Deskriptive analyser i Excel; importere/eksportere data, lage variabler og enkel analyse i R"
+    ],
+    "generell_kompetanse": []
+   },
+   "tema": [
+    "deskriptiv statistikk",
+    "sannsynlighet, kombinatorikk, betinget sannsynlighet",
+    "stokastiske variabler, forventning og varians",
+    "simultanfordelinger",
+    "grunnleggende sannsynlighetsfordelinger",
+    "estimering",
+    "hypotesetesting",
+    "lineær regresjon"
+   ],
+   "pensum": [],
+   "pensum_merknad": "Emnesiden lenker kun til et Leganto-søk (Feide) uten titler. En bruktannonse (FINN 442994237) nevner norske statistikkhefter «brukt i BØK356», men dette er uklart/sannsynligvis annet emne og tas ikke med som pensum.",
+   "merknader": "Undervisning med forelesning, instruksjonsvideoer og datalab (problembasert). Siden har ikke generell kompetanse som eget punkt.",
+   "hentet": "2026-10-15",
+   "inst_kort": "UiS"
+  },
+  {
+   "inst": "UiT",
+   "kode": "BED-2065",
+   "navn": "Statistikk for økonomer",
+   "url": "https://uit.no/utdanning/aktivt/emne/BED-2065",
+   "studiepoeng": 7.5,
+   "semester": "høst (siste mulighet til å avlegge eksamen: høst 2026)",
+   "undervisningsspraak": "norsk",
+   "eier": "Handelshøgskolen ved UiT (Tromsø og Harstad)",
+   "emneansvarlig_rolle": "Emneansvarlig ved Handelshøgskolen",
+   "forkunnskaper": "Ingen spesifikke emnekrav. Opptak: generell studiekompetanse/realkompetanse (enkeltemne, søknadskode 9199). Krever fysisk oppmøte.",
+   "vurdering": "4 t skriftlig skoleeksamen (8.12.2025), A–F; én obligatorisk innlevering (godkjent/ikke godkjent) gyldig i fire påfølgende semestre. Undervisning: forelesninger, datalab, seminarer, gruppearbeid.",
+   "hjelpemidler": null,
+   "programvare": "Ikke navngitt («relevante dataverktøy»)",
+   "laeringsmal": {
+    "kunnskap": [
+     "Nok statistikk og databehandling til å anvende statistiske metoder på økonomiske data og presentere resultater",
+     "Grunnlag for å løse økonomiske problemer i andre emner"
+    ],
+    "ferdigheter": [
+     "Bruke relevant dataprogramvare til analyse",
+     "Regne ut sentral- og spredningsmål og presentere deskriptiv statistikk grafisk",
+     "Tilfeldige variabler: forventning, varians, kovarians, lineære kombinasjoner",
+     "Velge sannsynlighetsfordeling og regne med den",
+     "Formulere hypoteser, velge og tolke hypotesetester",
+     "Enkel og multippel regresjon, korrelasjon og koeffisienttester",
+     "Punktestimering og konfidensintervall"
+    ],
+    "generell_kompetanse": [
+     "Bruke digitale verktøy i faglig arbeid",
+     "Statistisk grunnlag for videre studier og arbeidsliv, unngå vanlige fallgruver",
+     "Kommunisere eget og andres faglige arbeid"
+    ]
+   },
+   "tema": [
+    "deskriptiv statistikk",
+    "tilfeldige variabler",
+    "sannsynlighetsfordelinger",
+    "estimering og konfidensintervall",
+    "hypotesetesting",
+    "enkel og multippel regresjon"
+   ],
+   "pensum": [],
+   "pensum_merknad": "Pensumliste ligger i Leganto (Feide) uten titler på emnesiden; ingen uavhengig kilde funnet. BI-emnet MET 2920 bruker Foldnes m.fl., Statistikk og dataanalyse, 2. utg. (Cappelen Damm Akademisk, 2024), men det er et annet emne og ikke bekreftet for UiT.",
+   "merknader": "Emnet er under nedlegging; siden er arkivert (høst 2025). Beslektet emne BED-2066 Statistikk for økonomer (nettstudium, 7,5 sp, samme læringsutbytte) lenker til BED-2065s pensumliste. Kreditreduksjon mot BED-2011, BED-2501, BED-2301, BED-2066.",
+   "hentet": "2026-10-15",
+   "inst_kort": "UiT"
+  }
+ ]
+}
