@@ -314,13 +314,14 @@ export function NmbuCourseExplorer({ onBack }: { onBack: () => void }) {
                         Del på kjønn
                       </label>
                     )}
-                    {visning !== 'nasjonalt' && <span style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)' }}>{programRows.length} program med studenter på emnet</span>}
+                    {visning === 'program' && <span style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)' }}>{programRows.length} program med studenter på emnet</span>}
                   </div>
                 </div>
                 {visning === 'nasjonalt' && (
                   <NmbuNationalCompare course={{ kode: course.kode, navn: course.navn, nus: course.nus ?? null, sp: course.studiepoeng }} year={year} visAntall={visAntall} whole={whole} />
                 )}
-                {visning === 'opptak' && <NmbuOpptakTab rader={programRows} whole={whole} />}
+                {visning === 'opptak' && <NmbuOpptakTab helt={course.years} karakterAar={data!.years} startAar={year}
+                  programmer={Object.entries(course.programs).map(([pk, byYear]) => ({ pk, byYear, navn: data!.programs[pk]?.navn ?? pk, nivaa: data!.programs[pk]?.nivaa ?? null, fakultet: data!.programs[pk]?.fakultet ?? null }))} />}
                 {visning === 'program' && (<>
                 <div className="overflow-x-auto mt-2">
                   <table className="w-full border-collapse text-xs">

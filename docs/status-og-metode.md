@@ -1079,4 +1079,5 @@ Ny fane «Opptak per studieprogram» ved siden av «Per studieprogram» (`compon
 - **Visning:** sorterbar tabell per program (kand., snitt, stryk, kravkode med endring over tid, opptakspoeng, karakterpoeng,
   poenggrense, møtt) og «Samlet per kravkode» (karakterene summert per kravkode, opptakspoeng vektet med møtt). Ved «Alle» brukes
   kravkoden for siste kull i perioden; endringer vises under koden (B-ØLIT GENS → MATRS fra 2025, B-ECON GENS → MATTE4 fra 2026).
-- **Forbehold:** studentene på emnet kan komme fra andre kull enn det valgte; tallene beskriver programmets opptak.
+- **Årsvalg (rettet 15.10):** ett valg i fanen styrer både karakterene på emnet og opptakskullet (starter på årsvalget øverst). «Alle» = summen av karakterene 2021–2025 og opptakstall vektet over de samme kullene. Først styrte valget bare opptakskolonnene, så «Kand.» sto fast på 2025.
+- **Forbehold:** studentene på emnet ble ofte tatt opp året før; tallene beskriver programmets opptak.

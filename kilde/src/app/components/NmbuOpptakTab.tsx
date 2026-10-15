@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { ArrowDown, ArrowUp, ArrowUpDown, Info } from 'lucide-react';
-import { LETTERS, nf, type Stats } from './NmbuCourseExplorer';
+import { LETTERS, nf, sumPacked, type Packed, type Stats } from './NmbuCourseExplorer';
 
 /**
  * Fanen «Opptak per studieprogram» i «Alle emner ved NMBU»: karakterene på emnet per studieprogram sett mot
@@ -16,7 +16,8 @@ interface Program {
 }
 interface Opptak { generert: string; kilde: string; aar: string[]; kravkoder: Record<string, { navn: string; tekst: string }>; programmer: Record<string, Program> }
 
-export interface ProgramRad { pk: string; navn: string; nivaa: string | null; fakultet: string | null; s: Stats }
+export interface ProgramInn { pk: string; navn: string; nivaa: string | null; fakultet: string | null; byYear: Record<string, Packed> }
+interface ProgramRad extends Omit<ProgramInn, 'byYear'> { s: Stats }
 
 const ALLE = 'alle';
 const LOKALT = 'Lokalt';
@@ -67,10 +68,17 @@ function KravBadge({ kode, kravkoder }: { kode: string; kravkoder: Opptak['kravk
   );
 }
 
-export function NmbuOpptakTab({ rader, whole }: { rader: ProgramRad[]; whole: Stats }) {
+/**
+ * Ett årsvalg styrer både karakterene på emnet og opptakstallene: «Alle» = alle år med karakterdata (summert),
+ * ellers karakterene i det året og opptakskullet samme år. Starter på årsvalget øverst på siden.
+ */
+export function NmbuOpptakTab({ programmer, helt, karakterAar, startAar }: {
+  programmer: ProgramInn[]; helt: Record<string, Packed>; karakterAar: string[]; startAar: string;
+}) {
   const [data, setData] = useState<Opptak | null>(null);
   const [feil, setFeil] = useState<string | null>(null);
-  const [kull, setKull] = useState<string>(ALLE);
+  const [kull, setKull] = useState<string>(startAar);
+  useEffect(() => { setKull(startAar); }, [startAar]);
   const [sort, setSort] = useState<{ kol: Kol; retning: 1 | -1 }>({ kol: 'kand', retning: -1 });
   const [sortKrav, setSortKrav] = useState<{ kol: Kol; retning: 1 | -1 }>({ kol: 'krav', retning: 1 });
 
@@ -80,8 +88,14 @@ export function NmbuOpptakTab({ rader, whole }: { rader: ProgramRad[]; whole: St
       .then(setData).catch((e) => setFeil(String(e)));
   }, []);
 
-  const kullListe = data?.aar ?? [];
-  const periode = kull === ALLE ? (kullListe.length ? `${kullListe[0]}–${kullListe[kullListe.length - 1]}` : '') : kull;
+  // Opptaksårene som brukes ved «Alle»: de samme årene som har karakterdata
+  const kullListe = (data?.aar ?? []).filter((y) => karakterAar.includes(y));
+  const allePeriode = karakterAar.length ? `${karakterAar[0]}–${karakterAar[karakterAar.length - 1]}` : '';
+  const periode = kull === ALLE ? allePeriode : kull;
+  const whole = useMemo(() => sumPacked(helt, kull), [helt, kull]);
+  const rader: ProgramRad[] = useMemo(() => programmer
+    .map(({ byYear, ...r }) => ({ ...r, s: sumPacked(byYear, kull) }))
+    .filter((r) => r.s.total > 0), [programmer, kull]);
 
   const tabell: Rad[] = useMemo(() => {
     if (!data) return [];
@@ -146,11 +160,11 @@ export function NmbuOpptakTab({ rader, whole }: { rader: ProgramRad[]; whole: St
   return (
     <div className="mt-2">
       <div className="flex items-center gap-2 flex-wrap mb-2">
-        <span style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)' }}>Opptakskull:</span>
-        {[ALLE, ...[...kullListe].reverse()].map((y) => (
+        <span style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)' }} title="Velger både året for karakterene på emnet og opptakskullet">År (karakterer og opptakskull):</span>
+        {[ALLE, ...[...karakterAar].reverse()].map((y) => (
           <button key={y} onClick={() => setKull(y)} className="px-2.5 py-1 rounded-full text-xs font-medium"
             style={{ backgroundColor: kull === y ? 'var(--nmbu-green-dark)' : 'var(--nmbu-beige-light)', color: kull === y ? '#fff' : 'var(--nmbu-neutral-1)', border: '1px solid ' + (kull === y ? 'var(--nmbu-green-dark)' : 'var(--nmbu-neutral-3)') }}>
-            {y === ALLE ? `Alle (${periode})` : y}
+            {y === ALLE ? `Alle (${allePeriode})` : y}
           </button>
         ))}
       </div>
@@ -251,9 +265,9 @@ export function NmbuOpptakTab({ rader, whole }: { rader: ProgramRad[]; whole: St
         <Info className="w-3.5 h-3.5 shrink-0 mt-0.5" />
         <span>
           Opptakspoeng og karakterpoeng: DBH/HKDIR tabell 571, høstopptak via Samordna opptak, snitt for dem som møtte til studiestart i
-          opptakskullet ({periode}). Opptakspoeng er konkurransepoengene (karakterpoeng + alders- og tilleggspoeng); karakterpoeng er
+          opptakskullet ({periode}). Årsvalget gjelder både karakterene på emnet og opptakskullet; ved «Alle» summeres karakterene for alle årene og opptakstallene vektes over de samme kullene. Opptakspoeng er konkurransepoengene (karakterpoeng + alders- og tilleggspoeng); karakterpoeng er
           karaktersnitt × 10 + realfags- og språkpoeng. Kravkode og poenggrense: Samordna opptak (søkerportalen), hentet {data.generert}.
-          Toårige master og andre program med lokalt opptak har ikke poeng i DBH. Studentene på emnet kan komme fra andre kull enn det valgte;
+          Toårige master og andre program med lokalt opptak har ikke poeng i DBH. Studentene på emnet ble ofte tatt opp året før (for eksempel når emnet tas i vårsemesteret i første studieår);
           tallene viser opptakskvaliteten i programmet, ikke for akkurat disse studentene.
         </span>
       </div>
