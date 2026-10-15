@@ -155,21 +155,21 @@ function Karakterer({ d }: { d: Data }) {
           <BarChart data={graf} margin={{ top: 18, right: 10, left: -10, bottom: 0 }}>
             <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="var(--nmbu-neutral-3)" />
             <XAxis dataKey="navn" tick={{ fontSize: 11 }} /><YAxis tick={{ fontSize: 11 }} domain={[0, 100]} ticks={[0, 25, 50, 75, 100]} allowDataOverflow tickFormatter={(v: number) => `${v} %`} />
-            <Tooltip formatter={(v: number, k: string, it: { payload?: Record<string, number> }) => [`${nf(v, 1)} % (${it.payload?.[`${k}_n`] ?? '–'})`, k]} />
+            <Tooltip itemSorter={(it) => -L6.indexOf(String(it.dataKey) as (typeof L6)[number])} formatter={(v: number, k: string, it: { payload?: Record<string, number> }) => [`${nf(v, 1)} % (${it.payload?.[`${k}_n`] ?? '–'} kand.)`, k]} />
             <Legend wrapperStyle={{ fontSize: 11 }} />
             {L6.map((g) => (
               <Bar key={g} dataKey={g} stackId="k" fill={GRADE_COLORS[g]}>
-                <LabelList dataKey={`${g}_n`} content={(p: { x?: number | string; y?: number | string; width?: number | string; height?: number | string; value?: number | string }) => {
+                <LabelList dataKey={g} content={(p: { x?: number | string; y?: number | string; width?: number | string; height?: number | string; value?: number | string }) => {
                   const x = Number(p.x), y = Number(p.y), w = Number(p.width), h = Number(p.height);
                   if (!(h >= 15) || p.value == null) return null;
-                  return <text x={x + w / 2} y={y + h / 2} textAnchor="middle" dominantBaseline="central" style={{ fontSize: 11, fontWeight: 700, fill: g === 'C' || g === 'D' ? '#1f1f1f' : '#fff' }}>{g} {p.value}</text>;
+                  return <text x={x + w / 2} y={y + h / 2} textAnchor="middle" dominantBaseline="central" style={{ fontSize: 11, fontWeight: 700, fill: g === 'C' || g === 'D' ? '#1f1f1f' : '#fff' }}>{g} {nf(Number(p.value), 0)} %</text>;
                 }} />
                 {g === 'F' && <LabelList dataKey="stryk" position="top" formatter={(v: number) => (v != null ? `${nf(v, 0)} %` : '')} style={{ fontSize: 10, fill: 'var(--nmbu-neutral-1)' }} />}
               </Bar>
             ))}
           </BarChart>
         </ResponsiveContainer>
-        <div style={{ fontSize: 10.5, color: 'var(--nmbu-neutral-2)', marginLeft: 8 }}>Tallet over stolpen er strykprosenten; tallene i feltene er antall kandidater med hver karakter. {fsS ? '* V2026 = foreløpige tall fra FS for våren 2026 (ordinær eksamen).' : ''}</div>
+        <div style={{ fontSize: 10.5, color: 'var(--nmbu-neutral-2)', marginLeft: 8 }}>Tallet over stolpen er strykprosenten; prosentene i feltene er andelen med hver karakter (antall kandidater i verktøytipset). {fsS ? '* V2026 = foreløpige tall fra FS for våren 2026 (ordinær eksamen).' : ''}</div>
       </div>
       <div className="overflow-x-auto mt-4" style={kort}>
         <table className="w-full text-xs border-collapse">
