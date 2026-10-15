@@ -46,7 +46,7 @@ SATSER = {"2023": {"budsjett": "2025", "1": 56600, "2": 84900, "3": 198150, "for
 # Statistikkemnet i ØA-bacheloren per institusjon (samme utvalg som Excel-oversikten)
 ANDRE = {"1150": ["SØK1004-1", "MET1002-A", "AR100219-1", "REA1154-1"], "1171": ["ME-111-1"], "1160": ["BØK356-1"],
          "1130": ["BED-2065-1", "BED-2011-1"], "1174": ["STT1001-1"], "1176": ["MET1010-1", "STA1000-1"], "1175": ["ØAMET1100-1"],
-         "1177": ["ØKA1026-1", "3MET130-1"], "1240": ["MET2-1"], "8241": ["MET29201"]}
+         "1177": ["ØKA1026-1"], "1240": ["MET2-1"], "8241": ["MET29201"]}
 KORT = {"1173": "NMBU", "1150": "NTNU", "1171": "UiA", "1160": "UiS", "1130": "UiT", "1174": "Nord", "1176": "USN", "1175": "OsloMet",
         "1177": "INN", "1240": "NHH", "8241": "BI"}
 
@@ -118,7 +118,10 @@ def main():
         t = sum(c for c, _ in pl); andel = sum(c for c, ok in pl if ok) / t if t else None
         e["kat"] = 1 if e.get("hh_eid") else 2 if (e.get("navn_ok") or (andel is not None and andel >= 0.5)) else 3
     oa = []
+    UTELAT = {("1177", "3MET130-1")}  # INN Rena: ikke relevant for sammenligningen (Mathias 15.10)
     for r in les(K / "oa-studentene.json"):
+        if (r["inst"], r["emne"]) in UTELAT:
+            continue
         e = stk.get((r["inst"], r["emne"]), {})
         oa.append({**{k: r[k] for k in ("inst", "kort", "prognavn", "type", "emne", "emnenavn", "aar", "karakterer", "total", "sem",
                                          "studiested", "grenser")},
@@ -181,6 +184,7 @@ def main():
                  "programmer": {pk: {y: {k: round(v, 3) for k, v in kk.items()} for y, kk in by.items()} for pk, by in sp.items()}}
 
     emneinfo = les(K / "emneinfo.json") if (K / "emneinfo.json").exists() else {"emner": []}
+    emneinfo["emner"] = [e for e in emneinfo["emner"] if e.get("kode") != "3MET130"]
 
     ut = {"versjon": 1, "aar": aar, "karakterer": karakterer, "fs": fs, "programmer": programmer, "kravkoder": opp["kravkoder"],
           "oa": oa, "andre": andre, "fordeling": fordeling, "emneinfo": emneinfo,

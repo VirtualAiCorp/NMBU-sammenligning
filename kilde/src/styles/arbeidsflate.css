@@ -237,6 +237,8 @@
 :root:root[data-oppsett="arbeidsflate"] .af-h1 { font-family: var(--af-font); font-size: 24px; line-height: 32px; font-weight: 500; letter-spacing: -0.02em; color: var(--af-fg); }
 :root:root[data-oppsett="arbeidsflate"] .af-undertittel { margin-top: 4px; font-size: 14px; line-height: 20px; color: var(--af-muted-fg); max-width: 78ch; }
 :root:root[data-oppsett="arbeidsflate"] .af-handlinger { display: flex; gap: 8px; flex-wrap: wrap; }
+/* Sidehodets knapper (f.eks. «Oversikt») skal ikke havne under de faste kontrollene øverst til høyre (Oppsett, Arbeidsflate, tema) */
+@media (min-width: 640px) { :root:root[data-oppsett="arbeidsflate"] .af-header-rad > .af-handlinger { margin-top: 44px; } }
 /* Mobil: undertittelen rett under tittelen, handlingene etter */
 @media (max-width: 639px) {
   :root:root[data-oppsett="arbeidsflate"] .af-header { display: flex; flex-direction: column; }

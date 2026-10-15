@@ -1,7 +1,8 @@
 import { Fragment, useEffect, useMemo, useState, type ReactNode } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend, Cell, LabelList } from 'recharts';
 import { Lock, Info, ArrowDown, ArrowUp, ArrowUpDown, ExternalLink, BookOpen } from 'lucide-react';
-import { GRADE_COLORS } from './NmbuCourseExplorer';
+/** Karakterfarger fra grønn (A) til rød (F). Ikke NMBU-grønnfargene, som fargetemaet ellers bytter ut. */
+const GRADE_COLORS: Record<string, string> = { A: '#1a9850', B: '#66bd63', C: '#c7c23a', D: '#fdae61', E: '#f46d43', F: '#d73027' };
 
 /**
  * «STAT100 – analyse» under Handelshøyskolen: alt til møtet med fagmiljøet bak STAT100, samlet og kryptert med eget passord
@@ -129,6 +130,7 @@ function sorter<T>(rader: T[], sort: Sort, verdi: (r: T, k: string) => number | 
 const thStil = { color: 'var(--nmbu-neutral-2)', fontWeight: 600, whiteSpace: 'nowrap' as const };
 const radStil = { borderBottom: '1px solid var(--nmbu-beige-light)' };
 const HH_PROG = ['B-ØA', 'B-ØLIT', 'B-ECON'];
+const NMBU_PROG: Record<string, string> = { 'Bachelor ØA': 'B-ØA', 'Bachelor ØLIT': 'B-ØLIT', 'Bachelor samfunnsøkonomi': 'B-ECON' };
 
 // ── 1. Karakterer i STAT100 ────────────────────────────────────────────────
 function Karakterer({ d }: { d: Data }) {
@@ -152,7 +154,7 @@ function Karakterer({ d }: { d: Data }) {
         <ResponsiveContainer width="100%" height={280}>
           <BarChart data={graf} margin={{ top: 18, right: 10, left: -10, bottom: 0 }}>
             <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="var(--nmbu-neutral-3)" />
-            <XAxis dataKey="navn" tick={{ fontSize: 11 }} /><YAxis unit=" %" tick={{ fontSize: 11 }} domain={[0, 100]} />
+            <XAxis dataKey="navn" tick={{ fontSize: 11 }} /><YAxis tick={{ fontSize: 11 }} domain={[0, 100]} ticks={[0, 25, 50, 75, 100]} allowDataOverflow tickFormatter={(v: number) => `${v} %`} />
             <Tooltip formatter={(v: number, k: string) => [`${nf(v, 1)} %`, k]} />
             <Legend wrapperStyle={{ fontSize: 11 }} />
             {L6.map((g) => <Bar key={g} dataKey={g} stackId="k" fill={GRADE_COLORS[g]}>{g === 'F' && <LabelList dataKey="stryk" position="top" formatter={(v: number) => (v != null ? `${nf(v, 0)} %` : '')} style={{ fontSize: 10, fill: 'var(--nmbu-neutral-1)' }} />}</Bar>)}
@@ -361,7 +363,7 @@ function OaStudentene({ d }: { d: Data }) {
   };
   // Graf: stryk/snitt 2023–25 per rad, sortert
   const graf = grupper.map((g) => {
-    const s = st(g.sum3); const nav = `${g.r0.kort} ${g.r0.visningskode}${g.r0.studiested && ['UiT', 'NTNU', 'USN', 'INN'].includes(g.r0.kort) ? ` (${g.r0.studiested})` : ''}${g.r0.type !== 'Bachelor ØA' ? ` · ${g.r0.type.replace('Bachelor ', '')}` : ''}`;
+    const s = st(g.sum3); const nav = g.r0.kort === 'NMBU' ? `NMBU STAT100 · ${NMBU_PROG[g.r0.type] ?? g.r0.type}` : `${g.r0.kort} ${g.r0.visningskode}${g.r0.studiested && ['UiT', 'NTNU', 'USN', 'INN'].includes(g.r0.kort) ? ` (${g.r0.studiested})` : ''}${g.r0.type !== 'Bachelor ØA' ? ` · ${g.r0.type.replace('Bachelor ', '')}` : ''}`;
     return { nav, v: verdi(s) != null ? (maal === 'stryk' ? s.stryk! * 100 : s.snitt!) : null, nmbu: g.r0.kort === 'NMBU', n: s.bokstav };
   }).filter((x) => x.v != null && x.n >= 20).sort((a, b) => (b.v! - a.v!) * (maal === 'stryk' ? 1 : -1));
   const sortert = [...grupper].sort((a, b) => (verdi(st(b.sum3)) ?? -1) - (verdi(st(a.sum3)) ?? -1) * 1);
@@ -395,18 +397,16 @@ function OaStudentene({ d }: { d: Data }) {
             {d.fs && <th className="px-2 py-2 text-right" style={{ ...thStil, backgroundColor: 'rgba(240,192,64,0.15)' }} title="Våren 2026, foreløpige tall fra FS (bare NMBU). Snitt finnes bare som bokstav.">2026 vår*</th>}
             <th className="px-3 py-2 text-right" style={thStil}>2023–25</th>
             <th className="px-3 py-2 text-right" style={thStil} title="Snitt poenggrense (hovedopptaket, ordinær kvote) for kullene 2022–2024">Poenggrense</th>
-            <th className="px-3 py-2 text-right" style={thStil} title="Høst minus vår 2023–25, når begge semestre har minst 10 med bokstavkarakter">Høst − vår</th>
           </tr></thead>
           <tbody>
             {sortert.map((g) => {
-              const s3 = st(g.sum3); const sv = st(g.semV), sh = st(g.semH);
-              const diff = sv.bokstav >= 10 && sh.bokstav >= 10 && verdi(sv) != null && verdi(sh) != null ? verdi(sh)! - verdi(sv)! : null;
+              const s3 = st(g.sum3);
               const pg = ['2022', '2023', '2024'].map((y) => g.r0.grenser[y]?.ord).filter((v): v is number => v != null);
               const kat = g.r0.kategori;
               return (
                 <tr key={g.nokkel} style={{ ...radStil, backgroundColor: g.r0.kort === 'NMBU' ? 'rgba(193,58,90,0.06)' : undefined }}>
                   <td className="px-3 py-2" style={{ fontWeight: 700 }}>{g.r0.kort}</td>
-                  <td className="px-3 py-2"><div>{g.r0.prognavn}</div><div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)' }}>{g.r0.studiested} · {g.r0.type}</div></td>
+                  <td className="px-3 py-2"><div>{g.r0.prognavn}{g.r0.kort === 'NMBU' && NMBU_PROG[g.r0.type] ? <b> ({NMBU_PROG[g.r0.type]})</b> : null}</div><div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)' }}>{g.r0.studiested} · {g.r0.type}</div></td>
                   <td className="px-3 py-2"><div style={{ fontWeight: 600 }}>{g.r0.visningskode}</div><div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)' }}>{g.r0.emnenavn}{g.r0.sp ? ` · ${nf(g.r0.sp, 1)} sp` : ''}</div></td>
                   <td className="px-3 py-2" style={{ fontSize: 11 }}>{g.r0.eier}{g.r0.fakultet && g.r0.fakultet !== g.r0.eier ? <div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)' }}>{g.r0.fakultet}</div> : null}</td>
                   <td className="px-3 py-2"><span title={kat === 1 ? 'Eies av handelshøyskolen' : kat === 2 ? 'For økonomer, eies utenfor handelshøyskolen' : 'Eies utenfor handelshøyskolen, generelt statistikkemne'}
@@ -421,7 +421,6 @@ function OaStudentene({ d }: { d: Data }) {
                   })()}
                   <td className="px-3 py-2 text-right" style={{ fontWeight: 700, color: 'var(--nmbu-green-dark)' }}>{fmt(s3)}<div style={{ fontSize: 10, fontWeight: 400, color: 'var(--nmbu-neutral-2)' }}>{s3.n} kand.</div></td>
                   <td className="px-3 py-2 text-right">{g.r0.kort === 'BI' ? 'Eget opptak' : pg.length ? (pg.every((v) => v === 0) ? 'Alle' : nf(pg.reduce((a, b) => a + b, 0) / pg.length)) : '–'}</td>
-                  <td className="px-3 py-2 text-right" style={{ fontWeight: 600 }}>{diff == null ? '–' : maal === 'stryk' ? `${diff > 0 ? '+' : ''}${nf(diff * 100, 0)} pp` : `${diff > 0 ? '+' : ''}${nf(diff, 2)}`}</td>
                 </tr>
               );
             })}
