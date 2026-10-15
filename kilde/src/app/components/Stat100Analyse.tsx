@@ -23,7 +23,7 @@ interface OaRad {
 }
 interface AnnetEmne {
   inst: string; kort: string; kode: string; visningskode: string; navn: string | null; eier: string | null; fakultet: string | null; kategori: number | null;
-  sp: number | null; emneurl: string | null; hele: Record<string, Tall>; programmer: Record<string, { navn: string; aar: Record<string, Tall> }>;
+  sp: number | null; emneurl: string | null; hele: Record<string, Tall>; programmer: Record<string, { navn: string; grenser?: Record<string, { ord: number | null; prim: number | null }>; aar: Record<string, Tall> }>;
 }
 interface Bok { tittel: string; forfattere?: string | null; utgave?: string | null; forlag?: string | null; aar?: string | number | null; isbn?: string | null; kilde?: string | null; usikker?: boolean }
 interface EmneInfo {
@@ -36,7 +36,7 @@ interface Data {
   fs: { termin: string; kilde: string; hele: Tall & { bestatt: number; stryk: number; ikkeMott: number; antall: number }; programmer: Record<string, { eksMeldt: number; bestatt: number; stryk: number; ikkeMott: number; snitt: string | null }> } | null;
   programmer: Record<string, ProgramData>; kravkoder: Record<string, { navn: string; tekst: string }>;
   oa: OaRad[]; andre: AnnetEmne[]; emneinfo: { emner: EmneInfo[] };
-  fordeling: { satser: Record<string, { budsjett: string; '1': number; '2': number; '3': number; forslag: boolean }>; emnekategori: Record<string, string>; programmer: Record<string, Record<string, Partial<Record<'1' | '2' | '3', number>>>> };
+  fordeling: { satser: Record<string, { budsjett: string; '1': number; '2': number; '3': number; forslag: boolean }>; emnekategori: Record<string, string>; programmer: Record<string, Record<string, Partial<Record<'1' | '2' | '3', number>>>>; emneeier?: string; intern?: { sentralt: number; fakultet: number } };
 }
 
 const PW_KEY = 'stat100-pw';
@@ -624,8 +624,16 @@ function AndreEmner({ d }: { d: Data }) {
   const aarListe = Object.keys(e.hele).sort();
   const aarene = aar === 'alle' ? aarListe : [aar];
   const hele = st(pluss(...aarene.map((y) => e.hele[y])));
-  const rader = sorter(Object.entries(e.programmer).map(([pk, p]) => ({ pk, navn: p.navn, s: st(pluss(...aarene.map((y) => p.aar[y]))) })).filter((r) => r.s.n > 0),
-    sort, (r, k) => ({ navn: r.navn, n: r.s.n, stryk: r.s.stryk, snitt: r.s.snitt } as Record<string, number | string | null>)[k]);
+  // Poenggrensen for opptaksåret: valgt år, eller siste år med grense når «Alle» er valgt
+  const grenseAar = aar === 'alle' ? aarListe[aarListe.length - 1] : aar;
+  const rader = sorter(Object.entries(e.programmer).map(([pk, p]) => {
+    const g = p.grenser ?? {};
+    const aarMedGrense = Object.keys(g).filter((y) => y <= grenseAar && g[y].ord != null).sort();
+    const y = aar === 'alle' ? aarMedGrense[aarMedGrense.length - 1] : (g[grenseAar]?.ord != null ? grenseAar : undefined);
+    const serie = Object.keys(g).sort().map((yy) => `${yy}: ${g[yy].ord == null ? '–' : g[yy].ord === 0 ? 'alle' : nf(g[yy].ord!, 1)}`).join(' · ');
+    return { pk, navn: p.navn, s: st(pluss(...aarene.map((yy) => p.aar[yy]))), pg: y ? g[y].ord : null, pgAar: y ?? null, serie };
+  }).filter((r) => r.s.n > 0),
+    sort, (r, k) => ({ navn: r.navn, n: r.s.n, stryk: r.s.stryk, snitt: r.s.snitt, pg: r.pg } as Record<string, number | string | null>)[k]);
   return (
     <div>
       <H2 under="Velg et statistikkemne ved en annen institusjon og se karakterfordelingen for hvert studieprogram som har studenter på emnet.">Statistikkemnene ved andre institusjoner, per studieprogram</H2>
@@ -648,6 +656,7 @@ function AndreEmner({ d }: { d: Data }) {
             <Th id="n" label="Kand." sort={sort} setSort={setSort} />
             <Th id="stryk" label="Stryk" sort={sort} setSort={setSort} />
             <Th id="snitt" label="Snitt" sort={sort} setSort={setSort} />
+            <Th id="pg" label="Poenggrense" sort={sort} setSort={setSort} title="Poenggrense i hovedopptaket, ordinær kvote, for studieprogrammet (DBH tabell 370). Valgt år, eller siste år ved «Alle». Hold pekeren over tallet for hele tidsserien." />
             <th className="px-3 py-2 text-left" style={thStil}>Fordeling A–F</th>
           </tr></thead>
           <tbody>
@@ -656,6 +665,7 @@ function AndreEmner({ d }: { d: Data }) {
               <td className="px-3 py-2 text-right" style={{ fontWeight: 700 }}>{hele.n}</td>
               <td className="px-3 py-2 text-right" style={{ fontWeight: 700 }}>{pst(hele.stryk, hele.skjult)}</td>
               <td className="px-3 py-2 text-right" style={{ fontWeight: 700 }}>{sn(hele.snitt)}</td>
+              <td />
               <td className="px-3 py-2"><Fordelingsstolpe s={hele} /></td>
             </tr>
             {rader.map((r) => (
@@ -664,13 +674,16 @@ function AndreEmner({ d }: { d: Data }) {
                 <td className="px-3 py-2 text-right" style={{ fontWeight: 600 }}>{r.s.n}</td>
                 <td className="px-3 py-2 text-right" style={{ fontWeight: 700, color: 'var(--nmbu-green-dark)' }}>{pst(r.s.stryk, r.s.skjult)}</td>
                 <td className="px-3 py-2 text-right">{sn(r.s.snitt)}</td>
+                <td className="px-3 py-2 text-right" title={r.serie || 'Lokalt opptak eller ingen grense i DBH'} style={{ cursor: r.serie ? 'help' : undefined }}>
+                  {e.kort === 'BI' ? <span style={{ color: 'var(--nmbu-neutral-2)' }}>eget opptak</span> : r.pg == null ? '–' : <>{r.pg === 0 ? 'Alle' : nf(r.pg, 1)}{r.pgAar && r.pgAar !== grenseAar && <span style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)' }}> ({r.pgAar})</span>}</>}
+                </td>
                 <td className="px-3 py-2"><Fordelingsstolpe s={r.s} /></td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
-      <Merknad>DBH tabell 308 på programnivå (skjermet for 1–2 per celle; «≥» = minimum) og på emnenivå for «Hele emnet». Studenter uten studieprogram (enkeltemner, utveksling) står bare i «Hele emnet».</Merknad>
+      <Merknad>DBH tabell 308 på programnivå (skjermet for 1–2 per celle; «≥» = minimum) og på emnenivå for «Hele emnet». Studenter uten studieprogram (enkeltemner, utveksling) står bare i «Hele emnet». Poenggrense: DBH tabell 370, hovedopptaket i Samordna opptak, ordinær kvote, høstopptaket i valgt år (siste år ved «Alle»; årstall i parentes når grensen er fra et tidligere år). «Alle» = alle kvalifiserte fikk tilbud; «–» = lokalt opptak eller ingen grense i DBH. Studentene på emnet kan ha startet året før.</Merknad>
     </div>
   );
 }
@@ -690,13 +703,19 @@ function Fordeling({ d }: { d: Data }) {
   const beregn = (y: string, by: Record<string, Partial<Record<'1' | '2' | '3', number>>>) => {
     const k = by[y] ?? {}; const s2 = d.fordeling.satser[y];
     const enh = KAT.reduce((a, c) => a + (k[c] ?? 0), 0);
-    return { enh, kr: KAT.reduce((a, c) => a + (k[c] ?? 0) * s2[c], 0), kat: KAT.filter((c) => (k[c] ?? 0) > 0) };
+    const kat = KAT.filter((c) => (k[c] ?? 0) > 0);
+    // Utregningen vist i verktøytipset: beståtte studiepoeng / 60 = enheter × sats per kategori
+    const utregning = kat.map((c) => `Kategori ${c}: ${nf((k[c] ?? 0) * 60, 0)} beståtte studiepoeng (≈ ${nf(((k[c] ?? 0) * 60) / 10, 0)} studenter × 10 sp) ÷ 60 = ${nf(k[c] ?? 0, 2)} enheter × ${kr(s2[c])} = ${kr((k[c] ?? 0) * s2[c])}`).join('\n');
+    return { enh, kr: KAT.reduce((a, c) => a + (k[c] ?? 0) * s2[c], 0), kat, utregning };
   };
   const rader = Object.entries(d.fordeling.programmer).map(([pk, by]) => ({ pk, navn: d.programmer[pk]?.navn ?? pk, fakultet: d.programmer[pk]?.fakultet ?? 'Annet / enkeltemner', ...beregn(aar, by) }))
     .filter((r) => r.enh > 0);
   const total = rader.reduce((s2, r) => s2 + r.kr, 0);
   const perFak = [...rader.reduce((m, r) => m.set(r.fakultet, (m.get(r.fakultet) ?? 0) + r.kr), new Map<string, number>())].sort((a, b) => b[1] - a[1]);
   const hh = perFak.find(([f]) => f === 'Handelshøyskolen')?.[1] ?? 0;
+  const andelFak = d.fordeling.intern?.fakultet ?? 0.4, andelSentralt = d.fordeling.intern?.sentralt ?? 0.6;
+  const eier = d.fordeling.emneeier ?? 'Fakultetet som gir emnet';
+  const eierKort = eier.replace(/^Fakultet for /, '');
   const perKat = KAT.map((k) => ({ k, enh: rader.reduce((a, r) => a + (d.fordeling.programmer[r.pk][aar]?.[k] ?? 0), 0) })).filter((x) => x.enh > 0);
   const sortert = sorter(rader, sort, (r, k) => ({ navn: r.navn, fak: r.fakultet, kat: r.kat.join('/'), enh: r.enh, kr: r.kr } as Record<string, number | string | null>)[k]);
   const tidsserie = aarListe.map((y) => {
@@ -713,9 +732,9 @@ function Fordeling({ d }: { d: Data }) {
           { l: 'Samlet uttelling', v: mkr(total) },
           { l: 'Fra Handelshøyskolens studenter', v: mkr(hh) },
           { l: 'Andel fra Handelshøyskolen', v: total ? `${nf((hh / total) * 100, 0)} %` : '–' },
-          { l: 'Satser kategori 1 / 2', v: `${nf(sats['1'] / 1000, 2)} / ${nf(sats['2'] / 1000, 2)} tkr` },
+          { l: `Til ${eierKort} (${nf(andelFak * 100, 0)} %)`, v: mkr(total * andelFak) },
         ].map((k) => (
-          <div key={k.l} style={{ ...kort, padding: '10px 14px' }}>
+          <div key={k.l} style={{ ...kort, padding: '10px 14px' }} title={k.l.startsWith('Til ') ? `Av studiepoenginntekten går ${nf(andelSentralt * 100, 0)} % til NMBU sentralt og ${nf(andelFak * 100, 0)} % til fakultetet som gir emnet. Fra Handelshøyskolens studenter: ${mkr(hh * andelFak)} til ${eierKort}.` : undefined}>
             <div style={{ fontSize: 10.5, color: 'var(--nmbu-neutral-2)' }}>{k.l}</div>
             <div style={{ fontSize: 19, fontWeight: 700, color: 'var(--nmbu-green-dark)' }}>{k.v}</div>
           </div>
@@ -767,6 +786,8 @@ function Fordeling({ d }: { d: Data }) {
             <Th id="kat" label="Kategori" sort={sort} setSort={setSort} venstre title="Finansieringskategorien til studentens program (DBH 900)" />
             <Th id="enh" label="Studiepoengenheter" sort={sort} setSort={setSort} title="Egenfinansierte studiepoeng / 60 (beståtte studiepoeng)" />
             <Th id="kr" label="Uttelling" sort={sort} setSort={setSort} />
+            <th className="px-3 py-2 text-right" style={thStil} title={`${nf(andelFak * 100, 0)} % av uttellingen går til fakultetet som gir STAT100 (${eier})`}>Til fakultetet ({nf(andelFak * 100, 0)} %)</th>
+            <th className="px-3 py-2 text-right" style={thStil} title={`${nf(andelSentralt * 100, 0)} % av uttellingen går til NMBU sentralt`}>NMBU sentralt ({nf(andelSentralt * 100, 0)} %)</th>
             <th className="px-3 py-2 text-right" style={thStil}>Andel</th>
           </tr></thead>
           <tbody>
@@ -775,20 +796,24 @@ function Fordeling({ d }: { d: Data }) {
                 <td className="px-3 py-2"><div style={{ fontWeight: 600 }}>{r.navn}</div><div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)' }}>{r.pk}</div></td>
                 <td className="px-3 py-2" style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)' }}>{r.fakultet}</td>
                 <td className="px-3 py-2">{r.kat.join(' / ')}</td>
-                <td className="px-3 py-2 text-right">{nf(r.enh, 1)}</td>
+                <td className="px-3 py-2 text-right" title={r.utregning} style={{ cursor: 'help', textDecoration: 'underline dotted', textUnderlineOffset: 3 }}>{nf(r.enh, 1)}</td>
                 <td className="px-3 py-2 text-right" style={{ fontWeight: 700 }}>{kr(r.kr)}</td>
+                <td className="px-3 py-2 text-right">{kr(r.kr * andelFak)}</td>
+                <td className="px-3 py-2 text-right">{kr(r.kr * andelSentralt)}</td>
                 <td className="px-3 py-2 text-right">{total ? `${nf((r.kr / total) * 100, 1)} %` : '–'}</td>
               </tr>
             ))}
             <tr style={{ borderTop: '2px solid var(--nmbu-neutral-3)' }}>
               <td className="px-3 py-2" style={{ fontWeight: 700 }} colSpan={3}>Sum</td>
               <td className="px-3 py-2 text-right" style={{ fontWeight: 700 }}>{nf(rader.reduce((s2, r) => s2 + r.enh, 0), 1)}</td>
-              <td className="px-3 py-2 text-right" style={{ fontWeight: 700 }}>{kr(total)}</td><td />
+              <td className="px-3 py-2 text-right" style={{ fontWeight: 700 }}>{kr(total)}</td>
+              <td className="px-3 py-2 text-right" style={{ fontWeight: 700 }}>{kr(total * andelFak)}</td>
+              <td className="px-3 py-2 text-right" style={{ fontWeight: 700 }}>{kr(total * andelSentralt)}</td><td />
             </tr>
           </tbody>
         </table>
       </div>
-      <Merknad>Anslag etter den nasjonale finansieringsmodellen: egenfinansierte studiepoeng i STAT100 (DBH tabell 900, «ny produksjon», bare beståtte studiepoeng) delt på 60 × satsen for kategorien til studentens studieprogram (DBH-feltet «Finmodkode student»). Satser: budsjett 2025 og 2026 fra DBH tabell 908, budsjett 2027 fra statsbudsjettforslaget. Hvordan NMBU fordeler pengene internt mellom fakultetene (for eksempel til fakultetet som gir emnet eller til studentens fakultet), følger NMBUs egen budsjettmodell og er ikke regnet med her. Uttelling for fullførte grader er heller ikke med.</Merknad>
+      <Merknad>Anslag etter den nasjonale finansieringsmodellen: egenfinansierte studiepoeng i STAT100 (DBH tabell 900, «ny produksjon», bare beståtte studiepoeng) delt på 60 × satsen for kategorien til studentens studieprogram (DBH-feltet «Finmodkode student»). Satser: budsjett 2025 og 2026 fra DBH tabell 908, budsjett 2027 fra statsbudsjettforslaget. Uttelling for fullførte grader er heller ikke med. Fordelingen internt ved NMBU (60 % til NMBU sentralt, 40 % til fakultetet som gir emnet, her {eier}) er slik Handelshøyskolen har oppgitt den. Hold pekeren over studiepoengenhetene for utregningen per program.</Merknad>
     </div>
   );
 }

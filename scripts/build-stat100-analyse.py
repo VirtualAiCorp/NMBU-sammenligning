@@ -130,7 +130,19 @@ def main():
 
     # ── 5. Andre institusjoners statistikkemner: karakterer per studieprogram ──
     andre = []
+    def grenser370(inst):
+        """Poenggrenser i hovedopptaket per DBH-programkode og år (DBH tabell 370, høst, Samordna opptak). 0 = alle kvalifiserte."""
+        f = K / "dbh370" / f"370_{inst}.json"
+        ut = collections.defaultdict(dict)
+        if f.exists():
+            for x in les(f)[1:]:
+                if x.get("Opptakstype") == "N" and x.get("Semester") == "3":
+                    o, pr = x.get("Poenggrense ordinær kvote"), x.get("Poenggrense primærkvote")
+                    if o is not None or pr is not None:
+                        ut[x["Studieprogramkode"]][x["Årstall"]] = {"ord": float(o) if o is not None else None, "prim": float(pr) if pr is not None else None}
+        return ut
     for inst, koder in ANDRE.items():
+        pg = grenser370(inst)
         pr = collections.defaultdict(lambda: collections.defaultdict(lambda: {k: 0 for k in KAR}))
         pnavn = {}
         for x in dbh("308", inst):
@@ -157,10 +169,10 @@ def main():
             progs = {}
             for (k2, pk), by in pr.items():
                 if k2 == kode:
-                    progs[pk] = {"navn": pnavn[pk], "aar": {y: {**g, "total": ptot.get((kode, pk), {}).get(y, sum(g.values()))} for y, g in by.items()}}
+                    progs[pk] = {"navn": pnavn[pk], "grenser": pg.get(pk, {}), "aar": {y: {**g, "total": ptot.get((kode, pk), {}).get(y, sum(g.values()))} for y, g in by.items()}}
             for (k2, pk), by in ptot.items():
                 if k2 == kode and pk not in progs:
-                    progs[pk] = {"navn": pnavn[pk], "aar": {y: {**{k: 0 for k in KAR}, "total": t} for y, t in by.items()}}
+                    progs[pk] = {"navn": pnavn[pk], "grenser": pg.get(pk, {}), "aar": {y: {**{k: 0 for k in KAR}, "total": t} for y, t in by.items()}}
             andre.append({"inst": inst, "kort": KORT[inst], "kode": kode, "visningskode": e.get("visningskode", kode), "navn": e.get("navn"),
                           "eier": e.get("avdnavn"), "fakultet": e.get("faknavn"), "kategori": e.get("kat"), "sp": e.get("sp"),
                           "emneurl": e.get("emneurl"), "hele": {y: {**g, "total": htot[kode].get(y, 0)} for y, g in hele[kode].items()},
@@ -180,7 +192,11 @@ def main():
             if pn and x["Progkode student"] not in programmer:
                 programmer.setdefault(x["Progkode student"], {"navn": pn, "nivaa": None, "fakultet": None, "aar": {}, "sem": {},
                                                               "opptak": None, "krav": {}, "grenser": {}, "poeng": {}})
+    stat_eier = stk.get(("1173", "STAT100-1"), {})
     fordeling = {"satser": SATSER, "emnekategori": emnekat,
+                 "emneeier": stat_eier.get("faknavn") or stat_eier.get("avdnavn") or "Fakultet for kjemi, bioteknologi og matvitenskap",
+                 # Intern fordeling av studiepoenginntekten ved NMBU, slik Handelshøyskolen har oppgitt den (15.10.2026)
+                 "intern": {"sentralt": 0.6, "fakultet": 0.4},
                  "programmer": {pk: {y: {k: round(v, 3) for k, v in kk.items()} for y, kk in by.items()} for pk, by in sp.items()}}
 
     emneinfo = les(K / "emneinfo.json") if (K / "emneinfo.json").exists() else {"emner": []}

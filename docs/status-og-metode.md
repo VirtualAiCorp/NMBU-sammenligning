@@ -1151,6 +1151,10 @@ karakterer|program|oa|pensum|laeringsmal|andre|fordeling`). Eget passord `STAT10
   emnet står i kategori 2. Den første versjonen brukte emnets kategori, som var feil. Merk: modulen «Inntekt» (§20) bruker emnets kategori.
 - **Pensum:** pensumlistene ligger stort sett bak innlogging (Leganto/Canvas); bøker fra uoffisielle kilder er merket «usikker kilde».
 - Kildevakten sjekker nå INTERN_PASSORD, STAT100_PASSORD og RANGERING_PASSORD etter bygget.
+- **Andre emner (15.10):** poenggrense per studieprogram fra DBH tabell 370 (hovedopptaket, ordinær kvote, høst; cache
+  `data/nmbu/kilder/stat100/dbh370/`), for valgt år eller siste år ved «Alle»; tidsserien i verktøytipset.
+- **Fordeling (15.10):** utregningen per program i verktøytipset på studiepoengenhetene (beståtte sp ÷ 60 × sats), og kolonnene
+  «Til fakultetet (40 %)» (fakultetet som gir STAT100) og «NMBU sentralt (60 %)», slik HH oppga den interne fordelingen.
 
 ## 54. INN Lillehammer og Rena byttet tilbake i HH-dataene (15.10.2026)
 
