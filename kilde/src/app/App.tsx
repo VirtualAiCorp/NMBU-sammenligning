@@ -62,8 +62,9 @@ export default function App() {
   // Delbar lenke til rangeringen (?rangering&…): åpne HH → Rangering direkte; resten av tilstanden leses av komponenten.
   const fraLenke = typeof window !== 'undefined' && new URLSearchParams(window.location.search).has('rangering');
   const fraStat100 = typeof window !== 'undefined' && new URLSearchParams(window.location.search).has('stat100');
-  const [faculty, setFaculty] = useState<Faculty | null>(fraLenke || fraStat100 ? 'hh' : null);
-  const [facultyView, setFacultyView] = useState<FacultyView>(fraLenke ? 'rangering' : fraStat100 ? 'stat100' : 'landing');
+  const fraOpptak = typeof window !== 'undefined' && new URLSearchParams(window.location.search).has('opptak');
+  const [faculty, setFaculty] = useState<Faculty | null>(fraLenke || fraStat100 || fraOpptak ? 'hh' : null);
+  const [facultyView, setFacultyView] = useState<FacultyView>(fraLenke ? 'rangering' : fraStat100 ? 'stat100' : fraOpptak ? 'intern' : 'landing');
   const [facultyGroup, setFacultyGroup] = useState<string | undefined>(undefined);
   const [facultyCourseGroup, setFacultyCourseGroup] = useState<string | undefined>(undefined);
   const [programLevel, setProgramLevel] = useState<ProgramLevel | null>(null);
