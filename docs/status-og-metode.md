@@ -1187,12 +1187,31 @@ med; USN, INN, Kristiania og BI står som «kommer».
 - **OsloMet:** BØA (215369), siviløkonom 5 år (215345, ingen NMBU-motstykke), master ØA og master entreprenørskap
   (lokalt opptak). Handelshøyskolen ved OsloMet er ikke egen enhet i DBH, så fagmiljøtallene gjelder hele SAM (1175_530).
   Studiebarometeret viser ikke resultater for OsloMets bachelor (svarprosent 17 %); siden sier det og åpner på et program med tall.
-- **Rettet i UHR-kartleggingen (`courseMapping.ts`):** OsloMets emnekode, navn og karakterer var byttet om mellom makro-
-  (ØASØK1100) og mikroøkonomi (ØASØK1000). Alle OsloMets ØA-emner er 7,5 sp i DBH (sto som 10 sp). Påvirker også
-  «Opprinnelig HH-analyse».
+- **Rettet i UHR-kartlegging 2.0 (`courseMapping2.ts`, se §56; originalen er satt tilbake):** OsloMets emnekode, navn og karakterer var byttet om mellom makro-
+  (ØASØK1100) og mikroøkonomi (ØASØK1000). Alle OsloMets ØA-emner er 7,5 sp i DBH (sto som 10 sp).
 - **HiØ (17.10.2026):** BØA Halden (224035) mot NMBU B-ØA og Informasjonssystemer (224453) mot NMBU B-ØLIT; fagmiljøet er
   Fakultet for informasjonsteknologi, ingeniørfag og økonomi (0256_370). Poenggrensen har vært 0 (alle kvalifiserte fikk tilbud)
   siden 2024; siden viser «alle inn». ØKA120 dekker både statistikk og metode i UHR-tabellen og telles én gang i summene.
-  Rettet i `courseMapping.ts`: HiØs mikroøkonomi pekte på makroemnet SFB10916 (med en feil merknad om kombinert emne); riktig er
+  Rettet i `courseMapping2.ts` (2.0): HiØs mikroøkonomi pekte på makroemnet SFB10916 (med en feil merknad om kombinert emne); riktig er
   SFB10816 «Mikroøkonomi med anvendelser». `latestYear` mangler i Studiebarometer-dataene for HiØ ØA (tallene er 2025); siden
   henter året fra historikken.
+
+## 56. UHR-kartlegging 2.0 (Handelshøyskolen) (17.10.2026)
+
+Mathias: den opprinnelige ØA-sammenligningen skal ikke endres. Rettelsene ligger derfor i en egen variant.
+- **Originalen** `kilde/src/app/data/courseMapping.ts` er satt tilbake til Figma-eksporten 22.09.2026 (også OsloMet- og
+  HiØ-rettelsene fra §55 er tatt ut der). «Opprinnelig HH-analyse» bruker den uendret.
+- **2.0** `kilde/src/app/data/courseMapping2.ts` lages av `scripts/build-coursemapping-v2.py` fra en kopi av originalen med
+  §55-rettelsene, pluss de sikre forslagene fra UHR-gjennomgangen (`docs/uhr-gjennomgang-2026-10-17.md`,
+  `data/hh/uhr-forslag-endringer.md`): studiepoeng (7,5/5/15 der DBH sier det), feil emner (UiA strategi ORG209, Nord metode
+  MET1001, NTNU statistikk SØK1004, BI økonomistyring BØK3561, UiT økonomistyring/metode m.fl.), UiTs makro/mikro byttet om, nye
+  og fjernede «okonomi1»-oppføringer, og det femte UHR-området **Etikk, samfunnsansvar og bærekraft** (23 institusjoner; NMBU,
+  UiT og UiT nett er merket usikre, ONH sannsynlig). Ved kodebytte hentes fallbackGrades fra DBH 308, og gammel lenke,
+  læringsutbytte og vurderingsdetaljer fjernes. Skriptet er idempotent.
+- **UHR-kravet:** UHR-ØA «Minimumskrav for BØA» (november 2018): minst 120 sp i fem områder: bedriftsøkonomi 30–45,
+  administrasjon 30–45, samfunnsøkonomi 15–30, metode 20–30, etikk 7,5–15 (minimumene summerer til 102,5).
+- **Ikke lagt inn ennå (krever flere emner per område):** «legg til i området» og forgjengerkoder for tidsserier. De vises som
+  forslag i visningen.
+- **Visning:** ny HH-modul «UHR-kartlegging 2.0» (`?uhr2`, `components/UhrKartlegging2.tsx`): kravet, og per institusjon 2.0
+  mot originalen, status fra gjennomgangen, ØA-kandidater (DBH 308 per program) og forslag som ikke er lagt inn. Data:
+  `kilde/public/uhr/gjennomgang.json` (slank utgave, skrives av samme skript). «Konkurrentene» bruker 2.0.

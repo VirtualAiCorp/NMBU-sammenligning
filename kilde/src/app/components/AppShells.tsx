@@ -1,7 +1,7 @@
 import { useMemo, useState, type ReactNode } from 'react';
 import {
   LayoutDashboard, BookOpen, Microscope, Home, Landmark, TrendingUp, GraduationCap, Users, Star, Globe2,
-  LayoutGrid, Menu, X, Coins, Archive, Lock, Baby, Briefcase, PanelLeftClose, PanelLeftOpen, Wallet, Building2,
+  LayoutGrid, Menu, X, Coins, Archive, Lock, Baby, Briefcase, PanelLeftClose, PanelLeftOpen, Wallet, Building2, Layers,
 } from 'lucide-react';
 import { MenyHint } from './MenyHint';
 import { LagetAv } from './LagetAv';
@@ -16,13 +16,14 @@ import { InnebygdContext } from '../innebygd';
  * som i «oversikt»; App.tsx leverer dem som children. Navigasjonen går via onNavigate(fakultet, visning).
  */
 
-export type ShellView = 'landing' | 'analyse' | 'emner' | 'markedsstatus' | 'studiebarometer' | 'gjennomforing' | 'studentene' | 'fagmiljo' | 'bolig' | 'sokergrunnlag' | 'okonomi' | 'inntekt' | 'arbeidsmarked' | 'intern' | 'rangering' | 'stat100' | 'konkurrenter';
+export type ShellView = 'landing' | 'analyse' | 'emner' | 'markedsstatus' | 'studiebarometer' | 'gjennomforing' | 'studentene' | 'fagmiljo' | 'bolig' | 'sokergrunnlag' | 'okonomi' | 'inntekt' | 'arbeidsmarked' | 'intern' | 'rangering' | 'stat100' | 'konkurrenter' | 'uhr2';
 type Nav = (f: Faculty | null, view?: ShellView, gruppe?: string) => void;
 
 export const FAKULTETSMODULER: { view: ShellView; label: string; icon: typeof BookOpen; kunFor?: FacultyId }[] = [
   { view: 'landing', label: 'Oversikt', icon: LayoutGrid },
   { view: 'analyse', label: 'Opptak', icon: TrendingUp },
   { view: 'emner', label: 'Emner og karakterer', icon: BookOpen },
+  { view: 'uhr2', label: 'UHR-kartlegging 2.0', icon: Layers, kunFor: 'hh' },
   { view: 'gjennomforing', label: 'Gjennomføring', icon: GraduationCap },
   { view: 'studentene', label: 'Studentene', icon: Users },
   { view: 'studiebarometer', label: 'Studiebarometeret', icon: Star },

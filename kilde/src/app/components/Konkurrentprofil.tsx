@@ -5,7 +5,7 @@ import type { FacultyData } from '../data/faculties';
 import type { FullAdmissionEntry, FullYearData } from '../data/fullAdmissionData';
 import type { CourseStats, CourseGradeYear } from '../data/landsamCourseData';
 import { SB_DIMENSION_LABELS, type SbDimension, type SbEntry } from '../data/landsamStudiebarometerData';
-import { UHR_GROUPS, COURSE_MAPPING } from '../data/courseMapping';
+import { UHR_GROUPS, COURSE_MAPPING } from '../data/courseMapping2';
 import { STAFF_FACULTIES, STAFF_INSTITUTIONS, STAFF_HENTET, type StaffUnit, type StaffYear } from '../data/staffData';
 import { ECON_UNITS } from '../data/economyData';
 import { emneUrl } from '../data/emneUrl';
@@ -274,8 +274,8 @@ function UhrEmner({ k, faculty }: { k: Konkurrent; faculty: FacultyData }) {
 
   return (
     <Kort ikon={BookOpen} tittel="UHR-rammeplanen: de obligatoriske emnene"
-      undertekst={<>Emnene i UHRs nasjonale rammeplan for bachelor i økonomi og administrasjon, kartlagt mot emnene ved {k.kort} og NMBU. Snittkarakteren er regnet med A = 5 … F = 0, og tallene gjelder alle som tok emnet det siste året med karakterer. Kjerneemnene utgjør {nf(spK, 1)} sp ved {k.kort} og {nf(spN, 1)} sp ved NMBU. Gjennomsnittlig stryk: <b style={{ color: KONK_FARGE }}>{pst(strykK, 1)}</b> mot <b style={{ color: NMBU_FARGE }}>{pst(strykN, 1)}</b> ved NMBU.</>}
-      kilde="Kilde: UHR-ØA rammeplan, kartleggingen i «Opprinnelig HH-analyse» (rettet 17.10.2026: mikro- og makroøkonomi var byttet om for OsloMet, og HiØs mikroøkonomi pekte på makroemnet), karakterer fra DBH/HK-dir tabell 308.">
+      undertekst={<>Emneområdene i UHR-ØAs minimumskrav for bachelor i økonomi og administrasjon (2018), kartlagt mot emnene ved {k.kort} og NMBU. Snittkarakteren er regnet med A = 5 … F = 0, og tallene gjelder alle som tok emnet det siste året med karakterer. Kjerneemnene utgjør {nf(spK, 1)} sp ved {k.kort} og {nf(spN, 1)} sp ved NMBU. Gjennomsnittlig stryk: <b style={{ color: KONK_FARGE }}>{pst(strykK, 1)}</b> mot <b style={{ color: NMBU_FARGE }}>{pst(strykN, 1)}</b> ved NMBU.</>}
+      kilde="Kilde: UHR-ØA (2018), UHR-kartlegging 2.0 (rettet etter gjennomgangen 17.10.2026; den opprinnelige kartleggingen er uendret), karakterer fra DBH/HK-dir tabell 308.">
       <div className="overflow-x-auto">
         <table className="w-full border-collapse text-xs">
           <thead>
