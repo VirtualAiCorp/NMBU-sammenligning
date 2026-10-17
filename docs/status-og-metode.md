@@ -1333,3 +1333,15 @@ lastes lazy sammen med Leaflet). Kartleggingen er i `data/marked/studiesteder/` 
   USN-campuser på årsstudiekode. Fire årsstudier står i bachelorgruppene. Se §5 i `docs/marked/studiesteder.md`.
 - **Oppdatering:** `python3 data/marked/studiesteder/skript/hent.py --refresh && python3 data/marked/studiesteder/skript/bygg.py`
   (DBH 124 for 2026 kommer i februar–mars 2027), deretter `python3 scripts/build-marked.py`.
+
+## 60. Rettet: Nord og OsloMet delte tall for entreprenørskapsmasteren (MAENT) (17.10.2026)
+
+`scripts/fill-local-admissions.py` grupperte DBH 379-radene bare på studieprogramkode. Nord (1174) og OsloMet (1175) bruker
+begge koden MAENT, så `nord_mei` og `oslomet_mei` fikk summen av begge (f.eks. 373 søkere i 2022 = Nord 99 + OsloMet 274).
+Feilen slo ut i HH → Opptak, gruppen «Entreprenørskap og innovasjon (master)», der NMBU M-EI sammenlignes.
+- **Rettet:** spørringen grupperer også på Institusjonskode, og radene slås opp på (institusjon, programkode).
+- **Gamle år fjernes:** år som DBH ikke lenger har tall for, slettes fra `localData`. OsloMet hadde 2025 arvet fra Nord;
+  DBH 379 har ingen søkere for OsloMet MAENT i 2025 (22 registrerte i DBH 123, bør sjekkes).
+- Kjørt for HH; bare `nord_mei` og `oslomet_mei` endret seg. Ingen andre fakulteter har delte programkoder (A2-kartleggingen).
+- De andre feilene i HH-programkartet (campuser, årsstudier, UiT Alta m.fl., se `data/marked/studiesteder/hh-campusfeil.json`)
+  er ikke rettet.

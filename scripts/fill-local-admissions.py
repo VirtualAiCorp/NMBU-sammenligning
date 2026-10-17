@@ -41,7 +41,7 @@ def ctx():
 def fetch(inst_codes, prog_codes, group_by):
     body = {
         "tabell_id": 379, "api_versjon": 1, "statuslinje": "N", "kodetekst": "J", "desimal_separator": ".",
-        "groupBy": ["Årstall", "Studieprogramkode"] + group_by, "sortBy": ["Årstall"],
+        "groupBy": ["Årstall", "Institusjonskode", "Studieprogramkode"] + group_by, "sortBy": ["Årstall"],
         "filter": [
             {"variabel": "Institusjonskode", "selection": {"filter": "item", "values": inst_codes}},
             {"variabel": "Årstall", "selection": {"filter": "item", "values": YEARS}},
@@ -109,7 +109,8 @@ def main():
     for codes, progs in by_inst.items():
         for key, gb in (("a", ["Kvalifisert"]), ("b", ["Prioritet"]), ("c", ["Prioritet", "Kjønn"])):
             for r in fetch(list(codes), sorted(progs), gb):
-                rows[key].setdefault(r["Studieprogramkode"], []).append(r)
+                # Nøkkel med institusjon: samme programkode kan finnes ved flere institusjoner (MAENT ved Nord og OsloMet)
+                rows[key].setdefault((r["Institusjonskode"], r["Studieprogramkode"]), []).append(r)
         print(f"  DBH {'/'.join(codes)}: {len(progs)} programkoder hentet")
 
     changed = filled = 0
@@ -118,7 +119,8 @@ def main():
         if not m or not m.get("studieprogramkoder"):
             continue
         pc = m["studieprogramkoder"]
-        data = aggregate(*[[r for c in pc for r in rows[k].get(c, [])] for k in "abc"])
+        ic = m.get("institusjonskoder") or [m["institusjonskode"]]
+        data = aggregate(*[[r for i in ic for c in pc for r in rows[k].get((i, c), [])] for k in "abc"])
         # Flere søknadsalternativer per søker under samme kode (f.eks. NHH 2022–2023): bruk førsteprioritet som «Alle søkere»
         for y in m.get("alleSForsteprioritet") or []:
             if y in data and data[y].get("fvS"):
@@ -141,6 +143,11 @@ def main():
                         filled += 1
                     row[k] = v
                     changed += 1
+        # År som DBH ikke lenger har tall for (f.eks. OsloMet MAENT 2025, som tidligere arvet Nords tall), fjernes
+        for y in [k for k in ld if k.isdigit() and k not in data and k not in SKIP_YEARS]:
+            del ld[y]
+            changed += 1
+            diffs.append(f"{y} fjernet (ingen rader i DBH 379)")
         srcs = ld.setdefault("localSource", [])
         if isinstance(srcs, list) and SRC not in srcs:
             srcs.insert(0, SRC)

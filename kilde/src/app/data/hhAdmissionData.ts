@@ -1,4 +1,4 @@
-// GENERERT av scripts/build-landsam-data.py 2026-10-15 – ikke rediger for hånd.
+// GENERERT av scripts/build-landsam-data.py 2026-10-17 – ikke rediger for hånd.
 // Kilder: Samordna opptak programtabell 2026 (søkertall 2021–2026) og SO poenggrenserapport (Tableau) 2020–2026, hovedopptak; opptakspoeng (op_*/kp_*) fra DBH tabell 571.
 // 0 i poenggrense = alle kvalifiserte kom inn · null = data ikke tilgjengelig
 import type { FullAdmissionEntry, FullYearData } from './fullAdmissionData';
@@ -1107,9 +1107,9 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Bodø', type: 'master2',
         lokaltOpptak: true,
         years: {
-          '2022': Y(373, 175, null, 44.6, 62, 57, null, null, 31, 31),
-          '2023': Y(317, 156, null, 47.4, 61, 57, null, null, 37, 37),
-          '2024': Y(383, 197, null, 49.2, 134, 70, null, null, 47, 39),
+          '2022': Y(99, 43, null, 39.5, 15, 14, null, null, 6, 6),
+          '2023': Y(80, 40, null, 50.0, 13, 11, null, null, 7, 7),
+          '2024': Y(121, 61, null, 55.7, 92, 30, null, null, 24, 17),
           '2025': Y(143, 62, null, 61.3, 117, 72, null, null, 22, 17),
         },
       },
@@ -1142,10 +1142,9 @@ export const LANDSAM_GROUPS: LandsamGroup[] = [
         studiekode: '', studiested: 'Oslo', type: 'master2',
         lokaltOpptak: true,
         years: {
-          '2022': Y(373, 175, null, 44.6, 62, 57, null, null, 31, 31),
-          '2023': Y(317, 156, null, 47.4, 61, 57, null, null, 37, 37),
-          '2024': Y(383, 197, null, 49.2, 134, 70, null, null, 47, 39),
-          '2025': Y(143, 62, null, 61.3, 117, 72, null, null, 22, 17),
+          '2022': Y(274, 132, null, 46.2, 47, 43, null, null, 25, 25),
+          '2023': Y(237, 116, null, 46.6, 48, 46, null, null, 30, 30),
+          '2024': Y(262, 136, null, 46.3, 42, 40, null, null, 23, 22),
         },
       },
       {
