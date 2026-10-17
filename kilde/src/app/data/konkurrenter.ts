@@ -48,9 +48,25 @@ export const KONKURRENTER: Konkurrent[] = [
     ],
     merknad: 'Handelshøyskolen ved OsloMet er ikke egen enhet i DBH. Fagmiljøtallene gjelder hele SAM-fakultetet, som også har journalistikk, sosialfag og offentlig administrasjon.',
   },
+  {
+    id: 'hiof',
+    kort: 'HiØ',
+    navn: 'Høgskolen i Østfold',
+    inst: '0256',
+    enhet: '0256_370',
+    enhetNavn: 'Fakultet for informasjonsteknologi, ingeniørfag og økonomi',
+    studiested: 'Halden',
+    nettside: 'https://www.hiof.no/studier/programmer/bokad-bachelorstudium-i-okonomi-og-administrasjon/oppbygging/',
+    uhr: 'hio',
+    programmer: [
+      { entryId: 'hiof_oa', nmbuId: 'nmbu_oa', gruppe: 'oa', etikett: 'Økonomi og administrasjon (bachelor)' },
+      { entryId: 'hiof_is', nmbuId: 'nmbu_olit', gruppe: 'olit', etikett: 'Informasjonssystemer (bachelor)' },
+    ],
+    merknad: 'Økonomifagene ved HiØ ligger i samme fakultet som IT og ingeniørfag, så fagmiljøtallene gjelder hele fakultetet. HiØ har ingen master i økonomi og administrasjon i HHs sammenligninger.',
+  },
 ];
 
 /** Neste institusjoner i rekken (vises som «kommer»). */
-export const KONKURRENTER_KOMMER = ['USN', 'HiØ', 'INN', 'Kristiania', 'BI'];
+export const KONKURRENTER_KOMMER = ['USN', 'INN', 'Kristiania', 'BI'];
 
 export const konkurrent = (id: string | null | undefined) => KONKURRENTER.find((k) => k.id === id) ?? KONKURRENTER[0];

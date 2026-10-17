@@ -1175,8 +1175,8 @@ Lillehammer og Rena byttet om. Bygd på nytt fra cachen (uten `--refresh`), i de
 
 ## 55. Konkurrentene: én institusjon om gangen (Handelshøyskolen) (17.10.2026)
 
-Ny modul «Konkurrentene» under HH (Marked og omverden), lenke `?konkurrent=oslomet`. Første institusjon er OsloMet; USN, HiØ,
-INN, Kristiania og BI står som «kommer».
+Ny modul «Konkurrentene» under HH (Marked og omverden), lenke `?konkurrent=oslomet` / `?konkurrent=hiof`. OsloMet og HiØ er
+med; USN, INN, Kristiania og BI står som «kommer».
 - **Ingen ny henting:** siden settes sammen av dataene HH allerede har, side om side med det tilsvarende NMBU-programmet:
   opptak 2020–2026 (Samordna), UHR-rammeplanens obligatoriske emner med snitt, stryk og kandidater (DBH 308, hele emnet,
   siste år), gjennomføring og studenttall (DBH 707/123/110/104), studentene (DBH 60/135/142), Studiebarometeret, og
@@ -1190,3 +1190,9 @@ INN, Kristiania og BI står som «kommer».
 - **Rettet i UHR-kartleggingen (`courseMapping.ts`):** OsloMets emnekode, navn og karakterer var byttet om mellom makro-
   (ØASØK1100) og mikroøkonomi (ØASØK1000). Alle OsloMets ØA-emner er 7,5 sp i DBH (sto som 10 sp). Påvirker også
   «Opprinnelig HH-analyse».
+- **HiØ (17.10.2026):** BØA Halden (224035) mot NMBU B-ØA og Informasjonssystemer (224453) mot NMBU B-ØLIT; fagmiljøet er
+  Fakultet for informasjonsteknologi, ingeniørfag og økonomi (0256_370). Poenggrensen har vært 0 (alle kvalifiserte fikk tilbud)
+  siden 2024; siden viser «alle inn». ØKA120 dekker både statistikk og metode i UHR-tabellen og telles én gang i summene.
+  Rettet i `courseMapping.ts`: HiØs mikroøkonomi pekte på makroemnet SFB10916 (med en feil merknad om kombinert emne); riktig er
+  SFB10816 «Mikroøkonomi med anvendelser». `latestYear` mangler i Studiebarometer-dataene for HiØ ØA (tallene er 2025); siden
+  henter året fra historikken.

@@ -4,7 +4,7 @@ import { Building2, TrendingUp, BookOpen, GraduationCap, Users, Star, Microscope
 import type { FacultyData } from '../data/faculties';
 import type { FullAdmissionEntry, FullYearData } from '../data/fullAdmissionData';
 import type { CourseStats, CourseGradeYear } from '../data/landsamCourseData';
-import { SB_DIMENSION_LABELS, type SbDimension } from '../data/landsamStudiebarometerData';
+import { SB_DIMENSION_LABELS, type SbDimension, type SbEntry } from '../data/landsamStudiebarometerData';
 import { UHR_GROUPS, COURSE_MAPPING } from '../data/courseMapping';
 import { STAFF_FACULTIES, STAFF_INSTITUTIONS, STAFF_HENTET, type StaffUnit, type StaffYear } from '../data/staffData';
 import { ECON_UNITS } from '../data/economyData';
@@ -26,6 +26,10 @@ const pst = (v: number | null | undefined, d = 0) => (v == null || !Number.isFin
 const andel = (t: number | null | undefined, n: number | null | undefined) => (t == null || !n ? null : (t / n) * 100);
 const bokstav = (s: number | null) => (s == null ? '' : ['F', 'E', 'D', 'C', 'B', 'A'][Math.max(0, Math.min(5, Math.round(s)))]);
 const kode = (emnekode: string) => emnekode.split('-')[0].toUpperCase();
+/** Siste år i Studiebarometeret; latestYear mangler for enkelte program (f.eks. HiØ ØA), da brukes historikken. */
+const sbAar = (s?: SbEntry) => s?.latestYear ?? [...(s?.history ?? [])].reverse().find((h) => h.scores.helhetsvurdering != null)?.year ?? null;
+/** Poenggrense: 0 betyr at alle kvalifiserte fikk tilbud. */
+const grense = (v: number | null | undefined) => (v === 0 ? 'alle inn' : nf(v, 1));
 
 function Kort({ ikon: Ikon, tittel, undertekst, children, kilde }: { ikon: typeof Building2; tittel: string; undertekst?: ReactNode; children: ReactNode; kilde?: ReactNode }) {
   return (
@@ -109,12 +113,12 @@ function Profil({ k, faculty }: { k: Konkurrent; faculty: FacultyData }) {
           <Tall kortNavn={k.kort} etikett="Førstevalg 2026" konk={nf(y26(ki)?.fvS)} nmbu={nf(y26(nm)?.fvS)} />
           <Tall kortNavn={k.kort} etikett="Studieplasser 2026" konk={nf(y26(ki)?.plasser)} nmbu={nf(y26(nm)?.plasser)} />
           <Tall kortNavn={k.kort} etikett="Førstevalg per plass" konk={nf(perPlass(y26(ki)), 1)} nmbu={nf(perPlass(y26(nm)), 1)} />
-          <Tall kortNavn={k.kort} etikett="Poenggrense ordinær 2026" konk={nf(y26(ki)?.pg_ord, 1)} nmbu={nf(y26(nm)?.pg_ord, 1)} hjelp="Konkurransepoeng, hovedopptaket" />
+          <Tall kortNavn={k.kort} etikett="Poenggrense ordinær 2026" konk={grense(y26(ki)?.pg_ord)} nmbu={grense(y26(nm)?.pg_ord)} hjelp="Konkurransepoeng, hovedopptaket. «Alle inn» betyr at alle kvalifiserte søkere fikk tilbud" />
           <Tall kortNavn={k.kort} etikett={`Fullført på normert tid${kK ? ` (kull ${kK.aar})` : ''}`} konk={pst(andel(kK?.fullfortNormert, kK?.startkull))} nmbu={pst(andel(kN?.fullfortNormert, kN?.startkull))} />
         </div>
         <div className="mt-3" style={{ fontSize: 12, color: 'var(--nmbu-neutral-1)' }}>
           <b>Programmene i sammenligningen:</b> {k.programmer.map((p) => p.etikett).join(' · ')}.
-          {sbK?.scores.helhetsvurdering != null && <> Studiebarometeret {sbK.latestYear}, helhetsvurdering: <b style={{ color: KONK_FARGE }}>{nf(sbK.scores.helhetsvurdering, 1)}</b>{sbN?.scores.helhetsvurdering != null && <> mot <b style={{ color: NMBU_FARGE }}>{nf(sbN.scores.helhetsvurdering, 1)}</b> ved NMBU</>}.</>}
+          {sbK?.scores.helhetsvurdering != null && <> Studiebarometeret {sbAar(sbK)}, helhetsvurdering: <b style={{ color: KONK_FARGE }}>{nf(sbK.scores.helhetsvurdering, 1)}</b>{sbN?.scores.helhetsvurdering != null && <> mot <b style={{ color: NMBU_FARGE }}>{nf(sbN.scores.helhetsvurdering, 1)}</b> ved NMBU</>}.</>}
         </div>
         {k.merknad && <div className="mt-2 flex gap-1.5" style={{ fontSize: 11, color: 'var(--nmbu-neutral-2)' }}><Info className="w-3.5 h-3.5 shrink-0 mt-0.5" />{k.merknad}</div>}
       </Kort>
@@ -146,7 +150,7 @@ function Opptak({ k, entry }: { k: Konkurrent; entry: (id: string | null) => Ful
   return (
     <Kort ikon={TrendingUp} tittel="Opptak 2020–2026"
       undertekst={<>Søkere, studieplasser og poenggrenser i hovedopptaket. {k.kort} i oransje, NMBU i grønt. {lokale.length > 0 && <>Masterprogrammene ({lokale.map((x) => x.etikett).join(', ')}) har lokalt opptak og er ikke i Samordna.</>}</>}
-      kilde="Kilde: Samordna opptak (søkertall og poenggrenserapporten), hovedopptaket. 0 i poenggrensen betyr at alle kvalifiserte fikk tilbud.">
+      kilde="Kilde: Samordna opptak (søkertall og poenggrenserapporten), hovedopptaket. «Alle inn» betyr at alle kvalifiserte søkere fikk tilbud (poenggrense 0); da vises ingen grense i grafen.">
       {samordna.length > 1 && (
         <div className="flex flex-wrap gap-2 mb-3">
           {samordna.map((x) => (
@@ -179,8 +183,8 @@ function Opptak({ k, entry }: { k: Konkurrent; entry: (id: string | null) => Ful
                     {celle(nf(yk?.fvS), nf(yn?.fvS))}
                     {celle(nf(yk?.plasser), nf(yn?.plasser))}
                     {celle(nf(yk?.fvS != null && yk.plasser ? yk.fvS / yk.plasser : null, 1), nf(yn?.fvS != null && yn.plasser ? yn.fvS / yn.plasser : null, 1))}
-                    {celle(nf(yk?.pg_ord, 1), nf(yn?.pg_ord, 1))}
-                    {celle(nf(yk?.pg_fv, 1), nf(yn?.pg_fv, 1))}
+                    {celle(grense(yk?.pg_ord), grense(yn?.pg_ord))}
+                    {celle(grense(yk?.pg_fv), grense(yn?.pg_fv))}
                   </tr>
                 );
               })}
@@ -237,13 +241,20 @@ function UhrEmner({ k, faculty }: { k: Konkurrent; faculty: FacultyData }) {
     const sn = mn ? emner.n.get(mn.displayCode.toUpperCase()) : undefined;
     return { gruppe: g, emne: c, mk, mn, sk, sn, yk: sisteAar(sk), yn: sisteAar(sn) };
   }));
-  const spK = linjer.reduce((s, l) => s + (l.sk?.studiepoeng ?? 0), 0);
-  const spN = linjer.reduce((s, l) => s + (l.sn?.studiepoeng ?? 0), 0);
+  // Ett emne kan dekke flere UHR-områder (HiØ: statistikk og metode i ØKA120); summer og snitt teller hvert emne én gang.
+  const unike = (side: 'k' | 'n') => [...new Map(linjer.flatMap((l) => {
+    const m = side === 'k' ? l.mk : l.mn, s = side === 'k' ? l.sk : l.sn, y = side === 'k' ? l.yk : l.yn;
+    return m ? [[m.displayCode, { s, y }] as const] : [];
+  })).values()];
+  const spK = unike('k').reduce((s, u) => s + (u.s?.studiepoeng ?? 0), 0);
+  const spN = unike('n').reduce((s, u) => s + (u.s?.studiepoeng ?? 0), 0);
   const snitt = (xs: (number | null | undefined)[]) => { const t = xs.filter((x): x is number => x != null); return t.length ? t.reduce((a, b) => a + b, 0) / t.length : null; };
-  const strykK = snitt(linjer.map((l) => l.yk?.strykprosent)), strykN = snitt(linjer.map((l) => l.yn?.strykprosent));
+  const strykK = snitt(unike('k').map((u) => u.y?.strykprosent)), strykN = snitt(unike('n').map((u) => u.y?.strykprosent));
+  const delt = (i: number, side: 'k' | 'n') => { const m = side === 'k' ? linjer[i].mk : linjer[i].mn; return !!m && linjer.slice(0, i).some((l) => (side === 'k' ? l.mk : l.mn)?.displayCode === m.displayCode); };
 
-  const emneCelle = (m: typeof linjer[number]['mk'], s: CourseStats | undefined, inst: string, farge: string) => {
+  const emneCelle = (m: typeof linjer[number]['mk'], s: CourseStats | undefined, inst: string, farge: string, sammeSom = false) => {
     if (!m) return <td className="px-3 py-1.5" style={{ color: 'var(--nmbu-neutral-2)' }}>–</td>;
+    if (sammeSom) return <td className="px-3 py-1.5" style={{ color: 'var(--nmbu-neutral-2)' }}><b style={{ color: farge }}>{m.displayCode}</b> · samme emne som over (dekker begge områdene)</td>;
     const url = emneUrl(inst, s?.emnekode ?? m.displayCode) ?? m.courseUrl;
     return (
       <td className="px-3 py-1.5">
@@ -253,18 +264,18 @@ function UhrEmner({ k, faculty }: { k: Konkurrent; faculty: FacultyData }) {
       </td>
     );
   };
-  const tallCeller = (y?: CourseGradeYear) => (
+  const tallCeller = (y?: CourseGradeYear, sammeSom = false) => (sammeSom ? <><td className={td} /><td className={td} /><td className={td} /></> : (
     <>
       <td className={td}>{y ? <>{nf(y.snitt, 2)} <span style={{ color: 'var(--nmbu-neutral-2)' }}>{bokstav(y.snitt)}</span></> : '–'}</td>
       <td className={td}>{pst(y?.strykprosent, 1)}</td>
       <td className={td} style={{ color: 'var(--nmbu-neutral-2)' }}>{y ? `${nf(y.total)} (${y.year})` : '–'}</td>
     </>
-  );
+  ));
 
   return (
     <Kort ikon={BookOpen} tittel="UHR-rammeplanen: de obligatoriske emnene"
       undertekst={<>Emnene i UHRs nasjonale rammeplan for bachelor i økonomi og administrasjon, kartlagt mot emnene ved {k.kort} og NMBU. Snittkarakteren er regnet med A = 5 … F = 0, og tallene gjelder alle som tok emnet det siste året med karakterer. Kjerneemnene utgjør {nf(spK, 1)} sp ved {k.kort} og {nf(spN, 1)} sp ved NMBU. Gjennomsnittlig stryk: <b style={{ color: KONK_FARGE }}>{pst(strykK, 1)}</b> mot <b style={{ color: NMBU_FARGE }}>{pst(strykN, 1)}</b> ved NMBU.</>}
-      kilde="Kilde: UHR-ØA rammeplan, kartleggingen i «Opprinnelig HH-analyse» (rettet 17.10.2026: mikro- og makroøkonomi var byttet om for OsloMet), karakterer fra DBH/HK-dir tabell 308.">
+      kilde="Kilde: UHR-ØA rammeplan, kartleggingen i «Opprinnelig HH-analyse» (rettet 17.10.2026: mikro- og makroøkonomi var byttet om for OsloMet, og HiØs mikroøkonomi pekte på makroemnet), karakterer fra DBH/HK-dir tabell 308.">
       <div className="overflow-x-auto">
         <table className="w-full border-collapse text-xs">
           <thead>
@@ -280,10 +291,10 @@ function UhrEmner({ k, faculty }: { k: Konkurrent; faculty: FacultyData }) {
             {linjer.map((l, i) => (
               <tr key={l.emne.id} style={{ ...rad, ...(i > 0 && linjer[i - 1].gruppe.id !== l.gruppe.id ? { borderTop: '2px solid var(--nmbu-neutral-3)' } : {}) }}>
                 <td className="px-3 py-1.5 whitespace-nowrap"><div style={{ fontWeight: 600 }}>{l.emne.label}</div><div style={{ color: 'var(--nmbu-neutral-2)', fontSize: 10 }}>{l.gruppe.label}</div></td>
-                {emneCelle(l.mk, l.sk, k.inst, KONK_FARGE)}
-                {tallCeller(l.yk)}
-                {emneCelle(l.mn, l.sn, '1173', NMBU_FARGE)}
-                {tallCeller(l.yn)}
+                {emneCelle(l.mk, l.sk, k.inst, KONK_FARGE, delt(i, 'k'))}
+                {tallCeller(l.yk, delt(i, 'k'))}
+                {emneCelle(l.mn, l.sn, '1173', NMBU_FARGE, delt(i, 'n'))}
+                {tallCeller(l.yn, delt(i, 'n'))}
               </tr>
             ))}
           </tbody>
@@ -385,7 +396,7 @@ const DIM: SbDimension[] = ['helhetsvurdering', 'undervisning', 'tilbakemeldinge
 function Studiebarometer({ k, faculty }: { k: Konkurrent; faculty: FacultyData }) {
   const par = k.programmer
     .map((p) => ({ p, sk: faculty.studiebarometer.find((s) => s.entryId === p.entryId), sn: faculty.studiebarometer.find((s) => s.entryId === p.nmbuId) }))
-    .filter((x) => x.sk?.latestYear);
+    .filter((x) => sbAar(x.sk) != null || x.sk?.respondents);
   const harTall = (x: (typeof par)[number]) => DIM.some((d) => x.sk?.scores[d] != null);
   const [valgt, setValgt] = useState((par.find(harTall) ?? par[0])?.p.entryId ?? '');
   const v = par.find((x) => x.p.entryId === valgt) ?? par[0];
@@ -399,7 +410,7 @@ function Studiebarometer({ k, faculty }: { k: Konkurrent; faculty: FacultyData }
   );
   return (
     <Kort ikon={Star} tittel="Studiebarometeret"
-      undertekst={<>Studentenes vurdering på en skala fra 1 til 5, siste år med nok svar. {k.kort}: {sk!.latestYear}, {nf(sk!.respondents)} svar{sk!.responseRate != null && ` (${nf(sk!.responseRate)} %)`}.{sn?.latestYear && <> NMBU: {sn.latestYear}, {nf(sn.respondents)} svar.</>}</>}
+      undertekst={<>Studentenes vurdering på en skala fra 1 til 5, siste år med nok svar. {v.p.etikett} ved {k.kort}: {sbAar(sk) ?? 'år ukjent'}, {nf(sk!.respondents)} svar{sk!.responseRate != null && ` (${nf(sk!.responseRate)} %)`}.{sn && sbAar(sn) != null && <> NMBU ({sn.programnavn}): {sbAar(sn)}, {nf(sn.respondents)} svar.</>}</>}
       kilde={<>Kilde: studiebarometeret.no. {sk!.url && <a href={sk!.url} target="_blank" rel="noreferrer" className="underline">{k.kort} på Studiebarometeret</a>}</>}>
       {par.length > 1 && (
         <div className="flex flex-wrap gap-2 mb-3">

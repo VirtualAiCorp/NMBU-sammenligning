@@ -1402,12 +1402,11 @@ export const COURSE_MAPPING: Record<CourseId, Record<string, CourseEntry>> = {
 
   mikrookonomi: {
     hio: {
-      institute: 'hio', codeShort: 'sfb10916', displayCode: 'SFB10916',
-      courseName: 'Makroøkonomi', verified: true,
+      institute: 'hio', codeShort: 'sfb10816', displayCode: 'SFB10816',
+      courseName: 'Mikroøkonomi med anvendelser', verified: true,
       fallbackGrades: { A: 11, B: 22, C: 28, D: 34, E: 37, F: 42 },
       description: 'Mikroøkonomi med vekt på konsument- og produsentatferd, markedslikevekt og velferdsøkonomi.',
       credits: '10 sp', examForm: 'Skriftlig eksamen',
-      note: 'HiØ tilbyr ett kombinert samfunnsøkonomiemne (SFB10916) som dekker makro- og mikroøkonomisk teori.',
     },
     nmbu: {
       institute: 'nmbu', codeShort: 'ecn210', displayCode: 'ECN210',
