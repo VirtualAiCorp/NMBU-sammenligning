@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { Layers, ExternalLink, Info } from 'lucide-react';
 import { UHR_GROUPS as UHR_V1, COURSE_MAPPING as V1 } from '../data/courseMapping';
 import { UHR_GROUPS, COURSE_MAPPING as V2, UNIVERSITY_INFO, type CourseEntry } from '../data/courseMapping2';
+import { UhrOaStudierett } from './UhrOaStudierett';
 
 /**
  * UHR-kartlegging 2.0: UHR-ØAs minimumskrav (2018) mot emnene ved hver BØA-tilbyder, med rettelsene fra
@@ -166,6 +167,8 @@ export function UhrKartlegging2() {
           Emner som også dekker et område (for eksempel organisasjon 1 og 2) og forgjengerkoder for eldre år står under «forslag som ikke er lagt inn». De krever at et område kan ha flere emner, og det kommer i neste steg.
         </div>
       </div>
+
+      <UhrOaStudierett />
     </div>
   );
 }

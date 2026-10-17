@@ -1215,3 +1215,36 @@ Mathias: den opprinnelige ØA-sammenligningen skal ikke endres. Rettelsene ligge
 - **Visning:** ny HH-modul «UHR-kartlegging 2.0» (`?uhr2`, `components/UhrKartlegging2.tsx`): kravet, og per institusjon 2.0
   mot originalen, status fra gjennomgangen, ØA-kandidater (DBH 308 per program) og forslag som ikke er lagt inn. Data:
   `kilde/public/uhr/gjennomgang.json` (slank utgave, skrives av samme skript). «Konkurrentene» bruker 2.0.
+
+## 57. ØA-studentene gjennom UHR-kjernen (Handelshøyskolen) (17.10.2026)
+
+Ny seksjon nederst i «UHR-kartlegging 2.0» (`?uhr2`, `components/UhrOaStudierett.tsx`, importert av `UhrKartlegging2.tsx`):
+karakterene til kandidatene med BØA-studierett følges gjennom UHR-områdene, institusjon mot institusjon, i stedet for
+karakterene til alle på emnet. Bygger på mulighetsvurderingen i `docs/uhr-gjennomgang-2026-10-17.md` kapittel 5.
+- **Skript:** `scripts/build-uhr-oa-studierett.py` → `kilde/public/uhr/oa-studierett.json` (ca. 550 kB). Ingen ny henting.
+- **Kilder:** DBH 308 per studieprogram (`308_*` karakterer per semester, `308pt_*` totalt per år) for ØA-studentene, DBH 308
+  per emne (`308e_*`, `308et_*`) for alle på emnet, DBH 208 for studiepoeng per emnekode-versjon. Programkodene kommer fra
+  `hhProgrammer` i `data/hh/uhr-gjennomgang.json` via `data/hh/dbh-programkart.json` (samme som `hhCourseData.json`), pluss
+  nettstudiene (Kristiania BOA, INN BAØKA/BAØKAH, UiT B-ØKADMN). INN ligger under 0264 til og med 2024 og 1177 fra 2025.
+- **Emner per område:** alle forslag i `uhr-gjennomgang.json` (`institusjoner.<inst>.omraader.<område>.forslag`), med
+  `aarFra`/`aarTil` som strengt årsvindu for forgjengerkoder. Gir 1–3 emner per område uten å endre `courseMapping2.ts`.
+  Områder med sikkerhet «usikker» (etikk ved NMBU, UiT og UiT nett, økonomistyring ved NLA, markedsføring ved UiS) er med,
+  men merket. Studiepoeng per emne er forslagets (fra DBH 208 i gjennomgangen).
+- **Kodematching:** DBH-koden uten versjon (`BUS110-1` → `BUS110`, UiA `BE-111-G`, NTNU `BØA1200-A`). Versjoner summeres.
+  BI fører delvurderinger som eget siffer (`BØK35322` 2,25 sp + `BØK35323` 5,25 sp); de vektes med sin andel av emnets
+  studiepoeng, så n for BI er et vektet antall. Kontroll mot `oaKandidaterPerKode` i gjennomgangen: alt stemmer unntatt BI
+  (gjennomgangen tok største delvurdering) og INN nett 2025 (BAØKAH er tatt med her).
+- **Mål per institusjon × område/fagområde/kjerne × år 2021–2025, for ØA-studentene og alle på emnet:** n = kandidater med
+  A–F; snitt = Σ sp·poeng / Σ sp·n (A = 5 … F = 0); stryk = F/(A–F) samlet over emnene; andel G/H; skjermet andel =
+  (308pt-total − A–H) / total; ØA-gap = ØA − alle (snitt, og stryk i prosentpoeng). Fagområdene og kjernen teller hver
+  emnekode én gang. Innføringsemnet (okonomi1) telles i bedriftsøkonomi, som i studiepoengtellingen i gjennomgangen.
+- **Visning:** matrise institusjon × fagområde + hele kjernen, bryter «ØA-studentene / alle på emnet / ØA-gap», årsvalg,
+  NMBU øverst og uthevet, resten sortert etter kjernen. Farge etter avvik fra NMBU (dempet grønn/rød), ⚠ ved n < 30 eller
+  skjermet > 10 %, HVL Bergen merket ⚑. Klikk på en rad viser områdene og emnene (sp, n, snitt, stryk, skjermet, ØA-andel,
+  gap, fordeling A–F). Standard: de 12 hovedtilbyderne; avkrysning tar med campuser, nett og mindre tilbydere.
+- **Tall 2025 (snitt / stryk, ØA mot alle):** NMBU metode 1,55 / 40,1 % mot 1,93 / 29,0 %, kjernen 2,46 / 16,4 % mot
+  2,42 / 16,8 %. Gjenskaper tabellen i gjennomgangen 5.2 (små avvik i «alle» fordi 308e brukes direkte).
+- **Forbehold:** eksamener, ikke personer (gjentak telles igjen, eksamensåret blander kull); kandidater uten aktiv
+  studierett er bare med i «alle» (HVL Bergen avviker sterkt: ØA-stryk 3,5 % mot 16,1 % i kjernen); skjerming; DBH har
+  ca. ett års etterslep; ONH mangler i DBH-cachen; NTNU Gjøvik/Ålesund lå under felleskoden BØA i 2022–2024 (tatt med via
+  NTNUs koder, emnekodene skiller campusene); Nord Bodø/Steinkjer, USN og BI er slått sammen over campuser.
