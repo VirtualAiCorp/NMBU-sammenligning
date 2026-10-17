@@ -41,6 +41,7 @@ export const MODUL_TEKST: Record<Exclude<ShellView, 'landing'>, string> = {
   studentene: 'Alder, utenlandske og utveksling',
   studiebarometer: 'Studentenes vurdering, skala 1–5',
   markedsstatus: 'Styrepapirer hos konkurrentene',
+  konkurrenter: 'Én konkurrent om gangen mot NMBU',
   arbeidsmarked: 'Lønn, ledighet og yrker',
   sokergrunnlag: 'Ungdomskull og videregående',
   bolig: 'Studentboliger og boligpriser',
@@ -55,11 +56,11 @@ export const MODUL_TEKST: Record<Exclude<ShellView, 'landing'>, string> = {
 export type Modul = (typeof FAKULTETSMODULER)[number];
 export const modul = (v: ShellView): Modul => FAKULTETSMODULER.find((m) => m.view === v)!;
 
-/** Modulgruppene i sidemenyen for et fakultet. «Intern» vises bare for Handelshøyskolen. */
+/** Modulgruppene i sidemenyen for et fakultet. «Intern» og «Konkurrentene» vises bare for Handelshøyskolen. */
 export const MODULGRUPPER: { tittel: string; views: ShellView[] }[] = [
   { tittel: 'Oversikt', views: ['landing'] },
   { tittel: 'Opptak og studenter', views: ['analyse', 'emner', 'gjennomforing', 'studentene', 'studiebarometer'] },
-  { tittel: 'Marked og omverden', views: ['markedsstatus', 'arbeidsmarked', 'sokergrunnlag', 'bolig'] },
+  { tittel: 'Marked og omverden', views: ['konkurrenter', 'markedsstatus', 'arbeidsmarked', 'sokergrunnlag', 'bolig'] },
   { tittel: 'Institusjonen', views: ['inntekt', 'fagmiljo', 'okonomi'] },
   { tittel: 'Intern', views: ['intern', 'rangering', 'stat100'] },
 ];

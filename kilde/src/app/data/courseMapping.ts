@@ -166,7 +166,7 @@ export const COURSE_MAPPING: Record<CourseId, Record<string, CourseEntry>> = {
       courseName: 'Grunnleggende årsregnskap med Excel', verified: true,
       fallbackGrades: { A: 46, B: 36, C: 107, D: 53, E: 46, F: 116 },
       description: 'Finansregnskap med fokus på registrering av transaksjoner og utarbeidelse av årsregnskap. Dekker norsk regnskapslov og god regnskapsskikk, med Excel som hjelpemiddel.',
-      credits: '10 sp', examForm: 'Skriftlig eksamen',
+      credits: '7,5 sp', examForm: 'Skriftlig eksamen',
       courseUrl: 'https://student.oslomet.no/studier/-/studieinfo/emne/ØABED1000/2025/HØST',
     },
     ntnu: {
@@ -352,7 +352,7 @@ export const COURSE_MAPPING: Record<CourseId, Record<string, CourseEntry>> = {
       courseName: 'Økonomistyring', verified: true,
       fallbackGrades: { A: 27, B: 47, C: 66, D: 49, E: 41, F: 89 },
       description: 'Driftsregnskap med fokus på selvkost- og bidragskalkulasjon, budsjettering og internprisering.',
-      credits: '10 sp', examForm: 'Skriftlig eksamen',
+      credits: '7,5 sp', examForm: 'Skriftlig eksamen',
       courseUrl: 'https://student.oslomet.no/studier/-/studieinfo/emne/ØABED2100/2026/HØST',
     },
     ntnu: {
@@ -537,7 +537,7 @@ export const COURSE_MAPPING: Record<CourseId, Record<string, CourseEntry>> = {
       courseName: 'Investering og finansiering', verified: true,
       fallbackGrades: { A: 72, B: 71, C: 45, D: 20, E: 18, F: 51 },
       description: 'Kapitalbudsjettering, risiko og avkastning, kapitalstruktur og finansieringsbeslutninger.',
-      credits: '10 sp', examForm: 'Skriftlig eksamen',
+      credits: '7,5 sp', examForm: 'Skriftlig eksamen',
       courseUrl: 'https://student.oslomet.no/studier/-/studieinfo/emne/ØABED2000/2026/HØST',
     },
     ntnu: {
@@ -724,7 +724,7 @@ export const COURSE_MAPPING: Record<CourseId, Record<string, CourseEntry>> = {
       courseName: 'Markedsføring', verified: true,
       fallbackGrades: { A: 11, B: 105, C: 207, D: 37, E: 4, F: 3 },
       description: 'Introduksjon til markedsføring for økonomi- og administrasjonsstudenter.',
-      credits: '10 sp', examForm: 'Skriftlig eksamen',
+      credits: '7,5 sp', examForm: 'Skriftlig eksamen',
       courseUrl: 'https://student.oslomet.no/studier/-/studieinfo/emne/ØAADM1001/2025/HØST',
     },
     ntnu: {
@@ -910,7 +910,7 @@ export const COURSE_MAPPING: Record<CourseId, Record<string, CourseEntry>> = {
       courseName: 'Organisasjonsforståelse', verified: true,
       fallbackGrades: { A: 34, B: 84, C: 134, D: 41, E: 4, F: 4 },
       description: 'Organisasjonsteori og ledelse med fokus på organisasjonsstrukturer og ledelsesteori.',
-      credits: '10 sp', examForm: 'Skriftlig eksamen',
+      credits: '7,5 sp', examForm: 'Skriftlig eksamen',
       courseUrl: 'https://student.oslomet.no/studier/-/studieinfo/emne/ØAADM2100/2026/HØST',
     },
     ntnu: {
@@ -1087,7 +1087,7 @@ export const COURSE_MAPPING: Record<CourseId, Record<string, CourseEntry>> = {
       courseName: 'Foretaksstrategi', verified: true,
       fallbackGrades: { A: 11, B: 69, C: 103, D: 78, E: 23, F: 10 },
       description: 'Foretaksstrategi med vekt på strategisk analyse og planlegging i næringslivet.',
-      credits: '10 sp', examForm: 'Skriftlig eksamen',
+      credits: '7,5 sp', examForm: 'Skriftlig eksamen',
       courseUrl: 'https://student.oslomet.no/studier/-/studieinfo/emne/ØAADM2000/2026/HØST',
     },
     ntnu: {
@@ -1271,12 +1271,12 @@ export const COURSE_MAPPING: Record<CourseId, Record<string, CourseEntry>> = {
       courseUrl: 'https://www.kristiania.no/studieportal/fakultet-for-ledelse-og-okonomi/bachelorniva/saoek1001/samfunnsokonomisk-analyse/?year=2027&period=Spring',
     },
     oslomet: {
-      institute: 'oslomet', codeShort: 'øasøk1000', displayCode: 'ØASØK1000',
-      courseName: 'Mikroøkonomi I', verified: true,
-      fallbackGrades: { A: 44, B: 74, C: 96, D: 56, E: 43, F: 36 },
+      institute: 'oslomet', codeShort: 'øasøk1100', displayCode: 'ØASØK1100',
+      courseName: 'Makroøkonomi I', verified: true,
+      fallbackGrades: { A: 44, B: 72, C: 77, D: 78, E: 25, F: 41 },
       description: 'Makroøkonomi med fokus på nasjonalregnskapet, konjunkturer og norsk pengepolitikk.',
-      credits: '10 sp', examForm: 'Skriftlig eksamen',
-      courseUrl: 'https://student.oslomet.no/studier/-/studieinfo/emne/ØASØK1000/2025/HØST',
+      credits: '7,5 sp', examForm: 'Skriftlig eksamen',
+      courseUrl: 'https://student.oslomet.no/studier/-/studieinfo/emne/ØASØK1100/2025/HØST',
     },
     ntnu: {
       institute: 'ntnu', codeShort: 'smø2001', displayCode: 'SMØ2001',
@@ -1458,12 +1458,12 @@ export const COURSE_MAPPING: Record<CourseId, Record<string, CourseEntry>> = {
       courseUrl: 'https://www.kristiania.no/studieportal/fakultet-for-ledelse-og-okonomi/bachelorniva/saoek1001/samfunnsokonomisk-analyse/?year=2027&period=Spring',
     },
     oslomet: {
-      institute: 'oslomet', codeShort: 'øasøk1100', displayCode: 'ØASØK1100',
-      courseName: 'Makroøkonomi I', verified: true,
-      fallbackGrades: { A: 44, B: 72, C: 77, D: 78, E: 25, F: 41 },
+      institute: 'oslomet', codeShort: 'øasøk1000', displayCode: 'ØASØK1000',
+      courseName: 'Mikroøkonomi I', verified: true,
+      fallbackGrades: { A: 44, B: 74, C: 96, D: 56, E: 43, F: 36 },
       description: 'Mikroøkonomi med fokus på konsumentteori, produksjonsteori og markedslikevekt.',
-      credits: '10 sp', examForm: 'Skriftlig eksamen',
-      courseUrl: 'https://student.oslomet.no/studier/-/studieinfo/emne/ØASØK1100/2025/HØST',
+      credits: '7,5 sp', examForm: 'Skriftlig eksamen',
+      courseUrl: 'https://student.oslomet.no/studier/-/studieinfo/emne/ØASØK1000/2025/HØST',
     },
     ntnu: {
       institute: 'ntnu', codeShort: 'smø1001', displayCode: 'SMØ1001',
@@ -1650,7 +1650,7 @@ export const COURSE_MAPPING: Record<CourseId, Record<string, CourseEntry>> = {
       courseName: 'Matematikk I', verified: true,
       fallbackGrades: { A: 85, B: 71, C: 76, D: 35, E: 30, F: 60 },
       description: 'Matematikk for økonomi- og administrasjonsstudenter. Derivasjon, integrasjon og lineær algebra.',
-      credits: '10 sp', examForm: 'Skriftlig eksamen',
+      credits: '7,5 sp', examForm: 'Skriftlig eksamen',
       courseUrl: 'https://student.oslomet.no/studier/-/studieinfo/emne/ØAMET1000/2025/HØST',
     },
     ntnu: {
@@ -1842,7 +1842,7 @@ export const COURSE_MAPPING: Record<CourseId, Record<string, CourseEntry>> = {
       courseName: 'Statistikk', verified: true,
       fallbackGrades: { A: 130, B: 88, C: 36, D: 19, E: 15, F: 42 },
       description: 'Statistikk og sannsynlighetsteori for økonomi- og administrasjonsstudenter.',
-      credits: '10 sp', examForm: 'Skriftlig eksamen',
+      credits: '7,5 sp', examForm: 'Skriftlig eksamen',
       courseUrl: 'https://student.oslomet.no/studier/-/studieinfo/emne/ØAMET1100/2025/HØST',
     },
     ntnu: {
@@ -2028,7 +2028,7 @@ export const COURSE_MAPPING: Record<CourseId, Record<string, CourseEntry>> = {
       courseName: 'Samfunnsvitenskapelig metode', verified: true,
       fallbackGrades: { A: 0, B: 7, C: 24, D: 14, E: 10, F: 12 },
       description: 'Samfunnsvitenskapelig metode for økonomi- og administrasjonsstudenter.',
-      credits: '10 sp', examForm: 'Skriftlig eksamen',
+      credits: '7,5 sp', examForm: 'Skriftlig eksamen',
       courseUrl: 'https://student.oslomet.no/studier/-/studieinfo/emne/ØAMET2100/2026/HØST',
     },
     ntnu: {
@@ -2220,7 +2220,7 @@ export const COURSE_MAPPING: Record<CourseId, Record<string, CourseEntry>> = {
       courseName: 'Bedriftsøkonomi med IKT', verified: false,
       fallbackGrades: { A: 49, B: 84, C: 106, D: 35, E: 22, F: 9 },
       description: 'Innføring i bedriftsøkonomiske analyser med bruk av IKT-verktøy.',
-      credits: '10 sp', examForm: 'Skriftlig eksamen',
+      credits: '7,5 sp', examForm: 'Skriftlig eksamen',
     },
     ntnu: {
       institute: 'ntnu', codeShort: 'bøa1100', displayCode: 'BØA1100',

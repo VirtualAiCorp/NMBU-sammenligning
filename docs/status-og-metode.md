@@ -1172,3 +1172,21 @@ Lillehammer og Rena byttet om. Bygd på nytt fra cachen (uten `--refresh`), i de
   84 registrerte og 8 kandidater.
 - **Etterslep tatt igjen:** DBH 571 var ikke hentet etter at årsstudiene og `nmbu_bel` kom inn i HH-kartet; de fikk snittpoeng nå.
 - Uberørt: `prisCampusData` (bare private), markedsstatus og rangeringen (bare medlemskap i listen).
+
+## 55. Konkurrentene: én institusjon om gangen (Handelshøyskolen) (17.10.2026)
+
+Ny modul «Konkurrentene» under HH (Marked og omverden), lenke `?konkurrent=oslomet`. Første institusjon er OsloMet; USN, HiØ,
+INN, Kristiania og BI står som «kommer».
+- **Ingen ny henting:** siden settes sammen av dataene HH allerede har, side om side med det tilsvarende NMBU-programmet:
+  opptak 2020–2026 (Samordna), UHR-rammeplanens obligatoriske emner med snitt, stryk og kandidater (DBH 308, hele emnet,
+  siste år), gjennomføring og studenttall (DBH 707/123/110/104), studentene (DBH 60/135/142), Studiebarometeret, og
+  fagmiljø og økonomi for fakultetet som eier programmene og hele institusjonen (staffData, economyData).
+- **Konfigurasjon:** `kilde/src/app/data/konkurrenter.ts` (institusjonskode, DBH-enhet, programmer med NMBU-motstykke,
+  nøkkel i UHR-kartleggingen). Ny konkurrent = ny oppføring der; programmene må finnes i `data/hh/programkart.json`, og
+  institusjonen må ha en nøkkel i `COURSE_MAPPING` for UHR-tabellen.
+- **OsloMet:** BØA (215369), siviløkonom 5 år (215345, ingen NMBU-motstykke), master ØA og master entreprenørskap
+  (lokalt opptak). Handelshøyskolen ved OsloMet er ikke egen enhet i DBH, så fagmiljøtallene gjelder hele SAM (1175_530).
+  Studiebarometeret viser ikke resultater for OsloMets bachelor (svarprosent 17 %); siden sier det og åpner på et program med tall.
+- **Rettet i UHR-kartleggingen (`courseMapping.ts`):** OsloMets emnekode, navn og karakterer var byttet om mellom makro-
+  (ØASØK1100) og mikroøkonomi (ØASØK1000). Alle OsloMets ØA-emner er 7,5 sp i DBH (sto som 10 sp). Påvirker også
+  «Opprinnelig HH-analyse».
