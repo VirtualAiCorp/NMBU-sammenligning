@@ -40,10 +40,30 @@ export interface ProgramRad {
   niv: 'bachelor' | 'master' | 'arsstudium' | 'profesjon' | 'annet'; var?: string;
   sp?: number; nett?: boolean | null; deltid?: boolean; lok?: boolean; status?: string; fra?: string; til?: string;
   ledig?: boolean; url?: string; dbh?: string[]; km?: string;
+  /** Studiested-id-er (studiesteder.json), flest studenter først. */
+  ss?: string[];
   a: Record<string, (number | null)[]>;
   sr?: Sr;
 }
 export interface Fordeling { n: number; p25: number; median: number; p75: number }
+/**
+ * Ett studiested (institusjon × sted). r = registrerte høst 2019–2025 (DBH 124), fv = førstevalg 2021–2026 (Samordna),
+ * o = registrerte 2025 etter organisering [stedbasert, desentralisert, nett], sf = aktive Samordna-koder [alle, nett, samling].
+ * a = fordeling [fagfelt-indeks, nivå-indeks, DBH-program, Samordna-koder, r × 7, fv × 6]. td/ts = største program.
+ */
+export interface Studiested {
+  id: string; i: string; n: string; t: 's' | 'n' | 'u'; kn: string | null; f: string | null; ll: [number, number] | null;
+  k: 'S' | 'D' | 'SD'; ps: number; pd: number; r: number[]; fv: number[]; o: [number, number, number]; sf: [number, number, number];
+  a: number[][]; td: [string, string, number, number, number][]; ts: [string, string, number, number | null, number | null, number][];
+  v?: string[];
+}
+export interface Studiesteder {
+  hentet: string; aar: string[]; fvAar: string[]; niv: string[]; ff: string[];
+  inst: Record<string, { n: string; k: string; p: boolean }>;
+  steder: Studiested[];
+  dekning: Record<string, number>;
+  kontroll: { dbh123: Record<string, number>; dbh124: Record<string, number>; medSted: Record<string, number>; nett: Record<string, number>; avvik: number; bareSamordna: number; bareDbh: number };
+}
 export type Aggregater = Record<string, { n: string; ant: number; fd: Partial<Record<'fullfortNormertAndel' | 'frafallNormertAndel' | 'fullfort2Andel' | 'innPerReg' | 'reg', Fordeling>> }>;
 
 // ── Innlasting ─────────────────────────────────────────────────────────────
@@ -58,6 +78,7 @@ export function hentFil<T>(navn: string): Promise<T | null> {
 }
 export const hentOversikt = () => hentFil<Oversikt>('oversikt.json');
 export const hentAggregater = () => hentFil<Aggregater>('aggregater.json');
+export const hentStudiesteder = () => hentFil<Studiesteder>('studiesteder.json');
 export const hentProgram = (ff: string) => hentFil<{ fagfelt: string; program: ProgramRad[] }>(`program-${ff}.json`).then((d) => d?.program ?? []);
 
 /** Laster en fil når komponenten vises. undefined = laster, null = feilet. */
@@ -179,5 +200,6 @@ export const FORBEHOLD = {
   prikking: 'DBH skjermer små tall (1–2 personer vises som 0). Kandidater, utenlandske og små program er mest rammet; tallene er da minimumstall.',
   finansiering: 'Finansieringssystemet ble lagt om fra og med 2023-produksjonen (kategori 1–3 og G3 i stedet for A–F og kandidatuttelling). Inntektsbeløp før og etter 2022/2023 kan ikke sammenlignes.',
   private: 'Private institusjoner får et fast tilskudd for avtalte plasser, ikke uttelling per studiepoeng. Inntektstallene for private er derfor hypotetiske (hva de ville fått i det statlige systemet).',
+  studiesteder: 'DBH 124 skiller ikke alltid nettstudenter fra studentene på et studiested: noen institusjoner har egen nettcampus, andre fører nettstudentene på hovedcampus. Enkelte institusjoner rapporterer bare hovedcampus, og DBH for 2026 er ikke publisert, så studenttallene slutter høsten 2025.',
   lokalt: 'Program med lokalt opptak (DBH 379, opptakstype L) har ikke Samordnas plasser eller poenggrenser, og førstevalg gjelder bare institusjonens egne alternativer. Tallene kan ikke summeres med Samordna-tallene.',
 };

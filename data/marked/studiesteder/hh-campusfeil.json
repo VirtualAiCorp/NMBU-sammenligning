@@ -1,0 +1,227 @@
+{
+ "meta": {
+  "hentet": "2026-10-17",
+  "forklaring": "Automatisk kontroll av data/hh/programkart.json og dbh-programkart.json mot Samordna-stedet og DBH 124. Ingenting er rettet."
+ },
+ "funn": [
+  {
+   "gruppe": "oa",
+   "id": "ntnu_oa",
+   "studiested": "Trondheim",
+   "studiekode": "194035",
+   "dbh": [
+    "ØABACHELOR",
+    "BØA",
+    "BØAT"
+   ],
+   "funn": [
+    "DBH-kodene teller flere campuser i 2025: NTNU Trondheim 65 %, NTNU Ålesund 18 %, NTNU Gjøvik 16 %"
+   ]
+  },
+  {
+   "gruppe": "oa",
+   "id": "uit_alta_oa",
+   "studiested": "Alta",
+   "studiekode": "186468",
+   "dbh": [
+    "B-ØKADM-A"
+   ],
+   "funn": [
+    "DBH-kodene har bare 3 registrerte i 2025, mens Samordna-koden hadde 538 førstevalg",
+    "Samordna-koden 186468 er koblet til DBH-koden B-ØKADMN i DBH 370, kartet bruker B-ØKADM-A"
+   ]
+  },
+  {
+   "gruppe": "oa",
+   "id": "usn_oa",
+   "studiested": "Drammen",
+   "studiekode": "222330",
+   "dbh": [
+    "OKLED"
+   ],
+   "funn": [
+    "DBH-kodene teller flere campuser i 2025: USN Vestfold 27 %, USN Drammen 25 %, USN Kongsberg 20 %, USN Bø 16 %, USN Hønefoss 13 %",
+    "Peker feil: 25 % av studentene på DBH-kodene er i Drammen, flest er i USN Vestfold (2025)"
+   ]
+  },
+  {
+   "gruppe": "oa",
+   "id": "usn_honefoss_oa",
+   "studiested": "Ringerike",
+   "studiekode": "222097",
+   "dbh": [
+    "ØKLEDR"
+   ],
+   "funn": [
+    "Samordna-koden 222097 er koblet til DBH-koden 164 i DBH 370, kartet bruker ØKLEDR",
+    "Samordna-koden 222097 er årsstudium (60 sp), gruppen er bachelor"
+   ]
+  },
+  {
+   "gruppe": "oa",
+   "id": "usn_bo_oa",
+   "studiested": "Midt-Telemark",
+   "studiekode": "222164",
+   "dbh": null,
+   "funn": [
+    "Samordna-koden 222164 er årsstudium (60 sp), gruppen er bachelor"
+   ]
+  },
+  {
+   "gruppe": "oa",
+   "id": "usn_kongsberg_oa",
+   "studiested": "Kongsberg",
+   "studiekode": "222625",
+   "dbh": [
+    "BACHØKADK"
+   ],
+   "funn": [
+    "Samordna-koden 222625 er koblet til DBH-koden 164 i DBH 370, kartet bruker BACHØKADK",
+    "Samordna-koden 222625 er årsstudium (60 sp), gruppen er bachelor"
+   ]
+  },
+  {
+   "gruppe": "oa",
+   "id": "nord_oa",
+   "studiested": "Bodø",
+   "studiekode": "204342",
+   "dbh": [
+    "BAØKLED"
+   ],
+   "funn": [
+    "DBH-koden BAØKLED brukes også av nord_steinkjer_oa (Steinkjer), så studentene telles to ganger",
+    "DBH-kodene teller flere campuser i 2025: Nord Bodø 62 %, Nord Steinkjer 38 %"
+   ]
+  },
+  {
+   "gruppe": "oa",
+   "id": "nord_steinkjer_oa",
+   "studiested": "Steinkjer",
+   "studiekode": "204404",
+   "dbh": [
+    "BAØKLED"
+   ],
+   "funn": [
+    "DBH-koden BAØKLED brukes også av nord_oa (Bodø), så studentene telles to ganger",
+    "DBH-kodene teller flere campuser i 2025: Nord Bodø 62 %, Nord Steinkjer 38 %",
+    "Peker feil: 38 % av studentene på DBH-kodene er i Steinkjer, flest er i Nord Bodø (2025)"
+   ]
+  },
+  {
+   "gruppe": "oa",
+   "id": "bi_oa",
+   "studiested": "Oslo",
+   "studiekode": null,
+   "dbh": [
+    "DIPØAH"
+   ],
+   "funn": [
+    "DBH-kodene teller flere campuser i 2025: BI Oslo 32 %, BI Bergen 31 %, BI Trondheim 21 %"
+   ]
+  },
+  {
+   "gruppe": "oa",
+   "id": "uia_siv",
+   "studiested": "Kristiansand",
+   "studiekode": "201345",
+   "dbh": [
+    "MASTØKAD5"
+   ],
+   "funn": [
+    "DBH-kodene har bare 4 registrerte i 2021, mens Samordna-koden hadde 206 førstevalg",
+    "Samordna-koden 201345 er koblet til DBH-koden BACØKAD i DBH 370, kartet bruker MASTØKAD5"
+   ]
+  },
+  {
+   "gruppe": "olit",
+   "id": "hvl_dol",
+   "studiested": "Bergen",
+   "studiekode": "203218",
+   "dbh": null,
+   "funn": [
+    "Samordna-koden 203218 er årsstudium (60 sp), gruppen er bachelor"
+   ]
+  },
+  {
+   "gruppe": "olit",
+   "id": "usn_itis",
+   "studiested": "Ringerike",
+   "studiekode": "222395",
+   "dbh": [
+    "ITIS"
+   ],
+   "funn": [
+    "DBH-kodene teller flere campuser i 2025: USN Hønefoss 52 %, USN Bø 46 %"
+   ]
+  },
+  {
+   "gruppe": "moa",
+   "id": "inn_moa",
+   "studiested": "Lillehammer",
+   "studiekode": null,
+   "dbh": [
+    "MØLDBH",
+    "MØLDBD",
+    "MØLØH",
+    "MØLØD",
+    "MØLMH",
+    "MØLMD",
+    "MØLBAH",
+    "MØLBAD"
+   ],
+   "funn": [
+    "DBH-kodene teller flere campuser i 2025: INN Rena 72 %, INN Lillehammer 28 %",
+    "Peker feil: 28 % av studentene på DBH-kodene er i Lillehammer, flest er i INN Rena (2025)"
+   ]
+  },
+  {
+   "gruppe": "moa",
+   "id": "hvl_moa",
+   "studiested": "Bergen",
+   "studiekode": null,
+   "dbh": [
+    "MSB"
+   ],
+   "funn": [
+    "DBH-kodene teller flere campuser i 2025: HVL Bergen 54 %, HVL Sogndal 24 %, HVL Haugesund 22 %"
+   ]
+  },
+  {
+   "gruppe": "aarsstudier",
+   "id": "nmbu_bel",
+   "studiested": "Ås",
+   "studiekode": "192253",
+   "dbh": [
+    "KVU-BEDØK"
+   ],
+   "funn": [
+    "Peker feil: 1 % av studentene på DBH-kodene er i Ås, flest er i NMBU Nettstudier (2025)"
+   ]
+  },
+  {
+   "gruppe": "aarsstudier",
+   "id": "nord_hr_ar",
+   "studiested": "Bodø",
+   "studiekode": "204158",
+   "dbh": [
+    "PK1"
+   ],
+   "funn": [
+    "DBH-kodene teller flere campuser i 2025: Nord Levanger 44 %, Nord Bodø 41 %, Nord Mo i Rana 15 %",
+    "Peker feil: 41 % av studentene på DBH-kodene er i Bodø, flest er i Nord Levanger (2025)"
+   ]
+  },
+  {
+   "gruppe": "aarsstudier",
+   "id": "nla_bei_ar",
+   "studiested": "Oslo",
+   "studiekode": "254393",
+   "dbh": [
+    "4BEI-N"
+   ],
+   "funn": [
+    "Peker feil: 0 % av studentene på DBH-kodene er i Oslo, flest er i NLA Nettstudier (2025)"
+   ]
+  }
+ ]
+}

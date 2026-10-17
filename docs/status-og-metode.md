@@ -1294,3 +1294,42 @@ Komponentene ligger i `kilde/src/app/components/marked/` (`Markedet.tsx`, `Marke
   sorterer Samordna 2026 og lokalt 2025 sammen (lokale tall er merket «2025»); ingen KI-linjer («MARKEDET») i
   `build-ki-grunnlag.py` ennå, og siden er ikke lagt inn i røyktestens liste. Feilene i HH-programkartet (MAENT delt mellom
   Nord og OsloMet, UiT Alta, USN-campuser som peker på årsstudier m.fl.) vises bare som merknader og rettes separat.
+
+## 59. Markedet: studiesteder (17.10.2026)
+
+Ny fane «Studiesteder» på Markedet (`?marked=studiesteder`, `kilde/src/app/components/marked/MarkedStudiesteder.tsx`,
+lastes lazy sammen med Leaflet). Kartleggingen er i `data/marked/studiesteder/` (rapport i `docs/marked/studiesteder.md`).
+- **Datakjeden:** `skript/hent.py` henter DBH 124 (registrerte per program × campus, høst 2019–2025, alle institusjoner
+  og nivå, ett kall per år), DBH 123 per institusjon (kontroll) og DBH 662 (campusregisteret, bulk). `skript/geo.py`
+  henter SSB-kommuneendringer og Kartverket (kommuneinfo og stedsnavn) og cacher alt i `kilder/geo/`. `skript/bygg.py`
+  slår sammen Samordna-stedene og DBH-campusene til 156 poster (144 steder, 7 nettcampuser, 5 i utlandet; 81 i begge
+  kilder, 64 bare DBH, 11 bare Samordna). Den skriver også `studiesteder.json`, koblingstabellen `program-steder.json`,
+  `kontroll.json` og `hh-campusfeil.json`. `scripts/build-marked.py` leser dem og skriver
+  `kilde/public/marked/studiesteder.json` (188 kB, stopper over 1 MB). Programfilene får `ss` (studiested-id-er): på
+  Samordna-koder fra Samordnas sted, på lokalt opptak fra DBH 124, flest studenter først (1 658 av 1 688 lokale
+  gradsprogram).
+- **Sammenslåing:** campusene til én institusjon i Oslo, Bergen, Trondheim, Stavanger, Kristiansand, Bodø og Tromsø blir
+  ett sted. Navnevarianter renses, og Samordnas stedsnavn foretrekkes. Seks manuelle rettelser (blant dem NHH Oslo og
+  Campus Ringerike → Hønefoss) står i `OVERSTYR`. Gamle kommunenummer følges til dagens via SSB Klass 131.
+- **Dekning og kontroll:** 4 931 av 6 558 aktive DBH-program (75 %) har studiested, blant dem 3 176 av 3 354 med lokalt
+  opptak. Resten hadde ingen registrerte 2019–2025. Studiested finnes for 99,9 % av de 320 740 registrerte høsten 2025:
+  12 938 står på nettcampus, 220 i utlandet og 26 er uplassert. DBH 124 summert per institusjon avviker ikke mer enn 1 %
+  fra DBH 123 i noe år (totalt −0,2 % på grunn av skjerming).
+- **Visningen:** Leaflet-kart med Kartverkets gråtonefliser (`cache.kartverket.no/v1/wmts/1.0.0/topograatone`, CC BY 4.0,
+  uten nøkkel). Leaflet brukes direkte, fordi react-leaflet 5 krever React 19 og prosjektet har React 18. Ingen
+  eksisterende komponent brukte kartfliser (MapView er SVG), så Kartverket er valgt. Kartet har én sirkel per studiested
+  med størrelse etter registrerte 2025 eller førstevalg 2026 og farge etter institusjon (de elleve største i utvalget)
+  eller endring 2021–2025/2026. NMBU har mørk ring og navnelapp, og nettcampusene er stiplet. Filtrene er fagfelt
+  (delt med de andre fanene), nivå, institusjon og nettstudier av/på. Klikk på en sirkel eller tabellrad åpner et kort
+  med nøkkeltall, tidsserie, nivåfordeling, største fagfelt og største program etter registrerte og førstevalg. Under
+  kartet er en sorterbar tabell. Program-fanen har fått filter på fylke og studiested (pluss «Nettstudier» og
+  «Utlandet»), og lokale program viser studiestedene sine.
+- **Forbehold (vist under kortene):** DBH 124 skiller ikke alltid nettstudenter fra studentene på stedet, enkelte
+  institusjoner rapporterer bare hovedcampus, og DBH 2026 mangler. NMBU, Nord og NLA fikk egen nettcampus i DBH først
+  2021–2023. Samordna-koder og DBH-program overlapper og summeres ikke.
+- **HH-programkartet (bare rapport, ikke rettet):** 17 oppføringer med funn i `hh-campusfeil.json`. Seks oppføringer
+  teller flere campuser (usn_oa, ntnu_oa, bi_oa, hvl_moa, usn_itis, nord_hr_ar). Nord Bodø og Steinkjer deler
+  BAØKLED. Sju peker feil: inn_moa (72 % på Rena), nmbu_bel og nla_bei_ar (nett), uit_alta_oa, uia_siv og to
+  USN-campuser på årsstudiekode. Fire årsstudier står i bachelorgruppene. Se §5 i `docs/marked/studiesteder.md`.
+- **Oppdatering:** `python3 data/marked/studiesteder/skript/hent.py --refresh && python3 data/marked/studiesteder/skript/bygg.py`
+  (DBH 124 for 2026 kommer i februar–mars 2027), deretter `python3 scripts/build-marked.py`.

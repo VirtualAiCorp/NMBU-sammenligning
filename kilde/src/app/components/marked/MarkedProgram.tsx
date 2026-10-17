@@ -3,7 +3,7 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 import { Search, ListOrdered, ExternalLink, ChevronDown, ChevronRight, X } from 'lucide-react';
 import {
   FORBEHOLD, Kort, Merke, NMBU, NMBU_FARGE, ANDRE_FARGE, PRIVAT_FARGE, Valg, Velger, dato, endringFarge, fortegn, hentAggregater, hentProgram,
-  kr, nf, pst, td, tdV, th, thV, thead, useFil, type Aggregater, type Fordeling, type Oversikt, type ProgramRad,
+  hentStudiesteder, kr, nf, pst, td, tdV, th, thV, thead, useFil, type Aggregater, type Fordeling, type Oversikt, type ProgramRad, type Studiested, type Studiesteder,
 } from './felles';
 
 /**
@@ -50,17 +50,37 @@ export function MarkedProgram({ data, ff, setFf }: { data: Oversikt; ff: string;
     return () => { aktiv = false; };
   }, [ff, data]);
   const agg = useFil<Aggregater>(hentAggregater);
+  const steder = useFil<Studiesteder>(hentStudiesteder);
+  const sted = useMemo(() => new Map((steder?.steder ?? []).map((s) => [s.id, s])), [steder]);
 
   const [sok, setSok] = useState('');
   const [inst, setInst] = useState('alle');
   const [niv, setNiv] = useState('alle');
   const [form, setForm] = useState('alle');
   const [opptak, setOpptak] = useState('alle');
+  const [fylke, setFylke] = useState('alle');
+  const [stedNavn, setStedNavn] = useState('alle');
   const [nedlagte, setNedlagte] = useState(false);
   const [sort, setSort] = useState<Sortering>('fv');
   const [side, setSide] = useState(0);
   const [apen, setApen] = useState<string | null>(null);
-  useEffect(() => { setSide(0); }, [sok, inst, niv, form, opptak, nedlagte, sort, ff]);
+  useEffect(() => { setSide(0); }, [sok, inst, niv, form, opptak, nedlagte, sort, ff, fylke, stedNavn]);
+  useEffect(() => { setStedNavn('alle'); }, [fylke]);
+  // Studiestedsfilteret: fylke og stedsnavn fra studiesteder.json (programmets `ss`), nett og utland for seg
+  const NETT = '__nett', UTLAND = '__utland';
+  const fylker = useMemo(() => [...new Set((steder?.steder ?? []).filter((s) => s.t === 's' && s.f).map((s) => s.f as string))].sort((a, b) => a.localeCompare(b, 'nb')), [steder]);
+  const stedsnavn = useMemo(() => [...new Set((steder?.steder ?? []).filter((s) => s.t === 's' && (fylke === 'alle' || s.f === fylke)).map((s) => s.n))].sort((a, b) => a.localeCompare(b, 'nb')), [steder, fylke]);
+  const passerSted = (r: ProgramRad) => {
+    if (fylke === 'alle' && stedNavn === 'alle') return true;
+    const ss = (r.ss ?? []).map((id) => sted.get(id)).filter((s): s is Studiested => s != null);
+    if (fylke === NETT) return ss.some((s) => s.t === 'n');
+    if (fylke === UTLAND) return ss.some((s) => s.t === 'u');
+    return ss.some((s) => s.t === 's' && (fylke === 'alle' || s.f === fylke) && (stedNavn === 'alle' || s.n === stedNavn));
+  };
+  const stederTekst = (r: ProgramRad) => {
+    const ss = (r.ss ?? []).map((id) => sted.get(id)).filter((s): s is Studiested => s != null).map((s) => (s.t === 'n' ? 'nett' : s.n));
+    return ss.length > 3 ? `${ss.slice(0, 3).join(', ')} +${ss.length - 3}` : ss.join(', ');
+  };
 
   const instNavn = (k: string) => data.inst[k]?.k ?? k;
   const avledet = useMemo(() => (rader ?? []).map(avled), [rader]);
@@ -77,6 +97,7 @@ export function MarkedProgram({ data, ff, setFf }: { data: Oversikt; ff: string;
       if (form === 'nett' && !r.nett) return false;
       if (form === 'deltid' && !r.deltid) return false;
       if (form === 'heltid' && (r.deltid || r.nett)) return false;
+      if (!passerSted(r)) return false;
       if (q) {
         const tekst = `${r.n} ${r.k} ${instNavn(r.i)} ${data.inst[r.i]?.n ?? ''} ${r.st ?? ''}`.toLowerCase();
         if (!q.split(/\s+/).every((ord) => tekst.includes(ord))) return false;
@@ -96,7 +117,7 @@ export function MarkedProgram({ data, ff, setFf }: { data: Oversikt; ff: string;
       }
     });
     return ut;
-  }, [avledet, sok, inst, niv, form, opptak, nedlagte, sort]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [avledet, sok, inst, niv, form, opptak, nedlagte, sort, fylke, stedNavn, sted]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const sider = Math.max(1, Math.ceil(filtrert.length / PER_SIDE));
   const vis = filtrert.slice(side * PER_SIDE, (side + 1) * PER_SIDE);
@@ -122,6 +143,11 @@ export function MarkedProgram({ data, ff, setFf }: { data: Oversikt; ff: string;
           <Velger etikett="Nivå" verdi={niv} onVelg={setNiv} valg={[{ id: 'alle', label: 'Alle nivåer' }, { id: 'bachelor', label: 'Bachelor' }, { id: 'master', label: 'Master' }, { id: 'arsstudium', label: 'Årsstudium' }, { id: 'profesjon', label: 'Profesjon' }]} />
           <Velger etikett="Studieform" verdi={form} onVelg={setForm} valg={[{ id: 'alle', label: 'Alle' }, { id: 'heltid', label: 'Heltid, stedbasert' }, { id: 'deltid', label: 'Deltid' }, { id: 'nett', label: 'Nett' }]} />
           <Velger etikett="Opptak" verdi={opptak} onVelg={setOpptak} valg={[{ id: 'alle', label: 'Samordna og lokalt' }, { id: 'samordna', label: 'Samordna' }, { id: 'lokalt', label: 'Lokalt opptak' }]} />
+          <Velger etikett="Fylke" verdi={fylke} onVelg={setFylke} bredde={170}
+            valg={[{ id: 'alle', label: 'Alle fylker' }, ...fylker.map((f) => ({ id: f, label: f })), { id: NETT, label: 'Nettstudier (egen nettcampus)' }, { id: UTLAND, label: 'Utlandet' }]} />
+          {fylke !== NETT && fylke !== UTLAND && (
+            <Velger etikett="Studiested" verdi={stedNavn} onVelg={setStedNavn} bredde={170} valg={[{ id: 'alle', label: 'Alle steder' }, ...stedsnavn.map((n) => ({ id: n, label: n }))]} />
+          )}
         </div>
         <div className="flex flex-wrap items-center gap-4">
           <Valg etikett="Sorter etter" valg={SORT_VALG} verdi={sort} onVelg={setSort} />
@@ -132,9 +158,10 @@ export function MarkedProgram({ data, ff, setFf }: { data: Oversikt; ff: string;
       </div>
 
       <Kort ikon={ListOrdered} tittel={rader ? `${nf(filtrert.length)} program` : 'Program'}
-        undertekst={<>Samordna-programmene viser hovedopptaket 2026. Program med <b>lokalt opptak</b> ({nf(antLok)} i utvalget) har ikke Samordnas plasser eller poenggrenser, og tallene deres er fra DBH 379 for 2025. Registrerte er høsten 2025 (DBH 123). Klikk på en rad for tidsserier og nøkkeltall. NMBU er uthevet.</>}
+        undertekst={<>Samordna-programmene viser hovedopptaket 2026. Program med <b>lokalt opptak</b> ({nf(antLok)} i utvalget) har ikke Samordnas plasser eller poenggrenser, og tallene deres er fra DBH 379 for 2025. Registrerte er høsten 2025 (DBH 123). Studiestedet for program med lokalt opptak er hentet fra DBH 124 (campusene med registrerte studenter, flest først). Klikk på en rad for tidsserier og nøkkeltall. NMBU er uthevet.</>}
         kilde={<>Kilde: Samordna opptak (søker- og tilbudstall, poenggrenser), DBH/HK-dir tabell 347, 370, 379 og 123. Hentet {dato(data.hentet)}. Koblingen Samordna → DBH går via studieprogramnummeret i DBH 370 ({nf(data.kobling.soMedSr)} av {nf(data.kobling.so)} Samordna-koder har studieresultater).</>}
-        forbehold={[FORBEHOLD.sokere, FORBEHOLD.lokalt, 'Poenggrense 0 betyr at alle kvalifiserte søkere fikk tilbud («alle inn»).', FORBEHOLD.dbh2026]}>
+        forbehold={[FORBEHOLD.sokere, FORBEHOLD.lokalt, 'Poenggrense 0 betyr at alle kvalifiserte søkere fikk tilbud («alle inn»).', FORBEHOLD.dbh2026,
+          `Studiestedsfilteret bruker Samordnas studiested for Samordna-kodene og DBH 124 for program med lokalt opptak. ${FORBEHOLD.studiesteder}`]}>
         {rader === undefined ? <div style={{ fontSize: 12, color: 'var(--nmbu-neutral-2)' }}>Laster programmene …</div> : (
           <>
             <div className="overflow-x-auto">
@@ -167,7 +194,7 @@ export function MarkedProgram({ data, ff, setFf }: { data: Oversikt; ff: string;
                               {!r.lok && r.fra && r.fra > '2021' && r.status !== 'nedlagt' && <Merke tekst={`ny ${r.fra}`} bg="var(--nmbu-green-4)" fg="var(--nmbu-green-dark)" />}
                               {r.ledig && <Merke tekst="ledige plasser 2026" bg="#FEF3C7" fg="#92400E" tittel="På Samordnas liste over ledige studieplasser etter hovedopptaket 2026" />}
                             </div>
-                            <div style={{ color: 'var(--nmbu-neutral-2)' }}>{instNavn(r.i)}{r.st ? ` · ${r.st}` : ''} · {r.k}</div>
+                            <div style={{ color: 'var(--nmbu-neutral-2)' }}>{instNavn(r.i)}{r.lok && r.ss ? ` · ${stederTekst(r)}` : ''}{r.st ? ` · ${r.st}` : ''} · {r.k}</div>
                           </td>
                           <td className={tdV}>{NIVA_NAVN[r.niv] ?? r.niv}{r.var ? <span style={{ color: 'var(--nmbu-neutral-2)' }}> {r.var}</span> : null}</td>
                           <td className={td} style={{ fontWeight: 700 }}>{nf(a.fv)}{a.fv != null && r.lok && <sup style={{ color: 'var(--nmbu-neutral-2)', fontWeight: 400 }}> 2025</sup>}</td>

@@ -7,6 +7,7 @@ Bygger datafilene til NMBU-siden «Markedet» (?marked) fra kartleggingene i dat
   data/marked/bachelor-okonomi/   bachelorlandskapet i økonomi (A1)          → okonomi.json
   data/marked/master-okonomi/     masterlandskapet i økonomi (A2)            → okonomi.json
   data/marked/handelshoyskoler/   profilene av økonomimiljøene (A3)          → okonomi.json (uten ledelse)
+  data/marked/studiesteder/       institusjon × studiested (Samordna + DBH 124) → studiesteder.json, `ss` i program-<fagfelt>.json
 
 Skriver til kilde/public/marked/. Leser bare de ferdige filene i data/marked/*, ingen nettkall.
 Kjøring: python3 scripts/build-marked.py
@@ -64,6 +65,30 @@ sr_indeks = les(sr_dir / 'program-indeks.json')
 sr_alias = les(sr_dir / 'alias.json').get('nokler', {})
 sr_inst = sr_indeks['institusjoner']
 aggregater = les(sr_dir / 'aggregater.json')
+
+# Studiestedene (data/marked/studiesteder/skript/bygg.py): koblingen program → studiested(er)
+ss_dir = M / 'studiesteder'
+ss_data = les(ss_dir / 'studiesteder.json')
+ss_kobling = les(ss_dir / 'program-steder.json')
+ss_kontroll = les(ss_dir / 'kontroll.json')
+ss_ok = {s['id'] for s in ss_data['steder']}
+
+
+def ss_so(kode: str):
+    sid = ss_kobling['so'].get(kode)
+    return [sid] if sid in ss_ok else None
+
+
+def ss_dbh(inst: str, kode: str):
+    """Studiestedene til et DBH-program, flest studenter siste år først (uplasserte tas ikke med)."""
+    k = ss_kobling['dbh'].get(f'{inst}_{kode.strip()}')
+    steder = [x for x in (k or {}).get('steder', []) if x['id'] in ss_ok]
+    ids = [x['id'] for x in steder if (x.get('andelSisteAar') or 0) > 0]
+    # Alle studentene siste år var uplassert: bruk stedene fra tidligere år.
+    # Står programmet bare med 0 (skjermet) i DBH 124, brukes campusen DBH oppgir likevel.
+    ids = ids or [x['id'] for x in sorted(steder, key=lambda x: -sum(x['reg'].values()))]
+    return ids or None
+
 
 # Alle studieresultat-program, lastet per institusjon (13 MB samlet; bare feltene vi trenger beholdes).
 sr_prog: dict[str, dict] = {}
@@ -174,6 +199,8 @@ for r in alle_so:
         rad['dbh'] = [d.split(':', 1)[1].replace(':', '_') for d in dbh]
     if r.get('koblingMerknad'):
         rad['km'] = r['koblingMerknad']
+    if ss_so(r['kode']):
+        rad['ss'] = ss_so(r['kode'])
     nokkel = next((k for k in (dbh_til_sr(d) for d in dbh) if k), None)
     koblet['so'] += 1
     if nokkel:
@@ -206,6 +233,9 @@ for r in alle_dbh.values():
     }
     if var:
         rad['var'] = var
+    if ss_dbh(r['inst'], r['kode']):
+        rad['ss'] = ss_dbh(r['inst'], r['kode'])
+        koblet['lokaltMedSted'] = koblet.get('lokaltMedSted', 0) + 1
     nokkel = sr_nokkel(r['inst'], r['kode'])
     koblet['lokalt'] += 1
     if nokkel:
@@ -438,6 +468,40 @@ okonomi = {
 if ledere_re and ledere_re.search(json.dumps(okonomi, ensure_ascii=False)):
     sys.exit('FEIL: et ledernavn ble med i okonomi.json; det skal ikke publiseres før navnene er avklart.')
 
+# ── studiesteder.json: institusjon × studiested, kompakt ─────────────────────
+FF_ID = [ff['id'] for ff in fagfelt]
+NIV = ss_data['meta']['nivaer']
+TYPE = {'sted': 's', 'nett': 'n', 'utland': 'u'}
+KILDE = {'begge': 'SD', 'Samordna': 'S', 'DBH': 'D'}
+ss_ut = []
+for st in ss_data['steder']:
+    o = st['organisering2025']
+    rad = {
+        'id': st['id'], 'i': st['institusjon'], 'n': st['stedsnavn'], 't': TYPE[st['type']], 'kn': st['kommune'],
+        'f': st['fylke'], 'll': st['koordinater'], 'k': KILDE[st['kilde']],
+        'ps': st['antallProgram']['soKoder'], 'pd': st['antallProgram']['dbhMedStudenter'],
+        'r': [st['registrerte'][y] for y in ss_data['meta']['aar']], 'fv': [st['forstevalg'][y] for y in ss_data['meta']['fvAar']],
+        'o': [o['stedbasert'], o['desentralisert'], o['nett']],
+        'sf': [st['samordnaForm']['aktiveKoder'], st['samordnaForm']['nett'], st['samordnaForm']['samlingsbasert']],
+        'a': [[FF_ID.index(x['fagfelt']) if x['fagfelt'] in FF_ID else FF_ID.index('uoppgitt'), NIV.index(x['niva']),
+               x['dbhProgram'], x['soKoder'], *x['reg'], *x['fv']] for x in st['fordeling']],
+        'td': [[x['navn'], x['kode'], NIV.index(x['niva']), x['reg'][-1], x['reg'][2]] for x in st['storsteDbh']],
+        'ts': [[x['navn'], x['kode'], NIV.index(x['niva']), x['fv'][-1], x['fv'][0], 1 if x['nett'] else 0] for x in st['storsteSamordna']],
+    }
+    if st['navnevarianter']:
+        rad['v'] = st['navnevarianter']
+    ss_ut.append(rad)
+kt = ss_kontroll['totalt']
+studiesteder_ut = {
+    'hentet': ss_data['meta']['hentet'], 'aar': ss_data['meta']['aar'], 'fvAar': ss_data['meta']['fvAar'], 'niv': NIV, 'ff': FF_ID,
+    'inst': {k: v for k, v in ss_data['institusjoner'].items() if any(s['i'] == k for s in ss_ut)},
+    'steder': ss_ut,
+    'dekning': ss_kontroll['dekning'],
+    'kontroll': {'dbh123': kt['dbh123'], 'dbh124': kt['dbh124'], 'medSted': kt['medSted'], 'nett': kt['nettposter'],
+                 'avvik': len(ss_kontroll['avvik124mot123']), 'bareSamordna': len(ss_kontroll['bareSamordna']),
+                 'bareDbh': len(ss_kontroll['bareDbh'])},
+}
+
 # ── Skriv filene ─────────────────────────────────────────────────────────────
 print(f'Skriver til {UT.relative_to(ROT)}/')
 for gammel in UT.glob('program-*.json'):
@@ -446,6 +510,10 @@ total = 0
 total += skriv('oversikt.json', oversikt)
 total += skriv('aggregater.json', agg_ut)
 total += skriv('okonomi.json', okonomi)
+n_ss = skriv('studiesteder.json', studiesteder_ut)
+total += n_ss
+if n_ss > 1_000_000:
+    sys.exit(f'FEIL: studiesteder.json er {n_ss} byte, over målet på 1 MB.')
 for ff, rader in sorted(program_per_felt.items()):
     if not rader:
         continue
@@ -453,7 +521,10 @@ for ff, rader in sorted(program_per_felt.items()):
     total += skriv(f'program-{ff}.json', {'fagfelt': ff, 'program': rader})
 print(f'  {"sum":32s} {total / 1000:8.1f} kB')
 print(f"Program: {koblet['so']} Samordna ({koblet['soMedSr']} med studieresultater), "
-      f"{koblet['lokalt']} med bare lokalt opptak ({koblet['lokaltMedSr']} med studieresultater)")
+      f"{koblet['lokalt']} med bare lokalt opptak ({koblet['lokaltMedSr']} med studieresultater, "
+      f"{koblet.get('lokaltMedSted', 0)} med studiested)")
+print(f"Studiesteder: {len(ss_ut)} ({sum(1 for s in ss_ut if s['t'] == 's')} steder, {sum(1 for s in ss_ut if s['t'] == 'n')} nett, "
+      f"{sum(1 for s in ss_ut if s['t'] == 'u')} i utlandet)")
 nm = fv['okonomi'].get('1173', {})
 tot26 = sum(sum(v[-1] for v in d.values()) for d in fv['okonomi'].values())
 print(f"Kontroll økonomi 2026: NMBU alle {sum(v[-1] for v in nm.values())}, gradsprogram {nm.get('b', [0])[-1] + nm.get('m', [0])[-1]}, "

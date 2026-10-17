@@ -23,6 +23,8 @@
 .leaflet-tooltip-top.map-tooltip::before {
   border-top-color: #e6e6e6;
 }
+/* Fast navnelapp på kartet (Markedet → Studiesteder) */
+.leaflet-tooltip.map-tooltip.map-etikett { padding: 1px 6px; border-radius: 6px; font-size: 11px; color: #00594F; }
 
 /* KI-chatknappen: ikonet vris lett inn når det byttes (chat ↔ lukk) */
 @keyframes ki-ikon-inn { from { opacity: 0; transform: rotate(-90deg) scale(0.6); } to { opacity: 1; transform: none; } }

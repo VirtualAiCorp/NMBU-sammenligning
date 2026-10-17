@@ -1,9 +1,11 @@
-import { useEffect, useState } from 'react';
-import { PieChart, ListOrdered, Landmark, Info } from 'lucide-react';
+import { lazy, Suspense, useEffect, useState } from 'react';
+import { PieChart, ListOrdered, Landmark, Info, MapPin } from 'lucide-react';
 import { FORBEHOLD, Laster, dato, hentOversikt, kort, nf, useFil, type Oversikt } from './felles';
 import { MarkedOversikt } from './MarkedOversikt';
 import { MarkedProgram } from './MarkedProgram';
 import { MarkedOkonomi } from './MarkedOkonomi';
+// Leaflet (kart og CSS) lastes bare når fanen åpnes
+const MarkedStudiesteder = lazy(() => import('./MarkedStudiesteder').then((m) => ({ default: m.MarkedStudiesteder })));
 
 /**
  * NMBU-siden «Markedet» (?marked, ?marked=<fane>): hele markedet for høyere utdanning, ikke bare konkurrentene til hvert
@@ -11,13 +13,14 @@ import { MarkedOkonomi } from './MarkedOkonomi';
  * docs/marked/ og status-og-metode §58).
  */
 
-type Fane = 'oversikt' | 'program' | 'okonomi';
+type Fane = 'oversikt' | 'program' | 'studiesteder' | 'okonomi';
 const FANER: { id: Fane; label: string; ikon: typeof PieChart; tekst: string }[] = [
   { id: 'oversikt', label: 'Oversikt', ikon: PieChart, tekst: 'Andeler av førstevalgene per fagfelt og institusjon' },
   { id: 'program', label: 'Program', ikon: ListOrdered, tekst: 'Alle program med søkere, plasser og studieresultater' },
+  { id: 'studiesteder', label: 'Studiesteder', ikon: MapPin, tekst: 'Kart over alle studiesteder med studenter og førstevalg' },
   { id: 'okonomi', label: 'Økonomi og administrasjon', ikon: Landmark, tekst: 'Bachelor, master og handelshøyskolene' },
 ];
-const erFane = (v: string | null): v is Fane => v === 'oversikt' || v === 'program' || v === 'okonomi';
+const erFane = (v: string | null): v is Fane => v === 'oversikt' || v === 'program' || v === 'studiesteder' || v === 'okonomi';
 
 function fraLenke(): Fane {
   if (typeof window === 'undefined') return 'oversikt';
@@ -65,15 +68,17 @@ export function Markedet() {
         : data === undefined ? <Laster />
           : data === null ? <Laster tekst="Fant ikke markedsdataene (marked/oversikt.json)." />
             : fane === 'oversikt' ? <MarkedOversikt data={data} ff={ff} setFf={setFf} />
-              : <MarkedProgram data={data} ff={ff} setFf={setFf} />}
+              : fane === 'studiesteder' ? <Suspense fallback={<Laster tekst="Laster kartet …" />}><MarkedStudiesteder data={data} ff={ff} setFf={setFf} /></Suspense>
+                : <MarkedProgram data={data} ff={ff} setFf={setFf} />}
 
       <div className="rounded-xl p-5" style={kort}>
         <div className="flex items-center gap-2 mb-2" style={{ fontWeight: 700, color: 'var(--nmbu-green-dark)' }}><Info className="w-4 h-4" /> Om tallene</div>
         <ul className="list-disc pl-5 space-y-1" style={{ fontSize: 12, color: 'var(--nmbu-neutral-1)', lineHeight: 1.55 }}>
-          <li><b>Kilder:</b> Samordna opptak/HK-dir (søker- og tilbudstall, poenggrenser, søke-API-et), DBH/HK-dir tabell 347, 370, 379, 123, 110, 104, 124, 707, 900, 907 og 908, programsidene og utdanning.no. Hentet {dato(data?.hentet) || '17.10.2026'}.</li>
+          <li><b>Kilder:</b> Samordna opptak/HK-dir (søker- og tilbudstall, poenggrenser, søke-API-et), DBH/HK-dir tabell 347, 370, 379, 123, 110, 104, 124, 707, 900, 907 og 908, programsidene og utdanning.no. Studiestedene: DBH 124, SSB og Kartverket (stedsnavn, kommuner og kartfliser). Hentet {dato(data?.hentet) || '17.10.2026'}.</li>
           <li><b>Kobling:</b> Samordna-koden kobles til DBH-programmet via studieprogramnummeret i DBH 370{data ? ` (${nf(data.kobling.soMedSr)} av ${nf(data.kobling.so)} Samordna-koder har studieresultater; ${nf(data.kobling.lokalt)} program har bare lokalt opptak)` : ''}. Fagfeltet bestemmes av NUS-faggruppen.</li>
           <li><b>Gradsprogram og årsstudier:</b> årsstudier er ikke grader. NMBUs vekst i økonomi og administrasjon kommer i hovedsak fra det nettbaserte årsstudiet i bærekraftig økonomi og ledelse; bryteren i Oversikt skiller dem. Enkeltemner og videreutdanning er ikke i Samordna og er ikke med.</li>
           <li><b>DBH 2026:</b> {FORBEHOLD.dbh2026}</li>
+          <li><b>Studiesteder:</b> {FORBEHOLD.studiesteder}</li>
           <li><b>Prikking:</b> {FORBEHOLD.prikking}</li>
           <li><b>Finansieringsomleggingen:</b> {FORBEHOLD.finansiering}</li>
           <li><b>Private:</b> {FORBEHOLD.private}</li>
