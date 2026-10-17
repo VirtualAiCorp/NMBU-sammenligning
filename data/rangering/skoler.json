@@ -790,6 +790,82 @@
   "kontrollUlikAvgrensning": "Vår enhet er avgrenset annerledes enn i eksterne kilder (NTNU: Handelshøyskolen + samfunnsøkonomi + IØT; INN: økonomifag + organisasjon og ledelse), så tall på enhetsnivå sammenlignes ikke."
  },
  {
+  "id": "ntnu_hh",
+  "navn": "NTNU Handelshøyskolen (uten samfunnsøkonomi og IØT)",
+  "navnEn": "NTNU Business School",
+  "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+  "ren_handelshoyskole": false,
+  "type": "institutt",
+  "referanse": false,
+  "iHHKonkurrentsett": true,
+  "nva": {
+   "enheter": [
+    {
+     "id": "194.60.10.0",
+     "url": "https://api.nva.unit.no/cristin/organization/194.60.10.0",
+     "navn": "NTNU Handelshøyskolen"
+    }
+   ],
+   "merknad": "Variant 18.10.2026 (Mathias): bare instituttet NTNU Handelshøyskolen, for å kunne vise NTNU med eller uten Institutt for samfunnsøkonomi og IØT i AJG-sammenligningen."
+  },
+  "dbh": {
+   "institusjonskode": "1150",
+   "avdelingskoder": [
+    "230210"
+   ],
+   "fakultetskode": "230",
+   "alternativ": null,
+   "merknad": "Variant 18.10.2026: bare 230210 NTNU Handelshøyskolen."
+  },
+  "akkrediteringer": [
+   {
+    "type": "AACSB",
+    "status": "medlem, ikke akkreditert",
+    "aar": null,
+    "kilde": "https://www.bi.no/en/about-bi/news/2025/03/joint-statement-from-nordic-business-schools-on-aacsbs-recent-guideline-changes/",
+    "merknad": "Fakultet for økonomi signerte den nordiske AACSB-uttalelsen 2025 som medlem; ikke akkreditert."
+   }
+  ],
+  "rangeringer": [
+   {
+    "rangering": "ShanghaiRanking GRAS – Economics",
+    "aar": 2026,
+    "plassering": "201-300",
+    "forrige": {
+     "aar": 2025,
+     "plassering": "201-300"
+    },
+    "url": "https://www.shanghairanking.com/rankings/gras/2026/AS0501",
+    "niva": "hele institusjonen (GRAS rangerer universiteter, ikke fakulteter)"
+   },
+   {
+    "rangering": "ShanghaiRanking GRAS – Business Administration",
+    "aar": 2026,
+    "plassering": "301-400",
+    "forrige": {
+     "aar": 2025,
+     "plassering": "201-300"
+    },
+    "url": "https://www.shanghairanking.com/rankings/gras/2026/AS0509",
+    "niva": "hele institusjonen (GRAS rangerer universiteter, ikke fakulteter)"
+   },
+   {
+    "rangering": "ShanghaiRanking GRAS – Management",
+    "aar": 2026,
+    "plassering": "76-100",
+    "forrige": {
+     "aar": 2025,
+     "plassering": "76-100"
+    },
+    "url": "https://www.shanghairanking.com/rankings/gras/2026/AS0511",
+    "niva": "hele institusjonen (GRAS rangerer universiteter, ikke fakulteter)"
+   }
+  ],
+  "usikkerhet": "Høy for avgrensning: «NTNU Business School» er formelt bare instituttet 230210, mens AACSB-medlemskapet og HHs fagmiljøsammenligning gjelder hele Fakultet for økonomi. Velg avgrensning før rangering. GRAS Management 76-100 skyldes trolig IØT og gjelder hele NTNU.",
+  "kontrollUlikAvgrensning": "Variant av NTNU med bare instituttet NTNU Handelshøyskolen (230210 / NVA 194.60.10.0). Velges i AJG-sammenligningen; hovedenheten «ntnu» har også samfunnsøkonomi og IØT. AJG-tallene i NHH-rapporten for «NTNU» gjelder denne avgrensningen.",
+  "variantAv": "ntnu"
+ },
+ {
   "id": "ntnu_ok",
   "navn": "NTNU Fakultet for økonomi (hele fakultetet)",
   "navnEn": "NTNU Business School",

@@ -14,6 +14,8 @@ Cache: data/rangering/nva/<skole>/<år>.json (rå minimum per artikkel). Utdata 
 
 Bruk:
   python3 scripts/fetch-nva-artikler.py [--fra 2016] [--til 2025] [--skole hh] [--refresh]
+  python3 scripts/fetch-nva-artikler.py --fra 2025 --til 2026 --mappe data/rangering/nva-forelopig --refresh
+      foreløpige tall (fanen «2026 foreløpig»): inneværende og forrige år med registreringsdato, i egen mappe
 """
 import argparse
 import json
@@ -76,6 +78,8 @@ def forenkle(h, enheter):
         "egne": egne,
         # Utenlandske medforfattere: minst én tilknytning med landkode ulik NO.
         "intl": any(a.get("countryCode") not in (None, "NO") for c in bidrag for a in c.get("affiliations", [])),
+        # Registreringsdato i NVA (brukes for foreløpige tall: hvor mye av et år som var registrert på en gitt dato)
+        "reg": (h.get("createdDate") or "")[:10] or None,
     }
 
 
@@ -107,7 +111,9 @@ def main():
     ap.add_argument("--skole")
     ap.add_argument("--refresh", action="store_true")
     ap.add_argument("--skoler", default=str(RANG / "skoler.json"), help="annen skoleliste (test)")
+    ap.add_argument("--mappe", default=str(CACHE), help="cache-mappe (foreløpige tall: data/rangering/nva-forelopig)")
     a = ap.parse_args()
+    cache = Path(a.mappe)
     skoler = json.loads(Path(a.skoler).read_text(encoding="utf-8"))
     jobber = []
     for s in skoler:
@@ -121,7 +127,7 @@ def main():
             print(f"  {s['id']}: ingen NVA-enhet, hopper over")
             continue
         for aar in range(a.fra, a.til + 1):
-            f = CACHE / s["id"] / f"{aar}.json"
+            f = cache / s["id"] / f"{aar}.json"
             if f.exists() and not a.refresh:
                 continue
             jobber.append((s["id"], enheter, aar, f))

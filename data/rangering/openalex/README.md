@@ -5,7 +5,7 @@ snitt og median FWCI, andel og antall blant de 10 % og 1 % mest siterte i felt o
 topp 10 % per 100 faglige årsverk. Brukes av fanen «Siteringer» (`?rangering&fane=sitering`) og kartet. Metoden står i
 `docs/status-og-metode.md` §50.
 
-Bare denne README-en og `enheter-norden.json` ligger i git. Alt annet her er rå cache (gitignored) og hentes på nytt med
+Bare denne README-en, `enheter-norden.json` og `hh-internasjonalt.json` ligger i git. Alt annet her er rå cache (gitignored) og hentes på nytt med
 skriptene. Ingen forfatternavn lagres, heller ikke i cachen. Ut til rangeringsdataene går bare aggregater per enhet og år.
 
 | Fil/mappe | Innhold | Laget av |
@@ -15,6 +15,10 @@ skriptene. Ingen forfatternavn lagres, heller ikke i cachen. Ut til rangeringsda
 | `norge-doi.json` | DOI → OpenAlex-mål (FWCI, persentil, topp 10/1 %, siteringer, år, type) | `hent_openalex.py norge` |
 | `tittel/_kilder.json`, `tittel/S….json` | Tidsskrift (ISSN → OpenAlex-kilde) og verkene i tidsskriftene, for artikler uten DOI | `hent_openalex.py tittel` |
 | `norden/<enhet>/<år>.json` | Verk per nordisk enhet og år med mål og et ja/nei for om enheten står i tilknytningen | `hent_openalex.py norden` |
+| `hh-internasjonalt.json` | Referansesettet for fagfeltprofilen: frittstående handelshøyskoler (Norden, Europa) med OpenAlex-id-er (i git) | for hånd |
+| `ajg-kilder.json` | ISSN → OpenAlex-kilde for AJG-tidsskriftene (ingen AJG-nivåer) | `hent_ajg_profil.py kilder` |
+| `ajg-volum.json` | Artikler per år i AJG-tidsskriftene, per AJG-fagfelt og nivågruppe (1–2, 3, 4/4*) | `hent_ajg_profil.py volum` |
+| `hh-profil/<skole>/<år>.json` | Artikler per tidsskrift (kilde-id) og år for skolene i `hh-internasjonalt.json` | `hent_ajg_profil.py skoler` |
 
 ## Kjøre på nytt
 
@@ -26,6 +30,9 @@ python3 scripts/rangering/hent_openalex.py norge           # ~150 kreditter (bun
 python3 scripts/rangering/hent_openalex.py tittel --min 2 --maks-kall 60
 python3 scripts/rangering/hent_openalex.py norden          # ~300–500 kreditter for 2016–2025, nyeste år først
 python3 scripts/rangering/sitering.py                      # kontroll: treffrate og tabell (lagrer ingenting)
+python3 scripts/rangering/hent_ajg_profil.py kilder        # fagfeltprofilen: AJG-tidsskrift → OpenAlex (~70 kreditter)
+python3 scripts/rangering/hent_ajg_profil.py volum         # artikler per AJG-fagfelt og år (~70 kreditter)
+python3 scripts/rangering/hent_ajg_profil.py skoler        # internasjonale handelshøyskoler (~300–400 kreditter, 2016–2025)
 /usr/local/bin/python3 scripts/build-rangering.py          # bygger rangeringsdataene med feltet `sitering`
 ```
 

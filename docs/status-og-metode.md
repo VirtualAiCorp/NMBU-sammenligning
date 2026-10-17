@@ -1422,3 +1422,58 @@ Modulen ligger i gruppen «Marked og omverden» etter Konkurrentene og vises bar
 - **Kontrollert:** `npm run build` feilfritt med kildevakten; `vite preview` på 1440 px, forsiden, HH-oversikten,
   Konkurrentene, Studiesentre og Markedet i lys og mørk modus (arbeidsflaten, og forsiden i dashboard-oppsettet):
   synlige ikoner er 12–18 px etter klassene, ingen konsollfeil.
+
+## 62. Fagfeltprofilen: NTNU-avgrensning, AJG-lista og internasjonal referanse (18.10.2026)
+
+Utvidelse av «Fagfeltprofil» i AJG-sammenligningen (`?rangering&fane=ajg`), etter fire spørsmål fra Mathias.
+- **NTNU med eller uten samfunnsøkonomi og IØT:** ny enhet `ntnu_hh` i `data/rangering/skoler.json` (bare instituttet
+  NTNU Handelshøyskolen: NVA 194.60.10.0, DBH 230210) med `variantAv: "ntnu"`. NVA-artiklene er hentet for 2016–2025
+  (`fetch-nva-artikler.py --skole ntnu_hh`). Nettleseren skiller varianter ut fra `data.skoler` ved innlasting
+  (`data.varianter`), så de ikke dukker opp i resten av rangeringen. I AJG-fanen velger «NTNU: Handelshøyskolen +
+  samfunnsøkonomi + IØT | Bare Handelshøyskolen» hvilken som vises i alle tabellene og grafen (`ajgntnu=hh` i lenken);
+  grafvalget lagres under hovedenhetens id, så det overlever byttet. Standard er fortsatt alle tre instituttene (§46).
+- **AJG-lista per fagfelt:** to referansekolonner til høyre. «AJG-tidsskrift» = andelen av tidsskriftene på AJG 2024
+  (på valgt nivå 3+ eller 4+) i hvert fagfelt. «AJG-artikler» = andelen av alle artiklene som tidsskriftene publiserte i
+  perioden (OpenAlex, type article/review), uansett forfatter. Store tekniske og naturvitenskapelige tidsskrift som AJG
+  har plassert i Samfunnsvitenskap og Operasjonsanalyse (f.eks. Environmental Science & Technology, IEEE Transactions on
+  Cybernetics) trekker artikkelandelen opp der.
+- **Internasjonal referanse («normal handelshøyskoleprofil»), gruppert etter region:** Times Higher Education, QS og FT
+  publiserer ikke fagfeltprofiler (FT teller bare FT50). Profilen bygges derfor fra OpenAlex
+  (`data/rangering/openalex/hh-internasjonalt.json`, feltet `gruppe` = region). Norden (CBS, SSE, Hanken), Vest-Europa
+  (franske skoler, LBS, Vlerick, Nyenrode), Sentral-Europa (WU, St.Gallen, WHU, Frankfurt School, Kozminski), Sør-Europa
+  (Bocconi, IESE, Esade), USA, Canada (HEC Montréal, Ivey) og Asia (SMU, CEIBS, IIM Ahmedabad og Bangalore). Europa er
+  valgt blant skolene i FTs Europa-rangering. Frittstående skoler telles som hele institusjonen. De store amerikanske
+  (Wharton, HBS, Stanford GSB, Chicago Booth, MIT Sloan, Kellogg, Columbia, NYU Stern) er fakulteter og finnes ikke som
+  egne enheter i OpenAlex; de avgrenses med universitetet pluss skolenavnet i tilknytningsteksten (felt `tekst`,
+  `raw_affiliation_strings.search`, 10 kreditter per side) og er derfor bare hentet fra 2023 (`--tekst-fra`). Babson og
+  Bentley er egne institusjoner. Hel telling, koblet til AJG 2024 på ISSN. I tabellen velges regionene som kolonner
+  («Sammenlign med»; standard Norden, Europa og USA; «Europa» = vest + sentral + sør, «Alle int.» = alle). Hver kolonne er
+  snittet av skolenes egne profiler (hver skole veier likt); skoler med under 10 artikler på nivået i perioden eller uten
+  tall for alle årene er holdt utenfor (USA-fakultetene er altså bare med for perioder innenfor 2023–2025). NHH og BI telles
+  på samme måte i OpenAlex som kontroll mot NVA-profilen (detaljtabellen «Om sammenligningsgrunnlaget»). IE University og
+  FGV er holdt utenfor (mange fakulteter utenom økonomi).
+  Kontroll 2023–2025, nivå 3+: NHH i OpenAlex 293 artikler mot 301 i NVA, BI 364 mot 392, og andelene per fagfelt
+  avviker høyst ett prosentpoeng (f.eks. samfunnsøkonomi NHH 43/43 %, BI 17/18 %), så OpenAlex-profilene er
+  sammenlignbare med de norske. Eksempel (2023–2025, nivå 3+, samfunnsøkonomi): Norden 14 %, Europa 12 %, USA 20 %,
+  Asia 14 %, alle AJG-artikler 16 %, AJG-tidsskrift 20 %, HH NMBU 55 %. USA-snittet: åtte fakulteter (fra 2023) + Babson og
+  Bentley; 172 kreditter var igjen etter hentingen 18.10, så 2016–2022 for USA-fakultetene kan hentes senere
+  (`hent_ajg_profil.py skoler --tekst-fra 2020`, ~25 kreditter per skole per tre år).
+- **Datakjeden:** `scripts/rangering/hent_ajg_profil.py kilder | volum | skoler` (OpenAlex uten nøkkel; ~70 + 70 +
+  ~350 kreditter). Uten API-nøkkel går verken `cursor` eller `group_by` forbi første side, så skolenes verk listes
+  sidevis (`page=`, maks 10 000 per spørring; skriptet deler vinduet ved behov). Cache i `data/rangering/openalex/`
+  (gitignored, se README der). `build-rangering.py` (`lag_ajg_profil`) lager feltet `ajgProfil` med bare aggregater per
+  fagfelt: `tidsskrift` (antall tidsskrift), `volum` (per år) og `skoler` (per skole og år), alle som [alle, 3+, 4/4*].
+  Ingen AJG-nivåer per tidsskrift går ut. Krever AJG-lista (som resten av AJG-fanen).
+- **Fanen «2026 foreløpig»** (`?rangering&fane=forelopig`, `kilde/src/app/components/rangering/Forelopig.tsx`): artikler
+  med publiseringsår 2026 registrert i NVA til nå, mot 2025 slik det var registrert på samme dato i fjor (NVAs
+  `createdDate`, nytt felt `reg` i `fetch-nva-artikler.py`). Hentes til egen mappe, så hovedcachen ikke endres:
+  `python3 scripts/fetch-nva-artikler.py --fra 2025 --til 2026 --mappe data/rangering/nva-forelopig --refresh`.
+  `build-rangering.py` (`lag_forelopig`) lager feltet `forelopig` med per skole `naa`, `fjorSamme` og `fjorHele` (antall,
+  forfatterandel, nivå 2, AJG 4*/4/3, i AJG). Alle registrerte artikler telles, ikke bare NVI-rapporterte. Fanen viser
+  mål (artikler, nivå 2, AJG 3+, AJG 4+), antall eller per 100 faglige årsverk (2025), endring fra samme dato, andelen av
+  fjorårets artikler som var registrert på datoen, og et fremskrevet tall (hittil ÷ registreringsandelen), med en notis om
+  ujevn rapportering. Per 18.10.2026 var 49–75 % av 2025-artiklene registrert på samme dato i fjor, avhengig av skole.
+  Oppdatering: kjør hentingen på nytt og bygg; datoen følger hentedatoen.
+- **Bakgrunn for fanen (spørsmål 4):** NVA registrerer artikler fortløpende (importkandidater og egen registrering), men
+  NVI-rapporteringen for 2026 lukkes først i mars–april 2027. Per 18.10.2026 hadde NVA for 2026 64 % av 2025-antallet
+  for HH NMBU (47 mot 73), NHH 68 %, BI 82 % og NTNU 56 %; derfor sammenligningen på samme dato i stedet for mot hele 2025.

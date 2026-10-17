@@ -1,0 +1,469 @@
+{
+ "merknad": "Referansesett for fagfeltprofilen (AJG-sammenligningen, 18.10.2026), gruppert etter region. Frittstående handelshøyskoler som er egne institusjoner i OpenAlex telles som hele institusjonen; Europa er valgt blant skolene i FTs Europa-rangering. De store amerikanske handelshøyskolene er fakulteter i universiteter og finnes ikke som egne enheter i OpenAlex; de avgrenses med universitetet pluss tilknytningstekst (felt «tekst», OpenAlex raw_affiliation_strings.search, 10 kreditter per side), derfor bare fra 2023. Flere OpenAlex-id-er = campuser i samme skole. NHH og BI er kontroll av OpenAlex mot NVA, ikke i snittene. IE University og FGV er holdt utenfor (mange fakulteter utenom økonomi). University of St.Gallen og SMU er med (økonomi, ledelse, jus m.m.).",
+ "skoler": [
+  {
+   "id": "cbs",
+   "kort": "CBS",
+   "navn": "Copenhagen Business School",
+   "land": "DK",
+   "gruppe": "norden",
+   "openalex": [
+    "I180519160"
+   ]
+  },
+  {
+   "id": "sse",
+   "kort": "SSE",
+   "navn": "Stockholm School of Economics",
+   "land": "SE",
+   "gruppe": "norden",
+   "openalex": [
+    "I180242103"
+   ]
+  },
+  {
+   "id": "hanken",
+   "kort": "Hanken",
+   "navn": "Hanken School of Economics",
+   "land": "FI",
+   "gruppe": "norden",
+   "openalex": [
+    "I5085271"
+   ]
+  },
+  {
+   "id": "hec",
+   "kort": "HEC Paris",
+   "navn": "HEC Paris",
+   "land": "FR",
+   "gruppe": "vest",
+   "openalex": [
+    "I83860666"
+   ]
+  },
+  {
+   "id": "insead",
+   "kort": "INSEAD",
+   "navn": "INSEAD",
+   "land": "FR",
+   "gruppe": "vest",
+   "openalex": [
+    "I102272798",
+    "I4210152270",
+    "I4210149427"
+   ]
+  },
+  {
+   "id": "lbs",
+   "kort": "LBS",
+   "navn": "London Business School",
+   "land": "GB",
+   "gruppe": "vest",
+   "openalex": [
+    "I61544103"
+   ]
+  },
+  {
+   "id": "essec",
+   "kort": "ESSEC",
+   "navn": "ESSEC Business School",
+   "land": "FR",
+   "gruppe": "vest",
+   "openalex": [
+    "I124261006",
+    "I4405277924"
+   ]
+  },
+  {
+   "id": "escp",
+   "kort": "ESCP",
+   "navn": "ESCP Business School",
+   "land": "FR",
+   "gruppe": "vest",
+   "openalex": [
+    "I4210149577",
+    "I94271068",
+    "I4210140385",
+    "I4387152557"
+   ]
+  },
+  {
+   "id": "edhec",
+   "kort": "EDHEC",
+   "navn": "EDHEC Business School",
+   "land": "FR",
+   "gruppe": "vest",
+   "openalex": [
+    "I90326151"
+   ]
+  },
+  {
+   "id": "emlyon",
+   "kort": "emlyon",
+   "navn": "emlyon business school",
+   "land": "FR",
+   "gruppe": "vest",
+   "openalex": [
+    "I51195161"
+   ]
+  },
+  {
+   "id": "skema",
+   "kort": "SKEMA",
+   "navn": "SKEMA Business School",
+   "land": "FR",
+   "gruppe": "vest",
+   "openalex": [
+    "I181418319"
+   ]
+  },
+  {
+   "id": "gem",
+   "kort": "GEM",
+   "navn": "Grenoble Ecole de Management",
+   "land": "FR",
+   "gruppe": "vest",
+   "openalex": [
+    "I68666633"
+   ]
+  },
+  {
+   "id": "neoma",
+   "kort": "NEOMA",
+   "navn": "NEOMA Business School",
+   "land": "FR",
+   "gruppe": "vest",
+   "openalex": [
+    "I1289910757"
+   ]
+  },
+  {
+   "id": "audencia",
+   "kort": "Audencia",
+   "navn": "Audencia Business School",
+   "land": "FR",
+   "gruppe": "vest",
+   "openalex": [
+    "I161463649"
+   ]
+  },
+  {
+   "id": "kedge",
+   "kort": "KEDGE",
+   "navn": "KEDGE Business School",
+   "land": "FR",
+   "gruppe": "vest",
+   "openalex": [
+    "I51205905"
+   ]
+  },
+  {
+   "id": "tbs",
+   "kort": "TBS",
+   "navn": "TBS Education",
+   "land": "FR",
+   "gruppe": "vest",
+   "openalex": [
+    "I129162050"
+   ]
+  },
+  {
+   "id": "bocconi",
+   "kort": "Bocconi",
+   "navn": "Bocconi University",
+   "land": "IT",
+   "gruppe": "sor",
+   "openalex": [
+    "I71209653"
+   ]
+  },
+  {
+   "id": "wu",
+   "kort": "WU Wien",
+   "navn": "Vienna University of Economics and Business",
+   "land": "AT",
+   "gruppe": "sentral",
+   "openalex": [
+    "I102248843"
+   ]
+  },
+  {
+   "id": "hsg",
+   "kort": "St.Gallen",
+   "navn": "University of St.Gallen",
+   "land": "CH",
+   "gruppe": "sentral",
+   "openalex": [
+    "I202963720"
+   ]
+  },
+  {
+   "id": "whu",
+   "kort": "WHU",
+   "navn": "WHU – Otto Beisheim School of Management",
+   "land": "DE",
+   "gruppe": "sentral",
+   "openalex": [
+    "I84340266"
+   ]
+  },
+  {
+   "id": "fs",
+   "kort": "Frankfurt School",
+   "navn": "Frankfurt School of Finance & Management",
+   "land": "DE",
+   "gruppe": "sentral",
+   "openalex": [
+    "I71675930"
+   ]
+  },
+  {
+   "id": "vlerick",
+   "kort": "Vlerick",
+   "navn": "Vlerick Business School",
+   "land": "BE",
+   "gruppe": "vest",
+   "openalex": [
+    "I4210160754"
+   ]
+  },
+  {
+   "id": "kozminski",
+   "kort": "Kozminski",
+   "navn": "Kozminski University",
+   "land": "PL",
+   "gruppe": "sentral",
+   "openalex": [
+    "I111398093"
+   ]
+  },
+  {
+   "id": "nyenrode",
+   "kort": "Nyenrode",
+   "navn": "Nyenrode Business University",
+   "land": "NL",
+   "gruppe": "vest",
+   "openalex": [
+    "I870178186"
+   ]
+  },
+  {
+   "id": "iese",
+   "kort": "IESE",
+   "navn": "IESE Business School",
+   "land": "ES",
+   "gruppe": "sor",
+   "openalex": [
+    "I4405253577"
+   ]
+  },
+  {
+   "id": "esade",
+   "kort": "Esade",
+   "navn": "Esade",
+   "land": "ES",
+   "gruppe": "sor",
+   "openalex": [
+    "I4387155155"
+   ]
+  },
+  {
+   "id": "wharton",
+   "kort": "Wharton",
+   "navn": "The Wharton School (University of Pennsylvania)",
+   "land": "US",
+   "gruppe": "usa",
+   "openalex": [
+    "I79576946"
+   ],
+   "tekst": "\"Wharton\""
+  },
+  {
+   "id": "hbs",
+   "kort": "HBS",
+   "navn": "Harvard Business School",
+   "land": "US",
+   "gruppe": "usa",
+   "openalex": [
+    "I136199984"
+   ],
+   "tekst": "\"Harvard Business School\""
+  },
+  {
+   "id": "stanford_gsb",
+   "kort": "Stanford GSB",
+   "navn": "Stanford Graduate School of Business",
+   "land": "US",
+   "gruppe": "usa",
+   "openalex": [
+    "I97018004"
+   ],
+   "tekst": "\"Graduate School of Business\""
+  },
+  {
+   "id": "booth",
+   "kort": "Chicago Booth",
+   "navn": "University of Chicago Booth School of Business",
+   "land": "US",
+   "gruppe": "usa",
+   "openalex": [
+    "I40347166"
+   ],
+   "tekst": "\"Booth School\""
+  },
+  {
+   "id": "sloan",
+   "kort": "MIT Sloan",
+   "navn": "MIT Sloan School of Management",
+   "land": "US",
+   "gruppe": "usa",
+   "openalex": [
+    "I63966007"
+   ],
+   "tekst": "\"Sloan School\""
+  },
+  {
+   "id": "kellogg",
+   "kort": "Kellogg",
+   "navn": "Kellogg School of Management (Northwestern)",
+   "land": "US",
+   "gruppe": "usa",
+   "openalex": [
+    "I111979921"
+   ],
+   "tekst": "\"Kellogg School\""
+  },
+  {
+   "id": "columbia_bs",
+   "kort": "Columbia",
+   "navn": "Columbia Business School",
+   "land": "US",
+   "gruppe": "usa",
+   "openalex": [
+    "I78577930"
+   ],
+   "tekst": "\"Columbia Business School\""
+  },
+  {
+   "id": "stern",
+   "kort": "NYU Stern",
+   "navn": "NYU Stern School of Business",
+   "land": "US",
+   "gruppe": "usa",
+   "openalex": [
+    "I57206974"
+   ],
+   "tekst": "\"Stern School\""
+  },
+  {
+   "id": "babson",
+   "kort": "Babson",
+   "navn": "Babson College",
+   "land": "US",
+   "gruppe": "usa",
+   "openalex": [
+    "I96062909"
+   ]
+  },
+  {
+   "id": "bentley",
+   "kort": "Bentley",
+   "navn": "Bentley University",
+   "land": "US",
+   "gruppe": "usa",
+   "openalex": [
+    "I139924743"
+   ]
+  },
+  {
+   "id": "hec_montreal",
+   "kort": "HEC Montréal",
+   "navn": "HEC Montréal",
+   "land": "CA",
+   "gruppe": "canada",
+   "openalex": [
+    "I108192572"
+   ]
+  },
+  {
+   "id": "ivey",
+   "kort": "Ivey",
+   "navn": "Ivey Business School (Western University)",
+   "land": "CA",
+   "gruppe": "canada",
+   "openalex": [
+    "I4405252500"
+   ]
+  },
+  {
+   "id": "smu",
+   "kort": "SMU",
+   "navn": "Singapore Management University",
+   "land": "SG",
+   "gruppe": "asia",
+   "openalex": [
+    "I79891267"
+   ]
+  },
+  {
+   "id": "ceibs",
+   "kort": "CEIBS",
+   "navn": "China Europe International Business School",
+   "land": "CN",
+   "gruppe": "asia",
+   "openalex": [
+    "I64175962"
+   ]
+  },
+  {
+   "id": "iima",
+   "kort": "IIM Ahmedabad",
+   "navn": "Indian Institute of Management Ahmedabad",
+   "land": "IN",
+   "gruppe": "asia",
+   "openalex": [
+    "I150870154"
+   ]
+  },
+  {
+   "id": "iimb",
+   "kort": "IIM Bangalore",
+   "navn": "Indian Institute of Management Bangalore",
+   "land": "IN",
+   "gruppe": "asia",
+   "openalex": [
+    "I44430492"
+   ]
+  },
+  {
+   "id": "nhh_oa",
+   "kort": "NHH (OpenAlex)",
+   "navn": "NHH, talt i OpenAlex (kontroll)",
+   "land": "NO",
+   "gruppe": "kontroll",
+   "openalex": [
+    "I931913249"
+   ]
+  },
+  {
+   "id": "bi_oa",
+   "kort": "BI (OpenAlex)",
+   "navn": "BI, talt i OpenAlex (kontroll)",
+   "land": "NO",
+   "gruppe": "kontroll",
+   "openalex": [
+    "I181046868"
+   ]
+  }
+ ],
+ "grupper": {
+  "norden": "Norden",
+  "vest": "Vest-Europa",
+  "sentral": "Sentral-Europa",
+  "sor": "Sør-Europa",
+  "usa": "USA",
+  "canada": "Canada",
+  "asia": "Asia",
+  "kontroll": "Kontroll (Norge i OpenAlex)"
+ }
+}

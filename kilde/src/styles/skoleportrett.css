@@ -404,3 +404,14 @@
 .skp table.sit-dek tr.meg td:first-child{box-shadow:inset 3px 0 0 var(--accent);padding-left:8px}
 .skp table.sit-dek tr.sit-fl td{color:var(--muted)}
 .skp table.hh-art td.fw{white-space:nowrap}
+/* Fagfeltprofil: referansekolonner (internasjonale handelshøyskoler og AJG-lista) */
+.skp table.ajg-hm th.ref{color:var(--muted);font-weight:600}
+.skp table.ajg-hm .ref.forste{border-left:2px solid var(--line2)}
+.skp table.ajg-hm th.ref.forste,.skp table.ajg-hm td.ref.forste{padding-left:8px}
+.skp details.ajg-ref{margin-top:12px}
+.skp details.ajg-ref summary{cursor:pointer;font-size:.85rem;font-weight:600}
+.skp details.ajg-ref ul.cap{margin:8px 0 10px 1.1em;list-style:disc}
+.skp details.ajg-ref ul.cap li{margin-bottom:4px}
+/* Fanen «… foreløpig»: notis om ujevn rapportering */
+.skp .fl-notis{border-left:3px solid var(--accent);background:var(--flate);padding:10px 12px;font-size:.84rem;line-height:1.45}
+.skp .fl-notis b{font-weight:600}

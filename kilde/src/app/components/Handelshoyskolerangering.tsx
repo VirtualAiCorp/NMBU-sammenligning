@@ -1,8 +1,9 @@
 import { Fragment, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import '../../styles/skoleportrett.css';
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
-import { Lock, Info, Trophy, BookOpen, Building2, FileText, RotateCcw, ShieldCheck, ExternalLink, Columns3, FlaskConical, Link2, Check, Newspaper, ClipboardList, Layers, Download, MapPin, ListOrdered, Quote } from '../ikoner';
+import { Lock, Info, Trophy, BookOpen, Building2, FileText, RotateCcw, ShieldCheck, ExternalLink, Columns3, FlaskConical, Link2, Check, Newspaper, ClipboardList, Layers, Download, MapPin, ListOrdered, Quote, CalendarClock } from '../ikoner';
 import { NordenKart, KART_MAAL_IDER, KART_VIS_IDER, type KartValg, type KartEnhet, type KartMaal, type KartVis } from './rangering/NordenKart';
+import { ForelopigFane, type ForelopigData, type ForelopigSkole } from './rangering/Forelopig';
 import { HhAjgFane, HH_PARAM, hhStandard, lesHh, skrivHh, type HhAjgData, type HhValg } from './rangering/HhAjg';
 import { SiteringFane, SIT_PARAM, sitStandard, lesSit, skrivSit, sitSum, sitArsverkNorge, sitArsverkNorden, sitMotRapport, sitDekningOk, type SiteringData, type SitValg, type SitNordisk } from './rangering/Siteringer';
 
@@ -31,7 +32,31 @@ interface Skole {
   utdanning: Partial<Record<'oa' | 'moa', Utd>> & { siv?: Siv | null };
   /** ABS/AJG 4*, 4 og 3 per år fra NHHs forskningsrapport (åtte skoler), antall og per årsverk. */
   ajgNhh?: Record<string, Partial<Record<'4*' | '4' | '3', { n: number; perFte: number }>>> | null;
+  /** Variant av en annen enhet (ntnu_hh = bare NTNU Handelshøyskolen); ligger i Data.varianter, ikke i Data.skoler */ variantAv?: string | null;
 }
+/** [alle, nivå 3+, nivå 4/4*] per AJG-fagfelt */
+type AjgFagTre = Record<string, [number, number, number]>;
+/** Fagfeltprofilen: hele AJG-lista og internasjonale handelshøyskoler (OpenAlex, hel telling), bare aggregater */
+interface AjgProfil {
+  tidsskrift: AjgFagTre; volum: Record<string, AjgFagTre>;
+  /** gruppe = region (norden, vest, sentral, sor, usa, canada, asia) eller kontroll; metode «tekst» = fakultet avgrenset på tilknytningstekst */
+  skoler: { id: string; kort: string; navn: string; land: string; gruppe: string; metode?: 'institusjon' | 'tekst'; aar: Record<string, { n: number; ajg: number; fag: AjgFagTre }> }[];
+  /** region-id → navn */ grupper?: Record<string, string>;
+}
+/** Regionene som kan vises som kolonner i fagfeltprofilen; «europa» og «alle» er sammenslåinger */
+const REF_GRUPPER: { id: string; navn: string; kort: string; av: string[] }[] = [
+  { id: 'norden', navn: 'Nordiske handelshøyskoler', kort: 'Norden', av: ['norden'] },
+  { id: 'vest', navn: 'Vest-Europa', kort: 'Vest-Europa', av: ['vest'] },
+  { id: 'sentral', navn: 'Sentral-Europa', kort: 'Sentral-Eur.', av: ['sentral'] },
+  { id: 'sor', navn: 'Sør-Europa', kort: 'Sør-Europa', av: ['sor'] },
+  { id: 'europa', navn: 'Europa utenom Norden', kort: 'Europa', av: ['vest', 'sentral', 'sor'] },
+  { id: 'usa', navn: 'USA', kort: 'USA', av: ['usa'] },
+  { id: 'canada', navn: 'Canada', kort: 'Canada', av: ['canada'] },
+  { id: 'asia', navn: 'Asia', kort: 'Asia', av: ['asia'] },
+  { id: 'alle', navn: 'Alle internasjonale', kort: 'Alle int.', av: ['norden', 'vest', 'sentral', 'sor', 'usa', 'canada', 'asia'] },
+];
+const REF_STD = ['norden', 'europa', 'usa'];
+const REGION_REKKE = ['norden', 'vest', 'sentral', 'sor', 'usa', 'canada', 'asia', 'kontroll'];
 interface AjgNhhMeta { kilde: string; url: string; liste: string; nevner: string; usikker: Record<string, number[]>; sider: Record<string, number>; }
 interface Kontroll { skole: string; enhet?: string | null; enhetNavn?: string | null; aar: number | null; maal: string; verdi: number | string | null; nevner?: string | null; kilde?: string | null; url?: string | null; side?: number | string | null; merknad?: string | null; vaar?: number | null; vaarAlt?: number | null; vaarNivaa?: string; avvikProsent?: number | null; traff?: 'hoved' | 'alt'; }
 /** Foreløpige tall for nordiske enheter utenfor Norge (data/rangering/norden/*.json), bare til fanen «Kart» */
@@ -41,7 +66,10 @@ interface NordenLand { land: 'DK' | 'SE' | 'FI'; landNavn: string; status: strin
 interface Norden { merknad: string; steder: Record<string, { by: string; lat: number; lon: number; merknad?: string }>; land: NordenLand[]; }
 interface Data { versjon: number; generert: string; aar: [number, number]; norden?: Norden | null; lister: Record<'ajg' | 'abdc' | 'ft50' | 'utd24', boolean> & { ajgA?: boolean; /** AJG fylt inn for hånd: tidsskrift uten oppslag er «usjekket», ikke «ikke på AJG» */ ajgDelvis?: boolean }; skoler: Skole[]; kontroll?: Kontroll[]; ajgNhh?: AjgNhhMeta | null;
   /** HH NMBUs egne artikler med AJG-nivå (bare når AJG-lista er lagt inn; fanen «HH NMBU etter AJG») */ hhAjg?: HhAjgData | null;
-  /** Siteringsmål fra OpenAlex per enhet og år (fanen «Siteringer» og kartet); uavhengig av tidsskriftlistene */ sitering?: SiteringData | null; }
+  /** Siteringsmål fra OpenAlex per enhet og år (fanen «Siteringer» og kartet); uavhengig av tidsskriftlistene */ sitering?: SiteringData | null;
+  /** Fagfeltprofilen i AJG-sammenligningen: AJG-lista og internasjonale handelshøyskoler */ ajgProfil?: AjgProfil | null;
+  /** Varianter av enhetene (skilt ut fra skoler ved innlasting), som velges i AJG-sammenligningen */ varianter?: Skole[];
+  /** Foreløpige tall for inneværende år (fanen «… foreløpig»), med forrige år på samme registreringsdato */ forelopig?: ForelopigData | null; }
 
 /** Eget nettsted med bare rangeringen (VITE_KUN_RANGERING=1) har egen datafil og eget passord (RANGERING_PASSORD). */
 const KUN_RANGERING = import.meta.env.VITE_KUN_RANGERING === '1';
@@ -60,7 +88,11 @@ async function dekrypter(pw: string): Promise<Data> {
   const base = await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
   const key = await crypto.subtle.deriveKey({ name: 'PBKDF2', salt: b64(e.salt), iterations: e.iter, hash: 'SHA-256' }, base, { name: 'AES-GCM', length: 256 }, false, ['decrypt']);
   const plain = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: b64(e.iv) }, key, b64(e.data));
-  return JSON.parse(new TextDecoder().decode(plain));
+  const d: Data = JSON.parse(new TextDecoder().decode(plain));
+  // Varianter (f.eks. bare NTNU Handelshøyskolen) vises bare der de velges, ikke som egne skoler i resten av rangeringen
+  d.varianter = d.skoler.filter((s) => s.variantAv);
+  d.skoler = d.skoler.filter((s) => !s.variantAv);
+  return d;
 }
 
 // ── Indikatorer ──────────────────────────────────────────────────────────────
@@ -252,11 +284,11 @@ function beregn(skoler: Skole[], ind: Ind[], vekt: Record<string, number>, forsk
 }
 
 // ── Tilstand i lenken (?rangering&…) ────────────────────────────────────────
-type Fane = 'forside' | 'rangering' | 'sammenlign' | 'lab' | 'publisering' | 'rapport' | 'sitering' | 'ajg' | 'hh' | 'kart' | 'profil' | 'kontroll' | 'metode';
-const FANER: Fane[] = ['forside', 'rangering', 'sammenlign', 'lab', 'publisering', 'rapport', 'sitering', 'ajg', 'hh', 'kart', 'profil', 'kontroll', 'metode'];
+type Fane = 'forside' | 'rangering' | 'sammenlign' | 'lab' | 'publisering' | 'rapport' | 'sitering' | 'ajg' | 'hh' | 'forelopig' | 'kart' | 'profil' | 'kontroll' | 'metode';
+const FANER: Fane[] = ['forside', 'rangering', 'sammenlign', 'lab', 'publisering', 'rapport', 'sitering', 'ajg', 'hh', 'forelopig', 'kart', 'profil', 'kontroll', 'metode'];
 interface Tilstand { fane: Fane; forsk: number; vekt: Record<string, number>; medRef: boolean; lag: Lag; valgt: string[]; profil: string; /** sammenligning i skoleportrettet */ mot: string | null; /** fanen AJG-sammenligning */ ajg: AjgValg; /** fanen Kart */ kart: KartValg; /** fanen HH NMBU etter AJG */ hh: HhValg; /** fanen Siteringer */ sit: SitValg; }
 const PARAM = ['rangering', 'fane', 'forsk', 'vekt', 'ref', 'periode', 'telling', 'nevner', 'lagvekt', 'lister', 'grunnlag', 'skoler', 'profil', 'mot',
-  'ajgperiode', 'ajgtelling', 'ajgnevner', 'ajgvis', 'ajgsort', 'ajgref', 'ajgskoler', 'kartmaal', 'kartperiode', 'kartnevner', 'kartanslag', 'kartref', 'kartvis', 'kartvalgt', ...HH_PARAM, ...SIT_PARAM];
+  'ajgperiode', 'ajgtelling', 'ajgnevner', 'ajgvis', 'ajgsort', 'ajgref', 'ajgntnu', 'ajgskoler', 'kartmaal', 'kartperiode', 'kartnevner', 'kartanslag', 'kartref', 'kartvis', 'kartvalgt', ...HH_PARAM, ...SIT_PARAM];
 /** Finnes enheten (norsk skole eller nordisk enhet med siteringstall)? Brukes for skolene i siteringsgrafen. */
 const sitFinnes = (d: Data) => (id: string) => d.skoler.some((s) => s.id === id) || !!d.sitering?.norden?.[id];
 /** De nordiske enhetene med nevnere fra norden-filene, i formen fanen «Siteringer» trenger */
@@ -287,6 +319,7 @@ function lesTilstand(d: Data, ind: Ind[], std: Tilstand): Tilstand {
   if (q.get('ajgvis') === 'antall') t.ajg.per100 = false;
   const as = q.get('ajgsort') as AjgSort | null; if (as && AJG_SORT.includes(as)) t.ajg.sort = as;
   if (q.get('ajgref') === '1') t.ajg.ref = true;
+  if (q.get('ajgntnu') === 'hh') t.ajg.ntnuHh = true;
   if (q.has('ajgskoler')) t.ajg.skoler = (q.get('ajgskoler') ?? '').split(',').map((id) => d.skoler.some((s) => s.id === id) ? id : '').slice(0, AJG_MAKS_SKOLER);
   // Kart: mål, periode for Norge (treårsvindu eller ett år), anslag av/på, referanser, utsnitt og valgt enhet
   const km = q.get('kartmaal') as KartMaal | null; if (km && KART_MAAL_IDER.includes(km)) t.kart.maal = km;
@@ -324,6 +357,7 @@ function skrivTilstand(t: Tilstand, std: Tilstand) {
   if (!a.per100) q.set('ajgvis', 'antall');
   if (a.sort !== sa.sort) q.set('ajgsort', a.sort);
   if (a.ref) q.set('ajgref', '1');
+  if (a.ntnuHh) q.set('ajgntnu', 'hh');
   if (a.skoler.join(',') !== sa.skoler.join(',')) q.set('ajgskoler', a.skoler.join(','));
   const k = t.kart, sk = std.kart;
   if (k.maal !== sk.maal) q.set('kartmaal', k.maal);
@@ -422,6 +456,7 @@ function Rangering({ data }: { data: Data }) {
     ...(data.sitering ? [{ id: 'sitering' as Fane, label: 'Siteringer', icon: <Quote className="w-4 h-4" /> }] : []),
     ...(harAjg ? [{ id: 'ajg' as Fane, label: 'AJG-sammenligning', icon: <Layers className="w-4 h-4" /> }] : []),
     ...(harAjg && data.hhAjg ? [{ id: 'hh' as Fane, label: 'HH NMBU etter AJG', icon: <ListOrdered className="w-4 h-4" /> }] : []),
+    ...(data.forelopig ? [{ id: 'forelopig' as Fane, label: `${data.forelopig.aar} foreløpig`, icon: <CalendarClock className="w-4 h-4" /> }] : []),
     { id: 'kart', label: 'Kart', icon: <MapPin className="w-4 h-4" /> },
     { id: 'profil', label: 'Skoleportrett', icon: <Building2 className="w-4 h-4" /> },
     { id: 'kontroll', label: 'Kvalitetssikring', icon: <ShieldCheck className="w-4 h-4" /> },
@@ -462,6 +497,10 @@ function Rangering({ data }: { data: Data }) {
         ? <HhAjgFane hh={data.hhAjg} aar={data.aar} v={t.hh} std={std.hh} sett={(hh) => sett({ hh })} nhh={data.skoler.find((s) => s.id === data.hhAjg?.skole)?.ajgNhh}
           usikker={data.ajgNhh?.usikker ?? {}} fagNavn={AJG_FAG} fagNavnEn={AJG_FAG_EN} generert={data.generert} />
         : <div className="skp"><p className="muted">AJG ikke lagt inn. Fanen «HH NMBU etter AJG» vises bare når AJG 2024-lista er lagt inn og rangeringen er bygd på nytt.</p></div>)}
+      {t.fane === 'forelopig' && data.forelopig && (() => {
+        const tilF = (s: Skole): ForelopigSkole => ({ id: s.id, kort: s.kort, navn: s.navn, isNmbu: s.isNmbu, referanse: s.referanse, variantAv: s.variantAv, uff: s.dbh[String((data.forelopig as ForelopigData).aar - 1)]?.uff ?? null });
+        return <ForelopigFane data={data.forelopig} skoler={data.skoler.map(tilF)} varianter={(data.varianter ?? []).map(tilF)} />;
+      })()}
       {t.fane === 'kart' && <KartFane data={data} rader={rader} v={t.kart} std={std.kart} sett={(kart) => sett({ kart })}
         apneProfil={(id) => sett({ fane: 'profil', profil: id })}
         apneAjg={(id) => sett({ fane: 'ajg', ajg: t.ajg.skoler.includes(id) || t.ajg.skoler.filter(Boolean).length >= AJG_MAKS_SKOLER ? t.ajg : { ...t.ajg, skoler: [...t.ajg.skoler.filter(Boolean), id] } })}
@@ -1845,6 +1884,7 @@ interface AjgValg {
   /** uff = UN1 + UN2 (HK-dir), utenStip = UN1 + postdoktorer (NHH), alle = alle årsverk (også teknisk-administrative) */ nevner: AjgNevner;
   /** per 100 (valgt nevner) og år i stedet for antall */ per100: boolean; sort: AjgSort; ref: boolean;
   /** skolene i utviklingsgrafen; plassen i lista er fargen, og '' er en ledig plass (fargen følger skolen) */ skoler: string[];
+  /** NTNU som bare Handelshøyskolen (variant ntnu_hh) i stedet for Handelshøyskolen + samfunnsøkonomi + IØT */ ntnuHh: boolean;
 }
 type AjgNevner = 'uff' | 'utenStip' | 'alle';
 /** Hva «per 100» betyr for hver nevner (brukes i overskrifter, tabell, CSV og graf) */
@@ -1856,7 +1896,7 @@ const AJG_NEVNER: Record<AjgNevner, { kort: string; lang: string; title: string 
 const ajgNevnerVerdi = (d: DbhAar | undefined, n: AjgNevner) =>
   n === 'uff' ? d?.uff : n === 'utenStip' ? d?.utenStip : d?.arsverk;
 function ajgStandard(d: Data, y1: number, hh: string): AjgValg {
-  return { fra: y1 - 2, til: y1, brok: false, nevner: 'uff', per100: true, sort: 'p4', ref: false,
+  return { fra: y1 - 2, til: y1, brok: false, nevner: 'uff', per100: true, sort: 'p4', ref: false, ntnuHh: false,
     skoler: [hh, 'nhh', 'bi', 'uia', 'uis'].filter((id, k, a) => a.indexOf(id) === k && d.skoler.some((s) => s.id === id)) };
 }
 interface AjgTall { nvi: number; per: Record<AjgNiva | 'ikke' | 'usjekket', number>; /** sum årsverk i perioden (valgt nevner) */ arsv: number | null; }
@@ -1994,7 +2034,12 @@ function AjgSammenligning({ data, v, std, sett }: { data: Data; v: AjgValg; std:
   const [y0, yN] = data.aar;
   const aar = aarRekke(v.fra, v.til);
   const periodeTekst = v.fra === v.til ? String(v.fra) : `${v.fra}–${v.til}`;
-  const skoler = data.skoler.filter((s) => v.ref || !s.referanse);
+  // NTNU med eller uten samfunnsøkonomi og IØT: varianten erstatter hovedenheten i hele fanen
+  const variant = (id: string) => (v.ntnuHh ? data.varianter?.find((x) => x.variantAv === id) : undefined);
+  const harNtnuHh = !!data.varianter?.some((x) => x.variantAv === 'ntnu');
+  const skoler = data.skoler.map((s) => variant(s.id) ?? s).filter((s) => v.ref || !s.referanse);
+  /** Id-en grafvalget lagres under (hovedenheten, så valget overlever bytte av NTNU-avgrensning) */
+  const grafId = (s: Skole) => s.variantAv ?? s.id;
   const rader = skoler.map((s) => { const t = ajgTall(s, aar, v.brok, v.nevner); return { s, t, m: ajgMaal(t, v.per100) }; });
   const kol = AJG_KOL.find((k) => k.id === v.sort) ?? AJG_KOL[4];
   const verdi = (r: (typeof rader)[number], id: AjgSort) => r.m[id];
@@ -2022,8 +2067,8 @@ function AjgSammenligning({ data, v, std, sett }: { data: Data; v: AjgValg; std:
     if (glatt && vindu.length < 3) return null;
     return ajgMaal(ajgTall(s, vindu, v.brok, v.nevner), true).p4;
   });
-  const valgte = v.skoler.map((id, k) => ({ id, k })).filter((x) => x.id && skoler.some((s) => s.id === x.id));
-  const serier = valgte.map(({ id, k }) => { const s = data.skoler.find((z) => z.id === id) as Skole; return { id, lab: s.kort, v: p4Aar(s), k, meg: s.isNmbu }; });
+  const valgte = v.skoler.map((id, k) => ({ id, k })).filter((x) => x.id && skoler.some((s) => grafId(s) === x.id));
+  const serier = valgte.map(({ id, k }) => { const s = skoler.find((z) => grafId(z) === id) as Skole; return { id, lab: s.kort, v: p4Aar(s), k, meg: s.isNmbu }; });
   const medianLinje = useMemo(() => { const alle = skoler.map(p4Aar); return alleAar.map((_, i) => medianAv(alle.map((a) => a[i]))); }, [skoler, glatt, v.brok, v.nevner]); // eslint-disable-line react-hooks/exhaustive-deps
   const veksle = (id: string) => {
     const k = v.skoler.indexOf(id);
@@ -2042,6 +2087,7 @@ function AjgSammenligning({ data, v, std, sett }: { data: Data; v: AjgValg; std:
   // Fagfeltprofil
   const [fagNiva, setFagNiva] = useState<'3' | '4'>('3');
   const [fagAndel, setFagAndel] = useState(true);
+  const [refValg, setRefValg] = useState<string[]>(REF_STD);
   const fagPer = sortert.map((r) => {
     const f: Record<string, number> = {}; const ix = (v.brok ? 3 : 0) + (fagNiva === '3' ? 1 : 2);
     for (const y of aar) for (const [fag, a] of Object.entries(r.s.artikler[y]?.ajgFag ?? {})) f[fag] = (f[fag] ?? 0) + a[ix];
@@ -2050,9 +2096,58 @@ function AjgSammenligning({ data, v, std, sett }: { data: Data; v: AjgValg; std:
   });
   const fagTotal: Record<string, number> = {};
   fagPer.forEach(({ f }) => Object.entries(f).forEach(([k, x]) => { fagTotal[k] = (fagTotal[k] ?? 0) + x; }));
-  const fagKol = Object.entries(fagTotal).filter(([, x]) => x > 0).sort((a, b) => b[1] - a[1]).map(([k]) => k);
   const celle = (p: (typeof fagPer)[number], fag: string) => fagAndel ? (p.sum ? 100 * (p.f[fag] ?? 0) / p.sum : null) : (p.f[fag] ?? 0);
+
+  // Referansekolonner til høyre (alltid andeler i %): internasjonale handelshøyskoler og hele AJG-lista.
+  // Skolene telles i OpenAlex med hel telling; snittet er snittet av skolenes egne profiler (hver skole veier likt).
+  const prof = data.ajgProfil;
+  const fIx = fagNiva === '3' ? 1 : 2;
+  const REF_MIN = 10; // færre artikler på nivået i perioden gir for tilfeldig profil til å telle i snittet
+  const intl = [...(prof?.skoler ?? [])].sort((a, b) => REGION_REKKE.indexOf(a.gruppe) - REGION_REKKE.indexOf(b.gruppe)).map((sk) => {
+    const f: Record<string, number> = {}; let dekket = 0;
+    for (const y of aar) { const a = sk.aar[y]; if (!a) continue; dekket++; for (const [fag, t] of Object.entries(a.fag)) f[fag] = (f[fag] ?? 0) + t[fIx]; }
+    const sum = Object.values(f).reduce((a, b) => a + b, 0);
+    return { sk, f, sum, dekket, n: aar.reduce((a, y) => a + (sk.aar[y]?.n ?? 0), 0), ajg: aar.reduce((a, y) => a + (sk.aar[y]?.ajg ?? 0), 0) };
+  });
+  const forsteKontroll = intl.find((x) => x.sk.gruppe === 'kontroll')?.sk.id;
+  const iMed = (x: (typeof intl)[number]) => x.dekket === aar.length && x.sum >= REF_MIN;
+  const andelAv = (f: Record<string, number>) => { const sum = Object.values(f).reduce((a, b) => a + b, 0); return sum ? Object.fromEntries(Object.entries(f).map(([k, x]) => [k, 100 * x / sum])) : null; };
+  const snittAv = (grupper: string[]) => {
+    const med = intl.filter((x) => grupper.includes(x.sk.gruppe) && iMed(x));
+    if (!med.length) return null;
+    const p: Record<string, number> = {};
+    med.forEach((x) => Object.entries(x.f).forEach(([fag, n]) => { p[fag] = (p[fag] ?? 0) + 100 * n / x.sum / med.length; }));
+    return { p, med };
+  };
+  const volumF: Record<string, number> = {};
+  for (const y of aar) for (const [fag, t] of Object.entries(prof?.volum[y] ?? {})) volumF[fag] = (volumF[fag] ?? 0) + t[fIx];
+  const tidsF = Object.fromEntries(Object.entries(prof?.tidsskrift ?? {}).map(([fag, t]) => [fag, t[fIx]]));
+  const sumAv = (f: Record<string, number>) => Object.values(f).reduce((a, b) => a + b, 0);
+  const harGruppe = (g: (typeof REF_GRUPPER)[number]) => intl.some((x) => g.av.includes(x.sk.gruppe));
+  const gruppeKol = REF_GRUPPER.filter((g) => refValg.includes(g.id) && harGruppe(g)).map((g) => {
+    const sn = snittAv(g.av);
+    const utenfor = intl.filter((x) => g.av.includes(x.sk.gruppe) && !iMed(x)).map((x) => x.sk.kort);
+    return { id: g.id, kort: g.kort, lang: g.navn, p: sn?.p ?? {}, tom: !sn,
+      fot: sn ? `${sn.med.length} skoler` : 'ingen tall',
+      title: sn ? `${g.navn}: snitt av profilene til ${sn.med.map((x) => x.sk.kort).join(', ')} (OpenAlex, hel telling)${utenfor.length ? `. Ikke med for denne perioden: ${utenfor.join(', ')}` : ''}` : `${g.navn}: ingen skoler med tall for hele perioden` };
+  });
+  const europaS = snittAv(['vest', 'sentral', 'sor']);
+  const refKol = [
+    ...gruppeKol,
+    sumAv(volumF) > 0 && { id: 'volum', kort: 'AJG-artikler', lang: 'Alle artikler i AJG-tidsskriftene', p: andelAv(volumF) as Record<string, number>,
+      fot: nf(sumAv(volumF), 0), title: `Alle artikler i AJG-tidsskriftene på nivå ${fagNiva}+ i perioden, uansett forfatter (OpenAlex): hvor mye av publiseringen i verden som havner i hvert fagfelt` },
+    sumAv(tidsF) > 0 && { id: 'tids', kort: 'AJG-tidsskrift', lang: 'Tidsskriftene på AJG-lista', p: andelAv(tidsF) as Record<string, number>,
+      fot: `${nf(sumAv(tidsF), 0)} tidsskr.`, title: `Andel av de ${nf(sumAv(tidsF), 0)} tidsskriftene på AJG 2024 nivå ${fagNiva}+ som hører til fagfeltet` },
+  ].filter((x): x is { id: string; kort: string; lang: string; p: Record<string, number>; fot: string; title: string; tom?: boolean } => !!x);
+  const refMaks = Math.max(1e-9, ...refKol.flatMap((r) => Object.values(r.p)));
+  // Radene: fagfeltene de norske skolene publiserer i, deretter felt som bare finnes hos referansene (etter europasnittet)
+  const fagKol = [...new Set([...Object.keys(fagTotal), ...gruppeKol.flatMap((g) => Object.keys(g.p))])]
+    .filter((k) => (fagTotal[k] ?? 0) > 0 || gruppeKol.some((g) => (g.p[k] ?? 0) >= 0.5))
+    .sort((a, b) => ((fagTotal[b] ?? 0) - (fagTotal[a] ?? 0)) || ((europaS?.p[b] ?? 0) - (europaS?.p[a] ?? 0)));
   const fagMaks = Math.max(1e-9, ...fagPer.flatMap((p) => fagKol.map((k) => celle(p, k) ?? 0)));
+  const hhP = fagPer.find((p) => p.r.s.isNmbu);
+  const pstTekst = (x: number) => x < 0.5 ? '<1' : nf(x, 0);
+  const hmStil = (x: number, maks: number) => { const g = Math.round(100 * Math.sqrt(x / maks) * 0.92); return { background: x > 0 ? `color-mix(in srgb, var(--hm) ${g}%, var(--bg))` : undefined, color: g > 52 ? '#fff' : undefined }; };
 
   // Validering mot NHH Research Report 2024 (hel telling, som NHH)
   const [valAar, setValAar] = useState<string>('sum');
@@ -2141,6 +2236,12 @@ function AjgSammenligning({ data, v, std, sett }: { data: Data; v: AjgValg; std:
                 </button>
               ))}
             </div>
+            {harNtnuHh && (
+              <div className="ajg-g" role="group" aria-label="Avgrensning av NTNU"><span className="lab">NTNU</span>
+                <button type="button" className="seg" aria-pressed={!v.ntnuHh} onClick={() => set({ ntnuHh: false })} title="NTNU Handelshøyskolen, Institutt for samfunnsøkonomi og Institutt for industriell økonomi og teknologiledelse (IØT)">Handelshøyskolen + samfunnsøkonomi + IØT</button>
+                <button type="button" className="seg" aria-pressed={v.ntnuHh} onClick={() => set({ ntnuHh: true })} title="Bare instituttet NTNU Handelshøyskolen (DBH 230210, NVA 194.60.10.0)">Bare Handelshøyskolen</button>
+              </div>
+            )}
             <label className="ajg-g"><input type="checkbox" checked={v.ref} onChange={(e) => set({ ref: e.target.checked })} /> Ta med referanseenhetene</label>
             {JSON.stringify(v) !== JSON.stringify(std) && <button type="button" className="seg" onClick={() => sett({ ...std, skoler: [...std.skoler] })}>Standardvalg</button>}
           </div>
@@ -2218,8 +2319,8 @@ function AjgSammenligning({ data, v, std, sett }: { data: Data; v: AjgValg; std:
           <p className="muted">Velg opptil {AJG_MAKS_SKOLER} skoler. Fargen følger skolen. Stiplet linje er medianen for alle skolene som vises. {v.brok ? 'Brøkdelt' : 'Hel'} telling, {v.nevner === 'uff' ? 'HK-dirs' : 'NHHs'} nevner.</p>
         </header>
         <div className="cmprow ajg-chips" role="group" aria-label="Skoler i grafen">
-          {sortert.map((r) => { const k = v.skoler.indexOf(r.s.id); return (
-            <button key={r.s.id} type="button" aria-pressed={k >= 0} disabled={k < 0 && fulle} onClick={() => veksle(r.s.id)}>{k >= 0 && <i className={`k${k}`} />}{r.s.kort}</button>
+          {sortert.map((r) => { const k = v.skoler.indexOf(grafId(r.s)); return (
+            <button key={r.s.id} type="button" aria-pressed={k >= 0} disabled={k < 0 && fulle} onClick={() => veksle(grafId(r.s))}>{k >= 0 && <i className={`k${k}`} />}{r.s.kort}</button>
           ); })}
           <span style={{ marginLeft: 'auto' }} />
           <button type="button" className="seg" aria-pressed={glatt} onClick={() => setGlatt(!glatt)} title="Snitt av tre år (året og de to foregående), jevner ut små skoler">Glidende treårssnitt</button>
@@ -2260,7 +2361,7 @@ function AjgSammenligning({ data, v, std, sett }: { data: Data; v: AjgValg; std:
         <header>
           <span className="lab">Fagfeltprofil, {periodeTekst}</span>
           <h2>Der publiserer skolene sine beste artikler</h2>
-          <p className="muted">Artikler på AJG {fagNiva === '3' ? 'nivå 3 eller høyere' : 'nivå 4 eller 4*'} etter AJG-fagfeltet til tidsskriftet. {fagAndel ? 'Tallet er andelen av skolens egne slike artikler, så hver kolonne summerer til 100 %.' : `Tallet er antall artikler${v.brok ? ' (forfatterandeler)' : ''}.`} Mørkere = mer.</p>
+          <p className="muted">Artikler på AJG {fagNiva === '3' ? 'nivå 3 eller høyere' : 'nivå 4 eller 4*'} etter AJG-fagfeltet til tidsskriftet. {fagAndel ? 'Tallet er andelen av skolens egne slike artikler, så hver kolonne summerer til 100 %.' : `Tallet er antall artikler${v.brok ? ' (forfatterandeler)' : ''}.`} Mørkere = mer.{refKol.length ? ' Kolonnene til høyre er sammenligningsgrunnlag i prosent: en typisk nordisk og europeisk handelshøyskole, og hvordan hele AJG-lista fordeler seg på fagfeltene.' : ''}</p>
         </header>
         <div className="cmprow" role="group" aria-label="Valg for fagfeltprofilen">
           <button type="button" className="seg" aria-pressed={fagNiva === '3'} onClick={() => setFagNiva('3')}>Nivå 3+</button>
@@ -2269,10 +2370,20 @@ function AjgSammenligning({ data, v, std, sett }: { data: Data; v: AjgValg; std:
           <button type="button" className="seg" aria-pressed={fagAndel} onClick={() => setFagAndel(true)}>Andel av skolens</button>
           <button type="button" className="seg" aria-pressed={!fagAndel} onClick={() => setFagAndel(false)}>Antall</button>
         </div>
+        {prof && prof.skoler.length > 0 && (
+          <div className="cmprow" role="group" aria-label="Sammenligningsgrupper i fagfeltprofilen">
+            <span className="lab" style={{ alignSelf: 'center' }}>Sammenlign med</span>
+            {REF_GRUPPER.filter(harGruppe).map((g) => (
+              <button key={g.id} type="button" className="seg" aria-pressed={refValg.includes(g.id)} title={`${g.navn}: ${intl.filter((x) => g.av.includes(x.sk.gruppe)).map((x) => x.sk.kort).join(', ')}`}
+                onClick={() => setRefValg(refValg.includes(g.id) ? refValg.filter((x) => x !== g.id) : REF_GRUPPER.map((x) => x.id).filter((x) => x === g.id || refValg.includes(x)))}>{g.kort}</button>
+            ))}
+          </div>
+        )}
         {fagKol.length === 0 ? <p className="muted">Ingen artikler på dette nivået i perioden.</p> : (
           <div className="scroll">
             <table className="ajg-hm">
-              <thead><tr><th>AJG-fagfelt</th>{fagPer.map((p) => <th key={p.r.s.id} className={p.r.s.isNmbu ? 'meg' : undefined}>{p.r.s.kort}</th>)}</tr></thead>
+              <thead><tr><th>AJG-fagfelt</th>{fagPer.map((p) => <th key={p.r.s.id} className={p.r.s.isNmbu ? 'meg' : undefined}>{p.r.s.kort}</th>)}
+                {refKol.map((r, i) => <th key={r.id} className={`ref${i === 0 ? ' forste' : ''}`} title={r.title}>{r.kort}</th>)}</tr></thead>
               <tbody>
                 {fagKol.map((fag) => (
                   <tr key={fag}>
@@ -2284,14 +2395,52 @@ function AjgSammenligning({ data, v, std, sett }: { data: Data; v: AjgValg; std:
                         title={`${p.r.s.kort} · ${AJG_FAG[fag] ?? fag}${AJG_FAG_EN[fag] ? ` (${AJG_FAG_EN[fag]})` : ''}: ${nf(ant, v.brok ? 1 : 0)} artikler på nivå ${fagNiva}+${p.sum ? ` (${nf(100 * ant / p.sum, 0)} % av skolens)` : ''}`}>
                         {ant ? (fagAndel ? ((x ?? 0) < 0.5 ? '<1' : nf(x, 0)) : nf(x, v.brok ? 1 : 0)) : <span className="muted">·</span>}</td>;
                     })}
+                    {refKol.map((r, i) => {
+                      const x = r.p[fag] ?? 0; const hh = hhP?.sum ? 100 * (hhP.f[fag] ?? 0) / hhP.sum : null;
+                      return <td key={r.id} className={`c ref${i === 0 ? ' forste' : ''}`} style={hmStil(x, refMaks)}
+                        title={`${r.lang} · ${AJG_FAG[fag] ?? fag}: ${pstTekst(x)} %${hh != null ? ` (HH NMBU: ${pstTekst(hh)} %)` : ''}`}>
+                        {r.tom ? <span className="muted">–</span> : x > 0 ? pstTekst(x) : <span className="muted">·</span>}</td>;
+                    })}
                   </tr>
                 ))}
-                <tr className="sum"><td>Sum</td>{fagPer.map((p) => <td key={p.r.s.id}>{nf(p.sum, v.brok ? 1 : 0)}</td>)}</tr>
+                <tr className="sum"><td>Sum</td>{fagPer.map((p) => <td key={p.r.s.id}>{nf(p.sum, v.brok ? 1 : 0)}</td>)}
+                  {refKol.map((r, i) => <td key={r.id} className={`ref${i === 0 ? ' forste' : ''}`}>{r.fot}</td>)}</tr>
               </tbody>
             </table>
           </div>
         )}
-        <p className="cap">Fagfeltene er AJGs egen inndeling av tidsskriftene (22 felt), med AJGs engelske navn under det norske. Felt som samler flere temaer, for eksempel Operations Research and Management Science, er slått sammen av AJG; hvert tidsskrift står i bare ett felt, så de kan ikke deles opp uten en egen klassifisering. Kolonnene følger rekkefølgen i tabellen over. Fargen øker med kvadratroten av verdien, så små felt også synes.</p>
+        <p className="cap">Fagfeltene er AJGs egen inndeling av tidsskriftene (22 felt), med AJGs engelske navn under det norske. Felt som samler flere temaer, for eksempel Operations Research and Management Science, er slått sammen av AJG; hvert tidsskrift står i bare ett felt, så de kan ikke deles opp uten en egen klassifisering. Kolonnene følger rekkefølgen i tabellen over. Fargen øker med kvadratroten av verdien, så små felt også synes; referansekolonnene har sin egen skala.</p>
+        {refKol.length > 0 && (
+          <details className="ajg-ref">
+            <summary>Om sammenligningsgrunnlaget og hver internasjonale skole</summary>
+            <ul className="cap">
+              <li><b>Regionene</b> (velg over tabellen) er snittet av skolenes egne profiler (hver skole veier likt), med artikler i AJG-tidsskrift på nivå {fagNiva}+ i {periodeTekst}. Hold musa over en knapp eller kolonne for å se hvilke skoler som er med. I Europa, Canada og Asia er det frittstående handelshøyskoler som er egne institusjoner i OpenAlex, så hele skolen telles uten avgrensning på fagfelt; de europeiske er valgt blant skolene i Financial Times’ Europa-rangering. Universiteter med handelshøyskole som fakultet (for eksempel Rotterdam, Mannheim, Oxford) er ikke med.</li>
+              <li><b>USA:</b> de store handelshøyskolene (Wharton, HBS, Stanford GSB, Chicago Booth, MIT Sloan, Kellogg, Columbia, NYU Stern) er fakulteter og finnes ikke som egne enheter i OpenAlex. De er avgrenset med universitetet pluss skolenavnet i forfatternes tilknytningstekst. Det koster ti ganger så mye i OpenAlex, så de er bare hentet fra 2023 og er med i snittet bare når perioden ligger innenfor 2023–2025. Babson og Bentley er egne institusjoner og finnes for alle år. Skoler med færre enn {REF_MIN} slike artikler i perioden, eller uten tall for alle årene, er holdt utenfor snittet.</li>
+              <li><b>Kilde for skolene:</b> OpenAlex (CC0), artikler og oversiktsartikler der minst én forfatter er tilknyttet skolen (hel telling), koblet til AJG 2024 på ISSN. De norske kolonnene bygger på NVA og bare NVI-rapporterte artikler. Kontroll: NHH og BI talt i OpenAlex på samme måte står nederst i tabellen under, ved siden av NVA-tallene.</li>
+              <li><b>AJG-artikler</b> er alle artikler i AJG-tidsskriftene på nivå {fagNiva}+ i perioden, uansett hvem som skrev dem (OpenAlex). Noen store tidsskrift trekker mye, for eksempel tekniske og naturvitenskapelige tidsskrift som AJG plasserer i Samfunnsvitenskap og Operasjonsanalyse. <b>AJG-tidsskrift</b> er andelen av tidsskriftene på lista, uavhengig av hvor mye de publiserer.</li>
+              <li>Times Higher Education, QS og FT publiserer ikke fagfeltprofiler for skolene; FT teller bare artikler i FT50-tidsskriftene. Derfor er profilen bygd her fra OpenAlex.</li>
+              <li>I tabellen under har hver skole sin egen kolonne, sortert etter region (Norden, Vest-, Sentral- og Sør-Europa, USA, Canada, Asia, til slutt kontrollen). Hold musa over navnet for å se regionen.</li>
+            </ul>
+            <div className="scroll">
+              <table className="ajg-hm">
+                <thead><tr><th>AJG-fagfelt</th>{intl.map((x) => <th key={x.sk.id} title={`${x.sk.navn} (${x.sk.land}, ${prof?.grupper?.[x.sk.gruppe] ?? x.sk.gruppe})${x.sk.metode === 'tekst' ? ' – avgrenset på tilknytningstekst innen universitetet' : ''}${iMed(x) ? '' : ' – ikke med i snittet'}`} className={x.sk.id === forsteKontroll ? 'ref forste' : undefined}>{x.sk.kort}{iMed(x) || x.sk.gruppe === 'kontroll' ? '' : '*'}</th>)}
+                  {fagPer.filter((p) => ['nhh', 'bi'].includes(p.r.s.id)).map((p) => <th key={p.r.s.id} title={`${p.r.s.kort} fra NVA (NVI-rapporterte artikler), til kontroll`}>{p.r.s.kort} (NVA)</th>)}</tr></thead>
+                <tbody>
+                  {fagKol.map((fag) => (
+                    <tr key={fag}>
+                      <td className="fag">{AJG_FAG[fag] ?? fag}</td>
+                      {intl.map((x) => { const y = x.sum ? 100 * (x.f[fag] ?? 0) / x.sum : 0; return <td key={x.sk.id} className={`c${x.sk.id === forsteKontroll ? ' ref forste' : ''}`} style={hmStil(y, refMaks)}>{x.f[fag] ? pstTekst(y) : <span className="muted">·</span>}</td>; })}
+                      {fagPer.filter((p) => ['nhh', 'bi'].includes(p.r.s.id)).map((p) => { const y = p.sum ? 100 * (p.f[fag] ?? 0) / p.sum : 0; return <td key={p.r.s.id} className="c" style={hmStil(y, refMaks)}>{p.f[fag] ? pstTekst(y) : <span className="muted">·</span>}</td>; })}
+                    </tr>
+                  ))}
+                  <tr className="sum"><td>Artikler {fagNiva}+ / i AJG / alle</td>{intl.map((x) => <td key={x.sk.id} className={x.sk.id === forsteKontroll ? 'ref forste' : undefined} title={`${x.sk.kort}: ${nf(x.sum, 0)} artikler på nivå ${fagNiva}+, ${nf(x.ajg, 0)} i AJG-tidsskrift, ${nf(x.n, 0)} artikler i alt (OpenAlex)`}>{nf(x.sum, 0)}<br />{nf(x.ajg, 0)}<br />{nf(x.n, 0)}</td>)}
+                    {fagPer.filter((p) => ['nhh', 'bi'].includes(p.r.s.id)).map((p) => <td key={p.r.s.id}>{nf(p.sum, v.brok ? 1 : 0)}</td>)}</tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="cap">* = ikke med i snittet (under {REF_MIN} artikler på nivået, eller ikke tall for alle årene i perioden). Andeler i prosent av skolens artikler på nivå {fagNiva}+.</p>
+          </details>
+        )}
       </section>
 
       <section className="sec" aria-label="Validering mot NHH-rapporten">

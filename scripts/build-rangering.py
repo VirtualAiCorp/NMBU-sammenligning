@@ -150,7 +150,7 @@ def les_liste(navn, verdi_kol, fag_kol=None, krav=None):
 
 KORT = {"nhh": "NHH", "bi": "BI", "nmbu": "HH NMBU", "uis": "UiS", "uia": "UiA", "nord": "Nord", "ntnu": "NTNU",
         "uit": "UiT", "usn": "USN", "inn": "INN", "oslomet": "OsloMet", "himolde": "HiMolde", "hvl": "HVL",
-        "kristiania": "Kristiania", "hiof": "HiØ", "ntnu_ok": "NTNU ØK (hele)", "uib_okon": "UiB økonomi", "uio_okon": "UiO økonomi"}
+        "kristiania": "Kristiania", "hiof": "HiØ", "ntnu_ok": "NTNU ØK (hele)", "ntnu_hh": "NTNU HH", "uib_okon": "UiB økonomi", "uio_okon": "UiO økonomi"}
 AJG_NIVAER = ["1", "2", "3", "4", "4*"]
 ABDC_NIVAER = ["C", "B", "A", "A*"]
 
@@ -161,6 +161,108 @@ KONTROLL = RANG / "kontroll" / "eksterne-tall.json"
 ALIAS = {"hh": "nmbu"}
 MAAL = {"publiseringspoeng": "publPoeng", "poeng_per_faglig": "poengPerFaglig", "poeng_per_uff": "poengPerUff",
         "publikasjoner": "publikasjoner", "niva2_andel": "niva2Andel"}
+
+
+def lag_forelopig(skoler, lister):
+    """Foreløpige tall for inneværende år (fanen «2026 foreløpig»), fra data/rangering/nva-forelopig/<skole>/<år>.json
+    (scripts/fetch-nva-artikler.py --mappe …). Alle registrerte artikler telles (NVI-rapporteringen for året er ikke
+    lukket). For å ta høyde for ujevn registrering sammenlignes året med forrige år slik det var registrert på samme
+    dato (NVAs createdDate), i tillegg til forrige år i alt. Bare aggregater per skole: antall (hel telling), sum
+    forfatterandel, norsk nivå 2 og AJG 4*/4/3 (hel telling) og i AJG-tidsskrift."""
+    mappe = RANG / "nva-forelopig"
+    if not mappe.exists():
+        return None
+    filer = sorted(mappe.glob("*/*.json"))
+    if not filer:
+        return None
+    aar = max(int(f.stem) for f in filer)
+
+    def agg(artikler):
+        a = {"n": 0, "andel": 0.0, "niva2": 0, "ajg": 0, "4*": 0, "4": 0, "3": 0, "nvi": 0}
+        for x in artikler:
+            a["n"] += 1
+            a["nvi"] += bool(x.get("nvi"))
+            a["andel"] += (x.get("egne") or 0) / max(x.get("forfattere") or 1, 1)
+            a["niva2"] += x.get("niva") == "LevelTwo"
+            iss = [i for i in (issn(x.get("issn")), issn(x.get("eissn"))) if i]
+            tj = next((lister["ajg"][i] for i in iss if lister["ajg"] and i in lister["ajg"]), None)
+            if tj and tj[0] in AJG_NIVAER:
+                a["ajg"] += 1
+                if tj[0] in ("4*", "4", "3"):
+                    a[tj[0]] += 1
+        a["andel"] = round(a["andel"], 2)
+        return a
+
+    ut, dato = {}, None
+    for s in skoler:
+        fn_, ff = mappe / s["id"] / f"{aar}.json", mappe / s["id"] / f"{aar - 1}.json"
+        if not fn_.exists() or not ff.exists():
+            continue
+        dn, df = json.loads(fn_.read_text(encoding="utf-8")), json.loads(ff.read_text(encoding="utf-8"))
+        hentet = dn["hentet"]
+        dato = max(dato or hentet, hentet)
+        fjor_dato = f"{int(hentet[:4]) - 1}{hentet[4:]}"
+        samme = [x for x in df["artikler"] if x.get("reg") and x["reg"] <= fjor_dato]
+        ut[s["id"]] = {"hentet": hentet, "naa": agg(dn["artikler"]), "fjorSamme": agg(samme), "fjorHele": agg(df["artikler"]),
+                       "utenDato": sum(1 for x in df["artikler"] if not x.get("reg"))}
+    if not ut:
+        return None
+    print(f"Foreløpig {aar}: {len(ut)} skoler, hentet {dato}")
+    return {"aar": aar, "dato": dato, "skoler": ut, "lister": {"ajg": bool(lister["ajg"])}}
+
+
+def lag_ajg_profil(lister):
+    """Fagfeltprofilen: hele AJG-lista og internasjonale handelshøyskoler (scripts/rangering/hent_ajg_profil.py).
+
+    Bare aggregater per AJG-fagfelt, som [alle, nivå 3+, nivå 4/4*]: antall tidsskrift på lista, artikler i
+    tidsskriftene per år (OpenAlex) og artikler per skole og år i AJG-tidsskrift (OpenAlex, hel telling).
+    Krever AJG-lista; ellers None."""
+    if not lister["ajg"]:
+        return None
+    oa = RANG / "openalex"
+    kart = json.loads((oa / "ajg-kilder.json").read_text(encoding="utf-8")) if (oa / "ajg-kilder.json").exists() else {}
+    tids = collections.defaultdict(lambda: [0, 0, 0])
+    kilde = {}  # OpenAlex-kilde → (nivå, fagfelt)
+    with open(LISTER / "ajg2024.csv", encoding="utf-8-sig", newline="") as fh:
+        for r in csv.DictReader(fh):
+            niva, fag = r.get("ajg2024"), r.get("fagfelt")
+            if niva not in AJG_NIVAER or not fag:
+                continue
+            t = tids[fag]; t[0] += 1; t[1] += niva in ("3", "4", "4*"); t[2] += niva in ("4", "4*")
+            for i in (r.get("issn"), r.get("eissn")):
+                i = issn(i)
+                kid = kart.get(f"{i[:4]}-{i[4:]}") if i else None
+                if kid:
+                    kilde.setdefault(kid, (niva, fag))
+    volum = {}
+    f = oa / "ajg-volum.json"
+    for fag, gr in (json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}).items():
+        for g, per in gr.items():
+            for y, n in per.items():
+                if y.startswith("_"):
+                    continue
+                v = volum.setdefault(y, {}).setdefault(fag, [0, 0, 0])
+                v[0] += n; v[1] += n if g in ("3", "4") else 0; v[2] += n if g == "4" else 0
+    f = oa / "hh-internasjonalt.json"
+    oppsett = json.loads(f.read_text(encoding="utf-8")) if f.exists() else {"skoler": []}
+    skoler = []
+    for s in oppsett["skoler"]:
+        aar = {}
+        for fy in sorted((oa / "hh-profil" / s["id"]).glob("*.json")):
+            d = json.loads(fy.read_text(encoding="utf-8"))
+            fag = collections.defaultdict(lambda: [0, 0, 0]); n_ajg = 0
+            for kid, n in d["kilder"].items():
+                if kid in kilde:
+                    niva, fg = kilde[kid]; x = fag[fg]
+                    x[0] += n; x[1] += n if niva in ("3", "4", "4*") else 0; x[2] += n if niva in ("4", "4*") else 0
+                    n_ajg += n
+            aar[str(d["aar"])] = {"n": d["n"], "ajg": n_ajg, "fag": dict(fag)}
+        if aar:
+            skoler.append({k: s[k] for k in ("id", "kort", "navn", "land", "gruppe")}
+                          | {"metode": "tekst" if s.get("tekst") else "institusjon", "aar": aar})
+    print(f"AJG-profil: {len(tids)} fagfelt, {len(kilde)} tidsskrift koblet til OpenAlex, volum {sorted(volum)[:1]}–{sorted(volum)[-1:]}, "
+          f"{len(skoler)} internasjonale skoler")
+    return {"tidsskrift": dict(tids), "volum": volum, "skoler": skoler, "grupper": oppsett.get("grupper") or {}}
 
 
 def lag_kontroll(skoler):
@@ -614,8 +716,10 @@ def main():
             "rangeringer": s.get("rangeringer") or s.get("internasjonale_rangeringer") or [],
             "enhetNotat": s.get("usikkerhet"), "kontrollUlikAvgrensning": s.get("kontrollUlikAvgrensning"), "dbhEnhet": spec_, "nva": s.get("nva"),
             "dbh": aar, "dbhInst": inst_aar, "artikler": per_aar, "topp": [x for x in topp if x["aar"] >= Y1 - 5][:600], "ajgFagfelt": fag,
-            "utdanning": {**utdanning(s.get("programprefiks") or [sid.split("_")[0] if sid == "ntnu_ok" else sid]),
-                          "siv": siv.get(sid.split("_")[0] if sid == "ntnu_ok" else sid)},
+            "utdanning": {**utdanning(s.get("programprefiks") or [sid.split("_")[0] if sid in ("ntnu_ok", "ntnu_hh") else sid]),
+                          "siv": siv.get(sid.split("_")[0] if sid in ("ntnu_ok", "ntnu_hh") else sid)},
+            # Variant av en annen enhet (ntnu_hh = bare NTNU Handelshøyskolen); vises bare der den velges i stedet for hovedenheten
+            "variantAv": s.get("variantAv"),
             # ABS/AJG 4*, 4 og 3 fra NHHs forskningsrapport (åtte skoler, 2020–2024), til vi har lov å koble mot lista
             "ajgNhh": (ajg_nhh or {}).get("skoler", {}).get(sid),
         })
@@ -629,6 +733,10 @@ def main():
             "lister": {**{k: bool(v) for k, v in lister.items()}, "ajgDelvis": ajg_delvis}, "skoler": ut_skoler,
             # HH NMBUs egne artikler med AJG-nivå (bare når AJG-lista finnes; kryptert som resten)
             "hhAjg": hh_liste("nmbu"),
+            # Fagfeltprofilen: AJG-lista per fagfelt og internasjonale handelshøyskoler (OpenAlex), bare aggregater
+            "ajgProfil": lag_ajg_profil(lister),
+            # Foreløpige tall for inneværende år (fanen «2026 foreløpig»), med forrige år på samme registreringsdato
+            "forelopig": lag_forelopig(skoler, lister),
             # Siteringsmål fra OpenAlex (fanen «Siteringer» og kartet): bare aggregater per enhet og år
             "sitering": sitering}
     if a.klartekst:
