@@ -1,7 +1,7 @@
 import { useMemo, useState, type ReactNode } from 'react';
 import {
   LayoutDashboard, BookOpen, Microscope, Home, Landmark, TrendingUp, GraduationCap, Users, Star, Globe2,
-  LayoutGrid, Menu, X, Coins, Archive, Lock, Baby, Briefcase, PanelLeftClose, PanelLeftOpen, Wallet, Building2, Layers, PieChart,
+  LayoutGrid, Menu, X, Coins, Archive, Lock, Baby, Briefcase, PanelLeftClose, PanelLeftOpen, Wallet, Building2, Layers, PieChart, MapPinned,
 } from 'lucide-react';
 import { MenyHint } from './MenyHint';
 import { LagetAv } from './LagetAv';
@@ -16,7 +16,7 @@ import { InnebygdContext } from '../innebygd';
  * som i «oversikt»; App.tsx leverer dem som children. Navigasjonen går via onNavigate(fakultet, visning).
  */
 
-export type ShellView = 'landing' | 'analyse' | 'emner' | 'markedsstatus' | 'studiebarometer' | 'gjennomforing' | 'studentene' | 'fagmiljo' | 'bolig' | 'sokergrunnlag' | 'okonomi' | 'inntekt' | 'arbeidsmarked' | 'intern' | 'rangering' | 'stat100' | 'konkurrenter' | 'uhr2';
+export type ShellView = 'landing' | 'analyse' | 'emner' | 'markedsstatus' | 'studiebarometer' | 'gjennomforing' | 'studentene' | 'fagmiljo' | 'bolig' | 'sokergrunnlag' | 'okonomi' | 'inntekt' | 'arbeidsmarked' | 'intern' | 'rangering' | 'stat100' | 'konkurrenter' | 'uhr2' | 'studiesentre';
 type Nav = (f: Faculty | null, view?: ShellView, gruppe?: string) => void;
 
 export const FAKULTETSMODULER: { view: ShellView; label: string; icon: typeof BookOpen; kunFor?: FacultyId }[] = [
@@ -29,6 +29,7 @@ export const FAKULTETSMODULER: { view: ShellView; label: string; icon: typeof Bo
   { view: 'studiebarometer', label: 'Studiebarometeret', icon: Star },
   { view: 'markedsstatus', label: 'Markedsstatus', icon: Globe2 },
   { view: 'konkurrenter', label: 'Konkurrentene', icon: Building2, kunFor: 'hh' },
+  { view: 'studiesentre', label: 'Studiesentre og eksamenssteder', icon: MapPinned, kunFor: 'hh' },
   { view: 'inntekt', label: 'Inntekt', icon: Coins },
   { view: 'arbeidsmarked', label: 'Arbeidsmarkedet', icon: Briefcase },
   { view: 'intern', label: 'Opptak H26 (intern)', icon: Lock, kunFor: 'hh' },

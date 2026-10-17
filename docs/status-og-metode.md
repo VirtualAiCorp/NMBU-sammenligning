@@ -1345,3 +1345,49 @@ Feilen slo ut i HH → Opptak, gruppen «Entreprenørskap og innovasjon (master)
 - Kjørt for HH; bare `nord_mei` og `oslomet_mei` endret seg. Ingen andre fakulteter har delte programkoder (A2-kartleggingen).
 - De andre feilene i HH-programkartet (campuser, årsstudier, UiT Alta m.fl., se `data/marked/studiesteder/hh-campusfeil.json`)
   er ikke rettet.
+
+## 61. Studiesentre og eksamenssteder (Handelshøyskolen) (17.10.2026)
+
+Ny HH-modul «Studiesentre og eksamenssteder» (`?studiesentre`, eller `?studiesentre=<id>` for å åpne kortet for ett sted;
+`kilde/src/app/components/Studiesentre.tsx`, lastes lazy med Leaflet). Formålet er å finne samarbeidspartnere fra nord til
+sør som kan avvikle fysisk eksamen for nett- og deltidsstudentene, først valgemnet ECN181-B (skoleeksamen fra høsten 2027).
+Modulen ligger i gruppen «Marked og omverden» etter Konkurrentene og vises bare for HH.
+- **Datakjeden:** kartleggingen ligger i `data/marked/studiesentre/` (`nord.json`, `sor.json`, `campus.json`,
+  `ordninger.json`; rapporter i `docs/marked/studiesentre-{nord,sor,campus}.md`; skriptene i `skript/`, nå med stier
+  relativt til repoet i stedet for absolutte stier). `scripts/build-studiesentre.py` leser de fire filene og skriver
+  `kilde/public/studiesentre/data.json` (285 kB, stopper over 600 kB). Ingen nettkall.
+- **Sammenslåing:** fire universitetscampuser sto både i `sor.json` og `campus.json` (USN Hallingdal, HVL Haugesund,
+  Førde og Sogndal). De slås inn i campusposten med begge merknadene og kildene. Resultat: 204 steder (45 studiesentre,
+  144 campuser, 15 andre), 191 med koordinater. Steder med nøyaktige koordinater under 300 m fra hverandre lenkes som
+  «samme bygg eller rett ved».
+- **Kategori:** studiesenter og læringssenter = studiesenter; campus = campus; kunnskapspark, kompetansesenter,
+  voksenopplæring og annet = annet.
+- **Eksamensstatus på én skala:** «bekreftet for andre institusjoner» (13: ni USN-campuser, HiØ Halden, Campus Nord-Troms,
+  Studiesenteret Midt-Troms og Tynset), «avvikler eksamen (uklart for hvem)» (34; NTNU Trondheim og UiB er nedgradert hit
+  fordi de bare tar imot utvekslingsstudenter, og Kirkenes kompetansesenter fordi kilden er fra 2009; listen `NEDGRADER` i
+  skriptet), «ingen eksamen for eksterne» (9: seks HVL-campuser etter HVLs
+  eksamensside, UiA Kristiansand og Grimstad, HiØ Fredrikstad) og «ukjent» (148). For campusene avgjør `tarImotAndre`;
+  HVL-regelen gjelder alle HVL-campusene. For studiesentrene avgjør `eksamenFor` eller en tekst i merknaden (listen
+  `TEKST_BEKREFTER` i skriptet). null er ukjent, ikke nei.
+- **Øvrige felt:** landsdel fra fylket (Nord-Norge, Trøndelag, Vestlandet, Sørlandet, Østlandet; Telemark regnes til
+  Østlandet), avstand i luftlinje fra NMBU Ås (59,6664, 10,7681), pris der den er oppgitt (600 kr Midt-Troms, 650 kr
+  Kirkenes, 750 kr Nord-Troms, 2 500 kr pluss vakt hos USN; skriptet kontrollerer at beløpet står i kildeteksten), og
+  anbefaling: de 12 campusene (HVL Sogndal er tatt ut fordi HVL ikke tar imot eksterne) og reserven HiØ Halden fra
+  campusrapporten §5 pluss de tre studiesentrene som bekrefter
+  eksamen for andre, med begrunnelse.
+- **Personvern:** bare felles kontaktinformasjon. Skriptet stopper hvis en e-postadresse i noen av filene har formen
+  fornavn.etternavn@ og ikke står på hvitelisten (12 kontrollerte fellesadresser: USNs servicetorg, Karriere Innlandet
+  og FHS).
+- **Visningen:** ingress med nøkkeltall; Leaflet-kart med Kartverkets gråtonefliser (som §59), farge etter
+  eksamensstatus og form etter kategori (sirkel = campus, kvadrat = studiesenter, trekant = annet), større markør med
+  mørk kant for anbefalte, og stjerne for NMBU Ås; filtre for kategori, status, landsdel, fylke, «bare anbefalte» og
+  fritekstsøk; tabell sortert nord til sør eller etter avstand fra Ås; kort med adresse, felles kontakt, nettside,
+  eksamensinformasjon (for hvem, pris, digitalt system, lokaler), merknad, sikkerhet og kilder med lenker og dato;
+  seksjonene «Anbefalte samarbeidssteder» (HVL Sogndal og UiA Kristiansand er merket med at de sier nei til eksterne
+  og krever institusjonsavtale) og «Ordninger for eksamen et annet sted» (26 ordninger med vilkår, pris og kilde);
+  forbehold og kilder nederst. Kontrollert i `vite preview` på 1280 px (lys) og 334 px (mørk), uten vannrett rulling.
+- **Forbehold:** innhentingen er tidsavgrenset til 17.10.2026; studiesenteret.no er ikke lenger en kilde (nettverket ble
+  avviklet i 2019); prisene er det studentene betaler i dag, og en avtale med NMBU vil ha egne vilkår, så stedene bør
+  kontaktes direkte. Ingen KI-linjer i `build-ki-grunnlag.py` ennå.
+- **Oppdatering:** kjør skriptene i `data/marked/studiesentre/skript/` ved behov, deretter
+  `python3 scripts/build-studiesentre.py`.

@@ -42,6 +42,7 @@ export const MODUL_TEKST: Record<Exclude<ShellView, 'landing'>, string> = {
   studiebarometer: 'Studentenes vurdering, skala 1–5',
   markedsstatus: 'Styrepapirer hos konkurrentene',
   konkurrenter: 'Én konkurrent om gangen mot NMBU',
+  studiesentre: 'Samarbeidssteder for fysisk eksamen i hele landet',
   uhr2: 'UHR-kravet mot emnene, rettet versjon',
   arbeidsmarked: 'Lønn, ledighet og yrker',
   sokergrunnlag: 'Ungdomskull og videregående',
@@ -61,7 +62,7 @@ export const modul = (v: ShellView): Modul => FAKULTETSMODULER.find((m) => m.vie
 export const MODULGRUPPER: { tittel: string; views: ShellView[] }[] = [
   { tittel: 'Oversikt', views: ['landing'] },
   { tittel: 'Opptak og studenter', views: ['analyse', 'emner', 'uhr2', 'gjennomforing', 'studentene', 'studiebarometer'] },
-  { tittel: 'Marked og omverden', views: ['konkurrenter', 'markedsstatus', 'arbeidsmarked', 'sokergrunnlag', 'bolig'] },
+  { tittel: 'Marked og omverden', views: ['konkurrenter', 'studiesentre', 'markedsstatus', 'arbeidsmarked', 'sokergrunnlag', 'bolig'] },
   { tittel: 'Institusjonen', views: ['inntekt', 'fagmiljo', 'okonomi'] },
   { tittel: 'Intern', views: ['intern', 'rangering', 'stat100'] },
 ];

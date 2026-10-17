@@ -1,0 +1,315 @@
+{
+ "meta": {
+  "beskrivelse": "Ordninger for å ta eksamen et annet sted enn ved egen institusjon, og institusjoner som avvikler eksamen for andre. Grunnlag for NMBUs vurdering av samarbeidssteder for fysisk eksamen.",
+  "hentet": "2026-10-17",
+  "antall": 26,
+  "felt": {
+   "pris": "Pris eller kompensasjon slik kilden oppgir den; null når ikke oppgitt"
+  }
+ },
+ "ordninger": [
+  {
+   "institusjon": "Nasjonalt (UH-sektoren)",
+   "ordning": "Ingen felles nasjonal ordning for «eksamen ved annen institusjon»",
+   "beskrivelse": "Kartleggingen fant ingen nasjonal tjeneste eller avtale der universiteter og høgskoler avvikler eksamen for hverandres studenter. Hver institusjon regulerer eksamenssted i egen studie- og eksamensforskrift, og hovedregelen er overalt at institusjonen selv fastsetter eksamenssted. Der det finnes åpninger, er de søknadsbaserte, for enkeltstudenter, og studenten dekker kostnadene.",
+   "vilkår": "Avhenger av institusjonen, se postene under.",
+   "pris": null,
+   "kilde": [
+    "https://lovdata.no/forskrift/2020-06-26-1617/§21",
+    "https://lovdata.no/dokument/SF/forskrift/2024-06-19-1643",
+    "https://www.usn.no/getfile.php/13530009-1774344760/usn.no/om_USN/Regelverk/Merknader%20til%20forskrift%20om%20studier%20og%20eksamen%20ved%20USN.pdf"
+   ],
+   "hentet": "2026-10-17"
+  },
+  {
+   "institusjon": "Sikt (Kunnskapssektorens tjenesteleverandør)",
+   "ordning": "Felles avtale om digitalt eksamenssystem (WISEflow fra UNIwise)",
+   "beskrivelse": "Sikt valgte WISEflow (UNIwise) som nytt felles system for digital eksamen etter en anskaffelse som ble avsluttet i februar 2025. Rammeavtalen løper i tre år fra levering til første institusjon (14. juli 2025), og Sikt er forhandler. Inspera fases ut. I oktober 2026 oppgir blant andre NMBU, BI, Kristiania, OsloMet, HVL, HiØ, HiMolde, INN, NLA, UiT, NHH, USN og Samisk høgskole WISEflow som eksamenssystem, og Nord bytter 1. september 2026. Avtalen gjelder systemet, ikke avvikling av eksamen for andre, men gjør det teknisk enklere: en NMBU-kandidat kan skrive i NMBUs WISEflow med egen PC og låst nettleser (LockDown Browser) i et lokale hos en annen institusjon.",
+   "vilkår": "Institusjonen må delta i Sikts tjeneste for digital eksamen og betale registreringsavgift.",
+   "pris": null,
+   "kilde": [
+    "https://www.sikt.no/tjenester/digital-eksamen/ny-avtale-om-system-digital-eksamen",
+    "https://sikt.no/aktuelt/ny-anskaffelse-av-system-digital-eksamen-gir-store-gevinster-universiteter-og-hoyskoler",
+    "https://www.nmbu.no/student/eksamen"
+   ],
+   "hentet": "2026-10-17"
+  },
+  {
+   "institusjon": "UiO og OsloMet",
+   "ordning": "Felles bruk av eksamenslokalet Silurveien 2 (Oslo)",
+   "beskrivelse": "OsloMet avvikler de fleste skriftlige skoleeksamener i Silurveien 2, der salene har stasjonære PC-er. UiO bruker også Silurveien 2 til skoleeksamen og har egne sider om eksamen der. Dette er et eksempel på at to institusjoner deler et eksamenslokale.",
+   "vilkår": "Intern avtale mellom institusjonene; vilkårene er ikke offentliggjort.",
+   "pris": null,
+   "kilde": [
+    "https://student.oslomet.no/skoleeksamen",
+    "https://www.uio.no/studier/eksamen/"
+   ],
+   "hentet": "2026-10-17"
+  },
+  {
+   "institusjon": "UiT Norges arktiske universitet",
+   "ordning": "Ekstern eksamensavvikling for enkeltstudenter",
+   "beskrivelse": "Skriftlige skoleeksamener skal avlegges i UiTs lokaler (forskriften § 21). Bare i helt spesielle tilfeller, for eksempel for studenter i fengsel, kan eksamen tas ved en annen institusjon. Økonomiske eller praktiske hensyn regnes ikke som gyldig grunn, og avslag kan ikke påklages. Eksamenstjenesten har en oversikt over kvalitetssikrede og godkjente eksamenssteder.",
+   "vilkår": "Søknad i TOPdesk innen 15. september (høst) eller 15. februar (vår). Den eksterne institusjonen må ha en kontaktperson som fyller ut skjemaet. Eksamen avvikles samme dato og tid som på UiT.",
+   "pris": "Studenten dekker selv eventuell leie av eksamenslokale og lønn til eksamensvakter og administrasjon hos den eksterne institusjonen. Beløpet er ikke oppgitt.",
+   "kilde": [
+    "https://en.uit.no/exams",
+    "https://uit.no/eksamen",
+    "https://uit.no/utdanning/forvaltning"
+   ],
+   "hentet": "2026-10-17"
+  },
+  {
+   "institusjon": "UiT Norges arktiske universitet",
+   "ordning": "Desentralisert eksamen ved egne studiesteder, studiesentre og leide lokaler",
+   "beskrivelse": "Ved undervisning utenfor campus kan UiT avvikle eksamen desentralisert. Det skal avklares før tilbudet starter. UiT oppgir disse eksamensstedene: Tromsø, Alta, Kirkenes, Hammerfest, Harstad, Narvik, Bodø (Torggården), Mo i Rana, Svalbard, Oslo (MEET Ullevaal kurs- og konferansesenter), Finnsnes (Studiesenteret Midt-Troms AS) og Storslett (Campus Nord-Troms AS, Halti næringshage). På Storslett avvikles eksamen «i lokal regi av Campus Nord-Troms AS».",
+   "vilkår": "Fakultetet avgjør dette for hvert studietilbud. Studentene finner eksamenssted i Studentweb.",
+   "pris": "Ikke oppgitt av UiT. Nord-Troms studiesenter krever egenandel fra studenten (se egen post).",
+   "kilde": [
+    "https://uit.no/eksamen",
+    "https://uit.no/utdanning/forvaltning"
+   ],
+   "hentet": "2026-10-17"
+  },
+  {
+   "institusjon": "Nord-Troms studiesenter (Campus Nord-Troms, Storslett)",
+   "ordning": "Lokal eksamen for høgskoler og universiteter",
+   "beskrivelse": "Studiesenteret avvikler lokal eksamen. UiT er det navngitte eksempelet, og senteret kan også arrangere eksamen i nettstudier det ikke samarbeider om, hvis institusjonen godtar det. Ansvaret for eksamen ligger hos institusjonen.",
+   "vilkår": "Studenten må melde seg til eksamen på riktig sted innen institusjonens frister. NTSS følger UiTs avmeldingsfrister (15. april og 1. november).",
+   "pris": "Egenandel til studiesenteret på 500 kr per eksamen for emner senteret annonserer og 800 kr for andre emner. I tillegg kan studiestedet (institusjonen) kreve egen avgift.",
+   "kilde": [
+    "https://ntss.custompublish.com/eksamen.388136.no.html"
+   ],
+   "hentet": "2026-10-17"
+  },
+  {
+   "institusjon": "Nord universitet",
+   "ordning": "Eksamenssted følger undervisningssted; valg mellom undervisningssteder",
+   "beskrivelse": "Eksamenssted følger normalt undervisningsstedet. I emner med undervisning på flere studiesteder kan fakultetet la studentene velge mellom dem. I emner med bare digital undervisning og en vurdering som krever oppmøte står eksamensstedet eller -stedene i emnebeskrivelsen. For bidrags- og oppdragsfinansierte studier kan det avtales egne regler. Studentweb viser eventuelle muligheter til å velge eksamenssted.",
+   "vilkår": "Forskrift om studier og eksamen ved Nord universitet § 7-7 (2).",
+   "pris": null,
+   "kilde": [
+    "https://lovdata.no/dokument/SF/forskrift/2024-06-19-1643",
+    "https://www.nord.no/en/student/examinations-and-assessment/examination-registration-and-withdrawal"
+   ],
+   "hentet": "2026-10-17"
+  },
+  {
+   "institusjon": "NTNU",
+   "ordning": "Ingen eksamen på tvers av campusbyer eller ved andre læresteder",
+   "beskrivelse": "NTNU tilbyr av kapasitets- og ressurshensyn ikke eksamen på tvers av campusbyene Trondheim, Gjøvik og Ålesund. Eksamen avvikles i byen emnet hører til. På spørsmålet om eksamen kan avlegges ved et annet lærested, svarer kunnskapsbasen «Nei».",
+   "vilkår": "Unntak for nett- og fleksible studier ved NTNU i Gjøvik (egen post).",
+   "pris": null,
+   "kilde": [
+    "https://i.ntnu.no/wiki/-/wiki/Norsk/Eksamen+-+Ofte+stilte+sp%C3%B8rsm%C3%A5l+for+studenter"
+   ],
+   "hentet": "2026-10-17"
+  },
+  {
+   "institusjon": "NTNU i Gjøvik",
+   "ordning": "Skriftlig dagseksamen utenfor campus (nett- og fleksible utdanninger)",
+   "beskrivelse": "Studenter i nett- og fleksible utdanninger ved NTNU i Gjøvik kan søke om å ta skoleeksamen ved et annet universitet, en høgskole, et offentlig studiesenter eller eventuelt en ambassade. NTNU-lokaler, private bedrifter og egen arbeidsplass godkjennes ikke. Eksamensansvarlig på stedet må godkjennes av NTNU og mottar oppgaven senest dagen før eksamen. Papireksamen og digital eksamen med tredjepartsprogramvare må tas på campus.",
+   "vilkår": "Bostedet (semesteradressen) må ligge mer enn 200 km fra Gjøvik. Søknaden må ha bekreftelse fra eksamensstedet og sendes innen 1. september (høst) eller 1. februar (vår). Eksamen avvikles samtidig med eksamen i Gjøvik.",
+   "pris": "Administrasjonsavgift til NTNU på 1 500 kr per eksamen. I tillegg betaler studenten lokale kostnader som eksamensvakt og porto.",
+   "kilde": [
+    "https://i.ntnu.no/wiki/-/wiki/Norsk/Skriftlig+dagseksamen+utenfor+campus"
+   ],
+   "hentet": "2026-10-17"
+  },
+  {
+   "institusjon": "NTNU",
+   "ordning": "Fjerneksamen: NTNU avvikler eksamen for utenlandske universiteter",
+   "beskrivelse": "NTNU-studenter som har vært på utveksling og av særskilte grunner ikke fikk tatt eksamen ved det utenlandske lærestedet, kan ta den skriftlige eksamenen ved NTNU. Det gjelder også innreisende utvekslingsstudenter. NTNU fungerer da som eksamenssted for en annen institusjon.",
+   "vilkår": "Søknad senest 10 virkedager før eksamen. Bare skriftlig eksamen. Hverdager 8. januar–28. februar og 21. august–30. september, kl. 09–19 norsk tid. Må være avklart med den utenlandske institusjonen.",
+   "pris": "Ikke oppgitt.",
+   "kilde": [
+    "https://i.ntnu.no/wiki/-/wiki/Norsk/Eksamen+fra+utenlandsk+universitet+-+fjerneksamen"
+   ],
+   "hentet": "2026-10-17"
+  },
+  {
+   "institusjon": "Universitetet i Sørøst-Norge (USN)",
+   "ordning": "Annet eksamenssted for USN-studenter",
+   "beskrivelse": "I særlige tilfeller kan studenten få dispensasjon til å ta eksamen et annet sted enn der den ordinært avvikles. Med annet eksamenssted menes normalt en annen høyskole, et annet universitet, en ambassade eller en annen USN-campus, i særskilte tilfeller en videregående skole. Egen arbeidsplass godtas ikke, med unntak for studenter på båt eller offshore.",
+   "vilkår": "Søknadsfrist 15. oktober (høst) og 15. mars (vår). Godkjennes som hovedregel ikke ved mindre enn to timers reisevei med offentlig transport. Studenten må selv avtale med den eksterne institusjonen. Utenfor Norge gjennomføres eksamen på norsk tid.",
+   "pris": "1 800 kr per eksamen til USN, pluss eventuelle kostnader det andre eksamensstedet krever. Ved en annen USN-campus også kostnader til ekstra eksamensvakt.",
+   "kilde": [
+    "https://www.usn.no/getfile.php/13530009-1774344760/usn.no/om_USN/Regelverk/Merknader%20til%20forskrift%20om%20studier%20og%20eksamen%20ved%20USN.pdf"
+   ],
+   "hentet": "2026-10-17"
+  },
+  {
+   "institusjon": "Universitetet i Sørøst-Norge (USN)",
+   "ordning": "USN som eksamenslokale for studenter ved andre institusjoner",
+   "beskrivelse": "Studenter ved andre utdanningsinstitusjoner kan søke om å avlegge eksamen ved USN. USN er den eneste institusjonen i kartleggingen som har fastsatt en pris for dette i forskriften. Forskriften skiller ikke mellom campusene (Bø, Drammen, Hallingdal, Kongsberg, Notodden, Porsgrunn, Rauland, Ringerike og Vestfold). Søknaden kan avslås.",
+   "vilkår": "Søknad. Avgiften og vaktkostnadene skal som hovedregel være betalt før eksamen.",
+   "pris": "2 500 kr per eksamen per student, pluss eventuelle kostnader til eksamensvakt.",
+   "kilde": [
+    "https://www.usn.no/getfile.php/13530009-1774344760/usn.no/om_USN/Regelverk/Merknader%20til%20forskrift%20om%20studier%20og%20eksamen%20ved%20USN.pdf"
+   ],
+   "hentet": "2026-10-17"
+  },
+  {
+   "institusjon": "Universitetet i Innlandet (INN)",
+   "ordning": "Skoleeksamen for nettstudenter på egne studiesteder; ingen søknad om annet sted",
+   "beskrivelse": "Nettbasert årsstudium i bedriftsøkonomi har skriftlige skoleeksamener med oppmøte på et av INNs studiesteder i Innlandet (siden nevner Rena, Lillehammer og Kongsvinger). Studentene kan ikke søke om å ta skriftlig eksamen et annet sted, jf. forskriften § 6-1 (4). Fra høsten 2027 kan det bli flere skoleeksamener med oppmøte.",
+   "vilkår": "Eksamen avlegges der og når universitetet bestemmer.",
+   "pris": null,
+   "kilde": [
+    "https://www.inn.no/studier/vare-studier/arsstudium-i-bedriftsokonomi---nettbasert/"
+   ],
+   "hentet": "2026-10-17"
+  },
+  {
+   "institusjon": "OsloMet",
+   "ordning": "Eksamen utenfor OsloMet for toppidrettsutøvere",
+   "beskrivelse": "Ifølge OsloMets side om tilrettelegging for toppidrettsutøvere kan studenter med dokumentert status fra Olympiatoppen få ta ny eller utsatt eksamen ved en annen norsk utdanningsinstitusjon eller i regi av Olympiatoppen. Utover dette fant kartleggingen ingen generell ordning. Innholdet er hentet fra søkemotorens utdrag, fordi siden svarte 403 ved direkte henting 17.10.2026.",
+   "vilkår": "Søknad senest én måned før eksamen. Studenten avtaler selv eksternt eksamenssted med kontaktperson.",
+   "pris": "Ikke oppgitt.",
+   "kilde": [
+    "https://student.oslomet.no/tilrettelegging-eksamen-toppidrettsutovere"
+   ],
+   "hentet": "2026-10-17"
+  },
+  {
+   "institusjon": "Handelshøyskolen BI",
+   "ordning": "Valg av eksamenssted og eksamen utenom BIs studiesteder",
+   "beskrivelse": "BI-studenter kan i bestemte perioder endre eksamenssted i studentportalen («mine eksamener»). BI oppgir at det også er mulig å ta eksamen ved eksamenssteder utenom BIs studiesteder. Detaljerte regler og priser står i studentportalen, som krever innlogging.",
+   "vilkår": "Ifølge BIs forskrift kan studenten i særlige tilfeller søke om eksamen ved et eksternt sted i Norge eller i utlandet. Retningslinjene fastsettes av direktør for programkvalitet (gjengitt fra søkemotorens utdrag av forskriften).",
+   "pris": "Ikke offentlig oppgitt.",
+   "kilde": [
+    "https://www.bi.no/studere-ved-bi/eksamensinformasjon/",
+    "https://www.bi.no/studier-og-kurs/soknad-og-opptak/lover-og-forskrifter/"
+   ],
+   "hentet": "2026-10-17"
+  },
+  {
+   "institusjon": "Høyskolen Kristiania",
+   "ordning": "Desentralisert skoleeksamen for nettstudenter",
+   "beskrivelse": "Noen nettemner har skriftlig eksamen under tilsyn på campus. Ved oppmelding i Studentweb velger studenten eksamenssted: «On-campus Oslo», «On-campus Bergen» eller «Off-campus (kun søknad)», det vil si et annet, eksternt eksamenssted. Studenter i utlandet kan avtale eksamen med en privat arrangør eller ta skoleeksamen ved et norsk konsulat eller en ambassade. Eksamenssystemet er WISEflow.",
+   "vilkår": "Off-campus krever egen søknad etter oppmelding. Oppmeldingsfrist 1. april og 1. november.",
+   "pris": "Lokale kostnader ved eksternt eksamenssted dekker studenten selv. Beløpet er ikke oppgitt.",
+   "kilde": [
+    "https://www.kristiania.no/contentassets/4c370b506a0d453ea2c881c2425e213b/oppmelding-til-eksamen-for-nettstudenter-h26.pdf",
+    "https://www.kristiania.no/nettstudier/ofte-stilte-sporsmal/"
+   ],
+   "hentet": "2026-10-17"
+  },
+  {
+   "institusjon": "NMBU",
+   "ordning": "Digital hjemmeeksamen hvor som helst; ingen publisert ordning for skoleeksamen annet sted",
+   "beskrivelse": "NMBU oppgir at digital hjemmeeksamen kan tas hvor som helst, også i utlandet, men alltid på norsk tid. Skoleeksamen avvikles på campus Ås med romplassering i Studentweb. Kartleggingen fant ingen publisert NMBU-ordning for skoleeksamen ved et annet sted eller hos en annen institusjon. Eksamenssystemet er WISEflow.",
+   "vilkår": "Ikke aktuelt.",
+   "pris": null,
+   "kilde": [
+    "https://www.nmbu.no/student/eksamen"
+   ],
+   "hentet": "2026-10-17"
+  },
+  {
+   "institusjon": "NMBU",
+   "ordning": "Årsstudium i bærekraftig økonomi og ledelse (Samordna 192253, DBH KVU-BEDØK): hvor tas eksamen?",
+   "beskrivelse": "Studiet er helt nettbasert og har 1 962 registrerte høsten 2025 (DBH). Fra høsten 2026 har alle åtte emnene digital hjemmeeksamen eller annen digital vurdering. AOS100-B, AOS121-B, AOS238-B, BUS113-B og BUS134-B har 2–3 timers digital hjemmeeksamen på kveldstid, mens AOS135-B, AOS136-B, AOS229-B og BUS127-B har mappevurdering. Alle er bestått/ikke bestått. Valgemnet ECN181-B Bærekraftig økonomi (fra høsten 2027) har 2 timers skriftlig skoleeksamen uten hjelpemidler («Fysisk eksamen gjennomføres høsten 2027»). Emnesiden sier ikke hvor. Utdanning.no omtaler fortsatt «noe fysisk oppmøte på eksamen».",
+   "vilkår": "Alle 60 studiepoeng må tas ved NMBU.",
+   "pris": "Ingen ekstra eksamensavgift er oppgitt.",
+   "kilde": [
+    "https://www.nmbu.no/studier/studietilbud/andre/arsenhet-barekraftig-okonomi",
+    "https://www.nmbu.no/fakulteter/handelshoyskolen/oppbygning-og-gjennomforing-nettbasert-arsstudium-i-baerekraftig",
+    "https://www.nmbu.no/emne/BUS113-B",
+    "https://www.nmbu.no/emne/ECN181-B",
+    "https://www.nmbu.no/emne/AOS100-B",
+    "https://utdanning.no/utdanning/nmbu.no/baerekraftig_okonomi_og_ledelse",
+    "data/marked/studiesteder/studiesteder.json"
+   ],
+   "hentet": "2026-10-17"
+  },
+  {
+   "institusjon": "Universitetet i Agder (UiA)",
+   "ordning": "Ekstern eksamen for UiA-studenter; UiA avvikler ikke lenger eksamen for andre",
+   "beskrivelse": "UiA-studenter kan søke om å ta skriftlig skoleeksamen et annet sted, og må selv finne en ekstern kontaktperson som signerer skjemaet. Fra 1. januar 2025 tilbyr UiA ikke lenger generelt å avholde eksamen på campus. Utvekslingsstudenter med eksamen etter hjemreise kan fortsatt søke.",
+   "vilkår": "Frist 15. mars og 15. oktober (14 dager før for eksamener før disse datoene). Eksamen samtidig som på UiA, norsk tid. Søknad til post@uia.no.",
+   "pris": "Administrasjonsgebyr 700 kr i Norge og 1 000 kr i Europa og resten av verden. Utvekslingsstudenter med gyldig fravær er fritatt.",
+   "kilde": [
+    "https://www.uia.no/studier/for-studenter/eksamen/ekstern-eksamen.html"
+   ],
+   "hentet": "2026-10-17"
+  },
+  {
+   "institusjon": "Høgskolen i Østfold (HiØ)",
+   "ordning": "Ekstern eksamen for HiØ-studenter",
+   "beskrivelse": "Ved særskilte grunner kan HiØ-studenter søke om eksamen ved andre norske eller utenlandske høgskoler og universiteter, eller ved norske ambassader, konsulater og sjømannskirker.",
+   "vilkår": "Søknadsfrist 15. oktober (høst) og 1. april (vår).",
+   "pris": "Administrasjonsgebyr 700 kr per eksamen ved en annen norsk høyskole eller et annet universitet, og 1 000 kr i utlandet. Studenter ved Institutt for språk, litteratur og kultur er fritatt.",
+   "kilde": [
+    "https://www.hiof.no/studier/eksamen/Ekstern-eksamen/index.html"
+   ],
+   "hentet": "2026-10-17"
+  },
+  {
+   "institusjon": "Høgskolen i Østfold (HiØ)",
+   "ordning": "HiØ som eksamenssted for studenter fra andre læresteder",
+   "beskrivelse": "Studenter ved andre norske høgskoler og universiteter kan søke om å avlegge skriftlig eksamen ved HiØ. Campus Fredrikstad har ikke kapasitet til å ta imot studenter fra andre læresteder, så i praksis gjelder dette Halden.",
+   "vilkår": "Søknadsfrist 15. oktober (høst) og 1. april (vår), på HiØs skjema.",
+   "pris": "Ikke oppgitt på siden.",
+   "kilde": [
+    "https://www.hiof.no/studier/eksamen/Ekstern-eksamen/index.html"
+   ],
+   "hentet": "2026-10-17"
+  },
+  {
+   "institusjon": "Universitetet i Bergen (UiB)",
+   "ordning": "Ekstern eksamen for utvekslingsstudenter (UiB som eksamenssted)",
+   "beskrivelse": "Utvekslingsstudenter ved UiB, og norske studenter som kom hjem fra utveksling uten å ha tatt eksamen, kan ta en annen institusjons eksamen i UiBs lokaler med UiBs eksamensvakter. Ved papireksamen skanner Studieavdelingen besvarelsen og sender den til den eksterne institusjonen.",
+   "vilkår": "Studierett ved UiB på eksamensdagen. Søknad minst 4 uker før. Oppgaver må være hos UiB senest 3 dager før. Eksamen mandag–fredag kl. 9–16, ikke på helligdager. Kontakt: eksamen@uib.no.",
+   "pris": "Ikke oppgitt.",
+   "kilde": [
+    "https://www4.uib.no/for-studenter/utveksling/ekstern-eksamen-for-utvekslingsstudenter"
+   ],
+   "hentet": "2026-10-17"
+  },
+  {
+   "institusjon": "Universitetet i Bergen (UiB)",
+   "ordning": "Retningslinjer for ekstern skriftlig eksamen (ES2, 2015)",
+   "beskrivelse": "UiBs retningslinjer fra 2015 for eksterne eksamensarrangører godkjenner i Norge offentlige ungdomsskoler, videregående skoler, høgskoler og universiteter, og i utlandet normalt norske ambassader. Arrangøren skaffer eksamensvakter: 1 vakt for 1 kandidat, 2 vakter for 2–8 kandidater og 3 vakter for 8–16 kandidater. Vaktene møter 30 minutter før start. Oppgavene oppbevares i safe eller låst skap. Dokumentet beskriver papireksamen og er eldre, men viser hva en vertsinstitusjon må stille med.",
+   "vilkår": "Eksamensansvarlig og vakter må forstå norsk eller skandinavisk.",
+   "pris": null,
+   "kilde": [
+    "https://org.uib.no/mi/Videreutdanning/ES%202%20Retningslinjer%20for%20ekstern%20skriftlig%20eksamen_GEN%202015-06.pdf"
+   ],
+   "hentet": "2026-10-17"
+  },
+  {
+   "institusjon": "NLA Høgskolen",
+   "ordning": "Eksamen ved annet sted (desentralisert eksamen)",
+   "beskrivelse": "NLA-studenter kan søke om eksamen et annet sted enn studiestedet. NLA godkjenner primært andre universiteter og høgskoler i Norge, i enkelte tilfeller videregående skoler, og i utlandet blant annet ambassader og universiteter. Eksamensstedet må stille kvalifiserte eksamensvakter, følge NLAs regler og ikke ha familiær eller yrkesmessig tilknytning til studenten.",
+   "vilkår": "Frist 15. februar (vår) og 15. september (høst). Samme dato og tid som ved NLA. Ingen bindende avtale med stedet før søknaden er godkjent.",
+   "pris": "Administrasjonsgebyr 1 500 kr ved en annen høgskole og 500 kr ved en annen NLA-campus. I tillegg tar eksamensstedet betalt for plass og vakt, etter avtale.",
+   "kilde": [
+    "https://www.nla.no/for-studenter/eksamen/"
+   ],
+   "hentet": "2026-10-17"
+  },
+  {
+   "institusjon": "Høyskolen for ledelse og teologi (HLT)",
+   "ordning": "Desentralisert eksamen",
+   "beskrivelse": "HLT-studenter med mer enn tre timers reisevei kan ta skriftlig eksamen ved en annen offentlig institusjon med eksamensvakt, for eksempel en videregående skole, høyskole, et universitet, en kirke, sjømannskirken eller et norsk konsulat eller en ambassade. Studieadministrasjonen avtaler gjennomføringen med stedet.",
+   "vilkår": "Frist 15. september og 15. februar. Minst 2 vakter ved mer enn 3 studenter. Vaktene kan ikke være HLT-studenter eller nære slektninger.",
+   "pris": "Eksamensgebyr 800 kr per eksamen. Leie av lokale, vakt og administrasjonsgebyr betales direkte til eksamensstedet etter avtale.",
+   "kilde": [
+    "https://hlt.no/en/decentralized-exam/"
+   ],
+   "hentet": "2026-10-17"
+  },
+  {
+   "institusjon": "Ansgar høyskole",
+   "ordning": "Eksamen annet sted",
+   "beskrivelse": "I særlige tilfeller kan studenter søke om eksamen et annet sted. I Norge godkjennes universiteter, høyskoler og andre offentlig godkjente skoler, og i utlandet universiteter og norske utenriksstasjoner.",
+   "vilkår": "Søknad senest 6 uker før eksamen til eksamen@ansgarskolen.no, med kontaktperson ved stedet. Eksamen samtidig som ved Ansgar.",
+   "pris": "Kandidaten dekker alle ekstra kostnader.",
+   "kilde": [
+    "https://ansgarhoyskole.no/student/eksamen/eksamen-annet-sted"
+   ],
+   "hentet": "2026-10-17"
+  }
+ ]
+}
