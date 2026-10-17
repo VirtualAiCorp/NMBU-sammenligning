@@ -32,6 +32,7 @@ import argparse
 import collections
 import http.client
 import json
+import os
 import re
 import sys
 import time
@@ -49,6 +50,23 @@ MAAL = "id,doi,publication_year,type,fwci,citation_normalized_percentile,cited_b
 PAUSE = 1.1  # sekunder mellom kall (høflig, og OpenAlex svarte 429 ved raske kall i tidligere test)
 
 
+def api_nokkel():
+    """OpenAlex-nøkkel fra miljøvariabelen OPENALEX_API_KEY eller linja OPENALEX_API_KEY=… i kilde/.env.local
+    (gitignored). Uten nøkkel: delt gratiskvote (1 000 kreditter per døgn per IP, ingen cursor-paging forbi side 1).
+    Med gratis nøkkel: egen kvote (1 USD per døgn ≈ 10 000 kreditter). Nøkkelen skrives aldri ut eller lagres i cachen."""
+    if os.environ.get("OPENALEX_API_KEY"):
+        return os.environ["OPENALEX_API_KEY"].strip()
+    env = ROOT / "kilde" / ".env.local"
+    for linje in env.read_text(encoding="utf-8").splitlines() if env.exists() else []:
+        if linje.startswith("OPENALEX_API_KEY="):
+            return linje.split("=", 1)[1].strip().strip('"') or None
+    return None
+
+
+def uten_nokkel(url):
+    return re.sub(r"([?&]api_key=)[^&]*", r"\1…", url)
+
+
 class TomForKreditt(Exception):
     pass
 
@@ -58,10 +76,13 @@ class Klient:
         self.reserve = reserve
         self.igjen = None
         self.brukt = 0
+        self.nokkel = api_nokkel()
+        print("OpenAlex: med API-nøkkel (egen kvote)." if self.nokkel else "OpenAlex: uten API-nøkkel (delt gratiskvote).")
 
     def hent(self, sti, params=None, kost=1):
         if self.igjen is not None and self.igjen - kost < self.reserve:
             raise TomForKreditt(f"{self.igjen} kreditter igjen (reserve {self.reserve})")
+        params = {**(params or {}), **({"api_key": self.nokkel} if self.nokkel else {})}
         url = API + sti + ("?" + urllib.parse.urlencode(params, safe=":|,/") if params else "")
         for forsok in range(5):
             try:
@@ -79,7 +100,8 @@ class Klient:
                     time.sleep(PAUSE)
                     return None
                 if e.code in (401, 402, 403):
-                    raise SystemExit(f"OpenAlex svarte {e.code} ({url[:120]}): API-et krever trolig nøkkel/betaling for dette. Stopper.")
+                    raise SystemExit(f"OpenAlex svarte {e.code} ({uten_nokkel(url)[:160]}): "
+                                     + ("sjekk at OPENALEX_API_KEY er riktig og aktivert (lenken i e-posten)." if self.nokkel else "API-et krever trolig nøkkel for dette (se api_nokkel()).") + " Stopper.")
                 if e.code == 429:
                     vent = int(e.headers.get("Retry-After") or 0)
                     rest = e.headers.get("x-ratelimit-remaining")

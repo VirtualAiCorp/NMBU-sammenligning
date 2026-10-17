@@ -39,7 +39,10 @@ python3 scripts/rangering/hent_ajg_profil.py skoler        # internasjonale hand
 - **Kreditter:** OpenAlex gir 1 000 kreditter per døgn uten nøkkel (oktober 2026; nullstilles ved midnatt UTC). Et
   listekall koster 1, et søk 10, enkeltoppslag 0. Skriptet stopper med en reserve (`--reserve`, standard 40) og kan
   kjøres videre neste døgn: det som er hentet, hentes ikke på nytt (bruk `--refresh` for å hente på nytt).
-  Ingen e-postadresse eller nøkkel sendes. Svarer API-et 401/402/403, stopper skriptet.
+  Med gratis API-nøkkel (openalex.org/settings/api) får vi egen kvote (1 USD per døgn ≈ 10 000 kreditter) og cursor-paging:
+  legg linja `OPENALEX_API_KEY=…` i `kilde/.env.local` (gitignored), eller sett miljøvariabelen. Skriptene sender den som
+  `api_key`, skriver aldri ut nøkkelen og lagrer den ikke i cachen. Uten nøkkel brukes den delte gratiskvoten.
+  Svarer API-et 401/402/403, stopper skriptet.
 - **Oppdatering:** siteringene endrer seg hele tiden. Slett `norge-doi.json`, `tittel/` og `norden/` for å hente ferske tall.
 - **Ny nordisk enhet:** legg den i `enheter-norden.json` (samme id som i `../norden/<land>.json`) og kjør
   `hent_openalex.py norden --enhet <id>`.
