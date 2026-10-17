@@ -1,10 +1,10 @@
 import type { ReactNode } from 'react';
-import { BookOpen, Building2, Trees, Atom, Leaf, FlaskConical, TreePine, Lock, PawPrint, Users, Home, Landmark, LayoutGrid, Baby, Wallet, GraduationCap } from 'lucide-react';
+import { BookOpen, Building2, Trees, Atom, Leaf, FlaskConical, TreePine, Lock, PawPrint, Users, Home, Landmark, LayoutGrid, Baby, Wallet, GraduationCap, PieChart } from 'lucide-react';
 import { FACULTY_META as FACULTIES, FACULTY_IDS, type FacultyId } from '../data/facultyMeta';
 import { LagetAv } from './LagetAv';
 import { Forsidenotis } from './Forsidenotis';
 
-export type Faculty = 'hh-figma' | FacultyId | 'nmbu-emner' | 'nmbu-fagmiljo' | 'nmbu-bolig' | 'nmbu-okonomi' | 'nmbu-oppsett' | 'nmbu-sokergrunnlag' | 'nmbu-okonomi-drift' | 'nmbu-utdanning';
+export type Faculty = 'hh-figma' | FacultyId | 'nmbu-marked' | 'nmbu-emner' | 'nmbu-fagmiljo' | 'nmbu-bolig' | 'nmbu-okonomi' | 'nmbu-oppsett' | 'nmbu-sokergrunnlag' | 'nmbu-okonomi-drift' | 'nmbu-utdanning';
 
 interface Props {
   onSelect: (faculty: Faculty) => void;
@@ -113,6 +113,25 @@ export function FacultyLanding({ onSelect }: Props) {
             </button>
           ))}
         </div>
+
+        {/* Markedet (hele markedet, øverst blant sidene for hele NMBU) */}
+        <button
+          onClick={() => onSelect('nmbu-marked')}
+          className="w-full rounded-2xl p-6 text-left transition-all mb-8 flex items-center gap-5"
+          style={{ backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)', boxShadow: '0 2px 8px rgba(2,92,79,0.08)' }}
+          onMouseEnter={(e) => { (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 4px 16px rgba(2,92,79,0.16)'; (e.currentTarget as HTMLButtonElement).style.transform = 'translateY(-2px)'; }}
+          onMouseLeave={(e) => { (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 2px 8px rgba(2,92,79,0.08)'; (e.currentTarget as HTMLButtonElement).style.transform = 'translateY(0)'; }}
+        >
+          <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: 'var(--nmbu-green-4)' }}>
+            <PieChart className="w-5 h-5" style={{ color: 'var(--nmbu-green-dark)' }} />
+          </div>
+          <div>
+            <div style={{ fontFamily: "'Lora', serif", fontWeight: 500, fontSize: '20px', color: 'var(--nmbu-green-dark)', marginBottom: 4 }}>Markedet</div>
+            <p style={{ fontSize: '13px', color: 'var(--nmbu-neutral-2)', lineHeight: 1.5 }}>
+              Hele markedet, ikke bare konkurrentene: NMBUs andel av førstevalgene per fagfelt og institusjon, alle program med søkere, plasser og studieresultater, og bachelor- og masterlandskapet i økonomi. Samordna og DBH 2021–2026.
+            </p>
+          </div>
+        </button>
 
         {/* Alle emner ved NMBU */}
         <button

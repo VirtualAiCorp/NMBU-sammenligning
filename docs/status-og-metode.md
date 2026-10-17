@@ -1248,3 +1248,49 @@ karakterene til alle på emnet. Bygger på mulighetsvurderingen i `docs/uhr-gjen
   studierett er bare med i «alle» (HVL Bergen avviker sterkt: ØA-stryk 3,5 % mot 16,1 % i kjernen); skjerming; DBH har
   ca. ett års etterslep; ONH mangler i DBH-cachen; NTNU Gjøvik/Ålesund lå under felleskoden BØA i 2022–2024 (tatt med via
   NTNUs koder, emnekodene skiller campusene); Nord Bodø/Steinkjer, USN og BI er slått sammen over campuser.
+
+## 58. Markedet: hele markedet, ikke bare konkurrentene (17.10.2026)
+
+Ny NMBU-side «Markedet» (Faculty-id `nmbu-marked`, lenke `?marked` eller `?marked=oversikt|program|okonomi`), øverst i
+NMBU-sidelista i alle tre oppsettene (`FacultyLanding.tsx`, `NMBU_SIDER` i `AppShells.tsx` og `arbeidsflate/navigasjon.ts`).
+Komponentene ligger i `kilde/src/app/components/marked/` (`Markedet.tsx`, `MarkedOversikt.tsx`, `MarkedProgram.tsx`,
+`MarkedOkonomi.tsx`, `felles.tsx`) og lastes lazy. Fanen holdes i adressen mens siden er åpen.
+- **Datakjeden:** kartleggingene i `data/marked/` (rapporter i `docs/marked/`) → `scripts/build-marked.py` →
+  `kilde/public/marked/*.json` (lastes med `fetch`, cachet løfte per fil). Skriptet leser bare de ferdige filene, gjør ingen
+  nettkall og stopper hvis en fil blir over 1,5 MB, hvis markedsandelene avviker fra `nasjonal-katalog/marked.json`, eller hvis
+  et ledernavn fra handelshøyskoleprofilene havner i `okonomi.json`.
+- **Filene (17.10.2026, ca. 2,9 MB i alt):**
+  - `oversikt.json` (45 kB): fagfelt, institusjoner, førstevalg per fagfelt × institusjon × nivå (bachelor/årsstudium/femårig)
+    2021–2026 fra Samordna, møtte per fagfelt × institusjon × nivå 2021–2025 fra DBH 379 (med private og toårige mastere),
+    NMBUs årsstudier og koblingsstatistikk. Andelene, vinnere/tapere og bryteren gradsprogram/alle regnes i nettleseren.
+  - `program-<fagfelt>.json` (16 filer, største 387 kB): 1 675 Samordna-koder og 1 688 gradsprogram med bare lokalt opptak
+    (DBH 379 L, merket `lok`). Per år søkere, førstevalg, plasser, kvalifiserte, tilbud og poenggrenser (lokalt: møtt i stedet
+    for plasser/grenser), ledig 2026, status, og `sr` = studieresultater slått opp via `<inst>_<programkode>` (registrerte, nye
+    og kandidater 2019–2025, gjennomføring på normert tid for siste tre kull, frafall, +2 år, anslått inntekt med
+    `hyp`/`forelopig`, prikkede felt, og `delt` når flere Samordna-koder deler DBH-koden). 1 597 Samordna-koder og 1 665 lokale
+    program har studieresultater.
+  - `aggregater.json` (41 kB): kvartiler mellom program per NUS-faggruppe × DBH-nivå (gjennomføring, frafall, +2 år, inntekt
+    per registrert, registrerte), brukt til plasseringen i programkortet.
+  - `okonomi.json` (264 kB): bachelorlandskapet (A1, 234 rader), topp 15, sammendraget, masterlandskapet (A2, 194 rader med
+    opptakskrav, siviløkonom, skolepenger, akkreditering, gjennomføring) og profilene av 19 økonomimiljøer (A3) **uten ledelse,
+    styresaker og strategitekst** (navnene er uavklarte).
+- **Visningen:** *Oversikt* (NMBUs andel over tid i tre varianter, institusjonstabell med endring 2021–2026, fagfelttabell,
+  DBH-linsen med private). Bryteren skiller gradsprogram fra årsstudier: i økonomi og administrasjon 2026 har NMBU 1 392
+  førstevalg (5,01 %), men 986 av dem er årsstudiet 192253; gradsprogrammene alene gir 406 (1,46 % av alle førstevalg i feltet,
+  2,28 % av gradsmarkedet). *Program* (søk, filtre, sortering, 50 per side, programkort med tidsserier og kvartiler).
+  *Økonomi og administrasjon* (bachelor, master med boblediagram, nye/nedlagte, program HH-programkartet ikke dekker,
+  handelshøyskoleprofilene).
+- **Oppdatering:** kjør kartleggingene på nytt og deretter `python3 scripts/build-marked.py`:
+  - `sh data/marked/nasjonal-katalog/skript/kjor-alt.sh [--refresh]` (Samordna i april og juli, DBH i februar–mars);
+  - `python3 data/marked/studieresultater/skript/hent.py [--refresh] && python3 data/marked/studieresultater/skript/bygg.py`;
+  - bachelor: skriptene i `data/marked/bachelor-okonomi/skript/` (`hent_*.py`, `kobling.py`, `bygg.py`, `sammendrag.py`);
+  - master: `bygg_grunnlag.py`, `manuelt.py`, `bygg_programmer.py` i `data/marked/master-okonomi/`;
+  - profilene: `dbh_hent.py`, `nfr_hent.py`, `bygg_profiler.py` i `data/marked/handelshoyskoler/`.
+  Rådata-cachen `data/marked/*/kilder/` (~40 MB) er lagt i `.gitignore`.
+- **Kjente hull:** DBH 2026 (347 høst, 370, 379) er ikke publisert, så DBH-linsen og lokalt opptak slutter i 2025 og 57 nye
+  Samordna-koder mangler DBH-kobling; prikking i DBH (minimumstall); finansieringsomleggingen fra 2023-produksjonen (beløp før og
+  etter kan ikke sammenlignes); inntekt for private er hypotetisk; søkere er søknader, ikke personer; lokale førstevalg kan ikke
+  summeres med Samordna; NUS-fagfeltene er ikke alltid intuitive (§5 i `docs/marked/nasjonal-katalog.md`); programtabellen
+  sorterer Samordna 2026 og lokalt 2025 sammen (lokale tall er merket «2025»); ingen KI-linjer («MARKEDET») i
+  `build-ki-grunnlag.py` ennå, og siden er ikke lagt inn i røyktestens liste. Feilene i HH-programkartet (MAENT delt mellom
+  Nord og OsloMet, UiT Alta, USN-campuser som peker på årsstudier m.fl.) vises bare som merknader og rettes separat.

@@ -1,0 +1,262 @@
+{
+ "hentet": "2026-10-17",
+ "antall": {
+  "dbhProgram": 9545,
+  "dbhAktive": 6734,
+  "soKoder": 1675,
+  "soAktive2026": 1369,
+  "fagskoleKoder": 916,
+  "institusjoner": 48,
+  "rader379UtenProgramI347": 0
+ },
+ "soInstTilDbh": {
+  "150": "1260",
+  "184": "1120",
+  "185": "1110",
+  "186": "1130",
+  "189": "1220",
+  "190": "8221",
+  "191": "1240",
+  "192": "1173",
+  "194": "1150",
+  "201": "1171",
+  "203": "0238",
+  "204": "1174",
+  "209": "1177",
+  "211": "0232",
+  "215": "1175",
+  "217": "1160",
+  "222": "1176",
+  "223": "0236",
+  "224": "0256",
+  "230": "8202",
+  "231": "0217",
+  "233": "1301",
+  "251": "8208",
+  "253": "8224",
+  "254": "8223",
+  "255": "8232",
+  "258": "8234"
+ },
+ "koblingSoDbh": {
+  "dbh370": 1585,
+  "ingen": 74,
+  "navn": 16
+ },
+ "kontrollMotManuelleKoblinger": {
+  "enig_dbh370": 192,
+  "uenig_dbh370": 10,
+  "fasit_uten_kobling": 1,
+  "enig_navn": 1
+ },
+ "avvikMotManuelle": [
+  {
+   "so": "186468",
+   "navn": "Økonomi og administrasjon",
+   "forventet": [
+    "1130:B-ØKADM-A"
+   ],
+   "fikk": [
+    "1130:B-ØKADMN"
+   ],
+   "kobling": "dbh370"
+  },
+  {
+   "so": "222097",
+   "navn": "Økonomi og administrasjon",
+   "forventet": [
+    "1176:ØKLEDR"
+   ],
+   "fikk": [
+    "1176:164"
+   ],
+   "kobling": "dbh370"
+  },
+  {
+   "so": "222625",
+   "navn": "Økonomi og administrasjon",
+   "forventet": [
+    "1176:BACHØKADK"
+   ],
+   "fikk": [
+    "1176:164"
+   ],
+   "kobling": "dbh370"
+  },
+  {
+   "so": "201345",
+   "navn": "Økonomi og administrasjon - siviløkonom",
+   "forventet": [
+    "1171:MASTØKAD5"
+   ],
+   "fikk": [
+    "1171:BACØKAD"
+   ],
+   "kobling": "dbh370"
+  },
+  {
+   "so": "204158",
+   "navn": "HR-ledelse",
+   "forventet": [
+    "1174:PK1"
+   ],
+   "fikk": []
+  },
+  {
+   "so": "217938",
+   "navn": "Byplanlegging",
+   "forventet": [
+    "1160:M-BYUTV5"
+   ],
+   "fikk": [
+    "1160:B-BYGG"
+   ],
+   "kobling": "dbh370"
+  },
+  {
+   "so": "217760",
+   "navn": "Datateknologi",
+   "forventet": [
+    "1160:M-DATATEK5"
+   ],
+   "fikk": [
+    "1160:B-DATA"
+   ],
+   "kobling": "dbh370"
+  },
+  {
+   "so": "217798",
+   "navn": "Kybernetikk og robotteknologi",
+   "forventet": [
+    "1160:M-KYB5"
+   ],
+   "fikk": [
+    "1160:B-ELEKTRO"
+   ],
+   "kobling": "dbh370"
+  },
+  {
+   "so": "194947",
+   "navn": "Ingeniør, geomatikk",
+   "forventet": [
+    "1150:BGEO"
+   ],
+   "fikk": [
+    "1150:BIGEOMAT"
+   ],
+   "kobling": "dbh370"
+  },
+  {
+   "so": "192948",
+   "navn": "Matvitenskap og ernæring",
+   "forventet": [
+    "1173:B-MAT"
+   ],
+   "fikk": [
+    "1173:M-MATVIT"
+   ],
+   "kobling": "dbh370"
+  },
+  {
+   "so": "192377",
+   "navn": "Miljø og naturressurser",
+   "forventet": [
+    "1173:B-MINA"
+   ],
+   "fikk": [
+    "1173:B-MILJØ"
+   ],
+   "kobling": "dbh370"
+  }
+ ],
+ "fagfeltKildeSo": {
+  "nus": 1601,
+  "so_utdtype": 58,
+  "so_omrade": 16
+ },
+ "fagfeltFordeling": {
+  "so": {
+   "idrett": 63,
+   "laerer": 302,
+   "humaniora": 306,
+   "samfunn": 135,
+   "it": 82,
+   "medier": 44,
+   "okonomi": 161,
+   "teknologi": 152,
+   "naturvitenskap": 106,
+   "kunst": 79,
+   "helse": 180,
+   "jus": 15,
+   "sikkerhet": 24,
+   "landbruk": 23,
+   "veterinaer": 3
+  },
+  "dbh": {
+   "samfunn": 835,
+   "landbruk": 80,
+   "uoppgitt": 231,
+   "humaniora": 1140,
+   "kunst": 478,
+   "laerer": 1927,
+   "medier": 146,
+   "jus": 94,
+   "sikkerhet": 460,
+   "okonomi": 1086,
+   "idrett": 197,
+   "it": 339,
+   "helse": 1431,
+   "teknologi": 645,
+   "naturvitenskap": 444,
+   "veterinaer": 12
+  }
+ },
+ "soUtenSokertall": [
+  "190652",
+  "190878",
+  "203157",
+  "203361",
+  "203437",
+  "203441",
+  "203541",
+  "203575",
+  "203623",
+  "203852",
+  "204452",
+  "204481",
+  "209378",
+  "209676",
+  "215229",
+  "215231",
+  "215959",
+  "222220",
+  "222319",
+  "222624",
+  "222687",
+  "222716",
+  "231066",
+  "253852",
+  "254245",
+  "254545",
+  "258542"
+ ],
+ "programfiler": [
+  "program/helse.json",
+  "program/humaniora.json",
+  "program/idrett.json",
+  "program/it.json",
+  "program/jus.json",
+  "program/kunst.json",
+  "program/laerer.json",
+  "program/landbruk.json",
+  "program/medier.json",
+  "program/naturvitenskap.json",
+  "program/okonomi.json",
+  "program/samfunn.json",
+  "program/sikkerhet.json",
+  "program/teknologi.json",
+  "program/uoppgitt.json",
+  "program/veterinaer.json",
+  "program/indeks.json"
+ ]
+}

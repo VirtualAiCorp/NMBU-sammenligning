@@ -1,7 +1,7 @@
 import { useMemo, useState, type ReactNode } from 'react';
 import {
   LayoutDashboard, BookOpen, Microscope, Home, Landmark, TrendingUp, GraduationCap, Users, Star, Globe2,
-  LayoutGrid, Menu, X, Coins, Archive, Lock, Baby, Briefcase, PanelLeftClose, PanelLeftOpen, Wallet, Building2, Layers,
+  LayoutGrid, Menu, X, Coins, Archive, Lock, Baby, Briefcase, PanelLeftClose, PanelLeftOpen, Wallet, Building2, Layers, PieChart,
 } from 'lucide-react';
 import { MenyHint } from './MenyHint';
 import { LagetAv } from './LagetAv';
@@ -41,6 +41,7 @@ export const FAKULTETSMODULER: { view: ShellView; label: string; icon: typeof Bo
 ];
 const NMBU_SIDER: { f: Faculty | null; label: string; icon: typeof BookOpen }[] = [
   { f: null, label: 'Oversikt', icon: LayoutDashboard },
+  { f: 'nmbu-marked', label: 'Markedet', icon: PieChart },
   { f: 'nmbu-emner', label: 'Alle emner ved NMBU', icon: BookOpen },
   { f: 'nmbu-fagmiljo', label: 'Fagmiljøet', icon: Microscope },
   { f: 'nmbu-sokergrunnlag', label: 'Søkergrunnlaget', icon: Baby },

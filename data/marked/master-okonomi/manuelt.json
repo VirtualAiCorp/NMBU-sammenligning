@@ -1,0 +1,773 @@
+{
+ "hentet": "2026-10-17",
+ "program": {
+  "nmbu_m_oa": {
+   "sivilokonom": true,
+   "opptakskrav": {
+    "snittkrav": "Ikke oppgitt på programsiden",
+    "bachelorkrav": "Bachelor i økonomi og administrasjon eller tilsvarende som dekker UHR-ØAs minimumskrav (120 sp økonomisk-administrative fag)",
+    "kilde": "https://www.nmbu.no/studier/master-2-aar/okonomi-og-administrasjon",
+    "hentet": "2026-10-17",
+    "poenggrense": "3,20 (2025)",
+    "studieplasser": 85
+   }
+  },
+  "nmbu_m_econ": {
+   "sivilokonom": false,
+   "opptakskrav": {
+    "snittkrav": "C",
+    "bachelorkrav": "Bachelor i samfunnsøkonomi eller tilsvarende (matematikk, statistikk, mikro og makro)",
+    "kilde": "https://www.nmbu.no/studier/master-2-aar/samfunnsokonomi-og-baerekraft",
+    "hentet": "2026-10-17",
+    "poenggrense": "C/3,00 (2025)",
+    "studieplasser": 25
+   },
+   "sprak": "engelsk"
+  },
+  "nmbu_m_ei": {
+   "sivilokonom": false,
+   "opptakskrav": {
+    "snittkrav": "C",
+    "bachelorkrav": "Alle bachelorgrader (breddemaster); motivasjonsbrev",
+    "kilde": "https://www.nmbu.no/studier/master-2-aar/entreprenorskap-og-innovasjon",
+    "hentet": "2026-10-17",
+    "poenggrense": "3,0 (2025)",
+    "studieplasser": 35
+   }
+  },
+  "nmbu_m_bioec": {
+   "sivilokonom": false,
+   "opptakskrav": {
+    "snittkrav": "Ikke oppgitt på programsiden",
+    "bachelorkrav": "Bachelor innen natur- eller samfunnsvitenskap med relevant spesialisering",
+    "kilde": "https://www.nmbu.no/studier/master-2-aar/biookonomi-biobasert-verdiskaping-og-forretningsutvikling",
+    "hentet": "2026-10-17",
+    "poenggrense": "3,0 (2025)",
+    "studieplasser": 35
+   }
+  },
+  "nmbu_m_eeg": {
+   "sivilokonom": false,
+   "opptakskrav": {
+    "snittkrav": "C",
+    "bachelorkrav": "Bachelor i økonomi, statsvitenskap, geografi, utviklingsstudier e.l. med minst to emner i økonomi, matematikk eller statistikk",
+    "kilde": "https://www.nmbu.no/studier/master-2-aar/samfunnsokonomi-og-miljoforvaltning",
+    "hentet": "2026-10-17",
+    "poenggrense": "C/3,00 (2025)",
+    "studieplasser": 35
+   },
+   "sprak": "engelsk"
+  },
+  "nmbu_m_gep": {
+   "sivilokonom": false,
+   "opptakskrav": {
+    "snittkrav": "C",
+    "bachelorkrav": "Som M-EEG",
+    "kilde": "https://www.nmbu.no/studier/master-2-aar/global-okonomi-og-politikk",
+    "hentet": "2026-10-17",
+    "poenggrense": "C/3,00 (2025)",
+    "studieplasser": 25
+   },
+   "sprak": "engelsk"
+  },
+  "nmbu_eutv": {
+   "sivilokonom": false,
+   "opptakskrav": {
+    "snittkrav": "C (2,5)",
+    "bachelorkrav": "Bachelor i økonomi, jus, eiendomsfag, planfag eller byggteknikk, og mikro- og makroøkonomi",
+    "kilde": "https://www.nmbu.no/studier/master-2-aar/eiendomsutvikling",
+    "hentet": "2026-10-17",
+    "poenggrense": "3,5 (2024, inkl. tilleggspoeng)",
+    "studieplasser": 30
+   },
+   "merknad": "Deltidsvarianten tas ikke opp fra 2025."
+  },
+  "nhh_moa": {
+   "sivilokonom": true,
+   "opptakskrav": {
+    "snittkrav": "Ingen fast grense oppgitt; søkerne rangeres etter karaktersnitt",
+    "bachelorkrav": "Bachelor i økonomi og administrasjon eller tilsvarende som dekker UHR-ØAs minimumskrav (120 sp økonomisk-administrative fag)",
+    "kilde": "https://nhh.no/studier/soknad-og-opptak/opptak-master-i-okonomi-og-administrasjon/",
+    "hentet": "2026-10-17",
+    "merknad": "NHHs egne bachelorkandidater er garantert plass (utdanning.no)."
+   }
+  },
+  "nhh_msc": {
+   "sivilokonom": null,
+   "opptakskrav": {
+    "snittkrav": "Om lag B (GPA)",
+    "bachelorkrav": "Internasjonalt opptak, egne krav per major",
+    "kilde": "https://utdanning.no/utdanning/nhh.no/masters_economics",
+    "hentet": "2026-10-17"
+   },
+   "sprak": "engelsk"
+  },
+  "nhh_mrr": {
+   "sivilokonom": null,
+   "opptakskrav": {
+    "snittkrav": "Ikke oppgitt på opptakssiden",
+    "bachelorkrav": "BØA eller fireårig siviløkonom, eller BRR med bestått revisoreksamen (C i hver), eller fagkrav",
+    "kilde": "https://www.nhh.no/studier/soknad-og-opptak/opptak-masterstudiet-i-rekneskap-og-revisjon-toarig-lop/",
+    "hentet": "2026-10-17"
+   }
+  },
+  "bi_mscmsbuh": {
+   "sivilokonom": true,
+   "opptakskrav": {
+    "snittkrav": "B (GPA 3,50 på ECTS-skala)",
+    "bachelorkrav": "Bachelor i økonomi og administrasjon, finans eller økonomi, eller bachelor med minst 80 sp i relevant fagområde; i tillegg programspesifikke krav",
+    "kilde": "https://www.bi.no/studier-og-kurs/soknad-og-opptak/opptakskrav/master-of-science/",
+    "hentet": "2026-10-17",
+    "merknad": "BIs generelle krav for masterstudier; programspesifikke krav står på engelske sider og er ikke lest."
+   },
+   "skolepenger": {
+    "perAar": 128200,
+    "internPerAar": 110700,
+    "kilde": "https://www.bi.no/studier-og-kurs/masterstudier/business/",
+    "hentet": "2026-09-24",
+    "merknad": "Fra data/hh/kilder/studieavgift.json (bi_moa)."
+   },
+   "merknad": "BI: «Du kan også kvalifisere for den norske profesjonstittelen siviløkonom» (programsiden)."
+  },
+  "bi_mscmsfeh": {
+   "opptakskrav": {
+    "snittkrav": "B (GPA 3,50 på ECTS-skala)",
+    "bachelorkrav": "Bachelor i økonomi og administrasjon, finans eller økonomi, eller bachelor med minst 80 sp i relevant fagområde; i tillegg programspesifikke krav",
+    "kilde": "https://www.bi.no/studier-og-kurs/soknad-og-opptak/opptakskrav/master-of-science/",
+    "hentet": "2026-10-17",
+    "merknad": "BIs generelle krav for masterstudier; programspesifikke krav står på engelske sider og er ikke lest."
+   },
+   "skolepenger": {
+    "perAar": 128200,
+    "internPerAar": 110700,
+    "kilde": "https://www.bi.no/studier-og-kurs/masterstudier/finance/",
+    "hentet": "2026-10-17"
+   }
+  },
+  "bi_mscmsqfh": {
+   "opptakskrav": {
+    "snittkrav": "B (GPA 3,50 på ECTS-skala)",
+    "bachelorkrav": "Bachelor i økonomi og administrasjon, finans eller økonomi, eller bachelor med minst 80 sp i relevant fagområde; i tillegg programspesifikke krav",
+    "kilde": "https://www.bi.no/studier-og-kurs/soknad-og-opptak/opptakskrav/master-of-science/",
+    "hentet": "2026-10-17",
+    "merknad": "BIs generelle krav for masterstudier; programspesifikke krav står på engelske sider og er ikke lest."
+   },
+   "skolepenger": {
+    "perAar": 128200,
+    "internPerAar": 110700,
+    "kilde": "https://www.bi.no/studier-og-kurs/masterstudier/quantitative-finance/",
+    "hentet": "2026-10-17"
+   }
+  },
+  "bi_mscmssfh": {
+   "opptakskrav": {
+    "snittkrav": "B (GPA 3,50 på ECTS-skala)",
+    "bachelorkrav": "Bachelor i økonomi og administrasjon, finans eller økonomi, eller bachelor med minst 80 sp i relevant fagområde; i tillegg programspesifikke krav",
+    "kilde": "https://www.bi.no/studier-og-kurs/soknad-og-opptak/opptakskrav/master-of-science/",
+    "hentet": "2026-10-17",
+    "merknad": "BIs generelle krav for masterstudier; programspesifikke krav står på engelske sider og er ikke lest."
+   },
+   "skolepenger": {
+    "perAar": 128200,
+    "internPerAar": 110700,
+    "kilde": "https://www.bi.no/studier-og-kurs/masterstudier/sustainable-finance/",
+    "hentet": "2026-10-17"
+   }
+  },
+  "bi_mscmsanh": {
+   "opptakskrav": {
+    "snittkrav": "B (GPA 3,50 på ECTS-skala)",
+    "bachelorkrav": "Bachelor i økonomi og administrasjon, finans eller økonomi, eller bachelor med minst 80 sp i relevant fagområde; i tillegg programspesifikke krav",
+    "kilde": "https://www.bi.no/studier-og-kurs/soknad-og-opptak/opptakskrav/master-of-science/",
+    "hentet": "2026-10-17",
+    "merknad": "BIs generelle krav for masterstudier; programspesifikke krav står på engelske sider og er ikke lest."
+   },
+   "skolepenger": {
+    "perAar": 135600,
+    "internPerAar": 117100,
+    "kilde": "https://www.bi.no/studier-og-kurs/masterstudier/business-analytics/",
+    "hentet": "2026-10-17"
+   }
+  },
+  "bi_mscmsdsh": {
+   "opptakskrav": {
+    "snittkrav": "B (GPA 3,50 på ECTS-skala)",
+    "bachelorkrav": "Bachelor i økonomi og administrasjon, finans eller økonomi, eller bachelor med minst 80 sp i relevant fagområde; i tillegg programspesifikke krav",
+    "kilde": "https://www.bi.no/studier-og-kurs/soknad-og-opptak/opptakskrav/master-of-science/",
+    "hentet": "2026-10-17",
+    "merknad": "BIs generelle krav for masterstudier; programspesifikke krav står på engelske sider og er ikke lest."
+   },
+   "skolepenger": {
+    "perAar": 135600,
+    "internPerAar": 117100,
+    "kilde": "https://www.bi.no/studier-og-kurs/masterstudier/data-science-for-business/",
+    "hentet": "2026-10-17"
+   }
+  },
+  "bi_mscmseih": {
+   "opptakskrav": {
+    "snittkrav": "B (GPA 3,50 på ECTS-skala)",
+    "bachelorkrav": "Bachelor i økonomi og administrasjon, finans eller økonomi, eller bachelor med minst 80 sp i relevant fagområde; i tillegg programspesifikke krav",
+    "kilde": "https://www.bi.no/studier-og-kurs/soknad-og-opptak/opptakskrav/master-of-science/",
+    "hentet": "2026-10-17",
+    "merknad": "BIs generelle krav for masterstudier; programspesifikke krav står på engelske sider og er ikke lest."
+   },
+   "skolepenger": {
+    "perAar": 128200,
+    "internPerAar": 110700,
+    "kilde": "https://www.bi.no/studier-og-kurs/masterstudier/innovation-and-entrepreneurship/",
+    "hentet": "2026-10-17"
+   }
+  },
+  "bi_mscmsloh": {
+   "opptakskrav": {
+    "snittkrav": "B (GPA 3,50 på ECTS-skala)",
+    "bachelorkrav": "Bachelor i økonomi og administrasjon, finans eller økonomi, eller bachelor med minst 80 sp i relevant fagområde; i tillegg programspesifikke krav",
+    "kilde": "https://www.bi.no/studier-og-kurs/soknad-og-opptak/opptakskrav/master-of-science/",
+    "hentet": "2026-10-17",
+    "merknad": "BIs generelle krav for masterstudier; programspesifikke krav står på engelske sider og er ikke lest."
+   },
+   "skolepenger": {
+    "perAar": 128200,
+    "internPerAar": 110700,
+    "kilde": "https://www.bi.no/studier-og-kurs/masterstudier/leadership-and-organisational-psychology/",
+    "hentet": "2026-10-17"
+   }
+  },
+  "bi_mscmsmah": {
+   "opptakskrav": {
+    "snittkrav": "B (GPA 3,50 på ECTS-skala)",
+    "bachelorkrav": "Bachelor i økonomi og administrasjon, finans eller økonomi, eller bachelor med minst 80 sp i relevant fagområde; i tillegg programspesifikke krav",
+    "kilde": "https://www.bi.no/studier-og-kurs/soknad-og-opptak/opptakskrav/master-of-science/",
+    "hentet": "2026-10-17",
+    "merknad": "BIs generelle krav for masterstudier; programspesifikke krav står på engelske sider og er ikke lest."
+   },
+   "skolepenger": {
+    "perAar": 128200,
+    "internPerAar": 110700,
+    "kilde": "https://www.bi.no/studier-og-kurs/masterstudier/strategic-marketing-management/",
+    "hentet": "2026-10-17"
+   }
+  },
+  "bi_mscmsrrh": {
+   "opptakskrav": {
+    "snittkrav": "B (GPA 3,50 på ECTS-skala)",
+    "bachelorkrav": "Bachelor i økonomi og administrasjon, finans eller økonomi, eller bachelor med minst 80 sp i relevant fagområde; i tillegg programspesifikke krav",
+    "kilde": "https://www.bi.no/studier-og-kurs/soknad-og-opptak/opptakskrav/master-of-science/",
+    "hentet": "2026-10-17",
+    "merknad": "BIs generelle masterkrav antatt; ikke bekreftet på programsiden for regnskap og revisjon."
+   },
+   "merknad": "Revisorgodkjenning krever C eller bedre i alle fag (programsiden)."
+  },
+  "bi_mscmsaeh": {
+   "merknad": "Tar ikke opp nye studenter; etterfølgeren er MSc in Business, major in Economics (data/hh/kilder/studieavgift.json)."
+  },
+  "bi_msc": {
+   "merknad": "Samlekode «Master of Science» uten søkere i DBH 379; trolig utveksling/overgangsstudenter. Holdt utenfor summene.",
+   "iSum": false
+  },
+  "ntnu_oamsc": {
+   "sivilokonom": true,
+   "opptakskrav": {
+    "snittkrav": "C",
+    "bachelorkrav": "BØA-planen av november 2018 (120 sp økadm, 102,5 sp i faggruppene)",
+    "kilde": "https://www.ntnu.no/studier/oamsc/opptak",
+    "hentet": "2026-10-17"
+   }
+  },
+  "ntnu_msivok5": {
+   "sivilokonom": true,
+   "opptakskrav": {
+    "snittkrav": "Samordna opptak (poenggrense)",
+    "bachelorkrav": "Generell studiekompetanse + R1 eller S1+S2 (MATRS)",
+    "kilde": "https://www.ntnu.no/studier/msivok5/opptak",
+    "hentet": "2026-10-17",
+    "studieplasser": 105
+   }
+  },
+  "ntnu_msok": {
+   "sivilokonom": false,
+   "opptakskrav": {
+    "snittkrav": "C (B-garanti)",
+    "bachelorkrav": "Bachelor med minst 90 sp samfunnsøkonomi inkl. metode",
+    "kilde": "https://www.ntnu.no/studier/msok/opptak",
+    "hentet": "2026-10-17",
+    "studieplasser": 25,
+    "merknad": "Siden sier at informasjonen gjelder 2023/2024."
+   }
+  },
+  "ntnu_mfinok": {
+   "sivilokonom": false,
+   "opptakskrav": {
+    "snittkrav": "C",
+    "bachelorkrav": "Bachelor med godkjent fordypning (BØA etter NRØA-plan forhåndsgodkjent)",
+    "kilde": "https://www.ntnu.no/studier/mfinok/opptak",
+    "hentet": "2026-10-17",
+    "studieplasser": 25
+   }
+  },
+  "ntnu_mrr": {
+   "sivilokonom": null,
+   "opptakskrav": {
+    "snittkrav": "C",
+    "bachelorkrav": "BØA, BRR eller tilsvarende (120 sp økadm etter UHR-planen)",
+    "kilde": "https://www.ntnu.no/studier/mrr/opptak",
+    "hentet": "2026-10-17"
+   }
+  },
+  "ntnu_mientre": {
+   "opptakskrav": {
+    "snittkrav": "Helhetsvurdering (karakterer, erfaring, motivasjon); intervju",
+    "bachelorkrav": "Ingeniørbachelor (MIENTRE)",
+    "kilde": "https://www.ntnu.no/studier/mientre/opptak",
+    "hentet": "2026-10-17",
+    "studieplasser": 35,
+    "merknad": "Om lag 35 studenter i året for begge retningene samlet."
+   }
+  },
+  "ntnu_mentre": {
+   "opptakskrav": {
+    "snittkrav": "Helhetsvurdering (karakterer, erfaring, motivasjon); intervju",
+    "bachelorkrav": "Realfaglig, humanistisk eller samfunnsvitenskapelig bachelor (MENTRE)",
+    "kilde": "https://www.ntnu.no/studier/mientre/opptak",
+    "hentet": "2026-10-17"
+   }
+  },
+  "ntnu_msmi": {
+   "opptakskrav": {
+    "snittkrav": "C",
+    "bachelorkrav": "Bachelor i ØA, markedsføring, innovasjon, entreprenørskap, ledelse e.l.",
+    "kilde": "https://utdanning.no/utdanning/ntnu.no/management_innovation_and_sustainable_business_development_-_masters_programme",
+    "hentet": "2026-10-17"
+   },
+   "sprak": "engelsk"
+  },
+  "ntnu_miids": {
+   "opptakskrav": {
+    "snittkrav": "C",
+    "bachelorkrav": "Bachelor i relevante fag (organisasjon/innovasjon, ØA, logistikk, cybersikkerhet m.m.)",
+    "kilde": "https://www.ntnu.no/studier/miids/opptak",
+    "hentet": "2026-10-17"
+   }
+  },
+  "ntnu_mentresam": {
+   "opptakskrav": {
+    "snittkrav": "C",
+    "bachelorkrav": "Bachelor med minst 80 sp samfunnsvitenskap, økadm eller annet relevant",
+    "kilde": "https://www.ntnu.no/studier/mentresam/opptak",
+    "hentet": "2026-10-17"
+   }
+  },
+  "ntnu_oamlt": {
+   "opptakskrav": {
+    "snittkrav": "C",
+    "bachelorkrav": "Ingeniørbachelor med matematikk og statistikk",
+    "kilde": "https://www.ntnu.no/studier/oamlt",
+    "hentet": "2026-10-17"
+   }
+  },
+  "ntnu_eiendom": {
+   "opptakskrav": {
+    "snittkrav": "Ikke oppgitt",
+    "bachelorkrav": "Tre år høyere utdanning med minst 80 sp relevante fag",
+    "kilde": "https://www.ntnu.no/studier/maeiendom/opptak",
+    "hentet": "2026-10-17"
+   }
+  },
+  "ntnu_860mib": {
+   "sivilokonom": true,
+   "merknad": "Programmet omtales som «MSc in International Business and Marketing (“Siviløkonom”)» på utdanning.no.",
+   "sprak": "engelsk"
+  },
+  "oslomet_masoa": {
+   "sivilokonom": true,
+   "opptakskrav": {
+    "snittkrav": "C",
+    "bachelorkrav": "BØA, BRR eller tilsvarende som oppfyller UHR-ØA-planen 2018",
+    "kilde": "https://student.oslomet.no/studier/-/studieinfo/programplan/MAS%C3%98A/2026/H%C3%98ST",
+    "hentet": "2026-10-17",
+    "studieplasser": 110,
+    "merknad": "Utdanning.no oppgir 110 plasser for «Økonomi og administrasjon – master» og 34 for «…– siviløkonom – master»; begge ser ut til å ligge under DBH-koden MASØA. Studieretningen regnskap og revisjon har eget opptak."
+   }
+  },
+  "uia_mastokad": {
+   "sivilokonom": true,
+   "opptakskrav": {
+    "snittkrav": "C (vektet)",
+    "bachelorkrav": "Bachelor i økonomi og administrasjon eller tilsvarende som dekker UHR-ØAs minimumskrav (120 sp økonomisk-administrative fag) (2018)",
+    "kilde": "https://utdanning.no/utdanning/uia.no/okonomi_og_administrasjon_-_sivilokonom_masterprogram",
+    "hentet": "2026-10-17"
+   }
+  },
+  "uia_mastrev": {
+   "sivilokonom": true,
+   "opptakskrav": {
+    "snittkrav": "Ikke oppgitt (C i alle emner kreves for revisorgodkjenning)",
+    "bachelorkrav": "Bachelor i økonomi og administrasjon eller tilsvarende som dekker UHR-ØAs minimumskrav (120 sp økonomisk-administrative fag)",
+    "kilde": "https://utdanning.no/utdanning/uia.no/regnskap_og_revisjon_-_sivilokonom_masterprogram",
+    "hentet": "2026-10-17"
+   }
+  },
+  "uia_mastokad5": {
+   "sivilokonom": true,
+   "opptakskrav": {
+    "snittkrav": "Samordna opptak (poenggrense)",
+    "bachelorkrav": "Generell studiekompetanse + R1 eller S1+S2",
+    "kilde": "utd_uia_no_okonomi_og_administrasjon___sivilokonom_5_arig_masterprogra",
+    "hentet": "2026-10-17",
+    "studieplasser": 100
+   }
+  },
+  "uia_m_shiftoko": {
+   "sivilokonom": null,
+   "merknad": "NUS-kode 741125 (siviløkonom) i DBH 347, men ingen registrerte studenter eller søkere på koden; trolig erstattet."
+  },
+  "uis_m_okad": {
+   "sivilokonom": true,
+   "opptakskrav": {
+    "snittkrav": "C",
+    "bachelorkrav": "BØA eller BRR, eller 120 sp økadm etter UHR-planen",
+    "kilde": "https://utdanning.no/utdanning/uis.no/okonomi_og_administrasjon_-_master",
+    "hentet": "2026-10-17"
+   }
+  },
+  "uis_m_regrev": {
+   "sivilokonom": null,
+   "opptakskrav": {
+    "snittkrav": "3,0 (C)",
+    "bachelorkrav": "Se utfyllende regler",
+    "kilde": "https://utdanning.no/utdanning/uis.no/regnskap_og_revisjon_-_master",
+    "hentet": "2026-10-17"
+   }
+  },
+  "nord_mabed": {
+   "sivilokonom": true,
+   "opptakskrav": {
+    "snittkrav": "C",
+    "bachelorkrav": "120 sp økadm etter UHR-planen",
+    "kilde": "https://utdanning.no/utdanning/nord.no/sivilokonom_master_i_okonomi_og_administrasjon",
+    "hentet": "2026-10-17"
+   }
+  },
+  "nord_msb5": {
+   "sivilokonom": true,
+   "opptakskrav": {
+    "snittkrav": "Samordna opptak (poenggrense)",
+    "bachelorkrav": "Generell studiekompetanse + MATRS",
+    "kilde": "https://utdanning.no/utdanning/nord.no/sivilokonom_master_i_okonomi_og_administrasjon_0",
+    "hentet": "2026-10-17",
+    "studieplasser": 15
+   }
+  },
+  "nord_maenm": {
+   "opptakskrav": {
+    "snittkrav": "C",
+    "bachelorkrav": "Bachelor i økadm eller samfunnsfag med minst 20 sp organisasjon/ledelse og 5 sp metode",
+    "kilde": "https://utdanning.no/utdanning/nord.no/master_i_baerekraftig_ledelse_og_arktiske_perspektiver",
+    "hentet": "2026-10-17"
+   }
+  },
+  "nord_maent": {
+   "opptakskrav": {
+    "snittkrav": "Ikke oppgitt; rangering etter karakterer",
+    "bachelorkrav": "Bachelor (180 sp) og ett av tre fordypningskrav",
+    "kilde": "https://www.nord.no/en/studies/study-plans/entrepreneurship-and-business-development-maent-masters-programme-autumn-2026",
+    "hentet": "2026-10-17"
+   }
+  },
+  "inn_moa": {
+   "sivilokonom": true,
+   "opptakskrav": {
+    "snittkrav": "C",
+    "bachelorkrav": "Bachelor i økonomi og administrasjon eller tilsvarende som dekker UHR-ØAs minimumskrav (120 sp økonomisk-administrative fag)",
+    "kilde": "https://utdanning.no/utdanning/inn.no/master_i_okonomi_og_ledelse_-_sivilokonom_-_hovedprofil_okonomistyring",
+    "hentet": "2026-10-17"
+   },
+   "merknad": "Hovedprofilene økonomistyring og markedsføringsledelse (Rena) er slått sammen; heltid og deltid."
+  },
+  "inn_moa_ba": {
+   "sivilokonom": true,
+   "opptakskrav": {
+    "snittkrav": "C",
+    "bachelorkrav": "Bachelor i økonomi og administrasjon eller tilsvarende som dekker UHR-ØAs minimumskrav (120 sp økonomisk-administrative fag)",
+    "kilde": "https://utdanning.no/utdanning/inn.no/master_i_okonomi_og_ledelse_-_sivilokonom_-_hovedprofil_business_analytics_0",
+    "hentet": "2026-10-17"
+   }
+  },
+  "uit_moa": {
+   "sivilokonom": true,
+   "opptakskrav": {
+    "snittkrav": "3,0 («sterk C»)",
+    "bachelorkrav": "120 sp økadm (90 sp obligatoriske + 30 sp videreføring)",
+    "kilde": "https://utdanning.no/utdanning/uit.no/okonomi_og_administrasjon_sivilokonom_-_master",
+    "hentet": "2026-10-17",
+    "studieplasser": 40
+   },
+   "merknad": "Heltid i Tromsø; deltid nett og samlinger i Alta/Harstad."
+  },
+  "uit_mrr": {
+   "opptakskrav": {
+    "snittkrav": "3,0 («ren C»)",
+    "bachelorkrav": "Fagkrav etter UHR-planen",
+    "kilde": "https://utdanning.no/utdanning/uit.no/regnskap_og_revisjon_-_master_0",
+    "hentet": "2026-10-17",
+    "studieplasser": 40
+   }
+  },
+  "uit_m_samfok": {
+   "sivilokonom": false,
+   "opptakskrav": {
+    "snittkrav": "2,5 («svak C»)",
+    "bachelorkrav": "Bachelor med samfunnsøkonomi",
+    "kilde": "https://utdanning.no/utdanning/uit.no/samfunnsokonomi_med_datavitenskap_-_master",
+    "hentet": "2026-10-17"
+   }
+  },
+  "uit_em_mba": {
+   "opptakskrav": {
+    "snittkrav": "C (2,5)",
+    "bachelorkrav": "Bachelor + yrkespraksis (erfaringsbasert)",
+    "kilde": "https://utdanning.no/utdanning/uit.no/strategisk_ledelse_og_okonomi_-_erfaringsbasert_master",
+    "hentet": "2026-10-17"
+   }
+  },
+  "hvl_msb": {
+   "sivilokonom": true,
+   "opptakskrav": {
+    "snittkrav": "C (hele bachelorgraden)",
+    "bachelorkrav": "Bachelor i økonomi og administrasjon eller tilsvarende som dekker UHR-ØAs minimumskrav (120 sp økonomisk-administrative fag)",
+    "kilde": "https://utdanning.no/utdanning/hvl.no/okonomi_og_administrasjon_sivilokonom",
+    "hentet": "2026-10-17"
+   }
+  },
+  "usn_masivokled": {
+   "sivilokonom": true,
+   "merknad": "Fire spesialiseringer (bedriftsøkonomisk analyse, innovasjon og entreprenørskap, markedsføringsledelse, strategi og ledelse), Hønefoss. Snittkrav ikke funnet."
+  },
+  "usn_siv5": {
+   "sivilokonom": true,
+   "opptakskrav": {
+    "snittkrav": "Samordna opptak (poenggrense)",
+    "bachelorkrav": "Generell studiekompetanse + MATRS",
+    "kilde": "https://utdanning.no/utdanning/usn.no/sivilokonom_-_5-arig",
+    "hentet": "2026-10-17",
+    "studieplasser": 40
+   }
+  },
+  "himolde_89": {
+   "sivilokonom": null,
+   "merknad": "Engelskspråklig (Master in Economics and Business Administration) ifølge utdanning.no. Snittkrav ikke funnet.",
+   "sprak": "engelsk"
+  },
+  "uio_svm2_econ": {
+   "sivilokonom": false,
+   "opptakskrav": {
+    "snittkrav": "C",
+    "bachelorkrav": "Bachelor med minst 80 sp fordypning fastsatt av programmet",
+    "kilde": "https://www.uio.no/english/studies/programmes/economics-master/admission/",
+    "hentet": "2026-10-17",
+    "studieplasser": 77
+   },
+   "sprak": "engelsk"
+  },
+  "uio_mnm2_ent": {
+   "opptakskrav": {
+    "snittkrav": "C (vektet)",
+    "bachelorkrav": "Bachelor med minst 80 sp fordypning fastsatt av programmet",
+    "kilde": "https://www.uio.no/studier/program/entreprenorskap-innovasjonsledelse/opptak/",
+    "hentet": "2026-10-17",
+    "studieplasser": 25
+   }
+  },
+  "uio_svm5_econ": {
+   "sivilokonom": false,
+   "opptakskrav": {
+    "snittkrav": "Samordna opptak (poenggrense)",
+    "bachelorkrav": "Generell studiekompetanse + R1 eller S1+S2",
+    "kilde": "https://utdanning.no/utdanning/uio.no/samfunnsokonomisk_analyse_master",
+    "hentet": "2026-10-17"
+   }
+  },
+  "uib_prof_sok": {
+   "sivilokonom": false,
+   "opptakskrav": {
+    "snittkrav": "Samordna opptak (poenggrense)",
+    "bachelorkrav": "Generell studiekompetanse + matematikkrav",
+    "kilde": "https://utdanning.no/utdanning/uib.no/samfunnsokonomi_profesjon",
+    "hentet": "2026-10-17",
+    "studieplasser": 22
+   }
+  },
+  "kristiania_min": {
+   "opptakskrav": {
+    "snittkrav": "Ikke oppgitt",
+    "bachelorkrav": "Bachelor (180 sp) med krav til fagområder",
+    "kilde": "https://www.kristiania.no/studier/master/innovasjonsledelse/",
+    "hentet": "2026-10-17"
+   },
+   "skolepenger": {
+    "perSemester": 58900,
+    "perAar": 117800,
+    "kilde": "https://www.kristiania.no/studier/master/innovasjonsledelse/",
+    "hentet": "2026-10-17"
+   }
+  },
+  "kristiania_ledelse": {
+   "opptakskrav": {
+    "snittkrav": "C (karaktersnitt minst 2,5)",
+    "bachelorkrav": "Bachelor (180 sp) med krav til fagområder",
+    "kilde": "https://www.kristiania.no/studier/master/ledelse/",
+    "hentet": "2026-10-17"
+   },
+   "skolepenger": {
+    "perSemester": 58900,
+    "perAar": 117800,
+    "kilde": "https://www.kristiania.no/studier/master/ledelse/",
+    "hentet": "2026-10-17"
+   }
+  },
+  "kristiania_hr": {
+   "opptakskrav": {
+    "snittkrav": "C (karaktersnitt minst 2,5)",
+    "bachelorkrav": "Bachelor (180 sp) med krav til fagområder",
+    "kilde": "https://www.kristiania.no/studier/master/strategisk-hr/",
+    "hentet": "2026-10-17"
+   },
+   "skolepenger": {
+    "perSemester": 58900,
+    "perAar": 117800,
+    "kilde": "https://www.kristiania.no/studier/master/strategisk-hr/",
+    "hentet": "2026-10-17"
+   }
+  },
+  "kristiania_markedsforing": {
+   "opptakskrav": {
+    "snittkrav": "C (karaktersnitt minst 2,5)",
+    "bachelorkrav": "Bachelor (180 sp) med krav til fagområder og metodefag",
+    "kilde": "https://www.kristiania.no/studier/master/markedsforingsledelse/",
+    "hentet": "2026-10-17"
+   },
+   "skolepenger": {
+    "perSemester": 58900,
+    "perAar": 117800,
+    "kilde": "https://www.kristiania.no/studier/master/markedsforingsledelse/",
+    "hentet": "2026-10-17"
+   }
+  },
+  "kristiania_orgpsyk": {
+   "opptakskrav": {
+    "snittkrav": "C (karaktersnitt minst 2,5)",
+    "bachelorkrav": "Bachelor (180 sp) med krav til fagområder",
+    "kilde": "https://www.kristiania.no/studier/master/organisasjonspsykologi-og-ledelse/",
+    "hentet": "2026-10-17"
+   },
+   "skolepenger": {
+    "perSemester": 58900,
+    "perAar": 117800,
+    "kilde": "https://www.kristiania.no/studier/master/organisasjonspsykologi-og-ledelse/",
+    "hentet": "2026-10-17"
+   }
+  },
+  "vid_verdi": {
+   "merknad": "Privat, men statsfinansiert høyskole; skolepenger ikke kontrollert."
+  },
+  "vid_verdi_erf": {
+   "merknad": "Privat, men statsfinansiert høyskole; skolepenger ikke kontrollert."
+  }
+ },
+ "ekstra": [
+  {
+   "id": "kristiania_okled",
+   "institusjon": "Høyskolen Kristiania",
+   "instKort": "Kristiania",
+   "instKode": "8253",
+   "navn": "Master i økonomi og ledelse",
+   "kategori": "oa",
+   "type": "2-årig",
+   "campus": [
+    "Oslo"
+   ],
+   "sivilokonom": true,
+   "kilde": "https://utdanning.no/utdanning/kristiania.no/master_i_okonomi_og_ledelse",
+   "merknad": "Ny siviløkonomutdanning («kvalifiserer til tittelen siviløkonom», utdanning.no). Ingen DBH-kode i 347 per 17.10.2026."
+  },
+  {
+   "id": "kristiania_msc_finman",
+   "institusjon": "Høyskolen Kristiania",
+   "instKort": "Kristiania",
+   "instKode": "8253",
+   "navn": "Master of Science in Financial Management (nett)",
+   "kategori": "finans",
+   "type": "2-årig",
+   "campus": [
+    "Nett"
+   ],
+   "kilde": "https://utdanning.no/utdanning/kristiania.no/master_science_financial_management",
+   "merknad": "Nettstudium, fleksibel oppstart og løpende opptak. Ingen DBH-kode funnet i 347."
+  },
+  {
+   "id": "kristiania_mba_nett",
+   "institusjon": "Høyskolen Kristiania",
+   "instKort": "Kristiania",
+   "instKode": "8253",
+   "navn": "Master of Business Administration (nett)",
+   "kategori": "mba",
+   "type": "erfaringsbasert",
+   "campus": [
+    "Nett"
+   ],
+   "kilde": "https://utdanning.no/utdanning/kristiania.no/master_business_administration",
+   "merknad": "Nettstudium, fleksibel oppstart. Ingen DBH-kode funnet i 347; type antatt."
+  },
+  {
+   "id": "oslomet_siv5",
+   "institusjon": "OsloMet – storbyuniversitetet",
+   "instKort": "OsloMet",
+   "instKode": "1175",
+   "navn": "Økonomi og administrasjon – siviløkonom, femårig",
+   "kategori": "oa",
+   "type": "5-årig løp (3+2)",
+   "campus": [
+    "Pilestredet"
+   ],
+   "sivilokonom": true,
+   "soKode": "215345",
+   "kilde": "https://utdanning.no/utdanning/oslomet.no/okonomi_og_administrasjon_-_sivilokonom_femarig",
+   "iMasterSum": false,
+   "merknad": "Registrert som bachelor (OKADSIV, B3, 180 sp) i DBH 347; masterdelen er MASØA. Studieplasser 120 (utdanning.no). HH-programkartet fører den som master5."
+  },
+  {
+   "id": "bi_siv5",
+   "institusjon": "Handelshøyskolen BI",
+   "instKort": "BI",
+   "instKode": "8241",
+   "navn": "Siviløkonomstudiet (5 år)",
+   "kategori": "oa",
+   "type": "5-årig løp (3+2)",
+   "campus": [
+    "Oslo"
+   ],
+   "sivilokonom": true,
+   "kilde": "https://utdanning.no/utdanning/bi.no/sivilokonomstudiet_heltid",
+   "iMasterSum": false,
+   "merknad": "Femårig løp, 300 sp (utdanning.no). DBH-kode ikke identifisert."
+  }
+ ],
+ "soM5": {
+  "ntnu_msivok5": "194345",
+  "uia_mastokad5": "201345",
+  "nord_msb5": "204345",
+  "usn_siv5": "222345",
+  "ntnu_msok_5": "194818",
+  "uib_prof_sok": "184698",
+  "uio_svm5_econ": "185698",
+  "uib_masv_itok": "184803",
+  "uib_mamn_aktua": "184540",
+  "ntnu_mtiot": "194767",
+  "uia_mastindok5": "201767",
+  "nmbu_m_io": "192767",
+  "uis_m_indokg5": "217813",
+  "nmbu_m_eie": "192230",
+  "oslomet_siv5": "215345"
+ }
+}

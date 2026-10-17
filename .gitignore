@@ -42,3 +42,6 @@ data/rangering/kontroll/ajg-gjennomgang/
 
 # FS-uttrekk (interne tall fra FS-rapporter). Bare den krypterte utgaven i kilde/public/intern/ committes
 data/nmbu/kilder/fs-lokalt/
+
+# Markedet: rådata-cachen for kartleggingene i data/marked/ (~40 MB), hentes på nytt med skriptene i data/marked/*/
+data/marked/*/kilder/

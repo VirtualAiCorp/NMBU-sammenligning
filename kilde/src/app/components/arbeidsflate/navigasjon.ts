@@ -4,7 +4,7 @@
  */
 import {
   Atom, Building2, FlaskConical, Leaf, PawPrint, Trees, TreePine, Archive, LayoutDashboard, BookOpen, Microscope, Baby,
-  Home, Landmark, Wallet, GraduationCap, type LucideIcon,
+  Home, Landmark, Wallet, GraduationCap, PieChart, type LucideIcon,
 } from 'lucide-react';
 import { FAKULTETSMODULER, type ShellView } from '../AppShells';
 import { ALL_FACULTY_IDS, FACULTY_META, type FacultyId } from '../../data/facultyMeta';
@@ -72,6 +72,7 @@ export const OPPRINNELIG_HH = { label: 'Opprinnelig HH-analyse', icon: Archive, 
 
 /** Sidene for hele NMBU. */
 export const NMBU_SIDER: { f: Faculty; label: string; icon: LucideIcon; tekst: string }[] = [
+  { f: 'nmbu-marked', label: 'Markedet', icon: PieChart, tekst: 'Hele markedet: andeler, alle program og økonomilandskapet' },
   { f: 'nmbu-emner', label: 'Alle emner ved NMBU', icon: BookOpen, tekst: 'Karakterer i alle NMBUs emner' },
   { f: 'nmbu-fagmiljo', label: 'Fagmiljøet', icon: Microscope, tekst: 'Tilsatte og publisering, fakultet mot fakultet' },
   { f: 'nmbu-sokergrunnlag', label: 'Søkergrunnlaget', icon: Baby, tekst: 'Ungdomskullene per fylke fram mot 2045' },

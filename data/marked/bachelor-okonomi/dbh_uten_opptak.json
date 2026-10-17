@@ -1,0 +1,697 @@
+{
+ "meta": {
+  "hentet": "2026-10-17",
+  "beskrivelse": "Økonomikoder i DBH 347 (B3/B4/M5) uten opptak 2021–2025 men med studenter eller kandidater: utfasede koder, kullkoder og spesialvarianter. Antatt forgjenger er bare navnelikhet."
+ },
+ "koder": [
+  {
+   "inst": "1176",
+   "kode": "BRR-B",
+   "navn": "Bachelor i regnskap og revisjon",
+   "nus": "641142",
+   "nivaa": "B3",
+   "tilbysFra": "20123",
+   "tilbysTil": "20221",
+   "campus": [],
+   "registrerte": {
+    "2021": 0
+   },
+   "kandidater": {
+    "2021": 4,
+    "2022": 0
+   },
+   "antattForgjengerFor": [],
+   "kandidaterForKobling": []
+  },
+  {
+   "inst": "1176",
+   "kode": "ØKLEDD",
+   "navn": "Bachelor i økonomi og ledelse, Drammen",
+   "nus": "641141",
+   "nivaa": "B3",
+   "tilbysFra": "20163",
+   "tilbysTil": "20223",
+   "campus": [],
+   "registrerte": {
+    "2021": 0,
+    "2022": 0
+   },
+   "kandidater": {
+    "2021": 3,
+    "2022": 3
+   },
+   "antattForgjengerFor": [],
+   "kandidaterForKobling": []
+  },
+  {
+   "inst": "1176",
+   "kode": "ØKLEDK",
+   "navn": "Bachelor i økonomi og ledelse, Kongsberg",
+   "nus": "641141",
+   "nivaa": "B3",
+   "tilbysFra": "20163",
+   "tilbysTil": "20231",
+   "campus": [
+    "Campus Kongsberg"
+   ],
+   "registrerte": {
+    "2021": 7,
+    "2022": 0
+   },
+   "kandidater": {
+    "2021": 5,
+    "2022": 0,
+    "2023": 0
+   },
+   "antattForgjengerFor": [],
+   "kandidaterForKobling": []
+  },
+  {
+   "inst": "1176",
+   "kode": "ØKLEDR",
+   "navn": "Bachelor i økonomi og ledelse, Ringerike",
+   "nus": "641141",
+   "nivaa": "B3",
+   "tilbysFra": "20163",
+   "tilbysTil": "20241",
+   "campus": [
+    "Campus Ringerike"
+   ],
+   "registrerte": {
+    "2021": 4,
+    "2022": 3,
+    "2023": 0
+   },
+   "kandidater": {
+    "2021": 5,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0
+   },
+   "antattForgjengerFor": [],
+   "kandidaterForKobling": []
+  },
+  {
+   "inst": "1176",
+   "kode": "ØKLEDV",
+   "navn": "Bachelor i økonomi og ledelse, Vestfold",
+   "nus": "641141",
+   "nivaa": "B3",
+   "tilbysFra": "20163",
+   "tilbysTil": "20233",
+   "campus": [
+    "Campus Vestfold"
+   ],
+   "registrerte": {
+    "2021": 10,
+    "2022": 4
+   },
+   "kandidater": {
+    "2021": 12,
+    "2022": 0,
+    "2023": 3
+   },
+   "antattForgjengerFor": [],
+   "kandidaterForKobling": []
+  },
+  {
+   "inst": "0264",
+   "kode": "REGREV3",
+   "navn": "Bachelor i regnskap og revisjon",
+   "nus": "641142",
+   "nivaa": "B3",
+   "tilbysFra": "20123",
+   "tilbysTil": "20211",
+   "campus": [],
+   "registrerte": {},
+   "kandidater": {
+    "2021": 5,
+    "2022": 3,
+    "2023": 0
+   },
+   "antattForgjengerFor": [],
+   "kandidaterForKobling": []
+  },
+  {
+   "inst": "0256",
+   "kode": "BRR",
+   "navn": "Bachelorstudium i regnskap og revisjon",
+   "nus": "641142",
+   "nivaa": "B3",
+   "tilbysFra": "20113",
+   "tilbysTil": "20221",
+   "campus": [
+    "Halden/Remmen"
+   ],
+   "registrerte": {
+    "2021": 13
+   },
+   "kandidater": {
+    "2021": 31,
+    "2022": 5
+   },
+   "antattForgjengerFor": [],
+   "kandidaterForKobling": []
+  },
+  {
+   "inst": "1150",
+   "kode": "ØABACHELOR",
+   "navn": "Bachelor i økonomi og administrasjon",
+   "nus": "641141",
+   "nivaa": "B3",
+   "tilbysFra": "20013",
+   "tilbysTil": "20221",
+   "campus": [
+    "Gløshaugen",
+    "Trondheim"
+   ],
+   "registrerte": {
+    "2021": 334,
+    "2022": 68,
+    "2023": 30,
+    "2024": 24,
+    "2025": 15
+   },
+   "kandidater": {
+    "2021": 231,
+    "2022": 235,
+    "2023": 24,
+    "2024": 9,
+    "2025": 5
+   },
+   "antattForgjengerFor": [
+    "so-194035"
+   ],
+   "kandidaterForKobling": []
+  },
+  {
+   "inst": "1160",
+   "kode": "B-HOT-YVEI",
+   "navn": "Hotelledelse y-vei",
+   "nus": "644208",
+   "nivaa": "B3",
+   "tilbysFra": "20153",
+   "tilbysTil": "20221",
+   "campus": [
+    "Universitetet i Stavanger"
+   ],
+   "registrerte": {
+    "2021": 8,
+    "2022": 0
+   },
+   "kandidater": {
+    "2021": 7,
+    "2022": 8,
+    "2023": 0
+   },
+   "antattForgjengerFor": [],
+   "kandidaterForKobling": []
+  },
+  {
+   "inst": "1171",
+   "kode": "BACREIS",
+   "navn": "Reiselivsledelse, bachelorprogram",
+   "nus": "644109",
+   "nivaa": "B3",
+   "tilbysFra": "20083",
+   "tilbysTil": "20183",
+   "campus": [
+    "Campus Kristiansand"
+   ],
+   "registrerte": {
+    "2021": 5,
+    "2022": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "kandidater": {
+    "2021": 10,
+    "2022": 3
+   },
+   "antattForgjengerFor": [],
+   "kandidaterForKobling": []
+  },
+  {
+   "inst": "1130",
+   "kode": "B-ØKADM-A",
+   "navn": "Økonomi og administrasjon - bachelor",
+   "nus": "641141",
+   "nivaa": "B3",
+   "tilbysFra": "19913",
+   "tilbysTil": "99999",
+   "campus": [
+    "UiT Norges arktiske universitet i Alta"
+   ],
+   "registrerte": {
+    "2021": 69,
+    "2022": 35,
+    "2023": 14,
+    "2024": 8,
+    "2025": 3
+   },
+   "kandidater": {
+    "2021": 29,
+    "2022": 23,
+    "2023": 15,
+    "2024": 7,
+    "2025": 0
+   },
+   "antattForgjengerFor": [
+    "so-186468"
+   ],
+   "kandidaterForKobling": []
+  },
+  {
+   "inst": "0232",
+   "kode": "35",
+   "navn": "Bachelor i regnskap og revisjon",
+   "nus": "641142",
+   "nivaa": "B3",
+   "tilbysFra": "20023",
+   "tilbysTil": "20211",
+   "campus": [
+    "Molde"
+   ],
+   "registrerte": {
+    "2021": 3
+   },
+   "kandidater": {
+    "2022": 0
+   },
+   "antattForgjengerFor": [],
+   "kandidaterForKobling": []
+  },
+  {
+   "inst": "1150",
+   "kode": "ØA369",
+   "navn": "Økonomi og administrasjon - bachelor",
+   "nus": "641141",
+   "nivaa": "B3",
+   "tilbysFra": "20063",
+   "tilbysTil": "20221",
+   "campus": [
+    "Campus Ålesund"
+   ],
+   "registrerte": {
+    "2021": 67,
+    "2022": 31,
+    "2023": 7,
+    "2024": 3,
+    "2025": 0
+   },
+   "kandidater": {
+    "2021": 49,
+    "2022": 36,
+    "2023": 4,
+    "2024": 4,
+    "2025": 0
+   },
+   "antattForgjengerFor": [
+    "so-194414"
+   ],
+   "kandidaterForKobling": []
+  },
+  {
+   "inst": "1150",
+   "kode": "BØKLED",
+   "navn": "Bachelor i økonomi, ledelse og bærekraft",
+   "nus": "641165",
+   "nivaa": "B3",
+   "tilbysFra": "20073",
+   "tilbysTil": "20221",
+   "campus": [
+    "Campus Gjøvik"
+   ],
+   "registrerte": {
+    "2021": 74,
+    "2022": 29,
+    "2023": 21,
+    "2024": 15,
+    "2025": 11
+   },
+   "kandidater": {
+    "2021": 24,
+    "2022": 39,
+    "2023": 3,
+    "2024": 0,
+    "2025": 0
+   },
+   "antattForgjengerFor": [],
+   "kandidaterForKobling": []
+  },
+  {
+   "inst": "0264",
+   "kode": "BAKPL",
+   "navn": "Bachelor i kulturprosjektledelse",
+   "nus": "641905",
+   "nivaa": "B3",
+   "tilbysFra": "20033",
+   "tilbysTil": "20231",
+   "campus": [
+    "Campus Lillehammer"
+   ],
+   "registrerte": {
+    "2021": 5
+   },
+   "kandidater": {
+    "2021": 17,
+    "2022": 0
+   },
+   "antattForgjengerFor": [],
+   "kandidaterForKobling": []
+  },
+  {
+   "inst": "1175",
+   "kode": "REVB",
+   "navn": "Bachelorstudium i regnskap og revisjon",
+   "nus": "641142",
+   "nivaa": "B3",
+   "tilbysFra": "20023",
+   "tilbysTil": "20233",
+   "campus": [],
+   "registrerte": {
+    "2021": 0,
+    "2022": 0
+   },
+   "kandidater": {
+    "2021": 3
+   },
+   "antattForgjengerFor": [],
+   "kandidaterForKobling": []
+  },
+  {
+   "inst": "1171",
+   "kode": "BACØKAD-G",
+   "navn": "Økonomi og administrasjon, bachelorprogram, Grimstad",
+   "nus": "641141",
+   "nivaa": "B3",
+   "tilbysFra": "20033",
+   "tilbysTil": "20183",
+   "campus": [
+    "Campus Grimstad"
+   ],
+   "registrerte": {
+    "2021": 9,
+    "2022": 5,
+    "2023": 4,
+    "2024": 3
+   },
+   "kandidater": {
+    "2021": 23,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "antattForgjengerFor": [],
+   "kandidaterForKobling": []
+  },
+  {
+   "inst": "1120",
+   "kode": "BASV-POLØK",
+   "navn": "Bachelorprogram i politisk økonomi",
+   "nus": "634902",
+   "nivaa": "B3",
+   "tilbysFra": "11111",
+   "tilbysTil": "20241",
+   "campus": [
+    "Universitetet i Bergen"
+   ],
+   "registrerte": {
+    "2021": 16,
+    "2022": 8,
+    "2023": 3
+   },
+   "kandidater": {
+    "2021": 12,
+    "2022": 3,
+    "2023": 4,
+    "2024": 0
+   },
+   "antattForgjengerFor": [],
+   "kandidaterForKobling": []
+  },
+  {
+   "inst": "1176",
+   "kode": "369",
+   "navn": "Bachelorstudium i økonomi og administrasjon",
+   "nus": "641141",
+   "nivaa": "B3",
+   "tilbysFra": "20013",
+   "tilbysTil": "20231",
+   "campus": [
+    "Campus Bø"
+   ],
+   "registrerte": {
+    "2021": 19,
+    "2022": 0,
+    "2023": 0
+   },
+   "kandidater": {
+    "2021": 37,
+    "2022": 5,
+    "2023": 0
+   },
+   "antattForgjengerFor": [],
+   "kandidaterForKobling": []
+  },
+  {
+   "inst": "1176",
+   "kode": "359",
+   "navn": "Bachelorstudium i internasjonal markedsføring",
+   "nus": "642206",
+   "nivaa": "B3",
+   "tilbysFra": "20003",
+   "tilbysTil": "20231",
+   "campus": [
+    "Campus Bø"
+   ],
+   "registrerte": {
+    "2021": 4,
+    "2022": 0
+   },
+   "kandidater": {
+    "2021": 9,
+    "2022": 0,
+    "2023": 0
+   },
+   "antattForgjengerFor": [],
+   "kandidaterForKobling": []
+  },
+  {
+   "inst": "1171",
+   "kode": "MASTØKAD5",
+   "navn": "Økonomi og administrasjon - siviløkonom, 5-årig masterprogram",
+   "nus": "741133",
+   "nivaa": "M5",
+   "tilbysFra": "20033",
+   "tilbysTil": "99999",
+   "campus": [
+    "Campus Kristiansand"
+   ],
+   "registrerte": {
+    "2021": 4,
+    "2022": 0,
+    "2024": 0
+   },
+   "kandidater": {
+    "2021": 0,
+    "2023": 0
+   },
+   "antattForgjengerFor": [],
+   "kandidaterForKobling": []
+  },
+  {
+   "inst": "1176",
+   "kode": "MASTSIVØK",
+   "navn": "Siviløkonom - integrert 5-årig studium, Ringerike",
+   "nus": "741133",
+   "nivaa": "M5",
+   "tilbysFra": "20073",
+   "tilbysTil": "20223",
+   "campus": [
+    "Campus Ringerike"
+   ],
+   "registrerte": {
+    "2021": 5,
+    "2022": 0
+   },
+   "kandidater": {
+    "2021": 0,
+    "2022": 0
+   },
+   "antattForgjengerFor": [],
+   "kandidaterForKobling": []
+  },
+  {
+   "inst": "1176",
+   "kode": "SIVØKLEDK",
+   "navn": "Siviløkonom - integrert 5-årig studium, Kongsberg",
+   "nus": "741133",
+   "nivaa": "M5",
+   "tilbysFra": "20163",
+   "tilbysTil": "20221",
+   "campus": [],
+   "registrerte": {
+    "2021": 0
+   },
+   "kandidater": {
+    "2021": 3,
+    "2022": 0
+   },
+   "antattForgjengerFor": [],
+   "kandidaterForKobling": []
+  },
+  {
+   "inst": "1160",
+   "kode": "M-ØKAD5",
+   "navn": "Økonomi og administrasjon - masterstudium (5-årig)",
+   "nus": "741133",
+   "nivaa": "M5",
+   "tilbysFra": "20113",
+   "tilbysTil": "99999",
+   "campus": [
+    "Universitetet i Stavanger"
+   ],
+   "registrerte": {
+    "2021": 17,
+    "2022": 4,
+    "2023": 0,
+    "2024": 0
+   },
+   "kandidater": {
+    "2021": 10,
+    "2022": 11,
+    "2023": 0
+   },
+   "antattForgjengerFor": [],
+   "kandidaterForKobling": []
+  },
+  {
+   "inst": "1177",
+   "kode": "MUMA",
+   "navn": "Bachelor in Music Business - Management",
+   "nus": "641908",
+   "nivaa": "B3",
+   "tilbysFra": "20051",
+   "tilbysTil": "99999",
+   "campus": [],
+   "registrerte": {
+    "2025": 0
+   },
+   "kandidater": {
+    "2025": 5
+   },
+   "antattForgjengerFor": [
+    "so-209476"
+   ],
+   "kandidaterForKobling": []
+  },
+  {
+   "inst": "1177",
+   "kode": "BARLL",
+   "navn": "Bachelor i reiselivsledelse",
+   "nus": "644109",
+   "nivaa": "B3",
+   "tilbysFra": "20103",
+   "tilbysTil": "99999",
+   "campus": [
+    "Campus Lillehammer"
+   ],
+   "registrerte": {
+    "2025": 3
+   },
+   "kandidater": {
+    "2025": 16
+   },
+   "antattForgjengerFor": [
+    "so-209317"
+   ],
+   "kandidaterForKobling": []
+  },
+  {
+   "inst": "1177",
+   "kode": "BAMLT",
+   "navn": "Bachelor i markedsføring og ledelse av turismeopplevelser",
+   "nus": "644110",
+   "nivaa": "B3",
+   "tilbysFra": "20103",
+   "tilbysTil": "99999",
+   "campus": [],
+   "registrerte": {
+    "2025": 0
+   },
+   "kandidater": {
+    "2025": 4
+   },
+   "antattForgjengerFor": [
+    "so-209319"
+   ],
+   "kandidaterForKobling": []
+  },
+  {
+   "inst": "1177",
+   "kode": "EIENDOM",
+   "navn": "Bachelor i eiendomsmegling",
+   "nus": "641906",
+   "nivaa": "B3",
+   "tilbysFra": "20133",
+   "tilbysTil": "99999",
+   "campus": [
+    "Campus Rena"
+   ],
+   "registrerte": {
+    "2025": 45
+   },
+   "kandidater": {
+    "2025": 24
+   },
+   "antattForgjengerFor": [
+    "so-209368"
+   ],
+   "kandidaterForKobling": []
+  },
+  {
+   "inst": "1177",
+   "kode": "BABRA",
+   "navn": "Bachelor i bærekraftig reiselivs- og arrangementsledelse",
+   "nus": "644109",
+   "nivaa": "B3",
+   "tilbysFra": "20233",
+   "tilbysTil": "99999",
+   "campus": [
+    "Campus Lillehammer"
+   ],
+   "registrerte": {
+    "2025": 10
+   },
+   "kandidater": {},
+   "antattForgjengerFor": [
+    "so-209591"
+   ],
+   "kandidaterForKobling": []
+  },
+  {
+   "inst": "1177",
+   "kode": "BABØK",
+   "navn": "Bachelor i bærekraftsøkonomi",
+   "nus": "641141",
+   "nivaa": "B3",
+   "tilbysFra": "20203",
+   "tilbysTil": "99999",
+   "campus": [
+    "Campus Rena"
+   ],
+   "registrerte": {
+    "2025": 19
+   },
+   "kandidater": {
+    "2025": 13
+   },
+   "antattForgjengerFor": [
+    "so-209389"
+   ],
+   "kandidaterForKobling": []
+  }
+ ]
+}

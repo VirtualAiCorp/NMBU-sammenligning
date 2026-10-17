@@ -1,0 +1,129 @@
+{
+ "hentet": "2026-10-17",
+ "beskrivelse": "Nasjonal programkatalog: alle studieprogram i DBH 347 (type dbh) og alle studiekoder i Samordna opptak 2021–2026 (type so). Se docs/marked/nasjonal-katalog.md.",
+ "kilder": [
+  "DBH 347, 370, 379, 210, 211 (dbh-data.dataporten-api.no), hentet 2026-10-17",
+  "Samordna/HK-dir søkertallrapport 2026, programnivå 2021–2026 (sokertallrapport.samordnaopptak.no)",
+  "SO-datavarehuset (Tableau): poenggrenser og ventelister 2020–2026",
+  "Samordnas søke-API (sok.samordnaopptak.no/api/v1/search), opptakene 2020–2026",
+  "SSB Klass 36 (NUS2000)"
+ ],
+ "felt": {
+  "so.aar": "sokere, forstevalg, plasser, kvinneandelFv (%), kvalifiserte, tilbud (søkertallrapporten); pgOrd, pgFv (poenggrense hovedopptak, 0 = alle kvalifiserte), pgOrdSupp, pgFvSupp (suppleringsopptak), vlOrd, vlFv, vlOrdSupp, vlFvSupp (søkere på venteliste); plasserKatalog (planlagte plasser i søkeportalen), avlyst",
+  "dbh.aar": "per opptakstype L (lokalt) og N (nasjonalt/Samordna): sokere (søknadsalternativer), forstevalg (prioritet 1), kvalifiserte, tilbud, akseptert, mott (DBH 379, sum vår+høst)"
+ },
+ "filer": {
+  "helse": {
+   "fil": "program/helse.json",
+   "navn": "Helse- og sosialfag",
+   "so": 180,
+   "dbh": 1431,
+   "bytes": 1509578
+  },
+  "humaniora": {
+   "fil": "program/humaniora.json",
+   "navn": "Humaniora, språk og religion",
+   "so": 306,
+   "dbh": 1140,
+   "bytes": 1564092
+  },
+  "idrett": {
+   "fil": "program/idrett.json",
+   "navn": "Idrett",
+   "so": 63,
+   "dbh": 197,
+   "bytes": 289480
+  },
+  "it": {
+   "fil": "program/it.json",
+   "navn": "IT og datateknologi",
+   "so": 82,
+   "dbh": 339,
+   "bytes": 469443
+  },
+  "jus": {
+   "fil": "program/jus.json",
+   "navn": "Jus",
+   "so": 15,
+   "dbh": 94,
+   "bytes": 107860
+  },
+  "kunst": {
+   "fil": "program/kunst.json",
+   "navn": "Kunst, musikk og design",
+   "so": 79,
+   "dbh": 478,
+   "bytes": 542894
+  },
+  "laerer": {
+   "fil": "program/laerer.json",
+   "navn": "Lærerutdanning og pedagogikk",
+   "so": 302,
+   "dbh": 1927,
+   "bytes": 2127547
+  },
+  "landbruk": {
+   "fil": "program/landbruk.json",
+   "navn": "Landbruk, havbruk og naturforvaltning",
+   "so": 23,
+   "dbh": 80,
+   "bytes": 112207
+  },
+  "medier": {
+   "fil": "program/medier.json",
+   "navn": "Medier og kommunikasjon",
+   "so": 44,
+   "dbh": 146,
+   "bytes": 212755
+  },
+  "naturvitenskap": {
+   "fil": "program/naturvitenskap.json",
+   "navn": "Naturvitenskap og matematikk",
+   "so": 106,
+   "dbh": 444,
+   "bytes": 577252
+  },
+  "okonomi": {
+   "fil": "program/okonomi.json",
+   "navn": "Økonomi og administrasjon",
+   "so": 161,
+   "dbh": 1086,
+   "bytes": 1189646
+  },
+  "samfunn": {
+   "fil": "program/samfunn.json",
+   "navn": "Samfunnsvitenskap og psykologi",
+   "so": 135,
+   "dbh": 835,
+   "bytes": 924909
+  },
+  "sikkerhet": {
+   "fil": "program/sikkerhet.json",
+   "navn": "Samferdsel, sikkerhet og forsvar",
+   "so": 24,
+   "dbh": 460,
+   "bytes": 382912
+  },
+  "teknologi": {
+   "fil": "program/teknologi.json",
+   "navn": "Teknologi og ingeniørfag",
+   "so": 152,
+   "dbh": 645,
+   "bytes": 878756
+  },
+  "uoppgitt": {
+   "fil": "program/uoppgitt.json",
+   "navn": "Uoppgitt fagfelt",
+   "so": 0,
+   "dbh": 231,
+   "bytes": 172250
+  },
+  "veterinaer": {
+   "fil": "program/veterinaer.json",
+   "navn": "Veterinærfag",
+   "so": 3,
+   "dbh": 12,
+   "bytes": 15351
+  }
+ }
+}

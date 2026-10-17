@@ -1,0 +1,823 @@
+{
+ "hentet": "2026-10-17",
+ "regel": "Fagfelt settes fra NUS-faggruppen (siffer 2–3 i NUS-koden) til DBH-programmet. Samordna-koder uten DBH-kobling får fagfelt fra Samordnas utdanningstype, deretter fra hovedområdet i søke-API-et.",
+ "fagfelt": [
+  {
+   "id": "okonomi",
+   "navn": "Økonomi og administrasjon",
+   "nusFaggrupper": {
+    "41": "Økonomisk-administrative fag",
+    "42": "Handel og markedsføring",
+    "44": "Hotell- og reiselivsfag",
+    "49": "Økonomiske og administrative fag, andre",
+    "34": "Samfunnsøkonomiske fag"
+   },
+   "samordnaUtdanningstyper": [
+    "Økonomisk-administrative fag",
+    "Reiselivsfag"
+   ],
+   "antall": {
+    "dbhProgramAktive": 805,
+    "dbhGradsprogramAktive": 443,
+    "soProgramAktive": 127
+   },
+   "nmbuFakulteter": [
+    {
+     "fakultet": "HH",
+     "antallProgram": 10,
+     "program": [
+      "Bioøkonomi - Biobasert verdiskaping og forretningsutvikling (M2)",
+      "Entreprenørskap og innovasjon (M2)",
+      "Erfaringsbasert master i bærekraftig ledelse og økonomi (ME)",
+      "Global økonomi og politikk (M2)",
+      "Samfunnsøkonomi (B3)",
+      "Samfunnsøkonomi og bærekraft (M2)",
+      "Samfunnsøkonomi og miljøforvaltning (M2)",
+      "Økonomi og administrasjon (B3)",
+      "Økonomi og administrasjon - siviløkonom (M2)",
+      "Økonomi, ledelse og IT (B3)"
+     ]
+    }
+   ],
+   "nmbuKonkurrerer": true,
+   "nmbuSamordnaProgram": [
+    "Bærekraftig økonomi og ledelse (192253)",
+    "Samfunnsøkonomi (192468)",
+    "Økonomi og administrasjon (192369)",
+    "Økonomi, ledelse og IT (192591)"
+   ],
+   "samordna2026": {
+    "sokere": 144635,
+    "forstevalg": 27781,
+    "plasser": 10631,
+    "kvalifiserte": 132122,
+    "tilbud": 22729,
+    "program": 127
+   },
+   "nmbuAndelFv": {
+    "2021": 1.15,
+    "2022": 1.68,
+    "2023": 5.8,
+    "2024": 6.18,
+    "2025": 5.46,
+    "2026": 5.01
+   }
+  },
+  {
+   "id": "helse",
+   "navn": "Helse- og sosialfag",
+   "nusFaggrupper": {
+    "61": "Pleie- og omsorgsfag",
+    "62": "Sosialfag",
+    "63": "Medisin",
+    "64": "Tannhelsefag",
+    "65": "Terapeutiske fag",
+    "66": "Apotekfag",
+    "69": "Helse-, sosial- og idrettsfag, andre"
+   },
+   "samordnaUtdanningstyper": [
+    "Helsefag"
+   ],
+   "antall": {
+    "dbhProgramAktive": 959,
+    "dbhGradsprogramAktive": 389,
+    "soProgramAktive": 159
+   },
+   "nmbuFakulteter": [
+    {
+     "fakultet": "LANDSAM",
+     "antallProgram": 2,
+     "program": [
+      "Folkehelsevitenskap (M2)",
+      "Folkehelsevitenskap - deltid (M2)"
+     ]
+    }
+   ],
+   "nmbuKonkurrerer": true,
+   "nmbuSamordnaProgram": [],
+   "samordna2026": {
+    "sokere": 195228,
+    "forstevalg": 35492,
+    "plasser": 12367,
+    "kvalifiserte": 164644,
+    "tilbud": 22317,
+    "program": 159
+   },
+   "nmbuAndelFv": {
+    "2021": 0.0,
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+   }
+  },
+  {
+   "id": "veterinaer",
+   "navn": "Veterinærfag",
+   "nusFaggrupper": {
+    "67": "Veterinærfag"
+   },
+   "samordnaUtdanningstyper": [
+    "Helsefag - veterinær"
+   ],
+   "antall": {
+    "dbhProgramAktive": 11,
+    "dbhGradsprogramAktive": 5,
+    "soProgramAktive": 3
+   },
+   "nmbuFakulteter": [
+    {
+     "fakultet": "VET",
+     "antallProgram": 4,
+     "program": [
+      "Dyrepleie (B3)",
+      "Forskerlinjen i veterinærmedisin (PR)",
+      "Veterinærmedisin - Profesjonsstudium (PR)",
+      "Veterinærmedisin - Profesjonsstudium - TEST (PR)"
+     ]
+    }
+   ],
+   "nmbuKonkurrerer": true,
+   "nmbuSamordnaProgram": [
+    "Dyrepleie (192504)",
+    "Veterinærmedisin (192772)"
+   ],
+   "samordna2026": {
+    "sokere": 2065,
+    "forstevalg": 660,
+    "plasser": 170,
+    "kvalifiserte": 1565,
+    "tilbud": 420,
+    "program": 3
+   },
+   "nmbuAndelFv": {
+    "2021": 75.87,
+    "2022": 77.2,
+    "2023": 76.84,
+    "2024": 79.46,
+    "2025": 81.41,
+    "2026": 81.06
+   }
+  },
+  {
+   "id": "laerer",
+   "navn": "Lærerutdanning og pedagogikk",
+   "nusFaggrupper": {
+    "21": "Førskole-/barnehagelærerutdanninger",
+    "22": "Allmenn-/grunnskolelærerutdanninger",
+    "23": "Fag- og yrkesfaglærerutdanninger",
+    "24": "Utdanninger i pedagogikk",
+    "25": "Videreutdanninger for lærere",
+    "29": "Lærerutdanninger og utdanninger i pedagogikk, andre"
+   },
+   "samordnaUtdanningstyper": [
+    "Lærerutdanninger",
+    "Pedagogiske fag"
+   ],
+   "antall": {
+    "dbhProgramAktive": 1194,
+    "dbhGradsprogramAktive": 352,
+    "soProgramAktive": 229
+   },
+   "nmbuFakulteter": [
+    {
+     "fakultet": "REALTEK",
+     "antallProgram": 4,
+     "program": [
+      "Lektorutdanning i realfag - LUR (M5)",
+      "Master med praktisk-pedagogisk utdanning (M2)",
+      "Praktisk-pedagogisk utdanning (AR)",
+      "Praktisk-pedagogisk utdanning - deltid (AR)"
+     ]
+    }
+   ],
+   "nmbuKonkurrerer": true,
+   "nmbuSamordnaProgram": [
+    "Lektor, 8.-13. trinn, realfag (192843)"
+   ],
+   "samordna2026": {
+    "sokere": 65720,
+    "forstevalg": 11916,
+    "plasser": 8760,
+    "kvalifiserte": 57596,
+    "tilbud": 12918,
+    "program": 228
+   },
+   "nmbuAndelFv": {
+    "2021": 0.19,
+    "2022": 0.27,
+    "2023": 0.21,
+    "2024": 0.2,
+    "2025": 0.19,
+    "2026": 0.15
+   }
+  },
+  {
+   "id": "teknologi",
+   "navn": "Teknologi og ingeniørfag",
+   "nusFaggrupper": {
+    "55": "Utdanninger i elektrofag, mekaniske fag og maskinfag",
+    "57": "Bygg- og anleggsfag",
+    "58": "Fabrikasjon og utvinning",
+    "59": "Naturvitenskapelige fag, håndverksfag og tekniske fag, andre"
+   },
+   "samordnaUtdanningstyper": [
+    "Teknologiske fag"
+   ],
+   "antall": {
+    "dbhProgramAktive": 481,
+    "dbhGradsprogramAktive": 276,
+    "soProgramAktive": 118
+   },
+   "nmbuFakulteter": [
+    {
+     "fakultet": "LANDSAM",
+     "antallProgram": 5,
+     "program": [
+      "Eiendomsutvikling (M2)",
+      "Eiendomsutvikling - deltid (M2)",
+      "Landskapsarkitektur (M5)",
+      "Landskapsarkitektur for global bærekraft (M2)",
+      "Landskapsingeniør (B3)"
+     ]
+    },
+    {
+     "fakultet": "REALTEK",
+     "antallProgram": 5,
+     "program": [
+      "Byggeteknikk og arkitektur (M5)",
+      "Energi- og miljøfysikk (B3)",
+      "Frie realfag (AR)",
+      "Industriell økonomi (M5)",
+      "Teknologi og produktutvikling (M5)"
+     ]
+    },
+    {
+     "fakultet": "KBM",
+     "antallProgram": 4,
+     "program": [
+      "Erfaringsbasert master i industriell matproduksjon (ME)",
+      "Mat, teknologi og helse (B3)",
+      "Mat, teknologi og helse (M2)",
+      "Matvitenskap og ernæring (M5)"
+     ]
+    },
+    {
+     "fakultet": "NMBU sentralt",
+     "antallProgram": 1,
+     "program": [
+      "Utvekslingsavtale (AR)"
+     ]
+    }
+   ],
+   "nmbuKonkurrerer": true,
+   "nmbuSamordnaProgram": [
+    "Byggeteknikk og arkitektur (192759)",
+    "Energi- og miljøfysikk (192857)",
+    "Frie realfag (192233)",
+    "Industriell økonomi (192767)",
+    "Landskapsarkitektur (192732)",
+    "Landskapsingeniør (192310)",
+    "Mat, teknologi og helse (192203)",
+    "Teknologi og produktutvikling (192766)"
+   ],
+   "samordna2026": {
+    "sokere": 54769,
+    "forstevalg": 10414,
+    "plasser": 4911,
+    "kvalifiserte": 41342,
+    "tilbud": 7665,
+    "program": 117
+   },
+   "nmbuAndelFv": {
+    "2021": 6.23,
+    "2022": 5.19,
+    "2023": 5.61,
+    "2024": 5.63,
+    "2025": 5.75,
+    "2026": 5.44
+   }
+  },
+  {
+   "id": "it",
+   "navn": "IT og datateknologi",
+   "nusFaggrupper": {
+    "54": "Informasjons- og datateknologi"
+   },
+   "samordnaUtdanningstyper": [
+    "Informasjonsteknologi"
+   ],
+   "antall": {
+    "dbhProgramAktive": 248,
+    "dbhGradsprogramAktive": 178,
+    "soProgramAktive": 69
+   },
+   "nmbuFakulteter": [
+    {
+     "fakultet": "REALTEK",
+     "antallProgram": 4,
+     "program": [
+      "Anvendt robotikk (M5)",
+      "Datavitenskap (M2)",
+      "Datavitenskap (M5)",
+      "Intelligent Water Technology (M2)"
+     ]
+    }
+   ],
+   "nmbuKonkurrerer": true,
+   "nmbuSamordnaProgram": [
+    "Anvendt robotikk (192810)",
+    "Datavitenskap (192804)"
+   ],
+   "samordna2026": {
+    "sokere": 39789,
+    "forstevalg": 7348,
+    "plasser": 4533,
+    "kvalifiserte": 31943,
+    "tilbud": 6882,
+    "program": 69
+   },
+   "nmbuAndelFv": {
+    "2021": 0.75,
+    "2022": 0.78,
+    "2023": 0.69,
+    "2024": 0.66,
+    "2025": 0.86,
+    "2026": 1.14
+   }
+  },
+  {
+   "id": "naturvitenskap",
+   "navn": "Naturvitenskap og matematikk",
+   "nusFaggrupper": {
+    "51": "Biologiske fag",
+    "52": "Fysiske og kjemiske fag",
+    "53": "Matematikk og statistikk",
+    "56": "Geofag"
+   },
+   "samordnaUtdanningstyper": [
+    "Realfag"
+   ],
+   "antall": {
+    "dbhProgramAktive": 330,
+    "dbhGradsprogramAktive": 185,
+    "soProgramAktive": 88
+   },
+   "nmbuFakulteter": [
+    {
+     "fakultet": "MINA",
+     "antallProgram": 11,
+     "program": [
+      "Fornybar energi (B3)",
+      "Fornybar energi (M2)",
+      "Miljø og naturressurser (B3)",
+      "Miljø og naturressurser (B3)",
+      "Miljøvitenskap (M2)",
+      "Naturbasert reiseliv og besøksforvaltning (M2)",
+      "Naturforvaltning (M2)",
+      "Nukleær- og miljøvitenskap (M2)",
+      "Radioaktivitet og miljø (B3)",
+      "Økologi (M2)",
+      "Økologi og naturforvaltning (B3)"
+     ]
+    },
+    {
+     "fakultet": "KBM",
+     "antallProgram": 6,
+     "program": [
+      "Bioinformatikk og anvendt statistikk (M2)",
+      "Bioteknologi (B3)",
+      "Bioteknologi (M2)",
+      "Kjemi (B3)",
+      "Kjemi (M2)",
+      "Kjemi og bioteknologi (M5)"
+     ]
+    },
+    {
+     "fakultet": "REALTEK",
+     "antallProgram": 6,
+     "program": [
+      "Fotonikk (M2)",
+      "Geoinformatikk (M5)",
+      "Geomatikk (B3)",
+      "Miljøfysikk og fornybar energi (M5)",
+      "Nordic Master in Aquatic Food Production - Safety and Quality (M2)",
+      "Vann- og miljøteknikk (M5)"
+     ]
+    },
+    {
+     "fakultet": "BIOVIT",
+     "antallProgram": 5,
+     "program": [
+      "Akvakultur (B3)",
+      "Aquaculture (M2)",
+      "Biologi (B3)",
+      "Biologi (M2)",
+      "Genomvitenskap (M2)"
+     ]
+    },
+    {
+     "fakultet": "LANDSAM",
+     "antallProgram": 1,
+     "program": [
+      "Internasjonale miljøstudier (M2)"
+     ]
+    }
+   ],
+   "nmbuKonkurrerer": true,
+   "nmbuSamordnaProgram": [
+    "Akvakultur (192298)",
+    "Biologi (192327)",
+    "Bioteknologi (192299)",
+    "Fornybar energi (192835)",
+    "Geoinformatikk (192813)",
+    "Geomatikk (192406)",
+    "Kjemi (192332)",
+    "Kjemi og bioteknologi (192783)",
+    "Miljø og naturressurser (192377)",
+    "Miljøfysikk og fornybar energi (192784)",
+    "Natur og miljø (192666)",
+    "Radioaktivitet og miljø (192315)",
+    "Vann- og miljøteknikk (192809)",
+    "Økologi og naturforvaltning (192388)"
+   ],
+   "samordna2026": {
+    "sokere": 32798,
+    "forstevalg": 4519,
+    "plasser": 2950,
+    "kvalifiserte": 26455,
+    "tilbud": 4597,
+    "program": 88
+   },
+   "nmbuAndelFv": {
+    "2021": 13.87,
+    "2022": 11.64,
+    "2023": 11.89,
+    "2024": 11.67,
+    "2025": 10.42,
+    "2026": 12.19
+   }
+  },
+  {
+   "id": "landbruk",
+   "navn": "Landbruk, havbruk og naturforvaltning",
+   "nusFaggrupper": {
+    "71": "Fiske og havbruk",
+    "72": "Jordbruk",
+    "74": "Skogbruk",
+    "79": "Primærnæringsfag, andre"
+   },
+   "samordnaUtdanningstyper": [
+    "Land- og havbruk"
+   ],
+   "antall": {
+    "dbhProgramAktive": 63,
+    "dbhGradsprogramAktive": 34,
+    "soProgramAktive": 21
+   },
+   "nmbuFakulteter": [
+    {
+     "fakultet": "BIOVIT",
+     "antallProgram": 9,
+     "program": [
+      "Agroecology (M2)",
+      "Bærekraftige matsystemer (M2)",
+      "Erfaringsbasert master i husdyrproduksjon (ME)",
+      "European Master in Animal Biodiversity and Genomics (M2)",
+      "Husdyrvitenskap (B3)",
+      "Husdyrvitenskap (M2)",
+      "Plantevitenskap (B3)",
+      "Plantevitenskap (M2)",
+      "Urbant landbruk (M2)"
+     ]
+    },
+    {
+     "fakultet": "MINA",
+     "antallProgram": 2,
+     "program": [
+      "Skogfag (B3)",
+      "Skogfag (M2)"
+     ]
+    }
+   ],
+   "nmbuKonkurrerer": true,
+   "nmbuSamordnaProgram": [
+    "Husdyrvitenskap (192321)",
+    "Plantevitenskap (192842)",
+    "Skogfag (192322)"
+   ],
+   "samordna2026": {
+    "sokere": 5851,
+    "forstevalg": 1190,
+    "plasser": 905,
+    "kvalifiserte": 5163,
+    "tilbud": 1301,
+    "program": 21
+   },
+   "nmbuAndelFv": {
+    "2021": 11.58,
+    "2022": 11.62,
+    "2023": 10.77,
+    "2024": 12.2,
+    "2025": 11.06,
+    "2026": 10.17
+   }
+  },
+  {
+   "id": "samfunn",
+   "navn": "Samfunnsvitenskap og psykologi",
+   "nusFaggrupper": {
+    "31": "Statsvitenskapelige fag",
+    "32": "Sosiologiske fag",
+    "33": "Samfunnsgeografiske fag",
+    "36": "Psykologiske fag",
+    "38": "Sosialantropologiske fag",
+    "39": "Samfunnsfag og juridiske fag, andre"
+   },
+   "samordnaUtdanningstyper": [
+    "Samfunnsfag"
+   ],
+   "antall": {
+    "dbhProgramAktive": 609,
+    "dbhGradsprogramAktive": 321,
+    "soProgramAktive": 114
+   },
+   "nmbuFakulteter": [
+    {
+     "fakultet": "LANDSAM",
+     "antallProgram": 7,
+     "program": [
+      "By- og regionplanlegging (M5)",
+      "Eiendom (M5)",
+      "Erfaringsbasert master i bærekraftig planlegging og stedsutvikling (ME)",
+      "Globale utviklingsstudier (M2)",
+      "Internasjonale miljø- og utviklingsstudier (B3)",
+      "Internasjonale relasjoner (M2)",
+      "Internasjonale relasjoner - deltid (M2)"
+     ]
+    },
+    {
+     "fakultet": "MINA",
+     "antallProgram": 1,
+     "program": [
+      "Ettårig grunnstudium (AR)"
+     ]
+    }
+   ],
+   "nmbuKonkurrerer": true,
+   "nmbuSamordnaProgram": [
+    "By- og regionplanlegging (192949)",
+    "Eiendom (192230)",
+    "Ettårig grunnstudium (192199)",
+    "Internasjonale miljø- og utviklingsstudier (192484)"
+   ],
+   "samordna2026": {
+    "sokere": 108895,
+    "forstevalg": 16460,
+    "plasser": 5703,
+    "kvalifiserte": 103934,
+    "tilbud": 11965,
+    "program": 114
+   },
+   "nmbuAndelFv": {
+    "2021": 3.58,
+    "2022": 3.31,
+    "2023": 3.37,
+    "2024": 5.2,
+    "2025": 4.16,
+    "2026": 3.96
+   }
+  },
+  {
+   "id": "jus",
+   "navn": "Jus",
+   "nusFaggrupper": {
+    "37": "Juridiske fag"
+   },
+   "samordnaUtdanningstyper": [
+    "Juridiske fag"
+   ],
+   "antall": {
+    "dbhProgramAktive": 81,
+    "dbhGradsprogramAktive": 37,
+    "soProgramAktive": 15
+   },
+   "nmbuFakulteter": [],
+   "nmbuKonkurrerer": false,
+   "nmbuSamordnaProgram": [],
+   "samordna2026": {
+    "sokere": 44325,
+    "forstevalg": 9060,
+    "plasser": 1670,
+    "kvalifiserte": 42842,
+    "tilbud": 3472,
+    "program": 15
+   },
+   "nmbuAndelFv": {
+    "2021": 0.0,
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+   }
+  },
+  {
+   "id": "medier",
+   "navn": "Medier og kommunikasjon",
+   "nusFaggrupper": {
+    "35": "Medie- og informasjonsfag"
+   },
+   "samordnaUtdanningstyper": [
+    "Mediefag"
+   ],
+   "antall": {
+    "dbhProgramAktive": 96,
+    "dbhGradsprogramAktive": 72,
+    "soProgramAktive": 42
+   },
+   "nmbuFakulteter": [],
+   "nmbuKonkurrerer": false,
+   "nmbuSamordnaProgram": [],
+   "samordna2026": {
+    "sokere": 24229,
+    "forstevalg": 3608,
+    "plasser": 1473,
+    "kvalifiserte": 22249,
+    "tilbud": 3183,
+    "program": 42
+   },
+   "nmbuAndelFv": {
+    "2021": 0.0,
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+   }
+  },
+  {
+   "id": "humaniora",
+   "navn": "Humaniora, språk og religion",
+   "nusFaggrupper": {
+    "01": "Allmenne fag",
+    "11": "Språkutdanninger",
+    "12": "Litteratur- og bibliotekutdanninger",
+    "13": "Historisk-filosofiske utdanninger",
+    "14": "Religionsutdanninger",
+    "19": "Humanistiske og estetiske fag, andre"
+   },
+   "samordnaUtdanningstyper": [
+    "Språkfag",
+    "Historiefag"
+   ],
+   "antall": {
+    "dbhProgramAktive": 859,
+    "dbhGradsprogramAktive": 446,
+    "soProgramAktive": 258
+   },
+   "nmbuFakulteter": [],
+   "nmbuKonkurrerer": false,
+   "nmbuSamordnaProgram": [],
+   "samordna2026": {
+    "sokere": 56908,
+    "forstevalg": 10399,
+    "plasser": 7047,
+    "kvalifiserte": 53532,
+    "tilbud": 11793,
+    "program": 256
+   },
+   "nmbuAndelFv": {
+    "2021": 0.0,
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+   }
+  },
+  {
+   "id": "kunst",
+   "navn": "Kunst, musikk og design",
+   "nusFaggrupper": {
+    "15": "Musikk, dans og drama",
+    "16": "Bildende kunst og kunsthåndverk"
+   },
+   "samordnaUtdanningstyper": [
+    "Estetiske fag"
+   ],
+   "antall": {
+    "dbhProgramAktive": 333,
+    "dbhGradsprogramAktive": 205,
+    "soProgramAktive": 56
+   },
+   "nmbuFakulteter": [],
+   "nmbuKonkurrerer": false,
+   "nmbuSamordnaProgram": [],
+   "samordna2026": {
+    "sokere": 10118,
+    "forstevalg": 2021,
+    "plasser": 1229,
+    "kvalifiserte": 7201,
+    "tilbud": 1829,
+    "program": 56
+   },
+   "nmbuAndelFv": {
+    "2021": 0.0,
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+   }
+  },
+  {
+   "id": "idrett",
+   "navn": "Idrett",
+   "nusFaggrupper": {
+    "68": "Idrettsfag"
+   },
+   "samordnaUtdanningstyper": [
+    "Idrettsfag"
+   ],
+   "antall": {
+    "dbhProgramAktive": 155,
+    "dbhGradsprogramAktive": 94,
+    "soProgramAktive": 49
+   },
+   "nmbuFakulteter": [],
+   "nmbuKonkurrerer": false,
+   "nmbuSamordnaProgram": [],
+   "samordna2026": {
+    "sokere": 21405,
+    "forstevalg": 3195,
+    "plasser": 1539,
+    "kvalifiserte": 19804,
+    "tilbud": 3501,
+    "program": 49
+   },
+   "nmbuAndelFv": {
+    "2021": 0.0,
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+   }
+  },
+  {
+   "id": "sikkerhet",
+   "navn": "Samferdsel, sikkerhet og forsvar",
+   "nusFaggrupper": {
+    "81": "Samferdsel",
+    "82": "Sikkerhet",
+    "89": "Samferdsels- og sikkerhetsfag og andre servicefag, andre"
+   },
+   "samordnaUtdanningstyper": [],
+   "antall": {
+    "dbhProgramAktive": 337,
+    "dbhGradsprogramAktive": 77,
+    "soProgramAktive": 21
+   },
+   "nmbuFakulteter": [],
+   "nmbuKonkurrerer": false,
+   "nmbuSamordnaProgram": [],
+   "samordna2026": {
+    "sokere": 20874,
+    "forstevalg": 5430,
+    "plasser": 1335,
+    "kvalifiserte": 15696,
+    "tilbud": 2527,
+    "program": 21
+   },
+   "nmbuAndelFv": {
+    "2021": 0.0,
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+   }
+  },
+  {
+   "id": "uoppgitt",
+   "navn": "Uoppgitt fagfelt",
+   "nusFaggrupper": {
+    "09": null,
+    "99": "Uoppgitt faggruppe"
+   },
+   "samordnaUtdanningstyper": [],
+   "antall": {
+    "dbhProgramAktive": 173,
+    "dbhGradsprogramAktive": 29,
+    "soProgramAktive": 0
+   },
+   "nmbuFakulteter": [],
+   "nmbuKonkurrerer": false,
+   "nmbuSamordnaProgram": [],
+   "samordna2026": null,
+   "nmbuAndelFv": null
+  }
+ ]
+}

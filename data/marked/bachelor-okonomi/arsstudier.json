@@ -1,0 +1,5438 @@
+{
+ "meta": {
+  "hentet": "2026-10-17",
+  "beskrivelse": "Årsstudier i Samordnas utvalg (økonomisk-administrative fag og tillegg). Ikke koblet til DBH."
+ },
+ "programmer": [
+  {
+   "id": "so-184239",
+   "institusjon": "Universitetet i Bergen",
+   "institusjonKort": "UiB",
+   "dbhInstitusjonskode": "1120",
+   "sektor": "offentlig",
+   "campus": "Bergen",
+   "campusAlle": [
+    "Bergen"
+   ],
+   "programnavn": "Samfunnsøkonomi, årsstudium",
+   "programnavnTidligere": [],
+   "fagomraade": "samfunnsøkonomi",
+   "type": "samf.",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "stedbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "184239",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www4.uib.no/program/samfunnsokonomi-arsstudium",
+   "studieplasser": {
+    "2021": 40,
+    "2022": 50,
+    "2023": 43,
+    "2024": 23,
+    "2025": 23,
+    "2026": 23
+   },
+   "sokere": {
+    "alle": {
+     "2021": 1247,
+     "2022": 941,
+     "2023": 967,
+     "2024": 1139,
+     "2025": 1118,
+     "2026": 1124
+    },
+    "forstevalg": {
+     "2021": 120,
+     "2022": 105,
+     "2023": 90,
+     "2024": 98,
+     "2025": 125,
+     "2026": 113
+    },
+    "forstevalgKvinnerProsent": {
+     "2021": 48.3,
+     "2022": 51.4,
+     "2023": 47.8,
+     "2024": 46.9,
+     "2025": 49.6,
+     "2026": 39.8
+    },
+    "kvalifiserte": {
+     "2021": 1214,
+     "2022": 924,
+     "2023": 945,
+     "2024": 1100,
+     "2025": 1088,
+     "2026": 1084
+    },
+    "tilbud": {
+     "2021": 136,
+     "2022": 136,
+     "2023": 126,
+     "2024": 130,
+     "2025": 135,
+     "2026": 114
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2020": 54.3,
+     "2021": 53.8,
+     "2022": 52.7,
+     "2023": 52.8,
+     "2024": 53.0,
+     "2025": 54.2,
+     "2026": 55.0
+    },
+    "forstegangsvitnemal": {
+     "2020": 47.9,
+     "2021": 49.3,
+     "2022": 49.3,
+     "2023": 48.3,
+     "2024": 48.0,
+     "2025": 47.8,
+     "2026": 47.3
+    },
+    "ordinarSupplering": {
+     "2020": 54.2,
+     "2021": 53.8,
+     "2022": 52.7,
+     "2023": 52.8,
+     "2024": 53.0,
+     "2025": 54.0,
+     "2026": 54.8
+    },
+    "forstegangsvitnemalSupplering": {
+     "2020": 47.2,
+     "2021": 49.3,
+     "2022": 49.0,
+     "2023": 48.3,
+     "2024": 48.0,
+     "2025": 47.4,
+     "2026": 47.2
+    }
+   },
+   "status": "aktiv",
+   "forsteOpptakSO": "2016",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-185218",
+   "institusjon": "Universitetet i Oslo",
+   "institusjonKort": "UiO",
+   "dbhInstitusjonskode": "1110",
+   "sektor": "offentlig",
+   "campus": "Oslo",
+   "campusAlle": [
+    "Oslo"
+   ],
+   "programnavn": "Helseøkonomi og administrasjon",
+   "programnavnTidligere": [],
+   "fagomraade": "økonomi og administrasjon",
+   "type": "BØA",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "stedbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "185218",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.uio.no/studier/program/helseokonomi-administrasjon/",
+   "studieplasser": {
+    "2026": 50
+   },
+   "sokere": {
+    "alle": {
+     "2026": 1715
+    },
+    "forstevalg": {
+     "2026": 335
+    },
+    "forstevalgKvinnerProsent": {
+     "2026": 79.4
+    },
+    "kvalifiserte": {
+     "2026": 1604
+    },
+    "tilbud": {
+     "2026": 120
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2026": 61.9
+    },
+    "forstegangsvitnemal": {
+     "2026": 37.9
+    },
+    "ordinarSupplering": {
+     "2026": 57.7
+    },
+    "forstegangsvitnemalSupplering": {
+     "2026": 0.0
+    }
+   },
+   "status": "ny",
+   "forsteOpptakSO": "2026",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-185239",
+   "institusjon": "Universitetet i Oslo",
+   "institusjonKort": "UiO",
+   "dbhInstitusjonskode": "1110",
+   "sektor": "offentlig",
+   "campus": "Oslo",
+   "campusAlle": [
+    "Oslo"
+   ],
+   "programnavn": "Samfunnsøkonomi, årsstudium",
+   "programnavnTidligere": [],
+   "fagomraade": "samfunnsøkonomi",
+   "type": "samf.",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "stedbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "185239",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "http://www.uio.no/studier/program/samfunnsokonomi-aarsenhet/",
+   "studieplasser": {
+    "2021": 50,
+    "2022": 50,
+    "2023": 40,
+    "2024": 40,
+    "2025": 40,
+    "2026": 40
+   },
+   "sokere": {
+    "alle": {
+     "2021": 1298,
+     "2022": 1126,
+     "2023": 1211,
+     "2024": 1286,
+     "2025": 1408,
+     "2026": 1276
+    },
+    "forstevalg": {
+     "2021": 169,
+     "2022": 129,
+     "2023": 131,
+     "2024": 184,
+     "2025": 237,
+     "2026": 176
+    },
+    "forstevalgKvinnerProsent": {
+     "2021": 49.1,
+     "2022": 53.5,
+     "2023": 47.3,
+     "2024": 41.3,
+     "2025": 48.9,
+     "2026": 53.4
+    },
+    "kvalifiserte": {
+     "2021": 1269,
+     "2022": 1098,
+     "2023": 1156,
+     "2024": 1238,
+     "2025": 1374,
+     "2026": 1243
+    },
+    "tilbud": {
+     "2021": 130,
+     "2022": 130,
+     "2023": 120,
+     "2024": 109,
+     "2025": 112,
+     "2026": 110
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2020": 64.1,
+     "2021": 58.6,
+     "2022": 58.1,
+     "2023": 59.0,
+     "2024": 61.1,
+     "2025": 63.5,
+     "2026": 63.2
+    },
+    "forstegangsvitnemal": {
+     "2020": 50.0,
+     "2021": 48.5,
+     "2022": 46.8,
+     "2023": 47.2,
+     "2024": 47.0,
+     "2025": 48.1,
+     "2026": 46.5
+    },
+    "ordinarSupplering": {
+     "2020": 62.2,
+     "2021": 58.6,
+     "2022": 58.1,
+     "2023": 59.0,
+     "2024": 61.1,
+     "2025": 63.5,
+     "2026": 63.2
+    },
+    "forstegangsvitnemalSupplering": {
+     "2020": 48.0,
+     "2021": 48.5,
+     "2022": 46.8,
+     "2023": 47.2,
+     "2024": 47.0,
+     "2025": 48.1,
+     "2026": 46.5
+    }
+   },
+   "status": "aktiv",
+   "forsteOpptakSO": "2018",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-186162",
+   "institusjon": "UiT Norges arktiske universitet",
+   "institusjonKort": "UiT",
+   "dbhInstitusjonskode": "1130",
+   "sektor": "offentlig",
+   "campus": "Harstad",
+   "campusAlle": [
+    "Harstad"
+   ],
+   "programnavn": "Praktisk prosjektledelse, deltid",
+   "programnavnTidligere": [],
+   "fagomraade": "administrasjon og ledelse",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": false,
+   "studieform": "samlingsbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "186162",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://uit.no/utdanning/program?p_document_id=444398",
+   "studieplasser": {
+    "2021": 100,
+    "2022": 80,
+    "2023": 80,
+    "2024": 80,
+    "2025": 50,
+    "2026": 50
+   },
+   "sokere": {
+    "alle": {
+     "2021": 520,
+     "2022": 327,
+     "2023": 373,
+     "2024": 357,
+     "2025": 306,
+     "2026": 337
+    },
+    "forstevalg": {
+     "2021": 120,
+     "2022": 69,
+     "2023": 92,
+     "2024": 73,
+     "2025": 86,
+     "2026": 58
+    },
+    "forstevalgKvinnerProsent": {
+     "2021": 64.2,
+     "2022": 62.3,
+     "2023": 65.2,
+     "2024": 58.9,
+     "2025": 65.1,
+     "2026": 56.9
+    },
+    "kvalifiserte": {
+     "2021": 491,
+     "2022": 299,
+     "2023": 346,
+     "2024": 331,
+     "2025": 292,
+     "2026": 319
+    },
+    "tilbud": {
+     "2021": 181,
+     "2022": 85,
+     "2023": 115,
+     "2024": 100,
+     "2025": 107,
+     "2026": 81
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemal": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "ordinarSupplering": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    }
+   },
+   "status": "aktiv",
+   "forsteOpptakSO": "2016",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-186164",
+   "institusjon": "UiT Norges arktiske universitet",
+   "institusjonKort": "UiT",
+   "dbhInstitusjonskode": "1130",
+   "sektor": "offentlig",
+   "campus": "Alta",
+   "campusAlle": [
+    "Alta"
+   ],
+   "programnavn": "Bedriftsøkonomi, deltid",
+   "programnavnTidligere": [],
+   "fagomraade": "økonomi og administrasjon",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": false,
+   "studieform": "nett",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "186164",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://uit.no/utdanning/program?p_document_id=380536",
+   "studieplasser": {
+    "2021": 400,
+    "2022": 400,
+    "2023": 400,
+    "2024": 400,
+    "2025": 400,
+    "2026": 400
+   },
+   "sokere": {
+    "alle": {
+     "2021": 1662,
+     "2022": 1339,
+     "2023": 1756,
+     "2024": 2073,
+     "2025": 1729,
+     "2026": 1505
+    },
+    "forstevalg": {
+     "2021": 404,
+     "2022": 298,
+     "2023": 374,
+     "2024": 413,
+     "2025": 272,
+     "2026": 235
+    },
+    "forstevalgKvinnerProsent": {
+     "2021": 56.2,
+     "2022": 48.3,
+     "2023": 55.9,
+     "2024": 53.5,
+     "2025": 50.4,
+     "2026": 51.5
+    },
+    "kvalifiserte": {
+     "2021": 1545,
+     "2022": 1253,
+     "2023": 1632,
+     "2024": 1962,
+     "2025": 1633,
+     "2026": 1425
+    },
+    "tilbud": {
+     "2021": 659,
+     "2022": 448,
+     "2023": 549,
+     "2024": 761,
+     "2025": 564,
+     "2026": 482
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemal": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "ordinarSupplering": {
+     "2020": 0.0,
+     "2021": 30.2,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    }
+   },
+   "status": "aktiv",
+   "forsteOpptakSO": "2016",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": [
+    {
+     "gruppe": "aarsstudier",
+     "gruppenavn": "Årsstudier i økonomi og ledelse",
+     "entryId": "uit_bedok_ar",
+     "default": false,
+     "programnavnHH": "Bedriftsøkonomi, deltid (årsstudium)",
+     "studiekodeHH": "186164",
+     "dbhKoderHH": [
+      "ST-BEDØK"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "so-186206",
+   "institusjon": "UiT Norges arktiske universitet",
+   "institusjonKort": "UiT",
+   "dbhInstitusjonskode": "1130",
+   "sektor": "offentlig",
+   "campus": "Harstad",
+   "campusAlle": [
+    "Harstad"
+   ],
+   "programnavn": "Markedsføringsledelse",
+   "programnavnTidligere": [],
+   "fagomraade": "markedsføring og kommunikasjon",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "samlingsbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "186206",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://uit.no/utdanning/program/917561/markedsforingsledelse_-_arsstudium",
+   "studieplasser": {
+    "2026": 40
+   },
+   "sokere": {
+    "alle": {
+     "2026": 192
+    },
+    "forstevalg": {
+     "2026": 19
+    },
+    "forstevalgKvinnerProsent": {
+     "2026": 68.4
+    },
+    "kvalifiserte": {
+     "2026": 174
+    },
+    "tilbud": {
+     "2026": 25
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2026": 0.0
+    },
+    "forstegangsvitnemal": {
+     "2026": 0.0
+    },
+    "ordinarSupplering": {
+     "2026": 0.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2026": 0.0
+    }
+   },
+   "status": "ny",
+   "forsteOpptakSO": "2026",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-186627",
+   "institusjon": "UiT Norges arktiske universitet",
+   "institusjonKort": "UiT",
+   "dbhInstitusjonskode": "1130",
+   "sektor": "offentlig",
+   "campus": "Harstad",
+   "campusAlle": [
+    "Harstad"
+   ],
+   "programnavn": "Logistikk og forsyningsledelse",
+   "programnavnTidligere": [],
+   "fagomraade": "logistikk og shipping",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "samlingsbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "186627",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://uit.no/utdanning/program/917562/logistikk_og_forsyningsledelse_-_arsstudium",
+   "studieplasser": {
+    "2026": 40
+   },
+   "sokere": {
+    "alle": {
+     "2026": 222
+    },
+    "forstevalg": {
+     "2026": 33
+    },
+    "forstevalgKvinnerProsent": {
+     "2026": 51.5
+    },
+    "kvalifiserte": {
+     "2026": 202
+    },
+    "tilbud": {
+     "2026": 42
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2026": 0.0
+    },
+    "forstegangsvitnemal": {
+     "2026": 0.0
+    },
+    "ordinarSupplering": {
+     "2026": 0.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2026": 0.0
+    }
+   },
+   "status": "ny",
+   "forsteOpptakSO": "2026",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-186664",
+   "institusjon": "UiT Norges arktiske universitet",
+   "institusjonKort": "UiT",
+   "dbhInstitusjonskode": "1130",
+   "sektor": "offentlig",
+   "campus": "Alta",
+   "campusAlle": [
+    "Alta"
+   ],
+   "programnavn": "Ledelse, deltid",
+   "programnavnTidligere": [],
+   "fagomraade": "administrasjon og ledelse",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": false,
+   "studieform": "nett",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "186664",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://uit.no/utdanning/program?p_document_id=380538",
+   "studieplasser": {
+    "2021": 800,
+    "2022": 800,
+    "2023": 800,
+    "2024": 800,
+    "2025": 700,
+    "2026": 700
+   },
+   "sokere": {
+    "alle": {
+     "2021": 3053,
+     "2022": 2801,
+     "2023": 3445,
+     "2024": 3865,
+     "2025": 3667,
+     "2026": 3099
+    },
+    "forstevalg": {
+     "2021": 1228,
+     "2022": 965,
+     "2023": 1287,
+     "2024": 1416,
+     "2025": 1214,
+     "2026": 668
+    },
+    "forstevalgKvinnerProsent": {
+     "2021": 62.9,
+     "2022": 64.9,
+     "2023": 64.2,
+     "2024": 62.8,
+     "2025": 62.9,
+     "2026": 61.8
+    },
+    "kvalifiserte": {
+     "2021": 2907,
+     "2022": 2680,
+     "2023": 3291,
+     "2024": 3706,
+     "2025": 3544,
+     "2026": 2979
+    },
+    "tilbud": {
+     "2021": 1100,
+     "2022": 1200,
+     "2023": 1100,
+     "2024": 1200,
+     "2025": 1200,
+     "2026": 1200
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2020": 48.7,
+     "2021": 45.6,
+     "2022": 40.2,
+     "2023": 46.7,
+     "2024": 47.3,
+     "2025": 46.2,
+     "2026": 39.2
+    },
+    "forstegangsvitnemal": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "ordinarSupplering": {
+     "2020": 48.6,
+     "2021": 44.5,
+     "2022": 40.2,
+     "2023": 46.7,
+     "2024": 47.3,
+     "2025": 46.2,
+     "2026": 0.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    }
+   },
+   "status": "aktiv",
+   "forsteOpptakSO": "2016",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": [
+    {
+     "gruppe": "aarsstudier",
+     "gruppenavn": "Årsstudier i økonomi og ledelse",
+     "entryId": "uit_ledelse_ar",
+     "default": true,
+     "programnavnHH": "Ledelse, deltid (årsstudium)",
+     "studiekodeHH": "186664",
+     "dbhKoderHH": [
+      "ST-LEDE"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "so-192253",
+   "institusjon": "Norges miljø- og biovitenskapelige universitet",
+   "institusjonKort": "NMBU",
+   "dbhInstitusjonskode": "1173",
+   "sektor": "offentlig",
+   "campus": "Ås",
+   "campusAlle": [
+    "Ås"
+   ],
+   "programnavn": "Bærekraftig økonomi og ledelse, deltid",
+   "programnavnTidligere": [],
+   "fagomraade": "økonomi og administrasjon",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": false,
+   "studieform": "nett",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "192253",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.nmbu.no/studier/studietilbud/andre/arsenhet-barekraftig-okonomi",
+   "studieplasser": {
+    "2023": 200,
+    "2024": 950,
+    "2025": 950,
+    "2026": 950
+   },
+   "sokere": {
+    "alle": {
+     "2023": 3087,
+     "2024": 3312,
+     "2025": 2958,
+     "2026": 3046
+    },
+    "forstevalg": {
+     "2023": 1026,
+     "2024": 1134,
+     "2025": 1038,
+     "2026": 986
+    },
+    "forstevalgKvinnerProsent": {
+     "2023": 67.7,
+     "2024": 63.7,
+     "2025": 65.2,
+     "2026": 64.6
+    },
+    "kvalifiserte": {
+     "2023": 2949,
+     "2024": 3159,
+     "2025": 2817,
+     "2026": 2899
+    },
+    "tilbud": {
+     "2023": 1478,
+     "2024": 1596,
+     "2025": 1393,
+     "2026": 1391
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemal": {
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "ordinarSupplering": {
+     "2023": 0.0,
+     "2024": 28.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    }
+   },
+   "status": "ny",
+   "forsteOpptakSO": "2023",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": [
+    {
+     "gruppe": "aarsstudier",
+     "gruppenavn": "Årsstudier i økonomi og ledelse",
+     "entryId": "nmbu_bel",
+     "default": true,
+     "programnavnHH": "Bærekraftig økonomi og ledelse, deltid (årsstudium)",
+     "studiekodeHH": "192253",
+     "dbhKoderHH": [
+      "KVU-BEDØK"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "so-194160",
+   "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+   "institusjonKort": "NTNU",
+   "dbhInstitusjonskode": "1150",
+   "sektor": "offentlig",
+   "campus": "Gjøvik",
+   "campusAlle": [
+    "Gjøvik"
+   ],
+   "programnavn": "Økonomi og ledelse, årsstudium",
+   "programnavnTidligere": [],
+   "fagomraade": "økonomi og administrasjon",
+   "type": "BØA",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "stedbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "194160",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.ntnu.no/studier/aarokled",
+   "studieplasser": {
+    "2021": 30,
+    "2022": 30,
+    "2023": 20,
+    "2024": 20,
+    "2025": 20,
+    "2026": 20
+   },
+   "sokere": {
+    "alle": {
+     "2021": 471,
+     "2022": 290,
+     "2023": 258,
+     "2024": 308,
+     "2025": 313,
+     "2026": 290
+    },
+    "forstevalg": {
+     "2021": 56,
+     "2022": 26,
+     "2023": 29,
+     "2024": 28,
+     "2025": 35,
+     "2026": 24
+    },
+    "forstevalgKvinnerProsent": {
+     "2021": 30.4,
+     "2022": 38.5,
+     "2023": 41.4,
+     "2024": 32.1,
+     "2025": 45.7,
+     "2026": 66.7
+    },
+    "kvalifiserte": {
+     "2021": 450,
+     "2022": 273,
+     "2023": 236,
+     "2024": 288,
+     "2025": 296,
+     "2026": 269
+    },
+    "tilbud": {
+     "2021": 96,
+     "2022": 42,
+     "2023": 40,
+     "2024": 50,
+     "2025": 66,
+     "2026": 40
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2020": 47.1,
+     "2021": 46.7,
+     "2022": 47.6,
+     "2023": 44.9,
+     "2024": 45.4,
+     "2025": 40.0,
+     "2026": 51.9
+    },
+    "forstegangsvitnemal": {
+     "2020": 31.5,
+     "2021": 33.9,
+     "2022": 35.5,
+     "2023": 37.1,
+     "2024": 35.7,
+     "2025": 0.0,
+     "2026": 35.4
+    },
+    "ordinarSupplering": {
+     "2020": 46.1,
+     "2021": 46.7,
+     "2022": 47.6,
+     "2023": 44.9,
+     "2024": 43.8,
+     "2025": 0.0,
+     "2026": 51.9
+    },
+    "forstegangsvitnemalSupplering": {
+     "2020": 30.1,
+     "2021": 33.9,
+     "2022": 35.5,
+     "2023": 37.1,
+     "2024": 35.7,
+     "2025": 0.0,
+     "2026": 35.4
+    }
+   },
+   "status": "aktiv",
+   "forsteOpptakSO": "2016",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-194162",
+   "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+   "institusjonKort": "NTNU",
+   "dbhInstitusjonskode": "1150",
+   "sektor": "offentlig",
+   "campus": "Ålesund",
+   "campusAlle": [
+    "Ålesund"
+   ],
+   "programnavn": "Økonomi og ledelse",
+   "programnavnTidligere": [],
+   "fagomraade": "økonomi og administrasjon",
+   "type": "BØA",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "stedbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "194162",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.ntnu.no/studier/162al",
+   "studieplasser": {
+    "2021": 30,
+    "2022": 30,
+    "2023": 30
+   },
+   "sokere": {
+    "alle": {
+     "2021": 576,
+     "2022": 451,
+     "2023": 510
+    },
+    "forstevalg": {
+     "2021": 96,
+     "2022": 59,
+     "2023": 70
+    },
+    "forstevalgKvinnerProsent": {
+     "2021": 47.9,
+     "2022": 62.7,
+     "2023": 61.4
+    },
+    "kvalifiserte": {
+     "2021": 559,
+     "2022": 437,
+     "2023": 471
+    },
+    "tilbud": {
+     "2021": 80,
+     "2022": 100,
+     "2023": 80
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2020": 51.1,
+     "2021": 51.9,
+     "2022": 43.9,
+     "2023": 46.2
+    },
+    "forstegangsvitnemal": {
+     "2020": 40.9,
+     "2021": 40.0,
+     "2022": 34.5,
+     "2023": 42.6
+    },
+    "ordinarSupplering": {
+     "2020": 49.1,
+     "2021": 51.9,
+     "2022": 43.9,
+     "2023": 46.2
+    },
+    "forstegangsvitnemalSupplering": {
+     "2020": 39.2,
+     "2021": 40.0,
+     "2022": 34.5,
+     "2023": 42.6
+    }
+   },
+   "status": "nedlagt",
+   "forsteOpptakSO": "2016",
+   "sisteOpptakSO": "2023",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-194218",
+   "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+   "institusjonKort": "NTNU",
+   "dbhInstitusjonskode": "1150",
+   "sektor": "offentlig",
+   "campus": "Trondheim",
+   "campusAlle": [
+    "Trondheim"
+   ],
+   "programnavn": "Økonomi og administrasjon, Trondheim, årsstudium",
+   "programnavnTidligere": [
+    "Økonomi og administrasjon, årsstudium"
+   ],
+   "fagomraade": "økonomi og administrasjon",
+   "type": "BØA",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "stedbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "194218",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.ntnu.no/studier/aaokadm",
+   "studieplasser": {
+    "2021": 40,
+    "2022": 40,
+    "2023": 40,
+    "2024": 40,
+    "2025": 40
+   },
+   "sokere": {
+    "alle": {
+     "2021": 1403,
+     "2022": 1145,
+     "2023": 1345,
+     "2024": 1452,
+     "2025": 1310
+    },
+    "forstevalg": {
+     "2021": 267,
+     "2022": 203,
+     "2023": 250,
+     "2024": 265,
+     "2025": 218
+    },
+    "forstevalgKvinnerProsent": {
+     "2021": 56.6,
+     "2022": 54.7,
+     "2023": 56.8,
+     "2024": 56.2,
+     "2025": 54.6
+    },
+    "kvalifiserte": {
+     "2021": 1367,
+     "2022": 1121,
+     "2023": 1311,
+     "2024": 1414,
+     "2025": 1286
+    },
+    "tilbud": {
+     "2021": 80,
+     "2022": 80,
+     "2023": 80,
+     "2024": 88,
+     "2025": 86
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2020": 63.0,
+     "2021": 62.6,
+     "2022": 60.8,
+     "2023": 61.3,
+     "2024": 63.2,
+     "2025": 62.7
+    },
+    "forstegangsvitnemal": {
+     "2020": 51.5,
+     "2021": 53.3,
+     "2022": 52.7,
+     "2023": 53.5,
+     "2024": 52.3,
+     "2025": 52.2
+    },
+    "ordinarSupplering": {
+     "2020": 63.0,
+     "2021": 62.6,
+     "2022": 60.8,
+     "2023": 60.4,
+     "2024": 63.2,
+     "2025": 61.6
+    },
+    "forstegangsvitnemalSupplering": {
+     "2020": 51.5,
+     "2021": 53.3,
+     "2022": 52.7,
+     "2023": 52.5,
+     "2024": 52.2,
+     "2025": 51.9
+    }
+   },
+   "status": "nedlagt",
+   "forsteOpptakSO": "2019",
+   "sisteOpptakSO": "2025",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-194239",
+   "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+   "institusjonKort": "NTNU",
+   "dbhInstitusjonskode": "1150",
+   "sektor": "offentlig",
+   "campus": "Trondheim",
+   "campusAlle": [
+    "Trondheim"
+   ],
+   "programnavn": "Samfunnsøkonomi, årsstudium",
+   "programnavnTidligere": [],
+   "fagomraade": "samfunnsøkonomi",
+   "type": "samf.",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "stedbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "194239",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.ntnu.no/studier/aasok",
+   "studieplasser": {
+    "2021": 50,
+    "2022": 50,
+    "2023": 50,
+    "2024": 50,
+    "2025": 50,
+    "2026": 50
+   },
+   "sokere": {
+    "alle": {
+     "2021": 1288,
+     "2022": 1105,
+     "2023": 1122,
+     "2024": 1134,
+     "2025": 1170,
+     "2026": 1189
+    },
+    "forstevalg": {
+     "2021": 127,
+     "2022": 104,
+     "2023": 103,
+     "2024": 91,
+     "2025": 114,
+     "2026": 164
+    },
+    "forstevalgKvinnerProsent": {
+     "2021": 28.3,
+     "2022": 33.7,
+     "2023": 41.7,
+     "2024": 46.2,
+     "2025": 36.8,
+     "2026": 40.9
+    },
+    "kvalifiserte": {
+     "2021": 1261,
+     "2022": 1084,
+     "2023": 1097,
+     "2024": 1109,
+     "2025": 1151,
+     "2026": 1169
+    },
+    "tilbud": {
+     "2021": 140,
+     "2022": 110,
+     "2023": 104,
+     "2024": 112,
+     "2025": 100,
+     "2026": 104
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2020": 51.8,
+     "2021": 53.6,
+     "2022": 53.9,
+     "2023": 55.0,
+     "2024": 55.7,
+     "2025": 57.3,
+     "2026": 61.5
+    },
+    "forstegangsvitnemal": {
+     "2020": 45.5,
+     "2021": 47.9,
+     "2022": 48.0,
+     "2023": 48.8,
+     "2024": 48.8,
+     "2025": 48.9,
+     "2026": 49.2
+    },
+    "ordinarSupplering": {
+     "2020": 51.8,
+     "2021": 53.6,
+     "2022": 53.4,
+     "2023": 55.0,
+     "2024": 55.7,
+     "2025": 56.9,
+     "2026": 61.5
+    },
+    "forstegangsvitnemalSupplering": {
+     "2020": 45.5,
+     "2021": 47.9,
+     "2022": 47.8,
+     "2023": 48.8,
+     "2024": 48.8,
+     "2025": 48.9,
+     "2026": 49.2
+    }
+   },
+   "status": "aktiv",
+   "forsteOpptakSO": "2016",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-194583",
+   "institusjon": "Norges teknisk-naturvitenskapelige universitet",
+   "institusjonKort": "NTNU",
+   "dbhInstitusjonskode": "1150",
+   "sektor": "offentlig",
+   "campus": "Gjøvik",
+   "campusAlle": [
+    "Gjøvik"
+   ],
+   "programnavn": "Økonomi og ledelse, deltid, årsstudium",
+   "programnavnTidligere": [],
+   "fagomraade": "økonomi og administrasjon",
+   "type": "BØA",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": false,
+   "studieform": "nett",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "194583",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.ntnu.no/studier/aarokledf",
+   "studieplasser": {
+    "2025": 50,
+    "2026": 50
+   },
+   "sokere": {
+    "alle": {
+     "2025": 3567,
+     "2026": 2749
+    },
+    "forstevalg": {
+     "2025": 846,
+     "2026": 703
+    },
+    "forstevalgKvinnerProsent": {
+     "2025": 55.2,
+     "2026": 54.6
+    },
+    "kvalifiserte": {
+     "2025": 3409,
+     "2026": 2633
+    },
+    "tilbud": {
+     "2025": 200,
+     "2026": 230
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2025": 61.5,
+     "2026": 61.1
+    },
+    "forstegangsvitnemal": {
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "ordinarSupplering": {
+     "2025": 61.5,
+     "2026": 61.1
+    },
+    "forstegangsvitnemalSupplering": {
+     "2025": 0.0,
+     "2026": 0.0
+    }
+   },
+   "status": "ny",
+   "forsteOpptakSO": "2025",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": [
+    {
+     "gruppe": "aarsstudier",
+     "gruppenavn": "Årsstudier i økonomi og ledelse",
+     "entryId": "ntnu_okled_ar",
+     "default": true,
+     "programnavnHH": "Økonomi og ledelse, deltid (årsstudium)",
+     "studiekodeHH": "194583",
+     "dbhKoderHH": [
+      "ÅRØKLEDF"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "so-203162",
+   "institusjon": "Høgskulen på Vestlandet",
+   "institusjonKort": "HVL",
+   "dbhInstitusjonskode": "0238",
+   "sektor": "offentlig",
+   "campus": "Haugesund",
+   "campusAlle": [
+    "Haugesund"
+   ],
+   "programnavn": "Administrasjon og ledelse",
+   "programnavnTidligere": [],
+   "fagomraade": "administrasjon og ledelse",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "stedbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "203162",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.hvl.no/studier/studieprogram/administrasjon-og-ledelse-arsstudium/",
+   "studieplasser": {
+    "2023": 30,
+    "2024": 30,
+    "2025": 30,
+    "2026": 30
+   },
+   "sokere": {
+    "alle": {
+     "2023": 1032,
+     "2024": 972,
+     "2025": 895,
+     "2026": 1013
+    },
+    "forstevalg": {
+     "2023": 181,
+     "2024": 161,
+     "2025": 146,
+     "2026": 154
+    },
+    "forstevalgKvinnerProsent": {
+     "2023": 58.0,
+     "2024": 60.9,
+     "2025": 57.5,
+     "2026": 61.7
+    },
+    "kvalifiserte": {
+     "2023": 900,
+     "2024": 844,
+     "2025": 759,
+     "2026": 875
+    },
+    "tilbud": {
+     "2023": 142,
+     "2024": 220,
+     "2025": 182,
+     "2026": 200
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2023": 48.0,
+     "2024": 37.6,
+     "2025": 39.8,
+     "2026": 44.4
+    },
+    "forstegangsvitnemal": {
+     "2023": 37.8,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 31.8
+    },
+    "ordinarSupplering": {
+     "2023": 0.0,
+     "2024": 37.0,
+     "2025": 39.8,
+     "2026": 44.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    }
+   },
+   "status": "ny",
+   "forsteOpptakSO": "2023",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-203164",
+   "institusjon": "Høgskulen på Vestlandet",
+   "institusjonKort": "HVL",
+   "dbhInstitusjonskode": "0238",
+   "sektor": "offentlig",
+   "campus": "Haugesund",
+   "campusAlle": [
+    "Haugesund"
+   ],
+   "programnavn": "Bedriftsøkonomi",
+   "programnavnTidligere": [],
+   "fagomraade": "økonomi og administrasjon",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "stedbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "203164",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.hvl.no/studier/studieprogram/bedriftsokonomi/",
+   "studieplasser": {
+    "2025": 30,
+    "2026": 20
+   },
+   "sokere": {
+    "alle": {
+     "2025": 252,
+     "2026": 220
+    },
+    "forstevalg": {
+     "2025": 19,
+     "2026": 14
+    },
+    "forstevalgKvinnerProsent": {
+     "2025": 52.6,
+     "2026": 42.9
+    },
+    "kvalifiserte": {
+     "2025": 225,
+     "2026": 192
+    },
+    "tilbud": {
+     "2025": 34,
+     "2026": 32
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemal": {
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "ordinarSupplering": {
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2025": 0.0,
+     "2026": 0.0
+    }
+   },
+   "status": "ny",
+   "forsteOpptakSO": "2025",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-203218",
+   "institusjon": "Høgskulen på Vestlandet",
+   "institusjonKort": "HVL",
+   "dbhInstitusjonskode": "0238",
+   "sektor": "offentlig",
+   "campus": "Bergen",
+   "campusAlle": [
+    "Bergen"
+   ],
+   "programnavn": "Digital økonomi og ledelse",
+   "programnavnTidligere": [],
+   "fagomraade": "økonomi og administrasjon",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "stedbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "203218",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.hvl.no/studier/studieprogram/digital-okonomi-og-ledelse-aarsstudium/",
+   "studieplasser": {
+    "2023": 30,
+    "2024": 30,
+    "2025": 30,
+    "2026": 30
+   },
+   "sokere": {
+    "alle": {
+     "2023": 1594,
+     "2024": 1472,
+     "2025": 1503,
+     "2026": 1409
+    },
+    "forstevalg": {
+     "2023": 266,
+     "2024": 168,
+     "2025": 153,
+     "2026": 139
+    },
+    "forstevalgKvinnerProsent": {
+     "2023": 43.6,
+     "2024": 53.0,
+     "2025": 54.9,
+     "2026": 50.4
+    },
+    "kvalifiserte": {
+     "2023": 1504,
+     "2024": 1404,
+     "2025": 1443,
+     "2026": 1336
+    },
+    "tilbud": {
+     "2023": 74,
+     "2024": 120,
+     "2025": 94,
+     "2026": 94
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2023": 57.2,
+     "2024": 55.5,
+     "2025": 56.2,
+     "2026": 56.0
+    },
+    "forstegangsvitnemal": {
+     "2023": 48.4,
+     "2024": 47.2,
+     "2025": 47.6,
+     "2026": 47.4
+    },
+    "ordinarSupplering": {
+     "2023": 57.0,
+     "2024": 54.9,
+     "2025": 56.2,
+     "2026": 54.7
+    },
+    "forstegangsvitnemalSupplering": {
+     "2023": 47.5,
+     "2024": 47.2,
+     "2025": 47.6,
+     "2026": 46.8
+    }
+   },
+   "status": "ny",
+   "forsteOpptakSO": "2022",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": [
+    {
+     "gruppe": "olit",
+     "gruppenavn": "Økonomi, ledelse og IT",
+     "entryId": "hvl_dol",
+     "default": true,
+     "programnavnHH": "Digital økonomi og ledelse (bachelor)",
+     "studiekodeHH": "203218",
+     "dbhKoderHH": []
+    }
+   ]
+  },
+  {
+   "id": "so-203583",
+   "institusjon": "Høgskulen på Vestlandet",
+   "institusjonKort": "HVL",
+   "dbhInstitusjonskode": "0238",
+   "sektor": "offentlig",
+   "campus": "Bergen",
+   "campusAlle": [
+    "Bergen"
+   ],
+   "programnavn": "HRM og ledelse",
+   "programnavnTidligere": [],
+   "fagomraade": "administrasjon og ledelse",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "stedbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "203583",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.hvl.no/studier/studieprogram/human-resource-management-og-ledelse-hrm/",
+   "studieplasser": {
+    "2025": 30,
+    "2026": 30
+   },
+   "sokere": {
+    "alle": {
+     "2025": 1827,
+     "2026": 1359
+    },
+    "forstevalg": {
+     "2025": 338,
+     "2026": 186
+    },
+    "forstevalgKvinnerProsent": {
+     "2025": 71.3,
+     "2026": 80.1
+    },
+    "kvalifiserte": {
+     "2025": 1752,
+     "2026": 1288
+    },
+    "tilbud": {
+     "2025": 94,
+     "2026": 82
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2025": 56.7,
+     "2026": 57.2
+    },
+    "forstegangsvitnemal": {
+     "2025": 47.6,
+     "2026": 46.7
+    },
+    "ordinarSupplering": {
+     "2025": 56.7,
+     "2026": 56.7
+    },
+    "forstegangsvitnemalSupplering": {
+     "2025": 47.6,
+     "2026": 45.8
+    }
+   },
+   "status": "ny",
+   "forsteOpptakSO": "2025",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-204158",
+   "institusjon": "Nord universitet",
+   "institusjonKort": "Nord",
+   "dbhInstitusjonskode": "1174",
+   "sektor": "offentlig",
+   "campus": "Bodø",
+   "campusAlle": [
+    "Bodø"
+   ],
+   "programnavn": "HR-ledelse, deltid",
+   "programnavnTidligere": [],
+   "fagomraade": "administrasjon og ledelse",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": false,
+   "studieform": "nett",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "204158",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.nord.no/studier/hr-ledelse-arsstudium",
+   "studieplasser": {
+    "2026": 40
+   },
+   "sokere": {
+    "alle": {
+     "2026": 4030
+    },
+    "forstevalg": {
+     "2026": 1396
+    },
+    "forstevalgKvinnerProsent": {
+     "2026": 83.1
+    },
+    "kvalifiserte": {
+     "2026": 3838
+    },
+    "tilbud": {
+     "2026": 70
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2026": 63.9
+    },
+    "forstegangsvitnemal": {
+     "2026": 37.0
+    },
+    "ordinarSupplering": {
+     "2026": 61.1
+    },
+    "forstegangsvitnemalSupplering": {
+     "2026": 0.0
+    }
+   },
+   "status": "ny",
+   "forsteOpptakSO": "2026",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": [
+    {
+     "gruppe": "aarsstudier",
+     "gruppenavn": "Årsstudier i økonomi og ledelse",
+     "entryId": "nord_hr_ar",
+     "default": true,
+     "programnavnHH": "HR-ledelse, deltid (årsstudium)",
+     "studiekodeHH": "204158",
+     "dbhKoderHH": [
+      "PK1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "so-204162",
+   "institusjon": "Nord universitet",
+   "institusjonKort": "Nord",
+   "dbhInstitusjonskode": "1174",
+   "sektor": "offentlig",
+   "campus": "Bodø",
+   "campusAlle": [
+    "Bodø"
+   ],
+   "programnavn": "Personalledelse og kompetanseutvikling, Bodø",
+   "programnavnTidligere": [],
+   "fagomraade": "administrasjon og ledelse",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "samlingsbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "204162",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.nord.no/studier/personalledelse-og-kompetanseutvikling-arsstudium",
+   "studieplasser": {
+    "2021": 50,
+    "2022": 50,
+    "2023": 50,
+    "2024": 40,
+    "2025": 40,
+    "2026": 40
+   },
+   "sokere": {
+    "alle": {
+     "2021": 536,
+     "2022": 399,
+     "2023": 327,
+     "2024": 434,
+     "2025": 281,
+     "2026": 281
+    },
+    "forstevalg": {
+     "2021": 154,
+     "2022": 123,
+     "2023": 113,
+     "2024": 146,
+     "2025": 102,
+     "2026": 82
+    },
+    "forstevalgKvinnerProsent": {
+     "2021": 74.7,
+     "2022": 72.4,
+     "2023": 75.2,
+     "2024": 69.9,
+     "2025": 65.7,
+     "2026": 76.8
+    },
+    "kvalifiserte": {
+     "2021": 501,
+     "2022": 378,
+     "2023": 309,
+     "2024": 412,
+     "2025": 269,
+     "2026": 267
+    },
+    "tilbud": {
+     "2021": 110,
+     "2022": 90,
+     "2023": 90,
+     "2024": 110,
+     "2025": 90,
+     "2026": 112
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2020": 43.8,
+     "2021": 47.6,
+     "2022": 44.5,
+     "2023": 45.0,
+     "2024": 43.9,
+     "2025": 42.1,
+     "2026": 0.0
+    },
+    "forstegangsvitnemal": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "ordinarSupplering": {
+     "2020": 0.0,
+     "2021": 47.6,
+     "2022": 39.7,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 42.1,
+     "2026": 0.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    }
+   },
+   "status": "aktiv",
+   "forsteOpptakSO": "2016",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-204164",
+   "institusjon": "Nord universitet",
+   "institusjonKort": "Nord",
+   "dbhInstitusjonskode": "1174",
+   "sektor": "offentlig",
+   "campus": "Bodø",
+   "campusAlle": [
+    "Bodø"
+   ],
+   "programnavn": "Økonomi og administrasjon, Bodø, årsstudium",
+   "programnavnTidligere": [],
+   "fagomraade": "økonomi og administrasjon",
+   "type": "BØA",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "stedbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "204164",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.nord.no/studier/okonomi-og-administrasjon-arsstudium",
+   "studieplasser": {
+    "2021": 50,
+    "2022": 40,
+    "2023": 40,
+    "2024": 40,
+    "2025": 40,
+    "2026": 30
+   },
+   "sokere": {
+    "alle": {
+     "2021": 390,
+     "2022": 296,
+     "2023": 235,
+     "2024": 255,
+     "2025": 161,
+     "2026": 184
+    },
+    "forstevalg": {
+     "2021": 52,
+     "2022": 42,
+     "2023": 40,
+     "2024": 43,
+     "2025": 39,
+     "2026": 21
+    },
+    "forstevalgKvinnerProsent": {
+     "2021": 55.8,
+     "2022": 52.4,
+     "2023": 50.0,
+     "2024": 48.8,
+     "2025": 43.6,
+     "2026": 52.4
+    },
+    "kvalifiserte": {
+     "2021": 363,
+     "2022": 275,
+     "2023": 219,
+     "2024": 234,
+     "2025": 152,
+     "2026": 171
+    },
+    "tilbud": {
+     "2021": 95,
+     "2022": 64,
+     "2023": 58,
+     "2024": 51,
+     "2025": 46,
+     "2026": 36
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2020": 41.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemal": {
+     "2020": 36.4,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "ordinarSupplering": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    }
+   },
+   "status": "aktiv",
+   "forsteOpptakSO": "2016",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-204209",
+   "institusjon": "Nord universitet",
+   "institusjonKort": "Nord",
+   "dbhInstitusjonskode": "1174",
+   "sektor": "offentlig",
+   "campus": "Stjørdal",
+   "campusAlle": [
+    "Stjørdal"
+   ],
+   "programnavn": "Økonomi, markedsføring og ledelse, deltid, Stjørdal",
+   "programnavnTidligere": [],
+   "fagomraade": "markedsføring og kommunikasjon",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": false,
+   "studieform": "samlingsbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "204209",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.nord.no/studier/okonomi-markedsforing-og-ledelse-arsstudium",
+   "studieplasser": {
+    "2021": 100,
+    "2022": 100,
+    "2023": 100,
+    "2024": 100,
+    "2025": 100,
+    "2026": 100
+   },
+   "sokere": {
+    "alle": {
+     "2021": 525,
+     "2022": 406,
+     "2023": 417,
+     "2024": 541,
+     "2025": 397,
+     "2026": 386
+    },
+    "forstevalg": {
+     "2021": 158,
+     "2022": 110,
+     "2023": 118,
+     "2024": 164,
+     "2025": 103,
+     "2026": 91
+    },
+    "forstevalgKvinnerProsent": {
+     "2021": 69.0,
+     "2022": 60.0,
+     "2023": 66.9,
+     "2024": 62.8,
+     "2025": 62.1,
+     "2026": 65.9
+    },
+    "kvalifiserte": {
+     "2021": 485,
+     "2022": 378,
+     "2023": 385,
+     "2024": 498,
+     "2025": 355,
+     "2026": 358
+    },
+    "tilbud": {
+     "2021": 200,
+     "2022": 151,
+     "2023": 169,
+     "2024": 215,
+     "2025": 143,
+     "2026": 129
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2020": 0.0,
+     "2021": 40.8,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemal": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "ordinarSupplering": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    }
+   },
+   "status": "aktiv",
+   "forsteOpptakSO": "2019",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-204218",
+   "institusjon": "Nord universitet",
+   "institusjonKort": "Nord",
+   "dbhInstitusjonskode": "1174",
+   "sektor": "offentlig",
+   "campus": "Bodø",
+   "campusAlle": [
+    "Bodø"
+   ],
+   "programnavn": "Økonomi, markedsføring og ledelse, deltid, Bodø",
+   "programnavnTidligere": [],
+   "fagomraade": "markedsføring og kommunikasjon",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": false,
+   "studieform": "samlingsbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "204218",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.nord.no/studier/okonomi-markedsforing-og-ledelse-arsstudium",
+   "studieplasser": {
+    "2021": 100,
+    "2022": 100,
+    "2023": 75,
+    "2024": 70,
+    "2025": 70,
+    "2026": 100
+   },
+   "sokere": {
+    "alle": {
+     "2021": 554,
+     "2022": 420,
+     "2023": 451,
+     "2024": 449,
+     "2025": 351,
+     "2026": 330
+    },
+    "forstevalg": {
+     "2021": 125,
+     "2022": 77,
+     "2023": 108,
+     "2024": 117,
+     "2025": 79,
+     "2026": 67
+    },
+    "forstevalgKvinnerProsent": {
+     "2021": 58.4,
+     "2022": 62.3,
+     "2023": 63.0,
+     "2024": 62.4,
+     "2025": 55.7,
+     "2026": 58.2
+    },
+    "kvalifiserte": {
+     "2021": 498,
+     "2022": 382,
+     "2023": 411,
+     "2024": 393,
+     "2025": 326,
+     "2026": 304
+    },
+    "tilbud": {
+     "2021": 160,
+     "2022": 90,
+     "2023": 117,
+     "2024": 119,
+     "2025": 96,
+     "2026": 87
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2020": 39.5,
+     "2021": 37.7,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemal": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "ordinarSupplering": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    }
+   },
+   "status": "aktiv",
+   "forsteOpptakSO": "2016",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-204232",
+   "institusjon": "Nord universitet",
+   "institusjonKort": "Nord",
+   "dbhInstitusjonskode": "1174",
+   "sektor": "offentlig",
+   "campus": "Vesterålen",
+   "campusAlle": [
+    "Vesterålen"
+   ],
+   "programnavn": "Personalledelse og kompetanseutvikling, Vesterålen",
+   "programnavnTidligere": [],
+   "fagomraade": "administrasjon og ledelse",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "samlingsbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "204232",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.nord.no/studier/personalledelse-og-kompetanseutvikling-arsstudium",
+   "studieplasser": {
+    "2022": 25
+   },
+   "sokere": {
+    "alle": {
+     "2022": 123
+    },
+    "forstevalg": {
+     "2022": 41
+    },
+    "forstevalgKvinnerProsent": {
+     "2022": 63.4
+    },
+    "kvalifiserte": {
+     "2022": 121
+    },
+    "tilbud": {
+     "2022": 54
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2020": 0.0,
+     "2022": 0.0
+    },
+    "forstegangsvitnemal": {
+     "2020": 0.0,
+     "2022": 0.0
+    },
+    "ordinarSupplering": {
+     "2020": 0.0,
+     "2022": 0.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2020": 0.0,
+     "2022": 0.0
+    }
+   },
+   "status": "nedlagt",
+   "forsteOpptakSO": "2017",
+   "sisteOpptakSO": "2022",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-204398",
+   "institusjon": "Nord universitet",
+   "institusjonKort": "Nord",
+   "dbhInstitusjonskode": "1174",
+   "sektor": "offentlig",
+   "campus": "Mo i Rana",
+   "campusAlle": [
+    "Mo i Rana"
+   ],
+   "programnavn": "Økonomi og digitalisering",
+   "programnavnTidligere": [],
+   "fagomraade": "økonomi og IT",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "stedbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "204398",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.nord.no/studier/okonomi-og-digitalisering-arsstudium",
+   "studieplasser": {
+    "2021": 30,
+    "2022": 30,
+    "2023": 20,
+    "2024": 20,
+    "2025": 20
+   },
+   "sokere": {
+    "alle": {
+     "2021": 120,
+     "2022": 64,
+     "2023": 71,
+     "2024": 60,
+     "2025": 45
+    },
+    "forstevalg": {
+     "2021": 23,
+     "2022": 9,
+     "2023": 11,
+     "2024": 22,
+     "2025": 11
+    },
+    "forstevalgKvinnerProsent": {
+     "2021": 39.1,
+     "2022": 77.8,
+     "2023": 45.5,
+     "2024": 59.1,
+     "2025": 54.5
+    },
+    "kvalifiserte": {
+     "2021": 109,
+     "2022": 56,
+     "2023": 58,
+     "2024": 49,
+     "2025": 40
+    },
+    "tilbud": {
+     "2021": 33,
+     "2022": 14,
+     "2023": 18,
+     "2024": 18,
+     "2025": 10
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0
+    },
+    "forstegangsvitnemal": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0
+    },
+    "ordinarSupplering": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0
+    }
+   },
+   "status": "nedlagt",
+   "forsteOpptakSO": "2016",
+   "sisteOpptakSO": "2025",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-204527",
+   "institusjon": "Nord universitet",
+   "institusjonKort": "Nord",
+   "dbhInstitusjonskode": "1174",
+   "sektor": "offentlig",
+   "campus": "Bodø",
+   "campusAlle": [
+    "Bodø"
+   ],
+   "programnavn": "Luftfartsledelse",
+   "programnavnTidligere": [
+    "Luftfartsledelse, deltid"
+   ],
+   "fagomraade": "administrasjon og ledelse",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": false,
+   "studieform": "samlingsbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "204527",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.nord.no/studier/luftfartsledelse-arsstudium",
+   "studieplasser": {
+    "2021": 100,
+    "2022": 100,
+    "2023": 60,
+    "2024": 60,
+    "2025": 60
+   },
+   "sokere": {
+    "alle": {
+     "2021": 492,
+     "2022": 440,
+     "2023": 363,
+     "2024": 386,
+     "2025": 335
+    },
+    "forstevalg": {
+     "2021": 186,
+     "2022": 105,
+     "2023": 73,
+     "2024": 80,
+     "2025": 86
+    },
+    "forstevalgKvinnerProsent": {
+     "2021": 32.3,
+     "2022": 38.1,
+     "2023": 34.2,
+     "2024": 22.5,
+     "2025": 23.3
+    },
+    "kvalifiserte": {
+     "2021": 453,
+     "2022": 414,
+     "2023": 337,
+     "2024": 358,
+     "2025": 306
+    },
+    "tilbud": {
+     "2021": 140,
+     "2022": 140,
+     "2023": 124,
+     "2024": 147,
+     "2025": 111
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2020": 54.3,
+     "2021": 48.8,
+     "2022": 39.8,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0
+    },
+    "forstegangsvitnemal": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0
+    },
+    "ordinarSupplering": {
+     "2020": 49.0,
+     "2021": 41.7,
+     "2022": 39.1,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0
+    }
+   },
+   "status": "nedlagt",
+   "forsteOpptakSO": "2020",
+   "sisteOpptakSO": "2025",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-204583",
+   "institusjon": "Nord universitet",
+   "institusjonKort": "Nord",
+   "dbhInstitusjonskode": "1174",
+   "sektor": "offentlig",
+   "campus": "Levanger",
+   "campusAlle": [
+    "Levanger"
+   ],
+   "programnavn": "Personalledelse og kompetanseutvikling, Levanger",
+   "programnavnTidligere": [],
+   "fagomraade": "administrasjon og ledelse",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "samlingsbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "204583",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.nord.no/studier/personalledelse-og-kompetanseutvikling-arsstudium",
+   "studieplasser": {
+    "2021": 30,
+    "2022": 30,
+    "2023": 30,
+    "2024": 30,
+    "2025": 30,
+    "2026": 30
+   },
+   "sokere": {
+    "alle": {
+     "2021": 406,
+     "2022": 340,
+     "2023": 313,
+     "2024": 327,
+     "2025": 242,
+     "2026": 227
+    },
+    "forstevalg": {
+     "2021": 151,
+     "2022": 118,
+     "2023": 108,
+     "2024": 121,
+     "2025": 86,
+     "2026": 68
+    },
+    "forstevalgKvinnerProsent": {
+     "2021": 76.8,
+     "2022": 72.0,
+     "2023": 69.4,
+     "2024": 71.1,
+     "2025": 62.8,
+     "2026": 80.9
+    },
+    "kvalifiserte": {
+     "2021": 383,
+     "2022": 326,
+     "2023": 297,
+     "2024": 307,
+     "2025": 236,
+     "2026": 221
+    },
+    "tilbud": {
+     "2021": 90,
+     "2022": 90,
+     "2023": 80,
+     "2024": 90,
+     "2025": 80,
+     "2026": 99
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2020": 41.5,
+     "2021": 49.3,
+     "2022": 46.5,
+     "2023": 47.4,
+     "2024": 46.3,
+     "2025": 42.2,
+     "2026": 0.0
+    },
+    "forstegangsvitnemal": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "ordinarSupplering": {
+     "2020": 41.5,
+     "2021": 49.3,
+     "2022": 42.8,
+     "2023": 41.2,
+     "2024": 0.0,
+     "2025": 41.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    }
+   },
+   "status": "aktiv",
+   "forsteOpptakSO": "2019",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-204625",
+   "institusjon": "Nord universitet",
+   "institusjonKort": "Nord",
+   "dbhInstitusjonskode": "1174",
+   "sektor": "offentlig",
+   "campus": "Steinkjer",
+   "campusAlle": [
+    "Steinkjer"
+   ],
+   "programnavn": "Økonomi og administrasjon, Steinkjer, årsstudium",
+   "programnavnTidligere": [],
+   "fagomraade": "økonomi og administrasjon",
+   "type": "BØA",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "stedbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "204625",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.nord.no/studier/okonomi-og-administrasjon-arsstudium",
+   "studieplasser": {
+    "2021": 40,
+    "2022": 30,
+    "2023": 30,
+    "2024": 30,
+    "2025": 30,
+    "2026": 25
+   },
+   "sokere": {
+    "alle": {
+     "2021": 210,
+     "2022": 162,
+     "2023": 145,
+     "2024": 147,
+     "2025": 145,
+     "2026": 106
+    },
+    "forstevalg": {
+     "2021": 40,
+     "2022": 38,
+     "2023": 23,
+     "2024": 21,
+     "2025": 19,
+     "2026": 20
+    },
+    "forstevalgKvinnerProsent": {
+     "2021": 65.0,
+     "2022": 55.3,
+     "2023": 56.5,
+     "2024": 52.4,
+     "2025": 47.4,
+     "2026": 75.0
+    },
+    "kvalifiserte": {
+     "2021": 200,
+     "2022": 147,
+     "2023": 131,
+     "2024": 133,
+     "2025": 133,
+     "2026": 94
+    },
+    "tilbud": {
+     "2021": 69,
+     "2022": 46,
+     "2023": 32,
+     "2024": 28,
+     "2025": 37,
+     "2026": 22
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemal": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "ordinarSupplering": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    }
+   },
+   "status": "aktiv",
+   "forsteOpptakSO": "2017",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-204664",
+   "institusjon": "Nord universitet",
+   "institusjonKort": "Nord",
+   "dbhInstitusjonskode": "1174",
+   "sektor": "offentlig",
+   "campus": "Mo i Rana",
+   "campusAlle": [
+    "Mo i Rana"
+   ],
+   "programnavn": "Personalledelse og kompetanseutvikling, Mo i Rana",
+   "programnavnTidligere": [],
+   "fagomraade": "administrasjon og ledelse",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "samlingsbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "204664",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.nord.no/no/studier/personalledelse-og-kompetanseutvikling-arsstudium",
+   "studieplasser": {
+    "2021": 30,
+    "2023": 25,
+    "2025": 30
+   },
+   "sokere": {
+    "alle": {
+     "2021": 176,
+     "2023": 157,
+     "2025": 75
+    },
+    "forstevalg": {
+     "2021": 53,
+     "2023": 47,
+     "2025": 26
+    },
+    "forstevalgKvinnerProsent": {
+     "2021": 84.9,
+     "2023": 80.9,
+     "2025": 88.5
+    },
+    "kvalifiserte": {
+     "2021": 155,
+     "2023": 148,
+     "2025": 72
+    },
+    "tilbud": {
+     "2021": 60,
+     "2023": 60,
+     "2025": 29
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2020": 0.0,
+     "2021": 40.9,
+     "2023": 37.0,
+     "2025": 0.0
+    },
+    "forstegangsvitnemal": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2023": 0.0,
+     "2025": 0.0
+    },
+    "ordinarSupplering": {
+     "2020": 0.0,
+     "2021": 37.4,
+     "2023": 0.0,
+     "2025": 0.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2023": 0.0,
+     "2025": 0.0
+    }
+   },
+   "status": "nedlagt",
+   "forsteOpptakSO": "2016",
+   "sisteOpptakSO": "2025",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-209162",
+   "institusjon": "Universitetet i Innlandet",
+   "institusjonKort": "INN",
+   "dbhInstitusjonskode": "1177",
+   "sektor": "offentlig",
+   "campus": "Rena",
+   "campusAlle": [
+    "Rena",
+    "Åmot"
+   ],
+   "programnavn": "Organisasjon og ledelse, Rena",
+   "programnavnTidligere": [],
+   "fagomraade": "administrasjon og ledelse",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "stedbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "209162",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.inn.no/studier/vare-studier/arsstudium-i-organisasjon-og-ledelse-heltid/index.html",
+   "studieplasser": {
+    "2021": 30,
+    "2022": 30,
+    "2023": 30,
+    "2024": 30,
+    "2025": 30,
+    "2026": 30
+   },
+   "sokere": {
+    "alle": {
+     "2021": 273,
+     "2022": 168,
+     "2023": 158,
+     "2024": 175,
+     "2025": 162,
+     "2026": 138
+    },
+    "forstevalg": {
+     "2021": 43,
+     "2022": 16,
+     "2023": 22,
+     "2024": 25,
+     "2025": 21,
+     "2026": 15
+    },
+    "forstevalgKvinnerProsent": {
+     "2021": 67.4,
+     "2022": 81.2,
+     "2023": 81.8,
+     "2024": 68.0,
+     "2025": 71.4,
+     "2026": 73.3
+    },
+    "kvalifiserte": {
+     "2021": 261,
+     "2022": 162,
+     "2023": 149,
+     "2024": 162,
+     "2025": 156,
+     "2026": 132
+    },
+    "tilbud": {
+     "2021": 88,
+     "2022": 34,
+     "2023": 38,
+     "2024": 34,
+     "2025": 37,
+     "2026": 29
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemal": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "ordinarSupplering": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    }
+   },
+   "status": "aktiv",
+   "forsteOpptakSO": "2016",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-209164",
+   "institusjon": "Universitetet i Innlandet",
+   "institusjonKort": "INN",
+   "dbhInstitusjonskode": "1177",
+   "sektor": "offentlig",
+   "campus": "Rena",
+   "campusAlle": [
+    "Rena",
+    "Åmot"
+   ],
+   "programnavn": "Bedriftsøkonomi",
+   "programnavnTidligere": [],
+   "fagomraade": "økonomi og administrasjon",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "stedbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "209164",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.inn.no/studier/vare-studier/arsstudium-i-bedriftsokonomi/index.html",
+   "studieplasser": {
+    "2021": 20,
+    "2022": 20,
+    "2023": 20,
+    "2024": 20,
+    "2025": 20,
+    "2026": 20
+   },
+   "sokere": {
+    "alle": {
+     "2021": 220,
+     "2022": 158,
+     "2023": 119,
+     "2024": 186,
+     "2025": 149,
+     "2026": 169
+    },
+    "forstevalg": {
+     "2021": 23,
+     "2022": 12,
+     "2023": 9,
+     "2024": 21,
+     "2025": 27,
+     "2026": 13
+    },
+    "forstevalgKvinnerProsent": {
+     "2021": 43.5,
+     "2022": 50.0,
+     "2023": 33.3,
+     "2024": 47.6,
+     "2025": 44.4,
+     "2026": 46.2
+    },
+    "kvalifiserte": {
+     "2021": 199,
+     "2022": 139,
+     "2023": 100,
+     "2024": 163,
+     "2025": 131,
+     "2026": 148
+    },
+    "tilbud": {
+     "2021": 48,
+     "2022": 24,
+     "2023": 18,
+     "2024": 39,
+     "2025": 35,
+     "2026": 34
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemal": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "ordinarSupplering": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    }
+   },
+   "status": "aktiv",
+   "forsteOpptakSO": "2016",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-209207",
+   "institusjon": "Universitetet i Innlandet",
+   "institusjonKort": "INN",
+   "dbhInstitusjonskode": "1177",
+   "sektor": "offentlig",
+   "campus": "Rena",
+   "campusAlle": [
+    "Rena",
+    "Åmot"
+   ],
+   "programnavn": "Bedriftsøkonomi, deltid",
+   "programnavnTidligere": [],
+   "fagomraade": "økonomi og administrasjon",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": false,
+   "studieform": "nett",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "209207",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.inn.no/studier/vare-studier/arsstudium-i-bedriftsokonomi---nettbasert/index.html",
+   "studieplasser": {
+    "2022": 50,
+    "2023": 65,
+    "2024": 65,
+    "2025": 65,
+    "2026": 65
+   },
+   "sokere": {
+    "alle": {
+     "2022": 1353,
+     "2023": 1243,
+     "2024": 1811,
+     "2025": 1344,
+     "2026": 1586
+    },
+    "forstevalg": {
+     "2022": 297,
+     "2023": 234,
+     "2024": 376,
+     "2025": 248,
+     "2026": 294
+    },
+    "forstevalgKvinnerProsent": {
+     "2022": 57.2,
+     "2023": 54.7,
+     "2024": 58.0,
+     "2025": 57.7,
+     "2026": 58.5
+    },
+    "kvalifiserte": {
+     "2022": 1270,
+     "2023": 1174,
+     "2024": 1703,
+     "2025": 1273,
+     "2026": 1482
+    },
+    "tilbud": {
+     "2022": 130,
+     "2023": 140,
+     "2024": 120,
+     "2025": 130,
+     "2026": 135
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2022": 54.1,
+     "2023": 52.9,
+     "2024": 58.6,
+     "2025": 53.8,
+     "2026": 57.6
+    },
+    "forstegangsvitnemal": {
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "ordinarSupplering": {
+     "2022": 51.0,
+     "2023": 52.6,
+     "2024": 58.5,
+     "2025": 52.0,
+     "2026": 57.6
+    },
+    "forstegangsvitnemalSupplering": {
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    }
+   },
+   "status": "ny",
+   "forsteOpptakSO": "2022",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": [
+    {
+     "gruppe": "aarsstudier",
+     "gruppenavn": "Årsstudier i økonomi og ledelse",
+     "entryId": "inn_bedok_ar",
+     "default": true,
+     "programnavnHH": "Bedriftsøkonomi, deltid (årsstudium)",
+     "studiekodeHH": "209207",
+     "dbhKoderHH": []
+    }
+   ]
+  },
+  {
+   "id": "so-209215",
+   "institusjon": "Universitetet i Innlandet",
+   "institusjonKort": "INN",
+   "dbhInstitusjonskode": "1177",
+   "sektor": "offentlig",
+   "campus": "Rena",
+   "campusAlle": [
+    "Rena",
+    "Kongsvinger",
+    "Åmot"
+   ],
+   "programnavn": "Offentlig styring, ledelse og økonomi, deltid",
+   "programnavnTidligere": [],
+   "fagomraade": "administrasjon og ledelse",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": false,
+   "studieform": "nett",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "209215",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.inn.no/studier/vare-studier/arsstudium-i-offentlig-ledelse-styring-og-okonomi/index.html",
+   "studieplasser": {
+    "2021": 80,
+    "2022": 80,
+    "2023": 80,
+    "2024": 80,
+    "2026": 80
+   },
+   "sokere": {
+    "alle": {
+     "2021": 777,
+     "2022": 519,
+     "2023": 576,
+     "2024": 657,
+     "2026": 2245
+    },
+    "forstevalg": {
+     "2021": 153,
+     "2022": 94,
+     "2023": 114,
+     "2024": 108,
+     "2026": 334
+    },
+    "forstevalgKvinnerProsent": {
+     "2021": 64.1,
+     "2022": 61.7,
+     "2023": 57.0,
+     "2024": 52.8,
+     "2026": 68.6
+    },
+    "kvalifiserte": {
+     "2021": 738,
+     "2022": 491,
+     "2023": 546,
+     "2024": 627,
+     "2026": 2167
+    },
+    "tilbud": {
+     "2021": 190,
+     "2022": 178,
+     "2023": 202,
+     "2024": 160,
+     "2026": 200
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2020": 0.0,
+     "2021": 43.9,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 44.0,
+     "2026": 53.2
+    },
+    "forstegangsvitnemal": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2026": 0.0
+    },
+    "ordinarSupplering": {
+     "2020": 0.0,
+     "2021": 39.9,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 43.8,
+     "2026": 53.1
+    },
+    "forstegangsvitnemalSupplering": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2026": 0.0
+    }
+   },
+   "status": "aktiv",
+   "forsteOpptakSO": "2016",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": [
+    {
+     "gruppe": "aarsstudier",
+     "gruppenavn": "Årsstudier i økonomi og ledelse",
+     "entryId": "inn_offstyr_ar",
+     "default": false,
+     "programnavnHH": "Offentlig styring, ledelse og økonomi, deltid (årsstudium)",
+     "studiekodeHH": "209215",
+     "dbhKoderHH": [
+      "OFFSTYRK"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "so-209232",
+   "institusjon": "Universitetet i Innlandet",
+   "institusjonKort": "INN",
+   "dbhInstitusjonskode": "1177",
+   "sektor": "offentlig",
+   "campus": "Lillehammer",
+   "campusAlle": [
+    "Lillehammer"
+   ],
+   "programnavn": "Økonomi og administrasjon, Lillehammer, årsstudium",
+   "programnavnTidligere": [],
+   "fagomraade": "økonomi og administrasjon",
+   "type": "BØA",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "stedbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "209232",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.inn.no/studier/vare-studier/arsstudium-i-okonomi-og-administrasjon/index.html",
+   "studieplasser": {
+    "2021": 20,
+    "2022": 20,
+    "2023": 20,
+    "2024": 20,
+    "2025": 20,
+    "2026": 20
+   },
+   "sokere": {
+    "alle": {
+     "2021": 473,
+     "2022": 284,
+     "2023": 332,
+     "2024": 401,
+     "2025": 279,
+     "2026": 349
+    },
+    "forstevalg": {
+     "2021": 80,
+     "2022": 39,
+     "2023": 39,
+     "2024": 50,
+     "2025": 32,
+     "2026": 46
+    },
+    "forstevalgKvinnerProsent": {
+     "2021": 51.2,
+     "2022": 51.3,
+     "2023": 46.2,
+     "2024": 36.0,
+     "2025": 34.4,
+     "2026": 39.1
+    },
+    "kvalifiserte": {
+     "2021": 459,
+     "2022": 274,
+     "2023": 310,
+     "2024": 380,
+     "2025": 263,
+     "2026": 323
+    },
+    "tilbud": {
+     "2021": 50,
+     "2022": 65,
+     "2023": 41,
+     "2024": 50,
+     "2025": 60,
+     "2026": 60
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2020": 50.9,
+     "2021": 51.5,
+     "2022": 0.0,
+     "2023": 44.6,
+     "2024": 48.3,
+     "2025": 0.0,
+     "2026": 43.7
+    },
+    "forstegangsvitnemal": {
+     "2020": 48.6,
+     "2021": 50.0,
+     "2022": 0.0,
+     "2023": 43.0,
+     "2024": 41.7,
+     "2025": 0.0,
+     "2026": 36.9
+    },
+    "ordinarSupplering": {
+     "2020": 50.9,
+     "2021": 51.5,
+     "2022": 0.0,
+     "2023": 35.1,
+     "2024": 48.3,
+     "2025": 0.0,
+     "2026": 43.7
+    },
+    "forstegangsvitnemalSupplering": {
+     "2020": 48.6,
+     "2021": 50.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 41.7,
+     "2025": 0.0,
+     "2026": 32.6
+    }
+   },
+   "status": "aktiv",
+   "forsteOpptakSO": "2018",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-209398",
+   "institusjon": "Universitetet i Innlandet",
+   "institusjonKort": "INN",
+   "dbhInstitusjonskode": "1177",
+   "sektor": "offentlig",
+   "campus": "Hamar",
+   "campusAlle": [
+    "Hamar"
+   ],
+   "programnavn": "Bedriftsøkonomi, Hamar",
+   "programnavnTidligere": [
+    "Bedriftsøkonomi, Hamar, deltid"
+   ],
+   "fagomraade": "økonomi og administrasjon",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": false,
+   "studieform": "nett",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "209398",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.inn.no/studier/vare-studier/arsstudium-i-bedriftsokonomi-nett-og-samlingsbasert-Hamar/index.html",
+   "studieplasser": {
+    "2021": 150,
+    "2022": 150,
+    "2023": 90
+   },
+   "sokere": {
+    "alle": {
+     "2021": 1914,
+     "2022": 1230,
+     "2023": 1388
+    },
+    "forstevalg": {
+     "2021": 416,
+     "2022": 162,
+     "2023": 173
+    },
+    "forstevalgKvinnerProsent": {
+     "2021": 50.0,
+     "2022": 58.6,
+     "2023": 55.5
+    },
+    "kvalifiserte": {
+     "2021": 1738,
+     "2022": 1138,
+     "2023": 1269
+    },
+    "tilbud": {
+     "2021": 320,
+     "2022": 280,
+     "2023": 204
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2020": 0.0,
+     "2021": 50.0,
+     "2022": 42.7,
+     "2023": 46.5
+    },
+    "forstegangsvitnemal": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0
+    },
+    "ordinarSupplering": {
+     "2020": -1.0,
+     "2021": 45.7,
+     "2022": 37.1,
+     "2023": 46.4
+    },
+    "forstegangsvitnemalSupplering": {
+     "2020": -1.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0
+    }
+   },
+   "status": "nedlagt",
+   "forsteOpptakSO": "2016",
+   "sisteOpptakSO": "2023",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-209583",
+   "institusjon": "Universitetet i Innlandet",
+   "institusjonKort": "INN",
+   "dbhInstitusjonskode": "1177",
+   "sektor": "offentlig",
+   "campus": "Rena",
+   "campusAlle": [
+    "Rena",
+    "Åmot"
+   ],
+   "programnavn": "Organisasjon og ledelse, deltid, nettbasert",
+   "programnavnTidligere": [],
+   "fagomraade": "administrasjon og ledelse",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": false,
+   "studieform": "nett",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "209583",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.inn.no/studier/vare-studier/arsstudium-i-organisasjon-og-ledelse-nettbasert/index.html",
+   "studieplasser": {
+    "2022": 200,
+    "2023": 220,
+    "2024": 200,
+    "2025": 250,
+    "2026": 350
+   },
+   "sokere": {
+    "alle": {
+     "2022": 3299,
+     "2023": 3253,
+     "2024": 3479,
+     "2025": 3255,
+     "2026": 3227
+    },
+    "forstevalg": {
+     "2022": 1417,
+     "2023": 1404,
+     "2024": 1295,
+     "2025": 1206,
+     "2026": 1007
+    },
+    "forstevalgKvinnerProsent": {
+     "2022": 69.3,
+     "2023": 74.6,
+     "2024": 71.2,
+     "2025": 75.2,
+     "2026": 71.8
+    },
+    "kvalifiserte": {
+     "2022": 3138,
+     "2023": 3097,
+     "2024": 3331,
+     "2025": 3138,
+     "2026": 3078
+    },
+    "tilbud": {
+     "2022": 400,
+     "2023": 440,
+     "2024": 385,
+     "2025": 600,
+     "2026": 620
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2022": 55.2,
+     "2023": 55.2,
+     "2024": 56.1,
+     "2025": 53.5,
+     "2026": 52.6
+    },
+    "forstegangsvitnemal": {
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "ordinarSupplering": {
+     "2022": 55.2,
+     "2023": 55.2,
+     "2024": 55.6,
+     "2025": 52.6,
+     "2026": 52.5
+    },
+    "forstegangsvitnemalSupplering": {
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    }
+   },
+   "status": "ny",
+   "forsteOpptakSO": "2022",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": [
+    {
+     "gruppe": "aarsstudier",
+     "gruppenavn": "Årsstudier i økonomi og ledelse",
+     "entryId": "inn_orgled_ar",
+     "default": true,
+     "programnavnHH": "Organisasjon og ledelse, deltid, nettbasert (årsstudium)",
+     "studiekodeHH": "209583",
+     "dbhKoderHH": []
+    }
+   ]
+  },
+  {
+   "id": "so-209607",
+   "institusjon": "Universitetet i Innlandet",
+   "institusjonKort": "INN",
+   "dbhInstitusjonskode": "1177",
+   "sektor": "offentlig",
+   "campus": "Rena",
+   "campusAlle": [
+    "Rena",
+    "Åmot"
+   ],
+   "programnavn": "Music Business and Production, årsstudium",
+   "programnavnTidligere": [],
+   "fagomraade": "kultur- og musikkledelse",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "stedbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "209607",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.inn.no/studier/vare-studier/arsstudium-i-music-business-and-production/index.html",
+   "studieplasser": {
+    "2024": 20
+   },
+   "sokere": {
+    "alle": {
+     "2024": 98
+    },
+    "forstevalg": {
+     "2024": 15
+    },
+    "forstevalgKvinnerProsent": {
+     "2024": 46.7
+    },
+    "kvalifiserte": {
+     "2024": 90
+    },
+    "tilbud": {
+     "2024": 22
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2024": 0.0
+    },
+    "forstegangsvitnemal": {
+     "2024": 0.0
+    },
+    "ordinarSupplering": {
+     "2024": 0.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2024": 0.0
+    }
+   },
+   "status": "nedlagt",
+   "forsteOpptakSO": "2024",
+   "sisteOpptakSO": "2024",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-209664",
+   "institusjon": "Universitetet i Innlandet",
+   "institusjonKort": "INN",
+   "dbhInstitusjonskode": "1177",
+   "sektor": "offentlig",
+   "campus": "Rena",
+   "campusAlle": [
+    "Rena",
+    "Åmot"
+   ],
+   "programnavn": "Organisasjon og ledelse, deltid",
+   "programnavnTidligere": [],
+   "fagomraade": "administrasjon og ledelse",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": false,
+   "studieform": "samlingsbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "209664",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.inn.no/studier/vare-studier/arsstudium-i-organisasjon-og-ledelse-deltid-og-samlingsbasert/index.html",
+   "studieplasser": {
+    "2021": 120,
+    "2022": 150,
+    "2023": 120,
+    "2024": 150,
+    "2025": 200,
+    "2026": 200
+   },
+   "sokere": {
+    "alle": {
+     "2021": 1202,
+     "2022": 599,
+     "2023": 816,
+     "2024": 793,
+     "2025": 652,
+     "2026": 575
+    },
+    "forstevalg": {
+     "2021": 394,
+     "2022": 102,
+     "2023": 150,
+     "2024": 134,
+     "2025": 128,
+     "2026": 96
+    },
+    "forstevalgKvinnerProsent": {
+     "2021": 68.8,
+     "2022": 67.6,
+     "2023": 62.0,
+     "2024": 75.4,
+     "2025": 62.5,
+     "2026": 62.5
+    },
+    "kvalifiserte": {
+     "2021": 1131,
+     "2022": 572,
+     "2023": 776,
+     "2024": 756,
+     "2025": 631,
+     "2026": 546
+    },
+    "tilbud": {
+     "2021": 390,
+     "2022": 277,
+     "2023": 261,
+     "2024": 330,
+     "2025": 283,
+     "2026": 239
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2020": 0.0,
+     "2021": 44.9,
+     "2022": 0.0,
+     "2023": 44.1,
+     "2024": 40.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemal": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "ordinarSupplering": {
+     "2020": 0.0,
+     "2021": 41.2,
+     "2022": 0.0,
+     "2023": 43.9,
+     "2024": 40.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    }
+   },
+   "status": "aktiv",
+   "forsteOpptakSO": "2016",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-211164",
+   "institusjon": "Høgskolen i Molde, Vitenskaplig høgskole i logistikk",
+   "institusjonKort": "HiMolde",
+   "dbhInstitusjonskode": "0232",
+   "sektor": "offentlig",
+   "campus": "Molde",
+   "campusAlle": [
+    "Molde"
+   ],
+   "programnavn": "Bedriftsøkonomi",
+   "programnavnTidligere": [],
+   "fagomraade": "økonomi og administrasjon",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "stedbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "211164",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.himolde.no/studier/program/bedriftsokonomi/index.html",
+   "studieplasser": {
+    "2021": 30,
+    "2022": 30,
+    "2023": 30,
+    "2024": 30,
+    "2025": 30,
+    "2026": 30
+   },
+   "sokere": {
+    "alle": {
+     "2021": 325,
+     "2022": 268,
+     "2023": 212,
+     "2024": 219,
+     "2025": 232,
+     "2026": 218
+    },
+    "forstevalg": {
+     "2021": 38,
+     "2022": 26,
+     "2023": 32,
+     "2024": 28,
+     "2025": 28,
+     "2026": 29
+    },
+    "forstevalgKvinnerProsent": {
+     "2021": 50.0,
+     "2022": 46.2,
+     "2023": 40.6,
+     "2024": 39.3,
+     "2025": 39.3,
+     "2026": 44.8
+    },
+    "kvalifiserte": {
+     "2021": 287,
+     "2022": 247,
+     "2023": 189,
+     "2024": 204,
+     "2025": 207,
+     "2026": 200
+    },
+    "tilbud": {
+     "2021": 67,
+     "2022": 41,
+     "2023": 47,
+     "2024": 36,
+     "2025": 46,
+     "2026": 40
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemal": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "ordinarSupplering": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    }
+   },
+   "status": "aktiv",
+   "forsteOpptakSO": "2016",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-211188",
+   "institusjon": "Høgskolen i Molde, Vitenskaplig høgskole i logistikk",
+   "institusjonKort": "HiMolde",
+   "dbhInstitusjonskode": "0232",
+   "sektor": "offentlig",
+   "campus": "Kristiansund",
+   "campusAlle": [
+    "Kristiansund"
+   ],
+   "programnavn": "Velferdsteknologi og digitalisering , deltid",
+   "programnavnTidligere": [
+    "Helseteknologi og digitalisering, deltid"
+   ],
+   "fagomraade": "økonomi og IT",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": false,
+   "studieform": "samlingsbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "211188",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.himolde.no/studier/programmer/velferdsteknologi/index.html",
+   "studieplasser": {
+    "2023": 40,
+    "2025": 40
+   },
+   "sokere": {
+    "alle": {
+     "2023": 215,
+     "2025": 260
+    },
+    "forstevalg": {
+     "2023": 75,
+     "2025": 73
+    },
+    "forstevalgKvinnerProsent": {
+     "2023": 76.0,
+     "2025": 75.3
+    },
+    "kvalifiserte": {
+     "2023": 201,
+     "2025": 250
+    },
+    "tilbud": {
+     "2023": 80,
+     "2025": 92
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2023": 0.0,
+     "2025": 0.0
+    },
+    "forstegangsvitnemal": {
+     "2023": 0.0,
+     "2025": 0.0
+    },
+    "ordinarSupplering": {
+     "2023": 0.0,
+     "2025": 0.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2023": 0.0,
+     "2025": 0.0
+    }
+   },
+   "status": "nedlagt",
+   "forsteOpptakSO": "2023",
+   "sisteOpptakSO": "2025",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-211218",
+   "institusjon": "Høgskolen i Molde, Vitenskaplig høgskole i logistikk",
+   "institusjonKort": "HiMolde",
+   "dbhInstitusjonskode": "0232",
+   "sektor": "offentlig",
+   "campus": "Kristiansund",
+   "campusAlle": [
+    "Kristiansund"
+   ],
+   "programnavn": "Juss og økonomi",
+   "programnavnTidligere": [],
+   "fagomraade": "økonomi og jus",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "stedbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "211218",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.himolde.no/studier/program/juss-og-okonomi/index.html",
+   "studieplasser": {
+    "2021": 30,
+    "2022": 30,
+    "2023": 30,
+    "2024": 30,
+    "2025": 30,
+    "2026": 30
+   },
+   "sokere": {
+    "alle": {
+     "2021": 542,
+     "2022": 401,
+     "2023": 391,
+     "2024": 349,
+     "2025": 352,
+     "2026": 342
+    },
+    "forstevalg": {
+     "2021": 41,
+     "2022": 25,
+     "2023": 33,
+     "2024": 20,
+     "2025": 37,
+     "2026": 32
+    },
+    "forstevalgKvinnerProsent": {
+     "2021": 61.0,
+     "2022": 52.0,
+     "2023": 63.6,
+     "2024": 70.0,
+     "2025": 48.6,
+     "2026": 65.6
+    },
+    "kvalifiserte": {
+     "2021": 512,
+     "2022": 368,
+     "2023": 349,
+     "2024": 311,
+     "2025": 316,
+     "2026": 298
+    },
+    "tilbud": {
+     "2021": 145,
+     "2022": 74,
+     "2023": 81,
+     "2024": 63,
+     "2025": 73,
+     "2026": 75
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemal": {
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "ordinarSupplering": {
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    }
+   },
+   "status": "aktiv",
+   "forsteOpptakSO": "2021",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-211232",
+   "institusjon": "Høgskolen i Molde, Vitenskaplig høgskole i logistikk",
+   "institusjonKort": "HiMolde",
+   "dbhInstitusjonskode": "0232",
+   "sektor": "offentlig",
+   "campus": "Molde",
+   "campusAlle": [
+    "Molde"
+   ],
+   "programnavn": "Organisasjon og personalledelse",
+   "programnavnTidligere": [],
+   "fagomraade": "administrasjon og ledelse",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "stedbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "211232",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.himolde.no/studier/program/arsstudium-i-organisasjon-%20og-personalledelse/index.html",
+   "studieplasser": {
+    "2021": 30,
+    "2022": 30,
+    "2023": 30,
+    "2024": 30,
+    "2025": 30,
+    "2026": 30
+   },
+   "sokere": {
+    "alle": {
+     "2021": 282,
+     "2022": 195,
+     "2023": 201,
+     "2024": 177,
+     "2025": 137,
+     "2026": 181
+    },
+    "forstevalg": {
+     "2021": 39,
+     "2022": 27,
+     "2023": 36,
+     "2024": 34,
+     "2025": 17,
+     "2026": 31
+    },
+    "forstevalgKvinnerProsent": {
+     "2021": 69.2,
+     "2022": 70.4,
+     "2023": 72.2,
+     "2024": 67.6,
+     "2025": 76.5,
+     "2026": 58.1
+    },
+    "kvalifiserte": {
+     "2021": 263,
+     "2022": 184,
+     "2023": 192,
+     "2024": 163,
+     "2025": 132,
+     "2026": 167
+    },
+    "tilbud": {
+     "2021": 72,
+     "2022": 41,
+     "2023": 44,
+     "2024": 44,
+     "2025": 23,
+     "2026": 38
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemal": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "ordinarSupplering": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    }
+   },
+   "status": "aktiv",
+   "forsteOpptakSO": "2020",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-211627",
+   "institusjon": "Høgskolen i Molde, Vitenskaplig høgskole i logistikk",
+   "institusjonKort": "HiMolde",
+   "dbhInstitusjonskode": "0232",
+   "sektor": "offentlig",
+   "campus": "Molde",
+   "campusAlle": [
+    "Molde"
+   ],
+   "programnavn": "Logistikk",
+   "programnavnTidligere": [],
+   "fagomraade": "logistikk og shipping",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "nett",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "211627",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.himolde.no/studier/program/aarsstudium-i-logistikk/index.html",
+   "studieplasser": {
+    "2023": 50,
+    "2024": 400,
+    "2025": 300,
+    "2026": 300
+   },
+   "sokere": {
+    "alle": {
+     "2023": 1322,
+     "2024": 1440,
+     "2025": 1682,
+     "2026": 1827
+    },
+    "forstevalg": {
+     "2023": 321,
+     "2024": 404,
+     "2025": 554,
+     "2026": 585
+    },
+    "forstevalgKvinnerProsent": {
+     "2023": 55.8,
+     "2024": 55.0,
+     "2025": 47.7,
+     "2026": 48.0
+    },
+    "kvalifiserte": {
+     "2023": 1231,
+     "2024": 1355,
+     "2025": 1590,
+     "2026": 1732
+    },
+    "tilbud": {
+     "2023": 453,
+     "2024": 574,
+     "2025": 689,
+     "2026": 758
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemal": {
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "ordinarSupplering": {
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    }
+   },
+   "status": "ny",
+   "forsteOpptakSO": "2023",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": [
+    {
+     "gruppe": "aarsstudier",
+     "gruppenavn": "Årsstudier i økonomi og ledelse",
+     "entryId": "himolde_log_ar",
+     "default": false,
+     "programnavnHH": "Logistikk (årsstudium)",
+     "studiekodeHH": "211627",
+     "dbhKoderHH": [
+      "ALOGNETT"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "so-215162",
+   "institusjon": "OsloMet - storbyuniversitetet",
+   "institusjonKort": "OsloMet",
+   "dbhInstitusjonskode": "1175",
+   "sektor": "offentlig",
+   "campus": "Oslo",
+   "campusAlle": [
+    "Oslo"
+   ],
+   "programnavn": "Økonomi og ledelse",
+   "programnavnTidligere": [],
+   "fagomraade": "økonomi og administrasjon",
+   "type": "BØA",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "stedbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "215162",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.oslomet.no/studier/sam/okonomi-ledelse",
+   "studieplasser": {
+    "2021": 20,
+    "2022": 20,
+    "2023": 35,
+    "2024": 30,
+    "2025": 34,
+    "2026": 35
+   },
+   "sokere": {
+    "alle": {
+     "2021": 1791,
+     "2022": 1504,
+     "2023": 1610,
+     "2024": 1710,
+     "2025": 2150,
+     "2026": 1974
+    },
+    "forstevalg": {
+     "2021": 297,
+     "2022": 234,
+     "2023": 257,
+     "2024": 288,
+     "2025": 403,
+     "2026": 324
+    },
+    "forstevalgKvinnerProsent": {
+     "2021": 64.0,
+     "2022": 57.7,
+     "2023": 68.1,
+     "2024": 60.4,
+     "2025": 59.3,
+     "2026": 61.4
+    },
+    "kvalifiserte": {
+     "2021": 1708,
+     "2022": 1457,
+     "2023": 1532,
+     "2024": 1641,
+     "2025": 2050,
+     "2026": 1879
+    },
+    "tilbud": {
+     "2021": 80,
+     "2022": 80,
+     "2023": 80,
+     "2024": 69,
+     "2025": 70,
+     "2026": 72
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2020": 64.5,
+     "2021": 62.2,
+     "2022": 60.4,
+     "2023": 61.0,
+     "2024": 63.5,
+     "2025": 63.9,
+     "2026": 62.9
+    },
+    "forstegangsvitnemal": {
+     "2020": 51.4,
+     "2021": 51.1,
+     "2022": 52.4,
+     "2023": 50.7,
+     "2024": 50.1,
+     "2025": 50.2,
+     "2026": 48.2
+    },
+    "ordinarSupplering": {
+     "2020": 63.6,
+     "2021": 62.2,
+     "2022": 60.0,
+     "2023": 61.0,
+     "2024": 61.0,
+     "2025": 62.8,
+     "2026": 62.8
+    },
+    "forstegangsvitnemalSupplering": {
+     "2020": 51.3,
+     "2021": 51.1,
+     "2022": 52.1,
+     "2023": 50.7,
+     "2024": 46.9,
+     "2025": 49.3,
+     "2026": 47.8
+    }
+   },
+   "status": "aktiv",
+   "forsteOpptakSO": "2016",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-215253",
+   "institusjon": "OsloMet - storbyuniversitetet",
+   "institusjonKort": "OsloMet",
+   "dbhInstitusjonskode": "1175",
+   "sektor": "offentlig",
+   "campus": "Oslo",
+   "campusAlle": [
+    "Oslo"
+   ],
+   "programnavn": "Økonomi og ledelse, deltid",
+   "programnavnTidligere": [],
+   "fagomraade": "økonomi og administrasjon",
+   "type": "BØA",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": false,
+   "studieform": "stedbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "215253",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.oslomet.no/studier/sam/okonomi-ledelse",
+   "studieplasser": {
+    "2021": 20,
+    "2022": 20,
+    "2023": 30,
+    "2024": 25
+   },
+   "sokere": {
+    "alle": {
+     "2021": 1662,
+     "2022": 1303,
+     "2023": 1369,
+     "2024": 1189
+    },
+    "forstevalg": {
+     "2021": 413,
+     "2022": 273,
+     "2023": 262,
+     "2024": 221
+    },
+    "forstevalgKvinnerProsent": {
+     "2021": 58.6,
+     "2022": 53.1,
+     "2023": 62.2,
+     "2024": 64.7
+    },
+    "kvalifiserte": {
+     "2021": 1556,
+     "2022": 1229,
+     "2023": 1279,
+     "2024": 1111
+    },
+    "tilbud": {
+     "2021": 65,
+     "2022": 65,
+     "2023": 70,
+     "2024": 60
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2020": 64.6,
+     "2021": 64.4,
+     "2022": 61.8,
+     "2023": 62.3,
+     "2024": 61.9
+    },
+    "forstegangsvitnemal": {
+     "2020": 47.0,
+     "2021": 46.2,
+     "2022": 46.8,
+     "2023": 47.0,
+     "2024": 46.9
+    },
+    "ordinarSupplering": {
+     "2020": 64.0,
+     "2021": 63.6,
+     "2022": 61.8,
+     "2023": 62.3,
+     "2024": 61.1
+    },
+    "forstegangsvitnemalSupplering": {
+     "2020": 47.0,
+     "2021": 44.9,
+     "2022": 46.5,
+     "2023": 47.0,
+     "2024": 43.0
+    }
+   },
+   "status": "nedlagt",
+   "forsteOpptakSO": "2016",
+   "sisteOpptakSO": "2024",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-217097",
+   "institusjon": "Universitetet i Stavanger",
+   "institusjonKort": "UiS",
+   "dbhInstitusjonskode": "1160",
+   "sektor": "offentlig",
+   "campus": "Stavanger",
+   "campusAlle": [
+    "Stavanger"
+   ],
+   "programnavn": "Økonomi og jus",
+   "programnavnTidligere": [],
+   "fagomraade": "økonomi og jus",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "nett",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "217097",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.uis.no/nb/studier/okonomi-og-jus-nettbasert-arsstudium",
+   "studieplasser": {
+    "2026": 90
+   },
+   "sokere": {
+    "alle": {
+     "2026": 3513
+    },
+    "forstevalg": {
+     "2026": 955
+    },
+    "forstevalgKvinnerProsent": {
+     "2026": 59.6
+    },
+    "kvalifiserte": {
+     "2026": 3357
+    },
+    "tilbud": {
+     "2026": 400
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2026": 59.2
+    },
+    "forstegangsvitnemal": {
+     "2026": 31.9
+    },
+    "ordinarSupplering": {
+     "2026": 59.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2026": 31.3
+    }
+   },
+   "status": "ny",
+   "forsteOpptakSO": "2026",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": [
+    {
+     "gruppe": "aarsstudier",
+     "gruppenavn": "Årsstudier i økonomi og ledelse",
+     "entryId": "uis_okjus_ar",
+     "default": true,
+     "programnavnHH": "Økonomi og jus (årsstudium)",
+     "studiekodeHH": "217097",
+     "dbhKoderHH": []
+    }
+   ]
+  },
+  {
+   "id": "so-217218",
+   "institusjon": "Universitetet i Stavanger",
+   "institusjonKort": "UiS",
+   "dbhInstitusjonskode": "1160",
+   "sektor": "offentlig",
+   "campus": "Stavanger",
+   "campusAlle": [
+    "Stavanger"
+   ],
+   "programnavn": "Økonomi og ledelse",
+   "programnavnTidligere": [],
+   "fagomraade": "økonomi og administrasjon",
+   "type": "BØA",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "stedbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "217218",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.uis.no/nb/studier/okonomi-og-ledelse-arsstudium",
+   "studieplasser": {
+    "2024": 47,
+    "2025": 67,
+    "2026": 57
+   },
+   "sokere": {
+    "alle": {
+     "2024": 1416,
+     "2025": 1124,
+     "2026": 1247
+    },
+    "forstevalg": {
+     "2024": 296,
+     "2025": 233,
+     "2026": 163
+    },
+    "forstevalgKvinnerProsent": {
+     "2024": 53.7,
+     "2025": 53.6,
+     "2026": 58.9
+    },
+    "kvalifiserte": {
+     "2024": 1304,
+     "2025": 1044,
+     "2026": 1175
+    },
+    "tilbud": {
+     "2024": 100,
+     "2025": 120,
+     "2026": 150
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2024": 55.6,
+     "2025": 54.6,
+     "2026": 52.0
+    },
+    "forstegangsvitnemal": {
+     "2024": 47.4,
+     "2025": 44.8,
+     "2026": 44.9
+    },
+    "ordinarSupplering": {
+     "2024": 52.5,
+     "2025": 51.6,
+     "2026": 52.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2024": 44.1,
+     "2025": 41.9,
+     "2026": 44.9
+    }
+   },
+   "status": "ny",
+   "forsteOpptakSO": "2024",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-222097",
+   "institusjon": "Universitetet i Sørøst-Norge",
+   "institusjonKort": "USN",
+   "dbhInstitusjonskode": "1176",
+   "sektor": "offentlig",
+   "campus": "Ringerike",
+   "campusAlle": [
+    "Ringerike",
+    "Hønefoss"
+   ],
+   "programnavn": "Økonomi og administrasjon, Hønefoss",
+   "programnavnTidligere": [],
+   "fagomraade": "økonomi og administrasjon",
+   "type": "BØA",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "stedbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "222097",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.usn.no/studier/arsstudium-i-okonomi-og-administrasjon/ringerike-heltid",
+   "studieplasser": {
+    "2024": 20,
+    "2025": 20,
+    "2026": 20
+   },
+   "sokere": {
+    "alle": {
+     "2024": 177,
+     "2025": 134,
+     "2026": 167
+    },
+    "forstevalg": {
+     "2024": 22,
+     "2025": 13,
+     "2026": 20
+    },
+    "forstevalgKvinnerProsent": {
+     "2024": 72.7,
+     "2025": 30.8,
+     "2026": 45.0
+    },
+    "kvalifiserte": {
+     "2024": 162,
+     "2025": 115,
+     "2026": 146
+    },
+    "tilbud": {
+     "2024": 42,
+     "2025": 27,
+     "2026": 35
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemal": {
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "ordinarSupplering": {
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    }
+   },
+   "status": "ny",
+   "forsteOpptakSO": "2024",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": [
+    {
+     "gruppe": "oa",
+     "gruppenavn": "Økonomi og administrasjon",
+     "entryId": "usn_honefoss_oa",
+     "default": false,
+     "programnavnHH": "Økonomi og ledelse (bachelor)",
+     "studiekodeHH": "222097",
+     "dbhKoderHH": [
+      "ØKLEDR"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "so-222164",
+   "institusjon": "Universitetet i Sørøst-Norge",
+   "institusjonKort": "USN",
+   "dbhInstitusjonskode": "1176",
+   "sektor": "offentlig",
+   "campus": "Bø",
+   "campusAlle": [
+    "Bø",
+    "Midt-Telemark"
+   ],
+   "programnavn": "Økonomi og administrasjon, Bø",
+   "programnavnTidligere": [],
+   "fagomraade": "økonomi og administrasjon",
+   "type": "BØA",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "stedbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "222164",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.usn.no/studier/arsstudium-i-okonomi-og-administrasjon/bo-heltid",
+   "studieplasser": {
+    "2024": 20,
+    "2025": 20,
+    "2026": 20
+   },
+   "sokere": {
+    "alle": {
+     "2024": 164,
+     "2025": 130,
+     "2026": 144
+    },
+    "forstevalg": {
+     "2024": 25,
+     "2025": 22,
+     "2026": 29
+    },
+    "forstevalgKvinnerProsent": {
+     "2024": 44.0,
+     "2025": 54.5,
+     "2026": 44.8
+    },
+    "kvalifiserte": {
+     "2024": 148,
+     "2025": 119,
+     "2026": 128
+    },
+    "tilbud": {
+     "2024": 38,
+     "2025": 20,
+     "2026": 45
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2020": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemal": {
+     "2020": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "ordinarSupplering": {
+     "2020": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2020": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    }
+   },
+   "status": "aktiv",
+   "forsteOpptakSO": "2017",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": [
+    {
+     "gruppe": "oa",
+     "gruppenavn": "Økonomi og administrasjon",
+     "entryId": "usn_bo_oa",
+     "default": false,
+     "programnavnHH": "Økonomi og ledelse (bachelor)",
+     "studiekodeHH": "222164",
+     "dbhKoderHH": []
+    }
+   ]
+  },
+  {
+   "id": "so-222218",
+   "institusjon": "Universitetet i Sørøst-Norge",
+   "institusjonKort": "USN",
+   "dbhInstitusjonskode": "1176",
+   "sektor": "offentlig",
+   "campus": "Hallingdal",
+   "campusAlle": [
+    "Hallingdal",
+    "Gol"
+   ],
+   "programnavn": "Økonomi og administrasjon, Hallingdal",
+   "programnavnTidligere": [],
+   "fagomraade": "økonomi og administrasjon",
+   "type": "BØA",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "stedbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "222218",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.usn.no/studier/arsstudium-i-okonomi-og-administrasjon/hallingdal-heltid",
+   "studieplasser": {
+    "2024": 15,
+    "2025": 15,
+    "2026": 20
+   },
+   "sokere": {
+    "alle": {
+     "2024": 37,
+     "2025": 24,
+     "2026": 23
+    },
+    "forstevalg": {
+     "2024": 6,
+     "2025": 6,
+     "2026": 6
+    },
+    "forstevalgKvinnerProsent": {
+     "2024": 0.0,
+     "2025": 50.0,
+     "2026": 50.0
+    },
+    "kvalifiserte": {
+     "2024": 31,
+     "2025": 22,
+     "2026": 21
+    },
+    "tilbud": {
+     "2024": 6,
+     "2025": 6,
+     "2026": 6
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemal": {
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "ordinarSupplering": {
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    }
+   },
+   "status": "ny",
+   "forsteOpptakSO": "2024",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-222398",
+   "institusjon": "Universitetet i Sørøst-Norge",
+   "institusjonKort": "USN",
+   "dbhInstitusjonskode": "1176",
+   "sektor": "offentlig",
+   "campus": "Hallingdal",
+   "campusAlle": [
+    "Hallingdal",
+    "Gol"
+   ],
+   "programnavn": "Bedriftsøkonomi, deltid",
+   "programnavnTidligere": [
+    "Økonomi og administrasjon, deltid"
+   ],
+   "fagomraade": "økonomi og administrasjon",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": false,
+   "studieform": "stedbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "222398",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.usn.no/studier/arsstudium-i-okonomi-og-administrasjon/hallingdal-deltid",
+   "studieplasser": {
+    "2024": 20,
+    "2025": 20
+   },
+   "sokere": {
+    "alle": {
+     "2024": 87,
+     "2025": 75
+    },
+    "forstevalg": {
+     "2024": 12,
+     "2025": 13
+    },
+    "forstevalgKvinnerProsent": {
+     "2024": 83.3,
+     "2025": 69.2
+    },
+    "kvalifiserte": {
+     "2024": 81,
+     "2025": 68
+    },
+    "tilbud": {
+     "2024": 24,
+     "2025": 14
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2024": 0.0,
+     "2025": 0.0
+    },
+    "forstegangsvitnemal": {
+     "2024": 0.0,
+     "2025": 0.0
+    },
+    "ordinarSupplering": {
+     "2024": 0.0,
+     "2025": 0.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2024": 0.0,
+     "2025": 0.0
+    }
+   },
+   "status": "nedlagt",
+   "forsteOpptakSO": "2024",
+   "sisteOpptakSO": "2025",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-222625",
+   "institusjon": "Universitetet i Sørøst-Norge",
+   "institusjonKort": "USN",
+   "dbhInstitusjonskode": "1176",
+   "sektor": "offentlig",
+   "campus": "Kongsberg",
+   "campusAlle": [
+    "Kongsberg"
+   ],
+   "programnavn": "Økonomi og administrasjon, Kongsberg",
+   "programnavnTidligere": [],
+   "fagomraade": "økonomi og administrasjon",
+   "type": "BØA",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "stedbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "222625",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.usn.no/studier/arsstudium-i-okonomi-og-administrasjon/kongsberg-heltid",
+   "studieplasser": {
+    "2025": 25,
+    "2026": 25
+   },
+   "sokere": {
+    "alle": {
+     "2025": 201,
+     "2026": 224
+    },
+    "forstevalg": {
+     "2025": 25,
+     "2026": 22
+    },
+    "forstevalgKvinnerProsent": {
+     "2025": 56.0,
+     "2026": 68.2
+    },
+    "kvalifiserte": {
+     "2025": 175,
+     "2026": 191
+    },
+    "tilbud": {
+     "2025": 43,
+     "2026": 42
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemal": {
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "ordinarSupplering": {
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2025": 0.0,
+     "2026": 0.0
+    }
+   },
+   "status": "ny",
+   "forsteOpptakSO": "2025",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": [
+    {
+     "gruppe": "oa",
+     "gruppenavn": "Økonomi og administrasjon",
+     "entryId": "usn_kongsberg_oa",
+     "default": false,
+     "programnavnHH": "Økonomi og ledelse (bachelor)",
+     "studiekodeHH": "222625",
+     "dbhKoderHH": [
+      "BACHØKADK"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "so-224398",
+   "institusjon": "Høgskolen i Østfold",
+   "institusjonKort": "HiØ",
+   "dbhInstitusjonskode": "0256",
+   "sektor": "offentlig",
+   "campus": "Halden",
+   "campusAlle": [
+    "Halden"
+   ],
+   "programnavn": "Bedriftsøkonomi",
+   "programnavnTidligere": [],
+   "fagomraade": "økonomi og administrasjon",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "stedbasert",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "224398",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.hiof.no/studier/programmer/bedok-bedriftsokonomi-arsstudium/index.html",
+   "studieplasser": {
+    "2021": 40,
+    "2022": 40,
+    "2023": 25,
+    "2024": 25,
+    "2025": 40,
+    "2026": 40
+   },
+   "sokere": {
+    "alle": {
+     "2021": 509,
+     "2022": 330,
+     "2023": 317,
+     "2024": 316,
+     "2025": 279,
+     "2026": 273
+    },
+    "forstevalg": {
+     "2021": 102,
+     "2022": 40,
+     "2023": 33,
+     "2024": 41,
+     "2025": 43,
+     "2026": 33
+    },
+    "forstevalgKvinnerProsent": {
+     "2021": 42.2,
+     "2022": 55.0,
+     "2023": 42.4,
+     "2024": 53.7,
+     "2025": 27.9,
+     "2026": 39.4
+    },
+    "kvalifiserte": {
+     "2021": 447,
+     "2022": 303,
+     "2023": 277,
+     "2024": 269,
+     "2025": 241,
+     "2026": 234
+    },
+    "tilbud": {
+     "2021": 94,
+     "2022": 72,
+     "2023": 63,
+     "2024": 55,
+     "2025": 58,
+     "2026": 55
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2020": 0.0,
+     "2021": 46.8,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemal": {
+     "2020": 0.0,
+     "2021": 30.5,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "ordinarSupplering": {
+     "2020": 0.0,
+     "2021": 45.1,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    }
+   },
+   "status": "aktiv",
+   "forsteOpptakSO": "2016",
+   "sisteOpptakSO": "2026",
+   "merknader": [],
+   "hh": []
+  },
+  {
+   "id": "so-254393",
+   "institusjon": "NLA Høgskolen",
+   "institusjonKort": "NLA",
+   "dbhInstitusjonskode": "8223",
+   "sektor": "privat",
+   "campus": "Oslo",
+   "campusAlle": [
+    "Oslo"
+   ],
+   "programnavn": "Bærekraftig entreprenørskap og innovasjon",
+   "programnavnTidligere": [],
+   "fagomraade": "innovasjon og entreprenørskap",
+   "type": "annet",
+   "nivaa": "årsstudium",
+   "studiepoeng": 60,
+   "heltid": true,
+   "studieform": "nett",
+   "grensetilfelle": false,
+   "opptak": "Samordna",
+   "soStudiekode": "254393",
+   "soUtdanningstype": "Økonomisk-administrative fag",
+   "url": "https://www.nla.no/studier/studieprogram/%C3%85rsstudium%20i%20b%C3%A6rekraftig%20entrepren%C3%B8rskap%20og%20innovasjon%20-%20nettbasert",
+   "studieplasser": {
+    "2024": 25,
+    "2025": 25,
+    "2026": 25
+   },
+   "sokere": {
+    "alle": {
+     "2024": 1527,
+     "2025": 1342,
+     "2026": 1178
+    },
+    "forstevalg": {
+     "2024": 158,
+     "2025": 153,
+     "2026": 108
+    },
+    "forstevalgKvinnerProsent": {
+     "2024": 57.0,
+     "2025": 58.8,
+     "2026": 56.5
+    },
+    "kvalifiserte": {
+     "2024": 1409,
+     "2025": 1266,
+     "2026": 1104
+    },
+    "tilbud": {
+     "2024": 250,
+     "2025": 277,
+     "2026": 265
+    }
+   },
+   "poenggrenser": {
+    "ordinar": {
+     "2024": 46.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemal": {
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "ordinarSupplering": {
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    },
+    "forstegangsvitnemalSupplering": {
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": 0.0
+    }
+   },
+   "status": "ny",
+   "forsteOpptakSO": "2024",
+   "sisteOpptakSO": "2026",
+   "merknader": [
+    "Samordna oppgir at programmet har studieavgift."
+   ],
+   "hh": [
+    {
+     "gruppe": "aarsstudier",
+     "gruppenavn": "Årsstudier i økonomi og ledelse",
+     "entryId": "nla_bei_ar",
+     "default": false,
+     "programnavnHH": "Bærekraftig entreprenørskap og innovasjon (årsstudium)",
+     "studiekodeHH": "254393",
+     "dbhKoderHH": [
+      "4BEI-N"
+     ]
+    }
+   ]
+  }
+ ]
+}
