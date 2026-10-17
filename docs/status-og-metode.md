@@ -1445,19 +1445,28 @@ Utvidelse av «Fagfeltprofil» i AJG-sammenligningen (`?rangering&fane=ajg`), et
   valgt blant skolene i FTs Europa-rangering. Frittstående skoler telles som hele institusjonen. De store amerikanske
   (Wharton, HBS, Stanford GSB, Chicago Booth, MIT Sloan, Kellogg, Columbia, NYU Stern) er fakulteter og finnes ikke som
   egne enheter i OpenAlex; de avgrenses med universitetet pluss skolenavnet i tilknytningsteksten (felt `tekst`,
-  `raw_affiliation_strings.search`, 10 kreditter per side) og er derfor bare hentet fra 2023 (`--tekst-fra`). Babson og
-  Bentley er egne institusjoner. Hel telling, koblet til AJG 2024 på ISSN. I tabellen velges regionene som kolonner
+  `raw_affiliation_strings.search`, 10 kreditter per side). Uten nøkkel ble de bare hentet fra 2023; med API-nøkkel
+  (18.10, se under) er de hentet for 2016–2025 (`--tekst-fra 2016`). Babson og Bentley er egne institusjoner. Hel telling, koblet til AJG 2024 på ISSN. I tabellen velges regionene som kolonner
   («Sammenlign med»; standard Norden, Europa og USA; «Europa» = vest + sentral + sør, «Alle int.» = alle). Hver kolonne er
   snittet av skolenes egne profiler (hver skole veier likt); skoler med under 10 artikler på nivået i perioden eller uten
-  tall for alle årene er holdt utenfor (USA-fakultetene er altså bare med for perioder innenfor 2023–2025). NHH og BI telles
+  tall for alle årene er holdt utenfor. NHH og BI telles
   på samme måte i OpenAlex som kontroll mot NVA-profilen (detaljtabellen «Om sammenligningsgrunnlaget»). IE University og
   FGV er holdt utenfor (mange fakulteter utenom økonomi).
   Kontroll 2023–2025, nivå 3+: NHH i OpenAlex 293 artikler mot 301 i NVA, BI 364 mot 392, og andelene per fagfelt
   avviker høyst ett prosentpoeng (f.eks. samfunnsøkonomi NHH 43/43 %, BI 17/18 %), så OpenAlex-profilene er
   sammenlignbare med de norske. Eksempel (2023–2025, nivå 3+, samfunnsøkonomi): Norden 14 %, Europa 12 %, USA 20 %,
   Asia 14 %, alle AJG-artikler 16 %, AJG-tidsskrift 20 %, HH NMBU 55 %. USA-snittet: åtte fakulteter (fra 2023) + Babson og
-  Bentley; 172 kreditter var igjen etter hentingen 18.10, så 2016–2022 for USA-fakultetene kan hentes senere
-  (`hent_ajg_profil.py skoler --tekst-fra 2020`, ~25 kreditter per skole per tre år).
+  Bentley.
+- **Toppgrupper (18.10, etter ønske fra Mathias):** «Verdenstopp» = plass 1–25 og «Europatopp» = europeiske skoler på
+  The UTD Top 100 Business School Research Rankings, Worldwide 2021–2025 (24 tidsskrift; lest 18.10.2026). Feltene
+  `utd` (plass) og `topp` (verden/europa) i `hh-internasjonalt.json`. 27 skoler ble lagt til for å dekke listene (bl.a. UT
+  Dallas, USC Marshall, Indiana Kelley, UT Austin McCombs, Cornell Johnson, Toronto Rotman, HKU, Michigan Ross, Duke Fuqua,
+  RSM, Tilburg, Imperial, Bayes, Warwick, UCL, Oxford Saïd, LSE (Management, Finance, Accounting), Cambridge Judge, TUM,
+  Amsterdam Business School), alle som fakulteter med tilknytningstekst og også med i sin region. Kellogg (26) er i USA,
+  ikke i verdenstoppen. Standardkolonner: Norden, Europa, USA og Verdenstopp. UTD-rangeringen velger bare hvem som er med;
+  profilen er skolenes egne AJG-artikler.
+- **OpenAlex-nøkkel:** Mathias' gratis nøkkel (10 000 kreditter per døgn) ligger i `kilde/.env.local` som
+  `OPENALEX_API_KEY`; `hent_openalex.py` (`api_nokkel()`) sender den som `api_key` og maskerer den i feilmeldinger.
 - **Datakjeden:** `scripts/rangering/hent_ajg_profil.py kilder | volum | skoler` (OpenAlex uten nøkkel; ~70 + 70 +
   ~350 kreditter). Uten API-nøkkel går verken `cursor` eller `group_by` forbi første side, så skolenes verk listes
   sidevis (`page=`, maks 10 000 per spørring; skriptet deler vinduet ved behov). Cache i `data/rangering/openalex/`

@@ -40,11 +40,14 @@ type AjgFagTre = Record<string, [number, number, number]>;
 interface AjgProfil {
   tidsskrift: AjgFagTre; volum: Record<string, AjgFagTre>;
   /** gruppe = region (norden, vest, sentral, sor, usa, canada, asia) eller kontroll; metode «tekst» = fakultet avgrenset på tilknytningstekst */
-  skoler: { id: string; kort: string; navn: string; land: string; gruppe: string; metode?: 'institusjon' | 'tekst'; aar: Record<string, { n: number; ajg: number; fag: AjgFagTre }> }[];
-  /** region-id → navn */ grupper?: Record<string, string>;
+  skoler: { id: string; kort: string; navn: string; land: string; gruppe: string; metode?: 'institusjon' | 'tekst'; /** plass i UTD Top 100 Worldwide */ utd?: number | null; /** toppgrupper: verden, europa */ topp?: string[]; aar: Record<string, { n: number; ajg: number; fag: AjgFagTre }> }[];
+  /** region-id → navn */ grupper?: Record<string, string>; utd?: { kilde: string; url: string } | null;
 }
-/** Regionene som kan vises som kolonner i fagfeltprofilen; «europa» og «alle» er sammenslåinger */
-const REF_GRUPPER: { id: string; navn: string; kort: string; av: string[] }[] = [
+/** Gruppene som kan vises som kolonner i fagfeltprofilen: regioner (av = regionene som inngår) eller toppgrupper
+ * (topp = merket i hh-internasjonalt.json etter UTD Top 100); «europa» og «alle» er sammenslåinger */
+const REF_GRUPPER: { id: string; navn: string; kort: string; av: string[]; topp?: string }[] = [
+  { id: 'topp_verden', navn: 'Verdenstoppen: UTD Top 100 plass 1–25 (2021–2025)', kort: 'Verdenstopp', av: [], topp: 'verden' },
+  { id: 'topp_europa', navn: 'Europatoppen: europeiske skoler på UTD Top 100 (2021–2025)', kort: 'Europatopp', av: [], topp: 'europa' },
   { id: 'norden', navn: 'Nordiske handelshøyskoler', kort: 'Norden', av: ['norden'] },
   { id: 'vest', navn: 'Vest-Europa', kort: 'Vest-Europa', av: ['vest'] },
   { id: 'sentral', navn: 'Sentral-Europa', kort: 'Sentral-Eur.', av: ['sentral'] },
@@ -55,7 +58,7 @@ const REF_GRUPPER: { id: string; navn: string; kort: string; av: string[] }[] = 
   { id: 'asia', navn: 'Asia', kort: 'Asia', av: ['asia'] },
   { id: 'alle', navn: 'Alle internasjonale', kort: 'Alle int.', av: ['norden', 'vest', 'sentral', 'sor', 'usa', 'canada', 'asia'] },
 ];
-const REF_STD = ['norden', 'europa', 'usa'];
+const REF_STD = ['norden', 'europa', 'usa', 'topp_verden'];
 const REGION_REKKE = ['norden', 'vest', 'sentral', 'sor', 'usa', 'canada', 'asia', 'kontroll'];
 interface AjgNhhMeta { kilde: string; url: string; liste: string; nevner: string; usikker: Record<string, number[]>; sider: Record<string, number>; }
 interface Kontroll { skole: string; enhet?: string | null; enhetNavn?: string | null; aar: number | null; maal: string; verdi: number | string | null; nevner?: string | null; kilde?: string | null; url?: string | null; side?: number | string | null; merknad?: string | null; vaar?: number | null; vaarAlt?: number | null; vaarNivaa?: string; avvikProsent?: number | null; traff?: 'hoved' | 'alt'; }
@@ -2112,8 +2115,9 @@ function AjgSammenligning({ data, v, std, sett }: { data: Data; v: AjgValg; std:
   const forsteKontroll = intl.find((x) => x.sk.gruppe === 'kontroll')?.sk.id;
   const iMed = (x: (typeof intl)[number]) => x.dekket === aar.length && x.sum >= REF_MIN;
   const andelAv = (f: Record<string, number>) => { const sum = Object.values(f).reduce((a, b) => a + b, 0); return sum ? Object.fromEntries(Object.entries(f).map(([k, x]) => [k, 100 * x / sum])) : null; };
-  const snittAv = (grupper: string[]) => {
-    const med = intl.filter((x) => grupper.includes(x.sk.gruppe) && iMed(x));
+  const iGruppe = (g: (typeof REF_GRUPPER)[number], sk: (typeof intl)[number]['sk']) => g.topp ? !!sk.topp?.includes(g.topp) : g.av.includes(sk.gruppe);
+  const snittAv = (g: (typeof REF_GRUPPER)[number]) => {
+    const med = intl.filter((x) => iGruppe(g, x.sk) && iMed(x));
     if (!med.length) return null;
     const p: Record<string, number> = {};
     med.forEach((x) => Object.entries(x.f).forEach(([fag, n]) => { p[fag] = (p[fag] ?? 0) + 100 * n / x.sum / med.length; }));
@@ -2123,15 +2127,15 @@ function AjgSammenligning({ data, v, std, sett }: { data: Data; v: AjgValg; std:
   for (const y of aar) for (const [fag, t] of Object.entries(prof?.volum[y] ?? {})) volumF[fag] = (volumF[fag] ?? 0) + t[fIx];
   const tidsF = Object.fromEntries(Object.entries(prof?.tidsskrift ?? {}).map(([fag, t]) => [fag, t[fIx]]));
   const sumAv = (f: Record<string, number>) => Object.values(f).reduce((a, b) => a + b, 0);
-  const harGruppe = (g: (typeof REF_GRUPPER)[number]) => intl.some((x) => g.av.includes(x.sk.gruppe));
+  const harGruppe = (g: (typeof REF_GRUPPER)[number]) => intl.some((x) => iGruppe(g, x.sk));
   const gruppeKol = REF_GRUPPER.filter((g) => refValg.includes(g.id) && harGruppe(g)).map((g) => {
-    const sn = snittAv(g.av);
-    const utenfor = intl.filter((x) => g.av.includes(x.sk.gruppe) && !iMed(x)).map((x) => x.sk.kort);
+    const sn = snittAv(g);
+    const utenfor = intl.filter((x) => iGruppe(g, x.sk) && !iMed(x)).map((x) => x.sk.kort);
     return { id: g.id, kort: g.kort, lang: g.navn, p: sn?.p ?? {}, tom: !sn,
       fot: sn ? `${sn.med.length} skoler` : 'ingen tall',
       title: sn ? `${g.navn}: snitt av profilene til ${sn.med.map((x) => x.sk.kort).join(', ')} (OpenAlex, hel telling)${utenfor.length ? `. Ikke med for denne perioden: ${utenfor.join(', ')}` : ''}` : `${g.navn}: ingen skoler med tall for hele perioden` };
   });
-  const europaS = snittAv(['vest', 'sentral', 'sor']);
+  const europaS = snittAv(REF_GRUPPER.find((g) => g.id === 'europa') as (typeof REF_GRUPPER)[number]);
   const refKol = [
     ...gruppeKol,
     sumAv(volumF) > 0 && { id: 'volum', kort: 'AJG-artikler', lang: 'Alle artikler i AJG-tidsskriftene', p: andelAv(volumF) as Record<string, number>,
@@ -2374,7 +2378,7 @@ function AjgSammenligning({ data, v, std, sett }: { data: Data; v: AjgValg; std:
           <div className="cmprow" role="group" aria-label="Sammenligningsgrupper i fagfeltprofilen">
             <span className="lab" style={{ alignSelf: 'center' }}>Sammenlign med</span>
             {REF_GRUPPER.filter(harGruppe).map((g) => (
-              <button key={g.id} type="button" className="seg" aria-pressed={refValg.includes(g.id)} title={`${g.navn}: ${intl.filter((x) => g.av.includes(x.sk.gruppe)).map((x) => x.sk.kort).join(', ')}`}
+              <button key={g.id} type="button" className="seg" aria-pressed={refValg.includes(g.id)} title={`${g.navn}: ${intl.filter((x) => iGruppe(g, x.sk)).map((x) => x.sk.kort).join(', ')}`}
                 onClick={() => setRefValg(refValg.includes(g.id) ? refValg.filter((x) => x !== g.id) : REF_GRUPPER.map((x) => x.id).filter((x) => x === g.id || refValg.includes(x)))}>{g.kort}</button>
             ))}
           </div>
@@ -2414,8 +2418,9 @@ function AjgSammenligning({ data, v, std, sett }: { data: Data; v: AjgValg; std:
           <details className="ajg-ref">
             <summary>Om sammenligningsgrunnlaget og hver internasjonale skole</summary>
             <ul className="cap">
-              <li><b>Regionene</b> (velg over tabellen) er snittet av skolenes egne profiler (hver skole veier likt), med artikler i AJG-tidsskrift på nivå {fagNiva}+ i {periodeTekst}. Hold musa over en knapp eller kolonne for å se hvilke skoler som er med. I Europa, Canada og Asia er det frittstående handelshøyskoler som er egne institusjoner i OpenAlex, så hele skolen telles uten avgrensning på fagfelt; de europeiske er valgt blant skolene i Financial Times’ Europa-rangering. Universiteter med handelshøyskole som fakultet (for eksempel Rotterdam, Mannheim, Oxford) er ikke med.</li>
-              <li><b>USA:</b> de store handelshøyskolene (Wharton, HBS, Stanford GSB, Chicago Booth, MIT Sloan, Kellogg, Columbia, NYU Stern) er fakulteter og finnes ikke som egne enheter i OpenAlex. De er avgrenset med universitetet pluss skolenavnet i forfatternes tilknytningstekst. Det koster ti ganger så mye i OpenAlex, så de er bare hentet fra 2023 og er med i snittet bare når perioden ligger innenfor 2023–2025. Babson og Bentley er egne institusjoner og finnes for alle år. Skoler med færre enn {REF_MIN} slike artikler i perioden, eller uten tall for alle årene, er holdt utenfor snittet.</li>
+              <li><b>Regionene</b> (velg over tabellen) er snittet av skolenes egne profiler (hver skole veier likt), med artikler i AJG-tidsskrift på nivå {fagNiva}+ i {periodeTekst}. Hold musa over en knapp eller kolonne for å se hvilke skoler som er med. Regionene samler alle skolene vi har i regionen: frittstående handelshøyskoler (egne institusjoner i OpenAlex, hele skolen telles; de europeiske valgt blant skolene i Financial Times’ Europa-rangering) og toppskolene som er fakulteter ved universiteter.</li>
+              <li><b>Toppgruppene</b> følger The UTD Top 100 Business School Research Rankings (verden, 2021–2025), som rangerer handelshøyskoler etter forskning i 24 ledende tidsskrift: «Verdenstopp» er plass 1–25, «Europatopp» er de europeiske skolene på topp 100. Rangeringen velger bare hvem som er med; profilen er skolenes egne AJG-artikler.{prof?.utd?.url ? <> (<a href={prof.utd.url} target="_blank" rel="noreferrer">UTD-rangeringen</a>)</> : null}</li>
+              <li><b>Handelshøyskoler som er fakulteter</b> (Wharton, HBS, Stanford GSB, Michigan Ross, Rotman, RSM, Oxford Saïd, Imperial og andre) finnes ikke som egne enheter i OpenAlex. De er avgrenset med universitetet pluss skolenavnet i forfatternes tilknytningstekst, som fanger de fleste, men ikke alle, av skolens artikler. Skoler med færre enn {REF_MIN} slike artikler i perioden, eller uten tall for alle årene, er holdt utenfor snittet.</li>
               <li><b>Kilde for skolene:</b> OpenAlex (CC0), artikler og oversiktsartikler der minst én forfatter er tilknyttet skolen (hel telling), koblet til AJG 2024 på ISSN. De norske kolonnene bygger på NVA og bare NVI-rapporterte artikler. Kontroll: NHH og BI talt i OpenAlex på samme måte står nederst i tabellen under, ved siden av NVA-tallene.</li>
               <li><b>AJG-artikler</b> er alle artikler i AJG-tidsskriftene på nivå {fagNiva}+ i perioden, uansett hvem som skrev dem (OpenAlex). Noen store tidsskrift trekker mye, for eksempel tekniske og naturvitenskapelige tidsskrift som AJG plasserer i Samfunnsvitenskap og Operasjonsanalyse. <b>AJG-tidsskrift</b> er andelen av tidsskriftene på lista, uavhengig av hvor mye de publiserer.</li>
               <li>Times Higher Education, QS og FT publiserer ikke fagfeltprofiler for skolene; FT teller bare artikler i FT50-tidsskriftene. Derfor er profilen bygd her fra OpenAlex.</li>
@@ -2423,7 +2428,7 @@ function AjgSammenligning({ data, v, std, sett }: { data: Data; v: AjgValg; std:
             </ul>
             <div className="scroll">
               <table className="ajg-hm">
-                <thead><tr><th>AJG-fagfelt</th>{intl.map((x) => <th key={x.sk.id} title={`${x.sk.navn} (${x.sk.land}, ${prof?.grupper?.[x.sk.gruppe] ?? x.sk.gruppe})${x.sk.metode === 'tekst' ? ' – avgrenset på tilknytningstekst innen universitetet' : ''}${iMed(x) ? '' : ' – ikke med i snittet'}`} className={x.sk.id === forsteKontroll ? 'ref forste' : undefined}>{x.sk.kort}{iMed(x) || x.sk.gruppe === 'kontroll' ? '' : '*'}</th>)}
+                <thead><tr><th>AJG-fagfelt</th>{intl.map((x) => <th key={x.sk.id} title={`${x.sk.navn} (${x.sk.land}, ${prof?.grupper?.[x.sk.gruppe] ?? x.sk.gruppe})${x.sk.utd ? ` – UTD Top 100 nr. ${x.sk.utd}` : ''}{x.sk.metode === 'tekst' ? ' – avgrenset på tilknytningstekst innen universitetet' : ''}${iMed(x) ? '' : ' – ikke med i snittet'}`} className={x.sk.id === forsteKontroll ? 'ref forste' : undefined}>{x.sk.kort}{iMed(x) || x.sk.gruppe === 'kontroll' ? '' : '*'}</th>)}
                   {fagPer.filter((p) => ['nhh', 'bi'].includes(p.r.s.id)).map((p) => <th key={p.r.s.id} title={`${p.r.s.kort} fra NVA (NVI-rapporterte artikler), til kontroll`}>{p.r.s.kort} (NVA)</th>)}</tr></thead>
                 <tbody>
                   {fagKol.map((fag) => (

@@ -1,5 +1,5 @@
 {
- "merknad": "Referansesett for fagfeltprofilen (AJG-sammenligningen, 18.10.2026), gruppert etter region. Frittstående handelshøyskoler som er egne institusjoner i OpenAlex telles som hele institusjonen; Europa er valgt blant skolene i FTs Europa-rangering. De store amerikanske handelshøyskolene er fakulteter i universiteter og finnes ikke som egne enheter i OpenAlex; de avgrenses med universitetet pluss tilknytningstekst (felt «tekst», OpenAlex raw_affiliation_strings.search, 10 kreditter per side), derfor bare fra 2023. Flere OpenAlex-id-er = campuser i samme skole. NHH og BI er kontroll av OpenAlex mot NVA, ikke i snittene. IE University og FGV er holdt utenfor (mange fakulteter utenom økonomi). University of St.Gallen og SMU er med (økonomi, ledelse, jus m.m.).",
+ "merknad": "Referansesett for fagfeltprofilen (AJG-sammenligningen, 18.10.2026), gruppert etter region. Frittstående handelshøyskoler som er egne institusjoner i OpenAlex telles som hele institusjonen; Europa er valgt blant skolene i FTs Europa-rangering. De store amerikanske handelshøyskolene er fakulteter i universiteter og finnes ikke som egne enheter i OpenAlex; de avgrenses med universitetet pluss tilknytningstekst (felt «tekst», OpenAlex raw_affiliation_strings.search, 10 kreditter per side), derfor bare fra 2023. Flere OpenAlex-id-er = campuser i samme skole. NHH og BI er kontroll av OpenAlex mot NVA, ikke i snittene. IE University og FGV er holdt utenfor (mange fakulteter utenom økonomi). University of St.Gallen og SMU er med (økonomi, ledelse, jus m.m.). Toppgruppene (18.10.2026): «utd» = plass i UTD Top 100 Worldwide 2021–2025; «topp» = verden (plass 1–25) og/eller europa (europeiske skoler på topp 100). Kellogg (26) er med i USA, men ikke i verdenstoppen. Universitetsfakultetene avgrenses på tilknytningstekst.",
  "skoler": [
   {
    "id": "cbs",
@@ -9,6 +9,10 @@
    "gruppe": "norden",
    "openalex": [
     "I180519160"
+   ],
+   "utd": 64,
+   "topp": [
+    "europa"
    ]
   },
   {
@@ -39,6 +43,10 @@
    "gruppe": "vest",
    "openalex": [
     "I83860666"
+   ],
+   "utd": 55,
+   "topp": [
+    "europa"
    ]
   },
   {
@@ -51,6 +59,11 @@
     "I102272798",
     "I4210152270",
     "I4210149427"
+   ],
+   "utd": 9,
+   "topp": [
+    "verden",
+    "europa"
    ]
   },
   {
@@ -61,6 +74,11 @@
    "gruppe": "vest",
    "openalex": [
     "I61544103"
+   ],
+   "utd": 18,
+   "topp": [
+    "verden",
+    "europa"
    ]
   },
   {
@@ -175,6 +193,10 @@
    "gruppe": "sor",
    "openalex": [
     "I71209653"
+   ],
+   "utd": 87,
+   "topp": [
+    "europa"
    ]
   },
   {
@@ -215,6 +237,10 @@
    "gruppe": "sentral",
    "openalex": [
     "I71675930"
+   ],
+   "utd": 88,
+   "topp": [
+    "europa"
    ]
   },
   {
@@ -255,6 +281,10 @@
    "gruppe": "sor",
    "openalex": [
     "I4405253577"
+   ],
+   "utd": 84,
+   "topp": [
+    "europa"
    ]
   },
   {
@@ -276,7 +306,11 @@
    "openalex": [
     "I79576946"
    ],
-   "tekst": "\"Wharton\""
+   "tekst": "\"Wharton\"",
+   "utd": 1,
+   "topp": [
+    "verden"
+   ]
   },
   {
    "id": "hbs",
@@ -287,7 +321,11 @@
    "openalex": [
     "I136199984"
    ],
-   "tekst": "\"Harvard Business School\""
+   "tekst": "\"Harvard Business School\"",
+   "utd": 4,
+   "topp": [
+    "verden"
+   ]
   },
   {
    "id": "stanford_gsb",
@@ -298,7 +336,11 @@
    "openalex": [
     "I97018004"
    ],
-   "tekst": "\"Graduate School of Business\""
+   "tekst": "\"Graduate School of Business\"",
+   "utd": 11,
+   "topp": [
+    "verden"
+   ]
   },
   {
    "id": "booth",
@@ -309,7 +351,11 @@
    "openalex": [
     "I40347166"
    ],
-   "tekst": "\"Booth School\""
+   "tekst": "\"Booth School\"",
+   "utd": 5,
+   "topp": [
+    "verden"
+   ]
   },
   {
    "id": "sloan",
@@ -320,7 +366,11 @@
    "openalex": [
     "I63966007"
    ],
-   "tekst": "\"Sloan School\""
+   "tekst": "\"Sloan School\"",
+   "utd": 8,
+   "topp": [
+    "verden"
+   ]
   },
   {
    "id": "kellogg",
@@ -331,7 +381,9 @@
    "openalex": [
     "I111979921"
    ],
-   "tekst": "\"Kellogg School\""
+   "tekst": "\"Kellogg School\"",
+   "utd": 26,
+   "topp": []
   },
   {
    "id": "columbia_bs",
@@ -342,7 +394,11 @@
    "openalex": [
     "I78577930"
    ],
-   "tekst": "\"Columbia Business School\""
+   "tekst": "\"Columbia Business School\"",
+   "utd": 3,
+   "topp": [
+    "verden"
+   ]
   },
   {
    "id": "stern",
@@ -353,7 +409,11 @@
    "openalex": [
     "I57206974"
    ],
-   "tekst": "\"Stern School\""
+   "tekst": "\"Stern School\"",
+   "utd": 6,
+   "topp": [
+    "verden"
+   ]
   },
   {
    "id": "babson",
@@ -436,6 +496,412 @@
    ]
   },
   {
+   "id": "utd",
+   "kort": "UT Dallas",
+   "navn": "UT Dallas Naveen Jindal School of Management",
+   "land": "US",
+   "gruppe": "usa",
+   "openalex": [
+    "I162577319"
+   ],
+   "tekst": "\"Jindal School\"",
+   "utd": 2,
+   "topp": [
+    "verden"
+   ]
+  },
+  {
+   "id": "marshall",
+   "kort": "USC Marshall",
+   "navn": "USC Marshall School of Business",
+   "land": "US",
+   "gruppe": "usa",
+   "openalex": [
+    "I1174212"
+   ],
+   "tekst": "\"Marshall School\"",
+   "utd": 7,
+   "topp": [
+    "verden"
+   ]
+  },
+  {
+   "id": "kelley",
+   "kort": "Indiana Kelley",
+   "navn": "Indiana University Kelley School of Business",
+   "land": "US",
+   "gruppe": "usa",
+   "openalex": [
+    "I4210119109"
+   ],
+   "tekst": "\"Kelley School\"",
+   "utd": 10,
+   "topp": [
+    "verden"
+   ]
+  },
+  {
+   "id": "mccombs",
+   "kort": "UT Austin McCombs",
+   "navn": "McCombs School of Business (UT Austin)",
+   "land": "US",
+   "gruppe": "usa",
+   "openalex": [
+    "I86519309"
+   ],
+   "tekst": "\"McCombs\"",
+   "utd": 12,
+   "topp": [
+    "verden"
+   ]
+  },
+  {
+   "id": "johnson",
+   "kort": "Cornell Johnson",
+   "navn": "Cornell SC Johnson College of Business",
+   "land": "US",
+   "gruppe": "usa",
+   "openalex": [
+    "I205783295"
+   ],
+   "tekst": "\"Johnson College of Business\" OR \"Johnson Graduate School\"",
+   "utd": 13,
+   "topp": [
+    "verden"
+   ]
+  },
+  {
+   "id": "rotman",
+   "kort": "Toronto Rotman",
+   "navn": "Rotman School of Management (University of Toronto)",
+   "land": "CA",
+   "gruppe": "canada",
+   "openalex": [
+    "I185261750"
+   ],
+   "tekst": "\"Rotman School\"",
+   "utd": 14,
+   "topp": [
+    "verden"
+   ]
+  },
+  {
+   "id": "hku",
+   "kort": "HKU Business",
+   "navn": "HKU Business School (University of Hong Kong)",
+   "land": "HK",
+   "gruppe": "asia",
+   "openalex": [
+    "I889458895"
+   ],
+   "tekst": "\"Faculty of Business and Economics\" OR \"HKU Business School\"",
+   "utd": 15,
+   "topp": [
+    "verden"
+   ]
+  },
+  {
+   "id": "olin",
+   "kort": "WashU Olin",
+   "navn": "Olin Business School (Washington University in St. Louis)",
+   "land": "US",
+   "gruppe": "usa",
+   "openalex": [
+    "I204465549"
+   ],
+   "tekst": "\"Olin Business School\" OR \"Olin School of Business\"",
+   "utd": 16,
+   "topp": [
+    "verden"
+   ]
+  },
+  {
+   "id": "foster",
+   "kort": "UW Foster",
+   "navn": "Foster School of Business (University of Washington)",
+   "land": "US",
+   "gruppe": "usa",
+   "openalex": [
+    "I201448701"
+   ],
+   "tekst": "\"Foster School\"",
+   "utd": 17,
+   "topp": [
+    "verden"
+   ]
+  },
+  {
+   "id": "ross",
+   "kort": "Michigan Ross",
+   "navn": "Ross School of Business (University of Michigan)",
+   "land": "US",
+   "gruppe": "usa",
+   "openalex": [
+    "I27837315"
+   ],
+   "tekst": "\"Ross School\"",
+   "utd": 19,
+   "topp": [
+    "verden"
+   ]
+  },
+  {
+   "id": "carey",
+   "kort": "ASU Carey",
+   "navn": "W. P. Carey School of Business (Arizona State)",
+   "land": "US",
+   "gruppe": "usa",
+   "openalex": [
+    "I55732556"
+   ],
+   "tekst": "\"Carey School\"",
+   "utd": 20,
+   "topp": [
+    "verden"
+   ]
+  },
+  {
+   "id": "fuqua",
+   "kort": "Duke Fuqua",
+   "navn": "Fuqua School of Business (Duke)",
+   "land": "US",
+   "gruppe": "usa",
+   "openalex": [
+    "I170897317"
+   ],
+   "tekst": "\"Fuqua\"",
+   "utd": 21,
+   "topp": [
+    "verden"
+   ]
+  },
+  {
+   "id": "kenan",
+   "kort": "UNC Kenan-Flagler",
+   "navn": "Kenan-Flagler Business School (UNC Chapel Hill)",
+   "land": "US",
+   "gruppe": "usa",
+   "openalex": [
+    "I114027177"
+   ],
+   "tekst": "\"Kenan-Flagler\" OR \"Kenan Flagler\"",
+   "utd": 22,
+   "topp": [
+    "verden"
+   ]
+  },
+  {
+   "id": "carlson",
+   "kort": "Minnesota Carlson",
+   "navn": "Carlson School of Management (University of Minnesota)",
+   "land": "US",
+   "gruppe": "usa",
+   "openalex": [
+    "I130238516"
+   ],
+   "tekst": "\"Carlson School\"",
+   "utd": 23,
+   "topp": [
+    "verden"
+   ]
+  },
+  {
+   "id": "fisher",
+   "kort": "Ohio State Fisher",
+   "navn": "Fisher College of Business (Ohio State)",
+   "land": "US",
+   "gruppe": "usa",
+   "openalex": [
+    "I52357470"
+   ],
+   "tekst": "\"Fisher College of Business\"",
+   "utd": 24,
+   "topp": [
+    "verden"
+   ]
+  },
+  {
+   "id": "smeal",
+   "kort": "Penn State Smeal",
+   "navn": "Smeal College of Business (Penn State)",
+   "land": "US",
+   "gruppe": "usa",
+   "openalex": [
+    "I130769515"
+   ],
+   "tekst": "\"Smeal\"",
+   "utd": 25,
+   "topp": [
+    "verden"
+   ]
+  },
+  {
+   "id": "rsm",
+   "kort": "RSM Rotterdam",
+   "navn": "Rotterdam School of Management (Erasmus University)",
+   "land": "NL",
+   "gruppe": "vest",
+   "openalex": [
+    "I913958620"
+   ],
+   "tekst": "\"Rotterdam School of Management\"",
+   "utd": 37,
+   "topp": [
+    "europa"
+   ]
+  },
+  {
+   "id": "tisem",
+   "kort": "Tilburg TiSEM",
+   "navn": "Tilburg School of Economics and Management",
+   "land": "NL",
+   "gruppe": "vest",
+   "openalex": [
+    "I193700539"
+   ],
+   "tekst": "\"School of Economics and Management\"",
+   "utd": 42,
+   "topp": [
+    "europa"
+   ]
+  },
+  {
+   "id": "imperial",
+   "kort": "Imperial",
+   "navn": "Imperial College Business School",
+   "land": "GB",
+   "gruppe": "vest",
+   "openalex": [
+    "I47508984"
+   ],
+   "tekst": "\"Business School\"",
+   "utd": 46,
+   "topp": [
+    "europa"
+   ]
+  },
+  {
+   "id": "bayes",
+   "kort": "Bayes (City)",
+   "navn": "Bayes Business School (City St George’s, University of London)",
+   "land": "GB",
+   "gruppe": "vest",
+   "openalex": [
+    "I180825142",
+    "I4401726869"
+   ],
+   "tekst": "\"Bayes Business School\" OR \"Cass Business School\"",
+   "utd": 72,
+   "topp": [
+    "europa"
+   ]
+  },
+  {
+   "id": "wbs",
+   "kort": "Warwick",
+   "navn": "Warwick Business School",
+   "land": "GB",
+   "gruppe": "vest",
+   "openalex": [
+    "I39555362"
+   ],
+   "tekst": "\"Warwick Business School\"",
+   "utd": 78,
+   "topp": [
+    "europa"
+   ]
+  },
+  {
+   "id": "ucl_som",
+   "kort": "UCL Management",
+   "navn": "UCL School of Management",
+   "land": "GB",
+   "gruppe": "vest",
+   "openalex": [
+    "I45129253"
+   ],
+   "tekst": "\"School of Management\"",
+   "utd": 83,
+   "topp": [
+    "europa"
+   ]
+  },
+  {
+   "id": "said",
+   "kort": "Oxford Saïd",
+   "navn": "Saïd Business School (University of Oxford)",
+   "land": "GB",
+   "gruppe": "vest",
+   "openalex": [
+    "I40120149"
+   ],
+   "tekst": "\"Said Business School\" OR \"Saïd Business School\"",
+   "utd": 85,
+   "topp": [
+    "europa"
+   ]
+  },
+  {
+   "id": "lse",
+   "kort": "LSE",
+   "navn": "LSE (Department of Management, Finance og Accounting)",
+   "land": "GB",
+   "gruppe": "vest",
+   "openalex": [
+    "I909854389"
+   ],
+   "tekst": "\"Department of Management\" OR \"Department of Finance\" OR \"Department of Accounting\"",
+   "utd": 86,
+   "topp": [
+    "europa"
+   ]
+  },
+  {
+   "id": "judge",
+   "kort": "Cambridge Judge",
+   "navn": "Judge Business School (University of Cambridge)",
+   "land": "GB",
+   "gruppe": "vest",
+   "openalex": [
+    "I241749"
+   ],
+   "tekst": "\"Judge Business School\"",
+   "utd": 92,
+   "topp": [
+    "europa"
+   ]
+  },
+  {
+   "id": "tum",
+   "kort": "TUM Management",
+   "navn": "TUM School of Management",
+   "land": "DE",
+   "gruppe": "sentral",
+   "openalex": [
+    "I62916508"
+   ],
+   "tekst": "\"School of Management\"",
+   "utd": 97,
+   "topp": [
+    "europa"
+   ]
+  },
+  {
+   "id": "abs_uva",
+   "kort": "Amsterdam Business School",
+   "navn": "Amsterdam Business School (University of Amsterdam)",
+   "land": "NL",
+   "gruppe": "vest",
+   "openalex": [
+    "I887064364"
+   ],
+   "tekst": "\"Amsterdam Business School\"",
+   "utd": 98,
+   "topp": [
+    "europa"
+   ]
+  },
+  {
    "id": "nhh_oa",
    "kort": "NHH (OpenAlex)",
    "navn": "NHH, talt i OpenAlex (kontroll)",
@@ -464,6 +930,12 @@
   "usa": "USA",
   "canada": "Canada",
   "asia": "Asia",
-  "kontroll": "Kontroll (Norge i OpenAlex)"
+  "kontroll": "Kontroll (Norge i OpenAlex)",
+  "topp_verden": "Verdenstoppen (UTD topp 25)",
+  "topp_europa": "Europatoppen (UTD topp 100, Europa)"
+ },
+ "utd": {
+  "kilde": "The UTD Top 100 Business School Research Rankings, Worldwide, 2021–2025 (24 tidsskrift), lest 18.10.2026",
+  "url": "https://jsom.utdallas.edu/the-utd-top-100-business-school-research-rankings/worldRankings#20212025"
  }
 }

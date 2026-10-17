@@ -259,10 +259,11 @@ def lag_ajg_profil(lister):
             aar[str(d["aar"])] = {"n": d["n"], "ajg": n_ajg, "fag": dict(fag)}
         if aar:
             skoler.append({k: s[k] for k in ("id", "kort", "navn", "land", "gruppe")}
-                          | {"metode": "tekst" if s.get("tekst") else "institusjon", "aar": aar})
+                          | {"metode": "tekst" if s.get("tekst") else "institusjon", "aar": aar,
+                             "utd": s.get("utd"), "topp": s.get("topp") or []})
     print(f"AJG-profil: {len(tids)} fagfelt, {len(kilde)} tidsskrift koblet til OpenAlex, volum {sorted(volum)[:1]}–{sorted(volum)[-1:]}, "
           f"{len(skoler)} internasjonale skoler")
-    return {"tidsskrift": dict(tids), "volum": volum, "skoler": skoler, "grupper": oppsett.get("grupper") or {}}
+    return {"tidsskrift": dict(tids), "volum": volum, "skoler": skoler, "grupper": oppsett.get("grupper") or {}, "utd": oppsett.get("utd")}
 
 
 def lag_kontroll(skoler):
