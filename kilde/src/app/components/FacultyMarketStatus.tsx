@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import {
   FileText, Download, ExternalLink, ChevronDown, ChevronUp,
   CheckCircle2, Clock, MinusCircle, Globe2, Building2,
-} from 'lucide-react';
+} from '../ikoner';
 import type { FacultyData, MarketInstitution, MarketDoc } from '../data/faculties';
 import { landsamColorForGroups } from '../data/landsamPalette';
 import { StyrepapirSok } from './StyrepapirSok';

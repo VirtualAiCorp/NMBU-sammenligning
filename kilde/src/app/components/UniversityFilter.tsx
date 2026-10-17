@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Building2, Wifi, ChevronDown, ChevronRight } from 'lucide-react';
+import { Building2, Wifi, ChevronDown, ChevronRight } from '../ikoner';
 import { UNIVERSITY_INFO } from '../data/courseMapping';
 import { AccreditationBadge } from './AccreditationBadge';
 

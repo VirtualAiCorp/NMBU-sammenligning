@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { BarChart, Bar, Cell, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend, ReferenceLine } from 'recharts';
-import { Info, ExternalLink, Filter } from 'lucide-react';
+import { Info, ExternalLink, Filter } from '../ikoner';
 import type { FacultyData } from '../data/faculties';
 import { REVENUE_GROUPS, REVENUE_SATSER, REVENUE_HENTET, type RevenueProgram, type RevenueYear } from '../data/revenueData';
 import { landsamColorForGroups } from '../data/landsamPalette';

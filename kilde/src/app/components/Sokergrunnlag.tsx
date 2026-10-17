@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend, ReferenceLine } from 'recharts';
-import { Info, ExternalLink, Users, Calculator, MapPin, GraduationCap } from 'lucide-react';
+import { Info, ExternalLink, Users, Calculator, MapPin, GraduationCap } from '../ikoner';
 
 /**
  * Søkergrunnlaget: ungdomskullene per fylke (SSB, historisk og framskrevet)

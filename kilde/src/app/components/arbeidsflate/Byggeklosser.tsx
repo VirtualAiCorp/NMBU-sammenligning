@@ -4,7 +4,7 @@
  * (klassene med af-prefiks), avgrenset under html[data-oppsett="arbeidsflate"].
  */
 import type { CSSProperties, ReactNode } from 'react';
-import { ArrowUpRight, ChevronRight, TrendingDown, TrendingUp, type LucideIcon } from 'lucide-react';
+import { ArrowUpRight, ChevronRight, TrendingDown, TrendingUp, type LucideIcon } from '../../ikoner';
 import { nf } from './tall';
 
 /** Forskjøvet inntoning («home-rise») per seksjon: --i settes som indeks. */

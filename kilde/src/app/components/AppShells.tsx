@@ -1,8 +1,7 @@
 import { useMemo, useState, type ReactNode } from 'react';
 import {
-  LayoutDashboard, BookOpen, Microscope, Home, Landmark, TrendingUp, GraduationCap, Users, Star, Globe2,
-  LayoutGrid, Menu, X, Coins, Archive, Lock, Baby, Briefcase, PanelLeftClose, PanelLeftOpen, Wallet, Building2, Layers, PieChart, MapPinned,
-} from 'lucide-react';
+  Menu, X, PanelLeftClose, PanelLeftOpen, MENY, type Ikon,
+} from '../ikoner';
 import { MenyHint } from './MenyHint';
 import { LagetAv } from './LagetAv';
 import { Forsidenotis } from './Forsidenotis';
@@ -19,40 +18,40 @@ import { InnebygdContext } from '../innebygd';
 export type ShellView = 'landing' | 'analyse' | 'emner' | 'markedsstatus' | 'studiebarometer' | 'gjennomforing' | 'studentene' | 'fagmiljo' | 'bolig' | 'sokergrunnlag' | 'okonomi' | 'inntekt' | 'arbeidsmarked' | 'intern' | 'rangering' | 'stat100' | 'konkurrenter' | 'uhr2' | 'studiesentre';
 type Nav = (f: Faculty | null, view?: ShellView, gruppe?: string) => void;
 
-export const FAKULTETSMODULER: { view: ShellView; label: string; icon: typeof BookOpen; kunFor?: FacultyId }[] = [
-  { view: 'landing', label: 'Oversikt', icon: LayoutGrid },
-  { view: 'analyse', label: 'Opptak', icon: TrendingUp },
-  { view: 'emner', label: 'Emner og karakterer', icon: BookOpen },
-  { view: 'uhr2', label: 'UHR-kartlegging 2.0', icon: Layers, kunFor: 'hh' },
-  { view: 'gjennomforing', label: 'Gjennomføring', icon: GraduationCap },
-  { view: 'studentene', label: 'Studentene', icon: Users },
-  { view: 'studiebarometer', label: 'Studiebarometeret', icon: Star },
-  { view: 'markedsstatus', label: 'Markedsstatus', icon: Globe2 },
-  { view: 'konkurrenter', label: 'Konkurrentene', icon: Building2, kunFor: 'hh' },
-  { view: 'studiesentre', label: 'Studiesentre og eksamenssteder', icon: MapPinned, kunFor: 'hh' },
-  { view: 'inntekt', label: 'Inntekt', icon: Coins },
-  { view: 'arbeidsmarked', label: 'Arbeidsmarkedet', icon: Briefcase },
-  { view: 'intern', label: 'Opptak H26 (intern)', icon: Lock, kunFor: 'hh' },
-  { view: 'rangering', label: 'Rangering (intern)', icon: Lock, kunFor: 'hh' },
-  { view: 'stat100', label: 'STAT100 – analyse', icon: Lock, kunFor: 'hh' },
-  { view: 'fagmiljo', label: 'Fagmiljøet', icon: Microscope },
-  { view: 'sokergrunnlag', label: 'Søkergrunnlaget', icon: Baby },
-  { view: 'bolig', label: 'Bolig', icon: Home },
-  { view: 'okonomi', label: 'Økonomi', icon: Landmark },
+export const FAKULTETSMODULER: { view: ShellView; label: string; icon: Ikon; kunFor?: FacultyId }[] = [
+  { view: 'landing', label: 'Oversikt', icon: MENY.LayoutGrid },
+  { view: 'analyse', label: 'Opptak', icon: MENY.TrendingUp },
+  { view: 'emner', label: 'Emner og karakterer', icon: MENY.BookOpen },
+  { view: 'uhr2', label: 'UHR-kartlegging 2.0', icon: MENY.Layers, kunFor: 'hh' },
+  { view: 'gjennomforing', label: 'Gjennomføring', icon: MENY.GraduationCap },
+  { view: 'studentene', label: 'Studentene', icon: MENY.Users },
+  { view: 'studiebarometer', label: 'Studiebarometeret', icon: MENY.Star },
+  { view: 'markedsstatus', label: 'Markedsstatus', icon: MENY.Globe2 },
+  { view: 'konkurrenter', label: 'Konkurrentene', icon: MENY.Building2, kunFor: 'hh' },
+  { view: 'studiesentre', label: 'Studiesentre og eksamenssteder', icon: MENY.MapPinned, kunFor: 'hh' },
+  { view: 'inntekt', label: 'Inntekt', icon: MENY.Coins },
+  { view: 'arbeidsmarked', label: 'Arbeidsmarkedet', icon: MENY.Briefcase },
+  { view: 'intern', label: 'Opptak H26 (intern)', icon: MENY.Lock, kunFor: 'hh' },
+  { view: 'rangering', label: 'Rangering (intern)', icon: MENY.Lock, kunFor: 'hh' },
+  { view: 'stat100', label: 'STAT100 – analyse', icon: MENY.Lock, kunFor: 'hh' },
+  { view: 'fagmiljo', label: 'Fagmiljøet', icon: MENY.Microscope },
+  { view: 'sokergrunnlag', label: 'Søkergrunnlaget', icon: MENY.Baby },
+  { view: 'bolig', label: 'Bolig', icon: MENY.Home },
+  { view: 'okonomi', label: 'Økonomi', icon: MENY.Landmark },
 ];
-const NMBU_SIDER: { f: Faculty | null; label: string; icon: typeof BookOpen }[] = [
-  { f: null, label: 'Oversikt', icon: LayoutDashboard },
-  { f: 'nmbu-marked', label: 'Markedet', icon: PieChart },
-  { f: 'nmbu-emner', label: 'Alle emner ved NMBU', icon: BookOpen },
-  { f: 'nmbu-fagmiljo', label: 'Fagmiljøet', icon: Microscope },
-  { f: 'nmbu-sokergrunnlag', label: 'Søkergrunnlaget', icon: Baby },
-  { f: 'nmbu-bolig', label: 'Bolig og studentboliger', icon: Home },
-  { f: 'nmbu-okonomi', label: 'Økonomi', icon: Landmark },
+const NMBU_SIDER: { f: Faculty | null; label: string; icon: Ikon }[] = [
+  { f: null, label: 'Oversikt', icon: MENY.LayoutDashboard },
+  { f: 'nmbu-marked', label: 'Markedet', icon: MENY.PieChart },
+  { f: 'nmbu-emner', label: 'Alle emner ved NMBU', icon: MENY.BookOpen },
+  { f: 'nmbu-fagmiljo', label: 'Fagmiljøet', icon: MENY.Microscope },
+  { f: 'nmbu-sokergrunnlag', label: 'Søkergrunnlaget', icon: MENY.Baby },
+  { f: 'nmbu-bolig', label: 'Bolig og studentboliger', icon: MENY.Home },
+  { f: 'nmbu-okonomi', label: 'Økonomi', icon: MENY.Landmark },
 ];
 /** Styringsinformasjon for hele NMBU (egen gruppe øverst i menyene). Samme sider som NMBU_STYRING i arbeidsflate/navigasjon.ts. */
-const STYRING_SIDER: { f: Faculty; label: string; icon: typeof BookOpen; tekst: string }[] = [
-  { f: 'nmbu-okonomi-drift', label: 'Økonomi og drift', icon: Wallet, tekst: 'Regnskap, finansiering, eksterne midler og bemanning per fakultet' },
-  { f: 'nmbu-utdanning', label: 'Utdanning', icon: GraduationCap, tekst: 'Studiepoeng, gjennomføring, søkere og studieplasser per fakultet' },
+const STYRING_SIDER: { f: Faculty; label: string; icon: Ikon; tekst: string }[] = [
+  { f: 'nmbu-okonomi-drift', label: 'Økonomi og drift', icon: MENY.Wallet, tekst: 'Regnskap, finansiering, eksterne midler og bemanning per fakultet' },
+  { f: 'nmbu-utdanning', label: 'Utdanning', icon: MENY.GraduationCap, tekst: 'Studiepoeng, gjennomføring, søkere og studieplasser per fakultet' },
 ];
 /** Sammenslått sidemeny: huskes i localStorage; bredden glir mellom 256 og 72 px. */
 const SIDEMENY_NOKKEL = 'nmbu-sidemeny';
@@ -167,7 +166,7 @@ export function DashboardShell({ faculty, view, onNavigate, children }: { facult
                   {id === 'hh' && (
                     <MenyHint navn="Opprinnelig HH-analyse" aktiv={s && aapenMeny}>
                       <button onClick={() => gaa('hh-figma')} tabIndex={aapenMeny ? 0 : -1} className={`w-full flex items-center rounded-md text-left ${s ? 'justify-center py-1.5' : 'gap-2 pl-5 pr-2 py-1 text-xs'}`} style={itemStyle(faculty === 'hh-figma')}>
-                        <Archive className={`${s ? 'w-4 h-4' : 'w-3.5 h-3.5'} shrink-0`} />{!s && ' Opprinnelig HH-analyse'}
+                        <MENY.Archive className={`${s ? 'w-4 h-4' : 'w-3.5 h-3.5'} shrink-0`} />{!s && ' Opprinnelig HH-analyse'}
                       </button>
                     </MenyHint>
                   )}
@@ -277,7 +276,7 @@ export function TopbarShell({ faculty, view, onNavigate, children }: { faculty: 
                   </button>
                 )), ...((faculty === 'hh' || faculty === 'hh-figma') ? [
                   <button key="hh-figma" onClick={() => onNavigate('hh-figma')} className="flex items-center gap-1.5 px-3 py-2.5 text-xs shrink-0" style={fane(faculty === 'hh-figma')}>
-                    <Archive className="w-3.5 h-3.5" /> Opprinnelig HH-analyse
+                    <MENY.Archive className="w-3.5 h-3.5" /> Opprinnelig HH-analyse
                   </button>,
                 ] : [])]
               : [NMBU_SIDER[0], ...STYRING_SIDER, ...NMBU_SIDER.slice(1)].map((s) => (

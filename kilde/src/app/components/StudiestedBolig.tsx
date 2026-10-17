@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState, type ReactNode } from 'react';
 import { BarChart, Bar, Cell, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend, ReferenceLine } from 'recharts';
-import { Info, ExternalLink, MapPin, Home, Building2, Loader2 } from 'lucide-react';
+import { Info, ExternalLink, MapPin, Home, Building2, Loader2 } from '../ikoner';
 
 /**
  * Bolig og studentboliger per studiested (oppskrift fra sammenligningsportalen, tilpasset appen):

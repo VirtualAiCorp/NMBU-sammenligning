@@ -1,4 +1,4 @@
-import { CalendarClock, ShieldAlert } from 'lucide-react';
+import { CalendarClock, ShieldAlert } from '../ikoner';
 
 /**
  * Notiser øverst på forsiden (alle oppsett):

@@ -1,4 +1,4 @@
-import { ExternalLink, Landmark } from 'lucide-react';
+import { ExternalLink, Landmark } from '../ikoner';
 import { EIERSKAP, EIERSKAP_HENTET } from '../data/eierskapData';
 import type { EconUnit } from '../data/economyData';
 

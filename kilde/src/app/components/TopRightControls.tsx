@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { LayoutGrid, PanelLeft, PanelTop, Check, PanelsTopLeft } from 'lucide-react';
+import { LayoutGrid, PanelLeft, PanelTop, Check, PanelsTopLeft } from '../ikoner';
 import { ThemeToggle } from './ThemeToggle';
 import { setLayout, useLayout, vekslArbeidsflate, type Layout } from '../layoutStore';
 import { FARGETEMAER, setFargetema, useFargetema } from '../fargetemaStore';

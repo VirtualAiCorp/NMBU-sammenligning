@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { ArrowDown, ArrowUp, ArrowUpDown, Info } from 'lucide-react';
+import { ArrowDown, ArrowUp, ArrowUpDown, Info } from '../ikoner';
 import { LETTERS, nf, sumPacked, type Packed, type Stats } from './NmbuCourseExplorer';
 
 /**

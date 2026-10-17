@@ -1,6 +1,6 @@
 import { Fragment, useMemo, useState, type ReactNode } from 'react';
 import { ScatterChart, Scatter, XAxis, YAxis, ZAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine } from 'recharts';
-import { Trophy, Table2, Sparkles, MapPinOff, CircleDot, School, BarChart3, ChevronDown, ChevronRight, ExternalLink } from 'lucide-react';
+import { Trophy, Table2, Sparkles, MapPinOff, CircleDot, School, BarChart3, ChevronDown, ChevronRight, ExternalLink } from '../../ikoner';
 import {
   FORBEHOLD, Kort, Laster, Merke, NMBU_FARGE, ANDRE_FARGE, PRIVAT_FARGE, Valg, Velger, dato, endringFarge, fortegn, hentFil, nf, pst, sum,
   td, tdV, th, thV, thead, nmbuRad, useFil,

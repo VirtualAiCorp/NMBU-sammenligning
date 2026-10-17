@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Coins, AlertTriangle, ExternalLink } from 'lucide-react';
+import { Coins, AlertTriangle, ExternalLink } from '../ikoner';
 
 /**
  * Forskningsfinansiering i «Fagmiljøet»: Forskningsrådet (søknader, innvilget, suksessrate, bevilget beløp) og EU

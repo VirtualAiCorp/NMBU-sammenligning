@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { TrendingUp, TrendingDown, Minus, Info, ExternalLink, Users } from 'lucide-react';
+import { TrendingUp, TrendingDown, Minus, Info, ExternalLink, Users } from '../ikoner';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { ADMISSION_DATA, ADMISSION_YEARS, type CampusApplicants } from '../data/admissionData';
 import { UNIVERSITY_INFO } from '../data/courseMapping';

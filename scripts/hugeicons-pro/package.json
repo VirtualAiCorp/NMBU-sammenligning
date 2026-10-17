@@ -1,0 +1,15 @@
+{
+  "name": "nmbu-sammenligning-hugeicons-pro",
+  "private": true,
+  "type": "module",
+  "description": "Henter valgte Hugeicons Pro-ikoner til kilde/src/app/ikoner-pro.ts. Egen pakke, så hovedbygget aldri trenger lisensnøkkelen.",
+  "scripts": {
+    "hent": "node hent-ikoner.mjs",
+    "sok": "node hent-ikoner.mjs --sok"
+  },
+  "dependencies": {
+    "@hugeicons-pro/core-stroke-rounded": "latest",
+    "@hugeicons-pro/core-solid-rounded": "latest",
+    "@hugeicons-pro/core-duotone-rounded": "latest"
+  }
+}

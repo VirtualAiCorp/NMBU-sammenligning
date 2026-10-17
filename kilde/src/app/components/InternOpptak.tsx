@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState, type ReactNode } from 'react';
 import { BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend, ReferenceLine } from 'recharts';
-import { Lock, Info, Users, SlidersHorizontal, TrendingDown, Filter } from 'lucide-react';
+import { Lock, Info, Users, SlidersHorizontal, TrendingDown, Filter } from '../ikoner';
 import { LANDSAM_GROUPS as HH_GROUPS } from '../data/hhAdmissionData';
 import { NyeOpptaksregler } from './NyeOpptaksregler';
 

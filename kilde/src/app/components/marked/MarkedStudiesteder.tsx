@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
-import { MapPin, Table2, ArrowUpDown, ArrowDown, ArrowUp, X } from 'lucide-react';
+import { MapPin, Table2, ArrowUpDown, ArrowDown, ArrowUp, X } from '../../ikoner';
 import {
   FORBEHOLD, Kort, Laster, Merke, NMBU, NMBU_FARGE, ANDRE_FARGE, PRIVAT_FARGE, Spark, Valg, Velger, dato, endringFarge, fortegn,
   hentStudiesteder, nf, pst, td, tdV, th, thV, thead, useFil, type Oversikt, type Studiested, type Studiesteder,

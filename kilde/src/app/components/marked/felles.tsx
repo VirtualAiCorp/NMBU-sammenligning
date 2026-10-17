@@ -1,5 +1,5 @@
 import { useEffect, useState, type ReactNode } from 'react';
-import { Info, type LucideIcon } from 'lucide-react';
+import { Info, type LucideIcon } from '../../ikoner';
 
 /**
  * Felles for NMBU-siden «Markedet»: typene og innlastingen av datafilene i public/marked/ (scripts/build-marked.py),

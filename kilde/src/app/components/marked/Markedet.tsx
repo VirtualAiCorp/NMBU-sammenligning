@@ -1,5 +1,5 @@
 import { lazy, Suspense, useEffect, useState } from 'react';
-import { PieChart, ListOrdered, Landmark, Info, MapPin } from 'lucide-react';
+import { PieChart, ListOrdered, Landmark, Info, MapPin } from '../../ikoner';
 import { FORBEHOLD, Laster, dato, hentOversikt, kort, nf, useFil, type Oversikt } from './felles';
 import { MarkedOversikt } from './MarkedOversikt';
 import { MarkedProgram } from './MarkedProgram';

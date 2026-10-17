@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useMemo, useState } from 'react';
-import { Compass, ChevronDown, ChevronUp, ExternalLink, Target, Sparkles, Repeat, Lightbulb, AlertTriangle, Loader2, Download, FileText, BookMarked } from 'lucide-react';
+import { Compass, ChevronDown, ChevronUp, ExternalLink, Target, Sparkles, Repeat, Lightbulb, AlertTriangle, Loader2, Download, FileText, BookMarked } from '../ikoner';
 
 /**
  * «Strategier mot 2030» under markedsstatus: hva handelshøyskolene sier i strategiene sine, samlet per institusjon og

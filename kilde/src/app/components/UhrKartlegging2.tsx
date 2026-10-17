@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { Layers, ExternalLink, Info } from 'lucide-react';
+import { Layers, ExternalLink, Info } from '../ikoner';
 import { UHR_GROUPS as UHR_V1, COURSE_MAPPING as V1 } from '../data/courseMapping';
 import { UHR_GROUPS, COURSE_MAPPING as V2, UNIVERSITY_INFO, type CourseEntry } from '../data/courseMapping2';
 import { UhrOaStudierett } from './UhrOaStudierett';

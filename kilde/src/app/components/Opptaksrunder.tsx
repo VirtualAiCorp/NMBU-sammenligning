@@ -1,4 +1,4 @@
-import { AlertTriangle } from 'lucide-react';
+import { AlertTriangle } from '../ikoner';
 import type { LandsamGroup } from '../data/landsamAdmissionData';
 import type { FullYearData } from '../data/fullAdmissionData';
 

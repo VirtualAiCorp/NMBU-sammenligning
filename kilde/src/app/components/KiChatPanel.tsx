@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, type PointerEvent as RPointerEvent } from 'react';
-import { Sparkles, X, Send, Loader2, RotateCcw, ChevronDown, ChevronUp, FileText, BarChart2, BookOpen, PanelRight, PanelRightClose, Maximize2, Minimize2, ArrowRight } from 'lucide-react';
+import { Sparkles, X, Send, Loader2, RotateCcw, ChevronDown, ChevronUp, FileText, BarChart2, BookOpen, PanelRight, PanelRightClose, Maximize2, Minimize2, ArrowRight } from '../ikoner';
 import { FACULTY_META } from '../data/facultyMeta';
 import type { KiModus, KiNaviger } from './KiChatKnapp';
 import { StyrepapirIndeks, TekstIndeks, type StyrepapirTekst, type Treff } from '../data/styrepapirSok';

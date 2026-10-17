@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Wifi } from 'lucide-react';
+import { Wifi } from '../ikoner';
 import { CourseSelector } from './CourseSelector';
 import { CourseComparison } from './CourseComparison';
 import { GradingHarshnessSummary } from './GradingHarshnessSummary';

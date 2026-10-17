@@ -3,7 +3,7 @@ import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
   ScatterChart, Scatter, ZAxis,
 } from 'recharts';
-import { TrendingUp, TrendingDown, Minus, Info, ExternalLink, Filter, Users, ChevronDown, ChevronRight } from 'lucide-react';
+import { TrendingUp, TrendingDown, Minus, Info, ExternalLink, Filter, Users, ChevronDown, ChevronRight } from '../ikoner';
 import { CsvExportButton } from './CsvExportButton';
 import { exportFacultyCoursesCsv, exportFacultyCourseTypeCsv, exportFacultyStudyPlanCsv } from '../utils/csvExport';
 import type {

@@ -6,7 +6,7 @@ import {
   CheckIcon,
   ChevronDownIcon,
   ChevronUpIcon,
-} from "lucide-react";
+} from "../../ikoner";
 
 import { cn } from "./utils";
 

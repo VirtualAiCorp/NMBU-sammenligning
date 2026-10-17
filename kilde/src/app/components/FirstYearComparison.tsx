@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ChevronRight, X, ExternalLink, Info } from 'lucide-react';
+import { ChevronRight, X, ExternalLink, Info } from '../ikoner';
 import { COURSE_MAPPING, UNIVERSITY_INFO } from '../data/courseMapping';
 import { FIRST_YEAR_DATA, type UniversityFirstYear } from '../data/firstYearData';
 import { ADMISSION_DATA } from '../data/admissionData';

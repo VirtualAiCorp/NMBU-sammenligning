@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useMemo, useRef, useState } from 'react';
-import { Download, ExternalLink } from 'lucide-react';
+import { Download, ExternalLink } from '../../ikoner';
 
 /**
  * Fanen «HH NMBU etter AJG» i den interne rangeringen (07.10.2026): Handelshøyskolen ved NMBUs egne artikler etter

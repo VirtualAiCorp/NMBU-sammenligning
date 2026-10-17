@@ -1,6 +1,6 @@
 import { Fragment, useEffect, useMemo, useState } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
-import { Search, ListOrdered, ExternalLink, ChevronDown, ChevronRight, X } from 'lucide-react';
+import { Search, ListOrdered, ExternalLink, ChevronDown, ChevronRight, X } from '../../ikoner';
 import {
   FORBEHOLD, Kort, Merke, NMBU, NMBU_FARGE, ANDRE_FARGE, PRIVAT_FARGE, Valg, Velger, dato, endringFarge, fortegn, hentAggregater, hentProgram,
   hentStudiesteder, kr, nf, pst, td, tdV, th, thV, thead, useFil, type Aggregater, type Fordeling, type Oversikt, type ProgramRad, type Studiested, type Studiesteder,

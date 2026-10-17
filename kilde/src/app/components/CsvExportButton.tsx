@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Download, Check } from 'lucide-react';
+import { Download, Check } from '../ikoner';
 
 interface Props {
   onExport: () => void;

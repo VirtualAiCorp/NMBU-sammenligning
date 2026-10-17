@@ -1,5 +1,5 @@
 import { useState, type ReactNode } from 'react';
-import { BookMarked, Download, ExternalLink } from 'lucide-react';
+import { BookMarked, Download, ExternalLink } from '../ikoner';
 
 /**
  * Gjenbrukbar kildeboks: en liten, rolig boks under en seksjon eller et tall med kilden(e) tallet bygger på.

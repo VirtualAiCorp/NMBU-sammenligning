@@ -284,7 +284,7 @@ fakultetsside (studiestedene i fakultetets sammenligninger).
 
 ## 16. Mørk modus
 
-Lys/mørk-bryter øverst til høyre på alle sider (`ThemeToggle.tsx`, lucide Sun/Moon), samme mønster som
+Lys/mørk-bryter øverst til høyre på alle sider (`ThemeToggle.tsx`, Sun/Moon fra ikonmellomlaget, §62), samme mønster som
 sammenligningsportalens theme-toggle: uten lagret valg følger siden systeminnstillingen (også live), et klikk
 lagrer valget i localStorage («theme»). Et skript i `index.html` setter `data-theme` og klassen `dark` før første
 tegning, så siden ikke blinker.
@@ -1391,3 +1391,34 @@ Modulen ligger i gruppen «Marked og omverden» etter Konkurrentene og vises bar
   kontaktes direkte. Ingen KI-linjer i `build-ki-grunnlag.py` ennå.
 - **Oppdatering:** kjør skriptene i `data/marked/studiesentre/skript/` ved behov, deretter
   `python3 scripts/build-studiesentre.py`.
+
+## 62. Ikonene: fra Lucide til Hugeicons (18.10.2026)
+
+- **Hva:** ikonpakken `lucide-react` (0.487.0, 126 ulike ikoner i 92 filer) er byttet ut med Hugeicons:
+  stroke-rounded (gratis, `@hugeicons/core-free-icons` + `@hugeicons/react`) overalt, og Pro duotone-rounded for
+  ikonene i sidemenyen og modulkortene. `lucide-react` er fjernet fra `kilde/package.json`.
+- **Mellomlaget `kilde/src/app/ikoner.tsx`:** eksporterer komponenter med de samme navnene som Lucide-ikonene koden
+  brukte (`TrendingUp`, `BookOpen`, `ChevronDownIcon` …), hver tegnet med `<HugeiconsIcon>`. All kode importerer
+  ikonene herfra i stedet for fra `lucide-react`; typene `LucideIcon` (alias) og `Ikon` finnes fortsatt. Komponentene
+  tar imot det koden sender (className, style, size, strokeWidth, color, aria-*, title). Størrelsen er 24 px som før,
+  satt som SVG-attributter, så `w-4 h-4`/`size-4` i className styrer. Streken er Hugeicons' egen (1,5); `strek()`
+  legger aldri strek på ikoner med fylte flater (det tetter hullene). Uten aria-label/title får ikonet `aria-hidden`.
+- **Mappingen** står som tabell øverst i `ikoner.tsx` (Lucide-navn → Hugeicons-eksportnavn, alle slått opp i
+  `node_modules/@hugeicons/core-free-icons`). Eksempler: TrendingUp → TradeUpIcon, Building2 → Building06Icon,
+  GraduationCap → Mortarboard02Icon, Landmark → BankIcon, Users → UserMultipleIcon, Chevron* → Arrow*01Icon,
+  ExternalLink → LinkSquare02Icon, X → Cancel01Icon. Nytt ikon: legg det i importen, tabellen og som egen linje.
+- **Menyikonene (Pro duotone):** `MENY` i `ikoner.tsx` (27 ikoner) brukes av fakultetsmodulene, NMBU-sidene og
+  styringssidene i `AppShells.tsx` og `arbeidsflate/navigasjon.ts`, og dermed også av `IkonRutenett`/`Listerad` i
+  `arbeidsflate/Byggeklosser.tsx` og søket. Hvert ikon går gjennom `proEllers()`: finnes duotone-varianten i
+  `kilde/src/app/ikoner-pro.ts`, brukes den, ellers vises strekikonet. Fila er tom til Pro-ikonene er hentet.
+- **Hente Pro-ikonene (brukeren selv, i egen terminal):** `cd scripts/hugeicons-pro && ./hent.sh`. Skriptet spør etter
+  lisensnøkkelen skjult (Tokens-fanen på hugeicons.com), installerer Pro-pakkene bare i den mappa (gitignorert), og
+  skriver ikonene i `valg.mjs` til `kilde/src/app/ikoner-pro.ts`. Bygg, sjekk og commit den fila. `./hent.sh sok <ord>`
+  søker i Pro-settet og lager en forhåndsvisning. Mangler et ikon i duotone, varsles det og strekikonet beholdes.
+- **Bygget trenger aldri nøkkelen eller npm.hugeicons.com:** bare gratispakkene ligger i `kilde/package.json`; de
+  hentede Pro-ikonene er vanlige data i `ikoner-pro.ts`. Nøkkelen lagres ingen steder (`.npmrc` i
+  `scripts/hugeicons-pro/` leser den fra miljøvariabelen `HUGEICONS_LICENSE_KEY`), og `node_modules/`,
+  `package-lock.json` og `.env*` der er gitignorert. Oppsettet er det samme som i simuleringsverktøyet.
+- **Kontrollert:** `npm run build` feilfritt med kildevakten; `vite preview` på 1440 px, forsiden, HH-oversikten,
+  Konkurrentene, Studiesentre og Markedet i lys og mørk modus (arbeidsflaten, og forsiden i dashboard-oppsettet):
+  synlige ikoner er 12–18 px etter klassene, ingen konsollfeil.

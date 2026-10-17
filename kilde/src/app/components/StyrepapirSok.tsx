@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { Search, Sparkles, FileText, ExternalLink, Loader2 } from 'lucide-react';
+import { Search, Sparkles, FileText, ExternalLink, Loader2 } from '../ikoner';
 import { StyrepapirIndeks, marker, type StyrepapirTekst, type Treff } from '../data/styrepapirSok';
 import type { MarketInstitution } from '../data/faculties';
 import { KiSvarTekst } from './KiSvarTekst';

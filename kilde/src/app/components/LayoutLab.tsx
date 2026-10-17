@@ -2,7 +2,7 @@ import { useState, type ReactNode } from 'react';
 import {
   LayoutGrid, PanelLeft, PanelTop, Search, Table2, Presentation, Monitor, Tablet, Smartphone,
   ChevronLeft, ChevronRight, TrendingUp, BookOpen, GraduationCap, Users, Microscope, Home, Landmark, Check, X, Wrench,
-} from 'lucide-react';
+} from '../ikoner';
 import { FACULTY_IDS, ALL_FACULTY_IDS, useAllFacultyBases, type FacultyBase, type FacultyId } from '../data/faculties';
 import { Matrise, lagRader, median, nf, Panel, MiniTrend, MiniBar, opMottData, type Rad } from './Matrise';
 import { useInnebygd } from '../innebygd';

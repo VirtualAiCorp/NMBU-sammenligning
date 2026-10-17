@@ -1,5 +1,5 @@
 import { useState, type FormEvent, type ReactNode } from 'react';
-import { Lock } from 'lucide-react';
+import { Lock } from '../ikoner';
 
 /**
  * Enkel passordsperre foran en del av appen. Passordet settes i kilde/.env.local

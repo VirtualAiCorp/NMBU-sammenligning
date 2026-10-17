@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { BookOpen, Building2, Trees, Atom, Leaf, FlaskConical, TreePine, Lock, PawPrint, Users, Home, Landmark, LayoutGrid, Baby, Wallet, GraduationCap, PieChart } from 'lucide-react';
+import { BookOpen, Building2, Trees, Atom, Leaf, FlaskConical, TreePine, Lock, PawPrint, Users, Home, Landmark, LayoutGrid, Baby, Wallet, GraduationCap, PieChart } from '../ikoner';
 import { FACULTY_META as FACULTIES, FACULTY_IDS, type FacultyId } from '../data/facultyMeta';
 import { LagetAv } from './LagetAv';
 import { Forsidenotis } from './Forsidenotis';

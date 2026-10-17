@@ -1,4 +1,4 @@
-import { ExternalLink, Wallet } from 'lucide-react';
+import { ExternalLink, Wallet } from '../ikoner';
 import { CAMPUS, STUDIEAVGIFT } from '../data/prisCampusData';
 import type { LandsamGroup } from '../data/landsamAdmissionData';
 

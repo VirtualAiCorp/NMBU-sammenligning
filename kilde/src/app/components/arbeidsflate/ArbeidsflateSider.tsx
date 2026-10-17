@@ -7,7 +7,7 @@ import { useMemo, useState, type ReactNode } from 'react';
 import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import {
   ArrowLeft, Building2, Command, GraduationCap, Layers, School, Search, Sparkles, TrendingUp, Users, type LucideIcon,
-} from 'lucide-react';
+} from '../../ikoner';
 import { useAllFacultyBases, type FacultyData } from '../../data/faculties';
 import { FACULTY_META } from '../../data/facultyMeta';
 import type { ShellView } from '../AppShells';

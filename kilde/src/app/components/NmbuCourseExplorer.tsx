@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useMemo, useState } from 'react';
-import { Search, Info, ExternalLink } from 'lucide-react';
+import { Search, Info, ExternalLink } from '../ikoner';
 import { NmbuNationalCompare } from './NmbuNationalCompare';
 import { NmbuOpptakTab } from './NmbuOpptakTab';
 import { NmbuFsIntern } from './NmbuFsIntern';

@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
-import { TrendingUp, Building2, Layers, Users, AlertTriangle } from 'lucide-react';
+import { TrendingUp, Building2, Layers, Users, AlertTriangle } from '../../ikoner';
 import {
   FORBEHOLD, Kort, NMBU, NMBU_FARGE, ANDRE_FARGE, Spark, Valg, Velger, dato, endringFarge, fortegn, nf, pst, sum,
   td, tdV, th, thV, thead, nmbuRad, type NivFv, type NivMott, type Oversikt,

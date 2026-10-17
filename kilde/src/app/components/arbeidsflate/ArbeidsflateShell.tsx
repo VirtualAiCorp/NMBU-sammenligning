@@ -8,7 +8,7 @@ import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { createPortal } from 'react-dom';
 import {
   ArrowLeft, Check, ChevronsUpDown, Globe2, Menu, MessageCircle, PanelLeftClose, PanelLeftOpen, Search, X, type LucideIcon,
-} from 'lucide-react';
+} from '../../ikoner';
 import { MenyHint } from '../MenyHint';
 import { InnebygdContext } from '../../innebygd';
 import { FACULTY_META, type FacultyId } from '../../data/facultyMeta';

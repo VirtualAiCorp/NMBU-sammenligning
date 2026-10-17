@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { Lock, Info, ArrowDown, ArrowUp, ArrowUpDown } from 'lucide-react';
+import { Lock, Info, ArrowDown, ArrowUp, ArrowUpDown } from '../ikoner';
 import { GRADE_COLORS, LETTERS, nf, sumPacked, type Packed } from './NmbuCourseExplorer';
 
 /**

@@ -3,7 +3,7 @@ import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
   BarChart, Bar, Cell, ReferenceLine,
 } from 'recharts';
-import { TrendingUp, TrendingDown, Minus, Info, ExternalLink, Filter } from 'lucide-react';
+import { TrendingUp, TrendingDown, Minus, Info, ExternalLink, Filter } from '../ikoner';
 import { CsvExportButton } from './CsvExportButton';
 import { exportFacultyAdmissionCsv } from '../utils/csvExport';
 import type { LandsamGroup, LandsamLevel } from '../data/landsamAdmissionData';

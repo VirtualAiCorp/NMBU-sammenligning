@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Armchair } from 'lucide-react';
+import { Armchair } from '../ikoner';
 import type { LandsamGroup } from '../data/landsamAdmissionData';
 
 /**

@@ -4,7 +4,7 @@
  * var(--nmbu-…)) i de andre oppsettene. Bare var()-farger, så lys, mørk og fargetemaene fungerer.
  */
 import type { CSSProperties, ReactNode } from 'react';
-import { Sparkles, TrendingDown, TrendingUp, type LucideIcon } from 'lucide-react';
+import { Sparkles, TrendingDown, TrendingUp, type LucideIcon } from '../../ikoner';
 import { useLayout } from '../../layoutStore';
 import { AfHeader, KpiStripe, Pille, Seksjon, stig, type Kpi } from '../arbeidsflate/Byggeklosser';
 import { apneKiChat } from '../arbeidsflate/navigasjon';

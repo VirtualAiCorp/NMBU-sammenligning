@@ -1,7 +1,7 @@
 import { Fragment, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import '../../styles/skoleportrett.css';
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
-import { Lock, Info, Trophy, BookOpen, Building2, FileText, RotateCcw, ShieldCheck, ExternalLink, Columns3, FlaskConical, Link2, Check, Newspaper, ClipboardList, Layers, Download, MapPin, ListOrdered, Quote } from 'lucide-react';
+import { Lock, Info, Trophy, BookOpen, Building2, FileText, RotateCcw, ShieldCheck, ExternalLink, Columns3, FlaskConical, Link2, Check, Newspaper, ClipboardList, Layers, Download, MapPin, ListOrdered, Quote } from '../ikoner';
 import { NordenKart, KART_MAAL_IDER, KART_VIS_IDER, type KartValg, type KartEnhet, type KartMaal, type KartVis } from './rangering/NordenKart';
 import { HhAjgFane, HH_PARAM, hhStandard, lesHh, skrivHh, type HhAjgData, type HhValg } from './rangering/HhAjg';
 import { SiteringFane, SIT_PARAM, sitStandard, lesSit, skrivSit, sitSum, sitArsverkNorge, sitArsverkNorden, sitMotRapport, sitDekningOk, type SiteringData, type SitValg, type SitNordisk } from './rangering/Siteringer';

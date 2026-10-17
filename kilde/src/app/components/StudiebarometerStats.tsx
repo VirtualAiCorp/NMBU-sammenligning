@@ -3,7 +3,7 @@ import {
   RadarChart, Radar, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer,
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Cell, LabelList,
 } from 'recharts';
-import { Info, ExternalLink, Users, TrendingUp, TrendingDown, Minus } from 'lucide-react';
+import { Info, ExternalLink, Users, TrendingUp, TrendingDown, Minus } from '../ikoner';
 import {
   STUDIEBAROMETER_BY_YEAR, SUBQUESTION_SCORES_BY_YEAR,
   SCORE_LABELS, RADAR_KEYS, DIMENSION_SUBQUESTIONS,

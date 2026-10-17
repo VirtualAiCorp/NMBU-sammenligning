@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { MapPin, Table2, X, Award, Scale, Info, ExternalLink, Search, School } from 'lucide-react';
+import { MapPin, Table2, X, Award, Scale, Info, ExternalLink, Search, School } from '../ikoner';
 import { Kort, Laster, Merke, Valg, Velger, dato, nf, td, tdV, th, thV, thead, useFil } from './marked/felles';
 
 /**

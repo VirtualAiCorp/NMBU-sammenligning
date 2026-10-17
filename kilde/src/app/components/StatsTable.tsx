@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ChevronDown, ChevronRight, BookOpen, Award, ClipboardList, CheckCircle, AlertCircle, ExternalLink } from 'lucide-react';
+import { ChevronDown, ChevronRight, BookOpen, Award, ClipboardList, CheckCircle, AlertCircle, ExternalLink } from '../ikoner';
 import type { GradeData } from './CourseComparison';
 import { UNIVERSITY_INFO } from '../data/courseMapping';
 import { AccreditationBadge } from './AccreditationBadge';

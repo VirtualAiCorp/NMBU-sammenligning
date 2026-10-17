@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Layers } from 'lucide-react';
+import { Layers } from '../ikoner';
 import { NMBU_PRODUKSJON, type NmbuProgramProduksjon } from '../data/revenueData';
 import { FACULTY_META, type FacultyId } from '../data/facultyMeta';
 

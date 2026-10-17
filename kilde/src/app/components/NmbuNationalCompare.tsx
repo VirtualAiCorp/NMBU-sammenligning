@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { Search, ExternalLink } from 'lucide-react';
+import { Search, ExternalLink } from '../ikoner';
 import { emneUrl } from '../data/emneUrl';
 import { ALLE, GradeCells, LETTERS, StackedBar, nf, sumPacked, type Packed, type Stats } from './NmbuCourseExplorer';
 

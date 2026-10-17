@@ -4,7 +4,7 @@
  */
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { CornerDownLeft, Search, LayoutDashboard, type LucideIcon } from 'lucide-react';
+import { CornerDownLeft, Search, MENY, type LucideIcon } from '../../ikoner';
 import { FACULTY_META } from '../../data/facultyMeta';
 import type { ShellView } from '../AppShells';
 import type { Faculty } from '../FacultyLanding';
@@ -20,7 +20,7 @@ export function Sok({ apen, lukk, naviger }: { apen: boolean; lukk: () => void; 
   const liste = useRef<HTMLDivElement>(null);
 
   const alle = useMemo<Treff[]>(() => {
-    const t: Treff[] = [{ id: 'forside', gruppe: 'Hele NMBU', tittel: 'Forside', tekst: 'Alle fakultetene og nøkkeltall', ikon: LayoutDashboard, sok: 'forside hjem nmbu', gaa: () => naviger(null) }];
+    const t: Treff[] = [{ id: 'forside', gruppe: 'Hele NMBU', tittel: 'Forside', tekst: 'Alle fakultetene og nøkkeltall', ikon: MENY.LayoutDashboard, sok: 'forside hjem nmbu', gaa: () => naviger(null) }];
     for (const s of NMBU_STYRING) t.push({ id: s.f, gruppe: 'Hele NMBU', tittel: s.label, tekst: s.tekst, ikon: s.icon, sok: `hele nmbu styringsinformasjon ${s.label} ${s.tekst}`, gaa: () => naviger(s.f) });
     for (const s of NMBU_SIDER) t.push({ id: s.f, gruppe: 'Hele NMBU', tittel: s.label, tekst: s.tekst, ikon: s.icon, sok: `hele nmbu ${s.label} ${s.tekst}`, gaa: () => naviger(s.f) });
     for (const id of FAKULTETER) {

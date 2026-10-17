@@ -1,5 +1,5 @@
 import { COURSE_MAPPING, UNIVERSITY_INFO, CourseId } from '../data/courseMapping';
-import { TrendingUp, TrendingDown } from 'lucide-react';
+import { TrendingUp, TrendingDown } from '../ikoner';
 
 function getUniversityName(id: string) {
   return UNIVERSITY_INFO[id]?.shortName ?? id;

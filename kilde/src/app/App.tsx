@@ -8,7 +8,7 @@ import { KiChatKnapp } from './components/KiChatKnapp';
 import { ArbeidsflateShell } from './components/arbeidsflate/ArbeidsflateShell';
 import { AfForside, AfFakultet, AfModulSide, AfInnebygd } from './components/arbeidsflate/ArbeidsflateSider';
 import { RuteLaster } from './components/arbeidsflate/Byggeklosser';
-import { BookOpen, Table2, BarChart2, Star, Scale, Map, GraduationCap, GalleryVerticalEnd, Award, ScatterChart, TrendingUp, ArrowUpRight, Wifi, Globe2 } from 'lucide-react';
+import { BookOpen, Table2, BarChart2, Star, Scale, Map, GraduationCap, GalleryVerticalEnd, Award, ScatterChart, TrendingUp, ArrowUpRight, Wifi, Globe2 } from './ikoner';
 
 // Sidene lastes først når de åpnes (egne JavaScript-biter), slik at forsiden laster raskt.
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

@@ -1,6 +1,6 @@
 import { useMemo, useState, type ReactNode } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
-import { Building2, TrendingUp, BookOpen, GraduationCap, Users, Star, Microscope, ExternalLink, Info } from 'lucide-react';
+import { Building2, TrendingUp, BookOpen, GraduationCap, Users, Star, Microscope, ExternalLink, Info } from '../ikoner';
 import type { FacultyData } from '../data/faculties';
 import type { FullAdmissionEntry, FullYearData } from '../data/fullAdmissionData';
 import type { CourseStats, CourseGradeYear } from '../data/landsamCourseData';

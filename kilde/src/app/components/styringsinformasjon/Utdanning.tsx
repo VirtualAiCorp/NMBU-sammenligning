@@ -5,7 +5,7 @@
  * NMBU_PRODUKSJON (revenueData) og NMBUs egne måltall (public/ledelse/nmbu.json, valgfri).
  */
 import { useMemo, useState, type ReactNode } from 'react';
-import { Armchair, BookOpen, Eye, GraduationCap, Layers, Target, TrendingUp, Users } from 'lucide-react';
+import { Armchair, BookOpen, Eye, GraduationCap, Layers, Target, TrendingUp, Users } from '../../ikoner';
 import { useAllFacultyBases, type FacultyBase } from '../../data/faculties';
 import { FACULTY_META, type FacultyId } from '../../data/facultyMeta';
 import { STAFF_INSTITUTIONS, STAFF_NMBU_FACULTIES, type StaffUnit } from '../../data/staffData';

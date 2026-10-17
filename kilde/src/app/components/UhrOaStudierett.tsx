@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useMemo, useState, type ReactNode } from 'react';
-import { GraduationCap, Info, ChevronDown, ChevronRight } from 'lucide-react';
+import { GraduationCap, Info, ChevronDown, ChevronRight } from '../ikoner';
 import { UNIVERSITY_INFO } from '../data/courseMapping2';
 
 /**

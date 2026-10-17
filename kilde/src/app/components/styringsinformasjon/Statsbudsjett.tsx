@@ -6,7 +6,7 @@
  * Skrevet for lesere ved HH som kjenner eget fakultet: HH er uthevet, og NMBU-tallene står som ramme rundt.
  */
 import { useState, type ReactNode } from 'react';
-import { Building2, GraduationCap, Landmark, Quote, Scale, TrendingUp } from 'lucide-react';
+import { Building2, GraduationCap, Landmark, Quote, Scale, TrendingUp } from '../../ikoner';
 import { dbh, kildeLenke } from '../Kildeboks';
 import type { Kpi } from '../arbeidsflate/Byggeklosser';
 import { Del, Hoderad, Merke, Nokkeltall, Rad, TD, TDV, TH, THV, Tabell, Undertittel, endringPst, mill, nf, pst, AKSENT, NED, OPP } from './felles';

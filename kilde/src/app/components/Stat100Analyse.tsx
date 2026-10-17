@@ -1,6 +1,6 @@
 import { Fragment, useEffect, useMemo, useState, type ReactNode } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend, Cell, LabelList } from 'recharts';
-import { Lock, Info, ArrowDown, ArrowUp, ArrowUpDown, ExternalLink, BookOpen } from 'lucide-react';
+import { Lock, Info, ArrowDown, ArrowUp, ArrowUpDown, ExternalLink, BookOpen } from '../ikoner';
 /** Karakterfarger fra grønn (A) til rød (F). Ikke NMBU-grønnfargene, som fargetemaet ellers bytter ut. */
 const GRADE_COLORS: Record<string, string> = { A: '#1a9850', B: '#66bd63', C: '#c7c23a', D: '#fdae61', E: '#f46d43', F: '#d73027' };
 

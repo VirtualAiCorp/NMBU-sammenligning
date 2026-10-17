@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend, BarChart, Bar, Cell, ReferenceLine } from 'recharts';
-import { Info, ExternalLink, Filter } from 'lucide-react';
+import { Info, ExternalLink, Filter } from '../ikoner';
 import { STAFF_HENTET, type StaffUnit, type StaffYear } from '../data/staffData';
 
 /**

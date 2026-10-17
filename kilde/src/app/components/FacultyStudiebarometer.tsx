@@ -3,7 +3,7 @@ import {
   RadarChart, Radar, PolarGrid, PolarAngleAxis, PolarRadiusAxis,
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
 } from 'recharts';
-import { Star, ExternalLink, Filter, Info, AlertTriangle } from 'lucide-react';
+import { Star, ExternalLink, Filter, Info, AlertTriangle } from '../ikoner';
 import { BARE_NMBU_TEKST } from '../data/landsamUtils';
 import { CsvExportButton } from './CsvExportButton';
 import { exportFacultyStudiebarometerCsv } from '../utils/csvExport';

@@ -5,7 +5,7 @@
  * åpne tall fra styresaker og rapporter (public/ledelse/nmbu.json, valgfri), med statsbudsjettet øverst (Statsbudsjett.tsx).
  */
 import { useMemo } from 'react';
-import { Banknote, Building2, Coins, FileText, FlaskConical, Landmark, PiggyBank, Scale, TrendingUp, Users, Wallet } from 'lucide-react';
+import { Banknote, Building2, Coins, FileText, FlaskConical, Landmark, PiggyBank, Scale, TrendingUp, Users, Wallet } from '../../ikoner';
 import { ECON_UNITS, type EconUnit, type EconYear } from '../../data/economyData';
 import { STAFF_INSTITUTIONS, STAFF_NMBU_FACULTIES } from '../../data/staffData';
 import { NMBU_PRODUKSJON, REVENUE_GROUPS, REVENUE_SATSER } from '../../data/revenueData';

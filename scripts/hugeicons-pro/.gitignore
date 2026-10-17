@@ -1,0 +1,5 @@
+# Pro-pakkene installeres bare lokalt av ./hent.sh (krever lisensnøkkelen). Bare de valgte ikonene
+# (kilde/src/app/ikoner-pro.ts) havner i repoet. Nøkkelen står aldri i noen fil: .npmrc leser den fra miljøet.
+node_modules/
+package-lock.json
+.env*

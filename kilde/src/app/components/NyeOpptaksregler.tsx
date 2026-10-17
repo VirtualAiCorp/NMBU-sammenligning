@@ -1,4 +1,4 @@
-import { CalendarClock, ExternalLink } from 'lucide-react';
+import { CalendarClock, ExternalLink } from '../ikoner';
 
 /**
  * Nye regler for opptak til høyere utdanning (ny opptaksforskrift). Kilde: Samordna opptak, «Nye regler fra 2027 for opptak

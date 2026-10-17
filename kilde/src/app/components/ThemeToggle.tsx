@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Sun, Moon } from 'lucide-react';
+import { Sun, Moon } from '../ikoner';
 
 /**
  * Lys/mørk-bryter (samme mønster som sammenligningsportalens theme-toggle.js):

@@ -1,6 +1,6 @@
 import { Fragment, useEffect, useState } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
-import { Briefcase, ChevronDown, ChevronRight, Info, ExternalLink, AlertTriangle } from 'lucide-react';
+import { Briefcase, ChevronDown, ChevronRight, Info, ExternalLink, AlertTriangle } from '../ikoner';
 import type { FacultyData } from '../data/faculties';
 
 /**

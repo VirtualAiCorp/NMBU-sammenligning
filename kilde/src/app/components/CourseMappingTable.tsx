@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { CheckCircle, AlertCircle, HelpCircle, ExternalLink, ChevronDown, ChevronUp, BookOpen, Lightbulb, GraduationCap, ClipboardList, X } from 'lucide-react';
+import { CheckCircle, AlertCircle, HelpCircle, ExternalLink, ChevronDown, ChevronUp, BookOpen, Lightbulb, GraduationCap, ClipboardList, X } from '../ikoner';
 import { COURSE_MAPPING, UNIVERSITY_INFO, CourseId, CourseEntry } from '../data/courseMapping';
 
 const COURSE_LABELS: Record<CourseId, string> = {

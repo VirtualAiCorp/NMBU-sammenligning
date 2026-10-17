@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useMemo, useRef, useState } from 'react';
-import { Download } from 'lucide-react';
+import { Download } from '../../ikoner';
 
 /**
  * Fanen «Siteringer» i den interne rangeringen (07.10.2026): siteringsmål fra OpenAlex (CC0) per enhet og periode,

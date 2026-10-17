@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FileText, Download, ChevronDown, ChevronUp, Clock, CheckCircle2, Building2 } from 'lucide-react';
+import { FileText, Download, ChevronDown, ChevronUp, Clock, CheckCircle2, Building2 } from '../ikoner';
 import osloMetPdfUrl from '../../imports/Regnskapsrapport_20for_202025_20-_20Fakultet_20for_20samfunnsvitenskap.PDF?url';
 import uiaKvalitetPdfUrl from '../../imports/HH_20kvalitetsrapport_202025.PDF?url';
 import uiaInnkallingPdfUrl from '../../imports/Komplett_20innkalling_3a_20Fakultetsstyret_20for_20Handelsh_c3_b8yskolen_20_30.01.2026_.PDF?url';

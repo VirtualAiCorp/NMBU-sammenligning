@@ -1,4 +1,4 @@
-import { TrendingUp, BookOpen, Globe2, Star, GraduationCap, Users, Microscope, Home, Landmark, Coins, Baby, Briefcase } from 'lucide-react';
+import { TrendingUp, BookOpen, Globe2, Star, GraduationCap, Users, Microscope, Home, Landmark, Coins, Baby, Briefcase } from '../ikoner';
 import { INGEN_DATA_TEKST, type FacultyData } from '../data/faculties';
 import { useInnebygd } from '../innebygd';
 import {

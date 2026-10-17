@@ -2,10 +2,7 @@
  * Navigasjonsmodellen i arbeidsflaten: modulene gruppert under små overskrifter, ikon per fakultet og sidene for hele
  * NMBU. Modulnavn og ikoner hentes fra FAKULTETSMODULER (AppShells), så menyene i alle oppsett heter det samme.
  */
-import {
-  Atom, Building2, FlaskConical, Leaf, PawPrint, Trees, TreePine, Archive, LayoutDashboard, BookOpen, Microscope, Baby,
-  Home, Landmark, Wallet, GraduationCap, PieChart, type LucideIcon,
-} from 'lucide-react';
+import { MENY, type LucideIcon } from '../../ikoner';
 import { FAKULTETSMODULER, type ShellView } from '../AppShells';
 import { ALL_FACULTY_IDS, FACULTY_META, type FacultyId } from '../../data/facultyMeta';
 import type { Faculty } from '../FacultyLanding';
@@ -24,7 +21,7 @@ export function apneKiChat() {
 }
 
 export const FAKULTET_IKON: Record<FacultyId, LucideIcon> = {
-  hh: Building2, landsam: Trees, realtek: Atom, biovit: Leaf, kbm: FlaskConical, mina: TreePine, vet: PawPrint,
+  hh: MENY.Building2, landsam: MENY.Trees, realtek: MENY.Atom, biovit: MENY.Leaf, kbm: MENY.FlaskConical, mina: MENY.TreePine, vet: MENY.PawPrint,
 };
 
 /** Fakultetsnavnet uten «Fakultet for», til sidemenyen: «Realfag og teknologi». */
@@ -69,20 +66,20 @@ export const MODULGRUPPER: { tittel: string; views: ShellView[] }[] = [
 
 export const modulerFor = (id: FacultyId, views: ShellView[]) => views.map(modul).filter((m) => !m.kunFor || m.kunFor === id);
 
-export const OPPRINNELIG_HH = { label: 'Opprinnelig HH-analyse', icon: Archive, tekst: 'Den manuelt kuraterte analysen fra Figma' };
+export const OPPRINNELIG_HH = { label: 'Opprinnelig HH-analyse', icon: MENY.Archive, tekst: 'Den manuelt kuraterte analysen fra Figma' };
 
 /** Sidene for hele NMBU. */
 export const NMBU_SIDER: { f: Faculty; label: string; icon: LucideIcon; tekst: string }[] = [
-  { f: 'nmbu-marked', label: 'Markedet', icon: PieChart, tekst: 'Hele markedet: andeler, alle program og økonomilandskapet' },
-  { f: 'nmbu-emner', label: 'Alle emner ved NMBU', icon: BookOpen, tekst: 'Karakterer i alle NMBUs emner' },
-  { f: 'nmbu-fagmiljo', label: 'Fagmiljøet', icon: Microscope, tekst: 'Tilsatte og publisering, fakultet mot fakultet' },
-  { f: 'nmbu-sokergrunnlag', label: 'Søkergrunnlaget', icon: Baby, tekst: 'Ungdomskullene per fylke fram mot 2045' },
-  { f: 'nmbu-bolig', label: 'Bolig og studentboliger', icon: Home, tekst: 'Ås mot konkurrentenes studiesteder' },
-  { f: 'nmbu-okonomi', label: 'Økonomi', icon: Landmark, tekst: 'Styringsindikatorer mot konkurrentene' },
+  { f: 'nmbu-marked', label: 'Markedet', icon: MENY.PieChart, tekst: 'Hele markedet: andeler, alle program og økonomilandskapet' },
+  { f: 'nmbu-emner', label: 'Alle emner ved NMBU', icon: MENY.BookOpen, tekst: 'Karakterer i alle NMBUs emner' },
+  { f: 'nmbu-fagmiljo', label: 'Fagmiljøet', icon: MENY.Microscope, tekst: 'Tilsatte og publisering, fakultet mot fakultet' },
+  { f: 'nmbu-sokergrunnlag', label: 'Søkergrunnlaget', icon: MENY.Baby, tekst: 'Ungdomskullene per fylke fram mot 2045' },
+  { f: 'nmbu-bolig', label: 'Bolig og studentboliger', icon: MENY.Home, tekst: 'Ås mot konkurrentenes studiesteder' },
+  { f: 'nmbu-okonomi', label: 'Økonomi', icon: MENY.Landmark, tekst: 'Styringsindikatorer mot konkurrentene' },
 ];
 /** Styringsinformasjon for hele NMBU: egne samlesider med fakultetene side om side (egen gruppe øverst i menyen). */
 export const NMBU_STYRING: { f: Faculty; label: string; icon: LucideIcon; tekst: string }[] = [
-  { f: 'nmbu-okonomi-drift', label: 'Økonomi og drift', icon: Wallet, tekst: 'Regnskap, finansiering, eksterne midler og bemanning per fakultet' },
-  { f: 'nmbu-utdanning', label: 'Utdanning', icon: GraduationCap, tekst: 'Studiepoeng, gjennomføring, søkere og studieplasser per fakultet' },
+  { f: 'nmbu-okonomi-drift', label: 'Økonomi og drift', icon: MENY.Wallet, tekst: 'Regnskap, finansiering, eksterne midler og bemanning per fakultet' },
+  { f: 'nmbu-utdanning', label: 'Utdanning', icon: MENY.GraduationCap, tekst: 'Studiepoeng, gjennomføring, søkere og studieplasser per fakultet' },
 ];
-export const NMBU_OVERSIKT = { label: 'Forside', icon: LayoutDashboard };
+export const NMBU_OVERSIKT = { label: 'Forside', icon: MENY.LayoutDashboard };

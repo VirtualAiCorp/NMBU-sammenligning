@@ -1,5 +1,5 @@
 import { lazy, Suspense, useEffect, useRef, useState } from 'react';
-import { MessageCircle, X } from 'lucide-react';
+import { MessageCircle, X } from '../ikoner';
 import type { FacultyId } from '../data/facultyMeta';
 
 export type KiModus = 'flytende' | 'side' | 'stor';

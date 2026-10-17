@@ -3,7 +3,7 @@ import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
   BarChart, Bar, Cell, ReferenceLine,
 } from 'recharts';
-import { TrendingUp, TrendingDown, Minus, Info, ExternalLink } from 'lucide-react';
+import { TrendingUp, TrendingDown, Minus, Info, ExternalLink } from '../ikoner';
 import { CsvExportButton } from './CsvExportButton';
 import { exportSamfCsv } from '../utils/csvExport';
 import {

@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend, BarChart, Bar } from 'recharts';
-import { Info, ExternalLink, Filter } from 'lucide-react';
+import { Info, ExternalLink, Filter } from '../ikoner';
 import type { FacultyData } from '../data/faculties';
 import type { StudentGroup, StudentProgram } from '../data/landsamStudentData';
 import { STUDENT_NATIONAL, STUDENT_HENTET, type StudentYear } from '../data/studentNationalData';
