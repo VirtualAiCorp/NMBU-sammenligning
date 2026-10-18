@@ -2062,17 +2062,19 @@ function AjgSammenligning({ data, v, std, sett }: { data: Data; v: AjgValg; std:
   const verdiP = `${v.fra}-${v.til}`;
   const kjente = new Set([...tre.map((y) => `${y - 2}-${y}`), ...aarRekke(y0, yN).map((y) => `${y}-${y}`), ...fem.map((y) => `${y - 4}-${y}`), `${y0}-${yN}`]);
 
-  // Utviklingsgrafen: 4+ per 100 årsverk per år (eller glidende treårssnitt)
+  // Utviklingsgrafen: 3+, 4+ eller 4* per 100 årsverk per år (eller glidende treårssnitt)
   const [glatt, setGlatt] = useState(false);
+  const [grafNiva, setGrafNiva] = useState<'p3' | 'p4' | 'n4s'>('p4');
+  const grafNavn = grafNiva === 'p3' ? '3+' : grafNiva === 'p4' ? '4+' : '4*';
   const alleAar = aarRekke(y0, yN);
   const p4Aar = (s: Skole) => alleAar.map((y) => {
     const vindu = glatt ? aarRekke(Math.max(y0, Number(y) - 2), Number(y)) : [y];
     if (glatt && vindu.length < 3) return null;
-    return ajgMaal(ajgTall(s, vindu, v.brok, v.nevner), true).p4;
+    return ajgMaal(ajgTall(s, vindu, v.brok, v.nevner), true)[grafNiva];
   });
   const valgte = v.skoler.map((id, k) => ({ id, k })).filter((x) => x.id && skoler.some((s) => grafId(s) === x.id));
   const serier = valgte.map(({ id, k }) => { const s = skoler.find((z) => grafId(z) === id) as Skole; return { id, lab: s.kort, v: p4Aar(s), k, meg: s.isNmbu }; });
-  const medianLinje = useMemo(() => { const alle = skoler.map(p4Aar); return alleAar.map((_, i) => medianAv(alle.map((a) => a[i]))); }, [skoler, glatt, v.brok, v.nevner]); // eslint-disable-line react-hooks/exhaustive-deps
+  const medianLinje = useMemo(() => { const alle = skoler.map(p4Aar); return alleAar.map((_, i) => medianAv(alle.map((a) => a[i]))); }, [skoler, glatt, grafNiva, v.brok, v.nevner]); // eslint-disable-line react-hooks/exhaustive-deps
   const veksle = (id: string) => {
     const k = v.skoler.indexOf(id);
     if (k >= 0) { const ny = [...v.skoler]; ny[k] = ''; while (ny.length && !ny[ny.length - 1]) ny.pop(); set({ skoler: ny }); return; }
@@ -2319,18 +2321,21 @@ function AjgSammenligning({ data, v, std, sett }: { data: Data; v: AjgValg; std:
       <section className="sec" aria-label="Utvikling over tid">
         <header>
           <span className="lab">Utvikling {y0}–{yN}</span>
-          <h2>AJG 4+ per 100 {nev}{glatt ? ', glidende treårssnitt' : ' per år'}</h2>
-          <p className="muted">Velg opptil {AJG_MAKS_SKOLER} skoler. Fargen følger skolen. Stiplet linje er medianen for alle skolene som vises. {v.brok ? 'Brøkdelt' : 'Hel'} telling, {v.nevner === 'uff' ? 'HK-dirs' : 'NHHs'} nevner.</p>
+          <h2>AJG {grafNavn} per 100 {nev}{glatt ? ', glidende treårssnitt' : ' per år'}</h2>
+          <p className="muted">{grafNiva === 'p3' ? 'Artikler på AJG nivå 3, 4 eller 4*.' : grafNiva === 'p4' ? 'Artikler på AJG nivå 4 eller 4*.' : 'Bare artikler på AJG nivå 4* (World Elite).'} Velg opptil {AJG_MAKS_SKOLER} skoler. Fargen følger skolen. Stiplet linje er medianen for alle skolene som vises. {v.brok ? 'Brøkdelt' : 'Hel'} telling, {v.nevner === 'uff' ? 'HK-dirs' : 'NHHs'} nevner.</p>
         </header>
+        <div className="cmprow" role="group" aria-label="Nivå og utjevning i grafen">
+          {(['p3', 'p4', 'n4s'] as const).map((n) => <button key={n} type="button" className="seg" aria-pressed={grafNiva === n} onClick={() => setGrafNiva(n)}>AJG {n === 'p3' ? '3+' : n === 'p4' ? '4+' : '4*'}</button>)}
+          <span style={{ width: 10 }} />
+          <button type="button" className="seg" aria-pressed={glatt} onClick={() => setGlatt(!glatt)} title="Snitt av tre år (året og de to foregående), jevner ut små skoler">Glidende treårssnitt</button>
+        </div>
         <div className="cmprow ajg-chips" role="group" aria-label="Skoler i grafen">
           {sortert.map((r) => { const k = v.skoler.indexOf(grafId(r.s)); return (
             <button key={r.s.id} type="button" aria-pressed={k >= 0} disabled={k < 0 && fulle} onClick={() => veksle(grafId(r.s))}>{k >= 0 && <i className={`k${k}`} />}{r.s.kort}</button>
           ); })}
-          <span style={{ marginLeft: 'auto' }} />
-          <button type="button" className="seg" aria-pressed={glatt} onClick={() => setGlatt(!glatt)} title="Snitt av tre år (året og de to foregående), jevner ut små skoler">Glidende treårssnitt</button>
         </div>
         <div className="legend">{serier.map((s) => <span key={s.id}><i className={`ajg-sw k${s.k}`} />{s.lab}</span>)}<span><i className="m" />Median</span></div>
-        <AjgLinjer aar={alleAar} serier={serier} median={medianLinje} label={`AJG 4+ per 100 ${nev} ${y0} til ${yN} for ${serier.map((s) => s.lab).join(', ')}`} />
+        <AjgLinjer aar={alleAar} serier={serier} median={medianLinje} label={`AJG ${grafNavn} per 100 ${nev} ${y0} til ${yN} for ${serier.map((s) => s.lab).join(', ')}`} />
         <details><summary>Vis som tabell</summary>
           <div className="scroll"><table><thead><tr><th>År</th>{serier.map((s) => <th key={s.id}>{s.lab}</th>)}<th>Median</th></tr></thead>
             <tbody>{alleAar.map((y, i) => <tr key={y}><td>{y}</td>{serier.map((s) => <td key={s.id}>{nf(s.v[i], 1)}</td>)}<td>{nf(medianLinje[i], 1)}</td></tr>)}</tbody></table></div>
