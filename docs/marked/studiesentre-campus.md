@@ -31,7 +31,7 @@ Filer:
   NMBUs egen WISEflow på egen PC med låst nettleser. Vertsstedet trenger bare å stille rom, strøm, nett og
   eksamensvakter.
 - **Prisnivå** (betalt av studenten i dag):
-  - Egenandel hos studiesenter: 500–800 kr.
+  - Egenandel hos studiesenter: 600–750 kr per student per eksamen (Midt-Troms 600 kr, Nord-Troms 750 kr; rettet 18.10.2026).
   - Administrasjonsgebyr hos egen institusjon: 700–1 800 kr.
   - Avgift når en annen institusjon er vertskap: 2 500 kr per kandidat hos USN, pluss vakt.
 - **NMBU i dag.** Årsstudiet i bærekraftig økonomi og ledelse (Samordna 192253, DBH KVU-BEDØK) hadde 1 962 registrerte
@@ -166,6 +166,8 @@ institusjoner.
   Ved desentralisert undervisning kan fakultetet bestemme desentralisert eksamen før studiet starter.
 - **Nord-Troms studiesenter** tar en egenandel fra studenten på 500 kr per eksamen for emner senteret annonserer, og
   800 kr for andre emner. Institusjonen kan i tillegg kreve egen avgift.
+  **Rettet 18.10.2026:** dette står på den eldre NTSS-siden. Senterets nåværende side (campusnt.no) oppgir 750 kr per
+  student per eksamen for studenter fra andre institusjoner, og gratis for UiT-studenter.
 - **Nord og NTNU.** Kartleggingen fant ingen offentlig liste over studiesentre som Nord eller NTNU bruker til eksamen.
   - NTNU i Gjøvik godtar «offentlig studiesenter» som eksamenssted for nettstudenter.
   - Nords forskrift åpner for egne regler om eksamenssted i oppdragsfinansierte studier.

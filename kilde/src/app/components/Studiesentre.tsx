@@ -153,7 +153,7 @@ function Visning({ d, initial }: { d: Data; initial: string | null }) {
       mk.bindTooltip(
         `<div style="font-size:12px;line-height:1.45"><b>${esc(s.navn)}</b><br/>${esc(KAT_TEKST[s.kat])}${s.poststed ? ` · ${esc(s.poststed)}` : ''}, ${esc(s.fylke)}<br/>`
         + `<span style="color:${STATUS_FARGE[s.status]};font-weight:700">●</span> ${esc(d.statusTekst[s.status])}`
-        + `${s.prisKr != null ? `<br/>Pris: ${esc(kr(s.prisKr))}` : ''}${s.km != null ? `<br/>${esc(nf(s.km))} km fra Ås (luftlinje)` : ''}`
+        + `${s.prisKr != null ? `<br/>Pris: ${esc(kr(s.prisKr))} per student per eksamen` : ''}${s.km != null ? `<br/>${esc(nf(s.km))} km fra Ås (luftlinje)` : ''}`
         + `${s.anbefalt ? `<br/><b>${esc(ROLLE_TEKST[s.anbefalt.rolle])} nr. ${s.anbefalt.nr}</b>` : ''}</div>`,
         { className: 'map-tooltip', direction: 'top', offset: [0, -str / 2] },
       );
@@ -189,7 +189,7 @@ function Visning({ d, initial }: { d: Data; initial: string | null }) {
             under={`${nf(bekreftetKat.filter((s) => s.kat === 'campus').length)} campuser (${nf(bekreftetKat.filter((s) => s.instKort === 'USN').length)} hos USN), ${nf(bekreftetKat.filter((s) => s.kat !== 'campus').length)} studie- og kompetansesentre`} />
           <Tall etikett="Avvikler eksamen, uklart for hvem" verdi={nf(t.status.avvikler)} under={`${nf(t.status.nei)} sier nei til eksterne, ${nf(t.status.ukjent)} ukjent`} />
           <Tall etikett="Landsdeler" verdi={nf(d.landsdeler.filter((l) => t.landsdel[l] > 0).length)} under={d.landsdeler.map((l) => `${l} ${nf(t.landsdel[l])}`).join(' · ')} />
-          <Tall etikett="Priser der de er oppgitt" verdi={d.priser ? `${nf(d.priser.min)}–${nf(d.priser.maks)} kr` : '–'}
+          <Tall etikett="Pris per student per eksamen, der den er oppgitt" verdi={d.priser ? `${nf(d.priser.min)}–${nf(d.priser.maks)} kr` : '–'}
             under="Per eksamen: 600–750 kr hos studiesentrene, 2 500 kr pluss vakt hos USN" />
         </div>
       </Kort>
@@ -252,7 +252,7 @@ function Visning({ d, initial }: { d: Data; initial: string | null }) {
             <thead className="sticky top-0" style={{ zIndex: 1 }}>
               <tr style={thead}>
                 <th className={thV}>Sted</th><th className={thV}>Kommune</th><th className={thV}>Landsdel</th>
-                <th className={thV}>Eksamensstatus</th><th className={th}>Pris</th><th className={th}>Km fra Ås</th>
+                <th className={thV}>Eksamensstatus</th><th className={th} title="Per student per eksamen, betalt av studenten">Pris per student</th><th className={th}>Km fra Ås</th>
               </tr>
             </thead>
             <tbody>
@@ -295,7 +295,7 @@ function Visning({ d, initial }: { d: Data; initial: string | null }) {
                   <span className="block" style={{ fontSize: 10, fontWeight: 700, color: 'var(--nmbu-neutral-2)', letterSpacing: '0.04em', textTransform: 'uppercase' }}>{a.omrade}{a.rolle === 'studiesenter' ? ' · studiesenter' : ''}</span>
                   <span className="block" style={{ fontWeight: 700, color: 'var(--nmbu-neutral)' }}>{s.navn}</span>
                   <span className="block" style={{ color: 'var(--nmbu-neutral-2)' }}>{[s.adresse, [s.postnr, s.poststed].filter(Boolean).join(' ')].filter(Boolean).join(', ')}{s.km != null ? ` · ${nf(s.km)} km fra Ås` : ''}</span>
-                  <span className="flex items-center mt-0.5" style={{ fontWeight: 600 }}><Prikk status={s.status} />{d.statusTekst[s.status]}{s.prisKr != null ? ` · ${kr(s.prisKr)}` : ''}</span>
+                  <span className="flex items-center mt-0.5" style={{ fontWeight: 600 }}><Prikk status={s.status} />{d.statusTekst[s.status]}{s.prisKr != null ? ` · ${kr(s.prisKr)} per student` : ''}</span>
                   <span className="block mt-1" style={{ color: 'var(--nmbu-neutral-1)' }}>{a.begrunnelse}</span>
                   {a.alternativ && <span className="block" style={{ color: 'var(--nmbu-neutral-1)' }}><b>Alternativ:</b> {a.alternativ}</span>}
                   {s.status === 'nei' && <span className="block mt-1 rounded px-2 py-1" style={{ backgroundColor: '#FEF2F2', color: 'var(--nmbu-neutral)' }}><b>Merk:</b> {s.statusGrunn} Det krever i så fall en institusjonsavtale.</span>}
@@ -308,17 +308,17 @@ function Visning({ d, initial }: { d: Data; initial: string | null }) {
 
       {/* ── Ordninger ─────────────────────────────────────────────────────── */}
       <Kort ikon={Scale} tittel="Ordninger for eksamen et annet sted"
-        undertekst="Hva institusjonene tillater egne studenter, og hvem som avvikler eksamen for andre. Prisene er det studentene betaler i dag."
+        undertekst="Hva institusjonene tillater egne studenter, og hvem som avvikler eksamen for andre. Alle prisene gjelder per student per eksamen, og i dag er det studenten som betaler. Gebyret til egen institusjon og prisen hos vertsstedet kommer i tillegg til hverandre."
         kilde={<>Kilde: forskriftene på Lovdata og institusjonenes egne eksamenssider, Sikt og USNs merknader til forskriften. Hentet 17.10.2026.</>}>
         <ul className="space-y-1.5 mb-4" style={{ fontSize: 13, lineHeight: 1.55, color: 'var(--nmbu-neutral)' }}>
           <li className="flex gap-2"><span style={{ color: 'var(--nmbu-green-dark)', fontWeight: 700 }}>1.</span><span><b>Ingen nasjonal ordning.</b> Hver institusjon fastsetter eksamenssted i egen forskrift. Åpningene som finnes er søknadsbaserte, gjelder enkeltstudenter, og studenten betaler.</span></li>
-          <li className="flex gap-2"><span style={{ color: 'var(--nmbu-green-dark)', fontWeight: 700 }}>2.</span><span><b>USN tar imot andre for 2 500 kr per eksamen per student pluss vakt</b>, på alle campusene. Det er verifisert i USNs merknader til forskriften (§ 7-17 (5)). HiØ tar også imot andres kandidater i Halden (pris ikke oppgitt).</span></li>
+          <li className="flex gap-2"><span style={{ color: 'var(--nmbu-green-dark)', fontWeight: 700 }}>2.</span><span><b>USN tar imot andre for 2 500 kr per student per eksamen pluss vakt</b>, betalt av studenten, på alle campusene. Det er verifisert i USNs merknader til forskriften (§ 7-17 (5)). HiØ tar også imot andres kandidater i Halden (pris ikke oppgitt).</span></li>
           <li className="flex gap-2"><span style={{ color: 'var(--nmbu-green-dark)', fontWeight: 700 }}>3.</span><span><b>WISEflow via Sikt gjør det enkelt.</b> De fleste institusjonene, også NMBU, bruker nå samme eksamenssystem. En NMBU-kandidat skriver i NMBUs WISEflow på egen PC med låst nettleser, så vertsstedet trenger bare rom, strøm, nett og eksamensvakter.</span></li>
           <li className="flex gap-2"><span style={{ color: 'var(--nmbu-green-dark)', fontWeight: 700 }}>4.</span><span><b>HVL tar ikke imot eksterne</b>, og UiA har sluttet med det fra 1.1.2025. Begge må i så fall håndteres som institusjonsavtaler.</span></li>
         </ul>
         <div className="overflow-x-auto">
           <table className="w-full border-collapse text-xs">
-            <thead><tr style={thead}><th className={thV}>Institusjon</th><th className={thV}>Ordning</th><th className={thV}>Vilkår</th><th className={thV}>Pris</th><th className={thV}>Kilde</th></tr></thead>
+            <thead><tr style={thead}><th className={thV}>Institusjon</th><th className={thV}>Ordning</th><th className={thV}>Vilkår</th><th className={thV}>Pris per student per eksamen</th><th className={thV}>Kilde</th></tr></thead>
             <tbody>
               {d.ordninger.map((o, i) => (
                 <tr key={i} className="align-top" style={{ borderTop: '1px solid var(--nmbu-neutral-3)' }}>
@@ -343,7 +343,7 @@ function Visning({ d, initial }: { d: Data; initial: string | null }) {
           <li><b>Ukjent er ikke nei.</b> Tomme felt (null i dataene) betyr at kildene ikke sier noe. «Ingen eksamen for eksterne» brukes bare der kilden sier det uttrykkelig (HVL, UiA og HiØ Fredrikstad).</li>
           <li><b>Tidsavgrenset innhenting 17.10.2026.</b> Opplysningene er hentet fra nettsidene den dagen. Noen er gamle (for eksempel Kirkenes kompetansesenter fra 2009 og UiBs retningslinjer fra 2015), og det står i merknaden på stedet.</li>
           <li><b>studiesenteret.no er ikke lenger en kilde.</b> Nettverket Studiesenteret.no ble avviklet i 2019, og domenet har nå uvedkommende innhold. Medlemslisten til Norske utdannings- og studiesentre og HK-dirs tildelinger er brukt i stedet.</li>
-          <li><b>Ta kontakt direkte.</b> Prisene er det stedene krever av studenter i dag. En avtale med NMBU vil ha egne vilkår, så eksamenskontorene og studiesentrene bør kontaktes direkte, først USN, UiT og UiB.</li>
+          <li><b>Ta kontakt direkte.</b> Prisene er det stedene krever av hver student per eksamen i dag. En avtale med NMBU vil ha egne vilkår, så eksamenskontorene og studiesentrene bør kontaktes direkte, først USN, UiT og UiB.</li>
           <li><b>Bare felles kontaktinformasjon.</b> E-post og telefon er sentralbord, postmottak, servicetorg eller eksamenskontor. Personlige adresser og numre er utelatt, også der de var den eneste kontakten.</li>
           <li><b>Fire dubletter er slått sammen.</b> USN Hallingdal og HVL Haugesund, Førde og Sogndal sto både i studiesenterkartleggingen og blant campusene. De vises én gang, med begge merknadene.</li>
           <li><b>Kilder:</b> studiesentrenes og institusjonenes egne sider, forskrifter på Lovdata, Enhetsregisteret (Brreg), Kartverkets adressesøk (koordinater), Sikt (WISEflow-avtalen), DBH 124 (studenter 2025) og HK-dirs tildelinger til studiesentre. Hvert sted har sine kilder med lenke og dato i kortet. Avstandene er luftlinje fra NMBU Ås.</li>
@@ -395,7 +395,7 @@ function StedKort({ s, d, per, velg, lukk }: { s: Sted; d: Data; per: Map<string
       <div className="space-y-1.5 pt-2" style={{ fontSize: 12, lineHeight: 1.5, borderTop: '1px solid var(--nmbu-neutral-3)' }}>
         <div style={{ fontWeight: 700 }}>Eksamen</div>
         {rad('For hvem', ekst.length ? ekst.join('; ') : <span style={{ color: 'var(--nmbu-neutral-2)' }}>ikke oppgitt</span>)}
-        {rad('Pris', s.pris ?? <span style={{ color: 'var(--nmbu-neutral-2)' }}>ikke oppgitt</span>)}
+        {rad('Pris per student', s.pris ?? <span style={{ color: 'var(--nmbu-neutral-2)' }}>ikke oppgitt</span>)}
         {rad('Digital/PC', s.digital ?? <span style={{ color: 'var(--nmbu-neutral-2)' }}>ikke oppgitt</span>)}
         {rad('Lokaler', s.lokaler ?? <span style={{ color: 'var(--nmbu-neutral-2)' }}>ikke oppgitt</span>)}
         {s.studenter2025 != null && rad('Studenter 2025', `${nf(s.studenter2025)} registrerte (DBH 124)`)}

@@ -1391,6 +1391,9 @@ Modulen ligger i gruppen «Marked og omverden» etter Konkurrentene og vises bar
   kontaktes direkte. Ingen KI-linjer i `build-ki-grunnlag.py` ennå.
 - **Oppdatering:** kjør skriptene i `data/marked/studiesentre/skript/` ved behov, deretter
   `python3 scripts/build-studiesentre.py`.
+- **Rettet 18.10.2026:** alle priser står som «per student per eksamen» og hvem som betaler (i dag studenten:
+  gebyr til egen institusjon og vertsstedets pris kommer i tillegg til hverandre). Campus Nord-Troms: den eldre NTSS-prisen
+  (500/800 kr) er erstattet av 750 kr fra campusnt.no i ordningstabellen.
 
 ## 62. Ikonene: fra Lucide til Hugeicons (18.10.2026)
 

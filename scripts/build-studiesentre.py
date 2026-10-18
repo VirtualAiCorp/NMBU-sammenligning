@@ -85,11 +85,11 @@ TEKST_BEKREFTER = {
 
 # ── Priser (kontrollert mot kildeteksten: tallet må stå i merknaden eller eksamenFor) ──
 PRIS = {
-    'ssmt-finnsnes-senja': (600, '600 kr per eksamen (studentens egenandel til senteret).'),
-    'campus-nord-troms-nordreisa': (750, '750 kr per eksamen for andre enn UiT-studenter, gratis for UiT-studenter. NTSS-siden om lokal eksamen oppgir 500 kr for emner senteret annonserer og 800 kr for andre emner.'),
-    'kirkenes-kompetansesenter-sor-varanger': (650, '650 kr per eksamen pluss eksamensvakt og porto (opplysning fra 2009).'),
+    'ssmt-finnsnes-senja': (600, '600 kr per student per eksamen. Betales av studenten (egenandel til senteret).'),
+    'campus-nord-troms-nordreisa': (750, '750 kr per student per eksamen for studenter fra andre institusjoner, betalt av studenten (administrasjon og tilrettelegging). Gratis for UiT-studenter. Kilde: campusnt.no; den eldre NTSS-siden med 500/800 kr er utdatert.'),
+    'kirkenes-kompetansesenter-sor-varanger': (650, '650 kr per student per eksamen pluss eksamensvakt og porto (opplysning fra 2009, ikke bekreftet i dag).'),
 }
-USN_PRIS = (2500, '2 500 kr per eksamen per student, pluss ev. eksamensvakt (USNs forskrift § 7-17 (5)).')
+USN_PRIS = (2500, '2 500 kr per student per eksamen pluss ev. eksamensvakt. Betales av studenten ved den andre institusjonen (merknadene til USNs forskrift § 7-17 (5)).')
 
 # ── Anbefalte samarbeidssteder: campus-rapporten §5 (13 + reserve) og de tre studiesentrene som bekrefter eksamen for andre ──
 ANBEFALT = {
