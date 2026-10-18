@@ -21,6 +21,7 @@ data/rangering/nva-forelopig/
 data/rangering/openalex/*
 !data/rangering/openalex/README.md
 !data/rangering/openalex/enheter-norden.json
+!data/rangering/openalex/enheter-norge.json
 !data/rangering/openalex/hh-internasjonalt.json
 # Danske Pure-data (OAI-PMH): råsvar med personnavn og avledede artikkelfiler, hentes på nytt med skriptet
 data/rangering/pure/

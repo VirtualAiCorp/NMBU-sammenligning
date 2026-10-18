@@ -415,3 +415,12 @@
 /* Fanen «… foreløpig»: notis om ujevn rapportering */
 .skp .fl-notis{border-left:3px solid var(--accent);background:var(--flate);padding:10px 12px;font-size:.84rem;line-height:1.45}
 .skp .fl-notis b{font-weight:600}
+
+/* Skandinavia (18.10.2026): kvalitetsmerke på nevneren. Tekst + kant, så merket leses uten farge; fargen er bare støtte. */
+.skp .skan-kv{display:inline-block;font-size:.7rem;line-height:1.5;padding:0 7px;border-radius:999px;border:1px solid var(--line2);color:var(--ink);white-space:nowrap}
+.skp .skan-kv.god{border-color:var(--up);background:color-mix(in srgb,var(--up) 14%,transparent)}
+.skp .skan-kv.middels{border-color:var(--g3);background:color-mix(in srgb,var(--g3) 22%,transparent)}
+.skp .skan-kv.svak{border-style:dashed;color:var(--muted)}
+.skp .skan-kv.mangler{border-style:dotted;color:var(--muted)}
+.skp .skan-nev td{vertical-align:top}
+.skp td.skan-lav{color:var(--down);font-weight:600}

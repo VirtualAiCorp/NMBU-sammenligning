@@ -1,0 +1,1374 @@
+{
+ "generert": "2026-10-18",
+ "merknad": "Valgt nevner per nordisk enhet og år (scripts/rangering/lag_nevner_norden.py). med ≈ UN1 + UN2, uten ≈ uten stipendiater/doktorander.",
+ "enheter": {
+  "dk_cbs": {
+   "kvalitet": "god",
+   "nivaa": "Hele CBS",
+   "kilde": "Danske Universiteter, nøgletal C (VIP-årsværk, 1 924 timer)",
+   "forklaring": "CBS er hele institusjonen. Uten stipendiater er regnet fra årsrapportens fordeling (ph.d.-årsverk trukket fra).",
+   "aar": {
+    "2016": {
+     "med": 601.9,
+     "uten": 520.0
+    },
+    "2017": {
+     "med": 565.3,
+     "uten": 488.0
+    },
+    "2018": {
+     "med": 587.7,
+     "uten": 504.0
+    },
+    "2019": {
+     "med": 611.9,
+     "uten": 512.0
+    },
+    "2020": {
+     "med": 653.6,
+     "uten": 531.0
+    },
+    "2021": {
+     "med": 690.7,
+     "uten": 570.0
+    },
+    "2022": {
+     "med": 711.9,
+     "uten": 597.0
+    },
+    "2023": {
+     "med": 698.8,
+     "uten": 598.0
+    },
+    "2024": {
+     "med": 660.0,
+     "uten": 576.0
+    },
+    "2025": {
+     "med": 669.1,
+     "uten": 580.0
+    }
+   },
+   "eter": {
+    "2018": 822.53,
+    "2019": 842.74,
+    "2020": 653.6,
+    "2021": 690.74,
+    "2022": 711.94,
+    "2023": 698.76
+   }
+  },
+  "dk_aarhus": {
+   "kvalitet": "middels",
+   "nivaa": "Hele Aarhus BSS-fakultetet",
+   "kilde": "AU i tal, tabell F1A (VIP-årsværk)",
+   "forklaring": "Hele fakultetet, også jus, psykologi og statskundskab. Artiklene er avgrenset til de samme fagene.",
+   "aar": {
+    "2016": {
+     "med": 728.0,
+     "uten": 547.0
+    },
+    "2017": {
+     "med": 713.7,
+     "uten": 536.9
+    },
+    "2018": {
+     "med": 731.0,
+     "uten": 551.0
+    },
+    "2019": {
+     "med": 772.0,
+     "uten": 590.0
+    },
+    "2020": {
+     "med": 801.0,
+     "uten": 604.0
+    },
+    "2021": {
+     "med": 828.0,
+     "uten": 631.0
+    },
+    "2022": {
+     "med": 825.0,
+     "uten": 635.0
+    },
+    "2023": {
+     "med": 778.0,
+     "uten": 597.0
+    },
+    "2024": {
+     "med": 744.5,
+     "uten": 564.2
+    },
+    "2025": {
+     "med": 734.0,
+     "uten": 558.0
+    }
+   }
+  },
+  "dk_ku": {
+   "kvalitet": "svak",
+   "nivaa": "KU Det Samfundsvidenskabelige Fakultet uten jus",
+   "kilde": "KUs økonominøgletal (VIP-årsværk)",
+   "forklaring": "Hele samfunnsvitenskapelige fakultet uten jus, mens artiklene gjelder Økonomisk Institut. Raten blir for lav.",
+   "aar": {
+    "2016": {
+     "med": 374.0,
+     "uten": null
+    },
+    "2017": {
+     "med": 359.5,
+     "uten": null
+    },
+    "2018": {
+     "med": 351.6,
+     "uten": null
+    },
+    "2019": {
+     "med": 346.4,
+     "uten": null
+    },
+    "2020": {
+     "med": 365.6,
+     "uten": null
+    },
+    "2021": {
+     "med": 381.0,
+     "uten": null
+    },
+    "2022": {
+     "med": 382.0,
+     "uten": null
+    },
+    "2023": {
+     "med": 401.0,
+     "uten": null
+    },
+    "2024": {
+     "med": 411.0,
+     "uten": null
+    },
+    "2025": {
+     "med": 401.0,
+     "uten": null
+    }
+   }
+  },
+  "dk_sdu": {
+   "kvalitet": "svak",
+   "nivaa": "SDU, hovedområde SAMF",
+   "kilde": "Danske Universiteter, nøgletal C (VIP-årsværk, 1 924 timer)",
+   "forklaring": "Hele det samfunnsvitenskapelige hovedområdet ved SDU (også jus og statskundskab). Øvre ramme for nevneren, så raten blir for lav.",
+   "aar": {
+    "2016": {
+     "med": 360.8,
+     "uten": null
+    },
+    "2017": {
+     "med": 330.3,
+     "uten": null
+    },
+    "2018": {
+     "med": 329.0,
+     "uten": null
+    },
+    "2019": {
+     "med": 340.8,
+     "uten": null
+    },
+    "2020": {
+     "med": 321.8,
+     "uten": null
+    },
+    "2021": {
+     "med": 317.1,
+     "uten": null
+    },
+    "2022": {
+     "med": 317.4,
+     "uten": null
+    },
+    "2023": {
+     "med": 308.2,
+     "uten": null
+    },
+    "2024": {
+     "med": 300.4,
+     "uten": null
+    },
+    "2025": {
+     "med": 308.5,
+     "uten": null
+    }
+   }
+  },
+  "dk_aau": {
+   "kvalitet": "svak",
+   "nivaa": "AAU, hovedområde SAMF",
+   "kilde": "Danske Universiteter, nøgletal C (VIP-årsværk, 1 924 timer)",
+   "forklaring": "Hele det samfunnsvitenskapelige hovedområdet ved AAU. Øvre ramme for nevneren, så raten blir for lav.",
+   "aar": {
+    "2016": {
+     "med": 298.1,
+     "uten": null
+    },
+    "2017": {
+     "med": 314.6,
+     "uten": null
+    },
+    "2018": {
+     "med": 323.8,
+     "uten": null
+    },
+    "2019": {
+     "med": 307.2,
+     "uten": null
+    },
+    "2020": {
+     "med": 268.3,
+     "uten": null
+    },
+    "2021": {
+     "med": 285.8,
+     "uten": null
+    },
+    "2022": {
+     "med": 275.1,
+     "uten": null
+    },
+    "2023": {
+     "med": 278.7,
+     "uten": null
+    },
+    "2024": {
+     "med": 257.1,
+     "uten": null
+    },
+    "2025": {
+     "med": 261.8,
+     "uten": null
+    }
+   }
+  },
+  "dk_ruc": {
+   "kvalitet": "svak",
+   "nivaa": "RUC, hovedområde SAMF",
+   "kilde": "Danske Universiteter, nøgletal C (VIP-årsværk, 1 924 timer)",
+   "forklaring": "Hele det samfunnsvitenskapelige hovedområdet ved RUC. Øvre ramme for nevneren, så raten blir for lav.",
+   "aar": {
+    "2016": {
+     "med": 143.7,
+     "uten": null
+    },
+    "2017": {
+     "med": 135.4,
+     "uten": null
+    },
+    "2018": {
+     "med": 142.0,
+     "uten": null
+    },
+    "2019": {
+     "med": 180.9,
+     "uten": null
+    },
+    "2020": {
+     "med": 173.3,
+     "uten": null
+    },
+    "2021": {
+     "med": 161.4,
+     "uten": null
+    },
+    "2022": {
+     "med": 167.7,
+     "uten": null
+    },
+    "2023": {
+     "med": 160.0,
+     "uten": null
+    },
+    "2024": {
+     "med": 188.1,
+     "uten": null
+    },
+    "2025": {
+     "med": 201.8,
+     "uten": null
+    }
+   }
+  },
+  "se_sse": {
+   "kvalitet": "god",
+   "nivaa": "Hele SSE",
+   "kilde": "UKÄ (statistik-api.uka.se, tabell 56 forskande och undervisande personal og 139 doktorander, heltidsekvivalenter)",
+   "forklaring": "SSE er hele institusjonen; UKÄ-faggruppen dekker praktisk talt hele skolen. Svenske doktorander er ofte på stipend, ikke ansatt.",
+   "aar": {
+    "2016": {
+     "med": 202.5,
+     "uten": 89.6
+    },
+    "2017": {
+     "med": 184.8,
+     "uten": 80.3
+    },
+    "2018": {
+     "med": 205.6,
+     "uten": 91.0
+    },
+    "2019": {
+     "med": 193.7,
+     "uten": 75.8
+    },
+    "2020": {
+     "med": 226.2,
+     "uten": 103.4
+    },
+    "2021": {
+     "med": 239.8,
+     "uten": 111.4
+    },
+    "2022": {
+     "med": 239.6,
+     "uten": 107.3
+    },
+    "2023": {
+     "med": 257.7,
+     "uten": 128.8
+    },
+    "2024": {
+     "med": 250.2,
+     "uten": 140.7
+    },
+    "2025": {
+     "med": 255.1,
+     "uten": 139.9
+    }
+   },
+   "eter": {
+    "2018": 100.27,
+    "2019": 83.88,
+    "2020": 113.28,
+    "2021": 120.89,
+    "2022": 115.0,
+    "2023": 130.0
+   }
+  },
+  "se_gu": {
+   "kvalitet": "middels",
+   "nivaa": "Handelshögskolan vid GU (rekonstruert)",
+   "kilde": "UKÄ (statistik-api.uka.se, tabell 56 forskande och undervisande personal og 139 doktorander, heltidsekvivalenter)",
+   "forklaring": "UKÄ-faggruppene Ekonomi och näringsliv + Juridik + Social och ekonomisk geografi ved GU, som treffer fakultetets egne personaltall innen ±5 % (2020–2025).",
+   "aar": {
+    "2016": {
+     "med": 304.5,
+     "uten": 217.7
+    },
+    "2017": {
+     "med": 308.1,
+     "uten": 223.5
+    },
+    "2018": {
+     "med": 301.0,
+     "uten": 229.3
+    },
+    "2019": {
+     "med": 285.7,
+     "uten": 214.9
+    },
+    "2020": {
+     "med": 293.6,
+     "uten": 233.8
+    },
+    "2021": {
+     "med": 271.5,
+     "uten": 215.0
+    },
+    "2022": {
+     "med": 270.7,
+     "uten": 208.1
+    },
+    "2023": {
+     "med": 271.0,
+     "uten": 205.9
+    },
+    "2024": {
+     "med": 277.3,
+     "uten": 207.9
+    },
+    "2025": {
+     "med": 260.1,
+     "uten": 202.6
+    }
+   }
+  },
+  "se_lund": {
+   "kvalitet": "svak",
+   "nivaa": "Lunds universitet, UKÄ-faggruppen Ekonomi och näringsliv",
+   "kilde": "UKÄ (statistik-api.uka.se, tabell 56 forskande och undervisande personal og 139 doktorander, heltidsekvivalenter)",
+   "forklaring": "Faggruppen for hele lärosätet, ikke skolen. Statistikk, informatikk og økonomisk historie er kodet i andre faggrupper, så nevneren er ofte for lav og raten for høy. LUSEM oppgir selv 171,8 faglige årsverk (2025/26) mot 135 i faggruppen.",
+   "aar": {
+    "2016": {
+     "med": 214.2,
+     "uten": 134.0
+    },
+    "2017": {
+     "med": 231.7,
+     "uten": 152.8
+    },
+    "2018": {
+     "med": 240.1,
+     "uten": 159.8
+    },
+    "2019": {
+     "med": 234.4,
+     "uten": 157.2
+    },
+    "2020": {
+     "med": 233.0,
+     "uten": 162.4
+    },
+    "2021": {
+     "med": 224.5,
+     "uten": 157.5
+    },
+    "2022": {
+     "med": 216.9,
+     "uten": 146.8
+    },
+    "2023": {
+     "med": 216.6,
+     "uten": 147.9
+    },
+    "2024": {
+     "med": 215.9,
+     "uten": 147.4
+    },
+    "2025": {
+     "med": 195.9,
+     "uten": 135.3
+    }
+   }
+  },
+  "se_jibs": {
+   "kvalitet": "svak",
+   "nivaa": "Jönköping University, UKÄ-faggruppen Ekonomi och näringsliv",
+   "kilde": "UKÄ (statistik-api.uka.se, tabell 56 forskande och undervisande personal og 139 doktorander, heltidsekvivalenter)",
+   "forklaring": "Faggruppen for hele lärosätet, ikke skolen. Statistikk, informatikk og økonomisk historie er kodet i andre faggrupper, så nevneren er ofte for lav og raten for høy.",
+   "aar": {
+    "2016": {
+     "med": null,
+     "uten": null
+    },
+    "2017": {
+     "med": 90.1,
+     "uten": 56.0
+    },
+    "2018": {
+     "med": 89.6,
+     "uten": 60.8
+    },
+    "2019": {
+     "med": 99.1,
+     "uten": 71.0
+    },
+    "2020": {
+     "med": 101.9,
+     "uten": 75.2
+    },
+    "2021": {
+     "med": 98.6,
+     "uten": 76.2
+    },
+    "2022": {
+     "med": 94.0,
+     "uten": 73.1
+    },
+    "2023": {
+     "med": 102.2,
+     "uten": 78.0
+    },
+    "2024": {
+     "med": 93.2,
+     "uten": 76.9
+    },
+    "2025": {
+     "med": 87.0,
+     "uten": 73.4
+    }
+   }
+  },
+  "se_umea": {
+   "kvalitet": "svak",
+   "nivaa": "Umeå universitet, UKÄ-faggruppen Ekonomi och näringsliv",
+   "kilde": "UKÄ (statistik-api.uka.se, tabell 56 forskande och undervisande personal og 139 doktorander, heltidsekvivalenter)",
+   "forklaring": "Faggruppen for hele lärosätet, ikke skolen. Statistikk, informatikk og økonomisk historie er kodet i andre faggrupper, så nevneren er ofte for lav og raten for høy.",
+   "aar": {
+    "2016": {
+     "med": 115.2,
+     "uten": 87.9
+    },
+    "2017": {
+     "med": 105.5,
+     "uten": 79.0
+    },
+    "2018": {
+     "med": 99.3,
+     "uten": 76.6
+    },
+    "2019": {
+     "med": 101.0,
+     "uten": 82.5
+    },
+    "2020": {
+     "med": 92.1,
+     "uten": 78.9
+    },
+    "2021": {
+     "med": 103.6,
+     "uten": 86.1
+    },
+    "2022": {
+     "med": 104.0,
+     "uten": 89.7
+    },
+    "2023": {
+     "med": 107.2,
+     "uten": 92.3
+    },
+    "2024": {
+     "med": 105.5,
+     "uten": 86.6
+    },
+    "2025": {
+     "med": 106.3,
+     "uten": 85.7
+    }
+   }
+  },
+  "se_orebro": {
+   "kvalitet": "svak",
+   "nivaa": "Örebro universitet, UKÄ-faggruppen Ekonomi och näringsliv",
+   "kilde": "UKÄ (statistik-api.uka.se, tabell 56 forskande och undervisande personal og 139 doktorander, heltidsekvivalenter)",
+   "forklaring": "Faggruppen for hele lärosätet, ikke skolen. Statistikk, informatikk og økonomisk historie er kodet i andre faggrupper, så nevneren er ofte for lav og raten for høy.",
+   "aar": {
+    "2016": {
+     "med": 59.0,
+     "uten": 42.3
+    },
+    "2017": {
+     "med": 65.8,
+     "uten": 46.0
+    },
+    "2018": {
+     "med": 61.7,
+     "uten": 46.3
+    },
+    "2019": {
+     "med": 63.9,
+     "uten": 51.0
+    },
+    "2020": {
+     "med": 60.4,
+     "uten": 49.7
+    },
+    "2021": {
+     "med": 59.3,
+     "uten": 47.9
+    },
+    "2022": {
+     "med": 52.6,
+     "uten": 44.5
+    },
+    "2023": {
+     "med": 54.1,
+     "uten": 46.7
+    },
+    "2024": {
+     "med": 54.1,
+     "uten": 46.6
+    },
+    "2025": {
+     "med": 49.4,
+     "uten": 44.0
+    }
+   }
+  },
+  "se_lnu": {
+   "kvalitet": "svak",
+   "nivaa": "Linnéuniversitetet, UKÄ-faggruppen Ekonomi och näringsliv",
+   "kilde": "UKÄ (statistik-api.uka.se, tabell 56 forskande och undervisande personal og 139 doktorander, heltidsekvivalenter)",
+   "forklaring": "Faggruppen for hele lärosätet, ikke skolen. Statistikk, informatikk og økonomisk historie er kodet i andre faggrupper, så nevneren er ofte for lav og raten for høy.",
+   "aar": {
+    "2016": {
+     "med": 118.1,
+     "uten": 108.1
+    },
+    "2017": {
+     "med": 117.2,
+     "uten": 105.2
+    },
+    "2018": {
+     "med": 117.1,
+     "uten": 103.2
+    },
+    "2019": {
+     "med": 111.1,
+     "uten": 97.7
+    },
+    "2020": {
+     "med": 107.0,
+     "uten": 96.7
+    },
+    "2021": {
+     "med": 100.0,
+     "uten": 89.3
+    },
+    "2022": {
+     "med": 105.7,
+     "uten": 94.2
+    },
+    "2023": {
+     "med": 108.8,
+     "uten": 99.2
+    },
+    "2024": {
+     "med": 105.8,
+     "uten": 94.1
+    },
+    "2025": {
+     "med": 103.4,
+     "uten": 92.2
+    }
+   }
+  },
+  "se_karlstad": {
+   "kvalitet": "svak",
+   "nivaa": "Karlstads universitet, UKÄ-faggruppen Ekonomi och näringsliv",
+   "kilde": "UKÄ (statistik-api.uka.se, tabell 56 forskande och undervisande personal og 139 doktorander, heltidsekvivalenter)",
+   "forklaring": "Faggruppen for hele lärosätet, ikke skolen. Statistikk, informatikk og økonomisk historie er kodet i andre faggrupper, så nevneren er ofte for lav og raten for høy.",
+   "aar": {
+    "2016": {
+     "med": 53.6,
+     "uten": 38.5
+    },
+    "2017": {
+     "med": 52.2,
+     "uten": 37.8
+    },
+    "2018": {
+     "med": 50.2,
+     "uten": 38.4
+    },
+    "2019": {
+     "med": 46.4,
+     "uten": 39.4
+    },
+    "2020": {
+     "med": 51.9,
+     "uten": 43.8
+    },
+    "2021": {
+     "med": 57.7,
+     "uten": 48.9
+    },
+    "2022": {
+     "med": 58.8,
+     "uten": 50.1
+    },
+    "2023": {
+     "med": 55.3,
+     "uten": 46.8
+    },
+    "2024": {
+     "med": 54.3,
+     "uten": 43.7
+    },
+    "2025": {
+     "med": 56.1,
+     "uten": 46.0
+    }
+   }
+  },
+  "se_su": {
+   "kvalitet": "svak",
+   "nivaa": "Stockholms universitet, UKÄ-faggruppen Ekonomi och näringsliv",
+   "kilde": "UKÄ (statistik-api.uka.se, tabell 56 forskande och undervisande personal og 139 doktorander, heltidsekvivalenter)",
+   "forklaring": "Faggruppen for hele lärosätet, ikke skolen. Statistikk, informatikk og økonomisk historie er kodet i andre faggrupper, så nevneren er ofte for lav og raten for høy.",
+   "aar": {
+    "2016": {
+     "med": 248.1,
+     "uten": 132.7
+    },
+    "2017": {
+     "med": 239.5,
+     "uten": 133.3
+    },
+    "2018": {
+     "med": 251.0,
+     "uten": 148.9
+    },
+    "2019": {
+     "med": 236.3,
+     "uten": 143.3
+    },
+    "2020": {
+     "med": 216.2,
+     "uten": 125.5
+    },
+    "2021": {
+     "med": 225.1,
+     "uten": 130.6
+    },
+    "2022": {
+     "med": 235.2,
+     "uten": 135.4
+    },
+    "2023": {
+     "med": 248.9,
+     "uten": 141.3
+    },
+    "2024": {
+     "med": 233.5,
+     "uten": 121.4
+    },
+    "2025": {
+     "med": 238.7,
+     "uten": 136.4
+    }
+   }
+  },
+  "se_uu": {
+   "kvalitet": "svak",
+   "nivaa": "Uppsala universitet, UKÄ-faggruppen Ekonomi och näringsliv",
+   "kilde": "UKÄ (statistik-api.uka.se, tabell 56 forskande och undervisande personal og 139 doktorander, heltidsekvivalenter)",
+   "forklaring": "Faggruppen for hele lärosätet, ikke skolen. Statistikk, informatikk og økonomisk historie er kodet i andre faggrupper, så nevneren er ofte for lav og raten for høy.",
+   "aar": {
+    "2016": {
+     "med": 191.6,
+     "uten": 93.7
+    },
+    "2017": {
+     "med": 193.2,
+     "uten": 103.8
+    },
+    "2018": {
+     "med": 198.3,
+     "uten": 109.3
+    },
+    "2019": {
+     "med": 206.9,
+     "uten": 122.7
+    },
+    "2020": {
+     "med": 196.2,
+     "uten": 109.3
+    },
+    "2021": {
+     "med": 180.8,
+     "uten": 103.1
+    },
+    "2022": {
+     "med": 188.1,
+     "uten": 104.0
+    },
+    "2023": {
+     "med": 184.1,
+     "uten": 100.8
+    },
+    "2024": {
+     "med": 178.5,
+     "uten": 97.3
+    },
+    "2025": {
+     "med": 166.5,
+     "uten": 95.3
+    }
+   }
+  },
+  "se_liu": {
+   "kvalitet": "svak",
+   "nivaa": "Linköpings universitet, UKÄ-faggruppen Ekonomi och näringsliv",
+   "kilde": "UKÄ (statistik-api.uka.se, tabell 56 forskande och undervisande personal og 139 doktorander, heltidsekvivalenter)",
+   "forklaring": "Faggruppen for hele lärosätet, ikke skolen. Statistikk, informatikk og økonomisk historie er kodet i andre faggrupper, så nevneren er ofte for lav og raten for høy.",
+   "aar": {
+    "2016": {
+     "med": 58.2,
+     "uten": 45.0
+    },
+    "2017": {
+     "med": 55.1,
+     "uten": 44.5
+    },
+    "2018": {
+     "med": 52.5,
+     "uten": 42.4
+    },
+    "2019": {
+     "med": 56.2,
+     "uten": 44.8
+    },
+    "2020": {
+     "med": 56.2,
+     "uten": 49.0
+    },
+    "2021": {
+     "med": 58.0,
+     "uten": 50.1
+    },
+    "2022": {
+     "med": 60.1,
+     "uten": 51.6
+    },
+    "2023": {
+     "med": 67.6,
+     "uten": 58.5
+    },
+    "2024": {
+     "med": 68.1,
+     "uten": 57.8
+    },
+    "2025": {
+     "med": 63.0,
+     "uten": 53.6
+    }
+   }
+  },
+  "fi_aalto": {
+   "kvalitet": "middels",
+   "nivaa": "Aalto-yliopisto, fagfelt 511 + 512",
+   "kilde": "Vipunen (opetus- ja tutkimushenkilökunta, henkilötyövuodet)",
+   "forklaring": "Fagfeltet for hele universitetet, samme avgrensning som artiklene (fagfelt, ikke organisasjonsenhet). Med = karrieretrinn I–IV, uten = II–IV.",
+   "aar": {
+    "2016": {
+     "med": 341.8,
+     "uten": 204.7
+    },
+    "2017": {
+     "med": 309.7,
+     "uten": 201.6
+    },
+    "2018": {
+     "med": 311.0,
+     "uten": 201.6
+    },
+    "2019": {
+     "med": 300.0,
+     "uten": 200.5
+    },
+    "2020": {
+     "med": 298.1,
+     "uten": 204.7
+    },
+    "2021": {
+     "med": 300.2,
+     "uten": 204.1
+    },
+    "2022": {
+     "med": 293.9,
+     "uten": 195.4
+    },
+    "2023": {
+     "med": 279.9,
+     "uten": 183.3
+    },
+    "2024": {
+     "med": 277.1,
+     "uten": 190.7
+    },
+    "2025": {
+     "med": 313.8,
+     "uten": 213.8
+    }
+   }
+  },
+  "fi_hanken": {
+   "kvalitet": "god",
+   "nivaa": "Hele Hanken",
+   "kilde": "Vipunen (opetus- ja tutkimushenkilökunta, henkilötyövuodet)",
+   "forklaring": "Hanken er hele institusjonen (fagfelt 511 + 512 i Vipunen). Med = karrieretrinn I–IV, uten = II–IV.",
+   "aar": {
+    "2016": {
+     "med": 113.3,
+     "uten": 108.0
+    },
+    "2017": {
+     "med": 113.8,
+     "uten": 90.3
+    },
+    "2018": {
+     "med": 136.9,
+     "uten": 107.9
+    },
+    "2019": {
+     "med": 143.7,
+     "uten": 108.4
+    },
+    "2020": {
+     "med": 151.9,
+     "uten": 114.2
+    },
+    "2021": {
+     "med": 143.6,
+     "uten": 117.4
+    },
+    "2022": {
+     "med": 148.1,
+     "uten": 123.0
+    },
+    "2023": {
+     "med": 154.6,
+     "uten": 124.2
+    },
+    "2024": {
+     "med": 158.5,
+     "uten": 118.9
+    },
+    "2025": {
+     "med": 169.3,
+     "uten": 121.8
+    }
+   },
+   "eter": {
+    "2018": 145.0,
+    "2019": 155.0,
+    "2020": 160.0,
+    "2021": 155.0,
+    "2022": 161.47,
+    "2023": 165.56
+   }
+  },
+  "fi_vaasa": {
+   "kvalitet": "middels",
+   "nivaa": "Vaasan yliopisto, fagfelt 511 + 512",
+   "kilde": "Vipunen (opetus- ja tutkimushenkilökunta, henkilötyövuodet)",
+   "forklaring": "Fagfeltet for hele universitetet, samme avgrensning som artiklene (fagfelt, ikke organisasjonsenhet). Med = karrieretrinn I–IV, uten = II–IV. 2022: rapporteringsbrudd i Vipunen.",
+   "aar": {
+    "2016": {
+     "med": 125.1,
+     "uten": 77.8
+    },
+    "2017": {
+     "med": 116.3,
+     "uten": 76.1
+    },
+    "2018": {
+     "med": 112.7,
+     "uten": 74.6
+    },
+    "2019": {
+     "med": 121.7,
+     "uten": 83.9
+    },
+    "2020": {
+     "med": 136.0,
+     "uten": 90.7
+    },
+    "2021": {
+     "med": 143.3,
+     "uten": 103.9
+    },
+    "2022": {
+     "med": null,
+     "uten": null
+    },
+    "2023": {
+     "med": 158.4,
+     "uten": 109.2
+    },
+    "2024": {
+     "med": 172.1,
+     "uten": 113.4
+    },
+    "2025": {
+     "med": 169.1,
+     "uten": 108.2
+    }
+   }
+  },
+  "fi_uef": {
+   "kvalitet": "middels",
+   "nivaa": "Itä-Suomen yliopisto, fagfelt 511 + 512",
+   "kilde": "Vipunen (opetus- ja tutkimushenkilökunta, henkilötyövuodet)",
+   "forklaring": "Fagfeltet for hele universitetet, samme avgrensning som artiklene (fagfelt, ikke organisasjonsenhet). Med = karrieretrinn I–IV, uten = II–IV.",
+   "aar": {
+    "2016": {
+     "med": 48.7,
+     "uten": 37.6
+    },
+    "2017": {
+     "med": 44.8,
+     "uten": 37.1
+    },
+    "2018": {
+     "med": 44.2,
+     "uten": 36.3
+    },
+    "2019": {
+     "med": 53.5,
+     "uten": 43.9
+    },
+    "2020": {
+     "med": 58.6,
+     "uten": 44.9
+    },
+    "2021": {
+     "med": 63.2,
+     "uten": 50.7
+    },
+    "2022": {
+     "med": 69.2,
+     "uten": 55.8
+    },
+    "2023": {
+     "med": 76.5,
+     "uten": 58.0
+    },
+    "2024": {
+     "med": 81.0,
+     "uten": 57.0
+    },
+    "2025": {
+     "med": 83.3,
+     "uten": 59.9
+    }
+   }
+  },
+  "fi_helsinki": {
+   "kvalitet": "middels",
+   "nivaa": "Helsingin yliopisto, fagfelt 511",
+   "kilde": "Vipunen (opetus- ja tutkimushenkilökunta, henkilötyövuodet)",
+   "forklaring": "Fagfeltet for hele universitetet, samme avgrensning som artiklene (fagfelt, ikke organisasjonsenhet). Med = karrieretrinn I–IV, uten = II–IV.",
+   "aar": {
+    "2016": {
+     "med": 39.4,
+     "uten": 25.0
+    },
+    "2017": {
+     "med": 57.2,
+     "uten": 40.5
+    },
+    "2018": {
+     "med": 42.2,
+     "uten": 27.4
+    },
+    "2019": {
+     "med": 43.9,
+     "uten": 26.4
+    },
+    "2020": {
+     "med": 46.2,
+     "uten": 30.5
+    },
+    "2021": {
+     "med": 55.9,
+     "uten": 35.9
+    },
+    "2022": {
+     "med": 55.8,
+     "uten": 34.9
+    },
+    "2023": {
+     "med": 53.9,
+     "uten": 35.8
+    },
+    "2024": {
+     "med": 57.5,
+     "uten": 35.9
+    },
+    "2025": {
+     "med": 66.6,
+     "uten": 39.5
+    }
+   }
+  },
+  "fi_lut": {
+   "kvalitet": "middels",
+   "nivaa": "Lappeenrannan-Lahden teknillinen yliopisto LUT, fagfelt 511 + 512",
+   "kilde": "Vipunen (opetus- ja tutkimushenkilökunta, henkilötyövuodet)",
+   "forklaring": "Fagfeltet for hele universitetet, samme avgrensning som artiklene (fagfelt, ikke organisasjonsenhet). Med = karrieretrinn I–IV, uten = II–IV.",
+   "aar": {
+    "2016": {
+     "med": 71.7,
+     "uten": 50.0
+    },
+    "2017": {
+     "med": 73.0,
+     "uten": 52.2
+    },
+    "2018": {
+     "med": 85.4,
+     "uten": 65.0
+    },
+    "2019": {
+     "med": 86.2,
+     "uten": 64.4
+    },
+    "2020": {
+     "med": 87.6,
+     "uten": 63.8
+    },
+    "2021": {
+     "med": 96.3,
+     "uten": 68.5
+    },
+    "2022": {
+     "med": 101.2,
+     "uten": 71.4
+    },
+    "2023": {
+     "med": 113.1,
+     "uten": 73.3
+    },
+    "2024": {
+     "med": 123.7,
+     "uten": 80.5
+    },
+    "2025": {
+     "med": 134.8,
+     "uten": 87.1
+    }
+   }
+  },
+  "fi_turku": {
+   "kvalitet": "middels",
+   "nivaa": "Turun yliopisto, fagfelt 511 + 512",
+   "kilde": "Vipunen (opetus- ja tutkimushenkilökunta, henkilötyövuodet)",
+   "forklaring": "Fagfeltet for hele universitetet, samme avgrensning som artiklene (fagfelt, ikke organisasjonsenhet). Med = karrieretrinn I–IV, uten = II–IV.",
+   "aar": {
+    "2016": {
+     "med": 143.2,
+     "uten": 94.4
+    },
+    "2017": {
+     "med": 139.0,
+     "uten": 91.5
+    },
+    "2018": {
+     "med": 139.9,
+     "uten": 92.6
+    },
+    "2019": {
+     "med": 130.1,
+     "uten": 92.7
+    },
+    "2020": {
+     "med": 133.0,
+     "uten": 90.3
+    },
+    "2021": {
+     "med": 128.7,
+     "uten": 96.0
+    },
+    "2022": {
+     "med": 138.0,
+     "uten": 100.7
+    },
+    "2023": {
+     "med": 142.8,
+     "uten": 109.0
+    },
+    "2024": {
+     "med": 147.6,
+     "uten": 112.2
+    },
+    "2025": {
+     "med": 143.5,
+     "uten": 105.8
+    }
+   }
+  },
+  "fi_oulu": {
+   "kvalitet": "middels",
+   "nivaa": "Oulun yliopisto, fagfelt 511 + 512",
+   "kilde": "Vipunen (opetus- ja tutkimushenkilökunta, henkilötyövuodet)",
+   "forklaring": "Fagfeltet for hele universitetet, samme avgrensning som artiklene (fagfelt, ikke organisasjonsenhet). Med = karrieretrinn I–IV, uten = II–IV.",
+   "aar": {
+    "2016": {
+     "med": 82.5,
+     "uten": 36.8
+    },
+    "2017": {
+     "med": 75.2,
+     "uten": 38.7
+    },
+    "2018": {
+     "med": 74.0,
+     "uten": 44.7
+    },
+    "2019": {
+     "med": 73.5,
+     "uten": 48.8
+    },
+    "2020": {
+     "med": 77.1,
+     "uten": 51.8
+    },
+    "2021": {
+     "med": 85.8,
+     "uten": 53.7
+    },
+    "2022": {
+     "med": 88.2,
+     "uten": 55.3
+    },
+    "2023": {
+     "med": 84.2,
+     "uten": 56.3
+    },
+    "2024": {
+     "med": 86.9,
+     "uten": 60.6
+    },
+    "2025": {
+     "med": 91.5,
+     "uten": 66.8
+    }
+   }
+  },
+  "fi_jyvaskyla": {
+   "kvalitet": "middels",
+   "nivaa": "Jyväskylän yliopisto, fagfelt 511 + 512",
+   "kilde": "Vipunen (opetus- ja tutkimushenkilökunta, henkilötyövuodet)",
+   "forklaring": "Fagfeltet for hele universitetet, samme avgrensning som artiklene (fagfelt, ikke organisasjonsenhet). Med = karrieretrinn I–IV, uten = II–IV.",
+   "aar": {
+    "2016": {
+     "med": 77.4,
+     "uten": 39.4
+    },
+    "2017": {
+     "med": 77.1,
+     "uten": 35.4
+    },
+    "2018": {
+     "med": 82.0,
+     "uten": 39.6
+    },
+    "2019": {
+     "med": 85.6,
+     "uten": 65.7
+    },
+    "2020": {
+     "med": 85.6,
+     "uten": 68.2
+    },
+    "2021": {
+     "med": 90.7,
+     "uten": 78.0
+    },
+    "2022": {
+     "med": 98.9,
+     "uten": 81.4
+    },
+    "2023": {
+     "med": 98.6,
+     "uten": 81.3
+    },
+    "2024": {
+     "med": 95.5,
+     "uten": 76.6
+    },
+    "2025": {
+     "med": 105.8,
+     "uten": 81.0
+    }
+   }
+  },
+  "fi_tampere": {
+   "kvalitet": "middels",
+   "nivaa": "Tampereen yliopisto, fagfelt 511 + 512",
+   "kilde": "Vipunen (opetus- ja tutkimushenkilökunta, henkilötyövuodet)",
+   "forklaring": "Fagfeltet for hele universitetet, samme avgrensning som artiklene (fagfelt, ikke organisasjonsenhet). Med = karrieretrinn I–IV, uten = II–IV.",
+   "aar": {
+    "2016": {
+     "med": 111.2,
+     "uten": 67.8
+    },
+    "2017": {
+     "med": 115.2,
+     "uten": 73.6
+    },
+    "2018": {
+     "med": 112.4,
+     "uten": 73.0
+    },
+    "2019": {
+     "med": 108.9,
+     "uten": 71.1
+    },
+    "2020": {
+     "med": 108.1,
+     "uten": 69.1
+    },
+    "2021": {
+     "med": 119.9,
+     "uten": 71.8
+    },
+    "2022": {
+     "med": 121.8,
+     "uten": 76.0
+    },
+    "2023": {
+     "med": 125.4,
+     "uten": 80.5
+    },
+    "2024": {
+     "med": 122.6,
+     "uten": 77.8
+    },
+    "2025": {
+     "med": 129.8,
+     "uten": 80.9
+    }
+   }
+  },
+  "fi_abo": {
+   "kvalitet": "middels",
+   "nivaa": "Åbo Akademi, fagfelt 511 + 512",
+   "kilde": "Vipunen (opetus- ja tutkimushenkilökunta, henkilötyövuodet)",
+   "forklaring": "Fagfeltet for hele universitetet, samme avgrensning som artiklene (fagfelt, ikke organisasjonsenhet). Med = karrieretrinn I–IV, uten = II–IV.",
+   "aar": {
+    "2016": {
+     "med": 30.4,
+     "uten": 25.6
+    },
+    "2017": {
+     "med": 29.5,
+     "uten": 26.0
+    },
+    "2018": {
+     "med": 31.3,
+     "uten": 28.6
+    },
+    "2019": {
+     "med": 30.1,
+     "uten": 28.8
+    },
+    "2020": {
+     "med": 29.9,
+     "uten": 28.7
+    },
+    "2021": {
+     "med": 29.6,
+     "uten": 26.8
+    },
+    "2022": {
+     "med": 33.5,
+     "uten": 29.5
+    },
+    "2023": {
+     "med": 34.2,
+     "uten": 29.5
+    },
+    "2024": {
+     "med": 38.8,
+     "uten": 30.6
+    },
+    "2025": {
+     "med": 35.1,
+     "uten": 29.4
+    }
+   }
+  }
+ }
+}

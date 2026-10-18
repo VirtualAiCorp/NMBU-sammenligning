@@ -1,0 +1,202 @@
+{
+ "merknad": "Avgrensning av de norske enhetene i OpenAlex med samme metode som for Danmark, Sverige og Finland (enheter-norden.json; scripts/rangering/hent_openalex.py norden leser begge filene). Id-ene er de samme som i data/rangering/skoler.json (ntnu_ok er ikke med). Brukes til artikkeltelling på tvers av land og til kontroll mot NVA (scripts/rangering/openalex_mot_nva.py); siteringsfanen bruker fortsatt NVA for Norge. metode og felt som i enheter-norden.json; «uninavn» = universitetets egne navn (brukes til regelen for tilknytninger med bare universitetsnavnet). openalex kan ha flere institusjoner skilt med | (forgjengere i 2016).",
+ "enheter": [
+  {
+   "id": "nhh",
+   "metode": "institusjon",
+   "openalex": "I931913249",
+   "ror": "04v53s997",
+   "felt": null,
+   "usikkerhet": "Lav. Mot NVA 2021–2025 (openalex_mot_nva.py, med bare-regelen): recall 88,8 %, presisjon 81,0 %, OpenAlex/NVA 1,00."
+  },
+  {
+   "id": "bi",
+   "metode": "institusjon",
+   "openalex": "I181046868",
+   "ror": "03ez40v33",
+   "felt": null,
+   "usikkerhet": "Lav. Mot NVA 2021–2025 (openalex_mot_nva.py, med bare-regelen): recall 88,2 %, presisjon 88,7 %, OpenAlex/NVA 0,88."
+  },
+  {
+   "id": "nmbu",
+   "metode": "tekst",
+   "openalex": "I54108979",
+   "ror": "04a1mvv97",
+   "felt": null,
+   "monster": "School of Economics and Business|Handelsh(ø|o)(g|y)skolen|School of Business|Business School|Department of Business|Department of Economics and Resource Management|Institutt for (ø|o)konomi og ressursforvaltning|Skatteforsk|Centre for Applied Philosophy of Science",
+   "foreldre": "Life Science|NMBU|milj(ø|o)- og biovitenskapelige|\\b(Å|Aa)s\\b",
+   "uninavn": "(The )?Norwegian University of Life Sciences?|Norges milj(ø|o)- og biovitenskapelige universitet|\\bNMBU\\b",
+   "usikkerhet": "Middels. Mot NVA 2021–2025 (openalex_mot_nva.py, med bare-regelen): recall 77,0 %, presisjon 90,3 %, OpenAlex/NVA 0,80. Mange skriver bare «Norwegian University of Life Sciences»; bare-regelen gir +4 poeng recall."
+  },
+  {
+   "id": "uis",
+   "metode": "tekst",
+   "openalex": "I92008406",
+   "ror": "02qte9q33",
+   "felt": null,
+   "monster": "Business School|School of Business|Handelsh(ø|o)gskolen|Department of Economics\\b|Department of Business Administration|Department of Innovation, (Management|Leadership),? and Marketing|Department of Innovation, Marketing and Management|Department of Accounting|Centre for Innovation Research|Institutt for (ø|o)konomi og finans|Institutt for innovasjon, ledelse og marknadsf(ø|o)ring",
+   "unntak": "Hotel Management|Hotellh(ø|o)gskole",
+   "foreldre": "Stavanger|\\bUiS\\b",
+   "uninavn": "(The )?University of Stavanger|Universitetet i Stavanger|\\bUiS\\b",
+   "usikkerhet": "Middels. Mot NVA 2021–2025 (openalex_mot_nva.py, med bare-regelen): recall 73,9 %, presisjon 92,9 %, OpenAlex/NVA 0,70. Uten Norsk hotellhøgskole (som NVA-enheten)."
+  },
+  {
+   "id": "uia",
+   "metode": "tekst",
+   "openalex": "I200650556",
+   "ror": "03x297z98",
+   "felt": null,
+   "monster": "School of Business ?(and|&|&amp;) ?Law|Business School|Handelsh(ø|o)yskolen|Department of Business and Law|Department of Management|Department of Strategy and Management|Department of Economics and Finance|Department of Economics\\b|Department of Working Life and Innovation|Department of Law|Social Enterprises and Microfinance|Crowdfunding Research|Institutt for (ø|o)konomi og finans|Institutt for strategi og ledelse|Institutt for arbeidsliv og innovasjon|Institutt for rettsvitenskap",
+   "foreldre": "Agder|\\bUiA\\b",
+   "uninavn": "(The )?University of Agder|Universitetet i Agder|Univ\\. of Agder|Agder University College|H(ø|o)gskolen i Agder|\\bUiA\\b",
+   "usikkerhet": "Lav. Mot NVA 2021–2025 (openalex_mot_nva.py, med bare-regelen): recall 85,1 %, presisjon 89,4 %, OpenAlex/NVA 0,87."
+  },
+  {
+   "id": "nord",
+   "metode": "tekst",
+   "openalex": "I2802079931",
+   "ror": "030mwrt98",
+   "felt": null,
+   "monster": "Business School|Handelsh(ø|o)gskolen|\\bHHN\\b|Graduate School of Business|Bod(ø|o) Graduate School|Accounting and Economic Analys|Economic Analysis and Accounting|High North Logistics|High North Center",
+   "foreldre": "Nord Univ|Nord universitet|Bod(ø|o)",
+   "uninavn": "Nord University|Nord universitet",
+   "usikkerhet": "Middels. Mot NVA 2021–2025 (openalex_mot_nva.py, med bare-regelen): recall 75,2 %, presisjon 90,3 %, OpenAlex/NVA 0,77."
+  },
+  {
+   "id": "ntnu",
+   "metode": "tekst",
+   "openalex": "I204778367",
+   "ror": "05xg72x27",
+   "felt": null,
+   "monster": "NTNU Business School|Business School|Handelsh(ø|o)yskolen|Handelsh(ø|o)gskolen i Trondheim|Department of Economics\\b|Institutt for samfunns(ø|o)konomi|Industrial (Economics )?(and|&) Technology|Department of Industrial Economics|Industriell (ø|o)konomi|\\bI(Ø|O)T\\b|Faculty of Economics and Management|Fakultet for (ø|o)konomi",
+   "unntak": "International Business|Internasjonal business|(Å|A)lesund",
+   "foreldre": "NTNU|Norwegian University of Science|Trondheim|Norges teknisk",
+   "uninavn": "(The )?Norwegian University of Science and Technology|Norges teknisk-naturvitenskapelige universitet|\\bNTNU\\b",
+   "usikkerhet": "Middels. Mot NVA 2021–2025 (openalex_mot_nva.py, med bare-regelen): recall 71,1 %, presisjon 92,8 %, OpenAlex/NVA 0,72. Uten Ålesund (unntak)."
+  },
+  {
+   "id": "ntnu_hh",
+   "metode": "tekst",
+   "openalex": "I204778367",
+   "ror": "05xg72x27",
+   "felt": null,
+   "monster": "NTNU Business School|Business School|Handelsh(ø|o)yskolen|Handelsh(ø|o)gskolen i Trondheim",
+   "foreldre": "NTNU|Norwegian University of Science|Trondheim|Norges teknisk",
+   "uninavn": "(The )?Norwegian University of Science and Technology|Norges teknisk-naturvitenskapelige universitet|\\bNTNU\\b",
+   "usikkerhet": "Middels. Mot NVA 2021–2025 (openalex_mot_nva.py, med bare-regelen): recall 69,8 %, presisjon 85,5 %, OpenAlex/NVA 0,77. Bare-regelen brukes ikke (instituttet deler fagfeltene med samfunnsøkonomi og IØT)."
+  },
+  {
+   "id": "uit",
+   "metode": "tekst",
+   "openalex": "I78037679",
+   "ror": "00wge5k78",
+   "felt": null,
+   "monster": "School of Business (and|&|&amp;) Economic|Business School|Handelsh(ø|o)gskolen|Department of Business and Economics|Tourism and Northern Studies|reiseliv og nordlige studier",
+   "foreldre": "UiT|Arctic University|Troms(ø|o)|Harstad|Narvik|Alta|arktiske",
+   "uninavn": "UiT\\W*(The|the)?\\W*Arctic University of Norway|UiT Norges arktiske universitet|(The )?Arctic University of Norway|University of Troms(ø|o)|\\bUiT\\b",
+   "usikkerhet": "Middels. Mot NVA 2021–2025 (openalex_mot_nva.py, med bare-regelen): recall 66,6 %, presisjon 87,7 %, OpenAlex/NVA 0,69."
+  },
+  {
+   "id": "usn",
+   "metode": "tekst",
+   "openalex": "I2801380234",
+   "ror": "05ecg5h20",
+   "felt": null,
+   "monster": "School of Business|Business School|Handelsh(ø|o)yskolen|Department of Business|Department of Economics|Business, Marketing and Law|Business, History and Social Sciences?|Business and IT|Economics and IT|Institutt for (ø|o)konomi",
+   "foreldre": "South-?Eastern Norway|S(ø|o)r(ø|o)st-Norge|\\bUSN\\b|Southeast Norway",
+   "uninavn": "(The )?University of South-?Eastern Norway|Universitetet i S(ø|o)r(ø|o)st-Norge|University College of Southeast Norway|\\bUSN\\b",
+   "usikkerhet": "Middels. Mot NVA 2021–2025 (openalex_mot_nva.py, med bare-regelen): recall 67,0 %, presisjon 85,9 %, OpenAlex/NVA 0,68."
+  },
+  {
+   "id": "inn",
+   "metode": "tekst",
+   "openalex": "I4210116649|I4405282651|I4405283775",
+   "ror": "02dx4dc92",
+   "felt": null,
+   "monster": "Inland School of Business|School of Business and Social Sciences?|Handelsh(ø|o)gskolen Innlandet|Department of Economics|Institutt for (ø|o)konomifag|Department of Organi[sz]ation|Organi[sz]ation, Management|organisasjon, ledelse|Department of Business|Business Administration|Faculty of Economics and Organi[sz]ation|\\bCREDS\\b|Research on Digitali[sz]ation and Sustainability",
+   "foreldre": "Inland|Innlandet|Lillehammer|Hedmark|Elverum|Hamar|Rena\\b",
+   "uninavn": "(Inland Norway University of Applied Sciences?|University of (the )?Inland( Norway)?|Universitetet i Innlandet|H(ø|o)gskolen i Innlandet|\\bINN University|\\bINN\\b|Lillehammer University College|H(ø|o)gskolen i Lillehammer|Hedmark University College|H(ø|o)gskolen i Hedmark)",
+   "usikkerhet": "Høy. Mot NVA 2021–2025 (openalex_mot_nva.py, med bare-regelen): recall 63,7 %, presisjon 85,1 %, OpenAlex/NVA 0,67. 2016–2020 presisjon bare 57 % (fakultetsnavnet tar med psykologi og jus)."
+  },
+  {
+   "id": "oslomet",
+   "metode": "tekst",
+   "openalex": "I184531372",
+   "ror": "04q12yn84",
+   "felt": null,
+   "monster": "Oslo Business School|School of Business|Business School|Handelsh(ø|o)yskolen|Department of Finance|Finans og regnskap|Offentlig administrasjon og styring|Organisasjon og ledelse|Samfunns(ø|o)konomi og metode|Strategi, innovasjon og markedsf(ø|o)ring",
+   "foreldre": "OsloMet|Oslo Metropolitan|Oslo and Akershus|storbyuniversitet|H(ø|i)gskolen i Oslo",
+   "uninavn": "OsloMet\\W*Oslo Metropolitan University|Oslo Metropolitan University|OsloMet\\W*storbyuniversitetet|\\bOsloMet\\b|Oslo and Akershus University College( of Applied Sciences)?",
+   "usikkerhet": "Høy. Mot NVA 2021–2025 (openalex_mot_nva.py, med bare-regelen): recall 57,2 %, presisjon 86,8 %, OpenAlex/NVA 0,55. Bare-regelen brukes ikke (NOVA, AFI, SIFO deler fagfeltene)."
+  },
+  {
+   "id": "himolde",
+   "metode": "tekst",
+   "openalex": "I182204967",
+   "ror": "00kxjcd28",
+   "felt": null,
+   "monster": "Logist|Logest|Business Administration|Social Sciences?|(ø|o)konomi og samfunnsvitenskap|Economics|(ø|o)konomi",
+   "unntak": "Health|Helse|Social Care",
+   "foreldre": "Molde",
+   "uninavn": "Molde University College(\\W*Specialized University in Logistics)?|H(ø|o)gskolen i Molde|Specialized University in Logistics",
+   "usikkerhet": "Lav. Mot NVA 2021–2025 (openalex_mot_nva.py, med bare-regelen): recall 81,1 %, presisjon 93,2 %, OpenAlex/NVA 0,82. Tekstenhet (logistikk + økonomi/samfunnsvitenskap, unntak helse); som institusjon 87 % recall, 66 % presisjon."
+  },
+  {
+   "id": "hvl",
+   "metode": "tekst",
+   "openalex": "I179863766|I4405264474|I4405264481|I4405263886",
+   "ror": "05phns765",
+   "felt": null,
+   "monster": "HVL Business School|Business School|Handelsh(ø|o)gskulen|Department of Business (and )?Administration|Institutt for (ø|o)konomi og administrasjon|Mohn Cent(er|re)|Faculty of Business Administration and Social Sciences",
+   "foreldre": "Western Norway|H(ø|o)gskulen p(å|a) Vestlandet|\\bHVL\\b|Bergen University College|Stord|Sogn og Fjordane",
+   "uninavn": "Western Norway University of Applied Sciences?|H(ø|o)gskulen p(å|a) Vestlandet|\\bHVL\\b|Bergen University College|H(ø|o)gskolen i Bergen|Stord/Haugesund University College|Sogn og Fjordane University College",
+   "usikkerhet": "Høy. Mot NVA 2021–2025 (openalex_mot_nva.py, med bare-regelen): recall 61,9 %, presisjon 85,4 %, OpenAlex/NVA 0,66. Mohn-senteret er tatt med (står under Handelshøgskulen i NVA)."
+  },
+  {
+   "id": "kristiania",
+   "metode": "tekst",
+   "openalex": "I2800207870",
+   "ror": "03gss5916",
+   "felt": null,
+   "monster": "School of Economics, Innovation,? and Technology|Faculty of Management and Economics|Fakultet for ledelse og (ø|o)konomi|School of Communication, Leadership,? (and|&|&amp;) Marketing|Department of Leadership|Department of Marketing|Marketing Department|Institute of Marketing|Department of Economics|Department of Communication|Institute for Communication|Department of Technology|Cybersecurity Department|Mobile Technology Lab|Leadership and Innovation|Marketing and Economics",
+   "foreldre": "Kristiania",
+   "uninavn": "(Kristiania University College|Kristiania University of Applied Sciences|H(ø|o)yskolen Kristiania|\\bKristiania\\b)",
+   "usikkerhet": "Høy. Mot NVA 2021–2025 (openalex_mot_nva.py, med bare-regelen): recall 51,8 %, presisjon 89,4 %, OpenAlex/NVA 0,51. Lav recall: mange skriver bare «Kristiania University College»; mange konferanseartikler."
+  },
+  {
+   "id": "hiof",
+   "metode": "tekst",
+   "openalex": "I19923696",
+   "ror": "04gf7fp41",
+   "felt": null,
+   "monster": "Economics, Innovation,? and Society|(ø|o)konomi, innovasjon og samfunn|Faculty of Business, Languages?,? and Social Sciences|Faculty for Business, Languages|Faculty of Economics, Social Sciences and Languages|Economy and Business Administration",
+   "foreldre": "(Ø|O)stfold",
+   "uninavn": "(Ø|O)stfold University College|(Ø|O)stfold University of Applied Sciences|H(ø|o)gskolen i (Ø|O)stfold",
+   "usikkerhet": "Høy. Mot NVA 2021–2025 (openalex_mot_nva.py, med bare-regelen): recall 45,2 %, presisjon 73,7 %, OpenAlex/NVA 0,53. Svært liten enhet; tallene hopper."
+  },
+  {
+   "id": "uib_okon",
+   "metode": "tekst",
+   "openalex": "I4432739",
+   "ror": "03zga2b32",
+   "felt": null,
+   "monster": "Department of Economics|Institute of Economics|^Economics,? University of Bergen|Professor of Economics|Institutt for (ø|o)konomi",
+   "unntak": "Norwegian School of Economics|\\bNHH\\b",
+   "foreldre": "University of Bergen|Universitetet i Bergen|\\bUiB\\b",
+   "uninavn": "(The )?University of Bergen|Universitetet i Bergen|\\bUiB\\b",
+   "usikkerhet": "Middels. Mot NVA 2021–2025 (openalex_mot_nva.py, med bare-regelen): recall 66,3 %, presisjon 91,5 %, OpenAlex/NVA 0,61."
+  },
+  {
+   "id": "uio_okon",
+   "metode": "tekst",
+   "openalex": "I184942183",
+   "ror": "01xtthb56",
+   "felt": null,
+   "monster": "Department of Economics|Institute of Economics|^Economics,? University of Oslo|Professor of Economics|(Ø|O)konomisk institutt|\\bESOP\\b|Centre for the Study of Equality, Social Organi[sz]ation",
+   "unntak": "BI Norwegian Business School|Norwegian School of Economics",
+   "foreldre": "University of Oslo|Universitetet i Oslo|\\bUiO\\b|Blindern",
+   "uninavn": "(The )?University of Oslo|Universitetet i Oslo|\\bUiO\\b",
+   "usikkerhet": "Høy. Mot NVA 2021–2025 (openalex_mot_nva.py, med bare-regelen): recall 48,1 %, presisjon 86,9 %, OpenAlex/NVA 0,46. Lav recall; bare-regelen brukes ikke."
+  }
+ ]
+}

@@ -164,7 +164,7 @@ function useBredde<T extends HTMLElement>(start = 720) {
   return [ref, w] as const;
 }
 
-function Prikker({ verdier, sel }: { verdier: { id: string; v: number | null }[]; sel: string }) {
+export function Prikker({ verdier, sel }: { verdier: { id: string; v: number | null }[]; sel: string }) {
   const vs = verdier.filter((x): x is { id: string; v: number } => x.v != null && Number.isFinite(x.v));
   if (!vs.length) return null;
   const lo = Math.min(...vs.map((x) => x.v)), hi = Math.max(...vs.map((x) => x.v)), sp = hi - lo || 1;
@@ -172,7 +172,7 @@ function Prikker({ verdier, sel }: { verdier: { id: string; v: number | null }[]
 }
 
 /** Linjediagram (samme utseende som AJG-grafen), med skravert felt for foreløpige år og en referanselinje (verdenssnittet). */
-function SitLinjer({ aar, serier, median, label, forelopigFra, refLinje, d }: {
+export function SitLinjer({ aar, serier, median, label, forelopigFra, refLinje, d }: {
   aar: string[]; serier: { id: string; lab: string; v: (number | null)[]; k: number; meg: boolean }[]; median: (number | null)[]; label: string;
   forelopigFra: number; refLinje: { v: number; lab: string } | null; d: number;
 }) {

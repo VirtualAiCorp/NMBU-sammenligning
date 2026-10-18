@@ -20,6 +20,8 @@ Kilder:
   data/rangering/openalex/              Siteringsmål fra OpenAlex (CC0): FWCI, topp 10 %/1 % og siteringer per enhet og år
                                         (scripts/rangering/hent_nva_doi.py, hent_openalex.py, sitering.py; cache gitignored).
                                         Bare aggregater ut. Uavhengig av tidsskriftlistene.
+  data/rangering/norden/nevner/          Nevnere for nordiske enheter (scripts/rangering/lag_nevner_norden.py) til fanen
+                                        «Skandinavia» (scripts/rangering/skandinavia.py: OpenAlex + AJG for alle land).
   data/rangering/ajg-nhh-rapport.json   ABS/AJG 4*/4/3 per skole 2020–2024 fra NHH Research Report 2024
                                         (scripts/rangering/nhh_abs_tabeller.py).
   data/rangering/tidsskrift/            ABDC (A*/A/B/C), FT50, UTD24, og AJG 2024 (1–4*) hvis ajg2024.csv finnes
@@ -64,6 +66,9 @@ blc = importlib.util.module_from_spec(spec); spec.loader.exec_module(blc)
 # Siteringsmål fra OpenAlex (scripts/rangering/sitering.py): bare aggregater per enhet og år
 spec = importlib.util.spec_from_file_location("sitering", ROOT / "scripts" / "rangering" / "sitering.py")
 sitering_mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(sitering_mod)
+# Skandinavia-sammenligningen (scripts/rangering/skandinavia.py): OpenAlex + AJG for alle land, nordiske nevnere
+spec = importlib.util.spec_from_file_location("skandinavia", ROOT / "scripts" / "rangering" / "skandinavia.py")
+skandinavia_mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(skandinavia_mod)
 FORSTE = re.compile(r"professor|førsteamanuensis|dosent|førstelektor", re.I)
 
 
@@ -739,7 +744,9 @@ def main():
             # Foreløpige tall for inneværende år (fanen «2026 foreløpig»), med forrige år på samme registreringsdato
             "forelopig": lag_forelopig(skoler, lister),
             # Siteringsmål fra OpenAlex (fanen «Siteringer» og kartet): bare aggregater per enhet og år
-            "sitering": sitering}
+            "sitering": sitering,
+            # Skandinavia-sammenligningen (fanen «Skandinavia»): OpenAlex + AJG per enhet og år i alle land, bare aggregater
+            "skandinavia": skandinavia_mod.lag_skandinavia(ut_skoler, lister.get("ajg"), (Y0, Y1))}
     if a.klartekst:
         KLAR.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
         print(f"Skrev {KLAR.relative_to(ROOT)} (klartekst, gitignored).")

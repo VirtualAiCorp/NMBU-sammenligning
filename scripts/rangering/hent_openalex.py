@@ -6,7 +6,7 @@ uten nøkkel (oktober 2026). Et listekall koster 1 kreditt, et søk (`.search`) 
 /sources/issn:…) 0. Skriptet leser `x-ratelimit-remaining` og stopper før reserven (--reserve) er brukt opp, så det kan
 kjøres videre neste døgn (cachen husker det som er hentet). Bare feltene vi trenger hentes (`select=`). Forfatternavn
 lagres aldri: for enheter som avgrenses på tilknytningstekst hentes `authorships`, men bare et ja/nei per verk
-(«enheten står i tilknytningen») lagres.
+(«enheten står i tilknytningen») og to antall (`bare`, `annen`) lagres, aldri tilknytningsteksten.
 
 Tre deler:
   norge    NVA-artiklene med DOI (data/rangering/openalex/nva-doi/, scripts/rangering/hent_nva_doi.py) slås opp i
@@ -16,16 +16,23 @@ Tre deler:
            normalisert tittel er lik, året er ±1 og treffet er entydig (gjøres i sitering.py). Bare tidsskrift med
            høyst --maks-verk verk i perioden, de med flest artikler uten DOI først, til --maks-kall er brukt.
            Cache: openalex/tittel/<kilde-id>.json.
-  norden   Enhetene i data/rangering/openalex/enheter-norden.json (Danmark, Sverige, Finland), per år.
-           Cache: openalex/norden/<enhet>/<år>.json. Hentes nyeste år først.
+  norden   Enhetene i data/rangering/openalex/enheter-norden.json (Danmark, Sverige, Finland) og enheter-norge.json (Norge,
+           samme metode, til artikkeltelling på tvers av land og kontroll mot NVA), per år. --land no,dk,se,fi velger land.
+           Cache: openalex/norden/<enhet>/<år>.json. Hentes nyeste år først. Enheter med samme filter (NTNU og NTNU HH)
+           hentes én gang. Tekstenheter: `enhet` = mønstertreff, `bare`/`annen` = antall forfattere ved
+           foreldreinstitusjonen med bare universitetsnavnet / med en annen underenhet (bare tall, ingen tekst); hvilke verk
+           som hører til enheten, avgjøres ved lesing med i_enheten() (mønstertreff + «bare-regelen», se BARE_FELT).
 
 Per verk lagres: OpenAlex-id (bare i cachen), år, type, fwci, citation_normalized_percentile (verdi, topp 10 %, topp 1 %),
-cited_by_count og underfelt (primary_topic). Ut av cachen går bare aggregater per enhet og år (sitering.py).
+cited_by_count og underfelt (primary_topic). I `norden` også DOI (`doi`), tidsskrift som OpenAlex-kilde (`kilde`, «S…»,
+fra primary_location.source) og `issn_l`, så artiklene kan settes på AJG-nivå per tidsskrift. Eldre cachefiler uten
+`kilde`/`doi`/`bare`/`annen` kan fortsatt leses (sitering.py og i_enheten() bruker bare feltene som finnes). Ut av cachen
+går bare aggregater per enhet og år (sitering.py, openalex_mot_nva.py).
 
 Bruk:
   python3 scripts/rangering/hent_openalex.py norge
   python3 scripts/rangering/hent_openalex.py tittel [--maks-kall 60]
-  python3 scripts/rangering/hent_openalex.py norden [--enhet se_lund] [--fra 2016] [--til 2025]
+  python3 scripts/rangering/hent_openalex.py norden [--land no] [--enhet se_lund] [--fra 2016] [--til 2025] [--refresh]
   python3 scripts/rangering/hent_openalex.py kreditt         # viser gjenstående kreditter (koster 1)
 """
 import argparse
@@ -273,53 +280,159 @@ def kjor_tittel(k, a):
 
 
 # ── Norden: per enhet og år ─────────────────────────────────────────────────
-def enhet_treff(w, e):
-    """Står enheten i tilknytningsteksten til en forfatter ved foreldreinstitusjonen? (Navn leses ikke og lagres ikke.)"""
+# Organisasjonsord: står ett av disse igjen i en tilknytningstekst når universitetsnavnet er tatt bort, nevner teksten en
+# underenhet (fakultet, institutt, senter, sykehus osv.). Står ingen igjen, er teksten «bare universitetsnavnet» (`bare`).
+ORGORD = re.compile(r"\b(facult|fakultet|department|dept\b|depart|institut|school|sch\b|centre|center|cent\b|senter|division|"
+                    r"unit\b|section|sektion|seksjon|avdeling|avdelning|afdeling|centrum|laborator|lab\b|labs\b|group|gruppe|program|college|hospital|sykehus|"
+                    r"klinik|clinic|museum|librar|bibliotek|office|research|forsk|studies|academy|akademi|handels|business|"
+                    r"economics|management|science|engineering|medicin|nursing|health|helse|chair|graduate|ministry|"
+                    r"directorate|agency|association|foundation|stiftelse|council|board)",
+                    re.I)
+# Regelen for tilknytninger med bare universitetsnavnet («bare-regelen», samme for alle land; se README og
+# data/rangering/inspirasjon/openalex-norden-artikler.md). Et verk telles med i en tekstenhet uten mønstertreff hvis
+#   1. minst én forfatter ved foreldreinstitusjonen bare har universitetsnavnet (`bare` > 0),
+#   2. ingen forfatter der nevner en annen underenhet (`annen` = 0),
+#   3. verket har primærfagfelt 14 (Business, Management and Accounting) eller 20 (Economics, Econometrics and Finance), og
+#   4. enheten eier fagfeltene ved foreldreinstitusjonen: blant foreldreinstitusjonens verk i felt 14/20 der en underenhet
+#      kan leses (mønstertreff eller annen underenhet), 2016–2025, er minst BARE_TERSKEL enhetens (bare_andel()).
+# Punkt 4 gjør at regelen ikke brukes der flere fagmiljøer deler feltene (NTNU HH ved siden av samfunnsøkonomi og IØT,
+# OsloMet med NOVA/AFI/SIFO osv.). `enhet` i cachen er alltid bare mønstertreffet; regelen brukes ved lesing (i_enheten()).
+BARE_FELT = (14, 20)
+BARE_TERSKEL = 0.60
+BARE_REGEL = True
+_BARE_ANDEL = {}
+
+
+def foreldre_ider(e):
+    return [x for x in e["openalex"].split("|") if x]
+
+
+def _forelder_tekst(raa, s, forel):
+    return len(raa) == 1 or not forel or forel.search(s)
+
+
+def klassifiser(w, e):
+    """(enhet, bare, annen) for et verk i en tekstenhet. enhet: en forfatter ved foreldreinstitusjonen har en rå
+    tilknytningstekst som passer `monster` (og ikke `unntak`). bare: antall slike forfattere uten treff som bare har
+    universitetsnavnet (`uninavn`, ellers `foreldre`) og ingen organisasjonsord. annen: antall forfattere ved
+    foreldreinstitusjonen som verken treffer eller har bare universitetsnavnet (en annen underenhet står i teksten).
+    Navn leses ikke og lagres ikke."""
     mon = re.compile(e["monster"], re.I)
     unn = re.compile(e["unntak"], re.I) if e.get("unntak") else None
     forel = re.compile(e["foreldre"], re.I) if e.get("foreldre") else None
-    pid = API.replace("api.", "") + "/" + e["openalex"]
+    uni = re.compile(e.get("uninavn") or e.get("foreldre") or "$^", re.I)
+    pid = {API.replace("api.", "") + "/" + i for i in foreldre_ider(e)}
+    treff, bare, annen = False, 0, 0
     for au in w.get("authorships") or []:
-        ved = any(pid in (i.get("lineage") or []) or i.get("id") == pid for i in au.get("institutions") or [])
+        ved = any(pid & set(i.get("lineage") or []) or i.get("id") in pid for i in au.get("institutions") or [])
         if not ved:
             continue
         raa = au.get("raw_affiliation_strings") or []
-        for s in raa:
-            if mon.search(s) and not (unn and unn.search(s)) and (len(raa) == 1 or not forel or forel.search(s)):
-                return True
-    return False
+        relevante = [s for s in raa if _forelder_tekst(raa, s, forel)]
+        if any(mon.search(s) and not (unn and unn.search(s)) for s in relevante):
+            treff = True
+        elif any(uni.search(s) and not ORGORD.search(uni.sub(" ", s)) for s in relevante):
+            bare += 1
+        elif relevante:
+            annen += 1
+    return treff, bare, annen
+
+
+def enhet_treff(w, e):
+    """Står enheten i tilknytningsteksten til en forfatter ved foreldreinstitusjonen? (Navn leses ikke og lagres ikke.)"""
+    return klassifiser(w, e)[0]
+
+
+def bare_andel(e):
+    """Andelen av foreldreinstitusjonens verk i BARE_FELT med lesbar underenhet som er enhetens (fra cachen, 2016–2025).
+    None hvis cachen mangler `annen` (eldre cache) eller ikke finnes."""
+    if e["id"] not in _BARE_ANDEL:
+        treff = andre = 0
+        gammel = False
+        for f in (OA / "norden" / e["id"]).glob("*.json"):
+            for w in json.loads(f.read_text(encoding="utf-8"))["verk"]:
+                if (w.get("uf") or 0) // 100 not in BARE_FELT:
+                    continue
+                if "annen" not in w:
+                    gammel = True
+                treff += bool(w.get("enhet"))
+                andre += bool(not w.get("enhet") and w.get("annen"))
+        _BARE_ANDEL[e["id"]] = None if gammel or not (treff + andre) else treff / (treff + andre)
+    return _BARE_ANDEL[e["id"]]
+
+
+def i_enheten(w, e, regel=None):
+    """Hører et lagret verk (fra cachen) til enheten? Tekstenheter: mønstertreff (`enhet`), eller bare-regelen (se
+    BARE_FELT/BARE_TERSKEL over; regel=False slår den av). Fagenheter: ikke i `utenUnderfelt`. Institusjon: alltid.
+    Gamle cachefiler uten `bare`/`annen` gir bare mønstertreffet."""
+    regel = BARE_REGEL if regel is None else regel
+    if e["metode"] == "tekst":
+        if w.get("enhet"):
+            return True
+        if not regel or not (w.get("bare") or 0) or (w.get("annen") or 0) or (w.get("uf") or 0) // 100 not in BARE_FELT:
+            return False
+        andel = bare_andel(e)
+        return andel is not None and andel >= BARE_TERSKEL
+    if e["metode"] == "fag":
+        return w.get("uf") not in (e.get("utenUnderfelt") or [])
+    return True
+
+
+def enheter(land=None):
+    """Alle enheter: enheter-norden.json (Danmark, Sverige, Finland) + enheter-norge.json (Norge), med `land`."""
+    ut = []
+    for fil, standard in (("enheter-norden.json", None), ("enheter-norge.json", "no")):
+        f = OA / fil
+        for e in (json.loads(f.read_text(encoding="utf-8"))["enheter"] if f.exists() else []):
+            e = {**e, "land": e.get("land") or standard or e["id"].split("_", 1)[0]}
+            if land is None or e["land"] in land:
+                ut.append(e)
+    return ut
 
 
 def kjor_norden(k, a):
-    cfg = json.loads((OA / "enheter-norden.json").read_text(encoding="utf-8"))["enheter"]
+    cfg = enheter(a.land.split(",") if a.land else None)
     if a.enhet:
         cfg = [e for e in cfg if e["id"] in a.enhet.split(",")]
     aar = list(range(a.til, a.fra - 1, -1))
+    minne = {}  # filter → rå verk, så enheter med samme foreldreinstitusjon og fagfelt (NTNU, NTNU HH) hentes én gang
     try:
         for y in aar:  # nyeste år først for alle enheter, så eldre (stopper kreditten, er de viktigste årene hentet)
             for e in cfg:
                 f = OA / "norden" / e["id"] / f"{y}.json"
                 if f.exists() and not a.refresh:
                     continue
-                filt = [f"authorships.institutions.lineage:{e['openalex']}", f"publication_year:{y}", "type:article|review"]
+                filt = [f"authorships.institutions.lineage:{'|'.join(foreldre_ider(e))}", f"publication_year:{y}",
+                        "type:article|review"]
                 if e.get("felt"):
                     filt.append("primary_topic.field.id:" + "|".join(str(x) for x in e["felt"]))
-                sel = MAAL + ",primary_topic" + (",authorships" if e["metode"] == "tekst" else "")
-                verk, cur, sider = [], "*", 0
-                while cur:
-                    d = k.hent("/works", {"filter": ",".join(filt), "select": sel, "per-page": 200, "cursor": cur})
-                    sider += 1
-                    for w in (d or {}).get("results", []):
-                        m = maal_av(w)
-                        pt = w.get("primary_topic") or {}
-                        m["uf"] = int(kort_id((pt.get("subfield") or {}).get("id")) or 0) or None
-                        if e["metode"] == "tekst":
-                            m["enhet"] = enhet_treff(w, e)
-                        verk.append(m)
-                    cur = (d or {}).get("meta", {}).get("next_cursor") if (d or {}).get("results") else None
+                sel = MAAL + ",primary_topic,primary_location" + (",authorships" if e["metode"] == "tekst" else "")
+                nokkel = (",".join(filt), e["metode"] == "tekst")
+                sider = 0
+                if nokkel not in minne:
+                    raa_verk, cur = [], "*"
+                    while cur:
+                        d = k.hent("/works", {"filter": nokkel[0], "select": sel, "per-page": 200, "cursor": cur})
+                        sider += 1
+                        raa_verk += (d or {}).get("results", [])
+                        cur = (d or {}).get("meta", {}).get("next_cursor") if (d or {}).get("results") else None
+                    minne.clear()  # bare siste filter holdes i minnet (enhetene med samme forelder står etter hverandre)
+                    minne[nokkel] = raa_verk
+                verk = []
+                for w in minne[nokkel]:
+                    m = maal_av(w)
+                    pt = w.get("primary_topic") or {}
+                    m["uf"] = int(kort_id((pt.get("subfield") or {}).get("id")) or 0) or None
+                    src = (w.get("primary_location") or {}).get("source") or {}
+                    m["doi"] = norm_doi(w.get("doi"))
+                    m["kilde"] = kort_id(src.get("id"))
+                    m["issn_l"] = src.get("issn_l")
+                    if e["metode"] == "tekst":
+                        m["enhet"], m["bare"], m["annen"] = klassifiser(w, e)
+                    verk.append(m)
                 skriv_json(f, {"enhet": e["id"], "aar": y, "hentet": time.strftime("%Y-%m-%d"), "metode": e["metode"],
-                               "filter": ",".join(filt), "verk": verk})
-                treff = sum(1 for v in verk if v.get("enhet")) if e["metode"] == "tekst" else len(verk)
+                               "filter": nokkel[0], "verk": verk})
+                treff = sum(1 for v in verk if i_enheten(v, e)) if e["metode"] != "institusjon" else len(verk)
                 print(f"  {e['id']} {y}: {len(verk)} verk hentet ({sider} sider), {treff} i enheten; kreditter igjen {k.igjen}")
     except TomForKreditt as e:
         print("Stopper:", e)
@@ -334,6 +447,7 @@ def main():
     ap.add_argument("--maks-verk", type=int, default=1500, help="tittel: største tidsskrift (verk i perioden)")
     ap.add_argument("--min", type=int, default=1, help="tittel: minste antall artikler uten DOI per ISSN")
     ap.add_argument("--enhet")
+    ap.add_argument("--land", help="norden: bare disse landene (no,dk,se,fi)")
     ap.add_argument("--fra", type=int, default=2016)
     ap.add_argument("--til", type=int, default=2025)
     ap.add_argument("--refresh", action="store_true")

@@ -1489,3 +1489,37 @@ Utvidelse av «Fagfeltprofil» i AJG-sammenligningen (`?rangering&fane=ajg`), et
 - **Bakgrunn for fanen (spørsmål 4):** NVA registrerer artikler fortløpende (importkandidater og egen registrering), men
   NVI-rapporteringen for 2026 lukkes først i mars–april 2027. Per 18.10.2026 hadde NVA for 2026 64 % av 2025-antallet
   for HH NMBU (47 mot 73), NHH 68 %, BI 82 % og NTNU 56 %; derfor sammenligningen på samme dato i stedet for mot hele 2025.
+
+## 63. Skandinavia: handelshøyskoler i Norge, Sverige, Danmark og Finland med samme metode (18.–19.10.2026)
+
+Ny fane «Skandinavia» i den interne rangeringen (`?rangering&fane=skandinavia`; komponent
+`components/rangering/Skandinavia.tsx`, koblet inn i `Handelshoyskolerangering.tsx`, stil `.skan-*` i
+`styles/skoleportrett.css`). Vises bare når AJG-lista finnes. Mathias' valg 18.10: Skandinavia + Finland, OpenAlex for alle
+land (også Norge), svake nevnere vises med kvalitetsmerke (skjult per 100 som standard), ingen e-post til fakultetene nå.
+- **Artikler:** OpenAlex (type article/review) per enhet og år 2016–2025, AJG 2024-nivå per tidsskrift (OpenAlex-kilde →
+  ISSN via `openalex/ajg-kilder.json`, ellers `issn_l`). Hent: `python3 scripts/rangering/hent_openalex.py norden` (nå med
+  `kilde`, `issn_l`, `doi`, `bare`, `annen` per verk; norske enheter i `openalex/enheter-norge.json`). Hvem som hører til
+  enheten avgjøres av `hent_openalex.i_enheten` (mønster på tilknytningstekst + «bare universitetsnavn»-regelen, likt i alle
+  land); metode og recall/presisjon i `data/rangering/inspirasjon/openalex-norden-artikler.md`.
+- **Kontroll mot NVA:** `python3 scripts/rangering/openalex_mot_nva.py`. Recall 2021–2025: hele institusjoner ~88–89 %,
+  HH NMBU 77 %, UiS 74 %, NTNU 71 %, Kristiania 52 %, HiØ 45 %; presisjon 74–93 %. Fanen viser dekning per enhet
+  (Norge mot NVI, andre land mot SwePub/Pure/Vipunen fra norden-filene; under 60 % markeres).
+- **Nevner:** `python3 scripts/rangering/lag_nevner_norden.py [--vipunen]` → `data/rangering/norden/nevner/nevner.json` fra
+  agentenes kildetall (`nevner/{sverige,danmark,felles}.csv`, rapporter `inspirasjon/nevner-*.md`) og Vipunen-API-et
+  (`nevner/vipunen-aggregat.json`). Reglene står i `REGLER` i skriptet. Kvalitet: god = selve enheten (CBS, SSE, Hanken;
+  Norge = DBH), middels = kjent annen avgrensning (hele Aarhus BSS, GU rekonstruert fra tre UKÄ-faggrupper ±5 %, finske
+  fagfelt 511 + 512), svak = fagområdet ved hele universitetet (UKÄ-faggruppe for de andre svenske, dansk SAMF for SDU, AAU,
+  RUC, KU). Med = ≈ UN1 + UN2, uten = uten stipendiater/doktorander (finnes ikke for SDU, AAU, RUC, KU). ETER-årsverk står
+  som kontroll for CBS, SSE og Hanken.
+- **Bygg:** `scripts/rangering/skandinavia.py` (kalt fra `build-rangering.py`, feltet `skandinavia`): bare
+  [artikler, 4*, 4, 3, 2, 1, i AJG] + nevner per enhet og år. NVI-kontrollen for Norge regnes i nettleseren (`ajgTall`).
+- **Bilde 2023–2025 (AJG 4+ per 100 årsverk med stipendiater):** CBS 17,6, SSE 17,2, BI 15,2, NHH 14,9, Aalto 12,2,
+  Hanken 11,6, UiS 9,1, UiA 8,4 … HH NMBU 2,6 (nr. 22 av 30 med god/middels nevner). JIBS ville vært nr. 1 (17,7), men har
+  svak nevner (UKÄ-faggruppen) og er skjult som standard.
+- **Lenke:** `?rangering&fane=skandinavia&skanperiode=2021-2023&skanmaal=p3|n4s|n|dekning|a3&skanvis=antall&skannevner=uten&
+  skanland=NO,SE&skansvak=1&skanref=1&skanskoler=…` (bare avvik fra standard skrives).
+- **Bivirkning:** Danmark og Sverige er hentet på nytt med bredere fagfelt (11, 14, 17, 18, 20–23, 26, 32, 33, 36), så
+  Siteringer-fanens tall for dem endrer seg noe (sitering.py bruker fortsatt bare mønstertreffet).
+- **Gjenstår:** fakultetenes egne årsverk for LUSEM, JIBS, Umeå, Örebro, LNU, Karlstad, SDU, AAU, RUC og AU-instituttene
+  (kontaktadresser og bestillingstekst i `inspirasjon/nevner-danmark.md` og `nevner-sverige.md`); lav OpenAlex-dekning for
+  Kristiania, HiØ, OsloMet, UiO økonomi og de store svenske fakultetene (LUSEM, GU, Umeå 40–48 % mot SwePub).

@@ -1,0 +1,5417 @@
+{
+ "hentet": "2026-10-18",
+ "kilde": "https://api.vipunen.fi/api/resources/henkilosto/data?filter=tilastovuosi>=2016;kooditTieteenala=in=(511,512)",
+ "rader": [
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2016,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 25.93
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2016,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 9.0
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2016,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 8.1
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2016,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 9.64
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 111.23
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 62.45
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 69.28
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 46.2
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2017,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 22.9
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2017,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 9.64
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2017,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 7.79
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2017,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 10.55
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 85.27
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 65.85
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 64.09
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 43.64
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2018,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 22.95
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2018,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 10.08
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2018,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 8.53
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2018,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 9.91
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 86.44
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 62.1
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 70.83
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 40.16
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2019,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 22.18
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2019,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 8.43
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2019,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 8.65
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2019,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 7.37
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 77.34
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 63.08
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 71.73
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 41.24
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2020,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 22.8
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2020,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 9.22
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2020,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 10.18
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2020,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 7.29
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 70.57
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 60.49
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 74.95
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 42.55
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2021,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 22.42
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2021,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 11.16
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2021,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 13.53
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2021,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 8.07
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 73.69
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 55.95
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 67.28
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 48.14
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2022,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 22.76
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2022,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 11.38
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2022,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 14.74
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2022,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 8.46
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 75.76
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 44.82
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 67.33
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 48.67
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2023,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 25.01
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2023,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 9.65
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2023,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 12.34
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2023,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 10.29
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 71.58
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 43.12
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 61.6
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 46.26
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2024,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 29.0
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2024,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 13.24
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2024,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 12.68
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2024,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 10.31
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 57.38
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 38.41
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 67.09
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 48.94
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2025,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 35.31
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2025,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 19.34
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2025,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 15.46
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2025,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 10.4
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 64.77
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 42.0
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 74.39
+  },
+  {
+   "yliopisto": "Aalto-yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 52.16
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2016,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 14.4
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2016,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 7.1
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2016,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 9.95
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2016,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 7.91
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 3.89
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 2.2
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 6.53
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 5.7
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2017,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 16.68
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2017,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 10.62
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2017,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 14.57
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2017,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 15.3
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 3.16
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 2.11
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 7.56
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 3.85
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2018,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 14.8
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2018,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 5.23
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2018,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 9.62
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2018,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 12.57
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 2.05
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 4.75
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 6.16
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 4.84
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2019,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 17.57
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2019,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 6.21
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2019,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 8.97
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2019,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 11.19
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 0.94
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 2.49
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 5.02
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 7.47
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2020,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 15.69
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2020,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 7.41
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2020,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 10.87
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2020,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 12.22
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 1.68
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 1.95
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 6.19
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 7.0
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2021,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 20.07
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2021,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 9.27
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2021,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 12.38
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2021,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 14.2
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 2.39
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 2.19
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 5.3
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 7.0
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2022,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 20.87
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2022,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 8.16
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2022,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 13.03
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2022,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 13.74
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 3.95
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 1.19
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 7.6
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 7.0
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2023,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 18.15
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2023,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 8.77
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2023,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 13.83
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2023,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 13.2
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 3.2
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 1.41
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 8.05
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 7.01
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2024,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 21.61
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2024,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 8.99
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2024,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 14.1
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2024,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 12.78
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 1.86
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 3.4
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 7.25
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 6.87
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2025,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 27.18
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2025,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 11.01
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2025,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 14.63
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2025,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 13.81
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 2.7
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 3.11
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 7.55
+  },
+  {
+   "yliopisto": "Helsingin yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 5.23
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2016,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 1.92
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2016,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 11.05
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 6.2
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 17.77
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 10.76
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2017,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2017,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 0.6
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 7.77
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 6.95
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 17.35
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 11.16
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2018,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2018,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 0.6
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 7.86
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 6.43
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 17.1
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 11.2
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2019,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2019,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 0.6
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 9.65
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 8.88
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 20.4
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 12.97
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2020,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2020,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 0.6
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 13.68
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 8.04
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 24.2
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 11.06
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2021,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2021,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 0.6
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 12.56
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 11.08
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 26.43
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 11.56
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2022,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 13.42
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 14.73
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 26.31
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 13.75
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2023,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 18.51
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 14.92
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 28.84
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 13.22
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2024,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 24.1
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 13.58
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 30.14
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 12.23
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2025,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 0.16
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 23.46
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 14.03
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 31.66
+  },
+  {
+   "yliopisto": "Itä-Suomen yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 14.01
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2016,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 7.98
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2016,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 1.72
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2016,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 3.0
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2016,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 5.56
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 30.01
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 6.35
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 11.0
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 11.79
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2017,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 9.62
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2017,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 0.91
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2017,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 2.58
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2017,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 5.97
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 32.01
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 4.08
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 10.42
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 11.48
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2018,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 8.58
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2018,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2018,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 3.33
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2018,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 5.5
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 33.79
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 6.18
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 12.47
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 10.15
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2019,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 4.56
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2019,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 7.6
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2019,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 2.67
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2019,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 5.63
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 15.38
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 25.28
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 13.46
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 11.03
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2020,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 4.58
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2020,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 5.64
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2020,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 6.0
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2020,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 4.55
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 12.82
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 26.93
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 15.3
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 9.81
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2021,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 2.6
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2021,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 4.67
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2021,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 6.33
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2021,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 4.43
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 10.02
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 34.64
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 19.47
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 8.49
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2022,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 2.44
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2022,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 4.84
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2022,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 7.0
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2022,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 4.4
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 15.08
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 33.39
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 23.43
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 8.33
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2023,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 1.21
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2023,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 4.16
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2023,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 8.75
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2023,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 4.43
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 16.12
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 31.84
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 24.61
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 7.5
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2024,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 0.54
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2024,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 3.14
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2024,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 8.0
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2024,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 4.22
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 18.3
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 27.01
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 28.27
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 6.0
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2025,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 2.34
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2025,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 3.67
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2025,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 8.33
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2025,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 5.2
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 22.45
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 29.18
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 27.79
+  },
+  {
+   "yliopisto": "Jyväskylän yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 6.84
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2016,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 1.98
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 3.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2017,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 2.38
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 3.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2018,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 3.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2019,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 2.84
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2020,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 0.83
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 1.83
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 3.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 3.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 2.93
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 3.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 3.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Lapin yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 3.0
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 21.69
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 15.4
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 17.36
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 17.25
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 20.8
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 21.31
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 13.89
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 17.03
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 20.38
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 24.71
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 20.66
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 19.67
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 21.76
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 24.49
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 19.86
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 20.08
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 23.86
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 23.99
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 21.55
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 18.23
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 27.82
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 26.54
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 22.25
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 19.69
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 29.77
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 30.6
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 20.39
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 20.4
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 39.82
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 30.33
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 23.63
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 19.34
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 43.28
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 32.51
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 27.21
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 20.74
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 47.71
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 35.13
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 29.8
+  },
+  {
+   "yliopisto": "Lappeenrannan-Lahden teknillinen yliopisto LUT",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 22.21
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2016,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 6.89
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2016,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 1.58
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2016,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 3.02
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 38.87
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 11.82
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 8.96
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 11.39
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2017,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 3.72
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2017,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 0.58
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2017,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 3.42
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 32.76
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 13.43
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 7.58
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 13.7
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 29.29
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 18.46
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 8.75
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 17.5
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 24.63
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 20.39
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 11.23
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 17.2
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 25.31
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 19.64
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 15.16
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 17.0
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2021,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 31.13
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 24.14
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 12.43
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 17.15
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 32.9
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 25.3
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 13.02
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 16.95
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 27.83
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 27.27
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 14.23
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 14.83
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 26.35
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 25.5
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 19.27
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 15.81
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 24.8
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 28.99
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 21.01
+  },
+  {
+   "yliopisto": "Oulun yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 16.75
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2016,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 1.76
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2016,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 1.46
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2016,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 4.2
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 5.3
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 43.44
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 31.18
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 25.96
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2017,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 1.92
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2017,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 0.99
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2017,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 1.43
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2017,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 3.0
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 21.61
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 32.19
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 25.38
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 27.33
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2018,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 1.67
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2018,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 0.25
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2018,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 1.62
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2018,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 2.91
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 27.33
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 44.17
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 31.43
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 27.55
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2019,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 3.48
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2019,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 2.6
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2019,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2019,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 3.21
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 31.85
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 44.83
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 30.28
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 26.47
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2020,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 4.28
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2020,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 4.17
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2020,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 1.25
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2020,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 3.32
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 33.41
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 46.31
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 33.82
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 25.32
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2021,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 1.67
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2021,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 4.96
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2021,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 1.5
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2021,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 3.05
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 24.49
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 49.64
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 34.78
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 23.49
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2022,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 3.54
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2022,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 5.5
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2022,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 1.37
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2022,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 3.45
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 21.6
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 52.83
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 35.58
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 24.24
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2023,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 5.86
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2023,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 6.86
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2023,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 1.22
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2023,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 3.72
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 24.52
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 54.05
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 31.69
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 26.69
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2024,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 5.84
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2024,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 2.65
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2024,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 1.06
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2024,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 3.2
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 33.73
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 53.13
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 31.64
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 27.25
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2025,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 4.95
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2025,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 4.92
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2025,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 0.25
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2025,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 3.37
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 42.56
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 47.84
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 36.64
+  },
+  {
+   "yliopisto": "Svenska handelshögskolan",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 28.75
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2016,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 6.45
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2016,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 5.11
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2016,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 2.16
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2016,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 4.25
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 36.92
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 22.83
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 15.17
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 18.33
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2017,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 3.0
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2017,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 4.39
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2017,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 1.84
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2017,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 4.95
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 38.59
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 26.2
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 15.35
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 20.91
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2018,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 1.86
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2018,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 4.08
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2018,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 2.58
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2018,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 3.48
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 37.47
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 25.64
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 18.05
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 19.19
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2019,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 1.64
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2019,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 3.0
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2019,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 2.84
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2019,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 3.08
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 36.17
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 25.51
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 19.72
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 16.91
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2020,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 1.41
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2020,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 3.48
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2020,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 3.01
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2020,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 2.41
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 37.55
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 26.06
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 17.48
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 16.67
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2021,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 1.4
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2021,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 1.33
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2021,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 2.63
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2021,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 3.17
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 46.62
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 28.65
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 19.23
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 16.84
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2022,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 0.42
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2022,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 0.53
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2022,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 3.0
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2022,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 2.08
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 45.41
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 29.84
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 23.19
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 17.38
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2023,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 0.62
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2023,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 3.0
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2023,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 44.3
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 29.99
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 26.62
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 18.88
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2024,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 0.58
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2024,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 2.83
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2024,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 44.22
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 28.7
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 26.35
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 17.91
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2025,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2025,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 48.89
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 33.91
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 24.76
+  },
+  {
+   "yliopisto": "Tampereen yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 18.26
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 48.76
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 39.74
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 26.52
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 28.17
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 47.5
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 37.58
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 24.5
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 29.39
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 47.3
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 36.9
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 29.28
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 26.38
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 37.34
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 34.56
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 32.26
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 25.92
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 42.71
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 29.35
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 33.15
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 27.76
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 32.68
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 34.55
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 32.74
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 28.75
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 37.3
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 40.45
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 31.92
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 28.29
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 33.79
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 47.04
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 33.68
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 28.27
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 35.39
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 46.66
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 36.94
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 28.62
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 37.74
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 44.81
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 33.99
+  },
+  {
+   "yliopisto": "Turun yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 27.0
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2016,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 1.18
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2016,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 1.89
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2016,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2016,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 46.14
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 30.4
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 18.45
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 23.07
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2017,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 0.26
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2017,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2017,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2017,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 39.99
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 25.17
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 22.94
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 21.97
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2018,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 1.65
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2018,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 1.35
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2018,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2018,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 36.46
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 22.75
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 23.52
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 22.96
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2019,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 2.83
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2019,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 1.61
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2019,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2019,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 34.94
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 29.87
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 26.08
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 22.38
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2020,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 3.58
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2020,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 3.48
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2020,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2020,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 41.73
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 33.14
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 27.32
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 22.73
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2021,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 5.3
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2021,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 3.58
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2021,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2021,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 34.12
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 42.45
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 29.7
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 24.2
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2022,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 1.78
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2022,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 2.45
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2022,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2022,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 21.55
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 17.89
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 22.6
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 8.37
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2023,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 4.06
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2023,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 2.71
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2023,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2023,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 45.15
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 39.87
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 40.44
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 22.21
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 58.72
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 41.42
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 46.0
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 25.97
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2025,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 5.04
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2025,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 1.1
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2025,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 3.25
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2025,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 1.98
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 55.86
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 34.26
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 41.76
+  },
+  {
+   "yliopisto": "Vaasan yliopisto",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 25.81
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2016,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 4.24
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2016,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 1.28
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2016,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 1.16
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 4.73
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 9.82
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 1.8
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2016,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 7.35
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2017,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 3.31
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2017,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 1.9
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2017,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 3.42
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 11.88
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2017,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 5.95
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2018,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 3.79
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2018,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 1.96
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2018,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 2.75
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 14.42
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 2.22
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2018,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 5.17
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2019,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 3.75
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2019,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2019,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 1.3
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 14.19
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 2.38
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2019,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 5.47
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2020,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 3.58
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2020,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2020,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 1.28
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 13.06
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 3.52
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2020,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 5.5
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2021,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 3.0
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2021,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 1.41
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2021,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 1.59
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 2.88
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 11.75
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 3.41
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2021,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 5.59
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2022,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 0.25
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2022,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 3.38
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2022,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2022,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 3.82
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 12.43
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 5.09
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2022,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 5.58
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2023,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 0.08
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2023,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 4.11
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2023,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2023,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 4.66
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 14.12
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 3.51
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2023,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 4.77
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2024,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 0.33
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2024,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 5.17
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2024,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2024,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 7.89
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 12.81
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 3.42
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2024,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 6.2
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2025,
+   "tieteenala": "511",
+   "trinn": "I",
+   "arsverk": 0.7
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2025,
+   "tieteenala": "511",
+   "trinn": "II",
+   "arsverk": 4.0
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2025,
+   "tieteenala": "511",
+   "trinn": "III",
+   "arsverk": 1.0
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2025,
+   "tieteenala": "511",
+   "trinn": "IV",
+   "arsverk": 2.0
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "I",
+   "arsverk": 4.97
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "II",
+   "arsverk": 12.47
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "III",
+   "arsverk": 3.75
+  },
+  {
+   "yliopisto": "Åbo Akademi",
+   "aar": 2025,
+   "tieteenala": "512",
+   "trinn": "IV",
+   "arsverk": 6.2
+  }
+ ]
+}
