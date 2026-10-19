@@ -20,6 +20,7 @@ interface OaRad {
   inst: string; kort: string; prognavn: string; type: string; emne: string; emnenavn: string; aar: string; karakterer: Partial<Tall>; total: number;
   sem: Record<string, { karakterer: Partial<Tall>; total: number }>; studiested: string; grenser: Record<string, { ord?: number | null; fv?: number | null }>;
   visningskode: string; eier: string | null; fakultet: string | null; kategori: number | null; sp: number | null; emneurl: string | null;
+  studiesemester?: { semester: number | null; termin: string | null; studieaar: number | null; sikkerhet: string | null; kilde: string | null; belegg: string | null; kull: string | null } | null;
 }
 interface AnnetEmne {
   inst: string; kort: string; kode: string; visningskode: string; navn: string | null; eier: string | null; fakultet: string | null; kategori: number | null;
@@ -375,7 +376,7 @@ function OaStudentene({ d }: { d: Data }) {
   };
   // Graf: stryk/snitt 2023–25 per rad, sortert
   const graf = grupper.map((g) => {
-    const s = st(pluss(...perAar.map((y) => g.aar[y] ? { ...g.aar[y].karakterer, total: g.aar[y].total } : undefined))); const nav = g.r0.kort === 'NMBU' ? `NMBU STAT100 · ${NMBU_PROG[g.r0.type] ?? g.r0.type}` : `${g.r0.kort} ${g.r0.visningskode}${g.r0.studiested && ['UiT', 'NTNU', 'USN', 'INN'].includes(g.r0.kort) ? ` (${g.r0.studiested})` : ''}${g.r0.type !== 'Bachelor ØA' ? ` · ${g.r0.type.replace('Bachelor ', '')}` : ''}`;
+    const s = st(pluss(...perAar.map((y) => g.aar[y] ? { ...g.aar[y].karakterer, total: g.aar[y].total } : undefined))); const semTekst = g.r0.studiesemester?.semester ? ` · ${g.r0.studiesemester.semester}. sem` : ''; const nav = (g.r0.kort === 'NMBU' ? `NMBU STAT100 · ${NMBU_PROG[g.r0.type] ?? g.r0.type}` : `${g.r0.kort} ${g.r0.visningskode}${g.r0.studiested && ['UiT', 'NTNU', 'USN', 'INN'].includes(g.r0.kort) ? ` (${g.r0.studiested})` : ''}${g.r0.type !== 'Bachelor ØA' ? ` · ${g.r0.type.replace('Bachelor ', '')}` : ''}`) + semTekst;
     return { nav, v: verdi(s) != null ? (maal === 'stryk' ? s.stryk! * 100 : s.snitt!) : null, nmbu: g.r0.kort === 'NMBU', n: s.bokstav };
   }).filter((x) => x.v != null && x.n >= minN).sort((a, b) => (b.v! - a.v!) * (maal === 'stryk' ? 1 : -1));
   const sortert = [...grupper].sort((a, b) => (verdi(st(b.sum3)) ?? -1) - (verdi(st(a.sum3)) ?? -1) * 1);
@@ -405,7 +406,7 @@ function OaStudentene({ d }: { d: Data }) {
       <div className="overflow-x-auto mt-4" style={kort}>
         <table className="w-full text-xs border-collapse">
           <thead><tr style={{ borderBottom: '2px solid var(--nmbu-neutral-3)' }}>
-            {['Institusjon', 'Program · studiested', 'Emne', 'Eier av emnet', 'Kat.'].map((h) => <th key={h} className="px-3 py-2 text-left" style={thStil}>{h}</th>)}
+            {['Institusjon', 'Program · studiested', 'Emne', 'Semester i studiet', 'Eier av emnet', 'Kat.'].map((h) => <th key={h} className="px-3 py-2 text-left" style={thStil} title={h === 'Semester i studiet' ? 'Hvilket semester i studieprogrammet statistikkemnet ligger i, etter studieplanen (kull 2025 eller nyeste plan). Hold pekeren over for kilde.' : undefined}>{h}</th>)}
             {aarene.map((y) => <th key={y} className="px-2 py-2 text-right" style={thStil}>{y}</th>)}
             {d.fs && <th className="px-2 py-2 text-right" style={{ ...thStil, backgroundColor: 'rgba(240,192,64,0.15)' }} title="Våren 2026, foreløpige tall fra FS (bare NMBU). Snitt finnes bare som bokstav.">2026 vår*</th>}
             <th className="px-3 py-2 text-right" style={thStil}>2023–25</th>
@@ -421,6 +422,9 @@ function OaStudentene({ d }: { d: Data }) {
                   <td className="px-3 py-2" style={{ fontWeight: 700 }}>{g.r0.kort}</td>
                   <td className="px-3 py-2"><div>{g.r0.prognavn}{g.r0.kort === 'NMBU' && NMBU_PROG[g.r0.type] ? <b> ({NMBU_PROG[g.r0.type]})</b> : null}</div><div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)' }}>{g.r0.studiested} · {g.r0.type}</div></td>
                   <td className="px-3 py-2"><div style={{ fontWeight: 600 }}>{g.r0.visningskode}</div><div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)' }}>{g.r0.emnenavn}{g.r0.sp ? ` · ${nf(g.r0.sp, 1)} sp` : ''}</div></td>
+                  <td className="px-3 py-2" style={{ whiteSpace: 'nowrap' }} title={g.r0.studiesemester ? [g.r0.studiesemester.belegg, g.r0.studiesemester.kull ? `Kull/plan: ${g.r0.studiesemester.kull}` : null, g.r0.studiesemester.kilde].filter(Boolean).join('\n') : 'Ikke funnet i studieplanen'}>
+                    {g.r0.studiesemester?.semester ? <><b>{g.r0.studiesemester.semester}. semester</b><div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)' }}>{[g.r0.studiesemester.termin, g.r0.studiesemester.studieaar ? `${g.r0.studiesemester.studieaar}. år` : null].filter(Boolean).join(', ')}{g.r0.studiesemester.sikkerhet && g.r0.studiesemester.sikkerhet !== 'høy' ? ' · usikker' : ''}</div></> : '–'}
+                  </td>
                   <td className="px-3 py-2" style={{ fontSize: 11 }}>{g.r0.eier}{g.r0.fakultet && g.r0.fakultet !== g.r0.eier ? <div style={{ fontSize: 10, color: 'var(--nmbu-neutral-2)' }}>{g.r0.fakultet}</div> : null}</td>
                   <td className="px-3 py-2"><span title={kat === 1 ? 'Eies av handelshøyskolen' : kat === 2 ? 'For økonomer, eies utenfor handelshøyskolen' : 'Eies utenfor handelshøyskolen, generelt statistikkemne'}
                     className="px-1.5 py-0.5 rounded" style={{ fontSize: 10.5, fontWeight: 700, backgroundColor: kat === 1 ? '#D9EAD3' : kat === 2 ? '#FFF2CC' : '#F3D9DF', color: '#333' }}>{kat ?? '–'}</span></td>
@@ -440,7 +444,7 @@ function OaStudentene({ d }: { d: Data }) {
           </tbody>
         </table>
       </div>
-      <Merknad>DBH tabell 308 på programnivå (skjermet for 1–2 per celle; «≥» = minimum). Kategori 1 = emnet eies av handelshøyskolen, 2 = for økonomer men eies utenfor, 3 = eies utenfor og er et generelt statistikkemne. Rød bakgrunn = høy strykprosent / lavt snitt (bare celler med minst 10 med bokstavkarakter). NTNU, USN, UiT og INN har byttet emnekode underveis; begge kodene vises. Nord: Bodø og Steinkjer har samme programkode i DBH. 2026 vår*: foreløpige FS-tall for NMBU (ordinær eksamen); DBH har ikke 2026 ennå.</Merknad>
+      <Merknad>DBH tabell 308 på programnivå (skjermet for 1–2 per celle; «≥» = minimum). Kategori 1 = emnet eies av handelshøyskolen, 2 = for økonomer men eies utenfor, 3 = eies utenfor og er et generelt statistikkemne. Rød bakgrunn = høy strykprosent / lavt snitt (bare celler med minst 10 med bokstavkarakter). NTNU, USN, UiT og INN har byttet emnekode underveis; begge kodene vises. Nord: Bodø og Steinkjer har samme programkode i DBH. Semester i studiet: fra studieplanene (kull 2025 eller nyeste plan), kilde i verktøytipset. 2026 vår*: foreløpige FS-tall for NMBU (ordinær eksamen); DBH har ikke 2026 ennå.</Merknad>
     </div>
   );
 }

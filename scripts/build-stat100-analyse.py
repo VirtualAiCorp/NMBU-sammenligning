@@ -119,6 +119,25 @@ def main():
         e["kat"] = 1 if e.get("hh_eid") else 2 if (e.get("navn_ok") or (andel is not None and andel >= 0.5)) else 3
     oa = []
     UTELAT = {("1177", "3MET130-1")}  # INN Rena: ikke relevant for sammenligningen (Mathias 15.10)
+    # Hvilket semester i studiet statistikkemnet ligger i (fra studieplanene, data/nmbu/kilder/stat100/semester.json)
+    semplan = les(K / "semester.json")["program"] if (K / "semester.json").exists() else []
+    TYPE_KODE = {"Bachelor ØA": None, "Bachelor ØLIT": "B-ØLIT", "Bachelor samfunnsøkonomi": "B-ECON", "Siviløkonom 5 år": "SIV"}
+    # Emner som har byttet kode, men har samme plass i studieplanen
+    SAMME_PLASS = [{"SØK1004", "MET1002"}, {"MET1010", "STA1000"}, {"BED-2065", "BED-2066", "BED-2011", "BED-2301"}]
+    def normkode(k):
+        return (k or "").replace(" ", "").upper()
+    def studiesemester(r, kode):
+        koder = next((g for g in SAMME_PLASS if normkode(kode) in g), {normkode(kode)})
+        kand = [x for x in semplan if x.get("inst", "").split(" ")[0] == r["kort"] and normkode(x.get("emne")) in koder and x.get("semester")]
+        # Femårig siviløkonom: programkoden har SIV (MSIVØK5, OKADSIV, SIVØKLEDR); «(bachelor, siviløkonom 3+2)» hos NHH er bachelor
+        er_siv = lambda x: "SIV" in str(x.get("programkode") or "").upper()
+        kand = [x for x in kand if er_siv(x) == (r["type"] == "Siviløkonom 5 år")]
+        if r["kort"] == "NMBU":
+            kode_t = TYPE_KODE.get(r["type"]) or "B-ØA"
+            kand = [x for x in kand if (x.get("programkode") or "").upper() == kode_t] or kand
+        sted = [x for x in kand if (x.get("studiested") or "").lower() == (r.get("studiested") or "").lower()]
+        x = (sted or kand or [None])[0]
+        return None if not x else {k: x.get(k) for k in ("semester", "termin", "studieaar", "sikkerhet", "kilde", "belegg", "kull")}
     for r in les(K / "oa-studentene.json"):
         if (r["inst"], r["emne"]) in UTELAT:
             continue
@@ -126,7 +145,8 @@ def main():
         oa.append({**{k: r[k] for k in ("inst", "kort", "prognavn", "type", "emne", "emnenavn", "aar", "karakterer", "total", "sem",
                                          "studiested", "grenser")},
                    "visningskode": e.get("visningskode", r["emne"]), "eier": e.get("avdnavn"), "fakultet": e.get("faknavn"),
-                   "kategori": e.get("kat"), "sp": e.get("sp"), "emneurl": e.get("emneurl")})
+                   "kategori": e.get("kat"), "sp": e.get("sp"), "emneurl": e.get("emneurl"),
+                   "studiesemester": studiesemester(r, e.get("visningskode", r["emne"]))})
 
     # ── 5. Andre institusjoners statistikkemner: karakterer per studieprogram ──
     andre = []
