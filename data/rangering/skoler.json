@@ -196,7 +196,7 @@
     }
    },
    "alternativ": null,
-   "merknad": "Publiseringspoeng = instituttene 310000–430000 + publikasjoner registrert direkte på institusjonen (373, avdeling 000000 med kjent kanaltype), som HK-dir. Totalraden 000000 avviker noen år (2025: 516,9 mot HK-dirs 507,3). Årsverk i 225 er ført på campusavdelinger (210000 Oslo osv.), ikke instituttene, så instituttnivå kan ikke brukes for årsverk."
+   "merknad": "Publiseringspoeng = instituttene 310000–430000 + publikasjoner registrert direkte på institusjonen (373, avdeling 000000 med kjent kanaltype), som HK-dir. Totalraden 000000 avviker noen år (2025: 516,9 mot HK-dirs 507,3). Faglige årsverk (UN1 + stipendiater + postdoktorer) ligger på instituttene; campuskodene (210000 m.fl.) har administrasjon og drift. Hele institusjonen brukes."
   },
   "akkrediteringer": [
    {
@@ -366,7 +366,7 @@
     }
    },
    "alternativ": null,
-   "merknad": "Hele fakultet 470. Publiseringspoeng føres på 470000."
+   "merknad": "Hele fakultet 470. Publiseringspoeng føres på 470000. Fra 2024 er stipendiater og postdoktorer ført på 470210/470220 (begge er med). NHHs forskningsrapport bruker bare 470000 og får derfor høyere tall (2025: 1,72 mot 1,42)."
   },
   "akkrediteringer": [
    {
@@ -583,7 +583,7 @@
     }
    },
    "alternativ": null,
-   "merknad": "Hele fakultet 415, inkl. Institutt for rettsvitenskap (415220). Omorganisert 2024: 415210 og 415230 (gyldig t.o.m. 2024) slått sammen til 415250 Institutt for ledelse og innovasjon – publiseringspoeng 2024 står på de gamle kodene, årsverk på den nye. Bruk fakultetssum."
+   "merknad": "Hele fakultet 415, inkl. Institutt for rettsvitenskap (415220). Omorganisert 2024: 415210 og 415230 (gyldig t.o.m. 2024) slått sammen til 415250 Institutt for ledelse og innovasjon – publiseringspoeng 2024 står på de gamle kodene, årsverk på den nye. Bruk fakultetssum. Etter omorganiseringen står publiseringspoengene 2024–2025 på de utgåtte kodene 415210/415230 og årsverkene på 415250; bare fakultetssummen er riktig. Inkluderer rettsvitenskap (11–17 årsverk)."
   },
   "akkrediteringer": [
    {
@@ -671,7 +671,7 @@
     }
    },
    "alternativ": null,
-   "merknad": "Én avdelingskode for hele fakultetet."
+   "merknad": "Én avdelingskode for hele fakultetet. 510000 omfatter også IKT, trafikklærerutdanning og Folkeuniversitetet-samarbeid, som ikke kan skilles ut. 2016 mangler (annen struktur) og 2017 er trolig underregistrert (første år etter fusjonen); bruk 2018 og senere."
   },
   "akkrediteringer": [
    {
@@ -1156,7 +1156,7 @@
     },
     "merknad": "Uten psykologi, jus/filosofi og Østlandsforskning."
    },
-   "merknad": "Avgrenset 03.10.2026 (Mathias): kjernen 440400 Økonomifag + 440500 Organisasjon, ledelse og styring, under både 0264 (t.o.m. 2024) og 1177 (fra 2025). Uten psykologi, jus/filosofi og Østlandsforskning."
+   "merknad": "Avgrenset 03.10.2026 (Mathias): kjernen 440400 Økonomifag + 440500 Organisasjon, ledelse og styring, under både 0264 (t.o.m. 2024) og 1177 (fra 2025). Uten psykologi, jus/filosofi og Østlandsforskning. Brudd 2021: Institutt for reiseliv, opplevelsesnæringer og markedsføring (440100, 18–22 årsverk) er ikke med 2018–2020 og ble del av 440500 fra 2021. 2022: 17 % av institusjonens poeng (94,8) er ikke fordelt på avdeling og er ikke med."
   },
   "akkrediteringer": [],
   "rangeringer": [
@@ -1380,7 +1380,7 @@
     }
    },
    "alternativ": null,
-   "merknad": "Institutt under fakultet 250 (FTMS, fra 2024). HHs fagmiljøside bruker hele FTMS (0238_250)."
+   "merknad": "Institutt under fakultet 250 (FTMS, fra 2024). HHs fagmiljøside bruker hele FTMS (0238_250). Handelshøgskulen HVL er egen enhet fra 2024; tidligere lå økonomi i fakultet 240 sammen med samfunnsfag og maritime fag, så eldre år kan ikke sammenlignes direkte og er ikke med."
   },
   "akkrediteringer": [],
   "rangeringer": [],
@@ -1446,7 +1446,7 @@
     }
    },
    "alternativ": null,
-   "merknad": "2024–2025: School of Economics, Innovation, and Technology (310) + School of Communication, Leadership, and Marketing (330). Fra 2026: Fakultet for ledelse og økonomi (380). SEIT omfattet også teknologi (nå i 360 Fakultet for helse og teknologi), og 330 omfatter kommunikasjon."
+   "merknad": "2024–2025: School of Economics, Innovation, and Technology (310) + School of Communication, Leadership, and Marketing (330). Fra 2026: Fakultet for ledelse og økonomi (380). SEIT omfattet også teknologi (nå i 360 Fakultet for helse og teknologi), og 330 omfatter kommunikasjon. 2018–2021 inneholder 310 mye teknologi (33–50 % av poengene), så serien er ikke sammenlignbar over 2021/2022. Fra 2026 flyttes teknologi til fakultet 360."
   },
   "akkrediteringer": [],
   "rangeringer": [],

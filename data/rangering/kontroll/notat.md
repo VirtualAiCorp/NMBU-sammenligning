@@ -1,6 +1,6 @@
 # Eksterne publiseringstall til kontroll av rangeringen
 
-Samlet 3. oktober 2026. `eksterne-tall.json` har 1 004 tall fra publisert materiale. Hver rad har kilde, URL, side og et kort utdrag. Vi har ikke sammenlignet med våre egne DBH-tall ennå. Filen er grunnlaget for den sammenligningen.
+Samlet 3. oktober 2026. `eksterne-tall.json` har 1 004 tall fra publisert materiale. Hver rad har kilde, URL, side og et kort utdrag. Byggeskriptet sammenligner dem automatisk med våre DBH-tall (fanen Kvalitetssikring); 22.10.2026: 657 av 677 sammenlignbare innen ±2 %. Rader med feltet `ikkeSammenlignbar` måler noe annet og sammenlignes ikke.
 
 ## Format
 - Feltene følger bestillingen.

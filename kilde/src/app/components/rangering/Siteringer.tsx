@@ -429,7 +429,7 @@ export function SiteringFane({ sit, skoler, nordiske, v, std, sett, generert }: 
             </div>
             {JSON.stringify(v) !== JSON.stringify(std) && <button type="button" className="seg" onClick={() => sett({ ...std, skoler: [...std.skoler] })}>Standardvalg</button>}
           </div>
-          <p className="cap">Standard: {std.fra}–{std.til} (siste treårsvindu der siteringene har satt seg; {sit.forelopigFra}–{yN} er foreløpige), snitt FWCI, NVI-artikler, per 100 faglige årsverk med HK-dirs nevner (UN1 + UN2). Topp 10 % per 100 = artikler blant de 10 % mest siterte i perioden delt på sum årsverk i perioden, ganger 100. Lenken husker valgene.</p>
+          <p className="cap">Standard: {std.fra}–{std.til} (siste treårsvindu der siteringene har satt seg; {sit.forelopigFra}–{yN} er foreløpige), snitt FWCI, NVI-artikler, per 100 faglige årsverk med HK-dirs nevner (UN1 + stipendiater + postdoktorer). Topp 10 % per 100 = artikler blant de 10 % mest siterte i perioden delt på sum årsverk i perioden, ganger 100. Lenken husker valgene.</p>
         </div>
       </section>
 

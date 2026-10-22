@@ -7,7 +7,7 @@ export interface ForelopigData {
   aar: number; dato: string; lister: { ajg: boolean };
   skoler: Record<string, { hentet: string; naa: ForelopigAgg; fjorSamme: ForelopigAgg; fjorHele: ForelopigAgg; utenDato: number }>;
 }
-/** Skolene slik fanen trenger dem; uff = faglige årsverk (UN1 + UN2) i forrige år, nevner for «per 100» */
+/** Skolene slik fanen trenger dem; uff = faglige årsverk (UN1 + stipendiater + postdoktorer) i forrige år, nevner for «per 100» */
 export interface ForelopigSkole { id: string; kort: string; navn: string; isNmbu: boolean; referanse: boolean; variantAv?: string | null; uff: number | null; }
 
 type Maal = 'n' | 'niva2' | 'p3' | 'p4';
@@ -69,7 +69,7 @@ export function ForelopigFane({ data, skoler, varianter }: { data: ForelopigData
             </div>
             <div className="ajg-g" role="group" aria-label="Visning"><span className="lab">Vis</span>
               <button type="button" className="seg" aria-pressed={!per100} onClick={() => setPer100(false)}>Antall</button>
-              <button type="button" className="seg" aria-pressed={per100} onClick={() => setPer100(true)} title={`Faglige årsverk (UN1 + UN2, HK-dir) i ${fjor}, siste år med årsverk i DBH; samme nevner for begge år`}>Per 100 årsverk</button>
+              <button type="button" className="seg" aria-pressed={per100} onClick={() => setPer100(true)} title={`Faglige årsverk (UN1 + stipendiater + postdoktorer, HK-dir) i ${fjor}, siste år med årsverk i DBH; samme nevner for begge år`}>Per 100 årsverk</button>
             </div>
             {harVariant && (
               <div className="ajg-g" role="group" aria-label="Avgrensning av NTNU"><span className="lab">NTNU</span>

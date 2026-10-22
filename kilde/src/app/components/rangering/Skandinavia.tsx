@@ -37,7 +37,7 @@ const LANDENE: SkanLand[] = ['NO', 'SE', 'DK', 'FI'];
 const LAND_NAVN: Record<SkanLand, string> = { NO: 'Norge', SE: 'Sverige', DK: 'Danmark', FI: 'Finland' };
 export interface SkanValg {
   fra: number; til: number; maal: SkanMaal; /** AJG-målene per 100 årsverk og år (ellers antall) */ per100: boolean;
-  /** med = med stipendiater/doktorander (≈ UN1 + UN2), uten = uten */ nevner: 'med' | 'uten';
+  /** med = med stipendiater/doktorander (≈ UN1 + stipendiater + postdoktorer), uten = uten */ nevner: 'med' | 'uten';
   land: SkanLand[]; /** vis per 100 også for enheter med svak nevner */ svak: boolean; ref: boolean;
   /** enhetene i utviklingsgrafen; plassen er fargen, '' = ledig plass */ skoler: string[];
 }
@@ -253,7 +253,7 @@ export function SkandinaviaFane({ data, nvi, rapport, v, std, sett, generert }: 
               <button type="button" className="seg" aria-pressed={!v.per100} onClick={() => set({ per100: false })}>Antall</button>
             </div>
             <div className="ajg-g" role="group" aria-label="Nevner"><span className="lab">Per 100</span>
-              <button type="button" className="seg" aria-pressed={v.nevner === 'med'} onClick={() => set({ nevner: 'med', per100: true })} title="Faglige årsverk med stipendiater/doktorander og postdoktorer (≈ HK-dirs UN1 + UN2)">Med stipendiater</button>
+              <button type="button" className="seg" aria-pressed={v.nevner === 'med'} onClick={() => set({ nevner: 'med', per100: true })} title="Faglige årsverk med stipendiater/doktorander og postdoktorer (≈ HK-dirs UN1 + stipendiater + postdoktorer)">Med stipendiater</button>
               <button type="button" className="seg" aria-pressed={v.nevner === 'uten'} onClick={() => set({ nevner: 'uten', per100: true })} title="Faglige årsverk uten stipendiater/doktorander (≈ NHHs nevner). Finnes ikke for SDU, AAU, RUC og KU.">Uten stipendiater</button>
             </div>
             <div className="ajg-g" role="group" aria-label="Land"><span className="lab">Land</span>
@@ -418,7 +418,7 @@ export function SkandinaviaFane({ data, nvi, rapport, v, std, sett, generert }: 
         <ul>
           <li><b>Samme metode i alle land.</b> {data.kilde}. Artiklene er det OpenAlex knytter til enheten (type article og review), hentet {data.hentet ?? '–'}. Hele institusjoner (NHH, BI, CBS, SSE, Hanken m.fl.) hentes direkte; fakulteter og institutter finnes ikke som egne enheter i OpenAlex og avgrenses på forfatternes tilknytningstekst (Norge, Sverige, Danmark) eller på fagfelt ved hele universitetet (Finland, som den nasjonale statistikken).</li>
           <li><b>AJG 2024</b> (Chartered ABS) er satt per tidsskrift via ISSN og brukt for alle år. Lista er lisensbelagt; bare antall per enhet og år ligger i dataene.</li>
-          <li><b>Nevner.</b> Norge: DBH (UN1 + UN2, eller UN1 + postdoktorer). Sverige: UKÄ (forskande och undervisande personal + doktorander, heltidsekvivalenter). Danmark: VIP-årsverk (Danske Universiteters nøgletal C, AU i tal, CBS). Finland: Vipunen (undervisnings- og forskningspersonale i fagfelt 511 + 512, karrieretrinn I–IV eller II–IV). Svenske doktorander er ofte på stipend og ikke ansatt, så «med stipendiater» er ikke helt det samme i alle land.</li>
+          <li><b>Nevner.</b> Norge: DBH (UN1 + stipendiater + postdoktorer, eller UN1 + postdoktorer). Sverige: UKÄ (forskande och undervisande personal + doktorander, heltidsekvivalenter). Danmark: VIP-årsverk (Danske Universiteters nøgletal C, AU i tal, CBS). Finland: Vipunen (undervisnings- og forskningspersonale i fagfelt 511 + 512, karrieretrinn I–IV eller II–IV). Svenske doktorander er ofte på stipend og ikke ansatt, så «med stipendiater» er ikke helt det samme i alle land.</li>
           <li><b>Kvalitet.</b> God = tall for selve enheten. Middels = kjent, litt annen avgrensning (hele Aarhus BSS, rekonstruert GU-tall, finsk fagfelt). Svak = fagområdet for hele universitetet; per 100 er da skjult som standard, fordi nevneren kan være mye for høy (Danmark, hele samfunnsvitenskap) eller for lav (Sverige, bare én faggruppe).</li>
           <li><b>Kontroll.</b> For Norge er OpenAlex-tellingen sammenlignet med NVI (tabellen over). Det viser hvor mye avgrensningen på tilknytningstekst bommer, og gir en pekepinn for de svenske og danske fakultetene.</li>
           <li><b>Ikke den norske rangeringen.</b> Tallene her bygger på OpenAlex, ikke NVI, og kan derfor avvike fra AJG-sammenligningen. Foreløpige tall ({generert}).</li>

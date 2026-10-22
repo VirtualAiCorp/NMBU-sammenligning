@@ -8184,7 +8184,8 @@
   "url": "https://nhh.no/globalassets/om-nhh/organisasjon/styret-ved-nhh/saksdokument/moteinkallingar/2026/offentlig-innkalling---styret-ved-norges-handelshoyskole-16.06.2026.pdf",
   "side": 189,
   "sitat": "Table 15: NMBU 2025 1,72",
-  "merknad": "Side = PDF-side i styreinnkallingen 16.06.2026 (sak 41/26). Nevneren gir høyere tall enn HK-dir/DBH «per faglig årsverk»."
+  "merknad": "Side = PDF-side i styreinnkallingen 16.06.2026 (sak 41/26). Nevneren gir høyere tall enn HK-dir/DBH «per faglig årsverk».",
+  "ikkeSammenlignbar": "Ulik avgrensning: NHH-tallet bruker bare avdeling 470000 (UN1 + postdoktorer der = 39,9 årsverk; 68,8 / 39,9 = 1,72). Fra 2024 er stipendiater og postdoktorer ført på 470210/470220, som vi tar med."
  },
  {
   "skole": "hh",
@@ -13536,7 +13537,8 @@
   "url": null,
   "side": null,
   "sitat": "nivå 2 = 29 % (Cristin)",
-  "merknad": "Oppgitt av bruker. NHH-rapporten gir 36,7 % av poengene på nivå 2 for HH i 2024 (annen nevner)."
+  "merknad": "Oppgitt av bruker. NHH-rapporten gir 36,7 % av poengene på nivå 2 for HH i 2024 (annen nevner).",
+  "ikkeSammenlignbar": "Grunnlaget er ukjent: 29 % treffer verken andel av forfatterandeler (18,3), publikasjoner (18,1) eller poeng (36,7)."
  },
  {
   "skole": "usn",
@@ -13760,7 +13762,8 @@
   "url": "https://www.inn.no/om-universitetet/organisering/universitetsstyret/saksdokumenter-styret-inn/Innkalling%20og%20agenda%20universitetsstyret%2012.03.2026",
   "side": 214,
   "sitat": "INN vil ha over 0,9 publiseringspoeng per faglig årsverk",
-  "merknad": "«Over 0,9»; HK-dir gir 1,00."
+  "merknad": "«Over 0,9»; HK-dir gir 1,00.",
+  "ikkeSammenlignbar": "«Over 0,9» er en nedre grense, ikke en punktverdi."
  },
  {
   "skole": "uis",
@@ -14245,7 +14248,8 @@
   "url": "https://www.kristiania.no/contentassets/dbfb8dd58cd141feb0d341768aa116b0/kvalitetsrapporten-2025.pdf",
   "side": 23,
   "sitat": "om lag 223 i 2025",
-  "merknad": "Foreløpig; HK-dir V15.2 gir endelig 287,7 for 2025 (stort avvik)."
+  "merknad": "Foreløpig; HK-dir V15.2 gir endelig 287,7 for 2025 (stort avvik).",
+  "ikkeSammenlignbar": "Foreløpig tall i kvalitetsrapporten; HK-dirs endelige tall er 287,7."
  },
  {
   "skole": "kristiania",

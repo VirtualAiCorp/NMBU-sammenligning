@@ -31,6 +31,9 @@ export interface AdmissionEntry {
   year: string;
   grade: number;
   estimated?: boolean;
+  /** Hva tallet er (kontroll 22.10.2026): reell grense i siste opptak, bare minstekrav, alle kvalifiserte tatt inn, eller anslag.
+   *  Mangler feltet, er det en grense. Rangeringen bruker bare grenser. */
+  kind?: 'grense' | 'minstekrav' | 'alle' | 'anslag';
   note?: string;
   url?: string;
 }
@@ -41,6 +44,7 @@ export const MASTER_ADMISSION: Record<string, AdmissionEntry[]> = {
     { year: '2025', grade: 3.15, url: 'https://www.nmbu.no/studier/studieprogram/master-i-okonomi-og-administrasjon' },
   ],
   ntnu: [
+    { year: '2026', grade: 3.80, url: 'https://www.ntnu.no/hhs/poenggrenser-ntnu-handelshøyskolen' },
     { year: '2025', grade: 3.70, url: 'https://www.ntnu.no/hhs/poenggrenser-ntnu-handelshøyskolen' },
   ],
   nhh: [
@@ -48,7 +52,7 @@ export const MASTER_ADMISSION: Record<string, AdmissionEntry[]> = {
     { year: '2025', grade: 3.90, url: 'https://www.nhh.no/studier/soknad-og-opptak/opptak-master-i-okonomi-og-administrasjon/' },
   ],
   uit: [
-    { year: '2025', grade: 3.00, url: 'https://uit.no/utdanning/program/279753/okonomi_og_administrasjon_sivilokonom_-_master' },
+    { year: '2025', grade: 3.00, kind: 'minstekrav', note: 'Minstekrav (sterk C); UiT oppgir ingen poenggrense', url: 'https://uit.no/utdanning/program/279753/okonomi_og_administrasjon_sivilokonom_-_master' },
   ],
   usn: [
     { year: '2025', grade: 2.30, note: 'Strategi og ledelse: 2,294 · Markedsføringsledelse: Alle · Bedriftsøkonomisk analyse: 2,579', url: 'https://www.usn.no/studier/master-i-okonomi-og-ledelse-sivilokonom/strategi-og-ledelse' },
@@ -60,19 +64,20 @@ export const MASTER_ADMISSION: Record<string, AdmissionEntry[]> = {
     { year: '2026', grade: 3.05, note: 'Bekreftet fra UiA per mail', url: 'https://www.uia.no/studier/program/okonomi-og-administrasjon-sivilokonom-master-2-ar/index.html' },
   ],
   bi: [
-    { year: '2025', grade: 3.50, url: 'https://www.bi.no/en/programmes-and-individual-courses/admissions/admission-requirements/master-of-science/#id1-degree-and-grade-requirements' },
+    { year: '2025', grade: 3.50, kind: 'minstekrav', note: 'Minstekrav (B); søkere med 3,30–3,49 kan vurderes', url: 'https://www.bi.no/en/programmes-and-individual-courses/admissions/admission-requirements/master-of-science/#id1-degree-and-grade-requirements' },
   ],
   kristiania: [
-    { year: '2025', grade: 2.75, estimated: true, url: 'https://www.kristiania.no/studier/master/master-i-okonomi-og-ledelse/#ofte-stilte-sp-oslash-rsm-aring-l' },
+    { year: '2025', grade: 2.75, estimated: true, kind: 'anslag', note: 'Anslag uten kilde; minstekravet er C', url: 'https://www.kristiania.no/studier/master/master-i-okonomi-og-ledelse/#ofte-stilte-sp-oslash-rsm-aring-l' },
   ],
   nord: [
-    { year: '2025', grade: 2.50, url: 'https://www.nord.no/studier/okonomi-og-administrasjon-sivilokonom-master-2-ar#opptakskrav' },
+    { year: '2025', grade: 2.50, kind: 'anslag', note: 'Står ikke på siden; minstekravet er C (3,0)', url: 'https://www.nord.no/studier/okonomi-og-administrasjon-sivilokonom-master-2-ar#opptakskrav' },
   ],
   uis: [
-    { year: '2025', grade: 3.00, note: '3,33 for spesialisering Finans. Alle inn på Ledelse og Økonomisk analyse.', url: 'https://www.uis.no/nb/studier/poenggrenser-for-lokalt-opptak#/' },
+    { year: '2026', grade: 2.95, note: 'Laveste spesialisering (Ledelse 2,95 · Økonomisk analyse 3,04 · Finans 3,20)', url: 'https://www.uis.no/nb/studier/poenggrenser-for-lokalt-opptak#/' },
+    { year: '2025', grade: 3.00, kind: 'alle', note: '3,33 for spesialisering Finans. Alle inn på Ledelse og Økonomisk analyse.', url: 'https://www.uis.no/nb/studier/poenggrenser-for-lokalt-opptak#/' },
   ],
   inn: [
-    { year: '2025', grade: 2.50, url: 'https://www.inn.no/studier/soknad-og-opptak/poengberegning-og-poenggrenser/oversikt-poenggrenser/master--og-videreutdanninger/' },
+    { year: '2025', grade: 2.50, kind: 'alle', note: 'INN oppgir «Alle» (alle kvalifiserte tatt inn) 2022–2026', url: 'https://www.inn.no/studier/soknad-og-opptak/poengberegning-og-poenggrenser/oversikt-poenggrenser/master--og-videreutdanninger/' },
   ],
 };
 

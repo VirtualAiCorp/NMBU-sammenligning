@@ -18,7 +18,7 @@ Kartlagt 3. oktober 2026. Dataene ligger i `skoler.json`: én rad per enhet, 15 
 
 ## Valg
 1. **Avgrensning:** Vi har brukt den minste enheten som bærer navnet handelshøyskole. Fagmiljøsiden til HH (`staffData`) bruker derimot hele fakultetet for NTNU, OsloMet, HVL, UiT og HiØ, så tallene i rangeringen og på fagmiljøsiden vil ikke stemme overens. Der et alternativ kan være aktuelt, står det i `dbh.alternativ` (NTNU-fakultetet, INN-kjerne, UiS + NHS og Molde hele).
-2. **NHH og BI:** Hele institusjonen. I tabell 373 brukes avdeling 000000, som er institusjonstotalen og lik summen av instituttene. Den må ikke legges sammen med instituttene, for da telles poengene to ganger. Hos BI er årsverkene i tabell 225 ført på campus og ikke på institutt.
+2. **NHH og BI:** Hele institusjonen. Publiseringspoeng = instituttene + publikasjoner registrert direkte på institusjonen (373, avdeling 000000 med kanaltype ≠ 0); summeringsraden 000000/kanaltype 0 avviker noen år (BI 2025: 516,9 mot HK-dirs 507,3) og brukes bare for antall publikasjoner. De faglige årsverkene (UN1 + stipendiater + postdoktorer) ligger på instituttene; BIs campuskoder har administrasjon og drift. (Rettet 22.10.2026, docs §64.)
 3. **Høgskolen i Molde:** Vi har tatt med Avdeling for logistikk og Avdeling for økonomi og samfunnsvitenskap, men ikke helse- og sosialfag. Molde er ikke blant HHs 13 konkurrenter.
 4. **UiB og UiO:** Merket `referanse: true`. Dette er samfunnsøkonomiske institutter og ikke handelshøyskoler.
 5. **GRAS:** Rangerer hele universiteter. Plasseringen er lagt på enheten, men merket `niva`.

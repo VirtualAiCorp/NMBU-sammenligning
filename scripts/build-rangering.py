@@ -150,6 +150,15 @@ def les_liste(navn, verdi_kol, fag_kol=None, krav=None):
                 i = issn(r.get(k))
                 if i:
                     ut[i] = (v, r.get(fag_kol) if fag_kol else None, r.get("tittel") or r.get("title"))
+    # Alias-ISSN: samme tidsskrift med annet ISSN i NVA enn på lista (nytt navn, nytt eISSN). Bare bekreftede par,
+    # aldri tittelkobling (gir falske treff). Kontroll 22.10.2026.
+    fa = LISTER / "alias.csv"
+    if fa.exists():
+        with open(fa, encoding="utf-8-sig", newline="") as fh:
+            for r in csv.DictReader(fh):
+                a_, l_ = issn(r.get("alias_issn")), issn(r.get("liste_issn"))
+                if a_ and l_ in ut and a_ not in ut:
+                    ut[a_] = ut[l_]
     return ut
 
 
@@ -291,6 +300,9 @@ def lag_kontroll(skoler):
         ulik = s and s.get("kontrollUlikAvgrensning") and (e.get("enhet") or "") != "institusjon"
         if ulik:
             rad["merknad"] = " ".join(x for x in (rad.get("merknad"), "Ikke sammenlignet: " + s["kontrollUlikAvgrensning"]) if x)
+        if e.get("ikkeSammenlignbar"):  # avklart at kilden måler noe annet (kontroll 22.10.2026)
+            ulik = True
+            rad["merknad"] = " ".join(x for x in (rad.get("merknad"), "Ikke sammenlignet: " + e["ikkeSammenlignbar"]) if x)
         if s and felt and e.get("aar") is not None and not ulik:
             inst = (e.get("enhet") or "") == "institusjon" and not s.get("ren")
             kilde = s["dbhInst"] if inst else s["dbh"]
@@ -526,10 +538,30 @@ def main():
         return ut
 
     # ── NVA-artikler ──
+    def dubletter(sid):
+        """NVA-id-er som er samme artikkel registrert to ganger (lik tittel og tidsskrift-ISSN innen skolen). Den første
+        NVI-rapporterte (ellers første) beholdes. Kontroll 22.10.2026: ca. 16 NVI-artikler, f.eks. samme artikkel i 2024 og 2025."""
+        sett, kast = {}, set()
+        poster = []
+        for f in sorted((RANG / "nva" / sid).glob("*.json")):
+            for x in json.loads(f.read_text(encoding="utf-8"))["artikler"]:
+                t = re.sub(r"\W+", " ", (x.get("tittel") or "").lower()).strip()
+                j = issn(x.get("issn")) or issn(x.get("eissn")) or (x.get("tidsskrift") or "").lower()
+                if len(t) >= 25 and j:  # korte titler («Editorial», «Introduction») kan være ulike artikler
+                    poster.append(((t, j), not x.get("nvi"), x["id"]))
+        for nokkel, ikke_nvi, pid in sorted(poster):
+            if nokkel in sett and sett[nokkel] != pid:
+                kast.add(pid)
+            else:
+                sett.setdefault(nokkel, pid)
+        return kast
+
     def artikler(sid):
         per_aar, topp, fag = {}, [], collections.Counter()
+        kast = dubletter(sid)
         for f in sorted((RANG / "nva" / sid).glob("*.json")):
             d = json.loads(f.read_text(encoding="utf-8"))
+            d["artikler"] = [x for x in d["artikler"] if x["id"] not in kast]
             aar = str(d["aar"])
             s = collections.Counter(); ajg = collections.Counter(); abdc = collections.Counter()
             # Lagdelt forskningsmål: per kombinasjon av norsk nivå, ABDC, FT50/UTD24 og AJG lagres antall artikler
@@ -681,7 +713,11 @@ def main():
         felt = m.group(2)
         g = re.search(r"grade: ([\d.]+)", felt); y = re.search(r"year: '(\d{4})'", felt)
         n = re.search(r"note: '([^']*)'", felt); u = re.search(r"url: '([^']*)'", felt)
+        k = re.search(r"kind: '(\w+)'", felt)
+        # type: grense (reell grense i siste opptak), minstekrav, alle (alle kvalifiserte inn) eller anslag. Bare grenser
+        # brukes i rangeringen (kontroll 22.10.2026: BI og UiT oppga minstekrav, INN «alle», Nord og Kristiania uten kilde).
         siv[m.group(1)] = {"aar": int(y.group(1)) if y else None, "grense": float(g.group(1)) if g else None,
+                           "type": k.group(1) if k else ("anslag" if "estimated: true" in felt else "grense"),
                            "estimert": "estimated: true" in felt, "merknad": n.group(1) if n else None, "url": u.group(1) if u else None}
     print("Siviløkonom-grenser:", {k: v["grense"] for k, v in siv.items()})
 

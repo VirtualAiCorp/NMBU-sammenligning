@@ -6,7 +6,7 @@ data/rangering/inspirasjon/nevner-*.md) og Vipunen-API-et for Finland, og velger
 reglene i REGLER under. Norge er ikke med her: de norske enhetene bruker DBH-årsverkene fra build-rangering.py.
 
 To varianter, som i AJG-sammenligningen:
-  med   ≈ HK-dirs UN1 + UN2 (faglige + stipendiater/doktorander og postdoktorer)
+  med   ≈ HK-dirs UN1 + stipendiater + postdoktorer (faglige + stipendiater/doktorander og postdoktorer)
   uten  ≈ NHHs nevner (uten stipendiater/doktorander)
 
 Kvalitet (vises i fanen):
@@ -181,7 +181,7 @@ def main():
     mangler = [(e, y) for e, v in ut.items() for y, t in v["aar"].items() if t["med"] is None]
     (NEV / "nevner.json").write_text(json.dumps({
         "generert": dt.date.today().isoformat(),
-        "merknad": "Valgt nevner per nordisk enhet og år (scripts/rangering/lag_nevner_norden.py). med ≈ UN1 + UN2, uten ≈ uten stipendiater/doktorander.",
+        "merknad": "Valgt nevner per nordisk enhet og år (scripts/rangering/lag_nevner_norden.py). med ≈ UN1 + stipendiater + postdoktorer, uten ≈ uten stipendiater/doktorander.",
         "enheter": ut}, ensure_ascii=False, indent=1), encoding="utf-8")
     for e, v in ut.items():
         rad = " ".join(f"{t['med'] if t['med'] is not None else '–':>6}" for t in v["aar"].values())

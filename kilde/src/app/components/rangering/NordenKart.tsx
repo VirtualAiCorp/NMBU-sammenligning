@@ -11,7 +11,7 @@ import geo from './norden-kart.json';
 
 export type KartMaal = 'p4' | 'p3' | 'fwci' | 't10' | 'poeng' | 'plass';
 export type KartVis = 'norden' | 'sor' | 'oslo' | 'oresund' | 'ost';
-/** uff = med stipendiater/doktorander (HK-dir UN1 + UN2, standard); utenStip = uten (NHHs nevner, svensk «forskande och undervisande») */
+/** uff = med stipendiater/doktorander (HK-dir UN1 + stipendiater + postdoktorer, standard); utenStip = uten (NHHs nevner, svensk «forskande och undervisande») */
 export type KartNevner = 'uff' | 'utenStip';
 export interface KartValg { maal: KartMaal; fra: number; til: number; anslag: boolean; ref: boolean; vis: KartVis; valgt: string | null; nevner: KartNevner; }
 export interface KartEnhet {
@@ -32,7 +32,7 @@ const nf = (v: number | null | undefined, d = 1) => v == null || !Number.isFinit
 // ── Mål og fargeskala (fem klasser, faste grenser så fargene ikke flytter seg med utvalget) ───────────────────
 export const KART_MAAL: Record<KartMaal, { navn: string; kort: string; grenser: number[]; d: number; lavBest?: boolean; bareNorge?: boolean; /** siteringsmål (OpenAlex) */ sit?: boolean; title: string; setning: string }> = {
   p4: { navn: 'AJG 4/4* per 100 faglige årsverk og år', kort: 'AJG 4+ per 100 årsverk', grenser: [3, 6, 10, 15], d: 1, setning: 'AJG 4/4* per 100 faglige årsverk og år',
-    title: 'Artikler i tidsskrift på AJG 2024 nivå 4 eller 4* per 100 faglige årsverk og år (Norge: HK-dirs nevner UN1 + UN2)' },
+    title: 'Artikler i tidsskrift på AJG 2024 nivå 4 eller 4* per 100 faglige årsverk og år (Norge: HK-dirs nevner UN1 + stipendiater + postdoktorer)' },
   p3: { navn: 'AJG 3+ per 100 faglige årsverk og år', kort: 'AJG 3+ per 100 årsverk', grenser: [15, 25, 35, 45], d: 1, setning: 'AJG 3+ per 100 faglige årsverk og år',
     title: 'Artikler i tidsskrift på AJG 2024 nivå 3, 4 eller 4* per 100 faglige årsverk og år' },
   // Siteringsmål fra OpenAlex (fanen «Siteringer»): samme kilde for alle land, uavhengig av tidsskriftlister
@@ -41,7 +41,7 @@ export const KART_MAAL: Record<KartMaal, { navn: string; kort: string; grenser: 
   t10: { navn: 'Topp 10 % mest siterte per 100 faglige årsverk og år (OpenAlex)', kort: 'Topp 10 % per 100 årsverk', grenser: [20, 30, 45, 65], d: 1, setning: 'artikler blant de 10 % mest siterte i fagfelt og år per 100 faglige årsverk og år', sit: true,
     title: 'Artikler blant de 10 % mest siterte i sitt fagfelt og år (OpenAlex) per 100 faglige årsverk og år' },
   poeng: { navn: 'Publiseringspoeng per faglig årsverk (bare Norge)', kort: 'Poeng per årsverk', grenser: [0.5, 0.8, 1.1, 1.4], d: 2, bareNorge: true, setning: 'publiseringspoeng per faglig årsverk (bare Norge)',
-    title: 'Publiseringspoeng (DBH 373) per faglig årsverk (UN1 + UN2, DBH 225), snitt i perioden. Finnes bare for Norge.' },
+    title: 'Publiseringspoeng (DBH 373) per faglig årsverk (UN1 + stipendiater + postdoktorer, DBH 225), snitt i perioden. Finnes bare for Norge.' },
   plass: { navn: 'Plass i den norske rangeringen', kort: 'Plass i rangeringen', grenser: [3.5, 6.5, 9.5, 12.5], d: 0, lavBest: true, bareNorge: true, setning: 'plassen i den norske rangeringen (mørkest = best)',
     title: 'Plass i den samlede norske rangeringen med vektene som er valgt i fanen «Rangering og vekter»' },
 };
@@ -289,7 +289,7 @@ export function NordenKart({ enheter, uten, v, std, sett, aar, apneProfil, apneA
               </select>
             </label>
             {!(v.maal === 'plass') && <div className="ajg-g" role="group" aria-label="Per 100"><span className="lab">Per 100</span>
-              <button type="button" className="seg" aria-pressed={v.nevner === 'uff'} onClick={() => set({ nevner: 'uff' })} title="Faglige årsverk med stipendiater og postdoktorer (HK-dir, UN1 + UN2). Andre land: med doktorander der det finnes (Finland trinn I–IV, danske VIP-årsverk, SSE/LUSEM/GU).">med stipendiater</button>
+              <button type="button" className="seg" aria-pressed={v.nevner === 'uff'} onClick={() => set({ nevner: 'uff' })} title="Faglige årsverk med stipendiater og postdoktorer (HK-dir, UN1 + stipendiater + postdoktorer). Andre land: med doktorander der det finnes (Finland trinn I–IV, danske VIP-årsverk, SSE/LUSEM/GU).">med stipendiater</button>
               <button type="button" className="seg" aria-pressed={v.nevner === 'utenStip'} onClick={() => set({ nevner: 'utenStip' })} title="Faglige årsverk uten stipendiater (NHH: UN1 + postdoktorer). Andre land: Finland trinn II–IV, Sverige «forskande och undervisande personal». Danmark har ikke tallet.">uten</button>
             </div>}
             <div className="ajg-g" role="group" aria-label="Utvalg">
@@ -336,7 +336,7 @@ export function NordenKart({ enheter, uten, v, std, sett, aar, apneProfil, apneA
 
       <section className="sec" aria-label="Tabell">
         <header><span className="lab">Tabell</span><h2>Alle enhetene på kartet</h2>
-          <p className="cap">Sortert etter {m.kort.toLowerCase()}. Norge: {periodeTekst}, NVI-artikler, hel telling, {v.nevner === 'uff' ? 'HK-dirs nevner (UN1 + UN2)' : 'NHHs nevner (UN1 + postdoktorer)'}, som i AJG-sammenligningen. Andre land: rapportens periode og nevner; kursiv = anslag. Klikk en rad for detaljer.</p></header>
+          <p className="cap">Sortert etter {m.kort.toLowerCase()}. Norge: {periodeTekst}, NVI-artikler, hel telling, {v.nevner === 'uff' ? 'HK-dirs nevner (UN1 + stipendiater + postdoktorer)' : 'NHHs nevner (UN1 + postdoktorer)'}, som i AJG-sammenligningen. Andre land: rapportens periode og nevner; kursiv = anslag. Klikk en rad for detaljer.</p></header>
         <div className="scroll">
           <table className="ajg-tab kart-tab">
             <thead><tr>
@@ -359,7 +359,7 @@ export function NordenKart({ enheter, uten, v, std, sett, aar, apneProfil, apneA
       <section className="ajg-metode" aria-label="Om kartet">
         <span className="lab">Om kartet</span>
         <ul>
-          <li><b>Norge:</b> samme beregning som AJG-sammenligningen: NVI-rapporterte artikler i NVA koblet mot AJG 2024 på ISSN, hel telling, sum artikler / sum faglige årsverk (DBH 225, UN1 + UN2, eller UN1 + postdoktorer med «uten») × 100 for perioden. Poeng per årsverk = sum publiseringspoeng / sum faglige årsverk med samme nevner. Plass følger vektene i «Rangering og vekter».</li>
+          <li><b>Norge:</b> samme beregning som AJG-sammenligningen: NVI-rapporterte artikler i NVA koblet mot AJG 2024 på ISSN, hel telling, sum artikler / sum faglige årsverk (DBH 225, UN1 + stipendiater + postdoktorer, eller UN1 + postdoktorer med «uten») × 100 for perioden. Poeng per årsverk = sum publiseringspoeng / sum faglige årsverk med samme nevner. Plass følger vektene i «Rangering og vekter».</li>
           <li><b>Danmark, Sverige og Finland</b> er foreløpige anslag fra utforskningsrapportene 7.10.2026 (data/rangering/inspirasjon/norden-*.md): Danmark er enhetsavgrenset i Pure (2024; CBS også 2023–2025), Sverige enhetsavgrenset i SwePub (2023–2025), Finland fagfeltavgrenset (511 + 512, Vipunen/Research.fi). Nevneren finnes ikke for alle: danske institutter har ingen åpen nevner, og i Sverige finnes nevner med doktorander bare for SSE, LUSEM og GU. De andre svenske vises med nevneren uten doktorander som reserve, merket ‡ (gir noe høyere tall per 100 enn med). Tallene er ikke kontrollert mot skolenes egne og er ikke del av rangeringen.</li>
           {harSit && <li><b>Siteringsmålene</b> (snitt FWCI og topp 10 % per 100 årsverk) er fra OpenAlex for alle land, se fanen «Siteringer». Norge: NVA-artiklene (NVI-rapporterte) koblet til OpenAlex på DOI eller tittel. Andre land: artiklene OpenAlex knytter til enheten (hel institusjon, tilknytningstekst eller fagfelt), i den valgte perioden; nevneren er fra utforskningsrapportene og gjelder bare enkelte år (* = annen periode, ‡ = uten stipendiater). Ferske år ({aar[1] - 1}–{aar[1]}) har få siteringer og er foreløpige.</li>}
           <li><b>Kartgrunnlag:</b> Natural Earth 1:50m (offentlig eiendom) via world-atlas (ISC-lisens), forenklet og tegnet som innebygd SVG. Kartet henter ingenting fra eksterne tjenester. Sirklene står ved hovedcampus; skoler med flere studiesteder har ett punkt.</li>

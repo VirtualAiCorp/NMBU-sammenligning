@@ -1558,3 +1558,29 @@ og Excel-uttrekket fra dbh.hkdir.no (publisering): OsloMet 0,62 mot 0,98, UiS h�
   tabell). Hvert år = året og de to foregående; poeng per årsverk = sum poeng / sum årsverk (rangeringen bruker snitt av de
   årlige forholdstallene; forskjellen er høyst 0,02, median 0,002); nivå 2-andelen er enkelt snitt. OsloMet 2023–25: 0,83
   (enkeltår 2025: 0,62). Forklaringen nevner svingningene (20–36 % per år for de minste enhetene, 3 % for BI).
+
+## 65. Kontroll med fem agenter: rettede feil og samlede forbehold (22.10.2026)
+
+Fem Sonnet-agenter gikk gjennom DBH-grunnlaget, NVA mot DBH, tidsskriftkoblingen, utdanning/anerkjennelse og kildetekstene
+(rapporter i økt-scratchpad, ikke i repoet). Mathias valgte å rette «klare feil» (A) og «forklaringer/forbehold» (C).
+- **Siviløkonomgrensen:** `MASTER_ADMISSION` har nytt felt `kind` (grense/minstekrav/alle/anslag). BI 3,50 og UiT 3,00 er
+  minstekrav, INN «alle», Nord 2,50 og Kristiania 2,75 uten kilde. Rangeringen bruker bare reelle grenser (`sivGrense()`);
+  de andre vises merket i skoleportrettet. NTNU 2026 = 3,80, UiS 2026 = 2,95 (laveste spesialisering, som USN).
+- **Akkrediteringer:** bare AACSB og EQUIS teller; AMBA gjelder bare MBA-programmene.
+- **Per årsverk og år:** lagdelt forskning, AJG 4/4* (og anslaget) og FT50/UTD24 var periodesummer delt på snittet av
+  årsverk. Nå sum / sum årsverk i perioden (`per100Aar()`, `lagResultat`), og år uten DBH-årsverk (HVL før 2024) er utelatt
+  i teller og nevner. Rangeringen endres bare for HVL (min–maks); verdiene er om lag en femdel av før.
+- **Tekster:** «UN1 + UN2» erstattet overalt; enhetsmerknader i skoler.json for BI (årsverk på instituttene), NMBU
+  (470210 fra 2024), UiA, Nord, INN, HVL og Kristiania.
+- **Kontrolltall:** feltet `ikkeSammenlignbar` i eksterne-tall.json: NHH-rapportens 1,72 for HH 2025 (bruker bare 470000:
+  68,8 / 39,9), HH-infografikkens 29 % nivå 2, INNs «over 0,9», Kristianias foreløpige 223. Kontroll: 657 av 677.
+  Kvalitetssikringsfanen viser treff for fagmiljø og institusjon hver for seg, og «Vårt» viser nevneren avviket er regnet mot.
+- **Tidsskrift:** `data/rangering/tidsskrift/alias.csv` (8 tidsskrift med annet ISSN i NVA enn på lista, bare bekreftede
+  par; aldri tittelkobling). Dobbeltregistrerte NVA-artikler (lik tittel ≥ 25 tegn og ISSN innen skolen) fjernes
+  (`dubletter()`), NVI-rapportert først: 19 NVI-artikler.
+- **Forklaringer:** fast linje under fanene (fagmiljø, ikke institusjon), «Avgrensning per skole» og «Forbehold og kjente
+  svakheter» i Metode og kilder (enhetsavgrensning, brudd, artikler mot poeng/bøker, NVA 2025, finansiering og nivå 2-brudd,
+  lister bakover og ABDC A*-dominans, nevnersammensetning, dobbelttelling, forfatterandel, utdanningsmål, svingninger).
+  AJG-kortet i Publisering er merket som NHH-rapportens tall.
+- **Ikke gjort (pakke B og D):** fylle 2016–17 fra forløperinstitusjoner, INN 440100 2018–20, og metodevalgene om ABDC A*
+  som Topp, listeversjon per år, FT50 2016/2026 og forfatterandel.

@@ -12,7 +12,7 @@ Kilder (alle lokale, bygges av andre skript):
   data/rangering/openalex/enheter-norden.json (og ev. enheter-norge.json)   avgrensningen per enhet
   data/rangering/openalex/ajg-kilder.json            ISSN → OpenAlex-kilde for AJG-tidsskriftene
   data/rangering/norden/nevner/nevner.json           nevner per nordisk enhet og år med kvalitet (lag_nevner_norden.py)
-  DBH (via build-rangering.py)                       nevner for de norske enhetene (UN1 + UN2 og UN1 + postdoktorer)
+  DBH (via build-rangering.py)                       nevner for de norske enhetene (UN1 + stipendiater + postdoktorer og UN1 + postdoktorer)
 
 Ut går bare aggregater per enhet og år: [artikler, AJG 4*, 4, 3, 2, 1, i AJG-tidsskrift]. Ingen artikkel-id-er, ingen
 navn og ingen AJG-nivå per tidsskrift.
