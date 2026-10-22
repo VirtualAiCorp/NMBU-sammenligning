@@ -110,7 +110,7 @@ def lag_skandinavia(skoler, ajg, aar):
             s = norske[eid]
             meta = {"kort": s["kort"], "navn": s["navn"], "referanse": s["referanse"], "meg": bool(s.get("isNmbu"))}
             nev = {"kvalitet": "god", "nivaa": "Enhetens avdelinger i DBH", "kilde": "DBH/HK-dir tabell 225 (årsverk)",
-                   "forklaring": "Med = UN1 + UN2 (HK-dirs nevner), uten = UN1 + postdoktorer (NHHs nevner)."}
+                   "forklaring": "Med = UN1 + stipendiater + postdoktorer (HK-dirs nevner), uten = UN1 + postdoktorer (NHHs nevner)."}
         else:
             meta = {**navn[eid], "meg": False}
             n = nevner.get(eid) or {}

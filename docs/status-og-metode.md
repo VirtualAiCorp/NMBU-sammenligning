@@ -1527,3 +1527,26 @@ land (også Norge), svake nevnere vises med kvalitetsmerke (skjult per 100 som s
 - **Gjenstår:** fakultetenes egne årsverk for LUSEM, JIBS, Umeå, Örebro, LNU, Karlstad, SDU, AAU, RUC og AU-instituttene
   (kontaktadresser og bestillingstekst i `inspirasjon/nevner-danmark.md` og `nevner-sverige.md`); lav OpenAlex-dekning for
   Kristiania, HiØ, OsloMet, UiO økonomi og de store svenske fakultetene (LUSEM, GU, Umeå 40–48 % mot SwePub).
+
+## 64. Publisering: DBH-tallene gjenskapt eksakt, nivåvalg og «Slik er tallene regnet ut» (22.10.2026)
+
+Kollega (Nicolay) sammenlignet grafen «Poeng per faglig årsverk (UFF)» i Rangering → Publisering med DBHs institusjonsprofil
+og Excel-uttrekket fra dbh.hkdir.no (publisering): OsloMet 0,62 mot 0,98, UiS høyere enn 1,28, BI 1,26 mot 1,25.
+- **OsloMet og UiS:** ingen feil i dataene. Grafen viser fagmiljøet (OsloMet: instituttet Handelshøyskolen 530350 under SAM;
+  UiS: Handelshøgskolen, fakultet 230, uten Norsk hotellhøgskole), kollegaens tabeller hele institusjonen (OsloMet 1 423,61
+  poeng, UiS 1 360,74 i 2025). Våre institusjonstall (`dbhInst`) treffer hans tabeller eksakt.
+- **Nevneren rettet:** «faglige årsverk inkl. stipendiater» = UN1 + stipendiater + postdoktorer. Før tok vi med hele UN2, også
+  vitenskapelige assistenter (1018–1020) og spesialistkandidater (1476). Ny nevner treffer alle 12 tallene for OsloMet og UiS
+  2020–2025 og BIs 406,50 årsverk i 2025 eksakt (før: 0,01 for lavt de fleste år).
+- **Institusjonstotalen rettet:** 373 avdeling 000000 består av en summeringsrad (kanaltype 0) og publikasjoner registrert
+  direkte på institusjonen (kanaltype 1/2). Summeringsraden stemmer ikke alltid (BI 2025: 516,9; avdelingene 497,8; HK-dir
+  507,3). Totalen er nå avdelingene + de direkte registrerte (`tot_rad()` i build-rangering.py; 373 og 374 hentes med «Kode
+  for type publiseringskanal»). Treffer HK-dirs V15.2 for BI 2016, 2020, 2022, 2023 og 2025. Kontroll: 641 av 681 innen ±2 %
+  (før 619). Fagmiljøtallene bruker bare avdelingsrader; publikasjoner som bare står på institusjonen, kan ikke plasseres.
+- **Publiseringspoeng med to desimaler** (som DBH).
+- **Fanen Publisering:** nivåvalg «Handelshøyskolen / fagmiljøet» eller «Hele institusjonen» (grafen og tabellen), tabell
+  «Vitenskapelig publisering» i DBHs oppsett (publiseringspoeng, poeng per faglig årsverk inkl. stipendiater, andel
+  forfatterandeler på nivå 2, årsverk) for de valgte skolene siste seks år, og nedtrekksfeltet «Slik er tallene regnet ut»:
+  kilder, nevner, totalregelen og per skole DBH-institusjon, avdelingskoder med navn (DBH 457, enheten = laveste SSB-kode)
+  og merknaden fra skoler.json. NTNU = NTNU Handelshøyskolen + Institutt for samfunnsøkonomi + IØT (de tre «handelshøyskole»-
+  miljøene kollegaen nevnte), uten Ålesund.

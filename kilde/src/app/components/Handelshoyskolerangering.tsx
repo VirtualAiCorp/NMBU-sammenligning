@@ -30,6 +30,8 @@ interface Skole {
   id: string; navn: string; navnEn?: string | null; kort: string; institusjon?: string | null; isNmbu: boolean; ren: boolean; referanse: boolean;
   akkreditering: (Akk | string)[]; rangeringer: (Record<string, unknown> | string)[]; enhetNotat?: string | null;
   dbh: Record<string, DbhAar>; artikler: Record<string, ArtAar>; topp: Topp[]; ajgFagfelt: Record<string, number>;
+  /** Hele institusjonen (DBH-totalen), samme felt som dbh */ dbhInst?: Record<string, DbhAar>;
+  /** Hvilke DBH-enheter som er summert i dbh */ dbhEnhet?: { inst: string[]; avdelinger: string[]; hele: boolean; avdelingNavn?: Record<string, string>; merknad?: string | null };
   utdanning: Partial<Record<'oa' | 'moa', Utd>> & { siv?: Siv | null };
   /** ABS/AJG 4*, 4 og 3 per år fra NHHs forskningsrapport (åtte skoler), antall og per årsverk. */
   ajgNhh?: Record<string, Partial<Record<'4*' | '4' | '3', { n: number; perFte: number }>>> | null;
@@ -141,7 +143,7 @@ const TRINN_FORKLARING: Record<Exclude<Trinn, 'null'>, string> = {
 };
 const TRINN_FARGE: Record<Exclude<Trinn, 'null'>, string> = { basis: '#9FCFC2', hoy: '#3F8E7B', topp: '#014238' };
 const RANG: Record<Trinn, number> = { null: 0, basis: 1, hoy: 2, topp: 3 };
-interface Lag { fra: number; til: number; brok: boolean; /** uff = UN1 + UN2 (HK-dir); utenStip = UN1 + postdoktorer (NHH) */ nevner: 'uff' | 'utenStip'; vekter: Record<'basis' | 'hoy' | 'topp', number>; abdc: boolean; ft: boolean; ajg: boolean; /** bare NVI-rapporterte artikler (HK-dirs grunnlag) */ kunNvi: boolean; }
+interface Lag { fra: number; til: number; brok: boolean; /** uff = UN1 + stipendiater + postdoktorer (HK-dir); utenStip = UN1 + postdoktorer (NHH) */ nevner: 'uff' | 'utenStip'; vekter: Record<'basis' | 'hoy' | 'topp', number>; abdc: boolean; ft: boolean; ajg: boolean; /** bare NVI-rapporterte artikler (HK-dirs grunnlag) */ kunNvi: boolean; }
 const lagStandard = (y1: number): Lag => ({ fra: y1 - 4, til: y1, brok: true, nevner: 'uff', vekter: { basis: 1, hoy: 3, topp: 5 }, abdc: true, ft: true, ajg: true, kunNvi: true });
 
 function trinnFor(nokkel: string, lag: Lag): { t: Trinn; loftet: boolean } {
@@ -207,10 +209,10 @@ function lagIndikatorer(d: Data, lag: Lag): Ind[] {
       : { id: 'abdcA', label: 'Andel ABDC A/A*', dim: 'Forskning', vekt: 0, desc: `Andel av artiklene ${fem[0]}–${y1} i tidsskrift med ABDC A eller A*. NVA × ABDC. Inngår i det lagdelte målet, derfor vekt 0 som standard.`,
           fmt: (v) => nf(v, 0) + ' %', verdi: (s) => { const a = artSum(s, fem); return a.n ? 100 * a.abdcA / a.n : null; } },
     harAjg
-      ? { id: 'ajg4', label: 'AJG 4/4* per 100 årsverk', dim: 'Forskning', vekt: 10, desc: `Artikler ${fem[0]}–${y1} i tidsskrift på AJG 2024 nivå 4 eller 4* per 100 årsverk (UN1 + UN2, snitt). NVA × AJG, alle skoler.`,
+      ? { id: 'ajg4', label: 'AJG 4/4* per 100 årsverk', dim: 'Forskning', vekt: 10, desc: `Artikler ${fem[0]}–${y1} i tidsskrift på AJG 2024 nivå 4 eller 4* per 100 årsverk (UN1 + stipendiater + postdoktorer, snitt). NVA × AJG, alle skoler.`,
           fmt: (v) => nf(v, 1), verdi: (s) => { const n = artSum(s, fem).ajg4; const uff = snitt(fem.map((y) => s.dbh[y]?.uff)); return uff ? 100 * n / uff : null; } }
       : d.lister.ajgA
-      ? { id: 'ajgA', label: 'AJG 4/4*-anslag per 100 årsverk', dim: 'Forskning', vekt: 5, desc: `Anslått antall artikler ${fem[0]}–${y1} på AJG-nivå 4/4* per 100 årsverk (UN1 + UN2, snitt), alle 15 skoler. Anslaget bygger bare på åpne lister (FT50/UTD24, eller ABDC A* med OpenAlex-sitering ≥ 5) og er kalibrert mot NHH-rapportens AJG-tall (r = 0,98 per skole og år). Det er ikke AJG-nivåer.`,
+      ? { id: 'ajgA', label: 'AJG 4/4*-anslag per 100 årsverk', dim: 'Forskning', vekt: 5, desc: `Anslått antall artikler ${fem[0]}–${y1} på AJG-nivå 4/4* per 100 årsverk (UN1 + stipendiater + postdoktorer, snitt), alle 15 skoler. Anslaget bygger bare på åpne lister (FT50/UTD24, eller ABDC A* med OpenAlex-sitering ≥ 5) og er kalibrert mot NHH-rapportens AJG-tall (r = 0,98 per skole og år). Det er ikke AJG-nivåer.`,
           fmt: (v) => nf(v, 1), verdi: (s) => { const n = fem.reduce((a, y) => a + (s.artikler[y]?.ajgA?.topp ?? 0), 0); const uff = snitt(fem.map((y) => s.dbh[y]?.uff)); return uff ? 100 * n / uff : null; } }
       : null,
     { id: 'ajgNhh', label: 'AJG 4/4* per årsverk (NHH-rapporten)', dim: 'Forskning', vekt: d.lister.ajgA ? 0 : 10, desc: 'Artikler på AJG 2024 nivå 4 og 4* per årsverk (uten stipendiater), snitt 2022–2024. NHH Research Report 2024, tabell 4 og 5: bare åtte skoler (NHH, BI, NMBU, Nord, NTNU, UiA, UiS, UiT); for de andre fordeles vekten på de andre målene.',
@@ -840,7 +842,7 @@ function Forskningslab({ data, skoler, lag, std, setLag }: { data: Data; skoler:
               {th('artikler', 'Artikler', 'Antall artikler (hel telling) i perioden')}
               {th(null, lag.brok ? 'Forfatterandeler' : 'Telte', 'Summen av enhetens forfatterandeler (brøk) eller antall artikler (hel)')}
               {TRINN.map((tr) => th(null, TRINN_NAVN[tr], TRINN_FORKLARING[tr as 'basis']))}
-              {th(null, 'Årsverk', lag.nevner === 'uff' ? 'Snitt UN1 + UN2 (inkl. stipendiater) i perioden, DBH' : 'Snitt UN1 + postdoktorer (uten stipendiater) i perioden, DBH')}
+              {th(null, 'Årsverk', lag.nevner === 'uff' ? 'Snitt UN1 + stipendiater + postdoktorer (inkl. stipendiater) i perioden, DBH' : 'Snitt UN1 + postdoktorer (uten stipendiater) i perioden, DBH')}
               {th('noen', 'Dekning', 'Andel artikler i tidsskrift på minst én internasjonal liste (ABDC, FT50/UTD24, AJG)')}
               {th(null, 'ABDC')}
               {th(null, 'FT50/UTD24')}
@@ -889,11 +891,16 @@ function Publisering({ data }: { data: Data }) {
     return [hh, ...data.skoler.filter((s) => pref.includes(s.id)).map((s) => s.id)].filter((x): x is string => !!x).slice(0, 6);
   });
   const [maal, setMaal] = useState<'poengPerUff' | 'niva2AndelFa' | 'publPoeng'>('poengPerUff');
+  // «enhet» = handelshøyskolen/fagmiljøet slik rangeringen avgrenser det; «inst» = hele institusjonen, som DBHs egne tabeller
+  const [niva, setNiva] = useState<'enhet' | 'inst'>('enhet');
+  const dbhAv = (s: Skole | undefined) => (niva === 'inst' ? s?.dbhInst : s?.dbh) ?? {};
   const [liste, setListe] = useState<'ajg' | 'abdc'>(data.lister.ajg ? 'ajg' : 'abdc');
   const [periode, setPeriode] = useState<'1' | '5'>('5');
   const aar = aarRekke(data.aar[0], y1);
   const farge = (id: string) => data.skoler.find((s) => s.id === id)?.isNmbu ? '#025C4F' : LINJEFARGER[1 + (data.skoler.findIndex((s) => s.id === id) % (LINJEFARGER.length - 1))];
-  const linje = aar.map((y) => ({ aar: y, ...Object.fromEntries(valgt.map((id) => [id, data.skoler.find((s) => s.id === id)?.dbh[y]?.[maal] ?? null])) }));
+  const linje = aar.map((y) => ({ aar: y, ...Object.fromEntries(valgt.map((id) => [id, dbhAv(data.skoler.find((s) => s.id === id))[y]?.[maal] ?? null])) }));
+  const tabellAar = aarRekke(y1 - 5, y1);
+  const valgteSkoler = valgt.map((id) => data.skoler.find((s) => s.id === id)).filter((s): s is Skole => !!s);
   const perAar = periode === '1' ? [String(y1)] : aarRekke(y1 - 4, y1);
   const nivaer = liste === 'ajg' ? ['ikke', '1', '2', '3', '4', '4*'] : ['ikke', 'C', 'B', 'A', 'A*'];
   const sekv = liste === 'ajg' ? ['#C9C4BC', '#CFE6DF', '#9FCFC2', '#5FA996', '#2E7D6B', '#014238'] : ['#C9C4BC', '#CFE6DF', '#8CC4B5', '#3F8E7B', '#014238'];
@@ -908,12 +915,17 @@ function Publisering({ data }: { data: Data }) {
       <AjgKort data={data} />
       <div className="rounded-2xl p-5" style={kort}>
         <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
-          <div style={{ fontSize: 14, fontWeight: 600, color: GRONN }}>{MAAL[maal]}, {data.aar[0]}–{y1}</div>
+          <div style={{ fontSize: 14, fontWeight: 600, color: GRONN }}>{MAAL[maal]}, {data.aar[0]}–{y1}{niva === 'inst' ? ', hele institusjonen' : ''}</div>
           <div className="flex gap-1">
             {(Object.keys(MAAL) as (keyof typeof MAAL)[]).map((m) => (
               <button key={m} onClick={() => setMaal(m)} className="px-3 py-1 rounded-md text-xs" style={maal === m ? { backgroundColor: GRONN, color: '#fff' } : { backgroundColor: 'var(--nmbu-beige-light)', color: 'var(--nmbu-neutral-1)' }}>{MAAL[m].split(' (')[0]}</button>
             ))}
           </div>
+        </div>
+        <div className="flex flex-wrap items-center gap-1 mb-3 text-xs">
+          <span style={{ fontWeight: 700, color: 'var(--nmbu-neutral-2)', marginRight: 4 }}>NIVÅ</span>
+          <button onClick={() => setNiva('enhet')} className="px-3 py-1 rounded-md text-xs" style={knappStil(niva === 'enhet')} title="Handelshøyskolen eller økonomimiljøet, avgrenset til fakultet eller institutt (se «Slik er tallene regnet ut»)">Handelshøyskolen / fagmiljøet</button>
+          <button onClick={() => setNiva('inst')} className="px-3 py-1 rounded-md text-xs" style={knappStil(niva === 'inst')} title="Hele institusjonen, som DBHs egne tabeller og HK-dirs tilstandsrapport">Hele institusjonen</button>
         </div>
         <div className="flex flex-wrap gap-1.5 mb-3">
           {data.skoler.map((s) => {
@@ -932,6 +944,8 @@ function Publisering({ data }: { data: Data }) {
             {valgt.map((id) => <Line key={id} type="monotone" dataKey={id} stroke={farge(id)} strokeWidth={data.skoler.find((s) => s.id === id)?.isNmbu ? 3 : 2} dot={{ r: 3 }} connectNulls />)}
           </LineChart>
         </ResponsiveContainer>
+        <PubliseringTabell skoler={valgteSkoler} aar={tabellAar} dbhAv={dbhAv} niva={niva} />
+        <SlikRegnet skoler={valgteSkoler} />
       </div>
 
       <div className="rounded-2xl p-5" style={kort}>
@@ -957,6 +971,94 @@ function Publisering({ data }: { data: Data }) {
         </p>
       </div>
     </div>
+  );
+}
+
+// Samme tre indikatorer og oppsett som DBHs institusjonsprofil («7. Vitenskapelig publisering»), for de valgte skolene
+function PubliseringTabell({ skoler, aar, dbhAv, niva }: { skoler: Skole[]; aar: number[]; dbhAv: (s: Skole) => Record<string, DbhAar>; niva: 'enhet' | 'inst' }) {
+  const rader: { navn: string; felt: keyof DbhAar; d: number }[] = [
+    { navn: 'Publiseringspoeng', felt: 'publPoeng', d: 2 },
+    { navn: 'Publiseringspoeng per faglige årsverk inkl. stipendiater', felt: 'poengPerUff', d: 2 },
+    { navn: 'Andel forfatterandeler på nivå 2 (%)', felt: 'niva2AndelFa', d: 1 },
+    { navn: 'Faglige årsverk inkl. stipendiater og postdoktorer', felt: 'uff', d: 1 },
+  ];
+  if (!skoler.length) return null;
+  const mono = { fontFamily: 'var(--font-mono, monospace)' } as const;
+  return (
+    <div className="mt-4 overflow-x-auto">
+      <div style={{ fontSize: 13, fontWeight: 600, color: GRONN }} className="mb-1">Vitenskapelig publisering, {niva === 'inst' ? 'hele institusjonen' : 'handelshøyskolen / fagmiljøet'}</div>
+      <table className="w-full text-xs" style={{ borderCollapse: 'collapse', minWidth: 640 }}>
+        <thead>
+          <tr style={{ color: 'var(--nmbu-neutral-2)', borderBottom: '1px solid var(--nmbu-neutral-3)' }}>
+            <th className="text-left px-2 py-1.5">Indikator</th>
+            {aar.map((y) => <th key={y} className="text-right px-2 py-1.5">{y}</th>)}
+          </tr>
+        </thead>
+        <tbody>
+          {skoler.map((s) => (
+            <Fragment key={s.id}>
+              <tr style={{ backgroundColor: 'var(--nmbu-beige-light)' }}><td colSpan={aar.length + 1} className="px-2 py-1" style={{ fontWeight: 600 }}>{niva === 'inst' ? (s.institusjon ?? s.navn) : s.navn}</td></tr>
+              {rader.map((r) => (
+                <tr key={r.felt} style={{ borderBottom: '1px solid var(--nmbu-beige-light)' }}>
+                  <td className="px-2 py-1">{r.navn}</td>
+                  {aar.map((y) => <td key={y} className="text-right px-2 py-1" style={mono}>{nf(dbhAv(s)[String(y)]?.[r.felt] as number | null | undefined, r.d)}</td>)}
+                </tr>
+              ))}
+            </Fragment>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+// Forklaring bak et nedtrekksfelt: kilder, nevner og nøyaktig hvilke DBH-enheter som er summert per skole
+function SlikRegnet({ skoler }: { skoler: Skole[] }) {
+  return (
+    <details className="mt-4 text-xs" style={{ color: 'var(--nmbu-neutral-1)' }}>
+      <summary style={{ cursor: 'pointer', fontWeight: 600, color: GRONN }}>Slik er tallene regnet ut</summary>
+      <div className="mt-2 grid gap-2" style={{ maxWidth: '90ch', lineHeight: 1.55 }}>
+        <p>
+          <b>Kilde:</b> Database for statistikk om høyere utdanning (DBH, HK-dir), <a href="https://dbh.hkdir.no/tall-og-statistikk/statistikk-meny/publisering" target="_blank" rel="noreferrer" style={{ color: GRONN, textDecoration: 'underline' }}>dbh.hkdir.no/…/publisering</a>, hentet via DBHs API:
+          publiseringspoeng (tabell 373), nivå 2 (tabell 374) og årsverk (tabell 225). Tallene på institusjonsnivå er de samme som i DBHs
+          institusjonsprofil, Excel-uttrekket og HK-dirs tilstandsrapport (vedlegg V15.1–V15.3).
+        </p>
+        <p>
+          <b>Faglige årsverk inkl. stipendiater</b> = undervisnings- og forskerstillinger (UN1) + stipendiater + postdoktorer. Ikke med: faglige ledere (UN3),
+          andre undervisningsstillinger (UN4), vitenskapelige assistenter, spesialistkandidater, administrasjon og drift. NHH regner i sin forskningsrapport
+          uten stipendiater; den varianten ligger i fanen «Slik rapporterer skolene».
+        </p>
+        <p>
+          <b>Publiseringspoeng for hele institusjonen</b> = summen av avdelingene + publikasjoner som er registrert direkte på institusjonen. DBHs egen
+          totalrad (avdeling 000000) avviker for noen få år (BI 2025: 516,9 mot HK-dirs 507,3), så den brukes ikke.
+        </p>
+        <p>
+          <b>Handelshøyskolen / fagmiljøet</b> er avdelingene under. Rangeringen sammenligner fagmiljøene, ikke hele institusjonen, fordi universitetene
+          har mange andre fag. Der handelshøyskolen er et institutt (OsloMet, UiT, HVL, HiØ), brukes instituttet; der den er et fakultet, hele fakultetet.
+          Publikasjoner som bare er registrert på institusjonsnivå, kommer ikke med i fagmiljøtallene. Små enheter svinger mye fra år til år.
+        </p>
+        <table className="w-full mt-1" style={{ borderCollapse: 'collapse' }}>
+          <thead>
+            <tr style={{ color: 'var(--nmbu-neutral-2)', borderBottom: '1px solid var(--nmbu-neutral-3)' }}>
+              <th className="text-left px-2 py-1">Skole</th><th className="text-left px-2 py-1">DBH-institusjon</th><th className="text-left px-2 py-1">Avdelinger som er med</th><th className="text-left px-2 py-1">Merknad</th>
+            </tr>
+          </thead>
+          <tbody>
+            {skoler.map((s) => {
+              const e = s.dbhEnhet;
+              return (
+                <tr key={s.id} style={{ borderBottom: '1px solid var(--nmbu-beige-light)', verticalAlign: 'top' }}>
+                  <td className="px-2 py-1" style={{ fontWeight: 600 }}>{s.kort}</td>
+                  <td className="px-2 py-1">{s.institusjon ?? '–'} ({e?.inst.join(', ') ?? '–'})</td>
+                  <td className="px-2 py-1">{!e ? '–' : e.hele ? 'Hele institusjonen' : e.avdelinger.map((a) => <div key={a}>{a}{e.avdelingNavn?.[a] ? ` ${e.avdelingNavn[a]}` : ''}</div>)}</td>
+                  <td className="px-2 py-1" style={{ color: 'var(--nmbu-neutral-2)' }}>{e?.merknad ?? ''}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    </details>
   );
 }
 
@@ -1055,7 +1157,7 @@ function SlikRapporterer({ data, lag }: { data: Data; lag: Lag }) {
             </select>
           </label>
           <div className="flex items-center gap-1"><span style={{ fontWeight: 700, color: 'var(--nmbu-neutral-2)', marginRight: 4 }}>ÅRSVERK</span>
-            <button onClick={() => setNevner('uff')} className="px-3 py-1 rounded-md" style={knappStil(nevner === 'uff')} title="UN1 + stipendiater og postdoktorer (UN2), som HK-dirs tilstandsrapport">HK-dir (med stipendiater)</button>
+            <button onClick={() => setNevner('uff')} className="px-3 py-1 rounded-md" style={knappStil(nevner === 'uff')} title="UN1 + stipendiater og postdoktorer, som HK-dirs tilstandsrapport og DBH">HK-dir (med stipendiater)</button>
             <button onClick={() => setNevner('utenStip')} className="px-3 py-1 rounded-md" style={knappStil(nevner === 'utenStip')} title="UN1 + postdoktorer, uten stipendiater, som NHHs forskningsrapport">NHH (uten stipendiater)</button>
           </div>
           <div className="flex items-center gap-1"><span style={{ fontWeight: 700, color: 'var(--nmbu-neutral-2)', marginRight: 4 }}>ARTIKLER</span>
@@ -1083,7 +1185,7 @@ function SlikRapporterer({ data, lag }: { data: Data; lag: Lag }) {
               <th className="px-2 py-2 text-left" style={thS}>Skole</th>
               <th className="px-2 py-2 text-right" style={thS}>Poeng</th>
               <th className="px-2 py-2 text-right" style={thS}>Publikasjoner</th>
-              <th className="px-2 py-2 text-right" style={thS} title={nevner === 'uff' ? 'UN1 + UN2' : 'UN1 + postdoktorer'}>Årsverk ({nevner === 'uff' ? 'HK-dir' : 'NHH'})</th>
+              <th className="px-2 py-2 text-right" style={thS} title={nevner === 'uff' ? 'UN1 + stipendiater + postdoktorer' : 'UN1 + postdoktorer'}>Årsverk ({nevner === 'uff' ? 'HK-dir' : 'NHH'})</th>
               <th className="px-2 py-2 text-right" style={{ ...thS, ...(nevner === 'uff' ? hk : {}) }}>Poeng per årsverk</th>
               <th className="px-2 py-2 text-right" style={{ ...thS, ...hk }} title="Tilstandsrapporten V15.3. Brukes i rangeringen.">Av forfatterandelene<div style={{ fontWeight: 400 }}>HK-dir · brukes</div></th>
               <th className="px-2 py-2 text-right" style={thS} title="NHH Research Report">Av poengene<div style={{ fontWeight: 400 }}>NHH</div></th>
@@ -1872,7 +1974,7 @@ function KontrollFane({ data }: { data: Data }) {
           </tbody>
         </table>
         <p className="text-xs mt-3" style={{ color: 'var(--nmbu-neutral-2)' }}>
-          «Vårt» er regnet fra DBH på samme nivå som kilden (hele institusjonen eller handelshøyskolen), med kildens definisjon: poeng per årsverk inkl. stipendiater = UN1 + UN2 (HK-dir), ekskl. stipendiater = UN1 + postdoktorer (NHH); nivå 2-andel av poeng, forfatterandeler eller publikasjoner etter hva kilden oppgir. Er definisjonen uklar, vises begge variantene, og avviket regnes mot den nærmeste (✓ = den alternative). Foreløpige 2025-tall og institusjonssammenslåinger (INN) gir de største avvikene.
+          «Vårt» er regnet fra DBH på samme nivå som kilden (hele institusjonen eller handelshøyskolen), med kildens definisjon: poeng per årsverk inkl. stipendiater = UN1 + stipendiater + postdoktorer (HK-dir), ekskl. stipendiater = UN1 + postdoktorer (NHH); nivå 2-andel av poeng, forfatterandeler eller publikasjoner etter hva kilden oppgir. Er definisjonen uklar, vises begge variantene, og avviket regnes mot den nærmeste (✓ = den alternative). Foreløpige 2025-tall og institusjonssammenslåinger (INN) gir de største avvikene.
         </p>
       </div>
     </div>
@@ -1891,7 +1993,7 @@ const AJG_SORT: AjgSort[] = ['nvi', 'n4s', 'n4', 'n3', 'p4', 'p3', 'dekning', 'a
 const AJG_MAKS_SKOLER = 6;
 interface AjgValg {
   fra: number; til: number; /** brøkdelt telling (enhetens andel av forfatterne) i stedet for hel */ brok: boolean;
-  /** uff = UN1 + UN2 (HK-dir), utenStip = UN1 + postdoktorer (NHH), alle = alle årsverk (også teknisk-administrative) */ nevner: AjgNevner;
+  /** uff = UN1 + stipendiater + postdoktorer (HK-dir), utenStip = UN1 + postdoktorer (NHH), alle = alle årsverk (også teknisk-administrative) */ nevner: AjgNevner;
   /** per 100 (valgt nevner) og år i stedet for antall */ per100: boolean; sort: AjgSort; ref: boolean;
   /** skolene i utviklingsgrafen; plassen i lista er fargen, og '' er en ledig plass (fargen følger skolen) */ skoler: string[];
   /** NTNU som bare Handelshøyskolen (variant ntnu_hh) i stedet for Handelshøyskolen + samfunnsøkonomi + IØT */ ntnuHh: boolean;
@@ -2271,7 +2373,7 @@ function AjgSammenligning({ data, v, std, sett }: { data: Data; v: AjgValg; std:
             <label className="ajg-g"><input type="checkbox" checked={v.ref} onChange={(e) => set({ ref: e.target.checked })} /> Ta med referanseenhetene</label>
             {JSON.stringify(v) !== JSON.stringify(std) && <button type="button" className="seg" onClick={() => sett({ ...std, skoler: [...std.skoler] })}>Standardvalg</button>}
           </div>
-          <p className="cap">Standard: siste treårsvindu, hel telling (som NHH-rapporten), per 100 faglige årsverk med HK-dirs nevner (UN1 + UN2). «Alle årsverk» tar også med teknisk-administrative stillinger. Antall personer (uavhengig av stillingsprosent) finnes ikke i DBHs åpne tabeller, så alle valgene er årsverk. Per 100 og år = artikler i perioden delt på sum årsverk i perioden, ganger 100. Lenken husker valgene.</p>
+          <p className="cap">Standard: siste treårsvindu, hel telling (som NHH-rapporten), per 100 faglige årsverk med HK-dirs nevner (UN1 + stipendiater + postdoktorer). «Alle årsverk» tar også med teknisk-administrative stillinger. Antall personer (uavhengig av stillingsprosent) finnes ikke i DBHs åpne tabeller, så alle valgene er årsverk. Per 100 og år = artikler i perioden delt på sum årsverk i perioden, ganger 100. Lenken husker valgene.</p>
         </div>
       </section>
 
@@ -2509,7 +2611,7 @@ function AjgSammenligning({ data, v, std, sett }: { data: Data; v: AjgValg; std:
           <li><b>Kilde.</b> Chartered ABS Academic Journal Guide (AJG) 2024: 1 823 tidsskrift i 22 fagfelt, nivå 1, 2, 3, 4 og 4*. Brukt etter avtale med Chartered ABS (oktober 2026). Bare aggregerte tall per skole vises; AJG-nivå per tidsskrift vises ikke i denne fanen. Chartered ABS ber om at guiden ikke brukes til å vurdere enkeltpersoner.</li>
           <li><b>Grunnlag.</b> Vitenskapelige artikler og oversiktsartikler rapportert til NVI (samme grunnlag som HK-dir og DBH), hentet fra NVA etter forfatternes tilknytning til enheten (avgrensningene i skolelista), koblet mot AJG på ISSN og eISSN. AJG 2024 er brukt for alle år {y0}–{yN}.</li>
           <li><b>Telling.</b> Hel telling (standard, som NHH-rapporten): artikkelen teller 1 for hver skole med minst én forfatter. Brøkdelt: artikkelen teller med skolens andel av forfatterne (1/n per forfatter), så sampublisering ikke telles dobbelt.</li>
-          <li><b>Nevner.</b> HK-dirs årsverk (UN1 + UN2, faglige stillinger pluss stipendiater og postdoktorer) som standard. Valg: NHHs variant (UN1 + postdoktorer) og alle årsverk (også teknisk-administrative). Antall personer uavhengig av stillingsprosent finnes ikke i DBHs åpne tabeller (DBH 225 oppgir også kvinner og menn i årsverk). Per 100 årsverk og år = artikler i perioden / sum årsverk i perioden × 100.</li>
+          <li><b>Nevner.</b> HK-dirs årsverk (UN1 + stipendiater + postdoktorer, faglige stillinger pluss stipendiater og postdoktorer) som standard. Valg: NHHs variant (UN1 + postdoktorer) og alle årsverk (også teknisk-administrative). Antall personer uavhengig av stillingsprosent finnes ikke i DBHs åpne tabeller (DBH 225 oppgir også kvinner og menn i årsverk). Per 100 årsverk og år = artikler i perioden / sum årsverk i perioden × 100.</li>
           <li><b>Mål.</b> Antall og per 100 årsverk på nivå 4*, 4 og 3 og samlet 4+ og 3+; andel av NVI-artiklene i AJG-tidsskrift (dekning); andel 3+ og 4+ av AJG-artiklene; AJG-snitt (4* = 5) som tilleggsmål. Rangeringens mål «AJG 4/4* per 100 årsverk» bruker samme kobling, men summen over fem år delt på snittet av årsverk.</li>
           <li><b>Kjente svakheter.</b> (1) AJG 2024 brukt bakover: tidsskrift som har gått opp eller ned siden tidligere utgaver, får 2024-nivået også for eldre artikler. (2) Tidsskrift utenfor AJG telles ikke; dekningen varierer mye, særlig for fagmiljøer med mye publisering i naturressurs-, miljø-, reiselivs- eller norske tidsskrift. (3) Ulike avgrensninger: NTNU er NTNU Handelshøyskolen + Institutt for samfunnsøkonomi, INN er Økonomifag + Organisasjon, ledelse og styring; tallene kan derfor ikke sammenlignes direkte med skolenes egne. (4) Små enheter svinger mye fra år til år; derfor er treårsvindu standard. (5) NVA-data for siste år kan bli supplert.</li>
         </ul>
@@ -2559,7 +2661,7 @@ function KartFane({ data, rader, v, std, sett, apneProfil, apneAjg, apneSit }: K
         poeng: pp.length ? pp.reduce((a, d) => a + (d.publPoeng ?? 0), 0) / pp.reduce((a, d) => a + (ajgNevnerVerdi(d, v.nevner) ?? 0), 0) : null,
         plass: r?.plass ?? null, plassAv,
         avgrensning: 'enheten slik den er avgrenset i rangeringen (NVA-enheter og DBH-avdelinger, se Metode og kilder).',
-        nevner: v.nevner === 'uff' ? 'faglige årsverk UN1 + UN2 (DBH 225, som HK-dir).' : 'faglige årsverk UN1 + postdoktorer, uten stipendiater (DBH 225, som NHH).',
+        nevner: v.nevner === 'uff' ? 'faglige årsverk UN1 + stipendiater + postdoktorer (DBH 225, som HK-dir).' : 'faglige årsverk UN1 + postdoktorer, uten stipendiater (DBH 225, som NHH).',
         kilde: 'NVA (NVI-rapporterte artikler) koblet mot AJG 2024 på ISSN; DBH 225 og 373. Samme beregning som fanen AJG-sammenligning.',
         forbehold: [s.enhetNotat ? `Usikkerhet i enhetsbeskrivelsen: ${s.enhetNotat}` : null, st.merknad ? `Kartpunkt: ${st.merknad}` : null].filter((x): x is string => !!x), akk: akkNavn(s), ekstra: [],
         ...(sit?.skoler[s.id] ? sitTall(sitSum(sit.skoler[s.id].nvi, aar), sitArsverkNorge(s, aar, v.nevner)) : {}),
@@ -2630,11 +2732,11 @@ function Metode({ data, ind }: { data: Data; ind: Ind[] }) {
       </div>
       <div>
         <div style={{ fontWeight: 600, color: GRONN }}>Publisering i to systemer</div>
-        HK-dir er felles grunnlag: publiseringspoeng, publikasjoner, nivå 2 og årsverk hentes fra DBH og defineres som i HK-dirs tilstandsrapport (poeng per årsverk med UN1 + UN2, nivå 2 som andel av forfatterandelene, V15.3). Artikkelmålene bruker bare artikler som er rapportert til NVI, altså de samme publikasjonene som ligger bak HK-dirs tall. Skolenes egne varianter (NHHs nevner uten stipendiater, nivå 2 som andel av poeng eller publikasjoner, FT50 2016-lista) vises i fanen «Slik rapporterer skolene». Internasjonale nivåer hentes ved å koble hver artikkel i NVA (tidligere Cristin) på ISSN mot tidsskriftlister: AJG 2024 fra Chartered ABS (1–4*, samme som HHs infografikk), ABDC (C–A*), FT50 og UTD24. {data.lister.ajg ? 'AJG-lista er lagt inn.' : 'AJG-lista er lisensbelagt og ikke lagt inn ennå; den legges i data/rangering/tidsskrift/ajg2024.csv (mal: ajg-mal.csv).'}
+        HK-dir er felles grunnlag: publiseringspoeng, publikasjoner, nivå 2 og årsverk hentes fra DBH og defineres som i HK-dirs tilstandsrapport (poeng per årsverk med UN1 + stipendiater + postdoktorer, nivå 2 som andel av forfatterandelene, V15.3). Artikkelmålene bruker bare artikler som er rapportert til NVI, altså de samme publikasjonene som ligger bak HK-dirs tall. Skolenes egne varianter (NHHs nevner uten stipendiater, nivå 2 som andel av poeng eller publikasjoner, FT50 2016-lista) vises i fanen «Slik rapporterer skolene». Internasjonale nivåer hentes ved å koble hver artikkel i NVA (tidligere Cristin) på ISSN mot tidsskriftlister: AJG 2024 fra Chartered ABS (1–4*, samme som HHs infografikk), ABDC (C–A*), FT50 og UTD24. {data.lister.ajg ? 'AJG-lista er lagt inn.' : 'AJG-lista er lisensbelagt og ikke lagt inn ennå; den legges i data/rangering/tidsskrift/ajg2024.csv (mal: ajg-mal.csv).'}
       </div>
       <div>
         <div style={{ fontWeight: 600, color: GRONN }}>Lagdelt forskningsmål: høyeste nivå teller</div>
-        Hver NVI-rapporterte artikkel i NVA plasseres på ett trinn: det høyeste den oppnår i det norske nivåsystemet, ABDC, FT50/UTD24 eller AJG (når lista er lagt inn). Basis = norsk nivå 1, ABDC B/C, AJG 1–2; Høy = norsk nivå 2, ABDC A, AJG 3; Topp = FT50/UTD24, ABDC A*, AJG 4/4*. Artikkelen telles én gang, med enhetens andel av forfatterne (1/n per forfatter) som standard, og vektes 1 : 3 : 5. Summen deles på snittet av årsverk (UN1 + UN2) i perioden. Dekningsgraden viser hvor stor del av artiklene de internasjonale listene vurderer. Hvilke lister som faktisk gir Topp (i praksis nesten bare ABDC A*), vises i «Slik rapporterer skolene». Alt kan endres i Forskningslab, og målet i rangeringen følger innstillingene der.
+        Hver NVI-rapporterte artikkel i NVA plasseres på ett trinn: det høyeste den oppnår i det norske nivåsystemet, ABDC, FT50/UTD24 eller AJG (når lista er lagt inn). Basis = norsk nivå 1, ABDC B/C, AJG 1–2; Høy = norsk nivå 2, ABDC A, AJG 3; Topp = FT50/UTD24, ABDC A*, AJG 4/4*. Artikkelen telles én gang, med enhetens andel av forfatterne (1/n per forfatter) som standard, og vektes 1 : 3 : 5. Summen deles på snittet av årsverk (UN1 + stipendiater + postdoktorer) i perioden. Dekningsgraden viser hvor stor del av artiklene de internasjonale listene vurderer. Hvilke lister som faktisk gir Topp (i praksis nesten bare ABDC A*), vises i «Slik rapporterer skolene». Alt kan endres i Forskningslab, og målet i rangeringen følger innstillingene der.
       </div>
       <div>
         <div style={{ fontWeight: 600, color: GRONN }}>{data.lister.ajg ? 'AJG 2024 og AJG-anslaget' : 'AJG-anslag'}</div>

@@ -403,6 +403,9 @@ def main():
     kat = {r["Stillingskode"]: r.get("Stillingskategorikode") or "" for r in st}
     forste = {r["Stillingskode"] for r in st if r.get("Stillingskategorikode") == "UN1" and FORSTE.search(r.get("Stillingsbenevnelse") or "")}
     postdok = {r["Stillingskode"] for r in st if r.get("Stillingskategorikode") == "UN2" and "postdok" in (r.get("Stillingsbenevnelse") or "").lower()}
+    # HK-dirs nevner har bare stipendiater og postdoktorer fra UN2, ikke vitenskapelige assistenter og spesialistkandidater
+    # (treffer DBH-rapporten «publiseringspoeng per faglig årsverk» og Tilstandsrapporten eksakt, også BI 2025: 406,50).
+    stip = {r["Stillingskode"] for r in st if r.get("Stillingskategorikode") == "UN2" and "stipendiat" in (r.get("Stillingsbenevnelse") or "").lower()}
 
     raw = {}
 
@@ -411,8 +414,11 @@ def main():
             raw[inst] = {
                 "225": dbh(f"225_{inst}.json", q(225, inst, ["Årstall", "Avdelingskode", "Stillingskode"]), a.refresh),
                 "123": dbh(f"123_{inst}.json", q(123, inst, ["Årstall", "Avdelingskode"], extra=[{"variabel": "Semester", "selection": {"filter": "item", "values": ["3"]}}]), a.refresh),
-                "373": dbh(f"373_{inst}.json", q(373, inst, ["Årstall", "Avdelingskode"]), a.refresh),
-                "374": dbh(f"374_{inst}.json", q(374, inst, ["Årstall", "Avdelingskode", "Kvalitetsniva"]), a.refresh),
+                # Kanaltype trengs for institusjonstotalen: se tot_rad() under.
+                "373": dbh(f"373_{inst}.json", q(373, inst, ["Årstall", "Avdelingskode", "Kode for type publiseringskanal"]), a.refresh),
+                "374": dbh(f"374_{inst}.json", q(374, inst, ["Årstall", "Avdelingskode", "Kvalitetsniva", "Kode for type publiseringskanal"]), a.refresh),
+                # 457: navn på organisasjonsenhetene (enheten selv = laveste SSB-kode per avdelingskode)
+                "457": dbh(f"457_{inst}.json", q(457, inst, variabler=["Årstall", "Semester", "Avdelingskode", "Avdelingskode_SSB", "Avdelingsnavn"], years=False), a.refresh),
                 "210": dbh(f"210_{inst}.json", q(210, inst, variabler=["Institusjonskode", "Avdelingskode", "Fakultetskode", "Fakultetsnavn", "Gyldig fra", "Gyldig til"], years=False), a.refresh),
             }
         return raw[inst]
@@ -447,15 +453,29 @@ def main():
                     y["rekruttering"] += aw
                     if row.get("Stillingskode") in postdok:
                         y["postdok"] += aw
+                    elif row.get("Stillingskode") in stip:
+                        y["stip"] += aw
                 if row.get("Stillingskode") in forste:
                     y["forste"] += aw
             for row in r["123"]:
                 if inn(row.get("Avdelingskode") or ""):
                     y = acc[int(row["Årstall"])]; y["studenter"] += fl(row.get("Antall totalt")); y["_123"] = 1
-            har_total = any(x.get("Avdelingskode") == "000000" for x in r["373"])
+            # Institusjonstotalen er avdelingene + publikasjoner registrert direkte på institusjonen (000000 med kjent
+            # kanaltype). Radene 000000 med kanaltype 0 er en egen summering som ikke alltid stemmer med HK-dir
+            # (BI 2025: 516,9 mot 507,3; avdelingene alene 497,8). Regelen treffer Tilstandsrapportens V15.2.
+            avd_aar = {x["Årstall"] for x in r["373"] if (x.get("Avdelingskode") or "000000") != "000000"}
+
+            def tot_rad(row, aar_med_avd):
+                avd = row.get("Avdelingskode") or "000000"
+                if avd != "000000":
+                    return True
+                if row["Årstall"] not in aar_med_avd:
+                    return True  # år uten avdelingsrader: bare totalen finnes
+                return str(row.get("Kode for type publiseringskanal") or "0") != "0"
+
             for row in r["373"]:
                 avd = row.get("Avdelingskode") or ""
-                ok = (avd == "000000") if (hele and har_total) else (avd != "000000" and inn(avd))
+                ok = tot_rad(row, avd_aar) if hele else (avd != "000000" and inn(avd))
                 if ok:
                     y = acc[int(row["Årstall"])]; y["publPoeng"] += fl(row.get("Publiseringspoeng")); y["publikasjoner"] += fl(row.get("Antall publikasjoner")); y["_373"] = 1
             # 374: totalraden 000000 er ufullstendig for noen institusjoner; bruk avdelingene, og totalraden bare
@@ -463,7 +483,7 @@ def main():
             aar_med_avd = {x["Årstall"] for x in r["374"] if (x.get("Avdelingskode") or "000000") != "000000"}
             for row in r["374"]:
                 avd = row.get("Avdelingskode") or ""
-                if ((avd != "000000") if aar_med_avd and row["Årstall"] in aar_med_avd else True) if hele else (avd != "000000" and inn(avd)):
+                if tot_rad(row, aar_med_avd) if hele else (avd != "000000" and inn(avd)):
                     y = acc[int(row["Årstall"])]; p = fl(row.get("Publiseringspoeng")); y["_p374"] += p
                     y["_fa374"] += fl(row.get("Forfatterandeler")); y["_pub374"] += fl(row.get("Antall publikasjoner"))
                     if str(row.get("Kvalitetsniva")) == "2":
@@ -471,18 +491,19 @@ def main():
         ut = {}
         for yr in sorted(acc):
             v = acc[yr]
-            # HK-dirs nevner (Tilstandsrapporten V15.1): UN1 faglige stillinger + UN2 rekrutteringsstillinger,
-            # uten faglige ledere (UN3) og andre undervisningsstillinger (UN4). Treffer 36 av 39 institusjonstall ±2 %.
-            uff = v["un1"] + v["rekruttering"]
+            # HK-dirs nevner (Tilstandsrapporten V15.1, DBH-rapporten «faglige stillinger inkl. stipendiater»): UN1 +
+            # stipendiater + postdoktorer, uten faglige ledere (UN3), andre undervisningsstillinger (UN4), vitenskapelige
+            # assistenter og spesialistkandidater. Treffer DBHs egne tall eksakt (OsloMet og UiS 2020–2025, BI 2025).
+            uff = v["un1"] + v["stip"] + v["postdok"]
             ut[str(yr)] = {
                 "arsverk": r1(v["arsverk"]) if v["_225"] else None,
                 "faglige": r1(v["faglige"]) if v["_225"] else None,
                 "rekruttering": r1(v["rekruttering"]) if v["_225"] else None,
                 "forsteAndel": r1(100 * v["forste"] / v["faglige"]) if v["_225"] and v["faglige"] else None,
                 "studenter": int(v["studenter"]) if v["_123"] else None,
-                "publPoeng": r1(v["publPoeng"]) if v["_373"] else None,
+                "publPoeng": r1(v["publPoeng"], 2) if v["_373"] else None,  # to desimaler som DBH
                 "publikasjoner": int(v["publikasjoner"]) if v["_373"] else None,
-                "uff": r1(uff) if v["_225"] else None,  # UN1 + UN2, HK-dirs nevner
+                "uff": r1(uff) if v["_225"] else None,  # UN1 + stipendiater + postdoktorer, HK-dirs nevner
                 "utenStip": r1(v["un1"] + v["postdok"]) if v["_225"] else None,  # UN1 + postdoktorer, NHHs nevner
                 "poengPerUff": r1(v["publPoeng"] / uff, 2) if v["_373"] and uff else None,
                 # NHHs nevner i Research Report (åtte handelshøyskoler): UN1 + postdoktorer, uten stipendiater.
@@ -712,6 +733,14 @@ def main():
         # Hele institusjonen, for kontroll mot årsrapporter som oppgir institusjonstall
         inst_aar = dbh_aar({"inst": spec_["inst"], "hele": True}) if spec_["inst"] else {}
         per_aar, topp, fag = artikler(sid)
+        # Navn på avdelingene som er med, til «Slik er tallene regnet ut» i Publisering
+        navn = {}
+        for i in spec_["inst"]:
+            for x in sorted(inst_raw(i)["457"], key=lambda x: (x.get("Årstall") or "", x.get("Semester") or "", "".join(chr(0x10FFFF - ord(c)) for c in x.get("Avdelingskode_SSB") or ""))):
+                if x.get("Avdelingskode") in set(avd) and x.get("Avdelingsnavn"):
+                    navn[x["Avdelingskode"]] = x["Avdelingsnavn"]  # siste år vinner; innen året laveste SSB-kode (sortert sist)
+        spec_["avdelingNavn"] = navn
+        spec_["merknad"] = d.get("merknad")
         ut_skoler.append({
             "id": sid, "navn": s.get("navn"), "navnEn": s.get("navnEn"), "kort": s.get("kort") or KORT.get(sid) or s.get("navn"),
             "institusjon": s.get("institusjon"), "isNmbu": sid.startswith("nmbu") or sid == "hh", "type": s.get("type"),
