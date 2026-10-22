@@ -1554,3 +1554,7 @@ og Excel-uttrekket fra dbh.hkdir.no (publisering): OsloMet 0,62 mot 0,98, UiS h�
   flere ganger). For hele institusjonen brukes summeringsraden 000000/kanaltype 0, som treffer BIs og NHHs egne tall eksakt
   alle år. For fagmiljø med flere avdelinger (UiA, UiS, USN, NTNU, INN, HiMolde, Kristiania) blir antallet 2–10 % for høyt;
   poengene er brøkdelt og påvirkes ikke. Kontroll: 657 av 681 innen ±2 %.
+- **Treårs glidende snitt (samme dag, Mathias):** valget VISNING «Enkeltår / Treårs glidende snitt» i Publisering (graf og
+  tabell). Hvert år = året og de to foregående; poeng per årsverk = sum poeng / sum årsverk (rangeringen bruker snitt av de
+  årlige forholdstallene; forskjellen er høyst 0,02, median 0,002); nivå 2-andelen er enkelt snitt. OsloMet 2023–25: 0,83
+  (enkeltår 2025: 0,62). Forklaringen nevner svingningene (20–36 % per år for de minste enhetene, 3 % for BI).

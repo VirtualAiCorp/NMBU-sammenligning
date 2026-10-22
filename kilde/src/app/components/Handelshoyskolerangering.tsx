@@ -893,12 +893,20 @@ function Publisering({ data }: { data: Data }) {
   const [maal, setMaal] = useState<'poengPerUff' | 'niva2AndelFa' | 'publPoeng'>('poengPerUff');
   // «enhet» = handelshøyskolen/fagmiljøet slik rangeringen avgrenser det; «inst» = hele institusjonen, som DBHs egne tabeller
   const [niva, setNiva] = useState<'enhet' | 'inst'>('enhet');
-  const dbhAv = (s: Skole | undefined) => (niva === 'inst' ? s?.dbhInst : s?.dbh) ?? {};
+  // Treårs glidende snitt: året og de to foregående (poeng per årsverk = sum poeng / sum årsverk), mot store sprang i små enheter
+  const [snitt, setSnitt] = useState<'1' | '3'>('1');
+  const snittCache = useMemo(() => new Map<string, Record<string, DbhAar>>(), [niva, snitt]);
+  const dbhAv = (s: Skole | undefined) => {
+    const r = (niva === 'inst' ? s?.dbhInst : s?.dbh) ?? {};
+    if (snitt === '1' || !s) return r;
+    if (!snittCache.has(s.id)) snittCache.set(s.id, treaarssnitt(r));
+    return snittCache.get(s.id)!;
+  };
   const [liste, setListe] = useState<'ajg' | 'abdc'>(data.lister.ajg ? 'ajg' : 'abdc');
   const [periode, setPeriode] = useState<'1' | '5'>('5');
   const aar = aarRekke(data.aar[0], y1);
   const farge = (id: string) => data.skoler.find((s) => s.id === id)?.isNmbu ? '#025C4F' : LINJEFARGER[1 + (data.skoler.findIndex((s) => s.id === id) % (LINJEFARGER.length - 1))];
-  const linje = aar.map((y) => ({ aar: y, ...Object.fromEntries(valgt.map((id) => [id, dbhAv(data.skoler.find((s) => s.id === id))[y]?.[maal] ?? null])) }));
+  const linje = aar.filter((y) => snitt === '1' || y >= data.aar[0] + 2).map((y) => ({ aar: y, ...Object.fromEntries(valgt.map((id) => [id, dbhAv(data.skoler.find((s) => s.id === id))[y]?.[maal] ?? null])) }));
   const tabellAar = aarRekke(y1 - 5, y1);
   const valgteSkoler = valgt.map((id) => data.skoler.find((s) => s.id === id)).filter((s): s is Skole => !!s);
   const perAar = periode === '1' ? [String(y1)] : aarRekke(y1 - 4, y1);
@@ -915,7 +923,7 @@ function Publisering({ data }: { data: Data }) {
       <AjgKort data={data} />
       <div className="rounded-2xl p-5" style={kort}>
         <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
-          <div style={{ fontSize: 14, fontWeight: 600, color: GRONN }}>{MAAL[maal]}, {data.aar[0]}–{y1}{niva === 'inst' ? ', hele institusjonen' : ''}</div>
+          <div style={{ fontSize: 14, fontWeight: 600, color: GRONN }}>{MAAL[maal]}, {snitt === '3' ? data.aar[0] + 2 : data.aar[0]}–{y1}{niva === 'inst' ? ', hele institusjonen' : ''}{snitt === '3' ? ', treårs glidende snitt' : ''}</div>
           <div className="flex gap-1">
             {(Object.keys(MAAL) as (keyof typeof MAAL)[]).map((m) => (
               <button key={m} onClick={() => setMaal(m)} className="px-3 py-1 rounded-md text-xs" style={maal === m ? { backgroundColor: GRONN, color: '#fff' } : { backgroundColor: 'var(--nmbu-beige-light)', color: 'var(--nmbu-neutral-1)' }}>{MAAL[m].split(' (')[0]}</button>
@@ -926,6 +934,9 @@ function Publisering({ data }: { data: Data }) {
           <span style={{ fontWeight: 700, color: 'var(--nmbu-neutral-2)', marginRight: 4 }}>NIVÅ</span>
           <button onClick={() => setNiva('enhet')} className="px-3 py-1 rounded-md text-xs" style={knappStil(niva === 'enhet')} title="Handelshøyskolen eller økonomimiljøet, avgrenset til fakultet eller institutt (se «Slik er tallene regnet ut»)">Handelshøyskolen / fagmiljøet</button>
           <button onClick={() => setNiva('inst')} className="px-3 py-1 rounded-md text-xs" style={knappStil(niva === 'inst')} title="Hele institusjonen, som DBHs egne tabeller og HK-dirs tilstandsrapport">Hele institusjonen</button>
+          <span style={{ fontWeight: 700, color: 'var(--nmbu-neutral-2)', margin: '0 4px 0 16px' }}>VISNING</span>
+          <button onClick={() => setSnitt('1')} className="px-3 py-1 rounded-md text-xs" style={knappStil(snitt === '1')} title="Hvert år for seg, som DBH">Enkeltår</button>
+          <button onClick={() => setSnitt('3')} className="px-3 py-1 rounded-md text-xs" style={knappStil(snitt === '3')} title="Snitt av året og de to foregående; demper store sprang i små enheter">Treårs glidende snitt</button>
         </div>
         <div className="flex flex-wrap gap-1.5 mb-3">
           {data.skoler.map((s) => {
@@ -944,7 +955,7 @@ function Publisering({ data }: { data: Data }) {
             {valgt.map((id) => <Line key={id} type="monotone" dataKey={id} stroke={farge(id)} strokeWidth={data.skoler.find((s) => s.id === id)?.isNmbu ? 3 : 2} dot={{ r: 3 }} connectNulls />)}
           </LineChart>
         </ResponsiveContainer>
-        <PubliseringTabell skoler={valgteSkoler} aar={tabellAar} dbhAv={dbhAv} niva={niva} />
+        <PubliseringTabell skoler={valgteSkoler} aar={tabellAar} dbhAv={dbhAv} niva={niva} snitt={snitt} />
         <SlikRegnet skoler={valgteSkoler} />
       </div>
 
@@ -975,7 +986,21 @@ function Publisering({ data }: { data: Data }) {
 }
 
 // Samme tre indikatorer og oppsett som DBHs institusjonsprofil («7. Vitenskapelig publisering»), for de valgte skolene
-function PubliseringTabell({ skoler, aar, dbhAv, niva }: { skoler: Skole[]; aar: number[]; dbhAv: (s: Skole) => Record<string, DbhAar>; niva: 'enhet' | 'inst' }) {
+// Treårs glidende snitt per år (året og de to foregående; null hvis ett av årene mangler). Poeng per årsverk er sum poeng /
+// sum årsverk, ikke snitt av forholdstallene; nivå 2-andelen er et enkelt snitt (forfatterandelene ligger ikke i dataene).
+function treaarssnitt(r: Record<string, DbhAar>): Record<string, DbhAar> {
+  const ut: Record<string, DbhAar> = {};
+  const snittAv = (xs: (number | null | undefined)[]) => xs.every((x) => x != null) ? (xs as number[]).reduce((a, b) => a + b, 0) / xs.length : null;
+  for (const y of Object.keys(r)) {
+    const tre = [String(+y - 2), String(+y - 1), y].map((k) => r[k]);
+    if (tre.some((d) => !d)) continue;
+    const poeng = snittAv(tre.map((d) => d.publPoeng)), uff = snittAv(tre.map((d) => d.uff));
+    ut[y] = { ...r[y], publPoeng: poeng, uff, poengPerUff: poeng != null && uff ? poeng / uff : null, niva2AndelFa: snittAv(tre.map((d) => d.niva2AndelFa)) };
+  }
+  return ut;
+}
+
+function PubliseringTabell({ skoler, aar, dbhAv, niva, snitt }: { skoler: Skole[]; aar: number[]; dbhAv: (s: Skole) => Record<string, DbhAar>; niva: 'enhet' | 'inst'; snitt: '1' | '3' }) {
   const rader: { navn: string; felt: keyof DbhAar; d: number }[] = [
     { navn: 'Publiseringspoeng', felt: 'publPoeng', d: 2 },
     { navn: 'Publiseringspoeng per faglige årsverk inkl. stipendiater', felt: 'poengPerUff', d: 2 },
@@ -986,12 +1011,12 @@ function PubliseringTabell({ skoler, aar, dbhAv, niva }: { skoler: Skole[]; aar:
   const mono = { fontFamily: 'var(--font-mono, monospace)' } as const;
   return (
     <div className="mt-4 overflow-x-auto">
-      <div style={{ fontSize: 13, fontWeight: 600, color: GRONN }} className="mb-1">Vitenskapelig publisering, {niva === 'inst' ? 'hele institusjonen' : 'handelshøyskolen / fagmiljøet'}</div>
+      <div style={{ fontSize: 13, fontWeight: 600, color: GRONN }} className="mb-1">Vitenskapelig publisering, {niva === 'inst' ? 'hele institusjonen' : 'handelshøyskolen / fagmiljøet'}{snitt === '3' ? ', treårs glidende snitt (årlig snitt)' : ''}</div>
       <table className="w-full text-xs" style={{ borderCollapse: 'collapse', minWidth: 640 }}>
         <thead>
           <tr style={{ color: 'var(--nmbu-neutral-2)', borderBottom: '1px solid var(--nmbu-neutral-3)' }}>
             <th className="text-left px-2 py-1.5">Indikator</th>
-            {aar.map((y) => <th key={y} className="text-right px-2 py-1.5">{y}</th>)}
+            {aar.map((y) => <th key={y} className="text-right px-2 py-1.5">{snitt === '3' ? `${y - 2}–${String(y).slice(2)}` : y}</th>)}
           </tr>
         </thead>
         <tbody>
@@ -1035,7 +1060,11 @@ function SlikRegnet({ skoler }: { skoler: Skole[] }) {
         <p>
           <b>Handelshøyskolen / fagmiljøet</b> er avdelingene under. Rangeringen sammenligner fagmiljøene, ikke hele institusjonen, fordi universitetene
           har mange andre fag. Der handelshøyskolen er et institutt (OsloMet, UiT, HVL, HiØ), brukes instituttet; der den er et fakultet, hele fakultetet.
-          Publikasjoner som bare er registrert på institusjonsnivå, kommer ikke med i fagmiljøtallene. Små enheter svinger mye fra år til år.
+          Publikasjoner som bare er registrert på institusjonsnivå, kommer ikke med i fagmiljøtallene. Små enheter svinger mye fra år til år
+          (poeng per årsverk endrer seg i snitt 20–36 % per år for HiØ, HiMolde, OsloMet og UiB/UiO økonomi, mot 3 % for BI). Velg
+          «Treårs glidende snitt» for å se utviklingen: hvert år viser snittet av året og de to foregående, og poeng per årsverk er
+          sum poeng delt på sum årsverk i de tre årene, slik at et år med få årsverk ikke teller for mye. (Rangeringen bruker snitt av
+          de tre årlige forholdstallene; forskjellen er som regel under 0,02.)
         </p>
         <table className="w-full mt-1" style={{ borderCollapse: 'collapse' }}>
           <thead>
