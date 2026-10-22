@@ -1550,3 +1550,7 @@ og Excel-uttrekket fra dbh.hkdir.no (publisering): OsloMet 0,62 mot 0,98, UiS h�
   kilder, nevner, totalregelen og per skole DBH-institusjon, avdelingskoder med navn (DBH 457, enheten = laveste SSB-kode)
   og merknaden fra skoler.json. NTNU = NTNU Handelshøyskolen + Institutt for samfunnsøkonomi + IØT (de tre «handelshøyskole»-
   miljøene kollegaen nevnte), uten Ålesund.
+- **Antall publikasjoner (samme dag):** kan ikke summeres over avdelinger (artikler med forfattere fra flere institutter telles
+  flere ganger). For hele institusjonen brukes summeringsraden 000000/kanaltype 0, som treffer BIs og NHHs egne tall eksakt
+  alle år. For fagmiljø med flere avdelinger (UiA, UiS, USN, NTNU, INN, HiMolde, Kristiania) blir antallet 2–10 % for høyt;
+  poengene er brøkdelt og påvirkes ikke. Kontroll: 657 av 681 innen ±2 %.

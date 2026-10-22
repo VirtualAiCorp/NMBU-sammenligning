@@ -473,11 +473,19 @@ def main():
                     return True  # år uten avdelingsrader: bare totalen finnes
                 return str(row.get("Kode for type publiseringskanal") or "0") != "0"
 
+            # Antall publikasjoner kan ikke summeres over avdelinger (en artikkel med forfattere fra to institutter telles
+            # to ganger). For hele institusjonen telles de fra summeringsraden (000000, kanaltype 0), som treffer BIs og
+            # NHHs egne tall eksakt. For fagmiljø med flere avdelinger blir antallet litt for høyt (poengene er brøkdelt).
+            sumrad_aar = {x["Årstall"] for x in r["373"] if (x.get("Avdelingskode") or "") == "000000" and str(x.get("Kode for type publiseringskanal") or "0") == "0"}
             for row in r["373"]:
                 avd = row.get("Avdelingskode") or ""
+                if hele and row["Årstall"] in sumrad_aar and avd == "000000" and str(row.get("Kode for type publiseringskanal") or "0") == "0":
+                    acc[int(row["Årstall"])]["publikasjoner"] += fl(row.get("Antall publikasjoner"))
                 ok = tot_rad(row, avd_aar) if hele else (avd != "000000" and inn(avd))
                 if ok:
-                    y = acc[int(row["Årstall"])]; y["publPoeng"] += fl(row.get("Publiseringspoeng")); y["publikasjoner"] += fl(row.get("Antall publikasjoner")); y["_373"] = 1
+                    y = acc[int(row["Årstall"])]; y["publPoeng"] += fl(row.get("Publiseringspoeng")); y["_373"] = 1
+                    if not (hele and row["Årstall"] in sumrad_aar):
+                        y["publikasjoner"] += fl(row.get("Antall publikasjoner"))
             # 374: totalraden 000000 er ufullstendig for noen institusjoner; bruk avdelingene, og totalraden bare
             # for år uten avdelingsrader.
             aar_med_avd = {x["Årstall"] for x in r["374"] if (x.get("Avdelingskode") or "000000") != "000000"}
