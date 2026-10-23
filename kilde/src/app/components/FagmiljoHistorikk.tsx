@@ -6,7 +6,7 @@ import { lastNedTabellCsv } from '../utils/csvExport';
 import { Kildeboks, dbh } from './Kildeboks';
 
 /**
- * Fagmiljøet over tid (2010–2025): tilsatte og publisering per institusjon, fakultet og institutt, med sammenslåinger.
+ * Fagmiljøet over tid (2004–2025): tilsatte og publisering per institusjon, fakultet og institutt, med sammenslåinger.
  * Data: public/fagmiljo/historikk/index.json og <institusjonskode>.json (scripts/build-historikk.py).
  * To visninger: «Slik det ble rapportert» (hver DBH-kode og hver fakultets-/avdelingskode for seg) og
  * «Sammenlignbar» (dagens institusjon og dagens fakulteter bakover, med forløperne og nedlagte enheter koblet inn).
@@ -292,7 +292,7 @@ export function FagmiljoHistorikk({ standardInst = '1173', standardFak }: { stan
       {!indeks.nett && (
         <Melding tone="advarsel">
           DBH var ikke tilgjengelig da tallene sist ble bygget ({indeks.hentet.split('-').reverse().join('.')}). Siden viser derfor årene som finnes i det eksisterende uttrekket
-          (2019–2025, dagens institusjonskoder). Forløperinstitusjonene og årene 2010–2018 kommer med når <code>scripts/build-historikk.py</code> kjøres med tilgang til DBH-API-et.
+          (2019–2025, dagens institusjonskoder). Forløperinstitusjonene og årene 2004–2018 kommer med når <code>scripts/build-historikk.py</code> kjøres med tilgang til DBH-API-et.
         </Melding>
       )}
 

@@ -73,7 +73,7 @@ export const NMBU_SIDER: { f: Faculty; label: string; icon: LucideIcon; tekst: s
   { f: 'nmbu-marked', label: 'Markedet', icon: MENY.PieChart, tekst: 'Hele markedet: andeler, alle program og økonomilandskapet' },
   { f: 'nmbu-emner', label: 'Alle emner ved NMBU', icon: MENY.BookOpen, tekst: 'Karakterer i alle NMBUs emner' },
   { f: 'nmbu-fagmiljo', label: 'Fagmiljøet', icon: MENY.Microscope, tekst: 'Tilsatte og publisering, fakultet mot fakultet' },
-  { f: 'nmbu-historikk', label: 'Fagmiljøet over tid', icon: MENY.TrendingUp, tekst: 'Tilsatte og publisering 2010–2025 med sammenslåinger' },
+  { f: 'nmbu-historikk', label: 'Fagmiljøet over tid', icon: MENY.TrendingUp, tekst: 'Tilsatte og publisering 2004–2025 med sammenslåinger' },
   { f: 'nmbu-sokergrunnlag', label: 'Søkergrunnlaget', icon: MENY.Baby, tekst: 'Ungdomskullene per fylke fram mot 2045' },
   { f: 'nmbu-bolig', label: 'Bolig og studentboliger', icon: MENY.Home, tekst: 'Ås mot konkurrentenes studiesteder' },
   { f: 'nmbu-okonomi', label: 'Økonomi', icon: MENY.Landmark, tekst: 'Styringsindikatorer mot konkurrentene' },

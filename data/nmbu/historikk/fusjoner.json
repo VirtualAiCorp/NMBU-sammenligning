@@ -1,6 +1,6 @@
 {
   "_om": [
-    "Sammenslåinger og kodebytter 2010–2025 for institusjonene i Fagmiljøet. Brukes av scripts/build-historikk.py.",
+    "Sammenslåinger og kodebytter 2004–2025 for institusjonene i Fagmiljøet. Brukes av scripts/build-historikk.py.",
     "Én post per dagens institusjon (DBH-kode). «forlopere» er alle institusjonskoder som rapporterte til DBH før sammenslåingen, også mellomledd (f.eks. HBV og HSN før USN).",
     "inn = første år tallene ligger under etterfølgeren (sammenslåing per 1. januar det året). Tallene fra forløperen brukes bare for år før inn; rapporterer forløperen også senere år, flagges det i rapporten og holdes utenfor (ellers dobbelttelling).",
     "etterfolger = koden forløperen gikk inn i (dagens kode, eller et mellomledd som selv er forløper).",
@@ -8,7 +8,7 @@
     "kilde = hvor sammenslåingen er dokumentert. kildeKontrollert=false betyr at lenken ikke er åpnet og kontrollert mot teksten ennå (nettilgang manglet da fila ble skrevet 23.10.2026); årstallene kontrolleres uansett mot hvilke år hver kode faktisk rapporterer i DBH."
   ],
   "periode": [
-    2010,
+    2004,
     2025
   ],
   "institusjoner": [
@@ -17,6 +17,14 @@
       "kort": "NMBU",
       "navn": "Norges miljø- og biovitenskapelige universitet",
       "forlopere": [
+        {
+          "kort": "NLH",
+          "navn": "Norges landbrukshøgskole",
+          "kode": "1270",
+          "inn": 2005,
+          "etterfolger": "UMB",
+          "merknad": "Samme institusjon som UMB, ny kode i DBH da den fikk universitetsstatus 1.1.2005."
+        },
         {
           "kort": "UMB",
           "navn": "Universitetet for miljø- og biovitenskap",
@@ -35,6 +43,11 @@
         }
       ],
       "hendelser": [
+        {
+          "aar": 2005,
+          "type": "kode",
+          "tekst": "Norges landbrukshøgskole blir Universitetet for miljø- og biovitenskap (UMB, 1.1.2005); ny kode i DBH"
+        },
         {
           "aar": 2014,
           "type": "fusjon",
@@ -106,6 +119,14 @@
       "navn": "UiT Norges arktiske universitet",
       "forlopere": [
         {
+          "kort": "HiTø",
+          "navn": "Høgskolen i Tromsø",
+          "kode": "0216",
+          "inn": 2009,
+          "etterfolger": "1130",
+          "merknad": "Sammenslått med UiT 1.1.2009. Tall i DBH til og med 2008."
+        },
+        {
           "kort": "HiFm",
           "navn": "Høgskolen i Finnmark",
           "kode": null,
@@ -132,6 +153,11 @@
         }
       ],
       "hendelser": [
+        {
+          "aar": 2009,
+          "type": "fusjon",
+          "tekst": "Høgskolen i Tromsø inn i UiT (1.1.2009)"
+        },
         {
           "aar": 2013,
           "type": "fusjon",
@@ -492,6 +518,14 @@
       "navn": "NLA Høgskolen",
       "forlopere": [
         {
+          "kort": "NLA (8231)",
+          "navn": "Norsk Lærerakademi Lærerhøgskolen",
+          "kode": "8231",
+          "inn": 2010,
+          "etterfolger": "8223",
+          "merknad": "Samme institusjon, ny navn og kode i DBH fra 2010."
+        },
+        {
           "kort": "Staffeldtsgate",
           "navn": "Høgskolen i Staffeldtsgate",
           "kode": null,
@@ -511,6 +545,11 @@
         }
       ],
       "hendelser": [
+        {
+          "aar": 2010,
+          "type": "kode",
+          "tekst": "Norsk Lærerakademi Lærerhøgskolen blir NLA Høgskolen; ny kode i DBH"
+        },
         {
           "aar": 2013,
           "type": "fusjon",
@@ -542,16 +581,56 @@
       "kode": "1160",
       "kort": "UiS",
       "navn": "Universitetet i Stavanger",
-      "forlopere": [],
-      "hendelser": [],
-      "merknad": "Arkeologisk museum ble del av UiS i 2009, før perioden."
+      "forlopere": [
+        {
+          "kort": "HiS",
+          "navn": "Høgskolen i Stavanger",
+          "kode": "0234",
+          "inn": 2005,
+          "etterfolger": "1160",
+          "merknad": "Samme institusjon, ny kode i DBH da den fikk universitetsstatus 1.1.2005."
+        }
+      ],
+      "hendelser": [
+        {
+          "aar": 2005,
+          "type": "kode",
+          "tekst": "Høgskolen i Stavanger blir Universitetet i Stavanger (1.1.2005); ny kode i DBH"
+        }
+      ],
+      "merknad": "Arkeologisk museum ble del av UiS i 2009. Museet rapporterte ikke til DBH som egen institusjon, så det gir et hopp i UiS-tallene fra 2009.",
+      "kilde": {
+        "navn": "Wikipedia: Universitetet i Stavanger",
+        "url": "https://no.wikipedia.org/wiki/Universitetet_i_Stavanger"
+      },
+      "kildeKontrollert": false
     },
     {
       "kode": "1171",
       "kort": "UiA",
       "navn": "Universitetet i Agder",
-      "forlopere": [],
-      "hendelser": []
+      "forlopere": [
+        {
+          "kort": "HiA",
+          "navn": "Høgskolen i Agder",
+          "kode": "0241",
+          "inn": 2008,
+          "etterfolger": "1171",
+          "merknad": "Samme institusjon, universitetsstatus 1.9.2007. I DBH har HiA tilsatte til og med 2007 og publisering til og med 2006, og UiA (1171) publisering fra 2007 og tilsatte fra 2008. Derfor inn 2008."
+        }
+      ],
+      "hendelser": [
+        {
+          "aar": 2007,
+          "type": "kode",
+          "tekst": "Høgskolen i Agder blir Universitetet i Agder (1.9.2007); ny kode i DBH (publisering fra 2007, tilsatte fra 2008)"
+        }
+      ],
+      "kilde": {
+        "navn": "Wikipedia: Universitetet i Agder",
+        "url": "https://no.wikipedia.org/wiki/Universitetet_i_Agder"
+      },
+      "kildeKontrollert": false
     },
     {
       "kode": "1240",

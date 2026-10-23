@@ -242,7 +242,7 @@ export function FacultyLanding({ onSelect }: Props) {
           <div>
             <div style={{ fontFamily: "'Lora', serif", fontWeight: 500, fontSize: '20px', color: 'var(--nmbu-green-dark)', marginBottom: 4 }}>Fagmiljøet over tid: sammenslåinger og utvikling</div>
             <p style={{ fontSize: '13px', color: 'var(--nmbu-neutral-2)', lineHeight: 1.5 }}>
-              Tilsatte og publisering 2010–2025 per institusjon, fakultet og institutt, slik det ble rapportert og som sammenlignbar serie i dagens struktur, med sammenslåinger og omorganiseringer markert. DBH, med CSV-eksport.
+              Tilsatte og publisering 2004–2025 per institusjon, fakultet og institutt, slik det ble rapportert og som sammenlignbar serie i dagens struktur, med sammenslåinger og omorganiseringer markert. DBH, med CSV-eksport.
             </p>
           </div>
         </button>

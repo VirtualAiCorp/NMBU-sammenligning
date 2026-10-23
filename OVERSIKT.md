@@ -202,7 +202,7 @@ Forbehold:
 - `scripts/build-studiebarometer.py <fakultet>` henter studiebarometeret.no per program (programside, tidsserie og delspørsmål; id = institusjonskode_programkode fra DBH-koblingen) til `data/<fakultet>/studiebarometer.json` og `kilde/src/app/data/<fakultet>StudiebarometerData.ts`. Program med for få svar får `warning` og tomme verdier.
 - `scripts/build-markedsstatus.py <fakultet>` legger styrepapir-oppsummeringene fra `data/<fakultet>/markedsstatus.json` inn i appen og kopierer PDF-ene til `kilde/public/markedsstatus/<fakultet>/`. Styrepapirer bak innlogging (NTNU-fakultetene, UiT sin e-innsynsportal, OsloMet sine vedlegg) er lenket til siden, ikke lastet ned.
 
-## Fagmiljøet over tid: tilsatte og publisering 2010–2025 med sammenslåinger (lagt til 23.10.2026)
+## Fagmiljøet over tid: tilsatte og publisering 2004–2025 med sammenslåinger (lagt til 23.10.2026)
 
 Egen side for hele NMBU («Fagmiljøet over tid», delbar lenke `?historikk`). Velg institusjon (de 20 i Fagmiljøet), nivå
 (institusjon, fakultet, institutt), mål (årsverk, faglige, rekruttering, førstestillinger, kvinneandel, publikasjoner,
@@ -218,7 +218,7 @@ gir tabellen som vises; «Last ned alle tall» gir alle nivåer, begge visningen
 
 | Hva | Hvor |
 |---|---|
-| Sammenslåinger 2010–2025 (forløpere, år, kilde) | `data/nmbu/historikk/fusjoner.json` |
+| Sammenslåinger 2004–2025 (forløpere, år, kilde) | `data/nmbu/historikk/fusjoner.json` |
 | Manuelle koblinger gamle → dagens enheter | `data/nmbu/historikk/avdelingskobling.json` |
 | Generator (DBH 225, 220, 373, 374, 210; cache i `data/nmbu/kilder/dbh-historikk/`, ikke i git) | `scripts/build-historikk.py` |
 | Kontrollrapport (kodeoppslag, årskontroll, alt som ikke er koblet) | `data/nmbu/historikk/rapport.md` |
@@ -228,7 +228,13 @@ gir tabellen som vises; «Last ned alle tall» gir alle nivåer, begge visningen
 Oppdatere: `python3 scripts/build-historikk.py --refresh`, les `rapport.md`, legg inn koder/koblinger som mangler, kjør på nytt.
 
 Forbehold:
-- **Bygget med DBH 23.10.2026** (2010–2025, alle forløpere). Første bygg samme dag var uten nett og hadde bare 2019–2025.
+- **Bygget med DBH 23.10.2026** (2004–2025, alle forløpere). Første bygg samme dag var uten nett og hadde bare 2019–2025.
+- Hvorfor 2004: publisering (DBH 373/374) finnes ikke før 2004. Tilsatte (225) går lenger tilbake (universitetene fra 1990–91,
+  statlige høgskoler fra 1994–96), men private institusjoner rapporterer først fra 2004 og Kristiania (8249) fra 2008.
+  Før-2010-forløpere: NLH 1270 (NMBU), Høgskolen i Tromsø 0216 (UiT), Høgskolen i Stavanger 0234 (UiS), Høgskolen i Agder 0241 (UiA)
+  og Norsk Lærerakademi 8231 (NLA).
+- Publiseringspoengene hopper for alle i 2015, da beregningen av poeng ble lagt om. 2004 er første år med publisering, og flere
+  høgskoler har klart lavere tall det året. AHO har 0 publiseringspoeng i DBH fra 2005 (publikasjoner og forfatterandeler finnes).
 - Forløpernes DBH-koder slås opp på navn i DBH (feltet `navnSok`); tvetydige eller manglende treff står i rapporten. Kildelenkene i
   `fusjoner.json` er merket `kildeKontrollert: false` til de er sjekket; årstallene kontrolleres uansett mot hvilke år kodene rapporterer.
 - `inn` følger DBH, ikke vedtaksdatoen, der de skiller: HiO/HiAk rapporterer hele 2011 (inn 2012), HiFm hele 2013 (inn 2014),

@@ -1,7 +1,7 @@
 {
  "hentet": "2026-10-23",
  "periode": [
-  2010,
+  2004,
   2025
  ],
  "mal": [
@@ -27,15 +27,17 @@
    "kort": "NMBU",
    "navn": "Norges miljø- og biovitenskapelige universitet",
    "forlopere": [
+    "NLH",
     "UMB",
     "NVH"
    ],
    "forloperUtenKode": [],
    "aar": [
-    2010,
+    2004,
     2025
    ],
    "fusjoner": [
+    2005,
     2014
    ]
   },
@@ -46,7 +48,7 @@
    "forlopere": [],
    "forloperUtenKode": [],
    "aar": [
-    2010,
+    2004,
     2025
    ],
    "fusjoner": []
@@ -58,7 +60,7 @@
    "forlopere": [],
    "forloperUtenKode": [],
    "aar": [
-    2010,
+    2004,
     2025
    ],
    "fusjoner": []
@@ -74,7 +76,7 @@
    ],
    "forloperUtenKode": [],
    "aar": [
-    2010,
+    2004,
     2025
    ],
    "fusjoner": [
@@ -88,7 +90,7 @@
    "forlopere": [],
    "forloperUtenKode": [],
    "aar": [
-    2010,
+    2004,
     2025
    ],
    "fusjoner": []
@@ -100,7 +102,7 @@
    "forlopere": [],
    "forloperUtenKode": [],
    "aar": [
-    2010,
+    2004,
     2025
    ],
    "fusjoner": []
@@ -112,7 +114,7 @@
    "forlopere": [],
    "forloperUtenKode": [],
    "aar": [
-    2010,
+    2004,
     2025
    ],
    "fusjoner": []
@@ -128,7 +130,7 @@
    ],
    "forloperUtenKode": [],
    "aar": [
-    2010,
+    2004,
     2025
    ],
    "fusjoner": [
@@ -149,7 +151,7 @@
    ],
    "forloperUtenKode": [],
    "aar": [
-    2010,
+    2004,
     2025
    ],
    "fusjoner": [
@@ -164,7 +166,7 @@
    "forlopere": [],
    "forloperUtenKode": [],
    "aar": [
-    2010,
+    2004,
     2025
    ],
    "fusjoner": []
@@ -174,15 +176,17 @@
    "kort": "NLA",
    "navn": "NLA Høgskolen",
    "forlopere": [
+    "NLA (8231)",
     "Staffeldtsgate",
     "Gimlekollen"
    ],
    "forloperUtenKode": [],
    "aar": [
-    2010,
+    2004,
     2025
    ],
    "fusjoner": [
+    2010,
     2013
    ]
   },
@@ -197,7 +201,7 @@
    ],
    "forloperUtenKode": [],
    "aar": [
-    2010,
+    2004,
     2025
    ],
    "fusjoner": [
@@ -216,7 +220,7 @@
    ],
    "forloperUtenKode": [],
    "aar": [
-    2010,
+    2004,
     2025
    ],
    "fusjoner": [
@@ -234,7 +238,7 @@
    ],
    "forloperUtenKode": [],
    "aar": [
-    2010,
+    2004,
     2025
    ],
    "fusjoner": [
@@ -255,7 +259,7 @@
    ],
    "forloperUtenKode": [],
    "aar": [
-    2010,
+    2004,
     2025
    ],
    "fusjoner": [
@@ -268,13 +272,17 @@
    "kode": "1171",
    "kort": "UiA",
    "navn": "Universitetet i Agder",
-   "forlopere": [],
+   "forlopere": [
+    "HiA"
+   ],
    "forloperUtenKode": [],
    "aar": [
-    2010,
+    2004,
     2025
    ],
-   "fusjoner": []
+   "fusjoner": [
+    2007
+   ]
   },
   {
    "kode": "1120",
@@ -283,7 +291,7 @@
    "forlopere": [],
    "forloperUtenKode": [],
    "aar": [
-    2010,
+    2004,
     2025
    ],
    "fusjoner": []
@@ -295,7 +303,7 @@
    "forlopere": [],
    "forloperUtenKode": [],
    "aar": [
-    2010,
+    2004,
     2025
    ],
    "fusjoner": []
@@ -304,29 +312,35 @@
    "kode": "1160",
    "kort": "UiS",
    "navn": "Universitetet i Stavanger",
-   "forlopere": [],
+   "forlopere": [
+    "HiS"
+   ],
    "forloperUtenKode": [],
    "aar": [
-    2010,
+    2004,
     2025
    ],
-   "fusjoner": []
+   "fusjoner": [
+    2005
+   ]
   },
   {
    "kode": "1130",
    "kort": "UiT",
    "navn": "UiT Norges arktiske universitet",
    "forlopere": [
+    "HiTø",
     "HiFm",
     "HiH",
     "HiN"
    ],
    "forloperUtenKode": [],
    "aar": [
-    2010,
+    2004,
     2025
    ],
    "fusjoner": [
+    2009,
     2013,
     2016
    ]

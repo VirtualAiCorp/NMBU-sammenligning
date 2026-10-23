@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fagmiljøet over tid: tilsatte og publisering 2010–2025 per institusjon, fakultet og institutt, med sammenslåinger
+"""Fagmiljøet over tid: tilsatte og publisering 2004–2025 per institusjon, fakultet og institutt, med sammenslåinger
 (DBH/HKDIR) → kilde/public/fagmiljo/historikk/<kode>.json + index.json
 
 To serier per nivå:
@@ -26,7 +26,7 @@ Uten nettilgang til DBH faller skriptet tilbake på cachen fra build-staff.py (d
 2019–2025, bare dagens koder) og skriver hvilke år og koder som mangler.
 
 Bruk:
-  python3 scripts/build-historikk.py [--refresh] [--fra 2010] [--til 2025]
+  python3 scripts/build-historikk.py [--refresh] [--fra 2004] [--til 2025]
 """
 import argparse
 import collections
@@ -197,7 +197,7 @@ def serie(per_aar, pu=True):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--refresh", action="store_true")
-    ap.add_argument("--fra", type=int, default=2010)
+    ap.add_argument("--fra", type=int, default=2004)
     ap.add_argument("--til", type=int, default=2025)
     a = ap.parse_args()
     Y0, Y1 = a.fra, a.til

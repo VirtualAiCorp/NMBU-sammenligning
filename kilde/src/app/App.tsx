@@ -194,7 +194,7 @@ export default function App() {
     'nmbu-bolig': { title: 'Bolig og studentboliger', subtitle: 'Ås mot studiestedene til institusjonene vi konkurrerer med · Kilde: NSO Studentboligundersøkelsen og SSB' },
     'nmbu-okonomi': { title: 'Økonomi og styringsindikatorer', subtitle: 'NMBU mot institusjonene vi konkurrerer med · Kilde: DBH/HK-dir tabell 902 og 750' },
     'nmbu-fagmiljo': { title: 'Fagmiljøet: tilsatte og publisering', subtitle: 'NMBU mot institusjonene vi konkurrerer med, og NMBUs fakulteter mot hverandre · Kilde: DBH/HK-dir' },
-    'nmbu-historikk': { title: 'Fagmiljøet over tid', subtitle: 'Tilsatte og publisering 2010–2025 per institusjon, fakultet og institutt, med sammenslåinger og omorganiseringer · Kilde: DBH/HK-dir' },
+    'nmbu-historikk': { title: 'Fagmiljøet over tid', subtitle: 'Tilsatte og publisering 2004–2025 per institusjon, fakultet og institutt, med sammenslåinger og omorganiseringer · Kilde: DBH/HK-dir' },
   };
   const nmbuPageBody = (page: NmbuPage): ReactNode => {
     if (page === 'nmbu-marked') return <Markedet />;
