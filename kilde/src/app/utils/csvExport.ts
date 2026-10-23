@@ -448,3 +448,10 @@ export function exportFacultyStudiebarometerCsv(faculty: FacultyData, groupId?: 
 
   downloadCsv(`${faculty.id}_studiebarometeret${groupId ? `_${groupId}` : ''}.csv`, lines);
 }
+
+// ─── Generell tabell (rad for rad) ───────────────────────────────────────────
+
+/** Laster ned en ferdig tabell: første rad er overskriftene. */
+export function lastNedTabellCsv(filnavn: string, rader: (string | number | null | undefined)[][]) {
+  downloadCsv(filnavn, rader.map((r) => row(...r)));
+}

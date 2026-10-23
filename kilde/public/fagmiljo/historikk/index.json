@@ -1,0 +1,330 @@
+{
+ "hentet": "2026-10-23",
+ "periode": [
+  2010,
+  2025
+ ],
+ "mal": [
+  "aw",
+  "fa",
+  "re",
+  "fo",
+  "kvf",
+  "pu",
+  "pp",
+  "fd",
+  "n2",
+  "p4"
+ ],
+ "datakilder": [
+  "cache (build-staff, 2019–2025)",
+  "mangler"
+ ],
+ "nett": false,
+ "institusjoner": [
+  {
+   "kode": "1173",
+   "kort": "NMBU",
+   "navn": "Norges miljø- og biovitenskapelige universitet",
+   "forlopere": [],
+   "forloperUtenKode": [
+    "UMB",
+    "NVH"
+   ],
+   "aar": [
+    2019,
+    2025
+   ],
+   "fusjoner": [
+    2014
+   ]
+  },
+  {
+   "kode": "1220",
+   "kort": "AHO",
+   "navn": "Arkitektur- og designhøgskolen i Oslo",
+   "forlopere": [],
+   "forloperUtenKode": [],
+   "aar": [
+    2019,
+    2025
+   ],
+   "fusjoner": []
+  },
+  {
+   "kode": "8241",
+   "kort": "BI",
+   "navn": "Handelshøyskolen BI",
+   "forlopere": [],
+   "forloperUtenKode": [],
+   "aar": [
+    2019,
+    2025
+   ],
+   "fusjoner": []
+  },
+  {
+   "kode": "0238",
+   "kort": "HVL",
+   "navn": "Høgskulen på Vestlandet",
+   "forlopere": [],
+   "forloperUtenKode": [
+    "HiB",
+    "HSH",
+    "HiSF"
+   ],
+   "aar": [
+    2019,
+    2025
+   ],
+   "fusjoner": [
+    2017
+   ]
+  },
+  {
+   "kode": "0236",
+   "kort": "HVO",
+   "navn": "Høgskulen i Volda",
+   "forlopere": [],
+   "forloperUtenKode": [],
+   "aar": [
+    2019,
+    2025
+   ],
+   "fusjoner": []
+  },
+  {
+   "kode": "0232",
+   "kort": "HiMolde",
+   "navn": "Høgskolen i Molde",
+   "forlopere": [],
+   "forloperUtenKode": [],
+   "aar": [
+    2019,
+    2025
+   ],
+   "fusjoner": []
+  },
+  {
+   "kode": "0256",
+   "kort": "HiØ",
+   "navn": "Høgskolen i Østfold",
+   "forlopere": [],
+   "forloperUtenKode": [],
+   "aar": [
+    2019,
+    2025
+   ],
+   "fusjoner": []
+  },
+  {
+   "kode": "1177",
+   "kort": "INN",
+   "navn": "Universitetet i Innlandet",
+   "forlopere": [
+    "INN (0264)"
+   ],
+   "forloperUtenKode": [
+    "HiHm",
+    "HiL"
+   ],
+   "aar": [
+    2019,
+    2025
+   ],
+   "fusjoner": [
+    2017,
+    2025
+   ]
+  },
+  {
+   "kode": "8253",
+   "kort": "Kristiania",
+   "navn": "Høyskolen Kristiania",
+   "forlopere": [],
+   "forloperUtenKode": [
+    "Westerdals"
+   ],
+   "aar": [
+    2019,
+    2025
+   ],
+   "fusjoner": [
+    2018
+   ]
+  },
+  {
+   "kode": "1240",
+   "kort": "NHH",
+   "navn": "Norges handelshøyskole",
+   "forlopere": [],
+   "forloperUtenKode": [],
+   "aar": [
+    2019,
+    2025
+   ],
+   "fusjoner": []
+  },
+  {
+   "kode": "8223",
+   "kort": "NLA",
+   "navn": "NLA Høgskolen",
+   "forlopere": [],
+   "forloperUtenKode": [
+    "Staffeldtsgate",
+    "Gimlekollen"
+   ],
+   "aar": [
+    2019,
+    2025
+   ],
+   "fusjoner": [
+    2013
+   ]
+  },
+  {
+   "kode": "1150",
+   "kort": "NTNU",
+   "navn": "Norges teknisk-naturvitenskapelige universitet",
+   "forlopere": [],
+   "forloperUtenKode": [
+    "HiG",
+    "HiÅ",
+    "HiST"
+   ],
+   "aar": [
+    2019,
+    2025
+   ],
+   "fusjoner": [
+    2016
+   ]
+  },
+  {
+   "kode": "1174",
+   "kort": "Nord",
+   "navn": "Nord universitet",
+   "forlopere": [],
+   "forloperUtenKode": [
+    "UiN",
+    "HiNe",
+    "HiNT"
+   ],
+   "aar": [
+    2019,
+    2025
+   ],
+   "fusjoner": [
+    2016
+   ]
+  },
+  {
+   "kode": "1175",
+   "kort": "OsloMet",
+   "navn": "OsloMet – storbyuniversitetet",
+   "forlopere": [],
+   "forloperUtenKode": [
+    "HiO",
+    "HiAk",
+    "HiOA"
+   ],
+   "aar": [
+    2019,
+    2025
+   ],
+   "fusjoner": [
+    2011,
+    2018
+   ]
+  },
+  {
+   "kode": "1176",
+   "kort": "USN",
+   "navn": "Universitetet i Sørøst-Norge",
+   "forlopere": [],
+   "forloperUtenKode": [
+    "HiBu",
+    "HiVe",
+    "HBV",
+    "HiT",
+    "HSN"
+   ],
+   "aar": [
+    2019,
+    2025
+   ],
+   "fusjoner": [
+    2014,
+    2016,
+    2018
+   ]
+  },
+  {
+   "kode": "1171",
+   "kort": "UiA",
+   "navn": "Universitetet i Agder",
+   "forlopere": [],
+   "forloperUtenKode": [],
+   "aar": [
+    2019,
+    2025
+   ],
+   "fusjoner": []
+  },
+  {
+   "kode": "1120",
+   "kort": "UiB",
+   "navn": "Universitetet i Bergen",
+   "forlopere": [],
+   "forloperUtenKode": [],
+   "aar": [
+    2019,
+    2025
+   ],
+   "fusjoner": []
+  },
+  {
+   "kode": "1110",
+   "kort": "UiO",
+   "navn": "Universitetet i Oslo",
+   "forlopere": [],
+   "forloperUtenKode": [],
+   "aar": [
+    2019,
+    2025
+   ],
+   "fusjoner": []
+  },
+  {
+   "kode": "1160",
+   "kort": "UiS",
+   "navn": "Universitetet i Stavanger",
+   "forlopere": [],
+   "forloperUtenKode": [],
+   "aar": [
+    2019,
+    2025
+   ],
+   "fusjoner": []
+  },
+  {
+   "kode": "1130",
+   "kort": "UiT",
+   "navn": "UiT Norges arktiske universitet",
+   "forlopere": [],
+   "forloperUtenKode": [
+    "HiFm",
+    "HiH",
+    "HiN"
+   ],
+   "aar": [
+    2019,
+    2025
+   ],
+   "fusjoner": [
+    2013,
+    2016
+   ]
+  }
+ ]
+}

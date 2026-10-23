@@ -201,3 +201,41 @@ Forbehold:
 
 - `scripts/build-studiebarometer.py <fakultet>` henter studiebarometeret.no per program (programside, tidsserie og delspørsmål; id = institusjonskode_programkode fra DBH-koblingen) til `data/<fakultet>/studiebarometer.json` og `kilde/src/app/data/<fakultet>StudiebarometerData.ts`. Program med for få svar får `warning` og tomme verdier.
 - `scripts/build-markedsstatus.py <fakultet>` legger styrepapir-oppsummeringene fra `data/<fakultet>/markedsstatus.json` inn i appen og kopierer PDF-ene til `kilde/public/markedsstatus/<fakultet>/`. Styrepapirer bak innlogging (NTNU-fakultetene, UiT sin e-innsynsportal, OsloMet sine vedlegg) er lenket til siden, ikke lastet ned.
+
+## Fagmiljøet over tid: tilsatte og publisering 2010–2025 med sammenslåinger (lagt til 23.10.2026)
+
+Egen side for hele NMBU («Fagmiljøet over tid», delbar lenke `?historikk`). Velg institusjon (de 20 i Fagmiljøet), nivå
+(institusjon, fakultet, institutt), mål (årsverk, faglige, rekruttering, førstestillinger, kvinneandel, publikasjoner,
+publiseringspoeng, forfatterandeler, nivå 2) og visning:
+
+- **Slik det ble rapportert:** hver DBH-institusjonskode og hver fakultets-/avdelingskode for seg, med fakultetstilhørigheten det året (DBH 210).
+- **Sammenlignbar:** dagens institusjon og dagens fakulteter/institutter bakover. Forløperne summeres for årene før sammenslåingen;
+  nedlagte avdelinger kobles til dagens enheter (samme kode, samme fakultetskode, samme navn/fakultetsnavn eller manuell kobling).
+  Det som ikke kan kobles, vises skravert som «Ikke koblet», så summen alltid stemmer med institusjonen.
+
+Sammenslåinger og kodebytter er markert i grafen (hel linje), omorganiseringer fra DBH 210 stiplet. CSV: «Last ned CSV (visningen)»
+gir tabellen som vises; «Last ned alle tall» gir alle nivåer, begge visningene og alle mål for institusjonen (én rad per enhet og år).
+
+| Hva | Hvor |
+|---|---|
+| Sammenslåinger 2010–2025 (forløpere, år, kilde) | `data/nmbu/historikk/fusjoner.json` |
+| Manuelle koblinger gamle → dagens enheter | `data/nmbu/historikk/avdelingskobling.json` |
+| Generator (DBH 225, 220, 373, 374, 210; cache i `data/nmbu/kilder/dbh-historikk/`, ikke i git) | `scripts/build-historikk.py` |
+| Kontrollrapport (kodeoppslag, årskontroll, alt som ikke er koblet) | `data/nmbu/historikk/rapport.md` |
+| Generert data (én fil per institusjon + index) | `kilde/public/fagmiljo/historikk/` |
+| Komponent | `kilde/src/app/components/FagmiljoHistorikk.tsx` |
+
+Oppdatere: `python3 scripts/build-historikk.py --refresh`, les `rapport.md`, legg inn koder/koblinger som mangler, kjør på nytt.
+
+Forbehold:
+- **Første bygg (23.10.2026) ble gjort uten tilgang til DBH-API-et** fra skymiljøet. Dataene er derfor bare 2019–2025 for dagens koder
+  (fra cachen til `build-staff.py`), og forløperne er ikke med. Siden sier dette selv. Kjør skriptet der DBH er tilgjengelig for 2010–2018 og forløperne.
+- Forløpernes DBH-koder slås opp på navn i DBH (feltet `navnSok`); tvetydige eller manglende treff står i rapporten. Kildelenkene i
+  `fusjoner.json` er merket `kildeKontrollert: false` til de er sjekket; årstallene kontrolleres uansett mot hvilke år kodene rapporterer.
+  Westerdals (Kristiania) og Staffeldtsgate/Gimlekollen (NLA) er usikre.
+- DBH 225 gir årsverk, ikke antall personer (også «kvinner» og «menn» er årsverk). 2026 publiseres i DBH våren 2027.
+- Antall publikasjoner kan ikke summeres over avdelinger (samme publikasjon i flere avdelinger), så det vises ikke på fakultetsnivå.
+  Summert over forløperne før en sammenslåing telles felles publikasjoner flere ganger; poeng og forfatterandeler har ikke dette problemet.
+- Manuelle koblinger med `skjonn: true` (HVL 2024, HiØ 2021) bygger på navn og fagområde, ikke på vedtak, og vises som antakelser.
+- NLA fører tilsatte på de gamle campusavdelingene i DBH 225, mens 210 har nye avdelinger fra 2017; NLA kan ikke fordeles på dagens avdelinger.
+- Tallene for dagens koder 2019–2025 er kontrollert mot `staffData.json` (Fagmiljøet): 840 verdier, ingen avvik.

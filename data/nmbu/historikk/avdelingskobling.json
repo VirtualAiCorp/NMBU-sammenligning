@@ -1,0 +1,60 @@
+{
+  "_om": [
+    "Manuell kobling fra nedlagte avdelinger/fakulteter (også forløperinstitusjonenes) til dagens enheter. Brukes av scripts/build-historikk.py for den sammenlignbare serien i dagens struktur.",
+    "Skriptet kobler først automatisk: (1) avdelingskoden finnes fortsatt hos dagens institusjon, (2) fakultetskoden finnes fortsatt (da kobles enheten bare til fakultetet, ikke til institutt), (3) avdelingsnavnet er det samme som navnet på en dagens avdeling. Det som står igjen, havner i «Ikke koblet» og listes i data/nmbu/historikk/rapport.md. Legg koblinger for dem her.",
+    "Felter: inst = dagens institusjonskode; fra = institusjonskode eller forløperens kortnavn (f.eks. «UMB»); fraAvd = avdelingskode, eller fraFak = fakultetskode (gjelder alle avdelinger under fakultetet); tilAvd = dagens avdelingskode, eller tilFak = dagens fakultetskode (bare fakultetsnivå), eller tilFak = «ufordelt» for bevisst ufordelte enheter; merknad og kilde = begrunnelse.",
+    "Er en enhet delt på flere dagens enheter, kan andel brukes (0–1) på flere linjer med samme fra/fraAvd; andelene bør summere til 1. Dette er en antakelse og merkes som brudd i grafen.",
+    "Eksempel: { \"inst\": \"1173\", \"fra\": \"UMB\", \"fraAvd\": \"xxxxxx\", \"tilAvd\": \"470210\", \"merknad\": \"Institutt for økonomi og ressursforvaltning ble Handelshøyskolen\" }",
+    "skjonn=true betyr at koblingen bygger på navn og fagområde i DBH 210, ikke på et dokumentert vedtak. Slike koblinger vises som antakelser i appen."
+  ],
+  "koblinger": [
+    {
+      "inst": "0238",
+      "fra": "0238",
+      "fraFak": "220",
+      "tilFak": "250",
+      "skjonn": true,
+      "merknad": "Fakultet for ingeniør- og naturvitskap (220, til 2023) gikk inn i Fakultet for teknologi, miljø- og samfunnsvitskap (250, fra 2024). Koblet på navn og fagområde i DBH 210 (skjønn)"
+    },
+    {
+      "inst": "0238",
+      "fra": "0238",
+      "fraFak": "240",
+      "tilFak": "250",
+      "skjonn": true,
+      "merknad": "Fakultet for økonomi og samfunnsvitskap (240, til 2023) gikk inn i Fakultet for teknologi, miljø- og samfunnsvitskap (250, fra 2024). Koblet på navn og fagområde i DBH 210 (skjønn)"
+    },
+    {
+      "inst": "0256",
+      "fra": "0256",
+      "fraFak": "430",
+      "tilFak": "350",
+      "skjonn": true,
+      "merknad": "Avdeling for lærerutdanning (430, til 2020) → Fakultet for lærerutdanninger og språk (350, fra 2021). Koblet på navn og fagområde i DBH 210 (skjønn)"
+    },
+    {
+      "inst": "0256",
+      "fra": "0256",
+      "fraFak": "440",
+      "tilFak": "360",
+      "skjonn": true,
+      "merknad": "Avdeling for helse- og sosialfag (440, til 2020) → Fakultet for helse, velferd og organisasjon (360, fra 2021). Koblet på navn og fagområde i DBH 210 (skjønn)"
+    },
+    {
+      "inst": "0256",
+      "fra": "0256",
+      "fraFak": "450",
+      "tilFak": "370",
+      "skjonn": true,
+      "merknad": "Avdeling for ingeniørfag (450, til 2020) → Fakultet for informasjonsteknologi, ingeniørfag og økonomi (370, fra 2021). Koblet på navn og fagområde i DBH 210 (skjønn)"
+    },
+    {
+      "inst": "0256",
+      "fra": "0256",
+      "fraFak": "455",
+      "tilFak": "370",
+      "skjonn": true,
+      "merknad": "Avdeling for informasjonsteknologi (455, til 2020) → Fakultet for informasjonsteknologi, ingeniørfag og økonomi (370, fra 2021). Koblet på navn og fagområde i DBH 210 (skjønn)"
+    }
+  ]
+}

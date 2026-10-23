@@ -1,0 +1,551 @@
+{
+  "_om": [
+    "Sammenslåinger og kodebytter 2010–2025 for institusjonene i Fagmiljøet. Brukes av scripts/build-historikk.py.",
+    "Én post per dagens institusjon (DBH-kode). «forlopere» er alle institusjonskoder som rapporterte til DBH før sammenslåingen, også mellomledd (f.eks. HBV og HSN før USN).",
+    "inn = første år tallene ligger under etterfølgeren (sammenslåing per 1. januar det året). Tallene fra forløperen brukes bare for år før inn; rapporterer forløperen også senere år, flagges det i rapporten og holdes utenfor (ellers dobbelttelling).",
+    "etterfolger = koden forløperen gikk inn i (dagens kode, eller et mellomledd som selv er forløper).",
+    "kode = DBH-institusjonskode. Står den som null, slår skriptet den opp i DBH på navn (navnSok er et regulært uttrykk mot Institusjonsnavn) og krever nøyaktig ett treff. Oppslagene og kontrollene skrives til data/nmbu/historikk/rapport.md.",
+    "kilde = hvor sammenslåingen er dokumentert. kildeKontrollert=false betyr at lenken ikke er åpnet og kontrollert mot teksten ennå (nettilgang manglet da fila ble skrevet 23.10.2026); årstallene kontrolleres uansett mot hvilke år hver kode faktisk rapporterer i DBH."
+  ],
+  "periode": [
+    2010,
+    2025
+  ],
+  "institusjoner": [
+    {
+      "kode": "1173",
+      "kort": "NMBU",
+      "navn": "Norges miljø- og biovitenskapelige universitet",
+      "forlopere": [
+        {
+          "kort": "UMB",
+          "navn": "Universitetet for miljø- og biovitenskap",
+          "kode": null,
+          "navnSok": "^Universitetet for miljø- og biovitenskap",
+          "inn": 2014,
+          "etterfolger": "1173"
+        },
+        {
+          "kort": "NVH",
+          "navn": "Norges veterinærhøgskole",
+          "kode": null,
+          "navnSok": "^Norges veterinærhøgskole",
+          "inn": 2014,
+          "etterfolger": "1173"
+        }
+      ],
+      "hendelser": [
+        {
+          "aar": 2014,
+          "type": "fusjon",
+          "tekst": "UMB og Norges veterinærhøgskole slått sammen til NMBU (1.1.2014)"
+        },
+        {
+          "aar": 2016,
+          "type": "omorganisering",
+          "tekst": "Ny fakultetsstruktur: sju fakulteter (Veterinærhøgskolen, LANDSAM, MINA, KBM, BIOVIT, HH; REALTEK fra 2017)"
+        }
+      ],
+      "kilde": {
+        "navn": "Wikipedia: Norges miljø- og biovitenskapelige universitet",
+        "url": "https://no.wikipedia.org/wiki/Norges_miljø-_og_biovitenskapelige_universitet"
+      },
+      "kildeKontrollert": false
+    },
+    {
+      "kode": "1150",
+      "kort": "NTNU",
+      "navn": "Norges teknisk-naturvitenskapelige universitet",
+      "forlopere": [
+        {
+          "kort": "HiG",
+          "navn": "Høgskolen i Gjøvik",
+          "kode": null,
+          "navnSok": "^Høgskolen i Gjøvik",
+          "inn": 2016,
+          "etterfolger": "1150"
+        },
+        {
+          "kort": "HiÅ",
+          "navn": "Høgskolen i Ålesund",
+          "kode": null,
+          "navnSok": "^Høgskolen i Ålesund",
+          "inn": 2016,
+          "etterfolger": "1150"
+        },
+        {
+          "kort": "HiST",
+          "navn": "Høgskolen i Sør-Trøndelag",
+          "kode": null,
+          "navnSok": "^Høgskolen i Sør-Trøndelag",
+          "inn": 2016,
+          "etterfolger": "1150"
+        }
+      ],
+      "hendelser": [
+        {
+          "aar": 2016,
+          "type": "fusjon",
+          "tekst": "NTNU slått sammen med HiG, HiÅ og HiST (1.1.2016)"
+        },
+        {
+          "aar": 2017,
+          "type": "omorganisering",
+          "tekst": "Ny fakultetsstruktur ved NTNU etter sammenslåingen"
+        }
+      ],
+      "kilde": {
+        "navn": "Wikipedia: Norges teknisk-naturvitenskapelige universitet",
+        "url": "https://no.wikipedia.org/wiki/Norges_teknisk-naturvitenskapelige_universitet"
+      },
+      "kildeKontrollert": false
+    },
+    {
+      "kode": "1130",
+      "kort": "UiT",
+      "navn": "UiT Norges arktiske universitet",
+      "forlopere": [
+        {
+          "kort": "HiFm",
+          "navn": "Høgskolen i Finnmark",
+          "kode": null,
+          "navnSok": "^Høgskolen i Finnmark",
+          "inn": 2013,
+          "etterfolger": "1130",
+          "merknad": "Sammenslått 1.8.2013. DBH teller tilsatte per 1. oktober, så 2013 ligger trolig hos UiT. Rapporterer HiFm også 2013, flagges det i rapporten."
+        },
+        {
+          "kort": "HiH",
+          "navn": "Høgskolen i Harstad",
+          "kode": null,
+          "navnSok": "^Høgskolen i Harstad",
+          "inn": 2016,
+          "etterfolger": "1130"
+        },
+        {
+          "kort": "HiN",
+          "navn": "Høgskolen i Narvik",
+          "kode": null,
+          "navnSok": "^Høgskolen i Narvik",
+          "inn": 2016,
+          "etterfolger": "1130"
+        }
+      ],
+      "hendelser": [
+        {
+          "aar": 2013,
+          "type": "fusjon",
+          "tekst": "Høgskolen i Finnmark inn i UiT (1.8.2013)"
+        },
+        {
+          "aar": 2016,
+          "type": "fusjon",
+          "tekst": "Høgskolen i Harstad og Høgskolen i Narvik inn i UiT (1.1.2016)"
+        }
+      ],
+      "kilde": {
+        "navn": "Wikipedia: UiT Norges arktiske universitet",
+        "url": "https://no.wikipedia.org/wiki/UiT_Norges_arktiske_universitet"
+      },
+      "kildeKontrollert": false
+    },
+    {
+      "kode": "1174",
+      "kort": "Nord",
+      "navn": "Nord universitet",
+      "forlopere": [
+        {
+          "kort": "UiN",
+          "navn": "Universitetet i Nordland (Høgskolen i Bodø til 2011)",
+          "kode": null,
+          "navnSok": "^(Universitetet i Nordland|Høgskolen i Bodø)",
+          "inn": 2016,
+          "etterfolger": "1174"
+        },
+        {
+          "kort": "HiNe",
+          "navn": "Høgskolen i Nesna",
+          "kode": null,
+          "navnSok": "^Høgskolen i Nesna",
+          "inn": 2016,
+          "etterfolger": "1174"
+        },
+        {
+          "kort": "HiNT",
+          "navn": "Høgskolen i Nord-Trøndelag",
+          "kode": null,
+          "navnSok": "^Høgskolen i Nord-Trøndelag",
+          "inn": 2016,
+          "etterfolger": "1174"
+        }
+      ],
+      "hendelser": [
+        {
+          "aar": 2011,
+          "type": "navn",
+          "tekst": "Høgskolen i Bodø blir Universitetet i Nordland"
+        },
+        {
+          "aar": 2016,
+          "type": "fusjon",
+          "tekst": "UiN, HiNe og HiNT slått sammen til Nord universitet (1.1.2016)"
+        }
+      ],
+      "kilde": {
+        "navn": "Wikipedia: Nord universitet",
+        "url": "https://no.wikipedia.org/wiki/Nord_universitet"
+      },
+      "kildeKontrollert": false
+    },
+    {
+      "kode": "1175",
+      "kort": "OsloMet",
+      "navn": "OsloMet – storbyuniversitetet",
+      "forlopere": [
+        {
+          "kort": "HiO",
+          "navn": "Høgskolen i Oslo",
+          "kode": null,
+          "navnSok": "^Høgskolen i Oslo$",
+          "inn": 2011,
+          "etterfolger": "HiOA"
+        },
+        {
+          "kort": "HiAk",
+          "navn": "Høgskolen i Akershus",
+          "kode": null,
+          "navnSok": "^Høgskolen i Akershus",
+          "inn": 2011,
+          "etterfolger": "HiOA"
+        },
+        {
+          "kort": "HiOA",
+          "navn": "Høgskolen i Oslo og Akershus",
+          "kode": null,
+          "navnSok": "^Høgskolen i Oslo og Akershus",
+          "inn": 2018,
+          "etterfolger": "1175"
+        }
+      ],
+      "hendelser": [
+        {
+          "aar": 2011,
+          "type": "fusjon",
+          "tekst": "Høgskolen i Oslo og Høgskolen i Akershus slått sammen til HiOA (1.1.2011)"
+        },
+        {
+          "aar": 2018,
+          "type": "kode",
+          "tekst": "HiOA blir OsloMet – storbyuniversitetet (universitetsstatus); ny institusjonskode i DBH"
+        }
+      ],
+      "kilde": {
+        "navn": "Wikipedia: OsloMet – storbyuniversitetet",
+        "url": "https://no.wikipedia.org/wiki/OsloMet_–_storbyuniversitetet"
+      },
+      "kildeKontrollert": false
+    },
+    {
+      "kode": "1176",
+      "kort": "USN",
+      "navn": "Universitetet i Sørøst-Norge",
+      "forlopere": [
+        {
+          "kort": "HiBu",
+          "navn": "Høgskolen i Buskerud",
+          "kode": null,
+          "navnSok": "^Høgskolen i Buskerud$",
+          "inn": 2014,
+          "etterfolger": "HBV"
+        },
+        {
+          "kort": "HiVe",
+          "navn": "Høgskolen i Vestfold",
+          "kode": null,
+          "navnSok": "^Høgskolen i Vestfold$",
+          "inn": 2014,
+          "etterfolger": "HBV"
+        },
+        {
+          "kort": "HBV",
+          "navn": "Høgskolen i Buskerud og Vestfold",
+          "kode": null,
+          "navnSok": "^Høgskolen i Buskerud og Vestfold",
+          "inn": 2016,
+          "etterfolger": "HSN"
+        },
+        {
+          "kort": "HiT",
+          "navn": "Høgskolen i Telemark",
+          "kode": null,
+          "navnSok": "^Høgskolen i Telemark",
+          "inn": 2016,
+          "etterfolger": "HSN"
+        },
+        {
+          "kort": "HSN",
+          "navn": "Høgskolen i Sørøst-Norge",
+          "kode": null,
+          "navnSok": "^Høgskolen i Sørøst-Norge",
+          "inn": 2018,
+          "etterfolger": "1176"
+        }
+      ],
+      "hendelser": [
+        {
+          "aar": 2014,
+          "type": "fusjon",
+          "tekst": "Høgskolen i Buskerud og Høgskolen i Vestfold slått sammen til HBV (1.1.2014)"
+        },
+        {
+          "aar": 2016,
+          "type": "fusjon",
+          "tekst": "HBV og Høgskolen i Telemark slått sammen til Høgskolen i Sørøst-Norge (1.1.2016)"
+        },
+        {
+          "aar": 2018,
+          "type": "kode",
+          "tekst": "HSN blir Universitetet i Sørøst-Norge; ny institusjonskode i DBH"
+        }
+      ],
+      "kilde": {
+        "navn": "Wikipedia: Universitetet i Sørøst-Norge",
+        "url": "https://no.wikipedia.org/wiki/Universitetet_i_Sørøst-Norge"
+      },
+      "kildeKontrollert": false
+    },
+    {
+      "kode": "1177",
+      "kort": "INN",
+      "navn": "Universitetet i Innlandet",
+      "forlopere": [
+        {
+          "kort": "HiHm",
+          "navn": "Høgskolen i Hedmark",
+          "kode": null,
+          "navnSok": "^Høgskolen i Hedmark",
+          "inn": 2017,
+          "etterfolger": "0264"
+        },
+        {
+          "kort": "HiL",
+          "navn": "Høgskolen i Lillehammer",
+          "kode": null,
+          "navnSok": "^Høgskolen i Lillehammer",
+          "inn": 2017,
+          "etterfolger": "0264"
+        },
+        {
+          "kort": "INN (0264)",
+          "navn": "Høgskolen i Innlandet / Universitetet i Innlandet (kode 0264)",
+          "kode": "0264",
+          "inn": 2025,
+          "etterfolger": "1177",
+          "merknad": "Samme institusjon, bare ny kode i DBH. Universitetsstatus 2020."
+        }
+      ],
+      "hendelser": [
+        {
+          "aar": 2017,
+          "type": "fusjon",
+          "tekst": "Høgskolen i Hedmark og Høgskolen i Lillehammer slått sammen til Høgskolen i Innlandet (1.1.2017)"
+        },
+        {
+          "aar": 2020,
+          "type": "navn",
+          "tekst": "Høgskolen i Innlandet blir Universitetet i Innlandet"
+        },
+        {
+          "aar": 2025,
+          "type": "kode",
+          "tekst": "Ny institusjonskode i DBH: 0264 → 1177 (tallene fra 2025 ligger på 1177)"
+        }
+      ],
+      "kilde": {
+        "navn": "Wikipedia: Universitetet i Innlandet",
+        "url": "https://no.wikipedia.org/wiki/Universitetet_i_Innlandet"
+      },
+      "kildeKontrollert": false
+    },
+    {
+      "kode": "0238",
+      "kort": "HVL",
+      "navn": "Høgskulen på Vestlandet",
+      "forlopere": [
+        {
+          "kort": "HiB",
+          "navn": "Høgskolen i Bergen",
+          "kode": null,
+          "navnSok": "^Høgskolen i Bergen",
+          "inn": 2017,
+          "etterfolger": "0238"
+        },
+        {
+          "kort": "HSH",
+          "navn": "Høgskolen Stord/Haugesund",
+          "kode": null,
+          "navnSok": "^Høgskolen Stord/Haugesund",
+          "inn": 2017,
+          "etterfolger": "0238"
+        },
+        {
+          "kort": "HiSF",
+          "navn": "Høgskulen i Sogn og Fjordane",
+          "kode": null,
+          "navnSok": "^Høgskulen i Sogn og Fjordane",
+          "inn": 2017,
+          "etterfolger": "0238"
+        }
+      ],
+      "hendelser": [
+        {
+          "aar": 2017,
+          "type": "fusjon",
+          "tekst": "HiB, HSH og HiSF slått sammen til Høgskulen på Vestlandet (1.1.2017)"
+        }
+      ],
+      "kilde": {
+        "navn": "Wikipedia: Høgskulen på Vestlandet",
+        "url": "https://no.wikipedia.org/wiki/Høgskulen_på_Vestlandet"
+      },
+      "kildeKontrollert": false
+    },
+    {
+      "kode": "8253",
+      "kort": "Kristiania",
+      "navn": "Høyskolen Kristiania",
+      "forlopere": [
+        {
+          "kort": "Westerdals",
+          "navn": "Westerdals Oslo School of Arts, Communication and Technology",
+          "kode": null,
+          "navnSok": "Westerdals",
+          "inn": 2018,
+          "etterfolger": "8253",
+          "merknad": "Usikker: må kontrolleres at Westerdals rapporterte til DBH som egen institusjon."
+        }
+      ],
+      "hendelser": [
+        {
+          "aar": 2018,
+          "type": "fusjon",
+          "tekst": "Westerdals Oslo ACT inn i Høyskolen Kristiania"
+        }
+      ],
+      "kilde": {
+        "navn": "Wikipedia: Høyskolen Kristiania",
+        "url": "https://no.wikipedia.org/wiki/Høyskolen_Kristiania"
+      },
+      "kildeKontrollert": false
+    },
+    {
+      "kode": "8223",
+      "kort": "NLA",
+      "navn": "NLA Høgskolen",
+      "forlopere": [
+        {
+          "kort": "Staffeldtsgate",
+          "navn": "Høgskolen i Staffeldtsgate",
+          "kode": null,
+          "navnSok": "Staffeldtsgate",
+          "inn": 2013,
+          "etterfolger": "8223",
+          "merknad": "DBH 210 viser «Staffeldtsgate» som avdeling hos NLA (8223) fra våren 2013, som støtter årstallet. Om skolen rapporterte separat til DBH før 2013, må kontrolleres."
+        },
+        {
+          "kort": "Gimlekollen",
+          "navn": "Mediehøgskolen Gimlekollen",
+          "kode": null,
+          "navnSok": "Gimlekollen",
+          "inn": 2013,
+          "etterfolger": "8223",
+          "merknad": "DBH 210 viser «Mediehøgskolen Gimlekollen» som avdeling hos NLA (8223) fra våren 2013, som støtter årstallet. Om skolen rapporterte separat til DBH før 2013, må kontrolleres."
+        }
+      ],
+      "hendelser": [
+        {
+          "aar": 2013,
+          "type": "fusjon",
+          "tekst": "Høgskolen i Staffeldtsgate og Mediehøgskolen Gimlekollen inn i NLA Høgskolen (avdelinger hos NLA i DBH fra 2013)"
+        }
+      ],
+      "kilde": {
+        "navn": "Wikipedia: NLA Høgskolen",
+        "url": "https://no.wikipedia.org/wiki/NLA_Høgskolen"
+      },
+      "kildeKontrollert": false,
+      "merknad": "NLA rapporterer tilsatte i DBH 225 på de gamle campusavdelingene (430–460, avsluttet i DBH 210 i 2016), mens 210 har avdelingene 510–570 fra 2017. Tilsatte kan derfor ikke fordeles på dagens avdelinger."
+    },
+    {
+      "kode": "1110",
+      "kort": "UiO",
+      "navn": "Universitetet i Oslo",
+      "forlopere": [],
+      "hendelser": []
+    },
+    {
+      "kode": "1120",
+      "kort": "UiB",
+      "navn": "Universitetet i Bergen",
+      "forlopere": [],
+      "hendelser": []
+    },
+    {
+      "kode": "1160",
+      "kort": "UiS",
+      "navn": "Universitetet i Stavanger",
+      "forlopere": [],
+      "hendelser": [],
+      "merknad": "Arkeologisk museum ble del av UiS i 2009, før perioden."
+    },
+    {
+      "kode": "1171",
+      "kort": "UiA",
+      "navn": "Universitetet i Agder",
+      "forlopere": [],
+      "hendelser": []
+    },
+    {
+      "kode": "1240",
+      "kort": "NHH",
+      "navn": "Norges handelshøyskole",
+      "forlopere": [],
+      "hendelser": []
+    },
+    {
+      "kode": "1220",
+      "kort": "AHO",
+      "navn": "Arkitektur- og designhøgskolen i Oslo",
+      "forlopere": [],
+      "hendelser": []
+    },
+    {
+      "kode": "8241",
+      "kort": "BI",
+      "navn": "Handelshøyskolen BI",
+      "forlopere": [],
+      "hendelser": []
+    },
+    {
+      "kode": "0232",
+      "kort": "HiMolde",
+      "navn": "Høgskolen i Molde",
+      "forlopere": [],
+      "hendelser": []
+    },
+    {
+      "kode": "0236",
+      "kort": "HVO",
+      "navn": "Høgskulen i Volda",
+      "forlopere": [],
+      "hendelser": []
+    },
+    {
+      "kode": "0256",
+      "kort": "HiØ",
+      "navn": "Høgskolen i Østfold",
+      "forlopere": [],
+      "hendelser": []
+    }
+  ]
+}

@@ -52,6 +52,7 @@ const Handelshoyskolerangering = lazyNamed<typeof import('./components/Handelsho
 const FacultyEconomyPage = lazyNamed<typeof import('./components/InstitusjonsSider')['FacultyEconomyPage']>(() => import('./components/InstitusjonsSider'), 'FacultyEconomyPage');
 const FacultyStaffPage = lazyNamed<typeof import('./components/InstitusjonsSider')['FacultyStaffPage']>(() => import('./components/InstitusjonsSider'), 'FacultyStaffPage');
 const NmbuEconomyPage = lazyNamed<typeof import('./components/InstitusjonsSider')['NmbuEconomyPage']>(() => import('./components/InstitusjonsSider'), 'NmbuEconomyPage');
+const FagmiljoHistorikk = lazyNamed<typeof import('./components/FagmiljoHistorikk')['FagmiljoHistorikk']>(() => import('./components/FagmiljoHistorikk'), 'FagmiljoHistorikk');
 const NmbuStaffPage = lazyNamed<typeof import('./components/InstitusjonsSider')['NmbuStaffPage']>(() => import('./components/InstitusjonsSider'), 'NmbuStaffPage');
 const OkonomiOgDrift = lazyNamed<typeof import('./components/styringsinformasjon/OkonomiOgDrift')['OkonomiOgDrift']>(() => import('./components/styringsinformasjon/OkonomiOgDrift'), 'OkonomiOgDrift');
 const Utdanning = lazyNamed<typeof import('./components/styringsinformasjon/Utdanning')['Utdanning']>(() => import('./components/styringsinformasjon/Utdanning'), 'Utdanning');
@@ -73,7 +74,9 @@ export default function App() {
   const fraStudiesentre = typeof window !== 'undefined' ? new URLSearchParams(window.location.search).get('studiesentre') : null;
   // Delbar lenke til Markedet (?marked eller ?marked=<fane>); fanen leses av komponenten.
   const fraMarked = typeof window !== 'undefined' && new URLSearchParams(window.location.search).has('marked');
-  const [faculty, setFaculty] = useState<Faculty | null>(fraLenke || fraStat100 || fraOpptak || fraUhr2 || fraKonkurrent != null || fraStudiesentre != null ? 'hh' : fraMarked ? 'nmbu-marked' : null);
+  // Delbar lenke til Fagmiljøet over tid (?historikk)
+  const fraHistorikk = typeof window !== 'undefined' && new URLSearchParams(window.location.search).has('historikk');
+  const [faculty, setFaculty] = useState<Faculty | null>(fraLenke || fraStat100 || fraOpptak || fraUhr2 || fraKonkurrent != null || fraStudiesentre != null ? 'hh' : fraMarked ? 'nmbu-marked' : fraHistorikk ? 'nmbu-historikk' : null);
   const [facultyView, setFacultyView] = useState<FacultyView>(fraLenke ? 'rangering' : fraStat100 ? 'stat100' : fraOpptak ? 'intern' : fraUhr2 ? 'uhr2' : fraKonkurrent != null ? 'konkurrenter' : fraStudiesentre != null ? 'studiesentre' : 'landing');
   const [facultyGroup, setFacultyGroup] = useState<string | undefined>(undefined);
   const [facultyCourseGroup, setFacultyCourseGroup] = useState<string | undefined>(undefined);
@@ -182,7 +185,7 @@ export default function App() {
   };
 
   // Sider for hele NMBU
-  type NmbuPage = 'nmbu-marked' | 'nmbu-bolig' | 'nmbu-okonomi' | 'nmbu-fagmiljo' | 'nmbu-sokergrunnlag' | 'nmbu-okonomi-drift' | 'nmbu-utdanning';
+  type NmbuPage = 'nmbu-marked' | 'nmbu-bolig' | 'nmbu-okonomi' | 'nmbu-fagmiljo' | 'nmbu-sokergrunnlag' | 'nmbu-okonomi-drift' | 'nmbu-utdanning' | 'nmbu-historikk';
   const NMBU_PAGE_META: Record<NmbuPage, { title: string; subtitle: string }> = {
     'nmbu-marked': { title: 'Markedet', subtitle: 'Hele markedet for høyere utdanning: alle institusjoner og alle program, med NMBUs andel av førstevalgene per fagfelt · Kilde: Samordna opptak og DBH/HK-dir' },
     'nmbu-okonomi-drift': { title: 'Økonomi og drift', subtitle: 'Hele NMBU med fakultetene side om side og konkurrentene som sammenligning · Kilde: DBH/HK-dir, Forskningsrådet, CORDIS og NMBUs egne dokumenter' },
@@ -191,6 +194,7 @@ export default function App() {
     'nmbu-bolig': { title: 'Bolig og studentboliger', subtitle: 'Ås mot studiestedene til institusjonene vi konkurrerer med · Kilde: NSO Studentboligundersøkelsen og SSB' },
     'nmbu-okonomi': { title: 'Økonomi og styringsindikatorer', subtitle: 'NMBU mot institusjonene vi konkurrerer med · Kilde: DBH/HK-dir tabell 902 og 750' },
     'nmbu-fagmiljo': { title: 'Fagmiljøet: tilsatte og publisering', subtitle: 'NMBU mot institusjonene vi konkurrerer med, og NMBUs fakulteter mot hverandre · Kilde: DBH/HK-dir' },
+    'nmbu-historikk': { title: 'Fagmiljøet over tid', subtitle: 'Tilsatte og publisering 2010–2025 per institusjon, fakultet og institutt, med sammenslåinger og omorganiseringer · Kilde: DBH/HK-dir' },
   };
   const nmbuPageBody = (page: NmbuPage): ReactNode => {
     if (page === 'nmbu-marked') return <Markedet />;
@@ -199,9 +203,10 @@ export default function App() {
     if (page === 'nmbu-okonomi') return <NmbuEconomyPage />;
     if (page === 'nmbu-okonomi-drift') return <OkonomiOgDrift />;
     if (page === 'nmbu-utdanning') return <Utdanning />;
+    if (page === 'nmbu-historikk') return <FagmiljoHistorikk />;
     return <NmbuStaffPage />;
   };
-  const isNmbuPage = (f: Faculty | null): f is NmbuPage => f === 'nmbu-marked' || f === 'nmbu-bolig' || f === 'nmbu-okonomi' || f === 'nmbu-fagmiljo' || f === 'nmbu-sokergrunnlag' || f === 'nmbu-okonomi-drift' || f === 'nmbu-utdanning';
+  const isNmbuPage = (f: Faculty | null): f is NmbuPage => f === 'nmbu-marked' || f === 'nmbu-bolig' || f === 'nmbu-okonomi' || f === 'nmbu-fagmiljo' || f === 'nmbu-sokergrunnlag' || f === 'nmbu-okonomi-drift' || f === 'nmbu-utdanning' || f === 'nmbu-historikk';
   /** Styringsinformasjonen har eget sidehode i arbeidsflaten (byggeklossene), ellers samme ramme som de andre NMBU-sidene. */
   const erStyringsside = (f: Faculty | null) => f === 'nmbu-okonomi-drift' || f === 'nmbu-utdanning';
   const isFacultyId = (f: Faculty | null): f is FacultyId => f === 'hh' || f === 'landsam' || f === 'realtek' || f === 'biovit' || f === 'kbm' || f === 'mina' || f === 'vet';
