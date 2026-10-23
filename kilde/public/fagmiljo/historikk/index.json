@@ -17,22 +17,21 @@
   "p4"
  ],
  "datakilder": [
-  "cache (build-staff, 2019–2025)",
-  "mangler"
+  "DBH"
  ],
- "nett": false,
+ "nett": true,
  "institusjoner": [
   {
    "kode": "1173",
    "kort": "NMBU",
    "navn": "Norges miljø- og biovitenskapelige universitet",
-   "forlopere": [],
-   "forloperUtenKode": [
+   "forlopere": [
     "UMB",
     "NVH"
    ],
+   "forloperUtenKode": [],
    "aar": [
-    2019,
+    2010,
     2025
    ],
    "fusjoner": [
@@ -46,7 +45,7 @@
    "forlopere": [],
    "forloperUtenKode": [],
    "aar": [
-    2019,
+    2010,
     2025
    ],
    "fusjoner": []
@@ -58,7 +57,7 @@
    "forlopere": [],
    "forloperUtenKode": [],
    "aar": [
-    2019,
+    2010,
     2025
    ],
    "fusjoner": []
@@ -67,14 +66,15 @@
    "kode": "0238",
    "kort": "HVL",
    "navn": "Høgskulen på Vestlandet",
-   "forlopere": [],
-   "forloperUtenKode": [
+   "forlopere": [
     "HiB",
-    "HSH",
+    "HSH"
+   ],
+   "forloperUtenKode": [
     "HiSF"
    ],
    "aar": [
-    2019,
+    2010,
     2025
    ],
    "fusjoner": [
@@ -88,7 +88,7 @@
    "forlopere": [],
    "forloperUtenKode": [],
    "aar": [
-    2019,
+    2010,
     2025
    ],
    "fusjoner": []
@@ -100,7 +100,7 @@
    "forlopere": [],
    "forloperUtenKode": [],
    "aar": [
-    2019,
+    2010,
     2025
    ],
    "fusjoner": []
@@ -112,7 +112,7 @@
    "forlopere": [],
    "forloperUtenKode": [],
    "aar": [
-    2019,
+    2010,
     2025
    ],
    "fusjoner": []
@@ -122,14 +122,13 @@
    "kort": "INN",
    "navn": "Universitetet i Innlandet",
    "forlopere": [
+    "HiHm",
+    "HiL",
     "INN (0264)"
    ],
-   "forloperUtenKode": [
-    "HiHm",
-    "HiL"
-   ],
+   "forloperUtenKode": [],
    "aar": [
-    2019,
+    2010,
     2025
    ],
    "fusjoner": [
@@ -146,7 +145,7 @@
     "Westerdals"
    ],
    "aar": [
-    2019,
+    2018,
     2025
    ],
    "fusjoner": [
@@ -160,7 +159,7 @@
    "forlopere": [],
    "forloperUtenKode": [],
    "aar": [
-    2019,
+    2010,
     2025
    ],
    "fusjoner": []
@@ -169,13 +168,13 @@
    "kode": "8223",
    "kort": "NLA",
    "navn": "NLA Høgskolen",
-   "forlopere": [],
-   "forloperUtenKode": [
+   "forlopere": [
     "Staffeldtsgate",
     "Gimlekollen"
    ],
+   "forloperUtenKode": [],
    "aar": [
-    2019,
+    2010,
     2025
    ],
    "fusjoner": [
@@ -186,14 +185,14 @@
    "kode": "1150",
    "kort": "NTNU",
    "navn": "Norges teknisk-naturvitenskapelige universitet",
-   "forlopere": [],
-   "forloperUtenKode": [
+   "forlopere": [
     "HiG",
     "HiÅ",
     "HiST"
    ],
+   "forloperUtenKode": [],
    "aar": [
-    2019,
+    2010,
     2025
    ],
    "fusjoner": [
@@ -204,14 +203,15 @@
    "kode": "1174",
    "kort": "Nord",
    "navn": "Nord universitet",
-   "forlopere": [],
-   "forloperUtenKode": [
-    "UiN",
+   "forlopere": [
     "HiNe",
     "HiNT"
    ],
+   "forloperUtenKode": [
+    "UiN"
+   ],
    "aar": [
-    2019,
+    2010,
     2025
    ],
    "fusjoner": [
@@ -222,14 +222,14 @@
    "kode": "1175",
    "kort": "OsloMet",
    "navn": "OsloMet – storbyuniversitetet",
-   "forlopere": [],
-   "forloperUtenKode": [
+   "forlopere": [
     "HiO",
     "HiAk",
     "HiOA"
    ],
+   "forloperUtenKode": [],
    "aar": [
-    2019,
+    2010,
     2025
    ],
    "fusjoner": [
@@ -241,16 +241,16 @@
    "kode": "1176",
    "kort": "USN",
    "navn": "Universitetet i Sørøst-Norge",
-   "forlopere": [],
-   "forloperUtenKode": [
+   "forlopere": [
     "HiBu",
     "HiVe",
     "HBV",
     "HiT",
     "HSN"
    ],
+   "forloperUtenKode": [],
    "aar": [
-    2019,
+    2010,
     2025
    ],
    "fusjoner": [
@@ -266,7 +266,7 @@
    "forlopere": [],
    "forloperUtenKode": [],
    "aar": [
-    2019,
+    2010,
     2025
    ],
    "fusjoner": []
@@ -278,7 +278,7 @@
    "forlopere": [],
    "forloperUtenKode": [],
    "aar": [
-    2019,
+    2010,
     2025
    ],
    "fusjoner": []
@@ -290,7 +290,7 @@
    "forlopere": [],
    "forloperUtenKode": [],
    "aar": [
-    2019,
+    2010,
     2025
    ],
    "fusjoner": []
@@ -302,7 +302,7 @@
    "forlopere": [],
    "forloperUtenKode": [],
    "aar": [
-    2019,
+    2010,
     2025
    ],
    "fusjoner": []
@@ -311,14 +311,14 @@
    "kode": "1130",
    "kort": "UiT",
    "navn": "UiT Norges arktiske universitet",
-   "forlopere": [],
-   "forloperUtenKode": [
+   "forlopere": [
     "HiFm",
     "HiH",
     "HiN"
    ],
+   "forloperUtenKode": [],
    "aar": [
-    2019,
+    2010,
     2025
    ],
    "fusjoner": [
