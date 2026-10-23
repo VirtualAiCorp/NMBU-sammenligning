@@ -110,9 +110,9 @@
           "navn": "Høgskolen i Finnmark",
           "kode": null,
           "navnSok": "^Høgskolen i Finnmark",
-          "inn": 2013,
+          "inn": 2014,
           "etterfolger": "1130",
-          "merknad": "Sammenslått 1.8.2013. DBH teller tilsatte per 1. oktober, så 2013 ligger trolig hos UiT. Rapporterer HiFm også 2013, flagges det i rapporten."
+          "merknad": "Sammenslått 1.8.2013, men DBH har HiFm som egen institusjon også i 2013 (tilsatte og publisering), og UiT-tallene for 2013 er uten HiFm. Derfor inn 2014."
         },
         {
           "kort": "HiH",
@@ -155,10 +155,17 @@
       "navn": "Nord universitet",
       "forlopere": [
         {
+          "kort": "HiBo",
+          "navn": "Høgskolen i Bodø",
+          "kode": "0211",
+          "inn": 2011,
+          "etterfolger": "UiN",
+          "merknad": "Samme institusjon som UiN, ny kode i DBH da den fikk universitetsstatus 1.1.2011."
+        },
+        {
           "kort": "UiN",
-          "navn": "Universitetet i Nordland (Høgskolen i Bodø til 2011)",
-          "kode": null,
-          "navnSok": "^(Universitetet i Nordland|Høgskolen i Bodø)",
+          "navn": "Universitetet i Nordland",
+          "kode": "1172",
           "inn": 2016,
           "etterfolger": "1174"
         },
@@ -207,16 +214,18 @@
           "navn": "Høgskolen i Oslo",
           "kode": null,
           "navnSok": "^Høgskolen i Oslo$",
-          "inn": 2011,
-          "etterfolger": "HiOA"
+          "inn": 2012,
+          "etterfolger": "HiOA",
+          "merknad": "HiOA ble opprettet 1.8.2011, men DBH har HiO og HiAk som egne institusjoner hele 2011, og HiOA (0257) rapporterer fra 2012. Derfor inn 2012."
         },
         {
           "kort": "HiAk",
           "navn": "Høgskolen i Akershus",
           "kode": null,
           "navnSok": "^Høgskolen i Akershus",
-          "inn": 2011,
-          "etterfolger": "HiOA"
+          "inn": 2012,
+          "etterfolger": "HiOA",
+          "merknad": "HiOA ble opprettet 1.8.2011, men DBH har HiO og HiAk som egne institusjoner hele 2011, og HiOA (0257) rapporterer fra 2012. Derfor inn 2012."
         },
         {
           "kort": "HiOA",
@@ -231,7 +240,7 @@
         {
           "aar": 2011,
           "type": "fusjon",
-          "tekst": "Høgskolen i Oslo og Høgskolen i Akershus slått sammen til HiOA (1.1.2011)"
+          "tekst": "Høgskolen i Oslo og Høgskolen i Akershus slått sammen til HiOA (1.8.2011; i DBH fra 2012)"
         },
         {
           "aar": 2018,
@@ -324,16 +333,18 @@
           "navn": "Høgskolen i Hedmark",
           "kode": null,
           "navnSok": "^Høgskolen i Hedmark",
-          "inn": 2017,
-          "etterfolger": "0264"
+          "inn": 2018,
+          "etterfolger": "0264",
+          "merknad": "Sammenslått 1.1.2017, men DBH 225 har tilsatte for 2017 på de gamle kodene (0264 har ingen tilsatte før 2018), og 373 har 2017 fordelt på alle tre kodene. Derfor inn 2018."
         },
         {
           "kort": "HiL",
           "navn": "Høgskolen i Lillehammer",
           "kode": null,
           "navnSok": "^Høgskolen i Lillehammer",
-          "inn": 2017,
-          "etterfolger": "0264"
+          "inn": 2018,
+          "etterfolger": "0264",
+          "merknad": "Sammenslått 1.1.2017, men DBH 225 har tilsatte for 2017 på de gamle kodene (0264 har ingen tilsatte før 2018), og 373 har 2017 fordelt på alle tre kodene. Derfor inn 2018."
         },
         {
           "kort": "INN (0264)",
@@ -391,10 +402,11 @@
         {
           "kort": "HiSF",
           "navn": "Høgskulen i Sogn og Fjordane",
-          "kode": null,
-          "navnSok": "^Høgskulen i Sogn og Fjordane",
+          "kode": "0233",
+          "navnSok": "^Høgsk[uo]len i Sogn og Fjordane",
           "inn": 2017,
-          "etterfolger": "0238"
+          "etterfolger": "0238",
+          "merknad": "Heter «Høgskolen i Sogn og Fjordane» i DBH."
         }
       ],
       "hendelser": [
@@ -416,20 +428,56 @@
       "navn": "Høyskolen Kristiania",
       "forlopere": [
         {
-          "kort": "Westerdals",
-          "navn": "Westerdals Oslo School of Arts, Communication and Technology",
-          "kode": null,
-          "navnSok": "Westerdals",
+          "kort": "Kristiania (8249)",
+          "navn": "Høyskolen Kristiania (kode 8249)",
+          "kode": "8249",
           "inn": 2018,
           "etterfolger": "8253",
-          "merknad": "Usikker: må kontrolleres at Westerdals rapporterte til DBH som egen institusjon."
+          "merknad": "Samme institusjon, ny kode i DBH fra 2018 (DBH-navn: «Høyskolen Kristiania (t.o.m. 2018 vår)»)."
+        },
+        {
+          "kort": "Westerdals",
+          "navn": "Westerdals Oslo School of Arts, Communication and Technology",
+          "kode": "8252",
+          "inn": 2018,
+          "etterfolger": "8253",
+          "merknad": "DBH-navn: «Westerdals Oslo ACT». Tilsatte i DBH 2015–2017, publisering 2014–2017."
+        },
+        {
+          "kort": "Westerdals Høyskole",
+          "navn": "Westerdals Høyskole",
+          "kode": "8250",
+          "inn": 2015,
+          "etterfolger": "Westerdals",
+          "merknad": "Tilsatte i DBH 2012–2014, publisering bare 2012."
+        },
+        {
+          "kort": "NISS",
+          "navn": "NISS Høyskole",
+          "kode": "8251",
+          "inn": 2015,
+          "etterfolger": "Westerdals",
+          "merknad": "Tilsatte i DBH 2012–2014, ingen publisering."
+        },
+        {
+          "kort": "NITH",
+          "navn": "Norges informasjonsteknologiske høgskole",
+          "kode": "8242",
+          "inn": 2015,
+          "etterfolger": "Westerdals",
+          "merknad": "Tilsatte i DBH 2010–2014, publisering 2010–2013."
         }
       ],
       "hendelser": [
         {
+          "aar": 2015,
+          "type": "fusjon",
+          "tekst": "Westerdals Høyskole, NISS og NITH slått sammen til Westerdals Oslo ACT (2014; i DBH fra 2015)"
+        },
+        {
           "aar": 2018,
           "type": "fusjon",
-          "tekst": "Westerdals Oslo ACT inn i Høyskolen Kristiania"
+          "tekst": "Westerdals Oslo ACT inn i Høyskolen Kristiania, som samtidig får ny kode i DBH (8249 → 8253)"
         }
       ],
       "kilde": {

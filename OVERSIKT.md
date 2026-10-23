@@ -228,11 +228,17 @@ gir tabellen som vises; «Last ned alle tall» gir alle nivåer, begge visningen
 Oppdatere: `python3 scripts/build-historikk.py --refresh`, les `rapport.md`, legg inn koder/koblinger som mangler, kjør på nytt.
 
 Forbehold:
-- **Første bygg (23.10.2026) ble gjort uten tilgang til DBH-API-et** fra skymiljøet. Dataene er derfor bare 2019–2025 for dagens koder
-  (fra cachen til `build-staff.py`), og forløperne er ikke med. Siden sier dette selv. Kjør skriptet der DBH er tilgjengelig for 2010–2018 og forløperne.
+- **Bygget med DBH 23.10.2026** (2010–2025, alle forløpere). Første bygg samme dag var uten nett og hadde bare 2019–2025.
 - Forløpernes DBH-koder slås opp på navn i DBH (feltet `navnSok`); tvetydige eller manglende treff står i rapporten. Kildelenkene i
   `fusjoner.json` er merket `kildeKontrollert: false` til de er sjekket; årstallene kontrolleres uansett mot hvilke år kodene rapporterer.
-  Westerdals (Kristiania) og Staffeldtsgate/Gimlekollen (NLA) er usikre.
+- `inn` følger DBH, ikke vedtaksdatoen, der de skiller: HiO/HiAk rapporterer hele 2011 (inn 2012), HiFm hele 2013 (inn 2014),
+  HiHm/HiL har tilsatte 2017 på de gamle kodene (inn 2018). Merknaden står på hver post i `fusjoner.json`.
+- Faste koder der navneoppslaget ikke holdt: HiBo 0211 → UiN 1172 (Nord), HiSF 0233 (heter «Høgskolen» i DBH), og for Kristiania
+  gammel kode 8249 (kodebytte 2018) og Westerdals Oslo ACT 8252 med forløperne Westerdals Høyskole 8250, NISS 8251 og NITH 8242
+  (Westerdals og NISS rapporterer fra 2012, så Kristiania-serien hopper 2011–2012).
+- Avdelingene før sammenslåingene er i stor grad ikke koblet til dagens fakulteter (se «Andel årsverk koblet» i rapporten:
+  NMBU før 2017, USN, HVL, INN og Kristiania før sammenslåingen, Nord og OsloMet delvis, NLA fra 2016). Institusjonstallene er hele;
+  på fakultetsnivå havner det som «Ikke koblet» til koblingene legges inn i `avdelingskobling.json`.
 - DBH 225 gir årsverk, ikke antall personer (også «kvinner» og «menn» er årsverk). 2026 publiseres i DBH våren 2027.
 - Antall publikasjoner kan ikke summeres over avdelinger (samme publikasjon i flere avdelinger), så det vises ikke på fakultetsnivå.
   Summert over forløperne før en sammenslåing telles felles publikasjoner flere ganger; poeng og forfatterandeler har ikke dette problemet.

@@ -17,7 +17,8 @@
   "p4"
  ],
  "datakilder": [
-  "DBH"
+  "DBH",
+  "mangler"
  ],
  "nett": true,
  "institusjoner": [
@@ -68,11 +69,10 @@
    "navn": "Høgskulen på Vestlandet",
    "forlopere": [
     "HiB",
-    "HSH"
-   ],
-   "forloperUtenKode": [
+    "HSH",
     "HiSF"
    ],
+   "forloperUtenKode": [],
    "aar": [
     2010,
     2025
@@ -140,15 +140,20 @@
    "kode": "8253",
    "kort": "Kristiania",
    "navn": "Høyskolen Kristiania",
-   "forlopere": [],
-   "forloperUtenKode": [
-    "Westerdals"
+   "forlopere": [
+    "Kristiania (8249)",
+    "Westerdals",
+    "Westerdals Høyskole",
+    "NISS",
+    "NITH"
    ],
+   "forloperUtenKode": [],
    "aar": [
-    2018,
+    2010,
     2025
    ],
    "fusjoner": [
+    2015,
     2018
    ]
   },
@@ -204,12 +209,12 @@
    "kort": "Nord",
    "navn": "Nord universitet",
    "forlopere": [
+    "HiBo",
+    "UiN",
     "HiNe",
     "HiNT"
    ],
-   "forloperUtenKode": [
-    "UiN"
-   ],
+   "forloperUtenKode": [],
    "aar": [
     2010,
     2025

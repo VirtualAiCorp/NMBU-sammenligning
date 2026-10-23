@@ -12,7 +12,8 @@ Generert av `scripts/build-historikk.py` for 2010–2025. Ikke rediger for hånd
 - UiT ← **HiFm** (Høgskolen i Finnmark): kode 0212 · slått opp i DBH på navn · DBH-navn: Høgskolen i Finnmark
 - UiT ← **HiH** (Høgskolen i Harstad): kode 0213 · slått opp i DBH på navn · DBH-navn: Høgskolen i Harstad
 - UiT ← **HiN** (Høgskolen i Narvik): kode 0214 · slått opp i DBH på navn · DBH-navn: Høgskolen i Narvik
-- Nord ← **UiN** (Universitetet i Nordland (Høgskolen i Bodø til 2011)): kode – · 2 treff på navnSok (0211, 1172) – sett kode i fusjoner.json
+- Nord ← **HiBo** (Høgskolen i Bodø): kode 0211 · fast kode i fusjoner.json · DBH-navn: Høgskolen i Bodø
+- Nord ← **UiN** (Universitetet i Nordland): kode 1172 · fast kode i fusjoner.json · DBH-navn: Universitetet i Nordland
 - Nord ← **HiNe** (Høgskolen i Nesna): kode 0215 · slått opp i DBH på navn · DBH-navn: Høgskolen i Nesna
 - Nord ← **HiNT** (Høgskolen i Nord-Trøndelag): kode 0221 · slått opp i DBH på navn · DBH-navn: Høgskolen i Nord-Trøndelag
 - OsloMet ← **HiO** (Høgskolen i Oslo): kode 0253 · slått opp i DBH på navn · DBH-navn: Høgskolen i Oslo
@@ -28,8 +29,12 @@ Generert av `scripts/build-historikk.py` for 2010–2025. Ikke rediger for hånd
 - INN ← **INN (0264)** (Høgskolen i Innlandet / Universitetet i Innlandet (kode 0264)): kode 0264 · fast kode i fusjoner.json · DBH-navn: Høgskolen i Innlandet
 - HVL ← **HiB** (Høgskolen i Bergen): kode 0231 · slått opp i DBH på navn · DBH-navn: Høgskolen i Bergen
 - HVL ← **HSH** (Høgskolen Stord/Haugesund): kode 0235 · slått opp i DBH på navn · DBH-navn: Høgskolen Stord/Haugesund
-- HVL ← **HiSF** (Høgskulen i Sogn og Fjordane): kode – · 0 treff på navnSok (ingen) – sett kode i fusjoner.json
-- Kristiania ← **Westerdals** (Westerdals Oslo School of Arts, Communication and Technology): kode – · 2 treff på navnSok (8250, 8252) – sett kode i fusjoner.json
+- HVL ← **HiSF** (Høgskulen i Sogn og Fjordane): kode 0233 · fast kode i fusjoner.json · DBH-navn: Høgskolen i Sogn og Fjordane
+- Kristiania ← **Kristiania (8249)** (Høyskolen Kristiania (kode 8249)): kode 8249 · fast kode i fusjoner.json · DBH-navn: Høyskolen Kristiania (t.o.m. 2018 vår)
+- Kristiania ← **Westerdals** (Westerdals Oslo School of Arts, Communication and Technology): kode 8252 · fast kode i fusjoner.json · DBH-navn: Westerdals Oslo ACT
+- Kristiania ← **Westerdals Høyskole** (Westerdals Høyskole): kode 8250 · fast kode i fusjoner.json · DBH-navn: Westerdals Høyskole
+- Kristiania ← **NISS** (NISS Høyskole): kode 8251 · fast kode i fusjoner.json · DBH-navn: NISS Høyskole
+- Kristiania ← **NITH** (Norges informasjonsteknologiske høgskole): kode 8242 · fast kode i fusjoner.json · DBH-navn: Norges informasjonsteknologiske høgskole
 - NLA ← **Staffeldtsgate** (Høgskolen i Staffeldtsgate): kode 8233 · slått opp i DBH på navn · DBH-navn: Høgskolen i Staffeldtsgate
 - NLA ← **Gimlekollen** (Mediehøgskolen Gimlekollen): kode 8229 · slått opp i DBH på navn · DBH-navn: Mediehøgskolen Gimlekollen
 
@@ -249,13 +254,11 @@ Generert av `scripts/build-historikk.py` for 2010–2025. Ikke rediger for hånd
 ## UiT (1130)
 
 - UiT (1130): tall for 2010–2025
-- HiFm (0212): tall for 2010–2013, skal ha tall til og med 2012
-  - **Avvik:** siste år med tall er 2013, ikke 2012. Sjekk «inn» i fusjoner.json.
+- HiFm (0212): tall for 2010–2013, skal ha tall til og med 2013
 - HiH (0213): tall for 2010–2015, skal ha tall til og med 2015
 - HiN (0214): tall for 2010–2015, skal ha tall til og med 2015
-- HiFm (0212) rapporterer 2013, men er slått sammen fra 2013: holdt utenfor den sammenlignbare serien
 - Antall publikasjoner er summert over flere koder i 2010–2015: felles publikasjoner telles flere ganger.
-- Andel årsverk koblet til dagens fakulteter: 2010 80.0 %, 2011 80.5 %, 2012 80.8 %, 2013 88.8 %, 2014 86.3 %, 2015 86.9 %, 2016 93.6 %, 2017 93.6 %, 2018 98.2 %
+- Andel årsverk koblet til dagens fakulteter: 2010 80.0 %, 2011 80.5 %, 2012 80.8 %, 2013 82.1 %, 2014 86.3 %, 2015 86.9 %, 2016 93.6 %, 2017 93.6 %, 2018 98.2 %
 
   Ikke koblet (største først, årsverk summert over årene); legg koblinger i avdelingskobling.json:
 
@@ -275,8 +278,8 @@ Generert av `scripts/build-historikk.py` for 2010–2025. Ikke rediger for hånd
     - `1130` / `570000` Fakultet for idrett, reiseliv og sosialfag (IRS-fak) (570000): 0
   - HiH: Institutt for helse- og sosialfag: 402 årsverk
     - `0213` / `440000` Institutt for helse- og sosialfag (440000): 402
-  - HiFm: Høgskoleadministrasjon: 215 årsverk
-    - `0212` / `120000` Høgskoleadministrasjon (120000): 215
+  - HiFm: Høgskoleadministrasjon: 297 årsverk
+    - `0212` / `120000` Høgskoleadministrasjon (120000): 297
   - HiH: Administrasjonen: 182 årsverk
     - `0213` / `120000` Administrasjonen (120000): 182
   - HiFm: Avdeling for nærings- og sosialfag: 173 årsverk
@@ -287,26 +290,26 @@ Generert av `scripts/build-historikk.py` for 2010–2025. Ikke rediger for hånd
     - `0212` / `430000` Avdeling for pedagogiske og humanistiske fag (430000): 135
   - HiN: Avdeling for helse og samfunn: 130 årsverk
     - `0214` / `480000` Avdeling for helse og samfunn (480000): 130
+  - HiFm: Institutt for pedagogiske og humanistiske fag: 89 årsverk
+    - `0212` / `630000` Institutt for pedagogiske og humanistiske fag (630000): 89
+  - HiFm: Institutt for økonomi- og reiselivsfag: 78 årsverk
+    - `0212` / `640000` Institutt for økonomi- og reiselivsfag (640000): 78
   - UiT: Andre enheter: 77 årsverk
     - `1130` / `710100` Andre enheter (710100): 77
   - UiT: Universitetets videre- og etterutdanning (U-VETT): 60 årsverk
     - `1130` / `640000` Universitetets videre- og etterutdanning (U-VETT) (640000): 60
   - HiFm: Avdeling for helsefag: 60 årsverk
     - `0212` / `440000` Avdeling for helsefag (440000): 60
+  - HiFm: Institutt for idretts- og realfag: 58 årsverk
+    - `0212` / `650000` Institutt for idretts- og realfag (650000): 58
   - UiT: Avdeling vernepleie: 55 årsverk
     - `1130` / `590210` Avdeling vernepleie (590210): 55
-  - HiFm: Institutt for pedagogiske og humanistiske fag: 46 årsverk
-    - `0212` / `630000` Institutt for pedagogiske og humanistiske fag (630000): 46
+  - HiFm: Institutt for sosialfag: 50 årsverk
+    - `0212` / `620000` Institutt for sosialfag (620000): 50
+  - HiFm: Institutt for helsefag: 48 årsverk
+    - `0212` / `610000` Institutt for helsefag (610000): 48
   - UiT: Senter for samiske studier: 43 årsverk
     - `1130` / `620000` Senter for samiske studier (620000): 43
-  - HiFm: Institutt for økonomi- og reiselivsfag: 39 årsverk
-    - `0212` / `640000` Institutt for økonomi- og reiselivsfag (640000): 39
-  - HiFm: Institutt for idretts- og realfag: 30 årsverk
-    - `0212` / `650000` Institutt for idretts- og realfag (650000): 30
-  - HiFm: Institutt for helsefag: 25 årsverk
-    - `0212` / `610000` Institutt for helsefag (610000): 25
-  - HiFm: Institutt for sosialfag: 24 årsverk
-    - `0212` / `620000` Institutt for sosialfag (620000): 24
   - UiT: Barentsinstituttet: 12 årsverk
     - `1130` / `660000` Barentsinstituttet (660000): 12
   - UiT: Senter for kvinne- og kjønnsforskning: 11 årsverk
@@ -317,14 +320,17 @@ Generert av `scripts/build-historikk.py` for 2010–2025. Ikke rediger for hånd
 ## Nord (1174)
 
 - Nord (1174): tall for 2016–2025
+- HiBo (0211): tall for 2010–2010, skal ha tall til og med 2010
+- UiN (1172): tall for 2011–2015, skal ha tall til og med 2015
 - HiNe (0215): tall for 2010–2015, skal ha tall til og med 2015
 - HiNT (0221): tall for 2010–2015, skal ha tall til og med 2015
-- **Forløper uten kode:** UiN (Universitetet i Nordland (Høgskolen i Bodø til 2011)): 2 treff på navnSok (0211, 1172) – sett kode i fusjoner.json. Den sammenlignbare serien mangler denne før 2016.
 - Antall publikasjoner er summert over flere koder i 2010–2015: felles publikasjoner telles flere ganger.
-- Andel årsverk koblet til dagens fakulteter: 2010 0.0 %, 2011 0.0 %, 2012 0.0 %, 2013 0.0 %, 2014 0.0 %, 2015 0.0 %, 2016 27.3 %
+- Andel årsverk koblet til dagens fakulteter: 2010 12.1 %, 2011 12.2 %, 2012 12.7 %, 2013 12.7 %, 2014 12.8 %, 2015 13.2 %, 2016 27.3 %
 
   Ikke koblet (største først, årsverk summert over årene); legg koblinger i avdelingskobling.json:
 
+  - UiN: Profesjonshøgskolen: 823 årsverk
+    - `1172` / `460000` Profesjonshøgskolen (460000): 823
   - HiNT: Administrasjon og drift: 663 årsverk
     - `0221` / `140420` Administrasjon og drift (140420): 99
     - `0221` / `140320` Administrasjon og drift (140320): 99
@@ -362,6 +368,12 @@ Generert av `scripts/build-historikk.py` for 2010–2025. Ikke rediger for hånd
     - `0221` / `490730` Avdeling for helsefag (490730): 5
     - `0221` / `490720` Avdeling for helsefag (490720): 4
     - `0221` / `490750` Avdeling for helsefag (490750): 4
+  - UiN: Handelshøgskolen i Bodø: 453 årsverk
+    - `1172` / `415000` Handelshøgskolen i Bodø (415000): 453
+  - UiN: Fakultet for samfunnsvitenskap: 441 årsverk
+    - `1172` / `410000` Fakultet for samfunnsvitenskap (410000): 441
+  - UiN: Fakultet for biovitenskap og akvakultur: 407 årsverk
+    - `1172` / `450000` Fakultet for biovitenskap og akvakultur (450000): 407
   - Nord: Profesjonshøgskolen: 244 årsverk
     - `1174` / `460000` Profesjonshøgskolen (460000): 244
   - HiNT: Avdeling for landbruk og informasjonsteknologi: 232 årsverk
@@ -376,6 +388,8 @@ Generert av `scripts/build-historikk.py` for 2010–2025. Ikke rediger for hånd
     - `0221` / `420300` Avdeling for økonomi, organisasjon og ledelse (420300): 46
     - `0221` / `420000` Avdeling for økonomi, organisasjon og ledelse (420000): 8
     - `0221` / `420100` Avdeling for økonomi, organisasjon og ledelse (420100): 4
+  - HiBo: Profesjonshøgskolen: 160 årsverk
+    - `0211` / `460000` Profesjonshøgskolen (460000): 160
   - HiNT: Avdeling for trafikklærerutdanning: 152 årsverk
     - `0221` / `540200` Avdeling for trafikklærerutdanning (540200): 146
     - `0221` / `540000` Avdeling for trafikklærerutdanning (540000): 4
@@ -407,8 +421,14 @@ Generert av `scripts/build-historikk.py` for 2010–2025. Ikke rediger for hånd
     - `1174` / `410000` Fakultet for samfunnsvitenskap (410000): 95
   - HiNe: Avdeling for pedagogikk og sykepleie: 83 årsverk
     - `0215` / `430000` Avdeling for pedagogikk og sykepleie (430000): 83
+  - HiBo: Fakultet for samfunnsvitenskap: 83 årsverk
+    - `0211` / `410000` Fakultet for samfunnsvitenskap (410000): 83
+  - HiBo: Handelshøgskolen i Bodø: 83 årsverk
+    - `0211` / `415000` Handelshøgskolen i Bodø (415000): 83
   - HiNe: Avdeling for natur og realfag: 76 årsverk
     - `0215` / `470000` Avdeling for natur og realfag (470000): 76
+  - HiBo: Fakultet for biovitenskap og akvakultur: 73 årsverk
+    - `0211` / `450000` Fakultet for biovitenskap og akvakultur (450000): 73
   - HiNe: Institutt for sykepleierutdanning: 19 årsverk
     - `0215` / `530000` Institutt for sykepleierutdanning (530000): 19
   - HiNe: Institutt for informatikk: 18 årsverk
@@ -421,15 +441,11 @@ Generert av `scripts/build-historikk.py` for 2010–2025. Ikke rediger for hånd
 ## OsloMet (1175)
 
 - OsloMet (1175): tall for 2018–2025
-- HiO (0253): tall for 2010–2011, skal ha tall til og med 2010
-  - **Avvik:** siste år med tall er 2011, ikke 2010. Sjekk «inn» i fusjoner.json.
-- HiAk (0251): tall for 2010–2011, skal ha tall til og med 2010
-  - **Avvik:** siste år med tall er 2011, ikke 2010. Sjekk «inn» i fusjoner.json.
+- HiO (0253): tall for 2010–2011, skal ha tall til og med 2011
+- HiAk (0251): tall for 2010–2011, skal ha tall til og med 2011
 - HiOA (0257): tall for 2012–2017, skal ha tall til og med 2017
-- HiO (0253) rapporterer 2011, men er slått sammen fra 2011: holdt utenfor den sammenlignbare serien
-- HiAk (0251) rapporterer 2011, men er slått sammen fra 2011: holdt utenfor den sammenlignbare serien
-- Antall publikasjoner er summert over flere koder i 2010–2010: felles publikasjoner telles flere ganger.
-- Andel årsverk koblet til dagens fakulteter: 2010 17.2 %, 2012 50.6 %, 2013 50.2 %, 2014 53.2 %, 2015 54.4 %, 2016 55.7 %, 2017 55.9 %, 2018 90.0 %, 2019 90.4 %, 2020 89.9 %
+- Antall publikasjoner er summert over flere koder i 2010–2011: felles publikasjoner telles flere ganger.
+- Andel årsverk koblet til dagens fakulteter: 2010 17.2 %, 2011 17.9 %, 2012 50.6 %, 2013 50.2 %, 2014 53.2 %, 2015 54.4 %, 2016 55.7 %, 2017 55.9 %, 2018 90.0 %, 2019 90.4 %, 2020 89.9 %
 
   Ikke koblet (største først, årsverk summert over årene); legg koblinger i avdelingskobling.json:
 
@@ -456,70 +472,70 @@ Generert av `scripts/build-historikk.py` for 2010–2025. Ikke rediger for hånd
     - `0257` / `150200` Prorektor for utdanning (150200): 215
     - `0257` / `150100` Prorektor for utdanning (150100): 202
     - `0257` / `150000` Prorektor for utdanning (150000): 3
+  - HiO: Administrasjonen: 401 årsverk
+    - `0253` / `120000` Administrasjonen (120000): 377
+    - `0253` / `120100` Administrasjonen (120100): 21
+    - `0253` / `120290` Administrasjonen (120290): 2
   - OsloMet: Divisjon for digitalisering og infrastruktur: 382 årsverk
     - `1175` / `190000` Divisjon for digitalisering og infrastruktur (190000): 382
+  - HiO: Avdeling for helsefag: 333 årsverk
+    - `0253` / `445000` Avdeling for helsefag (445000): 333
+  - HiO: Avdeling for sykepleierutdanning: 317 årsverk
+    - `0253` / `440000` Avdeling for sykepleierutdanning (440000): 317
+  - HiO: Avdeling for samfunnsfag: 301 årsverk
+    - `0253` / `410000` Avdeling for samfunnsfag (410000): 301
   - OsloMet: Divisjon for organisasjon og virksomhetsstyring: 281 årsverk
     - `1175` / `180000` Divisjon for organisasjon og virksomhetsstyring (180000): 281
   - HiOA: Avdeling for digitalisering og infrastruktur: 255 årsverk
     - `0257` / `190000` Avdeling for digitalisering og infrastruktur (190000): 255
-  - HiO: Administrasjonen: 200 årsverk
-    - `0253` / `120000` Administrasjonen (120000): 190
-    - `0253` / `120100` Administrasjonen (120100): 10
-    - `0253` / `120290` Administrasjonen (120290): 1
+  - HiO: Avdeling for ingeniørutdanning: 250 årsverk
+    - `0253` / `450000` Avdeling for ingeniørutdanning (450000): 250
   - HiOA: Senter for profesjonsstudier (SPS): 192 årsverk
     - `0257` / `620000` Senter for profesjonsstudier (SPS) (620000): 192
   - HiOA: Avdeling for ressursutvikling og infrastruktur: 179 årsverk
     - `0257` / `170000` Avdeling for ressursutvikling og infrastruktur (170000): 179
   - HiOA: Avdeling for organisasjon og virksomhetsstyring: 172 årsverk
     - `0257` / `180000` Avdeling for organisasjon og virksomhetsstyring (180000): 172
-  - HiO: Avdeling for helsefag: 168 årsverk
-    - `0253` / `445000` Avdeling for helsefag (445000): 168
-  - HiO: Avdeling for sykepleierutdanning: 156 årsverk
-    - `0253` / `440000` Avdeling for sykepleierutdanning (440000): 156
-  - HiO: Avdeling for samfunnsfag: 150 årsverk
-    - `0253` / `410000` Avdeling for samfunnsfag (410000): 150
-  - HiO: Avdeling for ingeniørutdanning: 121 årsverk
-    - `0253` / `450000` Avdeling for ingeniørutdanning (450000): 121
+  - HiAk: Høgskoleadministrasjonen: 165 årsverk
+    - `0251` / `120000` Høgskoleadministrasjonen (120000): 165
+  - HiAk: Avdeling for yrkesfaglærerutdanning: 161 årsverk
+    - `0251` / `430000` Avdeling for yrkesfaglærerutdanning (430000): 161
+  - HiO: Avdeling for journalistikk, bibliotek- og informasjonsfag: 159 årsverk
+    - `0253` / `460000` Avdeling for journalistikk, bibliotek- og informasjonsfag (460000): 159
+  - HiAk: Avdeling for helse, ernæring og ledelse: 146 årsverk
+    - `0251` / `440000` Avdeling for helse, ernæring og ledelse (440000): 146
   - HiOA: Senter/forskningsprogrammer: 105 årsverk
     - `0257` / `610210` Senter/forskningsprogrammer (610210): 78
     - `0257` / `610240` Senter/forskningsprogrammer (610240): 27
-  - HiAk: Høgskoleadministrasjonen: 84 årsverk
-    - `0251` / `120000` Høgskoleadministrasjonen (120000): 84
-  - HiAk: Avdeling for yrkesfaglærerutdanning: 79 årsverk
-    - `0251` / `430000` Avdeling for yrkesfaglærerutdanning (430000): 79
-  - HiO: Avdeling for journalistikk, bibliotek- og informasjonsfag: 77 årsverk
-    - `0253` / `460000` Avdeling for journalistikk, bibliotek- og informasjonsfag (460000): 77
-  - HiAk: Avdeling for helse, ernæring og ledelse: 74 årsverk
-    - `0251` / `440000` Avdeling for helse, ernæring og ledelse (440000): 74
+  - HiO: Avdeling for estetiske fag: 101 årsverk
+    - `0253` / `420000` Avdeling for estetiske fag (420000): 101
+  - HiAk: Avdeling for atferdsvitenskap: 91 årsverk
+    - `0251` / `445000` Avdeling for atferdsvitenskap (445000): 91
+  - HiO: Læringssenteret: 83 årsverk
+    - `0253` / `125000` Læringssenteret (125000): 83
+  - HiO: Senter for profesjonsstudier (SPS): 70 årsverk
+    - `0253` / `260000` Senter for profesjonsstudier (SPS) (260000): 70
   - HiOA: Prorektor for forskning og utvikling: 66 årsverk
     - `0257` / `140100` Prorektor for forskning og utvikling (140100): 63
     - `0257` / `140000` Prorektor for forskning og utvikling (140000): 3
-  - HiO: Avdeling for estetiske fag: 52 årsverk
-    - `0253` / `420000` Avdeling for estetiske fag (420000): 52
   - HiOA: Nasjonalt senter flerkulturell opplæring (NAFO): 49 årsverk
     - `0257` / `630000` Nasjonalt senter flerkulturell opplæring (NAFO) (630000): 49
-  - HiAk: Avdeling for atferdsvitenskap: 43 årsverk
-    - `0251` / `445000` Avdeling for atferdsvitenskap (445000): 43
-  - HiO: Læringssenteret: 40 årsverk
-    - `0253` / `125000` Læringssenteret (125000): 40
-  - HiO: Senter for profesjonsstudier (SPS): 33 årsverk
-    - `0253` / `260000` Senter for profesjonsstudier (SPS) (260000): 33
+  - HiAk: Avdeling for produktdesign: 44 årsverk
+    - `0251` / `420000` Avdeling for produktdesign (420000): 44
   - HiOA: Avdeling for samfunnskontakt og kommunikasjon: 27 årsverk
     - `0257` / `160000` Avdeling for samfunnskontakt og kommunikasjon (160000): 27
-  - HiAk: Avdeling for produktdesign: 20 årsverk
-    - `0251` / `420000` Avdeling for produktdesign (420000): 20
-  - HiO: Pedagogisk utviklingssenter (PUS): 16 årsverk
-    - `0253` / `220000` Pedagogisk utviklingssenter (PUS) (220000): 16
+  - HiO: Pedagogisk utviklingssenter (PUS): 26 årsverk
+    - `0253` / `220000` Pedagogisk utviklingssenter (PUS) (220000): 26
+  - HiAk: HiAk (uspesifisert underenhet): 11 årsverk
+    - `0251` / `000000` HiAk (uspesifisert underenhet) (000000): 11
   - HiOA: Høgskoleledelsen: 11 årsverk
     - `0257` / `110000` Høgskoleledelsen (110000): 11
-  - HiAk: HiAk (uspesifisert underenhet): 6 årsverk
-    - `0251` / `000000` HiAk (uspesifisert underenhet) (000000): 6
-  - HiO: Rektoratet/Styret: 4 årsverk
-    - `0253` / `110000` Rektoratet/Styret (110000): 4
-  - HiO: Fellesutgifter: 3 årsverk
-    - `0253` / `180100` Fellesutgifter (180100): 3
-  - HiO: Forskningsprogrammene: 3 årsverk
-    - `0253` / `245000` Forskningsprogrammene (245000): 3
+  - HiO: Fellesutgifter: 10 årsverk
+    - `0253` / `180100` Fellesutgifter (180100): 10
+  - HiO: Forskningsprogrammene: 9 årsverk
+    - `0253` / `245000` Forskningsprogrammene (245000): 9
+  - HiO: Rektoratet/Styret: 7 årsverk
+    - `0253` / `110000` Rektoratet/Styret (110000): 7
 
 ## USN (1176)
 
@@ -732,67 +748,63 @@ Generert av `scripts/build-historikk.py` for 2010–2025. Ikke rediger for hånd
 ## INN (1177)
 
 - INN (1177): tall for 2025–2025
-- HiHm (0262): tall for 2010–2017, skal ha tall til og med 2016
-  - **Avvik:** siste år med tall er 2017, ikke 2016. Sjekk «inn» i fusjoner.json.
-- HiL (0263): tall for 2010–2017, skal ha tall til og med 2016
-  - **Avvik:** siste år med tall er 2017, ikke 2016. Sjekk «inn» i fusjoner.json.
+- HiHm (0262): tall for 2010–2017, skal ha tall til og med 2017
+- HiL (0263): tall for 2010–2017, skal ha tall til og med 2017
 - INN (0264) (0264): tall for 2017–2024, skal ha tall til og med 2024
-- HiHm (0262) rapporterer 2017, men er slått sammen fra 2017: holdt utenfor den sammenlignbare serien
-- HiL (0263) rapporterer 2017, men er slått sammen fra 2017: holdt utenfor den sammenlignbare serien
-- Antall publikasjoner er summert over flere koder i 2010–2016: felles publikasjoner telles flere ganger.
-- Andel årsverk koblet til dagens fakulteter: 2010 0.0 %, 2011 0.0 %, 2012 0.0 %, 2013 0.0 %, 2014 0.0 %, 2015 0.0 %, 2016 0.0 %, 2018 77.2 %, 2019 76.4 %, 2020 75.9 %, 2021 78.7 %, 2022 80.4 %, 2023 80.1 %, 2024 88.6 %
+- Antall publikasjoner er summert over flere koder i 2010–2017: felles publikasjoner telles flere ganger.
+- Andel årsverk koblet til dagens fakulteter: 2010 0.0 %, 2011 0.0 %, 2012 0.0 %, 2013 0.0 %, 2014 0.0 %, 2015 0.0 %, 2016 0.0 %, 2017 0.0 %, 2018 77.2 %, 2019 76.4 %, 2020 75.9 %, 2021 78.7 %, 2022 80.4 %, 2023 80.1 %, 2024 88.6 %
 
   Ikke koblet (største først, årsverk summert over årene); legg koblinger i avdelingskobling.json:
 
-  - HiHm: Avdeling for lærerutdanning og naturvitenskap: 1243 årsverk
-    - `0262` / `470000` Avdeling for lærerutdanning og naturvitenskap (470000): 1243
-  - HiHm: Avdeling for folkehelsefag: 811 årsverk
-    - `0262` / `480000` Avdeling for folkehelsefag (480000): 811
+  - HiHm: Avdeling for lærerutdanning og naturvitenskap: 1459 årsverk
+    - `0262` / `470000` Avdeling for lærerutdanning og naturvitenskap (470000): 1459
+  - HiHm: Avdeling for folkehelsefag: 947 årsverk
+    - `0262` / `480000` Avdeling for folkehelsefag (480000): 947
+  - HiHm: Høgskoleadministrasjonen: 783 årsverk
+    - `0262` / `120000` Høgskoleadministrasjonen (120000): 783
   - INN (0264): Digitalisering og infrastruktur: 761 årsverk
     - `0264` / `180300` Digitalisering og infrastruktur (180300): 394
     - `0264` / `180200` Digitalisering og infrastruktur (180200): 314
     - `0264` / `180100` Digitalisering og infrastruktur (180100): 37
     - `0264` / `180000` Digitalisering og infrastruktur (180000): 15
-  - HiHm: Høgskoleadministrasjonen: 660 årsverk
-    - `0262` / `120000` Høgskoleadministrasjonen (120000): 660
-  - HiL: Administrasjonen: 558 årsverk
-    - `0263` / `120000` Administrasjonen (120000): 558
-  - HiL: Avdeling for pedagogikk og sosialfag: 528 årsverk
-    - `0263` / `530000` Avdeling for pedagogikk og sosialfag (530000): 528
-  - HiHm: Avdeling for økonomi- og ledelsesfag: 429 årsverk
-    - `0262` / `460000` Avdeling for økonomi- og ledelsesfag (460000): 429
-  - HiHm: Avdeling for anvendt økologi og landbruksfag: 386 årsverk
-    - `0262` / `455000` Avdeling for anvendt økologi og landbruksfag (455000): 386
+  - HiL: Administrasjonen: 654 årsverk
+    - `0263` / `120000` Administrasjonen (120000): 654
+  - HiL: Avdeling for pedagogikk og sosialfag: 628 årsverk
+    - `0263` / `530000` Avdeling for pedagogikk og sosialfag (530000): 628
+  - HiHm: Avdeling for økonomi- og ledelsesfag: 501 årsverk
+    - `0262` / `460000` Avdeling for økonomi- og ledelsesfag (460000): 501
+  - HiHm: Avdeling for anvendt økologi og landbruksfag: 447 årsverk
+    - `0262` / `455000` Avdeling for anvendt økologi og landbruksfag (455000): 447
+  - HiL: Avdeling for samfunnsvitenskap: 420 årsverk
+    - `0263` / `540000` Avdeling for samfunnsvitenskap (540000): 420
+  - HiL: Avdeling for økonomi og organisasjonsvitenskap: 372 årsverk
+    - `0263` / `480000` Avdeling for økonomi og organisasjonsvitenskap (480000): 372
   - INN (0264): Fakultet for audiovisuelle medier og kreativ teknologi: 363 årsverk
     - `0264` / `420100` Fakultet for audiovisuelle medier og kreativ teknologi (420100): 148
     - `0264` / `420200` Fakultet for audiovisuelle medier og kreativ teknologi (420200): 138
     - `0264` / `420010` Fakultet for audiovisuelle medier og kreativ teknologi (420010): 36
     - `0264` / `420300` Fakultet for audiovisuelle medier og kreativ teknologi (420300): 29
     - `0264` / `420000` Fakultet for audiovisuelle medier og kreativ teknologi (420000): 12
-  - HiL: Avdeling for samfunnsvitenskap: 361 årsverk
-    - `0263` / `540000` Avdeling for samfunnsvitenskap (540000): 361
-  - HiL: Avdeling for økonomi og organisasjonsvitenskap: 315 årsverk
-    - `0263` / `480000` Avdeling for økonomi og organisasjonsvitenskap (480000): 315
   - INN (0264): Den norske filmskolen: 232 årsverk
     - `0264` / `430000` Den norske filmskolen (430000): 116
     - `0264` / `430010` Den norske filmskolen (430010): 57
     - `0264` / `430020` Den norske filmskolen (430020): 43
     - `0264` / `430100` Den norske filmskolen (430100): 13
     - `0264` / `430200` Den norske filmskolen (430200): 4
+  - HiL: Den norske filmskolen: 195 årsverk
+    - `0263` / `465000` Den norske filmskolen (465000): 195
   - INN (0264): Samfunnskontakt: 165 årsverk
     - `0264` / `140200` Samfunnskontakt (140200): 77
     - `0264` / `140100` Samfunnskontakt (140100): 67
     - `0264` / `140300` Samfunnskontakt (140300): 14
     - `0264` / `140000` Samfunnskontakt (140000): 7
-  - HiL: Den norske filmskolen: 159 årsverk
-    - `0263` / `465000` Den norske filmskolen (465000): 159
+  - HiL: Avdeling for TV-fag: 142 årsverk
+    - `0263` / `520000` Avdeling for TV-fag (520000): 142
   - INN (0264): HR: 140 årsverk
     - `0264` / `150000` HR (150000): 82
     - `0264` / `150100` HR (150100): 59
-  - HiL: Avdeling for TV-fag: 122 årsverk
-    - `0263` / `520000` Avdeling for TV-fag (520000): 122
-  - HiL: Senter for livslang læring: 117 årsverk
-    - `0263` / `510000` Senter for livslang læring (510000): 117
+  - HiL: Senter for livslang læring: 136 årsverk
+    - `0263` / `510000` Senter for livslang læring (510000): 136
   - HiL: Avdeling for helse og sosialfag: 77 årsverk
     - `0263` / `440000` Avdeling for helse og sosialfag (440000): 77
   - HiL: Avdeling for TV-utdanning og filmvitenskap: 38 årsverk
@@ -805,7 +817,7 @@ Generert av `scripts/build-historikk.py` for 2010–2025. Ikke rediger for hånd
 - HVL (0238): tall for 2017–2025
 - HiB (0231): tall for 2010–2016, skal ha tall til og med 2016
 - HSH (0235): tall for 2010–2016, skal ha tall til og med 2016
-- **Forløper uten kode:** HiSF (Høgskulen i Sogn og Fjordane): 0 treff på navnSok (ingen) – sett kode i fusjoner.json. Den sammenlignbare serien mangler denne før 2017.
+- HiSF (0233): tall for 2010–2016, skal ha tall til og med 2016
 - Antall publikasjoner er summert over flere koder i 2010–2016: felles publikasjoner telles flere ganger.
 - Andel årsverk koblet til dagens fakulteter: 2010 0.0 %, 2011 0.0 %, 2012 0.0 %, 2013 0.0 %, 2014 0.0 %, 2015 0.0 %, 2016 0.0 %, 2017 0.4 %, 2018 98.4 %
 
@@ -825,6 +837,8 @@ Generert av `scripts/build-historikk.py` for 2010–2025. Ikke rediger for hånd
     - `0238` / `410300` HVL - Bergen (410300): 222
     - `0238` / `410000` HVL - Bergen (410000): 184
     - `0238` / `410500` HVL - Bergen (410500): 10
+  - HiSF: Avdeling for lærarutdanning og idrett: 638 årsverk
+    - `0233` / `430000` Avdeling for lærarutdanning og idrett (430000): 638
   - HSH: Administrasjonen: 626 årsverk
     - `0235` / `120000` Administrasjonen (120000): 626
   - HSH: Avdeling for lærarutdanning og kulturfag: 537 årsverk
@@ -832,8 +846,13 @@ Generert av `scripts/build-historikk.py` for 2010–2025. Ikke rediger for hånd
   - HSH: Avdeling for tekniske/økonomiske/maritime fag: 470 årsverk
     - `0235` / `475000` Avdeling for tekniske/økonomiske/maritime fag (475000): 320
     - `0235` / `475210` Avdeling for tekniske/økonomiske/maritime fag (475210): 149
+  - HiSF: Fellestjenester: 457 årsverk
+    - `0233` / `120000` Fellestjenester (120000): 457
   - HSH: Avdeling for helsefag: 440 årsverk
     - `0235` / `490000` Avdeling for helsefag (490000): 440
+  - HiSF: Avdeling for samfunnsfag: 419 årsverk
+    - `0233` / `420000` Avdeling for samfunnsfag (420000): 215
+    - `0233` / `410000` Avdeling for samfunnsfag (410000): 204
   - HVL: HVL - Sogn og Fjordane: 386 årsverk
     - `0238` / `430300` HVL - Sogn og Fjordane (430300): 135
     - `0238` / `430000` HVL - Sogn og Fjordane (430000): 77
@@ -841,17 +860,64 @@ Generert av `scripts/build-historikk.py` for 2010–2025. Ikke rediger for hånd
     - `0238` / `430400` HVL - Sogn og Fjordane (430400): 54
     - `0238` / `430500` HVL - Sogn og Fjordane (430500): 40
     - `0238` / `430600` HVL - Sogn og Fjordane (430600): 3
+  - HiSF: Avdeling for helsefag: 379 årsverk
+    - `0233` / `440000` Avdeling for helsefag (440000): 379
   - HVL: HVL - Stord/Haugesund: 334 årsverk
     - `0238` / `420000` HVL - Stord/Haugesund (420000): 334
     - `0238` / `420200` HVL - Stord/Haugesund (420200): 0
     - `0238` / `420300` HVL - Stord/Haugesund (420300): 0
     - `0238` / `420400` HVL - Stord/Haugesund (420400): 0
+  - HiSF: Avdeling for ingeniør-og naturfag: 221 årsverk
+    - `0233` / `470000` Avdeling for ingeniør-og naturfag (470000): 221
+  - HiSF: Avdeling for økonomi, leiing og reiseliv: 49 årsverk
+    - `0233` / `460000` Avdeling for økonomi, leiing og reiseliv (460000): 49
+  - HiSF: HiSF Oppdrag: 21 årsverk
+    - `0233` / `560000` HiSF Oppdrag (560000): 21
 
 ## Kristiania (8253)
 
 - Kristiania (8253): tall for 2018–2025
-- **Forløper uten kode:** Westerdals (Westerdals Oslo School of Arts, Communication and Technology): 2 treff på navnSok (8250, 8252) – sett kode i fusjoner.json. Den sammenlignbare serien mangler denne før 2018.
-- Andel årsverk koblet til dagens fakulteter: 100 % alle år
+- Kristiania (8249) (8249): tall for 2010–2017, skal ha tall til og med 2017
+- Westerdals (8252): tall for 2014–2017, skal ha tall til og med 2017
+- Westerdals Høyskole (8250): tall for 2012–2014, skal ha tall til og med 2014
+- NISS (8251): tall for 2012–2014, skal ha tall til og med 2014
+- NITH (8242): tall for 2010–2014, skal ha tall til og med 2014
+- Antall publikasjoner er summert over flere koder i 2010–2017: felles publikasjoner telles flere ganger.
+- Andel årsverk koblet til dagens fakulteter: 2010 0.0 %, 2011 0.0 %, 2012 0.0 %, 2013 0.0 %, 2014 0.0 %, 2015 0.0 %, 2016 0.0 %, 2017 0.0 %
+
+  Ikke koblet (største først, årsverk summert over årene); legg koblinger i avdelingskobling.json:
+
+  - Westerdals: Westerdals Oslo ACT (uspesifisert underenhet): 399 årsverk
+    - `8252` / `000000` Westerdals Oslo ACT (uspesifisert underenhet) (000000): 399
+  - Kristiania (8249): Høyskolen Kristiania (uspesifisert underenhet): 322 årsverk
+    - `8249` / `000000` Høyskolen Kristiania (uspesifisert underenhet) (000000): 322
+  - Kristiania (8249): Høyskolen Kristiania - fellesadministrasjon: 253 årsverk
+    - `8249` / `120000` Høyskolen Kristiania - fellesadministrasjon (120000): 253
+  - Kristiania (8249): Høyskolen Kristiania - Markedsføring, ledelse og organisasjon: 187 årsverk
+    - `8249` / `310000` Høyskolen Kristiania - Markedsføring, ledelse og organisasjon (310000): 96
+    - `8249` / `310200` Høyskolen Kristiania - Markedsføring, ledelse og organisasjon (310200): 52
+    - `8249` / `310100` Høyskolen Kristiania - Markedsføring, ledelse og organisasjon (310100): 39
+    - `8249` / `310300` Høyskolen Kristiania - Markedsføring, ledelse og organisasjon (310300): 0
+  - NITH: Norges Informasjonsteknologiske Høgskole (uspesifisert underenhet): 162 årsverk
+    - `8242` / `000000` Norges Informasjonsteknologiske Høgskole (uspesifisert underenhet) (000000): 162
+  - Westerdals Høyskole: Westerdals Høyskole (uspesifisert underenhet): 112 årsverk
+    - `8250` / `000000` Westerdals Høyskole (uspesifisert underenhet) (000000): 112
+  - NISS: NISS Høyskole (uspesifisert underenhet): 88 årsverk
+    - `8251` / `000000` NISS Høyskole (uspesifisert underenhet) (000000): 88
+  - Kristiania (8249): Høyskolen Kristiania - Kreativitet: 68 årsverk
+    - `8249` / `320100` Høyskolen Kristiania - Kreativitet (320100): 68
+    - `8249` / `320000` Høyskolen Kristiania - Kreativitet (320000): 0
+  - Kristiania (8249): Høyskolen Kristiania - Helse: 46 årsverk
+    - `8249` / `330100` Høyskolen Kristiania - Helse (330100): 46
+    - `8249` / `330000` Høyskolen Kristiania - Helse (330000): 0
+  - Westerdals: Avdeling for kommunikasjon: 0 årsverk
+    - `8252` / `210000` Avdeling for kommunikasjon (210000): 0
+  - Westerdals: Avdeling for teknologi: 0 årsverk
+    - `8252` / `220000` Avdeling for teknologi (220000): 0
+  - Westerdals: Avdeling for film og TV: 0 årsverk
+    - `8252` / `240000` Avdeling for film og TV (240000): 0
+  - Westerdals: Avdeling for ledelse: 0 årsverk
+    - `8252` / `250000` Avdeling for ledelse (250000): 0
 
 ## NLA (8223)
 
@@ -1084,6 +1150,14 @@ Generert av `scripts/build-historikk.py` for 2010–2025. Ikke rediger for hånd
 | 373 | 1174 | DBH | 2016–2025 |
 | 374 | 1174 | DBH | 2016–2025 |
 | 210 | 1174 | DBH | – |
+| 225 | 0211 | DBH | 2010–2010 |
+| 373 | 0211 | DBH | 2010–2010 |
+| 374 | 0211 | DBH | 2010–2010 |
+| 210 | 0211 | DBH | – |
+| 225 | 1172 | DBH | 2011–2015 |
+| 373 | 1172 | DBH | 2011–2015 |
+| 374 | 1172 | DBH | 2011–2015 |
+| 210 | 1172 | DBH | – |
 | 225 | 0215 | DBH | 2010–2015 |
 | 373 | 0215 | DBH | 2010–2015 |
 | 374 | 0215 | DBH | 2010–2015 |
@@ -1160,10 +1234,34 @@ Generert av `scripts/build-historikk.py` for 2010–2025. Ikke rediger for hånd
 | 373 | 0235 | DBH | 2010–2016 |
 | 374 | 0235 | DBH | 2010–2016 |
 | 210 | 0235 | DBH | – |
+| 225 | 0233 | DBH | 2010–2016 |
+| 373 | 0233 | DBH | 2010–2016 |
+| 374 | 0233 | DBH | 2010–2016 |
+| 210 | 0233 | DBH | – |
 | 225 | 8253 | DBH | 2018–2025 |
 | 373 | 8253 | DBH | 2018–2025 |
 | 374 | 8253 | DBH | 2018–2025 |
 | 210 | 8253 | DBH | – |
+| 225 | 8249 | DBH | 2010–2017 |
+| 373 | 8249 | DBH | 2010–2017 |
+| 374 | 8249 | DBH | 2010–2017 |
+| 210 | 8249 | DBH | – |
+| 225 | 8252 | DBH | 2015–2017 |
+| 373 | 8252 | DBH | 2014–2017 |
+| 374 | 8252 | DBH | 2014–2017 |
+| 210 | 8252 | DBH | – |
+| 225 | 8250 | DBH | 2012–2014 |
+| 373 | 8250 | DBH | 2012–2012 |
+| 374 | 8250 | DBH | 2012–2012 |
+| 210 | 8250 | DBH | – |
+| 225 | 8251 | DBH | 2012–2014 |
+| 373 | 8251 | mangler | – |
+| 374 | 8251 | mangler | – |
+| 210 | 8251 | DBH | – |
+| 225 | 8242 | DBH | 2010–2014 |
+| 373 | 8242 | DBH | 2010–2013 |
+| 374 | 8242 | DBH | 2010–2013 |
+| 210 | 8242 | DBH | – |
 | 225 | 8223 | DBH | 2010–2025 |
 | 373 | 8223 | DBH | 2010–2025 |
 | 374 | 8223 | DBH | 2010–2025 |
