@@ -17,7 +17,7 @@ import { SiteringFane, SIT_PARAM, sitStandard, lesSit, skrivSit, sitSum, sitArsv
  */
 
 // ── Datatyper (speiler build-rangering.py) ───────────────────────────────────
-interface DbhAar { arsverk: number | null; faglige: number | null; rekruttering: number | null; forsteAndel: number | null; studenter: number | null; publPoeng: number | null; publikasjoner: number | null; uff: number | null; utenStip?: number | null; poengPerUff: number | null; poengPerFaglig: number | null; niva2Andel: number | null; /** nivå 2 som andel av forfatterandelene (HK-dir, Tilstandsrapporten V15.3) */ niva2AndelFa?: number | null; /** nivå 2 som andel av publikasjonene (BIs variant) */ niva2AndelPubl?: number | null; studenterPerFaglig: number | null; }
+interface DbhAar { /** satt når året er hentet fra en forløper (annen institusjons- eller avdelingskode) */ kilde?: string; arsverk: number | null; faglige: number | null; rekruttering: number | null; forsteAndel: number | null; studenter: number | null; publPoeng: number | null; publikasjoner: number | null; uff: number | null; utenStip?: number | null; poengPerUff: number | null; poengPerFaglig: number | null; niva2Andel: number | null; /** nivå 2 som andel av forfatterandelene (HK-dir, Tilstandsrapporten V15.3) */ niva2AndelFa?: number | null; /** nivå 2 som andel av publikasjonene (BIs variant) */ niva2AndelPubl?: number | null; studenterPerFaglig: number | null; }
 interface ArtAar { n: number; nvi: number; intlAndel: number | null; forfatterandel: number | null; niva: Record<'0' | '1' | '2' | 'u', number>; ajg: Record<string, number> | null; abdc: Record<string, number>; ft50: number; utd24: number; /** «niva|abdc|ft|ajg» → [antall, sum forfatterandel] */ komb?: Record<string, [number, number]>; /** kalibrert AJG-anslag, NVI-artikler */ ajgA?: { topp: number; '3': number; nvi: number };
   /** «FUAJ|nivå|v/x» → [antall, sum forfatterandel]: hvilke lister som gir Topp (FT50, UTD24, ABDC A*, AJG 4/4*) */ toppKomb?: Record<string, [number, number]>;
   /** Slik skolene rapporterer: hel telling, bare NVI-rapporterte artikler (samme grunnlag som HK-dir/DBH) */ rapport?: Record<string, number | boolean>;
@@ -31,7 +31,7 @@ interface Skole {
   akkreditering: (Akk | string)[]; rangeringer: (Record<string, unknown> | string)[]; enhetNotat?: string | null;
   dbh: Record<string, DbhAar>; artikler: Record<string, ArtAar>; topp: Topp[]; ajgFagfelt: Record<string, number>;
   /** Hele institusjonen (DBH-totalen), samme felt som dbh */ dbhInst?: Record<string, DbhAar>;
-  /** Hvilke DBH-enheter som er summert i dbh */ dbhEnhet?: { inst: string[]; avdelinger: string[]; hele: boolean; avdelingNavn?: Record<string, string>; merknad?: string | null };
+  /** Hvilke DBH-enheter som er summert i dbh */ dbhEnhet?: { inst: string[]; avdelinger: string[]; hele: boolean; avdelingNavn?: Record<string, string>; merknad?: string | null; forlopere?: { inst: string[]; avdelinger?: string[]; fakultetskode?: string | null; aar: number[]; merknad?: string | null }[] };
   utdanning: Partial<Record<'oa' | 'moa', Utd>> & { siv?: Siv | null };
   /** ABS/AJG 4*, 4 og 3 per år fra NHHs forskningsrapport (åtte skoler), antall og per årsverk. */
   ajgNhh?: Record<string, Partial<Record<'4*' | '4' | '3', { n: number; perFte: number }>>> | null;
@@ -1087,7 +1087,8 @@ function SlikRegnet({ skoler }: { skoler: Skole[] }) {
         <p>
           <b>Handelshøyskolen / fagmiljøet</b> er avdelingene under. Rangeringen sammenligner fagmiljøene, ikke hele institusjonen, fordi universitetene
           har mange andre fag. Der handelshøyskolen er et institutt (OsloMet, UiT, HVL, HiØ), brukes instituttet; der den er et fakultet, hele fakultetet.
-          Publikasjoner som bare er registrert på institusjonsnivå, kommer ikke med i fagmiljøtallene. Små enheter svinger mye fra år til år
+          Publikasjoner som bare er registrert på institusjonsnivå, kommer ikke med i fagmiljøtallene. Der enheten hadde en annen kode
+          før en fusjon eller omorganisering (OsloMet og USN 2016–2017, NMBU, UiS og NTNU 2016), er de første årene hentet fra forløperen. Små enheter svinger mye fra år til år
           (poeng per årsverk endrer seg i snitt 20–36 % per år for HiØ, HiMolde, OsloMet og UiB/UiO økonomi, mot 3 % for BI). Velg
           «Treårs glidende snitt» for å se utviklingen: hvert år viser snittet av året og de to foregående, og poeng per årsverk er
           sum poeng delt på sum årsverk i de tre årene, slik at et år med få årsverk ikke teller for mye. (Rangeringen bruker snitt av
@@ -1107,7 +1108,7 @@ function SlikRegnet({ skoler }: { skoler: Skole[] }) {
                   <td className="px-2 py-1" style={{ fontWeight: 600 }}>{s.kort}</td>
                   <td className="px-2 py-1">{s.institusjon ?? '–'} ({e?.inst.join(', ') ?? '–'})</td>
                   <td className="px-2 py-1">{!e ? '–' : e.hele ? 'Hele institusjonen' : e.avdelinger.map((a) => <div key={a}>{a}{e.avdelingNavn?.[a] ? ` ${e.avdelingNavn[a]}` : ''}</div>)}</td>
-                  <td className="px-2 py-1" style={{ color: 'var(--nmbu-neutral-2)' }}>{e?.merknad ?? ''}</td>
+                  <td className="px-2 py-1" style={{ color: 'var(--nmbu-neutral-2)' }}>{e?.merknad ?? ''}{(e?.forlopere ?? []).map((f, i) => <div key={i} style={{ marginTop: 4 }}><b>Forløper:</b> {f.merknad}</div>)}</td>
                 </tr>
               );
             })}

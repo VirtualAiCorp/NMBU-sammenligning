@@ -1584,3 +1584,16 @@ Fem Sonnet-agenter gikk gjennom DBH-grunnlaget, NVA mot DBH, tidsskriftkoblingen
   AJG-kortet i Publisering er merket som NHH-rapportens tall.
 - **Ikke gjort (pakke B og D):** fylle 2016–17 fra forløperinstitusjoner, INN 440100 2018–20, og metodevalgene om ABDC A*
   som Topp, listeversjon per år, FT50 2016/2026 og forfatterandel.
+
+## 66. Pakke B: tidsseriene fylt fra forløpere, INN med reiselivsinstituttet (23.10.2026)
+
+- **Forløpere** (`dbh.forlopere` i skoler.json; byggeskriptet fyller bare år som ellers mangler og merker dem med `kilde`;
+  vises under «Forløper» i «Slik er tallene regnet ut»):
+  OsloMet 2016–2017 fra HiOA (0257), avdeling 530350 + 530330 (0,82 og 0,67; hele institusjonen fylles også);
+  USN 2017 fra HSN (0259), fakultet 620 (0,65; også hele institusjonen); NMBU 2016 fra 330210 (1,32 = HH-infografikken);
+  UiS 2016 fra 210230 (1,21); NTNU HH 2016 fra 484000 Handelshøyskolen i Trondheim (0,57); NTNU 2016 fra 484000 +
+  210620 samfunnsøkonomi + 210610 IØT (1,34). Ikke fylt: NTNU ØK 2016 (Ålesund-enheten mangler), Nord 2016, INN 2017, HiØ før
+  2021, Kristiania før 2018 og HVL før 2024 (ikke samme enhet).
+- **INN:** 440100 Institutt for reiseliv, opplevelsesnæringer og markedsføring er med (2018–2020; slått inn i 440500 fra
+  2021). 2018–2020 blir 0,97 / 0,90 / 0,98. Artikkelmålene (NVA) dekker ikke 440100 før 2021; rangeringsvinduene starter 2021.
+- Kontroll: 667 av 687 innen ±2 % (de ti nye sammenlignbare tallene treffer). Rangeringen endres ikke (vinduene er 2021–2025).

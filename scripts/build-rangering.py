@@ -776,6 +776,21 @@ def main():
         aar = dbh_aar(spec_) if spec_["inst"] else {}
         # Hele institusjonen, for kontroll mot årsrapporter som oppgir institusjonstall
         inst_aar = dbh_aar({"inst": spec_["inst"], "hele": True}) if spec_["inst"] else {}
+        # Forløpere (skoler.json dbh.forlopere): andre institusjons- eller avdelingskoder før en fusjon eller omorganisering.
+        # De fyller bare år som ellers mangler, og årene merkes med kilde «forløper» (pakke B, 23.10.2026).
+        fyllt = []
+        for f in d.get("forlopere") or []:
+            fs = {"inst": f["inst"], "fakultetskode": f.get("fakultetskode"), "avdelinger": f.get("avdelinger") or [], "hele": False}
+            fa = dbh_aar(fs)
+            fi = dbh_aar({"inst": f["inst"], "hele": True}) if f.get("institusjon") else {}
+            for y in map(str, f["aar"]):
+                if y in fa and y not in aar:
+                    aar[y] = {**fa[y], "kilde": f.get("merknad") or "forløper"}
+                    fyllt.append(int(y))
+                if y in fi and y not in inst_aar:
+                    inst_aar[y] = {**fi[y], "kilde": f.get("merknad") or "forløper"}
+        aar = dict(sorted(aar.items())); inst_aar = dict(sorted(inst_aar.items()))
+        spec_["forlopere"] = [{k: f.get(k) for k in ("inst", "fakultetskode", "avdelinger", "aar", "merknad")} for f in d.get("forlopere") or []]
         per_aar, topp, fag = artikler(sid)
         # Navn på avdelingene som er med, til «Slik er tallene regnet ut» i Publisering
         navn = {}

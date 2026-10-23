@@ -23,7 +23,7 @@ FAKULTETER = {"hh": "Handelshøyskolen", "landsam": "Fakultet for landskap og sa
 KORT = {"hh": "HH", "landsam": "LANDSAM", "realtek": "REALTEK", "biovit": "BIOVIT", "kbm": "KBM", "mina": "MINA", "vet": "VET"}
 NIVAA = {"bachelor": "bachelor", "master5": "femårig master", "master2": "toårig master", "aarsstudium": "årsstudium"}
 # Metodeavsnitt som er relevante for brukerne (ikke arbeidsform, kommandoer, passord, intern analyse eller teknikk)
-UTELAT = {"3", "4", "5", "6", "8", "9", "10", "16", "18", "19", "22", "24", "33", "37", "41", "42", "45", "46", "47", "48", "49", "50", "52", "64", "65"}
+UTELAT = {"3", "4", "5", "6", "8", "9", "10", "16", "18", "19", "22", "24", "33", "37", "41", "42", "45", "46", "47", "48", "49", "50", "52", "64", "65", "66"}
 # Avsnitt om den interne rangeringen (AJG, kart, Pure, OpenAlex) holdes alltid utenfor, også nye som ikke står i UTELAT
 INTERN_RANGERING = re.compile(r"Handelshoyskolerangering|Rangering \(intern\)|\?rangering|AJG|ajg2024|OpenAlex|Pure \(OAI", re.I)
 

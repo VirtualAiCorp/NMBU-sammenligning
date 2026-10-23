@@ -366,7 +366,21 @@
     }
    },
    "alternativ": null,
-   "merknad": "Hele fakultet 470. Publiseringspoeng føres på 470000. Fra 2024 er stipendiater og postdoktorer ført på 470210/470220 (begge er med). NHHs forskningsrapport bruker bare 470000 og får derfor høyere tall (2025: 1,72 mot 1,42)."
+   "merknad": "Hele fakultet 470. Publiseringspoeng føres på 470000. Fra 2024 er stipendiater og postdoktorer ført på 470210/470220 (begge er med). NHHs forskningsrapport bruker bare 470000 og får derfor høyere tall (2025: 1,72 mot 1,42).",
+   "forlopere": [
+    {
+     "inst": [
+      "1173"
+     ],
+     "avdelinger": [
+      "330210"
+     ],
+     "aar": [
+      2016
+     ],
+     "merknad": "2016 fra den tidligere koden 330210 Handelshøyskolen ved NMBU"
+    }
+   ]
   },
   "akkrediteringer": [
    {
@@ -472,7 +486,21 @@
     },
     "merknad": "Tall for NHS alene – legg til ved behov."
    },
-   "merknad": "Hele fakultet 230. NHS (avdeling 210245, fakultet 210) er gyldig t.o.m. 2025 og er IKKE med i tallene; ennå ingen ny NHS-kode under 230 i tabell 210. Uten Norsk hotellhøgskole (avgjort 03.10.2026)."
+   "merknad": "Hele fakultet 230. NHS (avdeling 210245, fakultet 210) er gyldig t.o.m. 2025 og er IKKE med i tallene; ennå ingen ny NHS-kode under 230 i tabell 210. Uten Norsk hotellhøgskole (avgjort 03.10.2026).",
+   "forlopere": [
+    {
+     "inst": [
+      "1160"
+     ],
+     "avdelinger": [
+      "210230"
+     ],
+     "aar": [
+      2016
+     ],
+     "merknad": "2016 fra den tidligere koden 210230 Handelshøgskolen ved UiS (under Det samfunnsvitenskapelige fakultet)"
+    }
+   ]
   },
   "akkrediteringer": [
    {
@@ -740,7 +768,23 @@
     },
     "merknad": "Brukes i HHs fagmiljøsammenligning (staffData: 1150_230). IØT er sivilingeniørmiljø og utgjør ~2/3 av publiseringen."
    },
-   "merknad": "Avgrenset 03.10.2026 (Mathias): 230210 NTNU Handelshøyskolen + 230230 Institutt for samfunnsøkonomi; 230240 IØT lagt til 07.10.2026 (ønske fra kollega). Uten 230220 Internasjonal business (Ålesund)."
+   "merknad": "Avgrenset 03.10.2026 (Mathias): 230210 NTNU Handelshøyskolen + 230230 Institutt for samfunnsøkonomi; 230240 IØT lagt til 07.10.2026 (ønske fra kollega). Uten 230220 Internasjonal business (Ålesund).",
+   "forlopere": [
+    {
+     "inst": [
+      "1150"
+     ],
+     "avdelinger": [
+      "484000",
+      "210620",
+      "210610"
+     ],
+     "aar": [
+      2016
+     ],
+     "merknad": "2016 fra de tidligere kodene 484000 Handelshøyskolen i Trondheim, 210620 Institutt for samfunnsøkonomi og 210610 IØT"
+    }
+   ]
   },
   "akkrediteringer": [
    {
@@ -815,7 +859,21 @@
    ],
    "fakultetskode": "230",
    "alternativ": null,
-   "merknad": "Variant 18.10.2026: bare 230210 NTNU Handelshøyskolen."
+   "merknad": "Variant 18.10.2026: bare 230210 NTNU Handelshøyskolen.",
+   "forlopere": [
+    {
+     "inst": [
+      "1150"
+     ],
+     "avdelinger": [
+      "484000"
+     ],
+     "aar": [
+      2016
+     ],
+     "merknad": "2016 fra 484000 Handelshøyskolen i Trondheim (før Fakultet for økonomi)"
+    }
+   ]
   },
   "akkrediteringer": [
    {
@@ -1062,7 +1120,20 @@
     }
    },
    "alternativ": null,
-   "merknad": "Hele fakultet 620 (inkl. EVU-avdelinger uten tall)."
+   "merknad": "Hele fakultet 620 (inkl. EVU-avdelinger uten tall).",
+   "forlopere": [
+    {
+     "inst": [
+      "0259"
+     ],
+     "fakultetskode": "620",
+     "aar": [
+      2017
+     ],
+     "institusjon": true,
+     "merknad": "2017 fra Høgskolen i Sørøst-Norge (0259), fakultet 620"
+    }
+   ]
   },
   "akkrediteringer": [
    {
@@ -1120,6 +1191,7 @@
   "dbh": {
    "institusjonskode": "0264→1177",
    "avdelingskoder": [
+    "440100",
     "440400",
     "440500"
    ],
@@ -1156,7 +1228,7 @@
     },
     "merknad": "Uten psykologi, jus/filosofi og Østlandsforskning."
    },
-   "merknad": "Avgrenset 03.10.2026 (Mathias): kjernen 440400 Økonomifag + 440500 Organisasjon, ledelse og styring, under både 0264 (t.o.m. 2024) og 1177 (fra 2025). Uten psykologi, jus/filosofi og Østlandsforskning. Brudd 2021: Institutt for reiseliv, opplevelsesnæringer og markedsføring (440100, 18–22 årsverk) er ikke med 2018–2020 og ble del av 440500 fra 2021. 2022: 17 % av institusjonens poeng (94,8) er ikke fordelt på avdeling og er ikke med."
+   "merknad": "Avgrenset 03.10.2026 (Mathias): kjernen 440400 Økonomifag + 440500 Organisasjon, ledelse og styring, under både 0264 (t.o.m. 2024) og 1177 (fra 2025). Uten psykologi, jus/filosofi og Østlandsforskning. 440100 Institutt for reiseliv, opplevelsesnæringer og markedsføring (2018–2020, 18–22 årsverk) er med; det ble del av 440500 fra 2021. Artikkelmålene (NVA) dekker ikke 440100 før 2021. 2022: 17 % av institusjonens poeng (94,8) er ikke fordelt på avdeling og er ikke med."
   },
   "akkrediteringer": [],
   "rangeringer": [
@@ -1240,7 +1312,24 @@
     }
    },
    "alternativ": null,
-   "merknad": "Institutt under Fakultet for samfunnsvitenskap (SAM, 530). HHs fagmiljøside bruker hele SAM (1175_530)."
+   "merknad": "Institutt under Fakultet for samfunnsvitenskap (SAM, 530). HHs fagmiljøside bruker hele SAM (1175_530).",
+   "forlopere": [
+    {
+     "inst": [
+      "0257"
+     ],
+     "avdelinger": [
+      "530350",
+      "530330"
+     ],
+     "aar": [
+      2016,
+      2017
+     ],
+     "institusjon": true,
+     "merknad": "2016–2017 fra Høgskolen i Oslo og Akershus (0257), Handelshøyskolen ved HiOA (530350) + 530330 (ledelse/offentlig administrasjon, slått inn i 530350 fra 2018)"
+    }
+   ]
   },
   "akkrediteringer": [
    {
