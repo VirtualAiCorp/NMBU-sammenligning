@@ -51,7 +51,7 @@ const FELLES_MODUL = new Set(['FAGMILJØET', 'SØKERGRUNNLAGET', 'STRATEGIER', '
 /** Sidene for hele NMBU (App: Faculty-verdiene «nmbu-…»). */
 /** Fakulteter med «Strategier mot 2030» i markedsstatus (som MED_STRATEGIER i FacultyMarketStatus.tsx) */
 const MED_STRATEGIER = new Set<FacultyId>(['hh']);
-const NMBU_SIDE: Record<string, string> = { 'nmbu-fagmiljo': 'Fagmiljøet', 'nmbu-sokergrunnlag': 'Søkergrunnlaget', 'nmbu-okonomi-drift': 'Økonomi og drift', 'nmbu-utdanning': 'Utdanning' };
+const NMBU_SIDE: Record<string, string> = { 'nmbu-fagmiljo': 'Fagmiljøet', 'nmbu-historikk': 'Fagmiljøet over tid', 'nmbu-sokergrunnlag': 'Søkergrunnlaget', 'nmbu-okonomi-drift': 'Økonomi og drift', 'nmbu-utdanning': 'Utdanning' };
 interface Maal { fak: string; visning: string; gruppe?: string; tekst: string; anker?: string }
 
 /** Programgrupper i kildene: vanlige linjer gir én, oversiktslinjene alle programmene de lister. */

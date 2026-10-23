@@ -44,6 +44,7 @@ const NMBU_SIDER: { f: Faculty | null; label: string; icon: Ikon }[] = [
   { f: 'nmbu-marked', label: 'Markedet', icon: MENY.PieChart },
   { f: 'nmbu-emner', label: 'Alle emner ved NMBU', icon: MENY.BookOpen },
   { f: 'nmbu-fagmiljo', label: 'Fagmiljøet', icon: MENY.Microscope },
+  { f: 'nmbu-historikk', label: 'Fagmiljøet over tid', icon: MENY.TrendingUp },
   { f: 'nmbu-sokergrunnlag', label: 'Søkergrunnlaget', icon: MENY.Baby },
   { f: 'nmbu-bolig', label: 'Bolig og studentboliger', icon: MENY.Home },
   { f: 'nmbu-okonomi', label: 'Økonomi', icon: MENY.Landmark },

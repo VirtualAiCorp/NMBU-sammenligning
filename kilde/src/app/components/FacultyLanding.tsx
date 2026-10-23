@@ -1,10 +1,10 @@
 import type { ReactNode } from 'react';
-import { BookOpen, Building2, Trees, Atom, Leaf, FlaskConical, TreePine, Lock, PawPrint, Users, Home, Landmark, LayoutGrid, Baby, Wallet, GraduationCap, PieChart } from '../ikoner';
+import { BookOpen, Building2, Trees, Atom, Leaf, FlaskConical, TreePine, Lock, PawPrint, Users, Home, Landmark, LayoutGrid, Baby, Wallet, GraduationCap, PieChart, TrendingUp } from '../ikoner';
 import { FACULTY_META as FACULTIES, FACULTY_IDS, type FacultyId } from '../data/facultyMeta';
 import { LagetAv } from './LagetAv';
 import { Forsidenotis } from './Forsidenotis';
 
-export type Faculty = 'hh-figma' | FacultyId | 'nmbu-marked' | 'nmbu-emner' | 'nmbu-fagmiljo' | 'nmbu-bolig' | 'nmbu-okonomi' | 'nmbu-oppsett' | 'nmbu-sokergrunnlag' | 'nmbu-okonomi-drift' | 'nmbu-utdanning';
+export type Faculty = 'hh-figma' | FacultyId | 'nmbu-marked' | 'nmbu-emner' | 'nmbu-fagmiljo' | 'nmbu-bolig' | 'nmbu-okonomi' | 'nmbu-oppsett' | 'nmbu-sokergrunnlag' | 'nmbu-okonomi-drift' | 'nmbu-utdanning' | 'nmbu-historikk';
 
 interface Props {
   onSelect: (faculty: Faculty) => void;
@@ -224,6 +224,25 @@ export function FacultyLanding({ onSelect }: Props) {
             <div style={{ fontFamily: "'Lora', serif", fontWeight: 500, fontSize: '20px', color: 'var(--nmbu-green-dark)', marginBottom: 4 }}>Fagmiljøet: tilsatte og publisering</div>
             <p style={{ fontSize: '13px', color: 'var(--nmbu-neutral-2)', lineHeight: 1.5 }}>
               Studentårsverk per faglig årsverk, førstestillinger, rekruttering og publiseringspoeng for NMBU mot konkurrerende institusjoner, og NMBUs fakulteter mot hverandre. DBH 2019–2025.
+            </p>
+          </div>
+        </button>
+
+        {/* Fagmiljøet over tid */}
+        <button
+          onClick={() => onSelect('nmbu-historikk')}
+          className="w-full rounded-2xl p-6 text-left transition-all mb-8 flex items-center gap-5"
+          style={{ backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)', boxShadow: '0 2px 8px rgba(2,92,79,0.08)' }}
+          onMouseEnter={(e) => { (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 4px 16px rgba(2,92,79,0.16)'; (e.currentTarget as HTMLButtonElement).style.transform = 'translateY(-2px)'; }}
+          onMouseLeave={(e) => { (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 2px 8px rgba(2,92,79,0.08)'; (e.currentTarget as HTMLButtonElement).style.transform = 'translateY(0)'; }}
+        >
+          <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: 'var(--nmbu-green-4)' }}>
+            <TrendingUp className="w-5 h-5" style={{ color: 'var(--nmbu-green-dark)' }} />
+          </div>
+          <div>
+            <div style={{ fontFamily: "'Lora', serif", fontWeight: 500, fontSize: '20px', color: 'var(--nmbu-green-dark)', marginBottom: 4 }}>Fagmiljøet over tid: sammenslåinger og utvikling</div>
+            <p style={{ fontSize: '13px', color: 'var(--nmbu-neutral-2)', lineHeight: 1.5 }}>
+              Tilsatte og publisering 2010–2025 per institusjon, fakultet og institutt, slik det ble rapportert og som sammenlignbar serie i dagens struktur, med sammenslåinger og omorganiseringer markert. DBH, med CSV-eksport.
             </p>
           </div>
         </button>
