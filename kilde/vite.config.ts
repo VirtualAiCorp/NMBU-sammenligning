@@ -70,11 +70,38 @@ const kunRangering = {
   },
 }
 
+// Bygg med bare AJG-analysen (VITE_KUN_AJG=1, Cloudflare-prosjektet «ajg-analyse-hh»): egen inngang (src/ajg-main.tsx),
+// alltid arbeidsflate-oppsettet, ingen public-mappe bortsett fra den krypterte datafila (ajg-data.json, laget av
+// scripts/rangering/ajg_analyse.py med AJG_PASSORD), og egen utmappe (dist-ajg).
+const KUN_AJG = process.env.VITE_KUN_AJG === '1'
+let ajgUt = 'dist-ajg'
+const kunAjg = {
+  name: 'kun-ajg',
+  configResolved(c: { root: string; build: { outDir: string } }) { ajgUt = path.resolve(c.root, c.build.outDir) },
+  transformIndexHtml: { order: 'pre' as const, handler(html: string) {
+    if (!KUN_AJG) return html
+    return html
+      .replace('/src/main.tsx', '/src/ajg-main.tsx')
+      .replace(/<title>[^<]*<\/title>/, '<title>AJG-Analyse HH</title>')
+      .replace(/(<meta name="description" content=")[^"]*/, '$1AJG 2024 etter fagområde ved norske handelshøyskoler: samfunnsøkonomi mot andre fagområder. Låst med passord.')
+      .replace(/(<meta property="og:title" content=")[^"]*/, '$1AJG-Analyse HH')
+      .replace(/(<meta property="og:description" content=")[^"]*/, '$1AJG 2024 etter fagområde ved norske handelshøyskoler. Låst med passord.')
+      .replace('</head>', '<script>document.documentElement.setAttribute("data-oppsett","arbeidsflate")</script>'
+        + '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400..600&display=swap" /></head>')
+  } },
+  closeBundle() {
+    if (!KUN_AJG) return
+    const kilde = path.resolve(__dirname, 'public', 'ajg-data.json')
+    if (fs.existsSync(ajgUt) && fs.existsSync(kilde)) fs.copyFileSync(kilde, path.join(ajgUt, 'ajg-data.json'))
+  },
+}
+
 export default defineConfig({
-  publicDir: KUN_RANGERING ? false : 'public',
-  build: KUN_RANGERING ? { outDir: 'dist-rangering' } : undefined,
+  publicDir: KUN_RANGERING || KUN_AJG ? false : 'public',
+  build: KUN_RANGERING ? { outDir: 'dist-rangering' } : KUN_AJG ? { outDir: 'dist-ajg' } : undefined,
   plugins: [
     kunRangering,
+    kunAjg,
     fjernHhPdf,
     figmaAssetResolver(),
     // The React and Tailwind plugins are both required for Make, even if

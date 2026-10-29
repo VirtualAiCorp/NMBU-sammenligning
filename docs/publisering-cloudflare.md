@@ -115,3 +115,31 @@ Begge prosjektene bygger ved hver push til `main`. `functions/` (KI-chatten) bli
 `ANTHROPIC_API_KEY` svarer den ikke; siden bruker den ikke. Lokal test: launch-config `boa-rangering-delt`
 (port 4183, `vite preview` av `dist-rangering`). Bytte passord: endre `RANGERING_PASSORD`, kjør
 `/usr/local/bin/python3 scripts/build-rangering.py`, commit og push. Eget domene kan legges på senere (punkt 4).
+
+## 7. Eget nettsted for AJG-analysen: `ajg-analyse-hh` (30.10.2026)
+
+«AJG-Analyse HH»: samfunnsøkonomi mot andre fagområder i AJG 2024 ved norske handelshøyskoler (fire spørsmål fra en
+kollega til et manuskript), med kontroll av AJG-lista, tidsskriftoversikt og HH NMBUs artikler. Samme uttrykk som
+arbeidsflaten. Byggevarianten `VITE_KUN_AJG=1` bruker egen inngang (`kilde/src/ajg-main.tsx`, sidene i
+`kilde/src/app/components/ajg/`), tar ikke med resten av nettstedet eller `public/` (bare `ajg-data.json` kopieres) og
+skriver til `kilde/dist-ajg`. Dataene viser AJG-nivå per tidsskrift og er derfor kryptert med **eget passord**,
+`AJG_PASSORD` i `kilde/.env.local` (laget av `scripts/rangering/ajg_analyse.py` første gang). CSV-eksportene på siden
+har ikke AJG-nivå per tidsskrift.
+
+Cloudflare-panelet → **Workers & Pages** → **Create** → **Pages** → **Import an existing Git repository** →
+`VirtualAiCorp/NMBU-sammenligning`:
+
+| Felt | Verdi |
+|---|---|
+| Project name | `ajg-analyse-hh` (gir `ajg-analyse-hh.pages.dev`) |
+| Production branch | `main` |
+| Framework preset | None |
+| Build command | `cd kilde && npm ci --legacy-peer-deps && npm run build` |
+| Build output directory | `kilde/dist-ajg` |
+| Environment variables | `NODE_VERSION` = `20`, `VITE_KUN_AJG` = `1` (ingen andre) |
+
+Oppdatere tallene: `/usr/local/bin/python3 scripts/rangering/ajg_analyse.py` (krever `tidsskrift/ajg2024.csv` og
+NVA/OpenAlex-cachen fra rangeringen), commit `kilde/public/ajg-data.json` og push. Lokal test: launch-config
+`boa-ajg-analyse` (port 4184, `vite preview` av `dist-ajg`) etter `VITE_KUN_AJG=1 npx vite build`; test i nettleseren
+med `--testpassord`, og kjør skriptet på nytt uten før commit. Bytte passord: endre `AJG_PASSORD`, kjør skriptet,
+commit og push. Slett nettstedet (og `ajg-data.json`) når AJG-avtalen med Chartered ABS ikke lenger gjelder.

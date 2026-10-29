@@ -1,0 +1,100 @@
+/* AJG-Analyse HH (src/ajg-main.tsx): bare det arbeidsflate.css ikke har – seriefarger, tabeller, låseskjerm, filtre.
+   Seriefargene er referansepaletten i dataviz-skillen (validert lys og mørk); nivåskalaen er én blåtone lys → mørk. */
+.ajg {
+  --ajg-s1: #2a78d6; --ajg-s2: #eb6834; --ajg-s3: #1baf7a; --ajg-s4: #eda100;
+  --ajg-s5: #e87ba4; --ajg-s6: #008300; --ajg-s7: #6250d6; --ajg-s8: #e34948;
+  --ajg-noytral: #8a8984;
+  --ajg-q1: #cfe0f6; --ajg-q2: #9cc0ec; --ajg-q3: #5f97df; --ajg-q4: #2a78d6; --ajg-q5: #174a8c;
+}
+:root[data-theme="dark"] .ajg {
+  --ajg-s1: #3987e5; --ajg-s2: #d95926; --ajg-s3: #199e70; --ajg-s4: #c98500;
+  --ajg-s5: #d55181; --ajg-s6: #008300; --ajg-s7: #9085e9; --ajg-s8: #e66767;
+  --ajg-noytral: #9a9992;
+  --ajg-q1: #1f3550; --ajg-q2: #2c5488; --ajg-q3: #3f78c4; --ajg-q4: #6ea3ea; --ajg-q5: #b3d0f6;
+}
+
+/* Låseskjermen */
+.ajg-laas { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px 16px; background: var(--af-page); color: var(--af-fg); }
+.ajg-laas-kort { width: 100%; max-width: 400px; background: var(--af-card); border: 1px solid var(--af-border); border-radius: 16px; padding: 28px; box-shadow: var(--af-shadow-float); }
+.ajg-laas-kort h1 { font-size: 20px; line-height: 28px; font-weight: 600; letter-spacing: -0.01em; margin: 12px 0 4px; }
+.ajg-laas-kort p { font-size: 13px; line-height: 20px; color: var(--af-muted-fg); margin: 0 0 18px; }
+.ajg-felt { width: 100%; height: 38px; border-radius: 10px; border: 1px solid var(--af-input); background: var(--af-card); color: var(--af-fg); padding: 0 12px; font: inherit; font-size: 14px; }
+.ajg-felt:focus { outline: 2px solid color-mix(in srgb, var(--af-aksent) 35%, transparent); outline-offset: 1px; }
+.ajg-knapp { height: 38px; border-radius: 10px; border: 0; padding: 0 16px; font: inherit; font-size: 14px; font-weight: 500; background: var(--af-fg); color: var(--af-bg); cursor: pointer; }
+.ajg-knapp:disabled { opacity: .6; cursor: default; }
+.ajg-feil { margin-top: 10px; font-size: 13px; color: var(--af-destructive); }
+
+/* Notis (lisens, forbehold) */
+.ajg-notis { display: flex; gap: 12px; align-items: flex-start; padding: 14px 16px; border-radius: 12px; background: var(--af-muted); border: 1px solid var(--af-border); font-size: 13px; line-height: 20px; color: var(--af-fg-2); }
+.ajg-notis strong { color: var(--af-fg); font-weight: 600; }
+.ajg-notis svg { flex-shrink: 0; margin-top: 2px; color: var(--af-aksent); }
+
+/* Tekst */
+.ajg-funn { margin: 0; padding-left: 18px; font-size: 14px; line-height: 22px; color: var(--af-fg-2); }
+.ajg-funn li { margin: 0 0 10px; }
+.ajg-funn strong { color: var(--af-fg); font-weight: 600; }
+.ajg-tekst { font-size: 14px; line-height: 22px; color: var(--af-fg-2); max-width: 78ch; }
+.ajg-tekst p { margin: 0 0 12px; }
+.ajg-tekst h3 { font-size: 14px; font-weight: 600; color: var(--af-fg); margin: 22px 0 6px; }
+.ajg-tekst a { color: var(--af-aksent-tekst); text-decoration: underline; text-underline-offset: 2px; }
+.ajg-liten { font-size: 12px; line-height: 18px; color: var(--af-muted-fg); }
+
+/* Filterrad over grafer og tabeller */
+.ajg-filter { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 14px; }
+.ajg-chip { display: inline-flex; align-items: center; gap: 6px; height: 30px; padding: 0 11px; border-radius: 999px; border: 1px solid var(--af-border); background: var(--af-card); color: var(--af-fg-2); font: inherit; font-size: 12.5px; cursor: pointer; }
+.ajg-chip[aria-pressed="true"] { background: var(--af-fg); color: var(--af-bg); border-color: var(--af-fg); }
+.ajg-chip-prikk { width: 8px; height: 8px; border-radius: 99px; flex-shrink: 0; }
+.ajg-velg { height: 32px; border-radius: 9px; border: 1px solid var(--af-border); background: var(--af-card); color: var(--af-fg); font: inherit; font-size: 13px; padding: 0 8px; max-width: 100%; }
+.ajg-sok { height: 32px; border-radius: 9px; border: 1px solid var(--af-border); background: var(--af-card); color: var(--af-fg); font: inherit; font-size: 13px; padding: 0 10px; min-width: 0; flex: 1 1 220px; max-width: 360px; }
+.ajg-lenkeknapp { height: 30px; padding: 0 10px; border-radius: 9px; border: 1px solid var(--af-border); background: var(--af-card); color: var(--af-fg-2); font: inherit; font-size: 12.5px; display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
+.ajg-lenkeknapp:hover { background: var(--af-muted); }
+
+/* Kort rundt grafer */
+.ajg-kort { background: var(--af-card); border: 1px solid var(--af-border); border-radius: 14px; padding: 18px 18px 14px; }
+.ajg-forklaring { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 10px; font-size: 12px; color: var(--af-fg-2); }
+.ajg-forklaring span { display: inline-flex; align-items: center; gap: 6px; }
+.ajg-tooltip { background: var(--af-popover); border: 1px solid var(--af-border); border-radius: 10px; padding: 8px 10px; font-size: 12px; line-height: 18px; color: var(--af-fg); box-shadow: var(--af-shadow-float); }
+.ajg-tooltip b { font-weight: 600; }
+
+/* Tabeller */
+.ajg-tabellramme { overflow-x: auto; border: 1px solid var(--af-border); border-radius: 12px; background: var(--af-card); }
+.ajg-tabellramme.ajg-hoy { max-height: 70vh; overflow-y: auto; }
+.ajg-tabell { width: 100%; border-collapse: collapse; font-size: 12.5px; line-height: 18px; font-variant-numeric: tabular-nums; }
+.ajg-tabell th, .ajg-tabell td { padding: 7px 10px; border-bottom: 1px solid var(--af-border); text-align: right; white-space: nowrap; }
+.ajg-tabell th:first-child, .ajg-tabell td:first-child { text-align: left; }
+.ajg-tabell td.ajg-v { text-align: left; white-space: normal; min-width: 220px; }
+.ajg-tabell thead th { position: sticky; top: 0; z-index: 1; background: var(--af-card); color: var(--af-muted-fg); font-weight: 500; font-size: 12px; vertical-align: bottom; white-space: normal; }
+.ajg-tabell thead th button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; text-align: inherit; }
+.ajg-tabell thead th button:hover { color: var(--af-fg); }
+.ajg-tabell tbody tr:last-child td { border-bottom: 0; }
+.ajg-tabell tbody tr:hover td { background: var(--af-muted); }
+.ajg-tabell tr.ajg-uthev td { font-weight: 600; }
+.ajg-tabell tr.ajg-skille td { border-top: 2px solid var(--af-border); }
+.ajg-tabell .ajg-dempet { color: var(--af-muted-fg); }
+.ajg-sig { font-weight: 600; color: var(--af-fg); }
+
+/* Nivåmerke */
+.ajg-niva { display: inline-flex; min-width: 26px; justify-content: center; padding: 1px 6px; border-radius: 6px; font-size: 11.5px; font-weight: 600; }
+.ajg-niva-1 { background: var(--ajg-q1); color: #12304f; }
+.ajg-niva-2 { background: var(--ajg-q2); color: #12304f; }
+.ajg-niva-3 { background: var(--ajg-q3); color: #fff; }
+.ajg-niva-4 { background: var(--ajg-q4); color: #fff; }
+.ajg-niva-4s { background: var(--ajg-q5); color: #fff; }
+:root[data-theme="dark"] .ajg .ajg-niva-1, :root[data-theme="dark"] .ajg .ajg-niva-2, :root[data-theme="dark"] .ajg .ajg-niva-3 { color: #eef4fc; }
+:root[data-theme="dark"] .ajg .ajg-niva-4, :root[data-theme="dark"] .ajg .ajg-niva-4s { color: #0e1f33; }
+
+/* Stablet nivåstripe */
+.ajg-stripe { display: flex; height: 22px; border-radius: 6px; overflow: hidden; gap: 2px; background: var(--af-card); }
+.ajg-stripe span { display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 500; min-width: 0; overflow: hidden; }
+
+/* Rutenett for to grafer side om side */
+.ajg-to { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; }
+@media (min-width: 900px) { .ajg-to { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+
+/* Lenker brukt som menypunkter og ordmerke */
+.ajg a.af-menypunkt, .ajg a.af-ordmerke { text-decoration: none; }
+
+/* Smal skjerm: kontrollene i seksjonshodet brytes og segmentene ruller sideveis i stedet for å bli kuttet */
+.ajg .af-seksjon-hode { flex-wrap: wrap; row-gap: 10px; }
+.ajg .af-seksjon-hoyre { flex-wrap: wrap; gap: 8px; max-width: 100%; }
+.ajg .af-segment { max-width: 100%; overflow-x: auto; scrollbar-width: none; }
