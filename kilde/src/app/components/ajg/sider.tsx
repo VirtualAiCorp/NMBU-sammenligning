@@ -487,7 +487,7 @@ function Lista({ d }: P) {
   const fra = ['ny', '1', '2', '3', '4', '4*'];
   return (
     <div className="af-side af-side-bred">
-      <AfHeader eyebrow="Data" tittel="AJG-lista kontrollert" undertittel="Vår uthenting av AJG 2024 (07.10.2026, avtalt med Chartered ABS) mot tallene Chartered ABS og CBS Library har publisert, og fordelingen av tidsskriftene på fagfelt og nivå." />
+      <AfHeader eyebrow="Data" tittel="AJG-lista kontrollert" undertittel="Vår uthenting av AJG 2024 (07.10.2026, avtalt med Chartered ABS) mot tallene Chartered ABS og CBS Library har publisert, mot fordelingen per fagfelt og nivå i metodedokumentet, og mot AJG-portalen for en stikkprøve." />
       <div className="af-stig" style={stig(1)}>
         <KpiStripe kpier={[
           { ikon: ClipboardList, etikett: 'Tidsskrift', verdi: nf(L.n), hjelp: `oppgitt ${nf(O.n)}` },
@@ -505,11 +505,13 @@ function Lista({ d }: P) {
           </table>
         </div>
         <div className="ajg-tekst" style={{ marginTop: 12 }}>
-          <p>Avviket er ett tidsskrift (0,05 %): vi har ett mer i alt og ett færre nytt. Nesten like titler er sjekket og er ulike tidsskrift. Nivåendringene vi kan kontrollere (nye 4* og 4) stemmer eksakt, og de to oppgraderingene fra 3 til 4 (Socio-Economic Review, Long Range Planning) er de CBS Library nevner. Avviket påvirker ikke tallene.</p>
-          <p className="ajg-liten">Kilder: <a href={O.kilder[0]} target="_blank" rel="noreferrer">Chartered ABS 30.10.2024</a> · <a href={O.kilder[1]} target="_blank" rel="noreferrer">CBS Library 13.12.2024</a>. Antall per nivå er ikke publisert av Chartered ABS.</p>
+          <p>Avviket er ett tidsskrift (0,05 %): vi har ett mer i alt og ett færre nytt. AJG-portalen viser selv {nf(L.n)} tidsskrift, så forskjellen ligger mellom portalen og de publiserte tallene, ikke i uthentingen; Table 3 (under) plasserer den på nivå 3 i SOC SCI. Nesten like titler er sjekket og er ulike tidsskrift. Nivåendringene vi kan kontrollere (nye 4* og 4) stemmer eksakt, og de to oppgraderingene fra 3 til 4 (Socio-Economic Review, Long Range Planning) er de CBS Library nevner. Avviket påvirker ikke tallene.</p>
+          <p className="ajg-liten">Kilder: <a href={O.kilder[0]} target="_blank" rel="noreferrer">Chartered ABS 30.10.2024</a> · <a href={O.kilder[1]} target="_blank" rel="noreferrer">CBS Library 13.12.2024</a>. Antall per fagfelt og nivå står i Table 3 i <a href={O.kilder[2]} target="_blank" rel="noreferrer">metodedokumentet</a>.</p>
         </div>
       </Seksjon>
-      <Seksjon i={3} tittel="Tidsskrift per fagfelt og nivå" hoyre={<CsvKnapp onClick={() => lastNedCsv('ajg-lista-felt-niva.csv', ['Fagfelt', ...NIV.map((k) => `Nivå ${k}`), 'I alt', 'Andel 3+', 'Andel 4/4*', 'Verden artikler 3+', 'Verden artikler 4/4*'], felt.map((f) => { const c = L.felt[f]; const n = NIV.reduce((a, k) => a + c[k], 0); return [f, ...NIV.map((k) => c[k]), n, p100((c['3'] + c['4'] + c['4*']) / n), p100((c['4'] + c['4*']) / n), p100(d.verdenFelt[f].a3), p100(d.verdenFelt[f].a4)]; }))} />}>
+      {L.tabell3 && <Tabell3 L={L} />}
+      {L.stikkprove && <Stikkprove s={L.stikkprove} />}
+      <Seksjon i={5} tittel="Tidsskrift per fagfelt og nivå" hoyre={<CsvKnapp onClick={() => lastNedCsv('ajg-lista-felt-niva.csv', ['Fagfelt', ...NIV.map((k) => `Nivå ${k}`), 'I alt', 'Andel 3+', 'Andel 4/4*', 'Verden artikler 3+', 'Verden artikler 4/4*'], felt.map((f) => { const c = L.felt[f]; const n = NIV.reduce((a, k) => a + c[k], 0); return [f, ...NIV.map((k) => c[k]), n, p100((c['3'] + c['4'] + c['4*']) / n), p100((c['4'] + c['4*']) / n), p100(d.verdenFelt[f].a3), p100(d.verdenFelt[f].a4)]; }))} />}>
         <SortTabell rader={felt} standard={6} klasse={(f) => (f === 'ECON' ? 'ajg-uthev' : undefined)} fast={[]} kol={[
           { navn: 'AJG-fagfelt', v: (f) => kortFelt(f), venstre: true, vis: (f) => <span title={FELTNAVN[f]}>{kortFelt(f)}</span> },
           ...NIV.map((k): Kol<string> => ({ navn: <NivaMerke n={k} />, v: (f) => L.felt[f][k] })),
@@ -523,7 +525,7 @@ function Lista({ d }: P) {
           <table className="ajg-tabell"><tbody><tr className="ajg-uthev"><td>Sum</td>{NIV.map((k) => <td key={k}>{nf(sum[k])}</td>)}<td>{nf(L.n)}</td><td>{pst((sum['3'] + sum['4'] + sum['4*']) / L.n)}</td><td>{pst((sum['4'] + sum['4*']) / L.n)}</td></tr></tbody></table>
         </div>
       </Seksjon>
-      <Seksjon i={4} tittel="Fra AJG 2021 til AJG 2024">
+      <Seksjon i={6} tittel="Fra AJG 2021 til AJG 2024">
         <div className="ajg-tabellramme">
           <table className="ajg-tabell">
             <thead><tr><th>AJG 2021 ↓ / AJG 2024 →</th>{NIV.map((k) => <th key={k}><NivaMerke n={k} /></th>)}<th>I alt</th></tr></thead>
@@ -536,6 +538,55 @@ function Lista({ d }: P) {
         <p className="ajg-liten" style={{ marginTop: 8 }}>Diagonalen = uendret nivå. Uthevet = endret nivå eller nytt tidsskrift. {O.fjernet} tidsskrift fra AJG 2021 er tatt ut (CBS Library) og er ikke i lista.</p>
       </Seksjon>
     </div>
+  );
+}
+
+/** Vår uthenting mot Table 3 i metodedokumentet: antall per fagfelt og nivå (4 inkluderer 4*). */
+function Tabell3({ L }: { L: AjgData['liste'] }) {
+  const t = L.tabell3!;
+  const felt = Object.keys(t);
+  const like = felt.filter((f) => t[f].vaar.every((v, i) => v === t[f].off[i])).length;
+  const NIV4 = ['4 og 4*', '3', '2', '1'];
+  const celle = (v: number, o: number) => (v === o ? nf(v) : <span className="ajg-sig" title={`Offisielt ${o}`}>{nf(v)} ({v > o ? '+' : '−'}{Math.abs(v - o)})</span>);
+  return (
+    <Seksjon i={3} tittel="Mot metodedokumentet (Table 3)">
+      <p className="ajg-tekst" style={{ marginBottom: 12 }}>
+        Chartered ABS oppgir antall tidsskrift per fagfelt og nivå i metodedokumentet. <strong>{like} av {felt.length} fagfelt stemmer på alle nivåer.</strong>{' '}
+        Avviket er ett tidsskrift på nivå 3 i SOC SCI, det samme som gir {nf(L.n)} mot {nf(L.offisielt.n)} i alt. ECON stemmer eksakt.
+      </p>
+      <SortTabell rader={felt} klasse={(f) => (f === 'ECON' ? 'ajg-uthev' : undefined)} kol={[
+        { navn: 'AJG-fagfelt', v: (f) => kortFelt(f), venstre: true, vis: (f) => <span title={FELTNAVN[f]}>{kortFelt(f)}</span> },
+        ...NIV4.map((k, i): Kol<string> => ({ navn: k, v: (f) => t[f].vaar[i], vis: (f) => celle(t[f].vaar[i], t[f].off[i]) })),
+        { navn: 'I alt', v: (f) => t[f].vaar.reduce((a, b) => a + b, 0) },
+        { navn: 'Vurdering', v: (f) => (t[f].vaar.every((v, i) => v === t[f].off[i]) ? 0 : 1), vis: (f) => (t[f].vaar.every((v, i) => v === t[f].off[i]) ? <Badge tone="suksess">Stemmer</Badge> : <Badge tone="advarsel">Avvik</Badge>) },
+      ]} />
+      <p className="ajg-liten" style={{ marginTop: 8 }}>Tallet i parentes er avviket fra metodedokumentet. Table 3 slår sammen 4 og 4*.</p>
+    </Seksjon>
+  );
+}
+
+/** Stikkprøve slått opp ett og ett i AJG-portalen (innlogget, minst 70 sekunder mellom oppslagene, etter avtalen med Chartered ABS). */
+function Stikkprove({ s }: { s: NonNullable<AjgData['liste']['stikkprove']> }) {
+  const lik = (r: (typeof s.rader)[number]) => r[1] === r[4] && r[2] === r[5] && r[3] === r[6];
+  const n = s.rader.filter(lik).length;
+  const dato = s.dato.split('-').reverse().join('.');
+  return (
+    <Seksjon i={4} tittel="Stikkprøve i AJG-portalen">
+      <p className="ajg-tekst" style={{ marginBottom: 12 }}>
+        {s.rader.length} tidsskrift slått opp ett og ett i AJG-portalen {dato}: de som kunne forklare avviket i SOC SCI, Journal of Public Economics,
+        ECON på alle nivåer og andre fagfelt med vekt på 4* og 4. <strong>{n} av {s.rader.length} stemmer på fagfelt, nivå 2024 og nivå 2021.</strong>
+      </p>
+      <SortTabell rader={s.rader} kol={[
+        { navn: 'Tidsskrift', v: (r) => r[0], venstre: true, bred: true },
+        { navn: 'Utvalg', v: (r) => (r[7] === 'mistanke' ? 'mulig avvik' : r[7]), venstre: true },
+        { navn: 'Fagfelt', v: (r) => kortFelt(r[1]), venstre: true, vis: (r) => <span title={r[1] === r[4] ? 'Samme i portalen' : `Portalen: ${r[4]}`}>{kortFelt(r[1])}</span> },
+        { navn: 'Vår 2024', v: (r) => r[2], vis: (r) => <NivaMerke n={r[2] as Niva} /> },
+        { navn: 'Portalen 2024', v: (r) => r[5], vis: (r) => <NivaMerke n={r[5] as Niva} /> },
+        { navn: 'Vår 2021', v: (r) => r[3] || null, vis: (r) => (r[3] ? <NivaMerke n={r[3] as Niva} /> : <span className="ajg-dempet">ny</span>) },
+        { navn: 'Portalen 2021', v: (r) => r[6] || null, vis: (r) => (r[6] ? <NivaMerke n={r[6] as Niva} /> : <span className="ajg-dempet">ny</span>) },
+        { navn: 'Vurdering', v: (r) => (lik(r) ? 0 : 1), vis: (r) => (lik(r) ? <Badge tone="suksess">Stemmer</Badge> : <Badge tone="advarsel">Avvik</Badge>) },
+      ]} />
+    </Seksjon>
   );
 }
 

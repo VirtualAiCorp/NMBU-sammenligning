@@ -31,6 +31,10 @@ export interface AjgData {
     n: number; niva: Record<Niva, number>; felt: Record<string, Record<Niva, number>>; overgang: Record<string, number>;
     nye: number; nye4s: number; nye4: number; dubletterTittel: number; dubletterIssn: number; utenIssn: number; utenFelt: number;
     offisielt: { n: number; nye: number; nye4s: number; nye4: number; fjernet: number; kilder: string[] };
+    /** Table 3 i metodedokumentet: per fagfelt [4 inkl. 4*, 3, 2, 1], vår uthenting og offisielt */
+    tabell3?: Record<string, { vaar: number[]; off: number[] }>;
+    /** Stikkprøve i AJG-portalen: [tittel, felt, 2024, 2021, portalens felt, 2024, 2021, grunn for utvalget] */
+    stikkprove?: { dato: string; rader: [string, string, string, string, string, string, string, string][] } | null;
   };
   verdenFelt: Record<string, { n: number; a3: number; a4: number }>;
   enheter: Record<string, Enhet>;

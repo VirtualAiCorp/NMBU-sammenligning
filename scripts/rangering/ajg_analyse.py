@@ -51,7 +51,21 @@ BRED = {"ECON", "BUS HIST & ECON HIST", "REGIONAL STUDIES, PLANNING AND ENVIRONM
 # Offentlige tall om AJG 2024 til kontrollen (Chartered ABS 30.10.2024; CBS Library 13.12.2024)
 OFFISIELT = {"n": 1822, "nye": 163, "nye4s": 4, "nye4": 6, "fjernet": 58,
              "kilder": ["https://charteredabs.org/insights/news/academic-journal-guide-2024-available-now",
-                        "https://libguides.cbs.dk/newsletter/5426/The-2024-Edition-of-the-AJG-List-is-Now-Out"]}
+                        "https://libguides.cbs.dk/newsletter/5426/The-2024-Edition-of-the-AJG-List-is-Now-Out",
+                        "https://assets.charteredabs.org/ajg-2024-methodology.pdf"]}
+# Table 3 i metodedokumentet (https://assets.charteredabs.org/ajg-2024-methodology.pdf): AJG 2024 per fagfelt, nivå 4 (inkl. 4*), 3, 2, 1
+TABELL3 = {
+    "ACCOUNT": (6, 22, 34, 27), "BUS HIST & ECON HIST": (3, 4, 14, 8), "ECON": (27, 67, 117, 144), "ENT-SBM": (3, 6, 10, 17),
+    "FINANCE": (8, 32, 39, 47), "ETHICS-CSR-MAN": (8, 13, 30, 60), "HRM&EMP": (5, 9, 26, 18), "INFO MAN": (8, 11, 36, 48),
+    "INNOV": (2, 5, 13, 23), "IB&AREA": (2, 9, 16, 29), "MDEV&EDU": (1, 2, 21, 33), "MKT": (8, 12, 19, 39), "OPS&TECH": (4, 9, 9, 52),
+    "OR&MANSCI": (5, 22, 23, 27), "ORG STUD": (5, 6, 13, 14), "PSYCH (GENERAL)": (13, 19, 14, 26), "PSYCH (WOP-OB)": (8, 13, 17, 29),
+    "PUB SEC": (5, 11, 28, 27), "REGIONAL STUDIES, PLANNING AND ENVIRONMENT": (3, 9, 9, 11), "SECTOR": (5, 10, 36, 57),
+    "SOC SCI": (13, 30, 34, 38), "STRAT": (3, 2, 7, 15),
+}
+# Stikkprøve slått opp i AJG-portalen (innlogget, minst 70 s mellom oppslagene); lisensbelagt, gitignored
+STIKKPROVE = RANG / "tidsskrift" / "ajg-stikkprove.csv"
+STIKKPROVE_DATO = "2026-10-30"
+
 GRUPPER = {
     "topp_verden": ("Verdenstoppen", "UTD Top 100 plass 1–25", lambda s: "verden" in (s.get("topp") or [])),
     "topp_europa": ("Europatoppen", "europeiske skoler på UTD Top 100", lambda s: "europa" in (s.get("topp") or [])),
@@ -311,7 +325,11 @@ def main():
              "dubletterIssn": sum(v - 1 for v in C.Counter(x for rr in rader for x in (rr["issn"], rr["eissn"]) if x).values() if v > 1),
              "utenIssn": sum(1 for rr in rader if not rr["issn"] and not rr["eissn"]),
              "utenFelt": sum(1 for rr in rader if not rr["fagfelt"]),
-             "offisielt": OFFISIELT}
+             "offisielt": OFFISIELT,
+             "tabell3": {f: {"vaar": [sum(1 for rr in rader if rr["fagfelt"] == f and rr["ajg2024"] in g) for g in (("4", "4*"), ("3",), ("2",), ("1",))],
+                             "off": list(t)} for f, t in TABELL3.items()},
+             "stikkprove": {"dato": STIKKPROVE_DATO, "rader": [[s["tittel"], s["fagfelt"], s["ajg2024"], s["ajg2021"], s["portal_fagfelt"], s["portal_2024"], s["portal_2021"], s["grunn"]]
+                            for s in csv.DictReader(open(STIKKPROVE, encoding="utf-8"))]} if STIKKPROVE.exists() else None}
 
     data = {"generert": datetime.date.today().isoformat(), "periode": list(P), "aar": [AAR[0], AAR[-1]], "felt": FELT, "norske": NORGE,
             "kort": KORT, "liste": liste, "verdenFelt": {fg: {"n": sum(verden[(fg, y)][0] for y in PER), "a3": r(forventet(fg, PER, 1)), "a4": r(forventet(fg, PER, 2))} for fg in FELT},
