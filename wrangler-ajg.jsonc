@@ -1,0 +1,7 @@
+// AJG-Analyse HH som Cloudflare Worker med statiske filer (Workers Builds, docs/publisering-cloudflare.md §7).
+// Eget filnavn så Pages-prosjektet for hovedsiden ikke plukker den opp.
+{
+  "name": "ajg-analyse-hh",
+  "compatibility_date": "2026-10-01",
+  "assets": { "directory": "./kilde/dist-ajg" }
+}
