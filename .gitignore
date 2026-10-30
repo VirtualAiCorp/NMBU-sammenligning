@@ -50,3 +50,7 @@ data/nmbu/kilder/fs-lokalt/
 
 # Markedet: rådata-cachen for kartleggingene i data/marked/ (~40 MB), hentes på nytt med skriptene i data/marked/*/
 data/marked/*/kilder/
+
+# Upublisert artikkelgrunnlag: repoet er offentlig, dette når nettstedet bare kryptert
+data/rangering/artikkel/
+docs/ajg-artikkel/

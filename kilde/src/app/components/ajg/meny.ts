@@ -1,6 +1,6 @@
 /** Menyen i AJG-Analyse HH: grupper og sider (id = hash-ruten). */
 import {
-  BarChart3, BookOpen, ClipboardList, FileText, Globe2, Home, Layers, ScatterChart, Table2, TrendingUp, Trophy, type LucideIcon,
+  BarChart3, BookOpen, ClipboardList, FileText, Globe2, Home, Layers, ScatterChart, ShieldCheck, Table2, TrendingUp, Trophy, type LucideIcon,
 } from '../../ikoner';
 import type { SideId } from './sider';
 
@@ -13,6 +13,7 @@ export const MENY: { tittel: string; punkter: { id: SideId; label: string; ikon:
       { id: 'internasjonalt', label: '3 Internasjonalt', ikon: Globe2, tekst: 'Typiske skoler og toppskoler i Europa og verden' },
       { id: 'niva', label: '4 Nivå per fagområde', ikon: Layers, tekst: 'Kvantitet eller også kvalitet? ECON mot andre felt' },
       { id: 'fagfelt', label: 'Nivå per AJG-fagfelt', ikon: ScatterChart, tekst: 'Samme nivåsjekk for alle 22 fagfelt' },
+      { id: 'robusthet', label: 'Robusthet', ikon: ShieldCheck, tekst: 'Organisasjonsgrenser, institutt mot tidsskrift og kvalitet uten AJG' },
     ],
   },
   {

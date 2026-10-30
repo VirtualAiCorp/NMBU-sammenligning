@@ -25,6 +25,20 @@ export type Tidsskrift = [string, string, string, string, Niva, string | null, n
 /** [år, tittel, tidsskrift, AJG-felt, AJG-nivå, norsk nivå, forfattere, fra HH NMBU] */
 export type HhArtikkel = [number, string, string, string | null, Niva | null, string, number, number];
 
+/** Robusthet til artikkelen: se scripts/rangering/artikkel/ og docs/ajg-artikkel/ */
+export interface GrenseRad { id: string; kort: string; gruppe: string; n: number; econ: number; andel: number; plassering: string; enhet: string | null; sikkerhet: string; kilde: string | string[] | null; avgrensning: string; kontroll: string | null }
+export interface GrenseGruppe { skoler: number; median: number; samlet: number; min: number; max: number; n: number }
+export interface KvMaal { n: number; t10: number | null; t1: number | null; abdcAstar: number | null; abdcA: number | null; ft50: number | null; niva2: number | null; a3: number | null; a4: number | null; i10: number | null; i1: number | null; e10: number | null }
+export interface KvSml { econ: KvMaal; andre: KvMaal; ci: { econI10: number[]; andreI10: number[]; econI1: number[]; andreI1: number[] }; antallT1: number[]; p_ft50?: number | null; p_a3?: number | null; p_a4?: number | null; p_abdcAstar?: number | null; p_abdcA?: number | null }
+export interface InstMaal { n: number; a3: number | null; a4: number | null }
+export interface InstRad { enhet: string; alle: number; econFelt: number; depArt: number; andelDepIEcon: number; andelEconFraDep: number; etterTidsskrift: { econ: InstMaal; andre: InstMaal }; etterInstitutt: { econ: InstMaal; andre: InstMaal } }
+export interface Artikkel {
+  grenser: { rader: GrenseRad[]; varianter: Record<string, { grupper: Record<string, GrenseGruppe>; p: number | null }>; uenig: string[] };
+  institutt: Record<string, InstRad>;
+  kvalitet: { sammenligning: Record<string, KvSml>; perFelt: Record<string, KvMaal>; verdenFelt: Record<string, { n: number; t10: number; t1: number }>; verdenEcon: Record<string, { n: number; t10: number; t1: number }>; grense: Record<string, { n: number; andel: number; a4e: number; a4r: number }> };
+  kontroll: { n: number; like: number; tilfeldige: number; tilfeldigeLike: number; usikre: number; usikreLike: number; uenig: string[] };
+}
+
 export interface AjgData {
   generert: string; periode: [number, number]; aar: [number, number]; felt: string[]; norske: string[]; kort: Record<string, string>;
   liste: {
@@ -43,6 +57,7 @@ export interface AjgData {
   intl: IntlSkole[];
   tidsskrift: Tidsskrift[];
   hh: HhArtikkel[];
+  artikkel?: Artikkel;
 }
 
 const b64 = (s: string) => Uint8Array.from(atob(s), (c) => c.charCodeAt(0));

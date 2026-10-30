@@ -12,12 +12,12 @@ import {
 import { AfHeader, Detaljkort, KpiStripe, Listerad, Segment, Seksjon, stig, Badge } from '../arbeidsflate/Byggeklosser';
 import {
   ANDRE_FARGE, ECON_FARGE, FARGE, FELTNAVN, NIV, kortFelt, lastNedCsv, nf, pTekst, pst, signifikant,
-  type AjgData, type Enhet, type HhArtikkel, type Maal, type Niva, type Tidsskrift,
+  type AjgData, type Enhet, type HhArtikkel, type KvMaal, type Maal, type Niva, type Tidsskrift,
 } from './data';
 import { Chips, CsvKnapp, Forklaring, NivaForklaring, NivaMerke, NivaStripe, Notis, SorterHint, SortTabell, Tips, Velg, type Kol } from './Felles';
 import { MENY } from './meny';
 
-export type SideId = 'oversikt' | 'fordeling' | 'utvikling' | 'internasjonalt' | 'niva' | 'fagfelt' | 'lista' | 'tidsskrift' | 'hh' | 'metode' | 'rangering';
+export type SideId = 'oversikt' | 'fordeling' | 'utvikling' | 'internasjonalt' | 'niva' | 'fagfelt' | 'lista' | 'tidsskrift' | 'hh' | 'metode' | 'rangering' | 'robusthet';
 type P = { d: AjgData };
 const gaa = (id: string) => { window.location.hash = id === 'oversikt' ? '#/' : `#/${id}`; };
 const per = (d: AjgData) => `${d.periode[0]}–${d.periode[1]}`;
@@ -36,6 +36,7 @@ function Oversikt({ d }: P) {
       <AfHeader eyebrow="Handelshøyskolen ved NMBU · intern" tittel="AJG-Analyse HH"
         undertittel={`Samfunnsøkonomi mot andre fagområder i AJG 2024 ved norske handelshøyskoler, sammenlignet med toppskoler i Europa og verden. Hovedperiode ${per(d)}, trend 2016–2025.`} />
       <div className="af-stig" style={stig(1)}>
+        <Notis ikon={AlertTriangle}><strong>Les sammen med <a href="#/robusthet">Robusthet</a>.</strong> Klassifisering etter tidsskrift undervurderer nivået til økonomene, og sammenligningen med utlandet avhenger av hvor økonomene sitter organisatorisk.</Notis>
         <Notis ikon={ShieldCheck}><strong>Intern side.</strong> AJG-nivå per tidsskrift er lisensbelagt (Chartered ABS) og skal ikke publiseres eller sendes videre. Samlede tall (andeler, fordelinger) kan brukes i manuskriptet.</Notis>
       </div>
       <div className="af-stig" style={{ ...stig(2), marginTop: 24 }}>
@@ -716,6 +717,97 @@ function Metode({ d }: P) {
   );
 }
 
+// ── Robusthet ─────────────────────────────────────────────────────────────────
+const PLASS: Record<string, string> = { inne: 'Inne i skolen', begge: 'Både inne og utenfor', utenfor: 'Utenfor skolen', ingen: 'Ikke noe miljø', uklart: 'Uklart' };
+const n2 = (v: number | null | undefined) => nf(v, 2);
+function Robusthet({ d }: P) {
+  const A = d.artikkel;
+  if (!A) return <div className="af-side"><AfHeader eyebrow="Spørsmålene" tittel="Robusthet" /><p className="ajg-tekst">Mangler data.</p></div>;
+  const V = A.grenser.varianter, K = A.kvalitet.sammenligning, I = A.institutt, Ve = A.kvalitet.verdenEcon;
+  const v0 = V['Bare avgrenset med tilknytningstekst'].grupper;
+  const skoler = Object.keys(I);
+  const kort = d.kort;
+  const felt = Object.keys(A.kvalitet.perFelt);
+  const maal: [string, (m: KvMaal) => number | null, boolean][] = [
+    ['AJG 3+ (andel)', (m) => m.a3, true], ['AJG 4/4* (andel)', (m) => m.a4, true], ['ABDC A* (av artikler på ABDC)', (m) => m.abdcAstar, true], ['ABDC A*/A', (m) => m.abdcA, true],
+    ['FT50 (andel)', (m) => m.ft50, true], ['Norsk nivå 2 (andel)', (m) => m.niva2, true], ['Topp 10 % sitert, rått', (m) => m.t10, true],
+    ['Topp 10 %, indeks mot tidsskriftet (1 = forventet)', (m) => m.i10, false], ['Topp 1 %, indeks mot tidsskriftet', (m) => m.i1, false],
+  ];
+  return (
+    <div className="af-side af-side-bred">
+      <AfHeader eyebrow="Spørsmålene" tittel="Robusthet" undertittel="Holder funnene når vi tar hensyn til hvor økonomene sitter, klassifiserer etter institutt i stedet for tidsskrift, og måler kvalitet uten AJG?" />
+      <div className="af-stig" style={stig(1)}>
+        <KpiStripe kpier={[
+          { ikon: School, etikett: 'Økonomene inne eller begge', verdi: `${nf(100 * v0.begge.median, 1)}–${nf(100 * v0.inne.median, 1)} %`, hjelp: 'median andel ECON' },
+          { ikon: School, etikett: 'Økonomene utenfor', verdi: `${nf(100 * v0.utenfor.median, 1)} %`, hjelp: `median, p = ${pTekst(V['Bare avgrenset med tilknytningstekst'].p)}` },
+          { ikon: Award, etikett: 'NHH, 4/4* etter institutt', verdi: `${nf(100 * (I.nhh.etterInstitutt.econ.a4 ?? 0), 1)} % mot ${nf(100 * (I.nhh.etterInstitutt.andre.a4 ?? 0), 1)} %`, hjelp: `etter tidsskrift ${nf(100 * (I.nhh.etterTidsskrift.econ.a4 ?? 0), 1)} % mot ${nf(100 * (I.nhh.etterTidsskrift.andre.a4 ?? 0), 1)} %` },
+          { ikon: TrendingUp, etikett: 'Siteringsindeks topp 10 %', verdi: `${n2(K.norge.econ.i10)} mot ${n2(K.norge.andre.i10)}`, hjelp: 'ECON mot andre, justert for tidsskrift' },
+        ]} />
+      </div>
+      <Seksjon i={2} tittel="1 Organisasjonsgrenser">
+        <div className="ajg-tekst" style={{ marginBottom: 12 }}>
+          <p>Hvor samfunnsøkonomene sitter er kartlagt for {nf(A.grenser.rader.length)} internasjonale skoler. Der de sitter utenfor handelshøyskolen, er ECON-andelen lavere, så referansetallene i spørsmål 3 blander ulike slags skoler. <strong>Forskjellen er tydelig blant amerikanske skoler og verdenstoppen, men ikke signifikant i Europa alene.</strong> Norge samlet har {pst(d.enheter.norge.andelEcon)} (median {pst(d.enheter.norge.median)}), altså nær skolene der økonomene er en del av skolen.</p>
+        </div>
+        <div className="ajg-tabellramme">
+          <table className="ajg-tabell">
+            <thead><tr><th>Utvalg</th>{['inne', 'begge', 'utenfor', 'ingen'].map((p) => <th key={p}>{PLASS[p]}</th>)}<th>p (inne/begge mot utenfor)</th></tr></thead>
+            <tbody>{Object.entries(V).map(([k, v]) => <tr key={k}><td>{k}</td>{['inne', 'begge', 'utenfor', 'ingen'].map((p) => { const g = v.grupper[p]; return <td key={p} title={g ? `Samlet ${pst(g.samlet)}` : undefined}>{g ? `${pst(g.median)} (${g.skoler})` : '–'}</td>; })}<td>{pTekst(v.p)}</td></tr>)}</tbody>
+          </table>
+        </div>
+        <p className="ajg-liten" style={{ marginTop: 8 }}>Median andel ECON, antall skoler i parentes. Kartleggingen er gjort av KI-agenter fra skolenes egne sider. En uavhengig kontroll ga samme svar for {A.kontroll.tilfeldigeLike} av {A.kontroll.tilfeldige} tilfeldige skoler og {A.kontroll.usikreLike} av {A.kontroll.usikre} usikre. Fakulteter er avgrenset med tilknytningstekst og måles derfor bare fra 2023; hele institusjoner måles 2021–2025. De to målemåtene kan ikke sammenlignes direkte, derfor er de også vist hver for seg.</p>
+        <div style={{ marginTop: 14 }}>
+          <SortTabell rader={A.grenser.rader} hoy standard={1} kol={[
+            { navn: 'Skole', v: (r) => r.kort, venstre: true },
+            { navn: 'Andel ECON', v: (r) => p100(r.andel), vis: (r) => pst(r.andel) },
+            { navn: 'Artikler', v: (r) => r.n },
+            { navn: 'Økonomene', v: (r) => PLASS[r.plassering] ?? r.plassering, venstre: true },
+            { navn: 'Økonomienhet', v: (r) => r.enhet ?? '', venstre: true, bred: true },
+            { navn: 'Sikkerhet', v: (r) => r.sikkerhet, vis: (r) => ({ hoy: 'Høy', middels: 'Middels', lav: 'Lav' }[r.sikkerhet] ?? r.sikkerhet), venstre: true },
+            { navn: 'Kilde', v: (r) => (Array.isArray(r.kilde) ? r.kilde[0] : r.kilde) ?? '', venstre: true, vis: (r) => { const u = Array.isArray(r.kilde) ? r.kilde[0] : r.kilde; return u ? <a href={u} target="_blank" rel="noreferrer">Åpne</a> : '–'; } },
+          ]} />
+        </div>
+      </Seksjon>
+      <Seksjon i={3} tittel="2 Fagfelt etter tidsskrift eller institutt">
+        <p className="ajg-tekst" style={{ marginBottom: 12 }}>Der skolen har et eget samfunnsøkonomisk institutt, kan vi sammenligne de to måtene å klassifisere på. En stor del av artiklene i ECON-tidsskrift kommer fra forskere utenfor instituttet, og mange av instituttets artikler står i andre felt. <strong>Ved NHH snur dette bildet: etter tidsskrift er 4/4* likt, etter institutt ligger økonomene klart høyere.</strong> Klassifisering etter tidsskrift undervurderer altså nivået til økonomene, og hovedtallene på siden «4 Nivå per fagområde» må leses med det forbeholdet.</p>
+        <div className="ajg-tabellramme">
+          <table className="ajg-tabell">
+            <thead><tr><th>Skole</th><th>ECON-artikler fra instituttet</th><th>Instituttets artikler i ECON</th><th>4/4* etter tidsskrift: ECON / andre</th><th>4/4* etter institutt: økonomene / andre</th><th>3+ etter institutt</th></tr></thead>
+            <tbody>{skoler.map((s) => { const u = I[s], t = u.etterTidsskrift, i = u.etterInstitutt; return <tr key={s}><td title={u.enhet}>{kort[s] ?? s}{s === 'uis' ? ' *' : ''}</td><td>{pst(u.andelEconFraDep)}</td><td>{pst(u.andelDepIEcon)}</td><td>{pst(t.econ.a4)} / {pst(t.andre.a4)}</td><td>{pst(i.econ.a4)} / {pst(i.andre.a4)}</td><td>{pst(i.econ.a3)} / {pst(i.andre.a3)}</td></tr>; })}</tbody>
+          </table>
+        </div>
+        <p className="ajg-liten" style={{ marginTop: 8 }}>Artikler 2021–2025 med minst én forfatter ved instituttet (NVA). Bare antall per institutt, ingen navn. * UiS: avdelingen omfatter også finans. Tallene for HH NMBU finnes ikke på denne måten, fordi NVA ikke deler skolen i institutter.</p>
+      </Seksjon>
+      <Seksjon i={4} tittel="3 Kvalitet uten AJG">
+        <p className="ajg-tekst" style={{ marginBottom: 12 }}>Svaret på om ECON ligger høyere, avhenger av målet. ECON ligger høyere på AJG 3+, ABDC og norsk nivå 2, likt på AJG 4/4* og lavere på FT50. <strong>Rå siteringstall viser ECON klart lavere, men det gjelder også ECON-tidsskrift i hele verden ({pst(Ve.econ.t10)} mot {pst(Ve.andre.t10)} i topp 10 %).</strong> Målt mot forventet nivå i hvert tidsskrift er norske ECON-artikler og andre artikler like på topp 10 %. På topp 1 % ligger ECON lavere, men der er tallene små.</p>
+        <div className="ajg-tabellramme">
+          <table className="ajg-tabell">
+            <thead><tr><th>Mål</th><th>Norge: ECON</th><th>Norge: andre</th><th>Uten NHH og BI: ECON</th><th>Uten NHH og BI: andre</th></tr></thead>
+            <tbody>{maal.map(([navn, f, andel]) => { const vis = (m: KvMaal) => (andel ? pst(f(m)) : n2(f(m))); return <tr key={navn}><td>{navn}</td><td>{vis(K.norge.econ)}</td><td>{vis(K.norge.andre)}</td><td>{vis(K.utenNhhBi.econ)}</td><td>{vis(K.utenNhhBi.andre)}</td></tr>; })}</tbody>
+          </table>
+        </div>
+        <p className="ajg-liten" style={{ marginTop: 8 }}>95 % konfidensintervall, Norge: topp 10 % ECON {n2(K.norge.ci.econI10[0])}–{n2(K.norge.ci.econI10[1])}, andre {n2(K.norge.ci.andreI10[0])}–{n2(K.norge.ci.andreI10[1])}; topp 1 % ECON {n2(K.norge.ci.econI1[0])}–{n2(K.norge.ci.econI1[1])} ({K.norge.antallT1[0]} artikler), andre {n2(K.norge.ci.andreI1[0])}–{n2(K.norge.ci.andreI1[1])} ({K.norge.antallT1[1]}). OpenAlex' topp 10 % gjelder hele databasen, så {pst((Ve.econ.t10 * Ve.econ.n + Ve.andre.t10 * Ve.andre.n) / (Ve.econ.n + Ve.andre.n))} av artiklene i AJG-tidsskrift havner der; bruk derfor indeksen, ikke råtallet. FT50 har bare 5 ECON-tidsskrift og UTD24 ingen, så de sier lite om faget.</p>
+        <div style={{ marginTop: 14 }}>
+          <SortTabell rader={felt} standard={2} klasse={(f) => (f === 'ECON' ? 'ajg-uthev' : undefined)} kol={[
+            { navn: 'AJG-fagfelt', v: (f) => kortFelt(f), venstre: true, vis: (f) => <span title={FELTNAVN[f]}>{kortFelt(f)}</span> },
+            { navn: 'Artikler', v: (f) => A.kvalitet.perFelt[f].n },
+            { navn: 'Indeks topp 10 %', v: (f) => A.kvalitet.perFelt[f].i10, vis: (f) => n2(A.kvalitet.perFelt[f].i10), tittel: 'Observert delt på forventet ut fra tidsskriftet' },
+            { navn: 'Indeks topp 1 %', v: (f) => A.kvalitet.perFelt[f].i1, vis: (f) => n2(A.kvalitet.perFelt[f].i1) },
+            { navn: 'Topp 10 %, verden', v: (f) => p100(A.kvalitet.verdenFelt[f]?.t10), vis: (f) => pst(A.kvalitet.verdenFelt[f]?.t10), tittel: 'Alle artikler i feltets tidsskrift, 2021–2025' },
+          ]} />
+        </div>
+      </Seksjon>
+      <Seksjon i={5} tittel="Andre avgrensninger av Norge">
+        <div className="ajg-tabellramme">
+          <table className="ajg-tabell">
+            <thead><tr><th>Avgrensning</th><th>Artikler</th><th>Andel ECON</th><th>4/4* ECON</th><th>4/4* andre</th></tr></thead>
+            <tbody>{Object.entries(A.kvalitet.grense).map(([k, v]) => <tr key={k}><td>{k}</td><td>{nf(v.n)}</td><td>{pst(v.andel)}</td><td>{pst(v.a4e)}</td><td>{pst(v.a4r)}</td></tr>)}</tbody>
+          </table>
+        </div>
+      </Seksjon>
+    </div>
+  );
+}
+
 /** Speiling av «Rangering (intern)» i NMBU-sammenligningen (?rangering): samme komponent og samme data, kryptert med AJG_PASSORD
  *  (kilde/public/ajg-rangering.json). Lastes først når siden åpnes. */
 const Handelshoyskolerangering = lazy(() => import('../Handelshoyskolerangering').then((m) => ({ default: m.Handelshoyskolerangering })));
@@ -733,5 +825,5 @@ function RangeringSide() {
 
 export const SIDER: Record<SideId, ComponentType<P>> = {
   oversikt: Oversikt, fordeling: Fordeling, utvikling: Utvikling, internasjonalt: Internasjonalt, niva: NivaSide, fagfelt: Fagfelt,
-  lista: Lista, tidsskrift: TidsskriftSide, hh: HhSide, metode: Metode, rangering: RangeringSide,
+  lista: Lista, tidsskrift: TidsskriftSide, hh: HhSide, metode: Metode, rangering: RangeringSide, robusthet: Robusthet,
 };

@@ -341,6 +341,10 @@ def main():
                       "a4e": intl_prof[s["id"]]["econM"].get("a4"), "a4r": intl_prof[s["id"]]["restM"].get("a4")}
                      for s in oppsett["skoler"] if s["id"] in intl_prof],
             "tidsskrift": tidsskrift, "hh": hh}
+    # Robusthet til artikkelen (scripts/rangering/artikkel/): organisasjonsgrenser, institutt mot tidsskrift, kvalitet uten AJG
+    grunnlag = RANG / "artikkel" / "grunnlag.json"
+    if grunnlag.exists():
+        data["artikkel"] = {k: v for k, v in json.loads(grunnlag.read_text(encoding="utf-8")).items() if k != "norge"}
 
     if a.klartekst:
         Path(a.klartekst).write_text(json.dumps(data, ensure_ascii=False, indent=1))
