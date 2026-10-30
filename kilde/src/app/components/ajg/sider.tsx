@@ -2,7 +2,7 @@
  * Sidene i AJG-Analyse HH. Hver side får de dekrypterte dataene (AjgData) og regner bare visning; alle tall er
  * regnet ut i scripts/rangering/ajg_analyse.py. Samfunnsøkonomi = AJG-feltet ECON. Hovedperiode 2021–2025.
  */
-import { useMemo, useState, type ComponentType } from 'react';
+import { lazy, Suspense, useMemo, useState, type ComponentType } from 'react';
 import {
   Bar, BarChart, CartesianGrid, Cell, ErrorBar, Line, LineChart, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis,
 } from 'recharts';
@@ -17,7 +17,7 @@ import {
 import { Chips, CsvKnapp, Forklaring, NivaForklaring, NivaMerke, NivaStripe, Notis, SorterHint, SortTabell, Tips, Velg, type Kol } from './Felles';
 import { MENY } from './meny';
 
-export type SideId = 'oversikt' | 'fordeling' | 'utvikling' | 'internasjonalt' | 'niva' | 'fagfelt' | 'lista' | 'tidsskrift' | 'hh' | 'metode';
+export type SideId = 'oversikt' | 'fordeling' | 'utvikling' | 'internasjonalt' | 'niva' | 'fagfelt' | 'lista' | 'tidsskrift' | 'hh' | 'metode' | 'rangering';
 type P = { d: AjgData };
 const gaa = (id: string) => { window.location.hash = id === 'oversikt' ? '#/' : `#/${id}`; };
 const per = (d: AjgData) => `${d.periode[0]}–${d.periode[1]}`;
@@ -665,7 +665,22 @@ function Metode({ d }: P) {
   );
 }
 
+/** Speiling av «Rangering (intern)» i NMBU-sammenligningen (?rangering): samme komponent og samme data, kryptert med AJG_PASSORD
+ *  (kilde/public/ajg-rangering.json). Lastes først når siden åpnes. */
+const Handelshoyskolerangering = lazy(() => import('../Handelshoyskolerangering').then((m) => ({ default: m.Handelshoyskolerangering })));
+function RangeringSide() {
+  return (
+    <div className="af-side af-side-bred">
+      <AfHeader eyebrow="Data" tittel="Rangering av handelshøyskolene (utkast)"
+        undertittel="Forskning, utdanning og anerkjennelse ved norske handelshøyskoler · Kilde: DBH/HK-dir, NVA, ABDC/FT50/UTD24/AJG, Samordna opptak, Studiebarometeret. Samme innhold som «Rangering (intern)» i NMBU-sammenligningen." />
+      <div className="af-innhold af-stig" style={stig(1)}>
+        <Suspense fallback={<p className="ajg-liten">Laster rangeringen …</p>}><Handelshoyskolerangering /></Suspense>
+      </div>
+    </div>
+  );
+}
+
 export const SIDER: Record<SideId, ComponentType<P>> = {
   oversikt: Oversikt, fordeling: Fordeling, utvikling: Utvikling, internasjonalt: Internasjonalt, niva: NivaSide, fagfelt: Fagfelt,
-  lista: Lista, tidsskrift: TidsskriftSide, hh: HhSide, metode: Metode,
+  lista: Lista, tidsskrift: TidsskriftSide, hh: HhSide, metode: Metode, rangering: RangeringSide,
 };

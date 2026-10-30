@@ -91,8 +91,10 @@ const kunAjg = {
   } },
   closeBundle() {
     if (!KUN_AJG) return
-    const kilde = path.resolve(__dirname, 'public', 'ajg-data.json')
-    if (fs.existsSync(ajgUt) && fs.existsSync(kilde)) fs.copyFileSync(kilde, path.join(ajgUt, 'ajg-data.json'))
+    for (const fil of ['ajg-data.json', 'ajg-rangering.json']) {
+      const kilde = path.resolve(__dirname, 'public', fil)
+      if (fs.existsSync(ajgUt) && fs.existsSync(kilde)) fs.copyFileSync(kilde, path.join(ajgUt, fil))
+    }
   },
 }
 

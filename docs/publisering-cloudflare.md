@@ -99,20 +99,57 @@ resten av nettstedet eller `public/` (bare `rangering-data.json` kopieres), og s
 (2,9 MB). Dataene er kryptert med **eget passord**, `RANGERING_PASSORD` i `kilde/.env.local` (laget av
 `scripts/build-rangering.py` første gang). Det interne passordet åpner ikke denne siden, og omvendt.
 
-Pages-prosjekter kan ikke bruke et repo som allerede er koblet til et annet Pages-prosjekt («In use»), så nettstedet
-er en **Worker med statiske filer** (Workers Builds), satt opp i `wrangler-ajg.jsonc` i roten. Cloudflare-panelet →
-**Workers & Pages** → **Create** → **Continue with GitHub** → `VirtualAiCorp/NMBU-sammenligning`:
+Cloudflare-panelet → **Workers & Pages** → **Create** → **Pages** → **Import an existing Git repository** →
+`VirtualAiCorp/NMBU-sammenligning`:
 
 | Felt | Verdi |
 |---|---|
-| Project name | `ajg-analyse-hh` (gir `ajg-analyse-hh.<konto>.workers.dev`) |
+| Project name | `hh-rangering` (gir `hh-rangering.pages.dev`) |
+| Production branch | `main` |
+| Framework preset | None |
+| Build command | `cd kilde && npm ci --legacy-peer-deps && npm run build` |
+| Build output directory | `kilde/dist-rangering` |
+| Environment variables | `NODE_VERSION` = `20`, `VITE_KUN_RANGERING` = `1` (ingen `VITE_HH_PASSORD`, ingen API-nøkler) |
+
+**Merk (30.10.2026):** Cloudflare godtar ikke et nytt Pages-prosjekt på et repo som allerede er i bruk, så
+`hh-rangering` må settes opp som Worker slik som `ajg-analyse-hh` (§7), med egen `wrangler-*.jsonc`.
+
+Begge prosjektene bygger ved hver push til `main`. `functions/` (KI-chatten) blir også lagt ut, men uten
+`ANTHROPIC_API_KEY` svarer den ikke; siden bruker den ikke. Lokal test: launch-config `boa-rangering-delt`
+(port 4183, `vite preview` av `dist-rangering`). Bytte passord: endre `RANGERING_PASSORD`, kjør
+`/usr/local/bin/python3 scripts/build-rangering.py`, commit og push. Eget domene kan legges på senere (punkt 4).
+
+## 7. Eget nettsted for AJG-analysen: `ajg-analyse-hh` (30.10.2026)
+
+«AJG-Analyse HH»: samfunnsøkonomi mot andre fagområder i AJG 2024 ved norske handelshøyskoler (fire spørsmål fra en
+kollega til et manuskript), med kontroll av AJG-lista, tidsskriftoversikt og HH NMBUs artikler. Samme uttrykk som
+arbeidsflaten. Byggevarianten `VITE_KUN_AJG=1` bruker egen inngang (`kilde/src/ajg-main.tsx`, sidene i
+`kilde/src/app/components/ajg/`), tar ikke med resten av nettstedet eller `public/` (bare `ajg-data.json` kopieres) og
+skriver til `kilde/dist-ajg`. Dataene viser AJG-nivå per tidsskrift og er derfor kryptert med **eget passord**,
+`AJG_PASSORD` i `kilde/.env.local` (laget av `scripts/rangering/ajg_analyse.py` første gang). CSV-eksportene på siden
+har ikke AJG-nivå per tidsskrift.
+
+Pages-prosjekter kan ikke bruke et repo som allerede er koblet til et annet Pages-prosjekt («In use»), så nettstedet
+er en **Worker med statiske filer** (Workers Builds), satt opp i `wrangler-ajg.jsonc` i roten. Cloudflare-panelet →
+**Workers & Pages** → **Create** → **Continue with GitHub** → `VirtualAiCorp/NMBU-sammenligning` (opprettet 30.10.2026,
+adresse https://ajg-analyse-hh.mathias-sydtangen-smogeli.workers.dev):
+
+| Felt | Verdi |
+|---|---|
+| Project name | `ajg-analyse-hh` |
 | Build command | `cd kilde && npm ci --legacy-peer-deps && VITE_KUN_AJG=1 npm run build` |
 | Deploy command | `npx wrangler deploy --config wrangler-ajg.jsonc` |
 | Path (root directory) | `/` |
+| Preview builds | av |
 | Production branch | `main` (bygges ved hver push, som hovedsiden) |
 
+Siden **Rangeringen** (nederst under Data) speiler «Rangering (intern)» i NMBU-sammenligningen: samme komponent og samme
+data, men kryptert med AJG_PASSORD i `kilde/public/ajg-rangering.json`, så den åpnes uten eget passord. `ajg_analyse.py`
+lager fila ved å dekryptere `rangering-data.json` (RANGERING_PASSORD) og kryptere på nytt; kjør den derfor etter
+`build-rangering.py` når rangeringstallene endres, og etter passordbytte.
+
 Oppdatere tallene: `/usr/local/bin/python3 scripts/rangering/ajg_analyse.py` (krever `tidsskrift/ajg2024.csv` og
-NVA/OpenAlex-cachen fra rangeringen), commit `kilde/public/ajg-data.json` og push. Lokal test: launch-config
+NVA/OpenAlex-cachen fra rangeringen), commit `kilde/public/ajg-data.json` og `ajg-rangering.json` og push. Lokal test: launch-config
 `boa-ajg-analyse` (port 4184, `vite preview` av `dist-ajg`) etter `VITE_KUN_AJG=1 npx vite build`; test i nettleseren
 med `--testpassord`, og kjør skriptet på nytt uten før commit. Bytte passord: endre `AJG_PASSORD`, kjør skriptet,
 commit og push. Slett nettstedet (og `ajg-data.json`) når AJG-avtalen med Chartered ABS ikke lenger gjelder.

@@ -1,6 +1,6 @@
 /** Menyen i AJG-Analyse HH: grupper og sider (id = hash-ruten). */
 import {
-  BarChart3, BookOpen, ClipboardList, FileText, Globe2, Home, Layers, ScatterChart, Table2, TrendingUp, type LucideIcon,
+  BarChart3, BookOpen, ClipboardList, FileText, Globe2, Home, Layers, ScatterChart, Table2, TrendingUp, Trophy, type LucideIcon,
 } from '../../ikoner';
 import type { SideId } from './sider';
 
@@ -21,6 +21,7 @@ export const MENY: { tittel: string; punkter: { id: SideId; label: string; ikon:
       { id: 'tidsskrift', label: 'Tidsskrift', ikon: Table2, tekst: 'AJG-nivå og antall artikler per tidsskrift' },
       { id: 'hh', label: 'HH NMBU-artikler', ikon: FileText, tekst: 'Alle NVI-artikler 2021–2025 med AJG-nivå' },
       { id: 'metode', label: 'Metode og forbehold', ikon: BookOpen, tekst: 'Kilder, avgrensninger og statistikk' },
+      { id: 'rangering', label: 'Rangeringen', ikon: Trophy, tekst: 'Rangering av handelshøyskolene (utkast), som i NMBU-sammenligningen' },
     ],
   },
 ];

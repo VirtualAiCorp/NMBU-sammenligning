@@ -86,6 +86,23 @@ def krypter(obj, pw):
             "iv": base64.b64encode(iv).decode(), "data": base64.b64encode(ct).decode()}
 
 
+def rangering_med_ajg_passord(pw):
+    """Siden «Rangeringen» i AJG-Analyse HH: samme data som hh-rangering (kilde/public/rangering-data.json, RANGERING_PASSORD),
+    kryptert på nytt med AJG-passordet til kilde/public/ajg-rangering.json. Kjøres etter build-rangering.py og ved passordbytte."""
+    kilde = ROOT / "kilde/public/rangering-data.json"
+    rpw = next((l.split("=", 1)[1].strip() for l in ENV.read_text(encoding="utf-8").splitlines() if l.startswith("RANGERING_PASSORD=")), None)
+    if not (kilde.exists() and rpw):
+        print("Rangeringen ble ikke tatt med (mangler rangering-data.json eller RANGERING_PASSORD).")
+        return
+    e = json.loads(kilde.read_text())
+    b = base64.b64decode
+    nokkel = PBKDF2HMAC(algorithm=hashes.SHA256(), length=32, salt=b(e["salt"]), iterations=e["iter"]).derive(rpw.encode("utf-8"))
+    rangering = json.loads(AESGCM(nokkel).decrypt(b(e["iv"]), b(e["data"]), None))
+    ut = ROOT / "kilde/public/ajg-rangering.json"
+    ut.write_text(json.dumps(krypter(rangering, pw)))
+    print(f"Rangeringen → {ut.relative_to(ROOT)} ({ut.stat().st_size // 1024} kB, kryptert med AJG-passordet)")
+
+
 def r(v, d=6):
     return None if v is None else round(v, d)
 
@@ -309,7 +326,9 @@ def main():
 
     if a.klartekst:
         Path(a.klartekst).write_text(json.dumps(data, ensure_ascii=False, indent=1))
-    UT.write_text(json.dumps(krypter(data, a.testpassord or passord())))
+    pw = a.testpassord or passord()
+    UT.write_text(json.dumps(krypter(data, pw)))
+    rangering_med_ajg_passord(pw)
     e = enheter
     print(f"AJG-analyse: {len(rader)} tidsskrift, Norge samlet {e['norge']['n']} artikler ({100*e['norge']['andelEcon']:.1f} % ECON), "
           f"HH NMBU {e['nmbu']['n']}, {len(tidsskrift)} tidsskrift i oversikten, {len(hh)} HH NMBU-artikler → {UT.relative_to(ROOT)} "

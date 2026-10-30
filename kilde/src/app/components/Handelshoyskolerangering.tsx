@@ -78,10 +78,12 @@ interface Data { versjon: number; generert: string; aar: [number, number]; norde
   /** Varianter av enhetene (skilt ut fra skoler ved innlasting), som velges i AJG-sammenligningen */ varianter?: Skole[];
   /** Foreløpige tall for inneværende år (fanen «… foreløpig»), med forrige år på samme registreringsdato */ forelopig?: ForelopigData | null; }
 
-/** Eget nettsted med bare rangeringen (VITE_KUN_RANGERING=1) har egen datafil og eget passord (RANGERING_PASSORD). */
+/** Eget nettsted med bare rangeringen (VITE_KUN_RANGERING=1) har egen datafil og eget passord (RANGERING_PASSORD).
+ *  I AJG-Analyse HH (VITE_KUN_AJG=1) er rangeringen kryptert med AJG_PASSORD og låses opp med passordet siden allerede har. */
 const KUN_RANGERING = import.meta.env.VITE_KUN_RANGERING === '1';
-const PW_KEY = KUN_RANGERING ? 'rangering-pw' : 'intern-opptak-pw'; // ellers samme passord som den interne opptakssiden
-const DATAFIL = KUN_RANGERING ? 'rangering-data.json' : 'intern/rangering.json';
+const KUN_AJG = import.meta.env.VITE_KUN_AJG === '1';
+const PW_KEY = KUN_RANGERING ? 'rangering-pw' : KUN_AJG ? 'ajg-pw' : 'intern-opptak-pw'; // ellers samme passord som den interne opptakssiden
+const DATAFIL = KUN_RANGERING ? 'rangering-data.json' : KUN_AJG ? 'ajg-rangering.json' : 'intern/rangering.json';
 const GRONN = 'var(--nmbu-green-dark)';
 const nf = (v: number | null | undefined, d = 1) => v == null || !Number.isFinite(v) ? '–' : v.toLocaleString('nb-NO', { minimumFractionDigits: d, maximumFractionDigits: d });
 const kort = { backgroundColor: '#fff', border: '1px solid var(--nmbu-neutral-3)' } as const;
