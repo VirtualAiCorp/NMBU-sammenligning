@@ -19,7 +19,7 @@ for x in res:
     k = kon.get(x["id"])
     rader.append({"id": x["id"], "kort": x["kort"], "gruppe": s["gruppe"], "topp": s.get("topp") or [], "utd": s.get("utd"), "n": s["n"], "econ": s["econ"], "andel": s["andelEcon"],
                   "plassering": x["plassering"], "enhet": re.sub(NAVN, "", x.get("okonomienhet") or ""), "sikkerhet": x["sikkerhet"], "kilde": x.get("kilde"), "merknad": re.sub(NAVN, "", x.get("merknad") or ""),
-                  "avgrensning": "tilknytningstekst (2023–)" if x["id"] in tekst else "hele institusjonen", "kontroll": None if not k else k["plassering"]})
+                  "avgrensning": "tilknytningstekst" if x["id"] in tekst else "hele institusjonen", "kontroll": None if not k else k["plassering"]})
 def grp(rr):
     u = {}
     for p in ("inne", "begge", "utenfor", "ingen"):

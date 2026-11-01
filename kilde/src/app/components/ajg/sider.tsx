@@ -754,7 +754,7 @@ function Robusthet({ d }: P) {
             <tbody>{Object.entries(V).map(([k, v]) => <tr key={k}><td>{k}</td>{['inne', 'begge', 'utenfor', 'ingen'].map((p) => { const g = v.grupper[p]; return <td key={p} title={g ? `Samlet ${pst(g.samlet)}` : undefined}>{g ? `${pst(g.median)} (${g.skoler})` : '–'}</td>; })}<td>{pTekst(v.p)}</td></tr>)}</tbody>
           </table>
         </div>
-        <p className="ajg-liten" style={{ marginTop: 8 }}>Median andel ECON, antall skoler i parentes. Kartleggingen er gjort av KI-agenter fra skolenes egne sider. En uavhengig kontroll ga samme svar for {A.kontroll.tilfeldigeLike} av {A.kontroll.tilfeldige} tilfeldige skoler og {A.kontroll.usikreLike} av {A.kontroll.usikre} usikre. Fakulteter er avgrenset med tilknytningstekst og måles derfor bare fra 2023; hele institusjoner måles 2021–2025. De to målemåtene kan ikke sammenlignes direkte, derfor er de også vist hver for seg.</p>
+        <p className="ajg-liten" style={{ marginTop: 8 }}>Median andel ECON, antall skoler i parentes. Kartleggingen er gjort av KI-agenter fra skolenes egne sider. En uavhengig kontroll ga samme svar for {A.kontroll.tilfeldigeLike} av {A.kontroll.tilfeldige} tilfeldige skoler og {A.kontroll.usikreLike} av {A.kontroll.usikre} usikre. Fakulteter er avgrenset med tilknytningstekst, mens egne institusjoner måles som helhet. De to målemåtene kan ikke sammenlignes direkte, derfor er de også vist hver for seg.</p>
         <div style={{ marginTop: 14 }}>
           <SortTabell rader={A.grenser.rader} hoy standard={1} kol={[
             { navn: 'Skole', v: (r) => r.kort, venstre: true },
